@@ -257,12 +257,16 @@ LittlerootTown_EventScript_Boy::
 LittlerootTown_EventScript_Twin::
 	lock
 	faceplayer
+	speakername LittlerootTown_Text_TwinName
 	goto_if_set FLAG_ADVENTURE_STARTED, LittlerootTown_EventScript_GoodLuck
 	goto_if_set FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_YouSavedBirch
 	goto_if_ne VAR_LITTLEROOT_TOWN_STATE, 0, LittlerootTown_EventScript_GoSaveBirch
 	msgbox LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT
 	release
 	end
+
+LittlerootTown_Text_TwinName:
+	.string "TWIN$"
 
 LittlerootTown_EventScript_GoSaveBirch::
 	special GetPlayerBigGuyGirlString

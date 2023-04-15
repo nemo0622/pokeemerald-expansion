@@ -29,7 +29,7 @@
 #define STD_WINDOW_PALETTE_SIZE PLTT_SIZEOF(10)
 #define STD_WINDOW_BASE_TILE_NUM 0x214
 
-#define DLW_WIN_PLATE_SIZE 8
+#define DLW_WIN_PLATE_SIZE  8
 
 struct MenuInfoIcon
 {
@@ -348,7 +348,6 @@ static void WindowFunc_DrawStandardFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u
 static void WindowFunc_DrawDialogueFrame(u8 bg, u8 L, u8 T, u8 w, u8 h, u8 paletteNum)
 {
     FillBgTilemapBufferRect(bg,                                            0,  L - 2,     T - 2, w,     1, DLG_WINDOW_PALETTE_NUM);
-
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  0,  L - 2,     T - 1, 1,     1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  1,  L - 1,     T - 1, 1,     1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  2,  L,         T - 1, w - 1, 1, DLG_WINDOW_PALETTE_NUM);
@@ -358,7 +357,6 @@ static void WindowFunc_DrawDialogueFrame(u8 bg, u8 L, u8 T, u8 w, u8 h, u8 palet
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  7,  L - 2,     T,     1,     5, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  8,  L - 1,     T,     w + 1, 5, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  9,  L + w,     T,     1,     5, DLG_WINDOW_PALETTE_NUM);
-
     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM +  0), L - 2,     T + h, 1,     1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM +  1), L - 1,     T + h, 1,     1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM +  2), L,         T + h, w - 1, 1, DLG_WINDOW_PALETTE_NUM);
@@ -373,13 +371,13 @@ static void WindowFunc_DrawDialogueFrameWithPlate(u8 bg, u8 L, u8 T, u8 w, u8 h,
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  0,  L - 2,     T - 1, 1,     1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM + 11,  L - 1,     T - 1, 1,     1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM + 10,  L - 1,     T - 2, 1,     1, DLG_WINDOW_PALETTE_NUM);
-
+    
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM + 12,  L,         T - 1, PW,    1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  5,  L,         T - 2, PW,    1, DLG_WINDOW_PALETTE_NUM);
-
+    
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM + 13,  L + PW,    T - 1, 1,     1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  6,  L + PW,    T - 2, 1,     1, DLG_WINDOW_PALETTE_NUM);
-
+    
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  2,  L + PW+ 1, T - 1, PR,    1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  3,  L + w - 1, T - 1, 1,     1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  4,  L + w,     T - 1, 1,     1, DLG_WINDOW_PALETTE_NUM);
@@ -387,7 +385,6 @@ static void WindowFunc_DrawDialogueFrameWithPlate(u8 bg, u8 L, u8 T, u8 w, u8 h,
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  7,  L - 2,     T,     1,     5, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  8,  L - 1,     T,     w + 1, 5, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,                DLG_WINDOW_BASE_TILE_NUM +  9,  L + w,     T,     1,     5, DLG_WINDOW_PALETTE_NUM);
-
     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM +  0), L - 2,     T + h, 1,     1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM +  1), L - 1,     T + h, 1,     1, DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM +  2), L,         T + h, w - 1, 1, DLG_WINDOW_PALETTE_NUM);
@@ -399,7 +396,6 @@ int GetDialogFramePlateWidth()
 {
     return DLW_WIN_PLATE_SIZE * 8;
 }
-
 void FillDialogFramePlate()
 {
     int i;
@@ -584,11 +580,11 @@ static void WindowFunc_DrawDialogFrameWithCustomTileAndPalette(u8 bg, u8 l, u8 t
     FillBgTilemapBufferRect(bg, sTileNum + 2,                 l,         t - 1, w - 1, 1, sPaletteNum);
     FillBgTilemapBufferRect(bg, sTileNum + 3,                 l + w - 1, t - 1, 1,     1, sPaletteNum);
     FillBgTilemapBufferRect(bg, sTileNum + 4,                 l + w,     t - 1, 1,     1, sPaletteNum);
-
+    
     FillBgTilemapBufferRect(bg, sTileNum + 7,                 l - 2,     t,     1,     5, sPaletteNum);
     FillBgTilemapBufferRect(bg, sTileNum + 8,                 l - 1,     t,     w + 1, 5, sPaletteNum);
     FillBgTilemapBufferRect(bg, sTileNum + 9,                 l + w,     t,     1,     5, sPaletteNum);
-
+    
     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(sTileNum + 0), l - 2,     t + h, 1,     1, sPaletteNum);
     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(sTileNum + 1), l - 1,     t + h, 1,     1, sPaletteNum);
     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(sTileNum + 2), l,         t + h, w - 1, 1, sPaletteNum);

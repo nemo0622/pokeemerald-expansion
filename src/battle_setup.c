@@ -1166,7 +1166,6 @@ void SetMapVarsToTrainer(void)
         gSpecialVar_LastTalked = sTrainerObjectEventLocalId;
         gSelectedObjectEvent = GetObjectEventIdByLocalIdAndMap(sTrainerObjectEventLocalId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
     }
-
     if (gTrainerBattleOpponent_A != 0) {
         gSpeakerName = gTrainers[gTrainerBattleOpponent_A].trainerName;
     }

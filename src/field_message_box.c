@@ -126,10 +126,8 @@ bool8 ShowFieldMessageFromBuffer(void)
 
 extern void FillDialogFramePlate();
 extern int GetDialogFramePlateWidth();
-
 static void ExpandStringAndStartDrawFieldMessage(const u8 *str, bool32 allowSkippingDelayWithButtonPress)
 {
-
     if (gSpeakerName != NULL && !FlagGet(FLAG_SUPPRESS_SPEAKER_NAME)) {
         int strLen = GetStringWidth(FONT_SMALL, gSpeakerName, -1);
         if (strLen > 0) {
@@ -146,7 +144,6 @@ static void ExpandStringAndStartDrawFieldMessage(const u8 *str, bool32 allowSkip
         PutWindowTilemap(1);
         CopyWindowToVram(1, COPYWIN_FULL);
     }
-
     StringExpandPlaceholders(gStringVar4, str);
     AddTextPrinterForMessage(allowSkippingDelayWithButtonPress);
     CreateTask_DrawFieldMessage();

@@ -56,6 +56,8 @@ STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to th
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
+- "speakername" command broken
+    - POTENTIAL FIX: Set a STR_VAR variable to the speaker name (or make a new STR_VAR variable just for speakers!) and then make a new Field Special that calls SetSpeakerName() in field_message_box.c
 
 ## Credits
 - Day/Night System created by merrp, and updated to pokeemerald-expansion by Greenphx9
