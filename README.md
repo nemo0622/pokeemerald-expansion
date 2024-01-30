@@ -13,3 +13,12 @@
 - New overworlds from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
     - Credit goes to Pawkkie for May's sprite and RavePossum for the rest!
 - New Gen 5 inspired map popups, ported from BSBob by [ravepossum](https://github.com/ravepossum/pokeemerald)
+
+## Bugs and Future Plans
+
+### Known Bugs:
+- In player select for girl character in beginning, player sprite walking is broken. Only on this screen!
+- Exclamation point over rival's head in Route 103 is miscolored
+
+### Future Plans:
+- DexNav by ghoulslash
