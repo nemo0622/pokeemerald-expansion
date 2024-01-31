@@ -4,6 +4,7 @@
 #include "event_object_movement.h"
 #include "field_effect.h"
 #include "field_player_avatar.h"
+#include "field_weather.h"
 #include "pokemon.h"
 #include "script.h"
 #include "script_movement.h"
