@@ -48,7 +48,7 @@ void PlayTimeCounter_Update(void)
     gSaveBlock2Ptr->playTimeSeconds++;
 
     // Runs once per second
-    RtcAdvanceTime(0, 1, 0); //Advance "rtc" by 0 hours, 1 minute, 0 seconds
+    RtcAdvanceTime(0, 0, 30); //Advance "rtc" by 0 hours, 0 minute, 30 seconds (~48 minute day cycles)
 
     if (gSaveBlock2Ptr->playTimeSeconds < 60)
         return;
