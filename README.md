@@ -10,6 +10,9 @@
     - Key Item Wheel - Register up to 4 key items
     - DNS - Day/Night System, along with shadows under people
         - Also implemented [FakeRTC](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/page-24#post-10678054), making day cycles pass every 48 minutes
+- [DexNav](https://github.com/ghoulslash/pokeemerald/tree/dexnav) by GhoulSlash
+    - Unlocked along with Pokédex, works similar to ORAS DexNav
+    - Tip: Hold "A" button while moving towards shaking grass to "creep"!
 
 ### Graphics
 - New overworlds from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
@@ -22,7 +25,7 @@
 - None as of right now!
 
 ### Future Plans:
-- DexNav by ghoulslash
+- Some little extra polish, like an explanation for the DexNav
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you
 - Slight tileset modifications (FRLG style trees, nicer grass?, etc.)
