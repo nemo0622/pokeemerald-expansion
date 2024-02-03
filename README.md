@@ -6,10 +6,11 @@
 - All features of [RHH's pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion), currently up to version 1.7.3
     - Physical/Special split, Pokémon data up to Generation 9, updated battle engine, EXP. All, etc.
     - Friendship stat boost! High friendship = about 10% boost to encourage forming a bond with Pokémon more
-- [aarant's](https://github.com/aarant/pokeemerald) Key Item Wheel and DNS branches
+- [aarant's](https://github.com/aarant/pokeemerald) DNS, Key Item Wheel, and Decapitalization branches
     - Key Item Wheel - Register up to 4 key items
     - DNS - Day/Night System, along with shadows under people
         - Also implemented [FakeRTC](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/page-24#post-10678054), making day cycles pass every 48 minutes
+    - Decapitalization via aarant's Guillotine branch!
 - [DexNav](https://github.com/ghoulslash/pokeemerald/tree/dexnav) by GhoulSlash
     - Unlocked along with Pokédex, works similar to ORAS DexNav
     - Tip: Hold "A" button while moving towards shaking grass to "creep"!

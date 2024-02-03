@@ -2303,40 +2303,44 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
         case MON_DATA_NICKNAME:
         {
             if (boxMon->isBadEgg)
-            {
-                for (retVal = 0;
-                    retVal < POKEMON_NAME_LENGTH && gText_BadEgg[retVal] != EOS;
-                    data[retVal] = gText_BadEgg[retVal], retVal++) {}
+        {
+            for (retVal = 0;
+                retVal < POKEMON_NAME_LENGTH && gText_BadEgg[retVal] != EOS;
+                data[retVal] = gText_BadEgg[retVal], retVal++) {}
 
-                data[retVal] = EOS;
-            }
-            else if (boxMon->isEgg)
-            {
-                StringCopy(data, gText_EggNickname);
-                retVal = StringLength(data);
-            }
-            else if (boxMon->language == LANGUAGE_JAPANESE)
-            {
-                data[0] = EXT_CTRL_CODE_BEGIN;
-                data[1] = EXT_CTRL_CODE_JPN;
+            data[retVal] = EOS;
+        }
+        else if (boxMon->isEgg)
+        {
+            StringCopy(data, gText_EggNickname);
+            retVal = StringLength(data);
+        }
+        else if (boxMon->language == LANGUAGE_JAPANESE)
+        {
+            data[0] = EXT_CTRL_CODE_BEGIN;
+            data[1] = EXT_CTRL_CODE_JPN;
 
-                for (retVal = 2, i = 0;
-                    i < 5 && boxMon->nickname[i] != EOS;
-                    data[retVal] = boxMon->nickname[i], retVal++, i++) {}
+            for (retVal = 2, i = 0;
+                i < 5 && boxMon->nickname[i] != EOS;
+                data[retVal] = boxMon->nickname[i], retVal++, i++) {}
 
-                data[retVal++] = EXT_CTRL_CODE_BEGIN;
-                data[retVal++] = EXT_CTRL_CODE_ENG;
-                data[retVal] = EOS;
-            }
-            else
-            {
-                for (retVal = 0;
-                    retVal < POKEMON_NAME_LENGTH;
-                    data[retVal] = boxMon->nickname[retVal], retVal++){}
+            data[retVal++] = EXT_CTRL_CODE_BEGIN;
+            data[retVal++] = EXT_CTRL_CODE_ENG;
+            data[retVal] = EOS;
+        }
+        else
+        {
+            #if (DECAP_ENABLED) && !(DECAP_NICKNAMES)
+            if (IsStringAddrSafe(data, POKEMON_NAME_LENGTH))
+                *data++ = CHAR_FIXED_CASE;
+            #endif
+            for (retVal = 0;
+                retVal < POKEMON_NAME_LENGTH;
+                data[retVal] = boxMon->nickname[retVal], retVal++){}
 
-                data[retVal] = EOS;
-            }
-            break;
+            data[retVal] = EOS;
+        }
+        break;
         }
         case MON_DATA_LANGUAGE:
             retVal = boxMon->language;
@@ -2354,14 +2358,18 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
         {
             retVal = 0;
 
-            while (retVal < PLAYER_NAME_LENGTH)
-            {
-                data[retVal] = boxMon->otName[retVal];
-                retVal++;
-            }
+        #if (DECAP_ENABLED) && !(DECAP_NICKNAMES)
+        if (IsStringAddrSafe(data, PLAYER_NAME_LENGTH))
+            *data++ = CHAR_FIXED_CASE;
+        #endif
 
-            data[retVal] = EOS;
-            break;
+        while (retVal < PLAYER_NAME_LENGTH) {
+            data[retVal] = boxMon->otName[retVal];
+            retVal++;
+        }
+
+        data[retVal] = EOS;
+        break;
         }
         case MON_DATA_MARKINGS:
             retVal = boxMon->markings;
