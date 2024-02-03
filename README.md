@@ -3,7 +3,7 @@
 ## Features
 
 ### Gameplay
-- All features of [RHH's pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion), currently up to version 1.7.2
+- All features of [RHH's pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion), currently up to version 1.7.3
     - Physical/Special split, Pokémon data up to Generation 9, updated battle engine, EXP. All, etc.
     - Friendship stat boost! High friendship = about 10% boost to encourage forming a bond with Pokémon more
 - [aarant's](https://github.com/aarant/pokeemerald) Key Item Wheel and DNS branches
