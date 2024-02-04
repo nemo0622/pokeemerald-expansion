@@ -21,7 +21,8 @@
 ### Graphics
 - New overworlds from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
     - Credit goes to Pawkkie for May's sprite and RavePossum for the rest!
-- New Gen 5 inspired map popups, ported from BSBob by [ravepossum](https://github.com/ravepossum/pokeemerald)
+- New Gen 5 inspired map popups, ported from BSBob by [RavePossum](https://github.com/ravepossum/pokeemerald)
+- Improved Battle Backgrounds by RavePossum and Ruki
 
 ## Bugs and Future Plans
 
