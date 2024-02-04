@@ -15,8 +15,8 @@
     - Tip: Hold "A" button while moving towards shaking grass to "creep"!
 - Various Quality of Life Features, including:
     - Friendship stat boost! High friendship = about 10% boost to encourage forming a bond with Pokémon more
-    - Easier Fishing (just press A to hook a fish!)
-    - Faster Berry growth - 15 minutes per growth stage
+    - Easier Fishing and Faster Berry Growth
+    - Nickname from party screen
 
 ### Graphics
 - New overworlds from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
