@@ -1937,9 +1937,9 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 # 969 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_CanUsePCToStoreItems:
 # 970 "data/maps/LittlerootTown/scripts.pory"
-	.string "If you use a PC, you can store items\n"
+	.string "With the DexNav function, you can\n"
 # 971 "data/maps/LittlerootTown/scripts.pory"
-	.string "and POKéMON.\p"
+	.string "find rare Pokémon and creep up with {A_BUTTON}!\p"
 # 972 "data/maps/LittlerootTown/scripts.pory"
 	.string "The power of science is staggering!$"
 # 973 "data/maps/LittlerootTown/scripts.pory"
