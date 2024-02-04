@@ -26,7 +26,6 @@
 - None as of right now!
 
 ### Future Plans:
-- Some little extra polish, like an explanation for the DexNav
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you
 - Slight tileset modifications (FRLG style trees, nicer grass?, etc.)

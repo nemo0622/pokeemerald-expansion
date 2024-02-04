@@ -119,6 +119,8 @@ LittlerootTown_EventScript_StepOffTruckMale::
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_SYS_B_DASH
 	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 8, 8
 	waitstate
 	releaseall
@@ -130,6 +132,8 @@ LittlerootTown_EventScript_StepOffTruckFemale::
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_SYS_B_DASH
 	warpsilent MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F, 2, 8
 	waitstate
 	releaseall
@@ -437,41 +441,41 @@ LittlerootTown_EventScript_GiveRunningShoesTrigger0::
 	lockall
 	setvar VAR_0x8008, 0
 	setobjectxy LOCALID_MOM, 10, 9
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveDexNavTrigger
 	end
 
 LittlerootTown_EventScript_GiveRunningShoesTrigger1::
 	lockall
 	setvar VAR_0x8008, 1
 	setobjectxy LOCALID_MOM, 11, 9
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveDexNavTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger2::
+LittlerootTown_EventScript_GiveDexNavTrigger2::
 	lockall
 	setvar VAR_0x8008, 2
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveDexNavTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger3::
+LittlerootTown_EventScript_GiveDexNavTrigger3::
 	lockall
 	setvar VAR_0x8008, 3
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveDexNavTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger4::
+LittlerootTown_EventScript_GiveDexNavTrigger4::
 	lockall
 	setvar VAR_0x8008, 4
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveDexNavTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger5::
+LittlerootTown_EventScript_GiveDexNavTrigger5::
 	lockall
 	setvar VAR_0x8008, 5
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveDexNavTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger::
+LittlerootTown_EventScript_GiveDexNavTrigger::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_MomNoticePlayerMale
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_MomNoticePlayerFemale
@@ -483,7 +487,7 @@ LittlerootTown_EventScript_GiveRunningShoesTrigger::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_MomApproachPlayerMale
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_MomApproachPlayerFemale
-	call LittlerootTown_EventScript_GiveRunningShoes
+	call LittlerootTown_EventScript_GiveDexNav
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_MomReturnHomeMale
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_MomReturnHomeFemale
@@ -878,7 +882,7 @@ LittlerootTown_EventScript_Mom::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_SetHomeDoorCoordsMale
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_SetHomeDoorCoordsFemale
-	call LittlerootTown_EventScript_GiveRunningShoes
+	call LittlerootTown_EventScript_GiveDexNav
 	applymovement LOCALID_MOM, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	opendoor VAR_0x8009, VAR_0x800A
@@ -900,13 +904,13 @@ LittlerootTown_EventScript_SetReceivedRunningShoes::
 	release
 	end
 
-LittlerootTown_EventScript_GiveRunningShoes::
-	msgbox LittlerootTown_Text_WearTheseRunningShoes, MSGBOX_DEFAULT
+LittlerootTown_EventScript_GiveDexNav::
+	msgbox LittlerootTown_Text_EnableDexNav, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
-	message LittlerootTown_Text_SwitchShoesWithRunningShoes
+	message LittlerootTown_Text_TurnOnDexNav
 	waitfanfare
-	setflag FLAG_RECEIVED_RUNNING_SHOES
-	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
+	setflag FLAG_SYS_DEXNAV_GET
+	msgbox LittlerootTown_Text_ExplainDexNav, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -927,28 +931,30 @@ LittlerootTown_Text_OurNewHomeLetsGoInside:
 LittlerootTown_Text_WaitPlayer:
 	.string "MOM: Wait, {PLAYER}!$"
 
-LittlerootTown_Text_WearTheseRunningShoes:
+LittlerootTown_Text_EnableDexNav:
 	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
 	.string "introduce yourself to PROF. BIRCH?\p"
 	.string "Oh! What an adorable POKéMON!\n"
 	.string "You got it from PROF. BIRCH. How nice!\p"
 	.string "You're your father's child, all right.\n"
 	.string "You look good together with POKéMON!\p"
-	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these RUNNING SHOES.\p"
-	.string "They'll put a zip in your step!$"
+	.string "Wow, honey! You even got a brand new\n"
+	.string "Pokédex! I've used your father's\l"
+	.string "before, give it here...$"
 
-LittlerootTown_Text_SwitchShoesWithRunningShoes:
-	.string "{PLAYER} switched shoes with the\n"
-	.string "RUNNING SHOES.$"
+LittlerootTown_Text_TurnOnDexNav:
+	.string "Mom turned on the DexNav feature of\n"
+	.string "{PLAYER}'s Pokédex!$"
 
-LittlerootTown_Text_ExplainRunningShoes:
-	.string "MOM: {PLAYER}, those shoes came with\n"
-	.string "instructions.\p"
-	.string "“Press the B Button while wearing these\n"
-	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+LittlerootTown_Text_ExplainDexNav:
+	.string "MOM: Ha ha, guess I learned a thing or\n"
+	.string "two from your dad's Pokédex!\p"
+	.string "To use the DexNav, you just have to\n"
+	.string "open the menu and select the Pokémon\l"
+	.string "you want to find! Then when you get\l"
+	.string "close, hold {A_BUTTON} to creep up!\p"
+	.string "Remember, wild Pokémon will run away\n"
+	.string "if startled, so hold {A_BUTTON} to sneak!$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "… … … … … … … …\n"
@@ -961,8 +967,8 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "Go on, go get them, honey!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
-	.string "If you use a PC, you can store items\n"
-	.string "and POKéMON.\p"
+	.string "With the DexNav function, you can\n"
+	.string "find rare Pokémon and creep up with {A_BUTTON}!\p"
 	.string "The power of science is staggering!$"
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
