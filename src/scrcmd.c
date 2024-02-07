@@ -1744,6 +1744,12 @@ bool8 ScrCmd_checkpartymove(struct ScriptContext *ctx)
             gSpecialVar_0x8004 = species;
             break;
         }
+        // else if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG) && CanLearnTeachableMove(GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG), moveId))
+        // {
+        //     gSpecialVar_Result = i;
+        //     gSpecialVar_0x8004 = species;
+        //     break;
+        // }
     }
     return FALSE;
 }
