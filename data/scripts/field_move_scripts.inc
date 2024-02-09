@@ -2,17 +2,17 @@
 EventScript_CutTree::
 	lockall
 	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut
-	checkpartymove MOVE_CUT
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
-	setfieldeffectargument 0, VAR_RESULT
+	checkitem ITEM_HM_CUT
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CheckTreeCantCut
+	setfieldeffectargument 0, VAR_RESULT	@ Sets the Pokemon shown in the banner thing
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	buffermovename STR_VAR_2, MOVE_CUT
 	msgbox Text_WantToCut, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
-	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	msgbox Text_MonUsedCut, MSGBOX_DEFAULT
 	closemessage
 EventScript_CutTreeCommon:
-	setfieldeffectargument 3, 0 @ skip pose if so
+	setfieldeffectargument 3, 1 @ skip pose if so
 	dofieldeffect FLDEFF_USE_CUT_ON_TREE
 	waitstate
 EventScript_CutTreeDown:: @ fallthrough
@@ -43,8 +43,13 @@ EventScript_CancelCut::
 
 Text_WantToCut:
 	.string "This tree looks like it can be\n"
-	.string "CUT down!\p"
-	.string "Would you like to CUT it?$"
+	.string "cut down!\p"
+	.string "Would you like to call someone?$"
+
+Text_MonUsedCut:
+	.string "Called Timburr's Timber in\n"
+	.string "Rustboro!\p"
+	.string "A Timburr cut the tree!$"
 
 Text_MonUsedFieldMove:
 	.string "{STR_VAR_1} used {STR_VAR_2}!$"
@@ -69,7 +74,7 @@ EventScript_RockSmash::
 	buffermovename STR_VAR_2, MOVE_ROCK_SMASH
 	msgbox Text_WantToSmash, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelSmash
-	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	msgbox Text_MonUsedRockSmash, MSGBOX_DEFAULT
 	closemessage
 EventScript_RockSmashCommon:
 	setfieldeffectargument 3, 0
@@ -139,11 +144,16 @@ EventScript_CancelSmash::
 
 Text_WantToSmash:
 	.string "This rock appears to be breakable.\n"
-	.string "Would you like to use ROCK SMASH?$"
+	.string "Would you like to call someone?$"
 
 Text_CantSmash:
-	.string "It's a rugged rock, but a POKéMON\n"
+	.string "It's a rugged rock, but a Pokémon\n"
 	.string "may be able to smash it.$"
+
+Text_MonUsedRockSmash:
+	.string "Called TinkaTough in Mauville!\p"
+	.string "A Tinkatuff came and smashed\n"
+	.string "the rock!$"
 
 EventScript_StrengthBoulder::
 	lockall
@@ -191,11 +201,11 @@ EventScript_CancelStrength::
 Text_WantToStrength:
 	.string "It's a big boulder, but a POKéMON\n"
 	.string "may be able to push it aside.\p"
-	.string "Would you like to use STRENGTH?$"
+	.string "Would you like to call someone?$"
 
 Text_MonUsedStrength:
-	.string "{STR_VAR_1} used STRENGTH!\p"
-	.string "{STR_VAR_1}'s STRENGTH made it\n"
+	.string "Called Pass n' Pitch!\p"
+	.string "Passimian's strength made it\n"
 	.string "possible to move boulders around!$"
 
 Text_CantStrength:
@@ -203,8 +213,8 @@ Text_CantStrength:
 	.string "may be able to push it aside.$"
 
 Text_StrengthActivated:
-	.string "STRENGTH made it possible to move\n"
-	.string "boulders around.$"
+	.string "Passimian's strength made it\n"
+	.string "possible to move boulders around.$"
 
 EventScript_UseWaterfall::
 	lockall
@@ -234,10 +244,10 @@ Text_CantWaterfall:
 
 Text_WantToWaterfall:
 	.string "It's a large waterfall.\n"
-	.string "Would you like to use WATERFALL?$"
+	.string "Would you like to scale it?$"
 
 Text_MonUsedWaterfall:
-	.string "{STR_VAR_1} used WATERFALL.$"
+	.string "Wailmer swam up the falls!$"
 
 EventScript_UseDive::
 	lockall
@@ -271,7 +281,7 @@ EventScript_UseDiveUnderwater::
 	setfieldeffectargument 1, 1
 	msgbox Text_WantToSurface, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndSurface
-	msgbox Text_MonUsedDive, MSGBOX_DEFAULT
+	msgbox Text_MonUsedDiveResurface, MSGBOX_DEFAULT
 	dofieldeffect FLDEFF_USE_DIVE
 	goto EventScript_EndSurface
 	end
@@ -292,10 +302,13 @@ Text_CantDive:
 
 Text_WantToDive:
 	.string "The sea is deep here.\n"
-	.string "Would you like to use DIVE?$"
+	.string "Would you like to dive down?$"
 
 Text_MonUsedDive:
-	.string "{STR_VAR_1} used DIVE.$"
+	.string "Wailmer went underwater!$"
+
+Text_MonUsedDiveResurface:
+	.string "Wailmer rose above water!$"
 
 Text_CantSurface:
 	.string "Light is filtering down from above.\n"
@@ -303,7 +316,7 @@ Text_CantSurface:
 
 Text_WantToSurface:
 	.string "Light is filtering down from above.\n"
-	.string "Would you like to use DIVE?$"
+	.string "Would you like to resurface?$"
 
 EventScript_FailSweetScent::
 	msgbox Text_FailSweetScent, MSGBOX_SIGN

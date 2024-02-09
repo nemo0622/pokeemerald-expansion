@@ -13,6 +13,10 @@
 - [DexNav](https://github.com/ghoulslash/pokeemerald/tree/dexnav) by GhoulSlash
     - Unlocked along with Pokédex, works similar to ORAS DexNav
     - Tip: Hold "A" button while moving towards shaking grass to "creep"!
+
+- Fun HM Workaround!
+    - Meet people and Pokémon willing to help you on your journey!
+    - Timburr's Timber (Cut) in Rustboro, TinkaTough (Rock Smash) in Mauville, etc.
 - Various Quality of Life Features, including:
     - Friendship stat boost! High friendship = about 10% boost to encourage forming a bond with Pokémon more
     - Easier Fishing and Faster Berry Growth
@@ -32,6 +36,7 @@
 ### Future Plans:
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you
+    - Code works, but need to add actual map locations!
 - Slight tileset modifications (FRLG style trees, nicer grass?, etc.)
 - Pokémon availability revamp - ~400 available species from generation 1-9
 - NPC quests and more NPC "events" around Hoenn (ex: west of Petalburg, help out a stressed fisherman for a Rod)

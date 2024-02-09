@@ -104,7 +104,7 @@ gFieldEffectScript_Ripple::
 	field_eff_end
 
 gFieldEffectScript_FieldMoveShowMon::
-	field_eff_callnative FldEff_FieldMoveShowMon
+	@ field_eff_callnative FldEff_FieldMoveShowMon
 	field_eff_end
 
 gFieldEffectScript_Ash::
@@ -318,7 +318,7 @@ gFieldEffectScript_ShowCutGrass::
 	field_eff_end
 
 gFieldEffectScript_FieldMoveShowMonInit::
-	field_eff_callnative FldEff_FieldMoveShowMonInit
+	@ field_eff_callnative FldEff_FieldMoveShowMonInit
 	field_eff_end
 
 gFieldEffectScript_UsePuzzleEffect::

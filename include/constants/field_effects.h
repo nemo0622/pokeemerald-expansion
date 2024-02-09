@@ -72,7 +72,7 @@
 #define FLDEFF_USE_VS_SEEKER             67
 #define FLDEFF_X_ICON                    68
 #define FLDEFF_DOUBLE_EXCL_MARK_ICON     69
-#define FLDEFF_CAVE_DUST                 67
+#define FLDEFF_CAVE_DUST                 70
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1

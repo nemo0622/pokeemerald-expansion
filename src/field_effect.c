@@ -2577,13 +2577,13 @@ static void TeleportWarpInFieldEffect_SpinGround(struct Task *task)
 // For both the background streaks move to the right, and the mon sprite enters from the right and exits left
 bool8 FldEff_FieldMoveShowMon(void)
 {
-    u8 taskId;
-    if (IsMapTypeOutdoors(GetCurrentMapType()) == TRUE)
-        taskId = CreateTask(Task_FieldMoveShowMonOutdoors, 0xff);
-    else
-        taskId = CreateTask(Task_FieldMoveShowMonIndoors, 0xff);
+    // u8 taskId;
+    // if (IsMapTypeOutdoors(GetCurrentMapType()) == TRUE)
+    //     taskId = CreateTask(Task_FieldMoveShowMonOutdoors, 0xff);
+    // else
+    //     taskId = CreateTask(Task_FieldMoveShowMonIndoors, 0xff);
 
-    gTasks[taskId].tMonSpriteId = InitFieldMoveMonSprite(gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+    // gTasks[taskId].tMonSpriteId = InitFieldMoveMonSprite(gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
     return FALSE;
 }
 
@@ -3025,14 +3025,16 @@ static void SurfFieldEffect_Init(struct Task *task)
 
 static void SurfFieldEffect_FieldMovePose(struct Task *task)
 {
-    struct ObjectEvent *objectEvent;
-    objectEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
-    if (!ObjectEventIsMovementOverridden(objectEvent) || ObjectEventClearHeldMovementIfFinished(objectEvent))
-    {
-        SetPlayerAvatarFieldMove();
-        ObjectEventSetHeldMovement(objectEvent, MOVEMENT_ACTION_START_ANIM_IN_DIRECTION);
-        task->tState++;
-    }
+    // struct ObjectEvent *objectEvent;
+    // objectEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+    // if (!ObjectEventIsMovementOverridden(objectEvent) || ObjectEventClearHeldMovementIfFinished(objectEvent))
+    // {
+    //     SetPlayerAvatarFieldMove();
+    //     ObjectEventSetHeldMovement(objectEvent, MOVEMENT_ACTION_START_ANIM_IN_DIRECTION);
+    //     task->tState++;
+    // }
+
+    task->tState++;
 }
 
 static void SurfFieldEffect_ShowMon(struct Task *task)
