@@ -37,25 +37,30 @@ BattleScript_ItemEnd:
 	end
 
 BattleScript_UseItemMessage:
-    printstring STRINGID_EMPTYSTRING3
-    pause B_WAIT_TIME_MED
-    playse SE_USE_ITEM
-    getbattlerside BS_ATTACKER
-    copybyte cMULTISTRING_CHOOSER, gBattleCommunication
-    printfromtable gTrainerUsedItemStringIds
-    waitmessage B_WAIT_TIME_LONG
-    return
+	printstring STRINGID_EMPTYSTRING3
+	pause B_WAIT_TIME_MED
+	playse SE_USE_ITEM
+	getbattlerside BS_ATTACKER
+	copybyte cMULTISTRING_CHOOSER, gBattleCommunication
+	printfromtable gTrainerUsedItemStringIds
+	waitmessage B_WAIT_TIME_LONG
+	return
+	
+BattleScript_ItemRestoreHPRet:
+	bichalfword gMoveResultFlags, MOVE_RESULT_NO_EFFECT
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+	healthbarupdate BS_SCRIPTING
+	datahpupdate BS_SCRIPTING
+	printstring STRINGID_ITEMRESTOREDSPECIESHEALTH
+	waitmessage B_WAIT_TIME_LONG
+	return
 
 BattleScript_ItemRestoreHP::
-    call BattleScript_UseItemMessage
-    itemrestorehp
-    bichalfword gMoveResultFlags, MOVE_RESULT_NO_EFFECT
-    orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
-    healthbarupdate BS_SCRIPTING
-    datahpupdate BS_SCRIPTING
-    printstring STRINGID_ITEMRESTOREDSPECIESHEALTH
-    waitmessage B_WAIT_TIME_LONG
-    end
+	call BattleScript_UseItemMessage
+	itemrestorehp BattleScript_ItemRestoreHPEnd
+	call BattleScript_ItemRestoreHPRet
+BattleScript_ItemRestoreHPEnd:
+	end
 
 BattleScript_ItemRestoreHP_Party::
 	jumpifbyte CMP_EQUAL, gBattleCommunication, TRUE, BattleScript_ItemRestoreHP_SendOutRevivedBattler
@@ -71,27 +76,20 @@ BattleScript_ItemRestoreHP_SendOutRevivedBattler:
 	end
 
 BattleScript_ItemCureStatus::
-    call BattleScript_UseItemMessage
-    itemcurestatus
-    updatestatusicon BS_SCRIPTING
-    printstring STRINGID_ITEMCUREDSPECIESSTATUS
-    waitmessage B_WAIT_TIME_LONG
-    end
+	call BattleScript_UseItemMessage
+BattleScript_ItemCureStatusAfterItemMsg:
+	itemcurestatus BattleScript_ItemCureStatusEnd
+	updatestatusicon BS_SCRIPTING
+	printstring STRINGID_ITEMCUREDSPECIESSTATUS
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_ItemCureStatusEnd:
+	end
 
 BattleScript_ItemHealAndCureStatus::
-    call BattleScript_UseItemMessage
-    itemrestorehp
-    itemcurestatus
-    printstring STRINGID_ITEMRESTOREDSPECIESHEALTH
-    waitmessage B_WAIT_TIME_LONG
-    bichalfword gMoveResultFlags, MOVE_RESULT_NO_EFFECT
-    orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
-    healthbarupdate BS_SCRIPTING
-    datahpupdate BS_SCRIPTING
-    updatestatusicon BS_SCRIPTING
-    printstring STRINGID_ITEMRESTOREDSPECIESHEALTH
-    waitmessage B_WAIT_TIME_LONG
-    end
+	call BattleScript_UseItemMessage
+	itemrestorehp BattleScript_ItemCureStatusAfterItemMsg
+	call BattleScript_ItemRestoreHPRet
+	goto BattleScript_ItemCureStatusAfterItemMsg
 
 BattleScript_ItemIncreaseStat::
 	call BattleScript_UseItemMessage
@@ -113,15 +111,15 @@ BattleScript_ItemSetMist::
 	end
 
 BattleScript_ItemSetFocusEnergy::
-    call BattleScript_UseItemMessage
-    jumpifstatus2 BS_ATTACKER, STATUS2_FOCUS_ENERGY, BattleScript_ButItFailed
-    setfocusenergy
-    playmoveanimation BS_ATTACKER, MOVE_FOCUS_ENERGY
-    waitanimation
+	call BattleScript_UseItemMessage
+	jumpifstatus2 BS_ATTACKER, STATUS2_FOCUS_ENERGY, BattleScript_ButItFailed
+	setfocusenergy
+	playmoveanimation BS_ATTACKER, MOVE_FOCUS_ENERGY
+	waitanimation
 	copybyte sBATTLER, gBattlerAttacker
-    printstring STRINGID_PKMNUSEDXTOGETPUMPED
-    waitmessage B_WAIT_TIME_LONG
-    end
+	printstring STRINGID_PKMNUSEDXTOGETPUMPED
+	waitmessage B_WAIT_TIME_LONG
+	end
 
 BattleScript_ItemRestorePP::
 	call BattleScript_UseItemMessage
