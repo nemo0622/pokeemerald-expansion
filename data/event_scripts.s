@@ -56,6 +56,7 @@
 #include "constants/union_room.h"
 #include "constants/vars.h"
 #include "constants/weather.h"
+#include "constants/mugshots.h"
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
 	.include "constants/constants.inc"
@@ -580,6 +581,8 @@ gStdScripts_End::
 	.include "data/scripts/hall_of_fame.inc"
 
 	.include "data/scripts/debug.inc"
+
+	
 
 EventScript_WhiteOut::
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour

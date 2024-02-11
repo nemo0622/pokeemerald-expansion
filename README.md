@@ -14,6 +14,7 @@
     - Unlocked along with Pokédex, works similar to ORAS DexNav
     - Tip: Hold "A" button while moving towards shaking grass to "creep"!
 
+- [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to important characters
 - Fun HM Workaround!
     - Meet people and Pokémon willing to help you on your journey!
     - Timburr's Timber (Cut) in Rustboro, TinkaTough (Rock Smash) in Mauville, etc.
@@ -34,6 +35,8 @@
 - None as of right now!
 
 ### Future Plans:
+- Expanded implementation of NPC Mugshot system
+    - All trainers, maybe even all NPCs, should have mugshots when talking to them!
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you
     - Code works, but need to add actual map locations!
