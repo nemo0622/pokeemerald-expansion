@@ -26,7 +26,7 @@
 - New overworlds from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
     - Credit goes to Pawkkie for May's sprite and RavePossum for the rest!
 - [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to important characters
-    - Credit to Zenionith for ORAS style PSS icons
+    - Credit to Zenionith and Zermonius on DeviantArt for ORAS style PSS icons
     - Credit to Wergan on DeviantArt and Omega on WhackaHack for various other PSS-style icons
 - New Gen 5 inspired map popups, ported from BSBob by [RavePossum](https://github.com/ravepossum/pokeemerald)
 - Improved Battle Backgrounds by RavePossum and Ruki

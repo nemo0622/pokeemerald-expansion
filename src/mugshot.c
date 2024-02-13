@@ -31,6 +31,8 @@ static const u32 sMugshotImg_Birch[] = INCBIN_U32("graphics/mugshots/pics/mugsho
 static const u16 sMugshotPal_Birch[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_birch.gbapal");
 static const u32 sMugshotImg_Wally[] = INCBIN_U32("graphics/mugshots/pics/mugshot_wally.4bpp.lz");
 static const u16 sMugshotPal_Wally[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_wally.gbapal");
+static const u32 sMugshotImg_NurseJoy[] = INCBIN_U32("graphics/mugshots/pics/mugshot_nursejoy.4bpp.lz");
+static const u16 sMugshotPal_NurseJoy[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_nursejoy.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -39,6 +41,7 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_TWIN] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Twin, .palette = sMugshotPal_Twin},
     [MUGSHOT_BIRCH] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Birch, .palette = sMugshotPal_Birch},
     [MUGSHOT_WALLY] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Wally, .palette = sMugshotPal_Wally},
+    [MUGSHOT_NURSEJOY] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_NurseJoy, .palette = sMugshotPal_NurseJoy},
 };
 
 

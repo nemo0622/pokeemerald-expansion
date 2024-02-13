@@ -2,6 +2,8 @@ Common_EventScript_PkmnCenterNurse::
 	lock
 	faceplayer
 	setvar VAR_0x8004, 0
+	setvar VAR_0x8000, MUGSHOT_NURSEJOY
+	callnative DrawMugshot
 	specialvar VAR_RESULT, CountPlayerTrainerStars
 	goto_if_eq VAR_RESULT, 4, EventScript_PkmnCenterNurse_GoldCard
 	msgbox gText_WouldYouLikeToRestYourPkmn, MSGBOX_YESNO
@@ -10,7 +12,7 @@ Common_EventScript_PkmnCenterNurse::
 	end
 
 EventScript_PkmnCenterNurse_Goodbye::
-	message gText_WeHopeToSeeYouAgain
+	msgbox_mugshot gText_WeHopeToSeeYouAgain, MSGBOX_NPC, MUGSHOT_NURSEJOY
 	return
 
 @ VAR_0x8004 is 1 when player has Gold Card; jumps are identical
@@ -58,7 +60,7 @@ EventScript_PkmnCenterNurse_ReturnPkmn::
 	waitmessage
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
-	message gText_WeHopeToSeeYouAgain
+	msgbox_mugshot gText_WeHopeToSeeYouAgain, MSGBOX_NPC, MUGSHOT_NURSEJOY
 	return
 
 EventScript_PkmnCenterNurse_ReturnPkmn2::
@@ -66,7 +68,7 @@ EventScript_PkmnCenterNurse_ReturnPkmn2::
 	waitmessage
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
-	message gText_WeHopeToSeeYouAgain2
+	msgbox_mugshot gText_WeHopeToSeeYouAgain2, MSGBOX_NPC, MUGSHOT_NURSEJOY
 	return
 
 EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::
@@ -77,7 +79,7 @@ EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::
 	waitmessage
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
-	message gText_WeHopeToSeeYouAgain
+	msgbox_mugshot gText_WeHopeToSeeYouAgain, MSGBOX_NPC, MUGSHOT_NURSEJOY
 	return
 
 EventScript_PkmnCenterNurse_CheckPokerus::
@@ -102,13 +104,13 @@ EventScript_PkmnCenterNurse_GoldCard::
 	waitmovement 0
 	msgbox gText_NoticesGoldCard, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_GoldCardHealPkmn
-	message gText_WeHopeToSeeYouAgain2
+	msgbox_mugshot gText_WeHopeToSeeYouAgain2, MSGBOX_NPC, MUGSHOT_NURSEJOY
 	return
 
 EventScript_PkmnCenterNurse_AskForUsual::
 	msgbox gText_YouWantTheUsual, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_GoldCardHealPkmn
-	message gText_WeHopeToSeeYouAgain2
+	msgbox_mugshot gText_WeHopeToSeeYouAgain2, MSGBOX_NPC, MUGSHOT_NURSEJOY
 	return
 
 EventScript_PkmnCenterNurse_GoldCardHealPkmn::

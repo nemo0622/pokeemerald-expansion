@@ -7,5 +7,6 @@
 #define MUGSHOT_TWIN  2  // ex: girl who warns you Birch is being attacked in Littleroot
 #define MUGSHOT_BIRCH  3
 #define MUGSHOT_WALLY  4
+#define MUGSHOT_NURSEJOY  5
 
 #endif
