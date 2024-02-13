@@ -8,5 +8,6 @@
 #define MUGSHOT_BIRCH  3
 #define MUGSHOT_WALLY  4
 #define MUGSHOT_NURSEJOY  5
+#define MUGSHOT_ROXANNE  6
 
 #endif
