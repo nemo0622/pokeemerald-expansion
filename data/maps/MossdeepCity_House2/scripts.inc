@@ -21,7 +21,7 @@ MossdeepCity_House2_EventScript_Man::
 # 11 "data/maps/MossdeepCity_House2/scripts.pory"
 MossdeepCity_House2_EventScript_Twin::
 # 12 "data/maps/MossdeepCity_House2/scripts.pory"
-	msgbox MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth, MSGBOX_NPC, MUGSHOT_TWIN
 # 13 "data/maps/MossdeepCity_House2/scripts.pory"
 	end
 # 14 "data/maps/MossdeepCity_House2/scripts.pory"

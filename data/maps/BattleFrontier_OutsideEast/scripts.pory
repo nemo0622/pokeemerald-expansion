@@ -91,7 +91,7 @@ BattleFrontier_OutsideEast_EventScript_TriathleteF::
 	end
 
 BattleFrontier_OutsideEast_EventScript_Twin::
-	msgbox BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon, MSGBOX_NPC, MUGSHOT_TWIN
 	end
 
 BattleFrontier_OutsideEast_EventScript_Man2::

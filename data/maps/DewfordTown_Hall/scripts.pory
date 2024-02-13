@@ -65,7 +65,7 @@ DewfordTown_Hall_EventScript_Twin::
 	lock
 	faceplayer
 	call Common_EventScript_BufferTrendyPhrase
-	msgbox DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	closemessage
 	applymovement LOCALID_TWIN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0

@@ -220,7 +220,7 @@ SlateportCity_PokemonFanClub_EventScript_Man::
 	end
 
 SlateportCity_PokemonFanClub_EventScript_Twin::
-	msgbox SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein, MSGBOX_NPC, MUGSHOT_TWIN
 	end
 
 SlateportCity_PokemonFanClub_EventScript_Skitty::

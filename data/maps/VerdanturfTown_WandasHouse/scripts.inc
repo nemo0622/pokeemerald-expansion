@@ -15,7 +15,7 @@ VerdanturfTown_WandasHouse_EventScript_Wally::
 # 8 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	goto_if_set FLAG_WALLY_SPEECH, VerdanturfTown_WandasHouse_EventScript_WallyShortSpeech
 # 9 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_StrongerSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_StrongerSpeech, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 10 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	setflag FLAG_WALLY_SPEECH
 # 11 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
@@ -27,7 +27,7 @@ VerdanturfTown_WandasHouse_EventScript_Wally::
 # 14 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 VerdanturfTown_WandasHouse_EventScript_WallyShortSpeech::
 # 15 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_StrongerSpeechShort, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_StrongerSpeechShort, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 16 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 17 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"

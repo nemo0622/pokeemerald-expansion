@@ -443,7 +443,7 @@ SlateportCity_PokemonFanClub_EventScript_Man::
 # 222 "data/maps/SlateportCity_PokemonFanClub/scripts.pory"
 SlateportCity_PokemonFanClub_EventScript_Twin::
 # 223 "data/maps/SlateportCity_PokemonFanClub/scripts.pory"
-	msgbox SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein, MSGBOX_NPC, MUGSHOT_TWIN
 # 224 "data/maps/SlateportCity_PokemonFanClub/scripts.pory"
 	end
 # 225 "data/maps/SlateportCity_PokemonFanClub/scripts.pory"

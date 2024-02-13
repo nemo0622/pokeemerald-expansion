@@ -93,9 +93,9 @@ MauvilleCity_EventScript_Wally::
 	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_WallyRequestBattleAgain
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox MauvilleCity_Text_WallyWantToChallengeGym, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WallyWantToChallengeGym, MSGBOX_DEFAULT, MUGSHOT_WALLY
 	msgbox MauvilleCity_Text_UncleYourePushingIt, MSGBOX_DEFAULT
-	msgbox MauvilleCity_Text_WallyWeCanBeatAnyone, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WallyWeCanBeatAnyone, MSGBOX_DEFAULT, MUGSHOT_WALLY
 	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
 	waitmovement 0
 	playse SE_PIN
@@ -103,7 +103,7 @@ MauvilleCity_EventScript_Wally::
 	waitmovement 0
 	applymovement LOCALID_WALLY, Common_Movement_Delay48
 	waitmovement 0
-	msgbox MauvilleCity_Text_WallyWillYouBattleMe, MSGBOX_YESNO
+	msgbox_mugshot MauvilleCity_Text_WallyWillYouBattleMe, MSGBOX_YESNO, MUGSHOT_WALLY
 	goto MauvilleCity_EventScript_BattleWallyPrompt
 	end
 
@@ -202,14 +202,14 @@ MauvilleCity_EventScript_ScottExitEast::
 	return
 
 MauvilleCity_EventScript_BattleWally::
-	msgbox MauvilleCity_Text_WallyHereICome, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WallyHereICome, MSGBOX_DEFAULT, MUGSHOT_WALLY
 	trainerbattle_no_intro TRAINER_WALLY_MAUVILLE, MauvilleCity_Text_WallyDefeat
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox MauvilleCity_Text_WallyIllGoBackToVerdanturf, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WallyIllGoBackToVerdanturf, MSGBOX_DEFAULT, MUGSHOT_WALLY
 	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox MauvilleCity_Text_ThankYouNotEnoughToBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_ThankYouNotEnoughToBattle, MSGBOX_DEFAULT, MUGSHOT_WALLY
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox MauvilleCity_Text_UncleNoNeedToBeDown, MSGBOX_DEFAULT
@@ -217,14 +217,14 @@ MauvilleCity_EventScript_BattleWally::
 
 MauvilleCity_EventScript_DeclineWallyBattle::
 	setflag FLAG_DECLINED_WALLY_BATTLE_MAUVILLE
-	msgbox MauvilleCity_Text_WallyMyUncleWontKnowImStrong, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WallyMyUncleWontKnowImStrong, MSGBOX_DEFAULT, MUGSHOT_WALLY
 	release
 	end
 
 MauvilleCity_EventScript_WallyRequestBattleAgain::
 	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox MauvilleCity_Text_WallyPleaseBattleMe, MSGBOX_YESNO
+	msgbox_mugshot MauvilleCity_Text_WallyPleaseBattleMe, MSGBOX_YESNO, MUGSHOT_WALLY
 	goto MauvilleCity_EventScript_BattleWallyPrompt
 	end
 

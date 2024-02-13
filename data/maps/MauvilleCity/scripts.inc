@@ -189,11 +189,11 @@ MauvilleCity_EventScript_Wally::
 # 95 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 96 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyWantToChallengeGym, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WallyWantToChallengeGym, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 97 "data/maps/MauvilleCity/scripts.pory"
 	msgbox MauvilleCity_Text_UncleYourePushingIt, MSGBOX_DEFAULT
 # 98 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyWeCanBeatAnyone, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WallyWeCanBeatAnyone, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 99 "data/maps/MauvilleCity/scripts.pory"
 	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
 # 100 "data/maps/MauvilleCity/scripts.pory"
@@ -209,7 +209,7 @@ MauvilleCity_EventScript_Wally::
 # 105 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 106 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyWillYouBattleMe, MSGBOX_YESNO
+	msgbox_mugshot MauvilleCity_Text_WallyWillYouBattleMe, MSGBOX_YESNO, MUGSHOT_WALLY
 # 107 "data/maps/MauvilleCity/scripts.pory"
 	goto MauvilleCity_EventScript_BattleWallyPrompt
 # 108 "data/maps/MauvilleCity/scripts.pory"
@@ -407,7 +407,7 @@ MauvilleCity_EventScript_ScottExitEast::
 # 204 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_BattleWally::
 # 205 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyHereICome, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WallyHereICome, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 206 "data/maps/MauvilleCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_WALLY_MAUVILLE, MauvilleCity_Text_WallyDefeat
 # 207 "data/maps/MauvilleCity/scripts.pory"
@@ -415,13 +415,13 @@ MauvilleCity_EventScript_BattleWally::
 # 208 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 209 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyIllGoBackToVerdanturf, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WallyIllGoBackToVerdanturf, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 210 "data/maps/MauvilleCity/scripts.pory"
 	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
 # 211 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 212 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_ThankYouNotEnoughToBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_ThankYouNotEnoughToBattle, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 213 "data/maps/MauvilleCity/scripts.pory"
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
 # 214 "data/maps/MauvilleCity/scripts.pory"
@@ -437,7 +437,7 @@ MauvilleCity_EventScript_DeclineWallyBattle::
 # 219 "data/maps/MauvilleCity/scripts.pory"
 	setflag FLAG_DECLINED_WALLY_BATTLE_MAUVILLE
 # 220 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyMyUncleWontKnowImStrong, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WallyMyUncleWontKnowImStrong, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 221 "data/maps/MauvilleCity/scripts.pory"
 	release
 # 222 "data/maps/MauvilleCity/scripts.pory"
@@ -451,7 +451,7 @@ MauvilleCity_EventScript_WallyRequestBattleAgain::
 # 226 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 227 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WallyPleaseBattleMe, MSGBOX_YESNO
+	msgbox_mugshot MauvilleCity_Text_WallyPleaseBattleMe, MSGBOX_YESNO, MUGSHOT_WALLY
 # 228 "data/maps/MauvilleCity/scripts.pory"
 	goto MauvilleCity_EventScript_BattleWallyPrompt
 # 229 "data/maps/MauvilleCity/scripts.pory"

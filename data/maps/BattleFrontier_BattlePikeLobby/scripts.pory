@@ -217,7 +217,7 @@ BattleFrontier_BattlePikeLobby_EventScript_Hiker::
 	end
 
 BattleFrontier_BattlePikeLobby_EventScript_Twin::
-	msgbox BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer, MSGBOX_NPC, MUGSHOT_TWIN
 	end
 
 BattleFrontier_BattlePikeLobby_EventScript_Beauty::

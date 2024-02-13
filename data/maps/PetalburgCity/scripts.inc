@@ -89,19 +89,19 @@ PetalburgCity_EventScript_WallyTutorial::
 # 45 "data/maps/PetalburgCity/scripts.pory"
 	waitmovement 0
 # 46 "data/maps/PetalburgCity/scripts.pory"
-	msgbox Route102_Text_WatchMeCatchPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot Route102_Text_WatchMeCatchPokemon, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 47 "data/maps/PetalburgCity/scripts.pory"
 	special StartWallyTutorialBattle
 # 48 "data/maps/PetalburgCity/scripts.pory"
 	waitstate
 # 49 "data/maps/PetalburgCity/scripts.pory"
-	msgbox Route102_Text_WallyIDidIt, MSGBOX_DEFAULT
+	msgbox_mugshot Route102_Text_WallyIDidIt, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 50 "data/maps/PetalburgCity/scripts.pory"
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterLeft, MAP_PETALBURG_CITY
 # 51 "data/maps/PetalburgCity/scripts.pory"
 	waitmovement LOCALID_WALLY, MAP_PETALBURG_CITY
 # 52 "data/maps/PetalburgCity/scripts.pory"
-	msgbox Route102_Text_LetsGoBack, MSGBOX_DEFAULT
+	msgbox_mugshot Route102_Text_LetsGoBack, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 53 "data/maps/PetalburgCity/scripts.pory"
 	closemessage
 # 54 "data/maps/PetalburgCity/scripts.pory"

@@ -185,7 +185,7 @@ BattleFrontier_OutsideEast_EventScript_TriathleteF::
 # 93 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 BattleFrontier_OutsideEast_EventScript_Twin::
 # 94 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
-	msgbox BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon, MSGBOX_NPC, MUGSHOT_TWIN
 # 95 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 	end
 # 96 "data/maps/BattleFrontier_OutsideEast/scripts.pory"

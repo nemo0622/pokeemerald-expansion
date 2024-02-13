@@ -437,7 +437,7 @@ BattleFrontier_BattlePikeLobby_EventScript_Hiker::
 # 219 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 BattleFrontier_BattlePikeLobby_EventScript_Twin::
 # 220 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
-	msgbox BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer, MSGBOX_NPC, MUGSHOT_TWIN
 # 221 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	end
 # 222 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"

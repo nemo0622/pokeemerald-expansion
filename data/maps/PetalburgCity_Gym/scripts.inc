@@ -165,7 +165,7 @@ PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial::
 # 83 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_DadSoDidItWorkOut, MSGBOX_DEFAULT
 # 84 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_WallyThankYouBye, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Gym_Text_WallyThankYouBye, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 85 "data/maps/PetalburgCity_Gym/scripts.pory"
 	closemessage
 # 86 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -305,11 +305,11 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 # 153 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_WallyArriveWestEast
 # 154 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_WallyIdLikeAPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Gym_Text_WallyIdLikeAPokemon, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 155 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_DadOhYoureWallyRight, MSGBOX_DEFAULT
 # 156 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 157 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_DadHmISee, MSGBOX_DEFAULT
 # 158 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -333,9 +333,9 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 # 167 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon, MSGBOX_DEFAULT
 # 168 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 169 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_WallyOhWowThankYou, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Gym_Text_WallyOhWowThankYou, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 170 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_NormanFaceDoorSouth
 # 171 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -353,7 +353,7 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 # 177 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_WallyFacePlayer
 # 178 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_WouldYouReallyComeWithMe, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Gym_Text_WouldYouReallyComeWithMe, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 179 "data/maps/PetalburgCity_Gym/scripts.pory"
 	closemessage
 # 180 "data/maps/PetalburgCity_Gym/scripts.pory"

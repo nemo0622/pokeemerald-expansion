@@ -133,7 +133,7 @@ DewfordTown_Hall_EventScript_Twin::
 # 67 "data/maps/DewfordTown_Hall/scripts.pory"
 	call Common_EventScript_BufferTrendyPhrase
 # 68 "data/maps/DewfordTown_Hall/scripts.pory"
-	msgbox DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 69 "data/maps/DewfordTown_Hall/scripts.pory"
 	closemessage
 # 70 "data/maps/DewfordTown_Hall/scripts.pory"

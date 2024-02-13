@@ -6,13 +6,13 @@ VerdanturfTown_WandasHouse_EventScript_Wally::
 	lock
 	faceplayer
 	goto_if_set FLAG_WALLY_SPEECH, VerdanturfTown_WandasHouse_EventScript_WallyShortSpeech
-	msgbox VerdanturfTown_WandasHouse_Text_StrongerSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_StrongerSpeech, MSGBOX_DEFAULT, MUGSHOT_WALLY
 	setflag FLAG_WALLY_SPEECH
 	release
 	end
 
 VerdanturfTown_WandasHouse_EventScript_WallyShortSpeech::
-	msgbox VerdanturfTown_WandasHouse_Text_StrongerSpeechShort, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_StrongerSpeechShort, MSGBOX_DEFAULT, MUGSHOT_WALLY
 	release
 	end
 

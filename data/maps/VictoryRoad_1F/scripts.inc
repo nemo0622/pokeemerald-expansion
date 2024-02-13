@@ -85,11 +85,11 @@ VictoryRoad_1F_EventScript_WallyEntranceBattle::
 # 43 "data/maps/VictoryRoad_1F/scripts.pory"
 	waitmovement 0
 # 44 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore, MSGBOX_DEFAULT
+	msgbox_mugshot VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 45 "data/maps/VictoryRoad_1F/scripts.pory"
 	trainerbattle_no_intro TRAINER_WALLY_VR_1, VictoryRoad_1F_Text_WallyEntranceDefeat
 # 46 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT
+	msgbox_mugshot VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 47 "data/maps/VictoryRoad_1F/scripts.pory"
 	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
 # 48 "data/maps/VictoryRoad_1F/scripts.pory"
@@ -163,7 +163,7 @@ VictoryRoad_1F_Movement_WallyApproachPlayer2:
 # 82 "data/maps/VictoryRoad_1F/scripts.pory"
 VictoryRoad_1F_EventScript_EntranceWally::
 # 83 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_NPC
+	msgbox_mugshot VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_NPC, MUGSHOT_WALLY
 # 84 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 85 "data/maps/VictoryRoad_1F/scripts.pory"
@@ -179,7 +179,7 @@ VictoryRoad_1F_EventScript_ExitWally::
 # 90 "data/maps/VictoryRoad_1F/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, VictoryRoad_1F_EventScript_RematchWally
 # 91 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WALLY
 # 92 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 93 "data/maps/VictoryRoad_1F/scripts.pory"
@@ -189,7 +189,7 @@ VictoryRoad_1F_EventScript_RematchWally::
 # 95 "data/maps/VictoryRoad_1F/scripts.pory"
 	trainerbattle_rematch TRAINER_WALLY_VR_2, VictoryRoad_1F_Text_WallyIntro, VictoryRoad_1F_Text_WallyDefeat
 # 96 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WALLY
 # 97 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 98 "data/maps/VictoryRoad_1F/scripts.pory"

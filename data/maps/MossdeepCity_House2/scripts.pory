@@ -9,7 +9,7 @@ MossdeepCity_House2_EventScript_Man::
 	end
 
 MossdeepCity_House2_EventScript_Twin::
-	msgbox MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth, MSGBOX_NPC, MUGSHOT_TWIN
 	end
 
 MossdeepCity_House2_EventScript_Wingull::
