@@ -847,7 +847,7 @@ MauvilleCity_EventScript_Wattson::
 # 424 "data/maps/MauvilleCity/scripts.pory"
 	goto_if_set FLAG_GOT_BASEMENT_KEY_FROM_WATTSON, MauvilleCity_EventScript_BegunNewMauville
 # 425 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonNeedFavorTakeKey, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WattsonNeedFavorTakeKey, MSGBOX_DEFAULT, MUGSHOT_WATTSON
 # 426 "data/maps/MauvilleCity/scripts.pory"
 	giveitem ITEM_BASEMENT_KEY
 # 427 "data/maps/MauvilleCity/scripts.pory"
@@ -855,7 +855,7 @@ MauvilleCity_EventScript_Wattson::
 # 428 "data/maps/MauvilleCity/scripts.pory"
 	setflag FLAG_GOT_BASEMENT_KEY_FROM_WATTSON
 # 429 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT, MUGSHOT_WATTSON
 # 430 "data/maps/MauvilleCity/scripts.pory"
 	release
 # 431 "data/maps/MauvilleCity/scripts.pory"
@@ -865,7 +865,7 @@ MauvilleCity_EventScript_Wattson::
 # 433 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_BegunNewMauville::
 # 434 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT, MUGSHOT_WATTSON
 # 435 "data/maps/MauvilleCity/scripts.pory"
 	release
 # 436 "data/maps/MauvilleCity/scripts.pory"
@@ -875,7 +875,7 @@ MauvilleCity_EventScript_BegunNewMauville::
 # 438 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_CompletedNewMauville::
 # 439 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonThanksTakeTM, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WattsonThanksTakeTM, MSGBOX_DEFAULT, MUGSHOT_WATTSON
 # 440 "data/maps/MauvilleCity/scripts.pory"
 	giveitem ITEM_TM_THUNDERBOLT
 # 441 "data/maps/MauvilleCity/scripts.pory"
@@ -883,7 +883,7 @@ MauvilleCity_EventScript_CompletedNewMauville::
 # 442 "data/maps/MauvilleCity/scripts.pory"
 	setflag FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON
 # 443 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT, MUGSHOT_WATTSON
 # 444 "data/maps/MauvilleCity/scripts.pory"
 	release
 # 445 "data/maps/MauvilleCity/scripts.pory"
@@ -893,7 +893,7 @@ MauvilleCity_EventScript_CompletedNewMauville::
 # 447 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_ReceivedThunderbolt::
 # 448 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT, MUGSHOT_WATTSON
 # 449 "data/maps/MauvilleCity/scripts.pory"
 	release
 # 450 "data/maps/MauvilleCity/scripts.pory"
