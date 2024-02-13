@@ -265,12 +265,12 @@ OldaleTown_EventScript_ShowRivalMessage::
 	end
 
 OldaleTown_EventScript_ShowMayMessage::
-	msgbox OldaleTown_Text_MayLetsGoBack, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Text_MayLetsGoBack, MSGBOX_DEFAULT, MUGSHOT_MAY
 	goto OldaleTown_EventScript_RivalFinish
 	end
 
 OldaleTown_EventScript_ShowBrendanMessage::
-	msgbox OldaleTown_Text_BrendanLetsGoBack, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Text_BrendanLetsGoBack, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	goto OldaleTown_EventScript_RivalFinish
 	end
 

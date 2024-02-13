@@ -257,12 +257,12 @@ RivalsHouse_2F_EventScript_Rival::
 	end
 
 RivalsHouse_2F_EventScript_May::
-	msgbox RivalsHouse_2F_Text_MayGettingReady, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_MayGettingReady, MSGBOX_DEFAULT, MUGSHOT_MAY
 	releaseall
 	end
 
 RivalsHouse_2F_EventScript_Brendan::
-	msgbox RivalsHouse_2F_Text_BrendanGettingReady, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_BrendanGettingReady, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	releaseall
 	end
 
@@ -278,20 +278,20 @@ RivalsHouse_2F_EventScript_RivalPostLilycove::
 
 RivalsHouse_2F_EventScript_MayPostLilycove::
 	goto_if_set FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE, RivalsHouse_2F_EventScript_MayWhereShouldIGoNext
-	msgbox RivalsHouse_2F_Text_MayJustCheckingMyPokedex, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_MayJustCheckingMyPokedex, MSGBOX_DEFAULT, MUGSHOT_MAY
 	return
 
 RivalsHouse_2F_EventScript_BrendanPostLilycove::
 	goto_if_set FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE, RivalsHouse_2F_EventScript_BrendanWhereShouldIGoNext
-	msgbox RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	return
 
 RivalsHouse_2F_EventScript_MayWhereShouldIGoNext::
-	msgbox RivalsHouse_2F_Text_MayWhereShouldIGoNext, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_MayWhereShouldIGoNext, MSGBOX_DEFAULT, MUGSHOT_MAY
 	return
 
 RivalsHouse_2F_EventScript_BrendanWhereShouldIGoNext::
-	msgbox RivalsHouse_2F_Text_BrendanWhereShouldIGoNext, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_BrendanWhereShouldIGoNext, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	return
 
 LittlerootTown_MaysHouse_2F_EventScript_PC::

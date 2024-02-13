@@ -383,7 +383,7 @@ LittlerootTown_MaysHouse_1F_EventScript_MeetRival::
 # 192 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	call_if_eq VAR_0x8008, 2, LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer2
 # 193 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_Text_MayWhoAreYou, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_1F_Text_MayWhoAreYou, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 194 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	closemessage
 # 195 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"

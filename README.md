@@ -14,7 +14,6 @@
     - Unlocked along with Pokédex, works similar to ORAS DexNav
     - Tip: Hold "A" button while moving towards shaking grass to "creep"!
 
-- [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to important characters
 - Fun HM Workaround!
     - Meet people and Pokémon willing to help you on your journey!
     - Timburr's Timber (Cut) in Rustboro, TinkaTough (Rock Smash) in Mauville, etc.
@@ -26,6 +25,9 @@
 ### Graphics
 - New overworlds from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
     - Credit goes to Pawkkie for May's sprite and RavePossum for the rest!
+- [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to important characters
+    - Credit to Zenionith for ORAS style PSS icons
+    - Credit to Wergan on DeviantArt and Omega on WhackaHack for various other PSS-style icons
 - New Gen 5 inspired map popups, ported from BSBob by [RavePossum](https://github.com/ravepossum/pokeemerald)
 - Improved Battle Backgrounds by RavePossum and Ruki
 

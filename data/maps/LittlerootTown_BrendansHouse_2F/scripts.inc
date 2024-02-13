@@ -175,7 +175,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanNorth::
 # 88 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 89 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox RivalsHouse_2F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 90 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
 # 91 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -199,7 +199,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanSouth::
 # 100 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 101 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox RivalsHouse_2F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 102 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
 # 103 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -223,7 +223,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanWest::
 # 112 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 113 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox RivalsHouse_2F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 114 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
 # 115 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -247,7 +247,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanEast::
 # 124 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 125 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox RivalsHouse_2F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 126 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
 # 127 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"

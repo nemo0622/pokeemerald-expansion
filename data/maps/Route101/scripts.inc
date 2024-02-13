@@ -49,7 +49,7 @@ Route101_EventScript_StartBirchRescue::
 # 25 "data/maps/Route101/scripts.pory"
 	playbgm MUS_HELP, TRUE
 # 26 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_HelpMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_HelpMe, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 27 "data/maps/Route101/scripts.pory"
 	closemessage
 # 28 "data/maps/Route101/scripts.pory"
@@ -81,7 +81,7 @@ Route101_EventScript_StartBirchRescue::
 # 41 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 42 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_PleaseHelp, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_PleaseHelp, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 43 "data/maps/Route101/scripts.pory"
 	closemessage
 # 44 "data/maps/Route101/scripts.pory"
@@ -97,7 +97,7 @@ Route101_EventScript_PreventExitSouth::
 # 49 "data/maps/Route101/scripts.pory"
 	lockall
 # 50 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_DontLeaveMe, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 51 "data/maps/Route101/scripts.pory"
 	closemessage
 # 52 "data/maps/Route101/scripts.pory"
@@ -115,7 +115,7 @@ Route101_EventScript_PreventExitWest::
 # 58 "data/maps/Route101/scripts.pory"
 	lockall
 # 59 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_DontLeaveMe, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 60 "data/maps/Route101/scripts.pory"
 	closemessage
 # 61 "data/maps/Route101/scripts.pory"
@@ -133,7 +133,7 @@ Route101_EventScript_PreventExitNorth::
 # 67 "data/maps/Route101/scripts.pory"
 	lockall
 # 68 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_DontLeaveMe, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 69 "data/maps/Route101/scripts.pory"
 	closemessage
 # 70 "data/maps/Route101/scripts.pory"
@@ -469,7 +469,7 @@ Route101_EventScript_BirchsBag::
 # 235 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 236 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_YouSavedMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_YouSavedMe, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 237 "data/maps/Route101/scripts.pory"
 	special HealPlayerParty
 # 238 "data/maps/Route101/scripts.pory"

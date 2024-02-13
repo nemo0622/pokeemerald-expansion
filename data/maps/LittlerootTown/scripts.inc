@@ -439,7 +439,7 @@ LittlerootTown_EventScript_BeginDexUpgradeScene::
 # 220 "data/maps/LittlerootTown/scripts.pory"
 	delay 80
 # 221 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_BirchSomethingToShowYouAtLab, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_BirchSomethingToShowYouAtLab, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 222 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
 # 223 "data/maps/LittlerootTown/scripts.pory"
@@ -533,7 +533,7 @@ LittlerootTown_EventScript_Twin::
 # 267 "data/maps/LittlerootTown/scripts.pory"
 	goto_if_ne VAR_LITTLEROOT_TOWN_STATE, 0, LittlerootTown_EventScript_GoSaveBirch
 # 268 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 269 "data/maps/LittlerootTown/scripts.pory"
 	release
 # 270 "data/maps/LittlerootTown/scripts.pory"
@@ -545,7 +545,7 @@ LittlerootTown_EventScript_GoSaveBirch::
 # 273 "data/maps/LittlerootTown/scripts.pory"
 	special GetPlayerBigGuyGirlString
 # 274 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_CanYouGoSeeWhatsHappening, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_CanYouGoSeeWhatsHappening, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 275 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
 # 276 "data/maps/LittlerootTown/scripts.pory"
@@ -565,7 +565,7 @@ LittlerootTown_EventScript_YouSavedBirch::
 # 283 "data/maps/LittlerootTown/scripts.pory"
 	special GetPlayerBigGuyGirlString
 # 284 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_YouSavedBirch, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_YouSavedBirch, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 285 "data/maps/LittlerootTown/scripts.pory"
 	release
 # 286 "data/maps/LittlerootTown/scripts.pory"
@@ -575,7 +575,7 @@ LittlerootTown_EventScript_YouSavedBirch::
 # 288 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_EventScript_GoodLuck::
 # 289 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_GoodLuckCatchingPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_GoodLuckCatchingPokemon, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 290 "data/maps/LittlerootTown/scripts.pory"
 	release
 # 291 "data/maps/LittlerootTown/scripts.pory"
@@ -605,7 +605,7 @@ LittlerootTown_EventScript_NeedPokemonTriggerLeft::
 # 303 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_EventScript_DangerousWithoutPokemon::
 # 304 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 305 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
 # 306 "data/maps/LittlerootTown/scripts.pory"
@@ -615,7 +615,7 @@ LittlerootTown_EventScript_DangerousWithoutPokemon::
 # 308 "data/maps/LittlerootTown/scripts.pory"
 	waitmovement 0
 # 309 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_DangerousIfYouDontHavePokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_DangerousIfYouDontHavePokemon, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 310 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
 # 311 "data/maps/LittlerootTown/scripts.pory"
@@ -781,7 +781,7 @@ LittlerootTown_EventScript_GoSaveBirchTrigger::
 # 391 "data/maps/LittlerootTown/scripts.pory"
 	special GetPlayerBigGuyGirlString
 # 392 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_CanYouGoSeeWhatsHappening, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_CanYouGoSeeWhatsHappening, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 393 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
 # 394 "data/maps/LittlerootTown/scripts.pory"

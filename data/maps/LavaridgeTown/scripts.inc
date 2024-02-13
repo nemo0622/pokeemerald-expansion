@@ -127,13 +127,13 @@ LavaridgeTown_EventScript_RivalGiveGoGoggles::
 # 64 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_EventScript_MayGiveGoGoggles::
 # 65 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_MayNiceBadgesTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_MayNiceBadgesTakeThis, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 66 "data/maps/LavaridgeTown/scripts.pory"
 	giveitem ITEM_GO_GOGGLES
 # 67 "data/maps/LavaridgeTown/scripts.pory"
 	setflag FLAG_RECEIVED_GO_GOGGLES
 # 68 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_MayExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_MayExplainGoGogglesChallengeDad, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 69 "data/maps/LavaridgeTown/scripts.pory"
 	goto LavaridgeTown_EventScript_RivalExit
 # 70 "data/maps/LavaridgeTown/scripts.pory"
@@ -143,13 +143,13 @@ LavaridgeTown_EventScript_MayGiveGoGoggles::
 # 72 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_EventScript_BrendanGiveGoGoggles::
 # 73 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_BrendanNiceBadgesTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_BrendanNiceBadgesTakeThis, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 74 "data/maps/LavaridgeTown/scripts.pory"
 	giveitem ITEM_GO_GOGGLES
 # 75 "data/maps/LavaridgeTown/scripts.pory"
 	setflag FLAG_RECEIVED_GO_GOGGLES
 # 76 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 77 "data/maps/LavaridgeTown/scripts.pory"
 	goto LavaridgeTown_EventScript_RivalExit
 # 78 "data/maps/LavaridgeTown/scripts.pory"
@@ -439,7 +439,7 @@ LavaridgeTown_EventScript_OldMan::
 # 220 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_EventScript_Twin::
 # 221 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_BatheInHotSpringsEveryDay, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_Text_BatheInHotSpringsEveryDay, MSGBOX_NPC, MUGSHOT_TWIN
 # 222 "data/maps/LavaridgeTown/scripts.pory"
 	end
 # 223 "data/maps/LavaridgeTown/scripts.pory"

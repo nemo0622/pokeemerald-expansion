@@ -489,7 +489,7 @@ LilycoveCity_EventScript_May::
 # 245 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineMayBattle
 # 246 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_MayWontBeBeaten, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayWontBeBeaten, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 247 "data/maps/LilycoveCity/scripts.pory"
 	switch VAR_STARTER_MON
 # 248 "data/maps/LilycoveCity/scripts.pory"
@@ -505,7 +505,7 @@ LilycoveCity_EventScript_May::
 # 253 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_MayAskToBattleAgain::
 # 254 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_MayBattleMe, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_Text_MayBattleMe, MSGBOX_YESNO, MUGSHOT_MAY
 # 255 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 256 "data/maps/LilycoveCity/scripts.pory"
@@ -513,7 +513,7 @@ LilycoveCity_EventScript_MayAskToBattleAgain::
 # 257 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_MayAskToBattle::
 # 258 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_MayShoppingLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_Text_MayShoppingLetsBattle, MSGBOX_YESNO, MUGSHOT_MAY
 # 259 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 260 "data/maps/LilycoveCity/scripts.pory"
@@ -523,7 +523,7 @@ LilycoveCity_EventScript_DeclineMayBattle::
 # 262 "data/maps/LilycoveCity/scripts.pory"
 	setflag FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE
 # 263 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_MayNotRaisingPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayNotRaisingPokemon, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 264 "data/maps/LilycoveCity/scripts.pory"
 	savebgm MUS_DUMMY
 # 265 "data/maps/LilycoveCity/scripts.pory"
@@ -545,7 +545,7 @@ LilycoveCity_EventScript_Brendan::
 # 273 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineBrendanBattle
 # 274 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_BrendanWontBeBeaten, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanWontBeBeaten, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 275 "data/maps/LilycoveCity/scripts.pory"
 	switch VAR_STARTER_MON
 # 276 "data/maps/LilycoveCity/scripts.pory"
@@ -561,7 +561,7 @@ LilycoveCity_EventScript_Brendan::
 # 281 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_BrendanAskToBattleAgain::
 # 282 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_BrendanBattleMe, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_Text_BrendanBattleMe, MSGBOX_YESNO, MUGSHOT_BRENDAN
 # 283 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 284 "data/maps/LilycoveCity/scripts.pory"
@@ -569,7 +569,7 @@ LilycoveCity_EventScript_BrendanAskToBattleAgain::
 # 285 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_BrendanAskToBattle::
 # 286 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_BrendanShoppingLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_Text_BrendanShoppingLetsBattle, MSGBOX_YESNO, MUGSHOT_BRENDAN
 # 287 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 288 "data/maps/LilycoveCity/scripts.pory"
@@ -579,7 +579,7 @@ LilycoveCity_EventScript_DeclineBrendanBattle::
 # 290 "data/maps/LilycoveCity/scripts.pory"
 	setflag FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE
 # 291 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_BrendanNoConfidence, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanNoConfidence, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 292 "data/maps/LilycoveCity/scripts.pory"
 	savebgm MUS_DUMMY
 # 293 "data/maps/LilycoveCity/scripts.pory"
@@ -653,7 +653,7 @@ LilycoveCity_EventScript_BattleBrendanMudkip::
 # 327 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_DefeatedMay::
 # 328 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_MayGoingBackToLittleroot, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayGoingBackToLittleroot, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 329 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_RESULT, FALSE
 # 330 "data/maps/LilycoveCity/scripts.pory"
@@ -691,7 +691,7 @@ LilycoveCity_EventScript_HasFinalBadge::
 # 346 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_MayCollectBadges::
 # 347 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_MayYouGoingToCollectBadges, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayYouGoingToCollectBadges, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 348 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 349 "data/maps/LilycoveCity/scripts.pory"
@@ -701,7 +701,7 @@ LilycoveCity_EventScript_MayPokemonLeague::
 # 351 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_EventScript_MayBattleFrontier
 # 352 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_MayYouGoingToPokemonLeague, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayYouGoingToPokemonLeague, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 353 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 354 "data/maps/LilycoveCity/scripts.pory"
@@ -709,7 +709,7 @@ LilycoveCity_EventScript_MayPokemonLeague::
 # 355 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_MayBattleFrontier::
 # 356 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_MayYouGoingToBattleFrontier, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayYouGoingToBattleFrontier, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 357 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 358 "data/maps/LilycoveCity/scripts.pory"
@@ -717,7 +717,7 @@ LilycoveCity_EventScript_MayBattleFrontier::
 # 359 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_DefeatedBrendan::
 # 360 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_BrendanGoingBackToLittleroot, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanGoingBackToLittleroot, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 361 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_RESULT, FALSE
 # 362 "data/maps/LilycoveCity/scripts.pory"
@@ -739,7 +739,7 @@ LilycoveCity_EventScript_DefeatedBrendan::
 # 370 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_BrendanCollectBadges::
 # 371 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_BrendanYouGoingToCollectBadges, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanYouGoingToCollectBadges, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 372 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 373 "data/maps/LilycoveCity/scripts.pory"
@@ -749,7 +749,7 @@ LilycoveCity_EventScript_BrendanPokemonLeague::
 # 375 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_EventScript_BrendanBattleFrontier
 # 376 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_BrendanYouGoingToPokemonLeague, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanYouGoingToPokemonLeague, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 377 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 378 "data/maps/LilycoveCity/scripts.pory"
@@ -757,7 +757,7 @@ LilycoveCity_EventScript_BrendanPokemonLeague::
 # 379 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_BrendanBattleFrontier::
 # 380 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_BrendanYouGoingToBattleFrontier, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanYouGoingToBattleFrontier, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 381 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 382 "data/maps/LilycoveCity/scripts.pory"

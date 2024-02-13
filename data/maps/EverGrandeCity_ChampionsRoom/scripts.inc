@@ -155,7 +155,7 @@ EverGrandeCity_ChampionsRoom_EventScript_PlayBrendanMusic::
 # 78 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_EventScript_MayAdvice::
 # 79 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_MayAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_MayAdvice, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 80 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	delay 40
 # 81 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -171,7 +171,7 @@ EverGrandeCity_ChampionsRoom_EventScript_MayAdvice::
 # 86 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	call EverGrandeCity_ChampionsRoom_EventScript_RivalLookBackAndForth
 # 87 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 88 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	goto EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF
 # 89 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -181,7 +181,7 @@ EverGrandeCity_ChampionsRoom_EventScript_MayAdvice::
 # 91 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_EventScript_BrendanAdvice::
 # 92 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_BrendanAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_BrendanAdvice, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 93 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	delay 40
 # 94 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -197,7 +197,7 @@ EverGrandeCity_ChampionsRoom_EventScript_BrendanAdvice::
 # 99 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	call EverGrandeCity_ChampionsRoom_EventScript_RivalLookBackAndForth
 # 100 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 101 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	goto EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF
 # 102 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -219,11 +219,11 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 # 110 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 111 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 112 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	call ProfBirch_EventScript_RatePokedex
 # 113 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_BirchCongratulations, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_BirchCongratulations, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 114 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterUp
 # 115 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -287,7 +287,7 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 # 144 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_EventScript_MayCongratulations::
 # 145 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_MayCongratulations, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_MayCongratulations, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 146 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	return
 # 147 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -295,7 +295,7 @@ EverGrandeCity_ChampionsRoom_EventScript_MayCongratulations::
 # 148 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_EventScript_BrendanCongratulations::
 # 149 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 150 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	return
 # 151 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"

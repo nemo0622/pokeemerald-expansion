@@ -149,7 +149,7 @@ Route119_EventScript_PlayBrendanMusic::
 # 75 "data/maps/Route119/scripts.pory"
 Route119_EventScript_BattleMay::
 # 76 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_MayIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_MayIntro, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 77 "data/maps/Route119/scripts.pory"
 	switch VAR_STARTER_MON
 # 78 "data/maps/Route119/scripts.pory"
@@ -195,11 +195,11 @@ Route119_EventScript_BattleMayMudkip::
 # 98 "data/maps/Route119/scripts.pory"
 Route119_EventScript_DefeatedMay::
 # 99 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_MayPresentForYou, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_MayPresentForYou, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 100 "data/maps/Route119/scripts.pory"
 	call Route119_EventScript_GiveFlyHM
 # 101 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_MayExplainFly, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_MayExplainFly, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 102 "data/maps/Route119/scripts.pory"
 	goto Route119_EventScript_RivalExitScottArrive
 # 103 "data/maps/Route119/scripts.pory"
@@ -209,7 +209,7 @@ Route119_EventScript_DefeatedMay::
 # 105 "data/maps/Route119/scripts.pory"
 Route119_EventScript_BattleBrendan::
 # 106 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_BrendanIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_BrendanIntro, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 107 "data/maps/Route119/scripts.pory"
 	switch VAR_STARTER_MON
 # 108 "data/maps/Route119/scripts.pory"
@@ -255,11 +255,11 @@ Route119_EventScript_BattleBrendanMudkip::
 # 128 "data/maps/Route119/scripts.pory"
 Route119_EventScript_DefeatedBrendan::
 # 129 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_BrendanIllGiveYouThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_BrendanIllGiveYouThis, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 130 "data/maps/Route119/scripts.pory"
 	call Route119_EventScript_GiveFlyHM
 # 131 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_BrendanExplainFly, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_BrendanExplainFly, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 132 "data/maps/Route119/scripts.pory"
 	goto Route119_EventScript_RivalExitScottArrive
 # 133 "data/maps/Route119/scripts.pory"

@@ -218,7 +218,7 @@ LittlerootTown_EventScript_BeginDexUpgradeScene::
 	applymovement LOCALID_BIRCH, Common_Movement_ExclamationMark
 	waitmovement 0
 	delay 80
-	msgbox LittlerootTown_Text_BirchSomethingToShowYouAtLab, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_BirchSomethingToShowYouAtLab, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 	closemessage
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH
@@ -265,13 +265,13 @@ LittlerootTown_EventScript_Twin::
 	goto_if_set FLAG_ADVENTURE_STARTED, LittlerootTown_EventScript_GoodLuck
 	goto_if_set FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_YouSavedBirch
 	goto_if_ne VAR_LITTLEROOT_TOWN_STATE, 0, LittlerootTown_EventScript_GoSaveBirch
-	msgbox LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	release
 	end
 
 LittlerootTown_EventScript_GoSaveBirch::
 	special GetPlayerBigGuyGirlString
-	msgbox LittlerootTown_Text_CanYouGoSeeWhatsHappening, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_CanYouGoSeeWhatsHappening, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	closemessage
 	applymovement LOCALID_TWIN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -281,12 +281,12 @@ LittlerootTown_EventScript_GoSaveBirch::
 
 LittlerootTown_EventScript_YouSavedBirch::
 	special GetPlayerBigGuyGirlString
-	msgbox LittlerootTown_Text_YouSavedBirch, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_YouSavedBirch, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	release
 	end
 
 LittlerootTown_EventScript_GoodLuck::
-	msgbox LittlerootTown_Text_GoodLuckCatchingPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_GoodLuckCatchingPokemon, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	release
 	end
 
@@ -301,12 +301,12 @@ LittlerootTown_EventScript_NeedPokemonTriggerLeft::
 	end
 
 LittlerootTown_EventScript_DangerousWithoutPokemon::
-	msgbox LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	closemessage
 	applymovement LOCALID_TWIN, LittlerootTown_Movement_TwinPushPlayerFromRoute
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_PushPlayerBackFromRoute
 	waitmovement 0
-	msgbox LittlerootTown_Text_DangerousIfYouDontHavePokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_DangerousIfYouDontHavePokemon, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	closemessage
 	return
 
@@ -389,7 +389,7 @@ LittlerootTown_EventScript_GoSaveBirchTrigger::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	special GetPlayerBigGuyGirlString
-	msgbox LittlerootTown_Text_CanYouGoSeeWhatsHappening, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_CanYouGoSeeWhatsHappening, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	closemessage
 	applymovement LOCALID_TWIN, Common_Movement_FaceOriginalDirection
 	waitmovement 0

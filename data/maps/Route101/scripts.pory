@@ -23,7 +23,7 @@ Route101_EventScript_HideMapNamePopup::
 Route101_EventScript_StartBirchRescue::
 	lockall
 	playbgm MUS_HELP, TRUE
-	msgbox Route101_Text_HelpMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_HelpMe, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 	closemessage
 	setobjectxy LOCALID_BIRCH, 0, 15
 	setobjectxy LOCALID_ZIGZAGOON, 0, 16
@@ -39,7 +39,7 @@ Route101_EventScript_StartBirchRescue::
 	applymovement LOCALID_ZIGZAGOON, Route101_Movement_ZigzagoonFaceBirch
 	applymovement LOCALID_BIRCH, Route101_Movement_BirchFaceZigzagoon
 	waitmovement 0
-	msgbox Route101_Text_PleaseHelp, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_PleaseHelp, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 	closemessage
 	setvar VAR_ROUTE101_STATE, 2
 	releaseall
@@ -47,7 +47,7 @@ Route101_EventScript_StartBirchRescue::
 
 Route101_EventScript_PreventExitSouth::
 	lockall
-	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_DontLeaveMe, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitSouth
 	waitmovement 0
@@ -56,7 +56,7 @@ Route101_EventScript_PreventExitSouth::
 
 Route101_EventScript_PreventExitWest::
 	lockall
-	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_DontLeaveMe, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitWest
 	waitmovement 0
@@ -65,7 +65,7 @@ Route101_EventScript_PreventExitWest::
 
 Route101_EventScript_PreventExitNorth::
 	lockall
-	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_DontLeaveMe, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitNorth
 	waitmovement 0
@@ -233,7 +233,7 @@ Route101_EventScript_BirchsBag::
 	waitstate
 	applymovement LOCALID_BIRCH, Route101_Movement_BirchApproachPlayer
 	waitmovement 0
-	msgbox Route101_Text_YouSavedMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route101_Text_YouSavedMe, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 	special HealPlayerParty
 	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH

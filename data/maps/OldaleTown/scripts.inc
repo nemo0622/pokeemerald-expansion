@@ -533,7 +533,7 @@ OldaleTown_EventScript_ShowRivalMessage::
 # 267 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_EventScript_ShowMayMessage::
 # 268 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_Text_MayLetsGoBack, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Text_MayLetsGoBack, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 269 "data/maps/OldaleTown/scripts.pory"
 	goto OldaleTown_EventScript_RivalFinish
 # 270 "data/maps/OldaleTown/scripts.pory"
@@ -543,7 +543,7 @@ OldaleTown_EventScript_ShowMayMessage::
 # 272 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_EventScript_ShowBrendanMessage::
 # 273 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_Text_BrendanLetsGoBack, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Text_BrendanLetsGoBack, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 274 "data/maps/OldaleTown/scripts.pory"
 	goto OldaleTown_EventScript_RivalFinish
 # 275 "data/maps/OldaleTown/scripts.pory"

@@ -517,7 +517,7 @@ RivalsHouse_2F_EventScript_Rival::
 # 259 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 RivalsHouse_2F_EventScript_May::
 # 260 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	msgbox RivalsHouse_2F_Text_MayGettingReady, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_MayGettingReady, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 261 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	releaseall
 # 262 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -527,7 +527,7 @@ RivalsHouse_2F_EventScript_May::
 # 264 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 RivalsHouse_2F_EventScript_Brendan::
 # 265 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	msgbox RivalsHouse_2F_Text_BrendanGettingReady, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_BrendanGettingReady, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 266 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	releaseall
 # 267 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -559,7 +559,7 @@ RivalsHouse_2F_EventScript_MayPostLilycove::
 # 280 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	goto_if_set FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE, RivalsHouse_2F_EventScript_MayWhereShouldIGoNext
 # 281 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	msgbox RivalsHouse_2F_Text_MayJustCheckingMyPokedex, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_MayJustCheckingMyPokedex, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 282 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	return
 # 283 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -569,7 +569,7 @@ RivalsHouse_2F_EventScript_BrendanPostLilycove::
 # 285 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	goto_if_set FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE, RivalsHouse_2F_EventScript_BrendanWhereShouldIGoNext
 # 286 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	msgbox RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 287 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	return
 # 288 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -577,7 +577,7 @@ RivalsHouse_2F_EventScript_BrendanPostLilycove::
 # 289 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 RivalsHouse_2F_EventScript_MayWhereShouldIGoNext::
 # 290 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	msgbox RivalsHouse_2F_Text_MayWhereShouldIGoNext, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_MayWhereShouldIGoNext, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 291 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	return
 # 292 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -585,7 +585,7 @@ RivalsHouse_2F_EventScript_MayWhereShouldIGoNext::
 # 293 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 RivalsHouse_2F_EventScript_BrendanWhereShouldIGoNext::
 # 294 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	msgbox RivalsHouse_2F_Text_BrendanWhereShouldIGoNext, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_2F_Text_BrendanWhereShouldIGoNext, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 295 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	return
 # 296 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"

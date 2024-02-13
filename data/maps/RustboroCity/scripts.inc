@@ -379,7 +379,7 @@ RustboroCity_EventScript_Boy2BrineyLeftTunnel::
 # 190 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_Twin::
 # 191 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_WowYouHavePokemon, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Text_WowYouHavePokemon, MSGBOX_NPC, MUGSHOT_TWIN
 # 192 "data/maps/RustboroCity/scripts.pory"
 	end
 # 193 "data/maps/RustboroCity/scripts.pory"
@@ -1677,7 +1677,7 @@ RustboroCity_EventScript_MayEncounter::
 # 839 "data/maps/RustboroCity/scripts.pory"
 	setflag FLAG_MET_RIVAL_RUSTBORO
 # 840 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_MayHiLetsRegister, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MayHiLetsRegister, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 841 "data/maps/RustboroCity/scripts.pory"
 	closemessage
 # 842 "data/maps/RustboroCity/scripts.pory"
@@ -1685,7 +1685,7 @@ RustboroCity_EventScript_MayEncounter::
 # 843 "data/maps/RustboroCity/scripts.pory"
 	playfanfare MUS_REGISTER_MATCH_CALL
 # 844 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 845 "data/maps/RustboroCity/scripts.pory"
 	waitfanfare
 # 846 "data/maps/RustboroCity/scripts.pory"
@@ -1701,11 +1701,11 @@ RustboroCity_EventScript_MayEncounter::
 # 851 "data/maps/RustboroCity/scripts.pory"
 	setvar VAR_0x8008, 0
 # 852 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_MayPassedBrineyWantToBattle, MSGBOX_YESNO
+	msgbox_mugshot RustboroCity_Text_MayPassedBrineyWantToBattle, MSGBOX_YESNO, MUGSHOT_MAY
 # 853 "data/maps/RustboroCity/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleMay
 # 854 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 855 "data/maps/RustboroCity/scripts.pory"
 	call RustboroCity_EventScript_RestoreBgm
 # 856 "data/maps/RustboroCity/scripts.pory"
@@ -1719,11 +1719,11 @@ RustboroCity_EventScript_MayAskToBattle::
 # 860 "data/maps/RustboroCity/scripts.pory"
 	setvar VAR_0x8008, 1
 # 861 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_MayWantToBattle, MSGBOX_YESNO
+	msgbox_mugshot RustboroCity_Text_MayWantToBattle, MSGBOX_YESNO, MUGSHOT_MAY
 # 862 "data/maps/RustboroCity/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleMay
 # 863 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 864 "data/maps/RustboroCity/scripts.pory"
 	releaseall
 # 865 "data/maps/RustboroCity/scripts.pory"
@@ -1733,7 +1733,7 @@ RustboroCity_EventScript_MayAskToBattle::
 # 867 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_BattleMay::
 # 868 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_MayImNotGoingToLose, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MayImNotGoingToLose, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 869 "data/maps/RustboroCity/scripts.pory"
 	switch VAR_STARTER_MON
 # 870 "data/maps/RustboroCity/scripts.pory"
@@ -1749,7 +1749,7 @@ RustboroCity_EventScript_BattleMay::
 # 875 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_MayBrineyHint::
 # 876 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_MayMrBrineyHint, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MayMrBrineyHint, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 877 "data/maps/RustboroCity/scripts.pory"
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 # 878 "data/maps/RustboroCity/scripts.pory"
@@ -1813,7 +1813,7 @@ RustboroCity_EventScript_BrendanEncounter::
 # 907 "data/maps/RustboroCity/scripts.pory"
 	setflag FLAG_MET_RIVAL_RUSTBORO
 # 908 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 909 "data/maps/RustboroCity/scripts.pory"
 	closemessage
 # 910 "data/maps/RustboroCity/scripts.pory"
@@ -1821,7 +1821,7 @@ RustboroCity_EventScript_BrendanEncounter::
 # 911 "data/maps/RustboroCity/scripts.pory"
 	playfanfare MUS_REGISTER_MATCH_CALL
 # 912 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 913 "data/maps/RustboroCity/scripts.pory"
 	waitfanfare
 # 914 "data/maps/RustboroCity/scripts.pory"
@@ -1835,11 +1835,11 @@ RustboroCity_EventScript_BrendanEncounter::
 # 918 "data/maps/RustboroCity/scripts.pory"
 	setvar VAR_ROUTE104_STATE, 2
 # 919 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_BrendanPassedBrineyWantToBattle, MSGBOX_YESNO
+	msgbox_mugshot RustboroCity_Text_BrendanPassedBrineyWantToBattle, MSGBOX_YESNO, MUGSHOT_BRENDAN
 # 920 "data/maps/RustboroCity/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleBrendan
 # 921 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 922 "data/maps/RustboroCity/scripts.pory"
 	call RustboroCity_EventScript_RestoreBgm
 # 923 "data/maps/RustboroCity/scripts.pory"
@@ -1851,11 +1851,11 @@ RustboroCity_EventScript_BrendanEncounter::
 # 926 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_BrendanAskToBattle::
 # 927 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_BrendanWantToBattle, MSGBOX_YESNO
+	msgbox_mugshot RustboroCity_Text_BrendanWantToBattle, MSGBOX_YESNO, MUGSHOT_BRENDAN
 # 928 "data/maps/RustboroCity/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleBrendan
 # 929 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 930 "data/maps/RustboroCity/scripts.pory"
 	releaseall
 # 931 "data/maps/RustboroCity/scripts.pory"
@@ -1865,7 +1865,7 @@ RustboroCity_EventScript_BrendanAskToBattle::
 # 933 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_BattleBrendan::
 # 934 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_BrendanIWontGoEasy, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_BrendanIWontGoEasy, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 935 "data/maps/RustboroCity/scripts.pory"
 	switch VAR_STARTER_MON
 # 936 "data/maps/RustboroCity/scripts.pory"
@@ -1881,7 +1881,7 @@ RustboroCity_EventScript_BattleBrendan::
 # 941 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_BrendanBrineyHint::
 # 942 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_BrendanMrBrineyHint, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_BrendanMrBrineyHint, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 943 "data/maps/RustboroCity/scripts.pory"
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 # 944 "data/maps/RustboroCity/scripts.pory"

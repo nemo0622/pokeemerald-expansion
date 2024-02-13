@@ -811,7 +811,7 @@ Route110_EventScript_PlayBrendanMusic::
 # 406 "data/maps/Route110/scripts.pory"
 Route110_EventScript_MayBattle::
 # 407 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_MayLetsBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_MayLetsBattle, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 408 "data/maps/Route110/scripts.pory"
 	switch VAR_STARTER_MON
 # 409 "data/maps/Route110/scripts.pory"
@@ -857,11 +857,11 @@ Route110_EventScript_MayBattleMudkip::
 # 429 "data/maps/Route110/scripts.pory"
 Route110_EventScript_MayDefeated::
 # 430 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_MayTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_MayTakeThis, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 431 "data/maps/Route110/scripts.pory"
 	call Route110_EventScript_GiveItemfinder
 # 432 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_MayExplainItemfinder, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_MayExplainItemfinder, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 433 "data/maps/Route110/scripts.pory"
 	goto Route110_EventScript_RivalExit
 # 434 "data/maps/Route110/scripts.pory"
@@ -871,7 +871,7 @@ Route110_EventScript_MayDefeated::
 # 436 "data/maps/Route110/scripts.pory"
 Route110_EventScript_BrendanBattle::
 # 437 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_BrendanLetsBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_BrendanLetsBattle, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 438 "data/maps/Route110/scripts.pory"
 	switch VAR_STARTER_MON
 # 439 "data/maps/Route110/scripts.pory"
@@ -917,11 +917,11 @@ Route110_EventScript_BrendanBattleMudkip::
 # 459 "data/maps/Route110/scripts.pory"
 Route110_EventScript_BrendanDefeated::
 # 460 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_BrendanTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_BrendanTakeThis, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 461 "data/maps/Route110/scripts.pory"
 	call Route110_EventScript_GiveItemfinder
 # 462 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_BrendanExplainItemfinder, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_BrendanExplainItemfinder, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 463 "data/maps/Route110/scripts.pory"
 	goto Route110_EventScript_RivalExit
 # 464 "data/maps/Route110/scripts.pory"
@@ -1221,7 +1221,7 @@ Route110_EventScript_BirchScene::
 # 611 "data/maps/Route110/scripts.pory"
 	call_if_eq VAR_0x8008, 4, Route110_EventScript_BirchApproachPlayer4
 # 612 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_ImagineSeeingYouHere, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_ImagineSeeingYouHere, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 613 "data/maps/Route110/scripts.pory"
 	closemessage
 # 614 "data/maps/Route110/scripts.pory"
@@ -1245,7 +1245,7 @@ Route110_EventScript_BirchScene::
 # 623 "data/maps/Route110/scripts.pory"
 	delay 30
 # 624 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_HeardYouInstallMatchCall, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_HeardYouInstallMatchCall, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 625 "data/maps/Route110/scripts.pory"
 	closemessage
 # 626 "data/maps/Route110/scripts.pory"
@@ -1253,7 +1253,7 @@ Route110_EventScript_BirchScene::
 # 627 "data/maps/Route110/scripts.pory"
 	playfanfare MUS_REGISTER_MATCH_CALL
 # 628 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_RegisteredBirchInPokenav, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_RegisteredBirchInPokenav, MSGBOX_DEFAULT, MUGSHOT_BIRCH
 # 629 "data/maps/Route110/scripts.pory"
 	waitfanfare
 # 630 "data/maps/Route110/scripts.pory"

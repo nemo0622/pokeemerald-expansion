@@ -188,7 +188,7 @@ RustboroCity_EventScript_Boy2BrineyLeftTunnel::
 	end
 
 RustboroCity_EventScript_Twin::
-	msgbox RustboroCity_Text_WowYouHavePokemon, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Text_WowYouHavePokemon, MSGBOX_NPC, MUGSHOT_TWIN
 	end
 
 RustboroCity_EventScript_NinjaBoy::
@@ -837,11 +837,11 @@ RustboroCity_EventScript_MayEncounter::
 	goto_if_set FLAG_DEFEATED_RIVAL_RUSTBORO, RustboroCity_EventScript_MayBrineyHint
 	goto_if_set FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_MayAskToBattle
 	setflag FLAG_MET_RIVAL_RUSTBORO
-	msgbox RustboroCity_Text_MayHiLetsRegister, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MayHiLetsRegister, MSGBOX_DEFAULT, MUGSHOT_MAY
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT, MUGSHOT_MAY
 	waitfanfare
 	closemessage
 	delay 30
@@ -849,23 +849,23 @@ RustboroCity_EventScript_MayEncounter::
 	setvar VAR_RUSTBORO_CITY_STATE, 8
 	setvar VAR_ROUTE104_STATE, 2
 	setvar VAR_0x8008, 0
-	msgbox RustboroCity_Text_MayPassedBrineyWantToBattle, MSGBOX_YESNO
+	msgbox_mugshot RustboroCity_Text_MayPassedBrineyWantToBattle, MSGBOX_YESNO, MUGSHOT_MAY
 	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleMay
-	msgbox RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT, MUGSHOT_MAY
 	call RustboroCity_EventScript_RestoreBgm
 	releaseall
 	end
 
 RustboroCity_EventScript_MayAskToBattle::
 	setvar VAR_0x8008, 1
-	msgbox RustboroCity_Text_MayWantToBattle, MSGBOX_YESNO
+	msgbox_mugshot RustboroCity_Text_MayWantToBattle, MSGBOX_YESNO, MUGSHOT_MAY
 	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleMay
-	msgbox RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT, MUGSHOT_MAY
 	releaseall
 	end
 
 RustboroCity_EventScript_BattleMay::
-	msgbox RustboroCity_Text_MayImNotGoingToLose, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MayImNotGoingToLose, MSGBOX_DEFAULT, MUGSHOT_MAY
 	switch VAR_STARTER_MON
 	case 0, RustboroCity_EventScript_BattleMayTreecko
 	case 1, RustboroCity_EventScript_BattleMayTorchic
@@ -873,7 +873,7 @@ RustboroCity_EventScript_BattleMay::
 	end
 
 RustboroCity_EventScript_MayBrineyHint::
-	msgbox RustboroCity_Text_MayMrBrineyHint, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MayMrBrineyHint, MSGBOX_DEFAULT, MUGSHOT_MAY
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 	releaseall
 	end
@@ -905,33 +905,33 @@ RustboroCity_EventScript_BrendanEncounter::
 	goto_if_set FLAG_DEFEATED_RIVAL_RUSTBORO, RustboroCity_EventScript_BrendanBrineyHint
 	goto_if_set FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_BrendanAskToBattle
 	setflag FLAG_MET_RIVAL_RUSTBORO
-	msgbox RustboroCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	waitfanfare
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 	setvar VAR_RUSTBORO_CITY_STATE, 8
 	setvar VAR_ROUTE104_STATE, 2
-	msgbox RustboroCity_Text_BrendanPassedBrineyWantToBattle, MSGBOX_YESNO
+	msgbox_mugshot RustboroCity_Text_BrendanPassedBrineyWantToBattle, MSGBOX_YESNO, MUGSHOT_BRENDAN
 	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleBrendan
-	msgbox RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	call RustboroCity_EventScript_RestoreBgm
 	releaseall
 	end
 
 RustboroCity_EventScript_BrendanAskToBattle::
-	msgbox RustboroCity_Text_BrendanWantToBattle, MSGBOX_YESNO
+	msgbox_mugshot RustboroCity_Text_BrendanWantToBattle, MSGBOX_YESNO, MUGSHOT_BRENDAN
 	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleBrendan
-	msgbox RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	releaseall
 	end
 
 RustboroCity_EventScript_BattleBrendan::
-	msgbox RustboroCity_Text_BrendanIWontGoEasy, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_BrendanIWontGoEasy, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	switch VAR_STARTER_MON
 	case 0, RustboroCity_EventScript_BattleBrendanTreecko
 	case 1, RustboroCity_EventScript_BattleBrendanTorchic
@@ -939,7 +939,7 @@ RustboroCity_EventScript_BattleBrendan::
 	end
 
 RustboroCity_EventScript_BrendanBrineyHint::
-	msgbox RustboroCity_Text_BrendanMrBrineyHint, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_BrendanMrBrineyHint, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 	releaseall
 	end

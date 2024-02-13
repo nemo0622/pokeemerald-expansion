@@ -243,7 +243,7 @@ LilycoveCity_EventScript_May::
 	call_if_set FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattleAgain
 	call_if_unset FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattle
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineMayBattle
-	msgbox LilycoveCity_Text_MayWontBeBeaten, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayWontBeBeaten, MSGBOX_DEFAULT, MUGSHOT_MAY
 	switch VAR_STARTER_MON
 	case 0, LilycoveCity_EventScript_BattleMayTreecko
 	case 1, LilycoveCity_EventScript_BattleMayTorchic
@@ -251,16 +251,16 @@ LilycoveCity_EventScript_May::
 	end
 
 LilycoveCity_EventScript_MayAskToBattleAgain::
-	msgbox LilycoveCity_Text_MayBattleMe, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_Text_MayBattleMe, MSGBOX_YESNO, MUGSHOT_MAY
 	return
 
 LilycoveCity_EventScript_MayAskToBattle::
-	msgbox LilycoveCity_Text_MayShoppingLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_Text_MayShoppingLetsBattle, MSGBOX_YESNO, MUGSHOT_MAY
 	return
 
 LilycoveCity_EventScript_DeclineMayBattle::
 	setflag FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE
-	msgbox LilycoveCity_Text_MayNotRaisingPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayNotRaisingPokemon, MSGBOX_DEFAULT, MUGSHOT_MAY
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	release
@@ -271,7 +271,7 @@ LilycoveCity_EventScript_Brendan::
 	call_if_set FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_BrendanAskToBattleAgain
 	call_if_unset FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_BrendanAskToBattle
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineBrendanBattle
-	msgbox LilycoveCity_Text_BrendanWontBeBeaten, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanWontBeBeaten, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	switch VAR_STARTER_MON
 	case 0, LilycoveCity_EventScript_BattleBrendanTreecko
 	case 1, LilycoveCity_EventScript_BattleBrendanTorchic
@@ -279,16 +279,16 @@ LilycoveCity_EventScript_Brendan::
 	end
 
 LilycoveCity_EventScript_BrendanAskToBattleAgain::
-	msgbox LilycoveCity_Text_BrendanBattleMe, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_Text_BrendanBattleMe, MSGBOX_YESNO, MUGSHOT_BRENDAN
 	return
 
 LilycoveCity_EventScript_BrendanAskToBattle::
-	msgbox LilycoveCity_Text_BrendanShoppingLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_Text_BrendanShoppingLetsBattle, MSGBOX_YESNO, MUGSHOT_BRENDAN
 	return
 
 LilycoveCity_EventScript_DeclineBrendanBattle::
 	setflag FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE
-	msgbox LilycoveCity_Text_BrendanNoConfidence, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanNoConfidence, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	release
@@ -325,7 +325,7 @@ LilycoveCity_EventScript_BattleBrendanMudkip::
 	end
 
 LilycoveCity_EventScript_DefeatedMay::
-	msgbox LilycoveCity_Text_MayGoingBackToLittleroot, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayGoingBackToLittleroot, MSGBOX_DEFAULT, MUGSHOT_MAY
 	setvar VAR_RESULT, FALSE
 	call_if_set FLAG_BADGE06_GET, LilycoveCity_EventScript_CheckFinalBadge
 	call_if_eq VAR_RESULT, FALSE, LilycoveCity_EventScript_MayCollectBadges
@@ -344,20 +344,20 @@ LilycoveCity_EventScript_HasFinalBadge::
 	return
 
 LilycoveCity_EventScript_MayCollectBadges::
-	msgbox LilycoveCity_Text_MayYouGoingToCollectBadges, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayYouGoingToCollectBadges, MSGBOX_DEFAULT, MUGSHOT_MAY
 	return
 
 LilycoveCity_EventScript_MayPokemonLeague::
 	goto_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_EventScript_MayBattleFrontier
-	msgbox LilycoveCity_Text_MayYouGoingToPokemonLeague, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayYouGoingToPokemonLeague, MSGBOX_DEFAULT, MUGSHOT_MAY
 	return
 
 LilycoveCity_EventScript_MayBattleFrontier::
-	msgbox LilycoveCity_Text_MayYouGoingToBattleFrontier, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MayYouGoingToBattleFrontier, MSGBOX_DEFAULT, MUGSHOT_MAY
 	return
 
 LilycoveCity_EventScript_DefeatedBrendan::
-	msgbox LilycoveCity_Text_BrendanGoingBackToLittleroot, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanGoingBackToLittleroot, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	setvar VAR_RESULT, FALSE
 	call_if_set FLAG_BADGE06_GET, LilycoveCity_EventScript_CheckFinalBadge
 	call_if_eq VAR_RESULT, FALSE, LilycoveCity_EventScript_BrendanCollectBadges
@@ -368,16 +368,16 @@ LilycoveCity_EventScript_DefeatedBrendan::
 	end
 
 LilycoveCity_EventScript_BrendanCollectBadges::
-	msgbox LilycoveCity_Text_BrendanYouGoingToCollectBadges, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanYouGoingToCollectBadges, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	return
 
 LilycoveCity_EventScript_BrendanPokemonLeague::
 	goto_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_EventScript_BrendanBattleFrontier
-	msgbox LilycoveCity_Text_BrendanYouGoingToPokemonLeague, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanYouGoingToPokemonLeague, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	return
 
 LilycoveCity_EventScript_BrendanBattleFrontier::
-	msgbox LilycoveCity_Text_BrendanYouGoingToBattleFrontier, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BrendanYouGoingToBattleFrontier, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	return
 
 LilycoveCity_EventScript_RivalFlyAway::

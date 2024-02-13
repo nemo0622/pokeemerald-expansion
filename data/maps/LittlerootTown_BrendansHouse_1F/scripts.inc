@@ -317,7 +317,7 @@ LittlerootTown_BrendansHouse_1F_EventScript_MeetRival::
 # 159 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	call_if_eq VAR_0x8008, 2, LittlerootTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer2
 # 160 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_1F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 161 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	closemessage
 # 162 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"

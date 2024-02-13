@@ -59,7 +59,7 @@ Route103_EventScript_Rival::
 # 30 "data/maps/Route103/scripts.pory"
 Route103_EventScript_RivalMay::
 # 31 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_MayRoute103Pokemon, MSGBOX_DEFAULT
+	msgbox_mugshot Route103_Text_MayRoute103Pokemon, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 32 "data/maps/Route103/scripts.pory"
 	closemessage
 # 33 "data/maps/Route103/scripts.pory"
@@ -77,7 +77,7 @@ Route103_EventScript_RivalMay::
 # 39 "data/maps/Route103/scripts.pory"
 	waitmovement 0
 # 40 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_MayLetsBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route103_Text_MayLetsBattle, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 41 "data/maps/Route103/scripts.pory"
 	switch VAR_STARTER_MON
 # 42 "data/maps/Route103/scripts.pory"
@@ -93,7 +93,7 @@ Route103_EventScript_RivalMay::
 # 47 "data/maps/Route103/scripts.pory"
 Route103_EventScript_RivalBrendan::
 # 48 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_BrendanRoute103Pokemon, MSGBOX_DEFAULT
+	msgbox_mugshot Route103_Text_BrendanRoute103Pokemon, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 49 "data/maps/Route103/scripts.pory"
 	closemessage
 # 50 "data/maps/Route103/scripts.pory"
@@ -111,7 +111,7 @@ Route103_EventScript_RivalBrendan::
 # 56 "data/maps/Route103/scripts.pory"
 	waitmovement 0
 # 57 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_BrendanLetsBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route103_Text_BrendanLetsBattle, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 58 "data/maps/Route103/scripts.pory"
 	switch VAR_STARTER_MON
 # 59 "data/maps/Route103/scripts.pory"
@@ -187,7 +187,7 @@ Route103_EventScript_StartBrendanBattleMudkip::
 # 94 "data/maps/Route103/scripts.pory"
 Route103_EventScript_AfterMayBattle::
 # 95 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_MayTimeToHeadBack, MSGBOX_DEFAULT
+	msgbox_mugshot Route103_Text_MayTimeToHeadBack, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 96 "data/maps/Route103/scripts.pory"
 	goto Route103_EventScript_RivalExit
 # 97 "data/maps/Route103/scripts.pory"
@@ -197,7 +197,7 @@ Route103_EventScript_AfterMayBattle::
 # 99 "data/maps/Route103/scripts.pory"
 Route103_EventScript_AfterBrendanBattle::
 # 100 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_BrendanTimeToHeadBack, MSGBOX_DEFAULT
+	msgbox_mugshot Route103_Text_BrendanTimeToHeadBack, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 101 "data/maps/Route103/scripts.pory"
 	goto Route103_EventScript_RivalExit
 # 102 "data/maps/Route103/scripts.pory"

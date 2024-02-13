@@ -201,7 +201,7 @@ Route104_EventScript_MayEncounter::
 # 101 "data/maps/Route104/scripts.pory"
 	setflag FLAG_REGISTER_RIVAL_POKENAV
 # 102 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_MayWeShouldRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayWeShouldRegister, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 103 "data/maps/Route104/scripts.pory"
 	closemessage
 # 104 "data/maps/Route104/scripts.pory"
@@ -209,7 +209,7 @@ Route104_EventScript_MayEncounter::
 # 105 "data/maps/Route104/scripts.pory"
 	playfanfare MUS_REGISTER_MATCH_CALL
 # 106 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_RegisteredMay, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_RegisteredMay, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 107 "data/maps/Route104/scripts.pory"
 	waitfanfare
 # 108 "data/maps/Route104/scripts.pory"
@@ -223,7 +223,7 @@ Route104_EventScript_MayEncounter::
 # 112 "data/maps/Route104/scripts.pory"
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalWalkSlowLeft
 # 113 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_MayHowsYourPokedex, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayHowsYourPokedex, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 114 "data/maps/Route104/scripts.pory"
 	closemessage
 # 115 "data/maps/Route104/scripts.pory"
@@ -235,11 +235,11 @@ Route104_EventScript_MayEncounter::
 # 118 "data/maps/Route104/scripts.pory"
 	copyobjectxytoperm LOCALID_RIVAL
 # 119 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_MayMinesDecentLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot Route104_Text_MayMinesDecentLetsBattle, MSGBOX_YESNO, MUGSHOT_MAY
 # 120 "data/maps/Route104/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleMay
 # 121 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_MayHaventRaisedPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayHaventRaisedPokemon, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 122 "data/maps/Route104/scripts.pory"
 	call Route104_EventScript_RestoreMusic
 # 123 "data/maps/Route104/scripts.pory"
@@ -279,11 +279,11 @@ Route104_Movement_PlayerFaceRival:
 # 140 "data/maps/Route104/scripts.pory"
 Route104_EventScript_MayAskToBattle::
 # 141 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_MayLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot Route104_Text_MayLetsBattle, MSGBOX_YESNO, MUGSHOT_MAY
 # 142 "data/maps/Route104/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleMay
 # 143 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_MayHaventRaisedPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayHaventRaisedPokemon, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 144 "data/maps/Route104/scripts.pory"
 	releaseall
 # 145 "data/maps/Route104/scripts.pory"
@@ -293,7 +293,7 @@ Route104_EventScript_MayAskToBattle::
 # 147 "data/maps/Route104/scripts.pory"
 Route104_EventScript_BattleMay::
 # 148 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_MayIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayIntro, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 149 "data/maps/Route104/scripts.pory"
 	switch VAR_STARTER_MON
 # 150 "data/maps/Route104/scripts.pory"
@@ -309,7 +309,7 @@ Route104_EventScript_BattleMay::
 # 155 "data/maps/Route104/scripts.pory"
 Route104_EventScript_MayDefeated::
 # 156 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_MayPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAY
 # 157 "data/maps/Route104/scripts.pory"
 	call_if_eq VAR_0x8008, 0, Route104_EventScript_RestoreMusic
 # 158 "data/maps/Route104/scripts.pory"
@@ -373,7 +373,7 @@ Route104_EventScript_BrendanEncounter::
 # 187 "data/maps/Route104/scripts.pory"
 	setflag FLAG_REGISTER_RIVAL_POKENAV
 # 188 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BrendanWeShouldRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanWeShouldRegister, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 189 "data/maps/Route104/scripts.pory"
 	closemessage
 # 190 "data/maps/Route104/scripts.pory"
@@ -381,7 +381,7 @@ Route104_EventScript_BrendanEncounter::
 # 191 "data/maps/Route104/scripts.pory"
 	playfanfare MUS_REGISTER_MATCH_CALL
 # 192 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_RegisteredBrendan, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 193 "data/maps/Route104/scripts.pory"
 	waitfanfare
 # 194 "data/maps/Route104/scripts.pory"
@@ -395,7 +395,7 @@ Route104_EventScript_BrendanEncounter::
 # 198 "data/maps/Route104/scripts.pory"
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalWalkSlowLeft
 # 199 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BrendanHowsYourPokedex, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanHowsYourPokedex, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 200 "data/maps/Route104/scripts.pory"
 	closemessage
 # 201 "data/maps/Route104/scripts.pory"
@@ -407,11 +407,11 @@ Route104_EventScript_BrendanEncounter::
 # 204 "data/maps/Route104/scripts.pory"
 	copyobjectxytoperm LOCALID_RIVAL
 # 205 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BrendanDoingGreatLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot Route104_Text_BrendanDoingGreatLetsBattle, MSGBOX_YESNO, MUGSHOT_BRENDAN
 # 206 "data/maps/Route104/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleBrendan
 # 207 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 208 "data/maps/Route104/scripts.pory"
 	call Route104_EventScript_RestoreMusic
 # 209 "data/maps/Route104/scripts.pory"
@@ -423,11 +423,11 @@ Route104_EventScript_BrendanEncounter::
 # 212 "data/maps/Route104/scripts.pory"
 Route104_EventScript_BrendanAskToBattle::
 # 213 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BrendanLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot Route104_Text_BrendanLetsBattle, MSGBOX_YESNO, MUGSHOT_BRENDAN
 # 214 "data/maps/Route104/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleBrendan
 # 215 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 216 "data/maps/Route104/scripts.pory"
 	releaseall
 # 217 "data/maps/Route104/scripts.pory"
@@ -437,7 +437,7 @@ Route104_EventScript_BrendanAskToBattle::
 # 219 "data/maps/Route104/scripts.pory"
 Route104_EventScript_BattleBrendan::
 # 220 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BrendanIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanIntro, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 221 "data/maps/Route104/scripts.pory"
 	switch VAR_STARTER_MON
 # 222 "data/maps/Route104/scripts.pory"
@@ -453,7 +453,7 @@ Route104_EventScript_BattleBrendan::
 # 227 "data/maps/Route104/scripts.pory"
 Route104_EventScript_BrendanDefeated::
 # 228 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BrendanPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanPostBattle, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 # 229 "data/maps/Route104/scripts.pory"
 	call_if_eq VAR_0x8008, 0, Route104_EventScript_RestoreMusic
 # 230 "data/maps/Route104/scripts.pory"

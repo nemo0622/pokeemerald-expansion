@@ -99,26 +99,26 @@ Route104_EventScript_MayEncounter::
 	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Route104_EventScript_MayDefeated
 	goto_if_set FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_MayAskToBattle
 	setflag FLAG_REGISTER_RIVAL_POKENAV
-	msgbox Route104_Text_MayWeShouldRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayWeShouldRegister, MSGBOX_DEFAULT, MUGSHOT_MAY
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox Route104_Text_RegisteredMay, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_RegisteredMay, MSGBOX_DEFAULT, MUGSHOT_MAY
 	waitfanfare
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerFaceRival
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalWalkSlowLeft
-	msgbox Route104_Text_MayHowsYourPokedex, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayHowsYourPokedex, MSGBOX_DEFAULT, MUGSHOT_MAY
 	closemessage
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalApproachPlayer
 	waitmovement 0
 	copyobjectxytoperm LOCALID_RIVAL
-	msgbox Route104_Text_MayMinesDecentLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot Route104_Text_MayMinesDecentLetsBattle, MSGBOX_YESNO, MUGSHOT_MAY
 	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleMay
-	msgbox Route104_Text_MayHaventRaisedPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayHaventRaisedPokemon, MSGBOX_DEFAULT, MUGSHOT_MAY
 	call Route104_EventScript_RestoreMusic
 	releaseall
 	end
@@ -138,14 +138,14 @@ Route104_Movement_PlayerFaceRival:
 	step_end
 
 Route104_EventScript_MayAskToBattle::
-	msgbox Route104_Text_MayLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot Route104_Text_MayLetsBattle, MSGBOX_YESNO, MUGSHOT_MAY
 	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleMay
-	msgbox Route104_Text_MayHaventRaisedPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayHaventRaisedPokemon, MSGBOX_DEFAULT, MUGSHOT_MAY
 	releaseall
 	end
 
 Route104_EventScript_BattleMay::
-	msgbox Route104_Text_MayIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayIntro, MSGBOX_DEFAULT, MUGSHOT_MAY
 	switch VAR_STARTER_MON
 	case 0, Route104_EventScript_BattleMayTreecko
 	case 1, Route104_EventScript_BattleMayTorchic
@@ -153,7 +153,7 @@ Route104_EventScript_BattleMay::
 	end
 
 Route104_EventScript_MayDefeated::
-	msgbox Route104_Text_MayPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MayPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAY
 	call_if_eq VAR_0x8008, 0, Route104_EventScript_RestoreMusic
 	releaseall
 	end
@@ -185,39 +185,39 @@ Route104_EventScript_BrendanEncounter::
 	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Route104_EventScript_BrendanDefeated
 	goto_if_set FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_BrendanAskToBattle
 	setflag FLAG_REGISTER_RIVAL_POKENAV
-	msgbox Route104_Text_BrendanWeShouldRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanWeShouldRegister, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox Route104_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_RegisteredBrendan, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	waitfanfare
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerFaceRival
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalWalkSlowLeft
-	msgbox Route104_Text_BrendanHowsYourPokedex, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanHowsYourPokedex, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	closemessage
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalApproachPlayer
 	waitmovement 0
 	copyobjectxytoperm LOCALID_RIVAL
-	msgbox Route104_Text_BrendanDoingGreatLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot Route104_Text_BrendanDoingGreatLetsBattle, MSGBOX_YESNO, MUGSHOT_BRENDAN
 	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleBrendan
-	msgbox Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	call Route104_EventScript_RestoreMusic
 	releaseall
 	end
 
 Route104_EventScript_BrendanAskToBattle::
-	msgbox Route104_Text_BrendanLetsBattle, MSGBOX_YESNO
+	msgbox_mugshot Route104_Text_BrendanLetsBattle, MSGBOX_YESNO, MUGSHOT_BRENDAN
 	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleBrendan
-	msgbox Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	releaseall
 	end
 
 Route104_EventScript_BattleBrendan::
-	msgbox Route104_Text_BrendanIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanIntro, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	switch VAR_STARTER_MON
 	case 0, Route104_EventScript_BattleBrendanTreecko
 	case 1, Route104_EventScript_BattleBrendanTorchic
@@ -225,7 +225,7 @@ Route104_EventScript_BattleBrendan::
 	end
 
 Route104_EventScript_BrendanDefeated::
-	msgbox Route104_Text_BrendanPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_BrendanPostBattle, MSGBOX_DEFAULT, MUGSHOT_BRENDAN
 	call_if_eq VAR_0x8008, 0, Route104_EventScript_RestoreMusic
 	releaseall
 	end
