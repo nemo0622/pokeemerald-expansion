@@ -39,6 +39,8 @@ static const u32 sMugshotImg_Brawly[] = INCBIN_U32("graphics/mugshots/pics/mugsh
 static const u16 sMugshotPal_Brawly[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_brawly.gbapal");
 static const u32 sMugshotImg_Wattson[] = INCBIN_U32("graphics/mugshots/pics/mugshot_wattson.4bpp.lz");
 static const u16 sMugshotPal_Wattson[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_wattson.gbapal");
+static const u32 sMugshotImg_Flannery[] = INCBIN_U32("graphics/mugshots/pics/mugshot_flannery.4bpp.lz");
+static const u16 sMugshotPal_Flannery[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_flannery.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -51,6 +53,7 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_ROXANNE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Roxanne, .palette = sMugshotPal_Roxanne},
     [MUGSHOT_BRAWLY] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Brawly, .palette = sMugshotPal_Brawly},
     [MUGSHOT_WATTSON] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Wattson, .palette = sMugshotPal_Wattson},
+    [MUGSHOT_FLANNERY] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Flannery, .palette = sMugshotPal_Flannery},
 };
 
 
