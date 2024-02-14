@@ -13,5 +13,6 @@
 #define MUGSHOT_WATTSON  8
 #define MUGSHOT_FLANNERY  9
 #define MUGSHOT_NORMAN  10
+#define MUGSHOT_WINONA  11
 
 #endif
