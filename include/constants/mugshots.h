@@ -14,5 +14,6 @@
 #define MUGSHOT_FLANNERY  9
 #define MUGSHOT_NORMAN  10
 #define MUGSHOT_WINONA  11
+#define MUGSHOT_TATEANDLIZA  12
 
 #endif
