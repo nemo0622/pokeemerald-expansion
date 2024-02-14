@@ -34,7 +34,7 @@
 ## Bugs and Future Plans
 
 ### Known Bugs:
-- None as of right now!
+- Mugshots occasionally cut a little portion out of the textbox
 
 ### Future Plans:
 - Expanded implementation of NPC Mugshot system
