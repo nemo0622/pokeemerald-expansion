@@ -415,450 +415,462 @@ MossdeepCity_SpaceCenter_1F_EventScript_MagmaNote::
 # 208 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt3::
 # 209 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_3, MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTF
 # 210 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+	callnative DrawMugshot
 # 211 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	end
+	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_3, MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat
 # 212 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTF
 # 213 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt1::
+	end
 # 214 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_1, MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat
+
 # 215 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+MossdeepCity_SpaceCenter_1F_EventScript_Grunt1::
 # 216 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	end
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
 # 217 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	callnative DrawMugshot
 # 218 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt4::
+	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_1, MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat
 # 219 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_4, MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 # 220 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+	end
 # 221 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	end
+
 # 222 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+MossdeepCity_SpaceCenter_1F_EventScript_Grunt4::
 # 223 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt2::
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
 # 224 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	lock
+	callnative DrawMugshot
 # 225 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	faceplayer
+	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_4, MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat
 # 226 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	goto_if_set FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F, MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 # 227 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro, MSGBOX_DEFAULT
+	end
 # 228 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_2, MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat
+
 # 229 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	setflag FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F
+MossdeepCity_SpaceCenter_1F_EventScript_Grunt2::
 # 230 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	copyobjectxytoperm LOCALID_STAIR_GRUNT
+	lock
 # 231 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	switch VAR_FACING
+	faceplayer
 # 232 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	case DIR_WEST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest
+	goto_if_set FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F, MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated
 # 233 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-#ifdef BUGFIX
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 234 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	case DIR_EAST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast
+	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_2, MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat
 # 235 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-#else
+	setflag FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F
 # 236 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	case DIR_WEST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast
+	copyobjectxytoperm LOCALID_STAIR_GRUNT
 # 237 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-#endif
+	switch VAR_FACING
 # 238 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	applymovement LOCALID_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs
+	case DIR_WEST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest
 # 239 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	waitmovement 0
+#ifdef BUGFIX
 # 240 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 2
+	case DIR_EAST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast
 # 241 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	release
+#else
 # 242 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	end
+	case DIR_WEST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast
 # 243 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+#endif
 # 244 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated::
+	applymovement LOCALID_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs
 # 245 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle, MSGBOX_DEFAULT
+	waitmovement 0
 # 246 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	release
+	setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 2
 # 247 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	end
+	release
 # 248 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	end
 # 249 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest::
+
 # 250 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	applymovement LOCALID_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsWest
+MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated::
 # 251 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	waitmovement 0
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 252 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 1
+	release
 # 253 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	release
+	end
 # 254 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	end
+
 # 255 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest::
 # 256 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-@ Functionally unused by mistake. The movement is handled anyway after the switch (see above)
+	applymovement LOCALID_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsWest
 # 257 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-@ This also means VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE can never be 3
-# 258 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast::
-# 259 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	applymovement LOCALID_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsEast
-# 260 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	waitmovement 0
-# 261 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 3
-# 262 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+# 258 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 1
+# 259 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	release
-# 263 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+# 260 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	end
-# 264 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+# 261 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
+# 262 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+@ Functionally unused by mistake. The movement is handled anyway after the switch (see above)
+# 263 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+@ This also means VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE can never be 3
+# 264 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast::
 # 265 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsWest:
+	applymovement LOCALID_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsEast
 # 266 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	lock_facing_direction
+	waitmovement 0
 # 267 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	walk_left
+	setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 3
 # 268 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	unlock_facing_direction
+	release
 # 269 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	step_end
+	end
 # 270 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
 # 271 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-@ Functionally unused. See above
+MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsWest:
 # 272 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsEast:
+	lock_facing_direction
 # 273 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	lock_facing_direction
+	walk_left
 # 274 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	walk_right
+	unlock_facing_direction
 # 275 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	unlock_facing_direction
+	step_end
 # 276 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	step_end
+
 # 277 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+@ Functionally unused. See above
 # 278 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-@ This was meant to only handle the player facing North, but by mistake(?) it also handles the player facing East
+MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsEast:
 # 279 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs:
-# 280 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	face_left
-# 281 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	lock_facing_direction
-# 282 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+# 280 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	walk_right
-# 283 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+# 281 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	unlock_facing_direction
-# 284 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+# 282 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	step_end
+# 283 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+
+# 284 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+@ This was meant to only handle the player facing North, but by mistake(?) it also handles the player facing East
 # 285 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs:
 # 286 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent:
+	face_left
 # 287 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "The rocket's launch is imminent!$"
+	lock_facing_direction
 # 288 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	walk_right
 # 289 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber:
+	unlock_facing_direction
 # 290 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "The rocket launched safely!\n"
+	step_end
 # 291 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "That's successful launch no. {STR_VAR_1}!$"
+
 # 292 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent:
 # 293 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent:
-# 294 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "I know that things are a little\n"
-# 295 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "haywire right now, but…\p"
-# 296 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	.string "The rocket's launch is imminent!$"
-# 297 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+# 294 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
-# 298 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber:
-# 299 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "I know that things are a little\n"
-# 300 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "haywire right now, but…\p"
-# 301 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+# 295 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber:
+# 296 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	.string "The rocket launched safely!\n"
-# 302 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+# 297 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	.string "That's successful launch no. {STR_VAR_1}!$"
+# 298 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+
+# 299 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent:
+# 300 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "I know that things are a little\n"
+# 301 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "haywire right now, but…\p"
+# 302 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "The rocket's launch is imminent!$"
 # 303 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
 # 304 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection:
+MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber:
 # 305 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "A rocket launch demands perfection.\n"
+	.string "I know that things are a little\n"
 # 306 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Not even a 1% margin of error is allowed.\p"
+	.string "haywire right now, but…\p"
 # 307 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Even if it's 99% okay, the whole thing\n"
+	.string "The rocket launched safely!\n"
 # 308 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "is useless if 1% happens to be no good.\p"
+	.string "That's successful launch no. {STR_VAR_1}!$"
 # 309 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Despite that, we never stop trying.\n"
-# 310 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Why? It's a dream that never ends.$"
-# 311 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
+# 310 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection:
+# 311 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "A rocket launch demands perfection.\n"
 # 312 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter:
+	.string "Not even a 1% margin of error is allowed.\p"
 # 313 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Those MAGMA thugs have their sights\n"
+	.string "Even if it's 99% okay, the whole thing\n"
 # 314 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "set on our SPACE CENTER.\p"
+	.string "is useless if 1% happens to be no good.\p"
 # 315 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "But we can't allow anything that minor\n"
+	.string "Despite that, we never stop trying.\n"
 # 316 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "to interfere with our rocket launch!$"
+	.string "Why? It's a dream that never ends.$"
 # 317 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
 # 318 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt:
+MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter:
 # 319 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "I was taking a stroll down the beach\n"
+	.string "Those MAGMA thugs have their sights\n"
 # 320 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "when I found this.\p"
+	.string "set on our SPACE CENTER.\p"
 # 321 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "It's not anything I need, so you can\n"
+	.string "But we can't allow anything that minor\n"
 # 322 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "have it.$"
+	.string "to interfere with our rocket launch!$"
 # 323 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
 # 324 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers:
+MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt:
 # 325 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "The HOENN region has been famous for \n"
+	.string "I was taking a stroll down the beach\n"
 # 326 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "its meteor showers for a long time.$"
+	.string "when I found this.\p"
 # 327 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	.string "It's not anything I need, so you can\n"
 # 328 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis:
+	.string "have it.$"
 # 329 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "TEAM MAGMA can't be allowed to steal\n"
+
 # 330 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "the rocket fuel.\p"
+MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers:
 # 331 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Oh, by the way, you can have this stone\n"
+	.string "The HOENN region has been famous for \n"
 # 332 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "I found on the beach.$"
+	.string "its meteor showers for a long time.$"
 # 333 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
 # 334 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma:
+MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis:
 # 335 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "With TEAM MAGMA around, I guess\n"
+	.string "TEAM MAGMA can't be allowed to steal\n"
 # 336 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "strolls on the beach aren't safe.$"
+	.string "the rocket fuel.\p"
 # 337 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	.string "Oh, by the way, you can have this stone\n"
 # 338 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
+	.string "I found on the beach.$"
 # 339 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Some people claim that POKéMON came\n"
-# 340 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "from space. Could it be true?$"
-# 341 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
+# 340 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma:
+# 341 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "With TEAM MAGMA around, I guess\n"
 # 342 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma:
+	.string "strolls on the beach aren't safe.$"
 # 343 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "TEAM AQUA should take care of\n"
+
 # 344 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "TEAM MAGMA!\p"
+MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
 # 345 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "But if they did that, TEAM AQUA will\n"
+	.string "Some people claim that POKéMON came\n"
 # 346 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "become bold and brazen, won't they?$"
+	.string "from space. Could it be true?$"
 # 347 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
 # 348 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
+MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma:
 # 349 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "A giant chunk of metal bursts through\n"
+	.string "TEAM AQUA should take care of\n"
 # 350 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "the skies and flies into space…\p"
+	.string "TEAM MAGMA!\p"
 # 351 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "It boggles my mind!$"
+	.string "But if they did that, TEAM AQUA will\n"
 # 352 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	.string "become bold and brazen, won't they?$"
 # 353 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
+
 # 354 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "A giant chunk of metal bursts through\n"
+MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
 # 355 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "the skies and flies into space…\p"
+	.string "A giant chunk of metal bursts through\n"
 # 356 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "But TEAM MAGMA wants to spoil\n"
+	.string "the skies and flies into space…\p"
 # 357 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "that dream of mine!\p"
+	.string "It boggles my mind!$"
 # 358 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "I'm not having any of that!$"
+
 # 359 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
 # 360 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
+	.string "A giant chunk of metal bursts through\n"
 # 361 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "STEVEN: {PLAYER}{KUN}, have you read that\n"
+	.string "the skies and flies into space…\p"
 # 362 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "proclamation already?\p"
+	.string "But TEAM MAGMA wants to spoil\n"
 # 363 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "TEAM MAGMA is coming after the rocket\n"
+	.string "that dream of mine!\p"
 # 364 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "fuel on this island.\p"
+	.string "I'm not having any of that!$"
 # 365 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "I don't know what they'd need it for,\n"
+
 # 366 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "but they can't be allowed to take it.\p"
+MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
 # 367 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "I'll keep an eye on things for\n"
+	.string "STEVEN: {PLAYER}{KUN}, have you read that\n"
 # 368 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "a while longer.\p"
+	.string "proclamation already?\p"
 # 369 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "In the meantime, why don't you go\n"
+	.string "TEAM MAGMA is coming after the rocket\n"
 # 370 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "check out the town?$"
+	.string "fuel on this island.\p"
 # 371 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	.string "I don't know what they'd need it for,\n"
 # 372 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
+	.string "but they can't be allowed to take it.\p"
 # 373 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "As promised, we've come for\n"
+	.string "I'll keep an eye on things for\n"
 # 374 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "the rocket fuel!$"
+	.string "a while longer.\p"
 # 375 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	.string "In the meantime, why don't you go\n"
 # 376 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat:
+	.string "check out the town?$"
 # 377 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Ran out of fuel…$"
+
 # 378 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
 # 379 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle:
+	.string "As promised, we've come for\n"
 # 380 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Don't think you're on a roll just\n"
+	.string "the rocket fuel!$"
 # 381 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "because you've beaten me!$"
+
 # 382 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat:
 # 383 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro:
+	.string "Ran out of fuel…$"
 # 384 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "We gave you fair warning!\n"
+
 # 385 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "There's nothing sneaky about us!$"
+MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle:
 # 386 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	.string "Don't think you're on a roll just\n"
 # 387 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat:
+	.string "because you've beaten me!$"
 # 388 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Grrr…\n"
+
 # 389 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "We should've used sneaky treachery…$"
+MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro:
 # 390 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	.string "We gave you fair warning!\n"
 # 391 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle:
+	.string "There's nothing sneaky about us!$"
 # 392 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Okay, I get it already! The next time,\n"
+
 # 393 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "we'll come unannounced.$"
+MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat:
 # 394 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	.string "Grrr…\n"
 # 395 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
+	.string "We should've used sneaky treachery…$"
 # 396 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "The rocket fuel the SPACE CENTER has\n"
+
 # 397 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "in storage--that's what we're after.\p"
+MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle:
 # 398 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "We mean to take every last bit of it!$"
+	.string "Okay, I get it already! The next time,\n"
 # 399 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	.string "we'll come unannounced.$"
 # 400 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat:
-# 401 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Please, can you spare some fuel?\n"
-# 402 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Even a chintzy cup will do!$"
-# 403 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
+# 401 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
+# 402 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "The rocket fuel the SPACE CENTER has\n"
+# 403 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "in storage--that's what we're after.\p"
 # 404 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
+	.string "We mean to take every last bit of it!$"
 # 405 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "What are we going to do with\n"
+
 # 406 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "the rocket fuel?\p"
+MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat:
 # 407 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "How would I know?\n"
+	.string "Please, can you spare some fuel?\n"
 # 408 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Ask our leader upstairs!$"
+	.string "Even a chintzy cup will do!$"
 # 409 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
 # 410 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
+MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
 # 411 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Our leader said no one, but no one,\n"
+	.string "What are we going to do with\n"
 # 412 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "gets past me!$"
+	.string "the rocket fuel?\p"
 # 413 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+	.string "How would I know?\n"
 # 414 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
+	.string "Ask our leader upstairs!$"
 # 415 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Ack! Ack! Aaack!$"
+
 # 416 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-
+MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
 # 417 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
+	.string "Our leader said no one, but no one,\n"
 # 418 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Please, tell our leader that\n"
+	.string "gets past me!$"
 # 419 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "I never abandoned my post.\l"
-# 420 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "That I stayed to the bitter end…$"
-# 421 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 
+# 420 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
+# 421 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "Ack! Ack! Aaack!$"
 # 422 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
+
 # 423 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "This is…\n"
+MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
 # 424 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "An intent-to-steal notice?\p"
+	.string "Please, tell our leader that\n"
 # 425 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "“To the staff of the SPACE CENTER:\n"
+	.string "I never abandoned my post.\l"
 # 426 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "How are you? We are doing fine.\p"
+	.string "That I stayed to the bitter end…$"
 # 427 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "“We will soon visit you to take your\n"
+
 # 428 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "rocket fuel.\p"
+MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 # 429 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "“Please don't try to stop us.\n"
+	.string "This is…\n"
 # 430 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "We will take the fuel no matter what.\p"
+	.string "An intent-to-steal notice?\p"
 # 431 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "“Let there be more land!\n"
+	.string "“To the staff of the SPACE CENTER:\n"
 # 432 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "How are you? We are doing fine.\p"
+# 433 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "“We will soon visit you to take your\n"
+# 434 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "rocket fuel.\p"
+# 435 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "“Please don't try to stop us.\n"
+# 436 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "We will take the fuel no matter what.\p"
+# 437 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
+	.string "“Let there be more land!\n"
+# 438 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	.string "                                          TEAM MAGMA”$"

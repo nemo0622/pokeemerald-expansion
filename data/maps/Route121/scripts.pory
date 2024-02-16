@@ -23,7 +23,7 @@ Route121_EventScript_AquaGruntsMoveOut::
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	applymovement LOCALID_GRUNT_2, Common_Movement_WalkInPlaceRight
 	waitmovement 0
-	msgbox Route121_Text_OkayMoveOutToMtPyre, MSGBOX_DEFAULT
+	msgbox_mugshot Route121_Text_OkayMoveOutToMtPyre, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	closemessage
 	applymovement LOCALID_GRUNT_1, Route121_Movement_Grunt1Exit
 	applymovement LOCALID_GRUNT_2, Route121_Movement_Grunt2Exit

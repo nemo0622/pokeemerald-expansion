@@ -127,144 +127,152 @@ Route119_WeatherInstitute_1F_EventScript_Bed::
 # 64 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 Route119_WeatherInstitute_1F_EventScript_Grunt1::
 # 65 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_WEATHER_INST_1, Route119_WeatherInstitute_1F_Text_Grunt1Intro, Route119_WeatherInstitute_1F_Text_Grunt1Defeat
+	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
 # 66 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	msgbox Route119_WeatherInstitute_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+	callnative DrawMugshot
 # 67 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	end
+	trainerbattle_single TRAINER_GRUNT_WEATHER_INST_1, Route119_WeatherInstitute_1F_Text_Grunt1Intro, Route119_WeatherInstitute_1F_Text_Grunt1Defeat
 # 68 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-
+	msgbox_mugshot Route119_WeatherInstitute_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_AQUAGRUNTM
 # 69 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_EventScript_Grunt4::
-# 70 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_WEATHER_INST_4, Route119_WeatherInstitute_1F_Text_Grunt4Intro, Route119_WeatherInstitute_1F_Text_Grunt4Defeat
-# 71 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	msgbox Route119_WeatherInstitute_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
-# 72 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	end
+# 70 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+
+# 71 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+Route119_WeatherInstitute_1F_EventScript_Grunt4::
+# 72 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTF
 # 73 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-
+	callnative DrawMugshot
 # 74 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_Grunt1Intro:
+	trainerbattle_single TRAINER_GRUNT_WEATHER_INST_4, Route119_WeatherInstitute_1F_Text_Grunt4Intro, Route119_WeatherInstitute_1F_Text_Grunt4Defeat
 # 75 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "The BOSS got interested in\n"
+	msgbox_mugshot Route119_WeatherInstitute_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_AQUAGRUNTF
 # 76 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "the research they have going here,\l"
+	end
 # 77 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "so he sent us out.\p"
-# 78 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "You quit meddling!$"
-# 79 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 
+# 78 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+Route119_WeatherInstitute_1F_Text_Grunt1Intro:
+# 79 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+	.string "The BOSS got interested in\n"
 # 80 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_Grunt1Defeat:
+	.string "the research they have going here,\l"
 # 81 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "Blast it…\n"
+	.string "so he sent us out.\p"
 # 82 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "Blasted by a kid…$"
+	.string "You quit meddling!$"
 # 83 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 
 # 84 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
+Route119_WeatherInstitute_1F_Text_Grunt1Defeat:
 # 85 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "Our BOSS knows everything.\p"
+	.string "Blast it…\n"
 # 86 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "But I'm just a GRUNT. What would I know\n"
+	.string "Blasted by a kid…$"
 # 87 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "about what he's thinking?$"
-# 88 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 
+# 88 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
 # 89 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_Grunt4Intro:
+	.string "Our BOSS knows everything.\p"
 # 90 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "Huh?\n"
+	.string "But I'm just a GRUNT. What would I know\n"
 # 91 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "What's a kid doing here?$"
+	.string "about what he's thinking?$"
 # 92 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 
 # 93 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
+Route119_WeatherInstitute_1F_Text_Grunt4Intro:
 # 94 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	.string "Huh?\n"
 # 95 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "I lost?!$"
+	.string "What's a kid doing here?$"
 # 96 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 
 # 97 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_Grunt4PostBattle:
+Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
 # 98 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "Oh, no…\n"
+	.string "Huh?\n"
 # 99 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "I'll catch an earful for losing to a kid…\p"
+	.string "I lost?!$"
 # 100 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "I should just take a nap in the bed…$"
-# 101 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 
+# 101 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+Route119_WeatherInstitute_1F_Text_Grunt4PostBattle:
 # 102 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs:
+	.string "Oh, no…\n"
 # 103 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "While I was sleeping, everyone went\n"
+	.string "I'll catch an earful for losing to a kid…\p"
 # 104 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "upstairs!$"
+	.string "I should just take a nap in the bed…$"
 # 105 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 
 # 106 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_WowYoureStrong:
+Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs:
 # 107 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "Wow, you're really strong!\p"
+	.string "While I was sleeping, everyone went\n"
 # 108 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "I wish I could be a POKéMON TRAINER\n"
+	.string "upstairs!$"
 # 109 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "like you!$"
+
 # 110 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-
+Route119_WeatherInstitute_1F_Text_WowYoureStrong:
 # 111 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_ProfStudyingRain:
+	.string "Wow, you're really strong!\p"
 # 112 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "The PROFESSOR loves rain.\n"
+	.string "I wish I could be a POKéMON TRAINER\n"
 # 113 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "That's a fact.\p"
+	.string "like you!$"
 # 114 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "But if it keeps raining, people will be in\n"
+
 # 115 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "trouble. That's another fact.\p"
+Route119_WeatherInstitute_1F_Text_ProfStudyingRain:
 # 116 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "And thus, the PROFESSOR is studying\n"
+	.string "The PROFESSOR loves rain.\n"
 # 117 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "if the rain can be put to good use.$"
+	.string "That's a fact.\p"
 # 118 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-
+	.string "But if it keeps raining, people will be in\n"
 # 119 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather:
+	.string "trouble. That's another fact.\p"
 # 120 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "On the 2nd floor of the INSTITUTE,\n"
+	.string "And thus, the PROFESSOR is studying\n"
 # 121 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "we study the weather patterns over\l"
+	.string "if the rain can be put to good use.$"
 # 122 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "the HOENN region.\p"
+
 # 123 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "We've been noticing temporary and\n"
+Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather:
 # 124 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "isolated cases of droughts and\l"
+	.string "On the 2nd floor of the INSTITUTE,\n"
 # 125 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "heavy rain lately…$"
+	.string "we study the weather patterns over\l"
 # 126 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-
+	.string "the HOENN region.\p"
 # 127 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo:
+	.string "We've been noticing temporary and\n"
 # 128 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "Hello!\n"
+	.string "isolated cases of droughts and\l"
 # 129 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "We've been saved by your actions!\p"
+	.string "heavy rain lately…$"
 # 130 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "What I don't understand is what on\n"
-# 131 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "earth the AQUAS were up to.$"
-# 132 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 
+# 131 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo:
+# 132 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+	.string "Hello!\n"
 # 133 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-Route119_WeatherInstitute_1F_Text_TakeRestInBed:
+	.string "We've been saved by your actions!\p"
 # 134 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	.string "There's a bed…\n"
+	.string "What I don't understand is what on\n"
 # 135 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+	.string "earth the AQUAS were up to.$"
+# 136 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+
+# 137 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+Route119_WeatherInstitute_1F_Text_TakeRestInBed:
+# 138 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
+	.string "There's a bed…\n"
+# 139 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	.string "Let's take a rest.$"

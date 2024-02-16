@@ -51,13 +51,13 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 26 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	call_if_eq VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_2F_EventScript_PlayerFaceGrunts
 # 27 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 28 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	call_if_ne VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_2F_EventScript_SternFaceGrunts
 # 29 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	msgbox SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou, MSGBOX_DEFAULT
 # 30 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 31 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	closemessage
 # 32 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -71,7 +71,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 36 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_MUSEUM_1, SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat
 # 37 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 38 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	closemessage
 # 39 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -83,7 +83,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 42 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	waitmovement 0
 # 43 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 44 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_MUSEUM_2, SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat
 # 45 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -97,7 +97,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 49 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	waitmovement 0
 # 50 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_MeddlingKid, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_MeddlingKid, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 51 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	closemessage
 # 52 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"

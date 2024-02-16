@@ -206,25 +206,31 @@ MossdeepCity_SpaceCenter_1F_EventScript_MagmaNote::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt3::
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTF
+	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_3, MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTF
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt1::
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_1, MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt4::
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_4, MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt2::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F, MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_2, MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat
 	setflag FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F
 	copyobjectxytoperm LOCALID_STAIR_GRUNT
@@ -242,7 +248,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_Grunt2::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 	release
 	end
 

@@ -55,7 +55,7 @@ SeafloorCavern_Entrance_EventScript_Grunt::
 # 28 "data/maps/SeafloorCavern_Entrance/scripts.pory"
 	copyobjectxytoperm LOCALID_GRUNT
 # 29 "data/maps/SeafloorCavern_Entrance/scripts.pory"
-	msgbox SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 30 "data/maps/SeafloorCavern_Entrance/scripts.pory"
 	closemessage
 # 31 "data/maps/SeafloorCavern_Entrance/scripts.pory"
@@ -77,7 +77,7 @@ SeafloorCavern_Entrance_EventScript_GruntSpeechShort::
 # 39 "data/maps/SeafloorCavern_Entrance/scripts.pory"
 	call_if_eq VAR_FACING, DIR_NORTH, SeafloorCavern_Entrance_EventScript_GruntFacePlayerNorth
 # 40 "data/maps/SeafloorCavern_Entrance/scripts.pory"
-	msgbox SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 41 "data/maps/SeafloorCavern_Entrance/scripts.pory"
 	closemessage
 # 42 "data/maps/SeafloorCavern_Entrance/scripts.pory"

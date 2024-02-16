@@ -49,7 +49,7 @@ Route121_EventScript_AquaGruntsMoveOut::
 # 25 "data/maps/Route121/scripts.pory"
 	waitmovement 0
 # 26 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_OkayMoveOutToMtPyre, MSGBOX_DEFAULT
+	msgbox_mugshot Route121_Text_OkayMoveOutToMtPyre, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 27 "data/maps/Route121/scripts.pory"
 	closemessage
 # 28 "data/maps/Route121/scripts.pory"

@@ -401,13 +401,13 @@ LilycoveCity_EventScript_WailmerTrainerGrunt::
 # 201 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_MET_WAILMER_TRAINER, LilycoveCity_EventScript_MetWailmerTrainer
 # 202 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_WailmerLeapOutOfWater, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_WailmerLeapOutOfWater, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 203 "data/maps/LilycoveCity/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 # 204 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 0
 # 205 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_GetLostMessingUpTraining, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_GetLostMessingUpTraining, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 206 "data/maps/LilycoveCity/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 207 "data/maps/LilycoveCity/scripts.pory"

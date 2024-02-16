@@ -199,10 +199,10 @@ LilycoveCity_EventScript_MoveDeletersHouseSign::
 LilycoveCity_EventScript_WailmerTrainerGrunt::
 	lockall
 	goto_if_set FLAG_MET_WAILMER_TRAINER, LilycoveCity_EventScript_MetWailmerTrainer
-	msgbox LilycoveCity_Text_WailmerLeapOutOfWater, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_WailmerLeapOutOfWater, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox LilycoveCity_Text_GetLostMessingUpTraining, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_GetLostMessingUpTraining, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	setflag FLAG_MET_WAILMER_TRAINER

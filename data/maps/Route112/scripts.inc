@@ -37,7 +37,7 @@ Route112_EventScript_MagmaGrunts::
 # 19 "data/maps/Route112/scripts.pory"
 	delay 20
 # 20 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_LeaderGoingToAwakenThing, MSGBOX_DEFAULT
+	msgbox_mugshot Route112_Text_LeaderGoingToAwakenThing, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 21 "data/maps/Route112/scripts.pory"
 	closemessage
 # 22 "data/maps/Route112/scripts.pory"
@@ -53,7 +53,7 @@ Route112_EventScript_MagmaGrunts::
 # 27 "data/maps/Route112/scripts.pory"
 	delay 20
 # 28 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_YeahWeNeedMeteorite, MSGBOX_DEFAULT
+	msgbox_mugshot Route112_Text_YeahWeNeedMeteorite, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 29 "data/maps/Route112/scripts.pory"
 	closemessage
 # 30 "data/maps/Route112/scripts.pory"
@@ -69,7 +69,7 @@ Route112_EventScript_MagmaGrunts::
 # 35 "data/maps/Route112/scripts.pory"
 	delay 20
 # 36 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_OhThatsWhyCrewWentToFallarbor, MSGBOX_DEFAULT
+	msgbox_mugshot Route112_Text_OhThatsWhyCrewWentToFallarbor, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 37 "data/maps/Route112/scripts.pory"
 	closemessage
 # 38 "data/maps/Route112/scripts.pory"
@@ -85,7 +85,7 @@ Route112_EventScript_MagmaGrunts::
 # 43 "data/maps/Route112/scripts.pory"
 	delay 20
 # 44 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_CantLetAnyonePassUntilTheyreBack, MSGBOX_DEFAULT
+	msgbox_mugshot Route112_Text_CantLetAnyonePassUntilTheyreBack, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 45 "data/maps/Route112/scripts.pory"
 	closemessage
 # 46 "data/maps/Route112/scripts.pory"

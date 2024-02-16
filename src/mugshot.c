@@ -63,6 +63,12 @@ static const u32 sMugshotImg_Steven[] = INCBIN_U32("graphics/mugshots/pics/mugsh
 static const u16 sMugshotPal_Steven[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_steven.gbapal");
 static const u32 sMugshotImg_AquaGruntM[] = INCBIN_U32("graphics/mugshots/pics/mugshot_aquagruntm.4bpp.lz");
 static const u16 sMugshotPal_AquaGruntM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_aquagruntm.gbapal");
+static const u32 sMugshotImg_AquaGruntF[] = INCBIN_U32("graphics/mugshots/pics/mugshot_aquagruntf.4bpp.lz");
+static const u16 sMugshotPal_AquaGruntF[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_aquagruntf.gbapal");
+static const u32 sMugshotImg_MagmaGruntM[] = INCBIN_U32("graphics/mugshots/pics/mugshot_magmagruntm.4bpp.lz");
+static const u16 sMugshotPal_MagmaGruntM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_magmagruntm.gbapal");
+static const u32 sMugshotImg_MagmaGruntF[] = INCBIN_U32("graphics/mugshots/pics/mugshot_magmagruntf.4bpp.lz");
+static const u16 sMugshotPal_MagmaGruntF[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_magmagruntf.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -87,6 +93,9 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_DRAKE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Drake, .palette = sMugshotPal_Drake},
     [MUGSHOT_STEVEN] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Steven, .palette = sMugshotPal_Steven},
     [MUGSHOT_AQUAGRUNTM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_AquaGruntM, .palette = sMugshotPal_AquaGruntM},
+    [MUGSHOT_AQUAGRUNTF] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_AquaGruntF, .palette = sMugshotPal_AquaGruntF},
+    [MUGSHOT_MAGMAGRUNTM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_MagmaGruntM, .palette = sMugshotPal_MagmaGruntM},
+    [MUGSHOT_MAGMAGRUNTF] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_MagmaGruntF, .palette = sMugshotPal_MagmaGruntF},
 };
 
 

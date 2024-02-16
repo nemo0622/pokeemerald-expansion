@@ -33,7 +33,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 # 17 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 18 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 19 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 20 "data/maps/PetalburgWoods/scripts.pory"
@@ -45,7 +45,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 # 23 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 24 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_HandOverThosePapers, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_HandOverThosePapers, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 25 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 26 "data/maps/PetalburgWoods/scripts.pory"
@@ -61,7 +61,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 # 31 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 32 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 33 "data/maps/PetalburgWoods/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
 # 34 "data/maps/PetalburgWoods/scripts.pory"
@@ -107,7 +107,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 # 54 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 55 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 56 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 57 "data/maps/PetalburgWoods/scripts.pory"
@@ -119,7 +119,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 # 60 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 61 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_HandOverThosePapers, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_HandOverThosePapers, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 62 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 63 "data/maps/PetalburgWoods/scripts.pory"
@@ -133,7 +133,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 # 67 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 68 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 69 "data/maps/PetalburgWoods/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
 # 70 "data/maps/PetalburgWoods/scripts.pory"
@@ -171,7 +171,7 @@ PetalburgWoods_EventScript_DevonResearcherIntro::
 # 86 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_EventScript_DevonResearcherPostBattle::
 # 87 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_YouveGotSomeNerve, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_YouveGotSomeNerve, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 88 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 89 "data/maps/PetalburgWoods/scripts.pory"

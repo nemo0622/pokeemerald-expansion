@@ -137,7 +137,7 @@ SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter:
 # 69 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt1::
 # 70 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll, MSGBOX_NPC, MUGSHOT_AQUAGRUNTF
 # 71 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	end
 # 72 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -145,7 +145,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt1::
 # 73 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt2::
 # 74 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_OurBossIsntHere, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_OurBossIsntHere, MSGBOX_NPC, MUGSHOT_AQUAGRUNTM
 # 75 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	end
 # 76 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -153,7 +153,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt2::
 # 77 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt3::
 # 78 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_WouldStuffHereMakeMeRich, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_WouldStuffHereMakeMeRich, MSGBOX_NPC, MUGSHOT_AQUAGRUNTM
 # 79 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	end
 # 80 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -161,7 +161,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt3::
 # 81 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt4::
 # 82 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_CanLearnForNefariousDeeds, MSGBOX_SIGN
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_CanLearnForNefariousDeeds, MSGBOX_SIGN, MUGSHOT_AQUAGRUNTM
 # 83 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	end
 # 84 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -169,7 +169,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt4::
 # 85 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt5::
 # 86 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_RustboroBungled, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_RustboroBungled, MSGBOX_NPC, MUGSHOT_AQUAGRUNTM
 # 87 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	end
 # 88 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -177,7 +177,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt5::
 # 89 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt6::
 # 90 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney, MSGBOX_NPC, MUGSHOT_AQUAGRUNTM
 # 91 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	end
 # 92 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -305,7 +305,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 # 153 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	waitmovement 0
 # 154 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 155 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	giveitem ITEM_TM_THIEF
 # 156 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -313,7 +313,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 # 157 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	setflag FLAG_RECEIVED_TM_THIEF
 # 158 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 159 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	closemessage
 # 160 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"

@@ -127,7 +127,7 @@ MossdeepCity_SpaceCenter_2F_Movement_PlayerExit:
 # 64 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 # 65 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 66 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_5, MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat
 # 67 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -139,7 +139,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 # 70 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	waitmovement 0
 # 71 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 72 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_6, MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat
 # 73 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -151,7 +151,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 # 76 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	waitmovement 0
 # 77 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 78 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_7, MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat
 # 79 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -327,7 +327,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_RichBoyMagma::
 # 164 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_Grunt6::
 # 165 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle, MSGBOX_NPC, MUGSHOT_MAGMAGRUNTM
 # 166 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	end
 # 167 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -335,7 +335,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Grunt6::
 # 168 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_Grunt7::
 # 169 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle, MSGBOX_NPC, MUGSHOT_MAGMAGRUNTM
 # 170 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	end
 # 171 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -343,7 +343,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Grunt7::
 # 172 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_Grunt5::
 # 173 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle, MSGBOX_NPC, MUGSHOT_MAGMAGRUNTM
 # 174 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	end
 # 175 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"

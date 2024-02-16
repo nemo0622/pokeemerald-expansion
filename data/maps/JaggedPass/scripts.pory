@@ -76,7 +76,7 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 	waitmovement 0
 	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox JaggedPass_Text_GruntIntro, MSGBOX_DEFAULT
+	msgbox_mugshot JaggedPass_Text_GruntIntro, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 	closemessage
 	trainerbattle_no_intro TRAINER_GRUNT_JAGGED_PASS, JaggedPass_Text_GruntDefeat
 	setflag FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS
@@ -88,7 +88,7 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 JaggedPass_EventScript_GuardDefeated::
 	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox JaggedPass_Text_GoWhereverYouWant, MSGBOX_DEFAULT
+	msgbox_mugshot JaggedPass_Text_GoWhereverYouWant, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 	closemessage
 	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 	waitmovement 0

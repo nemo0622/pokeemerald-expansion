@@ -59,7 +59,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 # 30 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 31 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_1F_1R_Text_WithThisMeteorite, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_WithThisMeteorite, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 32 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	closemessage
 # 33 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -79,7 +79,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 # 40 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 41 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 42 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	closemessage
 # 43 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -121,7 +121,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 # 61 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 62 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 63 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	closemessage
 # 64 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -151,7 +151,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 # 76 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 77 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 78 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterDown
 # 79 "data/maps/MeteorFalls_1F_1R/scripts.pory"

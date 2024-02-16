@@ -155,7 +155,7 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 # 78 "data/maps/JaggedPass/scripts.pory"
 	waitmovement 0
 # 79 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_GruntIntro, MSGBOX_DEFAULT
+	msgbox_mugshot JaggedPass_Text_GruntIntro, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 80 "data/maps/JaggedPass/scripts.pory"
 	closemessage
 # 81 "data/maps/JaggedPass/scripts.pory"
@@ -179,7 +179,7 @@ JaggedPass_EventScript_GuardDefeated::
 # 90 "data/maps/JaggedPass/scripts.pory"
 	waitmovement 0
 # 91 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_GoWhereverYouWant, MSGBOX_DEFAULT
+	msgbox_mugshot JaggedPass_Text_GoWhereverYouWant, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 92 "data/maps/JaggedPass/scripts.pory"
 	closemessage
 # 93 "data/maps/JaggedPass/scripts.pory"

@@ -371,7 +371,7 @@ SlateportCity_EventScript_Man2::
 SlateportCity_EventScript_AquaGrunt1::
 	lock
 	faceplayer
-	msgbox_mugshot SlateportCity_Text_QuitPushing, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
+	msgbox_mugshot SlateportCity_Text_QuitPushing, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTF
 	closemessage
 	applymovement LOCALID_GRUNT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0

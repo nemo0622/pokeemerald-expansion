@@ -745,7 +745,7 @@ SlateportCity_EventScript_AquaGrunt1::
 # 373 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 374 "data/maps/SlateportCity/scripts.pory"
-	msgbox_mugshot SlateportCity_Text_QuitPushing, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
+	msgbox_mugshot SlateportCity_Text_QuitPushing, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTF
 # 375 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 376 "data/maps/SlateportCity/scripts.pory"

@@ -405,32 +405,34 @@ MtChimney_EventScript_Tabitha::
 	end
 
 MtChimney_EventScript_Grunt2::
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_MT_CHIMNEY_2, MtChimney_Text_Grunt2Intro, MtChimney_Text_Grunt2Defeat
-	msgbox MtChimney_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtChimney_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt1::
-	msgbox MtChimney_Text_TeamAquaAlwaysMessingWithPlans, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_TeamAquaAlwaysMessingWithPlans, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt2::
-	msgbox MtChimney_Text_MeteoritesPackAmazingPower, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_MeteoritesPackAmazingPower, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt3::
-	msgbox MtChimney_Text_YouBetterNotMessWithUs, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_YouBetterNotMessWithUs, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt4::
-	msgbox MtChimney_Text_AquasNameSimilar, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_AquasNameSimilar, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt5::
-	msgbox MtChimney_Text_DouseThemInFire, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_DouseThemInFire, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt6::
-	msgbox MtChimney_Text_KeepMakingMoreLand, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_KeepMakingMoreLand, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 	end
 
 MtChimney_EventScript_MagmaPoochyena::
@@ -510,8 +512,10 @@ MtChimney_EventScript_Shirley::
 	end
 
 MtChimney_EventScript_Grunt1::
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTF
+	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_MT_CHIMNEY_1, MtChimney_Text_Grunt1Intro, MtChimney_Text_Grunt1Defeat
-	msgbox MtChimney_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtChimney_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTF
 	end
 
 MtChimney_EventScript_Sawyer::

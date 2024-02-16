@@ -583,7 +583,7 @@ RustboroCity_EventScript_StolenGoodsTrigger4::
 # 292 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_StolenGoodsScene::
 # 293 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_OutOfTheWay, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_OutOfTheWay, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 294 "data/maps/RustboroCity/scripts.pory"
 	closemessage
 # 295 "data/maps/RustboroCity/scripts.pory"
