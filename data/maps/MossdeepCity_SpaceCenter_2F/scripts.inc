@@ -387,7 +387,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Steven::
 # 194 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	setflag FLAG_INTERACTED_WITH_STEVEN_SPACE_CENTER
 # 195 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 196 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano, MSGBOX_DEFAULT
 # 197 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -477,11 +477,11 @@ MossdeepCity_SpaceCenter_2F_EventScript_ReadyForBattlePrompt::
 # 239 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	waitmovement 0
 # 240 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle, MSGBOX_YESNO
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle, MSGBOX_YESNO, MUGSHOT_STEVEN
 # 241 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle
 # 242 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 243 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	closemessage
 # 244 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -615,7 +615,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 # 308 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 # 309 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 310 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	closemessage
 # 311 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"

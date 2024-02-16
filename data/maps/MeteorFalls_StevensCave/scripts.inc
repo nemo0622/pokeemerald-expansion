@@ -33,11 +33,11 @@ MeteorFalls_StevensCave_EventScript_Steven::
 # 17 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 	waitmovement 0
 # 18 "data/maps/MeteorFalls_StevensCave/scripts.pory"
-	msgbox MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 19 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 	trainerbattle_no_intro TRAINER_STEVEN, MeteorFalls_StevensCave_Text_StevenDefeat
 # 20 "data/maps/MeteorFalls_StevensCave/scripts.pory"
-	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 21 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 	setflag FLAG_DEFEATED_METEOR_FALLS_STEVEN
 # 22 "data/maps/MeteorFalls_StevensCave/scripts.pory"

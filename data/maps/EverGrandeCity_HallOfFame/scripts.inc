@@ -55,7 +55,7 @@ EverGrandeCity_HallOfFame_EventScript_EnterHallOfFame::
 # 28 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
 	waitmovement 0
 # 29 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
-	msgbox EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 30 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
 	closemessage
 # 31 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
@@ -73,7 +73,7 @@ EverGrandeCity_HallOfFame_EventScript_EnterHallOfFame::
 # 37 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
 	waitmovement 0
 # 38 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
-	msgbox EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 39 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
 	closemessage
 # 40 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"

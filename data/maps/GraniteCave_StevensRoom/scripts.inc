@@ -17,7 +17,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 # 9 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	faceplayer
 # 10 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	msgbox GraniteCave_StevensRoom_Text_ImStevenLetterForMe, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_StevensRoom_Text_ImStevenLetterForMe, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 11 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	setvar VAR_0x8004, ITEM_LETTER
 # 12 "data/maps/GraniteCave_StevensRoom/scripts.pory"
@@ -25,13 +25,13 @@ GraniteCave_StevensRoom_EventScript_Steven::
 # 13 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	setflag FLAG_DELIVERED_STEVEN_LETTER
 # 14 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 15 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	giveitem ITEM_TM_STEEL_WING
 # 16 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	call_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
 # 17 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	msgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 18 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	closemessage
 # 19 "data/maps/GraniteCave_StevensRoom/scripts.pory"
@@ -49,7 +49,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 # 25 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	setflag FLAG_REGISTERED_STEVEN_POKENAV
 # 26 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	msgbox GraniteCave_StevensRoom_Text_IveGotToHurryAlong, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_StevensRoom_Text_IveGotToHurryAlong, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 27 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	closemessage
 # 28 "data/maps/GraniteCave_StevensRoom/scripts.pory"

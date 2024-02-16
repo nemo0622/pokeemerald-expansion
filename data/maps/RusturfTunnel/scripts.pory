@@ -275,7 +275,7 @@ RusturfTunnel_EventScript_TunnelBlockagePos3::
 
 RusturfTunnel_EventScript_AquaGruntBackUp::
 	lockall
-	msgbox RusturfTunnel_Text_ComeAndGetSome, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_ComeAndGetSome, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	closemessage
 	applymovement LOCALID_GRUNT, RusturfTunnel_Movement_GruntAndPeekoBackUp
 	applymovement LOCALID_PEEKO, RusturfTunnel_Movement_GruntAndPeekoBackUp
@@ -306,9 +306,9 @@ RusturfTunnel_EventScript_Grunt::
 	lock
 	faceplayer
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	msgbox RusturfTunnel_Text_GruntIntro, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_GruntIntro, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	trainerbattle_no_intro TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_GruntDefeat
-	msgbox RusturfTunnel_Text_GruntTakePackage, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_GruntTakePackage, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	giveitem ITEM_DEVON_PARTS
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PushPlayerAsideForGrunt

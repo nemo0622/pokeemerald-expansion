@@ -433,7 +433,7 @@ LilycoveCity_EventScript_MetWailmerTrainer::
 # 217 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_AquaGrunt1::
 # 218 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_MovedLootIntoHideoutToday, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_MovedLootIntoHideoutToday, MSGBOX_NPC, MUGSHOT_AQUAGRUNTM
 # 219 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 220 "data/maps/LilycoveCity/scripts.pory"
@@ -441,7 +441,7 @@ LilycoveCity_EventScript_AquaGrunt1::
 # 221 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_AquaGrunt2::
 # 222 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_ChanceToDoBigThings, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_ChanceToDoBigThings, MSGBOX_NPC, MUGSHOT_AQUAGRUNTM
 # 223 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 224 "data/maps/LilycoveCity/scripts.pory"
@@ -449,7 +449,7 @@ LilycoveCity_EventScript_AquaGrunt2::
 # 225 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_AquaGrunt3::
 # 226 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_DontGoNearCaveInCove, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_DontGoNearCaveInCove, MSGBOX_NPC, MUGSHOT_AQUAGRUNTM
 # 227 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 228 "data/maps/LilycoveCity/scripts.pory"
@@ -457,7 +457,7 @@ LilycoveCity_EventScript_AquaGrunt3::
 # 229 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_AquaGrunt4::
 # 230 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_IfWorldBecomesOurs, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_IfWorldBecomesOurs, MSGBOX_NPC, MUGSHOT_AQUAGRUNTM
 # 231 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 232 "data/maps/LilycoveCity/scripts.pory"

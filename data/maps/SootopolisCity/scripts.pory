@@ -904,31 +904,31 @@ SootopolisCity_EventScript_Steven::
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SootopolisCity_EventScript_StevenHelpedWallace
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_StevenHelpedWallace
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_StevenMaxieArchieLeft
-	msgbox SootopolisCity_Text_SoThatsRayquaza, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_SoThatsRayquaza, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	releaseall
 	end
 
 SootopolisCity_EventScript_StevenHelpWallace::
-	msgbox SootopolisCity_Text_KnowWhatsNeededToHelpHim, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_KnowWhatsNeededToHelpHim, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	releaseall
 	end
 
 SootopolisCity_EventScript_StevenMaxieArchieLeft::
-	msgbox SootopolisCity_Text_MaxieArchieLeft, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_MaxieArchieLeft, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	releaseall
 	end
 
 SootopolisCity_EventScript_StevenHelpedWallace::
-	msgbox SootopolisCity_Text_NeverBeenToSkyPillar, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_NeverBeenToSkyPillar, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	releaseall
 	end
 
 SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
-	msgbox SootopolisCity_Text_InvolvedWithCrisisComeWithMe, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_InvolvedWithCrisisComeWithMe, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	closemessage
 	call_if_eq VAR_FACING, DIR_WEST, SootopolisCity_EventScript_StartWalkToCaveOfOriginWest
 	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_StartWalkToCaveOfOriginNorth
-	msgbox SootopolisCity_Text_DoesThisMakeYourFearPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_DoesThisMakeYourFearPokemon, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	closemessage
 	applymovement LOCALID_STEVEN, SootopolisCity_Movement_StevenWalkToCaveOfOrigin
 	applymovement OBJ_EVENT_ID_PLAYER, SootopolisCity_Movement_PlayerWalkToCaveOfOrigin
@@ -939,7 +939,7 @@ SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
 	applymovement LOCALID_STEVEN, SootopolisCity_Movement_StevenArriveCaveEntrance
 	applymovement OBJ_EVENT_ID_PLAYER, SootopolisCity_Movement_PlayerArriveCaveEntrance
 	waitmovement 0
-	msgbox SootopolisCity_Text_HereWereAreHelpWallace, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_HereWereAreHelpWallace, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	closemessage
 	setflag FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN
 	applymovement OBJ_EVENT_ID_PLAYER, SootopolisCity_Movement_PlayerEnterCaveOfOrigin
@@ -1304,15 +1304,15 @@ SootopolisCity_EventScript_Wallace::
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_GoToSkyPillar
 	goto_if_set FLAG_RECEIVED_HM_WATERFALL, SootopolisCity_EventScript_GoToGym
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_GiveWaterfall
-	msgbox SootopolisCity_Text_AquaMagmaDidntMeanHarm, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_AquaMagmaDidntMeanHarm, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 	release
 	end
 
 SootopolisCity_EventScript_GiveWaterfall::
-	msgbox SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 	giveitem ITEM_HM_WATERFALL
 	setflag FLAG_RECEIVED_HM_WATERFALL
-	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_WallaceMoveFromGym
 	call_if_eq VAR_FACING, DIR_EAST, SootopolisCity_EventScript_WallaceMoveFromGym
@@ -1335,12 +1335,12 @@ SootopolisCity_EventScript_WallaceMoveFromGymWest::
 	return
 
 SootopolisCity_EventScript_GoToSkyPillar::
-	msgbox SootopolisCity_Text_HaventYouScaledSkyPillar, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_HaventYouScaledSkyPillar, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 	release
 	end
 
 SootopolisCity_EventScript_GoToGym::
-	msgbox SootopolisCity_Text_DazzledByMentor, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_DazzledByMentor, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 	release
 	end
 

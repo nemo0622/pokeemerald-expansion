@@ -36,7 +36,7 @@ Route110_EventScript_BeginCylcingRoadChallenge::
 Route110_EventScript_AquaGrunt1::
 	lock
 	faceplayer
-	msgbox Route110_Text_WeCantTalkAboutAquaActivities, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_WeCantTalkAboutAquaActivities, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -45,7 +45,7 @@ Route110_EventScript_AquaGrunt1::
 Route110_EventScript_AquaGrunt2::
 	lock
 	faceplayer
-	msgbox Route110_Text_KickUpARuckus, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_KickUpARuckus, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -54,7 +54,7 @@ Route110_EventScript_AquaGrunt2::
 Route110_EventScript_AquaGrunt3::
 	lock
 	faceplayer
-	msgbox Route110_Text_MyFirstJobInAqua, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_MyFirstJobInAqua, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -63,7 +63,7 @@ Route110_EventScript_AquaGrunt3::
 Route110_EventScript_AquaGrunt4::
 	lock
 	faceplayer
-	msgbox Route110_Text_AquaActionsBringSmiles, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_AquaActionsBringSmiles, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release

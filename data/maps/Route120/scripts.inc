@@ -321,7 +321,7 @@ Route120_EventScript_Steven::
 # 161 "data/maps/Route120/scripts.pory"
 	goto_if_set FLAG_NOT_READY_FOR_BATTLE_ROUTE_120, Route120_EventScript_StevenAskReadyForBattle
 # 162 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_StevenGreeting, MSGBOX_YESNO
+	msgbox_mugshot Route120_Text_StevenGreeting, MSGBOX_YESNO, MUGSHOT_STEVEN
 # 163 "data/maps/Route120/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, Route120_EventScript_StevenNotReady
 # 164 "data/maps/Route120/scripts.pory"
@@ -333,7 +333,7 @@ Route120_EventScript_Steven::
 # 167 "data/maps/Route120/scripts.pory"
 Route120_EventScript_StevenNotReady::
 # 168 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_StevenIllWaitHere, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_StevenIllWaitHere, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 169 "data/maps/Route120/scripts.pory"
 	setflag FLAG_NOT_READY_FOR_BATTLE_ROUTE_120
 # 170 "data/maps/Route120/scripts.pory"
@@ -345,7 +345,7 @@ Route120_EventScript_StevenNotReady::
 # 173 "data/maps/Route120/scripts.pory"
 Route120_EventScript_StevenAskReadyForBattle::
 # 174 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_StevenReadyForBattle, MSGBOX_YESNO
+	msgbox_mugshot Route120_Text_StevenReadyForBattle, MSGBOX_YESNO, MUGSHOT_STEVEN
 # 175 "data/maps/Route120/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, Route120_EventScript_StevenNotReady
 # 176 "data/maps/Route120/scripts.pory"
@@ -357,7 +357,7 @@ Route120_EventScript_StevenAskReadyForBattle::
 # 179 "data/maps/Route120/scripts.pory"
 Route120_EventScript_StevenBattleKecleon::
 # 180 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_StevenShowMeYourPower, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_StevenShowMeYourPower, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 181 "data/maps/Route120/scripts.pory"
 	closemessage
 # 182 "data/maps/Route120/scripts.pory"
@@ -439,13 +439,13 @@ Route120_EventScript_StevenGiveDeconScope::
 # 220 "data/maps/Route120/scripts.pory"
 	waitmovement 0
 # 221 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_StevenGiveDevonScope, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_StevenGiveDevonScope, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 222 "data/maps/Route120/scripts.pory"
 	giveitem ITEM_DEVON_SCOPE
 # 223 "data/maps/Route120/scripts.pory"
 	setflag FLAG_RECEIVED_DEVON_SCOPE
 # 224 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_StevenGoodbye, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_StevenGoodbye, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 225 "data/maps/Route120/scripts.pory"
 	closemessage
 # 226 "data/maps/Route120/scripts.pory"

@@ -887,7 +887,7 @@ Route119_EventScript_BridgeAquaGrunt1::
 # 444 "data/maps/Route119/scripts.pory"
 	faceplayer
 # 445 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_StayAwayFromWeatherInstitute, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_StayAwayFromWeatherInstitute, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 446 "data/maps/Route119/scripts.pory"
 	closemessage
 # 447 "data/maps/Route119/scripts.pory"
@@ -907,7 +907,7 @@ Route119_EventScript_BridgeAquaGrunt2::
 # 454 "data/maps/Route119/scripts.pory"
 	faceplayer
 # 455 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_DontGoNearWeatherInstitute, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_DontGoNearWeatherInstitute, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 456 "data/maps/Route119/scripts.pory"
 	closemessage
 # 457 "data/maps/Route119/scripts.pory"

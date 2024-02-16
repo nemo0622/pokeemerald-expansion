@@ -83,7 +83,7 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 # 42 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	waitmovement 0
 # 43 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	msgbox MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 44 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	giveitem ITEM_HM_DIVE
 # 45 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
@@ -91,7 +91,7 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 # 46 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
 # 47 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	msgbox MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 48 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	closemessage
 # 49 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
@@ -275,7 +275,7 @@ MossdeepCity_StevensHouse_EventScript_RockDisplay::
 # 138 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 MossdeepCity_StevensHouse_EventScript_Steven::
 # 139 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	msgbox MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis, MSGBOX_NPC, MUGSHOT_STEVEN
 # 140 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	end
 # 141 "data/maps/MossdeepCity_StevensHouse/scripts.pory"

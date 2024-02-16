@@ -195,7 +195,7 @@ Route118_EventScript_StevenTrigger::
 # 98 "data/maps/Route118/scripts.pory"
 	delay 30
 # 99 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_StevenQuestions, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_StevenQuestions, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 100 "data/maps/Route118/scripts.pory"
 	closemessage
 # 101 "data/maps/Route118/scripts.pory"

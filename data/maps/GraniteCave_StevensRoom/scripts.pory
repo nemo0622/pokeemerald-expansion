@@ -7,14 +7,14 @@ GraniteCave_StevensRoom_MapScripts::
 GraniteCave_StevensRoom_EventScript_Steven::
 	lock
 	faceplayer
-	msgbox GraniteCave_StevensRoom_Text_ImStevenLetterForMe, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_StevensRoom_Text_ImStevenLetterForMe, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	setvar VAR_0x8004, ITEM_LETTER
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_DELIVERED_STEVEN_LETTER
-	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	giveitem ITEM_TM_STEEL_WING
 	call_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
-	msgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -23,7 +23,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	closemessage
 	delay 30
 	setflag FLAG_REGISTERED_STEVEN_POKENAV
-	msgbox GraniteCave_StevensRoom_Text_IveGotToHurryAlong, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_StevensRoom_Text_IveGotToHurryAlong, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, GraniteCave_StevensRoom_EventScript_StevenExitNorth
 	call_if_eq VAR_FACING, DIR_SOUTH, GraniteCave_StevensRoom_EventScript_StevenExitSouth

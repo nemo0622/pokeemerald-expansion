@@ -48,20 +48,20 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_ELITE_4_SIDNEY, EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
-	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT, MUGSHOT_SIDNEY
 	trainerbattle_no_intro TRAINER_SIDNEY, EverGrandeCity_SidneysRoom_Text_Defeat
 	goto EverGrandeCity_SidneysRoom_EventScript_Defeated
 	end
 
 EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech::
-	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT, MUGSHOT_SIDNEY
 	release
 	end
 
 EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
-	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT, MUGSHOT_SIDNEY
 	release
 	end
 

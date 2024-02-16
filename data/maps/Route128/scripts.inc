@@ -123,7 +123,7 @@ Route128_EventScript_KyogreAwakenedScene::
 # 62 "data/maps/Route128/scripts.pory"
 	waitmovement 0
 # 63 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_StevenWhatIsHappening, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_StevenWhatIsHappening, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 64 "data/maps/Route128/scripts.pory"
 	closemessage
 # 65 "data/maps/Route128/scripts.pory"
@@ -133,13 +133,13 @@ Route128_EventScript_KyogreAwakenedScene::
 # 67 "data/maps/Route128/scripts.pory"
 	waitmovement 0
 # 68 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_StevenWholeWorldWillDrown, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_StevenWholeWorldWillDrown, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 69 "data/maps/Route128/scripts.pory"
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
 # 70 "data/maps/Route128/scripts.pory"
 	waitmovement 0
 # 71 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_StevenImGoingToSootopolis, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_StevenImGoingToSootopolis, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 72 "data/maps/Route128/scripts.pory"
 	closemessage
 # 73 "data/maps/Route128/scripts.pory"

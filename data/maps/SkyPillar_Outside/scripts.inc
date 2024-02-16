@@ -81,7 +81,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 # 41 "data/maps/SkyPillar_Outside/scripts.pory"
 	waitmovement 0
 # 42 "data/maps/SkyPillar_Outside/scripts.pory"
-	msgbox SkyPillar_Outside_Text_OpenedDoorToSkyPillar, MSGBOX_DEFAULT
+	msgbox_mugshot SkyPillar_Outside_Text_OpenedDoorToSkyPillar, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 43 "data/maps/SkyPillar_Outside/scripts.pory"
 	closemessage
 # 44 "data/maps/SkyPillar_Outside/scripts.pory"
@@ -101,7 +101,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 # 51 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 40
 # 52 "data/maps/SkyPillar_Outside/scripts.pory"
-	msgbox SkyPillar_Outside_Text_EarthquakeNotMomentToWaste, MSGBOX_DEFAULT
+	msgbox_mugshot SkyPillar_Outside_Text_EarthquakeNotMomentToWaste, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 53 "data/maps/SkyPillar_Outside/scripts.pory"
 	closemessage
 # 54 "data/maps/SkyPillar_Outside/scripts.pory"
@@ -143,7 +143,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 # 72 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 30
 # 73 "data/maps/SkyPillar_Outside/scripts.pory"
-	msgbox SkyPillar_Outside_Text_SituationGettingWorse, MSGBOX_DEFAULT
+	msgbox_mugshot SkyPillar_Outside_Text_SituationGettingWorse, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 74 "data/maps/SkyPillar_Outside/scripts.pory"
 	closemessage
 # 75 "data/maps/SkyPillar_Outside/scripts.pory"
@@ -159,7 +159,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 # 80 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 30
 # 81 "data/maps/SkyPillar_Outside/scripts.pory"
-	msgbox SkyPillar_Outside_Text_GotToGoBackForSootopolis, MSGBOX_DEFAULT
+	msgbox_mugshot SkyPillar_Outside_Text_GotToGoBackForSootopolis, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 82 "data/maps/SkyPillar_Outside/scripts.pory"
 	closemessage
 # 83 "data/maps/SkyPillar_Outside/scripts.pory"

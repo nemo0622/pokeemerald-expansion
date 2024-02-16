@@ -87,7 +87,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 # 44 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 45 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT, MUGSHOT_GLACIA
 # 46 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat
 # 47 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
@@ -99,7 +99,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 # 50 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech::
 # 51 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT, MUGSHOT_GLACIA
 # 52 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	release
 # 53 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
@@ -113,7 +113,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 # 57 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 # 58 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT, MUGSHOT_GLACIA
 # 59 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	release
 # 60 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"

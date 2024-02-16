@@ -1811,7 +1811,7 @@ SootopolisCity_EventScript_Steven::
 # 906 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_StevenMaxieArchieLeft
 # 907 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_SoThatsRayquaza, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_SoThatsRayquaza, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 908 "data/maps/SootopolisCity/scripts.pory"
 	releaseall
 # 909 "data/maps/SootopolisCity/scripts.pory"
@@ -1821,7 +1821,7 @@ SootopolisCity_EventScript_Steven::
 # 911 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_StevenHelpWallace::
 # 912 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_KnowWhatsNeededToHelpHim, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_KnowWhatsNeededToHelpHim, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 913 "data/maps/SootopolisCity/scripts.pory"
 	releaseall
 # 914 "data/maps/SootopolisCity/scripts.pory"
@@ -1831,7 +1831,7 @@ SootopolisCity_EventScript_StevenHelpWallace::
 # 916 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_StevenMaxieArchieLeft::
 # 917 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_MaxieArchieLeft, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_MaxieArchieLeft, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 918 "data/maps/SootopolisCity/scripts.pory"
 	releaseall
 # 919 "data/maps/SootopolisCity/scripts.pory"
@@ -1841,7 +1841,7 @@ SootopolisCity_EventScript_StevenMaxieArchieLeft::
 # 921 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_StevenHelpedWallace::
 # 922 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_NeverBeenToSkyPillar, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_NeverBeenToSkyPillar, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 923 "data/maps/SootopolisCity/scripts.pory"
 	releaseall
 # 924 "data/maps/SootopolisCity/scripts.pory"
@@ -1851,7 +1851,7 @@ SootopolisCity_EventScript_StevenHelpedWallace::
 # 926 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
 # 927 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_InvolvedWithCrisisComeWithMe, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_InvolvedWithCrisisComeWithMe, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 928 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 929 "data/maps/SootopolisCity/scripts.pory"
@@ -1859,7 +1859,7 @@ SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
 # 930 "data/maps/SootopolisCity/scripts.pory"
 	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_StartWalkToCaveOfOriginNorth
 # 931 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_DoesThisMakeYourFearPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_DoesThisMakeYourFearPokemon, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 932 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 933 "data/maps/SootopolisCity/scripts.pory"
@@ -1881,7 +1881,7 @@ SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
 # 941 "data/maps/SootopolisCity/scripts.pory"
 	waitmovement 0
 # 942 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_HereWereAreHelpWallace, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_HereWereAreHelpWallace, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 943 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 944 "data/maps/SootopolisCity/scripts.pory"
@@ -2611,7 +2611,7 @@ SootopolisCity_EventScript_Wallace::
 # 1306 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_GiveWaterfall
 # 1307 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_AquaMagmaDidntMeanHarm, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_AquaMagmaDidntMeanHarm, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 1308 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 1309 "data/maps/SootopolisCity/scripts.pory"
@@ -2621,13 +2621,13 @@ SootopolisCity_EventScript_Wallace::
 # 1311 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_GiveWaterfall::
 # 1312 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 1313 "data/maps/SootopolisCity/scripts.pory"
 	giveitem ITEM_HM_WATERFALL
 # 1314 "data/maps/SootopolisCity/scripts.pory"
 	setflag FLAG_RECEIVED_HM_WATERFALL
 # 1315 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 1316 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 1317 "data/maps/SootopolisCity/scripts.pory"
@@ -2673,7 +2673,7 @@ SootopolisCity_EventScript_WallaceMoveFromGymWest::
 # 1337 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_GoToSkyPillar::
 # 1338 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_HaventYouScaledSkyPillar, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_HaventYouScaledSkyPillar, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 1339 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 1340 "data/maps/SootopolisCity/scripts.pory"
@@ -2683,7 +2683,7 @@ SootopolisCity_EventScript_GoToSkyPillar::
 # 1342 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_GoToGym::
 # 1343 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_DazzledByMentor, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_DazzledByMentor, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 1344 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 1345 "data/maps/SootopolisCity/scripts.pory"

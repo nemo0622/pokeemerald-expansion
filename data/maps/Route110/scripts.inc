@@ -75,7 +75,7 @@ Route110_EventScript_AquaGrunt1::
 # 38 "data/maps/Route110/scripts.pory"
 	faceplayer
 # 39 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_WeCantTalkAboutAquaActivities, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_WeCantTalkAboutAquaActivities, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 40 "data/maps/Route110/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 41 "data/maps/Route110/scripts.pory"
@@ -93,7 +93,7 @@ Route110_EventScript_AquaGrunt2::
 # 47 "data/maps/Route110/scripts.pory"
 	faceplayer
 # 48 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_KickUpARuckus, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_KickUpARuckus, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 49 "data/maps/Route110/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 50 "data/maps/Route110/scripts.pory"
@@ -111,7 +111,7 @@ Route110_EventScript_AquaGrunt3::
 # 56 "data/maps/Route110/scripts.pory"
 	faceplayer
 # 57 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_MyFirstJobInAqua, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_MyFirstJobInAqua, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 58 "data/maps/Route110/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 59 "data/maps/Route110/scripts.pory"
@@ -129,7 +129,7 @@ Route110_EventScript_AquaGrunt4::
 # 65 "data/maps/Route110/scripts.pory"
 	faceplayer
 # 66 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_AquaActionsBringSmiles, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_AquaActionsBringSmiles, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 67 "data/maps/Route110/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 68 "data/maps/Route110/scripts.pory"

@@ -553,7 +553,7 @@ RusturfTunnel_EventScript_AquaGruntBackUp::
 # 277 "data/maps/RusturfTunnel/scripts.pory"
 	lockall
 # 278 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_Text_ComeAndGetSome, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_ComeAndGetSome, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 279 "data/maps/RusturfTunnel/scripts.pory"
 	closemessage
 # 280 "data/maps/RusturfTunnel/scripts.pory"
@@ -615,11 +615,11 @@ RusturfTunnel_EventScript_Grunt::
 # 308 "data/maps/RusturfTunnel/scripts.pory"
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 309 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_Text_GruntIntro, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_GruntIntro, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 310 "data/maps/RusturfTunnel/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_GruntDefeat
 # 311 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_Text_GruntTakePackage, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_GruntTakePackage, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 312 "data/maps/RusturfTunnel/scripts.pory"
 	giveitem ITEM_DEVON_PARTS
 # 313 "data/maps/RusturfTunnel/scripts.pory"

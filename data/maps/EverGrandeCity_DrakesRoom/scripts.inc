@@ -89,7 +89,7 @@ EverGrandeCity_DrakesRoom_EventScript_Drake::
 # 45 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 46 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT, MUGSHOT_DRAKE
 # 47 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_DRAKE, EverGrandeCity_DrakesRoom_Text_Defeat
 # 48 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
@@ -101,7 +101,7 @@ EverGrandeCity_DrakesRoom_EventScript_Drake::
 # 51 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech::
 # 52 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT, MUGSHOT_DRAKE
 # 53 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	release
 # 54 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
@@ -119,7 +119,7 @@ EverGrandeCity_DrakesRoom_EventScript_Defeated::
 # 60 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 # 61 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT, MUGSHOT_DRAKE
 # 62 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	release
 # 63 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"

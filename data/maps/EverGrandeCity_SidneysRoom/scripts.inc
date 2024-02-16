@@ -99,7 +99,7 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney::
 # 50 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 # 51 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT, MUGSHOT_SIDNEY
 # 52 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_SIDNEY, EverGrandeCity_SidneysRoom_Text_Defeat
 # 53 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
@@ -111,7 +111,7 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney::
 # 56 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech::
 # 57 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT, MUGSHOT_SIDNEY
 # 58 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	release
 # 59 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
@@ -125,7 +125,7 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 # 63 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 # 64 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT, MUGSHOT_SIDNEY
 # 65 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	release
 # 66 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"

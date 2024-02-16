@@ -7,7 +7,7 @@ CaveOfOrigin_B1F_MapScripts::
 CaveOfOrigin_B1F_EventScript_Wallace::
 	lock
 	faceplayer
-	msgbox CaveOfOrigin_B1F_Text_WallaceStory, MSGBOX_DEFAULT
+	msgbox_mugshot CaveOfOrigin_B1F_Text_WallaceStory, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 	closemessage
 	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
@@ -20,6 +20,8 @@ CaveOfOrigin_B1F_EventScript_Wallace::
 	delay 30
 	applymovement LOCALID_WALLACE, Common_Movement_FacePlayer
 	waitmovement 0
+	setvar VAR_0x8000, MUGSHOT_WALLACE
+	callnative DrawMugshot
 	message CaveOfOrigin_B1F_Text_WhereIsRayquaza
 	waitmessage
 	goto CaveOfOrigin_B1F_EventScript_WheresRayquaza
@@ -50,7 +52,7 @@ CaveOfOrigin_B1F_EventScript_DontRemember::
 	goto CaveOfOrigin_B1F_EventScript_WheresRayquaza
 
 CaveOfOrigin_B1F_EventScript_AtSkyPillar::
-	msgbox CaveOfOrigin_B1F_Text_WellHeadToSkyPillar, MSGBOX_DEFAULT
+	msgbox_mugshot CaveOfOrigin_B1F_Text_WellHeadToSkyPillar, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 	closemessage
 	playse SE_EXIT
 	fadescreenspeed FADE_TO_BLACK, 4

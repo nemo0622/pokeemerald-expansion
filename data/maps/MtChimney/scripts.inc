@@ -779,7 +779,7 @@ MtChimney_Movement_Unused15:
 # 390 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_BusyAquaGrunt1::
 # 391 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_MagmaOutnumbersUs, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_MagmaOutnumbersUs, MSGBOX_SIGN, MUGSHOT_AQUAGRUNTM
 # 392 "data/maps/MtChimney/scripts.pory"
 	end
 # 393 "data/maps/MtChimney/scripts.pory"
@@ -787,7 +787,7 @@ MtChimney_EventScript_BusyAquaGrunt1::
 # 394 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_BusyAquaGrunt2::
 # 395 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_LessHabitatForWaterPokemon, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_LessHabitatForWaterPokemon, MSGBOX_SIGN, MUGSHOT_AQUAGRUNTM
 # 396 "data/maps/MtChimney/scripts.pory"
 	end
 # 397 "data/maps/MtChimney/scripts.pory"
@@ -795,7 +795,7 @@ MtChimney_EventScript_BusyAquaGrunt2::
 # 398 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_BusyAquaGrunt3::
 # 399 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_MagmasNameSimilar, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_MagmasNameSimilar, MSGBOX_SIGN, MUGSHOT_AQUAGRUNTM
 # 400 "data/maps/MtChimney/scripts.pory"
 	end
 # 401 "data/maps/MtChimney/scripts.pory"

@@ -442,7 +442,7 @@ Route119_EventScript_Rachel::
 Route119_EventScript_BridgeAquaGrunt1::
 	lock
 	faceplayer
-	msgbox Route119_Text_StayAwayFromWeatherInstitute, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_StayAwayFromWeatherInstitute, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -452,7 +452,7 @@ Route119_EventScript_BridgeAquaGrunt1::
 Route119_EventScript_BridgeAquaGrunt2::
 	lock
 	faceplayer
-	msgbox Route119_Text_DontGoNearWeatherInstitute, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_DontGoNearWeatherInstitute, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0

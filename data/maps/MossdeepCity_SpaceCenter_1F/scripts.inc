@@ -389,7 +389,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_Steven::
 # 195 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	faceplayer
 # 196 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 197 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 198 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"

@@ -91,7 +91,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Wallace::
 # 46 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
 # 47 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 48 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_ChampionsRoom_Text_Defeat
 # 49 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -111,7 +111,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 # 56 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	special DrawWholeMapView
 # 57 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 58 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	closemessage
 # 59 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -235,7 +235,7 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 # 118 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 119 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 120 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	closemessage
 # 121 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -257,7 +257,7 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 # 129 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 130 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	msgbox EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside, MSGBOX_DEFAULT
+	msgbox_mugshot EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside, MSGBOX_DEFAULT, MUGSHOT_WALLACE
 # 131 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	checkplayergender
 # 132 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"

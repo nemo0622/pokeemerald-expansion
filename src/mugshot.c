@@ -49,6 +49,20 @@ static const u32 sMugshotImg_TateAndLiza[] = INCBIN_U32("graphics/mugshots/pics/
 static const u16 sMugshotPal_TateAndLiza[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_tateandliza.gbapal");
 static const u32 sMugshotImg_Juan[] = INCBIN_U32("graphics/mugshots/pics/mugshot_juan.4bpp.lz");
 static const u16 sMugshotPal_Juan[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_juan.gbapal");
+static const u32 sMugshotImg_Wallace[] = INCBIN_U32("graphics/mugshots/pics/mugshot_wallace.4bpp.lz");
+static const u16 sMugshotPal_Wallace[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_wallace.gbapal");
+static const u32 sMugshotImg_Sidney[] = INCBIN_U32("graphics/mugshots/pics/mugshot_sidney.4bpp.lz");
+static const u16 sMugshotPal_Sidney[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_sidney.gbapal");
+static const u32 sMugshotImg_Phoebe[] = INCBIN_U32("graphics/mugshots/pics/mugshot_phoebe.4bpp.lz");
+static const u16 sMugshotPal_Phoebe[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_phoebe.gbapal");
+static const u32 sMugshotImg_Glacia[] = INCBIN_U32("graphics/mugshots/pics/mugshot_glacia.4bpp.lz");
+static const u16 sMugshotPal_Glacia[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_glacia.gbapal");
+static const u32 sMugshotImg_Drake[] = INCBIN_U32("graphics/mugshots/pics/mugshot_drake.4bpp.lz");
+static const u16 sMugshotPal_Drake[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_drake.gbapal");
+static const u32 sMugshotImg_Steven[] = INCBIN_U32("graphics/mugshots/pics/mugshot_steven.4bpp.lz");
+static const u16 sMugshotPal_Steven[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_steven.gbapal");
+static const u32 sMugshotImg_AquaGruntM[] = INCBIN_U32("graphics/mugshots/pics/mugshot_aquagruntm.4bpp.lz");
+static const u16 sMugshotPal_AquaGruntM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_aquagruntm.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -66,6 +80,13 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_WINONA] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Winona, .palette = sMugshotPal_Winona},
     [MUGSHOT_TATEANDLIZA] = {.x = 2, .y = 8, .width = 96, .height = 48, .image = sMugshotImg_TateAndLiza, .palette = sMugshotPal_TateAndLiza},
     [MUGSHOT_JUAN] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Juan, .palette = sMugshotPal_Juan},
+    [MUGSHOT_WALLACE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Wallace, .palette = sMugshotPal_Wallace},
+    [MUGSHOT_SIDNEY] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Sidney, .palette = sMugshotPal_Sidney},
+    [MUGSHOT_PHOEBE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Phoebe, .palette = sMugshotPal_Phoebe},
+    [MUGSHOT_GLACIA] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Glacia, .palette = sMugshotPal_Glacia},
+    [MUGSHOT_DRAKE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Drake, .palette = sMugshotPal_Drake},
+    [MUGSHOT_STEVEN] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Steven, .palette = sMugshotPal_Steven},
+    [MUGSHOT_AQUAGRUNTM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_AquaGruntM, .palette = sMugshotPal_AquaGruntM},
 };
 
 

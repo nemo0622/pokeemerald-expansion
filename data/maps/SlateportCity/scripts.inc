@@ -745,7 +745,7 @@ SlateportCity_EventScript_AquaGrunt1::
 # 373 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 374 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_QuitPushing, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_QuitPushing, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 375 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 376 "data/maps/SlateportCity/scripts.pory"
@@ -765,7 +765,7 @@ SlateportCity_EventScript_AquaGrunt2::
 # 383 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 384 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_AquaHasPolicy, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_AquaHasPolicy, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 385 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 386 "data/maps/SlateportCity/scripts.pory"
@@ -785,7 +785,7 @@ SlateportCity_EventScript_AquaGrunt3::
 # 393 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 394 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_BossIsBrilliant, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_BossIsBrilliant, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 395 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 396 "data/maps/SlateportCity/scripts.pory"
@@ -805,7 +805,7 @@ SlateportCity_EventScript_AquaGrunt4::
 # 403 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 404 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_WhatsNewSchemeIWonder, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_WhatsNewSchemeIWonder, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 405 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 406 "data/maps/SlateportCity/scripts.pory"
@@ -825,7 +825,7 @@ SlateportCity_EventScript_AquaGrunt5::
 # 413 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 414 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_ShouldTakeItAll, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_ShouldTakeItAll, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 415 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 416 "data/maps/SlateportCity/scripts.pory"
@@ -845,7 +845,7 @@ SlateportCity_EventScript_AquaGrunt6::
 # 423 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 424 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_DontButtIn, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_DontButtIn, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 425 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 426 "data/maps/SlateportCity/scripts.pory"
@@ -865,7 +865,7 @@ SlateportCity_EventScript_AquaGrunt7::
 # 433 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 434 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_RemindsMeOfLongLineForGames, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_RemindsMeOfLongLineForGames, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 435 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 436 "data/maps/SlateportCity/scripts.pory"
@@ -885,7 +885,7 @@ SlateportCity_EventScript_AquaGrunt8::
 # 443 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 444 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_WhyAreWeLiningUp, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_WhyAreWeLiningUp, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 445 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 446 "data/maps/SlateportCity/scripts.pory"
@@ -915,7 +915,7 @@ SlateportCity_EventScript_AquaGrunt9::
 # 458 "data/maps/SlateportCity/scripts.pory"
 	waitmovement 0
 # 459 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_WhatDoYouWant, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_WhatDoYouWant, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 460 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 461 "data/maps/SlateportCity/scripts.pory"
@@ -931,7 +931,7 @@ SlateportCity_EventScript_AquaGrunt9::
 # 466 "data/maps/SlateportCity/scripts.pory"
 	waitmovement 0
 # 467 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_IllReadSignForYou, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_IllReadSignForYou, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 468 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 469 "data/maps/SlateportCity/scripts.pory"
@@ -943,7 +943,7 @@ SlateportCity_EventScript_AquaGrunt9::
 # 472 "data/maps/SlateportCity/scripts.pory"
 	waitmovement 0
 # 473 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_SaysSomethingLikeSeaIsEndless, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_SaysSomethingLikeSeaIsEndless, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 474 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 475 "data/maps/SlateportCity/scripts.pory"
@@ -977,7 +977,7 @@ SlateportCity_Movement_DelayAquaGrunt:
 # 489 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_AquaGrunt10::
 # 490 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_ShouldveBroughtMyGameBoy, MSGBOX_SIGN
+	msgbox_mugshot SlateportCity_Text_ShouldveBroughtMyGameBoy, MSGBOX_SIGN, MUGSHOT_AQUAGRUNTM
 # 491 "data/maps/SlateportCity/scripts.pory"
 	end
 # 492 "data/maps/SlateportCity/scripts.pory"
@@ -989,7 +989,7 @@ SlateportCity_EventScript_AquaGrunt11::
 # 495 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 496 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_HotSpringsAfterOperation, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_HotSpringsAfterOperation, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 497 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 498 "data/maps/SlateportCity/scripts.pory"

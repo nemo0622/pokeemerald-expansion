@@ -388,15 +388,15 @@ MtChimney_Movement_Unused15:
 	step_end
 
 MtChimney_EventScript_BusyAquaGrunt1::
-	msgbox MtChimney_Text_MagmaOutnumbersUs, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_MagmaOutnumbersUs, MSGBOX_SIGN, MUGSHOT_AQUAGRUNTM
 	end
 
 MtChimney_EventScript_BusyAquaGrunt2::
-	msgbox MtChimney_Text_LessHabitatForWaterPokemon, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_LessHabitatForWaterPokemon, MSGBOX_SIGN, MUGSHOT_AQUAGRUNTM
 	end
 
 MtChimney_EventScript_BusyAquaGrunt3::
-	msgbox MtChimney_Text_MagmasNameSimilar, MSGBOX_SIGN
+	msgbox_mugshot MtChimney_Text_MagmasNameSimilar, MSGBOX_SIGN, MUGSHOT_AQUAGRUNTM
 	end
 
 MtChimney_EventScript_Tabitha::

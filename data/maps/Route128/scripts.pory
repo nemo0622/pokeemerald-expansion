@@ -60,15 +60,15 @@ Route128_EventScript_KyogreAwakenedScene::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox Route128_Text_StevenWhatIsHappening, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_StevenWhatIsHappening, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	closemessage
 	applymovement LOCALID_STEVEN, Route128_Movement_StevenWalkUp
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	msgbox Route128_Text_StevenWholeWorldWillDrown, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_StevenWholeWorldWillDrown, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	msgbox Route128_Text_StevenImGoingToSootopolis, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_StevenImGoingToSootopolis, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 	closemessage
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
