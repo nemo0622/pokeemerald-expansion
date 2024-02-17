@@ -13,7 +13,7 @@ MagmaHideout_4F_MapScripts::
 MagmaHideout_4F_EventScript_Maxie::
 	lockall
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
-	msgbox MagmaHideout_4F_Text_MaxieAwakenGroudon, MSGBOX_DEFAULT
+	msgbox_mugshot MagmaHideout_4F_Text_MaxieAwakenGroudon, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	delay 20
 	setvar VAR_RESULT, 1
@@ -54,17 +54,17 @@ MagmaHideout_4F_EventScript_Maxie::
 	delay 30
 	applymovement LOCALID_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
 	waitmovement 0
-	msgbox MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT
+	msgbox_mugshot MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 30
 	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
+	msgbox_mugshot MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
-	msgbox MagmaHideout_4F_Text_MaxieImGoingAfterGroudon, MSGBOX_DEFAULT
+	msgbox_mugshot MagmaHideout_4F_Text_MaxieImGoingAfterGroudon, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	clearflag FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN
 	clearflag FLAG_HIDE_SLATEPORT_CITY_GABBY_AND_TY
@@ -136,8 +136,10 @@ MagmaHideout_4F_EventScript_Grunt13::
 	end
 
 MagmaHideout_4F_EventScript_Tabitha::
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	callnative DrawMugshot
 	trainerbattle_single TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_TabithaIntro, MagmaHideout_4F_Text_TabithaDefeat
-	msgbox MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:

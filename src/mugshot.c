@@ -69,6 +69,10 @@ static const u32 sMugshotImg_MagmaGruntM[] = INCBIN_U32("graphics/mugshots/pics/
 static const u16 sMugshotPal_MagmaGruntM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_magmagruntm.gbapal");
 static const u32 sMugshotImg_MagmaGruntF[] = INCBIN_U32("graphics/mugshots/pics/mugshot_magmagruntf.4bpp.lz");
 static const u16 sMugshotPal_MagmaGruntF[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_magmagruntf.gbapal");
+static const u32 sMugshotImg_Archie[] = INCBIN_U32("graphics/mugshots/pics/mugshot_archie.4bpp.lz");
+static const u16 sMugshotPal_Archie[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_archie.gbapal");
+static const u32 sMugshotImg_Maxie[] = INCBIN_U32("graphics/mugshots/pics/mugshot_maxie.4bpp.lz");
+static const u16 sMugshotPal_Maxie[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_maxie.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -96,6 +100,8 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_AQUAGRUNTF] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_AquaGruntF, .palette = sMugshotPal_AquaGruntF},
     [MUGSHOT_MAGMAGRUNTM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_MagmaGruntM, .palette = sMugshotPal_MagmaGruntM},
     [MUGSHOT_MAGMAGRUNTF] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_MagmaGruntF, .palette = sMugshotPal_MagmaGruntF},
+    [MUGSHOT_ARCHIE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Archie, .palette = sMugshotPal_Archie},
+    [MUGSHOT_MAXIE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Maxie, .palette = sMugshotPal_Maxie},
 };
 
 

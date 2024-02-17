@@ -121,7 +121,7 @@ SlateportCity_Harbor_EventScript_AquaEscapeScene::
 # 61 "data/maps/SlateportCity_Harbor/scripts.pory"
 	waitmovement 0
 # 62 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 63 "data/maps/SlateportCity_Harbor/scripts.pory"
 	closemessage
 # 64 "data/maps/SlateportCity_Harbor/scripts.pory"

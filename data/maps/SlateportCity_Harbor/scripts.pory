@@ -59,7 +59,7 @@ SlateportCity_Harbor_EventScript_AquaEscapeScene::
 	applymovement LOCALID_GRUNT, Common_Movement_WalkInPlaceFasterDown
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	msgbox SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	closemessage
 	applymovement LOCALID_GRUNT, SlateportCity_Harbor_Movement_AquaBoardSub
 	applymovement LOCALID_ARCHIE, SlateportCity_Harbor_Movement_AquaBoardSub

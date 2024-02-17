@@ -53,12 +53,14 @@ Route119_WeatherInstitute_2F_EventScript_Grunt3::
 	end
 
 Route119_WeatherInstitute_2F_EventScript_Shelly::
+	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTF
+	callnative DrawMugshot
 	trainerbattle_single TRAINER_SHELLY_WEATHER_INSTITUTE, Route119_WeatherInstitute_2F_Text_ShellyIntro, Route119_WeatherInstitute_2F_Text_ShellyDefeat, Route119_WeatherInstitute_2F_EventScript_ShellyDefeated
-	msgbox Route119_WeatherInstitute_2F_Text_ShellyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_WeatherInstitute_2F_Text_ShellyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_AQUAGRUNTF
 	end
 
 Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
-	msgbox Route119_WeatherInstitute_2F_Text_ShellyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_2F_Text_ShellyPostBattle, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTF
 	closemessage
 	addobject LOCALID_GRUNT_3
 	applymovement LOCALID_GRUNT_3, Route119_WeatherInstitute_2F_Movement_GruntApproachShelly
@@ -71,7 +73,7 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 	waitmovement 0
 	applymovement LOCALID_SHELLY, Common_Movement_Delay48
 	waitmovement 0
-	msgbox Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTF
 	closemessage
 	setvar VAR_WEATHER_INSTITUTE_STATE, 1
 	clearflag FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS

@@ -176,7 +176,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Grunt5::
 MossdeepCity_SpaceCenter_2F_EventScript_Tabitha::
 	lock
 	faceplayer
-	msgbox MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -184,7 +184,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Tabitha::
 
 MossdeepCity_SpaceCenter_2F_EventScript_Maxie::
 	lockall
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	releaseall
 	end
 
@@ -193,7 +193,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Steven::
 	goto_if_set FLAG_INTERACTED_WITH_STEVEN_SPACE_CENTER, MossdeepCity_SpaceCenter_2F_EventScript_ReadyForBattlePrompt
 	setflag FLAG_INTERACTED_WITH_STEVEN_SPACE_CENTER
 	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel, MSGBOX_DEFAULT, MUGSHOT_STEVEN
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	delay 30
 	playse SE_NOT_EFFECTIVE
@@ -273,7 +273,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
 	waitstate
 
 MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	delay 20
 	applymovement LOCALID_MAXIE, Common_Movement_WalkInPlaceFasterLeft
@@ -284,7 +284,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 	applymovement LOCALID_TABITHA, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 20
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	setvar VAR_MOSSDEEP_CITY_STATE, 3
 	fadedefaultbgm

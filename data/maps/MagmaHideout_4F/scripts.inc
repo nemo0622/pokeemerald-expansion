@@ -29,7 +29,7 @@ MagmaHideout_4F_EventScript_Maxie::
 # 15 "data/maps/MagmaHideout_4F/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 16 "data/maps/MagmaHideout_4F/scripts.pory"
-	msgbox MagmaHideout_4F_Text_MaxieAwakenGroudon, MSGBOX_DEFAULT
+	msgbox_mugshot MagmaHideout_4F_Text_MaxieAwakenGroudon, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 17 "data/maps/MagmaHideout_4F/scripts.pory"
 	closemessage
 # 18 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -111,7 +111,7 @@ MagmaHideout_4F_EventScript_Maxie::
 # 56 "data/maps/MagmaHideout_4F/scripts.pory"
 	waitmovement 0
 # 57 "data/maps/MagmaHideout_4F/scripts.pory"
-	msgbox MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT
+	msgbox_mugshot MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 58 "data/maps/MagmaHideout_4F/scripts.pory"
 	closemessage
 # 59 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -125,13 +125,13 @@ MagmaHideout_4F_EventScript_Maxie::
 # 63 "data/maps/MagmaHideout_4F/scripts.pory"
 	waitmovement 0
 # 64 "data/maps/MagmaHideout_4F/scripts.pory"
-	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
+	msgbox_mugshot MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 65 "data/maps/MagmaHideout_4F/scripts.pory"
 	closemessage
 # 66 "data/maps/MagmaHideout_4F/scripts.pory"
 	trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
 # 67 "data/maps/MagmaHideout_4F/scripts.pory"
-	msgbox MagmaHideout_4F_Text_MaxieImGoingAfterGroudon, MSGBOX_DEFAULT
+	msgbox_mugshot MagmaHideout_4F_Text_MaxieImGoingAfterGroudon, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 68 "data/maps/MagmaHideout_4F/scripts.pory"
 	closemessage
 # 69 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -275,204 +275,208 @@ MagmaHideout_4F_EventScript_Grunt13::
 # 138 "data/maps/MagmaHideout_4F/scripts.pory"
 MagmaHideout_4F_EventScript_Tabitha::
 # 139 "data/maps/MagmaHideout_4F/scripts.pory"
-	trainerbattle_single TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_TabithaIntro, MagmaHideout_4F_Text_TabithaDefeat
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
 # 140 "data/maps/MagmaHideout_4F/scripts.pory"
-	msgbox MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
+	callnative DrawMugshot
 # 141 "data/maps/MagmaHideout_4F/scripts.pory"
-	end
+	trainerbattle_single TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_TabithaIntro, MagmaHideout_4F_Text_TabithaDefeat
 # 142 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	msgbox_mugshot MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 # 143 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_Grunt11Intro:
+	end
 # 144 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "I want to see GROUDON, too, but they\n"
+
 # 145 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "won't let me see even its tail…\p"
+MagmaHideout_4F_Text_Grunt11Intro:
 # 146 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "It's got me feeling really frustrated.\p"
+	.string "I want to see GROUDON, too, but they\n"
 # 147 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Oh, no!\n"
+	.string "won't let me see even its tail…\p"
 # 148 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "I blabbed about GROUDON!$"
+	.string "It's got me feeling really frustrated.\p"
 # 149 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "Oh, no!\n"
 # 150 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_Grunt11Defeat:
+	.string "I blabbed about GROUDON!$"
 # 151 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "I guess it's impossible to win if one\n"
+
 # 152 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "doesn't have a calm mind…$"
+MagmaHideout_4F_Text_Grunt11Defeat:
 # 153 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "I guess it's impossible to win if one\n"
 # 154 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_Grunt11PostBattle:
+	.string "doesn't have a calm mind…$"
 # 155 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "I wonder if GROUDON even has a tail?$"
+
 # 156 "data/maps/MagmaHideout_4F/scripts.pory"
-
+MagmaHideout_4F_Text_Grunt11PostBattle:
 # 157 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_Grunt12Intro:
+	.string "I wonder if GROUDON even has a tail?$"
 # 158 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Fuhahaha!\n"
+
 # 159 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Soon! Very soon!\l"
+MagmaHideout_4F_Text_Grunt12Intro:
 # 160 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Our grand objective will be achieved!$"
+	.string "Fuhahaha!\n"
 # 161 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "Soon! Very soon!\l"
 # 162 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_Grunt12Defeat:
+	.string "Our grand objective will be achieved!$"
 # 163 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Grrr…\n"
+
 # 164 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "I've come so far, but now this?$"
+MagmaHideout_4F_Text_Grunt12Defeat:
 # 165 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "Grrr…\n"
 # 166 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_Grunt12PostBattle:
+	.string "I've come so far, but now this?$"
 # 167 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "MAXIE, sir!\n"
+
 # 168 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "An intruder is headed your way!$"
+MagmaHideout_4F_Text_Grunt12PostBattle:
 # 169 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "MAXIE, sir!\n"
 # 170 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_Grunt13Intro:
+	.string "An intruder is headed your way!$"
 # 171 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "You're not finished yet!\n"
+
 # 172 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "You're not getting by me easily!$"
+MagmaHideout_4F_Text_Grunt13Intro:
 # 173 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "You're not finished yet!\n"
 # 174 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_Grunt13Defeat:
+	.string "You're not getting by me easily!$"
 # 175 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Was I that easy to knock down?$"
+
 # 176 "data/maps/MagmaHideout_4F/scripts.pory"
-
+MagmaHideout_4F_Text_Grunt13Defeat:
 # 177 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_Grunt13PostBattle:
+	.string "Was I that easy to knock down?$"
 # 178 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "C-come on, one more match…$"
+
 # 179 "data/maps/MagmaHideout_4F/scripts.pory"
-
+MagmaHideout_4F_Text_Grunt13PostBattle:
 # 180 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_TabithaIntro:
+	.string "C-come on, one more match…$"
 # 181 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Hehehe!\n"
+
 # 182 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "You made it this far, so I'll tell you!\p"
+MagmaHideout_4F_Text_TabithaIntro:
 # 183 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "That's right!\n"
+	.string "Hehehe!\n"
 # 184 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Up ahead, GROUDON is sleeping!\p"
+	.string "You made it this far, so I'll tell you!\p"
 # 185 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "MAXIE went to GROUDON just seconds\n"
+	.string "That's right!\n"
 # 186 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "ago!\p"
+	.string "Up ahead, GROUDON is sleeping!\p"
 # 187 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "It's going to awaken real soon!\n"
+	.string "MAXIE went to GROUDON just seconds\n"
 # 188 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Hehe! Hehehe!$"
+	.string "ago!\p"
 # 189 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "It's going to awaken real soon!\n"
 # 190 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_TabithaDefeat:
+	.string "Hehe! Hehehe!$"
 # 191 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Taken down again…\n"
+
 # 192 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Hehe…$"
+MagmaHideout_4F_Text_TabithaDefeat:
 # 193 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "Taken down again…\n"
 # 194 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_TabithaPostBattle:
+	.string "Hehe…$"
 # 195 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "…And while you wasted time with me,\n"
+
 # 196 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "MAXIE should have awakened GROUDON…$"
+MagmaHideout_4F_Text_TabithaPostBattle:
 # 197 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "…And while you wasted time with me,\n"
 # 198 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_MaxieAwakenGroudon:
+	.string "MAXIE should have awakened GROUDON…$"
 # 199 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "MAXIE: GROUDON…\p"
+
 # 200 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Nothing could awaken you from your\n"
+MagmaHideout_4F_Text_MaxieAwakenGroudon:
 # 201 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "sleep bathed in magma…\p"
+	.string "MAXIE: GROUDON…\p"
 # 202 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "This BLUE ORB is what you sought.\n"
+	.string "Nothing could awaken you from your\n"
 # 203 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Wasn't it?\p"
+	.string "sleep bathed in magma…\p"
 # 204 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "I have brought you the BLUE ORB.\n"
+	.string "This BLUE ORB is what you sought.\n"
 # 205 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Let its shine awaken you!\p"
+	.string "Wasn't it?\p"
 # 206 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "And show me…\n"
+	.string "I have brought you the BLUE ORB.\n"
 # 207 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Show me the full extent of your power!$"
+	.string "Let its shine awaken you!\p"
 # 208 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "And show me…\n"
 # 209 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
+	.string "Show me the full extent of your power!$"
 # 210 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "MAXIE: GROUDON!\n"
+
 # 211 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "What's wrong?\p"
+MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
 # 212 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Wasn't the BLUE ORB the key?\p"
+	.string "MAXIE: GROUDON!\n"
 # 213 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "GROUDON!\n"
+	.string "What's wrong?\p"
 # 214 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Where have you gone…$"
+	.string "Wasn't the BLUE ORB the key?\p"
 # 215 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "GROUDON!\n"
 # 216 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_MaxieOhItWasYou:
+	.string "Where have you gone…$"
 # 217 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "MAXIE: Oh, so it was you?\p"
+
 # 218 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "I've seen you poking around uninvited\n"
+MagmaHideout_4F_Text_MaxieOhItWasYou:
 # 219 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "here and there…\p"
+	.string "MAXIE: Oh, so it was you?\p"
 # 220 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "I get it now!\n"
+	.string "I've seen you poking around uninvited\n"
 # 221 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "You must have pulled a cheap stunt!$"
+	.string "here and there…\p"
 # 222 "data/maps/MagmaHideout_4F/scripts.pory"
-
+	.string "I get it now!\n"
 # 223 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_MaxieDefeat:
+	.string "You must have pulled a cheap stunt!$"
 # 224 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "What makes you so adept at handling\n"
-# 225 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "POKéMON?$"
-# 226 "data/maps/MagmaHideout_4F/scripts.pory"
 
+# 225 "data/maps/MagmaHideout_4F/scripts.pory"
+MagmaHideout_4F_Text_MaxieDefeat:
+# 226 "data/maps/MagmaHideout_4F/scripts.pory"
+	.string "What makes you so adept at handling\n"
 # 227 "data/maps/MagmaHideout_4F/scripts.pory"
-MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
+	.string "POKéMON?$"
 # 228 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "MAXIE: There has to be some reason\n"
+
 # 229 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "why GROUDON fled…\p"
+MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
 # 230 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "That's what you're trying to say,\n"
+	.string "MAXIE: There has to be some reason\n"
 # 231 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "aren't you?\p"
+	.string "why GROUDON fled…\p"
 # 232 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "… … … … … …\n"
+	.string "That's what you're trying to say,\n"
 # 233 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "… … … … … …\p"
+	.string "aren't you?\p"
 # 234 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "Humph…\n"
+	.string "… … … … … …\n"
 # 235 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "You think I didn't know that?\p"
+	.string "… … … … … …\p"
 # 236 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "With GROUDON gone, there is no longer\n"
+	.string "Humph…\n"
 # 237 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "any need for this blasted volcano.\p"
+	.string "You think I didn't know that?\p"
 # 238 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "I am going after GROUDON, so this\n"
+	.string "With GROUDON gone, there is no longer\n"
 # 239 "data/maps/MagmaHideout_4F/scripts.pory"
+	.string "any need for this blasted volcano.\p"
+# 240 "data/maps/MagmaHideout_4F/scripts.pory"
+	.string "I am going after GROUDON, so this\n"
+# 241 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "is where we part!$"

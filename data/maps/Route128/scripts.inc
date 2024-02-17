@@ -45,7 +45,7 @@ Route128_EventScript_KyogreAwakenedScene::
 # 23 "data/maps/Route128/scripts.pory"
 	waitmovement 0
 # 24 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_ArchieWhatHappened, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_ArchieWhatHappened, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 25 "data/maps/Route128/scripts.pory"
 	closemessage
 # 26 "data/maps/Route128/scripts.pory"
@@ -53,7 +53,7 @@ Route128_EventScript_KyogreAwakenedScene::
 # 27 "data/maps/Route128/scripts.pory"
 	waitmovement 0
 # 28 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_ArchieIOnlyWanted, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_ArchieIOnlyWanted, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 29 "data/maps/Route128/scripts.pory"
 	closemessage
 # 30 "data/maps/Route128/scripts.pory"
@@ -65,7 +65,7 @@ Route128_EventScript_KyogreAwakenedScene::
 # 33 "data/maps/Route128/scripts.pory"
 	waitmovement 0
 # 34 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_MaxieDoYouUnderstandNow, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_MaxieDoYouUnderstandNow, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 35 "data/maps/Route128/scripts.pory"
 	closemessage
 # 36 "data/maps/Route128/scripts.pory"
@@ -77,7 +77,7 @@ Route128_EventScript_KyogreAwakenedScene::
 # 39 "data/maps/Route128/scripts.pory"
 	waitmovement 0
 # 40 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_MaxieResposibilityFallsToArchieAndMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_MaxieResposibilityFallsToArchieAndMe, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 41 "data/maps/Route128/scripts.pory"
 	closemessage
 # 42 "data/maps/Route128/scripts.pory"
@@ -89,7 +89,7 @@ Route128_EventScript_KyogreAwakenedScene::
 # 45 "data/maps/Route128/scripts.pory"
 	waitmovement 0
 # 46 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_MaxieThisDefiesBelief, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_MaxieThisDefiesBelief, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 47 "data/maps/Route128/scripts.pory"
 	closemessage
 # 48 "data/maps/Route128/scripts.pory"

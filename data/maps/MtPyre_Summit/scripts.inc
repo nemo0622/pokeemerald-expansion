@@ -99,7 +99,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 # 50 "data/maps/MtPyre_Summit/scripts.pory"
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieFacePlayer2
 # 51 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 52 "data/maps/MtPyre_Summit/scripts.pory"
 	closemessage
 # 53 "data/maps/MtPyre_Summit/scripts.pory"
@@ -443,7 +443,7 @@ MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs::
 # 222 "data/maps/MtPyre_Summit/scripts.pory"
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_MaxieApproachPlayer2
 # 223 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_MaxieSilence, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_MaxieSilence, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 224 "data/maps/MtPyre_Summit/scripts.pory"
 	closemessage
 # 225 "data/maps/MtPyre_Summit/scripts.pory"

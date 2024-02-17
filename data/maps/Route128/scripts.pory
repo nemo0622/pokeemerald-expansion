@@ -21,29 +21,29 @@ Route128_EventScript_KyogreAwakenedScene::
 	delay 20
 	applymovement LOCALID_ARCHIE, Route128_Movement_ArchieLookAround
 	waitmovement 0
-	msgbox Route128_Text_ArchieWhatHappened, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_ArchieWhatHappened, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	closemessage
 	applymovement LOCALID_ARCHIE, Route128_Movement_ArchieBackUp
 	waitmovement 0
-	msgbox Route128_Text_ArchieIOnlyWanted, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_ArchieIOnlyWanted, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	closemessage
 	applymovement LOCALID_MAXIE, Route128_Movement_MaxieApproachArchie
 	waitmovement 0
 	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	msgbox Route128_Text_MaxieDoYouUnderstandNow, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_MaxieDoYouUnderstandNow, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	applymovement LOCALID_MAXIE, Route128_Movement_MaxieApproachPlayer
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	msgbox Route128_Text_MaxieResposibilityFallsToArchieAndMe, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_MaxieResposibilityFallsToArchieAndMe, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	applymovement LOCALID_ARCHIE, Route128_Movement_ArchieRunLeft
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	applymovement LOCALID_MAXIE, Route128_Movement_MaxieWalkLeft
 	waitmovement 0
-	msgbox Route128_Text_MaxieThisDefiesBelief, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_MaxieThisDefiesBelief, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	delay 40
 	applymovement LOCALID_MAXIE, Route128_Movement_MaxieExit

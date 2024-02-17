@@ -20,22 +20,22 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	applymovement OBJ_EVENT_ID_PLAYER, SeafloorCavern_Room9_Movement_Delay32
 	waitmovement 0
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	msgbox SeafloorCavern_Room9_Text_ArchieHoldItRightThere, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieHoldItRightThere, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	closemessage
 	addobject VAR_0x8004
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	applymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieApproachPlayer
 	waitmovement 0
-	msgbox SeafloorCavern_Room9_Text_ArchieSoItWasYou, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieSoItWasYou, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	msgbox SeafloorCavern_Room9_Text_ArchieBeholdKyogre, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieBeholdKyogre, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	applymovement VAR_0x8004, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	trainerbattle_no_intro TRAINER_ARCHIE, SeafloorCavern_Room9_Text_ArchieDefeat
-	msgbox SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	setweather WEATHER_NONE
 	doweather
 	special Script_FadeOutMapMusic
@@ -85,21 +85,21 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	setvar VAR_0x8005, LOCALID_MAXIE
 	setvar VAR_0x8006, LOCALID_GRUNT_1
 	setvar VAR_0x8007, LOCALID_GRUNT_2
-	msgbox SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	playse SE_PC_LOGIN
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	msgbox SeafloorCavern_Room9_Text_ArchieAMessageFromOutside, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieAMessageFromOutside, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	closemessage
 	applymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieListenMessage
 	waitmovement 0
-	msgbox SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	closemessage
 	playse SE_PC_OFF
 	delay 20
 	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	msgbox SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	closemessage
 	addobject VAR_0x8005
 	addobject VAR_0x8006
@@ -110,19 +110,19 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	waitmovement 0
 	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	msgbox SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	playse SE_PIN
 	applymovement VAR_0x8004, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement VAR_0x8004, Common_Movement_Delay48
 	waitmovement 0
-	msgbox SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty, MSGBOX_DEFAULT
-	msgbox SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
+	msgbox_mugshot SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	applymovement VAR_0x8005, SeafloorCavern_Room9_Movement_MaxieExit
 	applymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieExit
 	waitmovement 0
-	msgbox SeafloorCavern_Room9_Text_MaxieComeOnPlayer, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_MaxieComeOnPlayer, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	setvar VAR_ROUTE128_STATE, 1
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 1
 	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN

@@ -111,7 +111,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 56 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	waitmovement 0
 # 57 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 58 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	closemessage
 # 59 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -119,7 +119,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 60 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	waitmovement 0
 # 61 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieWarning, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_ArchieWarning, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 62 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	closemessage
 # 63 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"

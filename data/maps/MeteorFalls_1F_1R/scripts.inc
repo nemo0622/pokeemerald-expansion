@@ -87,7 +87,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 # 44 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 45 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_1F_1R_Text_HoldItRightThereMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_HoldItRightThereMagma, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 46 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	closemessage
 # 47 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -141,7 +141,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 # 71 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 72 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_1F_1R_Text_ArchieSeenYouBefore, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_ArchieSeenYouBefore, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 73 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	closemessage
 # 74 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -157,13 +157,13 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 # 79 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 80 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 81 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterLeft
 # 82 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	waitmovement 0
 # 83 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_1F_1R_Text_ArchieFarewell, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_ArchieFarewell, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 84 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	closemessage
 # 85 "data/maps/MeteorFalls_1F_1R/scripts.pory"

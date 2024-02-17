@@ -43,7 +43,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 22 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 23 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_ArchieHoldItRightThere, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieHoldItRightThere, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 24 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	closemessage
 # 25 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -57,23 +57,23 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 29 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 30 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_ArchieSoItWasYou, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieSoItWasYou, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 31 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterUp
 # 32 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 33 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_ArchieBeholdKyogre, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieBeholdKyogre, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 34 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	applymovement VAR_0x8004, Common_Movement_FacePlayer
 # 35 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 36 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 37 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	trainerbattle_no_intro TRAINER_ARCHIE, SeafloorCavern_Room9_Text_ArchieDefeat
 # 38 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 39 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	setweather WEATHER_NONE
 # 40 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -173,7 +173,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 87 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	setvar VAR_0x8007, LOCALID_GRUNT_2
 # 88 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 89 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	playse SE_PC_LOGIN
 # 90 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -181,7 +181,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 91 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 92 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_ArchieAMessageFromOutside, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieAMessageFromOutside, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 93 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	closemessage
 # 94 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -189,7 +189,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 95 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 96 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 97 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	closemessage
 # 98 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -201,7 +201,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 101 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 102 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 103 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	closemessage
 # 104 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -223,7 +223,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 112 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 113 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 114 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	playse SE_PIN
 # 115 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -235,9 +235,9 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 118 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 119 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 120 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 121 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	closemessage
 # 122 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -247,7 +247,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 124 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 125 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	msgbox SeafloorCavern_Room9_Text_MaxieComeOnPlayer, MSGBOX_DEFAULT
+	msgbox_mugshot SeafloorCavern_Room9_Text_MaxieComeOnPlayer, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 126 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	setvar VAR_ROUTE128_STATE, 1
 # 127 "data/maps/SeafloorCavern_Room9/scripts.pory"

@@ -2717,7 +2717,7 @@ SootopolisCity_EventScript_Maxie::
 # 1359 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_MaxieRayquaza
 # 1360 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_GroudonPleaseStop, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_GroudonPleaseStop, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 1361 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 1362 "data/maps/SootopolisCity/scripts.pory"
@@ -2729,7 +2729,7 @@ SootopolisCity_EventScript_Maxie::
 # 1365 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_MaxieRayquaza::
 # 1366 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_AfterAllOurScheming, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_AfterAllOurScheming, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 1367 "data/maps/SootopolisCity/scripts.pory"
 	setflag FLAG_MET_MAXIE_SOOTOPOLIS
 # 1368 "data/maps/SootopolisCity/scripts.pory"
@@ -2747,7 +2747,7 @@ SootopolisCity_EventScript_Archie::
 # 1374 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_ArchieRayquaza
 # 1375 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_KyogreCalmDown, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_KyogreCalmDown, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 1376 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 1377 "data/maps/SootopolisCity/scripts.pory"
@@ -2759,7 +2759,7 @@ SootopolisCity_EventScript_Archie::
 # 1380 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_ArchieRayquaza::
 # 1381 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_TryingMeaninglessToPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_TryingMeaninglessToPokemon, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 # 1382 "data/maps/SootopolisCity/scripts.pory"
 	setflag FLAG_MET_ARCHIE_SOOTOPOLIS
 # 1383 "data/maps/SootopolisCity/scripts.pory"

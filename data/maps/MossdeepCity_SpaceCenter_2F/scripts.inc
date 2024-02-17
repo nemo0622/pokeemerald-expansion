@@ -355,7 +355,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Tabitha::
 # 178 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	faceplayer
 # 179 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou, MSGBOX_DEFAULT, MUGSHOT_MAGMAGRUNTM
 # 180 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 181 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -371,7 +371,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Maxie::
 # 186 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	lockall
 # 187 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 188 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	releaseall
 # 189 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -389,7 +389,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Steven::
 # 195 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel, MSGBOX_DEFAULT, MUGSHOT_STEVEN
 # 196 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 197 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	closemessage
 # 198 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -549,7 +549,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
 # 275 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 # 276 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 277 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	closemessage
 # 278 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -571,7 +571,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 # 286 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	delay 20
 # 287 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 # 288 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	closemessage
 # 289 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"

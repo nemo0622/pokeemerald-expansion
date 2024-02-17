@@ -32,17 +32,17 @@ MtChimney_EventScript_Archie::
 	end
 
 MtChimney_EventScript_ArchieGoStopTeamMagma::
-	msgbox MtChimney_Text_ArchieGoStopTeamMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MtChimney_Text_ArchieGoStopTeamMagma, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	return
 
 MtChimney_EventScript_ArchieBusyFighting::
-	msgbox MtChimney_Text_ArchieIHaveMyHandsFull, MSGBOX_DEFAULT
+	msgbox_mugshot MtChimney_Text_ArchieIHaveMyHandsFull, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	return
 
 MtChimney_EventScript_Maxie::
 	lockall
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
-	msgbox MtChimney_Text_MeteoriteWillActivateVolcano, MSGBOX_DEFAULT
+	msgbox_mugshot MtChimney_Text_MeteoriteWillActivateVolcano, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
 	waitmovement 0
 	playse SE_PIN
@@ -50,9 +50,9 @@ MtChimney_EventScript_Maxie::
 	waitmovement 0
 	applymovement LOCALID_MAXIE, Common_Movement_Delay48
 	waitmovement 0
-	msgbox MtChimney_Text_MaxieIntro, MSGBOX_DEFAULT
+	msgbox_mugshot MtChimney_Text_MaxieIntro, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	trainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat
-	msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT, MUGSHOT_MAXIE
 	closemessage
 	delay 30
 	fadescreenswapbuffers FADE_TO_BLACK
@@ -68,7 +68,7 @@ MtChimney_EventScript_Maxie::
 	call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieApproachPlayerNorth
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	msgbox MtChimney_Text_ArchieThankYou, MSGBOX_DEFAULT
+	msgbox_mugshot MtChimney_Text_ArchieThankYou, MSGBOX_DEFAULT, MUGSHOT_ARCHIE
 	closemessage
 	call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieExitEast
 	call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieExitNorth
@@ -400,8 +400,10 @@ MtChimney_EventScript_BusyAquaGrunt3::
 	end
 
 MtChimney_EventScript_Tabitha::
+	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	callnative DrawMugshot
 	trainerbattle_single TRAINER_TABITHA_MT_CHIMNEY, MtChimney_Text_TabithaIntro, MtChimney_Text_TabithaDefeat
-	msgbox MtChimney_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtChimney_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 	end
 
 MtChimney_EventScript_Grunt2::
