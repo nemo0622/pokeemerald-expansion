@@ -30,6 +30,7 @@
     - Credit to Wergan on DeviantArt and Omega on WhackaHack for various other PSS-style icons
 - New Gen 5 inspired map popups, ported from BSBob by [RavePossum](https://github.com/ravepossum/pokeemerald)
 - Improved Battle Backgrounds by RavePossum and Ruki
+- New Archie sprite based on ORAS design by Muzyun and SlayerOne998
 
 ## Bugs and Future Plans
 
