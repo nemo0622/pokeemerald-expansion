@@ -415,7 +415,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_MagmaNote::
 # 208 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt3::
 # 209 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTF
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTF
 # 210 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	callnative DrawMugshot
 # 211 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -429,7 +429,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_Grunt3::
 # 215 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt1::
 # 216 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 # 217 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	callnative DrawMugshot
 # 218 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -443,7 +443,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_Grunt1::
 # 222 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt4::
 # 223 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 # 224 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	callnative DrawMugshot
 # 225 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"

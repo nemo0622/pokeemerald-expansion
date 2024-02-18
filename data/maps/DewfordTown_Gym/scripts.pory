@@ -134,7 +134,7 @@ DewfordTown_Gym_EventScript_StopCountingTrainers::
 	return
 
 DewfordTown_Gym_EventScript_Brawly::
-	setvar VAR_0x8000, MUGSHOT_BRAWLY
+	setvar VAR_MUGSHOT, MUGSHOT_BRAWLY
 	callnative DrawMugshot
 	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
@@ -186,7 +186,7 @@ DewfordTown_Gym_EventScript_GiveBulkUp2:
 	end
 
 DewfordTown_Gym_EventScript_BrawlyRematch::
-	setvar VAR_0x8000, MUGSHOT_BRAWLY
+	setvar VAR_MUGSHOT, MUGSHOT_BRAWLY
 	callnative DrawMugshot
 	trainerbattle_rematch_double TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyPreRematch, DewfordTown_Gym_Text_BrawlyRematchDefeat, DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons
 	msgbox_mugshot DewfordTown_Gym_Text_BrawlyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_BRAWLY

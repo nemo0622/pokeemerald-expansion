@@ -233,7 +233,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterEvent::
 # 117 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	bufferleadmonspeciesname STR_VAR_1
 # 118 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_BIRCH
+	setvar VAR_MUGSHOT, MUGSHOT_BIRCH
 # 119 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	callnative DrawMugshot
 # 120 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

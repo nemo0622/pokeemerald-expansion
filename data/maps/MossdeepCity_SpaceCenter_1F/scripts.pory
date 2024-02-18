@@ -206,21 +206,21 @@ MossdeepCity_SpaceCenter_1F_EventScript_MagmaNote::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt3::
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTF
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTF
 	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_3, MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat
 	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTF
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt1::
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_1, MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat
 	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt4::
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_4, MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat
 	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM

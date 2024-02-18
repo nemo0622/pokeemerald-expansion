@@ -127,7 +127,7 @@ Route119_WeatherInstitute_1F_EventScript_Bed::
 # 64 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 Route119_WeatherInstitute_1F_EventScript_Grunt1::
 # 65 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 # 66 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	callnative DrawMugshot
 # 67 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
@@ -141,7 +141,7 @@ Route119_WeatherInstitute_1F_EventScript_Grunt1::
 # 71 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 Route119_WeatherInstitute_1F_EventScript_Grunt4::
 # 72 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTF
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTF
 # 73 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	callnative DrawMugshot
 # 74 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"

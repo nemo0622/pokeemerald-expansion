@@ -9,7 +9,7 @@ SeafloorCavern_Room4_MapScripts::
 # 5 "data/maps/SeafloorCavern_Room4/scripts.pory"
 SeafloorCavern_Room4_EventScript_Grunt3::
 # 6 "data/maps/SeafloorCavern_Room4/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 # 7 "data/maps/SeafloorCavern_Room4/scripts.pory"
 	callnative DrawMugshot
 # 8 "data/maps/SeafloorCavern_Room4/scripts.pory"
@@ -23,7 +23,7 @@ SeafloorCavern_Room4_EventScript_Grunt3::
 # 12 "data/maps/SeafloorCavern_Room4/scripts.pory"
 SeafloorCavern_Room4_EventScript_Grunt4::
 # 13 "data/maps/SeafloorCavern_Room4/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTF
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTF
 # 14 "data/maps/SeafloorCavern_Room4/scripts.pory"
 	callnative DrawMugshot
 # 15 "data/maps/SeafloorCavern_Room4/scripts.pory"

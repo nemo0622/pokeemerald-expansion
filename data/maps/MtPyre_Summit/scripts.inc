@@ -825,7 +825,7 @@ MtPyre_Summit_Movement_MaxieApproachArchie2:
 # 413 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_Grunt1::
 # 414 "data/maps/MtPyre_Summit/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 # 415 "data/maps/MtPyre_Summit/scripts.pory"
 	callnative DrawMugshot
 # 416 "data/maps/MtPyre_Summit/scripts.pory"
@@ -839,7 +839,7 @@ MtPyre_Summit_EventScript_Grunt1::
 # 420 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_Grunt2::
 # 421 "data/maps/MtPyre_Summit/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 # 422 "data/maps/MtPyre_Summit/scripts.pory"
 	callnative DrawMugshot
 # 423 "data/maps/MtPyre_Summit/scripts.pory"
@@ -853,7 +853,7 @@ MtPyre_Summit_EventScript_Grunt2::
 # 427 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_Grunt3::
 # 428 "data/maps/MtPyre_Summit/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 # 429 "data/maps/MtPyre_Summit/scripts.pory"
 	callnative DrawMugshot
 # 430 "data/maps/MtPyre_Summit/scripts.pory"
@@ -867,7 +867,7 @@ MtPyre_Summit_EventScript_Grunt3::
 # 434 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_Grunt4::
 # 435 "data/maps/MtPyre_Summit/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTF
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTF
 # 436 "data/maps/MtPyre_Summit/scripts.pory"
 	callnative DrawMugshot
 # 437 "data/maps/MtPyre_Summit/scripts.pory"

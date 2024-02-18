@@ -233,7 +233,7 @@ MagmaHideout_4F_Movement_MaxieLookAround:
 # 117 "data/maps/MagmaHideout_4F/scripts.pory"
 MagmaHideout_4F_EventScript_Grunt11::
 # 118 "data/maps/MagmaHideout_4F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 # 119 "data/maps/MagmaHideout_4F/scripts.pory"
 	callnative DrawMugshot
 # 120 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -247,7 +247,7 @@ MagmaHideout_4F_EventScript_Grunt11::
 # 124 "data/maps/MagmaHideout_4F/scripts.pory"
 MagmaHideout_4F_EventScript_Grunt12::
 # 125 "data/maps/MagmaHideout_4F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 # 126 "data/maps/MagmaHideout_4F/scripts.pory"
 	callnative DrawMugshot
 # 127 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -261,7 +261,7 @@ MagmaHideout_4F_EventScript_Grunt12::
 # 131 "data/maps/MagmaHideout_4F/scripts.pory"
 MagmaHideout_4F_EventScript_Grunt13::
 # 132 "data/maps/MagmaHideout_4F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 # 133 "data/maps/MagmaHideout_4F/scripts.pory"
 	callnative DrawMugshot
 # 134 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -275,7 +275,7 @@ MagmaHideout_4F_EventScript_Grunt13::
 # 138 "data/maps/MagmaHideout_4F/scripts.pory"
 MagmaHideout_4F_EventScript_Tabitha::
 # 139 "data/maps/MagmaHideout_4F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 # 140 "data/maps/MagmaHideout_4F/scripts.pory"
 	callnative DrawMugshot
 # 141 "data/maps/MagmaHideout_4F/scripts.pory"

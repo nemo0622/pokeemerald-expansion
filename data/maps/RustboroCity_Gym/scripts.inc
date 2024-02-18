@@ -9,7 +9,7 @@ RustboroCity_Gym_MapScripts::
 # 5 "data/maps/RustboroCity_Gym/scripts.pory"
 RustboroCity_Gym_EventScript_Roxanne::
 # 6 "data/maps/RustboroCity_Gym/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_ROXANNE
+	setvar VAR_MUGSHOT, MUGSHOT_ROXANNE
 # 7 "data/maps/RustboroCity_Gym/scripts.pory"
 	callnative DrawMugshot
 # 8 "data/maps/RustboroCity_Gym/scripts.pory"
@@ -77,7 +77,7 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 # 39 "data/maps/RustboroCity_Gym/scripts.pory"
 RustboroCity_Gym_EventScript_RoxanneRematch::
 # 40 "data/maps/RustboroCity_Gym/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_ROXANNE
+	setvar VAR_MUGSHOT, MUGSHOT_ROXANNE
 # 41 "data/maps/RustboroCity_Gym/scripts.pory"
 	callnative DrawMugshot
 # 42 "data/maps/RustboroCity_Gym/scripts.pory"

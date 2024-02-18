@@ -103,7 +103,7 @@ LavaridgeTown_Gym_1F_EventScript_EndCheckBuryTrainers::
 # 52 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 LavaridgeTown_Gym_1F_EventScript_Flannery::
 # 53 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_FLANNERY
+	setvar VAR_MUGSHOT, MUGSHOT_FLANNERY
 # 54 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	callnative DrawMugshot
 # 55 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
@@ -207,7 +207,7 @@ LavaridgeTown_Gym_1F_EventScript_GiveOverheat::
 # 104 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 LavaridgeTown_Gym_1F_EventScript_FlanneryRematch::
 # 105 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_FLANNERY
+	setvar VAR_MUGSHOT, MUGSHOT_FLANNERY
 # 106 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	callnative DrawMugshot
 # 107 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

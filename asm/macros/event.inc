@@ -2035,7 +2035,7 @@
 
 	@ Calls a msgbox with a desired mugshot, string and msgbox type.
 	.macro msgbox_mugshot msgText:req, msgType:req, mugshot:req
-	setvar VAR_0x8000, \mugshot
+	setvar VAR_MUGSHOT, \mugshot
 	callnative DrawMugshot
 	msgbox \msgText, \msgType
 	callnative ClearMugshot

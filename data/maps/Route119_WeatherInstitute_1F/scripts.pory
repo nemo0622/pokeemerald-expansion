@@ -62,14 +62,14 @@ Route119_WeatherInstitute_1F_EventScript_Bed::
 	end
 
 Route119_WeatherInstitute_1F_EventScript_Grunt1::
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_WEATHER_INST_1, Route119_WeatherInstitute_1F_Text_Grunt1Intro, Route119_WeatherInstitute_1F_Text_Grunt1Defeat
 	msgbox_mugshot Route119_WeatherInstitute_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_AQUAGRUNTM
 	end
 
 Route119_WeatherInstitute_1F_EventScript_Grunt4::
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTF
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTF
 	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_WEATHER_INST_4, Route119_WeatherInstitute_1F_Text_Grunt4Intro, Route119_WeatherInstitute_1F_Text_Grunt4Defeat
 	msgbox_mugshot Route119_WeatherInstitute_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_AQUAGRUNTF

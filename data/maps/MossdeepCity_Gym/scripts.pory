@@ -54,7 +54,7 @@ MossdeepCity_Gym_EventScript_SetSwitch4Metatiles::
 	end
 
 MossdeepCity_Gym_EventScript_TateAndLiza::
-	setvar VAR_0x8000, MUGSHOT_TATEANDLIZA
+	setvar VAR_MUGSHOT, MUGSHOT_TATEANDLIZA
 	callnative DrawMugshot
 	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
@@ -112,7 +112,7 @@ MossdeepCity_Gym_EventScript_GiveCalmMind::
 	return
 
 MossdeepCity_Gym_EventScript_TateAndLizaRematch::
-	setvar VAR_0x8000, MUGSHOT_TATEANDLIZA
+	setvar VAR_MUGSHOT, MUGSHOT_TATEANDLIZA
 	callnative DrawMugshot
 	trainerbattle_rematch_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaPreRematch, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat, MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons
 	msgbox_mugshot MossdeepCity_Gym_Text_TateAndLizaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_TATEANDLIZA

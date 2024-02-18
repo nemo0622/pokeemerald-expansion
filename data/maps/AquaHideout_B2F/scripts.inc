@@ -145,7 +145,7 @@ AquaHideout_B2F_Movement_SumbarineDepartRight:
 # 73 "data/maps/AquaHideout_B2F/scripts.pory"
 AquaHideout_B2F_EventScript_Grunt4::
 # 74 "data/maps/AquaHideout_B2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 # 75 "data/maps/AquaHideout_B2F/scripts.pory"
 	callnative DrawMugshot
 # 76 "data/maps/AquaHideout_B2F/scripts.pory"
@@ -169,7 +169,7 @@ AquaHideout_B2F_EventScript_Grunt4Defeated::
 # 85 "data/maps/AquaHideout_B2F/scripts.pory"
 AquaHideout_B2F_EventScript_Grunt6::
 # 86 "data/maps/AquaHideout_B2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTF
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTF
 # 87 "data/maps/AquaHideout_B2F/scripts.pory"
 	callnative DrawMugshot
 # 88 "data/maps/AquaHideout_B2F/scripts.pory"
@@ -183,7 +183,7 @@ AquaHideout_B2F_EventScript_Grunt6::
 # 92 "data/maps/AquaHideout_B2F/scripts.pory"
 AquaHideout_B2F_EventScript_Grunt8::
 # 93 "data/maps/AquaHideout_B2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 # 94 "data/maps/AquaHideout_B2F/scripts.pory"
 	callnative DrawMugshot
 # 95 "data/maps/AquaHideout_B2F/scripts.pory"

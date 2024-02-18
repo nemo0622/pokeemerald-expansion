@@ -87,7 +87,7 @@ AquaHideout_1F_EventScript_SlateportHint2::
 # 44 "data/maps/AquaHideout_1F/scripts.pory"
 AquaHideout_1F_EventScript_Grunt1::
 # 45 "data/maps/AquaHideout_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 # 46 "data/maps/AquaHideout_1F/scripts.pory"
 	callnative DrawMugshot
 # 47 "data/maps/AquaHideout_1F/scripts.pory"

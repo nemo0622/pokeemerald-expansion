@@ -111,7 +111,7 @@ MossdeepCity_Gym_EventScript_SetSwitch4Metatiles::
 # 56 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_EventScript_TateAndLiza::
 # 57 "data/maps/MossdeepCity_Gym/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_TATEANDLIZA
+	setvar VAR_MUGSHOT, MUGSHOT_TATEANDLIZA
 # 58 "data/maps/MossdeepCity_Gym/scripts.pory"
 	callnative DrawMugshot
 # 59 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -227,7 +227,7 @@ MossdeepCity_Gym_EventScript_GiveCalmMind::
 # 114 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_EventScript_TateAndLizaRematch::
 # 115 "data/maps/MossdeepCity_Gym/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_TATEANDLIZA
+	setvar VAR_MUGSHOT, MUGSHOT_TATEANDLIZA
 # 116 "data/maps/MossdeepCity_Gym/scripts.pory"
 	callnative DrawMugshot
 # 117 "data/maps/MossdeepCity_Gym/scripts.pory"

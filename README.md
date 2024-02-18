@@ -35,6 +35,8 @@
 
 ### Known Bugs:
 - Mugshots occasionally cut a little portion out of the textbox
+- Mugshots removed from some Mt. Chimney trainers
+    - No idea why they break here, needs a lot more testing
 
 ### Future Plans:
 - Expanded implementation of NPC Mugshot system

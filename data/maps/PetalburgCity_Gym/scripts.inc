@@ -693,7 +693,7 @@ PetalburgCity_Gym_EventScript_GiveFacade2::
 # 347 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanRematch::
 # 348 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_0x8000 MUGSHOT_NORMAN
+	setvar VAR_MUGSHOT MUGSHOT_NORMAN
 # 349 "data/maps/PetalburgCity_Gym/scripts.pory"
 	callnative DrawMugshot
 # 350 "data/maps/PetalburgCity_Gym/scripts.pory"

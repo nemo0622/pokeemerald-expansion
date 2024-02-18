@@ -271,7 +271,7 @@ DewfordTown_Gym_EventScript_StopCountingTrainers::
 # 136 "data/maps/DewfordTown_Gym/scripts.pory"
 DewfordTown_Gym_EventScript_Brawly::
 # 137 "data/maps/DewfordTown_Gym/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_BRAWLY
+	setvar VAR_MUGSHOT, MUGSHOT_BRAWLY
 # 138 "data/maps/DewfordTown_Gym/scripts.pory"
 	callnative DrawMugshot
 # 139 "data/maps/DewfordTown_Gym/scripts.pory"
@@ -375,7 +375,7 @@ DewfordTown_Gym_EventScript_GiveBulkUp2:
 # 188 "data/maps/DewfordTown_Gym/scripts.pory"
 DewfordTown_Gym_EventScript_BrawlyRematch::
 # 189 "data/maps/DewfordTown_Gym/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_BRAWLY
+	setvar VAR_MUGSHOT, MUGSHOT_BRAWLY
 # 190 "data/maps/DewfordTown_Gym/scripts.pory"
 	callnative DrawMugshot
 # 191 "data/maps/DewfordTown_Gym/scripts.pory"

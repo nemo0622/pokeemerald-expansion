@@ -75,7 +75,7 @@ MauvilleCity_Gym_EventScript_DeactivatePuzzle::
 	end
 
 MauvilleCity_Gym_EventScript_Wattson::
-	setvar VAR_0x8000, MUGSHOT_WATTSON
+	setvar VAR_MUGSHOT, MUGSHOT_WATTSON
 	callnative DrawMugshot
 	trainerbattle_single TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonIntro, MauvilleCity_Gym_Text_WattsonDefeat, MauvilleCity_Gym_EventScript_WattsonDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
@@ -135,7 +135,7 @@ MauvilleCity_Gym_EventScript_CompletedNewMauville::
 	end
 
 MauvilleCity_Gym_EventScript_WattsonRematch::
-	setvar VAR_0x8000, MUGSHOT_WATTSON
+	setvar VAR_MUGSHOT, MUGSHOT_WATTSON
 	callnative DrawMugshot
 	trainerbattle_rematch_double TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonPreRematch, MauvilleCity_Gym_Text_WattsonRematchDefeat, MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons
 	msgbox_mugshot MauvilleCity_Gym_Text_WattsonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WATTSON

@@ -17,8 +17,8 @@ struct Mugshot{
     const u16* palette;
 };
 
-void DrawMugshot(void); //VAR_0x8000 = mugshot id
-void DrawMugshotAtPos(void); //VAR_0x8000 = mugshot id, VAR_0x8001 = x, VAR_0x8002 = y
+void DrawMugshot(void); //VAR_MUGSHOT = mugshot id
+void DrawMugshotAtPos(void); //VAR_MUGSHOT = mugshot id, VAR_0x8001 = x, VAR_0x8002 = y
 void ClearMugshot(void);
 
 static const u32 sMugshotImg_Brendan[] = INCBIN_U32("graphics/mugshots/pics/mugshot_brendan.4bpp.lz");
@@ -140,10 +140,10 @@ static void DrawMugshotCore(const struct Mugshot* const mugshot, int x, int y){
 }
 
 void DrawMugshot(void){
-    const struct Mugshot* const mugshot = sMugshots + VarGet(VAR_0x8000);
+    const struct Mugshot* const mugshot = sMugshots + VarGet(VAR_MUGSHOT);
     DrawMugshotCore(mugshot, mugshot->x, mugshot->y);
 }
 
 void DrawMugshotAtPos(void){
-    DrawMugshotCore(sMugshots + VarGet(VAR_0x8000), VarGet(VAR_0x8001), VarGet(VAR_0x8002));
+    DrawMugshotCore(sMugshots + VarGet(VAR_MUGSHOT), VarGet(VAR_0x8001), VarGet(VAR_0x8002));
 }

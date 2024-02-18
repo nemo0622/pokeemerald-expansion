@@ -67,7 +67,7 @@ Route119_WeatherInstitute_2F_EventScript_SetScientistPosGameClear::
 # 34 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_EventScript_Grunt5::
 # 35 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTF
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTF
 # 36 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	callnative DrawMugshot
 # 37 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -81,7 +81,7 @@ Route119_WeatherInstitute_2F_EventScript_Grunt5::
 # 41 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_EventScript_Grunt2::
 # 42 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 # 43 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	callnative DrawMugshot
 # 44 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -95,7 +95,7 @@ Route119_WeatherInstitute_2F_EventScript_Grunt2::
 # 48 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_EventScript_Grunt3::
 # 49 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
 # 50 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	callnative DrawMugshot
 # 51 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -109,7 +109,7 @@ Route119_WeatherInstitute_2F_EventScript_Grunt3::
 # 55 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_EventScript_Shelly::
 # 56 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AQUAGRUNTF
+	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTF
 # 57 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	callnative DrawMugshot
 # 58 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"

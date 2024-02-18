@@ -43,7 +43,7 @@ CaveOfOrigin_B1F_EventScript_Wallace::
 # 22 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	waitmovement 0
 # 23 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_WALLACE
+	setvar VAR_MUGSHOT, MUGSHOT_WALLACE
 # 24 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	callnative DrawMugshot
 # 25 "data/maps/CaveOfOrigin_B1F/scripts.pory"

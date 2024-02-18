@@ -3,7 +3,7 @@ RustboroCity_Gym_MapScripts::
 	.byte 0
 
 RustboroCity_Gym_EventScript_Roxanne::
-	setvar VAR_0x8000, MUGSHOT_ROXANNE
+	setvar VAR_MUGSHOT, MUGSHOT_ROXANNE
 	callnative DrawMugshot
 	trainerbattle_single TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxanneIntro, RustboroCity_Gym_Text_RoxanneDefeat, RustboroCity_Gym_EventScript_RoxanneDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
@@ -37,7 +37,7 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 	end
 
 RustboroCity_Gym_EventScript_RoxanneRematch::
-	setvar VAR_0x8000, MUGSHOT_ROXANNE
+	setvar VAR_MUGSHOT, MUGSHOT_ROXANNE
 	callnative DrawMugshot
 	trainerbattle_rematch_double TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat, RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons
 	msgbox_mugshot RustboroCity_Gym_Text_RoxannePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_ROXANNE

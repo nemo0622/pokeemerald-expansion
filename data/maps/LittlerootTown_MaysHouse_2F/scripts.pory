@@ -85,7 +85,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayNorth::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	setvar VAR_0x8000, MUGSHOT_MAY
+	setvar VAR_MUGSHOT, MUGSHOT_MAY
 	callnative DrawMugshot
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
 	callnative ClearMugshot
@@ -100,7 +100,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMaySouth::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	setvar VAR_0x8000, MUGSHOT_MAY
+	setvar VAR_MUGSHOT, MUGSHOT_MAY
 	callnative DrawMugshot
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
 	callnative ClearMugshot
@@ -115,7 +115,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayWest::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	setvar VAR_0x8000, MUGSHOT_MAY
+	setvar VAR_MUGSHOT, MUGSHOT_MAY
 	callnative DrawMugshot
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
 	callnative ClearMugshot
@@ -129,7 +129,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayEast::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	setvar VAR_0x8000, MUGSHOT_MAY
+	setvar VAR_MUGSHOT, MUGSHOT_MAY
 	callnative DrawMugshot
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
 	callnative ClearMugshot

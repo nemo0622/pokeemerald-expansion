@@ -18,7 +18,7 @@ FortreeCity_Gym_EventScript_InitRotatingGates::
 	end
 
 FortreeCity_Gym_EventScript_Winona::
-	setvar VAR_0x8000, MUGSHOT_WINONA
+	setvar VAR_MUGSHOT, MUGSHOT_WINONA
 	callnative DrawMugshot
 	trainerbattle_single TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, FortreeCity_Gym_EventScript_WinonaDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
@@ -67,7 +67,7 @@ FortreeCity_Gym_EventScript_GiveAerialAce::
 	return
 
 FortreeCity_Gym_EventScript_WinonaRematch::
-	setvar VAR_0x8000, MUGSHOT_WINONA
+	setvar VAR_MUGSHOT, MUGSHOT_WINONA
 	callnative DrawMugshot
 	trainerbattle_rematch_double TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaPreRematch, FortreeCity_Gym_Text_WinonaRematchDefeat, FortreeCity_Gym_Text_WinonaRematchNeedTwoMons
 	msgbox_mugshot FortreeCity_Gym_Text_WinonaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WINONA

@@ -9,7 +9,7 @@ MagmaHideout_3F_2R_MapScripts::
 # 5 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 MagmaHideout_3F_2R_EventScript_Grunt10::
 # 6 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 # 7 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 	callnative DrawMugshot
 # 8 "data/maps/MagmaHideout_3F_2R/scripts.pory"

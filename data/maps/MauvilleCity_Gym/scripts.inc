@@ -153,7 +153,7 @@ MauvilleCity_Gym_EventScript_DeactivatePuzzle::
 # 77 "data/maps/MauvilleCity_Gym/scripts.pory"
 MauvilleCity_Gym_EventScript_Wattson::
 # 78 "data/maps/MauvilleCity_Gym/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_WATTSON
+	setvar VAR_MUGSHOT, MUGSHOT_WATTSON
 # 79 "data/maps/MauvilleCity_Gym/scripts.pory"
 	callnative DrawMugshot
 # 80 "data/maps/MauvilleCity_Gym/scripts.pory"
@@ -273,7 +273,7 @@ MauvilleCity_Gym_EventScript_CompletedNewMauville::
 # 137 "data/maps/MauvilleCity_Gym/scripts.pory"
 MauvilleCity_Gym_EventScript_WattsonRematch::
 # 138 "data/maps/MauvilleCity_Gym/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_WATTSON
+	setvar VAR_MUGSHOT, MUGSHOT_WATTSON
 # 139 "data/maps/MauvilleCity_Gym/scripts.pory"
 	callnative DrawMugshot
 # 140 "data/maps/MauvilleCity_Gym/scripts.pory"

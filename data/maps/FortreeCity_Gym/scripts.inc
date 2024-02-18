@@ -39,7 +39,7 @@ FortreeCity_Gym_EventScript_InitRotatingGates::
 # 20 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_EventScript_Winona::
 # 21 "data/maps/FortreeCity_Gym/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_WINONA
+	setvar VAR_MUGSHOT, MUGSHOT_WINONA
 # 22 "data/maps/FortreeCity_Gym/scripts.pory"
 	callnative DrawMugshot
 # 23 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -137,7 +137,7 @@ FortreeCity_Gym_EventScript_GiveAerialAce::
 # 69 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_EventScript_WinonaRematch::
 # 70 "data/maps/FortreeCity_Gym/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_WINONA
+	setvar VAR_MUGSHOT, MUGSHOT_WINONA
 # 71 "data/maps/FortreeCity_Gym/scripts.pory"
 	callnative DrawMugshot
 # 72 "data/maps/FortreeCity_Gym/scripts.pory"

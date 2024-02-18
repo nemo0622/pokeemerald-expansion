@@ -803,904 +803,892 @@ MtChimney_EventScript_BusyAquaGrunt3::
 # 402 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_Tabitha::
 # 403 "data/maps/MtChimney/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
-# 404 "data/maps/MtChimney/scripts.pory"
-	callnative DrawMugshot
-# 405 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_TABITHA_MT_CHIMNEY, MtChimney_Text_TabithaIntro, MtChimney_Text_TabithaDefeat
-# 406 "data/maps/MtChimney/scripts.pory"
+# 404 "data/maps/MtChimney/scripts.pory"
 	msgbox_mugshot MtChimney_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
-# 407 "data/maps/MtChimney/scripts.pory"
+# 405 "data/maps/MtChimney/scripts.pory"
 	end
-# 408 "data/maps/MtChimney/scripts.pory"
+# 406 "data/maps/MtChimney/scripts.pory"
 
-# 409 "data/maps/MtChimney/scripts.pory"
+# 407 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_Grunt2::
-# 410 "data/maps/MtChimney/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
-# 411 "data/maps/MtChimney/scripts.pory"
-	callnative DrawMugshot
-# 412 "data/maps/MtChimney/scripts.pory"
+# 408 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_GRUNT_MT_CHIMNEY_2, MtChimney_Text_Grunt2Intro, MtChimney_Text_Grunt2Defeat
-# 413 "data/maps/MtChimney/scripts.pory"
+# 409 "data/maps/MtChimney/scripts.pory"
 	msgbox_mugshot MtChimney_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
+# 410 "data/maps/MtChimney/scripts.pory"
+	end
+# 411 "data/maps/MtChimney/scripts.pory"
+
+# 412 "data/maps/MtChimney/scripts.pory"
+MtChimney_EventScript_BusyMagmaGrunt1::
+# 413 "data/maps/MtChimney/scripts.pory"
+	msgbox_mugshot MtChimney_Text_TeamAquaAlwaysMessingWithPlans, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 # 414 "data/maps/MtChimney/scripts.pory"
 	end
 # 415 "data/maps/MtChimney/scripts.pory"
 
 # 416 "data/maps/MtChimney/scripts.pory"
-MtChimney_EventScript_BusyMagmaGrunt1::
+MtChimney_EventScript_BusyMagmaGrunt2::
 # 417 "data/maps/MtChimney/scripts.pory"
-	msgbox_mugshot MtChimney_Text_TeamAquaAlwaysMessingWithPlans, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
+	msgbox_mugshot MtChimney_Text_MeteoritesPackAmazingPower, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 # 418 "data/maps/MtChimney/scripts.pory"
 	end
 # 419 "data/maps/MtChimney/scripts.pory"
 
 # 420 "data/maps/MtChimney/scripts.pory"
-MtChimney_EventScript_BusyMagmaGrunt2::
+MtChimney_EventScript_BusyMagmaGrunt3::
 # 421 "data/maps/MtChimney/scripts.pory"
-	msgbox_mugshot MtChimney_Text_MeteoritesPackAmazingPower, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
+	msgbox_mugshot MtChimney_Text_YouBetterNotMessWithUs, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 # 422 "data/maps/MtChimney/scripts.pory"
 	end
 # 423 "data/maps/MtChimney/scripts.pory"
 
 # 424 "data/maps/MtChimney/scripts.pory"
-MtChimney_EventScript_BusyMagmaGrunt3::
+MtChimney_EventScript_BusyMagmaGrunt4::
 # 425 "data/maps/MtChimney/scripts.pory"
-	msgbox_mugshot MtChimney_Text_YouBetterNotMessWithUs, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
+	msgbox_mugshot MtChimney_Text_AquasNameSimilar, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 # 426 "data/maps/MtChimney/scripts.pory"
 	end
 # 427 "data/maps/MtChimney/scripts.pory"
 
 # 428 "data/maps/MtChimney/scripts.pory"
-MtChimney_EventScript_BusyMagmaGrunt4::
+MtChimney_EventScript_BusyMagmaGrunt5::
 # 429 "data/maps/MtChimney/scripts.pory"
-	msgbox_mugshot MtChimney_Text_AquasNameSimilar, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
+	msgbox_mugshot MtChimney_Text_DouseThemInFire, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 # 430 "data/maps/MtChimney/scripts.pory"
 	end
 # 431 "data/maps/MtChimney/scripts.pory"
 
 # 432 "data/maps/MtChimney/scripts.pory"
-MtChimney_EventScript_BusyMagmaGrunt5::
+MtChimney_EventScript_BusyMagmaGrunt6::
 # 433 "data/maps/MtChimney/scripts.pory"
-	msgbox_mugshot MtChimney_Text_DouseThemInFire, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
+	msgbox_mugshot MtChimney_Text_KeepMakingMoreLand, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
 # 434 "data/maps/MtChimney/scripts.pory"
 	end
 # 435 "data/maps/MtChimney/scripts.pory"
 
 # 436 "data/maps/MtChimney/scripts.pory"
-MtChimney_EventScript_BusyMagmaGrunt6::
+MtChimney_EventScript_MagmaPoochyena::
 # 437 "data/maps/MtChimney/scripts.pory"
-	msgbox_mugshot MtChimney_Text_KeepMakingMoreLand, MSGBOX_SIGN, MUGSHOT_MAGMAGRUNTM
+	msgbox MtChimney_Text_Bufoh, MSGBOX_SIGN
 # 438 "data/maps/MtChimney/scripts.pory"
 	end
 # 439 "data/maps/MtChimney/scripts.pory"
 
 # 440 "data/maps/MtChimney/scripts.pory"
-MtChimney_EventScript_MagmaPoochyena::
+MtChimney_EventScript_AquaPoochyena::
 # 441 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_Bufoh, MSGBOX_SIGN
+	msgbox MtChimney_Text_Bushaa, MSGBOX_SIGN
 # 442 "data/maps/MtChimney/scripts.pory"
 	end
 # 443 "data/maps/MtChimney/scripts.pory"
 
 # 444 "data/maps/MtChimney/scripts.pory"
-MtChimney_EventScript_AquaPoochyena::
-# 445 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_Bushaa, MSGBOX_SIGN
-# 446 "data/maps/MtChimney/scripts.pory"
-	end
-# 447 "data/maps/MtChimney/scripts.pory"
-
-# 448 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_MeteoriteMachine::
-# 449 "data/maps/MtChimney/scripts.pory"
+# 445 "data/maps/MtChimney/scripts.pory"
 	lockall
-# 450 "data/maps/MtChimney/scripts.pory"
+# 446 "data/maps/MtChimney/scripts.pory"
 	goto_if_unset FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, MtChimney_EventScript_MachineOn
-# 451 "data/maps/MtChimney/scripts.pory"
+# 447 "data/maps/MtChimney/scripts.pory"
 	goto_if_set FLAG_RECEIVED_METEORITE, MtChimney_EventScript_MachineOff
-# 452 "data/maps/MtChimney/scripts.pory"
+# 448 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_RemoveTheMeteorite, MSGBOX_YESNO
-# 453 "data/maps/MtChimney/scripts.pory"
+# 449 "data/maps/MtChimney/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MtChimney_EventScript_LeaveMeteoriteAlone
-# 454 "data/maps/MtChimney/scripts.pory"
+# 450 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_PlayerRemovedMeteorite, MSGBOX_DEFAULT
-# 455 "data/maps/MtChimney/scripts.pory"
+# 451 "data/maps/MtChimney/scripts.pory"
 	giveitem ITEM_METEORITE
-# 456 "data/maps/MtChimney/scripts.pory"
+# 452 "data/maps/MtChimney/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-# 457 "data/maps/MtChimney/scripts.pory"
+# 453 "data/maps/MtChimney/scripts.pory"
 	setflag FLAG_RECEIVED_METEORITE
-# 458 "data/maps/MtChimney/scripts.pory"
+# 454 "data/maps/MtChimney/scripts.pory"
 	releaseall
-# 459 "data/maps/MtChimney/scripts.pory"
+# 455 "data/maps/MtChimney/scripts.pory"
 	end
-# 460 "data/maps/MtChimney/scripts.pory"
+# 456 "data/maps/MtChimney/scripts.pory"
 
-# 461 "data/maps/MtChimney/scripts.pory"
+# 457 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_LeaveMeteoriteAlone::
-# 462 "data/maps/MtChimney/scripts.pory"
+# 458 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_PlayerLeftMeteorite, MSGBOX_DEFAULT
-# 463 "data/maps/MtChimney/scripts.pory"
+# 459 "data/maps/MtChimney/scripts.pory"
 	releaseall
-# 464 "data/maps/MtChimney/scripts.pory"
+# 460 "data/maps/MtChimney/scripts.pory"
 	end
-# 465 "data/maps/MtChimney/scripts.pory"
+# 461 "data/maps/MtChimney/scripts.pory"
 
-# 466 "data/maps/MtChimney/scripts.pory"
+# 462 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_MachineOff::
-# 467 "data/maps/MtChimney/scripts.pory"
+# 463 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_MachineMakesNoResponse, MSGBOX_DEFAULT
-# 468 "data/maps/MtChimney/scripts.pory"
+# 464 "data/maps/MtChimney/scripts.pory"
 	releaseall
-# 469 "data/maps/MtChimney/scripts.pory"
+# 465 "data/maps/MtChimney/scripts.pory"
 	end
-# 470 "data/maps/MtChimney/scripts.pory"
+# 466 "data/maps/MtChimney/scripts.pory"
 
-# 471 "data/maps/MtChimney/scripts.pory"
+# 467 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_MachineOn::
-# 472 "data/maps/MtChimney/scripts.pory"
+# 468 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_MetoriteFittedOnMachine, MSGBOX_DEFAULT
-# 473 "data/maps/MtChimney/scripts.pory"
+# 469 "data/maps/MtChimney/scripts.pory"
 	releaseall
+# 470 "data/maps/MtChimney/scripts.pory"
+	end
+# 471 "data/maps/MtChimney/scripts.pory"
+
+# 472 "data/maps/MtChimney/scripts.pory"
+MtChimney_EventScript_RouteSign::
+# 473 "data/maps/MtChimney/scripts.pory"
+	msgbox MtChimney_Text_RouteSign, MSGBOX_SIGN
 # 474 "data/maps/MtChimney/scripts.pory"
 	end
 # 475 "data/maps/MtChimney/scripts.pory"
 
 # 476 "data/maps/MtChimney/scripts.pory"
-MtChimney_EventScript_RouteSign::
-# 477 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_RouteSign, MSGBOX_SIGN
-# 478 "data/maps/MtChimney/scripts.pory"
-	end
-# 479 "data/maps/MtChimney/scripts.pory"
-
-# 480 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_Shelby::
-# 481 "data/maps/MtChimney/scripts.pory"
+# 477 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_SHELBY_1, MtChimney_Text_ShelbyIntro, MtChimney_Text_ShelbyDefeat, MtChimney_EventScript_DefeatedShelby
-# 482 "data/maps/MtChimney/scripts.pory"
+# 478 "data/maps/MtChimney/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 483 "data/maps/MtChimney/scripts.pory"
+# 479 "data/maps/MtChimney/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, MtChimney_EventScript_RematchShelby
-# 484 "data/maps/MtChimney/scripts.pory"
+# 480 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_ShelbyPostBattle, MSGBOX_DEFAULT
-# 485 "data/maps/MtChimney/scripts.pory"
+# 481 "data/maps/MtChimney/scripts.pory"
 	release
-# 486 "data/maps/MtChimney/scripts.pory"
+# 482 "data/maps/MtChimney/scripts.pory"
 	end
-# 487 "data/maps/MtChimney/scripts.pory"
+# 483 "data/maps/MtChimney/scripts.pory"
 
-# 488 "data/maps/MtChimney/scripts.pory"
+# 484 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_DefeatedShelby::
-# 489 "data/maps/MtChimney/scripts.pory"
+# 485 "data/maps/MtChimney/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
-# 490 "data/maps/MtChimney/scripts.pory"
+# 486 "data/maps/MtChimney/scripts.pory"
 	waitmovement 0
-# 491 "data/maps/MtChimney/scripts.pory"
+# 487 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_ShelbyRegister, MSGBOX_DEFAULT
-# 492 "data/maps/MtChimney/scripts.pory"
+# 488 "data/maps/MtChimney/scripts.pory"
 	register_matchcall TRAINER_SHELBY_1
-# 493 "data/maps/MtChimney/scripts.pory"
+# 489 "data/maps/MtChimney/scripts.pory"
 	release
-# 494 "data/maps/MtChimney/scripts.pory"
+# 490 "data/maps/MtChimney/scripts.pory"
 	end
-# 495 "data/maps/MtChimney/scripts.pory"
+# 491 "data/maps/MtChimney/scripts.pory"
 
-# 496 "data/maps/MtChimney/scripts.pory"
+# 492 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_RematchShelby::
-# 497 "data/maps/MtChimney/scripts.pory"
+# 493 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_rematch TRAINER_SHELBY_1, MtChimney_Text_ShelbyRematchIntro, MtChimney_Text_ShelbyRematchDefeat
-# 498 "data/maps/MtChimney/scripts.pory"
+# 494 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_ShelbyPostRematch, MSGBOX_AUTOCLOSE
-# 499 "data/maps/MtChimney/scripts.pory"
+# 495 "data/maps/MtChimney/scripts.pory"
 	end
-# 500 "data/maps/MtChimney/scripts.pory"
+# 496 "data/maps/MtChimney/scripts.pory"
 
-# 501 "data/maps/MtChimney/scripts.pory"
+# 497 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_Melissa::
-# 502 "data/maps/MtChimney/scripts.pory"
+# 498 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_MELISSA, MtChimney_Text_MelissaIntro, MtChimney_Text_MelissaDefeat
-# 503 "data/maps/MtChimney/scripts.pory"
+# 499 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_MelissaPostBattle, MSGBOX_AUTOCLOSE
-# 504 "data/maps/MtChimney/scripts.pory"
+# 500 "data/maps/MtChimney/scripts.pory"
 	end
-# 505 "data/maps/MtChimney/scripts.pory"
+# 501 "data/maps/MtChimney/scripts.pory"
 
-# 506 "data/maps/MtChimney/scripts.pory"
+# 502 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_Sheila::
-# 507 "data/maps/MtChimney/scripts.pory"
+# 503 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_SHEILA, MtChimney_Text_SheilaIntro, MtChimney_Text_SheilaDefeat
-# 508 "data/maps/MtChimney/scripts.pory"
+# 504 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_SheilaPostBattle, MSGBOX_AUTOCLOSE
-# 509 "data/maps/MtChimney/scripts.pory"
+# 505 "data/maps/MtChimney/scripts.pory"
 	end
-# 510 "data/maps/MtChimney/scripts.pory"
+# 506 "data/maps/MtChimney/scripts.pory"
 
-# 511 "data/maps/MtChimney/scripts.pory"
+# 507 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_Shirley::
-# 512 "data/maps/MtChimney/scripts.pory"
+# 508 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_SHIRLEY, MtChimney_Text_ShirleyIntro, MtChimney_Text_ShirleyDefeat
-# 513 "data/maps/MtChimney/scripts.pory"
+# 509 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_ShirleyPostBattle, MSGBOX_AUTOCLOSE
-# 514 "data/maps/MtChimney/scripts.pory"
+# 510 "data/maps/MtChimney/scripts.pory"
 	end
-# 515 "data/maps/MtChimney/scripts.pory"
+# 511 "data/maps/MtChimney/scripts.pory"
 
-# 516 "data/maps/MtChimney/scripts.pory"
+# 512 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_Grunt1::
-# 517 "data/maps/MtChimney/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTF
-# 518 "data/maps/MtChimney/scripts.pory"
-	callnative DrawMugshot
-# 519 "data/maps/MtChimney/scripts.pory"
+# 513 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_GRUNT_MT_CHIMNEY_1, MtChimney_Text_Grunt1Intro, MtChimney_Text_Grunt1Defeat
-# 520 "data/maps/MtChimney/scripts.pory"
+# 514 "data/maps/MtChimney/scripts.pory"
 	msgbox_mugshot MtChimney_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTF
-# 521 "data/maps/MtChimney/scripts.pory"
+# 515 "data/maps/MtChimney/scripts.pory"
 	end
-# 522 "data/maps/MtChimney/scripts.pory"
+# 516 "data/maps/MtChimney/scripts.pory"
 
-# 523 "data/maps/MtChimney/scripts.pory"
+# 517 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_Sawyer::
-# 524 "data/maps/MtChimney/scripts.pory"
+# 518 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_SAWYER_1, MtChimney_Text_SawyerIntro, MtChimney_Text_SawyerDefeat, MtChimney_EventScript_SawyerDefeated
-# 525 "data/maps/MtChimney/scripts.pory"
+# 519 "data/maps/MtChimney/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 526 "data/maps/MtChimney/scripts.pory"
+# 520 "data/maps/MtChimney/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, MtChimney_EventScript_SawyerRematch
-# 527 "data/maps/MtChimney/scripts.pory"
+# 521 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_SawyerPostBattle, MSGBOX_DEFAULT
-# 528 "data/maps/MtChimney/scripts.pory"
+# 522 "data/maps/MtChimney/scripts.pory"
 	release
-# 529 "data/maps/MtChimney/scripts.pory"
+# 523 "data/maps/MtChimney/scripts.pory"
 	end
-# 530 "data/maps/MtChimney/scripts.pory"
+# 524 "data/maps/MtChimney/scripts.pory"
 
-# 531 "data/maps/MtChimney/scripts.pory"
+# 525 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_SawyerDefeated::
-# 532 "data/maps/MtChimney/scripts.pory"
+# 526 "data/maps/MtChimney/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
-# 533 "data/maps/MtChimney/scripts.pory"
+# 527 "data/maps/MtChimney/scripts.pory"
 	waitmovement 0
-# 534 "data/maps/MtChimney/scripts.pory"
+# 528 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_SawyerRegister, MSGBOX_DEFAULT
-# 535 "data/maps/MtChimney/scripts.pory"
+# 529 "data/maps/MtChimney/scripts.pory"
 	register_matchcall TRAINER_SAWYER_1
-# 536 "data/maps/MtChimney/scripts.pory"
+# 530 "data/maps/MtChimney/scripts.pory"
 	release
-# 537 "data/maps/MtChimney/scripts.pory"
+# 531 "data/maps/MtChimney/scripts.pory"
 	end
-# 538 "data/maps/MtChimney/scripts.pory"
+# 532 "data/maps/MtChimney/scripts.pory"
 
-# 539 "data/maps/MtChimney/scripts.pory"
+# 533 "data/maps/MtChimney/scripts.pory"
 MtChimney_EventScript_SawyerRematch::
-# 540 "data/maps/MtChimney/scripts.pory"
+# 534 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_rematch TRAINER_SAWYER_1, MtChimney_Text_SawyerRematchIntro, MtChimney_Text_SawyerRematchDefeat
-# 541 "data/maps/MtChimney/scripts.pory"
+# 535 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_SawyerPostRematch, MSGBOX_AUTOCLOSE
-# 542 "data/maps/MtChimney/scripts.pory"
+# 536 "data/maps/MtChimney/scripts.pory"
 	end
-# 543 "data/maps/MtChimney/scripts.pory"
+# 537 "data/maps/MtChimney/scripts.pory"
 
-# 544 "data/maps/MtChimney/scripts.pory"
+# 538 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MeteoriteWillActivateVolcano:
-# 545 "data/maps/MtChimney/scripts.pory"
+# 539 "data/maps/MtChimney/scripts.pory"
 	.string "The power contained in the METEORITE…\p"
-# 546 "data/maps/MtChimney/scripts.pory"
+# 540 "data/maps/MtChimney/scripts.pory"
 	.string "By amplifying its power with this\n"
-# 547 "data/maps/MtChimney/scripts.pory"
+# 541 "data/maps/MtChimney/scripts.pory"
 	.string "machine, MT. CHIMNEY's volcanic\l"
-# 548 "data/maps/MtChimney/scripts.pory"
+# 542 "data/maps/MtChimney/scripts.pory"
 	.string "activity will instantly intensify…\p"
-# 549 "data/maps/MtChimney/scripts.pory"
+# 543 "data/maps/MtChimney/scripts.pory"
 	.string "Its energy will grow deep inside\n"
-# 550 "data/maps/MtChimney/scripts.pory"
+# 544 "data/maps/MtChimney/scripts.pory"
 	.string "the crater and…\l"
-# 551 "data/maps/MtChimney/scripts.pory"
+# 545 "data/maps/MtChimney/scripts.pory"
 	.string "Fufufu…$"
-# 552 "data/maps/MtChimney/scripts.pory"
+# 546 "data/maps/MtChimney/scripts.pory"
 
-# 553 "data/maps/MtChimney/scripts.pory"
+# 547 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MaxieIntro:
-# 554 "data/maps/MtChimney/scripts.pory"
+# 548 "data/maps/MtChimney/scripts.pory"
 	.string "MAXIE: Hm?\n"
-# 555 "data/maps/MtChimney/scripts.pory"
+# 549 "data/maps/MtChimney/scripts.pory"
 	.string "Who are you?\p"
-# 556 "data/maps/MtChimney/scripts.pory"
+# 550 "data/maps/MtChimney/scripts.pory"
 	.string "… … … … … …\n"
-# 557 "data/maps/MtChimney/scripts.pory"
+# 551 "data/maps/MtChimney/scripts.pory"
 	.string "… … … … … …\p"
-# 558 "data/maps/MtChimney/scripts.pory"
+# 552 "data/maps/MtChimney/scripts.pory"
 	.string "I'd heard ARCHIE bemoaning a child\n"
-# 559 "data/maps/MtChimney/scripts.pory"
+# 553 "data/maps/MtChimney/scripts.pory"
 	.string "who's been meddling in TEAM AQUA's\l"
-# 560 "data/maps/MtChimney/scripts.pory"
+# 554 "data/maps/MtChimney/scripts.pory"
 	.string "affairs.\p"
-# 561 "data/maps/MtChimney/scripts.pory"
+# 555 "data/maps/MtChimney/scripts.pory"
 	.string "It must be you he meant.\p"
-# 562 "data/maps/MtChimney/scripts.pory"
+# 556 "data/maps/MtChimney/scripts.pory"
 	.string "Humph! So you're thinking of\n"
-# 563 "data/maps/MtChimney/scripts.pory"
+# 557 "data/maps/MtChimney/scripts.pory"
 	.string "interfering with us, TEAM MAGMA?\p"
-# 564 "data/maps/MtChimney/scripts.pory"
+# 558 "data/maps/MtChimney/scripts.pory"
 	.string "Now you listen.\n"
-# 565 "data/maps/MtChimney/scripts.pory"
+# 559 "data/maps/MtChimney/scripts.pory"
 	.string "Long ago, living things used the\l"
-# 566 "data/maps/MtChimney/scripts.pory"
+# 560 "data/maps/MtChimney/scripts.pory"
 	.string "land to live and grow.\p"
-# 567 "data/maps/MtChimney/scripts.pory"
+# 561 "data/maps/MtChimney/scripts.pory"
 	.string "That is why land is all important!\n"
-# 568 "data/maps/MtChimney/scripts.pory"
+# 562 "data/maps/MtChimney/scripts.pory"
 	.string "It is the cradle of all!\p"
-# 569 "data/maps/MtChimney/scripts.pory"
+# 563 "data/maps/MtChimney/scripts.pory"
 	.string "That is why TEAM MAGMA is dedicated\n"
-# 570 "data/maps/MtChimney/scripts.pory"
+# 564 "data/maps/MtChimney/scripts.pory"
 	.string "to the expansion of the land mass.\p"
-# 571 "data/maps/MtChimney/scripts.pory"
+# 565 "data/maps/MtChimney/scripts.pory"
 	.string "It is for further advancement of\n"
-# 572 "data/maps/MtChimney/scripts.pory"
+# 566 "data/maps/MtChimney/scripts.pory"
 	.string "humankind and POKéMON!\p"
-# 573 "data/maps/MtChimney/scripts.pory"
+# 567 "data/maps/MtChimney/scripts.pory"
 	.string "And for that, we need the power of\n"
-# 574 "data/maps/MtChimney/scripts.pory"
+# 568 "data/maps/MtChimney/scripts.pory"
 	.string "what sleeps within this mountain…\p"
-# 575 "data/maps/MtChimney/scripts.pory"
+# 569 "data/maps/MtChimney/scripts.pory"
 	.string "Oh! There was no need for you to\n"
-# 576 "data/maps/MtChimney/scripts.pory"
+# 570 "data/maps/MtChimney/scripts.pory"
 	.string "learn that much.\p"
-# 577 "data/maps/MtChimney/scripts.pory"
+# 571 "data/maps/MtChimney/scripts.pory"
 	.string "But, no matter!\n"
-# 578 "data/maps/MtChimney/scripts.pory"
+# 572 "data/maps/MtChimney/scripts.pory"
 	.string "I'll teach you the consequences of\l"
-# 579 "data/maps/MtChimney/scripts.pory"
+# 573 "data/maps/MtChimney/scripts.pory"
 	.string "meddling in our grand design!$"
-# 580 "data/maps/MtChimney/scripts.pory"
+# 574 "data/maps/MtChimney/scripts.pory"
 
-# 581 "data/maps/MtChimney/scripts.pory"
+# 575 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MaxieDefeat:
-# 582 "data/maps/MtChimney/scripts.pory"
+# 576 "data/maps/MtChimney/scripts.pory"
 	.string "What?!\p"
-# 583 "data/maps/MtChimney/scripts.pory"
+# 577 "data/maps/MtChimney/scripts.pory"
 	.string "I, MAXIE, was caught off guard?!$"
-# 584 "data/maps/MtChimney/scripts.pory"
+# 578 "data/maps/MtChimney/scripts.pory"
 
-# 585 "data/maps/MtChimney/scripts.pory"
+# 579 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
-# 586 "data/maps/MtChimney/scripts.pory"
+# 580 "data/maps/MtChimney/scripts.pory"
 	.string "MAXIE: But, enough.\n"
-# 587 "data/maps/MtChimney/scripts.pory"
+# 581 "data/maps/MtChimney/scripts.pory"
 	.string "I will back off this time.\p"
-# 588 "data/maps/MtChimney/scripts.pory"
+# 582 "data/maps/MtChimney/scripts.pory"
 	.string "But don't think that this is the last\n"
-# 589 "data/maps/MtChimney/scripts.pory"
+# 583 "data/maps/MtChimney/scripts.pory"
 	.string "you've seen of TEAM MAGMA.\p"
-# 590 "data/maps/MtChimney/scripts.pory"
+# 584 "data/maps/MtChimney/scripts.pory"
 	.string "Fufufu…\p"
-# 591 "data/maps/MtChimney/scripts.pory"
+# 585 "data/maps/MtChimney/scripts.pory"
 	.string "Even without the METEORITE, if we\n"
-# 592 "data/maps/MtChimney/scripts.pory"
+# 586 "data/maps/MtChimney/scripts.pory"
 	.string "obtain that ORB… Fufufu…$"
-# 593 "data/maps/MtChimney/scripts.pory"
+# 587 "data/maps/MtChimney/scripts.pory"
 
-# 594 "data/maps/MtChimney/scripts.pory"
+# 588 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_TabithaIntro:
-# 595 "data/maps/MtChimney/scripts.pory"
+# 589 "data/maps/MtChimney/scripts.pory"
 	.string "Hehehe!\p"
-# 596 "data/maps/MtChimney/scripts.pory"
+# 590 "data/maps/MtChimney/scripts.pory"
 	.string "So you've come all the way here!\p"
-# 597 "data/maps/MtChimney/scripts.pory"
+# 591 "data/maps/MtChimney/scripts.pory"
 	.string "But you're too late!\n"
-# 598 "data/maps/MtChimney/scripts.pory"
+# 592 "data/maps/MtChimney/scripts.pory"
 	.string "I've already delivered the METEORITE\l"
-# 599 "data/maps/MtChimney/scripts.pory"
+# 593 "data/maps/MtChimney/scripts.pory"
 	.string "from METEOR FALLS to the BOSS!$"
-# 600 "data/maps/MtChimney/scripts.pory"
+# 594 "data/maps/MtChimney/scripts.pory"
 
-# 601 "data/maps/MtChimney/scripts.pory"
+# 595 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_TabithaDefeat:
-# 602 "data/maps/MtChimney/scripts.pory"
+# 596 "data/maps/MtChimney/scripts.pory"
 	.string "Hehehe…\p"
-# 603 "data/maps/MtChimney/scripts.pory"
+# 597 "data/maps/MtChimney/scripts.pory"
 	.string "Even though I've lost, if our leader\n"
-# 604 "data/maps/MtChimney/scripts.pory"
+# 598 "data/maps/MtChimney/scripts.pory"
 	.string "awakens that thing…$"
-# 605 "data/maps/MtChimney/scripts.pory"
+# 599 "data/maps/MtChimney/scripts.pory"
 
-# 606 "data/maps/MtChimney/scripts.pory"
+# 600 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_TabithaPostBattle:
-# 607 "data/maps/MtChimney/scripts.pory"
+# 601 "data/maps/MtChimney/scripts.pory"
 	.string "BOSS, hurry!\n"
-# 608 "data/maps/MtChimney/scripts.pory"
+# 602 "data/maps/MtChimney/scripts.pory"
 	.string "Give it the METEORITE's energy!\p"
-# 609 "data/maps/MtChimney/scripts.pory"
+# 603 "data/maps/MtChimney/scripts.pory"
 	.string "Hehehe…$"
-# 610 "data/maps/MtChimney/scripts.pory"
+# 604 "data/maps/MtChimney/scripts.pory"
 
-# 611 "data/maps/MtChimney/scripts.pory"
+# 605 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_Grunt2Intro:
-# 612 "data/maps/MtChimney/scripts.pory"
+# 606 "data/maps/MtChimney/scripts.pory"
 	.string "We of TEAM MAGMA are working hard for\n"
-# 613 "data/maps/MtChimney/scripts.pory"
+# 607 "data/maps/MtChimney/scripts.pory"
 	.string "everyone's sake.\p"
-# 614 "data/maps/MtChimney/scripts.pory"
+# 608 "data/maps/MtChimney/scripts.pory"
 	.string "Like, if that thing's power made more\n"
-# 615 "data/maps/MtChimney/scripts.pory"
+# 609 "data/maps/MtChimney/scripts.pory"
 	.string "land, there'd be more places to live.\p"
-# 616 "data/maps/MtChimney/scripts.pory"
+# 610 "data/maps/MtChimney/scripts.pory"
 	.string "Everyone'd be happy!$"
-# 617 "data/maps/MtChimney/scripts.pory"
+# 611 "data/maps/MtChimney/scripts.pory"
 
-# 618 "data/maps/MtChimney/scripts.pory"
+# 612 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_Grunt2Defeat:
-# 619 "data/maps/MtChimney/scripts.pory"
+# 613 "data/maps/MtChimney/scripts.pory"
 	.string "Hunh?\n"
-# 620 "data/maps/MtChimney/scripts.pory"
+# 614 "data/maps/MtChimney/scripts.pory"
 	.string "What do you mean I lost?$"
+# 615 "data/maps/MtChimney/scripts.pory"
+
+# 616 "data/maps/MtChimney/scripts.pory"
+MtChimney_Text_Grunt2PostBattle:
+# 617 "data/maps/MtChimney/scripts.pory"
+	.string "Our BOSS says, “It will make everyone\n"
+# 618 "data/maps/MtChimney/scripts.pory"
+	.string "happy.”\p"
+# 619 "data/maps/MtChimney/scripts.pory"
+	.string "But why does everyone keep getting\n"
+# 620 "data/maps/MtChimney/scripts.pory"
+	.string "in our way?$"
 # 621 "data/maps/MtChimney/scripts.pory"
 
 # 622 "data/maps/MtChimney/scripts.pory"
-MtChimney_Text_Grunt2PostBattle:
-# 623 "data/maps/MtChimney/scripts.pory"
-	.string "Our BOSS says, “It will make everyone\n"
-# 624 "data/maps/MtChimney/scripts.pory"
-	.string "happy.”\p"
-# 625 "data/maps/MtChimney/scripts.pory"
-	.string "But why does everyone keep getting\n"
-# 626 "data/maps/MtChimney/scripts.pory"
-	.string "in our way?$"
-# 627 "data/maps/MtChimney/scripts.pory"
-
-# 628 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_Grunt1Intro:
-# 629 "data/maps/MtChimney/scripts.pory"
+# 623 "data/maps/MtChimney/scripts.pory"
 	.string "If there were more land, I'd be able\n"
-# 630 "data/maps/MtChimney/scripts.pory"
+# 624 "data/maps/MtChimney/scripts.pory"
 	.string "to get a big house of my own!\p"
-# 631 "data/maps/MtChimney/scripts.pory"
+# 625 "data/maps/MtChimney/scripts.pory"
 	.string "I'm going to build it on hardened lava!$"
-# 632 "data/maps/MtChimney/scripts.pory"
+# 626 "data/maps/MtChimney/scripts.pory"
 
-# 633 "data/maps/MtChimney/scripts.pory"
+# 627 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_Grunt1Defeat:
-# 634 "data/maps/MtChimney/scripts.pory"
+# 628 "data/maps/MtChimney/scripts.pory"
 	.string "My dream of a big house…$"
-# 635 "data/maps/MtChimney/scripts.pory"
+# 629 "data/maps/MtChimney/scripts.pory"
 
-# 636 "data/maps/MtChimney/scripts.pory"
+# 630 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_Grunt1PostBattle:
-# 637 "data/maps/MtChimney/scripts.pory"
+# 631 "data/maps/MtChimney/scripts.pory"
 	.string "A kid like you, you ought to be\n"
-# 638 "data/maps/MtChimney/scripts.pory"
+# 632 "data/maps/MtChimney/scripts.pory"
 	.string "splashing about in the waves!$"
-# 639 "data/maps/MtChimney/scripts.pory"
+# 633 "data/maps/MtChimney/scripts.pory"
 
-# 640 "data/maps/MtChimney/scripts.pory"
+# 634 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_TeamAquaAlwaysMessingWithPlans:
-# 641 "data/maps/MtChimney/scripts.pory"
+# 635 "data/maps/MtChimney/scripts.pory"
 	.string "That annoying TEAM AQUA…\n"
-# 642 "data/maps/MtChimney/scripts.pory"
+# 636 "data/maps/MtChimney/scripts.pory"
 	.string "They always mess with our plans!$"
-# 643 "data/maps/MtChimney/scripts.pory"
+# 637 "data/maps/MtChimney/scripts.pory"
 
-# 644 "data/maps/MtChimney/scripts.pory"
+# 638 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MeteoritesPackAmazingPower:
-# 645 "data/maps/MtChimney/scripts.pory"
+# 639 "data/maps/MtChimney/scripts.pory"
 	.string "METEORITES pack amazing power!$"
-# 646 "data/maps/MtChimney/scripts.pory"
+# 640 "data/maps/MtChimney/scripts.pory"
 
-# 647 "data/maps/MtChimney/scripts.pory"
+# 641 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_YouBetterNotMessWithUs:
-# 648 "data/maps/MtChimney/scripts.pory"
+# 642 "data/maps/MtChimney/scripts.pory"
 	.string "You'd better not mess with us!\p"
-# 649 "data/maps/MtChimney/scripts.pory"
+# 643 "data/maps/MtChimney/scripts.pory"
 	.string "We're trying to awaken that thing\n"
-# 650 "data/maps/MtChimney/scripts.pory"
+# 644 "data/maps/MtChimney/scripts.pory"
 	.string "for the benefit of everyone!$"
+# 645 "data/maps/MtChimney/scripts.pory"
+
+# 646 "data/maps/MtChimney/scripts.pory"
+MtChimney_Text_AquasNameSimilar:
+# 647 "data/maps/MtChimney/scripts.pory"
+	.string "We're TEAM MAGMA!\p"
+# 648 "data/maps/MtChimney/scripts.pory"
+	.string "They're TEAM AQUA!\p"
+# 649 "data/maps/MtChimney/scripts.pory"
+	.string "It totally annoys me that they'd\n"
+# 650 "data/maps/MtChimney/scripts.pory"
+	.string "use a name like ours!$"
 # 651 "data/maps/MtChimney/scripts.pory"
 
 # 652 "data/maps/MtChimney/scripts.pory"
-MtChimney_Text_AquasNameSimilar:
-# 653 "data/maps/MtChimney/scripts.pory"
-	.string "We're TEAM MAGMA!\p"
-# 654 "data/maps/MtChimney/scripts.pory"
-	.string "They're TEAM AQUA!\p"
-# 655 "data/maps/MtChimney/scripts.pory"
-	.string "It totally annoys me that they'd\n"
-# 656 "data/maps/MtChimney/scripts.pory"
-	.string "use a name like ours!$"
-# 657 "data/maps/MtChimney/scripts.pory"
-
-# 658 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_DouseThemInFire:
-# 659 "data/maps/MtChimney/scripts.pory"
+# 653 "data/maps/MtChimney/scripts.pory"
 	.string "Yeah!\n"
-# 660 "data/maps/MtChimney/scripts.pory"
+# 654 "data/maps/MtChimney/scripts.pory"
 	.string "Douse them in fire!$"
+# 655 "data/maps/MtChimney/scripts.pory"
+
+# 656 "data/maps/MtChimney/scripts.pory"
+MtChimney_Text_KeepMakingMoreLand:
+# 657 "data/maps/MtChimney/scripts.pory"
+	.string "We're going to keep making more land!$"
+# 658 "data/maps/MtChimney/scripts.pory"
+
+# 659 "data/maps/MtChimney/scripts.pory"
+MtChimney_Text_Bufoh:
+# 660 "data/maps/MtChimney/scripts.pory"
+	.string "Bufoh!$"
 # 661 "data/maps/MtChimney/scripts.pory"
 
 # 662 "data/maps/MtChimney/scripts.pory"
-MtChimney_Text_KeepMakingMoreLand:
-# 663 "data/maps/MtChimney/scripts.pory"
-	.string "We're going to keep making more land!$"
-# 664 "data/maps/MtChimney/scripts.pory"
-
-# 665 "data/maps/MtChimney/scripts.pory"
-MtChimney_Text_Bufoh:
-# 666 "data/maps/MtChimney/scripts.pory"
-	.string "Bufoh!$"
-# 667 "data/maps/MtChimney/scripts.pory"
-
-# 668 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ArchieGoStopTeamMagma:
-# 669 "data/maps/MtChimney/scripts.pory"
+# 663 "data/maps/MtChimney/scripts.pory"
 	.string "ARCHIE: Grr, {PLAYER}!\n"
-# 670 "data/maps/MtChimney/scripts.pory"
+# 664 "data/maps/MtChimney/scripts.pory"
 	.string "I should've guessed you'd show up!\p"
-# 671 "data/maps/MtChimney/scripts.pory"
+# 665 "data/maps/MtChimney/scripts.pory"
 	.string "See for yourself what the fanatics\n"
-# 672 "data/maps/MtChimney/scripts.pory"
+# 666 "data/maps/MtChimney/scripts.pory"
 	.string "of TEAM MAGMA are up to!\p"
-# 673 "data/maps/MtChimney/scripts.pory"
+# 667 "data/maps/MtChimney/scripts.pory"
 	.string "They're trying to inject the stolen\n"
-# 674 "data/maps/MtChimney/scripts.pory"
+# 668 "data/maps/MtChimney/scripts.pory"
 	.string "METEORITE's power into the volcano!\p"
-# 675 "data/maps/MtChimney/scripts.pory"
+# 669 "data/maps/MtChimney/scripts.pory"
 	.string "Doing something like that will cause\n"
-# 676 "data/maps/MtChimney/scripts.pory"
+# 670 "data/maps/MtChimney/scripts.pory"
 	.string "the volcano's eruption!$"
-# 677 "data/maps/MtChimney/scripts.pory"
+# 671 "data/maps/MtChimney/scripts.pory"
 
-# 678 "data/maps/MtChimney/scripts.pory"
+# 672 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ArchieIHaveMyHandsFull:
-# 679 "data/maps/MtChimney/scripts.pory"
+# 673 "data/maps/MtChimney/scripts.pory"
 	.string "ARCHIE: Grrr…\p"
-# 680 "data/maps/MtChimney/scripts.pory"
+# 674 "data/maps/MtChimney/scripts.pory"
 	.string "I want to stop that MAXIE,\n"
-# 681 "data/maps/MtChimney/scripts.pory"
+# 675 "data/maps/MtChimney/scripts.pory"
 	.string "but I can't!\p"
-# 682 "data/maps/MtChimney/scripts.pory"
+# 676 "data/maps/MtChimney/scripts.pory"
 	.string "Not when I have my hands full battling\n"
-# 683 "data/maps/MtChimney/scripts.pory"
+# 677 "data/maps/MtChimney/scripts.pory"
 	.string "three opponents at once!$"
-# 684 "data/maps/MtChimney/scripts.pory"
+# 678 "data/maps/MtChimney/scripts.pory"
 
-# 685 "data/maps/MtChimney/scripts.pory"
+# 679 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ArchieThankYou:
-# 686 "data/maps/MtChimney/scripts.pory"
+# 680 "data/maps/MtChimney/scripts.pory"
 	.string "ARCHIE: {PLAYER}!\n"
-# 687 "data/maps/MtChimney/scripts.pory"
+# 681 "data/maps/MtChimney/scripts.pory"
 	.string "Thank you!\p"
-# 688 "data/maps/MtChimney/scripts.pory"
+# 682 "data/maps/MtChimney/scripts.pory"
 	.string "With your help, we thwarted TEAM\n"
-# 689 "data/maps/MtChimney/scripts.pory"
+# 683 "data/maps/MtChimney/scripts.pory"
 	.string "MAGMA's destructive plan!\p"
-# 690 "data/maps/MtChimney/scripts.pory"
+# 684 "data/maps/MtChimney/scripts.pory"
 	.string "But… You…\n"
-# 691 "data/maps/MtChimney/scripts.pory"
+# 685 "data/maps/MtChimney/scripts.pory"
 	.string "Whose side are you on?\p"
-# 692 "data/maps/MtChimney/scripts.pory"
+# 686 "data/maps/MtChimney/scripts.pory"
 	.string "Ah, it doesn't matter.\p"
-# 693 "data/maps/MtChimney/scripts.pory"
+# 687 "data/maps/MtChimney/scripts.pory"
 	.string "We will remain vigilant and keep up\n"
-# 694 "data/maps/MtChimney/scripts.pory"
+# 688 "data/maps/MtChimney/scripts.pory"
 	.string "our pursuit of TEAM MAGMA.\p"
-# 695 "data/maps/MtChimney/scripts.pory"
+# 689 "data/maps/MtChimney/scripts.pory"
 	.string "{PLAYER}, we shall meet again!$"
-# 696 "data/maps/MtChimney/scripts.pory"
+# 690 "data/maps/MtChimney/scripts.pory"
 
-# 697 "data/maps/MtChimney/scripts.pory"
+# 691 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MagmaOutnumbersUs:
-# 698 "data/maps/MtChimney/scripts.pory"
+# 692 "data/maps/MtChimney/scripts.pory"
 	.string "Darn… TEAM MAGMA outnumbers us!\n"
-# 699 "data/maps/MtChimney/scripts.pory"
+# 693 "data/maps/MtChimney/scripts.pory"
 	.string "We can't keep up with them!$"
-# 700 "data/maps/MtChimney/scripts.pory"
+# 694 "data/maps/MtChimney/scripts.pory"
 
-# 701 "data/maps/MtChimney/scripts.pory"
+# 695 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_LessHabitatForWaterPokemon:
-# 702 "data/maps/MtChimney/scripts.pory"
+# 696 "data/maps/MtChimney/scripts.pory"
 	.string "If they expand the land, there'll be\n"
-# 703 "data/maps/MtChimney/scripts.pory"
+# 697 "data/maps/MtChimney/scripts.pory"
 	.string "less habitats for WATER POKéMON!$"
+# 698 "data/maps/MtChimney/scripts.pory"
+
+# 699 "data/maps/MtChimney/scripts.pory"
+MtChimney_Text_MagmasNameSimilar:
+# 700 "data/maps/MtChimney/scripts.pory"
+	.string "We're TEAM AQUA!\p"
+# 701 "data/maps/MtChimney/scripts.pory"
+	.string "They're TEAM MAGMA!\p"
+# 702 "data/maps/MtChimney/scripts.pory"
+	.string "It burns me up that they'd use such\n"
+# 703 "data/maps/MtChimney/scripts.pory"
+	.string "a confusing name!$"
 # 704 "data/maps/MtChimney/scripts.pory"
 
 # 705 "data/maps/MtChimney/scripts.pory"
-MtChimney_Text_MagmasNameSimilar:
-# 706 "data/maps/MtChimney/scripts.pory"
-	.string "We're TEAM AQUA!\p"
-# 707 "data/maps/MtChimney/scripts.pory"
-	.string "They're TEAM MAGMA!\p"
-# 708 "data/maps/MtChimney/scripts.pory"
-	.string "It burns me up that they'd use such\n"
-# 709 "data/maps/MtChimney/scripts.pory"
-	.string "a confusing name!$"
-# 710 "data/maps/MtChimney/scripts.pory"
-
-# 711 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_Bushaa:
-# 712 "data/maps/MtChimney/scripts.pory"
+# 706 "data/maps/MtChimney/scripts.pory"
 	.string "Bushaa!$"
-# 713 "data/maps/MtChimney/scripts.pory"
+# 707 "data/maps/MtChimney/scripts.pory"
 
-# 714 "data/maps/MtChimney/scripts.pory"
+# 708 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_LavaCookiesJust200:
-# 715 "data/maps/MtChimney/scripts.pory"
+# 709 "data/maps/MtChimney/scripts.pory"
 	.string "LAVA COOKIES are MT. CHIMNEY's local\n"
-# 716 "data/maps/MtChimney/scripts.pory"
+# 710 "data/maps/MtChimney/scripts.pory"
 	.string "specialty.\p"
-# 717 "data/maps/MtChimney/scripts.pory"
+# 711 "data/maps/MtChimney/scripts.pory"
 	.string "Try one. It's just ¥200.$"
-# 718 "data/maps/MtChimney/scripts.pory"
+# 712 "data/maps/MtChimney/scripts.pory"
 
-# 719 "data/maps/MtChimney/scripts.pory"
+# 713 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ThankYouDear:
-# 720 "data/maps/MtChimney/scripts.pory"
+# 714 "data/maps/MtChimney/scripts.pory"
 	.string "Thank you, dear!$"
-# 721 "data/maps/MtChimney/scripts.pory"
+# 715 "data/maps/MtChimney/scripts.pory"
 
-# 722 "data/maps/MtChimney/scripts.pory"
+# 716 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_YouveNotGotTheMoney:
-# 723 "data/maps/MtChimney/scripts.pory"
+# 717 "data/maps/MtChimney/scripts.pory"
 	.string "Oh, dear. You can't buy a thing if\n"
-# 724 "data/maps/MtChimney/scripts.pory"
+# 718 "data/maps/MtChimney/scripts.pory"
 	.string "you've not got the money.$"
-# 725 "data/maps/MtChimney/scripts.pory"
+# 719 "data/maps/MtChimney/scripts.pory"
 
-# 726 "data/maps/MtChimney/scripts.pory"
+# 720 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_OhFineThen:
-# 727 "data/maps/MtChimney/scripts.pory"
+# 721 "data/maps/MtChimney/scripts.pory"
 	.string "Oh, fine then.$"
+# 722 "data/maps/MtChimney/scripts.pory"
+
+# 723 "data/maps/MtChimney/scripts.pory"
+MtChimney_Text_MetoriteFittedOnMachine:
+# 724 "data/maps/MtChimney/scripts.pory"
+	.string "A METEORITE is fitted on a mysterious\n"
+# 725 "data/maps/MtChimney/scripts.pory"
+	.string "machine…\p"
+# 726 "data/maps/MtChimney/scripts.pory"
+	.string "The machine seems to be storing\n"
+# 727 "data/maps/MtChimney/scripts.pory"
+	.string "energy in the METEORITE.$"
 # 728 "data/maps/MtChimney/scripts.pory"
 
 # 729 "data/maps/MtChimney/scripts.pory"
-MtChimney_Text_MetoriteFittedOnMachine:
+MtChimney_Text_RemoveTheMeteorite:
 # 730 "data/maps/MtChimney/scripts.pory"
 	.string "A METEORITE is fitted on a mysterious\n"
 # 731 "data/maps/MtChimney/scripts.pory"
 	.string "machine…\p"
 # 732 "data/maps/MtChimney/scripts.pory"
-	.string "The machine seems to be storing\n"
-# 733 "data/maps/MtChimney/scripts.pory"
-	.string "energy in the METEORITE.$"
-# 734 "data/maps/MtChimney/scripts.pory"
-
-# 735 "data/maps/MtChimney/scripts.pory"
-MtChimney_Text_RemoveTheMeteorite:
-# 736 "data/maps/MtChimney/scripts.pory"
-	.string "A METEORITE is fitted on a mysterious\n"
-# 737 "data/maps/MtChimney/scripts.pory"
-	.string "machine…\p"
-# 738 "data/maps/MtChimney/scripts.pory"
 	.string "Do you want to remove the METEORITE?$"
-# 739 "data/maps/MtChimney/scripts.pory"
+# 733 "data/maps/MtChimney/scripts.pory"
 
-# 740 "data/maps/MtChimney/scripts.pory"
+# 734 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_PlayerRemovedMeteorite:
-# 741 "data/maps/MtChimney/scripts.pory"
+# 735 "data/maps/MtChimney/scripts.pory"
 	.string "{PLAYER} removed the METEORITE from\n"
-# 742 "data/maps/MtChimney/scripts.pory"
+# 736 "data/maps/MtChimney/scripts.pory"
 	.string "the mysterious machine.$"
-# 743 "data/maps/MtChimney/scripts.pory"
+# 737 "data/maps/MtChimney/scripts.pory"
 
-# 744 "data/maps/MtChimney/scripts.pory"
+# 738 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_PlayerLeftMeteorite:
-# 745 "data/maps/MtChimney/scripts.pory"
+# 739 "data/maps/MtChimney/scripts.pory"
 	.string "{PLAYER} left the METEORITE where\n"
-# 746 "data/maps/MtChimney/scripts.pory"
+# 740 "data/maps/MtChimney/scripts.pory"
 	.string "it was.$"
-# 747 "data/maps/MtChimney/scripts.pory"
+# 741 "data/maps/MtChimney/scripts.pory"
 
-# 748 "data/maps/MtChimney/scripts.pory"
+# 742 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MachineMakesNoResponse:
-# 749 "data/maps/MtChimney/scripts.pory"
+# 743 "data/maps/MtChimney/scripts.pory"
 	.string "This mysterious machine…\n"
-# 750 "data/maps/MtChimney/scripts.pory"
+# 744 "data/maps/MtChimney/scripts.pory"
 	.string "It makes no response whatsoever.$"
-# 751 "data/maps/MtChimney/scripts.pory"
+# 745 "data/maps/MtChimney/scripts.pory"
 
-# 752 "data/maps/MtChimney/scripts.pory"
+# 746 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_RouteSign:
-# 753 "data/maps/MtChimney/scripts.pory"
+# 747 "data/maps/MtChimney/scripts.pory"
 	.string "{DOWN_ARROW} JAGGED PATH\n"
-# 754 "data/maps/MtChimney/scripts.pory"
+# 748 "data/maps/MtChimney/scripts.pory"
 	.string "LAVARIDGE TOWN AHEAD$"
-# 755 "data/maps/MtChimney/scripts.pory"
+# 749 "data/maps/MtChimney/scripts.pory"
 
-# 756 "data/maps/MtChimney/scripts.pory"
+# 750 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ShelbyIntro:
-# 757 "data/maps/MtChimney/scripts.pory"
+# 751 "data/maps/MtChimney/scripts.pory"
 	.string "I've been to the hot springs and\n"
-# 758 "data/maps/MtChimney/scripts.pory"
+# 752 "data/maps/MtChimney/scripts.pory"
 	.string "refreshed my tired bones.\l"
-# 759 "data/maps/MtChimney/scripts.pory"
+# 753 "data/maps/MtChimney/scripts.pory"
 	.string "Right now I'm feeling strong!$"
-# 760 "data/maps/MtChimney/scripts.pory"
+# 754 "data/maps/MtChimney/scripts.pory"
 
-# 761 "data/maps/MtChimney/scripts.pory"
+# 755 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ShelbyDefeat:
-# 762 "data/maps/MtChimney/scripts.pory"
+# 756 "data/maps/MtChimney/scripts.pory"
 	.string "Oh, my goodness.\n"
-# 763 "data/maps/MtChimney/scripts.pory"
+# 757 "data/maps/MtChimney/scripts.pory"
 	.string "Now, aren't you something!$"
-# 764 "data/maps/MtChimney/scripts.pory"
+# 758 "data/maps/MtChimney/scripts.pory"
 
-# 765 "data/maps/MtChimney/scripts.pory"
+# 759 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ShelbyPostBattle:
-# 766 "data/maps/MtChimney/scripts.pory"
+# 760 "data/maps/MtChimney/scripts.pory"
 	.string "Well, well, I've lost. I can't call\n"
-# 767 "data/maps/MtChimney/scripts.pory"
+# 761 "data/maps/MtChimney/scripts.pory"
 	.string "myself an EXPERT now, can I?$"
+# 762 "data/maps/MtChimney/scripts.pory"
+
+# 763 "data/maps/MtChimney/scripts.pory"
+MtChimney_Text_ShelbyRegister:
+# 764 "data/maps/MtChimney/scripts.pory"
+	.string "Thank you, child. It was fun, as if\n"
+# 765 "data/maps/MtChimney/scripts.pory"
+	.string "I were battling my own grandchild.\p"
+# 766 "data/maps/MtChimney/scripts.pory"
+	.string "Please, come see me again for\n"
+# 767 "data/maps/MtChimney/scripts.pory"
+	.string "a rematch.$"
 # 768 "data/maps/MtChimney/scripts.pory"
 
 # 769 "data/maps/MtChimney/scripts.pory"
-MtChimney_Text_ShelbyRegister:
-# 770 "data/maps/MtChimney/scripts.pory"
-	.string "Thank you, child. It was fun, as if\n"
-# 771 "data/maps/MtChimney/scripts.pory"
-	.string "I were battling my own grandchild.\p"
-# 772 "data/maps/MtChimney/scripts.pory"
-	.string "Please, come see me again for\n"
-# 773 "data/maps/MtChimney/scripts.pory"
-	.string "a rematch.$"
-# 774 "data/maps/MtChimney/scripts.pory"
-
-# 775 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ShelbyRematchIntro:
-# 776 "data/maps/MtChimney/scripts.pory"
+# 770 "data/maps/MtChimney/scripts.pory"
 	.string "If you can mesh your heart with those\n"
-# 777 "data/maps/MtChimney/scripts.pory"
+# 771 "data/maps/MtChimney/scripts.pory"
 	.string "of your POKéMON, why, you should be\l"
-# 778 "data/maps/MtChimney/scripts.pory"
+# 772 "data/maps/MtChimney/scripts.pory"
 	.string "able to achieve great things.$"
-# 779 "data/maps/MtChimney/scripts.pory"
+# 773 "data/maps/MtChimney/scripts.pory"
 
-# 780 "data/maps/MtChimney/scripts.pory"
+# 774 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ShelbyRematchDefeat:
-# 781 "data/maps/MtChimney/scripts.pory"
+# 775 "data/maps/MtChimney/scripts.pory"
 	.string "Oh, my goodness.\n"
-# 782 "data/maps/MtChimney/scripts.pory"
+# 776 "data/maps/MtChimney/scripts.pory"
 	.string "Now, aren't you something!$"
-# 783 "data/maps/MtChimney/scripts.pory"
+# 777 "data/maps/MtChimney/scripts.pory"
 
-# 784 "data/maps/MtChimney/scripts.pory"
+# 778 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ShelbyPostRematch:
-# 785 "data/maps/MtChimney/scripts.pory"
+# 779 "data/maps/MtChimney/scripts.pory"
 	.string "Perhaps your heart has become one\n"
-# 786 "data/maps/MtChimney/scripts.pory"
+# 780 "data/maps/MtChimney/scripts.pory"
 	.string "with the hearts of your POKéMON.$"
-# 787 "data/maps/MtChimney/scripts.pory"
+# 781 "data/maps/MtChimney/scripts.pory"
 
-# 788 "data/maps/MtChimney/scripts.pory"
+# 782 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MelissaIntro:
-# 789 "data/maps/MtChimney/scripts.pory"
+# 783 "data/maps/MtChimney/scripts.pory"
 	.string "I've got the fire in me, baby.\n"
-# 790 "data/maps/MtChimney/scripts.pory"
+# 784 "data/maps/MtChimney/scripts.pory"
 	.string "I can't stand it! I have to battle!$"
-# 791 "data/maps/MtChimney/scripts.pory"
+# 785 "data/maps/MtChimney/scripts.pory"
 
-# 792 "data/maps/MtChimney/scripts.pory"
+# 786 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MelissaDefeat:
-# 793 "data/maps/MtChimney/scripts.pory"
+# 787 "data/maps/MtChimney/scripts.pory"
 	.string "Ooh, that was a scorching-hot match!$"
-# 794 "data/maps/MtChimney/scripts.pory"
+# 788 "data/maps/MtChimney/scripts.pory"
 
-# 795 "data/maps/MtChimney/scripts.pory"
+# 789 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MelissaPostBattle:
-# 796 "data/maps/MtChimney/scripts.pory"
+# 790 "data/maps/MtChimney/scripts.pory"
 	.string "The heat of MT. CHIMNEY warms\n"
-# 797 "data/maps/MtChimney/scripts.pory"
+# 791 "data/maps/MtChimney/scripts.pory"
 	.string "me up, baby!$"
-# 798 "data/maps/MtChimney/scripts.pory"
+# 792 "data/maps/MtChimney/scripts.pory"
 
-# 799 "data/maps/MtChimney/scripts.pory"
+# 793 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_SheilaIntro:
-# 800 "data/maps/MtChimney/scripts.pory"
+# 794 "data/maps/MtChimney/scripts.pory"
 	.string "I've finally made it to MT. CHIMNEY.\n"
-# 801 "data/maps/MtChimney/scripts.pory"
+# 795 "data/maps/MtChimney/scripts.pory"
 	.string "I want to make my POKéMON battle!$"
-# 802 "data/maps/MtChimney/scripts.pory"
+# 796 "data/maps/MtChimney/scripts.pory"
 
-# 803 "data/maps/MtChimney/scripts.pory"
+# 797 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_SheilaDefeat:
-# 804 "data/maps/MtChimney/scripts.pory"
+# 798 "data/maps/MtChimney/scripts.pory"
 	.string "The way you battle…\n"
-# 805 "data/maps/MtChimney/scripts.pory"
+# 799 "data/maps/MtChimney/scripts.pory"
 	.string "It's like a MT. CHIMNEY eruption!$"
-# 806 "data/maps/MtChimney/scripts.pory"
+# 800 "data/maps/MtChimney/scripts.pory"
 
-# 807 "data/maps/MtChimney/scripts.pory"
+# 801 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_SheilaPostBattle:
-# 808 "data/maps/MtChimney/scripts.pory"
+# 802 "data/maps/MtChimney/scripts.pory"
 	.string "Like I said, I've finally made it to\n"
-# 809 "data/maps/MtChimney/scripts.pory"
+# 803 "data/maps/MtChimney/scripts.pory"
 	.string "MT. CHIMNEY. It would be a shame if\l"
-# 810 "data/maps/MtChimney/scripts.pory"
+# 804 "data/maps/MtChimney/scripts.pory"
 	.string "I only do a little sightseeing…\p"
-# 811 "data/maps/MtChimney/scripts.pory"
+# 805 "data/maps/MtChimney/scripts.pory"
 	.string "I want to get in some battles and buy\n"
-# 812 "data/maps/MtChimney/scripts.pory"
+# 806 "data/maps/MtChimney/scripts.pory"
 	.string "COOKIES as souvenirs.$"
-# 813 "data/maps/MtChimney/scripts.pory"
+# 807 "data/maps/MtChimney/scripts.pory"
 
-# 814 "data/maps/MtChimney/scripts.pory"
+# 808 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ShirleyIntro:
-# 815 "data/maps/MtChimney/scripts.pory"
+# 809 "data/maps/MtChimney/scripts.pory"
 	.string "Since I bathed in the hot springs,\n"
-# 816 "data/maps/MtChimney/scripts.pory"
+# 810 "data/maps/MtChimney/scripts.pory"
 	.string "I've been feeling great!\l"
-# 817 "data/maps/MtChimney/scripts.pory"
+# 811 "data/maps/MtChimney/scripts.pory"
 	.string "I'm sure I'm going to win!$"
-# 818 "data/maps/MtChimney/scripts.pory"
+# 812 "data/maps/MtChimney/scripts.pory"
 
-# 819 "data/maps/MtChimney/scripts.pory"
+# 813 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ShirleyDefeat:
-# 820 "data/maps/MtChimney/scripts.pory"
+# 814 "data/maps/MtChimney/scripts.pory"
 	.string "Yowch!\n"
-# 821 "data/maps/MtChimney/scripts.pory"
+# 815 "data/maps/MtChimney/scripts.pory"
 	.string "I'm getting a chill out of the water.$"
-# 822 "data/maps/MtChimney/scripts.pory"
+# 816 "data/maps/MtChimney/scripts.pory"
 
-# 823 "data/maps/MtChimney/scripts.pory"
+# 817 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_ShirleyPostBattle:
-# 824 "data/maps/MtChimney/scripts.pory"
+# 818 "data/maps/MtChimney/scripts.pory"
 	.string "I'll have to take another dip in the\n"
-# 825 "data/maps/MtChimney/scripts.pory"
+# 819 "data/maps/MtChimney/scripts.pory"
 	.string "hot springs. Want to join me?\p"
-# 826 "data/maps/MtChimney/scripts.pory"
+# 820 "data/maps/MtChimney/scripts.pory"
 	.string "Just joking!$"
-# 827 "data/maps/MtChimney/scripts.pory"
+# 821 "data/maps/MtChimney/scripts.pory"
 
-# 828 "data/maps/MtChimney/scripts.pory"
+# 822 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_SawyerIntro:
-# 829 "data/maps/MtChimney/scripts.pory"
+# 823 "data/maps/MtChimney/scripts.pory"
 	.string "This is one fine mountain! Plenty of\n"
-# 830 "data/maps/MtChimney/scripts.pory"
+# 824 "data/maps/MtChimney/scripts.pory"
 	.string "hot people around for company!$"
-# 831 "data/maps/MtChimney/scripts.pory"
+# 825 "data/maps/MtChimney/scripts.pory"
 
-# 832 "data/maps/MtChimney/scripts.pory"
+# 826 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_SawyerDefeat:
-# 833 "data/maps/MtChimney/scripts.pory"
+# 827 "data/maps/MtChimney/scripts.pory"
 	.string "Oh, you're a real firebrand, too!$"
-# 834 "data/maps/MtChimney/scripts.pory"
+# 828 "data/maps/MtChimney/scripts.pory"
 
-# 835 "data/maps/MtChimney/scripts.pory"
+# 829 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_SawyerPostBattle:
-# 836 "data/maps/MtChimney/scripts.pory"
+# 830 "data/maps/MtChimney/scripts.pory"
 	.string "I think I need a dip in LAVARIDGE\n"
-# 837 "data/maps/MtChimney/scripts.pory"
+# 831 "data/maps/MtChimney/scripts.pory"
 	.string "HOT SPRING with the locals!$"
-# 838 "data/maps/MtChimney/scripts.pory"
+# 832 "data/maps/MtChimney/scripts.pory"
 
-# 839 "data/maps/MtChimney/scripts.pory"
+# 833 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_SawyerRegister:
-# 840 "data/maps/MtChimney/scripts.pory"
+# 834 "data/maps/MtChimney/scripts.pory"
 	.string "I like little fireballs like you.\n"
-# 841 "data/maps/MtChimney/scripts.pory"
+# 835 "data/maps/MtChimney/scripts.pory"
 	.string "Let me register you in my POKéNAV.$"
-# 842 "data/maps/MtChimney/scripts.pory"
+# 836 "data/maps/MtChimney/scripts.pory"
 
-# 843 "data/maps/MtChimney/scripts.pory"
+# 837 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_SawyerRematchIntro:
-# 844 "data/maps/MtChimney/scripts.pory"
+# 838 "data/maps/MtChimney/scripts.pory"
 	.string "I'm happily surrounded by hot people\n"
-# 845 "data/maps/MtChimney/scripts.pory"
+# 839 "data/maps/MtChimney/scripts.pory"
 	.string "around these parts. I won't lose!$"
-# 846 "data/maps/MtChimney/scripts.pory"
+# 840 "data/maps/MtChimney/scripts.pory"
 
-# 847 "data/maps/MtChimney/scripts.pory"
+# 841 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_SawyerRematchDefeat:
-# 848 "data/maps/MtChimney/scripts.pory"
+# 842 "data/maps/MtChimney/scripts.pory"
 	.string "Gosh, you're still the same\n"
-# 849 "data/maps/MtChimney/scripts.pory"
+# 843 "data/maps/MtChimney/scripts.pory"
 	.string "firebrand as before!$"
-# 850 "data/maps/MtChimney/scripts.pory"
+# 844 "data/maps/MtChimney/scripts.pory"
 
-# 851 "data/maps/MtChimney/scripts.pory"
+# 845 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_SawyerPostRematch:
-# 852 "data/maps/MtChimney/scripts.pory"
+# 846 "data/maps/MtChimney/scripts.pory"
 	.string "Actually, it really is hot here.\n"
-# 853 "data/maps/MtChimney/scripts.pory"
+# 847 "data/maps/MtChimney/scripts.pory"
 	.string "I'm overdressed for these parts.$"

@@ -173,7 +173,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayNorth::
 # 87 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	waitmovement 0
 # 88 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAY
+	setvar VAR_MUGSHOT, MUGSHOT_MAY
 # 89 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	callnative DrawMugshot
 # 90 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -203,7 +203,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMaySouth::
 # 102 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	waitmovement 0
 # 103 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAY
+	setvar VAR_MUGSHOT, MUGSHOT_MAY
 # 104 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	callnative DrawMugshot
 # 105 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -233,7 +233,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayWest::
 # 117 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	waitmovement 0
 # 118 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAY
+	setvar VAR_MUGSHOT, MUGSHOT_MAY
 # 119 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	callnative DrawMugshot
 # 120 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -261,7 +261,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayEast::
 # 131 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	waitmovement 0
 # 132 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAY
+	setvar VAR_MUGSHOT, MUGSHOT_MAY
 # 133 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	callnative DrawMugshot
 # 134 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"

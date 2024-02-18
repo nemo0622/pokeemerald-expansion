@@ -165,7 +165,7 @@ SootopolisCity_Gym_1F_Movement_FallThroughIce:
 # 83 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 SootopolisCity_Gym_1F_EventScript_Juan::
 # 84 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_JUAN
+	setvar VAR_MUGSHOT, MUGSHOT_JUAN
 # 85 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	callnative DrawMugshot
 # 86 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
@@ -281,7 +281,7 @@ SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge::
 # 141 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 SootopolisCity_Gym_1F_EventScript_JuanRematch::
 # 142 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_JUAN
+	setvar VAR_MUGSHOT, MUGSHOT_JUAN
 # 143 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	callnative DrawMugshot
 # 144 "data/maps/SootopolisCity_Gym_1F/scripts.pory"

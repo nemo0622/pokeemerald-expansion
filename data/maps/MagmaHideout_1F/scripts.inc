@@ -19,7 +19,7 @@ MagmaHideout_1F_OnTransition:
 # 10 "data/maps/MagmaHideout_1F/scripts.pory"
 MagmaHideout_1F_EventScript_Grunt1::
 # 11 "data/maps/MagmaHideout_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 # 12 "data/maps/MagmaHideout_1F/scripts.pory"
 	callnative DrawMugshot
 # 13 "data/maps/MagmaHideout_1F/scripts.pory"
@@ -33,7 +33,7 @@ MagmaHideout_1F_EventScript_Grunt1::
 # 17 "data/maps/MagmaHideout_1F/scripts.pory"
 MagmaHideout_1F_EventScript_Grunt2::
 # 18 "data/maps/MagmaHideout_1F/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_MAGMAGRUNTM
+	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
 # 19 "data/maps/MagmaHideout_1F/scripts.pory"
 	callnative DrawMugshot
 # 20 "data/maps/MagmaHideout_1F/scripts.pory"
