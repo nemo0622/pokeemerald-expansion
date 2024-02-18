@@ -24,7 +24,7 @@ PetalburgCity_PokemonCenter_1F_EventScript_FatMan::
 	end
 
 PetalburgCity_PokemonCenter_1F_EventScript_Youngster::
-	msgbox PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 	end
 
 PetalburgCity_PokemonCenter_1F_EventScript_Woman::

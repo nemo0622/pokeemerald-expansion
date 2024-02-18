@@ -9,7 +9,7 @@ SafariZone_RestHouse_MapScripts::
 # 5 "data/maps/SafariZone_RestHouse/scripts.pory"
 SafariZone_RestHouse_EventScript_Youngster::
 # 6 "data/maps/SafariZone_RestHouse/scripts.pory"
-	msgbox SafariZone_RestHouse_Text_Youngster, MSGBOX_NPC
+	msgbox_mugshot SafariZone_RestHouse_Text_Youngster, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 # 7 "data/maps/SafariZone_RestHouse/scripts.pory"
 	end
 # 8 "data/maps/SafariZone_RestHouse/scripts.pory"

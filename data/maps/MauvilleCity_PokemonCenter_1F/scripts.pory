@@ -33,7 +33,7 @@ MauvilleCity_PokemonCenter_1F_EventScript_Woman2::
 	end
 
 MauvilleCity_PokemonCenter_1F_EventScript_Youngster::
-	msgbox MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 	end
 
 MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings:

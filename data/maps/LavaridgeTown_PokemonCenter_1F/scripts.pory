@@ -20,7 +20,7 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 LavaridgeTown_PokemonCenter_1F_EventScript_Youngster::
-	msgbox LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 	end
 
 LavaridgeTown_PokemonCenter_1F_EventScript_Woman::

@@ -11,7 +11,7 @@ LilycoveCity_DepartmentStore_4F_EventScript_Woman::
 	end
 
 LilycoveCity_DepartmentStore_4F_EventScript_Youngster::
-	msgbox LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 	end
 
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::

@@ -69,7 +69,7 @@ MauvilleCity_PokemonCenter_1F_EventScript_Woman2::
 # 35 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"
 MauvilleCity_PokemonCenter_1F_EventScript_Youngster::
 # 36 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"
-	msgbox MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 # 37 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"
 	end
 # 38 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"

@@ -97,7 +97,7 @@ SafariZone_South_EventScript_Man::
 # 49 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_South_EventScript_Youngster::
 # 50 "data/maps/SafariZone_South/scripts.pory"
-	msgbox SafariZone_South_Text_Youngster, MSGBOX_NPC
+	msgbox_mugshot SafariZone_South_Text_Youngster, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 # 51 "data/maps/SafariZone_South/scripts.pory"
 	end
 # 52 "data/maps/SafariZone_South/scripts.pory"

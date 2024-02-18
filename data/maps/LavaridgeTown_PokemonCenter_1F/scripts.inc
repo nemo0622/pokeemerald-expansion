@@ -43,7 +43,7 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Nurse::
 # 22 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 LavaridgeTown_PokemonCenter_1F_EventScript_Youngster::
 # 23 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
-	msgbox LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 # 24 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 	end
 # 25 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"

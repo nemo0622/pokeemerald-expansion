@@ -73,6 +73,8 @@ static const u32 sMugshotImg_Archie[] = INCBIN_U32("graphics/mugshots/pics/mugsh
 static const u16 sMugshotPal_Archie[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_archie.gbapal");
 static const u32 sMugshotImg_Maxie[] = INCBIN_U32("graphics/mugshots/pics/mugshot_maxie.4bpp.lz");
 static const u16 sMugshotPal_Maxie[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_maxie.gbapal");
+static const u32 sMugshotImg_Youngster[] = INCBIN_U32("graphics/mugshots/pics/mugshot_youngster.4bpp.lz");
+static const u16 sMugshotPal_Youngster[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_youngster.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -102,6 +104,7 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_MAGMAGRUNTF] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_MagmaGruntF, .palette = sMugshotPal_MagmaGruntF},
     [MUGSHOT_ARCHIE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Archie, .palette = sMugshotPal_Archie},
     [MUGSHOT_MAXIE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Maxie, .palette = sMugshotPal_Maxie},
+    [MUGSHOT_YOUNGSTER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Youngster, .palette = sMugshotPal_Youngster},
 };
 
 

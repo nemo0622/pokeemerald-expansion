@@ -3,7 +3,7 @@ AbandonedShip_Corridors_1F_MapScripts::
 	.byte 0
 
 AbandonedShip_Corridors_1F_EventScript_Youngster::
-	msgbox AbandonedShip_Corridors_1F_Text_IsntItFunHere, MSGBOX_NPC
+	msgbox_mugshot AbandonedShip_Corridors_1F_Text_IsntItFunHere, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 	end
 
 AbandonedShip_Corridors_1F_EventScript_Charlie::

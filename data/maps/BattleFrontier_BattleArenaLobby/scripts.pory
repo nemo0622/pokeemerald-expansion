@@ -295,7 +295,7 @@ BattleFrontier_BattleArenaLobby_EventScript_ShowResults::
 	end
 
 BattleFrontier_BattleArenaLobby_EventScript_Youngster::
-	msgbox BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 	end
 
 BattleFrontier_BattleArenaLobby_EventScript_Man::

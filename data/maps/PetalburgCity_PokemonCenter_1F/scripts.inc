@@ -51,7 +51,7 @@ PetalburgCity_PokemonCenter_1F_EventScript_FatMan::
 # 26 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 PetalburgCity_PokemonCenter_1F_EventScript_Youngster::
 # 27 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 # 28 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	end
 # 29 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"

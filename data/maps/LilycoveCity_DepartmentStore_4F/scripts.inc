@@ -25,7 +25,7 @@ LilycoveCity_DepartmentStore_4F_EventScript_Woman::
 # 13 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 LilycoveCity_DepartmentStore_4F_EventScript_Youngster::
 # 14 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 # 15 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	end
 # 16 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"

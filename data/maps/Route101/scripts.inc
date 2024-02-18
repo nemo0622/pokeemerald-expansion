@@ -419,7 +419,7 @@ Route101_Movement_Unused2:
 # 210 "data/maps/Route101/scripts.pory"
 Route101_EventScript_Youngster::
 # 211 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_TakeTiredPokemonToPokeCenter, MSGBOX_NPC
+	msgbox_mugshot Route101_Text_TakeTiredPokemonToPokeCenter, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 # 212 "data/maps/Route101/scripts.pory"
 	end
 # 213 "data/maps/Route101/scripts.pory"

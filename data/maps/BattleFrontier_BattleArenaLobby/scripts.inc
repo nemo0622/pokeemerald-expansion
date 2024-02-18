@@ -593,7 +593,7 @@ BattleFrontier_BattleArenaLobby_EventScript_ShowResults::
 # 297 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 BattleFrontier_BattleArenaLobby_EventScript_Youngster::
 # 298 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	msgbox BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 # 299 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	end
 # 300 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"

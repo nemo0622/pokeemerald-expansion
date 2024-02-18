@@ -2,7 +2,7 @@ Common_EventScript_PkmnCenterNurse::
 	lock
 	faceplayer
 	setvar VAR_0x8004, 0
-	setvar VAR_0x8000, MUGSHOT_NURSEJOY
+	setvar VAR_MUGSHOT, MUGSHOT_NURSEJOY
 	callnative DrawMugshot
 	specialvar VAR_RESULT, CountPlayerTrainerStars
 	goto_if_eq VAR_RESULT, 4, EventScript_PkmnCenterNurse_GoldCard

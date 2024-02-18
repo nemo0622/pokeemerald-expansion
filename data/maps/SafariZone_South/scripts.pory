@@ -47,7 +47,7 @@ SafariZone_South_EventScript_Man::
 	end
 
 SafariZone_South_EventScript_Youngster::
-	msgbox SafariZone_South_Text_Youngster, MSGBOX_NPC
+	msgbox_mugshot SafariZone_South_Text_Youngster, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 	end
 
 SafariZone_South_EventScript_ExitAttendant::

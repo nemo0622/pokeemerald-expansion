@@ -20,7 +20,7 @@ MauvilleCity_PokemonCenter_2F_EventScript_RecordCorner::
 	end
 
 MauvilleCity_PokemonCenter_2F_EventScript_Youngster::
-	msgbox MauvilleCity_PokemonCenter_2F_Text_Youngster, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_PokemonCenter_2F_Text_Youngster, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 	end
 
 MauvilleCity_PokemonCenter_2F_Text_Youngster:

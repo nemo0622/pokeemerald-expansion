@@ -43,7 +43,7 @@ MauvilleCity_PokemonCenter_2F_EventScript_RecordCorner::
 # 22 "data/maps/MauvilleCity_PokemonCenter_2F/scripts.pory"
 MauvilleCity_PokemonCenter_2F_EventScript_Youngster::
 # 23 "data/maps/MauvilleCity_PokemonCenter_2F/scripts.pory"
-	msgbox MauvilleCity_PokemonCenter_2F_Text_Youngster, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_PokemonCenter_2F_Text_Youngster, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 # 24 "data/maps/MauvilleCity_PokemonCenter_2F/scripts.pory"
 	end
 # 25 "data/maps/MauvilleCity_PokemonCenter_2F/scripts.pory"

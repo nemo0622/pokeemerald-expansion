@@ -9,7 +9,7 @@ AbandonedShip_Corridors_1F_MapScripts::
 # 5 "data/maps/AbandonedShip_Corridors_1F/scripts.pory"
 AbandonedShip_Corridors_1F_EventScript_Youngster::
 # 6 "data/maps/AbandonedShip_Corridors_1F/scripts.pory"
-	msgbox AbandonedShip_Corridors_1F_Text_IsntItFunHere, MSGBOX_NPC
+	msgbox_mugshot AbandonedShip_Corridors_1F_Text_IsntItFunHere, MSGBOX_NPC, MUGSHOT_YOUNGSTER
 # 7 "data/maps/AbandonedShip_Corridors_1F/scripts.pory"
 	end
 # 8 "data/maps/AbandonedShip_Corridors_1F/scripts.pory"

@@ -28,5 +28,6 @@
 #define MUGSHOT_MAGMAGRUNTF  23
 #define MUGSHOT_ARCHIE  24
 #define MUGSHOT_MAXIE  25
+#define MUGSHOT_YOUNGSTER  26
 
 #endif
