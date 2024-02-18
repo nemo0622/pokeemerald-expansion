@@ -25,7 +25,7 @@
 ### Graphics
 - New overworlds from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
     - Credit goes to Pawkkie for May's sprite and RavePossum for the rest!
-- [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to important characters
+- [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to many characters
     - Credit to Zenionith and Zermonius on DeviantArt for ORAS style PSS icons
     - Credit to Wergan on DeviantArt and Omega on WhackaHack for various other PSS-style icons
 - New Gen 5 inspired map popups, ported from BSBob by [RavePossum](https://github.com/ravepossum/pokeemerald)
@@ -36,12 +36,11 @@
 
 ### Known Bugs:
 - Mugshots occasionally cut a little portion out of the textbox
-- Mugshots removed from some Mt. Chimney trainers
-    - No idea why they break here, needs a lot more testing
+    - Most noticable during cutscenes, some problem with ClearMugshot most likely
 
 ### Future Plans:
 - Expanded implementation of NPC Mugshot system
-    - All trainers, maybe even all NPCs, should have mugshots when talking to them!
+    - Most NPCs will show a mugshot when speaking!
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you
     - Code works, but need to add actual map locations!

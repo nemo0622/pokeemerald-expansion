@@ -20,12 +20,13 @@ Route102_EventScript_Boy::
 
 Route102_EventScript_Calvin::
 	trainerbattle_single TRAINER_CALVIN_1, Route102_Text_CalvinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
+	callnative ClearMugshot
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_CalvinRematch
 	setvar VAR_0x8004, TRAINER_CALVIN_1
 	specialvar VAR_RESULT, IsTrainerRegistered
 	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_CalvinTryRegister
-	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT, MUGSHOT_YOUNGSTER
 	release
 	end
 
@@ -37,14 +38,14 @@ Route102_EventScript_CalvinRegisterMatchCallAfterBattle::
 	end
 
 Route102_EventScript_CalvinRegisterMatchCall::
-	msgbox Route102_Text_CalvinRegisterShort, MSGBOX_DEFAULT
+	msgbox_mugshot Route102_Text_CalvinRegisterShort, MSGBOX_DEFAULT, MUGSHOT_YOUNGSTER
 	register_matchcall TRAINER_CALVIN_1
 	release
 	end
 
 Route102_EventScript_CalvinTryRegister::
 	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_CalvinRegister
-	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT, MUGSHOT_YOUNGSTER
 	release
 	end
 
@@ -56,7 +57,7 @@ Route102_EventScript_CalvinRegister::
 
 Route102_EventScript_CalvinRematch::
 	trainerbattle_rematch TRAINER_CALVIN_1, Route102_Text_CalvinRematchIntro, Route102_Text_CalvinRematchDefeated
-	msgbox Route102_Text_CalvinRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route102_Text_CalvinRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 	end
 
 Route102_EventScript_Rick::

@@ -76,8 +76,6 @@ AquaHideout_B1F_EventScript_DefeatedElectrode2::
 	end
 
 AquaHideout_B1F_EventScript_Grunt2::
-	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
-	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_2, AquaHideout_B1F_Text_Grunt2Intro, AquaHideout_B1F_Text_Grunt2Defeat, AquaHideout_B1F_EventScript_Grunt2Defeated
 	msgbox_mugshot AquaHideout_B1F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_AQUAGRUNTM
 	end
@@ -100,15 +98,11 @@ AquaHideout_B1F_EventScript_Grunt3Defeated::
 	end
 
 AquaHideout_B1F_EventScript_Grunt5::
-	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTF
-	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_5, AquaHideout_B1F_Text_Grunt5Intro, AquaHideout_B1F_Text_Grunt5Defeat
 	msgbox_mugshot AquaHideout_B1F_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_AQUAGRUNTF
 	end
 
 AquaHideout_B1F_EventScript_Grunt7::
-	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTF
-	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_7, AquaHideout_B1F_Text_Grunt7Intro, AquaHideout_B1F_Text_Grunt7Defeat
 	msgbox_mugshot AquaHideout_B1F_Text_Grunt7PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_AQUAGRUNTF
 	end

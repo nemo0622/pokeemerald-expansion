@@ -71,8 +71,6 @@ AquaHideout_B2F_Movement_SumbarineDepartRight:
 	step_end
 
 AquaHideout_B2F_EventScript_Grunt4::
-	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
-	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, AquaHideout_B2F_Text_Grunt4Intro, AquaHideout_B2F_Text_Grunt4Defeat, AquaHideout_B2F_EventScript_Grunt4Defeated
 	msgbox_mugshot AquaHideout_B2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_AQUAGRUNTM
 	end
@@ -90,8 +88,6 @@ AquaHideout_B2F_EventScript_Grunt6::
 	end
 
 AquaHideout_B2F_EventScript_Grunt8::
-	setvar VAR_MUGSHOT, MUGSHOT_AQUAGRUNTM
-	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_8, AquaHideout_B2F_Text_Grunt8Intro, AquaHideout_B2F_Text_Grunt8Defeat
 	msgbox_mugshot AquaHideout_B2F_Text_Grunt8PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_AQUAGRUNTM
 	end
