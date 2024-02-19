@@ -3,29 +3,21 @@ MagmaHideout_2F_1R_MapScripts::
 	.byte 0
 
 MagmaHideout_2F_1R_EventScript_Grunt14::
-	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTF
-	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_14, MagmaHideout_2F_1R_Text_Grunt14Intro, MagmaHideout_2F_1R_Text_Grunt14Defeat
 	msgbox_mugshot MagmaHideout_2F_1R_Text_Grunt14PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTF
 	end
 
 MagmaHideout_2F_1R_EventScript_Grunt3::
-	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
-	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_3, MagmaHideout_2F_1R_Text_Grunt3Intro, MagmaHideout_2F_1R_Text_Grunt3Defeat
 	msgbox_mugshot MagmaHideout_2F_1R_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 	end
 
 MagmaHideout_2F_1R_EventScript_Grunt4::
-	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
-	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_4, MagmaHideout_2F_1R_Text_Grunt4Intro, MagmaHideout_2F_1R_Text_Grunt4Defeat
 	msgbox_mugshot MagmaHideout_2F_1R_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 	end
 
 MagmaHideout_2F_1R_EventScript_Grunt5::
-	setvar VAR_MUGSHOT, MUGSHOT_MAGMAGRUNTM
-	callnative DrawMugshot
 	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_5, MagmaHideout_2F_1R_Text_Grunt5Intro, MagmaHideout_2F_1R_Text_Grunt5Defeat
 	msgbox_mugshot MagmaHideout_2F_1R_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAGMAGRUNTM
 	end
