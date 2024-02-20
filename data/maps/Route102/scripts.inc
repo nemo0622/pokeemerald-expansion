@@ -33,7 +33,7 @@ Route102_EventScript_RouteSignPetalburg::
 # 17 "data/maps/Route102/scripts.pory"
 Route102_EventScript_Boy::
 # 18 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_CatchWholeBunchOfPokemon, MSGBOX_NPC
+	msgbox_mugshot Route102_Text_CatchWholeBunchOfPokemon, MSGBOX_NPC, MUGSHOT_BOY1
 # 19 "data/maps/Route102/scripts.pory"
 	end
 # 20 "data/maps/Route102/scripts.pory"

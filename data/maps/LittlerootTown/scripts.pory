@@ -256,7 +256,7 @@ LittlerootTown_EventScript_FatMan::
 	end
 
 LittlerootTown_EventScript_Boy::
-	msgbox LittlerootTown_Text_BirchSpendsDaysInLab, MSGBOX_NPC
+	msgbox_mugshot LittlerootTown_Text_BirchSpendsDaysInLab, MSGBOX_NPC, MUGSHOT_BOY2
 	end
 
 LittlerootTown_EventScript_Twin::

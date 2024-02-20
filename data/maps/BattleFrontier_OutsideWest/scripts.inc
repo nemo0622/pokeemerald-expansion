@@ -575,7 +575,7 @@ BattleFrontier_OutsideWest_EventScript_Boy2::
 # 288 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	lock
 # 289 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	msgbox BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering, MSGBOX_DEFAULT
+	msgbox_mugshot BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 290 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	release
 # 291 "data/maps/BattleFrontier_OutsideWest/scripts.pory"

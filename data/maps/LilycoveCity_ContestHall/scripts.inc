@@ -67,7 +67,7 @@ LilycoveCity_ContestHall_MapScripts::
 # 34 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 LilycoveCity_ContestHall_EventScript_Boy1::
 # 35 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_TodayWonSmartnessContest, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestHall_Text_TodayWonSmartnessContest, MSGBOX_NPC, MUGSHOT_BOY1
 # 36 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	end
 # 37 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -231,7 +231,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestAudience2::
 # 116 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 117 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_AllSeemToUseDifferentMoves, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_AllSeemToUseDifferentMoves, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 118 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 119 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -511,7 +511,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestant1::
 # 256 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 257 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_MyAzurillWasDistracted, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_MyAzurillWasDistracted, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 258 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 259 "data/maps/LilycoveCity_ContestHall/scripts.pory"

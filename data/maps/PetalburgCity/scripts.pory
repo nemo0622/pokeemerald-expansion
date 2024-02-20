@@ -90,7 +90,7 @@ PetalburgCity_EventScript_WalkToWallyHouse::
 PetalburgCity_EventScript_Boy::
 	lock
 	faceplayer
-	msgbox PetalburgCity_Text_WaterReflection, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Text_WaterReflection, MSGBOX_DEFAULT, MUGSHOT_BOY1
 	closemessage
 	applymovement LOCALID_BOY, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -702,7 +702,7 @@ PetalburgCity_Movement_PlayerWatchScottExit3:
 	step_end
 
 PetalburgCity_EventScript_GymBoy::
-	msgbox PetalburgCity_Text_AreYouRookieTrainer, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Text_AreYouRookieTrainer, MSGBOX_NPC, MUGSHOT_BOY2
 	end
 
 PetalburgCity_Text_WhereIsWally:

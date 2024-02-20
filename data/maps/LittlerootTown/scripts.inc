@@ -515,7 +515,7 @@ LittlerootTown_EventScript_FatMan::
 # 258 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_EventScript_Boy::
 # 259 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_BirchSpendsDaysInLab, MSGBOX_NPC
+	msgbox_mugshot LittlerootTown_Text_BirchSpendsDaysInLab, MSGBOX_NPC, MUGSHOT_BOY2
 # 260 "data/maps/LittlerootTown/scripts.pory"
 	end
 # 261 "data/maps/LittlerootTown/scripts.pory"

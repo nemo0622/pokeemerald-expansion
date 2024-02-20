@@ -28,7 +28,7 @@ SlateportCity_Mart_Pokemart:
 	end
 
 SlateportCity_Mart_EventScript_BlackBelt::
-	msgbox SlateportCity_Mart_Text_SomeItemsOnlyAtMart, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Mart_Text_SomeItemsOnlyAtMart, MSGBOX_NPC, MUGSHOT_BLACKBELT
 	end
 
 SlateportCity_Mart_EventScript_Man::

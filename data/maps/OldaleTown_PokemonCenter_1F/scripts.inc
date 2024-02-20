@@ -51,7 +51,7 @@ OldaleTown_PokemonCenter_1F_EventScript_Gentleman::
 # 26 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 OldaleTown_PokemonCenter_1F_EventScript_Boy::
 # 27 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	msgbox OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat, MSGBOX_NPC, MUGSHOT_BOY1
 # 28 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	end
 # 29 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"

@@ -1003,7 +1003,7 @@ BattleFrontier_BattleTowerLobby_EventScript_Woman::
 # 502 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_EventScript_Boy::
 # 503 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	msgbox BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins, MSGBOX_NPC, MUGSHOT_BOY1
 # 504 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	end
 # 505 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"

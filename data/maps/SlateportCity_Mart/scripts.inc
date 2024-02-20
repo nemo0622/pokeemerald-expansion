@@ -59,7 +59,7 @@ SlateportCity_Mart_Pokemart:
 # 30 "data/maps/SlateportCity_Mart/scripts.pory"
 SlateportCity_Mart_EventScript_BlackBelt::
 # 31 "data/maps/SlateportCity_Mart/scripts.pory"
-	msgbox SlateportCity_Mart_Text_SomeItemsOnlyAtMart, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Mart_Text_SomeItemsOnlyAtMart, MSGBOX_NPC, MUGSHOT_BLACKBELT
 # 32 "data/maps/SlateportCity_Mart/scripts.pory"
 	end
 # 33 "data/maps/SlateportCity_Mart/scripts.pory"

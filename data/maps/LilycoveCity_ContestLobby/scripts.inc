@@ -955,7 +955,7 @@ LilycoveCity_ContestLobby_Movement_ReceptionistFacePlayer:
 # 478 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_BlackBelt::
 # 479 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox LilycoveCity_ContestLobby_Text_MasterRankHereICome, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_MasterRankHereICome, MSGBOX_NPC, MUGSHOT_BLACKBELT
 # 480 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	end
 # 481 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -1087,7 +1087,7 @@ LilycoveCity_ContestLobby_EventScript_ContestWinner6::
 # 544 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_Blender3Boy::
 # 545 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox BerryBlender_Text_LetsGetBlendingAlready, MSGBOX_NPC
+	msgbox_mugshot BerryBlender_Text_LetsGetBlendingAlready, MSGBOX_NPC, MUGSHOT_BOY1
 # 546 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	end
 # 547 "data/maps/LilycoveCity_ContestLobby/scripts.pory"

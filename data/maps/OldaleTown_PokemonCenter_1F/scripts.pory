@@ -24,7 +24,7 @@ OldaleTown_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 OldaleTown_PokemonCenter_1F_EventScript_Boy::
-	msgbox OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat, MSGBOX_NPC, MUGSHOT_BOY1
 	end
 
 OldaleTown_PokemonCenter_1F_EventScript_Girl::

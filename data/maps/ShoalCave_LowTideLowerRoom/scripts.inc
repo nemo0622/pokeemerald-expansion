@@ -73,7 +73,7 @@ ShoalCave_LowTideLowerRoom_EventScript_BlackBelt::
 # 37 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	goto_if_set FLAG_RECEIVED_FOCUS_BAND, ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand
 # 38 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	msgbox ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus, MSGBOX_DEFAULT
+	msgbox_mugshot ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 39 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	giveitem ITEM_FOCUS_BAND
 # 40 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
@@ -89,7 +89,7 @@ ShoalCave_LowTideLowerRoom_EventScript_BlackBelt::
 # 45 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand::
 # 46 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	msgbox ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus, MSGBOX_DEFAULT
+	msgbox_mugshot ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 47 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	release
 # 48 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"

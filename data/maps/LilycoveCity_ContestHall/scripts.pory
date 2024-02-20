@@ -32,7 +32,7 @@ LilycoveCity_ContestHall_MapScripts::
 	.byte 0
 
 LilycoveCity_ContestHall_EventScript_Boy1::
-	msgbox LilycoveCity_ContestHall_Text_TodayWonSmartnessContest, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestHall_Text_TodayWonSmartnessContest, MSGBOX_NPC, MUGSHOT_BOY1
 	end
 
 LilycoveCity_ContestHall_EventScript_Boy2::
@@ -114,7 +114,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestAudience1::
 LilycoveCity_ContestHall_EventScript_SmartContestAudience2::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_AllSeemToUseDifferentMoves, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_AllSeemToUseDifferentMoves, MSGBOX_DEFAULT, MUGSHOT_BOY1
 	closemessage
 	applymovement LOCALID_SMART_AUDIENCE_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -254,7 +254,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestJudge::
 LilycoveCity_ContestHall_EventScript_CuteContestant1::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_MyAzurillWasDistracted, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_MyAzurillWasDistracted, MSGBOX_DEFAULT, MUGSHOT_BOY2
 	closemessage
 	applymovement LOCALID_CUTE_CONTESTANT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0

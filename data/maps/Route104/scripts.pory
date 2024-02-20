@@ -320,7 +320,7 @@ Route104_EventScript_TrainerTipsDoubleBattles::
 	end
 
 Route104_EventScript_Boy1::
-	msgbox Route104_Text_ThrowBallAtWeakenedPokemon, MSGBOX_NPC
+	msgbox_mugshot Route104_Text_ThrowBallAtWeakenedPokemon, MSGBOX_NPC, MUGSHOT_BOY1
 	end
 
 Route104_EventScript_Woman::
@@ -331,7 +331,7 @@ Route104_EventScript_Boy2::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM_BULLET_SEED, Route104_EventScript_ReceivedBulletSeed
-	msgbox Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT, MUGSHOT_BOY2
 	giveitem ITEM_TM_BULLET_SEED
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_BULLET_SEED
@@ -339,7 +339,7 @@ Route104_EventScript_Boy2::
 	end
 
 Route104_EventScript_ReceivedBulletSeed::
-	msgbox Route104_Text_TMsAreOneTimeUse, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_TMsAreOneTimeUse, MSGBOX_DEFAULT, MUGSHOT_BOY2
 	release
 	end
 

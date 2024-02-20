@@ -63,7 +63,7 @@ VerdanturfTown_Mart_Pokemart:
 # 32 "data/maps/VerdanturfTown_Mart/scripts.pory"
 VerdanturfTown_Mart_EventScript_Boy::
 # 33 "data/maps/VerdanturfTown_Mart/scripts.pory"
-	msgbox VerdanturfTown_Mart_Text_XSpecialIsCrucial, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_Mart_Text_XSpecialIsCrucial, MSGBOX_NPC, MUGSHOT_BOY2
 # 34 "data/maps/VerdanturfTown_Mart/scripts.pory"
 	end
 # 35 "data/maps/VerdanturfTown_Mart/scripts.pory"

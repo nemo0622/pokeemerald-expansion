@@ -111,7 +111,7 @@ OldaleTown_Mart_EventScript_PokeBallsInStock::
 # 56 "data/maps/OldaleTown_Mart/scripts.pory"
 OldaleTown_Mart_EventScript_Boy::
 # 57 "data/maps/OldaleTown_Mart/scripts.pory"
-	msgbox OldaleTown_Mart_Text_RestoreHPWithPotion, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_Mart_Text_RestoreHPWithPotion, MSGBOX_NPC, MUGSHOT_BOY1
 # 58 "data/maps/OldaleTown_Mart/scripts.pory"
 	end
 # 59 "data/maps/OldaleTown_Mart/scripts.pory"

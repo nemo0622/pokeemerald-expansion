@@ -861,7 +861,7 @@ SootopolisCity_EventScript_Boy1::
 	goto_if_set FLAG_SYS_GAME_CLEAR, SootopolisCity_EventScript_Boy1GameClear
 	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_Boy1Normal
 	goto_if_le VAR_SOOTOPOLIS_CITY_STATE, 1, SootopolisCity_EventScript_Boy1Normal
-	msgbox SootopolisCity_Text_GiantPokemonSuddenlyAppeared, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_GiantPokemonSuddenlyAppeared, MSGBOX_DEFAULT, MUGSHOT_BOY1
 	closemessage
 	applymovement LOCALID_BOY_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -869,17 +869,17 @@ SootopolisCity_EventScript_Boy1::
 	end
 
 SootopolisCity_EventScript_Boy1Rayquaza::
-	msgbox SootopolisCity_Text_WhatIsThatGreenPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_WhatIsThatGreenPokemon, MSGBOX_DEFAULT, MUGSHOT_BOY1
 	release
 	end
 
 SootopolisCity_EventScript_Boy1GameClear::
-	msgbox SootopolisCity_Text_WhereDidLegendariesGo, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_WhereDidLegendariesGo, MSGBOX_DEFAULT, MUGSHOT_BOY1
 	release
 	end
 
 SootopolisCity_EventScript_Boy1Normal::
-	msgbox SootopolisCity_Text_PhysicallyFitLivingHere, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_PhysicallyFitLivingHere, MSGBOX_DEFAULT, MUGSHOT_BOY1
 	release
 	end
 
@@ -1229,7 +1229,7 @@ SootopolisCity_EventScript_Boy2::
 	applymovement LOCALID_BOY_2, Common_Movement_FacePlayer
 	waitmovement 0
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_Boy2Rayquaza
-	msgbox SootopolisCity_Text_TwoPokemonArentAngry, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_TwoPokemonArentAngry, MSGBOX_DEFAULT, MUGSHOT_BOY2
 	closemessage
 	applymovement LOCALID_BOY_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -1237,7 +1237,7 @@ SootopolisCity_EventScript_Boy2::
 	end
 
 SootopolisCity_EventScript_Boy2Rayquaza::
-	msgbox SootopolisCity_Text_FlyingMonStoppedRampage, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_FlyingMonStoppedRampage, MSGBOX_DEFAULT, MUGSHOT_BOY2
 	closemessage
 	releaseall
 	end
@@ -1245,11 +1245,11 @@ SootopolisCity_EventScript_Boy2Rayquaza::
 SootopolisCity_EventScript_BlackBelt::
 	lockall
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_BlackBeltRayquaza
-	msgbox SootopolisCity_Text_GoRedAndBlueMon, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_GoRedAndBlueMon, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 	closemessage
 	applymovement LOCALID_BLACK_BELT, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox SootopolisCity_Text_DoYouKnowMonNames, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_DoYouKnowMonNames, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 	closemessage
 	applymovement LOCALID_BLACK_BELT, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -1259,7 +1259,7 @@ SootopolisCity_EventScript_BlackBelt::
 SootopolisCity_EventScript_BlackBeltRayquaza::
 	applymovement LOCALID_BLACK_BELT, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox SootopolisCity_Text_GreenOneSettlesThings, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_GreenOneSettlesThings, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 	releaseall
 	end
 

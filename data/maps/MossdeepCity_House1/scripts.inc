@@ -15,13 +15,13 @@ MossdeepCity_House1_EventScript_BlackBelt::
 # 8 "data/maps/MossdeepCity_House1/scripts.pory"
 	bufferleadmonspeciesname STR_VAR_1
 # 9 "data/maps/MossdeepCity_House1/scripts.pory"
-	msgbox MossdeepCity_House1_Text_HmmYourPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House1_Text_HmmYourPokemon, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 10 "data/maps/MossdeepCity_House1/scripts.pory"
 	specialvar VAR_RESULT, GetPokeblockNameByMonNature
 # 11 "data/maps/MossdeepCity_House1/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, MossdeepCity_House1_EventScript_NeutralNature
 # 12 "data/maps/MossdeepCity_House1/scripts.pory"
-	msgbox MossdeepCity_House1_Text_ItLikesXPokeblocks, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House1_Text_ItLikesXPokeblocks, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 13 "data/maps/MossdeepCity_House1/scripts.pory"
 	release
 # 14 "data/maps/MossdeepCity_House1/scripts.pory"
@@ -31,7 +31,7 @@ MossdeepCity_House1_EventScript_BlackBelt::
 # 16 "data/maps/MossdeepCity_House1/scripts.pory"
 MossdeepCity_House1_EventScript_NeutralNature::
 # 17 "data/maps/MossdeepCity_House1/scripts.pory"
-	msgbox MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 18 "data/maps/MossdeepCity_House1/scripts.pory"
 	release
 # 19 "data/maps/MossdeepCity_House1/scripts.pory"

@@ -123,7 +123,7 @@ PetalburgCity_Mart_EventScript_Woman::
 # 62 "data/maps/PetalburgCity_Mart/scripts.pory"
 PetalburgCity_Mart_EventScript_Boy::
 # 63 "data/maps/PetalburgCity_Mart/scripts.pory"
-	msgbox PetalburgCity_Mart_Text_RepelIsUseful, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Mart_Text_RepelIsUseful, MSGBOX_NPC, MUGSHOT_BOY1
 # 64 "data/maps/PetalburgCity_Mart/scripts.pory"
 	end
 # 65 "data/maps/PetalburgCity_Mart/scripts.pory"

@@ -339,7 +339,7 @@ Route116_EventScript_Sarah::
 
 Route116_EventScript_Dawson::
 	trainerbattle_single TRAINER_DAWSON, Route116_Text_DawsonIntro, Route116_Text_DawsonDefeat
-	msgbox Route116_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BOY2
 	end
 
 Route116_EventScript_Devan::

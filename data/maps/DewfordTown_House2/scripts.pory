@@ -24,7 +24,7 @@ DewfordTown_House2_EventScript_ExplainSilkScarf::
 	end
 
 DewfordTown_House2_EventScript_Boy::
-	msgbox DewfordTown_House2_Text_BrawlySoCool, MSGBOX_NPC
+	msgbox_mugshot DewfordTown_House2_Text_BrawlySoCool, MSGBOX_NPC, MUGSHOT_BOY2
 	end
 
 DewfordTown_House2_Text_WantYouToHaveSilkScarf:

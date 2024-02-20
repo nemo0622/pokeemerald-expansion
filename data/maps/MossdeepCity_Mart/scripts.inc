@@ -67,7 +67,7 @@ MossdeepCity_Mart_EventScript_Woman::
 # 34 "data/maps/MossdeepCity_Mart/scripts.pory"
 MossdeepCity_Mart_EventScript_Boy::
 # 35 "data/maps/MossdeepCity_Mart/scripts.pory"
-	msgbox MossdeepCity_Mart_Text_MaxRepelLastsLongest, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Mart_Text_MaxRepelLastsLongest, MSGBOX_NPC, MUGSHOT_BOY2
 # 36 "data/maps/MossdeepCity_Mart/scripts.pory"
 	end
 # 37 "data/maps/MossdeepCity_Mart/scripts.pory"

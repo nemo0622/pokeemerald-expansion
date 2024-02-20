@@ -286,7 +286,7 @@ BattleFrontier_OutsideWest_EventScript_Woman3::
 
 BattleFrontier_OutsideWest_EventScript_Boy2::
 	lock
-	msgbox BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering, MSGBOX_DEFAULT
+	msgbox_mugshot BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering, MSGBOX_DEFAULT, MUGSHOT_BOY1
 	release
 	end
 

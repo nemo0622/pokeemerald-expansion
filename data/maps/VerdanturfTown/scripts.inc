@@ -81,7 +81,7 @@ VerdanturfTown_EventScript_Boy::
 # 41 "data/maps/VerdanturfTown/scripts.pory"
 	goto_if_set FLAG_RUSTURF_TUNNEL_OPENED, VerdanturfTown_EventScript_BoyTunnelOpen
 # 42 "data/maps/VerdanturfTown/scripts.pory"
-	msgbox VerdanturfTown_Text_GuyTryingToBustThroughCave, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_Text_GuyTryingToBustThroughCave, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 43 "data/maps/VerdanturfTown/scripts.pory"
 	release
 # 44 "data/maps/VerdanturfTown/scripts.pory"
@@ -91,7 +91,7 @@ VerdanturfTown_EventScript_Boy::
 # 46 "data/maps/VerdanturfTown/scripts.pory"
 VerdanturfTown_EventScript_BoyTunnelOpen::
 # 47 "data/maps/VerdanturfTown/scripts.pory"
-	msgbox VerdanturfTown_Text_EasyToGetToRustboroNow, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_Text_EasyToGetToRustboroNow, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 48 "data/maps/VerdanturfTown/scripts.pory"
 	release
 # 49 "data/maps/VerdanturfTown/scripts.pory"

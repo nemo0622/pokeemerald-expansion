@@ -931,7 +931,7 @@ Route119_EventScript_Boy1::
 # 466 "data/maps/Route119/scripts.pory"
 Route119_EventScript_Boy2::
 # 467 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_CanYourMonMakeSecretBase, MSGBOX_NPC
+	msgbox_mugshot Route119_Text_CanYourMonMakeSecretBase, MSGBOX_NPC, MUGSHOT_BOY2
 # 468 "data/maps/Route119/scripts.pory"
 	end
 # 469 "data/maps/Route119/scripts.pory"

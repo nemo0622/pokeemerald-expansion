@@ -445,7 +445,7 @@ BattleFrontier_BattlePikeLobby_EventScript_Twin::
 # 223 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 BattleFrontier_BattlePikeLobby_EventScript_Beauty::
 # 224 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
-	msgbox BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere, MSGBOX_NPC, MUGSHOT_BEAUTY
 # 225 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	end
 # 226 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"

@@ -643,7 +643,7 @@ Route104_EventScript_TrainerTipsDoubleBattles::
 # 322 "data/maps/Route104/scripts.pory"
 Route104_EventScript_Boy1::
 # 323 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_ThrowBallAtWeakenedPokemon, MSGBOX_NPC
+	msgbox_mugshot Route104_Text_ThrowBallAtWeakenedPokemon, MSGBOX_NPC, MUGSHOT_BOY1
 # 324 "data/maps/Route104/scripts.pory"
 	end
 # 325 "data/maps/Route104/scripts.pory"
@@ -665,7 +665,7 @@ Route104_EventScript_Boy2::
 # 333 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_BULLET_SEED, Route104_EventScript_ReceivedBulletSeed
 # 334 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 335 "data/maps/Route104/scripts.pory"
 	giveitem ITEM_TM_BULLET_SEED
 # 336 "data/maps/Route104/scripts.pory"
@@ -681,7 +681,7 @@ Route104_EventScript_Boy2::
 # 341 "data/maps/Route104/scripts.pory"
 Route104_EventScript_ReceivedBulletSeed::
 # 342 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_TMsAreOneTimeUse, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_TMsAreOneTimeUse, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 343 "data/maps/Route104/scripts.pory"
 	release
 # 344 "data/maps/Route104/scripts.pory"

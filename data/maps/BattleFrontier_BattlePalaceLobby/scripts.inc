@@ -627,7 +627,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_ShowDoublesResults::
 # 314 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 BattleFrontier_BattlePalaceLobby_EventScript_BlackBelt::
 # 315 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-	msgbox BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink, MSGBOX_NPC, MUGSHOT_BLACKBELT
 # 316 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	end
 # 317 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
@@ -643,7 +643,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_Man::
 # 322 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 BattleFrontier_BattlePalaceLobby_EventScript_Beauty::
 # 323 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-	msgbox BattleFrontier_BattlePalaceLobby_Text_MonDocileButTransforms, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattlePalaceLobby_Text_MonDocileButTransforms, MSGBOX_NPC, MUGSHOT_BEAUTY
 # 324 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	end
 # 325 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"

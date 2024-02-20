@@ -187,7 +187,7 @@ Route120_EventScript_BerryBeauty::
 # 94 "data/maps/Route120/scripts.pory"
 	goto_if_set FLAG_DAILY_ROUTE_120_RECEIVED_BERRY, Route120_EventScript_ReceivedBerry
 # 95 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_BerriesExpressionOfLoveIsntIt, MSGBOX_YESNO
+	msgbox_mugshot Route120_Text_BerriesExpressionOfLoveIsntIt, MSGBOX_YESNO, MUGSHOT_BEAUTY
 # 96 "data/maps/Route120/scripts.pory"
 	call_if_eq VAR_RESULT, YES, Route120_EventScript_BerryLove
 # 97 "data/maps/Route120/scripts.pory"
@@ -279,7 +279,7 @@ Route120_EventScript_GiveBerry::
 # 140 "data/maps/Route120/scripts.pory"
 	setflag FLAG_DAILY_ROUTE_120_RECEIVED_BERRY
 # 141 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_BerryIsRareRaiseItWithCare, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_BerryIsRareRaiseItWithCare, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 # 142 "data/maps/Route120/scripts.pory"
 	release
 # 143 "data/maps/Route120/scripts.pory"
@@ -289,7 +289,7 @@ Route120_EventScript_GiveBerry::
 # 145 "data/maps/Route120/scripts.pory"
 Route120_EventScript_ReceivedBerry::
 # 146 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_IllGetMoreBerriesFromBerryMaster, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_IllGetMoreBerriesFromBerryMaster, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 # 147 "data/maps/Route120/scripts.pory"
 	release
 # 148 "data/maps/Route120/scripts.pory"
@@ -299,7 +299,7 @@ Route120_EventScript_ReceivedBerry::
 # 150 "data/maps/Route120/scripts.pory"
 Route120_EventScript_BerryLove::
 # 151 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_YesYouUnderstand, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_YesYouUnderstand, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 # 152 "data/maps/Route120/scripts.pory"
 	return
 # 153 "data/maps/Route120/scripts.pory"
@@ -307,7 +307,7 @@ Route120_EventScript_BerryLove::
 # 154 "data/maps/Route120/scripts.pory"
 Route120_EventScript_BerryNotLove::
 # 155 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_MakeYourOwnImpressions, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_MakeYourOwnImpressions, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 # 156 "data/maps/Route120/scripts.pory"
 	return
 # 157 "data/maps/Route120/scripts.pory"

@@ -51,7 +51,7 @@ RustboroCity_PokemonCenter_1F_EventScript_Man::
 # 26 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 RustboroCity_PokemonCenter_1F_EventScript_Boy::
 # 27 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	msgbox RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon, MSGBOX_NPC, MUGSHOT_BOY1
 # 28 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	end
 # 29 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"

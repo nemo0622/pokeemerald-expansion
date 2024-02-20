@@ -30,7 +30,7 @@ VerdanturfTown_Mart_Pokemart:
 	end
 
 VerdanturfTown_Mart_EventScript_Boy::
-	msgbox VerdanturfTown_Mart_Text_XSpecialIsCrucial, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_Mart_Text_XSpecialIsCrucial, MSGBOX_NPC, MUGSHOT_BOY2
 	end
 
 VerdanturfTown_Mart_EventScript_ExpertF::

@@ -37,7 +37,7 @@ FortreeCity_Mart_EventScript_Girl::
 	end
 
 FortreeCity_Mart_EventScript_Boy::
-	msgbox FortreeCity_Mart_Text_RareCandyMakesMonGrow, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Mart_Text_RareCandyMakesMonGrow, MSGBOX_NPC, MUGSHOT_BOY2
 	end
 
 FortreeCity_Mart_Text_SuperRepelBetter:

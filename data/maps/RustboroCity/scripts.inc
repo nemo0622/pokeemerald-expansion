@@ -359,7 +359,7 @@ RustboroCity_EventScript_Boy2::
 # 180 "data/maps/RustboroCity/scripts.pory"
 	goto_if_set FLAG_RECEIVED_POKENAV, RustboroCity_EventScript_Boy2BrineyLeftTunnel
 # 181 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_MrBrineyWalksInTheTunnel, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MrBrineyWalksInTheTunnel, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 182 "data/maps/RustboroCity/scripts.pory"
 	release
 # 183 "data/maps/RustboroCity/scripts.pory"
@@ -369,7 +369,7 @@ RustboroCity_EventScript_Boy2::
 # 185 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_Boy2BrineyLeftTunnel::
 # 186 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_MrBrineyLovesPeeko, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MrBrineyLovesPeeko, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 187 "data/maps/RustboroCity/scripts.pory"
 	release
 # 188 "data/maps/RustboroCity/scripts.pory"
@@ -2041,7 +2041,7 @@ RustboroCity_Movement_RivalApproachPlayer7:
 # 1021 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_Boy1::
 # 1022 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC, MUGSHOT_BOY1
 # 1023 "data/maps/RustboroCity/scripts.pory"
 	end
 # 1024 "data/maps/RustboroCity/scripts.pory"

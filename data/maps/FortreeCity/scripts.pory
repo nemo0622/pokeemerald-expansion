@@ -38,7 +38,7 @@ FortreeCity_EventScript_OldMan::
 	end
 
 FortreeCity_EventScript_Boy::
-	msgbox FortreeCity_Text_BugPokemonComeThroughWindow, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Text_BugPokemonComeThroughWindow, MSGBOX_NPC, MUGSHOT_BOY1
 	end
 
 FortreeCity_EventScript_GameboyKid::

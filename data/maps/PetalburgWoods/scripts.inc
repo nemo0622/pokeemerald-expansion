@@ -487,7 +487,7 @@ PetalburgWoods_Movement_AquaApproachPlayer:
 # 244 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_EventScript_Boy1::
 # 245 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_StayOutOfTallGrass, MSGBOX_NPC
+	msgbox_mugshot PetalburgWoods_Text_StayOutOfTallGrass, MSGBOX_NPC, MUGSHOT_BOY2
 # 246 "data/maps/PetalburgWoods/scripts.pory"
 	end
 # 247 "data/maps/PetalburgWoods/scripts.pory"

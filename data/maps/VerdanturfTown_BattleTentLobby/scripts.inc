@@ -495,7 +495,7 @@ VerdanturfTown_BattleTentLobby_EventScript_Boy2::
 # 248 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	lock
 # 249 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
-	msgbox VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 250 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	release
 # 251 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"

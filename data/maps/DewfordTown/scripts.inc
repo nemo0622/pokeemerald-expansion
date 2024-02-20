@@ -1209,7 +1209,7 @@ DewfordTown_EventScript_TrendyPhraseBoy::
 # 605 "data/maps/DewfordTown/scripts.pory"
 	call Common_EventScript_BufferTrendyPhrase
 # 606 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_XIsTheBiggestHappeningThingRight, MSGBOX_YESNO
+	msgbox_mugshot DewfordTown_Text_XIsTheBiggestHappeningThingRight, MSGBOX_YESNO, MUGSHOT_BOY1
 # 607 "data/maps/DewfordTown/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_ConfirmTrendyPhrase
 # 608 "data/maps/DewfordTown/scripts.pory"

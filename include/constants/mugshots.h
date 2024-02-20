@@ -29,5 +29,9 @@
 #define MUGSHOT_ARCHIE  24
 #define MUGSHOT_MAXIE  25
 #define MUGSHOT_YOUNGSTER  26
+#define MUGSHOT_BEAUTY  27
+#define MUGSHOT_BLACKBELT  28
+#define MUGSHOT_BOY1  29
+#define MUGSHOT_BOY2  30
 
 #endif

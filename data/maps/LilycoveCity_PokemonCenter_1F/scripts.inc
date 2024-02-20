@@ -73,7 +73,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Nurse::
 # 37 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
 LilycoveCity_PokemonCenter_1F_EventScript_Boy::
 # 38 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
-	msgbox LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon, MSGBOX_NPC, MUGSHOT_BOY1
 # 39 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
 	end
 # 40 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"

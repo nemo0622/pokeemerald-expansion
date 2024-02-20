@@ -15,7 +15,7 @@ SootopolisCity_House1_EventScript_BrickBreakBlackBelt::
 # 8 "data/maps/SootopolisCity_House1/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_BRICK_BREAK, SootopolisCity_House1_EventScript_ReceivedBrickBreak
 # 9 "data/maps/SootopolisCity_House1/scripts.pory"
-	msgbox SootopolisCity_House1_Text_DevelopedThisTM, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House1_Text_DevelopedThisTM, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 10 "data/maps/SootopolisCity_House1/scripts.pory"
 	giveitem ITEM_TM_BRICK_BREAK
 # 11 "data/maps/SootopolisCity_House1/scripts.pory"
@@ -23,7 +23,7 @@ SootopolisCity_House1_EventScript_BrickBreakBlackBelt::
 # 12 "data/maps/SootopolisCity_House1/scripts.pory"
 	setflag FLAG_RECEIVED_TM_BRICK_BREAK
 # 13 "data/maps/SootopolisCity_House1/scripts.pory"
-	msgbox SootopolisCity_House1_Text_ExplainBrickBreak, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House1_Text_ExplainBrickBreak, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 14 "data/maps/SootopolisCity_House1/scripts.pory"
 	release
 # 15 "data/maps/SootopolisCity_House1/scripts.pory"
@@ -33,7 +33,7 @@ SootopolisCity_House1_EventScript_BrickBreakBlackBelt::
 # 17 "data/maps/SootopolisCity_House1/scripts.pory"
 SootopolisCity_House1_EventScript_ReceivedBrickBreak::
 # 18 "data/maps/SootopolisCity_House1/scripts.pory"
-	msgbox SootopolisCity_House1_Text_ExplainBrickBreak, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House1_Text_ExplainBrickBreak, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 19 "data/maps/SootopolisCity_House1/scripts.pory"
 	release
 # 20 "data/maps/SootopolisCity_House1/scripts.pory"

@@ -81,7 +81,7 @@ SafariZone_South_Movement_ExitAttendantBlockDoor:
 # 41 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_South_EventScript_Boy::
 # 42 "data/maps/SafariZone_South/scripts.pory"
-	msgbox SafariZone_South_Text_Boy, MSGBOX_NPC
+	msgbox_mugshot SafariZone_South_Text_Boy, MSGBOX_NPC, MUGSHOT_BOY1
 # 43 "data/maps/SafariZone_South/scripts.pory"
 	end
 # 44 "data/maps/SafariZone_South/scripts.pory"

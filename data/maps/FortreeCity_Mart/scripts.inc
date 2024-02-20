@@ -77,7 +77,7 @@ FortreeCity_Mart_EventScript_Girl::
 # 39 "data/maps/FortreeCity_Mart/scripts.pory"
 FortreeCity_Mart_EventScript_Boy::
 # 40 "data/maps/FortreeCity_Mart/scripts.pory"
-	msgbox FortreeCity_Mart_Text_RareCandyMakesMonGrow, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Mart_Text_RareCandyMakesMonGrow, MSGBOX_NPC, MUGSHOT_BOY2
 # 41 "data/maps/FortreeCity_Mart/scripts.pory"
 	end
 # 42 "data/maps/FortreeCity_Mart/scripts.pory"

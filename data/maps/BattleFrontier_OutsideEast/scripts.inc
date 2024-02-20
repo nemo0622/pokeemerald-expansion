@@ -121,7 +121,7 @@ BattleFrontier_OutsideEast_EventScript_HexManiac::
 # 61 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 BattleFrontier_OutsideEast_EventScript_BlackBelt1::
 # 62 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
-	msgbox BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam, MSGBOX_NPC, MUGSHOT_BLACKBELT
 # 63 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 	end
 # 64 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
@@ -383,7 +383,7 @@ BattleFrontier_OutsideEast_EventScript_Woman2::
 # 192 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 BattleFrontier_OutsideEast_EventScript_BlackBelt2::
 # 193 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
-	msgbox BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere, MSGBOX_NPC, MUGSHOT_BLACKBELT
 # 194 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 	end
 # 195 "data/maps/BattleFrontier_OutsideEast/scripts.pory"

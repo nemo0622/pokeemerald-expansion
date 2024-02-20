@@ -191,7 +191,7 @@ Route103_Movement_WatchRivalExitFacingEastOrWest:
 	step_end
 
 Route103_EventScript_Boy::
-	msgbox Route103_Text_ShouldHaveBroughtPotion, MSGBOX_NPC
+	msgbox_mugshot Route103_Text_ShouldHaveBroughtPotion, MSGBOX_NPC, MUGSHOT_BOY1
 	end
 
 Route103_EventScript_Man::

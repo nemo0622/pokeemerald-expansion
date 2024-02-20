@@ -54,7 +54,7 @@ OldaleTown_Mart_EventScript_PokeBallsInStock::
 	end
 
 OldaleTown_Mart_EventScript_Boy::
-	msgbox OldaleTown_Mart_Text_RestoreHPWithPotion, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_Mart_Text_RestoreHPWithPotion, MSGBOX_NPC, MUGSHOT_BOY1
 	end
 
 OldaleTown_Mart_Text_PokeBallsAreSoldOut:

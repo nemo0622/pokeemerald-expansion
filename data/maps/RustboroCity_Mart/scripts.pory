@@ -62,7 +62,7 @@ RustboroCity_Mart_EventScript_PokefanF::
 	end
 
 RustboroCity_Mart_EventScript_Boy::
-	msgbox RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead, MSGBOX_NPC, MUGSHOT_BOY1
 	end
 
 RustboroCity_Mart_EventScript_BugCatcher::

@@ -51,7 +51,7 @@ DewfordTown_House2_EventScript_ExplainSilkScarf::
 # 26 "data/maps/DewfordTown_House2/scripts.pory"
 DewfordTown_House2_EventScript_Boy::
 # 27 "data/maps/DewfordTown_House2/scripts.pory"
-	msgbox DewfordTown_House2_Text_BrawlySoCool, MSGBOX_NPC
+	msgbox_mugshot DewfordTown_House2_Text_BrawlySoCool, MSGBOX_NPC, MUGSHOT_BOY2
 # 28 "data/maps/DewfordTown_House2/scripts.pory"
 	end
 # 29 "data/maps/DewfordTown_House2/scripts.pory"

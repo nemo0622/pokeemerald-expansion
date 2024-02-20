@@ -681,7 +681,7 @@ Route116_EventScript_Dawson::
 # 341 "data/maps/Route116/scripts.pory"
 	trainerbattle_single TRAINER_DAWSON, Route116_Text_DawsonIntro, Route116_Text_DawsonDefeat
 # 342 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BOY2
 # 343 "data/maps/Route116/scripts.pory"
 	end
 # 344 "data/maps/Route116/scripts.pory"

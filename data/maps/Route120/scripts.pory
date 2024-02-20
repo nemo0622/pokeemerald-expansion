@@ -92,7 +92,7 @@ Route120_EventScript_BerryBeauty::
 	faceplayer
 	dotimebasedevents
 	goto_if_set FLAG_DAILY_ROUTE_120_RECEIVED_BERRY, Route120_EventScript_ReceivedBerry
-	msgbox Route120_Text_BerriesExpressionOfLoveIsntIt, MSGBOX_YESNO
+	msgbox_mugshot Route120_Text_BerriesExpressionOfLoveIsntIt, MSGBOX_YESNO, MUGSHOT_BEAUTY
 	call_if_eq VAR_RESULT, YES, Route120_EventScript_BerryLove
 	call_if_eq VAR_RESULT, NO, Route120_EventScript_BerryNotLove
 	specialvar VAR_RESULT, GetPlayerTrainerIdOnesDigit
@@ -138,21 +138,21 @@ Route120_EventScript_GiveBerry::
 	giveitem VAR_0x8004
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_DAILY_ROUTE_120_RECEIVED_BERRY
-	msgbox Route120_Text_BerryIsRareRaiseItWithCare, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_BerryIsRareRaiseItWithCare, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 	release
 	end
 
 Route120_EventScript_ReceivedBerry::
-	msgbox Route120_Text_IllGetMoreBerriesFromBerryMaster, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_IllGetMoreBerriesFromBerryMaster, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 	release
 	end
 
 Route120_EventScript_BerryLove::
-	msgbox Route120_Text_YesYouUnderstand, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_YesYouUnderstand, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 	return
 
 Route120_EventScript_BerryNotLove::
-	msgbox Route120_Text_MakeYourOwnImpressions, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_MakeYourOwnImpressions, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 	return
 
 Route120_EventScript_Steven::

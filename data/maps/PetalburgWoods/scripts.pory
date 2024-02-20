@@ -242,7 +242,7 @@ PetalburgWoods_Movement_AquaApproachPlayer:
 	step_end
 
 PetalburgWoods_EventScript_Boy1::
-	msgbox PetalburgWoods_Text_StayOutOfTallGrass, MSGBOX_NPC
+	msgbox_mugshot PetalburgWoods_Text_StayOutOfTallGrass, MSGBOX_NPC, MUGSHOT_BOY2
 	end
 
 PetalburgWoods_EventScript_Boy2::

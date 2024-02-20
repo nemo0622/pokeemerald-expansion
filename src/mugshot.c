@@ -75,6 +75,14 @@ static const u32 sMugshotImg_Maxie[] = INCBIN_U32("graphics/mugshots/pics/mugsho
 static const u16 sMugshotPal_Maxie[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_maxie.gbapal");
 static const u32 sMugshotImg_Youngster[] = INCBIN_U32("graphics/mugshots/pics/mugshot_youngster.4bpp.lz");
 static const u16 sMugshotPal_Youngster[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_youngster.gbapal");
+static const u32 sMugshotImg_Beauty[] = INCBIN_U32("graphics/mugshots/pics/mugshot_beauty.4bpp.lz");
+static const u16 sMugshotPal_Beauty[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_beauty.gbapal");
+static const u32 sMugshotImg_BlackBelt[] = INCBIN_U32("graphics/mugshots/pics/mugshot_blackbelt.4bpp.lz");
+static const u16 sMugshotPal_BlackBelt[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_blackbelt.gbapal");
+static const u32 sMugshotImg_Boy1[] = INCBIN_U32("graphics/mugshots/pics/mugshot_boy1.4bpp.lz");
+static const u16 sMugshotPal_Boy1[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_boy1.gbapal");
+static const u32 sMugshotImg_Boy2[] = INCBIN_U32("graphics/mugshots/pics/mugshot_boy2.4bpp.lz");
+static const u16 sMugshotPal_Boy2[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_boy2.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -105,6 +113,10 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_ARCHIE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Archie, .palette = sMugshotPal_Archie},
     [MUGSHOT_MAXIE] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Maxie, .palette = sMugshotPal_Maxie},
     [MUGSHOT_YOUNGSTER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Youngster, .palette = sMugshotPal_Youngster},
+    [MUGSHOT_BEAUTY] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Beauty, .palette = sMugshotPal_Beauty},
+    [MUGSHOT_BLACKBELT] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_BlackBelt, .palette = sMugshotPal_BlackBelt},
+    [MUGSHOT_BOY1] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Boy1, .palette = sMugshotPal_Boy1},
+    [MUGSHOT_BOY2] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Boy2, .palette = sMugshotPal_Boy2},
 };
 
 

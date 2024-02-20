@@ -500,7 +500,7 @@ BattleFrontier_BattleTowerLobby_EventScript_Woman::
 	end
 
 BattleFrontier_BattleTowerLobby_EventScript_Boy::
-	msgbox BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins, MSGBOX_NPC, MUGSHOT_BOY1
 	end
 
 BattleFrontier_BattleTowerLobby_EventScript_ShowSinglesResults::

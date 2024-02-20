@@ -32,7 +32,7 @@ MossdeepCity_Mart_EventScript_Woman::
 	end
 
 MossdeepCity_Mart_EventScript_Boy::
-	msgbox MossdeepCity_Mart_Text_MaxRepelLastsLongest, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Mart_Text_MaxRepelLastsLongest, MSGBOX_NPC, MUGSHOT_BOY2
 	end
 
 MossdeepCity_Mart_EventScript_Sailor::

@@ -73,7 +73,7 @@ BattleFrontier_Lounge5_EventScript_Gentleman::
 # 37 "data/maps/BattleFrontier_Lounge5/scripts.pory"
 BattleFrontier_Lounge5_EventScript_BlackBelt::
 # 38 "data/maps/BattleFrontier_Lounge5/scripts.pory"
-	msgbox BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound, MSGBOX_NPC, MUGSHOT_BLACKBELT
 # 39 "data/maps/BattleFrontier_Lounge5/scripts.pory"
 	end
 # 40 "data/maps/BattleFrontier_Lounge5/scripts.pory"

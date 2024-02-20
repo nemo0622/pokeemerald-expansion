@@ -385,7 +385,7 @@ Route103_Movement_WatchRivalExitFacingEastOrWest:
 # 193 "data/maps/Route103/scripts.pory"
 Route103_EventScript_Boy::
 # 194 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_ShouldHaveBroughtPotion, MSGBOX_NPC
+	msgbox_mugshot Route103_Text_ShouldHaveBroughtPotion, MSGBOX_NPC, MUGSHOT_BOY1
 # 195 "data/maps/Route103/scripts.pory"
 	end
 # 196 "data/maps/Route103/scripts.pory"

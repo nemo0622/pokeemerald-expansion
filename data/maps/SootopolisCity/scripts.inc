@@ -1725,7 +1725,7 @@ SootopolisCity_EventScript_Boy1::
 # 863 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_le VAR_SOOTOPOLIS_CITY_STATE, 1, SootopolisCity_EventScript_Boy1Normal
 # 864 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_GiantPokemonSuddenlyAppeared, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_GiantPokemonSuddenlyAppeared, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 865 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 866 "data/maps/SootopolisCity/scripts.pory"
@@ -1741,7 +1741,7 @@ SootopolisCity_EventScript_Boy1::
 # 871 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_Boy1Rayquaza::
 # 872 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_WhatIsThatGreenPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_WhatIsThatGreenPokemon, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 873 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 874 "data/maps/SootopolisCity/scripts.pory"
@@ -1751,7 +1751,7 @@ SootopolisCity_EventScript_Boy1Rayquaza::
 # 876 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_Boy1GameClear::
 # 877 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_WhereDidLegendariesGo, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_WhereDidLegendariesGo, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 878 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 879 "data/maps/SootopolisCity/scripts.pory"
@@ -1761,7 +1761,7 @@ SootopolisCity_EventScript_Boy1GameClear::
 # 881 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_Boy1Normal::
 # 882 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_PhysicallyFitLivingHere, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_PhysicallyFitLivingHere, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 883 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 884 "data/maps/SootopolisCity/scripts.pory"
@@ -2461,7 +2461,7 @@ SootopolisCity_EventScript_Boy2::
 # 1231 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_Boy2Rayquaza
 # 1232 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_TwoPokemonArentAngry, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_TwoPokemonArentAngry, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 1233 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 1234 "data/maps/SootopolisCity/scripts.pory"
@@ -2477,7 +2477,7 @@ SootopolisCity_EventScript_Boy2::
 # 1239 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_Boy2Rayquaza::
 # 1240 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_FlyingMonStoppedRampage, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_FlyingMonStoppedRampage, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 1241 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 1242 "data/maps/SootopolisCity/scripts.pory"
@@ -2493,7 +2493,7 @@ SootopolisCity_EventScript_BlackBelt::
 # 1247 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_BlackBeltRayquaza
 # 1248 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_GoRedAndBlueMon, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_GoRedAndBlueMon, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 1249 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 1250 "data/maps/SootopolisCity/scripts.pory"
@@ -2501,7 +2501,7 @@ SootopolisCity_EventScript_BlackBelt::
 # 1251 "data/maps/SootopolisCity/scripts.pory"
 	waitmovement 0
 # 1252 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_DoYouKnowMonNames, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_DoYouKnowMonNames, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 1253 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 1254 "data/maps/SootopolisCity/scripts.pory"
@@ -2521,7 +2521,7 @@ SootopolisCity_EventScript_BlackBeltRayquaza::
 # 1261 "data/maps/SootopolisCity/scripts.pory"
 	waitmovement 0
 # 1262 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_GreenOneSettlesThings, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_GreenOneSettlesThings, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 1263 "data/maps/SootopolisCity/scripts.pory"
 	releaseall
 # 1264 "data/maps/SootopolisCity/scripts.pory"

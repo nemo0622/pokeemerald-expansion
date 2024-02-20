@@ -469,11 +469,11 @@ MossdeepCity_EventScript_KingsRockBoy::
 # 235 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_set FLAG_RECEIVED_KINGS_ROCK, MossdeepCity_EventScript_ReceivedKingsRock
 # 236 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_WantKingsRockStevenGaveMe, MSGBOX_YESNO
+	msgbox_mugshot MossdeepCity_Text_WantKingsRockStevenGaveMe, MSGBOX_YESNO, MUGSHOT_BOY2
 # 237 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MossdeepCity_EventScript_DeclineKingsRock
 # 238 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_YouCanKeepIt, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_YouCanKeepIt, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 239 "data/maps/MossdeepCity/scripts.pory"
 	giveitem ITEM_KINGS_ROCK
 # 240 "data/maps/MossdeepCity/scripts.pory"
@@ -489,7 +489,7 @@ MossdeepCity_EventScript_KingsRockBoy::
 # 245 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_ReceivedKingsRock::
 # 246 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_StevensHouseOverThere, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_StevensHouseOverThere, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 247 "data/maps/MossdeepCity/scripts.pory"
 	release
 # 248 "data/maps/MossdeepCity/scripts.pory"
@@ -499,7 +499,7 @@ MossdeepCity_EventScript_ReceivedKingsRock::
 # 250 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_DeclineKingsRock::
 # 251 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_WhatToDoWithWeirdRock, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_WhatToDoWithWeirdRock, MSGBOX_DEFAULT, MUGSHOT_BOY2
 # 252 "data/maps/MossdeepCity/scripts.pory"
 	release
 # 253 "data/maps/MossdeepCity/scripts.pory"
@@ -509,7 +509,7 @@ MossdeepCity_EventScript_DeclineKingsRock::
 # 255 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_BlackBelt::
 # 256 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_SootopolisNewGymLeader, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Text_SootopolisNewGymLeader, MSGBOX_NPC, MUGSHOT_BLACKBELT
 # 257 "data/maps/MossdeepCity/scripts.pory"
 	end
 # 258 "data/maps/MossdeepCity/scripts.pory"

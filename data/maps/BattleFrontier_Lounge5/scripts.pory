@@ -35,7 +35,7 @@ BattleFrontier_Lounge5_EventScript_Gentleman::
 	end
 
 BattleFrontier_Lounge5_EventScript_BlackBelt::
-	msgbox BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound, MSGBOX_NPC, MUGSHOT_BLACKBELT
 	end
 
 BattleFrontier_Lounge5_EventScript_LittleBoy::

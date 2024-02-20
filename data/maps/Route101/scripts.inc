@@ -427,7 +427,7 @@ Route101_EventScript_Youngster::
 # 214 "data/maps/Route101/scripts.pory"
 Route101_EventScript_Boy::
 # 215 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_WildPokemonInTallGrass, MSGBOX_NPC
+	msgbox_mugshot Route101_Text_WildPokemonInTallGrass, MSGBOX_NPC, MUGSHOT_BOY2
 # 216 "data/maps/Route101/scripts.pory"
 	end
 # 217 "data/maps/Route101/scripts.pory"

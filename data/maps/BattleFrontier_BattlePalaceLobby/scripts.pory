@@ -312,7 +312,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_ShowDoublesResults::
 	end
 
 BattleFrontier_BattlePalaceLobby_EventScript_BlackBelt::
-	msgbox BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink, MSGBOX_NPC, MUGSHOT_BLACKBELT
 	end
 
 BattleFrontier_BattlePalaceLobby_EventScript_Man::
@@ -320,7 +320,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_Man::
 	end
 
 BattleFrontier_BattlePalaceLobby_EventScript_Beauty::
-	msgbox BattleFrontier_BattlePalaceLobby_Text_MonDocileButTransforms, MSGBOX_NPC
+	msgbox_mugshot BattleFrontier_BattlePalaceLobby_Text_MonDocileButTransforms, MSGBOX_NPC, MUGSHOT_BEAUTY
 	end
 
 BattleFrontier_BattlePalaceLobby_EventScript_Maniac::

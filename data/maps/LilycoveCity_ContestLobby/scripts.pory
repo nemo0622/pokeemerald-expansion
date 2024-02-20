@@ -476,7 +476,7 @@ LilycoveCity_ContestLobby_Movement_ReceptionistFacePlayer:
 	step_end
 
 LilycoveCity_ContestLobby_EventScript_BlackBelt::
-	msgbox LilycoveCity_ContestLobby_Text_MasterRankHereICome, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_MasterRankHereICome, MSGBOX_NPC, MUGSHOT_BLACKBELT
 	end
 
 LilycoveCity_ContestLobby_EventScript_Girl::
@@ -542,7 +542,7 @@ LilycoveCity_ContestLobby_EventScript_ContestWinner6::
 	end
 
 LilycoveCity_ContestLobby_EventScript_Blender3Boy::
-	msgbox BerryBlender_Text_LetsGetBlendingAlready, MSGBOX_NPC
+	msgbox_mugshot BerryBlender_Text_LetsGetBlendingAlready, MSGBOX_NPC, MUGSHOT_BOY1
 	end
 
 LilycoveCity_ContestLobby_EventScript_Blender3Girl::

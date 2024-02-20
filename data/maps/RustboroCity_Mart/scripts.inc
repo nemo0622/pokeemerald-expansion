@@ -127,7 +127,7 @@ RustboroCity_Mart_EventScript_PokefanF::
 # 64 "data/maps/RustboroCity_Mart/scripts.pory"
 RustboroCity_Mart_EventScript_Boy::
 # 65 "data/maps/RustboroCity_Mart/scripts.pory"
-	msgbox RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead, MSGBOX_NPC, MUGSHOT_BOY1
 # 66 "data/maps/RustboroCity_Mart/scripts.pory"
 	end
 # 67 "data/maps/RustboroCity_Mart/scripts.pory"

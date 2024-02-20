@@ -183,7 +183,7 @@ PetalburgCity_EventScript_Boy::
 # 92 "data/maps/PetalburgCity/scripts.pory"
 	faceplayer
 # 93 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_Text_WaterReflection, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Text_WaterReflection, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 94 "data/maps/PetalburgCity/scripts.pory"
 	closemessage
 # 95 "data/maps/PetalburgCity/scripts.pory"
@@ -1407,7 +1407,7 @@ PetalburgCity_Movement_PlayerWatchScottExit3:
 # 704 "data/maps/PetalburgCity/scripts.pory"
 PetalburgCity_EventScript_GymBoy::
 # 705 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_Text_AreYouRookieTrainer, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Text_AreYouRookieTrainer, MSGBOX_NPC, MUGSHOT_BOY2
 # 706 "data/maps/PetalburgCity/scripts.pory"
 	end
 # 707 "data/maps/PetalburgCity/scripts.pory"

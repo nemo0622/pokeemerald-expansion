@@ -178,12 +178,12 @@ RustboroCity_EventScript_Boy2::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_POKENAV, RustboroCity_EventScript_Boy2BrineyLeftTunnel
-	msgbox RustboroCity_Text_MrBrineyWalksInTheTunnel, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MrBrineyWalksInTheTunnel, MSGBOX_DEFAULT, MUGSHOT_BOY2
 	release
 	end
 
 RustboroCity_EventScript_Boy2BrineyLeftTunnel::
-	msgbox RustboroCity_Text_MrBrineyLovesPeeko, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_MrBrineyLovesPeeko, MSGBOX_DEFAULT, MUGSHOT_BOY2
 	release
 	end
 
@@ -1019,7 +1019,7 @@ RustboroCity_Movement_RivalApproachPlayer7:
 	step_end
 
 RustboroCity_EventScript_Boy1::
-	msgbox RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC, MUGSHOT_BOY1
 	end
 
 RustboroCity_Text_WeShortenItToDevon:

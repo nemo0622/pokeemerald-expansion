@@ -464,7 +464,7 @@ Route119_EventScript_Boy1::
 	end
 
 Route119_EventScript_Boy2::
-	msgbox Route119_Text_CanYourMonMakeSecretBase, MSGBOX_NPC
+	msgbox_mugshot Route119_Text_CanYourMonMakeSecretBase, MSGBOX_NPC, MUGSHOT_BOY2
 	end
 
 Route119_EventScript_TrainerTipsDecoration::

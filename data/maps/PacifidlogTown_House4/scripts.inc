@@ -29,7 +29,7 @@ PacifidlogTown_House4_EventScript_Boy::
 # 15 "data/maps/PacifidlogTown_House4/scripts.pory"
 	faceplayer
 # 16 "data/maps/PacifidlogTown_House4/scripts.pory"
-	msgbox PacifidlogTown_House4_Text_WhereDidYouComeFrom, MSGBOX_YESNO
+	msgbox_mugshot PacifidlogTown_House4_Text_WhereDidYouComeFrom, MSGBOX_YESNO, MUGSHOT_BOY1
 # 17 "data/maps/PacifidlogTown_House4/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, PacifidlogTown_House4_EventScript_Yes
 # 18 "data/maps/PacifidlogTown_House4/scripts.pory"

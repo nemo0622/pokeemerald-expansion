@@ -246,7 +246,7 @@ VerdanturfTown_BattleTentLobby_EventScript_Boy1::
 
 VerdanturfTown_BattleTentLobby_EventScript_Boy2::
 	lock
-	msgbox VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves, MSGBOX_DEFAULT, MUGSHOT_BOY2
 	release
 	end
 

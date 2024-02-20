@@ -79,7 +79,7 @@ FortreeCity_EventScript_OldMan::
 # 40 "data/maps/FortreeCity/scripts.pory"
 FortreeCity_EventScript_Boy::
 # 41 "data/maps/FortreeCity/scripts.pory"
-	msgbox FortreeCity_Text_BugPokemonComeThroughWindow, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Text_BugPokemonComeThroughWindow, MSGBOX_NPC, MUGSHOT_BOY1
 # 42 "data/maps/FortreeCity/scripts.pory"
 	end
 # 43 "data/maps/FortreeCity/scripts.pory"

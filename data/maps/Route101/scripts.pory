@@ -212,7 +212,7 @@ Route101_EventScript_Youngster::
 	end
 
 Route101_EventScript_Boy::
-	msgbox Route101_Text_WildPokemonInTallGrass, MSGBOX_NPC
+	msgbox_mugshot Route101_Text_WildPokemonInTallGrass, MSGBOX_NPC, MUGSHOT_BOY2
 	end
 
 Route101_EventScript_RouteSign::

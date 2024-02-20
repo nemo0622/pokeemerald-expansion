@@ -603,7 +603,7 @@ DewfordTown_EventScript_TrendyPhraseBoy::
 	lock
 	faceplayer
 	call Common_EventScript_BufferTrendyPhrase
-	msgbox DewfordTown_Text_XIsTheBiggestHappeningThingRight, MSGBOX_YESNO
+	msgbox_mugshot DewfordTown_Text_XIsTheBiggestHappeningThingRight, MSGBOX_YESNO, MUGSHOT_BOY1
 	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_ConfirmTrendyPhrase
 	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_RejectTrendyPhrase
 	end
