@@ -83,7 +83,7 @@ MtPyre_2F_EventScript_Zander::
 # 42 "data/maps/MtPyre_2F/scripts.pory"
 	trainerbattle_single TRAINER_ZANDER, MtPyre_2F_Text_ZanderIntro, MtPyre_2F_Text_ZanderDefeat
 # 43 "data/maps/MtPyre_2F/scripts.pory"
-	msgbox MtPyre_2F_Text_ZanderPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_2F_Text_ZanderPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 44 "data/maps/MtPyre_2F/scripts.pory"
 	end
 # 45 "data/maps/MtPyre_2F/scripts.pory"

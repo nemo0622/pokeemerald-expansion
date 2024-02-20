@@ -339,17 +339,17 @@ Route119_EventScript_Taylor::
 
 Route119_EventScript_Doug::
 	trainerbattle_single TRAINER_DOUG, Route119_Text_DougIntro, Route119_Text_DougDefeat
-	msgbox Route119_Text_DougPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_DougPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 	end
 
 Route119_EventScript_Greg::
 	trainerbattle_single TRAINER_GREG, Route119_Text_GregIntro, Route119_Text_GregDefeat
-	msgbox Route119_Text_GregPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_GregPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 	end
 
 Route119_EventScript_Kent::
 	trainerbattle_single TRAINER_KENT, Route119_Text_KentIntro, Route119_Text_KentDefeat
-	msgbox Route119_Text_KentPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_KentPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 	end
 
 Route119_EventScript_Jackson::
@@ -460,7 +460,7 @@ Route119_EventScript_BridgeAquaGrunt2::
 	end
 
 Route119_EventScript_Boy1::
-	msgbox Route119_Text_ThoughtFlyByCatchingBirdMons, MSGBOX_NPC
+	msgbox_mugshot Route119_Text_ThoughtFlyByCatchingBirdMons, MSGBOX_NPC, MUGSHOT_BOY3
 	end
 
 Route119_EventScript_Boy2::

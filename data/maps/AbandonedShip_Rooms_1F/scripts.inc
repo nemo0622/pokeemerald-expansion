@@ -19,7 +19,7 @@ AbandonedShip_Rooms_1F_EventScript_Demetrius::
 # 10 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	trainerbattle_single TRAINER_DEMETRIUS, AbandonedShip_Rooms_1F_Text_DemetriusIntro, AbandonedShip_Rooms_1F_Text_DemetriusDefeat
 # 11 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms_1F_Text_DemetriusPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot AbandonedShip_Rooms_1F_Text_DemetriusPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 12 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	end
 # 13 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
@@ -33,7 +33,7 @@ AbandonedShip_Rooms_1F_EventScript_Thalia::
 # 17 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms_1F_EventScript_ThaliaRematch
 # 18 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms_1F_Text_ThaliaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot AbandonedShip_Rooms_1F_Text_ThaliaPostBattle, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 # 19 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	release
 # 20 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
@@ -47,7 +47,7 @@ AbandonedShip_Rooms_1F_EventScript_RegisterThalia::
 # 24 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	waitmovement 0
 # 25 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms_1F_Text_ThaliaRegister, MSGBOX_DEFAULT
+	msgbox_mugshot AbandonedShip_Rooms_1F_Text_ThaliaRegister, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 # 26 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	register_matchcall TRAINER_THALIA_1
 # 27 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
@@ -61,7 +61,7 @@ AbandonedShip_Rooms_1F_EventScript_ThaliaRematch::
 # 31 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	trainerbattle_rematch TRAINER_THALIA_1, AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro, AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat
 # 32 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms_1F_Text_ThaliaPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot AbandonedShip_Rooms_1F_Text_ThaliaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 # 33 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	end
 # 34 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"

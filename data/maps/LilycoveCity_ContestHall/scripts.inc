@@ -75,7 +75,7 @@ LilycoveCity_ContestHall_EventScript_Boy1::
 # 38 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 LilycoveCity_ContestHall_EventScript_Boy2::
 # 39 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_EnteredBunchOfContests, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestHall_Text_EnteredBunchOfContests, MSGBOX_NPC, MUGSHOT_BOY3
 # 40 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	end
 # 41 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -143,7 +143,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestant1::
 # 72 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 73 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_EnteredWrongContest, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_EnteredWrongContest, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 74 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 75 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -351,7 +351,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant2::
 # 176 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 177 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_OverdidGrooming, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_OverdidGrooming, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 178 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 179 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -551,7 +551,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestant3::
 # 276 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 277 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_PetalDanceIsMarvel, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_PetalDanceIsMarvel, MSGBOX_DEFAULT, MUGSHOT_BOY3
 # 278 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 279 "data/maps/LilycoveCity_ContestHall/scripts.pory"

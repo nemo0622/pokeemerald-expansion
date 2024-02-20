@@ -41,7 +41,7 @@ Route132_EventScript_Kiyo::
 # 21 "data/maps/Route132/scripts.pory"
 	trainerbattle_single TRAINER_KIYO, Route132_Text_KiyoIntro, Route132_Text_KiyoDefeat
 # 22 "data/maps/Route132/scripts.pory"
-	msgbox Route132_Text_KiyoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_KiyoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 23 "data/maps/Route132/scripts.pory"
 	end
 # 24 "data/maps/Route132/scripts.pory"

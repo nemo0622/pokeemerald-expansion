@@ -296,7 +296,7 @@ Route104_EventScript_Girl1::
 	end
 
 Route104_EventScript_BugCatcher::
-	msgbox Route104_Text_WhatsItLikeAtBottomOfSea, MSGBOX_SIGN
+	msgbox_mugshot Route104_Text_WhatsItLikeAtBottomOfSea, MSGBOX_SIGN, MUGSHOT_BUG_CATCHER
 	end
 
 Route104_EventScript_BrineysCottageSign::
@@ -854,7 +854,7 @@ Route104_EventScript_Ivan::
 
 Route104_EventScript_Billy::
 	trainerbattle_single TRAINER_BILLY, Route104_Text_BillyIntro, Route104_Text_BillyDefeat
-	msgbox Route104_Text_BillyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route104_Text_BillyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 	end
 
 Route104_EventScript_Haley::
@@ -983,14 +983,14 @@ Route104_EventScript_RematchCindy::
 Route104_EventScript_Gina::
 	trainerbattle_double TRAINER_GINA_AND_MIA_1, Route104_Text_GinaIntro, Route104_Text_GinaDefeat, Route104_Text_GinaNotEnoughMons
 	special GetPlayerBigGuyGirlString
-	msgbox Route104_Text_GinaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_GinaPostBattle, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	release
 	end
 
 Route104_EventScript_Mia::
 	trainerbattle_double TRAINER_GINA_AND_MIA_1, Route104_Text_MiaIntro, Route104_Text_MiaDefeat, Route104_Text_MiaNotEnoughMons
 	special GetPlayerBigGuyGirlString
-	msgbox Route104_Text_MiaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MiaPostBattle, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	release
 	end
 

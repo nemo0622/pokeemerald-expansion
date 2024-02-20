@@ -135,7 +135,7 @@ RustboroCity_Mart_EventScript_Boy::
 # 68 "data/maps/RustboroCity_Mart/scripts.pory"
 RustboroCity_Mart_EventScript_BugCatcher::
 # 69 "data/maps/RustboroCity_Mart/scripts.pory"
-	msgbox RustboroCity_Mart_Text_GettingEscapeRopeJustInCase, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Mart_Text_GettingEscapeRopeJustInCase, MSGBOX_NPC, MUGSHOT_BUG_CATCHER
 # 70 "data/maps/RustboroCity_Mart/scripts.pory"
 	end
 # 71 "data/maps/RustboroCity_Mart/scripts.pory"

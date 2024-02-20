@@ -75,7 +75,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande::
 # 38 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 VerdanturfTown_WandasHouse_EventScript_WandasBoyfriend::
 # 39 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay, MSGBOX_NPC, MUGSHOT_BLACKBELT
 # 40 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	end
 # 41 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"

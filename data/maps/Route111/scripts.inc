@@ -983,7 +983,7 @@ Route111_EventScript_Daisuke::
 # 492 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_DAISUKE, Route111_Text_DaisukeIntro, Route111_Text_DaisukeDefeat
 # 493 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_DaisukePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_DaisukePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 494 "data/maps/Route111/scripts.pory"
 	end
 # 495 "data/maps/Route111/scripts.pory"

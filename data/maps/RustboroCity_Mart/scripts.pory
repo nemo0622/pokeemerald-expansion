@@ -66,7 +66,7 @@ RustboroCity_Mart_EventScript_Boy::
 	end
 
 RustboroCity_Mart_EventScript_BugCatcher::
-	msgbox RustboroCity_Mart_Text_GettingEscapeRopeJustInCase, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Mart_Text_GettingEscapeRopeJustInCase, MSGBOX_NPC, MUGSHOT_BUG_CATCHER
 	end
 
 RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish:

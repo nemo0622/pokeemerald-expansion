@@ -77,7 +77,7 @@ Route109_SeashoreHouse_EventScript_Dwayne::
 
 Route109_SeashoreHouse_EventScript_Johanna::
 	trainerbattle_single TRAINER_JOHANNA, Route109_SeashoreHouse_Text_JohannaIntro, Route109_SeashoreHouse_Text_JohannaDefeated, Route109_SeashoreHouse_EventScript_CheckTrainersCompletion
-	msgbox Route109_SeashoreHouse_Text_JohannaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_SeashoreHouse_Text_JohannaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 	end
 
 Route109_SeashoreHouse_EventScript_Simon::

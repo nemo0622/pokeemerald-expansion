@@ -123,7 +123,7 @@ Route127_EventScript_Koji::
 # 62 "data/maps/Route127/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route127_EventScript_RematchKoji
 # 63 "data/maps/Route127/scripts.pory"
-	msgbox Route127_Text_KojiPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route127_Text_KojiPostBattle, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 64 "data/maps/Route127/scripts.pory"
 	release
 # 65 "data/maps/Route127/scripts.pory"
@@ -151,6 +151,6 @@ Route127_EventScript_RematchKoji::
 # 76 "data/maps/Route127/scripts.pory"
 	trainerbattle_rematch TRAINER_KOJI_1, Route127_Text_KojiRematchIntro, Route127_Text_KojiRematchDefeat
 # 77 "data/maps/Route127/scripts.pory"
-	msgbox Route127_Text_KojiPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route127_Text_KojiPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 78 "data/maps/Route127/scripts.pory"
 	end

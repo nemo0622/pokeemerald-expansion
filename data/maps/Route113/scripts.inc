@@ -101,7 +101,7 @@ Route113_EventScript_Jaylen::
 # 51 "data/maps/Route113/scripts.pory"
 	trainerbattle_single TRAINER_JAYLEN, Route113_Text_JaylenIntro, Route113_Text_JaylenDefeat
 # 52 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_JaylenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_JaylenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 53 "data/maps/Route113/scripts.pory"
 	end
 # 54 "data/maps/Route113/scripts.pory"
@@ -111,7 +111,7 @@ Route113_EventScript_Dillon::
 # 56 "data/maps/Route113/scripts.pory"
 	trainerbattle_single TRAINER_DILLON, Route113_Text_DillonIntro, Route113_Text_DillonDefeat
 # 57 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_DillonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_DillonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 58 "data/maps/Route113/scripts.pory"
 	end
 # 59 "data/maps/Route113/scripts.pory"
@@ -215,7 +215,7 @@ Route113_EventScript_Tori::
 # 108 "data/maps/Route113/scripts.pory"
 	trainerbattle_double TRAINER_TORI_AND_TIA, Route113_Text_ToriIntro, Route113_Text_ToriDefeat, Route113_Text_ToriNotEnoughMons
 # 109 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_ToriPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_ToriPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 # 110 "data/maps/Route113/scripts.pory"
 	end
 # 111 "data/maps/Route113/scripts.pory"
@@ -225,7 +225,7 @@ Route113_EventScript_Tia::
 # 113 "data/maps/Route113/scripts.pory"
 	trainerbattle_double TRAINER_TORI_AND_TIA, Route113_Text_TiaIntro, Route113_Text_TiaDefeat, Route113_Text_TiaNotEnoughMons
 # 114 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_TiaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_TiaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 # 115 "data/maps/Route113/scripts.pory"
 	end
 # 116 "data/maps/Route113/scripts.pory"

@@ -27,7 +27,7 @@ FortreeCity_PokemonCenter_1F_EventScript_Man::
 	end
 
 FortreeCity_PokemonCenter_1F_EventScript_Boy::
-	msgbox FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav, MSGBOX_NPC, MUGSHOT_BOY3
 	end
 
 FortreeCity_PokemonCenter_1F_Text_GoToSafariZone:

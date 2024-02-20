@@ -113,7 +113,7 @@ Route115_EventScript_Koichi::
 # 57 "data/maps/Route115/scripts.pory"
 	trainerbattle_single TRAINER_KOICHI, Route115_Text_KoichiIntro, Route115_Text_KoichiDefeat
 # 58 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_KoichiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_KoichiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 59 "data/maps/Route115/scripts.pory"
 	end
 # 60 "data/maps/Route115/scripts.pory"
@@ -127,7 +127,7 @@ Route115_EventScript_Nob::
 # 64 "data/maps/Route115/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchNob
 # 65 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_NobPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route115_Text_NobPostBattle, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 66 "data/maps/Route115/scripts.pory"
 	release
 # 67 "data/maps/Route115/scripts.pory"
@@ -155,7 +155,7 @@ Route115_EventScript_RematchNob::
 # 78 "data/maps/Route115/scripts.pory"
 	trainerbattle_rematch TRAINER_NOB_1, Route115_Text_NobRematchIntro, Route115_Text_NobRematchDefeat
 # 79 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_NobPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_NobPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 80 "data/maps/Route115/scripts.pory"
 	end
 # 81 "data/maps/Route115/scripts.pory"

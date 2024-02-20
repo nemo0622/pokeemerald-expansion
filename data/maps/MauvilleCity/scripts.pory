@@ -24,7 +24,7 @@ MauvilleCity_EventScript_MoveWattsonBackToGym::
 	return
 
 MauvilleCity_EventScript_Boy::
-	msgbox MauvilleCity_Text_NurseHurtMonBackToHealth, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Text_NurseHurtMonBackToHealth, MSGBOX_NPC, MUGSHOT_BOY3
 	end
 
 MauvilleCity_EventScript_Maniac::

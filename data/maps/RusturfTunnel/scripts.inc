@@ -81,7 +81,7 @@ RusturfTunnel_EventScript_WandasBoyfriend::
 # 41 "data/maps/RusturfTunnel/scripts.pory"
 	setflag FLAG_TEMP_1
 # 42 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_Text_WhyCantTheyKeepDigging, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_WhyCantTheyKeepDigging, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 43 "data/maps/RusturfTunnel/scripts.pory"
 	closemessage
 # 44 "data/maps/RusturfTunnel/scripts.pory"
@@ -97,7 +97,7 @@ RusturfTunnel_EventScript_WandasBoyfriend::
 # 49 "data/maps/RusturfTunnel/scripts.pory"
 RusturfTunnel_EventScript_AlreadySpokenTo::
 # 50 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_Text_ToGetToVerdanturf, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_ToGetToVerdanturf, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 51 "data/maps/RusturfTunnel/scripts.pory"
 	closemessage
 # 52 "data/maps/RusturfTunnel/scripts.pory"

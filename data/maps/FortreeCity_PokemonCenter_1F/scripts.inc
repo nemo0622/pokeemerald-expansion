@@ -57,7 +57,7 @@ FortreeCity_PokemonCenter_1F_EventScript_Man::
 # 29 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 FortreeCity_PokemonCenter_1F_EventScript_Boy::
 # 30 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	msgbox FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav, MSGBOX_NPC, MUGSHOT_BOY3
 # 31 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	end
 # 32 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"

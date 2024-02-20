@@ -61,7 +61,7 @@ Route110_TrickHousePuzzle1_EventScript_Eddie::
 # 31 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	trainerbattle_single TRAINER_EDDIE, Route110_TrickHousePuzzle1_Text_EddieIntro, Route110_TrickHousePuzzle1_Text_EddieDefeat
 # 32 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	msgbox Route110_TrickHousePuzzle1_Text_EddiePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle1_Text_EddiePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 33 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	end
 # 34 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"

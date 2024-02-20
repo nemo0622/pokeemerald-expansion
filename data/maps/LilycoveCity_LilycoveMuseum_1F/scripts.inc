@@ -15,7 +15,7 @@ LilycoveCity_LilycoveMuseum_1F_MapScripts::
 # 8 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 LilycoveCity_LilycoveMuseum_1F_EventScript_Greeter::
 # 9 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum, MSGBOX_SIGN, MUGSHOT_BEAUTY
 # 10 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 	end
 # 11 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"

@@ -157,7 +157,7 @@ Route109_SeashoreHouse_EventScript_Johanna::
 # 79 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	trainerbattle_single TRAINER_JOHANNA, Route109_SeashoreHouse_Text_JohannaIntro, Route109_SeashoreHouse_Text_JohannaDefeated, Route109_SeashoreHouse_EventScript_CheckTrainersCompletion
 # 80 "data/maps/Route109_SeashoreHouse/scripts.pory"
-	msgbox Route109_SeashoreHouse_Text_JohannaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_SeashoreHouse_Text_JohannaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 # 81 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	end
 # 82 "data/maps/Route109_SeashoreHouse/scripts.pory"

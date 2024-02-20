@@ -681,7 +681,7 @@ Route119_EventScript_Doug::
 # 341 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_DOUG, Route119_Text_DougIntro, Route119_Text_DougDefeat
 # 342 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_DougPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_DougPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 # 343 "data/maps/Route119/scripts.pory"
 	end
 # 344 "data/maps/Route119/scripts.pory"
@@ -691,7 +691,7 @@ Route119_EventScript_Greg::
 # 346 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_GREG, Route119_Text_GregIntro, Route119_Text_GregDefeat
 # 347 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_GregPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_GregPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 # 348 "data/maps/Route119/scripts.pory"
 	end
 # 349 "data/maps/Route119/scripts.pory"
@@ -701,7 +701,7 @@ Route119_EventScript_Kent::
 # 351 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_KENT, Route119_Text_KentIntro, Route119_Text_KentDefeat
 # 352 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_KentPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_KentPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 # 353 "data/maps/Route119/scripts.pory"
 	end
 # 354 "data/maps/Route119/scripts.pory"
@@ -923,7 +923,7 @@ Route119_EventScript_BridgeAquaGrunt2::
 # 462 "data/maps/Route119/scripts.pory"
 Route119_EventScript_Boy1::
 # 463 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_ThoughtFlyByCatchingBirdMons, MSGBOX_NPC
+	msgbox_mugshot Route119_Text_ThoughtFlyByCatchingBirdMons, MSGBOX_NPC, MUGSHOT_BOY3
 # 464 "data/maps/Route119/scripts.pory"
 	end
 # 465 "data/maps/Route119/scripts.pory"

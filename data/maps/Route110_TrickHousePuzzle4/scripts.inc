@@ -43,7 +43,7 @@ Route110_TrickHousePuzzle4_EventScript_Yuji::
 # 22 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"
 	trainerbattle_single TRAINER_YUJI, Route110_TrickHousePuzzle4_Text_YujiIntro, Route110_TrickHousePuzzle4_Text_YujiDefeat
 # 23 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"
-	msgbox Route110_TrickHousePuzzle4_Text_YujiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle4_Text_YujiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 24 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"
 	end
 # 25 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"

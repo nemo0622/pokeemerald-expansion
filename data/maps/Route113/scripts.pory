@@ -49,12 +49,12 @@ Route113_EventScript_TrainerTipsRegisterKeyItems::
 
 Route113_EventScript_Jaylen::
 	trainerbattle_single TRAINER_JAYLEN, Route113_Text_JaylenIntro, Route113_Text_JaylenDefeat
-	msgbox Route113_Text_JaylenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_JaylenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 	end
 
 Route113_EventScript_Dillon::
 	trainerbattle_single TRAINER_DILLON, Route113_Text_DillonIntro, Route113_Text_DillonDefeat
-	msgbox Route113_Text_DillonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_DillonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 	end
 
 Route113_EventScript_Madeline::
@@ -106,12 +106,12 @@ Route113_EventScript_Lung::
 
 Route113_EventScript_Tori::
 	trainerbattle_double TRAINER_TORI_AND_TIA, Route113_Text_ToriIntro, Route113_Text_ToriDefeat, Route113_Text_ToriNotEnoughMons
-	msgbox Route113_Text_ToriPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_ToriPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 	end
 
 Route113_EventScript_Tia::
 	trainerbattle_double TRAINER_TORI_AND_TIA, Route113_Text_TiaIntro, Route113_Text_TiaDefeat, Route113_Text_TiaNotEnoughMons
-	msgbox Route113_Text_TiaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_TiaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 	end
 
 Route113_EventScript_Sophie::

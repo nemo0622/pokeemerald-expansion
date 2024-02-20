@@ -425,7 +425,7 @@ Route103_EventScript_Amy::
 # 213 "data/maps/Route103/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_AmyRematch
 # 214 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_AmyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_AmyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 # 215 "data/maps/Route103/scripts.pory"
 	end
 # 216 "data/maps/Route103/scripts.pory"
@@ -447,7 +447,7 @@ Route102_EventScript_AmyRematch::
 # 224 "data/maps/Route103/scripts.pory"
 	trainerbattle_rematch_double TRAINER_AMY_AND_LIV_1, Route103_Text_AmyRematchIntro, Route103_Text_AmyRematchDefeated, Route103_Text_AmyRematchNotEnoughPokemon
 # 225 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_AmyRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_AmyRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 # 226 "data/maps/Route103/scripts.pory"
 	end
 # 227 "data/maps/Route103/scripts.pory"
@@ -461,7 +461,7 @@ Route103_EventScript_Liv::
 # 231 "data/maps/Route103/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_LivRematch
 # 232 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_LivPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_LivPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 # 233 "data/maps/Route103/scripts.pory"
 	end
 # 234 "data/maps/Route103/scripts.pory"
@@ -483,7 +483,7 @@ Route102_EventScript_LivRematch::
 # 242 "data/maps/Route103/scripts.pory"
 	trainerbattle_rematch_double TRAINER_AMY_AND_LIV_1, Route103_Text_LivRematchIntro, Route103_Text_LivRematchDefeated, Route103_Text_LivRematchNotEnoughPokemon
 # 243 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_LivRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_LivRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 # 244 "data/maps/Route103/scripts.pory"
 	end
 # 245 "data/maps/Route103/scripts.pory"
@@ -555,7 +555,7 @@ Route103_EventScript_Rhett::
 # 278 "data/maps/Route103/scripts.pory"
 	trainerbattle_single TRAINER_RHETT, Route103_Text_RhettIntro, Route103_Text_RhettDefeated
 # 279 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_RhettPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_RhettPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 280 "data/maps/Route103/scripts.pory"
 	end
 # 281 "data/maps/Route103/scripts.pory"

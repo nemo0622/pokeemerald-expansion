@@ -29,7 +29,7 @@ Route110_TrickHousePuzzle1_EventScript_Sally::
 
 Route110_TrickHousePuzzle1_EventScript_Eddie::
 	trainerbattle_single TRAINER_EDDIE, Route110_TrickHousePuzzle1_Text_EddieIntro, Route110_TrickHousePuzzle1_Text_EddieDefeat
-	msgbox Route110_TrickHousePuzzle1_Text_EddiePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle1_Text_EddiePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 	end
 
 Route110_TrickHousePuzzle1_EventScript_Robin::

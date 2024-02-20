@@ -29,7 +29,7 @@ FortreeCity_House4_EventScript_Boy::
 # 15 "data/maps/FortreeCity_House4/scripts.pory"
 	goto_if_set FLAG_WINGULL_SENT_ON_ERRAND, FortreeCity_House4_EventScript_WingullOnErrand
 # 16 "data/maps/FortreeCity_House4/scripts.pory"
-	msgbox FortreeCity_House4_Text_GoBirdPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot FortreeCity_House4_Text_GoBirdPokemon, MSGBOX_DEFAULT, MUGSHOT_BOY3
 # 17 "data/maps/FortreeCity_House4/scripts.pory"
 	closemessage
 # 18 "data/maps/FortreeCity_House4/scripts.pory"
@@ -55,7 +55,7 @@ FortreeCity_House4_EventScript_WingullOnErrand::
 # 28 "data/maps/FortreeCity_House4/scripts.pory"
 	waitmovement 0
 # 29 "data/maps/FortreeCity_House4/scripts.pory"
-	msgbox FortreeCity_House4_Text_AskedWingullToRunErrand, MSGBOX_DEFAULT
+	msgbox_mugshot FortreeCity_House4_Text_AskedWingullToRunErrand, MSGBOX_DEFAULT, MUGSHOT_BOY3
 # 30 "data/maps/FortreeCity_House4/scripts.pory"
 	releaseall
 # 31 "data/maps/FortreeCity_House4/scripts.pory"
@@ -69,7 +69,7 @@ FortreeCity_House4_EventScript_WingullReturned::
 # 35 "data/maps/FortreeCity_House4/scripts.pory"
 	waitmovement 0
 # 36 "data/maps/FortreeCity_House4/scripts.pory"
-	msgbox FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb, MSGBOX_DEFAULT
+	msgbox_mugshot FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb, MSGBOX_DEFAULT, MUGSHOT_BOY3
 # 37 "data/maps/FortreeCity_House4/scripts.pory"
 	giveitem ITEM_MENTAL_HERB
 # 38 "data/maps/FortreeCity_House4/scripts.pory"
@@ -89,7 +89,7 @@ FortreeCity_House4_EventScript_ReceivedMentalHerb::
 # 45 "data/maps/FortreeCity_House4/scripts.pory"
 	waitmovement 0
 # 46 "data/maps/FortreeCity_House4/scripts.pory"
-	msgbox FortreeCity_House4_Text_FriendsFarAwayThanksToWingull, MSGBOX_DEFAULT
+	msgbox_mugshot FortreeCity_House4_Text_FriendsFarAwayThanksToWingull, MSGBOX_DEFAULT, MUGSHOT_BOY3
 # 47 "data/maps/FortreeCity_House4/scripts.pory"
 	releaseall
 # 48 "data/maps/FortreeCity_House4/scripts.pory"

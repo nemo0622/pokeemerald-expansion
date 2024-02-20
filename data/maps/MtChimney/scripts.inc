@@ -995,7 +995,7 @@ MtChimney_EventScript_Melissa::
 # 498 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_MELISSA, MtChimney_Text_MelissaIntro, MtChimney_Text_MelissaDefeat
 # 499 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_MelissaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtChimney_Text_MelissaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 # 500 "data/maps/MtChimney/scripts.pory"
 	end
 # 501 "data/maps/MtChimney/scripts.pory"
@@ -1005,7 +1005,7 @@ MtChimney_EventScript_Sheila::
 # 503 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_SHEILA, MtChimney_Text_SheilaIntro, MtChimney_Text_SheilaDefeat
 # 504 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_SheilaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtChimney_Text_SheilaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 # 505 "data/maps/MtChimney/scripts.pory"
 	end
 # 506 "data/maps/MtChimney/scripts.pory"
@@ -1015,7 +1015,7 @@ MtChimney_EventScript_Shirley::
 # 508 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_single TRAINER_SHIRLEY, MtChimney_Text_ShirleyIntro, MtChimney_Text_ShirleyDefeat
 # 509 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_ShirleyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtChimney_Text_ShirleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 # 510 "data/maps/MtChimney/scripts.pory"
 	end
 # 511 "data/maps/MtChimney/scripts.pory"

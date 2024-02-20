@@ -5,7 +5,7 @@ LilycoveCity_DepartmentStore_1F_MapScripts::
 	.byte 0
 
 LilycoveCity_DepartmentStore_1F_EventScript_Greeter::
-	msgbox LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore, MSGBOX_NPC, MUGSHOT_BEAUTY
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk::

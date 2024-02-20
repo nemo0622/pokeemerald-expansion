@@ -39,7 +39,7 @@ RusturfTunnel_EventScript_WandasBoyfriend::
 	faceplayer
 	goto_if_set FLAG_TEMP_1, RusturfTunnel_EventScript_AlreadySpokenTo
 	setflag FLAG_TEMP_1
-	msgbox RusturfTunnel_Text_WhyCantTheyKeepDigging, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_WhyCantTheyKeepDigging, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -47,7 +47,7 @@ RusturfTunnel_EventScript_WandasBoyfriend::
 	end
 
 RusturfTunnel_EventScript_AlreadySpokenTo::
-	msgbox RusturfTunnel_Text_ToGetToVerdanturf, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_ToGetToVerdanturf, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0

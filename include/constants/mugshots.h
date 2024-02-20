@@ -33,5 +33,7 @@
 #define MUGSHOT_BLACKBELT  28
 #define MUGSHOT_BOY1  29
 #define MUGSHOT_BOY2  30
+#define MUGSHOT_BOY3  31
+#define MUGSHOT_BUG_CATCHER  32
 
 #endif

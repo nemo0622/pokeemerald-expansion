@@ -233,7 +233,7 @@ Route121_EventScript_Jessica::
 # 117 "data/maps/Route121/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchJessica
 # 118 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_JessicaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route121_Text_JessicaPostBattle, MSGBOX_DEFAULT, MUGSHOT_BEAUTY
 # 119 "data/maps/Route121/scripts.pory"
 	release
 # 120 "data/maps/Route121/scripts.pory"
@@ -261,7 +261,7 @@ Route121_EventScript_RematchJessica::
 # 131 "data/maps/Route121/scripts.pory"
 	trainerbattle_rematch TRAINER_JESSICA_1, Route121_Text_JessicaRematchIntro, Route121_Text_JessicaRematchDefeat
 # 132 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_JessicaPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_JessicaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 # 133 "data/maps/Route121/scripts.pory"
 	end
 # 134 "data/maps/Route121/scripts.pory"

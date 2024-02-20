@@ -36,7 +36,7 @@ LilycoveCity_ContestHall_EventScript_Boy1::
 	end
 
 LilycoveCity_ContestHall_EventScript_Boy2::
-	msgbox LilycoveCity_ContestHall_Text_EnteredBunchOfContests, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestHall_Text_EnteredBunchOfContests, MSGBOX_NPC, MUGSHOT_BOY3
 	end
 
 LilycoveCity_ContestHall_EventScript_Girl::
@@ -70,7 +70,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestJudge::
 LilycoveCity_ContestHall_EventScript_SmartContestant1::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_EnteredWrongContest, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_EnteredWrongContest, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 	closemessage
 	applymovement LOCALID_SMART_CONTESTANT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -174,7 +174,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant1::
 LilycoveCity_ContestHall_EventScript_BeautyContestant2::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_OverdidGrooming, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_OverdidGrooming, MSGBOX_DEFAULT, MUGSHOT_TWIN
 	closemessage
 	applymovement LOCALID_BEAUTY_CONTESTANT_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -274,7 +274,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestant2::
 LilycoveCity_ContestHall_EventScript_CuteContestant3::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_PetalDanceIsMarvel, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_PetalDanceIsMarvel, MSGBOX_DEFAULT, MUGSHOT_BOY3
 	closemessage
 	applymovement LOCALID_CUTE_CONTESTANT_3, Common_Movement_FaceOriginalDirection
 	waitmovement 0

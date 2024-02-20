@@ -69,7 +69,7 @@ Route116_EventScript_WandasBoyfriend::
 # 35 "data/maps/Route116/scripts.pory"
 	goto_if_set FLAG_DEVON_GOODS_STOLEN, Route116_EventScript_BoyfriendGruntInTunnel
 # 36 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_WantToDigTunnel, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_WantToDigTunnel, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 37 "data/maps/Route116/scripts.pory"
 	release
 # 38 "data/maps/Route116/scripts.pory"
@@ -467,7 +467,7 @@ Route116_EventScript_Joey::
 # 234 "data/maps/Route116/scripts.pory"
 	trainerbattle_single TRAINER_JOEY, Route116_Text_JoeyIntro, Route116_Text_JoeyDefeat
 # 235 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_JoeyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_JoeyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 236 "data/maps/Route116/scripts.pory"
 	end
 # 237 "data/maps/Route116/scripts.pory"
@@ -477,7 +477,7 @@ Route116_EventScript_Jose::
 # 239 "data/maps/Route116/scripts.pory"
 	trainerbattle_single TRAINER_JOSE, Route116_Text_JoseIntro, Route116_Text_JoseDefeat
 # 240 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_JosePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_JosePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 # 241 "data/maps/Route116/scripts.pory"
 	end
 # 242 "data/maps/Route116/scripts.pory"
@@ -701,7 +701,7 @@ Route116_EventScript_Johnson::
 # 351 "data/maps/Route116/scripts.pory"
 	trainerbattle_single TRAINER_JOHNSON, Route116_Text_JohnsonIntro, Route116_Text_JohnsonDefeat
 # 352 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_JohnsonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_JohnsonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 353 "data/maps/Route116/scripts.pory"
 	end
 # 354 "data/maps/Route116/scripts.pory"

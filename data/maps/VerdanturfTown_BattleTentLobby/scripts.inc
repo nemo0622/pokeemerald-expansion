@@ -485,7 +485,7 @@ VerdanturfTown_BattleTentLobby_EventScript_ReceivedAttract::
 # 243 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 VerdanturfTown_BattleTentLobby_EventScript_Boy1::
 # 244 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
-	msgbox VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves, MSGBOX_NPC, MUGSHOT_BOY3
 # 245 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	end
 # 246 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"

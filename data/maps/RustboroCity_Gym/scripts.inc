@@ -93,7 +93,7 @@ RustboroCity_Gym_EventScript_Josh::
 # 47 "data/maps/RustboroCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_JOSH, RustboroCity_Gym_Text_JoshIntro, RustboroCity_Gym_Text_JoshDefeat
 # 48 "data/maps/RustboroCity_Gym/scripts.pory"
-	msgbox RustboroCity_Gym_Text_JoshPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot RustboroCity_Gym_Text_JoshPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 49 "data/maps/RustboroCity_Gym/scripts.pory"
 	end
 # 50 "data/maps/RustboroCity_Gym/scripts.pory"
@@ -103,7 +103,7 @@ RustboroCity_Gym_EventScript_Tommy::
 # 52 "data/maps/RustboroCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_TOMMY, RustboroCity_Gym_Text_TommyIntro, RustboroCity_Gym_Text_TommyDefeat
 # 53 "data/maps/RustboroCity_Gym/scripts.pory"
-	msgbox RustboroCity_Gym_Text_TommyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot RustboroCity_Gym_Text_TommyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 54 "data/maps/RustboroCity_Gym/scripts.pory"
 	end
 # 55 "data/maps/RustboroCity_Gym/scripts.pory"

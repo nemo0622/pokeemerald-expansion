@@ -102,12 +102,12 @@ Route123_EventScript_RematchJacki::
 
 Route123_EventScript_Miu::
 	trainerbattle_double TRAINER_MIU_AND_YUKI, Route123_Text_MiuIntro, Route123_Text_MiuDefeat, Route123_Text_MiuNotEnoughMons
-	msgbox Route123_Text_MiuPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_MiuPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 	end
 
 Route123_EventScript_Yuki::
 	trainerbattle_double TRAINER_MIU_AND_YUKI, Route123_Text_YukiIntro, Route123_Text_YukiDefeat, Route123_Text_YukiNotEnoughMons
-	msgbox Route123_Text_YukiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_YukiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 	end
 
 Route123_EventScript_Kindra::
@@ -147,7 +147,7 @@ Route123_EventScript_Jazmyn::
 
 Route123_EventScript_Davis::
 	trainerbattle_single TRAINER_DAVIS, Route123_Text_DavisIntro, Route123_Text_DavisDefeat
-	msgbox Route123_Text_DavisPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_DavisPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 	end
 
 Route123_EventScript_Fernando::

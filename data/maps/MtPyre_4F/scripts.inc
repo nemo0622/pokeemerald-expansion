@@ -15,7 +15,7 @@ MtPyre_5F_EventScript_Atsushi::
 # 8 "data/maps/MtPyre_4F/scripts.pory"
 	trainerbattle_single TRAINER_ATSUSHI, MtPyre_5F_Text_AtsushiIntro, MtPyre_5F_Text_AtsushiDefeat
 # 9 "data/maps/MtPyre_4F/scripts.pory"
-	msgbox MtPyre_5F_Text_AtsushiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_5F_Text_AtsushiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 10 "data/maps/MtPyre_4F/scripts.pory"
 	end
 # 11 "data/maps/MtPyre_4F/scripts.pory"

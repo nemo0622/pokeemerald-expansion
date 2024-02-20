@@ -241,7 +241,7 @@ VerdanturfTown_BattleTentLobby_EventScript_ReceivedAttract::
 	end
 
 VerdanturfTown_BattleTentLobby_EventScript_Boy1::
-	msgbox VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves, MSGBOX_NPC, MUGSHOT_BOY3
 	end
 
 VerdanturfTown_BattleTentLobby_EventScript_Boy2::

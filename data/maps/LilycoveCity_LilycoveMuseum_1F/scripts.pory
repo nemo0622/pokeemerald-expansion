@@ -6,7 +6,7 @@ LilycoveCity_LilycoveMuseum_1F_MapScripts::
 	.byte 0
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_Greeter::
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum, MSGBOX_SIGN, MUGSHOT_BEAUTY
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_Curator::

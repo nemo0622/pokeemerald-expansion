@@ -36,7 +36,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande::
 	end
 
 VerdanturfTown_WandasHouse_EventScript_WandasBoyfriend::
-	msgbox VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay, MSGBOX_NPC, MUGSHOT_BLACKBELT
 	end
 
 VerdanturfTown_WandasHouse_EventScript_Wanda::

@@ -207,7 +207,7 @@ Route123_EventScript_Miu::
 # 104 "data/maps/Route123/scripts.pory"
 	trainerbattle_double TRAINER_MIU_AND_YUKI, Route123_Text_MiuIntro, Route123_Text_MiuDefeat, Route123_Text_MiuNotEnoughMons
 # 105 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_MiuPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_MiuPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 # 106 "data/maps/Route123/scripts.pory"
 	end
 # 107 "data/maps/Route123/scripts.pory"
@@ -217,7 +217,7 @@ Route123_EventScript_Yuki::
 # 109 "data/maps/Route123/scripts.pory"
 	trainerbattle_double TRAINER_MIU_AND_YUKI, Route123_Text_YukiIntro, Route123_Text_YukiDefeat, Route123_Text_YukiNotEnoughMons
 # 110 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_YukiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_YukiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TWIN
 # 111 "data/maps/Route123/scripts.pory"
 	end
 # 112 "data/maps/Route123/scripts.pory"
@@ -297,7 +297,7 @@ Route123_EventScript_Davis::
 # 149 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_DAVIS, Route123_Text_DavisIntro, Route123_Text_DavisDefeat
 # 150 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_DavisPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_DavisPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 # 151 "data/maps/Route123/scripts.pory"
 	end
 # 152 "data/maps/Route123/scripts.pory"

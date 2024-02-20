@@ -429,7 +429,7 @@ MauvilleCity_Gym_EventScript_Ben::
 # 215 "data/maps/MauvilleCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_BEN, MauvilleCity_Gym_Text_BenIntro, MauvilleCity_Gym_Text_BenDefeat
 # 216 "data/maps/MauvilleCity_Gym/scripts.pory"
-	msgbox MauvilleCity_Gym_Text_BenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MauvilleCity_Gym_Text_BenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 217 "data/maps/MauvilleCity_Gym/scripts.pory"
 	end
 # 218 "data/maps/MauvilleCity_Gym/scripts.pory"

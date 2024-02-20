@@ -595,7 +595,7 @@ Route104_EventScript_Girl1::
 # 298 "data/maps/Route104/scripts.pory"
 Route104_EventScript_BugCatcher::
 # 299 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_WhatsItLikeAtBottomOfSea, MSGBOX_SIGN
+	msgbox_mugshot Route104_Text_WhatsItLikeAtBottomOfSea, MSGBOX_SIGN, MUGSHOT_BUG_CATCHER
 # 300 "data/maps/Route104/scripts.pory"
 	end
 # 301 "data/maps/Route104/scripts.pory"
@@ -1711,7 +1711,7 @@ Route104_EventScript_Billy::
 # 856 "data/maps/Route104/scripts.pory"
 	trainerbattle_single TRAINER_BILLY, Route104_Text_BillyIntro, Route104_Text_BillyDefeat
 # 857 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BillyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route104_Text_BillyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 858 "data/maps/Route104/scripts.pory"
 	end
 # 859 "data/maps/Route104/scripts.pory"
@@ -1969,7 +1969,7 @@ Route104_EventScript_Gina::
 # 985 "data/maps/Route104/scripts.pory"
 	special GetPlayerBigGuyGirlString
 # 986 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_GinaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_GinaPostBattle, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 987 "data/maps/Route104/scripts.pory"
 	release
 # 988 "data/maps/Route104/scripts.pory"
@@ -1983,7 +1983,7 @@ Route104_EventScript_Mia::
 # 992 "data/maps/Route104/scripts.pory"
 	special GetPlayerBigGuyGirlString
 # 993 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_MiaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_MiaPostBattle, MSGBOX_DEFAULT, MUGSHOT_TWIN
 # 994 "data/maps/Route104/scripts.pory"
 	release
 # 995 "data/maps/Route104/scripts.pory"

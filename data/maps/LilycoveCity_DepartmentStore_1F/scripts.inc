@@ -13,7 +13,7 @@ LilycoveCity_DepartmentStore_1F_MapScripts::
 # 7 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 LilycoveCity_DepartmentStore_1F_EventScript_Greeter::
 # 8 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore, MSGBOX_NPC, MUGSHOT_BEAUTY
 # 9 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	end
 # 10 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"

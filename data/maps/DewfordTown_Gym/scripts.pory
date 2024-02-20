@@ -194,7 +194,7 @@ DewfordTown_Gym_EventScript_BrawlyRematch::
 
 DewfordTown_Gym_EventScript_Takao::
 	trainerbattle_single TRAINER_TAKAO, DewfordTown_Gym_Text_TakaoIntro, DewfordTown_Gym_Text_TakaoDefeat, DewfordTown_Gym_EventScript_TakaoBrightenRoom
-	msgbox DewfordTown_Gym_Text_TakaoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot DewfordTown_Gym_Text_TakaoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 	end
 
 DewfordTown_Gym_EventScript_TakaoBrightenRoom::
@@ -234,7 +234,7 @@ DewfordTown_Gym_EventScript_BrendenBrightenRoom::
 
 DewfordTown_Gym_EventScript_Cristian::
 	trainerbattle_single TRAINER_CRISTIAN, DewfordTown_Gym_Text_CristianIntro, DewfordTown_Gym_Text_CristianDefeat, DewfordTown_Gym_EventScript_CristianBrightenRoom
-	msgbox DewfordTown_Gym_Text_CristianPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot DewfordTown_Gym_Text_CristianPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 	end
 
 DewfordTown_Gym_EventScript_CristianBrightenRoom::

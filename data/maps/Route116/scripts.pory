@@ -33,7 +33,7 @@ Route116_EventScript_WandasBoyfriend::
 	faceplayer
 	goto_if_set FLAG_RECOVERED_DEVON_GOODS, Route116_EventScript_BoyfriendGruntLeftTunnel
 	goto_if_set FLAG_DEVON_GOODS_STOLEN, Route116_EventScript_BoyfriendGruntInTunnel
-	msgbox Route116_Text_WantToDigTunnel, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_WantToDigTunnel, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 	release
 	end
 
@@ -232,12 +232,12 @@ Route116_Movement_GlassesManExitEast:
 
 Route116_EventScript_Joey::
 	trainerbattle_single TRAINER_JOEY, Route116_Text_JoeyIntro, Route116_Text_JoeyDefeat
-	msgbox Route116_Text_JoeyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_JoeyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 	end
 
 Route116_EventScript_Jose::
 	trainerbattle_single TRAINER_JOSE, Route116_Text_JoseIntro, Route116_Text_JoseDefeat
-	msgbox Route116_Text_JosePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_JosePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 	end
 
 Route116_EventScript_Jerry::
@@ -349,7 +349,7 @@ Route116_EventScript_Devan::
 
 Route116_EventScript_Johnson::
 	trainerbattle_single TRAINER_JOHNSON, Route116_Text_JohnsonIntro, Route116_Text_JohnsonDefeat
-	msgbox Route116_Text_JohnsonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_JohnsonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 	end
 
 Route116_Text_ScoundrelMadeOffWithPeeko:

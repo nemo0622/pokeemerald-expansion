@@ -391,7 +391,7 @@ DewfordTown_Gym_EventScript_Takao::
 # 196 "data/maps/DewfordTown_Gym/scripts.pory"
 	trainerbattle_single TRAINER_TAKAO, DewfordTown_Gym_Text_TakaoIntro, DewfordTown_Gym_Text_TakaoDefeat, DewfordTown_Gym_EventScript_TakaoBrightenRoom
 # 197 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_Text_TakaoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot DewfordTown_Gym_Text_TakaoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 198 "data/maps/DewfordTown_Gym/scripts.pory"
 	end
 # 199 "data/maps/DewfordTown_Gym/scripts.pory"
@@ -471,7 +471,7 @@ DewfordTown_Gym_EventScript_Cristian::
 # 236 "data/maps/DewfordTown_Gym/scripts.pory"
 	trainerbattle_single TRAINER_CRISTIAN, DewfordTown_Gym_Text_CristianIntro, DewfordTown_Gym_Text_CristianDefeat, DewfordTown_Gym_EventScript_CristianBrightenRoom
 # 237 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_Text_CristianPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot DewfordTown_Gym_Text_CristianPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 238 "data/maps/DewfordTown_Gym/scripts.pory"
 	end
 # 239 "data/maps/DewfordTown_Gym/scripts.pory"

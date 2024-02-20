@@ -51,7 +51,7 @@ MauvilleCity_EventScript_MoveWattsonBackToGym::
 # 26 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_Boy::
 # 27 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_NurseHurtMonBackToHealth, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Text_NurseHurtMonBackToHealth, MSGBOX_NPC, MUGSHOT_BOY3
 # 28 "data/maps/MauvilleCity/scripts.pory"
 	end
 # 29 "data/maps/MauvilleCity/scripts.pory"

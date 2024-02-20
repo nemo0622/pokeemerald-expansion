@@ -40,7 +40,7 @@ MtPyre_2F_EventScript_Leah::
 
 MtPyre_2F_EventScript_Zander::
 	trainerbattle_single TRAINER_ZANDER, MtPyre_2F_Text_ZanderIntro, MtPyre_2F_Text_ZanderDefeat
-	msgbox MtPyre_2F_Text_ZanderPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_2F_Text_ZanderPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 	end
 
 MtPyre_2F_Text_MemoriesOfSkitty:

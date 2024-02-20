@@ -489,7 +489,7 @@ Route118_EventScript_Deandre::
 # 245 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_DEANDRE, Route118_Text_DeandreIntro, Route118_Text_DeandreDefeat
 # 246 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_DeandrePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route118_Text_DeandrePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 247 "data/maps/Route118/scripts.pory"
 	end
 # 248 "data/maps/Route118/scripts.pory"

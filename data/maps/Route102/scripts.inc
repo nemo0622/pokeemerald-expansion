@@ -127,7 +127,7 @@ Route102_EventScript_Rick::
 # 64 "data/maps/Route102/scripts.pory"
 	trainerbattle_single TRAINER_RICK, Route102_Text_RickIntro, Route102_Text_RickDefeated
 # 65 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_RickPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route102_Text_RickPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BUG_CATCHER
 # 66 "data/maps/Route102/scripts.pory"
 	end
 # 67 "data/maps/Route102/scripts.pory"
@@ -147,7 +147,7 @@ Route102_EventScript_Allen::
 # 74 "data/maps/Route102/scripts.pory"
 	trainerbattle_single TRAINER_ALLEN, Route102_Text_AllenIntro, Route102_Text_AllenDefeated
 # 75 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 76 "data/maps/Route102/scripts.pory"
 	end
 # 77 "data/maps/Route102/scripts.pory"

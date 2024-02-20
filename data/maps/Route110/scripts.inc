@@ -143,7 +143,7 @@ Route110_EventScript_AquaGrunt4::
 # 72 "data/maps/Route110/scripts.pory"
 Route110_EventScript_Boy1::
 # 73 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_RideBikeAtFullSpeed, MSGBOX_NPC
+	msgbox_mugshot Route110_Text_RideBikeAtFullSpeed, MSGBOX_NPC, MUGSHOT_BOY3
 # 74 "data/maps/Route110/scripts.pory"
 	end
 # 75 "data/maps/Route110/scripts.pory"
@@ -567,7 +567,7 @@ Route110_EventScript_Timmy::
 # 284 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_TIMMY, Route110_Text_TimmyIntro, Route110_Text_TimmyDefeated
 # 285 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_TimmyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_TimmyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 # 286 "data/maps/Route110/scripts.pory"
 	end
 # 287 "data/maps/Route110/scripts.pory"

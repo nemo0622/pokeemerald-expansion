@@ -61,7 +61,7 @@ Route134_EventScript_Hitoshi::
 # 31 "data/maps/Route134/scripts.pory"
 	trainerbattle_single TRAINER_HITOSHI, Route134_Text_HitoshiIntro, Route134_Text_HitoshiDefeat
 # 32 "data/maps/Route134/scripts.pory"
-	msgbox Route134_Text_HitoshiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_HitoshiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 # 33 "data/maps/Route134/scripts.pory"
 	end
 # 34 "data/maps/Route134/scripts.pory"

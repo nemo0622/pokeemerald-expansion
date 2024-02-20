@@ -243,7 +243,7 @@ Route118_EventScript_Chester::
 
 Route118_EventScript_Deandre::
 	trainerbattle_single TRAINER_DEANDRE, Route118_Text_DeandreIntro, Route118_Text_DeandreDefeat
-	msgbox Route118_Text_DeandrePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route118_Text_DeandrePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_YOUNGSTER
 	end
 
 Route118_Text_StevenQuestions:

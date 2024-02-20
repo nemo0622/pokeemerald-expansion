@@ -41,7 +41,7 @@ SootopolisCity_Gym_B1F_EventScript_Connie::
 # 21 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	trainerbattle_single TRAINER_CONNIE, SootopolisCity_Gym_B1F_Text_ConnieIntro, SootopolisCity_Gym_B1F_Text_ConnieDefeat
 # 22 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
-	msgbox SootopolisCity_Gym_B1F_Text_ConniePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_ConniePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 # 23 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	end
 # 24 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
@@ -51,7 +51,7 @@ SootopolisCity_Gym_B1F_EventScript_Bridget::
 # 26 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	trainerbattle_single TRAINER_BRIDGET, SootopolisCity_Gym_B1F_Text_BridgetIntro, SootopolisCity_Gym_B1F_Text_BridgetDefeat
 # 27 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
-	msgbox SootopolisCity_Gym_B1F_Text_BridgetPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_BridgetPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 # 28 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	end
 # 29 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
@@ -61,7 +61,7 @@ SootopolisCity_Gym_B1F_EventScript_Olivia::
 # 31 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	trainerbattle_single TRAINER_OLIVIA, SootopolisCity_Gym_B1F_Text_OliviaIntro, SootopolisCity_Gym_B1F_Text_OliviaDefeat
 # 32 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
-	msgbox SootopolisCity_Gym_B1F_Text_OliviaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_OliviaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 # 33 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	end
 # 34 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
@@ -71,7 +71,7 @@ SootopolisCity_Gym_B1F_EventScript_Tiffany::
 # 36 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	trainerbattle_single TRAINER_TIFFANY, SootopolisCity_Gym_B1F_Text_TiffanyIntro, SootopolisCity_Gym_B1F_Text_TiffanyDefeat
 # 37 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
-	msgbox SootopolisCity_Gym_B1F_Text_TiffanyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_TiffanyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BEAUTY
 # 38 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	end
 # 39 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"

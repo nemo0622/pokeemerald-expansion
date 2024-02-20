@@ -55,14 +55,14 @@ Route115_EventScript_RematchTimothy::
 
 Route115_EventScript_Koichi::
 	trainerbattle_single TRAINER_KOICHI, Route115_Text_KoichiIntro, Route115_Text_KoichiDefeat
-	msgbox Route115_Text_KoichiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_KoichiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 	end
 
 Route115_EventScript_Nob::
 	trainerbattle_single TRAINER_NOB_1, Route115_Text_NobIntro, Route115_Text_NobDefeat, Route115_EventScript_RegisterNob
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchNob
-	msgbox Route115_Text_NobPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route115_Text_NobPostBattle, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 	release
 	end
 
@@ -76,7 +76,7 @@ Route115_EventScript_RegisterNob::
 
 Route115_EventScript_RematchNob::
 	trainerbattle_rematch TRAINER_NOB_1, Route115_Text_NobRematchIntro, Route115_Text_NobRematchDefeat
-	msgbox Route115_Text_NobPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_NobPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_BLACKBELT
 	end
 
 Route115_EventScript_Cyndy::
