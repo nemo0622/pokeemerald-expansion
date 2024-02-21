@@ -187,7 +187,7 @@ Route112_EventScript_Larry::
 # 94 "data/maps/Route112/scripts.pory"
 	trainerbattle_single TRAINER_LARRY, Route112_Text_LarryIntro, Route112_Text_LarryDefeat
 # 95 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_LarryPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route112_Text_LarryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 96 "data/maps/Route112/scripts.pory"
 	end
 # 97 "data/maps/Route112/scripts.pory"

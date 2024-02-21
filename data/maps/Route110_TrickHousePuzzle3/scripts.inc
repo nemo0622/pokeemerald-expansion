@@ -581,7 +581,7 @@ Route110_TrickHousePuzzle3_EventScript_Justin::
 # 291 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	trainerbattle_single TRAINER_JUSTIN, Route110_TrickHousePuzzle3_Text_JustinIntro, Route110_TrickHousePuzzle3_Text_JustinDefeat
 # 292 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-	msgbox Route110_TrickHousePuzzle3_Text_JustinPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle3_Text_JustinPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 293 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	end
 # 294 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"

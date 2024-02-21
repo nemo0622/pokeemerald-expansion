@@ -153,7 +153,7 @@ RustboroCity_EventScript_FatManSawGrunt::
 RustboroCity_EventScript_DevonEmployee2::
 	lock
 	faceplayer
-	msgbox RustboroCity_Text_YoureNewAroundHere, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_YoureNewAroundHere, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 	release
 	end
 

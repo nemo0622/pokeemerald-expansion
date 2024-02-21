@@ -173,7 +173,7 @@ FortreeCity_Gym_EventScript_Flint::
 # 87 "data/maps/FortreeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_FLINT, FortreeCity_Gym_Text_FlintIntro, FortreeCity_Gym_Text_FlintDefeat
 # 88 "data/maps/FortreeCity_Gym/scripts.pory"
-	msgbox FortreeCity_Gym_Text_FlintPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot FortreeCity_Gym_Text_FlintPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 89 "data/maps/FortreeCity_Gym/scripts.pory"
 	end
 # 90 "data/maps/FortreeCity_Gym/scripts.pory"

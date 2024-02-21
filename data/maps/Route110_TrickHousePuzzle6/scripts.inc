@@ -83,7 +83,7 @@ Route110_TrickHousePuzzle6_EventScript_Sebastian::
 # 42 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
 	trainerbattle_single TRAINER_SEBASTIAN, Route110_TrickHousePuzzle6_Text_SebastianIntro, Route110_TrickHousePuzzle6_Text_SebastianDefeat
 # 43 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
-	msgbox Route110_TrickHousePuzzle6_Text_SebastianPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle6_Text_SebastianPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 44 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
 	end
 # 45 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"

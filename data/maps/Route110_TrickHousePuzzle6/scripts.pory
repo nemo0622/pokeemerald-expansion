@@ -40,7 +40,7 @@ Route110_TrickHousePuzzle6_EventScript_Benny::
 
 Route110_TrickHousePuzzle6_EventScript_Sebastian::
 	trainerbattle_single TRAINER_SEBASTIAN, Route110_TrickHousePuzzle6_Text_SebastianIntro, Route110_TrickHousePuzzle6_Text_SebastianDefeat
-	msgbox Route110_TrickHousePuzzle6_Text_SebastianPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle6_Text_SebastianPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened:

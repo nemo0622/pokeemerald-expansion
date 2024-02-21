@@ -251,7 +251,7 @@ JaggedPass_EventScript_Ethan::
 # 126 "data/maps/JaggedPass/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_EthanRematch
 # 127 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_EthanPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot JaggedPass_Text_EthanPostBattle, MSGBOX_DEFAULT, MUGSHOT_CAMPER
 # 128 "data/maps/JaggedPass/scripts.pory"
 	release
 # 129 "data/maps/JaggedPass/scripts.pory"
@@ -263,7 +263,7 @@ JaggedPass_EventScript_RegisterEthan::
 # 132 "data/maps/JaggedPass/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
 # 133 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_EthanRegister, MSGBOX_DEFAULT
+	msgbox_mugshot JaggedPass_Text_EthanRegister, MSGBOX_DEFAULT, MUGSHOT_CAMPER
 # 134 "data/maps/JaggedPass/scripts.pory"
 	register_matchcall TRAINER_ETHAN_1
 # 135 "data/maps/JaggedPass/scripts.pory"
@@ -277,7 +277,7 @@ JaggedPass_EventScript_EthanRematch::
 # 139 "data/maps/JaggedPass/scripts.pory"
 	trainerbattle_rematch TRAINER_ETHAN_1, JaggedPass_Text_EthanRematchIntro, JaggedPass_Text_EthanRematchDefeat
 # 140 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_EthanPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot JaggedPass_Text_EthanPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 141 "data/maps/JaggedPass/scripts.pory"
 	end
 # 142 "data/maps/JaggedPass/scripts.pory"

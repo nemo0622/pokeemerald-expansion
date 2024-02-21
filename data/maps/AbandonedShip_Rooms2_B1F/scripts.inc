@@ -9,7 +9,7 @@ AbandonedShip_Rooms2_B1F_MapScripts::
 # 5 "data/maps/AbandonedShip_Rooms2_B1F/scripts.pory"
 AbandonedShip_Rooms2_B1F_EventScript_Camper::
 # 6 "data/maps/AbandonedShip_Rooms2_B1F/scripts.pory"
-	msgbox AbandonedShip_Rooms2_B1F_Text_PerfectPlaceToGoExploring, MSGBOX_NPC
+	msgbox_mugshot AbandonedShip_Rooms2_B1F_Text_PerfectPlaceToGoExploring, MSGBOX_NPC, MUGSHOT_CAMPER
 # 7 "data/maps/AbandonedShip_Rooms2_B1F/scripts.pory"
 	end
 # 8 "data/maps/AbandonedShip_Rooms2_B1F/scripts.pory"

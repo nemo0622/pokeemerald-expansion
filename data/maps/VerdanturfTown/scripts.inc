@@ -67,7 +67,7 @@ VerdanturfTown_EventScript_Man::
 # 34 "data/maps/VerdanturfTown/scripts.pory"
 VerdanturfTown_EventScript_Camper::
 # 35 "data/maps/VerdanturfTown/scripts.pory"
-	msgbox VerdanturfTown_Text_MakeBattleTentDebut, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_Text_MakeBattleTentDebut, MSGBOX_NPC, MUGSHOT_CAMPER
 # 36 "data/maps/VerdanturfTown/scripts.pory"
 	end
 # 37 "data/maps/VerdanturfTown/scripts.pory"

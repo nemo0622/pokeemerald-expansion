@@ -191,7 +191,7 @@ Route110_EventScript_CyclingGuy2::
 # 96 "data/maps/Route110/scripts.pory"
 Route110_EventScript_Boy2::
 # 97 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_WhichShouldIChoose, MSGBOX_NPC
+	msgbox_mugshot Route110_Text_WhichShouldIChoose, MSGBOX_NPC, MUGSHOT_CAMPER
 # 98 "data/maps/Route110/scripts.pory"
 	end
 # 99 "data/maps/Route110/scripts.pory"

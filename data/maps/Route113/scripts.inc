@@ -255,7 +255,7 @@ Route113_EventScript_Lawrence::
 # 128 "data/maps/Route113/scripts.pory"
 	trainerbattle_single TRAINER_LAWRENCE, Route113_Text_LawrenceIntro, Route113_Text_LawrenceDefeat
 # 129 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_LawrencePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_LawrencePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 130 "data/maps/Route113/scripts.pory"
 	end
 # 131 "data/maps/Route113/scripts.pory"

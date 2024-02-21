@@ -92,7 +92,7 @@ Route112_EventScript_RematchTrent::
 
 Route112_EventScript_Larry::
 	trainerbattle_single TRAINER_LARRY, Route112_Text_LarryIntro, Route112_Text_LarryDefeat
-	msgbox Route112_Text_LarryPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route112_Text_LarryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route112_EventScript_Carol::

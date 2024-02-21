@@ -9,7 +9,7 @@ RustboroCity_Flat2_3F_MapScripts::
 # 5 "data/maps/RustboroCity_Flat2_3F/scripts.pory"
 RustboroCity_Flat2_3F_EventScript_DevonEmployee::
 # 6 "data/maps/RustboroCity_Flat2_3F/scripts.pory"
-	msgbox RustboroCity_Flat2_3F_Text_PresidentCollectsRareStones, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Flat2_3F_Text_PresidentCollectsRareStones, MSGBOX_NPC, MUGSHOT_DEVONEMPLOYEE
 # 7 "data/maps/RustboroCity_Flat2_3F/scripts.pory"
 	end
 # 8 "data/maps/RustboroCity_Flat2_3F/scripts.pory"

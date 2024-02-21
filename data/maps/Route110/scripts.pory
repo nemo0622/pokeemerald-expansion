@@ -94,7 +94,7 @@ Route110_EventScript_CyclingGuy2::
 	end
 
 Route110_EventScript_Boy2::
-	msgbox Route110_Text_WhichShouldIChoose, MSGBOX_NPC
+	msgbox_mugshot Route110_Text_WhichShouldIChoose, MSGBOX_NPC, MUGSHOT_CAMPER
 	end
 
 Route110_EventScript_SlateportCitySign::

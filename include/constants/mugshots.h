@@ -35,5 +35,7 @@
 #define MUGSHOT_BOY2  30
 #define MUGSHOT_BOY3  31
 #define MUGSHOT_BUG_CATCHER  32
+#define MUGSHOT_CAMPER  33
+#define MUGSHOT_DEVONEMPLOYEE  34
 
 #endif

@@ -881,7 +881,7 @@ Route111_EventScript_Drew::
 # 441 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_DREW, Route111_Text_DrewIntro, Route111_Text_DrewDefeat
 # 442 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_DrewPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_DrewPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 443 "data/maps/Route111/scripts.pory"
 	end
 # 444 "data/maps/Route111/scripts.pory"
@@ -901,7 +901,7 @@ Route111_EventScript_Beau::
 # 451 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_BEAU, Route111_Text_BeauIntro, Route111_Text_BeauDefeat
 # 452 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_BeauPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BeauPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 453 "data/maps/Route111/scripts.pory"
 	end
 # 454 "data/maps/Route111/scripts.pory"
@@ -963,7 +963,7 @@ Route111_EventScript_Travis::
 # 482 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_TRAVIS, Route111_Text_TravisIntro, Route111_Text_TravisDefeat
 # 483 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_TravisPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_TravisPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 484 "data/maps/Route111/scripts.pory"
 	end
 # 485 "data/maps/Route111/scripts.pory"
@@ -1097,7 +1097,7 @@ Route111_EventScript_Tyron::
 # 549 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_TYRON, Route111_Text_TyronIntro, Route111_Text_TyronDefeat
 # 550 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_TyronPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_TyronPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 551 "data/maps/Route111/scripts.pory"
 	end
 # 552 "data/maps/Route111/scripts.pory"
@@ -1137,7 +1137,7 @@ Route111_EventScript_Branden::
 # 569 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_BRANDEN, Route111_Text_BrandenIntro, Route111_Text_BrandenDefeat
 # 570 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_BrandenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BrandenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 571 "data/maps/Route111/scripts.pory"
 	end
 # 572 "data/maps/Route111/scripts.pory"

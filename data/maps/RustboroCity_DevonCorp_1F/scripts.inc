@@ -41,7 +41,7 @@ RustboroCity_DevonCorp_1F_EventScript_Employee::
 # 21 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_RobberWasntBright
 # 22 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 # 23 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	release
 # 24 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
@@ -51,7 +51,7 @@ RustboroCity_DevonCorp_1F_EventScript_Employee::
 # 26 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 RustboroCity_DevonCorp_1F_EventScript_RobberWasntBright::
 # 27 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 # 28 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	release
 # 29 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
@@ -61,7 +61,7 @@ RustboroCity_DevonCorp_1F_EventScript_RobberWasntBright::
 # 31 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 RustboroCity_DevonCorp_1F_EventScript_GoodsRecovered::
 # 32 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 # 33 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	release
 # 34 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
@@ -81,7 +81,7 @@ RustboroCity_DevonCorp_1F_EventScript_StairGuard::
 # 41 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_GotRobbed
 # 42 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 # 43 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	release
 # 44 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
@@ -91,7 +91,7 @@ RustboroCity_DevonCorp_1F_EventScript_StairGuard::
 # 46 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 RustboroCity_DevonCorp_1F_EventScript_AlwaysWelcome::
 # 47 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 # 48 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	release
 # 49 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
@@ -101,7 +101,7 @@ RustboroCity_DevonCorp_1F_EventScript_AlwaysWelcome::
 # 51 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 RustboroCity_DevonCorp_1F_EventScript_GotRobbed::
 # 52 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 # 53 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"
 	release
 # 54 "data/maps/RustboroCity_DevonCorp_1F/scripts.pory"

@@ -439,7 +439,7 @@ Route111_EventScript_RockSmashTipFatMan::
 
 Route111_EventScript_Drew::
 	trainerbattle_single TRAINER_DREW, Route111_Text_DrewIntro, Route111_Text_DrewDefeat
-	msgbox Route111_Text_DrewPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_DrewPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route111_EventScript_Heidi::
@@ -449,7 +449,7 @@ Route111_EventScript_Heidi::
 
 Route111_EventScript_Beau::
 	trainerbattle_single TRAINER_BEAU, Route111_Text_BeauIntro, Route111_Text_BeauDefeat
-	msgbox Route111_Text_BeauPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BeauPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route111_EventScript_Becky::
@@ -480,7 +480,7 @@ Route111_EventScript_RematchDusty::
 
 Route111_EventScript_Travis::
 	trainerbattle_single TRAINER_TRAVIS, Route111_Text_TravisIntro, Route111_Text_TravisDefeat
-	msgbox Route111_Text_TravisPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_TravisPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route111_EventScript_Irene::
@@ -547,7 +547,7 @@ Route111_EventScript_Bianca::
 
 Route111_EventScript_Tyron::
 	trainerbattle_single TRAINER_TYRON, Route111_Text_TyronIntro, Route111_Text_TyronDefeat
-	msgbox Route111_Text_TyronPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_TyronPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route111_EventScript_Celina::
@@ -567,7 +567,7 @@ Route111_EventScript_Bryan::
 
 Route111_EventScript_Branden::
 	trainerbattle_single TRAINER_BRANDEN, Route111_Text_BrandenIntro, Route111_Text_BrandenDefeat
-	msgbox Route111_Text_BrandenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BrandenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route111_EventScript_TrainerHillSign::

@@ -32,7 +32,7 @@ VerdanturfTown_EventScript_Man::
 	end
 
 VerdanturfTown_EventScript_Camper::
-	msgbox VerdanturfTown_Text_MakeBattleTentDebut, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_Text_MakeBattleTentDebut, MSGBOX_NPC, MUGSHOT_CAMPER
 	end
 
 VerdanturfTown_EventScript_Boy::

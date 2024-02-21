@@ -294,7 +294,7 @@ Route120_EventScript_RematchRobert::
 
 Route120_EventScript_Lorenzo::
 	trainerbattle_single TRAINER_LORENZO, Route120_Text_LorenzoIntro, Route120_Text_LorenzoDefeat
-	msgbox Route120_Text_LorenzoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_LorenzoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route120_EventScript_Jenna::

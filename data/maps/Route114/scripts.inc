@@ -187,7 +187,7 @@ Route114_EventScript_Shane::
 # 94 "data/maps/Route114/scripts.pory"
 	trainerbattle_single TRAINER_SHANE, Route114_Text_ShaneIntro, Route114_Text_ShaneDefeat
 # 95 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_ShanePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_ShanePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 96 "data/maps/Route114/scripts.pory"
 	end
 # 97 "data/maps/Route114/scripts.pory"

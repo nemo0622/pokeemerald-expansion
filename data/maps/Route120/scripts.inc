@@ -591,7 +591,7 @@ Route120_EventScript_Lorenzo::
 # 296 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_LORENZO, Route120_Text_LorenzoIntro, Route120_Text_LorenzoDefeat
 # 297 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_LorenzoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_LorenzoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 298 "data/maps/Route120/scripts.pory"
 	end
 # 299 "data/maps/Route120/scripts.pory"

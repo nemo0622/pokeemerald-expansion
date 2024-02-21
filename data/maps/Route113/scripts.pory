@@ -126,7 +126,7 @@ Route113_EventScript_Coby::
 
 Route113_EventScript_Lawrence::
 	trainerbattle_single TRAINER_LAWRENCE, Route113_Text_LawrenceIntro, Route113_Text_LawrenceDefeat
-	msgbox Route113_Text_LawrencePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_LawrencePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route113_EventScript_Wyatt::

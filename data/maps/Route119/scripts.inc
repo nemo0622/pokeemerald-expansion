@@ -715,7 +715,7 @@ Route119_EventScript_Jackson::
 # 358 "data/maps/Route119/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route119_EventScript_RematchJackson
 # 359 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_JacksonPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_JacksonPostBattle, MSGBOX_DEFAULT, MUGSHOT_CAMPER
 # 360 "data/maps/Route119/scripts.pory"
 	release
 # 361 "data/maps/Route119/scripts.pory"
@@ -743,7 +743,7 @@ Route119_EventScript_RematchJackson::
 # 372 "data/maps/Route119/scripts.pory"
 	trainerbattle_rematch TRAINER_JACKSON_1, Route119_Text_JacksonRematchIntro, Route119_Text_JacksonRematchDefeat
 # 373 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_JacksonPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_JacksonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 # 374 "data/maps/Route119/scripts.pory"
 	end
 # 375 "data/maps/Route119/scripts.pory"

@@ -356,7 +356,7 @@ Route119_EventScript_Jackson::
 	trainerbattle_single TRAINER_JACKSON_1, Route119_Text_JacksonIntro, Route119_Text_JacksonDefeat, Route119_EventScript_RegisterJackson
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route119_EventScript_RematchJackson
-	msgbox Route119_Text_JacksonPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_JacksonPostBattle, MSGBOX_DEFAULT, MUGSHOT_CAMPER
 	release
 	end
 
@@ -370,7 +370,7 @@ Route119_EventScript_RegisterJackson::
 
 Route119_EventScript_RematchJackson::
 	trainerbattle_rematch TRAINER_JACKSON_1, Route119_Text_JacksonRematchIntro, Route119_Text_JacksonRematchDefeat
-	msgbox Route119_Text_JacksonPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_JacksonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route119_EventScript_Catherine::

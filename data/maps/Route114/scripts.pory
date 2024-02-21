@@ -92,7 +92,7 @@ Route114_EventScript_Lucas::
 
 Route114_EventScript_Shane::
 	trainerbattle_single TRAINER_SHANE, Route114_Text_ShaneIntro, Route114_Text_ShaneDefeat
-	msgbox Route114_Text_ShanePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_ShanePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_CAMPER
 	end
 
 Route114_EventScript_Nancy::

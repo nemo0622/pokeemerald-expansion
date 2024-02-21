@@ -309,7 +309,7 @@ RustboroCity_EventScript_DevonEmployee2::
 # 155 "data/maps/RustboroCity/scripts.pory"
 	faceplayer
 # 156 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_YoureNewAroundHere, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_YoureNewAroundHere, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 # 157 "data/maps/RustboroCity/scripts.pory"
 	release
 # 158 "data/maps/RustboroCity/scripts.pory"

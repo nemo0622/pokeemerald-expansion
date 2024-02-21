@@ -19,17 +19,17 @@ RustboroCity_DevonCorp_1F_EventScript_Employee::
 	faceplayer
 	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_GoodsRecovered
 	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_RobberWasntBright
-	msgbox RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 	release
 	end
 
 RustboroCity_DevonCorp_1F_EventScript_RobberWasntBright::
-	msgbox RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 	release
 	end
 
 RustboroCity_DevonCorp_1F_EventScript_GoodsRecovered::
-	msgbox RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 	release
 	end
 
@@ -39,17 +39,17 @@ RustboroCity_DevonCorp_1F_EventScript_StairGuard::
 	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_AlwaysWelcome
 	goto_if_set FLAG_RECOVERED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_GotRobbed
 	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_GotRobbed
-	msgbox RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 	release
 	end
 
 RustboroCity_DevonCorp_1F_EventScript_AlwaysWelcome::
-	msgbox RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 	release
 	end
 
 RustboroCity_DevonCorp_1F_EventScript_GotRobbed::
-	msgbox RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed, MSGBOX_DEFAULT, MUGSHOT_DEVONEMPLOYEE
 	release
 	end
 
