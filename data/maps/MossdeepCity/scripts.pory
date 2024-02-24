@@ -49,7 +49,7 @@ MossdeepCity_EventScript_NinjaBoy::
 	end
 
 MossdeepCity_EventScript_ExpertM::
-	msgbox MossdeepCity_Text_LifeNeedsSeaToLive, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Text_LifeNeedsSeaToLive, MSGBOX_NPC, MUGSHOT_EXPERTM
 	end
 
 MossdeepCity_EventScript_Girl::

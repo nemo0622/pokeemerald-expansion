@@ -237,7 +237,7 @@ Route123_EventScript_Frederick::
 # 119 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_FREDRICK, Route123_Text_FrederickIntro, Route123_Text_FrederickDefeat
 # 120 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_FrederickPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_FrederickPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTM
 # 121 "data/maps/Route123/scripts.pory"
 	end
 # 122 "data/maps/Route123/scripts.pory"

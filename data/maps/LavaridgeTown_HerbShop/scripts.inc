@@ -49,7 +49,7 @@ LavaridgeTown_HerbShop_Pokemart:
 # 25 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_EventScript_ExpertM::
 # 26 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
-	msgbox LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 27 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	end
 # 28 "data/maps/LavaridgeTown_HerbShop/scripts.pory"

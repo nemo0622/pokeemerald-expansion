@@ -84,7 +84,7 @@ SSTidalRooms_EventScript_ProgessCruiseAfterBed::
 	return
 
 SSTidalCorridor_EventScript_Briney::
-	msgbox SSTidalCorridor_Text_BrineyWelcomeAboard, MSGBOX_NPC
+	msgbox_mugshot SSTidalCorridor_Text_BrineyWelcomeAboard, MSGBOX_NPC, MUGSHOT_BRINEY
 	end
 
 SSTidalCorridor_EventScript_Peeko::

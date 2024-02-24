@@ -48,7 +48,7 @@ FortreeCity_House1_EventScript_TradeCompleted::
 	end
 
 FortreeCity_House1_EventScript_ExpertF::
-	msgbox FortreeCity_House1_Text_TradingMemoriesWithOthers, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House1_Text_TradingMemoriesWithOthers, MSGBOX_NPC, MUGSHOT_EXPERTF
 	end
 
 FortreeCity_House1_EventScript_Zigzagoon::

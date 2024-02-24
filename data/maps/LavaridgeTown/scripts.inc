@@ -423,7 +423,7 @@ LavaridgeTown_EventScript_EnteredHotSprings::
 # 212 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_EventScript_ExpertM::
 # 213 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_HotSpringsNeverRunDry, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_Text_HotSpringsNeverRunDry, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 214 "data/maps/LavaridgeTown/scripts.pory"
 	end
 # 215 "data/maps/LavaridgeTown/scripts.pory"
@@ -463,7 +463,7 @@ LavaridgeTown_EventScript_HotSpringsOldWoman2::
 # 232 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_EventScript_ExpertF::
 # 233 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_OhYouLikeHotSprings, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_Text_OhYouLikeHotSprings, MSGBOX_NPC, MUGSHOT_EXPERTF
 # 234 "data/maps/LavaridgeTown/scripts.pory"
 	end
 # 235 "data/maps/LavaridgeTown/scripts.pory"
@@ -477,7 +477,7 @@ LavaridgeTown_EventScript_EggWoman::
 # 239 "data/maps/LavaridgeTown/scripts.pory"
 	goto_if_set FLAG_RECEIVED_LAVARIDGE_EGG, LavaridgeTown_EventScript_ReceivedEgg
 # 240 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_HaveEggWillYouTakeIt, MSGBOX_YESNO
+	msgbox_mugshot LavaridgeTown_Text_HaveEggWillYouTakeIt, MSGBOX_YESNO, MUGSHOT_EXPERTF
 # 241 "data/maps/LavaridgeTown/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, LavaridgeTown_EventScript_DeclineEgg
 # 242 "data/maps/LavaridgeTown/scripts.pory"
@@ -485,7 +485,7 @@ LavaridgeTown_EventScript_EggWoman::
 # 243 "data/maps/LavaridgeTown/scripts.pory"
 	goto_if_eq VAR_RESULT, PARTY_SIZE, LavaridgeTown_EventScript_NoRoomForEgg
 # 244 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 245 "data/maps/LavaridgeTown/scripts.pory"
 	setflag FLAG_RECEIVED_LAVARIDGE_EGG
 # 246 "data/maps/LavaridgeTown/scripts.pory"
@@ -505,7 +505,7 @@ LavaridgeTown_EventScript_EggWoman::
 # 253 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_EventScript_ReceivedEgg::
 # 254 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 255 "data/maps/LavaridgeTown/scripts.pory"
 	release
 # 256 "data/maps/LavaridgeTown/scripts.pory"
@@ -515,7 +515,7 @@ LavaridgeTown_EventScript_ReceivedEgg::
 # 258 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_EventScript_NoRoomForEgg::
 # 259 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_NoRoomForThisEgg, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_NoRoomForThisEgg, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 260 "data/maps/LavaridgeTown/scripts.pory"
 	release
 # 261 "data/maps/LavaridgeTown/scripts.pory"
@@ -525,7 +525,7 @@ LavaridgeTown_EventScript_NoRoomForEgg::
 # 263 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_EventScript_DeclineEgg::
 # 264 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_AsYouWishThen, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_AsYouWishThen, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 265 "data/maps/LavaridgeTown/scripts.pory"
 	release
 # 266 "data/maps/LavaridgeTown/scripts.pory"

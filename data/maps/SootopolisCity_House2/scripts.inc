@@ -13,7 +13,7 @@ SootopolisCity_House2_EventScript_ExpertF::
 # 7 "data/maps/SootopolisCity_House2/scripts.pory"
 	faceplayer
 # 8 "data/maps/SootopolisCity_House2/scripts.pory"
-	msgbox SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs, MSGBOX_YESNO
+	msgbox_mugshot SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs, MSGBOX_YESNO, MUGSHOT_EXPERTF
 # 9 "data/maps/SootopolisCity_House2/scripts.pory"
 	call_if_eq VAR_RESULT, YES, SootopolisCity_House2_EventScript_KnowAboutOrbs
 # 10 "data/maps/SootopolisCity_House2/scripts.pory"
@@ -27,7 +27,7 @@ SootopolisCity_House2_EventScript_ExpertF::
 # 14 "data/maps/SootopolisCity_House2/scripts.pory"
 SootopolisCity_House2_EventScript_KnowAboutOrbs::
 # 15 "data/maps/SootopolisCity_House2/scripts.pory"
-	msgbox SootopolisCity_House2_Text_YesTwoOrbsSideBySide, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House2_Text_YesTwoOrbsSideBySide, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 16 "data/maps/SootopolisCity_House2/scripts.pory"
 	return
 # 17 "data/maps/SootopolisCity_House2/scripts.pory"
@@ -35,7 +35,7 @@ SootopolisCity_House2_EventScript_KnowAboutOrbs::
 # 18 "data/maps/SootopolisCity_House2/scripts.pory"
 SootopolisCity_House2_EventScript_DontKnowAboutOrbs::
 # 19 "data/maps/SootopolisCity_House2/scripts.pory"
-	msgbox SootopolisCity_House2_Text_OughtToVisitAndSee, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House2_Text_OughtToVisitAndSee, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 20 "data/maps/SootopolisCity_House2/scripts.pory"
 	return
 # 21 "data/maps/SootopolisCity_House2/scripts.pory"

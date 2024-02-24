@@ -335,7 +335,7 @@ MtPyre_Summit_EventScript_OldLady::
 # 168 "data/maps/MtPyre_Summit/scripts.pory"
 	goto_if_set FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, MtPyre_Summit_EventScript_OldLadyLegendariesAwake
 # 169 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_OrbsHaveBeenTaken, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_OrbsHaveBeenTaken, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 170 "data/maps/MtPyre_Summit/scripts.pory"
 	release
 # 171 "data/maps/MtPyre_Summit/scripts.pory"
@@ -345,7 +345,7 @@ MtPyre_Summit_EventScript_OldLady::
 # 173 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_OldLadyOrbsReturned::
 # 174 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 175 "data/maps/MtPyre_Summit/scripts.pory"
 	setflag FLAG_RETURNED_RED_OR_BLUE_ORB
 # 176 "data/maps/MtPyre_Summit/scripts.pory"
@@ -357,7 +357,7 @@ MtPyre_Summit_EventScript_OldLadyOrbsReturned::
 # 179 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_OldLadyLegendariesAwake::
 # 180 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_GroudonKyogreAwakened, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_GroudonKyogreAwakened, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 181 "data/maps/MtPyre_Summit/scripts.pory"
 	release
 # 182 "data/maps/MtPyre_Summit/scripts.pory"
@@ -367,7 +367,7 @@ MtPyre_Summit_EventScript_OldLadyLegendariesAwake::
 # 184 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_OldLadyAfterOrbsReturned::
 # 185 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_SuperAncientPokemonTaughtUs, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_SuperAncientPokemonTaughtUs, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 186 "data/maps/MtPyre_Summit/scripts.pory"
 	release
 # 187 "data/maps/MtPyre_Summit/scripts.pory"

@@ -31,7 +31,7 @@ MauvilleCity_Mart_Pokemart:
 	end
 
 MauvilleCity_Mart_EventScript_ExpertM::
-	msgbox MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats, MSGBOX_NPC, MUGSHOT_EXPERTM
 	end
 
 MauvilleCity_Mart_EventScript_Man::

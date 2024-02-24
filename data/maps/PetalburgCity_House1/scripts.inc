@@ -9,7 +9,7 @@ PetalburgCity_House1_MapScripts::
 # 5 "data/maps/PetalburgCity_House1/scripts.pory"
 PetalburgCity_House1_EventScript_Man::
 # 6 "data/maps/PetalburgCity_House1/scripts.pory"
-	msgbox PetalburgCity_House1_Text_TravelingIsWonderful, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_House1_Text_TravelingIsWonderful, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 7 "data/maps/PetalburgCity_House1/scripts.pory"
 	end
 # 8 "data/maps/PetalburgCity_House1/scripts.pory"

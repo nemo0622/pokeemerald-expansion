@@ -62,7 +62,7 @@ SlateportCity_SternsShipyard_1F_EventScript_Scientist2::
 	end
 
 SlateportCity_SternsShipyard_1F_EventScript_Briney::
-	msgbox SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock, MSGBOX_NPC, MUGSHOT_BRINEY
 	end
 
 SlateportCity_SternsShipyard_1F_Text_CantMakeHeadsOrTails:

@@ -71,9 +71,9 @@ Route104_MrBrineysHouse_EventScript_SailingIntro::
 # 36 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 	setflag FLAG_MR_BRINEY_SAILING_INTRO
 # 37 "data/maps/Route104_MrBrineysHouse/scripts.pory"
-	msgbox Route104_MrBrineysHouse_Text_WaitUpPeeko, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_MrBrineysHouse_Text_WaitUpPeeko, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 38 "data/maps/Route104_MrBrineysHouse/scripts.pory"
-	msgbox Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford, MSGBOX_YESNO
+	msgbox_mugshot Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford, MSGBOX_YESNO, MUGSHOT_BRINEY
 # 39 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing
 # 40 "data/maps/Route104_MrBrineysHouse/scripts.pory"
@@ -105,7 +105,7 @@ Route104_MrBrineysHouse_EventScript_WhereAreWeBound::
 # 53 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 Route104_MrBrineysHouse_EventScript_SailBothDeliveries::
 # 54 "data/maps/Route104_MrBrineysHouse/scripts.pory"
-	msgbox Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford, MSGBOX_YESNO
+	msgbox_mugshot Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford, MSGBOX_YESNO, MUGSHOT_BRINEY
 # 55 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing
 # 56 "data/maps/Route104_MrBrineysHouse/scripts.pory"
@@ -117,7 +117,7 @@ Route104_MrBrineysHouse_EventScript_SailBothDeliveries::
 # 59 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 Route104_MrBrineysHouse_EventScript_SailDeliverPackage::
 # 60 "data/maps/Route104_MrBrineysHouse/scripts.pory"
-	msgbox Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford, MSGBOX_YESNO
+	msgbox_mugshot Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford, MSGBOX_YESNO, MUGSHOT_BRINEY
 # 61 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing
 # 62 "data/maps/Route104_MrBrineysHouse/scripts.pory"
@@ -129,7 +129,7 @@ Route104_MrBrineysHouse_EventScript_SailDeliverPackage::
 # 65 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing::
 # 66 "data/maps/Route104_MrBrineysHouse/scripts.pory"
-	msgbox Route104_MrBrineysHouse_Text_DeclineDeliverySail, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_MrBrineysHouse_Text_DeclineDeliverySail, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 67 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 	release
 # 68 "data/maps/Route104_MrBrineysHouse/scripts.pory"
@@ -139,7 +139,7 @@ Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing::
 # 70 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 Route104_MrBrineysHouse_EventScript_DeclineSailing::
 # 71 "data/maps/Route104_MrBrineysHouse/scripts.pory"
-	msgbox Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 72 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 	release
 # 73 "data/maps/Route104_MrBrineysHouse/scripts.pory"
@@ -149,7 +149,7 @@ Route104_MrBrineysHouse_EventScript_DeclineSailing::
 # 75 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 Route104_MrBrineysHouse_EventScript_SailToDewford::
 # 76 "data/maps/Route104_MrBrineysHouse/scripts.pory"
-	msgbox Route104_MrBrineysHouse_Text_SetSailForDewford, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_MrBrineysHouse_Text_SetSailForDewford, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 77 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 	call EventScript_BackupMrBrineyLocation
 # 78 "data/maps/Route104_MrBrineysHouse/scripts.pory"

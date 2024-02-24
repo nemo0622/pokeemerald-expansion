@@ -54,7 +54,7 @@ DewfordTown_Hall_EventScript_ExpertM::
 	lock
 	faceplayer
 	call Common_EventScript_BufferTrendyPhrase
-	msgbox DewfordTown_Hall_Text_TVShowAboutTrend, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_TVShowAboutTrend, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 	closemessage
 	applymovement LOCALID_EXPERT_M, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0

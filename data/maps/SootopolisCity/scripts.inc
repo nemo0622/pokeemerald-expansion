@@ -1381,7 +1381,7 @@ SootopolisCity_EventScript_CaveOfOriginExpert::
 # 691 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 2, SootopolisCity_EventScript_ExpertLeadToCave
 # 692 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_CaveOfOriginPleaseLeave, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_CaveOfOriginPleaseLeave, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 693 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 694 "data/maps/SootopolisCity/scripts.pory"
@@ -1391,7 +1391,7 @@ SootopolisCity_EventScript_CaveOfOriginExpert::
 # 696 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_ExpertLeadToCave::
 # 697 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_LeadSuperiorTrainerToCave, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_LeadSuperiorTrainerToCave, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 698 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 699 "data/maps/SootopolisCity/scripts.pory"
@@ -1401,7 +1401,7 @@ SootopolisCity_EventScript_ExpertLeadToCave::
 # 701 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_ExpertPostLegendaries::
 # 702 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_CaveOfOriginSleepsToo, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_CaveOfOriginSleepsToo, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 703 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 704 "data/maps/SootopolisCity/scripts.pory"
@@ -1411,7 +1411,7 @@ SootopolisCity_EventScript_ExpertPostLegendaries::
 # 706 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_ExpertLegendaries::
 # 707 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_AwakenedPokemonClash, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_AwakenedPokemonClash, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 708 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 709 "data/maps/SootopolisCity/scripts.pory"

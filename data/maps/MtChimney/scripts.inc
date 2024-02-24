@@ -957,7 +957,7 @@ MtChimney_EventScript_Shelby::
 # 479 "data/maps/MtChimney/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, MtChimney_EventScript_RematchShelby
 # 480 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_ShelbyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MtChimney_Text_ShelbyPostBattle, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 481 "data/maps/MtChimney/scripts.pory"
 	release
 # 482 "data/maps/MtChimney/scripts.pory"
@@ -971,7 +971,7 @@ MtChimney_EventScript_DefeatedShelby::
 # 486 "data/maps/MtChimney/scripts.pory"
 	waitmovement 0
 # 487 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_ShelbyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot MtChimney_Text_ShelbyRegister, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 488 "data/maps/MtChimney/scripts.pory"
 	register_matchcall TRAINER_SHELBY_1
 # 489 "data/maps/MtChimney/scripts.pory"
@@ -985,7 +985,7 @@ MtChimney_EventScript_RematchShelby::
 # 493 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_rematch TRAINER_SHELBY_1, MtChimney_Text_ShelbyRematchIntro, MtChimney_Text_ShelbyRematchDefeat
 # 494 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_ShelbyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtChimney_Text_ShelbyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTF
 # 495 "data/maps/MtChimney/scripts.pory"
 	end
 # 496 "data/maps/MtChimney/scripts.pory"

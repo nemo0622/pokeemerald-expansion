@@ -647,7 +647,7 @@ RusturfTunnel_EventScript_Grunt::
 # 324 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 325 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_Text_PeekoGladToSeeYouSafe, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_PeekoGladToSeeYouSafe, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 326 "data/maps/RusturfTunnel/scripts.pory"
 	applymovement LOCALID_BRINEY, Common_Movement_FacePlayer
 # 327 "data/maps/RusturfTunnel/scripts.pory"

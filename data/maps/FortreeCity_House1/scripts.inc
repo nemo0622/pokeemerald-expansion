@@ -99,7 +99,7 @@ FortreeCity_House1_EventScript_TradeCompleted::
 # 50 "data/maps/FortreeCity_House1/scripts.pory"
 FortreeCity_House1_EventScript_ExpertF::
 # 51 "data/maps/FortreeCity_House1/scripts.pory"
-	msgbox FortreeCity_House1_Text_TradingMemoriesWithOthers, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House1_Text_TradingMemoriesWithOthers, MSGBOX_NPC, MUGSHOT_EXPERTF
 # 52 "data/maps/FortreeCity_House1/scripts.pory"
 	end
 # 53 "data/maps/FortreeCity_House1/scripts.pory"

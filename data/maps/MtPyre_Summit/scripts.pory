@@ -166,23 +166,23 @@ MtPyre_Summit_EventScript_OldLady::
 	goto_if_set FLAG_RETURNED_RED_OR_BLUE_ORB, MtPyre_Summit_EventScript_OldLadyAfterOrbsReturned
 	call_if_ge VAR_MT_PYRE_STATE, 3, MtPyre_Summit_EventScript_OldLadyOrbsReturned
 	goto_if_set FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, MtPyre_Summit_EventScript_OldLadyLegendariesAwake
-	msgbox MtPyre_Summit_Text_OrbsHaveBeenTaken, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_OrbsHaveBeenTaken, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	release
 	end
 
 MtPyre_Summit_EventScript_OldLadyOrbsReturned::
-	msgbox MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	setflag FLAG_RETURNED_RED_OR_BLUE_ORB
 	release
 	end
 
 MtPyre_Summit_EventScript_OldLadyLegendariesAwake::
-	msgbox MtPyre_Summit_Text_GroudonKyogreAwakened, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_GroudonKyogreAwakened, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	release
 	end
 
 MtPyre_Summit_EventScript_OldLadyAfterOrbsReturned::
-	msgbox MtPyre_Summit_Text_SuperAncientPokemonTaughtUs, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_SuperAncientPokemonTaughtUs, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	release
 	end
 

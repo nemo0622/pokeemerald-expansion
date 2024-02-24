@@ -80,7 +80,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestant1::
 LilycoveCity_ContestHall_EventScript_SmartContestant2::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_RaisedMonToBeSmart, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_RaisedMonToBeSmart, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 	closemessage
 	applymovement LOCALID_SMART_CONTESTANT_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -108,7 +108,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestant4::
 	end
 
 LilycoveCity_ContestHall_EventScript_SmartContestAudience1::
-	msgbox LilycoveCity_ContestHall_Text_YoureBeautifulGrandpa, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_ContestHall_Text_YoureBeautifulGrandpa, MSGBOX_SIGN, MUGSHOT_EXPERTF
 	end
 
 LilycoveCity_ContestHall_EventScript_SmartContestAudience2::
@@ -284,7 +284,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestant3::
 LilycoveCity_ContestHall_EventScript_CuteContestant4::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_MyMonAppealSoMuchCuter, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_MyMonAppealSoMuchCuter, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	closemessage
 	applymovement LOCALID_CUTE_CONTESTANT_4, Common_Movement_FaceOriginalDirection
 	waitmovement 0

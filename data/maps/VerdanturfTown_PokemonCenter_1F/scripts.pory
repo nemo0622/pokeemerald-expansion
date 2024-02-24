@@ -24,7 +24,7 @@ VerdanturfTown_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 VerdanturfTown_PokemonCenter_1F_EventScript_ExpertM::
-	msgbox VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent, MSGBOX_NPC, MUGSHOT_EXPERTM
 	end
 
 VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon:

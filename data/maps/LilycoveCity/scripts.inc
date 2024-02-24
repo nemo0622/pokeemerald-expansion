@@ -215,7 +215,7 @@ LilycoveCity_EventScript_Man2::
 # 108 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_ExpertM1::
 # 109 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_SeaRemainsForeverYoung, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_Text_SeaRemainsForeverYoung, MSGBOX_SIGN, MUGSHOT_EXPERTM
 # 110 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 111 "data/maps/LilycoveCity/scripts.pory"
@@ -223,7 +223,7 @@ LilycoveCity_EventScript_ExpertM1::
 # 112 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_ExpertF::
 # 113 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_SixtyYearsAgoHusbandProposed, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_Text_SixtyYearsAgoHusbandProposed, MSGBOX_SIGN, MUGSHOT_EXPERTF
 # 114 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 115 "data/maps/LilycoveCity/scripts.pory"
@@ -237,7 +237,7 @@ LilycoveCity_EventScript_ExpertM2::
 # 119 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_BADGE07_GET, LilycoveCity_EventScript_ExpertM2AquaGone
 # 120 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_TeamAquaRenovatedCavern, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_TeamAquaRenovatedCavern, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 121 "data/maps/LilycoveCity/scripts.pory"
 	release
 # 122 "data/maps/LilycoveCity/scripts.pory"
@@ -247,7 +247,7 @@ LilycoveCity_EventScript_ExpertM2::
 # 124 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_ExpertM2AquaGone::
 # 125 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_TeamAquaLotGoneForGood, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_TeamAquaLotGoneForGood, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 126 "data/maps/LilycoveCity/scripts.pory"
 	release
 # 127 "data/maps/LilycoveCity/scripts.pory"

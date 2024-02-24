@@ -279,7 +279,7 @@ Route116_EventScript_Briney::
 # 140 "data/maps/Route116/scripts.pory"
 	faceplayer
 # 141 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 142 "data/maps/Route116/scripts.pory"
 	setvar VAR_ROUTE116_STATE, 2
 # 143 "data/maps/Route116/scripts.pory"
@@ -299,7 +299,7 @@ Route116_EventScript_BrineyTrigger::
 # 150 "data/maps/Route116/scripts.pory"
 	waitmovement 0
 # 151 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 152 "data/maps/Route116/scripts.pory"
 	setvar VAR_ROUTE116_STATE, 2
 # 153 "data/maps/Route116/scripts.pory"

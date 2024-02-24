@@ -17,7 +17,7 @@ PacifidlogTown_House5_EventScript_MirageIslandWatcher::
 # 9 "data/maps/PacifidlogTown_House5/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, PacifidlogTown_House5_EventScript_MirageIslandPresent
 # 10 "data/maps/PacifidlogTown_House5/scripts.pory"
-	msgbox PacifidlogTown_House5_Text_CantSeeMirageIslandToday, MSGBOX_DEFAULT
+	msgbox_mugshot PacifidlogTown_House5_Text_CantSeeMirageIslandToday, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 11 "data/maps/PacifidlogTown_House5/scripts.pory"
 	release
 # 12 "data/maps/PacifidlogTown_House5/scripts.pory"
@@ -27,7 +27,7 @@ PacifidlogTown_House5_EventScript_MirageIslandWatcher::
 # 14 "data/maps/PacifidlogTown_House5/scripts.pory"
 PacifidlogTown_House5_EventScript_MirageIslandPresent::
 # 15 "data/maps/PacifidlogTown_House5/scripts.pory"
-	msgbox PacifidlogTown_House5_Text_CanSeeMirageIslandToday, MSGBOX_DEFAULT
+	msgbox_mugshot PacifidlogTown_House5_Text_CanSeeMirageIslandToday, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 16 "data/maps/PacifidlogTown_House5/scripts.pory"
 	release
 # 17 "data/maps/PacifidlogTown_House5/scripts.pory"

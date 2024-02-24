@@ -106,23 +106,23 @@ LilycoveCity_EventScript_Man2::
 	end
 
 LilycoveCity_EventScript_ExpertM1::
-	msgbox LilycoveCity_Text_SeaRemainsForeverYoung, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_Text_SeaRemainsForeverYoung, MSGBOX_SIGN, MUGSHOT_EXPERTM
 	end
 
 LilycoveCity_EventScript_ExpertF::
-	msgbox LilycoveCity_Text_SixtyYearsAgoHusbandProposed, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_Text_SixtyYearsAgoHusbandProposed, MSGBOX_SIGN, MUGSHOT_EXPERTF
 	end
 
 LilycoveCity_EventScript_ExpertM2::
 	lock
 	faceplayer
 	goto_if_set FLAG_BADGE07_GET, LilycoveCity_EventScript_ExpertM2AquaGone
-	msgbox LilycoveCity_Text_TeamAquaRenovatedCavern, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_TeamAquaRenovatedCavern, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 	release
 	end
 
 LilycoveCity_EventScript_ExpertM2AquaGone::
-	msgbox LilycoveCity_Text_TeamAquaLotGoneForGood, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_TeamAquaLotGoneForGood, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 	release
 	end
 

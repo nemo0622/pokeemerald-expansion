@@ -53,7 +53,7 @@ FallarborTown_PokemonCenter_1F_EventScript_Girl::
 # 27 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
 FallarborTown_PokemonCenter_1F_EventScript_ExpertM::
 # 28 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
-	msgbox FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 29 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
 	end
 # 30 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"

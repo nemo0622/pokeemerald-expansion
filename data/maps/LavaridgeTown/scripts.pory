@@ -210,7 +210,7 @@ LavaridgeTown_EventScript_EnteredHotSprings::
 	end
 
 LavaridgeTown_EventScript_ExpertM::
-	msgbox LavaridgeTown_Text_HotSpringsNeverRunDry, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_Text_HotSpringsNeverRunDry, MSGBOX_NPC, MUGSHOT_EXPERTM
 	end
 
 LavaridgeTown_EventScript_OldMan::
@@ -230,18 +230,18 @@ LavaridgeTown_EventScript_HotSpringsOldWoman2::
 	end
 
 LavaridgeTown_EventScript_ExpertF::
-	msgbox LavaridgeTown_Text_OhYouLikeHotSprings, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_Text_OhYouLikeHotSprings, MSGBOX_NPC, MUGSHOT_EXPERTF
 	end
 
 LavaridgeTown_EventScript_EggWoman::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_LAVARIDGE_EGG, LavaridgeTown_EventScript_ReceivedEgg
-	msgbox LavaridgeTown_Text_HaveEggWillYouTakeIt, MSGBOX_YESNO
+	msgbox_mugshot LavaridgeTown_Text_HaveEggWillYouTakeIt, MSGBOX_YESNO, MUGSHOT_EXPERTF
 	goto_if_eq VAR_RESULT, NO, LavaridgeTown_EventScript_DeclineEgg
 	getpartysize
 	goto_if_eq VAR_RESULT, PARTY_SIZE, LavaridgeTown_EventScript_NoRoomForEgg
-	msgbox LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	setflag FLAG_RECEIVED_LAVARIDGE_EGG
 	playfanfare MUS_OBTAIN_ITEM
 	message LavaridgeTown_Text_ReceivedTheEgg
@@ -251,17 +251,17 @@ LavaridgeTown_EventScript_EggWoman::
 	end
 
 LavaridgeTown_EventScript_ReceivedEgg::
-	msgbox LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	release
 	end
 
 LavaridgeTown_EventScript_NoRoomForEgg::
-	msgbox LavaridgeTown_Text_NoRoomForThisEgg, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_NoRoomForThisEgg, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	release
 	end
 
 LavaridgeTown_EventScript_DeclineEgg::
-	msgbox LavaridgeTown_Text_AsYouWishThen, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Text_AsYouWishThen, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	release
 	end
 

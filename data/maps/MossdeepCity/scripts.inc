@@ -101,7 +101,7 @@ MossdeepCity_EventScript_NinjaBoy::
 # 51 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_ExpertM::
 # 52 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_LifeNeedsSeaToLive, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Text_LifeNeedsSeaToLive, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 53 "data/maps/MossdeepCity/scripts.pory"
 	end
 # 54 "data/maps/MossdeepCity/scripts.pory"

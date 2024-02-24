@@ -45,13 +45,13 @@ Route111_WinstrateFamilysHouse_EventScript_Vicky::
 	faceplayer
 	setvar VAR_0x8008, LOCALID_VICKY
 	goto_if_set FLAG_TEMP_4, Route111_WinstrateFamilysHouse_EventScript_AlreadySpokenTo
-	msgbox Route111_WinstrateFamilysHouse_Text_GrandsonStrong, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_WinstrateFamilysHouse_Text_GrandsonStrong, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	setflag FLAG_TEMP_4
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 
 Route111_WinstrateFamilysHouse_EventScript_AlreadySpokenTo::
-	msgbox Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 

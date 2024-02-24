@@ -10,22 +10,22 @@ Route111_OldLadysRestStop_OnTransition:
 Route111_OldLadysRestStop_EventScript_OldLady::
 	lock
 	faceplayer
-	msgbox Route111_OldLadysRestStop_Text_RestUpHere, MSGBOX_YESNO
+	msgbox_mugshot Route111_OldLadysRestStop_Text_RestUpHere, MSGBOX_YESNO, MUGSHOT_EXPERTF
 	goto_if_eq VAR_RESULT, YES, Route111_OldLadysRestStop_EventScript_Rest
 	goto_if_eq VAR_RESULT, NO, Route111_OldLadysRestStop_EventScript_DeclineRest
 	end
 
 Route111_OldLadysRestStop_EventScript_Rest::
-	msgbox Route111_OldLadysRestStop_Text_TakeYourTimeRestUp, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_OldLadysRestStop_Text_TakeYourTimeRestUp, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	closemessage
 	call Common_EventScript_OutOfCenterPartyHeal
-	msgbox Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest, MSGBOX_YESNO
+	msgbox_mugshot Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest, MSGBOX_YESNO, MUGSHOT_EXPERTF
 	goto_if_eq VAR_RESULT, YES, Route111_OldLadysRestStop_EventScript_Rest
 	goto_if_eq VAR_RESULT, NO, Route111_OldLadysRestStop_EventScript_DeclineRest
 	end
 
 Route111_OldLadysRestStop_EventScript_DeclineRest::
-	msgbox Route111_OldLadysRestStop_Text_DontNeedToBeShy, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_OldLadysRestStop_Text_DontNeedToBeShy, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	release
 	end
 

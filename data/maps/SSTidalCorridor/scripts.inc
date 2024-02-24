@@ -171,7 +171,7 @@ SSTidalRooms_EventScript_ProgessCruiseAfterBed::
 # 86 "data/maps/SSTidalCorridor/scripts.pory"
 SSTidalCorridor_EventScript_Briney::
 # 87 "data/maps/SSTidalCorridor/scripts.pory"
-	msgbox SSTidalCorridor_Text_BrineyWelcomeAboard, MSGBOX_NPC
+	msgbox_mugshot SSTidalCorridor_Text_BrineyWelcomeAboard, MSGBOX_NPC, MUGSHOT_BRINEY
 # 88 "data/maps/SSTidalCorridor/scripts.pory"
 	end
 # 89 "data/maps/SSTidalCorridor/scripts.pory"

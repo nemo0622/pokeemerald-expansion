@@ -23,6 +23,8 @@ DewfordTown_EventScript_Briney::
 	lock
 	faceplayer
 	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
+	setvar VAR_MUGSHOT, MUGSHOT_BRINEY
+	callnative DrawMugshot
 	message DewfordTown_Text_WhereAreWeBound
 	waitmessage
 	multichoicedefault 21, 6, MULTI_BRINEY_ON_DEWFORD, 2, FALSE
@@ -34,34 +36,37 @@ DewfordTown_EventScript_Briney::
 	end
 
 DewfordTown_EventScript_ChoosePetalburg::
-	msgbox DewfordTown_Text_PetalburgWereSettingSail, MSGBOX_DEFAULT
+	callnative ClearMugshot
+	msgbox_mugshot DewfordTown_Text_PetalburgWereSettingSail, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	closemessage
 	goto DewfordTown_EventScript_SailToPetalburg
 	release
 	end
 
 DewfordTown_EventScript_ChooseSlateport::
-	msgbox DewfordTown_Text_SlateportWereSettingSail, MSGBOX_DEFAULT
+	callnative ClearMugshot
+	msgbox_mugshot DewfordTown_Text_SlateportWereSettingSail, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	closemessage
 	goto DewfordTown_EventScript_SailToSlateport
 	release
 	end
 
 DewfordTown_EventScript_CancelSailSelect::
-	msgbox DewfordTown_Text_JustTellMeWhenYouNeedToSetSail, MSGBOX_DEFAULT
+	callnative ClearMugshot
+	msgbox_mugshot DewfordTown_Text_JustTellMeWhenYouNeedToSetSail, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	closemessage
 	release
 	end
 
 DewfordTown_EventScript_ReturnToPetalburgPrompt::
-	msgbox DewfordTown_Text_SetSailBackToPetalburg, MSGBOX_YESNO
+	msgbox_mugshot DewfordTown_Text_SetSailBackToPetalburg, MSGBOX_YESNO, MUGSHOT_BRINEY
 	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_SailBackToPetalburg
-	msgbox DewfordTown_Text_GoDeliverIllBeWaiting, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Text_GoDeliverIllBeWaiting, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	release
 	end
 
 DewfordTown_EventScript_SailBackToPetalburg::
-	msgbox DewfordTown_Text_PetalburgWereSettingSail2, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Text_PetalburgWereSettingSail2, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	closemessage
 	goto DewfordTown_EventScript_SailToPetalburg
 	end

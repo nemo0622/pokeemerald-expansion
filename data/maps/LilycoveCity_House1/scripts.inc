@@ -9,7 +9,7 @@ LilycoveCity_House1_MapScripts::
 # 5 "data/maps/LilycoveCity_House1/scripts.pory"
 LilycoveCity_House1_EventScript_ExpertM::
 # 6 "data/maps/LilycoveCity_House1/scripts.pory"
-	msgbox LilycoveCity_House1_Text_PokemonPartnersNotTools, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_House1_Text_PokemonPartnersNotTools, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 7 "data/maps/LilycoveCity_House1/scripts.pory"
 	end
 # 8 "data/maps/LilycoveCity_House1/scripts.pory"

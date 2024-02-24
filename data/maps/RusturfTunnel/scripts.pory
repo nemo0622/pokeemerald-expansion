@@ -322,7 +322,7 @@ RusturfTunnel_EventScript_Grunt::
 	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PlayerMoveAsideForBriney
 	applymovement LOCALID_BRINEY, RusturfTunnel_Movement_BrineyApproachPeeko2
 	waitmovement 0
-	msgbox RusturfTunnel_Text_PeekoGladToSeeYouSafe, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_PeekoGladToSeeYouSafe, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	applymovement LOCALID_BRINEY, Common_Movement_FacePlayer
 	waitmovement 0
 	message RusturfTunnel_Text_ThankYouLetsGoHomePeeko

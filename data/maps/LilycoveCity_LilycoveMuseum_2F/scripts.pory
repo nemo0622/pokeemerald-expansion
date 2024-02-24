@@ -175,7 +175,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_Girl::
 	end
 
 LilycoveCity_LilycoveMuseum_2F_EventScript_ExpertM::
-	msgbox LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing, MSGBOX_NPC, MUGSHOT_EXPERTM
 	end
 
 LilycoveCity_LilycoveMuseum_2F_EventScript_RichBoy::

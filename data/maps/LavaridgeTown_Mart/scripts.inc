@@ -59,7 +59,7 @@ LavaridgeTown_Mart_Pokemart:
 # 30 "data/maps/LavaridgeTown_Mart/scripts.pory"
 LavaridgeTown_Mart_EventScript_ExpertM::
 # 31 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	msgbox LavaridgeTown_Mart_Text_XSpeedFirstStrike, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_Mart_Text_XSpeedFirstStrike, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 32 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	end
 # 33 "data/maps/LavaridgeTown_Mart/scripts.pory"

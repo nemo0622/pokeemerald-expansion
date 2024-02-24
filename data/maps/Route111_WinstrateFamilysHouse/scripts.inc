@@ -93,7 +93,7 @@ Route111_WinstrateFamilysHouse_EventScript_Vicky::
 # 47 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto_if_set FLAG_TEMP_4, Route111_WinstrateFamilysHouse_EventScript_AlreadySpokenTo
 # 48 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	msgbox Route111_WinstrateFamilysHouse_Text_GrandsonStrong, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_WinstrateFamilysHouse_Text_GrandsonStrong, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 49 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	setflag FLAG_TEMP_4
 # 50 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
@@ -105,7 +105,7 @@ Route111_WinstrateFamilysHouse_EventScript_Vicky::
 # 53 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 Route111_WinstrateFamilysHouse_EventScript_AlreadySpokenTo::
 # 54 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	msgbox Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 55 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 # 56 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"

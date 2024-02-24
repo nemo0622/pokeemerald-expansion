@@ -23,7 +23,7 @@ Route111_OldLadysRestStop_EventScript_OldLady::
 # 12 "data/maps/Route111_OldLadysRestStop/scripts.pory"
 	faceplayer
 # 13 "data/maps/Route111_OldLadysRestStop/scripts.pory"
-	msgbox Route111_OldLadysRestStop_Text_RestUpHere, MSGBOX_YESNO
+	msgbox_mugshot Route111_OldLadysRestStop_Text_RestUpHere, MSGBOX_YESNO, MUGSHOT_EXPERTF
 # 14 "data/maps/Route111_OldLadysRestStop/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, Route111_OldLadysRestStop_EventScript_Rest
 # 15 "data/maps/Route111_OldLadysRestStop/scripts.pory"
@@ -35,13 +35,13 @@ Route111_OldLadysRestStop_EventScript_OldLady::
 # 18 "data/maps/Route111_OldLadysRestStop/scripts.pory"
 Route111_OldLadysRestStop_EventScript_Rest::
 # 19 "data/maps/Route111_OldLadysRestStop/scripts.pory"
-	msgbox Route111_OldLadysRestStop_Text_TakeYourTimeRestUp, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_OldLadysRestStop_Text_TakeYourTimeRestUp, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 20 "data/maps/Route111_OldLadysRestStop/scripts.pory"
 	closemessage
 # 21 "data/maps/Route111_OldLadysRestStop/scripts.pory"
 	call Common_EventScript_OutOfCenterPartyHeal
 # 22 "data/maps/Route111_OldLadysRestStop/scripts.pory"
-	msgbox Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest, MSGBOX_YESNO
+	msgbox_mugshot Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest, MSGBOX_YESNO, MUGSHOT_EXPERTF
 # 23 "data/maps/Route111_OldLadysRestStop/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, Route111_OldLadysRestStop_EventScript_Rest
 # 24 "data/maps/Route111_OldLadysRestStop/scripts.pory"
@@ -53,7 +53,7 @@ Route111_OldLadysRestStop_EventScript_Rest::
 # 27 "data/maps/Route111_OldLadysRestStop/scripts.pory"
 Route111_OldLadysRestStop_EventScript_DeclineRest::
 # 28 "data/maps/Route111_OldLadysRestStop/scripts.pory"
-	msgbox Route111_OldLadysRestStop_Text_DontNeedToBeShy, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_OldLadysRestStop_Text_DontNeedToBeShy, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 29 "data/maps/Route111_OldLadysRestStop/scripts.pory"
 	release
 # 30 "data/maps/Route111_OldLadysRestStop/scripts.pory"

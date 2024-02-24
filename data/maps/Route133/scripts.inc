@@ -61,7 +61,7 @@ Route133_EventScript_Mollie::
 # 31 "data/maps/Route133/scripts.pory"
 	trainerbattle_single TRAINER_MOLLIE, Route133_Text_MollieIntro, Route133_Text_MollieDefeat
 # 32 "data/maps/Route133/scripts.pory"
-	msgbox Route133_Text_MolliePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route133_Text_MolliePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTF
 # 33 "data/maps/Route133/scripts.pory"
 	end
 # 34 "data/maps/Route133/scripts.pory"
@@ -71,6 +71,6 @@ Route133_EventScript_Conor::
 # 36 "data/maps/Route133/scripts.pory"
 	trainerbattle_single TRAINER_CONOR, Route133_Text_ConorIntro, Route133_Text_ConorDefeat
 # 37 "data/maps/Route133/scripts.pory"
-	msgbox Route133_Text_ConorPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route133_Text_ConorPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTM
 # 38 "data/maps/Route133/scripts.pory"
 	end

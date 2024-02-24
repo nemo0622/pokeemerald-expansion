@@ -65,7 +65,7 @@ MauvilleCity_Mart_Pokemart:
 # 33 "data/maps/MauvilleCity_Mart/scripts.pory"
 MauvilleCity_Mart_EventScript_ExpertM::
 # 34 "data/maps/MauvilleCity_Mart/scripts.pory"
-	msgbox MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 35 "data/maps/MauvilleCity_Mart/scripts.pory"
 	end
 # 36 "data/maps/MauvilleCity_Mart/scripts.pory"

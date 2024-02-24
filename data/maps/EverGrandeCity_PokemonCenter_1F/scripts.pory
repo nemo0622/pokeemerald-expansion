@@ -30,7 +30,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_Woman::
 	end
 
 EverGrandeCity_PokemonCenter_1F_EventScript_ExpertM::
-	msgbox EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon, MSGBOX_NPC
+	msgbox_mugshot EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon, MSGBOX_NPC, MUGSHOT_EXPERTM
 	end
 
 EverGrandeCity_PokemonCenter_1F_EventScript_Scott::

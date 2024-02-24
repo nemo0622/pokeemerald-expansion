@@ -71,7 +71,7 @@ VerdanturfTown_Mart_EventScript_Boy::
 # 36 "data/maps/VerdanturfTown_Mart/scripts.pory"
 VerdanturfTown_Mart_EventScript_ExpertF::
 # 37 "data/maps/VerdanturfTown_Mart/scripts.pory"
-	msgbox VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent, MSGBOX_NPC, MUGSHOT_EXPERTF
 # 38 "data/maps/VerdanturfTown_Mart/scripts.pory"
 	end
 # 39 "data/maps/VerdanturfTown_Mart/scripts.pory"

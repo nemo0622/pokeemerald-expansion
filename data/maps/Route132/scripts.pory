@@ -24,7 +24,7 @@ Route132_EventScript_Kiyo::
 
 Route132_EventScript_Paxton::
 	trainerbattle_single TRAINER_PAXTON, Route132_Text_PaxtonIntro, Route132_Text_PaxtonDefeat
-	msgbox Route132_Text_PaxtonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_PaxtonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTM
 	end
 
 Route132_EventScript_Darcy::
@@ -39,7 +39,7 @@ Route132_EventScript_Jonathan::
 
 Route132_EventScript_Makayla::
 	trainerbattle_single TRAINER_MAKAYLA, Route132_Text_MakaylaIntro, Route132_Text_MakaylaDefeat
-	msgbox Route132_Text_MakaylaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_MakaylaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTF
 	end
 
 `

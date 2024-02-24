@@ -127,7 +127,7 @@ SlateportCity_SternsShipyard_1F_EventScript_Scientist2::
 # 64 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 SlateportCity_SternsShipyard_1F_EventScript_Briney::
 # 65 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock, MSGBOX_NPC, MUGSHOT_BRINEY
 # 66 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	end
 # 67 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"

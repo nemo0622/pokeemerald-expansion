@@ -117,7 +117,7 @@ Route109_EventScript_DoSailToDewford::
 # 59 "data/maps/Route109/scripts.pory"
 	hideobjectat LOCALID_BOAT_R109, MAP_ROUTE109
 # 60 "data/maps/Route109/scripts.pory"
-	msgbox DewfordTown_Text_BrineyLandedInDewford, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Text_BrineyLandedInDewford, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 61 "data/maps/Route109/scripts.pory"
 	closemessage
 # 62 "data/maps/Route109/scripts.pory"
@@ -567,7 +567,7 @@ Route109_EventScript_HaveNotDeliveredDevonGood::
 # 284 "data/maps/Route109/scripts.pory"
 	message Route109_Text_BrineySailToDewfordQuestion
 # 285 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_BrineySailToDewfordQuestion, MSGBOX_YESNO
+	msgbox_mugshot Route109_Text_BrineySailToDewfordQuestion, MSGBOX_YESNO, MUGSHOT_BRINEY
 # 286 "data/maps/Route109/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, Route109_EventScript_StayHere
 # 287 "data/maps/Route109/scripts.pory"
@@ -599,7 +599,7 @@ Route109_EventScript_DeliveredDevonGoods::
 # 300 "data/maps/Route109/scripts.pory"
 Route109_EventScript_SailToDewford::
 # 301 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_BrineyDewfordItIs, MSGBOX_DEFAULT
+	msgbox_mugshot Route109_Text_BrineyDewfordItIs, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 302 "data/maps/Route109/scripts.pory"
 	closemessage
 # 303 "data/maps/Route109/scripts.pory"
@@ -611,7 +611,7 @@ Route109_EventScript_SailToDewford::
 # 306 "data/maps/Route109/scripts.pory"
 Route109_EventScript_StayHere::
 # 307 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_BrineyDeliverDevonGoods, MSGBOX_DEFAULT
+	msgbox_mugshot Route109_Text_BrineyDeliverDevonGoods, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 308 "data/maps/Route109/scripts.pory"
 	release
 # 309 "data/maps/Route109/scripts.pory"
@@ -621,7 +621,7 @@ Route109_EventScript_StayHere::
 # 311 "data/maps/Route109/scripts.pory"
 Route109_EventScript_ChoseNotToSail::
 # 312 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_BrineyTellMeWhenYouNeedToSail, MSGBOX_DEFAULT
+	msgbox_mugshot Route109_Text_BrineyTellMeWhenYouNeedToSail, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 313 "data/maps/Route109/scripts.pory"
 	release
 # 314 "data/maps/Route109/scripts.pory"

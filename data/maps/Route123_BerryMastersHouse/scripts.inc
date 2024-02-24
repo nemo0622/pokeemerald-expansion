@@ -27,7 +27,7 @@ Route123_BerryMastersHouse_EventScript_BerryMaster::
 # 14 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	goto_if_set FLAG_DAILY_BERRY_MASTER_RECEIVED_BERRY, Route123_BerryMastersHouse_EventScript_ReceivedBerryToday
 # 15 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	msgbox Route123_BerryMastersHouse_Text_YoureDeservingOfBerry, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_BerryMastersHouse_Text_YoureDeservingOfBerry, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 16 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	random NUM_BERRY_MASTER_BERRIES
 # 17 "data/maps/Route123_BerryMastersHouse/scripts.pory"
@@ -41,7 +41,7 @@ Route123_BerryMastersHouse_EventScript_BerryMaster::
 # 21 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	setflag FLAG_DAILY_BERRY_MASTER_RECEIVED_BERRY
 # 22 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	msgbox Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 23 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	random NUM_BERRY_MASTER_BERRIES
 # 24 "data/maps/Route123_BerryMastersHouse/scripts.pory"
@@ -53,7 +53,7 @@ Route123_BerryMastersHouse_EventScript_BerryMaster::
 # 27 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 28 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	msgbox Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 29 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	release
 # 30 "data/maps/Route123_BerryMastersHouse/scripts.pory"
@@ -63,7 +63,7 @@ Route123_BerryMastersHouse_EventScript_BerryMaster::
 # 32 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 Route123_BerryMastersHouse_EventScript_ReceivedBerryToday::
 # 33 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	msgbox Route123_BerryMastersHouse_Text_DoneForToday, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_BerryMastersHouse_Text_DoneForToday, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 34 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	release
 # 35 "data/maps/Route123_BerryMastersHouse/scripts.pory"

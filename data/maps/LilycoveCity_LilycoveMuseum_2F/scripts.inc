@@ -353,7 +353,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_Girl::
 # 177 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 LilycoveCity_LilycoveMuseum_2F_EventScript_ExpertM::
 # 178 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	msgbox LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 179 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	end
 # 180 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"

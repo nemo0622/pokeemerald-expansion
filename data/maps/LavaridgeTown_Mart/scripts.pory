@@ -28,7 +28,7 @@ LavaridgeTown_Mart_Pokemart:
 	end
 
 LavaridgeTown_Mart_EventScript_ExpertM::
-	msgbox LavaridgeTown_Mart_Text_XSpeedFirstStrike, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_Mart_Text_XSpeedFirstStrike, MSGBOX_NPC, MUGSHOT_EXPERTM
 	end
 
 LavaridgeTown_Mart_EventScript_OldWoman::

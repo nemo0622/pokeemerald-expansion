@@ -82,11 +82,11 @@ Route110_EventScript_CyclingGuy1::
 	end
 
 Route110_EventScript_OldMan::
-	msgbox Route110_Text_TwoRoads, MSGBOX_NPC
+	msgbox_mugshot Route110_Text_TwoRoads, MSGBOX_NPC, MUGSHOT_EXPERTM
 	end
 
 Route110_EventScript_OldWoman::
-	msgbox Route110_Text_WalkOnTheLowRoad, MSGBOX_NPC
+	msgbox_mugshot Route110_Text_WalkOnTheLowRoad, MSGBOX_NPC, MUGSHOT_EXPERTF
 	end
 
 Route110_EventScript_CyclingGuy2::

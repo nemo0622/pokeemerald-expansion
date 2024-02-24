@@ -34,7 +34,7 @@ VerdanturfTown_Mart_EventScript_Boy::
 	end
 
 VerdanturfTown_Mart_EventScript_ExpertF::
-	msgbox VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent, MSGBOX_NPC, MUGSHOT_EXPERTF
 	end
 
 VerdanturfTown_Mart_EventScript_Lass::

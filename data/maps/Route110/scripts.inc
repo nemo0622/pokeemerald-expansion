@@ -167,7 +167,7 @@ Route110_EventScript_CyclingGuy1::
 # 84 "data/maps/Route110/scripts.pory"
 Route110_EventScript_OldMan::
 # 85 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_TwoRoads, MSGBOX_NPC
+	msgbox_mugshot Route110_Text_TwoRoads, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 86 "data/maps/Route110/scripts.pory"
 	end
 # 87 "data/maps/Route110/scripts.pory"
@@ -175,7 +175,7 @@ Route110_EventScript_OldMan::
 # 88 "data/maps/Route110/scripts.pory"
 Route110_EventScript_OldWoman::
 # 89 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_WalkOnTheLowRoad, MSGBOX_NPC
+	msgbox_mugshot Route110_Text_WalkOnTheLowRoad, MSGBOX_NPC, MUGSHOT_EXPERTF
 # 90 "data/maps/Route110/scripts.pory"
 	end
 # 91 "data/maps/Route110/scripts.pory"

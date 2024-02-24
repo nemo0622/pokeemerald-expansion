@@ -663,11 +663,11 @@ Route111_EventScript_BattleWinstrates::
 # 332 "data/maps/Route111/scripts.pory"
 	call Route111_EventScript_CloseWinstrateDoor
 # 333 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_VickyIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_VickyIntro, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 334 "data/maps/Route111/scripts.pory"
 	trainerbattle_no_intro TRAINER_VICKY, Route111_Text_VickyDefeat
 # 335 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_VickyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_VickyPostBattle, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 336 "data/maps/Route111/scripts.pory"
 	closemessage
 # 337 "data/maps/Route111/scripts.pory"

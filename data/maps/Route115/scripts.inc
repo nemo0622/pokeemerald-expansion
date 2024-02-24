@@ -75,7 +75,7 @@ Route115_EventScript_Timothy::
 # 38 "data/maps/Route115/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchTimothy
 # 39 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_TimothyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route115_Text_TimothyPostBattle, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 40 "data/maps/Route115/scripts.pory"
 	release
 # 41 "data/maps/Route115/scripts.pory"
@@ -89,7 +89,7 @@ Route115_EventScript_RegisterTimothy::
 # 45 "data/maps/Route115/scripts.pory"
 	waitmovement 0
 # 46 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_TimothyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route115_Text_TimothyRegister, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 47 "data/maps/Route115/scripts.pory"
 	register_matchcall TRAINER_TIMOTHY_1
 # 48 "data/maps/Route115/scripts.pory"
@@ -103,7 +103,7 @@ Route115_EventScript_RematchTimothy::
 # 52 "data/maps/Route115/scripts.pory"
 	trainerbattle_rematch TRAINER_TIMOTHY_1, Route115_Text_TimothyRematchIntro, Route115_Text_TimothyRematchDefeat
 # 53 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_TimothyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_TimothyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTM
 # 54 "data/maps/Route115/scripts.pory"
 	end
 # 55 "data/maps/Route115/scripts.pory"

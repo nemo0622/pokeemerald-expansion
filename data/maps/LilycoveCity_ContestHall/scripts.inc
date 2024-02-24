@@ -163,7 +163,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestant2::
 # 82 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 83 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_RaisedMonToBeSmart, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_RaisedMonToBeSmart, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 84 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 85 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -219,7 +219,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestant4::
 # 110 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 LilycoveCity_ContestHall_EventScript_SmartContestAudience1::
 # 111 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_YoureBeautifulGrandpa, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_ContestHall_Text_YoureBeautifulGrandpa, MSGBOX_SIGN, MUGSHOT_EXPERTF
 # 112 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	end
 # 113 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -571,7 +571,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestant4::
 # 286 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 287 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_MyMonAppealSoMuchCuter, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_MyMonAppealSoMuchCuter, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 288 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 289 "data/maps/LilycoveCity_ContestHall/scripts.pory"

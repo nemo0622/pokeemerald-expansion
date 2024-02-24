@@ -63,7 +63,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_Woman::
 # 32 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 EverGrandeCity_PokemonCenter_1F_EventScript_ExpertM::
 # 33 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
-	msgbox EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon, MSGBOX_NPC
+	msgbox_mugshot EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 34 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 	end
 # 35 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"

@@ -51,7 +51,7 @@ Route132_EventScript_Paxton::
 # 26 "data/maps/Route132/scripts.pory"
 	trainerbattle_single TRAINER_PAXTON, Route132_Text_PaxtonIntro, Route132_Text_PaxtonDefeat
 # 27 "data/maps/Route132/scripts.pory"
-	msgbox Route132_Text_PaxtonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_PaxtonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTM
 # 28 "data/maps/Route132/scripts.pory"
 	end
 # 29 "data/maps/Route132/scripts.pory"
@@ -81,6 +81,6 @@ Route132_EventScript_Makayla::
 # 41 "data/maps/Route132/scripts.pory"
 	trainerbattle_single TRAINER_MAKAYLA, Route132_Text_MakaylaIntro, Route132_Text_MakaylaDefeat
 # 42 "data/maps/Route132/scripts.pory"
-	msgbox Route132_Text_MakaylaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_MakaylaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTF
 # 43 "data/maps/Route132/scripts.pory"
 	end

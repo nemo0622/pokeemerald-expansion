@@ -5,18 +5,18 @@ SootopolisCity_House2_MapScripts::
 SootopolisCity_House2_EventScript_ExpertF::
 	lock
 	faceplayer
-	msgbox SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs, MSGBOX_YESNO
+	msgbox_mugshot SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs, MSGBOX_YESNO, MUGSHOT_EXPERTF
 	call_if_eq VAR_RESULT, YES, SootopolisCity_House2_EventScript_KnowAboutOrbs
 	call_if_eq VAR_RESULT, NO, SootopolisCity_House2_EventScript_DontKnowAboutOrbs
 	release
 	end
 
 SootopolisCity_House2_EventScript_KnowAboutOrbs::
-	msgbox SootopolisCity_House2_Text_YesTwoOrbsSideBySide, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House2_Text_YesTwoOrbsSideBySide, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	return
 
 SootopolisCity_House2_EventScript_DontKnowAboutOrbs::
-	msgbox SootopolisCity_House2_Text_OughtToVisitAndSee, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House2_Text_OughtToVisitAndSee, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 	return
 
 SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs:

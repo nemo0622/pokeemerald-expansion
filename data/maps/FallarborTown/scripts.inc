@@ -29,7 +29,7 @@ FallarborTown_EventScript_ExpertM::
 # 15 "data/maps/FallarborTown/scripts.pory"
 	goto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, FallarborTown_EventScript_ExpertMNormal
 # 16 "data/maps/FallarborTown/scripts.pory"
-	msgbox FallarborTown_Text_ShadyCharactersCozmosHome, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_Text_ShadyCharactersCozmosHome, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 17 "data/maps/FallarborTown/scripts.pory"
 	release
 # 18 "data/maps/FallarborTown/scripts.pory"
@@ -39,7 +39,7 @@ FallarborTown_EventScript_ExpertM::
 # 20 "data/maps/FallarborTown/scripts.pory"
 FallarborTown_EventScript_ExpertMNormal::
 # 21 "data/maps/FallarborTown/scripts.pory"
-	msgbox FallarborTown_Text_RegionKnownForMeteors, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_Text_RegionKnownForMeteors, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 22 "data/maps/FallarborTown/scripts.pory"
 	release
 # 23 "data/maps/FallarborTown/scripts.pory"

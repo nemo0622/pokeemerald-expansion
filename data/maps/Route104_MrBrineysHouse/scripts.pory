@@ -34,8 +34,8 @@ Route104_MrBrineysHouse_EventScript_Briney::
 
 Route104_MrBrineysHouse_EventScript_SailingIntro::
 	setflag FLAG_MR_BRINEY_SAILING_INTRO
-	msgbox Route104_MrBrineysHouse_Text_WaitUpPeeko, MSGBOX_DEFAULT
-	msgbox Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford, MSGBOX_YESNO
+	msgbox_mugshot Route104_MrBrineysHouse_Text_WaitUpPeeko, MSGBOX_DEFAULT, MUGSHOT_BRINEY
+	msgbox_mugshot Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford, MSGBOX_YESNO, MUGSHOT_BRINEY
 	goto_if_eq VAR_RESULT, NO, Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing
 	goto Route104_MrBrineysHouse_EventScript_SailToDewford
 	end
@@ -51,29 +51,29 @@ Route104_MrBrineysHouse_EventScript_WhereAreWeBound::
 	end
 
 Route104_MrBrineysHouse_EventScript_SailBothDeliveries::
-	msgbox Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford, MSGBOX_YESNO
+	msgbox_mugshot Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford, MSGBOX_YESNO, MUGSHOT_BRINEY
 	goto_if_eq VAR_RESULT, NO, Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing
 	goto Route104_MrBrineysHouse_EventScript_SailToDewford
 	end
 
 Route104_MrBrineysHouse_EventScript_SailDeliverPackage::
-	msgbox Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford, MSGBOX_YESNO
+	msgbox_mugshot Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford, MSGBOX_YESNO, MUGSHOT_BRINEY
 	goto_if_eq VAR_RESULT, NO, Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing
 	goto Route104_MrBrineysHouse_EventScript_SailToDewford
 	end
 
 Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing::
-	msgbox Route104_MrBrineysHouse_Text_DeclineDeliverySail, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_MrBrineysHouse_Text_DeclineDeliverySail, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	release
 	end
 
 Route104_MrBrineysHouse_EventScript_DeclineSailing::
-	msgbox Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	release
 	end
 
 Route104_MrBrineysHouse_EventScript_SailToDewford::
-	msgbox Route104_MrBrineysHouse_Text_SetSailForDewford, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_MrBrineysHouse_Text_SetSailForDewford, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	call EventScript_BackupMrBrineyLocation
 	setvar VAR_BOARD_BRINEY_BOAT_STATE, 1
 	clearflag FLAG_HIDE_ROUTE_104_MR_BRINEY

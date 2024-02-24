@@ -161,6 +161,6 @@ Route125_EventScript_Auron::
 # 81 "data/maps/Route125/scripts.pory"
 	trainerbattle_single TRAINER_AURON, Route125_Text_AuronIntro, Route125_Text_AuronDefeat
 # 82 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_AuronPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route125_Text_AuronPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTM
 # 83 "data/maps/Route125/scripts.pory"
 	end

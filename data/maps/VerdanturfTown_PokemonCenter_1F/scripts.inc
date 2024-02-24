@@ -51,7 +51,7 @@ VerdanturfTown_PokemonCenter_1F_EventScript_Gentleman::
 # 26 "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.pory"
 VerdanturfTown_PokemonCenter_1F_EventScript_ExpertM::
 # 27 "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.pory"
-	msgbox VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent, MSGBOX_NPC, MUGSHOT_EXPERTM
 # 28 "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.pory"
 	end
 # 29 "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.pory"

@@ -25,7 +25,7 @@ FallarborTown_PokemonCenter_1F_EventScript_Girl::
 	end
 
 FallarborTown_PokemonCenter_1F_EventScript_ExpertM::
-	msgbox FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees, MSGBOX_NPC, MUGSHOT_EXPERTM
 	end
 
 FallarborTown_PokemonCenter_1F_EventScript_Lanette::

@@ -111,7 +111,7 @@ DewfordTown_Hall_EventScript_ExpertM::
 # 56 "data/maps/DewfordTown_Hall/scripts.pory"
 	call Common_EventScript_BufferTrendyPhrase
 # 57 "data/maps/DewfordTown_Hall/scripts.pory"
-	msgbox DewfordTown_Hall_Text_TVShowAboutTrend, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_TVShowAboutTrend, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 58 "data/maps/DewfordTown_Hall/scripts.pory"
 	closemessage
 # 59 "data/maps/DewfordTown_Hall/scripts.pory"

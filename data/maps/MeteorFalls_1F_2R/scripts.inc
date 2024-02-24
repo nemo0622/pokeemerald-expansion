@@ -57,7 +57,7 @@ MeteorFalls_1F_2R_EventScript_John::
 # 29 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, MeteorFalls_1F_2R_EventScript_RematchJohn
 # 30 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	msgbox MeteorFalls_1F_2R_Text_JohnPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_2R_Text_JohnPostBattle, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 31 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	release
 # 32 "data/maps/MeteorFalls_1F_2R/scripts.pory"
@@ -67,7 +67,7 @@ MeteorFalls_1F_2R_EventScript_John::
 # 34 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 MeteorFalls_1F_2R_EventScript_RegisterJohn::
 # 35 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	msgbox MeteorFalls_1F_2R_Text_JohnRegister, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_2R_Text_JohnRegister, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 # 36 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	register_matchcall TRAINER_JOHN_AND_JAY_1
 # 37 "data/maps/MeteorFalls_1F_2R/scripts.pory"
@@ -81,7 +81,7 @@ MeteorFalls_1F_2R_EventScript_RematchJohn::
 # 41 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	trainerbattle_rematch_double TRAINER_JOHN_AND_JAY_1, MeteorFalls_1F_2R_Text_JohnRematchIntro, MeteorFalls_1F_2R_Text_JohnRematchDefeat, MeteorFalls_1F_2R_Text_JohnRematchNotEnoughMons
 # 42 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	msgbox MeteorFalls_1F_2R_Text_JohnPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MeteorFalls_1F_2R_Text_JohnPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTM
 # 43 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	end
 # 44 "data/maps/MeteorFalls_1F_2R/scripts.pory"
@@ -95,7 +95,7 @@ MeteorFalls_1F_2R_EventScript_Jay::
 # 48 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, MeteorFalls_1F_2R_EventScript_RematchJay
 # 49 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	msgbox MeteorFalls_1F_2R_Text_JayPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_2R_Text_JayPostBattle, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 50 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	release
 # 51 "data/maps/MeteorFalls_1F_2R/scripts.pory"
@@ -119,7 +119,7 @@ MeteorFalls_1F_2R_EventScript_RematchJay::
 # 60 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	trainerbattle_rematch_double TRAINER_JOHN_AND_JAY_1, MeteorFalls_1F_2R_Text_JayRematchIntro, MeteorFalls_1F_2R_Text_JayRematchDefeat, MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons
 # 61 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	msgbox MeteorFalls_1F_2R_Text_JayPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MeteorFalls_1F_2R_Text_JayPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_EXPERTF
 # 62 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	end
 # 63 "data/maps/MeteorFalls_1F_2R/scripts.pory"

@@ -12,25 +12,25 @@ Route123_BerryMastersHouse_EventScript_BerryMaster::
 	faceplayer
 	dotimebasedevents
 	goto_if_set FLAG_DAILY_BERRY_MASTER_RECEIVED_BERRY, Route123_BerryMastersHouse_EventScript_ReceivedBerryToday
-	msgbox Route123_BerryMastersHouse_Text_YoureDeservingOfBerry, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_BerryMastersHouse_Text_YoureDeservingOfBerry, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 	random NUM_BERRY_MASTER_BERRIES
 	addvar VAR_RESULT, NUM_BERRY_MASTER_BERRIES_SKIPPED
 	addvar VAR_RESULT, FIRST_BERRY_INDEX
 	giveitem VAR_RESULT
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_DAILY_BERRY_MASTER_RECEIVED_BERRY
-	msgbox Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 	random NUM_BERRY_MASTER_BERRIES
 	addvar VAR_RESULT, NUM_BERRY_MASTER_BERRIES_SKIPPED
 	addvar VAR_RESULT, FIRST_BERRY_INDEX
 	giveitem VAR_RESULT
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	msgbox Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 	release
 	end
 
 Route123_BerryMastersHouse_EventScript_ReceivedBerryToday::
-	msgbox Route123_BerryMastersHouse_Text_DoneForToday, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_BerryMastersHouse_Text_DoneForToday, MSGBOX_DEFAULT, MUGSHOT_EXPERTM
 	release
 	end
 

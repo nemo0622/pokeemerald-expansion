@@ -23,7 +23,7 @@ LavaridgeTown_HerbShop_Pokemart:
 	end
 
 LavaridgeTown_HerbShop_EventScript_ExpertM::
-	msgbox LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike, MSGBOX_NPC, MUGSHOT_EXPERTM
 	end
 
 LavaridgeTown_HerbShop_EventScript_OldMan::

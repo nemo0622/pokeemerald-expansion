@@ -527,7 +527,7 @@ Route104_EventScript_ExpertF::
 # 264 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_RECEIVED_CHESTO_BERRY_ROUTE_104, Route104_EventScript_ReceivedBerry
 # 265 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_PlantBerriesInSoilTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_PlantBerriesInSoilTakeThis, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 266 "data/maps/Route104/scripts.pory"
 	giveitem ITEM_CHESTO_BERRY
 # 267 "data/maps/Route104/scripts.pory"
@@ -535,7 +535,7 @@ Route104_EventScript_ExpertF::
 # 268 "data/maps/Route104/scripts.pory"
 	setflag FLAG_RECEIVED_CHESTO_BERRY_ROUTE_104
 # 269 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_TrainersOftenMakeMonHoldBerries, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_TrainersOftenMakeMonHoldBerries, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 270 "data/maps/Route104/scripts.pory"
 	release
 # 271 "data/maps/Route104/scripts.pory"
@@ -545,7 +545,7 @@ Route104_EventScript_ExpertF::
 # 273 "data/maps/Route104/scripts.pory"
 Route104_EventScript_ReceivedBerry::
 # 274 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_TrainersOftenMakeMonHoldBerries, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_TrainersOftenMakeMonHoldBerries, MSGBOX_DEFAULT, MUGSHOT_EXPERTF
 # 275 "data/maps/Route104/scripts.pory"
 	release
 # 276 "data/maps/Route104/scripts.pory"
@@ -833,7 +833,7 @@ Route104_EventScript_ArriveInDewford::
 # 417 "data/maps/Route104/scripts.pory"
 Route104_EventScript_DeliverLetterReminder::
 # 418 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_LandedInDewfordDeliverLetter, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_LandedInDewfordDeliverLetter, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 419 "data/maps/Route104/scripts.pory"
 	releaseall
 # 420 "data/maps/Route104/scripts.pory"
@@ -843,7 +843,7 @@ Route104_EventScript_DeliverLetterReminder::
 # 422 "data/maps/Route104/scripts.pory"
 Route104_EventScript_LandedInDewford::
 # 423 "data/maps/Route104/scripts.pory"
-	msgbox DewfordTown_Text_BrineyLandedInDewford, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Text_BrineyLandedInDewford, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 424 "data/maps/Route104/scripts.pory"
 	releaseall
 # 425 "data/maps/Route104/scripts.pory"
