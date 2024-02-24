@@ -265,7 +265,7 @@ LilycoveCity_EventScript_Sailor1::
 # 133 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_FatMan::
 # 134 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_SawTallTowerOnRoute131, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_SawTallTowerOnRoute131, MSGBOX_NPC, MUGSHOT_FATMAN
 # 135 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 136 "data/maps/LilycoveCity/scripts.pory"

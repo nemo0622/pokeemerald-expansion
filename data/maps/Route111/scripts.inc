@@ -863,7 +863,7 @@ Route111_EventScript_RockSmashTipFatMan::
 # 432 "data/maps/Route111/scripts.pory"
 	waitmovement 0
 # 433 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_MauvilleUncleToldMeToTakeRockSmash, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_MauvilleUncleToldMeToTakeRockSmash, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 # 434 "data/maps/Route111/scripts.pory"
 	closemessage
 # 435 "data/maps/Route111/scripts.pory"

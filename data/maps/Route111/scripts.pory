@@ -430,7 +430,7 @@ Route111_EventScript_RockSmashTipFatMan::
 	lockall
 	applymovement LOCALID_ROCK_SMASH_MAN, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox Route111_Text_MauvilleUncleToldMeToTakeRockSmash, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_MauvilleUncleToldMeToTakeRockSmash, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 	closemessage
 	applymovement LOCALID_ROCK_SMASH_MAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0

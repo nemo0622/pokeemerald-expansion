@@ -131,7 +131,7 @@ LilycoveCity_EventScript_Sailor1::
 	end
 
 LilycoveCity_EventScript_FatMan::
-	msgbox LilycoveCity_Text_SawTallTowerOnRoute131, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_SawTallTowerOnRoute131, MSGBOX_NPC, MUGSHOT_FATMAN
 	end
 
 LilycoveCity_EventScript_Man1::

@@ -25,6 +25,6 @@ SafariZone_RestHouse_EventScript_PsychicM::
 # 13 "data/maps/SafariZone_RestHouse/scripts.pory"
 SafariZone_RestHouse_EventScript_FatMan::
 # 14 "data/maps/SafariZone_RestHouse/scripts.pory"
-	msgbox SafariZone_RestHouse_Text_FatMan, MSGBOX_NPC
+	msgbox_mugshot SafariZone_RestHouse_Text_FatMan, MSGBOX_NPC, MUGSHOT_FATMAN
 # 15 "data/maps/SafariZone_RestHouse/scripts.pory"
 	end

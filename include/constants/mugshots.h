@@ -40,5 +40,6 @@
 #define MUGSHOT_EXPERTF  35
 #define MUGSHOT_EXPERTM  36
 #define MUGSHOT_BRINEY  37
+#define MUGSHOT_FATMAN  38
 
 #endif

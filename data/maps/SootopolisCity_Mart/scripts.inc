@@ -67,7 +67,7 @@ SootopolisCity_Mart_EventScript_FatMan::
 # 34 "data/maps/SootopolisCity_Mart/scripts.pory"
 	goto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_Mart_EventScript_FatManNoLegendaries
 # 35 "data/maps/SootopolisCity_Mart/scripts.pory"
-	msgbox SootopolisCity_Mart_Text_TooScaryOutside, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Mart_Text_TooScaryOutside, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 # 36 "data/maps/SootopolisCity_Mart/scripts.pory"
 	release
 # 37 "data/maps/SootopolisCity_Mart/scripts.pory"
@@ -77,7 +77,7 @@ SootopolisCity_Mart_EventScript_FatMan::
 # 39 "data/maps/SootopolisCity_Mart/scripts.pory"
 SootopolisCity_Mart_EventScript_FatManNoLegendaries::
 # 40 "data/maps/SootopolisCity_Mart/scripts.pory"
-	msgbox SootopolisCity_Mart_Text_PPUpIsGreat, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Mart_Text_PPUpIsGreat, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 # 41 "data/maps/SootopolisCity_Mart/scripts.pory"
 	release
 # 42 "data/maps/SootopolisCity_Mart/scripts.pory"

@@ -321,7 +321,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_Artist2::
 # 161 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 LilycoveCity_LilycoveMuseum_1F_EventScript_FatMan::
 # 162 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination, MSGBOX_NPC, MUGSHOT_FATMAN
 # 163 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 	end
 # 164 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"

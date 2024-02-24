@@ -41,7 +41,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_GraphicArtist::
 	end
 
 LilycoveCity_CoveLilyMotel_2F_EventScript_FatMan::
-	msgbox LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute, MSGBOX_NPC, MUGSHOT_FATMAN
 	end
 
 LilycoveCity_CoveLilyMotel_2F_EventScript_Woman::

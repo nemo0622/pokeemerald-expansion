@@ -979,7 +979,7 @@ LilycoveCity_ContestLobby_EventScript_Artist::
 # 490 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_FatMan::
 # 491 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox LilycoveCity_ContestLobby_Text_ToughContestIsExtreme, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_ToughContestIsExtreme, MSGBOX_NPC, MUGSHOT_FATMAN
 # 492 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	end
 # 493 "data/maps/LilycoveCity_ContestLobby/scripts.pory"

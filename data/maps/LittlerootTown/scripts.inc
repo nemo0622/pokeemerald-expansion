@@ -507,7 +507,7 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
 # 254 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_EventScript_FatMan::
 # 255 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC
+	msgbox_mugshot LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC, MUGSHOT_FATMAN
 # 256 "data/maps/LittlerootTown/scripts.pory"
 	end
 # 257 "data/maps/LittlerootTown/scripts.pory"

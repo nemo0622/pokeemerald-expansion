@@ -8,7 +8,7 @@ AbandonedShip_Rooms_B1F_OnResume:
 	end
 
 AbandonedShip_Rooms_B1F_EventScript_FatMan::
-	msgbox AbandonedShip_Rooms_B1F_Text_GettingQueasy, MSGBOX_NPC
+	msgbox_mugshot AbandonedShip_Rooms_B1F_Text_GettingQueasy, MSGBOX_NPC, MUGSHOT_FATMAN
 	end
 
 AbandonedShip_Rooms_B1F_Text_GettingQueasy:

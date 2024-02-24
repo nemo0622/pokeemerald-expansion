@@ -285,7 +285,7 @@ RustboroCity_EventScript_FatMan::
 # 143 "data/maps/RustboroCity/scripts.pory"
 	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_EventScript_FatManSawGrunt
 # 144 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_WeShortenItToDevon, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_WeShortenItToDevon, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 # 145 "data/maps/RustboroCity/scripts.pory"
 	release
 # 146 "data/maps/RustboroCity/scripts.pory"
@@ -295,7 +295,7 @@ RustboroCity_EventScript_FatMan::
 # 148 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_FatManSawGrunt::
 # 149 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_SneakyLookingManWentAroundCorner, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_SneakyLookingManWentAroundCorner, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 # 150 "data/maps/RustboroCity/scripts.pory"
 	release
 # 151 "data/maps/RustboroCity/scripts.pory"

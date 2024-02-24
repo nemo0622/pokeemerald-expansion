@@ -133,7 +133,7 @@ SafariZone_Southeast_EventScript_LittleGirl::
 	end
 
 SafariZone_Southeast_EventScript_FatMan::
-	msgbox SafariZone_Southeast_Text_FatMan, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Southeast_Text_FatMan, MSGBOX_NPC, MUGSHOT_FATMAN
 	end
 
 SafariZone_Southeast_EventScript_RichBoy::

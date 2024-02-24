@@ -159,7 +159,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_Artist2::
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_FatMan::
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination, MSGBOX_NPC, MUGSHOT_FATMAN
 	end
 
 LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum:

@@ -43,7 +43,7 @@ PetalburgCity_PokemonCenter_1F_EventScript_Nurse::
 # 22 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 PetalburgCity_PokemonCenter_1F_EventScript_FatMan::
 # 23 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem, MSGBOX_NPC, MUGSHOT_FATMAN
 # 24 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	end
 # 25 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"

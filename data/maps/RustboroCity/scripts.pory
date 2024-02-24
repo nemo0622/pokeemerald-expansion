@@ -141,12 +141,12 @@ RustboroCity_EventScript_FatMan::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_EventScript_FatManSawGrunt
-	msgbox RustboroCity_Text_WeShortenItToDevon, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_WeShortenItToDevon, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 	release
 	end
 
 RustboroCity_EventScript_FatManSawGrunt::
-	msgbox RustboroCity_Text_SneakyLookingManWentAroundCorner, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_SneakyLookingManWentAroundCorner, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 	release
 	end
 

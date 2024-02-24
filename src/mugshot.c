@@ -97,6 +97,8 @@ static const u32 sMugshotImg_ExpertM[] = INCBIN_U32("graphics/mugshots/pics/mugs
 static const u16 sMugshotPal_ExpertM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_expertm.gbapal");
 static const u32 sMugshotImg_Briney[] = INCBIN_U32("graphics/mugshots/pics/mugshot_briney.4bpp.lz");
 static const u16 sMugshotPal_Briney[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_briney.gbapal");
+static const u32 sMugshotImg_FatMan[] = INCBIN_U32("graphics/mugshots/pics/mugshot_fatman.4bpp.lz");
+static const u16 sMugshotPal_FatMan[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_fatman.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -138,6 +140,7 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_EXPERTF] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_ExpertF, .palette = sMugshotPal_ExpertF},
     [MUGSHOT_EXPERTM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_ExpertM, .palette = sMugshotPal_ExpertM},
     [MUGSHOT_BRINEY] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Briney, .palette = sMugshotPal_Briney},
+    [MUGSHOT_FATMAN] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_FatMan, .palette = sMugshotPal_FatMan},
 };
 
 

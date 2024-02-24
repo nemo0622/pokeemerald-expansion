@@ -269,7 +269,7 @@ SafariZone_Southeast_EventScript_LittleGirl::
 # 135 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Southeast_EventScript_FatMan::
 # 136 "data/maps/SafariZone_South/scripts.pory"
-	msgbox SafariZone_Southeast_Text_FatMan, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Southeast_Text_FatMan, MSGBOX_NPC, MUGSHOT_FATMAN
 # 137 "data/maps/SafariZone_South/scripts.pory"
 	end
 # 138 "data/maps/SafariZone_South/scripts.pory"

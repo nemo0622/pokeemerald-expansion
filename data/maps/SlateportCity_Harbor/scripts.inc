@@ -575,7 +575,7 @@ SlateportCity_Harbor_EventScript_CountDefeatedLegendary::
 # 288 "data/maps/SlateportCity_Harbor/scripts.pory"
 SlateportCity_Harbor_EventScript_FatMan::
 # 289 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_SubTooSmallForMe, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Harbor_Text_SubTooSmallForMe, MSGBOX_NPC, MUGSHOT_FATMAN
 # 290 "data/maps/SlateportCity_Harbor/scripts.pory"
 	end
 # 291 "data/maps/SlateportCity_Harbor/scripts.pory"

@@ -15,7 +15,7 @@ LilycoveCity_House2_EventScript_FatMan::
 # 8 "data/maps/LilycoveCity_House2/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_REST, LilycoveCity_House2_EventScript_ReceivedRest
 # 9 "data/maps/LilycoveCity_House2/scripts.pory"
-	msgbox LilycoveCity_House2_Text_NotAwakeYetHaveThis, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_House2_Text_NotAwakeYetHaveThis, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 # 10 "data/maps/LilycoveCity_House2/scripts.pory"
 	giveitem ITEM_TM_REST
 # 11 "data/maps/LilycoveCity_House2/scripts.pory"
@@ -23,7 +23,7 @@ LilycoveCity_House2_EventScript_FatMan::
 # 12 "data/maps/LilycoveCity_House2/scripts.pory"
 	setflag FLAG_RECEIVED_TM_REST
 # 13 "data/maps/LilycoveCity_House2/scripts.pory"
-	msgbox LilycoveCity_House2_Text_SleepIsEssential, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_House2_Text_SleepIsEssential, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 # 14 "data/maps/LilycoveCity_House2/scripts.pory"
 	release
 # 15 "data/maps/LilycoveCity_House2/scripts.pory"
@@ -33,7 +33,7 @@ LilycoveCity_House2_EventScript_FatMan::
 # 17 "data/maps/LilycoveCity_House2/scripts.pory"
 LilycoveCity_House2_EventScript_ReceivedRest::
 # 18 "data/maps/LilycoveCity_House2/scripts.pory"
-	msgbox LilycoveCity_House2_Text_SleepIsEssential, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_House2_Text_SleepIsEssential, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 # 19 "data/maps/LilycoveCity_House2/scripts.pory"
 	release
 # 20 "data/maps/LilycoveCity_House2/scripts.pory"

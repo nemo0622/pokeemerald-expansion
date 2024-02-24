@@ -286,7 +286,7 @@ SlateportCity_Harbor_EventScript_CountDefeatedLegendary::
 	return
 
 SlateportCity_Harbor_EventScript_FatMan::
-	msgbox SlateportCity_Harbor_Text_SubTooSmallForMe, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Harbor_Text_SubTooSmallForMe, MSGBOX_NPC, MUGSHOT_FATMAN
 	end
 
 SlateportCity_Harbor_EventScript_CaptStern::

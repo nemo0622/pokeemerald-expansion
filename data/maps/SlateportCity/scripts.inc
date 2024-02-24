@@ -497,7 +497,7 @@ SlateportCity_EventScript_FatMan::
 # 249 "data/maps/SlateportCity/scripts.pory"
 	goto_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_FatManSternInterview
 # 250 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_BushedHikingFromMauville, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_BushedHikingFromMauville, MSGBOX_NPC, MUGSHOT_FATMAN
 # 251 "data/maps/SlateportCity/scripts.pory"
 	end
 # 252 "data/maps/SlateportCity/scripts.pory"
@@ -505,7 +505,7 @@ SlateportCity_EventScript_FatMan::
 # 253 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_FatManSternInterview::
 # 254 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_AmIOnTV, MSGBOX_SIGN
+	msgbox_mugshot SlateportCity_Text_AmIOnTV, MSGBOX_SIGN, MUGSHOT_FATMAN
 # 255 "data/maps/SlateportCity/scripts.pory"
 	end
 # 256 "data/maps/SlateportCity/scripts.pory"

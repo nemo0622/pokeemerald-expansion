@@ -85,7 +85,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_GraphicArtist::
 # 43 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 LilycoveCity_CoveLilyMotel_2F_EventScript_FatMan::
 # 44 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
-	msgbox LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute, MSGBOX_NPC, MUGSHOT_FATMAN
 # 45 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 	end
 # 46 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"

@@ -19,7 +19,7 @@ AbandonedShip_Rooms_B1F_OnResume:
 # 10 "data/maps/AbandonedShip_Rooms_B1F/scripts.pory"
 AbandonedShip_Rooms_B1F_EventScript_FatMan::
 # 11 "data/maps/AbandonedShip_Rooms_B1F/scripts.pory"
-	msgbox AbandonedShip_Rooms_B1F_Text_GettingQueasy, MSGBOX_NPC
+	msgbox_mugshot AbandonedShip_Rooms_B1F_Text_GettingQueasy, MSGBOX_NPC, MUGSHOT_FATMAN
 # 12 "data/maps/AbandonedShip_Rooms_B1F/scripts.pory"
 	end
 # 13 "data/maps/AbandonedShip_Rooms_B1F/scripts.pory"

@@ -32,12 +32,12 @@ SootopolisCity_Mart_EventScript_FatMan::
 	faceplayer
 	goto_if_ge VAR_SKY_PILLAR_STATE, 2, SootopolisCity_Mart_EventScript_FatManNoLegendaries
 	goto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_Mart_EventScript_FatManNoLegendaries
-	msgbox SootopolisCity_Mart_Text_TooScaryOutside, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Mart_Text_TooScaryOutside, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 	release
 	end
 
 SootopolisCity_Mart_EventScript_FatManNoLegendaries::
-	msgbox SootopolisCity_Mart_Text_PPUpIsGreat, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Mart_Text_PPUpIsGreat, MSGBOX_DEFAULT, MUGSHOT_FATMAN
 	release
 	end
 

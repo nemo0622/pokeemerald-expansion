@@ -11,7 +11,7 @@ SafariZone_RestHouse_EventScript_PsychicM::
 	end
 
 SafariZone_RestHouse_EventScript_FatMan::
-	msgbox SafariZone_RestHouse_Text_FatMan, MSGBOX_NPC
+	msgbox_mugshot SafariZone_RestHouse_Text_FatMan, MSGBOX_NPC, MUGSHOT_FATMAN
 	end
 
 `
