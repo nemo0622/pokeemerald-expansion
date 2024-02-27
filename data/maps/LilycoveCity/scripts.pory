@@ -62,12 +62,12 @@ LilycoveCity_EventScript_Girl::
 	lock
 	faceplayer
 	goto_if_set FLAG_BADGE07_GET, LilycoveCity_EventScript_GirlAquaGone
-	msgbox LilycoveCity_Text_StrangeCaveInCove, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_StrangeCaveInCove, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 	release
 	end
 
 LilycoveCity_EventScript_GirlAquaGone::
-	msgbox LilycoveCity_Text_GoingToMoveDeleterForHMs, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_GoingToMoveDeleterForHMs, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 	release
 	end
 

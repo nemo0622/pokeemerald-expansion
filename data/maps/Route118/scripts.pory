@@ -52,7 +52,7 @@ Route118_EventScript_ReceivedGoodRod::
 	end
 
 Route118_EventScript_Girl::
-	msgbox Route118_Text_CanCrossRiversWithSurf, MSGBOX_NPC
+	msgbox_mugshot Route118_Text_CanCrossRiversWithSurf, MSGBOX_NPC, MUGSHOT_GIRL2
 	end
 
 Route118_EventScript_RouteSignMauville::

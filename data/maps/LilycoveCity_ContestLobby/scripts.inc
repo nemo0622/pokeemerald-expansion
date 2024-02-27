@@ -963,7 +963,7 @@ LilycoveCity_ContestLobby_EventScript_BlackBelt::
 # 482 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_Girl::
 # 483 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere, MSGBOX_NPC, MUGSHOT_GIRL2
 # 484 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	end
 # 485 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -1095,7 +1095,7 @@ LilycoveCity_ContestLobby_EventScript_Blender3Boy::
 # 548 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_Blender3Girl::
 # 549 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox BerryBlender_Text_WhatKindOfPokeblockWillIGet, MSGBOX_NPC
+	msgbox_mugshot BerryBlender_Text_WhatKindOfPokeblockWillIGet, MSGBOX_NPC, MUGSHOT_GIRL1
 # 550 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	end
 # 551 "data/maps/LilycoveCity_ContestLobby/scripts.pory"

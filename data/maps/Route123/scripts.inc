@@ -25,13 +25,13 @@ Route123_EventScript_GigaDrainGirl::
 # 13 "data/maps/Route123/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_GIGA_DRAIN, Route123_EventScript_ReceivedGigaDrain
 # 14 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_LoveGrassMonsHaveAny, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_LoveGrassMonsHaveAny, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 15 "data/maps/Route123/scripts.pory"
 	special IsGrassTypeInParty
 # 16 "data/maps/Route123/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route123_EventScript_NoGrassMons
 # 17 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_YouLikeGrassMonsTooHaveThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_YouLikeGrassMonsTooHaveThis, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 18 "data/maps/Route123/scripts.pory"
 	giveitem ITEM_TM_GIGA_DRAIN
 # 19 "data/maps/Route123/scripts.pory"
@@ -39,7 +39,7 @@ Route123_EventScript_GigaDrainGirl::
 # 20 "data/maps/Route123/scripts.pory"
 	setflag FLAG_RECEIVED_TM_GIGA_DRAIN
 # 21 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_CheckTreesWithMyGrassMon, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_CheckTreesWithMyGrassMon, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 22 "data/maps/Route123/scripts.pory"
 	release
 # 23 "data/maps/Route123/scripts.pory"
@@ -57,7 +57,7 @@ Route123_EventScript_NoGrassMons::
 # 29 "data/maps/Route123/scripts.pory"
 Route123_EventScript_ReceivedGigaDrain::
 # 30 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_CheckTreesWithMyGrassMon, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_CheckTreesWithMyGrassMon, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 31 "data/maps/Route123/scripts.pory"
 	release
 # 32 "data/maps/Route123/scripts.pory"

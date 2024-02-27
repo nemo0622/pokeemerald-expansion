@@ -345,7 +345,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_SmartPainting::
 # 173 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 LilycoveCity_LilycoveMuseum_2F_EventScript_Girl::
 # 174 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	msgbox LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe, MSGBOX_NPC, MUGSHOT_GIRL2
 # 175 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	end
 # 176 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"

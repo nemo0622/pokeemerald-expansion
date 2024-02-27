@@ -7,7 +7,7 @@ SootopolisCity_House5_EventScript_Maniac::
 	end
 
 SootopolisCity_House5_EventScript_Girl::
-	msgbox SootopolisCity_House5_Text_BrotherUsedToStudySea, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House5_Text_BrotherUsedToStudySea, MSGBOX_NPC, MUGSHOT_GIRL3
 	end
 
 SootopolisCity_House5_Text_SootopolisMtPyreConnection:

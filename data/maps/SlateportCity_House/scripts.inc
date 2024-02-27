@@ -17,7 +17,7 @@ SlateportCity_House_EventScript_PokefanM::
 # 9 "data/maps/SlateportCity_House/scripts.pory"
 SlateportCity_House_EventScript_Girl::
 # 10 "data/maps/SlateportCity_House/scripts.pory"
-	msgbox SlateportCity_House_Text_MustBeGoingToBattleTent, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_House_Text_MustBeGoingToBattleTent, MSGBOX_NPC, MUGSHOT_GIRL3
 # 11 "data/maps/SlateportCity_House/scripts.pory"
 	end
 # 12 "data/maps/SlateportCity_House/scripts.pory"

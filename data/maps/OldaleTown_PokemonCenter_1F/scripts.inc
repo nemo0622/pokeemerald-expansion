@@ -65,7 +65,7 @@ OldaleTown_PokemonCenter_1F_EventScript_Girl::
 # 33 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	goto_if_set FLAG_SYS_POKEDEX_GET, OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable
 # 34 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	msgbox OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 35 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	release
 # 36 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
@@ -75,7 +75,7 @@ OldaleTown_PokemonCenter_1F_EventScript_Girl::
 # 38 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable::
 # 39 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	msgbox OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 40 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	release
 # 41 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"

@@ -83,7 +83,7 @@ LilycoveCity_ContestHall_EventScript_Boy2::
 # 42 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 LilycoveCity_ContestHall_EventScript_Girl::
 # 43 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_ManWhoWonEarlierHadPokeblocks, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestHall_Text_ManWhoWonEarlierHadPokeblocks, MSGBOX_NPC, MUGSHOT_GIRL3
 # 44 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	end
 # 45 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -531,7 +531,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestant2::
 # 266 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 267 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_NeverWonBattleButContest, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_NeverWonBattleButContest, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 268 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 269 "data/maps/LilycoveCity_ContestHall/scripts.pory"

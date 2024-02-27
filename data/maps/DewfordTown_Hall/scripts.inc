@@ -29,7 +29,7 @@ DewfordTown_Hall_EventScript_Girl::
 # 15 "data/maps/DewfordTown_Hall/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Hall_EventScript_GirlBoredOfTrend
 # 16 "data/maps/DewfordTown_Hall/scripts.pory"
-	msgbox DewfordTown_Hall_Text_CantImagineLifeWithoutTrend, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_CantImagineLifeWithoutTrend, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 17 "data/maps/DewfordTown_Hall/scripts.pory"
 	release
 # 18 "data/maps/DewfordTown_Hall/scripts.pory"
@@ -39,7 +39,7 @@ DewfordTown_Hall_EventScript_Girl::
 # 20 "data/maps/DewfordTown_Hall/scripts.pory"
 DewfordTown_Hall_EventScript_GirlBoredOfTrend::
 # 21 "data/maps/DewfordTown_Hall/scripts.pory"
-	msgbox DewfordTown_Hall_Text_GettingBoredOfTrend, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_GettingBoredOfTrend, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 22 "data/maps/DewfordTown_Hall/scripts.pory"
 	release
 # 23 "data/maps/DewfordTown_Hall/scripts.pory"

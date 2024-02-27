@@ -73,7 +73,7 @@ OldaleTown_EventScript_TownSign::
 # 37 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_EventScript_Girl::
 # 38 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_Text_SavingMyProgress, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_Text_SavingMyProgress, MSGBOX_NPC, MUGSHOT_GIRL3
 # 39 "data/maps/OldaleTown/scripts.pory"
 	end
 # 40 "data/maps/OldaleTown/scripts.pory"

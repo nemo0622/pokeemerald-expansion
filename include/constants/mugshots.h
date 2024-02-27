@@ -43,5 +43,8 @@
 #define MUGSHOT_FATMAN  38
 #define MUGSHOT_FISHERMAN  39
 #define MUGSHOT_GENTLEMAN  40
+#define MUGSHOT_GIRL1  41
+#define MUGSHOT_GIRL2  42
+#define MUGSHOT_GIRL3  43
 
 #endif

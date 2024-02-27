@@ -19,7 +19,7 @@ PacifidlogTown_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 PacifidlogTown_PokemonCenter_1F_EventScript_Girl::
-	msgbox PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard, MSGBOX_NPC, MUGSHOT_GIRL2
 	end
 
 PacifidlogTown_PokemonCenter_1F_EventScript_Woman::

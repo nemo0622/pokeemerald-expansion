@@ -132,7 +132,7 @@ LavaridgeTown_Gym_B1F_EventScript_Keegan::
 
 LavaridgeTown_Gym_1F_EventScript_Danielle::
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_DANIELLE, LOCALID_DANIELLE, LavaridgeTown_Gym_1F_Text_DanielleIntro, LavaridgeTown_Gym_1F_Text_DanielleDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript
-	msgbox LavaridgeTown_Gym_1F_Text_DaniellePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_DaniellePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 	end
 
 LavaridgeTown_Gym_1F_EventScript_Gerald::

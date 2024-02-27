@@ -33,7 +33,7 @@ FortreeCity_Mart_EventScript_Woman::
 	end
 
 FortreeCity_Mart_EventScript_Girl::
-	msgbox FortreeCity_Mart_Text_StockUpOnItems, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Mart_Text_StockUpOnItems, MSGBOX_NPC, MUGSHOT_GIRL3
 	end
 
 FortreeCity_Mart_EventScript_Boy::

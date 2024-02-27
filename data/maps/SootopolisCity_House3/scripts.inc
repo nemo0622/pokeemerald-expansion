@@ -37,7 +37,7 @@ SootopolisCity_House3_EventScript_HaveFans::
 # 19 "data/maps/SootopolisCity_House3/scripts.pory"
 SootopolisCity_House3_EventScript_Girl::
 # 20 "data/maps/SootopolisCity_House3/scripts.pory"
-	msgbox SootopolisCity_House3_Text_TrainerFanClubWasWild, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House3_Text_TrainerFanClubWasWild, MSGBOX_NPC, MUGSHOT_GIRL2
 # 21 "data/maps/SootopolisCity_House3/scripts.pory"
 	end
 # 22 "data/maps/SootopolisCity_House3/scripts.pory"

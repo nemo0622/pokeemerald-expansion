@@ -69,7 +69,7 @@ FortreeCity_Mart_EventScript_Woman::
 # 35 "data/maps/FortreeCity_Mart/scripts.pory"
 FortreeCity_Mart_EventScript_Girl::
 # 36 "data/maps/FortreeCity_Mart/scripts.pory"
-	msgbox FortreeCity_Mart_Text_StockUpOnItems, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Mart_Text_StockUpOnItems, MSGBOX_NPC, MUGSHOT_GIRL3
 # 37 "data/maps/FortreeCity_Mart/scripts.pory"
 	end
 # 38 "data/maps/FortreeCity_Mart/scripts.pory"

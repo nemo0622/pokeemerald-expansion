@@ -723,7 +723,7 @@ Route120_EventScript_Callie::
 # 362 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_CALLIE, Route120_Text_CallieIntro, Route120_Text_CallieDefeat
 # 363 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_CalliePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_CalliePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 364 "data/maps/Route120/scripts.pory"
 	end
 # 365 "data/maps/Route120/scripts.pory"

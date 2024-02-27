@@ -23,7 +23,7 @@ MossdeepCity_PokemonCenter_1F_EventScript_Woman::
 	end
 
 MossdeepCity_PokemonCenter_1F_EventScript_Girl::
-	msgbox MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves, MSGBOX_NPC, MUGSHOT_GIRL1
 	end
 
 MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable:

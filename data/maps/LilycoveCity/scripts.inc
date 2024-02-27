@@ -127,7 +127,7 @@ LilycoveCity_EventScript_Girl::
 # 64 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_BADGE07_GET, LilycoveCity_EventScript_GirlAquaGone
 # 65 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_StrangeCaveInCove, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_StrangeCaveInCove, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 66 "data/maps/LilycoveCity/scripts.pory"
 	release
 # 67 "data/maps/LilycoveCity/scripts.pory"
@@ -137,7 +137,7 @@ LilycoveCity_EventScript_Girl::
 # 69 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_GirlAquaGone::
 # 70 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_GoingToMoveDeleterForHMs, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_GoingToMoveDeleterForHMs, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 71 "data/maps/LilycoveCity/scripts.pory"
 	release
 # 72 "data/maps/LilycoveCity/scripts.pory"

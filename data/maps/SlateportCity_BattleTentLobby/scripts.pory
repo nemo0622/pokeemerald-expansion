@@ -219,7 +219,7 @@ SlateportCity_BattleTentLobby_EventScript_Man::
 	end
 
 SlateportCity_BattleTentLobby_EventScript_Girl::
-	msgbox SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons, MSGBOX_NPC, MUGSHOT_GIRL1
 	end
 
 SlateportCity_BattleTentLobby_EventScript_Woman::

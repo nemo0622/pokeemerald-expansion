@@ -381,7 +381,7 @@ MauvilleCity_GameCorner_EventScript_Girl::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_STARTER_DOLL, MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll
-	msgbox MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne, MSGBOX_YESNO
+	msgbox_mugshot MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne, MSGBOX_YESNO, MUGSHOT_GIRL2
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_DeclineStarterDoll
 	switch VAR_STARTER_MON
 	case 0, MauvilleCity_GameCorner_EventScript_GiveTreeckoDoll
@@ -393,7 +393,7 @@ MauvilleCity_GameCorner_EventScript_GiveTreeckoDoll::
 	bufferdecorationname STR_VAR_2, DECOR_TREECKO_DOLL
 	checkdecorspace DECOR_TREECKO_DOLL
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll
-	msgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 	givedecoration DECOR_TREECKO_DOLL
 	setflag FLAG_RECEIVED_STARTER_DOLL
 	goto MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll
@@ -403,7 +403,7 @@ MauvilleCity_GameCorner_EventScript_GiveTorchicDoll::
 	bufferdecorationname STR_VAR_2, DECOR_TORCHIC_DOLL
 	checkdecorspace DECOR_TORCHIC_DOLL
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll
-	msgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 	givedecoration DECOR_TORCHIC_DOLL
 	setflag FLAG_RECEIVED_STARTER_DOLL
 	goto MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll
@@ -413,7 +413,7 @@ MauvilleCity_GameCorner_EventScript_GiveMudkipDoll::
 	bufferdecorationname STR_VAR_2, DECOR_MUDKIP_DOLL
 	checkdecorspace DECOR_MUDKIP_DOLL
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll
-	msgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 	givedecoration DECOR_MUDKIP_DOLL
 	setflag FLAG_RECEIVED_STARTER_DOLL
 	goto MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll
@@ -421,17 +421,17 @@ MauvilleCity_GameCorner_EventScript_GiveMudkipDoll::
 
 MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll::
 	call Common_EventScript_NoRoomForDecor
-	msgbox MauvilleCity_GameCorner_Text_YouWantItButNotNow, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_YouWantItButNotNow, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 	release
 	end
 
 MauvilleCity_GameCorner_EventScript_DeclineStarterDoll::
-	msgbox MauvilleCity_GameCorner_Text_DontBeNegative, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_DontBeNegative, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 	release
 	end
 
 MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll::
-	msgbox MauvilleCity_GameCorner_Text_CantWinJackpot, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_CantWinJackpot, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 	release
 	end
 

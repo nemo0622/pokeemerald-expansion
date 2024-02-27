@@ -509,7 +509,7 @@ PetalburgWoods_EventScript_Girl::
 # 255 "data/maps/PetalburgWoods/scripts.pory"
 	goto_if_set FLAG_RECEIVED_MIRACLE_SEED, PetalburgWoods_EventScript_ExplainMiracleSeed
 # 256 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_TryUsingThisItem, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_TryUsingThisItem, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 257 "data/maps/PetalburgWoods/scripts.pory"
 	giveitem ITEM_MIRACLE_SEED
 # 258 "data/maps/PetalburgWoods/scripts.pory"
@@ -525,7 +525,7 @@ PetalburgWoods_EventScript_Girl::
 # 263 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_EventScript_ExplainMiracleSeed::
 # 264 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_MiracleSeedExplanation, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_MiracleSeedExplanation, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 265 "data/maps/PetalburgWoods/scripts.pory"
 	release
 # 266 "data/maps/PetalburgWoods/scripts.pory"

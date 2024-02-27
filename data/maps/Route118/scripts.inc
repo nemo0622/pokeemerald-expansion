@@ -107,7 +107,7 @@ Route118_EventScript_ReceivedGoodRod::
 # 54 "data/maps/Route118/scripts.pory"
 Route118_EventScript_Girl::
 # 55 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_CanCrossRiversWithSurf, MSGBOX_NPC
+	msgbox_mugshot Route118_Text_CanCrossRiversWithSurf, MSGBOX_NPC, MUGSHOT_GIRL2
 # 56 "data/maps/Route118/scripts.pory"
 	end
 # 57 "data/maps/Route118/scripts.pory"

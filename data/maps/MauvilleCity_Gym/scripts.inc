@@ -439,7 +439,7 @@ MauvilleCity_Gym_EventScript_Vivian::
 # 220 "data/maps/MauvilleCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_VIVIAN, MauvilleCity_Gym_Text_VivianIntro, MauvilleCity_Gym_Text_VivianDefeat
 # 221 "data/maps/MauvilleCity_Gym/scripts.pory"
-	msgbox MauvilleCity_Gym_Text_VivianPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MauvilleCity_Gym_Text_VivianPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 222 "data/maps/MauvilleCity_Gym/scripts.pory"
 	end
 # 223 "data/maps/MauvilleCity_Gym/scripts.pory"

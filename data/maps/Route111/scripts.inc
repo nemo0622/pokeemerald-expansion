@@ -321,7 +321,7 @@ Route111_EventScript_Girl::
 # 161 "data/maps/Route111/scripts.pory"
 	goto_if_set FLAG_DAILY_ROUTE_111_RECEIVED_BERRY, Route111_EventScript_ReceivedBerry
 # 162 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_WateredPlantsEveryDayTakeBerry, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_WateredPlantsEveryDayTakeBerry, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 163 "data/maps/Route111/scripts.pory"
 	giveitem ITEM_RAZZ_BERRY
 # 164 "data/maps/Route111/scripts.pory"
@@ -331,7 +331,7 @@ Route111_EventScript_Girl::
 # 166 "data/maps/Route111/scripts.pory"
 	special GetPlayerBigGuyGirlString
 # 167 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_GoingToTryToMakeDifferentColorBerries, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_GoingToTryToMakeDifferentColorBerries, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 168 "data/maps/Route111/scripts.pory"
 	release
 # 169 "data/maps/Route111/scripts.pory"
@@ -341,7 +341,7 @@ Route111_EventScript_Girl::
 # 171 "data/maps/Route111/scripts.pory"
 Route111_EventScript_ReceivedBerry::
 # 172 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_WhatColorBerriesToLookForToday, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_WhatColorBerriesToLookForToday, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 173 "data/maps/Route111/scripts.pory"
 	release
 # 174 "data/maps/Route111/scripts.pory"

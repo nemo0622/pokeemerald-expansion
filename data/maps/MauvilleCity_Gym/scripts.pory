@@ -218,7 +218,7 @@ MauvilleCity_Gym_EventScript_Ben::
 
 MauvilleCity_Gym_EventScript_Vivian::
 	trainerbattle_single TRAINER_VIVIAN, MauvilleCity_Gym_Text_VivianIntro, MauvilleCity_Gym_Text_VivianDefeat
-	msgbox MauvilleCity_Gym_Text_VivianPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MauvilleCity_Gym_Text_VivianPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 	end
 
 MauvilleCity_Gym_EventScript_Angelo::

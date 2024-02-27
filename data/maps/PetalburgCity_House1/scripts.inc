@@ -17,7 +17,7 @@ PetalburgCity_House1_EventScript_Man::
 # 9 "data/maps/PetalburgCity_House1/scripts.pory"
 PetalburgCity_House1_EventScript_Woman::
 # 10 "data/maps/PetalburgCity_House1/scripts.pory"
-	msgbox PetalburgCity_House1_Text_GoOnAdventure, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_House1_Text_GoOnAdventure, MSGBOX_NPC, MUGSHOT_GIRL1
 # 11 "data/maps/PetalburgCity_House1/scripts.pory"
 	end
 # 12 "data/maps/PetalburgCity_House1/scripts.pory"

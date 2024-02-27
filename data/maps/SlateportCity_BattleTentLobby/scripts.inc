@@ -441,7 +441,7 @@ SlateportCity_BattleTentLobby_EventScript_Man::
 # 221 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 SlateportCity_BattleTentLobby_EventScript_Girl::
 # 222 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
-	msgbox SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons, MSGBOX_NPC, MUGSHOT_GIRL1
 # 223 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	end
 # 224 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"

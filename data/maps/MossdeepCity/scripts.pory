@@ -53,7 +53,7 @@ MossdeepCity_EventScript_ExpertM::
 	end
 
 MossdeepCity_EventScript_Girl::
-	msgbox MossdeepCity_Text_NiceIfWorldCoveredByFlowers, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Text_NiceIfWorldCoveredByFlowers, MSGBOX_NPC, MUGSHOT_GIRL1
 	end
 
 MossdeepCity_EventScript_Woman::

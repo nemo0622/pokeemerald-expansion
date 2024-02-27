@@ -301,6 +301,6 @@ SafariZone_Northeast_EventScript_Woman::
 # 151 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Northeast_EventScript_Girl::
 # 152 "data/maps/SafariZone_South/scripts.pory"
-	msgbox SafariZone_Northeast_Text_Girl, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Northeast_Text_Girl, MSGBOX_NPC, MUGSHOT_GIRL3
 # 153 "data/maps/SafariZone_South/scripts.pory"
 	end

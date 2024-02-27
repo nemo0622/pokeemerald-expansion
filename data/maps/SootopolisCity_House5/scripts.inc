@@ -17,7 +17,7 @@ SootopolisCity_House5_EventScript_Maniac::
 # 9 "data/maps/SootopolisCity_House5/scripts.pory"
 SootopolisCity_House5_EventScript_Girl::
 # 10 "data/maps/SootopolisCity_House5/scripts.pory"
-	msgbox SootopolisCity_House5_Text_BrotherUsedToStudySea, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House5_Text_BrotherUsedToStudySea, MSGBOX_NPC, MUGSHOT_GIRL3
 # 11 "data/maps/SootopolisCity_House5/scripts.pory"
 	end
 # 12 "data/maps/SootopolisCity_House5/scripts.pory"

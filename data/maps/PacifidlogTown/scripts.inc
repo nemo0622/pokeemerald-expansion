@@ -37,7 +37,7 @@ PacifidlogTown_EventScript_NinjaBoy::
 # 19 "data/maps/PacifidlogTown/scripts.pory"
 PacifidlogTown_EventScript_Girl::
 # 20 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_Text_FastRunningCurrent, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_Text_FastRunningCurrent, MSGBOX_NPC, MUGSHOT_GIRL1
 # 21 "data/maps/PacifidlogTown/scripts.pory"
 	end
 # 22 "data/maps/PacifidlogTown/scripts.pory"

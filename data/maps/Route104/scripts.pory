@@ -292,7 +292,7 @@ Route104_EventScript_ReceivedWhiteHerb::
 	end
 
 Route104_EventScript_Girl1::
-	msgbox Route104_Text_BrineyLivesInSeasideCottage, MSGBOX_NPC
+	msgbox_mugshot Route104_Text_BrineyLivesInSeasideCottage, MSGBOX_NPC, MUGSHOT_GIRL2
 	end
 
 Route104_EventScript_BugCatcher::
@@ -344,7 +344,7 @@ Route104_EventScript_ReceivedBulletSeed::
 	end
 
 Route104_EventScript_Girl2::
-	msgbox Route104_Text_ImNotATrainer, MSGBOX_NPC
+	msgbox_mugshot Route104_Text_ImNotATrainer, MSGBOX_NPC, MUGSHOT_GIRL3
 	end
 
 Route104_EventScript_SailToDewford::

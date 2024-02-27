@@ -40,7 +40,7 @@ LilycoveCity_ContestHall_EventScript_Boy2::
 	end
 
 LilycoveCity_ContestHall_EventScript_Girl::
-	msgbox LilycoveCity_ContestHall_Text_ManWhoWonEarlierHadPokeblocks, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestHall_Text_ManWhoWonEarlierHadPokeblocks, MSGBOX_NPC, MUGSHOT_GIRL3
 	end
 
 LilycoveCity_ContestHall_EventScript_Sailor::
@@ -264,7 +264,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestant1::
 LilycoveCity_ContestHall_EventScript_CuteContestant2::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_NeverWonBattleButContest, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_NeverWonBattleButContest, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 	closemessage
 	applymovement LOCALID_CUTE_CONTESTANT_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0

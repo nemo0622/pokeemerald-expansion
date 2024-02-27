@@ -599,7 +599,7 @@ Route116_EventScript_Karen::
 # 300 "data/maps/Route116/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_TryRegisterKaren
 # 301 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_KarenPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_KarenPostBattle, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 302 "data/maps/Route116/scripts.pory"
 	release
 # 303 "data/maps/Route116/scripts.pory"
@@ -623,7 +623,7 @@ Route116_EventScript_RegisterKarenAfterBattle::
 # 312 "data/maps/Route116/scripts.pory"
 	waitmovement 0
 # 313 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_KarenRegister2, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_KarenRegister2, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 314 "data/maps/Route116/scripts.pory"
 	register_matchcall TRAINER_KAREN_1
 # 315 "data/maps/Route116/scripts.pory"
@@ -637,7 +637,7 @@ Route116_EventScript_TryRegisterKaren::
 # 319 "data/maps/Route116/scripts.pory"
 	goto_if_set FLAG_HAS_MATCH_CALL, Route116_EventScript_RegisterKaren
 # 320 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_KarenPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_KarenPostBattle, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 321 "data/maps/Route116/scripts.pory"
 	release
 # 322 "data/maps/Route116/scripts.pory"
@@ -647,7 +647,7 @@ Route116_EventScript_TryRegisterKaren::
 # 324 "data/maps/Route116/scripts.pory"
 Route116_EventScript_RegisterKaren::
 # 325 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_KarenRegister1, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_KarenRegister1, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 326 "data/maps/Route116/scripts.pory"
 	register_matchcall TRAINER_KAREN_1
 # 327 "data/maps/Route116/scripts.pory"
@@ -661,7 +661,7 @@ Route116_EventScript_RematchKaren::
 # 331 "data/maps/Route116/scripts.pory"
 	trainerbattle_rematch TRAINER_KAREN_1, Route116_Text_KarenRematchIntro, Route116_Text_KarenRematchDefeat
 # 332 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_KarenPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_KarenPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 333 "data/maps/Route116/scripts.pory"
 	end
 # 334 "data/maps/Route116/scripts.pory"

@@ -81,7 +81,7 @@ Route134_EventScript_Reyna::
 # 41 "data/maps/Route134/scripts.pory"
 	trainerbattle_single TRAINER_REYNA, Route134_Text_ReynaIntro, Route134_Text_ReynaDefeat
 # 42 "data/maps/Route134/scripts.pory"
-	msgbox Route134_Text_ReynaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_ReynaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 43 "data/maps/Route134/scripts.pory"
 	end
 # 44 "data/maps/Route134/scripts.pory"

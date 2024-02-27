@@ -97,7 +97,7 @@ Route110_TrickHousePuzzle2_EventScript_Paul::
 
 Route110_TrickHousePuzzle2_EventScript_Georgia::
 	trainerbattle_single TRAINER_GEORGIA, Route110_TrickHousePuzzle2_Text_GeorgiaIntro, Route110_TrickHousePuzzle2_Text_GeorgiaDefeat
-	msgbox Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 	end
 
 Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened:

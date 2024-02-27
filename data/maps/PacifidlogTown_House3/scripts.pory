@@ -48,7 +48,7 @@ PacifidlogTown_House3_EventScript_TradeCompleted::
 	end
 
 PacifidlogTown_House3_EventScript_Girl::
-	msgbox PacifidlogTown_House3_Text_IsThatAPokedex, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_House3_Text_IsThatAPokedex, MSGBOX_NPC, MUGSHOT_GIRL2
 	end
 
 PacifidlogTown_House3_Text_WillingToTradeIt:

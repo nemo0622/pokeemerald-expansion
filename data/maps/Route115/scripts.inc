@@ -169,7 +169,7 @@ Route115_EventScript_Cyndy::
 # 85 "data/maps/Route115/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchCyndy
 # 86 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_CyndyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route115_Text_CyndyPostBattle, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 87 "data/maps/Route115/scripts.pory"
 	release
 # 88 "data/maps/Route115/scripts.pory"
@@ -183,7 +183,7 @@ Route115_EventScript_RegisterCyndy::
 # 92 "data/maps/Route115/scripts.pory"
 	waitmovement 0
 # 93 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_CyndyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route115_Text_CyndyRegister, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 94 "data/maps/Route115/scripts.pory"
 	register_matchcall TRAINER_CYNDY_1
 # 95 "data/maps/Route115/scripts.pory"
@@ -197,7 +197,7 @@ Route115_EventScript_RematchCyndy::
 # 99 "data/maps/Route115/scripts.pory"
 	trainerbattle_rematch TRAINER_CYNDY_1, Route115_Text_CyndyRematchIntro, Route115_Text_CyndyRematchDefeat
 # 100 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_CyndyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_CyndyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 101 "data/maps/Route115/scripts.pory"
 	end
 # 102 "data/maps/Route115/scripts.pory"
@@ -247,7 +247,7 @@ Route115_EventScript_Helene::
 # 124 "data/maps/Route115/scripts.pory"
 	trainerbattle_single TRAINER_HELENE, Route115_Text_HeleneIntro, Route115_Text_HeleneDefeat
 # 125 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_HelenePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_HelenePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 126 "data/maps/Route115/scripts.pory"
 	end
 # 127 "data/maps/Route115/scripts.pory"

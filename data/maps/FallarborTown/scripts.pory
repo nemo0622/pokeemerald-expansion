@@ -23,7 +23,7 @@ FallarborTown_EventScript_ExpertMNormal::
 	end
 
 FallarborTown_EventScript_Girl::
-	msgbox FallarborTown_Text_MyPreciousAzurill, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_Text_MyPreciousAzurill, MSGBOX_NPC, MUGSHOT_GIRL1
 	end
 
 FallarborTown_EventScript_Gentleman::

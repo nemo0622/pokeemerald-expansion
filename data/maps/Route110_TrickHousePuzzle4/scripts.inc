@@ -33,7 +33,7 @@ Route110_TrickHousePuzzle4_EventScript_Cora::
 # 17 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"
 	trainerbattle_single TRAINER_CORA, Route110_TrickHousePuzzle4_Text_CoraIntro, Route110_TrickHousePuzzle4_Text_CoraDefeat
 # 18 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"
-	msgbox Route110_TrickHousePuzzle4_Text_CoraPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle4_Text_CoraPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 19 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"
 	end
 # 20 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"
@@ -53,7 +53,7 @@ Route110_TrickHousePuzzle4_EventScript_Paula::
 # 27 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"
 	trainerbattle_single TRAINER_PAULA, Route110_TrickHousePuzzle4_Text_PaulaIntro, Route110_TrickHousePuzzle4_Text_PaulaDefeat
 # 28 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"
-	msgbox Route110_TrickHousePuzzle4_Text_PaulaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle4_Text_PaulaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 29 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"
 	end
 # 30 "data/maps/Route110_TrickHousePuzzle4/scripts.pory"

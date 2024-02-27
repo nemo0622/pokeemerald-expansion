@@ -267,7 +267,7 @@ LavaridgeTown_Gym_1F_EventScript_Danielle::
 # 134 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_DANIELLE, LOCALID_DANIELLE, LavaridgeTown_Gym_1F_Text_DanielleIntro, LavaridgeTown_Gym_1F_Text_DanielleDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript
 # 135 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox LavaridgeTown_Gym_1F_Text_DaniellePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_DaniellePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 136 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	end
 # 137 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

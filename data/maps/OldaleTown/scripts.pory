@@ -35,7 +35,7 @@ OldaleTown_EventScript_TownSign::
 	end
 
 OldaleTown_EventScript_Girl::
-	msgbox OldaleTown_Text_SavingMyProgress, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_Text_SavingMyProgress, MSGBOX_NPC, MUGSHOT_GIRL3
 	end
 
 OldaleTown_EventScript_MartEmployee::

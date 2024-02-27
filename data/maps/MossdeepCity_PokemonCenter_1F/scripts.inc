@@ -49,7 +49,7 @@ MossdeepCity_PokemonCenter_1F_EventScript_Woman::
 # 25 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
 MossdeepCity_PokemonCenter_1F_EventScript_Girl::
 # 26 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
-	msgbox MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves, MSGBOX_NPC, MUGSHOT_GIRL1
 # 27 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
 	end
 # 28 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"

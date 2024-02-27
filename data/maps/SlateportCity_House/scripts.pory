@@ -7,7 +7,7 @@ SlateportCity_House_EventScript_PokefanM::
 	end
 
 SlateportCity_House_EventScript_Girl::
-	msgbox SlateportCity_House_Text_MustBeGoingToBattleTent, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_House_Text_MustBeGoingToBattleTent, MSGBOX_NPC, MUGSHOT_GIRL3
 	end
 
 SlateportCity_House_Text_NatureToDoWithStatGains:

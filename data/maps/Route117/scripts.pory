@@ -24,7 +24,7 @@ Route117_EventScript_LittleBoy::
 	end
 
 Route117_EventScript_Girl::
-	msgbox Route117_Text_DayCarePokemonHadNewMove, MSGBOX_NPC
+	msgbox_mugshot Route117_Text_DayCarePokemonHadNewMove, MSGBOX_NPC, MUGSHOT_GIRL2
 	end
 
 Route117_EventScript_RouteSignVerdanturf::
@@ -178,7 +178,7 @@ Route117_EventScript_Brandi::
 
 Route117_EventScript_Aisha::
 	trainerbattle_single TRAINER_AISHA, Route117_Text_AishaIntro, Route117_Text_AishaDefeat
-	msgbox Route117_Text_AishaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_AishaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 	end
 
 Route117_Text_DayCarePokemonHadNewMove:

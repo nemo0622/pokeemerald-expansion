@@ -39,7 +39,7 @@ Route134_EventScript_Hudson::
 
 Route134_EventScript_Reyna::
 	trainerbattle_single TRAINER_REYNA, Route134_Text_ReynaIntro, Route134_Text_ReynaDefeat
-	msgbox Route134_Text_ReynaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_ReynaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 	end
 
 Route134_EventScript_Marley::

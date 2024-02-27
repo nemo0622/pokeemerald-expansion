@@ -7,7 +7,7 @@ FortreeCity_DecorationShop_EventScript_PokefanM::
 	end
 
 FortreeCity_DecorationShop_EventScript_Girl::
-	msgbox FortreeCity_DecorationShop_Text_BuyingDeskForDolls, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_DecorationShop_Text_BuyingDeskForDolls, MSGBOX_NPC, MUGSHOT_GIRL3
 	end
 
 FortreeCity_DecorationShop_EventScript_ClerkDesks::

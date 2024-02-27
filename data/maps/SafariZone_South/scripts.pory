@@ -149,6 +149,6 @@ SafariZone_Northeast_EventScript_Woman::
 	end
 
 SafariZone_Northeast_EventScript_Girl::
-	msgbox SafariZone_Northeast_Text_Girl, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Northeast_Text_Girl, MSGBOX_NPC, MUGSHOT_GIRL3
 	end
 `

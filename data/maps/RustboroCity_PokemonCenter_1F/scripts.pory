@@ -28,7 +28,7 @@ RustboroCity_PokemonCenter_1F_EventScript_Boy::
 	end
 
 RustboroCity_PokemonCenter_1F_EventScript_Girl::
-	msgbox RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor, MSGBOX_NPC, MUGSHOT_GIRL3
 	end
 
 RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:

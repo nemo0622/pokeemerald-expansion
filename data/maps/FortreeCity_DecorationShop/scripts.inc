@@ -17,7 +17,7 @@ FortreeCity_DecorationShop_EventScript_PokefanM::
 # 9 "data/maps/FortreeCity_DecorationShop/scripts.pory"
 FortreeCity_DecorationShop_EventScript_Girl::
 # 10 "data/maps/FortreeCity_DecorationShop/scripts.pory"
-	msgbox FortreeCity_DecorationShop_Text_BuyingDeskForDolls, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_DecorationShop_Text_BuyingDeskForDolls, MSGBOX_NPC, MUGSHOT_GIRL3
 # 11 "data/maps/FortreeCity_DecorationShop/scripts.pory"
 	end
 # 12 "data/maps/FortreeCity_DecorationShop/scripts.pory"

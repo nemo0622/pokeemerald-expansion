@@ -765,7 +765,7 @@ MauvilleCity_GameCorner_EventScript_Girl::
 # 383 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_set FLAG_RECEIVED_STARTER_DOLL, MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll
 # 384 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne, MSGBOX_YESNO
+	msgbox_mugshot MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne, MSGBOX_YESNO, MUGSHOT_GIRL2
 # 385 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_DeclineStarterDoll
 # 386 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -789,7 +789,7 @@ MauvilleCity_GameCorner_EventScript_GiveTreeckoDoll::
 # 395 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll
 # 396 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 397 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	givedecoration DECOR_TREECKO_DOLL
 # 398 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -809,7 +809,7 @@ MauvilleCity_GameCorner_EventScript_GiveTorchicDoll::
 # 405 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll
 # 406 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 407 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	givedecoration DECOR_TORCHIC_DOLL
 # 408 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -829,7 +829,7 @@ MauvilleCity_GameCorner_EventScript_GiveMudkipDoll::
 # 415 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll
 # 416 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 417 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	givedecoration DECOR_MUDKIP_DOLL
 # 418 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -845,7 +845,7 @@ MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll::
 # 423 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	call Common_EventScript_NoRoomForDecor
 # 424 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_YouWantItButNotNow, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_YouWantItButNotNow, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 425 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	release
 # 426 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -855,7 +855,7 @@ MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll::
 # 428 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 MauvilleCity_GameCorner_EventScript_DeclineStarterDoll::
 # 429 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_DontBeNegative, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_DontBeNegative, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 430 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	release
 # 431 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -865,7 +865,7 @@ MauvilleCity_GameCorner_EventScript_DeclineStarterDoll::
 # 433 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll::
 # 434 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_CantWinJackpot, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_CantWinJackpot, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 435 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	release
 # 436 "data/maps/MauvilleCity_GameCorner/scripts.pory"

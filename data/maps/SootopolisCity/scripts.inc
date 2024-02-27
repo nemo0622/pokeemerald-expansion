@@ -1431,7 +1431,7 @@ SootopolisCity_EventScript_Kiri::
 # 716 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_KiriRayquaza
 # 717 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_BigPokemonFighting, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_BigPokemonFighting, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 718 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 719 "data/maps/SootopolisCity/scripts.pory"
@@ -1447,7 +1447,7 @@ SootopolisCity_EventScript_Kiri::
 # 724 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_KiriRayquaza::
 # 725 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_PrettyMonCameFromSky, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_PrettyMonCameFromSky, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 726 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 727 "data/maps/SootopolisCity/scripts.pory"
@@ -1467,7 +1467,7 @@ SootopolisCity_EventScript_KiriGiveBerry::
 # 734 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_set FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY, SootopolisCity_EventScript_KiriReceivedBerry
 # 735 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_NameIsKiriHaveOneOfThese, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_NameIsKiriHaveOneOfThese, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 736 "data/maps/SootopolisCity/scripts.pory"
 	random NUM_KIRI_BERRIES
 # 737 "data/maps/SootopolisCity/scripts.pory"
@@ -1481,7 +1481,7 @@ SootopolisCity_EventScript_KiriGiveBerry::
 # 741 "data/maps/SootopolisCity/scripts.pory"
 	setflag FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY
 # 742 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_GiveYouThisBerryToo, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_GiveYouThisBerryToo, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 743 "data/maps/SootopolisCity/scripts.pory"
 	random 2
 # 744 "data/maps/SootopolisCity/scripts.pory"
@@ -1499,7 +1499,7 @@ SootopolisCity_EventScript_GiveFigyBerry::
 # 750 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 751 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_WhatKindOfWishInYourName, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_WhatKindOfWishInYourName, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 752 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 753 "data/maps/SootopolisCity/scripts.pory"
@@ -1513,7 +1513,7 @@ SootopolisCity_EventScript_GiveIapapaBerry::
 # 757 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 758 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_WhatKindOfWishInYourName, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_WhatKindOfWishInYourName, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 759 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 760 "data/maps/SootopolisCity/scripts.pory"
@@ -1523,11 +1523,11 @@ SootopolisCity_EventScript_GiveIapapaBerry::
 # 762 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_KiriReceivedBerry::
 # 763 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_LikeSeasonBornIn, MSGBOX_YESNO
+	msgbox_mugshot SootopolisCity_Text_LikeSeasonBornIn, MSGBOX_YESNO, MUGSHOT_GIRL2
 # 764 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, SootopolisCity_EventScript_KiriLikeSeasonBornIn
 # 765 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_OhDoesntMatter, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_OhDoesntMatter, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 766 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 767 "data/maps/SootopolisCity/scripts.pory"
@@ -1537,7 +1537,7 @@ SootopolisCity_EventScript_KiriReceivedBerry::
 # 769 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_KiriLikeSeasonBornIn::
 # 770 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_ThenILoveAutumn, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_ThenILoveAutumn, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 # 771 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 772 "data/maps/SootopolisCity/scripts.pory"
@@ -2539,7 +2539,7 @@ SootopolisCity_EventScript_Girl::
 # 1270 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_GirlRayquaza
 # 1271 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_SootopolisWillBeWrecked, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_SootopolisWillBeWrecked, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 1272 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 1273 "data/maps/SootopolisCity/scripts.pory"
@@ -2555,7 +2555,7 @@ SootopolisCity_EventScript_Girl::
 # 1278 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_GirlRayquaza::
 # 1279 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_SootopolisDidntGetWrecked, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_SootopolisDidntGetWrecked, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 1280 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 1281 "data/maps/SootopolisCity/scripts.pory"

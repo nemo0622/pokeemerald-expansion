@@ -457,7 +457,7 @@ VerdanturfTown_BattleTentLobby_EventScript_AttractGiver::
 # 229 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_ATTRACT, VerdanturfTown_BattleTentLobby_EventScript_ReceivedAttract
 # 230 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
-	msgbox VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 231 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	giveitem ITEM_TM_ATTRACT
 # 232 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
@@ -465,7 +465,7 @@ VerdanturfTown_BattleTentLobby_EventScript_AttractGiver::
 # 233 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	setflag FLAG_RECEIVED_TM_ATTRACT
 # 234 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
-	msgbox VerdanturfTown_BattleTentLobby_Text_AttractionMutual, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_BattleTentLobby_Text_AttractionMutual, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 235 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	release
 # 236 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
@@ -475,7 +475,7 @@ VerdanturfTown_BattleTentLobby_EventScript_AttractGiver::
 # 238 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 VerdanturfTown_BattleTentLobby_EventScript_ReceivedAttract::
 # 239 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
-	msgbox VerdanturfTown_BattleTentLobby_Text_AttractionMutual, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_BattleTentLobby_Text_AttractionMutual, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 240 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	release
 # 241 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"

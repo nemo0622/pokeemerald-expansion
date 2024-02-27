@@ -41,7 +41,7 @@ PacifidlogTown_PokemonCenter_1F_EventScript_Nurse::
 # 21 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
 PacifidlogTown_PokemonCenter_1F_EventScript_Girl::
 # 22 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
-	msgbox PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard, MSGBOX_NPC, MUGSHOT_GIRL2
 # 23 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
 	end
 # 24 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"

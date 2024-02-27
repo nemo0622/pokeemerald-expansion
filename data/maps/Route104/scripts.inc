@@ -587,7 +587,7 @@ Route104_EventScript_ReceivedWhiteHerb::
 # 294 "data/maps/Route104/scripts.pory"
 Route104_EventScript_Girl1::
 # 295 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BrineyLivesInSeasideCottage, MSGBOX_NPC
+	msgbox_mugshot Route104_Text_BrineyLivesInSeasideCottage, MSGBOX_NPC, MUGSHOT_GIRL2
 # 296 "data/maps/Route104/scripts.pory"
 	end
 # 297 "data/maps/Route104/scripts.pory"
@@ -691,7 +691,7 @@ Route104_EventScript_ReceivedBulletSeed::
 # 346 "data/maps/Route104/scripts.pory"
 Route104_EventScript_Girl2::
 # 347 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_ImNotATrainer, MSGBOX_NPC
+	msgbox_mugshot Route104_Text_ImNotATrainer, MSGBOX_NPC, MUGSHOT_GIRL3
 # 348 "data/maps/Route104/scripts.pory"
 	end
 # 349 "data/maps/Route104/scripts.pory"

@@ -139,7 +139,7 @@ Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirl::
 # 70 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_WAILMER_PAIL, Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail
 # 71 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 72 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	release
 # 73 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
@@ -149,13 +149,13 @@ Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirl::
 # 75 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail::
 # 76 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 77 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	giveitem ITEM_WAILMER_PAIL
 # 78 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 79 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 # 80 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	setflag FLAG_RECEIVED_WAILMER_PAIL
 # 81 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
@@ -175,7 +175,7 @@ Route104_PrettyPetalFlowerShop_EventScript_RandomBerryGirl::
 # 88 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	goto_if_set FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY, Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry
 # 89 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 90 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	random 8
 # 91 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
@@ -187,7 +187,7 @@ Route104_PrettyPetalFlowerShop_EventScript_RandomBerryGirl::
 # 94 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	setflag FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY
 # 95 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 96 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	release
 # 97 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
@@ -197,7 +197,7 @@ Route104_PrettyPetalFlowerShop_EventScript_RandomBerryGirl::
 # 99 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry::
 # 100 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 101 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	release
 # 102 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"

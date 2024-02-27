@@ -411,7 +411,7 @@ DewfordTown_Gym_EventScript_Jocelyn::
 # 206 "data/maps/DewfordTown_Gym/scripts.pory"
 	trainerbattle_single TRAINER_JOCELYN, DewfordTown_Gym_Text_JocelynIntro, DewfordTown_Gym_Text_JocelynDefeat, DewfordTown_Gym_EventScript_JocelynBrightenRoom
 # 207 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_Text_JocelynPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot DewfordTown_Gym_Text_JocelynPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 208 "data/maps/DewfordTown_Gym/scripts.pory"
 	end
 # 209 "data/maps/DewfordTown_Gym/scripts.pory"
@@ -431,7 +431,7 @@ DewfordTown_Gym_EventScript_Laura::
 # 216 "data/maps/DewfordTown_Gym/scripts.pory"
 	trainerbattle_single TRAINER_LAURA, DewfordTown_Gym_Text_LauraIntro, DewfordTown_Gym_Text_LauraDefeat, DewfordTown_Gym_EventScript_LauraBrightenRoom
 # 217 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_Text_LauraPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot DewfordTown_Gym_Text_LauraPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 218 "data/maps/DewfordTown_Gym/scripts.pory"
 	end
 # 219 "data/maps/DewfordTown_Gym/scripts.pory"
@@ -491,7 +491,7 @@ DewfordTown_Gym_EventScript_Lilith::
 # 246 "data/maps/DewfordTown_Gym/scripts.pory"
 	trainerbattle_single TRAINER_LILITH, DewfordTown_Gym_Text_LilithIntro, DewfordTown_Gym_Text_LilithDefeat, DewfordTown_Gym_EventScript_LilithBrightenRoom
 # 247 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_Text_LilithPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot DewfordTown_Gym_Text_LilithPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 248 "data/maps/DewfordTown_Gym/scripts.pory"
 	end
 # 249 "data/maps/DewfordTown_Gym/scripts.pory"

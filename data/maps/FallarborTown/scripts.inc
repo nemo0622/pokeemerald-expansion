@@ -49,7 +49,7 @@ FallarborTown_EventScript_ExpertMNormal::
 # 25 "data/maps/FallarborTown/scripts.pory"
 FallarborTown_EventScript_Girl::
 # 26 "data/maps/FallarborTown/scripts.pory"
-	msgbox FallarborTown_Text_MyPreciousAzurill, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_Text_MyPreciousAzurill, MSGBOX_NPC, MUGSHOT_GIRL1
 # 27 "data/maps/FallarborTown/scripts.pory"
 	end
 # 28 "data/maps/FallarborTown/scripts.pory"

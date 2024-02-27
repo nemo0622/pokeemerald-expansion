@@ -99,7 +99,7 @@ PacifidlogTown_House3_EventScript_TradeCompleted::
 # 50 "data/maps/PacifidlogTown_House3/scripts.pory"
 PacifidlogTown_House3_EventScript_Girl::
 # 51 "data/maps/PacifidlogTown_House3/scripts.pory"
-	msgbox PacifidlogTown_House3_Text_IsThatAPokedex, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_House3_Text_IsThatAPokedex, MSGBOX_NPC, MUGSHOT_GIRL2
 # 52 "data/maps/PacifidlogTown_House3/scripts.pory"
 	end
 # 53 "data/maps/PacifidlogTown_House3/scripts.pory"

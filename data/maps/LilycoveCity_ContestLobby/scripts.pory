@@ -480,7 +480,7 @@ LilycoveCity_ContestLobby_EventScript_BlackBelt::
 	end
 
 LilycoveCity_ContestLobby_EventScript_Girl::
-	msgbox LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere, MSGBOX_NPC, MUGSHOT_GIRL2
 	end
 
 LilycoveCity_ContestLobby_EventScript_Artist::
@@ -546,7 +546,7 @@ LilycoveCity_ContestLobby_EventScript_Blender3Boy::
 	end
 
 LilycoveCity_ContestLobby_EventScript_Blender3Girl::
-	msgbox BerryBlender_Text_WhatKindOfPokeblockWillIGet, MSGBOX_NPC
+	msgbox_mugshot BerryBlender_Text_WhatKindOfPokeblockWillIGet, MSGBOX_NPC, MUGSHOT_GIRL1
 	end
 
 LilycoveCity_ContestLobby_EventScript_BerryBlenderSpeedRecords::

@@ -63,7 +63,7 @@ FortreeCity_EventScript_WomanGymAccessible::
 # 32 "data/maps/FortreeCity/scripts.pory"
 FortreeCity_EventScript_Girl::
 # 33 "data/maps/FortreeCity/scripts.pory"
-	msgbox FortreeCity_Text_TreesGrowByDrinkingRainwater, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Text_TreesGrowByDrinkingRainwater, MSGBOX_NPC, MUGSHOT_GIRL1
 # 34 "data/maps/FortreeCity/scripts.pory"
 	end
 # 35 "data/maps/FortreeCity/scripts.pory"

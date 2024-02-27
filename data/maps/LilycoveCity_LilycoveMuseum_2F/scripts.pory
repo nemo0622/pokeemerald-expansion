@@ -171,7 +171,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_SmartPainting::
 	end
 
 LilycoveCity_LilycoveMuseum_2F_EventScript_Girl::
-	msgbox LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe, MSGBOX_NPC, MUGSHOT_GIRL2
 	end
 
 LilycoveCity_LilycoveMuseum_2F_EventScript_ExpertM::

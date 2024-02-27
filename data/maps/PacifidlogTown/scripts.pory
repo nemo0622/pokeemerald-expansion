@@ -17,7 +17,7 @@ PacifidlogTown_EventScript_NinjaBoy::
 	end
 
 PacifidlogTown_EventScript_Girl::
-	msgbox PacifidlogTown_Text_FastRunningCurrent, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_Text_FastRunningCurrent, MSGBOX_NPC, MUGSHOT_GIRL1
 	end
 
 PacifidlogTown_EventScript_Fisherman::

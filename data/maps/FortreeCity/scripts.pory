@@ -30,7 +30,7 @@ FortreeCity_EventScript_WomanGymAccessible::
 	end
 
 FortreeCity_EventScript_Girl::
-	msgbox FortreeCity_Text_TreesGrowByDrinkingRainwater, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Text_TreesGrowByDrinkingRainwater, MSGBOX_NPC, MUGSHOT_GIRL1
 	end
 
 FortreeCity_EventScript_OldMan::

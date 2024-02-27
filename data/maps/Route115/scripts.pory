@@ -83,21 +83,21 @@ Route115_EventScript_Cyndy::
 	trainerbattle_single TRAINER_CYNDY_1, Route115_Text_CyndyIntro, Route115_Text_CyndyDefeat, Route115_EventScript_RegisterCyndy
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchCyndy
-	msgbox Route115_Text_CyndyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route115_Text_CyndyPostBattle, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 	release
 	end
 
 Route115_EventScript_RegisterCyndy::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route115_Text_CyndyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route115_Text_CyndyRegister, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 	register_matchcall TRAINER_CYNDY_1
 	release
 	end
 
 Route115_EventScript_RematchCyndy::
 	trainerbattle_rematch TRAINER_CYNDY_1, Route115_Text_CyndyRematchIntro, Route115_Text_CyndyRematchDefeat
-	msgbox Route115_Text_CyndyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_CyndyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 	end
 
 Route115_EventScript_Hector::
@@ -122,7 +122,7 @@ Route115_EventScript_Alix::
 
 Route115_EventScript_Helene::
 	trainerbattle_single TRAINER_HELENE, Route115_Text_HeleneIntro, Route115_Text_HeleneDefeat
-	msgbox Route115_Text_HelenePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_HelenePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 	end
 
 Route115_EventScript_Marlene::

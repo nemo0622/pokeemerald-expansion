@@ -439,7 +439,7 @@ SlateportCity_EventScript_Girl::
 # 220 "data/maps/SlateportCity/scripts.pory"
 	goto_if_set FLAG_RECEIVED_SECRET_POWER, SlateportCity_EventScript_GirlSecretBase
 # 221 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_SlateportWonderfulPlace, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_SlateportWonderfulPlace, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 222 "data/maps/SlateportCity/scripts.pory"
 	release
 # 223 "data/maps/SlateportCity/scripts.pory"
@@ -449,7 +449,7 @@ SlateportCity_EventScript_Girl::
 # 225 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_GirlSternInterview::
 # 226 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_InterviewerSoCool, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_InterviewerSoCool, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 227 "data/maps/SlateportCity/scripts.pory"
 	release
 # 228 "data/maps/SlateportCity/scripts.pory"
@@ -459,7 +459,7 @@ SlateportCity_EventScript_GirlSternInterview::
 # 230 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_GirlSecretBase::
 # 231 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_BuyBricksSoDecorWontGetDirty, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_BuyBricksSoDecorWontGetDirty, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 # 232 "data/maps/SlateportCity/scripts.pory"
 	release
 # 233 "data/maps/SlateportCity/scripts.pory"

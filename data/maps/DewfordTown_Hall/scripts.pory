@@ -13,12 +13,12 @@ DewfordTown_Hall_EventScript_Girl::
 	call Common_EventScript_BufferTrendyPhrase
 	special IsTrendyPhraseBoring
 	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Hall_EventScript_GirlBoredOfTrend
-	msgbox DewfordTown_Hall_Text_CantImagineLifeWithoutTrend, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_CantImagineLifeWithoutTrend, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 	release
 	end
 
 DewfordTown_Hall_EventScript_GirlBoredOfTrend::
-	msgbox DewfordTown_Hall_Text_GettingBoredOfTrend, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_GettingBoredOfTrend, MSGBOX_DEFAULT, MUGSHOT_GIRL2
 	release
 	end
 

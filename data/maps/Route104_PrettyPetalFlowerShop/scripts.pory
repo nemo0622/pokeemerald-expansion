@@ -68,15 +68,15 @@ Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirl::
 	lock
 	faceplayer
 	goto_if_unset FLAG_RECEIVED_WAILMER_PAIL, Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail
-	msgbox Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 	release
 	end
 
 Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail::
-	msgbox Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 	giveitem ITEM_WAILMER_PAIL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	msgbox Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 	setflag FLAG_RECEIVED_WAILMER_PAIL
 	release
 	end
@@ -86,18 +86,18 @@ Route104_PrettyPetalFlowerShop_EventScript_RandomBerryGirl::
 	faceplayer
 	dotimebasedevents
 	goto_if_set FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY, Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry
-	msgbox Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 	random 8
 	addvar VAR_RESULT, FIRST_BERRY_INDEX
 	giveitem VAR_RESULT
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
 	setflag FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY
-	msgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 	release
 	end
 
 Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry::
-	msgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT, MUGSHOT_GIRL1
 	release
 	end
 `

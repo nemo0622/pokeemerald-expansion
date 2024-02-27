@@ -45,7 +45,7 @@ FallarborTown_PokemonCenter_1F_EventScript_Nurse::
 # 23 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
 FallarborTown_PokemonCenter_1F_EventScript_Girl::
 # 24 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
-	msgbox FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown, MSGBOX_NPC, MUGSHOT_GIRL3
 # 25 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
 	end
 # 26 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"

@@ -51,7 +51,7 @@ Route117_EventScript_LittleBoy::
 # 26 "data/maps/Route117/scripts.pory"
 Route117_EventScript_Girl::
 # 27 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_DayCarePokemonHadNewMove, MSGBOX_NPC
+	msgbox_mugshot Route117_Text_DayCarePokemonHadNewMove, MSGBOX_NPC, MUGSHOT_GIRL2
 # 28 "data/maps/Route117/scripts.pory"
 	end
 # 29 "data/maps/Route117/scripts.pory"
@@ -359,7 +359,7 @@ Route117_EventScript_Aisha::
 # 180 "data/maps/Route117/scripts.pory"
 	trainerbattle_single TRAINER_AISHA, Route117_Text_AishaIntro, Route117_Text_AishaDefeat
 # 181 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_AishaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_AishaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GIRL3
 # 182 "data/maps/Route117/scripts.pory"
 	end
 # 183 "data/maps/Route117/scripts.pory"

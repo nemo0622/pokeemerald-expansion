@@ -31,12 +31,12 @@ OldaleTown_PokemonCenter_1F_EventScript_Girl::
 	lock
 	faceplayer
 	goto_if_set FLAG_SYS_POKEDEX_GET, OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable
-	msgbox OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 	release
 	end
 
 OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable::
-	msgbox OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub, MSGBOX_DEFAULT, MUGSHOT_GIRL3
 	release
 	end
 

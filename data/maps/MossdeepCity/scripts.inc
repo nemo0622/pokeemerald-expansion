@@ -109,7 +109,7 @@ MossdeepCity_EventScript_ExpertM::
 # 55 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_Girl::
 # 56 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_NiceIfWorldCoveredByFlowers, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Text_NiceIfWorldCoveredByFlowers, MSGBOX_NPC, MUGSHOT_GIRL1
 # 57 "data/maps/MossdeepCity/scripts.pory"
 	end
 # 58 "data/maps/MossdeepCity/scripts.pory"
