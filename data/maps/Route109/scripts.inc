@@ -901,7 +901,7 @@ Route109_EventScript_Carter::
 # 451 "data/maps/Route109/scripts.pory"
 	trainerbattle_single TRAINER_CARTER, Route109_Text_CarterIntro, Route109_Text_CarterDefeated
 # 452 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_CarterPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_CarterPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 453 "data/maps/Route109/scripts.pory"
 	end
 # 454 "data/maps/Route109/scripts.pory"

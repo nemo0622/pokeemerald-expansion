@@ -234,7 +234,7 @@ PetalburgCity_EventScript_CitySign::
 	end
 
 PetalburgCity_EventScript_Gentleman::
-	msgbox PetalburgCity_Text_FullPartyExplanation, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Text_FullPartyExplanation, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 	end
 
 PetalburgCity_EventScript_WallyHouseSign::

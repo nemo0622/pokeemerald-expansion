@@ -81,7 +81,7 @@ LilycoveCity_EventScript_BerryGentleman::
 # 41 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_DAILY_LILYCOVE_RECEIVED_BERRY, LilycoveCity_EventScript_ReceivedBerry
 # 42 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_BerrySuitsYou, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BerrySuitsYou, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 43 "data/maps/LilycoveCity/scripts.pory"
 	random 10
 # 44 "data/maps/LilycoveCity/scripts.pory"
@@ -93,7 +93,7 @@ LilycoveCity_EventScript_BerryGentleman::
 # 47 "data/maps/LilycoveCity/scripts.pory"
 	setflag FLAG_DAILY_LILYCOVE_RECEIVED_BERRY
 # 48 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_BecauseYoureTrainer, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BecauseYoureTrainer, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 49 "data/maps/LilycoveCity/scripts.pory"
 	release
 # 50 "data/maps/LilycoveCity/scripts.pory"
@@ -103,7 +103,7 @@ LilycoveCity_EventScript_BerryGentleman::
 # 52 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_ReceivedBerry::
 # 53 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_PokeblocksSuitPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_PokeblocksSuitPokemon, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 54 "data/maps/LilycoveCity/scripts.pory"
 	release
 # 55 "data/maps/LilycoveCity/scripts.pory"

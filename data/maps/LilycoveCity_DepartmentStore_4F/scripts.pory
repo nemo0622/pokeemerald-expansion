@@ -3,7 +3,7 @@ LilycoveCity_DepartmentStore_4F_MapScripts::
 	.byte 0
 
 LilycoveCity_DepartmentStore_4F_EventScript_Gentleman::
-	msgbox LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 	end
 
 LilycoveCity_DepartmentStore_4F_EventScript_Woman::

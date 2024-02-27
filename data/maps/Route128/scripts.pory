@@ -233,7 +233,7 @@ Route128_EventScript_Ruben::
 
 Route128_EventScript_Wayne::
 	trainerbattle_single TRAINER_WAYNE, Route128_Text_WayneIntro, Route128_Text_WayneDefeat
-	msgbox Route128_Text_WaynePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route128_Text_WaynePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 	end
 
 Route128_EventScript_Harrison::

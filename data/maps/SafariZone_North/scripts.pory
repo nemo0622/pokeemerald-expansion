@@ -3,7 +3,7 @@ SafariZone_North_MapScripts::
 	.byte 0
 
 SafariZone_North_EventScript_Fisherman::
-	msgbox SafariZone_North_Text_Fisherman, MSGBOX_NPC
+	msgbox_mugshot SafariZone_North_Text_Fisherman, MSGBOX_NPC, MUGSHOT_FISHERMAN
 	end
 
 SafariZone_North_EventScript_Man::

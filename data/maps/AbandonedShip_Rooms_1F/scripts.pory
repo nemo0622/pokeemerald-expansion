@@ -3,7 +3,7 @@ AbandonedShip_Rooms_1F_MapScripts::
 	.byte 0
 
 AbandonedShip_Rooms_1F_EventScript_Gentleman::
-	msgbox AbandonedShip_Rooms_1F_Text_TakingALookAround, MSGBOX_NPC
+	msgbox_mugshot AbandonedShip_Rooms_1F_Text_TakingALookAround, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 	end
 
 AbandonedShip_Rooms_1F_EventScript_Demetrius::

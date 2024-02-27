@@ -751,7 +751,7 @@ MauvilleCity_GameCorner_EventScript_Woman2::
 # 376 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 MauvilleCity_GameCorner_EventScript_Gentleman::
 # 377 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_RouletteOnlyLuck, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_GameCorner_Text_RouletteOnlyLuck, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 378 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	end
 # 379 "data/maps/MauvilleCity_GameCorner/scripts.pory"

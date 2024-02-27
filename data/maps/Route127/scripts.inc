@@ -69,7 +69,7 @@ Route127_EventScript_Jonah::
 # 35 "data/maps/Route127/scripts.pory"
 	trainerbattle_single TRAINER_JONAH, Route127_Text_JonahIntro, Route127_Text_JonahDefeat
 # 36 "data/maps/Route127/scripts.pory"
-	msgbox Route127_Text_JonahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route127_Text_JonahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 37 "data/maps/Route127/scripts.pory"
 	end
 # 38 "data/maps/Route127/scripts.pory"
@@ -79,7 +79,7 @@ Route127_EventScript_Henry::
 # 40 "data/maps/Route127/scripts.pory"
 	trainerbattle_single TRAINER_HENRY, Route127_Text_HenryIntro, Route127_Text_HenryDefeat
 # 41 "data/maps/Route127/scripts.pory"
-	msgbox Route127_Text_HenryPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route127_Text_HenryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 42 "data/maps/Route127/scripts.pory"
 	end
 # 43 "data/maps/Route127/scripts.pory"
@@ -89,7 +89,7 @@ Route127_EventScript_Roger::
 # 45 "data/maps/Route127/scripts.pory"
 	trainerbattle_single TRAINER_ROGER, Route127_Text_RogerIntro, Route127_Text_RogerDefeat
 # 46 "data/maps/Route127/scripts.pory"
-	msgbox Route127_Text_RogerPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route127_Text_RogerPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 47 "data/maps/Route127/scripts.pory"
 	end
 # 48 "data/maps/Route127/scripts.pory"

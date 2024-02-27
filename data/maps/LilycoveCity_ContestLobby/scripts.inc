@@ -987,7 +987,7 @@ LilycoveCity_ContestLobby_EventScript_FatMan::
 # 494 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_Fisherman::
 # 495 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox LilycoveCity_ContestLobby_Text_LavishedCareOnMon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_LavishedCareOnMon, MSGBOX_NPC, MUGSHOT_FISHERMAN
 # 496 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	end
 # 497 "data/maps/LilycoveCity_ContestLobby/scripts.pory"

@@ -37,7 +37,7 @@ PacifidlogTown_House5_EventScript_MirageIslandPresent::
 # 19 "data/maps/PacifidlogTown_House5/scripts.pory"
 PacifidlogTown_House5_EventScript_Gentleman::
 # 20 "data/maps/PacifidlogTown_House5/scripts.pory"
-	msgbox PacifidlogTown_House5_Text_MirageIslandAppearDependingOnWeather, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_House5_Text_MirageIslandAppearDependingOnWeather, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 21 "data/maps/PacifidlogTown_House5/scripts.pory"
 	end
 # 22 "data/maps/PacifidlogTown_House5/scripts.pory"

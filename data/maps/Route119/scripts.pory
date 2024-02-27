@@ -421,7 +421,7 @@ Route119_EventScript_Hideo::
 
 Route119_EventScript_Chris::
 	trainerbattle_single TRAINER_CHRIS, Route119_Text_ChrisIntro, Route119_Text_ChrisDefeat
-	msgbox Route119_Text_ChrisPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_ChrisPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 	end
 
 Route119_EventScript_Fabian::

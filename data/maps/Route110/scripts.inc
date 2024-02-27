@@ -401,7 +401,7 @@ Route110_EventScript_Dale::
 # 201 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_DALE, Route110_Text_DaleIntro, Route110_Text_DaleDefeated
 # 202 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_DalePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_DalePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 203 "data/maps/Route110/scripts.pory"
 	end
 # 204 "data/maps/Route110/scripts.pory"

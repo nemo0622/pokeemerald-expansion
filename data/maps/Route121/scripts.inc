@@ -161,7 +161,7 @@ Route121_EventScript_Walter::
 # 81 "data/maps/Route121/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchWalter
 # 82 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_WalterPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route121_Text_WalterPostBattle, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 83 "data/maps/Route121/scripts.pory"
 	release
 # 84 "data/maps/Route121/scripts.pory"
@@ -175,7 +175,7 @@ Route121_EventScript_RegisterWalter::
 # 88 "data/maps/Route121/scripts.pory"
 	waitmovement 0
 # 89 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_WalterRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route121_Text_WalterRegister, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 90 "data/maps/Route121/scripts.pory"
 	register_matchcall TRAINER_WALTER_1
 # 91 "data/maps/Route121/scripts.pory"
@@ -189,7 +189,7 @@ Route121_EventScript_RematchWalter::
 # 95 "data/maps/Route121/scripts.pory"
 	trainerbattle_rematch TRAINER_WALTER_1, Route121_Text_WalterRematchIntro, Route121_Text_WalterRematchDefeat
 # 96 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_WalterPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_WalterPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_GENTLEMAN
 # 97 "data/maps/Route121/scripts.pory"
 	end
 # 98 "data/maps/Route121/scripts.pory"

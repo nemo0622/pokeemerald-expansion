@@ -493,7 +493,7 @@ Route103_EventScript_Andrew::
 # 247 "data/maps/Route103/scripts.pory"
 	trainerbattle_single TRAINER_ANDREW, Route103_Text_AndrewIntro, Route103_Text_AndrewDefeated
 # 248 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_AndrewPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_AndrewPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 249 "data/maps/Route103/scripts.pory"
 	end
 # 250 "data/maps/Route103/scripts.pory"

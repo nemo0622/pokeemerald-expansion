@@ -45,7 +45,7 @@ PacifidlogTown_EventScript_Girl::
 # 23 "data/maps/PacifidlogTown/scripts.pory"
 PacifidlogTown_EventScript_Fisherman::
 # 24 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_Text_SkyPillarTooScary, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_Text_SkyPillarTooScary, MSGBOX_NPC, MUGSHOT_FISHERMAN
 # 25 "data/maps/PacifidlogTown/scripts.pory"
 	end
 # 26 "data/maps/PacifidlogTown/scripts.pory"

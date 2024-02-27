@@ -267,7 +267,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Gentleman::
 # 134 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_GentlemanNormal::
 # 135 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 136 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	release
 # 137 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -277,7 +277,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_GentlemanNormal::
 # 139 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_GentlemanMagma::
 # 140 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 141 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	release
 # 142 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"

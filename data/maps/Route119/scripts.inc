@@ -845,7 +845,7 @@ Route119_EventScript_Chris::
 # 423 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_CHRIS, Route119_Text_ChrisIntro, Route119_Text_ChrisDefeat
 # 424 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_ChrisPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_ChrisPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 425 "data/maps/Route119/scripts.pory"
 	end
 # 426 "data/maps/Route119/scripts.pory"

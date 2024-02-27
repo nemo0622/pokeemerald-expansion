@@ -28,7 +28,7 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Woman::
 	end
 
 LavaridgeTown_PokemonCenter_1F_EventScript_Gentleman::
-	msgbox LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 	end
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether:

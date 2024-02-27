@@ -27,27 +27,27 @@ Route118_EventScript_GoodRodFisherman::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_GOOD_ROD, Route118_EventScript_ReceivedGoodRod
-	msgbox Route118_Text_YouAgreeGoodRodIsGood, MSGBOX_YESNO
+	msgbox_mugshot Route118_Text_YouAgreeGoodRodIsGood, MSGBOX_YESNO, MUGSHOT_FISHERMAN
 	goto_if_eq VAR_RESULT, YES, Route118_EventScript_ReceiveGoodRod
 	goto_if_eq VAR_RESULT, NO, Route118_EventScript_DeclineGoodRod
 	end
 
 Route118_EventScript_ReceiveGoodRod::
-	msgbox Route118_Text_IdenticalMindsTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_IdenticalMindsTakeThis, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 	giveitem ITEM_GOOD_ROD
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_GOOD_ROD
-	msgbox Route118_Text_TryYourLuckFishing, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_TryYourLuckFishing, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 	release
 	end
 
 Route118_EventScript_DeclineGoodRod::
-	msgbox Route118_Text_DontYouLikeToFish, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_DontYouLikeToFish, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 	release
 	end
 
 Route118_EventScript_ReceivedGoodRod::
-	msgbox Route118_Text_TryCatchingMonWithGoodRod, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_TryCatchingMonWithGoodRod, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 	release
 	end
 
@@ -202,12 +202,12 @@ Route118_EventScript_RematchRose::
 
 Route118_EventScript_Barny::
 	trainerbattle_single TRAINER_BARNY, Route118_Text_BarnyIntro, Route118_Text_BarnyDefeat
-	msgbox Route118_Text_BarnyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route118_Text_BarnyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 	end
 
 Route118_EventScript_Wade::
 	trainerbattle_single TRAINER_WADE, Route118_Text_WadeIntro, Route118_Text_WadeDefeat
-	msgbox Route118_Text_WadePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route118_Text_WadePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 	end
 
 Route118_EventScript_Dalton::

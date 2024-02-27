@@ -501,7 +501,7 @@ MossdeepCity_Gym_EventScript_Nate::
 # 251 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_NATE, MossdeepCity_Gym_Text_NateIntro, MossdeepCity_Gym_Text_NateDefeat
 # 252 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_NatePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_NatePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GENTLEMAN
 # 253 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 254 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -521,7 +521,7 @@ MossdeepCity_Gym_EventScript_Clifford::
 # 261 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_CLIFFORD, MossdeepCity_Gym_Text_CliffordIntro, MossdeepCity_Gym_Text_CliffordDefeat
 # 262 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_CliffordPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_CliffordPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GENTLEMAN
 # 263 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 264 "data/maps/MossdeepCity_Gym/scripts.pory"

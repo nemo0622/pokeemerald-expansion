@@ -24,7 +24,7 @@ Route113_EventScript_DontSetAshWeather::
 	return
 
 Route113_EventScript_Gentleman::
-	msgbox Route113_Text_AshCanBeFashionedIntoGlass, MSGBOX_NPC
+	msgbox_mugshot Route113_Text_AshCanBeFashionedIntoGlass, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 	end
 
 Route113_EventScript_NinjaBoy::

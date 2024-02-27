@@ -471,7 +471,7 @@ PetalburgCity_EventScript_CitySign::
 # 236 "data/maps/PetalburgCity/scripts.pory"
 PetalburgCity_EventScript_Gentleman::
 # 237 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_Text_FullPartyExplanation, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Text_FullPartyExplanation, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 238 "data/maps/PetalburgCity/scripts.pory"
 	end
 # 239 "data/maps/PetalburgCity/scripts.pory"

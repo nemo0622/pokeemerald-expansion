@@ -101,11 +101,11 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 # 51 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	waitmovement 0
 # 52 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 53 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	giveitem ITEM_LETTER
 # 54 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 55 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 56 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -119,13 +119,13 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 # 60 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	setflag FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT
 # 61 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 62 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 63 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	call Common_EventScript_OutOfCenterPartyHeal
 # 64 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 65 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND
 # 66 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -311,7 +311,7 @@ RustboroCity_DevonCorp_3F_EventScript_MrStone::
 # 156 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	goto_if_set FLAG_DELIVERED_STEVEN_LETTER, RustboroCity_DevonCorp_3F_EventScript_GiveExpShare
 # 157 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_CountingOnYou, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_CountingOnYou, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 158 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 159 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -327,7 +327,7 @@ RustboroCity_DevonCorp_3F_EventScript_MrStone::
 # 164 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::
 # 165 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 166 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	giveitem ITEM_EXP_SHARE
 # 167 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -335,7 +335,7 @@ RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::
 # 168 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	setflag FLAG_RECEIVED_EXP_SHARE
 # 169 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_ExplainExpShare, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_ExplainExpShare, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 170 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 171 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -351,7 +351,7 @@ RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::
 # 176 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor::
 # 177 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 178 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 179 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"

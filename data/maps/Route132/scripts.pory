@@ -14,7 +14,7 @@ Route132_EventScript_Dana::
 
 Route132_EventScript_Ronald::
 	trainerbattle_single TRAINER_RONALD, Route132_Text_RonaldIntro, Route132_Text_RonaldDefeat
-	msgbox Route132_Text_RonaldPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_RonaldPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 	end
 
 Route132_EventScript_Kiyo::

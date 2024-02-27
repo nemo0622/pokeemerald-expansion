@@ -51,7 +51,7 @@ Route113_EventScript_DontSetAshWeather::
 # 26 "data/maps/Route113/scripts.pory"
 Route113_EventScript_Gentleman::
 # 27 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_AshCanBeFashionedIntoGlass, MSGBOX_NPC
+	msgbox_mugshot Route113_Text_AshCanBeFashionedIntoGlass, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 28 "data/maps/Route113/scripts.pory"
 	end
 # 29 "data/maps/Route113/scripts.pory"

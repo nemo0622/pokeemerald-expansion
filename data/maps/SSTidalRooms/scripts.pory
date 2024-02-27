@@ -35,12 +35,12 @@ SSTidalRooms_EventScript_Colton::
 
 SSTidalRooms_EventScript_Micah::
 	trainerbattle_single TRAINER_MICAH, SSTidalRooms_Text_MicahIntro, SSTidalRooms_Text_MicahDefeat
-	msgbox SSTidalRooms_Text_MicahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_MicahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GENTLEMAN
 	end
 
 SSTidalRooms_EventScript_Thomas::
 	trainerbattle_single TRAINER_THOMAS, SSTidalRooms_Text_ThomasIntro, SSTidalRooms_Text_ThomasDefeat
-	msgbox SSTidalRooms_Text_ThomasPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_ThomasPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GENTLEMAN
 	end
 
 SSTidalRooms_EventScript_Jed::

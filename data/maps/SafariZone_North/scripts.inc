@@ -9,7 +9,7 @@ SafariZone_North_MapScripts::
 # 5 "data/maps/SafariZone_North/scripts.pory"
 SafariZone_North_EventScript_Fisherman::
 # 6 "data/maps/SafariZone_North/scripts.pory"
-	msgbox SafariZone_North_Text_Fisherman, MSGBOX_NPC
+	msgbox_mugshot SafariZone_North_Text_Fisherman, MSGBOX_NPC, MUGSHOT_FISHERMAN
 # 7 "data/maps/SafariZone_North/scripts.pory"
 	end
 # 8 "data/maps/SafariZone_North/scripts.pory"

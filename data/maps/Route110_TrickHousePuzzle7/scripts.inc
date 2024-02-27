@@ -627,7 +627,7 @@ Route110_TrickHousePuzzle7_EventScript_Everett::
 # 314 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	trainerbattle_single TRAINER_EVERETT, Route110_TrickHousePuzzle7_Text_EverettIntro, Route110_TrickHousePuzzle7_Text_EverettDefeat
 # 315 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
-	msgbox Route110_TrickHousePuzzle7_Text_EverettPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle7_Text_EverettPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GENTLEMAN
 # 316 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	end
 # 317 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"

@@ -449,7 +449,7 @@ Route109_EventScript_Gwen::
 
 Route109_EventScript_Carter::
 	trainerbattle_single TRAINER_CARTER, Route109_Text_CarterIntro, Route109_Text_CarterDefeated
-	msgbox Route109_Text_CarterPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_CarterPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 	end
 
 Route109_EventScript_Paul::

@@ -27,7 +27,7 @@ FallarborTown_EventScript_Girl::
 	end
 
 FallarborTown_EventScript_Gentleman::
-	msgbox FallarborTown_Text_HaveYouChallengedFlannery, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_Text_HaveYouChallengedFlannery, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 	end
 
 FallarborTown_EventScript_Azurill::

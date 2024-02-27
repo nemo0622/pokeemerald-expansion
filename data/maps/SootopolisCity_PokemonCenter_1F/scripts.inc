@@ -49,7 +49,7 @@ SootopolisCity_PokemonCenter_1F_EventScript_Gentleman::
 # 25 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
 	goto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_PokemonCenter_1F_EventScript_GentlemanNoLegendaries
 # 26 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
-	msgbox SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 27 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
 	release
 # 28 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
@@ -59,7 +59,7 @@ SootopolisCity_PokemonCenter_1F_EventScript_Gentleman::
 # 30 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
 SootopolisCity_PokemonCenter_1F_EventScript_GentlemanNoLegendaries::
 # 31 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
-	msgbox SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 32 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
 	release
 # 33 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"

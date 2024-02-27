@@ -95,7 +95,7 @@ SootopolisCity_Mart_EventScript_Gentleman::
 # 48 "data/maps/SootopolisCity_Mart/scripts.pory"
 	goto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_Mart_EventScript_GentlemanNoLegendaries
 # 49 "data/maps/SootopolisCity_Mart/scripts.pory"
-	msgbox SootopolisCity_Mart_Text_DidSomethingAwaken, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Mart_Text_DidSomethingAwaken, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 50 "data/maps/SootopolisCity_Mart/scripts.pory"
 	release
 # 51 "data/maps/SootopolisCity_Mart/scripts.pory"
@@ -105,7 +105,7 @@ SootopolisCity_Mart_EventScript_Gentleman::
 # 53 "data/maps/SootopolisCity_Mart/scripts.pory"
 SootopolisCity_Mart_EventScript_GentlemanNoLegendaries::
 # 54 "data/maps/SootopolisCity_Mart/scripts.pory"
-	msgbox SootopolisCity_Mart_Text_FullRestoreItemOfDreams, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Mart_Text_FullRestoreItemOfDreams, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 55 "data/maps/SootopolisCity_Mart/scripts.pory"
 	release
 # 56 "data/maps/SootopolisCity_Mart/scripts.pory"

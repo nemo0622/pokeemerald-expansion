@@ -41,7 +41,7 @@ FortreeCity_PokemonCenter_1F_EventScript_Nurse::
 # 21 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 FortreeCity_PokemonCenter_1F_EventScript_Gentleman::
 # 22 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	msgbox FortreeCity_PokemonCenter_1F_Text_GoToSafariZone, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_PokemonCenter_1F_Text_GoToSafariZone, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 23 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	end
 # 24 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"

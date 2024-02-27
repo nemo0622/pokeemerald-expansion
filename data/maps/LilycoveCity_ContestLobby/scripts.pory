@@ -492,7 +492,7 @@ LilycoveCity_ContestLobby_EventScript_FatMan::
 	end
 
 LilycoveCity_ContestLobby_EventScript_Fisherman::
-	msgbox LilycoveCity_ContestLobby_Text_LavishedCareOnMon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_LavishedCareOnMon, MSGBOX_NPC, MUGSHOT_FISHERMAN
 	end
 
 LilycoveCity_ContestLobby_EventScript_NinjaBoy::

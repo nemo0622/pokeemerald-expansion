@@ -73,7 +73,7 @@ SSTidalRooms_EventScript_Micah::
 # 37 "data/maps/SSTidalRooms/scripts.pory"
 	trainerbattle_single TRAINER_MICAH, SSTidalRooms_Text_MicahIntro, SSTidalRooms_Text_MicahDefeat
 # 38 "data/maps/SSTidalRooms/scripts.pory"
-	msgbox SSTidalRooms_Text_MicahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_MicahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GENTLEMAN
 # 39 "data/maps/SSTidalRooms/scripts.pory"
 	end
 # 40 "data/maps/SSTidalRooms/scripts.pory"
@@ -83,7 +83,7 @@ SSTidalRooms_EventScript_Thomas::
 # 42 "data/maps/SSTidalRooms/scripts.pory"
 	trainerbattle_single TRAINER_THOMAS, SSTidalRooms_Text_ThomasIntro, SSTidalRooms_Text_ThomasDefeat
 # 43 "data/maps/SSTidalRooms/scripts.pory"
-	msgbox SSTidalRooms_Text_ThomasPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_ThomasPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GENTLEMAN
 # 44 "data/maps/SSTidalRooms/scripts.pory"
 	end
 # 45 "data/maps/SSTidalRooms/scripts.pory"

@@ -46,12 +46,12 @@ SootopolisCity_Mart_EventScript_Gentleman::
 	faceplayer
 	goto_if_ge VAR_SKY_PILLAR_STATE, 2, SootopolisCity_Mart_EventScript_GentlemanNoLegendaries
 	goto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_Mart_EventScript_GentlemanNoLegendaries
-	msgbox SootopolisCity_Mart_Text_DidSomethingAwaken, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Mart_Text_DidSomethingAwaken, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 	release
 	end
 
 SootopolisCity_Mart_EventScript_GentlemanNoLegendaries::
-	msgbox SootopolisCity_Mart_Text_FullRestoreItemOfDreams, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Mart_Text_FullRestoreItemOfDreams, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 	release
 	end
 

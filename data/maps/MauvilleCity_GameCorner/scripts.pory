@@ -374,7 +374,7 @@ MauvilleCity_GameCorner_EventScript_Woman2::
 	end
 
 MauvilleCity_GameCorner_EventScript_Gentleman::
-	msgbox MauvilleCity_GameCorner_Text_RouletteOnlyLuck, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_GameCorner_Text_RouletteOnlyLuck, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 	end
 
 MauvilleCity_GameCorner_EventScript_Girl::

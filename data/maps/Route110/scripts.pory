@@ -199,7 +199,7 @@ Route110_EventScript_EdwinRematch::
 
 Route110_EventScript_Dale::
 	trainerbattle_single TRAINER_DALE, Route110_Text_DaleIntro, Route110_Text_DaleDefeated
-	msgbox Route110_Text_DalePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_DalePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 	end
 
 Route110_EventScript_Jacob::

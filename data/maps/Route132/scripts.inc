@@ -31,7 +31,7 @@ Route132_EventScript_Ronald::
 # 16 "data/maps/Route132/scripts.pory"
 	trainerbattle_single TRAINER_RONALD, Route132_Text_RonaldIntro, Route132_Text_RonaldDefeat
 # 17 "data/maps/Route132/scripts.pory"
-	msgbox Route132_Text_RonaldPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_RonaldPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 18 "data/maps/Route132/scripts.pory"
 	end
 # 19 "data/maps/Route132/scripts.pory"

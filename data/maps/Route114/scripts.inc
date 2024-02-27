@@ -93,7 +93,7 @@ Route114_EventScript_RoarGentleman::
 # 47 "data/maps/Route114/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_ROAR, Route114_EventScript_ReceivedRoar
 # 48 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_AllMyMonDoesIsRoarTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_Text_AllMyMonDoesIsRoarTakeThis, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 49 "data/maps/Route114/scripts.pory"
 	giveitem ITEM_TM_ROAR
 # 50 "data/maps/Route114/scripts.pory"
@@ -101,7 +101,7 @@ Route114_EventScript_RoarGentleman::
 # 51 "data/maps/Route114/scripts.pory"
 	setflag FLAG_RECEIVED_TM_ROAR
 # 52 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_ExplainRoar, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_Text_ExplainRoar, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 53 "data/maps/Route114/scripts.pory"
 	release
 # 54 "data/maps/Route114/scripts.pory"
@@ -111,7 +111,7 @@ Route114_EventScript_RoarGentleman::
 # 56 "data/maps/Route114/scripts.pory"
 Route114_EventScript_ReceivedRoar::
 # 57 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_ExplainRoar, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_Text_ExplainRoar, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 58 "data/maps/Route114/scripts.pory"
 	release
 # 59 "data/maps/Route114/scripts.pory"
@@ -291,7 +291,7 @@ Route114_EventScript_Claude::
 # 146 "data/maps/Route114/scripts.pory"
 	trainerbattle_single TRAINER_CLAUDE, Route114_Text_ClaudeIntro, Route114_Text_ClaudeDefeat
 # 147 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_ClaudePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_ClaudePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 148 "data/maps/Route114/scripts.pory"
 	end
 # 149 "data/maps/Route114/scripts.pory"
@@ -301,7 +301,7 @@ Route114_EventScript_Nolan::
 # 151 "data/maps/Route114/scripts.pory"
 	trainerbattle_single TRAINER_NOLAN, Route114_Text_NolanIntro, Route114_Text_NolanDefeat
 # 152 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_NolanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_NolanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 153 "data/maps/Route114/scripts.pory"
 	end
 # 154 "data/maps/Route114/scripts.pory"
@@ -351,7 +351,7 @@ Route114_EventScript_Kai::
 # 176 "data/maps/Route114/scripts.pory"
 	trainerbattle_single TRAINER_KAI, Route114_Text_KaiIntro, Route114_Text_KaiDefeat
 # 177 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_KaiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_KaiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 178 "data/maps/Route114/scripts.pory"
 	end
 # 179 "data/maps/Route114/scripts.pory"

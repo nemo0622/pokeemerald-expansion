@@ -57,7 +57,7 @@ FallarborTown_EventScript_Girl::
 # 29 "data/maps/FallarborTown/scripts.pory"
 FallarborTown_EventScript_Gentleman::
 # 30 "data/maps/FallarborTown/scripts.pory"
-	msgbox FallarborTown_Text_HaveYouChallengedFlannery, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_Text_HaveYouChallengedFlannery, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 31 "data/maps/FallarborTown/scripts.pory"
 	end
 # 32 "data/maps/FallarborTown/scripts.pory"

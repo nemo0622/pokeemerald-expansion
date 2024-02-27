@@ -21,7 +21,7 @@ PacifidlogTown_EventScript_Girl::
 	end
 
 PacifidlogTown_EventScript_Fisherman::
-	msgbox PacifidlogTown_Text_SkyPillarTooScary, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_Text_SkyPillarTooScary, MSGBOX_NPC, MUGSHOT_FISHERMAN
 	end
 
 PacifidlogTown_EventScript_TownSign::

@@ -43,7 +43,7 @@ Route106_EventScript_Elliot::
 # 22 "data/maps/Route106/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route106_EventScript_ElliotRematch
 # 23 "data/maps/Route106/scripts.pory"
-	msgbox Route106_Text_ElliotPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route106_Text_ElliotPostBattle, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 # 24 "data/maps/Route106/scripts.pory"
 	release
 # 25 "data/maps/Route106/scripts.pory"
@@ -57,7 +57,7 @@ Route106_EventScript_ElliotRegisterMatchCallAfterBattle::
 # 29 "data/maps/Route106/scripts.pory"
 	waitmovement 0
 # 30 "data/maps/Route106/scripts.pory"
-	msgbox Route106_Text_ElliotRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route106_Text_ElliotRegister, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 # 31 "data/maps/Route106/scripts.pory"
 	register_matchcall TRAINER_ELLIOT_1
 # 32 "data/maps/Route106/scripts.pory"
@@ -71,7 +71,7 @@ Route106_EventScript_ElliotRematch::
 # 36 "data/maps/Route106/scripts.pory"
 	trainerbattle_rematch TRAINER_ELLIOT_1, Route106_Text_ElliotRematchIntro, Route106_Text_ElliotRematchDefeated
 # 37 "data/maps/Route106/scripts.pory"
-	msgbox Route106_Text_ElliotRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route106_Text_ElliotRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 38 "data/maps/Route106/scripts.pory"
 	end
 # 39 "data/maps/Route106/scripts.pory"
@@ -81,7 +81,7 @@ Route106_EventScript_Ned::
 # 41 "data/maps/Route106/scripts.pory"
 	trainerbattle_single TRAINER_NED, Route106_Text_NedIntro, Route106_Text_NedDefeated
 # 42 "data/maps/Route106/scripts.pory"
-	msgbox Route106_Text_NedPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route106_Text_NedPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 43 "data/maps/Route106/scripts.pory"
 	end
 # 44 "data/maps/Route106/scripts.pory"

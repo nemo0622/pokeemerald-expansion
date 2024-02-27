@@ -15,11 +15,11 @@ MossdeepCity_House3_EventScript_SuperRodFisherman::
 # 8 "data/maps/MossdeepCity_House3/scripts.pory"
 	goto_if_set FLAG_RECEIVED_SUPER_ROD, MossdeepCity_House3_EventScript_ReceivedSuperRod
 # 9 "data/maps/MossdeepCity_House3/scripts.pory"
-	msgbox MossdeepCity_House3_Text_YouWantSuperRod, MSGBOX_YESNO
+	msgbox_mugshot MossdeepCity_House3_Text_YouWantSuperRod, MSGBOX_YESNO, MUGSHOT_FISHERMAN
 # 10 "data/maps/MossdeepCity_House3/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MossdeepCity_House3_EventScript_DeclineSuperRod
 # 11 "data/maps/MossdeepCity_House3/scripts.pory"
-	msgbox MossdeepCity_House3_Text_SuperRodIsSuper, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House3_Text_SuperRodIsSuper, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 # 12 "data/maps/MossdeepCity_House3/scripts.pory"
 	giveitem ITEM_SUPER_ROD
 # 13 "data/maps/MossdeepCity_House3/scripts.pory"
@@ -27,7 +27,7 @@ MossdeepCity_House3_EventScript_SuperRodFisherman::
 # 14 "data/maps/MossdeepCity_House3/scripts.pory"
 	setflag FLAG_RECEIVED_SUPER_ROD
 # 15 "data/maps/MossdeepCity_House3/scripts.pory"
-	msgbox MossdeepCity_House3_Text_TryDroppingRodInWater, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House3_Text_TryDroppingRodInWater, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 # 16 "data/maps/MossdeepCity_House3/scripts.pory"
 	release
 # 17 "data/maps/MossdeepCity_House3/scripts.pory"
@@ -37,7 +37,7 @@ MossdeepCity_House3_EventScript_SuperRodFisherman::
 # 19 "data/maps/MossdeepCity_House3/scripts.pory"
 MossdeepCity_House3_EventScript_ReceivedSuperRod::
 # 20 "data/maps/MossdeepCity_House3/scripts.pory"
-	msgbox MossdeepCity_House3_Text_GoAfterSeafloorPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House3_Text_GoAfterSeafloorPokemon, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 # 21 "data/maps/MossdeepCity_House3/scripts.pory"
 	release
 # 22 "data/maps/MossdeepCity_House3/scripts.pory"
@@ -47,7 +47,7 @@ MossdeepCity_House3_EventScript_ReceivedSuperRod::
 # 24 "data/maps/MossdeepCity_House3/scripts.pory"
 MossdeepCity_House3_EventScript_DeclineSuperRod::
 # 25 "data/maps/MossdeepCity_House3/scripts.pory"
-	msgbox MossdeepCity_House3_Text_DontYouLikeToFish, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House3_Text_DontYouLikeToFish, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 # 26 "data/maps/MossdeepCity_House3/scripts.pory"
 	release
 # 27 "data/maps/MossdeepCity_House3/scripts.pory"

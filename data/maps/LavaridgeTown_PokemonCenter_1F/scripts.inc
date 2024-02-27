@@ -59,7 +59,7 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Woman::
 # 30 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 LavaridgeTown_PokemonCenter_1F_EventScript_Gentleman::
 # 31 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
-	msgbox LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 32 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 	end
 # 33 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"

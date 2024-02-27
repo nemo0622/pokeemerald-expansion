@@ -9,7 +9,7 @@ LilycoveCity_DepartmentStore_4F_MapScripts::
 # 5 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 LilycoveCity_DepartmentStore_4F_EventScript_Gentleman::
 # 6 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 7 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	end
 # 8 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"

@@ -165,7 +165,7 @@ RustboroCity_PokemonSchool_EventScript_Teacher::
 # 83 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	call_if_eq VAR_FACING, DIR_WEST, RustboroCity_PokemonSchool_EventScript_TeacherCheckOnStudentsWest
 # 84 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	msgbox RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 85 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	giveitem ITEM_QUICK_CLAW
 # 86 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
@@ -207,7 +207,7 @@ RustboroCity_PokemonSchool_EventScript_TeacherCheckOnStudentsWest::
 # 104 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 RustboroCity_PokemonSchool_EventScript_GaveQuickClaw::
 # 105 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	msgbox RustboroCity_PokemonSchool_Text_ExplainQuickClaw, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_PokemonSchool_Text_ExplainQuickClaw, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 # 106 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	closemessage
 # 107 "data/maps/RustboroCity_PokemonSchool/scripts.pory"

@@ -849,7 +849,7 @@ Route104_Movement_BrineyExitBoat:
 
 Route104_EventScript_Ivan::
 	trainerbattle_single TRAINER_IVAN, Route104_Text_IvanIntro, Route104_Text_IvanDefeat
-	msgbox Route104_Text_IvanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route104_Text_IvanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 	end
 
 Route104_EventScript_Billy::
@@ -996,7 +996,7 @@ Route104_EventScript_Mia::
 
 Route104_EventScript_Darian::
 	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
-	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 	end
 
 Route104_Text_BrineyLivesInSeasideCottage:

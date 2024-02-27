@@ -57,7 +57,7 @@ Route118_EventScript_GoodRodFisherman::
 # 29 "data/maps/Route118/scripts.pory"
 	goto_if_set FLAG_RECEIVED_GOOD_ROD, Route118_EventScript_ReceivedGoodRod
 # 30 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_YouAgreeGoodRodIsGood, MSGBOX_YESNO
+	msgbox_mugshot Route118_Text_YouAgreeGoodRodIsGood, MSGBOX_YESNO, MUGSHOT_FISHERMAN
 # 31 "data/maps/Route118/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, Route118_EventScript_ReceiveGoodRod
 # 32 "data/maps/Route118/scripts.pory"
@@ -69,7 +69,7 @@ Route118_EventScript_GoodRodFisherman::
 # 35 "data/maps/Route118/scripts.pory"
 Route118_EventScript_ReceiveGoodRod::
 # 36 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_IdenticalMindsTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_IdenticalMindsTakeThis, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 # 37 "data/maps/Route118/scripts.pory"
 	giveitem ITEM_GOOD_ROD
 # 38 "data/maps/Route118/scripts.pory"
@@ -77,7 +77,7 @@ Route118_EventScript_ReceiveGoodRod::
 # 39 "data/maps/Route118/scripts.pory"
 	setflag FLAG_RECEIVED_GOOD_ROD
 # 40 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_TryYourLuckFishing, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_TryYourLuckFishing, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 # 41 "data/maps/Route118/scripts.pory"
 	release
 # 42 "data/maps/Route118/scripts.pory"
@@ -87,7 +87,7 @@ Route118_EventScript_ReceiveGoodRod::
 # 44 "data/maps/Route118/scripts.pory"
 Route118_EventScript_DeclineGoodRod::
 # 45 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_DontYouLikeToFish, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_DontYouLikeToFish, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 # 46 "data/maps/Route118/scripts.pory"
 	release
 # 47 "data/maps/Route118/scripts.pory"
@@ -97,7 +97,7 @@ Route118_EventScript_DeclineGoodRod::
 # 49 "data/maps/Route118/scripts.pory"
 Route118_EventScript_ReceivedGoodRod::
 # 50 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_TryCatchingMonWithGoodRod, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_TryCatchingMonWithGoodRod, MSGBOX_DEFAULT, MUGSHOT_FISHERMAN
 # 51 "data/maps/Route118/scripts.pory"
 	release
 # 52 "data/maps/Route118/scripts.pory"
@@ -407,7 +407,7 @@ Route118_EventScript_Barny::
 # 204 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_BARNY, Route118_Text_BarnyIntro, Route118_Text_BarnyDefeat
 # 205 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_BarnyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route118_Text_BarnyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 206 "data/maps/Route118/scripts.pory"
 	end
 # 207 "data/maps/Route118/scripts.pory"
@@ -417,7 +417,7 @@ Route118_EventScript_Wade::
 # 209 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_WADE, Route118_Text_WadeIntro, Route118_Text_WadeDefeat
 # 210 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_WadePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route118_Text_WadePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 211 "data/maps/Route118/scripts.pory"
 	end
 # 212 "data/maps/Route118/scripts.pory"

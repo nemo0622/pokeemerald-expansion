@@ -9,7 +9,7 @@ AbandonedShip_Rooms_1F_MapScripts::
 # 5 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_EventScript_Gentleman::
 # 6 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms_1F_Text_TakingALookAround, MSGBOX_NPC
+	msgbox_mugshot AbandonedShip_Rooms_1F_Text_TakingALookAround, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 7 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	end
 # 8 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"

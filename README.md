@@ -41,6 +41,9 @@
 ### Future Plans:
 - Expanded implementation of NPC Mugshot system
     - Most NPCs will show a mugshot when speaking!
+- Level caps - code already in pokeemerald-expansion!
+    - Just need to set values. Not meant to be for difficulty, just to balance game around EXP all without overpowering team
+    - Also use opportunity to make Mr. Stone give you something other than the EXP share lol oopsies. in data/maps/RustboroCity_DevonCorp_3F/scripts.pory
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you
     - Code works, but need to add actual map locations!

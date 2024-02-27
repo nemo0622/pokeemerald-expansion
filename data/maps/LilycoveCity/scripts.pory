@@ -39,18 +39,18 @@ LilycoveCity_EventScript_BerryGentleman::
 	faceplayer
 	dotimebasedevents
 	goto_if_set FLAG_DAILY_LILYCOVE_RECEIVED_BERRY, LilycoveCity_EventScript_ReceivedBerry
-	msgbox LilycoveCity_Text_BerrySuitsYou, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BerrySuitsYou, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 	random 10
 	addvar VAR_RESULT, FIRST_BERRY_INDEX
 	giveitem VAR_RESULT
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_DAILY_LILYCOVE_RECEIVED_BERRY
-	msgbox LilycoveCity_Text_BecauseYoureTrainer, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_BecauseYoureTrainer, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 	release
 	end
 
 LilycoveCity_EventScript_ReceivedBerry::
-	msgbox LilycoveCity_Text_PokeblocksSuitPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_PokeblocksSuitPokemon, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 	release
 	end
 

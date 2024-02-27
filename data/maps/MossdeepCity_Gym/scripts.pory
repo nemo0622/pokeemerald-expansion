@@ -249,7 +249,7 @@ MossdeepCity_Gym_EventScript_Sylvia::
 
 MossdeepCity_Gym_EventScript_Nate::
 	trainerbattle_single TRAINER_NATE, MossdeepCity_Gym_Text_NateIntro, MossdeepCity_Gym_Text_NateDefeat
-	msgbox MossdeepCity_Gym_Text_NatePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_NatePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GENTLEMAN
 	end
 
 MossdeepCity_Gym_EventScript_Macey::
@@ -259,7 +259,7 @@ MossdeepCity_Gym_EventScript_Macey::
 
 MossdeepCity_Gym_EventScript_Clifford::
 	trainerbattle_single TRAINER_CLIFFORD, MossdeepCity_Gym_Text_CliffordIntro, MossdeepCity_Gym_Text_CliffordDefeat
-	msgbox MossdeepCity_Gym_Text_CliffordPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_CliffordPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_GENTLEMAN
 	end
 
 MossdeepCity_Gym_EventScript_Nicholas::

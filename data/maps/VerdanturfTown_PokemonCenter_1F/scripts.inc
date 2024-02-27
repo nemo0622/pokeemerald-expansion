@@ -43,7 +43,7 @@ VerdanturfTown_PokemonCenter_1F_EventScript_Nurse::
 # 22 "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.pory"
 VerdanturfTown_PokemonCenter_1F_EventScript_Gentleman::
 # 23 "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.pory"
-	msgbox VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 24 "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.pory"
 	end
 # 25 "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.pory"

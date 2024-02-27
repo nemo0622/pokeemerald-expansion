@@ -1701,7 +1701,7 @@ Route104_EventScript_Ivan::
 # 851 "data/maps/Route104/scripts.pory"
 	trainerbattle_single TRAINER_IVAN, Route104_Text_IvanIntro, Route104_Text_IvanDefeat
 # 852 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_IvanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route104_Text_IvanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 853 "data/maps/Route104/scripts.pory"
 	end
 # 854 "data/maps/Route104/scripts.pory"
@@ -1995,7 +1995,7 @@ Route104_EventScript_Darian::
 # 998 "data/maps/Route104/scripts.pory"
 	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
 # 999 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 1000 "data/maps/Route104/scripts.pory"
 	end
 # 1001 "data/maps/Route104/scripts.pory"

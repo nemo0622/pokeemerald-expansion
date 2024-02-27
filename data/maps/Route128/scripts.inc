@@ -469,7 +469,7 @@ Route128_EventScript_Wayne::
 # 235 "data/maps/Route128/scripts.pory"
 	trainerbattle_single TRAINER_WAYNE, Route128_Text_WayneIntro, Route128_Text_WayneDefeat
 # 236 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_WaynePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route128_Text_WaynePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_FISHERMAN
 # 237 "data/maps/Route128/scripts.pory"
 	end
 # 238 "data/maps/Route128/scripts.pory"

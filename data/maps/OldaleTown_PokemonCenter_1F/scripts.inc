@@ -43,7 +43,7 @@ OldaleTown_PokemonCenter_1F_EventScript_Nurse::
 # 22 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 OldaleTown_PokemonCenter_1F_EventScript_Gentleman::
 # 23 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
-	msgbox OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC, MSGBOX_NPC, MUGSHOT_GENTLEMAN
 # 24 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	end
 # 25 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"

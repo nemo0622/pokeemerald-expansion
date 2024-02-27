@@ -132,12 +132,12 @@ MossdeepCity_SpaceCenter_2F_EventScript_Gentleman::
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_GentlemanNormal::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 	release
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_GentlemanMagma::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis, MSGBOX_DEFAULT, MUGSHOT_GENTLEMAN
 	release
 	end
 
