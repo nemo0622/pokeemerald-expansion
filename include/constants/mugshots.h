@@ -46,5 +46,7 @@
 #define MUGSHOT_GIRL1  41
 #define MUGSHOT_GIRL2  42
 #define MUGSHOT_GIRL3  43
+#define MUGSHOT_HEXMANIAC  44
+#define MUGSHOT_HIKER  45
 
 #endif

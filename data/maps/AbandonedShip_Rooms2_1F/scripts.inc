@@ -97,7 +97,7 @@ AbandonedShip_Rooms2_1F_EventScript_Garrison::
 # 49 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	trainerbattle_single TRAINER_GARRISON, AbandonedShip_Rooms2_1F_Text_GarrisonIntro, AbandonedShip_Rooms2_1F_Text_GarrisonDefeat
 # 50 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 51 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	end
 # 52 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"

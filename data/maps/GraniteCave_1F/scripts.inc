@@ -15,13 +15,13 @@ GraniteCave_1F_EventScript_Hiker::
 # 8 "data/maps/GraniteCave_1F/scripts.pory"
 	goto_if_set FLAG_RECEIVED_HM_FLASH, GraniteCave_1F_EventScript_ReceivedFlash
 # 9 "data/maps/GraniteCave_1F/scripts.pory"
-	msgbox GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 10 "data/maps/GraniteCave_1F/scripts.pory"
 	giveitem ITEM_HM_FLASH
 # 11 "data/maps/GraniteCave_1F/scripts.pory"
 	setflag FLAG_RECEIVED_HM_FLASH
 # 12 "data/maps/GraniteCave_1F/scripts.pory"
-	msgbox GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 13 "data/maps/GraniteCave_1F/scripts.pory"
 	release
 # 14 "data/maps/GraniteCave_1F/scripts.pory"
@@ -31,7 +31,7 @@ GraniteCave_1F_EventScript_Hiker::
 # 16 "data/maps/GraniteCave_1F/scripts.pory"
 GraniteCave_1F_EventScript_ReceivedFlash::
 # 17 "data/maps/GraniteCave_1F/scripts.pory"
-	msgbox GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT
+	msgbox_mugshot GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 18 "data/maps/GraniteCave_1F/scripts.pory"
 	release
 # 19 "data/maps/GraniteCave_1F/scripts.pory"

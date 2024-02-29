@@ -73,7 +73,7 @@ MtPyre_2F_EventScript_Leah::
 # 37 "data/maps/MtPyre_2F/scripts.pory"
 	trainerbattle_single TRAINER_LEAH, MtPyre_2F_Text_LeahIntro, MtPyre_2F_Text_LeahDefeat
 # 38 "data/maps/MtPyre_2F/scripts.pory"
-	msgbox MtPyre_2F_Text_LeahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_2F_Text_LeahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 # 39 "data/maps/MtPyre_2F/scripts.pory"
 	end
 # 40 "data/maps/MtPyre_2F/scripts.pory"

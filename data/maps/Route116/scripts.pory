@@ -283,7 +283,7 @@ Route116_EventScript_RematchJerry::
 
 Route116_EventScript_Clark::
 	trainerbattle_single TRAINER_CLARK, Route116_Text_ClarkIntro, Route116_Text_ClarkDefeat
-	msgbox Route116_Text_ClarkPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_ClarkPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 	end
 
 Route116_EventScript_Janice::
@@ -344,7 +344,7 @@ Route116_EventScript_Dawson::
 
 Route116_EventScript_Devan::
 	trainerbattle_single TRAINER_DEVAN, Route116_Text_DevanIntro, Route116_Text_DevanDefeat
-	msgbox Route116_Text_DevanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_DevanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 	end
 
 Route116_EventScript_Johnson::

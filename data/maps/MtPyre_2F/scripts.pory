@@ -35,7 +35,7 @@ MtPyre_2F_EventScript_Dez::
 
 MtPyre_2F_EventScript_Leah::
 	trainerbattle_single TRAINER_LEAH, MtPyre_2F_Text_LeahIntro, MtPyre_2F_Text_LeahDefeat
-	msgbox MtPyre_2F_Text_LeahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_2F_Text_LeahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 	end
 
 MtPyre_2F_EventScript_Zander::

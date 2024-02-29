@@ -97,7 +97,7 @@ RustboroCity_House1_EventScript_TradeCompleted::
 # 49 "data/maps/RustboroCity_House1/scripts.pory"
 RustboroCity_House1_EventScript_Hiker::
 # 50 "data/maps/RustboroCity_House1/scripts.pory"
-	msgbox RustboroCity_House1_Text_AllSortsOfPlaces, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_House1_Text_AllSortsOfPlaces, MSGBOX_NPC, MUGSHOT_HIKER
 # 51 "data/maps/RustboroCity_House1/scripts.pory"
 	end
 # 52 "data/maps/RustboroCity_House1/scripts.pory"

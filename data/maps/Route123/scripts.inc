@@ -227,7 +227,7 @@ Route123_EventScript_Kindra::
 # 114 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_KINDRA, Route123_Text_KindraIntro, Route123_Text_KindraDefeat
 # 115 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_KindraPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_KindraPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 # 116 "data/maps/Route123/scripts.pory"
 	end
 # 117 "data/maps/Route123/scripts.pory"

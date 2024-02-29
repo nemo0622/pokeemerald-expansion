@@ -113,7 +113,7 @@ RustboroCity_Gym_EventScript_Marc::
 # 57 "data/maps/RustboroCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_MARC, RustboroCity_Gym_Text_MarcIntro, RustboroCity_Gym_Text_MarcDefeat
 # 58 "data/maps/RustboroCity_Gym/scripts.pory"
-	msgbox RustboroCity_Gym_Text_MarcPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot RustboroCity_Gym_Text_MarcPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 59 "data/maps/RustboroCity_Gym/scripts.pory"
 	end
 # 60 "data/maps/RustboroCity_Gym/scripts.pory"

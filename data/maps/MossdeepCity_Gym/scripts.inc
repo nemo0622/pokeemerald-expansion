@@ -491,7 +491,7 @@ MossdeepCity_Gym_EventScript_Sylvia::
 # 246 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_SYLVIA, MossdeepCity_Gym_Text_SylviaIntro, MossdeepCity_Gym_Text_SylviaDefeat
 # 247 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_SylviaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_SylviaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 # 248 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 249 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -541,7 +541,7 @@ MossdeepCity_Gym_EventScript_Kathleen::
 # 271 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_KATHLEEN, MossdeepCity_Gym_Text_KathleenIntro, MossdeepCity_Gym_Text_KathleenDefeat
 # 272 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_KathleenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_KathleenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 # 273 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 274 "data/maps/MossdeepCity_Gym/scripts.pory"

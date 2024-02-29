@@ -15,7 +15,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_SeedotBrother::
 # 8 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 	faceplayer
 # 9 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 10 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 	special ChoosePartyMon
 # 11 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
@@ -41,7 +41,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_SeedotBrother::
 # 21 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowSeedot::
 # 22 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 23 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 	release
 # 24 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
@@ -51,7 +51,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowSeedot::
 # 26 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 SootopolisCity_LotadAndSeedotHouse_EventScript_NotSeedot::
 # 27 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 28 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 	release
 # 29 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
@@ -61,7 +61,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_NotSeedot::
 # 31 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 SootopolisCity_LotadAndSeedotHouse_EventScript_SmallSeedot::
 # 32 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 33 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 	release
 # 34 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
@@ -71,7 +71,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_SmallSeedot::
 # 36 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 SootopolisCity_LotadAndSeedotHouse_EventScript_BigSeedot::
 # 37 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 38 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 	giveitem ITEM_ELIXIR
 # 39 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
@@ -87,7 +87,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_BigSeedot::
 # 44 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 SootopolisCity_LotadAndSeedotHouse_EventScript_NoRoomForElixir1::
 # 45 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 46 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"
 	release
 # 47 "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.pory"

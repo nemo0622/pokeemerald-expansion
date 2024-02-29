@@ -15,7 +15,7 @@ MtPyre_6F_EventScript_Valerie::
 # 8 "data/maps/MtPyre_6F/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, MtPyre_6F_EventScript_RematchValerie
 # 9 "data/maps/MtPyre_6F/scripts.pory"
-	msgbox MtPyre_6F_Text_ValeriePostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_6F_Text_ValeriePostBattle, MSGBOX_DEFAULT, MUGSHOT_HEXMANIAC
 # 10 "data/maps/MtPyre_6F/scripts.pory"
 	release
 # 11 "data/maps/MtPyre_6F/scripts.pory"
@@ -29,7 +29,7 @@ MtPyre_6F_EventScript_RegisterValerie::
 # 15 "data/maps/MtPyre_6F/scripts.pory"
 	waitmovement 0
 # 16 "data/maps/MtPyre_6F/scripts.pory"
-	msgbox MtPyre_6F_Text_ValerieRegister, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_6F_Text_ValerieRegister, MSGBOX_DEFAULT, MUGSHOT_HEXMANIAC
 # 17 "data/maps/MtPyre_6F/scripts.pory"
 	register_matchcall TRAINER_VALERIE_1
 # 18 "data/maps/MtPyre_6F/scripts.pory"
@@ -43,7 +43,7 @@ MtPyre_6F_EventScript_RematchValerie::
 # 22 "data/maps/MtPyre_6F/scripts.pory"
 	trainerbattle_rematch TRAINER_VALERIE_1, MtPyre_6F_Text_ValerieRematchIntro, MtPyre_6F_Text_ValerieRematchDefeat
 # 23 "data/maps/MtPyre_6F/scripts.pory"
-	msgbox MtPyre_6F_Text_ValeriePostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_6F_Text_ValeriePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 # 24 "data/maps/MtPyre_6F/scripts.pory"
 	end
 # 25 "data/maps/MtPyre_6F/scripts.pory"

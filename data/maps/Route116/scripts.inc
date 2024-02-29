@@ -569,7 +569,7 @@ Route116_EventScript_Clark::
 # 285 "data/maps/Route116/scripts.pory"
 	trainerbattle_single TRAINER_CLARK, Route116_Text_ClarkIntro, Route116_Text_ClarkDefeat
 # 286 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_ClarkPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_ClarkPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 287 "data/maps/Route116/scripts.pory"
 	end
 # 288 "data/maps/Route116/scripts.pory"
@@ -691,7 +691,7 @@ Route116_EventScript_Devan::
 # 346 "data/maps/Route116/scripts.pory"
 	trainerbattle_single TRAINER_DEVAN, Route116_Text_DevanIntro, Route116_Text_DevanDefeat
 # 347 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_DevanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_DevanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 348 "data/maps/Route116/scripts.pory"
 	end
 # 349 "data/maps/Route116/scripts.pory"

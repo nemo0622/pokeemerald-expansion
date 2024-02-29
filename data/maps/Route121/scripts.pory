@@ -98,7 +98,7 @@ Route121_EventScript_RematchWalter::
 
 Route121_EventScript_Tammy::
 	trainerbattle_single TRAINER_TAMMY, Route121_Text_TammyIntro, Route121_Text_TammyDefeat
-	msgbox Route121_Text_TammyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_TammyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 	end
 
 Route121_EventScript_Kate::

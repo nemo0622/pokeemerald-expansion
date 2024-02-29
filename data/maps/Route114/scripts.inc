@@ -167,7 +167,7 @@ Route114_EventScript_Lenny::
 # 84 "data/maps/Route114/scripts.pory"
 	trainerbattle_single TRAINER_LENNY, Route114_Text_LennyIntro, Route114_Text_LennyDefeat
 # 85 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_LennyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_LennyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 86 "data/maps/Route114/scripts.pory"
 	end
 # 87 "data/maps/Route114/scripts.pory"
@@ -177,7 +177,7 @@ Route114_EventScript_Lucas::
 # 89 "data/maps/Route114/scripts.pory"
 	trainerbattle_single TRAINER_LUCAS_1, Route114_Text_LucasIntro, Route114_Text_LucasDefeat
 # 90 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_LucasPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_LucasPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 91 "data/maps/Route114/scripts.pory"
 	end
 # 92 "data/maps/Route114/scripts.pory"

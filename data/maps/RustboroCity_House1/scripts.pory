@@ -47,7 +47,7 @@ RustboroCity_House1_EventScript_TradeCompleted::
 	end
 
 RustboroCity_House1_EventScript_Hiker::
-	msgbox RustboroCity_House1_Text_AllSortsOfPlaces, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_House1_Text_AllSortsOfPlaces, MSGBOX_NPC, MUGSHOT_HIKER
 	end
 
 RustboroCity_House1_Text_IllTradeIfYouWant:

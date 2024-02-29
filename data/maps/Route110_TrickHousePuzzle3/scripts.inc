@@ -601,7 +601,7 @@ Route110_TrickHousePuzzle3_EventScript_Alan::
 # 301 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	trainerbattle_single TRAINER_ALAN, Route110_TrickHousePuzzle3_Text_AlanIntro, Route110_TrickHousePuzzle3_Text_AlanDefeat
 # 302 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-	msgbox Route110_TrickHousePuzzle3_Text_AlanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle3_Text_AlanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 303 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	end
 # 304 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"

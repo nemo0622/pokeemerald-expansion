@@ -244,7 +244,7 @@ MossdeepCity_Gym_EventScript_Maura::
 
 MossdeepCity_Gym_EventScript_Sylvia::
 	trainerbattle_single TRAINER_SYLVIA, MossdeepCity_Gym_Text_SylviaIntro, MossdeepCity_Gym_Text_SylviaDefeat
-	msgbox MossdeepCity_Gym_Text_SylviaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_SylviaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 	end
 
 MossdeepCity_Gym_EventScript_Nate::
@@ -269,7 +269,7 @@ MossdeepCity_Gym_EventScript_Nicholas::
 
 MossdeepCity_Gym_EventScript_Kathleen::
 	trainerbattle_single TRAINER_KATHLEEN, MossdeepCity_Gym_Text_KathleenIntro, MossdeepCity_Gym_Text_KathleenDefeat
-	msgbox MossdeepCity_Gym_Text_KathleenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_KathleenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 	end
 
 MossdeepCity_Gym_EventScript_GymGuide::

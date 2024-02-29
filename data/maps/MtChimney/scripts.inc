@@ -1039,7 +1039,7 @@ MtChimney_EventScript_Sawyer::
 # 520 "data/maps/MtChimney/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, MtChimney_EventScript_SawyerRematch
 # 521 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_SawyerPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MtChimney_Text_SawyerPostBattle, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 522 "data/maps/MtChimney/scripts.pory"
 	release
 # 523 "data/maps/MtChimney/scripts.pory"
@@ -1053,7 +1053,7 @@ MtChimney_EventScript_SawyerDefeated::
 # 527 "data/maps/MtChimney/scripts.pory"
 	waitmovement 0
 # 528 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_SawyerRegister, MSGBOX_DEFAULT
+	msgbox_mugshot MtChimney_Text_SawyerRegister, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 529 "data/maps/MtChimney/scripts.pory"
 	register_matchcall TRAINER_SAWYER_1
 # 530 "data/maps/MtChimney/scripts.pory"
@@ -1067,7 +1067,7 @@ MtChimney_EventScript_SawyerRematch::
 # 534 "data/maps/MtChimney/scripts.pory"
 	trainerbattle_rematch TRAINER_SAWYER_1, MtChimney_Text_SawyerRematchIntro, MtChimney_Text_SawyerRematchDefeat
 # 535 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_SawyerPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtChimney_Text_SawyerPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 536 "data/maps/MtChimney/scripts.pory"
 	end
 # 537 "data/maps/MtChimney/scripts.pory"

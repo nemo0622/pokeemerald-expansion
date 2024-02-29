@@ -407,22 +407,22 @@ Route111_EventScript_Hiker::
 	goto_if_eq VAR_MIRAGE_TOWER_STATE, 3, Route111_EventScript_HikerMirageTowerGone
 	goto_if_eq VAR_MIRAGE_TOWER_STATE, 2, Route111_EventScript_HikerMirageTowerDisintegrated
 	goto_if_set FLAG_MIRAGE_TOWER_VISIBLE, Route111_EventScript_HikerMirageTowerVisible
-	msgbox Route111_Text_ShouldBeMirageTowerAroundHere, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_ShouldBeMirageTowerAroundHere, MSGBOX_DEFAULT, MUGSHOT_HIKER
 	release
 	end
 
 Route111_EventScript_HikerMirageTowerGone::
-	msgbox Route111_Text_MirageTowerHasntBeenSeenSince, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_MirageTowerHasntBeenSeenSince, MSGBOX_DEFAULT, MUGSHOT_HIKER
 	release
 	end
 
 Route111_EventScript_HikerMirageTowerDisintegrated::
-	msgbox Route111_Text_ThatWasShockingSandRainedDown, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_ThatWasShockingSandRainedDown, MSGBOX_DEFAULT, MUGSHOT_HIKER
 	release
 	end
 
 Route111_EventScript_HikerMirageTowerVisible::
-	msgbox Route111_Text_MirageTowerClearlyVisible, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_MirageTowerClearlyVisible, MSGBOX_DEFAULT, MUGSHOT_HIKER
 	release
 	end
 
@@ -461,21 +461,21 @@ Route111_EventScript_Dusty::
 	trainerbattle_single TRAINER_DUSTY_1, Route111_Text_DustyIntro, Route111_Text_DustyDefeat, Route111_EventScript_RegisterDusty
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchDusty
-	msgbox Route111_Text_DustyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_DustyPostBattle, MSGBOX_DEFAULT, MUGSHOT_HIKER
 	release
 	end
 
 Route111_EventScript_RegisterDusty::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route111_Text_DustyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_DustyRegister, MSGBOX_DEFAULT, MUGSHOT_HIKER
 	register_matchcall TRAINER_DUSTY_1
 	release
 	end
 
 Route111_EventScript_RematchDusty::
 	trainerbattle_rematch TRAINER_DUSTY_1, Route111_Text_DustyRematchIntro, Route111_Text_DustyRematchDefeat
-	msgbox Route111_Text_DustyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_DustyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 	end
 
 Route111_EventScript_Travis::
@@ -562,7 +562,7 @@ Route111_EventScript_Celia::
 
 Route111_EventScript_Bryan::
 	trainerbattle_single TRAINER_BRYAN, Route111_Text_BryanIntro, Route111_Text_BryanDefeat
-	msgbox Route111_Text_BryanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BryanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 	end
 
 Route111_EventScript_Branden::

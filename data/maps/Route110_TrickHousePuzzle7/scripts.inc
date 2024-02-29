@@ -587,7 +587,7 @@ Route110_TrickHousePuzzle7_EventScript_Patricia::
 # 294 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	trainerbattle_single TRAINER_PATRICIA, Route110_TrickHousePuzzle7_Text_PatriciaIntro, Route110_TrickHousePuzzle7_Text_PatriciaDefeat
 # 295 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
-	msgbox Route110_TrickHousePuzzle7_Text_PatriciaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle7_Text_PatriciaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 # 296 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	end
 # 297 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"

@@ -845,7 +845,7 @@ RusturfTunnel_EventScript_Mike::
 # 423 "data/maps/RusturfTunnel/scripts.pory"
 	trainerbattle_single TRAINER_MIKE_2, RusturfTunnel_Text_MikeIntro, RusturfTunnel_Text_MikeDefeat
 # 424 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_Text_MikePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot RusturfTunnel_Text_MikePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 425 "data/maps/RusturfTunnel/scripts.pory"
 	end
 # 426 "data/maps/RusturfTunnel/scripts.pory"

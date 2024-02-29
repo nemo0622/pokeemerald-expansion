@@ -197,7 +197,7 @@ JaggedPass_EventScript_Eric::
 # 99 "data/maps/JaggedPass/scripts.pory"
 	trainerbattle_single TRAINER_ERIC, JaggedPass_Text_EricIntro, JaggedPass_Text_EricDefeat
 # 100 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_EricPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot JaggedPass_Text_EricPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 101 "data/maps/JaggedPass/scripts.pory"
 	end
 # 102 "data/maps/JaggedPass/scripts.pory"

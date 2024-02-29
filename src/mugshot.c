@@ -109,6 +109,10 @@ static const u32 sMugshotImg_Girl2[] = INCBIN_U32("graphics/mugshots/pics/mugsho
 static const u16 sMugshotPal_Girl2[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_girl2.gbapal");
 static const u32 sMugshotImg_Girl3[] = INCBIN_U32("graphics/mugshots/pics/mugshot_girl3.4bpp.lz");
 static const u16 sMugshotPal_Girl3[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_girl3.gbapal");
+static const u32 sMugshotImg_HexManiac[] = INCBIN_U32("graphics/mugshots/pics/mugshot_hexmaniac.4bpp.lz");
+static const u16 sMugshotPal_HexManiac[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_hexmaniac.gbapal");
+static const u32 sMugshotImg_Hiker[] = INCBIN_U32("graphics/mugshots/pics/mugshot_hiker.4bpp.lz");
+static const u16 sMugshotPal_Hiker[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_hiker.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -156,6 +160,8 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_GIRL1] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Girl1, .palette = sMugshotPal_Girl1},
     [MUGSHOT_GIRL2] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Girl2, .palette = sMugshotPal_Girl2},
     [MUGSHOT_GIRL3] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Girl3, .palette = sMugshotPal_Girl3},
+    [MUGSHOT_HEXMANIAC] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_HexManiac, .palette = sMugshotPal_HexManiac},
+    [MUGSHOT_HIKER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Hiker, .palette = sMugshotPal_Hiker},
 };
 
 

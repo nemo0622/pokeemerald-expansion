@@ -125,7 +125,7 @@ Route112_EventScript_RouteSignLavaridge::
 # 63 "data/maps/Route112/scripts.pory"
 Route112_EventScript_Hiker::
 # 64 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_NotEasyToGetBackToLavaridge, MSGBOX_NPC
+	msgbox_mugshot Route112_Text_NotEasyToGetBackToLavaridge, MSGBOX_NPC, MUGSHOT_HIKER
 # 65 "data/maps/Route112/scripts.pory"
 	end
 # 66 "data/maps/Route112/scripts.pory"
@@ -135,7 +135,7 @@ Route112_EventScript_Brice::
 # 68 "data/maps/Route112/scripts.pory"
 	trainerbattle_single TRAINER_BRICE, Route112_Text_BriceIntro, Route112_Text_BriceDefeat
 # 69 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_BricePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route112_Text_BricePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 70 "data/maps/Route112/scripts.pory"
 	end
 # 71 "data/maps/Route112/scripts.pory"
@@ -149,7 +149,7 @@ Route112_EventScript_Trent::
 # 75 "data/maps/Route112/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route112_EventScript_RematchTrent
 # 76 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_TrentPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route112_Text_TrentPostBattle, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 77 "data/maps/Route112/scripts.pory"
 	release
 # 78 "data/maps/Route112/scripts.pory"
@@ -163,7 +163,7 @@ Route112_EventScript_RegisterTrent::
 # 82 "data/maps/Route112/scripts.pory"
 	waitmovement 0
 # 83 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_TrentRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route112_Text_TrentRegister, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 84 "data/maps/Route112/scripts.pory"
 	register_matchcall TRAINER_TRENT_1
 # 85 "data/maps/Route112/scripts.pory"
@@ -177,7 +177,7 @@ Route112_EventScript_RematchTrent::
 # 89 "data/maps/Route112/scripts.pory"
 	trainerbattle_rematch TRAINER_TRENT_1, Route112_Text_TrentRematchIntro, Route112_Text_TrentRematchDefeat
 # 90 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_TrentRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route112_Text_TrentRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 91 "data/maps/Route112/scripts.pory"
 	end
 # 92 "data/maps/Route112/scripts.pory"

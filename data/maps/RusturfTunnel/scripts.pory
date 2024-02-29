@@ -421,7 +421,7 @@ RusturfTunnel_Movement_PeekoExit:
 
 RusturfTunnel_EventScript_Mike::
 	trainerbattle_single TRAINER_MIKE_2, RusturfTunnel_Text_MikeIntro, RusturfTunnel_Text_MikeDefeat
-	msgbox RusturfTunnel_Text_MikePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot RusturfTunnel_Text_MikePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 	end
 
 RusturfTunnel_Text_ComeAndGetSome:

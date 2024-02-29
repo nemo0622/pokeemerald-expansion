@@ -817,7 +817,7 @@ Route111_EventScript_Hiker::
 # 409 "data/maps/Route111/scripts.pory"
 	goto_if_set FLAG_MIRAGE_TOWER_VISIBLE, Route111_EventScript_HikerMirageTowerVisible
 # 410 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_ShouldBeMirageTowerAroundHere, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_ShouldBeMirageTowerAroundHere, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 411 "data/maps/Route111/scripts.pory"
 	release
 # 412 "data/maps/Route111/scripts.pory"
@@ -827,7 +827,7 @@ Route111_EventScript_Hiker::
 # 414 "data/maps/Route111/scripts.pory"
 Route111_EventScript_HikerMirageTowerGone::
 # 415 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_MirageTowerHasntBeenSeenSince, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_MirageTowerHasntBeenSeenSince, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 416 "data/maps/Route111/scripts.pory"
 	release
 # 417 "data/maps/Route111/scripts.pory"
@@ -837,7 +837,7 @@ Route111_EventScript_HikerMirageTowerGone::
 # 419 "data/maps/Route111/scripts.pory"
 Route111_EventScript_HikerMirageTowerDisintegrated::
 # 420 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_ThatWasShockingSandRainedDown, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_ThatWasShockingSandRainedDown, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 421 "data/maps/Route111/scripts.pory"
 	release
 # 422 "data/maps/Route111/scripts.pory"
@@ -847,7 +847,7 @@ Route111_EventScript_HikerMirageTowerDisintegrated::
 # 424 "data/maps/Route111/scripts.pory"
 Route111_EventScript_HikerMirageTowerVisible::
 # 425 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_MirageTowerClearlyVisible, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_MirageTowerClearlyVisible, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 426 "data/maps/Route111/scripts.pory"
 	release
 # 427 "data/maps/Route111/scripts.pory"
@@ -925,7 +925,7 @@ Route111_EventScript_Dusty::
 # 463 "data/maps/Route111/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchDusty
 # 464 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_DustyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_DustyPostBattle, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 465 "data/maps/Route111/scripts.pory"
 	release
 # 466 "data/maps/Route111/scripts.pory"
@@ -939,7 +939,7 @@ Route111_EventScript_RegisterDusty::
 # 470 "data/maps/Route111/scripts.pory"
 	waitmovement 0
 # 471 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_DustyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_DustyRegister, MSGBOX_DEFAULT, MUGSHOT_HIKER
 # 472 "data/maps/Route111/scripts.pory"
 	register_matchcall TRAINER_DUSTY_1
 # 473 "data/maps/Route111/scripts.pory"
@@ -953,7 +953,7 @@ Route111_EventScript_RematchDusty::
 # 477 "data/maps/Route111/scripts.pory"
 	trainerbattle_rematch TRAINER_DUSTY_1, Route111_Text_DustyRematchIntro, Route111_Text_DustyRematchDefeat
 # 478 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_DustyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_DustyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 479 "data/maps/Route111/scripts.pory"
 	end
 # 480 "data/maps/Route111/scripts.pory"
@@ -1127,7 +1127,7 @@ Route111_EventScript_Bryan::
 # 564 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_BRYAN, Route111_Text_BryanIntro, Route111_Text_BryanDefeat
 # 565 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_BryanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BryanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
 # 566 "data/maps/Route111/scripts.pory"
 	end
 # 567 "data/maps/Route111/scripts.pory"

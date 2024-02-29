@@ -459,7 +459,7 @@ FallarborTown_BattleTentLobby_Movement_PlayerEnterDoor:
 # 230 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"
 FallarborTown_BattleTentLobby_EventScript_Hiker::
 # 231 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"
-	msgbox FallarborTown_BattleTentLobby_Text_CameToCampOut, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_BattleTentLobby_Text_CameToCampOut, MSGBOX_NPC, MUGSHOT_HIKER
 # 232 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"
 	end
 # 233 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"

@@ -199,7 +199,7 @@ Route121_EventScript_Tammy::
 # 100 "data/maps/Route121/scripts.pory"
 	trainerbattle_single TRAINER_TAMMY, Route121_Text_TammyIntro, Route121_Text_TammyDefeat
 # 101 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_TammyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_TammyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HEXMANIAC
 # 102 "data/maps/Route121/scripts.pory"
 	end
 # 103 "data/maps/Route121/scripts.pory"

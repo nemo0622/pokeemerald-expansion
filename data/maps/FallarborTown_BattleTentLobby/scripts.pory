@@ -228,7 +228,7 @@ FallarborTown_BattleTentLobby_Movement_PlayerEnterDoor:
 	step_end
 
 FallarborTown_BattleTentLobby_EventScript_Hiker::
-	msgbox FallarborTown_BattleTentLobby_Text_CameToCampOut, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_BattleTentLobby_Text_CameToCampOut, MSGBOX_NPC, MUGSHOT_HIKER
 	end
 
 FallarborTown_BattleTentLobby_EventScript_LittleBoy::
