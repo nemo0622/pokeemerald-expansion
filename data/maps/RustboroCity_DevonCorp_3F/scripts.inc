@@ -63,7 +63,7 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 # 32 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	lockall
 # 33 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 34 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 35 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -77,7 +77,7 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 # 39 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	waitmovement 0
 # 40 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 41 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 42 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -89,7 +89,7 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 # 45 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	waitmovement 0
 # 46 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_PleaseGoAhead, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_PleaseGoAhead, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 47 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 48 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -373,7 +373,7 @@ RustboroCity_DevonCorp_3F_EventScript_Employee::
 # 187 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	goto_if_set FLAG_RECEIVED_REPEAT_BALL, RustboroCity_DevonCorp_3F_EventScript_EmployeeBalls
 # 188 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 189 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	release
 # 190 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -383,7 +383,7 @@ RustboroCity_DevonCorp_3F_EventScript_Employee::
 # 192 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 RustboroCity_DevonCorp_3F_EventScript_EmployeeBalls::
 # 193 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 194 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	release
 # 195 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"

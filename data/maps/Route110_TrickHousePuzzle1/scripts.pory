@@ -24,7 +24,7 @@ Route110_TrickHousePuzzle1_EventScript_FoundScroll::
 
 Route110_TrickHousePuzzle1_EventScript_Sally::
 	trainerbattle_single TRAINER_SALLY, Route110_TrickHousePuzzle1_Text_SallyIntro, Route110_TrickHousePuzzle1_Text_SallyDefeat
-	msgbox Route110_TrickHousePuzzle1_Text_SallyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle1_Text_SallyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 	end
 
 Route110_TrickHousePuzzle1_EventScript_Eddie::
@@ -34,7 +34,7 @@ Route110_TrickHousePuzzle1_EventScript_Eddie::
 
 Route110_TrickHousePuzzle1_EventScript_Robin::
 	trainerbattle_single TRAINER_ROBIN, Route110_TrickHousePuzzle1_Text_RobinIntro, Route110_TrickHousePuzzle1_Text_RobinDefeat
-	msgbox Route110_TrickHousePuzzle1_Text_RobinPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle1_Text_RobinPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 	end
 
 Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened::

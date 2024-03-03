@@ -4,7 +4,7 @@ VictoryRoad_B1F_MapScripts::
 
 VictoryRoad_B1F_EventScript_Samuel::
 	trainerbattle_single TRAINER_SAMUEL, VictoryRoad_B1F_Text_SamuelIntro, VictoryRoad_B1F_Text_SamuelDefeat
-	msgbox VictoryRoad_B1F_Text_SamuelPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B1F_Text_SamuelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 	end
 
 VictoryRoad_B1F_EventScript_Shannon::
@@ -19,7 +19,7 @@ VictoryRoad_B1F_EventScript_Michelle::
 
 VictoryRoad_B1F_EventScript_Mitchell::
 	trainerbattle_single TRAINER_MITCHELL, VictoryRoad_B1F_Text_MitchellIntro, VictoryRoad_B1F_Text_MitchellDefeat
-	msgbox VictoryRoad_B1F_Text_MitchellPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B1F_Text_MitchellPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 	end
 
 VictoryRoad_B1F_EventScript_Halle::

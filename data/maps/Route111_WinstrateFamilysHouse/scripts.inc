@@ -25,7 +25,7 @@ Route111_WinstrateFamilysHouse_EventScript_Victor::
 # 13 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	setvar VAR_0x8008, LOCALID_VICTOR
 # 14 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	msgbox Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 15 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 # 16 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
@@ -75,7 +75,7 @@ Route111_WinstrateFamilysHouse_EventScript_Vivi::
 # 38 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	setvar VAR_0x8008, LOCALID_VIVI
 # 39 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	msgbox Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 40 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 # 41 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"

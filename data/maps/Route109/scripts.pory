@@ -314,7 +314,7 @@ Route109_EventScript_ChoseNotToSail::
 	end
 
 Route109_EventScript_SeashoreHouseGirl::
-	msgbox Route109_Text_ChillAtMyPapasSpot, MSGBOX_NPC
+	msgbox_mugshot Route109_Text_ChillAtMyPapasSpot, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 	end
 
 Route109_EventScript_SandCastleBoy::

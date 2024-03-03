@@ -631,7 +631,7 @@ Route109_EventScript_ChoseNotToSail::
 # 316 "data/maps/Route109/scripts.pory"
 Route109_EventScript_SeashoreHouseGirl::
 # 317 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_ChillAtMyPapasSpot, MSGBOX_NPC
+	msgbox_mugshot Route109_Text_ChillAtMyPapasSpot, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 # 318 "data/maps/Route109/scripts.pory"
 	end
 # 319 "data/maps/Route109/scripts.pory"

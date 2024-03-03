@@ -113,6 +113,18 @@ static const u32 sMugshotImg_HexManiac[] = INCBIN_U32("graphics/mugshots/pics/mu
 static const u16 sMugshotPal_HexManiac[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_hexmaniac.gbapal");
 static const u32 sMugshotImg_Hiker[] = INCBIN_U32("graphics/mugshots/pics/mugshot_hiker.4bpp.lz");
 static const u16 sMugshotPal_Hiker[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_hiker.gbapal");
+static const u32 sMugshotImg_Lass[] = INCBIN_U32("graphics/mugshots/pics/mugshot_lass.4bpp.lz");
+static const u16 sMugshotPal_Lass[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_lass.gbapal");
+static const u32 sMugshotImg_LittleBoy[] = INCBIN_U32("graphics/mugshots/pics/mugshot_littleboy.4bpp.lz");
+static const u16 sMugshotPal_LittleBoy[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_littleboy.gbapal");
+static const u32 sMugshotImg_LittleGirl[] = INCBIN_U32("graphics/mugshots/pics/mugshot_littlegirl.4bpp.lz");
+static const u16 sMugshotPal_LittleGirl[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_littlegirl.gbapal");
+static const u32 sMugshotImg_Man1[] = INCBIN_U32("graphics/mugshots/pics/mugshot_man1.4bpp.lz");
+static const u16 sMugshotPal_Man1[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_man1.gbapal");
+static const u32 sMugshotImg_Man2[] = INCBIN_U32("graphics/mugshots/pics/mugshot_man2.4bpp.lz");
+static const u16 sMugshotPal_Man2[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_man2.gbapal");
+static const u32 sMugshotImg_Man3[] = INCBIN_U32("graphics/mugshots/pics/mugshot_man3.4bpp.lz");
+static const u16 sMugshotPal_Man3[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_man3.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -162,6 +174,12 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_GIRL3] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Girl3, .palette = sMugshotPal_Girl3},
     [MUGSHOT_HEXMANIAC] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_HexManiac, .palette = sMugshotPal_HexManiac},
     [MUGSHOT_HIKER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Hiker, .palette = sMugshotPal_Hiker},
+    [MUGSHOT_LASS] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Lass, .palette = sMugshotPal_Lass},
+    [MUGSHOT_LITTLEBOY] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_LittleBoy, .palette = sMugshotPal_LittleBoy},
+    [MUGSHOT_LITTLEGIRL] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_LittleGirl, .palette = sMugshotPal_LittleGirl},
+    [MUGSHOT_MAN1] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Man1, .palette = sMugshotPal_Man1},
+    [MUGSHOT_MAN2] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Man2, .palette = sMugshotPal_Man2},
+    [MUGSHOT_MAN3] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Man3, .palette = sMugshotPal_Man3},
 };
 
 

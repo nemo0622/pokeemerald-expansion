@@ -33,7 +33,7 @@ Route110_TrickHousePuzzle8_EventScript_Vincent::
 # 17 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"
 	trainerbattle_single TRAINER_VINCENT, Route110_TrickHousePuzzle8_Text_VincentIntro, Route110_TrickHousePuzzle8_Text_VincentDefeat
 # 18 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"
-	msgbox Route110_TrickHousePuzzle8_Text_VincentPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle8_Text_VincentPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 19 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"
 	end
 # 20 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"
@@ -53,7 +53,7 @@ Route110_TrickHousePuzzle8_EventScript_Leroy::
 # 27 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"
 	trainerbattle_single TRAINER_LEROY, Route110_TrickHousePuzzle8_Text_LeroyIntro, Route110_TrickHousePuzzle8_Text_LeroyDefeat
 # 28 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"
-	msgbox Route110_TrickHousePuzzle8_Text_LeroyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle8_Text_LeroyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 29 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"
 	end
 # 30 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"

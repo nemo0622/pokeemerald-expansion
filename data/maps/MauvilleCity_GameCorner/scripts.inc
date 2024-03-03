@@ -957,7 +957,7 @@ MauvilleCity_GameCorner_EventScript_Man::
 # 479 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	faceplayer
 # 480 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 481 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 # 482 "data/maps/MauvilleCity_GameCorner/scripts.pory"

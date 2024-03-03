@@ -463,7 +463,7 @@ MauvilleCity_Gym_EventScript_GymGuide::
 # 232 "data/maps/MauvilleCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_GymGuidePostVictory
 # 233 "data/maps/MauvilleCity_Gym/scripts.pory"
-	msgbox MauvilleCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 234 "data/maps/MauvilleCity_Gym/scripts.pory"
 	release
 # 235 "data/maps/MauvilleCity_Gym/scripts.pory"
@@ -473,7 +473,7 @@ MauvilleCity_Gym_EventScript_GymGuide::
 # 237 "data/maps/MauvilleCity_Gym/scripts.pory"
 MauvilleCity_Gym_EventScript_GymGuidePostVictory::
 # 238 "data/maps/MauvilleCity_Gym/scripts.pory"
-	msgbox MauvilleCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 239 "data/maps/MauvilleCity_Gym/scripts.pory"
 	release
 # 240 "data/maps/MauvilleCity_Gym/scripts.pory"

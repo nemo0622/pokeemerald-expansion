@@ -34,7 +34,7 @@ Route132_EventScript_Darcy::
 
 Route132_EventScript_Jonathan::
 	trainerbattle_single TRAINER_JONATHAN, Route132_Text_JonathanIntro, Route132_Text_JonathanDefeat
-	msgbox Route132_Text_JonathanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_JonathanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 	end
 
 Route132_EventScript_Makayla::

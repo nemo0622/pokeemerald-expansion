@@ -435,7 +435,7 @@ SlateportCity_PokemonFanClub_EventScript_ReceivedSootheBell::
 # 218 "data/maps/SlateportCity_PokemonFanClub/scripts.pory"
 SlateportCity_PokemonFanClub_EventScript_Man::
 # 219 "data/maps/SlateportCity_PokemonFanClub/scripts.pory"
-	msgbox SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting, MSGBOX_NPC, MUGSHOT_MAN1
 # 220 "data/maps/SlateportCity_PokemonFanClub/scripts.pory"
 	end
 # 221 "data/maps/SlateportCity_PokemonFanClub/scripts.pory"

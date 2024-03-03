@@ -127,7 +127,7 @@ RustboroCity_Gym_EventScript_GymGuide::
 # 64 "data/maps/RustboroCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_RUSTBORO_GYM, RustboroCity_Gym_EventScript_GymGuidePostVictory
 # 65 "data/maps/RustboroCity_Gym/scripts.pory"
-	msgbox RustboroCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 66 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 # 67 "data/maps/RustboroCity_Gym/scripts.pory"
@@ -137,7 +137,7 @@ RustboroCity_Gym_EventScript_GymGuide::
 # 69 "data/maps/RustboroCity_Gym/scripts.pory"
 RustboroCity_Gym_EventScript_GymGuidePostVictory::
 # 70 "data/maps/RustboroCity_Gym/scripts.pory"
-	msgbox RustboroCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 71 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 # 72 "data/maps/RustboroCity_Gym/scripts.pory"

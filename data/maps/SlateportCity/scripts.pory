@@ -258,12 +258,12 @@ SlateportCity_EventScript_Man1::
 	lock
 	faceplayer
 	call_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_Man1SternInterview
-	msgbox SlateportCity_Text_EveryoneCallsHimCaptStern, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_EveryoneCallsHimCaptStern, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	release
 	end
 
 SlateportCity_EventScript_Man1SternInterview::
-	msgbox SlateportCity_Text_CaptainsACelebrity, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_CaptainsACelebrity, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	release
 	end
 
@@ -365,7 +365,7 @@ SlateportCity_EventScript_PokefanF::
 	end
 
 SlateportCity_EventScript_Man2::
-	msgbox SlateportCity_Text_BattleTentBuiltRecently, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_BattleTentBuiltRecently, MSGBOX_NPC, MUGSHOT_MAN3
 	end
 
 SlateportCity_EventScript_AquaGrunt1::

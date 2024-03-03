@@ -131,7 +131,7 @@ PetalburgCity_Mart_EventScript_Boy::
 # 66 "data/maps/PetalburgCity_Mart/scripts.pory"
 PetalburgCity_Mart_EventScript_Man::
 # 67 "data/maps/PetalburgCity_Mart/scripts.pory"
-	msgbox PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou, MSGBOX_NPC, MUGSHOT_MAN1
 # 68 "data/maps/PetalburgCity_Mart/scripts.pory"
 	end
 # 69 "data/maps/PetalburgCity_Mart/scripts.pory"

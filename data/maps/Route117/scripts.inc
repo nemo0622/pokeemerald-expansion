@@ -43,7 +43,7 @@ Route117_EventScript_Woman::
 # 22 "data/maps/Route117/scripts.pory"
 Route117_EventScript_LittleBoy::
 # 23 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_AirIsTastyHere, MSGBOX_NPC
+	msgbox_mugshot Route117_Text_AirIsTastyHere, MSGBOX_NPC, MUGSHOT_LITTLEBOY
 # 24 "data/maps/Route117/scripts.pory"
 	end
 # 25 "data/maps/Route117/scripts.pory"
@@ -267,7 +267,7 @@ Route117_EventScript_Anna::
 # 134 "data/maps/Route117/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchAnna
 # 135 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_AnnaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_AnnaPostBattle, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 136 "data/maps/Route117/scripts.pory"
 	release
 # 137 "data/maps/Route117/scripts.pory"
@@ -277,7 +277,7 @@ Route117_EventScript_Anna::
 # 139 "data/maps/Route117/scripts.pory"
 Route117_EventScript_RegisterAnna::
 # 140 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 141 "data/maps/Route117/scripts.pory"
 	register_matchcall TRAINER_ANNA_AND_MEG_1
 # 142 "data/maps/Route117/scripts.pory"
@@ -291,7 +291,7 @@ Route117_EventScript_RematchAnna::
 # 146 "data/maps/Route117/scripts.pory"
 	trainerbattle_rematch_double TRAINER_ANNA_AND_MEG_1, Route117_Text_AnnaRematchIntro, Route117_Text_AnnaRematchDefeat, Route117_Text_AnnaRematchNotEnoughMons
 # 147 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_AnnaPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_AnnaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 148 "data/maps/Route117/scripts.pory"
 	end
 # 149 "data/maps/Route117/scripts.pory"
@@ -305,7 +305,7 @@ Route117_EventScript_Meg::
 # 153 "data/maps/Route117/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMeg
 # 154 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MegPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_MegPostBattle, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 155 "data/maps/Route117/scripts.pory"
 	release
 # 156 "data/maps/Route117/scripts.pory"
@@ -315,7 +315,7 @@ Route117_EventScript_Meg::
 # 158 "data/maps/Route117/scripts.pory"
 Route117_EventScript_RegisterMeg::
 # 159 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 160 "data/maps/Route117/scripts.pory"
 	register_matchcall TRAINER_ANNA_AND_MEG_1
 # 161 "data/maps/Route117/scripts.pory"
@@ -329,7 +329,7 @@ Route117_EventScript_RematchMeg::
 # 165 "data/maps/Route117/scripts.pory"
 	trainerbattle_rematch_double TRAINER_ANNA_AND_MEG_1, Route117_Text_MegRematchIntro, Route117_Text_MegRematchDefeat, Route117_Text_MegRematchNotEnoughMons
 # 166 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MegPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_MegPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 167 "data/maps/Route117/scripts.pory"
 	end
 # 168 "data/maps/Route117/scripts.pory"
@@ -349,7 +349,7 @@ Route117_EventScript_Brandi::
 # 175 "data/maps/Route117/scripts.pory"
 	trainerbattle_single TRAINER_BRANDI, Route117_Text_BrandiIntro, Route117_Text_BrandiDefeat
 # 176 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_BrandiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_BrandiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 177 "data/maps/Route117/scripts.pory"
 	end
 # 178 "data/maps/Route117/scripts.pory"

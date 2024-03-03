@@ -555,7 +555,7 @@ Route111_EventScript_Victor::
 # 278 "data/maps/Route111/scripts.pory"
 Route111_EventScript_BattleWinstrates::
 # 279 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_VictorIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_VictorIntro, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 280 "data/maps/Route111/scripts.pory"
 	trainerbattle_no_intro TRAINER_VICTOR, Route111_Text_VictorDefeat
 # 281 "data/maps/Route111/scripts.pory"
@@ -565,7 +565,7 @@ Route111_EventScript_BattleWinstrates::
 # 283 "data/maps/Route111/scripts.pory"
 	call Route111_EventScript_OpenWinstrateDoor
 # 284 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_VictorPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_VictorPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 285 "data/maps/Route111/scripts.pory"
 	closemessage
 # 286 "data/maps/Route111/scripts.pory"
@@ -627,7 +627,7 @@ Route111_EventScript_BattleWinstrates::
 # 314 "data/maps/Route111/scripts.pory"
 	call Route111_EventScript_CloseWinstrateDoor
 # 315 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_ViviIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_ViviIntro, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 316 "data/maps/Route111/scripts.pory"
 	trainerbattle_no_intro TRAINER_VIVI, Route111_Text_ViviDefeat
 # 317 "data/maps/Route111/scripts.pory"
@@ -637,7 +637,7 @@ Route111_EventScript_BattleWinstrates::
 # 319 "data/maps/Route111/scripts.pory"
 	call Route111_EventScript_OpenWinstrateDoor
 # 320 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_ViviPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_ViviPostBattle, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 321 "data/maps/Route111/scripts.pory"
 	closemessage
 # 322 "data/maps/Route111/scripts.pory"
@@ -791,7 +791,7 @@ Route111_EventScript_TrainerTipsSpAtkSpDef::
 # 396 "data/maps/Route111/scripts.pory"
 Route111_EventScript_Man1::
 # 397 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_ToughToKeepWinningUpTheRanks, MSGBOX_NPC
+	msgbox_mugshot Route111_Text_ToughToKeepWinningUpTheRanks, MSGBOX_NPC, MUGSHOT_MAN3
 # 398 "data/maps/Route111/scripts.pory"
 	end
 # 399 "data/maps/Route111/scripts.pory"
@@ -997,7 +997,7 @@ Route111_EventScript_Wilton::
 # 499 "data/maps/Route111/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchWilton
 # 500 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_WiltonPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_WiltonPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 501 "data/maps/Route111/scripts.pory"
 	release
 # 502 "data/maps/Route111/scripts.pory"
@@ -1011,7 +1011,7 @@ Route111_EventScript_RegisterWilton::
 # 506 "data/maps/Route111/scripts.pory"
 	waitmovement 0
 # 507 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_WiltonRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_WiltonRegister, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 508 "data/maps/Route111/scripts.pory"
 	register_matchcall TRAINER_WILTON_1
 # 509 "data/maps/Route111/scripts.pory"
@@ -1025,7 +1025,7 @@ Route111_EventScript_RematchWilton::
 # 513 "data/maps/Route111/scripts.pory"
 	trainerbattle_rematch TRAINER_WILTON_1, Route111_Text_WiltonRematchIntro, Route111_Text_WiltonRematchDefeat
 # 514 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_WiltonPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_WiltonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 515 "data/maps/Route111/scripts.pory"
 	end
 # 516 "data/maps/Route111/scripts.pory"

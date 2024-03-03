@@ -237,7 +237,7 @@ Route115_EventScript_Alix::
 # 119 "data/maps/Route115/scripts.pory"
 	trainerbattle_single TRAINER_ALIX, Route115_Text_AlixIntro, Route115_Text_AlixDefeat
 # 120 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_AlixPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_AlixPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 121 "data/maps/Route115/scripts.pory"
 	end
 # 122 "data/maps/Route115/scripts.pory"
@@ -257,7 +257,7 @@ Route115_EventScript_Marlene::
 # 129 "data/maps/Route115/scripts.pory"
 	trainerbattle_single TRAINER_MARLENE, Route115_Text_MarleneIntro, Route115_Text_MarleneDefeat
 # 130 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_MarlenePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_MarlenePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 131 "data/maps/Route115/scripts.pory"
 	end
 # 132 "data/maps/Route115/scripts.pory"

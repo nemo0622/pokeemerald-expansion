@@ -165,12 +165,12 @@ RustboroCity_EventScript_Man1::
 	lock
 	faceplayer
 	goto_if_set FLAG_BADGE01_GET, RustboroCity_EventScript_Man1HaveBadge
-	msgbox RustboroCity_Text_HaveYouChallengedGym, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_HaveYouChallengedGym, MSGBOX_DEFAULT, MUGSHOT_MAN3
 	release
 	end
 
 RustboroCity_EventScript_Man1HaveBadge::
-	msgbox RustboroCity_Text_HeyThatsRustborosGymBadge, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_HeyThatsRustborosGymBadge, MSGBOX_DEFAULT, MUGSHOT_MAN3
 	release
 	end
 
@@ -227,7 +227,7 @@ RustboroCity_EventScript_CuttersHouseSign::
 RustboroCity_EventScript_LittleBoy::
 	lock
 	faceplayer
-	msgbox RustboroCity_Text_PokemonCanChangeLookFromExp, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_PokemonCanChangeLookFromExp, MSGBOX_DEFAULT, MUGSHOT_LITTLEBOY
 	applymovement LOCALID_LITTLE_BOY, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -236,7 +236,7 @@ RustboroCity_EventScript_LittleBoy::
 RustboroCity_EventScript_LittleGirl::
 	lock
 	faceplayer
-	msgbox RustboroCity_Text_PokemonChangeShape, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_PokemonChangeShape, MSGBOX_DEFAULT, MUGSHOT_LITTLEGIRL
 	applymovement LOCALID_LITTLE_GIRL, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -300,7 +300,7 @@ RustboroCity_EventScript_StolenGoodsScene::
 	removeobject LOCALID_GRUNT
 	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_Movement_EmployeeChaseGrunt1
 	waitmovement 0
-	msgbox RustboroCity_Text_WaitDontTakeMyGoods, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_WaitDontTakeMyGoods, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	closemessage
 	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_Movement_EmployeeChaseGrunt2
 	waitmovement 0
@@ -511,7 +511,7 @@ RustboroCity_EventScript_EmployeeAskToGetGoods::
 	setflag FLAG_INTERACTED_WITH_DEVON_EMPLOYEE_GOODS_STOLEN
 	setvar VAR_RUSTBORO_CITY_STATE, 3
 	copyobjectxytoperm LOCALID_DEVON_EMPLOYEE
-	msgbox RustboroCity_Text_HelpMeIWasRobbed, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_HelpMeIWasRobbed, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	releaseall
 	end
 
@@ -600,10 +600,10 @@ RustboroCity_EventScript_ReturnGoods::
 	call_if_eq VAR_TEMP_1, 2, RustboroCity_EventScript_EmployeeFacePlayerDown2
 	call_if_eq VAR_TEMP_1, 3, RustboroCity_EventScript_EmployeeApproachPlayerDown2
 	call_if_eq VAR_TEMP_1, 4, RustboroCity_EventScript_EmployeeFacePlayerRight
-	msgbox RustboroCity_Text_YouGotItThankYou, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_YouGotItThankYou, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	giveitem ITEM_GREAT_BALL
 	call_if_eq VAR_RESULT, FALSE, RustboroCity_EventScript_BagFull
-	msgbox RustboroCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	closemessage
 	setflag FLAG_RETURNED_DEVON_GOODS
 	setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1
@@ -615,7 +615,7 @@ RustboroCity_EventScript_ReturnGoods::
 	end
 
 RustboroCity_EventScript_BagFull::
-	msgbox RustboroCity_Text_YoureLoadedWithItems, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_YoureLoadedWithItems, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	return
 
 RustboroCity_EventScript_EmployeeFacePlayerUp2::

@@ -393,7 +393,7 @@ Route103_EventScript_Boy::
 # 197 "data/maps/Route103/scripts.pory"
 Route103_EventScript_Man::
 # 198 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_ShortcutToOldale, MSGBOX_NPC
+	msgbox_mugshot Route103_Text_ShortcutToOldale, MSGBOX_NPC, MUGSHOT_MAN3
 # 199 "data/maps/Route103/scripts.pory"
 	end
 # 200 "data/maps/Route103/scripts.pory"

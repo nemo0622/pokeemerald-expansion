@@ -11,7 +11,7 @@ SootopolisCity_Gym_B1F_EventScript_Andrea::
 # 6 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	trainerbattle_single TRAINER_ANDREA, SootopolisCity_Gym_B1F_Text_AndreaIntro, SootopolisCity_Gym_B1F_Text_AndreaDefeat
 # 7 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
-	msgbox SootopolisCity_Gym_B1F_Text_AndreaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_AndreaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 8 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	end
 # 9 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
@@ -21,7 +21,7 @@ SootopolisCity_Gym_B1F_EventScript_Crissy::
 # 11 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	trainerbattle_single TRAINER_CRISSY, SootopolisCity_Gym_B1F_Text_CrissyIntro, SootopolisCity_Gym_B1F_Text_CrissyDefeat
 # 12 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
-	msgbox SootopolisCity_Gym_B1F_Text_CrissyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_CrissyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 13 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	end
 # 14 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"

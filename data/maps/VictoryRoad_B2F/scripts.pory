@@ -4,12 +4,12 @@ VictoryRoad_B2F_MapScripts::
 
 VictoryRoad_B2F_EventScript_Vito::
 	trainerbattle_single TRAINER_VITO, VictoryRoad_B2F_Text_VitoIntro, VictoryRoad_B2F_Text_VitoDefeat
-	msgbox VictoryRoad_B2F_Text_VitoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B2F_Text_VitoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 	end
 
 VictoryRoad_B2F_EventScript_Owen::
 	trainerbattle_single TRAINER_OWEN, VictoryRoad_B2F_Text_OwenIntro, VictoryRoad_B2F_Text_OwenDefeat
-	msgbox VictoryRoad_B2F_Text_OwenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B2F_Text_OwenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 	end
 
 VictoryRoad_B2F_EventScript_Caroline::
@@ -24,7 +24,7 @@ VictoryRoad_B2F_EventScript_Julie::
 
 VictoryRoad_B2F_EventScript_Felix::
 	trainerbattle_single TRAINER_FELIX, VictoryRoad_B2F_Text_FelixIntro, VictoryRoad_B2F_Text_FelixDefeat
-	msgbox VictoryRoad_B2F_Text_FelixPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B2F_Text_FelixPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 	end
 
 VictoryRoad_B2F_EventScript_Dianne::

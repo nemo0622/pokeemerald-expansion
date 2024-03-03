@@ -59,7 +59,7 @@ VerdanturfTown_EventScript_TwinTunnelOpen::
 # 30 "data/maps/VerdanturfTown/scripts.pory"
 VerdanturfTown_EventScript_Man::
 # 31 "data/maps/VerdanturfTown/scripts.pory"
-	msgbox VerdanturfTown_Text_AirCleanHere, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_Text_AirCleanHere, MSGBOX_NPC, MUGSHOT_MAN2
 # 32 "data/maps/VerdanturfTown/scripts.pory"
 	end
 # 33 "data/maps/VerdanturfTown/scripts.pory"

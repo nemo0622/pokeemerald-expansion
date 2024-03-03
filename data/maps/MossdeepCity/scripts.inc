@@ -449,7 +449,7 @@ MossdeepCity_EventScript_Man::
 # 225 "data/maps/MossdeepCity/scripts.pory"
 	faceplayer
 # 226 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_SurfExhilarating, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_SurfExhilarating, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 227 "data/maps/MossdeepCity/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 228 "data/maps/MossdeepCity/scripts.pory"

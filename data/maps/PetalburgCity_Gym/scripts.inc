@@ -1759,7 +1759,7 @@ PetalburgCity_Gym_EventScript_Randall::
 # 880 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_RandallPostBadge
 # 881 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_RandallPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot PetalburgCity_Gym_Text_RandallPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 882 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 883 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1793,7 +1793,7 @@ PetalburgCity_Gym_EventScript_Parker::
 # 897 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_ParkerPostBadge
 # 898 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_ParkerPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot PetalburgCity_Gym_Text_ParkerPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 899 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 900 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1827,7 +1827,7 @@ PetalburgCity_Gym_EventScript_George::
 # 914 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_GeorgePostBadge
 # 915 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_GeorgePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot PetalburgCity_Gym_Text_GeorgePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 916 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 917 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1861,7 +1861,7 @@ PetalburgCity_Gym_EventScript_Berke::
 # 931 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_BerkePostBadge
 # 932 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_BerkePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot PetalburgCity_Gym_Text_BerkePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 933 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 934 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -2229,7 +2229,7 @@ PetalburgCity_Gym_EventScript_GymGuide::
 # 1115 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_GymGuidePostVictory
 # 1116 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 1117 "data/maps/PetalburgCity_Gym/scripts.pory"
 	release
 # 1118 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -2239,7 +2239,7 @@ PetalburgCity_Gym_EventScript_GymGuide::
 # 1120 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_GymGuidePostVictory::
 # 1121 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 1122 "data/maps/PetalburgCity_Gym/scripts.pory"
 	release
 # 1123 "data/maps/PetalburgCity_Gym/scripts.pory"

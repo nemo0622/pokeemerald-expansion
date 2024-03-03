@@ -349,7 +349,7 @@ Route110_EventScript_Jaclyn::
 # 175 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_JACLYN, Route110_Text_JaclynIntro, Route110_Text_JaclynDefeated
 # 176 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_JaclynPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_JaclynPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 177 "data/maps/Route110/scripts.pory"
 	end
 # 178 "data/maps/Route110/scripts.pory"

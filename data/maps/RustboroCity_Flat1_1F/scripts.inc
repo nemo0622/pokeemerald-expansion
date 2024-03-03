@@ -9,7 +9,7 @@ RustboroCity_Flat1_1F_MapScripts::
 # 5 "data/maps/RustboroCity_Flat1_1F/scripts.pory"
 RustboroCity_Flat1_1F_EventScript_Man::
 # 6 "data/maps/RustboroCity_Flat1_1F/scripts.pory"
-	msgbox RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility, MSGBOX_NPC, MUGSHOT_MAN3
 # 7 "data/maps/RustboroCity_Flat1_1F/scripts.pory"
 	end
 # 8 "data/maps/RustboroCity_Flat1_1F/scripts.pory"

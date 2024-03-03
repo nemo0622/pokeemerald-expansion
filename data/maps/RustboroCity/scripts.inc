@@ -333,7 +333,7 @@ RustboroCity_EventScript_Man1::
 # 167 "data/maps/RustboroCity/scripts.pory"
 	goto_if_set FLAG_BADGE01_GET, RustboroCity_EventScript_Man1HaveBadge
 # 168 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_HaveYouChallengedGym, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_HaveYouChallengedGym, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 169 "data/maps/RustboroCity/scripts.pory"
 	release
 # 170 "data/maps/RustboroCity/scripts.pory"
@@ -343,7 +343,7 @@ RustboroCity_EventScript_Man1::
 # 172 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_Man1HaveBadge::
 # 173 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_HeyThatsRustborosGymBadge, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_HeyThatsRustborosGymBadge, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 174 "data/maps/RustboroCity/scripts.pory"
 	release
 # 175 "data/maps/RustboroCity/scripts.pory"
@@ -457,7 +457,7 @@ RustboroCity_EventScript_LittleBoy::
 # 229 "data/maps/RustboroCity/scripts.pory"
 	faceplayer
 # 230 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_PokemonCanChangeLookFromExp, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_PokemonCanChangeLookFromExp, MSGBOX_DEFAULT, MUGSHOT_LITTLEBOY
 # 231 "data/maps/RustboroCity/scripts.pory"
 	applymovement LOCALID_LITTLE_BOY, Common_Movement_FaceOriginalDirection
 # 232 "data/maps/RustboroCity/scripts.pory"
@@ -475,7 +475,7 @@ RustboroCity_EventScript_LittleGirl::
 # 238 "data/maps/RustboroCity/scripts.pory"
 	faceplayer
 # 239 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_PokemonChangeShape, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_PokemonChangeShape, MSGBOX_DEFAULT, MUGSHOT_LITTLEGIRL
 # 240 "data/maps/RustboroCity/scripts.pory"
 	applymovement LOCALID_LITTLE_GIRL, Common_Movement_FaceOriginalDirection
 # 241 "data/maps/RustboroCity/scripts.pory"
@@ -603,7 +603,7 @@ RustboroCity_EventScript_StolenGoodsScene::
 # 302 "data/maps/RustboroCity/scripts.pory"
 	waitmovement 0
 # 303 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_WaitDontTakeMyGoods, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_WaitDontTakeMyGoods, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 304 "data/maps/RustboroCity/scripts.pory"
 	closemessage
 # 305 "data/maps/RustboroCity/scripts.pory"
@@ -1025,7 +1025,7 @@ RustboroCity_EventScript_EmployeeAskToGetGoods::
 # 513 "data/maps/RustboroCity/scripts.pory"
 	copyobjectxytoperm LOCALID_DEVON_EMPLOYEE
 # 514 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_HelpMeIWasRobbed, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_HelpMeIWasRobbed, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 515 "data/maps/RustboroCity/scripts.pory"
 	releaseall
 # 516 "data/maps/RustboroCity/scripts.pory"
@@ -1203,13 +1203,13 @@ RustboroCity_EventScript_ReturnGoods::
 # 602 "data/maps/RustboroCity/scripts.pory"
 	call_if_eq VAR_TEMP_1, 4, RustboroCity_EventScript_EmployeeFacePlayerRight
 # 603 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_YouGotItThankYou, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_YouGotItThankYou, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 604 "data/maps/RustboroCity/scripts.pory"
 	giveitem ITEM_GREAT_BALL
 # 605 "data/maps/RustboroCity/scripts.pory"
 	call_if_eq VAR_RESULT, FALSE, RustboroCity_EventScript_BagFull
 # 606 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 607 "data/maps/RustboroCity/scripts.pory"
 	closemessage
 # 608 "data/maps/RustboroCity/scripts.pory"
@@ -1233,7 +1233,7 @@ RustboroCity_EventScript_ReturnGoods::
 # 617 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_BagFull::
 # 618 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_YoureLoadedWithItems, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_YoureLoadedWithItems, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 619 "data/maps/RustboroCity/scripts.pory"
 	return
 # 620 "data/maps/RustboroCity/scripts.pory"

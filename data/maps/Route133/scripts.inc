@@ -41,7 +41,7 @@ Route133_EventScript_Warren::
 # 21 "data/maps/Route133/scripts.pory"
 	trainerbattle_single TRAINER_WARREN, Route133_Text_WarrenIntro, Route133_Text_WarrenDefeat
 # 22 "data/maps/Route133/scripts.pory"
-	msgbox Route133_Text_WarrenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route133_Text_WarrenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 23 "data/maps/Route133/scripts.pory"
 	end
 # 24 "data/maps/Route133/scripts.pory"

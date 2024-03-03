@@ -11,7 +11,7 @@ VictoryRoad_B2F_EventScript_Vito::
 # 6 "data/maps/VictoryRoad_B2F/scripts.pory"
 	trainerbattle_single TRAINER_VITO, VictoryRoad_B2F_Text_VitoIntro, VictoryRoad_B2F_Text_VitoDefeat
 # 7 "data/maps/VictoryRoad_B2F/scripts.pory"
-	msgbox VictoryRoad_B2F_Text_VitoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B2F_Text_VitoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 8 "data/maps/VictoryRoad_B2F/scripts.pory"
 	end
 # 9 "data/maps/VictoryRoad_B2F/scripts.pory"
@@ -21,7 +21,7 @@ VictoryRoad_B2F_EventScript_Owen::
 # 11 "data/maps/VictoryRoad_B2F/scripts.pory"
 	trainerbattle_single TRAINER_OWEN, VictoryRoad_B2F_Text_OwenIntro, VictoryRoad_B2F_Text_OwenDefeat
 # 12 "data/maps/VictoryRoad_B2F/scripts.pory"
-	msgbox VictoryRoad_B2F_Text_OwenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B2F_Text_OwenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 13 "data/maps/VictoryRoad_B2F/scripts.pory"
 	end
 # 14 "data/maps/VictoryRoad_B2F/scripts.pory"
@@ -51,7 +51,7 @@ VictoryRoad_B2F_EventScript_Felix::
 # 26 "data/maps/VictoryRoad_B2F/scripts.pory"
 	trainerbattle_single TRAINER_FELIX, VictoryRoad_B2F_Text_FelixIntro, VictoryRoad_B2F_Text_FelixDefeat
 # 27 "data/maps/VictoryRoad_B2F/scripts.pory"
-	msgbox VictoryRoad_B2F_Text_FelixPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B2F_Text_FelixPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 28 "data/maps/VictoryRoad_B2F/scripts.pory"
 	end
 # 29 "data/maps/VictoryRoad_B2F/scripts.pory"

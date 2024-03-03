@@ -15,7 +15,7 @@ DewfordTown_House2_EventScript_Man::
 # 8 "data/maps/DewfordTown_House2/scripts.pory"
 	goto_if_set FLAG_RECEIVED_SILK_SCARF, DewfordTown_House2_EventScript_ExplainSilkScarf
 # 9 "data/maps/DewfordTown_House2/scripts.pory"
-	msgbox DewfordTown_House2_Text_WantYouToHaveSilkScarf, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_House2_Text_WantYouToHaveSilkScarf, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 10 "data/maps/DewfordTown_House2/scripts.pory"
 	giveitem ITEM_SILK_SCARF
 # 11 "data/maps/DewfordTown_House2/scripts.pory"
@@ -31,7 +31,7 @@ DewfordTown_House2_EventScript_Man::
 # 16 "data/maps/DewfordTown_House2/scripts.pory"
 DewfordTown_House2_EventScript_NoRoomForScarf::
 # 17 "data/maps/DewfordTown_House2/scripts.pory"
-	msgbox DewfordTown_House2_Text_NoRoom, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_House2_Text_NoRoom, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 18 "data/maps/DewfordTown_House2/scripts.pory"
 	release
 # 19 "data/maps/DewfordTown_House2/scripts.pory"
@@ -41,7 +41,7 @@ DewfordTown_House2_EventScript_NoRoomForScarf::
 # 21 "data/maps/DewfordTown_House2/scripts.pory"
 DewfordTown_House2_EventScript_ExplainSilkScarf::
 # 22 "data/maps/DewfordTown_House2/scripts.pory"
-	msgbox DewfordTown_House2_Text_ExplainSilkScarf, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_House2_Text_ExplainSilkScarf, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 23 "data/maps/DewfordTown_House2/scripts.pory"
 	release
 # 24 "data/maps/DewfordTown_House2/scripts.pory"

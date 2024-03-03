@@ -73,7 +73,7 @@ MauvilleCity_Mart_EventScript_ExpertM::
 # 37 "data/maps/MauvilleCity_Mart/scripts.pory"
 MauvilleCity_Mart_EventScript_Man::
 # 38 "data/maps/MauvilleCity_Mart/scripts.pory"
-	msgbox MauvilleCity_Mart_Text_DecisionsDetermineBattle, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Mart_Text_DecisionsDetermineBattle, MSGBOX_NPC, MUGSHOT_MAN3
 # 39 "data/maps/MauvilleCity_Mart/scripts.pory"
 	end
 # 40 "data/maps/MauvilleCity_Mart/scripts.pory"

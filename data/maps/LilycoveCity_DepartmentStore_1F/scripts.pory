@@ -120,7 +120,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_PokefanF::
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_LittleGirl::
-	msgbox LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_PokefanM::

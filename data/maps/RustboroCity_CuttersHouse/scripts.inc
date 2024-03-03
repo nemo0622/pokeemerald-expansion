@@ -41,7 +41,7 @@ RustboroCity_CuttersHouse_EventScript_ExplainCut::
 # 21 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 RustboroCity_CuttersHouse_EventScript_Lass::
 # 22 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	msgbox RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees, MSGBOX_NPC, MUGSHOT_LASS
 # 23 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	end
 # 24 "data/maps/RustboroCity_CuttersHouse/scripts.pory"

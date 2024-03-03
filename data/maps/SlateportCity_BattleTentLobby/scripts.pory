@@ -215,7 +215,7 @@ SlateportCity_BattleTentLobby_EventScript_ReceivedTorment::
 	end
 
 SlateportCity_BattleTentLobby_EventScript_Man::
-	msgbox SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons, MSGBOX_NPC, MUGSHOT_MAN3
 	end
 
 SlateportCity_BattleTentLobby_EventScript_Girl::

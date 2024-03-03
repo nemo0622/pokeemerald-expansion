@@ -137,7 +137,7 @@ LavaridgeTown_Gym_1F_EventScript_Danielle::
 
 LavaridgeTown_Gym_1F_EventScript_Gerald::
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_GERALD, LOCALID_GERALD, LavaridgeTown_Gym_1F_Text_GeraldIntro, LavaridgeTown_Gym_1F_Text_GeraldDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript
-	msgbox LavaridgeTown_Gym_1F_Text_GeraldPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_GeraldPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 	end
 
 LavaridgeTown_Gym_B1F_EventScript_Jace::
@@ -159,12 +159,12 @@ LavaridgeTown_Gym_1F_EventScript_GymGuide::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, LavaridgeTown_Gym_1F_EventScript_GymGuidePostVictory
-	msgbox LavaridgeTown_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	release
 	end
 
 LavaridgeTown_Gym_1F_EventScript_GymGuidePostVictory::
-	msgbox LavaridgeTown_Gym_1F_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_GymGuidePostVictory, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	release
 	end
 

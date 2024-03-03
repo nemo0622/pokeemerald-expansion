@@ -19,7 +19,7 @@ RustboroCity_CuttersHouse_EventScript_ExplainCut::
 	end
 
 RustboroCity_CuttersHouse_EventScript_Lass::
-	msgbox RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees, MSGBOX_NPC, MUGSHOT_LASS
 	end
 
 RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse:

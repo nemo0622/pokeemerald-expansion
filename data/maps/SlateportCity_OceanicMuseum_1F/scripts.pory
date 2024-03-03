@@ -139,7 +139,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron3::
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron4::
-	msgbox SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::

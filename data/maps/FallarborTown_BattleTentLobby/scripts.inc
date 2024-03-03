@@ -475,7 +475,7 @@ FallarborTown_BattleTentLobby_EventScript_LittleBoy::
 # 238 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"
 FallarborTown_BattleTentLobby_EventScript_Lass::
 # 239 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"
-	msgbox FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite, MSGBOX_NPC, MUGSHOT_LASS
 # 240 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"
 	end
 # 241 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"

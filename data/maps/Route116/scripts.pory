@@ -51,7 +51,7 @@ Route116_EventScript_DevonEmployee::
 	lock
 	faceplayer
 	goto_if_set FLAG_MET_DEVON_EMPLOYEE, Route116_EventScript_TryGiveRepeatBallAgain
-	msgbox Route116_Text_ThankYouTokenOfAppreciation, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_ThankYouTokenOfAppreciation, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	goto Route116_EventScript_GiveRepeatBall
 	end
 
@@ -59,7 +59,7 @@ Route116_EventScript_GiveRepeatBall::
 	setflag FLAG_MET_DEVON_EMPLOYEE
 	giveitem ITEM_REPEAT_BALL
 	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_NoRoomForRepeatBall
-	msgbox Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, Route116_EventScript_DevonEmployeeExit
 	call_if_eq VAR_FACING, DIR_SOUTH, Route116_EventScript_DevonEmployeeExit
@@ -82,12 +82,12 @@ Route116_EventScript_DevonEmployeeExitEast::
 	return
 
 Route116_EventScript_TryGiveRepeatBallAgain::
-	msgbox Route116_Text_TokenOfAppreciation, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_TokenOfAppreciation, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	goto Route116_EventScript_GiveRepeatBall
 	end
 
 Route116_EventScript_NoRoomForRepeatBall::
-	msgbox Route116_Text_BagIsJamPacked, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_BagIsJamPacked, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	release
 	end
 
@@ -288,7 +288,7 @@ Route116_EventScript_Clark::
 
 Route116_EventScript_Janice::
 	trainerbattle_single TRAINER_JANICE, Route116_Text_JaniceIntro, Route116_Text_JaniceDefeat
-	msgbox Route116_Text_JanicePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_JanicePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 	end
 
 Route116_EventScript_Karen::

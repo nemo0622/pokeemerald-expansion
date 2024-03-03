@@ -311,7 +311,7 @@ Route114_EventScript_Tyra::
 # 156 "data/maps/Route114/scripts.pory"
 	trainerbattle_double TRAINER_TYRA_AND_IVY, Route114_Text_TyraIntro, Route114_Text_TyraDefeat, Route114_Text_TyraNotEnoughMons
 # 157 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_TyraPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_TyraPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 158 "data/maps/Route114/scripts.pory"
 	end
 # 159 "data/maps/Route114/scripts.pory"
@@ -321,7 +321,7 @@ Route114_EventScript_Ivy::
 # 161 "data/maps/Route114/scripts.pory"
 	trainerbattle_double TRAINER_TYRA_AND_IVY, Route114_Text_IvyIntro, Route114_Text_IvyDefeat, Route114_Text_IvyNotEnoughMons
 # 162 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_IvyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_IvyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 163 "data/maps/Route114/scripts.pory"
 	end
 # 164 "data/maps/Route114/scripts.pory"

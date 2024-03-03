@@ -55,7 +55,7 @@ LilycoveCity_EventScript_ReceivedBerry::
 	end
 
 LilycoveCity_EventScript_Man3::
-	msgbox LilycoveCity_Text_ContestHallInTown, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_ContestHallInTown, MSGBOX_NPC, MUGSHOT_MAN1
 	end
 
 LilycoveCity_EventScript_Girl::
@@ -102,7 +102,7 @@ LilycoveCity_EventScript_Woman2AquaGone::
 	end
 
 LilycoveCity_EventScript_Man2::
-	msgbox LilycoveCity_Text_ImArtDealer, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_ImArtDealer, MSGBOX_NPC, MUGSHOT_MAN2
 	end
 
 LilycoveCity_EventScript_ExpertM1::
@@ -136,7 +136,7 @@ LilycoveCity_EventScript_FatMan::
 
 LilycoveCity_EventScript_Man1::
 	lockall
-	msgbox LilycoveCity_Text_JustArrivedAndSawRarePokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_JustArrivedAndSawRarePokemon, MSGBOX_NPC, MUGSHOT_MAN2
 	applymovement LOCALID_MAN_1, Common_Movement_FaceOriginalDirection
 	end
 

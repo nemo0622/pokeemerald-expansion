@@ -79,7 +79,7 @@ VerdanturfTown_Mart_EventScript_ExpertF::
 # 40 "data/maps/VerdanturfTown_Mart/scripts.pory"
 VerdanturfTown_Mart_EventScript_Lass::
 # 41 "data/maps/VerdanturfTown_Mart/scripts.pory"
-	msgbox VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon, MSGBOX_NPC, MUGSHOT_LASS
 # 42 "data/maps/VerdanturfTown_Mart/scripts.pory"
 	end
 # 43 "data/maps/VerdanturfTown_Mart/scripts.pory"

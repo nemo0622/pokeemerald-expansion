@@ -1731,7 +1731,7 @@ Route104_EventScript_Haley::
 # 866 "data/maps/Route104/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterHaley
 # 867 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_HaleyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_HaleyPostBattle, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 868 "data/maps/Route104/scripts.pory"
 	release
 # 869 "data/maps/Route104/scripts.pory"
@@ -1755,7 +1755,7 @@ Route104_EventScript_TryRegisterHaleyAfterBattle::
 # 878 "data/maps/Route104/scripts.pory"
 Route104_EventScript_RegisterHaleyAfterBattle::
 # 879 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_HaleyRegister2, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_HaleyRegister2, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 880 "data/maps/Route104/scripts.pory"
 	register_matchcall TRAINER_HALEY_1
 # 881 "data/maps/Route104/scripts.pory"
@@ -1769,7 +1769,7 @@ Route104_EventScript_TryRegisterHaley::
 # 885 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_HAS_MATCH_CALL, Route104_EventScript_RegisterHaley
 # 886 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_HaleyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_HaleyPostBattle, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 887 "data/maps/Route104/scripts.pory"
 	release
 # 888 "data/maps/Route104/scripts.pory"
@@ -1779,7 +1779,7 @@ Route104_EventScript_TryRegisterHaley::
 # 890 "data/maps/Route104/scripts.pory"
 Route104_EventScript_RegisterHaley::
 # 891 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_HaleyRegister1, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_HaleyRegister1, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 892 "data/maps/Route104/scripts.pory"
 	register_matchcall TRAINER_HALEY_1
 # 893 "data/maps/Route104/scripts.pory"
@@ -1793,7 +1793,7 @@ Route104_EventScript_RematchHaley::
 # 897 "data/maps/Route104/scripts.pory"
 	trainerbattle_rematch TRAINER_HALEY_1, Route104_Text_HaleyRematchIntro, Route104_Text_HaleyRematchDefeat
 # 898 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_HaleyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route104_Text_HaleyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 899 "data/maps/Route104/scripts.pory"
 	end
 # 900 "data/maps/Route104/scripts.pory"

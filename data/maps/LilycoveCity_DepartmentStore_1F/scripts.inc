@@ -243,7 +243,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_PokefanF::
 # 122 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 LilycoveCity_DepartmentStore_1F_EventScript_LittleGirl::
 # 123 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 # 124 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	end
 # 125 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"

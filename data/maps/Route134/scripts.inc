@@ -51,7 +51,7 @@ Route134_EventScript_Aaron::
 # 26 "data/maps/Route134/scripts.pory"
 	trainerbattle_single TRAINER_AARON, Route134_Text_AaronIntro, Route134_Text_AaronDefeat
 # 27 "data/maps/Route134/scripts.pory"
-	msgbox Route134_Text_AaronPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_AaronPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 28 "data/maps/Route134/scripts.pory"
 	end
 # 29 "data/maps/Route134/scripts.pory"

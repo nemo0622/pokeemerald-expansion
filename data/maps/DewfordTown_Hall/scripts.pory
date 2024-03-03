@@ -35,18 +35,18 @@ DewfordTown_Hall_EventScript_Man::
 	faceplayer
 	call Common_EventScript_BufferTrendyPhrase
 	special BufferDeepLinkPhrase
-	msgbox DewfordTown_Hall_Text_DeepLinkBetweenXAndY, MSGBOX_YESNO
+	msgbox_mugshot DewfordTown_Hall_Text_DeepLinkBetweenXAndY, MSGBOX_YESNO, MUGSHOT_MAN1
 	goto_if_eq VAR_RESULT, YES, DewfordTown_Hall_EventScript_ConfirmTrendLink
 	goto_if_eq VAR_RESULT, NO, DewfordTown_Hall_EventScript_RejectTrendLink
 	end
 
 DewfordTown_Hall_EventScript_ConfirmTrendLink::
-	msgbox DewfordTown_Hall_Text_MyHunchWasRight, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_MyHunchWasRight, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	release
 	end
 
 DewfordTown_Hall_EventScript_RejectTrendLink::
-	msgbox DewfordTown_Hall_Text_NotEasyToKeepUp, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_NotEasyToKeepUp, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	release
 	end
 
@@ -76,7 +76,7 @@ DewfordTown_Hall_EventScript_LittleBoy::
 	lock
 	faceplayer
 	call Common_EventScript_BufferTrendyPhrase
-	msgbox DewfordTown_Hall_Text_CollectTrendMerchandise, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_CollectTrendMerchandise, MSGBOX_DEFAULT, MUGSHOT_LITTLEBOY
 	release
 	end
 

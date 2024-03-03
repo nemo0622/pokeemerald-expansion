@@ -49,7 +49,7 @@ FortreeCity_PokemonCenter_1F_EventScript_Gentleman::
 # 25 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 FortreeCity_PokemonCenter_1F_EventScript_Man::
 # 26 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
-	msgbox FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat, MSGBOX_NPC, MUGSHOT_MAN3
 # 27 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"
 	end
 # 28 "data/maps/FortreeCity_PokemonCenter_1F/scripts.pory"

@@ -461,7 +461,7 @@ MossdeepCity_Gym_EventScript_Hannah::
 # 231 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_HANNAH, MossdeepCity_Gym_Text_HannahIntro, MossdeepCity_Gym_Text_HannahDefeat
 # 232 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_HannahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_HannahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 233 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 234 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -471,7 +471,7 @@ MossdeepCity_Gym_EventScript_Samantha::
 # 236 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_SAMANTHA, MossdeepCity_Gym_Text_SamanthaIntro, MossdeepCity_Gym_Text_SamanthaDefeat
 # 237 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_SamanthaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_SamanthaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 238 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 239 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -481,7 +481,7 @@ MossdeepCity_Gym_EventScript_Maura::
 # 241 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_MAURA, MossdeepCity_Gym_Text_MauraIntro, MossdeepCity_Gym_Text_MauraDefeat
 # 242 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_MauraPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_MauraPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 243 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 244 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -511,7 +511,7 @@ MossdeepCity_Gym_EventScript_Macey::
 # 256 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_MACEY, MossdeepCity_Gym_Text_MaceyIntro, MossdeepCity_Gym_Text_MaceyDefeat
 # 257 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_MaceyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_MaceyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 258 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 259 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -555,7 +555,7 @@ MossdeepCity_Gym_EventScript_GymGuide::
 # 278 "data/maps/MossdeepCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_MOSSDEEP_GYM, MossdeepCity_Gym_EventScript_GymGuidePostVictory
 # 279 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 280 "data/maps/MossdeepCity_Gym/scripts.pory"
 	release
 # 281 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -565,7 +565,7 @@ MossdeepCity_Gym_EventScript_GymGuide::
 # 283 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_EventScript_GymGuidePostVictory::
 # 284 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 285 "data/maps/MossdeepCity_Gym/scripts.pory"
 	release
 # 286 "data/maps/MossdeepCity_Gym/scripts.pory"

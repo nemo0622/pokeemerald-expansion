@@ -23,13 +23,13 @@ SlateportCity_SternsShipyard_1F_EventScript_Dock::
 # 12 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	goto_if_set FLAG_DOCK_REJECTED_DEVON_GOODS, SlateportCity_SternsShipyard_1F_EventScript_GoFindStern
 # 13 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_1F_Text_CantMakeHeadsOrTails, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_SternsShipyard_1F_Text_CantMakeHeadsOrTails, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 14 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	applymovement LOCALID_DOCK, Common_Movement_FacePlayer
 # 15 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	waitmovement 0
 # 16 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 17 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	closemessage
 # 18 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
@@ -53,7 +53,7 @@ SlateportCity_SternsShipyard_1F_EventScript_FerryReady::
 # 27 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	waitmovement 0
 # 28 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_1F_Text_FerryIsReady, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_SternsShipyard_1F_Text_FerryIsReady, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 29 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	releaseall
 # 30 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
@@ -67,7 +67,7 @@ SlateportCity_SternsShipyard_1F_EventScript_BrineyJoined::
 # 34 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	waitmovement 0
 # 35 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 36 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	releaseall
 # 37 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
@@ -81,7 +81,7 @@ SlateportCity_SternsShipyard_1F_EventScript_GoFindStern::
 # 41 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	waitmovement 0
 # 42 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 43 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	closemessage
 # 44 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
@@ -101,7 +101,7 @@ SlateportCity_SternsShipyard_1F_EventScript_NeedVeteran::
 # 51 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	waitmovement 0
 # 52 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 53 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	releaseall
 # 54 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"

@@ -477,7 +477,7 @@ MauvilleCity_GameCorner_EventScript_Cook::
 MauvilleCity_GameCorner_EventScript_Man::
 	lock
 	faceplayer
-	msgbox MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed, MSGBOX_DEFAULT, MUGSHOT_MAN3
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 	end
 

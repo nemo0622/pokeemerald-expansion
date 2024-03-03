@@ -9,7 +9,7 @@ PacifidlogTown_House4_MapScripts::
 # 5 "data/maps/PacifidlogTown_House4/scripts.pory"
 PacifidlogTown_House4_EventScript_LittleGirl::
 # 6 "data/maps/PacifidlogTown_House4/scripts.pory"
-	msgbox PacifidlogTown_House4_Text_SkyPokemon, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_House4_Text_SkyPokemon, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 # 7 "data/maps/PacifidlogTown_House4/scripts.pory"
 	end
 # 8 "data/maps/PacifidlogTown_House4/scripts.pory"
@@ -41,7 +41,7 @@ PacifidlogTown_House4_EventScript_Boy::
 # 21 "data/maps/PacifidlogTown_House4/scripts.pory"
 PacifidlogTown_House4_EventScript_Yes::
 # 22 "data/maps/PacifidlogTown_House4/scripts.pory"
-	msgbox PacifidlogTown_House4_Text_YesTown, MSGBOX_DEFAULT
+	msgbox_mugshot PacifidlogTown_House4_Text_YesTown, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 23 "data/maps/PacifidlogTown_House4/scripts.pory"
 	release
 # 24 "data/maps/PacifidlogTown_House4/scripts.pory"
@@ -51,7 +51,7 @@ PacifidlogTown_House4_EventScript_Yes::
 # 26 "data/maps/PacifidlogTown_House4/scripts.pory"
 PacifidlogTown_House4_EventScript_No::
 # 27 "data/maps/PacifidlogTown_House4/scripts.pory"
-	msgbox PacifidlogTown_House4_Text_YouHaveToComeFromSomewhere, MSGBOX_DEFAULT
+	msgbox_mugshot PacifidlogTown_House4_Text_YouHaveToComeFromSomewhere, MSGBOX_DEFAULT, MUGSHOT_BOY1
 # 28 "data/maps/PacifidlogTown_House4/scripts.pory"
 	release
 # 29 "data/maps/PacifidlogTown_House4/scripts.pory"

@@ -113,7 +113,7 @@ LilycoveCity_EventScript_ReceivedBerry::
 # 57 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_Man3::
 # 58 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_ContestHallInTown, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_ContestHallInTown, MSGBOX_NPC, MUGSHOT_MAN1
 # 59 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 60 "data/maps/LilycoveCity/scripts.pory"
@@ -207,7 +207,7 @@ LilycoveCity_EventScript_Woman2AquaGone::
 # 104 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_Man2::
 # 105 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_ImArtDealer, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_ImArtDealer, MSGBOX_NPC, MUGSHOT_MAN2
 # 106 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 107 "data/maps/LilycoveCity/scripts.pory"
@@ -275,7 +275,7 @@ LilycoveCity_EventScript_Man1::
 # 138 "data/maps/LilycoveCity/scripts.pory"
 	lockall
 # 139 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_JustArrivedAndSawRarePokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_JustArrivedAndSawRarePokemon, MSGBOX_NPC, MUGSHOT_MAN2
 # 140 "data/maps/LilycoveCity/scripts.pory"
 	applymovement LOCALID_MAN_1, Common_Movement_FaceOriginalDirection
 # 141 "data/maps/LilycoveCity/scripts.pory"

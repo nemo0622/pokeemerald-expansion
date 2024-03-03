@@ -150,7 +150,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_WomanLegendaryWeather::
 	end
 
 LilycoveCity_DepartmentStore_5F_EventScript_LittleGirl::
-	msgbox LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 	end
 
 LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls:

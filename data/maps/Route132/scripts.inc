@@ -71,7 +71,7 @@ Route132_EventScript_Jonathan::
 # 36 "data/maps/Route132/scripts.pory"
 	trainerbattle_single TRAINER_JONATHAN, Route132_Text_JonathanIntro, Route132_Text_JonathanDefeat
 # 37 "data/maps/Route132/scripts.pory"
-	msgbox Route132_Text_JonathanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_JonathanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 38 "data/maps/Route132/scripts.pory"
 	end
 # 39 "data/maps/Route132/scripts.pory"

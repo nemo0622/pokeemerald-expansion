@@ -35,7 +35,7 @@ MauvilleCity_Mart_EventScript_ExpertM::
 	end
 
 MauvilleCity_Mart_EventScript_Man::
-	msgbox MauvilleCity_Mart_Text_DecisionsDetermineBattle, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Mart_Text_DecisionsDetermineBattle, MSGBOX_NPC, MUGSHOT_MAN3
 	end
 
 MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats:

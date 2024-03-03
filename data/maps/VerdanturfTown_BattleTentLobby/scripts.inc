@@ -537,7 +537,7 @@ VerdanturfTown_BattleTentLobby_EventScript_LittleBoy::
 # 269 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	lock
 # 270 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
-	msgbox VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry, MSGBOX_DEFAULT, MUGSHOT_LITTLEBOY
 # 271 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	release
 # 272 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"

@@ -261,7 +261,7 @@ SafariZone_South_EventScript_ConstructionWorker2::
 # 131 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Southeast_EventScript_LittleGirl::
 # 132 "data/maps/SafariZone_South/scripts.pory"
-	msgbox SafariZone_Southeast_Text_LittleGirl, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Southeast_Text_LittleGirl, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 # 133 "data/maps/SafariZone_South/scripts.pory"
 	end
 # 134 "data/maps/SafariZone_South/scripts.pory"

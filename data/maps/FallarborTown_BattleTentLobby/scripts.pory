@@ -236,7 +236,7 @@ FallarborTown_BattleTentLobby_EventScript_LittleBoy::
 	end
 
 FallarborTown_BattleTentLobby_EventScript_Lass::
-	msgbox FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite, MSGBOX_NPC, MUGSHOT_LASS
 	end
 
 FallarborTown_BattleTentLobby_EventScript_Scott::

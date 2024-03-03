@@ -131,7 +131,7 @@ Route125_EventScript_Kim::
 # 66 "data/maps/Route125/scripts.pory"
 	trainerbattle_double TRAINER_KIM_AND_IRIS, Route125_Text_KimIntro, Route125_Text_KimDefeat, Route125_Text_KimNotEnoughMons
 # 67 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_KimPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route125_Text_KimPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 68 "data/maps/Route125/scripts.pory"
 	end
 # 69 "data/maps/Route125/scripts.pory"
@@ -141,7 +141,7 @@ Route125_EventScript_Iris::
 # 71 "data/maps/Route125/scripts.pory"
 	trainerbattle_double TRAINER_KIM_AND_IRIS, Route125_Text_IrisIntro, Route125_Text_IrisDefeat, Route125_Text_IrisNotEnoughMons
 # 72 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_IrisPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route125_Text_IrisPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 73 "data/maps/Route125/scripts.pory"
 	end
 # 74 "data/maps/Route125/scripts.pory"

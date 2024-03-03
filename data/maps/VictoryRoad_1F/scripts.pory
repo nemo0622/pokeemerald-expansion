@@ -98,12 +98,12 @@ VictoryRoad_1F_EventScript_RematchWally::
 
 VictoryRoad_1F_EventScript_Edgar::
 	trainerbattle_single TRAINER_EDGAR, VictoryRoad_1F_Text_EdgarIntro, VictoryRoad_1F_Text_EdgarDefeat
-	msgbox VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 	end
 
 VictoryRoad_1F_EventScript_Albert::
 	trainerbattle_single TRAINER_ALBERT, VictoryRoad_1F_Text_AlbertIntro, VictoryRoad_1F_Text_AlbertDefeat
-	msgbox VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 	end
 
 VictoryRoad_1F_EventScript_Hope::
@@ -113,7 +113,7 @@ VictoryRoad_1F_EventScript_Hope::
 
 VictoryRoad_1F_EventScript_Quincy::
 	trainerbattle_single TRAINER_QUINCY, VictoryRoad_1F_Text_QuincyIntro, VictoryRoad_1F_Text_QuincyDefeat
-	msgbox VictoryRoad_1F_Text_QuincyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_1F_Text_QuincyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 	end
 
 VictoryRoad_1F_EventScript_Katelynn::

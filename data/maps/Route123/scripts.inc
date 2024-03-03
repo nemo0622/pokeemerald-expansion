@@ -103,7 +103,7 @@ Route123_EventScript_Braxton::
 # 52 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_BRAXTON, Route123_Text_BraxtonIntro, Route123_Text_BraxtonDefeat
 # 53 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_BraxtonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_BraxtonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 54 "data/maps/Route123/scripts.pory"
 	end
 # 55 "data/maps/Route123/scripts.pory"
@@ -169,7 +169,7 @@ Route123_EventScript_Jacki::
 # 85 "data/maps/Route123/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchJacki
 # 86 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_JackiPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_JackiPostBattle, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 87 "data/maps/Route123/scripts.pory"
 	release
 # 88 "data/maps/Route123/scripts.pory"
@@ -183,7 +183,7 @@ Route123_EventScript_RegisterJacki::
 # 92 "data/maps/Route123/scripts.pory"
 	waitmovement 0
 # 93 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_JackiRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_JackiRegister, MSGBOX_DEFAULT, MUGSHOT_LASS
 # 94 "data/maps/Route123/scripts.pory"
 	register_matchcall TRAINER_JACKI_1
 # 95 "data/maps/Route123/scripts.pory"
@@ -197,7 +197,7 @@ Route123_EventScript_RematchJacki::
 # 99 "data/maps/Route123/scripts.pory"
 	trainerbattle_rematch TRAINER_JACKI_1, Route123_Text_JackiRematchIntro, Route123_Text_JackiRematchDefeat
 # 100 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_JackiPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_JackiPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 101 "data/maps/Route123/scripts.pory"
 	end
 # 102 "data/maps/Route123/scripts.pory"

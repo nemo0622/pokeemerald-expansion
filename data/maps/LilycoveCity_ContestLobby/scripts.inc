@@ -1951,7 +1951,7 @@ LilycoveCity_ContestLobby_EventScript_LittleGirl::
 # 976 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	goto_if_set FLAG_RECEIVED_POKEBLOCK_CASE, LilycoveCity_ContestLobby_EventScript_LittleGirlHaveCase
 # 977 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase, MSGBOX_DEFAULT, MUGSHOT_LITTLEGIRL
 # 978 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	release
 # 979 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -1961,7 +1961,7 @@ LilycoveCity_ContestLobby_EventScript_LittleGirl::
 # 981 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_LittleGirlHaveCase::
 # 982 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries, MSGBOX_DEFAULT, MUGSHOT_LITTLEGIRL
 # 983 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	release
 # 984 "data/maps/LilycoveCity_ContestLobby/scripts.pory"

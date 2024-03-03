@@ -433,7 +433,7 @@ SlateportCity_BattleTentLobby_EventScript_ReceivedTorment::
 # 217 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 SlateportCity_BattleTentLobby_EventScript_Man::
 # 218 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
-	msgbox SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons, MSGBOX_NPC, MUGSHOT_MAN3
 # 219 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	end
 # 220 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"

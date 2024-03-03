@@ -303,7 +303,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_WomanLegendaryWeather::
 # 152 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_EventScript_LittleGirl::
 # 153 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 # 154 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	end
 # 155 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

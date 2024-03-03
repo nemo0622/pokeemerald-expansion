@@ -11,7 +11,7 @@ VictoryRoad_B1F_EventScript_Samuel::
 # 6 "data/maps/VictoryRoad_B1F/scripts.pory"
 	trainerbattle_single TRAINER_SAMUEL, VictoryRoad_B1F_Text_SamuelIntro, VictoryRoad_B1F_Text_SamuelDefeat
 # 7 "data/maps/VictoryRoad_B1F/scripts.pory"
-	msgbox VictoryRoad_B1F_Text_SamuelPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B1F_Text_SamuelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 8 "data/maps/VictoryRoad_B1F/scripts.pory"
 	end
 # 9 "data/maps/VictoryRoad_B1F/scripts.pory"
@@ -41,7 +41,7 @@ VictoryRoad_B1F_EventScript_Mitchell::
 # 21 "data/maps/VictoryRoad_B1F/scripts.pory"
 	trainerbattle_single TRAINER_MITCHELL, VictoryRoad_B1F_Text_MitchellIntro, VictoryRoad_B1F_Text_MitchellDefeat
 # 22 "data/maps/VictoryRoad_B1F/scripts.pory"
-	msgbox VictoryRoad_B1F_Text_MitchellPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B1F_Text_MitchellPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 23 "data/maps/VictoryRoad_B1F/scripts.pory"
 	end
 # 24 "data/maps/VictoryRoad_B1F/scripts.pory"

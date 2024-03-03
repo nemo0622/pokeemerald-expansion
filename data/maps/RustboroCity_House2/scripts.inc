@@ -17,7 +17,7 @@ RustboroCity_House2_EventScript_PokefanF::
 # 9 "data/maps/RustboroCity_House2/scripts.pory"
 RustboroCity_House2_EventScript_LittleGirl::
 # 10 "data/maps/RustboroCity_House2/scripts.pory"
-	msgbox RustboroCity_House2_Text_RoxanneKnowsALot, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_House2_Text_RoxanneKnowsALot, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 # 11 "data/maps/RustboroCity_House2/scripts.pory"
 	end
 # 12 "data/maps/RustboroCity_House2/scripts.pory"

@@ -431,7 +431,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestAudience2::
 # 216 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 217 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_GanderAtAllThosePrettyPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_GanderAtAllThosePrettyPokemon, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 218 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 219 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -617,7 +617,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestAudience2::
 # 309 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 310 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_WantCuteMonOfMyOwn, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_WantCuteMonOfMyOwn, MSGBOX_DEFAULT, MUGSHOT_LITTLEGIRL
 # 311 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 312 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -637,7 +637,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestAudience3::
 # 319 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 320 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_ThatGirlThereIsCutest, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_ThatGirlThereIsCutest, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 321 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 322 "data/maps/LilycoveCity_ContestHall/scripts.pory"

@@ -65,7 +65,7 @@ LilycoveCity_House3_EventScript_Man::
 # 33 "data/maps/LilycoveCity_House3/scripts.pory"
 	faceplayer
 # 34 "data/maps/LilycoveCity_House3/scripts.pory"
-	msgbox LilycoveCity_House3_Text_HappyToHaveQuadruplets, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_House3_Text_HappyToHaveQuadruplets, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 35 "data/maps/LilycoveCity_House3/scripts.pory"
 	closemessage
 # 36 "data/maps/LilycoveCity_House3/scripts.pory"

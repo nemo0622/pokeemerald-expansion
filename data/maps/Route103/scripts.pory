@@ -195,7 +195,7 @@ Route103_EventScript_Boy::
 	end
 
 Route103_EventScript_Man::
-	msgbox Route103_Text_ShortcutToOldale, MSGBOX_NPC
+	msgbox_mugshot Route103_Text_ShortcutToOldale, MSGBOX_NPC, MUGSHOT_MAN3
 	end
 
 Route103_EventScript_RouteSign::

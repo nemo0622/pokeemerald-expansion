@@ -32,7 +32,7 @@ SlateportCity_Mart_EventScript_BlackBelt::
 	end
 
 SlateportCity_Mart_EventScript_Man::
-	msgbox SlateportCity_Mart_Text_GreatBallIsBetter, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Mart_Text_GreatBallIsBetter, MSGBOX_NPC, MUGSHOT_MAN3
 	end
 
 SlateportCity_Mart_Text_SomeItemsOnlyAtMart:

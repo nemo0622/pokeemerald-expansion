@@ -9,7 +9,7 @@ DewfordTown_House1_MapScripts::
 # 5 "data/maps/DewfordTown_House1/scripts.pory"
 DewfordTown_House1_EventScript_Man::
 # 6 "data/maps/DewfordTown_House1/scripts.pory"
-	msgbox DewfordTown_House1_Text_LotToBeSaidForLivingOnIsland, MSGBOX_NPC
+	msgbox_mugshot DewfordTown_House1_Text_LotToBeSaidForLivingOnIsland, MSGBOX_NPC, MUGSHOT_MAN1
 # 7 "data/maps/DewfordTown_House1/scripts.pory"
 	end
 # 8 "data/maps/DewfordTown_House1/scripts.pory"

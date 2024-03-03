@@ -301,7 +301,7 @@ SootopolisCity_Gym_1F_EventScript_GymGuide::
 # 151 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	goto_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory
 # 152 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	msgbox SootopolisCity_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 153 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	release
 # 154 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
@@ -311,7 +311,7 @@ SootopolisCity_Gym_1F_EventScript_GymGuide::
 # 156 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory::
 # 157 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
-	msgbox SootopolisCity_Gym_1F_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Gym_1F_Text_GymGuidePostVictory, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 158 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	release
 # 159 "data/maps/SootopolisCity_Gym_1F/scripts.pory"

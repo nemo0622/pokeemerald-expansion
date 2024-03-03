@@ -267,7 +267,7 @@ VerdanturfTown_BattleTentLobby_EventScript_ScottAlreadySpokenTo::
 
 VerdanturfTown_BattleTentLobby_EventScript_LittleBoy::
 	lock
-	msgbox VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry, MSGBOX_DEFAULT, MUGSHOT_LITTLEBOY
 	release
 	end
 

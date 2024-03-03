@@ -15,7 +15,7 @@ MeteorFalls_1F_2R_EventScript_Nicolas::
 # 8 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, MeteorFalls_1F_2R_EventScript_RematchNicolas
 # 9 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	msgbox MeteorFalls_1F_2R_Text_NicolasPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_2R_Text_NicolasPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 10 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	release
 # 11 "data/maps/MeteorFalls_1F_2R/scripts.pory"
@@ -29,7 +29,7 @@ MeteorFalls_1F_2R_EventScript_RegisterNicolas::
 # 15 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	waitmovement 0
 # 16 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	msgbox MeteorFalls_1F_2R_Text_NicolasRegister, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_2R_Text_NicolasRegister, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 17 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	register_matchcall TRAINER_NICOLAS_1
 # 18 "data/maps/MeteorFalls_1F_2R/scripts.pory"
@@ -43,7 +43,7 @@ MeteorFalls_1F_2R_EventScript_RematchNicolas::
 # 22 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	trainerbattle_rematch TRAINER_NICOLAS_1, MeteorFalls_1F_2R_Text_NicolasRematchIntro, MeteorFalls_1F_2R_Text_NicolasRematchDefeat
 # 23 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	msgbox MeteorFalls_1F_2R_Text_NicolasPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MeteorFalls_1F_2R_Text_NicolasPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 24 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	end
 # 25 "data/maps/MeteorFalls_1F_2R/scripts.pory"

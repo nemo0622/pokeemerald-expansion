@@ -1587,7 +1587,7 @@ SootopolisCity_EventScript_Man::
 # 794 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_ManPostLegendaries
 # 795 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_NoOrdinaryTourist, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_NoOrdinaryTourist, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 796 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 797 "data/maps/SootopolisCity/scripts.pory"
@@ -1597,7 +1597,7 @@ SootopolisCity_EventScript_Man::
 # 799 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_ManPostLegendaries::
 # 800 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_CityRegainedCalm, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_CityRegainedCalm, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 801 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 802 "data/maps/SootopolisCity/scripts.pory"

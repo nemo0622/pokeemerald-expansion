@@ -23,7 +23,7 @@ FortreeCity_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 FortreeCity_PokemonCenter_1F_EventScript_Man::
-	msgbox FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat, MSGBOX_NPC, MUGSHOT_MAN3
 	end
 
 FortreeCity_PokemonCenter_1F_EventScript_Boy::

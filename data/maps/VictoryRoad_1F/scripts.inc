@@ -199,7 +199,7 @@ VictoryRoad_1F_EventScript_Edgar::
 # 100 "data/maps/VictoryRoad_1F/scripts.pory"
 	trainerbattle_single TRAINER_EDGAR, VictoryRoad_1F_Text_EdgarIntro, VictoryRoad_1F_Text_EdgarDefeat
 # 101 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 102 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 103 "data/maps/VictoryRoad_1F/scripts.pory"
@@ -209,7 +209,7 @@ VictoryRoad_1F_EventScript_Albert::
 # 105 "data/maps/VictoryRoad_1F/scripts.pory"
 	trainerbattle_single TRAINER_ALBERT, VictoryRoad_1F_Text_AlbertIntro, VictoryRoad_1F_Text_AlbertDefeat
 # 106 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 107 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 108 "data/maps/VictoryRoad_1F/scripts.pory"
@@ -229,7 +229,7 @@ VictoryRoad_1F_EventScript_Quincy::
 # 115 "data/maps/VictoryRoad_1F/scripts.pory"
 	trainerbattle_single TRAINER_QUINCY, VictoryRoad_1F_Text_QuincyIntro, VictoryRoad_1F_Text_QuincyDefeat
 # 116 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox VictoryRoad_1F_Text_QuincyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_1F_Text_QuincyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 117 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 118 "data/maps/VictoryRoad_1F/scripts.pory"

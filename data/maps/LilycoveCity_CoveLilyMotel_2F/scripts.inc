@@ -29,7 +29,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_GameDesigner::
 # 15 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 LilycoveCity_CoveLilyMotel_2F_EventScript_ShowMeCompletedDex::
 # 16 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
-	msgbox LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex, MSGBOX_DEFAULT, MUGSHOT_MAN3
 # 17 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 	return
 # 18 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"

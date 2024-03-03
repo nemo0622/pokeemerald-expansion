@@ -131,7 +131,7 @@ RustboroCity_PokemonSchool_EventScript_RichBoy::
 # 66 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 RustboroCity_PokemonSchool_EventScript_Lass::
 # 67 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	msgbox RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself, MSGBOX_NPC, MUGSHOT_LASS
 # 68 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	end
 # 69 "data/maps/RustboroCity_PokemonSchool/scripts.pory"

@@ -214,7 +214,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestAudience1::
 LilycoveCity_ContestHall_EventScript_BeautyContestAudience2::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_GanderAtAllThosePrettyPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_GanderAtAllThosePrettyPokemon, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	closemessage
 	applymovement LOCALID_BEAUTY_AUDIENCE_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -307,7 +307,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestAudience1::
 LilycoveCity_ContestHall_EventScript_CuteContestAudience2::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_WantCuteMonOfMyOwn, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_WantCuteMonOfMyOwn, MSGBOX_DEFAULT, MUGSHOT_LITTLEGIRL
 	closemessage
 	applymovement LOCALID_CUTE_AUDIENCE_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -317,7 +317,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestAudience2::
 LilycoveCity_ContestHall_EventScript_CuteContestAudience3::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_ThatGirlThereIsCutest, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_ThatGirlThereIsCutest, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	closemessage
 	applymovement LOCALID_CUTE_AUDIENCE_3, Common_Movement_FaceOriginalDirection
 	waitmovement 0

@@ -217,7 +217,7 @@ FortreeCity_Gym_EventScript_GymGuide::
 # 109 "data/maps/FortreeCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_FORTREE_GYM, FortreeCity_Gym_EventScript_GymGuidePostVictory
 # 110 "data/maps/FortreeCity_Gym/scripts.pory"
-	msgbox FortreeCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot FortreeCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 111 "data/maps/FortreeCity_Gym/scripts.pory"
 	release
 # 112 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -227,7 +227,7 @@ FortreeCity_Gym_EventScript_GymGuide::
 # 114 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_EventScript_GymGuidePostVictory::
 # 115 "data/maps/FortreeCity_Gym/scripts.pory"
-	msgbox FortreeCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	msgbox_mugshot FortreeCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 116 "data/maps/FortreeCity_Gym/scripts.pory"
 	release
 # 117 "data/maps/FortreeCity_Gym/scripts.pory"

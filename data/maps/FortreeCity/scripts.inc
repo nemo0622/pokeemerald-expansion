@@ -29,7 +29,7 @@ FortreeCity_OnResume:
 # 15 "data/maps/FortreeCity/scripts.pory"
 FortreeCity_EventScript_Man::
 # 16 "data/maps/FortreeCity/scripts.pory"
-	msgbox FortreeCity_Text_SawGiganticPokemonInSky, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Text_SawGiganticPokemonInSky, MSGBOX_NPC, MUGSHOT_MAN2
 # 17 "data/maps/FortreeCity/scripts.pory"
 	end
 # 18 "data/maps/FortreeCity/scripts.pory"

@@ -519,7 +519,7 @@ SlateportCity_EventScript_Man1::
 # 260 "data/maps/SlateportCity/scripts.pory"
 	call_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_Man1SternInterview
 # 261 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_EveryoneCallsHimCaptStern, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_EveryoneCallsHimCaptStern, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 262 "data/maps/SlateportCity/scripts.pory"
 	release
 # 263 "data/maps/SlateportCity/scripts.pory"
@@ -529,7 +529,7 @@ SlateportCity_EventScript_Man1::
 # 265 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_Man1SternInterview::
 # 266 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_CaptainsACelebrity, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_CaptainsACelebrity, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 267 "data/maps/SlateportCity/scripts.pory"
 	release
 # 268 "data/maps/SlateportCity/scripts.pory"
@@ -733,7 +733,7 @@ SlateportCity_EventScript_PokefanF::
 # 367 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_Man2::
 # 368 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_BattleTentBuiltRecently, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_BattleTentBuiltRecently, MSGBOX_NPC, MUGSHOT_MAN3
 # 369 "data/maps/SlateportCity/scripts.pory"
 	end
 # 370 "data/maps/SlateportCity/scripts.pory"

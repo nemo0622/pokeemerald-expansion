@@ -223,7 +223,7 @@ MossdeepCity_Movement_Grunt4EnterSpaceCenter:
 MossdeepCity_EventScript_Man::
 	lock
 	faceplayer
-	msgbox MossdeepCity_Text_SurfExhilarating, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_SurfExhilarating, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release

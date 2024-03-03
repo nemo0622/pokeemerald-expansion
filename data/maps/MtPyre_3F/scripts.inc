@@ -21,7 +21,7 @@ MtPyre_3F_EventScript_Kayla::
 # 11 "data/maps/MtPyre_3F/scripts.pory"
 	trainerbattle_single TRAINER_KAYLA, MtPyre_3F_Text_KaylaIntro, MtPyre_3F_Text_KaylaDefeat
 # 12 "data/maps/MtPyre_3F/scripts.pory"
-	msgbox MtPyre_3F_Text_KaylaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_3F_Text_KaylaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 13 "data/maps/MtPyre_3F/scripts.pory"
 	end
 # 14 "data/maps/MtPyre_3F/scripts.pory"

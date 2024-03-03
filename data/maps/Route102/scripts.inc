@@ -9,7 +9,7 @@ Route102_MapScripts::
 # 5 "data/maps/Route102/scripts.pory"
 Route102_EventScript_LittleBoy::
 # 6 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_ImNotVeryTall, MSGBOX_NPC
+	msgbox_mugshot Route102_Text_ImNotVeryTall, MSGBOX_NPC, MUGSHOT_LITTLEBOY
 # 7 "data/maps/Route102/scripts.pory"
 	end
 # 8 "data/maps/Route102/scripts.pory"
@@ -137,7 +137,7 @@ Route102_EventScript_Tiana::
 # 69 "data/maps/Route102/scripts.pory"
 	trainerbattle_single TRAINER_TIANA, Route102_Text_TianaIntro, Route102_Text_TianaDefeated
 # 70 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_TianaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route102_Text_TianaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 71 "data/maps/Route102/scripts.pory"
 	end
 # 72 "data/maps/Route102/scripts.pory"

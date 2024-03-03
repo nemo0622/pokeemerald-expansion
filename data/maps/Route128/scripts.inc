@@ -459,7 +459,7 @@ Route128_EventScript_Ruben::
 # 230 "data/maps/Route128/scripts.pory"
 	trainerbattle_single TRAINER_RUBEN, Route128_Text_RubenIntro, Route128_Text_RubenDefeat
 # 231 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_RubenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route128_Text_RubenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 232 "data/maps/Route128/scripts.pory"
 	end
 # 233 "data/maps/Route128/scripts.pory"

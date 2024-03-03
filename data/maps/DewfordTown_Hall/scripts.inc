@@ -73,7 +73,7 @@ DewfordTown_Hall_EventScript_Man::
 # 37 "data/maps/DewfordTown_Hall/scripts.pory"
 	special BufferDeepLinkPhrase
 # 38 "data/maps/DewfordTown_Hall/scripts.pory"
-	msgbox DewfordTown_Hall_Text_DeepLinkBetweenXAndY, MSGBOX_YESNO
+	msgbox_mugshot DewfordTown_Hall_Text_DeepLinkBetweenXAndY, MSGBOX_YESNO, MUGSHOT_MAN1
 # 39 "data/maps/DewfordTown_Hall/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, DewfordTown_Hall_EventScript_ConfirmTrendLink
 # 40 "data/maps/DewfordTown_Hall/scripts.pory"
@@ -85,7 +85,7 @@ DewfordTown_Hall_EventScript_Man::
 # 43 "data/maps/DewfordTown_Hall/scripts.pory"
 DewfordTown_Hall_EventScript_ConfirmTrendLink::
 # 44 "data/maps/DewfordTown_Hall/scripts.pory"
-	msgbox DewfordTown_Hall_Text_MyHunchWasRight, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_MyHunchWasRight, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 45 "data/maps/DewfordTown_Hall/scripts.pory"
 	release
 # 46 "data/maps/DewfordTown_Hall/scripts.pory"
@@ -95,7 +95,7 @@ DewfordTown_Hall_EventScript_ConfirmTrendLink::
 # 48 "data/maps/DewfordTown_Hall/scripts.pory"
 DewfordTown_Hall_EventScript_RejectTrendLink::
 # 49 "data/maps/DewfordTown_Hall/scripts.pory"
-	msgbox DewfordTown_Hall_Text_NotEasyToKeepUp, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_NotEasyToKeepUp, MSGBOX_DEFAULT, MUGSHOT_MAN1
 # 50 "data/maps/DewfordTown_Hall/scripts.pory"
 	release
 # 51 "data/maps/DewfordTown_Hall/scripts.pory"
@@ -155,7 +155,7 @@ DewfordTown_Hall_EventScript_LittleBoy::
 # 78 "data/maps/DewfordTown_Hall/scripts.pory"
 	call Common_EventScript_BufferTrendyPhrase
 # 79 "data/maps/DewfordTown_Hall/scripts.pory"
-	msgbox DewfordTown_Hall_Text_CollectTrendMerchandise, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_CollectTrendMerchandise, MSGBOX_DEFAULT, MUGSHOT_LITTLEBOY
 # 80 "data/maps/DewfordTown_Hall/scripts.pory"
 	release
 # 81 "data/maps/DewfordTown_Hall/scripts.pory"

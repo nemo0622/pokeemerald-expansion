@@ -8,10 +8,10 @@ LilycoveCity_CoveLilyMotel_1F_EventScript_MotelOwner::
 	lockall
 	goto_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_CoveLilyMotel_1F_EventScript_GameClear
 	goto_if_set FLAG_BADGE07_GET, LilycoveCity_CoveLilyMotel_1F_EventScript_AquaHideoutBusted
-	msgbox LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	applymovement LOCALID_OWNER, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	closemessage
 	applymovement LOCALID_OWNER, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -19,10 +19,10 @@ LilycoveCity_CoveLilyMotel_1F_EventScript_MotelOwner::
 	end
 
 LilycoveCity_CoveLilyMotel_1F_EventScript_AquaHideoutBusted::
-	msgbox LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	applymovement LOCALID_OWNER, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	closemessage
 	applymovement LOCALID_OWNER, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -30,10 +30,10 @@ LilycoveCity_CoveLilyMotel_1F_EventScript_AquaHideoutBusted::
 	end
 
 LilycoveCity_CoveLilyMotel_1F_EventScript_GameClear::
-	msgbox LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	applymovement LOCALID_OWNER, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	closemessage
 	applymovement LOCALID_OWNER, Common_Movement_FaceOriginalDirection
 	waitmovement 0

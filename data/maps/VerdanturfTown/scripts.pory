@@ -28,7 +28,7 @@ VerdanturfTown_EventScript_TwinTunnelOpen::
 	end
 
 VerdanturfTown_EventScript_Man::
-	msgbox VerdanturfTown_Text_AirCleanHere, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_Text_AirCleanHere, MSGBOX_NPC, MUGSHOT_MAN2
 	end
 
 VerdanturfTown_EventScript_Camper::

@@ -64,7 +64,7 @@ PetalburgCity_Mart_EventScript_Boy::
 	end
 
 PetalburgCity_Mart_EventScript_Man::
-	msgbox PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou, MSGBOX_NPC, MUGSHOT_MAN1
 	end
 
 PetalburgCity_Mart_Text_WeakWillGrowStronger:

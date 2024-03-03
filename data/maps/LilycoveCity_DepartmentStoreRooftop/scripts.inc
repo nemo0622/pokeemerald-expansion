@@ -107,7 +107,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_Man::
 # 54 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	call_if_eq VAR_RESULT, TRUE, LilycoveCity_DepartmentStoreRooftop_EventScript_ManClearOutSale
 # 55 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	msgbox LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 56 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	release
 # 57 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
@@ -117,7 +117,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_Man::
 # 59 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 LilycoveCity_DepartmentStoreRooftop_EventScript_ManClearOutSale::
 # 60 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	msgbox LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 61 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	release
 # 62 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
@@ -127,7 +127,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_ManClearOutSale::
 # 64 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 LilycoveCity_DepartmentStoreRooftop_EventScript_ThirstyMan::
 # 65 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
-	msgbox LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty, MSGBOX_NPC, MUGSHOT_MAN3
 # 66 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	end
 # 67 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"

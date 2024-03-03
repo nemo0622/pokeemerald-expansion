@@ -23,7 +23,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 # 12 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 13 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 14 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 15 "data/maps/PetalburgWoods/scripts.pory"
@@ -53,7 +53,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 # 27 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 28 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 29 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 30 "data/maps/PetalburgWoods/scripts.pory"
@@ -97,7 +97,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 # 49 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 50 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 51 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 52 "data/maps/PetalburgWoods/scripts.pory"
@@ -127,7 +127,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 # 64 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 65 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 66 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 67 "data/maps/PetalburgWoods/scripts.pory"
@@ -161,7 +161,7 @@ PetalburgWoods_EventScript_DevonResearcherIntro::
 # 81 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 82 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_NotAOneToBeFound, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_NotAOneToBeFound, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 83 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 84 "data/maps/PetalburgWoods/scripts.pory"
@@ -185,7 +185,7 @@ PetalburgWoods_EventScript_DevonResearcherPostBattle::
 # 93 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 94 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 95 "data/maps/PetalburgWoods/scripts.pory"
 	giveitem ITEM_GREAT_BALL
 # 96 "data/maps/PetalburgWoods/scripts.pory"
@@ -199,7 +199,7 @@ PetalburgWoods_EventScript_DevonResearcherPostBattle::
 # 100 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_EventScript_BagFull::
 # 101 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_YoureLoadedWithItems, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_YoureLoadedWithItems, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 102 "data/maps/PetalburgWoods/scripts.pory"
 	goto PetalburgWoods_EventScript_DevonResearcherFinish
 # 103 "data/maps/PetalburgWoods/scripts.pory"
@@ -209,13 +209,13 @@ PetalburgWoods_EventScript_BagFull::
 # 105 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_EventScript_DevonResearcherFinish::
 # 106 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 107 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherStartExit
 # 108 "data/maps/PetalburgWoods/scripts.pory"
 	waitmovement 0
 # 109 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_ICantBeWastingTime, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgWoods_Text_ICantBeWastingTime, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 110 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 111 "data/maps/PetalburgWoods/scripts.pory"

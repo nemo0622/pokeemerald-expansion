@@ -9,6 +9,6 @@ SafariZone_Northwest_MapScripts::
 # 5 "data/maps/SafariZone_Northwest/scripts.pory"
 SafariZone_Northwest_EventScript_Man::
 # 6 "data/maps/SafariZone_Northwest/scripts.pory"
-	msgbox SafariZone_Northwest_Text_Man, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Northwest_Text_Man, MSGBOX_NPC, MUGSHOT_MAN1
 # 7 "data/maps/SafariZone_Northwest/scripts.pory"
 	end

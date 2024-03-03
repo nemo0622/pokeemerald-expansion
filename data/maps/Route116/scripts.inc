@@ -105,7 +105,7 @@ Route116_EventScript_DevonEmployee::
 # 53 "data/maps/Route116/scripts.pory"
 	goto_if_set FLAG_MET_DEVON_EMPLOYEE, Route116_EventScript_TryGiveRepeatBallAgain
 # 54 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_ThankYouTokenOfAppreciation, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_ThankYouTokenOfAppreciation, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 55 "data/maps/Route116/scripts.pory"
 	goto Route116_EventScript_GiveRepeatBall
 # 56 "data/maps/Route116/scripts.pory"
@@ -121,7 +121,7 @@ Route116_EventScript_GiveRepeatBall::
 # 61 "data/maps/Route116/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_NoRoomForRepeatBall
 # 62 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 63 "data/maps/Route116/scripts.pory"
 	closemessage
 # 64 "data/maps/Route116/scripts.pory"
@@ -167,7 +167,7 @@ Route116_EventScript_DevonEmployeeExitEast::
 # 84 "data/maps/Route116/scripts.pory"
 Route116_EventScript_TryGiveRepeatBallAgain::
 # 85 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_TokenOfAppreciation, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_TokenOfAppreciation, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 86 "data/maps/Route116/scripts.pory"
 	goto Route116_EventScript_GiveRepeatBall
 # 87 "data/maps/Route116/scripts.pory"
@@ -177,7 +177,7 @@ Route116_EventScript_TryGiveRepeatBallAgain::
 # 89 "data/maps/Route116/scripts.pory"
 Route116_EventScript_NoRoomForRepeatBall::
 # 90 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_BagIsJamPacked, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_BagIsJamPacked, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 91 "data/maps/Route116/scripts.pory"
 	release
 # 92 "data/maps/Route116/scripts.pory"
@@ -579,7 +579,7 @@ Route116_EventScript_Janice::
 # 290 "data/maps/Route116/scripts.pory"
 	trainerbattle_single TRAINER_JANICE, Route116_Text_JaniceIntro, Route116_Text_JaniceDefeat
 # 291 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_JanicePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_JanicePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 292 "data/maps/Route116/scripts.pory"
 	end
 # 293 "data/maps/Route116/scripts.pory"

@@ -129,7 +129,7 @@ SafariZone_South_EventScript_ConstructionWorker2::
 	end
 
 SafariZone_Southeast_EventScript_LittleGirl::
-	msgbox SafariZone_Southeast_Text_LittleGirl, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Southeast_Text_LittleGirl, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 	end
 
 SafariZone_Southeast_EventScript_FatMan::

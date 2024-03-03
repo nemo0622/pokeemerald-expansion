@@ -31,7 +31,7 @@ LilycoveCity_House3_EventScript_DeclinePokeblockLearn::
 LilycoveCity_House3_EventScript_Man::
 	lock
 	faceplayer
-	msgbox LilycoveCity_House3_Text_HappyToHaveQuadruplets, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_House3_Text_HappyToHaveQuadruplets, MSGBOX_DEFAULT, MUGSHOT_MAN1
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0

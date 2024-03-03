@@ -216,7 +216,7 @@ SlateportCity_PokemonFanClub_EventScript_ReceivedSootheBell::
 	end
 
 SlateportCity_PokemonFanClub_EventScript_Man::
-	msgbox SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting, MSGBOX_NPC, MUGSHOT_MAN1
 	end
 
 SlateportCity_PokemonFanClub_EventScript_Twin::

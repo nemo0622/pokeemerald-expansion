@@ -13,7 +13,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_GameDesigner::
 	end
 
 LilycoveCity_CoveLilyMotel_2F_EventScript_ShowMeCompletedDex::
-	msgbox LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex, MSGBOX_DEFAULT, MUGSHOT_MAN3
 	return
 
 LilycoveCity_CoveLilyMotel_2F_EventScript_AllHoennMonsFanfare::

@@ -281,7 +281,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron3::
 # 141 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron4::
 # 142 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
 # 143 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	end
 # 144 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"

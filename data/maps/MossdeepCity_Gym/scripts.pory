@@ -229,17 +229,17 @@ MossdeepCity_Gym_EventScript_Blake::
 
 MossdeepCity_Gym_EventScript_Hannah::
 	trainerbattle_single TRAINER_HANNAH, MossdeepCity_Gym_Text_HannahIntro, MossdeepCity_Gym_Text_HannahDefeat
-	msgbox MossdeepCity_Gym_Text_HannahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_HannahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 	end
 
 MossdeepCity_Gym_EventScript_Samantha::
 	trainerbattle_single TRAINER_SAMANTHA, MossdeepCity_Gym_Text_SamanthaIntro, MossdeepCity_Gym_Text_SamanthaDefeat
-	msgbox MossdeepCity_Gym_Text_SamanthaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_SamanthaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 	end
 
 MossdeepCity_Gym_EventScript_Maura::
 	trainerbattle_single TRAINER_MAURA, MossdeepCity_Gym_Text_MauraIntro, MossdeepCity_Gym_Text_MauraDefeat
-	msgbox MossdeepCity_Gym_Text_MauraPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_MauraPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 	end
 
 MossdeepCity_Gym_EventScript_Sylvia::
@@ -254,7 +254,7 @@ MossdeepCity_Gym_EventScript_Nate::
 
 MossdeepCity_Gym_EventScript_Macey::
 	trainerbattle_single TRAINER_MACEY, MossdeepCity_Gym_Text_MaceyIntro, MossdeepCity_Gym_Text_MaceyDefeat
-	msgbox MossdeepCity_Gym_Text_MaceyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_MaceyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 	end
 
 MossdeepCity_Gym_EventScript_Clifford::
@@ -276,12 +276,12 @@ MossdeepCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_MOSSDEEP_GYM, MossdeepCity_Gym_EventScript_GymGuidePostVictory
-	msgbox MossdeepCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	release
 	end
 
 MossdeepCity_Gym_EventScript_GymGuidePostVictory::
-	msgbox MossdeepCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT, MUGSHOT_MAN2
 	release
 	end
 

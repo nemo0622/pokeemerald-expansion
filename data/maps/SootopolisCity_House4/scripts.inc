@@ -9,7 +9,7 @@ SootopolisCity_House4_MapScripts::
 # 5 "data/maps/SootopolisCity_House4/scripts.pory"
 SootopolisCity_House4_EventScript_Man::
 # 6 "data/maps/SootopolisCity_House4/scripts.pory"
-	msgbox SootopolisCity_House4_Text_AncientTreasuresWaitingInSea, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House4_Text_AncientTreasuresWaitingInSea, MSGBOX_NPC, MUGSHOT_MAN1
 # 7 "data/maps/SootopolisCity_House4/scripts.pory"
 	end
 # 8 "data/maps/SootopolisCity_House4/scripts.pory"

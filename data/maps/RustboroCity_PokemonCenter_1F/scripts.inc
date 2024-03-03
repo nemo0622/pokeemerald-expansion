@@ -43,7 +43,7 @@ RustboroCity_PokemonCenter_1F_EventScript_Nurse::
 # 22 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 RustboroCity_PokemonCenter_1F_EventScript_Man::
 # 23 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	msgbox RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities, MSGBOX_NPC, MUGSHOT_MAN1
 # 24 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	end
 # 25 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"

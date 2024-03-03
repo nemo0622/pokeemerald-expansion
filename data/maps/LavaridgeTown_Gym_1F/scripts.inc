@@ -277,7 +277,7 @@ LavaridgeTown_Gym_1F_EventScript_Gerald::
 # 139 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_GERALD, LOCALID_GERALD, LavaridgeTown_Gym_1F_Text_GeraldIntro, LavaridgeTown_Gym_1F_Text_GeraldDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript
 # 140 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox LavaridgeTown_Gym_1F_Text_GeraldPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_GeraldPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 141 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	end
 # 142 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
@@ -321,7 +321,7 @@ LavaridgeTown_Gym_1F_EventScript_GymGuide::
 # 161 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, LavaridgeTown_Gym_1F_EventScript_GymGuidePostVictory
 # 162 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox LavaridgeTown_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 163 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	release
 # 164 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
@@ -331,7 +331,7 @@ LavaridgeTown_Gym_1F_EventScript_GymGuide::
 # 166 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 LavaridgeTown_Gym_1F_EventScript_GymGuidePostVictory::
 # 167 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox LavaridgeTown_Gym_1F_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_GymGuidePostVictory, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 168 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	release
 # 169 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

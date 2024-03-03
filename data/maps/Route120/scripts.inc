@@ -713,7 +713,7 @@ Route120_EventScript_Leonel::
 # 357 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_LEONEL, Route120_Text_LeonelIntro, Route120_Text_LeonelDefeat
 # 358 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_LeonelPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_LeonelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 359 "data/maps/Route120/scripts.pory"
 	end
 # 360 "data/maps/Route120/scripts.pory"

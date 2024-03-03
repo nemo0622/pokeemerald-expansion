@@ -597,7 +597,7 @@ Route110_TrickHousePuzzle7_EventScript_Alexis::
 # 299 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	trainerbattle_single TRAINER_ALEXIS, Route110_TrickHousePuzzle7_Text_AlexisIntro, Route110_TrickHousePuzzle7_Text_AlexisDefeat
 # 300 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
-	msgbox Route110_TrickHousePuzzle7_Text_AlexisPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle7_Text_AlexisPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 301 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	end
 # 302 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
@@ -607,7 +607,7 @@ Route110_TrickHousePuzzle7_EventScript_Mariela::
 # 304 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	trainerbattle_single TRAINER_MARIELA, Route110_TrickHousePuzzle7_Text_MarielaIntro, Route110_TrickHousePuzzle7_Text_MarielaDefeat
 # 305 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
-	msgbox Route110_TrickHousePuzzle7_Text_MarielaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle7_Text_MarielaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 306 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	end
 # 307 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"

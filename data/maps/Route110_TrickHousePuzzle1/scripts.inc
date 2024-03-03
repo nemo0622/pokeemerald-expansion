@@ -51,7 +51,7 @@ Route110_TrickHousePuzzle1_EventScript_Sally::
 # 26 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	trainerbattle_single TRAINER_SALLY, Route110_TrickHousePuzzle1_Text_SallyIntro, Route110_TrickHousePuzzle1_Text_SallyDefeat
 # 27 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	msgbox Route110_TrickHousePuzzle1_Text_SallyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle1_Text_SallyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 28 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	end
 # 29 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
@@ -71,7 +71,7 @@ Route110_TrickHousePuzzle1_EventScript_Robin::
 # 36 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	trainerbattle_single TRAINER_ROBIN, Route110_TrickHousePuzzle1_Text_RobinIntro, Route110_TrickHousePuzzle1_Text_RobinDefeat
 # 37 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
-	msgbox Route110_TrickHousePuzzle1_Text_RobinPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle1_Text_RobinPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 38 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"
 	end
 # 39 "data/maps/Route110_TrickHousePuzzle1/scripts.pory"

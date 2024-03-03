@@ -17,7 +17,7 @@ FortreeCity_House5_EventScript_PokefanF::
 # 9 "data/maps/FortreeCity_House5/scripts.pory"
 FortreeCity_House5_EventScript_Man::
 # 10 "data/maps/FortreeCity_House5/scripts.pory"
-	msgbox FortreeCity_House5_Text_AdaptedToNature, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House5_Text_AdaptedToNature, MSGBOX_NPC, MUGSHOT_MAN1
 # 11 "data/maps/FortreeCity_House5/scripts.pory"
 	end
 # 12 "data/maps/FortreeCity_House5/scripts.pory"

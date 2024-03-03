@@ -7,7 +7,7 @@ FortreeCity_House5_EventScript_PokefanF::
 	end
 
 FortreeCity_House5_EventScript_Man::
-	msgbox FortreeCity_House5_Text_AdaptedToNature, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House5_Text_AdaptedToNature, MSGBOX_NPC, MUGSHOT_MAN1
 	end
 
 FortreeCity_House5_EventScript_Zigzagoon::

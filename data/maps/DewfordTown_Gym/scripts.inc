@@ -515,7 +515,7 @@ DewfordTown_Gym_EventScript_GymGuide::
 # 258 "data/maps/DewfordTown_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, DewfordTown_Gym_EventScript_GymGuidePostVictory
 # 259 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 260 "data/maps/DewfordTown_Gym/scripts.pory"
 	release
 # 261 "data/maps/DewfordTown_Gym/scripts.pory"
@@ -525,7 +525,7 @@ DewfordTown_Gym_EventScript_GymGuide::
 # 263 "data/maps/DewfordTown_Gym/scripts.pory"
 DewfordTown_Gym_EventScript_GymGuidePostVictory::
 # 264 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT, MUGSHOT_MAN2
 # 265 "data/maps/DewfordTown_Gym/scripts.pory"
 	release
 # 266 "data/maps/DewfordTown_Gym/scripts.pory"

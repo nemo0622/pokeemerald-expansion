@@ -13,7 +13,7 @@ FortreeCity_OnResume:
 	end
 
 FortreeCity_EventScript_Man::
-	msgbox FortreeCity_Text_SawGiganticPokemonInSky, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Text_SawGiganticPokemonInSky, MSGBOX_NPC, MUGSHOT_MAN2
 	end
 
 FortreeCity_EventScript_Woman::

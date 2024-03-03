@@ -64,7 +64,7 @@ RustboroCity_PokemonSchool_EventScript_RichBoy::
 	end
 
 RustboroCity_PokemonSchool_EventScript_Lass::
-	msgbox RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself, MSGBOX_NPC, MUGSHOT_LASS
 	end
 
 RustboroCity_PokemonSchool_EventScript_SchoolKidM::

@@ -38,7 +38,7 @@ VerdanturfTown_Mart_EventScript_ExpertF::
 	end
 
 VerdanturfTown_Mart_EventScript_Lass::
-	msgbox VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon, MSGBOX_NPC, MUGSHOT_LASS
 	end
 
 VerdanturfTown_Mart_Text_XSpecialIsCrucial:

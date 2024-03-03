@@ -51,7 +51,7 @@ DewfordTown_PokemonCenter_1F_EventScript_PokefanF::
 # 26 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
 DewfordTown_PokemonCenter_1F_EventScript_Man::
 # 27 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
-	msgbox DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM, MSGBOX_NPC
+	msgbox_mugshot DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM, MSGBOX_NPC, MUGSHOT_MAN3
 # 28 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
 	end
 # 29 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"

@@ -67,7 +67,7 @@ SlateportCity_Mart_EventScript_BlackBelt::
 # 34 "data/maps/SlateportCity_Mart/scripts.pory"
 SlateportCity_Mart_EventScript_Man::
 # 35 "data/maps/SlateportCity_Mart/scripts.pory"
-	msgbox SlateportCity_Mart_Text_GreatBallIsBetter, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Mart_Text_GreatBallIsBetter, MSGBOX_NPC, MUGSHOT_MAN3
 # 36 "data/maps/SlateportCity_Mart/scripts.pory"
 	end
 # 37 "data/maps/SlateportCity_Mart/scripts.pory"

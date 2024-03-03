@@ -209,7 +209,7 @@ Route121_EventScript_Kate::
 # 105 "data/maps/Route121/scripts.pory"
 	trainerbattle_double TRAINER_KATE_AND_JOY, Route121_Text_KateIntro, Route121_Text_KateDefeat, Route121_Text_KateNotEnoughMons
 # 106 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_KatePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_KatePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 107 "data/maps/Route121/scripts.pory"
 	end
 # 108 "data/maps/Route121/scripts.pory"
@@ -219,7 +219,7 @@ Route121_EventScript_Joy::
 # 110 "data/maps/Route121/scripts.pory"
 	trainerbattle_double TRAINER_KATE_AND_JOY, Route121_Text_JoyIntro, Route121_Text_JoyDefeat, Route121_Text_JoyNotEnoughMons
 # 111 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_JoyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_JoyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LASS
 # 112 "data/maps/Route121/scripts.pory"
 	end
 # 113 "data/maps/Route121/scripts.pory"
@@ -301,7 +301,7 @@ Route121_EventScript_Marcel::
 # 151 "data/maps/Route121/scripts.pory"
 	trainerbattle_single TRAINER_MARCEL, Route121_Text_MarcelIntro, Route121_Text_MarcelDefeat
 # 152 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_MarcelPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_MarcelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
 # 153 "data/maps/Route121/scripts.pory"
 	end
 # 154 "data/maps/Route121/scripts.pory"
