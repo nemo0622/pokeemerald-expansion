@@ -89,7 +89,7 @@ Route117_EventScript_Isaac::
 # 45 "data/maps/Route117/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchIsaac
 # 46 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_IsaacPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_IsaacPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 47 "data/maps/Route117/scripts.pory"
 	release
 # 48 "data/maps/Route117/scripts.pory"
@@ -103,7 +103,7 @@ Route117_EventScript_RegisterIsaac::
 # 52 "data/maps/Route117/scripts.pory"
 	waitmovement 0
 # 53 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_IsaacRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_IsaacRegister, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 54 "data/maps/Route117/scripts.pory"
 	register_matchcall TRAINER_ISAAC_1
 # 55 "data/maps/Route117/scripts.pory"
@@ -117,7 +117,7 @@ Route117_EventScript_RematchIsaac::
 # 59 "data/maps/Route117/scripts.pory"
 	trainerbattle_rematch TRAINER_ISAAC_1, Route117_Text_IsaacRematchIntro, Route117_Text_IsaacRematchDefeat
 # 60 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_IsaacPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_IsaacPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 # 61 "data/maps/Route117/scripts.pory"
 	end
 # 62 "data/maps/Route117/scripts.pory"
@@ -253,7 +253,7 @@ Route117_EventScript_Derek::
 # 127 "data/maps/Route117/scripts.pory"
 	trainerbattle_single TRAINER_DEREK, Route117_Text_DerekIntro, Route117_Text_DerekDefeat
 # 128 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_DerekPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_DerekPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 129 "data/maps/Route117/scripts.pory"
 	end
 # 130 "data/maps/Route117/scripts.pory"

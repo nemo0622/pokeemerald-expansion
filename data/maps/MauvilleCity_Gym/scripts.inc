@@ -409,7 +409,7 @@ MauvilleCity_Gym_EventScript_Kirk::
 # 205 "data/maps/MauvilleCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_KIRK, MauvilleCity_Gym_Text_KirkIntro, MauvilleCity_Gym_Text_KirkDefeat
 # 206 "data/maps/MauvilleCity_Gym/scripts.pory"
-	msgbox MauvilleCity_Gym_Text_KirkPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MauvilleCity_Gym_Text_KirkPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 207 "data/maps/MauvilleCity_Gym/scripts.pory"
 	end
 # 208 "data/maps/MauvilleCity_Gym/scripts.pory"
@@ -419,7 +419,7 @@ MauvilleCity_Gym_EventScript_Shawn::
 # 210 "data/maps/MauvilleCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_SHAWN, MauvilleCity_Gym_Text_ShawnIntro, MauvilleCity_Gym_Text_ShawnDefeat
 # 211 "data/maps/MauvilleCity_Gym/scripts.pory"
-	msgbox MauvilleCity_Gym_Text_ShawnPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MauvilleCity_Gym_Text_ShawnPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 212 "data/maps/MauvilleCity_Gym/scripts.pory"
 	end
 # 213 "data/maps/MauvilleCity_Gym/scripts.pory"
@@ -449,7 +449,7 @@ MauvilleCity_Gym_EventScript_Angelo::
 # 225 "data/maps/MauvilleCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_ANGELO, MauvilleCity_Gym_Text_AngeloIntro, MauvilleCity_Gym_Text_AngeloDefeat
 # 226 "data/maps/MauvilleCity_Gym/scripts.pory"
-	msgbox MauvilleCity_Gym_Text_AngeloPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MauvilleCity_Gym_Text_AngeloPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 227 "data/maps/MauvilleCity_Gym/scripts.pory"
 	end
 # 228 "data/maps/MauvilleCity_Gym/scripts.pory"

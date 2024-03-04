@@ -99,7 +99,7 @@ Route127_EventScript_Aidan::
 # 50 "data/maps/Route127/scripts.pory"
 	trainerbattle_single TRAINER_AIDAN, Route127_Text_AidanIntro, Route127_Text_AidanDefeat
 # 51 "data/maps/Route127/scripts.pory"
-	msgbox Route127_Text_AidanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route127_Text_AidanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 52 "data/maps/Route127/scripts.pory"
 	end
 # 53 "data/maps/Route127/scripts.pory"

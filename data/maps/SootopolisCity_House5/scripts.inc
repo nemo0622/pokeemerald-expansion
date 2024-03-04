@@ -9,7 +9,7 @@ SootopolisCity_House5_MapScripts::
 # 5 "data/maps/SootopolisCity_House5/scripts.pory"
 SootopolisCity_House5_EventScript_Maniac::
 # 6 "data/maps/SootopolisCity_House5/scripts.pory"
-	msgbox SootopolisCity_House5_Text_SootopolisMtPyreConnection, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House5_Text_SootopolisMtPyreConnection, MSGBOX_NPC, MUGSHOT_MANIAC
 # 7 "data/maps/SootopolisCity_House5/scripts.pory"
 	end
 # 8 "data/maps/SootopolisCity_House5/scripts.pory"

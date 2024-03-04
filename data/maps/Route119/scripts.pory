@@ -324,17 +324,17 @@ Route119_EventScript_WeatherInstituteSign::
 
 Route119_EventScript_Brent::
 	trainerbattle_single TRAINER_BRENT, Route119_Text_BrentIntro, Route119_Text_BrentDefeat
-	msgbox Route119_Text_BrentPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_BrentPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 	end
 
 Route119_EventScript_Donald::
 	trainerbattle_single TRAINER_DONALD, Route119_Text_DonaldIntro, Route119_Text_DonaldDefeat
-	msgbox Route119_Text_DonaldPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_DonaldPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 	end
 
 Route119_EventScript_Taylor::
 	trainerbattle_single TRAINER_TAYLOR, Route119_Text_TaylorIntro, Route119_Text_TaylorDefeat
-	msgbox Route119_Text_TaylorPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_TaylorPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 	end
 
 Route119_EventScript_Doug::
@@ -396,12 +396,12 @@ Route119_EventScript_RematchCatherine::
 
 Route119_EventScript_Hugh::
 	trainerbattle_single TRAINER_HUGH, Route119_Text_HughIntro, Route119_Text_HughDefeat
-	msgbox Route119_Text_HughPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_HughPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 Route119_EventScript_Phil::
 	trainerbattle_single TRAINER_PHIL, Route119_Text_PhilIntro, Route119_Text_PhilDefeat
-	msgbox Route119_Text_PhilPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_PhilPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 Route119_EventScript_Yasu::
@@ -426,12 +426,12 @@ Route119_EventScript_Chris::
 
 Route119_EventScript_Fabian::
 	trainerbattle_single TRAINER_FABIAN, Route119_Text_FabianIntro, Route119_Text_FabianDefeat
-	msgbox Route119_Text_FabianPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_FabianPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 Route119_EventScript_Dayton::
 	trainerbattle_single TRAINER_DAYTON, Route119_Text_DaytonIntro, Route119_Text_DaytonDefeat
-	msgbox Route119_Text_DaytonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_DaytonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 Route119_EventScript_Rachel::

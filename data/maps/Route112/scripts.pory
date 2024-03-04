@@ -102,7 +102,7 @@ Route112_EventScript_Carol::
 
 Route112_EventScript_Bryant::
 	trainerbattle_single TRAINER_BRYANT, Route112_Text_BryantIntro, Route112_Text_BryantDefeat
-	msgbox Route112_Text_BryantPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route112_Text_BryantPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 Route112_EventScript_Shayla::

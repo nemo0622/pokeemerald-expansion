@@ -9,7 +9,7 @@ LilycoveCity_House4_MapScripts::
 # 5 "data/maps/LilycoveCity_House4/scripts.pory"
 LilycoveCity_House4_EventScript_Man1::
 # 6 "data/maps/LilycoveCity_House4/scripts.pory"
-	msgbox_mugshot LilycoveCity_House4_Text_MysteriesAtBottomOfSea, MSGBOX_NPC, MUGSHOT_MAN1
+	msgbox_mugshot LilycoveCity_House4_Text_MysteriesAtBottomOfSea, MSGBOX_NPC, MUGSHOT_MAN4
 # 7 "data/maps/LilycoveCity_House4/scripts.pory"
 	end
 # 8 "data/maps/LilycoveCity_House4/scripts.pory"

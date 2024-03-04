@@ -43,7 +43,7 @@ MtPyre_2F_EventScript_Mark::
 # 22 "data/maps/MtPyre_2F/scripts.pory"
 	trainerbattle_single TRAINER_MARK, MtPyre_2F_Text_MarkIntro, MtPyre_2F_Text_MarkDefeat
 # 23 "data/maps/MtPyre_2F/scripts.pory"
-	msgbox MtPyre_2F_Text_MarkPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_2F_Text_MarkPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 24 "data/maps/MtPyre_2F/scripts.pory"
 	end
 # 25 "data/maps/MtPyre_2F/scripts.pory"
@@ -53,7 +53,7 @@ MtPyre_2F_EventScript_Luke::
 # 27 "data/maps/MtPyre_2F/scripts.pory"
 	trainerbattle_double TRAINER_DEZ_AND_LUKE, MtPyre_2F_Text_LukeIntro, MtPyre_2F_Text_LukeDefeat, MtPyre_2F_Text_LukeNotEnoughMons
 # 28 "data/maps/MtPyre_2F/scripts.pory"
-	msgbox MtPyre_2F_Text_LukePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_2F_Text_LukePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 # 29 "data/maps/MtPyre_2F/scripts.pory"
 	end
 # 30 "data/maps/MtPyre_2F/scripts.pory"

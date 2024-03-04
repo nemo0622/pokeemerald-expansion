@@ -5,7 +5,7 @@ MossdeepCity_House2_MapScripts::
 	.byte 0
 
 MossdeepCity_House2_EventScript_Man::
-	msgbox MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree, MSGBOX_NPC, MUGSHOT_MAN4
 	end
 
 MossdeepCity_House2_EventScript_Twin::

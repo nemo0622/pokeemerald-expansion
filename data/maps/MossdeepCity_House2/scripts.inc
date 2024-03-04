@@ -13,7 +13,7 @@ MossdeepCity_House2_MapScripts::
 # 7 "data/maps/MossdeepCity_House2/scripts.pory"
 MossdeepCity_House2_EventScript_Man::
 # 8 "data/maps/MossdeepCity_House2/scripts.pory"
-	msgbox MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree, MSGBOX_NPC, MUGSHOT_MAN4
 # 9 "data/maps/MossdeepCity_House2/scripts.pory"
 	end
 # 10 "data/maps/MossdeepCity_House2/scripts.pory"

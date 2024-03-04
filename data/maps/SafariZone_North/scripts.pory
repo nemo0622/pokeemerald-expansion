@@ -7,7 +7,7 @@ SafariZone_North_EventScript_Fisherman::
 	end
 
 SafariZone_North_EventScript_Man::
-	msgbox SafariZone_North_Text_Man, MSGBOX_NPC
+	msgbox_mugshot SafariZone_North_Text_Man, MSGBOX_NPC, MUGSHOT_MAN4
 	end
 
 `

@@ -985,7 +985,7 @@ MauvilleCity_GameCorner_EventScript_Maniac::
 # 493 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	faceplayer
 # 494 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_DifficultToStopOn7, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_DifficultToStopOn7, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 495 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 # 496 "data/maps/MauvilleCity_GameCorner/scripts.pory"

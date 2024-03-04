@@ -911,7 +911,7 @@ Route109_EventScript_Paul::
 # 456 "data/maps/Route109/scripts.pory"
 	trainerbattle_double TRAINER_MEL_AND_PAUL, Route109_Text_PaulIntro, Route109_Text_PaulDefeated, Route109_Text_PaulNotEnoughPokemon
 # 457 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_PaulPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_PaulPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 # 458 "data/maps/Route109/scripts.pory"
 	end
 # 459 "data/maps/Route109/scripts.pory"
@@ -951,7 +951,7 @@ Route109_EventScript_Elijah::
 # 476 "data/maps/Route109/scripts.pory"
 	trainerbattle_single TRAINER_ELIJAH, Route109_Text_ElijahIntro, Route109_Text_ElijahDefeated
 # 477 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 478 "data/maps/Route109/scripts.pory"
 	end
 # 479 "data/maps/Route109/scripts.pory"

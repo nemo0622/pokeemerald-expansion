@@ -53,7 +53,7 @@ Route105_EventScript_Imani::
 
 Route105_EventScript_Josue::
 	trainerbattle_single TRAINER_JOSUE, Route105_Text_JosueIntro, Route105_Text_JosueDefeated
-	msgbox Route105_Text_JosuePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route105_Text_JosuePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 Route105_EventScript_Andres::

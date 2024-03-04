@@ -196,7 +196,7 @@ OldaleTown_EventScript_FootprintsMan::
 	lock
 	faceplayer
 	goto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_NotBlockingPath
-	msgbox OldaleTown_Text_DiscoveredFootprints, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Text_DiscoveredFootprints, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	closemessage
 	applymovement LOCALID_FOOTPRINTS_MAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -208,7 +208,7 @@ OldaleTown_EventScript_BlockedPath::
 	applymovement OBJ_EVENT_ID_PLAYER, OldaleTown_Movement_PlayerStepBack
 	applymovement LOCALID_FOOTPRINTS_MAN, OldaleTown_Movement_BackUp
 	waitmovement 0
-	msgbox OldaleTown_Text_WaitDontComeInHere, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Text_WaitDontComeInHere, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	closemessage
 	applymovement LOCALID_FOOTPRINTS_MAN, OldaleTown_Movement_ReturnToOriginalPosition
 	waitmovement 0
@@ -216,7 +216,7 @@ OldaleTown_EventScript_BlockedPath::
 	end
 
 OldaleTown_EventScript_NotBlockingPath::
-	msgbox OldaleTown_Text_FinishedSketchingFootprints, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Text_FinishedSketchingFootprints, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	release
 	end
 

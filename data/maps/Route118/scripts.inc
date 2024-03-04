@@ -431,7 +431,7 @@ Route118_EventScript_Dalton::
 # 216 "data/maps/Route118/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route118_EventScript_RematchDalton
 # 217 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_DaltonPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_DaltonPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN5
 # 218 "data/maps/Route118/scripts.pory"
 	release
 # 219 "data/maps/Route118/scripts.pory"
@@ -445,7 +445,7 @@ Route118_EventScript_RegisterDalton::
 # 223 "data/maps/Route118/scripts.pory"
 	waitmovement 0
 # 224 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_DaltonRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_DaltonRegister, MSGBOX_DEFAULT, MUGSHOT_MAN5
 # 225 "data/maps/Route118/scripts.pory"
 	register_matchcall TRAINER_DALTON_1
 # 226 "data/maps/Route118/scripts.pory"
@@ -459,7 +459,7 @@ Route118_EventScript_RematchDalton::
 # 230 "data/maps/Route118/scripts.pory"
 	trainerbattle_rematch TRAINER_DALTON_1, Route118_Text_DaltonRematchIntro, Route118_Text_DaltonRematchDefeat
 # 231 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_DaltonPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route118_Text_DaltonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 232 "data/maps/Route118/scripts.pory"
 	end
 # 233 "data/maps/Route118/scripts.pory"
@@ -469,7 +469,7 @@ Route118_EventScript_Perry::
 # 235 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_PERRY, Route118_Text_PerryIntro, Route118_Text_PerryDefeat
 # 236 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_PerryPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route118_Text_PerryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 237 "data/maps/Route118/scripts.pory"
 	end
 # 238 "data/maps/Route118/scripts.pory"
@@ -479,7 +479,7 @@ Route118_EventScript_Chester::
 # 240 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_CHESTER, Route118_Text_ChesterIntro, Route118_Text_ChesterDefeat
 # 241 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_ChesterPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route118_Text_ChesterPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 242 "data/maps/Route118/scripts.pory"
 	end
 # 243 "data/maps/Route118/scripts.pory"

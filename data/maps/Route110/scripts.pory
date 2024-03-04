@@ -180,21 +180,21 @@ Route110_EventScript_Edwin::
 	trainerbattle_single TRAINER_EDWIN_1, Route110_Text_EdwinIntro, Route110_Text_EdwinDefeated, Route110_EventScript_EdwinRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_EdwinRematch
-	msgbox Route110_Text_EdwinPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_EdwinPostBattle, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	release
 	end
 
 Route110_EventScript_EdwinRegisterMatchCallAfterBattle::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route110_Text_EdwinRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_EdwinRegister, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	register_matchcall TRAINER_EDWIN_1
 	release
 	end
 
 Route110_EventScript_EdwinRematch::
 	trainerbattle_rematch TRAINER_EDWIN_1, Route110_Text_EdwinRematchIntro, Route110_Text_EdwinRematchDefeated
-	msgbox Route110_Text_EdwinRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_EdwinRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 	end
 
 Route110_EventScript_Dale::
@@ -295,7 +295,7 @@ Route110_EventScript_Kaleb::
 
 Route110_EventScript_Joseph::
 	trainerbattle_single TRAINER_JOSEPH, Route110_Text_JosephIntro, Route110_Text_JosephDefeated
-	msgbox Route110_Text_JosephPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_JosephPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 Route110_EventScript_Alyssa::

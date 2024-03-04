@@ -23,7 +23,7 @@ MtPyre_1F_EventScript_PokefanF::
 	end
 
 MtPyre_1F_EventScript_Man::
-	msgbox MtPyre_1F_Text_RestingPlaceOfZigzagoon, MSGBOX_NPC
+	msgbox_mugshot MtPyre_1F_Text_RestingPlaceOfZigzagoon, MSGBOX_NPC, MUGSHOT_MAN4
 	end
 
 MtPyre_1F_Text_TakeThisForYourOwnGood:

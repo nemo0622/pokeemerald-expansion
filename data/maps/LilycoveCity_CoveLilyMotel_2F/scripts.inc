@@ -69,7 +69,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_ShowDiploma::
 # 35 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 LilycoveCity_CoveLilyMotel_2F_EventScript_Programmer::
 # 36 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
-	msgbox LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer, MSGBOX_NPC, MUGSHOT_MAN4
 # 37 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 	end
 # 38 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"

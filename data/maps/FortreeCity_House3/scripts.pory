@@ -3,7 +3,7 @@ FortreeCity_House3_MapScripts::
 	.byte 0
 
 FortreeCity_House3_EventScript_Maniac::
-	msgbox FortreeCity_House3_Text_MetStevenHadAmazingPokemon, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House3_Text_MetStevenHadAmazingPokemon, MSGBOX_NPC, MUGSHOT_MANIAC
 	end
 
 FortreeCity_House3_EventScript_SchoolKidM::

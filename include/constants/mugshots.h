@@ -54,5 +54,8 @@
 #define MUGSHOT_MAN1  49
 #define MUGSHOT_MAN2  50
 #define MUGSHOT_MAN3  51
+#define MUGSHOT_MAN4  52
+#define MUGSHOT_MAN5  53
+#define MUGSHOT_MANIAC  54
 
 #endif

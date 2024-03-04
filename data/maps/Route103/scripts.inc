@@ -545,7 +545,7 @@ Route103_EventScript_Marcos::
 # 273 "data/maps/Route103/scripts.pory"
 	trainerbattle_single TRAINER_MARCOS, Route103_Text_MarcosIntro, Route103_Text_MarcosDefeated
 # 274 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_MarcosPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_MarcosPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 275 "data/maps/Route103/scripts.pory"
 	end
 # 276 "data/maps/Route103/scripts.pory"

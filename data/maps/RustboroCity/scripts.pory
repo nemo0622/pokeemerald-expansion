@@ -245,7 +245,7 @@ RustboroCity_EventScript_LittleGirl::
 RustboroCity_EventScript_Man2::
 	lock
 	faceplayer
-	msgbox RustboroCity_Text_TradePokemonGrowFast, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_TradePokemonGrowFast, MSGBOX_DEFAULT, MUGSHOT_MAN4
 	release
 	end
 

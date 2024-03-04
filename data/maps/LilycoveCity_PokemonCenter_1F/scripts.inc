@@ -87,7 +87,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Maniac::
 # 44 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
 	goto_if_set FLAG_BADGE07_GET, LilycoveCity_PokemonCenter_1F_EventScript_ManiacBadTeamGone
 # 45 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
-	msgbox LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 46 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
 	release
 # 47 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
@@ -97,7 +97,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Maniac::
 # 49 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
 LilycoveCity_PokemonCenter_1F_EventScript_ManiacBadTeamGone::
 # 50 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
-	msgbox LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 51 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
 	release
 # 52 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"

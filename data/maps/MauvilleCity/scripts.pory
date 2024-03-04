@@ -28,7 +28,7 @@ MauvilleCity_EventScript_Boy::
 	end
 
 MauvilleCity_EventScript_Maniac::
-	msgbox MauvilleCity_Text_AllSortsOfPeopleComeThrough, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Text_AllSortsOfPeopleComeThrough, MSGBOX_NPC, MUGSHOT_MANIAC
 	end
 
 MauvilleCity_EventScript_Woman::

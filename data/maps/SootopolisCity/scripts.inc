@@ -2575,7 +2575,7 @@ SootopolisCity_EventScript_Maniac::
 # 1288 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_ManiacRayquaza
 # 1289 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_SeeingLegendWithOwnEyes, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_SeeingLegendWithOwnEyes, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 1290 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 1291 "data/maps/SootopolisCity/scripts.pory"
@@ -2591,7 +2591,7 @@ SootopolisCity_EventScript_Maniac::
 # 1296 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_ManiacRayquaza::
 # 1297 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_SawLegendWithOwnEyes, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_SawLegendWithOwnEyes, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 1298 "data/maps/SootopolisCity/scripts.pory"
 	releaseall
 # 1299 "data/maps/SootopolisCity/scripts.pory"

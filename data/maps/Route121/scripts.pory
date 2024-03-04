@@ -134,12 +134,12 @@ Route121_EventScript_RematchJessica::
 
 Route121_EventScript_Cale::
 	trainerbattle_single TRAINER_CALE, Route121_Text_CaleIntro, Route121_Text_CaleDefeat
-	msgbox Route121_Text_CalePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_CalePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 	end
 
 Route121_EventScript_Myles::
 	trainerbattle_single TRAINER_MYLES, Route121_Text_MylesIntro, Route121_Text_MylesDefeat
-	msgbox Route121_Text_MylesPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_MylesPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 	end
 
 Route121_EventScript_Pat::

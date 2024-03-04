@@ -73,7 +73,7 @@ Route110_TrickHousePuzzle6_EventScript_Benny::
 # 37 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
 	trainerbattle_single TRAINER_BENNY, Route110_TrickHousePuzzle6_Text_BennyIntro, Route110_TrickHousePuzzle6_Text_BennyDefeat
 # 38 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
-	msgbox Route110_TrickHousePuzzle6_Text_BennyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle6_Text_BennyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 39 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
 	end
 # 40 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"

@@ -17,6 +17,6 @@ SafariZone_North_EventScript_Fisherman::
 # 9 "data/maps/SafariZone_North/scripts.pory"
 SafariZone_North_EventScript_Man::
 # 10 "data/maps/SafariZone_North/scripts.pory"
-	msgbox SafariZone_North_Text_Man, MSGBOX_NPC
+	msgbox_mugshot SafariZone_North_Text_Man, MSGBOX_NPC, MUGSHOT_MAN4
 # 11 "data/maps/SafariZone_North/scripts.pory"
 	end

@@ -160,27 +160,27 @@ Route116_EventScript_GlassesMan::
 	goto_if_eq VAR_RESULT, TRUE, Route116_EventScript_PlayerHasGlasses
 	specialvar VAR_RESULT, FoundBlackGlasses
 	goto_if_eq VAR_RESULT, TRUE, Route116_EventScript_FoundGlassesNotOnPlayer
-	msgbox Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	release
 	end
 
 Route116_EventScript_FoundGlassesNotOnPlayer::
-	msgbox Route116_Text_CantFindGlassesNotHere, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_CantFindGlassesNotHere, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	closemessage
 	goto Route116_EventScript_GlassesManExit
 	end
 
 Route116_EventScript_PlayerHasGlasses::
-	msgbox Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT
-	msgbox Route116_Text_MayISeeThoseGlasses, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT, MUGSHOT_MANIAC
+	msgbox_mugshot Route116_Text_MayISeeThoseGlasses, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	specialvar VAR_RESULT, FoundBlackGlasses
 	goto_if_eq VAR_RESULT, TRUE, Route116_EventScript_FoundGlassesOnPlayer
-	msgbox Route116_Text_NotWhatImLookingFor, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_NotWhatImLookingFor, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	release
 	end
 
 Route116_EventScript_FoundGlassesOnPlayer::
-	msgbox Route116_Text_NotWhatImLookingForMaybeTheyArentHere, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_NotWhatImLookingForMaybeTheyArentHere, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	closemessage
 	goto Route116_EventScript_GlassesManExit
 	end

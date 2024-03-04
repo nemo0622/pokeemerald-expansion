@@ -53,7 +53,7 @@ Route114_EventScript_Man::
 # 27 "data/maps/Route114/scripts.pory"
 	goto_if_set FLAG_DAILY_ROUTE_114_RECEIVED_BERRY, Route114_EventScript_ReceivedBerry
 # 28 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_LoveUsingBerryCrushShareBerry, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_Text_LoveUsingBerryCrushShareBerry, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 29 "data/maps/Route114/scripts.pory"
 	random NUM_ROUTE_114_MAN_BERRIES
 # 30 "data/maps/Route114/scripts.pory"
@@ -67,7 +67,7 @@ Route114_EventScript_Man::
 # 34 "data/maps/Route114/scripts.pory"
 	setflag FLAG_DAILY_ROUTE_114_RECEIVED_BERRY
 # 35 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_TryBerryCrushWithFriends, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_Text_TryBerryCrushWithFriends, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 36 "data/maps/Route114/scripts.pory"
 	release
 # 37 "data/maps/Route114/scripts.pory"
@@ -77,7 +77,7 @@ Route114_EventScript_Man::
 # 39 "data/maps/Route114/scripts.pory"
 Route114_EventScript_ReceivedBerry::
 # 40 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_FunToThinkAboutBerries, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_Text_FunToThinkAboutBerries, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 41 "data/maps/Route114/scripts.pory"
 	release
 # 42 "data/maps/Route114/scripts.pory"
@@ -211,7 +211,7 @@ Route114_EventScript_Steve::
 # 106 "data/maps/Route114/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route114_EventScript_RematchSteve
 # 107 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_StevePostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_Text_StevePostBattle, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 108 "data/maps/Route114/scripts.pory"
 	release
 # 109 "data/maps/Route114/scripts.pory"
@@ -225,7 +225,7 @@ Route114_EventScript_RegisterSteve::
 # 113 "data/maps/Route114/scripts.pory"
 	waitmovement 0
 # 114 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_SteveRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_Text_SteveRegister, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 115 "data/maps/Route114/scripts.pory"
 	register_matchcall TRAINER_STEVE_1
 # 116 "data/maps/Route114/scripts.pory"
@@ -239,7 +239,7 @@ Route114_EventScript_RematchSteve::
 # 120 "data/maps/Route114/scripts.pory"
 	trainerbattle_rematch TRAINER_STEVE_1, Route114_Text_SteveRematchIntro, Route114_Text_SteveRematchDefeat
 # 121 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_StevePostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_StevePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 122 "data/maps/Route114/scripts.pory"
 	end
 # 123 "data/maps/Route114/scripts.pory"
@@ -253,7 +253,7 @@ Route114_EventScript_Bernie::
 # 127 "data/maps/Route114/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route114_EventScript_RematchBernie
 # 128 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_BerniePostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_Text_BerniePostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN5
 # 129 "data/maps/Route114/scripts.pory"
 	release
 # 130 "data/maps/Route114/scripts.pory"
@@ -267,7 +267,7 @@ Route114_EventScript_RegisterBernie::
 # 134 "data/maps/Route114/scripts.pory"
 	waitmovement 0
 # 135 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_BernieRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_Text_BernieRegister, MSGBOX_DEFAULT, MUGSHOT_MAN5
 # 136 "data/maps/Route114/scripts.pory"
 	register_matchcall TRAINER_BERNIE_1
 # 137 "data/maps/Route114/scripts.pory"
@@ -281,7 +281,7 @@ Route114_EventScript_RematchBernie::
 # 141 "data/maps/Route114/scripts.pory"
 	trainerbattle_rematch TRAINER_BERNIE_1, Route114_Text_BernieRematchIntro, Route114_Text_BernieRematchDefeat
 # 142 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_BerniePostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_BerniePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 143 "data/maps/Route114/scripts.pory"
 	end
 # 144 "data/maps/Route114/scripts.pory"

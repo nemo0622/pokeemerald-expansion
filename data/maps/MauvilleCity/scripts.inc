@@ -59,7 +59,7 @@ MauvilleCity_EventScript_Boy::
 # 30 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_Maniac::
 # 31 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_AllSortsOfPeopleComeThrough, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Text_AllSortsOfPeopleComeThrough, MSGBOX_NPC, MUGSHOT_MANIAC
 # 32 "data/maps/MauvilleCity/scripts.pory"
 	end
 # 33 "data/maps/MauvilleCity/scripts.pory"

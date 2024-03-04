@@ -651,7 +651,7 @@ Route119_EventScript_Brent::
 # 326 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_BRENT, Route119_Text_BrentIntro, Route119_Text_BrentDefeat
 # 327 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_BrentPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_BrentPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 328 "data/maps/Route119/scripts.pory"
 	end
 # 329 "data/maps/Route119/scripts.pory"
@@ -661,7 +661,7 @@ Route119_EventScript_Donald::
 # 331 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_DONALD, Route119_Text_DonaldIntro, Route119_Text_DonaldDefeat
 # 332 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_DonaldPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_DonaldPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 333 "data/maps/Route119/scripts.pory"
 	end
 # 334 "data/maps/Route119/scripts.pory"
@@ -671,7 +671,7 @@ Route119_EventScript_Taylor::
 # 336 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_TAYLOR, Route119_Text_TaylorIntro, Route119_Text_TaylorDefeat
 # 337 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_TaylorPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_TaylorPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 338 "data/maps/Route119/scripts.pory"
 	end
 # 339 "data/maps/Route119/scripts.pory"
@@ -795,7 +795,7 @@ Route119_EventScript_Hugh::
 # 398 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_HUGH, Route119_Text_HughIntro, Route119_Text_HughDefeat
 # 399 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_HughPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_HughPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 400 "data/maps/Route119/scripts.pory"
 	end
 # 401 "data/maps/Route119/scripts.pory"
@@ -805,7 +805,7 @@ Route119_EventScript_Phil::
 # 403 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_PHIL, Route119_Text_PhilIntro, Route119_Text_PhilDefeat
 # 404 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_PhilPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_PhilPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 405 "data/maps/Route119/scripts.pory"
 	end
 # 406 "data/maps/Route119/scripts.pory"
@@ -855,7 +855,7 @@ Route119_EventScript_Fabian::
 # 428 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_FABIAN, Route119_Text_FabianIntro, Route119_Text_FabianDefeat
 # 429 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_FabianPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_FabianPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 430 "data/maps/Route119/scripts.pory"
 	end
 # 431 "data/maps/Route119/scripts.pory"
@@ -865,7 +865,7 @@ Route119_EventScript_Dayton::
 # 433 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_DAYTON, Route119_Text_DaytonIntro, Route119_Text_DaytonDefeat
 # 434 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_DaytonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_DaytonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 435 "data/maps/Route119/scripts.pory"
 	end
 # 436 "data/maps/Route119/scripts.pory"

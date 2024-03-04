@@ -539,7 +539,7 @@ Route120_EventScript_Colin::
 # 270 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_COLIN, Route120_Text_ColinIntro, Route120_Text_ColinDefeat
 # 271 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_ColinPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_ColinPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 272 "data/maps/Route120/scripts.pory"
 	end
 # 273 "data/maps/Route120/scripts.pory"
@@ -553,7 +553,7 @@ Route120_EventScript_Robert::
 # 277 "data/maps/Route120/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route120_EventScript_RematchRobert
 # 278 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_RobertPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_RobertPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN5
 # 279 "data/maps/Route120/scripts.pory"
 	release
 # 280 "data/maps/Route120/scripts.pory"
@@ -567,7 +567,7 @@ Route120_EventScript_RegisterRobert::
 # 284 "data/maps/Route120/scripts.pory"
 	waitmovement 0
 # 285 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_RobertRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_RobertRegister, MSGBOX_DEFAULT, MUGSHOT_MAN5
 # 286 "data/maps/Route120/scripts.pory"
 	register_matchcall TRAINER_ROBERT_1
 # 287 "data/maps/Route120/scripts.pory"
@@ -581,7 +581,7 @@ Route120_EventScript_RematchRobert::
 # 291 "data/maps/Route120/scripts.pory"
 	trainerbattle_rematch TRAINER_ROBERT_1, Route120_Text_RobertRematchIntro, Route120_Text_RobertRematchDefeat
 # 292 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_RobertPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_RobertPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 293 "data/maps/Route120/scripts.pory"
 	end
 # 294 "data/maps/Route120/scripts.pory"
@@ -615,7 +615,7 @@ Route120_EventScript_Jeffrey::
 # 308 "data/maps/Route120/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route120_EventScript_RematchJeffrey
 # 309 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_JeffreyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_JeffreyPostBattle, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 310 "data/maps/Route120/scripts.pory"
 	release
 # 311 "data/maps/Route120/scripts.pory"
@@ -629,7 +629,7 @@ Route120_EventScript_RegisterJeffrey::
 # 315 "data/maps/Route120/scripts.pory"
 	waitmovement 0
 # 316 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_JeffreyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route120_Text_JeffreyRegister, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 317 "data/maps/Route120/scripts.pory"
 	register_matchcall TRAINER_JEFFREY_1
 # 318 "data/maps/Route120/scripts.pory"
@@ -643,7 +643,7 @@ Route120_EventScript_RematchJeffrey::
 # 322 "data/maps/Route120/scripts.pory"
 	trainerbattle_rematch TRAINER_JEFFREY_1, Route120_Text_JeffreyRematchIntro, Route120_Text_JeffreyRematchDefeat
 # 323 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_JeffreyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_JeffreyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 324 "data/maps/Route120/scripts.pory"
 	end
 # 325 "data/maps/Route120/scripts.pory"

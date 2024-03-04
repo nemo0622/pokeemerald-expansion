@@ -9,7 +9,7 @@ PacifidlogTown_House1_MapScripts::
 # 5 "data/maps/PacifidlogTown_House1/scripts.pory"
 PacifidlogTown_House1_EventScript_Man::
 # 6 "data/maps/PacifidlogTown_House1/scripts.pory"
-	msgbox PacifidlogTown_House1_Text_RegiStory, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_House1_Text_RegiStory, MSGBOX_NPC, MUGSHOT_MAN5
 # 7 "data/maps/PacifidlogTown_House1/scripts.pory"
 	end
 # 8 "data/maps/PacifidlogTown_House1/scripts.pory"

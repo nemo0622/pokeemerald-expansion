@@ -125,6 +125,12 @@ static const u32 sMugshotImg_Man2[] = INCBIN_U32("graphics/mugshots/pics/mugshot
 static const u16 sMugshotPal_Man2[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_man2.gbapal");
 static const u32 sMugshotImg_Man3[] = INCBIN_U32("graphics/mugshots/pics/mugshot_man3.4bpp.lz");
 static const u16 sMugshotPal_Man3[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_man3.gbapal");
+static const u32 sMugshotImg_Man4[] = INCBIN_U32("graphics/mugshots/pics/mugshot_man4.4bpp.lz");
+static const u16 sMugshotPal_Man4[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_man4.gbapal");
+static const u32 sMugshotImg_Man5[] = INCBIN_U32("graphics/mugshots/pics/mugshot_man5.4bpp.lz");
+static const u16 sMugshotPal_Man5[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_man5.gbapal");
+static const u32 sMugshotImg_Maniac[] = INCBIN_U32("graphics/mugshots/pics/mugshot_maniac.4bpp.lz");
+static const u16 sMugshotPal_Maniac[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_maniac.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -180,6 +186,9 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_MAN1] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Man1, .palette = sMugshotPal_Man1},
     [MUGSHOT_MAN2] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Man2, .palette = sMugshotPal_Man2},
     [MUGSHOT_MAN3] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Man3, .palette = sMugshotPal_Man3},
+    [MUGSHOT_MAN4] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Man4, .palette = sMugshotPal_Man4},
+    [MUGSHOT_MAN5] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Man5, .palette = sMugshotPal_Man5},
+    [MUGSHOT_MANIAC] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Maniac, .palette = sMugshotPal_Maniac},
 };
 
 

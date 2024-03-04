@@ -363,7 +363,7 @@ Route110_EventScript_Edwin::
 # 182 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_EdwinRematch
 # 183 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_EdwinPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_EdwinPostBattle, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 184 "data/maps/Route110/scripts.pory"
 	release
 # 185 "data/maps/Route110/scripts.pory"
@@ -377,7 +377,7 @@ Route110_EventScript_EdwinRegisterMatchCallAfterBattle::
 # 189 "data/maps/Route110/scripts.pory"
 	waitmovement 0
 # 190 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_EdwinRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_EdwinRegister, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 191 "data/maps/Route110/scripts.pory"
 	register_matchcall TRAINER_EDWIN_1
 # 192 "data/maps/Route110/scripts.pory"
@@ -391,7 +391,7 @@ Route110_EventScript_EdwinRematch::
 # 196 "data/maps/Route110/scripts.pory"
 	trainerbattle_rematch TRAINER_EDWIN_1, Route110_Text_EdwinRematchIntro, Route110_Text_EdwinRematchDefeated
 # 197 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_EdwinRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_EdwinRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 198 "data/maps/Route110/scripts.pory"
 	end
 # 199 "data/maps/Route110/scripts.pory"
@@ -593,7 +593,7 @@ Route110_EventScript_Joseph::
 # 297 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_JOSEPH, Route110_Text_JosephIntro, Route110_Text_JosephDefeated
 # 298 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_JosephPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_JosephPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 299 "data/maps/Route110/scripts.pory"
 	end
 # 300 "data/maps/Route110/scripts.pory"

@@ -131,7 +131,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron1::
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron2::
-	msgbox SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel, MSGBOX_NPC, MUGSHOT_MANIAC
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron3::

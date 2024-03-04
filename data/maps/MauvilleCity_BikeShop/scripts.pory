@@ -98,7 +98,7 @@ MauvilleCity_BikeShop_EventScript_SwitchMachForAcro::
 	end
 
 MauvilleCity_BikeShop_EventScript_Assistant::
-	msgbox MauvilleCity_BikeShop_Text_HandbooksAreInBack, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_BikeShop_Text_HandbooksAreInBack, MSGBOX_NPC, MUGSHOT_MAN5
 	end
 
 MauvilleCity_BikeShop_EventScript_MachBikeHandbook::

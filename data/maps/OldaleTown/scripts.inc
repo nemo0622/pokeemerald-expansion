@@ -395,7 +395,7 @@ OldaleTown_EventScript_FootprintsMan::
 # 198 "data/maps/OldaleTown/scripts.pory"
 	goto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_NotBlockingPath
 # 199 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_Text_DiscoveredFootprints, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Text_DiscoveredFootprints, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 200 "data/maps/OldaleTown/scripts.pory"
 	closemessage
 # 201 "data/maps/OldaleTown/scripts.pory"
@@ -419,7 +419,7 @@ OldaleTown_EventScript_BlockedPath::
 # 210 "data/maps/OldaleTown/scripts.pory"
 	waitmovement 0
 # 211 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_Text_WaitDontComeInHere, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Text_WaitDontComeInHere, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 212 "data/maps/OldaleTown/scripts.pory"
 	closemessage
 # 213 "data/maps/OldaleTown/scripts.pory"
@@ -435,7 +435,7 @@ OldaleTown_EventScript_BlockedPath::
 # 218 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_EventScript_NotBlockingPath::
 # 219 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_Text_FinishedSketchingFootprints, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Text_FinishedSketchingFootprints, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 220 "data/maps/OldaleTown/scripts.pory"
 	release
 # 221 "data/maps/OldaleTown/scripts.pory"

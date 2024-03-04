@@ -9,7 +9,7 @@ FortreeCity_House3_MapScripts::
 # 5 "data/maps/FortreeCity_House3/scripts.pory"
 FortreeCity_House3_EventScript_Maniac::
 # 6 "data/maps/FortreeCity_House3/scripts.pory"
-	msgbox FortreeCity_House3_Text_MetStevenHadAmazingPokemon, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House3_Text_MetStevenHadAmazingPokemon, MSGBOX_NPC, MUGSHOT_MANIAC
 # 7 "data/maps/FortreeCity_House3/scripts.pory"
 	end
 # 8 "data/maps/FortreeCity_House3/scripts.pory"

@@ -245,7 +245,7 @@ Route113_EventScript_Coby::
 # 123 "data/maps/Route113/scripts.pory"
 	trainerbattle_single TRAINER_COBY, Route113_Text_CobyIntro, Route113_Text_CobyDefeat
 # 124 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_CobyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_CobyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 125 "data/maps/Route113/scripts.pory"
 	end
 # 126 "data/maps/Route113/scripts.pory"
@@ -265,7 +265,7 @@ Route113_EventScript_Wyatt::
 # 133 "data/maps/Route113/scripts.pory"
 	trainerbattle_single TRAINER_WYATT, Route113_Text_WyattIntro, Route113_Text_WyattDefeat
 # 134 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_WyattPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_WyattPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 135 "data/maps/Route113/scripts.pory"
 	end
 # 136 "data/maps/Route113/scripts.pory"

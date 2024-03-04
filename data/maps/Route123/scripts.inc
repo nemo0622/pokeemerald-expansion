@@ -247,7 +247,7 @@ Route123_EventScript_Alberto::
 # 124 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_ALBERTO, Route123_Text_AlbertoIntro, Route123_Text_AlbertoDefeat
 # 125 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_AlbertoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_AlbertoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 126 "data/maps/Route123/scripts.pory"
 	end
 # 127 "data/maps/Route123/scripts.pory"
@@ -257,7 +257,7 @@ Route123_EventScript_Ed::
 # 129 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_ED, Route123_Text_EdIntro, Route123_Text_EdDefeat
 # 130 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_EdPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_EdPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 131 "data/maps/Route123/scripts.pory"
 	end
 # 132 "data/maps/Route123/scripts.pory"
@@ -311,7 +311,7 @@ Route123_EventScript_Fernando::
 # 156 "data/maps/Route123/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchFernando
 # 157 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_FernandoPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_FernandoPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN5
 # 158 "data/maps/Route123/scripts.pory"
 	release
 # 159 "data/maps/Route123/scripts.pory"
@@ -325,7 +325,7 @@ Route123_EventScript_RegisterFernando::
 # 163 "data/maps/Route123/scripts.pory"
 	waitmovement 0
 # 164 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_FernandoRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_FernandoRegister, MSGBOX_DEFAULT, MUGSHOT_MAN5
 # 165 "data/maps/Route123/scripts.pory"
 	register_matchcall TRAINER_FERNANDO_1
 # 166 "data/maps/Route123/scripts.pory"
@@ -339,7 +339,7 @@ Route123_EventScript_RematchFernando::
 # 170 "data/maps/Route123/scripts.pory"
 	trainerbattle_rematch TRAINER_FERNANDO_1, Route123_Text_FernandoRematchIntro, Route123_Text_FernandoRematchDefeat
 # 171 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_FernandoPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_FernandoPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 172 "data/maps/Route123/scripts.pory"
 	end
 # 173 "data/maps/Route123/scripts.pory"

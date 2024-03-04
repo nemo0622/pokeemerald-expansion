@@ -87,7 +87,7 @@ Route114_FossilManiacsTunnel_EventScript_FossilManiac::
 # 44 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route114_FossilManiacsTunnel_EventScript_PlayerHasFossil
 # 45 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
-	msgbox Route114_FossilManiacsTunnel_Text_LookInDesertForFossils, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_FossilManiacsTunnel_Text_LookInDesertForFossils, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 46 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
 	release
 # 47 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
@@ -97,7 +97,7 @@ Route114_FossilManiacsTunnel_EventScript_FossilManiac::
 # 49 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
 Route114_FossilManiacsTunnel_EventScript_PlayerHasFossil::
 # 50 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
-	msgbox Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 51 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
 	release
 # 52 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
@@ -107,7 +107,7 @@ Route114_FossilManiacsTunnel_EventScript_PlayerHasFossil::
 # 54 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
 Route114_FossilManiacsTunnel_EventScript_PlayerRevivedFossil::
 # 55 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
-	msgbox Route114_FossilManiacsTunnel_Text_FossilsAreWonderful, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_FossilManiacsTunnel_Text_FossilsAreWonderful, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 56 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
 	release
 # 57 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"

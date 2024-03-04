@@ -121,7 +121,7 @@ Route113_EventScript_Sophie::
 
 Route113_EventScript_Coby::
 	trainerbattle_single TRAINER_COBY, Route113_Text_CobyIntro, Route113_Text_CobyDefeat
-	msgbox Route113_Text_CobyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_CobyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 Route113_EventScript_Lawrence::
@@ -131,7 +131,7 @@ Route113_EventScript_Lawrence::
 
 Route113_EventScript_Wyatt::
 	trainerbattle_single TRAINER_WYATT, Route113_Text_WyattIntro, Route113_Text_WyattDefeat
-	msgbox Route113_Text_WyattPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_WyattPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 	end
 
 Route113_Text_AshCanBeFashionedIntoGlass:

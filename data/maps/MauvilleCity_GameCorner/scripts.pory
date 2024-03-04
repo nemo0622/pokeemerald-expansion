@@ -491,7 +491,7 @@ MauvilleCity_GameCorner_EventScript_NPCReturnToSlots::
 MauvilleCity_GameCorner_EventScript_Maniac::
 	lock
 	faceplayer
-	msgbox MauvilleCity_GameCorner_Text_DifficultToStopOn7, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_DifficultToStopOn7, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 	end
 

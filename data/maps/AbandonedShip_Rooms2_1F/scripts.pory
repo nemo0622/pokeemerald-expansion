@@ -6,7 +6,7 @@ AbandonedShip_Rooms2_1F_EventScript_Dan::
 	trainerbattle_double TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_Text_DanIntro, AbandonedShip_Rooms2_1F_Text_DanDefeat, AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons, AbandonedShip_Rooms2_1F_EventScript_RegisterDan
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms2_1F_EventScript_DanRematch
-	msgbox AbandonedShip_Rooms2_1F_Text_DanPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot AbandonedShip_Rooms2_1F_Text_DanPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN4
 	release
 	end
 
@@ -18,7 +18,7 @@ AbandonedShip_Rooms2_1F_EventScript_RegisterDan::
 
 AbandonedShip_Rooms2_1F_EventScript_DanRematch::
 	trainerbattle_rematch_double TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_Text_DanRematchIntro, AbandonedShip_Rooms2_1F_Text_DanRematchDefeat, AbandonedShip_Rooms2_1F_Text_DanRematchNotEnoughMons
-	msgbox AbandonedShip_Rooms2_1F_Text_DanPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot AbandonedShip_Rooms2_1F_Text_DanPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 	end
 
 AbandonedShip_Rooms2_1F_EventScript_Kira::

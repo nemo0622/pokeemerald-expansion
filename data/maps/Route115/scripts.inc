@@ -207,7 +207,7 @@ Route115_EventScript_Hector::
 # 104 "data/maps/Route115/scripts.pory"
 	trainerbattle_single TRAINER_HECTOR, Route115_Text_HectorIntro, Route115_Text_HectorDefeat
 # 105 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_HectorPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_HectorPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 106 "data/maps/Route115/scripts.pory"
 	end
 # 107 "data/maps/Route115/scripts.pory"

@@ -93,7 +93,7 @@ SSTidalRooms_EventScript_Jed::
 # 47 "data/maps/SSTidalRooms/scripts.pory"
 	trainerbattle_double TRAINER_LEA_AND_JED, SSTidalRooms_Text_JedIntro, SSTidalRooms_Text_JedDefeat, SSTidalRooms_Text_JedNotEnoughMons
 # 48 "data/maps/SSTidalRooms/scripts.pory"
-	msgbox SSTidalRooms_Text_JedPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_JedPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 # 49 "data/maps/SSTidalRooms/scripts.pory"
 	end
 # 50 "data/maps/SSTidalRooms/scripts.pory"

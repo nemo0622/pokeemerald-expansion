@@ -89,7 +89,7 @@ SafariZone_South_EventScript_Boy::
 # 45 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_South_EventScript_Man::
 # 46 "data/maps/SafariZone_South/scripts.pory"
-	msgbox SafariZone_South_Text_Man, MSGBOX_NPC
+	msgbox_mugshot SafariZone_South_Text_Man, MSGBOX_NPC, MUGSHOT_MAN4
 # 47 "data/maps/SafariZone_South/scripts.pory"
 	end
 # 48 "data/maps/SafariZone_South/scripts.pory"

@@ -265,7 +265,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron1::
 # 133 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron2::
 # 134 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel, MSGBOX_NPC, MUGSHOT_MANIAC
 # 135 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	end
 # 136 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"

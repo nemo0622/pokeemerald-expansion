@@ -15,7 +15,7 @@ AbandonedShip_Rooms2_1F_EventScript_Dan::
 # 8 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms2_1F_EventScript_DanRematch
 # 9 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms2_1F_Text_DanPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot AbandonedShip_Rooms2_1F_Text_DanPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 10 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	release
 # 11 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
@@ -39,7 +39,7 @@ AbandonedShip_Rooms2_1F_EventScript_DanRematch::
 # 20 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	trainerbattle_rematch_double TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_Text_DanRematchIntro, AbandonedShip_Rooms2_1F_Text_DanRematchDefeat, AbandonedShip_Rooms2_1F_Text_DanRematchNotEnoughMons
 # 21 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms2_1F_Text_DanPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot AbandonedShip_Rooms2_1F_Text_DanPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 # 22 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	end
 # 23 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"

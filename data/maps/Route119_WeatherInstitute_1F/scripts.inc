@@ -75,7 +75,7 @@ Route119_WeatherInstitute_1F_EventScript_InstituteWorker1::
 # 38 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	goto_if_eq VAR_0x8004, 2, Route119_WeatherInstitute_1F_EventScript_StudyingRain  @ Both defeated
 # 39 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	msgbox Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 40 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	release
 # 41 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
@@ -93,7 +93,7 @@ Route119_WeatherInstitute_1F_EventScript_LegendaryDefeated::
 # 47 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 Route119_WeatherInstitute_1F_EventScript_StudyingRain::
 # 48 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	msgbox Route119_WeatherInstitute_1F_Text_ProfStudyingRain, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_1F_Text_ProfStudyingRain, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 49 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	release
 # 50 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
@@ -103,7 +103,7 @@ Route119_WeatherInstitute_1F_EventScript_StudyingRain::
 # 52 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 Route119_WeatherInstitute_1F_EventScript_InstituteWorker2::
 # 53 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	msgbox Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo, MSGBOX_NPC
+	msgbox_mugshot Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo, MSGBOX_NPC, MUGSHOT_MAN4
 # 54 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	end
 # 55 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"

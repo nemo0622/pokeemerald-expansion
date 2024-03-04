@@ -49,7 +49,7 @@ MtPyre_1F_EventScript_PokefanF::
 # 25 "data/maps/MtPyre_1F/scripts.pory"
 MtPyre_1F_EventScript_Man::
 # 26 "data/maps/MtPyre_1F/scripts.pory"
-	msgbox MtPyre_1F_Text_RestingPlaceOfZigzagoon, MSGBOX_NPC
+	msgbox_mugshot MtPyre_1F_Text_RestingPlaceOfZigzagoon, MSGBOX_NPC, MUGSHOT_MAN4
 # 27 "data/maps/MtPyre_1F/scripts.pory"
 	end
 # 28 "data/maps/MtPyre_1F/scripts.pory"

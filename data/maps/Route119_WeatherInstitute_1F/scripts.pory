@@ -36,7 +36,7 @@ Route119_WeatherInstitute_1F_EventScript_InstituteWorker1::
 	call_if_set FLAG_DEFEATED_KYOGRE, Route119_WeatherInstitute_1F_EventScript_LegendaryDefeated
 	call_if_set FLAG_DEFEATED_GROUDON, Route119_WeatherInstitute_1F_EventScript_LegendaryDefeated
 	goto_if_eq VAR_0x8004, 2, Route119_WeatherInstitute_1F_EventScript_StudyingRain  @ Both defeated
-	msgbox Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather, MSGBOX_DEFAULT, MUGSHOT_MAN4
 	release
 	end
 
@@ -45,12 +45,12 @@ Route119_WeatherInstitute_1F_EventScript_LegendaryDefeated::
 	return
 
 Route119_WeatherInstitute_1F_EventScript_StudyingRain::
-	msgbox Route119_WeatherInstitute_1F_Text_ProfStudyingRain, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_1F_Text_ProfStudyingRain, MSGBOX_DEFAULT, MUGSHOT_MAN4
 	release
 	end
 
 Route119_WeatherInstitute_1F_EventScript_InstituteWorker2::
-	msgbox Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo, MSGBOX_NPC
+	msgbox_mugshot Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo, MSGBOX_NPC, MUGSHOT_MAN4
 	end
 
 Route119_WeatherInstitute_1F_EventScript_Bed::

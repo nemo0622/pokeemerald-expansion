@@ -203,12 +203,12 @@ MauvilleCity_Gym_EventScript_ClearBarriersAltState::
 
 MauvilleCity_Gym_EventScript_Kirk::
 	trainerbattle_single TRAINER_KIRK, MauvilleCity_Gym_Text_KirkIntro, MauvilleCity_Gym_Text_KirkDefeat
-	msgbox MauvilleCity_Gym_Text_KirkPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MauvilleCity_Gym_Text_KirkPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 MauvilleCity_Gym_EventScript_Shawn::
 	trainerbattle_single TRAINER_SHAWN, MauvilleCity_Gym_Text_ShawnIntro, MauvilleCity_Gym_Text_ShawnDefeat
-	msgbox MauvilleCity_Gym_Text_ShawnPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MauvilleCity_Gym_Text_ShawnPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 MauvilleCity_Gym_EventScript_Ben::
@@ -223,7 +223,7 @@ MauvilleCity_Gym_EventScript_Vivian::
 
 MauvilleCity_Gym_EventScript_Angelo::
 	trainerbattle_single TRAINER_ANGELO, MauvilleCity_Gym_Text_AngeloIntro, MauvilleCity_Gym_Text_AngeloDefeat
-	msgbox MauvilleCity_Gym_Text_AngeloPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MauvilleCity_Gym_Text_AngeloPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 	end
 
 MauvilleCity_Gym_EventScript_GymGuide::

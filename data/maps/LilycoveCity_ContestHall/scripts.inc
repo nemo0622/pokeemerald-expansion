@@ -183,7 +183,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestant3::
 # 92 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 93 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox_mugshot LilycoveCity_ContestHall_Text_IfMonPullsSmartMoveNext, MSGBOX_DEFAULT, MUGSHOT_CAMPER
+	msgbox_mugshot LilycoveCity_ContestHall_Text_IfMonPullsSmartMoveNext, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 94 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 95 "data/maps/LilycoveCity_ContestHall/scripts.pory"

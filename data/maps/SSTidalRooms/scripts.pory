@@ -45,7 +45,7 @@ SSTidalRooms_EventScript_Thomas::
 
 SSTidalRooms_EventScript_Jed::
 	trainerbattle_double TRAINER_LEA_AND_JED, SSTidalRooms_Text_JedIntro, SSTidalRooms_Text_JedDefeat, SSTidalRooms_Text_JedNotEnoughMons
-	msgbox SSTidalRooms_Text_JedPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_JedPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 	end
 
 SSTidalRooms_EventScript_Lea::

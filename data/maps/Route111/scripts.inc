@@ -799,7 +799,7 @@ Route111_EventScript_Man1::
 # 400 "data/maps/Route111/scripts.pory"
 Route111_EventScript_Man2::
 # 401 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_WinstrateFamilyDestroyedMe, MSGBOX_NPC
+	msgbox_mugshot Route111_Text_WinstrateFamilyDestroyedMe, MSGBOX_NPC, MUGSHOT_MAN4
 # 402 "data/maps/Route111/scripts.pory"
 	end
 # 403 "data/maps/Route111/scripts.pory"
@@ -1077,7 +1077,7 @@ Route111_EventScript_Hayden::
 # 539 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_HAYDEN, Route111_Text_HaydenIntro, Route111_Text_HaydenDefeat
 # 540 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_HaydenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_HaydenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 541 "data/maps/Route111/scripts.pory"
 	end
 # 542 "data/maps/Route111/scripts.pory"

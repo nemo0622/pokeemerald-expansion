@@ -493,7 +493,7 @@ RustboroCity_EventScript_Man2::
 # 247 "data/maps/RustboroCity/scripts.pory"
 	faceplayer
 # 248 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_TradePokemonGrowFast, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Text_TradePokemonGrowFast, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 249 "data/maps/RustboroCity/scripts.pory"
 	release
 # 250 "data/maps/RustboroCity/scripts.pory"

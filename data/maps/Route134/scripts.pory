@@ -19,7 +19,7 @@ Route134_EventScript_Laurel::
 
 Route134_EventScript_Alex::
 	trainerbattle_single TRAINER_ALEX, Route134_Text_AlexIntro, Route134_Text_AlexDefeat
-	msgbox Route134_Text_AlexPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_AlexPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 	end
 
 Route134_EventScript_Aaron::

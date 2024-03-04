@@ -43,21 +43,21 @@ Route117_EventScript_Isaac::
 	trainerbattle_single TRAINER_ISAAC_1, Route117_Text_IsaacIntro, Route117_Text_IsaacDefeat, Route117_EventScript_RegisterIsaac
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchIsaac
-	msgbox Route117_Text_IsaacPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_IsaacPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN4
 	release
 	end
 
 Route117_EventScript_RegisterIsaac::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route117_Text_IsaacRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_IsaacRegister, MSGBOX_DEFAULT, MUGSHOT_MAN4
 	register_matchcall TRAINER_ISAAC_1
 	release
 	end
 
 Route117_EventScript_RematchIsaac::
 	trainerbattle_rematch TRAINER_ISAAC_1, Route117_Text_IsaacRematchIntro, Route117_Text_IsaacRematchDefeat
-	msgbox Route117_Text_IsaacPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_IsaacPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 	end
 
 Route117_EventScript_Lydia::
@@ -125,7 +125,7 @@ Route117_EventScript_RematchMaria::
 
 Route117_EventScript_Derek::
 	trainerbattle_single TRAINER_DEREK, Route117_Text_DerekIntro, Route117_Text_DerekDefeat
-	msgbox Route117_Text_DerekPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_DerekPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 	end
 
 Route117_EventScript_Anna::

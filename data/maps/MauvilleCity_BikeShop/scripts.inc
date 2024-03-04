@@ -199,7 +199,7 @@ MauvilleCity_BikeShop_EventScript_SwitchMachForAcro::
 # 100 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 MauvilleCity_BikeShop_EventScript_Assistant::
 # 101 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	msgbox MauvilleCity_BikeShop_Text_HandbooksAreInBack, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_BikeShop_Text_HandbooksAreInBack, MSGBOX_NPC, MUGSHOT_MAN5
 # 102 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	end
 # 103 "data/maps/MauvilleCity_BikeShop/scripts.pory"

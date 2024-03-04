@@ -679,7 +679,7 @@ SlateportCity_EventScript_Maniac::
 # 340 "data/maps/SlateportCity/scripts.pory"
 	call_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_ManiacSternInterview
 # 341 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_GetNameRaterToHelpYou, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_GetNameRaterToHelpYou, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 342 "data/maps/SlateportCity/scripts.pory"
 	release
 # 343 "data/maps/SlateportCity/scripts.pory"
@@ -691,7 +691,7 @@ SlateportCity_EventScript_Maniac::
 # 346 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_ManiacSternInterview::
 # 347 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_GetNameRaterToHelpYou, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_GetNameRaterToHelpYou, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 348 "data/maps/SlateportCity/scripts.pory"
 	release
 # 349 "data/maps/SlateportCity/scripts.pory"
@@ -1467,7 +1467,7 @@ SlateportCity_EventScript_Gabby::
 # 734 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_Man3::
 # 735 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_WonderIfLighthouseStartlesPokemon, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_WonderIfLighthouseStartlesPokemon, MSGBOX_NPC, MUGSHOT_MAN5
 # 736 "data/maps/SlateportCity/scripts.pory"
 	end
 # 737 "data/maps/SlateportCity/scripts.pory"

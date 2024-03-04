@@ -271,7 +271,7 @@ Route121_EventScript_Cale::
 # 136 "data/maps/Route121/scripts.pory"
 	trainerbattle_single TRAINER_CALE, Route121_Text_CaleIntro, Route121_Text_CaleDefeat
 # 137 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_CalePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_CalePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MANIAC
 # 138 "data/maps/Route121/scripts.pory"
 	end
 # 139 "data/maps/Route121/scripts.pory"
@@ -281,7 +281,7 @@ Route121_EventScript_Myles::
 # 141 "data/maps/Route121/scripts.pory"
 	trainerbattle_single TRAINER_MYLES, Route121_Text_MylesIntro, Route121_Text_MylesDefeat
 # 142 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_MylesPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_MylesPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 # 143 "data/maps/Route121/scripts.pory"
 	end
 # 144 "data/maps/Route121/scripts.pory"

@@ -323,7 +323,7 @@ Route116_EventScript_GlassesMan::
 # 162 "data/maps/Route116/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route116_EventScript_FoundGlassesNotOnPlayer
 # 163 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 164 "data/maps/Route116/scripts.pory"
 	release
 # 165 "data/maps/Route116/scripts.pory"
@@ -333,7 +333,7 @@ Route116_EventScript_GlassesMan::
 # 167 "data/maps/Route116/scripts.pory"
 Route116_EventScript_FoundGlassesNotOnPlayer::
 # 168 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_CantFindGlassesNotHere, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_CantFindGlassesNotHere, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 169 "data/maps/Route116/scripts.pory"
 	closemessage
 # 170 "data/maps/Route116/scripts.pory"
@@ -345,15 +345,15 @@ Route116_EventScript_FoundGlassesNotOnPlayer::
 # 173 "data/maps/Route116/scripts.pory"
 Route116_EventScript_PlayerHasGlasses::
 # 174 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_CanYouHelpMeFindGlasses, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 175 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_MayISeeThoseGlasses, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_MayISeeThoseGlasses, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 176 "data/maps/Route116/scripts.pory"
 	specialvar VAR_RESULT, FoundBlackGlasses
 # 177 "data/maps/Route116/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route116_EventScript_FoundGlassesOnPlayer
 # 178 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_NotWhatImLookingFor, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_NotWhatImLookingFor, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 179 "data/maps/Route116/scripts.pory"
 	release
 # 180 "data/maps/Route116/scripts.pory"
@@ -363,7 +363,7 @@ Route116_EventScript_PlayerHasGlasses::
 # 182 "data/maps/Route116/scripts.pory"
 Route116_EventScript_FoundGlassesOnPlayer::
 # 183 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_NotWhatImLookingForMaybeTheyArentHere, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_NotWhatImLookingForMaybeTheyArentHere, MSGBOX_DEFAULT, MUGSHOT_MANIAC
 # 184 "data/maps/Route116/scripts.pory"
 	closemessage
 # 185 "data/maps/Route116/scripts.pory"

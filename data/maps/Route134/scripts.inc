@@ -41,7 +41,7 @@ Route134_EventScript_Alex::
 # 21 "data/maps/Route134/scripts.pory"
 	trainerbattle_single TRAINER_ALEX, Route134_Text_AlexIntro, Route134_Text_AlexDefeat
 # 22 "data/maps/Route134/scripts.pory"
-	msgbox Route134_Text_AlexPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_AlexPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
 # 23 "data/maps/Route134/scripts.pory"
 	end
 # 24 "data/maps/Route134/scripts.pory"
