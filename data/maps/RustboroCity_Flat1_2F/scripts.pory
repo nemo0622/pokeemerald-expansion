@@ -72,7 +72,7 @@ RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda::
 	return
 
 RustboroCity_Flat1_2F_EventScript_WaldasMom::
-	msgbox RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 RustboroCity_Flat1_2F_EventScript_PokeDoll::

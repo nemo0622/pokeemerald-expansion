@@ -30,7 +30,7 @@ SSTidalRooms_EventScript_Bed::
 
 SSTidalRooms_EventScript_Colton::
 	trainerbattle_single TRAINER_COLTON, SSTidalRooms_Text_ColtonIntro, SSTidalRooms_Text_ColtonDefeat
-	msgbox SSTidalRooms_Text_ColtonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_ColtonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANM
 	end
 
 SSTidalRooms_EventScript_Micah::

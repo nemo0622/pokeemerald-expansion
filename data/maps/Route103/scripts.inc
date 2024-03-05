@@ -507,7 +507,7 @@ Route103_EventScript_Miguel::
 # 254 "data/maps/Route103/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route103_EventScript_MiguelRematch
 # 255 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_MiguelPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route103_Text_MiguelPostBattle, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 256 "data/maps/Route103/scripts.pory"
 	release
 # 257 "data/maps/Route103/scripts.pory"
@@ -521,7 +521,7 @@ Route102_EventScript_MiguelRegisterMatchCallAfterBattle::
 # 261 "data/maps/Route103/scripts.pory"
 	waitmovement 0
 # 262 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_MiguelRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route103_Text_MiguelRegister, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 263 "data/maps/Route103/scripts.pory"
 	register_matchcall TRAINER_MIGUEL_1
 # 264 "data/maps/Route103/scripts.pory"
@@ -535,7 +535,7 @@ Route103_EventScript_MiguelRematch::
 # 268 "data/maps/Route103/scripts.pory"
 	trainerbattle_rematch TRAINER_MIGUEL_1, Route103_Text_MiguelRematchIntro, Route103_Text_MiguelRematchDefeated
 # 269 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_MiguelRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_MiguelRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANM
 # 270 "data/maps/Route103/scripts.pory"
 	end
 # 271 "data/maps/Route103/scripts.pory"

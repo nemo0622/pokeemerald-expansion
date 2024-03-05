@@ -9,7 +9,7 @@ PetalburgCity_House2_MapScripts::
 # 5 "data/maps/PetalburgCity_House2/scripts.pory"
 PetalburgCity_House2_EventScript_Woman::
 # 6 "data/maps/PetalburgCity_House2/scripts.pory"
-	msgbox PetalburgCity_House2_Text_NormanBecameGymLeader, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_House2_Text_NormanBecameGymLeader, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 7 "data/maps/PetalburgCity_House2/scripts.pory"
 	end
 # 8 "data/maps/PetalburgCity_House2/scripts.pory"

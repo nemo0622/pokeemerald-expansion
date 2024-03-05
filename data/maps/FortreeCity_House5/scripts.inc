@@ -9,7 +9,7 @@ FortreeCity_House5_MapScripts::
 # 5 "data/maps/FortreeCity_House5/scripts.pory"
 FortreeCity_House5_EventScript_PokefanF::
 # 6 "data/maps/FortreeCity_House5/scripts.pory"
-	msgbox FortreeCity_House5_Text_TreeHousesAreGreat, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House5_Text_TreeHousesAreGreat, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 7 "data/maps/FortreeCity_House5/scripts.pory"
 	end
 # 8 "data/maps/FortreeCity_House5/scripts.pory"

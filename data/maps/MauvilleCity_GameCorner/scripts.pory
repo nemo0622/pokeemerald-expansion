@@ -440,7 +440,7 @@ MauvilleCity_GameCorner_EventScript_PokefanM::
 	faceplayer
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_GameCorner_EventScript_TryGive20Coins
-	msgbox MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 	end
 
@@ -450,13 +450,13 @@ MauvilleCity_GameCorner_EventScript_TryGive20Coins::
 	goto_if_ge VAR_TEMP_1, 1, MauvilleCity_GameCorner_EventScript_PokefanMNormal @ Only give 20 coins if player has no coins
 	setflag FLAG_RECEIVED_20_COINS
 	addcoins 20
-	msgbox MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 	playse SE_SHOP
 	goto MauvilleCity_GameCorner_EventScript_PokefanMNormal
 	end
 
 MauvilleCity_GameCorner_EventScript_PokefanMNormal::
-	msgbox MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 	end
 

@@ -883,7 +883,7 @@ MauvilleCity_GameCorner_EventScript_PokefanM::
 # 442 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_GameCorner_EventScript_TryGive20Coins
 # 443 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 444 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 # 445 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -903,7 +903,7 @@ MauvilleCity_GameCorner_EventScript_TryGive20Coins::
 # 452 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	addcoins 20
 # 453 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 454 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	playse SE_SHOP
 # 455 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -915,7 +915,7 @@ MauvilleCity_GameCorner_EventScript_TryGive20Coins::
 # 458 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 MauvilleCity_GameCorner_EventScript_PokefanMNormal::
 # 459 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 460 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 # 461 "data/maps/MauvilleCity_GameCorner/scripts.pory"

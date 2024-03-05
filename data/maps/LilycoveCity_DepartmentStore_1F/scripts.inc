@@ -235,7 +235,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_GivePrizeFromEarlier::
 # 118 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 LilycoveCity_DepartmentStore_1F_EventScript_PokefanF::
 # 119 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 120 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	end
 # 121 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
@@ -251,7 +251,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_LittleGirl::
 # 126 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 LilycoveCity_DepartmentStore_1F_EventScript_PokefanM::
 # 127 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill, MSGBOX_NPC, MUGSHOT_POKEFANM
 # 128 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"
 	end
 # 129 "data/maps/LilycoveCity_DepartmentStore_1F/scripts.pory"

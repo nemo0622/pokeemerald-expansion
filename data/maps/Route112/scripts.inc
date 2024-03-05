@@ -197,7 +197,7 @@ Route112_EventScript_Carol::
 # 99 "data/maps/Route112/scripts.pory"
 	trainerbattle_single TRAINER_CAROL, Route112_Text_CarolIntro, Route112_Text_CarolDefeat
 # 100 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_CarolPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route112_Text_CarolPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 101 "data/maps/Route112/scripts.pory"
 	end
 # 102 "data/maps/Route112/scripts.pory"

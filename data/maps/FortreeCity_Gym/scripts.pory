@@ -90,7 +90,7 @@ FortreeCity_Gym_EventScript_Flint::
 
 FortreeCity_Gym_EventScript_Ashley::
 	trainerbattle_single TRAINER_ASHLEY, FortreeCity_Gym_Text_AshleyIntro, FortreeCity_Gym_Text_AshleyDefeat
-	msgbox FortreeCity_Gym_Text_AshleyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot FortreeCity_Gym_Text_AshleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 FortreeCity_Gym_EventScript_Humberto::

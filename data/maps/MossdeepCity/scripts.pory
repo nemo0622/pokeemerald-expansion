@@ -22,12 +22,12 @@ MossdeepCity_EventScript_PokefanF::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_HM_DIVE, MossdeepCity_EventScript_PokefanFMagmaGone
-	msgbox MossdeepCity_Text_SpaceCenterReceivedLetter, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_SpaceCenterReceivedLetter, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 	release
 	end
 
 MossdeepCity_EventScript_PokefanFMagmaGone::
-	msgbox MossdeepCity_Text_SpaceCenterLaunchingRockets, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_SpaceCenterLaunchingRockets, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 	release
 	end
 

@@ -391,7 +391,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant4::
 # 196 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 197 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_PokemonLooksLikeYoungerMe, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_PokemonLooksLikeYoungerMe, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 198 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 199 "data/maps/LilycoveCity_ContestHall/scripts.pory"

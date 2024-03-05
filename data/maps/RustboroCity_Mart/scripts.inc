@@ -119,7 +119,7 @@ RustboroCity_Mart_Pokemart_Expanded:
 # 60 "data/maps/RustboroCity_Mart/scripts.pory"
 RustboroCity_Mart_EventScript_PokefanF::
 # 61 "data/maps/RustboroCity_Mart/scripts.pory"
-	msgbox RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 62 "data/maps/RustboroCity_Mart/scripts.pory"
 	end
 # 63 "data/maps/RustboroCity_Mart/scripts.pory"

@@ -47,7 +47,7 @@ MossdeepCity_EventScript_PokefanF::
 # 24 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_set FLAG_RECEIVED_HM_DIVE, MossdeepCity_EventScript_PokefanFMagmaGone
 # 25 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_SpaceCenterReceivedLetter, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_SpaceCenterReceivedLetter, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 26 "data/maps/MossdeepCity/scripts.pory"
 	release
 # 27 "data/maps/MossdeepCity/scripts.pory"
@@ -57,7 +57,7 @@ MossdeepCity_EventScript_PokefanF::
 # 29 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_PokefanFMagmaGone::
 # 30 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_SpaceCenterLaunchingRockets, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_SpaceCenterLaunchingRockets, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 31 "data/maps/MossdeepCity/scripts.pory"
 	release
 # 32 "data/maps/MossdeepCity/scripts.pory"

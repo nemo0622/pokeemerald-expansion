@@ -9,7 +9,7 @@ RustboroCity_Flat2_1F_MapScripts::
 # 5 "data/maps/RustboroCity_Flat2_1F/scripts.pory"
 RustboroCity_Flat2_1F_EventScript_OldWoman::
 # 6 "data/maps/RustboroCity_Flat2_1F/scripts.pory"
-	msgbox RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere, MSGBOX_NPC, MUGSHOT_OLDWOMAN
 # 7 "data/maps/RustboroCity_Flat2_1F/scripts.pory"
 	end
 # 8 "data/maps/RustboroCity_Flat2_1F/scripts.pory"

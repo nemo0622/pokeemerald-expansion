@@ -235,7 +235,7 @@ Route113_EventScript_Sophie::
 # 118 "data/maps/Route113/scripts.pory"
 	trainerbattle_single TRAINER_SOPHIE, Route113_Text_SophieIntro, Route113_Text_SophieDefeat
 # 119 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_SophiePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_SophiePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 120 "data/maps/Route113/scripts.pory"
 	end
 # 121 "data/maps/Route113/scripts.pory"

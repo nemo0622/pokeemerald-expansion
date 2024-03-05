@@ -17,7 +17,7 @@ LilycoveCity_DepartmentStore_2F_EventScript_Cook::
 # 9 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 LilycoveCity_DepartmentStore_2F_EventScript_PokefanF::
 # 10 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 11 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	end
 # 12 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"

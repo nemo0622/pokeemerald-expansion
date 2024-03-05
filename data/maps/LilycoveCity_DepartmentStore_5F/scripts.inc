@@ -249,7 +249,7 @@ LilycoveCity_DepartmentStore_5F_Pokemart_Mats:
 # 125 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_EventScript_PokefanF::
 # 126 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 127 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	end
 # 128 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

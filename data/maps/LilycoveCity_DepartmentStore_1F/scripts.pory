@@ -116,7 +116,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_GivePrizeFromEarlier::
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_PokefanF::
-	msgbox LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_LittleGirl::
@@ -124,7 +124,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_LittleGirl::
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_PokefanM::
-	msgbox LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill, MSGBOX_NPC, MUGSHOT_POKEFANM
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_Azumarill::

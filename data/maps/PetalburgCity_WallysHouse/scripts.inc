@@ -45,13 +45,13 @@ PetalburgCity_WallysHouse_EventScript_GiveHMSurf::
 # 23 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	lockall
 # 24 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	msgbox PetalburgCity_WallysHouse_Text_PleaseExcuseUs, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_PleaseExcuseUs, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 25 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	giveitem ITEM_HM_SURF
 # 26 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	setflag FLAG_RECEIVED_HM_SURF
 # 27 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	msgbox PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 28 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	setvar VAR_PETALBURG_CITY_STATE, 5
 # 29 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -73,7 +73,7 @@ PetalburgCity_WallysHouse_EventScript_WallysDad::
 # 37 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	goto_if_set FLAG_THANKED_FOR_PLAYING_WITH_WALLY, PetalburgCity_WallysHouse_EventScript_PlayedWithWally
 # 38 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	msgbox PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 39 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	setflag FLAG_THANKED_FOR_PLAYING_WITH_WALLY
 # 40 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -85,7 +85,7 @@ PetalburgCity_WallysHouse_EventScript_WallysDad::
 # 43 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_EventScript_ReceievedHMSurf::
 # 44 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	msgbox PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 45 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	release
 # 46 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -95,7 +95,7 @@ PetalburgCity_WallysHouse_EventScript_ReceievedHMSurf::
 # 48 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_EventScript_DefeatedWallyInVictoryRoad::
 # 49 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	msgbox PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 50 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	release
 # 51 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -105,7 +105,7 @@ PetalburgCity_WallysHouse_EventScript_DefeatedWallyInVictoryRoad::
 # 53 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_EventScript_PlayedWithWally::
 # 54 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	msgbox PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 55 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	release
 # 56 "data/maps/PetalburgCity_WallysHouse/scripts.pory"

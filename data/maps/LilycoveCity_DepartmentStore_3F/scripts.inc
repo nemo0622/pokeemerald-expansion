@@ -107,7 +107,7 @@ LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::
 # 54 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
 LilycoveCity_DepartmentStore_3F_EventScript_PokefanM::
 # 55 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance, MSGBOX_NPC, MUGSHOT_POKEFANM
 # 56 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
 	end
 # 57 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"

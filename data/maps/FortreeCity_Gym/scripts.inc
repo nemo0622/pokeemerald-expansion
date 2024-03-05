@@ -183,7 +183,7 @@ FortreeCity_Gym_EventScript_Ashley::
 # 92 "data/maps/FortreeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_ASHLEY, FortreeCity_Gym_Text_AshleyIntro, FortreeCity_Gym_Text_AshleyDefeat
 # 93 "data/maps/FortreeCity_Gym/scripts.pory"
-	msgbox FortreeCity_Gym_Text_AshleyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot FortreeCity_Gym_Text_AshleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 94 "data/maps/FortreeCity_Gym/scripts.pory"
 	end
 # 95 "data/maps/FortreeCity_Gym/scripts.pory"

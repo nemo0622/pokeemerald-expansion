@@ -11,9 +11,9 @@ LilycoveCity_House3_OnTransition:
 LilycoveCity_House3_EventScript_PokefanF::
 	lock
 	faceplayer
-	msgbox LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks, MSGBOX_YESNO, MUGSHOT_POKEFANF
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_House3_EventScript_DeclinePokeblockLearn
-	msgbox LilycoveCity_House3_Text_ExplainPokeblocks, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_House3_Text_ExplainPokeblocks, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -21,7 +21,7 @@ LilycoveCity_House3_EventScript_PokefanF::
 	end
 
 LilycoveCity_House3_EventScript_DeclinePokeblockLearn::
-	msgbox LilycoveCity_House3_Text_OhAreYouSure, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_House3_Text_OhAreYouSure, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0

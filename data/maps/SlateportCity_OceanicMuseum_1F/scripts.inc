@@ -273,7 +273,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron2::
 # 137 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron3::
 # 138 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow, MSGBOX_NPC, MUGSHOT_POKEFANM
 # 139 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	end
 # 140 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"

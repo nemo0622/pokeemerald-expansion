@@ -350,7 +350,7 @@ Route109_EventScript_AlreadyReceivedSoftSand::
 	end
 
 Route109_EventScript_Woman::
-	msgbox Route109_Text_LittleKidsDartAround, MSGBOX_NPC
+	msgbox_mugshot Route109_Text_LittleKidsDartAround, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 Route109_EventScript_OldMan::

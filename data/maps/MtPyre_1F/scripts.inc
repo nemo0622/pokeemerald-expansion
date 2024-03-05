@@ -41,7 +41,7 @@ MtPyre_1F_EventScript_ReceivedCleanseTag::
 # 21 "data/maps/MtPyre_1F/scripts.pory"
 MtPyre_1F_EventScript_PokefanF::
 # 22 "data/maps/MtPyre_1F/scripts.pory"
-	msgbox MtPyre_1F_Text_ComeToPayRespects, MSGBOX_NPC
+	msgbox_mugshot MtPyre_1F_Text_ComeToPayRespects, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 23 "data/maps/MtPyre_1F/scripts.pory"
 	end
 # 24 "data/maps/MtPyre_1F/scripts.pory"

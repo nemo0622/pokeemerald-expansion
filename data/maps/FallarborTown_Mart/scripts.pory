@@ -35,7 +35,7 @@ FallarborTown_Mart_EventScript_Woman::
 	end
 
 FallarborTown_Mart_EventScript_PokefanM::
-	msgbox FallarborTown_Mart_Text_SellNuggetIFound, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_Mart_Text_SellNuggetIFound, MSGBOX_NPC, MUGSHOT_POKEFANM
 	end
 
 FallarborTown_Mart_EventScript_Skitty::

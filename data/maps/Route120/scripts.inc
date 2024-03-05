@@ -601,7 +601,7 @@ Route120_EventScript_Jenna::
 # 301 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_JENNA, Route120_Text_JennaIntro, Route120_Text_JennaDefeat
 # 302 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_JennaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_JennaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 303 "data/maps/Route120/scripts.pory"
 	end
 # 304 "data/maps/Route120/scripts.pory"

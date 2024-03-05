@@ -197,7 +197,7 @@ Route114_EventScript_Nancy::
 # 99 "data/maps/Route114/scripts.pory"
 	trainerbattle_single TRAINER_NANCY, Route114_Text_NancyIntro, Route114_Text_NancyDefeat
 # 100 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_NancyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_NancyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 101 "data/maps/Route114/scripts.pory"
 	end
 # 102 "data/maps/Route114/scripts.pory"
@@ -331,7 +331,7 @@ Route114_EventScript_Angelina::
 # 166 "data/maps/Route114/scripts.pory"
 	trainerbattle_single TRAINER_ANGELINA, Route114_Text_AngelinaIntro, Route114_Text_AngelinaDefeat
 # 167 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_AngelinaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_AngelinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 168 "data/maps/Route114/scripts.pory"
 	end
 # 169 "data/maps/Route114/scripts.pory"
@@ -341,7 +341,7 @@ Route114_EventScript_Charlotte::
 # 171 "data/maps/Route114/scripts.pory"
 	trainerbattle_single TRAINER_CHARLOTTE, Route114_Text_CharlotteIntro, Route114_Text_CharlotteDefeat
 # 172 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_CharlottePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_CharlottePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 173 "data/maps/Route114/scripts.pory"
 	end
 # 174 "data/maps/Route114/scripts.pory"

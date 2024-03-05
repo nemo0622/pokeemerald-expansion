@@ -299,7 +299,7 @@ Route120_EventScript_Lorenzo::
 
 Route120_EventScript_Jenna::
 	trainerbattle_single TRAINER_JENNA, Route120_Text_JennaIntro, Route120_Text_JennaDefeat
-	msgbox Route120_Text_JennaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_JennaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route120_EventScript_Jeffrey::

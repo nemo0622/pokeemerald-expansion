@@ -294,12 +294,12 @@ Route111_EventScript_BattleWinstrates::
 	applymovement LOCALID_VICTORIA, Route111_Movement_WinstrateExitHouse
 	waitmovement 0
 	call Route111_EventScript_CloseWinstrateDoor
-	msgbox Route111_Text_VictoriaIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_VictoriaIntro, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 	trainerbattle_no_intro TRAINER_VICTORIA, Route111_Text_VictoriaDefeat
 	applymovement LOCALID_VICTORIA, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
-	msgbox Route111_Text_VictoriaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_VictoriaPostBattle, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 	closemessage
 	applymovement LOCALID_VICTORIA, Route111_Movement_WinstrateEnterHouse
 	waitmovement 0
@@ -444,7 +444,7 @@ Route111_EventScript_Drew::
 
 Route111_EventScript_Heidi::
 	trainerbattle_single TRAINER_HEIDI, Route111_Text_HeidiIntro, Route111_Text_HeidiDefeat
-	msgbox Route111_Text_HeidiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_HeidiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route111_EventScript_Beau::
@@ -454,7 +454,7 @@ Route111_EventScript_Beau::
 
 Route111_EventScript_Becky::
 	trainerbattle_single TRAINER_BECKY, Route111_Text_BeckyIntro, Route111_Text_BeckyDefeat
-	msgbox Route111_Text_BeckyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BeckyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route111_EventScript_Dusty::
@@ -485,7 +485,7 @@ Route111_EventScript_Travis::
 
 Route111_EventScript_Irene::
 	trainerbattle_single TRAINER_IRENE, Route111_Text_IreneIntro, Route111_Text_IreneDefeat
-	msgbox Route111_Text_IrenePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_IrenePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route111_EventScript_Daisuke::
@@ -542,7 +542,7 @@ Route111_EventScript_Hayden::
 
 Route111_EventScript_Bianca::
 	trainerbattle_single TRAINER_BIANCA, Route111_Text_BiancaIntro, Route111_Text_BiancaDefeat
-	msgbox Route111_Text_BiancaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BiancaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route111_EventScript_Tyron::
@@ -557,7 +557,7 @@ Route111_EventScript_Celina::
 
 Route111_EventScript_Celia::
 	trainerbattle_single TRAINER_CELIA, Route111_Text_CeliaIntro, Route111_Text_CeliaDefeat
-	msgbox Route111_Text_CeliaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_CeliaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route111_EventScript_Bryan::

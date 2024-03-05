@@ -147,7 +147,7 @@ Route121_EventScript_Vanessa::
 # 74 "data/maps/Route121/scripts.pory"
 	trainerbattle_single TRAINER_VANESSA, Route121_Text_VanessaIntro, Route121_Text_VanessaDefeat
 # 75 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_VanessaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_VanessaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANF
 # 76 "data/maps/Route121/scripts.pory"
 	end
 # 77 "data/maps/Route121/scripts.pory"

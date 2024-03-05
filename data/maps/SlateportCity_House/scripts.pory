@@ -3,7 +3,7 @@ SlateportCity_House_MapScripts::
 	.byte 0
 
 SlateportCity_House_EventScript_PokefanM::
-	msgbox SlateportCity_House_Text_NatureToDoWithStatGains, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_House_Text_NatureToDoWithStatGains, MSGBOX_NPC, MUGSHOT_POKEFANM
 	end
 
 SlateportCity_House_EventScript_Girl::

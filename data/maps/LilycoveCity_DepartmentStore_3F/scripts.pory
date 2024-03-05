@@ -52,7 +52,7 @@ LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::
 	end
 
 LilycoveCity_DepartmentStore_3F_EventScript_PokefanM::
-	msgbox LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance, MSGBOX_NPC, MUGSHOT_POKEFANM
 	end
 
 LilycoveCity_DepartmentStore_3F_EventScript_Woman::

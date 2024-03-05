@@ -45,7 +45,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysUncle::
 # 23 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, VerdanturfTown_WandasHouse_EventScript_WallysUncleSlippedOff
 # 24 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_WallysNextDoor, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_WallysNextDoor, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 25 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 26 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
@@ -55,7 +55,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysUncle::
 # 28 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 VerdanturfTown_WandasHouse_EventScript_WallysUncleSlippedOff::
 # 29 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_WallySlippedOff, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_WallySlippedOff, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 30 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 31 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
@@ -65,7 +65,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysUncleSlippedOff::
 # 33 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande::
 # 34 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_WallyGoneThatFar, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_WallyGoneThatFar, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 35 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 36 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
@@ -131,7 +131,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysAunt::
 # 66 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	goto_if_set FLAG_RUSTURF_TUNNEL_OPENED, VerdanturfTown_WandasHouse_EventScript_WallysAuntTunnelOpen
 # 67 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 68 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 69 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
@@ -141,7 +141,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysAunt::
 # 71 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 VerdanturfTown_WandasHouse_EventScript_WallysAuntTunnelOpen::
 # 72 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 73 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 74 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
@@ -151,7 +151,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysAuntTunnelOpen::
 # 76 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 VerdanturfTown_WandasHouse_EventScript_WallysAuntAnythingHappened::
 # 77 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 78 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 79 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
@@ -161,7 +161,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysAuntAnythingHappened::
 # 81 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 VerdanturfTown_WandasHouse_EventScript_WallysAuntEverGrande::
 # 82 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 83 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 84 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"

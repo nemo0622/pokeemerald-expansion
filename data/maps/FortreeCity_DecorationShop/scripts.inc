@@ -9,7 +9,7 @@ FortreeCity_DecorationShop_MapScripts::
 # 5 "data/maps/FortreeCity_DecorationShop/scripts.pory"
 FortreeCity_DecorationShop_EventScript_PokefanM::
 # 6 "data/maps/FortreeCity_DecorationShop/scripts.pory"
-	msgbox FortreeCity_DecorationShop_Text_MerchandiseSentToPC, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_DecorationShop_Text_MerchandiseSentToPC, MSGBOX_NPC, MUGSHOT_POKEFANM
 # 7 "data/maps/FortreeCity_DecorationShop/scripts.pory"
 	end
 # 8 "data/maps/FortreeCity_DecorationShop/scripts.pory"

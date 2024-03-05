@@ -67,7 +67,7 @@ LavaridgeTown_Mart_EventScript_ExpertM::
 # 34 "data/maps/LavaridgeTown_Mart/scripts.pory"
 LavaridgeTown_Mart_EventScript_OldWoman::
 # 35 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	msgbox LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney, MSGBOX_NPC, MUGSHOT_OLDWOMAN
 # 36 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	end
 # 37 "data/maps/LavaridgeTown_Mart/scripts.pory"

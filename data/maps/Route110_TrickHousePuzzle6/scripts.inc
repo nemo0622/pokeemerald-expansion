@@ -63,7 +63,7 @@ Route110_TrickHousePuzzle6_EventScript_Sophia::
 # 32 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
 	trainerbattle_single TRAINER_SOPHIA, Route110_TrickHousePuzzle6_Text_SophiaIntro, Route110_TrickHousePuzzle6_Text_SophiaDefeat
 # 33 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
-	msgbox Route110_TrickHousePuzzle6_Text_SophiaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle6_Text_SophiaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 34 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
 	end
 # 35 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"

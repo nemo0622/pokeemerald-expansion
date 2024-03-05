@@ -15,7 +15,7 @@ MtPyre_2F_EventScript_Woman::
 	end
 
 MtPyre_2F_EventScript_PokefanM::
-	msgbox MtPyre_2F_Text_TumbledFromFloorAbove, MSGBOX_NPC
+	msgbox_mugshot MtPyre_2F_Text_TumbledFromFloorAbove, MSGBOX_NPC, MUGSHOT_POKEFANM
 	end
 
 MtPyre_2F_EventScript_Mark::

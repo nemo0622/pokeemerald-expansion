@@ -43,7 +43,7 @@ DewfordTown_PokemonCenter_1F_EventScript_Nurse::
 # 22 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
 DewfordTown_PokemonCenter_1F_EventScript_PokefanF::
 # 23 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
-	msgbox DewfordTown_PokemonCenter_1F_Text_StoneCavern, MSGBOX_NPC
+	msgbox_mugshot DewfordTown_PokemonCenter_1F_Text_StoneCavern, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 24 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
 	end
 # 25 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"

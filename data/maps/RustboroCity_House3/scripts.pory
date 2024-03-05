@@ -7,7 +7,7 @@ RustboroCity_House3_EventScript_OldMan::
 	end
 
 RustboroCity_House3_EventScript_OldWoman::
-	msgbox RustboroCity_House3_Text_NamingPikachuPekachu, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_House3_Text_NamingPikachuPekachu, MSGBOX_NPC, MUGSHOT_OLDWOMAN
 	end
 
 @ Misspelling on purpose, see nickname

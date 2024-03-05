@@ -147,7 +147,7 @@ RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda::
 # 74 "data/maps/RustboroCity_Flat1_2F/scripts.pory"
 RustboroCity_Flat1_2F_EventScript_WaldasMom::
 # 75 "data/maps/RustboroCity_Flat1_2F/scripts.pory"
-	msgbox RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 76 "data/maps/RustboroCity_Flat1_2F/scripts.pory"
 	end
 # 77 "data/maps/RustboroCity_Flat1_2F/scripts.pory"

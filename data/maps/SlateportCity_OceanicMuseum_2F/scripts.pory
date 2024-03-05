@@ -260,7 +260,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron1::
 	end
 
 SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron2::
-	msgbox SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron3::

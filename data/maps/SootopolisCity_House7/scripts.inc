@@ -17,7 +17,7 @@ SootopolisCity_House7_EventScript_OldMan::
 # 9 "data/maps/SootopolisCity_House7/scripts.pory"
 SootopolisCity_House7_EventScript_PokefanF::
 # 10 "data/maps/SootopolisCity_House7/scripts.pory"
-	msgbox SootopolisCity_House7_Text_CaveMadeToKeepSomething, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House7_Text_CaveMadeToKeepSomething, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 11 "data/maps/SootopolisCity_House7/scripts.pory"
 	end
 # 12 "data/maps/SootopolisCity_House7/scripts.pory"

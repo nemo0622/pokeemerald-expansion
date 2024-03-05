@@ -72,7 +72,7 @@ Route121_Movement_Grunt3Exit:
 
 Route121_EventScript_Vanessa::
 	trainerbattle_single TRAINER_VANESSA, Route121_Text_VanessaIntro, Route121_Text_VanessaDefeat
-	msgbox Route121_Text_VanessaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_VanessaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANF
 	end
 
 Route121_EventScript_Walter::

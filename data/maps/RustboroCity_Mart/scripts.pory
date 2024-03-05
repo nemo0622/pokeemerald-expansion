@@ -58,7 +58,7 @@ RustboroCity_Mart_Pokemart_Expanded:
 	end
 
 RustboroCity_Mart_EventScript_PokefanF::
-	msgbox RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 RustboroCity_Mart_EventScript_Boy::

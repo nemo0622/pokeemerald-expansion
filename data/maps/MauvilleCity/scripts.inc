@@ -149,7 +149,7 @@ MauvilleCity_EventScript_WallysUncle::
 # 75 "data/maps/MauvilleCity/scripts.pory"
 	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_UncleAskPlayerToBattleWally
 # 76 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleHesTooPeppy, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_UncleHesTooPeppy, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 77 "data/maps/MauvilleCity/scripts.pory"
 	closemessage
 # 78 "data/maps/MauvilleCity/scripts.pory"
@@ -165,7 +165,7 @@ MauvilleCity_EventScript_WallysUncle::
 # 83 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_UncleAskPlayerToBattleWally::
 # 84 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleCanYouBattleWally, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_UncleCanYouBattleWally, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 85 "data/maps/MauvilleCity/scripts.pory"
 	closemessage
 # 86 "data/maps/MauvilleCity/scripts.pory"
@@ -191,7 +191,7 @@ MauvilleCity_EventScript_Wally::
 # 96 "data/maps/MauvilleCity/scripts.pory"
 	msgbox_mugshot MauvilleCity_Text_WallyWantToChallengeGym, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 97 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleYourePushingIt, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_UncleYourePushingIt, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 98 "data/maps/MauvilleCity/scripts.pory"
 	msgbox_mugshot MauvilleCity_Text_WallyWeCanBeatAnyone, MSGBOX_DEFAULT, MUGSHOT_WALLY
 # 99 "data/maps/MauvilleCity/scripts.pory"
@@ -257,7 +257,7 @@ MauvilleCity_EventScript_WallyAndUncleExitNorth::
 # 129 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 130 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleVisitUsSometime, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_UncleVisitUsSometime, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 131 "data/maps/MauvilleCity/scripts.pory"
 	closemessage
 # 132 "data/maps/MauvilleCity/scripts.pory"
@@ -295,7 +295,7 @@ MauvilleCity_EventScript_WallyAndUncleExitEast::
 # 148 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 149 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleVisitUsSometime, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_UncleVisitUsSometime, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 150 "data/maps/MauvilleCity/scripts.pory"
 	closemessage
 # 151 "data/maps/MauvilleCity/scripts.pory"
@@ -427,7 +427,7 @@ MauvilleCity_EventScript_BattleWally::
 # 214 "data/maps/MauvilleCity/scripts.pory"
 	waitmovement 0
 # 215 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_UncleNoNeedToBeDown, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_UncleNoNeedToBeDown, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 216 "data/maps/MauvilleCity/scripts.pory"
 	return
 # 217 "data/maps/MauvilleCity/scripts.pory"

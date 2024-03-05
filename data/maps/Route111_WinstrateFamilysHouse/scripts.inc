@@ -43,7 +43,7 @@ Route111_WinstrateFamilysHouse_EventScript_Victoria::
 # 22 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto_if_set FLAG_RECEIVED_MACHO_BRACE, Route111_WinstrateFamilysHouse_EventScript_ReceivedMachoBrace
 # 23 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	msgbox Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 24 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	giveitem ITEM_MACHO_BRACE
 # 25 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
@@ -59,7 +59,7 @@ Route111_WinstrateFamilysHouse_EventScript_Victoria::
 # 30 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 Route111_WinstrateFamilysHouse_EventScript_ReceivedMachoBrace::
 # 31 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	msgbox Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 32 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 # 33 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"

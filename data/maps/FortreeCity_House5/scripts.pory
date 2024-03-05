@@ -3,7 +3,7 @@ FortreeCity_House5_MapScripts::
 	.byte 0
 
 FortreeCity_House5_EventScript_PokefanF::
-	msgbox FortreeCity_House5_Text_TreeHousesAreGreat, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House5_Text_TreeHousesAreGreat, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 FortreeCity_House5_EventScript_Man::

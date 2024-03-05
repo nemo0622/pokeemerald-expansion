@@ -204,12 +204,12 @@ SlateportCity_EventScript_OldWoman::
 	lock
 	faceplayer
 	call_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_OldWomanSternInterview
-	msgbox SlateportCity_Text_HowTownIsBornAndGrows, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_HowTownIsBornAndGrows, MSGBOX_DEFAULT, MUGSHOT_OLDWOMAN
 	release
 	end
 
 SlateportCity_EventScript_OldWomanSternInterview::
-	msgbox SlateportCity_Text_CaptSternBeingInterviewed, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_CaptSternBeingInterviewed, MSGBOX_DEFAULT, MUGSHOT_OLDWOMAN
 	release
 	end
 
@@ -361,7 +361,7 @@ SlateportCity_EventScript_Sailor2::
 	end
 
 SlateportCity_EventScript_PokefanF::
-	msgbox SlateportCity_Text_BuyTooMuch, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_BuyTooMuch, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 SlateportCity_EventScript_Man2::

@@ -17,7 +17,7 @@ RustboroCity_House3_EventScript_OldMan::
 # 9 "data/maps/RustboroCity_House3/scripts.pory"
 RustboroCity_House3_EventScript_OldWoman::
 # 10 "data/maps/RustboroCity_House3/scripts.pory"
-	msgbox RustboroCity_House3_Text_NamingPikachuPekachu, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_House3_Text_NamingPikachuPekachu, MSGBOX_NPC, MUGSHOT_OLDWOMAN
 # 11 "data/maps/RustboroCity_House3/scripts.pory"
 	end
 # 12 "data/maps/RustboroCity_House3/scripts.pory"

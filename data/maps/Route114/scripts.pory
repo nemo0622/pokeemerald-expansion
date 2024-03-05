@@ -97,7 +97,7 @@ Route114_EventScript_Shane::
 
 Route114_EventScript_Nancy::
 	trainerbattle_single TRAINER_NANCY, Route114_Text_NancyIntro, Route114_Text_NancyDefeat
-	msgbox Route114_Text_NancyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_NancyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route114_EventScript_Steve::
@@ -164,12 +164,12 @@ Route114_EventScript_Ivy::
 
 Route114_EventScript_Angelina::
 	trainerbattle_single TRAINER_ANGELINA, Route114_Text_AngelinaIntro, Route114_Text_AngelinaDefeat
-	msgbox Route114_Text_AngelinaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_AngelinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route114_EventScript_Charlotte::
 	trainerbattle_single TRAINER_CHARLOTTE, Route114_Text_CharlotteIntro, Route114_Text_CharlotteDefeat
-	msgbox Route114_Text_CharlottePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route114_Text_CharlottePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route114_EventScript_Kai::

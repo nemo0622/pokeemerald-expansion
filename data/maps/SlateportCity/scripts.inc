@@ -411,7 +411,7 @@ SlateportCity_EventScript_OldWoman::
 # 206 "data/maps/SlateportCity/scripts.pory"
 	call_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_OldWomanSternInterview
 # 207 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_HowTownIsBornAndGrows, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_HowTownIsBornAndGrows, MSGBOX_DEFAULT, MUGSHOT_OLDWOMAN
 # 208 "data/maps/SlateportCity/scripts.pory"
 	release
 # 209 "data/maps/SlateportCity/scripts.pory"
@@ -421,7 +421,7 @@ SlateportCity_EventScript_OldWoman::
 # 211 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_OldWomanSternInterview::
 # 212 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_CaptSternBeingInterviewed, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_CaptSternBeingInterviewed, MSGBOX_DEFAULT, MUGSHOT_OLDWOMAN
 # 213 "data/maps/SlateportCity/scripts.pory"
 	release
 # 214 "data/maps/SlateportCity/scripts.pory"
@@ -725,7 +725,7 @@ SlateportCity_EventScript_Sailor2::
 # 363 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_PokefanF::
 # 364 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_BuyTooMuch, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_BuyTooMuch, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 365 "data/maps/SlateportCity/scripts.pory"
 	end
 # 366 "data/maps/SlateportCity/scripts.pory"

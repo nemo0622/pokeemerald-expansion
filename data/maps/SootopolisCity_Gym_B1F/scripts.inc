@@ -81,7 +81,7 @@ SootopolisCity_Gym_B1F_EventScript_Bethany::
 # 41 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	trainerbattle_single TRAINER_BETHANY, SootopolisCity_Gym_B1F_Text_BethanyIntro, SootopolisCity_Gym_B1F_Text_BethanyDefeat
 # 42 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
-	msgbox SootopolisCity_Gym_B1F_Text_BethanyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_BethanyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANF
 # 43 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	end
 # 44 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
@@ -91,7 +91,7 @@ SootopolisCity_Gym_B1F_EventScript_Annika::
 # 46 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	trainerbattle_single TRAINER_ANNIKA, SootopolisCity_Gym_B1F_Text_AnnikaIntro, SootopolisCity_Gym_B1F_Text_AnnikaDefeat
 # 47 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
-	msgbox SootopolisCity_Gym_B1F_Text_AnnikaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_AnnikaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANF
 # 48 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	end
 # 49 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"

@@ -19,7 +19,7 @@ MtPyre_1F_EventScript_ReceivedCleanseTag::
 	end
 
 MtPyre_1F_EventScript_PokefanF::
-	msgbox MtPyre_1F_Text_ComeToPayRespects, MSGBOX_NPC
+	msgbox_mugshot MtPyre_1F_Text_ComeToPayRespects, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 MtPyre_1F_EventScript_Man::

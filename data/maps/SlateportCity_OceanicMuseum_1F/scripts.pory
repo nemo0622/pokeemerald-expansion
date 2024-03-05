@@ -135,7 +135,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron2::
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron3::
-	msgbox SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow, MSGBOX_NPC, MUGSHOT_POKEFANM
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron4::

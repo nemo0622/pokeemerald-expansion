@@ -9,7 +9,7 @@ SlateportCity_House_MapScripts::
 # 5 "data/maps/SlateportCity_House/scripts.pory"
 SlateportCity_House_EventScript_PokefanM::
 # 6 "data/maps/SlateportCity_House/scripts.pory"
-	msgbox SlateportCity_House_Text_NatureToDoWithStatGains, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_House_Text_NatureToDoWithStatGains, MSGBOX_NPC, MUGSHOT_POKEFANM
 # 7 "data/maps/SlateportCity_House/scripts.pory"
 	end
 # 8 "data/maps/SlateportCity_House/scripts.pory"

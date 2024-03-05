@@ -757,7 +757,7 @@ Route119_EventScript_Catherine::
 # 379 "data/maps/Route119/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route119_EventScript_RematchCatherine
 # 380 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_CatherinePostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_CatherinePostBattle, MSGBOX_DEFAULT, MUGSHOT_PICNICKER
 # 381 "data/maps/Route119/scripts.pory"
 	release
 # 382 "data/maps/Route119/scripts.pory"
@@ -771,7 +771,7 @@ Route119_EventScript_RegisterCatherine::
 # 386 "data/maps/Route119/scripts.pory"
 	waitmovement 0
 # 387 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_CatherineRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_Text_CatherineRegister, MSGBOX_DEFAULT, MUGSHOT_PICNICKER
 # 388 "data/maps/Route119/scripts.pory"
 	register_matchcall TRAINER_CATHERINE_1
 # 389 "data/maps/Route119/scripts.pory"
@@ -785,7 +785,7 @@ Route119_EventScript_RematchCatherine::
 # 393 "data/maps/Route119/scripts.pory"
 	trainerbattle_rematch TRAINER_CATHERINE_1, Route119_Text_CatherineRematchIntro, Route119_Text_CatherineRematchDefeat
 # 394 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_CatherinePostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_CatherinePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 395 "data/maps/Route119/scripts.pory"
 	end
 # 396 "data/maps/Route119/scripts.pory"

@@ -194,7 +194,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant3::
 LilycoveCity_ContestHall_EventScript_BeautyContestant4::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_PokemonLooksLikeYoungerMe, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_PokemonLooksLikeYoungerMe, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 	closemessage
 	applymovement LOCALID_BEAUTY_CONTESTANT_4, Common_Movement_FaceOriginalDirection
 	waitmovement 0

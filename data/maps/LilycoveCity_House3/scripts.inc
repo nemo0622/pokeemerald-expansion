@@ -25,11 +25,11 @@ LilycoveCity_House3_EventScript_PokefanF::
 # 13 "data/maps/LilycoveCity_House3/scripts.pory"
 	faceplayer
 # 14 "data/maps/LilycoveCity_House3/scripts.pory"
-	msgbox LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks, MSGBOX_YESNO, MUGSHOT_POKEFANF
 # 15 "data/maps/LilycoveCity_House3/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_House3_EventScript_DeclinePokeblockLearn
 # 16 "data/maps/LilycoveCity_House3/scripts.pory"
-	msgbox LilycoveCity_House3_Text_ExplainPokeblocks, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_House3_Text_ExplainPokeblocks, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 17 "data/maps/LilycoveCity_House3/scripts.pory"
 	closemessage
 # 18 "data/maps/LilycoveCity_House3/scripts.pory"
@@ -45,7 +45,7 @@ LilycoveCity_House3_EventScript_PokefanF::
 # 23 "data/maps/LilycoveCity_House3/scripts.pory"
 LilycoveCity_House3_EventScript_DeclinePokeblockLearn::
 # 24 "data/maps/LilycoveCity_House3/scripts.pory"
-	msgbox LilycoveCity_House3_Text_OhAreYouSure, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_House3_Text_OhAreYouSure, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 25 "data/maps/LilycoveCity_House3/scripts.pory"
 	closemessage
 # 26 "data/maps/LilycoveCity_House3/scripts.pory"

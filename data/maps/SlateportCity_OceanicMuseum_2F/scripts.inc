@@ -523,7 +523,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron1::
 # 262 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron2::
 # 263 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 264 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	end
 # 265 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"

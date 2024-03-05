@@ -529,7 +529,7 @@ Route110_EventScript_Isabel::
 # 265 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_IsabelRematch
 # 266 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_IsabelPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_IsabelPostBattle, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 267 "data/maps/Route110/scripts.pory"
 	release
 # 268 "data/maps/Route110/scripts.pory"
@@ -543,7 +543,7 @@ Route110_EventScript_IsabelRegisterMatchCallAfterBattle::
 # 272 "data/maps/Route110/scripts.pory"
 	waitmovement 0
 # 273 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_IsabelRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route110_Text_IsabelRegister, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 274 "data/maps/Route110/scripts.pory"
 	register_matchcall TRAINER_ISABEL_1
 # 275 "data/maps/Route110/scripts.pory"
@@ -557,7 +557,7 @@ Route110_EventScript_IsabelRematch::
 # 279 "data/maps/Route110/scripts.pory"
 	trainerbattle_rematch TRAINER_ISABEL_1, Route110_Text_IsabelRematchIntro, Route110_Text_IsabelRematchDefeated
 # 280 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_IsabelRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_IsabelRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANF
 # 281 "data/maps/Route110/scripts.pory"
 	end
 # 282 "data/maps/Route110/scripts.pory"
@@ -583,7 +583,7 @@ Route110_EventScript_Kaleb::
 # 292 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_KALEB, Route110_Text_KalebIntro, Route110_Text_KalebDefeated
 # 293 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_KalebPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_KalebPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANM
 # 294 "data/maps/Route110/scripts.pory"
 	end
 # 295 "data/maps/Route110/scripts.pory"

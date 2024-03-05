@@ -294,7 +294,7 @@ Route110_TrickHousePuzzle3_EventScript_Justin::
 
 Route110_TrickHousePuzzle3_EventScript_Martha::
 	trainerbattle_single TRAINER_MARTHA, Route110_TrickHousePuzzle3_Text_MarthaIntro, Route110_TrickHousePuzzle3_Text_MarthaDefeat
-	msgbox Route110_TrickHousePuzzle3_Text_MarthaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle3_Text_MarthaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route110_TrickHousePuzzle3_EventScript_Alan::

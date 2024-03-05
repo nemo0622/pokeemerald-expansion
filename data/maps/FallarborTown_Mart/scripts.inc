@@ -73,7 +73,7 @@ FallarborTown_Mart_EventScript_Woman::
 # 37 "data/maps/FallarborTown_Mart/scripts.pory"
 FallarborTown_Mart_EventScript_PokefanM::
 # 38 "data/maps/FallarborTown_Mart/scripts.pory"
-	msgbox FallarborTown_Mart_Text_SellNuggetIFound, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_Mart_Text_SellNuggetIFound, MSGBOX_NPC, MUGSHOT_POKEFANM
 # 39 "data/maps/FallarborTown_Mart/scripts.pory"
 	end
 # 40 "data/maps/FallarborTown_Mart/scripts.pory"

@@ -135,6 +135,14 @@ static const u32 sMugshotImg_Mom[] = INCBIN_U32("graphics/mugshots/pics/mugshot_
 static const u16 sMugshotPal_Mom[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_mom.gbapal");
 static const u32 sMugshotImg_NinjaBoy[] = INCBIN_U32("graphics/mugshots/pics/mugshot_ninjaboy.4bpp.lz");
 static const u16 sMugshotPal_NinjaBoy[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_ninjaboy.gbapal");
+static const u32 sMugshotImg_OldWoman[] = INCBIN_U32("graphics/mugshots/pics/mugshot_oldwoman.4bpp.lz");
+static const u16 sMugshotPal_OldWoman[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_oldwoman.gbapal");
+static const u32 sMugshotImg_Picnicker[] = INCBIN_U32("graphics/mugshots/pics/mugshot_picnicker.4bpp.lz");
+static const u16 sMugshotPal_Picnicker[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_picnicker.gbapal");
+static const u32 sMugshotImg_PokefanF[] = INCBIN_U32("graphics/mugshots/pics/mugshot_pokefanf.4bpp.lz");
+static const u16 sMugshotPal_PokefanF[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_pokefanf.gbapal");
+static const u32 sMugshotImg_PokefanM[] = INCBIN_U32("graphics/mugshots/pics/mugshot_pokefanm.4bpp.lz");
+static const u16 sMugshotPal_PokefanM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_pokefanm.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -195,6 +203,10 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_MANIAC] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Maniac, .palette = sMugshotPal_Maniac},
     [MUGSHOT_MOM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Mom, .palette = sMugshotPal_Mom},
     [MUGSHOT_NINJABOY] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_NinjaBoy, .palette = sMugshotPal_NinjaBoy},
+    [MUGSHOT_OLDWOMAN] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_OldWoman, .palette = sMugshotPal_OldWoman},
+    [MUGSHOT_PICNICKER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Picnicker, .palette = sMugshotPal_Picnicker},
+    [MUGSHOT_POKEFANF] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_PokefanF, .palette = sMugshotPal_PokefanF},
+    [MUGSHOT_POKEFANM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_PokefanM, .palette = sMugshotPal_PokefanM},
 };
 
 

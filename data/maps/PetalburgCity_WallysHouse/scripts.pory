@@ -21,10 +21,10 @@ PetalburgCity_WallysHouse_OnFrame:
 
 PetalburgCity_WallysHouse_EventScript_GiveHMSurf::
 	lockall
-	msgbox PetalburgCity_WallysHouse_Text_PleaseExcuseUs, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_PleaseExcuseUs, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 	giveitem ITEM_HM_SURF
 	setflag FLAG_RECEIVED_HM_SURF
-	msgbox PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 	setvar VAR_PETALBURG_CITY_STATE, 5
 	releaseall
 	end
@@ -35,23 +35,23 @@ PetalburgCity_WallysHouse_EventScript_WallysDad::
 	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, PetalburgCity_WallysHouse_EventScript_DefeatedWallyInVictoryRoad
 	goto_if_set FLAG_RECEIVED_HM_SURF, PetalburgCity_WallysHouse_EventScript_ReceievedHMSurf
 	goto_if_set FLAG_THANKED_FOR_PLAYING_WITH_WALLY, PetalburgCity_WallysHouse_EventScript_PlayedWithWally
-	msgbox PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 	setflag FLAG_THANKED_FOR_PLAYING_WITH_WALLY
 	release
 	end
 
 PetalburgCity_WallysHouse_EventScript_ReceievedHMSurf::
-	msgbox PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 	release
 	end
 
 PetalburgCity_WallysHouse_EventScript_DefeatedWallyInVictoryRoad::
-	msgbox PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 	release
 	end
 
 PetalburgCity_WallysHouse_EventScript_PlayedWithWally::
-	msgbox PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 	release
 	end
 

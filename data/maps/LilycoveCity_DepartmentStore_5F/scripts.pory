@@ -123,7 +123,7 @@ LilycoveCity_DepartmentStore_5F_Pokemart_Mats:
 	end
 
 LilycoveCity_DepartmentStore_5F_EventScript_PokefanF::
-	msgbox LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 LilycoveCity_DepartmentStore_5F_EventScript_Woman::

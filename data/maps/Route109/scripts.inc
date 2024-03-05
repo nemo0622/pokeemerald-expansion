@@ -703,7 +703,7 @@ Route109_EventScript_AlreadyReceivedSoftSand::
 # 352 "data/maps/Route109/scripts.pory"
 Route109_EventScript_Woman::
 # 353 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_LittleKidsDartAround, MSGBOX_NPC
+	msgbox_mugshot Route109_Text_LittleKidsDartAround, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 354 "data/maps/Route109/scripts.pory"
 	end
 # 355 "data/maps/Route109/scripts.pory"

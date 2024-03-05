@@ -591,7 +591,7 @@ Route111_EventScript_BattleWinstrates::
 # 296 "data/maps/Route111/scripts.pory"
 	call Route111_EventScript_CloseWinstrateDoor
 # 297 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_VictoriaIntro, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_VictoriaIntro, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 298 "data/maps/Route111/scripts.pory"
 	trainerbattle_no_intro TRAINER_VICTORIA, Route111_Text_VictoriaDefeat
 # 299 "data/maps/Route111/scripts.pory"
@@ -601,7 +601,7 @@ Route111_EventScript_BattleWinstrates::
 # 301 "data/maps/Route111/scripts.pory"
 	call Route111_EventScript_OpenWinstrateDoor
 # 302 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_VictoriaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_VictoriaPostBattle, MSGBOX_DEFAULT, MUGSHOT_POKEFANF
 # 303 "data/maps/Route111/scripts.pory"
 	closemessage
 # 304 "data/maps/Route111/scripts.pory"
@@ -891,7 +891,7 @@ Route111_EventScript_Heidi::
 # 446 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_HEIDI, Route111_Text_HeidiIntro, Route111_Text_HeidiDefeat
 # 447 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_HeidiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_HeidiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 448 "data/maps/Route111/scripts.pory"
 	end
 # 449 "data/maps/Route111/scripts.pory"
@@ -911,7 +911,7 @@ Route111_EventScript_Becky::
 # 456 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_BECKY, Route111_Text_BeckyIntro, Route111_Text_BeckyDefeat
 # 457 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_BeckyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BeckyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 458 "data/maps/Route111/scripts.pory"
 	end
 # 459 "data/maps/Route111/scripts.pory"
@@ -973,7 +973,7 @@ Route111_EventScript_Irene::
 # 487 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_IRENE, Route111_Text_IreneIntro, Route111_Text_IreneDefeat
 # 488 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_IrenePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_IrenePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 489 "data/maps/Route111/scripts.pory"
 	end
 # 490 "data/maps/Route111/scripts.pory"
@@ -1087,7 +1087,7 @@ Route111_EventScript_Bianca::
 # 544 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_BIANCA, Route111_Text_BiancaIntro, Route111_Text_BiancaDefeat
 # 545 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_BiancaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BiancaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 546 "data/maps/Route111/scripts.pory"
 	end
 # 547 "data/maps/Route111/scripts.pory"
@@ -1117,7 +1117,7 @@ Route111_EventScript_Celia::
 # 559 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_CELIA, Route111_Text_CeliaIntro, Route111_Text_CeliaDefeat
 # 560 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_CeliaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_CeliaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 561 "data/maps/Route111/scripts.pory"
 	end
 # 562 "data/maps/Route111/scripts.pory"

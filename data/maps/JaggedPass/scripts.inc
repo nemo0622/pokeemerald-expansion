@@ -211,7 +211,7 @@ JaggedPass_EventScript_Diana::
 # 106 "data/maps/JaggedPass/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_DianaRematch
 # 107 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_DianaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot JaggedPass_Text_DianaPostBattle, MSGBOX_DEFAULT, MUGSHOT_PICNICKER
 # 108 "data/maps/JaggedPass/scripts.pory"
 	release
 # 109 "data/maps/JaggedPass/scripts.pory"
@@ -223,7 +223,7 @@ JaggedPass_EventScript_RegisterDiana::
 # 112 "data/maps/JaggedPass/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
 # 113 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_DianaRegister, MSGBOX_DEFAULT
+	msgbox_mugshot JaggedPass_Text_DianaRegister, MSGBOX_DEFAULT, MUGSHOT_PICNICKER
 # 114 "data/maps/JaggedPass/scripts.pory"
 	register_matchcall TRAINER_DIANA_1
 # 115 "data/maps/JaggedPass/scripts.pory"
@@ -237,7 +237,7 @@ JaggedPass_EventScript_DianaRematch::
 # 119 "data/maps/JaggedPass/scripts.pory"
 	trainerbattle_rematch TRAINER_DIANA_1, JaggedPass_Text_DianaRematchIntro, JaggedPass_Text_DianaRematchDefeat
 # 120 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_DianaPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot JaggedPass_Text_DianaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 121 "data/maps/JaggedPass/scripts.pory"
 	end
 # 122 "data/maps/JaggedPass/scripts.pory"
@@ -297,7 +297,7 @@ JaggedPass_EventScript_Autumn::
 # 149 "data/maps/JaggedPass/scripts.pory"
 	trainerbattle_single TRAINER_AUTUMN, JaggedPass_Text_AutumnIntro, JaggedPass_Text_AutumnDefeat
 # 150 "data/maps/JaggedPass/scripts.pory"
-	msgbox JaggedPass_Text_AutumnPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot JaggedPass_Text_AutumnPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 151 "data/maps/JaggedPass/scripts.pory"
 	end
 # 152 "data/maps/JaggedPass/scripts.pory"

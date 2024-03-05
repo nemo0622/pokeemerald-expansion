@@ -9,7 +9,7 @@ OldaleTown_House2_MapScripts::
 # 5 "data/maps/OldaleTown_House2/scripts.pory"
 OldaleTown_House2_EventScript_Woman::
 # 6 "data/maps/OldaleTown_House2/scripts.pory"
-	msgbox OldaleTown_House2_Text_PokemonLevelUp, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_House2_Text_PokemonLevelUp, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 7 "data/maps/OldaleTown_House2/scripts.pory"
 	end
 # 8 "data/maps/OldaleTown_House2/scripts.pory"

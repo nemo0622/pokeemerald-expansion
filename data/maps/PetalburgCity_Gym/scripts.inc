@@ -879,7 +879,7 @@ PetalburgCity_Gym_EventScript_WallysDadArrives::
 # 440 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_WallysDadApproachPlayerWest
 # 441 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_PleaseComeWithMe, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Gym_Text_PleaseComeWithMe, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 442 "data/maps/PetalburgCity_Gym/scripts.pory"
 	closemessage
 # 443 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -891,7 +891,7 @@ PetalburgCity_Gym_EventScript_WallysDadArrives::
 # 446 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_WallysDadFaceNormanWest
 # 447 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_LetMeBorrowPlayer, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_Gym_Text_LetMeBorrowPlayer, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 448 "data/maps/PetalburgCity_Gym/scripts.pory"
 	closemessage
 # 449 "data/maps/PetalburgCity_Gym/scripts.pory"

@@ -7,7 +7,7 @@ SootopolisCity_House7_EventScript_OldMan::
 	end
 
 SootopolisCity_House7_EventScript_PokefanF::
-	msgbox SootopolisCity_House7_Text_CaveMadeToKeepSomething, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House7_Text_CaveMadeToKeepSomething, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 SootopolisCity_House7_Text_CityFromEruptedVolcano:

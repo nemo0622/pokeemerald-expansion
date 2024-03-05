@@ -63,7 +63,7 @@ SSTidalRooms_EventScript_Colton::
 # 32 "data/maps/SSTidalRooms/scripts.pory"
 	trainerbattle_single TRAINER_COLTON, SSTidalRooms_Text_ColtonIntro, SSTidalRooms_Text_ColtonDefeat
 # 33 "data/maps/SSTidalRooms/scripts.pory"
-	msgbox SSTidalRooms_Text_ColtonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_ColtonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANM
 # 34 "data/maps/SSTidalRooms/scripts.pory"
 	end
 # 35 "data/maps/SSTidalRooms/scripts.pory"

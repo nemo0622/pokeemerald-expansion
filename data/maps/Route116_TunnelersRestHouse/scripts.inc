@@ -19,7 +19,7 @@ Route116_TunnelersRestHouse_OnTransition:
 # 10 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
 Route116_TunnelersRestHouse_EventScript_Tunneler1::
 # 11 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
-	msgbox Route116_TunnelersRestHouse_Text_WeHadToStopBoring, MSGBOX_NPC
+	msgbox_mugshot Route116_TunnelersRestHouse_Text_WeHadToStopBoring, MSGBOX_NPC, MUGSHOT_POKEFANM
 # 12 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
 	end
 # 13 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
@@ -27,7 +27,7 @@ Route116_TunnelersRestHouse_EventScript_Tunneler1::
 # 14 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
 Route116_TunnelersRestHouse_EventScript_Tunneler2::
 # 15 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
-	msgbox Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf, MSGBOX_NPC
+	msgbox_mugshot Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf, MSGBOX_NPC, MUGSHOT_POKEFANM
 # 16 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
 	end
 # 17 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
@@ -41,7 +41,7 @@ Route116_TunnelersRestHouse_EventScript_Tunneler3::
 # 21 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
 	goto_if_set FLAG_RUSTURF_TUNNEL_OPENED, Route116_TunnelersRestHouse_EventScript_TunnelOpened
 # 22 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
-	msgbox Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 23 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
 	release
 # 24 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
@@ -51,7 +51,7 @@ Route116_TunnelersRestHouse_EventScript_Tunneler3::
 # 26 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
 Route116_TunnelersRestHouse_EventScript_TunnelOpened::
 # 27 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
-	msgbox Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough, MSGBOX_DEFAULT, MUGSHOT_POKEFANM
 # 28 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
 	release
 # 29 "data/maps/Route116_TunnelersRestHouse/scripts.pory"

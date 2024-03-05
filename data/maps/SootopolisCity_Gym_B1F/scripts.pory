@@ -39,12 +39,12 @@ SootopolisCity_Gym_B1F_EventScript_Tiffany::
 
 SootopolisCity_Gym_B1F_EventScript_Bethany::
 	trainerbattle_single TRAINER_BETHANY, SootopolisCity_Gym_B1F_Text_BethanyIntro, SootopolisCity_Gym_B1F_Text_BethanyDefeat
-	msgbox SootopolisCity_Gym_B1F_Text_BethanyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_BethanyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANF
 	end
 
 SootopolisCity_Gym_B1F_EventScript_Annika::
 	trainerbattle_single TRAINER_ANNIKA, SootopolisCity_Gym_B1F_Text_AnnikaIntro, SootopolisCity_Gym_B1F_Text_AnnikaDefeat
-	msgbox SootopolisCity_Gym_B1F_Text_AnnikaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_AnnikaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_POKEFANF
 	end
 
 SootopolisCity_Gym_B1F_EventScript_Daphne::

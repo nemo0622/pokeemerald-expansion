@@ -32,7 +32,7 @@ LavaridgeTown_Mart_EventScript_ExpertM::
 	end
 
 LavaridgeTown_Mart_EventScript_OldWoman::
-	msgbox LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney, MSGBOX_NPC, MUGSHOT_OLDWOMAN
 	end
 
 LavaridgeTown_Mart_Text_XSpeedFirstStrike:

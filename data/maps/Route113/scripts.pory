@@ -116,7 +116,7 @@ Route113_EventScript_Tia::
 
 Route113_EventScript_Sophie::
 	trainerbattle_single TRAINER_SOPHIE, Route113_Text_SophieIntro, Route113_Text_SophieDefeat
-	msgbox Route113_Text_SophiePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_SophiePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 	end
 
 Route113_EventScript_Coby::

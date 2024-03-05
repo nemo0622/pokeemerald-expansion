@@ -591,7 +591,7 @@ Route110_TrickHousePuzzle3_EventScript_Martha::
 # 296 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	trainerbattle_single TRAINER_MARTHA, Route110_TrickHousePuzzle3_Text_MarthaIntro, Route110_TrickHousePuzzle3_Text_MarthaDefeat
 # 297 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
-	msgbox Route110_TrickHousePuzzle3_Text_MarthaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle3_Text_MarthaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PICNICKER
 # 298 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"
 	end
 # 299 "data/maps/Route110_TrickHousePuzzle3/scripts.pory"

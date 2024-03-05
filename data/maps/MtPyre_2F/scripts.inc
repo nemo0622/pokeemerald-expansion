@@ -33,7 +33,7 @@ MtPyre_2F_EventScript_Woman::
 # 17 "data/maps/MtPyre_2F/scripts.pory"
 MtPyre_2F_EventScript_PokefanM::
 # 18 "data/maps/MtPyre_2F/scripts.pory"
-	msgbox MtPyre_2F_Text_TumbledFromFloorAbove, MSGBOX_NPC
+	msgbox_mugshot MtPyre_2F_Text_TumbledFromFloorAbove, MSGBOX_NPC, MUGSHOT_POKEFANM
 # 19 "data/maps/MtPyre_2F/scripts.pory"
 	end
 # 20 "data/maps/MtPyre_2F/scripts.pory"

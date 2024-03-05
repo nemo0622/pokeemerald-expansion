@@ -9,7 +9,7 @@ RustboroCity_House2_MapScripts::
 # 5 "data/maps/RustboroCity_House2/scripts.pory"
 RustboroCity_House2_EventScript_PokefanF::
 # 6 "data/maps/RustboroCity_House2/scripts.pory"
-	msgbox RustboroCity_House2_Text_TrainerSchoolExcellent, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_House2_Text_TrainerSchoolExcellent, MSGBOX_NPC, MUGSHOT_POKEFANF
 # 7 "data/maps/RustboroCity_House2/scripts.pory"
 	end
 # 8 "data/maps/RustboroCity_House2/scripts.pory"

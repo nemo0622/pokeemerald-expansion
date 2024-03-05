@@ -20,7 +20,7 @@ DewfordTown_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 DewfordTown_PokemonCenter_1F_EventScript_PokefanF::
-	msgbox DewfordTown_PokemonCenter_1F_Text_StoneCavern, MSGBOX_NPC
+	msgbox_mugshot DewfordTown_PokemonCenter_1F_Text_StoneCavern, MSGBOX_NPC, MUGSHOT_POKEFANF
 	end
 
 DewfordTown_PokemonCenter_1F_EventScript_Man::
