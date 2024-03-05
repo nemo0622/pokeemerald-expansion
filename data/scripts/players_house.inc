@@ -8,12 +8,12 @@ PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet::
 	return
 
 PlayersHouse_1F_EventScript_EnterHouseMovingIn::
-	msgbox PlayersHouse_1F_Text_IsntItNiceInHere, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_IsntItNiceInHere, MSGBOX_DEFAULT, MUGSHOT_MOM
 	applymovement VAR_0x8004, Common_Movement_FacePlayer
 	waitmovement 0
 	call_if_eq VAR_0x8005, MALE, PlayersHouse_1F_EventScript_MomFacePlayerMovingInMale
 	call_if_eq VAR_0x8005, FEMALE, PlayersHouse_1F_EventScript_MomFacePlayerMovingInFemale
-	msgbox PlayersHouse_1F_Text_MoversPokemonGoSetClock, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_MoversPokemonGoSetClock, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	setvar VAR_LITTLEROOT_INTRO_STATE, 4
 	applymovement OBJ_EVENT_ID_PLAYER, PlayersHouse_1F_Movement_PlayerWalkIn
@@ -37,7 +37,7 @@ PlayersHouse_1F_Movement_PlayerWalkIn:
 	step_end
 
 PlayersHouse_1F_EventScript_MomGoSeeRoom::
-	msgbox PlayersHouse_1F_Text_ArentYouInterestedInRoom, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_ArentYouInterestedInRoom, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterUp
 	applymovement OBJ_EVENT_ID_PLAYER, PlayersHouse_1F_Movement_MovePlayerAwayFromDoor
@@ -81,7 +81,7 @@ PlayersHouse_2F_EventScript_MomComesUpstairsMale::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox PlayersHouse_2F_Text_HowDoYouLikeYourRoom, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_2F_Text_HowDoYouLikeYourRoom, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	applymovement VAR_0x8008, PlayersHouse_2F_Movement_MomExitsMale
 	waitmovement 0
@@ -94,7 +94,7 @@ PlayersHouse_2F_EventScript_MomComesUpstairsFemale::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	msgbox PlayersHouse_2F_Text_HowDoYouLikeYourRoom, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_2F_Text_HowDoYouLikeYourRoom, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	applymovement VAR_0x8008, PlayersHouse_2F_Movement_MomExitsFemale
 	waitmovement 0
@@ -156,7 +156,7 @@ PlayersHouse_1F_EventScript_PetalburgGymReportMale::
 	applymovement OBJ_EVENT_ID_PLAYER, PlayersHouse_1F_Movement_PlayerApproachTVForGymMale
 	waitmovement 0
 	playbgm MUS_ENCOUNTER_INTERVIEWER, FALSE
-	msgbox PlayersHouse_1F_Text_MaybeDadWillBeOn, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_MaybeDadWillBeOn, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	applymovement VAR_0x8005, PlayersHouse_1F_Movement_MomMakeRoomToSeeTVMale
 	waitmovement 0
@@ -165,8 +165,8 @@ PlayersHouse_1F_EventScript_PetalburgGymReportMale::
 	call PlayersHouse_1F_EventScript_WatchGymBroadcast
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	msgbox PlayersHouse_1F_Text_ItsOverWeMissedHim, MSGBOX_DEFAULT
-	msgbox PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_ItsOverWeMissedHim, MSGBOX_DEFAULT, MUGSHOT_MOM
+	msgbox_mugshot PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	setvar VAR_TEMP_1, 1
 	applymovement VAR_0x8005, PlayersHouse_1F_Movement_MomReturnToSeatMale
@@ -181,7 +181,7 @@ PlayersHouse_1F_EventScript_PetalburgGymReportFemale::
 	applymovement OBJ_EVENT_ID_PLAYER, PlayersHouse_1F_Movement_PlayerApproachTVForGymFemale
 	waitmovement 0
 	playbgm MUS_ENCOUNTER_INTERVIEWER, FALSE
-	msgbox PlayersHouse_1F_Text_MaybeDadWillBeOn, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_MaybeDadWillBeOn, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	applymovement VAR_0x8005, PlayersHouse_1F_Movement_MomMakeRoomToSeeTVFemale
 	waitmovement 0
@@ -190,8 +190,8 @@ PlayersHouse_1F_EventScript_PetalburgGymReportFemale::
 	call PlayersHouse_1F_EventScript_WatchGymBroadcast
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox PlayersHouse_1F_Text_ItsOverWeMissedHim, MSGBOX_DEFAULT
-	msgbox PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_ItsOverWeMissedHim, MSGBOX_DEFAULT, MUGSHOT_MOM
+	msgbox_mugshot PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	setvar VAR_TEMP_1, 1
 	applymovement VAR_0x8005, PlayersHouse_1F_Movement_MomReturnToSeatFemale
@@ -205,7 +205,7 @@ PlayersHouse_1F_EventScript_MomNoticeGymBroadcast::
 	waitmovement 0
 	applymovement VAR_0x8005, Common_Movement_Delay48
 	waitmovement 0
-	msgbox PlayersHouse_1F_Text_OhComeQuickly, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_OhComeQuickly, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	return
 
@@ -312,22 +312,22 @@ PlayersHouse_1F_EventScript_Mom::
 	goto_if_set FLAG_RESCUED_BIRCH, PlayersHouse_1F_EventScript_MomHealsParty
 	goto_if_eq VAR_TEMP_1, 1, PlayersHouse_1F_EventScript_SeeYouHoney
 	goto_if_eq VAR_LITTLEROOT_INTRO_STATE, 7, PlayersHouse_1F_EventScript_DidYouMeetProfBirch
-	msgbox PlayersHouse_1F_Text_IsntItNiceInHere, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_IsntItNiceInHere, MSGBOX_DEFAULT, MUGSHOT_MOM
 	release
 	end
 
 PlayersHouse_1F_EventScript_DontPushYourselfTooHard::
-	msgbox PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT, MUGSHOT_MOM
 	release
 	end
 
 PlayersHouse_1F_EventScript_TryRegisterMom::
 	goto_if_set FLAG_ENABLE_MOM_MATCH_CALL, PlayersHouse_1F_EventScript_CheckGiveAmuletCoin
-	msgbox PlayersHouse_1F_Text_IsThatAPokenav, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_IsThatAPokenav, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox PlayersHouse_1F_Text_RegisteredMom, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_RegisteredMom, MSGBOX_DEFAULT, MUGSHOT_MOM
 	waitfanfare
 	closemessage
 	delay 30
@@ -341,21 +341,21 @@ PlayersHouse_1F_EventScript_CheckGiveAmuletCoin::
 
 PlayersHouse_1F_EventScript_TryGiveAmuletCoin::
 	goto_if_set FLAG_RECEIVED_AMULET_COIN, PlayersHouse_1F_EventScript_MomHealsParty
-	msgbox PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom, MSGBOX_DEFAULT, MUGSHOT_MOM
 	giveitem ITEM_AMULET_COIN
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	msgbox PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT, MUGSHOT_MOM
 	setflag FLAG_RECEIVED_AMULET_COIN
 	release
 	end
 
 PlayersHouse_1F_EventScript_MomHealsParty::
-	msgbox PlayersHouse_1F_Text_YouShouldRestABit, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_YouShouldRestABit, MSGBOX_DEFAULT, MUGSHOT_MOM
 	goto PlayersHouse_1F_EventScript_HealParty
 	end
 
 PlayersHouse_1F_EventScript_SeeYouHoney::
-	msgbox PlayersHouse_1F_Text_SeeYouHoney, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_SeeYouHoney, MSGBOX_DEFAULT, MUGSHOT_MOM
 	release
 	end
 
@@ -363,12 +363,12 @@ PlayersHouse_1F_EventScript_HealParty::
 	closemessage
 	call Common_EventScript_OutOfCenterPartyHeal
 	incrementgamestat GAME_STAT_RESTED_AT_HOME
-	msgbox PlayersHouse_1F_Text_TakeCareHoney, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_TakeCareHoney, MSGBOX_DEFAULT, MUGSHOT_MOM
 	release
 	end
 
 PlayersHouse_1F_EventScript_DidYouMeetProfBirch::
-	msgbox PlayersHouse_1F_Text_DidYouMeetProfBirch, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_DidYouMeetProfBirch, MSGBOX_DEFAULT, MUGSHOT_MOM
 	release
 	end
 

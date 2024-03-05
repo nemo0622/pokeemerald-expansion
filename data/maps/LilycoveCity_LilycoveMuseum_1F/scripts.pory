@@ -133,7 +133,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_Artist1::
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_NinjaBoy::
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty, MSGBOX_SIGN, MUGSHOT_NINJABOY
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_Woman1::

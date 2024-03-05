@@ -269,7 +269,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_Artist1::
 # 135 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 LilycoveCity_LilycoveMuseum_1F_EventScript_NinjaBoy::
 # 136 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty, MSGBOX_SIGN, MUGSHOT_NINJABOY
 # 137 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 	end
 # 138 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"

@@ -815,7 +815,7 @@ Route119_EventScript_Yasu::
 # 408 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_YASU, Route119_Text_YasuIntro, Route119_Text_YasuDefeat
 # 409 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_YasuPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_YasuPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 # 410 "data/maps/Route119/scripts.pory"
 	end
 # 411 "data/maps/Route119/scripts.pory"
@@ -825,7 +825,7 @@ Route119_EventScript_Takashi::
 # 413 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_TAKASHI, Route119_Text_TakashiIntro, Route119_Text_TakashiDefeat
 # 414 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_TakashiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_TakashiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 # 415 "data/maps/Route119/scripts.pory"
 	end
 # 416 "data/maps/Route119/scripts.pory"
@@ -835,7 +835,7 @@ Route119_EventScript_Hideo::
 # 418 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_HIDEO, Route119_Text_HideoIntro, Route119_Text_HideoDefeat
 # 419 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_HideoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_HideoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 # 420 "data/maps/Route119/scripts.pory"
 	end
 # 421 "data/maps/Route119/scripts.pory"

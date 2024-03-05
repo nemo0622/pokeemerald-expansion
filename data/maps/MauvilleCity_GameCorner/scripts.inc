@@ -929,7 +929,7 @@ MauvilleCity_GameCorner_EventScript_OldMan::
 # 465 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	faceplayer
 # 466 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 467 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 # 468 "data/maps/MauvilleCity_GameCorner/scripts.pory"

@@ -154,7 +154,7 @@ LittlerootTown_EventScript_GoInsideWithMom::
 	delay 10
 	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachPlayerAtTruck
 	waitmovement 0
-	msgbox LittlerootTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachDoor
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_PlayerApproachDoor
@@ -482,7 +482,7 @@ LittlerootTown_EventScript_GiveDexNavTrigger::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_SetHomeDoorCoordsMale
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_SetHomeDoorCoordsFemale
-	msgbox LittlerootTown_Text_WaitPlayer, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_WaitPlayer, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_MomApproachPlayerMale
@@ -905,13 +905,13 @@ LittlerootTown_EventScript_SetReceivedRunningShoes::
 	end
 
 LittlerootTown_EventScript_GiveDexNav::
-	msgbox LittlerootTown_Text_EnableDexNav, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_EnableDexNav, MSGBOX_DEFAULT, MUGSHOT_MOM
 	playfanfare MUS_OBTAIN_ITEM
 	message LittlerootTown_Text_TurnOnDexNav
 	waitfanfare
 	setflag FLAG_SYS_DEXNAV_GET
-	msgbox LittlerootTown_Text_ExplainDexNav, MSGBOX_DEFAULT
-	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_ExplainDexNav, MSGBOX_DEFAULT, MUGSHOT_MOM
+	msgbox_mugshot LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
 	delay 30
 	return

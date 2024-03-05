@@ -256,7 +256,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_SSAnneReplica::
 	end
 
 SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron1::
-	msgbox SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip, MSGBOX_NPC, MUGSHOT_BRINEY
 	end
 
 SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron2::
@@ -266,7 +266,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron2::
 SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron3::
 	lock
 	faceplayer
-	msgbox SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0

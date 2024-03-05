@@ -45,7 +45,7 @@ MossdeepCity_EventScript_SailorMagmaGone::
 	end
 
 MossdeepCity_EventScript_NinjaBoy::
-	msgbox MossdeepCity_Text_WailmerWatching, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Text_WailmerWatching, MSGBOX_NPC, MUGSHOT_NINJABOY
 	end
 
 MossdeepCity_EventScript_ExpertM::

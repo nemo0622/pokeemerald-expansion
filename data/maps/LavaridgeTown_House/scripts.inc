@@ -9,7 +9,7 @@ LavaridgeTown_House_MapScripts::
 # 5 "data/maps/LavaridgeTown_House/scripts.pory"
 LavaridgeTown_House_EventScript_OldMan::
 # 6 "data/maps/LavaridgeTown_House/scripts.pory"
-	msgbox LavaridgeTown_House_Text_WifeWarmingEggInHotSprings, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_House_Text_WifeWarmingEggInHotSprings, MSGBOX_NPC, MUGSHOT_BRINEY
 # 7 "data/maps/LavaridgeTown_House/scripts.pory"
 	end
 # 8 "data/maps/LavaridgeTown_House/scripts.pory"

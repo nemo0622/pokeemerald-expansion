@@ -9,7 +9,7 @@ SootopolisCity_House7_MapScripts::
 # 5 "data/maps/SootopolisCity_House7/scripts.pory"
 SootopolisCity_House7_EventScript_OldMan::
 # 6 "data/maps/SootopolisCity_House7/scripts.pory"
-	msgbox SootopolisCity_House7_Text_CityFromEruptedVolcano, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House7_Text_CityFromEruptedVolcano, MSGBOX_NPC, MUGSHOT_BRINEY
 # 7 "data/maps/SootopolisCity_House7/scripts.pory"
 	end
 # 8 "data/maps/SootopolisCity_House7/scripts.pory"

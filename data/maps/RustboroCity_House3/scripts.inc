@@ -9,7 +9,7 @@ RustboroCity_House3_MapScripts::
 # 5 "data/maps/RustboroCity_House3/scripts.pory"
 RustboroCity_House3_EventScript_OldMan::
 # 6 "data/maps/RustboroCity_House3/scripts.pory"
-	msgbox RustboroCity_House3_Text_IGivePerfectlySuitedNicknames, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_House3_Text_IGivePerfectlySuitedNicknames, MSGBOX_NPC, MUGSHOT_BRINEY
 # 7 "data/maps/RustboroCity_House3/scripts.pory"
 	end
 # 8 "data/maps/RustboroCity_House3/scripts.pory"

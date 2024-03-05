@@ -9,7 +9,7 @@ RustboroCity_Flat2_2F_MapScripts::
 # 5 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 RustboroCity_Flat2_2F_EventScript_OldMan::
 # 6 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
-	msgbox RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays, MSGBOX_NPC, MUGSHOT_BRINEY
 # 7 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 	end
 # 8 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
@@ -23,7 +23,7 @@ RustboroCity_Flat2_2F_EventScript_NinjaBoy::
 # 12 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 	goto_if_set FLAG_RECEIVED_PREMIER_BALL_RUSTBORO, RustboroCity_Flat2_2F_EventScript_GavePremierBall
 # 13 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
-	msgbox RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 14 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 	giveitem ITEM_PREMIER_BALL
 # 15 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
@@ -39,7 +39,7 @@ RustboroCity_Flat2_2F_EventScript_NinjaBoy::
 # 20 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 RustboroCity_Flat2_2F_EventScript_GavePremierBall::
 # 21 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
-	msgbox RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 22 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 	release
 # 23 "data/maps/RustboroCity_Flat2_2F/scripts.pory"

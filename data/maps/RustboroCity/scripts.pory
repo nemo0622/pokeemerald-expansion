@@ -192,7 +192,7 @@ RustboroCity_EventScript_Twin::
 	end
 
 RustboroCity_EventScript_NinjaBoy::
-	msgbox RustboroCity_Text_CatchRarePokemonIfIGoToSchool, MSGBOX_SIGN
+	msgbox_mugshot RustboroCity_Text_CatchRarePokemonIfIGoToSchool, MSGBOX_SIGN, MUGSHOT_NINJABOY
 	end
 
 RustboroCity_EventScript_TunnelSign::

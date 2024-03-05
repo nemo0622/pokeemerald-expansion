@@ -515,7 +515,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_SSAnneReplica::
 # 258 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron1::
 # 259 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip, MSGBOX_NPC, MUGSHOT_BRINEY
 # 260 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	end
 # 261 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -535,7 +535,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron3::
 # 268 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	faceplayer
 # 269 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 270 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	closemessage
 # 271 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"

@@ -387,7 +387,7 @@ RustboroCity_EventScript_Twin::
 # 194 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_NinjaBoy::
 # 195 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_CatchRarePokemonIfIGoToSchool, MSGBOX_SIGN
+	msgbox_mugshot RustboroCity_Text_CatchRarePokemonIfIGoToSchool, MSGBOX_SIGN, MUGSHOT_NINJABOY
 # 196 "data/maps/RustboroCity/scripts.pory"
 	end
 # 197 "data/maps/RustboroCity/scripts.pory"

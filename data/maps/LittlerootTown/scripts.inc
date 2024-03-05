@@ -311,7 +311,7 @@ LittlerootTown_EventScript_GoInsideWithMom::
 # 156 "data/maps/LittlerootTown/scripts.pory"
 	waitmovement 0
 # 157 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT, MUGSHOT_MOM
 # 158 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
 # 159 "data/maps/LittlerootTown/scripts.pory"
@@ -967,7 +967,7 @@ LittlerootTown_EventScript_GiveDexNavTrigger::
 # 484 "data/maps/LittlerootTown/scripts.pory"
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_SetHomeDoorCoordsFemale
 # 485 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_WaitPlayer, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_WaitPlayer, MSGBOX_DEFAULT, MUGSHOT_MOM
 # 486 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
 # 487 "data/maps/LittlerootTown/scripts.pory"
@@ -1813,7 +1813,7 @@ LittlerootTown_EventScript_SetReceivedRunningShoes::
 # 907 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_EventScript_GiveDexNav::
 # 908 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_EnableDexNav, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_EnableDexNav, MSGBOX_DEFAULT, MUGSHOT_MOM
 # 909 "data/maps/LittlerootTown/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 910 "data/maps/LittlerootTown/scripts.pory"
@@ -1823,9 +1823,9 @@ LittlerootTown_EventScript_GiveDexNav::
 # 912 "data/maps/LittlerootTown/scripts.pory"
 	setflag FLAG_SYS_DEXNAV_GET
 # 913 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_ExplainDexNav, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_ExplainDexNav, MSGBOX_DEFAULT, MUGSHOT_MOM
 # 914 "data/maps/LittlerootTown/scripts.pory"
-	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT, MUGSHOT_MOM
 # 915 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
 # 916 "data/maps/LittlerootTown/scripts.pory"

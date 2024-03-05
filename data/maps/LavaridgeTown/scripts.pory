@@ -214,7 +214,7 @@ LavaridgeTown_EventScript_ExpertM::
 	end
 
 LavaridgeTown_EventScript_OldMan::
-	msgbox LavaridgeTown_Text_PokemonNippedBackside, MSGBOX_SIGN
+	msgbox_mugshot LavaridgeTown_Text_PokemonNippedBackside, MSGBOX_SIGN, MUGSHOT_BRINEY
 	end
 
 LavaridgeTown_EventScript_Twin::

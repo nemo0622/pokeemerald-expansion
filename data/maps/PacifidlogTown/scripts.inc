@@ -29,7 +29,7 @@ PacifidlogTown_OnResume:
 # 15 "data/maps/PacifidlogTown/scripts.pory"
 PacifidlogTown_EventScript_NinjaBoy::
 # 16 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_Text_NeatHousesOnWater, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_Text_NeatHousesOnWater, MSGBOX_NPC, MUGSHOT_NINJABOY
 # 17 "data/maps/PacifidlogTown/scripts.pory"
 	end
 # 18 "data/maps/PacifidlogTown/scripts.pory"

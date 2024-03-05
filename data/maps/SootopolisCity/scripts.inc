@@ -1675,7 +1675,7 @@ SootopolisCity_EventScript_NinjaBoy::
 # 838 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_le VAR_SOOTOPOLIS_CITY_STATE, 1, SootopolisCity_EventScript_NinjaBoyNormal
 # 839 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_ThisIsWicked, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_ThisIsWicked, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 840 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 841 "data/maps/SootopolisCity/scripts.pory"
@@ -1691,7 +1691,7 @@ SootopolisCity_EventScript_NinjaBoy::
 # 846 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_NinjaBoyNormal::
 # 847 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_WonderWhatWorldIsLike, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_WonderWhatWorldIsLike, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 848 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 849 "data/maps/SootopolisCity/scripts.pory"
@@ -1701,7 +1701,7 @@ SootopolisCity_EventScript_NinjaBoyNormal::
 # 851 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_NinjaBoyRayquaza::
 # 852 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_ThatWasWicked, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_ThatWasWicked, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 853 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 854 "data/maps/SootopolisCity/scripts.pory"

@@ -3,7 +3,7 @@ RustboroCity_House3_MapScripts::
 	.byte 0
 
 RustboroCity_House3_EventScript_OldMan::
-	msgbox RustboroCity_House3_Text_IGivePerfectlySuitedNicknames, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_House3_Text_IGivePerfectlySuitedNicknames, MSGBOX_NPC, MUGSHOT_BRINEY
 	end
 
 RustboroCity_House3_EventScript_OldWoman::

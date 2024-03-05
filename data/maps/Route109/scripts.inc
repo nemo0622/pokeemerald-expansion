@@ -711,7 +711,7 @@ Route109_EventScript_Woman::
 # 356 "data/maps/Route109/scripts.pory"
 Route109_EventScript_OldMan::
 # 357 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC
+	msgbox_mugshot Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC, MUGSHOT_BRINEY
 # 358 "data/maps/Route109/scripts.pory"
 	end
 # 359 "data/maps/Route109/scripts.pory"

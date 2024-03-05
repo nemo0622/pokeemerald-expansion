@@ -693,7 +693,7 @@ Route120_EventScript_Keigo::
 # 347 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_KEIGO, Route120_Text_KeigoIntro, Route120_Text_KeigoDefeat
 # 348 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_KeigoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_KeigoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 # 349 "data/maps/Route120/scripts.pory"
 	end
 # 350 "data/maps/Route120/scripts.pory"
@@ -703,7 +703,7 @@ Route120_EventScript_Riley::
 # 352 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_RILEY, Route120_Text_RileyIntro, Route120_Text_RileyDefeat
 # 353 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_RileyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_RileyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 # 354 "data/maps/Route120/scripts.pory"
 	end
 # 355 "data/maps/Route120/scripts.pory"

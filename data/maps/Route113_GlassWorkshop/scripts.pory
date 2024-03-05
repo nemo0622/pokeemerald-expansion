@@ -290,7 +290,7 @@ Route113_GlassWorkshop_EventScript_TryGiveItemAgain::
 	end
 
 Route113_GlassWorkshop_EventScript_NinjaBoy::
-	msgbox Route113_GlassWorkshop_Text_FunToBlowGlassFlute, MSGBOX_NPC
+	msgbox_mugshot Route113_GlassWorkshop_Text_FunToBlowGlassFlute, MSGBOX_NPC, MUGSHOT_NINJABOY
 	end
 
 Route113_GlassWorkshop_Text_GoCollectAshWithThis:

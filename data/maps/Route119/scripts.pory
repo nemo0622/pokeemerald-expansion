@@ -406,17 +406,17 @@ Route119_EventScript_Phil::
 
 Route119_EventScript_Yasu::
 	trainerbattle_single TRAINER_YASU, Route119_Text_YasuIntro, Route119_Text_YasuDefeat
-	msgbox Route119_Text_YasuPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_YasuPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 	end
 
 Route119_EventScript_Takashi::
 	trainerbattle_single TRAINER_TAKASHI, Route119_Text_TakashiIntro, Route119_Text_TakashiDefeat
-	msgbox Route119_Text_TakashiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_TakashiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 	end
 
 Route119_EventScript_Hideo::
 	trainerbattle_single TRAINER_HIDEO, Route119_Text_HideoIntro, Route119_Text_HideoDefeat
-	msgbox Route119_Text_HideoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_HideoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 	end
 
 Route119_EventScript_Chris::

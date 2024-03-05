@@ -27,7 +27,7 @@ PacifidlogTown_PokemonCenter_1F_EventScript_Woman::
 	end
 
 PacifidlogTown_PokemonCenter_1F_EventScript_OldMan::
-	msgbox PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats, MSGBOX_NPC, MUGSHOT_BRINEY
 	end
 
 PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard:

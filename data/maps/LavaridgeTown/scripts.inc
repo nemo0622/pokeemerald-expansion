@@ -431,7 +431,7 @@ LavaridgeTown_EventScript_ExpertM::
 # 216 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_EventScript_OldMan::
 # 217 "data/maps/LavaridgeTown/scripts.pory"
-	msgbox LavaridgeTown_Text_PokemonNippedBackside, MSGBOX_SIGN
+	msgbox_mugshot LavaridgeTown_Text_PokemonNippedBackside, MSGBOX_SIGN, MUGSHOT_BRINEY
 # 218 "data/maps/LavaridgeTown/scripts.pory"
 	end
 # 219 "data/maps/LavaridgeTown/scripts.pory"

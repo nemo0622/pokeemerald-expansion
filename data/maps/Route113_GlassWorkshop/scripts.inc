@@ -583,7 +583,7 @@ Route113_GlassWorkshop_EventScript_TryGiveItemAgain::
 # 292 "data/maps/Route113_GlassWorkshop/scripts.pory"
 Route113_GlassWorkshop_EventScript_NinjaBoy::
 # 293 "data/maps/Route113_GlassWorkshop/scripts.pory"
-	msgbox Route113_GlassWorkshop_Text_FunToBlowGlassFlute, MSGBOX_NPC
+	msgbox_mugshot Route113_GlassWorkshop_Text_FunToBlowGlassFlute, MSGBOX_NPC, MUGSHOT_NINJABOY
 # 294 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	end
 # 295 "data/maps/Route113_GlassWorkshop/scripts.pory"

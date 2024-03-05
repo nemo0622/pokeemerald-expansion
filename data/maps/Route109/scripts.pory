@@ -354,7 +354,7 @@ Route109_EventScript_Woman::
 	end
 
 Route109_EventScript_OldMan::
-	msgbox Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC
+	msgbox_mugshot Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC, MUGSHOT_BRINEY
 	end
 
 Route109_EventScript_Zigzagoon::

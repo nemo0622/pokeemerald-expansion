@@ -463,7 +463,7 @@ MauvilleCity_GameCorner_EventScript_PokefanMNormal::
 MauvilleCity_GameCorner_EventScript_OldMan::
 	lock
 	faceplayer
-	msgbox MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 	end
 

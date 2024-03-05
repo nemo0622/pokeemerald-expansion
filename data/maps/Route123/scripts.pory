@@ -137,7 +137,7 @@ Route123_EventScript_Kayley::
 
 Route123_EventScript_Jonas::
 	trainerbattle_single TRAINER_JONAS, Route123_Text_JonasIntro, Route123_Text_JonasDefeat
-	msgbox Route123_Text_JonasPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_JonasPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 	end
 
 Route123_EventScript_Jazmyn::

@@ -25,7 +25,7 @@ Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother::
 # 13 "data/maps/Route114_FossilManiacsHouse/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_DIG, Route114_FossilManiacsHouse_EventScript_ReceivedDig
 # 14 "data/maps/Route114_FossilManiacsHouse/scripts.pory"
-	msgbox Route114_FossilManiacsHouse_Text_HaveThisToDigLikeMyBrother, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_FossilManiacsHouse_Text_HaveThisToDigLikeMyBrother, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 15 "data/maps/Route114_FossilManiacsHouse/scripts.pory"
 	giveitem ITEM_TM_DIG
 # 16 "data/maps/Route114_FossilManiacsHouse/scripts.pory"
@@ -41,7 +41,7 @@ Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother::
 # 21 "data/maps/Route114_FossilManiacsHouse/scripts.pory"
 Route114_FossilManiacsHouse_EventScript_ReceivedDig::
 # 22 "data/maps/Route114_FossilManiacsHouse/scripts.pory"
-	msgbox Route114_FossilManiacsHouse_Text_DigReturnsYouToEntrance, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_FossilManiacsHouse_Text_DigReturnsYouToEntrance, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 23 "data/maps/Route114_FossilManiacsHouse/scripts.pory"
 	release
 # 24 "data/maps/Route114_FossilManiacsHouse/scripts.pory"

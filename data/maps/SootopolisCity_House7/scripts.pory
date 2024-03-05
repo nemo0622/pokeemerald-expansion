@@ -3,7 +3,7 @@ SootopolisCity_House7_MapScripts::
 	.byte 0
 
 SootopolisCity_House7_EventScript_OldMan::
-	msgbox SootopolisCity_House7_Text_CityFromEruptedVolcano, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House7_Text_CityFromEruptedVolcano, MSGBOX_NPC, MUGSHOT_BRINEY
 	end
 
 SootopolisCity_House7_EventScript_PokefanF::

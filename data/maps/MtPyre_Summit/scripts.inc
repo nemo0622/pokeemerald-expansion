@@ -273,7 +273,7 @@ MtPyre_Summit_EventScript_OldMan::
 # 137 "data/maps/MtPyre_Summit/scripts.pory"
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, MtPyre_Summit_EventScript_OldManAfterRayquaza
 # 138 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_WillYouHearOutMyTale, MSGBOX_YESNO
+	msgbox_mugshot MtPyre_Summit_Text_WillYouHearOutMyTale, MSGBOX_YESNO, MUGSHOT_BRINEY
 # 139 "data/maps/MtPyre_Summit/scripts.pory"
 	call_if_eq VAR_RESULT, YES, MtPyre_Summit_EventScript_OldManTale
 # 140 "data/maps/MtPyre_Summit/scripts.pory"
@@ -287,7 +287,7 @@ MtPyre_Summit_EventScript_OldMan::
 # 144 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_OldManAfterRayquaza::
 # 145 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_HearTheNewLegendOfHoenn, MSGBOX_YESNO
+	msgbox_mugshot MtPyre_Summit_Text_HearTheNewLegendOfHoenn, MSGBOX_YESNO, MUGSHOT_BRINEY
 # 146 "data/maps/MtPyre_Summit/scripts.pory"
 	call_if_eq VAR_RESULT, YES, MtPyre_Summit_EventScript_OldManNewTale
 # 147 "data/maps/MtPyre_Summit/scripts.pory"
@@ -301,7 +301,7 @@ MtPyre_Summit_EventScript_OldManAfterRayquaza::
 # 151 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_OldManTale::
 # 152 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_GroudonKyogreTale, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_GroudonKyogreTale, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 153 "data/maps/MtPyre_Summit/scripts.pory"
 	return
 # 154 "data/maps/MtPyre_Summit/scripts.pory"
@@ -309,7 +309,7 @@ MtPyre_Summit_EventScript_OldManTale::
 # 155 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_DeclineOldManTale::
 # 156 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_WellThatTooIsFine, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_WellThatTooIsFine, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 157 "data/maps/MtPyre_Summit/scripts.pory"
 	return
 # 158 "data/maps/MtPyre_Summit/scripts.pory"
@@ -317,7 +317,7 @@ MtPyre_Summit_EventScript_DeclineOldManTale::
 # 159 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_OldManNewTale::
 # 160 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_HoennTrioTale, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_Summit_Text_HoennTrioTale, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 161 "data/maps/MtPyre_Summit/scripts.pory"
 	return
 # 162 "data/maps/MtPyre_Summit/scripts.pory"

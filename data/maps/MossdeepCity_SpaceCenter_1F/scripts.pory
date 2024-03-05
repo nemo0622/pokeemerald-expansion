@@ -175,7 +175,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_OldMan::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_OldManNormal::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -183,7 +183,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_OldManNormal::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_OldManMagma::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0

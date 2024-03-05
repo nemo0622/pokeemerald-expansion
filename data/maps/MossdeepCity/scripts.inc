@@ -93,7 +93,7 @@ MossdeepCity_EventScript_SailorMagmaGone::
 # 47 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_NinjaBoy::
 # 48 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_WailmerWatching, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Text_WailmerWatching, MSGBOX_NPC, MUGSHOT_NINJABOY
 # 49 "data/maps/MossdeepCity/scripts.pory"
 	end
 # 50 "data/maps/MossdeepCity/scripts.pory"

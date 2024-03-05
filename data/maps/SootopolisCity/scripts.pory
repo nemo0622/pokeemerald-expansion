@@ -836,7 +836,7 @@ SootopolisCity_EventScript_NinjaBoy::
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_NinjaBoyRayquaza
 	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_NinjaBoyNormal
 	goto_if_le VAR_SOOTOPOLIS_CITY_STATE, 1, SootopolisCity_EventScript_NinjaBoyNormal
-	msgbox SootopolisCity_Text_ThisIsWicked, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_ThisIsWicked, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 	closemessage
 	applymovement LOCALID_NINJA_BOY, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -844,12 +844,12 @@ SootopolisCity_EventScript_NinjaBoy::
 	end
 
 SootopolisCity_EventScript_NinjaBoyNormal::
-	msgbox SootopolisCity_Text_WonderWhatWorldIsLike, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_WonderWhatWorldIsLike, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 	release
 	end
 
 SootopolisCity_EventScript_NinjaBoyRayquaza::
-	msgbox SootopolisCity_Text_ThatWasWicked, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_ThatWasWicked, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 	release
 	end
 

@@ -59,7 +59,7 @@ Route113_EventScript_Gentleman::
 # 30 "data/maps/Route113/scripts.pory"
 Route113_EventScript_NinjaBoy::
 # 31 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_FunWalkingThroughAsh, MSGBOX_NPC
+	msgbox_mugshot Route113_Text_FunWalkingThroughAsh, MSGBOX_NPC, MUGSHOT_NINJABOY
 # 32 "data/maps/Route113/scripts.pory"
 	end
 # 33 "data/maps/Route113/scripts.pory"
@@ -167,7 +167,7 @@ Route113_EventScript_Lao::
 # 84 "data/maps/Route113/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route113_EventScript_RematchLao
 # 85 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_LaoPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route113_Text_LaoPostBattle, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 86 "data/maps/Route113/scripts.pory"
 	release
 # 87 "data/maps/Route113/scripts.pory"
@@ -181,7 +181,7 @@ Route113_EventScript_RegisterLao::
 # 91 "data/maps/Route113/scripts.pory"
 	waitmovement 0
 # 92 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_LaoRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route113_Text_LaoRegister, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 93 "data/maps/Route113/scripts.pory"
 	register_matchcall TRAINER_LAO_1
 # 94 "data/maps/Route113/scripts.pory"
@@ -195,7 +195,7 @@ Route113_EventScript_RematchLao::
 # 98 "data/maps/Route113/scripts.pory"
 	trainerbattle_rematch TRAINER_LAO_1, Route113_Text_LaoRematchIntro, Route113_Text_LaoRematchDefeat
 # 99 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_LaoPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_LaoPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 # 100 "data/maps/Route113/scripts.pory"
 	end
 # 101 "data/maps/Route113/scripts.pory"
@@ -205,7 +205,7 @@ Route113_EventScript_Lung::
 # 103 "data/maps/Route113/scripts.pory"
 	trainerbattle_single TRAINER_LUNG, Route113_Text_LungIntro, Route113_Text_LungDefeat
 # 104 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_LungPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_LungPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 # 105 "data/maps/Route113/scripts.pory"
 	end
 # 106 "data/maps/Route113/scripts.pory"

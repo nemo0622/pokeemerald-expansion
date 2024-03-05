@@ -277,7 +277,7 @@ Route123_EventScript_Jonas::
 # 139 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_JONAS, Route123_Text_JonasIntro, Route123_Text_JonasDefeat
 # 140 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_JonasPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_JonasPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 # 141 "data/maps/Route123/scripts.pory"
 	end
 # 142 "data/maps/Route123/scripts.pory"

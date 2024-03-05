@@ -496,7 +496,7 @@ LilycoveCity_ContestLobby_EventScript_Fisherman::
 	end
 
 LilycoveCity_ContestLobby_EventScript_NinjaBoy::
-	msgbox LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily, MSGBOX_NPC, MUGSHOT_NINJABOY
 	end
 
 LilycoveCity_ContestLobby_EventScript_ContestWinner1::

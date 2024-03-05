@@ -41,7 +41,7 @@ Route119_WeatherInstitute_1F_EventScript_LittleBoy::
 # 21 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	goto_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_1F_EventScript_LittleBoyTeamAquaHere
 # 22 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	msgbox Route119_WeatherInstitute_1F_Text_WowYoureStrong, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_1F_Text_WowYoureStrong, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 23 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	release
 # 24 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
@@ -51,7 +51,7 @@ Route119_WeatherInstitute_1F_EventScript_LittleBoy::
 # 26 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 Route119_WeatherInstitute_1F_EventScript_LittleBoyTeamAquaHere::
 # 27 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	msgbox Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 28 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	release
 # 29 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"

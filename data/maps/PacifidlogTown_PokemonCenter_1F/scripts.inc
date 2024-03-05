@@ -57,7 +57,7 @@ PacifidlogTown_PokemonCenter_1F_EventScript_Woman::
 # 29 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
 PacifidlogTown_PokemonCenter_1F_EventScript_OldMan::
 # 30 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
-	msgbox PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats, MSGBOX_NPC, MUGSHOT_BRINEY
 # 31 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
 	end
 # 32 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"

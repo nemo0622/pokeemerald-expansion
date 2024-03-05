@@ -71,7 +71,7 @@ FortreeCity_EventScript_Girl::
 # 36 "data/maps/FortreeCity/scripts.pory"
 FortreeCity_EventScript_OldMan::
 # 37 "data/maps/FortreeCity/scripts.pory"
-	msgbox FortreeCity_Text_EveryoneHealthyAndLively, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Text_EveryoneHealthyAndLively, MSGBOX_NPC, MUGSHOT_BRINEY
 # 38 "data/maps/FortreeCity/scripts.pory"
 	end
 # 39 "data/maps/FortreeCity/scripts.pory"

@@ -353,7 +353,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_OldMan::
 # 177 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_OldManNormal::
 # 178 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 179 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	closemessage
 # 180 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -369,7 +369,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_OldManNormal::
 # 185 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_OldManMagma::
 # 186 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 187 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	closemessage
 # 188 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"

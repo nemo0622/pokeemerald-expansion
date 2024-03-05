@@ -34,7 +34,7 @@ FortreeCity_EventScript_Girl::
 	end
 
 FortreeCity_EventScript_OldMan::
-	msgbox FortreeCity_Text_EveryoneHealthyAndLively, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Text_EveryoneHealthyAndLively, MSGBOX_NPC, MUGSHOT_BRINEY
 	end
 
 FortreeCity_EventScript_Boy::

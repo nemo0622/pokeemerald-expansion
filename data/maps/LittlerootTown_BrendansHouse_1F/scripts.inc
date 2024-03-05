@@ -125,7 +125,7 @@ LittlerootTown_BrendansHouse_1F_EventScript_GoUpstairsToSetClock::
 # 63 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	lockall
 # 64 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	msgbox PlayersHouse_1F_Text_GoSetTheClock, MSGBOX_DEFAULT
+	msgbox_mugshot PlayersHouse_1F_Text_GoSetTheClock, MSGBOX_DEFAULT, MUGSHOT_MOM
 # 65 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	closemessage
 # 66 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"

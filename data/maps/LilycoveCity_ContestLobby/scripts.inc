@@ -995,7 +995,7 @@ LilycoveCity_ContestLobby_EventScript_Fisherman::
 # 498 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_NinjaBoy::
 # 499 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily, MSGBOX_NPC, MUGSHOT_NINJABOY
 # 500 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	end
 # 501 "data/maps/LilycoveCity_ContestLobby/scripts.pory"

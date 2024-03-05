@@ -63,7 +63,7 @@ LavaridgeTown_HerbShop_EventScript_OldMan::
 # 32 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	goto_if_set FLAG_RECEIVED_CHARCOAL, LavaridgeTown_HerbShop_EventScript_ExplainCharcoal
 # 33 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
-	msgbox LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 34 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	giveitem ITEM_CHARCOAL
 # 35 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
@@ -79,7 +79,7 @@ LavaridgeTown_HerbShop_EventScript_OldMan::
 # 40 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_EventScript_ExplainCharcoal::
 # 41 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
-	msgbox LavaridgeTown_HerbShop_Text_ExplainCharcoal, MSGBOX_DEFAULT
+	msgbox_mugshot LavaridgeTown_HerbShop_Text_ExplainCharcoal, MSGBOX_DEFAULT, MUGSHOT_BRINEY
 # 42 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	release
 # 43 "data/maps/LavaridgeTown_HerbShop/scripts.pory"

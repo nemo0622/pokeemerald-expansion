@@ -227,7 +227,7 @@ Route115_EventScript_Jaiden::
 # 114 "data/maps/Route115/scripts.pory"
 	trainerbattle_single TRAINER_JAIDEN, Route115_Text_JaidenIntro, Route115_Text_JaidenDefeat
 # 115 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_JaidenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_JaidenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_NINJABOY
 # 116 "data/maps/Route115/scripts.pory"
 	end
 # 117 "data/maps/Route115/scripts.pory"

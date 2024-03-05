@@ -45,7 +45,7 @@ MossdeepCity_House4_EventScript_NinjaBoy::
 # 23 "data/maps/MossdeepCity_House4/scripts.pory"
 	special GetSecretBaseNearbyMapName
 # 24 "data/maps/MossdeepCity_House4/scripts.pory"
-	msgbox MossdeepCity_House4_Text_YouMadeSecretBaseNearX, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House4_Text_YouMadeSecretBaseNearX, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 25 "data/maps/MossdeepCity_House4/scripts.pory"
 	release
 # 26 "data/maps/MossdeepCity_House4/scripts.pory"
@@ -55,7 +55,7 @@ MossdeepCity_House4_EventScript_NinjaBoy::
 # 28 "data/maps/MossdeepCity_House4/scripts.pory"
 MossdeepCity_House4_EventScript_NoSecretBase::
 # 29 "data/maps/MossdeepCity_House4/scripts.pory"
-	msgbox MossdeepCity_House4_Text_MakeSecretBase, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House4_Text_MakeSecretBase, MSGBOX_DEFAULT, MUGSHOT_NINJABOY
 # 30 "data/maps/MossdeepCity_House4/scripts.pory"
 	release
 # 31 "data/maps/MossdeepCity_House4/scripts.pory"
