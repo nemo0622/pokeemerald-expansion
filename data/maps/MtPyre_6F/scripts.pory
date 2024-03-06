@@ -25,7 +25,7 @@ MtPyre_6F_EventScript_RematchValerie::
 
 MtPyre_6F_EventScript_Cedric::
 	trainerbattle_single TRAINER_CEDRIC, MtPyre_6F_Text_CedricIntro, MtPyre_6F_Text_CedricDefeat
-	msgbox MtPyre_6F_Text_CedricPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_6F_Text_CedricPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 	end
 
 MtPyre_6F_Text_ValerieIntro:

@@ -62,21 +62,21 @@ Route123_EventScript_Cameron::
 	trainerbattle_single TRAINER_CAMERON_1, Route123_Text_CameronIntro, Route123_Text_CameronDefeat, Route123_EventScript_RegisterCameron
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchCameron
-	msgbox Route123_Text_CameronPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_CameronPostBattle, MSGBOX_DEFAULT, MUGSHOT_PSYCHICM
 	release
 	end
 
 Route123_EventScript_RegisterCameron::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route123_Text_CameronRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_CameronRegister, MSGBOX_DEFAULT, MUGSHOT_PSYCHICM
 	register_matchcall TRAINER_CAMERON_1
 	release
 	end
 
 Route123_EventScript_RematchCameron::
 	trainerbattle_rematch TRAINER_CAMERON_1, Route123_Text_CameronRematchIntro, Route123_Text_CameronRematchDefeat
-	msgbox Route123_Text_CameronPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_CameronPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 	end
 
 Route123_EventScript_Jacki::

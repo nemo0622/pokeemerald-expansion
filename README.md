@@ -49,6 +49,9 @@
     - Code works, but need to add actual map locations!
 - Slight tileset modifications (FRLG style trees, nicer grass?, etc.)
 - Pokémon availability revamp - ~400 available species from generation 1-9
+    - Also revamp and improve old, weak Pokémon (Ledian and Doduo my beloveds)
 - NPC quests and more NPC "events" around Hoenn (ex: west of Petalburg, help out a stressed fisherman for a Rod)
+    - Also include more fun NPC dialogue, such as some trainers giving you items if you talk to them after battle!
+    - "NPC Events" could include something like a festival celebrating a legendary Pokémon in a certain town, with exclusive items and maybe a Pokémon egg distributor!
 - Story enhancements - make Aqua vs Magma conflict clearer + more interesting, bring elements of story improvements and Delta Episode from ORAS, etc.
 - Hoopa Rings - mysterious rings found around Hoenn which transport one random Pokémon from another region

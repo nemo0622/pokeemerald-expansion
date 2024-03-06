@@ -577,7 +577,7 @@ Route110_TrickHousePuzzle7_EventScript_Joshua::
 # 289 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	trainerbattle_single TRAINER_JOSHUA, Route110_TrickHousePuzzle7_Text_JoshuaIntro, Route110_TrickHousePuzzle7_Text_JoshuaDefeat
 # 290 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
-	msgbox Route110_TrickHousePuzzle7_Text_JoshuaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle7_Text_JoshuaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 # 291 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	end
 # 292 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
@@ -617,7 +617,7 @@ Route110_TrickHousePuzzle7_EventScript_Alvaro::
 # 309 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	trainerbattle_single TRAINER_ALVARO, Route110_TrickHousePuzzle7_Text_AlvaroIntro, Route110_TrickHousePuzzle7_Text_AlvaroDefeat
 # 310 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
-	msgbox Route110_TrickHousePuzzle7_Text_AlvaroPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle7_Text_AlvaroPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 # 311 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"
 	end
 # 312 "data/maps/Route110_TrickHousePuzzle7/scripts.pory"

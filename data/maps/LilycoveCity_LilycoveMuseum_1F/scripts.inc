@@ -293,7 +293,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_Woman2::
 # 147 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 LilycoveCity_LilycoveMuseum_1F_EventScript_PsychicM::
 # 148 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_CuratorHasBeenCheerful, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_CuratorHasBeenCheerful, MSGBOX_NPC, MUGSHOT_PSYCHICM
 # 149 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 	end
 # 150 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"

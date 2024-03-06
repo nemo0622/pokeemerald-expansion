@@ -4,7 +4,7 @@ MtPyre_3F_MapScripts::
 
 MtPyre_3F_EventScript_William::
 	trainerbattle_single TRAINER_WILLIAM, MtPyre_3F_Text_WilliamIntro, MtPyre_3F_Text_WilliamDefeat
-	msgbox MtPyre_3F_Text_WilliamPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_3F_Text_WilliamPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 	end
 
 MtPyre_3F_EventScript_Kayla::

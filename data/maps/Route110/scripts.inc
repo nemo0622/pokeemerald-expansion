@@ -339,7 +339,7 @@ Route110_EventScript_Edward::
 # 170 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_EDWARD, Route110_Text_EdwardIntro, Route110_Text_EdwardDefeated
 # 171 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_EdwardPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_Text_EdwardPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 # 172 "data/maps/Route110/scripts.pory"
 	end
 # 173 "data/maps/Route110/scripts.pory"

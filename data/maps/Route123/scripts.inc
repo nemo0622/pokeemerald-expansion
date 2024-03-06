@@ -127,7 +127,7 @@ Route123_EventScript_Cameron::
 # 64 "data/maps/Route123/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchCameron
 # 65 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_CameronPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_CameronPostBattle, MSGBOX_DEFAULT, MUGSHOT_PSYCHICM
 # 66 "data/maps/Route123/scripts.pory"
 	release
 # 67 "data/maps/Route123/scripts.pory"
@@ -141,7 +141,7 @@ Route123_EventScript_RegisterCameron::
 # 71 "data/maps/Route123/scripts.pory"
 	waitmovement 0
 # 72 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_CameronRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route123_Text_CameronRegister, MSGBOX_DEFAULT, MUGSHOT_PSYCHICM
 # 73 "data/maps/Route123/scripts.pory"
 	register_matchcall TRAINER_CAMERON_1
 # 74 "data/maps/Route123/scripts.pory"
@@ -155,7 +155,7 @@ Route123_EventScript_RematchCameron::
 # 78 "data/maps/Route123/scripts.pory"
 	trainerbattle_rematch TRAINER_CAMERON_1, Route123_Text_CameronRematchIntro, Route123_Text_CameronRematchDefeat
 # 79 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_CameronPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_CameronPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 # 80 "data/maps/Route123/scripts.pory"
 	end
 # 81 "data/maps/Route123/scripts.pory"

@@ -53,7 +53,7 @@ MtPyre_6F_EventScript_Cedric::
 # 27 "data/maps/MtPyre_6F/scripts.pory"
 	trainerbattle_single TRAINER_CEDRIC, MtPyre_6F_Text_CedricIntro, MtPyre_6F_Text_CedricDefeat
 # 28 "data/maps/MtPyre_6F/scripts.pory"
-	msgbox MtPyre_6F_Text_CedricPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_6F_Text_CedricPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 # 29 "data/maps/MtPyre_6F/scripts.pory"
 	end
 # 30 "data/maps/MtPyre_6F/scripts.pory"

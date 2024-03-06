@@ -143,6 +143,8 @@ static const u32 sMugshotImg_PokefanF[] = INCBIN_U32("graphics/mugshots/pics/mug
 static const u16 sMugshotPal_PokefanF[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_pokefanf.gbapal");
 static const u32 sMugshotImg_PokefanM[] = INCBIN_U32("graphics/mugshots/pics/mugshot_pokefanm.4bpp.lz");
 static const u16 sMugshotPal_PokefanM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_pokefanm.gbapal");
+static const u32 sMugshotImg_PsychicM[] = INCBIN_U32("graphics/mugshots/pics/mugshot_psychicm.4bpp.lz");
+static const u16 sMugshotPal_PsychicM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_psychicm.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -207,6 +209,7 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_PICNICKER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Picnicker, .palette = sMugshotPal_Picnicker},
     [MUGSHOT_POKEFANF] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_PokefanF, .palette = sMugshotPal_PokefanF},
     [MUGSHOT_POKEFANM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_PokefanM, .palette = sMugshotPal_PokefanM},
+    [MUGSHOT_PSYCHICM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_PsychicM, .palette = sMugshotPal_PsychicM},
 };
 
 

@@ -371,7 +371,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant3::
 # 186 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 187 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_JudgeWontSeeAuroraBeam, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_JudgeWontSeeAuroraBeam, MSGBOX_DEFAULT, MUGSHOT_PSYCHICM
 # 188 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 189 "data/maps/LilycoveCity_ContestHall/scripts.pory"

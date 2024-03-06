@@ -184,7 +184,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant2::
 LilycoveCity_ContestHall_EventScript_BeautyContestant3::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_JudgeWontSeeAuroraBeam, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_JudgeWontSeeAuroraBeam, MSGBOX_DEFAULT, MUGSHOT_PSYCHICM
 	closemessage
 	applymovement LOCALID_BEAUTY_CONTESTANT_3, Common_Movement_FaceOriginalDirection
 	waitmovement 0

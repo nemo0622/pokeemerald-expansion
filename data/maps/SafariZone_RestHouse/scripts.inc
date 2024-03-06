@@ -17,7 +17,7 @@ SafariZone_RestHouse_EventScript_Youngster::
 # 9 "data/maps/SafariZone_RestHouse/scripts.pory"
 SafariZone_RestHouse_EventScript_PsychicM::
 # 10 "data/maps/SafariZone_RestHouse/scripts.pory"
-	msgbox SafariZone_RestHouse_Text_PsychicM, MSGBOX_NPC
+	msgbox_mugshot SafariZone_RestHouse_Text_PsychicM, MSGBOX_NPC, MUGSHOT_PSYCHICM
 # 11 "data/maps/SafariZone_RestHouse/scripts.pory"
 	end
 # 12 "data/maps/SafariZone_RestHouse/scripts.pory"

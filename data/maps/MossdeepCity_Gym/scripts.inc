@@ -431,7 +431,7 @@ MossdeepCity_Gym_EventScript_Preston::
 # 216 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_PRESTON, MossdeepCity_Gym_Text_PrestonIntro, MossdeepCity_Gym_Text_PrestonDefeat
 # 217 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_PrestonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_PrestonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 # 218 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 219 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -441,7 +441,7 @@ MossdeepCity_Gym_EventScript_Virgil::
 # 221 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_VIRGIL, MossdeepCity_Gym_Text_VirgilIntro, MossdeepCity_Gym_Text_VirgilDefeat
 # 222 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_VirgilPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_VirgilPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 # 223 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 224 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -451,7 +451,7 @@ MossdeepCity_Gym_EventScript_Blake::
 # 226 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_BLAKE, MossdeepCity_Gym_Text_BlakeIntro, MossdeepCity_Gym_Text_BlakeDefeat
 # 227 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_BlakePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_BlakePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 # 228 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 229 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -531,7 +531,7 @@ MossdeepCity_Gym_EventScript_Nicholas::
 # 266 "data/maps/MossdeepCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_NICHOLAS, MossdeepCity_Gym_Text_NicholasIntro, MossdeepCity_Gym_Text_NicholasDefeat
 # 267 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_NicholasPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MossdeepCity_Gym_Text_NicholasPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 # 268 "data/maps/MossdeepCity_Gym/scripts.pory"
 	end
 # 269 "data/maps/MossdeepCity_Gym/scripts.pory"

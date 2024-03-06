@@ -145,7 +145,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_Woman2::
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_PsychicM::
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_CuratorHasBeenCheerful, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_CuratorHasBeenCheerful, MSGBOX_NPC, MUGSHOT_PSYCHICM
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_Artist2::

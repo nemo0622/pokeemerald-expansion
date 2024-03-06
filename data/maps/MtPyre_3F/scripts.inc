@@ -11,7 +11,7 @@ MtPyre_3F_EventScript_William::
 # 6 "data/maps/MtPyre_3F/scripts.pory"
 	trainerbattle_single TRAINER_WILLIAM, MtPyre_3F_Text_WilliamIntro, MtPyre_3F_Text_WilliamDefeat
 # 7 "data/maps/MtPyre_3F/scripts.pory"
-	msgbox MtPyre_3F_Text_WilliamPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_3F_Text_WilliamPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_PSYCHICM
 # 8 "data/maps/MtPyre_3F/scripts.pory"
 	end
 # 9 "data/maps/MtPyre_3F/scripts.pory"
