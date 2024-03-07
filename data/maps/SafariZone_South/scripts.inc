@@ -277,7 +277,7 @@ SafariZone_Southeast_EventScript_FatMan::
 # 139 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Southeast_EventScript_RichBoy::
 # 140 "data/maps/SafariZone_South/scripts.pory"
-	msgbox SafariZone_Southeast_Text_RichBoy, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Southeast_Text_RichBoy, MSGBOX_NPC, MUGSHOT_RICHBOY
 # 141 "data/maps/SafariZone_South/scripts.pory"
 	end
 # 142 "data/maps/SafariZone_South/scripts.pory"

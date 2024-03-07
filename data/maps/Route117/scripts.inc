@@ -173,7 +173,7 @@ Route117_EventScript_Dylan::
 # 87 "data/maps/Route117/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchDylan
 # 88 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_DylanPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_DylanPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 89 "data/maps/Route117/scripts.pory"
 	release
 # 90 "data/maps/Route117/scripts.pory"
@@ -187,7 +187,7 @@ Route117_EventScript_RegisterDylan::
 # 94 "data/maps/Route117/scripts.pory"
 	waitmovement 0
 # 95 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_DylanRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_DylanRegister, MSGBOX_DEFAULT, MUGSHOT_MAN4
 # 96 "data/maps/Route117/scripts.pory"
 	register_matchcall TRAINER_DYLAN_1
 # 97 "data/maps/Route117/scripts.pory"
@@ -201,7 +201,7 @@ Route117_EventScript_RematchDylan::
 # 101 "data/maps/Route117/scripts.pory"
 	trainerbattle_rematch TRAINER_DYLAN_1, Route117_Text_DylanRematchIntro, Route117_Text_DylanRematchDefeat
 # 102 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_DylanPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_DylanPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 # 103 "data/maps/Route117/scripts.pory"
 	end
 # 104 "data/maps/Route117/scripts.pory"
@@ -215,7 +215,7 @@ Route117_EventScript_Maria::
 # 108 "data/maps/Route117/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMaria
 # 109 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MariaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_MariaPostBattle, MSGBOX_DEFAULT, MUGSHOT_LITTLEGIRL
 # 110 "data/maps/Route117/scripts.pory"
 	release
 # 111 "data/maps/Route117/scripts.pory"
@@ -229,7 +229,7 @@ Route117_EventScript_RegisterMaria::
 # 115 "data/maps/Route117/scripts.pory"
 	waitmovement 0
 # 116 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MariaRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_MariaRegister, MSGBOX_DEFAULT, MUGSHOT_LITTLEGIRL
 # 117 "data/maps/Route117/scripts.pory"
 	register_matchcall TRAINER_MARIA_1
 # 118 "data/maps/Route117/scripts.pory"
@@ -243,7 +243,7 @@ Route117_EventScript_RematchMaria::
 # 122 "data/maps/Route117/scripts.pory"
 	trainerbattle_rematch TRAINER_MARIA_1, Route117_Text_MariaRematchIntro, Route117_Text_MariaRematchDefeat
 # 123 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MariaPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_MariaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_LITTLEGIRL
 # 124 "data/maps/Route117/scripts.pory"
 	end
 # 125 "data/maps/Route117/scripts.pory"
@@ -339,7 +339,7 @@ Route117_EventScript_Melina::
 # 170 "data/maps/Route117/scripts.pory"
 	trainerbattle_single TRAINER_MELINA, Route117_Text_MelinaIntro, Route117_Text_MelinaDefeat
 # 171 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MelinaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_MelinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LITTLEGIRL
 # 172 "data/maps/Route117/scripts.pory"
 	end
 # 173 "data/maps/Route117/scripts.pory"

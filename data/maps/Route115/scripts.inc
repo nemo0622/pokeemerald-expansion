@@ -217,7 +217,7 @@ Route115_EventScript_Kyra::
 # 109 "data/maps/Route115/scripts.pory"
 	trainerbattle_single TRAINER_KYRA, Route115_Text_KyraIntro, Route115_Text_KyraDefeat
 # 110 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_KyraPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route115_Text_KyraPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LITTLEGIRL
 # 111 "data/maps/Route115/scripts.pory"
 	end
 # 112 "data/maps/Route115/scripts.pory"

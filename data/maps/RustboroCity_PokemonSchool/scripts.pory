@@ -60,7 +60,7 @@ RustboroCity_PokemonSchool_EventScript_GameboyKid2::
 	end
 
 RustboroCity_PokemonSchool_EventScript_RichBoy::
-	msgbox RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems, MSGBOX_NPC, MUGSHOT_RICHBOY
 	end
 
 RustboroCity_PokemonSchool_EventScript_Lass::

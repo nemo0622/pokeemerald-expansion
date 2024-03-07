@@ -777,7 +777,7 @@ Route109_EventScript_Huey::
 # 389 "data/maps/Route109/scripts.pory"
 	trainerbattle_single TRAINER_HUEY, Route109_Text_HueyIntro, Route109_Text_HueyDefeated
 # 390 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_HueyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_HueyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 # 391 "data/maps/Route109/scripts.pory"
 	end
 # 392 "data/maps/Route109/scripts.pory"
@@ -787,7 +787,7 @@ Route109_EventScript_Edmond::
 # 394 "data/maps/Route109/scripts.pory"
 	trainerbattle_single TRAINER_EDMOND, Route109_Text_EdmondIntro, Route109_Text_EdmondDefeated
 # 395 "data/maps/Route109/scripts.pory"
-	msgbox Route109_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 # 396 "data/maps/Route109/scripts.pory"
 	end
 # 397 "data/maps/Route109/scripts.pory"

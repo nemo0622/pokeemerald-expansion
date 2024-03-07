@@ -451,7 +451,7 @@ DewfordTown_Gym_EventScript_Brenden::
 # 226 "data/maps/DewfordTown_Gym/scripts.pory"
 	trainerbattle_single TRAINER_BRENDEN, DewfordTown_Gym_Text_BrendenIntro, DewfordTown_Gym_Text_BrendenDefeat, DewfordTown_Gym_EventScript_BrendenBrightenRoom
 # 227 "data/maps/DewfordTown_Gym/scripts.pory"
-	msgbox DewfordTown_Gym_Text_BrendenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot DewfordTown_Gym_Text_BrendenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 # 228 "data/maps/DewfordTown_Gym/scripts.pory"
 	end
 # 229 "data/maps/DewfordTown_Gym/scripts.pory"

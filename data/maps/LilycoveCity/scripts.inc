@@ -147,7 +147,7 @@ LilycoveCity_EventScript_GirlAquaGone::
 # 74 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_RichBoy::
 # 75 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_ImFromKanto, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_ImFromKanto, MSGBOX_NPC, MUGSHOT_RICHBOY
 # 76 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 77 "data/maps/LilycoveCity/scripts.pory"
@@ -161,7 +161,7 @@ LilycoveCity_EventScript_Sailor2::
 # 81 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_Sailor2AquaGone
 # 82 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_TeamAquaBeenTrainingWailmer, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_TeamAquaBeenTrainingWailmer, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 83 "data/maps/LilycoveCity/scripts.pory"
 	release
 # 84 "data/maps/LilycoveCity/scripts.pory"
@@ -171,7 +171,7 @@ LilycoveCity_EventScript_Sailor2::
 # 86 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_Sailor2AquaGone::
 # 87 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_SomeonePuntedTeamAquaOut, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_SomeonePuntedTeamAquaOut, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 88 "data/maps/LilycoveCity/scripts.pory"
 	release
 # 89 "data/maps/LilycoveCity/scripts.pory"
@@ -257,7 +257,7 @@ LilycoveCity_EventScript_ExpertM2AquaGone::
 # 129 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_Sailor1::
 # 130 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_HeardTowerCalledSkyPillar, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_HeardTowerCalledSkyPillar, MSGBOX_NPC, MUGSHOT_SAILOR
 # 131 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 132 "data/maps/LilycoveCity/scripts.pory"

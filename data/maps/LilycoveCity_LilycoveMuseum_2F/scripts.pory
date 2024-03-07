@@ -179,7 +179,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ExpertM::
 	end
 
 LilycoveCity_LilycoveMuseum_2F_EventScript_RichBoy::
-	msgbox LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon, MSGBOX_NPC, MUGSHOT_RICHBOY
 	end
 
 LilycoveCity_LilycoveMuseum_2F_EventScript_ShowCoolPainting::

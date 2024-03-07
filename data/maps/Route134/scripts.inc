@@ -71,7 +71,7 @@ Route134_EventScript_Hudson::
 # 36 "data/maps/Route134/scripts.pory"
 	trainerbattle_single TRAINER_HUDSON, Route134_Text_HudsonIntro, Route134_Text_HudsonDefeat
 # 37 "data/maps/Route134/scripts.pory"
-	msgbox Route134_Text_HudsonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_HudsonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 # 38 "data/maps/Route134/scripts.pory"
 	end
 # 39 "data/maps/Route134/scripts.pory"
@@ -101,6 +101,6 @@ Route134_EventScript_Kelvin::
 # 51 "data/maps/Route134/scripts.pory"
 	trainerbattle_single TRAINER_KELVIN, Route134_Text_KelvinIntro, Route134_Text_KelvinDefeat
 # 52 "data/maps/Route134/scripts.pory"
-	msgbox Route134_Text_KelvinPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_KelvinPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 # 53 "data/maps/Route134/scripts.pory"
 	end

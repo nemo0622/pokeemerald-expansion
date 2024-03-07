@@ -51,7 +51,7 @@ AbandonedShip_Corridors_B1F_EventScript_DoorIsUnlocked::
 
 AbandonedShip_Corridors_B1F_EventScript_Duncan::
 	trainerbattle_single TRAINER_DUNCAN, AbandonedShip_Corridors_B1F_Text_DuncanIntro, AbandonedShip_Corridors_B1F_Text_DuncanDefeat
-	msgbox AbandonedShip_Corridors_B1F_Text_DuncanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot AbandonedShip_Corridors_B1F_Text_DuncanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 	end
 
 AbandonedShip_Corridors_B1F_Text_DuncanIntro:

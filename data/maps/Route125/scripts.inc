@@ -93,7 +93,7 @@ Route125_EventScript_Ernest::
 # 47 "data/maps/Route125/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route125_EventScript_RematchErnest
 # 48 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_ErnestPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route125_Text_ErnestPostBattle, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 49 "data/maps/Route125/scripts.pory"
 	release
 # 50 "data/maps/Route125/scripts.pory"
@@ -107,7 +107,7 @@ Route125_EventScript_RegisterErnest::
 # 54 "data/maps/Route125/scripts.pory"
 	waitmovement 0
 # 55 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_ErnestRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route125_Text_ErnestRegister, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 56 "data/maps/Route125/scripts.pory"
 	register_matchcall TRAINER_ERNEST_1
 # 57 "data/maps/Route125/scripts.pory"
@@ -121,7 +121,7 @@ Route125_EventScript_RematchErnest::
 # 61 "data/maps/Route125/scripts.pory"
 	trainerbattle_rematch TRAINER_ERNEST_1, Route125_Text_ErnestRematchIntro, Route125_Text_ErnestRematchDefeat
 # 62 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_ErnestRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route125_Text_ErnestRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 # 63 "data/maps/Route125/scripts.pory"
 	end
 # 64 "data/maps/Route125/scripts.pory"

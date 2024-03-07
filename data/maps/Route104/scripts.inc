@@ -1813,7 +1813,7 @@ Route104_EventScript_Winston::
 # 907 "data/maps/Route104/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterWinston
 # 908 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_WinstonPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_WinstonPostBattle, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 # 909 "data/maps/Route104/scripts.pory"
 	release
 # 910 "data/maps/Route104/scripts.pory"
@@ -1837,7 +1837,7 @@ Route104_EventScript_TryRegisterWinstonAfterBattle::
 # 919 "data/maps/Route104/scripts.pory"
 Route104_EventScript_RegisterWinstonAfterBattle::
 # 920 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_WinstonRegister2, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_WinstonRegister2, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 # 921 "data/maps/Route104/scripts.pory"
 	register_matchcall TRAINER_WINSTON_1
 # 922 "data/maps/Route104/scripts.pory"
@@ -1851,7 +1851,7 @@ Route104_EventScript_TryRegisterWinston::
 # 926 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_HAS_MATCH_CALL, Route104_EventScript_RegisterWinston
 # 927 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_WinstonPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_WinstonPostBattle, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 # 928 "data/maps/Route104/scripts.pory"
 	release
 # 929 "data/maps/Route104/scripts.pory"
@@ -1861,7 +1861,7 @@ Route104_EventScript_TryRegisterWinston::
 # 931 "data/maps/Route104/scripts.pory"
 Route104_EventScript_RegisterWinston::
 # 932 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_WinstonRegister1, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_WinstonRegister1, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 # 933 "data/maps/Route104/scripts.pory"
 	register_matchcall TRAINER_WINSTON_1
 # 934 "data/maps/Route104/scripts.pory"
@@ -1875,7 +1875,7 @@ Route104_EventScript_RematchWinston::
 # 938 "data/maps/Route104/scripts.pory"
 	trainerbattle_rematch TRAINER_WINSTON_1, Route104_Text_WinstonRematchIntro, Route104_Text_WinstonRematchDefeat
 # 939 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_WinstonPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route104_Text_WinstonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_RICHBOY
 # 940 "data/maps/Route104/scripts.pory"
 	end
 # 941 "data/maps/Route104/scripts.pory"

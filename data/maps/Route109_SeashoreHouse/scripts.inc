@@ -147,7 +147,7 @@ Route109_SeashoreHouse_EventScript_Dwayne::
 # 74 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	trainerbattle_single TRAINER_DWAYNE, Route109_SeashoreHouse_Text_DwayneIntro, Route109_SeashoreHouse_Text_DwayneDefeated, Route109_SeashoreHouse_EventScript_CheckTrainersCompletion
 # 75 "data/maps/Route109_SeashoreHouse/scripts.pory"
-	msgbox Route109_SeashoreHouse_Text_DwaynePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_SeashoreHouse_Text_DwaynePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 # 76 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	end
 # 77 "data/maps/Route109_SeashoreHouse/scripts.pory"

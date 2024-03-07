@@ -905,7 +905,7 @@ Route104_EventScript_Winston::
 	setvar VAR_0x8004, TRAINER_WINSTON_1
 	specialvar VAR_RESULT, IsTrainerRegistered
 	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterWinston
-	msgbox Route104_Text_WinstonPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_WinstonPostBattle, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 	release
 	end
 
@@ -917,26 +917,26 @@ Route104_EventScript_TryRegisterWinstonAfterBattle::
 	end
 
 Route104_EventScript_RegisterWinstonAfterBattle::
-	msgbox Route104_Text_WinstonRegister2, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_WinstonRegister2, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 	register_matchcall TRAINER_WINSTON_1
 	release
 	end
 
 Route104_EventScript_TryRegisterWinston::
 	goto_if_set FLAG_HAS_MATCH_CALL, Route104_EventScript_RegisterWinston
-	msgbox Route104_Text_WinstonPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_WinstonPostBattle, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 	release
 	end
 
 Route104_EventScript_RegisterWinston::
-	msgbox Route104_Text_WinstonRegister1, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_WinstonRegister1, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 	register_matchcall TRAINER_WINSTON_1
 	release
 	end
 
 Route104_EventScript_RematchWinston::
 	trainerbattle_rematch TRAINER_WINSTON_1, Route104_Text_WinstonRematchIntro, Route104_Text_WinstonRematchDefeat
-	msgbox Route104_Text_WinstonPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route104_Text_WinstonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_RICHBOY
 	end
 
 Route104_EventScript_Cindy::

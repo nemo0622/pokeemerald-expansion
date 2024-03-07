@@ -65,7 +65,7 @@ Route108_EventScript_Cory::
 # 33 "data/maps/Route108/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route108_EventScript_CoryRematch
 # 34 "data/maps/Route108/scripts.pory"
-	msgbox Route108_Text_CoryPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route108_Text_CoryPostBattle, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 35 "data/maps/Route108/scripts.pory"
 	release
 # 36 "data/maps/Route108/scripts.pory"
@@ -79,7 +79,7 @@ Route108_EventScript_CoryRegisterMatchCallAfterBattle::
 # 40 "data/maps/Route108/scripts.pory"
 	waitmovement 0
 # 41 "data/maps/Route108/scripts.pory"
-	msgbox Route108_Text_CoryRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route108_Text_CoryRegister, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 42 "data/maps/Route108/scripts.pory"
 	register_matchcall TRAINER_CORY_1
 # 43 "data/maps/Route108/scripts.pory"
@@ -93,6 +93,6 @@ Route108_EventScript_CoryRematch::
 # 47 "data/maps/Route108/scripts.pory"
 	trainerbattle_rematch TRAINER_CORY_1, Route108_Text_CoryRematchIntro, Route108_Text_CoryRematchDefeated
 # 48 "data/maps/Route108/scripts.pory"
-	msgbox Route108_Text_CoryRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route108_Text_CoryRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 # 49 "data/maps/Route108/scripts.pory"
 	end

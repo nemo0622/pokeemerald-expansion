@@ -239,7 +239,7 @@ SSTidalCorridor_EventScript_ExitSailor::
 # 120 "data/maps/SSTidalCorridor/scripts.pory"
 	goto_if_eq VAR_SS_TIDAL_STATE, SS_TIDAL_LAND_SLATEPORT, SSTidalCorridor_EventScript_ExitSlateport
 # 121 "data/maps/SSTidalCorridor/scripts.pory"
-	msgbox SSTidalCorridor_Text_CanRestInCabin2, MSGBOX_DEFAULT
+	msgbox_mugshot SSTidalCorridor_Text_CanRestInCabin2, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 122 "data/maps/SSTidalCorridor/scripts.pory"
 	release
 # 123 "data/maps/SSTidalCorridor/scripts.pory"
@@ -251,7 +251,7 @@ SSTidalCorridor_EventScript_ExitLilycove::
 # 126 "data/maps/SSTidalCorridor/scripts.pory"
 	setrespawn HEAL_LOCATION_LILYCOVE_CITY
 # 127 "data/maps/SSTidalCorridor/scripts.pory"
-	msgbox SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT
+	msgbox_mugshot SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 128 "data/maps/SSTidalCorridor/scripts.pory"
 	call_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalCorridor_EventScript_HideSnatchGiver
 # 129 "data/maps/SSTidalCorridor/scripts.pory"
@@ -269,7 +269,7 @@ SSTidalCorridor_EventScript_ExitSlateport::
 # 135 "data/maps/SSTidalCorridor/scripts.pory"
 	setrespawn HEAL_LOCATION_SLATEPORT_CITY
 # 136 "data/maps/SSTidalCorridor/scripts.pory"
-	msgbox SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT
+	msgbox_mugshot SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 137 "data/maps/SSTidalCorridor/scripts.pory"
 	call_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalCorridor_EventScript_HideSnatchGiver
 # 138 "data/maps/SSTidalCorridor/scripts.pory"
@@ -327,7 +327,7 @@ SSTidalCorridor_EventScript_Sailor::
 # 164 "data/maps/SSTidalCorridor/scripts.pory"
 	call SSTidalCorridor_EventScript_CheckIfTrainersDefeated
 # 165 "data/maps/SSTidalCorridor/scripts.pory"
-	msgbox SSTidalCorridor_Text_VisitOtherCabins, MSGBOX_DEFAULT
+	msgbox_mugshot SSTidalCorridor_Text_VisitOtherCabins, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 166 "data/maps/SSTidalCorridor/scripts.pory"
 	release
 # 167 "data/maps/SSTidalCorridor/scripts.pory"
@@ -337,7 +337,7 @@ SSTidalCorridor_EventScript_Sailor::
 # 169 "data/maps/SSTidalCorridor/scripts.pory"
 SSTidalCorridor_EventScript_EnjoyYourCruise::
 # 170 "data/maps/SSTidalCorridor/scripts.pory"
-	msgbox SSTidalCorridor_Text_EnjoyYourCruise, MSGBOX_DEFAULT
+	msgbox_mugshot SSTidalCorridor_Text_EnjoyYourCruise, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 171 "data/maps/SSTidalCorridor/scripts.pory"
 	release
 # 172 "data/maps/SSTidalCorridor/scripts.pory"

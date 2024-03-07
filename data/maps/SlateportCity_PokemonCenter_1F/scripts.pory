@@ -20,7 +20,7 @@ SlateportCity_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 SlateportCity_PokemonCenter_1F_EventScript_Sailor::
-	msgbox SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon, MSGBOX_NPC, MUGSHOT_SAILOR
 	end
 
 SlateportCity_PokemonCenter_1F_EventScript_Woman::

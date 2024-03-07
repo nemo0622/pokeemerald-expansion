@@ -36,7 +36,7 @@ MossdeepCity_Mart_EventScript_Boy::
 	end
 
 MossdeepCity_Mart_EventScript_Sailor::
-	msgbox MossdeepCity_Mart_Text_NetAndDiveBallsRare, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Mart_Text_NetAndDiveBallsRare, MSGBOX_NPC, MUGSHOT_SAILOR
 	end
 
 MossdeepCity_Mart_Text_ReviveIsFantastic:

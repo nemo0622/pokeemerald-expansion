@@ -123,7 +123,7 @@ RustboroCity_PokemonSchool_EventScript_GameboyKid2::
 # 62 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 RustboroCity_PokemonSchool_EventScript_RichBoy::
 # 63 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	msgbox RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems, MSGBOX_NPC, MUGSHOT_RICHBOY
 # 64 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	end
 # 65 "data/maps/RustboroCity_PokemonSchool/scripts.pory"

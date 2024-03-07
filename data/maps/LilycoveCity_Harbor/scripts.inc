@@ -875,7 +875,7 @@ LilycoveCity_Harbor_EventScript_Sailor::
 # 438 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	goto_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_Harbor_EventScript_SailorFerryAvailable
 # 439 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	msgbox LilycoveCity_Harbor_Text_SailorFerryUnavailable, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Harbor_Text_SailorFerryUnavailable, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 440 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	release
 # 441 "data/maps/LilycoveCity_Harbor/scripts.pory"
@@ -885,7 +885,7 @@ LilycoveCity_Harbor_EventScript_Sailor::
 # 443 "data/maps/LilycoveCity_Harbor/scripts.pory"
 LilycoveCity_Harbor_EventScript_SailorFerryAvailable::
 # 444 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	msgbox LilycoveCity_Harbor_Text_SailorFerryAvailable, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Harbor_Text_SailorFerryAvailable, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 445 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	release
 # 446 "data/maps/LilycoveCity_Harbor/scripts.pory"

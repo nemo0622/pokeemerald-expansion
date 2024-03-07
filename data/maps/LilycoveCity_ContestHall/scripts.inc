@@ -91,7 +91,7 @@ LilycoveCity_ContestHall_EventScript_Girl::
 # 46 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 LilycoveCity_ContestHall_EventScript_Sailor::
 # 47 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_IsntThisPlaceHumongous, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestHall_Text_IsntThisPlaceHumongous, MSGBOX_NPC, MUGSHOT_SAILOR
 # 48 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	end
 # 49 "data/maps/LilycoveCity_ContestHall/scripts.pory"

@@ -55,7 +55,7 @@ SSTidalRooms_EventScript_Lea::
 
 SSTidalRooms_EventScript_Garret::
 	trainerbattle_single TRAINER_GARRET, SSTidalRooms_Text_GarretIntro, SSTidalRooms_Text_GarretDefeat
-	msgbox SSTidalRooms_Text_GarretPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_GarretPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_RICHBOY
 	end
 
 SSTidalRooms_EventScript_Naomi::

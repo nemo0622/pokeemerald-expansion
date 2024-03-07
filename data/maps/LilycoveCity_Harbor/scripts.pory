@@ -436,12 +436,12 @@ LilycoveCity_Harbor_EventScript_Sailor::
 	lock
 	faceplayer
 	goto_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_Harbor_EventScript_SailorFerryAvailable
-	msgbox LilycoveCity_Harbor_Text_SailorFerryUnavailable, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Harbor_Text_SailorFerryUnavailable, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 
 LilycoveCity_Harbor_EventScript_SailorFerryAvailable::
-	msgbox LilycoveCity_Harbor_Text_SailorFerryAvailable, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Harbor_Text_SailorFerryAvailable, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 

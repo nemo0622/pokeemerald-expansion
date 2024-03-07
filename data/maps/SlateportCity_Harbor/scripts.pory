@@ -272,12 +272,12 @@ SlateportCity_Harbor_EventScript_Sailor::
 	call_if_set FLAG_DEFEATED_KYOGRE, SlateportCity_Harbor_EventScript_CountDefeatedLegendary
 	call_if_set FLAG_DEFEATED_GROUDON, SlateportCity_Harbor_EventScript_CountDefeatedLegendary
 	goto_if_eq VAR_0x8004, 2, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather  @ Defeated both
-	msgbox SlateportCity_Harbor_Text_AbnormalWeather, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_AbnormalWeather, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 
 SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather::
-	msgbox SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 

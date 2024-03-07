@@ -224,7 +224,7 @@ DewfordTown_Gym_EventScript_LauraBrightenRoom::
 
 DewfordTown_Gym_EventScript_Brenden::
 	trainerbattle_single TRAINER_BRENDEN, DewfordTown_Gym_Text_BrendenIntro, DewfordTown_Gym_Text_BrendenDefeat, DewfordTown_Gym_EventScript_BrendenBrightenRoom
-	msgbox DewfordTown_Gym_Text_BrendenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot DewfordTown_Gym_Text_BrendenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 	end
 
 DewfordTown_Gym_EventScript_BrendenBrightenRoom::

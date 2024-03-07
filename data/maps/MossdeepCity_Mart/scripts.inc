@@ -75,7 +75,7 @@ MossdeepCity_Mart_EventScript_Boy::
 # 38 "data/maps/MossdeepCity_Mart/scripts.pory"
 MossdeepCity_Mart_EventScript_Sailor::
 # 39 "data/maps/MossdeepCity_Mart/scripts.pory"
-	msgbox MossdeepCity_Mart_Text_NetAndDiveBallsRare, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Mart_Text_NetAndDiveBallsRare, MSGBOX_NPC, MUGSHOT_SAILOR
 # 40 "data/maps/MossdeepCity_Mart/scripts.pory"
 	end
 # 41 "data/maps/MossdeepCity_Mart/scripts.pory"

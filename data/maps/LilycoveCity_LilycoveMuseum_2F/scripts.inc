@@ -361,7 +361,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ExpertM::
 # 181 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 LilycoveCity_LilycoveMuseum_2F_EventScript_RichBoy::
 # 182 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	msgbox LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon, MSGBOX_NPC, MUGSHOT_RICHBOY
 # 183 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	end
 # 184 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"

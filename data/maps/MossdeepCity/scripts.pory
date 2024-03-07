@@ -35,12 +35,12 @@ MossdeepCity_EventScript_Sailor::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_HM_DIVE, MossdeepCity_EventScript_SailorMagmaGone
-	msgbox MossdeepCity_Text_MossdeepTargetedByMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_MossdeepTargetedByMagma, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 
 MossdeepCity_EventScript_SailorMagmaGone::
-	msgbox MossdeepCity_Text_FeelReliefOnLand, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_FeelReliefOnLand, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 

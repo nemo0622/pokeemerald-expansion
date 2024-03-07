@@ -113,7 +113,7 @@ SSTidalRooms_EventScript_Garret::
 # 57 "data/maps/SSTidalRooms/scripts.pory"
 	trainerbattle_single TRAINER_GARRET, SSTidalRooms_Text_GarretIntro, SSTidalRooms_Text_GarretDefeat
 # 58 "data/maps/SSTidalRooms/scripts.pory"
-	msgbox SSTidalRooms_Text_GarretPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_GarretPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_RICHBOY
 # 59 "data/maps/SSTidalRooms/scripts.pory"
 	end
 # 60 "data/maps/SSTidalRooms/scripts.pory"

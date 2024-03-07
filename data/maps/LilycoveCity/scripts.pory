@@ -72,19 +72,19 @@ LilycoveCity_EventScript_GirlAquaGone::
 	end
 
 LilycoveCity_EventScript_RichBoy::
-	msgbox LilycoveCity_Text_ImFromKanto, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_ImFromKanto, MSGBOX_NPC, MUGSHOT_RICHBOY
 	end
 
 LilycoveCity_EventScript_Sailor2::
 	lock
 	faceplayer
 	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_Sailor2AquaGone
-	msgbox LilycoveCity_Text_TeamAquaBeenTrainingWailmer, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_TeamAquaBeenTrainingWailmer, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 
 LilycoveCity_EventScript_Sailor2AquaGone::
-	msgbox LilycoveCity_Text_SomeonePuntedTeamAquaOut, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_SomeonePuntedTeamAquaOut, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 
@@ -127,7 +127,7 @@ LilycoveCity_EventScript_ExpertM2AquaGone::
 	end
 
 LilycoveCity_EventScript_Sailor1::
-	msgbox LilycoveCity_Text_HeardTowerCalledSkyPillar, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_HeardTowerCalledSkyPillar, MSGBOX_NPC, MUGSHOT_SAILOR
 	end
 
 LilycoveCity_EventScript_FatMan::

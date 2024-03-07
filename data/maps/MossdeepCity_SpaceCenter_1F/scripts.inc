@@ -231,7 +231,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_SunStoneMan::
 # 116 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	goto_if_set FLAG_RECEIVED_SUN_STONE_MOSSDEEP, MossdeepCity_SpaceCenter_1F_EventScript_GaveSunStone
 # 117 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 118 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	giveitem ITEM_SUN_STONE
 # 119 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -239,7 +239,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_SunStoneMan::
 # 120 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	setflag FLAG_RECEIVED_SUN_STONE_MOSSDEEP
 # 121 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 122 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	release
 # 123 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -249,7 +249,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_SunStoneMan::
 # 125 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_GaveSunStone::
 # 126 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 127 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	release
 # 128 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -261,7 +261,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_SunStoneManMagma::
 # 131 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	goto_if_set FLAG_RECEIVED_SUN_STONE_MOSSDEEP, MossdeepCity_SpaceCenter_1F_EventScript_GaveSunStoneMagma
 # 132 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 133 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	giveitem ITEM_SUN_STONE
 # 134 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -269,7 +269,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_SunStoneManMagma::
 # 135 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	setflag FLAG_RECEIVED_SUN_STONE_MOSSDEEP
 # 136 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 137 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterRight
 # 138 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -283,7 +283,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_SunStoneManMagma::
 # 142 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_GaveSunStoneMagma::
 # 143 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 144 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterRight
 # 145 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"

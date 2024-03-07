@@ -43,7 +43,7 @@ SlateportCity_PokemonCenter_1F_EventScript_Nurse::
 # 22 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
 SlateportCity_PokemonCenter_1F_EventScript_Sailor::
 # 23 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
-	msgbox SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon, MSGBOX_NPC, MUGSHOT_SAILOR
 # 24 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
 	end
 # 25 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"

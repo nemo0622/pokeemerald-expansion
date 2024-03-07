@@ -73,7 +73,7 @@ MossdeepCity_EventScript_Sailor::
 # 37 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_set FLAG_RECEIVED_HM_DIVE, MossdeepCity_EventScript_SailorMagmaGone
 # 38 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_MossdeepTargetedByMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_MossdeepTargetedByMagma, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 39 "data/maps/MossdeepCity/scripts.pory"
 	release
 # 40 "data/maps/MossdeepCity/scripts.pory"
@@ -83,7 +83,7 @@ MossdeepCity_EventScript_Sailor::
 # 42 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_SailorMagmaGone::
 # 43 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_FeelReliefOnLand, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_Text_FeelReliefOnLand, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 44 "data/maps/MossdeepCity/scripts.pory"
 	release
 # 45 "data/maps/MossdeepCity/scripts.pory"

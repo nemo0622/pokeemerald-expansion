@@ -236,12 +236,12 @@ SlateportCity_EventScript_RichBoy::
 	lock
 	faceplayer
 	call_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_RichBoySternInterview
-	msgbox SlateportCity_Text_GoingToCompeteInBattleTent, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_GoingToCompeteInBattleTent, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 	release
 	end
 
 SlateportCity_EventScript_RichBoySternInterview::
-	msgbox SlateportCity_Text_SternSaysDiscoveredSomething, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_SternSaysDiscoveredSomething, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 	release
 	end
 
@@ -353,11 +353,11 @@ SlateportCity_EventScript_Woman2::
 	end
 
 SlateportCity_EventScript_Sailor1::
-	msgbox SlateportCity_Text_SeaIsSoWet, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_SeaIsSoWet, MSGBOX_NPC, MUGSHOT_SAILOR
 	end
 
 SlateportCity_EventScript_Sailor2::
-	msgbox SlateportCity_Text_SinkOldBoats, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_SinkOldBoats, MSGBOX_NPC, MUGSHOT_SAILOR
 	end
 
 SlateportCity_EventScript_PokefanF::

@@ -29,11 +29,11 @@ SouthernIsland_Exterior_EventScript_Sailor::
 # 15 "data/maps/SouthernIsland_Exterior/scripts.pory"
 	faceplayer
 # 16 "data/maps/SouthernIsland_Exterior/scripts.pory"
-	msgbox EventTicket_Text_SouthernIslandSailBack, MSGBOX_YESNO
+	msgbox_mugshot EventTicket_Text_SouthernIslandSailBack, MSGBOX_YESNO, MUGSHOT_SAILOR
 # 17 "data/maps/SouthernIsland_Exterior/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, SouthernIsland_Exterior_EventScript_AsYouLike
 # 18 "data/maps/SouthernIsland_Exterior/scripts.pory"
-	msgbox EventTicket_Text_SailHome, MSGBOX_DEFAULT
+	msgbox_mugshot EventTicket_Text_SailHome, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 19 "data/maps/SouthernIsland_Exterior/scripts.pory"
 	closemessage
 # 20 "data/maps/SouthernIsland_Exterior/scripts.pory"
@@ -61,7 +61,7 @@ SouthernIsland_Exterior_EventScript_Sailor::
 # 31 "data/maps/SouthernIsland_Exterior/scripts.pory"
 SouthernIsland_Exterior_EventScript_AsYouLike::
 # 32 "data/maps/SouthernIsland_Exterior/scripts.pory"
-	msgbox EventTicket_Text_AsYouLike, MSGBOX_DEFAULT
+	msgbox_mugshot EventTicket_Text_AsYouLike, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 33 "data/maps/SouthernIsland_Exterior/scripts.pory"
 	release
 # 34 "data/maps/SouthernIsland_Exterior/scripts.pory"

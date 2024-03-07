@@ -305,7 +305,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_RichBoy::
 # 153 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_RichBoyNormal::
 # 154 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 # 155 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	release
 # 156 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -315,7 +315,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_RichBoyNormal::
 # 158 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_RichBoyMagma::
 # 159 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 # 160 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	release
 # 161 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"

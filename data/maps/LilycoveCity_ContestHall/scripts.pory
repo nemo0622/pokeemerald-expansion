@@ -44,7 +44,7 @@ LilycoveCity_ContestHall_EventScript_Girl::
 	end
 
 LilycoveCity_ContestHall_EventScript_Sailor::
-	msgbox LilycoveCity_ContestHall_Text_IsntThisPlaceHumongous, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_ContestHall_Text_IsntThisPlaceHumongous, MSGBOX_NPC, MUGSHOT_SAILOR
 	end
 
 LilycoveCity_ContestHall_EventScript_SmartContestMC::

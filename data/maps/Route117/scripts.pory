@@ -85,42 +85,42 @@ Route117_EventScript_Dylan::
 	trainerbattle_single TRAINER_DYLAN_1, Route117_Text_DylanIntro, Route117_Text_DylanDefeat, Route117_EventScript_RegisterDylan
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchDylan
-	msgbox Route117_Text_DylanPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_DylanPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN4
 	release
 	end
 
 Route117_EventScript_RegisterDylan::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route117_Text_DylanRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_DylanRegister, MSGBOX_DEFAULT, MUGSHOT_MAN4
 	register_matchcall TRAINER_DYLAN_1
 	release
 	end
 
 Route117_EventScript_RematchDylan::
 	trainerbattle_rematch TRAINER_DYLAN_1, Route117_Text_DylanRematchIntro, Route117_Text_DylanRematchDefeat
-	msgbox Route117_Text_DylanPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_DylanPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN4
 	end
 
 Route117_EventScript_Maria::
 	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat, Route117_EventScript_RegisterMaria
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMaria
-	msgbox Route117_Text_MariaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_MariaPostBattle, MSGBOX_DEFAULT, MUGSHOT_LITTLEGIRL
 	release
 	end
 
 Route117_EventScript_RegisterMaria::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route117_Text_MariaRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_MariaRegister, MSGBOX_DEFAULT, MUGSHOT_LITTLEGIRL
 	register_matchcall TRAINER_MARIA_1
 	release
 	end
 
 Route117_EventScript_RematchMaria::
 	trainerbattle_rematch TRAINER_MARIA_1, Route117_Text_MariaRematchIntro, Route117_Text_MariaRematchDefeat
-	msgbox Route117_Text_MariaPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_MariaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_LITTLEGIRL
 	end
 
 Route117_EventScript_Derek::
@@ -168,7 +168,7 @@ Route117_EventScript_RematchMeg::
 
 Route117_EventScript_Melina::
 	trainerbattle_single TRAINER_MELINA, Route117_Text_MelinaIntro, Route117_Text_MelinaDefeat
-	msgbox Route117_Text_MelinaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_MelinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_LITTLEGIRL
 	end
 
 Route117_EventScript_Brandi::

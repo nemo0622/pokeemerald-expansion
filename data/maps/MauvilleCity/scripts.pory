@@ -36,7 +36,7 @@ MauvilleCity_EventScript_Woman::
 	end
 
 MauvilleCity_EventScript_RichBoy::
-	msgbox MauvilleCity_Text_PokemonCanJumpYouOnBike, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Text_PokemonCanJumpYouOnBike, MSGBOX_NPC, MUGSHOT_RICHBOY
 	end
 
 MauvilleCity_EventScript_CitySign::

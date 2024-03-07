@@ -99,7 +99,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:
 # 50 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
 LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::
 # 51 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon, MSGBOX_NPC, MUGSHOT_MAN4
 # 52 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
 	end
 # 53 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"

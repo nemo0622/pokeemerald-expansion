@@ -19,11 +19,11 @@ NavelRock_Harbor_EventScript_Sailor::
 # 10 "data/maps/NavelRock_Harbor/scripts.pory"
 	faceplayer
 # 11 "data/maps/NavelRock_Harbor/scripts.pory"
-	msgbox NavelRock_Harbor_Text_SailorReturn, MSGBOX_YESNO
+	msgbox_mugshot NavelRock_Harbor_Text_SailorReturn, MSGBOX_YESNO, MUGSHOT_SAILOR
 # 12 "data/maps/NavelRock_Harbor/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, NavelRock_Harbor_EventScript_AsYouLike
 # 13 "data/maps/NavelRock_Harbor/scripts.pory"
-	msgbox EventTicket_Text_SailHome, MSGBOX_DEFAULT
+	msgbox_mugshot EventTicket_Text_SailHome, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 14 "data/maps/NavelRock_Harbor/scripts.pory"
 	closemessage
 # 15 "data/maps/NavelRock_Harbor/scripts.pory"
@@ -51,7 +51,7 @@ NavelRock_Harbor_EventScript_Sailor::
 # 26 "data/maps/NavelRock_Harbor/scripts.pory"
 NavelRock_Harbor_EventScript_AsYouLike::
 # 27 "data/maps/NavelRock_Harbor/scripts.pory"
-	msgbox EventTicket_Text_AsYouLike, MSGBOX_DEFAULT
+	msgbox_mugshot EventTicket_Text_AsYouLike, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 28 "data/maps/NavelRock_Harbor/scripts.pory"
 	release
 # 29 "data/maps/NavelRock_Harbor/scripts.pory"

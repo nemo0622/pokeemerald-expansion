@@ -547,7 +547,7 @@ SlateportCity_Harbor_EventScript_Sailor::
 # 274 "data/maps/SlateportCity_Harbor/scripts.pory"
 	goto_if_eq VAR_0x8004, 2, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather  @ Defeated both
 # 275 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_AbnormalWeather, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_AbnormalWeather, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 276 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
 # 277 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -557,7 +557,7 @@ SlateportCity_Harbor_EventScript_Sailor::
 # 279 "data/maps/SlateportCity_Harbor/scripts.pory"
 SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather::
 # 280 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 281 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
 # 282 "data/maps/SlateportCity_Harbor/scripts.pory"

@@ -48,7 +48,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:
 	end
 
 LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::
-	msgbox LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon, MSGBOX_NPC, MUGSHOT_MAN4
 	end
 
 LilycoveCity_DepartmentStore_3F_EventScript_PokefanM::

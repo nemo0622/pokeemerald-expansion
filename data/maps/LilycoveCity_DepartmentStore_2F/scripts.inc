@@ -25,7 +25,7 @@ LilycoveCity_DepartmentStore_2F_EventScript_PokefanF::
 # 13 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 LilycoveCity_DepartmentStore_2F_EventScript_Sailor::
 # 14 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems, MSGBOX_NPC, MUGSHOT_SAILOR
 # 15 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	end
 # 16 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"

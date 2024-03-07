@@ -34,7 +34,7 @@ Route134_EventScript_Hitoshi::
 
 Route134_EventScript_Hudson::
 	trainerbattle_single TRAINER_HUDSON, Route134_Text_HudsonIntro, Route134_Text_HudsonDefeat
-	msgbox Route134_Text_HudsonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_HudsonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 	end
 
 Route134_EventScript_Reyna::
@@ -49,7 +49,7 @@ Route134_EventScript_Marley::
 
 Route134_EventScript_Kelvin::
 	trainerbattle_single TRAINER_KELVIN, Route134_Text_KelvinIntro, Route134_Text_KelvinDefeat
-	msgbox Route134_Text_KelvinPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_KelvinPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 	end
 
 `

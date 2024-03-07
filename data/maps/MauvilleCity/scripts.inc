@@ -75,7 +75,7 @@ MauvilleCity_EventScript_Woman::
 # 38 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_RichBoy::
 # 39 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_PokemonCanJumpYouOnBike, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Text_PokemonCanJumpYouOnBike, MSGBOX_NPC, MUGSHOT_RICHBOY
 # 40 "data/maps/MauvilleCity/scripts.pory"
 	end
 # 41 "data/maps/MauvilleCity/scripts.pory"

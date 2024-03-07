@@ -387,12 +387,12 @@ Route109_EventScript_Alice::
 
 Route109_EventScript_Huey::
 	trainerbattle_single TRAINER_HUEY, Route109_Text_HueyIntro, Route109_Text_HueyDefeated
-	msgbox Route109_Text_HueyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_HueyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 	end
 
 Route109_EventScript_Edmond::
 	trainerbattle_single TRAINER_EDMOND, Route109_Text_EdmondIntro, Route109_Text_EdmondDefeated
-	msgbox Route109_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 	end
 
 Route109_EventScript_Ricky::

@@ -405,7 +405,7 @@ SlateportCity_BattleTentLobby_EventScript_TormentGiver::
 # 203 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_TORMENT, SlateportCity_BattleTentLobby_EventScript_ReceivedTorment
 # 204 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
-	msgbox SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 205 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	giveitem ITEM_TM_TORMENT
 # 206 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
@@ -413,7 +413,7 @@ SlateportCity_BattleTentLobby_EventScript_TormentGiver::
 # 207 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	setflag FLAG_RECEIVED_TM_TORMENT
 # 208 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
-	msgbox SlateportCity_BattleTentLobby_Text_ExplainTorment, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_BattleTentLobby_Text_ExplainTorment, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 209 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	release
 # 210 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
@@ -423,7 +423,7 @@ SlateportCity_BattleTentLobby_EventScript_TormentGiver::
 # 212 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 SlateportCity_BattleTentLobby_EventScript_ReceivedTorment::
 # 213 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
-	msgbox SlateportCity_BattleTentLobby_Text_ExplainTorment, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_BattleTentLobby_Text_ExplainTorment, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 214 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	release
 # 215 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"

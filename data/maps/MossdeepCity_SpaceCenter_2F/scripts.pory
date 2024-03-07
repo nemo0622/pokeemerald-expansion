@@ -151,12 +151,12 @@ MossdeepCity_SpaceCenter_2F_EventScript_RichBoy::
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_RichBoyNormal::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 	release
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_RichBoyMagma::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 	release
 	end
 

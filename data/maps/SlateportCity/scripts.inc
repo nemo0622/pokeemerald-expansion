@@ -475,7 +475,7 @@ SlateportCity_EventScript_RichBoy::
 # 238 "data/maps/SlateportCity/scripts.pory"
 	call_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_RichBoySternInterview
 # 239 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_GoingToCompeteInBattleTent, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_GoingToCompeteInBattleTent, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 # 240 "data/maps/SlateportCity/scripts.pory"
 	release
 # 241 "data/maps/SlateportCity/scripts.pory"
@@ -485,7 +485,7 @@ SlateportCity_EventScript_RichBoy::
 # 243 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_RichBoySternInterview::
 # 244 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_SternSaysDiscoveredSomething, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_SternSaysDiscoveredSomething, MSGBOX_DEFAULT, MUGSHOT_RICHBOY
 # 245 "data/maps/SlateportCity/scripts.pory"
 	release
 # 246 "data/maps/SlateportCity/scripts.pory"
@@ -709,7 +709,7 @@ SlateportCity_EventScript_Woman2::
 # 355 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_Sailor1::
 # 356 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_SeaIsSoWet, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_SeaIsSoWet, MSGBOX_NPC, MUGSHOT_SAILOR
 # 357 "data/maps/SlateportCity/scripts.pory"
 	end
 # 358 "data/maps/SlateportCity/scripts.pory"
@@ -717,7 +717,7 @@ SlateportCity_EventScript_Sailor1::
 # 359 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_Sailor2::
 # 360 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_SinkOldBoats, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_SinkOldBoats, MSGBOX_NPC, MUGSHOT_SAILOR
 # 361 "data/maps/SlateportCity/scripts.pory"
 	end
 # 362 "data/maps/SlateportCity/scripts.pory"

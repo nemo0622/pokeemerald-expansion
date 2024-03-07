@@ -49,11 +49,11 @@ FarawayIsland_Entrance_EventScript_Sailor::
 # 25 "data/maps/FarawayIsland_Entrance/scripts.pory"
 	faceplayer
 # 26 "data/maps/FarawayIsland_Entrance/scripts.pory"
-	msgbox FarawayIsland_Entrance_Text_SailorReturn, MSGBOX_YESNO
+	msgbox_mugshot FarawayIsland_Entrance_Text_SailorReturn, MSGBOX_YESNO, MUGSHOT_SAILOR
 # 27 "data/maps/FarawayIsland_Entrance/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, FarawayIsland_Entrance_EventScript_AsYouLike
 # 28 "data/maps/FarawayIsland_Entrance/scripts.pory"
-	msgbox EventTicket_Text_SailHome, MSGBOX_DEFAULT
+	msgbox_mugshot EventTicket_Text_SailHome, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 29 "data/maps/FarawayIsland_Entrance/scripts.pory"
 	closemessage
 # 30 "data/maps/FarawayIsland_Entrance/scripts.pory"
@@ -81,7 +81,7 @@ FarawayIsland_Entrance_EventScript_Sailor::
 # 41 "data/maps/FarawayIsland_Entrance/scripts.pory"
 FarawayIsland_Entrance_EventScript_AsYouLike::
 # 42 "data/maps/FarawayIsland_Entrance/scripts.pory"
-	msgbox EventTicket_Text_AsYouLike, MSGBOX_DEFAULT
+	msgbox_mugshot EventTicket_Text_AsYouLike, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 # 43 "data/maps/FarawayIsland_Entrance/scripts.pory"
 	release
 # 44 "data/maps/FarawayIsland_Entrance/scripts.pory"

@@ -118,13 +118,13 @@ SSTidalCorridor_EventScript_ExitSailor::
 	faceplayer
 	goto_if_eq VAR_SS_TIDAL_STATE, SS_TIDAL_LAND_LILYCOVE, SSTidalCorridor_EventScript_ExitLilycove
 	goto_if_eq VAR_SS_TIDAL_STATE, SS_TIDAL_LAND_SLATEPORT, SSTidalCorridor_EventScript_ExitSlateport
-	msgbox SSTidalCorridor_Text_CanRestInCabin2, MSGBOX_DEFAULT
+	msgbox_mugshot SSTidalCorridor_Text_CanRestInCabin2, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 
 SSTidalCorridor_EventScript_ExitLilycove::
 	setrespawn HEAL_LOCATION_LILYCOVE_CITY
-	msgbox SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT
+	msgbox_mugshot SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	call_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalCorridor_EventScript_HideSnatchGiver
 	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
 	waitstate
@@ -133,7 +133,7 @@ SSTidalCorridor_EventScript_ExitLilycove::
 
 SSTidalCorridor_EventScript_ExitSlateport::
 	setrespawn HEAL_LOCATION_SLATEPORT_CITY
-	msgbox SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT
+	msgbox_mugshot SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	call_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalCorridor_EventScript_HideSnatchGiver
 	warp MAP_SLATEPORT_CITY_HARBOR, 8, 11
 	waitstate
@@ -162,12 +162,12 @@ SSTidalCorridor_EventScript_Sailor::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_SS_TIDAL_TRAINERS, SSTidalCorridor_EventScript_EnjoyYourCruise
 	call SSTidalCorridor_EventScript_CheckIfTrainersDefeated
-	msgbox SSTidalCorridor_Text_VisitOtherCabins, MSGBOX_DEFAULT
+	msgbox_mugshot SSTidalCorridor_Text_VisitOtherCabins, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 
 SSTidalCorridor_EventScript_EnjoyYourCruise::
-	msgbox SSTidalCorridor_Text_EnjoyYourCruise, MSGBOX_DEFAULT
+	msgbox_mugshot SSTidalCorridor_Text_EnjoyYourCruise, MSGBOX_DEFAULT, MUGSHOT_SAILOR
 	release
 	end
 
