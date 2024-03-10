@@ -319,7 +319,7 @@ RustboroCity_EventScript_DevonEmployee2::
 # 160 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_Woman::
 # 161 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_Text_GymLeaderIsntEasyWithFire, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Text_GymLeaderIsntEasyWithFire, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 162 "data/maps/RustboroCity/scripts.pory"
 	end
 # 163 "data/maps/RustboroCity/scripts.pory"

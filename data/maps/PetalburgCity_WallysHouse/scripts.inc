@@ -121,7 +121,7 @@ PetalburgCity_WallysHouse_EventScript_WallysMom::
 # 61 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	goto_if_set FLAG_RECEIVED_HM_SURF, PetalburgCity_WallysHouse_EventScript_ReceivedHMSurf
 # 62 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	msgbox PetalburgCity_WallysHouse_Text_WallyWasReallyHappy, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_WallyWasReallyHappy, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 63 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	release
 # 64 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -131,7 +131,7 @@ PetalburgCity_WallysHouse_EventScript_WallysMom::
 # 66 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_EventScript_ReceivedHMSurf::
 # 67 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	msgbox PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 68 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	release
 # 69 "data/maps/PetalburgCity_WallysHouse/scripts.pory"

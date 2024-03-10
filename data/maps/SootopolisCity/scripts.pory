@@ -776,7 +776,7 @@ SootopolisCity_EventScript_Woman2::
 	applymovement LOCALID_WOMAN_2, Common_Movement_FacePlayer
 	waitmovement 0
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_Woman2Rayquaza
-	msgbox SootopolisCity_Text_WeatherWentWild, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_WeatherWentWild, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	closemessage
 	applymovement LOCALID_WOMAN_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -784,7 +784,7 @@ SootopolisCity_EventScript_Woman2::
 	end
 
 SootopolisCity_EventScript_Woman2Rayquaza::
-	msgbox SootopolisCity_Text_YouBroughtFlyingMon, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_YouBroughtFlyingMon, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	releaseall
 	end
 
@@ -807,12 +807,12 @@ SootopolisCity_EventScript_Woman1::
 	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_Woman1PostLegendaries
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_Woman1Rayquaza
 	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 2, SootopolisCity_EventScript_Woman1Legendaries
-	msgbox SootopolisCity_Text_SootopolisSkyBeautiful, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_SootopolisSkyBeautiful, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	release
 	end
 
 SootopolisCity_EventScript_Woman1Legendaries::
-	msgbox SootopolisCity_Text_GiganticPokemonFight, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_GiganticPokemonFight, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	closemessage
 	applymovement LOCALID_WOMAN_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -820,12 +820,12 @@ SootopolisCity_EventScript_Woman1Legendaries::
 	end
 
 SootopolisCity_EventScript_Woman1PostLegendaries::
-	msgbox SootopolisCity_Text_NightSkyFavoriteScenery, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_NightSkyFavoriteScenery, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	release
 	end
 
 SootopolisCity_EventScript_Woman1Rayquaza::
-	msgbox SootopolisCity_Text_FearedWorstWhenPokemonFlewDown, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_FearedWorstWhenPokemonFlewDown, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	release
 	end
 

@@ -497,7 +497,7 @@ Route116_EventScript_Jerry::
 # 249 "data/maps/Route116/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_TryRegisterJerry
 # 250 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_JerryPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_JerryPostBattle, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 # 251 "data/maps/Route116/scripts.pory"
 	release
 # 252 "data/maps/Route116/scripts.pory"
@@ -521,7 +521,7 @@ Route116_EventScript_RegisterJerryAfterBattle::
 # 261 "data/maps/Route116/scripts.pory"
 	waitmovement 0
 # 262 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_JerryRegister2, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_JerryRegister2, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 # 263 "data/maps/Route116/scripts.pory"
 	register_matchcall TRAINER_JERRY_1
 # 264 "data/maps/Route116/scripts.pory"
@@ -535,7 +535,7 @@ Route116_EventScript_TryRegisterJerry::
 # 268 "data/maps/Route116/scripts.pory"
 	goto_if_set FLAG_HAS_MATCH_CALL, Route116_EventScript_RegisterJerry
 # 269 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_JerryPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_JerryPostBattle, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 # 270 "data/maps/Route116/scripts.pory"
 	release
 # 271 "data/maps/Route116/scripts.pory"
@@ -545,7 +545,7 @@ Route116_EventScript_TryRegisterJerry::
 # 273 "data/maps/Route116/scripts.pory"
 Route116_EventScript_RegisterJerry::
 # 274 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_JerryRegister1, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_JerryRegister1, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 # 275 "data/maps/Route116/scripts.pory"
 	register_matchcall TRAINER_JERRY_1
 # 276 "data/maps/Route116/scripts.pory"
@@ -559,7 +559,7 @@ Route116_EventScript_RematchJerry::
 # 280 "data/maps/Route116/scripts.pory"
 	trainerbattle_rematch TRAINER_JERRY_1, Route116_Text_JerryRematchIntro, Route116_Text_JerryRematchDefeat
 # 281 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_JerryPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_JerryPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_SCHOOLKIDM
 # 282 "data/maps/Route116/scripts.pory"
 	end
 # 283 "data/maps/Route116/scripts.pory"
@@ -671,7 +671,7 @@ Route116_EventScript_Sarah::
 # 336 "data/maps/Route116/scripts.pory"
 	trainerbattle_single TRAINER_SARAH, Route116_Text_SarahIntro, Route116_Text_SarahDefeat
 # 337 "data/maps/Route116/scripts.pory"
-	msgbox Route116_Text_SarahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_SarahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 338 "data/maps/Route116/scripts.pory"
 	end
 # 339 "data/maps/Route116/scripts.pory"

@@ -103,7 +103,7 @@ SSTidalRooms_EventScript_Lea::
 # 52 "data/maps/SSTidalRooms/scripts.pory"
 	trainerbattle_double TRAINER_LEA_AND_JED, SSTidalRooms_Text_LeaIntro, SSTidalRooms_Text_LeaDefeat, SSTidalRooms_Text_LeaNotEnoughMons
 # 53 "data/maps/SSTidalRooms/scripts.pory"
-	msgbox SSTidalRooms_Text_LeaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_LeaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN4
 # 54 "data/maps/SSTidalRooms/scripts.pory"
 	end
 # 55 "data/maps/SSTidalRooms/scripts.pory"
@@ -123,7 +123,7 @@ SSTidalRooms_EventScript_Naomi::
 # 62 "data/maps/SSTidalRooms/scripts.pory"
 	trainerbattle_single TRAINER_NAOMI, SSTidalRooms_Text_NaomiIntro, SSTidalRooms_Text_NaomiDefeat
 # 63 "data/maps/SSTidalRooms/scripts.pory"
-	msgbox SSTidalRooms_Text_NaomiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_NaomiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 64 "data/maps/SSTidalRooms/scripts.pory"
 	end
 # 65 "data/maps/SSTidalRooms/scripts.pory"

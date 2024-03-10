@@ -28,7 +28,7 @@ MossdeepCity_Mart_Pokemart:
 	end
 
 MossdeepCity_Mart_EventScript_Woman::
-	msgbox MossdeepCity_Mart_Text_ReviveIsFantastic, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Mart_Text_ReviveIsFantastic, MSGBOX_NPC, MUGSHOT_WOMAN5
 	end
 
 MossdeepCity_Mart_EventScript_Boy::

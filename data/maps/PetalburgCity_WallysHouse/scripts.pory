@@ -59,12 +59,12 @@ PetalburgCity_WallysHouse_EventScript_WallysMom::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_HM_SURF, PetalburgCity_WallysHouse_EventScript_ReceivedHMSurf
-	msgbox PetalburgCity_WallysHouse_Text_WallyWasReallyHappy, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_WallyWasReallyHappy, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	release
 	end
 
 PetalburgCity_WallysHouse_EventScript_ReceivedHMSurf::
-	msgbox PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	release
 	end
 

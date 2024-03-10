@@ -149,6 +149,28 @@ static const u32 sMugshotImg_RichBoy[] = INCBIN_U32("graphics/mugshots/pics/mugs
 static const u16 sMugshotPal_RichBoy[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_richboy.gbapal");
 static const u32 sMugshotImg_Sailor[] = INCBIN_U32("graphics/mugshots/pics/mugshot_sailor.4bpp.lz");
 static const u16 sMugshotPal_Sailor[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_sailor.gbapal");
+static const u32 sMugshotImg_SchoolKidM[] = INCBIN_U32("graphics/mugshots/pics/mugshot_schoolkidm.4bpp.lz");
+static const u16 sMugshotPal_SchoolKidM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_schoolkidm.gbapal");
+static const u32 sMugshotImg_Scientist[] = INCBIN_U32("graphics/mugshots/pics/mugshot_scientist.4bpp.lz");
+static const u16 sMugshotPal_Scientist[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_scientist.gbapal");
+static const u32 sMugshotImg_SwimmerF[] = INCBIN_U32("graphics/mugshots/pics/mugshot_swimmerf.4bpp.lz");
+static const u16 sMugshotPal_SwimmerF[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_swimmerf.gbapal");
+static const u32 sMugshotImg_SwimmerM[] = INCBIN_U32("graphics/mugshots/pics/mugshot_swimmerm.4bpp.lz");
+static const u16 sMugshotPal_SwimmerM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_swimmerm.gbapal");
+static const u32 sMugshotImg_TuberF[] = INCBIN_U32("graphics/mugshots/pics/mugshot_tuberf.4bpp.lz");
+static const u16 sMugshotPal_TuberF[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_tuberf.gbapal");
+static const u32 sMugshotImg_TuberM[] = INCBIN_U32("graphics/mugshots/pics/mugshot_tuberm.4bpp.lz");
+static const u16 sMugshotPal_TuberM[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_tuberm.gbapal");
+static const u32 sMugshotImg_Woman1[] = INCBIN_U32("graphics/mugshots/pics/mugshot_woman1.4bpp.lz");
+static const u16 sMugshotPal_Woman1[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_woman1.gbapal");
+static const u32 sMugshotImg_Woman2[] = INCBIN_U32("graphics/mugshots/pics/mugshot_woman2.4bpp.lz");
+static const u16 sMugshotPal_Woman2[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_woman2.gbapal");
+static const u32 sMugshotImg_Woman3[] = INCBIN_U32("graphics/mugshots/pics/mugshot_woman3.4bpp.lz");
+static const u16 sMugshotPal_Woman3[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_woman3.gbapal");
+static const u32 sMugshotImg_Woman4[] = INCBIN_U32("graphics/mugshots/pics/mugshot_woman4.4bpp.lz");
+static const u16 sMugshotPal_Woman4[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_woman4.gbapal");
+static const u32 sMugshotImg_Woman5[] = INCBIN_U32("graphics/mugshots/pics/mugshot_woman5.4bpp.lz");
+static const u16 sMugshotPal_Woman5[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_woman5.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -216,6 +238,17 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_PSYCHICM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_PsychicM, .palette = sMugshotPal_PsychicM},
     [MUGSHOT_RICHBOY] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_RichBoy, .palette = sMugshotPal_RichBoy},
     [MUGSHOT_SAILOR] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Sailor, .palette = sMugshotPal_Sailor},
+    [MUGSHOT_SCHOOLKIDM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_SchoolKidM, .palette = sMugshotPal_SchoolKidM},
+    [MUGSHOT_SCIENTIST] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Scientist, .palette = sMugshotPal_Scientist},
+    [MUGSHOT_SWIMMERF] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_SwimmerF, .palette = sMugshotPal_SwimmerF},
+    [MUGSHOT_SWIMMERM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_SwimmerM, .palette = sMugshotPal_SwimmerM},
+    [MUGSHOT_TUBERF] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_TuberF, .palette = sMugshotPal_TuberF},
+    [MUGSHOT_TUBERM] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_TuberM, .palette = sMugshotPal_TuberM},
+    [MUGSHOT_WOMAN1] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Woman1, .palette = sMugshotPal_Woman1},
+    [MUGSHOT_WOMAN2] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Woman2, .palette = sMugshotPal_Woman2},
+    [MUGSHOT_WOMAN3] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Woman3, .palette = sMugshotPal_Woman3},
+    [MUGSHOT_WOMAN4] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Woman4, .palette = sMugshotPal_Woman4},
+    [MUGSHOT_WOMAN5] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Woman5, .palette = sMugshotPal_Woman5},
 };
 
 

@@ -35,7 +35,7 @@ Route117_EventScript_StopMoveDayCareMan::
 # 18 "data/maps/Route117/scripts.pory"
 Route117_EventScript_Woman::
 # 19 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_ArentTheseFlowersPretty, MSGBOX_NPC
+	msgbox_mugshot Route117_Text_ArentTheseFlowersPretty, MSGBOX_NPC, MUGSHOT_WOMAN1
 # 20 "data/maps/Route117/scripts.pory"
 	end
 # 21 "data/maps/Route117/scripts.pory"
@@ -131,7 +131,7 @@ Route117_EventScript_Lydia::
 # 66 "data/maps/Route117/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchLydia
 # 67 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_LydiaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_LydiaPostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 68 "data/maps/Route117/scripts.pory"
 	release
 # 69 "data/maps/Route117/scripts.pory"
@@ -145,7 +145,7 @@ Route117_EventScript_RegisterLydia::
 # 73 "data/maps/Route117/scripts.pory"
 	waitmovement 0
 # 74 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_LydiaRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_LydiaRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 75 "data/maps/Route117/scripts.pory"
 	register_matchcall TRAINER_LYDIA_1
 # 76 "data/maps/Route117/scripts.pory"
@@ -159,7 +159,7 @@ Route117_EventScript_RematchLydia::
 # 80 "data/maps/Route117/scripts.pory"
 	trainerbattle_rematch TRAINER_LYDIA_1, Route117_Text_LydiaRematchIntro, Route117_Text_LydiaRematchDefeat
 # 81 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_LydiaPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_LydiaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 82 "data/maps/Route117/scripts.pory"
 	end
 # 83 "data/maps/Route117/scripts.pory"

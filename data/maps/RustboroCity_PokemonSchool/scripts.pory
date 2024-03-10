@@ -68,7 +68,7 @@ RustboroCity_PokemonSchool_EventScript_Lass::
 	end
 
 RustboroCity_PokemonSchool_EventScript_SchoolKidM::
-	msgbox RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry, MSGBOX_NPC, MUGSHOT_SCHOOLKIDM
 	end
 
 RustboroCity_PokemonSchool_EventScript_StudentNotebook::

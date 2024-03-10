@@ -17,7 +17,7 @@ OldaleTown_House2_EventScript_Woman::
 # 9 "data/maps/OldaleTown_House2/scripts.pory"
 OldaleTown_House2_EventScript_Man::
 # 10 "data/maps/OldaleTown_House2/scripts.pory"
-	msgbox OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon, MSGBOX_NPC, MUGSHOT_SCHOOLKIDM
 # 11 "data/maps/OldaleTown_House2/scripts.pory"
 	end
 # 12 "data/maps/OldaleTown_House2/scripts.pory"

@@ -91,7 +91,7 @@ VerdanturfTown_WandasHouse_EventScript_Wanda::
 # 46 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	goto_if_set FLAG_DEFEATED_WALLY_MAUVILLE, VerdanturfTown_WandasHouse_EventScript_MeetWanda
 # 47 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 48 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 49 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
@@ -101,7 +101,7 @@ VerdanturfTown_WandasHouse_EventScript_Wanda::
 # 51 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 VerdanturfTown_WandasHouse_EventScript_MeetWanda::
 # 52 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_MeetWanda, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_MeetWanda, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 53 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 54 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
@@ -111,7 +111,7 @@ VerdanturfTown_WandasHouse_EventScript_MeetWanda::
 # 56 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 VerdanturfTown_WandasHouse_EventScript_WandaDontWorry::
 # 57 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 58 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	release
 # 59 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"

@@ -21,7 +21,7 @@ Route115_OnFrame:
 	.2byte 0
 
 Route115_EventScript_Woman::
-	msgbox Route115_Text_NeverKnowWhenCavePokemonWillAppear, MSGBOX_NPC
+	msgbox_mugshot Route115_Text_NeverKnowWhenCavePokemonWillAppear, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 Route115_EventScript_RouteSignRustboro::

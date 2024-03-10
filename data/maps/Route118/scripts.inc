@@ -369,7 +369,7 @@ Route118_EventScript_Rose::
 # 185 "data/maps/Route118/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route118_EventScript_RematchRose
 # 186 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_RosePostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_RosePostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 187 "data/maps/Route118/scripts.pory"
 	release
 # 188 "data/maps/Route118/scripts.pory"
@@ -383,7 +383,7 @@ Route118_EventScript_RegisterRose::
 # 192 "data/maps/Route118/scripts.pory"
 	waitmovement 0
 # 193 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_RoseRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route118_Text_RoseRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 194 "data/maps/Route118/scripts.pory"
 	register_matchcall TRAINER_ROSE_1
 # 195 "data/maps/Route118/scripts.pory"
@@ -397,7 +397,7 @@ Route118_EventScript_RematchRose::
 # 199 "data/maps/Route118/scripts.pory"
 	trainerbattle_rematch TRAINER_ROSE_1, Route118_Text_RoseRematchIntro, Route118_Text_RoseRematchDefeat
 # 200 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_RosePostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route118_Text_RosePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 201 "data/maps/Route118/scripts.pory"
 	end
 # 202 "data/maps/Route118/scripts.pory"

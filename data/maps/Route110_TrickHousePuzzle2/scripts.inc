@@ -177,7 +177,7 @@ Route110_TrickHousePuzzle2_EventScript_Ted::
 # 89 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
 	trainerbattle_single TRAINER_TED, Route110_TrickHousePuzzle2_Text_TedIntro, Route110_TrickHousePuzzle2_Text_TedDefeat
 # 90 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
-	msgbox Route110_TrickHousePuzzle2_Text_TedPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle2_Text_TedPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SCHOOLKIDM
 # 91 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
 	end
 # 92 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
@@ -187,7 +187,7 @@ Route110_TrickHousePuzzle2_EventScript_Paul::
 # 94 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
 	trainerbattle_single TRAINER_PAUL, Route110_TrickHousePuzzle2_Text_PaulIntro, Route110_TrickHousePuzzle2_Text_PaulDefeat
 # 95 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
-	msgbox Route110_TrickHousePuzzle2_Text_PaulPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle2_Text_PaulPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SCHOOLKIDM
 # 96 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
 	end
 # 97 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"

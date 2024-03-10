@@ -45,7 +45,7 @@ Route115_OnFrame:
 # 23 "data/maps/Route115/scripts.pory"
 Route115_EventScript_Woman::
 # 24 "data/maps/Route115/scripts.pory"
-	msgbox Route115_Text_NeverKnowWhenCavePokemonWillAppear, MSGBOX_NPC
+	msgbox_mugshot Route115_Text_NeverKnowWhenCavePokemonWillAppear, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 25 "data/maps/Route115/scripts.pory"
 	end
 # 26 "data/maps/Route115/scripts.pory"

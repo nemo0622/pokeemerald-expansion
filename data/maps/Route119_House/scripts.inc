@@ -9,7 +9,7 @@ Route119_House_MapScripts::
 # 5 "data/maps/Route119_House/scripts.pory"
 Route119_House_EventScript_Woman::
 # 6 "data/maps/Route119_House/scripts.pory"
-	msgbox Route119_House_Text_RumorAboutCaveOfOrigin, MSGBOX_NPC
+	msgbox_mugshot Route119_House_Text_RumorAboutCaveOfOrigin, MSGBOX_NPC, MUGSHOT_WOMAN4
 # 7 "data/maps/Route119_House/scripts.pory"
 	end
 # 8 "data/maps/Route119_House/scripts.pory"

@@ -37,7 +37,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_Programmer::
 	end
 
 LilycoveCity_CoveLilyMotel_2F_EventScript_GraphicArtist::
-	msgbox LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist, MSGBOX_NPC, MUGSHOT_SCIENTIST
 	end
 
 LilycoveCity_CoveLilyMotel_2F_EventScript_FatMan::
@@ -45,7 +45,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_FatMan::
 	end
 
 LilycoveCity_CoveLilyMotel_2F_EventScript_Woman::
-	msgbox LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 LilycoveCity_CoveLilyMotel_2F_EventScript_GameBoyKid::

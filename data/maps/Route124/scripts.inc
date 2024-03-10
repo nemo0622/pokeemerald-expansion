@@ -29,7 +29,7 @@ Route124_EventScript_Spencer::
 # 15 "data/maps/Route124/scripts.pory"
 	trainerbattle_single TRAINER_SPENCER, Route124_Text_SpencerIntro, Route124_Text_SpencerDefeat
 # 16 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_SpencerPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route124_Text_SpencerPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 17 "data/maps/Route124/scripts.pory"
 	end
 # 18 "data/maps/Route124/scripts.pory"
@@ -39,7 +39,7 @@ Route124_EventScript_Roland::
 # 20 "data/maps/Route124/scripts.pory"
 	trainerbattle_single TRAINER_ROLAND, Route124_Text_RolandIntro, Route124_Text_RolandDefeat
 # 21 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_RolandPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route124_Text_RolandPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 22 "data/maps/Route124/scripts.pory"
 	end
 # 23 "data/maps/Route124/scripts.pory"
@@ -53,7 +53,7 @@ Route124_EventScript_Jenny::
 # 27 "data/maps/Route124/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route124_EventScript_RematchJenny
 # 28 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_JennyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route124_Text_JennyPostBattle, MSGBOX_DEFAULT, MUGSHOT_SWIMMERF
 # 29 "data/maps/Route124/scripts.pory"
 	release
 # 30 "data/maps/Route124/scripts.pory"
@@ -67,7 +67,7 @@ Route124_EventScript_RegisterJenny::
 # 34 "data/maps/Route124/scripts.pory"
 	waitmovement 0
 # 35 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_JennyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route124_Text_JennyRegister, MSGBOX_DEFAULT, MUGSHOT_SWIMMERF
 # 36 "data/maps/Route124/scripts.pory"
 	register_matchcall TRAINER_JENNY_1
 # 37 "data/maps/Route124/scripts.pory"
@@ -81,7 +81,7 @@ Route124_EventScript_RematchJenny::
 # 41 "data/maps/Route124/scripts.pory"
 	trainerbattle_rematch TRAINER_JENNY_1, Route124_Text_JennyRematchIntro, Route124_Text_JennyRematchDefeat
 # 42 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_JennyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route124_Text_JennyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 43 "data/maps/Route124/scripts.pory"
 	end
 # 44 "data/maps/Route124/scripts.pory"
@@ -91,7 +91,7 @@ Route124_EventScript_Grace::
 # 46 "data/maps/Route124/scripts.pory"
 	trainerbattle_single TRAINER_GRACE, Route124_Text_GraceIntro, Route124_Text_GraceDefeat
 # 47 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_GracePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route124_Text_GracePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 48 "data/maps/Route124/scripts.pory"
 	end
 # 49 "data/maps/Route124/scripts.pory"
@@ -101,7 +101,7 @@ Route124_EventScript_Chad::
 # 51 "data/maps/Route124/scripts.pory"
 	trainerbattle_single TRAINER_CHAD, Route124_Text_ChadIntro, Route124_Text_ChadDefeat
 # 52 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_ChadPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route124_Text_ChadPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 53 "data/maps/Route124/scripts.pory"
 	end
 # 54 "data/maps/Route124/scripts.pory"
@@ -115,7 +115,7 @@ Route124_EventScript_Lila::
 # 58 "data/maps/Route124/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route124_EventScript_RematchLila
 # 59 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_LilaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route124_Text_LilaPostBattle, MSGBOX_DEFAULT, MUGSHOT_SWIMMERF
 # 60 "data/maps/Route124/scripts.pory"
 	release
 # 61 "data/maps/Route124/scripts.pory"
@@ -125,7 +125,7 @@ Route124_EventScript_Lila::
 # 63 "data/maps/Route124/scripts.pory"
 Route124_EventScript_RegisterLila::
 # 64 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_LilaRoyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route124_Text_LilaRoyRegister, MSGBOX_DEFAULT, MUGSHOT_SWIMMERF
 # 65 "data/maps/Route124/scripts.pory"
 	register_matchcall TRAINER_LILA_AND_ROY_1
 # 66 "data/maps/Route124/scripts.pory"
@@ -139,7 +139,7 @@ Route124_EventScript_RematchLila::
 # 70 "data/maps/Route124/scripts.pory"
 	trainerbattle_rematch_double TRAINER_LILA_AND_ROY_1, Route124_Text_LilaRematchIntro, Route124_Text_LilaRematchDefeat, Route124_Text_LilaRematchNotEnoughMons
 # 71 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_LilaPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route124_Text_LilaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 72 "data/maps/Route124/scripts.pory"
 	end
 # 73 "data/maps/Route124/scripts.pory"
@@ -153,7 +153,7 @@ Route124_EventScript_Roy::
 # 77 "data/maps/Route124/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route124_EventScript_RematchRoy
 # 78 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_RoyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route124_Text_RoyPostBattle, MSGBOX_DEFAULT, MUGSHOT_TUBERM
 # 79 "data/maps/Route124/scripts.pory"
 	release
 # 80 "data/maps/Route124/scripts.pory"
@@ -163,7 +163,7 @@ Route124_EventScript_Roy::
 # 82 "data/maps/Route124/scripts.pory"
 Route124_EventScript_RegisterRoy::
 # 83 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_LilaRoyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route124_Text_LilaRoyRegister, MSGBOX_DEFAULT, MUGSHOT_TUBERM
 # 84 "data/maps/Route124/scripts.pory"
 	register_matchcall TRAINER_LILA_AND_ROY_1
 # 85 "data/maps/Route124/scripts.pory"
@@ -177,7 +177,7 @@ Route124_EventScript_RematchRoy::
 # 89 "data/maps/Route124/scripts.pory"
 	trainerbattle_rematch_double TRAINER_LILA_AND_ROY_1, Route124_Text_RoyRematchIntro, Route124_Text_RoyRematchDefeat, Route124_Text_RoyRematchNotEnoughMons
 # 90 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_RoyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route124_Text_RoyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_TUBERM
 # 91 "data/maps/Route124/scripts.pory"
 	end
 # 92 "data/maps/Route124/scripts.pory"
@@ -187,7 +187,7 @@ Route124_EventScript_Declan::
 # 94 "data/maps/Route124/scripts.pory"
 	trainerbattle_single TRAINER_DECLAN, Route124_Text_DeclanIntro, Route124_Text_DeclanDefeat
 # 95 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_DeclanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route124_Text_DeclanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 96 "data/maps/Route124/scripts.pory"
 	end
 # 97 "data/maps/Route124/scripts.pory"
@@ -197,7 +197,7 @@ Route124_EventScript_Isabella::
 # 99 "data/maps/Route124/scripts.pory"
 	trainerbattle_single TRAINER_ISABELLA, Route124_Text_IsabellaIntro, Route124_Text_IsabellaDefeat
 # 100 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_IsabellaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route124_Text_IsabellaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 101 "data/maps/Route124/scripts.pory"
 	end
 # 102 "data/maps/Route124/scripts.pory"

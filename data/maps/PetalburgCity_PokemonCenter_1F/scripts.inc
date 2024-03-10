@@ -63,7 +63,7 @@ PetalburgCity_PokemonCenter_1F_EventScript_Woman::
 # 32 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	faceplayer
 # 33 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 34 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	specialvar VAR_RESULT, IsStarterInParty
 # 35 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
@@ -91,7 +91,7 @@ PetalburgCity_PokemonCenter_1F_EventScript_SayStarterTypeInfo::
 # 46 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 PetalburgCity_PokemonCenter_1F_EventScript_SayTreeckoType::
 # 47 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 48 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	return
 # 49 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
@@ -99,7 +99,7 @@ PetalburgCity_PokemonCenter_1F_EventScript_SayTreeckoType::
 # 50 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 PetalburgCity_PokemonCenter_1F_EventScript_SayTorchicType::
 # 51 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 52 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	return
 # 53 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
@@ -107,7 +107,7 @@ PetalburgCity_PokemonCenter_1F_EventScript_SayTorchicType::
 # 54 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType::
 # 55 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType, MSGBOX_DEFAULT
+	msgbox_mugshot PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 56 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	return
 # 57 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"

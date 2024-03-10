@@ -72,7 +72,7 @@ DewfordTown_EventScript_SailBackToPetalburg::
 	end
 
 DewfordTown_EventScript_Woman::
-	msgbox DewfordTown_Text_TinyIslandCommunity, MSGBOX_NPC
+	msgbox_mugshot DewfordTown_Text_TinyIslandCommunity, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 DewfordTown_EventScript_TownSign::

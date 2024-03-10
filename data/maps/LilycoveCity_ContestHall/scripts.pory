@@ -134,7 +134,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestAudience3::
 LilycoveCity_ContestHall_EventScript_SmartContestAudience4::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_StillLoveSmartnessContests, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_StillLoveSmartnessContests, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	closemessage
 	applymovement LOCALID_SMART_AUDIENCE_4, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -164,7 +164,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestJudge::
 LilycoveCity_ContestHall_EventScript_BeautyContestant1::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_EyesWillBeGluedToMyBeauty, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_EyesWillBeGluedToMyBeauty, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	closemessage
 	applymovement LOCALID_BEAUTY_CONTESTANT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -204,7 +204,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant4::
 LilycoveCity_ContestHall_EventScript_BeautyContestAudience1::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_WinBeautyContestMakesMeHappy, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_WinBeautyContestMakesMeHappy, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	closemessage
 	applymovement LOCALID_BEAUTY_AUDIENCE_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -224,7 +224,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestAudience2::
 LilycoveCity_ContestHall_EventScript_BeautyContestAudience3::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_CantWinOnBeautyAlone, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_CantWinOnBeautyAlone, MSGBOX_DEFAULT, MUGSHOT_WOMAN1
 	closemessage
 	applymovement LOCALID_BEAUTY_AUDIENCE_3, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -295,12 +295,12 @@ LilycoveCity_ContestHall_EventScript_CuteContestAudience1::
 	lockall
 	applymovement LOCALID_CUTE_AUDIENCE_1, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox LilycoveCity_ContestHall_Text_MyChildIsInContest, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_MyChildIsInContest, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	closemessage
 	applymovement LOCALID_CUTE_AUDIENCE_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	delay 25
-	msgbox LilycoveCity_ContestHall_Text_ComeOnDear, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_ComeOnDear, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	releaseall
 	end
 

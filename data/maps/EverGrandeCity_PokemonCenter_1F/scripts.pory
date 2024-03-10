@@ -26,7 +26,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 EverGrandeCity_PokemonCenter_1F_EventScript_Woman::
-	msgbox EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad, MSGBOX_NPC
+	msgbox_mugshot EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad, MSGBOX_NPC, MUGSHOT_WOMAN5
 	end
 
 EverGrandeCity_PokemonCenter_1F_EventScript_ExpertM::

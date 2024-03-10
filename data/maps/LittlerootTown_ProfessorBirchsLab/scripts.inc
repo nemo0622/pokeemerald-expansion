@@ -567,7 +567,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Aide::
 # 284 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto_if_set FLAG_BIRCH_AIDE_MET, LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet
 # 285 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 286 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setflag FLAG_BIRCH_AIDE_MET
 # 287 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
@@ -579,7 +579,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Aide::
 # 290 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet::
 # 291 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 292 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 # 293 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
@@ -589,7 +589,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet::
 # 295 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 LittlerootTown_ProfessorBirchsLab_EventScript_AideReceivedStarter::
 # 296 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo, MSGBOX_DEFAULT
+	msgbox_mugshot LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 297 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 # 298 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

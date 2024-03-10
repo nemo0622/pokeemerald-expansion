@@ -461,7 +461,7 @@ MeteorFalls_1F_1R_EventScript_ProfCozmo::
 # 231 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	setflag FLAG_MET_PROF_COZMO
 # 232 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_1F_1R_Text_MeetProfCozmo, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_MeetProfCozmo, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 233 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	release
 # 234 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -471,7 +471,7 @@ MeteorFalls_1F_1R_EventScript_ProfCozmo::
 # 236 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 MeteorFalls_1F_1R_EventScript_MetCozmo::
 # 237 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 238 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	release
 # 239 "data/maps/MeteorFalls_1F_1R/scripts.pory"

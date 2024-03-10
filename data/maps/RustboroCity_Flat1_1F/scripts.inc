@@ -17,7 +17,7 @@ RustboroCity_Flat1_1F_EventScript_Man::
 # 9 "data/maps/RustboroCity_Flat1_1F/scripts.pory"
 RustboroCity_Flat1_1F_EventScript_Woman::
 # 10 "data/maps/RustboroCity_Flat1_1F/scripts.pory"
-	msgbox RustboroCity_Flat1_1F_Text_PokemonStrange, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Flat1_1F_Text_PokemonStrange, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 11 "data/maps/RustboroCity_Flat1_1F/scripts.pory"
 	end
 # 12 "data/maps/RustboroCity_Flat1_1F/scripts.pory"

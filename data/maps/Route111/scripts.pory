@@ -518,21 +518,21 @@ Route111_EventScript_Brooke::
 	trainerbattle_single TRAINER_BROOKE_1, Route111_Text_BrookeIntro, Route111_Text_BrookeDefeat, Route111_EventScript_RegisterBrooke
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchBrooke
-	msgbox Route111_Text_BrookePostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_BrookePostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	release
 	end
 
 Route111_EventScript_RegisterBrooke::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route111_Text_BrookeRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_BrookeRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	register_matchcall TRAINER_BROOKE_1
 	release
 	end
 
 Route111_EventScript_RematchBrooke::
 	trainerbattle_rematch TRAINER_BROOKE_1, Route111_Text_BrookeRematchIntro, Route111_Text_BrookeRematchDefeat
-	msgbox Route111_Text_BrookePostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BrookePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 	end
 
 Route111_EventScript_Hayden::
@@ -552,7 +552,7 @@ Route111_EventScript_Tyron::
 
 Route111_EventScript_Celina::
 	trainerbattle_single TRAINER_CELINA, Route111_Text_CelinaIntro, Route111_Text_CelinaDefeat
-	msgbox Route111_Text_CelinaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_CelinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 	end
 
 Route111_EventScript_Celia::

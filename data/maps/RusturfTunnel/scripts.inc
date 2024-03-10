@@ -57,7 +57,7 @@ RusturfTunnel_EventScript_Wanda::
 # 29 "data/maps/RusturfTunnel/scripts.pory"
 	faceplayer
 # 30 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_Text_BoyfriendOnOtherSideOfRock, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_BoyfriendOnOtherSideOfRock, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 31 "data/maps/RusturfTunnel/scripts.pory"
 	closemessage
 # 32 "data/maps/RusturfTunnel/scripts.pory"

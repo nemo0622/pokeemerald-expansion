@@ -449,7 +449,7 @@ SlateportCity_BattleTentLobby_EventScript_Girl::
 # 225 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 SlateportCity_BattleTentLobby_EventScript_Woman::
 # 226 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
-	msgbox SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 227 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	end
 # 228 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"

@@ -147,7 +147,7 @@ DewfordTown_EventScript_SailBackToPetalburg::
 # 74 "data/maps/DewfordTown/scripts.pory"
 DewfordTown_EventScript_Woman::
 # 75 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_TinyIslandCommunity, MSGBOX_NPC
+	msgbox_mugshot DewfordTown_Text_TinyIslandCommunity, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 76 "data/maps/DewfordTown/scripts.pory"
 	end
 # 77 "data/maps/DewfordTown/scripts.pory"

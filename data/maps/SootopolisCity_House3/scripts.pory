@@ -5,14 +5,14 @@ SootopolisCity_House3_MapScripts::
 SootopolisCity_House3_EventScript_Woman::
 	lock
 	faceplayer
-	msgbox SootopolisCity_House3_Text_JuanHasManyFansDoYou, MSGBOX_YESNO
+	msgbox_mugshot SootopolisCity_House3_Text_JuanHasManyFansDoYou, MSGBOX_YESNO, MUGSHOT_WOMAN4
 	goto_if_eq VAR_RESULT, YES, SootopolisCity_House3_EventScript_HaveFans
-	msgbox SootopolisCity_House3_Text_LonesomeTryWorkingHarder, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House3_Text_LonesomeTryWorkingHarder, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	release
 	end
 
 SootopolisCity_House3_EventScript_HaveFans::
-	msgbox SootopolisCity_House3_Text_YouMustBePrettyStrong, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House3_Text_YouMustBePrettyStrong, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	release
 	end
 

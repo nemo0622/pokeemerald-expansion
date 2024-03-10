@@ -91,7 +91,7 @@ OldaleTown_Mart_EventScript_Woman::
 # 46 "data/maps/OldaleTown_Mart/scripts.pory"
 	goto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_Mart_EventScript_PokeBallsInStock
 # 47 "data/maps/OldaleTown_Mart/scripts.pory"
-	msgbox OldaleTown_Mart_Text_PokeBallsAreSoldOut, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Mart_Text_PokeBallsAreSoldOut, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 48 "data/maps/OldaleTown_Mart/scripts.pory"
 	release
 # 49 "data/maps/OldaleTown_Mart/scripts.pory"
@@ -101,7 +101,7 @@ OldaleTown_Mart_EventScript_Woman::
 # 51 "data/maps/OldaleTown_Mart/scripts.pory"
 OldaleTown_Mart_EventScript_PokeBallsInStock::
 # 52 "data/maps/OldaleTown_Mart/scripts.pory"
-	msgbox OldaleTown_Mart_Text_ImGoingToBuyPokeBalls, MSGBOX_DEFAULT
+	msgbox_mugshot OldaleTown_Mart_Text_ImGoingToBuyPokeBalls, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 53 "data/maps/OldaleTown_Mart/scripts.pory"
 	release
 # 54 "data/maps/OldaleTown_Mart/scripts.pory"

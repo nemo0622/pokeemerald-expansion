@@ -19,7 +19,7 @@ Route106_EventScript_Douglas::
 # 10 "data/maps/Route106/scripts.pory"
 	trainerbattle_single TRAINER_DOUGLAS, Route106_Text_DouglasIntro, Route106_Text_DouglasDefeated
 # 11 "data/maps/Route106/scripts.pory"
-	msgbox Route106_Text_DouglasPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route106_Text_DouglasPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 12 "data/maps/Route106/scripts.pory"
 	end
 # 13 "data/maps/Route106/scripts.pory"
@@ -29,7 +29,7 @@ Route106_EventScript_Kyla::
 # 15 "data/maps/Route106/scripts.pory"
 	trainerbattle_single TRAINER_KYLA, Route106_Text_KylaIntro, Route106_Text_KylaDefeated
 # 16 "data/maps/Route106/scripts.pory"
-	msgbox Route106_Text_KylaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route106_Text_KylaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 17 "data/maps/Route106/scripts.pory"
 	end
 # 18 "data/maps/Route106/scripts.pory"

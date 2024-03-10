@@ -9,7 +9,7 @@ SafariZone_Southwest_MapScripts::
 # 5 "data/maps/SafariZone_Southwest/scripts.pory"
 SafariZone_Southwest_EventScript_Woman::
 # 6 "data/maps/SafariZone_Southwest/scripts.pory"
-	msgbox SafariZone_Southwest_Text_Woman, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Southwest_Text_Woman, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 7 "data/maps/SafariZone_Southwest/scripts.pory"
 	end
 # 8 "data/maps/SafariZone_Southwest/scripts.pory"

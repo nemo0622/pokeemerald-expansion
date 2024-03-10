@@ -21,7 +21,7 @@ Route126_EventScript_Barry::
 # 11 "data/maps/Route126/scripts.pory"
 	trainerbattle_single TRAINER_BARRY, Route126_Text_BarryIntro, Route126_Text_BarryDefeat
 # 12 "data/maps/Route126/scripts.pory"
-	msgbox Route126_Text_BarryPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route126_Text_BarryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 13 "data/maps/Route126/scripts.pory"
 	end
 # 14 "data/maps/Route126/scripts.pory"
@@ -31,7 +31,7 @@ Route126_EventScript_Dean::
 # 16 "data/maps/Route126/scripts.pory"
 	trainerbattle_single TRAINER_DEAN, Route126_Text_DeanIntro, Route126_Text_DeanDefeat
 # 17 "data/maps/Route126/scripts.pory"
-	msgbox Route126_Text_DeanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route126_Text_DeanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 18 "data/maps/Route126/scripts.pory"
 	end
 # 19 "data/maps/Route126/scripts.pory"
@@ -41,7 +41,7 @@ Route126_EventScript_Nikki::
 # 21 "data/maps/Route126/scripts.pory"
 	trainerbattle_single TRAINER_NIKKI, Route126_Text_NikkiIntro, Route126_Text_NikkiDefeat
 # 22 "data/maps/Route126/scripts.pory"
-	msgbox Route126_Text_NikkiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route126_Text_NikkiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 23 "data/maps/Route126/scripts.pory"
 	end
 # 24 "data/maps/Route126/scripts.pory"
@@ -51,7 +51,7 @@ Route126_EventScript_Brenda::
 # 26 "data/maps/Route126/scripts.pory"
 	trainerbattle_single TRAINER_BRENDA, Route126_Text_BrendaIntro, Route126_Text_BrendaDefeat
 # 27 "data/maps/Route126/scripts.pory"
-	msgbox Route126_Text_BrendaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route126_Text_BrendaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 28 "data/maps/Route126/scripts.pory"
 	end
 # 29 "data/maps/Route126/scripts.pory"
@@ -61,7 +61,7 @@ Route126_EventScript_Leonardo::
 # 31 "data/maps/Route126/scripts.pory"
 	trainerbattle_single TRAINER_LEONARDO, Route126_Text_LeonardoIntro, Route126_Text_LeonardoDefeat
 # 32 "data/maps/Route126/scripts.pory"
-	msgbox Route126_Text_LeonardoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route126_Text_LeonardoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 33 "data/maps/Route126/scripts.pory"
 	end
 # 34 "data/maps/Route126/scripts.pory"
@@ -71,7 +71,7 @@ Route126_EventScript_Isobel::
 # 36 "data/maps/Route126/scripts.pory"
 	trainerbattle_single TRAINER_ISOBEL, Route126_Text_IsobelIntro, Route126_Text_IsobelDefeat
 # 37 "data/maps/Route126/scripts.pory"
-	msgbox Route126_Text_IsobelPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route126_Text_IsobelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 38 "data/maps/Route126/scripts.pory"
 	end
 # 39 "data/maps/Route126/scripts.pory"
@@ -81,7 +81,7 @@ Route126_EventScript_Sienna::
 # 41 "data/maps/Route126/scripts.pory"
 	trainerbattle_single TRAINER_SIENNA, Route126_Text_SiennaIntro, Route126_Text_SiennaDefeat
 # 42 "data/maps/Route126/scripts.pory"
-	msgbox Route126_Text_SiennaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route126_Text_SiennaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 43 "data/maps/Route126/scripts.pory"
 	end
 # 44 "data/maps/Route126/scripts.pory"
@@ -95,7 +95,7 @@ Route126_EventScript_Pablo::
 # 48 "data/maps/Route126/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route126_EventScript_RematchPablo
 # 49 "data/maps/Route126/scripts.pory"
-	msgbox Route126_Text_PabloPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route126_Text_PabloPostBattle, MSGBOX_DEFAULT, MUGSHOT_SWIMMERM
 # 50 "data/maps/Route126/scripts.pory"
 	release
 # 51 "data/maps/Route126/scripts.pory"
@@ -109,7 +109,7 @@ Route126_EventScript_RegisterPablo::
 # 55 "data/maps/Route126/scripts.pory"
 	waitmovement 0
 # 56 "data/maps/Route126/scripts.pory"
-	msgbox Route126_Text_PabloRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route126_Text_PabloRegister, MSGBOX_DEFAULT, MUGSHOT_SWIMMERM
 # 57 "data/maps/Route126/scripts.pory"
 	register_matchcall TRAINER_PABLO_1
 # 58 "data/maps/Route126/scripts.pory"
@@ -123,6 +123,6 @@ Route126_EventScript_RematchPablo::
 # 62 "data/maps/Route126/scripts.pory"
 	trainerbattle_rematch TRAINER_PABLO_1, Route126_Text_PabloRematchIntro, Route126_Text_PabloRematchDefeat
 # 63 "data/maps/Route126/scripts.pory"
-	msgbox Route126_Text_PabloPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route126_Text_PabloPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 64 "data/maps/Route126/scripts.pory"
 	end

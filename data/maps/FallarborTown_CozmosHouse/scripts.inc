@@ -19,7 +19,7 @@ FallarborTown_CozmosHouse_EventScript_ProfCozmo::
 # 10 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite
 # 11 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 12 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	release
 # 13 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
@@ -35,7 +35,7 @@ FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite::
 # 18 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, FallarborTown_CozmosHouse_EventScript_DeclineGiveMeteorite
 # 19 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_PleaseUseThisTM, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_PleaseUseThisTM, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 20 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	giveitem ITEM_TM_RETURN
 # 21 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
@@ -47,7 +47,7 @@ FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite::
 # 24 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	setflag FLAG_RECEIVED_TM_RETURN
 # 25 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 26 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	release
 # 27 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
@@ -57,9 +57,9 @@ FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite::
 # 29 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 FallarborTown_CozmosHouse_EventScript_NoticeMeteorite::
 # 30 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 31 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt, MSGBOX_YESNO
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt, MSGBOX_YESNO, MUGSHOT_SCIENTIST
 # 32 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	return
 # 33 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
@@ -67,7 +67,7 @@ FallarborTown_CozmosHouse_EventScript_NoticeMeteorite::
 # 34 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 FallarborTown_CozmosHouse_EventScript_AskForMeteorite::
 # 35 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_MayIHaveMeteorite, MSGBOX_YESNO
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_MayIHaveMeteorite, MSGBOX_YESNO, MUGSHOT_SCIENTIST
 # 36 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	return
 # 37 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
@@ -77,7 +77,7 @@ FallarborTown_CozmosHouse_EventScript_DeclineGiveMeteorite::
 # 39 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	setflag FLAG_TEMP_2
 # 40 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_CrushedWithDisappointment, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_CrushedWithDisappointment, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 41 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	release
 # 42 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
@@ -87,7 +87,7 @@ FallarborTown_CozmosHouse_EventScript_DeclineGiveMeteorite::
 # 44 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 FallarborTown_CozmosHouse_EventScript_GaveMeteorite::
 # 45 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 46 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	release
 # 47 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
@@ -105,7 +105,7 @@ FallarborTown_CozmosHouse_EventScript_CozmosWife::
 # 53 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	goto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, FallarborTown_CozmosHouse_EventScript_CozmoIsSad
 # 54 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 55 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	release
 # 56 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
@@ -115,7 +115,7 @@ FallarborTown_CozmosHouse_EventScript_CozmosWife::
 # 58 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 FallarborTown_CozmosHouse_EventScript_CozmoIsSad::
 # 59 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_FeelSorryForCozmo, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_FeelSorryForCozmo, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 60 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	release
 # 61 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
@@ -125,7 +125,7 @@ FallarborTown_CozmosHouse_EventScript_CozmoIsSad::
 # 63 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 FallarborTown_CozmosHouse_EventScript_CozmoIsHappy::
 # 64 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_CozmoIsSoHappy, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_CozmosHouse_Text_CozmoIsSoHappy, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 65 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	release
 # 66 "data/maps/FallarborTown_CozmosHouse/scripts.pory"

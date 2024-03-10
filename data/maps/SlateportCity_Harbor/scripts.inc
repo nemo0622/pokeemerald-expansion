@@ -595,7 +595,7 @@ SlateportCity_Harbor_EventScript_CaptStern::
 # 298 "data/maps/SlateportCity_Harbor/scripts.pory"
 	goto_if_eq VAR_SLATEPORT_HARBOR_STATE, 2, SlateportCity_Harbor_EventScript_WhyStealSubmarine
 # 299 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 300 "data/maps/SlateportCity_Harbor/scripts.pory"
 	closemessage
 # 301 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -611,7 +611,7 @@ SlateportCity_Harbor_EventScript_CaptStern::
 # 306 "data/maps/SlateportCity_Harbor/scripts.pory"
 SlateportCity_Harbor_EventScript_WhyStealSubmarine::
 # 307 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 308 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
 # 309 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -623,7 +623,7 @@ SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive::
 # 312 "data/maps/SlateportCity_Harbor/scripts.pory"
 	setflag FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE
 # 313 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_TeamAquaLeftNeedDive, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_TeamAquaLeftNeedDive, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 314 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
 # 315 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -633,7 +633,7 @@ SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive::
 # 317 "data/maps/SlateportCity_Harbor/scripts.pory"
 SlateportCity_Harbor_EventScript_NeedDive::
 # 318 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_NeedDiveToCatchSub, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_NeedDiveToCatchSub, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 319 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
 # 320 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -651,7 +651,7 @@ SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment::
 # 326 "data/maps/SlateportCity_Harbor/scripts.pory"
 	goto_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_FerryFinished
 # 327 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 328 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
 # 329 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -661,7 +661,7 @@ SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment::
 # 331 "data/maps/SlateportCity_Harbor/scripts.pory"
 SlateportCity_Harbor_EventScript_FerryFinished::
 # 332 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_FinishedMakingFerry, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_FinishedMakingFerry, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 333 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
 # 334 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -701,7 +701,7 @@ SlateportCity_Harbor_EventScript_ChooseScannerTrade::
 # 351 "data/maps/SlateportCity_Harbor/scripts.pory"
 SlateportCity_Harbor_EventScript_DeepSeaTooth::
 # 352 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaTooth, MSGBOX_YESNO
+	msgbox_mugshot SlateportCity_Harbor_Text_TradeForDeepSeaTooth, MSGBOX_YESNO, MUGSHOT_SCIENTIST
 # 353 "data/maps/SlateportCity_Harbor/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
 # 354 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -723,7 +723,7 @@ SlateportCity_Harbor_EventScript_DeepSeaTooth::
 # 362 "data/maps/SlateportCity_Harbor/scripts.pory"
 SlateportCity_Harbor_EventScript_DeepSeaScale::
 # 363 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaScale, MSGBOX_YESNO
+	msgbox_mugshot SlateportCity_Harbor_Text_TradeForDeepSeaScale, MSGBOX_YESNO, MUGSHOT_SCIENTIST
 # 364 "data/maps/SlateportCity_Harbor/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
 # 365 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -745,7 +745,7 @@ SlateportCity_Harbor_EventScript_DeepSeaScale::
 # 373 "data/maps/SlateportCity_Harbor/scripts.pory"
 SlateportCity_Harbor_EventScript_DeclineTrade::
 # 374 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 375 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
 # 376 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -769,7 +769,7 @@ SlateportCity_Harbor_EventScript_TradedScanner::
 # 385 "data/maps/SlateportCity_Harbor/scripts.pory"
 	setvar VAR_TEMP_1, 1
 # 386 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_ThisWillHelpResearch, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_ThisWillHelpResearch, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 387 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
 # 388 "data/maps/SlateportCity_Harbor/scripts.pory"

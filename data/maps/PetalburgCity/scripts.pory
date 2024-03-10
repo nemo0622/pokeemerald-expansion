@@ -98,7 +98,7 @@ PetalburgCity_EventScript_Boy::
 	end
 
 PetalburgCity_EventScript_WallysMom::
-	msgbox PetalburgCity_Text_WhereIsWally, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Text_WhereIsWally, MSGBOX_NPC, MUGSHOT_WOMAN4
 	end
 
 PetalburgCity_Movement_WalkToWallyHousePlayer:

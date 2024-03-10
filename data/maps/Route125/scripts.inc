@@ -49,7 +49,7 @@ Route125_EventScript_Nolen::
 # 25 "data/maps/Route125/scripts.pory"
 	trainerbattle_single TRAINER_NOLEN, Route125_Text_NolenIntro, Route125_Text_NolenDefeat
 # 26 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_NolenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route125_Text_NolenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 27 "data/maps/Route125/scripts.pory"
 	end
 # 28 "data/maps/Route125/scripts.pory"
@@ -59,7 +59,7 @@ Route125_EventScript_Stan::
 # 30 "data/maps/Route125/scripts.pory"
 	trainerbattle_single TRAINER_STAN, Route125_Text_StanIntro, Route125_Text_StanDefeat
 # 31 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_StanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route125_Text_StanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 32 "data/maps/Route125/scripts.pory"
 	end
 # 33 "data/maps/Route125/scripts.pory"
@@ -69,7 +69,7 @@ Route125_EventScript_Tanya::
 # 35 "data/maps/Route125/scripts.pory"
 	trainerbattle_single TRAINER_TANYA, Route125_Text_TanyaIntro, Route125_Text_TanyaDefeat
 # 36 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_TanyaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route125_Text_TanyaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 37 "data/maps/Route125/scripts.pory"
 	end
 # 38 "data/maps/Route125/scripts.pory"
@@ -79,7 +79,7 @@ Route125_EventScript_Sharon::
 # 40 "data/maps/Route125/scripts.pory"
 	trainerbattle_single TRAINER_SHARON, Route125_Text_SharonIntro, Route125_Text_SharonDefeat
 # 41 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_SharonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route125_Text_SharonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 42 "data/maps/Route125/scripts.pory"
 	end
 # 43 "data/maps/Route125/scripts.pory"

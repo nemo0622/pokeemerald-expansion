@@ -24,7 +24,7 @@ SlateportCity_PokemonCenter_1F_EventScript_Sailor::
 	end
 
 SlateportCity_PokemonCenter_1F_EventScript_Woman::
-	msgbox SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend, MSGBOX_NPC, MUGSHOT_WOMAN5
 	end
 
 SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon:

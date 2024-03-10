@@ -187,7 +187,7 @@ LilycoveCity_EventScript_Woman2::
 # 94 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_Woman2AquaGone
 # 95 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_SomeoneStoleMyPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_SomeoneStoleMyPokemon, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 96 "data/maps/LilycoveCity/scripts.pory"
 	release
 # 97 "data/maps/LilycoveCity/scripts.pory"
@@ -197,7 +197,7 @@ LilycoveCity_EventScript_Woman2::
 # 99 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_Woman2AquaGone::
 # 100 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_MissingPokemonCameBack, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MissingPokemonCameBack, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 101 "data/maps/LilycoveCity/scripts.pory"
 	release
 # 102 "data/maps/LilycoveCity/scripts.pory"
@@ -287,7 +287,7 @@ LilycoveCity_EventScript_Woman1::
 # 144 "data/maps/LilycoveCity/scripts.pory"
 	lockall
 # 145 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_HoneymoonVowToSeeRarePokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_HoneymoonVowToSeeRarePokemon, MSGBOX_NPC, MUGSHOT_WOMAN3
 # 146 "data/maps/LilycoveCity/scripts.pory"
 	applymovement LOCALID_WOMAN_1, Common_Movement_FaceOriginalDirection
 # 147 "data/maps/LilycoveCity/scripts.pory"
@@ -801,7 +801,7 @@ LilycoveCity_EventScript_SchoolKidM::
 # 401 "data/maps/LilycoveCity/scripts.pory"
 	faceplayer
 # 402 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_DoYouKnowAboutBerryBlender, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_Text_DoYouKnowAboutBerryBlender, MSGBOX_YESNO, MUGSHOT_SCHOOLKIDM
 # 403 "data/maps/LilycoveCity/scripts.pory"
 	call_if_eq VAR_RESULT, YES, LilycoveCity_EventScript_KnowAboutBerryBlender
 # 404 "data/maps/LilycoveCity/scripts.pory"
@@ -815,7 +815,7 @@ LilycoveCity_EventScript_SchoolKidM::
 # 408 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_KnowAboutBerryBlender::
 # 409 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_FasterSpinBetterPokeblocks, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_FasterSpinBetterPokeblocks, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 # 410 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 411 "data/maps/LilycoveCity/scripts.pory"
@@ -823,7 +823,7 @@ LilycoveCity_EventScript_KnowAboutBerryBlender::
 # 412 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 # 413 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_ExplainBerryBlender, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_ExplainBerryBlender, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 # 414 "data/maps/LilycoveCity/scripts.pory"
 	return
 # 415 "data/maps/LilycoveCity/scripts.pory"

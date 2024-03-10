@@ -75,7 +75,7 @@ Route130_EventScript_Rodney::
 # 38 "data/maps/Route130/scripts.pory"
 	trainerbattle_single TRAINER_RODNEY, Route130_Text_RodneyIntro, Route130_Text_RodneyDefeat
 # 39 "data/maps/Route130/scripts.pory"
-	msgbox Route130_Text_RodneyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route130_Text_RodneyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 40 "data/maps/Route130/scripts.pory"
 	end
 # 41 "data/maps/Route130/scripts.pory"
@@ -85,7 +85,7 @@ Route130_EventScript_Katie::
 # 43 "data/maps/Route130/scripts.pory"
 	trainerbattle_single TRAINER_KATIE, Route130_Text_KatieIntro, Route130_Text_KatieDefeat
 # 44 "data/maps/Route130/scripts.pory"
-	msgbox Route130_Text_KatiePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route130_Text_KatiePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 45 "data/maps/Route130/scripts.pory"
 	end
 # 46 "data/maps/Route130/scripts.pory"
@@ -95,6 +95,6 @@ Route130_EventScript_Santiago::
 # 48 "data/maps/Route130/scripts.pory"
 	trainerbattle_single TRAINER_SANTIAGO, Route130_Text_SantiagoIntro, Route130_Text_SantiagoDefeat
 # 49 "data/maps/Route130/scripts.pory"
-	msgbox Route130_Text_SantiagoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route130_Text_SantiagoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 50 "data/maps/Route130/scripts.pory"
 	end

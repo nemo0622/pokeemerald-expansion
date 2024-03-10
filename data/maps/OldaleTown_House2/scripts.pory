@@ -7,7 +7,7 @@ OldaleTown_House2_EventScript_Woman::
 	end
 
 OldaleTown_House2_EventScript_Man::
-	msgbox OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon, MSGBOX_NPC, MUGSHOT_SCHOOLKIDM
 	end
 
 OldaleTown_House2_Text_PokemonLevelUp:

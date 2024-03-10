@@ -275,7 +275,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_Woman::
 # 138 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_EventScript_WomanNormal::
 # 139 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 140 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	closemessage
 # 141 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
@@ -287,7 +287,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_WomanNormal::
 # 144 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_EventScript_WomanLegendaryWeather::
 # 145 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 146 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	closemessage
 # 147 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

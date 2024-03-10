@@ -41,7 +41,7 @@ MossdeepCity_PokemonCenter_1F_EventScript_Nurse::
 # 21 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
 MossdeepCity_PokemonCenter_1F_EventScript_Woman::
 # 22 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
-	msgbox MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 23 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
 	end
 # 24 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"

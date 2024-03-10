@@ -17,7 +17,7 @@ RustboroCity_DevonCorp_2F_EventScript_TalkToPokemonScientist::
 	lock
 	faceplayer
 	call_if_eq VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_SetFossilReady
-	msgbox RustboroCity_DevonCorp_2F_Text_DeviceForTalkingToPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_DeviceForTalkingToPokemon, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
@@ -26,12 +26,12 @@ RustboroCity_DevonCorp_2F_EventScript_BallScientist::
 	faceplayer
 	call_if_eq VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_SetFossilReady
 	goto_if_set FLAG_MET_DEVON_EMPLOYEE, RustboroCity_DevonCorp_2F_EventScript_DevelopedBalls
-	msgbox RustboroCity_DevonCorp_2F_Text_DevelopingNewBalls, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_DevelopingNewBalls, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_DevelopedBalls::
-	msgbox RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
@@ -40,12 +40,12 @@ RustboroCity_DevonCorp_2F_EventScript_PokenavScientist::
 	faceplayer
 	call_if_eq VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_SetFossilReady
 	goto_if_set FLAG_RECEIVED_POKENAV, RustboroCity_DevonCorp_2F_EventScript_HasPokenav
-	msgbox RustboroCity_DevonCorp_2F_Text_IMadePokenav, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_IMadePokenav, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_HasPokenav::
-	msgbox RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
@@ -53,7 +53,7 @@ RustboroCity_DevonCorp_2F_EventScript_PokemonDreamsScientist::
 	lock
 	faceplayer
 	call_if_eq VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_SetFossilReady
-	msgbox RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
@@ -62,7 +62,7 @@ RustboroCity_DevonCorp_2F_EventScript_FossilScientist::
 	faceplayer
 	goto_if_eq VAR_FOSSIL_RESURRECTION_STATE, 2, RustboroCity_DevonCorp_2F_EventScript_FossilMonReady
 	goto_if_eq VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_StillRegenerating
-	msgbox RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	checkitem ITEM_ROOT_FOSSIL
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_NoticeRootFossil
 	checkitem ITEM_CLAW_FOSSIL
@@ -78,7 +78,7 @@ RustboroCity_DevonCorp_2F_EventScript_NoticeRootFossil::
 	waitmovement 0
 	applymovement LOCALID_FOSSIL_SCIENTIST, Common_Movement_Delay48
 	waitmovement 0
-	msgbox RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife, MSGBOX_YESNO
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife, MSGBOX_YESNO, MUGSHOT_SCIENTIST
 	goto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_DeclineGiveFossil
 	checkitem ITEM_CLAW_FOSSIL
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_ChooseFossil
@@ -87,7 +87,7 @@ RustboroCity_DevonCorp_2F_EventScript_NoticeRootFossil::
 
 RustboroCity_DevonCorp_2F_EventScript_GiveRootFossil::
 	bufferitemname STR_VAR_1, ITEM_ROOT_FOSSIL
-	msgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	removeitem ITEM_ROOT_FOSSIL
 	setvar VAR_FOSSIL_RESURRECTION_STATE, 1
 	setvar VAR_WHICH_FOSSIL_REVIVED, 1
@@ -101,7 +101,7 @@ RustboroCity_DevonCorp_2F_EventScript_NoticeClawFossil::
 	waitmovement 0
 	applymovement LOCALID_FOSSIL_SCIENTIST, Common_Movement_Delay48
 	waitmovement 0
-	msgbox RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife, MSGBOX_YESNO
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife, MSGBOX_YESNO, MUGSHOT_SCIENTIST
 	goto_if_eq VAR_RESULT, NO, RustboroCity_DevonCorp_2F_EventScript_DeclineGiveFossil
 	checkitem ITEM_ROOT_FOSSIL
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_ChooseFossil
@@ -110,7 +110,7 @@ RustboroCity_DevonCorp_2F_EventScript_NoticeClawFossil::
 
 RustboroCity_DevonCorp_2F_EventScript_GiveClawFossil::
 	bufferitemname STR_VAR_1, ITEM_CLAW_FOSSIL
-	msgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	removeitem ITEM_CLAW_FOSSIL
 	setvar VAR_FOSSIL_RESURRECTION_STATE, 1
 	setvar VAR_WHICH_FOSSIL_REVIVED, 2
@@ -118,12 +118,12 @@ RustboroCity_DevonCorp_2F_EventScript_GiveClawFossil::
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_DeclineGiveFossil::
-	msgbox RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_StillRegenerating::
-	msgbox RustboroCity_DevonCorp_2F_Text_FossilRegeneratorTakesTime, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_FossilRegeneratorTakesTime, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
@@ -134,13 +134,13 @@ RustboroCity_DevonCorp_2F_EventScript_FossilMonReady::
 
 RustboroCity_DevonCorp_2F_EventScript_LileepReady::
 	bufferspeciesname STR_VAR_2, SPECIES_LILEEP
-	msgbox RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	goto RustboroCity_DevonCorp_2F_EventScript_ReceiveLileep
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_AnorithReady::
 	bufferspeciesname STR_VAR_2, SPECIES_ANORITH
-	msgbox RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	goto RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorith
 	end
 
@@ -262,12 +262,12 @@ RustboroCity_DevonCorp_2F_EventScript_MatchCallScientist::
 	faceplayer
 	call_if_eq VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_SetFossilReady
 	goto_if_ge VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_DevonCorp_2F_EventScript_WorkOnNext
-	msgbox RustboroCity_DevonCorp_2F_Text_DevelopNewPokenavFeature, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_DevelopNewPokenavFeature, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_WorkOnNext::
-	msgbox RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 

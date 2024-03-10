@@ -92,12 +92,12 @@ LilycoveCity_EventScript_Woman2::
 	lock
 	faceplayer
 	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_Woman2AquaGone
-	msgbox LilycoveCity_Text_SomeoneStoleMyPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_SomeoneStoleMyPokemon, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
 LilycoveCity_EventScript_Woman2AquaGone::
-	msgbox LilycoveCity_Text_MissingPokemonCameBack, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_MissingPokemonCameBack, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
@@ -142,7 +142,7 @@ LilycoveCity_EventScript_Man1::
 
 LilycoveCity_EventScript_Woman1::
 	lockall
-	msgbox LilycoveCity_Text_HoneymoonVowToSeeRarePokemon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_Text_HoneymoonVowToSeeRarePokemon, MSGBOX_NPC, MUGSHOT_WOMAN3
 	applymovement LOCALID_WOMAN_1, Common_Movement_FaceOriginalDirection
 	end
 
@@ -399,18 +399,18 @@ LilycoveCity_EventScript_RivalFlyAway::
 LilycoveCity_EventScript_SchoolKidM::
 	lock
 	faceplayer
-	msgbox LilycoveCity_Text_DoYouKnowAboutBerryBlender, MSGBOX_YESNO
+	msgbox_mugshot LilycoveCity_Text_DoYouKnowAboutBerryBlender, MSGBOX_YESNO, MUGSHOT_SCHOOLKIDM
 	call_if_eq VAR_RESULT, YES, LilycoveCity_EventScript_KnowAboutBerryBlender
 	call_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DontKnowAboutBerryBlender
 	release
 	end
 
 LilycoveCity_EventScript_KnowAboutBerryBlender::
-	msgbox LilycoveCity_Text_FasterSpinBetterPokeblocks, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_FasterSpinBetterPokeblocks, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 	return
 
 LilycoveCity_EventScript_DontKnowAboutBerryBlender::
-	msgbox LilycoveCity_Text_ExplainBerryBlender, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_Text_ExplainBerryBlender, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 	return
 
 LilycoveCity_Text_MayShoppingLetsBattle:

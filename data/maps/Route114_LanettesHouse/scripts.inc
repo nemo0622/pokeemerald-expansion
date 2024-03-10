@@ -27,7 +27,7 @@ Route114_LanettesHouse_EventScript_Lanette::
 # 14 "data/maps/Route114_LanettesHouse/scripts.pory"
 	setflag FLAG_SYS_PC_LANETTE
 # 15 "data/maps/Route114_LanettesHouse/scripts.pory"
-	msgbox Route114_LanettesHouse_Text_EverythingClutteredKeepThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_LanettesHouse_Text_EverythingClutteredKeepThis, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 16 "data/maps/Route114_LanettesHouse/scripts.pory"
 	givedecoration DECOR_LOTAD_DOLL
 # 17 "data/maps/Route114_LanettesHouse/scripts.pory"
@@ -43,7 +43,7 @@ Route114_LanettesHouse_EventScript_Lanette::
 # 22 "data/maps/Route114_LanettesHouse/scripts.pory"
 Route114_LanettesHouse_EventScript_OfferAdvice::
 # 23 "data/maps/Route114_LanettesHouse/scripts.pory"
-	msgbox Route114_LanettesHouse_Text_OrganizeYourBoxes, MSGBOX_DEFAULT
+	msgbox_mugshot Route114_LanettesHouse_Text_OrganizeYourBoxes, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 24 "data/maps/Route114_LanettesHouse/scripts.pory"
 	release
 # 25 "data/maps/Route114_LanettesHouse/scripts.pory"

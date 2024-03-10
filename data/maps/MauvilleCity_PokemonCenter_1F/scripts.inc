@@ -53,7 +53,7 @@ MauvilleCity_PokemonCenter_1F_EventScript_Nurse::
 # 27 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"
 MauvilleCity_PokemonCenter_1F_EventScript_Woman1::
 # 28 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"
-	msgbox MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings, MSGBOX_NPC, MUGSHOT_WOMAN1
 # 29 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"
 	end
 # 30 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"
@@ -61,7 +61,7 @@ MauvilleCity_PokemonCenter_1F_EventScript_Woman1::
 # 31 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"
 MauvilleCity_PokemonCenter_1F_EventScript_Woman2::
 # 32 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"
-	msgbox MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 33 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"
 	end
 # 34 "data/maps/MauvilleCity_PokemonCenter_1F/scripts.pory"

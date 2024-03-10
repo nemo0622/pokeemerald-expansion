@@ -49,7 +49,7 @@ Route127_EventScript_Camden::
 # 25 "data/maps/Route127/scripts.pory"
 	trainerbattle_single TRAINER_CAMDEN, Route127_Text_CamdenIntro, Route127_Text_CamdenDefeat
 # 26 "data/maps/Route127/scripts.pory"
-	msgbox Route127_Text_CamdenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route127_Text_CamdenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 27 "data/maps/Route127/scripts.pory"
 	end
 # 28 "data/maps/Route127/scripts.pory"
@@ -59,7 +59,7 @@ Route127_EventScript_Donny::
 # 30 "data/maps/Route127/scripts.pory"
 	trainerbattle_single TRAINER_DONNY, Route127_Text_DonnyIntro, Route127_Text_DonnyDefeat
 # 31 "data/maps/Route127/scripts.pory"
-	msgbox Route127_Text_DonnyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route127_Text_DonnyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 32 "data/maps/Route127/scripts.pory"
 	end
 # 33 "data/maps/Route127/scripts.pory"
@@ -109,7 +109,7 @@ Route127_EventScript_Athena::
 # 55 "data/maps/Route127/scripts.pory"
 	trainerbattle_single TRAINER_ATHENA, Route127_Text_AthenaIntro, Route127_Text_AthenaDefeat
 # 56 "data/maps/Route127/scripts.pory"
-	msgbox Route127_Text_AthenaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route127_Text_AthenaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 57 "data/maps/Route127/scripts.pory"
 	end
 # 58 "data/maps/Route127/scripts.pory"
@@ -137,7 +137,7 @@ Route127_EventScript_RegisterKoji::
 # 69 "data/maps/Route127/scripts.pory"
 	waitmovement 0
 # 70 "data/maps/Route127/scripts.pory"
-	msgbox Route127_Text_KojiRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route127_Text_KojiRegister, MSGBOX_DEFAULT, MUGSHOT_BLACKBELT
 # 71 "data/maps/Route127/scripts.pory"
 	register_matchcall TRAINER_KOJI_1
 # 72 "data/maps/Route127/scripts.pory"

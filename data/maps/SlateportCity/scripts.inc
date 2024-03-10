@@ -329,7 +329,7 @@ SlateportCity_EventScript_EffortRibbonWoman::
 # 165 "data/maps/SlateportCity/scripts.pory"
 	bufferleadmonspeciesname STR_VAR_1
 # 166 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_OhYourPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_OhYourPokemon, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 167 "data/maps/SlateportCity/scripts.pory"
 	specialvar VAR_RESULT, LeadMonHasEffortRibbon
 # 168 "data/maps/SlateportCity/scripts.pory"
@@ -339,7 +339,7 @@ SlateportCity_EventScript_EffortRibbonWoman::
 # 170 "data/maps/SlateportCity/scripts.pory"
 	call_if_eq VAR_RESULT, FALSE, SlateportCity_EventScript_MonEVsNotMaxed
 # 171 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_PleaseGiveItThisEffortRibbon, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_PleaseGiveItThisEffortRibbon, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 172 "data/maps/SlateportCity/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 173 "data/maps/SlateportCity/scripts.pory"
@@ -359,7 +359,7 @@ SlateportCity_EventScript_EffortRibbonWoman::
 # 180 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_MonEVsNotMaxed::
 # 181 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_GoForItLittleHarder, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_GoForItLittleHarder, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 182 "data/maps/SlateportCity/scripts.pory"
 	release
 # 183 "data/maps/SlateportCity/scripts.pory"
@@ -369,7 +369,7 @@ SlateportCity_EventScript_MonEVsNotMaxed::
 # 185 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_MonHasEffortRibbon::
 # 186 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_EffortRibbonLooksGoodOnIt, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_EffortRibbonLooksGoodOnIt, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 187 "data/maps/SlateportCity/scripts.pory"
 	release
 # 188 "data/maps/SlateportCity/scripts.pory"
@@ -545,7 +545,7 @@ SlateportCity_EventScript_Woman1::
 # 273 "data/maps/SlateportCity/scripts.pory"
 	goto_if_set FLAG_DOCK_REJECTED_DEVON_GOODS, SlateportCity_EventScript_Woman1AquaGone
 # 274 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_WhatsLongLineOverThere, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_WhatsLongLineOverThere, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 275 "data/maps/SlateportCity/scripts.pory"
 	release
 # 276 "data/maps/SlateportCity/scripts.pory"
@@ -555,7 +555,7 @@ SlateportCity_EventScript_Woman1::
 # 278 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_Woman1AquaGone::
 # 279 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_VisitedMuseumOften, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_VisitedMuseumOften, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 280 "data/maps/SlateportCity/scripts.pory"
 	release
 # 281 "data/maps/SlateportCity/scripts.pory"
@@ -701,7 +701,7 @@ SlateportCity_EventScript_ManiacSternInterview::
 # 351 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_EventScript_Woman2::
 # 352 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_CantChangeTradeMonName, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_CantChangeTradeMonName, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 353 "data/maps/SlateportCity/scripts.pory"
 	end
 # 354 "data/maps/SlateportCity/scripts.pory"
@@ -1155,7 +1155,7 @@ SlateportCity_EventScript_CaptStern::
 # 578 "data/maps/SlateportCity/scripts.pory"
 	lockall
 # 579 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_SternMoveAheadWithExploration, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_SternMoveAheadWithExploration, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 580 "data/maps/SlateportCity/scripts.pory"
 	msgbox SlateportCity_Text_GabbyWonderfulThanksForInterview, MSGBOX_DEFAULT
 # 581 "data/maps/SlateportCity/scripts.pory"
@@ -1187,13 +1187,13 @@ SlateportCity_EventScript_CaptStern::
 # 594 "data/maps/SlateportCity/scripts.pory"
 	removeobject LOCALID_TY
 # 595 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_SternWhewFirstInterview, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_SternWhewFirstInterview, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 596 "data/maps/SlateportCity/scripts.pory"
 	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
 # 597 "data/maps/SlateportCity/scripts.pory"
 	waitmovement 0
 # 598 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_OhPlayerWeMadeDiscovery, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_OhPlayerWeMadeDiscovery, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 599 "data/maps/SlateportCity/scripts.pory"
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 600 "data/maps/SlateportCity/scripts.pory"
@@ -1215,7 +1215,7 @@ SlateportCity_EventScript_CaptStern::
 # 608 "data/maps/SlateportCity/scripts.pory"
 	waitmovement 0
 # 609 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_SternWhatWasAllThat, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_SternWhatWasAllThat, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 610 "data/maps/SlateportCity/scripts.pory"
 	playse SE_PIN
 # 611 "data/maps/SlateportCity/scripts.pory"
@@ -1231,9 +1231,9 @@ SlateportCity_EventScript_CaptStern::
 # 616 "data/maps/SlateportCity/scripts.pory"
 	waitmovement 0
 # 617 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_FromHarborTryingToTakeSub, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_FromHarborTryingToTakeSub, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 618 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 619 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 620 "data/maps/SlateportCity/scripts.pory"

@@ -25,7 +25,7 @@ MtPyre_2F_SetHoleWarp:
 # 13 "data/maps/MtPyre_2F/scripts.pory"
 MtPyre_2F_EventScript_Woman::
 # 14 "data/maps/MtPyre_2F/scripts.pory"
-	msgbox MtPyre_2F_Text_MemoriesOfSkitty, MSGBOX_NPC
+	msgbox_mugshot MtPyre_2F_Text_MemoriesOfSkitty, MSGBOX_NPC, MUGSHOT_WOMAN1
 # 15 "data/maps/MtPyre_2F/scripts.pory"
 	end
 # 16 "data/maps/MtPyre_2F/scripts.pory"
@@ -63,7 +63,7 @@ MtPyre_2F_EventScript_Dez::
 # 32 "data/maps/MtPyre_2F/scripts.pory"
 	trainerbattle_double TRAINER_DEZ_AND_LUKE, MtPyre_2F_Text_DezIntro, MtPyre_2F_Text_DezDefeat, MtPyre_2F_Text_DezNotEnoughMons
 # 33 "data/maps/MtPyre_2F/scripts.pory"
-	msgbox MtPyre_2F_Text_DezPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_2F_Text_DezPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN4
 # 34 "data/maps/MtPyre_2F/scripts.pory"
 	end
 # 35 "data/maps/MtPyre_2F/scripts.pory"

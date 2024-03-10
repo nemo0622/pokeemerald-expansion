@@ -17,7 +17,7 @@ PetalburgCity_House2_EventScript_Woman::
 # 9 "data/maps/PetalburgCity_House2/scripts.pory"
 PetalburgCity_House2_EventScript_SchoolKid::
 # 10 "data/maps/PetalburgCity_House2/scripts.pory"
-	msgbox PetalburgCity_House2_Text_BattledNormanOnce, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_House2_Text_BattledNormanOnce, MSGBOX_NPC, MUGSHOT_SCHOOLKIDM
 # 11 "data/maps/PetalburgCity_House2/scripts.pory"
 	end
 # 12 "data/maps/PetalburgCity_House2/scripts.pory"

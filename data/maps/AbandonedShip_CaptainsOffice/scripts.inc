@@ -21,7 +21,7 @@ AbandonedShip_CaptainsOffice_EventScript_CaptSternAide::
 # 11 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
 	goto_if_set FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_2_SCANNER, AbandonedShip_CaptainsOffice_EventScript_ThisIsSSCactus
 # 12 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
-	msgbox AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner, MSGBOX_DEFAULT
+	msgbox_mugshot AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 13 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
 	release
 # 14 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
@@ -31,7 +31,7 @@ AbandonedShip_CaptainsOffice_EventScript_CaptSternAide::
 # 16 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
 AbandonedShip_CaptainsOffice_EventScript_CanYouDeliverScanner::
 # 17 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
-	msgbox AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner, MSGBOX_DEFAULT
+	msgbox_mugshot AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 18 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
 	release
 # 19 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
@@ -41,7 +41,7 @@ AbandonedShip_CaptainsOffice_EventScript_CanYouDeliverScanner::
 # 21 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
 AbandonedShip_CaptainsOffice_EventScript_ThisIsSSCactus::
 # 22 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
-	msgbox AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus, MSGBOX_DEFAULT
+	msgbox_mugshot AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 23 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"
 	release
 # 24 "data/maps/AbandonedShip_CaptainsOffice/scripts.pory"

@@ -27,7 +27,7 @@ RusturfTunnel_EventScript_SetAquaGruntAndPeekoPos::
 RusturfTunnel_EventScript_Wanda::
 	lock
 	faceplayer
-	msgbox RusturfTunnel_Text_BoyfriendOnOtherSideOfRock, MSGBOX_DEFAULT
+	msgbox_mugshot RusturfTunnel_Text_BoyfriendOnOtherSideOfRock, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0

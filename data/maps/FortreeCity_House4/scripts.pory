@@ -5,7 +5,7 @@ FortreeCity_House4_MapScripts::
 	.byte 0
 
 FortreeCity_House4_EventScript_Woman::
-	msgbox FortreeCity_House4_Text_BringsWorldCloserTogether, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House4_Text_BringsWorldCloserTogether, MSGBOX_NPC, MUGSHOT_WOMAN4
 	end
 
 FortreeCity_House4_EventScript_Boy::

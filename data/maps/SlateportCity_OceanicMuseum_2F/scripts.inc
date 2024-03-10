@@ -23,7 +23,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 12 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	faceplayer
 # 13 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 14 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	closemessage
 # 15 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -55,7 +55,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 28 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	call_if_ne VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_2F_EventScript_SternFaceGrunts
 # 29 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 30 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 # 31 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -145,13 +145,13 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 73 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	waitmovement 0
 # 74 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 75 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	setvar VAR_0x8004, ITEM_DEVON_PARTS
 # 76 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	call Common_EventScript_PlayerHandedOverTheItem
 # 77 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 78 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	closemessage
 # 79 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"

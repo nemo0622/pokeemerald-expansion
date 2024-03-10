@@ -875,7 +875,7 @@ Route119_EventScript_Rachel::
 # 438 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_RACHEL, Route119_Text_RachelIntro, Route119_Text_RachelDefeat
 # 439 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Text_RachelPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_RachelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 440 "data/maps/Route119/scripts.pory"
 	end
 # 441 "data/maps/Route119/scripts.pory"

@@ -4,17 +4,17 @@ Route133_MapScripts::
 
 Route133_EventScript_Franklin::
 	trainerbattle_single TRAINER_FRANKLIN, Route133_Text_FranklinIntro, Route133_Text_FranklinDefeat
-	msgbox Route133_Text_FranklinPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route133_Text_FranklinPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 	end
 
 Route133_EventScript_Debra::
 	trainerbattle_single TRAINER_DEBRA, Route133_Text_DebraIntro, Route133_Text_DebraDefeat
-	msgbox Route133_Text_DebraPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route133_Text_DebraPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 	end
 
 Route133_EventScript_Linda::
 	trainerbattle_single TRAINER_LINDA, Route133_Text_LindaIntro, Route133_Text_LindaDefeat
-	msgbox Route133_Text_LindaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route133_Text_LindaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 	end
 
 Route133_EventScript_Warren::

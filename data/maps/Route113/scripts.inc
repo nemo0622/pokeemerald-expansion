@@ -125,7 +125,7 @@ Route113_EventScript_Madeline::
 # 63 "data/maps/Route113/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route113_EventScript_RematchMadeline
 # 64 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_MadelinePostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route113_Text_MadelinePostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 65 "data/maps/Route113/scripts.pory"
 	release
 # 66 "data/maps/Route113/scripts.pory"
@@ -139,7 +139,7 @@ Route113_EventScript_RegisterMadeline::
 # 70 "data/maps/Route113/scripts.pory"
 	waitmovement 0
 # 71 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_MadelineRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route113_Text_MadelineRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 72 "data/maps/Route113/scripts.pory"
 	register_matchcall TRAINER_MADELINE_1
 # 73 "data/maps/Route113/scripts.pory"
@@ -153,7 +153,7 @@ Route113_EventScript_RematchMadeline::
 # 77 "data/maps/Route113/scripts.pory"
 	trainerbattle_rematch TRAINER_MADELINE_1, Route113_Text_MadelineRematchIntro, Route113_Text_MadelineRematchDefeat
 # 78 "data/maps/Route113/scripts.pory"
-	msgbox Route113_Text_MadelinePostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route113_Text_MadelinePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 79 "data/maps/Route113/scripts.pory"
 	end
 # 80 "data/maps/Route113/scripts.pory"

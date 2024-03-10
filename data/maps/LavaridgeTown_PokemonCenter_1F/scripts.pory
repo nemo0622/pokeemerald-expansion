@@ -24,7 +24,7 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Youngster::
 	end
 
 LavaridgeTown_PokemonCenter_1F_EventScript_Woman::
-	msgbox LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether, MSGBOX_NPC, MUGSHOT_WOMAN3
 	end
 
 LavaridgeTown_PokemonCenter_1F_EventScript_Gentleman::

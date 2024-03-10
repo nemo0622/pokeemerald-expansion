@@ -117,7 +117,7 @@ MossdeepCity_EventScript_Girl::
 # 59 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_Woman::
 # 60 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_SpecialSpaceCenterRock, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Text_SpecialSpaceCenterRock, MSGBOX_NPC, MUGSHOT_WOMAN1
 # 61 "data/maps/MossdeepCity/scripts.pory"
 	end
 # 62 "data/maps/MossdeepCity/scripts.pory"

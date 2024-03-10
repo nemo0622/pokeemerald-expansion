@@ -163,12 +163,12 @@ SlateportCity_EventScript_EffortRibbonWoman::
 	lock
 	faceplayer
 	bufferleadmonspeciesname STR_VAR_1
-	msgbox SlateportCity_Text_OhYourPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_OhYourPokemon, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	specialvar VAR_RESULT, LeadMonHasEffortRibbon
 	call_if_eq VAR_RESULT, TRUE, SlateportCity_EventScript_MonHasEffortRibbon
 	specialvar VAR_RESULT, Special_AreLeadMonEVsMaxedOut
 	call_if_eq VAR_RESULT, FALSE, SlateportCity_EventScript_MonEVsNotMaxed
-	msgbox SlateportCity_Text_PleaseGiveItThisEffortRibbon, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_PleaseGiveItThisEffortRibbon, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	playfanfare MUS_OBTAIN_ITEM
 	message SlateportCity_Text_ReceivedEffortRibbon
 	waitfanfare
@@ -178,12 +178,12 @@ SlateportCity_EventScript_EffortRibbonWoman::
 	end
 
 SlateportCity_EventScript_MonEVsNotMaxed::
-	msgbox SlateportCity_Text_GoForItLittleHarder, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_GoForItLittleHarder, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	release
 	end
 
 SlateportCity_EventScript_MonHasEffortRibbon::
-	msgbox SlateportCity_Text_EffortRibbonLooksGoodOnIt, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_EffortRibbonLooksGoodOnIt, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	release
 	end
 
@@ -271,12 +271,12 @@ SlateportCity_EventScript_Woman1::
 	lock
 	faceplayer
 	goto_if_set FLAG_DOCK_REJECTED_DEVON_GOODS, SlateportCity_EventScript_Woman1AquaGone
-	msgbox SlateportCity_Text_WhatsLongLineOverThere, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_WhatsLongLineOverThere, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	release
 	end
 
 SlateportCity_EventScript_Woman1AquaGone::
-	msgbox SlateportCity_Text_VisitedMuseumOften, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_VisitedMuseumOften, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	release
 	end
 
@@ -349,7 +349,7 @@ SlateportCity_EventScript_ManiacSternInterview::
 	end
 
 SlateportCity_EventScript_Woman2::
-	msgbox SlateportCity_Text_CantChangeTradeMonName, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_Text_CantChangeTradeMonName, MSGBOX_NPC, MUGSHOT_WOMAN5
 	end
 
 SlateportCity_EventScript_Sailor1::
@@ -576,7 +576,7 @@ SlateportCity_Pokemart_PowerTMs:
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
 SlateportCity_EventScript_CaptStern::
 	lockall
-	msgbox SlateportCity_Text_SternMoveAheadWithExploration, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_SternMoveAheadWithExploration, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	msgbox SlateportCity_Text_GabbyWonderfulThanksForInterview, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GABBY, Common_Movement_WalkInPlaceFasterRight
@@ -592,10 +592,10 @@ SlateportCity_EventScript_CaptStern::
 	waitmovement 0
 	removeobject LOCALID_GABBY
 	removeobject LOCALID_TY
-	msgbox SlateportCity_Text_SternWhewFirstInterview, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_SternWhewFirstInterview, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	msgbox SlateportCity_Text_OhPlayerWeMadeDiscovery, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_OhPlayerWeMadeDiscovery, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	msgbox SlateportCity_Text_AquaWillAssumeControlOfSubmarine, MSGBOX_DEFAULT
 	applymovement LOCALID_COOK, Common_Movement_WalkInPlaceFasterLeft
@@ -606,7 +606,7 @@ SlateportCity_EventScript_CaptStern::
 	waitmovement 0
 	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	msgbox SlateportCity_Text_SternWhatWasAllThat, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_SternWhatWasAllThat, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	playse SE_PIN
 	applymovement LOCALID_CAPT_STERN, Common_Movement_ExclamationMark
 	waitmovement 0
@@ -614,8 +614,8 @@ SlateportCity_EventScript_CaptStern::
 	waitmovement 0
 	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	msgbox SlateportCity_Text_FromHarborTryingToTakeSub, MSGBOX_DEFAULT
-	msgbox SlateportCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Text_FromHarborTryingToTakeSub, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
+	msgbox_mugshot SlateportCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	closemessage
 	applymovement LOCALID_CAPT_STERN, SlateportCity_Movement_SternEnterHarbor
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerEnterHarbor

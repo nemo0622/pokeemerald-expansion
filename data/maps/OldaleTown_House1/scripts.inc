@@ -9,7 +9,7 @@ OldaleTown_House1_MapScripts::
 # 5 "data/maps/OldaleTown_House1/scripts.pory"
 OldaleTown_House1_EventScript_Woman::
 # 6 "data/maps/OldaleTown_House1/scripts.pory"
-	msgbox OldaleTown_House1_Text_LeftPokemonGoesOutFirst, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_House1_Text_LeftPokemonGoesOutFirst, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 7 "data/maps/OldaleTown_House1/scripts.pory"
 	end
 # 8 "data/maps/OldaleTown_House1/scripts.pory"

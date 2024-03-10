@@ -245,7 +245,7 @@ RivalsHouse_1F_EventScript_RivalMom::
 # 123 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	special GetRivalSonDaughterString
 # 124 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_Text_LikeChildLikeFather, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_1F_Text_LikeChildLikeFather, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 125 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	release
 # 126 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
@@ -255,7 +255,7 @@ RivalsHouse_1F_EventScript_RivalMom::
 # 128 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 RivalsHouse_1F_EventScript_RivalTooBusy::
 # 129 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_Text_TooBusyToNoticeVisit, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_1F_Text_TooBusyToNoticeVisit, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 130 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	release
 # 131 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
@@ -265,7 +265,7 @@ RivalsHouse_1F_EventScript_RivalTooBusy::
 # 133 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 RivalsHouse_1F_EventScript_RivalIsOnRoute103::
 # 134 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_Text_WentOutToRoute103, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_1F_Text_WentOutToRoute103, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 135 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	release
 # 136 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
@@ -275,7 +275,7 @@ RivalsHouse_1F_EventScript_RivalIsOnRoute103::
 # 138 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 RivalsHouse_1F_EventScript_GoHomeEverySoOften::
 # 139 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_Text_ShouldGoHomeEverySoOften, MSGBOX_DEFAULT
+	msgbox_mugshot RivalsHouse_1F_Text_ShouldGoHomeEverySoOften, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 140 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	release
 # 141 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"

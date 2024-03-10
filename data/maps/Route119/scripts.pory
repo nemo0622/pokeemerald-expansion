@@ -436,7 +436,7 @@ Route119_EventScript_Dayton::
 
 Route119_EventScript_Rachel::
 	trainerbattle_single TRAINER_RACHEL, Route119_Text_RachelIntro, Route119_Text_RachelDefeat
-	msgbox Route119_Text_RachelPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route119_Text_RachelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 	end
 
 Route119_EventScript_BridgeAquaGrunt1::

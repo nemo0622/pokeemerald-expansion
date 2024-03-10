@@ -17,7 +17,7 @@ RustboroCity_Flat2_3F_EventScript_DevonEmployee::
 # 9 "data/maps/RustboroCity_Flat2_3F/scripts.pory"
 RustboroCity_Flat2_3F_EventScript_Woman::
 # 10 "data/maps/RustboroCity_Flat2_3F/scripts.pory"
-	msgbox RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones, MSGBOX_NPC, MUGSHOT_WOMAN1
 # 11 "data/maps/RustboroCity_Flat2_3F/scripts.pory"
 	end
 # 12 "data/maps/RustboroCity_Flat2_3F/scripts.pory"

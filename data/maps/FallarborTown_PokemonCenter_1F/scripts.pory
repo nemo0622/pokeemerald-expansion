@@ -31,7 +31,7 @@ FallarborTown_PokemonCenter_1F_EventScript_ExpertM::
 FallarborTown_PokemonCenter_1F_EventScript_Lanette::
 	lock
 	faceplayer
-	msgbox FallarborTown_PokemonCenter_1F_Text_LanetteGreeting, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_PokemonCenter_1F_Text_LanetteGreeting, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	closemessage
 	switch VAR_FACING
 	case DIR_NORTH, FallarborTown_PokemonCenter_1F_EventScript_LanetteExitNorth

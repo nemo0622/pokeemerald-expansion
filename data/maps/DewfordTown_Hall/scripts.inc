@@ -55,7 +55,7 @@ DewfordTown_Hall_EventScript_Woman::
 # 28 "data/maps/DewfordTown_Hall/scripts.pory"
 	call Common_EventScript_BufferTrendyPhrase
 # 29 "data/maps/DewfordTown_Hall/scripts.pory"
-	msgbox DewfordTown_Hall_Text_TeachingMonAboutTrend, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_TeachingMonAboutTrend, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 30 "data/maps/DewfordTown_Hall/scripts.pory"
 	release
 # 31 "data/maps/DewfordTown_Hall/scripts.pory"

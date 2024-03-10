@@ -57,7 +57,7 @@ MossdeepCity_EventScript_Girl::
 	end
 
 MossdeepCity_EventScript_Woman::
-	msgbox MossdeepCity_Text_SpecialSpaceCenterRock, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_Text_SpecialSpaceCenterRock, MSGBOX_NPC, MUGSHOT_WOMAN1
 	end
 
 MossdeepCity_EventScript_WhiteRock::

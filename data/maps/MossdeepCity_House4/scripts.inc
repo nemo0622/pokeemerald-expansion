@@ -15,7 +15,7 @@ MossdeepCity_House4_EventScript_Woman::
 # 8 "data/maps/MossdeepCity_House4/scripts.pory"
 	goto_if_set FLAG_SYS_GAME_CLEAR, MossdeepCity_House4_EventScript_CanBattleAtSecretBases
 # 9 "data/maps/MossdeepCity_House4/scripts.pory"
-	msgbox MossdeepCity_House4_Text_BrotherLikesToFindBases, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House4_Text_BrotherLikesToFindBases, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 10 "data/maps/MossdeepCity_House4/scripts.pory"
 	release
 # 11 "data/maps/MossdeepCity_House4/scripts.pory"
@@ -25,7 +25,7 @@ MossdeepCity_House4_EventScript_Woman::
 # 13 "data/maps/MossdeepCity_House4/scripts.pory"
 MossdeepCity_House4_EventScript_CanBattleAtSecretBases::
 # 14 "data/maps/MossdeepCity_House4/scripts.pory"
-	msgbox MossdeepCity_House4_Text_BrotherLikesToVisitBasesAndBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_House4_Text_BrotherLikesToVisitBasesAndBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 15 "data/maps/MossdeepCity_House4/scripts.pory"
 	release
 # 16 "data/maps/MossdeepCity_House4/scripts.pory"

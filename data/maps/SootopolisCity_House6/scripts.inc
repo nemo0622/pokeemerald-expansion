@@ -15,11 +15,11 @@ SootopolisCity_House6_EventScript_Woman::
 # 8 "data/maps/SootopolisCity_House6/scripts.pory"
 	goto_if_set FLAG_RECEIVED_WAILMER_DOLL, SootopolisCity_House6_EventScript_ReceivedWailmerDoll
 # 9 "data/maps/SootopolisCity_House6/scripts.pory"
-	msgbox SootopolisCity_House6_Text_FirstGuestInWhileTakeDoll, MSGBOX_YESNO
+	msgbox_mugshot SootopolisCity_House6_Text_FirstGuestInWhileTakeDoll, MSGBOX_YESNO, MUGSHOT_WOMAN2
 # 10 "data/maps/SootopolisCity_House6/scripts.pory"
 	call_if_eq VAR_RESULT, NO, SootopolisCity_House6_EventScript_DeclineWailmerDoll
 # 11 "data/maps/SootopolisCity_House6/scripts.pory"
-	msgbox SootopolisCity_House6_Text_TakeGoodCareOfIt, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House6_Text_TakeGoodCareOfIt, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 12 "data/maps/SootopolisCity_House6/scripts.pory"
 	givedecoration DECOR_WAILMER_DOLL
 # 13 "data/maps/SootopolisCity_House6/scripts.pory"
@@ -35,7 +35,7 @@ SootopolisCity_House6_EventScript_Woman::
 # 18 "data/maps/SootopolisCity_House6/scripts.pory"
 SootopolisCity_House6_EventScript_DeclineWailmerDoll::
 # 19 "data/maps/SootopolisCity_House6/scripts.pory"
-	msgbox SootopolisCity_House6_Text_DontWantThisDoll, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House6_Text_DontWantThisDoll, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 20 "data/maps/SootopolisCity_House6/scripts.pory"
 	release
 # 21 "data/maps/SootopolisCity_House6/scripts.pory"
@@ -45,7 +45,7 @@ SootopolisCity_House6_EventScript_DeclineWailmerDoll::
 # 23 "data/maps/SootopolisCity_House6/scripts.pory"
 SootopolisCity_House6_EventScript_ReceivedWailmerDoll::
 # 24 "data/maps/SootopolisCity_House6/scripts.pory"
-	msgbox SootopolisCity_House6_Text_LovePlushDolls, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House6_Text_LovePlushDolls, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 25 "data/maps/SootopolisCity_House6/scripts.pory"
 	release
 # 26 "data/maps/SootopolisCity_House6/scripts.pory"
@@ -57,9 +57,9 @@ SootopolisCity_House6_EventScript_NoRoomForWailmerDoll::
 # 29 "data/maps/SootopolisCity_House6/scripts.pory"
 	bufferdecorationname STR_VAR_2, DECOR_WAILMER_DOLL
 # 30 "data/maps/SootopolisCity_House6/scripts.pory"
-	msgbox gText_NoRoomLeftForAnother, MSGBOX_DEFAULT
+	msgbox_mugshot gText_NoRoomLeftForAnother, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 31 "data/maps/SootopolisCity_House6/scripts.pory"
-	msgbox SootopolisCity_House6_Text_IllHoldItForYou, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House6_Text_IllHoldItForYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 32 "data/maps/SootopolisCity_House6/scripts.pory"
 	release
 # 33 "data/maps/SootopolisCity_House6/scripts.pory"

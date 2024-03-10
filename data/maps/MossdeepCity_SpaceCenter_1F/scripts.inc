@@ -137,7 +137,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_RocketLaunchCounter::
 # 69 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_NoLaunchesYet::
 # 70 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 71 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	return
 # 72 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -145,7 +145,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_NoLaunchesYet::
 # 73 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_ShowLaunchNumber::
 # 74 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 75 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	return
 # 76 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -177,7 +177,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_RocketLaunchCounterMagma::
 # 89 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_NoLaunchesYetMagma::
 # 90 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 91 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	return
 # 92 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -185,7 +185,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_NoLaunchesYetMagma::
 # 93 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_ShowLaunchNumberMagma::
 # 94 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 95 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	return
 # 96 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -199,7 +199,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_Scientist::
 # 100 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	goto_if_eq VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_ScientistMagma
 # 101 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 102 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	release
 # 103 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -209,7 +209,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_Scientist::
 # 105 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_ScientistMagma::
 # 106 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 107 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterRight
 # 108 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -315,7 +315,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_Woman::
 # 158 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_WomanNormal::
 # 159 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 160 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	release
 # 161 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
@@ -325,7 +325,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_WomanNormal::
 # 163 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 MossdeepCity_SpaceCenter_1F_EventScript_WomanMagma::
 # 164 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 165 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
 	release
 # 166 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"

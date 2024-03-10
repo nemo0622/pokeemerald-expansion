@@ -115,7 +115,7 @@ LilycoveCity_DepartmentStore_3F_EventScript_PokefanM::
 # 58 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
 LilycoveCity_DepartmentStore_3F_EventScript_Woman::
 # 59 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 60 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"
 	end
 # 61 "data/maps/LilycoveCity_DepartmentStore_3F/scripts.pory"

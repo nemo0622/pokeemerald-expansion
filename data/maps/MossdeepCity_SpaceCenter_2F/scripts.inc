@@ -229,7 +229,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Scientist::
 # 115 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal::
 # 116 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 117 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	release
 # 118 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -239,7 +239,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal::
 # 120 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistMagma::
 # 121 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 122 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	release
 # 123 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"

@@ -69,7 +69,7 @@ Route105_EventScript_Luis::
 # 35 "data/maps/Route105/scripts.pory"
 	trainerbattle_single TRAINER_LUIS, Route105_Text_LuisIntro, Route105_Text_LuisDefeated
 # 36 "data/maps/Route105/scripts.pory"
-	msgbox Route105_Text_LuisPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route105_Text_LuisPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 37 "data/maps/Route105/scripts.pory"
 	end
 # 38 "data/maps/Route105/scripts.pory"
@@ -79,7 +79,7 @@ Route105_EventScript_Dominik::
 # 40 "data/maps/Route105/scripts.pory"
 	trainerbattle_single TRAINER_DOMINIK, Route105_Text_DominikIntro, Route105_Text_DominikDefeated
 # 41 "data/maps/Route105/scripts.pory"
-	msgbox Route105_Text_DominikPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route105_Text_DominikPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 42 "data/maps/Route105/scripts.pory"
 	end
 # 43 "data/maps/Route105/scripts.pory"
@@ -89,7 +89,7 @@ Route105_EventScript_Beverly::
 # 45 "data/maps/Route105/scripts.pory"
 	trainerbattle_single TRAINER_BEVERLY, Route105_Text_BeverlyIntro, Route105_Text_BeverlyDefeated
 # 46 "data/maps/Route105/scripts.pory"
-	msgbox Route105_Text_PostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route105_Text_PostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 47 "data/maps/Route105/scripts.pory"
 	end
 # 48 "data/maps/Route105/scripts.pory"
@@ -99,7 +99,7 @@ Route105_EventScript_Imani::
 # 50 "data/maps/Route105/scripts.pory"
 	trainerbattle_single TRAINER_IMANI, Route105_Text_ImaniIntro, Route105_Text_ImaniDefeated
 # 51 "data/maps/Route105/scripts.pory"
-	msgbox Route105_Text_ImaniPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route105_Text_ImaniPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 52 "data/maps/Route105/scripts.pory"
 	end
 # 53 "data/maps/Route105/scripts.pory"

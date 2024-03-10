@@ -77,7 +77,7 @@ SootopolisCity_PokemonCenter_1F_EventScript_Woman::
 # 39 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
 	goto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries
 # 40 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
-	msgbox SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 41 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
 	release
 # 42 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
@@ -87,7 +87,7 @@ SootopolisCity_PokemonCenter_1F_EventScript_Woman::
 # 44 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
 SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries::
 # 45 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
-	msgbox SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 46 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"
 	release
 # 47 "data/maps/SootopolisCity_PokemonCenter_1F/scripts.pory"

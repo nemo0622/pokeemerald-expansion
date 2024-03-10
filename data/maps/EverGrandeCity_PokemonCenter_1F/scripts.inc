@@ -55,7 +55,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_Nurse::
 # 28 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 EverGrandeCity_PokemonCenter_1F_EventScript_Woman::
 # 29 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
-	msgbox EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad, MSGBOX_NPC
+	msgbox_mugshot EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 30 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 	end
 # 31 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"

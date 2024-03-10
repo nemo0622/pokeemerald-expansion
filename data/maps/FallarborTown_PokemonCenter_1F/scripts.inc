@@ -65,7 +65,7 @@ FallarborTown_PokemonCenter_1F_EventScript_Lanette::
 # 33 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
 	faceplayer
 # 34 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
-	msgbox FallarborTown_PokemonCenter_1F_Text_LanetteGreeting, MSGBOX_DEFAULT
+	msgbox_mugshot FallarborTown_PokemonCenter_1F_Text_LanetteGreeting, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 35 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
 	closemessage
 # 36 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"

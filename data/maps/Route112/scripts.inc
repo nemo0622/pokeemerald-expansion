@@ -217,7 +217,7 @@ Route112_EventScript_Shayla::
 # 109 "data/maps/Route112/scripts.pory"
 	trainerbattle_single TRAINER_SHAYLA, Route112_Text_ShaylaIntro, Route112_Text_ShaylaDefeat
 # 110 "data/maps/Route112/scripts.pory"
-	msgbox Route112_Text_ShaylaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route112_Text_ShaylaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 111 "data/maps/Route112/scripts.pory"
 	end
 # 112 "data/maps/Route112/scripts.pory"

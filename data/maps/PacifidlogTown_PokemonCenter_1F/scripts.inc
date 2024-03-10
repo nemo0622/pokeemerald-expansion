@@ -49,7 +49,7 @@ PacifidlogTown_PokemonCenter_1F_EventScript_Girl::
 # 25 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
 PacifidlogTown_PokemonCenter_1F_EventScript_Woman::
 # 26 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
-	msgbox PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola, MSGBOX_NPC, MUGSHOT_WOMAN1
 # 27 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
 	end
 # 28 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"

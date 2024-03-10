@@ -67,11 +67,11 @@ MossdeepCity_SpaceCenter_1F_EventScript_RocketLaunchCounter::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_NoLaunchesYet::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	return
 
 MossdeepCity_SpaceCenter_1F_EventScript_ShowLaunchNumber::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	return
 
 MossdeepCity_SpaceCenter_1F_EventScript_RocketLaunchCounterMagma::
@@ -87,23 +87,23 @@ MossdeepCity_SpaceCenter_1F_EventScript_RocketLaunchCounterMagma::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_NoLaunchesYetMagma::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	return
 
 MossdeepCity_SpaceCenter_1F_EventScript_ShowLaunchNumberMagma::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	return
 
 MossdeepCity_SpaceCenter_1F_EventScript_Scientist::
 	lock
 	faceplayer
 	goto_if_eq VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_ScientistMagma
-	msgbox MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_ScientistMagma::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	release
@@ -156,12 +156,12 @@ MossdeepCity_SpaceCenter_1F_EventScript_Woman::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_WomanNormal::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	release
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_WomanMagma::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 	release
 	end
 

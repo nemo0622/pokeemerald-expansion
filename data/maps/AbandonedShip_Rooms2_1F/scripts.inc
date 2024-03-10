@@ -53,7 +53,7 @@ AbandonedShip_Rooms2_1F_EventScript_Kira::
 # 27 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms2_1F_EventScript_KiraRematch
 # 28 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms2_1F_Text_KiraPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot AbandonedShip_Rooms2_1F_Text_KiraPostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 29 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	release
 # 30 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
@@ -63,7 +63,7 @@ AbandonedShip_Rooms2_1F_EventScript_Kira::
 # 32 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 AbandonedShip_Rooms2_1F_EventScript_RegisterKira::
 # 33 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms2_1F_Text_KiraRegister, MSGBOX_DEFAULT
+	msgbox_mugshot AbandonedShip_Rooms2_1F_Text_KiraRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 34 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	register_matchcall TRAINER_KIRA_AND_DAN_1
 # 35 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
@@ -77,7 +77,7 @@ AbandonedShip_Rooms2_1F_EventScript_KiraRematch::
 # 39 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	trainerbattle_rematch_double TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_Text_KiraRematchIntro, AbandonedShip_Rooms2_1F_Text_KiraRematchDefeat, AbandonedShip_Rooms2_1F_Text_KiraRematchNotEnoughMons
 # 40 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms2_1F_Text_KiraPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot AbandonedShip_Rooms2_1F_Text_KiraPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN4
 # 41 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	end
 # 42 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
@@ -87,7 +87,7 @@ AbandonedShip_Rooms2_1F_EventScript_Jani::
 # 44 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	trainerbattle_single TRAINER_JANI, AbandonedShip_Rooms2_1F_Text_JaniIntro, AbandonedShip_Rooms2_1F_Text_JaniDefeat
 # 45 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	msgbox AbandonedShip_Rooms2_1F_Text_JaniPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot AbandonedShip_Rooms2_1F_Text_JaniPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TUBERF
 # 46 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	end
 # 47 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"

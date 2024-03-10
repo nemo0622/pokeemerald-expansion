@@ -35,7 +35,7 @@ MtPyre_3F_EventScript_Gabrielle::
 # 18 "data/maps/MtPyre_3F/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, MtPyre_3F_EventScript_RematchGabrielle
 # 19 "data/maps/MtPyre_3F/scripts.pory"
-	msgbox MtPyre_3F_Text_GabriellePostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_3F_Text_GabriellePostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 20 "data/maps/MtPyre_3F/scripts.pory"
 	release
 # 21 "data/maps/MtPyre_3F/scripts.pory"
@@ -49,7 +49,7 @@ MtPyre_3F_EventScript_RegisterGabrielle::
 # 25 "data/maps/MtPyre_3F/scripts.pory"
 	waitmovement 0
 # 26 "data/maps/MtPyre_3F/scripts.pory"
-	msgbox MtPyre_3F_Text_GabrielleRegister, MSGBOX_DEFAULT
+	msgbox_mugshot MtPyre_3F_Text_GabrielleRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 27 "data/maps/MtPyre_3F/scripts.pory"
 	register_matchcall TRAINER_GABRIELLE_1
 # 28 "data/maps/MtPyre_3F/scripts.pory"
@@ -63,7 +63,7 @@ MtPyre_3F_EventScript_RematchGabrielle::
 # 32 "data/maps/MtPyre_3F/scripts.pory"
 	trainerbattle_rematch TRAINER_GABRIELLE_1, MtPyre_3F_Text_GabrielleRematchIntro, MtPyre_3F_Text_GabrielleRematchDefeat
 # 33 "data/maps/MtPyre_3F/scripts.pory"
-	msgbox MtPyre_3F_Text_GabriellePostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot MtPyre_3F_Text_GabriellePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 34 "data/maps/MtPyre_3F/scripts.pory"
 	end
 # 35 "data/maps/MtPyre_3F/scripts.pory"

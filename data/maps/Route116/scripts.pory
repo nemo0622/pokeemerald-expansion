@@ -247,7 +247,7 @@ Route116_EventScript_Jerry::
 	setvar VAR_0x8004, TRAINER_JERRY_1
 	specialvar VAR_RESULT, IsTrainerRegistered
 	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_TryRegisterJerry
-	msgbox Route116_Text_JerryPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_JerryPostBattle, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 	release
 	end
 
@@ -259,26 +259,26 @@ Route116_EventScript_TryRegisterJerryAfterBattle::
 Route116_EventScript_RegisterJerryAfterBattle::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route116_Text_JerryRegister2, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_JerryRegister2, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 	register_matchcall TRAINER_JERRY_1
 	release
 	end
 
 Route116_EventScript_TryRegisterJerry::
 	goto_if_set FLAG_HAS_MATCH_CALL, Route116_EventScript_RegisterJerry
-	msgbox Route116_Text_JerryPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_JerryPostBattle, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 	release
 	end
 
 Route116_EventScript_RegisterJerry::
-	msgbox Route116_Text_JerryRegister1, MSGBOX_DEFAULT
+	msgbox_mugshot Route116_Text_JerryRegister1, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 	register_matchcall TRAINER_JERRY_1
 	release
 	end
 
 Route116_EventScript_RematchJerry::
 	trainerbattle_rematch TRAINER_JERRY_1, Route116_Text_JerryRematchIntro, Route116_Text_JerryRematchDefeat
-	msgbox Route116_Text_JerryPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_JerryPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_SCHOOLKIDM
 	end
 
 Route116_EventScript_Clark::
@@ -334,7 +334,7 @@ Route116_EventScript_RematchKaren::
 
 Route116_EventScript_Sarah::
 	trainerbattle_single TRAINER_SARAH, Route116_Text_SarahIntro, Route116_Text_SarahDefeat
-	msgbox Route116_Text_SarahPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route116_Text_SarahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 	end
 
 Route116_EventScript_Dawson::

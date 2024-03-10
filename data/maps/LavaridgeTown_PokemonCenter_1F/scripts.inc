@@ -51,7 +51,7 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Youngster::
 # 26 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 LavaridgeTown_PokemonCenter_1F_EventScript_Woman::
 # 27 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
-	msgbox LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether, MSGBOX_NPC
+	msgbox_mugshot LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether, MSGBOX_NPC, MUGSHOT_WOMAN3
 # 28 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 	end
 # 29 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"

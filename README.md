@@ -54,4 +54,5 @@
     - Also include more fun NPC dialogue, such as some trainers giving you items if you talk to them after battle!
     - "NPC Events" could include something like a festival celebrating a legendary Pokémon in a certain town, with exclusive items and maybe a Pokémon egg distributor!
 - Story enhancements - make Aqua vs Magma conflict clearer + more interesting, bring elements of story improvements and Delta Episode from ORAS, etc.
+    - Include involving Wallace and Steven more in the story (maybe replace Scott with Wallace, witnessing your journey?)
 - Hoopa Rings - mysterious rings found around Hoenn which transport one random Pokémon from another region

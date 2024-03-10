@@ -41,7 +41,7 @@ MossdeepCity_House1_EventScript_NeutralNature::
 # 21 "data/maps/MossdeepCity_House1/scripts.pory"
 MossdeepCity_House1_EventScript_Woman::
 # 22 "data/maps/MossdeepCity_House1/scripts.pory"
-	msgbox MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 23 "data/maps/MossdeepCity_House1/scripts.pory"
 	end
 # 24 "data/maps/MossdeepCity_House1/scripts.pory"

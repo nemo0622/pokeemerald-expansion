@@ -17,7 +17,7 @@ FortreeCity_House3_EventScript_Maniac::
 # 9 "data/maps/FortreeCity_House3/scripts.pory"
 FortreeCity_House3_EventScript_SchoolKidM::
 # 10 "data/maps/FortreeCity_House3/scripts.pory"
-	msgbox FortreeCity_House3_Text_OhYouHavePokedex, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House3_Text_OhYouHavePokedex, MSGBOX_NPC, MUGSHOT_SCHOOLKIDM
 # 11 "data/maps/FortreeCity_House3/scripts.pory"
 	end
 # 12 "data/maps/FortreeCity_House3/scripts.pory"

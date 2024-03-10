@@ -369,7 +369,7 @@ Route128_EventScript_Isaiah::
 # 185 "data/maps/Route128/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route128_EventScript_RematchIsaiah
 # 186 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_IsaiahPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_IsaiahPostBattle, MSGBOX_DEFAULT, MUGSHOT_SWIMMERM
 # 187 "data/maps/Route128/scripts.pory"
 	release
 # 188 "data/maps/Route128/scripts.pory"
@@ -383,7 +383,7 @@ Route128_EventScript_RegisterIsaiah::
 # 192 "data/maps/Route128/scripts.pory"
 	waitmovement 0
 # 193 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_IsaiahRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_IsaiahRegister, MSGBOX_DEFAULT, MUGSHOT_SWIMMERM
 # 194 "data/maps/Route128/scripts.pory"
 	register_matchcall TRAINER_ISAIAH_1
 # 195 "data/maps/Route128/scripts.pory"
@@ -397,7 +397,7 @@ Route128_EventScript_RematchIsaiah::
 # 199 "data/maps/Route128/scripts.pory"
 	trainerbattle_rematch TRAINER_ISAIAH_1, Route128_Text_IsaiahRematchIntro, Route128_Text_IsaiahRematchDefeat
 # 200 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_IsaiahPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route128_Text_IsaiahPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 201 "data/maps/Route128/scripts.pory"
 	end
 # 202 "data/maps/Route128/scripts.pory"
@@ -411,7 +411,7 @@ Route128_EventScript_Katelyn::
 # 206 "data/maps/Route128/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route128_EventScript_RematchKatelyn
 # 207 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_KatelynPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_KatelynPostBattle, MSGBOX_DEFAULT, MUGSHOT_SWIMMERF
 # 208 "data/maps/Route128/scripts.pory"
 	release
 # 209 "data/maps/Route128/scripts.pory"
@@ -425,7 +425,7 @@ Route128_EventScript_RegisterKatelyn::
 # 213 "data/maps/Route128/scripts.pory"
 	waitmovement 0
 # 214 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_KatelynRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route128_Text_KatelynRegister, MSGBOX_DEFAULT, MUGSHOT_SWIMMERF
 # 215 "data/maps/Route128/scripts.pory"
 	register_matchcall TRAINER_KATELYN_1
 # 216 "data/maps/Route128/scripts.pory"
@@ -439,7 +439,7 @@ Route128_EventScript_RematchKatelyn::
 # 220 "data/maps/Route128/scripts.pory"
 	trainerbattle_rematch TRAINER_KATELYN_1, Route128_Text_KatelynRematchIntro, Route128_Text_KatelynRematchDefeat
 # 221 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_KatelynPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route128_Text_KatelynPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 222 "data/maps/Route128/scripts.pory"
 	end
 # 223 "data/maps/Route128/scripts.pory"
@@ -449,7 +449,7 @@ Route128_EventScript_Alexa::
 # 225 "data/maps/Route128/scripts.pory"
 	trainerbattle_single TRAINER_ALEXA, Route128_Text_AlexaIntro, Route128_Text_AlexaDefeat
 # 226 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_AlexaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route128_Text_AlexaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 227 "data/maps/Route128/scripts.pory"
 	end
 # 228 "data/maps/Route128/scripts.pory"
@@ -479,7 +479,7 @@ Route128_EventScript_Harrison::
 # 240 "data/maps/Route128/scripts.pory"
 	trainerbattle_single TRAINER_HARRISON, Route128_Text_HarrisonIntro, Route128_Text_HarrisonDefeat
 # 241 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_HarrisonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route128_Text_HarrisonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 242 "data/maps/Route128/scripts.pory"
 	end
 # 243 "data/maps/Route128/scripts.pory"
@@ -489,7 +489,7 @@ Route128_EventScript_Carlee::
 # 245 "data/maps/Route128/scripts.pory"
 	trainerbattle_single TRAINER_CARLEE, Route128_Text_CarleeIntro, Route128_Text_CarleeDefeat
 # 246 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_CarleePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route128_Text_CarleePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 247 "data/maps/Route128/scripts.pory"
 	end
 # 248 "data/maps/Route128/scripts.pory"

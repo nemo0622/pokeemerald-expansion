@@ -17,7 +17,7 @@ LilycoveCity_DepartmentStore_4F_EventScript_Gentleman::
 # 9 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 LilycoveCity_DepartmentStore_4F_EventScript_Woman::
 # 10 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	msgbox LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 11 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	end
 # 12 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"

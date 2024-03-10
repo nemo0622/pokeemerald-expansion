@@ -15,7 +15,7 @@ MauvilleCity_House1_EventScript_RockSmashDude::
 # 8 "data/maps/MauvilleCity_House1/scripts.pory"
 	goto_if_set FLAG_RECEIVED_HM_ROCK_SMASH, MauvilleCity_House1_EventScript_ReceivedRockSmash
 # 9 "data/maps/MauvilleCity_House1/scripts.pory"
-	msgbox MauvilleCity_House1_Text_ImRockSmashDudeTakeThis, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_House1_Text_ImRockSmashDudeTakeThis, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 10 "data/maps/MauvilleCity_House1/scripts.pory"
 	giveitem ITEM_HM_ROCK_SMASH
 # 11 "data/maps/MauvilleCity_House1/scripts.pory"
@@ -23,7 +23,7 @@ MauvilleCity_House1_EventScript_RockSmashDude::
 # 12 "data/maps/MauvilleCity_House1/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY
 # 13 "data/maps/MauvilleCity_House1/scripts.pory"
-	msgbox MauvilleCity_House1_Text_ExplainRockSmash, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_House1_Text_ExplainRockSmash, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 14 "data/maps/MauvilleCity_House1/scripts.pory"
 	release
 # 15 "data/maps/MauvilleCity_House1/scripts.pory"
@@ -33,7 +33,7 @@ MauvilleCity_House1_EventScript_RockSmashDude::
 # 17 "data/maps/MauvilleCity_House1/scripts.pory"
 MauvilleCity_House1_EventScript_ReceivedRockSmash::
 # 18 "data/maps/MauvilleCity_House1/scripts.pory"
-	msgbox MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 19 "data/maps/MauvilleCity_House1/scripts.pory"
 	release
 # 20 "data/maps/MauvilleCity_House1/scripts.pory"

@@ -3,7 +3,7 @@ OldaleTown_House1_MapScripts::
 	.byte 0
 
 OldaleTown_House1_EventScript_Woman::
-	msgbox OldaleTown_House1_Text_LeftPokemonGoesOutFirst, MSGBOX_NPC
+	msgbox_mugshot OldaleTown_House1_Text_LeftPokemonGoesOutFirst, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 OldaleTown_House1_Text_LeftPokemonGoesOutFirst:

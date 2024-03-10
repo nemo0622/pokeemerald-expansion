@@ -43,7 +43,7 @@ MossdeepCity_PokemonCenter_2F_EventScript_RecordCorner::
 # 22 "data/maps/MossdeepCity_PokemonCenter_2F/scripts.pory"
 MossdeepCity_PokemonCenter_2F_EventScript_Woman5::
 # 23 "data/maps/MossdeepCity_PokemonCenter_2F/scripts.pory"
-	msgbox MossdeepCity_PokemonCenter_2F_Text_Woman5, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_PokemonCenter_2F_Text_Woman5, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 24 "data/maps/MossdeepCity_PokemonCenter_2F/scripts.pory"
 	end
 # 25 "data/maps/MossdeepCity_PokemonCenter_2F/scripts.pory"

@@ -56,7 +56,7 @@ LilycoveCity_DepartmentStore_3F_EventScript_PokefanM::
 	end
 
 LilycoveCity_DepartmentStore_3F_EventScript_Woman::
-	msgbox LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon, MSGBOX_NPC, MUGSHOT_WOMAN5
 	end
 
 LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon:

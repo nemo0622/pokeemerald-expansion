@@ -125,7 +125,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_StoneTablet::
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_SchoolKidM::
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts, MSGBOX_NPC, MUGSHOT_SCHOOLKIDM
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_Artist1::
@@ -137,11 +137,11 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_NinjaBoy::
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_Woman1::
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable, MSGBOX_SIGN, MUGSHOT_WOMAN4
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_Woman2::
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_PsychicM::

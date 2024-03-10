@@ -3,7 +3,7 @@ SafariZone_Southwest_MapScripts::
 	.byte 0
 
 SafariZone_Southwest_EventScript_Woman::
-	msgbox SafariZone_Southwest_Text_Woman, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Southwest_Text_Woman, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 SafariZone_Southwest_EventScript_RestHouseSign::

@@ -51,7 +51,7 @@ SlateportCity_PokemonCenter_1F_EventScript_Sailor::
 # 26 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
 SlateportCity_PokemonCenter_1F_EventScript_Woman::
 # 27 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
-	msgbox SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 28 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
 	end
 # 29 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"

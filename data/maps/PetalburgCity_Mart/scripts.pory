@@ -56,7 +56,7 @@ PetalburgCity_Mart_Pokemart_Expanded:
 	end
 
 PetalburgCity_Mart_EventScript_Woman::
-	msgbox PetalburgCity_Mart_Text_WeakWillGrowStronger, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Mart_Text_WeakWillGrowStronger, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 PetalburgCity_Mart_EventScript_Boy::

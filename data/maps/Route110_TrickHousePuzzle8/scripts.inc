@@ -43,7 +43,7 @@ Route110_TrickHousePuzzle8_EventScript_Keira::
 # 22 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"
 	trainerbattle_single TRAINER_KEIRA, Route110_TrickHousePuzzle8_Text_KeiraIntro, Route110_TrickHousePuzzle8_Text_KeiraDefeat
 # 23 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"
-	msgbox Route110_TrickHousePuzzle8_Text_KeiraPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route110_TrickHousePuzzle8_Text_KeiraPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 24 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"
 	end
 # 25 "data/maps/Route110_TrickHousePuzzle8/scripts.pory"

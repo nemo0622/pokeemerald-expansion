@@ -17,7 +17,7 @@ PacifidlogTown_House4_EventScript_LittleGirl::
 # 9 "data/maps/PacifidlogTown_House4/scripts.pory"
 PacifidlogTown_House4_EventScript_Woman::
 # 10 "data/maps/PacifidlogTown_House4/scripts.pory"
-	msgbox PacifidlogTown_House4_Text_PeopleSawHighFlyingPokemon, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_House4_Text_PeopleSawHighFlyingPokemon, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 11 "data/maps/PacifidlogTown_House4/scripts.pory"
 	end
 # 12 "data/maps/PacifidlogTown_House4/scripts.pory"

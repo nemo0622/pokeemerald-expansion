@@ -127,7 +127,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_DepthMeasuringMachine::
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron1::
-	msgbox SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling, MSGBOX_NPC, MUGSHOT_WOMAN5
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron2::

@@ -199,7 +199,7 @@ PetalburgCity_EventScript_Boy::
 # 100 "data/maps/PetalburgCity/scripts.pory"
 PetalburgCity_EventScript_WallysMom::
 # 101 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_Text_WhereIsWally, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Text_WhereIsWally, MSGBOX_NPC, MUGSHOT_WOMAN4
 # 102 "data/maps/PetalburgCity/scripts.pory"
 	end
 # 103 "data/maps/PetalburgCity/scripts.pory"

@@ -7,7 +7,7 @@ PacifidlogTown_House4_EventScript_LittleGirl::
 	end
 
 PacifidlogTown_House4_EventScript_Woman::
-	msgbox PacifidlogTown_House4_Text_PeopleSawHighFlyingPokemon, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_House4_Text_PeopleSawHighFlyingPokemon, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 PacifidlogTown_House4_EventScript_Boy::

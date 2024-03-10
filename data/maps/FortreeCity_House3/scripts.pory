@@ -7,7 +7,7 @@ FortreeCity_House3_EventScript_Maniac::
 	end
 
 FortreeCity_House3_EventScript_SchoolKidM::
-	msgbox FortreeCity_House3_Text_OhYouHavePokedex, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House3_Text_OhYouHavePokedex, MSGBOX_NPC, MUGSHOT_SCHOOLKIDM
 	end
 
 FortreeCity_House3_Text_MetStevenHadAmazingPokemon:

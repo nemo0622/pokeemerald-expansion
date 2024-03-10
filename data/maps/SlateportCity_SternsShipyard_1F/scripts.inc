@@ -111,7 +111,7 @@ SlateportCity_SternsShipyard_1F_EventScript_NeedVeteran::
 # 56 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 SlateportCity_SternsShipyard_1F_EventScript_Scientist1::
 # 57 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing, MSGBOX_NPC, MUGSHOT_SCIENTIST
 # 58 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	end
 # 59 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
@@ -119,7 +119,7 @@ SlateportCity_SternsShipyard_1F_EventScript_Scientist1::
 # 60 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 SlateportCity_SternsShipyard_1F_EventScript_Scientist2::
 # 61 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily, MSGBOX_NPC, MUGSHOT_SCIENTIST
 # 62 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	end
 # 63 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"

@@ -22,7 +22,7 @@ AbandonedShip_Corridors_B1F_EventScript_UnlockStorageRoom::
 	return
 
 AbandonedShip_Corridors_B1F_EventScript_TuberM::
-	msgbox AbandonedShip_Corridors_B1F_Text_YayItsAShip, MSGBOX_NPC
+	msgbox_mugshot AbandonedShip_Corridors_B1F_Text_YayItsAShip, MSGBOX_NPC, MUGSHOT_TUBERM
 	end
 
 AbandonedShip_Corridors_B1F_EventScript_StorageRoomDoor::

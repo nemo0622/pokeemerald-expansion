@@ -115,7 +115,7 @@ PetalburgCity_Mart_Pokemart_Expanded:
 # 58 "data/maps/PetalburgCity_Mart/scripts.pory"
 PetalburgCity_Mart_EventScript_Woman::
 # 59 "data/maps/PetalburgCity_Mart/scripts.pory"
-	msgbox PetalburgCity_Mart_Text_WeakWillGrowStronger, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Mart_Text_WeakWillGrowStronger, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 60 "data/maps/PetalburgCity_Mart/scripts.pory"
 	end
 # 61 "data/maps/PetalburgCity_Mart/scripts.pory"

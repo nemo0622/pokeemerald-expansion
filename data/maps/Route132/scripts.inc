@@ -11,7 +11,7 @@ Route132_EventScript_Gilbert::
 # 6 "data/maps/Route132/scripts.pory"
 	trainerbattle_single TRAINER_GILBERT, Route132_Text_GilbertIntro, Route132_Text_GilbertDefeat
 # 7 "data/maps/Route132/scripts.pory"
-	msgbox Route132_Text_GilbertPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_GilbertPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 8 "data/maps/Route132/scripts.pory"
 	end
 # 9 "data/maps/Route132/scripts.pory"
@@ -21,7 +21,7 @@ Route132_EventScript_Dana::
 # 11 "data/maps/Route132/scripts.pory"
 	trainerbattle_single TRAINER_DANA, Route132_Text_DanaIntro, Route132_Text_DanaDefeat
 # 12 "data/maps/Route132/scripts.pory"
-	msgbox Route132_Text_DanaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_DanaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 13 "data/maps/Route132/scripts.pory"
 	end
 # 14 "data/maps/Route132/scripts.pory"
@@ -61,7 +61,7 @@ Route132_EventScript_Darcy::
 # 31 "data/maps/Route132/scripts.pory"
 	trainerbattle_single TRAINER_DARCY, Route132_Text_DarcyIntro, Route132_Text_DarcyDefeat
 # 32 "data/maps/Route132/scripts.pory"
-	msgbox Route132_Text_DarcyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route132_Text_DarcyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 33 "data/maps/Route132/scripts.pory"
 	end
 # 34 "data/maps/Route132/scripts.pory"

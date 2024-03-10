@@ -43,7 +43,7 @@ FortreeCity_EventScript_Woman::
 # 22 "data/maps/FortreeCity/scripts.pory"
 	goto_if_set FLAG_KECLEON_FLED_FORTREE, FortreeCity_EventScript_WomanGymAccessible
 # 23 "data/maps/FortreeCity/scripts.pory"
-	msgbox FortreeCity_Text_SomethingBlockingGym, MSGBOX_DEFAULT
+	msgbox_mugshot FortreeCity_Text_SomethingBlockingGym, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 24 "data/maps/FortreeCity/scripts.pory"
 	release
 # 25 "data/maps/FortreeCity/scripts.pory"
@@ -53,7 +53,7 @@ FortreeCity_EventScript_Woman::
 # 27 "data/maps/FortreeCity/scripts.pory"
 FortreeCity_EventScript_WomanGymAccessible::
 # 28 "data/maps/FortreeCity/scripts.pory"
-	msgbox FortreeCity_Text_ThisTimeIllBeatWinona, MSGBOX_DEFAULT
+	msgbox_mugshot FortreeCity_Text_ThisTimeIllBeatWinona, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 29 "data/maps/FortreeCity/scripts.pory"
 	release
 # 30 "data/maps/FortreeCity/scripts.pory"

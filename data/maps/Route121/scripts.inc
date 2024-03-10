@@ -17,7 +17,7 @@ Route121_MapScripts::
 # 9 "data/maps/Route121/scripts.pory"
 Route121_EventScript_Woman::
 # 10 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_AheadLoomsMtPyre, MSGBOX_NPC
+	msgbox_mugshot Route121_Text_AheadLoomsMtPyre, MSGBOX_NPC, MUGSHOT_WOMAN3
 # 11 "data/maps/Route121/scripts.pory"
 	end
 # 12 "data/maps/Route121/scripts.pory"
@@ -291,7 +291,7 @@ Route121_EventScript_Pat::
 # 146 "data/maps/Route121/scripts.pory"
 	trainerbattle_single TRAINER_PAT, Route121_Text_PatIntro, Route121_Text_PatDefeat
 # 147 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_PatPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_PatPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 148 "data/maps/Route121/scripts.pory"
 	end
 # 149 "data/maps/Route121/scripts.pory"
@@ -315,7 +315,7 @@ Route121_EventScript_Cristin::
 # 158 "data/maps/Route121/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchCristin
 # 159 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_CristinPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route121_Text_CristinPostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 160 "data/maps/Route121/scripts.pory"
 	release
 # 161 "data/maps/Route121/scripts.pory"
@@ -329,7 +329,7 @@ Route121_EventScript_RegisterCristin::
 # 165 "data/maps/Route121/scripts.pory"
 	waitmovement 0
 # 166 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_CristinRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route121_Text_CristinRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 167 "data/maps/Route121/scripts.pory"
 	register_matchcall TRAINER_CRISTIN_1
 # 168 "data/maps/Route121/scripts.pory"
@@ -343,7 +343,7 @@ Route121_EventScript_RematchCristin::
 # 172 "data/maps/Route121/scripts.pory"
 	trainerbattle_rematch TRAINER_CRISTIN_1, Route121_Text_CristinRematchIntro, Route121_Text_CristinRematchDefeat
 # 173 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_CristinPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route121_Text_CristinPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 174 "data/maps/Route121/scripts.pory"
 	end
 # 175 "data/maps/Route121/scripts.pory"

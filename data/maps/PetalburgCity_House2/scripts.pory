@@ -7,7 +7,7 @@ PetalburgCity_House2_EventScript_Woman::
 	end
 
 PetalburgCity_House2_EventScript_SchoolKid::
-	msgbox PetalburgCity_House2_Text_BattledNormanOnce, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_House2_Text_BattledNormanOnce, MSGBOX_NPC, MUGSHOT_SCHOOLKIDM
 	end
 
 PetalburgCity_House2_Text_NormanBecameGymLeader:

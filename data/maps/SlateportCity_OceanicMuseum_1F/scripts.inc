@@ -257,7 +257,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_DepthMeasuringMachine::
 # 129 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron1::
 # 130 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	msgbox SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 131 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	end
 # 132 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"

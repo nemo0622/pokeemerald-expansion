@@ -320,7 +320,7 @@ Route109_EventScript_SeashoreHouseGirl::
 Route109_EventScript_SandCastleBoy::
 	lock
 	faceplayer
-	msgbox Route109_Text_SandCastleTakingLongTime, MSGBOX_DEFAULT
+	msgbox_mugshot Route109_Text_SandCastleTakingLongTime, MSGBOX_DEFAULT, MUGSHOT_TUBERM
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -332,7 +332,7 @@ Route109_EventScript_SoftSandGirl::
 	faceplayer
 	special GetPlayerBigGuyGirlString
 	goto_if_set FLAG_RECEIVED_SOFT_SAND, Route109_EventScript_AlreadyReceivedSoftSand
-	msgbox Route109_Text_YouCanHaveThis, MSGBOX_DEFAULT
+	msgbox_mugshot Route109_Text_YouCanHaveThis, MSGBOX_DEFAULT, MUGSHOT_TUBERF
 	giveitem ITEM_SOFT_SAND
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
 	closemessage
@@ -343,7 +343,7 @@ Route109_EventScript_SoftSandGirl::
 	end
 
 Route109_EventScript_AlreadyReceivedSoftSand::
-	msgbox Route109_Text_WereGoingToMakeBigCastle, MSGBOX_DEFAULT
+	msgbox_mugshot Route109_Text_WereGoingToMakeBigCastle, MSGBOX_DEFAULT, MUGSHOT_TUBERF
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -377,12 +377,12 @@ Route109_EventScript_TrainerTipsSign::
 
 Route109_EventScript_David::
 	trainerbattle_single TRAINER_DAVID, Route109_Text_DavidIntro, Route109_Text_DavidDefeated
-	msgbox Route109_Text_DavidPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_DavidPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 	end
 
 Route109_EventScript_Alice::
 	trainerbattle_single TRAINER_ALICE, Route109_Text_AliceIntro, Route109_Text_AliceDefeated
-	msgbox Route109_Text_AlicePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_AlicePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 	end
 
 Route109_EventScript_Huey::
@@ -399,52 +399,52 @@ Route109_EventScript_Ricky::
 	trainerbattle_single TRAINER_RICKY_1, Route109_Text_RickyIntro, Route109_Text_RickyDefeated, Route109_EventScript_RickyRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route109_EventScript_RickyRematch
-	msgbox Route109_Text_RickyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route109_Text_RickyPostBattle, MSGBOX_DEFAULT, MUGSHOT_TUBERM
 	release
 	end
 
 Route109_EventScript_RickyRegisterMatchCallAfterBattle::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route109_Text_RickyRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route109_Text_RickyRegister, MSGBOX_DEFAULT, MUGSHOT_TUBERM
 	register_matchcall TRAINER_RICKY_1
 	release
 	end
 
 Route109_EventScript_RickyRematch::
 	trainerbattle_rematch TRAINER_RICKY_1, Route109_Text_RickyRematchIntro, Route109_Text_RickyRematchDefeated
-	msgbox Route109_Text_RickyRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_RickyRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TUBERM
 	end
 
 Route109_EventScript_Lola::
 	trainerbattle_single TRAINER_LOLA_1, Route109_Text_LolaIntro, Route109_Text_LolaDefeated, Route109_EventScript_LolaRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route109_EventScript_LolaRematch
-	msgbox Route109_Text_LolaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route109_Text_LolaPostBattle, MSGBOX_DEFAULT, MUGSHOT_TUBERF
 	release
 	end
 
 Route109_EventScript_LolaRegisterMatchCallAfterBattle::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route109_Text_LolaRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route109_Text_LolaRegister, MSGBOX_DEFAULT, MUGSHOT_TUBERF
 	register_matchcall TRAINER_LOLA_1
 	release
 	end
 
 Route109_EventScript_LolaRematch::
 	trainerbattle_rematch TRAINER_LOLA_1, Route109_Text_LolaRematchIntro, Route109_Text_LolaRematchDefeated
-	msgbox Route109_Text_LolaRematchPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_LolaRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TUBERF
 	end
 
 Route109_EventScript_Austina::
 	trainerbattle_single TRAINER_AUSTINA, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated
-	msgbox Route109_Text_AustinaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_AustinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TUBERF
 	end
 
 Route109_EventScript_Gwen::
 	trainerbattle_single TRAINER_GWEN, Route109_Text_GwenIntro, Route109_Text_GwenDefeated
-	msgbox Route109_Text_GwenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_GwenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TUBERF
 	end
 
 Route109_EventScript_Carter::
@@ -459,17 +459,17 @@ Route109_EventScript_Paul::
 
 Route109_EventScript_Mel::
 	trainerbattle_double TRAINER_MEL_AND_PAUL, Route109_Text_MelIntro, Route109_Text_MelDefeated, Route109_Text_MelNotEnoughPokemon
-	msgbox Route109_Text_MelPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_MelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN4
 	end
 
 Route109_EventScript_Chandler::
 	trainerbattle_single TRAINER_CHANDLER, Route109_Text_ChandlerIntro, Route109_Text_ChandlerDefeated
-	msgbox Route109_Text_ChandlerPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_ChandlerPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TUBERM
 	end
 
 Route109_EventScript_Hailey::
 	trainerbattle_single TRAINER_HAILEY, Route109_Text_HaileyIntro, Route109_Text_HaileyDefeated
-	msgbox Route109_Text_HaileyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_Text_HaileyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TUBERF
 	end
 
 Route109_EventScript_Elijah::

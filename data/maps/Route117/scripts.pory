@@ -16,7 +16,7 @@ Route117_EventScript_StopMoveDayCareMan::
 	return
 
 Route117_EventScript_Woman::
-	msgbox Route117_Text_ArentTheseFlowersPretty, MSGBOX_NPC
+	msgbox_mugshot Route117_Text_ArentTheseFlowersPretty, MSGBOX_NPC, MUGSHOT_WOMAN1
 	end
 
 Route117_EventScript_LittleBoy::
@@ -64,21 +64,21 @@ Route117_EventScript_Lydia::
 	trainerbattle_single TRAINER_LYDIA_1, Route117_Text_LydiaIntro, Route117_Text_LydiaDefeat, Route117_EventScript_RegisterLydia
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchLydia
-	msgbox Route117_Text_LydiaPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_LydiaPostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
 Route117_EventScript_RegisterLydia::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route117_Text_LydiaRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route117_Text_LydiaRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	register_matchcall TRAINER_LYDIA_1
 	release
 	end
 
 Route117_EventScript_RematchLydia::
 	trainerbattle_rematch TRAINER_LYDIA_1, Route117_Text_LydiaRematchIntro, Route117_Text_LydiaRematchDefeat
-	msgbox Route117_Text_LydiaPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route117_Text_LydiaPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 	end
 
 Route117_EventScript_Dylan::

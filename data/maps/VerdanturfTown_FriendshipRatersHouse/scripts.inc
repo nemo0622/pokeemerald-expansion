@@ -13,7 +13,7 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_FriendshipRater::
 # 7 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 	faceplayer
 # 8 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 9 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 	specialvar VAR_RESULT, GetLeadMonFriendshipScore
 # 10 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
@@ -41,7 +41,7 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_FriendshipRater::
 # 21 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 VerdanturfTown_FriendshipRatersHouse_EventScript_DetestsYou::
 # 22 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 23 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 	release
 # 24 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
@@ -51,7 +51,7 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_DetestsYou::
 # 26 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 VerdanturfTown_FriendshipRatersHouse_EventScript_VeryWary::
 # 27 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_VeryWary, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_VeryWary, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 28 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 	release
 # 29 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
@@ -61,7 +61,7 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_VeryWary::
 # 31 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 VerdanturfTown_FriendshipRatersHouse_EventScript_NotUsedToYou::
 # 32 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_NotUsedToYou, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_NotUsedToYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 33 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 	release
 # 34 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
@@ -71,7 +71,7 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_NotUsedToYou::
 # 36 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 VerdanturfTown_FriendshipRatersHouse_EventScript_GettingUsedToYou::
 # 37 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 38 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 	release
 # 39 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
@@ -81,7 +81,7 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_GettingUsedToYou::
 # 41 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 VerdanturfTown_FriendshipRatersHouse_EventScript_LikesYouQuiteALot::
 # 42 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 43 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 	release
 # 44 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
@@ -91,7 +91,7 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_LikesYouQuiteALot::
 # 46 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 VerdanturfTown_FriendshipRatersHouse_EventScript_VeryHappy::
 # 47 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 48 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 	release
 # 49 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
@@ -101,7 +101,7 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_VeryHappy::
 # 51 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 VerdanturfTown_FriendshipRatersHouse_EventScript_AdoresYou::
 # 52 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 53 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"
 	release
 # 54 "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.pory"

@@ -293,7 +293,7 @@ SafariZone_Northeast_EventScript_Boy::
 # 147 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Northeast_EventScript_Woman::
 # 148 "data/maps/SafariZone_South/scripts.pory"
-	msgbox SafariZone_Northeast_Text_Woman, MSGBOX_NPC
+	msgbox_mugshot SafariZone_Northeast_Text_Woman, MSGBOX_NPC, MUGSHOT_WOMAN1
 # 149 "data/maps/SafariZone_South/scripts.pory"
 	end
 # 150 "data/maps/SafariZone_South/scripts.pory"

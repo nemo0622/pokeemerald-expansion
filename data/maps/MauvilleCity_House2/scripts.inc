@@ -15,7 +15,7 @@ MauvilleCity_House2_EventScript_Woman::
 # 8 "data/maps/MauvilleCity_House2/scripts.pory"
 	goto_if_set FLAG_RECEIVED_COIN_CASE, MauvilleCity_House2_EventScript_ReceivedCoinCase
 # 9 "data/maps/MauvilleCity_House2/scripts.pory"
-	msgbox MauvilleCity_House2_Text_BuyHarborMailAtSlateport, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_House2_Text_BuyHarborMailAtSlateport, MSGBOX_DEFAULT, MUGSHOT_WOMAN3
 # 10 "data/maps/MauvilleCity_House2/scripts.pory"
 	checkitem ITEM_HARBOR_MAIL
 # 11 "data/maps/MauvilleCity_House2/scripts.pory"
@@ -39,7 +39,7 @@ MauvilleCity_House2_EventScript_AskToTradeForHarborMail::
 # 20 "data/maps/MauvilleCity_House2/scripts.pory"
 	waitmovement 0
 # 21 "data/maps/MauvilleCity_House2/scripts.pory"
-	msgbox MauvilleCity_House2_Text_TradeHarborMailForCoinCase, MSGBOX_YESNO
+	msgbox_mugshot MauvilleCity_House2_Text_TradeHarborMailForCoinCase, MSGBOX_YESNO, MUGSHOT_WOMAN3
 # 22 "data/maps/MauvilleCity_House2/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, MauvilleCity_House2_EventScript_AcceptTrade
 # 23 "data/maps/MauvilleCity_House2/scripts.pory"
@@ -51,7 +51,7 @@ MauvilleCity_House2_EventScript_AskToTradeForHarborMail::
 # 26 "data/maps/MauvilleCity_House2/scripts.pory"
 MauvilleCity_House2_EventScript_AcceptTrade::
 # 27 "data/maps/MauvilleCity_House2/scripts.pory"
-	msgbox MauvilleCity_House2_Text_IllTradeYouCoinCase, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_House2_Text_IllTradeYouCoinCase, MSGBOX_DEFAULT, MUGSHOT_WOMAN3
 # 28 "data/maps/MauvilleCity_House2/scripts.pory"
 	giveitem ITEM_COIN_CASE
 # 29 "data/maps/MauvilleCity_House2/scripts.pory"
@@ -69,7 +69,7 @@ MauvilleCity_House2_EventScript_AcceptTrade::
 # 35 "data/maps/MauvilleCity_House2/scripts.pory"
 MauvilleCity_House2_EventScript_ReceivedCoinCase::
 # 36 "data/maps/MauvilleCity_House2/scripts.pory"
-	msgbox MauvilleCity_House2_Text_UseCoinCaseAtGameCorner, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_House2_Text_UseCoinCaseAtGameCorner, MSGBOX_DEFAULT, MUGSHOT_WOMAN3
 # 37 "data/maps/MauvilleCity_House2/scripts.pory"
 	release
 # 38 "data/maps/MauvilleCity_House2/scripts.pory"
@@ -79,7 +79,7 @@ MauvilleCity_House2_EventScript_ReceivedCoinCase::
 # 40 "data/maps/MauvilleCity_House2/scripts.pory"
 MauvilleCity_House2_EventScript_DeclineTrade::
 # 41 "data/maps/MauvilleCity_House2/scripts.pory"
-	msgbox MauvilleCity_House2_Text_ThatsDisappointing, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_House2_Text_ThatsDisappointing, MSGBOX_DEFAULT, MUGSHOT_WOMAN3
 # 42 "data/maps/MauvilleCity_House2/scripts.pory"
 	release
 # 43 "data/maps/MauvilleCity_House2/scripts.pory"

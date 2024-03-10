@@ -31,7 +31,7 @@ VictoryRoad_B2F_EventScript_Caroline::
 # 16 "data/maps/VictoryRoad_B2F/scripts.pory"
 	trainerbattle_single TRAINER_CAROLINE, VictoryRoad_B2F_Text_CarolineIntro, VictoryRoad_B2F_Text_CarolineDefeat
 # 17 "data/maps/VictoryRoad_B2F/scripts.pory"
-	msgbox VictoryRoad_B2F_Text_CarolinePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B2F_Text_CarolinePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 18 "data/maps/VictoryRoad_B2F/scripts.pory"
 	end
 # 19 "data/maps/VictoryRoad_B2F/scripts.pory"
@@ -41,7 +41,7 @@ VictoryRoad_B2F_EventScript_Julie::
 # 21 "data/maps/VictoryRoad_B2F/scripts.pory"
 	trainerbattle_single TRAINER_JULIE, VictoryRoad_B2F_Text_JulieIntro, VictoryRoad_B2F_Text_JulieDefeat
 # 22 "data/maps/VictoryRoad_B2F/scripts.pory"
-	msgbox VictoryRoad_B2F_Text_JuliePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B2F_Text_JuliePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 23 "data/maps/VictoryRoad_B2F/scripts.pory"
 	end
 # 24 "data/maps/VictoryRoad_B2F/scripts.pory"
@@ -61,7 +61,7 @@ VictoryRoad_B2F_EventScript_Dianne::
 # 31 "data/maps/VictoryRoad_B2F/scripts.pory"
 	trainerbattle_single TRAINER_DIANNE, VictoryRoad_B2F_Text_DianneIntro, VictoryRoad_B2F_Text_DianneDefeat
 # 32 "data/maps/VictoryRoad_B2F/scripts.pory"
-	msgbox VictoryRoad_B2F_Text_DiannePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B2F_Text_DiannePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 33 "data/maps/VictoryRoad_B2F/scripts.pory"
 	end
 # 34 "data/maps/VictoryRoad_B2F/scripts.pory"

@@ -43,13 +43,13 @@ Route104_PrettyPetalFlowerShop_EventScript_ShopOwner::
 # 22 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	goto_if_set FLAG_TEMP_1, Route104_PrettyPetalFlowerShop_EventScript_SellDecorations
 # 23 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_ThisIsPrettyPetalFlowerShop, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_ThisIsPrettyPetalFlowerShop, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 24 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	goto_if_set FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_PrettyPetalFlowerShop_EventScript_AlreadyMet
 # 25 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	setflag FLAG_MET_PRETTY_PETAL_SHOP_OWNER
 # 26 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_IntroLearnAboutBerries, MSGBOX_YESNO
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_IntroLearnAboutBerries, MSGBOX_YESNO, MUGSHOT_WOMAN2
 # 27 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	call_if_eq VAR_RESULT, YES, Route104_PrettyPetalFlowerShop_EventScript_ExplainBerries
 # 28 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
@@ -63,7 +63,7 @@ Route104_PrettyPetalFlowerShop_EventScript_ShopOwner::
 # 32 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 Route104_PrettyPetalFlowerShop_EventScript_AlreadyMet::
 # 33 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_LearnAboutBerries, MSGBOX_YESNO
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_LearnAboutBerries, MSGBOX_YESNO, MUGSHOT_WOMAN2
 # 34 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	call_if_eq VAR_RESULT, YES, Route104_PrettyPetalFlowerShop_EventScript_ExplainBerries
 # 35 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
@@ -77,7 +77,7 @@ Route104_PrettyPetalFlowerShop_EventScript_AlreadyMet::
 # 39 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 Route104_PrettyPetalFlowerShop_EventScript_ExplainBerries::
 # 40 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_BerriesExplanation, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_BerriesExplanation, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 41 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	return
 # 42 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
@@ -85,7 +85,7 @@ Route104_PrettyPetalFlowerShop_EventScript_ExplainBerries::
 # 43 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 Route104_PrettyPetalFlowerShop_EventScript_DontExplainBerries::
 # 44 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_FlowersBringHappiness, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_PrettyPetalFlowerShop_Text_FlowersBringHappiness, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 45 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	return
 # 46 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"

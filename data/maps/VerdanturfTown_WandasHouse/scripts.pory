@@ -44,17 +44,17 @@ VerdanturfTown_WandasHouse_EventScript_Wanda::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, VerdanturfTown_WandasHouse_EventScript_WandaDontWorry
 	goto_if_set FLAG_DEFEATED_WALLY_MAUVILLE, VerdanturfTown_WandasHouse_EventScript_MeetWanda
-	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
 VerdanturfTown_WandasHouse_EventScript_MeetWanda::
-	msgbox VerdanturfTown_WandasHouse_Text_MeetWanda, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_MeetWanda, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
 VerdanturfTown_WandasHouse_EventScript_WandaDontWorry::
-	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 

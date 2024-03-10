@@ -19,7 +19,7 @@ MossdeepCity_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 MossdeepCity_PokemonCenter_1F_EventScript_Woman::
-	msgbox MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 MossdeepCity_PokemonCenter_1F_EventScript_Girl::

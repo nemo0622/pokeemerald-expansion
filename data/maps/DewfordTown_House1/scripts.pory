@@ -7,7 +7,7 @@ DewfordTown_House1_EventScript_Man::
 	end
 
 DewfordTown_House1_EventScript_Woman::
-	msgbox DewfordTown_House1_Text_LifeGoesSlowlyOnIsland, MSGBOX_NPC
+	msgbox_mugshot DewfordTown_House1_Text_LifeGoesSlowlyOnIsland, MSGBOX_NPC, MUGSHOT_WOMAN3
 	end
 
 DewfordTown_House1_EventScript_Zigzagoon::

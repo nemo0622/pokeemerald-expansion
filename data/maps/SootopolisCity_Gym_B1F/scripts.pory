@@ -14,7 +14,7 @@ SootopolisCity_Gym_B1F_EventScript_Crissy::
 
 SootopolisCity_Gym_B1F_EventScript_Brianna::
 	trainerbattle_single TRAINER_BRIANNA, SootopolisCity_Gym_B1F_Text_BriannaIntro, SootopolisCity_Gym_B1F_Text_BriannaDefeat
-	msgbox SootopolisCity_Gym_B1F_Text_BriannaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_BriannaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 	end
 
 SootopolisCity_Gym_B1F_EventScript_Connie::
@@ -49,7 +49,7 @@ SootopolisCity_Gym_B1F_EventScript_Annika::
 
 SootopolisCity_Gym_B1F_EventScript_Daphne::
 	trainerbattle_single TRAINER_DAPHNE, SootopolisCity_Gym_B1F_Text_DaphneIntro, SootopolisCity_Gym_B1F_Text_DaphneDefeat
-	msgbox SootopolisCity_Gym_B1F_Text_DaphnePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_DaphnePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 	end
 
 SootopolisCity_Gym_B1F_Text_AndreaIntro:

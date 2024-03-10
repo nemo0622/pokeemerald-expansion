@@ -653,7 +653,7 @@ Route120_EventScript_Jennifer::
 # 327 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_JENNIFER, Route120_Text_JenniferIntro, Route120_Text_JenniferDefeat
 # 328 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 329 "data/maps/Route120/scripts.pory"
 	end
 # 330 "data/maps/Route120/scripts.pory"
@@ -673,7 +673,7 @@ Route120_EventScript_Clarissa::
 # 337 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_CLARISSA, Route120_Text_ClarissaIntro, Route120_Text_ClarissaDefeat
 # 338 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_ClarissaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_ClarissaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 339 "data/maps/Route120/scripts.pory"
 	end
 # 340 "data/maps/Route120/scripts.pory"
@@ -683,7 +683,7 @@ Route120_EventScript_Angelica::
 # 342 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_ANGELICA, Route120_Text_AngelicaIntro, Route120_Text_AngelicaDefeat
 # 343 "data/maps/Route120/scripts.pory"
-	msgbox Route120_Text_AngelicaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_AngelicaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 344 "data/maps/Route120/scripts.pory"
 	end
 # 345 "data/maps/Route120/scripts.pory"

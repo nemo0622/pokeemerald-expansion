@@ -31,7 +31,7 @@ SootopolisCity_Gym_B1F_EventScript_Brianna::
 # 16 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	trainerbattle_single TRAINER_BRIANNA, SootopolisCity_Gym_B1F_Text_BriannaIntro, SootopolisCity_Gym_B1F_Text_BriannaDefeat
 # 17 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
-	msgbox SootopolisCity_Gym_B1F_Text_BriannaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_BriannaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 18 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	end
 # 19 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
@@ -101,7 +101,7 @@ SootopolisCity_Gym_B1F_EventScript_Daphne::
 # 51 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	trainerbattle_single TRAINER_DAPHNE, SootopolisCity_Gym_B1F_Text_DaphneIntro, SootopolisCity_Gym_B1F_Text_DaphneDefeat
 # 52 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
-	msgbox SootopolisCity_Gym_B1F_Text_DaphnePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SootopolisCity_Gym_B1F_Text_DaphnePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 53 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"
 	end
 # 54 "data/maps/SootopolisCity_Gym_B1F/scripts.pory"

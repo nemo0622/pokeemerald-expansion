@@ -1039,7 +1039,7 @@ Route111_EventScript_Brooke::
 # 520 "data/maps/Route111/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchBrooke
 # 521 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_BrookePostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_BrookePostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 522 "data/maps/Route111/scripts.pory"
 	release
 # 523 "data/maps/Route111/scripts.pory"
@@ -1053,7 +1053,7 @@ Route111_EventScript_RegisterBrooke::
 # 527 "data/maps/Route111/scripts.pory"
 	waitmovement 0
 # 528 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_BrookeRegister, MSGBOX_DEFAULT
+	msgbox_mugshot Route111_Text_BrookeRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 529 "data/maps/Route111/scripts.pory"
 	register_matchcall TRAINER_BROOKE_1
 # 530 "data/maps/Route111/scripts.pory"
@@ -1067,7 +1067,7 @@ Route111_EventScript_RematchBrooke::
 # 534 "data/maps/Route111/scripts.pory"
 	trainerbattle_rematch TRAINER_BROOKE_1, Route111_Text_BrookeRematchIntro, Route111_Text_BrookeRematchDefeat
 # 535 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_BrookePostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_BrookePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 536 "data/maps/Route111/scripts.pory"
 	end
 # 537 "data/maps/Route111/scripts.pory"
@@ -1107,7 +1107,7 @@ Route111_EventScript_Celina::
 # 554 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_CELINA, Route111_Text_CelinaIntro, Route111_Text_CelinaDefeat
 # 555 "data/maps/Route111/scripts.pory"
-	msgbox Route111_Text_CelinaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route111_Text_CelinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 556 "data/maps/Route111/scripts.pory"
 	end
 # 557 "data/maps/Route111/scripts.pory"

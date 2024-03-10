@@ -47,7 +47,7 @@ AbandonedShip_Corridors_B1F_EventScript_UnlockStorageRoom::
 # 24 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 AbandonedShip_Corridors_B1F_EventScript_TuberM::
 # 25 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
-	msgbox AbandonedShip_Corridors_B1F_Text_YayItsAShip, MSGBOX_NPC
+	msgbox_mugshot AbandonedShip_Corridors_B1F_Text_YayItsAShip, MSGBOX_NPC, MUGSHOT_TUBERM
 # 26 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"
 	end
 # 27 "data/maps/AbandonedShip_Corridors_B1F/scripts.pory"

@@ -93,7 +93,7 @@ Route123_EventScript_Wendy::
 # 47 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_WENDY, Route123_Text_WendyIntro, Route123_Text_WendyDefeat
 # 48 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_WendyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_WendyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 49 "data/maps/Route123/scripts.pory"
 	end
 # 50 "data/maps/Route123/scripts.pory"
@@ -113,7 +113,7 @@ Route123_EventScript_Violet::
 # 57 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_VIOLET, Route123_Text_VioletIntro, Route123_Text_VioletDefeat
 # 58 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_VioletPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_VioletPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 59 "data/maps/Route123/scripts.pory"
 	end
 # 60 "data/maps/Route123/scripts.pory"
@@ -267,7 +267,7 @@ Route123_EventScript_Kayley::
 # 134 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_KAYLEY, Route123_Text_KayleyIntro, Route123_Text_KayleyDefeat
 # 135 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_KayleyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_KayleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 136 "data/maps/Route123/scripts.pory"
 	end
 # 137 "data/maps/Route123/scripts.pory"
@@ -287,7 +287,7 @@ Route123_EventScript_Jazmyn::
 # 144 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_JAZMYN, Route123_Text_JazmynIntro, Route123_Text_JazmynDefeat
 # 145 "data/maps/Route123/scripts.pory"
-	msgbox Route123_Text_JazmynPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route123_Text_JazmynPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 146 "data/maps/Route123/scripts.pory"
 	end
 # 147 "data/maps/Route123/scripts.pory"

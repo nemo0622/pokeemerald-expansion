@@ -77,7 +77,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_Programmer::
 # 39 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 LilycoveCity_CoveLilyMotel_2F_EventScript_GraphicArtist::
 # 40 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
-	msgbox LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist, MSGBOX_NPC, MUGSHOT_SCIENTIST
 # 41 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 	end
 # 42 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
@@ -93,7 +93,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_FatMan::
 # 47 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 LilycoveCity_CoveLilyMotel_2F_EventScript_Woman::
 # 48 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
-	msgbox LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 49 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 	end
 # 50 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"

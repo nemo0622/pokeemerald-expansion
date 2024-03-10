@@ -29,7 +29,7 @@ FortreeCity_Mart_Pokemart:
 	end
 
 FortreeCity_Mart_EventScript_Woman::
-	msgbox FortreeCity_Mart_Text_SuperRepelBetter, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Mart_Text_SuperRepelBetter, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 FortreeCity_Mart_EventScript_Girl::

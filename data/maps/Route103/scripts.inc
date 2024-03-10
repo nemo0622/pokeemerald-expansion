@@ -411,7 +411,7 @@ Route103_EventScript_Daisy::
 # 206 "data/maps/Route103/scripts.pory"
 	trainerbattle_single TRAINER_DAISY, Route103_Text_DaisyIntro, Route103_Text_DaisyDefeated
 # 207 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_DaisyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_DaisyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 208 "data/maps/Route103/scripts.pory"
 	end
 # 209 "data/maps/Route103/scripts.pory"
@@ -565,7 +565,7 @@ Route103_EventScript_Pete::
 # 283 "data/maps/Route103/scripts.pory"
 	trainerbattle_single TRAINER_PETE, Route103_Text_PeteIntro, Route103_Text_PeteDefeated
 # 284 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_PetePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_PetePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 285 "data/maps/Route103/scripts.pory"
 	end
 # 286 "data/maps/Route103/scripts.pory"
@@ -575,7 +575,7 @@ Route103_EventScript_Isabelle::
 # 288 "data/maps/Route103/scripts.pory"
 	trainerbattle_single TRAINER_ISABELLE, Route103_Text_IsabelleIntro, Route103_Text_IsabelleDefeated
 # 289 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_IsabellePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route103_Text_IsabellePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 290 "data/maps/Route103/scripts.pory"
 	end
 # 291 "data/maps/Route103/scripts.pory"

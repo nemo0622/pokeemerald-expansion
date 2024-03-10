@@ -9,7 +9,7 @@ SlateportCity_SternsShipyard_2F_MapScripts::
 # 5 "data/maps/SlateportCity_SternsShipyard_2F/scripts.pory"
 SlateportCity_SternsShipyard_2F_EventScript_Scientist1::
 # 6 "data/maps/SlateportCity_SternsShipyard_2F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding, MSGBOX_NPC, MUGSHOT_SCIENTIST
 # 7 "data/maps/SlateportCity_SternsShipyard_2F/scripts.pory"
 	end
 # 8 "data/maps/SlateportCity_SternsShipyard_2F/scripts.pory"
@@ -17,7 +17,7 @@ SlateportCity_SternsShipyard_2F_EventScript_Scientist1::
 # 9 "data/maps/SlateportCity_SternsShipyard_2F/scripts.pory"
 SlateportCity_SternsShipyard_2F_EventScript_Scientist2::
 # 10 "data/maps/SlateportCity_SternsShipyard_2F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy, MSGBOX_NPC, MUGSHOT_SCIENTIST
 # 11 "data/maps/SlateportCity_SternsShipyard_2F/scripts.pory"
 	end
 # 12 "data/maps/SlateportCity_SternsShipyard_2F/scripts.pory"

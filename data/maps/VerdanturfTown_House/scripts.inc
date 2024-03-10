@@ -9,7 +9,7 @@ VerdanturfTown_House_MapScripts::
 # 5 "data/maps/VerdanturfTown_House/scripts.pory"
 VerdanturfTown_House_EventScript_Woman1::
 # 6 "data/maps/VerdanturfTown_House/scripts.pory"
-	msgbox VerdanturfTown_House_Text_TrainersGatherAtPokemonLeague, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_House_Text_TrainersGatherAtPokemonLeague, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 7 "data/maps/VerdanturfTown_House/scripts.pory"
 	end
 # 8 "data/maps/VerdanturfTown_House/scripts.pory"
@@ -17,7 +17,7 @@ VerdanturfTown_House_EventScript_Woman1::
 # 9 "data/maps/VerdanturfTown_House/scripts.pory"
 VerdanturfTown_House_EventScript_Woman2::
 # 10 "data/maps/VerdanturfTown_House/scripts.pory"
-	msgbox VerdanturfTown_House_Text_DefeatEliteFourInARow, MSGBOX_NPC
+	msgbox_mugshot VerdanturfTown_House_Text_DefeatEliteFourInARow, MSGBOX_NPC, MUGSHOT_WOMAN5
 # 11 "data/maps/VerdanturfTown_House/scripts.pory"
 	end
 # 12 "data/maps/VerdanturfTown_House/scripts.pory"

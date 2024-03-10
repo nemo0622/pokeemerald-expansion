@@ -108,7 +108,7 @@ VictoryRoad_1F_EventScript_Albert::
 
 VictoryRoad_1F_EventScript_Hope::
 	trainerbattle_single TRAINER_HOPE, VictoryRoad_1F_Text_HopeIntro, VictoryRoad_1F_Text_HopeDefeat
-	msgbox VictoryRoad_1F_Text_HopePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_1F_Text_HopePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 	end
 
 VictoryRoad_1F_EventScript_Quincy::
@@ -118,7 +118,7 @@ VictoryRoad_1F_EventScript_Quincy::
 
 VictoryRoad_1F_EventScript_Katelynn::
 	trainerbattle_single TRAINER_KATELYNN, VictoryRoad_1F_Text_KatelynnIntro, VictoryRoad_1F_Text_KatelynnDefeat
-	msgbox VictoryRoad_1F_Text_KatelynnPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_1F_Text_KatelynnPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 	end
 
 VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore:

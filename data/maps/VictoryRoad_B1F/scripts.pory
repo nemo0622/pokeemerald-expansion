@@ -9,12 +9,12 @@ VictoryRoad_B1F_EventScript_Samuel::
 
 VictoryRoad_B1F_EventScript_Shannon::
 	trainerbattle_single TRAINER_SHANNON, VictoryRoad_B1F_Text_ShannonIntro, VictoryRoad_B1F_Text_ShannonDefeat
-	msgbox VictoryRoad_B1F_Text_ShannonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B1F_Text_ShannonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 	end
 
 VictoryRoad_B1F_EventScript_Michelle::
 	trainerbattle_single TRAINER_MICHELLE, VictoryRoad_B1F_Text_MichelleIntro, VictoryRoad_B1F_Text_MichelleDefeat
-	msgbox VictoryRoad_B1F_Text_MichellePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B1F_Text_MichellePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 	end
 
 VictoryRoad_B1F_EventScript_Mitchell::
@@ -24,7 +24,7 @@ VictoryRoad_B1F_EventScript_Mitchell::
 
 VictoryRoad_B1F_EventScript_Halle::
 	trainerbattle_single TRAINER_HALLE, VictoryRoad_B1F_Text_HalleIntro, VictoryRoad_B1F_Text_HalleDefeat
-	msgbox VictoryRoad_B1F_Text_HallePostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot VictoryRoad_B1F_Text_HallePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 	end
 
 VictoryRoad_B1F_Text_SamuelIntro:

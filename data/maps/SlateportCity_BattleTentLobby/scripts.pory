@@ -223,7 +223,7 @@ SlateportCity_BattleTentLobby_EventScript_Girl::
 	end
 
 SlateportCity_BattleTentLobby_EventScript_Woman::
-	msgbox SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection, MSGBOX_NPC
+	msgbox_mugshot SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 SlateportCity_BattleTentLobby_EventScript_RulesBoard::

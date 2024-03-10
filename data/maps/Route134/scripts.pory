@@ -9,12 +9,12 @@ Route134_OnResume:
 
 Route134_EventScript_Jack::
 	trainerbattle_single TRAINER_JACK, Route134_Text_JackIntro, Route134_Text_JackDefeat
-	msgbox Route134_Text_JackPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_JackPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 	end
 
 Route134_EventScript_Laurel::
 	trainerbattle_single TRAINER_LAUREL, Route134_Text_LaurelIntro, Route134_Text_LaurelDefeat
-	msgbox Route134_Text_LaurelPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_LaurelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 	end
 
 Route134_EventScript_Alex::
@@ -44,7 +44,7 @@ Route134_EventScript_Reyna::
 
 Route134_EventScript_Marley::
 	trainerbattle_single TRAINER_MARLEY, Route134_Text_MarleyIntro, Route134_Text_MarleyDefeat
-	msgbox Route134_Text_MarleyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_MarleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 	end
 
 Route134_EventScript_Kelvin::

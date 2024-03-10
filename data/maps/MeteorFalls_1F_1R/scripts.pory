@@ -229,12 +229,12 @@ MeteorFalls_1F_1R_EventScript_ProfCozmo::
 	faceplayer
 	goto_if_set FLAG_MET_PROF_COZMO, MeteorFalls_1F_1R_EventScript_MetCozmo
 	setflag FLAG_MET_PROF_COZMO
-	msgbox MeteorFalls_1F_1R_Text_MeetProfCozmo, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_MeetProfCozmo, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
 MeteorFalls_1F_1R_EventScript_MetCozmo::
-	msgbox MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney, MSGBOX_DEFAULT
+	msgbox_mugshot MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 

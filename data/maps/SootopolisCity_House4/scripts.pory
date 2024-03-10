@@ -7,7 +7,7 @@ SootopolisCity_House4_EventScript_Man::
 	end
 
 SootopolisCity_House4_EventScript_Woman::
-	msgbox SootopolisCity_House4_Text_StrollUnderwaterWithPokemon, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House4_Text_StrollUnderwaterWithPokemon, MSGBOX_NPC, MUGSHOT_WOMAN4
 	end
 
 SootopolisCity_House4_EventScript_Azumarill::

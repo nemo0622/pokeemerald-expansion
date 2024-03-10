@@ -10,7 +10,7 @@ SlateportCity_OceanicMuseum_2F_MapScripts::
 SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	lock
 	faceplayer
-	msgbox SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	closemessage
 	playbgm MUS_ENCOUNTER_AQUA, TRUE
 	addobject LOCALID_GRUNT_1
@@ -26,7 +26,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	call_if_eq VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_2F_EventScript_PlayerFaceGrunts
 	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	call_if_ne VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_2F_EventScript_SternFaceGrunts
-	msgbox SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua, MSGBOX_DEFAULT, MUGSHOT_AQUAGRUNTM
 	closemessage
 	applymovement LOCALID_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle
@@ -71,10 +71,10 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	setvar VAR_0x8004, ITEM_DEVON_PARTS
 	call Common_EventScript_PlayerHandedOverTheItem
-	msgbox SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	closemessage
 	fadescreen FADE_TO_BLACK
 	playfanfare MUS_HEAL

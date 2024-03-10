@@ -17,7 +17,7 @@ SootopolisCity_House4_EventScript_Man::
 # 9 "data/maps/SootopolisCity_House4/scripts.pory"
 SootopolisCity_House4_EventScript_Woman::
 # 10 "data/maps/SootopolisCity_House4/scripts.pory"
-	msgbox SootopolisCity_House4_Text_StrollUnderwaterWithPokemon, MSGBOX_NPC
+	msgbox_mugshot SootopolisCity_House4_Text_StrollUnderwaterWithPokemon, MSGBOX_NPC, MUGSHOT_WOMAN4
 # 11 "data/maps/SootopolisCity_House4/scripts.pory"
 	end
 # 12 "data/maps/SootopolisCity_House4/scripts.pory"

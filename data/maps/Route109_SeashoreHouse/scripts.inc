@@ -167,7 +167,7 @@ Route109_SeashoreHouse_EventScript_Simon::
 # 84 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	trainerbattle_single TRAINER_SIMON, Route109_SeashoreHouse_Text_SimonIntro, Route109_SeashoreHouse_Text_SimonDefeated, Route109_SeashoreHouse_EventScript_CheckTrainersCompletion
 # 85 "data/maps/Route109_SeashoreHouse/scripts.pory"
-	msgbox Route109_SeashoreHouse_Text_SimonPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route109_SeashoreHouse_Text_SimonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_TUBERM
 # 86 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	end
 # 87 "data/maps/Route109_SeashoreHouse/scripts.pory"

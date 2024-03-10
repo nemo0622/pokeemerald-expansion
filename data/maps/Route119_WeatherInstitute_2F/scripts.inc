@@ -179,7 +179,7 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 # 90 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_EventScript_ReceiveCastform::
 # 91 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 92 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CASTFORM_NORMAL
 # 93 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -257,7 +257,7 @@ Route119_WeatherInstitute_2F_EventScript_ReceivedCastformFanfare::
 # 129 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_EventScript_ExplainCastform::
 # 130 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 131 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	setflag FLAG_RECEIVED_CASTFORM
 # 132 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -271,7 +271,7 @@ Route119_WeatherInstitute_2F_EventScript_ScientistMentionWeather::
 # 136 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	goto_if_set FLAG_SYS_GAME_CLEAR, Route119_WeatherInstitute_2F_EventScript_TryStartAbnormalWeather
 # 137 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 138 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	release
 # 139 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -295,7 +295,7 @@ Route119_WeatherInstitute_2F_EventScript_TryStartAbnormalWeather::
 # 148 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	goto_if_eq VAR_RESULT, 1, Route119_WeatherInstitute_2F_EventScript_KyogreWeather
 # 149 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_Text_GroudonWeather, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_2F_Text_GroudonWeather, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 150 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	release
 # 151 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -305,7 +305,7 @@ Route119_WeatherInstitute_2F_EventScript_TryStartAbnormalWeather::
 # 153 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_EventScript_KyogreWeather::
 # 154 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_Text_KyogreWeather, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_2F_Text_KyogreWeather, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 155 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	release
 # 156 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -333,7 +333,7 @@ Route119_WeatherInstitute_2F_EventScript_LegendaryDefeated::
 # 167 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_EventScript_NoAbnormalWeather::
 # 168 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_Text_NoAbnormalWeather, MSGBOX_DEFAULT
+	msgbox_mugshot Route119_WeatherInstitute_2F_Text_NoAbnormalWeather, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 169 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	release
 # 170 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"

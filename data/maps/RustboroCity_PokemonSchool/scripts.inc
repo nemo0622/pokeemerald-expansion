@@ -139,7 +139,7 @@ RustboroCity_PokemonSchool_EventScript_Lass::
 # 70 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 RustboroCity_PokemonSchool_EventScript_SchoolKidM::
 # 71 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	msgbox RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry, MSGBOX_NPC, MUGSHOT_SCHOOLKIDM
 # 72 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	end
 # 73 "data/maps/RustboroCity_PokemonSchool/scripts.pory"

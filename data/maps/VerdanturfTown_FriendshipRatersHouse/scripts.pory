@@ -5,7 +5,7 @@ VerdanturfTown_FriendshipRatersHouse_MapScripts::
 VerdanturfTown_FriendshipRatersHouse_EventScript_FriendshipRater::
 	lock
 	faceplayer
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	specialvar VAR_RESULT, GetLeadMonFriendshipScore
 	switch VAR_RESULT
 	case FRIENDSHIP_NONE, VerdanturfTown_FriendshipRatersHouse_EventScript_DetestsYou
@@ -19,37 +19,37 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_FriendshipRater::
 	end
 
 VerdanturfTown_FriendshipRatersHouse_EventScript_DetestsYou::
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
 VerdanturfTown_FriendshipRatersHouse_EventScript_VeryWary::
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_VeryWary, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_VeryWary, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
 VerdanturfTown_FriendshipRatersHouse_EventScript_NotUsedToYou::
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_NotUsedToYou, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_NotUsedToYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
 VerdanturfTown_FriendshipRatersHouse_EventScript_GettingUsedToYou::
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
 VerdanturfTown_FriendshipRatersHouse_EventScript_LikesYouQuiteALot::
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
 VerdanturfTown_FriendshipRatersHouse_EventScript_VeryHappy::
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 
 VerdanturfTown_FriendshipRatersHouse_EventScript_AdoresYou::
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou, MSGBOX_DEFAULT
+	msgbox_mugshot VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 

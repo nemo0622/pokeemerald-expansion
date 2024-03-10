@@ -59,17 +59,17 @@ RustboroCity_DevonCorp_1F_EventScript_Greeter::
 	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_WelcomeToDevonCorp
 	goto_if_set FLAG_RECOVERED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_StaffGotRobbed
 	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_StaffGotRobbed
-	msgbox RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT, MUGSHOT_WOMAN3
 	release
 	end
 
 RustboroCity_DevonCorp_1F_EventScript_WelcomeToDevonCorp::
-	msgbox RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp, MSGBOX_DEFAULT, MUGSHOT_WOMAN3
 	release
 	end
 
 RustboroCity_DevonCorp_1F_EventScript_StaffGotRobbed::
-	msgbox RustboroCity_DevonCorp_1F_Text_StaffGotRobbed, MSGBOX_DEFAULT
+	msgbox_mugshot RustboroCity_DevonCorp_1F_Text_StaffGotRobbed, MSGBOX_DEFAULT, MUGSHOT_WOMAN3
 	release
 	end
 

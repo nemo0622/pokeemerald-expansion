@@ -61,7 +61,7 @@ FortreeCity_Mart_Pokemart:
 # 31 "data/maps/FortreeCity_Mart/scripts.pory"
 FortreeCity_Mart_EventScript_Woman::
 # 32 "data/maps/FortreeCity_Mart/scripts.pory"
-	msgbox FortreeCity_Mart_Text_SuperRepelBetter, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_Mart_Text_SuperRepelBetter, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 33 "data/maps/FortreeCity_Mart/scripts.pory"
 	end
 # 34 "data/maps/FortreeCity_Mart/scripts.pory"

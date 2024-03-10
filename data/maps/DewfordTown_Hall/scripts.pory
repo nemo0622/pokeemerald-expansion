@@ -26,7 +26,7 @@ DewfordTown_Hall_EventScript_Woman::
 	lock
 	faceplayer
 	call Common_EventScript_BufferTrendyPhrase
-	msgbox DewfordTown_Hall_Text_TeachingMonAboutTrend, MSGBOX_DEFAULT
+	msgbox_mugshot DewfordTown_Hall_Text_TeachingMonAboutTrend, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 	release
 	end
 

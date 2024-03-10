@@ -1555,7 +1555,7 @@ SootopolisCity_EventScript_Woman2::
 # 778 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_Woman2Rayquaza
 # 779 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_WeatherWentWild, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_WeatherWentWild, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 780 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 781 "data/maps/SootopolisCity/scripts.pory"
@@ -1571,7 +1571,7 @@ SootopolisCity_EventScript_Woman2::
 # 786 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_Woman2Rayquaza::
 # 787 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_YouBroughtFlyingMon, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_YouBroughtFlyingMon, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 788 "data/maps/SootopolisCity/scripts.pory"
 	releaseall
 # 789 "data/maps/SootopolisCity/scripts.pory"
@@ -1617,7 +1617,7 @@ SootopolisCity_EventScript_Woman1::
 # 809 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 2, SootopolisCity_EventScript_Woman1Legendaries
 # 810 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_SootopolisSkyBeautiful, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_SootopolisSkyBeautiful, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 811 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 812 "data/maps/SootopolisCity/scripts.pory"
@@ -1627,7 +1627,7 @@ SootopolisCity_EventScript_Woman1::
 # 814 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_Woman1Legendaries::
 # 815 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_GiganticPokemonFight, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_GiganticPokemonFight, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 816 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
 # 817 "data/maps/SootopolisCity/scripts.pory"
@@ -1643,7 +1643,7 @@ SootopolisCity_EventScript_Woman1Legendaries::
 # 822 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_Woman1PostLegendaries::
 # 823 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_NightSkyFavoriteScenery, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_NightSkyFavoriteScenery, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 824 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 825 "data/maps/SootopolisCity/scripts.pory"
@@ -1653,7 +1653,7 @@ SootopolisCity_EventScript_Woman1PostLegendaries::
 # 827 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_Woman1Rayquaza::
 # 828 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_Text_FearedWorstWhenPokemonFlewDown, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_Text_FearedWorstWhenPokemonFlewDown, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 829 "data/maps/SootopolisCity/scripts.pory"
 	release
 # 830 "data/maps/SootopolisCity/scripts.pory"

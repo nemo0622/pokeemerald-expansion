@@ -743,7 +743,7 @@ MauvilleCity_GameCorner_EventScript_CancelTMSelect::
 # 372 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 MauvilleCity_GameCorner_EventScript_Woman2::
 # 373 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 374 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	end
 # 375 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -999,7 +999,7 @@ MauvilleCity_GameCorner_EventScript_Woman::
 # 500 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	faceplayer
 # 501 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 502 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 # 503 "data/maps/MauvilleCity_GameCorner/scripts.pory"

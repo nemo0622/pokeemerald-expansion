@@ -13,11 +13,11 @@ SootopolisCity_House3_EventScript_Woman::
 # 7 "data/maps/SootopolisCity_House3/scripts.pory"
 	faceplayer
 # 8 "data/maps/SootopolisCity_House3/scripts.pory"
-	msgbox SootopolisCity_House3_Text_JuanHasManyFansDoYou, MSGBOX_YESNO
+	msgbox_mugshot SootopolisCity_House3_Text_JuanHasManyFansDoYou, MSGBOX_YESNO, MUGSHOT_WOMAN4
 # 9 "data/maps/SootopolisCity_House3/scripts.pory"
 	goto_if_eq VAR_RESULT, YES, SootopolisCity_House3_EventScript_HaveFans
 # 10 "data/maps/SootopolisCity_House3/scripts.pory"
-	msgbox SootopolisCity_House3_Text_LonesomeTryWorkingHarder, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House3_Text_LonesomeTryWorkingHarder, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 11 "data/maps/SootopolisCity_House3/scripts.pory"
 	release
 # 12 "data/maps/SootopolisCity_House3/scripts.pory"
@@ -27,7 +27,7 @@ SootopolisCity_House3_EventScript_Woman::
 # 14 "data/maps/SootopolisCity_House3/scripts.pory"
 SootopolisCity_House3_EventScript_HaveFans::
 # 15 "data/maps/SootopolisCity_House3/scripts.pory"
-	msgbox SootopolisCity_House3_Text_YouMustBePrettyStrong, MSGBOX_DEFAULT
+	msgbox_mugshot SootopolisCity_House3_Text_YouMustBePrettyStrong, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 16 "data/maps/SootopolisCity_House3/scripts.pory"
 	release
 # 17 "data/maps/SootopolisCity_House3/scripts.pory"

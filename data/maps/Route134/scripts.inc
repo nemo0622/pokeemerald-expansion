@@ -21,7 +21,7 @@ Route134_EventScript_Jack::
 # 11 "data/maps/Route134/scripts.pory"
 	trainerbattle_single TRAINER_JACK, Route134_Text_JackIntro, Route134_Text_JackDefeat
 # 12 "data/maps/Route134/scripts.pory"
-	msgbox Route134_Text_JackPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_JackPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 13 "data/maps/Route134/scripts.pory"
 	end
 # 14 "data/maps/Route134/scripts.pory"
@@ -31,7 +31,7 @@ Route134_EventScript_Laurel::
 # 16 "data/maps/Route134/scripts.pory"
 	trainerbattle_single TRAINER_LAUREL, Route134_Text_LaurelIntro, Route134_Text_LaurelDefeat
 # 17 "data/maps/Route134/scripts.pory"
-	msgbox Route134_Text_LaurelPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_LaurelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 18 "data/maps/Route134/scripts.pory"
 	end
 # 19 "data/maps/Route134/scripts.pory"
@@ -91,7 +91,7 @@ Route134_EventScript_Marley::
 # 46 "data/maps/Route134/scripts.pory"
 	trainerbattle_single TRAINER_MARLEY, Route134_Text_MarleyIntro, Route134_Text_MarleyDefeat
 # 47 "data/maps/Route134/scripts.pory"
-	msgbox Route134_Text_MarleyPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route134_Text_MarleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 # 48 "data/maps/Route134/scripts.pory"
 	end
 # 49 "data/maps/Route134/scripts.pory"

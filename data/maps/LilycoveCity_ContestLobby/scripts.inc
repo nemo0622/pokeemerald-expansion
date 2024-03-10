@@ -1203,7 +1203,7 @@ LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker5::
 # 602 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	faceplayer
 # 603 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox BerryBlender_Text_QualitiesOfBlendMaster, MSGBOX_DEFAULT
+	msgbox_mugshot BerryBlender_Text_QualitiesOfBlendMaster, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 # 604 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	goto LilycoveCity_ContestLobby_EventScript_FaceOriginalDirection
 # 605 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -1217,7 +1217,7 @@ LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker6::
 # 609 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	faceplayer
 # 610 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	msgbox BerryBlender_Text_MasterWorksOnSkillsInMountains, MSGBOX_DEFAULT
+	msgbox_mugshot BerryBlender_Text_MasterWorksOnSkillsInMountains, MSGBOX_DEFAULT, MUGSHOT_WOMAN1
 # 611 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	goto LilycoveCity_ContestLobby_EventScript_FaceOriginalDirection
 # 612 "data/maps/LilycoveCity_ContestLobby/scripts.pory"

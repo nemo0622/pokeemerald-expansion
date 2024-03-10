@@ -32,7 +32,7 @@ MauvilleCity_EventScript_Maniac::
 	end
 
 MauvilleCity_EventScript_Woman::
-	msgbox MauvilleCity_Text_RydelVeryGenerous, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Text_RydelVeryGenerous, MSGBOX_NPC, MUGSHOT_WOMAN4
 	end
 
 MauvilleCity_EventScript_RichBoy::
@@ -59,13 +59,13 @@ MauvilleCity_EventScript_SchoolKidM::
 	lock
 	faceplayer
 	goto_if_set FLAG_TV_EXPLAINED, MauvilleCity_EventScript_TVExplained
-	msgbox MauvilleCity_Text_ExplainTV, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_ExplainTV, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 	setflag FLAG_TV_EXPLAINED
 	release
 	end
 
 MauvilleCity_EventScript_TVExplained::
-	msgbox MauvilleCity_Text_BeenCheckingOutTV, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_BeenCheckingOutTV, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 	release
 	end
 

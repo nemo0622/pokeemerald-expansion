@@ -7,7 +7,7 @@ PacifidlogTown_House1_EventScript_Man::
 	end
 
 PacifidlogTown_House1_EventScript_Woman::
-	msgbox PacifidlogTown_House1_Text_SixDotsOpenThreeDoors, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_House1_Text_SixDotsOpenThreeDoors, MSGBOX_NPC, MUGSHOT_WOMAN4
 	end
 
 PacifidlogTown_House1_Text_RegiStory:

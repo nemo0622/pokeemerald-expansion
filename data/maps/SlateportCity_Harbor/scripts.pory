@@ -296,7 +296,7 @@ SlateportCity_Harbor_EventScript_CaptStern::
 	goto_if_set FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE, SlateportCity_Harbor_EventScript_NeedDive
 	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive
 	goto_if_eq VAR_SLATEPORT_HARBOR_STATE, 2, SlateportCity_Harbor_EventScript_WhyStealSubmarine
-	msgbox SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -304,18 +304,18 @@ SlateportCity_Harbor_EventScript_CaptStern::
 	end
 
 SlateportCity_Harbor_EventScript_WhyStealSubmarine::
-	msgbox SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
 SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive::
 	setflag FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE
-	msgbox SlateportCity_Harbor_Text_TeamAquaLeftNeedDive, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_TeamAquaLeftNeedDive, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
 SlateportCity_Harbor_EventScript_NeedDive::
-	msgbox SlateportCity_Harbor_Text_NeedDiveToCatchSub, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_NeedDiveToCatchSub, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
@@ -324,12 +324,12 @@ SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment::
 	checkitem ITEM_SCANNER
 	goto_if_eq VAR_RESULT, TRUE, SlateportCity_Harbor_EventScript_AskToTradeScanner
 	goto_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_FerryFinished
-	msgbox SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
 SlateportCity_Harbor_EventScript_FerryFinished::
-	msgbox SlateportCity_Harbor_Text_FinishedMakingFerry, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_FinishedMakingFerry, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
@@ -349,7 +349,7 @@ SlateportCity_Harbor_EventScript_ChooseScannerTrade::
 	end
 
 SlateportCity_Harbor_EventScript_DeepSeaTooth::
-	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaTooth, MSGBOX_YESNO
+	msgbox_mugshot SlateportCity_Harbor_Text_TradeForDeepSeaTooth, MSGBOX_YESNO, MUGSHOT_SCIENTIST
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
 	giveitem ITEM_DEEP_SEA_TOOTH
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -360,7 +360,7 @@ SlateportCity_Harbor_EventScript_DeepSeaTooth::
 	end
 
 SlateportCity_Harbor_EventScript_DeepSeaScale::
-	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaScale, MSGBOX_YESNO
+	msgbox_mugshot SlateportCity_Harbor_Text_TradeForDeepSeaScale, MSGBOX_YESNO, MUGSHOT_SCIENTIST
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
 	giveitem ITEM_DEEP_SEA_SCALE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -371,7 +371,7 @@ SlateportCity_Harbor_EventScript_DeepSeaScale::
 	end
 
 SlateportCity_Harbor_EventScript_DeclineTrade::
-	msgbox SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
@@ -383,7 +383,7 @@ SlateportCity_Harbor_EventScript_ChooseDifferentTrade::
 
 SlateportCity_Harbor_EventScript_TradedScanner::
 	setvar VAR_TEMP_1, 1
-	msgbox SlateportCity_Harbor_Text_ThisWillHelpResearch, MSGBOX_DEFAULT
+	msgbox_mugshot SlateportCity_Harbor_Text_ThisWillHelpResearch, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 

@@ -253,7 +253,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_StoneTablet::
 # 127 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 LilycoveCity_LilycoveMuseum_1F_EventScript_SchoolKidM::
 # 128 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts, MSGBOX_NPC, MUGSHOT_SCHOOLKIDM
 # 129 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 	end
 # 130 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
@@ -277,7 +277,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_NinjaBoy::
 # 139 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 LilycoveCity_LilycoveMuseum_1F_EventScript_Woman1::
 # 140 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable, MSGBOX_SIGN
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable, MSGBOX_SIGN, MUGSHOT_WOMAN4
 # 141 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 	end
 # 142 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
@@ -285,7 +285,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_Woman1::
 # 143 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 LilycoveCity_LilycoveMuseum_1F_EventScript_Woman2::
 # 144 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings, MSGBOX_NPC
+	msgbox_mugshot LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 145 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"
 	end
 # 146 "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.pory"

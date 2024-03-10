@@ -23,7 +23,7 @@ PacifidlogTown_PokemonCenter_1F_EventScript_Girl::
 	end
 
 PacifidlogTown_PokemonCenter_1F_EventScript_Woman::
-	msgbox PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola, MSGBOX_NPC
+	msgbox_mugshot PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola, MSGBOX_NPC, MUGSHOT_WOMAN1
 	end
 
 PacifidlogTown_PokemonCenter_1F_EventScript_OldMan::

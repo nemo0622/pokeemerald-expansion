@@ -20,12 +20,12 @@ FortreeCity_EventScript_Woman::
 	lock
 	faceplayer
 	goto_if_set FLAG_KECLEON_FLED_FORTREE, FortreeCity_EventScript_WomanGymAccessible
-	msgbox FortreeCity_Text_SomethingBlockingGym, MSGBOX_DEFAULT
+	msgbox_mugshot FortreeCity_Text_SomethingBlockingGym, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	release
 	end
 
 FortreeCity_EventScript_WomanGymAccessible::
-	msgbox FortreeCity_Text_ThisTimeIllBeatWinona, MSGBOX_DEFAULT
+	msgbox_mugshot FortreeCity_Text_ThisTimeIllBeatWinona, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	release
 	end
 

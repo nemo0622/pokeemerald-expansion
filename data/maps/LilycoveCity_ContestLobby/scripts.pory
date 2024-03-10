@@ -600,14 +600,14 @@ LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker4::
 LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker5::
 	lock
 	faceplayer
-	msgbox BerryBlender_Text_QualitiesOfBlendMaster, MSGBOX_DEFAULT
+	msgbox_mugshot BerryBlender_Text_QualitiesOfBlendMaster, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	goto LilycoveCity_ContestLobby_EventScript_FaceOriginalDirection
 	end
 
 LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker6::
 	lock
 	faceplayer
-	msgbox BerryBlender_Text_MasterWorksOnSkillsInMountains, MSGBOX_DEFAULT
+	msgbox_mugshot BerryBlender_Text_MasterWorksOnSkillsInMountains, MSGBOX_DEFAULT, MUGSHOT_WOMAN1
 	goto LilycoveCity_ContestLobby_EventScript_FaceOriginalDirection
 	end
 

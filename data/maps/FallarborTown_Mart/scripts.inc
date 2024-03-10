@@ -65,7 +65,7 @@ FallarborTown_Mart_Pokemart:
 # 33 "data/maps/FallarborTown_Mart/scripts.pory"
 FallarborTown_Mart_EventScript_Woman::
 # 34 "data/maps/FallarborTown_Mart/scripts.pory"
-	msgbox FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 35 "data/maps/FallarborTown_Mart/scripts.pory"
 	end
 # 36 "data/maps/FallarborTown_Mart/scripts.pory"

@@ -107,7 +107,7 @@ Route112_EventScript_Bryant::
 
 Route112_EventScript_Shayla::
 	trainerbattle_single TRAINER_SHAYLA, Route112_Text_ShaylaIntro, Route112_Text_ShaylaDefeat
-	msgbox Route112_Text_ShaylaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route112_Text_ShaylaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 	end
 
 Route112_Text_LeaderGoingToAwakenThing:

@@ -561,7 +561,7 @@ Route104_EventScript_WhiteHerbFlorist::
 # 281 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_RECEIVED_WHITE_HERB, Route104_EventScript_ReceivedWhiteHerb
 # 282 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_DontNeedThisTakeIt, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_DontNeedThisTakeIt, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 283 "data/maps/Route104/scripts.pory"
 	giveitem ITEM_WHITE_HERB
 # 284 "data/maps/Route104/scripts.pory"
@@ -577,7 +577,7 @@ Route104_EventScript_WhiteHerbFlorist::
 # 289 "data/maps/Route104/scripts.pory"
 Route104_EventScript_ReceivedWhiteHerb::
 # 290 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_FlowerShopSellingSaplings, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_FlowerShopSellingSaplings, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 291 "data/maps/Route104/scripts.pory"
 	release
 # 292 "data/maps/Route104/scripts.pory"
@@ -651,7 +651,7 @@ Route104_EventScript_Boy1::
 # 326 "data/maps/Route104/scripts.pory"
 Route104_EventScript_Woman::
 # 327 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_OnlyThrowBallAtWildPokemon, MSGBOX_NPC
+	msgbox_mugshot Route104_Text_OnlyThrowBallAtWildPokemon, MSGBOX_NPC, MUGSHOT_WOMAN2
 # 328 "data/maps/Route104/scripts.pory"
 	end
 # 329 "data/maps/Route104/scripts.pory"
@@ -1895,7 +1895,7 @@ Route104_EventScript_Cindy::
 # 948 "data/maps/Route104/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterCindy
 # 949 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_CindyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_CindyPostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 950 "data/maps/Route104/scripts.pory"
 	release
 # 951 "data/maps/Route104/scripts.pory"
@@ -1919,7 +1919,7 @@ Route104_EventScript_TryRegisterCindyAfterBattle::
 # 960 "data/maps/Route104/scripts.pory"
 Route104_EventScript_RegisterCindyAfterBattle::
 # 961 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_CindyRegister2, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_CindyRegister2, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 962 "data/maps/Route104/scripts.pory"
 	register_matchcall TRAINER_CINDY_1
 # 963 "data/maps/Route104/scripts.pory"
@@ -1933,7 +1933,7 @@ Route104_EventScript_TryRegisterCindy::
 # 967 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_HAS_MATCH_CALL, Route104_EventScript_RegisterCindy
 # 968 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_CindyPostBattle, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_CindyPostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 969 "data/maps/Route104/scripts.pory"
 	release
 # 970 "data/maps/Route104/scripts.pory"
@@ -1943,7 +1943,7 @@ Route104_EventScript_TryRegisterCindy::
 # 972 "data/maps/Route104/scripts.pory"
 Route104_EventScript_RegisterCindy::
 # 973 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_CindyRegister1, MSGBOX_DEFAULT
+	msgbox_mugshot Route104_Text_CindyRegister1, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 974 "data/maps/Route104/scripts.pory"
 	register_matchcall TRAINER_CINDY_1
 # 975 "data/maps/Route104/scripts.pory"
@@ -1957,7 +1957,7 @@ Route104_EventScript_RematchCindy::
 # 979 "data/maps/Route104/scripts.pory"
 	trainerbattle_rematch TRAINER_CINDY_1, Route104_Text_CindyRematchIntro, Route104_Text_CindyRematchDefeat
 # 980 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_CindyPostRematch, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route104_Text_CindyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 # 981 "data/maps/Route104/scripts.pory"
 	end
 # 982 "data/maps/Route104/scripts.pory"

@@ -11,7 +11,7 @@ Route133_EventScript_Franklin::
 # 6 "data/maps/Route133/scripts.pory"
 	trainerbattle_single TRAINER_FRANKLIN, Route133_Text_FranklinIntro, Route133_Text_FranklinDefeat
 # 7 "data/maps/Route133/scripts.pory"
-	msgbox Route133_Text_FranklinPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route133_Text_FranklinPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 8 "data/maps/Route133/scripts.pory"
 	end
 # 9 "data/maps/Route133/scripts.pory"
@@ -21,7 +21,7 @@ Route133_EventScript_Debra::
 # 11 "data/maps/Route133/scripts.pory"
 	trainerbattle_single TRAINER_DEBRA, Route133_Text_DebraIntro, Route133_Text_DebraDefeat
 # 12 "data/maps/Route133/scripts.pory"
-	msgbox Route133_Text_DebraPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route133_Text_DebraPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 13 "data/maps/Route133/scripts.pory"
 	end
 # 14 "data/maps/Route133/scripts.pory"
@@ -31,7 +31,7 @@ Route133_EventScript_Linda::
 # 16 "data/maps/Route133/scripts.pory"
 	trainerbattle_single TRAINER_LINDA, Route133_Text_LindaIntro, Route133_Text_LindaDefeat
 # 17 "data/maps/Route133/scripts.pory"
-	msgbox Route133_Text_LindaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route133_Text_LindaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERF
 # 18 "data/maps/Route133/scripts.pory"
 	end
 # 19 "data/maps/Route133/scripts.pory"

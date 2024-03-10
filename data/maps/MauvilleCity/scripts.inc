@@ -67,7 +67,7 @@ MauvilleCity_EventScript_Maniac::
 # 34 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_Woman::
 # 35 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_RydelVeryGenerous, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_Text_RydelVeryGenerous, MSGBOX_NPC, MUGSHOT_WOMAN4
 # 36 "data/maps/MauvilleCity/scripts.pory"
 	end
 # 37 "data/maps/MauvilleCity/scripts.pory"
@@ -121,7 +121,7 @@ MauvilleCity_EventScript_SchoolKidM::
 # 61 "data/maps/MauvilleCity/scripts.pory"
 	goto_if_set FLAG_TV_EXPLAINED, MauvilleCity_EventScript_TVExplained
 # 62 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_ExplainTV, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_ExplainTV, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 # 63 "data/maps/MauvilleCity/scripts.pory"
 	setflag FLAG_TV_EXPLAINED
 # 64 "data/maps/MauvilleCity/scripts.pory"
@@ -133,7 +133,7 @@ MauvilleCity_EventScript_SchoolKidM::
 # 67 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_TVExplained::
 # 68 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_Text_BeenCheckingOutTV, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_Text_BeenCheckingOutTV, MSGBOX_DEFAULT, MUGSHOT_SCHOOLKIDM
 # 69 "data/maps/MauvilleCity/scripts.pory"
 	release
 # 70 "data/maps/MauvilleCity/scripts.pory"

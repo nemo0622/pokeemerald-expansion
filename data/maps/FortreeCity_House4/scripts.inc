@@ -13,7 +13,7 @@ FortreeCity_House4_MapScripts::
 # 7 "data/maps/FortreeCity_House4/scripts.pory"
 FortreeCity_House4_EventScript_Woman::
 # 8 "data/maps/FortreeCity_House4/scripts.pory"
-	msgbox FortreeCity_House4_Text_BringsWorldCloserTogether, MSGBOX_NPC
+	msgbox_mugshot FortreeCity_House4_Text_BringsWorldCloserTogether, MSGBOX_NPC, MUGSHOT_WOMAN4
 # 9 "data/maps/FortreeCity_House4/scripts.pory"
 	end
 # 10 "data/maps/FortreeCity_House4/scripts.pory"

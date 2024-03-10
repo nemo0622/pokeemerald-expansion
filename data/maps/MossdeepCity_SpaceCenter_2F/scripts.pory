@@ -113,12 +113,12 @@ MossdeepCity_SpaceCenter_2F_EventScript_Scientist::
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistMagma::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel, MSGBOX_DEFAULT
+	msgbox_mugshot MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel, MSGBOX_DEFAULT, MUGSHOT_SCIENTIST
 	release
 	end
 

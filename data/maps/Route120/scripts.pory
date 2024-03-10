@@ -325,7 +325,7 @@ Route120_EventScript_RematchJeffrey::
 
 Route120_EventScript_Jennifer::
 	trainerbattle_single TRAINER_JENNIFER, Route120_Text_JenniferIntro, Route120_Text_JenniferDefeat
-	msgbox Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 	end
 
 Route120_EventScript_Chip::
@@ -335,12 +335,12 @@ Route120_EventScript_Chip::
 
 Route120_EventScript_Clarissa::
 	trainerbattle_single TRAINER_CLARISSA, Route120_Text_ClarissaIntro, Route120_Text_ClarissaDefeat
-	msgbox Route120_Text_ClarissaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_ClarissaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 	end
 
 Route120_EventScript_Angelica::
 	trainerbattle_single TRAINER_ANGELICA, Route120_Text_AngelicaIntro, Route120_Text_AngelicaDefeat
-	msgbox Route120_Text_AngelicaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot Route120_Text_AngelicaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
 	end
 
 Route120_EventScript_Keigo::

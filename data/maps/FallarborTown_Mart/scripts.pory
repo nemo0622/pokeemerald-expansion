@@ -31,7 +31,7 @@ FallarborTown_Mart_Pokemart:
 	end
 
 FallarborTown_Mart_EventScript_Woman::
-	msgbox FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC
+	msgbox_mugshot FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 FallarborTown_Mart_EventScript_PokefanM::

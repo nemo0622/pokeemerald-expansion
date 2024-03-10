@@ -17,7 +17,7 @@ DewfordTown_House1_EventScript_Man::
 # 9 "data/maps/DewfordTown_House1/scripts.pory"
 DewfordTown_House1_EventScript_Woman::
 # 10 "data/maps/DewfordTown_House1/scripts.pory"
-	msgbox DewfordTown_House1_Text_LifeGoesSlowlyOnIsland, MSGBOX_NPC
+	msgbox_mugshot DewfordTown_House1_Text_LifeGoesSlowlyOnIsland, MSGBOX_NPC, MUGSHOT_WOMAN3
 # 11 "data/maps/DewfordTown_House1/scripts.pory"
 	end
 # 12 "data/maps/DewfordTown_House1/scripts.pory"

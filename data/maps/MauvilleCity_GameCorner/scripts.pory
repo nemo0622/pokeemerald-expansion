@@ -370,7 +370,7 @@ MauvilleCity_GameCorner_EventScript_CancelTMSelect::
 	end
 
 MauvilleCity_GameCorner_EventScript_Woman2::
-	msgbox MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay, MSGBOX_NPC
+	msgbox_mugshot MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 MauvilleCity_GameCorner_EventScript_Gentleman::
@@ -498,7 +498,7 @@ MauvilleCity_GameCorner_EventScript_Maniac::
 MauvilleCity_GameCorner_EventScript_Woman::
 	lock
 	faceplayer
-	msgbox MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo, MSGBOX_DEFAULT
+	msgbox_mugshot MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 	end
 

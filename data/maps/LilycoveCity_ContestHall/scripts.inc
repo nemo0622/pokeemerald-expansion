@@ -271,7 +271,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestAudience4::
 # 136 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 137 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_StillLoveSmartnessContests, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_StillLoveSmartnessContests, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
 # 138 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 139 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -331,7 +331,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant1::
 # 166 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 167 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_EyesWillBeGluedToMyBeauty, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_EyesWillBeGluedToMyBeauty, MSGBOX_DEFAULT, MUGSHOT_WOMAN4
 # 168 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 169 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -411,7 +411,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestAudience1::
 # 206 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 207 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_WinBeautyContestMakesMeHappy, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_WinBeautyContestMakesMeHappy, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 208 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 209 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -451,7 +451,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestAudience3::
 # 226 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	faceplayer
 # 227 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_CantWinOnBeautyAlone, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_CantWinOnBeautyAlone, MSGBOX_DEFAULT, MUGSHOT_WOMAN1
 # 228 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 229 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -593,7 +593,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestAudience1::
 # 297 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	waitmovement 0
 # 298 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_MyChildIsInContest, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_MyChildIsInContest, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 299 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	closemessage
 # 300 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -603,7 +603,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestAudience1::
 # 302 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	delay 25
 # 303 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	msgbox LilycoveCity_ContestHall_Text_ComeOnDear, MSGBOX_DEFAULT
+	msgbox_mugshot LilycoveCity_ContestHall_Text_ComeOnDear, MSGBOX_DEFAULT, MUGSHOT_WOMAN2
 # 304 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	releaseall
 # 305 "data/maps/LilycoveCity_ContestHall/scripts.pory"

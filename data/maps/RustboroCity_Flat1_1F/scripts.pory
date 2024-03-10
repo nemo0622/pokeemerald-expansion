@@ -7,7 +7,7 @@ RustboroCity_Flat1_1F_EventScript_Man::
 	end
 
 RustboroCity_Flat1_1F_EventScript_Woman::
-	msgbox RustboroCity_Flat1_1F_Text_PokemonStrange, MSGBOX_NPC
+	msgbox_mugshot RustboroCity_Flat1_1F_Text_PokemonStrange, MSGBOX_NPC, MUGSHOT_WOMAN5
 	end
 
 RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility:

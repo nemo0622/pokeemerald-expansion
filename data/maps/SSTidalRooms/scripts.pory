@@ -50,7 +50,7 @@ SSTidalRooms_EventScript_Jed::
 
 SSTidalRooms_EventScript_Lea::
 	trainerbattle_double TRAINER_LEA_AND_JED, SSTidalRooms_Text_LeaIntro, SSTidalRooms_Text_LeaDefeat, SSTidalRooms_Text_LeaNotEnoughMons
-	msgbox SSTidalRooms_Text_LeaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_LeaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN4
 	end
 
 SSTidalRooms_EventScript_Garret::
@@ -60,7 +60,7 @@ SSTidalRooms_EventScript_Garret::
 
 SSTidalRooms_EventScript_Naomi::
 	trainerbattle_single TRAINER_NAOMI, SSTidalRooms_Text_NaomiIntro, SSTidalRooms_Text_NaomiDefeat
-	msgbox SSTidalRooms_Text_NaomiPostBattle, MSGBOX_AUTOCLOSE
+	msgbox_mugshot SSTidalRooms_Text_NaomiPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN2
 	end
 
 SSTidalRooms_Text_TakeRestOnBed:

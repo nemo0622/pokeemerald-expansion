@@ -19,7 +19,7 @@ MossdeepCity_House1_EventScript_NeutralNature::
 	end
 
 MossdeepCity_House1_EventScript_Woman::
-	msgbox MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes, MSGBOX_NPC
+	msgbox_mugshot MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes, MSGBOX_NPC, MUGSHOT_WOMAN2
 	end
 
 MossdeepCity_House1_Text_HmmYourPokemon:
