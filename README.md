@@ -25,7 +25,7 @@
 ### Graphics
 - New overworlds from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
     - Credit goes to Pawkkie for May's sprite and RavePossum for the rest!
-- [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to many characters
+- [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to most NPCs
     - Credit to Zenionith and Zermonius on DeviantArt for ORAS style PSS icons
     - Credit to Wergan on DeviantArt and Omega on WhackaHack for various other PSS-style icons
 - New Gen 5 inspired map popups, ported from BSBob by [RavePossum](https://github.com/ravepossum/pokeemerald)
@@ -39,8 +39,8 @@
     - Most noticable during cutscenes, some problem with ClearMugshot most likely
 
 ### Future Plans:
-- Expanded implementation of NPC Mugshot system
-    - Most NPCs will show a mugshot when speaking!
+- More FRLG-style NPCs to add some variation to the overworld
+    - Also includes more matching portraits to show when talking
 - Level caps - code already in pokeemerald-expansion!
     - Just need to set values. Not meant to be for difficulty, just to balance game around EXP all without overpowering team
     - Also use opportunity to make Mr. Stone give you something other than the EXP share lol oopsies. in data/maps/RustboroCity_DevonCorp_3F/scripts.pory
