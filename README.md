@@ -41,6 +41,7 @@
 ### Future Plans:
 - More FRLG-style NPCs to add some variation to the overworld
     - Also includes more matching portraits to show when talking
+    - Make palette shift at night! Should be something in overworld.c
 - Level caps - code already in pokeemerald-expansion!
     - Just need to set values. Not meant to be for difficulty, just to balance game around EXP all without overpowering team
     - Also use opportunity to make Mr. Stone give you something other than the EXP share lol oopsies. in data/maps/RustboroCity_DevonCorp_3F/scripts.pory
