@@ -17,6 +17,7 @@
 - Fun HM Workaround!
     - Meet people and Pokémon willing to help you on your journey!
     - Timburr's Timber (Cut) in Rustboro, TinkaTough (Rock Smash) in Mauville, etc.
+- [Soft Level Caps](https://github.com/rh-hideout/pokeemerald-expansion/pull/4259/commits/c56acb944b3e669df37270a86f57f57c12223f64), meant to balance gameplay around the EXP. All feature
 - Various Quality of Life Features, including:
     - Friendship stat boost! High friendship = about 10% boost to encourage forming a bond with Pokémon more
     - Easier Fishing and Faster Berry Growth
@@ -42,9 +43,7 @@
 - More FRLG-style NPCs to add some variation to the overworld
     - Also includes more matching portraits to show when talking
     - Make palette shift at night! Should be something in overworld.c
-- Level caps - code already in pokeemerald-expansion!
-    - Just need to set values. Not meant to be for difficulty, just to balance game around EXP all without overpowering team
-    - Also use opportunity to make Mr. Stone give you something other than the EXP share lol oopsies. in data/maps/RustboroCity_DevonCorp_3F/scripts.pory
+- [EV/IV Editor](https://github.com/pret/pokeemerald/wiki/Add-a-EV---IV-Stat-Editor-UI), maybe unlocked by giving Professor Cozmo the meteorite in Fallarbor
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you
     - Code works, but need to add actual map locations!
@@ -57,3 +56,4 @@
 - Story enhancements - make Aqua vs Magma conflict clearer + more interesting, bring elements of story improvements and Delta Episode from ORAS, etc.
     - Include involving Wallace and Steven more in the story (maybe replace Scott with Wallace, witnessing your journey?)
 - Hoopa Rings - mysterious rings found around Hoenn which transport one random Pokémon from another region
+- Maybe add a way to play Dodrio Berry Picking for rewards? maybe? idk
