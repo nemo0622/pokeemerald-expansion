@@ -7,7 +7,7 @@
     - Physical/Special split, Pokémon data up to Generation 9, updated battle engine, EXP. All, etc.
 - [aarant's](https://github.com/aarant/pokeemerald) DNS, Key Item Wheel, and Decapitalization branches
     - Key Item Wheel - Register up to 4 key items
-    - DNS - Day/Night System, along with shadows under people
+    - Parts of Day/Night system (mostly disabled for now, see Bugs section lol)
         - Also implemented [FakeRTC](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/page-24#post-10678054), making day cycles pass every 48 minutes
     - Decapitalization via aarant's Guillotine branch!
 - [DexNav](https://github.com/ghoulslash/pokeemerald/tree/dexnav) by GhoulSlash
@@ -38,6 +38,8 @@
 ### Known Bugs:
 - Mugshots occasionally cut a little portion out of the textbox
     - Most noticable during cutscenes, some problem with ClearMugshot most likely
+- Day/Night system DISABLED - new NPC GFX palettes don't tint at night :(
+    - Change made in "u8 UpdateTimeOfDay(void)" function of "overworld.c" file - commented out a shit ton of real code lol sorry
 
 ### Future Plans:
 - More FRLG-style NPCs to add some variation to the overworld
