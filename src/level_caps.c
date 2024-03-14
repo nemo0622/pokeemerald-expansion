@@ -40,8 +40,9 @@ u32 GetCurrentLevelCap(void)
 
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
 {
+
     static const u32 sExpScalingDown[5] = { 2, 4, 8, 32, 64 };  // Default: 4, 8, 16, 32, 64
-    static const u32 sExpScalingUp[5]   = { 2, 2, 2, 1, 1 };  // Default: 16, 8, 4, 2, 1
+    static const u32 sExpScalingUp[5]   = { 2, 1, 1, 1, 1 };  // Default: 16, 8, 4, 2, 1
 
     u32 levelDifference;
     u32 currentLevelCap = GetCurrentLevelCap();
@@ -53,9 +54,9 @@ u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
     {
         levelDifference = currentLevelCap - level;
         if (levelDifference > ARRAY_COUNT(sExpScalingDown))
-            return expValue + (expValue / sExpScalingUp[ARRAY_COUNT(sExpScalingDown) - 1]);
+            return (expValue + (expValue / sExpScalingUp[ARRAY_COUNT(sExpScalingDown) - 1]));
         else
-            return expValue + (expValue / sExpScalingUp[levelDifference]);
+            return (expValue + (expValue / sExpScalingUp[levelDifference]));
     }
     else if (B_EXP_CAP_TYPE == EXP_CAP_SOFT && level >= currentLevelCap)
     {
@@ -64,6 +65,18 @@ u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
             return expValue / sExpScalingDown[ARRAY_COUNT(sExpScalingDown) - 1];
         else
             return expValue / sExpScalingDown[levelDifference];
+    }
+    // my shitty custom code give me a break dammit
+    else if (B_EXP_CAP_TYPE == EXP_CAP_SOFT)
+    {
+        if(level >= currentLevelCap)
+        {
+            return expValue / 4;
+        }
+        else
+        {
+            return 1;
+        }
     }
     else
         return 0;
