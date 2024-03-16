@@ -951,7 +951,7 @@ Route109_EventScript_Elijah::
 # 476 "data/maps/Route109/scripts.pory"
 	trainerbattle_single TRAINER_ELIJAH, Route109_Text_ElijahIntro, Route109_Text_ElijahDefeated
 # 477 "data/maps/Route109/scripts.pory"
-	msgbox_mugshot Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 478 "data/maps/Route109/scripts.pory"
 	end
 # 479 "data/maps/Route109/scripts.pory"

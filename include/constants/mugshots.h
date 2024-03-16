@@ -77,5 +77,6 @@
 #define MUGSHOT_WOMAN3  72
 #define MUGSHOT_WOMAN4  73
 #define MUGSHOT_WOMAN5  74
+#define MUGSHOT_BIRD_KEEPER  75
 
 #endif

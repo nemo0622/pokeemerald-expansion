@@ -109,7 +109,7 @@ Route105_EventScript_Josue::
 # 55 "data/maps/Route105/scripts.pory"
 	trainerbattle_single TRAINER_JOSUE, Route105_Text_JosueIntro, Route105_Text_JosueDefeated
 # 56 "data/maps/Route105/scripts.pory"
-	msgbox_mugshot Route105_Text_JosuePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route105_Text_JosuePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 57 "data/maps/Route105/scripts.pory"
 	end
 # 58 "data/maps/Route105/scripts.pory"

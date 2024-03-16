@@ -469,7 +469,7 @@ Route118_EventScript_Perry::
 # 235 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_PERRY, Route118_Text_PerryIntro, Route118_Text_PerryDefeat
 # 236 "data/maps/Route118/scripts.pory"
-	msgbox_mugshot Route118_Text_PerryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route118_Text_PerryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 237 "data/maps/Route118/scripts.pory"
 	end
 # 238 "data/maps/Route118/scripts.pory"
@@ -479,7 +479,7 @@ Route118_EventScript_Chester::
 # 240 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_CHESTER, Route118_Text_ChesterIntro, Route118_Text_ChesterDefeat
 # 241 "data/maps/Route118/scripts.pory"
-	msgbox_mugshot Route118_Text_ChesterPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route118_Text_ChesterPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 242 "data/maps/Route118/scripts.pory"
 	end
 # 243 "data/maps/Route118/scripts.pory"

@@ -233,12 +233,12 @@ Route118_EventScript_RematchDalton::
 
 Route118_EventScript_Perry::
 	trainerbattle_single TRAINER_PERRY, Route118_Text_PerryIntro, Route118_Text_PerryDefeat
-	msgbox_mugshot Route118_Text_PerryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route118_Text_PerryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 	end
 
 Route118_EventScript_Chester::
 	trainerbattle_single TRAINER_CHESTER, Route118_Text_ChesterIntro, Route118_Text_ChesterDefeat
-	msgbox_mugshot Route118_Text_ChesterPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route118_Text_ChesterPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 	end
 
 Route118_EventScript_Deandre::

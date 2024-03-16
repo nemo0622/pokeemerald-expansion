@@ -26,12 +26,13 @@
 ### Graphics
 - New overworlds from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
     - Credit goes to Pawkkie for May's sprite and RavePossum for the rest!
+    - Others from [FRLG-style NPC Megapack](https://reliccastle.com/resources/823/) and [Aveontrainer](https://www.deviantart.com/aveontrainer/gallery/67900303/overworld) on DeviantArt
 - [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to most NPCs
     - Credit to Zenionith and Zermonius on DeviantArt for ORAS style PSS icons
     - Credit to Wergan on DeviantArt and Omega on WhackaHack for various other PSS-style icons
 - New Gen 5 inspired map popups, ported from BSBob by [RavePossum](https://github.com/ravepossum/pokeemerald)
 - Improved Battle Backgrounds by RavePossum and Ruki
-- New Archie sprite based on ORAS design by Muzyun and SlayerOne998
+- New Archie battle sprite based on ORAS design by Muzyun and SlayerOne998
 
 ## Bugs and Future Plans
 
@@ -44,7 +45,6 @@
 ### Future Plans:
 - More FRLG-style NPCs to add some variation to the overworld
     - Also includes more matching portraits to show when talking
-    - Make palette shift at night! Should be something in overworld.c
 - [EV/IV Editor](https://github.com/pret/pokeemerald/wiki/Add-a-EV---IV-Stat-Editor-UI), maybe unlocked by giving Professor Cozmo the meteorite in Fallarbor
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you

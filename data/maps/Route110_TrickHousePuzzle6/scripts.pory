@@ -35,7 +35,7 @@ Route110_TrickHousePuzzle6_EventScript_Sophia::
 
 Route110_TrickHousePuzzle6_EventScript_Benny::
 	trainerbattle_single TRAINER_BENNY, Route110_TrickHousePuzzle6_Text_BennyIntro, Route110_TrickHousePuzzle6_Text_BennyDefeat
-	msgbox_mugshot Route110_TrickHousePuzzle6_Text_BennyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route110_TrickHousePuzzle6_Text_BennyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 	end
 
 Route110_TrickHousePuzzle6_EventScript_Sebastian::

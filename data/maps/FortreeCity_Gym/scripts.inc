@@ -153,7 +153,7 @@ FortreeCity_Gym_EventScript_Jared::
 # 77 "data/maps/FortreeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_JARED, FortreeCity_Gym_Text_JaredIntro, FortreeCity_Gym_Text_JaredDefeat
 # 78 "data/maps/FortreeCity_Gym/scripts.pory"
-	msgbox_mugshot FortreeCity_Gym_Text_JaredPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot FortreeCity_Gym_Text_JaredPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 79 "data/maps/FortreeCity_Gym/scripts.pory"
 	end
 # 80 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -163,7 +163,7 @@ FortreeCity_Gym_EventScript_Edwardo::
 # 82 "data/maps/FortreeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_EDWARDO, FortreeCity_Gym_Text_EdwardoIntro, FortreeCity_Gym_Text_EdwardoDefeat
 # 83 "data/maps/FortreeCity_Gym/scripts.pory"
-	msgbox_mugshot FortreeCity_Gym_Text_EdwardoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot FortreeCity_Gym_Text_EdwardoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 84 "data/maps/FortreeCity_Gym/scripts.pory"
 	end
 # 85 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -193,7 +193,7 @@ FortreeCity_Gym_EventScript_Humberto::
 # 97 "data/maps/FortreeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_HUMBERTO, FortreeCity_Gym_Text_HumbertoIntro, FortreeCity_Gym_Text_HumbertoDefeat
 # 98 "data/maps/FortreeCity_Gym/scripts.pory"
-	msgbox_mugshot FortreeCity_Gym_Text_HumbertoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot FortreeCity_Gym_Text_HumbertoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 99 "data/maps/FortreeCity_Gym/scripts.pory"
 	end
 # 100 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -203,7 +203,7 @@ FortreeCity_Gym_EventScript_Darius::
 # 102 "data/maps/FortreeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_DARIUS, FortreeCity_Gym_Text_DariusIntro, FortreeCity_Gym_Text_DariusDefeat
 # 103 "data/maps/FortreeCity_Gym/scripts.pory"
-	msgbox_mugshot FortreeCity_Gym_Text_DariusPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot FortreeCity_Gym_Text_DariusPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 104 "data/maps/FortreeCity_Gym/scripts.pory"
 	end
 # 105 "data/maps/FortreeCity_Gym/scripts.pory"

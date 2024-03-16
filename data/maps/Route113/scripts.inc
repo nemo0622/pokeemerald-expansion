@@ -245,7 +245,7 @@ Route113_EventScript_Coby::
 # 123 "data/maps/Route113/scripts.pory"
 	trainerbattle_single TRAINER_COBY, Route113_Text_CobyIntro, Route113_Text_CobyDefeat
 # 124 "data/maps/Route113/scripts.pory"
-	msgbox_mugshot Route113_Text_CobyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route113_Text_CobyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 125 "data/maps/Route113/scripts.pory"
 	end
 # 126 "data/maps/Route113/scripts.pory"

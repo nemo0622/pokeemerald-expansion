@@ -151,7 +151,7 @@ Route125_EventScript_Presley::
 # 76 "data/maps/Route125/scripts.pory"
 	trainerbattle_single TRAINER_PRESLEY, Route125_Text_PresleyIntro, Route125_Text_PresleyDefeat
 # 77 "data/maps/Route125/scripts.pory"
-	msgbox_mugshot Route125_Text_PresleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route125_Text_PresleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 78 "data/maps/Route125/scripts.pory"
 	end
 # 79 "data/maps/Route125/scripts.pory"

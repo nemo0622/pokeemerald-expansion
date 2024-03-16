@@ -474,7 +474,7 @@ Route109_EventScript_Hailey::
 
 Route109_EventScript_Elijah::
 	trainerbattle_single TRAINER_ELIJAH, Route109_Text_ElijahIntro, Route109_Text_ElijahDefeated
-	msgbox_mugshot Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 	end
 
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods:

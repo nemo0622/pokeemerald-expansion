@@ -48,7 +48,7 @@ Route127_EventScript_Roger::
 
 Route127_EventScript_Aidan::
 	trainerbattle_single TRAINER_AIDAN, Route127_Text_AidanIntro, Route127_Text_AidanDefeat
-	msgbox_mugshot Route127_Text_AidanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route127_Text_AidanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 	end
 
 Route127_EventScript_Athena::

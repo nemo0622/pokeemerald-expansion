@@ -247,7 +247,7 @@ Route123_EventScript_Alberto::
 # 124 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_ALBERTO, Route123_Text_AlbertoIntro, Route123_Text_AlbertoDefeat
 # 125 "data/maps/Route123/scripts.pory"
-	msgbox_mugshot Route123_Text_AlbertoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route123_Text_AlbertoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 126 "data/maps/Route123/scripts.pory"
 	end
 # 127 "data/maps/Route123/scripts.pory"

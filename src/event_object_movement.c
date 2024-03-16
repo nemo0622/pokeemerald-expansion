@@ -476,6 +476,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_EMOTES                  0x8003
 #define OBJ_EVENT_PAL_TAG_NEON_LIGHT              0x8004
 #define OBJ_EVENT_PAL_TAG_HIKER_NEW               0x8005
+#define OBJ_EVENT_PAL_TAG_ARCHIE_NEW              0x8006
+#define OBJ_EVENT_PAL_TAG_BIRD_KEEPER             0x8007
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -527,6 +529,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPaletteEmotes, OBJ_EVENT_PAL_TAG_EMOTES},
     {gObjectEventPaletteNeonLight, OBJ_EVENT_PAL_TAG_NEON_LIGHT},
     {gObjectEventPalette_Hiker_New, OBJ_EVENT_PAL_TAG_HIKER_NEW},
+    {gObjectEventPalette_Archie_New, OBJ_EVENT_PAL_TAG_ARCHIE_NEW},
+    {gObjectEventPalette_Bird_Keeper, OBJ_EVENT_PAL_TAG_BIRD_KEEPER},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

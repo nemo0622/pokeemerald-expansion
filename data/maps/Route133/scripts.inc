@@ -51,7 +51,7 @@ Route133_EventScript_Beck::
 # 26 "data/maps/Route133/scripts.pory"
 	trainerbattle_single TRAINER_BECK, Route133_Text_BeckIntro, Route133_Text_BeckDefeat
 # 27 "data/maps/Route133/scripts.pory"
-	msgbox_mugshot Route133_Text_BeckPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route133_Text_BeckPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 28 "data/maps/Route133/scripts.pory"
 	end
 # 29 "data/maps/Route133/scripts.pory"

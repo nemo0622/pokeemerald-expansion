@@ -268,28 +268,28 @@ Route120_EventScript_RouteSign121::
 
 Route120_EventScript_Colin::
 	trainerbattle_single TRAINER_COLIN, Route120_Text_ColinIntro, Route120_Text_ColinDefeat
-	msgbox_mugshot Route120_Text_ColinPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route120_Text_ColinPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 	end
 
 Route120_EventScript_Robert::
 	trainerbattle_single TRAINER_ROBERT_1, Route120_Text_RobertIntro, Route120_Text_RobertDefeat, Route120_EventScript_RegisterRobert
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route120_EventScript_RematchRobert
-	msgbox_mugshot Route120_Text_RobertPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN5
+	msgbox_mugshot Route120_Text_RobertPostBattle, MSGBOX_DEFAULT, MUGSHOT_BIRD_KEEPER
 	release
 	end
 
 Route120_EventScript_RegisterRobert::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox_mugshot Route120_Text_RobertRegister, MSGBOX_DEFAULT, MUGSHOT_MAN5
+	msgbox_mugshot Route120_Text_RobertRegister, MSGBOX_DEFAULT, MUGSHOT_BIRD_KEEPER
 	register_matchcall TRAINER_ROBERT_1
 	release
 	end
 
 Route120_EventScript_RematchRobert::
 	trainerbattle_rematch TRAINER_ROBERT_1, Route120_Text_RobertRematchIntro, Route120_Text_RobertRematchDefeat
-	msgbox_mugshot Route120_Text_RobertPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route120_Text_RobertPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 	end
 
 Route120_EventScript_Lorenzo::

@@ -795,7 +795,7 @@ Route119_EventScript_Hugh::
 # 398 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_HUGH, Route119_Text_HughIntro, Route119_Text_HughDefeat
 # 399 "data/maps/Route119/scripts.pory"
-	msgbox_mugshot Route119_Text_HughPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route119_Text_HughPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 400 "data/maps/Route119/scripts.pory"
 	end
 # 401 "data/maps/Route119/scripts.pory"
@@ -805,7 +805,7 @@ Route119_EventScript_Phil::
 # 403 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_PHIL, Route119_Text_PhilIntro, Route119_Text_PhilDefeat
 # 404 "data/maps/Route119/scripts.pory"
-	msgbox_mugshot Route119_Text_PhilPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route119_Text_PhilPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 # 405 "data/maps/Route119/scripts.pory"
 	end
 # 406 "data/maps/Route119/scripts.pory"

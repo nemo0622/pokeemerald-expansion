@@ -396,12 +396,12 @@ Route119_EventScript_RematchCatherine::
 
 Route119_EventScript_Hugh::
 	trainerbattle_single TRAINER_HUGH, Route119_Text_HughIntro, Route119_Text_HughDefeat
-	msgbox_mugshot Route119_Text_HughPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route119_Text_HughPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 	end
 
 Route119_EventScript_Phil::
 	trainerbattle_single TRAINER_PHIL, Route119_Text_PhilIntro, Route119_Text_PhilDefeat
-	msgbox_mugshot Route119_Text_PhilPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route119_Text_PhilPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_BIRD_KEEPER
 	end
 
 Route119_EventScript_Yasu::
