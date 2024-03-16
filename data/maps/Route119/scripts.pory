@@ -431,7 +431,7 @@ Route119_EventScript_Fabian::
 
 Route119_EventScript_Dayton::
 	trainerbattle_single TRAINER_DAYTON, Route119_Text_DaytonIntro, Route119_Text_DaytonDefeat
-	msgbox_mugshot Route119_Text_DaytonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route119_Text_DaytonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 	end
 
 Route119_EventScript_Rachel::

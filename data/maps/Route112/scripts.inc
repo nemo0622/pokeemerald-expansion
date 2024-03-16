@@ -207,7 +207,7 @@ Route112_EventScript_Bryant::
 # 104 "data/maps/Route112/scripts.pory"
 	trainerbattle_single TRAINER_BRYANT, Route112_Text_BryantIntro, Route112_Text_BryantDefeat
 # 105 "data/maps/Route112/scripts.pory"
-	msgbox_mugshot Route112_Text_BryantPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route112_Text_BryantPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 # 106 "data/maps/Route112/scripts.pory"
 	end
 # 107 "data/maps/Route112/scripts.pory"

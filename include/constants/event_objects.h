@@ -244,8 +244,9 @@
 #define OBJ_EVENT_GFX_HIKER_NEW                  239
 #define OBJ_EVENT_GFX_ARCHIE_NEW                 240
 #define OBJ_EVENT_GFX_BIRD_KEEPER                241
+#define OBJ_EVENT_GFX_KINDLER                    242
 
-#define NUM_OBJ_EVENT_GFX                        242
+#define NUM_OBJ_EVENT_GFX                        243
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

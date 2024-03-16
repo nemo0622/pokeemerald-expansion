@@ -252,6 +252,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvi
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hiker_New;         // REMEMBER: Also add below!
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Archie_New;         // REMEMBER: Also add below!
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bird_Keeper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kindler;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -498,6 +499,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_HIKER_NEW] =                &gObjectEventGraphicsInfo_Hiker_New,         // REMEMBER: Also add above!
     [OBJ_EVENT_GFX_ARCHIE_NEW] =               &gObjectEventGraphicsInfo_Archie_New,         // REMEMBER: Also add above!
     [OBJ_EVENT_GFX_BIRD_KEEPER] =              &gObjectEventGraphicsInfo_Bird_Keeper,
+    [OBJ_EVENT_GFX_KINDLER] =                  &gObjectEventGraphicsInfo_Kindler,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

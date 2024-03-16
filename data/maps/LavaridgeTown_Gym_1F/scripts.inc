@@ -223,7 +223,7 @@ LavaridgeTown_Gym_1F_EventScript_Cole::
 # 112 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_COLE, LOCALID_COLE, LavaridgeTown_Gym_1F_Text_ColeIntro, LavaridgeTown_Gym_1F_Text_ColeDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript
 # 113 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox_mugshot LavaridgeTown_Gym_1F_Text_ColePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_ColePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 # 114 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	end
 # 115 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
@@ -247,7 +247,7 @@ LavaridgeTown_Gym_1F_EventScript_Axle::
 # 124 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_AXLE, LOCALID_AXLE, LavaridgeTown_Gym_1F_Text_AxleIntro, LavaridgeTown_Gym_1F_Text_AxleDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript
 # 125 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox_mugshot LavaridgeTown_Gym_1F_Text_AxlePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_AxlePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 # 126 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	end
 # 127 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
@@ -257,7 +257,7 @@ LavaridgeTown_Gym_B1F_EventScript_Keegan::
 # 129 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_KEEGAN, LOCALID_KEEGAN, LavaridgeTown_Gym_B1F_Text_KeeganIntro, LavaridgeTown_Gym_B1F_Text_KeeganDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript
 # 130 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox_mugshot LavaridgeTown_Gym_B1F_Text_KeeganPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot LavaridgeTown_Gym_B1F_Text_KeeganPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 # 131 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	end
 # 132 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
@@ -287,7 +287,7 @@ LavaridgeTown_Gym_B1F_EventScript_Jace::
 # 144 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_JACE, LOCALID_JACE, LavaridgeTown_Gym_B1F_Text_JaceIntro, LavaridgeTown_Gym_B1F_Text_JaceDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript
 # 145 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox_mugshot LavaridgeTown_Gym_B1F_Text_JacePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot LavaridgeTown_Gym_B1F_Text_JacePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 # 146 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	end
 # 147 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
@@ -297,7 +297,7 @@ LavaridgeTown_Gym_B1F_EventScript_Jeff::
 # 149 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_JEFF, LOCALID_JEFF, LavaridgeTown_Gym_B1F_Text_JeffIntro, LavaridgeTown_Gym_B1F_Text_JeffDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript
 # 150 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox_mugshot LavaridgeTown_Gym_B1F_Text_JeffPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot LavaridgeTown_Gym_B1F_Text_JeffPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 # 151 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	end
 # 152 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

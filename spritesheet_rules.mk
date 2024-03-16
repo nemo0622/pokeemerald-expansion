@@ -745,3 +745,6 @@ $(OBJEVENTGFXDIR)/people/team_aqua/archie_new.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/people/bird_keeper.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/kindler.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4

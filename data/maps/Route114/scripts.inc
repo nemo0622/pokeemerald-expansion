@@ -253,7 +253,7 @@ Route114_EventScript_Bernie::
 # 127 "data/maps/Route114/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route114_EventScript_RematchBernie
 # 128 "data/maps/Route114/scripts.pory"
-	msgbox_mugshot Route114_Text_BerniePostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN5
+	msgbox_mugshot Route114_Text_BerniePostBattle, MSGBOX_DEFAULT, MUGSHOT_KINDLER
 # 129 "data/maps/Route114/scripts.pory"
 	release
 # 130 "data/maps/Route114/scripts.pory"
@@ -267,7 +267,7 @@ Route114_EventScript_RegisterBernie::
 # 134 "data/maps/Route114/scripts.pory"
 	waitmovement 0
 # 135 "data/maps/Route114/scripts.pory"
-	msgbox_mugshot Route114_Text_BernieRegister, MSGBOX_DEFAULT, MUGSHOT_MAN5
+	msgbox_mugshot Route114_Text_BernieRegister, MSGBOX_DEFAULT, MUGSHOT_KINDLER
 # 136 "data/maps/Route114/scripts.pory"
 	register_matchcall TRAINER_BERNIE_1
 # 137 "data/maps/Route114/scripts.pory"
@@ -281,7 +281,7 @@ Route114_EventScript_RematchBernie::
 # 141 "data/maps/Route114/scripts.pory"
 	trainerbattle_rematch TRAINER_BERNIE_1, Route114_Text_BernieRematchIntro, Route114_Text_BernieRematchDefeat
 # 142 "data/maps/Route114/scripts.pory"
-	msgbox_mugshot Route114_Text_BerniePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route114_Text_BerniePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 # 143 "data/maps/Route114/scripts.pory"
 	end
 # 144 "data/maps/Route114/scripts.pory"

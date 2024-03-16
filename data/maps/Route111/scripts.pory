@@ -537,7 +537,7 @@ Route111_EventScript_RematchBrooke::
 
 Route111_EventScript_Hayden::
 	trainerbattle_single TRAINER_HAYDEN, Route111_Text_HaydenIntro, Route111_Text_HaydenDefeat
-	msgbox_mugshot Route111_Text_HaydenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route111_Text_HaydenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 	end
 
 Route111_EventScript_Bianca::

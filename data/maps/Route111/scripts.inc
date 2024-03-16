@@ -1077,7 +1077,7 @@ Route111_EventScript_Hayden::
 # 539 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_HAYDEN, Route111_Text_HaydenIntro, Route111_Text_HaydenDefeat
 # 540 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_HaydenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route111_Text_HaydenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 # 541 "data/maps/Route111/scripts.pory"
 	end
 # 542 "data/maps/Route111/scripts.pory"

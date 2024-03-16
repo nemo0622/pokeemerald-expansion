@@ -865,7 +865,7 @@ Route119_EventScript_Dayton::
 # 433 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_DAYTON, Route119_Text_DaytonIntro, Route119_Text_DaytonDefeat
 # 434 "data/maps/Route119/scripts.pory"
-	msgbox_mugshot Route119_Text_DaytonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN5
+	msgbox_mugshot Route119_Text_DaytonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_KINDLER
 # 435 "data/maps/Route119/scripts.pory"
 	end
 # 436 "data/maps/Route119/scripts.pory"
