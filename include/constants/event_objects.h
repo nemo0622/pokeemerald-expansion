@@ -246,8 +246,11 @@
 #define OBJ_EVENT_GFX_BIRD_KEEPER                241
 #define OBJ_EVENT_GFX_KINDLER                    242
 #define OBJ_EVENT_GFX_RUIN_MANIAC                243
+#define OBJ_EVENT_GFX_RANCHER                    244
+#define OBJ_EVENT_GFX_JUGGLER                    245
+#define OBJ_EVENT_GFX_BIKER                      246
 
-#define NUM_OBJ_EVENT_GFX                        244
+#define NUM_OBJ_EVENT_GFX                        247
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

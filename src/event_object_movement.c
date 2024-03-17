@@ -480,6 +480,9 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_BIRD_KEEPER             0x8007
 #define OBJ_EVENT_PAL_TAG_KINDLER                 0x8008
 #define OBJ_EVENT_PAL_TAG_RUIN_MANIAC             0x8009
+#define OBJ_EVENT_PAL_TAG_RANCHER                 0x8010
+#define OBJ_EVENT_PAL_TAG_JUGGLER                 0x8011
+#define OBJ_EVENT_PAL_TAG_BIKER                   0x8012
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -535,6 +538,9 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Bird_Keeper, OBJ_EVENT_PAL_TAG_BIRD_KEEPER},
     {gObjectEventPalette_Kindler, OBJ_EVENT_PAL_TAG_KINDLER},
     {gObjectEventPalette_Ruin_Maniac, OBJ_EVENT_PAL_TAG_RUIN_MANIAC},
+    {gObjectEventPalette_Rancher, OBJ_EVENT_PAL_TAG_RANCHER},
+    {gObjectEventPalette_Juggler, OBJ_EVENT_PAL_TAG_JUGGLER},
+    {gObjectEventPalette_Biker, OBJ_EVENT_PAL_TAG_BIKER},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
