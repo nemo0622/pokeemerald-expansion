@@ -149,28 +149,28 @@ Route121_EventScript_Pat::
 
 Route121_EventScript_Marcel::
 	trainerbattle_single TRAINER_MARCEL, Route121_Text_MarcelIntro, Route121_Text_MarcelDefeat
-	msgbox_mugshot Route121_Text_MarcelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot Route121_Text_MarcelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 Route121_EventScript_Cristin::
 	trainerbattle_single TRAINER_CRISTIN_1, Route121_Text_CristinIntro, Route121_Text_CristinDefeat, Route121_EventScript_RegisterCristin
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchCristin
-	msgbox_mugshot Route121_Text_CristinPostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
+	msgbox_mugshot Route121_Text_CristinPostBattle, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_F
 	release
 	end
 
 Route121_EventScript_RegisterCristin::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox_mugshot Route121_Text_CristinRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
+	msgbox_mugshot Route121_Text_CristinRegister, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_F
 	register_matchcall TRAINER_CRISTIN_1
 	release
 	end
 
 Route121_EventScript_RematchCristin::
 	trainerbattle_rematch TRAINER_CRISTIN_1, Route121_Text_CristinRematchIntro, Route121_Text_CristinRematchDefeat
-	msgbox_mugshot Route121_Text_CristinPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route121_Text_CristinPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 Route121_Text_OkayMoveOutToMtPyre:

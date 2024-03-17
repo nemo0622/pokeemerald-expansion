@@ -301,7 +301,7 @@ Route121_EventScript_Marcel::
 # 151 "data/maps/Route121/scripts.pory"
 	trainerbattle_single TRAINER_MARCEL, Route121_Text_MarcelIntro, Route121_Text_MarcelDefeat
 # 152 "data/maps/Route121/scripts.pory"
-	msgbox_mugshot Route121_Text_MarcelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot Route121_Text_MarcelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 153 "data/maps/Route121/scripts.pory"
 	end
 # 154 "data/maps/Route121/scripts.pory"
@@ -315,7 +315,7 @@ Route121_EventScript_Cristin::
 # 158 "data/maps/Route121/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchCristin
 # 159 "data/maps/Route121/scripts.pory"
-	msgbox_mugshot Route121_Text_CristinPostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
+	msgbox_mugshot Route121_Text_CristinPostBattle, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_F
 # 160 "data/maps/Route121/scripts.pory"
 	release
 # 161 "data/maps/Route121/scripts.pory"
@@ -329,7 +329,7 @@ Route121_EventScript_RegisterCristin::
 # 165 "data/maps/Route121/scripts.pory"
 	waitmovement 0
 # 166 "data/maps/Route121/scripts.pory"
-	msgbox_mugshot Route121_Text_CristinRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
+	msgbox_mugshot Route121_Text_CristinRegister, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_F
 # 167 "data/maps/Route121/scripts.pory"
 	register_matchcall TRAINER_CRISTIN_1
 # 168 "data/maps/Route121/scripts.pory"
@@ -343,7 +343,7 @@ Route121_EventScript_RematchCristin::
 # 172 "data/maps/Route121/scripts.pory"
 	trainerbattle_rematch TRAINER_CRISTIN_1, Route121_Text_CristinRematchIntro, Route121_Text_CristinRematchDefeat
 # 173 "data/maps/Route121/scripts.pory"
-	msgbox_mugshot Route121_Text_CristinPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route121_Text_CristinPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 174 "data/maps/Route121/scripts.pory"
 	end
 # 175 "data/maps/Route121/scripts.pory"

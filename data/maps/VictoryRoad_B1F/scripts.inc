@@ -11,7 +11,7 @@ VictoryRoad_B1F_EventScript_Samuel::
 # 6 "data/maps/VictoryRoad_B1F/scripts.pory"
 	trainerbattle_single TRAINER_SAMUEL, VictoryRoad_B1F_Text_SamuelIntro, VictoryRoad_B1F_Text_SamuelDefeat
 # 7 "data/maps/VictoryRoad_B1F/scripts.pory"
-	msgbox_mugshot VictoryRoad_B1F_Text_SamuelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_B1F_Text_SamuelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 8 "data/maps/VictoryRoad_B1F/scripts.pory"
 	end
 # 9 "data/maps/VictoryRoad_B1F/scripts.pory"
@@ -21,7 +21,7 @@ VictoryRoad_B1F_EventScript_Shannon::
 # 11 "data/maps/VictoryRoad_B1F/scripts.pory"
 	trainerbattle_single TRAINER_SHANNON, VictoryRoad_B1F_Text_ShannonIntro, VictoryRoad_B1F_Text_ShannonDefeat
 # 12 "data/maps/VictoryRoad_B1F/scripts.pory"
-	msgbox_mugshot VictoryRoad_B1F_Text_ShannonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot VictoryRoad_B1F_Text_ShannonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 13 "data/maps/VictoryRoad_B1F/scripts.pory"
 	end
 # 14 "data/maps/VictoryRoad_B1F/scripts.pory"
@@ -31,7 +31,7 @@ VictoryRoad_B1F_EventScript_Michelle::
 # 16 "data/maps/VictoryRoad_B1F/scripts.pory"
 	trainerbattle_single TRAINER_MICHELLE, VictoryRoad_B1F_Text_MichelleIntro, VictoryRoad_B1F_Text_MichelleDefeat
 # 17 "data/maps/VictoryRoad_B1F/scripts.pory"
-	msgbox_mugshot VictoryRoad_B1F_Text_MichellePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot VictoryRoad_B1F_Text_MichellePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 18 "data/maps/VictoryRoad_B1F/scripts.pory"
 	end
 # 19 "data/maps/VictoryRoad_B1F/scripts.pory"
@@ -41,7 +41,7 @@ VictoryRoad_B1F_EventScript_Mitchell::
 # 21 "data/maps/VictoryRoad_B1F/scripts.pory"
 	trainerbattle_single TRAINER_MITCHELL, VictoryRoad_B1F_Text_MitchellIntro, VictoryRoad_B1F_Text_MitchellDefeat
 # 22 "data/maps/VictoryRoad_B1F/scripts.pory"
-	msgbox_mugshot VictoryRoad_B1F_Text_MitchellPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_B1F_Text_MitchellPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 23 "data/maps/VictoryRoad_B1F/scripts.pory"
 	end
 # 24 "data/maps/VictoryRoad_B1F/scripts.pory"
@@ -51,7 +51,7 @@ VictoryRoad_B1F_EventScript_Halle::
 # 26 "data/maps/VictoryRoad_B1F/scripts.pory"
 	trainerbattle_single TRAINER_HALLE, VictoryRoad_B1F_Text_HalleIntro, VictoryRoad_B1F_Text_HalleDefeat
 # 27 "data/maps/VictoryRoad_B1F/scripts.pory"
-	msgbox_mugshot VictoryRoad_B1F_Text_HallePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot VictoryRoad_B1F_Text_HallePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 28 "data/maps/VictoryRoad_B1F/scripts.pory"
 	end
 # 29 "data/maps/VictoryRoad_B1F/scripts.pory"

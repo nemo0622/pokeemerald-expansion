@@ -1759,7 +1759,7 @@ PetalburgCity_Gym_EventScript_Randall::
 # 880 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_RandallPostBadge
 # 881 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox_mugshot PetalburgCity_Gym_Text_RandallPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot PetalburgCity_Gym_Text_RandallPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 882 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 883 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1781,7 +1781,7 @@ PetalburgCity_Gym_EventScript_SlideOpenSpeedRoomDoors::
 # 891 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_RandallPostBadge::
 # 892 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_RandallPostBadge, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Gym_Text_RandallPostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
 # 893 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 894 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1793,7 +1793,7 @@ PetalburgCity_Gym_EventScript_Parker::
 # 897 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_ParkerPostBadge
 # 898 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox_mugshot PetalburgCity_Gym_Text_ParkerPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot PetalburgCity_Gym_Text_ParkerPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 899 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 900 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1815,7 +1815,7 @@ PetalburgCity_Gym_EventScript_SlideOpenConfusionRoomDoors::
 # 908 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_ParkerPostBadge::
 # 909 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_ParkerPostBadge, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Gym_Text_ParkerPostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
 # 910 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 911 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1827,7 +1827,7 @@ PetalburgCity_Gym_EventScript_George::
 # 914 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_GeorgePostBadge
 # 915 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox_mugshot PetalburgCity_Gym_Text_GeorgePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot PetalburgCity_Gym_Text_GeorgePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 916 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 917 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1849,7 +1849,7 @@ PetalburgCity_Gym_EventScript_SlideOpenRecoveryRoomDoors::
 # 925 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_GeorgePostBadge::
 # 926 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_GeorgePostBadge, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Gym_Text_GeorgePostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
 # 927 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 928 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1861,7 +1861,7 @@ PetalburgCity_Gym_EventScript_Berke::
 # 931 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_BerkePostBadge
 # 932 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox_mugshot PetalburgCity_Gym_Text_BerkePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot PetalburgCity_Gym_Text_BerkePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 933 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 934 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1883,7 +1883,7 @@ PetalburgCity_Gym_EventScript_SlideOpenOHKORoomDoors::
 # 942 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_BerkePostBadge::
 # 943 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_BerkePostBadge, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Gym_Text_BerkePostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
 # 944 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 945 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1895,7 +1895,7 @@ PetalburgCity_Gym_EventScript_Mary::
 # 948 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_MaryPostBadge
 # 949 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox_mugshot PetalburgCity_Gym_Text_MaryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_MaryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 950 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 951 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1917,7 +1917,7 @@ PetalburgCity_Gym_EventScript_SlideOpenAccuracyRoomDoors::
 # 959 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_MaryPostBadge::
 # 960 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox_mugshot PetalburgCity_Gym_Text_MaryPostBadge, MSGBOX_NPC, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_MaryPostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_F
 # 961 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 962 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1929,7 +1929,7 @@ PetalburgCity_Gym_EventScript_Alexia::
 # 965 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_AlexiaPostBadge
 # 966 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox_mugshot PetalburgCity_Gym_Text_AlexiaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_AlexiaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 967 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 968 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1951,7 +1951,7 @@ PetalburgCity_Gym_EventScript_SlideOpenDefenseRoomDoors::
 # 976 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_AlexiaPostBadge::
 # 977 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox_mugshot PetalburgCity_Gym_Text_AlexiaPostBadge, MSGBOX_NPC, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_AlexiaPostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_F
 # 978 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 979 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1963,7 +1963,7 @@ PetalburgCity_Gym_EventScript_Jody::
 # 982 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_JodyPostBadge
 # 983 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox_mugshot PetalburgCity_Gym_Text_JodyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_JodyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 984 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 985 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1985,7 +1985,7 @@ PetalburgCity_Gym_EventScript_SlideOpenStrengthRoomDoors::
 # 993 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_JodyPostBadge::
 # 994 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox_mugshot PetalburgCity_Gym_Text_JodyPostBadge, MSGBOX_NPC, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_JodyPostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_F
 # 995 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 # 996 "data/maps/PetalburgCity_Gym/scripts.pory"

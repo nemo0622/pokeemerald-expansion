@@ -61,7 +61,7 @@ Route132_EventScript_Darcy::
 # 31 "data/maps/Route132/scripts.pory"
 	trainerbattle_single TRAINER_DARCY, Route132_Text_DarcyIntro, Route132_Text_DarcyDefeat
 # 32 "data/maps/Route132/scripts.pory"
-	msgbox_mugshot Route132_Text_DarcyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route132_Text_DarcyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 33 "data/maps/Route132/scripts.pory"
 	end
 # 34 "data/maps/Route132/scripts.pory"
@@ -71,7 +71,7 @@ Route132_EventScript_Jonathan::
 # 36 "data/maps/Route132/scripts.pory"
 	trainerbattle_single TRAINER_JONATHAN, Route132_Text_JonathanIntro, Route132_Text_JonathanDefeat
 # 37 "data/maps/Route132/scripts.pory"
-	msgbox_mugshot Route132_Text_JonathanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot Route132_Text_JonathanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 38 "data/maps/Route132/scripts.pory"
 	end
 # 39 "data/maps/Route132/scripts.pory"

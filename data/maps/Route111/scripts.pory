@@ -497,42 +497,42 @@ Route111_EventScript_Wilton::
 	trainerbattle_single TRAINER_WILTON_1, Route111_Text_WiltonIntro, Route111_Text_WiltonDefeat, Route111_EventScript_RegisterWilton
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchWilton
-	msgbox_mugshot Route111_Text_WiltonPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN3
+	msgbox_mugshot Route111_Text_WiltonPostBattle, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_M
 	release
 	end
 
 Route111_EventScript_RegisterWilton::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox_mugshot Route111_Text_WiltonRegister, MSGBOX_DEFAULT, MUGSHOT_MAN3
+	msgbox_mugshot Route111_Text_WiltonRegister, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_M
 	register_matchcall TRAINER_WILTON_1
 	release
 	end
 
 Route111_EventScript_RematchWilton::
 	trainerbattle_rematch TRAINER_WILTON_1, Route111_Text_WiltonRematchIntro, Route111_Text_WiltonRematchDefeat
-	msgbox_mugshot Route111_Text_WiltonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot Route111_Text_WiltonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 Route111_EventScript_Brooke::
 	trainerbattle_single TRAINER_BROOKE_1, Route111_Text_BrookeIntro, Route111_Text_BrookeDefeat, Route111_EventScript_RegisterBrooke
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchBrooke
-	msgbox_mugshot Route111_Text_BrookePostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
+	msgbox_mugshot Route111_Text_BrookePostBattle, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_F
 	release
 	end
 
 Route111_EventScript_RegisterBrooke::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox_mugshot Route111_Text_BrookeRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
+	msgbox_mugshot Route111_Text_BrookeRegister, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_F
 	register_matchcall TRAINER_BROOKE_1
 	release
 	end
 
 Route111_EventScript_RematchBrooke::
 	trainerbattle_rematch TRAINER_BROOKE_1, Route111_Text_BrookeRematchIntro, Route111_Text_BrookeRematchDefeat
-	msgbox_mugshot Route111_Text_BrookePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route111_Text_BrookePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 Route111_EventScript_Hayden::

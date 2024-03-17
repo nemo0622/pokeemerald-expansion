@@ -29,12 +29,12 @@ Route132_EventScript_Paxton::
 
 Route132_EventScript_Darcy::
 	trainerbattle_single TRAINER_DARCY, Route132_Text_DarcyIntro, Route132_Text_DarcyDefeat
-	msgbox_mugshot Route132_Text_DarcyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route132_Text_DarcyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 Route132_EventScript_Jonathan::
 	trainerbattle_single TRAINER_JONATHAN, Route132_Text_JonathanIntro, Route132_Text_JonathanDefeat
-	msgbox_mugshot Route132_Text_JonathanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot Route132_Text_JonathanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 Route132_EventScript_Makayla::

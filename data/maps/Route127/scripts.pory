@@ -53,7 +53,7 @@ Route127_EventScript_Aidan::
 
 Route127_EventScript_Athena::
 	trainerbattle_single TRAINER_ATHENA, Route127_Text_AthenaIntro, Route127_Text_AthenaDefeat
-	msgbox_mugshot Route127_Text_AthenaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route127_Text_AthenaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 Route127_EventScript_Koji::

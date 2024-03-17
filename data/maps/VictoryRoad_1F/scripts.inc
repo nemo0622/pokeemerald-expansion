@@ -199,7 +199,7 @@ VictoryRoad_1F_EventScript_Edgar::
 # 100 "data/maps/VictoryRoad_1F/scripts.pory"
 	trainerbattle_single TRAINER_EDGAR, VictoryRoad_1F_Text_EdgarIntro, VictoryRoad_1F_Text_EdgarDefeat
 # 101 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox_mugshot VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 102 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 103 "data/maps/VictoryRoad_1F/scripts.pory"
@@ -209,7 +209,7 @@ VictoryRoad_1F_EventScript_Albert::
 # 105 "data/maps/VictoryRoad_1F/scripts.pory"
 	trainerbattle_single TRAINER_ALBERT, VictoryRoad_1F_Text_AlbertIntro, VictoryRoad_1F_Text_AlbertDefeat
 # 106 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox_mugshot VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 107 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 108 "data/maps/VictoryRoad_1F/scripts.pory"
@@ -219,7 +219,7 @@ VictoryRoad_1F_EventScript_Hope::
 # 110 "data/maps/VictoryRoad_1F/scripts.pory"
 	trainerbattle_single TRAINER_HOPE, VictoryRoad_1F_Text_HopeIntro, VictoryRoad_1F_Text_HopeDefeat
 # 111 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox_mugshot VictoryRoad_1F_Text_HopePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot VictoryRoad_1F_Text_HopePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 112 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 113 "data/maps/VictoryRoad_1F/scripts.pory"
@@ -229,7 +229,7 @@ VictoryRoad_1F_EventScript_Quincy::
 # 115 "data/maps/VictoryRoad_1F/scripts.pory"
 	trainerbattle_single TRAINER_QUINCY, VictoryRoad_1F_Text_QuincyIntro, VictoryRoad_1F_Text_QuincyDefeat
 # 116 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox_mugshot VictoryRoad_1F_Text_QuincyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_1F_Text_QuincyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 117 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 118 "data/maps/VictoryRoad_1F/scripts.pory"
@@ -239,7 +239,7 @@ VictoryRoad_1F_EventScript_Katelynn::
 # 120 "data/maps/VictoryRoad_1F/scripts.pory"
 	trainerbattle_single TRAINER_KATELYNN, VictoryRoad_1F_Text_KatelynnIntro, VictoryRoad_1F_Text_KatelynnDefeat
 # 121 "data/maps/VictoryRoad_1F/scripts.pory"
-	msgbox_mugshot VictoryRoad_1F_Text_KatelynnPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot VictoryRoad_1F_Text_KatelynnPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 122 "data/maps/VictoryRoad_1F/scripts.pory"
 	end
 # 123 "data/maps/VictoryRoad_1F/scripts.pory"

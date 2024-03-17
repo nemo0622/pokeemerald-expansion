@@ -93,7 +93,7 @@ Route123_EventScript_Wendy::
 # 47 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_WENDY, Route123_Text_WendyIntro, Route123_Text_WendyDefeat
 # 48 "data/maps/Route123/scripts.pory"
-	msgbox_mugshot Route123_Text_WendyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route123_Text_WendyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 49 "data/maps/Route123/scripts.pory"
 	end
 # 50 "data/maps/Route123/scripts.pory"
@@ -103,7 +103,7 @@ Route123_EventScript_Braxton::
 # 52 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_BRAXTON, Route123_Text_BraxtonIntro, Route123_Text_BraxtonDefeat
 # 53 "data/maps/Route123/scripts.pory"
-	msgbox_mugshot Route123_Text_BraxtonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot Route123_Text_BraxtonPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 54 "data/maps/Route123/scripts.pory"
 	end
 # 55 "data/maps/Route123/scripts.pory"
@@ -287,7 +287,7 @@ Route123_EventScript_Jazmyn::
 # 144 "data/maps/Route123/scripts.pory"
 	trainerbattle_single TRAINER_JAZMYN, Route123_Text_JazmynIntro, Route123_Text_JazmynDefeat
 # 145 "data/maps/Route123/scripts.pory"
-	msgbox_mugshot Route123_Text_JazmynPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route123_Text_JazmynPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 146 "data/maps/Route123/scripts.pory"
 	end
 # 147 "data/maps/Route123/scripts.pory"

@@ -24,7 +24,7 @@ Route108_EventScript_Missy::
 
 Route108_EventScript_Carolina::
 	trainerbattle_single TRAINER_CAROLINA, Route108_Text_CarolinaIntro, Route108_Text_CarolinaDefeated
-	msgbox_mugshot Route108_Text_CarolinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route108_Text_CarolinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 Route108_EventScript_Cory::

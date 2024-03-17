@@ -91,7 +91,7 @@ Route134_EventScript_Marley::
 # 46 "data/maps/Route134/scripts.pory"
 	trainerbattle_single TRAINER_MARLEY, Route134_Text_MarleyIntro, Route134_Text_MarleyDefeat
 # 47 "data/maps/Route134/scripts.pory"
-	msgbox_mugshot Route134_Text_MarleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route134_Text_MarleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 48 "data/maps/Route134/scripts.pory"
 	end
 # 49 "data/maps/Route134/scripts.pory"

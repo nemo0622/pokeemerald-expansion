@@ -4,32 +4,32 @@ VictoryRoad_B2F_MapScripts::
 
 VictoryRoad_B2F_EventScript_Vito::
 	trainerbattle_single TRAINER_VITO, VictoryRoad_B2F_Text_VitoIntro, VictoryRoad_B2F_Text_VitoDefeat
-	msgbox_mugshot VictoryRoad_B2F_Text_VitoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_B2F_Text_VitoPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 VictoryRoad_B2F_EventScript_Owen::
 	trainerbattle_single TRAINER_OWEN, VictoryRoad_B2F_Text_OwenIntro, VictoryRoad_B2F_Text_OwenDefeat
-	msgbox_mugshot VictoryRoad_B2F_Text_OwenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_B2F_Text_OwenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 VictoryRoad_B2F_EventScript_Caroline::
 	trainerbattle_single TRAINER_CAROLINE, VictoryRoad_B2F_Text_CarolineIntro, VictoryRoad_B2F_Text_CarolineDefeat
-	msgbox_mugshot VictoryRoad_B2F_Text_CarolinePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot VictoryRoad_B2F_Text_CarolinePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 VictoryRoad_B2F_EventScript_Julie::
 	trainerbattle_single TRAINER_JULIE, VictoryRoad_B2F_Text_JulieIntro, VictoryRoad_B2F_Text_JulieDefeat
-	msgbox_mugshot VictoryRoad_B2F_Text_JuliePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot VictoryRoad_B2F_Text_JuliePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 VictoryRoad_B2F_EventScript_Felix::
 	trainerbattle_single TRAINER_FELIX, VictoryRoad_B2F_Text_FelixIntro, VictoryRoad_B2F_Text_FelixDefeat
-	msgbox_mugshot VictoryRoad_B2F_Text_FelixPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_B2F_Text_FelixPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 VictoryRoad_B2F_EventScript_Dianne::
 	trainerbattle_single TRAINER_DIANNE, VictoryRoad_B2F_Text_DianneIntro, VictoryRoad_B2F_Text_DianneDefeat
-	msgbox_mugshot VictoryRoad_B2F_Text_DiannePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot VictoryRoad_B2F_Text_DiannePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 VictoryRoad_B2F_Text_VitoIntro:

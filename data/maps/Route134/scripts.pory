@@ -44,7 +44,7 @@ Route134_EventScript_Reyna::
 
 Route134_EventScript_Marley::
 	trainerbattle_single TRAINER_MARLEY, Route134_Text_MarleyIntro, Route134_Text_MarleyDefeat
-	msgbox_mugshot Route134_Text_MarleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route134_Text_MarleyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 Route134_EventScript_Kelvin::

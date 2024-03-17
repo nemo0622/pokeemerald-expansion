@@ -878,7 +878,7 @@ PetalburgCity_Gym_EventScript_RightGymLeadersRoomDoor::
 PetalburgCity_Gym_EventScript_Randall::
 	trainerbattle_single TRAINER_RANDALL, PetalburgCity_Gym_Text_RandallIntro, PetalburgCity_Gym_Text_RandallDefeat, PetalburgCity_Gym_EventScript_SlideOpenSpeedRoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_RandallPostBadge
-	msgbox_mugshot PetalburgCity_Gym_Text_RandallPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot PetalburgCity_Gym_Text_RandallPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 PetalburgCity_Gym_EventScript_SlideOpenSpeedRoomDoors::
@@ -889,13 +889,13 @@ PetalburgCity_Gym_EventScript_SlideOpenSpeedRoomDoors::
 	end
 
 PetalburgCity_Gym_EventScript_RandallPostBadge::
-	msgbox PetalburgCity_Gym_Text_RandallPostBadge, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Gym_Text_RandallPostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
 	end
 
 PetalburgCity_Gym_EventScript_Parker::
 	trainerbattle_single TRAINER_PARKER, PetalburgCity_Gym_Text_ParkerIntro, PetalburgCity_Gym_Text_ParkerDefeat, PetalburgCity_Gym_EventScript_SlideOpenConfusionRoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_ParkerPostBadge
-	msgbox_mugshot PetalburgCity_Gym_Text_ParkerPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot PetalburgCity_Gym_Text_ParkerPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 PetalburgCity_Gym_EventScript_SlideOpenConfusionRoomDoors::
@@ -906,13 +906,13 @@ PetalburgCity_Gym_EventScript_SlideOpenConfusionRoomDoors::
 	end
 
 PetalburgCity_Gym_EventScript_ParkerPostBadge::
-	msgbox PetalburgCity_Gym_Text_ParkerPostBadge, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Gym_Text_ParkerPostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
 	end
 
 PetalburgCity_Gym_EventScript_George::
 	trainerbattle_single TRAINER_GEORGE, PetalburgCity_Gym_Text_GeorgeIntro, PetalburgCity_Gym_Text_GeorgeDefeat, PetalburgCity_Gym_EventScript_SlideOpenRecoveryRoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_GeorgePostBadge
-	msgbox_mugshot PetalburgCity_Gym_Text_GeorgePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot PetalburgCity_Gym_Text_GeorgePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 PetalburgCity_Gym_EventScript_SlideOpenRecoveryRoomDoors::
@@ -923,13 +923,13 @@ PetalburgCity_Gym_EventScript_SlideOpenRecoveryRoomDoors::
 	end
 
 PetalburgCity_Gym_EventScript_GeorgePostBadge::
-	msgbox PetalburgCity_Gym_Text_GeorgePostBadge, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Gym_Text_GeorgePostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
 	end
 
 PetalburgCity_Gym_EventScript_Berke::
 	trainerbattle_single TRAINER_BERKE, PetalburgCity_Gym_Text_BerkeIntro, PetalburgCity_Gym_Text_BerkeDefeat, PetalburgCity_Gym_EventScript_SlideOpenOHKORoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_BerkePostBadge
-	msgbox_mugshot PetalburgCity_Gym_Text_BerkePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot PetalburgCity_Gym_Text_BerkePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 PetalburgCity_Gym_EventScript_SlideOpenOHKORoomDoors::
@@ -940,13 +940,13 @@ PetalburgCity_Gym_EventScript_SlideOpenOHKORoomDoors::
 	end
 
 PetalburgCity_Gym_EventScript_BerkePostBadge::
-	msgbox PetalburgCity_Gym_Text_BerkePostBadge, MSGBOX_NPC
+	msgbox_mugshot PetalburgCity_Gym_Text_BerkePostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
 	end
 
 PetalburgCity_Gym_EventScript_Mary::
 	trainerbattle_single TRAINER_MARY, PetalburgCity_Gym_Text_MaryIntro, PetalburgCity_Gym_Text_MaryDefeat, PetalburgCity_Gym_EventScript_SlideOpenAccuracyRoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_MaryPostBadge
-	msgbox_mugshot PetalburgCity_Gym_Text_MaryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_MaryPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 PetalburgCity_Gym_EventScript_SlideOpenAccuracyRoomDoors::
@@ -957,13 +957,13 @@ PetalburgCity_Gym_EventScript_SlideOpenAccuracyRoomDoors::
 	end
 
 PetalburgCity_Gym_EventScript_MaryPostBadge::
-	msgbox_mugshot PetalburgCity_Gym_Text_MaryPostBadge, MSGBOX_NPC, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_MaryPostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_F
 	end
 
 PetalburgCity_Gym_EventScript_Alexia::
 	trainerbattle_single TRAINER_ALEXIA, PetalburgCity_Gym_Text_AlexiaIntro, PetalburgCity_Gym_Text_AlexiaDefeat, PetalburgCity_Gym_EventScript_SlideOpenDefenseRoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_AlexiaPostBadge
-	msgbox_mugshot PetalburgCity_Gym_Text_AlexiaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_AlexiaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 PetalburgCity_Gym_EventScript_SlideOpenDefenseRoomDoors::
@@ -974,13 +974,13 @@ PetalburgCity_Gym_EventScript_SlideOpenDefenseRoomDoors::
 	end
 
 PetalburgCity_Gym_EventScript_AlexiaPostBadge::
-	msgbox_mugshot PetalburgCity_Gym_Text_AlexiaPostBadge, MSGBOX_NPC, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_AlexiaPostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_F
 	end
 
 PetalburgCity_Gym_EventScript_Jody::
 	trainerbattle_single TRAINER_JODY, PetalburgCity_Gym_Text_JodyIntro, PetalburgCity_Gym_Text_JodyDefeat, PetalburgCity_Gym_EventScript_SlideOpenStrengthRoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_JodyPostBadge
-	msgbox_mugshot PetalburgCity_Gym_Text_JodyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_JodyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 PetalburgCity_Gym_EventScript_SlideOpenStrengthRoomDoors::
@@ -991,7 +991,7 @@ PetalburgCity_Gym_EventScript_SlideOpenStrengthRoomDoors::
 	end
 
 PetalburgCity_Gym_EventScript_JodyPostBadge::
-	msgbox_mugshot PetalburgCity_Gym_Text_JodyPostBadge, MSGBOX_NPC, MUGSHOT_WOMAN5
+	msgbox_mugshot PetalburgCity_Gym_Text_JodyPostBadge, MSGBOX_NPC, MUGSHOT_COOLTRAINER_F
 	end
 
 @ VAR_0x8004 below is the room number

@@ -325,7 +325,7 @@ Route120_EventScript_RematchJeffrey::
 
 Route120_EventScript_Jennifer::
 	trainerbattle_single TRAINER_JENNIFER, Route120_Text_JenniferIntro, Route120_Text_JenniferDefeat
-	msgbox_mugshot Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 Route120_EventScript_Chip::
@@ -355,7 +355,7 @@ Route120_EventScript_Riley::
 
 Route120_EventScript_Leonel::
 	trainerbattle_single TRAINER_LEONEL, Route120_Text_LeonelIntro, Route120_Text_LeonelDefeat
-	msgbox_mugshot Route120_Text_LeonelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot Route120_Text_LeonelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 Route120_EventScript_Callie::

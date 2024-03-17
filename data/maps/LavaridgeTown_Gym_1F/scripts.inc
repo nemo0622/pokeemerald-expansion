@@ -277,7 +277,7 @@ LavaridgeTown_Gym_1F_EventScript_Gerald::
 # 139 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_GERALD, LOCALID_GERALD, LavaridgeTown_Gym_1F_Text_GeraldIntro, LavaridgeTown_Gym_1F_Text_GeraldDefeat, LavaridgeTown_Gym_EventScript_CheckTrainerScript
 # 140 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	msgbox_mugshot LavaridgeTown_Gym_1F_Text_GeraldPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot LavaridgeTown_Gym_1F_Text_GeraldPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 141 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	end
 # 142 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

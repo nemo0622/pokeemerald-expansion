@@ -109,7 +109,7 @@ Route127_EventScript_Athena::
 # 55 "data/maps/Route127/scripts.pory"
 	trainerbattle_single TRAINER_ATHENA, Route127_Text_AthenaIntro, Route127_Text_AthenaDefeat
 # 56 "data/maps/Route127/scripts.pory"
-	msgbox_mugshot Route127_Text_AthenaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route127_Text_AthenaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 57 "data/maps/Route127/scripts.pory"
 	end
 # 58 "data/maps/Route127/scripts.pory"

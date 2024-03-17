@@ -449,7 +449,7 @@ Route128_EventScript_Alexa::
 # 225 "data/maps/Route128/scripts.pory"
 	trainerbattle_single TRAINER_ALEXA, Route128_Text_AlexaIntro, Route128_Text_AlexaDefeat
 # 226 "data/maps/Route128/scripts.pory"
-	msgbox_mugshot Route128_Text_AlexaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route128_Text_AlexaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 227 "data/maps/Route128/scripts.pory"
 	end
 # 228 "data/maps/Route128/scripts.pory"
@@ -459,7 +459,7 @@ Route128_EventScript_Ruben::
 # 230 "data/maps/Route128/scripts.pory"
 	trainerbattle_single TRAINER_RUBEN, Route128_Text_RubenIntro, Route128_Text_RubenDefeat
 # 231 "data/maps/Route128/scripts.pory"
-	msgbox_mugshot Route128_Text_RubenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot Route128_Text_RubenPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 232 "data/maps/Route128/scripts.pory"
 	end
 # 233 "data/maps/Route128/scripts.pory"

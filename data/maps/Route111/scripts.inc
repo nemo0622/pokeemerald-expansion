@@ -997,7 +997,7 @@ Route111_EventScript_Wilton::
 # 499 "data/maps/Route111/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchWilton
 # 500 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_WiltonPostBattle, MSGBOX_DEFAULT, MUGSHOT_MAN3
+	msgbox_mugshot Route111_Text_WiltonPostBattle, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_M
 # 501 "data/maps/Route111/scripts.pory"
 	release
 # 502 "data/maps/Route111/scripts.pory"
@@ -1011,7 +1011,7 @@ Route111_EventScript_RegisterWilton::
 # 506 "data/maps/Route111/scripts.pory"
 	waitmovement 0
 # 507 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_WiltonRegister, MSGBOX_DEFAULT, MUGSHOT_MAN3
+	msgbox_mugshot Route111_Text_WiltonRegister, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_M
 # 508 "data/maps/Route111/scripts.pory"
 	register_matchcall TRAINER_WILTON_1
 # 509 "data/maps/Route111/scripts.pory"
@@ -1025,7 +1025,7 @@ Route111_EventScript_RematchWilton::
 # 513 "data/maps/Route111/scripts.pory"
 	trainerbattle_rematch TRAINER_WILTON_1, Route111_Text_WiltonRematchIntro, Route111_Text_WiltonRematchDefeat
 # 514 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_WiltonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot Route111_Text_WiltonPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 515 "data/maps/Route111/scripts.pory"
 	end
 # 516 "data/maps/Route111/scripts.pory"
@@ -1039,7 +1039,7 @@ Route111_EventScript_Brooke::
 # 520 "data/maps/Route111/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchBrooke
 # 521 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_BrookePostBattle, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
+	msgbox_mugshot Route111_Text_BrookePostBattle, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_F
 # 522 "data/maps/Route111/scripts.pory"
 	release
 # 523 "data/maps/Route111/scripts.pory"
@@ -1053,7 +1053,7 @@ Route111_EventScript_RegisterBrooke::
 # 527 "data/maps/Route111/scripts.pory"
 	waitmovement 0
 # 528 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_BrookeRegister, MSGBOX_DEFAULT, MUGSHOT_WOMAN5
+	msgbox_mugshot Route111_Text_BrookeRegister, MSGBOX_DEFAULT, MUGSHOT_COOLTRAINER_F
 # 529 "data/maps/Route111/scripts.pory"
 	register_matchcall TRAINER_BROOKE_1
 # 530 "data/maps/Route111/scripts.pory"
@@ -1067,7 +1067,7 @@ Route111_EventScript_RematchBrooke::
 # 534 "data/maps/Route111/scripts.pory"
 	trainerbattle_rematch TRAINER_BROOKE_1, Route111_Text_BrookeRematchIntro, Route111_Text_BrookeRematchDefeat
 # 535 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_BrookePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route111_Text_BrookePostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 536 "data/maps/Route111/scripts.pory"
 	end
 # 537 "data/maps/Route111/scripts.pory"

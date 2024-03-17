@@ -51,7 +51,7 @@ Route108_EventScript_Carolina::
 # 26 "data/maps/Route108/scripts.pory"
 	trainerbattle_single TRAINER_CAROLINA, Route108_Text_CarolinaIntro, Route108_Text_CarolinaDefeated
 # 27 "data/maps/Route108/scripts.pory"
-	msgbox_mugshot Route108_Text_CarolinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route108_Text_CarolinaPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 28 "data/maps/Route108/scripts.pory"
 	end
 # 29 "data/maps/Route108/scripts.pory"

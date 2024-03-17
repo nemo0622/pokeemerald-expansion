@@ -653,7 +653,7 @@ Route120_EventScript_Jennifer::
 # 327 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_JENNIFER, Route120_Text_JenniferIntro, Route120_Text_JenniferDefeat
 # 328 "data/maps/Route120/scripts.pory"
-	msgbox_mugshot Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 # 329 "data/maps/Route120/scripts.pory"
 	end
 # 330 "data/maps/Route120/scripts.pory"
@@ -713,7 +713,7 @@ Route120_EventScript_Leonel::
 # 357 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_LEONEL, Route120_Text_LeonelIntro, Route120_Text_LeonelDefeat
 # 358 "data/maps/Route120/scripts.pory"
-	msgbox_mugshot Route120_Text_LeonelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot Route120_Text_LeonelPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 # 359 "data/maps/Route120/scripts.pory"
 	end
 # 360 "data/maps/Route120/scripts.pory"

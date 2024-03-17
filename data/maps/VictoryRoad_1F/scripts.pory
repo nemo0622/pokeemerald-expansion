@@ -98,27 +98,27 @@ VictoryRoad_1F_EventScript_RematchWally::
 
 VictoryRoad_1F_EventScript_Edgar::
 	trainerbattle_single TRAINER_EDGAR, VictoryRoad_1F_Text_EdgarIntro, VictoryRoad_1F_Text_EdgarDefeat
-	msgbox_mugshot VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 VictoryRoad_1F_EventScript_Albert::
 	trainerbattle_single TRAINER_ALBERT, VictoryRoad_1F_Text_AlbertIntro, VictoryRoad_1F_Text_AlbertDefeat
-	msgbox_mugshot VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 VictoryRoad_1F_EventScript_Hope::
 	trainerbattle_single TRAINER_HOPE, VictoryRoad_1F_Text_HopeIntro, VictoryRoad_1F_Text_HopeDefeat
-	msgbox_mugshot VictoryRoad_1F_Text_HopePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot VictoryRoad_1F_Text_HopePostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 VictoryRoad_1F_EventScript_Quincy::
 	trainerbattle_single TRAINER_QUINCY, VictoryRoad_1F_Text_QuincyIntro, VictoryRoad_1F_Text_QuincyDefeat
-	msgbox_mugshot VictoryRoad_1F_Text_QuincyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_MAN3
+	msgbox_mugshot VictoryRoad_1F_Text_QuincyPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_M
 	end
 
 VictoryRoad_1F_EventScript_Katelynn::
 	trainerbattle_single TRAINER_KATELYNN, VictoryRoad_1F_Text_KatelynnIntro, VictoryRoad_1F_Text_KatelynnDefeat
-	msgbox_mugshot VictoryRoad_1F_Text_KatelynnPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_WOMAN5
+	msgbox_mugshot VictoryRoad_1F_Text_KatelynnPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_COOLTRAINER_F
 	end
 
 VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore:
