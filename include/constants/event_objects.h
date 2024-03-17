@@ -249,8 +249,10 @@
 #define OBJ_EVENT_GFX_RANCHER                    244
 #define OBJ_EVENT_GFX_JUGGLER                    245
 #define OBJ_EVENT_GFX_BIKER                      246
+#define OBJ_EVENT_GFX_COOLTRAINER_M              247
+#define OBJ_EVENT_GFX_COOLTRAINER_F              248
 
-#define NUM_OBJ_EVENT_GFX                        247
+#define NUM_OBJ_EVENT_GFX                        249
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

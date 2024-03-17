@@ -257,6 +257,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ruin_Maniac
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rancher;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juggler;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Biker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cooltrainer_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cooltrainer_F;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -508,6 +510,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RANCHER] =                  &gObjectEventGraphicsInfo_Rancher,
     [OBJ_EVENT_GFX_JUGGLER] =                  &gObjectEventGraphicsInfo_Juggler,
     [OBJ_EVENT_GFX_BIKER] =                    &gObjectEventGraphicsInfo_Biker,
+    [OBJ_EVENT_GFX_COOLTRAINER_M] =            &gObjectEventGraphicsInfo_Cooltrainer_M,
+    [OBJ_EVENT_GFX_COOLTRAINER_F] =            &gObjectEventGraphicsInfo_Cooltrainer_F,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

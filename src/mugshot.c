@@ -183,6 +183,10 @@ static const u32 sMugshotImg_Juggler[] = INCBIN_U32("graphics/mugshots/pics/mugs
 static const u16 sMugshotPal_Juggler[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_juggler.gbapal");
 static const u32 sMugshotImg_Biker[] = INCBIN_U32("graphics/mugshots/pics/mugshot_biker.4bpp.lz");
 static const u16 sMugshotPal_Biker[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_biker.gbapal");
+static const u32 sMugshotImg_Cooltrainer_M[] = INCBIN_U32("graphics/mugshots/pics/mugshot_cooltrainer_m.4bpp.lz");
+static const u16 sMugshotPal_Cooltrainer_M[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_cooltrainer.gbapal");
+static const u32 sMugshotImg_Cooltrainer_F[] = INCBIN_U32("graphics/mugshots/pics/mugshot_cooltrainer_f.4bpp.lz");
+static const u16 sMugshotPal_Cooltrainer_F[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_cooltrainer.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -267,6 +271,8 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_RANCHER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Rancher, .palette = sMugshotPal_Rancher},
     [MUGSHOT_JUGGLER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Juggler, .palette = sMugshotPal_Juggler},
     [MUGSHOT_BIKER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Biker, .palette = sMugshotPal_Biker},
+    [MUGSHOT_COOLTRAINER_M] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Cooltrainer_M, .palette = sMugshotPal_Cooltrainer_M},
+    [MUGSHOT_COOLTRAINER_F] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Cooltrainer_F, .palette = sMugshotPal_Cooltrainer_F},
 };
 
 

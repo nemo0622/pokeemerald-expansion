@@ -411,3 +411,7 @@ const u32 gObjectEventPic_Juggler[] = INCBIN_U32("graphics/object_events/pics/pe
 const u16 gObjectEventPalette_Juggler[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/juggler.gbapal");
 const u32 gObjectEventPic_Biker[] = INCBIN_U32("graphics/object_events/pics/people/biker.4bpp");
 const u16 gObjectEventPalette_Biker[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/biker.gbapal");
+const u32 gObjectEventPic_Cooltrainer_M[] = INCBIN_U32("graphics/object_events/pics/people/cooltrainer_m.4bpp");
+const u16 gObjectEventPalette_Cooltrainer_M[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/cooltrainer.gbapal");
+const u32 gObjectEventPic_Cooltrainer_F[] = INCBIN_U32("graphics/object_events/pics/people/cooltrainer_f.4bpp");
+const u16 gObjectEventPalette_Cooltrainer_F[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/cooltrainer.gbapal");
