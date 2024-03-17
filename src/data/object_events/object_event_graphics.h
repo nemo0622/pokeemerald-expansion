@@ -403,3 +403,5 @@ const u32 gObjectEventPic_Bird_Keeper[] = INCBIN_U32("graphics/object_events/pic
 const u16 gObjectEventPalette_Bird_Keeper[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/bird_keeper.gbapal");
 const u32 gObjectEventPic_Kindler[] = INCBIN_U32("graphics/object_events/pics/people/kindler.4bpp");
 const u16 gObjectEventPalette_Kindler[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/kindler.gbapal");
+const u32 gObjectEventPic_Ruin_Maniac[] = INCBIN_U32("graphics/object_events/pics/people/ruin_maniac.4bpp");
+const u16 gObjectEventPalette_Ruin_Maniac[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/ruin_maniac.gbapal");

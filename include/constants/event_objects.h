@@ -245,8 +245,9 @@
 #define OBJ_EVENT_GFX_ARCHIE_NEW                 240
 #define OBJ_EVENT_GFX_BIRD_KEEPER                241
 #define OBJ_EVENT_GFX_KINDLER                    242
+#define OBJ_EVENT_GFX_RUIN_MANIAC                243
 
-#define NUM_OBJ_EVENT_GFX                        243
+#define NUM_OBJ_EVENT_GFX                        244
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

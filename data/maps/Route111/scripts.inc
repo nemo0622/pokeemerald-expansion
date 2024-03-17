@@ -925,7 +925,7 @@ Route111_EventScript_Dusty::
 # 463 "data/maps/Route111/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchDusty
 # 464 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_DustyPostBattle, MSGBOX_DEFAULT, MUGSHOT_HIKER
+	msgbox_mugshot Route111_Text_DustyPostBattle, MSGBOX_DEFAULT, MUGSHOT_RUIN_MANIAC
 # 465 "data/maps/Route111/scripts.pory"
 	release
 # 466 "data/maps/Route111/scripts.pory"
@@ -939,7 +939,7 @@ Route111_EventScript_RegisterDusty::
 # 470 "data/maps/Route111/scripts.pory"
 	waitmovement 0
 # 471 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_DustyRegister, MSGBOX_DEFAULT, MUGSHOT_HIKER
+	msgbox_mugshot Route111_Text_DustyRegister, MSGBOX_DEFAULT, MUGSHOT_RUIN_MANIAC
 # 472 "data/maps/Route111/scripts.pory"
 	register_matchcall TRAINER_DUSTY_1
 # 473 "data/maps/Route111/scripts.pory"
@@ -953,7 +953,7 @@ Route111_EventScript_RematchDusty::
 # 477 "data/maps/Route111/scripts.pory"
 	trainerbattle_rematch TRAINER_DUSTY_1, Route111_Text_DustyRematchIntro, Route111_Text_DustyRematchDefeat
 # 478 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_DustyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
+	msgbox_mugshot Route111_Text_DustyPostRematch, MSGBOX_AUTOCLOSE, MUGSHOT_RUIN_MANIAC
 # 479 "data/maps/Route111/scripts.pory"
 	end
 # 480 "data/maps/Route111/scripts.pory"
@@ -1127,7 +1127,7 @@ Route111_EventScript_Bryan::
 # 564 "data/maps/Route111/scripts.pory"
 	trainerbattle_single TRAINER_BRYAN, Route111_Text_BryanIntro, Route111_Text_BryanDefeat
 # 565 "data/maps/Route111/scripts.pory"
-	msgbox_mugshot Route111_Text_BryanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
+	msgbox_mugshot Route111_Text_BryanPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_RUIN_MANIAC
 # 566 "data/maps/Route111/scripts.pory"
 	end
 # 567 "data/maps/Route111/scripts.pory"

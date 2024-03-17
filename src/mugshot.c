@@ -175,6 +175,8 @@ static const u32 sMugshotImg_Bird_Keeper[] = INCBIN_U32("graphics/mugshots/pics/
 static const u16 sMugshotPal_Bird_Keeper[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_bird_keeper.gbapal");
 static const u32 sMugshotImg_Kindler[] = INCBIN_U32("graphics/mugshots/pics/mugshot_kindler.4bpp.lz");
 static const u16 sMugshotPal_Kindler[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_kindler.gbapal");
+static const u32 sMugshotImg_Ruin_Maniac[] = INCBIN_U32("graphics/mugshots/pics/mugshot_ruin_maniac.4bpp.lz");
+static const u16 sMugshotPal_Ruin_Maniac[] = INCBIN_U16("graphics/mugshots/palettes/mugshot_ruin_maniac.gbapal");
 
 static const struct Mugshot sMugshots[] = {
     //ADD YOUR MUGSHOTS HERE
@@ -255,6 +257,7 @@ static const struct Mugshot sMugshots[] = {
     [MUGSHOT_WOMAN5] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Woman5, .palette = sMugshotPal_Woman5},
     [MUGSHOT_BIRD_KEEPER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Bird_Keeper, .palette = sMugshotPal_Bird_Keeper},
     [MUGSHOT_KINDLER] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Kindler, .palette = sMugshotPal_Kindler},
+    [MUGSHOT_RUIN_MANIAC] = {.x = 2, .y = 8, .width = 48, .height = 48, .image = sMugshotImg_Ruin_Maniac, .palette = sMugshotPal_Ruin_Maniac},
 };
 
 

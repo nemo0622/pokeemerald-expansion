@@ -2056,3 +2056,21 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 # 1029 "data/maps/LittlerootTown/scripts.pory"
 	.string "Let's go to my LAB.$"
+
+LittlerootTown_TestDialogueScript::
+# 1035 "data/maps/LittlerootTown/scripts.pory"
+	lock
+# 1036 "data/maps/LittlerootTown/scripts.pory"
+	faceplayer
+# 1037 "data/maps/LittlerootTown/scripts.pory"
+	msgbox_mugshot LittlerootTown_TestDialogueScript_Text_0, MSGBOX_DEFAULT, MUGSHOT_RUIN_MANIAC
+# 1038 "data/maps/LittlerootTown/scripts.pory"
+	closemessage
+# 1039 "data/maps/LittlerootTown/scripts.pory"
+	release
+	end
+
+
+LittlerootTown_TestDialogueScript_Text_0:
+# 1037 "data/maps/LittlerootTown/scripts.pory"
+	.string "This is some test dialogue!$"

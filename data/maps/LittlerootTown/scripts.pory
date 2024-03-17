@@ -1029,3 +1029,13 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "Let's go to my LAB.$"
 
 `
+
+script LittlerootTown_TestDialogueScript
+{
+	lock
+	faceplayer
+	msgbox_mugshot(format("This is some test dialogue!"), MSGBOX_DEFAULT, MUGSHOT_RUIN_MANIAC)
+	closemessage
+	release
+	end
+}

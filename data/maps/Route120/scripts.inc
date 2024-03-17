@@ -663,7 +663,7 @@ Route120_EventScript_Chip::
 # 332 "data/maps/Route120/scripts.pory"
 	trainerbattle_single TRAINER_CHIP, Route120_Text_ChipIntro, Route120_Text_ChipDefeat
 # 333 "data/maps/Route120/scripts.pory"
-	msgbox_mugshot Route120_Text_ChipPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
+	msgbox_mugshot Route120_Text_ChipPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_RUIN_MANIAC
 # 334 "data/maps/Route120/scripts.pory"
 	end
 # 335 "data/maps/Route120/scripts.pory"

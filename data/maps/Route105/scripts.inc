@@ -59,7 +59,7 @@ Route105_EventScript_Foster::
 # 30 "data/maps/Route105/scripts.pory"
 	trainerbattle_single TRAINER_FOSTER, Route105_Text_FosterIntro, Route105_Text_FosterDefeated
 # 31 "data/maps/Route105/scripts.pory"
-	msgbox_mugshot Route105_Text_FosterPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
+	msgbox_mugshot Route105_Text_FosterPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_RUIN_MANIAC
 # 32 "data/maps/Route105/scripts.pory"
 	end
 # 33 "data/maps/Route105/scripts.pory"
@@ -123,7 +123,7 @@ Route105_EventScript_Andres::
 # 62 "data/maps/Route105/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route105_EventScript_AndresRematch
 # 63 "data/maps/Route105/scripts.pory"
-	msgbox_mugshot Route105_Text_AndresPostBattle, MSGBOX_DEFAULT, MUGSHOT_HIKER
+	msgbox_mugshot Route105_Text_AndresPostBattle, MSGBOX_DEFAULT, MUGSHOT_RUIN_MANIAC
 # 64 "data/maps/Route105/scripts.pory"
 	release
 # 65 "data/maps/Route105/scripts.pory"
@@ -137,7 +137,7 @@ Route105_EventScript_AndresRegisterMatchCallAfterBattle::
 # 69 "data/maps/Route105/scripts.pory"
 	waitmovement 0
 # 70 "data/maps/Route105/scripts.pory"
-	msgbox_mugshot Route105_Text_AndresRegister, MSGBOX_DEFAULT, MUGSHOT_HIKER
+	msgbox_mugshot Route105_Text_AndresRegister, MSGBOX_DEFAULT, MUGSHOT_RUIN_MANIAC
 # 71 "data/maps/Route105/scripts.pory"
 	register_matchcall TRAINER_ANDRES_1
 # 72 "data/maps/Route105/scripts.pory"
@@ -151,7 +151,7 @@ Route105_EventScript_AndresRematch::
 # 76 "data/maps/Route105/scripts.pory"
 	trainerbattle_rematch TRAINER_ANDRES_1, Route105_Text_AndresRematchIntro, Route105_Text_AndresRematchDefeated
 # 77 "data/maps/Route105/scripts.pory"
-	msgbox_mugshot Route105_Text_AndresRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_HIKER
+	msgbox_mugshot Route105_Text_AndresRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_RUIN_MANIAC
 # 78 "data/maps/Route105/scripts.pory"
 	end
 # 79 "data/maps/Route105/scripts.pory"
