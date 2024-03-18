@@ -1,4 +1,5 @@
 # nemo0622's pokeemerald-expansion branch
+Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokeemerald-expansion/
 
 ## Features
 
