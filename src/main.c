@@ -61,8 +61,6 @@ const IntrFunc gIntrTableTemplate[] =
 
 #define INTR_COUNT ((int)(sizeof(gIntrTableTemplate)/sizeof(IntrFunc)))
 
-static u16 sUnusedVar; // Never read
-
 u16 gKeyRepeatStartDelay;
 bool8 gLinkTransferringData;
 struct Main gMain;
@@ -93,11 +91,6 @@ void EnableVCountIntrAtLine150(void);
 
 void AgbMain()
 {
-    // Modern compilers are liberal with the stack on entry to this function,
-    // so RegisterRamReset may crash if it resets IWRAM.
-#if !MODERN
-    RegisterRamReset(RESET_ALL);
-#endif //MODERN
     *(vu16 *)BG_PLTT = RGB_WHITE; // Set the backdrop to white on startup
     InitGpuRegManager();
     // Setup waitstates for all ROM mirrors
@@ -129,7 +122,6 @@ void AgbMain()
         SetMainCallback2(NULL);
 
     gLinkTransferringData = FALSE;
-    sUnusedVar = 0xFC0;
 
 #ifndef NDEBUG
 #if (LOG_HANDLER == LOG_HANDLER_MGBA_PRINT)
@@ -218,15 +210,37 @@ void SetMainCallback2(MainCallback callback)
 
 void StartTimer1(void)
 {
-    REG_TM1CNT_H = 0x80;
+    if (HQ_RANDOM)
+    {
+        REG_TM2CNT_L = 0;
+        REG_TM2CNT_H = TIMER_ENABLE | TIMER_COUNTUP;
+    }
+
+    REG_TM1CNT_H = TIMER_ENABLE;
 }
 
 void SeedRngAndSetTrainerId(void)
 {
-    u16 val = REG_TM1CNT_L;
-    SeedRng(val);
-    REG_TM1CNT_H = 0;
-    sTrainerId = val;
+    u32 val;
+
+    if (HQ_RANDOM)
+    {
+        REG_TM1CNT_H = 0;
+        REG_TM2CNT_H = 0;
+        val = ((u32)REG_TM2CNT_L) << 16;
+        val |= REG_TM1CNT_L;
+        SeedRng(val);
+        sTrainerId = Random();
+    }
+    else
+    {
+        // Do it exactly like it was originally done, including not stopping
+        // the timer beforehand.
+        val = REG_TM1CNT_L;
+        SeedRng((u16)val);
+        REG_TM1CNT_H = 0;
+        sTrainerId = val;
+    }
 }
 
 u16 GetGeneratedTrainerIdLower(void)
@@ -245,9 +259,22 @@ void EnableVCountIntrAtLine150(void)
 #ifdef BUGFIX
 static void SeedRngWithRtc(void)
 {
-    u32 seed = RtcGetMinuteCount();
-    seed = (seed >> 16) ^ (seed & 0xFFFF);
-    SeedRng(seed);
+    #if HQ_RANDOM == FALSE
+        u32 seed = RtcGetMinuteCount();
+        seed = (seed >> 16) ^ (seed & 0xFFFF);
+        SeedRng(seed);
+    #else
+        #define BCD8(x) ((((x) >> 4) & 0xF) * 10 + ((x) & 0xF))
+        u32 seconds;
+        struct SiiRtcInfo rtc;
+        RtcGetInfo(&rtc);
+        seconds =
+            ((HOURS_PER_DAY * RtcGetDayCount(&rtc) + BCD8(rtc.hour))
+            * MINUTES_PER_HOUR + BCD8(rtc.minute))
+            * SECONDS_PER_MINUTE + BCD8(rtc.second);
+        SeedRng(seconds);
+        #undef BCD8
+    #endif
 }
 #endif
 
@@ -379,7 +406,7 @@ static void VBlankIntr(void)
     TryReceiveLinkBattleData();
 
     if (!gTestRunnerEnabled && (!gMain.inBattle || !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_RECORDED))))
-        Random();
+        AdvanceRandom();
 
     UpdateWirelessStatusIndicatorSprite();
 

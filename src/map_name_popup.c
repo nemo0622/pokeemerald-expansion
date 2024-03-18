@@ -290,6 +290,7 @@ void HideMapNamePopUpWindow(void)
 {
     if (FuncIsActiveTask(Task_MapNamePopUpWindow))
     {
+        // 1.8.0 changed this, so if it breaks go look at that thumbs up emoji
         ClearStdWindowAndFrame(GetPrimaryPopUpWindowId(), TRUE);
         ClearStdWindowAndFrame(GetSecondaryPopUpWindowId(), TRUE);
         RemovePrimaryPopUpWindow();

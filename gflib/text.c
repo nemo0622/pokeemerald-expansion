@@ -241,6 +241,10 @@ static void SetFontsPointer(const struct FontInfo *fonts)
     gFonts = fonts;
 }
 
+// Any ROM address must have bit 27 set (0x8000000)
+// so this is used to check if a pointer points to ROM
+#define IS_ROM_PTR(ptr) (((u32)ptr) >> 27)
+
 #if (DECAP_ENABLED) && (DECAP_MIRRORING)
 void * MirrorPtr(const void *ptr) {
     if (((u32)ptr) >> 27) // ROM
@@ -249,16 +253,18 @@ void * MirrorPtr(const void *ptr) {
         return RAM_MIRROR_PTR(ptr);
 }
 
-void * UnmirrorPtr(const void *ptr) {
+void * UnmirrorPtr(const void *ptr)
+{
     u32 value = (u32) ptr;
-    if (value >> 27) // ROM
+    if (IS_ROM_PTR(ptr)) // ROM
         return (void*)(value & ~ROM_MIRROR_MASK);
     else // RAM
         return (void*)(value & ~RAM_MIRROR_MASK);
 }
 
-bool32 IsMirrorPtr(const void *ptr) {
-    if (((u32)ptr) >> 27)
+bool32 IsMirrorPtr(const void *ptr)
+{
+    if (IS_ROM_PTR(ptr))
         return ((u32)ptr) & ROM_MIRROR_MASK;
     else
         return ((u32)ptr) & RAM_MIRROR_MASK;
@@ -298,7 +304,7 @@ u16 AddTextPrinterFixedCaseParameterized(u8 windowId, u8 fontId, const u8 *str, 
 }
 #endif
 
-bool16 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, void (*callback)(struct TextPrinterTemplate *, u16))
+bool32 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, void (*callback)(struct TextPrinterTemplate *, u16))
 {
     int i;
     u16 j;
@@ -387,7 +393,7 @@ void RunTextPrinters(void)
     }
 }
 
-bool16 IsTextPrinterActive(u8 id)
+bool32 IsTextPrinterActive(u8 id)
 {
     return sTextPrinters[id].active;
 }
@@ -890,7 +896,7 @@ void TextPrinterClearDownArrow(struct TextPrinter *textPrinter)
     CopyWindowToVram(textPrinter->printerTemplate.windowId, COPYWIN_GFX);
 }
 
-bool8 TextPrinterWaitAutoMode(struct TextPrinter *textPrinter)
+bool32 TextPrinterWaitAutoMode(struct TextPrinter *textPrinter)
 {
     struct TextPrinterSubStruct *subStruct = (struct TextPrinterSubStruct *)(&textPrinter->subStructFields);
 
@@ -905,9 +911,9 @@ bool8 TextPrinterWaitAutoMode(struct TextPrinter *textPrinter)
     }
 }
 
-bool16 TextPrinterWaitWithDownArrow(struct TextPrinter *textPrinter)
+bool32 TextPrinterWaitWithDownArrow(struct TextPrinter *textPrinter)
 {
-    bool8 result = FALSE;
+    bool32 result = FALSE;
     if (gTextFlags.autoScroll != 0)
     {
         result = TextPrinterWaitAutoMode(textPrinter);
@@ -924,9 +930,9 @@ bool16 TextPrinterWaitWithDownArrow(struct TextPrinter *textPrinter)
     return result;
 }
 
-bool16 TextPrinterWait(struct TextPrinter *textPrinter)
+bool32 TextPrinterWait(struct TextPrinter *textPrinter)
 {
-    bool16 result = FALSE;
+    bool32 result = FALSE;
     if (gTextFlags.autoScroll != 0)
     {
         result = TextPrinterWaitAutoMode(textPrinter);
@@ -942,7 +948,7 @@ bool16 TextPrinterWait(struct TextPrinter *textPrinter)
     return result;
 }
 
-void DrawDownArrow(u8 windowId, u16 x, u16 y, u8 bgColor, bool8 drawArrow, u8 *counter, u8 *yCoordIndex)
+void DrawDownArrow(u8 windowId, u16 x, u16 y, u8 bgColor, bool32 drawArrow, u8 *counter, u8 *yCoordIndex)
 {
     const u8 *arrowTiles;
 
@@ -982,8 +988,8 @@ const u16 gLowercaseDiffTable[] = {
     [CHAR_SPACER]                           = 0,
     [CHAR_A ... CHAR_Z]                     = CHAR_a - CHAR_A,
     // é treated as uppercase so POKéDEX, POKéMON, etc. decapped
-    [CHAR_e_ACUTE]                          = 0x100,
-    [CHAR_SGL_QUOTE_RIGHT]                  = 0x100,
+    [CHAR_e_ACUTE]                          = 0 | MARK_UPPER_FLAG,
+    [CHAR_SGL_QUOTE_RIGHT]                  = 0 | MARK_UPPER_FLAG,
     // International
     [CHAR_A_GRAVE ... CHAR_A_ACUTE]         = CHAR_a_GRAVE - CHAR_A_GRAVE,
     [CHAR_A_CIRCUMFLEX]                     = CHAR_a_CIRCUMFLEX,
@@ -1230,6 +1236,43 @@ static u16 RenderText(struct TextPrinter *textPrinter)
         }
         #else
             return RENDER_FINISH;
+    #if DECAP_ENABLED
+        // Disable/enable decapitalization
+        // In vanilla these are 1-2 pixel spaces
+        case CHAR_FIXED_CASE:
+        case CHAR_UNFIX_CASE:
+            textPrinter->lastChar = currChar;
+            if (!textPrinter->japanese)
+                return RENDER_REPEAT;
+            break;
+        // common decap exceptions
+        case CHAR_V:
+            if (lastChar == CHAR_T) // TV
+                lastChar = 0;
+            break;
+        case CHAR_M:
+            if (lastChar == CHAR_T) { // TM
+                lastChar = 0;
+                break;
+            }
+        case CHAR_P:
+            if (lastChar == CHAR_H) { // HP, HM
+                lastChar = 0;
+                break;
+            }
+        case CHAR_C:
+            if (lastChar == CHAR_P) // PC, PP, PM
+                lastChar = 0;
+            break;
+    #endif
+        }
+
+        // If not Japanese or fixed case, try to decap
+        if (DECAP_ENABLED && !textPrinter->japanese && lastChar != CHAR_FIXED_CASE)
+        {
+            // Two consecutive uppercase chars; lowercase this one
+            if (IS_UPPER(currChar) && IS_UPPER(lastChar))
+                currChar = TO_LOWER(currChar);
         }
         #endif
 
@@ -1440,7 +1483,7 @@ static u32 (*GetFontWidthFunc(u8 fontId))(u16, bool32)
 
 s32 GetStringWidth(u8 fontId, const u8 *str, s16 letterSpacing)
 {
-    bool8 isJapanese;
+    bool32 isJapanese;
     int minGlyphWidth;
     u32 (*func)(u16 fontId, bool32 isJapanese);
     int localLetterSpacing;

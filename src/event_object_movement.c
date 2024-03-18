@@ -2074,28 +2074,28 @@ void PlayerObjectTurn(struct PlayerAvatar *playerAvatar, u8 direction)
     ObjectEventTurn(&gObjectEvents[playerAvatar->objectEventId], direction);
 }
 
-static void SetBerryTreeGraphics(struct ObjectEvent *objectEvent, u8 berryId, u8 berryStage) {
-  const u16 graphicsId = gBerryTreeObjectEventGraphicsIdTablePointers[berryId][berryStage];
-  const struct ObjectEventGraphicsInfo *graphicsInfo = GetObjectEventGraphicsInfo(graphicsId);
-  struct Sprite *sprite = &gSprites[objectEvent->spriteId];
-  UpdateSpritePalette(&sObjectEventSpritePalettes[gBerryTreePaletteSlotTablePointers[berryId][berryStage]-2], sprite);
-  sprite->oam.shape = graphicsInfo->oam->shape;
-  sprite->oam.size = graphicsInfo->oam->size;
-  sprite->images = gBerryTreePicTablePointers[berryId];
-  sprite->anims = graphicsInfo->anims;
-  sprite->subspriteTables = graphicsInfo->subspriteTables;
-  objectEvent->inanimate = graphicsInfo->inanimate;
-  objectEvent->graphicsId = graphicsId;
-  SetSpritePosToMapCoords(objectEvent->currentCoords.x, objectEvent->currentCoords.y, &sprite->x, &sprite->y);
-  sprite->centerToCornerVecX = -(graphicsInfo->width >> 1);
-  sprite->centerToCornerVecY = -(graphicsInfo->height >> 1);
-  sprite->x += 8;
-  sprite->y += 16 + sprite->centerToCornerVecY;
-  if (objectEvent->trackedByCamera)
-  {
-      CameraObjectReset1();
-  }
-}
+// static void SetBerryTreeGraphics(struct ObjectEvent *objectEvent, u8 berryId, u8 berryStage) {
+//   const u16 graphicsId = gBerryTreeObjectEventGraphicsIdTablePointers[berryId][berryStage];
+//   const struct ObjectEventGraphicsInfo *graphicsInfo = GetObjectEventGraphicsInfo(graphicsId);
+//   struct Sprite *sprite = &gSprites[objectEvent->spriteId];
+//   UpdateSpritePalette(&sObjectEventSpritePalettes[gBerryTreePaletteSlotTablePointers[berryId][berryStage]-2], sprite);
+//   sprite->oam.shape = graphicsInfo->oam->shape;
+//   sprite->oam.size = graphicsInfo->oam->size;
+//   sprite->images = gBerryTreePicTablePointers[berryId];
+//   sprite->anims = graphicsInfo->anims;
+//   sprite->subspriteTables = graphicsInfo->subspriteTables;
+//   objectEvent->inanimate = graphicsInfo->inanimate;
+//   objectEvent->graphicsId = graphicsId;
+//   SetSpritePosToMapCoords(objectEvent->currentCoords.x, objectEvent->currentCoords.y, &sprite->x, &sprite->y);
+//   sprite->centerToCornerVecX = -(graphicsInfo->width >> 1);
+//   sprite->centerToCornerVecY = -(graphicsInfo->height >> 1);
+//   sprite->x += 8;
+//   sprite->y += 16 + sprite->centerToCornerVecY;
+//   if (objectEvent->trackedByCamera)
+//   {
+//       CameraObjectReset1();
+//   }
+// }
 
 static void get_berry_tree_graphics(struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
@@ -2114,7 +2114,12 @@ static void get_berry_tree_graphics(struct ObjectEvent *objectEvent, struct Spri
         if (berryId > ITEM_TO_BERRY(LAST_BERRY_INDEX))
             berryId = 0;
 
-        SetBerryTreeGraphics(objectEvent, berryId, berryStage);
+        // function used before 1.8.0
+        // SetBerryTreeGraphics(objectEvent, berryId, berryStage);
+
+        ObjectEventSetGraphicsId(objectEvent, gBerryTreeObjectEventGraphicsIdTable[berryStage]);
+        sprite->images = gBerryTreePicTablePointers[berryId];
+        sprite->oam.paletteNum = gBerryTreePaletteSlotTablePointers[berryId][berryStage];
         StartSpriteAnim(sprite, berryStage);
     }
 }

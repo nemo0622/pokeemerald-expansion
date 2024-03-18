@@ -3,8 +3,9 @@
 ## Features
 
 ### Gameplay
-- All features of [RHH's pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion), currently up to version 1.7.3
+- All code for features of [RHH's pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion), currently up to version 1.8.0
     - Physical/Special split, Pokémon data up to Generation 9, updated battle engine, EXP. All, etc.
+    - This does NOT mean every feature is implemented! I don't want feature bloat like that
 - [aarant's](https://github.com/aarant/pokeemerald) DNS, Key Item Wheel, and Decapitalization branches
     - Key Item Wheel - Register up to 4 key items
     - Parts of Day/Night system (mostly disabled for now, see Bugs section lol)
@@ -24,7 +25,7 @@
     - Nickname from party screen
 
 ### Graphics
-- New overworlds from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
+- New NPC overworlds, many from from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
     - Credit goes to Pawkkie for May's sprite and RavePossum for the rest!
     - Others from [FRLG-style NPC Megapack](https://reliccastle.com/resources/823/) and [Aveontrainer](https://www.deviantart.com/aveontrainer/gallery/67900303/overworld) on DeviantArt
 - [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to most NPCs

@@ -265,6 +265,10 @@
 #define PLACEHOLDER_ID_MAXIE         0xB
 #define PLACEHOLDER_ID_KYOGRE        0xC
 #define PLACEHOLDER_ID_GROUDON       0xD
+// Fixed-case placeholders
+// These behave the same as their (id & 0x7F),
+// but prepend CHAR_FIXED_CASE
+#define PLACEHOLDER_FIXED_MASK       0x80
 
 // Fixed-case placeholders
 // These behave the same as their (id & 0x7F),

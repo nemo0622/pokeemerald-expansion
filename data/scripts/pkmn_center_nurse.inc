@@ -12,7 +12,8 @@ Common_EventScript_PkmnCenterNurse::
 	end
 
 EventScript_PkmnCenterNurse_Goodbye::
-	msgbox_mugshot gText_WeHopeToSeeYouAgain, MSGBOX_NPC, MUGSHOT_NURSEJOY
+	message gText_WeHopeToSeeYouAgain
+	callnative ClearMugshot
 	return
 
 @ VAR_0x8004 is 1 when player has Gold Card; jumps are identical
@@ -60,7 +61,8 @@ EventScript_PkmnCenterNurse_ReturnPkmn::
 	waitmessage
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
-	msgbox_mugshot gText_WeHopeToSeeYouAgain, MSGBOX_NPC, MUGSHOT_NURSEJOY
+	message gText_WeHopeToSeeYouAgain
+	callnative ClearMugshot
 	return
 
 EventScript_PkmnCenterNurse_ReturnPkmn2::
@@ -68,7 +70,8 @@ EventScript_PkmnCenterNurse_ReturnPkmn2::
 	waitmessage
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
-	msgbox_mugshot gText_WeHopeToSeeYouAgain2, MSGBOX_NPC, MUGSHOT_NURSEJOY
+	message gText_WeHopeToSeeYouAgain2
+	callnative ClearMugshot
 	return
 
 EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::
@@ -79,7 +82,8 @@ EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::
 	waitmessage
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
-	msgbox_mugshot gText_WeHopeToSeeYouAgain, MSGBOX_NPC, MUGSHOT_NURSEJOY
+	message gText_WeHopeToSeeYouAgain
+	callnative ClearMugshot
 	return
 
 EventScript_PkmnCenterNurse_CheckPokerus::
@@ -104,13 +108,15 @@ EventScript_PkmnCenterNurse_GoldCard::
 	waitmovement 0
 	msgbox gText_NoticesGoldCard, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_GoldCardHealPkmn
-	msgbox_mugshot gText_WeHopeToSeeYouAgain2, MSGBOX_NPC, MUGSHOT_NURSEJOY
+	message gText_WeHopeToSeeYouAgain2
+	callnative ClearMugshot
 	return
 
 EventScript_PkmnCenterNurse_AskForUsual::
 	msgbox gText_YouWantTheUsual, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_GoldCardHealPkmn
-	msgbox_mugshot gText_WeHopeToSeeYouAgain2, MSGBOX_NPC, MUGSHOT_NURSEJOY
+	message gText_WeHopeToSeeYouAgain2
+	callnative ClearMugshot
 	return
 
 EventScript_PkmnCenterNurse_GoldCardHealPkmn::

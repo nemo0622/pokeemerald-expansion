@@ -5210,7 +5210,7 @@ static const u8 *GetEasyChatWord(u8 groupId, u16 index)
         return GetSpeciesName(index);
     case EC_GROUP_MOVE_1:
     case EC_GROUP_MOVE_2:
-        return gMoveNames[index];
+        return GetMoveName(index);
     default:
         return gEasyChatGroups[groupId].wordData.words[index].text;
     }
@@ -5246,6 +5246,10 @@ u8 *ConvertEasyChatWordsToString(u8 *dest, const u16 *src, u16 columns, u16 rows
     #if (DECAP_ENABLED) && !(DECAP_EASY_CHAT)
     *dest++ = CHAR_FIXED_CASE;
     #endif
+
+    // below added in 1.8.0, no idea what these guys changed lol good lord
+    // if (DECAP_ENABLED && !DECAP_EASY_CHAT)
+    //     *dest++ = CHAR_FIXED_CASE;
 
     for (i = 0; i < rows; i++)
     {
