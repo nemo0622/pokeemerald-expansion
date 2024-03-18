@@ -6,6 +6,7 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
 ### Gameplay
 - All code for features of [RHH's pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion), currently up to version 1.8.0
     - Physical/Special split, Pokémon data up to Generation 9, updated battle engine, EXP. All, etc.
+    - Soft level caps, meant to balance gameplay around EXP. All
     - This does NOT mean every feature is implemented! I don't want feature bloat like that
 - [aarant's](https://github.com/aarant/pokeemerald) DNS, Key Item Wheel, and Decapitalization branches
     - Key Item Wheel - Register up to 4 key items
@@ -18,7 +19,6 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
 - Fun HM Workaround!
     - Meet people and Pokémon willing to help you on your journey!
     - Timburr's Timber (Cut) in Rustboro, TinkaTough (Rock Smash) in Mauville, etc.
-- [Soft Level Caps](https://github.com/rh-hideout/pokeemerald-expansion/pull/4259/commits/c56acb944b3e669df37270a86f57f57c12223f64), meant to balance gameplay around the EXP. All feature
 - Various Quality of Life Features, including:
     - Friendship stat boost! High friendship = about 10% boost to encourage forming a bond with Pokémon more
     - Easier Fishing and Faster Berry Growth
@@ -35,7 +35,7 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
 - Improved Battle Backgrounds by RavePossum and Ruki
 - New Archie battle sprite based on ORAS design by Muzyun and SlayerOne998
 
-## Bugs and Future Plans
+## Bugs Future Plans, and Credits
 
 ### Known Bugs:
 - Mugshots occasionally cut a little portion out of the textbox
@@ -60,3 +60,8 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
     - Include involving Wallace and Steven more in the story (maybe replace Scott with Wallace, witnessing your journey?)
 - Hoopa Rings - mysterious rings found around Hoenn which transport one random Pokémon from another region
 - Maybe add a way to play Dodrio Berry Picking for rewards? maybe? idk
+
+### Credits
+Go support everyone in this list!! They're all insanely talented for this stuff :)
+- All people listed above: aarant/merrp, ghoulslash, RavePossum, and all the other linked resources!
+- PurrfectDoodle / Eva for the Psyduck confusion sprite
