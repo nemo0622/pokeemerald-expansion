@@ -434,3 +434,5 @@ const u32 gObjectEventPic_Pokemon_Floette[] = INCBIN_U32("graphics/object_events
 const u16 gObjectEventPalette_Pokemon_Floette[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/floette.gbapal");
 const u32 gObjectEventPic_Pokemon_Flygon[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/flygon.4bpp");
 const u16 gObjectEventPalette_Pokemon_Flygon[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/flygon.gbapal");
+const u32 gObjectEventPic_Pokemon_Grimer[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/grimer.4bpp");
+const u16 gObjectEventPalette_Pokemon_Grimer[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/grimer.gbapal");

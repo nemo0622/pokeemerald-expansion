@@ -268,6 +268,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GrowlitheHi
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Aipom;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Floette;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Flygon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Grimer;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -529,6 +530,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_AIPOM] =               &gObjectEventGraphicsInfo_Aipom,
     [OBJ_EVENT_GFX_PKMN_FLOETTE] =             &gObjectEventGraphicsInfo_Floette,
     [OBJ_EVENT_GFX_PKMN_FLYGON] =              &gObjectEventGraphicsInfo_Flygon,
+    [OBJ_EVENT_GFX_PKMN_GRIMER] =              &gObjectEventGraphicsInfo_Grimer,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

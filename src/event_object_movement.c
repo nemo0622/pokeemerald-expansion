@@ -493,6 +493,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_AIPOM                   0x8020
 #define OBJ_EVENT_PAL_TAG_FLOETTE                 0x8021
 #define OBJ_EVENT_PAL_TAG_FLYGON                  0x8022
+#define OBJ_EVENT_PAL_TAG_GRIMER                  0x8023
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -561,6 +562,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Aipom, OBJ_EVENT_PAL_TAG_AIPOM},
     {gObjectEventPalette_Pokemon_Floette, OBJ_EVENT_PAL_TAG_FLOETTE},
     {gObjectEventPalette_Pokemon_Flygon, OBJ_EVENT_PAL_TAG_FLYGON},
+    {gObjectEventPalette_Pokemon_Grimer, OBJ_EVENT_PAL_TAG_GRIMER},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
