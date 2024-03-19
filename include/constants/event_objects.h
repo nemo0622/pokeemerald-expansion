@@ -251,8 +251,11 @@
 #define OBJ_EVENT_GFX_BIKER                      246
 #define OBJ_EVENT_GFX_COOLTRAINER_M              247
 #define OBJ_EVENT_GFX_COOLTRAINER_F              248
+#define OBJ_EVENT_GFX_BACKPACKER_F               249
+#define OBJ_EVENT_GFX_LASS2                      250
+#define OBJ_EVENT_GFX_KIMONO_GIRL                251
 
-#define NUM_OBJ_EVENT_GFX                        249
+#define NUM_OBJ_EVENT_GFX                        252
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
