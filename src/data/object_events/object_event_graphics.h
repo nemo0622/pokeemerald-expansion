@@ -428,3 +428,5 @@ const u16 gObjectEventPalette_Zinnia[] = INCBIN_U16("graphics/object_events/pale
 
 const u32 gObjectEventPic_Pokemon_GrowlitheHisuian[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/growlithe_hisuian.4bpp");
 const u16 gObjectEventPalette_Pokemon_GrowlitheHisuian[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/growlithe_hisuian.gbapal");
+const u32 gObjectEventPic_Pokemon_Aipom[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/aipom.4bpp");
+const u16 gObjectEventPalette_Pokemon_Aipom[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/aipom.gbapal");

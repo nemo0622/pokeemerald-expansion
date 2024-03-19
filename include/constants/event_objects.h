@@ -256,8 +256,9 @@
 #define OBJ_EVENT_GFX_KIMONO_GIRL                251
 #define OBJ_EVENT_GFX_ZINNIA                     252
 #define OBJ_EVENT_GFX_PKMN_GROWLITHE_HISUIAN     253
+#define OBJ_EVENT_GFX_PKMN_AIPOM                 254
 
-#define NUM_OBJ_EVENT_GFX                        254
+#define NUM_OBJ_EVENT_GFX                        255
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
