@@ -264,6 +264,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lass2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kimono_Girl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zinnia;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GrowlitheHisuian;
+
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -520,6 +522,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LASS2] =                    &gObjectEventGraphicsInfo_Lass2,
     [OBJ_EVENT_GFX_KIMONO_GIRL] =              &gObjectEventGraphicsInfo_Kimono_Girl,
     [OBJ_EVENT_GFX_ZINNIA] =                   &gObjectEventGraphicsInfo_Zinnia,
+    [OBJ_EVENT_GFX_PKMN_GROWLITHE_HISUIAN] =   &gObjectEventGraphicsInfo_GrowlitheHisuian,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

@@ -425,3 +425,6 @@ const u32 gObjectEventPic_Kimono_Girl[] = INCBIN_U32("graphics/object_events/pic
 const u16 gObjectEventPalette_Kimono_Girl[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/kimono_girl.gbapal");
 const u32 gObjectEventPic_Zinnia[] = INCBIN_U32("graphics/object_events/pics/people/zinnia.4bpp");
 const u16 gObjectEventPalette_Zinnia[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/zinnia.gbapal");
+
+const u32 gObjectEventPic_Pokemon_GrowlitheHisuian[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/growlithe_hisuian.4bpp");
+const u16 gObjectEventPalette_Pokemon_GrowlitheHisuian[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/growlithe_hisuian.gbapal");

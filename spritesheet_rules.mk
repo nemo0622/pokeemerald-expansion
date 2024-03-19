@@ -778,3 +778,6 @@ $(OBJEVENTGFXDIR)/people/kimono_girl.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/people/zinnia.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/growlithe_hisuian.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

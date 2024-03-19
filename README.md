@@ -46,9 +46,7 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
     - Change made in "u8 UpdateTimeOfDay(void)" function of "overworld.c" file - commented out a shit ton of real code lol sorry
 
 ### Future Plans:
-- More FRLG-style NPCs to add some variation to the overworld
-    - Also includes more matching portraits to show when talking
-- [EV/IV Editor](https://github.com/pret/pokeemerald/wiki/Add-a-EV---IV-Stat-Editor-UI), maybe unlocked by giving Professor Cozmo the meteorite in Fallarbor
+- Some overworld Pokémon sprites to liven up the world
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you
     - Code works, but need to add actual map locations!
@@ -66,4 +64,9 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
 ### Credits
 Go support everyone in this list!! They're all insanely talented for this stuff :)
 - All people listed above: aarant/merrp, ghoulslash, RavePossum, and all the other linked resources!
+    - Huge thank you to the pret disassembly team and the RHH Emerald Expansion team
+    - Credit to aarant for the Lighting system, Key Item Wheel, and Decapitalization branches
+    - Thanks to ghoulslash for the amazing DexNav feature
+- Shoutout to [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo), an amazing collection of resources for rom hacking
+    - Credit to Pawkkie, Poffin_Case, Hyo-Oppa, and RavePossum for many graphical upgrades
 - PurrfectDoodle / Eva for the Psyduck confusion sprite
