@@ -2063,7 +2063,7 @@ LittlerootTown_TestDialogueScript::
 # 1036 "data/maps/LittlerootTown/scripts.pory"
 	faceplayer
 # 1037 "data/maps/LittlerootTown/scripts.pory"
-	msgbox_mugshot LittlerootTown_TestDialogueScript_Text_0, MSGBOX_DEFAULT, MUGSHOT_KIMONO_GIRL
+	msgbox_mugshot LittlerootTown_TestDialogueScript_Text_0, MSGBOX_DEFAULT, MUGSHOT_ZINNIA
 # 1038 "data/maps/LittlerootTown/scripts.pory"
 	closemessage
 # 1039 "data/maps/LittlerootTown/scripts.pory"

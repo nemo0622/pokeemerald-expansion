@@ -88,5 +88,6 @@
 #define MUGSHOT_BACKPACKER_F  83
 #define MUGSHOT_LASS2  84
 #define MUGSHOT_KIMONO_GIRL  85
+#define MUGSHOT_ZINNIA  86
 
 #endif

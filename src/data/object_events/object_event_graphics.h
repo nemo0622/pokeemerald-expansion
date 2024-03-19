@@ -423,3 +423,5 @@ const u32 gObjectEventPic_Lass2[] = INCBIN_U32("graphics/object_events/pics/peop
 const u16 gObjectEventPalette_Lass2[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/lass2.gbapal");
 const u32 gObjectEventPic_Kimono_Girl[] = INCBIN_U32("graphics/object_events/pics/people/kimono_girl.4bpp");
 const u16 gObjectEventPalette_Kimono_Girl[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/kimono_girl.gbapal");
+const u32 gObjectEventPic_Zinnia[] = INCBIN_U32("graphics/object_events/pics/people/zinnia.4bpp");
+const u16 gObjectEventPalette_Zinnia[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/zinnia.gbapal");

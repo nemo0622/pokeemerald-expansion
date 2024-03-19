@@ -775,3 +775,6 @@ $(OBJEVENTGFXDIR)/people/lass2.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/people/kimono_girl.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/zinnia.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4

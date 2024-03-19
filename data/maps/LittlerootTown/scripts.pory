@@ -1034,7 +1034,7 @@ script LittlerootTown_TestDialogueScript
 {
 	lock
 	faceplayer
-	msgbox_mugshot(format("This is some test dialogue!"), MSGBOX_DEFAULT, MUGSHOT_KIMONO_GIRL)
+	msgbox_mugshot(format("This is some test dialogue!"), MSGBOX_DEFAULT, MUGSHOT_ZINNIA)
 	closemessage
 	release
 	end

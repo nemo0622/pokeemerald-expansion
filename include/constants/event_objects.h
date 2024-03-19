@@ -254,8 +254,9 @@
 #define OBJ_EVENT_GFX_BACKPACKER_F               249
 #define OBJ_EVENT_GFX_LASS2                      250
 #define OBJ_EVENT_GFX_KIMONO_GIRL                251
+#define OBJ_EVENT_GFX_ZINNIA                     252
 
-#define NUM_OBJ_EVENT_GFX                        252
+#define NUM_OBJ_EVENT_GFX                        253
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

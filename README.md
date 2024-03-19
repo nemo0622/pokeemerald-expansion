@@ -30,7 +30,7 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
     - Others from [FRLG-style NPC Megapack](https://reliccastle.com/resources/823/) and [Aveontrainer](https://www.deviantart.com/aveontrainer/gallery/67900303/overworld) on DeviantArt
 - [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to most NPCs
     - Credit to Zenionith and Zermonius on DeviantArt for ORAS style PSS icons
-    - Credit to Wergan on DeviantArt and Omega on WhackaHack for various other PSS-style icons
+    - Credit to Wergan on DeviantArt and Omega and Frozen-Echo on WhackaHack for various other PSS-style icons
 - New Gen 5 inspired map popups, ported from BSBob by [RavePossum](https://github.com/ravepossum/pokeemerald)
 - Improved Battle Backgrounds by RavePossum and Ruki
 - New Archie battle sprite based on ORAS design by Muzyun and SlayerOne998

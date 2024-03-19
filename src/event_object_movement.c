@@ -488,6 +488,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_BACKPACKER_F            0x8015
 #define OBJ_EVENT_PAL_TAG_LASS2                   0x8016
 #define OBJ_EVENT_PAL_TAG_KIMONO_GIRL             0x8017
+#define OBJ_EVENT_PAL_TAG_ZINNIA                  0x8018
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -551,6 +552,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Backpacker_F, OBJ_EVENT_PAL_TAG_BACKPACKER_F},
     {gObjectEventPalette_Lass2, OBJ_EVENT_PAL_TAG_LASS2},
     {gObjectEventPalette_Kimono_Girl, OBJ_EVENT_PAL_TAG_KIMONO_GIRL},
+    {gObjectEventPalette_Zinnia, OBJ_EVENT_PAL_TAG_ZINNIA},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
