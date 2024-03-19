@@ -491,6 +491,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_ZINNIA                  0x8018
 #define OBJ_EVENT_PAL_TAG_GROWLITHE_HISUIAN       0x8019
 #define OBJ_EVENT_PAL_TAG_AIPOM                   0x8020
+#define OBJ_EVENT_PAL_TAG_FLOETTE                 0x8021
+#define OBJ_EVENT_PAL_TAG_FLYGON                  0x8022
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -557,6 +559,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Zinnia, OBJ_EVENT_PAL_TAG_ZINNIA},
     {gObjectEventPalette_Pokemon_GrowlitheHisuian, OBJ_EVENT_PAL_TAG_GROWLITHE_HISUIAN},
     {gObjectEventPalette_Pokemon_Aipom, OBJ_EVENT_PAL_TAG_AIPOM},
+    {gObjectEventPalette_Pokemon_Floette, OBJ_EVENT_PAL_TAG_FLOETTE},
+    {gObjectEventPalette_Pokemon_Flygon, OBJ_EVENT_PAL_TAG_FLYGON},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

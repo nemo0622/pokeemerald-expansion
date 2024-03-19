@@ -430,3 +430,7 @@ const u32 gObjectEventPic_Pokemon_GrowlitheHisuian[] = INCBIN_U32("graphics/obje
 const u16 gObjectEventPalette_Pokemon_GrowlitheHisuian[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/growlithe_hisuian.gbapal");
 const u32 gObjectEventPic_Pokemon_Aipom[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/aipom.4bpp");
 const u16 gObjectEventPalette_Pokemon_Aipom[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/aipom.gbapal");
+const u32 gObjectEventPic_Pokemon_Floette[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/floette.4bpp");
+const u16 gObjectEventPalette_Pokemon_Floette[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/floette.gbapal");
+const u32 gObjectEventPic_Pokemon_Flygon[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/flygon.4bpp");
+const u16 gObjectEventPalette_Pokemon_Flygon[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/flygon.gbapal");

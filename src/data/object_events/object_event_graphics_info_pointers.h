@@ -264,8 +264,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lass2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kimono_Girl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zinnia;
 
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GrowlitheHisuian;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GrowlitheHisuian;      // REMEMBER: Also add below!
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Aipom;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Floette;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Flygon;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -523,8 +525,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LASS2] =                    &gObjectEventGraphicsInfo_Lass2,
     [OBJ_EVENT_GFX_KIMONO_GIRL] =              &gObjectEventGraphicsInfo_Kimono_Girl,
     [OBJ_EVENT_GFX_ZINNIA] =                   &gObjectEventGraphicsInfo_Zinnia,
-    [OBJ_EVENT_GFX_PKMN_GROWLITHE_HISUIAN] =   &gObjectEventGraphicsInfo_GrowlitheHisuian,
+    [OBJ_EVENT_GFX_PKMN_GROWLITHE_HISUIAN] =   &gObjectEventGraphicsInfo_GrowlitheHisuian,      // REMEMBER: Also add above!
     [OBJ_EVENT_GFX_PKMN_AIPOM] =               &gObjectEventGraphicsInfo_Aipom,
+    [OBJ_EVENT_GFX_PKMN_FLOETTE] =             &gObjectEventGraphicsInfo_Floette,
+    [OBJ_EVENT_GFX_PKMN_FLYGON] =              &gObjectEventGraphicsInfo_Flygon,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
