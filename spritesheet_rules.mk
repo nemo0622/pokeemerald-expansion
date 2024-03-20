@@ -793,3 +793,9 @@ $(OBJEVENTGFXDIR)/pokemon/new/flygon.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/grimer.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/hoppip.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/kecleon.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

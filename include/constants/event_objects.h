@@ -260,8 +260,10 @@
 #define OBJ_EVENT_GFX_PKMN_FLOETTE               255
 #define OBJ_EVENT_GFX_PKMN_FLYGON                256
 #define OBJ_EVENT_GFX_PKMN_GRIMER                257
+#define OBJ_EVENT_GFX_PKMN_HOPPIP                258
+#define OBJ_EVENT_GFX_PKMN_KECLEON               259
 
-#define NUM_OBJ_EVENT_GFX                        258
+#define NUM_OBJ_EVENT_GFX                        260
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

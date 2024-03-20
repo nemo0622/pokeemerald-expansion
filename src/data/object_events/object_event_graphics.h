@@ -436,3 +436,7 @@ const u32 gObjectEventPic_Pokemon_Flygon[] = INCBIN_U32("graphics/object_events/
 const u16 gObjectEventPalette_Pokemon_Flygon[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/flygon.gbapal");
 const u32 gObjectEventPic_Pokemon_Grimer[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/grimer.4bpp");
 const u16 gObjectEventPalette_Pokemon_Grimer[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/grimer.gbapal");
+const u32 gObjectEventPic_Pokemon_Hoppip[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/hoppip.4bpp");
+const u16 gObjectEventPalette_Pokemon_Hoppip[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/hoppip.gbapal");
+const u32 gObjectEventPic_Pokemon_KecleonNew[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/kecleon.4bpp");
+const u16 gObjectEventPalette_Pokemon_KecleonNew[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/kecleon.gbapal");
