@@ -265,8 +265,11 @@
 #define OBJ_EVENT_GFX_PKMN_KOMALA                260
 #define OBJ_EVENT_GFX_PKMN_LEDYBA                261
 #define OBJ_EVENT_GFX_PKMN_LILLIPUP              262
+#define OBJ_EVENT_GFX_PKMN_MAKUHITA              263
+#define OBJ_EVENT_GFX_PKMN_MANKEY                264
+#define OBJ_EVENT_GFX_PKMN_FOMANTIS              265
 
-#define NUM_OBJ_EVENT_GFX                        263
+#define NUM_OBJ_EVENT_GFX                        266
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

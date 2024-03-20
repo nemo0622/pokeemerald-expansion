@@ -2472,3 +2472,39 @@ const struct SpriteFrameImage sPicTable_Lillipup[] = {
     overworld_frame(gObjectEventPic_Pokemon_Lillipup, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Lillipup, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Makuhita[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Makuhita, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Makuhita, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Makuhita, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Makuhita, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Makuhita, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Makuhita, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Makuhita, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Makuhita, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Makuhita, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Mankey[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Mankey, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Mankey, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Mankey, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Mankey, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Mankey, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Mankey, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Mankey, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Mankey, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Mankey, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Fomantis[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Fomantis, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Fomantis, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Fomantis, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Fomantis, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Fomantis, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Fomantis, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Fomantis, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Fomantis, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Fomantis, 4, 4, 8),
+};
