@@ -277,6 +277,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lillipup;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Makuhita;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mankey;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fomantis;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mareep;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Marill;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Masquerain;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -547,6 +550,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_MAKUHITA] =            &gObjectEventGraphicsInfo_Makuhita,
     [OBJ_EVENT_GFX_PKMN_MANKEY] =              &gObjectEventGraphicsInfo_Mankey,
     [OBJ_EVENT_GFX_PKMN_FOMANTIS] =            &gObjectEventGraphicsInfo_Fomantis,
+    [OBJ_EVENT_GFX_PKMN_MAREEP] =              &gObjectEventGraphicsInfo_Mareep,
+    [OBJ_EVENT_GFX_PKMN_MARILL] =              &gObjectEventGraphicsInfo_Marill,
+    [OBJ_EVENT_GFX_PKMN_MASQUERAIN] =          &gObjectEventGraphicsInfo_Masquerain,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

@@ -502,6 +502,9 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_MAKUHITA                0x8029
 #define OBJ_EVENT_PAL_TAG_MANKEY                  0x8030
 #define OBJ_EVENT_PAL_TAG_FOMANTIS                0x8031
+#define OBJ_EVENT_PAL_TAG_MAREEP                  0x8032
+#define OBJ_EVENT_PAL_TAG_MARILL                  0x8033
+#define OBJ_EVENT_PAL_TAG_MASQUERAIN              0x8034
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -579,6 +582,9 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Makuhita, OBJ_EVENT_PAL_TAG_MAKUHITA},
     {gObjectEventPalette_Pokemon_Mankey, OBJ_EVENT_PAL_TAG_MANKEY},
     {gObjectEventPalette_Pokemon_Fomantis, OBJ_EVENT_PAL_TAG_FOMANTIS},
+    {gObjectEventPalette_Pokemon_Mareep, OBJ_EVENT_PAL_TAG_MAREEP},
+    {gObjectEventPalette_Pokemon_Marill, OBJ_EVENT_PAL_TAG_MARILL},
+    {gObjectEventPalette_Pokemon_Masquerain, OBJ_EVENT_PAL_TAG_MASQUERAIN},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

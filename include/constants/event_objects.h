@@ -268,8 +268,11 @@
 #define OBJ_EVENT_GFX_PKMN_MAKUHITA              263
 #define OBJ_EVENT_GFX_PKMN_MANKEY                264
 #define OBJ_EVENT_GFX_PKMN_FOMANTIS              265
+#define OBJ_EVENT_GFX_PKMN_MAREEP                266
+#define OBJ_EVENT_GFX_PKMN_MARILL                267
+#define OBJ_EVENT_GFX_PKMN_MASQUERAIN            268
 
-#define NUM_OBJ_EVENT_GFX                        266
+#define NUM_OBJ_EVENT_GFX                        269
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
