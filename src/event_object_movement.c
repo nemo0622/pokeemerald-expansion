@@ -498,6 +498,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_KECLEON                 0x8025
 #define OBJ_EVENT_PAL_TAG_KOMALA                  0x8026
 #define OBJ_EVENT_PAL_TAG_LEDYBA                  0x8027
+#define OBJ_EVENT_PAL_TAG_LILLIPUP                0x8028
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -571,6 +572,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_KecleonNew, OBJ_EVENT_PAL_TAG_KECLEON},
     {gObjectEventPalette_Pokemon_Komala, OBJ_EVENT_PAL_TAG_KOMALA},
     {gObjectEventPalette_Pokemon_Ledyba, OBJ_EVENT_PAL_TAG_LEDYBA},
+    {gObjectEventPalette_Pokemon_Lillipup, OBJ_EVENT_PAL_TAG_LILLIPUP},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

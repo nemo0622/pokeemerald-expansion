@@ -805,3 +805,6 @@ $(OBJEVENTGFXDIR)/pokemon/new/komala.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/ledyba.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/lillipup.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
