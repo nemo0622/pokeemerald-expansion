@@ -458,3 +458,5 @@ const u32 gObjectEventPic_Pokemon_Marill[] = INCBIN_U32("graphics/object_events/
 const u16 gObjectEventPalette_Pokemon_Marill[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/marill.gbapal");
 const u32 gObjectEventPic_Pokemon_Masquerain[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/masquerain.4bpp");
 const u16 gObjectEventPalette_Pokemon_Masquerain[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/masquerain.gbapal");
+const u32 gObjectEventPic_Pokemon_Metapod[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/metapod.4bpp");
+const u16 gObjectEventPalette_Pokemon_Metapod[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/metapod.gbapal");

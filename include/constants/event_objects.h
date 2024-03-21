@@ -271,8 +271,9 @@
 #define OBJ_EVENT_GFX_PKMN_MAREEP                266
 #define OBJ_EVENT_GFX_PKMN_MARILL                267
 #define OBJ_EVENT_GFX_PKMN_MASQUERAIN            268
+#define OBJ_EVENT_GFX_PKMN_METAPOD               269
 
-#define NUM_OBJ_EVENT_GFX                        269
+#define NUM_OBJ_EVENT_GFX                        270
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
