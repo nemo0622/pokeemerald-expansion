@@ -277,8 +277,11 @@
 #define OBJ_EVENT_GFX_PKMN_MISDREAVUS            272
 #define OBJ_EVENT_GFX_PKMN_MUDBRAY               273
 #define OBJ_EVENT_GFX_PKMN_MORELULL              274
+#define OBJ_EVENT_GFX_PKMN_MUDSDALE              275
+#define OBJ_EVENT_GFX_PKMN_MUNNA                 276
+#define OBJ_EVENT_GFX_PKMN_NATU                  277
 
-#define NUM_OBJ_EVENT_GFX                        275
+#define NUM_OBJ_EVENT_GFX                        278
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

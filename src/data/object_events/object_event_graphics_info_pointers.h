@@ -286,6 +286,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Minun;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Misdreavus;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mudbray;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Morelull;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mudsdale;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Munna;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Natu;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -565,6 +568,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_MISDREAVUS] =          &gObjectEventGraphicsInfo_Misdreavus,
     [OBJ_EVENT_GFX_PKMN_MUDBRAY] =             &gObjectEventGraphicsInfo_Mudbray,
     [OBJ_EVENT_GFX_PKMN_MORELULL] =            &gObjectEventGraphicsInfo_Morelull,
+    [OBJ_EVENT_GFX_PKMN_MUDSDALE] =            &gObjectEventGraphicsInfo_Mudsdale,
+    [OBJ_EVENT_GFX_PKMN_MUNNA] =               &gObjectEventGraphicsInfo_Munna,
+    [OBJ_EVENT_GFX_PKMN_NATU] =                &gObjectEventGraphicsInfo_Natu,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
