@@ -282,6 +282,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Marill;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Masquerain;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Metapod;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Miltank;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Minun;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -557,6 +558,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_MASQUERAIN] =          &gObjectEventGraphicsInfo_Masquerain,
     [OBJ_EVENT_GFX_PKMN_METAPOD] =             &gObjectEventGraphicsInfo_Metapod,
     [OBJ_EVENT_GFX_PKMN_MILTANK] =             &gObjectEventGraphicsInfo_Miltank,
+    [OBJ_EVENT_GFX_PKMN_MINUN] =               &gObjectEventGraphicsInfo_Minun,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

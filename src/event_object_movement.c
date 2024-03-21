@@ -507,6 +507,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_MASQUERAIN              0x8034
 #define OBJ_EVENT_PAL_TAG_METAPOD                 0x8035
 #define OBJ_EVENT_PAL_TAG_MILTANK                 0x8036
+#define OBJ_EVENT_PAL_TAG_MINUN                   0x8037
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -589,6 +590,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Masquerain, OBJ_EVENT_PAL_TAG_MASQUERAIN},
     {gObjectEventPalette_Pokemon_Metapod, OBJ_EVENT_PAL_TAG_METAPOD},
     {gObjectEventPalette_Pokemon_Miltank, OBJ_EVENT_PAL_TAG_MILTANK},
+    {gObjectEventPalette_Pokemon_Minun, OBJ_EVENT_PAL_TAG_MINUN},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
