@@ -841,3 +841,6 @@ $(OBJEVENTGFXDIR)/pokemon/new/misdreavus.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/mudbray.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/morelull.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

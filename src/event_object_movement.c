@@ -510,6 +510,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_MINUN                   0x8037
 #define OBJ_EVENT_PAL_TAG_MISDREAVUS              0x8038
 #define OBJ_EVENT_PAL_TAG_MUDBRAY                 0x8039
+#define OBJ_EVENT_PAL_TAG_MORELULL                0x8040
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -595,6 +596,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Minun, OBJ_EVENT_PAL_TAG_MINUN},
     {gObjectEventPalette_Pokemon_Misdreavus, OBJ_EVENT_PAL_TAG_MISDREAVUS},
     {gObjectEventPalette_Pokemon_Mudbray, OBJ_EVENT_PAL_TAG_MUDBRAY},
+    {gObjectEventPalette_Pokemon_Morelull, OBJ_EVENT_PAL_TAG_MORELULL},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
