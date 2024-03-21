@@ -464,3 +464,7 @@ const u32 gObjectEventPic_Pokemon_Miltank[] = INCBIN_U32("graphics/object_events
 const u16 gObjectEventPalette_Pokemon_Miltank[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/miltank.gbapal");
 const u32 gObjectEventPic_Pokemon_Minun[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/minun.4bpp");
 const u16 gObjectEventPalette_Pokemon_Minun[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/minun.gbapal");
+const u32 gObjectEventPic_Pokemon_Misdreavus[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/misdreavus.4bpp");
+const u16 gObjectEventPalette_Pokemon_Misdreavus[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/misdreavus.gbapal");
+const u32 gObjectEventPic_Pokemon_Mudbray[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/mudbray.4bpp");
+const u16 gObjectEventPalette_Pokemon_Mudbray[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/mudbray.gbapal");
