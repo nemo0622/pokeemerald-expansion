@@ -476,3 +476,7 @@ const u32 gObjectEventPic_Pokemon_Munna[] = INCBIN_U32("graphics/object_events/p
 const u16 gObjectEventPalette_Pokemon_Munna[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/munna.gbapal");
 const u32 gObjectEventPic_Pokemon_Natu[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/natu.4bpp");
 const u16 gObjectEventPalette_Pokemon_Natu[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/natu.gbapal");
+const u32 gObjectEventPic_Pokemon_Nidoran_F[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/nidoran_f.4bpp");
+const u16 gObjectEventPalette_Pokemon_Nidoran_F[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/nidoran_f.gbapal");
+const u32 gObjectEventPic_Pokemon_Nidoran_M[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/nidoran_m.4bpp");
+const u16 gObjectEventPalette_Pokemon_Nidoran_M[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/nidoran_m.gbapal");

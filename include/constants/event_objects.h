@@ -280,8 +280,10 @@
 #define OBJ_EVENT_GFX_PKMN_MUDSDALE              275
 #define OBJ_EVENT_GFX_PKMN_MUNNA                 276
 #define OBJ_EVENT_GFX_PKMN_NATU                  277
+#define OBJ_EVENT_GFX_PKMN_NIDORAN_F             278
+#define OBJ_EVENT_GFX_PKMN_NIDORAN_M             279
 
-#define NUM_OBJ_EVENT_GFX                        278
+#define NUM_OBJ_EVENT_GFX                        280
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

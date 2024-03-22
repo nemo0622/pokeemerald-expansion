@@ -289,6 +289,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Morelull;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mudsdale;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Munna;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Natu;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nidoran_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nidoran_M;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -571,6 +573,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_MUDSDALE] =            &gObjectEventGraphicsInfo_Mudsdale,
     [OBJ_EVENT_GFX_PKMN_MUNNA] =               &gObjectEventGraphicsInfo_Munna,
     [OBJ_EVENT_GFX_PKMN_NATU] =                &gObjectEventGraphicsInfo_Natu,
+    [OBJ_EVENT_GFX_PKMN_NIDORAN_F] =           &gObjectEventGraphicsInfo_Nidoran_F,
+    [OBJ_EVENT_GFX_PKMN_NIDORAN_M] =           &gObjectEventGraphicsInfo_Nidoran_M,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

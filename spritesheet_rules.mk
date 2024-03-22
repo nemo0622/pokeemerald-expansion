@@ -853,3 +853,9 @@ $(OBJEVENTGFXDIR)/pokemon/new/munna.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/natu.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/nidoran_f.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/nidoran_m.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

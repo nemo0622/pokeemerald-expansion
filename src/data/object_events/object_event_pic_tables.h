@@ -2652,3 +2652,27 @@ const struct SpriteFrameImage sPicTable_Natu[] = {
     overworld_frame(gObjectEventPic_Pokemon_Natu, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Natu, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Nidoran_F[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_F, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_F, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_F, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_F, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_F, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_F, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_F, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_F, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_F, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Nidoran_M[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_M, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_M, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_M, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_M, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_M, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_M, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_M, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_M, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Nidoran_M, 4, 4, 8),
+};
