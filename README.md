@@ -50,6 +50,8 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you
     - Code works, but need to add actual map locations!
+    - WHEN GET SURF: Fill up Briney's house with Pokémon Rangers, which offer rare Pokémon and Items to the player!
+        - Say Briney "sold the cottage" or something, and say he's going to Slateport idk
 - Slight tileset modifications (FRLG style trees, nicer grass?, etc.)
 - Pokémon availability revamp - ~400 available species from generation 1-9
     - Also revamp and improve old, weak Pokémon (Ledian and Doduo my beloveds)
