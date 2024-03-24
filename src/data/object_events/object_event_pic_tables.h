@@ -2772,3 +2772,51 @@ const struct SpriteFrameImage sPicTable_Phanpy[] = {
     overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Pichu[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Pichu, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Pichu, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Pichu, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Pichu, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Pichu, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Pichu, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Pichu, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Pichu, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Pichu, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Pidgey[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Pidgey, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Pidgey, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Pidgey, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Pidgey, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Pidgey, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Pidgey, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Pidgey, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Pidgey, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Pidgey, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_PikachuNew[] = {
+    overworld_frame(gObjectEventPic_Pokemon_PikachuNew, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_PikachuNew, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_PikachuNew, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_PikachuNew, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_PikachuNew, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_PikachuNew, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_PikachuNew, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_PikachuNew, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_PikachuNew, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Pikipek[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Pikipek, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Pikipek, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Pikipek, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Pikipek, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Pikipek, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Pikipek, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Pikipek, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Pikipek, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Pikipek, 4, 4, 8),
+};
