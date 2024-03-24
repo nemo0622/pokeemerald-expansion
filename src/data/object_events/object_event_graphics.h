@@ -484,3 +484,7 @@ const u32 gObjectEventPic_Pokemon_Nincada[] = INCBIN_U32("graphics/object_events
 const u16 gObjectEventPalette_Pokemon_Nincada[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/nincada.gbapal");
 const u32 gObjectEventPic_Pokemon_Ninjask[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/ninjask.4bpp");
 const u16 gObjectEventPalette_Pokemon_Ninjask[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/ninjask.gbapal");
+const u32 gObjectEventPic_Pokemon_Noibat[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/noibat.4bpp");
+const u16 gObjectEventPalette_Pokemon_Noibat[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/noibat.gbapal");
+const u32 gObjectEventPic_Pokemon_Numel[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/numel.4bpp");
+const u16 gObjectEventPalette_Pokemon_Numel[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/numel.gbapal");

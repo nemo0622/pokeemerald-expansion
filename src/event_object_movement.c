@@ -518,6 +518,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_NIDORAN_M               0x8045
 #define OBJ_EVENT_PAL_TAG_NINCADA                 0x8046
 #define OBJ_EVENT_PAL_TAG_NINJASK                 0x8047
+#define OBJ_EVENT_PAL_TAG_NOIBAT                  0x8048
+#define OBJ_EVENT_PAL_TAG_NUMEL                   0x8049
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -611,6 +613,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Nidoran_M, OBJ_EVENT_PAL_TAG_NIDORAN_M},
     {gObjectEventPalette_Pokemon_Nincada, OBJ_EVENT_PAL_TAG_NINCADA},
     {gObjectEventPalette_Pokemon_Ninjask, OBJ_EVENT_PAL_TAG_NINJASK},
+    {gObjectEventPalette_Pokemon_Noibat, OBJ_EVENT_PAL_TAG_NOIBAT},
+    {gObjectEventPalette_Pokemon_Numel, OBJ_EVENT_PAL_TAG_NUMEL},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

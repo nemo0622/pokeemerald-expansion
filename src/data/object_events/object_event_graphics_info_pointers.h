@@ -293,6 +293,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nidoran_F;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nidoran_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nincada;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ninjask;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Noibat;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Numel;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -579,6 +581,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_NIDORAN_M] =           &gObjectEventGraphicsInfo_Nidoran_M,
     [OBJ_EVENT_GFX_PKMN_NINCADA] =             &gObjectEventGraphicsInfo_Nincada,
     [OBJ_EVENT_GFX_PKMN_NINJASK] =             &gObjectEventGraphicsInfo_Ninjask,
+    [OBJ_EVENT_GFX_PKMN_NOIBAT] =              &gObjectEventGraphicsInfo_Noibat,
+    [OBJ_EVENT_GFX_PKMN_NUMEL] =               &gObjectEventGraphicsInfo_Numel,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
