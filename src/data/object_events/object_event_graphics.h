@@ -488,3 +488,5 @@ const u32 gObjectEventPic_Pokemon_Noibat[] = INCBIN_U32("graphics/object_events/
 const u16 gObjectEventPalette_Pokemon_Noibat[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/noibat.gbapal");
 const u32 gObjectEventPic_Pokemon_Numel[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/numel.4bpp");
 const u16 gObjectEventPalette_Pokemon_Numel[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/numel.gbapal");
+const u32 gObjectEventPic_Pokemon_Oddish[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/oddish.4bpp");
+const u16 gObjectEventPalette_Pokemon_Oddish[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/oddish.gbapal");

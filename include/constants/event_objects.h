@@ -286,8 +286,9 @@
 #define OBJ_EVENT_GFX_PKMN_NINJASK               281
 #define OBJ_EVENT_GFX_PKMN_NOIBAT                282
 #define OBJ_EVENT_GFX_PKMN_NUMEL                 283
+#define OBJ_EVENT_GFX_PKMN_ODDISH                284
 
-#define NUM_OBJ_EVENT_GFX                        284
+#define NUM_OBJ_EVENT_GFX                        285
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

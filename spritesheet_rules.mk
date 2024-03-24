@@ -871,3 +871,6 @@ $(OBJEVENTGFXDIR)/pokemon/new/noibat.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/numel.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/oddish.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
