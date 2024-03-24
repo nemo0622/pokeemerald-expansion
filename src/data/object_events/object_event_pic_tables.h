@@ -2736,3 +2736,39 @@ const struct SpriteFrameImage sPicTable_Oddish[] = {
     overworld_frame(gObjectEventPic_Pokemon_Oddish, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Oddish, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Pancham[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Pancham, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Pancham, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Pancham, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Pancham, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Pancham, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Pancham, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Pancham, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Pancham, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Pancham, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Petilil[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Petilil, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Petilil, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Petilil, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Petilil, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Petilil, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Petilil, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Petilil, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Petilil, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Petilil, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Phanpy[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Phanpy, 4, 4, 8),
+};

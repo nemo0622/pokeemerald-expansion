@@ -287,8 +287,11 @@
 #define OBJ_EVENT_GFX_PKMN_NOIBAT                282
 #define OBJ_EVENT_GFX_PKMN_NUMEL                 283
 #define OBJ_EVENT_GFX_PKMN_ODDISH                284
+#define OBJ_EVENT_GFX_PKMN_PANCHAM               285
+#define OBJ_EVENT_GFX_PKMN_PETILIL               286
+#define OBJ_EVENT_GFX_PKMN_PHANPY                287
 
-#define NUM_OBJ_EVENT_GFX                        285
+#define NUM_OBJ_EVENT_GFX                        288
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

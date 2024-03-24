@@ -296,6 +296,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ninjask;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Noibat;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Numel;         // REMEMBER to add below
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Oddish;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pancham;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Petilil;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Phanpy;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -585,6 +588,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_NOIBAT] =              &gObjectEventGraphicsInfo_Noibat,
     [OBJ_EVENT_GFX_PKMN_NUMEL] =               &gObjectEventGraphicsInfo_Numel,             // REMEMBER to add above
     [OBJ_EVENT_GFX_PKMN_ODDISH] =              &gObjectEventGraphicsInfo_Oddish,
+    [OBJ_EVENT_GFX_PKMN_PANCHAM] =             &gObjectEventGraphicsInfo_Pancham,
+    [OBJ_EVENT_GFX_PKMN_PETILIL] =             &gObjectEventGraphicsInfo_Petilil,
+    [OBJ_EVENT_GFX_PKMN_PHANPY] =              &gObjectEventGraphicsInfo_Phanpy,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
