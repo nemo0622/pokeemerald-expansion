@@ -504,3 +504,5 @@ const u32 gObjectEventPic_Pokemon_PikachuNew[] = INCBIN_U32("graphics/object_eve
 const u16 gObjectEventPalette_Pokemon_PikachuNew[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/pikachu.gbapal");
 const u32 gObjectEventPic_Pokemon_Pikipek[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/pikipek.4bpp");
 const u16 gObjectEventPalette_Pokemon_Pikipek[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/pikipek.gbapal");
+const u32 gObjectEventPic_Pokemon_Poliwag[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/poliwag.4bpp");
+const u16 gObjectEventPalette_Pokemon_Poliwag[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/poliwag.gbapal");

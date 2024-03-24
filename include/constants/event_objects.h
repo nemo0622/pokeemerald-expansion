@@ -294,8 +294,9 @@
 #define OBJ_EVENT_GFX_PKMN_PIDGEY                289
 #define OBJ_EVENT_GFX_PKMN_PIKACHU               290
 #define OBJ_EVENT_GFX_PKMN_PIKIPEK               291
+#define OBJ_EVENT_GFX_PKMN_POLIWAG               292
 
-#define NUM_OBJ_EVENT_GFX                        292
+#define NUM_OBJ_EVENT_GFX                        293
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

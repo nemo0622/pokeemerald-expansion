@@ -528,6 +528,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_PIDGEY                  0x8055
 #define OBJ_EVENT_PAL_TAG_PIKACHU                 0x8056
 #define OBJ_EVENT_PAL_TAG_PIKIPEK                 0x8057
+#define OBJ_EVENT_PAL_TAG_POLIWAG                 0x8058
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -631,6 +632,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Pidgey, OBJ_EVENT_PAL_TAG_PIDGEY},
     {gObjectEventPalette_Pokemon_PikachuNew, OBJ_EVENT_PAL_TAG_PIKACHU},
     {gObjectEventPalette_Pokemon_Pikipek, OBJ_EVENT_PAL_TAG_PIKIPEK},
+    {gObjectEventPalette_Pokemon_Poliwag, OBJ_EVENT_PAL_TAG_POLIWAG},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
