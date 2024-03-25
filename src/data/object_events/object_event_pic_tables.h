@@ -2832,3 +2832,39 @@ const struct SpriteFrameImage sPicTable_Poliwag[] = {
     overworld_frame(gObjectEventPic_Pokemon_Poliwag, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Poliwag, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Poliwhirl[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Poliwhirl, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Poliwhirl, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Poliwhirl, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Poliwhirl, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Poliwhirl, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Poliwhirl, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Poliwhirl, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Poliwhirl, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Poliwhirl, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Ponyta_Galarian[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Ponyta_Galarian, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Ponyta_Galarian, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Ponyta_Galarian, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Ponyta_Galarian, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Ponyta_Galarian, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Ponyta_Galarian, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Ponyta_Galarian, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Ponyta_Galarian, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Ponyta_Galarian, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Popplio[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Popplio, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Popplio, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Popplio, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Popplio, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Popplio, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Popplio, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Popplio, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Popplio, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Popplio, 4, 4, 8),
+};

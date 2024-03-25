@@ -898,3 +898,12 @@ $(OBJEVENTGFXDIR)/pokemon/new/pikipek.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/poliwag.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/poliwhirl.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/ponyta_galarian.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/popplio.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

@@ -304,6 +304,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pidgey;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PikachuNew;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pikipek;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Poliwag;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Poliwhirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ponyta_Galarian;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Popplio;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -601,6 +604,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_PIKACHU] =             &gObjectEventGraphicsInfo_PikachuNew,
     [OBJ_EVENT_GFX_PKMN_PIKIPEK] =             &gObjectEventGraphicsInfo_Pikipek,
     [OBJ_EVENT_GFX_PKMN_POLIWAG] =             &gObjectEventGraphicsInfo_Poliwag,
+    [OBJ_EVENT_GFX_PKMN_POLIWHIRL] =           &gObjectEventGraphicsInfo_Poliwhirl,
+    [OBJ_EVENT_GFX_PKMN_PONYTA_GALARIAN] =     &gObjectEventGraphicsInfo_Ponyta_Galarian,
+    [OBJ_EVENT_GFX_PKMN_POPPLIO] =             &gObjectEventGraphicsInfo_Popplio,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
