@@ -512,3 +512,5 @@ const u32 gObjectEventPic_Pokemon_Ponyta_Galarian[] = INCBIN_U32("graphics/objec
 const u16 gObjectEventPalette_Pokemon_Ponyta_Galarian[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/ponyta_galarian.gbapal");
 const u32 gObjectEventPic_Pokemon_Popplio[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/popplio.4bpp");
 const u16 gObjectEventPalette_Pokemon_Popplio[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/popplio.gbapal");
+const u32 gObjectEventPic_Pokemon_Porygon[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/porygon.4bpp");
+const u16 gObjectEventPalette_Pokemon_Porygon[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/porygon.gbapal");

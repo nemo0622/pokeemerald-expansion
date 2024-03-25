@@ -532,6 +532,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_POLIWHIRL               0x8059
 #define OBJ_EVENT_PAL_TAG_PONYTA_GALARIAN         0x8060
 #define OBJ_EVENT_PAL_TAG_POPPLIO                 0x8061
+#define OBJ_EVENT_PAL_TAG_PORYGON                 0x8062
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -639,6 +640,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Poliwhirl, OBJ_EVENT_PAL_TAG_POLIWHIRL},
     {gObjectEventPalette_Pokemon_Ponyta_Galarian, OBJ_EVENT_PAL_TAG_PONYTA_GALARIAN},
     {gObjectEventPalette_Pokemon_Popplio, OBJ_EVENT_PAL_TAG_POPPLIO},
+    {gObjectEventPalette_Pokemon_Porygon, OBJ_EVENT_PAL_TAG_PORYGON},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
