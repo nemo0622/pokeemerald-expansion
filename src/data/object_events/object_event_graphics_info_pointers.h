@@ -308,6 +308,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Poliwhirl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ponyta_Galarian;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Popplio;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Porygon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Psyduck;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rockruff;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sableye;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sandile;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -609,6 +613,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_PONYTA_GALARIAN] =     &gObjectEventGraphicsInfo_Ponyta_Galarian,
     [OBJ_EVENT_GFX_PKMN_POPPLIO] =             &gObjectEventGraphicsInfo_Popplio,
     [OBJ_EVENT_GFX_PKMN_PORYGON] =             &gObjectEventGraphicsInfo_Porygon,
+    [OBJ_EVENT_GFX_PKMN_PSYDUCK] =             &gObjectEventGraphicsInfo_Psyduck,
+    [OBJ_EVENT_GFX_PKMN_ROCKRUFF] =            &gObjectEventGraphicsInfo_Rockruff,
+    [OBJ_EVENT_GFX_PKMN_SABLEYE] =             &gObjectEventGraphicsInfo_Sableye,
+    [OBJ_EVENT_GFX_PKMN_SANDILE] =             &gObjectEventGraphicsInfo_Sandile,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

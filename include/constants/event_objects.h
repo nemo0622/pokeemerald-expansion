@@ -299,8 +299,12 @@
 #define OBJ_EVENT_GFX_PKMN_PONYTA_GALARIAN       294
 #define OBJ_EVENT_GFX_PKMN_POPPLIO               295
 #define OBJ_EVENT_GFX_PKMN_PORYGON               296
+#define OBJ_EVENT_GFX_PKMN_PSYDUCK               297
+#define OBJ_EVENT_GFX_PKMN_ROCKRUFF              298
+#define OBJ_EVENT_GFX_PKMN_SABLEYE               299
+#define OBJ_EVENT_GFX_PKMN_SANDILE               300
 
-#define NUM_OBJ_EVENT_GFX                        297
+#define NUM_OBJ_EVENT_GFX                        301
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

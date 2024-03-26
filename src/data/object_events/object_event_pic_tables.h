@@ -2880,3 +2880,51 @@ const struct SpriteFrameImage sPicTable_Porygon[] = {
     overworld_frame(gObjectEventPic_Pokemon_Porygon, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Porygon, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Psyduck[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Psyduck, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Psyduck, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Psyduck, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Psyduck, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Psyduck, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Psyduck, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Psyduck, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Psyduck, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Psyduck, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Rockruff[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Rockruff, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Rockruff, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Rockruff, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Rockruff, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Rockruff, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Rockruff, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Rockruff, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Rockruff, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Rockruff, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Sableye[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Sableye, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Sableye, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Sableye, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Sableye, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Sableye, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Sableye, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Sableye, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Sableye, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Sableye, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Sandile[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 8),
+};
