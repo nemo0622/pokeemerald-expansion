@@ -66,19 +66,13 @@ u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
         else
             return expValue / sExpScalingDown[levelDifference];
     }
-    // my shitty custom code give me a break dammit
-    else if (B_EXP_CAP_TYPE == EXP_CAP_SOFT)
+    else if (level < currentLevelCap)
     {
-        if(level >= currentLevelCap)
-        {
-            return expValue / 4;
-        }
-        else
-        {
-            return 1;
-        }
+       return expValue;
     }
     else
+    {
         return 0;
+    }
 
 }
