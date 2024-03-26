@@ -537,6 +537,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_ROCKRUFF                0x8064
 #define OBJ_EVENT_PAL_TAG_SABLEYE                 0x8065
 #define OBJ_EVENT_PAL_TAG_SANDILE                 0x8066
+#define OBJ_EVENT_PAL_TAG_SANDSHREW               0x8067
+#define OBJ_EVENT_PAL_TAG_SANDYGAST               0x8068
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -649,6 +651,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Rockruff, OBJ_EVENT_PAL_TAG_ROCKRUFF},
     {gObjectEventPalette_Pokemon_Sableye, OBJ_EVENT_PAL_TAG_SABLEYE},
     {gObjectEventPalette_Pokemon_Sandile, OBJ_EVENT_PAL_TAG_SANDILE},
+    {gObjectEventPalette_Pokemon_Sandshrew, OBJ_EVENT_PAL_TAG_SANDSHREW},
+    {gObjectEventPalette_Pokemon_Sandygast, OBJ_EVENT_PAL_TAG_SANDYGAST},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

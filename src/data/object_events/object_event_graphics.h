@@ -522,3 +522,7 @@ const u32 gObjectEventPic_Pokemon_Sableye[] = INCBIN_U32("graphics/object_events
 const u16 gObjectEventPalette_Pokemon_Sableye[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/sableye.gbapal");
 const u32 gObjectEventPic_Pokemon_Sandile[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/sandile.4bpp");
 const u16 gObjectEventPalette_Pokemon_Sandile[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/sandile.gbapal");
+const u32 gObjectEventPic_Pokemon_Sandshrew[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/sandshrew.4bpp");
+const u16 gObjectEventPalette_Pokemon_Sandshrew[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/sandshrew.gbapal");
+const u32 gObjectEventPic_Pokemon_Sandygast[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/sandygast.4bpp");
+const u16 gObjectEventPalette_Pokemon_Sandygast[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/sandygast.gbapal");

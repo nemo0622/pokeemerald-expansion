@@ -2928,3 +2928,27 @@ const struct SpriteFrameImage sPicTable_Sandile[] = {
     overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Sandile, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Sandshrew[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Sandshrew, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Sandshrew, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Sandshrew, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Sandshrew, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Sandshrew, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Sandshrew, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Sandshrew, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Sandshrew, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Sandshrew, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Sandygast[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Sandygast, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Sandygast, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Sandygast, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Sandygast, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Sandygast, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Sandygast, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Sandygast, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Sandygast, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Sandygast, 4, 4, 8),
+};
