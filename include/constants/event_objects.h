@@ -305,8 +305,12 @@
 #define OBJ_EVENT_GFX_PKMN_SANDILE               300
 #define OBJ_EVENT_GFX_PKMN_SANDSHREW             301
 #define OBJ_EVENT_GFX_PKMN_SANDYGAST             302
+#define OBJ_EVENT_GFX_PKMN_SAWSBUCK1             303
+#define OBJ_EVENT_GFX_PKMN_SAWSBUCK2             304
+#define OBJ_EVENT_GFX_PKMN_SAWSBUCK3             305
+#define OBJ_EVENT_GFX_PKMN_SAWSBUCK4             306
 
-#define NUM_OBJ_EVENT_GFX                        303
+#define NUM_OBJ_EVENT_GFX                        307
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

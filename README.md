@@ -55,6 +55,7 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
 - Slight tileset modifications (FRLG style trees, nicer grass?, etc.)
 - Pokémon availability revamp - ~400 available species from generation 1-9
     - Also revamp and improve old, weak Pokémon (Ledian and Doduo my beloveds)
+    - Some changes to make old Pokémon more interesting (ex: different Sawsbuck being different types - Spring = Fairy/Grass, Fall = Fire/Grass, etc)
 - NPC quests and more NPC "events" around Hoenn (ex: west of Petalburg, help out a stressed fisherman for a Rod)
     - Also include more fun NPC dialogue, such as some trainers giving you items if you talk to them after battle!
     - "NPC Events" could include something like a festival celebrating a legendary Pokémon in a certain town, with exclusive items and maybe a Pokémon egg distributor!

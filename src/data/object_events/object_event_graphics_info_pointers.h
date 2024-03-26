@@ -314,6 +314,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sableye;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sandile;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sandshrew;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sandygast;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sawsbuck1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sawsbuck2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sawsbuck3;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sawsbuck4;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -621,6 +625,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_SANDILE] =             &gObjectEventGraphicsInfo_Sandile,
     [OBJ_EVENT_GFX_PKMN_SANDSHREW] =           &gObjectEventGraphicsInfo_Sandshrew,
     [OBJ_EVENT_GFX_PKMN_SANDYGAST] =           &gObjectEventGraphicsInfo_Sandygast,
+    [OBJ_EVENT_GFX_PKMN_SAWSBUCK1] =           &gObjectEventGraphicsInfo_Sawsbuck1,
+    [OBJ_EVENT_GFX_PKMN_SAWSBUCK2] =           &gObjectEventGraphicsInfo_Sawsbuck2,
+    [OBJ_EVENT_GFX_PKMN_SAWSBUCK3] =           &gObjectEventGraphicsInfo_Sawsbuck3,
+    [OBJ_EVENT_GFX_PKMN_SAWSBUCK4] =           &gObjectEventGraphicsInfo_Sawsbuck4,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
