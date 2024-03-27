@@ -534,3 +534,7 @@ const u32 gObjectEventPic_Pokemon_Sawsbuck3[] = INCBIN_U32("graphics/object_even
 const u16 gObjectEventPalette_Pokemon_Sawsbuck3[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/sawsbuck3.gbapal");
 const u32 gObjectEventPic_Pokemon_Sawsbuck4[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/sawsbuck4.4bpp");
 const u16 gObjectEventPalette_Pokemon_Sawsbuck4[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/sawsbuck4.gbapal");
+const u32 gObjectEventPic_Pokemon_Sealeo[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/sealeo.4bpp");
+const u16 gObjectEventPalette_Pokemon_Sealeo[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/sealeo.gbapal");
+const u32 gObjectEventPic_Pokemon_Sentret[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/sentret.4bpp");
+const u16 gObjectEventPalette_Pokemon_Sentret[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/sentret.gbapal");

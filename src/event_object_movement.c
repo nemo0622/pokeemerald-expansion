@@ -543,6 +543,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_SAWSBUCK2               0x8070
 #define OBJ_EVENT_PAL_TAG_SAWSBUCK3               0x8071
 #define OBJ_EVENT_PAL_TAG_SAWSBUCK4               0x8072
+#define OBJ_EVENT_PAL_TAG_SEALEO                  0x8073
+#define OBJ_EVENT_PAL_TAG_SENTRET                 0x8074
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -661,6 +663,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Sawsbuck2, OBJ_EVENT_PAL_TAG_SAWSBUCK2},
     {gObjectEventPalette_Pokemon_Sawsbuck3, OBJ_EVENT_PAL_TAG_SAWSBUCK3},
     {gObjectEventPalette_Pokemon_Sawsbuck4, OBJ_EVENT_PAL_TAG_SAWSBUCK4},
+    {gObjectEventPalette_Pokemon_Sealeo, OBJ_EVENT_PAL_TAG_SEALEO},
+    {gObjectEventPalette_Pokemon_Sentret, OBJ_EVENT_PAL_TAG_SENTRET},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
