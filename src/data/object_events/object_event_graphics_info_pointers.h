@@ -320,6 +320,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sawsbuck3;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sawsbuck4;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sealeo;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sentret;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Shellder;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Shroomish;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -633,6 +635,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_SAWSBUCK4] =           &gObjectEventGraphicsInfo_Sawsbuck4,
     [OBJ_EVENT_GFX_PKMN_SEALEO] =              &gObjectEventGraphicsInfo_Sealeo,
     [OBJ_EVENT_GFX_PKMN_SENTRET] =             &gObjectEventGraphicsInfo_Sentret,
+    [OBJ_EVENT_GFX_PKMN_SHELLDER] =            &gObjectEventGraphicsInfo_Shellder,
+    [OBJ_EVENT_GFX_PKMN_SHROOMISH] =           &gObjectEventGraphicsInfo_Shroomish,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

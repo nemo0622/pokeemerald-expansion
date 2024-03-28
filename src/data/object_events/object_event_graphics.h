@@ -538,3 +538,7 @@ const u32 gObjectEventPic_Pokemon_Sealeo[] = INCBIN_U32("graphics/object_events/
 const u16 gObjectEventPalette_Pokemon_Sealeo[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/sealeo.gbapal");
 const u32 gObjectEventPic_Pokemon_Sentret[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/sentret.4bpp");
 const u16 gObjectEventPalette_Pokemon_Sentret[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/sentret.gbapal");
+const u32 gObjectEventPic_Pokemon_Shellder[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/shellder.4bpp");
+const u16 gObjectEventPalette_Pokemon_Shellder[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/shellder.gbapal");
+const u32 gObjectEventPic_Pokemon_Shroomish[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/shroomish.4bpp");
+const u16 gObjectEventPalette_Pokemon_Shroomish[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/shroomish.gbapal");

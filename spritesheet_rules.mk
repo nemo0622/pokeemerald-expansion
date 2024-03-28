@@ -946,3 +946,9 @@ $(OBJEVENTGFXDIR)/pokemon/new/sealeo.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/sentret.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/shellder.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/shroomish.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

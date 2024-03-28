@@ -3024,3 +3024,27 @@ const struct SpriteFrameImage sPicTable_Sentret[] = {
     overworld_frame(gObjectEventPic_Pokemon_Sentret, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Sentret, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Shellder[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Shellder, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Shellder, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Shellder, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Shellder, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Shellder, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Shellder, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Shellder, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Shellder, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Shellder, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Shroomish[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 8),
+};
