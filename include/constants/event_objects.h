@@ -313,8 +313,11 @@
 #define OBJ_EVENT_GFX_PKMN_SENTRET               308
 #define OBJ_EVENT_GFX_PKMN_SHELLDER              309
 #define OBJ_EVENT_GFX_PKMN_SHROOMISH             310
+#define OBJ_EVENT_GFX_PKMN_SHUPPET               311
+#define OBJ_EVENT_GFX_PKMN_SKARMORY              312
+#define OBJ_EVENT_GFX_PKMN_SKITTYNEW             313
 
-#define NUM_OBJ_EVENT_GFX                        311
+#define NUM_OBJ_EVENT_GFX                        314
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

@@ -3048,3 +3048,39 @@ const struct SpriteFrameImage sPicTable_Shroomish[] = {
     overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Shroomish, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Shuppet[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Shuppet, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Shuppet, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Shuppet, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Shuppet, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Shuppet, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Shuppet, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Shuppet, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Shuppet, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Shuppet, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Skarmory[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Skarmory, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Skarmory, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Skarmory, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Skarmory, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Skarmory, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Skarmory, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Skarmory, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Skarmory, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Skarmory, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_SkittyNew[] = {
+    overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 8),
+};
