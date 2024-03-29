@@ -961,3 +961,9 @@ $(OBJEVENTGFXDIR)/pokemon/new/skarmory.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/skitty.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/spheal.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/swablu.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

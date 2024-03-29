@@ -548,3 +548,7 @@ const u32 gObjectEventPic_Pokemon_Skarmory[] = INCBIN_U32("graphics/object_event
 const u16 gObjectEventPalette_Pokemon_Skarmory[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/skarmory.gbapal");
 const u32 gObjectEventPic_Pokemon_SkittyNew[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/skitty.4bpp");
 const u16 gObjectEventPalette_Pokemon_SkittyNew[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/skitty.gbapal");
+const u32 gObjectEventPic_Pokemon_Spheal[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/spheal.4bpp");
+const u16 gObjectEventPalette_Pokemon_Spheal[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/spheal.gbapal");
+const u32 gObjectEventPic_Pokemon_Swablu[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/swablu.4bpp");
+const u16 gObjectEventPalette_Pokemon_Swablu[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/swablu.gbapal");

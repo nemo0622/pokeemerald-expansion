@@ -53,6 +53,8 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
     - WHEN GET SURF: Fill up Briney's house with Pokémon Rangers, which offer rare Pokémon and Items to the player!
         - Say Briney "sold the cottage" or something, and say he's going to Slateport idk
 - Slight tileset modifications (FRLG style trees, nicer grass?, etc.)
+    - Also add some more "solarpunk" elements, such as solar panels and more environmental integration
+    - Include hints towards old Greater Mauville Holdings company and its collapse
 - Pokémon availability revamp - ~400 available species from generation 1-9
     - Also revamp and improve old, weak Pokémon (Ledian and Doduo my beloveds)
     - Some changes to make old Pokémon more interesting (ex: different Sawsbuck being different types - Spring = Fairy/Grass, Fall = Fire/Grass, etc)

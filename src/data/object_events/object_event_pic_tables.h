@@ -3084,3 +3084,27 @@ const struct SpriteFrameImage sPicTable_SkittyNew[] = {
     overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_SkittyNew, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Spheal[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Spheal, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Swablu[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Swablu, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Swablu, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Swablu, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Swablu, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Swablu, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Swablu, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Swablu, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Swablu, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Swablu, 4, 4, 8),
+};
