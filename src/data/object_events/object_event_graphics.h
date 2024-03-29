@@ -552,3 +552,7 @@ const u32 gObjectEventPic_Pokemon_Spheal[] = INCBIN_U32("graphics/object_events/
 const u16 gObjectEventPalette_Pokemon_Spheal[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/spheal.gbapal");
 const u32 gObjectEventPic_Pokemon_Swablu[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/swablu.4bpp");
 const u16 gObjectEventPalette_Pokemon_Swablu[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/swablu.gbapal");
+const u32 gObjectEventPic_Pokemon_Teddiursa[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/teddiursa.4bpp");
+const u16 gObjectEventPalette_Pokemon_Teddiursa[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/teddiursa.gbapal");
+const u32 gObjectEventPic_Pokemon_Timburr[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/timburr.4bpp");
+const u16 gObjectEventPalette_Pokemon_Timburr[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/timburr.gbapal");

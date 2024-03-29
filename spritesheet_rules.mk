@@ -967,3 +967,9 @@ $(OBJEVENTGFXDIR)/pokemon/new/spheal.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/swablu.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/teddiursa.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/timburr.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

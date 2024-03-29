@@ -552,6 +552,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_SKITTYNEW               0x8079
 #define OBJ_EVENT_PAL_TAG_SPHEAL                  0x8080
 #define OBJ_EVENT_PAL_TAG_SWABLU                  0x8081
+#define OBJ_EVENT_PAL_TAG_TEDDIURSA               0x8082
+#define OBJ_EVENT_PAL_TAG_TIMBURR                 0x8083
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -679,6 +681,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_SkittyNew, OBJ_EVENT_PAL_TAG_SKITTYNEW},
     {gObjectEventPalette_Pokemon_Spheal, OBJ_EVENT_PAL_TAG_SPHEAL},
     {gObjectEventPalette_Pokemon_Swablu, OBJ_EVENT_PAL_TAG_SWABLU},
+    {gObjectEventPalette_Pokemon_Teddiursa, OBJ_EVENT_PAL_TAG_TEDDIURSA},
+    {gObjectEventPalette_Pokemon_Timburr, OBJ_EVENT_PAL_TAG_TIMBURR},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
