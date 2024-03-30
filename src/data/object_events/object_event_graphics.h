@@ -564,3 +564,5 @@ const u32 gObjectEventPic_Pokemon_Totodile[] = INCBIN_U32("graphics/object_event
 const u16 gObjectEventPalette_Pokemon_Totodile[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/totodile.gbapal");
 const u32 gObjectEventPic_Pokemon_Toucannon[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/toucannon.4bpp");
 const u16 gObjectEventPalette_Pokemon_Toucannon[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/toucannon.gbapal");
+const u32 gObjectEventPic_Pokemon_Trapinch[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/trapinch.4bpp");
+const u16 gObjectEventPalette_Pokemon_Trapinch[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/trapinch.gbapal");

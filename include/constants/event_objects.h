@@ -324,8 +324,9 @@
 #define OBJ_EVENT_GFX_PKMN_TORRACAT              319
 #define OBJ_EVENT_GFX_PKMN_TOTODILE              320
 #define OBJ_EVENT_GFX_PKMN_TOUCANNON             321
+#define OBJ_EVENT_GFX_PKMN_TRAPINCH              322
 
-#define NUM_OBJ_EVENT_GFX                        322
+#define NUM_OBJ_EVENT_GFX                        323
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

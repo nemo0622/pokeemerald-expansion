@@ -985,3 +985,6 @@ $(OBJEVENTGFXDIR)/pokemon/new/totodile.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/toucannon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/trapinch.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
