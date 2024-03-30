@@ -329,6 +329,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Spheal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Swablu;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Teddiursa;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Timburr;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Togedemaru;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Torracat;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Totodile;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -651,6 +654,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_SWABLU] =              &gObjectEventGraphicsInfo_Swablu,
     [OBJ_EVENT_GFX_PKMN_TEDDIURSA] =           &gObjectEventGraphicsInfo_Teddiursa,
     [OBJ_EVENT_GFX_PKMN_TIMBURR] =             &gObjectEventGraphicsInfo_Timburr,
+    [OBJ_EVENT_GFX_PKMN_TOGEDEMARU] =          &gObjectEventGraphicsInfo_Togedemaru,
+    [OBJ_EVENT_GFX_PKMN_TORRACAT] =            &gObjectEventGraphicsInfo_Torracat,
+    [OBJ_EVENT_GFX_PKMN_TOTODILE] =            &gObjectEventGraphicsInfo_Totodile,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

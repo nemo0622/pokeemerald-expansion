@@ -3132,3 +3132,39 @@ const struct SpriteFrameImage sPicTable_Timburr[] = {
     overworld_frame(gObjectEventPic_Pokemon_Timburr, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Timburr, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Togedemaru[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Togedemaru, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Togedemaru, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Togedemaru, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Togedemaru, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Togedemaru, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Togedemaru, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Togedemaru, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Togedemaru, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Togedemaru, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Torracat[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Torracat, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Torracat, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Torracat, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Torracat, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Torracat, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Torracat, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Torracat, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Torracat, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Torracat, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Totodile[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Totodile, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Totodile, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Totodile, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Totodile, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Totodile, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Totodile, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Totodile, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Totodile, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Totodile, 4, 4, 8),
+};

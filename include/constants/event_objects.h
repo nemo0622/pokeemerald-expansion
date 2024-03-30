@@ -320,8 +320,11 @@
 #define OBJ_EVENT_GFX_PKMN_SWABLU                315
 #define OBJ_EVENT_GFX_PKMN_TEDDIURSA             316
 #define OBJ_EVENT_GFX_PKMN_TIMBURR               317
+#define OBJ_EVENT_GFX_PKMN_TOGEDEMARU            318
+#define OBJ_EVENT_GFX_PKMN_TORRACAT              319
+#define OBJ_EVENT_GFX_PKMN_TOTODILE              320
 
-#define NUM_OBJ_EVENT_GFX                        318
+#define NUM_OBJ_EVENT_GFX                        321
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
