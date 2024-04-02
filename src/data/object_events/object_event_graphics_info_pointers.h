@@ -334,6 +334,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Torracat;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Totodile;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Toucannon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Trapinch;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Treecko;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tropius;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Umbreon;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -661,6 +664,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_TOTODILE] =            &gObjectEventGraphicsInfo_Totodile,
     [OBJ_EVENT_GFX_PKMN_TOUCANNON] =           &gObjectEventGraphicsInfo_Toucannon,
     [OBJ_EVENT_GFX_PKMN_TRAPINCH] =            &gObjectEventGraphicsInfo_Trapinch,
+    [OBJ_EVENT_GFX_PKMN_TREECKO] =             &gObjectEventGraphicsInfo_Treecko,
+    [OBJ_EVENT_GFX_PKMN_TROPIUS] =             &gObjectEventGraphicsInfo_Tropius,
+    [OBJ_EVENT_GFX_PKMN_UMBREON] =             &gObjectEventGraphicsInfo_Umbreon,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
