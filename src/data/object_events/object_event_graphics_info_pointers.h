@@ -341,6 +341,11 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ZigzagoonNe
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MeowthAlolan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WingullNew;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Altaria;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Baltoy;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bayleef;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Beautifly;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Caterpie;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Comfey;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -675,6 +680,11 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_MEOWTHALOLAN] =        &gObjectEventGraphicsInfo_MeowthAlolan,
     [OBJ_EVENT_GFX_PKMN_WINGULL] =             &gObjectEventGraphicsInfo_WingullNew,
     [OBJ_EVENT_GFX_PKMN_ALTARIA] =             &gObjectEventGraphicsInfo_Altaria,
+    [OBJ_EVENT_GFX_PKMN_BALTOY] =              &gObjectEventGraphicsInfo_Baltoy,
+    [OBJ_EVENT_GFX_PKMN_BAYLEEF] =             &gObjectEventGraphicsInfo_Bayleef,
+    [OBJ_EVENT_GFX_PKMN_BEAUTIFLY] =           &gObjectEventGraphicsInfo_Beautifly,
+    [OBJ_EVENT_GFX_PKMN_CATERPIE] =            &gObjectEventGraphicsInfo_Caterpie,
+    [OBJ_EVENT_GFX_PKMN_COMFEY] =              &gObjectEventGraphicsInfo_Comfey,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

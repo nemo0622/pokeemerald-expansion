@@ -332,8 +332,13 @@
 #define OBJ_EVENT_GFX_PKMN_MEOWTHALOLAN          327
 #define OBJ_EVENT_GFX_PKMN_WINGULL               328
 #define OBJ_EVENT_GFX_PKMN_ALTARIA               329
+#define OBJ_EVENT_GFX_PKMN_BALTOY                330
+#define OBJ_EVENT_GFX_PKMN_BAYLEEF               331
+#define OBJ_EVENT_GFX_PKMN_BEAUTIFLY             332
+#define OBJ_EVENT_GFX_PKMN_CATERPIE              333
+#define OBJ_EVENT_GFX_PKMN_COMFEY                334
 
-#define NUM_OBJ_EVENT_GFX                        330
+#define NUM_OBJ_EVENT_GFX                        335
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

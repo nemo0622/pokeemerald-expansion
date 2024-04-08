@@ -566,6 +566,11 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_MEOWTHALOLAN            0x8093
 #define OBJ_EVENT_PAL_TAG_WINGULL                 0x8094
 #define OBJ_EVENT_PAL_TAG_ALTARIA                 0x8095
+#define OBJ_EVENT_PAL_TAG_BALTOY                  0x8096
+#define OBJ_EVENT_PAL_TAG_BAYLEEF                 0x8097
+#define OBJ_EVENT_PAL_TAG_BEAUTIFLY               0x8098
+#define OBJ_EVENT_PAL_TAG_CATERPIE                0x8099
+#define OBJ_EVENT_PAL_TAG_COMFEY                  0x8100
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -707,6 +712,11 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_MeowthAlolan, OBJ_EVENT_PAL_TAG_MEOWTHALOLAN},
     {gObjectEventPalette_Pokemon_Wingull, OBJ_EVENT_PAL_TAG_WINGULL},
     {gObjectEventPalette_Pokemon_Altaria, OBJ_EVENT_PAL_TAG_ALTARIA},
+    {gObjectEventPalette_Pokemon_Baltoy, OBJ_EVENT_PAL_TAG_BALTOY},
+    {gObjectEventPalette_Pokemon_Bayleef, OBJ_EVENT_PAL_TAG_BAYLEEF},
+    {gObjectEventPalette_Pokemon_Beautifly, OBJ_EVENT_PAL_TAG_BEAUTIFLY},
+    {gObjectEventPalette_Pokemon_Caterpie, OBJ_EVENT_PAL_TAG_CATERPIE},
+    {gObjectEventPalette_Pokemon_Comfey, OBJ_EVENT_PAL_TAG_COMFEY},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

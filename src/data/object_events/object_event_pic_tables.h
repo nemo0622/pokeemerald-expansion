@@ -3276,3 +3276,63 @@ const struct SpriteFrameImage sPicTable_Altaria[] = {
     overworld_frame(gObjectEventPic_Pokemon_Altaria, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Altaria, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Baltoy[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Baltoy, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Baltoy, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Baltoy, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Baltoy, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Baltoy, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Baltoy, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Baltoy, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Baltoy, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Baltoy, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Bayleef[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Bayleef, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Bayleef, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Bayleef, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Bayleef, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Bayleef, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Bayleef, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Bayleef, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Bayleef, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Bayleef, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Beautifly[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Beautifly, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Beautifly, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Beautifly, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Beautifly, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Beautifly, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Beautifly, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Beautifly, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Beautifly, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Beautifly, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Caterpie[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Caterpie, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Caterpie, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Caterpie, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Caterpie, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Caterpie, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Caterpie, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Caterpie, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Caterpie, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Caterpie, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Comfey[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 8),
+};
