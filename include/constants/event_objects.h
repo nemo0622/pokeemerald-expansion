@@ -328,8 +328,12 @@
 #define OBJ_EVENT_GFX_PKMN_TREECKO               323
 #define OBJ_EVENT_GFX_PKMN_TROPIUS               324
 #define OBJ_EVENT_GFX_PKMN_UMBREON               325
+#define OBJ_EVENT_GFX_PKMN_ZIGZAGOONNEW          326
+#define OBJ_EVENT_GFX_PKMN_MEOWTHALOLAN          327
+#define OBJ_EVENT_GFX_PKMN_WINGULL               328
+#define OBJ_EVENT_GFX_PKMN_ALTARIA               329
 
-#define NUM_OBJ_EVENT_GFX                        326
+#define NUM_OBJ_EVENT_GFX                        330
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

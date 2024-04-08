@@ -562,6 +562,10 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_TREECKO                 0x8089
 #define OBJ_EVENT_PAL_TAG_TROPIUS                 0x8090
 #define OBJ_EVENT_PAL_TAG_UMBREON                 0x8091
+#define OBJ_EVENT_PAL_TAG_ZIGZAGOONNEW            0x8092
+#define OBJ_EVENT_PAL_TAG_MEOWTHALOLAN            0x8093
+#define OBJ_EVENT_PAL_TAG_WINGULL                 0x8094
+#define OBJ_EVENT_PAL_TAG_ALTARIA                 0x8095
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -699,6 +703,10 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Treecko, OBJ_EVENT_PAL_TAG_TREECKO},
     {gObjectEventPalette_Pokemon_Tropius, OBJ_EVENT_PAL_TAG_TROPIUS},
     {gObjectEventPalette_Pokemon_Umbreon, OBJ_EVENT_PAL_TAG_UMBREON},
+    {gObjectEventPalette_Pokemon_ZigzagoonNew, OBJ_EVENT_PAL_TAG_ZIGZAGOONNEW},
+    {gObjectEventPalette_Pokemon_MeowthAlolan, OBJ_EVENT_PAL_TAG_MEOWTHALOLAN},
+    {gObjectEventPalette_Pokemon_Wingull, OBJ_EVENT_PAL_TAG_WINGULL},
+    {gObjectEventPalette_Pokemon_Altaria, OBJ_EVENT_PAL_TAG_ALTARIA},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

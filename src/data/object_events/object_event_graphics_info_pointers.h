@@ -337,6 +337,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Trapinch;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Treecko;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tropius;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Umbreon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ZigzagoonNew;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MeowthAlolan;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WingullNew;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Altaria;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -667,6 +671,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_TREECKO] =             &gObjectEventGraphicsInfo_Treecko,
     [OBJ_EVENT_GFX_PKMN_TROPIUS] =             &gObjectEventGraphicsInfo_Tropius,
     [OBJ_EVENT_GFX_PKMN_UMBREON] =             &gObjectEventGraphicsInfo_Umbreon,
+    [OBJ_EVENT_GFX_PKMN_ZIGZAGOONNEW] =        &gObjectEventGraphicsInfo_ZigzagoonNew,
+    [OBJ_EVENT_GFX_PKMN_MEOWTHALOLAN] =        &gObjectEventGraphicsInfo_MeowthAlolan,
+    [OBJ_EVENT_GFX_PKMN_WINGULL] =             &gObjectEventGraphicsInfo_WingullNew,
+    [OBJ_EVENT_GFX_PKMN_ALTARIA] =             &gObjectEventGraphicsInfo_Altaria,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
