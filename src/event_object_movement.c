@@ -571,6 +571,16 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_BEAUTIFLY               0x8098
 #define OBJ_EVENT_PAL_TAG_CATERPIE                0x8099
 #define OBJ_EVENT_PAL_TAG_COMFEY                  0x8100
+#define OBJ_EVENT_PAL_TAG_CORSOLA                 0x8101
+#define OBJ_EVENT_PAL_TAG_CRABRAWLER              0x8102
+#define OBJ_EVENT_PAL_TAG_CUBONE                  0x8103
+#define OBJ_EVENT_PAL_TAG_CYNDAQUIL               0x8104
+#define OBJ_EVENT_PAL_TAG_DRATINI                 0x8105
+#define OBJ_EVENT_PAL_TAG_EEVEE                   0x8106
+#define OBJ_EVENT_PAL_TAG_ESPEON                  0x8107
+#define OBJ_EVENT_PAL_TAG_FARFETCHD               0x8108
+#define OBJ_EVENT_PAL_TAG_TINKATUFF               0x8109
+#define OBJ_EVENT_PAL_TAG_TINKATON                0x8110
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -717,6 +727,16 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Beautifly, OBJ_EVENT_PAL_TAG_BEAUTIFLY},
     {gObjectEventPalette_Pokemon_Caterpie, OBJ_EVENT_PAL_TAG_CATERPIE},
     {gObjectEventPalette_Pokemon_Comfey, OBJ_EVENT_PAL_TAG_COMFEY},
+    {gObjectEventPalette_Pokemon_Corsola, OBJ_EVENT_PAL_TAG_CORSOLA},
+    {gObjectEventPalette_Pokemon_Crabrawler, OBJ_EVENT_PAL_TAG_CRABRAWLER},
+    {gObjectEventPalette_Pokemon_Cubone, OBJ_EVENT_PAL_TAG_CUBONE},
+    {gObjectEventPalette_Pokemon_Cyndaquil, OBJ_EVENT_PAL_TAG_CYNDAQUIL},
+    {gObjectEventPalette_Pokemon_Dratini, OBJ_EVENT_PAL_TAG_DRATINI},
+    {gObjectEventPalette_Pokemon_Eevee, OBJ_EVENT_PAL_TAG_EEVEE},
+    {gObjectEventPalette_Pokemon_Espeon, OBJ_EVENT_PAL_TAG_ESPEON},
+    {gObjectEventPalette_Pokemon_Farfetchd, OBJ_EVENT_PAL_TAG_FARFETCHD},
+    {gObjectEventPalette_Pokemon_Tinkatuff, OBJ_EVENT_PAL_TAG_TINKATUFF},
+    {gObjectEventPalette_Pokemon_Tinkaton, OBJ_EVENT_PAL_TAG_TINKATON},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

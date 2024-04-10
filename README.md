@@ -31,6 +31,7 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
 - New NPC overworlds, many from from [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)
     - Credit to RavePossum for FRLG-style versions of most vanilla RSE NPCs
     - New, custom NPC sprites from [FRLG-style NPC Megapack](https://reliccastle.com/resources/823/) and [Aveontrainer](https://www.deviantart.com/aveontrainer/gallery/67900303/overworld) on DeviantArt
+    - Paldean Pokémon overworlds by DarkusShadow on DeviantArt
 - [NPC Mugshots](https://www.pokecommunity.com/showpost.php?p=10345947&postcount=252) when speaking to most NPCs
     - Credit to Zenionith and Zermonius on DeviantArt for ORAS style PSS icons
     - Credit to Wergan on DeviantArt and Omega and Frozen-Echo on WhackaHack for various other PSS-style icons

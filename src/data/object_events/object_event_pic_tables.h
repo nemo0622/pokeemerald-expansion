@@ -3336,3 +3336,123 @@ const struct SpriteFrameImage sPicTable_Comfey[] = {
     overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Comfey, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Corsola[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Corsola, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Corsola, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Corsola, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Corsola, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Corsola, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Corsola, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Corsola, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Corsola, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Corsola, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Crabrawler[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Crabrawler, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Crabrawler, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Crabrawler, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Crabrawler, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Crabrawler, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Crabrawler, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Crabrawler, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Crabrawler, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Crabrawler, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Cubone[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Cubone, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Cubone, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Cubone, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Cubone, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Cubone, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Cubone, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Cubone, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Cubone, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Cubone, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Cyndaquil[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Cyndaquil, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Cyndaquil, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Cyndaquil, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Cyndaquil, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Cyndaquil, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Cyndaquil, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Cyndaquil, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Cyndaquil, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Cyndaquil, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Dratini[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Dratini, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Dratini, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Dratini, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Dratini, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Dratini, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Dratini, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Dratini, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Dratini, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Dratini, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Eevee[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Eevee, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Eevee, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Eevee, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Eevee, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Eevee, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Eevee, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Eevee, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Eevee, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Eevee, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Espeon[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Espeon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Espeon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Espeon, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Espeon, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Espeon, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Espeon, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Espeon, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Espeon, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Espeon, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Farfetchd[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Farfetchd, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Farfetchd, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Farfetchd, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Farfetchd, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Farfetchd, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Farfetchd, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Farfetchd, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Farfetchd, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Farfetchd, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Tinkatuff[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Tinkatuff, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkatuff, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkatuff, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkatuff, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkatuff, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkatuff, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkatuff, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkatuff, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkatuff, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Tinkaton[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 8),
+};

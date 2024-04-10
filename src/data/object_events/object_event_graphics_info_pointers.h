@@ -346,6 +346,16 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bayleef;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Beautifly;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Caterpie;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Comfey;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Corsola;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Crabrawler;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cubone;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cyndaquil;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dratini;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Eevee;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Espeon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Farfetchd;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tinkatuff;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tinkaton;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -685,6 +695,16 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_BEAUTIFLY] =           &gObjectEventGraphicsInfo_Beautifly,
     [OBJ_EVENT_GFX_PKMN_CATERPIE] =            &gObjectEventGraphicsInfo_Caterpie,
     [OBJ_EVENT_GFX_PKMN_COMFEY] =              &gObjectEventGraphicsInfo_Comfey,
+    [OBJ_EVENT_GFX_PKMN_CORSOLA] =             &gObjectEventGraphicsInfo_Corsola,
+    [OBJ_EVENT_GFX_PKMN_CRABRAWLER] =          &gObjectEventGraphicsInfo_Crabrawler,
+    [OBJ_EVENT_GFX_PKMN_CUBONE] =              &gObjectEventGraphicsInfo_Cubone,
+    [OBJ_EVENT_GFX_PKMN_CYNDAQUIL] =           &gObjectEventGraphicsInfo_Cyndaquil,
+    [OBJ_EVENT_GFX_PKMN_DRATINI] =             &gObjectEventGraphicsInfo_Dratini,
+    [OBJ_EVENT_GFX_PKMN_EEVEE] =               &gObjectEventGraphicsInfo_Eevee,
+    [OBJ_EVENT_GFX_PKMN_ESPEON] =              &gObjectEventGraphicsInfo_Espeon,
+    [OBJ_EVENT_GFX_PKMN_FARFETCHD] =           &gObjectEventGraphicsInfo_Farfetchd,
+    [OBJ_EVENT_GFX_PKMN_TINKATUFF] =           &gObjectEventGraphicsInfo_Tinkatuff,
+    [OBJ_EVENT_GFX_PKMN_TINKATON] =            &gObjectEventGraphicsInfo_Tinkaton,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
