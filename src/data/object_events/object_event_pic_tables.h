@@ -3456,3 +3456,63 @@ const struct SpriteFrameImage sPicTable_Tinkaton[] = {
     overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Tinkaton, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Poltchageist[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Poltchageist, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Poltchageist, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Poltchageist, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Poltchageist, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Poltchageist, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Poltchageist, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Poltchageist, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Poltchageist, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Poltchageist, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Magnemite[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Magnemite, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Magnemite, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Magnemite, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Magnemite, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Magnemite, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Magnemite, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Magnemite, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Magnemite, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Magnemite, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Mudkip[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Mudkip, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Mudkip, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Mudkip, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Mudkip, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Mudkip, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Mudkip, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Mudkip, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Mudkip, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Mudkip, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Wailmer[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Wailmer, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Wailmer, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Wailmer, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Wailmer, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Wailmer, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Wailmer, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Wailmer, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Wailmer, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Wailmer, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Tentacool[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 8),
+};

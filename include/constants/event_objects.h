@@ -347,8 +347,13 @@
 #define OBJ_EVENT_GFX_PKMN_FARFETCHD             342
 #define OBJ_EVENT_GFX_PKMN_TINKATUFF             343
 #define OBJ_EVENT_GFX_PKMN_TINKATON              344
+#define OBJ_EVENT_GFX_PKMN_POLTCHAGEIST          345
+#define OBJ_EVENT_GFX_PKMN_MAGNEMITE             346
+#define OBJ_EVENT_GFX_PKMN_MUDKIP                347
+#define OBJ_EVENT_GFX_PKMN_WAILMER               348
+#define OBJ_EVENT_GFX_PKMN_TENTACOOL             349
 
-#define NUM_OBJ_EVENT_GFX                        345
+#define NUM_OBJ_EVENT_GFX                        350
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

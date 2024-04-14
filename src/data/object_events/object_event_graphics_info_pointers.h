@@ -356,6 +356,11 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Espeon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Farfetchd;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tinkatuff;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tinkaton;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Poltchageist;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Magnemite;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mudkip;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wailmer;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tentacool;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -705,6 +710,11 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_FARFETCHD] =           &gObjectEventGraphicsInfo_Farfetchd,
     [OBJ_EVENT_GFX_PKMN_TINKATUFF] =           &gObjectEventGraphicsInfo_Tinkatuff,
     [OBJ_EVENT_GFX_PKMN_TINKATON] =            &gObjectEventGraphicsInfo_Tinkaton,
+    [OBJ_EVENT_GFX_PKMN_POLTCHAGEIST] =        &gObjectEventGraphicsInfo_Poltchageist,
+    [OBJ_EVENT_GFX_PKMN_MAGNEMITE] =           &gObjectEventGraphicsInfo_Magnemite,
+    [OBJ_EVENT_GFX_PKMN_MUDKIP] =              &gObjectEventGraphicsInfo_Mudkip,
+    [OBJ_EVENT_GFX_PKMN_WAILMER] =             &gObjectEventGraphicsInfo_Wailmer,
+    [OBJ_EVENT_GFX_PKMN_TENTACOOL] =           &gObjectEventGraphicsInfo_Tentacool,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

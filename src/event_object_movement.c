@@ -581,6 +581,11 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_FARFETCHD               0x8108
 #define OBJ_EVENT_PAL_TAG_TINKATUFF               0x8109
 #define OBJ_EVENT_PAL_TAG_TINKATON                0x8110
+#define OBJ_EVENT_PAL_TAG_POLTCHAGEIST            0x8111
+#define OBJ_EVENT_PAL_TAG_MAGNEMITE               0x8112
+#define OBJ_EVENT_PAL_TAG_MUDKIP                  0x8113
+#define OBJ_EVENT_PAL_TAG_WAILMER                 0x8114
+#define OBJ_EVENT_PAL_TAG_TENTACOOL               0x8115
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -737,6 +742,11 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Farfetchd, OBJ_EVENT_PAL_TAG_FARFETCHD},
     {gObjectEventPalette_Pokemon_Tinkatuff, OBJ_EVENT_PAL_TAG_TINKATUFF},
     {gObjectEventPalette_Pokemon_Tinkaton, OBJ_EVENT_PAL_TAG_TINKATON},
+    {gObjectEventPalette_Pokemon_Poltchageist, OBJ_EVENT_PAL_TAG_POLTCHAGEIST},
+    {gObjectEventPalette_Pokemon_Magnemite, OBJ_EVENT_PAL_TAG_MAGNEMITE},
+    {gObjectEventPalette_Pokemon_Mudkip, OBJ_EVENT_PAL_TAG_MUDKIP},
+    {gObjectEventPalette_Pokemon_Wailmer, OBJ_EVENT_PAL_TAG_WAILMER},
+    {gObjectEventPalette_Pokemon_Tentacool, OBJ_EVENT_PAL_TAG_TENTACOOL},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
