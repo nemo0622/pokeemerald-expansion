@@ -3516,3 +3516,111 @@ const struct SpriteFrameImage sPicTable_Tentacool[] = {
     overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 7),
     overworld_frame(gObjectEventPic_Pokemon_Tentacool, 4, 4, 8),
 };
+
+const struct SpriteFrameImage sPicTable_Luvdisc[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Luvdisc, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Luvdisc, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Luvdisc, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Luvdisc, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Luvdisc, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Luvdisc, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Luvdisc, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Luvdisc, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Luvdisc, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Finizen[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Finizen, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Finizen, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Finizen, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Finizen, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Finizen, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Finizen, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Finizen, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Finizen, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Finizen, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Lotad[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Lotad, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Lotad, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Lotad, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Lotad, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Lotad, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Lotad, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Lotad, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Lotad, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Lotad, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Lapras[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Lapras, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Lapras, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Lapras, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Lapras, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Lapras, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Lapras, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Lapras, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Lapras, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Lapras, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Horsea[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Horsea, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Horsea, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Horsea, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Horsea, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Horsea, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Horsea, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Horsea, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Horsea, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Horsea, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Gyarados[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Gyarados, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Gyarados, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Gyarados, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Gyarados, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Gyarados, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Gyarados, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Gyarados, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Gyarados, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Gyarados, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Goodra_Hisuian[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Goodra_Hisuian, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Goodra_Hisuian, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Goodra_Hisuian, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Goodra_Hisuian, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Goodra_Hisuian, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Goodra_Hisuian, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Goodra_Hisuian, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Goodra_Hisuian, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Goodra_Hisuian, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Feraligatr[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Feraligatr, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Feraligatr, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Feraligatr, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Feraligatr, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Feraligatr, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Feraligatr, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Feraligatr, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Feraligatr, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Feraligatr, 4, 4, 8),
+};
+
+const struct SpriteFrameImage sPicTable_Spheal_Swim[] = {
+    overworld_frame(gObjectEventPic_Pokemon_Spheal_Swim, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal_Swim, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal_Swim, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal_Swim, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal_Swim, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal_Swim, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal_Swim, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal_Swim, 4, 4, 7),
+    overworld_frame(gObjectEventPic_Pokemon_Spheal_Swim, 4, 4, 8),
+};

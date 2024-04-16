@@ -337,7 +337,7 @@
 #define OBJ_EVENT_GFX_PKMN_BEAUTIFLY             332
 #define OBJ_EVENT_GFX_PKMN_CATERPIE              333
 #define OBJ_EVENT_GFX_PKMN_COMFEY                334
-#define OBJ_EVENT_GFX_PKMN_CORSOLA               335
+#define OBJ_EVENT_GFX_PKMN_CORSOLA               335        // Swimming
 #define OBJ_EVENT_GFX_PKMN_CRABRAWLER            336
 #define OBJ_EVENT_GFX_PKMN_CUBONE                337
 #define OBJ_EVENT_GFX_PKMN_CYNDAQUIL             338
@@ -349,11 +349,20 @@
 #define OBJ_EVENT_GFX_PKMN_TINKATON              344
 #define OBJ_EVENT_GFX_PKMN_POLTCHAGEIST          345
 #define OBJ_EVENT_GFX_PKMN_MAGNEMITE             346
-#define OBJ_EVENT_GFX_PKMN_MUDKIP                347
-#define OBJ_EVENT_GFX_PKMN_WAILMER               348
-#define OBJ_EVENT_GFX_PKMN_TENTACOOL             349
+#define OBJ_EVENT_GFX_PKMN_MUDKIP                347        // Swimming
+#define OBJ_EVENT_GFX_PKMN_WAILMER               348        // Swimming
+#define OBJ_EVENT_GFX_PKMN_TENTACOOL             349        // Swimming
+#define OBJ_EVENT_GFX_PKMN_LUVDISC               350        // Swimming
+#define OBJ_EVENT_GFX_PKMN_FINIZEN               351        // Swimming
+#define OBJ_EVENT_GFX_PKMN_LOTAD                 352        // Swimming
+#define OBJ_EVENT_GFX_PKMN_LAPRAS                353        // Swimming
+#define OBJ_EVENT_GFX_PKMN_HORSEA                354        // Swimming
+#define OBJ_EVENT_GFX_PKMN_GYARADOS              355        // Swimming
+#define OBJ_EVENT_GFX_PKMN_GOODRA_HISUIAN        356
+#define OBJ_EVENT_GFX_PKMN_FERALIGATR            357        // Swimming
+#define OBJ_EVENT_GFX_PKMN_SPHEAL_SWIM           358        // Swimming
 
-#define NUM_OBJ_EVENT_GFX                        350
+#define NUM_OBJ_EVENT_GFX                        359
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

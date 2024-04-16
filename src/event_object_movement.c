@@ -586,6 +586,14 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_MUDKIP                  0x8113
 #define OBJ_EVENT_PAL_TAG_WAILMER                 0x8114
 #define OBJ_EVENT_PAL_TAG_TENTACOOL               0x8115
+#define OBJ_EVENT_PAL_TAG_LUVDISC                 0x8116
+#define OBJ_EVENT_PAL_TAG_FINIZEN                 0x8117
+#define OBJ_EVENT_PAL_TAG_LOTAD                   0x8118
+#define OBJ_EVENT_PAL_TAG_LAPRAS                  0x8119
+#define OBJ_EVENT_PAL_TAG_HORSEA                  0x8120
+#define OBJ_EVENT_PAL_TAG_GYARADOS                0x8121
+#define OBJ_EVENT_PAL_TAG_GOODRA_HISUIAN          0x8122
+#define OBJ_EVENT_PAL_TAG_FERALIGATR              0x8123
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -747,6 +755,14 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Mudkip, OBJ_EVENT_PAL_TAG_MUDKIP},
     {gObjectEventPalette_Pokemon_Wailmer, OBJ_EVENT_PAL_TAG_WAILMER},
     {gObjectEventPalette_Pokemon_Tentacool, OBJ_EVENT_PAL_TAG_TENTACOOL},
+    {gObjectEventPalette_Pokemon_Luvdisc, OBJ_EVENT_PAL_TAG_LUVDISC},
+    {gObjectEventPalette_Pokemon_Finizen, OBJ_EVENT_PAL_TAG_FINIZEN},
+    {gObjectEventPalette_Pokemon_Lotad, OBJ_EVENT_PAL_TAG_LOTAD},
+    {gObjectEventPalette_Pokemon_Lapras, OBJ_EVENT_PAL_TAG_LAPRAS},
+    {gObjectEventPalette_Pokemon_Horsea, OBJ_EVENT_PAL_TAG_HORSEA},
+    {gObjectEventPalette_Pokemon_Gyarados, OBJ_EVENT_PAL_TAG_GYARADOS},
+    {gObjectEventPalette_Pokemon_Goodra_Hisuian, OBJ_EVENT_PAL_TAG_GOODRA_HISUIAN},
+    {gObjectEventPalette_Pokemon_Feraligatr, OBJ_EVENT_PAL_TAG_FERALIGATR},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

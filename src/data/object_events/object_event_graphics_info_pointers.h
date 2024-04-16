@@ -361,6 +361,15 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Magnemite;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mudkip;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wailmer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tentacool;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Luvdisc;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Finizen;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lotad;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lapras;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Horsea;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gyarados;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Goodra_Hisuian;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Feraligatr;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Spheal_Swim;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -715,6 +724,15 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_MUDKIP] =              &gObjectEventGraphicsInfo_Mudkip,
     [OBJ_EVENT_GFX_PKMN_WAILMER] =             &gObjectEventGraphicsInfo_Wailmer,
     [OBJ_EVENT_GFX_PKMN_TENTACOOL] =           &gObjectEventGraphicsInfo_Tentacool,
+    [OBJ_EVENT_GFX_PKMN_LUVDISC] =             &gObjectEventGraphicsInfo_Luvdisc,
+    [OBJ_EVENT_GFX_PKMN_FINIZEN] =             &gObjectEventGraphicsInfo_Finizen,
+    [OBJ_EVENT_GFX_PKMN_LOTAD] =               &gObjectEventGraphicsInfo_Lotad,
+    [OBJ_EVENT_GFX_PKMN_LAPRAS] =              &gObjectEventGraphicsInfo_Lapras,
+    [OBJ_EVENT_GFX_PKMN_HORSEA] =              &gObjectEventGraphicsInfo_Horsea,
+    [OBJ_EVENT_GFX_PKMN_GYARADOS] =            &gObjectEventGraphicsInfo_Gyarados,
+    [OBJ_EVENT_GFX_PKMN_GOODRA_HISUIAN] =      &gObjectEventGraphicsInfo_Goodra_Hisuian,
+    [OBJ_EVENT_GFX_PKMN_FERALIGATR] =          &gObjectEventGraphicsInfo_Feraligatr,
+    [OBJ_EVENT_GFX_PKMN_SPHEAL_SWIM] =         &gObjectEventGraphicsInfo_Spheal_Swim,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
