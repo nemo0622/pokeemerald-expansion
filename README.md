@@ -47,7 +47,6 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
     - Change made in "u8 UpdateTimeOfDay(void)" function of "overworld.c" file - commented out a shit ton of real code lol sorry
 
 ### Future Plans:
-- Some overworld Pokémon sprites to liven up the world
 - HM System workaround - meet NPC's and Pokémon throughout your journey that you can call upon to help!
     - Ex: "Timburr's Timber" in Rustboro City will send helpful Timburr's to cut down trees for you
     - Code works, but need to add actual map locations!
@@ -61,6 +60,7 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
     - Some changes to make old Pokémon more interesting (ex: different Sawsbuck being different types - Spring = Fairy/Grass, Fall = Fire/Grass, etc)
 - NPC quests and more NPC "events" around Hoenn (ex: west of Petalburg, help out a stressed fisherman for a Rod)
     - Also include more fun NPC dialogue, such as some trainers giving you items if you talk to them after battle!
+    - Add all those overworld Pokémon sprites to the map too!
     - "NPC Events" could include something like a festival celebrating a legendary Pokémon in a certain town, with exclusive items and maybe a Pokémon egg distributor!
 - Story enhancements - make Aqua vs Magma conflict clearer + more interesting, bring elements of story improvements and Delta Episode from ORAS, etc.
     - Include involving Wallace and Steven more in the story (maybe replace Scott with Wallace, witnessing your journey?)

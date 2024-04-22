@@ -361,8 +361,9 @@
 #define OBJ_EVENT_GFX_PKMN_GOODRA_HISUIAN        356
 #define OBJ_EVENT_GFX_PKMN_FERALIGATR            357        // Swimming
 #define OBJ_EVENT_GFX_PKMN_SPHEAL_SWIM           358        // Swimming
+#define OBJ_EVENT_GFX_PKMN_CARVANHA              359        // Swimming
 
-#define NUM_OBJ_EVENT_GFX                        359
+#define NUM_OBJ_EVENT_GFX                        360
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

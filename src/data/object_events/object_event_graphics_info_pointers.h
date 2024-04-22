@@ -370,6 +370,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gyarados;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Goodra_Hisuian;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Feraligatr;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Spheal_Swim;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Carvanha;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -733,6 +734,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PKMN_GOODRA_HISUIAN] =      &gObjectEventGraphicsInfo_Goodra_Hisuian,
     [OBJ_EVENT_GFX_PKMN_FERALIGATR] =          &gObjectEventGraphicsInfo_Feraligatr,
     [OBJ_EVENT_GFX_PKMN_SPHEAL_SWIM] =         &gObjectEventGraphicsInfo_Spheal_Swim,
+    [OBJ_EVENT_GFX_PKMN_CARVANHA] =            &gObjectEventGraphicsInfo_Carvanha,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

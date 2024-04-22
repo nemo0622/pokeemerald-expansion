@@ -637,3 +637,5 @@ const u16 gObjectEventPalette_Pokemon_Goodra_Hisuian[] = INCBIN_U16("graphics/ob
 const u32 gObjectEventPic_Pokemon_Spheal_Swim[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/spheal_swim.4bpp");
 const u32 gObjectEventPic_Pokemon_Feraligatr[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/feraligatr.4bpp");
 const u16 gObjectEventPalette_Pokemon_Feraligatr[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/feraligatr.gbapal");
+const u32 gObjectEventPic_Pokemon_Carvanha[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/carvanha.4bpp");
+const u16 gObjectEventPalette_Pokemon_Carvanha[] = INCBIN_U16("graphics/object_events/palettes/newpalettes/pokemon/carvanha.gbapal");

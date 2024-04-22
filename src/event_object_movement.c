@@ -594,6 +594,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_GYARADOS                0x8121
 #define OBJ_EVENT_PAL_TAG_GOODRA_HISUIAN          0x8122
 #define OBJ_EVENT_PAL_TAG_FERALIGATR              0x8123
+#define OBJ_EVENT_PAL_TAG_CARVANHA                0x8124
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -763,6 +764,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Pokemon_Gyarados, OBJ_EVENT_PAL_TAG_GYARADOS},
     {gObjectEventPalette_Pokemon_Goodra_Hisuian, OBJ_EVENT_PAL_TAG_GOODRA_HISUIAN},
     {gObjectEventPalette_Pokemon_Feraligatr, OBJ_EVENT_PAL_TAG_FERALIGATR},
+    {gObjectEventPalette_Pokemon_Carvanha, OBJ_EVENT_PAL_TAG_CARVANHA},
     {NULL,                  OBJ_EVENT_PAL_TAG_NONE},
 };
 

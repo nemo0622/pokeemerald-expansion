@@ -1096,3 +1096,6 @@ $(OBJEVENTGFXDIR)/pokemon/new/feraligatr.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/new/spheal_swim.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/new/carvanha.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
