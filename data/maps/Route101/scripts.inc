@@ -53,9 +53,9 @@ Route101_EventScript_StartBirchRescue::
 # 27 "data/maps/Route101/scripts.pory"
 	closemessage
 # 28 "data/maps/Route101/scripts.pory"
-	setobjectxy LOCALID_BIRCH, 0, 15
+	setobjectxy LOCALID_BIRCH, 0, 25
 # 29 "data/maps/Route101/scripts.pory"
-	setobjectxy LOCALID_ZIGZAGOON, 0, 16
+	setobjectxy LOCALID_ZIGZAGOON, 0, 26
 # 30 "data/maps/Route101/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_EnterScene
 # 31 "data/maps/Route101/scripts.pory"
@@ -455,7 +455,7 @@ Route101_EventScript_BirchsBag::
 # 228 "data/maps/Route101/scripts.pory"
 	removeobject LOCALID_ZIGZAGOON
 # 229 "data/maps/Route101/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_PLAYER, 6, 13
+	setobjectxy OBJ_EVENT_ID_PLAYER, 6, 23
 # 230 "data/maps/Route101/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 231 "data/maps/Route101/scripts.pory"
@@ -602,3 +602,24 @@ Route101_Text_RouteSign:
 	.string "ROUTE 101\n"
 # 302 "data/maps/Route101/scripts.pory"
 	.string "{UP_ARROW} OLDALE TOWN$"
+
+Route101_NPC_RuinManiac::
+# 308 "data/maps/Route101/scripts.pory"
+	lockall
+# 309 "data/maps/Route101/scripts.pory"
+	faceplayer
+# 310 "data/maps/Route101/scripts.pory"
+	msgbox_mugshot Route101_NPC_RuinManiac_Text_0, MSGBOX_NPC, MUGSHOT_RUIN_MANIAC
+# 311 "data/maps/Route101/scripts.pory"
+	closemessage
+# 312 "data/maps/Route101/scripts.pory"
+	releaseall
+	end
+
+
+Route101_NPC_RuinManiac_Text_0:
+# 310 "data/maps/Route101/scripts.pory"
+	.string "I'm a Hoenn state geologist studying\n"
+	.string "this area! It seems the water flows\l"
+	.string "down these hills, allowing these special\l"
+	.string "trees to grow. How fascinating!$"

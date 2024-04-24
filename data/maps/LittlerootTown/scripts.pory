@@ -77,7 +77,7 @@ LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent::
 	return
 
 LittlerootTown_EventScript_MoveMomToMaysDoor::
-	setobjectxyperm LOCALID_MOM, 14, 8
+	setobjectxyperm LOCALID_MOM, 19, 13
 	return
 
 LittlerootTown_EventScript_SetTwinPos::
@@ -100,11 +100,11 @@ LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos::
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorMale::
-	setobjectxyperm LOCALID_MOM, 5, 9
+	setobjectxyperm LOCALID_MOM, 10, 14
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorFemale::
-	setobjectxyperm LOCALID_MOM, 14, 9
+	setobjectxyperm LOCALID_MOM, 19, 14
 	return
 
 LittlerootTown_OnFrame:
@@ -115,7 +115,7 @@ LittlerootTown_OnFrame:
 
 LittlerootTown_EventScript_StepOffTruckMale::
 	lockall
-	setvar VAR_0x8004, 5
+	setvar VAR_0x8004, 10
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
@@ -128,7 +128,7 @@ LittlerootTown_EventScript_StepOffTruckMale::
 
 LittlerootTown_EventScript_StepOffTruckFemale::
 	lockall
-	setvar VAR_0x8004, 14
+	setvar VAR_0x8004, 19
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
@@ -242,13 +242,13 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgrade::
 	end
 
 LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeMale::
-	setobjectxy LOCALID_RIVAL, 6, 10
-	setobjectxy LOCALID_BIRCH, 5, 10
+	setobjectxy LOCALID_RIVAL, 11, 15
+	setobjectxy LOCALID_BIRCH, 10, 15
 	end
 
 LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
-	setobjectxy LOCALID_RIVAL, 13, 10
-	setobjectxy LOCALID_BIRCH, 14, 10
+	setobjectxy LOCALID_RIVAL, 18, 15
+	setobjectxy LOCALID_BIRCH, 19, 15
 	end
 
 LittlerootTown_EventScript_FatMan::
@@ -440,14 +440,14 @@ LittlerootTown_EventScript_PlayersHouseSignFemale::
 LittlerootTown_EventScript_GiveRunningShoesTrigger0::
 	lockall
 	setvar VAR_0x8008, 0
-	setobjectxy LOCALID_MOM, 10, 9
+	setobjectxy LOCALID_MOM, 13, 14
 	goto LittlerootTown_EventScript_GiveDexNavTrigger
 	end
 
 LittlerootTown_EventScript_GiveRunningShoesTrigger1::
 	lockall
 	setvar VAR_0x8008, 1
-	setobjectxy LOCALID_MOM, 11, 9
+	setobjectxy LOCALID_MOM, 14, 14
 	goto LittlerootTown_EventScript_GiveDexNavTrigger
 	end
 
@@ -484,9 +484,12 @@ LittlerootTown_EventScript_GiveDexNavTrigger::
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_SetHomeDoorCoordsFemale
 	msgbox_mugshot LittlerootTown_Text_WaitPlayer, MSGBOX_DEFAULT, MUGSHOT_MOM
 	closemessage
+	fadescreen FADE_TO_BLACK
 	checkplayergender
-	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_MomApproachPlayerMale
-	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_MomApproachPlayerFemale
+	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_TeleportMomForDexnavMale
+	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_TeleportMomForDexnavFemale
+	delay 30
+	fadescreen FADE_FROM_BLACK
 	call LittlerootTown_EventScript_GiveDexNav
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_MomReturnHomeMale
@@ -494,14 +497,30 @@ LittlerootTown_EventScript_GiveDexNavTrigger::
 	goto LittlerootTown_EventScript_SetReceivedRunningShoes
 	end
 
+LittlerootTown_EventScript_TeleportMomForDexnavMale::
+	setobjectxy OBJ_EVENT_ID_PLAYER, 14, 14
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	setobjectxy LOCALID_MOM, 13, 14
+	special SpawnCameraObject
+	setobjectxy OBJ_EVENT_ID_CAMERA, 14, 14
+	return
+
+LittlerootTown_EventScript_TeleportMomForDexnavFemale::
+	setobjectxy OBJ_EVENT_ID_PLAYER, 14, 14
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	setobjectxy LOCALID_MOM, 15, 14
+	special SpawnCameraObject
+	setobjectxy OBJ_EVENT_ID_CAMERA, 14, 14
+	return
+
 LittlerootTown_EventScript_SetHomeDoorCoordsMale::
-	setvar VAR_0x8009, 5
-	setvar VAR_0x800A, 8
+	setvar VAR_0x8009, 10
+	setvar VAR_0x800A, 13
 	return
 
 LittlerootTown_EventScript_SetHomeDoorCoordsFemale::
-	setvar VAR_0x8009, 14
-	setvar VAR_0x800A, 8
+	setvar VAR_0x8009, 19
+	setvar VAR_0x800A, 13
 	return
 
 LittlerootTown_EventScript_MomNoticePlayerMale::
@@ -603,22 +622,31 @@ LittlerootTown_EventScript_MomApproachPlayerFemale5::
 	return
 
 LittlerootTown_EventScript_MomReturnHomeMale::
-	call_if_eq VAR_0x8008, 0, LittlerootTown_EventScript_MomReturnHome0
-	call_if_eq VAR_0x8008, 1, LittlerootTown_EventScript_MomReturnHome1
-	call_if_eq VAR_0x8008, 2, LittlerootTown_EventScript_MomReturnHomeMale2
-	call_if_eq VAR_0x8008, 3, LittlerootTown_EventScript_MomReturnHomeMale3
-	call_if_eq VAR_0x8008, 4, LittlerootTown_EventScript_MomReturnHomeMale4
-	call_if_eq VAR_0x8008, 5, LittlerootTown_EventScript_MomReturnHomeMale5
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomGoHomeMale
+	waitmovement 0
+	hideobjectat LOCALID_MOM, MAP_LITTLEROOT_TOWN
 	return
 
+LittlerootTown_Movement_MomGoHomeMale:
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	step_end
+
 LittlerootTown_EventScript_MomReturnHomeFemale::
-	call_if_eq VAR_0x8008, 0, LittlerootTown_EventScript_MomReturnHome0
-	call_if_eq VAR_0x8008, 1, LittlerootTown_EventScript_MomReturnHome1
-	call_if_eq VAR_0x8008, 2, LittlerootTown_EventScript_MomReturnHomeFemale2
-	call_if_eq VAR_0x8008, 3, LittlerootTown_EventScript_MomReturnHomeFemale3
-	call_if_eq VAR_0x8008, 4, LittlerootTown_EventScript_MomReturnHomeFemale4
-	call_if_eq VAR_0x8008, 5, LittlerootTown_EventScript_MomReturnHomeFemale5
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomGoHomeFemale
+	waitmovement 0
+	hideobjectat LOCALID_MOM, MAP_LITTLEROOT_TOWN
 	return
+
+LittlerootTown_Movement_MomGoHomeFemale:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	step_end
 
 LittlerootTown_EventScript_MomReturnHome0::
 	applymovement LOCALID_MOM, LittlerootTown_Movement_MomReturnHome0
@@ -733,10 +761,26 @@ LittlerootTown_Movement_MomApproachPlayer0:
 	walk_up
 	walk_up
 	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
 	step_end
 
 LittlerootTown_Movement_MomApproachPlayer1:
 	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
 	walk_up
 	walk_up
 	walk_up
@@ -902,6 +946,8 @@ LittlerootTown_EventScript_SetReceivedRunningShoes::
 	giveitem ITEM_EXP_SHARE
 	setvar VAR_LITTLEROOT_TOWN_STATE, 4
 	release
+	special RemoveCameraObject
+	warpsilent MAP_LITTLEROOT_TOWN, 14, 13
 	end
 
 LittlerootTown_EventScript_GiveDexNav::
