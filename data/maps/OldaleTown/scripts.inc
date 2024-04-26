@@ -800,3 +800,213 @@ OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
 # 401 "data/maps/OldaleTown/scripts.pory"
 	.string "“Where things start off scarce.”$"
+
+OldaleTown_PokemonShrub::
+# 410 "data/maps/OldaleTown/scripts.pory"
+	lockall
+# 411 "data/maps/OldaleTown/scripts.pory"
+	checkitem ITEM_HONEY
+# 412 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq OldaleTown_PokemonShrub_2
+# 458 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_PokemonShrub_Text_5
+# 459 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 461 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	end
+
+OldaleTown_PokemonShrub_2:
+# 414 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_PokemonShrub_Text_0, MSGBOX_YESNO
+# 415 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq OldaleTown_PokemonShrub_5
+# 423 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 424 "data/maps/OldaleTown/scripts.pory"
+	removeitem ITEM_HONEY
+# 425 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_PokemonShrub_Text_1
+# 426 "data/maps/OldaleTown/scripts.pory"
+	delay 10
+# 428 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_PokemonShrub_Text_2
+# 429 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 432 "data/maps/OldaleTown/scripts.pory"
+	randomelement SPECIES_TAILLOW, SPECIES_SEEDOT, SPECIES_SWABLU, SPECIES_SWINUB, SPECIES_TEDDIURSA, SPECIES_NATU, SPECIES_MAREEP, SPECIES_GROWLITHE_HISUIAN, SPECIES_GROWLITHE
+# 433 "data/maps/OldaleTown/scripts.pory"
+	waitse
+# 434 "data/maps/OldaleTown/scripts.pory"
+	playmoncry VAR_RESULT, CRY_MODE_ENCOUNTER
+# 435 "data/maps/OldaleTown/scripts.pory"
+	delay 40
+# 436 "data/maps/OldaleTown/scripts.pory"
+	waitmoncry
+# 437 "data/maps/OldaleTown/scripts.pory"
+	givemon VAR_RESULT, 5
+# 439 "data/maps/OldaleTown/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 440 "data/maps/OldaleTown/scripts.pory"
+	delay 20
+# 441 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_PokemonShrub_Text_3
+# 442 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 443 "data/maps/OldaleTown/scripts.pory"
+	delay 20
+# 444 "data/maps/OldaleTown/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 446 "data/maps/OldaleTown/scripts.pory"
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+# 447 "data/maps/OldaleTown/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 448 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_PokemonShrub_Text_4
+# 449 "data/maps/OldaleTown/scripts.pory"
+	waitfanfare
+# 450 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 452 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	end
+
+OldaleTown_PokemonShrub_5:
+# 417 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 418 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	end
+
+
+OldaleTown_NPC_ShrubTrainer::
+# 474 "data/maps/OldaleTown/scripts.pory"
+	goto_if_unset FLAG_SPOKE_TO_SHRUBMAN_OLDALE, OldaleTown_NPC_ShrubTrainer_1
+# 501 "data/maps/OldaleTown/scripts.pory"
+	lockall
+# 502 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, OldaleTown_Movement_ShrubManWorking
+# 503 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 504 "data/maps/OldaleTown/scripts.pory"
+	msgbox_mugshot OldaleTown_NPC_ShrubTrainer_Text_4, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
+# 505 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 506 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, Common_Movement_FaceUp
+# 507 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 508 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	end
+
+OldaleTown_NPC_ShrubTrainer_1:
+# 476 "data/maps/OldaleTown/scripts.pory"
+	lockall
+# 477 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, OldaleTown_Movement_ShrubManWorking
+# 478 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 479 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, Common_Movement_FaceUp
+# 480 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_NPC_ShrubTrainer_Text_0
+# 481 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 482 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, Common_Movement_ExclamationMark
+# 483 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 30
+# 484 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, Common_Movement_FacePlayer
+# 485 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 486 "data/maps/OldaleTown/scripts.pory"
+	msgbox_mugshot OldaleTown_NPC_ShrubTrainer_Text_1, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
+# 487 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 488 "data/maps/OldaleTown/scripts.pory"
+	msgbox_mugshot OldaleTown_NPC_ShrubTrainer_Text_2, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
+# 489 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 490 "data/maps/OldaleTown/scripts.pory"
+	msgbox_mugshot OldaleTown_NPC_ShrubTrainer_Text_3, MSGBOX_NPC, MUGSHOT_COOLTRAINER_M
+# 491 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 492 "data/maps/OldaleTown/scripts.pory"
+	giveitem ITEM_HONEY
+# 493 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, Common_Movement_FaceOriginalDirection
+# 494 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 495 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_SPOKE_TO_SHRUBMAN_OLDALE
+# 496 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	end
+
+
+# 513 "data/maps/OldaleTown/scripts.pory"
+OldaleTown_Movement_ShrubManWorking:
+# 515 "data/maps/OldaleTown/scripts.pory"
+	walk_in_place_up
+# 515 "data/maps/OldaleTown/scripts.pory"
+	walk_in_place_up
+# 515 "data/maps/OldaleTown/scripts.pory"
+	walk_in_place_up
+# 516 "data/maps/OldaleTown/scripts.pory"
+	step_end
+
+OldaleTown_PokemonShrub_Text_0:
+# 414 "data/maps/OldaleTown/scripts.pory"
+	.string "Use Honey on the Shrub?$"
+
+OldaleTown_PokemonShrub_Text_1:
+# 425 "data/maps/OldaleTown/scripts.pory"
+	.string "{PLAYER} held the Honey to the\n"
+	.string "shrub...$"
+
+OldaleTown_PokemonShrub_Text_2:
+# 428 "data/maps/OldaleTown/scripts.pory"
+	.string "A wild Pokémon leapt out!$"
+
+OldaleTown_PokemonShrub_Text_3:
+# 441 "data/maps/OldaleTown/scripts.pory"
+	.string "You captured the Pokémon while it was\n"
+	.string "eating!$"
+
+OldaleTown_PokemonShrub_Text_4:
+# 448 "data/maps/OldaleTown/scripts.pory"
+	.string "{PLAYER} caught a Pokémon!$"
+
+OldaleTown_PokemonShrub_Text_5:
+# 458 "data/maps/OldaleTown/scripts.pory"
+	.string "You have no Honey to lure Pokémon!$"
+
+OldaleTown_NPC_ShrubTrainer_Text_0:
+# 480 "data/maps/OldaleTown/scripts.pory"
+	.string "Come on now, just a little Honey... and...$"
+
+OldaleTown_NPC_ShrubTrainer_Text_1:
+# 486 "data/maps/OldaleTown/scripts.pory"
+	.string "Oh! Are you a new trainer? These are\n"
+	.string "what I call Pokémon Shrubs, there are a\l"
+	.string "few sprouting around the region.$"
+
+OldaleTown_NPC_ShrubTrainer_Text_2:
+# 488 "data/maps/OldaleTown/scripts.pory"
+	.string "You see, if you bring Honey to these, a\n"
+	.string "Pokémon will jump out to get it! I've\l"
+	.string "heard some Pokémon can only be found in\l"
+	.string "these Shrubs.$"
+
+OldaleTown_NPC_ShrubTrainer_Text_3:
+# 490 "data/maps/OldaleTown/scripts.pory"
+	.string "Here, give it a try!$"
+
+OldaleTown_NPC_ShrubTrainer_Text_4:
+# 504 "data/maps/OldaleTown/scripts.pory"
+	.string "If I keep using Honey, I'm sure to get a\n"
+	.string "rare Pokémon sometime.$"

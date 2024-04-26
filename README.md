@@ -76,3 +76,5 @@ Go support everyone in this list!! They're all insanely talented for this stuff 
 - Shoutout to [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo), an amazing collection of resources for rom hacking
     - Credit to Pawkkie, Poffin_Case, Hyo-Oppa, and RavePossum for many graphical upgrades
 - PurrfectDoodle / Eva for the Psyduck confusion sprite
+- Ekat99 on DeviantArt for the incredible tilesets!! Most new sprites and palettes go to them, they are amazing
+    - Some tilesets had other credits from RelicCastle but the site is gone :(

@@ -401,3 +401,111 @@ OldaleTown_Text_TownSign:
 	.string "“Where things start off scarce.”$"
 
 `
+
+// CUSTOM SCRIPTS BELOW
+
+// Pokémon Shrub
+script OldaleTown_PokemonShrub
+{
+	lockall
+	checkitem(ITEM_HONEY)
+	if(var(VAR_RESULT) == TRUE)
+	{
+		msgbox(format("Use Honey on the Shrub?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == 0) // Player says NO
+		{
+			closemessage
+			releaseall
+			end
+		}
+		else // Player says YES
+		{
+			closemessage
+			removeitem(ITEM_HONEY) // use 1 Honey
+			msgbox(format("{PLAYER} held the Honey to the shrub..."))
+			delay(10)
+
+			msgbox(format("A wild Pokémon leapt out!"))
+			closemessage
+
+			// Generate a random wild encounter, sets as VAR_RESULT
+			randomelement(SPECIES_TAILLOW, SPECIES_SEEDOT, SPECIES_SWABLU, SPECIES_SWINUB, SPECIES_TEDDIURSA, SPECIES_NATU, SPECIES_MAREEP, SPECIES_GROWLITHE_HISUIAN, SPECIES_GROWLITHE)
+			waitse
+			playmoncry(VAR_RESULT, CRY_MODE_ENCOUNTER)
+			delay(40)
+			waitmoncry
+			givemon(VAR_RESULT, 5)
+
+			fadescreen(FADE_TO_BLACK)
+			delay(20)
+			msgbox(format("You captured the Pokémon while it was eating!"))
+			closemessage
+			delay(20)
+			fadescreen(FADE_FROM_BLACK)
+
+			bufferspeciesname(STR_VAR_1, VAR_RESULT)
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("{PLAYER} caught a Pokémon!"))
+			waitfanfare
+			closemessage
+
+			releaseall
+			end
+		}
+	}
+	else
+	{
+		msgbox(format("You have no Honey to lure Pokémon!"))
+		closemessage
+	}
+	releaseall
+	end
+}
+
+// Trainer in front of shrub, meant to explain them to trainer
+script OldaleTown_NPC_ShrubTrainer
+{
+	if(!flag(FLAG_SPOKE_TO_SHRUBMAN_OLDALE))
+	{
+		lockall
+		applymovement(5, OldaleTown_Movement_ShrubManWorking)
+		waitmovement(0)
+		applymovement(5, Common_Movement_FaceUp)
+		msgbox(format("Come on now, just a little Honey... and..."))
+		closemessage
+		applymovement(5, Common_Movement_ExclamationMark)
+		waitmovement(30)
+		applymovement(5, Common_Movement_FacePlayer)
+		waitmovement(0)
+		msgbox_mugshot(format("Oh! Are you a new trainer? These are what I call Pokémon Shrubs, there are a few sprouting around the region."), MSGBOX_NPC, MUGSHOT_COOLTRAINER_M)
+		closemessage
+		msgbox_mugshot(format("You see, if you bring Honey to these, a Pokémon will jump out to get it! I've heard some Pokémon can only be found in these Shrubs."), MSGBOX_NPC, MUGSHOT_COOLTRAINER_M)
+		closemessage
+		msgbox_mugshot(format("Here, give it a try!"), MSGBOX_NPC, MUGSHOT_COOLTRAINER_M)
+		closemessage
+		giveitem(ITEM_HONEY)
+		applymovement(5, Common_Movement_FaceOriginalDirection)
+		waitmovement(0)
+		setflag(FLAG_SPOKE_TO_SHRUBMAN_OLDALE)
+		releaseall
+		end
+	}
+	else
+	{
+		lockall
+		applymovement(5, OldaleTown_Movement_ShrubManWorking)
+		waitmovement(0)
+		msgbox_mugshot(format("If I keep using Honey, I'm sure to get a rare Pokémon sometime."), MSGBOX_NPC, MUGSHOT_COOLTRAINER_M)
+		closemessage
+		applymovement(5, Common_Movement_FaceUp)
+		waitmovement(0)
+		releaseall
+		end
+	}
+}
+
+movement OldaleTown_Movement_ShrubManWorking
+{
+	walk_in_place_up * 3
+	step_end
+}
