@@ -385,7 +385,7 @@ Route103_Movement_WatchRivalExitFacingEastOrWest:
 # 193 "data/maps/Route103/scripts.pory"
 Route103_EventScript_Boy::
 # 194 "data/maps/Route103/scripts.pory"
-	msgbox_mugshot Route103_Text_ShouldHaveBroughtPotion, MSGBOX_NPC, MUGSHOT_BOY1
+	msgbox_mugshot Route103_Text_ShouldHaveBroughtPotion, MSGBOX_NPC, MUGSHOT_BIRD_KEEPER
 # 195 "data/maps/Route103/scripts.pory"
 	end
 # 196 "data/maps/Route103/scripts.pory"
@@ -708,3 +708,90 @@ Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 # 355 "data/maps/Route103/scripts.pory"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
+
+Route103_NPC_GirlFacingWater::
+# 361 "data/maps/Route103/scripts.pory"
+	lock
+# 362 "data/maps/Route103/scripts.pory"
+	faceplayer
+# 363 "data/maps/Route103/scripts.pory"
+	msgbox_mugshot Route103_NPC_GirlFacingWater_Text_0, MSGBOX_NPC, MUGSHOT_LASS2
+# 364 "data/maps/Route103/scripts.pory"
+	closemessage
+# 365 "data/maps/Route103/scripts.pory"
+	applymovement 21, Common_Movement_FaceRight
+# 366 "data/maps/Route103/scripts.pory"
+	release
+	end
+
+
+Route103_Lotad::
+# 372 "data/maps/Route103/scripts.pory"
+	lockall
+# 373 "data/maps/Route103/scripts.pory"
+	faceplayer
+# 374 "data/maps/Route103/scripts.pory"
+	playmoncry SPECIES_LOTAD, CRY_MODE_NORMAL
+# 375 "data/maps/Route103/scripts.pory"
+	msgbox Route103_Lotad_Text_0
+# 376 "data/maps/Route103/scripts.pory"
+	waitmoncry
+# 377 "data/maps/Route103/scripts.pory"
+	closemessage
+# 378 "data/maps/Route103/scripts.pory"
+	releaseall
+	end
+
+
+Route103_Pidgey::
+# 384 "data/maps/Route103/scripts.pory"
+	lockall
+# 385 "data/maps/Route103/scripts.pory"
+	faceplayer
+# 386 "data/maps/Route103/scripts.pory"
+	playmoncry SPECIES_PIDGEY, CRY_MODE_NORMAL
+# 387 "data/maps/Route103/scripts.pory"
+	msgbox Route103_Pidgey_Text_0
+# 388 "data/maps/Route103/scripts.pory"
+	waitmoncry
+# 389 "data/maps/Route103/scripts.pory"
+	closemessage
+# 390 "data/maps/Route103/scripts.pory"
+	releaseall
+	end
+
+
+Route103_Pikipek::
+# 396 "data/maps/Route103/scripts.pory"
+	lockall
+# 397 "data/maps/Route103/scripts.pory"
+	faceplayer
+# 398 "data/maps/Route103/scripts.pory"
+	playmoncry SPECIES_PIKIPEK, CRY_MODE_NORMAL
+# 399 "data/maps/Route103/scripts.pory"
+	msgbox Route103_Pikipek_Text_0
+# 400 "data/maps/Route103/scripts.pory"
+	waitmoncry
+# 401 "data/maps/Route103/scripts.pory"
+	closemessage
+# 402 "data/maps/Route103/scripts.pory"
+	releaseall
+	end
+
+
+Route103_NPC_GirlFacingWater_Text_0:
+# 363 "data/maps/Route103/scripts.pory"
+	.string "I'm training my Lotad to carry me across\n"
+	.string "water!$"
+
+Route103_Lotad_Text_0:
+# 375 "data/maps/Route103/scripts.pory"
+	.string "Denee?$"
+
+Route103_Pidgey_Text_0:
+# 387 "data/maps/Route103/scripts.pory"
+	.string "Kee!$"
+
+Route103_Pikipek_Text_0:
+# 399 "data/maps/Route103/scripts.pory"
+	.string "Chea chea!$"

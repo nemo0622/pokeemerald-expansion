@@ -191,7 +191,7 @@ Route103_Movement_WatchRivalExitFacingEastOrWest:
 	step_end
 
 Route103_EventScript_Boy::
-	msgbox_mugshot Route103_Text_ShouldHaveBroughtPotion, MSGBOX_NPC, MUGSHOT_BOY1
+	msgbox_mugshot Route103_Text_ShouldHaveBroughtPotion, MSGBOX_NPC, MUGSHOT_BIRD_KEEPER
 	end
 
 Route103_EventScript_Man::
@@ -355,3 +355,50 @@ Route103_Text_RouteSign:
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
 `
+
+script Route103_NPC_GirlFacingWater
+{
+	lock
+	faceplayer
+	msgbox_mugshot(format("I'm training my Lotad to carry me across water!"), MSGBOX_NPC, MUGSHOT_LASS2)
+	closemessage
+	applymovement(21, Common_Movement_FaceRight)
+	release
+	end
+}
+
+script Route103_Lotad
+{
+	lockall
+	faceplayer
+	playmoncry(SPECIES_LOTAD, CRY_MODE_NORMAL)
+	msgbox(format("Denee?"))
+	waitmoncry
+	closemessage
+	releaseall
+	end
+}
+
+script Route103_Pidgey
+{
+	lockall
+	faceplayer
+	playmoncry(SPECIES_PIDGEY, CRY_MODE_NORMAL)
+	msgbox(format("Kee!"))
+	waitmoncry
+	closemessage
+	releaseall
+	end
+}
+
+script Route103_Pikipek
+{
+	lockall
+	faceplayer
+	playmoncry(SPECIES_PIKIPEK, CRY_MODE_NORMAL)
+	msgbox(format("Chea chea!"))
+	waitmoncry
+	closemessage
+	releaseall
+	end
+}

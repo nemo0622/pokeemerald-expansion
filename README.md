@@ -41,6 +41,7 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
 ## Bugs Future Plans, and Credits
 
 ### Known Bugs:
+- BERRY TREES LOOK BROKEN! No idea how this happened, need fix
 - Mugshots occasionally cut a little portion out of the textbox
     - Most noticable during cutscenes, some problem with ClearMugshot most likely
 - Day/Night system DISABLED - new NPC GFX palettes don't tint at night :(

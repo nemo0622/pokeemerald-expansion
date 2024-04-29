@@ -617,9 +617,32 @@ Route101_NPC_RuinManiac::
 	end
 
 
+Route101_NPC_Zigzagoon::
+# 318 "data/maps/Route101/scripts.pory"
+	lock
+# 319 "data/maps/Route101/scripts.pory"
+	faceplayer
+# 320 "data/maps/Route101/scripts.pory"
+	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
+# 321 "data/maps/Route101/scripts.pory"
+	msgbox Route101_NPC_Zigzagoon_Text_0
+# 322 "data/maps/Route101/scripts.pory"
+	waitmoncry
+# 323 "data/maps/Route101/scripts.pory"
+	closemessage
+# 324 "data/maps/Route101/scripts.pory"
+	release
+	end
+
+
 Route101_NPC_RuinManiac_Text_0:
 # 310 "data/maps/Route101/scripts.pory"
 	.string "I'm a Hoenn state geologist studying\n"
 	.string "this area! It seems the water flows\l"
 	.string "down these hills, allowing these special\l"
 	.string "trees to grow. How fascinating!$"
+
+Route101_NPC_Zigzagoon_Text_0:
+# 321 "data/maps/Route101/scripts.pory"
+	.string "Woah! It's the Zigzagoon that attacked\n"
+	.string "the Professor!$"

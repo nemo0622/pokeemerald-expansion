@@ -19,7 +19,7 @@ PetalburgCity_OnTransition:
 	end
 
 PetalburgCity_EventScript_MoveGymBoyToWestEntrance::
-	setobjectxyperm LOCALID_GYM_BOY, 5, 11
+	setobjectxyperm LOCALID_GYM_BOY, 11, 10
 	return
 
 PetalburgCity_EventScript_DisableMapNameAndMusic::
@@ -159,6 +159,16 @@ PetalburgCity_Movement_WallyTutorialPlayer:
 	walk_down
 	walk_down
 	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_down
 	walk_down
 	walk_right
@@ -170,19 +180,6 @@ PetalburgCity_Movement_WallyTutorialPlayer:
 	walk_right
 	walk_right
 	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_up
-	walk_up
 	walk_in_place_faster_right
 	step_end
 
@@ -193,6 +190,16 @@ PetalburgCity_Movement_WallyTutorialWally:
 	walk_down
 	walk_down
 	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_down
 	walk_down
 	walk_right
@@ -204,19 +211,6 @@ PetalburgCity_Movement_WallyTutorialWally:
 	walk_right
 	walk_right
 	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_up
-	walk_up
 	walk_right
 	delay_16
 	walk_in_place_faster_up
@@ -299,26 +293,28 @@ PetalburgCity_EventScript_ShowGymToPlayer::
 PetalburgCity_EventScript_BoyApproachPlayer0::
 	applymovement LOCALID_GYM_BOY, PetalburgCity_Movement_BoyApproachPlayer0
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
 PetalburgCity_EventScript_BoyApproachPlayer1::
 	applymovement LOCALID_GYM_BOY, PetalburgCity_Movement_BoyApproachPlayer1
 	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
 	return
 
 PetalburgCity_EventScript_BoyApproachPlayer2::
 	applymovement LOCALID_GYM_BOY, PetalburgCity_Movement_BoyApproachPlayer2
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
 PetalburgCity_EventScript_BoyApproachPlayer3::
 	applymovement LOCALID_GYM_BOY, PetalburgCity_Movement_BoyApproachPlayer3
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
@@ -354,30 +350,29 @@ PetalburgCity_Movement_Delay48::
 	step_end
 
 PetalburgCity_Movement_BoyApproachPlayer0:
-	walk_right
-	walk_right
-	walk_right
-	walk_in_place_faster_up
+	walk_left
+	walk_left
 	step_end
 
 PetalburgCity_Movement_BoyApproachPlayer1:
-	walk_right
-	walk_right
+	walk_down
+	walk_left
+	walk_left
 	step_end
 
 PetalburgCity_Movement_BoyApproachPlayer2:
-	walk_right
-	walk_right
-	walk_right
-	walk_in_place_faster_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
 	step_end
 
 PetalburgCity_Movement_BoyApproachPlayer3:
 	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_in_place_faster_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
 	step_end
 
 PetalburgCity_Movement_BoyWalkToGym0:
@@ -388,14 +383,10 @@ PetalburgCity_Movement_BoyWalkToGym0:
 	walk_right
 	walk_right
 	walk_right
-	walk_up
-	walk_right
 	walk_in_place_faster_up
 	step_end
 
 PetalburgCity_Movement_BoyWalkToGym1:
-	walk_down
-	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -404,9 +395,6 @@ PetalburgCity_Movement_BoyWalkToGym1:
 	walk_right
 	walk_right
 	walk_up
-	walk_up
-	walk_right
-	walk_in_place_faster_up
 	step_end
 
 PetalburgCity_Movement_BoyWalkToGym2:
@@ -418,8 +406,7 @@ PetalburgCity_Movement_BoyWalkToGym2:
 	walk_right
 	walk_right
 	walk_up
-	walk_right
-	walk_in_place_faster_up
+	walk_up
 	step_end
 
 PetalburgCity_Movement_BoyWalkToGym3:
@@ -432,8 +419,7 @@ PetalburgCity_Movement_BoyWalkToGym3:
 	walk_right
 	walk_up
 	walk_up
-	walk_right
-	walk_in_place_faster_up
+	walk_up
 	step_end
 
 PetalburgCity_Movement_BoyWalkAway:
@@ -443,16 +429,11 @@ PetalburgCity_Movement_BoyWalkAway:
 	walk_left
 	walk_left
 	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
+	walk_up
+	walk_in_place_faster_down
 	step_end
 
 PetalburgCity_Movement_PlayerWalkToGym0:
-	walk_down
 	walk_right
 	walk_right
 	walk_right
@@ -460,13 +441,10 @@ PetalburgCity_Movement_PlayerWalkToGym0:
 	walk_right
 	walk_right
 	walk_right
-	walk_up
+	walk_in_place_faster_up
 	step_end
 
 PetalburgCity_Movement_PlayerWalkToGym1:
-	delay_16
-	delay_16
-	walk_down
 	walk_right
 	walk_right
 	walk_right
@@ -474,31 +452,30 @@ PetalburgCity_Movement_PlayerWalkToGym1:
 	walk_right
 	walk_right
 	walk_right
-	walk_up
 	walk_up
 	step_end
 
 PetalburgCity_Movement_PlayerWalkToGym2:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_up
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
 	walk_up
 	step_end
 
 PetalburgCity_Movement_PlayerWalkToGym3:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_up
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
 	walk_up
 	walk_up
 	step_end

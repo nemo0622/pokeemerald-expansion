@@ -312,3 +312,15 @@ script Route101_NPC_RuinManiac
 	releaseall
 	end
 }
+
+script Route101_NPC_Zigzagoon
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_ZIGZAGOON, CRY_MODE_NORMAL)
+	msgbox(format("Woah! It's the Zigzagoon that attacked the Professor!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}

@@ -429,25 +429,14 @@ script OldaleTown_PokemonShrub
 			closemessage
 
 			// Generate a random wild encounter, sets as VAR_RESULT
-			randomelement(SPECIES_TAILLOW, SPECIES_SEEDOT, SPECIES_SWABLU, SPECIES_SWINUB, SPECIES_TEDDIURSA, SPECIES_NATU, SPECIES_MAREEP, SPECIES_GROWLITHE_HISUIAN, SPECIES_GROWLITHE)
+			randomelement(SPECIES_SENTRET, SPECIES_SEEDOT, SPECIES_SWABLU, SPECIES_SWINUB, SPECIES_TEDDIURSA, SPECIES_NATU, SPECIES_MAREEP, SPECIES_GROWLITHE_HISUIAN, SPECIES_GROWLITHE)
 			waitse
 			playmoncry(VAR_RESULT, CRY_MODE_ENCOUNTER)
 			delay(40)
 			waitmoncry
-			givemon(VAR_RESULT, 5)
 
-			fadescreen(FADE_TO_BLACK)
-			delay(20)
-			msgbox(format("You captured the Pokémon while it was eating!"))
-			closemessage
-			delay(20)
-			fadescreen(FADE_FROM_BLACK)
-
-			bufferspeciesname(STR_VAR_1, VAR_RESULT)
-			playfanfare(MUS_OBTAIN_ITEM)
-			msgbox(format("{PLAYER} caught a Pokémon!"))
-			waitfanfare
-			closemessage
+			setwildbattle(VAR_RESULT, 5)
+			dowildbattle
 
 			releaseall
 			end
@@ -508,4 +497,38 @@ movement OldaleTown_Movement_ShrubManWorking
 {
 	walk_in_place_up * 3
 	step_end
+}
+
+script OldaleTown_NPC_ShrubGirlfriend
+{
+	lock
+	faceplayer
+	msgbox_mugshot(format("My boyfriend is over there, to the right of the Poké Mart. He's trying to find rare Pokémon. You should go help him out!"), MSGBOX_NPC, MUGSHOT_COOLTRAINER_F)
+	closemessage
+	release
+	end
+}
+
+script OldaleTown_Pokemon_Beautifly
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_BEAUTIFLY, CRY_MODE_NORMAL)
+	msgbox(format("Ch-lelelele!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script OldaleTown_Pokemon_GrowlitheHisuian
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_GROWLITHE_HISUIAN, CRY_MODE_NORMAL)
+	msgbox(format("Bwark bark!"))
+	waitmoncry
+	closemessage
+	release
+	end
 }
