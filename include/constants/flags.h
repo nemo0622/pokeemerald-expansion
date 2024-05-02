@@ -43,11 +43,10 @@
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
 #define FLAG_SPOKE_TO_SHRUBMAN_OLDALE    0x21 // Set if you speak to Cooltrainer_M in Oldale about Pokémon Shrub
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
+#define FLAG_ROUTE104_GOT_SPHEAL_ITEM    0x22 // If talked to Spheal on Route 104 and got its item
+#define FLAG_ROUTE102_ZINNIA_VANISHED    0x23 // If talked to Zinnia in route 102
+#define FLAG_ROUTE104_ZINNIA_VANISHED    0x24 // If talked to Zinnia in route 104
+#define FLAG_ROUTE104_HONEY_FROM_GIRL    0x25 // If got honey snack from girl on route 104
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag

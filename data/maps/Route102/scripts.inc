@@ -220,3 +220,221 @@ Route102_Text_RouteSignPetalburg:
 	.string "ROUTE 102\n"
 # 111 "data/maps/Route102/scripts.pory"
 	.string "{LEFT_ARROW} PETALBURG CITY$"
+
+Route102_Pokemon_Farfetchd::
+# 116 "data/maps/Route102/scripts.pory"
+	lock
+# 117 "data/maps/Route102/scripts.pory"
+	faceplayer
+# 118 "data/maps/Route102/scripts.pory"
+	playmoncry SPECIES_FARFETCHD, CRY_MODE_NORMAL
+# 119 "data/maps/Route102/scripts.pory"
+	msgbox Route102_Pokemon_Farfetchd_Text_0
+# 120 "data/maps/Route102/scripts.pory"
+	waitmoncry
+# 121 "data/maps/Route102/scripts.pory"
+	closemessage
+# 122 "data/maps/Route102/scripts.pory"
+	release
+	end
+
+
+Route102_Pokemon_Poliwag::
+# 128 "data/maps/Route102/scripts.pory"
+	lock
+# 129 "data/maps/Route102/scripts.pory"
+	faceplayer
+# 130 "data/maps/Route102/scripts.pory"
+	playmoncry SPECIES_POLIWAG, CRY_MODE_NORMAL
+# 131 "data/maps/Route102/scripts.pory"
+	msgbox Route102_Pokemon_Poliwag_Text_0
+# 132 "data/maps/Route102/scripts.pory"
+	waitmoncry
+# 133 "data/maps/Route102/scripts.pory"
+	closemessage
+# 134 "data/maps/Route102/scripts.pory"
+	release
+	end
+
+
+Route102_Zinnia_Trigger1::
+# 140 "data/maps/Route102/scripts.pory"
+	setvar VAR_TEMP_1, 1
+# 141 "data/maps/Route102/scripts.pory"
+	goto Route102_Zinnia
+	return
+
+
+Route102_Zinnia_Trigger2::
+# 146 "data/maps/Route102/scripts.pory"
+	setvar VAR_TEMP_1, 2
+# 147 "data/maps/Route102/scripts.pory"
+	goto Route102_Zinnia
+	return
+
+
+Route102_Zinnia::
+# 152 "data/maps/Route102/scripts.pory"
+	lockall
+# 153 "data/maps/Route102/scripts.pory"
+	applymovement 12, Route102_Zinnia_FrustratedWalkInPlace
+# 154 "data/maps/Route102/scripts.pory"
+	waitmovement 0
+# 155 "data/maps/Route102/scripts.pory"
+	msgbox_mugshot Route102_Zinnia_Text_0, MSGBOX_NPC, MUGSHOT_ZINNIA
+# 156 "data/maps/Route102/scripts.pory"
+	closemessage
+# 157 "data/maps/Route102/scripts.pory"
+	applymovement 12, Common_Movement_ExclamationMark
+# 158 "data/maps/Route102/scripts.pory"
+	waitmovement 0
+# 160 "data/maps/Route102/scripts.pory"
+	compare VAR_TEMP_1, 1
+	goto_if_eq Route102_Zinnia_2
+# 166 "data/maps/Route102/scripts.pory"
+	applymovement 12, Route102_Zinnia_WalkToPlayer2
+Route102_Zinnia_1:
+# 169 "data/maps/Route102/scripts.pory"
+	waitmovement 0
+# 170 "data/maps/Route102/scripts.pory"
+	msgbox_mugshot Route102_Zinnia_Text_1, MSGBOX_NPC, MUGSHOT_ZINNIA
+# 171 "data/maps/Route102/scripts.pory"
+	closemessage
+# 173 "data/maps/Route102/scripts.pory"
+	compare VAR_TEMP_1, 1
+	goto_if_eq Route102_Zinnia_6
+# 179 "data/maps/Route102/scripts.pory"
+	applymovement 12, Route102_Zinnia_WalkAway2
+Route102_Zinnia_5:
+# 182 "data/maps/Route102/scripts.pory"
+	waitmovement 0
+# 183 "data/maps/Route102/scripts.pory"
+	removeobject 12
+# 184 "data/maps/Route102/scripts.pory"
+	setflag FLAG_ROUTE102_ZINNIA_VANISHED
+# 185 "data/maps/Route102/scripts.pory"
+	setvar VAR_ZINNIA_STORY_STATE, 1
+# 186 "data/maps/Route102/scripts.pory"
+	releaseall
+	end
+
+Route102_Zinnia_2:
+# 162 "data/maps/Route102/scripts.pory"
+	applymovement 12, Route102_Zinnia_WalkToPlayer1
+	goto Route102_Zinnia_1
+
+Route102_Zinnia_6:
+# 175 "data/maps/Route102/scripts.pory"
+	applymovement 12, Route102_Zinnia_WalkAway1
+	goto Route102_Zinnia_5
+
+
+# 190 "data/maps/Route102/scripts.pory"
+Route102_Zinnia_FrustratedWalkInPlace:
+# 192 "data/maps/Route102/scripts.pory"
+	walk_in_place_up
+# 192 "data/maps/Route102/scripts.pory"
+	walk_in_place_up
+# 192 "data/maps/Route102/scripts.pory"
+	walk_in_place_up
+# 193 "data/maps/Route102/scripts.pory"
+	step_end
+
+# 196 "data/maps/Route102/scripts.pory"
+Route102_Zinnia_WalkToPlayer1:
+# 198 "data/maps/Route102/scripts.pory"
+	walk_left
+# 198 "data/maps/Route102/scripts.pory"
+	walk_left
+# 198 "data/maps/Route102/scripts.pory"
+	walk_left
+# 198 "data/maps/Route102/scripts.pory"
+	walk_left
+# 198 "data/maps/Route102/scripts.pory"
+	walk_left
+# 198 "data/maps/Route102/scripts.pory"
+	walk_left
+# 199 "data/maps/Route102/scripts.pory"
+	walk_in_place_down
+# 200 "data/maps/Route102/scripts.pory"
+	step_end
+
+# 203 "data/maps/Route102/scripts.pory"
+Route102_Zinnia_WalkToPlayer2:
+# 205 "data/maps/Route102/scripts.pory"
+	walk_left
+# 205 "data/maps/Route102/scripts.pory"
+	walk_left
+# 205 "data/maps/Route102/scripts.pory"
+	walk_left
+# 205 "data/maps/Route102/scripts.pory"
+	walk_left
+# 205 "data/maps/Route102/scripts.pory"
+	walk_left
+# 206 "data/maps/Route102/scripts.pory"
+	walk_in_place_down
+# 207 "data/maps/Route102/scripts.pory"
+	step_end
+
+# 210 "data/maps/Route102/scripts.pory"
+Route102_Zinnia_WalkAway1:
+# 212 "data/maps/Route102/scripts.pory"
+	walk_left
+# 212 "data/maps/Route102/scripts.pory"
+	walk_left
+# 212 "data/maps/Route102/scripts.pory"
+	walk_left
+# 212 "data/maps/Route102/scripts.pory"
+	walk_left
+# 212 "data/maps/Route102/scripts.pory"
+	walk_left
+# 212 "data/maps/Route102/scripts.pory"
+	walk_left
+# 212 "data/maps/Route102/scripts.pory"
+	walk_left
+# 212 "data/maps/Route102/scripts.pory"
+	walk_left
+# 213 "data/maps/Route102/scripts.pory"
+	step_end
+
+# 216 "data/maps/Route102/scripts.pory"
+Route102_Zinnia_WalkAway2:
+# 218 "data/maps/Route102/scripts.pory"
+	walk_left
+# 218 "data/maps/Route102/scripts.pory"
+	walk_left
+# 218 "data/maps/Route102/scripts.pory"
+	walk_left
+# 218 "data/maps/Route102/scripts.pory"
+	walk_left
+# 218 "data/maps/Route102/scripts.pory"
+	walk_left
+# 218 "data/maps/Route102/scripts.pory"
+	walk_left
+# 218 "data/maps/Route102/scripts.pory"
+	walk_left
+# 218 "data/maps/Route102/scripts.pory"
+	walk_left
+# 219 "data/maps/Route102/scripts.pory"
+	step_end
+
+Route102_Pokemon_Farfetchd_Text_0:
+# 119 "data/maps/Route102/scripts.pory"
+	.string "Kree!$"
+
+Route102_Pokemon_Poliwag_Text_0:
+# 131 "data/maps/Route102/scripts.pory"
+	.string "Blub blub blub!$"
+
+Route102_Zinnia_Text_0:
+# 155 "data/maps/Route102/scripts.pory"
+	.string "Hmm...$"
+
+Route102_Zinnia_Text_1:
+# 170 "data/maps/Route102/scripts.pory"
+	.string "YOU! You see it too, right? The berry\n"
+	.string "trees looking... unusual?!\l"
+	.string "Of course you do! The energy in this\l"
+	.string "region is shifting, the plants can feel\l"
+	.string "it.\l"
+	.string "I'm not crazy!$"

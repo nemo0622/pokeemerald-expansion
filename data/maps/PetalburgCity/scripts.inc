@@ -1488,3 +1488,69 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "talented TRAINERS.\p"
 # 745 "data/maps/PetalburgCity/scripts.pory"
 	.string "I'm sorry to have taken your time.$"
+
+PetalburgCity_Pokemon_Noibat::
+# 750 "data/maps/PetalburgCity/scripts.pory"
+	lock
+# 751 "data/maps/PetalburgCity/scripts.pory"
+	faceplayer
+# 752 "data/maps/PetalburgCity/scripts.pory"
+	playmoncry SPECIES_NOIBAT, CRY_MODE_NORMAL
+# 753 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_Pokemon_Noibat_Text_0
+# 754 "data/maps/PetalburgCity/scripts.pory"
+	waitmoncry
+# 755 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 756 "data/maps/PetalburgCity/scripts.pory"
+	release
+	end
+
+
+PetalburgCity_Pokemon_Mudkip::
+# 762 "data/maps/PetalburgCity/scripts.pory"
+	lock
+# 763 "data/maps/PetalburgCity/scripts.pory"
+	faceplayer
+# 764 "data/maps/PetalburgCity/scripts.pory"
+	playmoncry SPECIES_MUDKIP, CRY_MODE_NORMAL
+# 765 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_Pokemon_Mudkip_Text_0
+# 766 "data/maps/PetalburgCity/scripts.pory"
+	waitmoncry
+# 767 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 768 "data/maps/PetalburgCity/scripts.pory"
+	release
+	end
+
+
+PetalburgCity_Pokemon_Marill::
+# 774 "data/maps/PetalburgCity/scripts.pory"
+	lock
+# 775 "data/maps/PetalburgCity/scripts.pory"
+	faceplayer
+# 776 "data/maps/PetalburgCity/scripts.pory"
+	playmoncry SPECIES_MARILL, CRY_MODE_NORMAL
+# 777 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_Pokemon_Marill_Text_0
+# 778 "data/maps/PetalburgCity/scripts.pory"
+	waitmoncry
+# 779 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 780 "data/maps/PetalburgCity/scripts.pory"
+	release
+	end
+
+
+PetalburgCity_Pokemon_Noibat_Text_0:
+# 753 "data/maps/PetalburgCity/scripts.pory"
+	.string "Graah!$"
+
+PetalburgCity_Pokemon_Mudkip_Text_0:
+# 765 "data/maps/PetalburgCity/scripts.pory"
+	.string "Plap pla!$"
+
+PetalburgCity_Pokemon_Marill_Text_0:
+# 777 "data/maps/PetalburgCity/scripts.pory"
+	.string "Bee blea!$"

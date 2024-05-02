@@ -744,3 +744,39 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "talented TRAINERS.\p"
 	.string "I'm sorry to have taken your time.$"
 `
+
+script PetalburgCity_Pokemon_Noibat
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_NOIBAT, CRY_MODE_NORMAL)
+	msgbox(format("Graah!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script PetalburgCity_Pokemon_Mudkip
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MUDKIP, CRY_MODE_NORMAL)
+	msgbox(format("Plap pla!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script PetalburgCity_Pokemon_Marill
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MARILL, CRY_MODE_NORMAL)
+	msgbox(format("Bee blea!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}

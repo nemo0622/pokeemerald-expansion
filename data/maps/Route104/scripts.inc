@@ -2344,3 +2344,366 @@ Route104_Text_BrendanPostBattle:
 	.string "Like MR. BRINEY, it's important to\n"
 # 1173 "data/maps/Route104/scripts.pory"
 	.string "become friends with your POKéMON.$"
+
+Route104_Pokemon_Sealeo::
+# 1178 "data/maps/Route104/scripts.pory"
+	lock
+# 1179 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1180 "data/maps/Route104/scripts.pory"
+	playmoncry SPECIES_SEALEO, CRY_MODE_NORMAL
+# 1181 "data/maps/Route104/scripts.pory"
+	msgbox Route104_Pokemon_Sealeo_Text_0
+# 1182 "data/maps/Route104/scripts.pory"
+	waitmoncry
+# 1183 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1184 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+
+Route104_Pokemon_SphealWater::
+# 1190 "data/maps/Route104/scripts.pory"
+	lock
+# 1191 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1192 "data/maps/Route104/scripts.pory"
+	playmoncry SPECIES_SPHEAL, CRY_MODE_NORMAL
+# 1193 "data/maps/Route104/scripts.pory"
+	msgbox Route104_Pokemon_SphealWater_Text_0
+# 1194 "data/maps/Route104/scripts.pory"
+	waitmoncry
+# 1195 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1196 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+
+Route104_Pokemon_SphealShard::
+# 1202 "data/maps/Route104/scripts.pory"
+	lock
+# 1203 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1204 "data/maps/Route104/scripts.pory"
+	playmoncry SPECIES_SPHEAL, CRY_MODE_NORMAL
+# 1205 "data/maps/Route104/scripts.pory"
+	msgbox Route104_Pokemon_SphealShard_Text_0
+# 1206 "data/maps/Route104/scripts.pory"
+	waitmoncry
+# 1207 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1208 "data/maps/Route104/scripts.pory"
+	goto_if_unset FLAG_ROUTE104_GOT_SPHEAL_ITEM, Route104_Pokemon_SphealShard_2
+Route104_Pokemon_SphealShard_1:
+# 1215 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+Route104_Pokemon_SphealShard_2:
+# 1210 "data/maps/Route104/scripts.pory"
+	msgbox Route104_Pokemon_SphealShard_Text_1
+# 1211 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1212 "data/maps/Route104/scripts.pory"
+	giveitem ITEM_HEART_SCALE
+# 1213 "data/maps/Route104/scripts.pory"
+	setflag FLAG_ROUTE104_GOT_SPHEAL_ITEM
+	goto Route104_Pokemon_SphealShard_1
+
+
+Route104_Pokemon_Sandyghast::
+# 1221 "data/maps/Route104/scripts.pory"
+	lock
+# 1222 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1223 "data/maps/Route104/scripts.pory"
+	playmoncry SPECIES_SANDYGAST, CRY_MODE_NORMAL
+# 1224 "data/maps/Route104/scripts.pory"
+	msgbox Route104_Pokemon_Sandyghast_Text_0
+# 1225 "data/maps/Route104/scripts.pory"
+	waitmoncry
+# 1226 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1227 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+
+Route104_LittleGirlOnBeach::
+# 1233 "data/maps/Route104/scripts.pory"
+	lock
+# 1234 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1235 "data/maps/Route104/scripts.pory"
+	goto_if_unset FLAG_ROUTE104_HONEY_FROM_GIRL, Route104_LittleGirlOnBeach_2
+# 1253 "data/maps/Route104/scripts.pory"
+	msgbox_mugshot Route104_LittleGirlOnBeach_Text_3, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
+# 1254 "data/maps/Route104/scripts.pory"
+	closemessage
+Route104_LittleGirlOnBeach_1:
+# 1256 "data/maps/Route104/scripts.pory"
+	applymovement 39, Common_Movement_FaceLeft
+# 1257 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+Route104_LittleGirlOnBeach_2:
+# 1237 "data/maps/Route104/scripts.pory"
+	msgbox_mugshot Route104_LittleGirlOnBeach_Text_0, MSGBOX_YESNO, MUGSHOT_LITTLEGIRL
+# 1238 "data/maps/Route104/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Route104_LittleGirlOnBeach_5
+# 1245 "data/maps/Route104/scripts.pory"
+	msgbox_mugshot Route104_LittleGirlOnBeach_Text_2, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
+# 1246 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1247 "data/maps/Route104/scripts.pory"
+	giveitem ITEM_HONEY
+# 1248 "data/maps/Route104/scripts.pory"
+	setflag FLAG_ROUTE104_HONEY_FROM_GIRL
+	goto Route104_LittleGirlOnBeach_1
+
+Route104_LittleGirlOnBeach_5:
+# 1240 "data/maps/Route104/scripts.pory"
+	msgbox_mugshot Route104_LittleGirlOnBeach_Text_1, MSGBOX_NPC, MUGSHOT_LITTLEGIRL
+# 1241 "data/maps/Route104/scripts.pory"
+	closemessage
+	goto Route104_LittleGirlOnBeach_1
+
+
+Route104_Pokemon_Teddiursa::
+# 1263 "data/maps/Route104/scripts.pory"
+	lock
+# 1264 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1265 "data/maps/Route104/scripts.pory"
+	playmoncry SPECIES_TEDDIURSA, CRY_MODE_NORMAL
+# 1266 "data/maps/Route104/scripts.pory"
+	msgbox Route104_Pokemon_Teddiursa_Text_0
+# 1267 "data/maps/Route104/scripts.pory"
+	waitmoncry
+# 1268 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1269 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+
+Route104_Trigger_Zinnia_Left::
+# 1275 "data/maps/Route104/scripts.pory"
+	setvar VAR_TEMP_1, 1
+# 1276 "data/maps/Route104/scripts.pory"
+	goto Route104_Zinnia
+	return
+
+
+Route104_Trigger_Zinnia_Middle::
+# 1281 "data/maps/Route104/scripts.pory"
+	setvar VAR_TEMP_1, 2
+# 1282 "data/maps/Route104/scripts.pory"
+	goto Route104_Zinnia
+	return
+
+
+Route104_Trigger_Zinnia_Right::
+# 1287 "data/maps/Route104/scripts.pory"
+	setvar VAR_TEMP_1, 3
+# 1288 "data/maps/Route104/scripts.pory"
+	goto Route104_Zinnia
+	return
+
+
+# 1291 "data/maps/Route104/scripts.pory"
+Route104_Movement_ZinniaToPlayerLeft:
+# 1293 "data/maps/Route104/scripts.pory"
+	walk_left
+# 1294 "data/maps/Route104/scripts.pory"
+	walk_down
+# 1295 "data/maps/Route104/scripts.pory"
+	step_end
+
+# 1298 "data/maps/Route104/scripts.pory"
+Route104_Movement_ZinniaToPlayerMiddle:
+# 1300 "data/maps/Route104/scripts.pory"
+	walk_down
+# 1301 "data/maps/Route104/scripts.pory"
+	step_end
+
+# 1304 "data/maps/Route104/scripts.pory"
+Route104_Movement_ZinniaToPlayerRight:
+# 1306 "data/maps/Route104/scripts.pory"
+	walk_right
+# 1307 "data/maps/Route104/scripts.pory"
+	walk_down
+# 1308 "data/maps/Route104/scripts.pory"
+	step_end
+
+Route104_Zinnia::
+# 1313 "data/maps/Route104/scripts.pory"
+	lockall
+# 1314 "data/maps/Route104/scripts.pory"
+	applymovement 41, Common_Movement_ExclamationMark
+# 1315 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1316 "data/maps/Route104/scripts.pory"
+	applymovement 41, Common_Movement_Delay32
+# 1317 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1319 "data/maps/Route104/scripts.pory"
+	compare VAR_TEMP_1, 1
+	goto_if_eq Route104_Zinnia_2
+# 1322 "data/maps/Route104/scripts.pory"
+	compare VAR_TEMP_1, 2
+	goto_if_eq Route104_Zinnia_5
+# 1323 "data/maps/Route104/scripts.pory"
+	applymovement 41, Route104_Movement_ZinniaToPlayerRight
+Route104_Zinnia_1:
+# 1326 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1327 "data/maps/Route104/scripts.pory"
+	msgbox_mugshot Route104_Zinnia_Text_0, MSGBOX_NPC, MUGSHOT_ZINNIA
+# 1329 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1330 "data/maps/Route104/scripts.pory"
+	applymovement 41, Common_Movement_FaceUp
+# 1331 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1332 "data/maps/Route104/scripts.pory"
+	applymovement 41, Common_Movement_Delay32
+# 1333 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1334 "data/maps/Route104/scripts.pory"
+	msgbox_mugshot Route104_Zinnia_Text_1, MSGBOX_NPC, MUGSHOT_ZINNIA
+# 1336 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1337 "data/maps/Route104/scripts.pory"
+	applymovement 41, Common_Movement_ExclamationMark
+# 1338 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1339 "data/maps/Route104/scripts.pory"
+	applymovement 41, Common_Movement_Delay32
+# 1340 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1341 "data/maps/Route104/scripts.pory"
+	applymovement 41, Common_Movement_FaceDown
+# 1342 "data/maps/Route104/scripts.pory"
+	msgbox_mugshot Route104_Zinnia_Text_2, MSGBOX_NPC, MUGSHOT_ZINNIA
+# 1343 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1344 "data/maps/Route104/scripts.pory"
+	applymovement 41, Route104_Movement_ZinniaExit
+# 1345 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1347 "data/maps/Route104/scripts.pory"
+	removeobject 41
+# 1348 "data/maps/Route104/scripts.pory"
+	setflag FLAG_ROUTE104_ZINNIA_VANISHED
+# 1349 "data/maps/Route104/scripts.pory"
+	setvar VAR_ZINNIA_STORY_STATE, 2
+# 1350 "data/maps/Route104/scripts.pory"
+	releaseall
+	end
+
+Route104_Zinnia_2:
+# 1319 "data/maps/Route104/scripts.pory"
+	applymovement 41, Route104_Movement_ZinniaToPlayerLeft
+	goto Route104_Zinnia_1
+
+Route104_Zinnia_5:
+# 1322 "data/maps/Route104/scripts.pory"
+	applymovement 41, Route104_Movement_ZinniaToPlayerMiddle
+	goto Route104_Zinnia_1
+
+
+# 1354 "data/maps/Route104/scripts.pory"
+Route104_Movement_ZinniaExit:
+# 1356 "data/maps/Route104/scripts.pory"
+	walk_up
+# 1357 "data/maps/Route104/scripts.pory"
+	walk_left
+# 1357 "data/maps/Route104/scripts.pory"
+	walk_left
+# 1357 "data/maps/Route104/scripts.pory"
+	walk_left
+# 1357 "data/maps/Route104/scripts.pory"
+	walk_left
+# 1357 "data/maps/Route104/scripts.pory"
+	walk_left
+# 1357 "data/maps/Route104/scripts.pory"
+	walk_left
+# 1357 "data/maps/Route104/scripts.pory"
+	walk_left
+# 1357 "data/maps/Route104/scripts.pory"
+	walk_left
+	step_end
+
+Route104_Pokemon_Sealeo_Text_0:
+# 1181 "data/maps/Route104/scripts.pory"
+	.string "Bwark bwark!$"
+
+Route104_Pokemon_SphealWater_Text_0:
+# 1193 "data/maps/Route104/scripts.pory"
+	.string "Blub blub blub...$"
+
+Route104_Pokemon_SphealShard_Text_0:
+# 1205 "data/maps/Route104/scripts.pory"
+	.string "Arf arf!$"
+
+Route104_Pokemon_SphealShard_Text_1:
+# 1210 "data/maps/Route104/scripts.pory"
+	.string "Hm? It looks like the Spheal is holding\n"
+	.string "something!$"
+
+Route104_Pokemon_Sandyghast_Text_0:
+# 1224 "data/maps/Route104/scripts.pory"
+	.string "Kaaah.$"
+
+Route104_LittleGirlOnBeach_Text_0:
+# 1237 "data/maps/Route104/scripts.pory"
+	.string "My daddy lets me come play with the wild\n"
+	.string "Pokémon sometimes!\l"
+	.string "He also gave me a snack, but I don't\l"
+	.string "want it. Do you?$"
+
+Route104_LittleGirlOnBeach_Text_1:
+# 1240 "data/maps/Route104/scripts.pory"
+	.string "Okay, more for me I guess.$"
+
+Route104_LittleGirlOnBeach_Text_2:
+# 1245 "data/maps/Route104/scripts.pory"
+	.string "Here you go!$"
+
+Route104_LittleGirlOnBeach_Text_3:
+# 1253 "data/maps/Route104/scripts.pory"
+	.string "My daddy lets me come play with the wild\n"
+	.string "Pokémon sometimes!$"
+
+Route104_Pokemon_Teddiursa_Text_0:
+# 1266 "data/maps/Route104/scripts.pory"
+	.string "Rahhh!$"
+
+Route104_Zinnia_Text_0:
+# 1327 "data/maps/Route104/scripts.pory"
+	.string "You again! What's your name?\n"
+	.string "{PLAYER}, huh? Well, I'm Zinnia. I've\l"
+	.string "been traveling Hoenn to observe what's\l"
+	.string "happening and the situation is... dire.\l"
+	.string "My people, the Draconid Clan, believe an\l"
+	.string "ancient prophecy of destruction may\l"
+	.string "come true soon.$"
+
+Route104_Zinnia_Text_1:
+# 1334 "data/maps/Route104/scripts.pory"
+	.string "Berry trees like these are growing in\n"
+	.string "strange colors, but it will get worse.\l"
+	.string "Unless I stop it, Deoxys will bring\l"
+	.string "complete destruction!$"
+
+Route104_Zinnia_Text_2:
+# 1342 "data/maps/Route104/scripts.pory"
+	.string "Ah, I'm sorry, for all I know you're just\n"
+	.string "a random kid.\l"
+	.string "Forget I said anything. If it is truly\l"
+	.string "fate, we'll meet again.$"

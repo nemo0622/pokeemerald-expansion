@@ -110,3 +110,111 @@ Route102_Text_RouteSignPetalburg:
 	.string "ROUTE 102\n"
 	.string "{LEFT_ARROW} PETALBURG CITY$"
 `
+
+script Route102_Pokemon_Farfetchd
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_FARFETCHD, CRY_MODE_NORMAL)
+	msgbox(format("Kree!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script Route102_Pokemon_Poliwag
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_POLIWAG, CRY_MODE_NORMAL)
+	msgbox(format("Blub blub blub!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script Route102_Zinnia_Trigger1
+{
+	setvar(VAR_TEMP_1, 1)
+	goto(Route102_Zinnia)
+}
+
+script Route102_Zinnia_Trigger2
+{
+	setvar(VAR_TEMP_1, 2)
+	goto(Route102_Zinnia)
+}
+
+script Route102_Zinnia
+{
+	lockall
+	applymovement(12, Route102_Zinnia_FrustratedWalkInPlace)
+	waitmovement(0)
+	msgbox_mugshot(format("Hmm..."), MSGBOX_NPC, MUGSHOT_ZINNIA)
+	closemessage
+	applymovement(12, Common_Movement_ExclamationMark)
+	waitmovement(0)
+
+	if(var(VAR_TEMP_1) == 1)
+	{
+		applymovement(12, Route102_Zinnia_WalkToPlayer1)
+	}
+	else
+	{
+		applymovement(12, Route102_Zinnia_WalkToPlayer2)
+	}
+
+	waitmovement(0)
+	msgbox_mugshot(format("YOU! You see it too, right? The berry trees looking... unusual?!\NOf course you do! The energy in this region is shifting, the plants can feel it.\N I'm not crazy!"), MSGBOX_NPC, MUGSHOT_ZINNIA)
+	closemessage
+
+	if(var(VAR_TEMP_1) == 1)
+	{
+		applymovement(12, Route102_Zinnia_WalkAway1)
+	}
+	else
+	{
+		applymovement(12, Route102_Zinnia_WalkAway2)
+	}
+
+	waitmovement(0)
+	removeobject(12)
+	setflag(FLAG_ROUTE102_ZINNIA_VANISHED)
+	setvar(VAR_ZINNIA_STORY_STATE, 1)
+	releaseall
+	end
+}
+
+movement Route102_Zinnia_FrustratedWalkInPlace
+{
+	walk_in_place_up * 3
+	step_end
+}
+
+movement Route102_Zinnia_WalkToPlayer1
+{
+	walk_left * 6
+	walk_in_place_down
+	step_end
+}
+
+movement Route102_Zinnia_WalkToPlayer2
+{
+	walk_left * 5
+	walk_in_place_down
+	step_end
+}
+
+movement Route102_Zinnia_WalkAway1
+{
+	walk_left * 8
+	step_end
+}
+
+movement Route102_Zinnia_WalkAway2
+{
+	walk_left * 8
+	step_end
+}

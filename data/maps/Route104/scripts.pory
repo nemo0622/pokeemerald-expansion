@@ -1172,3 +1172,187 @@ Route104_Text_BrendanPostBattle:
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
 `
+
+script Route104_Pokemon_Sealeo
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SEALEO, CRY_MODE_NORMAL)
+	msgbox(format("Bwark bwark!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script Route104_Pokemon_SphealWater
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SPHEAL, CRY_MODE_NORMAL)
+	msgbox(format("Blub blub blub..."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script Route104_Pokemon_SphealShard
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SPHEAL, CRY_MODE_NORMAL)
+	msgbox(format("Arf arf!"))
+	waitmoncry
+	closemessage
+	if(!flag(FLAG_ROUTE104_GOT_SPHEAL_ITEM)) // give player item on first talk
+	{
+		msgbox(format("Hm? It looks like the Spheal is holding something!"))
+		closemessage
+		giveitem(ITEM_HEART_SCALE)
+		setflag(FLAG_ROUTE104_GOT_SPHEAL_ITEM)
+	}
+	release
+	end
+}
+
+script Route104_Pokemon_Sandyghast
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SANDYGAST, CRY_MODE_NORMAL)
+	msgbox(format("Kaaah."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script Route104_LittleGirlOnBeach
+{
+	lock
+	faceplayer
+	if(!flag(FLAG_ROUTE104_HONEY_FROM_GIRL))
+	{
+		msgbox_mugshot(format("My daddy lets me come play with the wild Pokémon sometimes!\lHe also gave me a snack, but I don't want it. Do you?"), MSGBOX_YESNO, MUGSHOT_LITTLEGIRL)
+		if(var(VAR_RESULT) == 0)
+		{
+			msgbox_mugshot(format("Okay, more for me I guess."), MSGBOX_NPC, MUGSHOT_LITTLEGIRL)
+			closemessage
+		}
+		else
+		{
+			msgbox_mugshot(format("Here you go!"), MSGBOX_NPC, MUGSHOT_LITTLEGIRL)
+			closemessage
+			giveitem(ITEM_HONEY)
+			setflag(FLAG_ROUTE104_HONEY_FROM_GIRL)
+		}
+	}
+	else
+	{
+		msgbox_mugshot(format("My daddy lets me come play with the wild Pokémon sometimes!"), MSGBOX_NPC, MUGSHOT_LITTLEGIRL)
+		closemessage
+	}
+	applymovement(39, Common_Movement_FaceLeft)
+	release
+	end
+}
+
+script Route104_Pokemon_Teddiursa
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_TEDDIURSA, CRY_MODE_NORMAL)
+	msgbox(format("Rahhh!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script Route104_Trigger_Zinnia_Left
+{
+	setvar(VAR_TEMP_1, 1)
+	goto(Route104_Zinnia)
+}
+
+script Route104_Trigger_Zinnia_Middle
+{
+	setvar(VAR_TEMP_1, 2)
+	goto(Route104_Zinnia)
+}
+
+script Route104_Trigger_Zinnia_Right
+{
+	setvar(VAR_TEMP_1, 3)
+	goto(Route104_Zinnia)
+}
+
+movement Route104_Movement_ZinniaToPlayerLeft
+{
+	walk_left
+	walk_down
+	step_end
+}
+
+movement Route104_Movement_ZinniaToPlayerMiddle
+{
+	walk_down
+	step_end
+}
+
+movement Route104_Movement_ZinniaToPlayerRight
+{
+	walk_right
+	walk_down
+	step_end
+}
+
+script Route104_Zinnia
+{
+	lockall
+	applymovement(41, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(41, Common_Movement_Delay32)
+	waitmovement(0)
+
+	if(var(VAR_TEMP_1) == 1) { applymovement(41, Route104_Movement_ZinniaToPlayerLeft) }
+	else
+	{
+		if(var(VAR_TEMP_1) == 2) { applymovement(41, Route104_Movement_ZinniaToPlayerMiddle) }
+		else { applymovement(41, Route104_Movement_ZinniaToPlayerRight) }
+	}
+
+	waitmovement(0)
+	msgbox_mugshot(format("You again! What's your name?\N {PLAYER}, huh? Well, I'm Zinnia. I've been traveling Hoenn to observe 
+what's happening and the situation is... dire.\N My people, the Draconid Clan, believe an ancient prophecy of destruction may come true soon."), MSGBOX_NPC, MUGSHOT_ZINNIA)
+	closemessage
+	applymovement(41, Common_Movement_FaceUp)
+	waitmovement(0)
+	applymovement(41, Common_Movement_Delay32)
+	waitmovement(0)
+	msgbox_mugshot(format("Berry trees like these are growing in strange colors, but it will get worse. Unless I stop it, Deoxys will bring 
+complete destruction!"), MSGBOX_NPC, MUGSHOT_ZINNIA)
+	closemessage
+	applymovement(41, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(41, Common_Movement_Delay32)
+	waitmovement(0)
+	applymovement(41, Common_Movement_FaceDown)
+	msgbox_mugshot(format("Ah, I'm sorry, for all I know you're just a random kid.\N Forget I said anything. If it is truly fate, we'll meet again."), MSGBOX_NPC, MUGSHOT_ZINNIA)
+	closemessage
+	applymovement(41, Route104_Movement_ZinniaExit)
+	waitmovement(0)
+
+	removeobject(41)
+	setflag(FLAG_ROUTE104_ZINNIA_VANISHED)
+	setvar(VAR_ZINNIA_STORY_STATE, 2)
+	releaseall
+	end
+}
+
+movement Route104_Movement_ZinniaExit
+{
+	walk_up
+	walk_left * 8
+}
