@@ -1327,7 +1327,7 @@ script Route104_Zinnia
 	msgbox_mugshot(format("You again! What's your name?\N {PLAYER}, huh? Well, I'm Zinnia. I've been traveling Hoenn to observe 
 what's happening and the situation is... dire.\N My people, the Draconid Clan, believe an ancient prophecy of destruction may come true soon."), MSGBOX_NPC, MUGSHOT_ZINNIA)
 	closemessage
-	applymovement(41, Common_Movement_FaceUp)
+	applymovement(41, Common_Movement_WalkUp)
 	waitmovement(0)
 	applymovement(41, Common_Movement_Delay32)
 	waitmovement(0)
@@ -1338,7 +1338,8 @@ complete destruction!"), MSGBOX_NPC, MUGSHOT_ZINNIA)
 	waitmovement(0)
 	applymovement(41, Common_Movement_Delay32)
 	waitmovement(0)
-	applymovement(41, Common_Movement_FaceDown)
+	applymovement(41, Common_Movement_WalkDown)
+	waitmovement(0)
 	msgbox_mugshot(format("Ah, I'm sorry, for all I know you're just a random kid.\N Forget I said anything. If it is truly fate, we'll meet again."), MSGBOX_NPC, MUGSHOT_ZINNIA)
 	closemessage
 	applymovement(41, Route104_Movement_ZinniaExit)

@@ -2567,7 +2567,7 @@ Route104_Zinnia_1:
 # 1329 "data/maps/Route104/scripts.pory"
 	closemessage
 # 1330 "data/maps/Route104/scripts.pory"
-	applymovement 41, Common_Movement_FaceUp
+	applymovement 41, Common_Movement_WalkUp
 # 1331 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1332 "data/maps/Route104/scripts.pory"
@@ -2587,22 +2587,24 @@ Route104_Zinnia_1:
 # 1340 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1341 "data/maps/Route104/scripts.pory"
-	applymovement 41, Common_Movement_FaceDown
+	applymovement 41, Common_Movement_WalkDown
 # 1342 "data/maps/Route104/scripts.pory"
-	msgbox_mugshot Route104_Zinnia_Text_2, MSGBOX_NPC, MUGSHOT_ZINNIA
-# 1343 "data/maps/Route104/scripts.pory"
-	closemessage
-# 1344 "data/maps/Route104/scripts.pory"
-	applymovement 41, Route104_Movement_ZinniaExit
-# 1345 "data/maps/Route104/scripts.pory"
 	waitmovement 0
-# 1347 "data/maps/Route104/scripts.pory"
-	removeobject 41
+# 1343 "data/maps/Route104/scripts.pory"
+	msgbox_mugshot Route104_Zinnia_Text_2, MSGBOX_NPC, MUGSHOT_ZINNIA
+# 1344 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1345 "data/maps/Route104/scripts.pory"
+	applymovement 41, Route104_Movement_ZinniaExit
+# 1346 "data/maps/Route104/scripts.pory"
+	waitmovement 0
 # 1348 "data/maps/Route104/scripts.pory"
-	setflag FLAG_ROUTE104_ZINNIA_VANISHED
+	removeobject 41
 # 1349 "data/maps/Route104/scripts.pory"
-	setvar VAR_ZINNIA_STORY_STATE, 2
+	setflag FLAG_ROUTE104_ZINNIA_VANISHED
 # 1350 "data/maps/Route104/scripts.pory"
+	setvar VAR_ZINNIA_STORY_STATE, 2
+# 1351 "data/maps/Route104/scripts.pory"
 	releaseall
 	end
 
@@ -2617,25 +2619,25 @@ Route104_Zinnia_5:
 	goto Route104_Zinnia_1
 
 
-# 1354 "data/maps/Route104/scripts.pory"
+# 1355 "data/maps/Route104/scripts.pory"
 Route104_Movement_ZinniaExit:
-# 1356 "data/maps/Route104/scripts.pory"
+# 1357 "data/maps/Route104/scripts.pory"
 	walk_up
-# 1357 "data/maps/Route104/scripts.pory"
+# 1358 "data/maps/Route104/scripts.pory"
 	walk_left
-# 1357 "data/maps/Route104/scripts.pory"
+# 1358 "data/maps/Route104/scripts.pory"
 	walk_left
-# 1357 "data/maps/Route104/scripts.pory"
+# 1358 "data/maps/Route104/scripts.pory"
 	walk_left
-# 1357 "data/maps/Route104/scripts.pory"
+# 1358 "data/maps/Route104/scripts.pory"
 	walk_left
-# 1357 "data/maps/Route104/scripts.pory"
+# 1358 "data/maps/Route104/scripts.pory"
 	walk_left
-# 1357 "data/maps/Route104/scripts.pory"
+# 1358 "data/maps/Route104/scripts.pory"
 	walk_left
-# 1357 "data/maps/Route104/scripts.pory"
+# 1358 "data/maps/Route104/scripts.pory"
 	walk_left
-# 1357 "data/maps/Route104/scripts.pory"
+# 1358 "data/maps/Route104/scripts.pory"
 	walk_left
 	step_end
 
@@ -2702,7 +2704,7 @@ Route104_Zinnia_Text_1:
 	.string "complete destruction!$"
 
 Route104_Zinnia_Text_2:
-# 1342 "data/maps/Route104/scripts.pory"
+# 1343 "data/maps/Route104/scripts.pory"
 	.string "Ah, I'm sorry, for all I know you're just\n"
 	.string "a random kid.\l"
 	.string "Forget I said anything. If it is truly\l"

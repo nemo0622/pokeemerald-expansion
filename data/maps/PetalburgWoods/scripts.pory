@@ -476,3 +476,93 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "taken to a POKéMON CENTER.$"
 
 `
+
+// Pokémon Scripts
+script PetalburgWoods_Pokemon_Ledyba
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_LEDYBA, CRY_MODE_NORMAL)
+	msgbox(format("Bzz buzz!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script PetalburgWoods_Pokemon_Floette
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_FLOETTE, CRY_MODE_NORMAL)
+	msgbox(format("Aiee!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script PetalburgWoods_Pokemon_Shroomish
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SHROOMISH, CRY_MODE_NORMAL)
+	msgbox(format("Mun mun..."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script PetalburgWoods_Pokemon_Sentret
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SENTRET, CRY_MODE_NORMAL)
+	msgbox(format("Chip chip!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script PetalburgWoods_Pokemon_Metapod
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_METAPOD, CRY_MODE_NORMAL)
+	msgbox(format("Dundun."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script PetalburgWoods_Pokemon_Nincada
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_NINCADA, CRY_MODE_NORMAL)
+	msgbox(format("Cheep cheep cheep!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script PetalburgWoods_Pokemon_Teddiursa
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_TEDDIURSA, CRY_MODE_NORMAL)
+	msgbox(format("Raahhhh!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script PetalburgWoods_Pokemon_Aipom
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_AIPOM, CRY_MODE_NORMAL)
+	msgbox(format("Ooh ooh eeh!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}

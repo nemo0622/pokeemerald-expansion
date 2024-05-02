@@ -950,3 +950,179 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "If a POKéMON runs out of PP, it must be\n"
 # 476 "data/maps/PetalburgWoods/scripts.pory"
 	.string "taken to a POKéMON CENTER.$"
+
+PetalburgWoods_Pokemon_Ledyba::
+# 483 "data/maps/PetalburgWoods/scripts.pory"
+	lock
+# 484 "data/maps/PetalburgWoods/scripts.pory"
+	faceplayer
+# 485 "data/maps/PetalburgWoods/scripts.pory"
+	playmoncry SPECIES_LEDYBA, CRY_MODE_NORMAL
+# 486 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_Pokemon_Ledyba_Text_0
+# 487 "data/maps/PetalburgWoods/scripts.pory"
+	waitmoncry
+# 488 "data/maps/PetalburgWoods/scripts.pory"
+	closemessage
+# 489 "data/maps/PetalburgWoods/scripts.pory"
+	release
+	end
+
+
+PetalburgWoods_Pokemon_Floette::
+# 494 "data/maps/PetalburgWoods/scripts.pory"
+	lock
+# 495 "data/maps/PetalburgWoods/scripts.pory"
+	faceplayer
+# 496 "data/maps/PetalburgWoods/scripts.pory"
+	playmoncry SPECIES_FLOETTE, CRY_MODE_NORMAL
+# 497 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_Pokemon_Floette_Text_0
+# 498 "data/maps/PetalburgWoods/scripts.pory"
+	waitmoncry
+# 499 "data/maps/PetalburgWoods/scripts.pory"
+	closemessage
+# 500 "data/maps/PetalburgWoods/scripts.pory"
+	release
+	end
+
+
+PetalburgWoods_Pokemon_Shroomish::
+# 505 "data/maps/PetalburgWoods/scripts.pory"
+	lock
+# 506 "data/maps/PetalburgWoods/scripts.pory"
+	faceplayer
+# 507 "data/maps/PetalburgWoods/scripts.pory"
+	playmoncry SPECIES_SHROOMISH, CRY_MODE_NORMAL
+# 508 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_Pokemon_Shroomish_Text_0
+# 509 "data/maps/PetalburgWoods/scripts.pory"
+	waitmoncry
+# 510 "data/maps/PetalburgWoods/scripts.pory"
+	closemessage
+# 511 "data/maps/PetalburgWoods/scripts.pory"
+	release
+	end
+
+
+PetalburgWoods_Pokemon_Sentret::
+# 516 "data/maps/PetalburgWoods/scripts.pory"
+	lock
+# 517 "data/maps/PetalburgWoods/scripts.pory"
+	faceplayer
+# 518 "data/maps/PetalburgWoods/scripts.pory"
+	playmoncry SPECIES_SENTRET, CRY_MODE_NORMAL
+# 519 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_Pokemon_Sentret_Text_0
+# 520 "data/maps/PetalburgWoods/scripts.pory"
+	waitmoncry
+# 521 "data/maps/PetalburgWoods/scripts.pory"
+	closemessage
+# 522 "data/maps/PetalburgWoods/scripts.pory"
+	release
+	end
+
+
+PetalburgWoods_Pokemon_Metapod::
+# 527 "data/maps/PetalburgWoods/scripts.pory"
+	lock
+# 528 "data/maps/PetalburgWoods/scripts.pory"
+	faceplayer
+# 529 "data/maps/PetalburgWoods/scripts.pory"
+	playmoncry SPECIES_METAPOD, CRY_MODE_NORMAL
+# 530 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_Pokemon_Metapod_Text_0
+# 531 "data/maps/PetalburgWoods/scripts.pory"
+	waitmoncry
+# 532 "data/maps/PetalburgWoods/scripts.pory"
+	closemessage
+# 533 "data/maps/PetalburgWoods/scripts.pory"
+	release
+	end
+
+
+PetalburgWoods_Pokemon_Nincada::
+# 538 "data/maps/PetalburgWoods/scripts.pory"
+	lock
+# 539 "data/maps/PetalburgWoods/scripts.pory"
+	faceplayer
+# 540 "data/maps/PetalburgWoods/scripts.pory"
+	playmoncry SPECIES_NINCADA, CRY_MODE_NORMAL
+# 541 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_Pokemon_Nincada_Text_0
+# 542 "data/maps/PetalburgWoods/scripts.pory"
+	waitmoncry
+# 543 "data/maps/PetalburgWoods/scripts.pory"
+	closemessage
+# 544 "data/maps/PetalburgWoods/scripts.pory"
+	release
+	end
+
+
+PetalburgWoods_Pokemon_Teddiursa::
+# 549 "data/maps/PetalburgWoods/scripts.pory"
+	lock
+# 550 "data/maps/PetalburgWoods/scripts.pory"
+	faceplayer
+# 551 "data/maps/PetalburgWoods/scripts.pory"
+	playmoncry SPECIES_TEDDIURSA, CRY_MODE_NORMAL
+# 552 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_Pokemon_Teddiursa_Text_0
+# 553 "data/maps/PetalburgWoods/scripts.pory"
+	waitmoncry
+# 554 "data/maps/PetalburgWoods/scripts.pory"
+	closemessage
+# 555 "data/maps/PetalburgWoods/scripts.pory"
+	release
+	end
+
+
+PetalburgWoods_Pokemon_Aipom::
+# 560 "data/maps/PetalburgWoods/scripts.pory"
+	lock
+# 561 "data/maps/PetalburgWoods/scripts.pory"
+	faceplayer
+# 562 "data/maps/PetalburgWoods/scripts.pory"
+	playmoncry SPECIES_AIPOM, CRY_MODE_NORMAL
+# 563 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_Pokemon_Aipom_Text_0
+# 564 "data/maps/PetalburgWoods/scripts.pory"
+	waitmoncry
+# 565 "data/maps/PetalburgWoods/scripts.pory"
+	closemessage
+# 566 "data/maps/PetalburgWoods/scripts.pory"
+	release
+	end
+
+
+PetalburgWoods_Pokemon_Ledyba_Text_0:
+# 486 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Bzz buzz!$"
+
+PetalburgWoods_Pokemon_Floette_Text_0:
+# 497 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Aiee!$"
+
+PetalburgWoods_Pokemon_Shroomish_Text_0:
+# 508 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Mun mun...$"
+
+PetalburgWoods_Pokemon_Sentret_Text_0:
+# 519 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Chip chip!$"
+
+PetalburgWoods_Pokemon_Metapod_Text_0:
+# 530 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Dundun.$"
+
+PetalburgWoods_Pokemon_Nincada_Text_0:
+# 541 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Cheep cheep cheep!$"
+
+PetalburgWoods_Pokemon_Teddiursa_Text_0:
+# 552 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Raahhhh!$"
+
+PetalburgWoods_Pokemon_Aipom_Text_0:
+# 563 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Ooh ooh eeh!$"
