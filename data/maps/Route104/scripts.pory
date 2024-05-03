@@ -1357,3 +1357,39 @@ movement Route104_Movement_ZinniaExit
 	walk_up
 	walk_left * 8
 }
+
+script Route104_Pokemon_Crabrawler
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_CRABRAWLER, CRY_MODE_NORMAL)
+	msgbox(format("Chk chk chk!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script Route104_Pokemon_Lotad
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_LOTAD, CRY_MODE_NORMAL)
+	msgbox(format("Blub blub blub...!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script Route104_Pokemon_Pikachu
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_PIKACHU, CRY_MODE_NORMAL)
+	msgbox(format("Bzzzt!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}

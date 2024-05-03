@@ -178,12 +178,12 @@ RustboroCity_EventScript_Boy2::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_POKENAV, RustboroCity_EventScript_Boy2BrineyLeftTunnel
-	msgbox_mugshot RustboroCity_Text_MrBrineyWalksInTheTunnel, MSGBOX_DEFAULT, MUGSHOT_BOY2
+	msgbox_mugshot RustboroCity_Text_MrBrineyWalksInTheTunnel, MSGBOX_DEFAULT, MUGSHOT_JUGGLER
 	release
 	end
 
 RustboroCity_EventScript_Boy2BrineyLeftTunnel::
-	msgbox_mugshot RustboroCity_Text_MrBrineyLovesPeeko, MSGBOX_DEFAULT, MUGSHOT_BOY2
+	msgbox_mugshot RustboroCity_Text_MrBrineyLovesPeeko, MSGBOX_DEFAULT, MUGSHOT_JUGGLER
 	release
 	end
 
@@ -1299,3 +1299,86 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
 `
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+
+script RustboroCity_Pokemon_Bayleef
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_BAYLEEF, CRY_MODE_NORMAL)
+	msgbox(format("Baaahhh."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script RustboroCity_Pokemon_Lillipup
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_LILLIPUP, CRY_MODE_NORMAL)
+	msgbox(format("Arf arf!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script RustboroCity_Pokemon_Grimer
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_GRIMER, CRY_MODE_NORMAL)
+	msgbox(format("Grrrgle..."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script RustboroCity_Pokemon_Timburr
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_TIMBURR, CRY_MODE_NORMAL)
+	msgbox(format("Rakaka!"))
+	waitmoncry
+	closemessage
+	msgbox(format("There's a note attached!\N 'Need Trees Cut? Come To Our Shop!'"))
+	closemessage
+	release
+	end
+}
+script RustboroCity_Pokemon_Eevee
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_EEVEE, CRY_MODE_NORMAL)
+	msgbox(format("Broww!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script RustboroCity_Pokemon_Sandshrew
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SANDSHREW, CRY_MODE_NORMAL)
+	msgbox(format("Skk skk skk."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script RustboroCity_Pokemon_Cyndaquil
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
+	msgbox(format("Chh chh chh!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}

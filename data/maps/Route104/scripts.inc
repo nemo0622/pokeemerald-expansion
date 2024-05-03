@@ -2641,6 +2641,60 @@ Route104_Movement_ZinniaExit:
 	walk_left
 	step_end
 
+Route104_Pokemon_Crabrawler::
+# 1363 "data/maps/Route104/scripts.pory"
+	lock
+# 1364 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1365 "data/maps/Route104/scripts.pory"
+	playmoncry SPECIES_CRABRAWLER, CRY_MODE_NORMAL
+# 1366 "data/maps/Route104/scripts.pory"
+	msgbox Route104_Pokemon_Crabrawler_Text_0
+# 1367 "data/maps/Route104/scripts.pory"
+	waitmoncry
+# 1368 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1369 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+
+Route104_Pokemon_Lotad::
+# 1375 "data/maps/Route104/scripts.pory"
+	lock
+# 1376 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1377 "data/maps/Route104/scripts.pory"
+	playmoncry SPECIES_LOTAD, CRY_MODE_NORMAL
+# 1378 "data/maps/Route104/scripts.pory"
+	msgbox Route104_Pokemon_Lotad_Text_0
+# 1379 "data/maps/Route104/scripts.pory"
+	waitmoncry
+# 1380 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1381 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+
+Route104_Pokemon_Pikachu::
+# 1387 "data/maps/Route104/scripts.pory"
+	lock
+# 1388 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1389 "data/maps/Route104/scripts.pory"
+	playmoncry SPECIES_PIKACHU, CRY_MODE_NORMAL
+# 1390 "data/maps/Route104/scripts.pory"
+	msgbox Route104_Pokemon_Pikachu_Text_0
+# 1391 "data/maps/Route104/scripts.pory"
+	waitmoncry
+# 1392 "data/maps/Route104/scripts.pory"
+	closemessage
+# 1393 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+
 Route104_Pokemon_Sealeo_Text_0:
 # 1181 "data/maps/Route104/scripts.pory"
 	.string "Bwark bwark!$"
@@ -2709,3 +2763,15 @@ Route104_Zinnia_Text_2:
 	.string "a random kid.\l"
 	.string "Forget I said anything. If it is truly\l"
 	.string "fate, we'll meet again.$"
+
+Route104_Pokemon_Crabrawler_Text_0:
+# 1366 "data/maps/Route104/scripts.pory"
+	.string "Chk chk chk!$"
+
+Route104_Pokemon_Lotad_Text_0:
+# 1378 "data/maps/Route104/scripts.pory"
+	.string "Blub blub blub...!$"
+
+Route104_Pokemon_Pikachu_Text_0:
+# 1390 "data/maps/Route104/scripts.pory"
+	.string "Bzzzt!$"

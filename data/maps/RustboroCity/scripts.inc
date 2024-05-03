@@ -359,7 +359,7 @@ RustboroCity_EventScript_Boy2::
 # 180 "data/maps/RustboroCity/scripts.pory"
 	goto_if_set FLAG_RECEIVED_POKENAV, RustboroCity_EventScript_Boy2BrineyLeftTunnel
 # 181 "data/maps/RustboroCity/scripts.pory"
-	msgbox_mugshot RustboroCity_Text_MrBrineyWalksInTheTunnel, MSGBOX_DEFAULT, MUGSHOT_BOY2
+	msgbox_mugshot RustboroCity_Text_MrBrineyWalksInTheTunnel, MSGBOX_DEFAULT, MUGSHOT_JUGGLER
 # 182 "data/maps/RustboroCity/scripts.pory"
 	release
 # 183 "data/maps/RustboroCity/scripts.pory"
@@ -369,7 +369,7 @@ RustboroCity_EventScript_Boy2::
 # 185 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_Boy2BrineyLeftTunnel::
 # 186 "data/maps/RustboroCity/scripts.pory"
-	msgbox_mugshot RustboroCity_Text_MrBrineyLovesPeeko, MSGBOX_DEFAULT, MUGSHOT_BOY2
+	msgbox_mugshot RustboroCity_Text_MrBrineyLovesPeeko, MSGBOX_DEFAULT, MUGSHOT_JUGGLER
 # 187 "data/maps/RustboroCity/scripts.pory"
 	release
 # 188 "data/maps/RustboroCity/scripts.pory"
@@ -2598,3 +2598,166 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "Don't you think it'd be cool if you\n"
 # 1300 "data/maps/RustboroCity/scripts.pory"
 	.string "could beat two TRAINERS by yourself?$"
+
+RustboroCity_Pokemon_Bayleef::
+# 1308 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1309 "data/maps/RustboroCity/scripts.pory"
+	faceplayer
+# 1310 "data/maps/RustboroCity/scripts.pory"
+	playmoncry SPECIES_BAYLEEF, CRY_MODE_NORMAL
+# 1311 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_Pokemon_Bayleef_Text_0
+# 1312 "data/maps/RustboroCity/scripts.pory"
+	waitmoncry
+# 1313 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1314 "data/maps/RustboroCity/scripts.pory"
+	release
+	end
+
+
+RustboroCity_Pokemon_Lillipup::
+# 1319 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1320 "data/maps/RustboroCity/scripts.pory"
+	faceplayer
+# 1321 "data/maps/RustboroCity/scripts.pory"
+	playmoncry SPECIES_LILLIPUP, CRY_MODE_NORMAL
+# 1322 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_Pokemon_Lillipup_Text_0
+# 1323 "data/maps/RustboroCity/scripts.pory"
+	waitmoncry
+# 1324 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1325 "data/maps/RustboroCity/scripts.pory"
+	release
+	end
+
+
+RustboroCity_Pokemon_Grimer::
+# 1330 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1331 "data/maps/RustboroCity/scripts.pory"
+	faceplayer
+# 1332 "data/maps/RustboroCity/scripts.pory"
+	playmoncry SPECIES_GRIMER, CRY_MODE_NORMAL
+# 1333 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_Pokemon_Grimer_Text_0
+# 1334 "data/maps/RustboroCity/scripts.pory"
+	waitmoncry
+# 1335 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1336 "data/maps/RustboroCity/scripts.pory"
+	release
+	end
+
+
+RustboroCity_Pokemon_Timburr::
+# 1341 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1342 "data/maps/RustboroCity/scripts.pory"
+	faceplayer
+# 1343 "data/maps/RustboroCity/scripts.pory"
+	playmoncry SPECIES_TIMBURR, CRY_MODE_NORMAL
+# 1344 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_Pokemon_Timburr_Text_0
+# 1345 "data/maps/RustboroCity/scripts.pory"
+	waitmoncry
+# 1346 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1347 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_Pokemon_Timburr_Text_1
+# 1348 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1349 "data/maps/RustboroCity/scripts.pory"
+	release
+	end
+
+
+RustboroCity_Pokemon_Eevee::
+# 1354 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1355 "data/maps/RustboroCity/scripts.pory"
+	faceplayer
+# 1356 "data/maps/RustboroCity/scripts.pory"
+	playmoncry SPECIES_EEVEE, CRY_MODE_NORMAL
+# 1357 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_Pokemon_Eevee_Text_0
+# 1358 "data/maps/RustboroCity/scripts.pory"
+	waitmoncry
+# 1359 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1360 "data/maps/RustboroCity/scripts.pory"
+	release
+	end
+
+
+RustboroCity_Pokemon_Sandshrew::
+# 1365 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1366 "data/maps/RustboroCity/scripts.pory"
+	faceplayer
+# 1367 "data/maps/RustboroCity/scripts.pory"
+	playmoncry SPECIES_SANDSHREW, CRY_MODE_NORMAL
+# 1368 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_Pokemon_Sandshrew_Text_0
+# 1369 "data/maps/RustboroCity/scripts.pory"
+	waitmoncry
+# 1370 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1371 "data/maps/RustboroCity/scripts.pory"
+	release
+	end
+
+
+RustboroCity_Pokemon_Cyndaquil::
+# 1376 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1377 "data/maps/RustboroCity/scripts.pory"
+	faceplayer
+# 1378 "data/maps/RustboroCity/scripts.pory"
+	playmoncry SPECIES_CYNDAQUIL, CRY_MODE_NORMAL
+# 1379 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_Pokemon_Cyndaquil_Text_0
+# 1380 "data/maps/RustboroCity/scripts.pory"
+	waitmoncry
+# 1381 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1382 "data/maps/RustboroCity/scripts.pory"
+	release
+	end
+
+
+RustboroCity_Pokemon_Bayleef_Text_0:
+# 1311 "data/maps/RustboroCity/scripts.pory"
+	.string "Baaahhh.$"
+
+RustboroCity_Pokemon_Lillipup_Text_0:
+# 1322 "data/maps/RustboroCity/scripts.pory"
+	.string "Arf arf!$"
+
+RustboroCity_Pokemon_Grimer_Text_0:
+# 1333 "data/maps/RustboroCity/scripts.pory"
+	.string "Grrrgle...$"
+
+RustboroCity_Pokemon_Timburr_Text_0:
+# 1344 "data/maps/RustboroCity/scripts.pory"
+	.string "Rakaka!$"
+
+RustboroCity_Pokemon_Timburr_Text_1:
+# 1347 "data/maps/RustboroCity/scripts.pory"
+	.string "There's a note attached!\n"
+	.string "'Need Trees Cut? Come To Our Shop!'$"
+
+RustboroCity_Pokemon_Eevee_Text_0:
+# 1357 "data/maps/RustboroCity/scripts.pory"
+	.string "Broww!$"
+
+RustboroCity_Pokemon_Sandshrew_Text_0:
+# 1368 "data/maps/RustboroCity/scripts.pory"
+	.string "Skk skk skk.$"
+
+RustboroCity_Pokemon_Cyndaquil_Text_0:
+# 1379 "data/maps/RustboroCity/scripts.pory"
+	.string "Chh chh chh!$"
