@@ -97,3 +97,26 @@ Route104_Text_RegisteredDadInPokenav:
 	.string "Registered DAD NORMAN\n"
 	.string "in the POKéNAV.$"
 `
+
+script Route116_Pokemon_Finizen
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_FINIZEN, CRY_MODE_NORMAL)
+	msgbox(format("Kakakakaka!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route116_Pokemon_Tentacool
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_TENTACOOL, CRY_MODE_NORMAL)
+	msgbox(format("Blublublub..."))
+	waitmoncry
+	closemessage
+	release
+	end
+}

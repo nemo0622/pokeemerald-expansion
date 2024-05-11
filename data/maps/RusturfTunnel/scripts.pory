@@ -531,3 +531,15 @@ RusturfTunnel_Text_MikePostBattle:
 	.string "protect POKéMON, right?\l"
 	.string "There's a feel-good story!$"
 `
+
+script RusturfTunnel_Pokemon_Sandshrew
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SANDSHREW, CRY_MODE_NORMAL)
+	msgbox(format("Curr chh chh."))
+	waitmoncry
+	closemessage
+	release
+	end
+}

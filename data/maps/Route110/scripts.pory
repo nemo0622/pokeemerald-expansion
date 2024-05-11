@@ -994,3 +994,121 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "See you again, {PLAYER}{KUN}!$"
 
 `
+
+script Route110_Pokemon_Minun
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MINUN, CRY_MODE_NORMAL)
+	msgbox(format("Miii!"))
+	waitmoncry
+	closemessage
+	if(!flag(FLAG_ROUTE110_HONEY_FROM_PKMN))
+	{
+		msgbox(format("Minun is holding something out!"))
+		closemessage
+		giveitem(ITEM_HONEY, 3)
+		setflag(FLAG_ROUTE110_HONEY_FROM_PKMN)
+	}
+	release
+	end
+}
+script Route110_Pokemon_Mareep
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MAREEP, CRY_MODE_NORMAL)
+	msgbox(format("Bzz-aah!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route110_Pokemon_Feraligatr
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_FERALIGATR, CRY_MODE_NORMAL)
+	msgbox(format("Garrr!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route110_Pokemon_Meowth
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MEOWTH_ALOLAN, CRY_MODE_NORMAL)
+	msgbox(format("Broww!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route110_Pokemon_Lotad
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_LOTAD, CRY_MODE_NORMAL)
+	msgbox(format("Blubblubblub."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route110_Pokemon_Ledyba
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_LEDYBA, CRY_MODE_NORMAL)
+	msgbox(format("Bzz bz!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route110_Pokemon_Luvdisc
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_LUVDISC, CRY_MODE_NORMAL)
+	msgbox(format("Cheep cheep!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script Route110_ZinniaEvent
+{
+	lockall
+	applymovement(44, Route110_ZinniaWalkToBerries)
+	waitmovement(0)
+	msgbox_mugshot(format("Argh, here too?! All berries across the region are coming down with this... infection.\N I need someone to help me solve this. Someone strong."), MSGBOX_NPC, MUGSHOT_ZINNIA)
+	closemessage
+	applymovement(44, Route110_ZinniaWalksAway)
+	waitmovement(0)
+
+	removeobject(44)
+	setflag(FLAG_ROUTE110_ZINNIA_VANISHED)
+	setvar(VAR_ZINNIA_STORY_STATE, 3)
+	releaseall
+	end
+}
+movement Route110_ZinniaWalkToBerries
+{
+	walk_down * 5
+	walk_left * 3
+	emote_exclamation_mark
+	delay_16
+	walk_faster_left * 3
+	face_up
+	step_end
+}
+movement Route110_ZinniaWalksAway
+{
+	walk_faster_right * 6
+	walk_faster_up * 5
+	step_end
+}

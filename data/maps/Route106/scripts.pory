@@ -48,3 +48,37 @@ Route106_Text_TrainerTips:
 	.string "Press the A Button if you get a bite.$"
 
 `
+
+script Route106_Pokemon_Horsea
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_HORSEA, CRY_MODE_NORMAL)
+	msgbox(format("Blublublub!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route106_Pokemon_Psyduck
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_PSYDUCK, CRY_MODE_NORMAL)
+	msgbox(format("Qwaak!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route106_Pokemon_Spheal
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SPHEAL, CRY_MODE_NORMAL)
+	msgbox(format("Clap clap!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}

@@ -2460,7 +2460,7 @@ Route104_LittleGirlOnBeach_2:
 # 1246 "data/maps/Route104/scripts.pory"
 	closemessage
 # 1247 "data/maps/Route104/scripts.pory"
-	giveitem ITEM_HONEY
+	giveitem ITEM_HONEY, 3
 # 1248 "data/maps/Route104/scripts.pory"
 	setflag FLAG_ROUTE104_HONEY_FROM_GIRL
 	goto Route104_LittleGirlOnBeach_1

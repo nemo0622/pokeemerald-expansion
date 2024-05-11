@@ -944,3 +944,91 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "No TRAINER can afford to be without\n"
 # 473 "data/maps/Route116/scripts.pory"
 	.string "a BAG of their own.$"
+
+Route116_Pokemon_Caterpie::
+# 479 "data/maps/Route116/scripts.pory"
+	lock
+# 480 "data/maps/Route116/scripts.pory"
+	faceplayer
+# 481 "data/maps/Route116/scripts.pory"
+	playmoncry SPECIES_CATERPIE, CRY_MODE_NORMAL
+# 482 "data/maps/Route116/scripts.pory"
+	msgbox Route116_Pokemon_Caterpie_Text_0
+# 483 "data/maps/Route116/scripts.pory"
+	waitmoncry
+# 484 "data/maps/Route116/scripts.pory"
+	closemessage
+# 485 "data/maps/Route116/scripts.pory"
+	release
+	end
+
+
+Route116_Pokemon_Nincada::
+# 490 "data/maps/Route116/scripts.pory"
+	lock
+# 491 "data/maps/Route116/scripts.pory"
+	faceplayer
+# 492 "data/maps/Route116/scripts.pory"
+	playmoncry SPECIES_NINCADA, CRY_MODE_NORMAL
+# 493 "data/maps/Route116/scripts.pory"
+	msgbox Route116_Pokemon_Nincada_Text_0
+# 494 "data/maps/Route116/scripts.pory"
+	waitmoncry
+# 495 "data/maps/Route116/scripts.pory"
+	closemessage
+# 496 "data/maps/Route116/scripts.pory"
+	release
+	end
+
+
+Route116_Pokemon_Fomantis::
+# 501 "data/maps/Route116/scripts.pory"
+	lock
+# 502 "data/maps/Route116/scripts.pory"
+	faceplayer
+# 503 "data/maps/Route116/scripts.pory"
+	playmoncry SPECIES_FOMANTIS, CRY_MODE_NORMAL
+# 504 "data/maps/Route116/scripts.pory"
+	msgbox Route116_Pokemon_Fomantis_Text_0
+# 505 "data/maps/Route116/scripts.pory"
+	waitmoncry
+# 506 "data/maps/Route116/scripts.pory"
+	closemessage
+# 507 "data/maps/Route116/scripts.pory"
+	release
+	end
+
+
+Route116_Pokemon_Mudbray::
+# 512 "data/maps/Route116/scripts.pory"
+	lock
+# 513 "data/maps/Route116/scripts.pory"
+	faceplayer
+# 514 "data/maps/Route116/scripts.pory"
+	playmoncry SPECIES_MUDBRAY, CRY_MODE_NORMAL
+# 515 "data/maps/Route116/scripts.pory"
+	msgbox Route116_Pokemon_Mudbray_Text_0
+# 516 "data/maps/Route116/scripts.pory"
+	waitmoncry
+# 517 "data/maps/Route116/scripts.pory"
+	closemessage
+# 518 "data/maps/Route116/scripts.pory"
+	release
+	end
+
+
+Route116_Pokemon_Caterpie_Text_0:
+# 482 "data/maps/Route116/scripts.pory"
+	.string "De-dlee.$"
+
+Route116_Pokemon_Nincada_Text_0:
+# 493 "data/maps/Route116/scripts.pory"
+	.string "Chee chee chee!$"
+
+Route116_Pokemon_Fomantis_Text_0:
+# 504 "data/maps/Route116/scripts.pory"
+	.string "Squeeak!$"
+
+Route116_Pokemon_Mudbray_Text_0:
+# 515 "data/maps/Route116/scripts.pory"
+	.string "Braaahh.$"

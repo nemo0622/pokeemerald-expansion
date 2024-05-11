@@ -145,3 +145,50 @@ Route115_Text_MeteorFallsSign:
 	.string "FALLARBOR TOWN THROUGH HERE$"
 
 `
+
+// Pokémon Shrub
+script Route115_PokemonShrub
+{
+	lockall
+	checkitem(ITEM_HONEY)
+	if(var(VAR_RESULT) == TRUE)
+	{
+		msgbox(format("Use Honey on the Shrub?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == 0) // Player says NO
+		{
+			closemessage
+			releaseall
+			end
+		}
+		else // Player says YES
+		{
+			closemessage
+			removeitem(ITEM_HONEY) // use 1 Honey
+			msgbox(format("{PLAYER} held the Honey to the shrub..."))
+			delay(10)
+
+			msgbox(format("A wild Pokémon leapt out!"))
+			closemessage
+
+			// Generate a random wild encounter, sets as VAR_RESULT
+			randomelement(SPECIES_FOMANTIS, SPECIES_POLIWAG, SPECIES_CETODDLE, SPECIES_SWINUB, SPECIES_SUNKERN, SPECIES_WOOPER_PALDEAN, SPECIES_WIMPOD, SPECIES_CRABRAWLER)
+			waitse
+			playmoncry(VAR_RESULT, CRY_MODE_ENCOUNTER)
+			delay(40)
+			waitmoncry
+
+			setwildbattle(VAR_RESULT, 10)
+			dowildbattle
+
+			releaseall
+			end
+		}
+	}
+	else
+	{
+		msgbox(format("You have no Honey to lure Pokémon!"))
+		closemessage
+	}
+	releaseall
+	end
+}

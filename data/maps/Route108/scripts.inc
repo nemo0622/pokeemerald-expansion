@@ -96,3 +96,47 @@ Route108_EventScript_CoryRematch::
 	msgbox_mugshot Route108_Text_CoryRematchPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SAILOR
 # 49 "data/maps/Route108/scripts.pory"
 	end
+
+Route108_Pokemon_Gyarados::
+# 55 "data/maps/Route108/scripts.pory"
+	lock
+# 56 "data/maps/Route108/scripts.pory"
+	faceplayer
+# 57 "data/maps/Route108/scripts.pory"
+	playmoncry SPECIES_GYARADOS, CRY_MODE_NORMAL
+# 58 "data/maps/Route108/scripts.pory"
+	msgbox Route108_Pokemon_Gyarados_Text_0
+# 59 "data/maps/Route108/scripts.pory"
+	waitmoncry
+# 60 "data/maps/Route108/scripts.pory"
+	closemessage
+# 61 "data/maps/Route108/scripts.pory"
+	release
+	end
+
+
+Route108_Pokemon_Noibat::
+# 66 "data/maps/Route108/scripts.pory"
+	lock
+# 67 "data/maps/Route108/scripts.pory"
+	faceplayer
+# 68 "data/maps/Route108/scripts.pory"
+	playmoncry SPECIES_NOIBAT, CRY_MODE_NORMAL
+# 69 "data/maps/Route108/scripts.pory"
+	msgbox Route108_Pokemon_Noibat_Text_0
+# 70 "data/maps/Route108/scripts.pory"
+	waitmoncry
+# 71 "data/maps/Route108/scripts.pory"
+	closemessage
+# 72 "data/maps/Route108/scripts.pory"
+	release
+	end
+
+
+Route108_Pokemon_Gyarados_Text_0:
+# 58 "data/maps/Route108/scripts.pory"
+	.string "Grrrr...!$"
+
+Route108_Pokemon_Noibat_Text_0:
+# 69 "data/maps/Route108/scripts.pory"
+	.string "Raah!$"

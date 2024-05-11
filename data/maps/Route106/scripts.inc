@@ -94,3 +94,69 @@ Route106_Text_TrainerTips:
 	.string "Advice on catching POKéMON with a ROD:\n"
 # 48 "data/maps/Route106/scripts.pory"
 	.string "Press the A Button if you get a bite.$"
+
+Route106_Pokemon_Horsea::
+# 54 "data/maps/Route106/scripts.pory"
+	lock
+# 55 "data/maps/Route106/scripts.pory"
+	faceplayer
+# 56 "data/maps/Route106/scripts.pory"
+	playmoncry SPECIES_HORSEA, CRY_MODE_NORMAL
+# 57 "data/maps/Route106/scripts.pory"
+	msgbox Route106_Pokemon_Horsea_Text_0
+# 58 "data/maps/Route106/scripts.pory"
+	waitmoncry
+# 59 "data/maps/Route106/scripts.pory"
+	closemessage
+# 60 "data/maps/Route106/scripts.pory"
+	release
+	end
+
+
+Route106_Pokemon_Psyduck::
+# 65 "data/maps/Route106/scripts.pory"
+	lock
+# 66 "data/maps/Route106/scripts.pory"
+	faceplayer
+# 67 "data/maps/Route106/scripts.pory"
+	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
+# 68 "data/maps/Route106/scripts.pory"
+	msgbox Route106_Pokemon_Psyduck_Text_0
+# 69 "data/maps/Route106/scripts.pory"
+	waitmoncry
+# 70 "data/maps/Route106/scripts.pory"
+	closemessage
+# 71 "data/maps/Route106/scripts.pory"
+	release
+	end
+
+
+Route106_Pokemon_Spheal::
+# 76 "data/maps/Route106/scripts.pory"
+	lock
+# 77 "data/maps/Route106/scripts.pory"
+	faceplayer
+# 78 "data/maps/Route106/scripts.pory"
+	playmoncry SPECIES_SPHEAL, CRY_MODE_NORMAL
+# 79 "data/maps/Route106/scripts.pory"
+	msgbox Route106_Pokemon_Spheal_Text_0
+# 80 "data/maps/Route106/scripts.pory"
+	waitmoncry
+# 81 "data/maps/Route106/scripts.pory"
+	closemessage
+# 82 "data/maps/Route106/scripts.pory"
+	release
+	end
+
+
+Route106_Pokemon_Horsea_Text_0:
+# 57 "data/maps/Route106/scripts.pory"
+	.string "Blublublub!$"
+
+Route106_Pokemon_Psyduck_Text_0:
+# 68 "data/maps/Route106/scripts.pory"
+	.string "Qwaak!$"
+
+Route106_Pokemon_Spheal_Text_0:
+# 79 "data/maps/Route106/scripts.pory"
+	.string "Clap clap!$"

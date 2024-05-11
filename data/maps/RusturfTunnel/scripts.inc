@@ -1062,3 +1062,25 @@ RusturfTunnel_Text_MikePostBattle:
 	.string "protect POKéMON, right?\l"
 # 532 "data/maps/RusturfTunnel/scripts.pory"
 	.string "There's a feel-good story!$"
+
+RusturfTunnel_Pokemon_Sandshrew::
+# 537 "data/maps/RusturfTunnel/scripts.pory"
+	lock
+# 538 "data/maps/RusturfTunnel/scripts.pory"
+	faceplayer
+# 539 "data/maps/RusturfTunnel/scripts.pory"
+	playmoncry SPECIES_SANDSHREW, CRY_MODE_NORMAL
+# 540 "data/maps/RusturfTunnel/scripts.pory"
+	msgbox RusturfTunnel_Pokemon_Sandshrew_Text_0
+# 541 "data/maps/RusturfTunnel/scripts.pory"
+	waitmoncry
+# 542 "data/maps/RusturfTunnel/scripts.pory"
+	closemessage
+# 543 "data/maps/RusturfTunnel/scripts.pory"
+	release
+	end
+
+
+RusturfTunnel_Pokemon_Sandshrew_Text_0:
+# 540 "data/maps/RusturfTunnel/scripts.pory"
+	.string "Curr chh chh.$"

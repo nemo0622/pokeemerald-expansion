@@ -1128,3 +1128,91 @@ Route109_Text_TrainerTipsSign:
 	.string "POKéMON raised by TRAINERS are said\n"
 # 565 "data/maps/Route109/scripts.pory"
 	.string "to grow stronger than wild POKéMON.$"
+
+Route109_Pokemon_Carvanha::
+# 570 "data/maps/Route109/scripts.pory"
+	lock
+# 571 "data/maps/Route109/scripts.pory"
+	faceplayer
+# 572 "data/maps/Route109/scripts.pory"
+	playmoncry SPECIES_CARVANHA, CRY_MODE_NORMAL
+# 573 "data/maps/Route109/scripts.pory"
+	msgbox Route109_Pokemon_Carvanha_Text_0
+# 574 "data/maps/Route109/scripts.pory"
+	waitmoncry
+# 575 "data/maps/Route109/scripts.pory"
+	closemessage
+# 576 "data/maps/Route109/scripts.pory"
+	release
+	end
+
+
+Route109_Pokemon_Shellder::
+# 581 "data/maps/Route109/scripts.pory"
+	lock
+# 582 "data/maps/Route109/scripts.pory"
+	faceplayer
+# 583 "data/maps/Route109/scripts.pory"
+	playmoncry SPECIES_SHELLDER, CRY_MODE_NORMAL
+# 584 "data/maps/Route109/scripts.pory"
+	msgbox Route109_Pokemon_Shellder_Text_0
+# 585 "data/maps/Route109/scripts.pory"
+	waitmoncry
+# 586 "data/maps/Route109/scripts.pory"
+	closemessage
+# 587 "data/maps/Route109/scripts.pory"
+	release
+	end
+
+
+Route109_Pokemon_Sandygast::
+# 592 "data/maps/Route109/scripts.pory"
+	lock
+# 593 "data/maps/Route109/scripts.pory"
+	faceplayer
+# 594 "data/maps/Route109/scripts.pory"
+	playmoncry SPECIES_SANDYGAST, CRY_MODE_NORMAL
+# 595 "data/maps/Route109/scripts.pory"
+	msgbox Route109_Pokemon_Sandygast_Text_0
+# 596 "data/maps/Route109/scripts.pory"
+	waitmoncry
+# 597 "data/maps/Route109/scripts.pory"
+	closemessage
+# 598 "data/maps/Route109/scripts.pory"
+	release
+	end
+
+
+Route109_Pokemon_Totodile::
+# 603 "data/maps/Route109/scripts.pory"
+	lock
+# 604 "data/maps/Route109/scripts.pory"
+	faceplayer
+# 605 "data/maps/Route109/scripts.pory"
+	playmoncry SPECIES_TOTODILE, CRY_MODE_NORMAL
+# 606 "data/maps/Route109/scripts.pory"
+	msgbox Route109_Pokemon_Totodile_Text_0
+# 607 "data/maps/Route109/scripts.pory"
+	waitmoncry
+# 608 "data/maps/Route109/scripts.pory"
+	closemessage
+# 609 "data/maps/Route109/scripts.pory"
+	release
+	end
+
+
+Route109_Pokemon_Carvanha_Text_0:
+# 573 "data/maps/Route109/scripts.pory"
+	.string "Chk chk... hisss!$"
+
+Route109_Pokemon_Shellder_Text_0:
+# 584 "data/maps/Route109/scripts.pory"
+	.string "Tk tk tk.$"
+
+Route109_Pokemon_Sandygast_Text_0:
+# 595 "data/maps/Route109/scripts.pory"
+	.string "Auuu...$"
+
+Route109_Pokemon_Totodile_Text_0:
+# 606 "data/maps/Route109/scripts.pory"
+	.string "Cha chaah!$"

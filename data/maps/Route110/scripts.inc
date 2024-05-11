@@ -1986,3 +1986,265 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "Well, I had better get going.\n"
 # 994 "data/maps/Route110/scripts.pory"
 	.string "See you again, {PLAYER}{KUN}!$"
+
+Route110_Pokemon_Minun::
+# 1000 "data/maps/Route110/scripts.pory"
+	lock
+# 1001 "data/maps/Route110/scripts.pory"
+	faceplayer
+# 1002 "data/maps/Route110/scripts.pory"
+	playmoncry SPECIES_MINUN, CRY_MODE_NORMAL
+# 1003 "data/maps/Route110/scripts.pory"
+	msgbox Route110_Pokemon_Minun_Text_0
+# 1004 "data/maps/Route110/scripts.pory"
+	waitmoncry
+# 1005 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1006 "data/maps/Route110/scripts.pory"
+	goto_if_unset FLAG_ROUTE110_HONEY_FROM_PKMN, Route110_Pokemon_Minun_2
+Route110_Pokemon_Minun_1:
+# 1013 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+Route110_Pokemon_Minun_2:
+# 1008 "data/maps/Route110/scripts.pory"
+	msgbox Route110_Pokemon_Minun_Text_1
+# 1009 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1010 "data/maps/Route110/scripts.pory"
+	giveitem ITEM_HONEY, 3
+# 1011 "data/maps/Route110/scripts.pory"
+	setflag FLAG_ROUTE110_HONEY_FROM_PKMN
+	goto Route110_Pokemon_Minun_1
+
+
+Route110_Pokemon_Mareep::
+# 1018 "data/maps/Route110/scripts.pory"
+	lock
+# 1019 "data/maps/Route110/scripts.pory"
+	faceplayer
+# 1020 "data/maps/Route110/scripts.pory"
+	playmoncry SPECIES_MAREEP, CRY_MODE_NORMAL
+# 1021 "data/maps/Route110/scripts.pory"
+	msgbox Route110_Pokemon_Mareep_Text_0
+# 1022 "data/maps/Route110/scripts.pory"
+	waitmoncry
+# 1023 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1024 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+
+Route110_Pokemon_Feraligatr::
+# 1029 "data/maps/Route110/scripts.pory"
+	lock
+# 1030 "data/maps/Route110/scripts.pory"
+	faceplayer
+# 1031 "data/maps/Route110/scripts.pory"
+	playmoncry SPECIES_FERALIGATR, CRY_MODE_NORMAL
+# 1032 "data/maps/Route110/scripts.pory"
+	msgbox Route110_Pokemon_Feraligatr_Text_0
+# 1033 "data/maps/Route110/scripts.pory"
+	waitmoncry
+# 1034 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1035 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+
+Route110_Pokemon_Meowth::
+# 1040 "data/maps/Route110/scripts.pory"
+	lock
+# 1041 "data/maps/Route110/scripts.pory"
+	faceplayer
+# 1042 "data/maps/Route110/scripts.pory"
+	playmoncry SPECIES_MEOWTH_ALOLAN, CRY_MODE_NORMAL
+# 1043 "data/maps/Route110/scripts.pory"
+	msgbox Route110_Pokemon_Meowth_Text_0
+# 1044 "data/maps/Route110/scripts.pory"
+	waitmoncry
+# 1045 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1046 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+
+Route110_Pokemon_Lotad::
+# 1051 "data/maps/Route110/scripts.pory"
+	lock
+# 1052 "data/maps/Route110/scripts.pory"
+	faceplayer
+# 1053 "data/maps/Route110/scripts.pory"
+	playmoncry SPECIES_LOTAD, CRY_MODE_NORMAL
+# 1054 "data/maps/Route110/scripts.pory"
+	msgbox Route110_Pokemon_Lotad_Text_0
+# 1055 "data/maps/Route110/scripts.pory"
+	waitmoncry
+# 1056 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1057 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+
+Route110_Pokemon_Ledyba::
+# 1062 "data/maps/Route110/scripts.pory"
+	lock
+# 1063 "data/maps/Route110/scripts.pory"
+	faceplayer
+# 1064 "data/maps/Route110/scripts.pory"
+	playmoncry SPECIES_LEDYBA, CRY_MODE_NORMAL
+# 1065 "data/maps/Route110/scripts.pory"
+	msgbox Route110_Pokemon_Ledyba_Text_0
+# 1066 "data/maps/Route110/scripts.pory"
+	waitmoncry
+# 1067 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1068 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+
+Route110_Pokemon_Luvdisc::
+# 1073 "data/maps/Route110/scripts.pory"
+	lock
+# 1074 "data/maps/Route110/scripts.pory"
+	faceplayer
+# 1075 "data/maps/Route110/scripts.pory"
+	playmoncry SPECIES_LUVDISC, CRY_MODE_NORMAL
+# 1076 "data/maps/Route110/scripts.pory"
+	msgbox Route110_Pokemon_Luvdisc_Text_0
+# 1077 "data/maps/Route110/scripts.pory"
+	waitmoncry
+# 1078 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1079 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+
+Route110_ZinniaEvent::
+# 1085 "data/maps/Route110/scripts.pory"
+	lockall
+# 1086 "data/maps/Route110/scripts.pory"
+	applymovement 44, Route110_ZinniaWalkToBerries
+# 1087 "data/maps/Route110/scripts.pory"
+	waitmovement 0
+# 1088 "data/maps/Route110/scripts.pory"
+	msgbox_mugshot Route110_ZinniaEvent_Text_0, MSGBOX_NPC, MUGSHOT_ZINNIA
+# 1089 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1090 "data/maps/Route110/scripts.pory"
+	applymovement 44, Route110_ZinniaWalksAway
+# 1091 "data/maps/Route110/scripts.pory"
+	waitmovement 0
+# 1093 "data/maps/Route110/scripts.pory"
+	removeobject 44
+# 1094 "data/maps/Route110/scripts.pory"
+	setflag FLAG_ROUTE110_ZINNIA_VANISHED
+# 1095 "data/maps/Route110/scripts.pory"
+	setvar VAR_ZINNIA_STORY_STATE, 3
+# 1096 "data/maps/Route110/scripts.pory"
+	releaseall
+	end
+
+
+# 1099 "data/maps/Route110/scripts.pory"
+Route110_ZinniaWalkToBerries:
+# 1101 "data/maps/Route110/scripts.pory"
+	walk_down
+# 1101 "data/maps/Route110/scripts.pory"
+	walk_down
+# 1101 "data/maps/Route110/scripts.pory"
+	walk_down
+# 1101 "data/maps/Route110/scripts.pory"
+	walk_down
+# 1101 "data/maps/Route110/scripts.pory"
+	walk_down
+# 1102 "data/maps/Route110/scripts.pory"
+	walk_left
+# 1102 "data/maps/Route110/scripts.pory"
+	walk_left
+# 1102 "data/maps/Route110/scripts.pory"
+	walk_left
+# 1103 "data/maps/Route110/scripts.pory"
+	emote_exclamation_mark
+# 1104 "data/maps/Route110/scripts.pory"
+	delay_16
+# 1105 "data/maps/Route110/scripts.pory"
+	walk_faster_left
+# 1106 "data/maps/Route110/scripts.pory"
+	face_up
+# 1107 "data/maps/Route110/scripts.pory"
+	step_end
+
+# 1109 "data/maps/Route110/scripts.pory"
+Route110_ZinniaWalksAway:
+# 1111 "data/maps/Route110/scripts.pory"
+	walk_faster_right
+# 1111 "data/maps/Route110/scripts.pory"
+	walk_faster_right
+# 1111 "data/maps/Route110/scripts.pory"
+	walk_faster_right
+# 1111 "data/maps/Route110/scripts.pory"
+	walk_faster_right
+# 1111 "data/maps/Route110/scripts.pory"
+	walk_faster_right
+# 1111 "data/maps/Route110/scripts.pory"
+	walk_faster_right
+# 1112 "data/maps/Route110/scripts.pory"
+	walk_faster_up
+# 1112 "data/maps/Route110/scripts.pory"
+	walk_faster_up
+# 1112 "data/maps/Route110/scripts.pory"
+	walk_faster_up
+# 1112 "data/maps/Route110/scripts.pory"
+	walk_faster_up
+# 1112 "data/maps/Route110/scripts.pory"
+	walk_faster_up
+# 1113 "data/maps/Route110/scripts.pory"
+	step_end
+
+Route110_Pokemon_Minun_Text_0:
+# 1003 "data/maps/Route110/scripts.pory"
+	.string "Miii!$"
+
+Route110_Pokemon_Minun_Text_1:
+# 1008 "data/maps/Route110/scripts.pory"
+	.string "Minun is holding something out!$"
+
+Route110_Pokemon_Mareep_Text_0:
+# 1021 "data/maps/Route110/scripts.pory"
+	.string "Bzz-aah!$"
+
+Route110_Pokemon_Feraligatr_Text_0:
+# 1032 "data/maps/Route110/scripts.pory"
+	.string "Garrr!$"
+
+Route110_Pokemon_Meowth_Text_0:
+# 1043 "data/maps/Route110/scripts.pory"
+	.string "Broww!$"
+
+Route110_Pokemon_Lotad_Text_0:
+# 1054 "data/maps/Route110/scripts.pory"
+	.string "Blubblubblub.$"
+
+Route110_Pokemon_Ledyba_Text_0:
+# 1065 "data/maps/Route110/scripts.pory"
+	.string "Bzz bz!$"
+
+Route110_Pokemon_Luvdisc_Text_0:
+# 1076 "data/maps/Route110/scripts.pory"
+	.string "Cheep cheep!$"
+
+Route110_ZinniaEvent_Text_0:
+# 1088 "data/maps/Route110/scripts.pory"
+	.string "Argh, here too?! All berries across the\n"
+	.string "region are coming down with this...\l"
+	.string "infection.\l"
+	.string "I need someone to help me solve this.\l"
+	.string "Someone strong.$"

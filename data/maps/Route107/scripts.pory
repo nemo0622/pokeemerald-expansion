@@ -54,3 +54,26 @@ Route107_EventScript_Camron::
 	end
 
 `
+
+script Route107_Pokemon_Finizen
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_FINIZEN, CRY_MODE_NORMAL)
+	msgbox(format("Kahakaka!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route107_Pokemon_Tentacool
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_TENTACOOL, CRY_MODE_NORMAL)
+	msgbox(format("Blubblurb!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}

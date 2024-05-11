@@ -24,7 +24,7 @@ MauvilleCity_EventScript_MoveWattsonBackToGym::
 	return
 
 MauvilleCity_EventScript_Boy::
-	msgbox_mugshot MauvilleCity_Text_NurseHurtMonBackToHealth, MSGBOX_NPC, MUGSHOT_BOY3
+	msgbox_mugshot MauvilleCity_Text_NurseHurtMonBackToHealth, MSGBOX_NPC, MUGSHOT_JUGGLER
 	end
 
 MauvilleCity_EventScript_Maniac::
@@ -668,3 +668,83 @@ MauvilleCity_Text_ExplainTV:
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
 `
+
+script MauvilleCity_Pokemon_Tinkatuff
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_TINKATUFF, CRY_MODE_NORMAL)
+	msgbox(format("Di daah!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script MauvilleCity_Pokemon_Tinkaton
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_TINKATON, CRY_MODE_NORMAL)
+	msgbox(format("Gra-da-da!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script MauvilleCity_Pokemon_Goodra
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_GOODRA_HISUIAN, CRY_MODE_NORMAL)
+	msgbox(format("Eeelee!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script MauvilleCity_Pokemon_Magnemite
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MAGNEMITE, CRY_MODE_NORMAL)
+	msgbox(format("Bzzt-t."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script MauvilleCity_Pokemon_Swasbuck_Autumn
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SAWSBUCK, CRY_MODE_NORMAL)
+	msgbox(format("Ah auuuh."))
+	waitmoncry
+	closemessage
+	msgbox(format("This Sawsbuck is radiating heat!"))
+	closemessage
+	release
+	end
+}
+script MauvilleCity_Pokemon_Swasbuck_Winter
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SAWSBUCK, CRY_MODE_NORMAL)
+	msgbox(format("Ah auuuh."))
+	waitmoncry
+	closemessage
+	msgbox(format("This Sawsbuck is super cold!"))
+	closemessage
+	release
+	end
+}
+script MauvilleCity_EventScript_SawsbuckTrainer
+{
+	lock
+	faceplayer
+	msgbox_mugshot(format("Each form of Sawsbuck in Hoenn has different secondary types! The Autumn form is Fire type, and the Winter form is Ice."), MSGBOX_NPC, MUGSHOT_COOLTRAINER_F)
+	closemessage
+	release
+	end
+}

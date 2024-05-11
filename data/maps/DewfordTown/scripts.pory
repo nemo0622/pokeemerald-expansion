@@ -810,3 +810,37 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
 `
+
+script DewfordTown_Pokemon_Feraligatr
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_FERALIGATR, CRY_MODE_NORMAL)
+	msgbox(format("Grrrr...!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script DewfordTown_Pokemon_Toucannon
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_TOUCANNON, CRY_MODE_NORMAL)
+	msgbox(format("Kraah!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script DewfordTown_Pokemon_Comfey
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_COMFEY, CRY_MODE_NORMAL)
+	msgbox(format("Hei eiii..."))
+	waitmoncry
+	closemessage
+	release
+	end
+}

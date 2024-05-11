@@ -49,3 +49,26 @@ Route108_EventScript_CoryRematch::
 	end
 
 `
+
+script Route108_Pokemon_Gyarados
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_GYARADOS, CRY_MODE_NORMAL)
+	msgbox(format("Grrrr...!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route108_Pokemon_Noibat
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_NOIBAT, CRY_MODE_NORMAL)
+	msgbox(format("Raah!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}

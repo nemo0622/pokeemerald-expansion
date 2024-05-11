@@ -1385,3 +1385,48 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
 `
+
+script SlateportCity_Pokemon_Wingull
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_WINGULL, CRY_MODE_NORMAL)
+	msgbox(format("Eek Craaahhh!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script SlateportCity_Pokemon_Mankey
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MANKEY, CRY_MODE_NORMAL)
+	msgbox(format("Ooh ooh ah!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script SlateportCity_Pokemon_Marill
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MARILL, CRY_MODE_NORMAL)
+	msgbox(format("Sniff snuff."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script SlateportCity_Pokemon_Poliwhirl
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_POLIWHIRL, CRY_MODE_NORMAL)
+	msgbox(format("Rib bib."))
+	waitmoncry
+	closemessage
+	release
+	end
+}

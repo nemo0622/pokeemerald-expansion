@@ -51,7 +51,7 @@ MauvilleCity_EventScript_MoveWattsonBackToGym::
 # 26 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_Boy::
 # 27 "data/maps/MauvilleCity/scripts.pory"
-	msgbox_mugshot MauvilleCity_Text_NurseHurtMonBackToHealth, MSGBOX_NPC, MUGSHOT_BOY3
+	msgbox_mugshot MauvilleCity_Text_NurseHurtMonBackToHealth, MSGBOX_NPC, MUGSHOT_JUGGLER
 # 28 "data/maps/MauvilleCity/scripts.pory"
 	end
 # 29 "data/maps/MauvilleCity/scripts.pory"
@@ -1336,3 +1336,168 @@ MauvilleCity_Text_ExplainTV:
 MauvilleCity_Text_BeenCheckingOutTV:
 # 669 "data/maps/MauvilleCity/scripts.pory"
 	.string "Hi, have you been checking out TVs?$"
+
+MauvilleCity_Pokemon_Tinkatuff::
+# 674 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 675 "data/maps/MauvilleCity/scripts.pory"
+	faceplayer
+# 676 "data/maps/MauvilleCity/scripts.pory"
+	playmoncry SPECIES_TINKATUFF, CRY_MODE_NORMAL
+# 677 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Pokemon_Tinkatuff_Text_0
+# 678 "data/maps/MauvilleCity/scripts.pory"
+	waitmoncry
+# 679 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 680 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_Pokemon_Tinkaton::
+# 685 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 686 "data/maps/MauvilleCity/scripts.pory"
+	faceplayer
+# 687 "data/maps/MauvilleCity/scripts.pory"
+	playmoncry SPECIES_TINKATON, CRY_MODE_NORMAL
+# 688 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Pokemon_Tinkaton_Text_0
+# 689 "data/maps/MauvilleCity/scripts.pory"
+	waitmoncry
+# 690 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 691 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_Pokemon_Goodra::
+# 696 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 697 "data/maps/MauvilleCity/scripts.pory"
+	faceplayer
+# 698 "data/maps/MauvilleCity/scripts.pory"
+	playmoncry SPECIES_GOODRA_HISUIAN, CRY_MODE_NORMAL
+# 699 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Pokemon_Goodra_Text_0
+# 700 "data/maps/MauvilleCity/scripts.pory"
+	waitmoncry
+# 701 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 702 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_Pokemon_Magnemite::
+# 707 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 708 "data/maps/MauvilleCity/scripts.pory"
+	faceplayer
+# 709 "data/maps/MauvilleCity/scripts.pory"
+	playmoncry SPECIES_MAGNEMITE, CRY_MODE_NORMAL
+# 710 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Pokemon_Magnemite_Text_0
+# 711 "data/maps/MauvilleCity/scripts.pory"
+	waitmoncry
+# 712 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 713 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_Pokemon_Swasbuck_Autumn::
+# 718 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 719 "data/maps/MauvilleCity/scripts.pory"
+	faceplayer
+# 720 "data/maps/MauvilleCity/scripts.pory"
+	playmoncry SPECIES_SAWSBUCK, CRY_MODE_NORMAL
+# 721 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Pokemon_Swasbuck_Autumn_Text_0
+# 722 "data/maps/MauvilleCity/scripts.pory"
+	waitmoncry
+# 723 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 724 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Pokemon_Swasbuck_Autumn_Text_1
+# 725 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 726 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_Pokemon_Swasbuck_Winter::
+# 731 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 732 "data/maps/MauvilleCity/scripts.pory"
+	faceplayer
+# 733 "data/maps/MauvilleCity/scripts.pory"
+	playmoncry SPECIES_SAWSBUCK, CRY_MODE_NORMAL
+# 734 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Pokemon_Swasbuck_Autumn_Text_0
+# 735 "data/maps/MauvilleCity/scripts.pory"
+	waitmoncry
+# 736 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 737 "data/maps/MauvilleCity/scripts.pory"
+	msgbox MauvilleCity_Pokemon_Swasbuck_Winter_Text_0
+# 738 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 739 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_EventScript_SawsbuckTrainer::
+# 744 "data/maps/MauvilleCity/scripts.pory"
+	lock
+# 745 "data/maps/MauvilleCity/scripts.pory"
+	faceplayer
+# 746 "data/maps/MauvilleCity/scripts.pory"
+	msgbox_mugshot MauvilleCity_EventScript_SawsbuckTrainer_Text_0, MSGBOX_NPC, MUGSHOT_COOLTRAINER_F
+# 747 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 748 "data/maps/MauvilleCity/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_Pokemon_Tinkatuff_Text_0:
+# 677 "data/maps/MauvilleCity/scripts.pory"
+	.string "Di daah!$"
+
+MauvilleCity_Pokemon_Tinkaton_Text_0:
+# 688 "data/maps/MauvilleCity/scripts.pory"
+	.string "Gra-da-da!$"
+
+MauvilleCity_Pokemon_Goodra_Text_0:
+# 699 "data/maps/MauvilleCity/scripts.pory"
+	.string "Eeelee!$"
+
+MauvilleCity_Pokemon_Magnemite_Text_0:
+# 710 "data/maps/MauvilleCity/scripts.pory"
+	.string "Bzzt-t.$"
+
+MauvilleCity_Pokemon_Swasbuck_Autumn_Text_0:
+# 721 "data/maps/MauvilleCity/scripts.pory"
+	.string "Ah auuuh.$"
+
+MauvilleCity_Pokemon_Swasbuck_Autumn_Text_1:
+# 724 "data/maps/MauvilleCity/scripts.pory"
+	.string "This Sawsbuck is radiating heat!$"
+
+MauvilleCity_Pokemon_Swasbuck_Winter_Text_0:
+# 737 "data/maps/MauvilleCity/scripts.pory"
+	.string "This Sawsbuck is super cold!$"
+
+MauvilleCity_EventScript_SawsbuckTrainer_Text_0:
+# 746 "data/maps/MauvilleCity/scripts.pory"
+	.string "Each form of Sawsbuck in Hoenn has\n"
+	.string "different secondary types! The Autumn\l"
+	.string "form is Fire type, and the Winter form is\l"
+	.string "Ice.$"

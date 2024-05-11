@@ -2770,3 +2770,91 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "the perfect fit for the BATTLE TENT!\p"
 # 1386 "data/maps/SlateportCity/scripts.pory"
 	.string "Give it your best effort!$"
+
+SlateportCity_Pokemon_Wingull::
+# 1391 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1392 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1393 "data/maps/SlateportCity/scripts.pory"
+	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+# 1394 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_Pokemon_Wingull_Text_0
+# 1395 "data/maps/SlateportCity/scripts.pory"
+	waitmoncry
+# 1396 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1397 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+
+SlateportCity_Pokemon_Mankey::
+# 1402 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1403 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1404 "data/maps/SlateportCity/scripts.pory"
+	playmoncry SPECIES_MANKEY, CRY_MODE_NORMAL
+# 1405 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_Pokemon_Mankey_Text_0
+# 1406 "data/maps/SlateportCity/scripts.pory"
+	waitmoncry
+# 1407 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1408 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+
+SlateportCity_Pokemon_Marill::
+# 1413 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1414 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1415 "data/maps/SlateportCity/scripts.pory"
+	playmoncry SPECIES_MARILL, CRY_MODE_NORMAL
+# 1416 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_Pokemon_Marill_Text_0
+# 1417 "data/maps/SlateportCity/scripts.pory"
+	waitmoncry
+# 1418 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1419 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+
+SlateportCity_Pokemon_Poliwhirl::
+# 1424 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1425 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1426 "data/maps/SlateportCity/scripts.pory"
+	playmoncry SPECIES_POLIWHIRL, CRY_MODE_NORMAL
+# 1427 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_Pokemon_Poliwhirl_Text_0
+# 1428 "data/maps/SlateportCity/scripts.pory"
+	waitmoncry
+# 1429 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1430 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+
+SlateportCity_Pokemon_Wingull_Text_0:
+# 1394 "data/maps/SlateportCity/scripts.pory"
+	.string "Eek Craaahhh!$"
+
+SlateportCity_Pokemon_Mankey_Text_0:
+# 1405 "data/maps/SlateportCity/scripts.pory"
+	.string "Ooh ooh ah!$"
+
+SlateportCity_Pokemon_Marill_Text_0:
+# 1416 "data/maps/SlateportCity/scripts.pory"
+	.string "Sniff snuff.$"
+
+SlateportCity_Pokemon_Poliwhirl_Text_0:
+# 1427 "data/maps/SlateportCity/scripts.pory"
+	.string "Rib bib.$"

@@ -473,3 +473,48 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "a BAG of their own.$"
 
 `
+
+script Route116_Pokemon_Caterpie
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_CATERPIE, CRY_MODE_NORMAL)
+	msgbox(format("De-dlee."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route116_Pokemon_Nincada
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_NINCADA, CRY_MODE_NORMAL)
+	msgbox(format("Chee chee chee!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route116_Pokemon_Fomantis
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_FOMANTIS, CRY_MODE_NORMAL)
+	msgbox(format("Squeeak!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route116_Pokemon_Mudbray
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MUDBRAY, CRY_MODE_NORMAL)
+	msgbox(format("Braaahh."))
+	waitmoncry
+	closemessage
+	release
+	end
+}

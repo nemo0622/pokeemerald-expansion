@@ -288,3 +288,80 @@ Route115_Text_MeteorFallsSign:
 	.string "METEOR FALLS\n"
 # 145 "data/maps/Route115/scripts.pory"
 	.string "FALLARBOR TOWN THROUGH HERE$"
+
+Route115_PokemonShrub::
+# 152 "data/maps/Route115/scripts.pory"
+	lockall
+# 153 "data/maps/Route115/scripts.pory"
+	checkitem ITEM_HONEY
+# 154 "data/maps/Route115/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route115_PokemonShrub_2
+# 189 "data/maps/Route115/scripts.pory"
+	msgbox Route115_PokemonShrub_Text_3
+# 190 "data/maps/Route115/scripts.pory"
+	closemessage
+# 192 "data/maps/Route115/scripts.pory"
+	releaseall
+	end
+
+Route115_PokemonShrub_2:
+# 156 "data/maps/Route115/scripts.pory"
+	msgbox Route115_PokemonShrub_Text_0, MSGBOX_YESNO
+# 157 "data/maps/Route115/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Route115_PokemonShrub_5
+# 165 "data/maps/Route115/scripts.pory"
+	closemessage
+# 166 "data/maps/Route115/scripts.pory"
+	removeitem ITEM_HONEY
+# 167 "data/maps/Route115/scripts.pory"
+	msgbox Route115_PokemonShrub_Text_1
+# 168 "data/maps/Route115/scripts.pory"
+	delay 10
+# 170 "data/maps/Route115/scripts.pory"
+	msgbox Route115_PokemonShrub_Text_2
+# 171 "data/maps/Route115/scripts.pory"
+	closemessage
+# 174 "data/maps/Route115/scripts.pory"
+	randomelement SPECIES_FOMANTIS, SPECIES_POLIWAG, SPECIES_CETODDLE, SPECIES_SWINUB, SPECIES_SUNKERN, SPECIES_WOOPER_PALDEAN, SPECIES_WIMPOD, SPECIES_CRABRAWLER
+# 175 "data/maps/Route115/scripts.pory"
+	waitse
+# 176 "data/maps/Route115/scripts.pory"
+	playmoncry VAR_RESULT, CRY_MODE_ENCOUNTER
+# 177 "data/maps/Route115/scripts.pory"
+	delay 40
+# 178 "data/maps/Route115/scripts.pory"
+	waitmoncry
+# 180 "data/maps/Route115/scripts.pory"
+	setwildbattle VAR_RESULT, 10
+# 181 "data/maps/Route115/scripts.pory"
+	dowildbattle
+# 183 "data/maps/Route115/scripts.pory"
+	releaseall
+	end
+
+Route115_PokemonShrub_5:
+# 159 "data/maps/Route115/scripts.pory"
+	closemessage
+# 160 "data/maps/Route115/scripts.pory"
+	releaseall
+	end
+
+
+Route115_PokemonShrub_Text_0:
+# 156 "data/maps/Route115/scripts.pory"
+	.string "Use Honey on the Shrub?$"
+
+Route115_PokemonShrub_Text_1:
+# 167 "data/maps/Route115/scripts.pory"
+	.string "{PLAYER} held the Honey to the\n"
+	.string "shrub...$"
+
+Route115_PokemonShrub_Text_2:
+# 170 "data/maps/Route115/scripts.pory"
+	.string "A wild Pokémon leapt out!$"
+
+Route115_PokemonShrub_Text_3:
+# 189 "data/maps/Route115/scripts.pory"
+	.string "You have no Honey to lure Pokémon!$"

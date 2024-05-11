@@ -564,3 +564,48 @@ Route109_Text_TrainerTipsSign:
 	.string "POKéMON raised by TRAINERS are said\n"
 	.string "to grow stronger than wild POKéMON.$"
 `
+
+script Route109_Pokemon_Carvanha
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_CARVANHA, CRY_MODE_NORMAL)
+	msgbox(format("Chk chk... hisss!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route109_Pokemon_Shellder
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SHELLDER, CRY_MODE_NORMAL)
+	msgbox(format("Tk tk tk."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route109_Pokemon_Sandygast
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_SANDYGAST, CRY_MODE_NORMAL)
+	msgbox(format("Auuu..."))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+script Route109_Pokemon_Totodile
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
+	msgbox(format("Cha chaah!"))
+	waitmoncry
+	closemessage
+	release
+	end
+}

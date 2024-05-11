@@ -47,8 +47,8 @@
 #define FLAG_ROUTE102_ZINNIA_VANISHED    0x23 // If talked to Zinnia in route 102
 #define FLAG_ROUTE104_ZINNIA_VANISHED    0x24 // If talked to Zinnia in route 104
 #define FLAG_ROUTE104_HONEY_FROM_GIRL    0x25 // If got honey snack from girl on route 104
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
+#define FLAG_ROUTE110_HONEY_FROM_PKMN    0x26 // If got honey from Minun on Route 110
+#define FLAG_ROUTE110_ZINNIA_VANISHED    0x27 // If talked to Zinnia in route 110
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag

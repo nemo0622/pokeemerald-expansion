@@ -106,3 +106,47 @@ Route107_EventScript_Camron::
 	msgbox_mugshot Route107_Text_CamronPostBattle, MSGBOX_AUTOCLOSE, MUGSHOT_SWIMMERM
 # 54 "data/maps/Route107/scripts.pory"
 	end
+
+Route107_Pokemon_Finizen::
+# 60 "data/maps/Route107/scripts.pory"
+	lock
+# 61 "data/maps/Route107/scripts.pory"
+	faceplayer
+# 62 "data/maps/Route107/scripts.pory"
+	playmoncry SPECIES_FINIZEN, CRY_MODE_NORMAL
+# 63 "data/maps/Route107/scripts.pory"
+	msgbox Route107_Pokemon_Finizen_Text_0
+# 64 "data/maps/Route107/scripts.pory"
+	waitmoncry
+# 65 "data/maps/Route107/scripts.pory"
+	closemessage
+# 66 "data/maps/Route107/scripts.pory"
+	release
+	end
+
+
+Route107_Pokemon_Tentacool::
+# 71 "data/maps/Route107/scripts.pory"
+	lock
+# 72 "data/maps/Route107/scripts.pory"
+	faceplayer
+# 73 "data/maps/Route107/scripts.pory"
+	playmoncry SPECIES_TENTACOOL, CRY_MODE_NORMAL
+# 74 "data/maps/Route107/scripts.pory"
+	msgbox Route107_Pokemon_Tentacool_Text_0
+# 75 "data/maps/Route107/scripts.pory"
+	waitmoncry
+# 76 "data/maps/Route107/scripts.pory"
+	closemessage
+# 77 "data/maps/Route107/scripts.pory"
+	release
+	end
+
+
+Route107_Pokemon_Finizen_Text_0:
+# 63 "data/maps/Route107/scripts.pory"
+	.string "Kahakaka!$"
+
+Route107_Pokemon_Tentacool_Text_0:
+# 74 "data/maps/Route107/scripts.pory"
+	.string "Blubblurb!$"

@@ -1244,7 +1244,7 @@ script Route104_LittleGirlOnBeach
 		{
 			msgbox_mugshot(format("Here you go!"), MSGBOX_NPC, MUGSHOT_LITTLEGIRL)
 			closemessage
-			giveitem(ITEM_HONEY)
+			giveitem(ITEM_HONEY, 3)
 			setflag(FLAG_ROUTE104_HONEY_FROM_GIRL)
 		}
 	}

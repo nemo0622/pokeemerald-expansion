@@ -1344,8 +1344,6 @@ script RustboroCity_Pokemon_Timburr
 	msgbox(format("Rakaka!"))
 	waitmoncry
 	closemessage
-	msgbox(format("There's a note attached!\N 'Need Trees Cut? Come To Our Shop!'"))
-	closemessage
 	release
 	end
 }

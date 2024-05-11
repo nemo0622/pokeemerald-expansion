@@ -194,3 +194,47 @@ Route104_Text_RegisteredDadInPokenav:
 	.string "Registered DAD NORMAN\n"
 # 98 "data/maps/Route105/scripts.pory"
 	.string "in the POKéNAV.$"
+
+Route116_Pokemon_Finizen::
+# 103 "data/maps/Route105/scripts.pory"
+	lock
+# 104 "data/maps/Route105/scripts.pory"
+	faceplayer
+# 105 "data/maps/Route105/scripts.pory"
+	playmoncry SPECIES_FINIZEN, CRY_MODE_NORMAL
+# 106 "data/maps/Route105/scripts.pory"
+	msgbox Route116_Pokemon_Finizen_Text_0
+# 107 "data/maps/Route105/scripts.pory"
+	waitmoncry
+# 108 "data/maps/Route105/scripts.pory"
+	closemessage
+# 109 "data/maps/Route105/scripts.pory"
+	release
+	end
+
+
+Route116_Pokemon_Tentacool::
+# 114 "data/maps/Route105/scripts.pory"
+	lock
+# 115 "data/maps/Route105/scripts.pory"
+	faceplayer
+# 116 "data/maps/Route105/scripts.pory"
+	playmoncry SPECIES_TENTACOOL, CRY_MODE_NORMAL
+# 117 "data/maps/Route105/scripts.pory"
+	msgbox Route116_Pokemon_Tentacool_Text_0
+# 118 "data/maps/Route105/scripts.pory"
+	waitmoncry
+# 119 "data/maps/Route105/scripts.pory"
+	closemessage
+# 120 "data/maps/Route105/scripts.pory"
+	release
+	end
+
+
+Route116_Pokemon_Finizen_Text_0:
+# 106 "data/maps/Route105/scripts.pory"
+	.string "Kakakakaka!$"
+
+Route116_Pokemon_Tentacool_Text_0:
+# 117 "data/maps/Route105/scripts.pory"
+	.string "Blublublub...$"

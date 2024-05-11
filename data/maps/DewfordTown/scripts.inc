@@ -1620,3 +1620,69 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "“{STR_VAR_1}” is the\n"
 # 811 "data/maps/DewfordTown/scripts.pory"
 	.string "definition of “in” right now.$"
+
+DewfordTown_Pokemon_Feraligatr::
+# 816 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 817 "data/maps/DewfordTown/scripts.pory"
+	faceplayer
+# 818 "data/maps/DewfordTown/scripts.pory"
+	playmoncry SPECIES_FERALIGATR, CRY_MODE_NORMAL
+# 819 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Pokemon_Feraligatr_Text_0
+# 820 "data/maps/DewfordTown/scripts.pory"
+	waitmoncry
+# 821 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 822 "data/maps/DewfordTown/scripts.pory"
+	release
+	end
+
+
+DewfordTown_Pokemon_Toucannon::
+# 827 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 828 "data/maps/DewfordTown/scripts.pory"
+	faceplayer
+# 829 "data/maps/DewfordTown/scripts.pory"
+	playmoncry SPECIES_TOUCANNON, CRY_MODE_NORMAL
+# 830 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Pokemon_Toucannon_Text_0
+# 831 "data/maps/DewfordTown/scripts.pory"
+	waitmoncry
+# 832 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 833 "data/maps/DewfordTown/scripts.pory"
+	release
+	end
+
+
+DewfordTown_Pokemon_Comfey::
+# 838 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 839 "data/maps/DewfordTown/scripts.pory"
+	faceplayer
+# 840 "data/maps/DewfordTown/scripts.pory"
+	playmoncry SPECIES_COMFEY, CRY_MODE_NORMAL
+# 841 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Pokemon_Comfey_Text_0
+# 842 "data/maps/DewfordTown/scripts.pory"
+	waitmoncry
+# 843 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 844 "data/maps/DewfordTown/scripts.pory"
+	release
+	end
+
+
+DewfordTown_Pokemon_Feraligatr_Text_0:
+# 819 "data/maps/DewfordTown/scripts.pory"
+	.string "Grrrr...!$"
+
+DewfordTown_Pokemon_Toucannon_Text_0:
+# 830 "data/maps/DewfordTown/scripts.pory"
+	.string "Kraah!$"
+
+DewfordTown_Pokemon_Comfey_Text_0:
+# 841 "data/maps/DewfordTown/scripts.pory"
+	.string "Hei eiii...$"
