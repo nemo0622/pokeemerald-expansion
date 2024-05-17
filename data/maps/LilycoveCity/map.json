@@ -336,7 +336,7 @@
     },
     {
       "x": 11,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_1F",
       "dest_warp_id": "0"
@@ -406,13 +406,15 @@
     },
     {
       "x": 12,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_1F",
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

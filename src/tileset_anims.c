@@ -634,7 +634,9 @@ static void TilesetAnim_General(u16 timer)
     if (timer % 16 == 0)
         QueueAnimTiles_General_Flower(timer / 16);
     if (timer % 16 == 1)
+    {
         QueueAnimTiles_General_Water(timer / 16);
+    }
     if (timer % 16 == 2)
         QueueAnimTiles_General_SandWaterEdge(timer / 16);
     if (timer % 16 == 3)

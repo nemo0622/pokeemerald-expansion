@@ -108,7 +108,7 @@
     },
     {
       "x": 8,
-      "y": 17,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_DEWFORD_TOWN_GYM",
       "dest_warp_id": "0"
@@ -128,7 +128,9 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
