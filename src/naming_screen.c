@@ -2398,7 +2398,8 @@ static const struct SpriteFrameImage sImageTable_PCIcon[] =
 static const union AnimCmd sAnim_Loop[] =
 {
     ANIMCMD_FRAME(0, 1),
-    ANIMCMD_JUMP(0)
+    // ANIMCMD_JUMP(0)
+    ANIMCMD_END
 };
 
 static const union AnimCmd sAnim_CursorSquish[] =
