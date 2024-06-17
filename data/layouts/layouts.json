@@ -947,7 +947,7 @@
       "width": 12,
       "height": 11,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonSchool",
+      "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/RustboroCity_PokemonSchool/border.bin",
       "blockdata_filepath": "data/layouts/RustboroCity_PokemonSchool/map.bin"
     },
