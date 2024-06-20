@@ -21,7 +21,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 ## FUTURE PLANS
 
-- New title screen
 - Revamped encounters, allowing all Gen 1-3 Pokémon to be encountered
     - Also allow future evolutions
     - Consider adding a few more Pokémon from future generations (Tinkaton family? + more with unique type combos)

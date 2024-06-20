@@ -65,6 +65,90 @@ static const u32 sTitleScreenRayquazaTilemap[] = INCBIN_U32("graphics/title_scre
 static const u32 sTitleScreenLogoShineGfx[] = INCBIN_U32("graphics/title_screen/logo_shine.4bpp.lz");
 static const u32 sTitleScreenCloudsGfx[] = INCBIN_U32("graphics/title_screen/clouds.4bpp.lz");
 
+const u32 gTest_Starters1[] = INCBIN_U32("graphics/title_screen/starters1.4bpp.lz");
+const u32 gTest_Starters2[] = INCBIN_U32("graphics/title_screen/starters2.4bpp.lz");
+const u32 gTest_Starters3[] = INCBIN_U32("graphics/title_screen/starters3.4bpp.lz");
+const u32 gTestPal_Starters[] = INCBIN_U32("graphics/title_screen/starters.gbapal.lz");
+
+static const struct CompressedSpriteSheet sSpriteSheet_Starters1[] =
+{
+    {gTest_Starters1, 4096, 777},
+    {NULL},
+};
+static const struct CompressedSpriteSheet sSpriteSheet_Starters2[] =
+{
+    {gTest_Starters2, 4096, 778},
+    {NULL},
+};
+static const struct CompressedSpriteSheet sSpriteSheet_Starters3[] =
+{
+    {gTest_Starters3, 4096, 779},
+    {NULL},
+};
+
+static const struct CompressedSpritePalette sSpritePal_Starters1[] =
+{
+    {gTestPal_Starters, 777},
+    {NULL},
+};
+static const struct CompressedSpritePalette sSpritePal_Starters2[] =
+{
+    {gTestPal_Starters, 778},
+    {NULL},
+};
+static const struct CompressedSpritePalette sSpritePal_Starters3[] =
+{
+    {gTestPal_Starters, 779},
+    {NULL},
+};
+
+static const struct OamData sStarterOamData =
+{
+    .y = 0,
+    .affineMode = 0,
+    .objMode = 0,
+    .mosaic = 0,
+    .bpp = 0,
+    .shape = 0,
+    .x = 0,
+    .matrixNum = 0,
+    .size = 3,
+    .tileNum = 0,
+    .priority = 0,
+    .paletteNum = 0,
+    .affineParam = 0,
+};
+
+static const struct SpriteTemplate sStarter1SpriteTemplate =
+{
+    .tileTag = 777,
+    .paletteTag = 777,
+    .oam = &sStarterOamData,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy,
+};
+static const struct SpriteTemplate sStarter2SpriteTemplate =
+{
+    .tileTag = 778,
+    .paletteTag = 778,
+    .oam = &sStarterOamData,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy,
+};
+static const struct SpriteTemplate sStarter3SpriteTemplate =
+{
+    .tileTag = 779,
+    .paletteTag = 779,
+    .oam = &sStarterOamData,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy,
+};
 
 
 // Used to blend "Emerald Version" as it passes over over the Pokémon banner.
@@ -615,6 +699,12 @@ void CB2_InitTitleScreen(void)
         LoadCompressedSpriteSheet(&sPokemonLogoShineSpriteSheet[0]);
         LoadPalette(gTitleScreenEmeraldVersionPal, OBJ_PLTT_ID(0), PLTT_SIZE_4BPP);
         LoadSpritePalette(&sSpritePalette_PressStart[0]);
+        LoadCompressedSpriteSheet(sSpriteSheet_Starters1);
+        LoadCompressedSpritePalette(sSpritePal_Starters1);
+        LoadCompressedSpriteSheet(sSpriteSheet_Starters2);
+        LoadCompressedSpritePalette(sSpritePal_Starters2);
+        LoadCompressedSpriteSheet(sSpriteSheet_Starters3);
+        LoadCompressedSpritePalette(sSpritePal_Starters3);
         gMain.state = 2;
         break;
     case 2:
@@ -758,6 +848,9 @@ static void Task_TitleScreenPhase2(u8 taskId)
                                     | DISPCNT_OBJ_ON);
         CreatePressStartBanner(START_BANNER_X, 108);
         CreateCopyrightBanner(START_BANNER_X, 148);
+        CreateSprite(&sStarter1SpriteTemplate, 190, 100, 0);
+        CreateSprite(&sStarter2SpriteTemplate, 120, 100, 0);
+        CreateSprite(&sStarter3SpriteTemplate, 50, 100, 0);
         gTasks[taskId].tBg1Y = 0;
         gTasks[taskId].func = Task_TitleScreenPhase3;
     }
