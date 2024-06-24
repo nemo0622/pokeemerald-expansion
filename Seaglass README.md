@@ -31,7 +31,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
 - Purchase [Arex's Tiles](https://arex-v.itch.io/fantasy), using new tiles to increase map variety
-- Convert all Pokémon icons to GBC style
 - Add more general QOL features where necessary
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
@@ -39,6 +38,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 ## KNOWN BUGS & PROBLEMS
 
 - Some tiles may misalign - a few cave tiles and Fallarbor trees, but nothing major
+- Many special NPCs (Elite Four members, Wallace, etc.) are kind of just slightly modified NPC sprites for now, need fully custom sprites in the future
 
 ## CREDITS
 
@@ -50,3 +50,4 @@ Please support everyone who made this possible!
 - New player sprites by Solo993 and GOLDHIBIKI on DeviantArt
 - Some trainer sprites by leeseongjae620 on DeviantArt
 - Generation 1-2 and many UI sprites from Spriter's Resource GSC sprite sheets
+- Party menu Pokémon icons by eeveeee1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
