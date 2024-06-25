@@ -30,10 +30,12 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
+    - Create quest NPCs to give some helpful optional items (Oval Charm, SHINY CHARM? Could be cool!)
 - Purchase [Arex's Tiles](https://arex-v.itch.io/fantasy), using new tiles to increase map variety
 - Add more general QOL features where necessary
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
+- Unlock National Dex part way through game, and change National Dex upgrade after Elite Four to gifting Exp. Charm
 
 ## KNOWN BUGS & PROBLEMS
 
