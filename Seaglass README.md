@@ -31,6 +31,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Buff certain old Pokémon to make them all fun to use
     - Not all need to be like "competitive" lol - Water/Fire Octillery, Ground/Flying Dodrio, etc.
     - Please buff Octozooka please LMAO
+- Go through trainer teams and integrate all Gen 1-3 Pokémon!
 - Add data for GSC Beta Pokémon - can be easter eggs in the game, given by secret NPCs after quests?
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)

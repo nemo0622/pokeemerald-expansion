@@ -3415,14 +3415,14 @@
                 "species": "SPECIES_LINOONE"
               },
               {
-                "min_level": 27,
+                "min_level": 25,
                 "max_level": 27,
-                "species": "SPECIES_WEEPINBELL"
+                "species": "SPECIES_PASSIMIAN"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_GLOOM"
+                "max_level": 27,
+                "species": "SPECIES_ORANGURU"
               },
               {
                 "min_level": 27,
@@ -11979,6 +11979,75 @@
                 "min_level": 24,
                 "max_level": 27,
                 "species": "SPECIES_AERODACTYL"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_MAUVILLE_CITY",
+          "base_label": "gMauvilleCity0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_SCRAGGY"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_EKANS"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_TINKATINK"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_RALTS"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_SHROOMISH"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_TINKATINK"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_TOGEDEMARU"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_BONSLY"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_BONSLY"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_BONSLY"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_TOGEDEMARU"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_TOGEDEMARU"
               }
             ]
           }
