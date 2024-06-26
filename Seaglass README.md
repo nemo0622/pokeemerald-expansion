@@ -2,6 +2,8 @@
 
 Rom Hack based on Pokémon Emerald Expansion.
 
+Documentation on Encounters and Pokémon Typing can be found (here)[https://docs.google.com/document/d/1OszN1OpqSaCd1Xh4AFgchgvVfCOX5l2OIztPUgnbisU/edit?usp=sharing]
+
 ## What is special about this Rom Hack?
 
 Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, converting the style of the overworld and Pokémon to a more retro, Gameboy-like style. In addition, all Pokémon from Generations 1-3 are catchable, evolutions from later generations were added, and various other changes have been made to make this a unique Emerald experience.
@@ -15,6 +17,8 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Upgraded Pokédex with many helpful new features, inspired by HGSS dex but in GBC style
 - New additions to some maps to increase interesting events
     - Ex: Wishing Well in Rustboro City, Birdhouses in Fortree City, etc.
+- All Pokémon from Generations 1-3 are available, spread out enough to keep it from feeling bloated!
+    - Cross-gen evolutions have also been added, up to Gen 9!
 - Party-wide EXP Share, with soft level caps to balance this change
     - This is *NOT* a "difficulty hack"! These changes just cut down on some grind while still keeping a good balance
     - Soft level cap allows for you to reach 1 level above the gym leader's max, then halves exp gain for the next few levels, then cuts it more
@@ -26,11 +30,13 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Consider adding a few more Pokémon from future generations (Tinkaton family? + more with unique type combos)
 - Buff certain old Pokémon to make them all fun to use
     - Not all need to be like "competitive" lol - Water/Fire Octillery, Ground/Flying Dodrio, etc.
+    - Please buff Octozooka please LMAO
 - Add data for GSC Beta Pokémon - can be easter eggs in the game, given by secret NPCs after quests?
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
     - Create quest NPCs to give some helpful optional items (Oval Charm, SHINY CHARM? Could be cool!)
+    - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
 - Purchase [Arex's Tiles](https://arex-v.itch.io/fantasy), using new tiles to increase map variety
 - Add more general QOL features where necessary
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
@@ -39,6 +45,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 ## KNOWN BUGS & PROBLEMS
 
+- Battle Frontier largely uses vanilla Emerald tiles, so it doesn't really match the rest of the game
 - Some tiles may misalign - a few cave tiles and Fallarbor trees, but nothing major
 - Many special NPCs (Elite Four members, Wallace, etc.) are kind of just slightly modified NPC sprites for now, need fully custom sprites in the future
 
