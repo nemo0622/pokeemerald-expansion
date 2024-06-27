@@ -1,4 +1,5 @@
 //
+// In pokemon.h in include/config, this is auto-generated if P_LEARNSET_HELPER_TEACHABLE is true
 // DO NOT MODIFY THIS FILE! It is auto-generated from tools/learnset_helpers/teachable.py
 //
 

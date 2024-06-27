@@ -19,20 +19,18 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Ex: Wishing Well in Rustboro City, Birdhouses in Fortree City, etc.
 - All Pokémon from Generations 1-3 are available, spread out enough to keep it from feeling bloated!
     - Cross-gen evolutions have also been added, up to Gen 9!
+    - Pokémon use USUM movesets when applicable
 - Party-wide EXP Share, with soft level caps to balance this change
     - This is *NOT* a "difficulty hack"! These changes just cut down on some grind while still keeping a good balance
     - Soft level cap allows for you to reach 1 level above the gym leader's max, then halves exp gain for the next few levels, then cuts it more
 
 ## FUTURE PLANS
 
-- Revamped encounters, allowing all Gen 1-3 Pokémon to be encountered
-    - Also allow future evolutions
-    - Consider adding a few more Pokémon from future generations (Tinkaton family? + more with unique type combos)
 - Buff certain old Pokémon to make them all fun to use
     - Not all need to be like "competitive" lol - Water/Fire Octillery, Ground/Flying Dodrio, etc.
     - Please buff Octozooka please LMAO
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
-- Add data for GSC Beta Pokémon - can be easter eggs in the game, given by secret NPCs after quests?
+- Add Kotora (Electric type Beta GSC Pokémon) as easter egg
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
@@ -57,7 +55,8 @@ Please support everyone who made this possible!
 - Most Generation 3 and 9 Pokémon sprites by [Egg](https://x.com/Egg3ggEgg) on Twitter
 - Many Generation 3 and other Pokémon sprites by Nuukiie on DeviantArt
 - Many Generation 4 sprites by ESY on DeviantArt
+- Some Hisuian Pokémon sprites (Kleavor and Ursaluna) by Katten and dwg1109 on DeviantArt
 - New player sprites by Solo993 and GOLDHIBIKI on DeviantArt
 - Some trainer sprites by leeseongjae620 on DeviantArt
 - Generation 1-2 and many UI sprites from Spriter's Resource GSC sprite sheets
-- Party menu Pokémon icons by eeveeee1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
+- Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)

@@ -2253,20 +2253,20 @@ static void Task_HandlePokedexInput(u8 taskId)
             gTasks[taskId].func = Task_HandlePokedexStartMenuInput;
             PlaySE(SE_SELECT);
         }
-        else if (JOY_NEW(SELECT_BUTTON))
-        {
-            PlaySE(SE_SELECT);
-            BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
-            gTasks[taskId].tLoadScreenTaskId = LoadSearchMenu();
-            sPokedexView->screenSwitchState = 0;
-            sPokedexView->pokeBallRotationBackup = sPokedexView->pokeBallRotation;
-            sPokedexView->selectedPokemonBackup = sPokedexView->selectedPokemon;
-            sPokedexView->dexModeBackup = sPokedexView->dexMode;
-            sPokedexView->dexOrderBackup = sPokedexView->dexOrder;
-            gTasks[taskId].func = Task_WaitForExitSearch;
-            PlaySE(SE_PC_LOGIN);
-            FreeWindowAndBgBuffers();
-        }
+        // else if (JOY_NEW(SELECT_BUTTON))
+        // {
+        //     PlaySE(SE_SELECT);
+        //     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
+        //     gTasks[taskId].tLoadScreenTaskId = LoadSearchMenu();
+        //     sPokedexView->screenSwitchState = 0;
+        //     sPokedexView->pokeBallRotationBackup = sPokedexView->pokeBallRotation;
+        //     sPokedexView->selectedPokemonBackup = sPokedexView->selectedPokemon;
+        //     sPokedexView->dexModeBackup = sPokedexView->dexMode;
+        //     sPokedexView->dexOrderBackup = sPokedexView->dexOrder;
+        //     gTasks[taskId].func = Task_WaitForExitSearch;
+        //     PlaySE(SE_PC_LOGIN);
+        //     FreeWindowAndBgBuffers();
+        // }
         else if (JOY_NEW(B_BUTTON))
         {
             TryDestroyStatBars();
