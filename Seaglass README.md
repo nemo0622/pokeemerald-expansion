@@ -30,7 +30,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Not all need to be like "competitive" lol - Water/Fire Octillery, Ground/Flying Dodrio, etc.
     - Please buff Octozooka please LMAO
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
-- Add Kotora (Electric type Beta GSC Pokémon) as easter egg
+- Add Pichu Spiky-Eared as an easter egg (in "gen_1_families.h", edit base stats and give new moveset)
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
