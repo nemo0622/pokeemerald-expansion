@@ -26,9 +26,14 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 ## FUTURE PLANS
 
+- Add level cap option to options menu - on by default (maybe other difficulty options?)
+- Fresh battle backgrounds!
+- Solution to HMs? Once item is in Bag, allow use outside of battle?
+- Regorganize National dex to make sense. i know its hard but do it anyway lol
 - Buff certain old Pokémon to make them all fun to use
     - Not all need to be like "competitive" lol - Water/Fire Octillery, Ground/Flying Dodrio, etc.
     - Please buff Octozooka please LMAO
+    - More "EFFECT_TWO_TYPED_MOVE" moves like Flying Press!! Maybe make Octozooka 2 type Water and Fire?
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
 - Add Pichu Spiky-Eared as an easter egg (in "gen_1_families.h", edit base stats and give new moveset)
 - Convert scripts to PoryScript and code extra events
@@ -41,6 +46,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
 - Unlock National Dex part way through game, and change National Dex upgrade after Elite Four to gifting Exp. Charm
+- Look into music modding! Convert sound font to be more like gen 2?
 
 ## KNOWN BUGS & PROBLEMS
 
