@@ -30,6 +30,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Fresh battle backgrounds!
 - Solution to HMs? Once item is in Bag, allow use outside of battle?
 - Regorganize National dex to make sense. i know its hard but do it anyway lol
+    - Make dex automatically open on Treecko if possible
 - Buff certain old Pokémon to make them all fun to use
     - Not all need to be like "competitive" lol - Water/Fire Octillery, Ground/Flying Dodrio, etc.
     - Please buff Octozooka please LMAO
