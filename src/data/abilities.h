@@ -1524,7 +1524,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_WATER_BUBBLE] =
     {
-        .name = _("Water Bubble"),
+        .name = _("Water Power"),
         .description = COMPOUND_STRING("Guards from fire and burns."),
         .aiRating = 8,
     },
@@ -2410,9 +2410,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SUPREME_OVERLORD] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Supreme Overlord"),
+        .name = _("Last Survivor"),
     #else
-        .name = _("SuprmeOvrlrd"),
+        .name = _("LastSurvivor"),
     #endif
         .description = COMPOUND_STRING("Inherits fallen's strength."),
         .aiRating = 6,
