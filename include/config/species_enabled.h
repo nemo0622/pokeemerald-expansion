@@ -334,7 +334,7 @@
 #define P_FAMILY_DARUMAKA                FALSE
 #define P_FAMILY_MARACTUS                FALSE
 #define P_FAMILY_DWEBBLE                 FALSE
-#define P_FAMILY_SCRAGGY                 TRUE
+#define P_FAMILY_SCRAGGY                 FALSE
 #define P_FAMILY_SIGILYPH                FALSE
 #define P_FAMILY_YAMASK                  FALSE
 #define P_FAMILY_TIRTOUGA                FALSE
@@ -445,8 +445,8 @@
 #define P_FAMILY_STUFFUL                 FALSE
 #define P_FAMILY_BOUNSWEET               FALSE
 #define P_FAMILY_COMFEY                  FALSE
-#define P_FAMILY_ORANGURU                TRUE
-#define P_FAMILY_PASSIMIAN               TRUE
+#define P_FAMILY_ORANGURU                FALSE
+#define P_FAMILY_PASSIMIAN               FALSE
 #define P_FAMILY_WIMPOD                  FALSE
 #define P_FAMILY_SANDYGAST               FALSE
 #define P_FAMILY_PYUKUMUKU               FALSE
@@ -454,7 +454,7 @@
 #define P_FAMILY_MINIOR                  FALSE
 #define P_FAMILY_KOMALA                  FALSE
 #define P_FAMILY_TURTONATOR              FALSE
-#define P_FAMILY_TOGEDEMARU              TRUE
+#define P_FAMILY_TOGEDEMARU              FALSE
 #define P_FAMILY_MIMIKYU                 FALSE
 #define P_FAMILY_BRUXISH                 FALSE
 #define P_FAMILY_DRAMPA                  FALSE

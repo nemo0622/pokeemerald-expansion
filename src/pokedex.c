@@ -2227,6 +2227,7 @@ static void CreatePokedexList(u8 dexMode, u8 order)
     case ORDER_NUMERICAL:
         if (temp_isHoennDex)
         {
+            return; // fuck it whatever no hoenn dex
             for (i = 0; i < temp_dexCount; i++)
             {
                 temp_dexNum = HoennToNationalOrder(i + 1);

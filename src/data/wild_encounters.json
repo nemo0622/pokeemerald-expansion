@@ -11985,72 +11985,7 @@
         },
         {
           "map": "MAP_MAUVILLE_CITY",
-          "base_label": "gMauvilleCity0",
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_SCRAGGY"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_EKANS"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_TINKATINK"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_RALTS"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_SHROOMISH"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_TINKATINK"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_TOGEDEMARU"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_BONSLY"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_BONSLY"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_BONSLY"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_TOGEDEMARU"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_TOGEDEMARU"
-              }
-            ]
-          }
+          "base_label": "gMauvilleCity0"
         }
       ]
     },
