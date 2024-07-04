@@ -27,7 +27,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 ## FUTURE PLANS
 
 - Add level cap option to options menu - on by default (maybe other difficulty options?)
-- Fresh battle backgrounds!
 - Solution to HMs? Once item is in Bag, allow use outside of battle?
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
 - Implement Pichu Spiky-Eared and Tinkatink NPC gift eggs  (in "gen_1_families.h", edit base stats and give new moveset)
@@ -36,6 +35,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
     - Create quest NPCs to give some helpful optional items (Oval Charm, SHINY CHARM? Could be cool!)
     - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
+- Show type effectiveness in battle (use pokeemerald wiki tutorial probably)
 - Purchase [Arex's Tiles](https://arex-v.itch.io/fantasy), using new tiles to increase map variety
 - Add more general QOL features where necessary
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
