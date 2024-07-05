@@ -19,22 +19,25 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Ex: Wishing Well in Rustboro City, Birdhouses in Fortree City, etc.
 - All Pokémon from Generations 1-3 are available, spread out enough to keep it from feeling bloated!
     - Cross-gen evolutions have also been added, up to Gen 9!
-    - Pokémon use USUM movesets when applicable
+    - Pokémon use modified USUM movesets when applicable
+    - Almost all Pokémon have recieved some changes! From slight stat changes to new types, each Pokémon should feel more unique to use
 - Party-wide EXP Share, with soft level caps to balance this change
     - This is *NOT* a "difficulty hack"! These changes just cut down on some grind while still keeping a good balance
     - Soft level cap allows for you to reach 1 level above the gym leader's max, then halves exp gain for the next few levels, then cuts it more
 
 ## FUTURE PLANS
 
-- Add level cap option to options menu - on by default (maybe other difficulty options?)
 - Solution to HMs? Once item is in Bag, allow use outside of battle?
+    - Allow HM moves to be forgotten
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
+    - Change level cap levels in level_caps.c to adjust to modified level curve
 - Implement Pichu Spiky-Eared and Tinkatink NPC gift eggs  (in "gen_1_families.h", edit base stats and give new moveset)
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
     - Create quest NPCs to give some helpful optional items (Oval Charm, SHINY CHARM? Could be cool!)
     - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
+    - NPC TO ENABLE OR DISABLE LEVEL CAPS
 - Show type effectiveness in battle (use pokeemerald wiki tutorial probably)
 - Purchase [Arex's Tiles](https://arex-v.itch.io/fantasy), using new tiles to increase map variety
 - Add more general QOL features where necessary
@@ -61,3 +64,4 @@ Please support everyone who made this possible!
 - Some trainer sprites by leeseongjae620 on DeviantArt
 - Generation 1-2 and many UI sprites from Spriter's Resource GSC sprite sheets
 - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
+- New battle backgrounds by RavePossum and Ruki

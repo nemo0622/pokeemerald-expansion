@@ -2790,7 +2790,7 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
 
-    // Add field moves to action list
+    // Add field moves to action list if it's a known move
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         for (j = 0; j != FIELD_MOVES_COUNT; j++)
@@ -2800,6 +2800,46 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
                 AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
                 break;
             }
+        }
+    }
+
+    // Add field moves to list based on learnsets
+    if(sPartyMenuInternal->numActions < 5)
+    {
+        // +0 = CUT, +1 = FLASH, +2 = ROCK_SMASH, +3 = STRENGTH, +4 = SURF, +5 = FLY, +6 = DIVE, +7 = WATERFALL, +8 = TELEPORT,
+        // +9 = DIG, +10 = SECRET_POWER, +11 = MILK_DRINK, +12 = SOFT_BOILED, +13 = SWEET_SCENT
+        // Listed Surf and Fly first to hopefully prevent soft-lock situations when Pokémon can know >4 field moves
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_SURF) && FlagGet(FLAG_BADGE05_GET) && sPartyMenuInternal->numActions < 5)
+        {
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 4 + MENU_FIELD_MOVES);
+        }
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_FLY) && FlagGet(FLAG_BADGE06_GET) && sPartyMenuInternal->numActions < 5)
+        {
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 5 + MENU_FIELD_MOVES);
+        }
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_CUT) && FlagGet(FLAG_BADGE01_GET) && sPartyMenuInternal->numActions < 5)
+        {
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 0 + MENU_FIELD_MOVES);
+        }
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_FLASH) && FlagGet(FLAG_BADGE02_GET) && sPartyMenuInternal->numActions < 5)
+        {
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 1 + MENU_FIELD_MOVES);
+        }
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_ROCK_SMASH) && FlagGet(FLAG_BADGE03_GET) && sPartyMenuInternal->numActions < 5)
+        {
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 2 + MENU_FIELD_MOVES);
+        }
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_STRENGTH) && FlagGet(FLAG_BADGE04_GET) && sPartyMenuInternal->numActions < 5)
+        {
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 3 + MENU_FIELD_MOVES);
+        }
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_DIVE) && FlagGet(FLAG_BADGE07_GET) && sPartyMenuInternal->numActions < 5)
+        {
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 6 + MENU_FIELD_MOVES);
+        }
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_WATERFALL) && FlagGet(FLAG_BADGE08_GET) && sPartyMenuInternal->numActions < 5)
+        {
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 7 + MENU_FIELD_MOVES);
         }
     }
 
