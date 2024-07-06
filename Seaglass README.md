@@ -33,6 +33,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - AFTER EXPANSION 1.9.0: Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
+- Make TMs 51-100 modern moves, or at least up to TM 60 or 70
 - Implement Pichu Spiky-Eared and Tinkatink NPC gift eggs  (in "gen_1_families.h", edit base stats and give new moveset)
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
@@ -43,6 +44,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Purchase [Arex's Tiles](https://arex-v.itch.io/fantasy), using new tiles to increase map variety
 - Add more general QOL features where necessary
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
+- DexNav!
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
 - Make national dex unlock as part of receiving Pokédex
 - Look into music modding! Convert sound font to be more like gen 2?

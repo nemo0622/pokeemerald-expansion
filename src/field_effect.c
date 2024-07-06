@@ -2632,70 +2632,73 @@ static void FieldMoveShowMonOutdoorsEffect_LoadGfx(struct Task *task)
     u16 delta = ((REG_BG0CNT >> 8) << 11);
     CpuCopy16(sFieldMoveStreaksOutdoors_Gfx, (void *)(VRAM + offset), 0x200);
     CpuFill32(0, (void *)(VRAM + delta), 0x800);
-    LoadPalette(sFieldMoveStreaksOutdoors_Pal, BG_PLTT_ID(15), sizeof(sFieldMoveStreaksOutdoors_Pal));
-    LoadFieldMoveOutdoorStreaksTilemap(delta);
+    // LoadPalette(sFieldMoveStreaksOutdoors_Pal, BG_PLTT_ID(15), sizeof(sFieldMoveStreaksOutdoors_Pal));
+    // LoadFieldMoveOutdoorStreaksTilemap(delta);
     task->tState++;
 }
 
 static void FieldMoveShowMonOutdoorsEffect_CreateBanner(struct Task *task)
 {
-    s16 horiz;
-    s16 vertHi;
-    s16 vertLo;
-    task->tBgHoriz -= 16;
-    horiz = ((u16)task->tWinHoriz >> 8);
-    vertHi = ((u16)task->tWinVert >> 8);
-    vertLo = ((u16)task->tWinVert & 0xff);
-    horiz -= 16;
-    vertHi -= 2;
-    vertLo += 2;
+    // s16 horiz;
+    // s16 vertHi;
+    // s16 vertLo;
+    // task->tBgHoriz -= 16;
+    // horiz = ((u16)task->tWinHoriz >> 8);
+    // vertHi = ((u16)task->tWinVert >> 8);
+    // vertLo = ((u16)task->tWinVert & 0xff);
+    // horiz -= 16;
+    // vertHi -= 2;
+    // vertLo += 2;
 
-    if (horiz < 0)
-        horiz = 0;
+    // if (horiz < 0)
+    //     horiz = 0;
 
-    if (vertHi < DISPLAY_HEIGHT / 4)
-        vertHi = DISPLAY_HEIGHT / 4;
+    // if (vertHi < DISPLAY_HEIGHT / 4)
+    //     vertHi = DISPLAY_HEIGHT / 4;
 
-    if (vertLo > DISPLAY_WIDTH / 2)
-        vertLo = DISPLAY_WIDTH / 2;
+    // if (vertLo > DISPLAY_WIDTH / 2)
+    //     vertLo = DISPLAY_WIDTH / 2;
 
-    task->tWinHoriz = (horiz << 8) | (task->tWinHoriz & 0xff);
-    task->tWinVert = (vertHi << 8) | vertLo;
-    if (horiz == 0 && vertHi == DISPLAY_HEIGHT / 4 && vertLo == DISPLAY_WIDTH / 2)
-    {
-        gSprites[task->tMonSpriteId].callback = SpriteCB_FieldMoveMonSlideOnscreen;
-        task->tState++;
-    }
+    // task->tWinHoriz = (horiz << 8) | (task->tWinHoriz & 0xff);
+    // task->tWinVert = (vertHi << 8) | vertLo;
+    // if (horiz == 0 && vertHi == DISPLAY_HEIGHT / 4 && vertLo == DISPLAY_WIDTH / 2)
+    // {
+    //     gSprites[task->tMonSpriteId].callback = SpriteCB_FieldMoveMonSlideOnscreen;
+    //     task->tState++;
+    // }
+    task->tState++;
 }
 
 static void FieldMoveShowMonOutdoorsEffect_WaitForMon(struct Task *task)
 {
-    task->tBgHoriz -= 16;
+    // task->tBgHoriz -= 16;
 
-    if (gSprites[task->tMonSpriteId].sSlidOffscreen)
-        task->tState++;
+    // if (gSprites[task->tMonSpriteId].sSlidOffscreen)
+    //     task->tState++;
+    task->tState++;
 }
 
 static void FieldMoveShowMonOutdoorsEffect_ShrinkBanner(struct Task *task)
 {
-    s16 vertHi;
-    s16 vertLo;
-    task->tBgHoriz -= 16;
-    vertHi = (task->tWinVert >> 8);
-    vertLo = (task->tWinVert & 0xFF);
-    vertHi += 6;
-    vertLo -= 6;
+    // s16 vertHi;
+    // s16 vertLo;
+    // task->tBgHoriz -= 16;
+    // vertHi = (task->tWinVert >> 8);
+    // vertLo = (task->tWinVert & 0xFF);
+    // vertHi += 6;
+    // vertLo -= 6;
 
-    if (vertHi > DISPLAY_HEIGHT / 2)
-        vertHi = DISPLAY_HEIGHT / 2;
+    // if (vertHi > DISPLAY_HEIGHT / 2)
+    //     vertHi = DISPLAY_HEIGHT / 2;
 
-    if (vertLo < DISPLAY_HEIGHT / 2 + 1)
-        vertLo = DISPLAY_HEIGHT / 2 + 1;
+    // if (vertLo < DISPLAY_HEIGHT / 2 + 1)
+    //     vertLo = DISPLAY_HEIGHT / 2 + 1;
 
-    task->tWinVert = (vertHi << 8) | vertLo;
+    // task->tWinVert = (vertHi << 8) | vertLo;
 
-    if (vertHi == DISPLAY_HEIGHT / 2 && vertLo == DISPLAY_HEIGHT / 2 + 1)
-        task->tState++;
+    // if (vertHi == DISPLAY_HEIGHT / 2 && vertLo == DISPLAY_HEIGHT / 2 + 1)
+    //     task->tState++;
+    task->tState++;
 }
 
 static void FieldMoveShowMonOutdoorsEffect_RestoreBg(struct Task *task)
@@ -2795,27 +2798,29 @@ static void FieldMoveShowMonIndoorsEffect_LoadGfx(struct Task *task)
     task->data[12] = delta;
     CpuCopy16(sFieldMoveStreaksIndoors_Gfx, (void *)(VRAM + offset), 0x80);
     CpuFill32(0, (void *)(VRAM + delta), 0x800);
-    LoadPalette(sFieldMoveStreaksIndoors_Pal, BG_PLTT_ID(15), sizeof(sFieldMoveStreaksIndoors_Pal));
+    // LoadPalette(sFieldMoveStreaksIndoors_Pal, BG_PLTT_ID(15), sizeof(sFieldMoveStreaksIndoors_Pal));
     task->tState++;
 }
 
 static void FieldMoveShowMonIndoorsEffect_SlideBannerOn(struct Task *task)
 {
-    if (SlideIndoorBannerOnscreen(task))
-    {
-        SetGpuReg(REG_OFFSET_WIN1H, WIN_RANGE(0, DISPLAY_WIDTH));
-        SetGpuReg(REG_OFFSET_WIN1V, WIN_RANGE(DISPLAY_HEIGHT / 4, DISPLAY_HEIGHT - DISPLAY_HEIGHT / 4));
-        gSprites[task->tMonSpriteId].callback = SpriteCB_FieldMoveMonSlideOnscreen;
-        task->tState++;
-    }
-    AnimateIndoorShowMonBg(task);
+    // if (SlideIndoorBannerOnscreen(task))
+    // {
+    //     SetGpuReg(REG_OFFSET_WIN1H, WIN_RANGE(0, DISPLAY_WIDTH));
+    //     SetGpuReg(REG_OFFSET_WIN1V, WIN_RANGE(DISPLAY_HEIGHT / 4, DISPLAY_HEIGHT - DISPLAY_HEIGHT / 4));
+    //     gSprites[task->tMonSpriteId].callback = SpriteCB_FieldMoveMonSlideOnscreen;
+    //     task->tState++;
+    // }
+    // AnimateIndoorShowMonBg(task);
+    task->tState++;
 }
 
 static void FieldMoveShowMonIndoorsEffect_WaitForMon(struct Task *task)
 {
-    AnimateIndoorShowMonBg(task);
-    if (gSprites[task->tMonSpriteId].sSlidOffscreen)
-        task->tState++;
+    // AnimateIndoorShowMonBg(task);
+    // if (gSprites[task->tMonSpriteId].sSlidOffscreen)
+    //     task->tState++;
+    task->tState++;
 }
 
 static void FieldMoveShowMonIndoorsEffect_RestoreBg(struct Task *task)
@@ -2830,9 +2835,10 @@ static void FieldMoveShowMonIndoorsEffect_RestoreBg(struct Task *task)
 
 static void FieldMoveShowMonIndoorsEffect_SlideBannerOff(struct Task *task)
 {
-    AnimateIndoorShowMonBg(task);
-    if (SlideIndoorBannerOffscreen(task))
-        task->tState++;
+    // AnimateIndoorShowMonBg(task);
+    // if (SlideIndoorBannerOffscreen(task))
+    //     task->tState++;
+    task->tState++;
 }
 
 static void FieldMoveShowMonIndoorsEffect_End(struct Task *task)
