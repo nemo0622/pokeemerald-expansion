@@ -24,6 +24,9 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Party-wide EXP Share, with soft level caps to balance this change
     - This is *NOT* a "difficulty hack"! These changes just cut down on some grind while still keeping a good balance
     - Soft level cap allows for you to reach 1 level above the gym leader's max, then halves exp gain for the next few levels, then cuts it more
+- Various QoL Changes, including:
+    - Type Effectiveness shown in battle
+    - HM System revamp: if HM is in bag and the right badge is owned, Pokémon that can learn the HMs can naturally use them
 
 ## FUTURE PLANS
 
@@ -37,7 +40,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Create quest NPCs to give some helpful optional items (Oval Charm, SHINY CHARM? Could be cool!)
     - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
     - NPC TO ENABLE OR DISABLE LEVEL CAPS
-- Show type effectiveness in battle (use pokeemerald wiki tutorial probably)
 - Purchase [Arex's Tiles](https://arex-v.itch.io/fantasy), using new tiles to increase map variety
 - Add more general QOL features where necessary
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
