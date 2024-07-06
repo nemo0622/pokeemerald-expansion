@@ -27,10 +27,9 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 ## FUTURE PLANS
 
-- Solution to HMs? Once item is in Bag, allow use outside of battle?
-    - Allow HM moves to be forgotten
-- Go through trainer teams and integrate all Gen 1-3 Pokémon!
+- AFTER EXPANSION 1.9.0: Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
+    - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
 - Implement Pichu Spiky-Eared and Tinkatink NPC gift eggs  (in "gen_1_families.h", edit base stats and give new moveset)
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
