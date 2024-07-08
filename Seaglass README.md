@@ -27,6 +27,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Various QoL Changes, including:
     - Type Effectiveness shown in battle
     - HM System revamp: if HM is in bag and the right badge is owned, Pokémon that can learn the HMs can naturally use them
+    - Shiny odds 1/4096 by default, but Shiny Charm is in Player PC to increase odds (gives 5 extra rerolls!)
 
 ## FUTURE PLANS
 
@@ -38,7 +39,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
-    - Create quest NPCs to give some helpful optional items (Oval Charm, SHINY CHARM? Could be cool!)
+    - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
     - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
     - NPC TO ENABLE OR DISABLE LEVEL CAPS
 - Purchase [Arex's Tiles](https://arex-v.itch.io/fantasy), using new tiles to increase map variety
@@ -67,4 +68,4 @@ Please support everyone who made this possible!
 - Some trainer sprites by leeseongjae620 on DeviantArt
 - Generation 1-2 and many UI sprites from Spriter's Resource GSC sprite sheets
 - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
-- New battle backgrounds by RavePossum and Ruki
+- New battle backgrounds by Princess-Phoenix and Carchagui on DeviantArt
