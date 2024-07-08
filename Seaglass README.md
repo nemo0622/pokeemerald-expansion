@@ -41,14 +41,16 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
     - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
-    - NPC TO ENABLE OR DISABLE LEVEL CAPS
+    - NPC TO ENABLE OR DISABLE LEVEL CAPS (or maybe edit book on player desk to be a settings menu!!)
+    - Edit existing events to fit with new events: don't give national dex after E4, give something other than shiny charm for collecting all Pokémon
 - Purchase [Arex's Tiles](https://arex-v.itch.io/fantasy), using new tiles to increase map variety
+    - Correct issues with collision while editing maps
 - Add more general QOL features where necessary
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - DexNav!
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
-- Make national dex unlock as part of receiving Pokédex
 - Look into music modding! Convert sound font to be more like gen 2?
+- BASED ON VOTE: white outline on battle sprites!
 
 ## KNOWN BUGS & PROBLEMS
 
@@ -59,7 +61,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 ## CREDITS
 
 Please support everyone who made this possible!
-- Tiles by [Zaebucca](https://zaebucca.itch.io/) on itch.io and Twitter
+- Tiles by [Zaebucca](https://zaebucca.itch.io/) on itch.io and Twitter and [Arex](https://arex-v.itch.io/fantasy) on itch.io
 - Most Generation 3 and 9 Pokémon sprites by [Egg](https://x.com/Egg3ggEgg) on Twitter
 - Many Generation 3 and other Pokémon sprites by Nuukiie on DeviantArt
 - Many Generation 4 sprites by ESY on DeviantArt
