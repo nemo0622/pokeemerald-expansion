@@ -2692,7 +2692,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+    #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_INSOMNIA, ABILITY_SUPER_LUCK, ABILITY_PRANKSTER },
+    #else
+        .abilities = { ABILITY_INSOMNIA, ABILITY_NONE, ABILITY_PRANKSTER },
+    #endif
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Murkrow"),
         .cryId = CRY_MURKROW,
@@ -3924,7 +3928,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+    #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_STURDY, ABILITY_GLUTTONY, ABILITY_CONTRARY },
+    #else
+        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_CONTRARY },
+    #endif
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Shuckle"),
         .cryId = CRY_SHUCKLE,
@@ -4334,7 +4342,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+    #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_PICKUP, ABILITY_QUICK_FEET, ABILITY_HONEY_GATHER },
+    #else
+        .abilities = { ABILITY_PICKUP, ABILITY_NONE, ABILITY_HONEY_GATHER },
+    #endif
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Teddiursa"),
@@ -4388,7 +4400,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+    #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_GUTS, ABILITY_QUICK_FEET, ABILITY_UNNERVE },
+    #else
+        .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_UNNERVE },
+    #endif
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Ursaring"),
         .cryId = CRY_URSARING,
@@ -5748,7 +5764,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+    #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_OWN_TEMPO, ABILITY_TECHNICIAN, ABILITY_MOODY },
+    #else
+        .abilities = { ABILITY_OWN_TEMPO, ABILITY_NONE, ABILITY_MOODY },
+    #endif
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Smeargle"),
         .cryId = CRY_SMEARGLE,
@@ -5805,7 +5825,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+    #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_THICK_FAT, ABILITY_SCRAPPY, ABILITY_SAP_SIPPER },
+    #else
+        .abilities = { ABILITY_THICK_FAT, ABILITY_NONE, ABILITY_SAP_SIPPER },
+    #endif
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Miltank"),
         .cryId = CRY_MILTANK,

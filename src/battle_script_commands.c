@@ -357,7 +357,7 @@ static void DrawLevelUpBannerText(void);
 static void SpriteCB_MonIconOnLvlUpBanner(struct Sprite *sprite);
 static bool32 CriticalCapture(u32 odds);
 static void BestowItem(u32 battlerAtk, u32 battlerDef);
-static bool8 IsFinalStrikeEffect(u16 move);
+static bool8 IsFinalStrikeEffect(u32 moveEffect);
 static void TryUpdateRoundTurnOrder(void);
 static bool32 ChangeOrderTargetAfterAttacker(void);
 void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBattler);
@@ -8699,7 +8699,7 @@ static bool32 IsRototillerAffected(u32 battler)
     return TRUE;
 }
 
-static bool32 IsElectricAbilityAffected(u32 ability)
+static bool32 IsElectricAbilityAffected(u32 battler, u32 ability)
 {
     u32 moveType;
 
@@ -8710,7 +8710,9 @@ static bool32 IsElectricAbilityAffected(u32 ability)
     else
         moveType = gMovesInfo[gCurrentMove].type;
 
-    if (moveType == TYPE_ELECTRIC && GetBattlerAbility(gBattlerTarget) == ability)
+    if (moveType == TYPE_ELECTRIC
+     && (ability != ABILITY_LIGHTNING_ROD || B_REDIRECT_ABILITY_IMMUNITY >= GEN_5)
+     && GetBattlerAbility(battler) == ability)
         return TRUE;
     else
         return FALSE;
@@ -15876,10 +15878,9 @@ bool32 IsMoveAffectedByParentalBond(u32 move, u32 battler)
     return FALSE;
 }
 
-static bool8 IsFinalStrikeEffect(u16 move)
+static bool8 IsFinalStrikeEffect(u32 moveEffect)
 {
     u32 i;
-    u16 moveEffect = gMovesInfo[move].effect;
 
     for (i = 0; i < ARRAY_COUNT(sFinalStrikeOnlyEffects); i++)
     {
@@ -16347,28 +16348,12 @@ void BS_JumpIfEmergencyExited(void)
         gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
-void BS_JumpIfRod(void)
+void BS_JumpIfElectricAbilityAffected(void)
 {
-    NATIVE_ARGS(const u8 *jumpInstr);
-    if (IsElectricAbilityAffected(ABILITY_LIGHTNING_ROD))
-        gBattlescriptCurrInstr = cmd->jumpInstr;
-    else
-        gBattlescriptCurrInstr = cmd->nextInstr;
-}
+    NATIVE_ARGS(u8 battler, u16 ability, const u8 *jumpInstr);
+    u32 battler = GetBattlerForBattleScript(cmd->battler);
 
-void BS_JumpIfAbsorb(void)
-{
-    NATIVE_ARGS(const u8 *jumpInstr);
-    if (IsElectricAbilityAffected(ABILITY_VOLT_ABSORB))
-        gBattlescriptCurrInstr = cmd->jumpInstr;
-    else
-        gBattlescriptCurrInstr = cmd->nextInstr;
-}
-
-void BS_JumpIfMotor(void)
-{
-    NATIVE_ARGS(const u8 *jumpInstr);
-    if (IsElectricAbilityAffected(ABILITY_MOTOR_DRIVE))
+    if (IsElectricAbilityAffected(battler, cmd->ability))
         gBattlescriptCurrInstr = cmd->jumpInstr;
     else
         gBattlescriptCurrInstr = cmd->nextInstr;
