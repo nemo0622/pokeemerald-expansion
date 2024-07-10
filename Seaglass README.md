@@ -40,17 +40,17 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
+        - CheckSpecies function [here](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/page-9#post-10213715)
+        - WONDER TRADE NPC: [code here](https://github.com/pret/pokeemerald/compare/master...LOuroboros:pokeemerald:wonder_trade)
     - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
     - NPC TO ENABLE OR DISABLE LEVEL CAPS (or maybe edit book on player desk to be a settings menu!!)
     - Edit existing events to fit with new events: don't give national dex after E4, give something other than shiny charm for collecting all Pokémon
-- Purchase [Arex's Tiles](https://arex-v.itch.io/fantasy), using new tiles to increase map variety
-    - Correct issues with collision while editing maps
 - Add more general QOL features where necessary
+    - Press R to toggle auto-run!
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - DexNav!
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
 - Look into music modding! Convert sound font to be more like gen 2?
-- BASED ON VOTE: white outline on battle sprites!
 
 ## KNOWN BUGS & PROBLEMS
 
