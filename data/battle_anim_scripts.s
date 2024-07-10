@@ -17877,8 +17877,6 @@ Move_BLOOD_MOON::
 Move_MATCHA_GOTCHA::
 Move_IVY_CUDGEL::
 Move_TERA_STARSTORM::
-Move_FICKLE_BEAM::
-Move_THUNDERCLAP::
 Move_MIGHTY_CLEAVE::
 Move_TACHYON_CUTTER::
 Move_HARD_PRESS::
@@ -21880,6 +21878,7 @@ Move_COVET:
 	loopsewithpan SE_M_DIZZY_PUNCH, SOUND_PAN_TARGET, 4, 3
 	end
 
+Move_THUNDERCLAP::
 Move_VOLT_TACKLE:
 	loadspritegfx ANIM_TAG_SPARK
 	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
@@ -23110,6 +23109,7 @@ HydroPumpHitSplats:
 	createsprite gWaterHitSplatSpriteTemplate, ANIM_ATTACKER, 4, 0, -15, ANIM_TARGET, 1
 	return
 
+Move_FICKLE_BEAM::
 Move_SIGNAL_BEAM:
 	loadspritegfx ANIM_TAG_GLOWY_RED_ORB
 	loadspritegfx ANIM_TAG_GLOWY_GREEN_ORB

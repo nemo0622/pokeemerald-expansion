@@ -61,13 +61,20 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 ## CREDITS
 
 Please support everyone who made this possible!
-- Tiles by [Zaebucca](https://zaebucca.itch.io/) on itch.io and Twitter and [Arex](https://arex-v.itch.io/fantasy) on itch.io
-- Most Generation 3 and 9 Pokémon sprites by [Egg](https://x.com/Egg3ggEgg) on Twitter
-- Many Generation 3 and other Pokémon sprites by Nuukiie on DeviantArt
-- Many Generation 4 sprites by ESY on DeviantArt
-- Some Hisuian Pokémon sprites (Kleavor and Ursaluna) by Katten and dwg1109 on DeviantArt
-- New player sprites by Solo993 and GOLDHIBIKI on DeviantArt
-- Some trainer sprites by leeseongjae620 on DeviantArt
-- Generation 1-2 and many UI sprites from Spriter's Resource GSC sprite sheets
-- Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
-- New battle backgrounds by Princess-Phoenix and Carchagui on DeviantArt
+- Tiles:
+    - Most tiles by [Zaebucca](https://zaebucca.itch.io/) on itch.io and Twitter
+    - Some buildings and other bits by [Arex](https://arex-v.itch.io/fantasy) on itch.io
+- Pokémon Sprites:
+    - Most Generation 3 and 9 Pokémon sprites by [Egg](https://x.com/Egg3ggEgg) on Twitter
+    - Many Generation 3 and other Pokémon sprites by [Nuukiie](https://www.deviantart.com/nuukiie) on DeviantArt
+    - Many Generation 4 sprites by ESY on DeviantArt
+    - Some Hisuian Pokémon sprites (Kleavor and Ursaluna) by Katten and dwg1109 on DeviantArt
+    - Generation 1-2 Pokémon and many UI sprites from Spriter's Resource GSC sprite sheets
+    - Spiky-ear Pichu sprite based on Pichu devamp by Matdemo159 on DeviantArt
+    - A few modified Gen 1-2 Pokémon sprites (Golduck, Aipom, Politoed) by Substitube
+- Overworld Sprites:
+    - New player sprites by Solo993 and GOLDHIBIKI on DeviantArt
+    - Some trainer sprites by leeseongjae620 on DeviantArt
+- User Interface:
+    - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
+    - New battle backgrounds by Princess-Phoenix and Carchagui on DeviantArt

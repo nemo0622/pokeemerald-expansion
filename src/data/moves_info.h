@@ -19619,15 +19619,26 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     [MOVE_THUNDERCLAP] =
     {
         .name = COMPOUND_STRING("Thunderclap"),
-        .description = sSuckerPunchDescription,
-        .effect = EFFECT_SUCKER_PUNCH,
-        .power = 70,
+        .description = COMPOUND_STRING(
+            "User blasts by target at\n"
+            "light speed. Boosts stats."),
+        .effect = EFFECT_HIT,
+        .power = 50,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 1,
         .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ALL_STATS_UP,
+            .self = TRUE,
+            .chance = 100,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 20,
+        }),
     },
 
     [MOVE_MIGHTY_CLEAVE] =
