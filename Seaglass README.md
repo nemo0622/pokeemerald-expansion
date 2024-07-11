@@ -28,6 +28,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Type Effectiveness shown in battle
     - HM System revamp: if HM is in bag and the right badge is owned, Pokémon that can learn the HMs can naturally use them
     - Shiny odds 1/4096 by default, but Shiny Charm is in Player PC to increase odds (gives 5 extra rerolls!)
+    - Press R to toggle auto-run
 
 ## FUTURE PLANS
 
@@ -42,11 +43,12 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
         - CheckSpecies function [here](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/page-9#post-10213715)
         - WONDER TRADE NPC: [code here](https://github.com/pret/pokeemerald/compare/master...LOuroboros:pokeemerald:wonder_trade)
+        - Add [Useful Scripting Specials](https://github.com/pret/pokeemerald/wiki/Useful-Scripting-Specials) and [Supplementary Macros](https://github.com/pret/pokeemerald/wiki/Supplementary-Scripting-Macros) to help scripting NPC behaviors and Quests!
     - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
     - NPC TO ENABLE OR DISABLE LEVEL CAPS (or maybe edit book on player desk to be a settings menu!!)
     - Edit existing events to fit with new events: don't give national dex after E4, give something other than shiny charm for collecting all Pokémon
 - Add more general QOL features where necessary
-    - Press R to toggle auto-run!
+    - Ability Capsules/Patches, ways to change EVs and IVs, PokéBall changer, etc
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - DexNav!
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
