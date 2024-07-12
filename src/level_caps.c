@@ -7,6 +7,11 @@
 
 u32 GetCurrentLevelCap(void)
 {
+    if(!FlagGet(FLAG_LEVEL_CAPS_ENABLED)) // if level caps disabled by player
+    {
+        return MAX_LEVEL;
+    }
+
     static const u32 sLevelCapFlagMap[][2] =
     {
         {FLAG_BADGE01_GET, 16},
@@ -46,7 +51,7 @@ u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
     u32 levelDifference;
     u32 currentLevelCap = GetCurrentLevelCap();
 
-    if (B_EXP_CAP_TYPE == EXP_CAP_NONE)
+    if (B_EXP_CAP_TYPE == EXP_CAP_NONE || !FlagGet(FLAG_LEVEL_CAPS_ENABLED))
         return expValue;
 
     if (level < currentLevelCap)

@@ -304,3 +304,28 @@ PlayersHouse_2F_Text_ItsAGameCube:
 	.string "A Game Boy Advance is connected to\n"
 	.string "serve as the Controller.$"
 `
+
+script PlayersHouse_2F_SettingsNotebook
+{
+	lock
+	msgbox(format("Looks like some important settings are in here..."))
+	closemessage
+	msgbox(format("Should {COLOR GREEN}LEVEL CAPS{COLOR DARK_GRAY} be enabled?\N (ENABLED by default.)"), MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == 1) // said yes to level caps
+	{
+		setflag(FLAG_LEVEL_CAPS_ENABLED)
+		msgbox(format("LEVEL CAPS {COLOR GREEN}ENABLED{COLOR DARK_GRAY}."))
+	}
+	else
+	{
+		clearflag(FLAG_LEVEL_CAPS_ENABLED)
+		msgbox(format("LEVEL CAPS {COLOR RED}DISABLED{COLOR DARK_GRAY}."))
+	}
+
+	closemessage
+	msgbox(format("Looks like the rest of the book is empty."))
+	closemessage
+	release
+	end
+}

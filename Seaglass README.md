@@ -49,7 +49,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - MARTS SELLING DIFFERENT ASSORTMENTS OF TMS IN EVERY MART!
     - Edit existing events to fit with new events: don't give national dex after E4, give something other than shiny charm for collecting all Pokémon
 - Add more general QOL features where necessary
-    - Ability Capsules/Patches, ways to change EVs and IVs, PokéBall changer, etc
+    - See EVs and IVs in summary menu!
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - DexNav!
 - Day/Night system? Maybe with FakeRTC system using internal clock system?

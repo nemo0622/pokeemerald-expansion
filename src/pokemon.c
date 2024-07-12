@@ -3515,7 +3515,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
         case 3:
             // Rare Candy / EXP Candy
             if ((itemEffect[i] & ITEM3_LEVEL_UP)
-             && GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL)
+             && GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL && 
+             ((FlagGet(FLAG_LEVEL_CAPS_ENABLED) && GetMonData(mon, MON_DATA_LEVEL) < GetCurrentLevelCap()) || (!FlagGet(FLAG_LEVEL_CAPS_ENABLED))))
             {
                 u8 param = ItemId_GetHoldEffectParam(item);
                 dataUnsigned = 0;

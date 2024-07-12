@@ -608,3 +608,60 @@ PlayersHouse_2F_Text_ItsAGameCube:
 	.string "A Game Boy Advance is connected to\n"
 # 305 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "serve as the Controller.$"
+
+PlayersHouse_2F_SettingsNotebook::
+# 310 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	lock
+# 311 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_0
+# 312 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	closemessage
+# 313 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_1, MSGBOX_YESNO
+# 315 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq PlayersHouse_2F_SettingsNotebook_2
+# 322 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	clearflag FLAG_LEVEL_CAPS_ENABLED
+# 323 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_3
+PlayersHouse_2F_SettingsNotebook_1:
+# 326 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	closemessage
+# 327 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_4
+# 328 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	closemessage
+# 329 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	release
+	end
+
+PlayersHouse_2F_SettingsNotebook_2:
+# 317 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setflag FLAG_LEVEL_CAPS_ENABLED
+# 318 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_2
+	goto PlayersHouse_2F_SettingsNotebook_1
+
+
+PlayersHouse_2F_SettingsNotebook_Text_0:
+# 311 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "Looks like some important settings are\n"
+	.string "in here...$"
+
+PlayersHouse_2F_SettingsNotebook_Text_1:
+# 313 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "Should {COLOR GREEN}LEVEL CAPS{COLOR DARK_GRAY} be enabled?$"
+
+PlayersHouse_2F_SettingsNotebook_Text_2:
+# 318 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "LEVEL CAPS {COLOR GREEN}ENABLED{COLOR DARK_GRAY}.$"
+
+PlayersHouse_2F_SettingsNotebook_Text_3:
+# 323 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "LEVEL CAPS {COLOR RED}DISABLED{COLOR DARK_GRAY}.$"
+
+PlayersHouse_2F_SettingsNotebook_Text_4:
+# 327 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "Looks like the rest of the book is\n"
+	.string "empty.$"
