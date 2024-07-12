@@ -46,6 +46,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
         - Add [Useful Scripting Specials](https://github.com/pret/pokeemerald/wiki/Useful-Scripting-Specials) and [Supplementary Macros](https://github.com/pret/pokeemerald/wiki/Supplementary-Scripting-Macros) to help scripting NPC behaviors and Quests!
     - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
     - NPC TO ENABLE OR DISABLE LEVEL CAPS (or maybe edit book on player desk to be a settings menu!!)
+    - MARTS SELLING DIFFERENT ASSORTMENTS OF TMS IN EVERY MART!
     - Edit existing events to fit with new events: don't give national dex after E4, give something other than shiny charm for collecting all Pokémon
 - Add more general QOL features where necessary
     - Ability Capsules/Patches, ways to change EVs and IVs, PokéBall changer, etc
