@@ -626,13 +626,25 @@ PlayersHouse_2F_SettingsNotebook::
 # 323 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	msgbox PlayersHouse_2F_SettingsNotebook_Text_3
 PlayersHouse_2F_SettingsNotebook_1:
-# 326 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 325 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
 # 327 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_SettingsNotebook_Text_4
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_4, MSGBOX_YESNO
 # 328 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq PlayersHouse_2F_SettingsNotebook_6
+# 335 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setflag FLAG_SYS_DISABLE_BATTLE_BG
+# 336 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_6
+PlayersHouse_2F_SettingsNotebook_5:
+# 338 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
-# 329 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 340 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_7
+# 341 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	closemessage
+# 342 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	release
 	end
 
@@ -643,6 +655,13 @@ PlayersHouse_2F_SettingsNotebook_2:
 	msgbox PlayersHouse_2F_SettingsNotebook_Text_2
 	goto PlayersHouse_2F_SettingsNotebook_1
 
+PlayersHouse_2F_SettingsNotebook_6:
+# 330 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	clearflag FLAG_SYS_DISABLE_BATTLE_BG
+# 331 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_5
+	goto PlayersHouse_2F_SettingsNotebook_5
+
 
 PlayersHouse_2F_SettingsNotebook_Text_0:
 # 311 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -651,17 +670,31 @@ PlayersHouse_2F_SettingsNotebook_Text_0:
 
 PlayersHouse_2F_SettingsNotebook_Text_1:
 # 313 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "Should {COLOR GREEN}LEVEL CAPS{COLOR DARK_GRAY} be enabled?$"
+	.string "Should {COLOR GREEN}LEVEL CAPS{COLOR DARK_GRAY} be enabled?\n"
+	.string "(ENABLED by default.)$"
 
 PlayersHouse_2F_SettingsNotebook_Text_2:
 # 318 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "LEVEL CAPS {COLOR GREEN}ENABLED{COLOR DARK_GRAY}.$"
+	.string "LEVEL CAPS {COLOR GREEN}ENABLED{COLOR DARK_GRAY}!$"
 
 PlayersHouse_2F_SettingsNotebook_Text_3:
 # 323 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "LEVEL CAPS {COLOR RED}DISABLED{COLOR DARK_GRAY}.$"
+	.string "LEVEL CAPS {COLOR RED}DISABLED{COLOR DARK_GRAY}!$"
 
 PlayersHouse_2F_SettingsNotebook_Text_4:
 # 327 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "Should {COLOR BLUE}BATTLE BACKGROUNDS{COLOR DARK_GRAY} be enabled?\n"
+	.string "(ENABLED by default.)$"
+
+PlayersHouse_2F_SettingsNotebook_Text_5:
+# 331 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "BATTLE BACKGROUNDS {COLOR GREEN}ENABLED{COLOR DARK_GRAY}!$"
+
+PlayersHouse_2F_SettingsNotebook_Text_6:
+# 336 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "BATTLE BACKGROUNDS {COLOR RED}DISABLED{COLOR DARK_GRAY}!$"
+
+PlayersHouse_2F_SettingsNotebook_Text_7:
+# 340 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "Looks like the rest of the book is\n"
 	.string "empty.$"

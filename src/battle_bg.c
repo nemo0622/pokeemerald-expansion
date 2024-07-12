@@ -8,6 +8,7 @@
 #include "bg.h"
 #include "data.h"
 #include "decompress.h"
+#include "event_data.h"
 #include "gpu_regs.h"
 #include "graphics.h"
 #include "link.h"
@@ -779,6 +780,14 @@ void LoadBattleMenuWindowGfx(void)
 
 void DrawMainBattleBackground(void)
 {
+    if (FlagGet(FLAG_SYS_DISABLE_BATTLE_BG))
+    {
+        LZDecompressVram(gBattleTerrainTiles_GSC, (void *)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleTerrainTilemap_GSC, (void *)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleTerrainPalette_GSC, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        return;
+    }
+
     if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_RECORDED_LINK))
     {
         LZDecompressVram(gBattleTerrainTiles_Building, (void *)(BG_CHAR_ADDR(2)));
@@ -1154,6 +1163,13 @@ void InitLinkBattleVsScreen(u8 taskId)
 
 void DrawBattleEntryBackground(void)
 {
+    if (FlagGet(FLAG_SYS_DISABLE_BATTLE_BG))
+    {
+        LZDecompressVram(gBattleTerrainAnimTiles_GSC, (void*)(BG_CHAR_ADDR(1)));
+        LZDecompressVram(gBattleTerrainAnimTilemap_GSC, (void*)(BG_SCREEN_ADDR(28)));
+        return;
+    }
+
     if (gBattleTypeFlags & BATTLE_TYPE_LINK)
     {
         LZDecompressVram(gBattleVSFrame_Gfx, (void *)(BG_CHAR_ADDR(1)));
@@ -1261,6 +1277,11 @@ bool8 LoadChosenBattleElement(u8 caseId)
         LoadCompressedPalette(gBattleTextboxPalette, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
         break;
     case 3:
+    {
+        if (FlagGet(FLAG_SYS_DISABLE_BATTLE_BG))
+        {
+            LZDecompressVram(gBattleTerrainTiles_GSC, (void *)(BG_CHAR_ADDR(2)));
+        }
         if (gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_EREADER_TRAINER))
         {
             LZDecompressVram(gBattleTerrainTiles_Building, (void *)(BG_CHAR_ADDR(2)));
@@ -1327,7 +1348,14 @@ bool8 LoadChosenBattleElement(u8 caseId)
             }
         }
         break;
+    }
     case 4:
+    {
+        if (FlagGet(FLAG_SYS_DISABLE_BATTLE_BG))
+        {
+            LZDecompressVram(gBattleTerrainTilemap_GSC, (void *)(BG_SCREEN_ADDR(26)));
+            break;
+        }
         if (gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_EREADER_TRAINER))
         {
             LZDecompressVram(gBattleTerrainTilemap_Building, (void *)(BG_SCREEN_ADDR(26)));
@@ -1389,7 +1417,14 @@ bool8 LoadChosenBattleElement(u8 caseId)
             }
         }
         break;
+    }
     case 5:
+    {
+        if (FlagGet(FLAG_SYS_DISABLE_BATTLE_BG))
+        {
+            LoadCompressedPalette(gBattleTerrainPalette_GSC, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            break;
+        }
         if (gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_EREADER_TRAINER))
         {
             LoadCompressedPalette(gBattleTerrainPalette_Frontier, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
@@ -1451,6 +1486,7 @@ bool8 LoadChosenBattleElement(u8 caseId)
             }
         }
         break;
+    }
     case 6:
         LoadBattleMenuWindowGfx();
         break;
