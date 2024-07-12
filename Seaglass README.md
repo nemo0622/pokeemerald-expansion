@@ -45,7 +45,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
         - WONDER TRADE NPC: [code here](https://github.com/pret/pokeemerald/compare/master...LOuroboros:pokeemerald:wonder_trade)
         - Add [Useful Scripting Specials](https://github.com/pret/pokeemerald/wiki/Useful-Scripting-Specials) and [Supplementary Macros](https://github.com/pret/pokeemerald/wiki/Supplementary-Scripting-Macros) to help scripting NPC behaviors and Quests!
     - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
-    - NPC TO ENABLE OR DISABLE LEVEL CAPS (or maybe edit book on player desk to be a settings menu!!)
     - MARTS SELLING DIFFERENT ASSORTMENTS OF TMS IN EVERY MART!
     - Edit existing events to fit with new events: don't give national dex after E4, give something other than shiny charm for collecting all Pokémon
 - Add more general QOL features where necessary
@@ -81,3 +80,4 @@ Please support everyone who made this possible!
 - User Interface:
     - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
     - New battle backgrounds by Princess-Phoenix and Carchagui on DeviantArt
+    - Option to disable battle backgrounds by Mudskip (thank you!)

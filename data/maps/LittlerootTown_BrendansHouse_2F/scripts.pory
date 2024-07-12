@@ -337,7 +337,20 @@ script PlayersHouse_2F_SettingsNotebook
 	}
 	closemessage
 
-	msgbox(format("Looks like the rest of the book is empty."))
+	msgbox(format("Should {COLOR RED}HARD MODE{COLOR DARK_GRAY} be enabled?\N (DISABLED by default.)\N HARD MODE increases opposing POKéMON levels by more as you progress."), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 1) // said yes
+	{
+		setvar(VAR_DIFFICULTY, 1) // sets difficulty to hard (VAR_DIFFICULTY is defined as 1)
+		msgbox(format("HARD MODE {COLOR GREEN}ENABLED{COLOR DARK_GRAY}!"))
+	}
+	else
+	{
+		setvar(VAR_DIFFICULTY, 0) // sets difficulty to normal
+		msgbox(format("HARD MODE {COLOR RED}DISABLED{COLOR DARK_GRAY}!"))
+	}
+	closemessage
+
+	msgbox(format("Looks like the rest of the book is empty. Time to go!"))
 	closemessage
 	release
 	end

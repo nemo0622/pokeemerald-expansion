@@ -641,10 +641,22 @@ PlayersHouse_2F_SettingsNotebook_5:
 # 338 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
 # 340 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_SettingsNotebook_Text_7
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_7, MSGBOX_YESNO
 # 341 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq PlayersHouse_2F_SettingsNotebook_10
+# 348 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setvar VAR_DIFFICULTY, 0
+# 349 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_9
+PlayersHouse_2F_SettingsNotebook_9:
+# 351 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
-# 342 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 353 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_10
+# 354 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	closemessage
+# 355 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	release
 	end
 
@@ -661,6 +673,13 @@ PlayersHouse_2F_SettingsNotebook_6:
 # 331 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	msgbox PlayersHouse_2F_SettingsNotebook_Text_5
 	goto PlayersHouse_2F_SettingsNotebook_5
+
+PlayersHouse_2F_SettingsNotebook_10:
+# 343 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setvar VAR_DIFFICULTY, 1
+# 344 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_8
+	goto PlayersHouse_2F_SettingsNotebook_9
 
 
 PlayersHouse_2F_SettingsNotebook_Text_0:
@@ -696,5 +715,20 @@ PlayersHouse_2F_SettingsNotebook_Text_6:
 
 PlayersHouse_2F_SettingsNotebook_Text_7:
 # 340 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "Should {COLOR RED}HARD MODE{COLOR DARK_GRAY} be enabled?\n"
+	.string "(DISABLED by default.)\l"
+	.string "HARD MODE increases opposing POKéMON\l"
+	.string "levels by more as you progress.$"
+
+PlayersHouse_2F_SettingsNotebook_Text_8:
+# 344 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "HARD MODE {COLOR GREEN}ENABLED{COLOR DARK_GRAY}!$"
+
+PlayersHouse_2F_SettingsNotebook_Text_9:
+# 349 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "HARD MODE {COLOR RED}DISABLED{COLOR DARK_GRAY}!$"
+
+PlayersHouse_2F_SettingsNotebook_Text_10:
+# 353 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "Looks like the rest of the book is\n"
-	.string "empty.$"
+	.string "empty. Time to go!$"

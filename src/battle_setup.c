@@ -846,7 +846,7 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
 
     party = GetTrainerPartyFromId(opponentId);
     for (i = 0; i < count && party != NULL; i++)
-        sum += party[i].lvl;
+        sum += GetScaledLevel(party[i].lvl);
 
     return sum;
 }
@@ -2023,4 +2023,36 @@ u16 CountBattledRematchTeams(u16 trainerId)
     }
 
     return i;
+}
+
+u8 GetScaledLevel(u8 lvl)
+{
+    u8 badgeCount = 0;
+    u8 levelScaling = 0;
+    u32 i;
+    for (i = FLAG_BADGE01_GET; i < FLAG_BADGE01_GET + NUM_BADGES; i++)
+    {
+        if (FlagGet(i))
+            badgeCount++;
+    }
+
+    if (FlagGet(FLAG_IS_CHAMPION)) // if champion, enemy levels are +4
+        levelScaling = 4;
+    else if (badgeCount >= 8) // if has 8 badges but is not champion yet, enemy levels +4
+        levelScaling = 4;
+    else if (badgeCount >= 5) // if has 5 or more badges (after Norman), enemy levels +3
+        levelScaling = 3;
+    else if (badgeCount >= 2) // if has 2 or more badges (after Brawly), enemy levels +2
+        levelScaling = 2;
+    else // if no badges yet, enemy levels +1
+        levelScaling = 1;
+
+    if (VarGet(VAR_DIFFICULTY) == DIFFICULTY_HARD)
+        lvl += levelScaling;
+
+    if (lvl > 100)
+        lvl = 100;
+    if (lvl < 1)
+        lvl = 1;
+    return lvl;
 }

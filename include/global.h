@@ -128,6 +128,9 @@
 
 #define FEATURE_FLAG_ASSERT(flag, id) STATIC_ASSERT(flag > TEMP_FLAGS_END || flag == 0, id)
 
+#define DIFFICULTY_NORMAL    0
+#define DIFFICULTY_HARD      1
+
 struct Coords8
 {
     s8 x;
