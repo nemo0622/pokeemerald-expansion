@@ -1692,3 +1692,46 @@ MtChimney_Text_SawyerPostRematch:
 	.string "Actually, it really is hot here.\n"
 # 847 "data/maps/MtChimney/scripts.pory"
 	.string "I'm overdressed for these parts.$"
+
+MtChimney_EventScript_WishingStarSaleswoman::
+# 854 "data/maps/MtChimney/scripts.pory"
+	lock
+# 855 "data/maps/MtChimney/scripts.pory"
+	faceplayer
+# 856 "data/maps/MtChimney/scripts.pory"
+	msgbox MtChimney_EventScript_WishingStarSaleswoman_Text_0
+# 857 "data/maps/MtChimney/scripts.pory"
+	closemessage
+# 858 "data/maps/MtChimney/scripts.pory"
+	msgbox MtChimney_EventScript_WishingStarSaleswoman_Text_1
+# 859 "data/maps/MtChimney/scripts.pory"
+	waitmessage
+# 860 "data/maps/MtChimney/scripts.pory"
+	pokemart WishingStarMart
+# 861 "data/maps/MtChimney/scripts.pory"
+	msgbox MtChimney_EventScript_WishingStarSaleswoman_Text_2
+# 862 "data/maps/MtChimney/scripts.pory"
+	release
+	end
+
+
+	.align 2
+# 866 "data/maps/MtChimney/scripts.pory"
+WishingStarMart:
+# 868 "data/maps/MtChimney/scripts.pory"
+	.2byte ITEM_WISHING_STAR
+	.2byte ITEM_NONE
+
+MtChimney_EventScript_WishingStarSaleswoman_Text_0:
+# 856 "data/maps/MtChimney/scripts.pory"
+	.string "These rocks... I think these are where\n"
+	.string "Wishing Stars come from! The heat of\l"
+	.string "the volcano creates these!$"
+
+MtChimney_EventScript_WishingStarSaleswoman_Text_1:
+# 858 "data/maps/MtChimney/scripts.pory"
+	.string "Would you like to buy any?$"
+
+MtChimney_EventScript_WishingStarSaleswoman_Text_2:
+# 861 "data/maps/MtChimney/scripts.pory"
+	.string "Come back soon! I'll be here collecting!$"

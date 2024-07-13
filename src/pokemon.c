@@ -73,6 +73,7 @@ static void Task_PlayMapChosenOrBattleBGM(u8 taskId);
 static bool8 ShouldSkipFriendshipChange(void);
 static void RemoveIVIndexFromList(u8 *ivs, u8 selectedIv);
 void TrySpecialOverworldEvo();
+static void ShuffleStatArray(u8* statArray);
 
 EWRAM_DATA static u8 sLearningMoveTableID = 0;
 EWRAM_DATA u8 gPlayerPartyCount = 0;
@@ -837,6 +838,9 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     u8 selectedIvs[LEGENDARY_PERFECT_IV_COUNT];
     bool32 isShiny;
 
+    u8 maxIV = MAX_IV_MASK;
+    u8 statIDs[] = {0, 1, 2, 3, 4, 5};
+
     ZeroBoxMonData(boxMon);
 
     if (hasFixedPersonality)
@@ -939,6 +943,14 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         SetBoxMonData(boxMon, MON_DATA_SPATK_IV, &iv);
         iv = (value & (MAX_IV_MASK << 10)) >> 10;
         SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
+
+        // Set two random IVs to 31
+        ShuffleStatArray(statIDs);
+
+        for (i = 0; i < 2; i++)
+        {
+            SetBoxMonData(boxMon, MON_DATA_HP_IV + statIDs[i], &maxIV);
+        }
 
         if (gSpeciesInfo[species].allPerfectIVs)
         {
@@ -6573,4 +6585,17 @@ u16 GetSpeciesPreEvolution(u16 species)
 const u8 *GetMoveName(u16 moveId)
 {
     return gMovesInfo[moveId].name;
+}
+
+static void ShuffleStatArray(u8* statArray)
+{
+    int i;
+
+    // Shuffle the stats array using a Fisher-Yates shuffle
+    for (i = NUM_STATS - 1; i > 0; i--)
+    {
+        u8 temp;
+        int j = Random() % (i + 1);
+        SWAP(statArray[i], statArray[j], temp);
+    }
 }

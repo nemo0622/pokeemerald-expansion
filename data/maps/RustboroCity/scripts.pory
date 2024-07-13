@@ -1299,3 +1299,99 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
 `
+
+script RustboroCity_EventScript_WishingWell
+{
+
+	lockall
+	msgbox(format("You peer down the Wishing Well...\N The air begins to sparkle."))
+	closemessage
+
+	checkitem(ITEM_WISHING_STAR)
+
+	if(var(VAR_RESULT) == 1) // if player has a Wishing Star
+	{
+		msgbox(format("Toss a Wishing Star into the Well?"), MSGBOX_YESNO)
+
+		if(var(VAR_RESULT) == 1) // yes, toss Wishing Star into well
+		{
+
+			removeitem(ITEM_WISHING_STAR)
+
+			msgbox(format("The Wishing Star shines as it falls..."))
+			closemessage
+			msgbox("...  ...  ...  ...!")
+			closemessage
+
+			// Generate a random item or Pokémon to give to the player
+			randompercentage(25) // VAR_RESULT is true 25% of the time
+			if(var(VAR_RESULT) == 0) // 75% of the time, an item is given
+			{
+				randomelement(ITEM_PEARL, ITEM_NUGGET, ITEM_RARE_CANDY, ITEM_ABILITY_CAPSULE, ITEM_ABILITY_PATCH, ITEM_CHERISH_BALL,
+ ITEM_FIRE_STONE, ITEM_WATER_STONE, ITEM_THUNDER_STONE, ITEM_LUCK_INCENSE)
+				giveitem(VAR_RESULT)
+			}
+			else // the other 25% of the time, a Pokémon is pulled!
+			{
+				randomelement(SPECIES_SANDSHREW, SPECIES_SHUPPET, SPECIES_MAGNEMITE, SPECIES_FARFETCHD, SPECIES_SEEL,
+ SPECIES_EEVEE, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_CHINCHOU, SPECIES_GLIGAR, SPECIES_TRAPINCH)
+				givemon(VAR_RESULT, 1)
+				msgbox(format("A POKé BALL appeared... containing a POKéMON!"))
+				closemessage
+				if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY) 
+				{ 
+					call(Common_EventScript_GetGiftMonPartySlot)
+					call(Common_EventScript_NameReceivedPartyMon) 
+				}
+				else 
+				{ 
+					call(Common_EventScript_NameReceivedBoxMon)
+					msgbox("The POKéMON was sent to the PC.")
+					closemessage
+				}
+			}
+
+		}
+	}
+
+	releaseall
+	end
+
+}
+
+script RustboroCity_EventScript_LittleGirlWithWishingStar
+{
+
+	lock
+	faceplayer
+	if(!flag(FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL))
+	{
+		msgbox(format("See that over there?\N That's the last part of OLD RUSTBORO, the TOWN that was here before!"))
+		closemessage
+		msgbox(format("Sometimes, my friends and me throw Wishing Stars down the Wishing Well! Here's a few for you!"))
+		closemessage
+		giveitem(ITEM_WISHING_STAR, 5)
+		setflag(FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL)
+	}
+	else
+	{
+		msgbox(format("Did you get anything cool from the Wishing Well?"))
+		closemessage
+	}
+	release
+	end
+
+}
+
+script RustboroCity_EventScript_WishingWellSign
+{
+
+	lock
+	msgbox(format("OLD RUSTBORO PARK\N To Honor Our Roots."))
+	closemessage
+	msgbox(format("There's more scribbled on here...\p Use Wishing Stars at the Wishing Well! Old ITEMS and even POKéMON are granted!"))
+	closemessage
+	release
+	end
+
+}

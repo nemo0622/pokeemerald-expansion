@@ -32,6 +32,10 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - HM System revamp: if HM is in bag and the right badge is owned, Pokémon that can learn the HMs can naturally use them
     - Shiny odds 1/4096 by default, but Shiny Charm is in Player PC to increase odds (gives 5 extra rerolls!)
     - Press R to toggle auto-run
+    - Press A in Summary Screen to view IVs and EVs; All Pokémon have at least 2 perfect IV's
+    - Legendaries can all be encountered:
+        - After catching the first roaming Lati (Latios/Latias) after becoming Champion, the other begins to roam
+        - Jirachi obtained by interacting with Mossdeep White Rock with Wishing Star in bag
 
 ## FUTURE PLANS
 
@@ -53,6 +57,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Add more general QOL features where necessary
     - See EVs and IVs in summary menu!
     - Make unused Pokedolls obtainable, and make Lilycove department sale happen more often
+    - Place to purchase all evolution items (Fortree?)
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - DexNav!
 - Day/Night system? Maybe with FakeRTC system using internal clock system?

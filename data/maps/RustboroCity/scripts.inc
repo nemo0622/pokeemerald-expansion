@@ -2598,3 +2598,181 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "Don't you think it'd be cool if you\n"
 # 1300 "data/maps/RustboroCity/scripts.pory"
 	.string "could beat two TRAINERS by yourself?$"
+
+RustboroCity_EventScript_WishingWell::
+# 1306 "data/maps/RustboroCity/scripts.pory"
+	lockall
+# 1307 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_WishingWell_Text_0
+# 1308 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1310 "data/maps/RustboroCity/scripts.pory"
+	checkitem ITEM_WISHING_STAR
+# 1312 "data/maps/RustboroCity/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq RustboroCity_EventScript_WishingWell_2
+RustboroCity_EventScript_WishingWell_1:
+# 1357 "data/maps/RustboroCity/scripts.pory"
+	releaseall
+	end
+
+RustboroCity_EventScript_WishingWell_2:
+# 1314 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_WishingWell_Text_1, MSGBOX_YESNO
+# 1316 "data/maps/RustboroCity/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq RustboroCity_EventScript_WishingWell_4
+	goto RustboroCity_EventScript_WishingWell_1
+
+RustboroCity_EventScript_WishingWell_4:
+# 1319 "data/maps/RustboroCity/scripts.pory"
+	removeitem ITEM_WISHING_STAR
+# 1321 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_WishingWell_Text_2
+# 1322 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1323 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_WishingWell_Text_3
+# 1324 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1327 "data/maps/RustboroCity/scripts.pory"
+	randompercentage 25
+# 1328 "data/maps/RustboroCity/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq RustboroCity_EventScript_WishingWell_6
+# 1336 "data/maps/RustboroCity/scripts.pory"
+	randomelement SPECIES_SANDSHREW, SPECIES_SHUPPET, SPECIES_MAGNEMITE, SPECIES_FARFETCHD, SPECIES_SEEL, SPECIES_EEVEE, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_CHINCHOU, SPECIES_GLIGAR, SPECIES_TRAPINCH
+# 1338 "data/maps/RustboroCity/scripts.pory"
+	givemon VAR_RESULT, 1
+# 1339 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_WishingWell_Text_4
+# 1340 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1341 "data/maps/RustboroCity/scripts.pory"
+	compare VAR_RESULT, MON_GIVEN_TO_PARTY
+	goto_if_eq RustboroCity_EventScript_WishingWell_9
+# 1348 "data/maps/RustboroCity/scripts.pory"
+	call Common_EventScript_NameReceivedBoxMon
+# 1349 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_WishingWell_Text_5
+# 1350 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+	goto RustboroCity_EventScript_WishingWell_1
+
+RustboroCity_EventScript_WishingWell_6:
+# 1330 "data/maps/RustboroCity/scripts.pory"
+	randomelement ITEM_PEARL, ITEM_NUGGET, ITEM_RARE_CANDY, ITEM_ABILITY_CAPSULE, ITEM_ABILITY_PATCH, ITEM_CHERISH_BALL, ITEM_FIRE_STONE, ITEM_WATER_STONE, ITEM_THUNDER_STONE, ITEM_LUCK_INCENSE
+# 1332 "data/maps/RustboroCity/scripts.pory"
+	giveitem VAR_RESULT
+	goto RustboroCity_EventScript_WishingWell_1
+
+RustboroCity_EventScript_WishingWell_9:
+# 1343 "data/maps/RustboroCity/scripts.pory"
+	call Common_EventScript_GetGiftMonPartySlot
+# 1344 "data/maps/RustboroCity/scripts.pory"
+	call Common_EventScript_NameReceivedPartyMon
+	goto RustboroCity_EventScript_WishingWell_1
+
+
+RustboroCity_EventScript_LittleGirlWithWishingStar::
+# 1365 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1366 "data/maps/RustboroCity/scripts.pory"
+	faceplayer
+# 1367 "data/maps/RustboroCity/scripts.pory"
+	goto_if_unset FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL, RustboroCity_EventScript_LittleGirlWithWishingStar_2
+# 1378 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_LittleGirlWithWishingStar_Text_2
+# 1379 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+RustboroCity_EventScript_LittleGirlWithWishingStar_1:
+# 1381 "data/maps/RustboroCity/scripts.pory"
+	release
+	end
+
+RustboroCity_EventScript_LittleGirlWithWishingStar_2:
+# 1369 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_LittleGirlWithWishingStar_Text_0
+# 1370 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1371 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_LittleGirlWithWishingStar_Text_1
+# 1372 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1373 "data/maps/RustboroCity/scripts.pory"
+	giveitem ITEM_WISHING_STAR, 5
+# 1374 "data/maps/RustboroCity/scripts.pory"
+	setflag FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL
+	goto RustboroCity_EventScript_LittleGirlWithWishingStar_1
+
+
+RustboroCity_EventScript_WishingWellSign::
+# 1389 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1390 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_WishingWellSign_Text_0
+# 1391 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1392 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_WishingWellSign_Text_1
+# 1393 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1394 "data/maps/RustboroCity/scripts.pory"
+	release
+	end
+
+
+RustboroCity_EventScript_WishingWell_Text_0:
+# 1307 "data/maps/RustboroCity/scripts.pory"
+	.string "You peer down the Wishing Well...\n"
+	.string "The air begins to sparkle.$"
+
+RustboroCity_EventScript_WishingWell_Text_1:
+# 1314 "data/maps/RustboroCity/scripts.pory"
+	.string "Toss a Wishing Star into the Well?$"
+
+RustboroCity_EventScript_WishingWell_Text_2:
+# 1321 "data/maps/RustboroCity/scripts.pory"
+	.string "The Wishing Star shines as it falls...$"
+
+RustboroCity_EventScript_WishingWell_Text_3:
+# 1323 "data/maps/RustboroCity/scripts.pory"
+	.string "...  ...  ...  ...!$"
+
+RustboroCity_EventScript_WishingWell_Text_4:
+# 1339 "data/maps/RustboroCity/scripts.pory"
+	.string "A POKé BALL appeared... containing a\n"
+	.string "POKéMON!$"
+
+RustboroCity_EventScript_WishingWell_Text_5:
+# 1349 "data/maps/RustboroCity/scripts.pory"
+	.string "The POKéMON was sent to the PC.$"
+
+RustboroCity_EventScript_LittleGirlWithWishingStar_Text_0:
+# 1369 "data/maps/RustboroCity/scripts.pory"
+	.string "See that over there?\n"
+	.string "That's the last part of OLD RUSTBORO,\l"
+	.string "the TOWN that was here before!$"
+
+RustboroCity_EventScript_LittleGirlWithWishingStar_Text_1:
+# 1371 "data/maps/RustboroCity/scripts.pory"
+	.string "Sometimes, my friends and me throw\n"
+	.string "Wishing Stars down the Wishing Well!\l"
+	.string "Here's a few for you!$"
+
+RustboroCity_EventScript_LittleGirlWithWishingStar_Text_2:
+# 1378 "data/maps/RustboroCity/scripts.pory"
+	.string "Did you get anything cool from the\n"
+	.string "Wishing Well?$"
+
+RustboroCity_EventScript_WishingWellSign_Text_0:
+# 1390 "data/maps/RustboroCity/scripts.pory"
+	.string "OLD RUSTBORO PARK\n"
+	.string "To Honor Our Roots.$"
+
+RustboroCity_EventScript_WishingWellSign_Text_1:
+# 1392 "data/maps/RustboroCity/scripts.pory"
+	.string "There's more scribbled on here...\p"
+	.string "Use Wishing Stars at the Wishing Well!\n"
+	.string "Old ITEMS and even POKéMON are\l"
+	.string "granted!$"

@@ -11,3 +11,25 @@ GraniteCave_B1F_SetHoleWarp:
 	end
 
 `
+
+script GraniteCave_WishingStarHiker
+{
+
+	lock
+	faceplayer
+	if(!flag(FLAG_SPOKE_TO_WISHING_STAR_HIKER))
+	{
+		msgbox(format("Oh, another explorer huh?\N I'm looking for rare gems, but I've only found these... maybe you can use them?"))
+		closemessage
+		setflag(FLAG_SPOKE_TO_WISHING_STAR_HIKER)
+		giveitem(ITEM_WISHING_STAR, 4)
+	}
+	else
+	{
+		msgbox(format("Hope you think those rocks are cool. Wishing Stars, huh?"))
+		closemessage
+	}
+	release
+	end
+
+}

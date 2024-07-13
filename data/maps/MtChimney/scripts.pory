@@ -847,3 +847,23 @@ MtChimney_Text_SawyerPostRematch:
 	.string "I'm overdressed for these parts.$"
 
 `
+
+script MtChimney_EventScript_WishingStarSaleswoman
+{
+
+	lock
+	faceplayer
+	msgbox(format("These rocks... I think these are where Wishing Stars come from! The heat of the volcano creates these!"))
+	closemessage
+	msgbox(format("Would you like to buy any?"))
+	waitmessage
+	pokemart(WishingStarMart)
+	msgbox(format("Come back soon! I'll be here collecting!"))
+	release
+	end
+}
+
+mart WishingStarMart
+{
+	ITEM_WISHING_STAR
+}

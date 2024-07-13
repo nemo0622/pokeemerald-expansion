@@ -655,10 +655,10 @@
 #define FLAG_SPOKE_TO_PETALBURG_BROTHERS  0x264
 #define FLAG_SPOKE_TO_MINT_SELLER  0x265
 #define FLAG_LEVEL_CAPS_ENABLED  0x266 // Whether or not to use level caps
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
+#define FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL  0x267
+#define FLAG_SPOKE_TO_WISHING_STAR_HIKER  0x268
+#define FLAG_SPOKE_TO_MOSSDEEP_WHITE_ROCK_LADY  0x269 // After speaking to her, you can encounter Jirachi
+#define FLAG_ENCOUNTERED_JIRACHI  0x26A
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
