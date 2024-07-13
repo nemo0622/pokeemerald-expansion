@@ -23,7 +23,10 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Almost all Pokémon have recieved some changes! From slight stat changes to new types, each Pokémon should feel more unique to use
 - Party-wide EXP Share, with soft level caps to balance this change
     - This is *NOT* a "difficulty hack"! These changes just cut down on some grind while still keeping a good balance
-    - Soft level cap allows for you to reach 1 level above the gym leader's max, then halves exp gain for the next few levels, then cuts it more
+    - Soft level cap allows for you to reach the gym leader's max, then halves exp gain for the next few levels, then cuts it more
+- Battle Gimmick: Z-Power Ring and Z-Crystals can be obtained from the DEVON Corporation after delivering Steven's letter
+    - Completely optional and out of the way - if you don't like Z-Moves, don't even bother getting the Z-Ring!
+    - EXP. Share is given by Scott in Petalburg, just after Wally's catching tutorial
 - Various QoL Changes, including:
     - Type Effectiveness shown in battle
     - HM System revamp: if HM is in bag and the right badge is owned, Pokémon that can learn the HMs can naturally use them
@@ -40,15 +43,16 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
+        - Create NPC quest that gives ITEM_POKEMON_BOX_LINK
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
         - CheckSpecies function [here](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/page-9#post-10213715)
         - WONDER TRADE NPC: [code here](https://github.com/pret/pokeemerald/compare/master...LOuroboros:pokeemerald:wonder_trade)
         - Add [Useful Scripting Specials](https://github.com/pret/pokeemerald/wiki/Useful-Scripting-Specials) and [Supplementary Macros](https://github.com/pret/pokeemerald/wiki/Supplementary-Scripting-Macros) to help scripting NPC behaviors and Quests!
     - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
     - MARTS SELLING DIFFERENT ASSORTMENTS OF TMS IN EVERY MART!
-    - Edit existing events to fit with new events: don't give national dex after E4, give something other than shiny charm for collecting all Pokémon
 - Add more general QOL features where necessary
     - See EVs and IVs in summary menu!
+    - Make unused Pokedolls obtainable, and make Lilycove department sale happen more often
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - DexNav!
 - Day/Night system? Maybe with FakeRTC system using internal clock system?

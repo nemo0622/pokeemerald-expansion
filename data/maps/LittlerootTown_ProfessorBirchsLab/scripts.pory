@@ -106,7 +106,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_SetObjectPosForJohtoStarters::
 LittlerootTown_ProfessorBirchsLab_OnFrame:
 	map_script_2 VAR_BIRCH_LAB_STATE, 2, LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterEvent
 	map_script_2 VAR_BIRCH_LAB_STATE, 4, LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedexEvent
-	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex
+	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_ProfessorBirchsLab_EventScript_GiveCatchingCharm
 	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 4, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseJohtoStarter
 	.2byte 0
 
@@ -166,43 +166,15 @@ LittlerootTown_ProfessorBirchsLab_Movement_PlayerEnterLabForPokedex:
 	walk_up
 	step_end
 
-LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex::
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveCatchingCharm::
 	lockall
 	delay 30
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_BIRCH, LittlerootTown_ProfessorBirchsLab_Movement_BirchRetrievePokedexes
-	waitmovement 0
-	delay 20
-	playse SE_CLICK
-	delay 10
-	playse SE_CLICK
-	delay 10
-	playse SE_CLICK
-	delay 10
-	playse SE_CLICK
-	delay 20
-	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterRight
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, LittlerootTown_ProfessorBirchsLab_EventScript_MayUpgradeComment
-	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_ProfessorBirchsLab_EventScript_BrendanUpgradeComment
-	playse SE_PC_ON
-	waitse
-	delay 20
-	applymovement LOCALID_BIRCH, LittlerootTown_ProfessorBirchsLab_Movement_BirchReturnPokedex
-	waitmovement 0
-	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterUp
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone, MSGBOX_DEFAULT
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_HelpCatchMore, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
-	message LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
+	message LittlerootTown_ProfessorBirchsLab_Text_GivenCatchingCharm
 	waitmessage
 	waitfanfare
-	setflag FLAG_SYS_NATIONAL_DEX
-	special EnableNationalPokedex
+	giveitem ITEM_CATCHING_CHARM
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH
@@ -376,6 +348,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedCyndaquil::
 	hidemonpic
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting, MSGBOX_DEFAULT
 	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6
+	giveitem ITEM_EXP_CHARM
 	releaseall
 	end
 
@@ -417,6 +390,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedTotodile::
 	hidemonpic
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting, MSGBOX_DEFAULT
 	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6
+	giveitem ITEM_EXP_CHARM
 	releaseall
 	end
 
@@ -458,6 +432,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedChikorita::
 	hidemonpic
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting, MSGBOX_DEFAULT
 	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6
+	giveitem ITEM_EXP_CHARM
 	releaseall
 	end
 
@@ -843,25 +818,26 @@ LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
 	.string "Here, let me see your POKéDEX units.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
-	.string "MAY: Eheheh!\p"
-	.string "It's so cool that even my POKéDEX\n"
-	.string "is getting updated!\p"
-	.string "It's because you went out and caught\n"
-	.string "so many POKéMON, {PLAYER}{KUN}!$"
+	.string "MAY: Wow, cool!\p"
+	.string "Charms like the Catching Charm\n"
+	.string "and Shiny Charm can totally\p"
+	.string "change your adventure! You're so\n"
+	.string "lucky, {PLAYER}{KUN}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
-	.string "BRENDAN: I went out all over HOENN\n"
-	.string "and checked out POKéMON.\p"
-	.string "You can thank me for getting\n"
-	.string "the NATIONAL Mode POKéDEX.\p"
-	.string "Yep, you're lucky, {PLAYER}!$"
+	.string "BRENDAN: Wow, cool!\p"
+	.string "Charms like the Catching Charm\n"
+	.string "and Shiny Charm can totally\p"
+	.string "change your adventure! You're so\n"
+	.string "lucky, {PLAYER}{KUN}!$"
 
-LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
-	.string "PROF. BIRCH: Okay, all done!$"
+LittlerootTown_ProfessorBirchsLab_Text_HelpCatchMore:
+	.string "PROF. BIRCH: Here's something to\n"
+	.string "help catch more POKéMON!$"
 
-LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational:
-	.string "{PLAYER}'s POKéDEX was upgraded\n"
-	.string "to the NATIONAL Mode!$"
+LittlerootTown_ProfessorBirchsLab_Text_GivenCatchingCharm:
+	.string "{PLAYER} was given a CATCHING\n"
+	.string "CHARM!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
 	.string "PROF. BIRCH: But listen.\n"
@@ -871,6 +847,9 @@ LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
 	.string "that is POKéMON.\p"
 	.string "Somewhere, there is a grassy patch\n"
 	.string "that's waiting for you!$"
+
+LittlerootTown_ProfessorBirchsLab_Text_ReceivedExpCharm:
+	.string "{PLAYER} was given the EXP CHARM!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayTakeBreakFromFieldwork:
 	.string "MAY: I think I'll take a short break\n"
@@ -951,7 +930,9 @@ LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting:
 	.string "There is no end to the road\n"
 	.string "that is POKéMON.\p"
 	.string "Somewhere, there is a grassy patch\n"
-	.string "that's waiting for you!$"
+	.string "that's waiting for you!"
+	.string "Oh right, here's a little something\n"
+	.string "extra!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone:
 	.string "You received the promised POKéMON.\n"

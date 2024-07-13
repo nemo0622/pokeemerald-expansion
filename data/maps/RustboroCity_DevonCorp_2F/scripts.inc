@@ -766,3 +766,104 @@ RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext:
 	.string "One couldn't ask for a better\n"
 # 384 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "environment as an engineer.$"
+
+RustboroCity_DevonCorp_2F_ZCrystalSalesman::
+# 391 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	lock
+# 392 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	faceplayer
+# 393 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_Z_RING, RustboroCity_DevonCorp_2F_ZCrystalSalesman_2
+# 402 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_2F_ZCrystalSalesman_Text_2
+# 403 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	waitmessage
+# 404 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	pokemart ZCrystalShop
+# 405 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_2F_ZCrystalSalesman_Text_3
+# 406 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	closemessage
+RustboroCity_DevonCorp_2F_ZCrystalSalesman_1:
+# 409 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	release
+	end
+
+RustboroCity_DevonCorp_2F_ZCrystalSalesman_2:
+# 395 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_2F_ZCrystalSalesman_Text_0
+# 396 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	closemessage
+# 397 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	msgbox RustboroCity_DevonCorp_2F_ZCrystalSalesman_Text_1
+# 398 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	closemessage
+	goto RustboroCity_DevonCorp_2F_ZCrystalSalesman_1
+
+
+	.align 2
+# 414 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+ZCrystalShop:
+# 416 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_NORMALIUM_Z
+# 417 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_FIRIUM_Z
+# 418 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_WATERIUM_Z
+# 419 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_GRASSIUM_Z
+# 420 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_ELECTRIUM_Z
+# 421 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_ICIUM_Z
+# 422 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_FIGHTINIUM_Z
+# 423 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_POISONIUM_Z
+# 424 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_GROUNDIUM_Z
+# 425 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_FLYINIUM_Z
+# 426 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_PSYCHIUM_Z
+# 427 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_BUGINIUM_Z
+# 428 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_ROCKIUM_Z
+# 429 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_GHOSTIUM_Z
+# 430 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_DRAGONIUM_Z
+# 431 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_DARKINIUM_Z
+# 432 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_STEELIUM_Z
+# 433 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.2byte ITEM_FAIRIUM_Z
+	.2byte ITEM_NONE
+
+RustboroCity_DevonCorp_2F_ZCrystalSalesman_Text_0:
+# 395 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.string "Ah, hello there. I'm an old friend of Mr.\n"
+	.string "Stone.\p"
+	.string "I've traveled the world, taking\n"
+	.string "inspiration from other cultures and\l"
+	.string "technologies to help this company.$"
+
+RustboroCity_DevonCorp_2F_ZCrystalSalesman_Text_1:
+# 397 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.string "Currently, we're working on a tool\n"
+	.string "similar to what TRAINERS in ALOLA use.\l"
+	.string "Check in with us again to see if we've\l"
+	.string "made progress.$"
+
+RustboroCity_DevonCorp_2F_ZCrystalSalesman_Text_2:
+# 402 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.string "Oho, a TRAINER with our new Z-POWER\n"
+	.string "RING!\l"
+	.string "I have some Z-CRYSTALS from ALOLA I'd\l"
+	.string "be willing to part with... for a price!$"
+
+RustboroCity_DevonCorp_2F_ZCrystalSalesman_Text_3:
+# 405 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+	.string "Pleasure doing business.$"

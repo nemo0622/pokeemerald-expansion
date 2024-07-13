@@ -384,3 +384,51 @@ RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext:
 	.string "environment as an engineer.$"
 
 `
+
+script RustboroCity_DevonCorp_2F_ZCrystalSalesman
+{
+
+	lock
+	faceplayer
+	if(!flag(FLAG_RECEIVED_Z_RING)) // if no Z ring yet
+	{
+		msgbox(format("Ah, hello there. I'm an old friend of Mr. Stone.\p I've traveled the world, taking inspiration from other cultures and technologies to help this company."))
+		closemessage
+		msgbox(format("Currently, we're working on a tool similar to what TRAINERS in ALOLA use. Check in with us again to see if we've made progress."))
+		closemessage
+	}
+	else // if got Z ring
+	{
+		msgbox(format("Oho, a TRAINER with our new Z-POWER RING!\N I have some Z-CRYSTALS from ALOLA I'd be willing to part with... for a price!"))
+		waitmessage
+		pokemart(ZCrystalShop)
+		msgbox(format("Pleasure doing business."))
+		closemessage
+	}
+
+	release
+	end
+
+}
+
+mart ZCrystalShop
+{
+	ITEM_NORMALIUM_Z
+	ITEM_FIRIUM_Z
+	ITEM_WATERIUM_Z
+	ITEM_GRASSIUM_Z
+	ITEM_ELECTRIUM_Z
+	ITEM_ICIUM_Z
+	ITEM_FIGHTINIUM_Z
+	ITEM_POISONIUM_Z
+	ITEM_GROUNDIUM_Z
+	ITEM_FLYINIUM_Z
+	ITEM_PSYCHIUM_Z
+	ITEM_BUGINIUM_Z
+	ITEM_ROCKIUM_Z
+	ITEM_GHOSTIUM_Z
+	ITEM_DRAGONIUM_Z
+	ITEM_DARKINIUM_Z
+	ITEM_STEELIUM_Z
+	ITEM_FAIRIUM_Z
+}

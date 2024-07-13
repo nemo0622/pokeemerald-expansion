@@ -693,23 +693,23 @@ u16 GetZMovePower(u16 move)
         if (gMovesInfo[move].power >= 140)
             return 200;
         else if (gMovesInfo[move].power >= 130)
-            return 195;
-        else if (gMovesInfo[move].power >= 120)
-            return 190;
-        else if (gMovesInfo[move].power >= 110)
-            return 185;
-        else if (gMovesInfo[move].power >= 100)
             return 180;
-        else if (gMovesInfo[move].power >= 90)
-            return 175;
-        else if (gMovesInfo[move].power >= 80)
+        else if (gMovesInfo[move].power >= 120)
             return 160;
-        else if (gMovesInfo[move].power >= 70)
+        else if (gMovesInfo[move].power >= 110)
+            return 150;
+        else if (gMovesInfo[move].power >= 100)
             return 140;
-        else if (gMovesInfo[move].power >= 60)
+        else if (gMovesInfo[move].power >= 90)
             return 120;
-        else
+        else if (gMovesInfo[move].power >= 80)
+            return 110;
+        else if (gMovesInfo[move].power >= 70)
             return 100;
+        else if (gMovesInfo[move].power >= 60)
+            return 90;
+        else
+            return 80;
     }
 }
 
