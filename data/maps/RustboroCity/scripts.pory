@@ -1324,14 +1324,14 @@ script RustboroCity_EventScript_WishingWell
 			closemessage
 
 			// Generate a random item or Pokémon to give to the player
-			randompercentage(25) // VAR_RESULT is true 25% of the time
-			if(var(VAR_RESULT) == 0) // 75% of the time, an item is given
+			randompercentage(35) // VAR_RESULT is true 35% of the time
+			if(var(VAR_RESULT) == 0) // 65% of the time, an item is given
 			{
 				randomelement(ITEM_PEARL, ITEM_NUGGET, ITEM_RARE_CANDY, ITEM_ABILITY_CAPSULE, ITEM_ABILITY_PATCH, ITEM_CHERISH_BALL,
  ITEM_FIRE_STONE, ITEM_WATER_STONE, ITEM_THUNDER_STONE, ITEM_LUCK_INCENSE)
 				giveitem(VAR_RESULT)
 			}
-			else // the other 25% of the time, a Pokémon is pulled!
+			else // the other 35% of the time, a Pokémon is pulled!
 			{
 				randomelement(SPECIES_SANDSHREW, SPECIES_SHUPPET, SPECIES_MAGNEMITE, SPECIES_FARFETCHD, SPECIES_SEEL,
  SPECIES_EEVEE, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_CHINCHOU, SPECIES_GLIGAR, SPECIES_TRAPINCH)

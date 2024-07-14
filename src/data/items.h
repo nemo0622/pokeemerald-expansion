@@ -3158,8 +3158,8 @@ const struct Item gItemsInfo[] =
         .name = _("Wishing Star"),
         .price = 1500,
         .description = COMPOUND_STRING(
-            "Can be thrown into a\n"
-            "Rustboro Wishing Well\n"
+            "Can be thrown into\n"
+            "a Wishing Well\n"
             "for a surprise."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

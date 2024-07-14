@@ -2186,3 +2186,20 @@
     setvar VAR_TEMP_1, \species
     specialvar VAR_RESULT, GetSeenMon
     .endm
+
+	OPEN_PARTY_SCREEN = FALSE
+    NO_PARTY_SCREEN = TRUE
+
+    @ Check if the Player has \speciesId in their party.
+    .macro checkforspecies speciesId:req, silent:req, script:req
+    .if \silent == OPEN_PARTY_SCREEN
+        special ChoosePartyMon
+        waitstate
+        specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+        goto_if_eq VAR_RESULT, \speciesId, \script
+    .else
+        setvar VAR_TEMP_1, \speciesId
+        specialvar VAR_RESULT, CheckPartyForMon
+        goto_if_eq VAR_RESULT, TRUE, \script
+    .endif
+    .endm

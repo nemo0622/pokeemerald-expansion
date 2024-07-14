@@ -19,6 +19,7 @@ InsideOfTruck_EventScript_SetIntroFlags::
 	setflag FLAG_HIDE_MAP_NAME_POPUP
 	setflag FLAG_LEVEL_CAPS_ENABLED
 	clearflag FLAG_SYS_DISABLE_BATTLE_BG
+	setflag FLAG_HIDE_SAILOR_ACROSS_HOENN
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, InsideOfTruck_EventScript_SetIntroFlagsMale
 	goto_if_eq VAR_RESULT, FEMALE, InsideOfTruck_EventScript_SetIntroFlagsFemale

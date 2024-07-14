@@ -964,11 +964,13 @@ MossdeepCity_EventScript_LegendarySailor_1:
 	goto_if_unset FLAG_RECEIVED_MYSTIC_TICKET, MossdeepCity_EventScript_LegendarySailor_12
 # 583 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_AURORA_TICKET, MossdeepCity_EventScript_LegendarySailor_13
-# 613 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_19
-# 614 "data/maps/MossdeepCity/scripts.pory"
+# 611 "data/maps/MossdeepCity/scripts.pory"
+	goto_if_set FLAG_HIDE_SAILOR_ACROSS_HOENN, MossdeepCity_EventScript_LegendarySailor_14
+# 625 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_21
+# 626 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
-# 615 "data/maps/MossdeepCity/scripts.pory"
+# 627 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
@@ -992,7 +994,7 @@ MossdeepCity_EventScript_LegendarySailor_2:
 	goto MossdeepCity_EventScript_LegendarySailor_1
 
 MossdeepCity_EventScript_LegendarySailor_4:
-# 619 "data/maps/MossdeepCity/scripts.pory"
+# 631 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
@@ -1031,7 +1033,7 @@ MossdeepCity_EventScript_LegendarySailor_11:
 	getcaughtmon SPECIES_RHYDON
 # 526 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq MossdeepCity_EventScript_LegendarySailor_18
+	goto_if_eq MossdeepCity_EventScript_LegendarySailor_20
 # 535 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_8
 # 536 "data/maps/MossdeepCity/scripts.pory"
@@ -1075,7 +1077,7 @@ MossdeepCity_EventScript_LegendarySailor_12:
 	getcaughtmon SPECIES_OCTILLERY
 # 562 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq MossdeepCity_EventScript_LegendarySailor_21
+	goto_if_eq MossdeepCity_EventScript_LegendarySailor_23
 # 571 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_13
 # 572 "data/maps/MossdeepCity/scripts.pory"
@@ -1101,7 +1103,7 @@ MossdeepCity_EventScript_LegendarySailor_13:
 	getcaughtmon SPECIES_RAYQUAZA
 # 589 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq MossdeepCity_EventScript_LegendarySailor_24
+	goto_if_eq MossdeepCity_EventScript_LegendarySailor_26
 # 598 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_17
 # 599 "data/maps/MossdeepCity/scripts.pory"
@@ -1120,7 +1122,22 @@ MossdeepCity_EventScript_LegendarySailor_13:
 	release
 	end
 
-MossdeepCity_EventScript_LegendarySailor_18:
+MossdeepCity_EventScript_LegendarySailor_14:
+# 613 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_19
+# 614 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 615 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_20
+# 616 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 617 "data/maps/MossdeepCity/scripts.pory"
+	clearflag FLAG_HIDE_SAILOR_ACROSS_HOENN
+# 618 "data/maps/MossdeepCity/scripts.pory"
+	release
+	end
+
+MossdeepCity_EventScript_LegendarySailor_20:
 # 528 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_7
 # 529 "data/maps/MossdeepCity/scripts.pory"
@@ -1129,7 +1146,7 @@ MossdeepCity_EventScript_LegendarySailor_18:
 	release
 	end
 
-MossdeepCity_EventScript_LegendarySailor_21:
+MossdeepCity_EventScript_LegendarySailor_23:
 # 564 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_12
 # 565 "data/maps/MossdeepCity/scripts.pory"
@@ -1138,7 +1155,7 @@ MossdeepCity_EventScript_LegendarySailor_21:
 	release
 	end
 
-MossdeepCity_EventScript_LegendarySailor_24:
+MossdeepCity_EventScript_LegendarySailor_26:
 # 591 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_16
 # 592 "data/maps/MossdeepCity/scripts.pory"
@@ -1250,9 +1267,9 @@ MossdeepCity_EventScript_LegendarySailor_Text_11:
 	.string "own heart!\p"
 	.string "I'll give you this here Mystic Ticket if\n"
 	.string "you can show me that ye've caught real\l"
-	.string "special POKéMON:\n"
-	.string "a POKéMON with control over WATER and\l"
-	.string "FIRE types!$"
+	.string "special POKéMON.\p"
+	.string "I wan'na see a POKéMON with control\n"
+	.string "over WATER and FIRE types!$"
 
 MossdeepCity_EventScript_LegendarySailor_Text_12:
 # 564 "data/maps/MossdeepCity/scripts.pory"
@@ -1309,10 +1326,34 @@ MossdeepCity_EventScript_LegendarySailor_Text_18:
 # 603 "data/maps/MossdeepCity/scripts.pory"
 	.string "I bet that FERRY in LILYCOVE 'ill give\n"
 	.string "ya a ride to BIRTH ISLAND! Be careful,\l"
-	.string "li'l sailor!$"
+	.string "li'l sailor, and come back soon!$"
 
 MossdeepCity_EventScript_LegendarySailor_Text_19:
 # 613 "data/maps/MossdeepCity/scripts.pory"
-	.string "I've no more quests to send ye on, ye've\n"
-	.string "proven yerself a worthy successor! Go\l"
-	.string "out there 'n make yer own stories!$"
+	.string "Welcome back, li'l sailor! Ye've inspired\n"
+	.string "me to get back to explorin' myself!\l"
+	.string "Don't ye be surprised if ye see me out\l"
+	.string "across HOENN lookin' fer more\l"
+	.string "LEGENDARY POKéMON! Look fer me\l"
+	.string "eyepatch to find me!$"
+
+MossdeepCity_EventScript_LegendarySailor_Text_20:
+# 615 "data/maps/MossdeepCity/scripts.pory"
+	.string "I've heard some sailor's tales about\n"
+	.string "special POKéMON in GRANITE CAVE, a\l"
+	.string "LEGENDARY trio in SHOAL CAVE, another\l"
+	.string "trio at the peak of MT. PYRE, an' a final\l"
+	.string "LEGENDARY in ROUTE 119.\p"
+	.string "Hope to see you out there, li'l sailor!$"
+
+MossdeepCity_EventScript_LegendarySailor_Text_21:
+# 625 "data/maps/MossdeepCity/scripts.pory"
+	.string "I've heard some sailor's tales about\n"
+	.string "special POKéMON in GRANITE CAVE, a\l"
+	.string "LEGENDARY trio in SHOAL CAVE, another\l"
+	.string "trio at the peak of MT. PYRE, an' a final\l"
+	.string "LEGENDARY in ROUTE 119.\p"
+	.string "See you out there, li'l sailor!\n"
+	.string "Oh, an' if ye're wantin' to pass the time\l"
+	.string "before tryin' again, why not challenge\l"
+	.string "the ELITE FOUR?$"

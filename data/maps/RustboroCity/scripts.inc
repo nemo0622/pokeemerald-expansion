@@ -2636,7 +2636,7 @@ RustboroCity_EventScript_WishingWell_4:
 # 1324 "data/maps/RustboroCity/scripts.pory"
 	closemessage
 # 1327 "data/maps/RustboroCity/scripts.pory"
-	randompercentage 25
+	randompercentage 35
 # 1328 "data/maps/RustboroCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq RustboroCity_EventScript_WishingWell_6

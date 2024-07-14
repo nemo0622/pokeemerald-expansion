@@ -4353,3 +4353,14 @@ bool16 TryChangeDeoxysForm(void)
     gSpecialVar_Result = FALSE;
     return FALSE;
 }
+
+bool8 CheckPartyForMon(void)
+{
+    int i;
+    for (i = 0; i < CalculatePlayerPartyCount(); i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == VarGet(VAR_TEMP_1))
+            return TRUE;
+    }
+    return FALSE;
+}

@@ -555,7 +555,7 @@ script MossdeepCity_EventScript_LegendarySailor
 		// Quest 2 - Show Sailor the Pokédex entry of Octillery, get Mystic Ticket (Ho-oh and Lugia)
 		elif(!flag(FLAG_RECEIVED_MYSTIC_TICKET))
 		{
-			msgbox(format("Oho, back for more, eh? A sailor after me own heart!\p I'll give you this here Mystic Ticket if you can show me that ye've caught real special POKéMON.\n I mean POKéMON with control over WATER and FIRE types!"))
+			msgbox(format("Oho, back for more, eh? A sailor after me own heart!\p I'll give you this here Mystic Ticket if you can show me that ye've caught real special POKéMON.\p I wan'na see a POKéMON with control over WATER and FIRE types!"))
 			closemessage
 			getcaughtmon(SPECIES_OCTILLERY)
 
@@ -600,17 +600,29 @@ script MossdeepCity_EventScript_LegendarySailor
 				giveitem(ITEM_AURORA_TICKET)
 				setflag(FLAG_ENABLE_SHIP_BIRTH_ISLAND)
 				setflag(FLAG_RECEIVED_AURORA_TICKET)
-				msgbox(format("I bet that FERRY in LILYCOVE 'ill give ya a ride to BIRTH ISLAND! Be careful, li'l sailor!"))
+				msgbox(format("I bet that FERRY in LILYCOVE 'ill give ya a ride to BIRTH ISLAND! Be careful, li'l sailor, and come back soon!"))
 				closemessage
 				release
 				end
 			}
 		}
 
-		// All legendary quests have been completed!
+		// First 3 Quests completed - Sailor will start appearing across Hoenn for rest of Legendary encounters
+		elif(flag(FLAG_HIDE_SAILOR_ACROSS_HOENN))
+		{
+			msgbox(format("Welcome back, li'l sailor! Ye've inspired me to get back to explorin' myself! Don't ye be surprised if ye see me out across HOENN lookin' fer more LEGENDARY POKéMON! Look fer me eyepatch to find me!"))
+			closemessage
+			msgbox(format("I've heard some sailor's tales about special POKéMON in GRANITE CAVE, a LEGENDARY trio in SHOAL CAVE, another trio at the peak of MT. PYRE, an' a final LEGENDARY in ROUTE 119.\p Hope to see you out there, li'l sailor!"))
+			closemessage
+			clearflag(FLAG_HIDE_SAILOR_ACROSS_HOENN)
+			release
+			end
+		}
+
+		// All legendary quests have been completed, this sailor will be found around HOENN in event spots for other legendaries
 		else
 		{
-			msgbox(format("I've no more quests to send ye on, ye've proven yerself a worthy successor! Go out there 'n make yer own stories!"))
+			msgbox(format("I've heard some sailor's tales about special POKéMON in GRANITE CAVE, a LEGENDARY trio in SHOAL CAVE, another trio at the peak of MT. PYRE, an' a final LEGENDARY in ROUTE 119.\p See you out there, li'l sailor!\N Oh, an' if ye're wantin' to pass the time before tryin' again, why not challenge the ELITE FOUR?"))
 			closemessage
 			release
 			end

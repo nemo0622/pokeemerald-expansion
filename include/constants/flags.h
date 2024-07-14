@@ -661,11 +661,11 @@
 #define FLAG_ENCOUNTERED_JIRACHI  0x26A
 #define FLAG_MET_LEGENDARY_SAILOR  0x26B
 #define FLAG_BECAME_SAILOR_SUCCESSOR  0x26C
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
+#define FLAG_HIDE_SAILOR_ACROSS_HOENN  0x26D // true until after Deoxys encounter
+#define FLAG_BATTLED_CELEBI  0x26E // reset every E4 run
+#define FLAG_BATTLED_MEWTWO  0x26F // reset every E4 run
+#define FLAG_BATTLED_LEGENDARY_DOG  0x270 // reset every E4 run
+#define FLAG_BATTLED_LEGENDARY_BIRD  0x271 // reset every E4 run
 #define FLAG_UNUSED_0x272  0x272 // Unused Flag
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag

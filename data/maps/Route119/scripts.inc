@@ -1228,3 +1228,109 @@ Route119_Text_TrainerTipsDecoration:
 	.string "your very own SECRET BASE exactly the\l"
 # 615 "data/maps/Route119/scripts.pory"
 	.string "way you want.$"
+
+Route119_EventScript_ExploringSailorCelebiEncounter::
+# 621 "data/maps/Route119/scripts.pory"
+	lock
+# 622 "data/maps/Route119/scripts.pory"
+	faceplayer
+# 623 "data/maps/Route119/scripts.pory"
+	goto_if_unset FLAG_BATTLED_CELEBI, Route119_EventScript_ExploringSailorCelebiEncounter_1
+# 663 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_ExploringSailorCelebiEncounter_Text_5
+# 664 "data/maps/Route119/scripts.pory"
+	closemessage
+# 665 "data/maps/Route119/scripts.pory"
+	release
+	end
+
+Route119_EventScript_ExploringSailorCelebiEncounter_1:
+# 625 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_ExploringSailorCelebiEncounter_Text_0
+# 626 "data/maps/Route119/scripts.pory"
+	closemessage
+# 627 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_ExploringSailorCelebiEncounter_Text_1, MSGBOX_YESNO
+# 629 "data/maps/Route119/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Route119_EventScript_ExploringSailorCelebiEncounter_4
+# 638 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_ExploringSailorCelebiEncounter_Text_3
+# 639 "data/maps/Route119/scripts.pory"
+	closemessage
+# 640 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_ExploringSailorCelebiEncounter_Text_4
+# 641 "data/maps/Route119/scripts.pory"
+	waitmessage
+# 642 "data/maps/Route119/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 643 "data/maps/Route119/scripts.pory"
+	delay 120
+# 644 "data/maps/Route119/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+# 645 "data/maps/Route119/scripts.pory"
+	delay 30
+# 646 "data/maps/Route119/scripts.pory"
+	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
+# 647 "data/maps/Route119/scripts.pory"
+	delay 40
+# 648 "data/maps/Route119/scripts.pory"
+	waitmoncry
+# 649 "data/maps/Route119/scripts.pory"
+	seteventmon SPECIES_CELEBI, 40
+# 650 "data/maps/Route119/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 652 "data/maps/Route119/scripts.pory"
+	waitstate
+# 653 "data/maps/Route119/scripts.pory"
+	applymovement 44, Common_Movement_FacePlayer
+# 654 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_ExploringSailorCelebiEncounter_Text_5
+# 655 "data/maps/Route119/scripts.pory"
+	closemessage
+# 656 "data/maps/Route119/scripts.pory"
+	setflag FLAG_BATTLED_CELEBI
+# 657 "data/maps/Route119/scripts.pory"
+	release
+	end
+
+Route119_EventScript_ExploringSailorCelebiEncounter_4:
+# 631 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_ExploringSailorCelebiEncounter_Text_2
+# 632 "data/maps/Route119/scripts.pory"
+	closemessage
+# 633 "data/maps/Route119/scripts.pory"
+	release
+	end
+
+
+Route119_EventScript_ExploringSailorCelebiEncounter_Text_0:
+# 625 "data/maps/Route119/scripts.pory"
+	.string "Ahoy, li'l sailor! I see ya've found\n"
+	.string "yerself searching for more LEGENDARY\l"
+	.string "POKéMON!$"
+
+Route119_EventScript_ExploringSailorCelebiEncounter_Text_1:
+# 627 "data/maps/Route119/scripts.pory"
+	.string "Are ya interested in lookin' fer CELEBI\n"
+	.string "right now?$"
+
+Route119_EventScript_ExploringSailorCelebiEncounter_Text_2:
+# 631 "data/maps/Route119/scripts.pory"
+	.string "Ah, need more POKé BALLS, eh? Come\n"
+	.string "right on back when ye're ready!$"
+
+Route119_EventScript_ExploringSailorCelebiEncounter_Text_3:
+# 638 "data/maps/Route119/scripts.pory"
+	.string "Wond'rful! This shrine seems to have a\n"
+	.string "connection to CELEBI. I'll make an\l"
+	.string "offerin', and ya get ready fer catchin'!$"
+
+Route119_EventScript_ExploringSailorCelebiEncounter_Text_4:
+# 640 "data/maps/Route119/scripts.pory"
+	.string "... ... ... ...!$"
+
+Route119_EventScript_ExploringSailorCelebiEncounter_Text_5:
+# 654 "data/maps/Route119/scripts.pory"
+	.string "Amazin'! That was really CELEBI! Wait\n"
+	.string "'till the other sailors hear about this!$"

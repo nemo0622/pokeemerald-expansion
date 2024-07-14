@@ -27,6 +27,10 @@ EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries::
 	clearflag FLAG_DEFEATED_LUGIA
 	clearflag FLAG_DEFEATED_HO_OH
 	clearflag FLAG_ENCOUNTERED_JIRACHI
+	clearflag FLAG_BATTLED_CELEBI
+	clearflag FLAG_BATTLED_MEWTWO
+	clearflag FLAG_BATTLED_LEGENDARY_DOG
+	clearflag FLAG_BATTLED_LEGENDARY_BIRD
 	return
 
 EverGrandeCity_HallOfFame_EventScript_SetDesertUnderpassCommentReady::

@@ -33,13 +33,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Shiny odds 1/4096 by default, but Shiny Charm is in Player PC to increase odds (gives 5 extra rerolls!)
     - Press R to toggle auto-run
     - Press A in Summary Screen to view IVs and EVs; All Pokémon have at least 2 perfect IV's
-    - Legendaries can all be encountered:
-        - After catching the first roaming Lati (Latios/Latias) after becoming Champion, the other begins to roam
-        - Jirachi obtained by talking to the woman next to the White Rock, then interacting with Mossdeep White Rock with Wishing Star in bag
-        - Kyogre, Groudon, the Regi Trio, and Rayquaza are all encountered in their Vanilla Emerald ways
-        - Mew found on Faraway Island - Old Sea Map obtained by speaking to Mossdeep Sailor with Pokédex entry for Rhydon
-        - Ho-oh and Lugia found on Navel Rock - Mystic Ticket from showing Mossdeep Sailor Pokédex entry for Octillery (Water/Fire Type)
-        - Deoxys found on Birth Island - Aurora Ticket from showing Mossdeep Sailor Pokédex entry for Rayquaza
+    - Legendaries can all be encountered, many before Elite Four - details in documentation
 
 ## FUTURE PLANS
 

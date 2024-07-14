@@ -240,3 +240,110 @@ GraniteCave_StevensRoom_Text_OhBagIsFull:
 	.string "Oh, your BAG is full…\n"
 # 121 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	.string "That's too bad, then.$"
+
+GraniteCave_EventScript_ExploringSailorMewtwoEncounter::
+# 128 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	lock
+# 129 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	faceplayer
+# 130 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	goto_if_unset FLAG_BATTLED_MEWTWO, GraniteCave_EventScript_ExploringSailorMewtwoEncounter_1
+# 170 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	msgbox GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_5
+# 171 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	closemessage
+# 172 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	release
+	end
+
+GraniteCave_EventScript_ExploringSailorMewtwoEncounter_1:
+# 132 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	msgbox GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_0
+# 133 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	closemessage
+# 134 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	msgbox GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_1, MSGBOX_YESNO
+# 136 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq GraniteCave_EventScript_ExploringSailorMewtwoEncounter_4
+# 145 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	msgbox GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_3
+# 146 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	closemessage
+# 147 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	msgbox GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_4
+# 148 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	waitmessage
+# 149 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 150 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	delay 120
+# 151 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+# 152 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	delay 30
+# 153 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	playmoncry SPECIES_MEWTWO, CRY_MODE_ENCOUNTER
+# 154 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	delay 40
+# 155 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	waitmoncry
+# 156 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	seteventmon SPECIES_MEWTWO, 80
+# 157 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 159 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	waitstate
+# 160 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	applymovement 2, Common_Movement_FacePlayer
+# 161 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	msgbox GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_5
+# 162 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	closemessage
+# 163 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	setflag FLAG_BATTLED_MEWTWO
+# 164 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	release
+	end
+
+GraniteCave_EventScript_ExploringSailorMewtwoEncounter_4:
+# 138 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	msgbox GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_2
+# 139 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	closemessage
+# 140 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	release
+	end
+
+
+GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_0:
+# 132 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	.string "Ahoy, li'l sailor! I see ya've found\n"
+	.string "yerself searching for more LEGENDARY\l"
+	.string "POKéMON!$"
+
+GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_1:
+# 134 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	.string "Are ya interested in lookin' fer MEWTWO\n"
+	.string "right now?$"
+
+GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_2:
+# 138 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	.string "Ah, need more POKé BALLS, eh? Come\n"
+	.string "right on back when ye're ready!$"
+
+GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_3:
+# 145 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	.string "Wond'rful! This room seems to have a\n"
+	.string "connection to MEWTWO. I'll call fer it,\l"
+	.string "and ya get ready fer catchin'!$"
+
+GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_4:
+# 147 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	.string "... ... ... ...!$"
+
+GraniteCave_EventScript_ExploringSailorMewtwoEncounter_Text_5:
+# 161 "data/maps/GraniteCave_StevensRoom/scripts.pory"
+	.string "Amazin'! That was really MEWTWO! That\n"
+	.string "was incred'ble, li'l sailor. This is why\l"
+	.string "ye're my successor!$"
