@@ -119,7 +119,7 @@ NavelRock_Top_EventScript_HoOh::
 # 60 "data/maps/NavelRock_Top/scripts.pory"
 	special RemoveCameraObject
 # 61 "data/maps/NavelRock_Top/scripts.pory"
-	seteventmon SPECIES_HO_OH, 70
+	seteventmon SPECIES_HO_OH, 50
 # 62 "data/maps/NavelRock_Top/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 63 "data/maps/NavelRock_Top/scripts.pory"

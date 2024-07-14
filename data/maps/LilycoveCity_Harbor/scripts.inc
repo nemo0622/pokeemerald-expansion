@@ -33,7 +33,7 @@ LilycoveCity_Harbor_EventScript_FerryAttendant::
 # 17 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	faceplayer
 # 18 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	goto_if_unset FLAG_SYS_GAME_CLEAR, LilycoveCity_Harbor_EventScript_FerryUnavailable
+	goto_if_unset FLAG_RECEIVED_SS_TICKET, LilycoveCity_Harbor_EventScript_FerryUnavailable
 # 19 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	call LilycoveCity_Harbor_EventScript_GetEonTicketState
 # 20 "data/maps/LilycoveCity_Harbor/scripts.pory"
@@ -179,9 +179,9 @@ LilycoveCity_Harbor_EventScript_GoToSlateport::
 # 90 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	setvar VAR_SS_TIDAL_STATE, SS_TIDAL_BOARD_LILYCOVE
 # 91 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	call LilycoveCity_Harbor_EventScript_BoardFerry
+	call_if_set FLAG_IS_CHAMPION, LilycoveCity_Harbor_EventScript_BoardFerry
 # 92 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	warp MAP_SS_TIDAL_CORRIDOR, 1, 10
+	warp MAP_SLATEPORT_CITY, 28, 13
 # 93 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	waitstate
 # 94 "data/maps/LilycoveCity_Harbor/scripts.pory"
@@ -807,380 +807,382 @@ LilycoveCity_Harbor_EventScript_BoardFerry::
 # 404 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	call Common_EventScript_FerryDepart
 # 405 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
+	warp MAP_SS_TIDAL_CORRIDOR, 1, 10
 # 406 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	return
 # 407 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_PlayerBoardFerryEast::
+
 # 408 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Harbor_Movement_PlayerBoardFerryEast
+LilycoveCity_Harbor_EventScript_PlayerBoardFerryEast::
 # 409 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Harbor_Movement_PlayerBoardFerryEast
 # 410 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
+	waitmovement 0
 # 411 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	return
 # 412 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_PlayerBoardFerryNorth::
+
 # 413 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Harbor_Movement_PlayerBoardFerryNorth
+LilycoveCity_Harbor_EventScript_PlayerBoardFerryNorth::
 # 414 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Harbor_Movement_PlayerBoardFerryNorth
 # 415 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
+	waitmovement 0
 # 416 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	return
 # 417 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_ExitSailSelect::
+
 # 418 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	msgbox LilycoveCity_Harbor_Text_SailAnotherTime, MSGBOX_DEFAULT
+LilycoveCity_Harbor_EventScript_ExitSailSelect::
 # 419 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	release
+	msgbox LilycoveCity_Harbor_Text_SailAnotherTime, MSGBOX_DEFAULT
 # 420 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	end
+	release
 # 421 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	end
 # 422 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Movement_PlayerBoardFerryEast:
+
 # 423 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	walk_right
+LilycoveCity_Harbor_Movement_PlayerBoardFerryEast:
 # 424 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	walk_in_place_faster_up
+	walk_right
 # 425 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	step_end
-# 426 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 427 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Movement_PlayerBoardFerryNorth:
-# 428 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	walk_up
-# 429 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	step_end
-# 430 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 431 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Movement_UnusedBoardFerry:
-# 432 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	walk_up
-# 433 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	step_end
-# 434 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 435 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_Sailor::
-# 436 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	lock
-# 437 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	faceplayer
-# 438 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	goto_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_Harbor_EventScript_SailorFerryAvailable
-# 439 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	msgbox LilycoveCity_Harbor_Text_SailorFerryUnavailable, MSGBOX_DEFAULT
-# 440 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	release
-# 441 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	end
-# 442 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 443 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_SailorFerryAvailable::
-# 444 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	msgbox LilycoveCity_Harbor_Text_SailorFerryAvailable, MSGBOX_DEFAULT
-# 445 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	release
-# 446 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	end
-# 447 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 448 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_MoveSailorOutOfWayNorth::
-# 449 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement LOCALID_FERRY_SAILOR, LilycoveCity_Harbor_Movement_SailorOutOfWayNorth
-# 450 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	waitmovement 0
-# 451 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
-# 452 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 453 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_MoveSailorOutOfWayEast::
-# 454 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement LOCALID_FERRY_SAILOR, LilycoveCity_Harbor_Movement_SailorOutOfWayEast
-# 455 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	waitmovement 0
-# 456 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
-# 457 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 458 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Movement_SailorOutOfWayNorth:
-# 459 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	walk_in_place_faster_right
-# 460 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	lock_facing_direction
-# 461 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	walk_left
-# 462 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	unlock_facing_direction
-# 463 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	step_end
-# 464 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 465 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Movement_SailorOutOfWayEast:
-# 466 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	lock_facing_direction
-# 467 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	walk_down
-# 468 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	unlock_facing_direction
-# 469 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	step_end
-# 470 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 471 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_BrineyFaceSailorNorth::
-# 472 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFasterLeft
-# 473 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	waitmovement 0
-# 474 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
-# 475 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 476 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_BrineyFaceSailorEast::
-# 477 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFasterDown
-# 478 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	waitmovement 0
-# 479 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
-# 480 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 481 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_BrineyFacePlayerNorth::
-# 482 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFasterDown
-# 483 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	waitmovement 0
-# 484 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
-# 485 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 486 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_BrineyFacePlayerEast::
-# 487 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFasterLeft
-# 488 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	waitmovement 0
-# 489 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
-# 490 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 491 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_BoardFerryWithBrineyAndSailorNorth::
-# 492 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement LOCALID_BRINEY, LilycoveCity_Harbor_Movement_BrineyBoardFerry
-# 493 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Harbor_Movement_PlayerBoardWithBrineyNorth
-# 494 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement LOCALID_FERRY_SAILOR, LilycoveCity_Harbor_Movement_SailorBoardWithBrineyNorth
-# 495 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	waitmovement 0
-# 496 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
-# 497 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 498 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_EventScript_BoardFerryWithBrineyAndSailorEast::
-# 499 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement LOCALID_BRINEY, LilycoveCity_Harbor_Movement_BrineyBoardFerry
-# 500 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Harbor_Movement_PlayerBoardWithBrineyEast
-# 501 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	applymovement LOCALID_FERRY_SAILOR, LilycoveCity_Harbor_Movement_SailorBoardWithBrineyEast
-# 502 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	waitmovement 0
-# 503 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	return
-# 504 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 505 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Movement_BrineyBoardFerry:
-# 506 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	walk_in_place_faster_up
-# 507 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	delay_8
-# 508 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	set_invisible
-# 509 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 426 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	step_end
-# 510 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 427 "data/maps/LilycoveCity_Harbor/scripts.pory"
 
-# 511 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Movement_PlayerBoardWithBrineyNorth:
-# 512 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	delay_16
-# 513 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 428 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_Movement_PlayerBoardFerryNorth:
+# 429 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	walk_up
-# 514 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	delay_16
-# 515 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	set_invisible
-# 516 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 430 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	step_end
-# 517 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 431 "data/maps/LilycoveCity_Harbor/scripts.pory"
 
-# 518 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Movement_SailorBoardWithBrineyNorth:
-# 519 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 432 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_Movement_UnusedBoardFerry:
+# 433 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	walk_up
+# 434 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	step_end
+# 435 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 436 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_EventScript_Sailor::
+# 437 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	lock
+# 438 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	faceplayer
+# 439 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	goto_if_set FLAG_RECEIVED_SS_TICKET, LilycoveCity_Harbor_EventScript_SailorFerryAvailable
+# 440 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	msgbox LilycoveCity_Harbor_Text_SailorFerryUnavailable, MSGBOX_DEFAULT
+# 441 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	release
+# 442 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	end
+# 443 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 444 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_EventScript_SailorFerryAvailable::
+# 445 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	msgbox LilycoveCity_Harbor_Text_SailorFerryAvailable, MSGBOX_DEFAULT
+# 446 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	release
+# 447 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	end
+# 448 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 449 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_EventScript_MoveSailorOutOfWayNorth::
+# 450 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement LOCALID_FERRY_SAILOR, LilycoveCity_Harbor_Movement_SailorOutOfWayNorth
+# 451 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	waitmovement 0
+# 452 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	return
+# 453 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 454 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_EventScript_MoveSailorOutOfWayEast::
+# 455 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement LOCALID_FERRY_SAILOR, LilycoveCity_Harbor_Movement_SailorOutOfWayEast
+# 456 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	waitmovement 0
+# 457 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	return
+# 458 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 459 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_Movement_SailorOutOfWayNorth:
+# 460 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	walk_in_place_faster_right
+# 461 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	lock_facing_direction
+# 462 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	walk_left
+# 463 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	unlock_facing_direction
+# 464 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	step_end
+# 465 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 466 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_Movement_SailorOutOfWayEast:
+# 467 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	lock_facing_direction
+# 468 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	walk_down
+# 469 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	unlock_facing_direction
+# 470 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	step_end
+# 471 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 472 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_EventScript_BrineyFaceSailorNorth::
+# 473 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFasterLeft
+# 474 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	waitmovement 0
+# 475 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	return
+# 476 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 477 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_EventScript_BrineyFaceSailorEast::
+# 478 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFasterDown
+# 479 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	waitmovement 0
+# 480 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	return
+# 481 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 482 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_EventScript_BrineyFacePlayerNorth::
+# 483 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFasterDown
+# 484 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	waitmovement 0
+# 485 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	return
+# 486 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 487 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_EventScript_BrineyFacePlayerEast::
+# 488 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFasterLeft
+# 489 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	waitmovement 0
+# 490 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	return
+# 491 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 492 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_EventScript_BoardFerryWithBrineyAndSailorNorth::
+# 493 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement LOCALID_BRINEY, LilycoveCity_Harbor_Movement_BrineyBoardFerry
+# 494 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Harbor_Movement_PlayerBoardWithBrineyNorth
+# 495 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement LOCALID_FERRY_SAILOR, LilycoveCity_Harbor_Movement_SailorBoardWithBrineyNorth
+# 496 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	waitmovement 0
+# 497 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	return
+# 498 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 499 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_EventScript_BoardFerryWithBrineyAndSailorEast::
+# 500 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement LOCALID_BRINEY, LilycoveCity_Harbor_Movement_BrineyBoardFerry
+# 501 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_Harbor_Movement_PlayerBoardWithBrineyEast
+# 502 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	applymovement LOCALID_FERRY_SAILOR, LilycoveCity_Harbor_Movement_SailorBoardWithBrineyEast
+# 503 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	waitmovement 0
+# 504 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	return
+# 505 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 506 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_Movement_BrineyBoardFerry:
+# 507 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	walk_in_place_faster_up
+# 508 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	delay_8
+# 509 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	set_invisible
+# 510 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	step_end
+# 511 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 512 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_Movement_PlayerBoardWithBrineyNorth:
+# 513 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	delay_16
+# 514 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	walk_up
+# 515 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	delay_16
+# 516 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	set_invisible
+# 517 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	step_end
+# 518 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 519 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_Movement_SailorBoardWithBrineyNorth:
 # 520 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	delay_16
 # 521 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	delay_16
 # 522 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	walk_right
+	delay_16
 # 523 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	walk_in_place_faster_up
-# 524 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	delay_16
-# 525 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	set_invisible
-# 526 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	step_end
-# 527 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
-# 528 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Movement_PlayerBoardWithBrineyEast:
-# 529 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	delay_16
-# 530 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	walk_right
-# 531 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 524 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	walk_in_place_faster_up
-# 532 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 525 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	delay_16
-# 533 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 526 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	set_invisible
-# 534 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 527 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	step_end
-# 535 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 528 "data/maps/LilycoveCity_Harbor/scripts.pory"
 
-# 536 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Movement_SailorBoardWithBrineyEast:
-# 537 "data/maps/LilycoveCity_Harbor/scripts.pory"
+# 529 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_Movement_PlayerBoardWithBrineyEast:
+# 530 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	delay_16
+# 531 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	walk_right
+# 532 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	walk_in_place_faster_up
+# 533 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	delay_16
+# 534 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	set_invisible
+# 535 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	step_end
+# 536 "data/maps/LilycoveCity_Harbor/scripts.pory"
+
+# 537 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_Movement_SailorBoardWithBrineyEast:
 # 538 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	delay_16
 # 539 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	delay_16
 # 540 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	walk_up
-# 541 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	delay_16
+# 541 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	walk_up
 # 542 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	set_invisible
+	delay_16
 # 543 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	step_end
+	set_invisible
 # 544 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	step_end
 # 545 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_FerryUnavailable:
+
 # 546 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "I beg your pardon?\n"
+LilycoveCity_Harbor_Text_FerryUnavailable:
 # 547 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "You're looking for a ship?\p"
+	.string "I beg your pardon?\n"
 # 548 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "I'm sorry, the ferry service isn't\n"
+	.string "You're looking for a ship?\p"
 # 549 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "available at present…$"
+	.string "I'm sorry, the ferry service isn't\n"
 # 550 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	.string "available at present…$"
 # 551 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_MayISeeYourTicket:
+
 # 552 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "Hello, are you here for the ferry?\n"
+LilycoveCity_Harbor_Text_MayISeeYourTicket:
 # 553 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "May I see your TICKET?$"
+	.string "Hello, are you here for the ferry?\n"
 # 554 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	.string "May I see your TICKET?$"
 # 555 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_NoTicket:
+
 # 556 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "{PLAYER} doesn't have the TICKET…\p"
+LilycoveCity_Harbor_Text_NoTicket:
 # 557 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "I'm terribly sorry.\p"
+	.string "{PLAYER} doesn't have the TICKET…\p"
 # 558 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "You must have a TICKET to board\n"
+	.string "I'm terribly sorry.\p"
 # 559 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "the ferry.$"
+	.string "You must have a TICKET to board\n"
 # 560 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	.string "the ferry.$"
 # 561 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_FlashTicketWhereTo:
+
 # 562 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "{PLAYER} flashed the TICKET.\p"
+LilycoveCity_Harbor_Text_FlashTicketWhereTo:
 # 563 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "Perfect! That's all you need!\p"
+	.string "{PLAYER} flashed the TICKET.\p"
 # 564 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "And where would you like to go?$"
+	.string "Perfect! That's all you need!\p"
 # 565 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	.string "And where would you like to go?$"
 # 566 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_SailAnotherTime:
+
 # 567 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "Please sail with us another time!$"
+LilycoveCity_Harbor_Text_SailAnotherTime:
 # 568 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	.string "Please sail with us another time!$"
 # 569 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_SlateportItIs:
+
 # 570 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "SLATEPORT CITY it is, then!$"
+LilycoveCity_Harbor_Text_SlateportItIs:
 # 571 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	.string "SLATEPORT CITY it is, then!$"
 # 572 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_BattleFrontierItIs:
+
 # 573 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "BATTLE FRONTIER it is, then!$"
+LilycoveCity_Harbor_Text_BattleFrontierItIs:
 # 574 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	.string "BATTLE FRONTIER it is, then!$"
 # 575 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_PleaseBoard:
+
 # 576 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "Please board the ferry and wait for\n"
+LilycoveCity_Harbor_Text_PleaseBoard:
 # 577 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "departure.$"
+	.string "Please board the ferry and wait for\n"
 # 578 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	.string "departure.$"
 # 579 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo:
+
 # 580 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "Then, where would you like to go?$"
+LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo:
 # 581 "data/maps/LilycoveCity_Harbor/scripts.pory"
-
+	.string "Then, where would you like to go?$"
 # 582 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_SailorFerryUnavailable:
-# 583 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "Until they finish making the ferry,\n"
-# 584 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "we sailors have nothing to do…\p"
-# 585 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "I wish they'd get a move on, the folks\n"
-# 586 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "at the SHIPYARD in SLATEPORT.$"
-# 587 "data/maps/LilycoveCity_Harbor/scripts.pory"
 
+# 583 "data/maps/LilycoveCity_Harbor/scripts.pory"
+LilycoveCity_Harbor_Text_SailorFerryUnavailable:
+# 584 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	.string "Until they finish making the ferry,\n"
+# 585 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	.string "we sailors have nothing to do…\p"
+# 586 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	.string "I wish they'd get a move on, the folks\n"
+# 587 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	.string "at the SHIPYARD in SLATEPORT.$"
 # 588 "data/maps/LilycoveCity_Harbor/scripts.pory"
-LilycoveCity_Harbor_Text_SailorFerryAvailable:
+
 # 589 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "The ferry S.S. TIDAL is finally in\n"
+LilycoveCity_Harbor_Text_SailorFerryAvailable:
 # 590 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "operation.\p"
+	.string "The ferry S.S. TIDAL is finally in\n"
 # 591 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "The folks at the SHIPYARD in SLATEPORT\n"
+	.string "operation.\p"
 # 592 "data/maps/LilycoveCity_Harbor/scripts.pory"
-	.string "must've worked extra hard.\p"
+	.string "The folks at the SHIPYARD in SLATEPORT\n"
 # 593 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	.string "must've worked extra hard.\p"
+# 594 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	.string "Well, it's my turn to get busy now!$"

@@ -15,7 +15,7 @@ LilycoveCity_Harbor_OnTransition:
 LilycoveCity_Harbor_EventScript_FerryAttendant::
 	lock
 	faceplayer
-	goto_if_unset FLAG_SYS_GAME_CLEAR, LilycoveCity_Harbor_EventScript_FerryUnavailable
+	goto_if_unset FLAG_RECEIVED_SS_TICKET, LilycoveCity_Harbor_EventScript_FerryUnavailable
 	call LilycoveCity_Harbor_EventScript_GetEonTicketState
 	call LilycoveCity_Harbor_EventScript_GetAuroraTicketState
 	call LilycoveCity_Harbor_EventScript_GetOldSeaMapState
@@ -88,8 +88,8 @@ LilycoveCity_Harbor_EventScript_GoToSlateport::
 	msgbox LilycoveCity_Harbor_Text_SlateportItIs, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_Harbor_EventScript_FerryDestinationChangeMind
 	setvar VAR_SS_TIDAL_STATE, SS_TIDAL_BOARD_LILYCOVE
-	call LilycoveCity_Harbor_EventScript_BoardFerry
-	warp MAP_SS_TIDAL_CORRIDOR, 1, 10
+	call_if_set FLAG_IS_CHAMPION, LilycoveCity_Harbor_EventScript_BoardFerry
+	warp MAP_SLATEPORT_CITY, 28, 13
 	waitstate
 	release
 	end
@@ -402,6 +402,7 @@ LilycoveCity_Harbor_EventScript_BoardFerry::
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	setvar VAR_0x8004, LOCALID_SS_TIDAL
 	call Common_EventScript_FerryDepart
+	warp MAP_SS_TIDAL_CORRIDOR, 1, 10
 	return
 
 LilycoveCity_Harbor_EventScript_PlayerBoardFerryEast::
@@ -435,7 +436,7 @@ LilycoveCity_Harbor_Movement_UnusedBoardFerry:
 LilycoveCity_Harbor_EventScript_Sailor::
 	lock
 	faceplayer
-	goto_if_set FLAG_SYS_GAME_CLEAR, LilycoveCity_Harbor_EventScript_SailorFerryAvailable
+	goto_if_set FLAG_RECEIVED_SS_TICKET, LilycoveCity_Harbor_EventScript_SailorFerryAvailable
 	msgbox LilycoveCity_Harbor_Text_SailorFerryUnavailable, MSGBOX_DEFAULT
 	release
 	end

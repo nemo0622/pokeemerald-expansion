@@ -423,40 +423,6 @@ PlayersHouse_1F_Movement_MovePlayerAwayFromDoor:
 PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	lockall
 	checkplayergender
-	call_if_eq VAR_RESULT, MALE, PlayersHouse_1F_EventScript_SetUpObjectEventVarsMale
-	call_if_eq VAR_RESULT, FEMALE, PlayersHouse_1F_EventScript_SetUpObjectEventVarsFemale
-	call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_PlayerEnterRoomMale
-	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_PlayerEnterRoomFemale
-	applymovement VAR_0x8009, Common_Movement_FacePlayer
-	waitmovement 0
-	playse SE_PIN
-	applymovement VAR_0x8009, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement VAR_0x8009, Common_Movement_Delay48
-	waitmovement 0
-	delay 20
-	call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_DadApproachPlayerMale
-	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_DadApproachPlayerFemale
-	msgbox PlayersHouse_1F_Text_TicketFromBrineyCameForYou, MSGBOX_DEFAULT
-	giveitem ITEM_SS_TICKET
-	msgbox PlayersHouse_1F_Text_PortsInSlateportLilycove, MSGBOX_DEFAULT
-	closemessage
-	delay 20
-	call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_MomApproachDadMale
-	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_MomApproachDadFemale
-	msgbox PlayersHouse_1F_Text_BetterGetBackToGym, MSGBOX_DEFAULT
-	closemessage
-	call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_DadExitsMale
-	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_DadExitsFemale
-	playse SE_DOOR
-	removeobject VAR_0x8009
-	setflag FLAG_RECEIVED_SS_TICKET
-	delay 30
-	call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_MomApproachPlayerMale
-	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_MomApproachPlayerFemale
-	delay 20
-	msgbox PlayersHouse_1F_Text_DadShouldStayLonger, MSGBOX_DEFAULT
-	closemessage
 	setflag FLAG_SYS_TV_LATIAS_LATIOS
 	special TurnOnTVScreen
 	delay 60

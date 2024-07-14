@@ -111,7 +111,7 @@ NavelRock_Bottom_EventScript_Lugia::
 # 56 "data/maps/NavelRock_Bottom/scripts.pory"
 	delay 20
 # 57 "data/maps/NavelRock_Bottom/scripts.pory"
-	seteventmon SPECIES_LUGIA, 70
+	seteventmon SPECIES_LUGIA, 50
 # 58 "data/maps/NavelRock_Bottom/scripts.pory"
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 59 "data/maps/NavelRock_Bottom/scripts.pory"
