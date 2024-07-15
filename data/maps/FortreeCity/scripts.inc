@@ -310,3 +310,225 @@ FortreeCity_Text_GymSign:
 	.string "“The bird user taking flight into\n"
 # 156 "data/maps/FortreeCity/scripts.pory"
 	.string "the world.”$"
+
+FortreeCity_EventScript_Shrine1::
+# 162 "data/maps/FortreeCity/scripts.pory"
+	lock
+# 163 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine1_Text_0
+# 164 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+# 165 "data/maps/FortreeCity/scripts.pory"
+	setvar VAR_FORTREE_SHRINE_LAST_VIEWED, 0
+# 166 "data/maps/FortreeCity/scripts.pory"
+	compare VAR_FORTREE_SHRINE_LAST_VIEWED, 0
+	goto_if_eq FortreeCity_EventScript_Shrine1_3
+FortreeCity_EventScript_Shrine1_1:
+# 172 "data/maps/FortreeCity/scripts.pory"
+	release
+	end
+
+FortreeCity_EventScript_Shrine1_2:
+# 168 "data/maps/FortreeCity/scripts.pory"
+	setvar VAR_FORTREE_SHRINE_LAST_VIEWED, 1
+# 169 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine1_Text_1
+# 170 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+	goto FortreeCity_EventScript_Shrine1_1
+
+FortreeCity_EventScript_Shrine1_3:
+# 166 "data/maps/FortreeCity/scripts.pory"
+	goto_if_unset FLAG_GOT_FORTREE_SHINY_CHARM, FortreeCity_EventScript_Shrine1_2
+	goto FortreeCity_EventScript_Shrine1_1
+
+
+FortreeCity_EventScript_Shrine2::
+# 178 "data/maps/FortreeCity/scripts.pory"
+	lock
+# 179 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine1_Text_0
+# 180 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+# 181 "data/maps/FortreeCity/scripts.pory"
+	compare VAR_FORTREE_SHRINE_LAST_VIEWED, 1
+	goto_if_eq FortreeCity_EventScript_Shrine2_4
+FortreeCity_EventScript_Shrine2_3:
+# 189 "data/maps/FortreeCity/scripts.pory"
+	setvar VAR_FORTREE_SHRINE_LAST_VIEWED, 0
+FortreeCity_EventScript_Shrine2_1:
+# 191 "data/maps/FortreeCity/scripts.pory"
+	release
+	end
+
+FortreeCity_EventScript_Shrine2_2:
+# 183 "data/maps/FortreeCity/scripts.pory"
+	setvar VAR_FORTREE_SHRINE_LAST_VIEWED, 2
+# 184 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine2_Text_0
+# 185 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+	goto FortreeCity_EventScript_Shrine2_1
+
+FortreeCity_EventScript_Shrine2_4:
+# 181 "data/maps/FortreeCity/scripts.pory"
+	goto_if_unset FLAG_GOT_FORTREE_SHINY_CHARM, FortreeCity_EventScript_Shrine2_2
+	goto FortreeCity_EventScript_Shrine2_3
+
+
+FortreeCity_EventScript_Shrine3::
+# 197 "data/maps/FortreeCity/scripts.pory"
+	lock
+# 198 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine1_Text_0
+# 199 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+# 200 "data/maps/FortreeCity/scripts.pory"
+	compare VAR_FORTREE_SHRINE_LAST_VIEWED, 2
+	goto_if_eq FortreeCity_EventScript_Shrine3_4
+FortreeCity_EventScript_Shrine3_3:
+# 208 "data/maps/FortreeCity/scripts.pory"
+	setvar VAR_FORTREE_SHRINE_LAST_VIEWED, 0
+FortreeCity_EventScript_Shrine3_1:
+# 210 "data/maps/FortreeCity/scripts.pory"
+	release
+	end
+
+FortreeCity_EventScript_Shrine3_2:
+# 202 "data/maps/FortreeCity/scripts.pory"
+	setvar VAR_FORTREE_SHRINE_LAST_VIEWED, 3
+# 203 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine3_Text_0
+# 204 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+	goto FortreeCity_EventScript_Shrine3_1
+
+FortreeCity_EventScript_Shrine3_4:
+# 200 "data/maps/FortreeCity/scripts.pory"
+	goto_if_unset FLAG_GOT_FORTREE_SHINY_CHARM, FortreeCity_EventScript_Shrine3_2
+	goto FortreeCity_EventScript_Shrine3_3
+
+
+FortreeCity_EventScript_Shrine4::
+# 216 "data/maps/FortreeCity/scripts.pory"
+	lock
+# 217 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine1_Text_0
+# 218 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+# 219 "data/maps/FortreeCity/scripts.pory"
+	compare VAR_FORTREE_SHRINE_LAST_VIEWED, 3
+	goto_if_eq FortreeCity_EventScript_Shrine4_4
+FortreeCity_EventScript_Shrine4_3:
+# 227 "data/maps/FortreeCity/scripts.pory"
+	setvar VAR_FORTREE_SHRINE_LAST_VIEWED, 0
+FortreeCity_EventScript_Shrine4_1:
+# 229 "data/maps/FortreeCity/scripts.pory"
+	release
+	end
+
+FortreeCity_EventScript_Shrine4_2:
+# 221 "data/maps/FortreeCity/scripts.pory"
+	setvar VAR_FORTREE_SHRINE_LAST_VIEWED, 4
+# 222 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine4_Text_0
+# 223 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+	goto FortreeCity_EventScript_Shrine4_1
+
+FortreeCity_EventScript_Shrine4_4:
+# 219 "data/maps/FortreeCity/scripts.pory"
+	goto_if_unset FLAG_GOT_FORTREE_SHINY_CHARM, FortreeCity_EventScript_Shrine4_2
+	goto FortreeCity_EventScript_Shrine4_3
+
+
+FortreeCity_EventScript_Shrine5::
+# 235 "data/maps/FortreeCity/scripts.pory"
+	lock
+# 236 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine1_Text_0
+# 237 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+# 238 "data/maps/FortreeCity/scripts.pory"
+	compare VAR_FORTREE_SHRINE_LAST_VIEWED, 4
+	goto_if_eq FortreeCity_EventScript_Shrine5_4
+FortreeCity_EventScript_Shrine5_3:
+# 258 "data/maps/FortreeCity/scripts.pory"
+	setvar VAR_FORTREE_SHRINE_LAST_VIEWED, 0
+# 260 "data/maps/FortreeCity/scripts.pory"
+	release
+	end
+
+FortreeCity_EventScript_Shrine5_2:
+# 240 "data/maps/FortreeCity/scripts.pory"
+	setvar VAR_FORTREE_SHRINE_LAST_VIEWED, 5
+# 241 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine5_Text_0
+# 242 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+# 243 "data/maps/FortreeCity/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 244 "data/maps/FortreeCity/scripts.pory"
+	delay 60
+# 245 "data/maps/FortreeCity/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+# 246 "data/maps/FortreeCity/scripts.pory"
+	delay 60
+# 247 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine5_Text_1
+# 248 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+# 249 "data/maps/FortreeCity/scripts.pory"
+	giveitem ITEM_SHINY_CHARM
+# 250 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Shrine5_Text_2
+# 251 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+# 252 "data/maps/FortreeCity/scripts.pory"
+	setflag FLAG_GOT_FORTREE_SHINY_CHARM
+# 253 "data/maps/FortreeCity/scripts.pory"
+	release
+	end
+
+FortreeCity_EventScript_Shrine5_4:
+# 238 "data/maps/FortreeCity/scripts.pory"
+	goto_if_unset FLAG_GOT_FORTREE_SHINY_CHARM, FortreeCity_EventScript_Shrine5_2
+	goto FortreeCity_EventScript_Shrine5_3
+
+
+FortreeCity_EventScript_Shrine1_Text_0:
+# 163 "data/maps/FortreeCity/scripts.pory"
+	.string "It's a little shrine for POKéMON.$"
+
+FortreeCity_EventScript_Shrine1_Text_1:
+# 169 "data/maps/FortreeCity/scripts.pory"
+	.string "There was a tiny glimmer floating\n"
+	.string "NORTHWEST...$"
+
+FortreeCity_EventScript_Shrine2_Text_0:
+# 184 "data/maps/FortreeCity/scripts.pory"
+	.string "There was a small glimmer floating\n"
+	.string "SOUTH...$"
+
+FortreeCity_EventScript_Shrine3_Text_0:
+# 203 "data/maps/FortreeCity/scripts.pory"
+	.string "There was a glimmer floating due WEST...$"
+
+FortreeCity_EventScript_Shrine4_Text_0:
+# 222 "data/maps/FortreeCity/scripts.pory"
+	.string "There was a large glimmer floating\n"
+	.string "NORTHWEST!$"
+
+FortreeCity_EventScript_Shrine5_Text_0:
+# 241 "data/maps/FortreeCity/scripts.pory"
+	.string "The air around the shrine glows and\n"
+	.string "sparkles...!$"
+
+FortreeCity_EventScript_Shrine5_Text_1:
+# 247 "data/maps/FortreeCity/scripts.pory"
+	.string "A shining item has appeared in the\n"
+	.string "shrine!$"
+
+FortreeCity_EventScript_Shrine5_Text_2:
+# 250 "data/maps/FortreeCity/scripts.pory"
+	.string "A light breeze flows through the trees.$"

@@ -31,6 +31,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Type Effectiveness shown in battle
     - HM System revamp: if HM is in bag and the right badge is owned, Pokémon that can learn the HMs can naturally use them
     - Shiny odds 1/4096 by default, but Shiny Charm is in Player PC to increase odds (gives 5 extra rerolls!)
+        - Second Shiny Charm, giving even more rerolls, available in Fortree City! Interact with all shrines from east to west in order, and the second Shiny Charm will be in the final shrine (left of the Pokémon Center)
     - Press R to toggle auto-run
     - Press A in Summary Screen to view IVs and EVs; All Pokémon have at least 2 perfect IV's
     - Legendaries can all be encountered, many before Elite Four - details in documentation
@@ -40,15 +41,14 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - AFTER EXPANSION 1.9.0: Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
-- Implement Pichu Spiky-Eared and Tinkatink NPC gift eggs  (in "gen_1_families.h", edit base stats and give new moveset)
 - Implement SageDeoxys sprites! Very pretty
 - Convert scripts to PoryScript and code extra events
-    - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
         - Create NPC quest that gives ITEM_POKEMON_BOX_LINK
+        - Add NPC quests giving Tinkatink and Applin eggs (based on poll)
+        - Add Professor Oak NPC giving Spiky Ear Pichu after registering X # of Pokémon in the Dex
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
-        - CheckSpecies function [here](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/page-9#post-10213715)
-        - Add [Useful Scripting Specials](https://github.com/pret/pokeemerald/wiki/Useful-Scripting-Specials) and [Supplementary Macros](https://github.com/pret/pokeemerald/wiki/Supplementary-Scripting-Macros) to help scripting NPC behaviors and Quests!
+    - Add Kimono Girls to Mossdeep, give lore about connections to Johto Region?
 - Add more general QOL features where necessary
     - Make unused Pokedolls obtainable, and make Lilycove department sale happen more often
     - Place to purchase all evolution items (Fortree?)

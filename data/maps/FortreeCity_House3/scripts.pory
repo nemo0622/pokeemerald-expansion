@@ -29,3 +29,33 @@ FortreeCity_House3_Text_OhYouHavePokedex:
 	.string "It's really awesome!$"
 
 `
+
+script FortreeCity_EventScript_FortreeShrineHint_OldMan
+{
+	lock
+	faceplayer
+	msgbox(format("You! Did you see it!? The other night... every shrine from the EAST to the WEST in FORTREE lit up one by one...\p You have to check for me!"))
+	closemessage
+	applymovement(3, Common_Movement_QuestionMark)
+	waitmovement(0)
+	applymovement(3, Common_Movement_FaceRight)
+	waitmovement(0)
+	msgbox(format("Grandpa, what are you talking about? None of us saw anything!"))
+	closemessage
+	applymovement(3, Common_Movement_FacePlayer)
+	waitmovement(0)
+	msgbox(format("I'm sorry about him. He seems to think one of the shrines in FORTREE has something to help TRAINERS."))
+	closemessage
+	release
+	end
+}
+
+script FortreeCity_EventScript_FortreeShrineHint_Lady
+{
+	lock
+	faceplayer
+	msgbox(format("My grandpa keeps talking about the shrines in FORTREE lighting up, one by one, from EAST to WEST. I wonder what he means."))
+	closemessage
+	release
+	end
+}

@@ -56,3 +56,76 @@ FortreeCity_House3_Text_OhYouHavePokedex:
 	.string "Oh, it's called a POKéDEX?\n"
 # 29 "data/maps/FortreeCity_House3/scripts.pory"
 	.string "It's really awesome!$"
+
+FortreeCity_EventScript_FortreeShrineHint_OldMan::
+# 35 "data/maps/FortreeCity_House3/scripts.pory"
+	lock
+# 36 "data/maps/FortreeCity_House3/scripts.pory"
+	faceplayer
+# 37 "data/maps/FortreeCity_House3/scripts.pory"
+	msgbox FortreeCity_EventScript_FortreeShrineHint_OldMan_Text_0
+# 38 "data/maps/FortreeCity_House3/scripts.pory"
+	closemessage
+# 39 "data/maps/FortreeCity_House3/scripts.pory"
+	applymovement 3, Common_Movement_QuestionMark
+# 40 "data/maps/FortreeCity_House3/scripts.pory"
+	waitmovement 0
+# 41 "data/maps/FortreeCity_House3/scripts.pory"
+	applymovement 3, Common_Movement_FaceRight
+# 42 "data/maps/FortreeCity_House3/scripts.pory"
+	waitmovement 0
+# 43 "data/maps/FortreeCity_House3/scripts.pory"
+	msgbox FortreeCity_EventScript_FortreeShrineHint_OldMan_Text_1
+# 44 "data/maps/FortreeCity_House3/scripts.pory"
+	closemessage
+# 45 "data/maps/FortreeCity_House3/scripts.pory"
+	applymovement 3, Common_Movement_FacePlayer
+# 46 "data/maps/FortreeCity_House3/scripts.pory"
+	waitmovement 0
+# 47 "data/maps/FortreeCity_House3/scripts.pory"
+	msgbox FortreeCity_EventScript_FortreeShrineHint_OldMan_Text_2
+# 48 "data/maps/FortreeCity_House3/scripts.pory"
+	closemessage
+# 49 "data/maps/FortreeCity_House3/scripts.pory"
+	release
+	end
+
+
+FortreeCity_EventScript_FortreeShrineHint_Lady::
+# 55 "data/maps/FortreeCity_House3/scripts.pory"
+	lock
+# 56 "data/maps/FortreeCity_House3/scripts.pory"
+	faceplayer
+# 57 "data/maps/FortreeCity_House3/scripts.pory"
+	msgbox FortreeCity_EventScript_FortreeShrineHint_Lady_Text_0
+# 58 "data/maps/FortreeCity_House3/scripts.pory"
+	closemessage
+# 59 "data/maps/FortreeCity_House3/scripts.pory"
+	release
+	end
+
+
+FortreeCity_EventScript_FortreeShrineHint_OldMan_Text_0:
+# 37 "data/maps/FortreeCity_House3/scripts.pory"
+	.string "You! Did you see it!? The other night...\n"
+	.string "every shrine from the EAST to the WEST\l"
+	.string "in FORTREE lit up one by one...\p"
+	.string "You have to check for me!$"
+
+FortreeCity_EventScript_FortreeShrineHint_OldMan_Text_1:
+# 43 "data/maps/FortreeCity_House3/scripts.pory"
+	.string "Grandpa, what are you talking about?\n"
+	.string "None of us saw anything!$"
+
+FortreeCity_EventScript_FortreeShrineHint_OldMan_Text_2:
+# 47 "data/maps/FortreeCity_House3/scripts.pory"
+	.string "I'm sorry about him. He seems to think\n"
+	.string "one of the shrines in FORTREE has\l"
+	.string "something to help TRAINERS.$"
+
+FortreeCity_EventScript_FortreeShrineHint_Lady_Text_0:
+# 57 "data/maps/FortreeCity_House3/scripts.pory"
+	.string "My grandpa keeps talking about the\n"
+	.string "shrines in FORTREE lighting up, one by\l"
+	.string "one, from EAST to WEST. I wonder what he\l"
+	.string "means.$"

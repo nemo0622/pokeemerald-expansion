@@ -156,3 +156,107 @@ FortreeCity_Text_GymSign:
 	.string "the world.”$"
 
 `
+
+script FortreeCity_EventScript_Shrine1
+{
+	lock
+	msgbox(format("It's a little shrine for POKéMON."))
+	closemessage
+	setvar(VAR_FORTREE_SHRINE_LAST_VIEWED, 0) // failsafe for first time interacting
+	if(var(VAR_FORTREE_SHRINE_LAST_VIEWED) == 0 && !flag(FLAG_GOT_FORTREE_SHINY_CHARM))
+	{
+		setvar(VAR_FORTREE_SHRINE_LAST_VIEWED, 1)
+		msgbox(format("There was a tiny glimmer floating NORTHWEST..."))
+		closemessage
+	}
+	release
+	end
+}
+
+script FortreeCity_EventScript_Shrine2
+{
+	lock
+	msgbox(format("It's a little shrine for POKéMON."))
+	closemessage
+	if(var(VAR_FORTREE_SHRINE_LAST_VIEWED) == 1 && !flag(FLAG_GOT_FORTREE_SHINY_CHARM))
+	{
+		setvar(VAR_FORTREE_SHRINE_LAST_VIEWED, 2)
+		msgbox(format("There was a small glimmer floating SOUTH..."))
+		closemessage
+	}
+	else
+	{
+		setvar(VAR_FORTREE_SHRINE_LAST_VIEWED, 0)
+	}
+	release
+	end
+}
+
+script FortreeCity_EventScript_Shrine3
+{
+	lock
+	msgbox(format("It's a little shrine for POKéMON."))
+	closemessage
+	if(var(VAR_FORTREE_SHRINE_LAST_VIEWED) == 2 && !flag(FLAG_GOT_FORTREE_SHINY_CHARM))
+	{
+		setvar(VAR_FORTREE_SHRINE_LAST_VIEWED, 3)
+		msgbox(format("There was a glimmer floating due WEST..."))
+		closemessage
+	}
+	else
+	{
+		setvar(VAR_FORTREE_SHRINE_LAST_VIEWED, 0)
+	}
+	release
+	end
+}
+
+script FortreeCity_EventScript_Shrine4
+{
+	lock
+	msgbox(format("It's a little shrine for POKéMON."))
+	closemessage
+	if(var(VAR_FORTREE_SHRINE_LAST_VIEWED) == 3 && !flag(FLAG_GOT_FORTREE_SHINY_CHARM))
+	{
+		setvar(VAR_FORTREE_SHRINE_LAST_VIEWED, 4)
+		msgbox(format("There was a large glimmer floating NORTHWEST!"))
+		closemessage
+	}
+	else
+	{
+		setvar(VAR_FORTREE_SHRINE_LAST_VIEWED, 0)
+	}
+	release
+	end
+}
+
+script FortreeCity_EventScript_Shrine5
+{
+	lock
+	msgbox(format("It's a little shrine for POKéMON."))
+	closemessage
+	if(var(VAR_FORTREE_SHRINE_LAST_VIEWED) == 4 && !flag(FLAG_GOT_FORTREE_SHINY_CHARM))
+	{
+		setvar(VAR_FORTREE_SHRINE_LAST_VIEWED, 5)
+		msgbox(format("The air around the shrine glows and sparkles...!"))
+		closemessage
+		fadescreen(FADE_TO_WHITE)
+		delay(60)
+		fadescreen(FADE_FROM_WHITE)
+		delay(60)
+		msgbox(format("A shining item has appeared in the shrine!"))
+		closemessage
+		giveitem(ITEM_SHINY_CHARM)
+		msgbox(format("A light breeze flows through the trees."))
+		closemessage
+		setflag(FLAG_GOT_FORTREE_SHINY_CHARM)
+		release
+		end
+	}
+	else
+	{
+		setvar(VAR_FORTREE_SHRINE_LAST_VIEWED, 0)
+	}
+	release
+	end
+}

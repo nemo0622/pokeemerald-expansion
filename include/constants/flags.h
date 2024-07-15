@@ -666,7 +666,7 @@
 #define FLAG_BATTLED_MEWTWO  0x26F // reset every E4 run
 #define FLAG_BATTLED_LEGENDARY_DOG  0x270 // reset every E4 run
 #define FLAG_BATTLED_LEGENDARY_BIRD  0x271 // reset every E4 run
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
+#define FLAG_GOT_FORTREE_SHINY_CHARM  0x272
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
