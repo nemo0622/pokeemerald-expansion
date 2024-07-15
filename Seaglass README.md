@@ -42,6 +42,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
 - Make TMs 51-100 modern moves, or at least up to TM 60 or 70
 - Implement Pichu Spiky-Eared and Tinkatink NPC gift eggs  (in "gen_1_families.h", edit base stats and give new moveset)
+- Implement SageDeoxys sprites! Very pretty
 - Convert scripts to PoryScript and code extra events
     - Events: Rustboro City Wishing Well, Fortree City Birdhouses, etc. (plus add a few more easter eggs!)
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
@@ -50,10 +51,8 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
         - CheckSpecies function [here](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/page-9#post-10213715)
         - WONDER TRADE NPC: [code here](https://github.com/pret/pokeemerald/compare/master...LOuroboros:pokeemerald:wonder_trade)
         - Add [Useful Scripting Specials](https://github.com/pret/pokeemerald/wiki/Useful-Scripting-Specials) and [Supplementary Macros](https://github.com/pret/pokeemerald/wiki/Supplementary-Scripting-Macros) to help scripting NPC behaviors and Quests!
-    - Also add events to allow access to Navel Rock, Faraway Island, etc. (plus new events for Jirachi and others)
     - MARTS SELLING DIFFERENT ASSORTMENTS OF TMS IN EVERY MART!
 - Add more general QOL features where necessary
-    - See EVs and IVs in summary menu!
     - Make unused Pokedolls obtainable, and make Lilycove department sale happen more often
     - Place to purchase all evolution items (Fortree?)
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
