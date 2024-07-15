@@ -40,7 +40,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - AFTER EXPANSION 1.9.0: Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
-- Make TMs 51-100 modern moves, or at least up to TM 60 or 70
 - Implement Pichu Spiky-Eared and Tinkatink NPC gift eggs  (in "gen_1_families.h", edit base stats and give new moveset)
 - Implement SageDeoxys sprites! Very pretty
 - Convert scripts to PoryScript and code extra events
@@ -49,9 +48,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
         - Create NPC quest that gives ITEM_POKEMON_BOX_LINK
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
         - CheckSpecies function [here](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/page-9#post-10213715)
-        - WONDER TRADE NPC: [code here](https://github.com/pret/pokeemerald/compare/master...LOuroboros:pokeemerald:wonder_trade)
         - Add [Useful Scripting Specials](https://github.com/pret/pokeemerald/wiki/Useful-Scripting-Specials) and [Supplementary Macros](https://github.com/pret/pokeemerald/wiki/Supplementary-Scripting-Macros) to help scripting NPC behaviors and Quests!
-    - MARTS SELLING DIFFERENT ASSORTMENTS OF TMS IN EVERY MART!
 - Add more general QOL features where necessary
     - Make unused Pokedolls obtainable, and make Lilycove department sale happen more often
     - Place to purchase all evolution items (Fortree?)
