@@ -21,6 +21,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Cross-gen evolutions have also been added, up to Gen 9!
     - Pokémon use modified USUM movesets when applicable
     - Almost all Pokémon have recieved some changes! From slight stat changes to new types, each Pokémon should feel more unique to use
+    - Additional available Pokémon: Spiky-Ear Pichu and the Tinkaton line (details on obtaining in documentation)
 - Party-wide EXP Share, with soft level caps to balance this change
     - This is *NOT* a "difficulty hack"! These changes just cut down on some grind while still keeping a good balance
     - Soft level cap allows for you to reach the gym leader's max, then halves exp gain for the next few levels, then cuts it more
@@ -35,6 +36,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Press R to toggle auto-run
     - Press A in Summary Screen to view IVs and EVs; All Pokémon have at least 2 perfect IV's
     - Legendaries can all be encountered, many before Elite Four - details in documentation
+    - Pokémon Box Link, allowing access to PC from anywhere (obtained from Scientist NPC in Slateport City Pokémon Center)
 
 ## FUTURE PLANS
 
@@ -44,7 +46,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Implement SageDeoxys sprites! Very pretty
 - Convert scripts to PoryScript and code extra events
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
-        - Create NPC quest that gives ITEM_POKEMON_BOX_LINK
         - Add NPC quests giving Tinkatink and Applin eggs (based on poll)
         - Add Professor Oak NPC giving Spiky Ear Pichu after registering X # of Pokémon in the Dex
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)

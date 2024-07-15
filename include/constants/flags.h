@@ -667,10 +667,10 @@
 #define FLAG_BATTLED_LEGENDARY_DOG  0x270 // reset every E4 run
 #define FLAG_BATTLED_LEGENDARY_BIRD  0x271 // reset every E4 run
 #define FLAG_GOT_FORTREE_SHINY_CHARM  0x272
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
+#define FLAG_GOT_PKMN_BOX_LINK  0x273
+#define FLAG_MET_PROF_ELM  0x274 
+#define FLAG_COMPLETED_PICHU_QUEST  0x275 // hides prof elm
+#define FLAG_GOT_TINKATINK_EGG  0x276
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag
 #define FLAG_UNUSED_0x278  0x278 // Unused Flag
 #define FLAG_UNUSED_0x279  0x279 // Unused Flag

@@ -145,3 +145,57 @@ Route115_Text_MeteorFallsSign:
 	.string "FALLARBOR TOWN THROUGH HERE$"
 
 `
+
+script Route115_AquaGrunt_TinkatinkEgg
+{
+
+	lock
+	msgbox(format("Argh, what terrible timing..."))
+	applymovement(24, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	delay(20)
+	faceplayer
+	msgbox(format("You! I know you, you're the kid messing up ARCHIE's plans! Grrr, I don't have time for this!\p My TEAM AQUA group ran off ahead of me as I was distracted by this.\l It's an EGG from a POKéMON, but it doesn't look like any species I know."))
+	closemessage
+	msgbox(format("I know we're supposed to be enemies, but I can't just leave this EGG all vulnerable here. Could you take it?"), MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == 1) // yes will take egg
+	{
+		specialvar(VAR_RESULT, CalculatePlayerPartyCount)
+		if(var(VAR_RESULT) == PARTY_SIZE) // no room for the egg!
+		{
+			msgbox(format("Hey! You liar! You don't have room in your PARTY!"))
+			closemessage
+			release
+			end
+		}
+		else
+		{
+			giveegg(SPECIES_TINKATINK)
+			playfanfare(MUS_LEVEL_UP)
+			msgbox(format("{PLAYER} received the PALDEAN EGG!"))
+			waitfanfare
+			msgbox(format("Finally, I can get out of here! TEAM AQUA rules, TEAM MAGMA drools!"))
+			closemessage
+			fadescreen(FADE_TO_BLACK)
+			delay(20)
+			removeobject(24)
+			setflag(FLAG_GOT_TINKATINK_EGG)
+			delay(40)
+			fadescreen(FADE_FROM_BLACK)
+			release
+			end
+		}
+	}
+	else
+	{
+		msgbox(format("Ugh, what else would I expect from an enemy of TEAM AQUA? Get out of here!"))
+		closemessage
+		release
+		end
+	}
+
+	release
+	end
+
+}

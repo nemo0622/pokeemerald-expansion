@@ -188,3 +188,187 @@ FallarborTown_Text_MoveTutorSign:
 	.string "MOVE TUTOR'S HOUSE\n"
 # 95 "data/maps/FallarborTown/scripts.pory"
 	.string "“New moves taught to POKéMON.”$"
+
+FallarborTown_EventScript_ProfElm::
+# 101 "data/maps/FallarborTown/scripts.pory"
+	lockall
+# 102 "data/maps/FallarborTown/scripts.pory"
+	faceplayer
+# 104 "data/maps/FallarborTown/scripts.pory"
+	goto_if_unset FLAG_MET_PROF_ELM, FallarborTown_EventScript_ProfElm_2
+# 119 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_ProfElm_Text_2
+# 120 "data/maps/FallarborTown/scripts.pory"
+	setvar VAR_0x8004, 1
+# 121 "data/maps/FallarborTown/scripts.pory"
+	specialvar VAR_RESULT, ScriptGetPokedexInfo
+# 122 "data/maps/FallarborTown/scripts.pory"
+	copyvar VAR_0x8009, VAR_0x8006
+# 123 "data/maps/FallarborTown/scripts.pory"
+	buffernumberstring STR_VAR_2, VAR_0x8009
+# 124 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_ProfElm_Text_3
+# 125 "data/maps/FallarborTown/scripts.pory"
+	closemessage
+# 127 "data/maps/FallarborTown/scripts.pory"
+	compare VAR_0x8009, 50
+	goto_if_lt FallarborTown_EventScript_ProfElm_5
+# 136 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_ProfElm_Text_5
+# 137 "data/maps/FallarborTown/scripts.pory"
+	closemessage
+# 138 "data/maps/FallarborTown/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PICHU_SPIKY_EARED
+# 139 "data/maps/FallarborTown/scripts.pory"
+	givemon SPECIES_PICHU_SPIKY_EARED, 5
+# 141 "data/maps/FallarborTown/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 142 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_ProfElm_Text_6
+# 143 "data/maps/FallarborTown/scripts.pory"
+	waitfanfare
+# 144 "data/maps/FallarborTown/scripts.pory"
+	closemessage
+# 147 "data/maps/FallarborTown/scripts.pory"
+	compare VAR_RESULT, MON_GIVEN_TO_PARTY
+	goto_if_eq FallarborTown_EventScript_ProfElm_9
+# 158 "data/maps/FallarborTown/scripts.pory"
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+# 159 "data/maps/FallarborTown/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq FallarborTown_EventScript_ProfElm_15
+FallarborTown_EventScript_ProfElm_14:
+# 163 "data/maps/FallarborTown/scripts.pory"
+	call Common_EventScript_TransferredToPC
+FallarborTown_EventScript_ProfElm_8:
+# 166 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_ProfElm_Text_8
+# 167 "data/maps/FallarborTown/scripts.pory"
+	closemessage
+# 168 "data/maps/FallarborTown/scripts.pory"
+	setflag FLAG_COMPLETED_PICHU_QUEST
+# 169 "data/maps/FallarborTown/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 170 "data/maps/FallarborTown/scripts.pory"
+	removeobject 18
+# 171 "data/maps/FallarborTown/scripts.pory"
+	delay 60
+# 172 "data/maps/FallarborTown/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 173 "data/maps/FallarborTown/scripts.pory"
+	releaseall
+	end
+
+# 178 "data/maps/FallarborTown/scripts.pory"
+	releaseall
+	end
+
+FallarborTown_EventScript_ProfElm_2:
+# 106 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_ProfElm_Text_0
+# 107 "data/maps/FallarborTown/scripts.pory"
+	closemessage
+# 108 "data/maps/FallarborTown/scripts.pory"
+	delay 60
+# 109 "data/maps/FallarborTown/scripts.pory"
+	applymovement 18, Common_Movement_ExclamationMark
+# 110 "data/maps/FallarborTown/scripts.pory"
+	waitmovement 0
+# 111 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_ProfElm_Text_1
+# 112 "data/maps/FallarborTown/scripts.pory"
+	closemessage
+# 113 "data/maps/FallarborTown/scripts.pory"
+	setflag FLAG_MET_PROF_ELM
+# 114 "data/maps/FallarborTown/scripts.pory"
+	releaseall
+	end
+
+FallarborTown_EventScript_ProfElm_5:
+# 129 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_ProfElm_Text_4
+# 130 "data/maps/FallarborTown/scripts.pory"
+	closemessage
+# 131 "data/maps/FallarborTown/scripts.pory"
+	releaseall
+	end
+
+FallarborTown_EventScript_ProfElm_9:
+# 149 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_ProfElm_Text_7, MSGBOX_YESNO
+# 150 "data/maps/FallarborTown/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq FallarborTown_EventScript_ProfElm_12
+	goto FallarborTown_EventScript_ProfElm_8
+
+FallarborTown_EventScript_ProfElm_12:
+# 152 "data/maps/FallarborTown/scripts.pory"
+	call Common_EventScript_GetGiftMonPartySlot
+# 153 "data/maps/FallarborTown/scripts.pory"
+	call Common_EventScript_NameReceivedPartyMon
+	goto FallarborTown_EventScript_ProfElm_8
+
+FallarborTown_EventScript_ProfElm_15:
+# 161 "data/maps/FallarborTown/scripts.pory"
+	call Common_EventScript_NameReceivedBoxMon
+	goto FallarborTown_EventScript_ProfElm_14
+
+
+FallarborTown_EventScript_ProfElm_Text_0:
+# 106 "data/maps/FallarborTown/scripts.pory"
+	.string "Hey there! My name is Professor Elm. I'm\n"
+	.string "visiting from the JOHTO region to see\l"
+	.string "the local HOENN POKéMON. And you are...?$"
+
+FallarborTown_EventScript_ProfElm_Text_1:
+# 111 "data/maps/FallarborTown/scripts.pory"
+	.string "Oh? You moved to HOENN from JOHTO?\n"
+	.string "That's great! I see you're a TRAINER\l"
+	.string "with a POKéDEX, so I've got a little\l"
+	.string "challenge for you.\p"
+	.string "Show me you've caught 50 POKéMON\n"
+	.string "species, and I'll give you a special\l"
+	.string "POKéMON from JOHTO!$"
+
+FallarborTown_EventScript_ProfElm_Text_2:
+# 119 "data/maps/FallarborTown/scripts.pory"
+	.string "How's it going, {PLAYER}? Here to try\n"
+	.string "to earn that reward? Let's see your\l"
+	.string "progress...$"
+
+FallarborTown_EventScript_ProfElm_Text_3:
+# 124 "data/maps/FallarborTown/scripts.pory"
+	.string "You've caught {STR_VAR_2} POKéMON!$"
+
+FallarborTown_EventScript_ProfElm_Text_4:
+# 129 "data/maps/FallarborTown/scripts.pory"
+	.string "Looks like you've got work to do!\p"
+	.string "I want to make sure this JOHTO POKéMON\n"
+	.string "goes to the right TRAINER, it's very,\l"
+	.string "very special.$"
+
+FallarborTown_EventScript_ProfElm_Text_5:
+# 136 "data/maps/FallarborTown/scripts.pory"
+	.string "Look at that, you did it! As promised,\n"
+	.string "here's the JOHTO POKéMON!$"
+
+FallarborTown_EventScript_ProfElm_Text_6:
+# 142 "data/maps/FallarborTown/scripts.pory"
+	.string "{PLAYER} received a special Pichu!$"
+
+FallarborTown_EventScript_ProfElm_Text_7:
+# 149 "data/maps/FallarborTown/scripts.pory"
+	.string "Give a nickname to the Spiky Eared\n"
+	.string "Pichu?$"
+
+FallarborTown_EventScript_ProfElm_Text_8:
+# 166 "data/maps/FallarborTown/scripts.pory"
+	.string "That Pichu is special! The scientists in\n"
+	.string "JOHTO believe she traveled through\l"
+	.string "time with Celebi, so it has unique stats\l"
+	.string "and cannot evolve.\p"
+	.string "She's been stuck in the lab for a while,\n"
+	.string "but she always seems to want out. Now,\l"
+	.string "she can go on an adventure with you!\p"
+	.string "I should probably continue my travels.\n"
+	.string "See you around, {PLAYER}!$"

@@ -95,3 +95,86 @@ FallarborTown_Text_MoveTutorSign:
 	.string "“New moves taught to POKéMON.”$"
 
 `
+
+script FallarborTown_EventScript_ProfElm
+{
+	lockall
+	faceplayer
+
+	if(!flag(FLAG_MET_PROF_ELM))
+	{
+		msgbox(format("Hey there! My name is Professor Elm. I'm visiting from the JOHTO region to see the local HOENN POKéMON. And you are...?"))
+		closemessage
+		delay(60)
+		applymovement(18, Common_Movement_ExclamationMark)
+		waitmovement(0)
+		msgbox(format("Oh? You moved to HOENN from JOHTO? That's great! I see you're a TRAINER with a POKéDEX, so I've got a little challenge for you.\p Show me you've caught 50 POKéMON species, and I'll give you a special POKéMON from JOHTO!"))
+		closemessage
+		setflag(FLAG_MET_PROF_ELM)
+		releaseall
+		end
+	}
+	else
+	{
+		msgbox(format("How's it going, {PLAYER}? Here to try to earn that reward? Let's see your progress..."))
+		setvar(VAR_0x8004, 1)
+		specialvar(VAR_RESULT, ScriptGetPokedexInfo)
+		copyvar(VAR_0x8009, VAR_0x8006) // num national caught
+		buffernumberstring(STR_VAR_2, VAR_0x8009) // Puts # of national pokemon caught to STR_VAR_2
+		msgbox(format("You've caught {STR_VAR_2} POKéMON!"))
+		closemessage
+
+		if(var(VAR_0x8009) < 50)
+		{
+			msgbox(format("Looks like you've got work to do!\p I want to make sure this JOHTO POKéMON goes to the right TRAINER, it's very, very special."))
+			closemessage
+			releaseall
+			end
+		}
+		else
+		{
+			msgbox(format("Look at that, you did it! As promised, here's the JOHTO POKéMON!"))
+			closemessage
+			setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PICHU_SPIKY_EARED)
+			givemon(SPECIES_PICHU_SPIKY_EARED, 5)
+
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("{PLAYER} received a special Pichu!"))
+			waitfanfare
+			closemessage
+
+			// do different things if it went to party or pc
+			if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY)
+			{
+				msgbox(format("Give a nickname to the Spiky Eared Pichu?"), MSGBOX_YESNO)
+				if(var(VAR_RESULT) == 1)
+				{
+					call(Common_EventScript_GetGiftMonPartySlot)
+					call(Common_EventScript_NameReceivedPartyMon)
+				}
+			}
+			else
+			{
+				msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+				if(var(VAR_RESULT) == 1)
+				{
+					call(Common_EventScript_NameReceivedBoxMon)
+				}
+				call(Common_EventScript_TransferredToPC)
+			}
+
+			msgbox(format("That Pichu is special! The scientists in JOHTO believe she traveled through time with Celebi, so it has unique stats and cannot evolve.\p She's been stuck in the lab for a while, but she always seems to want out. Now, she can go on an adventure with you!\p I should probably continue my travels. See you around, {PLAYER}!"))
+			closemessage
+			setflag(FLAG_COMPLETED_PICHU_QUEST)
+			fadescreen(FADE_TO_BLACK)
+			removeobject(18)
+			delay(60)
+			fadescreen(FADE_FROM_BLACK)
+			releaseall
+			end
+		}
+	}
+
+	releaseall
+	end
+}

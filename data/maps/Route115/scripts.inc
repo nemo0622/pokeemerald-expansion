@@ -288,3 +288,120 @@ Route115_Text_MeteorFallsSign:
 	.string "METEOR FALLS\n"
 # 145 "data/maps/Route115/scripts.pory"
 	.string "FALLARBOR TOWN THROUGH HERE$"
+
+Route115_AquaGrunt_TinkatinkEgg::
+# 152 "data/maps/Route115/scripts.pory"
+	lock
+# 153 "data/maps/Route115/scripts.pory"
+	msgbox Route115_AquaGrunt_TinkatinkEgg_Text_0
+# 154 "data/maps/Route115/scripts.pory"
+	applymovement 24, Common_Movement_ExclamationMark
+# 155 "data/maps/Route115/scripts.pory"
+	waitmovement 0
+# 156 "data/maps/Route115/scripts.pory"
+	delay 20
+# 157 "data/maps/Route115/scripts.pory"
+	faceplayer
+# 158 "data/maps/Route115/scripts.pory"
+	msgbox Route115_AquaGrunt_TinkatinkEgg_Text_1
+# 159 "data/maps/Route115/scripts.pory"
+	closemessage
+# 160 "data/maps/Route115/scripts.pory"
+	msgbox Route115_AquaGrunt_TinkatinkEgg_Text_2, MSGBOX_YESNO
+# 162 "data/maps/Route115/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route115_AquaGrunt_TinkatinkEgg_2
+# 192 "data/maps/Route115/scripts.pory"
+	msgbox Route115_AquaGrunt_TinkatinkEgg_Text_6
+# 193 "data/maps/Route115/scripts.pory"
+	closemessage
+# 194 "data/maps/Route115/scripts.pory"
+	release
+	end
+
+# 198 "data/maps/Route115/scripts.pory"
+	release
+	end
+
+Route115_AquaGrunt_TinkatinkEgg_2:
+# 164 "data/maps/Route115/scripts.pory"
+	specialvar VAR_RESULT, CalculatePlayerPartyCount
+# 165 "data/maps/Route115/scripts.pory"
+	compare VAR_RESULT, PARTY_SIZE
+	goto_if_eq Route115_AquaGrunt_TinkatinkEgg_5
+# 174 "data/maps/Route115/scripts.pory"
+	giveegg SPECIES_TINKATINK
+# 175 "data/maps/Route115/scripts.pory"
+	playfanfare MUS_LEVEL_UP
+# 176 "data/maps/Route115/scripts.pory"
+	msgbox Route115_AquaGrunt_TinkatinkEgg_Text_4
+# 177 "data/maps/Route115/scripts.pory"
+	waitfanfare
+# 178 "data/maps/Route115/scripts.pory"
+	msgbox Route115_AquaGrunt_TinkatinkEgg_Text_5
+# 179 "data/maps/Route115/scripts.pory"
+	closemessage
+# 180 "data/maps/Route115/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 181 "data/maps/Route115/scripts.pory"
+	delay 20
+# 182 "data/maps/Route115/scripts.pory"
+	removeobject 24
+# 183 "data/maps/Route115/scripts.pory"
+	setflag FLAG_GOT_TINKATINK_EGG
+# 184 "data/maps/Route115/scripts.pory"
+	delay 40
+# 185 "data/maps/Route115/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 186 "data/maps/Route115/scripts.pory"
+	release
+	end
+
+Route115_AquaGrunt_TinkatinkEgg_5:
+# 167 "data/maps/Route115/scripts.pory"
+	msgbox Route115_AquaGrunt_TinkatinkEgg_Text_3
+# 168 "data/maps/Route115/scripts.pory"
+	closemessage
+# 169 "data/maps/Route115/scripts.pory"
+	release
+	end
+
+
+Route115_AquaGrunt_TinkatinkEgg_Text_0:
+# 153 "data/maps/Route115/scripts.pory"
+	.string "Argh, what terrible timing...$"
+
+Route115_AquaGrunt_TinkatinkEgg_Text_1:
+# 158 "data/maps/Route115/scripts.pory"
+	.string "You! I know you, you're the kid messing\n"
+	.string "up ARCHIE's plans! Grrr, I don't have\l"
+	.string "time for this!\p"
+	.string "My TEAM AQUA group ran off ahead of me\n"
+	.string "as I was distracted by this.\l"
+	.string "It's an EGG from a POKéMON, but it\l"
+	.string "doesn't look like any species I know.$"
+
+Route115_AquaGrunt_TinkatinkEgg_Text_2:
+# 160 "data/maps/Route115/scripts.pory"
+	.string "I know we're supposed to be enemies,\n"
+	.string "but I can't just leave this EGG all\l"
+	.string "vulnerable here. Could you take it?$"
+
+Route115_AquaGrunt_TinkatinkEgg_Text_3:
+# 167 "data/maps/Route115/scripts.pory"
+	.string "Hey! You liar! You don't have room in\n"
+	.string "your PARTY!$"
+
+Route115_AquaGrunt_TinkatinkEgg_Text_4:
+# 176 "data/maps/Route115/scripts.pory"
+	.string "{PLAYER} received the PALDEAN EGG!$"
+
+Route115_AquaGrunt_TinkatinkEgg_Text_5:
+# 178 "data/maps/Route115/scripts.pory"
+	.string "Finally, I can get out of here! TEAM\n"
+	.string "AQUA rules, TEAM MAGMA drools!$"
+
+Route115_AquaGrunt_TinkatinkEgg_Text_6:
+# 192 "data/maps/Route115/scripts.pory"
+	.string "Ugh, what else would I expect from an\n"
+	.string "enemy of TEAM AQUA? Get out of here!$"

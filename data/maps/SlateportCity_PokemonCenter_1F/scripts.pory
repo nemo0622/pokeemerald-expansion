@@ -42,3 +42,40 @@ SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend:
 	.string "item, it makes me twice as happy!$"
 
 `
+
+script SlateportCity_PokemonCenter_PokemonBoxLinkScientist
+{
+
+	lock
+	faceplayer
+	
+	if(!flag(FLAG_BADGE03_GET))
+	{
+		msgbox(format("Hmm... mhm, mhm...\p Yep! You're definitely an up-and-coming POKéMON TRAINER! I'm working on a cool new tool for TRAINERS like you. Come back to me after you've beaten the MAUVILLE CITY GYM!"))
+		closemessage
+		release
+		end
+	}
+	elif(flag(FLAG_BADGE03_GET) && !flag(FLAG_GOT_PKMN_BOX_LINK))
+	{
+		msgbox(format("Woah, hey! You've earned WATTSON's GYM BADGE! If you can beat him, you're strong enough to represent my new technology: the {PKMN} Box Link!"))
+		closemessage
+		giveitem(ITEM_POKEMON_BOX_LINK)
+		msgbox(format("With the {PKMN} Box Link, you can connect to your PC box from anywhere, no need to trek back to a POKéMON CENTER! Cool, huh?"))
+		closemessage
+		setflag(FLAG_GOT_PKMN_BOX_LINK)
+		release
+		end
+	}
+	elif(flag(FLAG_BADGE03_GET) && flag(FLAG_GOT_PKMN_BOX_LINK))
+	{
+		msgbox(format("How's the {PKMN} Box Link working?"))
+		closemessage
+		release
+		end
+	}
+
+	release
+	end
+
+}
