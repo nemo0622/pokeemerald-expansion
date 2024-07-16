@@ -3452,3 +3452,101 @@ SootopolisCity_Text_DazzledByMentor:
 	.string "dazzled by my mentor's breathtakingly\l"
 # 1727 "data/maps/SootopolisCity/scripts.pory"
 	.string "elegant battle style.$"
+
+SootopolisCity_EventScript_EvolutionItemSaleswoman::
+# 1733 "data/maps/SootopolisCity/scripts.pory"
+	lock
+# 1734 "data/maps/SootopolisCity/scripts.pory"
+	faceplayer
+# 1735 "data/maps/SootopolisCity/scripts.pory"
+	msgbox SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_0
+# 1736 "data/maps/SootopolisCity/scripts.pory"
+	closemessage
+# 1737 "data/maps/SootopolisCity/scripts.pory"
+	message SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_1
+# 1738 "data/maps/SootopolisCity/scripts.pory"
+	waitmessage
+# 1739 "data/maps/SootopolisCity/scripts.pory"
+	pokemart EvolutionItemMarket
+# 1740 "data/maps/SootopolisCity/scripts.pory"
+	msgbox SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_2
+# 1741 "data/maps/SootopolisCity/scripts.pory"
+	closemessage
+# 1742 "data/maps/SootopolisCity/scripts.pory"
+	release
+	end
+
+
+	.align 2
+# 1747 "data/maps/SootopolisCity/scripts.pory"
+EvolutionItemMarket:
+# 1749 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_LINKING_CORD
+# 1750 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_FIRE_STONE
+# 1751 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_WATER_STONE
+# 1752 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_THUNDER_STONE
+# 1753 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_LEAF_STONE
+# 1754 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_ICE_STONE
+# 1755 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_SUN_STONE
+# 1756 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_MOON_STONE
+# 1757 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_SHINY_STONE
+# 1758 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_DAWN_STONE
+# 1759 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_DUSK_STONE
+# 1760 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_DRAGON_SCALE
+# 1761 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_KINGS_ROCK
+# 1762 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_METAL_COAT
+# 1763 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_UPGRADE
+# 1764 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_DUBIOUS_DISC
+# 1765 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_DEEP_SEA_SCALE
+# 1766 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_DEEP_SEA_TOOTH
+# 1767 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_ELECTIRIZER
+# 1768 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_MAGMARIZER
+# 1769 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_PROTECTOR
+# 1770 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_RAZOR_CLAW
+# 1771 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_RAZOR_FANG
+# 1772 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_REAPER_CLOTH
+# 1773 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_PRISM_SCALE
+# 1774 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_PEAT_BLOCK
+# 1775 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_BLACK_AUGURITE
+	.2byte ITEM_NONE
+
+SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_0:
+# 1735 "data/maps/SootopolisCity/scripts.pory"
+	.string "Welcome to my little stall!\n"
+	.string "I sell evolution items to help TRAINERS\l"
+	.string "raise their POKéMON up higher than\l"
+	.string "ever!$"
+
+SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_1:
+# 1737 "data/maps/SootopolisCity/scripts.pory"
+	.string "So, how can I help you?$"
+
+SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_2:
+# 1740 "data/maps/SootopolisCity/scripts.pory"
+	.string "I hope to see you again!$"

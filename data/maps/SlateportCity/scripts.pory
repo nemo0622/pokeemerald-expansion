@@ -1385,3 +1385,25 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
 `
+
+script SlateportCity_EventScript_EvolutionItemClerk
+{
+	lock
+	faceplayer
+	message("How can I help you?")
+	waitmessage
+	pokemart(SlateportCity_Mart_EvolutionItems)
+	msgbox(format("I hope to see you again!"))
+	closemessage
+	release
+	end
+}
+
+mart SlateportCity_Mart_EvolutionItems
+{
+	ITEM_WATER_STONE
+	ITEM_FIRE_STONE
+	ITEM_THUNDER_STONE
+	ITEM_SUN_STONE
+	ITEM_MOON_STONE
+}

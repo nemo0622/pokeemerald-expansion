@@ -2770,3 +2770,46 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "the perfect fit for the BATTLE TENT!\p"
 # 1386 "data/maps/SlateportCity/scripts.pory"
 	.string "Give it your best effort!$"
+
+SlateportCity_EventScript_EvolutionItemClerk::
+# 1391 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1392 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1393 "data/maps/SlateportCity/scripts.pory"
+	message SlateportCity_EventScript_EvolutionItemClerk_Text_0
+# 1394 "data/maps/SlateportCity/scripts.pory"
+	waitmessage
+# 1395 "data/maps/SlateportCity/scripts.pory"
+	pokemart SlateportCity_Mart_EvolutionItems
+# 1396 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_EvolutionItemClerk_Text_1
+# 1397 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1398 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+
+	.align 2
+# 1402 "data/maps/SlateportCity/scripts.pory"
+SlateportCity_Mart_EvolutionItems:
+# 1404 "data/maps/SlateportCity/scripts.pory"
+	.2byte ITEM_WATER_STONE
+# 1405 "data/maps/SlateportCity/scripts.pory"
+	.2byte ITEM_FIRE_STONE
+# 1406 "data/maps/SlateportCity/scripts.pory"
+	.2byte ITEM_THUNDER_STONE
+# 1407 "data/maps/SlateportCity/scripts.pory"
+	.2byte ITEM_SUN_STONE
+# 1408 "data/maps/SlateportCity/scripts.pory"
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_NONE
+
+SlateportCity_EventScript_EvolutionItemClerk_Text_0:
+# 1393 "data/maps/SlateportCity/scripts.pory"
+	.string "How can I help you?$"
+
+SlateportCity_EventScript_EvolutionItemClerk_Text_1:
+# 1396 "data/maps/SlateportCity/scripts.pory"
+	.string "I hope to see you again!$"

@@ -46,13 +46,11 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Implement SageDeoxys sprites! Very pretty
 - Convert scripts to PoryScript and code extra events
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
-        - Add NPC quests giving Tinkatink and Applin eggs (based on poll)
-        - Add Professor Oak NPC giving Spiky Ear Pichu after registering X # of Pokémon in the Dex
+        - Add NPC quests giving Applin egg (based on poll)
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
-    - Add Kimono Girls to Mossdeep, give lore about connections to Johto Region?
+    - Watch Saffron City TV video about fixing Hoenn to figure out what to add to Pacifidlog lol
 - Add more general QOL features where necessary
-    - Make unused Pokedolls obtainable, and make Lilycove department sale happen more often
-    - Place to purchase all evolution items (Fortree?)
+- Script intro sequence with Professor Elm discussing your move from JOHTO
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - DexNav!
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
@@ -79,7 +77,7 @@ Please support everyone who made this possible!
     - Spiky-ear Pichu sprite based on Pichu devamp by Matdemo159 on DeviantArt
     - A few modified Gen 1-2 Pokémon sprites (Golduck, Aipom, Politoed) by Substitube
 - Overworld Sprites:
-    - New player sprites by Solo993 and GOLDHIBIKI on DeviantArt
+    - New player sprites by [Solo993 and GOLDHIBIKI](https://www.deviantart.com/solo993/art/Pokemon-Special-HgSs-saga-gbc-sprites-454150898) on DeviantArt
     - Some trainer sprites by leeseongjae620 on DeviantArt
 - User Interface:
     - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
