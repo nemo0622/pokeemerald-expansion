@@ -43,10 +43,9 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - AFTER EXPANSION 1.9.0: Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
-- Implement SageDeoxys sprites! Very pretty
 - Convert scripts to PoryScript and code extra events
     - Add some more NPCs across the overworld, with gift eggs and fun tidbits
-        - Add NPC quests giving Applin egg (based on poll)
+        - Add NPC quests giving Applin egg
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
     - Watch Saffron City TV video about fixing Hoenn to figure out what to add to Pacifidlog lol
 - Add more general QOL features where necessary
@@ -76,6 +75,7 @@ Please support everyone who made this possible!
     - Generation 1-2 Pokémon and many UI sprites from Spriter's Resource GSC sprite sheets
     - Spiky-ear Pichu sprite based on Pichu devamp by Matdemo159 on DeviantArt
     - A few modified Gen 1-2 Pokémon sprites (Golduck, Aipom, Politoed) by Substitube
+    - Hydrapple line sprites and various other gen 2 style sprites (Charizard, Dudunsparce, Porygon line) by SageDeoxys on Twitter
 - Overworld Sprites:
     - New player sprites by [Solo993 and GOLDHIBIKI](https://www.deviantart.com/solo993/art/Pokemon-Special-HgSs-saga-gbc-sprites-454150898) on DeviantArt
     - Some trainer sprites by leeseongjae620 on DeviantArt
