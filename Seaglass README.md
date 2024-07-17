@@ -48,8 +48,8 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
         - Add NPC quests giving Applin egg
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
     - Watch Saffron City TV video about fixing Hoenn to figure out what to add to Pacifidlog lol
+    - Make pokemon news things happen more (berry master, lilycove sale, etc)
 - Add more general QOL features where necessary
-- Script intro sequence with Professor Elm discussing your move from JOHTO
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - DexNav!
 - Day/Night system? Maybe with FakeRTC system using internal clock system?

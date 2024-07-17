@@ -1,52 +1,55 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
+	.string "Hi! I hope this finds you well.\p"
 	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "My name is OAK.\p"
+	.string "But surely you already know this,\n"
+	.string "as you're moving from the JOHTO\l"
+	.string "region to the HOENN region now!\p"
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
+	.string "HOENN has many unique species of\n"
+	.string "POKéMON. For example...\p"
 	.string "\n"
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "We humans live alongside POKéMON,\n"
-	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
-	.string "And sometimes, we band together\n"
-	.string "and battle others like us.\p"
-	.string "But despite our closeness, we don't\n"
-	.string "know everything about POKéMON.\p"
-	.string "In fact, there are many, many\n"
-	.string "secrets surrounding POKéMON.\p"
-	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
+	.string "This LOATD is just one of over 400\n"
+	.string "POKéMON found in HOENN!\p"
+	.string "Recent migration events have made\n"
+	.string "HOENN a hotspot for biodiversity.\l"
+	.string "It is unlike anywhere else.\p"
+	.string "If you're seeing this message, then\n"
+	.string "your family has decided to move to\l"
+	.string "HOENN!\p"
+	.string "There, you'll meet new\n"
+	.string "friends, human and POKéMON alike.\p"
+	.string "The PROFESSOR of HOENN, BIRCH, is\n"
+	.string "looking for help in his fieldwork.\p"
+	.string "In fact, he's been so busy, he\n"
+	.string "wouldn't even stop to record this!\l"
+	.string "He studies POKéMON habitats.\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "And you are?$"
+	.string "Now, let's confirm the paperwork.$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "So, which option represents you?   \n"
+	.string "Option 1 or 2?$"
 
 gText_Birch_WhatsYourName::
-	.string "All right.\n"
+	.string "Looks perfect! I'll set that up.  \n"
 	.string "What's your name?$"
 
 gText_Birch_SoItsPlayer::
-	.string "So it's {PLAYER}{KUN}?$"
+	.string "Register name as {PLAYER}{KUN}?$"
 
 gText_Birch_YourePlayer::
-	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
-	.string "I get it now!\p"
+	.string "Your registration is complete!\p"
+	.string "You're {PLAYER}{KUN}, moving to\n"
+	.string "BIRCH's hometown of LITTLEROOT.\l"
+	.string "He'll be thrilled!\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
@@ -54,8 +57,8 @@ gText_Birch_AreYouReady::
 	.string "Your very own adventure is about\n"
 	.string "to unfold.\p"
 	.string "Take courage, and leap into the\n"
-	.string "world of POKéMON where dreams,\l"
+	.string "HOENN region, where dreams,\l"
 	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
+	.string "BIRCH should be expecting you in\n"
+	.string "his POKéMON LAB. Safe travels!\p"
 	.string "$"
