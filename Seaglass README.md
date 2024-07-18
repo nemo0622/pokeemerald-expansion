@@ -45,10 +45,6 @@ High Priority (Before Release 1.0):
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
-- Convert scripts to PoryScript and code extra events
-    - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
-        - DEWFORD TOWN: add rare berry dealer, giving rare berry for showing random Pokédex entry daily?
-    - Change Team Aqua/Magma dialogue to be less bad lol
 - Bring back Contest Halls, replacing battle tents!
     - Also make Contest stats influence battle performance (higher Sheen or something giving a boost??)
 - Add changes inspired by Saffron City TV's Hoenn Repair video
@@ -60,10 +56,13 @@ High Priority (Before Release 1.0):
     - Respawn Kecleon in Fortree and surrounding areas every so often
 
 Later Additions (After Release 1.0):
+- Make changes to Aqua/Magma dialogue!
+    - Based on changes from ORAS
 - Make Pokenews thing happen more often (Lilycove Dept. Store rooftop sales, Berry Blend master, etc)
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
 - Look into music modding! Convert sound font to be more like gen 2?
+    - Some RSE music in 8 bit style by Mixeli on youtube
 
 ## KNOWN BUGS & PROBLEMS
 
