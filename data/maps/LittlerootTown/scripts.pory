@@ -1021,3 +1021,13 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "Let's go to my LAB.$"
 
 `
+
+script LittlerootTown_EventScript_ApplinInvasive
+{
+	lock
+	faceplayer
+	msgbox(format("I heard a species of APPLE POKéMON from GALAR has been found around LITTLEROOT!\N They must've come hiding in a shipment of supplies to the POKéMON LAB here."))
+	closemessage
+	release
+	end
+}

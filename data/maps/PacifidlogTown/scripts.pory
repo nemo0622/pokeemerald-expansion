@@ -54,3 +54,24 @@ PacifidlogTown_Text_TownSign:
 	.string "the waters.”$"
 
 `
+
+script PacifidlogTown_EventScript_AppleSalesman
+{
+	lock
+	faceplayer
+	message(format("Apples for sale! Come get your apples, fresh from the mainland!"))
+	waitmessage
+	pokemart(PacifidlogTown_AppleMart)
+	msgbox(format("Come back soon!"))
+	closemessage
+	release
+	end
+}
+
+mart PacifidlogTown_AppleMart
+{
+	ITEM_SWEET_APPLE
+	ITEM_TART_APPLE
+	ITEM_SYRUPY_APPLE
+	ITEM_FRESH_START_MOCHI
+}

@@ -106,3 +106,45 @@ PacifidlogTown_Text_TownSign:
 	.string "“Where the morning sun smiles upon\n"
 # 54 "data/maps/PacifidlogTown/scripts.pory"
 	.string "the waters.”$"
+
+PacifidlogTown_EventScript_AppleSalesman::
+# 60 "data/maps/PacifidlogTown/scripts.pory"
+	lock
+# 61 "data/maps/PacifidlogTown/scripts.pory"
+	faceplayer
+# 62 "data/maps/PacifidlogTown/scripts.pory"
+	message PacifidlogTown_EventScript_AppleSalesman_Text_0
+# 63 "data/maps/PacifidlogTown/scripts.pory"
+	waitmessage
+# 64 "data/maps/PacifidlogTown/scripts.pory"
+	pokemart PacifidlogTown_AppleMart
+# 65 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_AppleSalesman_Text_1
+# 66 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
+# 67 "data/maps/PacifidlogTown/scripts.pory"
+	release
+	end
+
+
+	.align 2
+# 71 "data/maps/PacifidlogTown/scripts.pory"
+PacifidlogTown_AppleMart:
+# 73 "data/maps/PacifidlogTown/scripts.pory"
+	.2byte ITEM_SWEET_APPLE
+# 74 "data/maps/PacifidlogTown/scripts.pory"
+	.2byte ITEM_TART_APPLE
+# 75 "data/maps/PacifidlogTown/scripts.pory"
+	.2byte ITEM_SYRUPY_APPLE
+# 76 "data/maps/PacifidlogTown/scripts.pory"
+	.2byte ITEM_FRESH_START_MOCHI
+	.2byte ITEM_NONE
+
+PacifidlogTown_EventScript_AppleSalesman_Text_0:
+# 62 "data/maps/PacifidlogTown/scripts.pory"
+	.string "Apples for sale! Come get your apples,\n"
+	.string "fresh from the mainland!$"
+
+PacifidlogTown_EventScript_AppleSalesman_Text_1:
+# 65 "data/maps/PacifidlogTown/scripts.pory"
+	.string "Come back soon!$"

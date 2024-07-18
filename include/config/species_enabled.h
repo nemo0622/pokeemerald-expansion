@@ -493,7 +493,7 @@
 #define P_FAMILY_CHEWTLE                 FALSE
 #define P_FAMILY_YAMPER                  FALSE
 #define P_FAMILY_ROLYCOLY                FALSE
-#define P_FAMILY_APPLIN                  FALSE
+#define P_FAMILY_APPLIN                  TRUE
 #define P_FAMILY_SILICOBRA               FALSE
 #define P_FAMILY_CRAMORANT               FALSE
 #define P_FAMILY_ARROKUDA                FALSE

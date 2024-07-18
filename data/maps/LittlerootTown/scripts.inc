@@ -2040,3 +2040,25 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 # 1021 "data/maps/LittlerootTown/scripts.pory"
 	.string "Let's go to my LAB.$"
+
+LittlerootTown_EventScript_ApplinInvasive::
+# 1027 "data/maps/LittlerootTown/scripts.pory"
+	lock
+# 1028 "data/maps/LittlerootTown/scripts.pory"
+	faceplayer
+# 1029 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_EventScript_ApplinInvasive_Text_0
+# 1030 "data/maps/LittlerootTown/scripts.pory"
+	closemessage
+# 1031 "data/maps/LittlerootTown/scripts.pory"
+	release
+	end
+
+
+LittlerootTown_EventScript_ApplinInvasive_Text_0:
+# 1029 "data/maps/LittlerootTown/scripts.pory"
+	.string "I heard a species of APPLE POKéMON\n"
+	.string "from GALAR has been found around\l"
+	.string "LITTLEROOT!\l"
+	.string "They must've come hiding in a shipment\l"
+	.string "of supplies to the POKéMON LAB here.$"

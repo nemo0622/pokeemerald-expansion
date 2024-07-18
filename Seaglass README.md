@@ -40,18 +40,26 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 ## FUTURE PLANS
 
-- AFTER EXPANSION 1.9.0: Go through trainer teams and integrate all Gen 1-3 Pokémon!
+High Priority (Before Release 1.0):
+- DexNav!
+- Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
 - Convert scripts to PoryScript and code extra events
-    - Add some more NPCs across the overworld, with gift eggs and fun tidbits
-        - Add NPC quests giving Applin egg
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
-    - Watch Saffron City TV video about fixing Hoenn to figure out what to add to Pacifidlog lol
-    - Make pokemon news things happen more (berry master, lilycove sale, etc)
-- Add more general QOL features where necessary
+    - Change Team Aqua/Magma dialogue to be less bad lol
+- Bring back Contest Halls, replacing battle tents!
+    - Also make Contest stats influence battle performance (higher Sheen or something giving a boost??)
+- Add changes inspired by Saffron City TV's Hoenn Repair video
+    - PACIFIDLOG FIX: Diving minigame in Pacifidlog, catch Pokémon like safari zone
+        - To make this minigame important, maybe make a prize the HM for WATERFALL?? To make player engage with Pacifidlog
+        - ALSO! Make Pacifidlog accessible from Slateport with a Pelipper Carrier NPC or something! This will allow the Player to see the area more than once, and it will also allow them to buy the Applin evolutionary items here!
+    - Move Name Rater to Oldale Town
+    - Respawn Kecleon in Fortree and surrounding areas every so often
+
+Later Additions (After Release 1.0):
+- Make Pokenews thing happen more often (Lilycove Dept. Store rooftop sales, Berry Blend master, etc)
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
-- DexNav!
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
 - Look into music modding! Convert sound font to be more like gen 2?
 

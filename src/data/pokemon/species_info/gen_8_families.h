@@ -2077,9 +2077,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_FLAPPLE] =
     {
         .baseHP        = 70,
-        .baseAttack    = 110,
+        .baseAttack    = 114,
         .baseDefense   = 80,
-        .baseSpeed     = 70,
+        .baseSpeed     = 91,
         .baseSpAttack  = 95,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON),
@@ -2187,12 +2187,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_APPLETUN] =
     {
-        .baseHP        = 110,
+        .baseHP        = 125,
         .baseAttack    = 85,
-        .baseDefense   = 80,
+        .baseDefense   = 85,
         .baseSpeed     = 30,
         .baseSpAttack  = 100,
-        .baseSpDefense = 80,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 170,
@@ -2298,7 +2298,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_GEN_9_CROSS_EVOS
     [SPECIES_DIPPLIN] =
     {
-        .baseHP        = 80,
+        .baseHP        = 90,
         .baseAttack    = 80,
         .baseDefense   = 110,
         .baseSpeed     = 40,
@@ -2345,12 +2345,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         FOOTPRINT(Dipplin)
         .levelUpLearnset = sDipplinLevelUpLearnset,
         .teachableLearnset = sDipplinTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_DRAGON_CHEER, SPECIES_HYDRAPPLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_HYDRAPPLE}),
     },
 
     [SPECIES_HYDRAPPLE] =
     {
-        .baseHP        = 106,
+        .baseHP        = 116,
         .baseAttack    = 80,
         .baseDefense   = 110,
         .baseSpeed     = 44,

@@ -3534,6 +3534,12 @@ EvolutionItemMarket:
 	.2byte ITEM_PEAT_BLOCK
 # 1775 "data/maps/SootopolisCity/scripts.pory"
 	.2byte ITEM_BLACK_AUGURITE
+# 1776 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_SWEET_APPLE
+# 1777 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_TART_APPLE
+# 1778 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_SYRUPY_APPLE
 	.2byte ITEM_NONE
 
 SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_0:
