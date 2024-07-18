@@ -803,3 +803,65 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
 `
+
+script DewfordTown_EventScript_BerryGirl
+{
+	lock
+	faceplayer
+	if(!flag(FLAG_MET_DEWFORD_DAILY_BERRY_GIRL))
+	{
+		if(!flag(FLAG_ENTERED_CONTEST))
+		{
+			msgbox(format("Hm... no, no, you haven't entered a CONTEST yet.\p I was the top TRAINER competing in CONTESTS in my day, I'll have you know! Come back to me when you've tried a CONTEST."))
+			closemessage
+			release
+			end
+		}
+
+		setflag(FLAG_DEWFORD_DAILY_RARE_BERRY) // makes rare daily berry available
+		msgbox(format("I see you've tried your hand in CONTESTS! A TRAINER after my own heart!\p Let's strike a deal, hun. Come visit me every day, and I'll give you a BERRY. Sometimes I find BERRIES only grown on DEWFORD!"))
+		closemessage
+		setflag(FLAG_MET_DEWFORD_DAILY_BERRY_GIRL)
+		msgbox(format("Here's something to get you started."))
+		closemessage
+		giveitem(ITEM_SALAC_BERRY)
+		clearflag(FLAG_DEWFORD_DAILY_RARE_BERRY) // daily berry taken today
+		release
+		end
+	}
+	else
+	{
+		if(!flag(FLAG_DEWFORD_DAILY_RARE_BERRY)) // already gotten daily berry
+		{
+			msgbox(format("You've gotten your berry today! Come back tomorrow, hun."))
+			closemessage
+			release
+			end
+		}
+		else // berry available
+		{
+			msgbox(format("Here for a berry, hun? Here you go!"))
+			closemessage
+
+			randompercentage(20)
+			if(var(VAR_RESULT) == TRUE) // 20% of the time, get rare gold Pokeblock berry
+			{
+				randomelement(ITEM_LIECHI_BERRY, ITEM_GANLON_BERRY, ITEM_SALAC_BERRY, ITEM_PETAYA_BERRY, ITEM_APICOT_BERRY, ITEM_LANSAT_BERRY, ITEM_STARF_BERRY)
+				giveitem(VAR_RESULT)
+			}
+			else
+			{
+				randomelement(ITEM_RAZZ_BERRY, ITEM_BLUK_BERRY, ITEM_NANAB_BERRY, ITEM_WEPEAR_BERRY, ITEM_PINAP_BERRY, ITEM_POMEG_BERRY, ITEM_KELPSY_BERRY, ITEM_QUALOT_BERRY, ITEM_HONDEW_BERRY, ITEM_GREPA_BERRY, ITEM_TAMATO_BERRY, ITEM_CORNN_BERRY, ITEM_MAGOST_BERRY, ITEM_RABUTA_BERRY, ITEM_NOMEL_BERRY, ITEM_SPELON_BERRY, ITEM_PAMTRE_BERRY, ITEM_WATMEL_BERRY, ITEM_DURIN_BERRY, ITEM_BELUE_BERRY)
+				giveitem(VAR_RESULT)
+			}
+			clearflag(FLAG_DEWFORD_DAILY_RARE_BERRY) // daily berry taken today
+			msgbox(format("Come back tomorrow, hun! Go win those CONTESTS for me!"))
+			closemessage
+			release
+			end
+		}
+	}
+
+	release
+	end
+}

@@ -47,12 +47,14 @@ High Priority (Before Release 1.0):
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
 - Convert scripts to PoryScript and code extra events
     - Create quest NPCs to give some helpful optional items (Oval Charm, etc)
+        - DEWFORD TOWN: add rare berry dealer, giving rare berry for showing random Pokédex entry daily?
     - Change Team Aqua/Magma dialogue to be less bad lol
 - Bring back Contest Halls, replacing battle tents!
     - Also make Contest stats influence battle performance (higher Sheen or something giving a boost??)
 - Add changes inspired by Saffron City TV's Hoenn Repair video
     - PACIFIDLOG FIX: Diving minigame in Pacifidlog, catch Pokémon like safari zone
         - To make this minigame important, maybe make a prize the HM for WATERFALL?? To make player engage with Pacifidlog
+        - REFERENCE "LoadWallyZigzagoon" function in field_specials.c to see CreateMon function! For NPCs competing!
         - ALSO! Make Pacifidlog accessible from Slateport with a Pelipper Carrier NPC or something! This will allow the Player to see the area more than once, and it will also allow them to buy the Applin evolutionary items here!
     - Move Name Rater to Oldale Town
     - Respawn Kecleon in Fortree and surrounding areas every so often

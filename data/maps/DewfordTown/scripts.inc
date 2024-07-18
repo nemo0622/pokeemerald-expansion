@@ -1606,3 +1606,126 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "“{STR_VAR_1}” is the\n"
 # 804 "data/maps/DewfordTown/scripts.pory"
 	.string "definition of “in” right now.$"
+
+DewfordTown_EventScript_BerryGirl::
+# 809 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 810 "data/maps/DewfordTown/scripts.pory"
+	faceplayer
+# 811 "data/maps/DewfordTown/scripts.pory"
+	goto_if_unset FLAG_MET_DEWFORD_DAILY_BERRY_GIRL, DewfordTown_EventScript_BerryGirl_2
+# 834 "data/maps/DewfordTown/scripts.pory"
+	goto_if_unset FLAG_DEWFORD_DAILY_RARE_BERRY, DewfordTown_EventScript_BerryGirl_8
+# 843 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_BerryGirl_Text_4
+# 844 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 846 "data/maps/DewfordTown/scripts.pory"
+	randompercentage 20
+# 847 "data/maps/DewfordTown/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq DewfordTown_EventScript_BerryGirl_12
+# 854 "data/maps/DewfordTown/scripts.pory"
+	randomelement ITEM_RAZZ_BERRY, ITEM_BLUK_BERRY, ITEM_NANAB_BERRY, ITEM_WEPEAR_BERRY, ITEM_PINAP_BERRY, ITEM_POMEG_BERRY, ITEM_KELPSY_BERRY, ITEM_QUALOT_BERRY, ITEM_HONDEW_BERRY, ITEM_GREPA_BERRY, ITEM_TAMATO_BERRY, ITEM_CORNN_BERRY, ITEM_MAGOST_BERRY, ITEM_RABUTA_BERRY, ITEM_NOMEL_BERRY, ITEM_SPELON_BERRY, ITEM_PAMTRE_BERRY, ITEM_WATMEL_BERRY, ITEM_DURIN_BERRY, ITEM_BELUE_BERRY
+# 855 "data/maps/DewfordTown/scripts.pory"
+	giveitem VAR_RESULT
+DewfordTown_EventScript_BerryGirl_11:
+# 857 "data/maps/DewfordTown/scripts.pory"
+	clearflag FLAG_DEWFORD_DAILY_RARE_BERRY
+# 858 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_BerryGirl_Text_5
+# 859 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 860 "data/maps/DewfordTown/scripts.pory"
+	release
+	end
+
+# 865 "data/maps/DewfordTown/scripts.pory"
+	release
+	end
+
+DewfordTown_EventScript_BerryGirl_2:
+# 813 "data/maps/DewfordTown/scripts.pory"
+	goto_if_unset FLAG_ENTERED_CONTEST, DewfordTown_EventScript_BerryGirl_6
+# 821 "data/maps/DewfordTown/scripts.pory"
+	setflag FLAG_DEWFORD_DAILY_RARE_BERRY
+# 822 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_BerryGirl_Text_1
+# 823 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 824 "data/maps/DewfordTown/scripts.pory"
+	setflag FLAG_MET_DEWFORD_DAILY_BERRY_GIRL
+# 825 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_BerryGirl_Text_2
+# 826 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 827 "data/maps/DewfordTown/scripts.pory"
+	giveitem ITEM_SALAC_BERRY
+# 828 "data/maps/DewfordTown/scripts.pory"
+	clearflag FLAG_DEWFORD_DAILY_RARE_BERRY
+# 829 "data/maps/DewfordTown/scripts.pory"
+	release
+	end
+
+DewfordTown_EventScript_BerryGirl_6:
+# 815 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_BerryGirl_Text_0
+# 816 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 817 "data/maps/DewfordTown/scripts.pory"
+	release
+	end
+
+DewfordTown_EventScript_BerryGirl_8:
+# 836 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_BerryGirl_Text_3
+# 837 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 838 "data/maps/DewfordTown/scripts.pory"
+	release
+	end
+
+DewfordTown_EventScript_BerryGirl_12:
+# 849 "data/maps/DewfordTown/scripts.pory"
+	randomelement ITEM_LIECHI_BERRY, ITEM_GANLON_BERRY, ITEM_SALAC_BERRY, ITEM_PETAYA_BERRY, ITEM_APICOT_BERRY, ITEM_LANSAT_BERRY, ITEM_STARF_BERRY
+# 850 "data/maps/DewfordTown/scripts.pory"
+	giveitem VAR_RESULT
+	goto DewfordTown_EventScript_BerryGirl_11
+
+
+DewfordTown_EventScript_BerryGirl_Text_0:
+# 815 "data/maps/DewfordTown/scripts.pory"
+	.string "Hm... no, no, you haven't entered a\n"
+	.string "CONTEST yet.\p"
+	.string "I was the top TRAINER competing in\n"
+	.string "CONTESTS in my day, I'll have you know!\l"
+	.string "Come back to me when you've tried a\l"
+	.string "CONTEST.$"
+
+DewfordTown_EventScript_BerryGirl_Text_1:
+# 822 "data/maps/DewfordTown/scripts.pory"
+	.string "I see you've tried your hand in\n"
+	.string "CONTESTS! A TRAINER after my own\l"
+	.string "heart!\p"
+	.string "Let's strike a deal, hun. Come visit me\n"
+	.string "every day, and I'll give you a BERRY.\l"
+	.string "Sometimes I find BERRIES only grown on\l"
+	.string "DEWFORD!$"
+
+DewfordTown_EventScript_BerryGirl_Text_2:
+# 825 "data/maps/DewfordTown/scripts.pory"
+	.string "Here's something to get you started.$"
+
+DewfordTown_EventScript_BerryGirl_Text_3:
+# 836 "data/maps/DewfordTown/scripts.pory"
+	.string "You've gotten your berry today! Come\n"
+	.string "back tomorrow, hun.$"
+
+DewfordTown_EventScript_BerryGirl_Text_4:
+# 843 "data/maps/DewfordTown/scripts.pory"
+	.string "Here for a berry, hun? Here you go!$"
+
+DewfordTown_EventScript_BerryGirl_Text_5:
+# 858 "data/maps/DewfordTown/scripts.pory"
+	.string "Come back tomorrow, hun! Go win those\n"
+	.string "CONTESTS for me!$"

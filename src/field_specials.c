@@ -1435,6 +1435,11 @@ void SetShoalItemFlag(u16 unused)
     FlagSet(FLAG_SYS_SHOAL_ITEM);
 }
 
+void SetDewfordRareBerryFlag()
+{
+    FlagSet(FLAG_DEWFORD_DAILY_RARE_BERRY);
+}
+
 void LoadWallyZigzagoon(void)
 {
     u16 monData;
