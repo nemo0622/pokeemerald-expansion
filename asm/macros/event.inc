@@ -2193,3 +2193,8 @@
     .byte 0xe3
     .2byte \species
     .endm
+
+	@ alias of turnobject with OBJ_EVENT_ID_PLAYER as the localid argument
+	.macro turnplayer direction:req
+	turnobject OBJ_EVENT_ID_PLAYER, \direction
+	.endm

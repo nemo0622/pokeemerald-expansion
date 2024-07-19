@@ -11986,6 +11986,40 @@
         {
           "map": "MAP_MAUVILLE_CITY",
           "base_label": "gMauvilleCity0"
+        },
+        {
+          "map": "MAP_DIVING_MINIGAME",
+          "base_label": "gDivingMinigame0",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_TENTACOOL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HUNTAIL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_LUVDISC"
+              }
+            ]
+          }
         }
       ]
     },

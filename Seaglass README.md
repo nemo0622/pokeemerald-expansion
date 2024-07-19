@@ -50,10 +50,11 @@ High Priority (Before Release 1.0):
 - Add changes inspired by Saffron City TV's Hoenn Repair video
     - PACIFIDLOG FIX: Diving minigame in Pacifidlog, catch Pokémon like safari zone
         - To make this minigame important, maybe make a prize the HM for WATERFALL?? To make player engage with Pacifidlog
+            - REMEMBER TO REMOVE VANILLA WATERFALL GIVE EVENT
+            - Replace sDivingMinigameCaughtMons with sDivingMinigameSeenMons, increasing with every encounter. After 5 encounters, have the minigame end automatically!
+            - Have various hidden items and treasures around the maps, randomly set at the start of each run
         - REFERENCE "LoadWallyZigzagoon" function in field_specials.c to see CreateMon function! For NPCs competing!
         - ALSO! Make Pacifidlog accessible from Slateport with a Pelipper Carrier NPC or something! This will allow the Player to see the area more than once, and it will also allow them to buy the Applin evolutionary items here!
-    - Move Name Rater to Oldale Town
-    - Respawn Kecleon in Fortree and surrounding areas every so often
 
 Later Additions (After Release 1.0):
 - Make changes to Aqua/Magma dialogue!

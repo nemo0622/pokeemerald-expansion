@@ -558,3 +558,5 @@ gSpecials::
 	def_special GetCaughtMon
 	def_special TryChangeDeoxysForm
 	def_special CheckPartyForMon
+	def_special EnterDivingMinigame
+	def_special ExitDivingMinigame

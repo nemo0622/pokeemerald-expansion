@@ -255,3 +255,86 @@ bool8 GetInFrontFeederPokeblockAndSteps(void)
 
     return TRUE;
 }
+
+// -------------------------------------------------------------------------------------------------
+// Everything below this is code for the Pacifidlog Diving Minigame, which functions similarly to the Safari game!
+// -------------------------------------------------------------------------------------------------
+
+EWRAM_DATA static u8 sDivingMinigameCaughtMons = 0;
+extern const u8 DivingMinigame_EventScript_TimesUp[];
+
+void EnterDivingMinigame(void)
+{
+    FlagSet(FLAG_DOING_DIVING_MINIGAME);
+    VarSet(VAR_DIVING_MINIGAME_STEP_COUNT, 200);
+    VarSet(VAR_DIVING_MINIGAME_SCORE, 0);
+    sDivingMinigameCaughtMons = 0;
+}
+
+void ExitDivingMinigame(void)
+{
+    FlagClear(FLAG_DOING_DIVING_MINIGAME);
+    VarSet(VAR_DIVING_MINIGAME_STEP_COUNT, 0);
+}
+
+void CB2_EndDivingMinigameBattle(void)
+{
+    if (gBattleOutcome == B_OUTCOME_CAUGHT)
+    {
+        sDivingMinigameCaughtMons++;
+
+        // SCORE CALCULATION
+        // First, set base score based on species (Rarity Factor)
+        if(GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPECIES) == 72) // if tentacool
+            VarSet(VAR_DIVING_MINIGAME_SCORE, 100);
+        else
+            VarSet(VAR_DIVING_MINIGAME_SCORE, 150);
+
+        // Next, add the Pokémon's LEVEL * 3 to the score
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_LEVEL) * 3)));
+
+        // Next, add each of the Pokémon's IVs to the score (+0-31 per stat, up to +186 if perfect IVs)
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_HP_IV))));
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_ATK_IV))));
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_DEF_IV))));
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPATK_IV))));
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPDEF_IV))));
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPEED_IV))));
+
+        // Finally, add remaining HP to score (higher HP mons = higher score!)
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_HP)));
+
+        // Update high score
+        if(VarGet(VAR_DIVING_MINIGAME_HIGH_SCORE) < VarGet(VAR_DIVING_MINIGAME_SCORE)) // new high score!
+        {
+            VarSet(VAR_DIVING_MINIGAME_HIGH_SCORE, VAR_DIVING_MINIGAME_SCORE);
+            FlagSet(FLAG_NEW_DIVING_GAME_HIGH_SCORE);
+        }
+    }
+    else if(gBattleOutcome == B_OUTCOME_LOST)
+    {
+        // just straight up ends your game lol, no reward cause you kinda suck
+        FlagClear(FLAG_DOING_DIVING_MINIGAME);
+        VarSet(VAR_DIVING_MINIGAME_STEP_COUNT, 0);
+        FlagClear(FLAG_NEW_DIVING_GAME_HIGH_SCORE);
+        VarSet(VAR_PACIFIDLOG_TOWN_STATE, 0);
+    }
+
+    SetMainCallback2(CB2_ReturnToField);
+}
+
+bool8 DivingMinigameTakeStep(void)
+{
+    if(FlagGet(FLAG_DOING_DIVING_MINIGAME) == FALSE)
+    {
+        return FALSE;
+    }
+
+    VarSet(VAR_DIVING_MINIGAME_STEP_COUNT, (VarGet(VAR_DIVING_MINIGAME_STEP_COUNT) - 1));
+    if (VarGet(VAR_DIVING_MINIGAME_STEP_COUNT) <= 0)
+    {
+        ScriptContext_SetupScript(DivingMinigame_EventScript_TimesUp);
+        return TRUE;
+    }
+    return FALSE;
+}

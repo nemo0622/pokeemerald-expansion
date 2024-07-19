@@ -103,7 +103,7 @@
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
 #define VAR_VERDANTURF_TOWN_STATE                        0x4055 // Unused Var
-#define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // Unused Var
+#define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // used for diving minigame lol
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
 #define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var
@@ -266,9 +266,9 @@
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
 #define VAR_DIFFICULTY                                   0x40F7 // Difficulty variable
 #define VAR_FORTREE_SHRINE_LAST_VIEWED                   0x40F8 // Records last Fortree City Shrine interacted with
-#define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
-#define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
+#define VAR_DIVING_MINIGAME_STEP_COUNT                   0x40F9
+#define VAR_DIVING_MINIGAME_SCORE                        0x40FA // Calculated score of most recent Diving Minigame attempt
+#define VAR_DIVING_MINIGAME_HIGH_SCORE                   0x40FB // Diving Minigame high score, updates every time played
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var

@@ -76,6 +76,7 @@ struct TrainerBattleParameter
 // this file's functions
 static void DoBattlePikeWildBattle(void);
 static void DoSafariBattle(void);
+static void DoDivingMinigameBattle(void);
 static void DoStandardWildBattle(bool32 isDouble);
 static void CB2_EndWildBattle(void);
 static void CB2_EndScriptedWildBattle(void);
@@ -429,6 +430,8 @@ void BattleSetup_StartWildBattle(void)
 {
     if (GetSafariZoneFlag())
         DoSafariBattle();
+    if (FlagGet(FLAG_DOING_DIVING_MINIGAME) == TRUE)
+        DoDivingMinigameBattle();
     else
         DoStandardWildBattle(FALSE);
 }
@@ -504,6 +507,16 @@ static void DoSafariBattle(void)
     StopPlayerAvatar();
     gMain.savedCallback = CB2_EndSafariBattle;
     gBattleTypeFlags = BATTLE_TYPE_SAFARI;
+    CreateBattleStartTask(GetWildBattleTransition(), 0);
+}
+
+static void DoDivingMinigameBattle(void)
+{
+    LockPlayerFieldControls();
+    FreezeObjectEvents();
+    StopPlayerAvatar();
+    gMain.savedCallback = CB2_EndDivingMinigameBattle;
+    gBattleTypeFlags = 0;
     CreateBattleStartTask(GetWildBattleTransition(), 0);
 }
 

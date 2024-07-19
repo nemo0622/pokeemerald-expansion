@@ -18,4 +18,9 @@ void CB2_EndSafariBattle(void);
 struct Pokeblock *SafariZoneGetActivePokeblock(void);
 void SafariZoneActivatePokeblockFeeder(u8 pokeblock_index);
 
+bool8 DivingMinigameTakeStep(void);
+void EnterDivingMinigame(void);
+void ExitDivingMinigame(void);
+void CB2_EndDivingMinigameBattle(void);
+
 #endif // GUARD_SAFARI_ZONE_H

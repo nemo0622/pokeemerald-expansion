@@ -292,3 +292,23 @@ SafariZone_Northeast_Text_Girl:
 	.string "I can't seem to catch anything!\p"
 	.string "I'll end up wasting the admission\n"
 	.string "price if I don't catch something!$"
+
+DivingMinigame_EventScript_TimesUp::
+	lockall
+	playse SE_DING_DONG
+	message DivingMinigame_Text_TimesUp
+	waitmessage
+	waitbuttonpress
+	releaseall
+	goto DivingMinigame_EventScript_Exit
+
+DivingMinigame_EventScript_Exit::
+	setvar VAR_PACIFIDLOG_TOWN_STATE, 1
+	special ExitDivingMinigame
+	warp MAP_PACIFIDLOG_TOWN, 24, 14
+	waitstate
+	end
+
+DivingMinigame_Text_TimesUp:
+	.string "Ding-dong! Time's up!\n"
+	.string "Time to check your haul!$"
