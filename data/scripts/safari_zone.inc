@@ -310,5 +310,25 @@ DivingMinigame_EventScript_Exit::
 	end
 
 DivingMinigame_Text_TimesUp:
-	.string "Ding-dong! Time's up!\n"
-	.string "Time to check your haul!$"
+	.string "Ahoy there, time's up!\n"
+	.string "Let's see everyone's haul!$"
+
+DivingMinigame_EventScript_AllPokemonFainted::
+	lockall
+	playse SE_DING_DONG
+	message DivingMinigame_Text_AllPokemonFainted
+	waitmessage
+	waitbuttonpress
+	releaseall
+	goto DivingMinigame_EventScript_AllPokemonFaintedExit
+
+DivingMinigame_EventScript_AllPokemonFaintedExit::
+	setvar VAR_PACIFIDLOG_TOWN_STATE, 2
+	special ExitDivingMinigame
+	warp MAP_PACIFIDLOG_TOWN, 24, 14
+	waitstate
+	end
+
+DivingMinigame_Text_AllPokemonFainted:
+	.string "Ahoy! Looks like you're struggling\n"
+	.string "down there! Hold tight!$"

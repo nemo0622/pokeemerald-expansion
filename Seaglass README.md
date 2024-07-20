@@ -47,12 +47,17 @@ High Priority (Before Release 1.0):
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
 - Bring back Contest Halls, replacing battle tents!
     - Also make Contest stats influence battle performance (higher Sheen or something giving a boost??)
+    - Add a "Clear PokeBlock Chef" guy to Lilycove Contest Hall that will reset Pokémon Sheen
 - Add changes inspired by Saffron City TV's Hoenn Repair video
     - PACIFIDLOG FIX: Diving minigame in Pacifidlog, catch Pokémon like safari zone
         - To make this minigame important, maybe make a prize the HM for WATERFALL?? To make player engage with Pacifidlog
             - REMEMBER TO REMOVE VANILLA WATERFALL GIVE EVENT
-            - Replace sDivingMinigameCaughtMons with sDivingMinigameSeenMons, increasing with every encounter. After 5 encounters, have the minigame end automatically!
-            - Have various hidden items and treasures around the maps, randomly set at the start of each run
+            - TODO THIS WEEKEND:
+                - Maybe make little animation when entering with diving NPCs scattering, fading screen to black, setting all flags, then releasing player to move!
+                - Have various hidden items and treasures around the maps, randomly set at the start of each run
+                - Multichoice (YES, NO, INFO) options - watch Team Aqua's Hideout video about multichoice!
+                - Remove "SAVE" option from Start Menu when FLAG_DIVING_MINIGAME is on!
+                - Score calculation: Go through each species and add rarity scores!
         - REFERENCE "LoadWallyZigzagoon" function in field_specials.c to see CreateMon function! For NPCs competing!
         - ALSO! Make Pacifidlog accessible from Slateport with a Pelipper Carrier NPC or something! This will allow the Player to see the area more than once, and it will also allow them to buy the Applin evolutionary items here!
 

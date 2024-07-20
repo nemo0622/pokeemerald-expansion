@@ -1,0 +1,39 @@
+{
+  "id": "MAP_DIVING_MINIGAME_S2",
+  "name": "DivingMinigame_S2",
+  "layout": "LAYOUT_DIVING_MINIGAME_S2",
+  "music": "MUS_SAFARI_ZONE",
+  "region_map_section": "MAPSEC_PACIFIDLOG_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERWATER",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_DIVING_MINIGAME_S1",
+      "offset": -5,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_DIVING_MINIGAME_E1",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

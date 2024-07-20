@@ -376,3 +376,8 @@ const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/h
 
 const u32 gObjectEventPic_Sailor_Explorer[] = INCBIN_U32("graphics/object_events/pics/people/sailor_explorer.4bpp");
 const u32 gObjectEventPic_ProfElm[] = INCBIN_U32("graphics/object_events/pics/people/prof_elm.4bpp");
+const u32 gObjectEventPic_Diving_Little_Girl[] = INCBIN_U32("graphics/object_events/pics/people/diving_little_girl.4bpp");
+const u32 gObjectEventPic_Diving_Sailor[] = INCBIN_U32("graphics/object_events/pics/people/diving_sailor.4bpp");
+const u32 gObjectEventPic_Diving_Triathlete_F[] = INCBIN_U32("graphics/object_events/pics/people/diving_triathlete_f.4bpp");
+const u32 gObjectEventPic_Diving_Triathlete_M[] = INCBIN_U32("graphics/object_events/pics/people/diving_triathlete_m.4bpp");
+const u32 gObjectEventPic_Diving_Youngster[] = INCBIN_U32("graphics/object_events/pics/people/diving_youngster.4bpp");

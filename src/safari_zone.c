@@ -260,29 +260,32 @@ bool8 GetInFrontFeederPokeblockAndSteps(void)
 // Everything below this is code for the Pacifidlog Diving Minigame, which functions similarly to the Safari game!
 // -------------------------------------------------------------------------------------------------
 
-EWRAM_DATA static u8 sDivingMinigameCaughtMons = 0;
+EWRAM_DATA static u8 sDivingMinigameSeenMons = 0;
 extern const u8 DivingMinigame_EventScript_TimesUp[];
+extern const u8 DivingMinigame_EventScript_AllPokemonFainted[];
 
 void EnterDivingMinigame(void)
 {
     FlagSet(FLAG_DOING_DIVING_MINIGAME);
-    VarSet(VAR_DIVING_MINIGAME_STEP_COUNT, 200);
+    FlagSet(FLAG_HIDE_MAP_NAME_POPUP);
+    VarSet(VAR_DIVING_MINIGAME_STEP_COUNT, 200); // set maximum number of steps before time up
     VarSet(VAR_DIVING_MINIGAME_SCORE, 0);
-    sDivingMinigameCaughtMons = 0;
+    sDivingMinigameSeenMons = 0;
 }
 
 void ExitDivingMinigame(void)
 {
     FlagClear(FLAG_DOING_DIVING_MINIGAME);
     VarSet(VAR_DIVING_MINIGAME_STEP_COUNT, 0);
+    FlagSet(FLAG_HIDE_MAP_NAME_POPUP);
 }
 
 void CB2_EndDivingMinigameBattle(void)
 {
+    sDivingMinigameSeenMons++;
+
     if (gBattleOutcome == B_OUTCOME_CAUGHT)
     {
-        sDivingMinigameCaughtMons++;
-
         // SCORE CALCULATION
         // First, set base score based on species (Rarity Factor)
         if(GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPECIES) == 72) // if tentacool
@@ -317,7 +320,15 @@ void CB2_EndDivingMinigameBattle(void)
         FlagClear(FLAG_DOING_DIVING_MINIGAME);
         VarSet(VAR_DIVING_MINIGAME_STEP_COUNT, 0);
         FlagClear(FLAG_NEW_DIVING_GAME_HIGH_SCORE);
-        VarSet(VAR_PACIFIDLOG_TOWN_STATE, 0);
+        VarSet(VAR_PACIFIDLOG_TOWN_STATE, 2); // town state 2 means you lost
+
+        ScriptContext_SetupScript(DivingMinigame_EventScript_AllPokemonFainted);
+    }
+
+    // Maximum number of encounters before ending minigame
+    if(sDivingMinigameSeenMons >= 5)
+    {
+        ScriptContext_SetupScript(DivingMinigame_EventScript_TimesUp);
     }
 
     SetMainCallback2(CB2_ReturnToField);

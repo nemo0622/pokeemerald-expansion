@@ -1268,3 +1268,23 @@ static const struct SpriteFrameImage sPicTable_Sailor_Explorer[] = {
 static const struct SpriteFrameImage sPicTable_ProfElm[] = {
     overworld_ascending_frames(gObjectEventPic_ProfElm, 4, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_Diving_Little_Girl[] = {
+    overworld_ascending_frames(gObjectEventPic_Diving_Little_Girl, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Diving_Sailor[] = {
+    overworld_ascending_frames(gObjectEventPic_Diving_Sailor, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Diving_Triathlete_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Diving_Triathlete_F, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Diving_Triathlete_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Diving_Triathlete_M, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Diving_Youngster[] = {
+    overworld_ascending_frames(gObjectEventPic_Diving_Youngster, 4, 4),
+};

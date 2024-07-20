@@ -4420,6 +4420,76 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/DivingMinigame/border.bin",
       "blockdata_filepath": "data/layouts/DivingMinigame/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVING_MINIGAME_N1",
+      "name": "DivingMinigame_N1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DivingMinigame_N1/border.bin",
+      "blockdata_filepath": "data/layouts/DivingMinigame_N1/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVING_MINIGAME_E1",
+      "name": "DivingMinigame_E1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DivingMinigame_E1/border.bin",
+      "blockdata_filepath": "data/layouts/DivingMinigame_E1/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVING_MINIGAME_E2",
+      "name": "DivingMinigame_E2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DivingMinigame_E2/border.bin",
+      "blockdata_filepath": "data/layouts/DivingMinigame_E2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVING_MINIGAME_S1",
+      "name": "DivingMinigame_S1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DivingMinigame_S1/border.bin",
+      "blockdata_filepath": "data/layouts/DivingMinigame_S1/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVING_MINIGAME_S2",
+      "name": "DivingMinigame_S2_Layout",
+      "width": 20,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DivingMinigame_S2/border.bin",
+      "blockdata_filepath": "data/layouts/DivingMinigame_S2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVING_MINIGAME_W1",
+      "name": "DivingMinigame_W1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DivingMinigame_W1/border.bin",
+      "blockdata_filepath": "data/layouts/DivingMinigame_W1/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIVING_MINIGAME_W2",
+      "name": "DivingMinigame_W2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DivingMinigame_W2/border.bin",
+      "blockdata_filepath": "data/layouts/DivingMinigame_W2/map.bin"
     }
   ]
 }

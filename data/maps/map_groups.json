@@ -93,7 +93,14 @@
     "Underwater_Route129",
     "Underwater_Route105",
     "Underwater_Route125",
-    "DivingMinigame"
+    "DivingMinigame",
+    "DivingMinigame_N1",
+    "DivingMinigame_E1",
+    "DivingMinigame_E2",
+    "DivingMinigame_S1",
+    "DivingMinigame_S2",
+    "DivingMinigame_W1",
+    "DivingMinigame_W2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

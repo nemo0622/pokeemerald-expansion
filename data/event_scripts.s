@@ -1075,3 +1075,17 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/change_deoxys_form.inc"
 
 	.include "data/maps/DivingMinigame/scripts.inc"
+
+	.include "data/maps/DivingMinigame_N1/scripts.inc"
+
+	.include "data/maps/DivingMinigame_E1/scripts.inc"
+
+	.include "data/maps/DivingMinigame_E2/scripts.inc"
+
+	.include "data/maps/DivingMinigame_S1/scripts.inc"
+
+	.include "data/maps/DivingMinigame_S2/scripts.inc"
+
+	.include "data/maps/DivingMinigame_W1/scripts.inc"
+
+	.include "data/maps/DivingMinigame_W2/scripts.inc"

@@ -246,6 +246,11 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvi
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sailor_Explorer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfElm;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diving_Little_Girl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diving_Sailor;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diving_Triathlete_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diving_Triathlete_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diving_Youngster;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -490,6 +495,11 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
     [OBJ_EVENT_GFX_SAILOR_EXPLORER] =          &gObjectEventGraphicsInfo_Sailor_Explorer,
     [OBJ_EVENT_GFX_PROF_ELM] =                 &gObjectEventGraphicsInfo_ProfElm,
+    [OBJ_EVENT_GFX_DIVING_LITTLE_GIRL] =       &gObjectEventGraphicsInfo_Diving_Little_Girl,
+    [OBJ_EVENT_GFX_DIVING_SAILOR] =            &gObjectEventGraphicsInfo_Diving_Sailor,
+    [OBJ_EVENT_GFX_DIVING_TRIATHLETE_F] =      &gObjectEventGraphicsInfo_Diving_Triathlete_F,
+    [OBJ_EVENT_GFX_DIVING_TRIATHLETE_M] =      &gObjectEventGraphicsInfo_Diving_Triathlete_M,
+    [OBJ_EVENT_GFX_DIVING_YOUNGSTER] =         &gObjectEventGraphicsInfo_Diving_Youngster,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

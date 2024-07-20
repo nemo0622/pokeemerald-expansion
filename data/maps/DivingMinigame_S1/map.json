@@ -1,0 +1,56 @@
+{
+  "id": "MAP_DIVING_MINIGAME_S1",
+  "name": "DivingMinigame_S1",
+  "layout": "LAYOUT_DIVING_MINIGAME_S1",
+  "music": "MUS_SAFARI_ZONE",
+  "region_map_section": "MAPSEC_PACIFIDLOG_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERWATER",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_DIVING_MINIGAME",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_DIVING_MINIGAME_E1",
+      "offset": -15,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_DIVING_MINIGAME_S2",
+      "offset": 5,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_DIVING_MINIGAME_W2",
+      "offset": -15,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "DivingMinigame_EventScript_SouthSign"
+    }
+  ]
+}

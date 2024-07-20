@@ -7,6 +7,7 @@ PacifidlogTown_MapScripts::
 
 PacifidlogTown_OnFrame:
 	map_script_2 VAR_PACIFIDLOG_TOWN_STATE, 1, PacifidlogTown_EventScript_ExitDivingMinigame
+	map_script_2 VAR_PACIFIDLOG_TOWN_STATE, 2, PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted
 	.2byte 0
 
 PacifidlogTown_OnTransition:
@@ -81,11 +82,137 @@ mart PacifidlogTown_AppleMart
 	ITEM_FRESH_START_MOCHI
 }
 
+script PacifidlogTown_EventScript_MinigameParticipant_SwimmerM
+{
+	lock
+	faceplayer
+	msgbox(format("I'm getting ready to participate in the SCUBA SAFARI by practicing my swimming!"))
+	closemessage
+	release
+	end
+}
+script PacifidlogTown_EventScript_MinigameParticipant_SwimmerF
+{
+	lock
+	faceplayer
+	msgbox(format("Hehehe, I'm gonna crush it in the next SCUBA SAFARI competition!\N I hear rarer POKéMON are worth a higher score!"))
+	closemessage
+	release
+	end
+}
+script PacifidlogTown_EventScript_MinigameParticipant_LittleBoy
+{
+	lock
+	faceplayer
+	msgbox(format("I can't wait for the next SCUBA SAFARI round! My mommy is finally letting me play!"))
+	closemessage
+	release
+	end
+}
+script PacifidlogTown_EventScript_MinigameParticipant_LittleGirl
+{
+	lock
+	faceplayer
+	msgbox(format("My family moved here to scuba dive around the CORSOLA colonies nearby!"))
+	closemessage
+	release
+	end
+}
+script PacifidlogTown_EventScript_MinigameParticipant_TriatheleteM
+{
+	lock
+	faceplayer
+	msgbox(format("Huff huff... Gotta train...\N PACIFIDLOG TOWN honors it's seafaring roots through the SCUBA SAFARI competition! I need to do my best!"))
+	closemessage
+	release
+	end
+}
+script PacifidlogTown_EventScript_MinigameParticipant_TriatheleteF
+{
+	lock
+	faceplayer
+	msgbox(format("Huff huff... Have to train...\N I have to swim fast to find rare POKéMON in the competition, they'll get a higher score!"))
+	closemessage
+	release
+	end
+}
+
+// DIVING MINIGAME UNDERWATER SCRIPTS
+
+script DivingMinigame_EventScript_CentralSign
+{
+	lockall
+	msgbox(format("PACIFIDLOG SCUBA SAFARI AREA 1\n CENTRAL AREA\p An Introduction to Diving!"))
+	closemessage
+	releaseall
+	end
+}
+script DivingMinigame_EventScript_NorthSign
+{
+	lockall
+	msgbox(format("PACIFIDLOG SCUBA SAFARI AREA 2\n NORTH AREA\p Cool Temperatures, Cooler POKéMON!"))
+	closemessage
+	releaseall
+	end
+}
+script DivingMinigame_EventScript_EastSign
+{
+	lockall
+	msgbox(format("PACIFIDLOG SCUBA SAFARI AREA 3\n EAST AREA\p Mysterious POKéMON in Mysterious Ruins!"))
+	closemessage
+	releaseall
+	end
+}
+script DivingMinigame_EventScript_SouthSign
+{
+	lockall
+	msgbox(format("PACIFIDLOG SCUBA SAFARI AREA 4\n SOUTH AREA\p The Depths of the Seas!"))
+	closemessage
+	releaseall
+	end
+}
+script DivingMinigame_EventScript_WestSign
+{
+	lockall
+	msgbox(format("PACIFIDLOG SCUBA SAFARI AREA 5\n WEST AREA\p Shallow Pools where Land meets Sea!"))
+	closemessage
+	releaseall
+	end
+}
+
+script DivingMinigame_EventScript_SailorJudge
+{
+	lock
+	faceplayer
+	msgbox(format("Yo ho ho, little SCUBA champ! Are you ready to end your SCUBA SAFARI?"), MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == 0) //no
+	{
+		buffernumberstring(STR_VAR_1, VAR_DIVING_MINIGAME_STEP_COUNT)
+		msgbox(format("Great, get back to it!\n You have {STR_VAR_1} tiles left to swim before time's up!"))
+		closemessage
+	}
+	else
+	{
+		msgbox(format("Alrighty here, let me start the announcement!"))
+		closemessage
+		delay(60)
+		goto(DivingMinigame_EventScript_TimesUp)
+	}
+
+	applymovement(1, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}
+
+// DIVING MINIGAME PACIFIDLOG SCRIPTS
+
 script PacifidlogTown_EventScript_DivingMinigameNPC
 {
 	lock
 	faceplayer
-	msgbox(format("Heya, young TRAINER! Do you want to play the PACIFIDLOG Diving Game?"), MSGBOX_YESNO)
+	msgbox(format("Ahoy, young TRAINER! Do you want to play the PACIFIDLOG SCUBA SAFARI?"), MSGBOX_YESNO)
 
 	if(var(VAR_RESULT) == 0) // no
 	{
@@ -154,6 +281,24 @@ script PacifidlogTown_EventScript_ExitDivingMinigame
 	clearflag(FLAG_DOING_DIVING_MINIGAME)
 
 	turnplayer(DIR_SOUTH) // make sure player doesn't immediately trigger dialogue again
+	releaseall
+	end
+}
+
+script PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted
+{
+	lockall
+	turnplayer(DIR_NORTH)
+	msgbox(format("Woah there! Looks like the POKéMON down there were a bit strong! I'll heal you up."))
+	closemessage
+	special(HealPlayerParty)
+	msgbox(format("Remember, the seas can be dangerous!\N I'd get my hands on a POKéMON with the RUN AWAY ability if I were you. They're great for getting out of rough situations!"))
+	closemessage
+
+	setvar(VAR_PACIFIDLOG_TOWN_STATE, 0) // reset state of diving minigame
+	clearflag(FLAG_NEW_DIVING_GAME_HIGH_SCORE)
+	clearflag(FLAG_DOING_DIVING_MINIGAME)
+	turnplayer(DIR_SOUTH)
 	releaseall
 	end
 }
