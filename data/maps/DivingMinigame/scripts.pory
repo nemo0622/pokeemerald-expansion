@@ -1,1 +1,141 @@
-mapscripts DivingMinigame_MapScripts {}
+raw `
+DivingMinigame_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, DivingMinigame_OnFrame
+	.byte 0
+
+DivingMinigame_OnFrame:
+	map_script_2 VAR_DIVING_MINIGAME_STEP_COUNT, 201, DivingMinigame_Central_ScubaIntroduction
+	.2byte 0
+
+`
+
+script DivingMinigame_Central_ScubaIntroduction
+{
+
+    turnplayer(DIR_NORTH)
+    msgbox(format("-bzzt bzzt...-\n Looks like our headsets are working!\p Everyone has {COLOR GREEN}200 tiles{COLOR DARK_GRAY} of swimming or {COLOR GREEN}five encounters{COLOR DARK_GRAY}, whichever comes first, to find a POKéMON to be scored!\p Remember, POKéMON that are healthier, higher leveled, and of course, rarer, score the best! Good luck out there!"))
+    closemessage
+
+    // apply movement to all competitor NPCs - if they're invisible, it doesnt matter lol
+    applymovement(2, DivingMinigame_Movement_Competitor1LeaveIntro)
+    applymovement(3, DivingMinigame_Movement_Competitor2LeaveIntro)
+    applymovement(4, DivingMinigame_Movement_Competitor3LeaveIntro)
+    applymovement(5, DivingMinigame_Movement_Competitor4LeaveIntro)
+
+    delay(120)
+
+    fadescreen(FADE_TO_BLACK)
+    delay(20)
+
+    // Removes all intro NPCs
+    setflag(FLAG_HIDE_COMPETITOR_1_UNDERWATER_INTRO)
+    setflag(FLAG_HIDE_COMPETITOR_2_UNDERWATER_INTRO)
+    setflag(FLAG_HIDE_COMPETITOR_3_UNDERWATER_INTRO)
+    setflag(FLAG_HIDE_COMPETITOR_4_UNDERWATER_INTRO)
+
+    // Sets flags based on competitors, showing them throughout scuba areas
+    if(flag(FLAG_SCUBA_COMPETITOR_1))
+    {
+        clearflag(FLAG_HIDE_COMPETITOR_1_UNDERWATER) // shows competitor underwater by clearing flag
+        removeobject(2) // removes competitor intro object
+    }
+    if(flag(FLAG_SCUBA_COMPETITOR_2))
+    {
+        clearflag(FLAG_HIDE_COMPETITOR_2_UNDERWATER) // shows competitor underwater by clearing flag
+        removeobject(3) // removes competitor intro object
+    }
+    if(flag(FLAG_SCUBA_COMPETITOR_3))
+    {
+        clearflag(FLAG_HIDE_COMPETITOR_3_UNDERWATER) // shows competitor underwater by clearing flag
+        removeobject(4) // removes competitor intro object
+    }
+    if(flag(FLAG_SCUBA_COMPETITOR_4))
+    {
+        clearflag(FLAG_HIDE_COMPETITOR_4_UNDERWATER) // shows competitor underwater by clearing flag
+        removeobject(5) // removes competitor intro object
+    }
+
+    setvar(VAR_DIVING_MINIGAME_STEP_COUNT, 200)
+
+    delay(20)
+    fadescreen(FADE_FROM_BLACK)
+    delay(10)
+
+    release
+    end
+
+}
+
+movement DivingMinigame_Movement_Competitor1LeaveIntro
+{
+    walk_right
+    walk_up * 2
+    walk_right
+    walk_in_place_left * 2
+    walk_in_place_right * 2
+    emote_exclamation_mark
+}
+
+movement DivingMinigame_Movement_Competitor2LeaveIntro
+{
+    walk_right * 2
+    walk_down * 3
+    walk_right
+    walk_down * 3
+}
+
+movement DivingMinigame_Movement_Competitor3LeaveIntro
+{
+    walk_left * 3
+    walk_up * 2
+    walk_left * 4
+}
+
+movement DivingMinigame_Movement_Competitor4LeaveIntro
+{
+    walk_up
+    walk_left
+    walk_in_place_up
+    emote_question_mark
+    walk_up * 3
+}
+
+script DivingMinigame_EventScript_Rua
+{
+    lock
+    faceplayer
+    msgbox(format("I thought I saw some treasure up here! Jeez, this water sure is chilly, though..."))
+    closemessage
+    release
+    end
+}
+
+script DivingMinigame_EventScript_Pora
+{
+    lock
+    faceplayer
+    msgbox(format("Wow, look at these weird buildings! I can't wait to tell mommy about this!"))
+    closemessage
+    release
+    end
+}
+
+script DivingMinigame_EventScript_Taonga
+{
+    lock
+    faceplayer
+    msgbox(format("I always come chase POKéMON in the shallows. If a POKéMON can live on land and in the sea, they must be pretty great!"))
+    closemessage
+    release
+    end
+}
+
+script DivingMinigame_EventScript_Taiko
+{
+    lock
+    faceplayer
+    msgbox(format("Wow, the deep water around here sure is dark... I wonder what we'll find?"))
+    closemessage
+    release
+    end
+}

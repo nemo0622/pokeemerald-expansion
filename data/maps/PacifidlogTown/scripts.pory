@@ -12,6 +12,8 @@ PacifidlogTown_OnFrame:
 
 PacifidlogTown_OnTransition:
 	setflag FLAG_VISITED_PACIFIDLOG_TOWN
+	call_if_eq VAR_PACIFIDLOG_TOWN_STATE, 1, PacifidlogTown_SetCompetitorPositionsAfterMinigame
+	call_if_eq VAR_PACIFIDLOG_TOWN_STATE, 2, PacifidlogTown_ResetCompetitorFlagsFailsafe
 	end
 
 PacifidlogTown_OnResume:
@@ -61,6 +63,42 @@ PacifidlogTown_Text_TownSign:
 
 `
 
+script PacifidlogTown_EventScript_Kirlia
+{
+	lock
+	faceplayer
+	msgbox(format("KIRLIA: Shaaah!"))
+	closemessage
+	release
+	end
+}
+
+script PacifidlogTown_EventScript_TeleportMan
+{
+	lock
+	faceplayer
+	msgbox(format("I host a TELEPORT service to and from SLATEPORT CITY! Would you like a ride?"), MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == 0) // no
+	{
+		msgbox(format("Come back when you want to TELEPORT!"))
+		closemessage
+		release
+		end
+	}
+	else
+	{
+		msgbox(format("Alright, here we go!"))
+		closemessage
+		warp(MAP_SLATEPORT_CITY, 20, 21)
+		waitstate
+		release
+		end
+	}
+	release
+	end
+}
+
 script PacifidlogTown_EventScript_AppleSalesman
 {
 	lock
@@ -82,30 +120,14 @@ mart PacifidlogTown_AppleMart
 	ITEM_FRESH_START_MOCHI
 }
 
-script PacifidlogTown_EventScript_MinigameParticipant_SwimmerM
-{
-	lock
-	faceplayer
-	msgbox(format("I'm getting ready to participate in the SCUBA SAFARI by practicing my swimming!"))
-	closemessage
-	release
-	end
-}
-script PacifidlogTown_EventScript_MinigameParticipant_SwimmerF
-{
-	lock
-	faceplayer
-	msgbox(format("Hehehe, I'm gonna crush it in the next SCUBA SAFARI competition!\N I hear rarer POKéMON are worth a higher score!"))
-	closemessage
-	release
-	end
-}
 script PacifidlogTown_EventScript_MinigameParticipant_LittleBoy
 {
 	lock
 	faceplayer
-	msgbox(format("I can't wait for the next SCUBA SAFARI round! My mommy is finally letting me play!"))
+	msgbox(format("RUA: I can't wait for the next SCUBA SAFARI round! I've got a plan to win!"))
 	closemessage
+	applymovement(11, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
 	release
 	end
 }
@@ -113,8 +135,10 @@ script PacifidlogTown_EventScript_MinigameParticipant_LittleGirl
 {
 	lock
 	faceplayer
-	msgbox(format("My family moved here to scuba dive around the CORSOLA colonies nearby!"))
+	msgbox(format("PORA: My family moved here to scuba dive around the CORSOLA colonies nearby!\p I love watching the SCUBA SAFARI!"))
 	closemessage
+	applymovement(10, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
 	release
 	end
 }
@@ -122,8 +146,10 @@ script PacifidlogTown_EventScript_MinigameParticipant_TriatheleteM
 {
 	lock
 	faceplayer
-	msgbox(format("Huff huff... Gotta train...\N PACIFIDLOG TOWN honors it's seafaring roots through the SCUBA SAFARI competition! I need to do my best!"))
+	msgbox(format("TAONGA: Huff huff... Gotta train...\N PACIFIDLOG TOWN honors it's seafaring roots through the SCUBA SAFARI competition! I need to do my best!"))
 	closemessage
+	applymovement(7, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
 	release
 	end
 }
@@ -131,8 +157,10 @@ script PacifidlogTown_EventScript_MinigameParticipant_TriatheleteF
 {
 	lock
 	faceplayer
-	msgbox(format("Huff huff... Have to train...\N I have to swim fast to find rare POKéMON in the competition, they'll get a higher score!"))
+	msgbox(format("TAIKO: Huff huff... Have to train...\N I have to swim fast to find rare POKéMON in the competition, they'll get a higher score!"))
 	closemessage
+	applymovement(6, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
 	release
 	end
 }
@@ -184,7 +212,7 @@ script DivingMinigame_EventScript_SailorJudge
 {
 	lock
 	faceplayer
-	msgbox(format("Yo ho ho, little SCUBA champ! Are you ready to end your SCUBA SAFARI?"), MSGBOX_YESNO)
+	msgbox(format("Yo ho ho, SCUBA SAFARI master! Are you ready to end your SCUBA SAFARI?"), MSGBOX_YESNO)
 
 	if(var(VAR_RESULT) == 0) //no
 	{
@@ -212,31 +240,236 @@ script PacifidlogTown_EventScript_DivingMinigameNPC
 {
 	lock
 	faceplayer
-	msgbox(format("Ahoy, young TRAINER! Do you want to play the PACIFIDLOG SCUBA SAFARI?"), MSGBOX_YESNO)
+	showmoneybox(0, 0)
+	message(format("Ahoy, TRAINER! Do you want to play the PACIFIDLOG SCUBA SAFARI? Just ¥100!"))
+	waitmessage
 
-	if(var(VAR_RESULT) == 0) // no
+	multichoice(22, 6, MULTI_YESNOINFO, TRUE)
+
+	if(var(VAR_RESULT) == 1) // no
 	{
 		msgbox(format("Alright! Come back soon!"))
 		closemessage
+		hidemoneybox
 		release
 		end
 	}
-	else
+	elif(var(VAR_RESULT) == 0) // yes
 	{
-		msgbox(format("Alrighty! Let's get you down there!"))
+		checkmoney(100)
+		if(var(VAR_RESULT) == 0) // not enough money
+		{
+			msgbox(format("Sorry, sailor! Looks like you're a bit low on funds."))
+			closemessage
+			hidemoneybox
+			release
+			end
+		}
+
+		playse(SE_SHOP)
+		removemoney(100)
+		updatemoneybox
+		delay(50)
+		hidemoneybox
+
+		msgbox(format("Alrighty! Let's get a SCUBA GROUP together!"))
 		closemessage
+
+		fadescreen(FADE_TO_BLACK)
+		delay(60)
+
+		// Set Scuba Safari variables and stuff
 		setflag(FLAG_DOING_DIVING_MINIGAME)
 		clearflag(FLAG_NEW_DIVING_GAME_HIGH_SCORE)
-
 		special(EnterDivingMinigame)
 
-		warp(MAP_DIVING_MINIGAME, 8, 12)
+		// Reset competitor flags
+		clearflag(FLAG_SCUBA_COMPETITOR_1)
+		clearflag(FLAG_SCUBA_COMPETITOR_2)
+		clearflag(FLAG_SCUBA_COMPETITOR_3)
+		clearflag(FLAG_SCUBA_COMPETITOR_4)
+
+		// Hide all NPCs throughout water, so they can be shown instead in the intro
+		setflag(FLAG_HIDE_COMPETITOR_1_UNDERWATER)
+		setflag(FLAG_HIDE_COMPETITOR_2_UNDERWATER)
+		setflag(FLAG_HIDE_COMPETITOR_3_UNDERWATER)
+		setflag(FLAG_HIDE_COMPETITOR_4_UNDERWATER)
+
+		// Hides all competitors in the intro by default, they're enabled further below
+		setflag(FLAG_HIDE_COMPETITOR_1_UNDERWATER_INTRO)
+    	setflag(FLAG_HIDE_COMPETITOR_2_UNDERWATER_INTRO)
+    	setflag(FLAG_HIDE_COMPETITOR_3_UNDERWATER_INTRO)
+    	setflag(FLAG_HIDE_COMPETITOR_4_UNDERWATER_INTRO)
+
+		// Decide which NPCs will be participating - always 1 boy and 1 girl for now
+		// Boys - 50% chance Taonga (Triathlete M), 50% chance Rua (Youngster)
+		randompercentage(50)
+		if(var(VAR_RESULT) == TRUE) // Taonga chosen
+		{
+			setflag(FLAG_SCUBA_COMPETITOR_3) // set competitor flag
+			clearflag(FLAG_HIDE_COMPETITOR_3_UNDERWATER_INTRO) // show in intro
+			setobjectxy(7, 23, 14)
+			applymovement(7, Common_Movement_FaceUp)
+		}
+		else
+		{
+			setflag(FLAG_SCUBA_COMPETITOR_4) // set competitor flag
+			clearflag(FLAG_HIDE_COMPETITOR_4_UNDERWATER_INTRO) // show in intro
+			setobjectxy(11, 23, 14)
+			applymovement(11, Common_Movement_FaceUp)
+		}
+		// Girls - 50% chance Taiko (Triathlete F), 50% chance Pora (Little Girl)
+		randompercentage(50)
+		if(var(VAR_RESULT) == TRUE) // Taiko chosen
+		{
+			setflag(FLAG_SCUBA_COMPETITOR_2) // set competitor flag
+			clearflag(FLAG_HIDE_COMPETITOR_2_UNDERWATER_INTRO) // show in intro
+			setobjectxy(6, 25, 14)
+			applymovement(6, Common_Movement_FaceUp)
+		}
+		else
+		{
+			setflag(FLAG_SCUBA_COMPETITOR_1) // set competitor flag
+			clearflag(FLAG_HIDE_COMPETITOR_1_UNDERWATER_INTRO) // show in intro
+			setobjectxy(10, 25, 14)
+			applymovement(10, Common_Movement_FaceUp)
+		}
+
+		fadescreen(FADE_FROM_BLACK)
+		delay(20)
+
+		msgbox(format("Looks like we've got a good crew going! Let's DIVE!"))
+		closemessage
+
+		applymovement(OBJ_EVENT_ID_PLAYER, PacifidlogTown_Movement_CompetitorsExcited)
+		if(flag(FLAG_SCUBA_COMPETITOR_1))
+		{
+			applymovement(10, PacifidlogTown_Movement_CompetitorsExcited)
+			setflag(FLAG_HIDE_COMPETITOR_1_PACIFIDLOG)
+		}
+		if(flag(FLAG_SCUBA_COMPETITOR_2))
+		{
+			applymovement(6, PacifidlogTown_Movement_CompetitorsExcited)
+			setflag(FLAG_HIDE_COMPETITOR_2_PACIFIDLOG)
+		}
+		if(flag(FLAG_SCUBA_COMPETITOR_3))
+		{
+			applymovement(7, PacifidlogTown_Movement_CompetitorsExcited)
+			setflag(FLAG_HIDE_COMPETITOR_3_PACIFIDLOG)
+		}
+		if(flag(FLAG_SCUBA_COMPETITOR_4))
+		{
+			applymovement(11, PacifidlogTown_Movement_CompetitorsExcited)
+			setflag(FLAG_HIDE_COMPETITOR_4_PACIFIDLOG)
+		}
+
+		waitmovement(0)
+		delay(30)
+
+		warp(MAP_DIVING_MINIGAME, 4, 14)
 		waitstate
 		end
+	}
+	else // info
+	{
+		msgbox(format("Ehehe, interested in the SCUBA SAFARI? Welcome! This is the pride and joy of PACIFIDLOG TOWN!\p The gist of the SCUBA SAFARI is DIVING down here and trying to catch the coolest, rarest POKéMON you can in a limited time. You can even find some cool treasures if you're lucky!\p There's a few basic rules. First, when you're down there, you only have {COLOR GREEN}200 tiles of movement{COLOR DARK_GRAY} or {COLOR GREEN}five encounters{COLOR DARK_GRAY} to explore. After that, your POKéMON is scored based on level, stats, and rarity. You'll have a few competitors down there, so do your best to catch something cool!\p And remember, only the {COLOR RED}most recent{COLOR DARK_GRAY} POKéMON you catch counts for scoring."))
+		closemessage
+		msgbox(format("...Phew, that was a lot! Oh right, and you don't even need the DIVE HM to play! We provide you with everything you need. Now, with that out of the way..."))
+		closemessage
+		goto(PacifidlogTown_EventScript_DivingMinigameNPC)
 	}
 
 	release
 	end
+}
+
+movement PacifidlogTown_Movement_CompetitorsExcited
+{
+	jump_in_place_up * 2
+	walk_in_place_up * 2
+	step_end
+}
+
+movement PacifidlogTown_Movement_CompetitorsOutOfWater
+{
+	jump_down * 2
+	face_up
+	step_end
+}
+
+movement PacifidlogTown_Movement_JudgeChecksScoreLeft
+{
+	walk_left
+	walk_in_place_down
+	delay_16
+	emote_heart
+	delay_16
+}
+movement PacifidlogTown_Movement_JudgeChecksScoreRight
+{
+	walk_right * 2
+	walk_in_place_down
+	delay_16
+	emote_heart
+	delay_16
+}
+movement PacifidlogTown_Movement_JudgeChecksScorePlayer
+{
+	walk_left
+	walk_in_place_down
+	delay_16
+	emote_heart
+	delay_16
+	step_end
+}
+
+script PacifidlogTown_ResetCompetitorFlagsFailsafe
+{
+	clearflag(FLAG_HIDE_COMPETITOR_1_PACIFIDLOG)
+	clearflag(FLAG_HIDE_COMPETITOR_2_PACIFIDLOG)
+	clearflag(FLAG_HIDE_COMPETITOR_3_PACIFIDLOG)
+	clearflag(FLAG_HIDE_COMPETITOR_4_PACIFIDLOG)
+	showobjectat(10, MAP_PACIFIDLOG_TOWN)
+	showobjectat(6, MAP_PACIFIDLOG_TOWN)
+	showobjectat(7, MAP_PACIFIDLOG_TOWN)
+	showobjectat(11, MAP_PACIFIDLOG_TOWN)
+}
+
+script PacifidlogTown_SetCompetitorPositionsAfterMinigame
+{
+	clearflag(FLAG_HIDE_COMPETITOR_1_PACIFIDLOG)
+	clearflag(FLAG_HIDE_COMPETITOR_2_PACIFIDLOG)
+	clearflag(FLAG_HIDE_COMPETITOR_3_PACIFIDLOG)
+	clearflag(FLAG_HIDE_COMPETITOR_4_PACIFIDLOG)
+	showobjectat(10, MAP_PACIFIDLOG_TOWN)
+	showobjectat(6, MAP_PACIFIDLOG_TOWN)
+	showobjectat(7, MAP_PACIFIDLOG_TOWN)
+	showobjectat(11, MAP_PACIFIDLOG_TOWN)
+
+	if(flag(FLAG_SCUBA_COMPETITOR_1))
+	{
+		setobjectxyperm(10, 25, 12)
+		applymovement(10, Common_Movement_WalkUp2)
+		setobjectmovementtype(10, MOVEMENT_TYPE_FACE_DOWN)
+	}
+	if(flag(FLAG_SCUBA_COMPETITOR_2))
+	{
+		setobjectxyperm(6, 25, 12)
+		applymovement(6, Common_Movement_WalkUp2)
+		setobjectmovementtype(6, MOVEMENT_TYPE_FACE_DOWN)
+	}
+	if(flag(FLAG_SCUBA_COMPETITOR_3))
+	{
+		setobjectxyperm(7, 23, 12)
+		applymovement(7, Common_Movement_WalkUp2)
+		setobjectmovementtype(7, MOVEMENT_TYPE_FACE_DOWN)
+	}
+	if(flag(FLAG_SCUBA_COMPETITOR_4))
+	{
+		setobjectxyperm(11, 23, 12)
+		applymovement(11, Common_Movement_WalkUp2)
+		setobjectmovementtype(11, MOVEMENT_TYPE_FACE_DOWN)
+	}
 }
 
 script PacifidlogTown_EventScript_ExitDivingMinigame
@@ -244,10 +477,162 @@ script PacifidlogTown_EventScript_ExitDivingMinigame
 	lockall
 	turnplayer(DIR_NORTH)
 
-	buffernumberstring(STR_VAR_1, VAR_DIVING_MINIGAME_SCORE)
+	// Competitors splash out of the water
+	if(flag(FLAG_SCUBA_COMPETITOR_1))
+	{
+		applymovement(10, PacifidlogTown_Movement_CompetitorsOutOfWater)
+	}
+	if(flag(FLAG_SCUBA_COMPETITOR_2))
+	{
+		applymovement(6, PacifidlogTown_Movement_CompetitorsOutOfWater)
+	}
+	if(flag(FLAG_SCUBA_COMPETITOR_3))
+	{
+		applymovement(7, PacifidlogTown_Movement_CompetitorsOutOfWater)
+	}
+	if(flag(FLAG_SCUBA_COMPETITOR_4))
+	{
+		applymovement(11, PacifidlogTown_Movement_CompetitorsOutOfWater)
+	}
+	waitmovement(0)
+	delay(30)
 
-	msgbox(format("Looks good!\N Your score was {STR_VAR_1}!"))
+	// SCORING BEGINS
+	msgbox(format("Welcome back, everyone! Time for scoring! Let's see your most recent catch..."))
 	closemessage
+	// Buffer names of competitors to string 3 (string var 1 will be used to show the score values)
+	if(flag(FLAG_SCUBA_COMPETITOR_3))
+	{
+		bufferstring(STR_VAR_3, "Taonga")
+	}
+	elif(flag(FLAG_SCUBA_COMPETITOR_4))
+	{
+		bufferstring(STR_VAR_3, "Rua")
+	}
+
+	// Checks score of left competitor
+	applymovement(5, PacifidlogTown_Movement_JudgeChecksScoreLeft)
+	waitmovement(0)
+	delay(20)
+	buffernumberstring(STR_VAR_1, VAR_DIVING_MINIGAME_C1_SCORE)
+	bufferspeciesname(STR_VAR_2, VAR_DIVING_MINIGAME_C1_SPECIES)
+	msgbox(format("{STR_VAR_3}'s catch, a {STR_VAR_2}, scored {STR_VAR_1}!"))
+	closemessage
+	delay(20)
+
+	// buffer competitor names to str_var_2
+	if(flag(FLAG_SCUBA_COMPETITOR_1))
+	{
+		bufferstring(STR_VAR_2, "Pora")
+	}
+	elif(flag(FLAG_SCUBA_COMPETITOR_2))
+	{
+		bufferstring(STR_VAR_2, "Taiko")
+	}
+
+	// Checks score of right competitor
+	applymovement(5, PacifidlogTown_Movement_JudgeChecksScoreRight)
+	waitmovement(0)
+	delay(20)
+	buffernumberstring(STR_VAR_1, VAR_DIVING_MINIGAME_C2_SCORE)
+	bufferspeciesname(STR_VAR_3, VAR_DIVING_MINIGAME_C2_SPECIES)
+	msgbox(format("{STR_VAR_2}'s catch, a {STR_VAR_3}, scored {STR_VAR_1}!"))
+	closemessage
+	delay(20)
+
+	applymovement(5, PacifidlogTown_Movement_JudgeChecksScorePlayer)
+	waitmovement(0)
+	delay(20)
+	buffernumberstring(STR_VAR_1, VAR_DIVING_MINIGAME_SCORE)
+	bufferspeciesname(STR_VAR_2, VAR_DIVING_MINIGAME_PLAYER_SPECIES)
+	if(var(VAR_DIVING_MINIGAME_SCORE) > 0)
+	{
+		msgbox(format("{PLAYER}'s catch, a {STR_VAR_2}, scored {STR_VAR_1}!"))
+	}
+	else
+	{
+		msgbox(format("{PLAYER}'s catch, a... huh? Looks like an unsuccessful dive! Make sure to keep track of your time down there!"))
+	}
+	closemessage
+	delay(40)
+
+	clearflag(FLAG_TEMP_PLAYER_WIN_SCUBA)
+
+	// Give reward to whoever scored highest
+	// Score 1 wins (person on left, boy)
+	if(var(VAR_DIVING_MINIGAME_C1_SCORE) > VAR_DIVING_MINIGAME_C2_SCORE)
+	{
+		if(var(VAR_DIVING_MINIGAME_C1_SCORE) > VAR_DIVING_MINIGAME_SCORE)
+		{
+			if(flag(FLAG_SCUBA_COMPETITOR_3))
+			{
+				bufferstring(STR_VAR_3, "Taonga")
+			}
+			elif(flag(FLAG_SCUBA_COMPETITOR_4))
+			{
+				bufferstring(STR_VAR_3, "Rua")
+			}
+
+			msgbox(format("Looks like {STR_VAR_3} won! They'll be receiving the first place prize!"))
+			closemessage
+			delay(30)
+			applymovement(5, Common_Movement_ExclamationMark)
+			waitmovement(0)
+			delay(30)
+			msgbox(format("...ah, don't fret! All participants in the SCUBA SAFARI receive a little something! Here!"))
+			closemessage
+			randomelement(ITEM_PRETTY_FEATHER, ITEM_PEARL, ITEM_SITRUS_BERRY, ITEM_LUM_BERRY, ITEM_SILK_SCARF, ITEM_CHARCOAL, ITEM_MYSTIC_WATER, ITEM_MIRACLE_SEED, ITEM_MAGNET)
+			giveitem(VAR_RESULT)
+		}
+		else
+		{
+			// if code reaches here, that means player scored higher than C1 score, and C1 is higher than C2, so player wins
+			setflag(FLAG_TEMP_PLAYER_WIN_SCUBA)
+		}
+	}
+	// Score 2 wins (person on right, girl)
+	if(var(VAR_DIVING_MINIGAME_C2_SCORE) > VAR_DIVING_MINIGAME_C1_SCORE)
+	{
+		if(var(VAR_DIVING_MINIGAME_C2_SCORE) > VAR_DIVING_MINIGAME_SCORE)
+		{
+			if(flag(FLAG_SCUBA_COMPETITOR_1))
+			{
+				bufferstring(STR_VAR_2, "Pora")
+			}
+			elif(flag(FLAG_SCUBA_COMPETITOR_2))
+			{
+				bufferstring(STR_VAR_2, "Taiko")
+			}
+
+			msgbox(format("Looks like {STR_VAR_2} won! They'll be receiving the first place prize!"))
+			closemessage
+			delay(30)
+			applymovement(5, Common_Movement_ExclamationMark)
+			waitmovement(0)
+			delay(30)
+			msgbox(format("...ah, don't fret! All participants in the SCUBA SAFARI receive a little something! Here!"))
+			closemessage
+			randomelement(ITEM_PRETTY_FEATHER, ITEM_PEARL, ITEM_SITRUS_BERRY, ITEM_LUM_BERRY, ITEM_SILK_SCARF, ITEM_CHARCOAL, ITEM_MYSTIC_WATER, ITEM_MIRACLE_SEED, ITEM_MAGNET)
+			giveitem(VAR_RESULT)
+		}
+		else
+		{
+			// if code reaches here, that means player scored higher than C2 score, and C2 is higher than C1, so player wins
+			setflag(FLAG_TEMP_PLAYER_WIN_SCUBA)
+		}
+	}
+	
+	if(flag(FLAG_TEMP_PLAYER_WIN_SCUBA) || (var(VAR_DIVING_MINIGAME_SCORE) >= VAR_DIVING_MINIGAME_C1_SCORE && var(VAR_DIVING_MINIGAME_SCORE) >= VAR_DIVING_MINIGAME_C2_SCORE))
+	{
+		msgbox(format("Looks like {PLAYER} won! They'll be receiving the first place prize!"))
+		closemessage
+		giveitem(ITEM_BIG_PEARL)
+		msgbox(format("All other participants will receive a smaller prize."))
+		closemessage
+	}
+
+	clearflag(FLAG_TEMP_PLAYER_WIN_SCUBA)
+	delay(30)
 
 	if(flag(FLAG_NEW_DIVING_GAME_HIGH_SCORE)) // if got a new high score
 	{
@@ -262,16 +647,16 @@ script PacifidlogTown_EventScript_ExitDivingMinigame
 			msgbox(format("It says on the manual here you need all 8 GYM BADGES to use WATERFALL out of battle. Only true masters of the seas can have this HM!"))
 			closemessage
 		}
-		else // given 5 heart scales for new high score
+		else // given 5 heart scales and other good shit for new high score
 		{
 			msgbox(format("Looks like a new high score! Here's a special prize!"))
 			closemessage
 			giveitem(ITEM_HEART_SCALE, 5)
-			msgbox(format("And here, take a nice TM too!"))
+			msgbox(format("And here, take a nice rare item too!"))
 			closemessage
-			randomelement(ITEM_TM_DRAGON_CLAW, ITEM_TM_BULK_UP, ITEM_TM_ICE_BEAM, ITEM_TM_GIGA_DRAIN, ITEM_TM_THUNDERBOLT, ITEM_TM_EARTHQUAKE, ITEM_TM_RETURN, ITEM_TM_PSYCHIC, ITEM_TM_SHADOW_BALL, ITEM_TM_BRICK_BREAK, ITEM_TM_FLAMETHROWER, ITEM_TM57, ITEM_TM58)
+			randomelement(ITEM_TM_DRAGON_CLAW, ITEM_TM_BULK_UP, ITEM_TM_ICE_BEAM, ITEM_TM_GIGA_DRAIN, ITEM_TM_THUNDERBOLT, ITEM_TM_EARTHQUAKE, ITEM_TM_RETURN, ITEM_TM_PSYCHIC, ITEM_TM_SHADOW_BALL, ITEM_TM_BRICK_BREAK, ITEM_TM_FLAMETHROWER, ITEM_TM57, ITEM_TM58, ITEM_EVIOLITE, ITEM_BIG_ROOT, ITEM_GRIP_CLAW, ITEM_BLACK_SLUDGE, ITEM_ROCKY_HELMET, ITEM_ZOOM_LENS, ITEM_EVIOLITE, ITEM_LEFTOVERS, ITEM_LEFTOVERS)
 			giveitem(VAR_RESULT)
-			msgbox(format("We find TMs floating in the sea from time to time. It's important to clean up where we can!"))
+			msgbox(format("We find TMs, rare held items, and other stuff floating in the sea from time to time. It's important to clean up where we can!"))
 			closemessage
 		}
 	}
@@ -280,7 +665,16 @@ script PacifidlogTown_EventScript_ExitDivingMinigame
 	clearflag(FLAG_NEW_DIVING_GAME_HIGH_SCORE)
 	clearflag(FLAG_DOING_DIVING_MINIGAME)
 
-	turnplayer(DIR_SOUTH) // make sure player doesn't immediately trigger dialogue again
+	clearflag(FLAG_SCUBA_COMPETITOR_1)
+	clearflag(FLAG_SCUBA_COMPETITOR_2)
+	clearflag(FLAG_SCUBA_COMPETITOR_3)
+	clearflag(FLAG_SCUBA_COMPETITOR_4)
+
+	msgbox(format("Please, come play again soon!"))
+	closemessage
+	delay(30)
+
+	warpsilent(MAP_PACIFIDLOG_TOWN, 24, 14) // warpsilent player to current position, ending minigame
 	releaseall
 	end
 }
@@ -294,6 +688,11 @@ script PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted
 	special(HealPlayerParty)
 	msgbox(format("Remember, the seas can be dangerous!\N I'd get my hands on a POKéMON with the RUN AWAY ability if I were you. They're great for getting out of rough situations!"))
 	closemessage
+
+	clearflag(FLAG_SCUBA_COMPETITOR_1)
+	clearflag(FLAG_SCUBA_COMPETITOR_2)
+	clearflag(FLAG_SCUBA_COMPETITOR_3)
+	clearflag(FLAG_SCUBA_COMPETITOR_4)
 
 	setvar(VAR_PACIFIDLOG_TOWN_STATE, 0) // reset state of diving minigame
 	clearflag(FLAG_NEW_DIVING_GAME_HIGH_SCORE)

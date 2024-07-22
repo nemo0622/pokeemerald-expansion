@@ -251,6 +251,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diving_Sail
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diving_Triathlete_F;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diving_Triathlete_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diving_Youngster;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ItemBallUnderwater;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -500,6 +501,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DIVING_TRIATHLETE_F] =      &gObjectEventGraphicsInfo_Diving_Triathlete_F,
     [OBJ_EVENT_GFX_DIVING_TRIATHLETE_M] =      &gObjectEventGraphicsInfo_Diving_Triathlete_M,
     [OBJ_EVENT_GFX_DIVING_YOUNGSTER] =         &gObjectEventGraphicsInfo_Diving_Youngster,
+    [OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER] =     &gObjectEventGraphicsInfo_ItemBallUnderwater,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

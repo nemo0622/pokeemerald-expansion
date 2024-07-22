@@ -1520,3 +1520,158 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "POKéMON as soon as we arrived.\p"
 # 761 "data/maps/LilycoveCity/scripts.pory"
 	.string "I mean, we are totally happy!$"
+
+LilycoveCity_EventScript_ScubaSafariResetSailor::
+# 768 "data/maps/LilycoveCity/scripts.pory"
+	lock
+# 769 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_ScubaSafariResetSailor_Text_0
+# 770 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 771 "data/maps/LilycoveCity/scripts.pory"
+	delay 30
+# 772 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 23, Common_Movement_ExclamationMark
+# 773 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 774 "data/maps/LilycoveCity/scripts.pory"
+	delay 10
+# 775 "data/maps/LilycoveCity/scripts.pory"
+	faceplayer
+# 776 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_ScubaSafariResetSailor_Text_1
+# 777 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 778 "data/maps/LilycoveCity/scripts.pory"
+	delay 30
+# 779 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_ScubaSafariResetSailor_Text_2
+# 780 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 781 "data/maps/LilycoveCity/scripts.pory"
+	showmoneybox 0, 0
+# 782 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_ScubaSafariResetSailor_Text_3, MSGBOX_YESNO
+# 784 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq LilycoveCity_EventScript_ScubaSafariResetSailor_2
+# 796 "data/maps/LilycoveCity/scripts.pory"
+	checkmoney 2000
+# 797 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq LilycoveCity_EventScript_ScubaSafariResetSailor_6
+# 808 "data/maps/LilycoveCity/scripts.pory"
+	playse SE_SHOP
+# 809 "data/maps/LilycoveCity/scripts.pory"
+	removemoney 2000
+# 810 "data/maps/LilycoveCity/scripts.pory"
+	updatemoneybox
+# 811 "data/maps/LilycoveCity/scripts.pory"
+	delay 50
+# 812 "data/maps/LilycoveCity/scripts.pory"
+	hidemoneybox
+# 814 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_ScubaSafariResetSailor_Text_6
+# 815 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 816 "data/maps/LilycoveCity/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 817 "data/maps/LilycoveCity/scripts.pory"
+	delay 60
+# 818 "data/maps/LilycoveCity/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 819 "data/maps/LilycoveCity/scripts.pory"
+	delay 20
+# 820 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_ScubaSafariResetSailor_Text_7
+# 821 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 823 "data/maps/LilycoveCity/scripts.pory"
+	setvar VAR_DIVING_MINIGAME_HIGH_SCORE, 0
+# 826 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 23, Common_Movement_FaceOriginalDirection
+# 827 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 828 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+LilycoveCity_EventScript_ScubaSafariResetSailor_2:
+# 786 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_ScubaSafariResetSailor_Text_4
+# 787 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 788 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 23, Common_Movement_FaceOriginalDirection
+# 789 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 790 "data/maps/LilycoveCity/scripts.pory"
+	hidemoneybox
+# 791 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+LilycoveCity_EventScript_ScubaSafariResetSailor_6:
+# 799 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_ScubaSafariResetSailor_Text_5
+# 800 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 801 "data/maps/LilycoveCity/scripts.pory"
+	applymovement 23, Common_Movement_FaceOriginalDirection
+# 802 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 803 "data/maps/LilycoveCity/scripts.pory"
+	hidemoneybox
+# 804 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+
+LilycoveCity_EventScript_ScubaSafariResetSailor_Text_0:
+# 769 "data/maps/LilycoveCity/scripts.pory"
+	.string "Ehehe... come out, little POKéMON... don't\n"
+	.string "you wanna help me make money?$"
+
+LilycoveCity_EventScript_ScubaSafariResetSailor_Text_1:
+# 776 "data/maps/LilycoveCity/scripts.pory"
+	.string "Hey, you! This isn't any of your\n"
+	.string "busines- ahem, I mean, what do you\l"
+	.string "need? How can I get you to leave?$"
+
+LilycoveCity_EventScript_ScubaSafariResetSailor_Text_2:
+# 779 "data/maps/LilycoveCity/scripts.pory"
+	.string "I got it! You seem like the adventurous\n"
+	.string "sort, I'm sure you've tried the SCUBA\l"
+	.string "SAFARI in PACIFIDLOG TOWN. I'm the\l"
+	.string "brother of the SAILOR who runs it!\p"
+	.string "How about I send him a message to reset\n"
+	.string "your high score, eh? Then you can get\l"
+	.string "those sweet, sweet high score rewards?\l"
+	.string "I'll only charge you a bit!$"
+
+LilycoveCity_EventScript_ScubaSafariResetSailor_Text_3:
+# 782 "data/maps/LilycoveCity/scripts.pory"
+	.string "How about I send him a message to reset\n"
+	.string "your high score, eh? Then you can get\l"
+	.string "those sweet, sweet high score rewards?\l"
+	.string "I'll only charge you a bit!$"
+
+LilycoveCity_EventScript_ScubaSafariResetSailor_Text_4:
+# 786 "data/maps/LilycoveCity/scripts.pory"
+	.string "Ah, don't waste my time! Get out of here\n"
+	.string "then!$"
+
+LilycoveCity_EventScript_ScubaSafariResetSailor_Text_5:
+# 799 "data/maps/LilycoveCity/scripts.pory"
+	.string "Mmm... no, not enough money to be worth\n"
+	.string "it. Come back with ¥2000 for me!$"
+
+LilycoveCity_EventScript_ScubaSafariResetSailor_Text_6:
+# 814 "data/maps/LilycoveCity/scripts.pory"
+	.string "Thanks, little buddy. I'll call my\n"
+	.string "brother now.$"
+
+LilycoveCity_EventScript_ScubaSafariResetSailor_Text_7:
+# 820 "data/maps/LilycoveCity/scripts.pory"
+	.string "Alright, it's done. Thanks for the cash!\n"
+	.string "Now scram!$"

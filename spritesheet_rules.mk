@@ -742,3 +742,6 @@ $(OBJEVENTGFXDIR)/people/diving_triathlete_m.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/people/diving_youngster.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/misc/item_ball_underwater.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2

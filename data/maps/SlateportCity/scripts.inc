@@ -2806,6 +2806,56 @@ SlateportCity_Mart_EvolutionItems:
 	.2byte ITEM_MOON_STONE
 	.2byte ITEM_NONE
 
+SlateportCity_EventScript_Kirlia::
+# 1413 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1414 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1415 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_Kirlia_Text_0
+# 1416 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1417 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+
+SlateportCity_EventScript_TeleportMan::
+# 1423 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1424 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1425 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_TeleportMan_Text_0, MSGBOX_YESNO
+# 1427 "data/maps/SlateportCity/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq SlateportCity_EventScript_TeleportMan_2
+# 1436 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_TeleportMan_Text_2
+# 1437 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1438 "data/maps/SlateportCity/scripts.pory"
+	warp MAP_PACIFIDLOG_TOWN, 25, 22
+# 1439 "data/maps/SlateportCity/scripts.pory"
+	waitstate
+# 1440 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+# 1443 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+SlateportCity_EventScript_TeleportMan_2:
+# 1429 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_TeleportMan_Text_1
+# 1430 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1431 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+
 SlateportCity_EventScript_EvolutionItemClerk_Text_0:
 # 1393 "data/maps/SlateportCity/scripts.pory"
 	.string "How can I help you?$"
@@ -2813,3 +2863,20 @@ SlateportCity_EventScript_EvolutionItemClerk_Text_0:
 SlateportCity_EventScript_EvolutionItemClerk_Text_1:
 # 1396 "data/maps/SlateportCity/scripts.pory"
 	.string "I hope to see you again!$"
+
+SlateportCity_EventScript_Kirlia_Text_0:
+# 1415 "data/maps/SlateportCity/scripts.pory"
+	.string "KIRLIA: Shaaah!$"
+
+SlateportCity_EventScript_TeleportMan_Text_0:
+# 1425 "data/maps/SlateportCity/scripts.pory"
+	.string "I host a TELEPORT service to and from\n"
+	.string "PACIFIDLOG TOWN! Would you like a ride?$"
+
+SlateportCity_EventScript_TeleportMan_Text_1:
+# 1429 "data/maps/SlateportCity/scripts.pory"
+	.string "Come back when you want to TELEPORT!$"
+
+SlateportCity_EventScript_TeleportMan_Text_2:
+# 1436 "data/maps/SlateportCity/scripts.pory"
+	.string "Alright, here we go!$"

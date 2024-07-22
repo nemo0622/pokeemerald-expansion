@@ -1288,3 +1288,7 @@ static const struct SpriteFrameImage sPicTable_Diving_Triathlete_M[] = {
 static const struct SpriteFrameImage sPicTable_Diving_Youngster[] = {
     overworld_ascending_frames(gObjectEventPic_Diving_Youngster, 4, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_ItemBallUnderwater[] = {
+    obj_frame_tiles(gObjectEventPic_ItemBallUnderwater),
+};

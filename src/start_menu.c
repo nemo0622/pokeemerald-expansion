@@ -342,7 +342,10 @@ static void BuildNormalStartMenu(void)
     }
 
     AddStartMenuAction(MENU_ACTION_PLAYER);
-    AddStartMenuAction(MENU_ACTION_SAVE);
+
+    if(!FlagGet(FLAG_DOING_DIVING_MINIGAME))
+        AddStartMenuAction(MENU_ACTION_SAVE);
+
     AddStartMenuAction(MENU_ACTION_OPTION);
     AddStartMenuAction(MENU_ACTION_EXIT);
 }

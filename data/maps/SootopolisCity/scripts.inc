@@ -2621,7 +2621,7 @@ SootopolisCity_EventScript_GiveWaterfall::
 # 1311 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT
 # 1312 "data/maps/SootopolisCity/scripts.pory"
-	giveitem ITEM_HM_WATERFALL
+	giveitem ITEM_MASTER_BALL
 # 1313 "data/maps/SootopolisCity/scripts.pory"
 	setflag FLAG_RECEIVED_HM_WATERFALL
 # 1314 "data/maps/SootopolisCity/scripts.pory"
@@ -3421,138 +3421,144 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 # 1711 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_Text_ExplainWaterfallGoToGym:
 # 1712 "data/maps/SootopolisCity/scripts.pory"
-	.string "That HIDDEN MACHINE contains\n"
+	.string "That MASTER BALL can catch any\n"
 # 1713 "data/maps/SootopolisCity/scripts.pory"
-	.string "WATERFALL.\p"
+	.string "POKéMON.\p"
 # 1714 "data/maps/SootopolisCity/scripts.pory"
-	.string "If you have the RAIN BADGE, a POKéMON\n"
+	.string "Have you visited PACIFIDLOG TOWN? They\n"
 # 1715 "data/maps/SootopolisCity/scripts.pory"
-	.string "that has learned that HM move can\l"
+	.string "host a DIVING minigame and award the\l"
 # 1716 "data/maps/SootopolisCity/scripts.pory"
-	.string "force its way up waterfalls.\p"
+	.string "WATERFALL HM. You'll need that soon.\p"
 # 1717 "data/maps/SootopolisCity/scripts.pory"
-	.string "And where does one get the RAIN BADGE?\n"
+	.string "If you have the RAIN BADGE, a POKéMON\n"
 # 1718 "data/maps/SootopolisCity/scripts.pory"
-	.string "You know, don't you?\p"
+	.string "that has learned that HM move can\l"
 # 1719 "data/maps/SootopolisCity/scripts.pory"
-	.string "That's right! You have to beat\n"
+	.string "force its way up waterfalls.\p"
 # 1720 "data/maps/SootopolisCity/scripts.pory"
-	.string "the SOOTOPOLIS GYM LEADER.\p"
+	.string "And where does one get the RAIN BADGE?\n"
 # 1721 "data/maps/SootopolisCity/scripts.pory"
-	.string "When you're all set to go, step through\n"
+	.string "You know, don't you?\p"
 # 1722 "data/maps/SootopolisCity/scripts.pory"
-	.string "that door.$"
+	.string "That's right! You have to beat\n"
 # 1723 "data/maps/SootopolisCity/scripts.pory"
-
+	.string "the SOOTOPOLIS GYM LEADER.\p"
 # 1724 "data/maps/SootopolisCity/scripts.pory"
-SootopolisCity_Text_DazzledByMentor:
+	.string "When you're all set to go, step through\n"
 # 1725 "data/maps/SootopolisCity/scripts.pory"
-	.string "WALLACE: I'm sure that you will be\n"
+	.string "that door.$"
 # 1726 "data/maps/SootopolisCity/scripts.pory"
-	.string "dazzled by my mentor's breathtakingly\l"
+
 # 1727 "data/maps/SootopolisCity/scripts.pory"
+SootopolisCity_Text_DazzledByMentor:
+# 1728 "data/maps/SootopolisCity/scripts.pory"
+	.string "WALLACE: I'm sure that you will be\n"
+# 1729 "data/maps/SootopolisCity/scripts.pory"
+	.string "dazzled by my mentor's breathtakingly\l"
+# 1730 "data/maps/SootopolisCity/scripts.pory"
 	.string "elegant battle style.$"
 
 SootopolisCity_EventScript_EvolutionItemSaleswoman::
-# 1733 "data/maps/SootopolisCity/scripts.pory"
-	lock
-# 1734 "data/maps/SootopolisCity/scripts.pory"
-	faceplayer
-# 1735 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_0
 # 1736 "data/maps/SootopolisCity/scripts.pory"
-	closemessage
+	lock
 # 1737 "data/maps/SootopolisCity/scripts.pory"
-	message SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_1
+	faceplayer
 # 1738 "data/maps/SootopolisCity/scripts.pory"
-	waitmessage
+	msgbox SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_0
 # 1739 "data/maps/SootopolisCity/scripts.pory"
-	pokemart EvolutionItemMarket
-# 1740 "data/maps/SootopolisCity/scripts.pory"
-	msgbox SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_2
-# 1741 "data/maps/SootopolisCity/scripts.pory"
 	closemessage
+# 1740 "data/maps/SootopolisCity/scripts.pory"
+	message SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_1
+# 1741 "data/maps/SootopolisCity/scripts.pory"
+	waitmessage
 # 1742 "data/maps/SootopolisCity/scripts.pory"
+	pokemart EvolutionItemMarket
+# 1743 "data/maps/SootopolisCity/scripts.pory"
+	msgbox SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_2
+# 1744 "data/maps/SootopolisCity/scripts.pory"
+	closemessage
+# 1745 "data/maps/SootopolisCity/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 1747 "data/maps/SootopolisCity/scripts.pory"
-EvolutionItemMarket:
-# 1749 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_LINKING_CORD
 # 1750 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_FIRE_STONE
-# 1751 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_WATER_STONE
+EvolutionItemMarket:
 # 1752 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_THUNDER_STONE
+	.2byte ITEM_LINKING_CORD
 # 1753 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_FIRE_STONE
 # 1754 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_ICE_STONE
+	.2byte ITEM_WATER_STONE
 # 1755 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_SUN_STONE
+	.2byte ITEM_THUNDER_STONE
 # 1756 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_MOON_STONE
+	.2byte ITEM_LEAF_STONE
 # 1757 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_ICE_STONE
 # 1758 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_DAWN_STONE
+	.2byte ITEM_SUN_STONE
 # 1759 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_MOON_STONE
 # 1760 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_DRAGON_SCALE
+	.2byte ITEM_SHINY_STONE
 # 1761 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_DAWN_STONE
 # 1762 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_METAL_COAT
+	.2byte ITEM_DUSK_STONE
 # 1763 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_UPGRADE
+	.2byte ITEM_DRAGON_SCALE
 # 1764 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_DUBIOUS_DISC
+	.2byte ITEM_KINGS_ROCK
 # 1765 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_DEEP_SEA_SCALE
+	.2byte ITEM_METAL_COAT
 # 1766 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_DEEP_SEA_TOOTH
+	.2byte ITEM_UPGRADE
 # 1767 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_ELECTIRIZER
+	.2byte ITEM_DUBIOUS_DISC
 # 1768 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_MAGMARIZER
+	.2byte ITEM_DEEP_SEA_SCALE
 # 1769 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_PROTECTOR
+	.2byte ITEM_DEEP_SEA_TOOTH
 # 1770 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_RAZOR_CLAW
+	.2byte ITEM_ELECTIRIZER
 # 1771 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_RAZOR_FANG
+	.2byte ITEM_MAGMARIZER
 # 1772 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_REAPER_CLOTH
+	.2byte ITEM_PROTECTOR
 # 1773 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_PRISM_SCALE
+	.2byte ITEM_RAZOR_CLAW
 # 1774 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_PEAT_BLOCK
+	.2byte ITEM_RAZOR_FANG
 # 1775 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_BLACK_AUGURITE
+	.2byte ITEM_REAPER_CLOTH
 # 1776 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_SWEET_APPLE
+	.2byte ITEM_PRISM_SCALE
 # 1777 "data/maps/SootopolisCity/scripts.pory"
-	.2byte ITEM_TART_APPLE
+	.2byte ITEM_PEAT_BLOCK
 # 1778 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_BLACK_AUGURITE
+# 1779 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_SWEET_APPLE
+# 1780 "data/maps/SootopolisCity/scripts.pory"
+	.2byte ITEM_TART_APPLE
+# 1781 "data/maps/SootopolisCity/scripts.pory"
 	.2byte ITEM_SYRUPY_APPLE
 	.2byte ITEM_NONE
 
 SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_0:
-# 1735 "data/maps/SootopolisCity/scripts.pory"
+# 1738 "data/maps/SootopolisCity/scripts.pory"
 	.string "Welcome to my little stall!\n"
 	.string "I sell evolution items to help TRAINERS\l"
 	.string "raise their POKéMON up higher than\l"
 	.string "ever!$"
 
 SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_1:
-# 1737 "data/maps/SootopolisCity/scripts.pory"
+# 1740 "data/maps/SootopolisCity/scripts.pory"
 	.string "So, how can I help you?$"
 
 SootopolisCity_EventScript_EvolutionItemSaleswoman_Text_2:
-# 1740 "data/maps/SootopolisCity/scripts.pory"
+# 1743 "data/maps/SootopolisCity/scripts.pory"
 	.string "I hope to see you again!$"

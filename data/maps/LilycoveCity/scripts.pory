@@ -761,3 +761,71 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "I mean, we are totally happy!$"
 
 `
+
+script LilycoveCity_EventScript_ScubaSafariResetSailor
+{
+
+	lock
+	msgbox(format("Ehehe... come out, little POKéMON... don't you wanna help me make money?"))
+	closemessage
+	delay(30)
+	applymovement(23, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	delay(10)
+	faceplayer
+	msgbox(format("Hey, you! This isn't any of your busines- ahem, I mean, what do you need? How can I get you to leave?"))
+	closemessage
+	delay(30)
+	msgbox(format("I got it! You seem like the adventurous sort, I'm sure you've tried the SCUBA SAFARI in PACIFIDLOG TOWN. I'm the brother of the SAILOR who runs it!\p How about I send him a message to reset your high score, eh? Then you can get those sweet, sweet high score rewards? I'll only charge you a bit!"))
+	closemessage
+	showmoneybox(0, 0)
+	msgbox(format("How about I send him a message to reset your high score, eh? Then you can get those sweet, sweet high score rewards? I'll only charge you a bit!"), MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == 0) // no
+	{
+		msgbox(format("Ah, don't waste my time! Get out of here then!"))
+		closemessage
+		applymovement(23, Common_Movement_FaceOriginalDirection)
+		waitmovement(0)
+		hidemoneybox
+		release
+		end
+	}
+	else
+	{
+		checkmoney(2000)
+		if(var(VAR_RESULT) == 0) // not enough money
+		{
+			msgbox(format("Mmm... no, not enough money to be worth it. Come back with ¥2000 for me!"))
+			closemessage
+			applymovement(23, Common_Movement_FaceOriginalDirection)
+			waitmovement(0)
+			hidemoneybox
+			release
+			end
+		}
+
+		playse(SE_SHOP)
+		removemoney(2000)
+		updatemoneybox
+		delay(50)
+		hidemoneybox
+
+		msgbox(format("Thanks, little buddy. I'll call my brother now."))
+		closemessage
+		fadescreen(FADE_TO_BLACK)
+		delay(60)
+		fadescreen(FADE_FROM_BLACK)
+		delay(20)
+		msgbox(format("Alright, it's done. Thanks for the cash! Now scram!"))
+		closemessage
+
+		setvar(VAR_DIVING_MINIGAME_HIGH_SCORE, 0)
+	}
+
+	applymovement(23, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+
+}

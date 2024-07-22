@@ -675,39 +675,39 @@
 #define FLAG_MET_DEWFORD_DAILY_BERRY_GIRL  0x278
 #define FLAG_DOING_DIVING_MINIGAME  0x279 // TRUE if currently doing Pacifidlog diving minigame
 #define FLAG_NEW_DIVING_GAME_HIGH_SCORE  0x27A
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
-#define FLAG_UNUSED_0x280  0x280 // Unused Flag
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
-#define FLAG_UNUSED_0x282  0x282 // Unused Flag
-#define FLAG_UNUSED_0x283  0x283 // Unused Flag
-#define FLAG_UNUSED_0x284  0x284 // Unused Flag
-#define FLAG_UNUSED_0x285  0x285 // Unused Flag
-#define FLAG_UNUSED_0x286  0x286 // Unused Flag
-#define FLAG_UNUSED_0x287  0x287 // Unused Flag
-#define FLAG_UNUSED_0x288  0x288 // Unused Flag
-#define FLAG_UNUSED_0x289  0x289 // Unused Flag
-#define FLAG_UNUSED_0x28A  0x28A // Unused Flag
-#define FLAG_UNUSED_0x28B  0x28B // Unused Flag
-#define FLAG_UNUSED_0x28C  0x28C // Unused Flag
-#define FLAG_UNUSED_0x28D  0x28D // Unused Flag
-#define FLAG_UNUSED_0x28E  0x28E // Unused Flag
-#define FLAG_UNUSED_0x28F  0x28F // Unused Flag
-#define FLAG_UNUSED_0x290  0x290 // Unused Flag
-#define FLAG_UNUSED_0x291  0x291 // Unused Flag
-#define FLAG_UNUSED_0x292  0x292 // Unused Flag
-#define FLAG_UNUSED_0x293  0x293 // Unused Flag
-#define FLAG_UNUSED_0x294  0x294 // Unused Flag
-#define FLAG_UNUSED_0x295  0x295 // Unused Flag
-#define FLAG_UNUSED_0x296  0x296 // Unused Flag
-#define FLAG_UNUSED_0x297  0x297 // Unused Flag
-#define FLAG_UNUSED_0x298  0x298 // Unused Flag
-#define FLAG_UNUSED_0x299  0x299 // Unused Flag
-#define FLAG_UNUSED_0x29A  0x29A // Unused Flag
-#define FLAG_UNUSED_0x29B  0x29B // Unused Flag
+#define FLAG_SCUBA_COMPETITOR_1  0x27B // Competitor 1: Pora (Little Girl)
+#define FLAG_SCUBA_COMPETITOR_2  0x27C // Competitor 2: Taiko (Triathlete F)
+#define FLAG_SCUBA_COMPETITOR_3  0x27D // Competitor 3: Taonga (Triathlete M)
+#define FLAG_SCUBA_COMPETITOR_4  0x27E // Competitor 4: Rua (Youngster)
+#define FLAG_HIDE_COMPETITOR_1_UNDERWATER_INTRO  0x27F // show or hide comp 1 in underwater intro
+#define FLAG_HIDE_COMPETITOR_2_UNDERWATER_INTRO  0x280 // show or hide comp 2 in underwater intro
+#define FLAG_HIDE_COMPETITOR_3_UNDERWATER_INTRO  0x281 // show or hide comp 3 in underwater intro
+#define FLAG_HIDE_COMPETITOR_4_UNDERWATER_INTRO  0x282 // show or hide comp 4 in underwater intro
+#define FLAG_HIDE_COMPETITOR_1_UNDERWATER  0x283
+#define FLAG_HIDE_COMPETITOR_2_UNDERWATER  0x284
+#define FLAG_HIDE_COMPETITOR_3_UNDERWATER  0x285
+#define FLAG_HIDE_COMPETITOR_4_UNDERWATER  0x286
+#define FLAG_HIDE_COMPETITOR_1_PACIFIDLOG  0x287
+#define FLAG_HIDE_COMPETITOR_2_PACIFIDLOG  0x288
+#define FLAG_HIDE_COMPETITOR_3_PACIFIDLOG  0x289
+#define FLAG_HIDE_COMPETITOR_4_PACIFIDLOG  0x28A
+#define FLAG_TEMP_PLAYER_WIN_SCUBA  0x28B
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_01  0x28C // Treasure flags from here down
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_02  0x28D
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_03  0x28E
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_04  0x28F
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_05  0x290
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_06  0x291
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_07  0x292
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_08  0x293
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_09  0x294
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_10  0x295
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_11  0x296
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_12  0x297
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_13  0x298
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_14  0x299
+#define FLAG_HIDE_SCUBA_SAFARI_TREASURE_15  0x29A
+#define FLAG_HIDE_PACIFIDLOG_TELEPORT_SERVICE  0x29B
 #define FLAG_UNUSED_0x29C  0x29C // Unused Flag
 #define FLAG_UNUSED_0x29D  0x29D // Unused Flag
 #define FLAG_UNUSED_0x29E  0x29E // Unused Flag

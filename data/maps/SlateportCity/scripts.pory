@@ -1407,3 +1407,39 @@ mart SlateportCity_Mart_EvolutionItems
 	ITEM_SUN_STONE
 	ITEM_MOON_STONE
 }
+
+script SlateportCity_EventScript_Kirlia
+{
+	lock
+	faceplayer
+	msgbox(format("KIRLIA: Shaaah!"))
+	closemessage
+	release
+	end
+}
+
+script SlateportCity_EventScript_TeleportMan
+{
+	lock
+	faceplayer
+	msgbox(format("I host a TELEPORT service to and from PACIFIDLOG TOWN! Would you like a ride?"), MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == 0) // no
+	{
+		msgbox(format("Come back when you want to TELEPORT!"))
+		closemessage
+		release
+		end
+	}
+	else
+	{
+		msgbox(format("Alright, here we go!"))
+		closemessage
+		warp(MAP_PACIFIDLOG_TOWN, 25, 22)
+		waitstate
+		release
+		end
+	}
+	release
+	end
+}

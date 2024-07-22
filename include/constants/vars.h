@@ -236,7 +236,7 @@
 #define VAR_SOOTOPOLIS_WALLACE_STATE                     0x40D8
 #define VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT 0x40D9
 #define VAR_REGISTER_BIRCH_STATE                         0x40DA
-#define VAR_UNUSED_0x40DB                                0x40DB // Unused Var
+#define VAR_DIVING_MINIGAME_PLAYER_SPECIES               0x40DB 
 #define VAR_UNUSED_0x40DC                                0x40DC // Unused Var
 #define VAR_GIFT_PICHU_SLOT                              0x40DD
 #define VAR_GIFT_UNUSED_1                                0x40DE // Var is written to, but never read
@@ -269,10 +269,10 @@
 #define VAR_DIVING_MINIGAME_STEP_COUNT                   0x40F9
 #define VAR_DIVING_MINIGAME_SCORE                        0x40FA // Calculated score of most recent Diving Minigame attempt
 #define VAR_DIVING_MINIGAME_HIGH_SCORE                   0x40FB // Diving Minigame high score, updates every time played
-#define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
-#define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
-#define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
-#define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
+#define VAR_DIVING_MINIGAME_C1_SCORE                     0x40FC // Left competitor score (boy)
+#define VAR_DIVING_MINIGAME_C2_SCORE                     0x40FD // Right competitor score (girl)
+#define VAR_DIVING_MINIGAME_C1_SPECIES                   0x40FE 
+#define VAR_DIVING_MINIGAME_C2_SPECIES                   0x40FF
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)

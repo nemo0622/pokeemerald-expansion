@@ -35,7 +35,45 @@
     }
   ],
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER",
+      "x": 1,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_PEARL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDE_SCUBA_SAFARI_TREASURE_09"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER",
+      "x": 14,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_STARDUST",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDE_SCUBA_SAFARI_TREASURE_10"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIVING_TRIATHLETE_F",
+      "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DivingMinigame_EventScript_Taiko",
+      "flag": "FLAG_HIDE_COMPETITOR_2_UNDERWATER"
+    }
   ],
   "warp_events": [
 

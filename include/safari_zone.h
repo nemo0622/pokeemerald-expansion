@@ -22,5 +22,10 @@ bool8 DivingMinigameTakeStep(void);
 void EnterDivingMinigame(void);
 void ExitDivingMinigame(void);
 void CB2_EndDivingMinigameBattle(void);
+u16 PokemonRarityScore(u16 species);
+void ScubaSafari_GenerateCompetitorPokemon(void);
+u16 CreateRandomScubaSafariSpecies(void);
+void RandomizeScubaSafariTreasureFlags(void);
+void ResetScubaSafariTreasureFlags(void);
 
 #endif // GUARD_SAFARI_ZONE_H
