@@ -271,6 +271,7 @@ script PacifidlogTown_EventScript_DivingMinigameNPC
 		updatemoneybox
 		delay(50)
 		hidemoneybox
+		delay(10)
 
 		msgbox(format("Alrighty! Let's get a SCUBA GROUP together!"))
 		closemessage
@@ -372,6 +373,8 @@ script PacifidlogTown_EventScript_DivingMinigameNPC
 	}
 	else // info
 	{
+		hidemoneybox
+		delay(10)
 		msgbox(format("Ehehe, interested in the SCUBA SAFARI? Welcome! This is the pride and joy of PACIFIDLOG TOWN!\p The gist of the SCUBA SAFARI is DIVING down here and trying to catch the coolest, rarest POKéMON you can in a limited time. You can even find some cool treasures if you're lucky!\p There's a few basic rules. First, when you're down there, you only have {COLOR GREEN}200 tiles of movement{COLOR DARK_GRAY} or {COLOR GREEN}five encounters{COLOR DARK_GRAY} to explore. After that, your POKéMON is scored based on level, stats, and rarity. You'll have a few competitors down there, so do your best to catch something cool!\p And remember, only the {COLOR RED}most recent{COLOR DARK_GRAY} POKéMON you catch counts for scoring."))
 		closemessage
 		msgbox(format("...Phew, that was a lot! Oh right, and you don't even need the DIVE HM to play! We provide you with everything you need. Now, with that out of the way..."))

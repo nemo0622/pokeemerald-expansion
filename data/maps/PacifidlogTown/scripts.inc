@@ -394,17 +394,21 @@ PacifidlogTown_EventScript_DivingMinigameNPC::
 # 257 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PacifidlogTown_EventScript_DivingMinigameNPC_3
-# 375 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_DivingMinigameNPC_Text_5
 # 376 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
+	hidemoneybox
 # 377 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_DivingMinigameNPC_Text_6
+	delay 10
 # 378 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
+	msgbox PacifidlogTown_EventScript_DivingMinigameNPC_Text_5
 # 379 "data/maps/PacifidlogTown/scripts.pory"
-	goto PacifidlogTown_EventScript_DivingMinigameNPC
+	closemessage
+# 380 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_DivingMinigameNPC_Text_6
+# 381 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
 # 382 "data/maps/PacifidlogTown/scripts.pory"
+	goto PacifidlogTown_EventScript_DivingMinigameNPC
+# 385 "data/maps/PacifidlogTown/scripts.pory"
 	release
 	end
 
@@ -435,101 +439,103 @@ PacifidlogTown_EventScript_DivingMinigameNPC_3:
 	delay 50
 # 273 "data/maps/PacifidlogTown/scripts.pory"
 	hidemoneybox
-# 275 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_DivingMinigameNPC_Text_3
+# 274 "data/maps/PacifidlogTown/scripts.pory"
+	delay 10
 # 276 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_DivingMinigameNPC_Text_3
+# 277 "data/maps/PacifidlogTown/scripts.pory"
 	closemessage
-# 278 "data/maps/PacifidlogTown/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 279 "data/maps/PacifidlogTown/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 280 "data/maps/PacifidlogTown/scripts.pory"
 	delay 60
-# 282 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_DOING_DIVING_MINIGAME
 # 283 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_NEW_DIVING_GAME_HIGH_SCORE
+	setflag FLAG_DOING_DIVING_MINIGAME
 # 284 "data/maps/PacifidlogTown/scripts.pory"
+	clearflag FLAG_NEW_DIVING_GAME_HIGH_SCORE
+# 285 "data/maps/PacifidlogTown/scripts.pory"
 	special EnterDivingMinigame
-# 287 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_1
 # 288 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_2
+	clearflag FLAG_SCUBA_COMPETITOR_1
 # 289 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_3
+	clearflag FLAG_SCUBA_COMPETITOR_2
 # 290 "data/maps/PacifidlogTown/scripts.pory"
+	clearflag FLAG_SCUBA_COMPETITOR_3
+# 291 "data/maps/PacifidlogTown/scripts.pory"
 	clearflag FLAG_SCUBA_COMPETITOR_4
-# 293 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_HIDE_COMPETITOR_1_UNDERWATER
 # 294 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_HIDE_COMPETITOR_2_UNDERWATER
+	setflag FLAG_HIDE_COMPETITOR_1_UNDERWATER
 # 295 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_HIDE_COMPETITOR_3_UNDERWATER
+	setflag FLAG_HIDE_COMPETITOR_2_UNDERWATER
 # 296 "data/maps/PacifidlogTown/scripts.pory"
+	setflag FLAG_HIDE_COMPETITOR_3_UNDERWATER
+# 297 "data/maps/PacifidlogTown/scripts.pory"
 	setflag FLAG_HIDE_COMPETITOR_4_UNDERWATER
-# 299 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_HIDE_COMPETITOR_1_UNDERWATER_INTRO
 # 300 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_HIDE_COMPETITOR_2_UNDERWATER_INTRO
+	setflag FLAG_HIDE_COMPETITOR_1_UNDERWATER_INTRO
 # 301 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_HIDE_COMPETITOR_3_UNDERWATER_INTRO
+	setflag FLAG_HIDE_COMPETITOR_2_UNDERWATER_INTRO
 # 302 "data/maps/PacifidlogTown/scripts.pory"
+	setflag FLAG_HIDE_COMPETITOR_3_UNDERWATER_INTRO
+# 303 "data/maps/PacifidlogTown/scripts.pory"
 	setflag FLAG_HIDE_COMPETITOR_4_UNDERWATER_INTRO
-# 306 "data/maps/PacifidlogTown/scripts.pory"
-	randompercentage 50
 # 307 "data/maps/PacifidlogTown/scripts.pory"
+	randompercentage 50
+# 308 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq PacifidlogTown_EventScript_DivingMinigameNPC_11
-# 316 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_SCUBA_COMPETITOR_4
 # 317 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_4_UNDERWATER_INTRO
+	setflag FLAG_SCUBA_COMPETITOR_4
 # 318 "data/maps/PacifidlogTown/scripts.pory"
-	setobjectxy 11, 23, 14
+	clearflag FLAG_HIDE_COMPETITOR_4_UNDERWATER_INTRO
 # 319 "data/maps/PacifidlogTown/scripts.pory"
+	setobjectxy 11, 23, 14
+# 320 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 11, Common_Movement_FaceUp
 PacifidlogTown_EventScript_DivingMinigameNPC_10:
-# 322 "data/maps/PacifidlogTown/scripts.pory"
-	randompercentage 50
 # 323 "data/maps/PacifidlogTown/scripts.pory"
+	randompercentage 50
+# 324 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq PacifidlogTown_EventScript_DivingMinigameNPC_15
-# 332 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_SCUBA_COMPETITOR_1
 # 333 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_1_UNDERWATER_INTRO
+	setflag FLAG_SCUBA_COMPETITOR_1
 # 334 "data/maps/PacifidlogTown/scripts.pory"
-	setobjectxy 10, 25, 14
+	clearflag FLAG_HIDE_COMPETITOR_1_UNDERWATER_INTRO
 # 335 "data/maps/PacifidlogTown/scripts.pory"
+	setobjectxy 10, 25, 14
+# 336 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 10, Common_Movement_FaceUp
 PacifidlogTown_EventScript_DivingMinigameNPC_14:
-# 338 "data/maps/PacifidlogTown/scripts.pory"
-	fadescreen FADE_FROM_BLACK
 # 339 "data/maps/PacifidlogTown/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 340 "data/maps/PacifidlogTown/scripts.pory"
 	delay 20
-# 341 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_DivingMinigameNPC_Text_4
 # 342 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_DivingMinigameNPC_Text_4
+# 343 "data/maps/PacifidlogTown/scripts.pory"
 	closemessage
-# 344 "data/maps/PacifidlogTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PacifidlogTown_Movement_CompetitorsExcited
 # 345 "data/maps/PacifidlogTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PacifidlogTown_Movement_CompetitorsExcited
+# 346 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_1, PacifidlogTown_EventScript_DivingMinigameNPC_19
 PacifidlogTown_EventScript_DivingMinigameNPC_18:
-# 350 "data/maps/PacifidlogTown/scripts.pory"
+# 351 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_2, PacifidlogTown_EventScript_DivingMinigameNPC_22
 PacifidlogTown_EventScript_DivingMinigameNPC_21:
-# 355 "data/maps/PacifidlogTown/scripts.pory"
+# 356 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_3, PacifidlogTown_EventScript_DivingMinigameNPC_25
 PacifidlogTown_EventScript_DivingMinigameNPC_24:
-# 360 "data/maps/PacifidlogTown/scripts.pory"
+# 361 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_4, PacifidlogTown_EventScript_DivingMinigameNPC_28
 PacifidlogTown_EventScript_DivingMinigameNPC_27:
-# 366 "data/maps/PacifidlogTown/scripts.pory"
-	waitmovement 0
 # 367 "data/maps/PacifidlogTown/scripts.pory"
+	waitmovement 0
+# 368 "data/maps/PacifidlogTown/scripts.pory"
 	delay 30
-# 369 "data/maps/PacifidlogTown/scripts.pory"
-	warp MAP_DIVING_MINIGAME, 4, 14
 # 370 "data/maps/PacifidlogTown/scripts.pory"
+	warp MAP_DIVING_MINIGAME, 4, 14
+# 371 "data/maps/PacifidlogTown/scripts.pory"
 	waitstate
 	end
 
@@ -545,578 +551,578 @@ PacifidlogTown_EventScript_DivingMinigameNPC_8:
 	end
 
 PacifidlogTown_EventScript_DivingMinigameNPC_11:
-# 309 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_SCUBA_COMPETITOR_3
 # 310 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_3_UNDERWATER_INTRO
+	setflag FLAG_SCUBA_COMPETITOR_3
 # 311 "data/maps/PacifidlogTown/scripts.pory"
-	setobjectxy 7, 23, 14
+	clearflag FLAG_HIDE_COMPETITOR_3_UNDERWATER_INTRO
 # 312 "data/maps/PacifidlogTown/scripts.pory"
+	setobjectxy 7, 23, 14
+# 313 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 7, Common_Movement_FaceUp
 	goto PacifidlogTown_EventScript_DivingMinigameNPC_10
 
 PacifidlogTown_EventScript_DivingMinigameNPC_15:
-# 325 "data/maps/PacifidlogTown/scripts.pory"
-	setflag FLAG_SCUBA_COMPETITOR_2
 # 326 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_2_UNDERWATER_INTRO
+	setflag FLAG_SCUBA_COMPETITOR_2
 # 327 "data/maps/PacifidlogTown/scripts.pory"
-	setobjectxy 6, 25, 14
+	clearflag FLAG_HIDE_COMPETITOR_2_UNDERWATER_INTRO
 # 328 "data/maps/PacifidlogTown/scripts.pory"
+	setobjectxy 6, 25, 14
+# 329 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 6, Common_Movement_FaceUp
 	goto PacifidlogTown_EventScript_DivingMinigameNPC_14
 
 PacifidlogTown_EventScript_DivingMinigameNPC_19:
-# 347 "data/maps/PacifidlogTown/scripts.pory"
-	applymovement 10, PacifidlogTown_Movement_CompetitorsExcited
 # 348 "data/maps/PacifidlogTown/scripts.pory"
+	applymovement 10, PacifidlogTown_Movement_CompetitorsExcited
+# 349 "data/maps/PacifidlogTown/scripts.pory"
 	setflag FLAG_HIDE_COMPETITOR_1_PACIFIDLOG
 	goto PacifidlogTown_EventScript_DivingMinigameNPC_18
 
 PacifidlogTown_EventScript_DivingMinigameNPC_22:
-# 352 "data/maps/PacifidlogTown/scripts.pory"
-	applymovement 6, PacifidlogTown_Movement_CompetitorsExcited
 # 353 "data/maps/PacifidlogTown/scripts.pory"
+	applymovement 6, PacifidlogTown_Movement_CompetitorsExcited
+# 354 "data/maps/PacifidlogTown/scripts.pory"
 	setflag FLAG_HIDE_COMPETITOR_2_PACIFIDLOG
 	goto PacifidlogTown_EventScript_DivingMinigameNPC_21
 
 PacifidlogTown_EventScript_DivingMinigameNPC_25:
-# 357 "data/maps/PacifidlogTown/scripts.pory"
-	applymovement 7, PacifidlogTown_Movement_CompetitorsExcited
 # 358 "data/maps/PacifidlogTown/scripts.pory"
+	applymovement 7, PacifidlogTown_Movement_CompetitorsExcited
+# 359 "data/maps/PacifidlogTown/scripts.pory"
 	setflag FLAG_HIDE_COMPETITOR_3_PACIFIDLOG
 	goto PacifidlogTown_EventScript_DivingMinigameNPC_24
 
 PacifidlogTown_EventScript_DivingMinigameNPC_28:
-# 362 "data/maps/PacifidlogTown/scripts.pory"
-	applymovement 11, PacifidlogTown_Movement_CompetitorsExcited
 # 363 "data/maps/PacifidlogTown/scripts.pory"
+	applymovement 11, PacifidlogTown_Movement_CompetitorsExcited
+# 364 "data/maps/PacifidlogTown/scripts.pory"
 	setflag FLAG_HIDE_COMPETITOR_4_PACIFIDLOG
 	goto PacifidlogTown_EventScript_DivingMinigameNPC_27
 
 
-# 386 "data/maps/PacifidlogTown/scripts.pory"
+# 389 "data/maps/PacifidlogTown/scripts.pory"
 PacifidlogTown_Movement_CompetitorsExcited:
-# 388 "data/maps/PacifidlogTown/scripts.pory"
+# 391 "data/maps/PacifidlogTown/scripts.pory"
 	jump_in_place_up
-# 388 "data/maps/PacifidlogTown/scripts.pory"
+# 391 "data/maps/PacifidlogTown/scripts.pory"
 	jump_in_place_up
-# 389 "data/maps/PacifidlogTown/scripts.pory"
+# 392 "data/maps/PacifidlogTown/scripts.pory"
 	walk_in_place_up
-# 389 "data/maps/PacifidlogTown/scripts.pory"
+# 392 "data/maps/PacifidlogTown/scripts.pory"
 	walk_in_place_up
-# 390 "data/maps/PacifidlogTown/scripts.pory"
-	step_end
-
 # 393 "data/maps/PacifidlogTown/scripts.pory"
-PacifidlogTown_Movement_CompetitorsOutOfWater:
-# 395 "data/maps/PacifidlogTown/scripts.pory"
-	jump_down
-# 395 "data/maps/PacifidlogTown/scripts.pory"
-	jump_down
+	step_end
+
 # 396 "data/maps/PacifidlogTown/scripts.pory"
+PacifidlogTown_Movement_CompetitorsOutOfWater:
+# 398 "data/maps/PacifidlogTown/scripts.pory"
+	jump_down
+# 398 "data/maps/PacifidlogTown/scripts.pory"
+	jump_down
+# 399 "data/maps/PacifidlogTown/scripts.pory"
 	face_up
-# 397 "data/maps/PacifidlogTown/scripts.pory"
-	step_end
-
 # 400 "data/maps/PacifidlogTown/scripts.pory"
-PacifidlogTown_Movement_JudgeChecksScoreLeft:
-# 402 "data/maps/PacifidlogTown/scripts.pory"
-	walk_left
+	step_end
+
 # 403 "data/maps/PacifidlogTown/scripts.pory"
-	walk_in_place_down
-# 404 "data/maps/PacifidlogTown/scripts.pory"
-	delay_16
+PacifidlogTown_Movement_JudgeChecksScoreLeft:
 # 405 "data/maps/PacifidlogTown/scripts.pory"
-	emote_heart
-# 406 "data/maps/PacifidlogTown/scripts.pory"
-	delay_16
-	step_end
-
-# 408 "data/maps/PacifidlogTown/scripts.pory"
-PacifidlogTown_Movement_JudgeChecksScoreRight:
-# 410 "data/maps/PacifidlogTown/scripts.pory"
-	walk_right
-# 410 "data/maps/PacifidlogTown/scripts.pory"
-	walk_right
-# 411 "data/maps/PacifidlogTown/scripts.pory"
-	walk_in_place_down
-# 412 "data/maps/PacifidlogTown/scripts.pory"
-	delay_16
-# 413 "data/maps/PacifidlogTown/scripts.pory"
-	emote_heart
-# 414 "data/maps/PacifidlogTown/scripts.pory"
-	delay_16
-	step_end
-
-# 416 "data/maps/PacifidlogTown/scripts.pory"
-PacifidlogTown_Movement_JudgeChecksScorePlayer:
-# 418 "data/maps/PacifidlogTown/scripts.pory"
 	walk_left
-# 419 "data/maps/PacifidlogTown/scripts.pory"
+# 406 "data/maps/PacifidlogTown/scripts.pory"
 	walk_in_place_down
-# 420 "data/maps/PacifidlogTown/scripts.pory"
+# 407 "data/maps/PacifidlogTown/scripts.pory"
 	delay_16
-# 421 "data/maps/PacifidlogTown/scripts.pory"
+# 408 "data/maps/PacifidlogTown/scripts.pory"
 	emote_heart
-# 422 "data/maps/PacifidlogTown/scripts.pory"
+# 409 "data/maps/PacifidlogTown/scripts.pory"
 	delay_16
+	step_end
+
+# 411 "data/maps/PacifidlogTown/scripts.pory"
+PacifidlogTown_Movement_JudgeChecksScoreRight:
+# 413 "data/maps/PacifidlogTown/scripts.pory"
+	walk_right
+# 413 "data/maps/PacifidlogTown/scripts.pory"
+	walk_right
+# 414 "data/maps/PacifidlogTown/scripts.pory"
+	walk_in_place_down
+# 415 "data/maps/PacifidlogTown/scripts.pory"
+	delay_16
+# 416 "data/maps/PacifidlogTown/scripts.pory"
+	emote_heart
+# 417 "data/maps/PacifidlogTown/scripts.pory"
+	delay_16
+	step_end
+
+# 419 "data/maps/PacifidlogTown/scripts.pory"
+PacifidlogTown_Movement_JudgeChecksScorePlayer:
+# 421 "data/maps/PacifidlogTown/scripts.pory"
+	walk_left
+# 422 "data/maps/PacifidlogTown/scripts.pory"
+	walk_in_place_down
 # 423 "data/maps/PacifidlogTown/scripts.pory"
+	delay_16
+# 424 "data/maps/PacifidlogTown/scripts.pory"
+	emote_heart
+# 425 "data/maps/PacifidlogTown/scripts.pory"
+	delay_16
+# 426 "data/maps/PacifidlogTown/scripts.pory"
 	step_end
 
 PacifidlogTown_ResetCompetitorFlagsFailsafe::
-# 428 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_1_PACIFIDLOG
-# 429 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_2_PACIFIDLOG
-# 430 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_3_PACIFIDLOG
 # 431 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_4_PACIFIDLOG
+	clearflag FLAG_HIDE_COMPETITOR_1_PACIFIDLOG
 # 432 "data/maps/PacifidlogTown/scripts.pory"
-	showobjectat 10, MAP_PACIFIDLOG_TOWN
+	clearflag FLAG_HIDE_COMPETITOR_2_PACIFIDLOG
 # 433 "data/maps/PacifidlogTown/scripts.pory"
-	showobjectat 6, MAP_PACIFIDLOG_TOWN
+	clearflag FLAG_HIDE_COMPETITOR_3_PACIFIDLOG
 # 434 "data/maps/PacifidlogTown/scripts.pory"
-	showobjectat 7, MAP_PACIFIDLOG_TOWN
+	clearflag FLAG_HIDE_COMPETITOR_4_PACIFIDLOG
 # 435 "data/maps/PacifidlogTown/scripts.pory"
+	showobjectat 10, MAP_PACIFIDLOG_TOWN
+# 436 "data/maps/PacifidlogTown/scripts.pory"
+	showobjectat 6, MAP_PACIFIDLOG_TOWN
+# 437 "data/maps/PacifidlogTown/scripts.pory"
+	showobjectat 7, MAP_PACIFIDLOG_TOWN
+# 438 "data/maps/PacifidlogTown/scripts.pory"
 	showobjectat 11, MAP_PACIFIDLOG_TOWN
 	return
 
 
 PacifidlogTown_SetCompetitorPositionsAfterMinigame::
-# 440 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_1_PACIFIDLOG
-# 441 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_2_PACIFIDLOG
-# 442 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_3_PACIFIDLOG
 # 443 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_HIDE_COMPETITOR_4_PACIFIDLOG
+	clearflag FLAG_HIDE_COMPETITOR_1_PACIFIDLOG
 # 444 "data/maps/PacifidlogTown/scripts.pory"
-	showobjectat 10, MAP_PACIFIDLOG_TOWN
+	clearflag FLAG_HIDE_COMPETITOR_2_PACIFIDLOG
 # 445 "data/maps/PacifidlogTown/scripts.pory"
-	showobjectat 6, MAP_PACIFIDLOG_TOWN
+	clearflag FLAG_HIDE_COMPETITOR_3_PACIFIDLOG
 # 446 "data/maps/PacifidlogTown/scripts.pory"
-	showobjectat 7, MAP_PACIFIDLOG_TOWN
+	clearflag FLAG_HIDE_COMPETITOR_4_PACIFIDLOG
 # 447 "data/maps/PacifidlogTown/scripts.pory"
-	showobjectat 11, MAP_PACIFIDLOG_TOWN
+	showobjectat 10, MAP_PACIFIDLOG_TOWN
+# 448 "data/maps/PacifidlogTown/scripts.pory"
+	showobjectat 6, MAP_PACIFIDLOG_TOWN
 # 449 "data/maps/PacifidlogTown/scripts.pory"
+	showobjectat 7, MAP_PACIFIDLOG_TOWN
+# 450 "data/maps/PacifidlogTown/scripts.pory"
+	showobjectat 11, MAP_PACIFIDLOG_TOWN
+# 452 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_1, PacifidlogTown_SetCompetitorPositionsAfterMinigame_2
 PacifidlogTown_SetCompetitorPositionsAfterMinigame_1:
-# 455 "data/maps/PacifidlogTown/scripts.pory"
+# 458 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_2, PacifidlogTown_SetCompetitorPositionsAfterMinigame_5
 PacifidlogTown_SetCompetitorPositionsAfterMinigame_4:
-# 461 "data/maps/PacifidlogTown/scripts.pory"
+# 464 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_3, PacifidlogTown_SetCompetitorPositionsAfterMinigame_8
 PacifidlogTown_SetCompetitorPositionsAfterMinigame_7:
-# 467 "data/maps/PacifidlogTown/scripts.pory"
+# 470 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_4, PacifidlogTown_SetCompetitorPositionsAfterMinigame_10
 	return
 
 PacifidlogTown_SetCompetitorPositionsAfterMinigame_2:
-# 451 "data/maps/PacifidlogTown/scripts.pory"
+# 454 "data/maps/PacifidlogTown/scripts.pory"
 	setobjectxyperm 10, 25, 12
-# 452 "data/maps/PacifidlogTown/scripts.pory"
+# 455 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 10, Common_Movement_WalkUp2
-# 453 "data/maps/PacifidlogTown/scripts.pory"
+# 456 "data/maps/PacifidlogTown/scripts.pory"
 	setobjectmovementtype 10, MOVEMENT_TYPE_FACE_DOWN
 	goto PacifidlogTown_SetCompetitorPositionsAfterMinigame_1
 
 PacifidlogTown_SetCompetitorPositionsAfterMinigame_5:
-# 457 "data/maps/PacifidlogTown/scripts.pory"
+# 460 "data/maps/PacifidlogTown/scripts.pory"
 	setobjectxyperm 6, 25, 12
-# 458 "data/maps/PacifidlogTown/scripts.pory"
+# 461 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 6, Common_Movement_WalkUp2
-# 459 "data/maps/PacifidlogTown/scripts.pory"
+# 462 "data/maps/PacifidlogTown/scripts.pory"
 	setobjectmovementtype 6, MOVEMENT_TYPE_FACE_DOWN
 	goto PacifidlogTown_SetCompetitorPositionsAfterMinigame_4
 
 PacifidlogTown_SetCompetitorPositionsAfterMinigame_8:
-# 463 "data/maps/PacifidlogTown/scripts.pory"
+# 466 "data/maps/PacifidlogTown/scripts.pory"
 	setobjectxyperm 7, 23, 12
-# 464 "data/maps/PacifidlogTown/scripts.pory"
+# 467 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 7, Common_Movement_WalkUp2
-# 465 "data/maps/PacifidlogTown/scripts.pory"
+# 468 "data/maps/PacifidlogTown/scripts.pory"
 	setobjectmovementtype 7, MOVEMENT_TYPE_FACE_DOWN
 	goto PacifidlogTown_SetCompetitorPositionsAfterMinigame_7
 
 PacifidlogTown_SetCompetitorPositionsAfterMinigame_10:
-# 469 "data/maps/PacifidlogTown/scripts.pory"
+# 472 "data/maps/PacifidlogTown/scripts.pory"
 	setobjectxyperm 11, 23, 12
-# 470 "data/maps/PacifidlogTown/scripts.pory"
+# 473 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 11, Common_Movement_WalkUp2
-# 471 "data/maps/PacifidlogTown/scripts.pory"
+# 474 "data/maps/PacifidlogTown/scripts.pory"
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
 	return
 
 
 PacifidlogTown_EventScript_ExitDivingMinigame::
-# 477 "data/maps/PacifidlogTown/scripts.pory"
+# 480 "data/maps/PacifidlogTown/scripts.pory"
 	lockall
-# 478 "data/maps/PacifidlogTown/scripts.pory"
-	turnplayer DIR_NORTH
 # 481 "data/maps/PacifidlogTown/scripts.pory"
+	turnplayer DIR_NORTH
+# 484 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_1, PacifidlogTown_EventScript_ExitDivingMinigame_2
 PacifidlogTown_EventScript_ExitDivingMinigame_1:
-# 485 "data/maps/PacifidlogTown/scripts.pory"
+# 488 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_2, PacifidlogTown_EventScript_ExitDivingMinigame_5
 PacifidlogTown_EventScript_ExitDivingMinigame_4:
-# 489 "data/maps/PacifidlogTown/scripts.pory"
+# 492 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_3, PacifidlogTown_EventScript_ExitDivingMinigame_8
 PacifidlogTown_EventScript_ExitDivingMinigame_7:
-# 493 "data/maps/PacifidlogTown/scripts.pory"
+# 496 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_4, PacifidlogTown_EventScript_ExitDivingMinigame_11
 PacifidlogTown_EventScript_ExitDivingMinigame_10:
-# 497 "data/maps/PacifidlogTown/scripts.pory"
+# 500 "data/maps/PacifidlogTown/scripts.pory"
 	waitmovement 0
-# 498 "data/maps/PacifidlogTown/scripts.pory"
-	delay 30
 # 501 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_0
-# 502 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
+	delay 30
 # 504 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_0
+# 505 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
+# 507 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_3, PacifidlogTown_EventScript_ExitDivingMinigame_14
-# 508 "data/maps/PacifidlogTown/scripts.pory"
+# 511 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_4, PacifidlogTown_EventScript_ExitDivingMinigame_15
 PacifidlogTown_EventScript_ExitDivingMinigame_13:
-# 514 "data/maps/PacifidlogTown/scripts.pory"
-	applymovement 5, PacifidlogTown_Movement_JudgeChecksScoreLeft
-# 515 "data/maps/PacifidlogTown/scripts.pory"
-	waitmovement 0
-# 516 "data/maps/PacifidlogTown/scripts.pory"
-	delay 20
 # 517 "data/maps/PacifidlogTown/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_DIVING_MINIGAME_C1_SCORE
+	applymovement 5, PacifidlogTown_Movement_JudgeChecksScoreLeft
 # 518 "data/maps/PacifidlogTown/scripts.pory"
-	bufferspeciesname STR_VAR_2, VAR_DIVING_MINIGAME_C1_SPECIES
+	waitmovement 0
 # 519 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_3
-# 520 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
-# 521 "data/maps/PacifidlogTown/scripts.pory"
 	delay 20
+# 520 "data/maps/PacifidlogTown/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_DIVING_MINIGAME_C1_SCORE
+# 521 "data/maps/PacifidlogTown/scripts.pory"
+	bufferspeciesname STR_VAR_2, VAR_DIVING_MINIGAME_C1_SPECIES
+# 522 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_3
+# 523 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
 # 524 "data/maps/PacifidlogTown/scripts.pory"
+	delay 20
+# 527 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_1, PacifidlogTown_EventScript_ExitDivingMinigame_19
-# 528 "data/maps/PacifidlogTown/scripts.pory"
+# 531 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_2, PacifidlogTown_EventScript_ExitDivingMinigame_20
 PacifidlogTown_EventScript_ExitDivingMinigame_18:
-# 534 "data/maps/PacifidlogTown/scripts.pory"
-	applymovement 5, PacifidlogTown_Movement_JudgeChecksScoreRight
-# 535 "data/maps/PacifidlogTown/scripts.pory"
-	waitmovement 0
-# 536 "data/maps/PacifidlogTown/scripts.pory"
-	delay 20
 # 537 "data/maps/PacifidlogTown/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_DIVING_MINIGAME_C2_SCORE
+	applymovement 5, PacifidlogTown_Movement_JudgeChecksScoreRight
 # 538 "data/maps/PacifidlogTown/scripts.pory"
-	bufferspeciesname STR_VAR_3, VAR_DIVING_MINIGAME_C2_SPECIES
-# 539 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_6
-# 540 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
-# 541 "data/maps/PacifidlogTown/scripts.pory"
-	delay 20
-# 543 "data/maps/PacifidlogTown/scripts.pory"
-	applymovement 5, PacifidlogTown_Movement_JudgeChecksScorePlayer
-# 544 "data/maps/PacifidlogTown/scripts.pory"
 	waitmovement 0
-# 545 "data/maps/PacifidlogTown/scripts.pory"
+# 539 "data/maps/PacifidlogTown/scripts.pory"
+	delay 20
+# 540 "data/maps/PacifidlogTown/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_DIVING_MINIGAME_C2_SCORE
+# 541 "data/maps/PacifidlogTown/scripts.pory"
+	bufferspeciesname STR_VAR_3, VAR_DIVING_MINIGAME_C2_SPECIES
+# 542 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_6
+# 543 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
+# 544 "data/maps/PacifidlogTown/scripts.pory"
 	delay 20
 # 546 "data/maps/PacifidlogTown/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_DIVING_MINIGAME_SCORE
+	applymovement 5, PacifidlogTown_Movement_JudgeChecksScorePlayer
 # 547 "data/maps/PacifidlogTown/scripts.pory"
-	bufferspeciesname STR_VAR_2, VAR_DIVING_MINIGAME_PLAYER_SPECIES
+	waitmovement 0
 # 548 "data/maps/PacifidlogTown/scripts.pory"
+	delay 20
+# 549 "data/maps/PacifidlogTown/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_DIVING_MINIGAME_SCORE
+# 550 "data/maps/PacifidlogTown/scripts.pory"
+	bufferspeciesname STR_VAR_2, VAR_DIVING_MINIGAME_PLAYER_SPECIES
+# 551 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_DIVING_MINIGAME_SCORE, 0
 	goto_if_gt PacifidlogTown_EventScript_ExitDivingMinigame_24
-# 554 "data/maps/PacifidlogTown/scripts.pory"
+# 557 "data/maps/PacifidlogTown/scripts.pory"
 	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_8
 PacifidlogTown_EventScript_ExitDivingMinigame_23:
-# 556 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
-# 557 "data/maps/PacifidlogTown/scripts.pory"
-	delay 40
 # 559 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
+# 560 "data/maps/PacifidlogTown/scripts.pory"
+	delay 40
+# 562 "data/maps/PacifidlogTown/scripts.pory"
 	clearflag FLAG_TEMP_PLAYER_WIN_SCUBA
-# 563 "data/maps/PacifidlogTown/scripts.pory"
+# 566 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_DIVING_MINIGAME_C1_SCORE, VAR_DIVING_MINIGAME_C2_SCORE
 	goto_if_gt PacifidlogTown_EventScript_ExitDivingMinigame_28
 PacifidlogTown_EventScript_ExitDivingMinigame_27:
-# 594 "data/maps/PacifidlogTown/scripts.pory"
+# 597 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_DIVING_MINIGAME_C2_SCORE, VAR_DIVING_MINIGAME_C1_SCORE
 	goto_if_gt PacifidlogTown_EventScript_ExitDivingMinigame_31
 PacifidlogTown_EventScript_ExitDivingMinigame_30:
-# 625 "data/maps/PacifidlogTown/scripts.pory"
+# 628 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_TEMP_PLAYER_WIN_SCUBA, PacifidlogTown_EventScript_ExitDivingMinigame_37
-# 625 "data/maps/PacifidlogTown/scripts.pory"
+# 628 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_DIVING_MINIGAME_SCORE, VAR_DIVING_MINIGAME_C1_SCORE
 	goto_if_ge PacifidlogTown_EventScript_ExitDivingMinigame_40
 PacifidlogTown_EventScript_ExitDivingMinigame_36:
-# 634 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_TEMP_PLAYER_WIN_SCUBA
-# 635 "data/maps/PacifidlogTown/scripts.pory"
-	delay 30
 # 637 "data/maps/PacifidlogTown/scripts.pory"
+	clearflag FLAG_TEMP_PLAYER_WIN_SCUBA
+# 638 "data/maps/PacifidlogTown/scripts.pory"
+	delay 30
+# 640 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_NEW_DIVING_GAME_HIGH_SCORE, PacifidlogTown_EventScript_ExitDivingMinigame_52
 PacifidlogTown_EventScript_ExitDivingMinigame_51:
-# 664 "data/maps/PacifidlogTown/scripts.pory"
+# 667 "data/maps/PacifidlogTown/scripts.pory"
 	setvar VAR_PACIFIDLOG_TOWN_STATE, 0
-# 665 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_NEW_DIVING_GAME_HIGH_SCORE
-# 666 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_DOING_DIVING_MINIGAME
 # 668 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_1
+	clearflag FLAG_NEW_DIVING_GAME_HIGH_SCORE
 # 669 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_2
-# 670 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_3
+	clearflag FLAG_DOING_DIVING_MINIGAME
 # 671 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_4
+	clearflag FLAG_SCUBA_COMPETITOR_1
+# 672 "data/maps/PacifidlogTown/scripts.pory"
+	clearflag FLAG_SCUBA_COMPETITOR_2
 # 673 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_18
+	clearflag FLAG_SCUBA_COMPETITOR_3
 # 674 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
-# 675 "data/maps/PacifidlogTown/scripts.pory"
-	delay 30
+	clearflag FLAG_SCUBA_COMPETITOR_4
+# 676 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_18
 # 677 "data/maps/PacifidlogTown/scripts.pory"
-	warpsilent MAP_PACIFIDLOG_TOWN, 24, 14
+	closemessage
 # 678 "data/maps/PacifidlogTown/scripts.pory"
+	delay 30
+# 680 "data/maps/PacifidlogTown/scripts.pory"
+	warpsilent MAP_PACIFIDLOG_TOWN, 24, 14
+# 681 "data/maps/PacifidlogTown/scripts.pory"
 	releaseall
 	end
 
 PacifidlogTown_EventScript_ExitDivingMinigame_2:
-# 483 "data/maps/PacifidlogTown/scripts.pory"
+# 486 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 10, PacifidlogTown_Movement_CompetitorsOutOfWater
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_1
 
 PacifidlogTown_EventScript_ExitDivingMinigame_5:
-# 487 "data/maps/PacifidlogTown/scripts.pory"
+# 490 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 6, PacifidlogTown_Movement_CompetitorsOutOfWater
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_4
 
 PacifidlogTown_EventScript_ExitDivingMinigame_8:
-# 491 "data/maps/PacifidlogTown/scripts.pory"
+# 494 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 7, PacifidlogTown_Movement_CompetitorsOutOfWater
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_7
 
 PacifidlogTown_EventScript_ExitDivingMinigame_11:
-# 495 "data/maps/PacifidlogTown/scripts.pory"
+# 498 "data/maps/PacifidlogTown/scripts.pory"
 	applymovement 11, PacifidlogTown_Movement_CompetitorsOutOfWater
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_10
 
 PacifidlogTown_EventScript_ExitDivingMinigame_14:
-# 506 "data/maps/PacifidlogTown/scripts.pory"
+# 509 "data/maps/PacifidlogTown/scripts.pory"
 	bufferstring STR_VAR_3, PacifidlogTown_EventScript_ExitDivingMinigame_Text_1
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_13
 
 PacifidlogTown_EventScript_ExitDivingMinigame_15:
-# 510 "data/maps/PacifidlogTown/scripts.pory"
+# 513 "data/maps/PacifidlogTown/scripts.pory"
 	bufferstring STR_VAR_3, PacifidlogTown_EventScript_ExitDivingMinigame_Text_2
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_13
 
 PacifidlogTown_EventScript_ExitDivingMinigame_19:
-# 526 "data/maps/PacifidlogTown/scripts.pory"
+# 529 "data/maps/PacifidlogTown/scripts.pory"
 	bufferstring STR_VAR_2, PacifidlogTown_EventScript_ExitDivingMinigame_Text_4
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_18
 
 PacifidlogTown_EventScript_ExitDivingMinigame_20:
-# 530 "data/maps/PacifidlogTown/scripts.pory"
+# 533 "data/maps/PacifidlogTown/scripts.pory"
 	bufferstring STR_VAR_2, PacifidlogTown_EventScript_ExitDivingMinigame_Text_5
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_18
 
 PacifidlogTown_EventScript_ExitDivingMinigame_24:
-# 550 "data/maps/PacifidlogTown/scripts.pory"
+# 553 "data/maps/PacifidlogTown/scripts.pory"
 	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_7
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_23
 
 PacifidlogTown_EventScript_ExitDivingMinigame_28:
-# 565 "data/maps/PacifidlogTown/scripts.pory"
+# 568 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_DIVING_MINIGAME_C1_SCORE, VAR_DIVING_MINIGAME_SCORE
 	goto_if_gt PacifidlogTown_EventScript_ExitDivingMinigame_33
-# 590 "data/maps/PacifidlogTown/scripts.pory"
+# 593 "data/maps/PacifidlogTown/scripts.pory"
 	setflag FLAG_TEMP_PLAYER_WIN_SCUBA
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_27
 
 PacifidlogTown_EventScript_ExitDivingMinigame_31:
-# 596 "data/maps/PacifidlogTown/scripts.pory"
+# 599 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_DIVING_MINIGAME_C2_SCORE, VAR_DIVING_MINIGAME_SCORE
 	goto_if_gt PacifidlogTown_EventScript_ExitDivingMinigame_43
-# 621 "data/maps/PacifidlogTown/scripts.pory"
+# 624 "data/maps/PacifidlogTown/scripts.pory"
 	setflag FLAG_TEMP_PLAYER_WIN_SCUBA
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_30
 
 PacifidlogTown_EventScript_ExitDivingMinigame_33:
-# 567 "data/maps/PacifidlogTown/scripts.pory"
+# 570 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_3, PacifidlogTown_EventScript_ExitDivingMinigame_47
-# 571 "data/maps/PacifidlogTown/scripts.pory"
+# 574 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_4, PacifidlogTown_EventScript_ExitDivingMinigame_48
 PacifidlogTown_EventScript_ExitDivingMinigame_46:
-# 576 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_9
-# 577 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
-# 578 "data/maps/PacifidlogTown/scripts.pory"
-	delay 30
 # 579 "data/maps/PacifidlogTown/scripts.pory"
-	applymovement 5, Common_Movement_ExclamationMark
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_9
 # 580 "data/maps/PacifidlogTown/scripts.pory"
-	waitmovement 0
+	closemessage
 # 581 "data/maps/PacifidlogTown/scripts.pory"
 	delay 30
 # 582 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_10
+	applymovement 5, Common_Movement_ExclamationMark
 # 583 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
+	waitmovement 0
 # 584 "data/maps/PacifidlogTown/scripts.pory"
-	randomelement ITEM_PRETTY_FEATHER, ITEM_PEARL, ITEM_SITRUS_BERRY, ITEM_LUM_BERRY, ITEM_SILK_SCARF, ITEM_CHARCOAL, ITEM_MYSTIC_WATER, ITEM_MIRACLE_SEED, ITEM_MAGNET
+	delay 30
 # 585 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_10
+# 586 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
+# 587 "data/maps/PacifidlogTown/scripts.pory"
+	randomelement ITEM_PRETTY_FEATHER, ITEM_PEARL, ITEM_SITRUS_BERRY, ITEM_LUM_BERRY, ITEM_SILK_SCARF, ITEM_CHARCOAL, ITEM_MYSTIC_WATER, ITEM_MIRACLE_SEED, ITEM_MAGNET
+# 588 "data/maps/PacifidlogTown/scripts.pory"
 	giveitem VAR_RESULT
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_27
 
 PacifidlogTown_EventScript_ExitDivingMinigame_37:
-# 627 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_12
-# 628 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
-# 629 "data/maps/PacifidlogTown/scripts.pory"
-	giveitem ITEM_BIG_PEARL
 # 630 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_13
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_12
 # 631 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
+# 632 "data/maps/PacifidlogTown/scripts.pory"
+	giveitem ITEM_BIG_PEARL
+# 633 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_13
+# 634 "data/maps/PacifidlogTown/scripts.pory"
 	closemessage
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_36
 
 PacifidlogTown_EventScript_ExitDivingMinigame_40:
-# 625 "data/maps/PacifidlogTown/scripts.pory"
+# 628 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_DIVING_MINIGAME_SCORE, VAR_DIVING_MINIGAME_C2_SCORE
 	goto_if_ge PacifidlogTown_EventScript_ExitDivingMinigame_37
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_36
 
 PacifidlogTown_EventScript_ExitDivingMinigame_43:
-# 598 "data/maps/PacifidlogTown/scripts.pory"
+# 601 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_1, PacifidlogTown_EventScript_ExitDivingMinigame_55
-# 602 "data/maps/PacifidlogTown/scripts.pory"
+# 605 "data/maps/PacifidlogTown/scripts.pory"
 	goto_if_set FLAG_SCUBA_COMPETITOR_2, PacifidlogTown_EventScript_ExitDivingMinigame_56
 PacifidlogTown_EventScript_ExitDivingMinigame_54:
-# 607 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_11
-# 608 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
-# 609 "data/maps/PacifidlogTown/scripts.pory"
-	delay 30
 # 610 "data/maps/PacifidlogTown/scripts.pory"
-	applymovement 5, Common_Movement_ExclamationMark
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_11
 # 611 "data/maps/PacifidlogTown/scripts.pory"
-	waitmovement 0
+	closemessage
 # 612 "data/maps/PacifidlogTown/scripts.pory"
 	delay 30
 # 613 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_10
+	applymovement 5, Common_Movement_ExclamationMark
 # 614 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
+	waitmovement 0
 # 615 "data/maps/PacifidlogTown/scripts.pory"
-	randomelement ITEM_PRETTY_FEATHER, ITEM_PEARL, ITEM_SITRUS_BERRY, ITEM_LUM_BERRY, ITEM_SILK_SCARF, ITEM_CHARCOAL, ITEM_MYSTIC_WATER, ITEM_MIRACLE_SEED, ITEM_MAGNET
+	delay 30
 # 616 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_10
+# 617 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
+# 618 "data/maps/PacifidlogTown/scripts.pory"
+	randomelement ITEM_PRETTY_FEATHER, ITEM_PEARL, ITEM_SITRUS_BERRY, ITEM_LUM_BERRY, ITEM_SILK_SCARF, ITEM_CHARCOAL, ITEM_MYSTIC_WATER, ITEM_MIRACLE_SEED, ITEM_MAGNET
+# 619 "data/maps/PacifidlogTown/scripts.pory"
 	giveitem VAR_RESULT
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_30
 
 PacifidlogTown_EventScript_ExitDivingMinigame_47:
-# 569 "data/maps/PacifidlogTown/scripts.pory"
+# 572 "data/maps/PacifidlogTown/scripts.pory"
 	bufferstring STR_VAR_3, PacifidlogTown_EventScript_ExitDivingMinigame_Text_1
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_46
 
 PacifidlogTown_EventScript_ExitDivingMinigame_48:
-# 573 "data/maps/PacifidlogTown/scripts.pory"
+# 576 "data/maps/PacifidlogTown/scripts.pory"
 	bufferstring STR_VAR_3, PacifidlogTown_EventScript_ExitDivingMinigame_Text_2
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_46
 
 PacifidlogTown_EventScript_ExitDivingMinigame_52:
-# 639 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_NEW_DIVING_GAME_HIGH_SCORE
-# 641 "data/maps/PacifidlogTown/scripts.pory"
-	checkitem ITEM_HM07
 # 642 "data/maps/PacifidlogTown/scripts.pory"
+	clearflag FLAG_NEW_DIVING_GAME_HIGH_SCORE
+# 644 "data/maps/PacifidlogTown/scripts.pory"
+	checkitem ITEM_HM07
+# 645 "data/maps/PacifidlogTown/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq PacifidlogTown_EventScript_ExitDivingMinigame_59
-# 652 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_14
-# 653 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
-# 654 "data/maps/PacifidlogTown/scripts.pory"
-	giveitem ITEM_HEART_SCALE, 5
 # 655 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_16
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_14
 # 656 "data/maps/PacifidlogTown/scripts.pory"
 	closemessage
 # 657 "data/maps/PacifidlogTown/scripts.pory"
-	randomelement ITEM_TM_DRAGON_CLAW, ITEM_TM_BULK_UP, ITEM_TM_ICE_BEAM, ITEM_TM_GIGA_DRAIN, ITEM_TM_THUNDERBOLT, ITEM_TM_EARTHQUAKE, ITEM_TM_RETURN, ITEM_TM_PSYCHIC, ITEM_TM_SHADOW_BALL, ITEM_TM_BRICK_BREAK, ITEM_TM_FLAMETHROWER, ITEM_TM57, ITEM_TM58, ITEM_EVIOLITE, ITEM_BIG_ROOT, ITEM_GRIP_CLAW, ITEM_BLACK_SLUDGE, ITEM_ROCKY_HELMET, ITEM_ZOOM_LENS, ITEM_EVIOLITE, ITEM_LEFTOVERS, ITEM_LEFTOVERS
+	giveitem ITEM_HEART_SCALE, 5
 # 658 "data/maps/PacifidlogTown/scripts.pory"
-	giveitem VAR_RESULT
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_16
 # 659 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_17
+	closemessage
 # 660 "data/maps/PacifidlogTown/scripts.pory"
+	randomelement ITEM_TM_DRAGON_CLAW, ITEM_TM_BULK_UP, ITEM_TM_ICE_BEAM, ITEM_TM_GIGA_DRAIN, ITEM_TM_THUNDERBOLT, ITEM_TM_EARTHQUAKE, ITEM_TM_RETURN, ITEM_TM_PSYCHIC, ITEM_TM_SHADOW_BALL, ITEM_TM_BRICK_BREAK, ITEM_TM_FLAMETHROWER, ITEM_TM57, ITEM_TM58, ITEM_EVIOLITE, ITEM_BIG_ROOT, ITEM_GRIP_CLAW, ITEM_BLACK_SLUDGE, ITEM_ROCKY_HELMET, ITEM_ZOOM_LENS, ITEM_EVIOLITE, ITEM_LEFTOVERS, ITEM_LEFTOVERS
+# 661 "data/maps/PacifidlogTown/scripts.pory"
+	giveitem VAR_RESULT
+# 662 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_17
+# 663 "data/maps/PacifidlogTown/scripts.pory"
 	closemessage
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_51
 
 PacifidlogTown_EventScript_ExitDivingMinigame_55:
-# 600 "data/maps/PacifidlogTown/scripts.pory"
+# 603 "data/maps/PacifidlogTown/scripts.pory"
 	bufferstring STR_VAR_2, PacifidlogTown_EventScript_ExitDivingMinigame_Text_4
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_54
 
 PacifidlogTown_EventScript_ExitDivingMinigame_56:
-# 604 "data/maps/PacifidlogTown/scripts.pory"
+# 607 "data/maps/PacifidlogTown/scripts.pory"
 	bufferstring STR_VAR_2, PacifidlogTown_EventScript_ExitDivingMinigame_Text_5
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_54
 
 PacifidlogTown_EventScript_ExitDivingMinigame_59:
-# 644 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_14
-# 645 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
-# 646 "data/maps/PacifidlogTown/scripts.pory"
-	giveitem ITEM_HM07
 # 647 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_15
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_14
 # 648 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
+# 649 "data/maps/PacifidlogTown/scripts.pory"
+	giveitem ITEM_HM07
+# 650 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigame_Text_15
+# 651 "data/maps/PacifidlogTown/scripts.pory"
 	closemessage
 	goto PacifidlogTown_EventScript_ExitDivingMinigame_51
 
 
 PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted::
-# 684 "data/maps/PacifidlogTown/scripts.pory"
-	lockall
-# 685 "data/maps/PacifidlogTown/scripts.pory"
-	turnplayer DIR_NORTH
-# 686 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted_Text_0
 # 687 "data/maps/PacifidlogTown/scripts.pory"
-	closemessage
+	lockall
 # 688 "data/maps/PacifidlogTown/scripts.pory"
-	special HealPlayerParty
+	turnplayer DIR_NORTH
 # 689 "data/maps/PacifidlogTown/scripts.pory"
-	msgbox PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted_Text_1
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted_Text_0
 # 690 "data/maps/PacifidlogTown/scripts.pory"
 	closemessage
+# 691 "data/maps/PacifidlogTown/scripts.pory"
+	special HealPlayerParty
 # 692 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_1
+	msgbox PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted_Text_1
 # 693 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_2
-# 694 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_3
+	closemessage
 # 695 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_SCUBA_COMPETITOR_4
+	clearflag FLAG_SCUBA_COMPETITOR_1
+# 696 "data/maps/PacifidlogTown/scripts.pory"
+	clearflag FLAG_SCUBA_COMPETITOR_2
 # 697 "data/maps/PacifidlogTown/scripts.pory"
-	setvar VAR_PACIFIDLOG_TOWN_STATE, 0
+	clearflag FLAG_SCUBA_COMPETITOR_3
 # 698 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_NEW_DIVING_GAME_HIGH_SCORE
-# 699 "data/maps/PacifidlogTown/scripts.pory"
-	clearflag FLAG_DOING_DIVING_MINIGAME
+	clearflag FLAG_SCUBA_COMPETITOR_4
 # 700 "data/maps/PacifidlogTown/scripts.pory"
-	turnplayer DIR_SOUTH
+	setvar VAR_PACIFIDLOG_TOWN_STATE, 0
 # 701 "data/maps/PacifidlogTown/scripts.pory"
+	clearflag FLAG_NEW_DIVING_GAME_HIGH_SCORE
+# 702 "data/maps/PacifidlogTown/scripts.pory"
+	clearflag FLAG_DOING_DIVING_MINIGAME
+# 703 "data/maps/PacifidlogTown/scripts.pory"
+	turnplayer DIR_SOUTH
+# 704 "data/maps/PacifidlogTown/scripts.pory"
 	releaseall
 	end
 
@@ -1235,17 +1241,17 @@ PacifidlogTown_EventScript_DivingMinigameNPC_Text_2:
 	.string "on funds.$"
 
 PacifidlogTown_EventScript_DivingMinigameNPC_Text_3:
-# 275 "data/maps/PacifidlogTown/scripts.pory"
+# 276 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Alrighty! Let's get a SCUBA GROUP\n"
 	.string "together!$"
 
 PacifidlogTown_EventScript_DivingMinigameNPC_Text_4:
-# 341 "data/maps/PacifidlogTown/scripts.pory"
+# 342 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Looks like we've got a good crew going!\n"
 	.string "Let's DIVE!$"
 
 PacifidlogTown_EventScript_DivingMinigameNPC_Text_5:
-# 375 "data/maps/PacifidlogTown/scripts.pory"
+# 378 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Ehehe, interested in the SCUBA SAFARI?\n"
 	.string "Welcome! This is the pride and joy of\l"
 	.string "PACIFIDLOG TOWN!\p"
@@ -1266,116 +1272,116 @@ PacifidlogTown_EventScript_DivingMinigameNPC_Text_5:
 	.string "POKéMON you catch counts for scoring.$"
 
 PacifidlogTown_EventScript_DivingMinigameNPC_Text_6:
-# 377 "data/maps/PacifidlogTown/scripts.pory"
+# 380 "data/maps/PacifidlogTown/scripts.pory"
 	.string "...Phew, that was a lot! Oh right, and you\n"
 	.string "don't even need the DIVE HM to play! We\l"
 	.string "provide you with everything you need.\l"
 	.string "Now, with that out of the way...$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_0:
-# 501 "data/maps/PacifidlogTown/scripts.pory"
+# 504 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Welcome back, everyone! Time for\n"
 	.string "scoring! Let's see your most recent\l"
 	.string "catch...$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_1:
-# 506 "data/maps/PacifidlogTown/scripts.pory"
+# 509 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Taonga$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_2:
-# 510 "data/maps/PacifidlogTown/scripts.pory"
+# 513 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Rua$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_3:
-# 519 "data/maps/PacifidlogTown/scripts.pory"
+# 522 "data/maps/PacifidlogTown/scripts.pory"
 	.string "{STR_VAR_3}'s catch, a\n"
 	.string "{STR_VAR_2}, scored {STR_VAR_1}!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_4:
-# 526 "data/maps/PacifidlogTown/scripts.pory"
+# 529 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Pora$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_5:
-# 530 "data/maps/PacifidlogTown/scripts.pory"
+# 533 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Taiko$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_6:
-# 539 "data/maps/PacifidlogTown/scripts.pory"
+# 542 "data/maps/PacifidlogTown/scripts.pory"
 	.string "{STR_VAR_2}'s catch, a\n"
 	.string "{STR_VAR_3}, scored {STR_VAR_1}!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_7:
-# 550 "data/maps/PacifidlogTown/scripts.pory"
+# 553 "data/maps/PacifidlogTown/scripts.pory"
 	.string "{PLAYER}'s catch, a {STR_VAR_2},\n"
 	.string "scored {STR_VAR_1}!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_8:
-# 554 "data/maps/PacifidlogTown/scripts.pory"
+# 557 "data/maps/PacifidlogTown/scripts.pory"
 	.string "{PLAYER}'s catch, a... huh? Looks like\n"
 	.string "an unsuccessful dive! Make sure to\l"
 	.string "keep track of your time down there!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_9:
-# 576 "data/maps/PacifidlogTown/scripts.pory"
+# 579 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Looks like {STR_VAR_3} won! They'll\n"
 	.string "be receiving the first place prize!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_10:
-# 582 "data/maps/PacifidlogTown/scripts.pory"
+# 585 "data/maps/PacifidlogTown/scripts.pory"
 	.string "...ah, don't fret! All participants in the\n"
 	.string "SCUBA SAFARI receive a little\l"
 	.string "something! Here!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_11:
-# 607 "data/maps/PacifidlogTown/scripts.pory"
+# 610 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Looks like {STR_VAR_2} won! They'll\n"
 	.string "be receiving the first place prize!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_12:
-# 627 "data/maps/PacifidlogTown/scripts.pory"
+# 630 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Looks like {PLAYER} won! They'll be\n"
 	.string "receiving the first place prize!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_13:
-# 630 "data/maps/PacifidlogTown/scripts.pory"
+# 633 "data/maps/PacifidlogTown/scripts.pory"
 	.string "All other participants will receive a\n"
 	.string "smaller prize.$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_14:
-# 644 "data/maps/PacifidlogTown/scripts.pory"
+# 647 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Looks like a new high score! Here's a\n"
 	.string "special prize!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_15:
-# 647 "data/maps/PacifidlogTown/scripts.pory"
+# 650 "data/maps/PacifidlogTown/scripts.pory"
 	.string "It says on the manual here you need all\n"
 	.string "8 GYM BADGES to use WATERFALL out of\l"
 	.string "battle. Only true masters of the seas\l"
 	.string "can have this HM!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_16:
-# 655 "data/maps/PacifidlogTown/scripts.pory"
+# 658 "data/maps/PacifidlogTown/scripts.pory"
 	.string "And here, take a nice rare item too!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_17:
-# 659 "data/maps/PacifidlogTown/scripts.pory"
+# 662 "data/maps/PacifidlogTown/scripts.pory"
 	.string "We find TMs, rare held items, and other\n"
 	.string "stuff floating in the sea from time to\l"
 	.string "time. It's important to clean up where\l"
 	.string "we can!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigame_Text_18:
-# 673 "data/maps/PacifidlogTown/scripts.pory"
+# 676 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Please, come play again soon!$"
 
 PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted_Text_0:
-# 686 "data/maps/PacifidlogTown/scripts.pory"
+# 689 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Woah there! Looks like the POKéMON\n"
 	.string "down there were a bit strong! I'll heal\l"
 	.string "you up.$"
 
 PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted_Text_1:
-# 689 "data/maps/PacifidlogTown/scripts.pory"
+# 692 "data/maps/PacifidlogTown/scripts.pory"
 	.string "Remember, the seas can be dangerous!\n"
 	.string "I'd get my hands on a POKéMON with the\l"
 	.string "RUN AWAY ability if I were you. They're\l"
