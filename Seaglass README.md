@@ -95,3 +95,6 @@ Please support everyone who made this possible!
     - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
     - New battle backgrounds by Princess-Phoenix and Carchagui on DeviantArt
     - Option to disable battle backgrounds by Mudskip (thank you!)
+- Other:
+    - Credit to Saffron City TV (on YouTube) for her Hoenn Review videos! They inspired a lot of changes, most strongly the diving minigame idea!
+    - ShantyTown and Mudskip for the Pinball minigame!
