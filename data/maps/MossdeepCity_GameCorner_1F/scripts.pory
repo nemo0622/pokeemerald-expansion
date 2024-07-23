@@ -10,7 +10,7 @@ MossdeepCity_GameCorner_1F_OnWarp:
 	.2byte 0
 
 MossdeepCity_GameCorner_1F_OnFrame:
-	map_script_2 VAR_CABLE_CLUB_STATE, USING_MINIGAME, CableClub_EventScript_ExitMinigameRoom
+@	map_script_2 VAR_CABLE_CLUB_STATE, 0, MossdeepGameCorner_OldMan_ShowPlayerAroundEvent
 	.2byte 0
 
 @ Script is redundant, the label in the goto also does lock and faceplayer
@@ -87,3 +87,357 @@ RS_MysteryEventsHouse_Text_BattleLost:
 	.string "But it was a good match.\n"
 	.string "I hope you can win next time.$"
 `
+
+// probably gonna be unused. lol
+script MossdeepGameCorner_OldMan_ShowPlayerAroundEvent
+{
+	if(!flag(FLAG_VISITED_MOSSDEEP_GAME_CORNER))
+	{
+		lock
+		applymovement(3, Common_Movement_ExclamationMark)
+		waitmovement(0)
+		applymovement(3, MossdeepGameCorner_Movement_ShowPlayerAround1)
+		waitmovement(0)
+		msgbox(format("Ohoho, a new face! Let me show you around the place!"))
+		closemessage
+		applymovement(3, MossdeepGameCorner_Movement_ShowPlayerAround2)
+		applymovement(OBJ_EVENT_ID_PLAYER, MossdeepGameCorner_Movement_ShowPlayerAround2)
+		applymovement(OBJ_EVENT_ID_CAMERA, MossdeepGameCorner_Movement_ShowPlayerAround2)
+		waitmovement(0)
+		delay(10)
+		applymovement(3, Common_Movement_FaceLeft)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+		waitmovement(0)
+		msgbox(format("These here are my buddies! We play PINBALL every day!"))
+		closemessage
+		applymovement(3, MossdeepGameCorner_Movement_ShowPlayerAround3)
+		applymovement(OBJ_EVENT_ID_PLAYER, MossdeepGameCorner_Movement_ShowPlayerAround3)
+		applymovement(OBJ_EVENT_ID_CAMERA, MossdeepGameCorner_Movement_ShowPlayerAround3)
+		waitmovement(0)
+		delay(10)
+		msgbox(format("Here are the PINBALL machines! Play these to get some fun prizes here!\p Each machine has a different PINBALL game, so make sure to try them all and find your favorite!"))
+		closemessage
+		applymovement(3, MossdeepGameCorner_Movement_ShowPlayerAround4)
+		applymovement(OBJ_EVENT_ID_PLAYER, MossdeepGameCorner_Movement_ShowPlayerAround4)
+		applymovement(OBJ_EVENT_ID_CAMERA, MossdeepGameCorner_Movement_ShowPlayerAround4)
+		waitmovement(0)
+		delay(10)
+		applymovement(3, Common_Movement_FaceDown)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+		waitmovement(0)
+		msgbox(format("And here, you can exchange your PINBALL POINTS for rewards! How fun is that?!\p Now have fun!"))
+		closemessage
+
+		setflag(FLAG_VISITED_MOSSDEEP_GAME_CORNER)
+		
+		applymovement(3, MossdeepGameCorner_Movement_ShowPlayerAround_ReturnToSeat)
+		waitmovement(0)
+		delay(10)
+
+		release
+		end
+	}
+	else
+	{
+		lock
+		release
+		end
+	}
+}
+
+movement MossdeepGameCorner_Movement_ShowPlayerAround1
+{
+	walk_down
+	walk_right * 3
+	jump_in_place_right * 2
+	walk_up
+	walk_right
+	walk_in_place_faster_down
+	step_end
+}
+
+movement MossdeepGameCorner_Movement_ShowPlayerAround2
+{
+	walk_up * 2
+	walk_left
+	step_end
+}
+
+movement MossdeepGameCorner_Movement_ShowPlayerAround3
+{
+	walk_right * 2
+	step_end
+}
+
+movement MossdeepGameCorner_Movement_ShowPlayerAround4
+{
+	walk_left
+	walk_up * 2
+	step_end
+}
+
+movement MossdeepGameCorner_Movement_ShowPlayerAround_ReturnToSeat
+{
+	walk_left * 5
+	walk_down * 4
+	walk_right
+	step_end
+}
+
+script MossdeepGameCorner_EventScript_OldMan
+{
+	lock
+	faceplayer
+	msgbox(format("Hey, champ! Make sure to check every PINBALL machine here. {COLOR GREEN}Each machine has a different PINBALL minigame{COLOR DARK_GRAY}!"))
+	closemessage
+	applymovement(3, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}
+
+script MossdeepGameCorner_EventScript_Man4
+{
+	lock
+	faceplayer
+	msgbox(format("I've been playing PINBALL here since I was a kid! I love collecting {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY} and earning rare rewards!"))
+	closemessage
+	if(!flag(FLAG_GOT_LUCKY_EGG_MOSSDEEP))
+	{
+		msgbox(format("Looking for some extra luck, kid? Here's a li'l something."))
+		closemessage
+		giveitem(ITEM_LUCKY_EGG)
+		setflag(FLAG_GOT_LUCKY_EGG_MOSSDEEP)
+	}
+	applymovement(4, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}
+
+script MossdeepGameCorner_EventScript_Woman3
+{
+	lock
+	faceplayer
+	msgbox(format("Hehehe, boys get so mad when they lose at PINBALL! It's just a game!"))
+	closemessage
+	applymovement(5, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}
+
+script MossdeepGameCorner_EventScript_Hiker
+{
+	lock
+	faceplayer
+	msgbox(format("Gah! The ball just fell right between the sticks! This DIGLETT PINBALL is tough!"))
+	closemessage
+	applymovement(6, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}
+
+script MossdeepGameCorner_EventScript_Woman4
+{
+	lock
+	faceplayer
+	msgbox(format("I really want to keep playing to earn some {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}! I want those rare items!\p Right now I'm trying the GENGAR PINBALL game. I think it's my favorite so far!"))
+	closemessage
+	applymovement(7, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}
+
+script MossdeepGameCorner_RareItemVendor
+{
+	lock
+	faceplayer
+	buffernumberstring(STR_VAR_1, VAR_PINBALL_POINTS)
+	msgbox(format("Yo! I've got a sweet deal goin' on. Come to me with a {COLOR GREEN}PINBALL POINT{COLOR DARK_GRAY}, and I'll give you a random rare item!\p Looks like you've got {STR_VAR_1} {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}. You in?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		msgbox(format("Want to go earn some more {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}? That's fine with me, have fun!"))
+		closemessage
+	}
+	else
+	{
+		if(var(VAR_PINBALL_POINTS) > 0)
+		{
+			msgbox(format("Alright, here ya go!"))
+			closemessage
+			subvar(VAR_PINBALL_POINTS, 1)
+			randomelement(ITEM_ABILITY_CAPSULE, ITEM_ABILITY_PATCH, ITEM_SACRED_ASH, ITEM_MAX_ELIXER, ITEM_RARE_CANDY, ITEM_WISHING_STAR, ITEM_NUGGET, ITEM_HEART_SCALE, ITEM_LINKING_CORD, ITEM_FIRIUM_Z, ITEM_WATERIUM_Z, ITEM_GRASSIUM_Z)
+			giveitem(VAR_RESULT)
+		}
+		else
+		{
+			msgbox(format("Hmm, looks like you need more {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}."))
+			closemessage
+		}
+	}
+	release
+	end
+}
+
+script MossdeepGameCorner_MoneyToPinballPointExchange
+{
+	lock
+	faceplayer
+	showmoneybox(0, 0)
+	msgbox(format("Struggling to win PINBALL, eh? I'll tell you what. For just ¥4000, I'll give you a {COLOR GREEN}PINBALL POINT{COLOR DARK_GRAY} right here! Interested?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		hidemoneybox
+		msgbox(format("Okay, good luck on the machines!"))
+		closemessage
+	}
+	else
+	{
+		checkmoney(4000)
+		if(var(VAR_RESULT) == FALSE)
+		{
+			msgbox(format("Looks like you're a bit short on funds."))
+			closemessage
+			hidemoneybox
+		}
+		else
+		{
+			playse(SE_SHOP)
+			removemoney(4000)
+			updatemoneybox
+			delay(60)
+			hidemoneybox
+			msgbox(format("Pleasure doing business! Here's what I owe you."))
+			closemessage
+			delay(30)
+			msgbox(format("{PLAYER} received 1 {COLOR GREEN}PINBALL POINT{COLOR DARK_GRAY}!"))
+			closemessage
+			addvar(VAR_PINBALL_POINTS, 1)
+		}
+	}
+	release
+	end
+}
+
+script MossdeepGameCorner_CheckPinballPoints
+{
+	lock
+	buffernumberstring(STR_VAR_1, VAR_PINBALL_POINTS)
+	msgbox(format("{PLAYER} has {STR_VAR_1} {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}."))
+	closemessage
+	release
+	end
+}
+
+// pinball scripts ---------------------------------------------------------------------------------
+
+script Minigame_TryMeowthPinballGame
+{
+	lock
+	msgbox(format("Play MEOWTH PINBALL?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlayMeowthPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 PINBALL POINT!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script Minigame_TryDiglettPinballGame
+{
+	lock
+	msgbox(format("Play DIGLETT PINBALL?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlayDiglettPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 PINBALL POINT!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script Minigame_TrySeelPinballGame
+{
+	lock
+	msgbox(format("Play SEEL PINBALL?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlaySeelPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 PINBALL POINT!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script Minigame_TryGengarPinballGame
+{
+	lock
+	msgbox(format("Play GENGAR PINBALL?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlayGengarPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 PINBALL POINT!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}

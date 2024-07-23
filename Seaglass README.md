@@ -43,8 +43,11 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 High Priority (Before Release 1.0):
 - DexNav!
 - ShantyTown's Pinball minigame, ported by mudskip
-    - Two of the games accessible in Mauville City Game Corner, award coins
-    - Other two accessible in Sootopolis City, awarding money
+    - Add PINBALL POINTS currency variable
+    - Add person in Mauville Game Corner (and pinball machines there too) exchanging PINBALL POINTS for random Alolan Pokemon
+    - Add mart people in Mossdeep Game Corner use them as payment for random rare Pokéballs and random rare Items
+    - Also add other people chilling in the mossdeep game corner, etc
+    - Use this time to modify Slots and Roulette minigame graphics if necessary, AND FIX CLOCK GRAPHIC
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
@@ -52,6 +55,7 @@ High Priority (Before Release 1.0):
     - Also make Contest stats influence battle performance (higher Sheen or something giving a boost??)
     - Add a "Clear PokeBlock Chef" guy to Lilycove Contest Hall that will reset Pokémon Sheen
         - GetMonData MON_DATA_SHEEN is a thing!
+- Just one or two more battle backgrounds (a unique one for underwater at least!)
 
 Later Additions (After Release 1.0):
 - Make changes to Aqua/Magma dialogue!

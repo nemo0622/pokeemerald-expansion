@@ -744,7 +744,8 @@ MauvilleCity_GameCorner_Text_EasyToLoseTrackOfTime:
 
 MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay:
 	.string "COINS are needed to play here\n"
-	.string "in the GAME CORNER.$"
+	.string "in the GAME CORNER.\p"
+	.string "The only exception is PINBALL!$"
 
 MauvilleCity_GameCorner_Text_RouletteOnlyLuck:
 	.string "This ROULETTE thing…\n"
@@ -778,3 +779,58 @@ MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 	.string "a COIN CASE.$"
 
 `
+
+script MauvilleCity_GameCorner_PinballEnthusiast
+{
+	lock
+	faceplayer
+	msgbox(format("PINBALL is so cool! There are {COLOR GREEN}four types{COLOR DARK_GRAY} of PINBALL. Each machine is a different game! Try them all!"))
+	closemessage
+	applymovement(13, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}
+
+script MauvilleCity_GameCorner_BugCatcher
+{
+	lock
+	faceplayer
+	msgbox(format("The PINBALL games here are fun for everyone!\N I really like earning {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY} and exchanging them with those people at the end of the machines. They have some really rare stuff!"))
+	closemessage
+	applymovement(14, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}
+
+script MossdeepCity_GameCorner_RareBallVendor
+{
+	lock
+	faceplayer
+	buffernumberstring(STR_VAR_1, VAR_PINBALL_POINTS)
+	msgbox(format("Hey, little TRAINER! I've got a great deal for you. Come to me with a {COLOR GREEN}PINBALL POINT{COLOR DARK_GRAY}, and I'll give you a few random, rare POKé BALLs!\p Looks like you've got {STR_VAR_1} {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}. You in?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		msgbox(format("Want to go earn some more {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}? That's fine with me, have fun!"))
+		closemessage
+	}
+	else
+	{
+		if(var(VAR_PINBALL_POINTS) > 0)
+		{
+			msgbox(format("Alright, here ya go!"))
+			closemessage
+			subvar(VAR_PINBALL_POINTS, 1)
+			randomelement(ITEM_QUICK_BALL, ITEM_TIMER_BALL, ITEM_NET_BALL, ITEM_DIVE_BALL, ITEM_REPEAT_BALL, ITEM_LUXURY_BALL, ITEM_LEVEL_BALL, ITEM_LURE_BALL, ITEM_MOON_BALL, ITEM_FRIEND_BALL, ITEM_LOVE_BALL, ITEM_FAST_BALL, ITEM_HEAVY_BALL, ITEM_DREAM_BALL, ITEM_CHERISH_BALL)
+			giveitem(VAR_RESULT, 3)
+		}
+		else
+		{
+			msgbox(format("Hmm, looks like you need more {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}."))
+			closemessage
+		}
+	}
+	release
+	end
+}

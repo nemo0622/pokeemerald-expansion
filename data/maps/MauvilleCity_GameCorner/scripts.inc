@@ -1491,66 +1491,187 @@ MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay:
 # 746 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "COINS are needed to play here\n"
 # 747 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "in the GAME CORNER.$"
+	.string "in the GAME CORNER.\p"
 # 748 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-
+	.string "The only exception is PINBALL!$"
 # 749 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-MauvilleCity_GameCorner_Text_RouletteOnlyLuck:
+
 # 750 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "This ROULETTE thing…\n"
+MauvilleCity_GameCorner_Text_RouletteOnlyLuck:
 # 751 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "It's rather demanding.\p"
+	.string "This ROULETTE thing…\n"
 # 752 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Win or lose, it's only by luck.$"
+	.string "It's rather demanding.\p"
 # 753 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-
+	.string "Win or lose, it's only by luck.$"
 # 754 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed:
+
 # 755 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Up to three COINS can be used to play\n"
+MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed:
 # 756 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "the SLOTS.$"
+	.string "Up to three COINS can be used to play\n"
 # 757 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-
+	.string "the SLOTS.$"
 # 758 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-MauvilleCity_GameCorner_Text_DifficultToStopOn7:
+
 # 759 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "It's very difficult to make it stop\n"
+MauvilleCity_GameCorner_Text_DifficultToStopOn7:
 # 760 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "right on “7.”\p"
+	.string "It's very difficult to make it stop\n"
 # 761 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "If it stops on “7” during the REEL TIME\n"
+	.string "right on “7.”\p"
 # 762 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "bonus game, you'll receive extra COINS.$"
+	.string "If it stops on “7” during the REEL TIME\n"
 # 763 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-
+	.string "bonus game, you'll receive extra COINS.$"
 # 764 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo:
-# 765 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Here's some information for you\n"
-# 766 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "about the SLOTS.\p"
-# 767 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "The more lightning bolts you stock,\n"
-# 768 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "the more REEL TIME chances you get.\p"
-# 769 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "In a game with the maximum five\n"
-# 770 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "REEL TIME chances…\p"
-# 771 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "It is possible to receive four regular\n"
-# 772 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "bonuses, then a big bonus.\p"
-# 773 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "That would total 660 COINS, but it's\n"
-# 774 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "very difficult to get.$"
-# 775 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 
+# 765 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo:
+# 766 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Here's some information for you\n"
+# 767 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "about the SLOTS.\p"
+# 768 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "The more lightning bolts you stock,\n"
+# 769 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "the more REEL TIME chances you get.\p"
+# 770 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "In a game with the maximum five\n"
+# 771 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "REEL TIME chances…\p"
+# 772 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "It is possible to receive four regular\n"
+# 773 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "bonuses, then a big bonus.\p"
+# 774 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "That would total 660 COINS, but it's\n"
+# 775 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "very difficult to get.$"
 # 776 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
+
 # 777 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "You can't play if you don't have\n"
+MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 # 778 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "You can't play if you don't have\n"
+# 779 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "a COIN CASE.$"
+
+MauvilleCity_GameCorner_PinballEnthusiast::
+# 785 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	lock
+# 786 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	faceplayer
+# 787 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_PinballEnthusiast_Text_0
+# 788 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+# 789 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	applymovement 13, Common_Movement_FaceOriginalDirection
+# 790 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	waitmovement 0
+# 791 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_GameCorner_BugCatcher::
+# 797 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	lock
+# 798 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	faceplayer
+# 799 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_BugCatcher_Text_0
+# 800 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+# 801 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	applymovement 14, Common_Movement_FaceOriginalDirection
+# 802 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	waitmovement 0
+# 803 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	release
+	end
+
+
+MossdeepCity_GameCorner_RareBallVendor::
+# 809 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	lock
+# 810 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	faceplayer
+# 811 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_PINBALL_POINTS
+# 812 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_0, MSGBOX_YESNO
+# 813 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_GameCorner_RareBallVendor_2
+# 820 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	compare VAR_PINBALL_POINTS, 0
+	goto_if_gt MossdeepCity_GameCorner_RareBallVendor_5
+# 830 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_3
+# 831 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+MossdeepCity_GameCorner_RareBallVendor_1:
+# 834 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	release
+	end
+
+MossdeepCity_GameCorner_RareBallVendor_2:
+# 815 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_1
+# 816 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+	goto MossdeepCity_GameCorner_RareBallVendor_1
+
+MossdeepCity_GameCorner_RareBallVendor_5:
+# 822 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_2
+# 823 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+# 824 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	subvar VAR_PINBALL_POINTS, 1
+# 825 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	randomelement ITEM_QUICK_BALL, ITEM_TIMER_BALL, ITEM_NET_BALL, ITEM_DIVE_BALL, ITEM_REPEAT_BALL, ITEM_LUXURY_BALL, ITEM_LEVEL_BALL, ITEM_LURE_BALL, ITEM_MOON_BALL, ITEM_FRIEND_BALL, ITEM_LOVE_BALL, ITEM_FAST_BALL, ITEM_HEAVY_BALL, ITEM_DREAM_BALL, ITEM_CHERISH_BALL
+# 826 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	giveitem VAR_RESULT, 3
+	goto MossdeepCity_GameCorner_RareBallVendor_1
+
+
+MauvilleCity_GameCorner_PinballEnthusiast_Text_0:
+# 787 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "PINBALL is so cool! There are {COLOR GREEN}four\n"
+	.string "types{COLOR DARK_GRAY} of PINBALL. Each machine is a\l"
+	.string "different game! Try them all!$"
+
+MauvilleCity_GameCorner_BugCatcher_Text_0:
+# 799 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "The PINBALL games here are fun for\n"
+	.string "everyone!\l"
+	.string "I really like earning {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}\l"
+	.string "and exchanging them with those people\l"
+	.string "at the end of the machines. They have\l"
+	.string "some really rare stuff!$"
+
+MossdeepCity_GameCorner_RareBallVendor_Text_0:
+# 812 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Hey, little TRAINER! I've got a great\n"
+	.string "deal for you. Come to me with a {COLOR GREEN}PINBALL\l"
+	.string "POINT{COLOR DARK_GRAY}, and I'll give you a few random,\l"
+	.string "rare POKé BALLs!\p"
+	.string "Looks like you've got {STR_VAR_1}\n"
+	.string "{COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}. You in?$"
+
+MossdeepCity_GameCorner_RareBallVendor_Text_1:
+# 815 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Want to go earn some more {COLOR GREEN}PINBALL\n"
+	.string "POINTS{COLOR DARK_GRAY}? That's fine with me, have fun!$"
+
+MossdeepCity_GameCorner_RareBallVendor_Text_2:
+# 822 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Alright, here ya go!$"
+
+MossdeepCity_GameCorner_RareBallVendor_Text_3:
+# 830 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Hmm, looks like you need more {COLOR GREEN}PINBALL\n"
+	.string "POINTS{COLOR DARK_GRAY}.$"

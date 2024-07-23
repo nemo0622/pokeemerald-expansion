@@ -994,7 +994,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Sacred Ash"),
         .pluralName = _("Sacred Ashes"),
-        .price = (I_PRICE >= GEN_7) ? 50000 : 200,
+        .price = 20000,
         .description = COMPOUND_STRING(
             "Fully revives and\n"
             "restores all\n"
