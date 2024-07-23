@@ -71,18 +71,18 @@ static const u16 sPidgeotFormSpeciesIdTable[] = {
 #if P_FAMILY_RATTATA
 static const u16 sRattataFormSpeciesIdTable[] = {
     SPECIES_RATTATA,
-#if P_ALOLAN_FORMS
-    SPECIES_RATTATA_ALOLAN,
-#endif
+// #if P_ALOLAN_FORMS
+//     SPECIES_RATTATA_ALOLAN,
+// #endif
     FORM_SPECIES_END,
 };
 
 static const u16 sRaticateFormSpeciesIdTable[] = {
     SPECIES_RATICATE,
-#if P_ALOLAN_FORMS
-    SPECIES_RATICATE_ALOLAN,
-    SPECIES_RATICATE_ALOLAN_TOTEM,
-#endif
+// #if P_ALOLAN_FORMS
+//     SPECIES_RATICATE_ALOLAN,
+//     SPECIES_RATICATE_ALOLAN_TOTEM,
+// #endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_RATTATA
@@ -251,25 +251,25 @@ static const u16 sMachampFormSpeciesIdTable[] = {
 #if P_FAMILY_GEODUDE
 static const u16 sGeodudeFormSpeciesIdTable[] = {
     SPECIES_GEODUDE,
-#if P_ALOLAN_FORMS
-    SPECIES_GEODUDE_ALOLAN,
-#endif
+// #if P_ALOLAN_FORMS
+//     SPECIES_GEODUDE_ALOLAN,
+// #endif
     FORM_SPECIES_END,
 };
 
 static const u16 sGravelerFormSpeciesIdTable[] = {
     SPECIES_GRAVELER,
-#if P_ALOLAN_FORMS
-    SPECIES_GRAVELER_ALOLAN,
-#endif
+// #if P_ALOLAN_FORMS
+//     SPECIES_GRAVELER_ALOLAN,
+// #endif
     FORM_SPECIES_END,
 };
 
 static const u16 sGolemFormSpeciesIdTable[] = {
     SPECIES_GOLEM,
-#if P_ALOLAN_FORMS
-    SPECIES_GOLEM_ALOLAN,
-#endif
+// #if P_ALOLAN_FORMS
+//     SPECIES_GOLEM_ALOLAN,
+// #endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_GEODUDE
@@ -419,7 +419,7 @@ static const u16 sMarowakFormSpeciesIdTable[] = {
     SPECIES_MAROWAK,
 #if P_ALOLAN_FORMS
     SPECIES_MAROWAK_ALOLAN,
-    SPECIES_MAROWAK_ALOLAN_TOTEM,
+    // SPECIES_MAROWAK_ALOLAN_TOTEM,
 #endif
     FORM_SPECIES_END,
 };

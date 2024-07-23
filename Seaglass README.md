@@ -28,6 +28,9 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - Battle Gimmick: Z-Power Ring and Z-Crystals can be obtained from the DEVON Corporation after delivering Steven's letter
     - Completely optional and out of the way - if you don't like Z-Moves, don't even bother getting the Z-Ring!
     - EXP. Share is given by Scott in Petalburg, just after Wally's catching tutorial
+- More minigames to break up Pokémon battles!
+    - SCUBA SAFARI, Pacifidlog Town: A combination of the Safari Zone and Bug Catching Contest from Johto, with 200 steps or 5 encounters in a dedicated underwater area to find a high-scoring Pokémon. Various helpful rewards are provided, including the HM Waterfall. Pacifidlog Town is also accessible from Slateport through an NPC with a Kirlia by the Pokémon Center after beating Team Aqua in the Museum.
+    - PINBALL, Mauville Game Corner and Mossdeep Game Corner: Four unique pinball games (SEEL, GENGAR, MEOWTH, and DIGLETT) are in both Game Corners. Beating the games award PINBALL POINTs, which can be used to get rare Pokéballs, items, and even some Alolan forms!
 - Various QoL Changes, including:
     - Type Effectiveness shown in battle
     - HM System revamp: if HM is in bag and the right badge is owned, Pokémon that can learn the HMs can naturally use them
@@ -42,12 +45,8 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 High Priority (Before Release 1.0):
 - DexNav!
-- ShantyTown's Pinball minigame, ported by mudskip
-    - Add PINBALL POINTS currency variable
-    - Add person in Mauville Game Corner (and pinball machines there too) exchanging PINBALL POINTS for random Alolan Pokemon
-    - Add mart people in Mossdeep Game Corner use them as payment for random rare Pokéballs and random rare Items
-    - Also add other people chilling in the mossdeep game corner, etc
-    - Use this time to modify Slots and Roulette minigame graphics if necessary, AND FIX CLOCK GRAPHIC
+- Implement Alolan Forms (from Mauville Game Corner) (use nuukiie's sprites!)
+    - BUFF STATS, rework movesets, etc!
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
@@ -71,6 +70,7 @@ Later Additions (After Release 1.0):
 - Battle Frontier largely uses vanilla Emerald tiles, so it doesn't really match the rest of the game
 - Some tiles may misalign - a few cave tiles and Fallarbor trees, but nothing major
 - Many special NPCs (Elite Four members, Wallace, etc.) are kind of just slightly modified NPC sprites for now, need fully custom sprites in the future
+- Pinball physics are far from perfect, but tbh I think that adds to the charm lol
 
 ## CREDITS
 
@@ -87,6 +87,7 @@ Please support everyone who made this possible!
     - Spiky-ear Pichu sprite based on Pichu devamp by Matdemo159 on DeviantArt
     - A few modified Gen 1-2 Pokémon sprites (Golduck, Aipom, Politoed) by Substitube
     - Hydrapple line sprites and various other gen 2 style sprites (Charizard, Dudunsparce, Porygon line) by SageDeoxys on Twitter
+    - Alolan Sandshrew/Sandslash and Alolan Vulpix/Ninetales sprites by wittycrow on DeviantArt
 - Overworld Sprites:
     - New player sprites by [Solo993 and GOLDHIBIKI](https://www.deviantart.com/solo993/art/Pokemon-Special-HgSs-saga-gbc-sprites-454150898) on DeviantArt
     - Some trainer sprites by leeseongjae620 on DeviantArt

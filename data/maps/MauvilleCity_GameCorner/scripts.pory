@@ -834,3 +834,37 @@ script MossdeepCity_GameCorner_RareBallVendor
 	release
 	end
 }
+
+script MossdeepCity_GameCorner_RarePokemonVendor
+{
+	lock
+	faceplayer
+	buffernumberstring(STR_VAR_1, VAR_PINBALL_POINTS)
+	msgbox(format("Hey there. I'm a SAILOR between HOENN and ALOLA, so I sometimes come back with some special ALOLAN POKéMON eggs.\p Come to me with 2 {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}, and I'll give you one of my ALOLAN eggs.\p Looks like you've got {STR_VAR_1} {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}. You in?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		msgbox(format("Want to go earn some more {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}? That's fine with me, have fun!"))
+		closemessage
+	}
+	else
+	{
+		if(var(VAR_PINBALL_POINTS) >= 2)
+		{
+			msgbox(format("Alright, here ya go!"))
+			closemessage
+			subvar(VAR_PINBALL_POINTS, 2)
+			
+			// TODO - use randomelement here to pick a random Alolan form to give. this will also mean implementing alolan forms
+			// use nuukiie's alolan form sprites!
+			randomelement(SPECIES_EXEGGUTOR_ALOLAN, SPECIES_GRIMER_ALOLAN, SPECIES_MAROWAK_ALOLAN, SPECIES_MEOWTH_ALOLAN, SPECIES_RAICHU_ALOLAN, SPECIES_VULPIX_ALOLAN, SPECIES_SANDSHREW_ALOLAN, SPECIES_DIGLETT_ALOLAN)
+			giveegg(VAR_RESULT)
+		}
+		else
+		{
+			msgbox(format("Hmm, looks like you need more {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}."))
+			closemessage
+		}
+	}
+	release
+	end
+}

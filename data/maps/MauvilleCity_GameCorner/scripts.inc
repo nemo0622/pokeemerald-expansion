@@ -1638,6 +1638,51 @@ MossdeepCity_GameCorner_RareBallVendor_5:
 	goto MossdeepCity_GameCorner_RareBallVendor_1
 
 
+MossdeepCity_GameCorner_RarePokemonVendor::
+# 840 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	lock
+# 841 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	faceplayer
+# 842 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_PINBALL_POINTS
+# 843 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RarePokemonVendor_Text_0, MSGBOX_YESNO
+# 844 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_GameCorner_RarePokemonVendor_2
+# 851 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	compare VAR_PINBALL_POINTS, 2
+	goto_if_ge MossdeepCity_GameCorner_RarePokemonVendor_5
+# 864 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_3
+# 865 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+MossdeepCity_GameCorner_RarePokemonVendor_1:
+# 868 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	release
+	end
+
+MossdeepCity_GameCorner_RarePokemonVendor_2:
+# 846 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_1
+# 847 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+	goto MossdeepCity_GameCorner_RarePokemonVendor_1
+
+MossdeepCity_GameCorner_RarePokemonVendor_5:
+# 853 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_2
+# 854 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+# 855 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	subvar VAR_PINBALL_POINTS, 2
+# 859 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	randomelement SPECIES_EXEGGUTOR_ALOLAN, SPECIES_GRIMER_ALOLAN, SPECIES_MAROWAK_ALOLAN, SPECIES_MEOWTH_ALOLAN, SPECIES_RAICHU_ALOLAN, SPECIES_VULPIX_ALOLAN, SPECIES_SANDSHREW_ALOLAN, SPECIES_DIGLETT_ALOLAN
+# 860 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	giveegg VAR_RESULT
+	goto MossdeepCity_GameCorner_RarePokemonVendor_1
+
+
 MauvilleCity_GameCorner_PinballEnthusiast_Text_0:
 # 787 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "PINBALL is so cool! There are {COLOR GREEN}four\n"
@@ -1675,3 +1720,13 @@ MossdeepCity_GameCorner_RareBallVendor_Text_3:
 # 830 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Hmm, looks like you need more {COLOR GREEN}PINBALL\n"
 	.string "POINTS{COLOR DARK_GRAY}.$"
+
+MossdeepCity_GameCorner_RarePokemonVendor_Text_0:
+# 843 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Hey there. I'm a SAILOR between HOENN\n"
+	.string "and ALOLA, so I sometimes come back\l"
+	.string "with some special ALOLAN POKéMON eggs.\p"
+	.string "Come to me with 2 {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}, and\n"
+	.string "I'll give you one of my ALOLAN eggs.\p"
+	.string "Looks like you've got {STR_VAR_1}\n"
+	.string "{COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}. You in?$"

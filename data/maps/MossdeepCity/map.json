@@ -330,8 +330,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 35,
-      "y": 24,
+      "x": 29,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_GAME_CORNER_1F",
       "dest_warp_id": "0"
@@ -448,22 +448,6 @@
     },
     {
       "type": "sign",
-      "x": 29,
-      "y": 16,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "Common_EventScript_ShowPokemonCenterSign"
-    },
-    {
-      "type": "sign",
-      "x": 38,
-      "y": 18,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "Common_EventScript_ShowPokemartSign"
-    },
-    {
-      "type": "sign",
       "x": 62,
       "y": 23,
       "elevation": 0,
@@ -472,27 +456,19 @@
     },
     {
       "type": "sign",
-      "x": 30,
-      "y": 16,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "Common_EventScript_ShowPokemonCenterSign"
-    },
-    {
-      "type": "sign",
-      "x": 39,
-      "y": 18,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "Common_EventScript_ShowPokemartSign"
-    },
-    {
-      "type": "sign",
       "x": 57,
       "y": 21,
       "elevation": 7,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MossdeepCity_EventScript_WhiteRockEvent"
+    },
+    {
+      "type": "sign",
+      "x": 27,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MossdeepCity_EventScript_GameCornerSign"
     }
   ]
 }

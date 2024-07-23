@@ -1165,6 +1165,18 @@ MossdeepCity_EventScript_LegendarySailor_26:
 	end
 
 
+MossdeepCity_EventScript_GameCornerSign::
+# 638 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 639 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_GameCornerSign_Text_0
+# 640 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 641 "data/maps/MossdeepCity/scripts.pory"
+	release
+	end
+
+
 MossdeepCity_EventScript_WhiteRockEvent_Text_0:
 # 444 "data/maps/MossdeepCity/scripts.pory"
 	.string "It's a white rock.$"
@@ -1357,3 +1369,8 @@ MossdeepCity_EventScript_LegendarySailor_Text_21:
 	.string "Oh, an' if ye're wantin' to pass the time\l"
 	.string "before tryin' again, why not challenge\l"
 	.string "the ELITE FOUR?$"
+
+MossdeepCity_EventScript_GameCornerSign_Text_0:
+# 639 "data/maps/MossdeepCity/scripts.pory"
+	.string "MOSSDEEP CITY GAME CORNER\n"
+	.string "Come play PINBALL!$"
