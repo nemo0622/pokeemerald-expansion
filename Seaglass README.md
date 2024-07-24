@@ -45,8 +45,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 High Priority (Before Release 1.0):
 - DexNav!
-- Implement Alolan Forms (from Mauville Game Corner) (use nuukiie's sprites!)
-    - BUFF STATS, rework movesets, etc!
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
