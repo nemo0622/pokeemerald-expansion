@@ -4490,6 +4490,26 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/DivingMinigame_W2/border.bin",
       "blockdata_filepath": "data/layouts/DivingMinigame_W2/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERDANTURF_TOWN_CONTEST_HALL",
+      "name": "VerdanturfTown_ContestHall_Layout",
+      "width": 31,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Contest",
+      "border_filepath": "data/layouts/VerdanturfTown_ContestHall/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_ContestHall/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERDANTURF_TOWN_CONTEST_LOBBY",
+      "name": "VerdanturfTown_ContestLobby_Layout",
+      "width": 31,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Contest",
+      "border_filepath": "data/layouts/VerdanturfTown_ContestLobby/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_ContestLobby/map.bin"
     }
   ]
 }

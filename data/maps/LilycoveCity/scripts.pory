@@ -399,9 +399,7 @@ LilycoveCity_EventScript_RivalFlyAway::
 LilycoveCity_EventScript_SchoolKidM::
 	lock
 	faceplayer
-	msgbox LilycoveCity_Text_DoYouKnowAboutBerryBlender, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, YES, LilycoveCity_EventScript_KnowAboutBerryBlender
-	call_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DontKnowAboutBerryBlender
+	msgbox LilycoveCity_Text_DoYouKnowAboutBerryBlender, MSGBOX_DEFAULT
 	release
 	end
 
@@ -582,11 +580,11 @@ LilycoveCity_Text_GetLostMessingUpTraining:
 	.string "so can you, like, get lost?$"
 
 LilycoveCity_Text_ContestHallInTown:
-	.string "There's a POKéMON CONTEST HALL\n"
+	.string "There's a POKéMON BATTLE TENT\n"
 	.string "right in this here town. \p"
-	.string "That means well-raised POKéMON will\n"
-	.string "come from all over the country.\p"
-	.string "My heart swells with excitement!$"
+	.string "It's so large, it's really more\n"
+	.string "of a stadium. CONTESTS have moved\p"
+	.string "to VERDANTURF TOWN!$"
 
 LilycoveCity_Text_StrangeCaveInCove:
 	.string "Have you seen that strange cave in\n"
@@ -594,7 +592,7 @@ LilycoveCity_Text_StrangeCaveInCove:
 
 LilycoveCity_Text_GoingToMoveDeleterForHMs:
 	.string "I'm going to teach my POKéMON some new\n"
-	.string "moves for entering a CONTEST.\p"
+	.string "moves for entering the BATTLE TENT.\p"
 	.string "So, I'm going to see the MOVE DELETER\n"
 	.string "and make it forget HM moves.$"
 
@@ -673,8 +671,8 @@ LilycoveCity_Text_CitySign:
 	.string "sea begins.”$"
 
 LilycoveCity_Text_ContestHallSign:
-	.string "POKéMON CONTEST HALL\n"
-	.string "“The gathering place for TRAINERS!”$"
+	.string "LILYCOVE BATTLE TENT\n"
+	.string "“The biggest in HOENN!”$"
 
 LilycoveCity_Text_MotelSign:
 	.string "COVE LILY MOTEL\p"
@@ -720,8 +718,10 @@ LilycoveCity_Text_MoveDeletersHouseSign:
 	.string "“Unwanted POKéMON moves deleted.”$"
 
 LilycoveCity_Text_DoYouKnowAboutBerryBlender:
-	.string "Do you know about the machine\n"
-	.string "BERRY BLENDER?$"
+	.string "Did you know? POKéMON CONTESTS used\n"
+	.string "to be held here in LILYCOVE CITY.\p"
+	.string "Now they're popular in VERDANTURF TOWN,\n"
+	.string "and a huge BATTLE TENT opened here!$"
 
 LilycoveCity_Text_FasterSpinBetterPokeblocks:
 	.string "People have to work together to get it\n"

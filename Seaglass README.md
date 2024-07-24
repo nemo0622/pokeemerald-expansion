@@ -31,6 +31,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - More minigames to break up Pokémon battles!
     - SCUBA SAFARI, Pacifidlog Town: A combination of the Safari Zone and Bug Catching Contest from Johto, with 200 steps or 5 encounters in a dedicated underwater area to find a high-scoring Pokémon. Various helpful rewards are provided, including the HM Waterfall. Pacifidlog Town is also accessible from Slateport through an NPC with a Kirlia by the Pokémon Center after beating Team Aqua in the Museum.
     - PINBALL, Mauville Game Corner and Mossdeep Game Corner: Four unique pinball games (SEEL, GENGAR, MEOWTH, and DIGLETT) are in both Game Corners. Beating the games award PINBALL POINTs, which can be used to get rare Pokéballs, items, and even some Alolan forms!
+    - The Contest Hall has been moved to Verdanturf Town, and the Verdanturf Battle Tent has been moved to Lilycove! This will let the player enter contests much earlier, hopefully engaging with them much more
 - Various QoL Changes, including:
     - Type Effectiveness shown in battle
     - HM System revamp: if HM is in bag and the right badge is owned, Pokémon that can learn the HMs can naturally use them
@@ -48,11 +49,6 @@ High Priority (Before Release 1.0):
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
-- Bring back Contest Halls, replacing battle tents!
-    - Also make Contest stats influence battle performance (higher Sheen or something giving a boost??)
-    - Add a "Clear PokeBlock Chef" guy to Lilycove Contest Hall that will reset Pokémon Sheen
-        - GetMonData MON_DATA_SHEEN is a thing!
-- Just one or two more battle backgrounds (a unique one for underwater at least!)
 
 Later Additions (After Release 1.0):
 - Make changes to Aqua/Magma dialogue!
@@ -69,6 +65,7 @@ Later Additions (After Release 1.0):
 - Some tiles may misalign - a few cave tiles and Fallarbor trees, but nothing major
 - Many special NPCs (Elite Four members, Wallace, etc.) are kind of just slightly modified NPC sprites for now, need fully custom sprites in the future
 - Pinball physics are far from perfect, but tbh I think that adds to the charm lol
+- When feeding a PokéBlock to a Pokémon, the background is broken. Idk why really
 
 ## CREDITS
 

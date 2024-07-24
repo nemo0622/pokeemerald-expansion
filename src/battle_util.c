@@ -16,6 +16,7 @@
 #include "battle_scripts.h"
 #include "random.h"
 #include "text.h"
+#include "tv.h"
 #include "safari_zone.h"
 #include "sound.h"
 #include "sprite.h"
@@ -9648,6 +9649,13 @@ static inline uq4_12_t GetTargetDamageModifier(u32 move, u32 battlerAtk, u32 bat
     return UQ_4_12(1.0);
 }
 
+static inline uq4_12_t GetContestRibbonModifier(u8 ribbonCount)
+{
+    if (ribbonCount >= 1)
+        return UQ_4_12(1.1);
+    return UQ_4_12(1.0);
+}
+
 static inline uq4_12_t GetParentalBondModifier(u32 battlerAtk)
 {
     if (gSpecialStatuses[battlerAtk].parentalBondState != PARENTAL_BOND_2ND_HIT)
@@ -9933,7 +9941,7 @@ static inline uq4_12_t GetOtherModifiers(u32 move, u32 moveType, u32 battlerAtk,
 
 static inline s32 DoMoveDamageCalcVars(u32 move, u32 battlerAtk, u32 battlerDef, u32 moveType, s32 fixedBasePower,
                             bool32 isCrit, bool32 randomFactor, bool32 updateFlags, uq4_12_t typeEffectivenessModifier, u32 weather,
-                            u32 holdEffectAtk, u32 holdEffectDef, u32 abilityAtk, u32 abilityDef)
+                            u32 holdEffectAtk, u32 holdEffectDef, u32 abilityAtk, u32 abilityDef, u8 ribbonCount)
 {
     s32 dmg;
     u32 userFinalAttack;
@@ -9965,6 +9973,8 @@ static inline s32 DoMoveDamageCalcVars(u32 move, u32 battlerAtk, u32 battlerDef,
     DAMAGE_APPLY_MODIFIER(GetBurnOrFrostBiteModifier(battlerAtk, move, abilityAtk));
     DAMAGE_APPLY_MODIFIER(GetZMaxMoveAgainstProtectionModifier(battlerDef, move));
     DAMAGE_APPLY_MODIFIER(GetOtherModifiers(move, moveType, battlerAtk, battlerDef, isCrit, typeEffectivenessModifier, updateFlags, abilityAtk, abilityDef, holdEffectAtk, holdEffectDef));
+    
+    DAMAGE_APPLY_MODIFIER(GetContestRibbonModifier(ribbonCount));
 
     if (dmg == 0)
         dmg = 1;
@@ -9972,7 +9982,7 @@ static inline s32 DoMoveDamageCalcVars(u32 move, u32 battlerAtk, u32 battlerDef,
 }
 
 static inline s32 DoMoveDamageCalc(u32 move, u32 battlerAtk, u32 battlerDef, u32 moveType, s32 fixedBasePower,
-                            bool32 isCrit, bool32 randomFactor, bool32 updateFlags, uq4_12_t typeEffectivenessModifier, u32 weather)
+                            bool32 isCrit, bool32 randomFactor, bool32 updateFlags, uq4_12_t typeEffectivenessModifier, u32 weather, u8 ribbonCount)
 {
     u32 holdEffectAtk, holdEffectDef, abilityAtk, abilityDef;
 
@@ -9985,7 +9995,7 @@ static inline s32 DoMoveDamageCalc(u32 move, u32 battlerAtk, u32 battlerDef, u32
     abilityDef = GetBattlerAbility(battlerDef);
 
     return DoMoveDamageCalcVars(move, battlerAtk, battlerDef, moveType, fixedBasePower, isCrit, randomFactor,
-                            updateFlags, typeEffectivenessModifier, weather, holdEffectAtk, holdEffectDef, abilityAtk, abilityDef);
+                            updateFlags, typeEffectivenessModifier, weather, holdEffectAtk, holdEffectDef, abilityAtk, abilityDef, ribbonCount);
 }
 
 static inline s32 DoFutureSightAttackDamageCalcVars(u32 move, u32 battlerAtk, u32 battlerDef, u32 moveType,
@@ -10062,6 +10072,9 @@ s32 CalculateMoveDamage(u32 move, u32 battlerAtk, u32 battlerDef, u32 moveType, 
 {
     struct Pokemon *party = GetSideParty(GetBattlerSide(gBattlerAttacker));
 
+    u8 ribbonCount;
+    ribbonCount = GetRibbonCount(GetSideParty(GetBattlerSide(gBattlerAttacker)));
+
     if (gMovesInfo[move].effect == EFFECT_FUTURE_SIGHT
      && (&party[gWishFutureKnock.futureSightPartyIndex[battlerDef]] != &party[gBattlerPartyIndexes[battlerAtk]]) )
     {
@@ -10073,7 +10086,7 @@ s32 CalculateMoveDamage(u32 move, u32 battlerAtk, u32 battlerDef, u32 moveType, 
     {
         return DoMoveDamageCalc(move, battlerAtk, battlerDef, moveType, fixedBasePower, isCrit, randomFactor,
                             updateFlags, CalcTypeEffectivenessMultiplier(move, moveType, battlerAtk, battlerDef, GetBattlerAbility(battlerDef), updateFlags),
-                            GetWeather());
+                            GetWeather(), ribbonCount);
     }
 }
 
@@ -10082,7 +10095,7 @@ s32 CalculateMoveDamageVars(u32 move, u32 battlerAtk, u32 battlerDef, u32 moveTy
                                           u32 weather, bool32 isCrit, u32 holdEffectAtk, u32 holdEffectDef, u32 abilityAtk, u32 abilityDef)
 {
     return DoMoveDamageCalcVars(move, battlerAtk, battlerDef, moveType, fixedBasePower, isCrit, FALSE, FALSE,
-                                typeEffectivenessModifier, weather, holdEffectAtk, holdEffectDef, abilityAtk, abilityDef);
+                                typeEffectivenessModifier, weather, holdEffectAtk, holdEffectDef, abilityAtk, abilityDef, 0);
 }
 
 static inline void MulByTypeEffectiveness(uq4_12_t *modifier, u32 move, u32 moveType, u32 battlerDef, u32 defType, u32 battlerAtk, bool32 recordAbilities)

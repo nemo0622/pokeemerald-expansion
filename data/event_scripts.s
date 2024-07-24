@@ -1089,3 +1089,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DivingMinigame_W1/scripts.inc"
 
 	.include "data/maps/DivingMinigame_W2/scripts.inc"
+
+	.include "data/maps/VerdanturfTown_ContestHall/scripts.inc"
+
+	.include "data/maps/VerdanturfTown_ContestLobby/scripts.inc"

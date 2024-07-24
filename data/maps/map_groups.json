@@ -100,7 +100,8 @@
     "DivingMinigame_S1",
     "DivingMinigame_S2",
     "DivingMinigame_W1",
-    "DivingMinigame_W2"
+    "DivingMinigame_W2",
+    "VerdanturfTown_ContestHall"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -152,7 +153,8 @@
     "VerdanturfTown_PokemonCenter_2F",
     "VerdanturfTown_WandasHouse",
     "VerdanturfTown_FriendshipRatersHouse",
-    "VerdanturfTown_House"
+    "VerdanturfTown_House",
+    "VerdanturfTown_ContestLobby"
   ],
   "gMapGroup_IndoorPacifidlog": [
     "PacifidlogTown_PokemonCenter_1F",
