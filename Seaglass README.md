@@ -45,13 +45,13 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 ## FUTURE PLANS
 
 High Priority (Before Release 1.0):
-- DexNav!
-    - Remove Exit option from start menu to make everything fit (players can just press B or START to exit the menu anyway)
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
 - Pokémon animate after KO
 - Mystery Gift Codes feature branch (rare candy cheat? MAKE A POLL)
+- Make Dewford more interesting - sand with wild Pokémon, maybe new area connected?
+- Remove references to Cycling Road on Route 110
 
 Later Additions (After Release 1.0):
 - Make changes to Aqua/Magma dialogue!
@@ -93,6 +93,8 @@ Please support everyone who made this possible!
     - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
     - New battle backgrounds by Princess-Phoenix, Carchagui, and Aveontrainer on DeviantArt
     - Option to disable battle backgrounds by Mudskip (thank you!)
-- Other:
+- Feature Branches and Other Ideas:
+    - Huge thanks to the Rom Hacking Hideout and Team Aqua's Hideout communities
     - Credit to Saffron City TV (on YouTube) for her Hoenn Review videos! They inspired a lot of changes, most strongly the diving minigame idea!
     - ShantyTown and Mudskip for the Pinball minigame!
+    - DexNav feature branch by ghoulslash
