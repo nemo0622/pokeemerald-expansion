@@ -1025,6 +1025,6 @@ Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz2:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz3:
 	.string "MECHADOLL 5 QUIZ.\p"
-	.string "On the CYCLING ROAD, how many\n"
-	.string "TRIATHLETES were there?$"
+	.string "In HOENN, how many GYM BADGES\n"
+	.string "can you collect?$"
 `

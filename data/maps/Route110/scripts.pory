@@ -814,7 +814,7 @@ Route110_Text_BrendanExplainItemfinder:
 
 Route110_Text_RideBikeAtFullSpeed:
 	.string "Wouldn't it be great to ride a BIKE\n"
-	.string "at full speed on CYCLING ROAD?$"
+	.string "at full speed down a road?$"
 
 Route110_Text_HairStreamsBehindMe:
 	.string "How do you like the way my raven-\n"
@@ -855,9 +855,9 @@ Route110_Text_BikeTechniques:
 
 Route110_Text_WhichShouldIChoose:
 	.string "Which should I choose?\p"
-	.string "Make a beeline for MAUVILLE on\n"
-	.string "CYCLING ROAD, or take the low road\l"
-	.string "and look for POKéMON?$"
+	.string "Should I head North and look for\n"
+	.string "POKéMON there? Or should I head East\l"
+	.string "for the PACIFIDLOG SCUBA SAFARI?$"
 
 Route110_Text_CyclingChallengeResultSummary:
 	.string "Number of collisions:\n"

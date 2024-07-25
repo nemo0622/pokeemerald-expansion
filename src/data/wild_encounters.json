@@ -3174,6 +3174,71 @@
                 "species": "SPECIES_WAILMER"
               }
             ]
+          },
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_SANDSHREW"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_SENTRET"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_PSYDUCK"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_PSYDUCK"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_GROWLITHE"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_VULPIX"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_SHELLDER"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_SHELLDER"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_KRABBY"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_SEEDOT"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_KRABBY"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_SEEDOT"
+              }
+            ]
           }
         },
         {
@@ -9264,6 +9329,71 @@
                 "min_level": 40,
                 "max_level": 45,
                 "species": "SPECIES_WAILMER"
+              }
+            ]
+          },
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_NINCADA"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_TAILLOW"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_YANMA"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_MACHOP"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_MEOWTH"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_MEOWTH"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_SHUCKLE"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_SHUCKLE"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_CORSOLA"
               }
             ]
           }

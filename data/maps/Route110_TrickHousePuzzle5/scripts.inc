@@ -2053,6 +2053,6 @@ Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz3:
 # 1027 "data/maps/Route110_TrickHousePuzzle5/scripts.pory"
 	.string "MECHADOLL 5 QUIZ.\p"
 # 1028 "data/maps/Route110_TrickHousePuzzle5/scripts.pory"
-	.string "On the CYCLING ROAD, how many\n"
+	.string "In HOENN, how many GYM BADGES\n"
 # 1029 "data/maps/Route110_TrickHousePuzzle5/scripts.pory"
-	.string "TRIATHLETES were there?$"
+	.string "can you collect?$"

@@ -51,7 +51,6 @@ High Priority (Before Release 1.0):
 - Pokémon animate after KO
 - Mystery Gift Codes feature branch (rare candy cheat? MAKE A POLL)
 - Make Dewford more interesting - sand with wild Pokémon, maybe new area connected?
-- Remove references to Cycling Road on Route 110
 
 Later Additions (After Release 1.0):
 - Make changes to Aqua/Magma dialogue!

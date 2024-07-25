@@ -1631,7 +1631,7 @@ Route110_Text_RideBikeAtFullSpeed:
 # 816 "data/maps/Route110/scripts.pory"
 	.string "Wouldn't it be great to ride a BIKE\n"
 # 817 "data/maps/Route110/scripts.pory"
-	.string "at full speed on CYCLING ROAD?$"
+	.string "at full speed down a road?$"
 # 818 "data/maps/Route110/scripts.pory"
 
 # 819 "data/maps/Route110/scripts.pory"
@@ -1713,11 +1713,11 @@ Route110_Text_WhichShouldIChoose:
 # 857 "data/maps/Route110/scripts.pory"
 	.string "Which should I choose?\p"
 # 858 "data/maps/Route110/scripts.pory"
-	.string "Make a beeline for MAUVILLE on\n"
+	.string "Should I head North and look for\n"
 # 859 "data/maps/Route110/scripts.pory"
-	.string "CYCLING ROAD, or take the low road\l"
+	.string "POKéMON there? Or should I head East\l"
 # 860 "data/maps/Route110/scripts.pory"
-	.string "and look for POKéMON?$"
+	.string "for the PACIFIDLOG SCUBA SAFARI?$"
 # 861 "data/maps/Route110/scripts.pory"
 
 # 862 "data/maps/Route110/scripts.pory"
