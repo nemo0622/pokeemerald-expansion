@@ -382,3 +382,6 @@ const u32 gObjectEventPic_Diving_Triathlete_F[] = INCBIN_U32("graphics/object_ev
 const u32 gObjectEventPic_Diving_Triathlete_M[] = INCBIN_U32("graphics/object_events/pics/people/diving_triathlete_m.4bpp");
 const u32 gObjectEventPic_Diving_Youngster[] = INCBIN_U32("graphics/object_events/pics/people/diving_youngster.4bpp");
 const u32 gObjectEventPic_ItemBallUnderwater[] = INCBIN_U32("graphics/object_events/pics/misc/item_ball_underwater.4bpp");
+
+const u32 gFieldEffectObjectPic_CaveDust[] = INCBIN_U32("graphics/field_effects/pics/cave_dust.4bpp");
+const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effects/palettes/cave_dust.gbapal");

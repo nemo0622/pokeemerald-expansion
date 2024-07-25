@@ -1809,7 +1809,7 @@ LittlerootTown_EventScript_GiveRunningShoes::
 # 905 "data/maps/LittlerootTown/scripts.pory"
 	waitfanfare
 # 906 "data/maps/LittlerootTown/scripts.pory"
-	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_SYS_DEXNAV_GET
 # 907 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
 # 908 "data/maps/LittlerootTown/scripts.pory"
@@ -1867,35 +1867,35 @@ LittlerootTown_Text_WearTheseRunningShoes:
 # 934 "data/maps/LittlerootTown/scripts.pory"
 	.string "You look good together with POKéMON!\p"
 # 935 "data/maps/LittlerootTown/scripts.pory"
-	.string "Here, honey! If you're going out on an\n"
+	.string "And hey, a POKéDEX too! Your father had\n"
 # 936 "data/maps/LittlerootTown/scripts.pory"
-	.string "adventure, wear these RUNNING SHOES.\p"
+	.string "one of these. Let me see it, I'll\l"
 # 937 "data/maps/LittlerootTown/scripts.pory"
-	.string "They'll put a zip in your step!$"
+	.string "install a cool app for you...$"
 # 938 "data/maps/LittlerootTown/scripts.pory"
 
 # 939 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
 # 940 "data/maps/LittlerootTown/scripts.pory"
-	.string "{PLAYER} switched shoes with the\n"
+	.string "{PLAYER}'S MOM enabled the {COLOR GREEN}DEXNAV{COLOR DARK_GRAY}!$"
 # 941 "data/maps/LittlerootTown/scripts.pory"
-	.string "RUNNING SHOES.$"
-# 942 "data/maps/LittlerootTown/scripts.pory"
 
-# 943 "data/maps/LittlerootTown/scripts.pory"
+# 942 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_Text_ExplainRunningShoes:
+# 943 "data/maps/LittlerootTown/scripts.pory"
+	.string "MOM: The {COLOR GREEN}DEXNAV{COLOR DARK_GRAY} app came with these\n"
 # 944 "data/maps/LittlerootTown/scripts.pory"
-	.string "MOM: {PLAYER}, those shoes came with\n"
-# 945 "data/maps/LittlerootTown/scripts.pory"
 	.string "instructions.\p"
+# 945 "data/maps/LittlerootTown/scripts.pory"
+	.string "“Press the {COLOR GREEN}A Button{COLOR DARK_GRAY} while using the\n"
 # 946 "data/maps/LittlerootTown/scripts.pory"
-	.string "“Press the B Button while wearing these\n"
+	.string "{COLOR GREEN}DEXNAV{COLOR DARK_GRAY} to creep up on POKéMON!\p"
 # 947 "data/maps/LittlerootTown/scripts.pory"
-	.string "RUNNING SHOES to run extra-fast!\p"
+	.string "“Just select a POKéMON in the {COLOR GREEN}DEXNAV{COLOR DARK_GRAY}\n"
 # 948 "data/maps/LittlerootTown/scripts.pory"
-	.string "“Slip on these RUNNING SHOES and race\n"
+	.string "menu, then {COLOR GREEN}hold the A Button{COLOR DARK_GRAY} to\l"
 # 949 "data/maps/LittlerootTown/scripts.pory"
-	.string "in the great outdoors!”$"
+	.string "sneak up, so you don't {COLOR RED}scare{COLOR DARK_GRAY} them!”$"
 # 950 "data/maps/LittlerootTown/scripts.pory"
 
 # 951 "data/maps/LittlerootTown/scripts.pory"

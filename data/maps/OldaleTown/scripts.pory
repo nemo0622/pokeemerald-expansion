@@ -195,7 +195,7 @@ OldaleTown_Movement_Unknown2:
 OldaleTown_EventScript_FootprintsMan::
 	lock
 	faceplayer
-	goto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_NotBlockingPath
+	goto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_FootprintsGuy
 	msgbox OldaleTown_Text_DiscoveredFootprints, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_FOOTPRINTS_MAN, Common_Movement_FaceOriginalDirection
@@ -401,3 +401,129 @@ OldaleTown_Text_TownSign:
 	.string "“Where things start off scarce.”$"
 
 `
+
+// UNUSED PLANNED DEXNAV EVENT BELOW
+script OldaleTown_EventScript_FootprintsGuy
+{
+	lock
+	faceplayer
+	msgbox(format("After seeing a POKéMON in the wild, you can use the {COLOR GREEN}DEXNAV{COLOR DARK_GRAY} to track them down! Simply open the START menu, open the {COLOR GREEN}DEXNAV{COLOR DARK_GRAY}, and select the POKéMON.\p While you're tracking a POKéMON, make sure to {COLOR GREEN}hold down the A button to sneak up{COLOR DARK_GRAY} on the wild POKéMON! If you don't sneak up on them, they'll {COLOR RED}run away{COLOR DARK_GRAY}!"))
+	closemessage
+	releaseall
+	end
+}
+
+script OldaleTown_Trigger_Top
+{
+	if(var(VAR_OLDALE_TOWN_STATE) == 1)
+	{
+		lockall
+		applymovement(3, OldaleTown_DexNavEvent_ScientistWalkToPlayerTop)
+		waitmovement(0)
+		goto(OldaleTown_DexNavGiveEvent)
+		releaseall
+		end
+	}
+	else
+	{
+		msgbox(format("naur"))
+		closemessage
+		end
+	}
+}
+
+script OldaleTown_Trigger_Bottom
+{
+	if(var(VAR_OLDALE_TOWN_STATE) == 1)
+	{
+		lockall
+		applymovement(3, OldaleTown_DexNavEvent_ScientistWalkToPlayerBottom)
+		waitmovement(0)
+		goto(OldaleTown_DexNavGiveEvent)
+		releaseall
+		end
+	}
+	else
+	{
+		msgbox(format("naur"))
+		closemessage
+		end
+	}
+}
+
+movement OldaleTown_DexNavEvent_ScientistWalkToPlayerTop
+{
+	emote_exclamation_mark
+	delay_16
+	delay_16
+	walk_down
+	walk_left * 6
+	step_end
+}
+movement OldaleTown_DexNavEvent_ScientistWalkToPlayerBottom
+{
+	emote_exclamation_mark
+	delay_16
+	delay_16
+	walk_down * 2
+	walk_left * 6
+	step_end
+}
+
+script OldaleTown_DexNavGiveEvent
+{
+	if(var(VAR_OLDALE_TOWN_STATE) == 1)
+	{
+		lockall
+		getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+		if(var(VAR_TEMP_0) == 1)
+		{
+			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+			waitmovement(0)
+		}
+		applymovement(3, Common_Movement_FacePlayer)
+		waitmovement(0)
+
+		// maniac gives DexNav to player
+		msgbox(format("Hey, wait up! You're the TRAINER that came through here earlier, right? I'm sorry if I yelled at you. The recent POKéMON migrations to HOENN make me itch for discovery!"))
+		closemessage
+		msgbox(format("Oho, is that a POKéDEX? As it happens, I've been working on an application to help TRAINERS find more POKéMON. Just give me a second..."))
+		closemessage
+		fadescreen(FADE_TO_BLACK)
+
+		setflag(FLAG_SYS_DEXNAV_GET)
+		setvar(VAR_OLDALE_TOWN_STATE, 2)
+
+		delay(30)
+		playse(SE_SUCCESS)
+
+		delay(30)
+		playse(SE_SUCCESS)
+
+		delay(30)
+		fadescreen(FADE_FROM_BLACK)
+		delay(30)
+		msgbox(format("I just installed the {COLOR GREEN}DEXNAV{COLOR DARK_GRAY} on your POKéDEX!\p After seeing a POKéMON in the wild, you can use the {COLOR GREEN}DEXNAV{COLOR DARK_GRAY} to track them down! Simply open the START menu, open the {COLOR GREEN}DEXNAV{COLOR DARK_GRAY}, and select the POKéMON.\p While you're tracking a POKéMON, make sure to {COLOR GREEN}hold down the A button to sneak up{COLOR DARK_GRAY} on the wild POKéMON! If you don't sneak up on them, they'll {COLOR RED}run away{COLOR DARK_GRAY}!"))
+		closemessage
+		msgbox(format("I'll get back to looking for other footprints. Come talk to me about the DEXNAV if you have questions!"))
+		closemessage
+
+		getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+		warpsilent(MAP_OLDALE_TOWN, VAR_TEMP_0, VAR_TEMP_1)
+		waitstate
+		delay(30)
+
+		releaseall
+		end
+	}
+	else
+	{
+		end
+	}
+}
+
+movement OldaleTown_DexNavEvent_ScientistStartToWalkBack
+{
+	walk_right * 6
+	step_end
+}

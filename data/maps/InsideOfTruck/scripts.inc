@@ -39,84 +39,86 @@ InsideOfTruck_EventScript_SetIntroFlags::
 # 20 "data/maps/InsideOfTruck/scripts.pory"
 	setflag FLAG_LEVEL_CAPS_ENABLED
 # 21 "data/maps/InsideOfTruck/scripts.pory"
-	clearflag FLAG_SYS_DISABLE_BATTLE_BG
+	setflag FLAG_SYS_B_DASH
 # 22 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_SAILOR_ACROSS_HOENN
+	clearflag FLAG_SYS_DISABLE_BATTLE_BG
 # 23 "data/maps/InsideOfTruck/scripts.pory"
-	checkplayergender
+	setflag FLAG_HIDE_SAILOR_ACROSS_HOENN
 # 24 "data/maps/InsideOfTruck/scripts.pory"
-	goto_if_eq VAR_RESULT, MALE, InsideOfTruck_EventScript_SetIntroFlagsMale
+	checkplayergender
 # 25 "data/maps/InsideOfTruck/scripts.pory"
-	goto_if_eq VAR_RESULT, FEMALE, InsideOfTruck_EventScript_SetIntroFlagsFemale
+	goto_if_eq VAR_RESULT, MALE, InsideOfTruck_EventScript_SetIntroFlagsMale
 # 26 "data/maps/InsideOfTruck/scripts.pory"
-	end
+	goto_if_eq VAR_RESULT, FEMALE, InsideOfTruck_EventScript_SetIntroFlagsFemale
 # 27 "data/maps/InsideOfTruck/scripts.pory"
-
+	end
 # 28 "data/maps/InsideOfTruck/scripts.pory"
-InsideOfTruck_EventScript_SetIntroFlagsMale::
+
 # 29 "data/maps/InsideOfTruck/scripts.pory"
-	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
+InsideOfTruck_EventScript_SetIntroFlagsMale::
 # 30 "data/maps/InsideOfTruck/scripts.pory"
-	setvar VAR_LITTLEROOT_INTRO_STATE, 1
+	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 # 31 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MOM
+	setvar VAR_LITTLEROOT_INTRO_STATE, 1
 # 32 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MOM
 # 33 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
 # 34 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM
 # 35 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING
 # 36 "data/maps/InsideOfTruck/scripts.pory"
-	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
 # 37 "data/maps/InsideOfTruck/scripts.pory"
-	setdynamicwarp MAP_LITTLEROOT_TOWN, 3, 10
+	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
 # 38 "data/maps/InsideOfTruck/scripts.pory"
-	releaseall
+	setdynamicwarp MAP_LITTLEROOT_TOWN, 3, 10
 # 39 "data/maps/InsideOfTruck/scripts.pory"
-	end
-# 40 "data/maps/InsideOfTruck/scripts.pory"
-
-# 41 "data/maps/InsideOfTruck/scripts.pory"
-InsideOfTruck_EventScript_SetIntroFlagsFemale::
-# 42 "data/maps/InsideOfTruck/scripts.pory"
-	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F
-# 43 "data/maps/InsideOfTruck/scripts.pory"
-	setvar VAR_LITTLEROOT_INTRO_STATE, 2
-# 44 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM
-# 45 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
-# 46 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM
-# 47 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING
-# 48 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
-# 49 "data/maps/InsideOfTruck/scripts.pory"
-	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
-# 50 "data/maps/InsideOfTruck/scripts.pory"
-	setdynamicwarp MAP_LITTLEROOT_TOWN, 12, 10
-# 51 "data/maps/InsideOfTruck/scripts.pory"
 	releaseall
+# 40 "data/maps/InsideOfTruck/scripts.pory"
+	end
+# 41 "data/maps/InsideOfTruck/scripts.pory"
+
+# 42 "data/maps/InsideOfTruck/scripts.pory"
+InsideOfTruck_EventScript_SetIntroFlagsFemale::
+# 43 "data/maps/InsideOfTruck/scripts.pory"
+	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F
+# 44 "data/maps/InsideOfTruck/scripts.pory"
+	setvar VAR_LITTLEROOT_INTRO_STATE, 2
+# 45 "data/maps/InsideOfTruck/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM
+# 46 "data/maps/InsideOfTruck/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
+# 47 "data/maps/InsideOfTruck/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM
+# 48 "data/maps/InsideOfTruck/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING
+# 49 "data/maps/InsideOfTruck/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
+# 50 "data/maps/InsideOfTruck/scripts.pory"
+	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
+# 51 "data/maps/InsideOfTruck/scripts.pory"
+	setdynamicwarp MAP_LITTLEROOT_TOWN, 12, 10
 # 52 "data/maps/InsideOfTruck/scripts.pory"
-	end
+	releaseall
 # 53 "data/maps/InsideOfTruck/scripts.pory"
-
-# 54 "data/maps/InsideOfTruck/scripts.pory"
-InsideOfTruck_EventScript_MovingBox::
-# 55 "data/maps/InsideOfTruck/scripts.pory"
-	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN
-# 56 "data/maps/InsideOfTruck/scripts.pory"
 	end
-# 57 "data/maps/InsideOfTruck/scripts.pory"
+# 54 "data/maps/InsideOfTruck/scripts.pory"
 
+# 55 "data/maps/InsideOfTruck/scripts.pory"
+InsideOfTruck_EventScript_MovingBox::
+# 56 "data/maps/InsideOfTruck/scripts.pory"
+	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN
+# 57 "data/maps/InsideOfTruck/scripts.pory"
+	end
 # 58 "data/maps/InsideOfTruck/scripts.pory"
-InsideOfTruck_Text_BoxPrintedWithMonLogo:
+
 # 59 "data/maps/InsideOfTruck/scripts.pory"
-	.string "The box is printed with a POKéMON logo.\p"
+InsideOfTruck_Text_BoxPrintedWithMonLogo:
 # 60 "data/maps/InsideOfTruck/scripts.pory"
-	.string "It's a POKéMON brand moving and\n"
+	.string "The box is printed with a POKéMON logo.\p"
 # 61 "data/maps/InsideOfTruck/scripts.pory"
+	.string "It's a POKéMON brand moving and\n"
+# 62 "data/maps/InsideOfTruck/scripts.pory"
 	.string "delivery service.$"

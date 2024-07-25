@@ -1093,3 +1093,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/VerdanturfTown_ContestHall/scripts.inc"
 
 	.include "data/maps/VerdanturfTown_ContestLobby/scripts.inc"
+    .include "data/scripts/dexnav.inc"
+    

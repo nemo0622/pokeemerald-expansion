@@ -393,7 +393,7 @@ OldaleTown_EventScript_FootprintsMan::
 # 197 "data/maps/OldaleTown/scripts.pory"
 	faceplayer
 # 198 "data/maps/OldaleTown/scripts.pory"
-	goto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_NotBlockingPath
+	goto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_FootprintsGuy
 # 199 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_Text_DiscoveredFootprints, MSGBOX_DEFAULT
 # 200 "data/maps/OldaleTown/scripts.pory"
@@ -800,3 +800,258 @@ OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
 # 401 "data/maps/OldaleTown/scripts.pory"
 	.string "“Where things start off scarce.”$"
+
+OldaleTown_EventScript_FootprintsGuy::
+# 408 "data/maps/OldaleTown/scripts.pory"
+	lock
+# 409 "data/maps/OldaleTown/scripts.pory"
+	faceplayer
+# 410 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_FootprintsGuy_Text_0
+# 411 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 412 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	end
+
+
+OldaleTown_Trigger_Top::
+# 418 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_OLDALE_TOWN_STATE, 1
+	goto_if_eq OldaleTown_Trigger_Top_1
+# 429 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_Trigger_Top_Text_0
+# 430 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+	end
+
+OldaleTown_Trigger_Top_1:
+# 420 "data/maps/OldaleTown/scripts.pory"
+	lockall
+# 421 "data/maps/OldaleTown/scripts.pory"
+	applymovement 3, OldaleTown_DexNavEvent_ScientistWalkToPlayerTop
+# 422 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 423 "data/maps/OldaleTown/scripts.pory"
+	goto OldaleTown_DexNavGiveEvent
+# 424 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	end
+
+
+OldaleTown_Trigger_Bottom::
+# 437 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_OLDALE_TOWN_STATE, 1
+	goto_if_eq OldaleTown_Trigger_Bottom_1
+# 448 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_Trigger_Top_Text_0
+# 449 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+	end
+
+OldaleTown_Trigger_Bottom_1:
+# 439 "data/maps/OldaleTown/scripts.pory"
+	lockall
+# 440 "data/maps/OldaleTown/scripts.pory"
+	applymovement 3, OldaleTown_DexNavEvent_ScientistWalkToPlayerBottom
+# 441 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 442 "data/maps/OldaleTown/scripts.pory"
+	goto OldaleTown_DexNavGiveEvent
+# 443 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	end
+
+
+# 454 "data/maps/OldaleTown/scripts.pory"
+OldaleTown_DexNavEvent_ScientistWalkToPlayerTop:
+# 456 "data/maps/OldaleTown/scripts.pory"
+	emote_exclamation_mark
+# 457 "data/maps/OldaleTown/scripts.pory"
+	delay_16
+# 458 "data/maps/OldaleTown/scripts.pory"
+	delay_16
+# 459 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 460 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 460 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 460 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 460 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 460 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 460 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 461 "data/maps/OldaleTown/scripts.pory"
+	step_end
+
+# 463 "data/maps/OldaleTown/scripts.pory"
+OldaleTown_DexNavEvent_ScientistWalkToPlayerBottom:
+# 465 "data/maps/OldaleTown/scripts.pory"
+	emote_exclamation_mark
+# 466 "data/maps/OldaleTown/scripts.pory"
+	delay_16
+# 467 "data/maps/OldaleTown/scripts.pory"
+	delay_16
+# 468 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 468 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 469 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 469 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 469 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 469 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 469 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 469 "data/maps/OldaleTown/scripts.pory"
+	walk_left
+# 470 "data/maps/OldaleTown/scripts.pory"
+	step_end
+
+OldaleTown_DexNavGiveEvent::
+# 475 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_OLDALE_TOWN_STATE, 1
+	goto_if_eq OldaleTown_DexNavGiveEvent_1
+	end
+
+OldaleTown_DexNavGiveEvent_1:
+# 477 "data/maps/OldaleTown/scripts.pory"
+	lockall
+# 478 "data/maps/OldaleTown/scripts.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 479 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_TEMP_0, 1
+	goto_if_eq OldaleTown_DexNavGiveEvent_5
+OldaleTown_DexNavGiveEvent_4:
+# 484 "data/maps/OldaleTown/scripts.pory"
+	applymovement 3, Common_Movement_FacePlayer
+# 485 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 488 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_DexNavGiveEvent_Text_0
+# 489 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 490 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_DexNavGiveEvent_Text_1
+# 491 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 492 "data/maps/OldaleTown/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 494 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_SYS_DEXNAV_GET
+# 495 "data/maps/OldaleTown/scripts.pory"
+	setvar VAR_OLDALE_TOWN_STATE, 2
+# 497 "data/maps/OldaleTown/scripts.pory"
+	delay 30
+# 498 "data/maps/OldaleTown/scripts.pory"
+	playse SE_SUCCESS
+# 500 "data/maps/OldaleTown/scripts.pory"
+	delay 30
+# 501 "data/maps/OldaleTown/scripts.pory"
+	playse SE_SUCCESS
+# 503 "data/maps/OldaleTown/scripts.pory"
+	delay 30
+# 504 "data/maps/OldaleTown/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 505 "data/maps/OldaleTown/scripts.pory"
+	delay 30
+# 506 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_DexNavGiveEvent_Text_2
+# 507 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 508 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_DexNavGiveEvent_Text_3
+# 509 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 511 "data/maps/OldaleTown/scripts.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 512 "data/maps/OldaleTown/scripts.pory"
+	warpsilent MAP_OLDALE_TOWN, VAR_TEMP_0, VAR_TEMP_1
+# 513 "data/maps/OldaleTown/scripts.pory"
+	waitstate
+# 514 "data/maps/OldaleTown/scripts.pory"
+	delay 30
+# 516 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	end
+
+OldaleTown_DexNavGiveEvent_5:
+# 481 "data/maps/OldaleTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 482 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+	goto OldaleTown_DexNavGiveEvent_4
+
+
+# 525 "data/maps/OldaleTown/scripts.pory"
+OldaleTown_DexNavEvent_ScientistStartToWalkBack:
+# 527 "data/maps/OldaleTown/scripts.pory"
+	walk_right
+# 527 "data/maps/OldaleTown/scripts.pory"
+	walk_right
+# 527 "data/maps/OldaleTown/scripts.pory"
+	walk_right
+# 527 "data/maps/OldaleTown/scripts.pory"
+	walk_right
+# 527 "data/maps/OldaleTown/scripts.pory"
+	walk_right
+# 527 "data/maps/OldaleTown/scripts.pory"
+	walk_right
+# 528 "data/maps/OldaleTown/scripts.pory"
+	step_end
+
+OldaleTown_EventScript_FootprintsGuy_Text_0:
+# 410 "data/maps/OldaleTown/scripts.pory"
+	.string "After seeing a POKéMON in the wild, you\n"
+	.string "can use the {COLOR GREEN}DEXNAV{COLOR DARK_GRAY} to track them down!\l"
+	.string "Simply open the START menu, open the\l"
+	.string "{COLOR GREEN}DEXNAV{COLOR DARK_GRAY}, and select the POKéMON.\p"
+	.string "While you're tracking a POKéMON, make\n"
+	.string "sure to {COLOR GREEN}hold down the A button to sneak\l"
+	.string "up{COLOR DARK_GRAY} on the wild POKéMON! If you don't\l"
+	.string "sneak up on them, they'll {COLOR RED}run away{COLOR DARK_GRAY}!$"
+
+OldaleTown_Trigger_Top_Text_0:
+# 429 "data/maps/OldaleTown/scripts.pory"
+	.string "naur$"
+
+OldaleTown_DexNavGiveEvent_Text_0:
+# 488 "data/maps/OldaleTown/scripts.pory"
+	.string "Hey, wait up! You're the TRAINER that\n"
+	.string "came through here earlier, right? I'm\l"
+	.string "sorry if I yelled at you. The recent\l"
+	.string "POKéMON migrations to HOENN make me\l"
+	.string "itch for discovery!$"
+
+OldaleTown_DexNavGiveEvent_Text_1:
+# 490 "data/maps/OldaleTown/scripts.pory"
+	.string "Oho, is that a POKéDEX? As it happens,\n"
+	.string "I've been working on an application to\l"
+	.string "help TRAINERS find more POKéMON. Just\l"
+	.string "give me a second...$"
+
+OldaleTown_DexNavGiveEvent_Text_2:
+# 506 "data/maps/OldaleTown/scripts.pory"
+	.string "I just installed the {COLOR GREEN}DEXNAV{COLOR DARK_GRAY} on your\n"
+	.string "POKéDEX!\p"
+	.string "After seeing a POKéMON in the wild, you\n"
+	.string "can use the {COLOR GREEN}DEXNAV{COLOR DARK_GRAY} to track them down!\l"
+	.string "Simply open the START menu, open the\l"
+	.string "{COLOR GREEN}DEXNAV{COLOR DARK_GRAY}, and select the POKéMON.\p"
+	.string "While you're tracking a POKéMON, make\n"
+	.string "sure to {COLOR GREEN}hold down the A button to sneak\l"
+	.string "up{COLOR DARK_GRAY} on the wild POKéMON! If you don't\l"
+	.string "sneak up on them, they'll {COLOR RED}run away{COLOR DARK_GRAY}!$"
+
+OldaleTown_DexNavGiveEvent_Text_3:
+# 508 "data/maps/OldaleTown/scripts.pory"
+	.string "I'll get back to looking for other\n"
+	.string "footprints. Come talk to me about the\l"
+	.string "DEXNAV if you have questions!$"
