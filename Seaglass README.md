@@ -48,9 +48,7 @@ High Priority (Before Release 1.0):
 - Go through trainer teams and integrate all Gen 1-3 Pokémon!
     - Change level cap levels in level_caps.c to adjust to modified level curve
     - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
-- Pokémon animate after KO
 - Mystery Gift Codes feature branch (rare candy cheat? MAKE A POLL)
-- Make Dewford more interesting - sand with wild Pokémon, maybe new area connected?
 
 Later Additions (After Release 1.0):
 - Make changes to Aqua/Magma dialogue!
