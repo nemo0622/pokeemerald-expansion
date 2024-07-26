@@ -759,10 +759,7 @@ static bool8 LoadMonAndSceneGfx(struct Pokemon *mon)
     case 6:
     {
         ResetTempTileDataBuffers();
-        if (FlagGet(FLAG_SYS_DISABLE_BATTLE_BG))
-            DecompressAndCopyTileDataToVram(1, gBattleTerrainTiles_GSC, 0, 0, 0); // this terrain is based off building so i think its ok
-        else
-            DecompressAndCopyTileDataToVram(1, gBattleTerrainTiles_Building, 0, 0, 0);
+        DecompressAndCopyTileDataToVram(1, gBattleTerrainTiles_GSC, 0, 0, 0); // this terrain is based off building so i think its ok
         // DecompressAndCopyTileDataToVram(1, gBattleTerrainTiles_Building, 0, 0, 0);
         sPokeblockFeed->loadGfxState++;
     }
@@ -770,16 +767,13 @@ static bool8 LoadMonAndSceneGfx(struct Pokemon *mon)
     case 7:
         if (FreeTempTileDataBuffersIfPossible() != TRUE)
         {
-            LZDecompressWram(gPokeblockFeedBg_Tilemap, sPokeblockFeed->tilemapBuffer);
+            LZDecompressWram(gBattleTerrainTilemap_GSC, sPokeblockFeed->tilemapBuffer);
             sPokeblockFeed->loadGfxState++;
         }
         break;
     case 8:
     {
-        if (FlagGet(FLAG_SYS_DISABLE_BATTLE_BG))
-            LoadCompressedPalette(gBattleTerrainPalette_GSC, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
-        else
-            LoadCompressedPalette(gBattleTerrainPalette_Frontier, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        LoadCompressedPalette(gBattleTerrainPalette_GSC, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
         LoadCompressedPalette(gBattleTerrainPalette_Frontier, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
         sPokeblockFeed->loadGfxState = 0;
     }

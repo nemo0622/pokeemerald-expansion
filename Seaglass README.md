@@ -61,11 +61,13 @@ Later Additions (After Release 1.0):
 
 ## KNOWN BUGS & PROBLEMS
 
-- Battle Frontier largely uses vanilla Emerald tiles, so it doesn't really match the rest of the game
-- Some tiles may misalign - a few cave tiles and Fallarbor trees, but nothing major
-- Many special NPCs (Elite Four members, Wallace, etc.) are kind of just slightly modified NPC sprites for now, need fully custom sprites in the future
-- Pinball physics are far from perfect, but tbh I think that adds to the charm lol
-- When feeding a PokéBlock to a Pokémon, the background is broken. Idk why really
+- Visuals Issues:
+    - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
+    - A few rare tile misalignments are possible, but should be rare
+- Fixes for future updates:
+    - Many special NPCs (Elite Four members, Wallace, etc.) are kind of just slightly modified NPC sprites for now, need fully custom sprites in the future
+- Other issues:
+    - Pinball physics are far from perfect, but tbh I think that adds to the charm lol
 
 ## CREDITS
 
