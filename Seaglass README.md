@@ -21,7 +21,8 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Cross-gen evolutions have also been added, up to Gen 9!
     - Pokémon use modified USUM movesets when applicable
     - Almost all Pokémon have recieved some changes! From slight stat changes to new types, each Pokémon should feel more unique to use
-    - Additional available Pokémon: Spiky-Ear Pichu and the Tinkaton line (details on obtaining in documentation)
+    - Trainers use wider variety of Pokémon (Team Aqua and Magma fights are finally interesting!)
+    - Additional available Pokémon: Spiky-Ear Pichu, Tinkaton line, and Applin line (details on obtaining in documentation)
 - Party-wide EXP Share, with soft level caps to balance this change
     - This is *NOT* a "difficulty hack"! These changes just cut down on some grind while still keeping a good balance
     - Soft level cap allows for you to reach the gym leader's max, then halves exp gain for the next few levels, then cuts it more
@@ -45,11 +46,11 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 ## FUTURE PLANS
 
 High Priority (Before Release 1.0):
-- Go through trainer teams and integrate all Gen 1-3 Pokémon!
-    - Change level cap levels in level_caps.c to adjust to modified level curve
-    - Wait for Expansion 1.9.0 - i think a big refactoring of trainers is coming
 - Mystery Gift Codes feature branch (rare candy cheat? MAKE A POLL)
 - Change Brendan and May string names to Ethan and Lyra based on poll results
+- Random nicknames option?
+- Implement Alolan Geodude line (SageDeoxys sprites)
+- FAIRY type icon messed up on TM screen
 
 Later Additions (After Release 1.0):
 - Make changes to Aqua/Magma dialogue!
