@@ -182,6 +182,7 @@ script VerdanturfTown_EventScript_CamperNew
 		msgbox(format("I've been wishing on these rocks, but they haven't helped much. Maybe they'll help you?"))
 		closemessage
 		giveitem(ITEM_WISHING_STAR, 3)
+		setflag(FLAG_GOT_WISHING_STAR_VERDANTURF)
 	}
 	release
 	end

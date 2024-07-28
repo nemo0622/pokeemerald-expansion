@@ -6761,6 +6761,7 @@ ScreenFlash:
 	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BG, 0x1, 0xC, 0x0, 0x07FE
 	return
 
+Move_HYPER_DRILL::
 Move_DRILL_RUN:
 	loadspritegfx ANIM_TAG_IMPACT
 	loadspritegfx ANIM_TAG_HORN_HIT
@@ -12772,6 +12773,7 @@ Move_SHADOW_BONE::
 	blendoff
 	end
 
+Move_SALT_CURE::
 Move_ACCELEROCK::
 	loadspritegfx ANIM_TAG_ROCKS
 	loadspritegfx ANIM_TAG_IMPACT
@@ -17903,19 +17905,15 @@ Move_SPICY_EXTRACT::
 Move_SPIN_OUT::
 Move_POPULATION_BOMB::
 Move_GLAIVE_RUSH::
-Move_REVIVAL_BLESSING::
-Move_SALT_CURE::
 Move_TRIPLE_DIVE::
 Move_MORTAL_SPIN::
 Move_DOODLE::
 Move_FILLET_AWAY::
-Move_FLOWER_TRICK::
 Move_MAKE_IT_RAIN::
 Move_RUINATION::
 Move_COLLISION_COURSE::
 Move_ELECTRO_DRIFT::
 Move_SHED_TAIL::
-Move_HYPER_DRILL::
 Move_TWIN_BEAM::
 Move_ARMOR_CANNON::
 Move_COMEUPPANCE::
@@ -17926,15 +17924,24 @@ Move_COMBAT_TORQUE::
 Move_MAGICAL_TORQUE::
 Move_PSYBLADE::
 Move_BLOOD_MOON::
-Move_MATCHA_GOTCHA::
 Move_TERA_STARSTORM::
 Move_MIGHTY_CLEAVE::
 Move_TACHYON_CUTTER::
 Move_HARD_PRESS::
-Move_DRAGON_CHEER::
 Move_SUPERCELL_SLAM::
 Move_MALIGNANT_CHAIN::
-	end @to do
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 4
+	delay 6
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 6, 1
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
+	end @ just loads tackle animation
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 Move_NONE:
@@ -19027,6 +19034,7 @@ Move_SLAM:
 	blendoff
 	end
 
+Move_FLOWER_TRICK::
 Move_VINE_WHIP:
 	loadspritegfx ANIM_TAG_WHIP_HIT
 	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
@@ -22038,6 +22046,7 @@ Move_LEAF_BLADE:
 	blendoff
 	end
 
+Move_DRAGON_CHEER::
 Move_DRAGON_DANCE:
 	loadspritegfx ANIM_TAG_HOLLOW_ORB
 	monbg ANIM_ATTACKER
@@ -23316,6 +23325,7 @@ MegaDrainAbsorbEffect:
 	delay 4
 	return
 
+Move_MATCHA_GOTCHA::
 Move_GIGA_DRAIN:
 	loadspritegfx ANIM_TAG_ORBS
 	loadspritegfx ANIM_TAG_BLUE_STAR
@@ -25661,6 +25671,7 @@ Move_TRICK:
 	waitforvisualfinish
 	end
 
+Move_REVIVAL_BLESSING::
 Move_WISH:
 	loadspritegfx ANIM_TAG_GOLD_STARS
 	loadspritegfx ANIM_TAG_SPARKLE_2

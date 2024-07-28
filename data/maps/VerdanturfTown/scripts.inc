@@ -328,7 +328,7 @@ VerdanturfTown_EventScript_CamperNew::
 # 180 "data/maps/VerdanturfTown/scripts.pory"
 	goto_if_unset FLAG_GOT_WISHING_STAR_VERDANTURF, VerdanturfTown_EventScript_CamperNew_2
 VerdanturfTown_EventScript_CamperNew_1:
-# 186 "data/maps/VerdanturfTown/scripts.pory"
+# 187 "data/maps/VerdanturfTown/scripts.pory"
 	release
 	end
 
@@ -339,6 +339,8 @@ VerdanturfTown_EventScript_CamperNew_2:
 	closemessage
 # 184 "data/maps/VerdanturfTown/scripts.pory"
 	giveitem ITEM_WISHING_STAR, 3
+# 185 "data/maps/VerdanturfTown/scripts.pory"
+	setflag FLAG_GOT_WISHING_STAR_VERDANTURF
 	goto VerdanturfTown_EventScript_CamperNew_1
 
 

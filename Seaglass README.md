@@ -19,7 +19,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Ex: Wishing Well in Rustboro City, Birdhouses in Fortree City, etc.
 - All Pokémon from Generations 1-3 are available, spread out enough to keep it from feeling bloated!
     - Cross-gen evolutions have also been added, up to Gen 9!
-    - Pokémon use modified USUM movesets when applicable
+    - Pokémon use modified USUM movesets when applicable (many Pokémon also have more coverage moves and more interesting sets in general)
     - Almost all Pokémon have recieved some changes! From slight stat changes to new types, each Pokémon should feel more unique to use
     - Trainers use wider variety of Pokémon (Team Aqua and Magma fights are finally interesting!)
     - Additional available Pokémon: Spiky-Ear Pichu, Tinkaton line, and Applin line (details on obtaining in documentation)
@@ -32,7 +32,8 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 - More minigames to break up Pokémon battles!
     - SCUBA SAFARI, Pacifidlog Town: A combination of the Safari Zone and Bug Catching Contest from Johto, with 200 steps or 5 encounters in a dedicated underwater area to find a high-scoring Pokémon. Various helpful rewards are provided, including the HM Waterfall. Pacifidlog Town is also accessible from Slateport through an NPC with a Kirlia by the Pokémon Center after beating Team Aqua in the Museum.
     - PINBALL, Mauville Game Corner and Mossdeep Game Corner: Four unique pinball games (SEEL, GENGAR, MEOWTH, and DIGLETT) are in both Game Corners. Beating the games award PINBALL POINTs, which can be used to get rare Pokéballs, items, and even some Alolan forms!
-    - The Contest Hall has been moved to Verdanturf Town, and the Verdanturf Battle Tent has been moved to Lilycove! This will let the player enter contests much earlier, hopefully engaging with them much more
+    - CONTESTS: The Contest Hall has been moved to Verdanturf Town, and the Verdanturf Battle Tent has been moved to Lilycove! This will let the player enter contests much earlier, hopefully engaging with them much more
+    - RUSTBORO WISHING WELL: On the east side of Rustboro City sits an old Wishing Well. Using a Wishing Star item at the well summons a random Pokémon, similar to Wonder Trade or a Gacha system!
 - Various QoL Changes, including:
     - Type Effectiveness shown in battle
     - HM System revamp: if HM is in bag and the right badge is owned, Pokémon that can learn the HMs can naturally use them
@@ -47,10 +48,15 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 High Priority (Before Release 1.0):
 - Mystery Gift Codes feature branch (rare candy cheat? MAKE A POLL)
-- Change Brendan and May string names to Ethan and Lyra based on poll results
 - Random nicknames option?
-- Full screen start menu? could be cool
 - PLAY THROUGH THE GAME! First do my own playthrough and keep a list of bugs on phone, then release a public development build
+
+BEFORE PUBLIC RELEASE:
+- Look into submission to Eevee Expo 4
+- Create EeveeExpo thread and Ko-Fi website, both with information, Discord links, and patch download
+- Turn this "Seaglass README" file into the actual README file for this repo, and use the info on here for lists on EeveeExpo thread and KoFi site
+- Create patcher website link thing that some hacks have?
+- Disable Debug features in debug.h config file
 
 Later Additions (After Release 1.0):
 - Make changes to Aqua/Magma dialogue!
