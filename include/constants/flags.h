@@ -710,7 +710,7 @@
 #define FLAG_HIDE_PACIFIDLOG_TELEPORT_SERVICE  0x29B
 #define FLAG_VISITED_MOSSDEEP_GAME_CORNER  0x29C 
 #define FLAG_GOT_LUCKY_EGG_MOSSDEEP  0x29D
-#define FLAG_UNUSED_0x29E  0x29E // Unused Flag
+#define FLAG_GOT_WISHING_STAR_VERDANTURF  0x29E // got wishing star from camper npc
 #define FLAG_UNUSED_0x29F  0x29F // Unused Flag
 #define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
 #define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag

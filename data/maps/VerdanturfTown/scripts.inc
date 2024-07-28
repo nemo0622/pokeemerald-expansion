@@ -316,6 +316,32 @@ VerdanturfTown_EventScript_CookResetSheen_5:
 	goto VerdanturfTown_EventScript_CookResetSheen_1
 
 
+VerdanturfTown_EventScript_CamperNew::
+# 176 "data/maps/VerdanturfTown/scripts.pory"
+	lock
+# 177 "data/maps/VerdanturfTown/scripts.pory"
+	faceplayer
+# 178 "data/maps/VerdanturfTown/scripts.pory"
+	msgbox VerdanturfTown_EventScript_CamperNew_Text_0
+# 179 "data/maps/VerdanturfTown/scripts.pory"
+	closemessage
+# 180 "data/maps/VerdanturfTown/scripts.pory"
+	goto_if_unset FLAG_GOT_WISHING_STAR_VERDANTURF, VerdanturfTown_EventScript_CamperNew_2
+VerdanturfTown_EventScript_CamperNew_1:
+# 186 "data/maps/VerdanturfTown/scripts.pory"
+	release
+	end
+
+VerdanturfTown_EventScript_CamperNew_2:
+# 182 "data/maps/VerdanturfTown/scripts.pory"
+	msgbox VerdanturfTown_EventScript_CamperNew_Text_1
+# 183 "data/maps/VerdanturfTown/scripts.pory"
+	closemessage
+# 184 "data/maps/VerdanturfTown/scripts.pory"
+	giveitem ITEM_WISHING_STAR, 3
+	goto VerdanturfTown_EventScript_CamperNew_1
+
+
 VerdanturfTown_EventScript_CookResetSheen_Text_0:
 # 138 "data/maps/VerdanturfTown/scripts.pory"
 	.string "Hey, young TRAINER! You know how\n"
@@ -343,3 +369,16 @@ VerdanturfTown_EventScript_CookResetSheen_Text_4:
 # 164 "data/maps/VerdanturfTown/scripts.pory"
 	.string "{PLAYER}'s POKéMON had it's SHEEN\n"
 	.string "reset!$"
+
+VerdanturfTown_EventScript_CamperNew_Text_0:
+# 178 "data/maps/VerdanturfTown/scripts.pory"
+	.string "I've been training with my POKéMON to\n"
+	.string "ace contests! I hear that with a\l"
+	.string "CONTEST RIBBON, POKéMON get a bit\l"
+	.string "stronger!$"
+
+VerdanturfTown_EventScript_CamperNew_Text_1:
+# 182 "data/maps/VerdanturfTown/scripts.pory"
+	.string "I've been wishing on these rocks, but\n"
+	.string "they haven't helped much. Maybe they'll\l"
+	.string "help you?$"

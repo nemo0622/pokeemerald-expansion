@@ -1525,7 +1525,7 @@ Route110_Text_AquaActionsBringSmiles:
 # 763 "data/maps/Route110/scripts.pory"
 Route110_Text_MayLetsBattle:
 # 764 "data/maps/Route110/scripts.pory"
-	.string "MAY: Hi, {PLAYER}{KUN}, long time no see!\p"
+	.string "LYRA: Hi, {PLAYER}{KUN}, long time no see!\p"
 # 765 "data/maps/Route110/scripts.pory"
 	.string "While I was searching for other\n"
 # 766 "data/maps/Route110/scripts.pory"
@@ -1547,7 +1547,7 @@ Route110_Text_MayDefeated:
 # 774 "data/maps/Route110/scripts.pory"
 Route110_Text_MayTakeThis:
 # 775 "data/maps/Route110/scripts.pory"
-	.string "MAY: {PLAYER}{KUN}, you've been busy\n"
+	.string "LYRA: {PLAYER}{KUN}, you've been busy\n"
 # 776 "data/maps/Route110/scripts.pory"
 	.string "training, too, haven't you?\p"
 # 777 "data/maps/Route110/scripts.pory"
@@ -1559,7 +1559,7 @@ Route110_Text_MayTakeThis:
 # 780 "data/maps/Route110/scripts.pory"
 Route110_Text_MayExplainItemfinder:
 # 781 "data/maps/Route110/scripts.pory"
-	.string "MAY: That's an ITEMFINDER.\p"
+	.string "LYRA: That's an ITEMFINDER.\p"
 # 782 "data/maps/Route110/scripts.pory"
 	.string "Try it out. If there is an item that's\n"
 # 783 "data/maps/Route110/scripts.pory"
@@ -1577,7 +1577,7 @@ Route110_Text_MayExplainItemfinder:
 # 789 "data/maps/Route110/scripts.pory"
 Route110_Text_BrendanLetsBattle:
 # 790 "data/maps/Route110/scripts.pory"
-	.string "BRENDAN: Hey, {PLAYER}.\n"
+	.string "ETHAN: Hey, {PLAYER}.\n"
 # 791 "data/maps/Route110/scripts.pory"
 	.string "So this is where you were.\l"
 # 792 "data/maps/Route110/scripts.pory"
@@ -1599,7 +1599,7 @@ Route110_Text_BrendanDefeated:
 # 800 "data/maps/Route110/scripts.pory"
 Route110_Text_BrendanTakeThis:
 # 801 "data/maps/Route110/scripts.pory"
-	.string "BRENDAN: {PLAYER}, you've trained\n"
+	.string "ETHAN: {PLAYER}, you've trained\n"
 # 802 "data/maps/Route110/scripts.pory"
 	.string "without me noticing…\p"
 # 803 "data/maps/Route110/scripts.pory"
@@ -1611,7 +1611,7 @@ Route110_Text_BrendanTakeThis:
 # 806 "data/maps/Route110/scripts.pory"
 Route110_Text_BrendanExplainItemfinder:
 # 807 "data/maps/Route110/scripts.pory"
-	.string "BRENDAN: That's an ITEMFINDER.\p"
+	.string "ETHAN: That's an ITEMFINDER.\p"
 # 808 "data/maps/Route110/scripts.pory"
 	.string "Use it to root around for items that\n"
 # 809 "data/maps/Route110/scripts.pory"

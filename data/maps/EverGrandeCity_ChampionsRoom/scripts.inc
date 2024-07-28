@@ -547,7 +547,7 @@ EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 # 274 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
 # 275 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	.string "MAY: {PLAYER}{KUN}!\p"
+	.string "LYRA: {PLAYER}{KUN}!\p"
 # 276 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	.string "Here's some advice before you challenge\n"
 # 277 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -557,7 +557,7 @@ EverGrandeCity_ChampionsRoom_Text_MayAdvice:
 # 279 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
 # 280 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	.string "MAY: Huh?\n"
+	.string "LYRA: Huh?\n"
 # 281 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	.string "What, what, what?\p"
 # 282 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -571,7 +571,7 @@ EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
 # 286 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_Text_BrendanAdvice:
 # 287 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	.string "BRENDAN: {PLAYER}!\p"
+	.string "ETHAN: {PLAYER}!\p"
 # 288 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	.string "How would you like some advice before\n"
 # 289 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -581,7 +581,7 @@ EverGrandeCity_ChampionsRoom_Text_BrendanAdvice:
 # 291 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
 # 292 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	.string "BRENDAN: {PLAYER}…\p"
+	.string "ETHAN: {PLAYER}…\p"
 # 293 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	.string "Are you trying to tell me…\n"
 # 294 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -659,7 +659,7 @@ EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
 # 330 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
 # 331 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	.string "MAY: Groan…\p"
+	.string "LYRA: Groan…\p"
 # 332 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	.string "… … … … … … … …\n"
 # 333 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -677,7 +677,7 @@ EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
 # 339 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
 # 340 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	.string "BRENDAN: Whaaaat?! … … … … …\n"
+	.string "ETHAN: Whaaaat?! … … … … …\n"
 # 341 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	.string "… … … … … … … …\p"
 # 342 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"

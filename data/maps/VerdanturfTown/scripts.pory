@@ -169,3 +169,21 @@ script VerdanturfTown_EventScript_CookResetSheen
 	end
 
 }
+
+script VerdanturfTown_EventScript_CamperNew
+{
+
+	lock
+	faceplayer
+	msgbox(format("I've been training with my POKéMON to ace contests! I hear that with a CONTEST RIBBON, POKéMON get a bit stronger!"))
+	closemessage
+	if(!flag(FLAG_GOT_WISHING_STAR_VERDANTURF))
+	{
+		msgbox(format("I've been wishing on these rocks, but they haven't helped much. Maybe they'll help you?"))
+		closemessage
+		giveitem(ITEM_WISHING_STAR, 3)
+	}
+	release
+	end
+
+}

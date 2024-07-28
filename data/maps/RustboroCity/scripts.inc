@@ -2275,7 +2275,7 @@ RustboroCity_Text_PleaseComeWithMe:
 # 1138 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayHiLetsRegister:
 # 1139 "data/maps/RustboroCity/scripts.pory"
-	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "LYRA: Oh, hi, {PLAYER}{KUN}!\p"
 # 1140 "data/maps/RustboroCity/scripts.pory"
 	.string "You had a MATCH CALL feature put\n"
 # 1141 "data/maps/RustboroCity/scripts.pory"
@@ -2291,7 +2291,7 @@ RustboroCity_Text_MayHiLetsRegister:
 # 1146 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_RegisteredMay:
 # 1147 "data/maps/RustboroCity/scripts.pory"
-	.string "Registered MAY\n"
+	.string "Registered LYRA\n"
 # 1148 "data/maps/RustboroCity/scripts.pory"
 	.string "in the POKéNAV.$"
 # 1149 "data/maps/RustboroCity/scripts.pory"
@@ -2299,7 +2299,7 @@ RustboroCity_Text_RegisteredMay:
 # 1150 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayPassedBrineyWantToBattle:
 # 1151 "data/maps/RustboroCity/scripts.pory"
-	.string "MAY: Oh, by the way, I passed\n"
+	.string "LYRA: Oh, by the way, I passed\n"
 # 1152 "data/maps/RustboroCity/scripts.pory"
 	.string "MR. BRINEY in PETALBURG WOODS.\p"
 # 1153 "data/maps/RustboroCity/scripts.pory"
@@ -2319,7 +2319,7 @@ RustboroCity_Text_MayPassedBrineyWantToBattle:
 # 1160 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
 # 1161 "data/maps/RustboroCity/scripts.pory"
-	.string "MAY: Oh, what's the matter?\p"
+	.string "LYRA: Oh, what's the matter?\p"
 # 1162 "data/maps/RustboroCity/scripts.pory"
 	.string "Haven't you caught or raised your\n"
 # 1163 "data/maps/RustboroCity/scripts.pory"
@@ -2331,7 +2331,7 @@ RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
 # 1166 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayWantToBattle:
 # 1167 "data/maps/RustboroCity/scripts.pory"
-	.string "MAY: So, what do you think?\n"
+	.string "LYRA: So, what do you think?\n"
 # 1168 "data/maps/RustboroCity/scripts.pory"
 	.string "How about a little battle here?$"
 # 1169 "data/maps/RustboroCity/scripts.pory"
@@ -2339,7 +2339,7 @@ RustboroCity_Text_MayWantToBattle:
 # 1170 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayImNotGoingToLose:
 # 1171 "data/maps/RustboroCity/scripts.pory"
-	.string "MAY: You just became a TRAINER,\n"
+	.string "LYRA: You just became a TRAINER,\n"
 # 1172 "data/maps/RustboroCity/scripts.pory"
 	.string "{PLAYER}{KUN}. I'm not going to lose!$"
 # 1173 "data/maps/RustboroCity/scripts.pory"
@@ -2355,7 +2355,7 @@ RustboroCity_Text_MayDefeat:
 # 1178 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayMrBrineyHint:
 # 1179 "data/maps/RustboroCity/scripts.pory"
-	.string "MAY: Oh, by the way, MR. BRINEY, who\n"
+	.string "LYRA: Oh, by the way, MR. BRINEY, who\n"
 # 1180 "data/maps/RustboroCity/scripts.pory"
 	.string "I just passed…\p"
 # 1181 "data/maps/RustboroCity/scripts.pory"
@@ -2369,7 +2369,7 @@ RustboroCity_Text_MayMrBrineyHint:
 # 1185 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanHiLetsRegister:
 # 1186 "data/maps/RustboroCity/scripts.pory"
-	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
+	.string "ETHAN: Oh, hey, {PLAYER}!\p"
 # 1187 "data/maps/RustboroCity/scripts.pory"
 	.string "You had a MATCH CALL feature put\n"
 # 1188 "data/maps/RustboroCity/scripts.pory"
@@ -2385,7 +2385,7 @@ RustboroCity_Text_BrendanHiLetsRegister:
 # 1193 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_RegisteredBrendan:
 # 1194 "data/maps/RustboroCity/scripts.pory"
-	.string "Registered BRENDAN\n"
+	.string "Registered ETHAN\n"
 # 1195 "data/maps/RustboroCity/scripts.pory"
 	.string "in the POKéNAV.$"
 # 1196 "data/maps/RustboroCity/scripts.pory"
@@ -2393,7 +2393,7 @@ RustboroCity_Text_RegisteredBrendan:
 # 1197 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 # 1198 "data/maps/RustboroCity/scripts.pory"
-	.string "BRENDAN: By the way, {PLAYER}, I walked\n"
+	.string "ETHAN: By the way, {PLAYER}, I walked\n"
 # 1199 "data/maps/RustboroCity/scripts.pory"
 	.string "by MR. BRINEY in PETALBURG WOODS.\p"
 # 1200 "data/maps/RustboroCity/scripts.pory"
@@ -2415,7 +2415,7 @@ RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 # 1208 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanNoConfidenceInPokemon:
 # 1209 "data/maps/RustboroCity/scripts.pory"
-	.string "BRENDAN: What's the matter? Don't have\n"
+	.string "ETHAN: What's the matter? Don't have\n"
 # 1210 "data/maps/RustboroCity/scripts.pory"
 	.string "any confidence in your POKéMON?$"
 # 1211 "data/maps/RustboroCity/scripts.pory"
@@ -2423,7 +2423,7 @@ RustboroCity_Text_BrendanNoConfidenceInPokemon:
 # 1212 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanWantToBattle:
 # 1213 "data/maps/RustboroCity/scripts.pory"
-	.string "BRENDAN: What's up?\n"
+	.string "ETHAN: What's up?\n"
 # 1214 "data/maps/RustboroCity/scripts.pory"
 	.string "Want to have a battle with me?$"
 # 1215 "data/maps/RustboroCity/scripts.pory"
@@ -2431,7 +2431,7 @@ RustboroCity_Text_BrendanWantToBattle:
 # 1216 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanIWontGoEasy:
 # 1217 "data/maps/RustboroCity/scripts.pory"
-	.string "BRENDAN: I know you just became\n"
+	.string "ETHAN: I know you just became\n"
 # 1218 "data/maps/RustboroCity/scripts.pory"
 	.string "a TRAINER, but I won't go easy!$"
 # 1219 "data/maps/RustboroCity/scripts.pory"
@@ -2447,7 +2447,7 @@ RustboroCity_Text_BrendanDefeat:
 # 1224 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanMrBrineyHint:
 # 1225 "data/maps/RustboroCity/scripts.pory"
-	.string "BRENDAN: By the way, you know\n"
+	.string "ETHAN: By the way, you know\n"
 # 1226 "data/maps/RustboroCity/scripts.pory"
 	.string "MR. BRINEY? The guy I just passed?\p"
 # 1227 "data/maps/RustboroCity/scripts.pory"
@@ -2612,7 +2612,7 @@ RustboroCity_EventScript_WishingWell::
 	compare VAR_RESULT, 1
 	goto_if_eq RustboroCity_EventScript_WishingWell_2
 RustboroCity_EventScript_WishingWell_1:
-# 1557 "data/maps/RustboroCity/scripts.pory"
+# 1561 "data/maps/RustboroCity/scripts.pory"
 	releaseall
 	end
 
@@ -2636,76 +2636,76 @@ RustboroCity_EventScript_WishingWell_4:
 # 1324 "data/maps/RustboroCity/scripts.pory"
 	closemessage
 # 1327 "data/maps/RustboroCity/scripts.pory"
-	randomelement SPECIES_BULBASAUR, SPECIES_CHARMANDER, SPECIES_SQUIRTLE, SPECIES_CATERPIE, SPECIES_CATERPIE, SPECIES_WEEDLE, SPECIES_WEEDLE, SPECIES_PIDGEY, SPECIES_PIDGEY, SPECIES_RATTATA, SPECIES_RATTATA, SPECIES_SPEAROW, SPECIES_SPEAROW, SPECIES_EKANS, SPECIES_EKANS, SPECIES_SANDSHREW, SPECIES_SANDSHREW, SPECIES_NIDORAN_F, SPECIES_NIDORAN_F, SPECIES_NIDORAN_M, SPECIES_NIDORAN_M, SPECIES_VULPIX, SPECIES_ZUBAT, SPECIES_ODDISH, SPECIES_PARAS, SPECIES_VENONAT, SPECIES_DIGLETT, SPECIES_MEOWTH, SPECIES_PSYDUCK, SPECIES_MANKEY, SPECIES_GROWLITHE, SPECIES_POLIWAG, SPECIES_POLIWAG, SPECIES_ABRA, SPECIES_MACHOP, SPECIES_BELLSPROUT, SPECIES_TENTACOOL, SPECIES_GEODUDE, SPECIES_PONYTA, SPECIES_SLOWPOKE, SPECIES_SLOWPOKE, SPECIES_MAGNEMITE, SPECIES_FARFETCHD, SPECIES_DODUO, SPECIES_SEEL, SPECIES_GRIMER, SPECIES_SHELLDER, SPECIES_GASTLY, SPECIES_ONIX, SPECIES_DROWZEE, SPECIES_KRABBY, SPECIES_VOLTORB, SPECIES_EXEGGCUTE, SPECIES_CUBONE, SPECIES_CUBONE, SPECIES_LICKITUNG, SPECIES_KOFFING, SPECIES_RHYHORN, SPECIES_HAPPINY, SPECIES_TANGELA, SPECIES_TANGELA, SPECIES_KANGASKHAN, SPECIES_HORSEA, SPECIES_GOLDEEN, SPECIES_STARYU, SPECIES_MIME_JR, SPECIES_SCYTHER, SPECIES_PINSIR, SPECIES_TAUROS, SPECIES_MAGIKARP, SPECIES_MAGIKARP, SPECIES_LAPRAS, SPECIES_DITTO, SPECIES_EEVEE, SPECIES_PORYGON, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_AERODACTYL, SPECIES_MUNCHLAX, SPECIES_DRATINI, SPECIES_CHIKORITA, SPECIES_TOTODILE, SPECIES_SENTRET, SPECIES_SENTRET, SPECIES_HOOTHOOT, SPECIES_HOOTHOOT, SPECIES_LEDYBA, SPECIES_LEDYBA, SPECIES_SPINARAK, SPECIES_CHINCHOU, SPECIES_PICHU, SPECIES_CLEFFA, SPECIES_IGGLYBUFF, SPECIES_TOGEPI, SPECIES_NATU, SPECIES_MAREEP, SPECIES_BONSLY, SPECIES_HOPPIP, SPECIES_HOPPIP, SPECIES_AIPOM, SPECIES_AIPOM, SPECIES_SUNKERN, SPECIES_SUNKERN, SPECIES_YANMA, SPECIES_WOOPER, SPECIES_MURKROW, SPECIES_MISDREAVUS, SPECIES_GIRAFARIG, SPECIES_PINECO, SPECIES_DUNSPARCE, SPECIES_GLIGAR, SPECIES_SNUBBULL, SPECIES_SNUBBULL, SPECIES_QWILFISH, SPECIES_SHUCKLE, SPECIES_HERACROSS, SPECIES_SNEASEL, SPECIES_TEDDIURSA, SPECIES_SLUGMA, SPECIES_SWINUB, SPECIES_CORSOLA, SPECIES_REMORAID, SPECIES_DELIBIRD, SPECIES_MANTYKE, SPECIES_SKARMORY, SPECIES_HOUNDOUR, SPECIES_PHANPY, SPECIES_STANTLER, SPECIES_SMEARGLE, SPECIES_TYROGUE, SPECIES_SMOOCHUM, SPECIES_ELEKID, SPECIES_MAGBY, SPECIES_MILTANK, SPECIES_LARVITAR, SPECIES_TREECKO, SPECIES_TORCHIC, SPECIES_MUDKIP, SPECIES_POOCHYENA, SPECIES_POOCHYENA, SPECIES_ZIGZAGOON, SPECIES_ZIGZAGOON, SPECIES_WURMPLE, SPECIES_WURMPLE, SPECIES_LOTAD, SPECIES_LOTAD, SPECIES_SEEDOT, SPECIES_SEEDOT, SPECIES_NINCADA, SPECIES_NINCADA, SPECIES_TAILLOW, SPECIES_TAILLOW, SPECIES_SHROOMISH, SPECIES_SHROOMISH, SPECIES_SPINDA, SPECIES_WINGULL, SPECIES_SURSKIT, SPECIES_WAILMER, SPECIES_SKITTY, SPECIES_SKITTY, SPECIES_KECLEON, SPECIES_BALTOY, SPECIES_NOSEPASS, SPECIES_TORKOAL, SPECIES_SABLEYE, SPECIES_BARBOACH, SPECIES_LUVDISC, SPECIES_CORPHISH, SPECIES_FEEBAS, SPECIES_CARVANHA, SPECIES_TRAPINCH, SPECIES_MAKUHITA, SPECIES_ELECTRIKE, SPECIES_NUMEL, SPECIES_SPHEAL, SPECIES_CACNEA, SPECIES_SNORUNT, SPECIES_LUNATONE, SPECIES_SOLROCK, SPECIES_AZURILL, SPECIES_SPOINK, SPECIES_PLUSLE, SPECIES_MINUN, SPECIES_MAWILE, SPECIES_MEDITITE, SPECIES_MEDITITE, SPECIES_SWABLU, SPECIES_SWABLU, SPECIES_WYNAUT, SPECIES_DUSKULL, SPECIES_BUDEW, SPECIES_SLAKOTH, SPECIES_GULPIN, SPECIES_TROPIUS, SPECIES_WHISMUR, SPECIES_CLAMPERL, SPECIES_ABSOL, SPECIES_SHUPPET, SPECIES_SEVIPER, SPECIES_ZANGOOSE, SPECIES_RELICANTH, SPECIES_ARON, SPECIES_CASTFORM, SPECIES_VOLBEAT, SPECIES_ILLUMISE, SPECIES_LILEEP, SPECIES_ANORITH, SPECIES_RALTS, SPECIES_BAGON, SPECIES_BELDUM, SPECIES_CHINGLING
-# 1539 "data/maps/RustboroCity/scripts.pory"
+	randomelement SPECIES_BULBASAUR, SPECIES_CHARMANDER, SPECIES_SQUIRTLE, SPECIES_CATERPIE, SPECIES_CATERPIE, SPECIES_WEEDLE, SPECIES_WEEDLE, SPECIES_PIDGEY, SPECIES_PIDGEY, SPECIES_RATTATA, SPECIES_RATTATA, SPECIES_SPEAROW, SPECIES_SPEAROW, SPECIES_EKANS, SPECIES_EKANS, SPECIES_SANDSHREW, SPECIES_SANDSHREW, SPECIES_NIDORAN_F, SPECIES_NIDORAN_F, SPECIES_NIDORAN_M, SPECIES_NIDORAN_M, SPECIES_VULPIX, SPECIES_ZUBAT, SPECIES_ODDISH, SPECIES_PARAS, SPECIES_VENONAT, SPECIES_DIGLETT, SPECIES_MEOWTH, SPECIES_PSYDUCK, SPECIES_MANKEY, SPECIES_GROWLITHE, SPECIES_POLIWAG, SPECIES_POLIWAG, SPECIES_ABRA, SPECIES_MACHOP, SPECIES_BELLSPROUT, SPECIES_TENTACOOL, SPECIES_GEODUDE, SPECIES_PONYTA, SPECIES_SLOWPOKE, SPECIES_SLOWPOKE, SPECIES_MAGNEMITE, SPECIES_FARFETCHD, SPECIES_DODUO, SPECIES_SEEL, SPECIES_GRIMER, SPECIES_SHELLDER, SPECIES_GASTLY, SPECIES_ONIX, SPECIES_DROWZEE, SPECIES_KRABBY, SPECIES_VOLTORB, SPECIES_EXEGGCUTE, SPECIES_CUBONE, SPECIES_CUBONE, SPECIES_LICKITUNG, SPECIES_KOFFING, SPECIES_RHYHORN, SPECIES_HAPPINY, SPECIES_TANGELA, SPECIES_TANGELA, SPECIES_KANGASKHAN, SPECIES_HORSEA, SPECIES_GOLDEEN, SPECIES_STARYU, SPECIES_MIME_JR, SPECIES_SCYTHER, SPECIES_PINSIR, SPECIES_TAUROS, SPECIES_MAGIKARP, SPECIES_MAGIKARP, SPECIES_LAPRAS, SPECIES_DITTO, SPECIES_EEVEE, SPECIES_PORYGON, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_AERODACTYL, SPECIES_MUNCHLAX, SPECIES_DRATINI, SPECIES_CHIKORITA, SPECIES_TOTODILE, SPECIES_SENTRET, SPECIES_SENTRET, SPECIES_HOOTHOOT, SPECIES_HOOTHOOT, SPECIES_LEDYBA, SPECIES_LEDYBA, SPECIES_SPINARAK, SPECIES_CHINCHOU, SPECIES_PICHU, SPECIES_CLEFFA, SPECIES_IGGLYBUFF, SPECIES_TOGEPI, SPECIES_NATU, SPECIES_MAREEP, SPECIES_BONSLY, SPECIES_HOPPIP, SPECIES_HOPPIP, SPECIES_AIPOM, SPECIES_AIPOM, SPECIES_SUNKERN, SPECIES_SUNKERN, SPECIES_YANMA, SPECIES_WOOPER, SPECIES_MURKROW, SPECIES_MISDREAVUS, SPECIES_GIRAFARIG, SPECIES_PINECO, SPECIES_DUNSPARCE, SPECIES_GLIGAR, SPECIES_SNUBBULL, SPECIES_SNUBBULL, SPECIES_QWILFISH, SPECIES_SHUCKLE, SPECIES_HERACROSS, SPECIES_SNEASEL, SPECIES_TEDDIURSA, SPECIES_SLUGMA, SPECIES_SWINUB, SPECIES_CORSOLA, SPECIES_REMORAID, SPECIES_DELIBIRD, SPECIES_MANTYKE, SPECIES_SKARMORY, SPECIES_HOUNDOUR, SPECIES_PHANPY, SPECIES_STANTLER, SPECIES_SMEARGLE, SPECIES_TYROGUE, SPECIES_SMOOCHUM, SPECIES_ELEKID, SPECIES_MAGBY, SPECIES_MILTANK, SPECIES_LARVITAR, SPECIES_TREECKO, SPECIES_TORCHIC, SPECIES_MUDKIP, SPECIES_POOCHYENA, SPECIES_POOCHYENA, SPECIES_ZIGZAGOON, SPECIES_ZIGZAGOON, SPECIES_WURMPLE, SPECIES_WURMPLE, SPECIES_LOTAD, SPECIES_LOTAD, SPECIES_SEEDOT, SPECIES_SEEDOT, SPECIES_NINCADA, SPECIES_NINCADA, SPECIES_TAILLOW, SPECIES_TAILLOW, SPECIES_SHROOMISH, SPECIES_SHROOMISH, SPECIES_SPINDA, SPECIES_WINGULL, SPECIES_SURSKIT, SPECIES_WAILMER, SPECIES_SKITTY, SPECIES_SKITTY, SPECIES_KECLEON, SPECIES_BALTOY, SPECIES_NOSEPASS, SPECIES_TORKOAL, SPECIES_SABLEYE, SPECIES_BARBOACH, SPECIES_LUVDISC, SPECIES_CORPHISH, SPECIES_FEEBAS, SPECIES_CARVANHA, SPECIES_TRAPINCH, SPECIES_MAKUHITA, SPECIES_ELECTRIKE, SPECIES_NUMEL, SPECIES_SPHEAL, SPECIES_CACNEA, SPECIES_SNORUNT, SPECIES_LUNATONE, SPECIES_SOLROCK, SPECIES_AZURILL, SPECIES_SPOINK, SPECIES_PLUSLE, SPECIES_MINUN, SPECIES_MAWILE, SPECIES_MEDITITE, SPECIES_MEDITITE, SPECIES_SWABLU, SPECIES_SWABLU, SPECIES_WYNAUT, SPECIES_DUSKULL, SPECIES_BUDEW, SPECIES_SLAKOTH, SPECIES_GULPIN, SPECIES_TROPIUS, SPECIES_WHISMUR, SPECIES_CLAMPERL, SPECIES_ABSOL, SPECIES_SHUPPET, SPECIES_SEVIPER, SPECIES_ZANGOOSE, SPECIES_RELICANTH, SPECIES_ARON, SPECIES_CASTFORM, SPECIES_VOLBEAT, SPECIES_ILLUMISE, SPECIES_LILEEP, SPECIES_ANORITH, SPECIES_RALTS, SPECIES_BAGON, SPECIES_BELDUM, SPECIES_CHINGLING, SPECIES_SANDSHREW_ALOLAN, SPECIES_VULPIX_ALOLAN, SPECIES_DIGLETT_ALOLAN, SPECIES_GEODUDE_ALOLAN
+# 1543 "data/maps/RustboroCity/scripts.pory"
 	givemon VAR_RESULT, 1
-# 1540 "data/maps/RustboroCity/scripts.pory"
+# 1544 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroCity_EventScript_WishingWell_Text_4
-# 1541 "data/maps/RustboroCity/scripts.pory"
+# 1545 "data/maps/RustboroCity/scripts.pory"
 	closemessage
-# 1542 "data/maps/RustboroCity/scripts.pory"
+# 1546 "data/maps/RustboroCity/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq RustboroCity_EventScript_WishingWell_6
-# 1549 "data/maps/RustboroCity/scripts.pory"
+# 1553 "data/maps/RustboroCity/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
-# 1550 "data/maps/RustboroCity/scripts.pory"
+# 1554 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroCity_EventScript_WishingWell_Text_5
-# 1551 "data/maps/RustboroCity/scripts.pory"
+# 1555 "data/maps/RustboroCity/scripts.pory"
 	closemessage
 	goto RustboroCity_EventScript_WishingWell_1
 
 RustboroCity_EventScript_WishingWell_6:
-# 1544 "data/maps/RustboroCity/scripts.pory"
+# 1548 "data/maps/RustboroCity/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 1545 "data/maps/RustboroCity/scripts.pory"
+# 1549 "data/maps/RustboroCity/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto RustboroCity_EventScript_WishingWell_1
 
 
 RustboroCity_EventScript_LittleGirlWithWishingStar::
-# 1565 "data/maps/RustboroCity/scripts.pory"
+# 1569 "data/maps/RustboroCity/scripts.pory"
 	lock
-# 1566 "data/maps/RustboroCity/scripts.pory"
+# 1570 "data/maps/RustboroCity/scripts.pory"
 	faceplayer
-# 1567 "data/maps/RustboroCity/scripts.pory"
+# 1571 "data/maps/RustboroCity/scripts.pory"
 	goto_if_unset FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL, RustboroCity_EventScript_LittleGirlWithWishingStar_2
-# 1578 "data/maps/RustboroCity/scripts.pory"
+# 1582 "data/maps/RustboroCity/scripts.pory"
 	msgbox RustboroCity_EventScript_LittleGirlWithWishingStar_Text_2
-# 1579 "data/maps/RustboroCity/scripts.pory"
+# 1583 "data/maps/RustboroCity/scripts.pory"
 	closemessage
 RustboroCity_EventScript_LittleGirlWithWishingStar_1:
-# 1581 "data/maps/RustboroCity/scripts.pory"
+# 1585 "data/maps/RustboroCity/scripts.pory"
 	release
 	end
 
 RustboroCity_EventScript_LittleGirlWithWishingStar_2:
-# 1569 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_EventScript_LittleGirlWithWishingStar_Text_0
-# 1570 "data/maps/RustboroCity/scripts.pory"
-	closemessage
-# 1571 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_EventScript_LittleGirlWithWishingStar_Text_1
-# 1572 "data/maps/RustboroCity/scripts.pory"
-	closemessage
 # 1573 "data/maps/RustboroCity/scripts.pory"
-	giveitem ITEM_WISHING_STAR, 5
+	msgbox RustboroCity_EventScript_LittleGirlWithWishingStar_Text_0
 # 1574 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1575 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_LittleGirlWithWishingStar_Text_1
+# 1576 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1577 "data/maps/RustboroCity/scripts.pory"
+	giveitem ITEM_WISHING_STAR, 5
+# 1578 "data/maps/RustboroCity/scripts.pory"
 	setflag FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL
 	goto RustboroCity_EventScript_LittleGirlWithWishingStar_1
 
 
 RustboroCity_EventScript_WishingWellSign::
-# 1589 "data/maps/RustboroCity/scripts.pory"
-	lock
-# 1590 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_EventScript_WishingWellSign_Text_0
-# 1591 "data/maps/RustboroCity/scripts.pory"
-	closemessage
-# 1592 "data/maps/RustboroCity/scripts.pory"
-	msgbox RustboroCity_EventScript_WishingWellSign_Text_1
 # 1593 "data/maps/RustboroCity/scripts.pory"
-	closemessage
+	lock
 # 1594 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_WishingWellSign_Text_0
+# 1595 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1596 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_WishingWellSign_Text_1
+# 1597 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+# 1598 "data/maps/RustboroCity/scripts.pory"
 	release
 	end
 
@@ -2728,38 +2728,38 @@ RustboroCity_EventScript_WishingWell_Text_3:
 	.string "...  ...  ...  ...!$"
 
 RustboroCity_EventScript_WishingWell_Text_4:
-# 1540 "data/maps/RustboroCity/scripts.pory"
+# 1544 "data/maps/RustboroCity/scripts.pory"
 	.string "A POKé BALL appeared... containing a\n"
 	.string "POKéMON!$"
 
 RustboroCity_EventScript_WishingWell_Text_5:
-# 1550 "data/maps/RustboroCity/scripts.pory"
+# 1554 "data/maps/RustboroCity/scripts.pory"
 	.string "The POKéMON was sent to the PC.$"
 
 RustboroCity_EventScript_LittleGirlWithWishingStar_Text_0:
-# 1569 "data/maps/RustboroCity/scripts.pory"
+# 1573 "data/maps/RustboroCity/scripts.pory"
 	.string "See that over there?\n"
 	.string "That's the last part of OLD RUSTBORO,\l"
 	.string "the TOWN that was here before!$"
 
 RustboroCity_EventScript_LittleGirlWithWishingStar_Text_1:
-# 1571 "data/maps/RustboroCity/scripts.pory"
+# 1575 "data/maps/RustboroCity/scripts.pory"
 	.string "Sometimes, my friends and me throw\n"
 	.string "Wishing Stars down the Wishing Well!\l"
 	.string "Here's a few for you!$"
 
 RustboroCity_EventScript_LittleGirlWithWishingStar_Text_2:
-# 1578 "data/maps/RustboroCity/scripts.pory"
+# 1582 "data/maps/RustboroCity/scripts.pory"
 	.string "Did you get anything cool from the\n"
 	.string "Wishing Well?$"
 
 RustboroCity_EventScript_WishingWellSign_Text_0:
-# 1590 "data/maps/RustboroCity/scripts.pory"
+# 1594 "data/maps/RustboroCity/scripts.pory"
 	.string "OLD RUSTBORO PARK\n"
 	.string "To Honor Our Roots.$"
 
 RustboroCity_EventScript_WishingWellSign_Text_1:
-# 1592 "data/maps/RustboroCity/scripts.pory"
+# 1596 "data/maps/RustboroCity/scripts.pory"
 	.string "There's more scribbled on here...\p"
 	.string "Use Wishing Stars at the Wishing Well!\n"
 	.string "Old ITEMS and even POKéMON are\l"

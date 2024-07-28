@@ -49,6 +49,8 @@ High Priority (Before Release 1.0):
 - Mystery Gift Codes feature branch (rare candy cheat? MAKE A POLL)
 - Change Brendan and May string names to Ethan and Lyra based on poll results
 - Random nicknames option?
+- Full screen start menu? could be cool
+- PLAY THROUGH THE GAME! First do my own playthrough and keep a list of bugs on phone, then release a public development build
 
 Later Additions (After Release 1.0):
 - Make changes to Aqua/Magma dialogue!

@@ -559,7 +559,7 @@ LavaridgeTown_EventScript_HerbShopSign::
 # 280 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
 # 281 "data/maps/LavaridgeTown/scripts.pory"
-	.string "MAY: {PLAYER}{KUN}! Long time no see!\p"
+	.string "LYRA: {PLAYER}{KUN}! Long time no see!\p"
 # 282 "data/maps/LavaridgeTown/scripts.pory"
 	.string "Oh? While I visited the hot springs,\n"
 # 283 "data/maps/LavaridgeTown/scripts.pory"
@@ -579,7 +579,7 @@ LavaridgeTown_Text_MayNiceBadgesTakeThis:
 # 290 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 # 291 "data/maps/LavaridgeTown/scripts.pory"
-	.string "MAY: With those GO-GOGGLES, you'll\n"
+	.string "LYRA: With those GO-GOGGLES, you'll\n"
 # 292 "data/maps/LavaridgeTown/scripts.pory"
 	.string "have no trouble getting through the\l"
 # 293 "data/maps/LavaridgeTown/scripts.pory"
@@ -603,7 +603,7 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 # 302 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
 # 303 "data/maps/LavaridgeTown/scripts.pory"
-	.string "BRENDAN: {PLAYER}, hey, it's been a while.\n"
+	.string "ETHAN: {PLAYER}, hey, it's been a while.\n"
 # 304 "data/maps/LavaridgeTown/scripts.pory"
 	.string "How's it going?\p"
 # 305 "data/maps/LavaridgeTown/scripts.pory"
@@ -619,7 +619,7 @@ LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
 # 310 "data/maps/LavaridgeTown/scripts.pory"
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
 # 311 "data/maps/LavaridgeTown/scripts.pory"
-	.string "BRENDAN: Keep those with you if you're\n"
+	.string "ETHAN: Keep those with you if you're\n"
 # 312 "data/maps/LavaridgeTown/scripts.pory"
 	.string "planning on going into that desert near\l"
 # 313 "data/maps/LavaridgeTown/scripts.pory"

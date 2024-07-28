@@ -827,7 +827,7 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 # 414 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_MayShoppingLetsBattle:
 # 415 "data/maps/LilycoveCity/scripts.pory"
-	.string "MAY: Oh, hey?\n"
+	.string "LYRA: Oh, hey?\n"
 # 416 "data/maps/LilycoveCity/scripts.pory"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"
 # 417 "data/maps/LilycoveCity/scripts.pory"
@@ -853,7 +853,7 @@ LilycoveCity_Text_MayShoppingLetsBattle:
 # 427 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_MayNotRaisingPokemon:
 # 428 "data/maps/LilycoveCity/scripts.pory"
-	.string "MAY: Oh, why? {PLAYER}{KUN}, haven't you\n"
+	.string "LYRA: Oh, why? {PLAYER}{KUN}, haven't you\n"
 # 429 "data/maps/LilycoveCity/scripts.pory"
 	.string "been raising your POKéMON?\p"
 # 430 "data/maps/LilycoveCity/scripts.pory"
@@ -865,7 +865,7 @@ LilycoveCity_Text_MayNotRaisingPokemon:
 # 433 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_MayBattleMe:
 # 434 "data/maps/LilycoveCity/scripts.pory"
-	.string "MAY: Come on, battle with me, so I can\n"
+	.string "LYRA: Come on, battle with me, so I can\n"
 # 435 "data/maps/LilycoveCity/scripts.pory"
 	.string "check out your POKéMON!$"
 # 436 "data/maps/LilycoveCity/scripts.pory"
@@ -873,7 +873,7 @@ LilycoveCity_Text_MayBattleMe:
 # 437 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_MayWontBeBeaten:
 # 438 "data/maps/LilycoveCity/scripts.pory"
-	.string "MAY: The POKéMON I raised won't be\n"
+	.string "LYRA: The POKéMON I raised won't be\n"
 # 439 "data/maps/LilycoveCity/scripts.pory"
 	.string "beaten by your POKéMON, {PLAYER}{KUN}!$"
 # 440 "data/maps/LilycoveCity/scripts.pory"
@@ -895,7 +895,7 @@ LilycoveCity_Text_MayDefeat:
 # 448 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_MayGoingBackToLittleroot:
 # 449 "data/maps/LilycoveCity/scripts.pory"
-	.string "MAY: I'm thinking of going back to\n"
+	.string "LYRA: I'm thinking of going back to\n"
 # 450 "data/maps/LilycoveCity/scripts.pory"
 	.string "LITTLEROOT soon.\p"
 # 451 "data/maps/LilycoveCity/scripts.pory"
@@ -967,7 +967,7 @@ LilycoveCity_Text_MayYouGoingToBattleFrontier:
 # 484 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_BrendanShoppingLetsBattle:
 # 485 "data/maps/LilycoveCity/scripts.pory"
-	.string "BRENDAN: Oh, hey, it's {PLAYER}.\p"
+	.string "ETHAN: Oh, hey, it's {PLAYER}.\p"
 # 486 "data/maps/LilycoveCity/scripts.pory"
 	.string "I'm running an errand for my dad.\n"
 # 487 "data/maps/LilycoveCity/scripts.pory"
@@ -983,7 +983,7 @@ LilycoveCity_Text_BrendanShoppingLetsBattle:
 # 492 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_BrendanNoConfidence:
 # 493 "data/maps/LilycoveCity/scripts.pory"
-	.string "BRENDAN: Oh, what's the matter?\n"
+	.string "ETHAN: Oh, what's the matter?\n"
 # 494 "data/maps/LilycoveCity/scripts.pory"
 	.string "Don't have the confidence?$"
 # 495 "data/maps/LilycoveCity/scripts.pory"
@@ -991,7 +991,7 @@ LilycoveCity_Text_BrendanNoConfidence:
 # 496 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_BrendanBattleMe:
 # 497 "data/maps/LilycoveCity/scripts.pory"
-	.string "BRENDAN: Want to battle to see who's\n"
+	.string "ETHAN: Want to battle to see who's\n"
 # 498 "data/maps/LilycoveCity/scripts.pory"
 	.string "been raising POKéMON better?$"
 # 499 "data/maps/LilycoveCity/scripts.pory"
@@ -999,7 +999,7 @@ LilycoveCity_Text_BrendanBattleMe:
 # 500 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_BrendanWontBeBeaten:
 # 501 "data/maps/LilycoveCity/scripts.pory"
-	.string "BRENDAN: Aww, but you know I'm not\n"
+	.string "ETHAN: Aww, but you know I'm not\n"
 # 502 "data/maps/LilycoveCity/scripts.pory"
 	.string "going to lose to no {PLAYER}.$"
 # 503 "data/maps/LilycoveCity/scripts.pory"
@@ -1019,7 +1019,7 @@ LilycoveCity_Text_BrendanDefeat:
 # 510 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_BrendanGoingBackToLittleroot:
 # 511 "data/maps/LilycoveCity/scripts.pory"
-	.string "BRENDAN: I…\n"
+	.string "ETHAN: I…\n"
 # 512 "data/maps/LilycoveCity/scripts.pory"
 	.string "I plan on going home to LITTLEROOT.\p"
 # 513 "data/maps/LilycoveCity/scripts.pory"

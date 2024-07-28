@@ -639,7 +639,7 @@ RivalsHouse_2F_Text_MayWhoAreYou:
 # 320 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "So your move was today.\p"
 # 321 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	.string "Um… I'm MAY.\n"
+	.string "Um… I'm LYRA.\n"
 # 322 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "Glad to meet you!\p"
 # 323 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -701,7 +701,7 @@ RivalsHouse_2F_Text_BrendanWhoAreYou:
 # 351 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "kid, so I assumed you'd be a guy.\p"
 # 352 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	.string "My name's BRENDAN.\n"
+	.string "My name's ETHAN.\n"
 # 353 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "So, hi, neighbor!\p"
 # 354 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -739,7 +739,7 @@ RivalsHouse_2F_Text_ItsRivalsPokeBall:
 # 370 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
 # 371 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	.string "MAY: {PLAYER}{KUN}!\p"
+	.string "LYRA: {PLAYER}{KUN}!\p"
 # 372 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "I was just checking my POKéDEX.\p"
 # 373 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -759,7 +759,7 @@ RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
 # 380 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 RivalsHouse_2F_Text_MayWhereShouldIGoNext:
 # 381 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	.string "MAY: I wonder where I should go catch\n"
+	.string "LYRA: I wonder where I should go catch\n"
 # 382 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "some POKéMON next?\p"
 # 383 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -771,7 +771,7 @@ RivalsHouse_2F_Text_MayWhereShouldIGoNext:
 # 386 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
 # 387 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	.string "BRENDAN: Hey, it's {PLAYER}.\p"
+	.string "ETHAN: Hey, it's {PLAYER}.\p"
 # 388 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "I was just checking out my POKéDEX.\p"
 # 389 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
@@ -789,7 +789,7 @@ RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
 # 395 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:
 # 396 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	.string "BRENDAN: I'm having a hard time deciding\n"
+	.string "ETHAN: I'm having a hard time deciding\n"
 # 397 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "where I should catch POKéMON next.\p"
 # 398 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
