@@ -49,8 +49,6 @@ High Priority (Before Release 1.0):
 - Mystery Gift Codes feature branch (rare candy cheat? MAKE A POLL)
 - Change Brendan and May string names to Ethan and Lyra based on poll results
 - Random nicknames option?
-- Implement Alolan Geodude line (SageDeoxys sprites)
-- FAIRY type icon messed up on TM screen
 
 Later Additions (After Release 1.0):
 - Make changes to Aqua/Magma dialogue!

@@ -7582,13 +7582,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sGravelerAlolanLevelUpLearnset,
         .teachableLearnset = sGravelerAlolanTeachableLearnset,
         .formSpeciesIdTable = sGravelerFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOLEM_ALOLAN},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOLEM_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOLEM_ALOLAN}),
     },
 
     [SPECIES_GOLEM_ALOLAN] =
     {
-        .baseHP        = 80,
+        .baseHP        = 85,
         .baseAttack    = GOLEM_ATTACK,
         .baseDefense   = 130,
         .baseSpeed     = 45,

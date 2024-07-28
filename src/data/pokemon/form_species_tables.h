@@ -251,25 +251,25 @@ static const u16 sMachampFormSpeciesIdTable[] = {
 #if P_FAMILY_GEODUDE
 static const u16 sGeodudeFormSpeciesIdTable[] = {
     SPECIES_GEODUDE,
-// #if P_ALOLAN_FORMS
-//     SPECIES_GEODUDE_ALOLAN,
-// #endif
+#if P_ALOLAN_FORMS
+    SPECIES_GEODUDE_ALOLAN,
+#endif
     FORM_SPECIES_END,
 };
 
 static const u16 sGravelerFormSpeciesIdTable[] = {
     SPECIES_GRAVELER,
-// #if P_ALOLAN_FORMS
-//     SPECIES_GRAVELER_ALOLAN,
-// #endif
+#if P_ALOLAN_FORMS
+    SPECIES_GRAVELER_ALOLAN,
+#endif
     FORM_SPECIES_END,
 };
 
 static const u16 sGolemFormSpeciesIdTable[] = {
     SPECIES_GOLEM,
-// #if P_ALOLAN_FORMS
-//     SPECIES_GOLEM_ALOLAN,
-// #endif
+#if P_ALOLAN_FORMS
+    SPECIES_GOLEM_ALOLAN,
+#endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_GEODUDE

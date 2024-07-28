@@ -1653,12 +1653,12 @@ MossdeepCity_GameCorner_RarePokemonVendor::
 # 851 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	compare VAR_PINBALL_POINTS, 2
 	goto_if_ge MossdeepCity_GameCorner_RarePokemonVendor_5
-# 864 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 862 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_3
-# 865 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 863 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	closemessage
 MossdeepCity_GameCorner_RarePokemonVendor_1:
-# 868 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 866 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	release
 	end
 
@@ -1676,9 +1676,9 @@ MossdeepCity_GameCorner_RarePokemonVendor_5:
 	closemessage
 # 855 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	subvar VAR_PINBALL_POINTS, 2
-# 859 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	randomelement SPECIES_EXEGGUTOR_ALOLAN, SPECIES_GRIMER_ALOLAN, SPECIES_MAROWAK_ALOLAN, SPECIES_MEOWTH_ALOLAN, SPECIES_RAICHU_ALOLAN, SPECIES_VULPIX_ALOLAN, SPECIES_SANDSHREW_ALOLAN, SPECIES_DIGLETT_ALOLAN
-# 860 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 857 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	randomelement SPECIES_EXEGGUTOR_ALOLAN, SPECIES_GRIMER_ALOLAN, SPECIES_MAROWAK_ALOLAN, SPECIES_MEOWTH_ALOLAN, SPECIES_RAICHU_ALOLAN, SPECIES_VULPIX_ALOLAN, SPECIES_SANDSHREW_ALOLAN, SPECIES_DIGLETT_ALOLAN, SPECIES_GEODUDE_ALOLAN
+# 858 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	giveegg VAR_RESULT
 	goto MossdeepCity_GameCorner_RarePokemonVendor_1
 
