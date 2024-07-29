@@ -1017,6 +1017,296 @@ EventScript_VsSeekerChargingDone::
 	releaseall
 	end
 
+@ Call this script anywhere to access the Mystery Gift Code System
+Common_EventScript_MysteryGift::
+	lockall
+	@ goto_if_unset FLAG_SYS_GAME_CLEAR, MysteryGift_EventScript_CurrentlyUnavailable
+MysteryGift_EventScript_StartMysteryGift::
+	msgbox MysteryGift_Text_WelcomeToMysteryGiftSystem, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
+MysteryGift_EventScript_DoMysteryGift::
+	msgbox MysteryGift_Text_EnterCode, MSGBOX_AUTOCLOSE
+	special EnterMysteryGiftCode
+	waitstate
+	special GetMysteryGiftFeedback
+	goto_if_eq VAR_RESULT, 0, MysteryGift_Failed
+	goto_if_eq VAR_RESULT, 1, MysteryGift_EventScript_RareCandies
+	goto_if_eq VAR_RESULT, 2, MysteryGift_EventScript_MasterBalls
+	goto_if_eq VAR_RESULT, 3, MysteryGift_EventScript_Spheal
+	goto_if_eq VAR_RESULT, 4, MysteryGift_EventScript_Aipom
+	goto_if_eq VAR_RESULT, 5, MysteryGift_EventScript_GiveKantoStarters
+	goto_if_eq VAR_RESULT, 6, MysteryGift_EventScript_GiveJohtoStarters
+	goto_if_eq VAR_RESULT, 7, MysteryGift_EventScript_GiveHoennStarters
+	goto_if_eq VAR_RESULT, 8, MysteryGift_EventScript_Applin
+	goto_if_eq VAR_RESULT, 9, MysteryGift_EventScript_Tinkatink
+	end
+
+MysteryGift_Failed::
+	msgbox MysteryGift_Text_FailedText, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
+	goto MysteryGift_EventScript_DoMysteryGift
+	end
+
+MysteryGift_EventScript_Redeemed::
+	msgbox MysteryGift_Text_RedeemedText, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
+	goto MysteryGift_EventScript_DoMysteryGift
+	end
+
+MysteryGift_EventScript_CurrentlyUnavailable::
+	msgbox MysteryGift_Text_CurrentlyUnavailable, MSGBOX_DEFAULT
+	releaseall
+	end
+
+MysteryGift_EventScript_Exit::
+	releaseall
+	end
+
+MysteryGift_EventScript_ReceivedMon::
+	msgbox MysteryGift_Text_SucceededText, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	message MysteryGift_Text_ReceivedGiftMon
+	waitfanfare
+    goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, MysteryGift_EventScript_NicknamePartyMon
+    goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, MysteryGift_EventScript_NicknamePCMon
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+MysteryGift_EventScript_NicknamePartyMon::
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
+	call Common_EventScript_GetGiftMonPartySlot 
+	call Common_EventScript_NameReceivedPartyMon 
+	goto MysteryGift_EventScript_Exit
+	end
+
+MysteryGift_EventScript_NicknamePCMon::
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO 
+	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_TransferredToPC
+	call Common_EventScript_NameReceivedBoxMon
+	call Common_EventScript_TransferredToPC
+	goto MysteryGift_EventScript_Exit
+	end
+
+MysteryGift_EventScript_TransferredToPC::
+	call Common_EventScript_TransferredToPC
+	goto MysteryGift_EventScript_Exit
+	end
+
+MysteryGift_EventScript_RareCandies::
+	giveitem ITEM_RARE_CANDY, 99
+	releaseall
+	end
+
+MysteryGift_EventScript_MasterBalls::
+	giveitem ITEM_MASTER_BALL, 99
+	releaseall
+	end
+
+MysteryGift_EventScript_Spheal::
+	bufferspeciesname STR_VAR_1, SPECIES_SPHEAL
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SPHEAL
+	givemon SPECIES_SPHEAL, 5, ITEM_BIG_PEARL, ITEM_DIVE_BALL, NATURE_SERIOUS, 1, MON_FEMALE, 252, 0, 128, 0, 6, 128, 31, 31, 31, 31, 31, 31, MOVE_BOUNCY_BUBBLE, MOVE_SUPER_FANG, MOVE_SLACK_OFF, MOVE_FREEZE_DRY, FALSE, FALSE, TYPE_WATER
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Aipom::
+	bufferspeciesname STR_VAR_1, SPECIES_AIPOM
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_AIPOM
+	givemon SPECIES_AIPOM, 5, ITEM_EVIOLITE, ITEM_PREMIER_BALL, NATURE_ADAMANT, 0, MON_FEMALE, 6, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_DIZZY_PUNCH, MOVE_KARATE_CHOP, MOVE_VICTORY_DANCE, MOVE_BULLET_PUNCH, FALSE, FALSE, TYPE_NORMAL
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_GiveKantoStarters::
+	bufferspeciesname STR_VAR_1, SPECIES_BULBASAUR
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BULBASAUR
+	givemon SPECIES_BULBASAUR, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_SQUIRTLE
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SQUIRTLE
+	givemon SPECIES_SQUIRTLE, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_CHARMANDER
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHARMANDER
+	givemon SPECIES_CHARMANDER, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_GiveJohtoStarters::
+	bufferspeciesname STR_VAR_1, SPECIES_CHIKORITA
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHIKORITA
+	givemon SPECIES_CHIKORITA, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_TOTODILE
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE
+	givemon SPECIES_TOTODILE, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_CYNDAQUIL
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CYNDAQUIL
+	givemon SPECIES_CYNDAQUIL, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_GiveHoennStarters::
+	bufferspeciesname STR_VAR_1, SPECIES_TREECKO
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TREECKO
+	givemon SPECIES_TREECKO, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_MUDKIP
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MUDKIP
+	givemon SPECIES_MUDKIP, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_TORCHIC
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TORCHIC
+	givemon SPECIES_TORCHIC, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Applin::
+	bufferspeciesname STR_VAR_1, SPECIES_APPLIN
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_APPLIN
+	givemon SPECIES_APPLIN, 5, ITEM_SYRUPY_APPLE, ITEM_PREMIER_BALL
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Tinkatink::
+	bufferspeciesname STR_VAR_1, SPECIES_TINKATINK
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TINKATINK
+	givemon SPECIES_TINKATINK, 5, ITEM_NUGGET, ITEM_PREMIER_BALL
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+
+@ Gift code examples
+MysteryGift_EventScript_Celebi::
+	goto_if_set FLAG_MYSTERY_GIFT_1, MysteryGift_EventScript_Redeemed
+	bufferspeciesname STR_VAR_1, SPECIES_CELEBI
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CELEBI
+	givemon SPECIES_CELEBI, 100, ITEM_LIFE_ORB, ITEM_CHERISH_BALL, NATURE_TIMID, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 30, 31, 31, MOVE_ENERGY_BALL, MOVE_PSYCHIC, MOVE_NASTY_PLOT, MOVE_CELEBRATE, TRUE, FALSE, TYPE_PSYCHIC
+	setflag FLAG_MYSTERY_GIFT_1
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Jirachi::
+	goto_if_set FLAG_MYSTERY_GIFT_2, MysteryGift_EventScript_Redeemed
+	bufferspeciesname STR_VAR_1, SPECIES_JIRACHI
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_JIRACHI
+	givemon SPECIES_JIRACHI, 100, ITEM_LIFE_ORB, ITEM_CHERISH_BALL, NATURE_ADAMANT, 0, MON_GENDERLESS, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_IRON_HEAD, MOVE_ZEN_HEADBUTT, MOVE_PLAY_ROUGH, MOVE_CELEBRATE, TRUE, FALSE, TYPE_STEEL
+	setflag FLAG_MYSTERY_GIFT_2
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Manaphy::
+	goto_if_set FLAG_MYSTERY_GIFT_3, MysteryGift_EventScript_Redeemed
+	bufferspeciesname STR_VAR_1, SPECIES_MANAPHY
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MANAPHY
+	givemon SPECIES_MANAPHY, 100, ITEM_LEFTOVERS, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_TAIL_GLOW, MOVE_SCALD, MOVE_STORED_POWER, MOVE_CELEBRATE, TRUE, FALSE, TYPE_WATER
+	setflag FLAG_MYSTERY_GIFT_3
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Shaymin::
+	goto_if_set FLAG_MYSTERY_GIFT_4, MysteryGift_EventScript_Redeemed
+	bufferspeciesname STR_VAR_1, SPECIES_SHAYMIN
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SHAYMIN
+	givemon SPECIES_SHAYMIN_LAND, 100, ITEM_CHOICE_SCARF, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_SEED_FLARE, MOVE_PSYCHIC, MOVE_HEALING_WISH, MOVE_CELEBRATE, TRUE, FALSE, TYPE_GRASS
+	setflag FLAG_MYSTERY_GIFT_4
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Victini::
+	goto_if_set FLAG_MYSTERY_GIFT_5, MysteryGift_EventScript_Redeemed
+	bufferspeciesname STR_VAR_1, SPECIES_VICTINI
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_VICTINI
+	givemon SPECIES_VICTINI, 100, ITEM_CHOICE_SCARF, ITEM_CHERISH_BALL, NATURE_ADAMANT, 0, MON_GENDERLESS, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_V_CREATE, MOVE_FUSION_FLARE, MOVE_FUSION_BOLT, MOVE_CELEBRATE, TRUE, FALSE, TYPE_FIRE
+	setflag FLAG_MYSTERY_GIFT_5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Meloetta::
+	goto_if_set FLAG_MYSTERY_GIFT_6, MysteryGift_EventScript_Redeemed
+	bufferspeciesname STR_VAR_1, SPECIES_MELOETTA_ARIA
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELOETTA_ARIA
+	givemon SPECIES_MELOETTA_ARIA, 100, ITEM_CHOICE_SCARF, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_HYPER_VOICE, MOVE_AURA_SPHERE, MOVE_PSYSHOCK, MOVE_CELEBRATE, TRUE, FALSE, TYPE_NORMAL
+	setflag FLAG_MYSTERY_GIFT_6
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Hoopa::
+	goto_if_set FLAG_MYSTERY_GIFT_7, MysteryGift_EventScript_Redeemed
+	bufferspeciesname STR_VAR_1, SPECIES_HOOPA_CONFINED
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_HOOPA_CONFINED
+	givemon SPECIES_HOOPA_CONFINED, 100, ITEM_CHOICE_SPECS, ITEM_CHERISH_BALL, NATURE_TIMID, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_SHADOW_BALL, MOVE_PSYSHOCK, MOVE_HYPERSPACE_HOLE, MOVE_CELEBRATE, TRUE, FALSE, TYPE_PSYCHIC
+	setflag FLAG_MYSTERY_GIFT_7
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Marshadow::
+	goto_if_set FLAG_MYSTERY_GIFT_8, MysteryGift_EventScript_Redeemed
+	bufferspeciesname STR_VAR_1, SPECIES_MARSHADOW
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MARSHADOW
+	givemon SPECIES_MARSHADOW, 100, ITEM_LIFE_ORB, ITEM_CHERISH_BALL, NATURE_JOLLY, 0, MON_GENDERLESS, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SPECTRAL_THIEF, MOVE_ROCK_TOMB, MOVE_CLOSE_COMBAT, MOVE_CELEBRATE, TRUE, FALSE, TYPE_GHOST
+	setflag FLAG_MYSTERY_GIFT_8
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Pecharunt::
+	goto_if_set FLAG_MYSTERY_GIFT_9, MysteryGift_EventScript_Redeemed
+	bufferspeciesname STR_VAR_1, SPECIES_PECHARUNT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PECHARUNT
+	givemon SPECIES_PECHARUNT, 100, ITEM_LIFE_ORB, ITEM_CHERISH_BALL, NATURE_MODEST, 0, MON_GENDERLESS, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_MALIGNANT_CHAIN, MOVE_HEX, MOVE_RECOVER, MOVE_CELEBRATE, TRUE, FALSE, TYPE_POISON
+	setflag FLAG_MYSTERY_GIFT_9
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_Text_WelcomeToMysteryGiftSystem:
+	.string "{PLAYER} turned on the CHEAT DEVICE!\p"
+	.string "Prepare a GIFT CODE to enter.\p"
+	.string "Would you like to enter a code?$"
+
+MysteryGift_Text_CurrentlyUnavailable:
+	.string "I'm sorry, but the Mystery Gift System\n"
+	.string "is currently unavailable.\p"
+	.string "Please try again later.\p"
+	.string "Thank you!$"
+
+MysteryGift_Text_PleaseVisitAgain:
+	.string "Please visit again!$"
+
+MysteryGift_Text_EnterCode:
+	.string "Please enter the code.$"
+
+MysteryGift_Text_SucceededText:
+	.string "The code was valid!\p"
+	.string "$"
+
+MysteryGift_Text_FailedText:
+	.string "The code was invalid!\p"
+	.string "Would you like to enter a new code?$"
+
+MysteryGift_Text_RedeemedText:
+	.string "This code was already redeemed!\p"
+	.string "Would you like you enter a new code?$"
+
+MysteryGift_Text_ReceivedGiftMon:
+	.string "{PLAYER} received a {STR_VAR_1}!$"
+
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"
 	.include "data/scripts/abnormal_weather.inc"

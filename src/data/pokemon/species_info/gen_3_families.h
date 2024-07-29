@@ -5538,7 +5538,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Trapinch)
         .levelUpLearnset = sTrapinchLevelUpLearnset,
         .teachableLearnset = sTrapinchTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_VIBRAVA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_VIBRAVA}),
     },
 
     [SPECIES_VIBRAVA] =
@@ -7533,7 +7533,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_TROPIUS] =
     {
         .baseHP        = 109,
-        .baseAttack    = 74,
+        .baseAttack    = 84,
         .baseDefense   = 91,
         .baseSpeed     = 51,
         .baseSpAttack  = 88,

@@ -3,6 +3,7 @@
 Rom Hack based on Pokémon Emerald Expansion.
 
 Documentation on Encounters and Pokémon Typing can be found (here)[https://docs.google.com/document/d/1OszN1OpqSaCd1Xh4AFgchgvVfCOX5l2OIztPUgnbisU/edit?usp=sharing]
+My [Ko-Fi Website](https://ko-fi.com/nemo622) also has more information (and I accept donations!)
 
 ## What is special about this Rom Hack?
 
@@ -43,6 +44,8 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Press A in Summary Screen to view IVs and EVs; All Pokémon have at least 2 perfect IV's
     - Legendaries can all be encountered, many before Elite Four - details in documentation
     - Pokémon Box Link, allowing access to PC from anywhere (obtained from Scientist NPC in Slateport City Pokémon Center)
+    - Cheat Codes / Mystery Gift function! Interact with GameCube in Player's room
+        - Codes can provide Rare Candies, Master Balls, and a few cool Pokémon (Codes listed in documentation!)
 
 ## FUTURE PLANS
 
@@ -66,6 +69,12 @@ Later Additions (After Release 1.0):
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
 - Look into music modding! Convert sound font to be more like gen 2?
     - Some RSE music in 8 bit style by Mixeli on youtube
+
+TODO CHANGES BASED ON PLAYTHROUGH:
+Balance changes:
+- 
+Bug Fixes:
+- 
 
 ## KNOWN BUGS & PROBLEMS
 

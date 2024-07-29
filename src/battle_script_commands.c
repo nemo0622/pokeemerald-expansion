@@ -8,6 +8,8 @@
 #include "battle_z_move.h"
 #include "constants/moves.h"
 #include "constants/abilities.h"
+#include "decompress.h"
+#include "event_data.h"
 #include "item.h"
 #include "util.h"
 #include "pokemon.h"
@@ -40,6 +42,7 @@
 #include "rtc.h"
 #include "party_menu.h"
 #include "battle_arena.h"
+#include "graphics.h"
 #include "battle_pike.h"
 #include "battle_pyramid.h"
 #include "field_specials.h"
@@ -15436,11 +15439,17 @@ static void Cmd_displaydexinfo(void)
             ShowBg(0);
             ShowBg(3);
             gBattleCommunication[0]++;
+
+            LZDecompressVram(gBattleTerrainTiles_GSC, (void *)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(gBattleTerrainTilemap_GSC, (void *)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(gBattleTerrainPalette_GSC, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
         }
         break;
     case 5:
         if (!gPaletteFade.active)
+        {
             gBattlescriptCurrInstr = cmd->nextInstr;
+        }
         break;
     }
 }

@@ -27,6 +27,7 @@
 #include "mystery_gift.h"
 #include "match_call.h"
 #include "menu.h"
+#include "naming_screen.h"
 #include "overworld.h"
 #include "party_menu.h"
 #include "pokedex.h"
@@ -4368,4 +4369,55 @@ bool8 CheckPartyForMon(void)
             return TRUE;
     }
     return FALSE;
+}
+
+void EnterMysteryGiftCode(void)
+{
+    DoNamingScreen(NAMING_SCREEN_MYSTERY_GIFT, gStringVar2, 0, 0, 0, CB2_ReturnToFieldContinueScript);
+}
+
+void GetMysteryGiftFeedback(void)
+{
+    // The codes.
+    static const u8 sText_CodeRareCandies[]    = _("9RARECANDY");
+    static const u8 sText_CodeMasterBalls[]   = _("MASTERBALL");
+    static const u8 sText_CodeSpheal[]   = _("ILOVSPHEAL");
+    static const u8 sText_CodeAipom[]   = _("ILOVEAIPOM");
+    static const u8 sText_CodeKantoStarters[]   = _("ILOVEKANTO");
+    static const u8 sText_CodeJohtoStarters[]  = _("ILOVEJOHTO");
+    static const u8 sText_CodeHoennStarters[]     = _("ILOVEHOENN");
+    static const u8 sText_CodeApplin[] = _("ILOVEAPPLE");
+    static const u8 sText_CodeTinkatink[] = _("ILOVETINKA");
+
+    // Code 1
+    if (!StringCompare(gStringVar2, sText_CodeRareCandies))
+        gSpecialVar_Result = 1;
+    // Code 2
+    else if (!StringCompare(gStringVar2, sText_CodeMasterBalls))
+        gSpecialVar_Result = 2;
+    // Code 3
+    else if (!StringCompare(gStringVar2, sText_CodeSpheal))
+        gSpecialVar_Result = 3;
+    // Code 4
+    else if (!StringCompare(gStringVar2, sText_CodeAipom))
+        gSpecialVar_Result = 4;
+    // Code 5
+    else if (!StringCompare(gStringVar2, sText_CodeKantoStarters))
+        gSpecialVar_Result = 5;
+    // Code 6
+    else if (!StringCompare(gStringVar2, sText_CodeJohtoStarters))
+        gSpecialVar_Result = 6;
+    // Code 7
+    else if (!StringCompare(gStringVar2, sText_CodeHoennStarters))
+        gSpecialVar_Result = 7;
+    // Code 8
+    else if (!StringCompare(gStringVar2, sText_CodeApplin))
+        gSpecialVar_Result = 8;
+    // Code 9
+    else if (!StringCompare(gStringVar2, sText_CodeTinkatink))
+        gSpecialVar_Result = 9;
+
+    // Invalid cheat code
+    else
+        gSpecialVar_Result = 0;
 }

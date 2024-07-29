@@ -560,3 +560,5 @@ gSpecials::
 	def_special CheckPartyForMon
 	def_special EnterDivingMinigame
 	def_special ExitDivingMinigame
+	def_special EnterMysteryGiftCode
+	def_special GetMysteryGiftFeedback
