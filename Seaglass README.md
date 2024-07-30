@@ -50,7 +50,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 ## FUTURE PLANS
 
 High Priority (Before Release 1.0):
-- Mystery Gift Codes feature branch (rare candy cheat? MAKE A POLL)
 - Random nicknames option?
 - PLAY THROUGH THE GAME! First do my own playthrough and keep a list of bugs on phone, then release a public development build
 
@@ -74,6 +73,8 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
+- 
+Other Changes:
 - 
 
 ## KNOWN BUGS & PROBLEMS
