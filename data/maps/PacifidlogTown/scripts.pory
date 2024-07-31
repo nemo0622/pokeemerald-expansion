@@ -479,6 +479,7 @@ script PacifidlogTown_EventScript_ExitDivingMinigame
 {
 	lockall
 	turnplayer(DIR_NORTH)
+	clearflag(FLAG_HIDE_MAP_NAME_POPUP)
 
 	// Competitors splash out of the water
 	if(flag(FLAG_SCUBA_COMPETITOR_1))
@@ -686,6 +687,7 @@ script PacifidlogTown_EventScript_ExitDivingMinigameAllPokemonFainted
 {
 	lockall
 	turnplayer(DIR_NORTH)
+	clearflag(FLAG_HIDE_MAP_NAME_POPUP)
 	msgbox(format("Woah there! Looks like the POKéMON down there were a bit strong! I'll heal you up."))
 	closemessage
 	special(HealPlayerParty)

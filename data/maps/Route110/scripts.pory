@@ -1,8 +1,8 @@
 raw `
-.set LOCALID_CHALLENGE_BIKER, 21
-.set LOCALID_RIVAL, 28
-.set LOCALID_RIVAL_ON_BIKE, 29
-.set LOCALID_BIRCH, 36
+.set LOCALID_CHALLENGE_BIKER, 40
+.set LOCALID_RIVAL, 18
+.set LOCALID_RIVAL_ON_BIKE, 19
+.set LOCALID_BIRCH, 26
 
 Route110_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route110_OnResume
@@ -638,6 +638,7 @@ Route110_EventScript_BirchScene::
 	call_if_eq VAR_0x8008, 4, Route110_EventScript_BirchExit4
 	removeobject LOCALID_BIRCH
 	setvar VAR_REGISTER_BIRCH_STATE, 2
+	setflag FLAG_HIDE_ROUTE_110_BIRCH
 	releaseall
 	end
 

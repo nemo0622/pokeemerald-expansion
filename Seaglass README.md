@@ -52,6 +52,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 High Priority (Before Release 1.0):
 - Random nicknames option?
 - PLAY THROUGH THE GAME! First do my own playthrough and keep a list of bugs on phone, then release a public development build
+- Add some more of Arex's tiles as decorations - farm tiles, etc
 
 BEFORE PUBLIC RELEASE:
 - Look into submission to Eevee Expo 4
@@ -73,7 +74,7 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- 
+- Replace water route drop down with something not shit
 Other Changes:
 - 
 
@@ -82,6 +83,7 @@ Other Changes:
 - Visuals Issues:
     - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
     - A few rare tile misalignments are possible, but should be rare
+    - Type Effectiveness in battle isn't shown in double battles
 - Other issues:
     - Pinball physics are far from perfect, but tbh I think that adds to the charm lol
 

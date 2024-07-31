@@ -1228,8 +1228,8 @@
 #define FLAG_ITEM_WISHING_STAR_SLATEPORT                            0x49A
 #define FLAG_ITEM_WISHING_STAR_ROUTE_111                            0x49B
 #define FLAG_ITEM_WISHING_STAR_ROUTE_114                            0x49C 
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
+#define FLAG_ITEM_LINKING_CORD_ROUTE_119                            0x49D
+#define FLAG_ITEM_LINKING_CORD_2_ROUTE_119                          0x49E
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
