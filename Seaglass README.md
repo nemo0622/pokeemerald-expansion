@@ -74,7 +74,7 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- Fossil maniac house has wrong collision
+- 
 Other Changes:
 - 
 

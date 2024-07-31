@@ -1643,11 +1643,7 @@ LilycoveCity_EventScript_ScubaSafariResetSailor_Text_2:
 	.string "I got it! You seem like the adventurous\n"
 	.string "sort, I'm sure you've tried the SCUBA\l"
 	.string "SAFARI in PACIFIDLOG TOWN. I'm the\l"
-	.string "brother of the SAILOR who runs it!\p"
-	.string "How about I send him a message to reset\n"
-	.string "your high score, eh? Then you can get\l"
-	.string "those sweet, sweet high score rewards?\l"
-	.string "I'll only charge you a bit!$"
+	.string "brother of the SAILOR who runs it!$"
 
 LilycoveCity_EventScript_ScubaSafariResetSailor_Text_3:
 # 782 "data/maps/LilycoveCity/scripts.pory"

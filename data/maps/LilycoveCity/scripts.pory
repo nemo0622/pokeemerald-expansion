@@ -776,7 +776,7 @@ script LilycoveCity_EventScript_ScubaSafariResetSailor
 	msgbox(format("Hey, you! This isn't any of your busines- ahem, I mean, what do you need? How can I get you to leave?"))
 	closemessage
 	delay(30)
-	msgbox(format("I got it! You seem like the adventurous sort, I'm sure you've tried the SCUBA SAFARI in PACIFIDLOG TOWN. I'm the brother of the SAILOR who runs it!\p How about I send him a message to reset your high score, eh? Then you can get those sweet, sweet high score rewards? I'll only charge you a bit!"))
+	msgbox(format("I got it! You seem like the adventurous sort, I'm sure you've tried the SCUBA SAFARI in PACIFIDLOG TOWN. I'm the brother of the SAILOR who runs it!"))
 	closemessage
 	showmoneybox(0, 0)
 	msgbox(format("How about I send him a message to reset your high score, eh? Then you can get those sweet, sweet high score rewards? I'll only charge you a bit!"), MSGBOX_YESNO)
