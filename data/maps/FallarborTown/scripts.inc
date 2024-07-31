@@ -229,37 +229,25 @@ FallarborTown_EventScript_ProfElm::
 	waitfanfare
 # 144 "data/maps/FallarborTown/scripts.pory"
 	closemessage
+# 146 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_ProfElm_Text_7
 # 147 "data/maps/FallarborTown/scripts.pory"
-	compare VAR_RESULT, MON_GIVEN_TO_PARTY
-	goto_if_eq FallarborTown_EventScript_ProfElm_9
-# 158 "data/maps/FallarborTown/scripts.pory"
-	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
-# 159 "data/maps/FallarborTown/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq FallarborTown_EventScript_ProfElm_15
-FallarborTown_EventScript_ProfElm_14:
-# 163 "data/maps/FallarborTown/scripts.pory"
-	call Common_EventScript_TransferredToPC
-FallarborTown_EventScript_ProfElm_8:
-# 166 "data/maps/FallarborTown/scripts.pory"
-	msgbox FallarborTown_EventScript_ProfElm_Text_8
-# 167 "data/maps/FallarborTown/scripts.pory"
 	closemessage
-# 168 "data/maps/FallarborTown/scripts.pory"
+# 148 "data/maps/FallarborTown/scripts.pory"
 	setflag FLAG_COMPLETED_PICHU_QUEST
-# 169 "data/maps/FallarborTown/scripts.pory"
+# 149 "data/maps/FallarborTown/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 170 "data/maps/FallarborTown/scripts.pory"
+# 150 "data/maps/FallarborTown/scripts.pory"
 	removeobject 18
-# 171 "data/maps/FallarborTown/scripts.pory"
+# 151 "data/maps/FallarborTown/scripts.pory"
 	delay 60
-# 172 "data/maps/FallarborTown/scripts.pory"
+# 152 "data/maps/FallarborTown/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 173 "data/maps/FallarborTown/scripts.pory"
+# 153 "data/maps/FallarborTown/scripts.pory"
 	releaseall
 	end
 
-# 178 "data/maps/FallarborTown/scripts.pory"
+# 158 "data/maps/FallarborTown/scripts.pory"
 	releaseall
 	end
 
@@ -292,26 +280,6 @@ FallarborTown_EventScript_ProfElm_5:
 # 131 "data/maps/FallarborTown/scripts.pory"
 	releaseall
 	end
-
-FallarborTown_EventScript_ProfElm_9:
-# 149 "data/maps/FallarborTown/scripts.pory"
-	msgbox FallarborTown_EventScript_ProfElm_Text_7, MSGBOX_YESNO
-# 150 "data/maps/FallarborTown/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq FallarborTown_EventScript_ProfElm_12
-	goto FallarborTown_EventScript_ProfElm_8
-
-FallarborTown_EventScript_ProfElm_12:
-# 152 "data/maps/FallarborTown/scripts.pory"
-	call Common_EventScript_GetGiftMonPartySlot
-# 153 "data/maps/FallarborTown/scripts.pory"
-	call Common_EventScript_NameReceivedPartyMon
-	goto FallarborTown_EventScript_ProfElm_8
-
-FallarborTown_EventScript_ProfElm_15:
-# 161 "data/maps/FallarborTown/scripts.pory"
-	call Common_EventScript_NameReceivedBoxMon
-	goto FallarborTown_EventScript_ProfElm_14
 
 
 FallarborTown_EventScript_ProfElm_Text_0:
@@ -357,12 +325,7 @@ FallarborTown_EventScript_ProfElm_Text_6:
 	.string "{PLAYER} received a special Pichu!$"
 
 FallarborTown_EventScript_ProfElm_Text_7:
-# 149 "data/maps/FallarborTown/scripts.pory"
-	.string "Give a nickname to the Spiky Eared\n"
-	.string "Pichu?$"
-
-FallarborTown_EventScript_ProfElm_Text_8:
-# 166 "data/maps/FallarborTown/scripts.pory"
+# 146 "data/maps/FallarborTown/scripts.pory"
 	.string "That Pichu is special! The scientists in\n"
 	.string "JOHTO believe she traveled through\l"
 	.string "time with Celebi, so it has unique stats\l"

@@ -143,26 +143,6 @@ script FallarborTown_EventScript_ProfElm
 			waitfanfare
 			closemessage
 
-			// do different things if it went to party or pc
-			if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY)
-			{
-				msgbox(format("Give a nickname to the Spiky Eared Pichu?"), MSGBOX_YESNO)
-				if(var(VAR_RESULT) == 1)
-				{
-					call(Common_EventScript_GetGiftMonPartySlot)
-					call(Common_EventScript_NameReceivedPartyMon)
-				}
-			}
-			else
-			{
-				msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
-				if(var(VAR_RESULT) == 1)
-				{
-					call(Common_EventScript_NameReceivedBoxMon)
-				}
-				call(Common_EventScript_TransferredToPC)
-			}
-
 			msgbox(format("That Pichu is special! The scientists in JOHTO believe she traveled through time with Celebi, so it has unique stats and cannot evolve.\p She's been stuck in the lab for a while, but she always seems to want out. Now, she can go on an adventure with you!\p I should probably continue my travels. See you around, {PLAYER}!"))
 			closemessage
 			setflag(FLAG_COMPLETED_PICHU_QUEST)

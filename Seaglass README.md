@@ -74,7 +74,7 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- Replace water route drop down with something not shit
+- 
 Other Changes:
 - 
 
