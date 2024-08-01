@@ -48,7 +48,7 @@ LavaridgeTown_HerbShop_EventScript_ExplainCharcoal::
 	end
 
 LavaridgeTown_HerbShop_Text_WelcomeToHerbShop:
-	.string "Welcome to the HERBS AD MORE SHOP,\n"
+	.string "Welcome to the HERBS AND MORE SHOP,\n"
 	.string "home of medicine and natural boosters!$"
 
 LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine:

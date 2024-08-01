@@ -515,7 +515,7 @@ static void HandleInputChooseTarget(u32 battler)
                     i++;
                     break;
                 }
-                // MoveSelectionDisplayMoveTypeDoubles(GetBattlerPosition(gMultiUsePlayerCursor), battler);
+                MoveSelectionDisplayMoveTypeDoubles(GetBattlerPosition(gMultiUsePlayerCursor), battler);
 
                 if (gAbsentBattlerFlags & gBitTable[gMultiUsePlayerCursor]
                  || !CanTargetBattler(battler, gMultiUsePlayerCursor, move))
@@ -566,7 +566,7 @@ static void HandleInputChooseTarget(u32 battler)
                     i++;
                     break;
                 }
-                // MoveSelectionDisplayMoveTypeDoubles(GetBattlerPosition(gMultiUsePlayerCursor), battler);
+                MoveSelectionDisplayMoveTypeDoubles(GetBattlerPosition(gMultiUsePlayerCursor), battler);
 
                 if (gAbsentBattlerFlags & gBitTable[gMultiUsePlayerCursor]
                  || !CanTargetBattler(battler, gMultiUsePlayerCursor, move))
@@ -792,6 +792,8 @@ static void HandleInputChooseMove(u32 battler)
                 gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
             else
                 gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+
+            MoveSelectionDisplayMoveTypeDoubles(GetBattlerPosition(gMultiUsePlayerCursor), battler);
 
             gSprites[gBattlerSpriteIds[gMultiUsePlayerCursor]].callback = SpriteCB_ShowAsMoveTarget;
             break;
@@ -1876,9 +1878,18 @@ static void MoveSelectionDisplayMoveType(u32 battler)
     else
         type = gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].type;
 
-    StringCopy(txtPtr, gTypesInfo[type].name);
-    BattlePutTextOnWindow(gDisplayedStringBattle, TypeEffectiveness(moveInfo, 1, battler));
-    // BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
+    if(gBattleResources->bufferA[battler][1]) // if it's a double battle
+    {
+        StringCopy(txtPtr, gTypesInfo[type].name);
+        BattlePutTextOnWindow(gDisplayedStringBattle, 10); // actual color handled in MoveSelectionDisplayMoveTypeDoubles
+        return;
+    }
+    else
+    {
+        StringCopy(txtPtr, gTypesInfo[type].name);
+        BattlePutTextOnWindow(gDisplayedStringBattle, TypeEffectiveness(moveInfo, 1, battler));
+        // BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
+    }
 }
 
 void MoveSelectionCreateCursorAt(u8 cursorPosition, u8 baseTileNum)

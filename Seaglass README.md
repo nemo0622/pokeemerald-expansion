@@ -50,9 +50,11 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 ## FUTURE PLANS
 
 High Priority (Before Release 1.0):
-- Random nicknames option?
-- PLAY THROUGH THE GAME! First do my own playthrough and keep a list of bugs on phone, then release a public development build
-- Add some more of Arex's tiles as decorations - farm tiles, etc
+- Complete playthrough of Pokémon Emerald Seaglass
+- GB Sounds feature branch (https://github.com/ShinyDragonHunter/pokeemerald/tree/GameboySounds)
+- Review [these feature branches](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches)
+    - Start menu clock!
+- Make Wallace appear more instead of Steven (basically just switch them)
 
 BEFORE PUBLIC RELEASE:
 - Look into submission to Eevee Expo 4
@@ -67,8 +69,7 @@ Later Additions (After Release 1.0):
 - Make Pokenews thing happen more often (Lilycove Dept. Store rooftop sales, Berry Blend master, etc)
 - After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
 - Day/Night system? Maybe with FakeRTC system using internal clock system?
-- Look into music modding! Convert sound font to be more like gen 2?
-    - Some RSE music in 8 bit style by Mixeli on youtube
+- Random nicknames option?
 
 TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:

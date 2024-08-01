@@ -99,7 +99,7 @@ LavaridgeTown_HerbShop_EventScript_ExplainCharcoal::
 # 50 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_Text_WelcomeToHerbShop:
 # 51 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
-	.string "Welcome to the HERBS AD MORE SHOP,\n"
+	.string "Welcome to the HERBS AND MORE SHOP,\n"
 # 52 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "home of medicine and natural boosters!$"
 # 53 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
