@@ -89,7 +89,6 @@ Other Changes:
 - Visuals Issues:
     - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
     - A few rare tile misalignments are possible, but should be rare
-    - Type Effectiveness in battle isn't shown in double battles
 - Other issues:
     - Pinball physics are far from perfect, but tbh I think that adds to the charm lol
 

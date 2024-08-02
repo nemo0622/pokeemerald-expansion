@@ -119,16 +119,16 @@ FallarborTown_BattleTentLobby_Text_LookingForwardToArrival:
 
 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "I welcome you to the BATTLE TENT\n"
-	.string "VERDANTURF SITE!\p"
+	.string "LILYCOVE SITE!\p"
 	.string "Here, the TRAINER's trust toward\n"
 	.string "POKéMON is tested.$"
 
 VerdanturfTown_BattleTentLobby_Text_TakeChallenge:
-	.string "Do you wish to take the VERDANTURF\n"
+	.string "Do you wish to take the LILYCOVE\n"
 	.string "BATTLE TENT challenge?$"
 
 VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent:
-	.string "In the VERDANTURF BATTLE TENT,\n"
+	.string "In the LILYCOVE BATTLE TENT,\n"
 	.string "there is one crucial rule that must\l"
 	.string "be obeyed.\p"
 	.string "TRAINERS are permitted only to switch\n"

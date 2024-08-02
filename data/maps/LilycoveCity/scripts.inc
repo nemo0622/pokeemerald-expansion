@@ -1169,7 +1169,7 @@ LilycoveCity_Text_ContestHallInTown:
 # 585 "data/maps/LilycoveCity/scripts.pory"
 	.string "It's so large, it's really more\n"
 # 586 "data/maps/LilycoveCity/scripts.pory"
-	.string "of a stadium. CONTESTS have moved\p"
+	.string "of a stadium. CONTESTS have moved\l"
 # 587 "data/maps/LilycoveCity/scripts.pory"
 	.string "to VERDANTURF TOWN!$"
 # 588 "data/maps/LilycoveCity/scripts.pory"

@@ -846,7 +846,7 @@ static void Task_TitleScreenPhase2(u8 taskId)
                                     | DISPCNT_BG1_ON
                                     | DISPCNT_BG2_ON
                                     | DISPCNT_OBJ_ON);
-        CreatePressStartBanner(START_BANNER_X, 108);
+        CreatePressStartBanner(START_BANNER_X, 83);
         CreateCopyrightBanner(START_BANNER_X, 148);
         CreateSprite(&sStarter1SpriteTemplate, 190, 100, 0);
         CreateSprite(&sStarter2SpriteTemplate, 120, 100, 0);
