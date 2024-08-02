@@ -55,6 +55,11 @@ High Priority (Before Release 1.0):
 - Review [these feature branches](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches)
     - Start menu clock!
 - Make Wallace appear more instead of Steven (basically just switch them)
+- More battle backgrounds:
+    - New background for "long grass" (areas around Fortree)
+        - Note: make sure moves that "overlay the screen" (ex: confusion) don't break it. lol
+    - "Volcanic" background on certain maps? Ashy northern route, jagged pass, mt. chimney
+    - Replace desert background with beach theme, and use true desert background only on desert map
 
 BEFORE PUBLIC RELEASE:
 - Look into submission to Eevee Expo 4
