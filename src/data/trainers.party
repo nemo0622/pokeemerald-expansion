@@ -1,0 +1,7824 @@
+=== TRAINER_NONE ===
+Name: None
+Class: Pkmn Trainer 1
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_SAWYER_1 ===
+Name: SAWYER
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GABRIELLE_1 ===
+Name: GABRIELLE
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_PETALBURG_WOODS ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARCEL ===
+Name: MARCEL
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ALBERTO ===
+Name: ALBERTO
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ED ===
+Name: ED
+Class: Collector
+Pic: Collector
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DECLAN ===
+Name: DECLAN
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_RUSTURF_TUNNEL ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_WEATHER_INST_1 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_WEATHER_INST_2 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_WEATHER_INST_3 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MUSEUM_1 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MUSEUM_2 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SPACE_CENTER_1 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MT_PYRE_1 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MT_PYRE_2 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MT_PYRE_3 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_WEATHER_INST_4 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_FREDRICK ===
+Name: FREDRICK
+Class: Expert
+Pic: Expert M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MATT ===
+Name: MATT
+Class: Aqua Admin
+Pic: Aqua Admin M
+Gender: None
+Music: None
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ZANDER ===
+Name: ZANDER
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SHELLY_WEATHER_INSTITUTE ===
+Name: SHELLY
+Class: Aqua Admin
+Pic: Aqua Admin F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SHELLY_SEAFLOOR_CAVERN ===
+Name: SHELLY
+Class: Aqua Admin
+Pic: Aqua Admin F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ARCHIE ===
+Name: ARCHIE
+Class: Aqua Leader
+Pic: Aqua Leader Archie
+Gender: None
+Music: None
+Items: Super Potion / Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_LEAH ===
+Name: LEAH
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DAISY ===
+Name: DAISY
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROSE_1 ===
+Name: ROSE
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_FELIX ===
+Name: FELIX
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_VIOLET ===
+Name: VIOLET
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROSE_2 ===
+Name: ROSE
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROSE_3 ===
+Name: ROSE
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROSE_4 ===
+Name: ROSE
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROSE_5 ===
+Name: ROSE
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DUSTY_1 ===
+Name: DUSTY
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CHIP ===
+Name: CHIP
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_FOSTER ===
+Name: FOSTER
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DUSTY_2 ===
+Name: DUSTY
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DUSTY_3 ===
+Name: DUSTY
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DUSTY_4 ===
+Name: DUSTY
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DUSTY_5 ===
+Name: DUSTY
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GABBY_AND_TY_1 ===
+Name: GABBY & TY
+Class: Interviewer
+Pic: Interviewer
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_GABBY_AND_TY_2 ===
+Name: GABBY & TY
+Class: Interviewer
+Pic: Interviewer
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_GABBY_AND_TY_3 ===
+Name: GABBY & TY
+Class: Interviewer
+Pic: Interviewer
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_GABBY_AND_TY_4 ===
+Name: GABBY & TY
+Class: Interviewer
+Pic: Interviewer
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_GABBY_AND_TY_5 ===
+Name: GABBY & TY
+Class: Interviewer
+Pic: Interviewer
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_GABBY_AND_TY_6 ===
+Name: GABBY & TY
+Class: Interviewer
+Pic: Interviewer
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_LOLA_1 ===
+Name: LOLA
+Class: Tuber F
+Pic: Tuber F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_AUSTINA ===
+Name: AUSTINA
+Class: Tuber F
+Pic: Tuber F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GWEN ===
+Name: GWEN
+Class: Tuber F
+Pic: Tuber F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LOLA_2 ===
+Name: LOLA
+Class: Tuber F
+Pic: Tuber F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LOLA_3 ===
+Name: LOLA
+Class: Tuber F
+Pic: Tuber F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LOLA_4 ===
+Name: LOLA
+Class: Tuber F
+Pic: Tuber F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LOLA_5 ===
+Name: LOLA
+Class: Tuber F
+Pic: Tuber F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RICKY_1 ===
+Name: RICKY
+Class: Tuber M
+Pic: Tuber M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SIMON ===
+Name: SIMON
+Class: Tuber M
+Pic: Tuber M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CHARLIE ===
+Name: CHARLIE
+Class: Tuber M
+Pic: Tuber M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RICKY_2 ===
+Name: RICKY
+Class: Tuber M
+Pic: Tuber M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RICKY_3 ===
+Name: RICKY
+Class: Tuber M
+Pic: Tuber M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RICKY_4 ===
+Name: RICKY
+Class: Tuber M
+Pic: Tuber M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RICKY_5 ===
+Name: RICKY
+Class: Tuber M
+Pic: Tuber M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RANDALL ===
+Name: RANDALL
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_PARKER ===
+Name: PARKER
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_GEORGE ===
+Name: GEORGE
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BERKE ===
+Name: BERKE
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRAXTON ===
+Name: BRAXTON
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_VINCENT ===
+Name: VINCENT
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_LEROY ===
+Name: LEROY
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WILTON_1 ===
+Name: WILTON
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_EDGAR ===
+Name: EDGAR
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ALBERT ===
+Name: ALBERT
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SAMUEL ===
+Name: SAMUEL
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_VITO ===
+Name: VITO
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_OWEN ===
+Name: OWEN
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WILTON_2 ===
+Name: WILTON
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WILTON_3 ===
+Name: WILTON
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WILTON_4 ===
+Name: WILTON
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WILTON_5 ===
+Name: WILTON
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WARREN ===
+Name: WARREN
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MARY ===
+Name: MARY
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ALEXIA ===
+Name: ALEXIA
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JODY ===
+Name: JODY
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_WENDY ===
+Name: WENDY
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_KEIRA ===
+Name: KEIRA
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_BROOKE_1 ===
+Name: BROOKE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JENNIFER ===
+Name: JENNIFER
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_HOPE ===
+Name: HOPE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SHANNON ===
+Name: SHANNON
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MICHELLE ===
+Name: MICHELLE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_CAROLINE ===
+Name: CAROLINE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JULIE ===
+Name: JULIE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BROOKE_2 ===
+Name: BROOKE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BROOKE_3 ===
+Name: BROOKE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BROOKE_4 ===
+Name: BROOKE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BROOKE_5 ===
+Name: BROOKE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_PATRICIA ===
+Name: PATRICIA
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KINDRA ===
+Name: KINDRA
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TAMMY ===
+Name: TAMMY
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_VALERIE_1 ===
+Name: VALERIE
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TASHA ===
+Name: TASHA
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_VALERIE_2 ===
+Name: VALERIE
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_VALERIE_3 ===
+Name: VALERIE
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_VALERIE_4 ===
+Name: VALERIE
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_VALERIE_5 ===
+Name: VALERIE
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CINDY_1 ===
+Name: CINDY
+Class: Lady
+Pic: Lady
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DAPHNE ===
+Name: DAPHNE
+Class: Lady
+Pic: Lady
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SPACE_CENTER_2 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CINDY_2 ===
+Name: CINDY
+Class: Lady
+Pic: Lady
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRIANNA ===
+Name: BRIANNA
+Class: Lady
+Pic: Lady
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NAOMI ===
+Name: NAOMI
+Class: Lady
+Pic: Lady
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CINDY_3 ===
+Name: CINDY
+Class: Lady
+Pic: Lady
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CINDY_4 ===
+Name: CINDY
+Class: Lady
+Pic: Lady
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CINDY_5 ===
+Name: CINDY
+Class: Lady
+Pic: Lady
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CINDY_6 ===
+Name: CINDY
+Class: Lady
+Pic: Lady
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MELISSA ===
+Name: MELISSA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SHEILA ===
+Name: SHEILA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SHIRLEY ===
+Name: SHIRLEY
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JESSICA_1 ===
+Name: JESSICA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CONNIE ===
+Name: CONNIE
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRIDGET ===
+Name: BRIDGET
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_OLIVIA ===
+Name: OLIVIA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TIFFANY ===
+Name: TIFFANY
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JESSICA_2 ===
+Name: JESSICA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JESSICA_3 ===
+Name: JESSICA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JESSICA_4 ===
+Name: JESSICA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JESSICA_5 ===
+Name: JESSICA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WINSTON_1 ===
+Name: WINSTON
+Class: Rich Boy
+Pic: Rich Boy
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MOLLIE ===
+Name: MOLLIE
+Class: Expert
+Pic: Expert F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GARRET ===
+Name: GARRET
+Class: Rich Boy
+Pic: Rich Boy
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WINSTON_2 ===
+Name: WINSTON
+Class: Rich Boy
+Pic: Rich Boy
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WINSTON_3 ===
+Name: WINSTON
+Class: Rich Boy
+Pic: Rich Boy
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WINSTON_4 ===
+Name: WINSTON
+Class: Rich Boy
+Pic: Rich Boy
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WINSTON_5 ===
+Name: WINSTON
+Class: Rich Boy
+Pic: Rich Boy
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_STEVE_1 ===
+Name: STEVE
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_THALIA_1 ===
+Name: THALIA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARK ===
+Name: MARK
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MT_CHIMNEY_1 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_STEVE_2 ===
+Name: STEVE
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_STEVE_3 ===
+Name: STEVE
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_STEVE_4 ===
+Name: STEVE
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_STEVE_5 ===
+Name: STEVE
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LUIS ===
+Name: LUIS
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DOMINIK ===
+Name: DOMINIK
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DOUGLAS ===
+Name: DOUGLAS
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DARRIN ===
+Name: DARRIN
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TONY_1 ===
+Name: TONY
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JEROME ===
+Name: JEROME
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MATTHEW ===
+Name: MATTHEW
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DAVID ===
+Name: DAVID
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SPENCER ===
+Name: SPENCER
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROLAND ===
+Name: ROLAND
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NOLEN ===
+Name: NOLEN
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_STAN ===
+Name: STAN
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BARRY ===
+Name: BARRY
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DEAN ===
+Name: DEAN
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RODNEY ===
+Name: RODNEY
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RICHARD ===
+Name: RICHARD
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HERMAN ===
+Name: HERMAN
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SANTIAGO ===
+Name: SANTIAGO
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GILBERT ===
+Name: GILBERT
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_FRANKLIN ===
+Name: FRANKLIN
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KEVIN ===
+Name: KEVIN
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JACK ===
+Name: JACK
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DUDLEY ===
+Name: DUDLEY
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CHAD ===
+Name: CHAD
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TONY_2 ===
+Name: TONY
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TONY_3 ===
+Name: TONY
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TONY_4 ===
+Name: TONY
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TONY_5 ===
+Name: TONY
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TAKAO ===
+Name: TAKAO
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HITOSHI ===
+Name: HITOSHI
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KIYO ===
+Name: KIYO
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KOICHI ===
+Name: KOICHI
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NOB_1 ===
+Name: NOB
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NOB_2 ===
+Name: NOB
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NOB_3 ===
+Name: NOB
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NOB_4 ===
+Name: NOB
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NOB_5 ===
+Name: NOB
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_YUJI ===
+Name: YUJI
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DAISUKE ===
+Name: DAISUKE
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ATSUSHI ===
+Name: ATSUSHI
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KIRK ===
+Name: KIRK
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SHAWN ===
+Name: SHAWN
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_FERNANDO_1 ===
+Name: FERNANDO
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DALTON_1 ===
+Name: DALTON
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DALTON_2 ===
+Name: DALTON
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DALTON_3 ===
+Name: DALTON
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DALTON_4 ===
+Name: DALTON
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DALTON_5 ===
+Name: DALTON
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_COLE ===
+Name: COLE
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JEFF ===
+Name: JEFF
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_AXLE ===
+Name: AXLE
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JACE ===
+Name: JACE
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KEEGAN ===
+Name: KEEGAN
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BERNIE_1 ===
+Name: BERNIE
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BERNIE_2 ===
+Name: BERNIE
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BERNIE_3 ===
+Name: BERNIE
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BERNIE_4 ===
+Name: BERNIE
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BERNIE_5 ===
+Name: BERNIE
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DREW ===
+Name: DREW
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BEAU ===
+Name: BEAU
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LARRY ===
+Name: LARRY
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SHANE ===
+Name: SHANE
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JUSTIN ===
+Name: JUSTIN
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ETHAN_1 ===
+Name: ETHAN
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_AUTUMN ===
+Name: AUTUMN
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TRAVIS ===
+Name: TRAVIS
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ETHAN_2 ===
+Name: ETHAN
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ETHAN_3 ===
+Name: ETHAN
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ETHAN_4 ===
+Name: ETHAN
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ETHAN_5 ===
+Name: ETHAN
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRENT ===
+Name: BRENT
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DONALD ===
+Name: DONALD
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TAYLOR ===
+Name: TAYLOR
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JEFFREY_1 ===
+Name: JEFFREY
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DEREK ===
+Name: DEREK
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JEFFREY_2 ===
+Name: JEFFREY
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JEFFREY_3 ===
+Name: JEFFREY
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JEFFREY_4 ===
+Name: JEFFREY
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JEFFREY_5 ===
+Name: JEFFREY
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_EDWARD ===
+Name: EDWARD
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PRESTON ===
+Name: PRESTON
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_VIRGIL ===
+Name: VIRGIL
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BLAKE ===
+Name: BLAKE
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WILLIAM ===
+Name: WILLIAM
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JOSHUA ===
+Name: JOSHUA
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CAMERON_1 ===
+Name: CAMERON
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CAMERON_2 ===
+Name: CAMERON
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CAMERON_3 ===
+Name: CAMERON
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CAMERON_4 ===
+Name: CAMERON
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CAMERON_5 ===
+Name: CAMERON
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JACLYN ===
+Name: JACLYN
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HANNAH ===
+Name: HANNAH
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SAMANTHA ===
+Name: SAMANTHA
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MAURA ===
+Name: MAURA
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KAYLA ===
+Name: KAYLA
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ALEXIS ===
+Name: ALEXIS
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JACKI_1 ===
+Name: JACKI
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JACKI_2 ===
+Name: JACKI
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JACKI_3 ===
+Name: JACKI
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JACKI_4 ===
+Name: JACKI
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JACKI_5 ===
+Name: JACKI
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WALTER_1 ===
+Name: WALTER
+Class: Gentleman
+Pic: Gentleman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MICAH ===
+Name: MICAH
+Class: Gentleman
+Pic: Gentleman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_THOMAS ===
+Name: THOMAS
+Class: Gentleman
+Pic: Gentleman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WALTER_2 ===
+Name: WALTER
+Class: Gentleman
+Pic: Gentleman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WALTER_3 ===
+Name: WALTER
+Class: Gentleman
+Pic: Gentleman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WALTER_4 ===
+Name: WALTER
+Class: Gentleman
+Pic: Gentleman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WALTER_5 ===
+Name: WALTER
+Class: Gentleman
+Pic: Gentleman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SIDNEY ===
+Name: SIDNEY
+Class: Elite Four
+Pic: Elite Four Sidney
+Gender: None
+Music: None
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Setup First Turn
+Mugshot: Purple
+
+=== TRAINER_PHOEBE ===
+Name: PHOEBE
+Class: Elite Four
+Pic: Elite Four Phoebe
+Gender: None
+Music: None
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Green
+
+=== TRAINER_GLACIA ===
+Name: GLACIA
+Class: Elite Four
+Pic: Elite Four Glacia
+Gender: None
+Music: None
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Pink
+
+=== TRAINER_DRAKE ===
+Name: DRAKE
+Class: Elite Four
+Pic: Elite Four Drake
+Gender: None
+Music: None
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Blue
+
+=== TRAINER_ROXANNE_1 ===
+Name: ROXANNE
+Class: Leader
+Pic: Leader Roxanne
+Gender: None
+Music: None
+Items: Potion / Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRAWLY_1 ===
+Name: BRAWLY
+Class: Leader
+Pic: Leader Brawly
+Gender: None
+Music: None
+Items: Super Potion / Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WATTSON_1 ===
+Name: WATTSON
+Class: Leader
+Pic: Leader Wattson
+Gender: None
+Music: None
+Items: Super Potion / Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_FLANNERY_1 ===
+Name: FLANNERY
+Class: Leader
+Pic: Leader Flannery
+Gender: None
+Music: None
+Items: Hyper Potion / Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_NORMAN_1 ===
+Name: NORMAN
+Class: Leader
+Pic: Leader Norman
+Gender: None
+Music: None
+Items: Hyper Potion / Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WINONA_1 ===
+Name: WINONA
+Class: Leader
+Pic: Leader Winona
+Gender: None
+Music: None
+Items: Hyper Potion / Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Risky
+
+=== TRAINER_TATE_AND_LIZA_1 ===
+Name: TATE&LIZA
+Class: Leader
+Pic: Leader Tate And Liza
+Gender: None
+Music: None
+Items: Hyper Potion / Hyper Potion / Hyper Potion / Hyper Potion
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JUAN_1 ===
+Name: JUAN
+Class: Leader
+Pic: Leader Juan
+Gender: None
+Music: None
+Items: Hyper Potion / Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JERRY_1 ===
+Name: JERRY
+Class: School Kid
+Pic: School Kid M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TED ===
+Name: TED
+Class: School Kid
+Pic: School Kid M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PAUL ===
+Name: PAUL
+Class: School Kid
+Pic: School Kid M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JERRY_2 ===
+Name: JERRY
+Class: School Kid
+Pic: School Kid M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JERRY_3 ===
+Name: JERRY
+Class: School Kid
+Pic: School Kid M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JERRY_4 ===
+Name: JERRY
+Class: School Kid
+Pic: School Kid M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JERRY_5 ===
+Name: JERRY
+Class: School Kid
+Pic: School Kid M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KAREN_1 ===
+Name: KAREN
+Class: School Kid
+Pic: School Kid F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GEORGIA ===
+Name: GEORGIA
+Class: School Kid
+Pic: School Kid F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KAREN_2 ===
+Name: KAREN
+Class: School Kid
+Pic: School Kid F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KAREN_3 ===
+Name: KAREN
+Class: School Kid
+Pic: School Kid F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KAREN_4 ===
+Name: KAREN
+Class: School Kid
+Pic: School Kid F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KAREN_5 ===
+Name: KAREN
+Class: School Kid
+Pic: School Kid F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KATE_AND_JOY ===
+Name: KATE & JOY
+Class: Sr And Jr
+Pic: Sr And Jr
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_ANNA_AND_MEG_1 ===
+Name: ANNA & MEG
+Class: Sr And Jr
+Pic: Sr And Jr
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_ANNA_AND_MEG_2 ===
+Name: ANNA & MEG
+Class: Sr And Jr
+Pic: Sr And Jr
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_ANNA_AND_MEG_3 ===
+Name: ANNA & MEG
+Class: Sr And Jr
+Pic: Sr And Jr
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_ANNA_AND_MEG_4 ===
+Name: ANNA & MEG
+Class: Sr And Jr
+Pic: Sr And Jr
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_ANNA_AND_MEG_5 ===
+Name: ANNA & MEG
+Class: Sr And Jr
+Pic: Sr And Jr
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_VICTOR ===
+Name: VICTOR
+Class: Winstrate
+Pic: Pokefan M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MIGUEL_1 ===
+Name: MIGUEL
+Class: Pokefan
+Pic: Pokefan M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_COLTON ===
+Name: COLTON
+Class: Pokefan
+Pic: Pokefan M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MIGUEL_2 ===
+Name: MIGUEL
+Class: Pokefan
+Pic: Pokefan M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MIGUEL_3 ===
+Name: MIGUEL
+Class: Pokefan
+Pic: Pokefan M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MIGUEL_4 ===
+Name: MIGUEL
+Class: Pokefan
+Pic: Pokefan M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MIGUEL_5 ===
+Name: MIGUEL
+Class: Pokefan
+Pic: Pokefan M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_VICTORIA ===
+Name: VICTORIA
+Class: Winstrate
+Pic: Pokefan F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+=== TRAINER_VANESSA ===
+Name: VANESSA
+Class: Pokefan
+Pic: Pokefan F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BETHANY ===
+Name: BETHANY
+Class: Pokefan
+Pic: Pokefan F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISABEL_1 ===
+Name: ISABEL
+Class: Pokefan
+Pic: Pokefan F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISABEL_2 ===
+Name: ISABEL
+Class: Pokefan
+Pic: Pokefan F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISABEL_3 ===
+Name: ISABEL
+Class: Pokefan
+Pic: Pokefan F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISABEL_4 ===
+Name: ISABEL
+Class: Pokefan
+Pic: Pokefan F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISABEL_5 ===
+Name: ISABEL
+Class: Pokefan
+Pic: Pokefan F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TIMOTHY_1 ===
+Name: TIMOTHY
+Class: Expert
+Pic: Expert M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_TIMOTHY_2 ===
+Name: TIMOTHY
+Class: Expert
+Pic: Expert M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_TIMOTHY_3 ===
+Name: TIMOTHY
+Class: Expert
+Pic: Expert M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_TIMOTHY_4 ===
+Name: TIMOTHY
+Class: Expert
+Pic: Expert M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_TIMOTHY_5 ===
+Name: TIMOTHY
+Class: Expert
+Pic: Expert M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_VICKY ===
+Name: VICKY
+Class: Winstrate
+Pic: Expert F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SHELBY_1 ===
+Name: SHELBY
+Class: Expert
+Pic: Expert F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SHELBY_2 ===
+Name: SHELBY
+Class: Expert
+Pic: Expert F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SHELBY_3 ===
+Name: SHELBY
+Class: Expert
+Pic: Expert F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SHELBY_4 ===
+Name: SHELBY
+Class: Expert
+Pic: Expert F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SHELBY_5 ===
+Name: SHELBY
+Class: Expert
+Pic: Expert F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_CALVIN_1 ===
+Name: CALVIN
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BILLY ===
+Name: BILLY
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JOSH ===
+Name: JOSH
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TOMMY ===
+Name: TOMMY
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JOEY ===
+Name: JOEY
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BEN ===
+Name: BEN
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_QUINCY ===
+Name: QUINCY
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_KATELYNN ===
+Name: KATELYNN
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JAYLEN ===
+Name: JAYLEN
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DILLON ===
+Name: DILLON
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CALVIN_2 ===
+Name: CALVIN
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CALVIN_3 ===
+Name: CALVIN
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CALVIN_4 ===
+Name: CALVIN
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CALVIN_5 ===
+Name: CALVIN
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_EDDIE ===
+Name: EDDIE
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ALLEN ===
+Name: ALLEN
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TIMMY ===
+Name: TIMMY
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WALLACE ===
+Name: WALLACE
+Class: Champion
+Pic: Champion Wallace
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Yellow
+
+=== TRAINER_ANDREW ===
+Name: ANDREW
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_IVAN ===
+Name: IVAN
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CLAUDE ===
+Name: CLAUDE
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ELLIOT_1 ===
+Name: ELLIOT
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NED ===
+Name: NED
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DALE ===
+Name: DALE
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NOLAN ===
+Name: NOLAN
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BARNY ===
+Name: BARNY
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WADE ===
+Name: WADE
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CARTER ===
+Name: CARTER
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ELLIOT_2 ===
+Name: ELLIOT
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ELLIOT_3 ===
+Name: ELLIOT
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ELLIOT_4 ===
+Name: ELLIOT
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ELLIOT_5 ===
+Name: ELLIOT
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+=== TRAINER_RONALD ===
+Name: RONALD
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JACOB ===
+Name: JACOB
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ANTHONY ===
+Name: ANTHONY
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BENJAMIN_1 ===
+Name: BENJAMIN
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BENJAMIN_2 ===
+Name: BENJAMIN
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BENJAMIN_3 ===
+Name: BENJAMIN
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BENJAMIN_4 ===
+Name: BENJAMIN
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BENJAMIN_5 ===
+Name: BENJAMIN
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ABIGAIL_1 ===
+Name: ABIGAIL
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JASMINE ===
+Name: JASMINE
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ABIGAIL_2 ===
+Name: ABIGAIL
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ABIGAIL_3 ===
+Name: ABIGAIL
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ABIGAIL_4 ===
+Name: ABIGAIL
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ABIGAIL_5 ===
+Name: ABIGAIL
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DYLAN_1 ===
+Name: DYLAN
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DYLAN_2 ===
+Name: DYLAN
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DYLAN_3 ===
+Name: DYLAN
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DYLAN_4 ===
+Name: DYLAN
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DYLAN_5 ===
+Name: DYLAN
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARIA_1 ===
+Name: MARIA
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARIA_2 ===
+Name: MARIA
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARIA_3 ===
+Name: MARIA
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARIA_4 ===
+Name: MARIA
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARIA_5 ===
+Name: MARIA
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CAMDEN ===
+Name: CAMDEN
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DEMETRIUS ===
+Name: DEMETRIUS
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISAIAH_1 ===
+Name: ISAIAH
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PABLO_1 ===
+Name: PABLO
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CHASE ===
+Name: CHASE
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISAIAH_2 ===
+Name: ISAIAH
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISAIAH_3 ===
+Name: ISAIAH
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISAIAH_4 ===
+Name: ISAIAH
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISAIAH_5 ===
+Name: ISAIAH
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISOBEL ===
+Name: ISOBEL
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DONNY ===
+Name: DONNY
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TALIA ===
+Name: TALIA
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KATELYN_1 ===
+Name: KATELYN
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ALLISON ===
+Name: ALLISON
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KATELYN_2 ===
+Name: KATELYN
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KATELYN_3 ===
+Name: KATELYN
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KATELYN_4 ===
+Name: KATELYN
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KATELYN_5 ===
+Name: KATELYN
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NICOLAS_1 ===
+Name: NICOLAS
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NICOLAS_2 ===
+Name: NICOLAS
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NICOLAS_3 ===
+Name: NICOLAS
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NICOLAS_4 ===
+Name: NICOLAS
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NICOLAS_5 ===
+Name: NICOLAS
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_AARON ===
+Name: AARON
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PERRY ===
+Name: PERRY
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HUGH ===
+Name: HUGH
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PHIL ===
+Name: PHIL
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JARED ===
+Name: JARED
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HUMBERTO ===
+Name: HUMBERTO
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PRESLEY ===
+Name: PRESLEY
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_EDWARDO ===
+Name: EDWARDO
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_COLIN ===
+Name: COLIN
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROBERT_1 ===
+Name: ROBERT
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BENNY ===
+Name: BENNY
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CHESTER ===
+Name: CHESTER
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROBERT_2 ===
+Name: ROBERT
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROBERT_3 ===
+Name: ROBERT
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROBERT_4 ===
+Name: ROBERT
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROBERT_5 ===
+Name: ROBERT
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ALEX ===
+Name: ALEX
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BECK ===
+Name: BECK
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_YASU ===
+Name: YASU
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+=== TRAINER_TAKASHI ===
+Name: TAKASHI
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+=== TRAINER_DIANNE ===
+Name: DIANNE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+
+=== TRAINER_JANI ===
+Name: JANI
+Class: Tuber F
+Pic: Tuber F
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_LAO_1 ===
+Name: LAO
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_LUNG ===
+Name: LUNG
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_LAO_2 ===
+Name: LAO
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_LAO_3 ===
+Name: LAO
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_LAO_4 ===
+Name: LAO
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_LAO_5 ===
+Name: LAO
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_JOCELYN ===
+Name: JOCELYN
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LAURA ===
+Name: LAURA
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CYNDY_1 ===
+Name: CYNDY
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CORA ===
+Name: CORA
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PAULA ===
+Name: PAULA
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CYNDY_2 ===
+Name: CYNDY
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CYNDY_3 ===
+Name: CYNDY
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CYNDY_4 ===
+Name: CYNDY
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CYNDY_5 ===
+Name: CYNDY
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MADELINE_1 ===
+Name: MADELINE
+Class: Parasol Lady
+Pic: Parasol Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CLARISSA ===
+Name: CLARISSA
+Class: Parasol Lady
+Pic: Parasol Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ANGELICA ===
+Name: ANGELICA
+Class: Parasol Lady
+Pic: Parasol Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MADELINE_2 ===
+Name: MADELINE
+Class: Parasol Lady
+Pic: Parasol Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MADELINE_3 ===
+Name: MADELINE
+Class: Parasol Lady
+Pic: Parasol Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MADELINE_4 ===
+Name: MADELINE
+Class: Parasol Lady
+Pic: Parasol Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MADELINE_5 ===
+Name: MADELINE
+Class: Parasol Lady
+Pic: Parasol Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BEVERLY ===
+Name: BEVERLY
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_IMANI ===
+Name: IMANI
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KYLA ===
+Name: KYLA
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DENISE ===
+Name: DENISE
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BETH ===
+Name: BETH
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TARA ===
+Name: TARA
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MISSY ===
+Name: MISSY
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ALICE ===
+Name: ALICE
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JENNY_1 ===
+Name: JENNY
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRACE ===
+Name: GRACE
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TANYA ===
+Name: TANYA
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SHARON ===
+Name: SHARON
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NIKKI ===
+Name: NIKKI
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRENDA ===
+Name: BRENDA
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KATIE ===
+Name: KATIE
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SUSIE ===
+Name: SUSIE
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KARA ===
+Name: KARA
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DANA ===
+Name: DANA
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SIENNA ===
+Name: SIENNA
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DEBRA ===
+Name: DEBRA
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LINDA ===
+Name: LINDA
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KAYLEE ===
+Name: KAYLEE
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LAUREL ===
+Name: LAUREL
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CARLEE ===
+Name: CARLEE
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JENNY_2 ===
+Name: JENNY
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JENNY_3 ===
+Name: JENNY
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JENNY_4 ===
+Name: JENNY
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JENNY_5 ===
+Name: JENNY
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HEIDI ===
+Name: HEIDI
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BECKY ===
+Name: BECKY
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CAROL ===
+Name: CAROL
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NANCY ===
+Name: NANCY
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARTHA ===
+Name: MARTHA
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DIANA_1 ===
+Name: DIANA
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CEDRIC ===
+Name: CEDRIC
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_IRENE ===
+Name: IRENE
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DIANA_2 ===
+Name: DIANA
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DIANA_3 ===
+Name: DIANA
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DIANA_4 ===
+Name: DIANA
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DIANA_5 ===
+Name: DIANA
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_AMY_AND_LIV_1 ===
+Name: AMY & LIV
+Class: Twins
+Pic: Twins
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_AMY_AND_LIV_2 ===
+Name: AMY & LIV
+Class: Twins
+Pic: Twins
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_GINA_AND_MIA_1 ===
+Name: GINA & MIA
+Class: Twins
+Pic: Twins
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_MIU_AND_YUKI ===
+Name: MIU & YUKI
+Class: Twins
+Pic: Twins
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_AMY_AND_LIV_3 ===
+Name: AMY & LIV
+Class: Twins
+Pic: Twins
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_GINA_AND_MIA_2 ===
+Name: GINA & MIA
+Class: Twins
+Pic: Twins
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_AMY_AND_LIV_4 ===
+Name: AMY & LIV
+Class: Twins
+Pic: Twins
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_AMY_AND_LIV_5 ===
+Name: AMY & LIV
+Class: Twins
+Pic: Twins
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_AMY_AND_LIV_6 ===
+Name: AMY & LIV
+Class: Twins
+Pic: Twins
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_HUEY ===
+Name: HUEY
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_EDMOND ===
+Name: EDMOND
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ERNEST_1 ===
+Name: ERNEST
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DWAYNE ===
+Name: DWAYNE
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PHILLIP ===
+Name: PHILLIP
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LEONARD ===
+Name: LEONARD
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DUNCAN ===
+Name: DUNCAN
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ERNEST_2 ===
+Name: ERNEST
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ERNEST_3 ===
+Name: ERNEST
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ERNEST_4 ===
+Name: ERNEST
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ERNEST_5 ===
+Name: ERNEST
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ELI ===
+Name: ELI
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ANNIKA ===
+Name: ANNIKA
+Class: Pokefan
+Pic: Pokefan F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JAZMYN ===
+Name: JAZMYN
+Class: Cooltrainer 2
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JONAS ===
+Name: JONAS
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_KAYLEY ===
+Name: KAYLEY
+Class: Parasol Lady
+Pic: Parasol Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_AURON ===
+Name: AURON
+Class: Expert
+Pic: Expert M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KELVIN ===
+Name: KELVIN
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARLEY ===
+Name: MARLEY
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_REYNA ===
+Name: REYNA
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HUDSON ===
+Name: HUDSON
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CONOR ===
+Name: CONOR
+Class: Expert
+Pic: Expert M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_EDWIN_1 ===
+Name: EDWIN
+Class: Collector
+Pic: Collector
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HECTOR ===
+Name: HECTOR
+Class: Collector
+Pic: Collector
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TABITHA_MOSSDEEP ===
+Name: TABITHA
+Class: Magma Admin
+Pic: Magma Admin
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_EDWIN_2 ===
+Name: EDWIN
+Class: Collector
+Pic: Collector
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_EDWIN_3 ===
+Name: EDWIN
+Class: Collector
+Pic: Collector
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_EDWIN_4 ===
+Name: EDWIN
+Class: Collector
+Pic: Collector
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_EDWIN_5 ===
+Name: EDWIN
+Class: Collector
+Pic: Collector
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WALLY_VR_1 ===
+Name: WALLY
+Class: Rival
+Pic: Wally
+Gender: None
+Music: None
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_ROUTE_119_MUDKIP ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_ROUTE_103_TREECKO ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_BRENDAN_ROUTE_110_TREECKO ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_ROUTE_119_TREECKO ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_ROUTE_103_MUDKIP ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_ROUTE_110_MUDKIP ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_ROUTE_119_MUDKIP ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_ROUTE_103_TREECKO ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_ROUTE_110_TREECKO ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_ROUTE_119_TREECKO ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_ROUTE_103_TORCHIC ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_ROUTE_110_TORCHIC ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_ROUTE_119_TORCHIC ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ISAAC_1 ===
+Name: ISAAC
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DAVIS ===
+Name: DAVIS
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MITCHELL ===
+Name: MITCHELL
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ISAAC_2 ===
+Name: ISAAC
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISAAC_3 ===
+Name: ISAAC
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISAAC_4 ===
+Name: ISAAC
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISAAC_5 ===
+Name: ISAAC
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LYDIA_1 ===
+Name: LYDIA
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HALLE ===
+Name: HALLE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_GARRISON ===
+Name: GARRISON
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LYDIA_2 ===
+Name: LYDIA
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LYDIA_3 ===
+Name: LYDIA
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LYDIA_4 ===
+Name: LYDIA
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LYDIA_5 ===
+Name: LYDIA
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JACKSON_1 ===
+Name: JACKSON
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_LORENZO ===
+Name: LORENZO
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SEBASTIAN ===
+Name: SEBASTIAN
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JACKSON_2 ===
+Name: JACKSON
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_JACKSON_3 ===
+Name: JACKSON
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JACKSON_4 ===
+Name: JACKSON
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_JACKSON_5 ===
+Name: JACKSON
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_CATHERINE_1 ===
+Name: CATHERINE
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_JENNA ===
+Name: JENNA
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_SOPHIA ===
+Name: SOPHIA
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_CATHERINE_2 ===
+Name: CATHERINE
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_CATHERINE_3 ===
+Name: CATHERINE
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_CATHERINE_4 ===
+Name: CATHERINE
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_CATHERINE_5 ===
+Name: CATHERINE
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JULIO ===
+Name: JULIO
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_UNUSED ===
+Name: GRUNT
+Class: Team Magma
+Pic: Aqua Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MT_PYRE_4 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_JAGGED_PASS ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARC ===
+Name: MARC
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRENDEN ===
+Name: BRENDEN
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LILITH ===
+Name: LILITH
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CRISTIAN ===
+Name: CRISTIAN
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SYLVIA ===
+Name: SYLVIA
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LEONARDO ===
+Name: LEONARDO
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ATHENA ===
+Name: ATHENA
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_HARRISON ===
+Name: HARRISON
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MT_CHIMNEY_2 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CLARENCE ===
+Name: CLARENCE
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TERRY ===
+Name: TERRY
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NATE ===
+Name: NATE
+Class: Gentleman
+Pic: Gentleman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KATHLEEN ===
+Name: KATHLEEN
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CLIFFORD ===
+Name: CLIFFORD
+Class: Gentleman
+Pic: Gentleman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_NICHOLAS ===
+Name: NICHOLAS
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SPACE_CENTER_3 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SPACE_CENTER_4 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SPACE_CENTER_5 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SPACE_CENTER_6 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_SPACE_CENTER_7 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MACEY ===
+Name: MACEY
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRENDAN_RUSTBORO_TREECKO ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PAXTON ===
+Name: PAXTON
+Class: Expert
+Pic: Expert M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ISABELLA ===
+Name: ISABELLA
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_WEATHER_INST_5 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TABITHA_MT_CHIMNEY ===
+Name: TABITHA
+Class: Magma Admin
+Pic: Magma Admin
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JONATHAN ===
+Name: JONATHAN
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_BRENDAN_RUSTBORO_TORCHIC ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_RUSTBORO_MUDKIP ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_MAXIE_MAGMA_HIDEOUT ===
+Name: MAXIE
+Class: Magma Leader
+Pic: Magma Leader Maxie
+Gender: None
+Music: None
+Items: Super Potion / Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAXIE_MT_CHIMNEY ===
+Name: MAXIE
+Class: Magma Leader
+Pic: Magma Leader Maxie
+Gender: None
+Music: None
+Items: Super Potion / Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_TIANA ===
+Name: TIANA
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HALEY_1 ===
+Name: HALEY
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JANICE ===
+Name: JANICE
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_VIVI ===
+Name: VIVI
+Class: Winstrate
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_HALEY_2 ===
+Name: HALEY
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HALEY_3 ===
+Name: HALEY
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HALEY_4 ===
+Name: HALEY
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HALEY_5 ===
+Name: HALEY
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SALLY ===
+Name: SALLY
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROBIN ===
+Name: ROBIN
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ANDREA ===
+Name: ANDREA
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CRISSY ===
+Name: CRISSY
+Class: Lass
+Pic: Lass
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RICK ===
+Name: RICK
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LYLE ===
+Name: LYLE
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JOSE ===
+Name: JOSE
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DOUG ===
+Name: DOUG
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GREG ===
+Name: GREG
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KENT ===
+Name: KENT
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JAMES_1 ===
+Name: JAMES
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JAMES_2 ===
+Name: JAMES
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JAMES_3 ===
+Name: JAMES
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JAMES_4 ===
+Name: JAMES
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JAMES_5 ===
+Name: JAMES
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRICE ===
+Name: BRICE
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TRENT_1 ===
+Name: TRENT
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LENNY ===
+Name: LENNY
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LUCAS_1 ===
+Name: LUCAS
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ALAN ===
+Name: ALAN
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CLARK ===
+Name: CLARK
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ERIC ===
+Name: ERIC
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LUCAS_2 ===
+Name: LUCAS
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MIKE_1 ===
+Name: MIKE
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MIKE_2 ===
+Name: MIKE
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TRENT_2 ===
+Name: TRENT
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TRENT_3 ===
+Name: TRENT
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TRENT_4 ===
+Name: TRENT
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TRENT_5 ===
+Name: TRENT
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DEZ_AND_LUKE ===
+Name: DEZ & LUKE
+Class: Young Couple
+Pic: Young Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_LEA_AND_JED ===
+Name: LEA & JED
+Class: Young Couple
+Pic: Young Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_KIRA_AND_DAN_1 ===
+Name: KIRA & DAN
+Class: Young Couple
+Pic: Young Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_KIRA_AND_DAN_2 ===
+Name: KIRA & DAN
+Class: Young Couple
+Pic: Young Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_KIRA_AND_DAN_3 ===
+Name: KIRA & DAN
+Class: Young Couple
+Pic: Young Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_KIRA_AND_DAN_4 ===
+Name: KIRA & DAN
+Class: Young Couple
+Pic: Young Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_KIRA_AND_DAN_5 ===
+Name: KIRA & DAN
+Class: Young Couple
+Pic: Young Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_JOHANNA ===
+Name: JOHANNA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GERALD ===
+Name: GERALD
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_VIVIAN ===
+Name: VIVIAN
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DANIELLE ===
+Name: DANIELLE
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HIDEO ===
+Name: HIDEO
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+=== TRAINER_KEIGO ===
+Name: KEIGO
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+=== TRAINER_RILEY ===
+Name: RILEY
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+=== TRAINER_FLINT ===
+Name: FLINT
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ASHLEY ===
+Name: ASHLEY
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WALLY_MAUVILLE ===
+Name: WALLY
+Class: Rival
+Pic: Wally
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WALLY_VR_2 ===
+Name: WALLY
+Class: Rival
+Pic: Wally
+Gender: None
+Music: None
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WALLY_VR_3 ===
+Name: WALLY
+Class: Rival
+Pic: Wally
+Gender: None
+Music: None
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WALLY_VR_4 ===
+Name: WALLY
+Class: Rival
+Pic: Wally
+Gender: None
+Music: None
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WALLY_VR_5 ===
+Name: WALLY
+Class: Rival
+Pic: Wally
+Gender: None
+Music: None
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_LILYCOVE_MUDKIP ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_LILYCOVE_TREECKO ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRENDAN_LILYCOVE_TORCHIC ===
+Name: ETHAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_LILYCOVE_MUDKIP ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_LILYCOVE_TREECKO ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_LILYCOVE_TORCHIC ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JONAH ===
+Name: JONAH
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HENRY ===
+Name: HENRY
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ROGER ===
+Name: ROGER
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ALEXA ===
+Name: ALEXA
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_RUBEN ===
+Name: RUBEN
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_KOJI_1 ===
+Name: KOJI
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WAYNE ===
+Name: WAYNE
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_AIDAN ===
+Name: AIDAN
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_REED ===
+Name: REED
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TISHA ===
+Name: TISHA
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TORI_AND_TIA ===
+Name: TORI & TIA
+Class: Twins
+Pic: Twins
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_KIM_AND_IRIS ===
+Name: KIM & IRIS
+Class: Sr And Jr
+Pic: Sr And Jr
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_TYRA_AND_IVY ===
+Name: TYRA & IVY
+Class: Sr And Jr
+Pic: Sr And Jr
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_MEL_AND_PAUL ===
+Name: MEL & PAUL
+Class: Young Couple
+Pic: Young Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_JOHN_AND_JAY_1 ===
+Name: JOHN & JAY
+Class: Old Couple
+Pic: Old Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JOHN_AND_JAY_2 ===
+Name: JOHN & JAY
+Class: Old Couple
+Pic: Old Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JOHN_AND_JAY_3 ===
+Name: JOHN & JAY
+Class: Old Couple
+Pic: Old Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JOHN_AND_JAY_4 ===
+Name: JOHN & JAY
+Class: Old Couple
+Pic: Old Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Setup First Turn
+
+=== TRAINER_JOHN_AND_JAY_5 ===
+Name: JOHN & JAY
+Class: Old Couple
+Pic: Old Couple
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_RELI_AND_IAN ===
+Name: RELI & IAN
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_LILA_AND_ROY_1 ===
+Name: LILA & ROY
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_LILA_AND_ROY_2 ===
+Name: LILA & ROY
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_LILA_AND_ROY_3 ===
+Name: LILA & ROY
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_LILA_AND_ROY_4 ===
+Name: LILA & ROY
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_LILA_AND_ROY_5 ===
+Name: LILA & ROY
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_LISA_AND_RAY ===
+Name: LISA & RAY
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: None
+Music: None
+Double Battle: Yes
+AI: Check Bad Move
+
+=== TRAINER_CHRIS ===
+Name: CHRIS
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DAWSON ===
+Name: DAWSON
+Class: Rich Boy
+Pic: Rich Boy
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SARAH ===
+Name: SARAH
+Class: Lady
+Pic: Lady
+Gender: None
+Music: None
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DARIAN ===
+Name: DARIAN
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HAILEY ===
+Name: HAILEY
+Class: Tuber F
+Pic: Tuber F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CHANDLER ===
+Name: CHANDLER
+Class: Tuber M
+Pic: Tuber M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KALEB ===
+Name: KALEB
+Class: Pokefan
+Pic: Pokefan M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JOSEPH ===
+Name: JOSEPH
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ALYSSA ===
+Name: ALYSSA
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARCOS ===
+Name: MARCOS
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RHETT ===
+Name: RHETT
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TYRON ===
+Name: TYRON
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CELINA ===
+Name: CELINA
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BIANCA ===
+Name: BIANCA
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HAYDEN ===
+Name: HAYDEN
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SOPHIE ===
+Name: SOPHIE
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_COBY ===
+Name: COBY
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LAWRENCE ===
+Name: LAWRENCE
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_WYATT ===
+Name: WYATT
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ANGELINA ===
+Name: ANGELINA
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KAI ===
+Name: KAI
+Class: Fisherman
+Pic: Fisherman
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CHARLOTTE ===
+Name: CHARLOTTE
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DEANDRE ===
+Name: DEANDRE
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_2 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_3 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_4 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_5 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_6 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_8 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_9 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_TABITHA_MAGMA_HIDEOUT ===
+Name: TABITHA
+Class: Magma Admin
+Pic: Magma Admin
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DARCY ===
+Name: DARCY
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAXIE_MOSSDEEP ===
+Name: MAXIE
+Class: Magma Leader
+Pic: Magma Leader Maxie
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_PETE ===
+Name: PETE
+Class: Swimmer M
+Pic: Swimmer M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ISABELLE ===
+Name: ISABELLE
+Class: Swimmer F
+Pic: Swimmer F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ANDRES_1 ===
+Name: ANDRES
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JOSUE ===
+Name: JOSUE
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CAMRON ===
+Name: CAMRON
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CORY_1 ===
+Name: CORY
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CAROLINA ===
+Name: CAROLINA
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ELIJAH ===
+Name: ELIJAH
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CELIA ===
+Name: CELIA
+Class: Picnicker
+Pic: Picnicker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRYAN ===
+Name: BRYAN
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRANDEN ===
+Name: BRANDEN
+Class: Camper
+Pic: Camper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRYANT ===
+Name: BRYANT
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SHAYLA ===
+Name: SHAYLA
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KYRA ===
+Name: KYRA
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JAIDEN ===
+Name: JAIDEN
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ALIX ===
+Name: ALIX
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_HELENE ===
+Name: HELENE
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARLENE ===
+Name: MARLENE
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DEVAN ===
+Name: DEVAN
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_JOHNSON ===
+Name: JOHNSON
+Class: Youngster
+Pic: Youngster
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MELINA ===
+Name: MELINA
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_BRANDI ===
+Name: BRANDI
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_AISHA ===
+Name: AISHA
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MAKAYLA ===
+Name: MAKAYLA
+Class: Expert
+Pic: Expert F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_FABIAN ===
+Name: FABIAN
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_DAYTON ===
+Name: DAYTON
+Class: Kindler
+Pic: Kindler
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_RACHEL ===
+Name: RACHEL
+Class: Parasol Lady
+Pic: Parasol Lady
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_LEONEL ===
+Name: LEONEL
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_CALLIE ===
+Name: CALLIE
+Class: Battle Girl
+Pic: Battle Girl
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CALE ===
+Name: CALE
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MYLES ===
+Name: MYLES
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PAT ===
+Name: PAT
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CRISTIN_1 ===
+Name: CRISTIN
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_RUSTBORO_TREECKO ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_MAY_RUSTBORO_TORCHIC ===
+Name: LYRA
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ROXANNE_2 ===
+Name: ROXANNE
+Class: Leader
+Pic: Leader Roxanne
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ROXANNE_3 ===
+Name: ROXANNE
+Class: Leader
+Pic: Leader Roxanne
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ROXANNE_4 ===
+Name: ROXANNE
+Class: Leader
+Pic: Leader Roxanne
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ROXANNE_5 ===
+Name: ROXANNE
+Class: Leader
+Pic: Leader Roxanne
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRAWLY_2 ===
+Name: BRAWLY
+Class: Leader
+Pic: Leader Brawly
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRAWLY_3 ===
+Name: BRAWLY
+Class: Leader
+Pic: Leader Brawly
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRAWLY_4 ===
+Name: BRAWLY
+Class: Leader
+Pic: Leader Brawly
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRAWLY_5 ===
+Name: BRAWLY
+Class: Leader
+Pic: Leader Brawly
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WATTSON_2 ===
+Name: WATTSON
+Class: Leader
+Pic: Leader Wattson
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WATTSON_3 ===
+Name: WATTSON
+Class: Leader
+Pic: Leader Wattson
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WATTSON_4 ===
+Name: WATTSON
+Class: Leader
+Pic: Leader Wattson
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WATTSON_5 ===
+Name: WATTSON
+Class: Leader
+Pic: Leader Wattson
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_FLANNERY_2 ===
+Name: FLANNERY
+Class: Leader
+Pic: Leader Flannery
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_FLANNERY_3 ===
+Name: FLANNERY
+Class: Leader
+Pic: Leader Flannery
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_FLANNERY_4 ===
+Name: FLANNERY
+Class: Leader
+Pic: Leader Flannery
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_FLANNERY_5 ===
+Name: FLANNERY
+Class: Leader
+Pic: Leader Flannery
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_NORMAN_2 ===
+Name: NORMAN
+Class: Leader
+Pic: Leader Norman
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_NORMAN_3 ===
+Name: NORMAN
+Class: Leader
+Pic: Leader Norman
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_NORMAN_4 ===
+Name: NORMAN
+Class: Leader
+Pic: Leader Norman
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_NORMAN_5 ===
+Name: NORMAN
+Class: Leader
+Pic: Leader Norman
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_WINONA_2 ===
+Name: WINONA
+Class: Leader
+Pic: Leader Winona
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Risky
+
+=== TRAINER_WINONA_3 ===
+Name: WINONA
+Class: Leader
+Pic: Leader Winona
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Risky
+
+=== TRAINER_WINONA_4 ===
+Name: WINONA
+Class: Leader
+Pic: Leader Winona
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Risky
+
+=== TRAINER_WINONA_5 ===
+Name: WINONA
+Class: Leader
+Pic: Leader Winona
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Risky
+
+=== TRAINER_TATE_AND_LIZA_2 ===
+Name: TATE&LIZA
+Class: Leader
+Pic: Leader Tate And Liza
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_TATE_AND_LIZA_3 ===
+Name: TATE&LIZA
+Class: Leader
+Pic: Leader Tate And Liza
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_TATE_AND_LIZA_4 ===
+Name: TATE&LIZA
+Class: Leader
+Pic: Leader Tate And Liza
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_TATE_AND_LIZA_5 ===
+Name: TATE&LIZA
+Class: Leader
+Pic: Leader Tate And Liza
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JUAN_2 ===
+Name: JUAN
+Class: Leader
+Pic: Leader Juan
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JUAN_3 ===
+Name: JUAN
+Class: Leader
+Pic: Leader Juan
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JUAN_4 ===
+Name: JUAN
+Class: Leader
+Pic: Leader Juan
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_JUAN_5 ===
+Name: JUAN
+Class: Leader
+Pic: Leader Juan
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ANGELO ===
+Name: ANGELO
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_DARIUS ===
+Name: DARIUS
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_STEVEN ===
+Name: STEVEN
+Class: Rival
+Pic: Steven
+Gender: None
+Music: None
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ANABEL ===
+Name: ANABEL
+Class: Salon Maiden
+Pic: Salon Maiden Anabel
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_TUCKER ===
+Name: TUCKER
+Class: Dome Ace
+Pic: Dome Ace Tucker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SPENSER ===
+Name: SPENSER
+Class: Palace Maven
+Pic: Palace Maven Spenser
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_GRETA ===
+Name: GRETA
+Class: Arena Tycoon
+Pic: Arena Tycoon Greta
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_NOLAND ===
+Name: NOLAND
+Class: Factory Head
+Pic: Factory Head Noland
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_LUCY ===
+Name: LUCY
+Class: Pike Queen
+Pic: Pike Queen Lucy
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_BRANDON ===
+Name: BRANDON
+Class: Pyramid King
+Pic: Pyramid King Brandon
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_ANDRES_2 ===
+Name: ANDRES
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ANDRES_3 ===
+Name: ANDRES
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ANDRES_4 ===
+Name: ANDRES
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_ANDRES_5 ===
+Name: ANDRES
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CORY_2 ===
+Name: CORY
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CORY_3 ===
+Name: CORY
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CORY_4 ===
+Name: CORY
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CORY_5 ===
+Name: CORY
+Class: Sailor
+Pic: Sailor
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PABLO_2 ===
+Name: PABLO
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PABLO_3 ===
+Name: PABLO
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PABLO_4 ===
+Name: PABLO
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_PABLO_5 ===
+Name: PABLO
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KOJI_2 ===
+Name: KOJI
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KOJI_3 ===
+Name: KOJI
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KOJI_4 ===
+Name: KOJI
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_KOJI_5 ===
+Name: KOJI
+Class: Black Belt
+Pic: Black Belt
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_CRISTIN_2 ===
+Name: CRISTIN
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_CRISTIN_3 ===
+Name: CRISTIN
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_CRISTIN_4 ===
+Name: CRISTIN
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_CRISTIN_5 ===
+Name: CRISTIN
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: None
+Music: None
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_FERNANDO_2 ===
+Name: FERNANDO
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_FERNANDO_3 ===
+Name: FERNANDO
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_FERNANDO_4 ===
+Name: FERNANDO
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_FERNANDO_5 ===
+Name: FERNANDO
+Class: Guitarist
+Pic: Guitarist
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_SAWYER_2 ===
+Name: SAWYER
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SAWYER_3 ===
+Name: SAWYER
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SAWYER_4 ===
+Name: SAWYER
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_SAWYER_5 ===
+Name: SAWYER
+Class: Hiker
+Pic: Hiker
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+=== TRAINER_GABRIELLE_2 ===
+Name: GABRIELLE
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GABRIELLE_3 ===
+Name: GABRIELLE
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GABRIELLE_4 ===
+Name: GABRIELLE
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_GABRIELLE_5 ===
+Name: GABRIELLE
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_THALIA_2 ===
+Name: THALIA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_THALIA_3 ===
+Name: THALIA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_THALIA_4 ===
+Name: THALIA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_THALIA_5 ===
+Name: THALIA
+Class: Beauty
+Pic: Beauty
+Gender: None
+Music: None
+Double Battle: No
+AI: Check Bad Move
+
+=== TRAINER_MARIELA ===
+Name: MARIELA
+Class: Psychic
+Pic: Psychic F
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_ALVARO ===
+Name: ALVARO
+Class: Psychic
+Pic: Psychic M
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_EVERETT ===
+Name: EVERETT
+Class: Gentleman
+Pic: Gentleman
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_RED ===
+Name: RED
+Class: Rival
+Pic: Red
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_LEAF ===
+Name: LEAF
+Class: Rival
+Pic: Leaf
+Gender: None
+Music: None
+Double Battle: No
+
+=== TRAINER_BRENDAN_PLACEHOLDER ===
+Name: ETHAN
+Class: RS Protag
+Pic: RS Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+
+=== TRAINER_MAY_PLACEHOLDER ===
+Name: LYRA
+Class: RS Protag
+Pic: RS May
+Gender: Female
+Music: Male
+Double Battle: No

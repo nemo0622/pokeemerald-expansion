@@ -55,6 +55,7 @@ static void UpdatePerDay(struct Time *localTime)
         SetShoalItemFlag(daysSince);
         SetRandomLotteryNumber(daysSince);
         SetDewfordRareBerryFlag(); // every day, allow new random rare berry to be given in Dewford
+        UpdateDaysPassedSinceFormChange(daysSince);
         *days = localTime->days;
     }
 }

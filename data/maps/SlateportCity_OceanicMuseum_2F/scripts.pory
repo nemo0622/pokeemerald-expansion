@@ -80,6 +80,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	playfanfare MUS_HEAL
 	waitfanfare
 	special HealPlayerParty
+	callnative UpdateFollowingPokemon
 	removeobject LOCALID_CAPT_STERN
 	setflag FLAG_HIDE_ROUTE_110_TEAM_AQUA
 	clearflag FLAG_HIDE_ROUTE_110_BIRCH
