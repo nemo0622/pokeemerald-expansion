@@ -880,6 +880,13 @@ static void Task_InitDexNavSearch(u8 taskId)
     
     if (sDexNavSearchDataPtr->monLevel == MON_LEVEL_NONEXISTENT || !TryStartHiddenMonFieldEffect(sDexNavSearchDataPtr->environment, 12, 12, FALSE))
     {
+        if(gMapHeader.regionMapSectionId != MAPSEC_FORTREE_CITY && gMapHeader.regionMapSectionId != MAPSEC_MOSSDEEP_CITY)
+        {
+            // show follower
+            FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+            UpdateFollowingPokemon();
+        }
+
         Free(sDexNavSearchDataPtr);
         FreeMonIconPalettes();
         ScriptContext_SetupScript(EventScript_NotFoundNearby);
