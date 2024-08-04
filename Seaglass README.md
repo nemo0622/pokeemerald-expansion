@@ -47,6 +47,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Pokémon Box Link, allowing access to PC from anywhere (obtained from Scientist NPC in Slateport City Pokémon Center)
     - Cheat Codes / Mystery Gift function! Interact with GameCube in Player's room
         - Codes can provide Rare Candies, Master Balls, and a few cool Pokémon (Codes listed in documentation!)
+    - Pokémon types shown in battle, and press L button to show more move information!
 
 ## FUTURE PLANS
 
@@ -80,7 +81,7 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- For now, type effectiveness not shown in battle
+- 
 Other Changes:
 - 
 
