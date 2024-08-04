@@ -2347,3 +2347,7 @@
 	.macro togglefakertc
 	callnative Script_ToggleFakeRtc
 	.endm
+
+	.macro resetmonsheen
+	callnative ResetMonSheen
+	.endm

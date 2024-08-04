@@ -1760,61 +1760,29 @@ static void MulModifier(u16 *modifier, u16 val)
 	*modifier = UQ_4_12_TO_INT((*modifier * val) + UQ_4_12_ROUND);
 }
 
-u8 TypeEffectiveness(struct ChooseMoveStruct *moveInfo, u8 targetId, u32 battler)
+u8 TypeEffectiveness(u8 targetId, u32 battler)
 {
-	bool8 isInverse = (B_FLAG_INVERSE_BATTLE != 0 && FlagGet(B_FLAG_INVERSE_BATTLE)) ? TRUE : FALSE;
-	
-	if (gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].power == 0)
-		return 10;
-	else
-	{
-		u16 mod = sTypeEffectivenessTable[gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].type][gBattleMons[targetId].type1];
+    uq4_12_t modifier = UQ_4_12(1.0);
 
-		if (gBattleMons[targetId].type2 != gBattleMons[targetId].type1)
-		{
-			u16 mod2 = sTypeEffectivenessTable[gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].type][gBattleMons[targetId].type2];
-			MulModifier(&mod, mod2);
-		}
+    u16 move;
+    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
+    move = moveInfo->moves[gMoveSelectionCursor[battler]];
+    move = gBattleMons[battler].moves[gMoveSelectionCursor[battler]];
+    modifier = CalcTypeEffectivenessMultiplier(move, gMovesInfo[move].type, 100, 100, gBattleMons[targetId].ability, TRUE);
+    // if (modifier == UQ_4_12(0)) {
+    //     return B_WIN_TYPE_NO_EFF;
+    // }
+    // else if (modifier <= UQ_4_12(0.5)) {
+    //     return B_WIN_TYPE_NOT_VERY_EFF;
+    // }
+    // else if (modifier >= UQ_4_12(2.0)) {
+    //     return B_WIN_TYPE_SUPER_EFF;
+    // } 
+    // else
+    //     return 10; // 10 - normal effectiveness
 
-		if (gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].effect == EFFECT_TWO_TYPED_MOVE)
-		{
-			u16 mod3 = sTypeEffectivenessTable[gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].argument][gBattleMons[targetId].type1];
-			MulModifier(&mod, mod3);
-
-			if (gBattleMons[targetId].type2 != gBattleMons[targetId].type1)
-			{
-				u16 mod4 = sTypeEffectivenessTable[gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].argument][gBattleMons[targetId].type2];
-				MulModifier(&mod, mod4);
-			}
-		}
-
-		// 10 - normal effectiveness
-        // ADD +1 TO BELOW NUMBERS AFTER 1.9.0 I THINK
-		// 24 - super effective
-		// 25 - not very effective
-		// 26 - no effect
-
-		if (mod == UQ_4_12(0.0)) {
-			if(isInverse)
-				return 24;
-			else
-				return 26;
-		}
-		else if (mod <= UQ_4_12(0.5)) {
-			if(isInverse)
-				return 24;
-			else
-				return 25;
-		}
-		else if (mod >= UQ_4_12(2.0)) {
-			if(isInverse)
-				return 25;
-			else
-				return 24;
-		}
-		else
-			return 10;
-	}
+    // ok shit is just broken so. just return 10. whatever
+    return 10;
 }
 
 static void MoveSelectionDisplayMoveTypeDoubles(u8 targetId, u32 battler)
@@ -1831,7 +1799,7 @@ static void MoveSelectionDisplayMoveTypeDoubles(u8 targetId, u32 battler)
 	txtPtr++;
 
 	StringCopy(txtPtr, gTypesInfo[gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].type].name);
-	BattlePutTextOnWindow(gDisplayedStringBattle, TypeEffectiveness(moveInfo, targetId, battler));
+	BattlePutTextOnWindow(gDisplayedStringBattle, TypeEffectiveness(targetId, battler));
 }
 
 static void MoveSelectionDisplayMoveType(u32 battler)
@@ -1885,7 +1853,7 @@ static void MoveSelectionDisplayMoveType(u32 battler)
         end = StringCopy(txtPtr, gTypesInfo[type].name);
         PrependFontIdToFit(txtPtr, end, FONT_NORMAL, WindowWidthPx(B_WIN_MOVE_TYPE) - 25);
         StringCopy(txtPtr, gTypesInfo[type].name);
-        BattlePutTextOnWindow(gDisplayedStringBattle, TypeEffectiveness(moveInfo, 1, battler));
+        BattlePutTextOnWindow(gDisplayedStringBattle, TypeEffectiveness(1, battler));
         // BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
     }
 }

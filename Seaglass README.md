@@ -34,6 +34,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - SCUBA SAFARI, Pacifidlog Town: A combination of the Safari Zone and Bug Catching Contest from Johto, with 200 steps or 5 encounters in a dedicated underwater area to find a high-scoring Pokémon. Various helpful rewards are provided, including the HM Waterfall. Pacifidlog Town is also accessible from Slateport through an NPC with a Kirlia by the Pokémon Center after beating Team Aqua in the Museum.
     - PINBALL, Mauville Game Corner and Mossdeep Game Corner: Four unique pinball games (SEEL, GENGAR, MEOWTH, and DIGLETT) are in both Game Corners. Beating the games award PINBALL POINTs, which can be used to get rare Pokéballs, items, and even some Alolan forms!
     - CONTESTS: The Contest Hall has been moved to Verdanturf Town, and the Verdanturf Battle Tent has been moved to Lilycove! This will let the player enter contests much earlier, hopefully engaging with them much more
+        - An NPC in the Verdanturf Contest Hall can reset a Pokémon's SHEEN!
     - RUSTBORO WISHING WELL: On the east side of Rustboro City sits an old Wishing Well. Using a Wishing Star item at the well summons a random Pokémon, similar to Wonder Trade or a Gacha system!
 - Various QoL Changes, including:
     - Type Effectiveness shown in battle
@@ -62,7 +63,6 @@ High Priority (Before Release 1.0):
     - Replace desert background with beach theme, and use true desert background only on desert map
 
 BEFORE PUBLIC RELEASE:
-- Look into submission to Eevee Expo 4
 - Create EeveeExpo thread and Ko-Fi website, both with information, Discord links, and patch download
 - Turn this "Seaglass README" file into the actual README file for this repo, and use the info on here for lists on EeveeExpo thread and KoFi site
 - Create patcher website link thing that some hacks have?
@@ -80,7 +80,7 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- 
+- For now, type effectiveness not shown in battle
 Other Changes:
 - 
 

@@ -1086,3 +1086,56 @@ LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily:
 	.string "{POKEBLOCK}S if you have more people.$"
 
 `
+
+script ContestLobby_EventScript_SheenResetBiker
+{
+
+	lock
+	faceplayer
+	msgbox(format("Hm? What do you mean, I can't ride my bike inside? I do what I want!!"))
+	closemessage
+
+	showmoneybox(0, 0)
+	msgbox(format("You tryin' to break some rules too? Here's the deal, I'll reset the SHEEN stat of your lead POKéMON so it can eat more {POKEBLOCK}S! Sneaky, huh?"))
+	closemessage
+	msgbox(format("Do you want me to reset the SHEEN of the first POKéMON in your party? It'll cost you ¥8000. Hey, this is an exclusive service!"), MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == 0)
+	{
+		hidemoneybox
+		msgbox(format("Mm, such a stickler to the rules."))
+		closemessage
+		release
+		end
+	}
+	else
+	{
+		checkmoney(8000)
+		if(var(VAR_RESULT) == FALSE)
+		{
+			msgbox(format("Hah, you can't pay me! Come back when you can."))
+			closemessage
+			hidemoneybox
+		}
+		else
+		{
+			playse(SE_SHOP)
+			removemoney(8000)
+			updatemoneybox
+			delay(60)
+			hidemoneybox
+			msgbox(format("Pleasure doing business! I'll feed your POKéMON a special {POKEBLOCK}."))
+			closemessage
+			delay(30)
+
+			resetmonsheen
+			
+			msgbox(format("{PLAYER}'s POKéMON had it's SHEEN reset!"))
+			closemessage
+		}
+	}
+
+	release
+	end
+
+}

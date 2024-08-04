@@ -2170,3 +2170,114 @@ LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily:
 	.string "I bet you can make smoother, better\n"
 # 1086 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	.string "{POKEBLOCK}S if you have more people.$"
+
+ContestLobby_EventScript_SheenResetBiker::
+# 1093 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	lock
+# 1094 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	faceplayer
+# 1095 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	msgbox ContestLobby_EventScript_SheenResetBiker_Text_0
+# 1096 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	closemessage
+# 1098 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	showmoneybox 0, 0
+# 1099 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	msgbox ContestLobby_EventScript_SheenResetBiker_Text_1
+# 1100 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	closemessage
+# 1101 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	msgbox ContestLobby_EventScript_SheenResetBiker_Text_2, MSGBOX_YESNO
+# 1103 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq ContestLobby_EventScript_SheenResetBiker_2
+# 1113 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	checkmoney 8000
+# 1114 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq ContestLobby_EventScript_SheenResetBiker_5
+# 1122 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	playse SE_SHOP
+# 1123 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	removemoney 8000
+# 1124 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	updatemoneybox
+# 1125 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	delay 60
+# 1126 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	hidemoneybox
+# 1127 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	msgbox ContestLobby_EventScript_SheenResetBiker_Text_5
+# 1128 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	closemessage
+# 1129 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	delay 30
+# 1131 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	resetmonsheen
+# 1133 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	msgbox ContestLobby_EventScript_SheenResetBiker_Text_6
+# 1134 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	closemessage
+ContestLobby_EventScript_SheenResetBiker_1:
+# 1138 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	release
+	end
+
+ContestLobby_EventScript_SheenResetBiker_2:
+# 1105 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	hidemoneybox
+# 1106 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	msgbox ContestLobby_EventScript_SheenResetBiker_Text_3
+# 1107 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	closemessage
+# 1108 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	release
+	end
+
+ContestLobby_EventScript_SheenResetBiker_5:
+# 1116 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	msgbox ContestLobby_EventScript_SheenResetBiker_Text_4
+# 1117 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	closemessage
+# 1118 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	hidemoneybox
+	goto ContestLobby_EventScript_SheenResetBiker_1
+
+
+ContestLobby_EventScript_SheenResetBiker_Text_0:
+# 1095 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	.string "Hm? What do you mean, I can't ride my\n"
+	.string "bike inside? I do what I want!!$"
+
+ContestLobby_EventScript_SheenResetBiker_Text_1:
+# 1099 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	.string "You tryin' to break some rules too?\n"
+	.string "Here's the deal, I'll reset the SHEEN\l"
+	.string "stat of your lead POKéMON so it can eat\l"
+	.string "more {POKEBLOCK}S! Sneaky, huh?$"
+
+ContestLobby_EventScript_SheenResetBiker_Text_2:
+# 1101 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	.string "Do you want me to reset the SHEEN of\n"
+	.string "the first POKéMON in your party? It'll\l"
+	.string "cost you ¥8000. Hey, this is an\l"
+	.string "exclusive service!$"
+
+ContestLobby_EventScript_SheenResetBiker_Text_3:
+# 1106 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	.string "Mm, such a stickler to the rules.$"
+
+ContestLobby_EventScript_SheenResetBiker_Text_4:
+# 1116 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	.string "Hah, you can't pay me! Come back when\n"
+	.string "you can.$"
+
+ContestLobby_EventScript_SheenResetBiker_Text_5:
+# 1127 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	.string "Pleasure doing business! I'll feed your\n"
+	.string "POKéMON a special {POKEBLOCK}.$"
+
+ContestLobby_EventScript_SheenResetBiker_Text_6:
+# 1133 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	.string "{PLAYER}'s POKéMON had it's SHEEN\n"
+	.string "reset!$"

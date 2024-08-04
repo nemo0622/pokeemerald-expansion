@@ -2496,3 +2496,10 @@ void ScriptSetDoubleBattleFlag(struct ScriptContext *ctx)
 {
     sIsScriptedWildDouble = TRUE;
 }
+
+void ResetMonSheen(void)
+{
+    struct Pokemon *mon;
+    mon = &gPlayerParty[GetLeadMonIndex()];
+    SetMonData(mon, MON_DATA_SHEEN, 0);
+}
