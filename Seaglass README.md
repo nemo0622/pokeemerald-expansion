@@ -86,8 +86,7 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- dragon claw gfx broken
-    - actually lots of attack graphics broken. def from 1.9.0
+- 
 Other Changes:
 - 
 
