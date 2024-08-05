@@ -86,7 +86,8 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- Rock Tomb's screen shake animation exposes undone outlines on cave background. Make sure all backgrounds use palette for whole 32x64 canvas, and use a tile that isn't as ugly? lol
+- dragon claw gfx broken
+    - actually lots of attack graphics broken. def from 1.9.0
 Other Changes:
 - 
 
@@ -95,6 +96,7 @@ Other Changes:
 - Visuals Issues:
     - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
     - A few rare tile misalignments are possible, but should be rare
+    - Some moves are bugged out in double battles (ex: Dragon Claw)
 - Other issues:
     - Pinball physics are far from perfect, but tbh I think that adds to the charm lol
 
