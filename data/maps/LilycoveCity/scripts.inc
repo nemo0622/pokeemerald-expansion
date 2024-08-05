@@ -35,39 +35,39 @@ LilycoveCity_OnTransition:
 # 18 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_OnLoad:
 # 19 "data/maps/LilycoveCity/scripts.pory"
-	call_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles
+	@ call_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles
 # 20 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 21 "data/maps/LilycoveCity/scripts.pory"
 
 # 22 "data/maps/LilycoveCity/scripts.pory"
-LilycoveCity_EventScript_SetWailmerMetatiles::
+@ LilycoveCity_EventScript_SetWailmerMetatiles::
 # 23 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 76, 12, METATILE_Lilycove_Wailmer0, TRUE
+	@ setmetatile 76, 12, METATILE_Lilycove_Wailmer0, TRUE
 # 24 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 77, 12, METATILE_Lilycove_Wailmer1, TRUE
+	@ setmetatile 77, 12, METATILE_Lilycove_Wailmer1, TRUE
 # 25 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 76, 13, METATILE_Lilycove_Wailmer2, TRUE
+	@ setmetatile 76, 13, METATILE_Lilycove_Wailmer2, TRUE
 # 26 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 77, 13, METATILE_Lilycove_Wailmer3, TRUE
+	@ setmetatile 77, 13, METATILE_Lilycove_Wailmer3, TRUE
 # 27 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 76, 14, METATILE_Lilycove_Wailmer0_Alt, TRUE
+	@ setmetatile 76, 14, METATILE_Lilycove_Wailmer0_Alt, TRUE
 # 28 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 77, 14, METATILE_Lilycove_Wailmer1_Alt, TRUE
+	@ setmetatile 77, 14, METATILE_Lilycove_Wailmer1_Alt, TRUE
 # 29 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 76, 15, METATILE_Lilycove_Wailmer2, TRUE
+	@ setmetatile 76, 15, METATILE_Lilycove_Wailmer2, TRUE
 # 30 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 77, 15, METATILE_Lilycove_Wailmer3, TRUE
+	@ setmetatile 77, 15, METATILE_Lilycove_Wailmer3, TRUE
 # 31 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 77, 16, METATILE_Lilycove_Wailmer0_Alt, TRUE
+	@ setmetatile 77, 16, METATILE_Lilycove_Wailmer0_Alt, TRUE
 # 32 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 78, 16, METATILE_Lilycove_Wailmer1_Alt, TRUE
+	@ setmetatile 78, 16, METATILE_Lilycove_Wailmer1_Alt, TRUE
 # 33 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 77, 17, METATILE_Lilycove_Wailmer2, TRUE
+	@ setmetatile 77, 17, METATILE_Lilycove_Wailmer2, TRUE
 # 34 "data/maps/LilycoveCity/scripts.pory"
-	setmetatile 78, 17, METATILE_Lilycove_Wailmer3, TRUE
+	@ setmetatile 78, 17, METATILE_Lilycove_Wailmer3, TRUE
 # 35 "data/maps/LilycoveCity/scripts.pory"
-	return
+	@ return
 # 36 "data/maps/LilycoveCity/scripts.pory"
 
 # 37 "data/maps/LilycoveCity/scripts.pory"

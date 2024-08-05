@@ -62,6 +62,11 @@ High Priority (Before Release 1.0):
         - Note: make sure moves that "overlay the screen" (ex: confusion) don't break it. lol
     - "Volcanic" background on certain maps? Ashy northern route, jagged pass, mt. chimney
     - Replace desert background with beach theme, and use true desert background only on desert map
+- BREAKS SAVE COMPATIBILITY but Increase BAG_TMHM_COUNT and other bag counts (remember: each item uses 4 bytes of storage from Save Block 1)
+    - DO NOOOOTTTTTT DO THIS until finished initial playthrough! BREAKS SAVE COMPATIBILITY
+- Expand a few cities/towns and add houses with no doors, making world look more full
+    - Most needed in petalburg tbh
+    - make sure scripts setting positions are edited to work!
 
 BEFORE PUBLIC RELEASE:
 - Create EeveeExpo thread and Ko-Fi website, both with information, Discord links, and patch download
@@ -81,7 +86,7 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- 
+- Rock Tomb's screen shake animation exposes undone outlines on cave background. Make sure all backgrounds use palette for whole 32x64 canvas, and use a tile that isn't as ugly? lol
 Other Changes:
 - 
 
@@ -121,3 +126,4 @@ Please support everyone who made this possible!
     - Credit to Saffron City TV (on YouTube) for her Hoenn Review videos! They inspired a lot of changes, most strongly the diving minigame idea!
     - ShantyTown and Mudskip for the Pinball minigame!
     - DexNav feature branch by ghoulslash
+    - Type Icons in battle from psf and RavePossum
