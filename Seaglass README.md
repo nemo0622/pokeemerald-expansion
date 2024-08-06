@@ -75,11 +75,8 @@ BEFORE PUBLIC RELEASE:
 - Disable Debug features in debug.h config file
 
 Later Additions (After Release 1.0):
-- Make changes to Aqua/Magma dialogue!
-    - Based on changes from ORAS
 - Make Pokenews thing happen more often (Lilycove Dept. Store rooftop sales, Berry Blend master, etc)
-- After Expansion 1.9.0 adds follower system, maybe revamp follower sprites to be in retro style to fit game?
-- Day/Night system? Maybe with FakeRTC system using internal clock system?
+- Day/Night system? In conjunction with enabling FAKE RTC in config/overworld.h
 - Random nicknames option?
 
 TODO CHANGES BASED ON PLAYTHROUGH:
@@ -92,6 +89,9 @@ Other Changes:
 
 ## KNOWN BUGS & PROBLEMS
 
+- MAJOR ISSUES:
+    - In an expansion 1.8.0 save file converted to 1.9.0, entering water routes crashes the game with followers enabled
+        - Not replicated on other saves, might just be corrupt save? Either way, SAVE THE GAME OFTEN!
 - Visuals Issues:
     - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
     - A few rare tile misalignments are possible, but should be rare

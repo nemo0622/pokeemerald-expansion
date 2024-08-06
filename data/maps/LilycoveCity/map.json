@@ -143,19 +143,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
-      "x": 73,
-      "y": 15,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "LilycoveCity_EventScript_WailmerTrainerGrunt",
-      "flag": "FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 61,
       "y": 36,
@@ -326,8 +313,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(WAILMER)",
-      "x": 75,
-      "y": 14,
+      "x": 77,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -352,8 +339,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(WAILMER)",
-      "x": 77,
-      "y": 16,
+      "x": 75,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -362,6 +349,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 73,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LilycoveCity_EventScript_WailmerTrainerGrunt",
+      "flag": "FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS"
     }
   ],
   "warp_events": [
