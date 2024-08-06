@@ -519,6 +519,12 @@ static void CB2_InitBattleInternal(void)
         gBattleTypeFlags |= (IsTrainerDoubleBattle(gTrainerBattleOpponent_A) ? BATTLE_TYPE_DOUBLE : 0);
     }
 
+    if(IsTrainerDoubleBattle(gTrainerBattleOpponent_A) || (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)) // if is double battle
+    {
+        gHitMarker |= HITMARKER_NO_ANIMATIONS;
+        gHitMarker |= HITMARKER_DISABLE_ANIMATION;
+    }
+
     InitBattleBgsVideo();
     LoadBattleTextboxAndBackground();
     ResetSpriteData();
@@ -815,6 +821,12 @@ static void CB2_HandleStartBattle(void)
 {
     u8 playerMultiplayerId;
     u8 enemyMultiplayerId;
+
+    if(IsTrainerDoubleBattle(gTrainerBattleOpponent_A) || (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)) // if is double battle
+    {
+        gHitMarker |= HITMARKER_NO_ANIMATIONS;
+        gHitMarker |= HITMARKER_DISABLE_ANIMATION;
+    }
 
     RunTasks();
     AnimateSprites();

@@ -95,7 +95,7 @@ Other Changes:
 - Visuals Issues:
     - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
     - A few rare tile misalignments are possible, but should be rare
-    - Some moves are bugged out in double battles (ex: Dragon Claw)
+    - Move animations disabled in double battles (avoids bugs, but still)
 - Other issues:
     - Pinball physics are far from perfect, but tbh I think that adds to the charm lol
 
