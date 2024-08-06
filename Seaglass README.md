@@ -56,12 +56,10 @@ High Priority (Before Release 1.0):
 - GB Sounds feature branch (https://github.com/ShinyDragonHunter/pokeemerald/tree/GameboySounds)
 - Review [these feature branches](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches)
     - Start menu clock!
-- Make Wallace appear more instead of Steven (basically just switch them)
-- More battle backgrounds:
-    - New background for "long grass" (areas around Fortree)
-        - Note: make sure moves that "overlay the screen" (ex: confusion) don't break it. lol
-    - "Volcanic" background on certain maps? Ashy northern route, jagged pass, mt. chimney
-    - Replace desert background with beach theme, and use true desert background only on desert map
+- FOLLOWERS:
+    - Purchase https://anima-nel.itch.io/gbc-pokemon and gen 2 variant
+    - Design follower emotes to fit with existing gen 2 style emotes
+    - Just do a few a day, make slow progress in between other features
 - BREAKS SAVE COMPATIBILITY but Increase BAG_TMHM_COUNT and other bag counts (remember: each item uses 4 bytes of storage from Save Block 1)
     - DO NOOOOTTTTTT DO THIS until finished initial playthrough! BREAKS SAVE COMPATIBILITY
 - Expand a few cities/towns and add houses with no doors, making world look more full
