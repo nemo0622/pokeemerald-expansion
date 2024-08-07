@@ -126,3 +126,4 @@ Please support everyone who made this possible!
     - ShantyTown and Mudskip for the Pinball minigame!
     - DexNav feature branch by ghoulslash
     - Type Icons in battle from psf and RavePossum
+- Overworld Pokémon Sprites by Anima_nel on itch.io!
