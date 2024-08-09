@@ -53,7 +53,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 High Priority (Before Release 1.0):
 - Complete playthrough of Pokémon Emerald Seaglass
-- GB Sounds feature branch (https://github.com/ShinyDragonHunter/pokeemerald/tree/GameboySounds)
 - Review [these feature branches](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches)
     - Start menu clock!
 - FOLLOWERS:
@@ -73,7 +72,9 @@ BEFORE PUBLIC RELEASE:
 - Disable Debug features in debug.h config file
 
 Later Additions (After Release 1.0):
-- Make Pokenews thing happen more often (Lilycove Dept. Store rooftop sales, Berry Blend master, etc)
+- Music modding with MIDI files:
+    - MIDI files of GBC songs: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/tree/main/Audio/nehochupechatat
+    - Pokécommunity tutorial: https://www.pokecommunity.com/threads/how-to-add-edit-and-understand-music-in-pokeemerald.444317/
 - Day/Night system? In conjunction with enabling FAKE RTC in config/overworld.h
 - Random nicknames option?
 
