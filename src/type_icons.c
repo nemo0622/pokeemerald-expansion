@@ -419,8 +419,8 @@ void TryLoadTypeIcons(u32 battler)
            }
            */
 
-        u8 type1 = gBattleMons[bank].type1;
-        u8 type2 = gBattleMons[bank].type2;
+        u8 type1 = gBattleMons[bank].types[0];
+        u8 type2 = gBattleMons[bank].types[1];
 
         for (u8 typeNum = 0; typeNum < 2; ++typeNum) //Load each type
         {

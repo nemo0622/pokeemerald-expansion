@@ -116,6 +116,9 @@ Please support everyone who made this possible!
 - Overworld Sprites:
     - New player sprites by [Solo993 and GOLDHIBIKI](https://www.deviantart.com/solo993/art/Pokemon-Special-HgSs-saga-gbc-sprites-454150898) on DeviantArt
     - Some trainer sprites by leeseongjae620 on DeviantArt
+- Overworld Pokémon Sprites:
+    - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
+    - Megaman-Omega on DeviantArt: Onix
 - User Interface:
     - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
     - New battle backgrounds by Princess-Phoenix, Carchagui, and Aveontrainer on DeviantArt
@@ -126,7 +129,3 @@ Please support everyone who made this possible!
     - ShantyTown and Mudskip for the Pinball minigame!
     - DexNav feature branch by ghoulslash
     - Type Icons in battle from psf and RavePossum
-- Overworld Pokémon Sprites:
-    - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
-    - Gen 3 and some other follower sprites found by Mano_Emet on Discord, by megaman-omega and various other creators
-    - Megaman-Omega on DeviantArt: Onix
