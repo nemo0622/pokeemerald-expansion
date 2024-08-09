@@ -53,8 +53,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 High Priority (Before Release 1.0):
 - Complete playthrough of Pokémon Emerald Seaglass
-- Review [these feature branches](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches)
-    - Start menu clock!
 - FOLLOWERS:
     - Purchase https://anima-nel.itch.io/gbc-pokemon and gen 2 variant
     - Design follower emotes to fit with existing gen 2 style emotes
@@ -119,7 +117,8 @@ Please support everyone who made this possible!
     - Some trainer sprites by leeseongjae620 on DeviantArt
 - Overworld Pokémon Sprites:
     - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
-    - Megaman-Omega on DeviantArt: Onix
+    - Megaman-Omega on DeviantArt: Onix, Lotad line, Taillow line, Surskit line, Shroomish line
+    - Many others by resource from Mano_Emet on Discord (could not find origin, need to find + credit artists)
 - User Interface:
     - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
     - New battle backgrounds by Princess-Phoenix, Carchagui, and Aveontrainer on DeviantArt
@@ -130,3 +129,4 @@ Please support everyone who made this possible!
     - ShantyTown and Mudskip for the Pinball minigame!
     - DexNav feature branch by ghoulslash
     - Type Icons in battle from psf and RavePossum
+    - Start Menu Clock by Pawkkie
