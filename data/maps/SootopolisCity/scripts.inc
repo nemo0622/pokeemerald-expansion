@@ -175,15 +175,15 @@ SootopolisCity_EventScript_SetLayout::
 # 88 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_SetNormalLayout
 # 89 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 1, SootopolisCity_EventScript_SetLegendariesLayout
+	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 1, SootopolisCity_EventScript_SetNormalLayout
 # 90 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 2, SootopolisCity_EventScript_SetLegendariesLayout
+	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 2, SootopolisCity_EventScript_SetNormalLayout
 # 91 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SootopolisCity_EventScript_SetLegendariesLayout
+	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SootopolisCity_EventScript_SetNormalLayout
 # 92 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_SetLegendariesLayout
+	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_SetNormalLayout
 # 93 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_le VAR_SKY_PILLAR_STATE, 1, SootopolisCity_EventScript_SetLegendariesLayout
+	goto_if_le VAR_SKY_PILLAR_STATE, 1, SootopolisCity_EventScript_SetNormalLayout
 # 94 "data/maps/SootopolisCity/scripts.pory"
 	return
 # 95 "data/maps/SootopolisCity/scripts.pory"

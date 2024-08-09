@@ -129,3 +129,4 @@ Please support everyone who made this possible!
 - Overworld Pokémon Sprites:
     - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
     - Gen 3 and some other follower sprites found by Mano_Emet on Discord, by megaman-omega and various other creators
+    - Megaman-Omega on DeviantArt: Onix
