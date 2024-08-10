@@ -104,6 +104,9 @@ bool32 CanDynamax(u32 battler)
     if (GetActiveGimmick(battler) != GIMMICK_NONE)
         return FALSE;
 
+    if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
+        return FALSE;
+
     // Check if battler is holding a Z-Crystal or Mega Stone.
     if (!TESTING && (holdEffect == HOLD_EFFECT_Z_CRYSTAL || holdEffect == HOLD_EFFECT_MEGA_STONE))  // tests make this check already
         return FALSE;
