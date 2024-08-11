@@ -53,15 +53,12 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 High Priority (Before Release 1.0):
 - Complete playthrough of Pokémon Emerald Seaglass
-- FOLLOWERS:
-    - Purchase https://anima-nel.itch.io/gbc-pokemon and gen 2 variant
-    - Design follower emotes to fit with existing gen 2 style emotes
-    - Just do a few a day, make slow progress in between other features
 - BREAKS SAVE COMPATIBILITY but Increase BAG_TMHM_COUNT and other bag counts (remember: each item uses 4 bytes of storage from Save Block 1)
     - DO NOOOOTTTTTT DO THIS until finished initial playthrough! BREAKS SAVE COMPATIBILITY
 - Expand a few cities/towns and add houses with no doors, making world look more full
     - Most needed in petalburg tbh
     - make sure scripts setting positions are edited to work!
+    - Replace Sky Pillar and Mirage tower in desert with castle tower sprites by zaebucca
 
 BEFORE PUBLIC RELEASE:
 - Create EeveeExpo thread and Ko-Fi website, both with information, Discord links, and patch download
@@ -117,7 +114,7 @@ Please support everyone who made this possible!
     - Some trainer sprites by leeseongjae620 on DeviantArt
 - Overworld Pokémon Sprites:
     - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
-    - Megaman-Omega on DeviantArt: Onix, Lotad, Lombre, Ludicolo, Taillow, Swellow, Surskit, Masquerain, Shroomish, Breloom, Whismur, Loudred, Exploud, Makuhita, Hariyama, Sableye, Mawile, Aron, Lairon, Aggron, Volbeat, Illumise, Torkoal, Cacnea, Cacturne, Swablu, Altaria, Lileep, Cradily, Anorith, Armaldo, Feebas, Milotic, Shuppet, Banette, Duskull, Dusclops, Chimecho, Absol, Relicanth, Bagon, Salamence
+    - Megaman-Omega on DeviantArt: Onix, Steelix, Lugia, Ho-oh, Lotad, Lombre, Ludicolo, Taillow, Swellow, Surskit, Masquerain, Shroomish, Breloom, Whismur, Loudred, Exploud, Makuhita, Hariyama, Sableye, Mawile, Aron, Lairon, Aggron, Volbeat, Illumise, Torkoal, Cacnea, Cacturne, Swablu, Altaria, Lileep, Cradily, Anorith, Armaldo, Feebas, Milotic, Shuppet, Banette, Duskull, Dusclops, Chimecho, Absol, Relicanth, Bagon, Salamence, Kyogre, Groudon, Rayquaza
     - Eeveeee: Spoink
     - Many others by resource from Mano_Emet on Discord (could not find origin, need to find + credit artists)
 - User Interface:

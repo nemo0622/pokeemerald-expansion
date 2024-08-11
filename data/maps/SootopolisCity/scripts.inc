@@ -59,7 +59,7 @@ SootopolisCity_OnLoad:
 # 30 "data/maps/SootopolisCity/scripts.pory"
 	goto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_EventScript_LegendariesNotArrived
 # 31 "data/maps/SootopolisCity/scripts.pory"
-	call_if_unset FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_LockHouseDoors
+	@ call_if_unset FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_LockHouseDoors
 # 32 "data/maps/SootopolisCity/scripts.pory"
 	end
 # 33 "data/maps/SootopolisCity/scripts.pory"
