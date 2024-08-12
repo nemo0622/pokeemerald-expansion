@@ -81,7 +81,7 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- 
+- Game freezes in double battles doing pokemon animation. need to super super disable all those
 Other Changes:
 - 
 
