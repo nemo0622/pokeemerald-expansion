@@ -55,9 +55,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 High Priority (Before Release 1.0):
 - Complete playthrough of Pokémon Emerald Seaglass
-- FOLLOWERS:
-    - All cross gen evolutions
-    - replace current eeveeloution sprites with megaman-omega sprites!
 - BREAKS SAVE COMPATIBILITY but Increase BAG_TMHM_COUNT and other bag counts (remember: each item uses 4 bytes of storage from Save Block 1)
     - DO NOOOOTTTTTT DO THIS until finished initial playthrough! BREAKS SAVE COMPATIBILITY
 - Expand a few cities/towns and add houses with no doors, making world look more full

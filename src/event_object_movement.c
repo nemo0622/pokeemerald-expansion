@@ -1895,7 +1895,10 @@ static const struct ObjectEventGraphicsInfo *SpeciesToGraphicsInfo(u16 species, 
         break;
     }
     // Try to avoid OOB or undefined access
-    if ((graphicsInfo->tileTag == 0 && species < NUM_SPECIES) || (graphicsInfo->tileTag != TAG_NONE && species >= NUM_SPECIES))
+    // manually forces some species without GBC followers (applin and tinkatink lines) to be substitute
+    if ((graphicsInfo->tileTag == 0 && species < NUM_SPECIES) || (graphicsInfo->tileTag != TAG_NONE && species >= NUM_SPECIES)
+    || species == SPECIES_APPLIN || species == SPECIES_APPLETUN || species == SPECIES_FLAPPLE || species == SPECIES_DIPPLIN 
+    || species == SPECIES_HYDRAPPLE || species == SPECIES_TINKATINK || species == SPECIES_TINKATUFF || species == SPECIES_TINKATON)
     {
         if (OW_SUBSTITUTE_PLACEHOLDER)
             return &gSpeciesInfo[SPECIES_NONE].overworldData;
