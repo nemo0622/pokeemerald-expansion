@@ -17,13 +17,15 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Overworld NPCs have more retro artstyle, with a white outline to make them pop!
     - Upgraded Pokédex with many helpful new features, inspired by HGSS dex but in GBC style
 - New additions to some maps to increase interesting events
-    - Ex: Wishing Well in Rustboro City, Birdhouses in Fortree City, etc.
+    - Minigames in more towns with fun rewards (more details below)
+    - Helpful item merchants in a few towns, with stat-changing and evolution items
 - All Pokémon from Generations 1-3 are available, spread out enough to keep it from feeling bloated!
     - Cross-gen evolutions have also been added, up to Gen 9!
     - Pokémon use modified USUM movesets when applicable (many Pokémon also have more coverage moves and more interesting sets in general)
     - Almost all Pokémon have recieved some changes! From slight stat changes to new types, each Pokémon should feel more unique to use
     - Trainers use wider variety of Pokémon (Team Aqua and Magma fights are finally interesting!)
     - Additional available Pokémon: Spiky-Ear Pichu, Tinkaton line, and Applin line (details on obtaining in documentation)
+- Overworld Following Pokémon!
 - Party-wide EXP Share, with soft level caps to balance this change
     - This is *NOT* a "difficulty hack"! These changes just cut down on some grind while still keeping a good balance
     - Soft level cap allows for you to reach the gym leader's max, then halves exp gain for the next few levels, then cuts it more
@@ -53,6 +55,9 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 High Priority (Before Release 1.0):
 - Complete playthrough of Pokémon Emerald Seaglass
+- FOLLOWERS:
+    - All cross gen evolutions
+    - replace current eeveeloution sprites with megaman-omega sprites!
 - BREAKS SAVE COMPATIBILITY but Increase BAG_TMHM_COUNT and other bag counts (remember: each item uses 4 bytes of storage from Save Block 1)
     - DO NOOOOTTTTTT DO THIS until finished initial playthrough! BREAKS SAVE COMPATIBILITY
 - Expand a few cities/towns and add houses with no doors, making world look more full
@@ -72,6 +77,8 @@ Later Additions (After Release 1.0):
     - Pokécommunity tutorial: https://www.pokecommunity.com/threads/how-to-add-edit-and-understand-music-in-pokeemerald.444317/
 - Day/Night system? In conjunction with enabling FAKE RTC in config/overworld.h
 - Random nicknames option?
+- New ability ideas:
+    - Strong legs - ability that boosts kicking moves (good for Flareon and Medicham)
 
 TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
@@ -114,7 +121,7 @@ Please support everyone who made this possible!
     - Some trainer sprites by leeseongjae620 on DeviantArt
 - Overworld Pokémon Sprites:
     - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
-    - Megaman-Omega on DeviantArt: Onix, Steelix, Lugia, Ho-oh, Lotad, Lombre, Ludicolo, Taillow, Swellow, Surskit, Masquerain, Shroomish, Breloom, Whismur, Loudred, Exploud, Makuhita, Hariyama, Sableye, Mawile, Aron, Lairon, Aggron, Volbeat, Illumise, Torkoal, Cacnea, Cacturne, Swablu, Altaria, Lileep, Cradily, Anorith, Armaldo, Feebas, Milotic, Shuppet, Banette, Duskull, Dusclops, Chimecho, Absol, Relicanth, Bagon, Salamence, Kyogre, Groudon, Rayquaza
+    - Megaman-Omega on DeviantArt: Onix, Steelix, Lugia, Ho-oh, Lotad, Lombre, Ludicolo, Taillow, Swellow, Surskit, Masquerain, Shroomish, Breloom, Whismur, Loudred, Exploud, Makuhita, Hariyama, Sableye, Mawile, Aron, Lairon, Aggron, Volbeat, Illumise, Torkoal, Cacnea, Cacturne, Swablu, Altaria, Lileep, Cradily, Anorith, Armaldo, Feebas, Milotic, Shuppet, Banette, Duskull, Dusclops, Chimecho, Absol, Relicanth, Bagon, Salamence, Kyogre, Groudon, Rayquaza, Tangrowth, Electivire, Magmortar, Gliscor, Mamoswine, Gallade, Froslass, Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon
     - Eeveeee: Spoink
     - Many others by resource from Mano_Emet on Discord (could not find origin, need to find + credit artists)
 - User Interface:
