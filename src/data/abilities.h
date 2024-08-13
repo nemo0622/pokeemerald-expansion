@@ -2607,4 +2607,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_ATHLETIC] =
+    {
+        .name = _("Athletic"),
+        .description = COMPOUND_STRING("Ups kick moves and Speed."),
+        .aiRating = 10,
+    },
 };

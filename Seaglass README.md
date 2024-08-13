@@ -26,12 +26,14 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Trainers use wider variety of Pokémon (Team Aqua and Magma fights are finally interesting!)
     - Additional available Pokémon: Spiky-Ear Pichu, Tinkaton line, and Applin line (details on obtaining in documentation)
 - Overworld Following Pokémon!
-- Party-wide EXP Share, with soft level caps to balance this change
-    - This is *NOT* a "difficulty hack"! These changes just cut down on some grind while still keeping a good balance
-    - Soft level cap allows for you to reach the gym leader's max, then halves exp gain for the next few levels, then cuts it more
-- Battle Gimmick: Z-Power Ring and Z-Crystals can be obtained from the DEVON Corporation after delivering Steven's letter
-    - Completely optional and out of the way - if you don't like Z-Moves, don't even bother getting the Z-Ring!
-    - EXP. Share is given by Scott in Petalburg, just after Wally's catching tutorial
+- Numerous upgrades to the battle system:
+    - Changes from pokeemerald-expansion to update battle engine, such as Fairy type, Physical/Special split, etc.
+    - Party-wide EXP Share, with soft level caps to balance this change
+        - This is *NOT* a "difficulty hack"! These changes just cut down on some grind while still keeping a good balance
+        - Soft level cap allows for you to reach the gym leader's max, then halves exp gain for the next few levels, then cuts it more
+        - EXP. Share is given by Scott in Petalburg, just after Wally's catching tutorial
+    - Battle Gimmick: Z-Power Ring and Z-Crystals can be obtained from the DEVON Corporation after delivering Steven's letter
+        - Completely optional and out of the way - if you don't like Z-Moves, don't even bother getting the Z-Ring!
 - More minigames to break up Pokémon battles!
     - SCUBA SAFARI, Pacifidlog Town: A combination of the Safari Zone and Bug Catching Contest from Johto, with 200 steps or 5 encounters in a dedicated underwater area to find a high-scoring Pokémon. Various helpful rewards are provided, including the HM Waterfall. Pacifidlog Town is also accessible from Slateport through an NPC with a Kirlia by the Pokémon Center after beating Team Aqua in the Museum.
     - PINBALL, Mauville Game Corner and Mossdeep Game Corner: Four unique pinball games (SEEL, GENGAR, MEOWTH, and DIGLETT) are in both Game Corners. Beating the games award PINBALL POINTs, which can be used to get rare Pokéballs, items, and even some Alolan forms!
@@ -72,14 +74,6 @@ Later Additions (After Release 1.0):
 - Random nicknames option?
 - New ability ideas:
     - Strong legs - ability that boosts kicking moves (good for Flareon and Medicham)
-
-TODO CHANGES BASED ON PLAYTHROUGH:
-Balance changes:
-- 
-Bug Fixes:
-- 
-Other Changes:
-- 
 
 ## KNOWN BUGS & PROBLEMS
 
