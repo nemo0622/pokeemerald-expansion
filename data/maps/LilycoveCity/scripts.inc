@@ -1627,6 +1627,20 @@ LilycoveCity_EventScript_ScubaSafariResetSailor_6:
 	end
 
 
+LilycoveCity_EventScript_Wailmer::
+# 835 "data/maps/LilycoveCity/scripts.pory"
+	lock
+# 836 "data/maps/LilycoveCity/scripts.pory"
+	faceplayer
+# 837 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_Wailmer_Text_0
+# 838 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 839 "data/maps/LilycoveCity/scripts.pory"
+	release
+	end
+
+
 LilycoveCity_EventScript_ScubaSafariResetSailor_Text_0:
 # 769 "data/maps/LilycoveCity/scripts.pory"
 	.string "Ehehe... come out, little POKéMON... don't\n"
@@ -1671,3 +1685,7 @@ LilycoveCity_EventScript_ScubaSafariResetSailor_Text_7:
 # 820 "data/maps/LilycoveCity/scripts.pory"
 	.string "Alright, it's done. Thanks for the cash!\n"
 	.string "Now scram!$"
+
+LilycoveCity_EventScript_Wailmer_Text_0:
+# 837 "data/maps/LilycoveCity/scripts.pory"
+	.string "Blaaaahh!$"

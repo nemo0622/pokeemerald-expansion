@@ -54,13 +54,9 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 ## FUTURE PLANS
 
 High Priority (Before Release 1.0):
-- Complete playthrough of Pokémon Emerald Seaglass
 - BREAKS SAVE COMPATIBILITY but Increase BAG_TMHM_COUNT and other bag counts (remember: each item uses 4 bytes of storage from Save Block 1)
     - DO NOOOOTTTTTT DO THIS until finished initial playthrough! BREAKS SAVE COMPATIBILITY
-- Expand a few cities/towns and add houses with no doors, making world look more full
-    - Most needed in petalburg tbh
-    - make sure scripts setting positions are edited to work!
-    - Replace Sky Pillar and Mirage tower in desert with castle tower sprites by zaebucca
+    - 2492 free bytes in save block1 - expand item bag to 60 items, TM pouch to 70 items, and maybe key items +10
 
 BEFORE PUBLIC RELEASE:
 - Create EeveeExpo thread and Ko-Fi website, both with information, Discord links, and patch download

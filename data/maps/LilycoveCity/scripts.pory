@@ -829,3 +829,13 @@ script LilycoveCity_EventScript_ScubaSafariResetSailor
 	end
 
 }
+
+script LilycoveCity_EventScript_Wailmer
+{
+	lock
+	faceplayer
+	msgbox(format("Blaaaahh!"))
+	closemessage
+	release
+	end
+}
