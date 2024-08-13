@@ -508,6 +508,17 @@ script MossdeepCity_EventScript_LegendarySailor
 			setflag(FLAG_BECAME_SAILOR_SUCCESSOR)
 			msgbox(format("The GYM BADGE from this island, huh? Not bad! From now on, y'ar my successor!\p I've been to many-a wild place at sea, and soon, you will too!"))
 			closemessage
+			msgbox(format("Ta get ya started, here's a FERRY ticket!"))
+			closemessage
+			giveitem(ITEM_SS_TICKET)
+			setflag(FLAG_RECEIVED_SS_TICKET)
+			setflag(FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY)
+			clearflag(FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY)
+			clearflag(FLAG_HIDE_SLATEPORT_CITY_HARBOR_SS_TIDAL)
+			clearflag(FLAG_HIDE_LILYCOVE_HARBOR_SSTIDAL)
+			msgbox(format("Eh? Look's like a second ticket was clipped on ta that! It's yer lucky day!"))
+			setflag(FLAG_ENABLE_SHIP_SOUTHERN_ISLAND)
+			giveitem(ITEM_EON_TICKET)
 			msgbox(format("As my successor, ye'll sail to places with POKéMON ye've never seen before!\p Come talk to me again if ye're looking for adventure!"))
 			closemessage
 			release
@@ -537,14 +548,6 @@ script MossdeepCity_EventScript_LegendarySailor
 				giveitem(ITEM_OLD_SEA_MAP)
 				setflag(FLAG_RECEIVED_OLD_SEA_MAP)
 				setflag(FLAG_ENABLE_SHIP_FARAWAY_ISLAND)
-				msgbox(format("Ah, an' here's a FERRY ticket!"))
-				closemessage
-				giveitem(ITEM_SS_TICKET)
-				setflag(FLAG_RECEIVED_SS_TICKET)
-				setflag(FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY)
-				clearflag(FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY)
-				clearflag(FLAG_HIDE_SLATEPORT_CITY_HARBOR_SS_TIDAL)
-				clearflag(FLAG_HIDE_LILYCOVE_HARBOR_SSTIDAL)
 				msgbox(format("Show that to the FERRY sailor in the LILYCOVE HARBOR and they'll bring ya where ya need!\p Good luck, li'l sailor! And come back soon, I have more for ya!"))
 				closemessage
 				release

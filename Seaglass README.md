@@ -45,7 +45,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
         - Second Shiny Charm, giving even more rerolls, available in Fortree City! Interact with all shrines from east to west in order, and the second Shiny Charm will be in the final shrine (left of the Pokémon Center)
     - Press R to toggle auto-run
     - Press A in Summary Screen to view IVs and EVs; All Pokémon have at least 2 perfect IV's
-    - Legendaries can all be encountered, many before Elite Four - details in documentation
+    - Legendaries can all be encountered, mostly before Elite Four - details in documentation
     - Pokémon Box Link, allowing access to PC from anywhere (obtained from Scientist NPC in Slateport City Pokémon Center)
     - Cheat Codes / Mystery Gift function! Interact with GameCube in Player's room
         - Codes can provide Rare Candies, Master Balls, and a few cool Pokémon (Codes listed in documentation!)
@@ -81,8 +81,7 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- No roamer event trigger after E4 - add ticket to Eon Island!
-- After E4, SS Tidal still teleports to city, no ship event or pass to battle frontier
+- 
 Other Changes:
 - 
 
@@ -121,7 +120,9 @@ Please support everyone who made this possible!
 - Overworld Pokémon Sprites:
     - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
     - Megaman-Omega on DeviantArt: Onix, Steelix, Lugia, Ho-oh, Lotad, Lombre, Ludicolo, Taillow, Swellow, Surskit, Masquerain, Shroomish, Breloom, Whismur, Loudred, Exploud, Makuhita, Hariyama, Sableye, Mawile, Aron, Lairon, Aggron, Volbeat, Illumise, Torkoal, Cacnea, Cacturne, Swablu, Altaria, Lileep, Cradily, Anorith, Armaldo, Feebas, Milotic, Shuppet, Banette, Duskull, Dusclops, Chimecho, Absol, Relicanth, Bagon, Salamence, Kyogre, Groudon, Rayquaza, Tangrowth, Electivire, Magmortar, Gliscor, Mamoswine, Gallade, Froslass, Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon
-    - Eeveeee: Spoink
+    - Eeveeee: Spoink, Kleavor
+    - SageDeoxys: Wyrdeer
+    - .kedoshim: Ursaluna
     - Many others by resource from Mano_Emet on Discord (could not find origin, need to find + credit artists)
 - User Interface:
     - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)

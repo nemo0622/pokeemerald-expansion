@@ -958,19 +958,19 @@ MossdeepCity_EventScript_LegendarySailor_1:
 	goto_if_unset FLAG_BADGE07_GET, MossdeepCity_EventScript_LegendarySailor_5
 # 506 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_unset FLAG_BECAME_SAILOR_SUCCESSOR, MossdeepCity_EventScript_LegendarySailor_9
-# 518 "data/maps/MossdeepCity/scripts.pory"
+# 529 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_OLD_SEA_MAP, MossdeepCity_EventScript_LegendarySailor_11
-# 556 "data/maps/MossdeepCity/scripts.pory"
+# 559 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_MYSTIC_TICKET, MossdeepCity_EventScript_LegendarySailor_12
-# 583 "data/maps/MossdeepCity/scripts.pory"
+# 586 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_AURORA_TICKET, MossdeepCity_EventScript_LegendarySailor_13
-# 611 "data/maps/MossdeepCity/scripts.pory"
+# 614 "data/maps/MossdeepCity/scripts.pory"
 	goto_if_set FLAG_HIDE_SAILOR_ACROSS_HOENN, MossdeepCity_EventScript_LegendarySailor_14
-# 625 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_21
-# 626 "data/maps/MossdeepCity/scripts.pory"
+# 628 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_22
+# 629 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
-# 627 "data/maps/MossdeepCity/scripts.pory"
+# 630 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
@@ -994,7 +994,7 @@ MossdeepCity_EventScript_LegendarySailor_2:
 	goto MossdeepCity_EventScript_LegendarySailor_1
 
 MossdeepCity_EventScript_LegendarySailor_4:
-# 631 "data/maps/MossdeepCity/scripts.pory"
+# 634 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
@@ -1017,162 +1017,168 @@ MossdeepCity_EventScript_LegendarySailor_9:
 # 512 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
 # 513 "data/maps/MossdeepCity/scripts.pory"
-	release
-	end
-
-MossdeepCity_EventScript_LegendarySailor_11:
-# 520 "data/maps/MossdeepCity/scripts.pory"
+	giveitem ITEM_SS_TICKET
+# 514 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_RECEIVED_SS_TICKET
+# 515 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
+# 516 "data/maps/MossdeepCity/scripts.pory"
+	clearflag FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY
+# 517 "data/maps/MossdeepCity/scripts.pory"
+	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SS_TIDAL
+# 518 "data/maps/MossdeepCity/scripts.pory"
+	clearflag FLAG_HIDE_LILYCOVE_HARBOR_SSTIDAL
+# 519 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_5
+# 520 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
 # 521 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
+	giveitem ITEM_EON_TICKET
 # 522 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_6
 # 523 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
 # 524 "data/maps/MossdeepCity/scripts.pory"
+	release
+	end
+
+MossdeepCity_EventScript_LegendarySailor_11:
+# 531 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_7
+# 532 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 533 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_8
+# 534 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 535 "data/maps/MossdeepCity/scripts.pory"
 	getcaughtmon SPECIES_RHYDON
-# 526 "data/maps/MossdeepCity/scripts.pory"
+# 537 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MossdeepCity_EventScript_LegendarySailor_20
-# 535 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_8
-# 536 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
-# 537 "data/maps/MossdeepCity/scripts.pory"
-	giveitem ITEM_OLD_SEA_MAP
-# 538 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_RECEIVED_OLD_SEA_MAP
-# 539 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
-# 540 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_9
-# 541 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
-# 542 "data/maps/MossdeepCity/scripts.pory"
-	giveitem ITEM_SS_TICKET
-# 543 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_RECEIVED_SS_TICKET
-# 544 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
-# 545 "data/maps/MossdeepCity/scripts.pory"
-	clearflag FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY
 # 546 "data/maps/MossdeepCity/scripts.pory"
-	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SS_TIDAL
-# 547 "data/maps/MossdeepCity/scripts.pory"
-	clearflag FLAG_HIDE_LILYCOVE_HARBOR_SSTIDAL
-# 548 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_10
-# 549 "data/maps/MossdeepCity/scripts.pory"
+# 547 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
+# 548 "data/maps/MossdeepCity/scripts.pory"
+	giveitem ITEM_OLD_SEA_MAP
+# 549 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_RECEIVED_OLD_SEA_MAP
 # 550 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
+# 551 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_11
+# 552 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 553 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 MossdeepCity_EventScript_LegendarySailor_12:
-# 558 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_11
-# 559 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
-# 560 "data/maps/MossdeepCity/scripts.pory"
-	getcaughtmon SPECIES_OCTILLERY
+# 561 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_12
 # 562 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 563 "data/maps/MossdeepCity/scripts.pory"
+	getcaughtmon SPECIES_OCTILLERY
+# 565 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MossdeepCity_EventScript_LegendarySailor_23
-# 571 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_13
-# 572 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
-# 573 "data/maps/MossdeepCity/scripts.pory"
-	giveitem ITEM_MYSTIC_TICKET
 # 574 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_RECEIVED_MYSTIC_TICKET
-# 575 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
-# 576 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_14
+# 575 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 576 "data/maps/MossdeepCity/scripts.pory"
+	giveitem ITEM_MYSTIC_TICKET
 # 577 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_RECEIVED_MYSTIC_TICKET
+# 578 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+# 579 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_15
+# 580 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 MossdeepCity_EventScript_LegendarySailor_13:
-# 585 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_15
-# 586 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
-# 587 "data/maps/MossdeepCity/scripts.pory"
-	getcaughtmon SPECIES_RAYQUAZA
+# 588 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_16
 # 589 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 590 "data/maps/MossdeepCity/scripts.pory"
+	getcaughtmon SPECIES_RAYQUAZA
+# 592 "data/maps/MossdeepCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MossdeepCity_EventScript_LegendarySailor_26
-# 598 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_17
-# 599 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
-# 600 "data/maps/MossdeepCity/scripts.pory"
-	giveitem ITEM_AURORA_TICKET
 # 601 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
-# 602 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_RECEIVED_AURORA_TICKET
-# 603 "data/maps/MossdeepCity/scripts.pory"
 	msgbox MossdeepCity_EventScript_LegendarySailor_Text_18
-# 604 "data/maps/MossdeepCity/scripts.pory"
+# 602 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
+# 603 "data/maps/MossdeepCity/scripts.pory"
+	giveitem ITEM_AURORA_TICKET
+# 604 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
 # 605 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_RECEIVED_AURORA_TICKET
+# 606 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_19
+# 607 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 608 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 MossdeepCity_EventScript_LegendarySailor_14:
-# 613 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_19
-# 614 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
-# 615 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_20
 # 616 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_20
 # 617 "data/maps/MossdeepCity/scripts.pory"
-	clearflag FLAG_HIDE_SAILOR_ACROSS_HOENN
+	closemessage
 # 618 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_21
+# 619 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 620 "data/maps/MossdeepCity/scripts.pory"
+	clearflag FLAG_HIDE_SAILOR_ACROSS_HOENN
+# 621 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 MossdeepCity_EventScript_LegendarySailor_20:
-# 528 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_7
-# 529 "data/maps/MossdeepCity/scripts.pory"
+# 539 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_9
+# 540 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
-# 530 "data/maps/MossdeepCity/scripts.pory"
+# 541 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 MossdeepCity_EventScript_LegendarySailor_23:
-# 564 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_12
-# 565 "data/maps/MossdeepCity/scripts.pory"
+# 567 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_13
+# 568 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
-# 566 "data/maps/MossdeepCity/scripts.pory"
+# 569 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 MossdeepCity_EventScript_LegendarySailor_26:
-# 591 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_LegendarySailor_Text_16
-# 592 "data/maps/MossdeepCity/scripts.pory"
+# 594 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_LegendarySailor_Text_17
+# 595 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
-# 593 "data/maps/MossdeepCity/scripts.pory"
+# 596 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
 
 MossdeepCity_EventScript_GameCornerSign::
-# 638 "data/maps/MossdeepCity/scripts.pory"
-	lock
-# 639 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_GameCornerSign_Text_0
-# 640 "data/maps/MossdeepCity/scripts.pory"
-	closemessage
 # 641 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 642 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_GameCornerSign_Text_0
+# 643 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 644 "data/maps/MossdeepCity/scripts.pory"
 	release
 	end
 
@@ -1227,19 +1233,29 @@ MossdeepCity_EventScript_LegendarySailor_Text_3:
 
 MossdeepCity_EventScript_LegendarySailor_Text_4:
 # 511 "data/maps/MossdeepCity/scripts.pory"
+	.string "Ta get ya started, here's a FERRY\n"
+	.string "ticket!$"
+
+MossdeepCity_EventScript_LegendarySailor_Text_5:
+# 519 "data/maps/MossdeepCity/scripts.pory"
+	.string "Eh? Look's like a second ticket was\n"
+	.string "clipped on ta that! It's yer lucky day!$"
+
+MossdeepCity_EventScript_LegendarySailor_Text_6:
+# 522 "data/maps/MossdeepCity/scripts.pory"
 	.string "As my successor, ye'll sail to places\n"
 	.string "with POKéMON ye've never seen before!\p"
 	.string "Come talk to me again if ye're looking\n"
 	.string "for adventure!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_5:
-# 520 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_7:
+# 531 "data/maps/MossdeepCity/scripts.pory"
 	.string "Ahoy thar, my li'l sailor! I've got an OLD\n"
 	.string "SEA MAP that leads to a mysterious\l"
 	.string "island, a truly wond'rous place!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_6:
-# 522 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_8:
+# 533 "data/maps/MossdeepCity/scripts.pory"
 	.string "...! Wahaha! No no, ya have to prove\n"
 	.string "yerself before getting my tickets and\l"
 	.string "maps!\p"
@@ -1247,13 +1263,13 @@ MossdeepCity_EventScript_LegendarySailor_Text_6:
 	.string "POKéDEX entry fer one of the first\l"
 	.string "discovered POKéMON, RHYDON!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_7:
-# 528 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_9:
+# 539 "data/maps/MossdeepCity/scripts.pory"
 	.string "Looks like ya haven't caught a RHYDON\n"
 	.string "yet, kiddo. Get to work!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_8:
-# 535 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_10:
+# 546 "data/maps/MossdeepCity/scripts.pory"
 	.string "...Oho! Whoo-doggy! Seems like ya caught\n"
 	.string "yerself a RHYDON!\p"
 	.string "That there was one of the first\n"
@@ -1261,20 +1277,16 @@ MossdeepCity_EventScript_LegendarySailor_Text_8:
 	.string "to respect it.\p"
 	.string "Now, yer reward!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_9:
-# 540 "data/maps/MossdeepCity/scripts.pory"
-	.string "Ah, an' here's a FERRY ticket!$"
-
-MossdeepCity_EventScript_LegendarySailor_Text_10:
-# 548 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_11:
+# 551 "data/maps/MossdeepCity/scripts.pory"
 	.string "Show that to the FERRY sailor in the\n"
 	.string "LILYCOVE HARBOR and they'll bring ya\l"
 	.string "where ya need!\p"
 	.string "Good luck, li'l sailor! And come back\n"
 	.string "soon, I have more for ya!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_11:
-# 558 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_12:
+# 561 "data/maps/MossdeepCity/scripts.pory"
 	.string "Oho, back for more, eh? A sailor after me\n"
 	.string "own heart!\p"
 	.string "I'll give you this here Mystic Ticket if\n"
@@ -1283,14 +1295,14 @@ MossdeepCity_EventScript_LegendarySailor_Text_11:
 	.string "I wan'na see a POKéMON with control\n"
 	.string "over WATER and FIRE types!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_12:
-# 564 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_13:
+# 567 "data/maps/MossdeepCity/scripts.pory"
 	.string "Hmm... looks like ya haven't caught the\n"
 	.string "POKéMON yet. Come back when ya figure\l"
 	.string "out my clue and catch the POKéMON.$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_13:
-# 571 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_14:
+# 574 "data/maps/MossdeepCity/scripts.pory"
 	.string "Ha-hey! Looks like ya figured it out, I\n"
 	.string "knew ya'd do it!\l"
 	.string "Octillery was first found in the JOHTO\l"
@@ -1299,16 +1311,16 @@ MossdeepCity_EventScript_LegendarySailor_Text_13:
 	.string "But ya're not here for a history lesson!\n"
 	.string "Here ya go!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_14:
-# 576 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_15:
+# 579 "data/maps/MossdeepCity/scripts.pory"
 	.string "Just like the OLD SEA MAP, show that\n"
 	.string "ticket to the LILYCOVE HARBOR sailor\l"
 	.string "and ya'll be off!\p"
 	.string "Good luck, li'l sailor! And come back\n"
 	.string "soon, I have more for ya!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_15:
-# 585 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_16:
+# 588 "data/maps/MossdeepCity/scripts.pory"
 	.string "Here to chase another adventure, eh?\n"
 	.string "This time, I've got a real marv'lous\l"
 	.string "place in mind!\p"
@@ -1319,29 +1331,29 @@ MossdeepCity_EventScript_LegendarySailor_Text_15:
 	.string "me the POKéDEX entry for the great\l"
 	.string "DRAGON of the skies, RAYQUAZA.$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_16:
-# 591 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_17:
+# 594 "data/maps/MossdeepCity/scripts.pory"
 	.string "Hmm... looks like ya're still searching\n"
 	.string "fer RAYQUAZA. Only a brave TRAINER like\l"
 	.string "yerself can hope to capture such a\l"
 	.string "fearsome power. Come back when ya're\l"
 	.string "ready!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_17:
-# 598 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_18:
+# 601 "data/maps/MossdeepCity/scripts.pory"
 	.string "Incred'ble! That's the data fer\n"
 	.string "RAYQUAZA! Having a POKéMON like that'll\l"
 	.string "help ya handle this 'ere island.\p"
 	.string "As promised, here's yer ticket!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_18:
-# 603 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_19:
+# 606 "data/maps/MossdeepCity/scripts.pory"
 	.string "I bet that FERRY in LILYCOVE 'ill give\n"
 	.string "ya a ride to BIRTH ISLAND! Be careful,\l"
 	.string "li'l sailor, and come back soon!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_19:
-# 613 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_20:
+# 616 "data/maps/MossdeepCity/scripts.pory"
 	.string "Welcome back, li'l sailor! Ye've inspired\n"
 	.string "me to get back to explorin' myself!\l"
 	.string "Don't ye be surprised if ye see me out\l"
@@ -1349,8 +1361,8 @@ MossdeepCity_EventScript_LegendarySailor_Text_19:
 	.string "LEGENDARY POKéMON! Look fer me\l"
 	.string "eyepatch to find me!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_20:
-# 615 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_21:
+# 618 "data/maps/MossdeepCity/scripts.pory"
 	.string "I've heard some sailor's tales about\n"
 	.string "special POKéMON in GRANITE CAVE, a\l"
 	.string "LEGENDARY trio in SHOAL CAVE, another\l"
@@ -1358,8 +1370,8 @@ MossdeepCity_EventScript_LegendarySailor_Text_20:
 	.string "LEGENDARY in ROUTE 119.\p"
 	.string "Hope to see you out there, li'l sailor!$"
 
-MossdeepCity_EventScript_LegendarySailor_Text_21:
-# 625 "data/maps/MossdeepCity/scripts.pory"
+MossdeepCity_EventScript_LegendarySailor_Text_22:
+# 628 "data/maps/MossdeepCity/scripts.pory"
 	.string "I've heard some sailor's tales about\n"
 	.string "special POKéMON in GRANITE CAVE, a\l"
 	.string "LEGENDARY trio in SHOAL CAVE, another\l"
@@ -1371,6 +1383,6 @@ MossdeepCity_EventScript_LegendarySailor_Text_21:
 	.string "the ELITE FOUR?$"
 
 MossdeepCity_EventScript_GameCornerSign_Text_0:
-# 639 "data/maps/MossdeepCity/scripts.pory"
+# 642 "data/maps/MossdeepCity/scripts.pory"
 	.string "MOSSDEEP CITY GAME CORNER\n"
 	.string "Come play PINBALL!$"

@@ -413,7 +413,7 @@ SlateportCity_Harbor_EventScript_Lilycove::
 # 207 "data/maps/SlateportCity_Harbor/scripts.pory"
 	call_if_set FLAG_IS_CHAMPION, SlateportCity_Harbor_EventScript_BoardFerry
 # 208 "data/maps/SlateportCity_Harbor/scripts.pory"
-	warp MAP_LILYCOVE_CITY, 12, 33
+	call_if_unset FLAG_IS_CHAMPION, SlateportCity_Harbor_EventScript_TeleportToLilycove
 # 209 "data/maps/SlateportCity_Harbor/scripts.pory"
 	waitstate
 # 210 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -423,674 +423,682 @@ SlateportCity_Harbor_EventScript_Lilycove::
 # 212 "data/maps/SlateportCity_Harbor/scripts.pory"
 
 # 213 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_BattleFrontier::
+SlateportCity_Harbor_EventScript_TeleportToLilycove::
 # 214 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_BattleFrontierItIs, MSGBOX_YESNO
+	warp MAP_LILYCOVE_CITY, 12, 33
 # 215 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseNewDestination
+	end
 # 216 "data/maps/SlateportCity_Harbor/scripts.pory"
-	call SlateportCity_Harbor_EventScript_BoardFerry
+
 # 217 "data/maps/SlateportCity_Harbor/scripts.pory"
-	warp MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 19, 67
+SlateportCity_Harbor_EventScript_BattleFrontier::
 # 218 "data/maps/SlateportCity_Harbor/scripts.pory"
-	waitstate
+	msgbox SlateportCity_Harbor_Text_BattleFrontierItIs, MSGBOX_YESNO
 # 219 "data/maps/SlateportCity_Harbor/scripts.pory"
-	release
+	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseNewDestination
 # 220 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+	call SlateportCity_Harbor_EventScript_BoardFerry
 # 221 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	warp MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 19, 67
 # 222 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_ChooseNewDestination::
+	waitstate
 # 223 "data/maps/SlateportCity_Harbor/scripts.pory"
-	message SlateportCity_Harbor_Text_WhereWouldYouLikeToGo
+	release
 # 224 "data/maps/SlateportCity_Harbor/scripts.pory"
-	waitmessage
-# 225 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto SlateportCity_Harbor_EventScript_ChooseDestination
-# 226 "data/maps/SlateportCity_Harbor/scripts.pory"
 	end
-# 227 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 225 "data/maps/SlateportCity_Harbor/scripts.pory"
 
+# 226 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_EventScript_ChooseNewDestination::
+# 227 "data/maps/SlateportCity_Harbor/scripts.pory"
+	message SlateportCity_Harbor_Text_WhereWouldYouLikeToGo
 # 228 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_BoardFerry::
+	waitmessage
 # 229 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_PleaseBoardFerry, MSGBOX_DEFAULT
+	goto SlateportCity_Harbor_EventScript_ChooseDestination
 # 230 "data/maps/SlateportCity_Harbor/scripts.pory"
-	closemessage
+	end
 # 231 "data/maps/SlateportCity_Harbor/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterUp
+
 # 232 "data/maps/SlateportCity_Harbor/scripts.pory"
-	waitmovement 0
+SlateportCity_Harbor_EventScript_BoardFerry::
 # 233 "data/maps/SlateportCity_Harbor/scripts.pory"
-	delay 30
+	msgbox SlateportCity_Harbor_Text_PleaseBoardFerry, MSGBOX_DEFAULT
 # 234 "data/maps/SlateportCity_Harbor/scripts.pory"
-	hideobjectat VAR_LAST_TALKED, MAP_SLATEPORT_CITY_HARBOR
+	closemessage
 # 235 "data/maps/SlateportCity_Harbor/scripts.pory"
-	call_if_eq VAR_FACING, DIR_NORTH, SlateportCity_Harbor_EventScript_BoardFerryNorth
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterUp
 # 236 "data/maps/SlateportCity_Harbor/scripts.pory"
-	call_if_eq VAR_FACING, DIR_EAST, SlateportCity_Harbor_EventScript_BoardFerryEast
+	waitmovement 0
 # 237 "data/maps/SlateportCity_Harbor/scripts.pory"
 	delay 30
 # 238 "data/maps/SlateportCity_Harbor/scripts.pory"
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat VAR_LAST_TALKED, MAP_SLATEPORT_CITY_HARBOR
 # 239 "data/maps/SlateportCity_Harbor/scripts.pory"
-	setvar VAR_0x8004, LOCALID_SS_TIDAL
+	call_if_eq VAR_FACING, DIR_NORTH, SlateportCity_Harbor_EventScript_BoardFerryNorth
 # 240 "data/maps/SlateportCity_Harbor/scripts.pory"
-	call Common_EventScript_FerryDepart
+	call_if_eq VAR_FACING, DIR_EAST, SlateportCity_Harbor_EventScript_BoardFerryEast
 # 241 "data/maps/SlateportCity_Harbor/scripts.pory"
-	warp MAP_SS_TIDAL_CORRIDOR, 1, 10
+	delay 30
 # 242 "data/maps/SlateportCity_Harbor/scripts.pory"
-	return
+	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 # 243 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	setvar VAR_0x8004, LOCALID_SS_TIDAL
 # 244 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_CancelDestinationSelect::
+	call Common_EventScript_FerryDepart
 # 245 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_SailAnotherTime, MSGBOX_DEFAULT
+	warp MAP_SS_TIDAL_CORRIDOR, 1, 10
 # 246 "data/maps/SlateportCity_Harbor/scripts.pory"
-	release
+	return
 # 247 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+
 # 248 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+SlateportCity_Harbor_EventScript_CancelDestinationSelect::
 # 249 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_BoardFerryEast::
+	msgbox SlateportCity_Harbor_Text_SailAnotherTime, MSGBOX_DEFAULT
 # 250 "data/maps/SlateportCity_Harbor/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Harbor_Movement_BoardFerryEast
+	release
 # 251 "data/maps/SlateportCity_Harbor/scripts.pory"
-	waitmovement 0
+	end
 # 252 "data/maps/SlateportCity_Harbor/scripts.pory"
-	return
+
 # 253 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+SlateportCity_Harbor_EventScript_BoardFerryEast::
 # 254 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_BoardFerryNorth::
+	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Harbor_Movement_BoardFerryEast
 # 255 "data/maps/SlateportCity_Harbor/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Harbor_Movement_BoardFerryNorth
-# 256 "data/maps/SlateportCity_Harbor/scripts.pory"
 	waitmovement 0
-# 257 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 256 "data/maps/SlateportCity_Harbor/scripts.pory"
 	return
+# 257 "data/maps/SlateportCity_Harbor/scripts.pory"
+
 # 258 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+SlateportCity_Harbor_EventScript_BoardFerryNorth::
 # 259 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Movement_BoardFerryEast:
+	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Harbor_Movement_BoardFerryNorth
 # 260 "data/maps/SlateportCity_Harbor/scripts.pory"
-	walk_right
+	waitmovement 0
 # 261 "data/maps/SlateportCity_Harbor/scripts.pory"
-	walk_in_place_faster_up
+	return
 # 262 "data/maps/SlateportCity_Harbor/scripts.pory"
-	step_end
-# 263 "data/maps/SlateportCity_Harbor/scripts.pory"
 
+# 263 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_Movement_BoardFerryEast:
 # 264 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Movement_BoardFerryNorth:
+	walk_right
 # 265 "data/maps/SlateportCity_Harbor/scripts.pory"
-	walk_up
+	walk_in_place_faster_up
 # 266 "data/maps/SlateportCity_Harbor/scripts.pory"
 	step_end
 # 267 "data/maps/SlateportCity_Harbor/scripts.pory"
 
 # 268 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_Sailor::
+SlateportCity_Harbor_Movement_BoardFerryNorth:
 # 269 "data/maps/SlateportCity_Harbor/scripts.pory"
-	lock
+	walk_up
 # 270 "data/maps/SlateportCity_Harbor/scripts.pory"
-	faceplayer
+	step_end
 # 271 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_unset FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather
+
 # 272 "data/maps/SlateportCity_Harbor/scripts.pory"
-	setvar VAR_0x8004, 0
+SlateportCity_Harbor_EventScript_Sailor::
 # 273 "data/maps/SlateportCity_Harbor/scripts.pory"
-	call_if_set FLAG_DEFEATED_KYOGRE, SlateportCity_Harbor_EventScript_CountDefeatedLegendary
+	lock
 # 274 "data/maps/SlateportCity_Harbor/scripts.pory"
-	call_if_set FLAG_DEFEATED_GROUDON, SlateportCity_Harbor_EventScript_CountDefeatedLegendary
+	faceplayer
 # 275 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_eq VAR_0x8004, 2, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather  @ Defeated both
+	goto_if_unset FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather
 # 276 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_AbnormalWeather, MSGBOX_DEFAULT
+	setvar VAR_0x8004, 0
 # 277 "data/maps/SlateportCity_Harbor/scripts.pory"
-	release
+	call_if_set FLAG_DEFEATED_KYOGRE, SlateportCity_Harbor_EventScript_CountDefeatedLegendary
 # 278 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+	call_if_set FLAG_DEFEATED_GROUDON, SlateportCity_Harbor_EventScript_CountDefeatedLegendary
 # 279 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	goto_if_eq VAR_0x8004, 2, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather  @ Defeated both
 # 280 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather::
+	msgbox SlateportCity_Harbor_Text_AbnormalWeather, MSGBOX_DEFAULT
 # 281 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday, MSGBOX_DEFAULT
-# 282 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
-# 283 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 282 "data/maps/SlateportCity_Harbor/scripts.pory"
 	end
-# 284 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 283 "data/maps/SlateportCity_Harbor/scripts.pory"
 
+# 284 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather::
 # 285 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_CountDefeatedLegendary::
+	msgbox SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday, MSGBOX_DEFAULT
 # 286 "data/maps/SlateportCity_Harbor/scripts.pory"
-	addvar VAR_0x8004, 1
+	release
 # 287 "data/maps/SlateportCity_Harbor/scripts.pory"
-	return
+	end
 # 288 "data/maps/SlateportCity_Harbor/scripts.pory"
 
 # 289 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_FatMan::
+SlateportCity_Harbor_EventScript_CountDefeatedLegendary::
 # 290 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_SubTooSmallForMe, MSGBOX_NPC
+	addvar VAR_0x8004, 1
 # 291 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+	return
 # 292 "data/maps/SlateportCity_Harbor/scripts.pory"
 
 # 293 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_CaptStern::
+SlateportCity_Harbor_EventScript_FatMan::
 # 294 "data/maps/SlateportCity_Harbor/scripts.pory"
-	lock
+	msgbox SlateportCity_Harbor_Text_SubTooSmallForMe, MSGBOX_NPC
 # 295 "data/maps/SlateportCity_Harbor/scripts.pory"
-	faceplayer
+	end
 # 296 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_set FLAG_BADGE07_GET, SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment
+
 # 297 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_set FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE, SlateportCity_Harbor_EventScript_NeedDive
+SlateportCity_Harbor_EventScript_CaptStern::
 # 298 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive
+	lock
 # 299 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_eq VAR_SLATEPORT_HARBOR_STATE, 2, SlateportCity_Harbor_EventScript_WhyStealSubmarine
+	faceplayer
 # 300 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum, MSGBOX_DEFAULT
+	goto_if_set FLAG_BADGE07_GET, SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment
 # 301 "data/maps/SlateportCity_Harbor/scripts.pory"
-	closemessage
+	goto_if_set FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE, SlateportCity_Harbor_EventScript_NeedDive
 # 302 "data/maps/SlateportCity_Harbor/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive
 # 303 "data/maps/SlateportCity_Harbor/scripts.pory"
-	waitmovement 0
+	goto_if_eq VAR_SLATEPORT_HARBOR_STATE, 2, SlateportCity_Harbor_EventScript_WhyStealSubmarine
 # 304 "data/maps/SlateportCity_Harbor/scripts.pory"
-	release
+	msgbox SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum, MSGBOX_DEFAULT
 # 305 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+	closemessage
 # 306 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 307 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_WhyStealSubmarine::
+	waitmovement 0
 # 308 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine, MSGBOX_DEFAULT
+	release
 # 309 "data/maps/SlateportCity_Harbor/scripts.pory"
-	release
+	end
 # 310 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+
 # 311 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+SlateportCity_Harbor_EventScript_WhyStealSubmarine::
 # 312 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive::
+	msgbox SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine, MSGBOX_DEFAULT
 # 313 "data/maps/SlateportCity_Harbor/scripts.pory"
-	setflag FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE
+	release
 # 314 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_TeamAquaLeftNeedDive, MSGBOX_DEFAULT
+	end
 # 315 "data/maps/SlateportCity_Harbor/scripts.pory"
-	release
+
 # 316 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+SlateportCity_Harbor_EventScript_TeamAquaLeftNeedDive::
 # 317 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	setflag FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE
 # 318 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_NeedDive::
+	msgbox SlateportCity_Harbor_Text_TeamAquaLeftNeedDive, MSGBOX_DEFAULT
 # 319 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_NeedDiveToCatchSub, MSGBOX_DEFAULT
+	release
 # 320 "data/maps/SlateportCity_Harbor/scripts.pory"
-	release
+	end
 # 321 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+
 # 322 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+SlateportCity_Harbor_EventScript_NeedDive::
 # 323 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment::
+	msgbox SlateportCity_Harbor_Text_NeedDiveToCatchSub, MSGBOX_DEFAULT
 # 324 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_eq VAR_TEMP_1, 1, SlateportCity_Harbor_EventScript_TradedScanner
+	release
 # 325 "data/maps/SlateportCity_Harbor/scripts.pory"
-	checkitem ITEM_SCANNER
+	end
 # 326 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, SlateportCity_Harbor_EventScript_AskToTradeScanner
+
 # 327 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_FerryFinished
+SlateportCity_Harbor_EventScript_CaptSternFerryOrScannerComment::
 # 328 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry, MSGBOX_DEFAULT
+	goto_if_eq VAR_TEMP_1, 1, SlateportCity_Harbor_EventScript_TradedScanner
 # 329 "data/maps/SlateportCity_Harbor/scripts.pory"
-	release
+	checkitem ITEM_SCANNER
 # 330 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+	goto_if_eq VAR_RESULT, TRUE, SlateportCity_Harbor_EventScript_AskToTradeScanner
 # 331 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	goto_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_FerryFinished
 # 332 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_FerryFinished::
+	msgbox SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry, MSGBOX_DEFAULT
 # 333 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_FinishedMakingFerry, MSGBOX_DEFAULT
+	release
 # 334 "data/maps/SlateportCity_Harbor/scripts.pory"
-	release
+	end
 # 335 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+
 # 336 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+SlateportCity_Harbor_EventScript_FerryFinished::
 # 337 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_AskToTradeScanner::
+	msgbox SlateportCity_Harbor_Text_FinishedMakingFerry, MSGBOX_DEFAULT
 # 338 "data/maps/SlateportCity_Harbor/scripts.pory"
-	message SlateportCity_Harbor_Text_WouldYouTradeScanner
+	release
 # 339 "data/maps/SlateportCity_Harbor/scripts.pory"
-	waitmessage
+	end
 # 340 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto SlateportCity_Harbor_EventScript_ChooseScannerTrade
+
 # 341 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
+SlateportCity_Harbor_EventScript_AskToTradeScanner::
 # 342 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	message SlateportCity_Harbor_Text_WouldYouTradeScanner
 # 343 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_ChooseScannerTrade::
-# 344 "data/maps/SlateportCity_Harbor/scripts.pory"
-	multichoice 0, 0, MULTI_STERN_DEEPSEA, FALSE
-# 345 "data/maps/SlateportCity_Harbor/scripts.pory"
-	switch VAR_RESULT
-# 346 "data/maps/SlateportCity_Harbor/scripts.pory"
-	case 0, SlateportCity_Harbor_EventScript_DeepSeaTooth
-# 347 "data/maps/SlateportCity_Harbor/scripts.pory"
-	case 1, SlateportCity_Harbor_EventScript_DeepSeaScale
-# 348 "data/maps/SlateportCity_Harbor/scripts.pory"
-	case 2, SlateportCity_Harbor_EventScript_DeclineTrade
-# 349 "data/maps/SlateportCity_Harbor/scripts.pory"
-	case MULTI_B_PRESSED, SlateportCity_Harbor_EventScript_DeclineTrade
-# 350 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
-# 351 "data/maps/SlateportCity_Harbor/scripts.pory"
-
-# 352 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_DeepSeaTooth::
-# 353 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaTooth, MSGBOX_YESNO
-# 354 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
-# 355 "data/maps/SlateportCity_Harbor/scripts.pory"
-	giveitem ITEM_DEEP_SEA_TOOTH
-# 356 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-# 357 "data/maps/SlateportCity_Harbor/scripts.pory"
-	removeitem ITEM_SCANNER
-# 358 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_HandedScannerToStern, MSGBOX_DEFAULT
-# 359 "data/maps/SlateportCity_Harbor/scripts.pory"
-	setflag FLAG_EXCHANGED_SCANNER
-# 360 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto SlateportCity_Harbor_EventScript_TradedScanner
-# 361 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
-# 362 "data/maps/SlateportCity_Harbor/scripts.pory"
-
-# 363 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_DeepSeaScale::
-# 364 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaScale, MSGBOX_YESNO
-# 365 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
-# 366 "data/maps/SlateportCity_Harbor/scripts.pory"
-	giveitem ITEM_DEEP_SEA_SCALE
-# 367 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-# 368 "data/maps/SlateportCity_Harbor/scripts.pory"
-	removeitem ITEM_SCANNER
-# 369 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_HandedScannerToStern, MSGBOX_DEFAULT
-# 370 "data/maps/SlateportCity_Harbor/scripts.pory"
-	setflag FLAG_EXCHANGED_SCANNER
-# 371 "data/maps/SlateportCity_Harbor/scripts.pory"
-	goto SlateportCity_Harbor_EventScript_TradedScanner
-# 372 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
-# 373 "data/maps/SlateportCity_Harbor/scripts.pory"
-
-# 374 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_DeclineTrade::
-# 375 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow, MSGBOX_DEFAULT
-# 376 "data/maps/SlateportCity_Harbor/scripts.pory"
-	release
-# 377 "data/maps/SlateportCity_Harbor/scripts.pory"
-	end
-# 378 "data/maps/SlateportCity_Harbor/scripts.pory"
-
-# 379 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_ChooseDifferentTrade::
-# 380 "data/maps/SlateportCity_Harbor/scripts.pory"
-	message SlateportCity_Harbor_Text_WhichOneDoYouWant
-# 381 "data/maps/SlateportCity_Harbor/scripts.pory"
 	waitmessage
-# 382 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 344 "data/maps/SlateportCity_Harbor/scripts.pory"
 	goto SlateportCity_Harbor_EventScript_ChooseScannerTrade
-# 383 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 345 "data/maps/SlateportCity_Harbor/scripts.pory"
 	end
-# 384 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 346 "data/maps/SlateportCity_Harbor/scripts.pory"
 
-# 385 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_EventScript_TradedScanner::
-# 386 "data/maps/SlateportCity_Harbor/scripts.pory"
-	setvar VAR_TEMP_1, 1
-# 387 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_Text_ThisWillHelpResearch, MSGBOX_DEFAULT
-# 388 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 347 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_EventScript_ChooseScannerTrade::
+# 348 "data/maps/SlateportCity_Harbor/scripts.pory"
+	multichoice 0, 0, MULTI_STERN_DEEPSEA, FALSE
+# 349 "data/maps/SlateportCity_Harbor/scripts.pory"
+	switch VAR_RESULT
+# 350 "data/maps/SlateportCity_Harbor/scripts.pory"
+	case 0, SlateportCity_Harbor_EventScript_DeepSeaTooth
+# 351 "data/maps/SlateportCity_Harbor/scripts.pory"
+	case 1, SlateportCity_Harbor_EventScript_DeepSeaScale
+# 352 "data/maps/SlateportCity_Harbor/scripts.pory"
+	case 2, SlateportCity_Harbor_EventScript_DeclineTrade
+# 353 "data/maps/SlateportCity_Harbor/scripts.pory"
+	case MULTI_B_PRESSED, SlateportCity_Harbor_EventScript_DeclineTrade
+# 354 "data/maps/SlateportCity_Harbor/scripts.pory"
+	end
+# 355 "data/maps/SlateportCity_Harbor/scripts.pory"
+
+# 356 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_EventScript_DeepSeaTooth::
+# 357 "data/maps/SlateportCity_Harbor/scripts.pory"
+	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaTooth, MSGBOX_YESNO
+# 358 "data/maps/SlateportCity_Harbor/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
+# 359 "data/maps/SlateportCity_Harbor/scripts.pory"
+	giveitem ITEM_DEEP_SEA_TOOTH
+# 360 "data/maps/SlateportCity_Harbor/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 361 "data/maps/SlateportCity_Harbor/scripts.pory"
+	removeitem ITEM_SCANNER
+# 362 "data/maps/SlateportCity_Harbor/scripts.pory"
+	msgbox SlateportCity_Harbor_Text_HandedScannerToStern, MSGBOX_DEFAULT
+# 363 "data/maps/SlateportCity_Harbor/scripts.pory"
+	setflag FLAG_EXCHANGED_SCANNER
+# 364 "data/maps/SlateportCity_Harbor/scripts.pory"
+	goto SlateportCity_Harbor_EventScript_TradedScanner
+# 365 "data/maps/SlateportCity_Harbor/scripts.pory"
+	end
+# 366 "data/maps/SlateportCity_Harbor/scripts.pory"
+
+# 367 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_EventScript_DeepSeaScale::
+# 368 "data/maps/SlateportCity_Harbor/scripts.pory"
+	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaScale, MSGBOX_YESNO
+# 369 "data/maps/SlateportCity_Harbor/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
+# 370 "data/maps/SlateportCity_Harbor/scripts.pory"
+	giveitem ITEM_DEEP_SEA_SCALE
+# 371 "data/maps/SlateportCity_Harbor/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 372 "data/maps/SlateportCity_Harbor/scripts.pory"
+	removeitem ITEM_SCANNER
+# 373 "data/maps/SlateportCity_Harbor/scripts.pory"
+	msgbox SlateportCity_Harbor_Text_HandedScannerToStern, MSGBOX_DEFAULT
+# 374 "data/maps/SlateportCity_Harbor/scripts.pory"
+	setflag FLAG_EXCHANGED_SCANNER
+# 375 "data/maps/SlateportCity_Harbor/scripts.pory"
+	goto SlateportCity_Harbor_EventScript_TradedScanner
+# 376 "data/maps/SlateportCity_Harbor/scripts.pory"
+	end
+# 377 "data/maps/SlateportCity_Harbor/scripts.pory"
+
+# 378 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_EventScript_DeclineTrade::
+# 379 "data/maps/SlateportCity_Harbor/scripts.pory"
+	msgbox SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow, MSGBOX_DEFAULT
+# 380 "data/maps/SlateportCity_Harbor/scripts.pory"
 	release
-# 389 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 381 "data/maps/SlateportCity_Harbor/scripts.pory"
 	end
+# 382 "data/maps/SlateportCity_Harbor/scripts.pory"
+
+# 383 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_EventScript_ChooseDifferentTrade::
+# 384 "data/maps/SlateportCity_Harbor/scripts.pory"
+	message SlateportCity_Harbor_Text_WhichOneDoYouWant
+# 385 "data/maps/SlateportCity_Harbor/scripts.pory"
+	waitmessage
+# 386 "data/maps/SlateportCity_Harbor/scripts.pory"
+	goto SlateportCity_Harbor_EventScript_ChooseScannerTrade
+# 387 "data/maps/SlateportCity_Harbor/scripts.pory"
+	end
+# 388 "data/maps/SlateportCity_Harbor/scripts.pory"
+
+# 389 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_EventScript_TradedScanner::
 # 390 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	setvar VAR_TEMP_1, 1
 # 391 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_FerryServiceUnavailable:
+	msgbox SlateportCity_Harbor_Text_ThisWillHelpResearch, MSGBOX_DEFAULT
 # 392 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "I beg your pardon?\n"
+	release
 # 393 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "You're looking for a ship?\p"
+	end
 # 394 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "I'm sorry, the ferry service isn't\n"
-# 395 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "available at present…$"
-# 396 "data/maps/SlateportCity_Harbor/scripts.pory"
 
+# 395 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_Text_FerryServiceUnavailable:
+# 396 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "I beg your pardon?\n"
 # 397 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_MayISeeYourTicket:
+	.string "You're looking for a ship?\p"
 # 398 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Hello, are you here for the ferry?\n"
+	.string "I'm sorry, the ferry service isn't\n"
 # 399 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "May I see your TICKET?$"
+	.string "available at present…$"
 # 400 "data/maps/SlateportCity_Harbor/scripts.pory"
 
 # 401 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_YouMustHaveTicket:
+SlateportCity_Harbor_Text_MayISeeYourTicket:
 # 402 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "{PLAYER} doesn't have the TICKET…\p"
+	.string "Hello, are you here for the ferry?\n"
 # 403 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "I'm terribly sorry.\p"
+	.string "May I see your TICKET?$"
 # 404 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "You must have a TICKET to board\n"
+
 # 405 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "the ferry.$"
+SlateportCity_Harbor_Text_YouMustHaveTicket:
 # 406 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "{PLAYER} doesn't have the TICKET…\p"
 # 407 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_FlashedTicketWhereTo:
+	.string "I'm terribly sorry.\p"
 # 408 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "{PLAYER} flashed the TICKET.\p"
+	.string "You must have a TICKET to board\n"
 # 409 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Perfect! That's all you need!\p"
+	.string "the ferry.$"
 # 410 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "And where would you like to go?$"
+
 # 411 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+SlateportCity_Harbor_Text_FlashedTicketWhereTo:
 # 412 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_SailAnotherTime:
+	.string "{PLAYER} flashed the TICKET.\p"
 # 413 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Please sail with us another time!$"
+	.string "Perfect! That's all you need!\p"
 # 414 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "And where would you like to go?$"
 # 415 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_LilycoveItIs:
+
 # 416 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "LILYCOVE CITY it is, then!$"
+SlateportCity_Harbor_Text_SailAnotherTime:
 # 417 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "Please sail with us another time!$"
 # 418 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_BattleFrontierItIs:
-# 419 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "BATTLE FRONTIER it is, then!$"
-# 420 "data/maps/SlateportCity_Harbor/scripts.pory"
 
+# 419 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_Text_LilycoveItIs:
+# 420 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "LILYCOVE CITY it is, then!$"
 # 421 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_PleaseBoardFerry:
+
 # 422 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Please board the ferry and wait for\n"
+SlateportCity_Harbor_Text_BattleFrontierItIs:
 # 423 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "departure.$"
+	.string "BATTLE FRONTIER it is, then!$"
 # 424 "data/maps/SlateportCity_Harbor/scripts.pory"
 
 # 425 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_WhereWouldYouLikeToGo:
+SlateportCity_Harbor_Text_PleaseBoardFerry:
 # 426 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Then, where would you like to go?$"
+	.string "Please board the ferry and wait for\n"
 # 427 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "departure.$"
 # 428 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday:
+
 # 429 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "A journey to the bottom of the sea…\n"
+SlateportCity_Harbor_Text_WhereWouldYouLikeToGo:
 # 430 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "I wonder what it'd be like?\p"
+	.string "Then, where would you like to go?$"
 # 431 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "I'd love to go deep underwater like\n"
+
 # 432 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "that someday.$"
+SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday:
 # 433 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "A journey to the bottom of the sea…\n"
 # 434 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_AbnormalWeather:
+	.string "I wonder what it'd be like?\p"
 # 435 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "For a ship to sail safely, we need to\n"
+	.string "I'd love to go deep underwater like\n"
 # 436 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "know about the weather!\p"
+	.string "that someday.$"
 # 437 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Speaking of weather, I heard something\n"
+
 # 438 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "from a guy at the WEATHER INSTITUTE.\p"
+SlateportCity_Harbor_Text_AbnormalWeather:
 # 439 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "He was saying abnormal weather has\n"
+	.string "For a ship to sail safely, we need to\n"
 # 440 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "been reported all over the place!\p"
+	.string "know about the weather!\p"
 # 441 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "You should visit the WEATHER INSTITUTE\n"
+	.string "Speaking of weather, I heard something\n"
 # 442 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "and ask around!$"
+	.string "from a guy at the WEATHER INSTITUTE.\p"
 # 443 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "He was saying abnormal weather has\n"
 # 444 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_SubTooSmallForMe:
+	.string "been reported all over the place!\p"
 # 445 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "I wanted to go with CAPT. STERN on\n"
+	.string "You should visit the WEATHER INSTITUTE\n"
 # 446 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "the ocean floor exploration.\p"
+	.string "and ask around!$"
 # 447 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "But the sub's too small for me.\p"
+
 # 448 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "If I squeezed in, there wouldn't be\n"
+SlateportCity_Harbor_Text_SubTooSmallForMe:
 # 449 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "any room for the CAPTAIN…$"
+	.string "I wanted to go with CAPT. STERN on\n"
 # 450 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "the ocean floor exploration.\p"
 # 451 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
+	.string "But the sub's too small for me.\p"
 # 452 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: Those thugs…\p"
+	.string "If I squeezed in, there wouldn't be\n"
 # 453 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "They're the same lot who tried to rob\n"
+	.string "any room for the CAPTAIN…$"
 # 454 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "the DEVON GOODS at the MUSEUM.$"
+
 # 455 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
 # 456 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
+	.string "CAPT. STERN: Those thugs…\p"
 # 457 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "ARCHIE: Oh?\n"
+	.string "They're the same lot who tried to rob\n"
 # 458 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Not you again…\p"
+	.string "the DEVON GOODS at the MUSEUM.$"
 # 459 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "You are tenacious to track us here,\n"
+
 # 460 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "that much I will give you.\p"
+SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
 # 461 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "But now…\n"
+	.string "ARCHIE: Oh?\n"
 # 462 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "No one can stop us! No one!\p"
+	.string "Not you again…\p"
 # 463 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Or, will you follow us back to our\n"
+	.string "You are tenacious to track us here,\n"
 # 464 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "HIDEOUT in LILYCOVE CITY?\p"
+	.string "that much I will give you.\p"
 # 465 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Fwahahahaha…$"
+	.string "But now…\n"
 # 466 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "No one can stop us! No one!\p"
 # 467 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
+	.string "Or, will you follow us back to our\n"
 # 468 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: Why…\p"
+	.string "HIDEOUT in LILYCOVE CITY?\p"
 # 469 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Why would TEAM AQUA steal my\n"
+	.string "Fwahahahaha…$"
 # 470 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "SUBMARINE EXPLORER 1?\p"
+
 # 471 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "They can't be after the slumbering\n"
+SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
 # 472 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "POKéMON at the bottom of the sea…\p"
+	.string "CAPT. STERN: Why…\p"
 # 473 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "But even if I were to chase them,\n"
+	.string "Why would TEAM AQUA steal my\n"
 # 474 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "I don't stand a chance against them…$"
+	.string "SUBMARINE EXPLORER 1?\p"
 # 475 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "They can't be after the slumbering\n"
 # 476 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_TeamAquaLeftNeedDive:
+	.string "POKéMON at the bottom of the sea…\p"
 # 477 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: Oh, {PLAYER}{KUN}…\p"
+	.string "But even if I were to chase them,\n"
 # 478 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Okay… So TEAM AQUA left before you\n"
+	.string "I don't stand a chance against them…$"
 # 479 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "could stop them…\p"
+
 # 480 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Oh, no, don't blame yourself.\n"
+SlateportCity_Harbor_Text_TeamAquaLeftNeedDive:
 # 481 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "You're not responsible for this.\p"
+	.string "CAPT. STERN: Oh, {PLAYER}{KUN}…\p"
 # 482 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Trying to catch a submarine…\n"
+	.string "Okay… So TEAM AQUA left before you\n"
 # 483 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "It's impossible for most people.\p"
+	.string "could stop them…\p"
 # 484 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "You would need a POKéMON that knows\n"
+	.string "Oh, no, don't blame yourself.\n"
 # 485 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "how to DIVE…\p"
+	.string "You're not responsible for this.\p"
 # 486 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Perhaps if you went out to\n"
+	.string "Trying to catch a submarine…\n"
 # 487 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "MOSSDEEP CITY…\p"
+	.string "It's impossible for most people.\p"
 # 488 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "A lot of divers live out there, so\n"
-# 489 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "someone might teach you…$"
-# 490 "data/maps/SlateportCity_Harbor/scripts.pory"
-
-# 491 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_NeedDiveToCatchSub:
-# 492 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: Trying to catch a\n"
-# 493 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "submarine… It's impossible.\p"
-# 494 "data/maps/SlateportCity_Harbor/scripts.pory"
 	.string "You would need a POKéMON that knows\n"
-# 495 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 489 "data/maps/SlateportCity_Harbor/scripts.pory"
 	.string "how to DIVE…\p"
-# 496 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 490 "data/maps/SlateportCity_Harbor/scripts.pory"
 	.string "Perhaps if you went out to\n"
-# 497 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 491 "data/maps/SlateportCity_Harbor/scripts.pory"
 	.string "MOSSDEEP CITY…\p"
-# 498 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 492 "data/maps/SlateportCity_Harbor/scripts.pory"
 	.string "A lot of divers live out there, so\n"
-# 499 "data/maps/SlateportCity_Harbor/scripts.pory"
+# 493 "data/maps/SlateportCity_Harbor/scripts.pory"
 	.string "someone might teach you…$"
+# 494 "data/maps/SlateportCity_Harbor/scripts.pory"
+
+# 495 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_Text_NeedDiveToCatchSub:
+# 496 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "CAPT. STERN: Trying to catch a\n"
+# 497 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "submarine… It's impossible.\p"
+# 498 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "You would need a POKéMON that knows\n"
+# 499 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "how to DIVE…\p"
 # 500 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "Perhaps if you went out to\n"
 # 501 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:
+	.string "MOSSDEEP CITY…\p"
 # 502 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: Oh, yes.\n"
+	.string "A lot of divers live out there, so\n"
 # 503 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "MR. BRINEY came to our SHIPYARD.\p"
+	.string "someone might teach you…$"
 # 504 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "It won't be long now before we finish\n"
+
 # 505 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "making the ferry!$"
+SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:
 # 506 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "CAPT. STERN: Oh, yes.\n"
 # 507 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_FinishedMakingFerry:
+	.string "MR. BRINEY came to our SHIPYARD.\p"
 # 508 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: {PLAYER}{KUN}!\p"
+	.string "It won't be long now before we finish\n"
 # 509 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "We finally finished making the ferry\n"
+	.string "making the ferry!$"
 # 510 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "S.S. TIDAL!\p"
+
 # 511 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "We couldn't have done it without\n"
+SlateportCity_Harbor_Text_FinishedMakingFerry:
 # 512 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "your friend MR. BRINEY.\p"
+	.string "CAPT. STERN: {PLAYER}{KUN}!\p"
 # 513 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Please go for a short cruise on it!$"
+	.string "We finally finished making the ferry\n"
 # 514 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "S.S. TIDAL!\p"
 # 515 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_WouldYouTradeScanner:
+	.string "We couldn't have done it without\n"
 # 516 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: Oh?\n"
+	.string "your friend MR. BRINEY.\p"
 # 517 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "{PLAYER}{KUN}, that item you have…\p"
+	.string "Please go for a short cruise on it!$"
 # 518 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "That's a SCANNER! That would sure\n"
+
 # 519 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "help us on our explorations.\p"
+SlateportCity_Harbor_Text_WouldYouTradeScanner:
 # 520 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "{PLAYER}{KUN}, would you trade your\n"
+	.string "CAPT. STERN: Oh?\n"
 # 521 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "SCANNER for something?\p"
+	.string "{PLAYER}{KUN}, that item you have…\p"
 # 522 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Like, say, a DEEPSEATOOTH or\n"
+	.string "That's a SCANNER! That would sure\n"
 # 523 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "a DEEPSEASCALE that I have?$"
+	.string "help us on our explorations.\p"
 # 524 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "{PLAYER}{KUN}, would you trade your\n"
 # 525 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
+	.string "SCANNER for something?\p"
 # 526 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: Are you certain?\n"
+	.string "Like, say, a DEEPSEATOOTH or\n"
 # 527 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "It's useless to you, {PLAYER}{KUN}…\p"
+	.string "a DEEPSEASCALE that I have?$"
 # 528 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "Well, okay, then. If you want to trade\n"
-# 529 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "your SCANNER, let me know.$"
-# 530 "data/maps/SlateportCity_Harbor/scripts.pory"
 
+# 529 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
+# 530 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "CAPT. STERN: Are you certain?\n"
 # 531 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_TradeForDeepSeaTooth:
+	.string "It's useless to you, {PLAYER}{KUN}…\p"
 # 532 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: So you'll trade it for\n"
+	.string "Well, okay, then. If you want to trade\n"
 # 533 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "my DEEPSEATOOTH?$"
+	.string "your SCANNER, let me know.$"
 # 534 "data/maps/SlateportCity_Harbor/scripts.pory"
 
 # 535 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_TradeForDeepSeaScale:
+SlateportCity_Harbor_Text_TradeForDeepSeaTooth:
 # 536 "data/maps/SlateportCity_Harbor/scripts.pory"
 	.string "CAPT. STERN: So you'll trade it for\n"
 # 537 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "my DEEPSEASCALE?$"
+	.string "my DEEPSEATOOTH?$"
 # 538 "data/maps/SlateportCity_Harbor/scripts.pory"
 
 # 539 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_WhichOneDoYouWant:
+SlateportCity_Harbor_Text_TradeForDeepSeaScale:
 # 540 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: Which one do you want?$"
+	.string "CAPT. STERN: So you'll trade it for\n"
 # 541 "data/maps/SlateportCity_Harbor/scripts.pory"
-
+	.string "my DEEPSEASCALE?$"
 # 542 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_HandedScannerToStern:
+
 # 543 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "{PLAYER} handed the SCANNER to\n"
+SlateportCity_Harbor_Text_WhichOneDoYouWant:
 # 544 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN.$"
+	.string "CAPT. STERN: Which one do you want?$"
 # 545 "data/maps/SlateportCity_Harbor/scripts.pory"
 
 # 546 "data/maps/SlateportCity_Harbor/scripts.pory"
-SlateportCity_Harbor_Text_ThisWillHelpResearch:
+SlateportCity_Harbor_Text_HandedScannerToStern:
 # 547 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
+	.string "{PLAYER} handed the SCANNER to\n"
 # 548 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "CAPT. STERN.$"
+# 549 "data/maps/SlateportCity_Harbor/scripts.pory"
+
+# 550 "data/maps/SlateportCity_Harbor/scripts.pory"
+SlateportCity_Harbor_Text_ThisWillHelpResearch:
+# 551 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
+# 552 "data/maps/SlateportCity_Harbor/scripts.pory"
 	.string "This will help our research a lot!$"

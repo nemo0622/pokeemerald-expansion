@@ -205,9 +205,13 @@ SlateportCity_Harbor_EventScript_Lilycove::
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseNewDestination
 	setvar VAR_SS_TIDAL_STATE, SS_TIDAL_BOARD_SLATEPORT
 	call_if_set FLAG_IS_CHAMPION, SlateportCity_Harbor_EventScript_BoardFerry
-	warp MAP_LILYCOVE_CITY, 12, 33
+	call_if_unset FLAG_IS_CHAMPION, SlateportCity_Harbor_EventScript_TeleportToLilycove
 	waitstate
 	release
+	end
+
+SlateportCity_Harbor_EventScript_TeleportToLilycove::
+	warp MAP_LILYCOVE_CITY, 12, 33
 	end
 
 SlateportCity_Harbor_EventScript_BattleFrontier::
