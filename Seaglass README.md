@@ -81,7 +81,8 @@ TODO CHANGES BASED ON PLAYTHROUGH:
 Balance changes:
 - 
 Bug Fixes:
-- Game freezes in double battles doing pokemon animation. need to super super disable all those
+- No roamer event trigger after E4 - add ticket to Eon Island!
+- After E4, SS Tidal still teleports to city, no ship event or pass to battle frontier
 Other Changes:
 - 
 
@@ -90,6 +91,7 @@ Other Changes:
 - MAJOR ISSUES:
     - In an expansion 1.8.0 save file converted to 1.9.0, entering water routes crashes the game with followers enabled
         - Not replicated on other saves, might just be corrupt save? Either way, SAVE THE GAME OFTEN!
+    - Game occasionally crashes during double battles. Again, SAVE OFTEN!
 - Visuals Issues:
     - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
     - A few rare tile misalignments are possible, but should be rare
