@@ -78,9 +78,9 @@ Later Additions (After Release 1.0):
 ## KNOWN BUGS & PROBLEMS
 
 - MAJOR ISSUES:
-    - In an expansion 1.8.0 save file converted to 1.9.0, entering water routes crashes the game with followers enabled
-        - Not replicated on other saves, might just be corrupt save? Either way, SAVE THE GAME OFTEN!
-    - Game occasionally crashes during double battles. Again, SAVE OFTEN!
+    - Occasionally in battle, battle graphics begin to glitch out, and when the next Pokémon is sent out the game crashes
+        - Save often please! I'm looking into fixes, and it's not *that* common in my experience, but still
+        - Opening and closing the PARTY menu in battle seems to reset it. If you see battle move animations start to glitch out, try that!
 - Visuals Issues:
     - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
     - A few rare tile misalignments are possible, but should be rare
