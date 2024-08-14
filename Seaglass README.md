@@ -56,15 +56,12 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 ## FUTURE PLANS
 
 High Priority (Before Release 1.0):
-- BREAKS SAVE COMPATIBILITY but Increase BAG_TMHM_COUNT and other bag counts (remember: each item uses 4 bytes of storage from Save Block 1)
-    - DO NOOOOTTTTTT DO THIS until finished initial playthrough! BREAKS SAVE COMPATIBILITY
-    - 2492 free bytes in save block1 - expand item bag to 60 items, TM pouch to 70 items, and maybe key items +10
+- beta feedback
 
 BEFORE PUBLIC RELEASE:
-- Create EeveeExpo thread and Ko-Fi website, both with information, Discord links, and patch download
-- Turn this "Seaglass README" file into the actual README file for this repo, and use the info on here for lists on EeveeExpo thread and KoFi site
-- Create patcher website link thing that some hacks have?
 - Disable Debug features in debug.h config file
+- Make sure all Ko-Fi info is up to date
+- Update patcher
 
 Later Additions (After Release 1.0):
 - Music modding with MIDI files:
@@ -72,8 +69,11 @@ Later Additions (After Release 1.0):
     - Pokécommunity tutorial: https://www.pokecommunity.com/threads/how-to-add-edit-and-understand-music-in-pokeemerald.444317/
 - Day/Night system? In conjunction with enabling FAKE RTC in config/overworld.h
 - Random nicknames option?
-- New ability ideas:
-    - Strong legs - ability that boosts kicking moves (good for Flareon and Medicham)
+
+Problems I've found:
+- Sometimes sand tiles in desert are light and not sand? Is there some setmetatile or layout action going on?
+- Pacifidlog diving minigame said I got a ?????? when I caught a barboach
+    - Battle backgrounds disabled, still had room in party. Might be 1.9 update?
 
 ## KNOWN BUGS & PROBLEMS
 

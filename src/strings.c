@@ -1783,6 +1783,7 @@ const u8 gText_ClearingData[] = _("Clearing data…\nPlease wait.");
 const u8 gText_IsThisTheCorrectTime[] = _("Is this the correct time?");
 const u8 gText_Confirm3[] = _("CONFIRM");
 const u8 gText_Cancel4[] = _("CANCEL");
+const u8 gText_ChangeTime[] = _("CHANGE");
 const u8 gText_MrStoneMatchCallDesc[] = _("DEVON PRES");
 const u8 gText_MrStoneMatchCallName[] = _("MR. STONE");
 const u8 gText_StevenMatchCallDesc[] = _("HARD AS ROCK");
