@@ -61,7 +61,7 @@ High Priority (Before Release 1.0):
 BEFORE PUBLIC RELEASE:
 - Disable Debug features in debug.h config file
 - Make sure all Ko-Fi info is up to date
-- Update patcher
+- Update patch file and list it "for sale" on Ko-Fi FOR FREE
 
 Later Additions (After Release 1.0):
 - Music modding with MIDI files:
