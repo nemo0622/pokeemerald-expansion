@@ -28,6 +28,7 @@
 #include "malloc.h"
 #include "bg.h"
 #include "string_util.h"
+#include "safari_zone.h"
 #include "pokemon_icon.h"
 #include "level_caps.h"
 #include "m4a.h"
@@ -6406,6 +6407,7 @@ static void Cmd_moveend(void)
             gBattleStruct->enduredDamage = 0;
             gBattleStruct->additionalEffectsCounter = 0;
             gBattleStruct->poisonPuppeteerConfusion = FALSE;
+            gBattleStruct->fickleBeamBoosted = FALSE;
             if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_Z_MOVE)
                 SetActiveGimmick(gBattlerAttacker, GIMMICK_NONE);
             gBattleStruct->distortedTypeMatchups = 0;
@@ -15358,6 +15360,39 @@ static void Cmd_givecaughtmon(void)
     GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_NICKNAME, gBattleResults.caughtMonNick);
     gBattleResults.caughtMonBall = GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_POKEBALL, NULL);
 
+    if(FlagGet(FLAG_DOING_DIVING_MINIGAME))
+    {
+        // SCORE CALCULATION
+        // First, set base score based on species (Rarity Factor)
+        VarSet(VAR_DIVING_MINIGAME_SCORE, PokemonRarityScore(GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPECIES)));
+
+        // Next, add the Pokémon's LEVEL * 3 to the score
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_LEVEL) * 3)));
+
+        // Next, add each of the Pokémon's IVs to the score (+0-31 per stat, up to +186 if perfect IVs)
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_HP_IV))));
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_ATK_IV))));
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_DEF_IV))));
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPATK_IV))));
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPDEF_IV))));
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPEED_IV))));
+
+        // Finally, add remaining HP to score (higher HP mons = higher score!)
+        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_HP)));
+
+        if(GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_IS_SHINY))
+            VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + 1000));
+
+        // Update high score
+        if(VarGet(VAR_DIVING_MINIGAME_HIGH_SCORE) < VarGet(VAR_DIVING_MINIGAME_SCORE)) // new high score!
+        {
+            VarSet(VAR_DIVING_MINIGAME_HIGH_SCORE, VAR_DIVING_MINIGAME_SCORE);
+            FlagSet(FLAG_NEW_DIVING_GAME_HIGH_SCORE);
+        }
+
+        VarSet(VAR_DIVING_MINIGAME_PLAYER_SPECIES, GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPECIES));
+    }
+
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
@@ -17144,4 +17179,20 @@ void BS_DamageToQuarterTargetHP(void)
         gBattleMoveDamage = 1;
 
     gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_FickleBeamDamageCalculation(void)
+{
+    NATIVE_ARGS();
+    gBattleStruct->fickleBeamBoosted = FALSE;
+
+    if (RandomPercentage(RNG_FICKLE_BEAM, 30))
+    {
+        gBattleStruct->fickleBeamBoosted = TRUE;
+        gBattlescriptCurrInstr = BattleScript_FickleBeamDoubled;
+    }
+    else
+    {
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
 }

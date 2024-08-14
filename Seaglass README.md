@@ -70,11 +70,6 @@ Later Additions (After Release 1.0):
 - Day/Night system? In conjunction with enabling FAKE RTC in config/overworld.h
 - Random nicknames option?
 
-Problems I've found:
-- Sometimes sand tiles in desert are light and not sand? Is there some setmetatile or layout action going on?
-- Pacifidlog diving minigame said I got a ?????? when I caught a barboach
-    - Battle backgrounds disabled, still had room in party. Might be 1.9 update?
-
 ## KNOWN BUGS & PROBLEMS
 
 - MAJOR ISSUES:

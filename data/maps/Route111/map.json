@@ -676,7 +676,7 @@
     {
       "type": "trigger",
       "x": 12,
-      "y": 62,
+      "y": 64,
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
@@ -685,7 +685,7 @@
     {
       "type": "trigger",
       "x": 11,
-      "y": 61,
+      "y": 63,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -694,7 +694,7 @@
     {
       "type": "trigger",
       "x": 12,
-      "y": 61,
+      "y": 63,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -703,7 +703,7 @@
     {
       "type": "trigger",
       "x": 13,
-      "y": 61,
+      "y": 63,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -757,7 +757,7 @@
     {
       "type": "trigger",
       "x": 14,
-      "y": 61,
+      "y": 63,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -783,8 +783,8 @@
     },
     {
       "type": "trigger",
-      "x": 9,
-      "y": 37,
+      "x": 13,
+      "y": 40,
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
@@ -792,8 +792,8 @@
     },
     {
       "type": "trigger",
-      "x": 10,
-      "y": 36,
+      "x": 12,
+      "y": 40,
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
@@ -883,7 +883,7 @@
     {
       "type": "trigger",
       "x": 10,
-      "y": 61,
+      "y": 63,
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
@@ -892,7 +892,7 @@
     {
       "type": "trigger",
       "x": 11,
-      "y": 62,
+      "y": 64,
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
@@ -901,7 +901,7 @@
     {
       "type": "trigger",
       "x": 13,
-      "y": 62,
+      "y": 64,
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
@@ -910,7 +910,7 @@
     {
       "type": "trigger",
       "x": 14,
-      "y": 62,
+      "y": 64,
       "elevation": 3,
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",

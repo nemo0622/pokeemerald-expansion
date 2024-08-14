@@ -300,35 +300,44 @@ void CB2_EndDivingMinigameBattle(void)
 
     if (gBattleOutcome == B_OUTCOME_CAUGHT)
     {
-        // SCORE CALCULATION
-        // First, set base score based on species (Rarity Factor)
-        VarSet(VAR_DIVING_MINIGAME_SCORE, PokemonRarityScore(GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPECIES)));
 
-        // Next, add the Pokémon's LEVEL * 3 to the score
-        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_LEVEL) * 3)));
+        /*
+        
+        PLEASE NOTE: This score calculation code is not in the Cmd_givecaughtmon function in battle_script_commands.c!
+        This is because ZeroMonData was wiping the data before the score could be calculated.
+        For any score calculation tweaks (aside from species scoring), please go to that function! :)
 
-        // Next, add each of the Pokémon's IVs to the score (+0-31 per stat, up to +186 if perfect IVs)
-        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_HP_IV))));
-        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_ATK_IV))));
-        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_DEF_IV))));
-        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPATK_IV))));
-        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPDEF_IV))));
-        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPEED_IV))));
+        */
 
-        // Finally, add remaining HP to score (higher HP mons = higher score!)
-        VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_HP)));
+        // // SCORE CALCULATION
+        // // First, set base score based on species (Rarity Factor)
+        // VarSet(VAR_DIVING_MINIGAME_SCORE, PokemonRarityScore(GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPECIES)));
 
-        if(GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_IS_SHINY))
-            VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + 1000));
+        // // Next, add the Pokémon's LEVEL * 3 to the score
+        // VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_LEVEL) * 3)));
 
-        // Update high score
-        if(VarGet(VAR_DIVING_MINIGAME_HIGH_SCORE) < VarGet(VAR_DIVING_MINIGAME_SCORE)) // new high score!
-        {
-            VarSet(VAR_DIVING_MINIGAME_HIGH_SCORE, VAR_DIVING_MINIGAME_SCORE);
-            FlagSet(FLAG_NEW_DIVING_GAME_HIGH_SCORE);
-        }
+        // // Next, add each of the Pokémon's IVs to the score (+0-31 per stat, up to +186 if perfect IVs)
+        // VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_HP_IV))));
+        // VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_ATK_IV))));
+        // VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_DEF_IV))));
+        // VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPATK_IV))));
+        // VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPDEF_IV))));
+        // VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + (GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPEED_IV))));
 
-        VarSet(VAR_DIVING_MINIGAME_PLAYER_SPECIES, GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPECIES));
+        // // Finally, add remaining HP to score (higher HP mons = higher score!)
+        // VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_HP)));
+
+        // if(GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_IS_SHINY))
+        //     VarSet(VAR_DIVING_MINIGAME_SCORE, (VarGet(VAR_DIVING_MINIGAME_SCORE) + 1000));
+
+        // // Update high score
+        // if(VarGet(VAR_DIVING_MINIGAME_HIGH_SCORE) < VarGet(VAR_DIVING_MINIGAME_SCORE)) // new high score!
+        // {
+        //     VarSet(VAR_DIVING_MINIGAME_HIGH_SCORE, VAR_DIVING_MINIGAME_SCORE);
+        //     FlagSet(FLAG_NEW_DIVING_GAME_HIGH_SCORE);
+        // }
+
+        // VarSet(VAR_DIVING_MINIGAME_PLAYER_SPECIES, GetMonData(&gEnemyParty[gBattlerPartyIndexes[GetCatchingBattler()]], MON_DATA_SPECIES));
     }
     else if(gBattleOutcome == B_OUTCOME_LOST)
     {
