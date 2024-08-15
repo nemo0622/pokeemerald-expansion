@@ -1,10 +1,10 @@
 #ifndef GUARD_DEXNAV_H
 #define GUARD_DEXNAV_H
 
-#define DEXNAV_TIMEOUT                  20  //15 seconds is the time out. Max of 1092 seconds allowed
+#define DEXNAV_TIMEOUT                  30  //30 seconds is the time out. Max of 1092 seconds allowed
 #define SNEAKING_PROXIMITY              1   //Tile amount
 #define CREEPING_PROXIMITY              1
-#define MAX_PROXIMITY                   10
+#define MAX_PROXIMITY                   12
 
 #define DEXNAV_CHAIN_MAX                100
 
