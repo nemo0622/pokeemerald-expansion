@@ -70,6 +70,10 @@ Later Additions (After Release 1.0):
 - Day/Night system? In conjunction with enabling FAKE RTC in config/overworld.h
 - Random nicknames option?
 
+BUGS TO FIX:
+- In some battles, Dynamax is randomly called, freezing the game
+    - search "monToSwitchIntoId" and "BtlController_HandleSwitchInAnim". Possible a pointer randomly directs to dynamax in double battles?
+
 ## KNOWN BUGS & PROBLEMS
 
 - MAJOR ISSUES:

@@ -9398,9 +9398,12 @@ static void (*const sGroundEffectTracksFuncs[])(struct ObjectEvent *objEvent, st
     [TRACKS_NONE] = DoTracksGroundEffect_None,
     [TRACKS_FOOT] = DoTracksGroundEffect_Footprints,
     [TRACKS_BIKE_TIRE] = DoTracksGroundEffect_BikeTireTracks,
-    [TRACKS_SLITHER] = DoTracksGroundEffect_SlitherTracks,
-    [TRACKS_SPOT] = DoTracksGroundEffect_FootprintsC,
-    [TRACKS_BUG] = DoTracksGroundEffect_FootprintsB,
+    // [TRACKS_SLITHER] = DoTracksGroundEffect_SlitherTracks,
+    // [TRACKS_SPOT] = DoTracksGroundEffect_FootprintsC,
+    // [TRACKS_BUG] = DoTracksGroundEffect_FootprintsB,
+    [TRACKS_SLITHER] = DoTracksGroundEffect_None,
+    [TRACKS_SPOT] = DoTracksGroundEffect_None,
+    [TRACKS_BUG] = DoTracksGroundEffect_None,
 };
 
 void GroundEffect_SandTracks(struct ObjectEvent *objEvent, struct Sprite *sprite)

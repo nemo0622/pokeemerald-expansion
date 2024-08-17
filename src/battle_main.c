@@ -3053,6 +3053,9 @@ static void BattleStartClearSetData(void)
     {
         if (!(gBattleTypeFlags & BATTLE_TYPE_LINK) && gSaveBlock2Ptr->optionsBattleSceneOff == TRUE)
             gHitMarker |= HITMARKER_NO_ANIMATIONS;
+
+        if(gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+            gHitMarker |= HITMARKER_NO_ANIMATIONS;
     }
     else if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK)) && GetBattleSceneInRecordedBattle())
     {
@@ -3404,8 +3407,8 @@ const u8* FaintClearSetData(u32 battler)
         }
     }
 
-    // Clear Dynamax data
-    UndoDynamax(battler);
+    // // Clear Dynamax data
+    // UndoDynamax(battler);
 
     return result;
 }
@@ -5539,8 +5542,8 @@ static void HandleEndTurn_FinishBattle(void)
         // Undo Dynamax HP multiplier before recalculating stats.
         for (battler = 0; battler < gBattlersCount; ++battler)
         {
-            if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX)
-                UndoDynamax(battler);
+            // if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX)
+            //     UndoDynamax(battler);
         }
 
         for (i = 0; i < PARTY_SIZE; i++)

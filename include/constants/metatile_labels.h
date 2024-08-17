@@ -303,7 +303,6 @@
 #define METATILE_Mauville_Door_BattleTent     0x3D4
 #define METATILE_Mauville_Door_CyclingRoad    0x289
 #define METATILE_Mauville_Door_Verdanturf     0x3A1
-#define METATILE_Mauville_LightSand           0x200
 #define METATILE_Mauville_MirageTower_Tile0   0x3D8
 #define METATILE_Mauville_MirageTower_Tile1   0x3D9
 #define METATILE_Mauville_MirageTower_Tile10  0x3E4

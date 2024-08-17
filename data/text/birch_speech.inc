@@ -14,7 +14,7 @@ gText_Birch_Pokemon::
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "This LOATD is just one of over 400\n"
+	.string "This LOTAD is just one of over 400\n"
 	.string "POKéMON found in HOENN!\p"
 	.string "Recent migration events have made\n"
 	.string "HOENN a hotspot for biodiversity.\l"

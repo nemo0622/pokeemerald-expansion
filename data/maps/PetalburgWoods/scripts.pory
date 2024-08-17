@@ -344,7 +344,7 @@ PetalburgWoods_Text_YouHaveToHelpMe:
 	.string "You've got to help me, please!$"
 
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
-	.string "Hunh? What do you think you're doing?\n"
+	.string "Huh? What do you think you're doing?\n"
 	.string "What, you're going to protect him?\p"
 	.string "No one who crosses TEAM AQUA\n"
 	.string "gets any mercy, not even a kid!\p"

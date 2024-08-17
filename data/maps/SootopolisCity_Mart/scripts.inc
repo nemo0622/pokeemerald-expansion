@@ -735,4 +735,5 @@ TMMart_All:
 
 TM_Mart_Clerk_Text_0:
 # 84 "data/maps/SootopolisCity_Mart/scripts.pory"
+	.string "Welcome!\p"
 	.string "How may I serve you?$"

@@ -95,9 +95,9 @@ Route111_EventScript_SetWinstratesNotDefeated::
 
 Route111_EventScript_SetLayoutNoMirageTower::
 	@ setmaplayoutindex LAYOUT_ROUTE111_NO_MIRAGE_TOWER
-	setmetatile 18, 58, METATILE_Mauville_LightSand, FALSE
-	setmetatile 19, 58, METATILE_Mauville_LightSand, FALSE
-	setmetatile 20, 58, METATILE_Mauville_LightSand, FALSE
+	setmetatile 18, 58, METATILE_General_SandPit_Center, FALSE
+	setmetatile 19, 58, METATILE_General_SandPit_Center, FALSE
+	setmetatile 20, 58, METATILE_General_SandPit_Center, FALSE
 	setmetatile 18, 57, METATILE_Mauville_DeepSand_BottomMid, FALSE
 	setmetatile 19, 57, METATILE_Mauville_DeepSand_BottomMid, FALSE
 	setmetatile 20, 57, METATILE_Mauville_DeepSand_BottomMid, FALSE

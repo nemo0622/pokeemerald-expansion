@@ -81,7 +81,7 @@ SootopolisCity_Mart_Text_DidSomethingAwaken:
 script TM_Mart_Clerk
 {
 	lock
-	msgbox(format("How may I serve you?"))
+	msgbox(format("Welcome!\p How may I serve you?"))
 	waitmessage
 	
 	// Use different marts based on badges

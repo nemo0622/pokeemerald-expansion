@@ -253,7 +253,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
 # 127 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 	.string "But hey, they hold CONTESTS in VERDANTURF\n"
 # 128 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
-	.string "TOWN now, so you can still try those!"
+	.string "TOWN now, so you can still try those!\p"
 # 129 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"
 	.string "{PLAYER}{KUN}, I hope you'll enjoy everything\n"
 # 130 "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.pory"

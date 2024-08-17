@@ -193,11 +193,11 @@ Route111_EventScript_SetLayoutNoMirageTower::
 # 97 "data/maps/Route111/scripts.pory"
 	@ setmaplayoutindex LAYOUT_ROUTE111_NO_MIRAGE_TOWER
 # 98 "data/maps/Route111/scripts.pory"
-	setmetatile 18, 58, METATILE_Mauville_LightSand, FALSE
+	setmetatile 18, 58, METATILE_General_SandPit_Center, FALSE
 # 99 "data/maps/Route111/scripts.pory"
-	setmetatile 19, 58, METATILE_Mauville_LightSand, FALSE
+	setmetatile 19, 58, METATILE_General_SandPit_Center, FALSE
 # 100 "data/maps/Route111/scripts.pory"
-	setmetatile 20, 58, METATILE_Mauville_LightSand, FALSE
+	setmetatile 20, 58, METATILE_General_SandPit_Center, FALSE
 # 101 "data/maps/Route111/scripts.pory"
 	setmetatile 18, 57, METATILE_Mauville_DeepSand_BottomMid, FALSE
 # 102 "data/maps/Route111/scripts.pory"

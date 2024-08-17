@@ -720,7 +720,7 @@ u32 FldEff_TracksBug(void)
         sprite->data[7] = FLDEFF_TRACKS_BUG;
         StartSpriteAnim(sprite, gFieldEffectArguments[4]);
     }
-    return 0;
+    return spriteId;
 }
 
 u32 FldEff_TracksSpot(void)
@@ -738,7 +738,7 @@ u32 FldEff_TracksSpot(void)
         sprite->data[7] = FLDEFF_TRACKS_SPOT;
         StartSpriteAnim(sprite, gFieldEffectArguments[4]);
     }
-    return 0;
+    return spriteId;
 }
 
 u32 FldEff_BikeTireTracks(void)

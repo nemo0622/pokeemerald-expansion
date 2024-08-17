@@ -119,6 +119,9 @@ bool32 CanDynamax(u32 battler)
     // if (gBattleTypeFlags & BATTLE_TYPE_RAID && gBattleStruct->raid.dynamaxEnergy != battler)
     //    return FALSE;
 
+    // fuck you no dynamax
+    return FALSE;
+
     // No checks failed, all set!
     return TRUE;
 }

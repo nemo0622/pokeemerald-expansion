@@ -691,7 +691,7 @@ PetalburgWoods_Text_YouHaveToHelpMe:
 # 346 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
 # 347 "data/maps/PetalburgWoods/scripts.pory"
-	.string "Hunh? What do you think you're doing?\n"
+	.string "Huh? What do you think you're doing?\n"
 # 348 "data/maps/PetalburgWoods/scripts.pory"
 	.string "What, you're going to protect him?\p"
 # 349 "data/maps/PetalburgWoods/scripts.pory"
