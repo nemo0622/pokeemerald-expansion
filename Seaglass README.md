@@ -57,6 +57,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 High Priority (Before Release 1.0):
 - beta feedback
+- Give some trainers and gym leaders more items
 
 BEFORE PUBLIC RELEASE:
 - Disable Debug features in debug.h config file
@@ -73,6 +74,7 @@ Later Additions (After Release 1.0):
 BUGS TO FIX:
 - In some battles, Dynamax is randomly called, freezing the game
     - search "monToSwitchIntoId" and "BtlController_HandleSwitchInAnim". Possible a pointer randomly directs to dynamax in double battles?
+- After double battle, Pokémon do not animate in following single battles
 
 ## KNOWN BUGS & PROBLEMS
 

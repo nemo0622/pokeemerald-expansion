@@ -229,17 +229,17 @@ RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsWest:
 # 115 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	walk_down
 # 116 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	walk_right
+	walk_down
 # 117 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	walk_in_place_faster_down
+	walk_right
 # 118 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	delay_16
+	walk_in_place_faster_down
 # 119 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	delay_16
 # 120 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	delay_16
 # 121 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	walk_down
+	delay_16
 # 122 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	walk_in_place_faster_left
 # 123 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
@@ -255,11 +255,11 @@ RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsWest:
 # 128 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	delay_8
 # 129 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	walk_up
+	walk_left
 # 130 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	walk_left
 # 131 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	walk_left
+	walk_up
 # 132 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	walk_up
 # 133 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
@@ -281,19 +281,19 @@ RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsEast:
 # 141 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	walk_down
 # 142 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	walk_left
+	walk_down
 # 143 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	walk_left
 # 144 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	walk_in_place_faster_down
+	walk_left
 # 145 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	delay_16
+	walk_in_place_faster_down
 # 146 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	delay_16
 # 147 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	delay_16
 # 148 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	walk_down
+	delay_16
 # 149 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	walk_in_place_faster_left
 # 150 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
@@ -309,9 +309,9 @@ RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsEast:
 # 155 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	delay_8
 # 156 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	walk_up
-# 157 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	walk_right
+# 157 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	walk_up
 # 158 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	walk_up
 # 159 "data/maps/RustboroCity_PokemonSchool/scripts.pory"

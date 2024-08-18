@@ -113,12 +113,12 @@ RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsWest:
 	walk_left
 	walk_down
 	walk_down
+	walk_down
 	walk_right
 	walk_in_place_faster_down
 	delay_16
 	delay_16
 	delay_16
-	walk_down
 	walk_in_place_faster_left
 	delay_16
 	delay_16
@@ -126,9 +126,9 @@ RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsWest:
 	delay_16
 	delay_16
 	delay_8
+	walk_left
+	walk_left
 	walk_up
-	walk_left
-	walk_left
 	walk_up
 	walk_up
 	walk_right
@@ -139,13 +139,13 @@ RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsEast:
 	walk_right
 	walk_down
 	walk_down
+	walk_down
 	walk_left
 	walk_left
 	walk_in_place_faster_down
 	delay_16
 	delay_16
 	delay_16
-	walk_down
 	walk_in_place_faster_left
 	delay_16
 	delay_16
@@ -153,8 +153,8 @@ RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsEast:
 	delay_16
 	delay_16
 	delay_8
-	walk_up
 	walk_right
+	walk_up
 	walk_up
 	walk_up
 	walk_left

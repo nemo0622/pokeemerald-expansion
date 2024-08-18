@@ -41,6 +41,7 @@
 #include "pokemon.h"
 #include "random.h"
 #include "recorded_battle.h"
+#include "reshow_battle_screen.h"
 #include "roamer.h"
 #include "safari_zone.h"
 #include "scanline_effect.h"
@@ -519,11 +520,11 @@ static void CB2_InitBattleInternal(void)
         gBattleTypeFlags |= (IsTrainerDoubleBattle(gTrainerBattleOpponent_A) ? BATTLE_TYPE_DOUBLE : 0);
     }
 
-    if(IsTrainerDoubleBattle(gTrainerBattleOpponent_A) || (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)) // if is double battle
-    {
-        gHitMarker |= HITMARKER_NO_ANIMATIONS;
-        gHitMarker |= HITMARKER_DISABLE_ANIMATION;
-    }
+    // if(IsTrainerDoubleBattle(gTrainerBattleOpponent_A) || (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)) // if is double battle
+    // {
+    //     gHitMarker |= HITMARKER_NO_ANIMATIONS;
+    //     gHitMarker |= HITMARKER_DISABLE_ANIMATION;
+    // }
 
     InitBattleBgsVideo();
     LoadBattleTextboxAndBackground();
@@ -822,11 +823,11 @@ static void CB2_HandleStartBattle(void)
     u8 playerMultiplayerId;
     u8 enemyMultiplayerId;
 
-    if(IsTrainerDoubleBattle(gTrainerBattleOpponent_A) || (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)) // if is double battle
-    {
-        gHitMarker |= HITMARKER_NO_ANIMATIONS;
-        gHitMarker |= HITMARKER_DISABLE_ANIMATION;
-    }
+    // if(IsTrainerDoubleBattle(gTrainerBattleOpponent_A) || (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)) // if is double battle
+    // {
+    //     gHitMarker |= HITMARKER_NO_ANIMATIONS;
+    //     gHitMarker |= HITMARKER_DISABLE_ANIMATION;
+    // }
 
     RunTasks();
     AnimateSprites();
@@ -3054,8 +3055,8 @@ static void BattleStartClearSetData(void)
         if (!(gBattleTypeFlags & BATTLE_TYPE_LINK) && gSaveBlock2Ptr->optionsBattleSceneOff == TRUE)
             gHitMarker |= HITMARKER_NO_ANIMATIONS;
 
-        if(gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
-            gHitMarker |= HITMARKER_NO_ANIMATIONS;
+        // if(gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+        //     gHitMarker |= HITMARKER_NO_ANIMATIONS;
     }
     else if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK)) && GetBattleSceneInRecordedBattle())
     {
@@ -3734,6 +3735,8 @@ static void DoBattleIntro(void)
                 }
             }
 
+            ResetSpritesAfterBattleTurn();
+
             gBattleStruct->eventsBeforeFirstTurnState = 0;
             gBattleStruct->switchInBattlerCounter = 0;
             gBattleStruct->overworldWeatherDone = FALSE;
@@ -3965,6 +3968,8 @@ static void HandleEndTurn_ContinueBattle(void)
         gBattleStruct->turnCountersTracker = 0;
         gMoveResultFlags = 0;
     }
+
+    ResetSpritesAfterBattleTurn();
 }
 
 void BattleTurnPassed(void)

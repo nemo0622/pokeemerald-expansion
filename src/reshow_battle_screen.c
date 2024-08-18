@@ -12,6 +12,7 @@
 #include "link.h"
 #include "sprite.h"
 #include "constants/trainers.h"
+#include "battle_gfx_sfx_util.h"
 #include "battle_interface.h"
 #include "battle_anim.h"
 #include "data.h"
@@ -166,6 +167,53 @@ static void CB2_ReshowBattleScreenAfterMenu(void)
     }
 
     gBattleScripting.reshowMainState++;
+}
+
+void ResetSpritesAfterBattleTurn(void)
+{
+    ResetSpriteData();
+
+    FreeAllSpritePalettes();
+    gReservedSpritePaletteCount = MAX_BATTLERS_COUNT;
+    ClearSpritesHealthboxAnimData();
+    BattleLoadAllHealthBoxesGfxAtOnce();
+    CreateBattlerSprite(0);
+    CreateBattlerSprite(1);
+    CreateBattlerSprite(2);
+    CreateBattlerSprite(3);
+    CreateHealthboxSprite(0);
+    CreateHealthboxSprite(1);
+    CreateHealthboxSprite(2);
+    CreateHealthboxSprite(3);
+
+    u8 opponentBattler;
+    u16 species;
+
+    LoadAndCreateEnemyShadowSprites();
+
+    opponentBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+    species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[opponentBattler]], MON_DATA_SPECIES);
+    SetBattlerShadowSpriteCallback(opponentBattler, species);
+
+    if (IsDoubleBattle())
+    {
+        opponentBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+        species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[opponentBattler]], MON_DATA_SPECIES);
+        SetBattlerShadowSpriteCallback(opponentBattler, species);
+    }
+
+    ActionSelectionCreateCursorAt(gActionSelectionCursor[gBattlerInMenuId], 0);
+
+    if (gWirelessCommType != 0 && gReceivedRemoteLinkPlayers)
+    {
+        LoadWirelessStatusIndicatorSpriteGfx();
+        CreateWirelessStatusIndicatorSprite(0, 0);
+    }
+
+    ClearBattleBgCntBaseBlocks();
+    gPaletteFade.bufferTransferDisabled = 0;
+    SetMainCallback2(BattleMainCB2);
+    FillAroundBattleWindows();
 }
 
 static void ClearBattleBgCntBaseBlocks(void)

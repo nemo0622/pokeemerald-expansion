@@ -5808,7 +5808,7 @@ BattleScript_PursuitSwitchDmgLoop::
 BattleScript_DoSwitchOut::
 	decrementmultihit BattleScript_PursuitSwitchDmgLoop
 	switchoutabilities BS_ATTACKER
-	updatedynamax
+	@ updatedynamax
 	waitstate
 	restoreattacker
 	returnatktoball

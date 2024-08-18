@@ -834,7 +834,9 @@ script LilycoveCity_EventScript_Wailmer
 {
 	lock
 	faceplayer
+	playmoncry(SPECIES_WAILMER, CRY_MODE_NORMAL)
 	msgbox(format("Blaaaahh!"))
+	waitmoncry
 	closemessage
 	release
 	end

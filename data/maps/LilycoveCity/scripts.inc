@@ -1633,10 +1633,14 @@ LilycoveCity_EventScript_Wailmer::
 # 836 "data/maps/LilycoveCity/scripts.pory"
 	faceplayer
 # 837 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_EventScript_Wailmer_Text_0
+	playmoncry SPECIES_WAILMER, CRY_MODE_NORMAL
 # 838 "data/maps/LilycoveCity/scripts.pory"
-	closemessage
+	msgbox LilycoveCity_EventScript_Wailmer_Text_0
 # 839 "data/maps/LilycoveCity/scripts.pory"
+	waitmoncry
+# 840 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 841 "data/maps/LilycoveCity/scripts.pory"
 	release
 	end
 
@@ -1687,5 +1691,5 @@ LilycoveCity_EventScript_ScubaSafariResetSailor_Text_7:
 	.string "Now scram!$"
 
 LilycoveCity_EventScript_Wailmer_Text_0:
-# 837 "data/maps/LilycoveCity/scripts.pory"
+# 838 "data/maps/LilycoveCity/scripts.pory"
 	.string "Blaaaahh!$"
