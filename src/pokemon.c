@@ -6176,7 +6176,7 @@ void DoMonFrontSpriteAnimation(struct Sprite *sprite, u16 species, bool8 noCry, 
         pan = 0;
         break;
     }
-    if ((panModeAnimFlag & SKIP_FRONT_ANIM) || IsTrainerDoubleBattle(gTrainerBattleOpponent_A))
+    if ((panModeAnimFlag & SKIP_FRONT_ANIM))
     {
         // No animation, only check if cry needs to be played
         if (!noCry)
@@ -6185,13 +6185,6 @@ void DoMonFrontSpriteAnimation(struct Sprite *sprite, u16 species, bool8 noCry, 
     }
     else
     {
-        if(gBattleTypeFlags & BATTLE_TYPE_DOUBLE || IsTrainerDoubleBattle(gTrainerBattleOpponent_A))
-        {
-            if (!noCry)
-                PlayCry_Normal(species, pan);
-            sprite->callback = SpriteCallbackDummy;
-            return;
-        }
         if (!noCry)
         {
             PlayCry_Normal(species, pan);
