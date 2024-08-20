@@ -504,7 +504,7 @@ static void AddSearchWindowText(u16 species, u8 proximity, u8 searchLevel, bool8
     StringExpandPlaceholders(gStringVar4, sText_MonLevel);
     AddTextPrinterParameterized3(sDexNavSearchDataPtr->windowId, 0, WINDOW_COL_1, 0, sSearchFontColor, TEXT_SKIP_DRAW, gStringVar4);
     
-    if (proximity <= SNEAKING_PROXIMITY)
+    if (proximity <= (SNEAKING_PROXIMITY + 2))
     {
         PlaySE(SE_POKENAV_ON);
         // move
@@ -673,7 +673,7 @@ static bool8 DexNavPickTile(u8 environment, u8 areaX, u8 areaY, bool8 smallScan)
                     else
                     { // outdoors: grass
                         scale = 100 - (GetPlayerDistance(topX, topY) * 2);
-                        weight = (Random() % scale <= 5) && !MapGridGetCollisionAt(topX, topY);
+                        weight = (Random() % scale <= 10) && !MapGridGetCollisionAt(topX, topY);
                     }
                 }
                 break;
@@ -715,7 +715,7 @@ static bool8 TryStartHiddenMonFieldEffect(u8 environment, u8 xSize, u8 ySize, bo
     u8 currMapType = GetCurrentMapType();
     u8 fldEffId = 0;
     
-    if (DexNavPickTile(environment, xSize, ySize, smallScan))
+    if (DexNavPickTile(environment, xSize, ySize, TRUE))
     {
         u8 metatileBehaviour = MapGridGetMetatileBehaviorAt(sDexNavSearchDataPtr->tileX, sDexNavSearchDataPtr->tileY);
 
@@ -1053,7 +1053,7 @@ static void Task_RevealHiddenMon(u8 taskId)
     }
     
     
-    if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
+    if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN) && !FlagGet(FLAG_DEXNAV_SHOW_ALL_MONS))
     {
         u8 index;
         
@@ -1180,7 +1180,7 @@ static void Task_DexNavSearch(u8 taskId)
 
     //Caves and water the pokemon moves around
     if ((sDexNavSearchDataPtr->environment == ENCOUNTER_TYPE_WATER || GetCurrentMapType() == MAP_TYPE_UNDERGROUND)
-        && sDexNavSearchDataPtr->proximity < GetMovementProximityBySearchLevel() && sDexNavSearchDataPtr->movementCount < 2
+        && sDexNavSearchDataPtr->proximity < GetMovementProximityBySearchLevel() && sDexNavSearchDataPtr->movementCount < 1
         && task->tRevealed)
     {
         bool8 UNUSED ret;
@@ -1219,7 +1219,7 @@ static void DexNavUpdateSearchWindow(u8 proximity, u8 searchLevel)
 {
     bool8 hideName = FALSE;
 
-    if (sDexNavSearchDataPtr->hiddenSearch && !GetSetPokedexFlag(SpeciesToNationalPokedexNum(sDexNavSearchDataPtr->species), FLAG_GET_SEEN))
+    if (sDexNavSearchDataPtr->hiddenSearch && !GetSetPokedexFlag(SpeciesToNationalPokedexNum(sDexNavSearchDataPtr->species), FLAG_GET_SEEN) && !FlagGet(FLAG_DEXNAV_SHOW_ALL_MONS))
         hideName = TRUE;    //if a detector mode hidden search and player hasn't seen the mon, hide info
     
     FillWindowPixelBuffer(sDexNavSearchDataPtr->windowId, PIXEL_FILL(1));   //clear window
@@ -1807,7 +1807,7 @@ static bool8 CapturedAllLandMons(u16 headerId)
             species = landMonsInfo->wildPokemon[i].species;
             if (species != SPECIES_NONE)
             {
-                if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
+                if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT) && !FlagGet(FLAG_DEXNAV_SHOW_ALL_MONS))
                     break;
                 
                 count++;
@@ -1841,7 +1841,7 @@ static bool8 CapturedAllWaterMons(u16 headerId)
             if (species != SPECIES_NONE)
             {
                 count++;
-                if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
+                if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT) && !FlagGet(FLAG_DEXNAV_SHOW_ALL_MONS))
                     break;
             }
         }
@@ -1872,7 +1872,7 @@ static bool8 CapturedAllHiddenMons(u16 headerId)
             if (species != SPECIES_NONE)
             {
                 count++;
-                if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
+                if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT) && !FlagGet(FLAG_DEXNAV_SHOW_ALL_MONS))
                     break;
             }
         }
@@ -2059,10 +2059,13 @@ static void TryDrawIconInSlot(u16 species, s16 x, s16 y)
 {
     if (species == SPECIES_NONE || species > NUM_SPECIES)
         CreateNoDataIcon(x, y);   //'X' in slot
-    else if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
-        CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark
-    else
-        CreateMonIcon(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF);
+    else 
+    {
+        if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN) && !FlagGet(FLAG_DEXNAV_SHOW_ALL_MONS))
+            CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark
+        else
+            CreateMonIcon(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF);
+    }
 }
 
 static void DrawSpeciesIcons(void)
@@ -2127,7 +2130,7 @@ static u16 DexNavGetSpecies(void)
         return SPECIES_NONE;
     }
     
-    if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
+    if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN) && !FlagGet(FLAG_DEXNAV_SHOW_ALL_MONS))
         return SPECIES_NONE;
     
     return species;
@@ -2186,7 +2189,7 @@ static void PrintCurrentSpeciesInfo(void)
     u16 dexNum = SpeciesToNationalPokedexNum(species);
     u8 type1, type2;
     
-    if (!GetSetPokedexFlag(dexNum, FLAG_GET_SEEN))
+    if (!GetSetPokedexFlag(dexNum, FLAG_GET_SEEN) && !FlagGet(FLAG_DEXNAV_SHOW_ALL_MONS) && !FlagGet(FLAG_DEXNAV_SHOW_ALL_MONS))
         species = SPECIES_NONE;
 
     // clear windows

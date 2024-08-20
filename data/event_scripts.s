@@ -1040,6 +1040,7 @@ MysteryGift_EventScript_DoMysteryGift::
 	goto_if_eq VAR_RESULT, 7, MysteryGift_EventScript_GiveHoennStarters
 	goto_if_eq VAR_RESULT, 8, MysteryGift_EventScript_Applin
 	goto_if_eq VAR_RESULT, 9, MysteryGift_EventScript_Tinkatink
+	goto_if_eq VAR_RESULT, 10, MysteryGift_EventScript_JustShowMe
 	end
 
 MysteryGift_Failed::
@@ -1184,6 +1185,14 @@ MysteryGift_EventScript_Tinkatink::
 	releaseall
 	end
 
+MysteryGift_EventScript_JustShowMe::
+	setflag FLAG_DEXNAV_SHOW_ALL_MONS
+	playfanfare MUS_OBTAIN_ITEM
+	message MysteryGift_Text_SucceededText_DexNavCode
+	waitfanfare
+	releaseall
+	end
+
 
 @ Gift code examples
 MysteryGift_EventScript_Celebi::
@@ -1296,6 +1305,10 @@ MysteryGift_Text_EnterCode:
 MysteryGift_Text_SucceededText:
 	.string "The code was valid!\p"
 	.string "$"
+
+MysteryGift_Text_SucceededText_DexNavCode:
+	.string "The code was valid! POKéMON will\n"
+	.string "all be shown in the DexNav menu!$"
 
 MysteryGift_Text_FailedText:
 	.string "The code was invalid!\p"

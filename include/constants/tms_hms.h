@@ -51,7 +51,17 @@
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(POISON_FANG) \
+    F(THUNDER_FANG) \
+    F(ICE_FANG) \
+    F(FIRE_FANG) \
+    F(PSYCHIC_FANGS) \
+    F(STOMPING_TANTRUM) \
+    F(DAZZLING_GLEAM) \
+    F(PLAY_ROUGH) \
+    F(VOLT_SWITCH) \
+    F(U_TURN)
 
 #define FOREACH_HM(F) \
     F(CUT) \

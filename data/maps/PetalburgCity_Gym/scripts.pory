@@ -1544,7 +1544,7 @@ PetalburgCity_Gym_Text_EnterOHKORoom:
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterGymLeadersRoom:
-	.string "“GYM LEADER'S ROOM\p"
+	.string "“GYM LEADER'S ROOM”\p"
 	.string "“See for yourself what POKéMON await\n"
 	.string "you!” the sign says.\p"
 	.string "Do you want to go through?$"

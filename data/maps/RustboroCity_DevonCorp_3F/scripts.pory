@@ -258,7 +258,7 @@ RustboroCity_DevonCorp_3F_Text_ExplainZRing:
 	.string "Z-MOVES can only be used once per\n"
 	.string "battle, but they often turn the tide!\p"
 	.string "I hope that, with your deep bond with\n"
-	.string "your POKéMON, you can use Z-MOVES\n"
+	.string "your POKéMON, you can use Z-MOVES\l"
 	.string "to their full potential!$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:

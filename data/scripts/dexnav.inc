@@ -21,8 +21,8 @@ EventScript_MovedTooFast::
     msgbox sText_TryMovingSlower, MSGBOX_SIGN
     end
 sText_TryMovingSlower:
-    .string "The Pokémon got away!\n"
-    .string "Try moving more slowly.$"
+    .string "The Pokémon got scared away!\n"
+    .string "{COLOR GREEN}Hold A{COLOR DARK_GRAY} while moving to sneak over.$"
 
 
 EventScript_PokemonGotAway::

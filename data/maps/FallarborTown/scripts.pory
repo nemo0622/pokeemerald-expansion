@@ -158,3 +158,15 @@ script FallarborTown_EventScript_ProfElm
 	releaseall
 	end
 }
+
+script BattleTent_EventScript_BlockBattleTent
+{
+	lock
+	faceplayer
+	msgbox(format("The BATTLE TENT is currently closed for repairs. Sorry about that."))
+	closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}

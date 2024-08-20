@@ -651,7 +651,34 @@ script MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter
 			msgbox(format("...  ...  ...  ...!"))
 			waitmessage
 
-			randomelement(SPECIES_ARTICUNO, SPECIES_ZAPDOS, SPECIES_MOLTRES)
+			setvar(VAR_RESULT, 0)
+			getcaughtmon(SPECIES_ZAPDOS)
+			if(var(VAR_RESULT) == TRUE)
+			{
+				randomelement(SPECIES_MOLTRES, SPECIES_ARTICUNO)
+			}
+			else
+			{
+				getcaughtmon(SPECIES_MOLTRES)
+				if(var(VAR_RESULT) == TRUE)
+				{
+					randomelement(SPECIES_ZAPDOS, SPECIES_ARTICUNO)
+				}
+				else
+				{
+					getcaughtmon(SPECIES_ARTICUNO)
+					if(var(VAR_RESULT) == TRUE)
+					{
+						randomelement(SPECIES_MOLTRES, SPECIES_ZAPDOS)
+					}
+				}
+			}
+
+			// by default, generate a random legendary
+			if(var(VAR_RESULT) == 0)
+			{
+				randomelement(SPECIES_ZAPDOS, SPECIES_MOLTRES, SPECIES_ARTICUNO)
+			}
 
 			if(var(VAR_RESULT) == SPECIES_ARTICUNO)
 			{

@@ -3091,7 +3091,7 @@ PetalburgCity_Gym_Text_EnterOHKORoom:
 # 1546 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_Text_EnterGymLeadersRoom:
 # 1547 "data/maps/PetalburgCity_Gym/scripts.pory"
-	.string "“GYM LEADER'S ROOM\p"
+	.string "“GYM LEADER'S ROOM”\p"
 # 1548 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "“See for yourself what POKéMON await\n"
 # 1549 "data/maps/PetalburgCity_Gym/scripts.pory"

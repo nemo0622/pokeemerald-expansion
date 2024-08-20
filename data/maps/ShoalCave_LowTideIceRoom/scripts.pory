@@ -29,7 +29,34 @@ script ShoalCave_EventScript_ExploringSailorLegendaryDogEncounter
 			msgbox(format("...  ...  ...  ...!"))
 			waitmessage
 
-			randomelement(SPECIES_RAIKOU, SPECIES_ENTEI, SPECIES_SUICUNE)
+			setvar(VAR_RESULT, 0)
+			getcaughtmon(SPECIES_RAIKOU)
+			if(var(VAR_RESULT) == TRUE)
+			{
+				randomelement(SPECIES_ENTEI, SPECIES_SUICUNE)
+			}
+			else
+			{
+				getcaughtmon(SPECIES_ENTEI)
+				if(var(VAR_RESULT) == TRUE)
+				{
+					randomelement(SPECIES_RAIKOU, SPECIES_SUICUNE)
+				}
+				else
+				{
+					getcaughtmon(SPECIES_SUICUNE)
+					if(var(VAR_RESULT) == TRUE)
+					{
+						randomelement(SPECIES_ENTEI, SPECIES_RAIKOU)
+					}
+				}
+			}
+
+			// by default, generate a random legendary
+			if(var(VAR_RESULT) == 0)
+			{
+				randomelement(SPECIES_RAIKOU, SPECIES_ENTEI, SPECIES_SUICUNE)
+			}
 
 			if(var(VAR_RESULT) == SPECIES_RAIKOU)
 			{

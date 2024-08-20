@@ -282,6 +282,24 @@ FallarborTown_EventScript_ProfElm_5:
 	end
 
 
+BattleTent_EventScript_BlockBattleTent::
+# 164 "data/maps/FallarborTown/scripts.pory"
+	lock
+# 165 "data/maps/FallarborTown/scripts.pory"
+	faceplayer
+# 166 "data/maps/FallarborTown/scripts.pory"
+	msgbox BattleTent_EventScript_BlockBattleTent_Text_0
+# 167 "data/maps/FallarborTown/scripts.pory"
+	closemessage
+# 168 "data/maps/FallarborTown/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 169 "data/maps/FallarborTown/scripts.pory"
+	waitmovement 0
+# 170 "data/maps/FallarborTown/scripts.pory"
+	release
+	end
+
+
 FallarborTown_EventScript_ProfElm_Text_0:
 # 106 "data/maps/FallarborTown/scripts.pory"
 	.string "Hey there! My name is Professor Elm. I'm\n"
@@ -335,3 +353,8 @@ FallarborTown_EventScript_ProfElm_Text_7:
 	.string "she can go on an adventure with you!\p"
 	.string "I should probably continue my travels.\n"
 	.string "See you around, {PLAYER}!$"
+
+BattleTent_EventScript_BlockBattleTent_Text_0:
+# 166 "data/maps/FallarborTown/scripts.pory"
+	.string "The BATTLE TENT is currently closed for\n"
+	.string "repairs. Sorry about that.$"

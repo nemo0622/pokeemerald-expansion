@@ -57,7 +57,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 High Priority (Before Release 1.0):
 - beta feedback
-- Give some trainers and gym leaders more items
 
 BEFORE PUBLIC RELEASE:
 - Disable Debug features in debug.h config file
@@ -71,21 +70,16 @@ Later Additions (After Release 1.0):
 - Day/Night system? In conjunction with enabling FAKE RTC in config/overworld.h
 - Random nicknames option?
 
-BUGS TO FIX:
-- In some battles, Dynamax is randomly called, freezing the game
-    - search "monToSwitchIntoId" and "BtlController_HandleSwitchInAnim". Possible a pointer randomly directs to dynamax in double battles?
-- After double battle, Pokémon do not animate in following single battles
-
 ## KNOWN BUGS & PROBLEMS
 
 - MAJOR ISSUES:
-    - Occasionally in battle, battle graphics begin to glitch out, and when the next Pokémon is sent out the game crashes
-        - Save often please! I'm looking into fixes, and it's not *that* common in my experience, but still
-        - Opening and closing the PARTY menu in battle seems to reset it. If you see battle move animations start to glitch out, try that!
+    - Battle Tent is currently disabled - Rent Pokémon become BAD EGG and other stuff is busted
+        - For now, the building is just blocked off by an NPC
 - Visuals Issues:
     - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
-    - A few rare tile misalignments are possible, but should be rare
-    - Move animations disabled in double battles (avoids bugs, but still)
+    - Graphics flicker after every turn in battle
+        - This is semi-intentional! Resetting the graphics prevents many freezes and move animation problems.
+    - PP number text is yellow when learning new move
 - Other issues:
     - Pinball physics are far from perfect, but tbh I think that adds to the charm lol
 
@@ -114,6 +108,7 @@ Please support everyone who made this possible!
     - Eeveeee: Spoink, Kleavor
     - SageDeoxys: Wyrdeer
     - .kedoshim: Ursaluna
+    - Mudskip: Applin
     - Many others by resource from Mano_Emet on Discord (could not find origin, need to find + credit artists)
 - User Interface:
     - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)

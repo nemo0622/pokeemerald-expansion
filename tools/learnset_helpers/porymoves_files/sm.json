@@ -54945,7 +54945,8 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
-      "MOVE_CONFIDE"
+      "MOVE_CONFIDE",
+      "MOVE_FLY"
     ],
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",

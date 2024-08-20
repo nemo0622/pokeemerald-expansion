@@ -1256,11 +1256,11 @@ MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter::
 	faceplayer
 # 634 "data/maps/MtPyre_Summit/scripts.pory"
 	goto_if_unset FLAG_BATTLED_LEGENDARY_BIRD, MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_1
-# 704 "data/maps/MtPyre_Summit/scripts.pory"
+# 731 "data/maps/MtPyre_Summit/scripts.pory"
 	msgbox MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_Text_5
-# 705 "data/maps/MtPyre_Summit/scripts.pory"
+# 732 "data/maps/MtPyre_Summit/scripts.pory"
 	closemessage
-# 706 "data/maps/MtPyre_Summit/scripts.pory"
+# 733 "data/maps/MtPyre_Summit/scripts.pory"
 	release
 	end
 
@@ -1283,43 +1283,63 @@ MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_1:
 # 652 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmessage
 # 654 "data/maps/MtPyre_Summit/scripts.pory"
-	randomelement SPECIES_ARTICUNO, SPECIES_ZAPDOS, SPECIES_MOLTRES
+	setvar VAR_RESULT, 0
+# 655 "data/maps/MtPyre_Summit/scripts.pory"
+	getcaughtmon SPECIES_ZAPDOS
 # 656 "data/maps/MtPyre_Summit/scripts.pory"
-	compare VAR_RESULT, SPECIES_ARTICUNO
+	compare VAR_RESULT, TRUE
 	goto_if_eq MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_8
-# 668 "data/maps/MtPyre_Summit/scripts.pory"
-	compare VAR_RESULT, SPECIES_ZAPDOS
-	goto_if_eq MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_9
-# 682 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreen FADE_TO_WHITE
-# 683 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 120
-# 684 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreen FADE_FROM_WHITE
-# 685 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 30
-# 686 "data/maps/MtPyre_Summit/scripts.pory"
-	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
-# 687 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 40
-# 688 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmoncry
-# 689 "data/maps/MtPyre_Summit/scripts.pory"
-	seteventmon SPECIES_MOLTRES, 50
-# 690 "data/maps/MtPyre_Summit/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+# 662 "data/maps/MtPyre_Summit/scripts.pory"
+	getcaughtmon SPECIES_MOLTRES
+# 663 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_14
+# 669 "data/maps/MtPyre_Summit/scripts.pory"
+	getcaughtmon SPECIES_ARTICUNO
+# 670 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_23
 MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_7:
-# 693 "data/maps/MtPyre_Summit/scripts.pory"
-	waitstate
-# 694 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement 9, Common_Movement_FacePlayer
+# 678 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_12
+MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_11:
+# 683 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, SPECIES_ARTICUNO
+	goto_if_eq MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_18
 # 695 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, SPECIES_ZAPDOS
+	goto_if_eq MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_19
+# 709 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 710 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 120
+# 711 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+# 712 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 30
+# 713 "data/maps/MtPyre_Summit/scripts.pory"
+	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
+# 714 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 40
+# 715 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmoncry
+# 716 "data/maps/MtPyre_Summit/scripts.pory"
+	seteventmon SPECIES_MOLTRES, 50
+# 717 "data/maps/MtPyre_Summit/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_17:
+# 720 "data/maps/MtPyre_Summit/scripts.pory"
+	waitstate
+# 721 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement 9, Common_Movement_FacePlayer
+# 722 "data/maps/MtPyre_Summit/scripts.pory"
 	msgbox MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_Text_5
-# 696 "data/maps/MtPyre_Summit/scripts.pory"
+# 723 "data/maps/MtPyre_Summit/scripts.pory"
 	closemessage
-# 697 "data/maps/MtPyre_Summit/scripts.pory"
+# 724 "data/maps/MtPyre_Summit/scripts.pory"
 	setflag FLAG_BATTLED_LEGENDARY_BIRD
-# 698 "data/maps/MtPyre_Summit/scripts.pory"
+# 725 "data/maps/MtPyre_Summit/scripts.pory"
 	release
 	end
 
@@ -1334,44 +1354,64 @@ MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_4:
 
 MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_8:
 # 658 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreen FADE_TO_WHITE
-# 659 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 120
-# 660 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreen FADE_FROM_WHITE
-# 661 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 30
-# 662 "data/maps/MtPyre_Summit/scripts.pory"
-	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
-# 663 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 40
-# 664 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmoncry
-# 665 "data/maps/MtPyre_Summit/scripts.pory"
-	seteventmon SPECIES_ARTICUNO, 50
-# 666 "data/maps/MtPyre_Summit/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	randomelement SPECIES_MOLTRES, SPECIES_ARTICUNO
 	goto MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_7
 
-MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_9:
-# 670 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_12:
+# 680 "data/maps/MtPyre_Summit/scripts.pory"
+	randomelement SPECIES_ZAPDOS, SPECIES_MOLTRES, SPECIES_ARTICUNO
+	goto MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_11
+
+MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_14:
+# 665 "data/maps/MtPyre_Summit/scripts.pory"
+	randomelement SPECIES_ZAPDOS, SPECIES_ARTICUNO
+	goto MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_7
+
+MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_18:
+# 685 "data/maps/MtPyre_Summit/scripts.pory"
 	fadescreen FADE_TO_WHITE
-# 671 "data/maps/MtPyre_Summit/scripts.pory"
+# 686 "data/maps/MtPyre_Summit/scripts.pory"
 	delay 120
-# 672 "data/maps/MtPyre_Summit/scripts.pory"
+# 687 "data/maps/MtPyre_Summit/scripts.pory"
 	fadescreen FADE_FROM_WHITE
-# 673 "data/maps/MtPyre_Summit/scripts.pory"
+# 688 "data/maps/MtPyre_Summit/scripts.pory"
 	delay 30
-# 674 "data/maps/MtPyre_Summit/scripts.pory"
-	playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
-# 675 "data/maps/MtPyre_Summit/scripts.pory"
+# 689 "data/maps/MtPyre_Summit/scripts.pory"
+	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
+# 690 "data/maps/MtPyre_Summit/scripts.pory"
 	delay 40
-# 676 "data/maps/MtPyre_Summit/scripts.pory"
+# 691 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmoncry
-# 677 "data/maps/MtPyre_Summit/scripts.pory"
-	seteventmon SPECIES_ZAPDOS, 50
-# 678 "data/maps/MtPyre_Summit/scripts.pory"
+# 692 "data/maps/MtPyre_Summit/scripts.pory"
+	seteventmon SPECIES_ARTICUNO, 50
+# 693 "data/maps/MtPyre_Summit/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
+	goto MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_17
+
+MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_19:
+# 697 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 698 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 120
+# 699 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+# 700 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 30
+# 701 "data/maps/MtPyre_Summit/scripts.pory"
+	playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
+# 702 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 40
+# 703 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmoncry
+# 704 "data/maps/MtPyre_Summit/scripts.pory"
+	seteventmon SPECIES_ZAPDOS, 50
+# 705 "data/maps/MtPyre_Summit/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+	goto MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_17
+
+MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_23:
+# 672 "data/maps/MtPyre_Summit/scripts.pory"
+	randomelement SPECIES_MOLTRES, SPECIES_ZAPDOS
 	goto MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_7
 
 
@@ -1404,7 +1444,7 @@ MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_Text_4:
 	.string "... ... ... ...!$"
 
 MtPyre_EventScript_ExploringSailorLegendaryBirdEncounter_Text_5:
-# 695 "data/maps/MtPyre_Summit/scripts.pory"
+# 722 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "How 'bout that, li'l sailor? Looks like\n"
 	.string "only one of the trio comes at once!\l"
 	.string "Maybe we can try fer another later!$"

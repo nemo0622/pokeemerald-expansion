@@ -519,7 +519,7 @@ RustboroCity_DevonCorp_3F_Text_ExplainZRing:
 # 260 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "I hope that, with your deep bond with\n"
 # 261 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	.string "your POKéMON, you can use Z-MOVES\n"
+	.string "your POKéMON, you can use Z-MOVES\l"
 # 262 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "to their full potential!$"
 # 263 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"

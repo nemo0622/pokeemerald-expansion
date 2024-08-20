@@ -9298,7 +9298,7 @@
               {
                 "min_level": 9,
                 "max_level": 12,
-                "species": "SPECIES_SHUCKLE"
+                "species": "SPECIES_VULPIX"
               },
               {
                 "min_level": 9,
@@ -9308,7 +9308,7 @@
               {
                 "min_level": 9,
                 "max_level": 12,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_VULPIX"
               }
             ]
           },
@@ -12438,7 +12438,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_GROWLITHE"
               },
               {
                 "min_level": 5,
