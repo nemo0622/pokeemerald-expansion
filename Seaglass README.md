@@ -59,7 +59,6 @@ High Priority (Before Release 1.0):
 - beta feedback
 
 BEFORE PUBLIC RELEASE:
-- Disable Debug features in debug.h config file
 - Make sure all Ko-Fi info is up to date
 - Update patch file and list it "for sale" on Ko-Fi FOR FREE
 

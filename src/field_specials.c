@@ -4373,6 +4373,7 @@ void GetMysteryGiftFeedback(void)
     static const u8 sText_CodeApplin[] = _("ILOVEAPPLE");
     static const u8 sText_CodeTinkatink[] = _("ILOVETINKA");
     static const u8 sText_CodeJustShowMe[] = _("JUSTSHOWME");
+    static const u8 sText_CodeWishingStars[] = _("WISHINGSTR");
 
     // Code 1
     if (!StringCompare(gStringVar2, sText_CodeRareCandies))
@@ -4404,6 +4405,9 @@ void GetMysteryGiftFeedback(void)
     // Code 10
     else if (!StringCompare(gStringVar2, sText_CodeJustShowMe))
         gSpecialVar_Result = 10;
+    // Code 11
+    else if (!StringCompare(gStringVar2, sText_CodeWishingStars))
+        gSpecialVar_Result = 11;
 
     // Invalid cheat code
     else

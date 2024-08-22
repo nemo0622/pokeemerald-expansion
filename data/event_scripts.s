@@ -1041,6 +1041,7 @@ MysteryGift_EventScript_DoMysteryGift::
 	goto_if_eq VAR_RESULT, 8, MysteryGift_EventScript_Applin
 	goto_if_eq VAR_RESULT, 9, MysteryGift_EventScript_Tinkatink
 	goto_if_eq VAR_RESULT, 10, MysteryGift_EventScript_JustShowMe
+	goto_if_eq VAR_RESULT, 11, MysteryGift_EventScript_WishingStars
 	end
 
 MysteryGift_Failed::
@@ -1190,6 +1191,11 @@ MysteryGift_EventScript_JustShowMe::
 	playfanfare MUS_OBTAIN_ITEM
 	message MysteryGift_Text_SucceededText_DexNavCode
 	waitfanfare
+	releaseall
+	end
+
+MysteryGift_EventScript_WishingStars::
+	giveitem ITEM_WISHING_STAR, 99
 	releaseall
 	end
 
