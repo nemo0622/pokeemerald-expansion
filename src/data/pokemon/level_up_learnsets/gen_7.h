@@ -6608,7 +6608,6 @@ static const struct LevelUpMove sShuckleLevelUpLearnset[] = {
 
 #if P_FAMILY_HERACROSS
 static const struct LevelUpMove sHeracrossLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_ARM_THRUST),
     LEVEL_UP_MOVE( 1, MOVE_BULLET_SEED),
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -6617,6 +6616,7 @@ static const struct LevelUpMove sHeracrossLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ENDURE),
     LEVEL_UP_MOVE( 7, MOVE_FEINT),
     LEVEL_UP_MOVE(10, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(14, MOVE_ARM_THRUST),
     LEVEL_UP_MOVE(16, MOVE_CHIP_AWAY),
     LEVEL_UP_MOVE(19, MOVE_COUNTER),
     LEVEL_UP_MOVE(23, MOVE_FURY_ATTACK),

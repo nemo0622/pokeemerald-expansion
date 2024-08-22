@@ -1870,7 +1870,9 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u8 cat = gMovesInfo[move].category;
 
     u8 pwr_num[3], acc_num[3];
-    u8 cat_desc[7] = _("CAT: ");
+    u8 cat_desc_physical[9] = _("PHYSICAL");
+    u8 cat_desc_special[9] = _("SPECIAL");
+    u8 cat_desc_status[9] = _("STATUS");
     u8 pwr_desc[7] = _("PWR: ");
     u8 acc_desc[7] = _("ACC: ");
     u8 cat_start[] = _("{CLEAR_TO 0x03}");
@@ -1887,7 +1889,12 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     else
         ConvertIntToDecimalStringN(acc_num, acc, STR_CONV_MODE_LEFT_ALIGN, 3);
     StringCopy(gDisplayedStringBattle, cat_start);
-    StringAppend(gDisplayedStringBattle, cat_desc);
+    if(cat == DAMAGE_CATEGORY_PHYSICAL)
+        StringAppend(gDisplayedStringBattle, cat_desc_physical);
+    else if(cat == DAMAGE_CATEGORY_SPECIAL)
+        StringAppend(gDisplayedStringBattle, cat_desc_special);
+    else
+        StringAppend(gDisplayedStringBattle, cat_desc_status);
     StringAppend(gDisplayedStringBattle, pwr_start);
     StringAppend(gDisplayedStringBattle, pwr_desc);
     StringAppend(gDisplayedStringBattle, pwr_num);
@@ -1901,8 +1908,8 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         StringAppend(gDisplayedStringBattle, gMovesInfo[move].description);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_DESCRIPTION);
 
-    if (gCategoryIconSpriteId == 0xFF)
-        gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 38, 64, 1);
+    // if (gCategoryIconSpriteId == 0xFF)
+    //     gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 38, 64, 1);
 
     StartSpriteAnim(&gSprites[gCategoryIconSpriteId], cat);
 

@@ -79,6 +79,7 @@ Later Additions (After Release 1.0):
     - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
     - Graphics flicker after every turn in battle
         - This is semi-intentional! Resetting the graphics prevents many freezes and move animation problems.
+        - Move animations rarely, but occasionally, bug out for a turn. Should be rare and hard to replicate, but still possible
     - PP number text is yellow when learning new move
 - Other issues:
     - Pinball physics are far from perfect, but tbh I think that adds to the charm lol
