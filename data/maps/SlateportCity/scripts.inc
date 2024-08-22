@@ -2806,52 +2806,60 @@ SlateportCity_Mart_EvolutionItems:
 	.2byte ITEM_MOON_STONE
 	.2byte ITEM_NONE
 
-SlateportCity_EventScript_Kirlia::
+SlateportCity_EventScript_Pelipper::
 # 1413 "data/maps/SlateportCity/scripts.pory"
 	lock
 # 1414 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 1415 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_EventScript_Kirlia_Text_0
+	playmoncry SPECIES_PELIPPER, CRY_MODE_NORMAL
 # 1416 "data/maps/SlateportCity/scripts.pory"
-	closemessage
+	msgbox SlateportCity_EventScript_Pelipper_Text_0
 # 1417 "data/maps/SlateportCity/scripts.pory"
+	waitmoncry
+# 1418 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1419 "data/maps/SlateportCity/scripts.pory"
+	applymovement 9, Common_Movement_FaceOriginalDirection
+# 1420 "data/maps/SlateportCity/scripts.pory"
+	waitmovement 0
+# 1421 "data/maps/SlateportCity/scripts.pory"
 	release
 	end
 
 
-SlateportCity_EventScript_TeleportMan::
-# 1423 "data/maps/SlateportCity/scripts.pory"
-	lock
-# 1424 "data/maps/SlateportCity/scripts.pory"
-	faceplayer
-# 1425 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_EventScript_TeleportMan_Text_0, MSGBOX_YESNO
+SlateportCity_EventScript_PelipperFlightMan::
 # 1427 "data/maps/SlateportCity/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq SlateportCity_EventScript_TeleportMan_2
-# 1436 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_EventScript_TeleportMan_Text_2
-# 1437 "data/maps/SlateportCity/scripts.pory"
-	closemessage
-# 1438 "data/maps/SlateportCity/scripts.pory"
-	warp MAP_PACIFIDLOG_TOWN, 25, 22
-# 1439 "data/maps/SlateportCity/scripts.pory"
-	waitstate
-# 1440 "data/maps/SlateportCity/scripts.pory"
-	release
-	end
-
-# 1443 "data/maps/SlateportCity/scripts.pory"
-	release
-	end
-
-SlateportCity_EventScript_TeleportMan_2:
+	lock
+# 1428 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
 # 1429 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_EventScript_TeleportMan_Text_1
-# 1430 "data/maps/SlateportCity/scripts.pory"
-	closemessage
+	msgbox SlateportCity_EventScript_PelipperFlightMan_Text_0, MSGBOX_YESNO
 # 1431 "data/maps/SlateportCity/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq SlateportCity_EventScript_PelipperFlightMan_2
+# 1440 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_PelipperFlightMan_Text_2
+# 1441 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1442 "data/maps/SlateportCity/scripts.pory"
+	warp MAP_PACIFIDLOG_TOWN, 25, 22
+# 1443 "data/maps/SlateportCity/scripts.pory"
+	waitstate
+# 1444 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+# 1447 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+SlateportCity_EventScript_PelipperFlightMan_2:
+# 1433 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_PelipperFlightMan_Text_1
+# 1434 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1435 "data/maps/SlateportCity/scripts.pory"
 	release
 	end
 
@@ -2864,19 +2872,21 @@ SlateportCity_EventScript_EvolutionItemClerk_Text_1:
 # 1396 "data/maps/SlateportCity/scripts.pory"
 	.string "I hope to see you again!$"
 
-SlateportCity_EventScript_Kirlia_Text_0:
-# 1415 "data/maps/SlateportCity/scripts.pory"
-	.string "KIRLIA: Shaaah!$"
+SlateportCity_EventScript_Pelipper_Text_0:
+# 1416 "data/maps/SlateportCity/scripts.pory"
+	.string "PELIPPER: Skwaah!$"
 
-SlateportCity_EventScript_TeleportMan_Text_0:
-# 1425 "data/maps/SlateportCity/scripts.pory"
-	.string "I host a TELEPORT service to and from\n"
-	.string "PACIFIDLOG TOWN! Would you like a ride?$"
-
-SlateportCity_EventScript_TeleportMan_Text_1:
+SlateportCity_EventScript_PelipperFlightMan_Text_0:
 # 1429 "data/maps/SlateportCity/scripts.pory"
-	.string "Come back when you want to TELEPORT!$"
+	.string "I host a PELIPPER FLIGHT service to\n"
+	.string "and from PACIFIDLOG TOWN! Would you\l"
+	.string "like a ride?$"
 
-SlateportCity_EventScript_TeleportMan_Text_2:
-# 1436 "data/maps/SlateportCity/scripts.pory"
+SlateportCity_EventScript_PelipperFlightMan_Text_1:
+# 1433 "data/maps/SlateportCity/scripts.pory"
+	.string "Why not? Come on, you got a problem with\n"
+	.string "riding in a PELIPPER's mouth?$"
+
+SlateportCity_EventScript_PelipperFlightMan_Text_2:
+# 1440 "data/maps/SlateportCity/scripts.pory"
 	.string "Alright, here we go!$"

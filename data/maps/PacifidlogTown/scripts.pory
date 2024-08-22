@@ -63,25 +63,29 @@ PacifidlogTown_Text_TownSign:
 
 `
 
-script PacifidlogTown_EventScript_Kirlia
+script PacifidlogTown_EventScript_Pelipper
 {
 	lock
 	faceplayer
-	msgbox(format("KIRLIA: Shaaah!"))
+	playmoncry(SPECIES_PELIPPER, CRY_MODE_NORMAL)
+	msgbox(format("PELIPPER: Skwaah!"))
+	waitmoncry
 	closemessage
+	applymovement(9, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
 	release
 	end
 }
 
-script PacifidlogTown_EventScript_TeleportMan
+script PacifidlogTown_EventScript_PelipperFlightMan
 {
 	lock
 	faceplayer
-	msgbox(format("I host a TELEPORT service to and from SLATEPORT CITY! Would you like a ride?"), MSGBOX_YESNO)
+	msgbox(format("I host a PELIPPER FLIGHT service to and from SLATEPORT CITY! Would you like a ride?"), MSGBOX_YESNO)
 
 	if(var(VAR_RESULT) == 0) // no
 	{
-		msgbox(format("Come back when you want to TELEPORT!"))
+		msgbox(format("Why not? Come on, you got a problem with riding in a PELIPPER's mouth?"))
 		closemessage
 		release
 		end
