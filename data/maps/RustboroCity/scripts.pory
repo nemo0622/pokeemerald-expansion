@@ -1594,7 +1594,7 @@ script RustboroCity_EventScript_WishingWellSign
 	lock
 	msgbox(format("OLD RUSTBORO PARK\N To Honor Our Roots."))
 	closemessage
-	msgbox(format("There's more scribbled on here...\p Use Wishing Stars at the Wishing Well! Old ITEMS and even POKéMON are granted!"))
+	msgbox(format("There's more scribbled on here...\p Use Wishing Stars at the Wishing Well! POKéMON are granted to those who seek them!"))
 	closemessage
 	release
 	end

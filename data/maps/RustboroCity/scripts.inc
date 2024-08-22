@@ -2762,5 +2762,5 @@ RustboroCity_EventScript_WishingWellSign_Text_1:
 # 1597 "data/maps/RustboroCity/scripts.pory"
 	.string "There's more scribbled on here...\p"
 	.string "Use Wishing Stars at the Wishing Well!\n"
-	.string "Old ITEMS and even POKéMON are\l"
-	.string "granted!$"
+	.string "POKéMON are granted to those who seek\l"
+	.string "them!$"
