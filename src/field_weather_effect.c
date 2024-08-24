@@ -1,5 +1,6 @@
 #include "global.h"
 #include "battle_anim.h"
+#include "decompress.h"
 #include "event_object_movement.h"
 #include "fieldmap.h"
 #include "field_weather.h"
