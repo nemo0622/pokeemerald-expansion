@@ -32,8 +32,6 @@ EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries::
 	clearflag FLAG_BATTLED_MEWTWO
 	clearflag FLAG_BATTLED_LEGENDARY_DOG
 	clearflag FLAG_BATTLED_LEGENDARY_BIRD
-	random 2
-	setvar VAR_ROAMER_POKEMON, VAR_RESULT
 	return
 
 EverGrandeCity_HallOfFame_EventScript_SetDesertUnderpassCommentReady::

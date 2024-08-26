@@ -17,9 +17,14 @@ SouthernIsland_Interior_EventScript_TryRemoveLati::
 	return
 
 SouthernIsland_Interior_OnTransition:
-	call_if_eq VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetUpLatios
-	call_if_ne VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetUpLatias
+	call SouthernIsland_Interior_EventScript_SetUpRandomLati
 	call SouthernIsland_Interior_EventScript_SetUpPlayerGfx
+	end
+
+SouthernIsland_Interior_EventScript_SetUpRandomLati::
+	random 2
+	goto_if_eq VAR_RESULT, 0, SouthernIsland_Interior_EventScript_SetUpLatios
+	goto_if_ne VAR_RESULT, 0, SouthernIsland_Interior_EventScript_SetUpLatias
 	end
 
 SouthernIsland_Interior_EventScript_SetUpLatios::
@@ -75,8 +80,8 @@ SouthernIsland_Interior_EventScript_Lati::
 	delay 50
 	special RemoveCameraObject
 	setvar VAR_LAST_TALKED, LOCALID_LATI
-	call_if_eq VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetLatiosBattleVars
-	call_if_ne VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetLatiasBattleVars
+	call_if_eq VAR_TEMP_4, SPECIES_LATIOS, SouthernIsland_Interior_EventScript_SetLatiosBattleVars
+	call_if_ne VAR_TEMP_4, SPECIES_LATIOS, SouthernIsland_Interior_EventScript_SetLatiasBattleVars
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLatiBattle
 	waitstate
