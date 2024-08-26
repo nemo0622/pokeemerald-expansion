@@ -55,12 +55,8 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 ## FUTURE PLANS
 
-High Priority (Before Release 1.0):
-- beta feedback
-
-BEFORE PUBLIC RELEASE:
-- Make sure all Ko-Fi info is up to date
-- Update patch file and list it "for sale" on Ko-Fi FOR FREE
+Version 1.1 Plans:
+- 
 
 Later Additions (After Release 1.0):
 - Music modding with MIDI files:

@@ -12273,7 +12273,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_DOWSING_MACHINE] =
     {
-        .name = HANDLE_EXPANDED_ITEM_NAME("Dowsing MCHN", "Dowsing Machine"),
+        .name = HANDLE_EXPANDED_ITEM_NAME("Itemfinder", "Itemfinder"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A device that\n"

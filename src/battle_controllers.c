@@ -2648,11 +2648,11 @@ void BtlController_HandleFaintAnimation(u32 battler)
             }
         }
     }
-    else if(GetBattlerSide(battler) == B_SIDE_OPPONENT)
+    else if(GetBattlerSide(battler) == B_SIDE_OPPONENT && gBattleMons[BATTLE_OPPOSITE(battler)].hp > 0)
     {
         LaunchAnimationTaskForBackSprite(&gSprites[gBattlerSpriteIds[BATTLE_OPPOSITE(battler)]], gSpeciesInfo[gBattleMons[BATTLE_OPPOSITE(battler)].species].backAnimId - 1);
         PlayCry_Normal(gBattleMons[BATTLE_OPPOSITE(battler)].species, CRY_PRIORITY_NORMAL);
-        if(gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+        if((gBattleTypeFlags & BATTLE_TYPE_DOUBLE) && (gBattleMons[BATTLE_PARTNER(BATTLE_OPPOSITE(battler))].hp > 0))
         {
             LaunchAnimationTaskForBackSprite(&gSprites[gBattlerSpriteIds[BATTLE_PARTNER(BATTLE_OPPOSITE(battler))]], gSpeciesInfo[gBattleMons[BATTLE_PARTNER(BATTLE_OPPOSITE(battler))].species].backAnimId - 1);
             PlayCry_Normal(gBattleMons[BATTLE_PARTNER(BATTLE_OPPOSITE(battler))].species, CRY_PRIORITY_NORMAL);

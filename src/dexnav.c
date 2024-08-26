@@ -149,7 +149,7 @@ static void DexNavDrawIcons(void);
 static void DexNavUpdateSearchWindow(u8 proximity, u8 searchLevel);
 //static void DexNavSightUpdate(u8 index);
 static void Task_DexNavSearch(u8 taskId);
-static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId);
+static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId, bool8 resetChain);
 // HIDDEN MONS
 static void DexNavDrawHiddenIcons(void);
 static void DrawHiddenSearchWindow(u8 width);
@@ -1016,9 +1016,11 @@ void EndDexNavSearch(u8 taskId)
     Free(sDexNavSearchDataPtr);
 }
 
-static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId)
+static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId, bool8 resetChain)
 {
-    gSaveBlock1Ptr->dexNavChain = 0;   //reset chain
+    if(resetChain == TRUE)
+        gSaveBlock1Ptr->dexNavChain = 0;   //reset chain
+    
     EndDexNavSearch(taskId);
     ScriptContext_SetupScript(script);
 }
@@ -1097,7 +1099,7 @@ static void Task_DexNavSearch(u8 taskId)
             // show follower
             FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
             UpdateFollowingPokemon();
-            EndDexNavSearchSetupScript(EventScript_LostSignal, taskId);
+            EndDexNavSearchSetupScript(EventScript_LostSignal, taskId, FALSE);
         }
         return;
     }
@@ -1111,7 +1113,7 @@ static void Task_DexNavSearch(u8 taskId)
             // show follower
             FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
             UpdateFollowingPokemon();
-            EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
+            EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId, TRUE);
         }
         return;
     }
@@ -1122,7 +1124,7 @@ static void Task_DexNavSearch(u8 taskId)
         // show follower
         FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
         UpdateFollowingPokemon();
-        EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
+        EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId, TRUE);
         return;
     }
     
@@ -1142,7 +1144,7 @@ static void Task_DexNavSearch(u8 taskId)
             // show follower
             FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
             UpdateFollowingPokemon();
-            EndDexNavSearchSetupScript(EventScript_PokemonGotAway, taskId);
+            EndDexNavSearchSetupScript(EventScript_PokemonGotAway, taskId, FALSE);
         }
         return;
     }
@@ -1310,18 +1312,20 @@ static void CreateDexNavWildMon(u16 species, u8 potential, u8 level, u8 abilityN
 static u8 DexNavTryGenerateMonLevel(u16 species, u8 environment)
 {
     u8 levelBase = GetEncounterLevelFromMapData(species, environment);
-    u8 levelBonus = gSaveBlock1Ptr->dexNavChain / 5;
+    // u8 levelBonus = gSaveBlock1Ptr->dexNavChain / 5;
 
     if (levelBase == MON_LEVEL_NONEXISTENT)
         return MON_LEVEL_NONEXISTENT;   //species not found in the area
     
-    if (Random() % 100 < 4)
-        levelBonus += 10; //4% chance of having a +10 level
+    // if (Random() % 100 < 4)
+    //     levelBonus += 10; //4% chance of having a +10 level
 
-    if (levelBase + levelBonus > MAX_LEVEL)
-        return MAX_LEVEL;
-    else
-        return levelBase + levelBonus;
+    // if (levelBase + levelBonus > MAX_LEVEL)
+    //     return MAX_LEVEL;
+    // else
+    //     return levelBase + levelBonus;
+
+    return levelBase;
 }
 
 static void DexNavGenerateMoveset(u16 species, u8 searchLevel, u8 encounterLevel, u16* moveDst)
@@ -2753,7 +2757,7 @@ bool8 DexNavTryMakeShinyMon(void)
     
     chainBonus = (chain == 50) ? 5 : (chain == 100) ? 10 : 0;
     rndBonus = (Random() % 100 < 4 ? 4 : 0);
-    shinyRolls = 1 + charmBonus + chainBonus + rndBonus;
+    shinyRolls = 1 + charmBonus + chainBonus + rndBonus + 3;
 
     if (searchLevel > 200)
     {

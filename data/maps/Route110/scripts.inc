@@ -1723,7 +1723,7 @@ Route110_Text_WalkOnTheLowRoad:
 # 862 "data/maps/Route110/scripts.pory"
 	.string "I don't have a BIKE, so I'll take\n"
 # 863 "data/maps/Route110/scripts.pory"
-	.string "a leisurely walk on the low road.$"
+	.string "a leisurely walk.$"
 # 864 "data/maps/Route110/scripts.pory"
 
 # 865 "data/maps/Route110/scripts.pory"
