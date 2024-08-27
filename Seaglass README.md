@@ -55,10 +55,8 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 ## FUTURE PLANS
 
-Version 1.1 Plans:
-- 
-
 Later Additions (After Release 1.0):
+- Bottle Caps to improve IVs
 - Music modding with MIDI files:
     - MIDI files of GBC songs: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/tree/main/Audio/nehochupechatat
     - Pokécommunity tutorial: https://www.pokecommunity.com/threads/how-to-add-edit-and-understand-music-in-pokeemerald.444317/

@@ -18568,10 +18568,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Dipplin[] = INCBIN_U8("graphics/pokemon/dipplin/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    // const u32 gObjectEventPic_Dipplin[] = INCBIN_COMP("graphics/pokemon/dipplin/overworld.4bpp");
+    const u32 gObjectEventPic_Dipplin[] = INCBIN_COMP("graphics/pokemon/dipplin/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    // const u32 gOverworldPalette_Dipplin[] = INCBIN_U32("graphics/pokemon/dipplin/overworld_normal.gbapal.lz");
-    // const u32 gShinyOverworldPalette_Dipplin[] = INCBIN_U32("graphics/pokemon/dipplin/overworld_shiny.gbapal.lz");
+    const u32 gOverworldPalette_Dipplin[] = INCBIN_U32("graphics/pokemon/dipplin/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_Dipplin[] = INCBIN_U32("graphics/pokemon/dipplin/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -18584,10 +18584,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Hydrapple[] = INCBIN_U8("graphics/pokemon/hydrapple/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    // const u32 gObjectEventPic_Hydrapple[] = INCBIN_COMP("graphics/pokemon/hydrapple/overworld.4bpp");
+    const u32 gObjectEventPic_Hydrapple[] = INCBIN_COMP("graphics/pokemon/hydrapple/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    // const u32 gOverworldPalette_Hydrapple[] = INCBIN_U32("graphics/pokemon/hydrapple/overworld_normal.gbapal.lz");
-    // const u32 gShinyOverworldPalette_Hydrapple[] = INCBIN_U32("graphics/pokemon/hydrapple/overworld_shiny.gbapal.lz");
+    const u32 gOverworldPalette_Hydrapple[] = INCBIN_U32("graphics/pokemon/hydrapple/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_Hydrapple[] = INCBIN_U32("graphics/pokemon/hydrapple/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GEN_9_CROSS_EVOS
