@@ -1743,6 +1743,14 @@ static void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
         break;
     }
 
+    if (GetBattlerSide(gSprites[healthboxSpriteId].data[6]) != B_SIDE_PLAYER)
+    {
+        bool8 shinyStatus;
+        shinyStatus = GetMonData(mon, MON_DATA_IS_SHINY);
+        if(shinyStatus == TRUE)
+            StringAppend(ptr, gText_Healthbox_ShinyIndicator);
+    }
+
     windowTileData = AddTextPrinterAndCreateWindowOnHealthboxToFit(gDisplayedStringBattle, 0, 3, 2, &windowId, 55);
 
     spriteTileNum = gSprites[healthboxSpriteId].oam.tileNum * TILE_SIZE_4BPP;

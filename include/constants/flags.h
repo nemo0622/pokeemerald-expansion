@@ -711,7 +711,7 @@
 #define FLAG_VISITED_MOSSDEEP_GAME_CORNER  0x29C 
 #define FLAG_GOT_LUCKY_EGG_MOSSDEEP  0x29D
 #define FLAG_GOT_WISHING_STAR_VERDANTURF  0x29E // got wishing star from camper npc
-#define FLAG_UNUSED_0x29F  0x29F // Unused Flag
+#define FLAG_FORCE_SHINY_ENCOUNTER  0x29F // P_FLAG_FORCE_SHINY's flag
 #define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
 #define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
 #define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
@@ -1455,7 +1455,7 @@
 #define FLAG_LANDMARK_SKY_PILLAR                    (SYSTEM_FLAGS + 0x5E)
 
 #define FLAG_SYS_SHOAL_ITEM                         (SYSTEM_FLAGS + 0x5F)
-#define FLAG_SYS_B_DASH                             (SYSTEM_FLAGS + 0x60) // RECEIVED Running Shoes
+#define FLAG_SYS_B_DASH                             (SYSTEM_FLAGS + 0x60) // RECEIVED Running Shoes // 0x920
 #define FLAG_SYS_CTRL_OBJ_DELETE                    (SYSTEM_FLAGS + 0x61)
 #define FLAG_SYS_RESET_RTC_ENABLE                   (SYSTEM_FLAGS + 0x62)
 
@@ -1473,7 +1473,7 @@
 #define FLAG_SYS_FACTORY_GOLD                       (SYSTEM_FLAGS + 0x6D)
 #define FLAG_SYS_PIKE_SILVER                        (SYSTEM_FLAGS + 0x6E)
 #define FLAG_SYS_PIKE_GOLD                          (SYSTEM_FLAGS + 0x6F)
-#define FLAG_SYS_PYRAMID_SILVER                     (SYSTEM_FLAGS + 0x70)
+#define FLAG_SYS_PYRAMID_SILVER                     (SYSTEM_FLAGS + 0x70) // 0x930
 #define FLAG_SYS_PYRAMID_GOLD                       (SYSTEM_FLAGS + 0x71)
 #define FLAG_SYS_FRONTIER_PASS                      (SYSTEM_FLAGS + 0x72)
 
@@ -1494,7 +1494,7 @@
 #define FLAG_LANDMARK_ALTERING_CAVE                 (SYSTEM_FLAGS + 0x7D)
 #define FLAG_LANDMARK_DESERT_UNDERPASS              (SYSTEM_FLAGS + 0x7E)
 #define FLAG_LANDMARK_ARTISAN_CAVE                  (SYSTEM_FLAGS + 0x7F)
-#define FLAG_ENABLE_SHIP_NAVEL_ROCK                 (SYSTEM_FLAGS + 0x80)
+#define FLAG_ENABLE_SHIP_NAVEL_ROCK                 (SYSTEM_FLAGS + 0x80) // 0x940
 #define FLAG_ARRIVED_AT_NAVEL_ROCK                  (SYSTEM_FLAGS + 0x81)
 #define FLAG_LANDMARK_TRAINER_HILL                  (SYSTEM_FLAGS + 0x82)
 

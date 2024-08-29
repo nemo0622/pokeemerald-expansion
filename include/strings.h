@@ -626,6 +626,7 @@ extern const u8 gText_HealthboxNickname[];
 extern const u8 gText_HealthboxGender_None[];
 extern const u8 gText_HealthboxGender_Male[];
 extern const u8 gText_HealthboxGender_Female[];
+extern const u8 gText_Healthbox_ShinyIndicator[];
 
 extern const u8 gText_99TimesPlus[];
 extern const u8 gText_1MinutePlus[];

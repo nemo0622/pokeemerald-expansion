@@ -55,8 +55,26 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 ## FUTURE PLANS
 
+Patch 2.0 Plans:
+- Shiny indicator in battle (next to gender icon?)
+- Hard mode harder?
+- Bottle caps late game
+- Verdanturf friendship checker gives value
+- Check out starter shiny lock, force increase odds to 1/100 or something
+- Check double battle pointer calls (sometimes, pokemon on player's size dynamaxes and freezes)
+- Update colored stats influenced by natures by pressing A
+- Check bug of Roxanne swapping Lileep for Lileep. lol
+- Fix followers vanishing after "too dark in here to find" message in dexnav in cave
+- Make all dexnav encounters function like grass (no moving around or whatever)
+- Remove Steven double battle in Mossdeep space center
+- Secondary Johto starter types
+    - Water/Dark Feraligatr, Grass/Fairy Meganium with Triage, Fire/Electric Typhlosion?
+- Press Start or Select to quit Pinball early
+- Look at DNS branch in merrp's DNS discord thread in RHH discord?
+    - MAKE COMMIT BEFORE MERGE! If it causes bugs just revert!
+
 Later Additions (After Release 1.0):
-- Bottle Caps to improve IVs
+- Proper Steven NPC sprite
 - Music modding with MIDI files:
     - MIDI files of GBC songs: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/tree/main/Audio/nehochupechatat
     - Pokécommunity tutorial: https://www.pokecommunity.com/threads/how-to-add-edit-and-understand-music-in-pokeemerald.444317/
