@@ -50,6 +50,7 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "rtc.h"
+#include "ui_stat_editor.h"
 
 // Menu actions
 enum
@@ -69,6 +70,7 @@ enum
     MENU_ACTION_PYRAMID_BAG,
     MENU_ACTION_DEBUG,
     MENU_ACTION_DEXNAV,
+    MENU_ACTION_STAT_EDITOR,
 };
 
 // Save status
@@ -112,6 +114,7 @@ static bool8 StartMenuBattlePyramidRetireCallback(void);
 static bool8 StartMenuBattlePyramidBagCallback(void);
 static bool8 StartMenuDebugCallback(void);
 static bool8 StartMenuDexNavCallback(void);
+static bool8 StartMenuStatEditorCallback(void);
 
 // Menu callbacks
 static bool8 SaveStartCallback(void);
@@ -217,6 +220,7 @@ static const struct MenuAction sStartMenuItems[] =
     [MENU_ACTION_PYRAMID_BAG]     = {gText_MenuBag,     {.u8_void = StartMenuBattlePyramidBagCallback}},
     [MENU_ACTION_DEBUG]           = {sText_MenuDebug,   {.u8_void = StartMenuDebugCallback}},
     [MENU_ACTION_DEXNAV]          = {gText_MenuDexNav,  {.u8_void = StartMenuDexNavCallback}},
+    [MENU_ACTION_STAT_EDITOR]     = {gText_StatEditor,  {.u8_void = StartMenuStatEditorCallback}}
 };
 
 static const struct BgTemplate sBgTemplates_LinkBattleSave[] =
@@ -1595,5 +1599,11 @@ void AppendToList(u8 *list, u8 *pos, u8 newEntry)
 static bool8 StartMenuDexNavCallback(void)
 {
     CreateTask(Task_OpenDexNavFromStartMenu, 0);
+    return TRUE;
+}
+
+static bool8 StartMenuStatEditorCallback(void)
+{
+    CreateTask(Task_OpenStatEditorFromStartMenu, 0);
     return TRUE;
 }

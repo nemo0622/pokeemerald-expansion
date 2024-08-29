@@ -1,0 +1,7 @@
+MAJOR FEATURE CHANGES:
+- Shiny indicator added in battle!
+	- Adds "!!!" mark next to wild Pokémon name
+- EV/IV Stat Editor Implemented!
+	- Accessible in Party Menu
+	- Unlocks by visiting Battle Frontier
+		- I know this is late, but that's the point! This is very overpowered lol

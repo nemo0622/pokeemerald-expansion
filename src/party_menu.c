@@ -75,10 +75,12 @@
 #include "constants/party_menu.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "ui_stat_editor.h"
 
 enum {
     MENU_SUMMARY,
     MENU_SWITCH,
+    MENU_STAT_EDIT,
     MENU_CANCEL1,
     MENU_ITEM,
     MENU_GIVE,
@@ -206,7 +208,7 @@ struct PartyMenuInternal
     u32 spriteIdCancelPokeball:7;
     u32 messageId:14;
     u8 windowId[3];
-    u8 actions[8];
+    u8 actions[9];
     u8 numActions;
     // In vanilla Emerald, only the first 0xB0 hwords (0x160 bytes) are actually used.
     // However, a full 0x100 hwords (0x200 bytes) are allocated.
@@ -474,6 +476,7 @@ static void BlitBitmapToPartyWindow_LeftColumn(u8, u8, u8, u8, u8, bool8);
 static void BlitBitmapToPartyWindow_RightColumn(u8, u8, u8, u8, u8, bool8);
 static void CursorCb_Summary(u8);
 static void CursorCb_Switch(u8);
+static void CursorCb_StatEdit(u8);
 static void CursorCb_Cancel1(u8);
 static void CursorCb_Item(u8);
 static void CursorCb_Give(u8);
@@ -2860,6 +2863,11 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_MAIL);
         else
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_ITEM);
+
+        if(FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER))
+        {
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_STAT_EDIT);
+        }
     }
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_CANCEL1);
 }
@@ -4460,6 +4468,23 @@ static void UpdatePartyMonAilmentGfx(u8 status, struct PartyMenuBox *menuBox)
         gSprites[menuBox->statusSpriteId].invisible = FALSE;
         break;
     }
+}
+
+static void ChangePokemonStatsPartyScreen_CB(void)
+{
+    CB2_ReturnToPartyMenuFromSummaryScreen();
+}
+
+static void ChangePokemonStatsPartyScreen(void)
+{
+    StatEditor_Init(ChangePokemonStatsPartyScreen_CB);
+}
+static void CursorCb_StatEdit(u8 taskId)
+{
+    PlaySE(SE_SELECT);
+    gSpecialVar_0x8004 = gPartyMenu.slotId;
+    sPartyMenuInternal->exitCallback = ChangePokemonStatsPartyScreen;
+    Task_ClosePartyMenu(taskId);
 }
 
 void LoadPartyMenuAilmentGfx(void)

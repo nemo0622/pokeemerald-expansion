@@ -52,13 +52,12 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
     - Cheat Codes / Mystery Gift function! Interact with GameCube in Player's room
         - Codes can provide Rare Candies, Master Balls, and a few cool Pokémon (Codes listed in documentation!)
     - Pokémon types shown in battle, and press L button to show more move information!
+    - EV/IV Stat Editor in Party Menu after accessing Battle Frontier
 
 ## FUTURE PLANS
 
 Patch 2.0 Plans:
-- Shiny indicator in battle (next to gender icon?)
 - Hard mode harder?
-- Bottle caps late game
 - Verdanturf friendship checker gives value
 - Check out starter shiny lock, force increase odds to 1/100 or something
 - Check double battle pointer calls (sometimes, pokemon on player's size dynamaxes and freezes)
