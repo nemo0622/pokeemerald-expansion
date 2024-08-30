@@ -3572,17 +3572,19 @@ static void BufferIvOrEvStats(u8 mode)
     {
     case 0:
     default:
-        BufferStat(currHPString, 0, hp, 0, 3);
-        BufferStat(gStringVar1, 0, hp2, 1, 3);
-        BufferStat(gStringVar2, natureMod[STAT_ATK - 1], atk, 2, 7);
-        BufferStat(gStringVar3, natureMod[STAT_DEF - 1], def, 3, 7);
-        DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayout);
+        // BufferStat(currHPString, 0, hp, 0, 3);
+        // BufferStat(gStringVar1, 0, hp2, 1, 3);
+        // BufferStat(gStringVar2, natureMod[STAT_ATK - 1], atk, 2, 7);
+        // BufferStat(gStringVar3, natureMod[STAT_DEF - 1], def, 3, 7);
+        // DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayout);
+        BufferLeftColumnStats();
         PrintLeftColumnStats();
 
-        BufferStat(gStringVar1, natureMod[STAT_SPATK - 1], spA, 0, 3);
-        BufferStat(gStringVar2, natureMod[STAT_SPDEF - 1], spD, 1, 3);
-        BufferStat(gStringVar3, natureMod[STAT_SPEED - 1], spe, 2, 3);
-        DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsRightColumnLayout);
+        // BufferStat(gStringVar1, natureMod[STAT_SPATK - 1], spA, 0, 3);
+        // BufferStat(gStringVar2, natureMod[STAT_SPDEF - 1], spD, 1, 3);
+        // BufferStat(gStringVar3, natureMod[STAT_SPEED - 1], spe, 2, 3);
+        // DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsRightColumnLayout);
+        BufferRightColumnStats();
         PrintRightColumnStats();
         break;
     case 1:

@@ -724,7 +724,7 @@ static bool8 TryStartHiddenMonFieldEffect(u8 environment, u8 xSize, u8 ySize, bo
         case ENCOUNTER_TYPE_LAND:
             if (currMapType == MAP_TYPE_UNDERGROUND)
             {
-                fldEffId = FLDEFF_CAVE_DUST;
+                fldEffId = FLDEFF_SAND_HOLE;
             }
             else if (IsMapTypeIndoors(currMapType))
             {
@@ -735,7 +735,7 @@ static bool8 TryStartHiddenMonFieldEffect(u8 environment, u8 xSize, u8 ySize, bo
                 else if (MetatileBehavior_IsSandOrDeepSand(metatileBehaviour))
                     fldEffId = FLDEFF_SAND_HOLE;
                 else
-                    fldEffId = FLDEFF_CAVE_DUST;
+                    fldEffId = FLDEFF_SAND_HOLE;
             }
             else //outdoor, underwater
             {
@@ -746,7 +746,7 @@ static bool8 TryStartHiddenMonFieldEffect(u8 environment, u8 xSize, u8 ySize, bo
                 else if (MetatileBehavior_IsSandOrDeepSand(metatileBehaviour)) //Desert Sand
                     fldEffId = FLDEFF_SAND_HOLE;
                 else if (MetatileBehavior_IsMountain(metatileBehaviour)) //Rough Terrain
-                    fldEffId = FLDEFF_CAVE_DUST;
+                    fldEffId = FLDEFF_SAND_HOLE;
                 else
                     fldEffId = FLDEFF_BERRY_TREE_GROWTH_SPARKLE; //default
             }
@@ -871,6 +871,13 @@ static void Task_InitDexNavSearch(u8 taskId)
     
     if (GetFlashLevel() > 0)
     {
+        if(gMapHeader.regionMapSectionId != MAPSEC_FORTREE_CITY && gMapHeader.regionMapSectionId != MAPSEC_MOSSDEEP_CITY)
+        {
+            // show follower
+            FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+            UpdateFollowingPokemon();
+        }
+
         Free(sDexNavSearchDataPtr);
         FreeMonIconPalettes();
         ScriptContext_SetupScript(EventScript_TooDark);
@@ -1180,21 +1187,21 @@ static void Task_DexNavSearch(u8 taskId)
         return;
     }
 
-    //Caves and water the pokemon moves around
-    if ((sDexNavSearchDataPtr->environment == ENCOUNTER_TYPE_WATER || GetCurrentMapType() == MAP_TYPE_UNDERGROUND)
-        && sDexNavSearchDataPtr->proximity < GetMovementProximityBySearchLevel() && sDexNavSearchDataPtr->movementCount < 1
-        && task->tRevealed)
-    {
-        bool8 UNUSED ret;
+    // //Caves and water the pokemon moves around
+    // if ((sDexNavSearchDataPtr->environment == ENCOUNTER_TYPE_WATER || GetCurrentMapType() == MAP_TYPE_UNDERGROUND)
+    //     && sDexNavSearchDataPtr->proximity < GetMovementProximityBySearchLevel() && sDexNavSearchDataPtr->movementCount < 1
+    //     && task->tRevealed)
+    // {
+    //     bool8 UNUSED ret;
         
-        FieldEffectStop(&gSprites[sDexNavSearchDataPtr->fldEffSpriteId], sDexNavSearchDataPtr->fldEffId);
-        while (1) {
-            if (TryStartHiddenMonFieldEffect(sDexNavSearchDataPtr->environment, 10, 10, TRUE))
-                break;
-        }
+    //     FieldEffectStop(&gSprites[sDexNavSearchDataPtr->fldEffSpriteId], sDexNavSearchDataPtr->fldEffId);
+    //     while (1) {
+    //         if (TryStartHiddenMonFieldEffect(sDexNavSearchDataPtr->environment, 10, 10, TRUE))
+    //             break;
+    //     }
         
-        sDexNavSearchDataPtr->movementCount++;
-    }
+    //     sDexNavSearchDataPtr->movementCount++;
+    // }
 
     DexNavProximityUpdate();
     if (task->tProximity != sDexNavSearchDataPtr->proximity)

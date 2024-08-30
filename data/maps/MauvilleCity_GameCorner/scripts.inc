@@ -1601,86 +1601,104 @@ MossdeepCity_GameCorner_RareBallVendor::
 # 811 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_PINBALL_POINTS
 # 812 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_0, MSGBOX_YESNO
-# 813 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq MossdeepCity_GameCorner_RareBallVendor_2
-# 820 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	compare VAR_PINBALL_POINTS, 0
-	goto_if_gt MossdeepCity_GameCorner_RareBallVendor_5
-# 830 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_3
-# 831 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	closemessage
+	goto_if_eq MossdeepCity_GameCorner_RareBallVendor_2
 MossdeepCity_GameCorner_RareBallVendor_1:
+# 816 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_1, MSGBOX_YESNO
+# 817 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_GameCorner_RareBallVendor_5
+# 824 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	compare VAR_PINBALL_POINTS, 0
+	goto_if_gt MossdeepCity_GameCorner_RareBallVendor_8
 # 834 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_4
+# 835 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+MossdeepCity_GameCorner_RareBallVendor_4:
+# 838 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	release
 	end
 
 MossdeepCity_GameCorner_RareBallVendor_2:
-# 815 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_1
-# 816 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	closemessage
+# 814 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	bufferstring STR_VAR_1, MossdeepCity_GameCorner_RareBallVendor_Text_0
 	goto MossdeepCity_GameCorner_RareBallVendor_1
 
 MossdeepCity_GameCorner_RareBallVendor_5:
-# 822 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 819 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_2
-# 823 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 820 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	closemessage
-# 824 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	subvar VAR_PINBALL_POINTS, 1
-# 825 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	randomelement ITEM_QUICK_BALL, ITEM_TIMER_BALL, ITEM_NET_BALL, ITEM_DIVE_BALL, ITEM_REPEAT_BALL, ITEM_LUXURY_BALL, ITEM_LEVEL_BALL, ITEM_LURE_BALL, ITEM_MOON_BALL, ITEM_FRIEND_BALL, ITEM_LOVE_BALL, ITEM_FAST_BALL, ITEM_HEAVY_BALL, ITEM_DREAM_BALL, ITEM_CHERISH_BALL
+	goto MossdeepCity_GameCorner_RareBallVendor_4
+
+MossdeepCity_GameCorner_RareBallVendor_8:
 # 826 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_3
+# 827 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+# 828 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	subvar VAR_PINBALL_POINTS, 1
+# 829 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	randomelement ITEM_QUICK_BALL, ITEM_TIMER_BALL, ITEM_NET_BALL, ITEM_DIVE_BALL, ITEM_REPEAT_BALL, ITEM_LUXURY_BALL, ITEM_LEVEL_BALL, ITEM_LURE_BALL, ITEM_MOON_BALL, ITEM_FRIEND_BALL, ITEM_LOVE_BALL, ITEM_FAST_BALL, ITEM_HEAVY_BALL, ITEM_DREAM_BALL, ITEM_CHERISH_BALL
+# 830 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	giveitem VAR_RESULT, 3
-	goto MossdeepCity_GameCorner_RareBallVendor_1
+	goto MossdeepCity_GameCorner_RareBallVendor_4
 
 
 MossdeepCity_GameCorner_RarePokemonVendor::
-# 840 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	lock
-# 841 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	faceplayer
-# 842 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_PINBALL_POINTS
-# 843 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MossdeepCity_GameCorner_RarePokemonVendor_Text_0, MSGBOX_YESNO
 # 844 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, 0
+	lock
+# 845 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	faceplayer
+# 846 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_PINBALL_POINTS
+# 847 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	compare VAR_PINBALL_POINTS, 0
 	goto_if_eq MossdeepCity_GameCorner_RarePokemonVendor_2
-# 851 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	compare VAR_PINBALL_POINTS, 2
-	goto_if_ge MossdeepCity_GameCorner_RarePokemonVendor_5
-# 862 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_3
-# 863 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	closemessage
 MossdeepCity_GameCorner_RarePokemonVendor_1:
-# 866 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 851 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RarePokemonVendor_Text_0, MSGBOX_YESNO
+# 852 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_GameCorner_RarePokemonVendor_5
+# 859 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	compare VAR_PINBALL_POINTS, 2
+	goto_if_ge MossdeepCity_GameCorner_RarePokemonVendor_8
+# 870 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_4
+# 871 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+MossdeepCity_GameCorner_RarePokemonVendor_4:
+# 874 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	release
 	end
 
 MossdeepCity_GameCorner_RarePokemonVendor_2:
-# 846 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_1
-# 847 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	closemessage
+# 849 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	bufferstring STR_VAR_1, MossdeepCity_GameCorner_RareBallVendor_Text_0
 	goto MossdeepCity_GameCorner_RarePokemonVendor_1
 
 MossdeepCity_GameCorner_RarePokemonVendor_5:
-# 853 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_2
 # 854 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	closemessage
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_2
 # 855 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+	goto MossdeepCity_GameCorner_RarePokemonVendor_4
+
+MossdeepCity_GameCorner_RarePokemonVendor_8:
+# 861 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MossdeepCity_GameCorner_RareBallVendor_Text_3
+# 862 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+# 863 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	subvar VAR_PINBALL_POINTS, 2
-# 857 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 865 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	randomelement SPECIES_EXEGGUTOR_ALOLAN, SPECIES_GRIMER_ALOLAN, SPECIES_MAROWAK_ALOLAN, SPECIES_MEOWTH_ALOLAN, SPECIES_RAICHU_ALOLAN, SPECIES_VULPIX_ALOLAN, SPECIES_SANDSHREW_ALOLAN, SPECIES_DIGLETT_ALOLAN, SPECIES_GEODUDE_ALOLAN
-# 858 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 866 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	giveegg VAR_RESULT
-	goto MossdeepCity_GameCorner_RarePokemonVendor_1
+	goto MossdeepCity_GameCorner_RarePokemonVendor_4
 
 
 MauvilleCity_GameCorner_PinballEnthusiast_Text_0:
@@ -1699,7 +1717,11 @@ MauvilleCity_GameCorner_BugCatcher_Text_0:
 	.string "some really rare stuff!$"
 
 MossdeepCity_GameCorner_RareBallVendor_Text_0:
-# 812 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 814 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "0$"
+
+MossdeepCity_GameCorner_RareBallVendor_Text_1:
+# 816 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Hey, little TRAINER! I've got a great\n"
 	.string "deal for you. Come to me with a {COLOR GREEN}PINBALL\l"
 	.string "POINT{COLOR DARK_GRAY}, and I'll give you a few random,\l"
@@ -1707,22 +1729,22 @@ MossdeepCity_GameCorner_RareBallVendor_Text_0:
 	.string "Looks like you've got {STR_VAR_1}\n"
 	.string "{COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}. You in?$"
 
-MossdeepCity_GameCorner_RareBallVendor_Text_1:
-# 815 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+MossdeepCity_GameCorner_RareBallVendor_Text_2:
+# 819 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Want to go earn some more {COLOR GREEN}PINBALL\n"
 	.string "POINTS{COLOR DARK_GRAY}? That's fine with me, have fun!$"
 
-MossdeepCity_GameCorner_RareBallVendor_Text_2:
-# 822 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+MossdeepCity_GameCorner_RareBallVendor_Text_3:
+# 826 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Alright, here ya go!$"
 
-MossdeepCity_GameCorner_RareBallVendor_Text_3:
-# 830 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+MossdeepCity_GameCorner_RareBallVendor_Text_4:
+# 834 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Hmm, looks like you need more {COLOR GREEN}PINBALL\n"
 	.string "POINTS{COLOR DARK_GRAY}.$"
 
 MossdeepCity_GameCorner_RarePokemonVendor_Text_0:
-# 843 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 851 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Hey there. I'm a SAILOR between HOENN\n"
 	.string "and ALOLA, so I sometimes come back\l"
 	.string "with some special ALOLAN POKéMON eggs.\p"

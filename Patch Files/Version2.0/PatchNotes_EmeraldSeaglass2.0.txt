@@ -5,3 +5,27 @@ MAJOR FEATURE CHANGES:
 	- Accessible in Party Menu
 	- Unlocks by visiting Battle Frontier
 		- I know this is late, but that's the point! This is very overpowered lol
+- Cave and Water DexNav encounters no longer "move around"
+
+BALANCE CHANGES:
+- Absorb has 30 power, Mega Drain has 50 power
+- Bubble has 30 power, guaranteed decreases Speed
+- Roxanne changes: Lileep has Absorb instead of Mega Drain, Anorith has Bubble instead of Water Gun
+- Double Battles can now happen even if you only have 1 party Pokémon
+- Meganium -> Grass/Fairy type. Evolution line hidden ability is Triage
+- Typhlosion -> Fire/Ground type
+- Feraligatr -> Water/Dark type
+- Beating Juan (8th Gym) gives player Ice Beam, rather than Water Pulse
+
+BUG FIXES:
+- Starter Pokémon should no longer be shiny locked!
+- Cycling through Stats/EVs/IVs by pressing A now has correctly colored stats based on nature
+- Roxanne switching Lileep for same Lileep *maybe* fixed, cannot replicate
+- Followers no longer invisible after "Too dark" DexNav message in caves
+- DexNav cave dust effect no longer bugs out and disappears (replaced with new graphic)
+- Cycling Road no longer mentioned by trainer in Route 110
+- Maxie fight with Mossdeep should be fixed
+	- Removed multi-battle with Steven, instead just a double battle with Maxie
+- Press "Start" leaves Pinball early
+	- On rare occasion where game totally bugs out, allows you to force-leave
+- Fixed Pinball Points number dialogue

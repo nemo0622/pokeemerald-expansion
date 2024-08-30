@@ -3304,14 +3304,14 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     .lvl = 12,
     .species = SPECIES_ANORITH,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_WATER_GUN, MOVE_SMACK_DOWN}
+    .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_BUBBLE, MOVE_SMACK_DOWN}
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 12,
     .species = SPECIES_LILEEP,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_ACID, MOVE_INGRAIN, MOVE_MEGA_DRAIN, MOVE_ROCK_TOMB}
+    .moves = {MOVE_ACID, MOVE_INGRAIN, MOVE_ABSORB, MOVE_ROCK_TOMB}
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -9464,13 +9464,19 @@ static const struct TrainerMon sParty_MaxieMossdeep[] = {
     .moves = {MOVE_LEAF_BLADE, MOVE_NIGHT_SLASH, MOVE_FAKE_OUT, MOVE_FLOATY_FALL}
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 43,
     .species = SPECIES_URSALUNA,
     .moves = { MOVE_FACADE, MOVE_HIGH_HORSEPOWER, MOVE_YAWN, MOVE_CLOSE_COMBAT }
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 43,
+    .species = SPECIES_DODRIO,
+    .moves = { MOVE_THUNDEROUS_KICK, MOVE_EXTREME_SPEED, MOVE_HIGH_HORSEPOWER, MOVE_DRILL_PECK }
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 44,
     .species = SPECIES_CAMERUPT,
     }

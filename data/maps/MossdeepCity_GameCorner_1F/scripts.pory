@@ -256,6 +256,10 @@ script MossdeepGameCorner_RareItemVendor
 	lock
 	faceplayer
 	buffernumberstring(STR_VAR_1, VAR_PINBALL_POINTS)
+	if(var(VAR_PINBALL_POINTS) == 0)
+	{
+		bufferstring(STR_VAR_1, "0")
+	}
 	msgbox(format("Yo! I've got a sweet deal goin' on. Come to me with a {COLOR GREEN}PINBALL POINT{COLOR DARK_GRAY}, and I'll give you a random rare item!\p Looks like you've got {STR_VAR_1} {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}. You in?"), MSGBOX_YESNO)
 	if(var(VAR_RESULT) == 0)
 	{
@@ -326,6 +330,10 @@ script MossdeepGameCorner_CheckPinballPoints
 {
 	lock
 	buffernumberstring(STR_VAR_1, VAR_PINBALL_POINTS)
+	if(var(VAR_PINBALL_POINTS) == 0)
+	{
+		bufferstring(STR_VAR_1, "0")
+	}
 	msgbox(format("{PLAYER} has {STR_VAR_1} {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}."))
 	closemessage
 	release

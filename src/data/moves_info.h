@@ -1878,7 +1878,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "An attack that absorbs\n"
             "half the damage inflicted."),
         .effect = EFFECT_ABSORB,
-        .power = 20,
+        .power = 30,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_4 ? 25 : 20,
@@ -1899,7 +1899,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Mega Drain"),
         .description = sMegaDrainDescription,
         .effect = EFFECT_ABSORB,
-        .power = 40,
+        .power = 50,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_4 ? 15 : 10,
@@ -3726,9 +3726,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Bubble"),
         .description = COMPOUND_STRING(
             "An attack using bubbles.\n"
-            "May lower the foe's Speed."),
+            "Lowers the foe's Speed."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 40 : 20,
+        .power = 30,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 30,
@@ -3737,7 +3737,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = 10,
+            .chance = 100,
         }),
         .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_CUTE,

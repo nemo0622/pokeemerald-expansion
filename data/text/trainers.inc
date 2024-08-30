@@ -1198,7 +1198,7 @@ Route110_Text_TimmyPostBattle:
 	.string "just caught.$"
 
 Route110_Text_AlyssaIntro:
-	.string "I fell off CYCLING ROAD…\p"
+	.string "I fell off my BIKE…\p"
 	.string "I'll get over my embarrassment by\n"
 	.string "battling with you!$"
 

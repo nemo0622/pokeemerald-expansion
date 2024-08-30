@@ -457,272 +457,290 @@ MossdeepGameCorner_RareItemVendor::
 # 258 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_PINBALL_POINTS
 # 259 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	msgbox MossdeepGameCorner_RareItemVendor_Text_0, MSGBOX_YESNO
-# 260 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq MossdeepGameCorner_RareItemVendor_2
-# 267 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_PINBALL_POINTS, 0
-	goto_if_gt MossdeepGameCorner_RareItemVendor_5
-# 277 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	msgbox MossdeepGameCorner_RareItemVendor_Text_3
-# 278 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	closemessage
+	goto_if_eq MossdeepGameCorner_RareItemVendor_2
 MossdeepGameCorner_RareItemVendor_1:
+# 263 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	msgbox MossdeepGameCorner_RareItemVendor_Text_1, MSGBOX_YESNO
+# 264 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepGameCorner_RareItemVendor_5
+# 271 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	compare VAR_PINBALL_POINTS, 0
+	goto_if_gt MossdeepGameCorner_RareItemVendor_8
 # 281 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	msgbox MossdeepGameCorner_RareItemVendor_Text_4
+# 282 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	closemessage
+MossdeepGameCorner_RareItemVendor_4:
+# 285 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
 MossdeepGameCorner_RareItemVendor_2:
-# 262 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	msgbox MossdeepGameCorner_RareItemVendor_Text_1
-# 263 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	closemessage
+# 261 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	bufferstring STR_VAR_1, MossdeepGameCorner_RareItemVendor_Text_0
 	goto MossdeepGameCorner_RareItemVendor_1
 
 MossdeepGameCorner_RareItemVendor_5:
-# 269 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 266 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox MossdeepGameCorner_RareItemVendor_Text_2
-# 270 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 267 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
-# 271 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	subvar VAR_PINBALL_POINTS, 1
-# 272 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	randomelement ITEM_ABILITY_CAPSULE, ITEM_ABILITY_PATCH, ITEM_SACRED_ASH, ITEM_MAX_ELIXER, ITEM_RARE_CANDY, ITEM_WISHING_STAR, ITEM_NUGGET, ITEM_HEART_SCALE, ITEM_LINKING_CORD, ITEM_FIRIUM_Z, ITEM_WATERIUM_Z, ITEM_GRASSIUM_Z
+	goto MossdeepGameCorner_RareItemVendor_4
+
+MossdeepGameCorner_RareItemVendor_8:
 # 273 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	msgbox MossdeepGameCorner_RareItemVendor_Text_3
+# 274 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	closemessage
+# 275 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	subvar VAR_PINBALL_POINTS, 1
+# 276 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	randomelement ITEM_ABILITY_CAPSULE, ITEM_ABILITY_PATCH, ITEM_SACRED_ASH, ITEM_MAX_ELIXER, ITEM_RARE_CANDY, ITEM_WISHING_STAR, ITEM_NUGGET, ITEM_HEART_SCALE, ITEM_LINKING_CORD, ITEM_FIRIUM_Z, ITEM_WATERIUM_Z, ITEM_GRASSIUM_Z
+# 277 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	giveitem VAR_RESULT
-	goto MossdeepGameCorner_RareItemVendor_1
+	goto MossdeepGameCorner_RareItemVendor_4
 
 
 MossdeepGameCorner_MoneyToPinballPointExchange::
-# 287 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	lock
-# 288 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	faceplayer
-# 289 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	showmoneybox 0, 0
-# 290 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	msgbox MossdeepGameCorner_MoneyToPinballPointExchange_Text_0, MSGBOX_YESNO
 # 291 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	lock
+# 292 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	faceplayer
+# 293 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	showmoneybox 0, 0
+# 294 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	msgbox MossdeepGameCorner_MoneyToPinballPointExchange_Text_0, MSGBOX_YESNO
+# 295 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MossdeepGameCorner_MoneyToPinballPointExchange_2
-# 299 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 303 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	checkmoney 4000
-# 300 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 304 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq MossdeepGameCorner_MoneyToPinballPointExchange_5
-# 308 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	playse SE_SHOP
-# 309 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	removemoney 4000
-# 310 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	updatemoneybox
-# 311 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	delay 60
 # 312 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	hidemoneybox
+	playse SE_SHOP
 # 313 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	msgbox MossdeepGameCorner_MoneyToPinballPointExchange_Text_3
+	removemoney 4000
 # 314 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	closemessage
+	updatemoneybox
 # 315 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	delay 30
+	delay 60
 # 316 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	msgbox MossdeepGameCorner_MoneyToPinballPointExchange_Text_4
+	hidemoneybox
 # 317 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	closemessage
+	msgbox MossdeepGameCorner_MoneyToPinballPointExchange_Text_3
 # 318 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	closemessage
+# 319 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	delay 30
+# 320 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	msgbox MossdeepGameCorner_MoneyToPinballPointExchange_Text_4
+# 321 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	closemessage
+# 322 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	addvar VAR_PINBALL_POINTS, 1
 MossdeepGameCorner_MoneyToPinballPointExchange_1:
-# 321 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 325 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
 MossdeepGameCorner_MoneyToPinballPointExchange_2:
-# 293 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 297 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	hidemoneybox
-# 294 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 298 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox MossdeepGameCorner_MoneyToPinballPointExchange_Text_1
-# 295 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 299 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
 	goto MossdeepGameCorner_MoneyToPinballPointExchange_1
 
 MossdeepGameCorner_MoneyToPinballPointExchange_5:
-# 302 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 306 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox MossdeepGameCorner_MoneyToPinballPointExchange_Text_2
-# 303 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 307 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
-# 304 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 308 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	hidemoneybox
 	goto MossdeepGameCorner_MoneyToPinballPointExchange_1
 
 
 MossdeepGameCorner_CheckPinballPoints::
-# 327 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	lock
-# 328 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_PINBALL_POINTS
-# 329 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	msgbox MossdeepGameCorner_CheckPinballPoints_Text_0
-# 330 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
-	closemessage
 # 331 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	lock
+# 332 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_PINBALL_POINTS
+# 333 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	compare VAR_PINBALL_POINTS, 0
+	goto_if_eq MossdeepGameCorner_CheckPinballPoints_2
+MossdeepGameCorner_CheckPinballPoints_1:
+# 337 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	msgbox MossdeepGameCorner_CheckPinballPoints_Text_0
+# 338 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	closemessage
+# 339 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
+MossdeepGameCorner_CheckPinballPoints_2:
+# 335 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	bufferstring STR_VAR_1, MossdeepGameCorner_RareItemVendor_Text_0
+	goto MossdeepGameCorner_CheckPinballPoints_1
+
 
 Minigame_TryMeowthPinballGame::
-# 339 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 347 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	lock
-# 340 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 348 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryMeowthPinballGame_Text_0, MSGBOX_YESNO
-# 341 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 349 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Minigame_TryMeowthPinballGame_2
-# 347 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 355 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	callnative PlayMeowthPinballGame
-# 348 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 356 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	waitstate
-# 349 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 357 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Minigame_TryMeowthPinballGame_5
-# 357 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 365 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryMeowthPinballGame_Text_2
-# 358 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 366 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
 Minigame_TryMeowthPinballGame_4:
-# 360 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 368 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
 Minigame_TryMeowthPinballGame_2:
-# 343 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 351 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
 Minigame_TryMeowthPinballGame_5:
-# 351 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 359 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryMeowthPinballGame_Text_1
-# 352 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 360 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
-# 353 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 361 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	addvar VAR_PINBALL_POINTS, 1
 	goto Minigame_TryMeowthPinballGame_4
 
 
 Minigame_TryDiglettPinballGame::
-# 366 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 374 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	lock
-# 367 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 375 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryDiglettPinballGame_Text_0, MSGBOX_YESNO
-# 368 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 376 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Minigame_TryDiglettPinballGame_2
-# 374 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 382 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	callnative PlayDiglettPinballGame
-# 375 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 383 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	waitstate
-# 376 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 384 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Minigame_TryDiglettPinballGame_5
-# 384 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 392 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryMeowthPinballGame_Text_2
-# 385 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 393 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
 Minigame_TryDiglettPinballGame_4:
-# 387 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 395 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
 Minigame_TryDiglettPinballGame_2:
-# 370 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 378 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
 Minigame_TryDiglettPinballGame_5:
-# 378 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 386 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryMeowthPinballGame_Text_1
-# 379 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 387 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
-# 380 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 388 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	addvar VAR_PINBALL_POINTS, 1
 	goto Minigame_TryDiglettPinballGame_4
 
 
 Minigame_TrySeelPinballGame::
-# 393 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 401 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	lock
-# 394 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 402 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TrySeelPinballGame_Text_0, MSGBOX_YESNO
-# 395 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 403 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Minigame_TrySeelPinballGame_2
-# 401 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 409 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	callnative PlaySeelPinballGame
-# 402 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 410 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	waitstate
-# 403 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 411 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Minigame_TrySeelPinballGame_5
-# 411 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 419 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryMeowthPinballGame_Text_2
-# 412 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 420 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
 Minigame_TrySeelPinballGame_4:
-# 414 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 422 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
 Minigame_TrySeelPinballGame_2:
-# 397 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 405 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
 Minigame_TrySeelPinballGame_5:
-# 405 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 413 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryMeowthPinballGame_Text_1
-# 406 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 414 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
-# 407 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 415 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	addvar VAR_PINBALL_POINTS, 1
 	goto Minigame_TrySeelPinballGame_4
 
 
 Minigame_TryGengarPinballGame::
-# 420 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 428 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	lock
-# 421 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 429 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryGengarPinballGame_Text_0, MSGBOX_YESNO
-# 422 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 430 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Minigame_TryGengarPinballGame_2
-# 428 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 436 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	callnative PlayGengarPinballGame
-# 429 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 437 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	waitstate
-# 430 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 438 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Minigame_TryGengarPinballGame_5
-# 438 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 446 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryMeowthPinballGame_Text_2
-# 439 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 447 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
 Minigame_TryGengarPinballGame_4:
-# 441 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 449 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
 Minigame_TryGengarPinballGame_2:
-# 424 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 432 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	release
 	end
 
 Minigame_TryGengarPinballGame_5:
-# 432 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 440 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	msgbox Minigame_TryMeowthPinballGame_Text_1
-# 433 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 441 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	closemessage
-# 434 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 442 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	addvar VAR_PINBALL_POINTS, 1
 	goto Minigame_TryGengarPinballGame_4
 
@@ -789,76 +807,80 @@ MossdeepGameCorner_EventScript_Woman4_Text_0:
 	.string "game. I think it's my favorite so far!$"
 
 MossdeepGameCorner_RareItemVendor_Text_0:
-# 259 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 261 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+	.string "0$"
+
+MossdeepGameCorner_RareItemVendor_Text_1:
+# 263 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Yo! I've got a sweet deal goin' on. Come\n"
 	.string "to me with a {COLOR GREEN}PINBALL POINT{COLOR DARK_GRAY}, and I'll give\l"
 	.string "you a random rare item!\p"
 	.string "Looks like you've got {STR_VAR_1}\n"
 	.string "{COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}. You in?$"
 
-MossdeepGameCorner_RareItemVendor_Text_1:
-# 262 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+MossdeepGameCorner_RareItemVendor_Text_2:
+# 266 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Want to go earn some more {COLOR GREEN}PINBALL\n"
 	.string "POINTS{COLOR DARK_GRAY}? That's fine with me, have fun!$"
 
-MossdeepGameCorner_RareItemVendor_Text_2:
-# 269 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+MossdeepGameCorner_RareItemVendor_Text_3:
+# 273 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Alright, here ya go!$"
 
-MossdeepGameCorner_RareItemVendor_Text_3:
-# 277 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+MossdeepGameCorner_RareItemVendor_Text_4:
+# 281 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Hmm, looks like you need more {COLOR GREEN}PINBALL\n"
 	.string "POINTS{COLOR DARK_GRAY}.$"
 
 MossdeepGameCorner_MoneyToPinballPointExchange_Text_0:
-# 290 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 294 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Struggling to win PINBALL, eh? I'll tell\n"
 	.string "you what. For just ¥4000, I'll give you a\l"
 	.string "{COLOR GREEN}PINBALL POINT{COLOR DARK_GRAY} right here! Interested?$"
 
 MossdeepGameCorner_MoneyToPinballPointExchange_Text_1:
-# 294 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 298 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Okay, good luck on the machines!$"
 
 MossdeepGameCorner_MoneyToPinballPointExchange_Text_2:
-# 302 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 306 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Looks like you're a bit short on funds.$"
 
 MossdeepGameCorner_MoneyToPinballPointExchange_Text_3:
-# 313 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 317 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Pleasure doing business! Here's what I\n"
 	.string "owe you.$"
 
 MossdeepGameCorner_MoneyToPinballPointExchange_Text_4:
-# 316 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 320 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "{PLAYER} received 1 {COLOR GREEN}PINBALL POINT{COLOR DARK_GRAY}!$"
 
 MossdeepGameCorner_CheckPinballPoints_Text_0:
-# 329 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 337 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "{PLAYER} has {STR_VAR_1} {COLOR GREEN}PINBALL\n"
 	.string "POINTS{COLOR DARK_GRAY}.$"
 
 Minigame_TryMeowthPinballGame_Text_0:
-# 340 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 348 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Play MEOWTH PINBALL?$"
 
 Minigame_TryMeowthPinballGame_Text_1:
-# 351 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 359 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Great job! {PLAYER} gained 1 PINBALL\n"
 	.string "POINT!$"
 
 Minigame_TryMeowthPinballGame_Text_2:
-# 357 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 365 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Better luck next time!$"
 
 Minigame_TryDiglettPinballGame_Text_0:
-# 367 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 375 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Play DIGLETT PINBALL?$"
 
 Minigame_TrySeelPinballGame_Text_0:
-# 394 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 402 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Play SEEL PINBALL?$"
 
 Minigame_TryGengarPinballGame_Text_0:
-# 421 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
+# 429 "data/maps/MossdeepCity_GameCorner_1F/scripts.pory"
 	.string "Play GENGAR PINBALL?$"

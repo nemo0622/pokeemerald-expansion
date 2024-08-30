@@ -809,6 +809,10 @@ script MossdeepCity_GameCorner_RareBallVendor
 	lock
 	faceplayer
 	buffernumberstring(STR_VAR_1, VAR_PINBALL_POINTS)
+	if(var(VAR_PINBALL_POINTS) == 0)
+	{
+		bufferstring(STR_VAR_1, "0")
+	}
 	msgbox(format("Hey, little TRAINER! I've got a great deal for you. Come to me with a {COLOR GREEN}PINBALL POINT{COLOR DARK_GRAY}, and I'll give you a few random, rare POKé BALLs!\p Looks like you've got {STR_VAR_1} {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}. You in?"), MSGBOX_YESNO)
 	if(var(VAR_RESULT) == 0)
 	{
@@ -840,6 +844,10 @@ script MossdeepCity_GameCorner_RarePokemonVendor
 	lock
 	faceplayer
 	buffernumberstring(STR_VAR_1, VAR_PINBALL_POINTS)
+	if(var(VAR_PINBALL_POINTS) == 0)
+	{
+		bufferstring(STR_VAR_1, "0")
+	}
 	msgbox(format("Hey there. I'm a SAILOR between HOENN and ALOLA, so I sometimes come back with some special ALOLAN POKéMON eggs.\p Come to me with 2 {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}, and I'll give you one of my ALOLAN eggs.\p Looks like you've got {STR_VAR_1} {COLOR GREEN}PINBALL POINTS{COLOR DARK_GRAY}. You in?"), MSGBOX_YESNO)
 	if(var(VAR_RESULT) == 0)
 	{
