@@ -58,6 +58,7 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 Patch 2.0 Plans:
 - Hard mode harder?
+- PacoSaro's new battle backgrounds
 - Look at DNS branch in merrp's DNS discord thread in RHH discord?
     - MAKE COMMIT BEFORE MERGE! If it causes bugs just revert!
 

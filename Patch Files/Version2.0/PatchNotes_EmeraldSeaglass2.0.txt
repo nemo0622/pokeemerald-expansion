@@ -29,3 +29,4 @@ BUG FIXES:
 - Press "Start" leaves Pinball early
 	- On rare occasion where game totally bugs out, allows you to force-leave
 - Fixed Pinball Points number dialogue
+- Victory Road collision fix
