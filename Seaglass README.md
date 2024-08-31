@@ -58,7 +58,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 Patch 2.0 Plans:
 - Hard mode harder?
-- PacoSaro's new battle backgrounds
 - Look at DNS branch in merrp's DNS discord thread in RHH discord?
     - MAKE COMMIT BEFORE MERGE! If it causes bugs just revert!
 
@@ -114,6 +113,7 @@ Please support everyone who made this possible!
 - User Interface:
     - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
     - New battle backgrounds by Princess-Phoenix, Carchagui, and Aveontrainer on DeviantArt
+        - Modified to use fewer colors by PacoScarso
     - Option to disable battle backgrounds by Mudskip (thank you!)
 - Feature Branches and Other Ideas:
     - Huge thanks to the Rom Hacking Hideout and Team Aqua's Hideout communities
