@@ -19,6 +19,8 @@ BALANCE CHANGES:
 - Beating Juan (8th Gym) gives player Ice Beam, rather than Water Pulse
 
 BUG FIXES:
+- DEXNAV SHINY CHAINING FIXED!!! FINALLY!!!
+	- Calculation is complicated, but odds are notably higher than ORAS when hitting higher chains with the DexNav
 - Starter Pokémon should no longer be shiny locked!
 - Cycling through Stats/EVs/IVs by pressing A now has correctly colored stats based on nature
 - Roxanne switching Lileep for same Lileep *maybe* fixed, cannot replicate

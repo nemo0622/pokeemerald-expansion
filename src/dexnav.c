@@ -1280,7 +1280,7 @@ static void CreateDexNavWildMon(u16 species, u8 potential, u8 level, u8 abilityN
     u8 perfectIv = 31;
     
     if (DexNavTryMakeShinyMon())
-        FlagSet(FLAG_SHINY_CREATION); // just easier this way
+        FlagSet(FLAG_FORCE_SHINY_ENCOUNTER); // just easier this way
     
     CreateWildMon(species, level);  // shiny rate bonus handled in CreateBoxMon
     
@@ -1311,7 +1311,7 @@ static void CreateDexNavWildMon(u16 species, u8 potential, u8 level, u8 abilityN
         SetMonMoveSlot(mon, moves[i], i);
 
     CalculateMonStats(mon);
-    FlagClear(FLAG_SHINY_CREATION);
+    FlagClear(FLAG_FORCE_SHINY_ENCOUNTER);
 }
 
 // gets a random level of the species based on map data.
@@ -2763,7 +2763,9 @@ bool8 DexNavTryMakeShinyMon(void)
     #endif
     
     chainBonus = (chain == 50) ? 5 : (chain == 100) ? 10 : 0;
-    rndBonus = (Random() % 100 < 4 ? 4 : 0);
+    if(chain > 100)
+        chainBonus = 1;
+    rndBonus = (Random() % 100 < 8 ? 4 : 0);
     shinyRolls = 1 + charmBonus + chainBonus + rndBonus + 3;
 
     if (searchLevel > 200)
@@ -2789,6 +2791,7 @@ bool8 DexNavTryMakeShinyMon(void)
     }
     
     return FALSE;
+    // return TRUE;
 }
 
 void TryIncrementSpeciesSearchLevel(u16 dexNum)
