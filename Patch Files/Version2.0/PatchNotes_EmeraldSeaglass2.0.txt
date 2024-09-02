@@ -1,4 +1,8 @@
 MAJOR FEATURE CHANGES:
+- Mono-type Run Cheat Codes added:
+	- Gives a random, first-stage Pokémon of the type you choose
+	- Codes for each type are in documentation
+	- Also acts as a way to start with a random, unique "starter" Pokémon! :)
 - Shiny indicator added in battle!
 	- Adds "!!!" mark next to wild Pokémon name
 - EV/IV Stat Editor Implemented!
@@ -7,6 +11,10 @@ MAJOR FEATURE CHANGES:
 		- I know this is late, but that's the point! This is very overpowered lol
 - Cave and Water DexNav encounters no longer "move around"
 - Battle Backgrounds use fewer colors, fit game aesthetic better (thanks to PacoScarso!)
+- Press "Start" leaves Pinball early
+	- On rare occasion where game totally bugs out, allows you to force-leave
+- Option to disable K.O. animations in battle
+	- Can be enabled/disabled through book on Player's desk, enabled by default
 
 BALANCE CHANGES:
 - Absorb has 30 power, Mega Drain has 50 power
@@ -31,9 +39,9 @@ BUG FIXES:
 - Cycling Road no longer mentioned by trainer in Route 110
 - Maxie fight with Mossdeep should be fixed
 	- Removed multi-battle with Steven, instead just a double battle with Maxie
-- Press "Start" leaves Pinball early
-	- On rare occasion where game totally bugs out, allows you to force-leave
 - Fixed Pinball Points number dialogue
 - Victory Road collision fix
 - Petalburg Woods warp fix
 - Shiny Ralts fix
+- Fallarbor softlock fix
+- Typos fixed

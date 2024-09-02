@@ -11,6 +11,7 @@
 #include "battle_setup.h"
 #include "battle_tv.h"
 #include "cable_club.h"
+#include "event_data.h"
 #include "event_object_movement.h"
 #include "link.h"
 #include "link_rfu.h"
@@ -2631,7 +2632,7 @@ void BtlController_HandleFaintAnimation(u32 battler)
             // The player's sprite is removed in Controller_FaintPlayerMon. Controller_FaintOpponentMon only removes the healthbox once the sprite is removed by SpriteCB_FaintOpponentMon.
         }
     }
-    if(GetBattlerSide(battler) == B_SIDE_PLAYER && gBattleMons[BATTLE_OPPOSITE(battler)].hp > 0)
+    if((GetBattlerSide(battler) == B_SIDE_PLAYER && gBattleMons[BATTLE_OPPOSITE(battler)].hp > 0) && !FlagGet(FLAG_DISABLE_BATTLE_KO_ANIMS))
     {
         LaunchAnimationTaskForFrontSprite(&gSprites[gBattlerSpriteIds[BATTLE_OPPOSITE(battler)]], gSpeciesInfo[gBattleMons[BATTLE_OPPOSITE(battler)].species].frontAnimId);
         PlayCry_Normal(gBattleMons[BATTLE_OPPOSITE(battler)].species, CRY_PRIORITY_NORMAL);
@@ -2648,7 +2649,7 @@ void BtlController_HandleFaintAnimation(u32 battler)
             }
         }
     }
-    else if(GetBattlerSide(battler) == B_SIDE_OPPONENT && gBattleMons[BATTLE_OPPOSITE(battler)].hp > 0)
+    else if((GetBattlerSide(battler) == B_SIDE_OPPONENT && gBattleMons[BATTLE_OPPOSITE(battler)].hp > 0) && !FlagGet(FLAG_DISABLE_BATTLE_KO_ANIMS))
     {
         LaunchAnimationTaskForBackSprite(&gSprites[gBattlerSpriteIds[BATTLE_OPPOSITE(battler)]], gSpeciesInfo[gBattleMons[BATTLE_OPPOSITE(battler)].species].backAnimId - 1);
         PlayCry_Normal(gBattleMons[BATTLE_OPPOSITE(battler)].species, CRY_PRIORITY_NORMAL);

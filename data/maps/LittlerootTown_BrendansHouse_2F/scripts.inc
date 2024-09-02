@@ -653,10 +653,22 @@ PlayersHouse_2F_SettingsNotebook_9:
 # 351 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
 # 353 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	msgbox PlayersHouse_2F_SettingsNotebook_Text_10
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_10, MSGBOX_YESNO
 # 354 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq PlayersHouse_2F_SettingsNotebook_14
+# 361 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	setflag FLAG_DISABLE_BATTLE_KO_ANIMS
+# 362 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_12
+PlayersHouse_2F_SettingsNotebook_13:
+# 364 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
-# 355 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 366 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_13
+# 367 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	closemessage
+# 368 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	release
 	end
 
@@ -680,6 +692,13 @@ PlayersHouse_2F_SettingsNotebook_10:
 # 344 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	msgbox PlayersHouse_2F_SettingsNotebook_Text_8
 	goto PlayersHouse_2F_SettingsNotebook_9
+
+PlayersHouse_2F_SettingsNotebook_14:
+# 356 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	clearflag FLAG_DISABLE_BATTLE_KO_ANIMS
+# 357 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	msgbox PlayersHouse_2F_SettingsNotebook_Text_11
+	goto PlayersHouse_2F_SettingsNotebook_13
 
 
 PlayersHouse_2F_SettingsNotebook_Text_0:
@@ -730,5 +749,20 @@ PlayersHouse_2F_SettingsNotebook_Text_9:
 
 PlayersHouse_2F_SettingsNotebook_Text_10:
 # 353 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "Should {COLOR GREEN}K.O. ANIMATIONS{COLOR DARK_GRAY} be enabled?\n"
+	.string "(ENABLED by default.)\l"
+	.string "K.O. Animations make Pokémon animate\l"
+	.string "when knocking out an opponent.$"
+
+PlayersHouse_2F_SettingsNotebook_Text_11:
+# 357 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "K.O. ANIMATIONS {COLOR GREEN}ENABLED{COLOR DARK_GRAY}!$"
+
+PlayersHouse_2F_SettingsNotebook_Text_12:
+# 362 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	.string "K.O. ANIMATIONS {COLOR RED}DISABLED{COLOR DARK_GRAY}!$"
+
+PlayersHouse_2F_SettingsNotebook_Text_13:
+# 366 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "Looks like the rest of the book is\n"
 	.string "empty. Time to go!$"

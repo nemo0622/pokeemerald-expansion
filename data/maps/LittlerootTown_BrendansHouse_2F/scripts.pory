@@ -350,6 +350,19 @@ script PlayersHouse_2F_SettingsNotebook
 	}
 	closemessage
 
+	msgbox(format("Should {COLOR GREEN}K.O. ANIMATIONS{COLOR DARK_GRAY} be enabled?\N (ENABLED by default.)\N K.O. Animations make Pokémon animate when knocking out an opponent."), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 1) // said yes
+	{
+		clearflag(FLAG_DISABLE_BATTLE_KO_ANIMS)
+		msgbox(format("K.O. ANIMATIONS {COLOR GREEN}ENABLED{COLOR DARK_GRAY}!"))
+	}
+	else
+	{
+		setflag(FLAG_DISABLE_BATTLE_KO_ANIMS)
+		msgbox(format("K.O. ANIMATIONS {COLOR RED}DISABLED{COLOR DARK_GRAY}!"))
+	}
+	closemessage
+
 	msgbox(format("Looks like the rest of the book is empty. Time to go!"))
 	closemessage
 	release

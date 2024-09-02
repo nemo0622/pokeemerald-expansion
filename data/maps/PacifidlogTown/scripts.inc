@@ -1251,7 +1251,7 @@ PacifidlogTown_EventScript_MinigameParticipant_LittleGirl_Text_0:
 PacifidlogTown_EventScript_MinigameParticipant_TriatheleteM_Text_0:
 # 153 "data/maps/PacifidlogTown/scripts.pory"
 	.string "TAONGA: Huff huff... Gotta train...\n"
-	.string "PACIFIDLOG TOWN honors it's seafaring\l"
+	.string "PACIFIDLOG TOWN honors its seafaring\l"
 	.string "roots through the SCUBA SAFARI\l"
 	.string "competition! I need to do my best!$"
 
