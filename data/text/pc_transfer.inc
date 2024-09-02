@@ -4,6 +4,10 @@ gText_PkmnTransferredSomeonesPC::
 	.string "It was placed in \n"
 	.string "BOX “{STR_VAR_1}.”$"
 
+gText_PkmnTransferredPC_MysteryGift::
+	.string "The POKéMON was transferred to\n"
+	.string "the PC.$"
+
 gText_PkmnTransferredLanettesPC::
 	.string "{STR_VAR_2} was transferred to\n"
 	.string "LANETTE'S PC.\p"
@@ -24,8 +28,8 @@ gText_PkmnTransferredLanettesPCBoxFull::
 
 gText_NoMoreRoomForPokemon::
 	.string "There's no more room for POKéMON!\p"
-	.string "The POKéMON BOXES are full and\n"
-	.string "can't accept any more!$"
+	.string "Remove some PARTY POKéMON and\n"
+	.string "try again later.$"
 
 gText_NicknameThisPokemon::
 	.string "Do you want to give a nickname to\n"

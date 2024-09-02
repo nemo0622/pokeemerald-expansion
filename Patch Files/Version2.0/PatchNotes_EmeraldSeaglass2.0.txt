@@ -17,6 +17,8 @@ BALANCE CHANGES:
 - Typhlosion -> Fire/Ground type
 - Feraligatr -> Water/Dark type
 - Beating Juan (8th Gym) gives player Ice Beam, rather than Water Pulse
+- Pokémon disobedience removed (potentially caused problems with gift/cheat Pokémon lol)
+- Ekans now Poison/Dark type just like Arbok
 
 BUG FIXES:
 - DEXNAV SHINY CHAINING FIXED!!! FINALLY!!! (I think!)

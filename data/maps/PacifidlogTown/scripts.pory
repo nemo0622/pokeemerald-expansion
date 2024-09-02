@@ -150,7 +150,7 @@ script PacifidlogTown_EventScript_MinigameParticipant_TriatheleteM
 {
 	lock
 	faceplayer
-	msgbox(format("TAONGA: Huff huff... Gotta train...\N PACIFIDLOG TOWN honors it's seafaring roots through the SCUBA SAFARI competition! I need to do my best!"))
+	msgbox(format("TAONGA: Huff huff... Gotta train...\N PACIFIDLOG TOWN honors its seafaring roots through the SCUBA SAFARI competition! I need to do my best!"))
 	closemessage
 	applymovement(7, Common_Movement_FaceOriginalDirection)
 	waitmovement(0)

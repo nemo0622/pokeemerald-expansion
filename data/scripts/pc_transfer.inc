@@ -13,6 +13,10 @@ Common_EventScript_NameReceivedBoxMon::
 	faceplayer
 	return
 
+Common_EventScript_TransferredToPC_MysteryGift::
+	msgbox gText_PkmnTransferredPC_MysteryGift, MSGBOX_DEFAULT
+	return
+
 Common_EventScript_TransferredToPC::
 	bufferboxname STR_VAR_1, VAR_PC_BOX_TO_SEND_MON
 	bufferspeciesname STR_VAR_2, VAR_TEMP_TRANSFERRED_SPECIES
