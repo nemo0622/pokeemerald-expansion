@@ -19,7 +19,7 @@ BALANCE CHANGES:
 - Beating Juan (8th Gym) gives player Ice Beam, rather than Water Pulse
 
 BUG FIXES:
-- DEXNAV SHINY CHAINING FIXED!!! FINALLY!!!
+- DEXNAV SHINY CHAINING FIXED!!! FINALLY!!! (I think!)
 	- Calculation is complicated, but odds are notably higher than ORAS when hitting higher chains with the DexNav
 - Starter Pokémon should no longer be shiny locked!
 - Cycling through Stats/EVs/IVs by pressing A now has correctly colored stats based on nature
@@ -33,3 +33,5 @@ BUG FIXES:
 	- On rare occasion where game totally bugs out, allows you to force-leave
 - Fixed Pinball Points number dialogue
 - Victory Road collision fix
+- Petalburg Woods warp fix
+- Shiny Ralts fix
