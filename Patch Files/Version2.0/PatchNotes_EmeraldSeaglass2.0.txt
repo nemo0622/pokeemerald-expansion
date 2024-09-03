@@ -1,4 +1,6 @@
 MAJOR FEATURE CHANGES:
+- Battle Tent is BACK!! The bugs have finally been squashed!
+	- Also brings back Battle Factory, making Battle Frontier FULLY FUNCTIONAL!
 - Mono-type Run Cheat Codes added:
 	- Gives a random, first-stage Pokémon of the type you choose
 	- Codes for each type are in documentation
@@ -27,6 +29,7 @@ BALANCE CHANGES:
 - Beating Juan (8th Gym) gives player Ice Beam, rather than Water Pulse
 - Pokémon disobedience removed (potentially caused problems with gift/cheat Pokémon lol)
 - Ekans now Poison/Dark type just like Arbok
+- Magmarizer in Jagged Pass, Electirizer in new Mauville
 
 BUG FIXES:
 - DEXNAV SHINY CHAINING FIXED!!! FINALLY!!! (I think!)

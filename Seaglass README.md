@@ -72,14 +72,13 @@ Later Additions (After Release 1.0):
 ## KNOWN BUGS & PROBLEMS
 
 - MAJOR ISSUES:
-    - Battle Tent is currently disabled - Rent Pokémon become BAD EGG and other stuff is busted
-        - For now, the building is just blocked off by an NPC
-- Visuals Issues:
-    - Battle Frontier buildings mostly use vanilla Emerald tiles, which don't match the aesthetic of the rest of the game
     - Graphics flicker after every turn in battle
         - This is semi-intentional! Resetting the graphics prevents many freezes and move animation problems.
         - Move animations rarely, but occasionally, bug out for a turn. Should be rare and hard to replicate, but still possible
+- Visuals Issues:
+    - Battle Frontier buildings use mix of GBC and GBA style tiles
     - PP number text is yellow when learning new move
+    - Swinub and Piloswine followers are sort of broken, displaying odd color palettes
 - Other issues:
     - Pinball physics are far from perfect, but tbh I think that adds to the charm lol
 

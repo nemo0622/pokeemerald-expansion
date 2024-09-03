@@ -337,7 +337,7 @@ script PlayersHouse_2F_SettingsNotebook
 	}
 	closemessage
 
-	msgbox(format("Should {COLOR RED}HARD MODE{COLOR DARK_GRAY} be enabled?\N (DISABLED by default.)\N HARD MODE increases opposing POKéMON levels by more as you progress."), MSGBOX_YESNO)
+	msgbox(format("Should {COLOR RED}HARD MODE{COLOR DARK_GRAY} be enabled?\N (DISABLED by default.)\N HARD MODE increases opposing POKéMON levels by more as you progress, forcing SET mode, "), MSGBOX_YESNO)
 	if(var(VAR_RESULT) == 1) // said yes
 	{
 		setvar(VAR_DIFFICULTY, 1) // sets difficulty to hard (VAR_DIFFICULTY is defined as 1)

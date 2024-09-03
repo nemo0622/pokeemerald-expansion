@@ -2991,7 +2991,14 @@ static void ClearSetBScriptingStruct(void)
     memset(&gBattleScripting, 0, sizeof(gBattleScripting));
 
     gBattleScripting.windowsType = temp;
-    gBattleScripting.battleStyle = gSaveBlock2Ptr->optionsBattleStyle;
+    if(VarGet(VAR_DIFFICULTY) == 1)
+    {
+        gBattleScripting.battleStyle = 1; // hard mode, forced set mode
+    }
+    else
+    {
+        gBattleScripting.battleStyle = gSaveBlock2Ptr->optionsBattleStyle;
+    }
     gBattleScripting.expOnCatch = (B_EXP_CATCH >= GEN_6);
     gBattleScripting.specialTrainerBattleType = specialBattleType;
 }
