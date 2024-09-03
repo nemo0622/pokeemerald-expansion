@@ -9371,6 +9371,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (IS_MOVE_PHYSICAL(move))
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
+    case HOLD_EFFECT_EVIOLITE:
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.1));
     case HOLD_EFFECT_WISE_GLASSES:
         if (IS_MOVE_SPECIAL(move))
             modifier = uq4_12_multiply(modifier, holdEffectModifier);

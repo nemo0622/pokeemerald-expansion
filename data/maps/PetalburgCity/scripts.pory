@@ -924,6 +924,7 @@ mart PetalburgCity_Mart_PedroBadge7
 	ITEM_ROCKY_HELMET
 	ITEM_HEART_SCALE
 	ITEM_PP_UP
+	ITEM_EVIOLITE
 }
 
 mart PetalburgCity_Mart_PedroBadge8
@@ -937,6 +938,7 @@ mart PetalburgCity_Mart_PedroBadge8
 	ITEM_HEART_SCALE
 	ITEM_PP_UP
 	ITEM_PP_MAX
+	ITEM_EVIOLITE
 }
 
 mart PetalburgCity_Mart_PedroChamp
@@ -951,6 +953,7 @@ mart PetalburgCity_Mart_PedroChamp
 	ITEM_HEART_SCALE
 	ITEM_PP_UP
 	ITEM_PP_MAX
+	ITEM_EVIOLITE
 }
 
 script PetalburgCity_EventScript_MerchantBrotherRight

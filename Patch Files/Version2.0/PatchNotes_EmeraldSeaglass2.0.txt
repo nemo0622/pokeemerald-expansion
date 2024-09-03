@@ -30,6 +30,8 @@ BALANCE CHANGES:
 - Pokémon disobedience removed (potentially caused problems with gift/cheat Pokémon lol)
 - Ekans now Poison/Dark type just like Arbok
 - Magmarizer in Jagged Pass, Electirizer in new Mauville
+- Eviolite now prevents evolution (like Everstone) and very slightly boosts attacking power
+	- Can be won from Scuba Safari in Pacifidlog, found in random Rare Item Exchange in the Mossdeep Game Corner, or bought in Petalburg after Gym 7
 
 BUG FIXES:
 - DEXNAV SHINY CHAINING FIXED!!! FINALLY!!! (I think!)
@@ -37,6 +39,7 @@ BUG FIXES:
 - Starter Pokémon should no longer be shiny locked!
 - Cycling through Stats/EVs/IVs by pressing A now has correctly colored stats based on nature
 - Roxanne switching Lileep for same Lileep *maybe* fixed, cannot replicate
+	- Included in this fix, many stupid/annoying constant switching loops should be fixed
 - Followers no longer invisible after "Too dark" DexNav message in caves
 - DexNav cave dust effect no longer bugs out and disappears (replaced with new graphic)
 - Cycling Road no longer mentioned by trainer in Route 110
@@ -48,3 +51,4 @@ BUG FIXES:
 - Shiny Ralts fix
 - Fallarbor softlock fix
 - Typos fixed
+- Not a bug, but I replaced the Feraligatr sprite with the beta one :)
