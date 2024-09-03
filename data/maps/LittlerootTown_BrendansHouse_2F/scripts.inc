@@ -737,7 +737,8 @@ PlayersHouse_2F_SettingsNotebook_Text_7:
 	.string "Should {COLOR RED}HARD MODE{COLOR DARK_GRAY} be enabled?\n"
 	.string "(DISABLED by default.)\l"
 	.string "HARD MODE increases opposing POKéMON\l"
-	.string "levels by more as you progress.$"
+	.string "levels by more as you progress and\l"
+	.string "forces SET mode.$"
 
 PlayersHouse_2F_SettingsNotebook_Text_8:
 # 344 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
