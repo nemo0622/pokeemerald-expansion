@@ -42,6 +42,7 @@ BUG FIXES:
 	- Included in this fix, many stupid/annoying constant switching loops should be fixed
 - Followers no longer invisible after "Too dark" DexNav message in caves
 - DexNav cave dust effect no longer bugs out and disappears (replaced with new graphic)
+	- Also seems to fix some DexNav stability problems in caves in general
 - Cycling Road no longer mentioned by trainer in Route 110
 - Maxie fight with Mossdeep should be fixed
 	- Removed multi-battle with Steven, instead just a double battle with Maxie

@@ -447,7 +447,7 @@ void BattleSetup_StartWildBattle(void)
 {
     if (GetSafariZoneFlag())
         DoSafariBattle();
-    if (FlagGet(FLAG_DOING_DIVING_MINIGAME) == TRUE)
+    else if (FlagGet(FLAG_DOING_DIVING_MINIGAME) == TRUE)
         DoDivingMinigameBattle();
     else
         DoStandardWildBattle(FALSE);

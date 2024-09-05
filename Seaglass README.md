@@ -75,6 +75,7 @@ Later Additions (After Release 1.0):
     - Graphics flicker after every turn in battle
         - This is semi-intentional! Resetting the graphics prevents many freezes and move animation problems.
         - Move animations rarely, but occasionally, bug out for a turn. Should be rare and hard to replicate, but still possible
+    - Safari Zone is broken - battles function as regular wild battles
 - Visuals Issues:
     - Battle Frontier buildings use mix of GBC and GBA style tiles
     - PP number text is yellow when learning new move

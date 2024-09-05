@@ -165,98 +165,106 @@ Route121_SafariZoneEntrance_EventScript_TryEnterSafariZone::
 # 83 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
 
 # 84 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-Route121_SafariZoneEntrance_EventScript_CheckHasRoomForPokemon::
+Route121_SafariZoneEntrance_EventScript_SetSafariMode::
 # 85 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	getpartysize
+	special EnterSafariMode
 # 86 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	goto_if_ne VAR_RESULT, PARTY_SIZE, Route121_SafariZoneEntrance_EventScript_HasRoomForPokemon
+	end
 # 87 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	specialvar VAR_RESULT, ScriptCheckFreePokemonStorageSpace
+
 # 88 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	goto_if_eq VAR_RESULT, 1, Route121_SafariZoneEntrance_EventScript_HasRoomForPokemon
+Route121_SafariZoneEntrance_EventScript_CheckHasRoomForPokemon::
 # 89 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	msgbox Route121_SafariZoneEntrance_Text_PCIsFull, MSGBOX_DEFAULT
+	getpartysize
 # 90 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	goto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
+	goto_if_ne VAR_RESULT, PARTY_SIZE, Route121_SafariZoneEntrance_EventScript_HasRoomForPokemon
 # 91 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	end
+	specialvar VAR_RESULT, ScriptCheckFreePokemonStorageSpace
 # 92 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-
+	goto_if_eq VAR_RESULT, 1, Route121_SafariZoneEntrance_EventScript_HasRoomForPokemon
 # 93 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-Route121_SafariZoneEntrance_EventScript_HasRoomForPokemon::
+	msgbox Route121_SafariZoneEntrance_Text_PCIsFull, MSGBOX_DEFAULT
 # 94 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	return
+	goto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
 # 95 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-
+	end
 # 96 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-Route121_SafariZoneEntrance_EventScript_NoPokeblockCase::
+
 # 97 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	msgbox Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase, MSGBOX_DEFAULT
+Route121_SafariZoneEntrance_EventScript_HasRoomForPokemon::
 # 98 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	goto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
+	return
 # 99 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	end
+
 # 100 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-
+Route121_SafariZoneEntrance_EventScript_NoPokeblockCase::
 # 101 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-Route121_SafariZoneEntrance_EventScript_NotEnoughMoney::
+	msgbox Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase, MSGBOX_DEFAULT
 # 102 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	msgbox Route121_SafariZoneEntrance_Text_NotEnoughMoney, MSGBOX_DEFAULT
-# 103 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
 	goto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
+# 103 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
+	end
 # 104 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	end
+
 # 105 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-
+Route121_SafariZoneEntrance_EventScript_NotEnoughMoney::
 # 106 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter::
+	msgbox Route121_SafariZoneEntrance_Text_NotEnoughMoney, MSGBOX_DEFAULT
 # 107 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	closemessage
+	goto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
 # 108 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	hidemoneybox
-# 109 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route121_SafariZoneEntrance_Movement_BackAwayFromCounter
-# 110 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	waitmovement 0
-# 111 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	releaseall
-# 112 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
 	end
-# 113 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
+# 109 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
 
+# 110 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
+Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter::
+# 111 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
+	closemessage
+# 112 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
+	hidemoneybox
+# 113 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route121_SafariZoneEntrance_Movement_BackAwayFromCounter
 # 114 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-Route121_SafariZoneEntrance_Movement_BackAwayFromCounter:
+	waitmovement 0
 # 115 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	walk_right
+	releaseall
 # 116 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	step_end
+	end
 # 117 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
 
 # 118 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-Route121_SafariZoneEntrance_Movement_EnterSafariZone:
+Route121_SafariZoneEntrance_Movement_BackAwayFromCounter:
 # 119 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	walk_left
+	walk_right
 # 120 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	walk_left
+	step_end
 # 121 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	walk_left
+
 # 122 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	walk_left
+Route121_SafariZoneEntrance_Movement_EnterSafariZone:
 # 123 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
 	walk_left
 # 124 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
 	walk_left
 # 125 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	walk_down
+	walk_left
 # 126 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	delay_16
+	walk_left
 # 127 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	step_end
+	walk_left
 # 128 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-
+	walk_left
 # 129 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-Route121_SafariZoneEntrance_EventScript_TrainerTipSign::
+	walk_down
 # 130 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
-	msgbox Route121_SafariZoneEntrance_Text_TrainerTip, MSGBOX_SIGN
+	delay_16
 # 131 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
+	step_end
+# 132 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
+
+# 133 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
+Route121_SafariZoneEntrance_EventScript_TrainerTipSign::
+# 134 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
+	msgbox Route121_SafariZoneEntrance_Text_TrainerTip, MSGBOX_SIGN
+# 135 "data/maps/Route121_SafariZoneEntrance/scripts.pory"
 	end
