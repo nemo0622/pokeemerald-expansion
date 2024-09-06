@@ -109,6 +109,7 @@ Please support everyone who made this possible!
     - SageDeoxys: Wyrdeer
     - .kedoshim: Ursaluna
     - Mudskip: Applin
+    - DarkusShadow: base Tinkaton line sprites (GBA style)
     - Many others by resource from Mano_Emet on Discord (could not find origin, need to find + credit artists)
 - User Interface:
     - Party menu Pokémon icons by EeVeeEe1999 on DeviantArt (Gen 3 icons) and Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)

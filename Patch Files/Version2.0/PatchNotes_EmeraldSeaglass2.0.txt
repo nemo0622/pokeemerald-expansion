@@ -53,3 +53,4 @@ BUG FIXES:
 - Fallarbor softlock fix
 - Typos fixed
 - Not a bug, but I replaced the Feraligatr sprite with the beta one :)
+- Sootopolis water tile bug should be fixed?

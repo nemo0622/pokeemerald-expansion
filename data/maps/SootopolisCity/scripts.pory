@@ -591,30 +591,30 @@ SootopolisCity_EventScript_RayquazaSceneFromDive::
 	end
 
 SootopolisCity_EventScript_SetRoughWater::
-	setmetatile 27, 43, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 28, 43, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 29, 43, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 30, 43, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 27, 44, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 28, 44, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 29, 44, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 30, 44, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 27, 45, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 28, 45, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 29, 45, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 30, 45, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 32, 43, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 33, 43, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 34, 43, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 35, 43, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 32, 44, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 33, 44, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 34, 44, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 35, 44, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 32, 45, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 33, 45, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 34, 45, METATILE_Sootopolis_RoughWater, FALSE
-	setmetatile 35, 45, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 27, 43, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 28, 43, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 29, 43, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 30, 43, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 27, 44, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 28, 44, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 29, 44, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 30, 44, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 27, 45, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 28, 45, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 29, 45, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 30, 45, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 32, 43, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 33, 43, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 34, 43, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 35, 43, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 32, 44, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 33, 44, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 34, 44, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 35, 44, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 32, 45, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 33, 45, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 34, 45, METATILE_General_ReflectiveWater, FALSE
+	setmetatile 35, 45, METATILE_General_ReflectiveWater, FALSE
 	return
 
 SootopolisCity_Movement_RayquazaFlyOff:

@@ -1185,53 +1185,53 @@ SootopolisCity_EventScript_RayquazaSceneFromDive::
 # 593 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_EventScript_SetRoughWater::
 # 594 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 27, 43, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 27, 43, METATILE_General_ReflectiveWater, FALSE
 # 595 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 28, 43, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 28, 43, METATILE_General_ReflectiveWater, FALSE
 # 596 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 29, 43, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 29, 43, METATILE_General_ReflectiveWater, FALSE
 # 597 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 30, 43, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 30, 43, METATILE_General_ReflectiveWater, FALSE
 # 598 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 27, 44, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 27, 44, METATILE_General_ReflectiveWater, FALSE
 # 599 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 28, 44, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 28, 44, METATILE_General_ReflectiveWater, FALSE
 # 600 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 29, 44, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 29, 44, METATILE_General_ReflectiveWater, FALSE
 # 601 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 30, 44, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 30, 44, METATILE_General_ReflectiveWater, FALSE
 # 602 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 27, 45, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 27, 45, METATILE_General_ReflectiveWater, FALSE
 # 603 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 28, 45, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 28, 45, METATILE_General_ReflectiveWater, FALSE
 # 604 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 29, 45, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 29, 45, METATILE_General_ReflectiveWater, FALSE
 # 605 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 30, 45, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 30, 45, METATILE_General_ReflectiveWater, FALSE
 # 606 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 32, 43, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 32, 43, METATILE_General_ReflectiveWater, FALSE
 # 607 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 33, 43, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 33, 43, METATILE_General_ReflectiveWater, FALSE
 # 608 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 34, 43, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 34, 43, METATILE_General_ReflectiveWater, FALSE
 # 609 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 35, 43, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 35, 43, METATILE_General_ReflectiveWater, FALSE
 # 610 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 32, 44, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 32, 44, METATILE_General_ReflectiveWater, FALSE
 # 611 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 33, 44, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 33, 44, METATILE_General_ReflectiveWater, FALSE
 # 612 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 34, 44, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 34, 44, METATILE_General_ReflectiveWater, FALSE
 # 613 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 35, 44, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 35, 44, METATILE_General_ReflectiveWater, FALSE
 # 614 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 32, 45, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 32, 45, METATILE_General_ReflectiveWater, FALSE
 # 615 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 33, 45, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 33, 45, METATILE_General_ReflectiveWater, FALSE
 # 616 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 34, 45, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 34, 45, METATILE_General_ReflectiveWater, FALSE
 # 617 "data/maps/SootopolisCity/scripts.pory"
-	setmetatile 35, 45, METATILE_Sootopolis_RoughWater, FALSE
+	setmetatile 35, 45, METATILE_General_ReflectiveWater, FALSE
 # 618 "data/maps/SootopolisCity/scripts.pory"
 	return
 # 619 "data/maps/SootopolisCity/scripts.pory"
