@@ -56,11 +56,6 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 ## FUTURE PLANS
 
-Patch 2.0 Plans:
-- Hard mode harder?
-- Look at DNS branch in merrp's DNS discord thread in RHH discord?
-    - MAKE COMMIT BEFORE MERGE! If it causes bugs just revert!
-
 Later Additions (After Release 1.0):
 - Proper Steven NPC sprite
 - Music modding with MIDI files:
