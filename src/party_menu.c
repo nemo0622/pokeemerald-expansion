@@ -45,6 +45,7 @@
 #include "palette.h"
 #include "party_menu.h"
 #include "player_pc.h"
+#include "pokedex_plus_hgss.h"
 #include "pokemon.h"
 #include "pokemon_icon.h"
 #include "pokemon_jump.h"
@@ -106,6 +107,7 @@ enum {
     MENU_CATALOG_MOWER,
     MENU_CHANGE_FORM,
     MENU_CHANGE_ABILITY,
+    MENU_POKEDEX,
     MENU_FIELD_MOVES
 };
 
@@ -509,6 +511,7 @@ static bool8 SetUpFieldMove_Dive(void);
 void TryItemHoldFormChange(struct Pokemon *mon);
 static void ShowMoveSelectWindow(u8 slot);
 static void Task_HandleWhichMoveInput(u8 taskId);
+static void CursorCb_Pokedex(u8 taskId);
 
 // static const data
 #include "data/party_menu.h"
@@ -2802,6 +2805,9 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
 
+    if(FlagGet(FLAG_SYS_POKEDEX_GET))
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_POKEDEX);
+
     // Add field moves to action list if it's a known move
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
@@ -2816,7 +2822,7 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     }
 
     // Add field moves to list based on learnsets
-    if(sPartyMenuInternal->numActions < 5)
+    if(sPartyMenuInternal->numActions < 4)
     {
         // +0 = CUT, +1 = FLASH, +2 = ROCK_SMASH, +3 = STRENGTH, +4 = SURF, +5 = FLY, +6 = DIVE, +7 = WATERFALL, +8 = TELEPORT,
         // +9 = DIG, +10 = SECRET_POWER, +11 = MILK_DRINK, +12 = SOFT_BOILED, +13 = SWEET_SCENT
@@ -7835,4 +7841,13 @@ void IsLastMonThatKnowsSurf(void)
         if (AnyStorageMonWithMove(move) != TRUE)
             gSpecialVar_Result = !P_CAN_FORGET_HIDDEN_MOVE;
     }
+}
+
+static void CursorCb_Pokedex(u8 taskId)
+{
+    gSpeciesToLoad = GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_SPECIES);
+
+    PlaySE(SE_SELECT);
+    sPartyMenuInternal->exitCallback = CB2_OpenPokedexPlusHGSS;
+    Task_ClosePartyMenu(taskId);
 }
