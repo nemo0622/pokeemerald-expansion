@@ -1,6 +1,7 @@
 MAJOR FEATURE CHANGES:
 - Battle Tent is BACK!! The bugs have finally been squashed!
 	- Also brings back Battle Factory, making Battle Frontier FULLY FUNCTIONAL!
+- All Pokémon now have followers! (Added Annihilape, Farigiraf, Dundunsparce, and Tinkaton line)
 - Mono-type Run Cheat Codes added:
 	- Gives a random, first-stage Pokémon of the type you choose
 	- Codes for each type are in documentation
@@ -31,7 +32,8 @@ BALANCE CHANGES:
 - Ekans now Poison/Dark type just like Arbok
 - Magmarizer in Jagged Pass, Electirizer in new Mauville
 - Eviolite now prevents evolution (like Everstone) and very slightly boosts attacking power
-	- Can be won from Scuba Safari in Pacifidlog, found in random Rare Item Exchange in the Mossdeep Game Corner, or bought in Petalburg after Gym 7
+- Loaded Dice and Toxic Orb available from Pedro in Petalburg after Gym 7
+- Eviolite and Flame Orb available from Pedro in Petalburg after Gym 6
 
 BUG FIXES:
 - DEXNAV SHINY CHAINING FIXED!!! FINALLY!!! (I think!)

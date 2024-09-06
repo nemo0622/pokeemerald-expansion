@@ -56,6 +56,9 @@ Pokémon Emerald Seaglass is a complete visual overhaul of Pokémon Emerald, con
 
 ## FUTURE PLANS
 
+TEST FOR NEW PATCH:
+- Press START in summary screen to open Pokédex?
+
 Later Additions (After Release 1.0):
 - Proper Steven NPC sprite
 - Music modding with MIDI files:

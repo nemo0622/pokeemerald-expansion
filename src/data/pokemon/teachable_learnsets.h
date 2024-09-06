@@ -10236,6 +10236,7 @@ static const u16 sYanmaTeachableLearnset[] = {
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
     MOVE_FLASH,
+    MOVE_FLY,
     MOVE_GIGA_DRAIN,
     MOVE_PROTECT,
     MOVE_PSYCHIC,
