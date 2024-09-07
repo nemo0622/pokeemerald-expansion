@@ -2597,9 +2597,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_POISON_PUPPETEER] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Poison Puppeteer"),
+        .name = _("Nasty Surprise"),
     #else
-        .name = _("PoisnPuppter"),
+        .name = _("NastyPrize"),
     #endif
         .description = COMPOUND_STRING("Confuses poisoned foes."),
         .aiRating = 8,

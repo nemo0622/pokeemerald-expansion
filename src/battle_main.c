@@ -5508,6 +5508,8 @@ static void HandleEndTurn_FinishBattle(void)
 {
     u32 i, battler;
 
+    // ResetSpriteData();
+
     if (gCurrentActionFuncId == B_ACTION_TRY_FINISH || gCurrentActionFuncId == B_ACTION_FINISHED)
     {
         if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK
@@ -5561,8 +5563,8 @@ static void HandleEndTurn_FinishBattle(void)
         // Undo Dynamax HP multiplier before recalculating stats.
         for (battler = 0; battler < gBattlersCount; ++battler)
         {
-            // if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX)
-            //     UndoDynamax(battler);
+            if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX)
+                UndoDynamax(battler);
         }
 
         for (i = 0; i < PARTY_SIZE; i++)

@@ -1103,6 +1103,9 @@ static bool32 SelectMatchCallTrainer(void)
     if (numRegistered == 0)
         return FALSE;
 
+    if(FlagGet(FLAG_SYS_DEXNAV_SEARCH))
+        return FALSE;
+
     sMatchCallState.trainerId = GetActiveMatchCallTrainerId(Random() % numRegistered);
     sMatchCallState.triggeredFromScript = FALSE;
     if (sMatchCallState.trainerId == REMATCH_TABLE_ENTRIES)

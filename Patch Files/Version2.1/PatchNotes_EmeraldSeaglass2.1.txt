@@ -1,0 +1,12 @@
+MAJOR FEATURE CHANGES:
+- Open Pokédex page for Pokémon from Party Menu! (Credit to RavePossum for the help!)
+	- Allows quick info about movesets, stats, etc.
+- Match Calls no longer happen while DexNav is active
+
+BALANCE CHANGES:
+- Paras/Parasect and Breloom now learn False Swipe
+- Blastoise is now Water/Steel type
+- Hypno is now Psychic/Dark type with new ability "Nasty Surprise", which confuses poisoned foes
+
+BUG FIXES:
+- 
