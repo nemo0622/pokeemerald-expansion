@@ -4284,7 +4284,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 60,
         .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
+        .types = MON_TYPES(TYPE_STEEL, TYPE_DRAGON),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 265,
@@ -9351,7 +9351,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 57,
         .baseSpAttack  = 94,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 170 : 178,
         .evYield_Attack = 1,
@@ -9407,13 +9407,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_GOREBYSS] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 84,
+        .baseHP        = 75,
+        .baseAttack    = 74,
         .baseDefense   = 105,
         .baseSpeed     = 52,
         .baseSpAttack  = 114,
         .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 170 : 178,
         .evYield_SpAttack = 2,

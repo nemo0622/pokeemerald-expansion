@@ -2,11 +2,17 @@ MAJOR FEATURE CHANGES:
 - Open Pokédex page for Pokémon from Party Menu! (Credit to RavePossum for the help!)
 	- Allows quick info about movesets, stats, etc.
 - Match Calls no longer happen while DexNav is active
+- Many new GBC-style item icons by _glados11388!
+	- Ongoing process, many items still in GBA style, but still a good step
 
 BALANCE CHANGES:
 - Paras/Parasect and Breloom now learn False Swipe
 - Blastoise is now Water/Steel type
 - Hypno is now Psychic/Dark type with new ability "Nasty Surprise", which confuses poisoned foes
+- Aggron is Steel/Dragon type
+- Huntail is Water/Dragon type, Gorebyss is Water/Fairy type
+(Note that most type changes also come with stat and moveset updates to match!)
+- Wide Lens now found on Route 120 (replaces Net Ball near water near Fortree)
 
 BUG FIXES:
-- 
+- Fixed Player Pokémon being overlayed with player at end of battle (sorry about that!)
