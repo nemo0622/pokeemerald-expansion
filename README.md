@@ -49,4 +49,4 @@ Pokémon: Ecology Version is a ROM Hack coming from my love for real-world anima
 -
 
 ## Credits
-- Day/Night System created by merrp, and updated to pokeemerald-expansion by Greenphx9
+- Day/Night System created by merrp, and updated to pokeemerald-expansion by Greenphx9 
