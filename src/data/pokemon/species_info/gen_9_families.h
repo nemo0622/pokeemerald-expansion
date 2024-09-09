@@ -6232,6 +6232,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_WoChien
         )
         .isLegendary = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sWoChienLevelUpLearnset,
         .teachableLearnset = sWoChienTeachableLearnset,
     },
@@ -6295,6 +6296,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_ChienPao
         )
         .isLegendary = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sChienPaoLevelUpLearnset,
         .teachableLearnset = sChienPaoTeachableLearnset,
     },
@@ -6358,6 +6360,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_TingLu
         )
         .isLegendary = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTingLuLevelUpLearnset,
         .teachableLearnset = sTingLuTeachableLearnset,
     },
@@ -6422,6 +6425,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_ChiYu
         )
         .isLegendary = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sChiYuLevelUpLearnset,
         .teachableLearnset = sChiYuTeachableLearnset,
     },
@@ -6614,6 +6618,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sKoraidonLevelUpLearnset,
         .teachableLearnset = sKoraidonTeachableLearnset,
     },
@@ -6678,6 +6683,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMiraidonLevelUpLearnset,
         .teachableLearnset = sMiraidonTeachableLearnset,
     },
@@ -7113,6 +7119,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_Okidogi
         )
         .isLegendary = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sOkidogiLevelUpLearnset,
         .teachableLearnset = sOkidogiTeachableLearnset,
     },
@@ -7176,6 +7183,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_Munkidori
         )
         .isLegendary = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMunkidoriLevelUpLearnset,
         .teachableLearnset = sMunkidoriTeachableLearnset,
     },
@@ -7239,6 +7247,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_Fezandipiti
         )        
         .isLegendary = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sFezandipitiLevelUpLearnset,
         .teachableLearnset = sFezandipitiTeachableLearnset,
     },
@@ -7304,6 +7313,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .formChangeTable = sOgerponFormChangeTable,                                         \
         .isLegendary = TRUE,                                                                \
         .isTeraForm = isTeraform,                                                           \
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,         \
     }
 
     [SPECIES_OGERPON_TEAL_MASK]             = OGERPON_SPECIES_INFO(Teal,        Mask,     TYPE_GRASS, ABILITY_DEFIANT,                        BODY_COLOR_GREEN, 1, FALSE),
@@ -7635,6 +7645,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTerapagosLevelUpLearnset,
         .teachableLearnset = sTerapagosTeachableLearnset,
         .formSpeciesIdTable = sTerapagosFormSpeciesIdTable,
@@ -7702,6 +7713,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTerapagosLevelUpLearnset,
         .teachableLearnset = sTerapagosTeachableLearnset,
         .formSpeciesIdTable = sTerapagosFormSpeciesIdTable,
@@ -7760,6 +7772,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .isLegendary = TRUE,
         .isTeraForm = TRUE,
         .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTerapagosLevelUpLearnset,
         .teachableLearnset = sTerapagosTeachableLearnset,
         .formSpeciesIdTable = sTerapagosFormSpeciesIdTable,
@@ -7826,6 +7839,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .isMythical = TRUE,
         .isFrontierBanned = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sPecharuntLevelUpLearnset,
         .teachableLearnset = sPecharuntTeachableLearnset,
     },
