@@ -25,6 +25,7 @@ Pokémon: Ecology Version is a ROM Hack coming from my love for real-world anima
         - NOTE: Copy code from Seaglass for monotype run codes!
     - Toggle alternative encounter tables (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Easily-Toggle-Different-Wild-Encounter-Tables)
         - Ex: Make all encounters on a map into Nincada during a cicada emergence event
+    - Pokédex viewable in Party menu
 
 - THEN, MERGE IN SEAGLASS GRAPHICS
     - Object events, followers, and Pokémon in-battle sprites!
