@@ -29,9 +29,13 @@ Pokémon: Ecology Version is a ROM Hack coming from my love for real-world anima
 
 - THEN, MERGE IN SEAGLASS GRAPHICS
     - Object events, followers, and Pokémon in-battle sprites!
-    - Some UI elements - battle UI, text boxes
+    - Some UI elements - battle UI, text boxes, DexNav elements
+- ALSO MERGE SOME OTHER IMPORTANT CHANGES
+    - Fix the shiny lock plaguing starter pokemon and dexnav
+    - Press L to auto-run, R to register DexNav Pokémon, and make sure creeping with DexNav overrules autorun
 
 - Custom Mapping references to remember:
+    - ENABLE TRIPLE LAYER METATILES?
     - Use "Dynamic Warps" to change warp location based on script (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Dynamic-Warp)
     - Consider adding FRLG-style map previews (https://github.com/pret/pokeemerald/wiki/Adding-the-Map-Preview-Screens-from-FRLG)
     - Region Map editing:
@@ -47,7 +51,7 @@ Pokémon: Ecology Version is a ROM Hack coming from my love for real-world anima
     - Have PokéNav call from representatives from different towns you've visited announcing festivals (Remember to use OW_FLAG_PAUSE_TIME to pause time during calls! So AFK player's dont totally miss them)
 
 ## Known Bugs & Problems
--
+- DexNav chain count and directional arrow not shown correctly when hunting
 
 ## Credits
 - Day/Night System created by merrp, and updated to pokeemerald-expansion by Greenphx9

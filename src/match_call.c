@@ -1182,6 +1182,9 @@ bool32 IsMatchCallTaskActive(void)
 
 static void StartMatchCall(void)
 {
+
+    FlagSet(FLAG_PAUSE_TIME);
+
     if (!sMatchCallState.triggeredFromScript)
     {
         LockPlayerFieldControls();
@@ -1361,6 +1364,9 @@ static bool32 MatchCall_SlideWindowOut(u8 taskId)
 
 static bool32 MatchCall_EndCall(u8 taskId)
 {
+
+    FlagClear(FLAG_PAUSE_TIME);
+
     u8 playerObjectId;
     if (!IsDma3ManagerBusyWithBgCopy() && !IsSEPlaying())
     {

@@ -258,3 +258,13 @@ u8 RandomWeightedIndex(u8 *weights, u8 length)
     }
     return 0;
 }
+// NEW
+u16 RandRange(u16 min, u16 max)
+{    
+    if (min == max)
+        return min;
+    
+    max++;   // make inclusive
+    return (Random() % (max - min)) + min;
+}
+
