@@ -149,7 +149,7 @@ static void DexNavDrawIcons(void);
 static void DexNavUpdateSearchWindow(u8 proximity, u8 searchLevel);
 //static void DexNavSightUpdate(u8 index);
 static void Task_DexNavSearch(u8 taskId);
-static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId);
+static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId, bool8 resetChain);
 // HIDDEN MONS
 static void DexNavDrawHiddenIcons(void);
 static void DrawHiddenSearchWindow(u8 width);
@@ -872,6 +872,13 @@ static void Task_InitDexNavSearch(u8 taskId)
     
     if (GetFlashLevel() > 0)
     {
+        if(gMapHeader.regionMapSectionId != MAPSEC_FORTREE_CITY && gMapHeader.regionMapSectionId != MAPSEC_MOSSDEEP_CITY)
+        {
+            // show follower
+            FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+            UpdateFollowingPokemon();
+        }
+
         Free(sDexNavSearchDataPtr);
         FreeMonIconPalettes();
         ScriptContext_SetupScript(EventScript_TooDark);
@@ -881,6 +888,13 @@ static void Task_InitDexNavSearch(u8 taskId)
     
     if (sDexNavSearchDataPtr->monLevel == MON_LEVEL_NONEXISTENT || !TryStartHiddenMonFieldEffect(sDexNavSearchDataPtr->environment, 12, 12, FALSE))
     {
+        if(gMapHeader.regionMapSectionId != MAPSEC_FORTREE_CITY && gMapHeader.regionMapSectionId != MAPSEC_MOSSDEEP_CITY)
+        {
+            // show follower
+            FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+            UpdateFollowingPokemon();
+        }
+
         Free(sDexNavSearchDataPtr);
         FreeMonIconPalettes();
         ScriptContext_SetupScript(EventScript_NotFoundNearby);
@@ -982,6 +996,11 @@ bool8 TryStartDexnavSearch(void)
     
     if (FlagGet(FLAG_SYS_DEXNAV_SEARCH) || (val & MASK_SPECIES) == SPECIES_NONE)
         return FALSE;
+
+    // hide follower
+    FlagSet(FLAG_TEMP_HIDE_FOLLOWER);
+    UpdateFollowingPokemon();
+    RemoveFollowingPokemon();
     
     HideMapNamePopUpWindow();
     ChangeBgY_ScreenOff(0, 0, 0);
@@ -994,6 +1013,10 @@ bool8 TryStartDexnavSearch(void)
 
 void EndDexNavSearch(u8 taskId)
 {
+    // show follower
+    FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+    UpdateFollowingPokemon();
+
     FlagClear(FLAG_SYS_DEXNAV_SEARCH);
     FlagClear(FLAG_PAUSE_TIME);
     DestroyTask(taskId);
@@ -1002,9 +1025,11 @@ void EndDexNavSearch(u8 taskId)
     Free(sDexNavSearchDataPtr);
 }
 
-static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId)
+static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId, bool8 resetChain)
 {
-    gSaveBlock1Ptr->dexNavChain = 0;   //reset chain
+    if(resetChain == TRUE)
+        gSaveBlock1Ptr->dexNavChain = 0;   //reset chain
+    
     EndDexNavSearch(taskId);
     ScriptContext_SetupScript(script);
 }
@@ -1068,13 +1093,23 @@ static void Task_DexNavSearch(u8 taskId)
     u16 UNUSED species;
     s16 UNUSED x, y;
     struct Task *task = &gTasks[taskId];
+
+    // hide follower
+    FlagSet(FLAG_TEMP_HIDE_FOLLOWER);
+    UpdateFollowingPokemon();
+    RemoveFollowingPokemon();
     
     if (sDexNavSearchDataPtr->proximity > MAX_PROXIMITY)
     { // out of range
         if (sDexNavSearchDataPtr->hiddenSearch && !task->tRevealed)
             EndDexNavSearch(taskId);
         else
-            EndDexNavSearchSetupScript(EventScript_LostSignal, taskId);
+        {
+            // show follower
+            FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+            UpdateFollowingPokemon();
+            EndDexNavSearchSetupScript(EventScript_LostSignal, taskId, FALSE);
+        }
         return;
     }
     
@@ -1083,14 +1118,22 @@ static void Task_DexNavSearch(u8 taskId)
         if (sDexNavSearchDataPtr->hiddenSearch && !task->tRevealed)
             EndDexNavSearch(taskId);
         else
-            EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
+        {
+            // show follower
+            FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+            UpdateFollowingPokemon();
+            EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId, TRUE);
+        }
         return;
     }
     
     if (sDexNavSearchDataPtr->proximity <= SNEAKING_PROXIMITY && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH | PLAYER_AVATAR_FLAG_BIKE)) 
     { // running/biking too close
         //always do event script, even if player hasn't revealed a hidden mon. It's assumed they would be creeping towards it
-        EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
+        // show follower
+        FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+        UpdateFollowingPokemon();
+        EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId, TRUE);
         return;
     }
     
@@ -1106,7 +1149,12 @@ static void Task_DexNavSearch(u8 taskId)
         if (sDexNavSearchDataPtr->hiddenSearch && !task->tRevealed)
             EndDexNavSearch(taskId);
         else
-            EndDexNavSearchSetupScript(EventScript_PokemonGotAway, taskId);
+        {
+            // show follower
+            FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+            UpdateFollowingPokemon();
+            EndDexNavSearchSetupScript(EventScript_PokemonGotAway, taskId, FALSE);
+        }
         return;
     }
     
@@ -1115,6 +1163,10 @@ static void Task_DexNavSearch(u8 taskId)
         CreateDexNavWildMon(sDexNavSearchDataPtr->species, sDexNavSearchDataPtr->potential, sDexNavSearchDataPtr->monLevel, 
           sDexNavSearchDataPtr->abilityNum, sDexNavSearchDataPtr->heldItem, sDexNavSearchDataPtr->moves);
         
+        // show follower
+        FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+        // UpdateFollowingPokemon();
+
         FlagClear(FLAG_SYS_DEXNAV_SEARCH);
         FlagClear(FLAG_PAUSE_TIME);
         gDexnavBattle = TRUE;        
@@ -1275,8 +1327,8 @@ static u8 DexNavTryGenerateMonLevel(u16 species, u8 environment)
     if (levelBase == MON_LEVEL_NONEXISTENT)
         return MON_LEVEL_NONEXISTENT;   //species not found in the area
     
-    if (Random() % 100 < 4)
-        levelBonus += 10; //4% chance of having a +10 level
+    // if (Random() % 100 < 4)
+    //     levelBonus += 10; //4% chance of having a +10 level
 
     if (levelBase + levelBonus > MAX_LEVEL)
         return MAX_LEVEL;
@@ -1881,6 +1933,11 @@ static void DexNavGuiFreeResources(void)
 static void CB1_InitDexNavSearch(void)
 {
     u8 taskId;
+
+    // hide follower
+    FlagSet(FLAG_TEMP_HIDE_FOLLOWER);
+    UpdateFollowingPokemon();
+    RemoveFollowingPokemon();
     
     if (!gPaletteFade.active && !ArePlayerFieldControlsLocked() && gMain.callback2 == CB2_Overworld)
     {
@@ -2703,8 +2760,10 @@ bool8 DexNavTryMakeShinyMon(void)
     #endif
     
     chainBonus = (chain == 50) ? 5 : (chain == 100) ? 10 : 0;
-    rndBonus = (Random() % 100 < 4 ? 4 : 0);
-    shinyRolls = 1 + charmBonus + chainBonus + rndBonus;
+    if(chain > 100)
+        chainBonus = 1;
+    rndBonus = (Random() % 100 < 8 ? 4 : 0);
+    shinyRolls = 1 + charmBonus + chainBonus + rndBonus + 3;
 
     if (searchLevel > 200)
     {
@@ -2741,6 +2800,11 @@ void TryIncrementSpeciesSearchLevel(u16 dexNum)
 
 void ResetDexNavSearch(void)
 {
+
+    // show follower
+    FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+    UpdateFollowingPokemon();
+
     gSaveBlock1Ptr->dexNavChain = 0;    //reset dex nav chaining on new map
     VarSet(VAR_DEXNAV_STEP_COUNTER, 0); //reset hidden pokemon step counter
     if (FlagGet(FLAG_SYS_DEXNAV_SEARCH))

@@ -11,12 +11,10 @@ Pokémon: Ecology Version is a ROM Hack coming from my love for real-world anima
 ## Feature List
 - Day/Night System with FakeRTC
     - Every second in real time is 20 seconds in game
+- DexNav
 
 ## Future Development Plans
 - Feature Branches to merge early:
-    - DexNav (https://www.pokecommunity.com/showpost.php?p=10215653&postcount=1)
-        - Reference Seaglass code to disable followers while using DexNav
-        - Set "OW_FLAG_PAUSE_TIME" in overworld.h config to pause time while DexNav is active, and also when Pokénav call is active 
     - Mugshot system on page (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches)
     - Consider the Crafting System? (https://github.com/redsquidz/pokeemerald/wiki/Craft-Menu)
 
@@ -31,7 +29,6 @@ Pokémon: Ecology Version is a ROM Hack coming from my love for real-world anima
     - Object events, followers, and Pokémon in-battle sprites!
     - Some UI elements - battle UI, text boxes, DexNav elements
 - ALSO MERGE SOME OTHER IMPORTANT CHANGES
-    - Fix the shiny lock plaguing starter pokemon and dexnav
     - Press L to auto-run, R to register DexNav Pokémon, and make sure creeping with DexNav overrules autorun
 
 - Custom Mapping references to remember:
@@ -55,3 +52,4 @@ Pokémon: Ecology Version is a ROM Hack coming from my love for real-world anima
 
 ## Credits
 - Day/Night System created by merrp, and updated to pokeemerald-expansion by Greenphx9
+- DexNav feature branch by ghoulslash
