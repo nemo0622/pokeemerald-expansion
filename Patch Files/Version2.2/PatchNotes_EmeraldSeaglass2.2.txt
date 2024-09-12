@@ -1,3 +1,6 @@
+MAJOR CHANGES:
+- More item icons in GBC style by _glados11388
+
 BALANCE CHANGES:
 - Happily evolves into Chansey at level 15 (no need for Oval Stone)
 - Ninjask type -> Bug/Dark type with secondary ability Sharpness (+ moveset changes)
@@ -13,3 +16,17 @@ BUG FIXES:
 - Fixed Alolan Geodude following sprite
 - Castform family now has consistent stat totals (80 across the board!)
 - Fixed Yanmega shiny palette
+
+
+SHIT TO ADD INTO THIS PATCH
+- Port over nameplate stuff?
+- Undo force SET in hard mode, but disable bag in hard mode instead!
+FEATURE BRANCH STUFF:
+- Add EV/IV editing NPC, remove from party menu (replace with follower toggle? https://github.com/Kasenn/pokeemerald-expansion-kasen/tree/toggle_follower_from_party_menu)
+	- More Info: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches/
+- Integrate Simplified Battle Point Vendors (https://github.com/Kasenn/pokeemerald-expansion-kasen/tree/simplified_bp_vendors) and have merchants selling strong items for BP
+	- EXP Candy XL, Lucky Eggs, Life Orbs, etc
+	- More Info: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches/
+- Egg Move tutor: https://github.com/pret/pokeemerald/wiki/Make-Move-Relearner-Teach-Egg-Moves-With-A-Flag
+
+I know this is a lot, but it's probably the last big patch so
