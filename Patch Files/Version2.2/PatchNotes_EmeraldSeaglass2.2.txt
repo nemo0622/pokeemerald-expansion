@@ -1,0 +1,15 @@
+BALANCE CHANGES:
+- Happily evolves into Chansey at level 15 (no need for Oval Stone)
+- Ninjask type -> Bug/Dark type with secondary ability Sharpness (+ moveset changes)
+- Ledian learns Victory Dance at level 38
+- Tyranitar hidden ability -> Earth Eater
+- Lanturn learns Tail Glow on evolution
+- Venusaur learns Weather Ball, Sunny Day, and Ancient Power
+
+BUG FIXES:
+- Double battles no longer occur with 1 Pokémon in your party
+- Nasty Surprise ability (Drowzee/Hypno) now functional
+	- Developers note: Please please give this a try lol, it makes Poison Gas Hypno so fun
+- Fixed Alolan Geodude following sprite
+- Castform family now has consistent stat totals (80 across the board!)
+- Fixed Yanmega shiny palette

@@ -16,3 +16,70 @@ BALANCE CHANGES:
 
 BUG FIXES:
 - Fixed Player Pokémon being overlayed with player at end of battle (sorry about that!)
+
+
+
+
+
+
+--- PATCH 2.0 NOTES BELOW ---
+
+MAJOR FEATURE CHANGES:
+- Battle Tent is BACK!! The bugs have finally been squashed!
+	- Also brings back Battle Factory, making Battle Frontier FULLY FUNCTIONAL!
+- All Pokémon now have followers! (Added Annihilape, Farigiraf, Dundunsparce, and Tinkaton line)
+- Mono-type Run Cheat Codes added:
+	- Gives a random, first-stage Pokémon of the type you choose
+	- Codes for each type are in documentation
+	- Also acts as a way to start with a random, unique "starter" Pokémon! :)
+- Shiny indicator added in battle!
+	- Adds "!!!" mark next to wild Pokémon name
+- EV/IV Stat Editor Implemented!
+	- Accessible in Party Menu
+	- Unlocks by visiting Battle Frontier
+		- I know this is late, but that's the point! This is very overpowered lol
+- Cave and Water DexNav encounters no longer "move around"
+- Battle Backgrounds use fewer colors, fit game aesthetic better (thanks to PacoScarso!)
+- Press "Start" leaves Pinball early
+	- On rare occasion where game totally bugs out, allows you to force-leave
+- Option to disable K.O. animations in battle
+	- Can be enabled/disabled through book on Player's desk, enabled by default
+
+BALANCE CHANGES:
+- Absorb has 30 power, Mega Drain has 50 power
+- Bubble has 30 power, guaranteed decreases Speed
+- Roxanne changes: Lileep has Absorb instead of Mega Drain, Anorith has Bubble instead of Water Gun
+- Double Battles can now happen even if you only have 1 party Pokémon
+- Meganium -> Grass/Fairy type. Evolution line hidden ability is Triage
+- Typhlosion -> Fire/Ground type
+- Feraligatr -> Water/Dark type
+- Beating Juan (8th Gym) gives player Ice Beam, rather than Water Pulse
+- Pokémon disobedience removed (potentially caused problems with gift/cheat Pokémon lol)
+- Ekans now Poison/Dark type just like Arbok
+- Magmarizer in Jagged Pass, Electirizer in new Mauville
+- Eviolite now prevents evolution (like Everstone) and very slightly boosts attacking power
+- Loaded Dice and Toxic Orb available from Pedro in Petalburg after Gym 7
+- Eviolite and Flame Orb available from Pedro in Petalburg after Gym 6
+
+BUG FIXES:
+- DEXNAV SHINY CHAINING FIXED!!! FINALLY!!! (I think!)
+	- Calculation is complicated, but odds are notably higher than ORAS when hitting higher chains with the DexNav
+- Starter Pokémon should no longer be shiny locked!
+- Cycling through Stats/EVs/IVs by pressing A now has correctly colored stats based on nature
+- Roxanne switching Lileep for same Lileep *maybe* fixed, cannot replicate
+	- Included in this fix, many stupid/annoying constant switching loops should be fixed
+- Followers no longer invisible after "Too dark" DexNav message in caves
+- DexNav cave dust effect no longer bugs out and disappears (replaced with new graphic)
+	- Also seems to fix some DexNav stability problems in caves in general
+- Cycling Road no longer mentioned by trainer in Route 110
+- Maxie fight with Mossdeep should be fixed
+	- Removed multi-battle with Steven, instead just a double battle with Maxie
+- Fixed Pinball Points number dialogue
+- Victory Road collision fix
+- Petalburg Woods warp fix
+- Shiny Ralts fix
+- Fallarbor softlock fix
+- Typos fixed
+- Not a bug, but I replaced the Feraligatr sprite with the beta one :)
+- Sootopolis water tile bug should be fixed?
+

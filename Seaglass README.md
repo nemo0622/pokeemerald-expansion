@@ -61,8 +61,6 @@ Suggestions to consider:
     - Egg move tutor (https://github.com/pret/pokeemerald/wiki/Make-Move-Relearner-Teach-Egg-Moves-With-A-Flag)
 - Pokeball changer NPC?
 - Quick Balls purchase-able in Lilycove
-- Replace common item icons
-- GET IT OUT QUICK LOL
 
 Later Additions (After Release 1.0):
 - Proper Steven NPC sprite
