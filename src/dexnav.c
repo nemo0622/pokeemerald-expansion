@@ -1064,7 +1064,7 @@ static void Task_RevealHiddenMon(u8 taskId)
     }
     
     
-    if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
+    if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN) && !FlagGet(FLAG_SYS_SHOW_ALL_DEXNAV_MONS))
     {
         u8 index;
         
@@ -1231,7 +1231,7 @@ static void DexNavUpdateSearchWindow(u8 proximity, u8 searchLevel)
 {
     bool8 hideName = FALSE;
 
-    if (sDexNavSearchDataPtr->hiddenSearch && !GetSetPokedexFlag(SpeciesToNationalPokedexNum(sDexNavSearchDataPtr->species), FLAG_GET_SEEN))
+    if (sDexNavSearchDataPtr->hiddenSearch && !GetSetPokedexFlag(SpeciesToNationalPokedexNum(sDexNavSearchDataPtr->species), FLAG_GET_SEEN) && !FlagGet(FLAG_SYS_SHOW_ALL_DEXNAV_MONS))
         hideName = TRUE;    //if a detector mode hidden search and player hasn't seen the mon, hide info
     
     FillWindowPixelBuffer(sDexNavSearchDataPtr->windowId, PIXEL_FILL(1));   //clear window
@@ -2070,7 +2070,7 @@ static void TryDrawIconInSlot(u16 species, s16 x, s16 y)
 {
     if (species == SPECIES_NONE || species > NUM_SPECIES)
         CreateNoDataIcon(x, y);   //'X' in slot
-    else if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
+    else if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN) && !FlagGet(FLAG_SYS_SHOW_ALL_DEXNAV_MONS))
         CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark
     else
         CreateMonIcon(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF);
@@ -2138,7 +2138,7 @@ static u16 DexNavGetSpecies(void)
         return SPECIES_NONE;
     }
     
-    if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
+    if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN) && !FlagGet(FLAG_SYS_SHOW_ALL_DEXNAV_MONS))
         return SPECIES_NONE;
     
     return species;
@@ -2197,7 +2197,7 @@ static void PrintCurrentSpeciesInfo(void)
     u16 dexNum = SpeciesToNationalPokedexNum(species);
     u8 type1, type2;
     
-    if (!GetSetPokedexFlag(dexNum, FLAG_GET_SEEN))
+    if (!GetSetPokedexFlag(dexNum, FLAG_GET_SEEN) && !FlagGet(FLAG_SYS_SHOW_ALL_DEXNAV_MONS))
         species = SPECIES_NONE;
 
     // clear windows

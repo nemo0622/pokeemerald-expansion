@@ -11,12 +11,13 @@ Pokémon: Ecology Version is a ROM Hack coming from my love for real-world anima
 ## Feature List
 - Day/Night System with FakeRTC
     - Every second in real time is 20 seconds in game
-- DexNav
+- DexNav functionality, with FLAG_SYS_SHOW_ALL_DEXNAV_MONS to show all DexNav mons without needing to encounter them first
 
 ## Future Development Plans
 - Feature Branches to merge early:
     - Mugshot system on page (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches)
     - Consider the Crafting System? (https://github.com/redsquidz/pokeemerald/wiki/Craft-Menu)
+    - Town Map port (if decide to get rid of Pokénav) (https://github.com/Voluptua/pokeemerald/tree/expansion-town-map)
 
 - Other features to add early:
     - Cheat code functionality (https://github.com/PCG06/pokeemerald/tree/MysteryGiftCodes)
@@ -28,8 +29,11 @@ Pokémon: Ecology Version is a ROM Hack coming from my love for real-world anima
 - THEN, MERGE IN SEAGLASS GRAPHICS
     - Object events, followers, and Pokémon in-battle sprites!
     - Some UI elements - battle UI, text boxes, DexNav elements
+        - BEFORE MERGING TEXT BOXES: make sure not to port message box directly! remember the name plates!
 - ALSO MERGE SOME OTHER IMPORTANT CHANGES
     - Press L to auto-run, R to register DexNav Pokémon, and make sure creeping with DexNav overrules autorun
+
+- THEN, IMPLEMENT PORYSCRIPT!
 
 - Custom Mapping references to remember:
     - ENABLE TRIPLE LAYER METATILES?
