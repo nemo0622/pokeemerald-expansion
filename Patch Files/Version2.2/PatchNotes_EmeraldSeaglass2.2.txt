@@ -1,4 +1,5 @@
 MAJOR CHANGES:
+- Trainer names in a cute little box on text window
 - More item icons in GBC style by _glados11388
 
 BALANCE CHANGES:
@@ -19,7 +20,6 @@ BUG FIXES:
 
 
 SHIT TO ADD INTO THIS PATCH
-- Port over nameplate stuff?
 - Undo force SET in hard mode, but disable bag in hard mode instead!
 FEATURE BRANCH STUFF:
 - Add EV/IV editing NPC, remove from party menu (replace with follower toggle? https://github.com/Kasenn/pokeemerald-expansion-kasen/tree/toggle_follower_from_party_menu)

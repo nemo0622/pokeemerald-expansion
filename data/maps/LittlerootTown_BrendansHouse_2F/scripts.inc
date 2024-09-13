@@ -738,7 +738,7 @@ PlayersHouse_2F_SettingsNotebook_Text_7:
 	.string "(DISABLED by default.)\l"
 	.string "HARD MODE increases opposing POKéMON\l"
 	.string "levels by more as you progress and\l"
-	.string "forces SET mode.$"
+	.string "disables the BAG in battle.$"
 
 PlayersHouse_2F_SettingsNotebook_Text_8:
 # 344 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
