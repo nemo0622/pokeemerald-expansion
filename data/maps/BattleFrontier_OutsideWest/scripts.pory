@@ -539,10 +539,10 @@ script EVIVChangerNPC
 	{
 		msgbox(format("Oh well, back to training!"))
 		closemessage
-		applymovement(25, Common_Movement_FaceOriginalDirection)
-		waitmovement(0)
-		releaseall
-		end
+		// applymovement(25, Common_Movement_FaceOriginalDirection)
+		// waitmovement(0)
+		// releaseall
+		// end
 	}
 	else
 	{
@@ -584,5 +584,8 @@ script EVIVChangerNPC
 		}
 
 	}
+
+	releaseall
+	end
 
 }

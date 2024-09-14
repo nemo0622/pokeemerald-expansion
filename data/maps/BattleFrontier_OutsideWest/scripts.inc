@@ -1060,19 +1060,19 @@ EVIVChangerNPC::
 	msgbox EVIVChangerNPC_Text_0, MSGBOX_YESNO
 # 538 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq EVIVChangerNPC_1
+	goto_if_eq EVIVChangerNPC_2
 # 550 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	special ChooseMonForMoveRelearner
 # 551 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	waitstate
 # 552 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
-	goto_if_eq EVIVChangerNPC_4
+	goto_if_eq EVIVChangerNPC_5
 # 563 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	special IsSelectedMonEgg
 # 564 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	compare VAR_RESULT, TRUE
-	goto_if_eq EVIVChangerNPC_7
+	goto_if_eq EVIVChangerNPC_8
 # 575 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	special UseStatEditor
 # 577 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
@@ -1088,19 +1088,18 @@ EVIVChangerNPC::
 	end
 
 EVIVChangerNPC_1:
+# 588 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	releaseall
+	end
+
+EVIVChangerNPC_2:
 # 540 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	msgbox EVIVChangerNPC_Text_1
 # 541 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	closemessage
-# 542 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	applymovement 25, Common_Movement_FaceOriginalDirection
-# 543 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	waitmovement 0
-# 544 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	releaseall
-	end
+	goto EVIVChangerNPC_1
 
-EVIVChangerNPC_4:
+EVIVChangerNPC_5:
 # 554 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	msgbox EVIVChangerNPC_Text_2
 # 555 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
@@ -1113,7 +1112,7 @@ EVIVChangerNPC_4:
 	releaseall
 	end
 
-EVIVChangerNPC_7:
+EVIVChangerNPC_8:
 # 566 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	msgbox EVIVChangerNPC_Text_3
 # 567 "data/maps/BattleFrontier_OutsideWest/scripts.pory"

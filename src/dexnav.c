@@ -950,16 +950,28 @@ static void DexNavUpdateDirectionArrow(void)
     else if (deltaX > deltaY)
     {
         if (playerX > tileX)
+        {
             str = sText_ArrowLeft;  //player to right
+            DebugPrintf("Pokemon to the LEFT");
+        }
         else
+        {
             str = sText_ArrowRight; //player to left
+            DebugPrintf("Pokemon to the RIGHT");
+        }
     }
     else //greater Y diff
     {
         if (playerY > tileY)
+        {
             str = sText_ArrowUp;    //player below
+            DebugPrintf("Pokemon to the UP");
+        }
         else
+        {
             str = sText_ArrowDown;  //player above
+            DebugPrintf("Pokemon to the DOWN");
+        }
     }
     
     AddTextPrinterParameterized3(windowId, 1, SEARCH_ARROW_X, SEARCH_ARROW_Y, sSearchFontColor, TEXT_SKIP_DRAW, str);
