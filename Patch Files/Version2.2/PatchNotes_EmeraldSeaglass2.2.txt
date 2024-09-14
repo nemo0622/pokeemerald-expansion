@@ -30,9 +30,6 @@ BUG FIXES:
 
 SHIT TO ADD INTO THIS PATCH
 FEATURE BRANCH STUFF:
-- Integrate Simplified Battle Point Vendors (https://github.com/Kasenn/pokeemerald-expansion-kasen/tree/simplified_bp_vendors) and have merchants selling strong items for BP
-	- EXP Candy XL, Lucky Eggs, Life Orbs, etc
-	- More Info: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches/
 - Egg Move tutor: https://github.com/pret/pokeemerald/wiki/Make-Move-Relearner-Teach-Egg-Moves-With-A-Flag
 
 - Use printf debugging to see if dexnav is at least properly tracking what direction hunted Pokemon is in

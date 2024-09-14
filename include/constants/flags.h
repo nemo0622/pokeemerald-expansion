@@ -713,7 +713,7 @@
 #define FLAG_GOT_WISHING_STAR_VERDANTURF  0x29E // got wishing star from camper npc
 #define FLAG_FORCE_SHINY_ENCOUNTER  0x29F // P_FLAG_FORCE_SHINY's flag
 #define FLAG_DISABLE_BATTLE_KO_ANIMS  0x2A0
-#define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
+#define FLAG_EGG_MOVES_TUTOR  0x2A1 // Enable/disable egg move tutor
 #define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
 #define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag
 #define FLAG_UNUSED_0x2A4  0x2A4 // Unused Flag

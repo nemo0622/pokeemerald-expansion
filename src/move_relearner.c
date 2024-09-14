@@ -26,6 +26,7 @@
 #include "task.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "daycare.h"
 
 /*
  * Move relearner state machine
