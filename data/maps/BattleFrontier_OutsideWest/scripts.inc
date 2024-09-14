@@ -1050,3 +1050,106 @@ BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier:
 	.string "Oh, challenges can wait. I feel driven\n"
 # 526 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	.string "to find the delightful creature!$"
+
+EVIVChangerNPC::
+# 533 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	lockall
+# 534 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	faceplayer
+# 536 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	msgbox EVIVChangerNPC_Text_0, MSGBOX_YESNO
+# 538 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EVIVChangerNPC_1
+# 550 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	special ChooseMonForMoveRelearner
+# 551 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	waitstate
+# 552 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
+	goto_if_eq EVIVChangerNPC_4
+# 563 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	special IsSelectedMonEgg
+# 564 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq EVIVChangerNPC_7
+# 575 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	special UseStatEditor
+# 577 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	waitstate
+# 578 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	msgbox EVIVChangerNPC_Text_4
+# 579 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	applymovement 25, Common_Movement_FaceOriginalDirection
+# 580 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	waitmovement 0
+# 581 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	releaseall
+	end
+
+EVIVChangerNPC_1:
+# 540 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	msgbox EVIVChangerNPC_Text_1
+# 541 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	closemessage
+# 542 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	applymovement 25, Common_Movement_FaceOriginalDirection
+# 543 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	waitmovement 0
+# 544 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	releaseall
+	end
+
+EVIVChangerNPC_4:
+# 554 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	msgbox EVIVChangerNPC_Text_2
+# 555 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	closemessage
+# 556 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	applymovement 25, Common_Movement_FaceOriginalDirection
+# 557 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	waitmovement 0
+# 558 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	releaseall
+	end
+
+EVIVChangerNPC_7:
+# 566 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	msgbox EVIVChangerNPC_Text_3
+# 567 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	closemessage
+# 568 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	applymovement 25, Common_Movement_FaceOriginalDirection
+# 569 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	waitmovement 0
+# 570 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	releaseall
+	end
+
+
+EVIVChangerNPC_Text_0:
+# 536 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	.string "Phew! Running around to train my\n"
+	.string "POKéMON is really wiping me out. I think\l"
+	.string "I'm just gonna use an EV/IV EDITOR to\l"
+	.string "strengthen my team. Do you want to try\l"
+	.string "it?$"
+
+EVIVChangerNPC_Text_1:
+# 540 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	.string "Oh well, back to training!$"
+
+EVIVChangerNPC_Text_2:
+# 554 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	.string "That's... not a POKéMON. Come back when\n"
+	.string "you're serious about training!$"
+
+EVIVChangerNPC_Text_3:
+# 566 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	.string "That's an EGG! Come back when you're\n"
+	.string "serious about training!$"
+
+EVIVChangerNPC_Text_4:
+# 578 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
+	.string "Your POKéMON look great! Well, back to\n"
+	.string "training!$"

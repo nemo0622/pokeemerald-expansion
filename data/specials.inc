@@ -562,3 +562,4 @@ gSpecials::
 	def_special ExitDivingMinigame
 	def_special EnterMysteryGiftCode
 	def_special GetMysteryGiftFeedback
+	def_special UseStatEditor

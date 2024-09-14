@@ -81,6 +81,10 @@
 enum {
     MENU_SUMMARY,
     MENU_SWITCH,
+    MENU_FOLLOWER,
+    MENU_FOLLOWER_SET,
+    MENU_FOLLOWER_RETURN,
+    MENU_FOLLOWER_UNSET,
     MENU_STAT_EDIT,
     MENU_CANCEL1,
     MENU_ITEM,
@@ -129,6 +133,10 @@ enum {
     ACTIONS_TAKEITEM_TOSS,
     ACTIONS_ROTOM_CATALOG,
     ACTIONS_ZYGARDE_CUBE,
+    ACTIONS_FOLLOWER_SET,
+    ACTIONS_FOLLOWER_SET_RETURN,
+    ACTIONS_FOLLOWER_UNSET,
+    ACTIONS_FOLLOWER_UNSET_RETURN,
 };
 
 // In CursorCb_FieldMove, field moves <= FIELD_MOVE_WATERFALL are assumed to line up with the badge flags.
@@ -210,7 +218,7 @@ struct PartyMenuInternal
     u32 spriteIdCancelPokeball:7;
     u32 messageId:14;
     u8 windowId[3];
-    u8 actions[9];
+    u8 actions[10];
     u8 numActions;
     // In vanilla Emerald, only the first 0xB0 hwords (0x160 bytes) are actually used.
     // However, a full 0x100 hwords (0x200 bytes) are allocated.
@@ -512,6 +520,10 @@ void TryItemHoldFormChange(struct Pokemon *mon);
 static void ShowMoveSelectWindow(u8 slot);
 static void Task_HandleWhichMoveInput(u8 taskId);
 static void CursorCb_Pokedex(u8 taskId);
+static void CursorCb_Follower(u8);
+static void CursorCb_FollowerSet(u8);
+static void CursorCb_FollowerUnset(u8);
+static void CursorCb_FollowerReturn(u8);
 
 // static const data
 #include "data/party_menu.h"
@@ -2647,6 +2659,7 @@ void DisplayPartyMenuStdMessage(u32 stringId)
         case PARTY_MSG_DO_WHAT_WITH_MON:
             *windowPtr = AddWindow(&sDoWhatWithMonMsgWindowTemplate);
             break;
+        case PARTY_MSG_DO_WHAT_WITH_FOLLOWER:
         case PARTY_MSG_DO_WHAT_WITH_ITEM:
             *windowPtr = AddWindow(&sDoWhatWithItemMsgWindowTemplate);
             break;
@@ -2715,6 +2728,9 @@ static u8 DisplaySelectionWindow(u8 windowType)
         break;
     case SELECTWINDOW_ITEM:
         window = sItemGiveTakeWindowTemplate;
+        break;
+    case SELECTWINDOW_FOLLOWER:
+        window = sFollowerSetWindowTemplate;
         break;
     case SELECTWINDOW_MAIL:
         window = sMailReadTakeWindowTemplate;
@@ -2805,9 +2821,6 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
 
-    if(FlagGet(FLAG_SYS_POKEDEX_GET))
-        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_POKEDEX);
-
     // Add field moves to action list if it's a known move
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
@@ -2827,35 +2840,35 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         // +0 = CUT, +1 = FLASH, +2 = ROCK_SMASH, +3 = STRENGTH, +4 = SURF, +5 = FLY, +6 = DIVE, +7 = WATERFALL, +8 = TELEPORT,
         // +9 = DIG, +10 = SECRET_POWER, +11 = MILK_DRINK, +12 = SOFT_BOILED, +13 = SWEET_SCENT
         // Listed Surf Fly, and Dive first to hopefully prevent soft-lock situations when Pokémon can know >4 field moves
-        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_SURF) && FlagGet(FLAG_BADGE05_GET) && sPartyMenuInternal->numActions < 5 && !MonKnowsMove(&mons[slotId], MOVE_SURF) && CheckBagHasItem(ITEM_HM03, 1))
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_SURF) && FlagGet(FLAG_BADGE05_GET) && sPartyMenuInternal->numActions < 4 && !MonKnowsMove(&mons[slotId], MOVE_SURF) && CheckBagHasItem(ITEM_HM03, 1))
         {
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 4 + MENU_FIELD_MOVES);
         }
-        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_FLY) && FlagGet(FLAG_BADGE06_GET) && sPartyMenuInternal->numActions < 5 && !MonKnowsMove(&mons[slotId], MOVE_FLY) && CheckBagHasItem(ITEM_HM02, 1))
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_FLY) && FlagGet(FLAG_BADGE06_GET) && sPartyMenuInternal->numActions < 4 && !MonKnowsMove(&mons[slotId], MOVE_FLY) && CheckBagHasItem(ITEM_HM02, 1))
         {
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 5 + MENU_FIELD_MOVES);
         }
-        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_DIVE) && FlagGet(FLAG_BADGE07_GET) && sPartyMenuInternal->numActions < 5 && !MonKnowsMove(&mons[slotId], MOVE_DIVE) && CheckBagHasItem(ITEM_HM08, 1))
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_DIVE) && FlagGet(FLAG_BADGE07_GET) && sPartyMenuInternal->numActions < 4 && !MonKnowsMove(&mons[slotId], MOVE_DIVE) && CheckBagHasItem(ITEM_HM08, 1))
         {
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 6 + MENU_FIELD_MOVES);
         }
-        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_CUT) && FlagGet(FLAG_BADGE01_GET) && sPartyMenuInternal->numActions < 5 && !MonKnowsMove(&mons[slotId], MOVE_CUT) && CheckBagHasItem(ITEM_HM01, 1))
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_CUT) && FlagGet(FLAG_BADGE01_GET) && sPartyMenuInternal->numActions < 4 && !MonKnowsMove(&mons[slotId], MOVE_CUT) && CheckBagHasItem(ITEM_HM01, 1))
         {
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 0 + MENU_FIELD_MOVES);
         }
-        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_FLASH) && FlagGet(FLAG_BADGE02_GET) && sPartyMenuInternal->numActions < 5 && !MonKnowsMove(&mons[slotId], MOVE_FLASH) && CheckBagHasItem(ITEM_HM05, 1))
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_FLASH) && FlagGet(FLAG_BADGE02_GET) && sPartyMenuInternal->numActions < 4 && !MonKnowsMove(&mons[slotId], MOVE_FLASH) && CheckBagHasItem(ITEM_HM05, 1))
         {
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 1 + MENU_FIELD_MOVES);
         }
-        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_ROCK_SMASH) && FlagGet(FLAG_BADGE03_GET) && sPartyMenuInternal->numActions < 5 && !MonKnowsMove(&mons[slotId], MOVE_ROCK_SMASH) && CheckBagHasItem(ITEM_HM06, 1))
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_ROCK_SMASH) && FlagGet(FLAG_BADGE03_GET) && sPartyMenuInternal->numActions < 4 && !MonKnowsMove(&mons[slotId], MOVE_ROCK_SMASH) && CheckBagHasItem(ITEM_HM06, 1))
         {
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 2 + MENU_FIELD_MOVES);
         }
-        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_STRENGTH) && FlagGet(FLAG_BADGE04_GET) && sPartyMenuInternal->numActions < 5 && !MonKnowsMove(&mons[slotId], MOVE_STRENGTH) && CheckBagHasItem(ITEM_HM04, 1))
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_STRENGTH) && FlagGet(FLAG_BADGE04_GET) && sPartyMenuInternal->numActions < 4 && !MonKnowsMove(&mons[slotId], MOVE_STRENGTH) && CheckBagHasItem(ITEM_HM04, 1))
         {
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 3 + MENU_FIELD_MOVES);
         }
-        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_WATERFALL) && FlagGet(FLAG_BADGE08_GET) && sPartyMenuInternal->numActions < 5 && !MonKnowsMove(&mons[slotId], MOVE_WATERFALL) && CheckBagHasItem(ITEM_HM07, 1))
+        if (CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES), MOVE_WATERFALL) && FlagGet(FLAG_BADGE08_GET) && sPartyMenuInternal->numActions < 4 && !MonKnowsMove(&mons[slotId], MOVE_WATERFALL) && CheckBagHasItem(ITEM_HM07, 1))
         {
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 7 + MENU_FIELD_MOVES);
         }
@@ -2865,15 +2878,22 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     {
         if (GetMonData(&mons[1], MON_DATA_SPECIES) != SPECIES_NONE)
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SWITCH);
+
+        if (GetMonData(&mons[1], MON_DATA_SPECIES) != SPECIES_NONE || GetMonData(mons, MON_DATA_IS_EGG))
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_FOLLOWER);
+
         if (ItemIsMail(GetMonData(&mons[slotId], MON_DATA_HELD_ITEM)))
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_MAIL);
         else
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_ITEM);
 
-        if(FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER))
-        {
-            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_STAT_EDIT);
-        }
+        if(FlagGet(FLAG_SYS_POKEDEX_GET))
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_POKEDEX);
+
+        // if(FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER))
+        // {
+        //     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_STAT_EDIT);
+        // }
     }
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_CANCEL1);
 }
@@ -3044,8 +3064,8 @@ static void CB2_ReturnToPartyMenuFromSummaryScreen(void)
 
 static void CursorCb_Switch(u8 taskId)
 {
-    // Reset follower steps when the party leader is changed
-    if (gPartyMenu.slotId == 0 || gPartyMenu.slotId2 == 0)
+    // Reset follower steps when the party leader is changed, but only if the follower is not set
+    if ((gPartyMenu.slotId == 0 || gPartyMenu.slotId2 == 0) && gSaveBlock3Ptr->followerIndex == OW_FOLLOWER_NOT_SET)
         gFollowerSteps = 0;
     PlaySE(SE_SELECT);
     gPartyMenu.action = PARTY_ACTION_SWITCH;
@@ -3055,6 +3075,117 @@ static void CursorCb_Switch(u8 taskId)
     AnimatePartySlot(gPartyMenu.slotId, 1);
     gPartyMenu.slotId2 = gPartyMenu.slotId;
     gTasks[taskId].func = Task_HandleChooseMonInput;
+}
+
+static void CursorCb_Follower(u8 taskId)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 hp = GetMonData(mon, MON_DATA_HP);
+
+    PlaySE(SE_SELECT);
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[0]);
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
+    if (gSaveBlock3Ptr->followerIndex == gPartyMenu.slotId)
+    {
+        if (hp == 0)
+        {
+            SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_FOLLOWER_UNSET);
+            DisplaySelectionWindow(SELECTWINDOW_FOLLOWER);
+        }
+        else
+        {
+            SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_FOLLOWER_UNSET_RETURN);
+            DisplaySelectionWindow(SELECTWINDOW_ITEM);
+        }
+    }
+    else if (gPartyMenu.slotId == 0 && gSaveBlock3Ptr->followerIndex == OW_FOLLOWER_NOT_SET)
+    {
+        if (hp == 0)
+        {
+            SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_FOLLOWER_SET);
+            DisplaySelectionWindow(SELECTWINDOW_FOLLOWER);
+        }
+        else
+        {
+            SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_FOLLOWER_SET_RETURN);
+            DisplaySelectionWindow(SELECTWINDOW_ITEM);
+        }
+    }
+    else
+    {
+        if (mon == GetFirstLiveMon() && gSaveBlock3Ptr->followerIndex == OW_FOLLOWER_NOT_SET)
+        {
+            SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_FOLLOWER_SET_RETURN);
+            DisplaySelectionWindow(SELECTWINDOW_ITEM);
+        }
+        else
+        {
+            SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_FOLLOWER_SET);
+            DisplaySelectionWindow(SELECTWINDOW_FOLLOWER);
+        }
+    }
+    GetMonNickname(mon, gStringVar1);
+    DisplayPartyMenuStdMessage(PARTY_MSG_DO_WHAT_WITH_FOLLOWER);
+    gTasks[taskId].data[0] = 0xFF;
+    gTasks[taskId].func = Task_HandleSelectionMenuInput;
+}
+
+static void CursorCb_FollowerSet(u8 taskId)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 hp = GetMonData(mon, MON_DATA_HP);
+
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[0]);
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
+    PlaySE(SE_SELECT);
+    if (hp != 0)
+    {
+        gSaveBlock3Ptr->followerIndex = gPartyMenu.slotId;
+        if (gSaveBlock3Ptr->followerIndex != 0)
+            gFollowerSteps = 0;
+    }
+    GetMonNickname(mon, gStringVar1);
+    if (hp == 0)
+        StringExpandPlaceholders(gStringVar4, gText_FollowerFainted);
+    else
+        StringExpandPlaceholders(gStringVar4, gText_FollowerPreferred);
+    DisplayPartyMenuMessage(gStringVar4, TRUE);
+    gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+}
+
+static void CursorCb_FollowerReturn(u8 taskId)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[0]);
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
+    PlaySE(SE_SELECT);
+
+    gSaveBlock3Ptr->followerIndex = OW_FOLLOWER_RECALLED;
+    gFollowerSteps = 0;
+
+    GetMonNickname(mon, gStringVar1);
+    StringExpandPlaceholders(gStringVar4, gText_FollowerReturnedToBall);
+    DisplayPartyMenuMessage(gStringVar4, TRUE);
+    gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+}
+
+static void CursorCb_FollowerUnset(u8 taskId)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[0]);
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
+    PlaySE(SE_SELECT);
+
+    if (gSaveBlock3Ptr->followerIndex != 0)
+        gFollowerSteps = 0;
+    gSaveBlock3Ptr->followerIndex = OW_FOLLOWER_NOT_SET;
+
+    GetMonNickname(mon, gStringVar1);
+    StringExpandPlaceholders(gStringVar4, gText_FollowerDefaulted);
+    DisplayPartyMenuMessage(gStringVar4, TRUE);
+    gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
 }
 
 #define tSlot1Left     data[0]
@@ -3275,6 +3406,10 @@ static void SwitchPartyMon(void)
     mon1 = &gPlayerParty[gPartyMenu.slotId];
     mon2 = &gPlayerParty[gPartyMenu.slotId2];
     monBuffer = Alloc(sizeof(struct Pokemon));
+    if (gPartyMenu.slotId == gSaveBlock3Ptr->followerIndex)
+        gSaveBlock3Ptr->followerIndex = gPartyMenu.slotId2;
+    else if (gPartyMenu.slotId2 == gSaveBlock3Ptr->followerIndex)
+        gSaveBlock3Ptr->followerIndex = gPartyMenu.slotId;
     *monBuffer = *mon1;
     *mon1 = *mon2;
     *mon2 = *monBuffer;

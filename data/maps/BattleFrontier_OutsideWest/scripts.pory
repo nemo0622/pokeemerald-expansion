@@ -526,3 +526,63 @@ BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier:
 	.string "to find the delightful creature!$"
 
 `
+
+script EVIVChangerNPC
+{
+
+	lockall
+	faceplayer
+	// speakername("IVY")
+	msgbox(format("Phew! Running around to train my POKéMON is really wiping me out. I think I'm just gonna use an EV/IV EDITOR to strengthen my team. Do you want to try it?"), MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == 0) // no
+	{
+		msgbox(format("Oh well, back to training!"))
+		closemessage
+		applymovement(25, Common_Movement_FaceOriginalDirection)
+		waitmovement(0)
+		releaseall
+		end
+	}
+	else
+	{
+
+		special(ChooseMonForMoveRelearner)
+		waitstate
+		if(var(VAR_0x8004) == PARTY_NOTHING_CHOSEN)
+		{
+			msgbox(format("That's... not a POKéMON. Come back when you're serious about training!"))
+			closemessage
+			applymovement(25, Common_Movement_FaceOriginalDirection)
+			waitmovement(0)
+			releaseall
+			end
+		}
+		else
+		{
+			special(IsSelectedMonEgg)
+			if(var(VAR_RESULT) == TRUE)
+			{
+				msgbox(format("That's an EGG! Come back when you're serious about training!"))
+				closemessage
+				applymovement(25, Common_Movement_FaceOriginalDirection)
+				waitmovement(0)
+				releaseall
+				end
+			}
+			else
+			{
+				special(UseStatEditor)
+
+				waitstate
+				msgbox(format("Your POKéMON look great! Well, back to training!"))
+				applymovement(25, Common_Movement_FaceOriginalDirection)
+				waitmovement(0)
+				releaseall
+				end
+			}
+		}
+
+	}
+
+}

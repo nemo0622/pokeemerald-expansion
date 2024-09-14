@@ -48,6 +48,7 @@
 #include "text.h"
 #include "tilesets.h"
 #include "tv.h"
+#include "ui_stat_editor.h"
 #include "wallclock.h"
 #include "window.h"
 #include "constants/battle_frontier.h"
@@ -4490,4 +4491,9 @@ void GetMysteryGiftFeedback(void)
     // Invalid cheat code
     else
         gSpecialVar_Result = 0;
+}
+
+void UseStatEditor(void)
+{
+    StatEditor_Init(CB2_ReturnToField);
 }
