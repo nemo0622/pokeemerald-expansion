@@ -12,8 +12,11 @@ Pokémon: Ecology Version is a ROM Hack coming from my love for real-world anima
 - Day/Night System with FakeRTC
     - Every second in real time is 20 seconds in game
 - DexNav functionality, with FLAG_SYS_SHOW_ALL_DEXNAV_MONS to show all DexNav mons without needing to encounter them first
+- NPC speaker name shown above text box
 
 ## Future Development Plans
+STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to the west, that has recently undergone mass migration events and ecological changes. You play as a college-aged student doing field research at your school's Field Station on the archipelago. Travel around the islands in a semi-open-world setting, helping people and completing tasks to earn Prestige Badges. Filling the Pokédex is the main goal of the game, with some landmarks and Badges being locked behind Pokédex requirements. Many of the trainers you encounter on the islands are other Field Research Students - some islands are inhabited with traditional towns, while others are totally wild aside from other students.
+
 - Feature Branches to merge early:
     - Mugshot system on page (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches)
     - Consider the Crafting System? (https://github.com/redsquidz/pokeemerald/wiki/Craft-Menu)
