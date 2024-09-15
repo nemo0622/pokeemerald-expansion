@@ -12,7 +12,7 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 - Day/Night System with FakeRTC
     - Every second in real time is 20 seconds in game
 - DexNav functionality, with FLAG_SYS_SHOW_ALL_DEXNAV_MONS to show all DexNav mons without needing to encounter them first
-- NPC speaker name shown above text box
+- NPC speaker name shown above text box ("speakername" command)
 
 ## Future Development Plans
 STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to the west, that has recently undergone mass migration events and ecological changes. You play as a college-aged student doing field research at your school's Field Station on the archipelago. Travel around the islands in a semi-open-world setting, helping people and completing tasks to earn Prestige Badges. Filling the Pokédex is the main goal of the game, with some landmarks and Badges being locked behind Pokédex requirements. Many of the trainers you encounter on the islands are other Field Research Students - some islands are inhabited with traditional towns, while others are totally wild aside from other students.
@@ -28,6 +28,7 @@ STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to th
     - Toggle alternative encounter tables (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Easily-Toggle-Different-Wild-Encounter-Tables)
         - Ex: Make all encounters on a map into Nincada during a cicada emergence event
     - Pokédex viewable in Party menu
+    - Access PC in PokéNav?
 
 - THEN, MERGE IN SEAGLASS GRAPHICS
     - Object events, followers, and Pokémon in-battle sprites!
@@ -35,6 +36,14 @@ STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to th
         - BEFORE MERGING TEXT BOXES: make sure not to port message box directly! remember the name plates!
 - ALSO MERGE SOME OTHER IMPORTANT CHANGES
     - Press L to auto-run, R to register DexNav Pokémon, and make sure creeping with DexNav overrules autorun
+
+- ADD A FEW NEW POKéMON AND ABILITIES:
+    - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
+        - Scurry: Signature ability of Crocky, increases Evasiveness when sent out
+    - New Pokémon
+        - Crocky and Kotora (commissioned sprites)
+        - A few other beta Pokémon (Ice type Werewolves)
+        - Commission Thylacine Pokémon? Ghost/Normal type or Ghost/Rock type?
 
 - THEN, IMPLEMENT PORYSCRIPT!
 
@@ -56,8 +65,6 @@ STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to th
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
-- "speakername" command broken
-    - POTENTIAL FIX: Set a STR_VAR variable to the speaker name (or make a new STR_VAR variable just for speakers!) and then make a new Field Special that calls SetSpeakerName() in field_message_box.c
 
 ## Credits
 - Day/Night System created by merrp, and updated to pokeemerald-expansion by Greenphx9
