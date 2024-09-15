@@ -3547,14 +3547,14 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_BlackApricorn,
     },
 
-    [ITEM_WISHING_PIECE] =
+    [ITEM_WISHING_STAR] =
     {
-        .name = HANDLE_EXPANDED_ITEM_NAME("WishingPiece", "Wishing Piece"),
-        .price = 20,
+        .name = _("Wishing Star"),
+        .price = 1500,
         .description = COMPOUND_STRING(
-            "Throw into a\n"
-            "{PKMN} Den to attract\n"
-            "Dynamax Pokémon."),
+            "Can be thrown into\n"
+            "a Wishing Well\n"
+            "for a surprise."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse, // Todo

@@ -1034,6 +1034,10 @@ gText_Sudowoodo_Attacked::
 gText_LegendaryFlewAway::
 	.string "The {STR_VAR_1} flew away!$"
 
+gText_TransferredToPC::
+	.string "The POKéMON was transferred to\n"
+	.string "the PC.$"
+
 	.include "data/text/pc_transfer.inc"
 	.include "data/text/questionnaire.inc"
 	.include "data/text/abnormal_weather.inc"
@@ -1090,6 +1094,409 @@ EventScript_VsSeekerChargingDone::
 	special VsSeekerResetObjectMovementAfterChargeComplete
 	releaseall
 	end
+
+@ Call this script anywhere to access the Mystery Gift Code System
+Common_EventScript_MysteryGift::
+	lockall
+MysteryGift_EventScript_StartMysteryGift::
+	msgbox MysteryGift_Text_WelcomeToMysteryGiftSystem, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
+MysteryGift_EventScript_DoMysteryGift::
+	msgbox MysteryGift_Text_EnterCode, MSGBOX_AUTOCLOSE
+	special EnterMysteryGiftCode
+	waitstate
+	special GetMysteryGiftFeedback
+	goto_if_eq VAR_RESULT, 0, MysteryGift_Failed
+	goto_if_eq VAR_RESULT, 1, MysteryGift_EventScript_RareCandies
+	goto_if_eq VAR_RESULT, 2, MysteryGift_EventScript_MasterBalls
+	goto_if_eq VAR_RESULT, 3, MysteryGift_EventScript_Spheal
+	goto_if_eq VAR_RESULT, 4, MysteryGift_EventScript_Aipom
+	goto_if_eq VAR_RESULT, 5, MysteryGift_EventScript_GiveKantoStarters
+	goto_if_eq VAR_RESULT, 6, MysteryGift_EventScript_GiveJohtoStarters
+	goto_if_eq VAR_RESULT, 7, MysteryGift_EventScript_GiveHoennStarters
+	goto_if_eq VAR_RESULT, 8, MysteryGift_EventScript_Applin
+	goto_if_eq VAR_RESULT, 9, MysteryGift_EventScript_Tinkatink
+	goto_if_eq VAR_RESULT, 10, MysteryGift_EventScript_JustShowMe
+	goto_if_eq VAR_RESULT, 11, MysteryGift_EventScript_WishingStars
+	goto_if_eq VAR_RESULT, 12, MysteryGift_EventScript_Nuggets
+	goto_if_eq VAR_RESULT, 13, MysteryGift_EventScript_Monotype_Bug
+	goto_if_eq VAR_RESULT, 14, MysteryGift_EventScript_Monotype_Dark
+	goto_if_eq VAR_RESULT, 15, MysteryGift_EventScript_Monotype_Dragon
+	goto_if_eq VAR_RESULT, 16, MysteryGift_EventScript_Monotype_Electric
+	goto_if_eq VAR_RESULT, 17, MysteryGift_EventScript_Monotype_Fairy
+	goto_if_eq VAR_RESULT, 18, MysteryGift_EventScript_Monotype_Fighting
+	goto_if_eq VAR_RESULT, 19, MysteryGift_EventScript_Monotype_Fire
+	goto_if_eq VAR_RESULT, 20, MysteryGift_EventScript_Monotype_Flying
+	goto_if_eq VAR_RESULT, 21, MysteryGift_EventScript_Monotype_Ghost
+	goto_if_eq VAR_RESULT, 22, MysteryGift_EventScript_Monotype_Grass
+	goto_if_eq VAR_RESULT, 23, MysteryGift_EventScript_Monotype_Ground
+	goto_if_eq VAR_RESULT, 24, MysteryGift_EventScript_Monotype_Ice
+	goto_if_eq VAR_RESULT, 25, MysteryGift_EventScript_Monotype_Normal
+	goto_if_eq VAR_RESULT, 26, MysteryGift_EventScript_Monotype_Poison
+	goto_if_eq VAR_RESULT, 27, MysteryGift_EventScript_Monotype_Psychic
+	goto_if_eq VAR_RESULT, 28, MysteryGift_EventScript_Monotype_Rock
+	goto_if_eq VAR_RESULT, 29, MysteryGift_EventScript_Monotype_Steel
+	goto_if_eq VAR_RESULT, 30, MysteryGift_EventScript_Monotype_Water
+	end
+
+MysteryGift_Failed::
+	msgbox MysteryGift_Text_FailedText, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
+	goto MysteryGift_EventScript_DoMysteryGift
+	end
+
+MysteryGift_EventScript_Redeemed::
+	msgbox MysteryGift_Text_RedeemedText, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
+	goto MysteryGift_EventScript_DoMysteryGift
+	end
+
+MysteryGift_EventScript_CurrentlyUnavailable::
+	msgbox MysteryGift_Text_CurrentlyUnavailable, MSGBOX_DEFAULT
+	releaseall
+	end
+
+MysteryGift_EventScript_Exit::
+	releaseall
+	end
+
+MysteryGift_EventScript_ReceivedMon::
+	msgbox MysteryGift_Text_SucceededText, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	message MysteryGift_Text_ReceivedGiftMon
+	waitfanfare
+    goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, MysteryGift_EventScript_NicknamePartyMon
+    goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, MysteryGift_EventScript_TransferredToPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+MysteryGift_EventScript_NicknamePartyMon::
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_Exit
+	call Common_EventScript_GetGiftMonPartySlot 
+	call Common_EventScript_NameReceivedPartyMon 
+	goto MysteryGift_EventScript_Exit
+	end
+
+MysteryGift_EventScript_NicknamePCMon::
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO 
+	goto_if_eq VAR_RESULT, NO, MysteryGift_EventScript_TransferredToPC
+	call Common_EventScript_NameReceivedBoxMon
+	call Common_EventScript_TransferredToPC
+	goto MysteryGift_EventScript_Exit
+	end
+
+MysteryGift_EventScript_TransferredToPC::
+	msgbox gText_TransferredToPC
+	goto MysteryGift_EventScript_Exit
+	end
+
+MysteryGift_EventScript_RareCandies::
+	giveitem ITEM_RARE_CANDY, 99
+	releaseall
+	end
+
+MysteryGift_EventScript_MasterBalls::
+	giveitem ITEM_MASTER_BALL, 99
+	releaseall
+	end
+
+MysteryGift_EventScript_Spheal::
+	bufferspeciesname STR_VAR_1, SPECIES_SPHEAL
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SPHEAL
+	givemon SPECIES_SPHEAL, 5, ITEM_BIG_PEARL, ITEM_DIVE_BALL, NATURE_SERIOUS, 1, MON_FEMALE, 252, 0, 128, 0, 6, 128, 31, 31, 31, 31, 31, 31, MOVE_BOUNCY_BUBBLE, MOVE_SUPER_FANG, MOVE_SLACK_OFF, MOVE_FREEZE_DRY, FALSE, FALSE, TYPE_WATER
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Aipom::
+	bufferspeciesname STR_VAR_1, SPECIES_AIPOM
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_AIPOM
+	givemon SPECIES_AIPOM, 5, ITEM_EVIOLITE, ITEM_PREMIER_BALL, NATURE_ADAMANT, 0, MON_FEMALE, 6, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_DIZZY_PUNCH, MOVE_KARATE_CHOP, MOVE_VICTORY_DANCE, MOVE_BULLET_PUNCH, FALSE, FALSE, TYPE_NORMAL
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_GiveKantoStarters::
+	bufferspeciesname STR_VAR_1, SPECIES_BULBASAUR
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BULBASAUR
+	givemon SPECIES_BULBASAUR, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_SQUIRTLE
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SQUIRTLE
+	givemon SPECIES_SQUIRTLE, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_CHARMANDER
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHARMANDER
+	givemon SPECIES_CHARMANDER, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_GiveJohtoStarters::
+	bufferspeciesname STR_VAR_1, SPECIES_CHIKORITA
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHIKORITA
+	givemon SPECIES_CHIKORITA, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_TOTODILE
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE
+	givemon SPECIES_TOTODILE, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_CYNDAQUIL
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CYNDAQUIL
+	givemon SPECIES_CYNDAQUIL, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_GiveHoennStarters::
+	bufferspeciesname STR_VAR_1, SPECIES_TREECKO
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TREECKO
+	givemon SPECIES_TREECKO, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_MUDKIP
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MUDKIP
+	givemon SPECIES_MUDKIP, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_TORCHIC
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TORCHIC
+	givemon SPECIES_TORCHIC, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Applin::
+	bufferspeciesname STR_VAR_1, SPECIES_APPLIN
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_APPLIN
+	givemon SPECIES_APPLIN, 5, ITEM_SYRUPY_APPLE, ITEM_PREMIER_BALL
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Tinkatink::
+	bufferspeciesname STR_VAR_1, SPECIES_TINKATINK
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TINKATINK
+	givemon SPECIES_TINKATINK, 5, ITEM_NUGGET, ITEM_PREMIER_BALL
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_JustShowMe::
+	setflag FLAG_SYS_SHOW_ALL_DEXNAV_MONS
+	playfanfare MUS_OBTAIN_ITEM
+	message MysteryGift_Text_SucceededText_DexNavCode
+	waitfanfare
+	releaseall
+	end
+
+MysteryGift_EventScript_WishingStars::
+	giveitem ITEM_WISHING_STAR, 99
+	releaseall
+	end
+
+MysteryGift_EventScript_Nuggets::
+	giveitem ITEM_NUGGET, 99
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Bug::
+	randomelement SPECIES_CATERPIE, SPECIES_WEEDLE, SPECIES_PARAS, SPECIES_VENONAT, SPECIES_SCYTHER, SPECIES_PINSIR, SPECIES_LEDYBA, SPECIES_SPINARAK, SPECIES_YANMA, SPECIES_PINECO, SPECIES_SHUCKLE, SPECIES_HERACROSS, SPECIES_WURMPLE, SPECIES_SURSKIT, SPECIES_NINCADA, SPECIES_ANORITH
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Dark::
+	randomelement SPECIES_EKANS, SPECIES_MURKROW, SPECIES_SNEASEL, SPECIES_HOUNDOUR, SPECIES_POOCHYENA, SPECIES_SABLEYE, SPECIES_CARVANHA, SPECIES_ABSOL
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Dragon::
+	randomelement SPECIES_DRATINI, SPECIES_BAGON
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Electric::
+	randomelement SPECIES_PICHU, SPECIES_MAGNEMITE, SPECIES_VOLTORB, SPECIES_ELEKID, SPECIES_CHINCHOU, SPECIES_MAREEP, SPECIES_ELECTRIKE, SPECIES_PLUSLE, SPECIES_MINUN, SPECIES_VOLBEAT
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Fairy::
+	randomelement SPECIES_CLEFFA, SPECIES_VULPIX, SPECIES_IGGLYBUFF, SPECIES_MIME_JR, SPECIES_TOGEPI, SPECIES_AZURILL, SPECIES_SNUBBULL, SPECIES_RALTS, SPECIES_MAWILE, SPECIES_ILLUMISE, SPECIES_SWABLU
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Fighting::
+	randomelement SPECIES_MANKEY, SPECIES_MACHOP, SPECIES_FARFETCHD, SPECIES_TYROGUE, SPECIES_HERACROSS, SPECIES_MAKUHITA, SPECIES_MEDITITE, 
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Fire::
+	randomelement SPECIES_CHARMANDER, SPECIES_VULPIX, SPECIES_GROWLITHE, SPECIES_PONYTA, SPECIES_MAGBY, SPECIES_CYNDAQUIL, SPECIES_SLUGMA, SPECIES_HOUNDOUR, SPECIES_TORCHIC, SPECIES_NUMEL, SPECIES_TORKOAL
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Flying::
+	randomelement SPECIES_PIDGEY, SPECIES_SPEAROW, SPECIES_ZUBAT, SPECIES_FARFETCHD, SPECIES_DODUO, SPECIES_SCYTHER, SPECIES_AERODACTYL, SPECIES_HOOTHOOT, SPECIES_LEDYBA, SPECIES_NATU, SPECIES_HOPPIP, SPECIES_YANMA, SPECIES_MURKROW, SPECIES_GLIGAR, SPECIES_DELIBIRD, SPECIES_MANTYKE, SPECIES_SKARMORY, SPECIES_TAILLOW, SPECIES_WINGULL, SPECIES_TROPIUS
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Ghost::
+	randomelement SPECIES_GASTLY, SPECIES_MISDREAVUS, SPECIES_SABLEYE, SPECIES_SHUPPET, SPECIES_DUSKULL
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Grass::
+	randomelement SPECIES_BULBASAUR, SPECIES_ODDISH, SPECIES_BELLSPROUT, SPECIES_EXEGGCUTE, SPECIES_TANGELA, SPECIES_CHIKORITA, SPECIES_HOPPIP, SPECIES_SUNKERN, SPECIES_TREECKO, SPECIES_LOTAD, SPECIES_SEEDOT, SPECIES_SHROOMISH, SPECIES_BUDEW, SPECIES_CACNEA, SPECIES_LILEEP, SPECIES_TROPIUS
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Ground::
+	randomelement SPECIES_SANDSHREW, SPECIES_DIGLETT, SPECIES_GEODUDE, SPECIES_DODUO, SPECIES_ONIX, SPECIES_CUBONE, SPECIES_RHYHORN, SPECIES_WOOPER, SPECIES_GLIGAR, SPECIES_SWINUB, SPECIES_PHANPY, SPECIES_LARVITAR, SPECIES_NUMEL, SPECIES_TRAPINCH, SPECIES_BARBOACH, SPECIES_BALTOY
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Ice::
+	randomelement SPECIES_SEEL, SPECIES_SMOOCHUM, SPECIES_LAPRAS, SPECIES_SNEASEL, SPECIES_SWINUB, SPECIES_DELIBIRD, SPECIES_SNORUNT, SPECIES_SPHEAL
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Normal::
+	randomelement SPECIES_RATTATA, SPECIES_SPEAROW, SPECIES_IGGLYBUFF, SPECIES_MEOWTH, SPECIES_LICKITUNG, SPECIES_HAPPINY, SPECIES_KANGASKHAN, SPECIES_TAUROS, SPECIES_DITTO, SPECIES_EEVEE, SPECIES_PORYGON, SPECIES_MUNCHLAX, SPECIES_SENTRET, SPECIES_AIPOM, SPECIES_GIRAFARIG, SPECIES_DUNSPARCE, SPECIES_TEDDIURSA, SPECIES_STANTLER, SPECIES_SMEARGLE, SPECIES_MILTANK, SPECIES_ZIGZAGOON, SPECIES_TAILLOW, SPECIES_SLAKOTH, SPECIES_WHISMUR, SPECIES_SKITTY, SPECIES_SPINDA, SPECIES_ZANGOOSE, SPECIES_CASTFORM_NORMAL, SPECIES_KECLEON, SPECIES_SHUPPET
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Poison::
+	randomelement SPECIES_BULBASAUR, SPECIES_WEEDLE, SPECIES_EKANS, SPECIES_NIDORAN_F, SPECIES_NIDORAN_M, SPECIES_ZUBAT, SPECIES_ODDISH, SPECIES_VENONAT, SPECIES_BELLSPROUT, SPECIES_TENTACOOL, SPECIES_GRIMER, SPECIES_GASTLY, SPECIES_KOFFING, SPECIES_SPINARAK, SPECIES_QWILFISH, SPECIES_BUDEW, SPECIES_GULPIN, SPECIES_SEVIPER
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Psychic::
+	randomelement SPECIES_ABRA, SPECIES_SLOWPOKE, SPECIES_DROWZEE, SPECIES_EXEGGCUTE, SPECIES_MIME_JR, SPECIES_SMOOCHUM, SPECIES_NATU, SPECIES_WYNAUT, SPECIES_GIRAFARIG, SPECIES_RALTS, SPECIES_MEDITITE, SPECIES_SPOINK, SPECIES_LUNATONE, SPECIES_SOLROCK, SPECIES_BALTOY, SPECIES_CHINGLING, SPECIES_BELDUM
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Rock::
+	randomelement SPECIES_GEODUDE, SPECIES_ONIX, SPECIES_RHYHORN, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_AERODACTYL, SPECIES_BONSLY, SPECIES_SHUCKLE, SPECIES_CORSOLA, SPECIES_LARVITAR, SPECIES_NOSEPASS, SPECIES_ARON, SPECIES_LUNATONE, SPECIES_SOLROCK, SPECIES_LILEEP, SPECIES_ANORITH, SPECIES_RELICANTH
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Steel::
+	randomelement SPECIES_MAGNEMITE, SPECIES_SKARMORY, SPECIES_MAWILE, SPECIES_ARON, SPECIES_CHINGLING, SPECIES_BELDUM
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Monotype_Water::
+	randomelement SPECIES_SQUIRTLE, SPECIES_PSYDUCK, SPECIES_POLIWAG, SPECIES_TENTACOOL, SPECIES_SLOWPOKE, SPECIES_SEEL, SPECIES_SHELLDER, SPECIES_KRABBY, SPECIES_HORSEA, SPECIES_GOLDEEN, SPECIES_STARYU, SPECIES_MAGIKARP, SPECIES_LAPRAS, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_TOTODILE, SPECIES_CHINCHOU, SPECIES_WOOPER, SPECIES_QWILFISH, SPECIES_CORSOLA, SPECIES_REMORAID, SPECIES_MANTYKE, SPECIES_MUDKIP, SPECIES_LOTAD, SPECIES_WINGULL, SPECIES_SURSKIT, SPECIES_CARVANHA, SPECIES_WAILMER, SPECIES_BARBOACH, SPECIES_CORPHISH, SPECIES_FEEBAS, SPECIES_SPHEAL, SPECIES_CLAMPERL, SPECIES_RELICANTH, SPECIES_LUVDISC
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+
+MysteryGift_Text_WelcomeToMysteryGiftSystem:
+	.string "Hello, {PLAYER}!\p"
+	.string "Welcome to the Cheat Code System!\p"
+	.string "Would you like to enter a code?$"
+
+MysteryGift_Text_CurrentlyUnavailable:
+	.string "I'm sorry, but the Mystery Gift System\n"
+	.string "is currently unavailable.\p"
+	.string "Please try again later.\p"
+	.string "Thank you!$"
+
+MysteryGift_Text_PleaseVisitAgain:
+	.string "Please visit again!$"
+
+MysteryGift_Text_EnterCode:
+	.string "Please enter the code.$"
+
+MysteryGift_Text_SucceededText:
+	.string "The code was valid!\p"
+	.string "Enjoy your gift!$"
+
+MysteryGift_Text_SucceededText_DexNavCode:
+	.string "The code was valid! POKéMON will\n"
+	.string "all be shown in the DexNav menu!$"
+
+MysteryGift_Text_FailedText:
+	.string "The code was invalid!\p"
+	.string "Would you like to enter a new code?$"
+
+MysteryGift_Text_RedeemedText:
+	.string "This code was already redeemed!\p"
+	.string "Would you like you enter a new code?$"
+
+MysteryGift_Text_ReceivedGiftMon:
+	.string "{PLAYER} received a {STR_VAR_1}!$"
 
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"

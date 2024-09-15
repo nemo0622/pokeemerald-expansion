@@ -11,16 +11,12 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 ## Feature List
 - Day/Night System with FakeRTC
     - Every second in real time is 20 seconds in game
-- DexNav functionality, with FLAG_SYS_SHOW_ALL_DEXNAV_MONS to show all DexNav mons without needing to encounter them first
+- DexNav functionality, including bug fixed from Emerald Seaglass
+    - Including Cheat Code to show all DexNav Pokémon from the start: "JUSTSHOWME"
 - NPC speaker name shown above text box ("speakername" command)
 
 ## Future Development Plans
 STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to the west, that has recently undergone mass migration events and ecological changes. You play as a college-aged student doing field research at your school's Field Station on the archipelago. Travel around the islands in a semi-open-world setting, helping people and completing tasks to earn Prestige Badges. Filling the Pokédex is the main goal of the game, with some landmarks and Badges being locked behind Pokédex requirements. Many of the trainers you encounter on the islands are other Field Research Students - some islands are inhabited with traditional towns, while others are totally wild aside from other students.
-
-- Feature Branches to merge early:
-    - Mugshot system on page (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches)
-    - Consider the Crafting System? (https://github.com/redsquidz/pokeemerald/wiki/Craft-Menu)
-    - Town Map port (if decide to get rid of Pokénav) (https://github.com/Voluptua/pokeemerald/tree/expansion-town-map)
 
 - Other features to add early:
     - Cheat code functionality (https://github.com/PCG06/pokeemerald/tree/MysteryGiftCodes)
@@ -28,10 +24,10 @@ STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to th
     - Toggle alternative encounter tables (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Easily-Toggle-Different-Wild-Encounter-Tables)
         - Ex: Make all encounters on a map into Nincada during a cicada emergence event
     - Pokédex viewable in Party menu
-    - Access PC in PokéNav?
 
 - THEN, MERGE IN SEAGLASS GRAPHICS
     - Object events, followers, and Pokémon in-battle sprites!
+        - Remember to also bring over credits!
     - Some UI elements - battle UI, text boxes, DexNav elements
         - BEFORE MERGING TEXT BOXES: make sure not to port message box directly! remember the name plates!
 - ALSO MERGE SOME OTHER IMPORTANT CHANGES
@@ -42,7 +38,7 @@ STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to th
         - Scurry: Signature ability of Crocky, increases Evasiveness when sent out
     - New Pokémon
         - Crocky and Kotora (commissioned sprites)
-        - A few other beta Pokémon (Ice type Werewolves)
+        - A few other beta Pokémon (Ice type Werewolves) (https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Pok%C3%A9mon)
         - Commission Thylacine Pokémon? Ghost/Normal type or Ghost/Rock type?
 
 - THEN, IMPLEMENT PORYSCRIPT!
@@ -67,5 +63,9 @@ STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to th
 - DexNav chain count and directional arrow not shown correctly when hunting
 
 ## Credits
+Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
+
+### Feature Branches
 - Day/Night System created by merrp, and updated to pokeemerald-expansion by Greenphx9
 - DexNav feature branch by ghoulslash
+- Name Box branch by Tustin2121

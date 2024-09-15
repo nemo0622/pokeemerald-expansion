@@ -2889,6 +2889,7 @@ extern const u8 gText_YourName[];
 extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
+extern const u8 gText_MysteryGiftCode[];
 
 // Exp. Share
 extern const u8 gText_ExpShareOn[];

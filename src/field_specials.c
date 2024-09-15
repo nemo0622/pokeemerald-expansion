@@ -27,6 +27,7 @@
 #include "mystery_gift.h"
 #include "match_call.h"
 #include "menu.h"
+#include "naming_screen.h"
 #include "overworld.h"
 #include "party_menu.h"
 #include "pokeblock.h"
@@ -4277,4 +4278,141 @@ void PreparePartyForSkyBattle(void)
     }
     VarSet(B_VAR_SKY_BATTLE,participatingPokemonSlot);
     CompactPartySlots();
+}
+
+void EnterMysteryGiftCode(void)
+{
+    DoNamingScreen(NAMING_SCREEN_MYSTERY_GIFT, gStringVar2, 0, 0, 0, CB2_ReturnToFieldContinueScript);
+}
+
+void GetMysteryGiftFeedback(void)
+{
+    // The codes.
+    static const u8 sText_CodeRareCandies[]    = _("9RARECANDY");
+    static const u8 sText_CodeMasterBalls[]   = _("MASTERBALL");
+    static const u8 sText_CodeSpheal[]   = _("ILOVSPHEAL");
+    static const u8 sText_CodeAipom[]   = _("ILOVEAIPOM");
+    static const u8 sText_CodeKantoStarters[]   = _("ILOVEKANTO");
+    static const u8 sText_CodeJohtoStarters[]  = _("ILOVEJOHTO");
+    static const u8 sText_CodeHoennStarters[]     = _("ILOVEHOENN");
+    static const u8 sText_CodeApplin[] = _("ILOVEAPPLE");
+    static const u8 sText_CodeTinkatink[] = _("ILOVETINKA");
+    static const u8 sText_CodeJustShowMe[] = _("JUSTSHOWME");
+    static const u8 sText_CodeWishingStars[] = _("WISHINGSTR");
+    static const u8 sText_CodeNuggets[] = _("GIMMENUGS!");
+    
+    static const u8 sText_CodeMonotype_Bug[] = _("MONO BUG");
+    static const u8 sText_CodeMonotype_Dark[] = _("MONO DARK");
+    static const u8 sText_CodeMonotype_Dragon[] = _("MONO DRAGN");
+    static const u8 sText_CodeMonotype_Electric[] = _("MONO ELECT");
+    static const u8 sText_CodeMonotype_Fairy[] = _("MONO FAIRY");
+    static const u8 sText_CodeMonotype_Fighting[] = _("MONO FIGHT");
+    static const u8 sText_CodeMonotype_Fire[] = _("MONO FIRE");
+    static const u8 sText_CodeMonotype_Flying[] = _("MONO FLYIN");
+    static const u8 sText_CodeMonotype_Ghost[] = _("MONO GHOST");
+    static const u8 sText_CodeMonotype_Grass[] = _("MONO GRASS");
+    static const u8 sText_CodeMonotype_Ground[] = _("MONO GROUN");
+    static const u8 sText_CodeMonotype_Ice[] = _("MONO ICE");
+    static const u8 sText_CodeMonotype_Normal[] = _("MONO NORML");
+    static const u8 sText_CodeMonotype_Poison[] = _("MONO POISN");
+    static const u8 sText_CodeMonotype_Psychic[] = _("MONO PSYCH");
+    static const u8 sText_CodeMonotype_Rock[] = _("MONO ROCK");
+    static const u8 sText_CodeMonotype_Steel[] = _("MONO STEEL");
+    static const u8 sText_CodeMonotype_Water[] = _("MONO WATER");
+
+    // Code 1
+    if (!StringCompare(gStringVar2, sText_CodeRareCandies))
+        gSpecialVar_Result = 1;
+    // Code 2
+    else if (!StringCompare(gStringVar2, sText_CodeMasterBalls))
+        gSpecialVar_Result = 2;
+    // Code 3
+    else if (!StringCompare(gStringVar2, sText_CodeSpheal))
+        gSpecialVar_Result = 3;
+    // Code 4
+    else if (!StringCompare(gStringVar2, sText_CodeAipom))
+        gSpecialVar_Result = 4;
+    // Code 5
+    else if (!StringCompare(gStringVar2, sText_CodeKantoStarters))
+        gSpecialVar_Result = 5;
+    // Code 6
+    else if (!StringCompare(gStringVar2, sText_CodeJohtoStarters))
+        gSpecialVar_Result = 6;
+    // Code 7
+    else if (!StringCompare(gStringVar2, sText_CodeHoennStarters))
+        gSpecialVar_Result = 7;
+    // Code 8
+    else if (!StringCompare(gStringVar2, sText_CodeApplin))
+        gSpecialVar_Result = 8;
+    // Code 9
+    else if (!StringCompare(gStringVar2, sText_CodeTinkatink))
+        gSpecialVar_Result = 9;
+    // Code 10
+    else if (!StringCompare(gStringVar2, sText_CodeJustShowMe))
+        gSpecialVar_Result = 10;
+    // Code 11
+    else if (!StringCompare(gStringVar2, sText_CodeWishingStars))
+        gSpecialVar_Result = 11;
+    // Code 12
+    else if (!StringCompare(gStringVar2, sText_CodeNuggets))
+        gSpecialVar_Result = 12;
+    
+    // Code 13
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Bug))
+        gSpecialVar_Result = 13;
+    // Code 14
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Dark))
+        gSpecialVar_Result = 14;
+    // Code 15
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Dragon))
+        gSpecialVar_Result = 15;
+    // Code 16
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Electric))
+        gSpecialVar_Result = 16;
+    // Code 17
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Fairy))
+        gSpecialVar_Result = 17;
+    // Code 18
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Fighting))
+        gSpecialVar_Result = 18;
+    // Code 19
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Fire))
+        gSpecialVar_Result = 19;
+    // Code 20
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Flying))
+        gSpecialVar_Result = 20;
+    // Code 21
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Ghost))
+        gSpecialVar_Result = 21;
+    // Code 22
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Grass))
+        gSpecialVar_Result = 22;
+    // Code 23
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Ground))
+        gSpecialVar_Result = 23;
+    // Code 24
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Ice))
+        gSpecialVar_Result = 24;
+    // Code 25
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Normal))
+        gSpecialVar_Result = 25;
+    // Code 26
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Poison))
+        gSpecialVar_Result = 26;
+    // Code 27
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Psychic))
+        gSpecialVar_Result = 27;
+    // Code 28
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Rock))
+        gSpecialVar_Result = 28;
+    // Code 29
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Steel))
+        gSpecialVar_Result = 29;
+    // Code 30
+    else if (!StringCompare(gStringVar2, sText_CodeMonotype_Water))
+        gSpecialVar_Result = 30;
+
+    // Invalid cheat code
+    else
+        gSpecialVar_Result = 0;
 }
