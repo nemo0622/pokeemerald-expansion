@@ -1885,12 +1885,6 @@
 	_dynmultichoice \left, \top, \ignoreBPress, \maxBeforeScroll, \shouldSort, \initialSelected, \callbacks, NULL
 	.endm
 
-	@ Sets the text of the name box in the next-shown message box.
-	.macro speakername text:req
-	.byte 0xe3
-	.4byte \text
-	.endm
-
 	@ Opens the Pokemart system, offering the specified products for sale.
 	@ Products should be a list of .2byte item values preceded by an .align 2
 	@ Uses BP as currency, with the prices based on the .bpCost value

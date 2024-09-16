@@ -230,7 +230,6 @@ gScriptCmdTable::
 	.4byte ScrCmd_dynmultichoice                    @ 0xe3
 	.4byte ScrCmd_dynmultipush                      @ 0xe4
 	.4byte ScrCmd_checkpartymon
-	.4byte ScrCmd_setspeaker
 	.4byte ScrCmd_bpmart 							@ 0xe5
 
 gScriptCmdTableEnd::
