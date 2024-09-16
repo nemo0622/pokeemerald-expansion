@@ -45,6 +45,7 @@
 #include "palette.h"
 #include "party_menu.h"
 #include "player_pc.h"
+#include "pokedex_plus_hgss.h"
 #include "pokemon.h"
 #include "pokemon_icon.h"
 #include "pokemon_jump.h"
@@ -104,7 +105,8 @@ enum {
     MENU_CATALOG_MOWER,
     MENU_CHANGE_FORM,
     MENU_CHANGE_ABILITY,
-    MENU_FIELD_MOVES
+    MENU_POKEDEX,
+    MENU_FIELD_MOVES,
 };
 
 // IDs for the action lists that appear when a party mon is selected
@@ -206,7 +208,7 @@ struct PartyMenuInternal
     u32 spriteIdCancelPokeball:7;
     u32 messageId:14;
     u8 windowId[3];
-    u8 actions[8];
+    u8 actions[9];
     u8 numActions;
     // In vanilla Emerald, only the first 0xB0 hwords (0x160 bytes) are actually used.
     // However, a full 0x100 hwords (0x200 bytes) are allocated.
@@ -506,6 +508,7 @@ static bool8 SetUpFieldMove_Dive(void);
 void TryItemHoldFormChange(struct Pokemon *mon);
 static void ShowMoveSelectWindow(u8 slot);
 static void Task_HandleWhichMoveInput(u8 taskId);
+static void CursorCb_Pokedex(u8 taskId);
 
 // static const data
 #include "data/party_menu.h"
@@ -2817,6 +2820,9 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_MAIL);
         else
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_ITEM);
+
+        if(FlagGet(FLAG_SYS_POKEDEX_GET))
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_POKEDEX);
     }
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_CANCEL1);
 }
@@ -7767,4 +7773,13 @@ void IsLastMonThatKnowsSurf(void)
         if (AnyStorageMonWithMove(move) != TRUE)
             gSpecialVar_Result = !P_CAN_FORGET_HIDDEN_MOVE;
     }
+}
+
+static void CursorCb_Pokedex(u8 taskId)
+{
+    gSpeciesToLoad = GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_SPECIES);
+
+    PlaySE(SE_SELECT);
+    sPartyMenuInternal->exitCallback = CB2_OpenPokedexPlusHGSS;
+    Task_ClosePartyMenu(taskId);
 }
