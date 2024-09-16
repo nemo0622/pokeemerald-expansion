@@ -20,6 +20,7 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
     - Can find codes in documentation
 - Various QOL Changes, such as:
     - Expanded BAG space to 50 Items
+    - Shiny Indicator for wild Pokémon
 
 ## Future Development Plans
 STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to the west, that has recently undergone mass migration events and ecological changes. You play as a college-aged student doing field research at your school's Field Station on the archipelago. Travel around the islands in a semi-open-world setting, helping people and completing tasks to earn Prestige Badges. Filling the Pokédex is the main goal of the game, with some landmarks and Badges being locked behind Pokédex requirements. Many of the trainers you encounter on the islands are other Field Research Students - some islands are inhabited with traditional towns, while others are totally wild aside from other students.
@@ -27,14 +28,13 @@ STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to th
 - Other features to add early:
     - Toggle alternative encounter tables (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Easily-Toggle-Different-Wild-Encounter-Tables)
         - Ex: Make all encounters on a map into Nincada during a cicada emergence event
-    - Shiny indicator in battle (search "glyph" in RHH discord)
     - Merrp's Guillotine branch
 
 - THEN, MERGE IN SEAGLASS GRAPHICS
     - Object events, followers, and Pokémon in-battle sprites!
         - Remember to also bring over credits!
     - Some UI elements - battle UI, text boxes, DexNav elements
-        - BEFORE MERGING TEXT BOXES: make sure not to port message box directly! remember the name plates!
+        - DO NOT BRING OVER FONT FILES THOUGH
 - ALSO MERGE SOME OTHER IMPORTANT CHANGES
     - Press L to auto-run, R to register DexNav Pokémon, and make sure creeping with DexNav overrules autorun
 

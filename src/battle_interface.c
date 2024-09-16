@@ -1743,6 +1743,11 @@ static void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
         break;
     }
 
+    bool8 shinyStatus;
+    shinyStatus = GetMonData(mon, MON_DATA_IS_SHINY);
+    if(shinyStatus == TRUE)
+        StringAppend(ptr, gText_ShinyIndicator);
+
     windowTileData = AddTextPrinterAndCreateWindowOnHealthboxToFit(gDisplayedStringBattle, 0, 3, 2, &windowId, 55);
 
     spriteTileNum = gSprites[healthboxSpriteId].oam.tileNum * TILE_SIZE_4BPP;
@@ -1775,6 +1780,9 @@ static void TryAddPokeballIconToHealthbox(u8 healthboxSpriteId, bool8 noStatus)
         return;
 
     battlerId = gSprites[healthboxSpriteId].hMain_Battler;
+
+    if(battlerId)
+
     if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
         return;
     if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(GetMonData(&gEnemyParty[gBattlerPartyIndexes[battlerId]], MON_DATA_SPECIES)), FLAG_GET_CAUGHT))
