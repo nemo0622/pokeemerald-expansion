@@ -18,17 +18,14 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
     - Codes for 99 items, such as Rare Candies and Nuggets
     - Codes for a random starter of a selected type (good for monotype runs or randomized starters!)
     - Can find codes in documentation
+- Variable Wild Encounters, randomized between a few balanced preset options every New Game
+    - Uses: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Easily-Toggle-Different-Wild-Encounter-Tables
 - Various QOL Changes, such as:
     - Expanded BAG space to 50 Items
     - Shiny Indicator for wild Pokémon
 
 ## Future Development Plans
 STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to the west, that has recently undergone mass migration events and ecological changes. You play as a college-aged student doing field research at your school's Field Station on the archipelago. Travel around the islands in a semi-open-world setting, helping people and completing tasks to earn Prestige Badges. Filling the Pokédex is the main goal of the game, with some landmarks and Badges being locked behind Pokédex requirements. Many of the trainers you encounter on the islands are other Field Research Students - some islands are inhabited with traditional towns, while others are totally wild aside from other students.
-
-- Other features to add early:
-    - Toggle alternative encounter tables (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Easily-Toggle-Different-Wild-Encounter-Tables)
-        - Ex: Make all encounters on a map into Nincada during a cicada emergence event
-    - Merrp's Guillotine branch
 
 - THEN, MERGE IN SEAGLASS GRAPHICS
     - Object events, followers, and Pokémon in-battle sprites!
@@ -75,3 +72,4 @@ Many, many talented developers and artists are responsible for making this proje
 - DexNav feature branch by ghoulslash
 - Name Box branch by Tustin2121
 - View Pokédex from Party Menu by RavePossum
+- Different Wild Encounter Tables by Bivurnum

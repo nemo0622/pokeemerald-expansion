@@ -273,8 +273,9 @@
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
+#define VAR_ENCOUNTER_TABLE_INDEX_ROUTE101               0x4100 // encounter table index of route 101 (for testing)
 
-#define VARS_END                                         0x40FF
+#define VARS_END                                         0x4100
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
 
 #define SPECIAL_VARS_START            0x8000
