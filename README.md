@@ -28,10 +28,8 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to the west, that has recently undergone mass migration events and ecological changes. You play as a college-aged student doing field research at your school's Field Station on the archipelago. Travel around the islands in a semi-open-world setting, helping people and completing tasks to earn Prestige Badges. Filling the Pokédex is the main goal of the game, with some landmarks and Badges being locked behind Pokédex requirements. Many of the trainers you encounter on the islands are other Field Research Students - some islands are inhabited with traditional towns, while others are totally wild aside from other students.
 
 - THEN, MERGE IN SEAGLASS GRAPHICS
-    - Object events, followers, and Pokémon in-battle sprites!
-        - Remember to also bring over credits!
     - Some UI elements - battle UI, text boxes, DexNav elements
-        - DO NOT BRING OVER FONT FILES THOUGH
+        - Update text colors! Party menu, summary screen, etc
 - ALSO MERGE SOME OTHER IMPORTANT CHANGES
     - Press L to auto-run, R to register DexNav Pokémon, and make sure creeping with DexNav overrules autorun
 
@@ -73,3 +71,25 @@ Many, many talented developers and artists are responsible for making this proje
 - Name Box branch by Tustin2121
 - View Pokédex from Party Menu by RavePossum
 - Different Wild Encounter Tables by Bivurnum
+
+### Graphics
+- Pokémon Sprites:
+    - Most Generation 3 and 9 Pokémon sprites by [Egg](https://x.com/Egg3ggEgg) on Twitter
+    - Many Generation 3 and other Pokémon sprites by [Nuukiie](https://www.deviantart.com/nuukiie) on DeviantArt
+    - Many Generation 4 sprites by ESY on DeviantArt
+    - Some Hisuian Pokémon sprites (Kleavor and Ursaluna) by Katten and dwg1109 on DeviantArt
+    - Generation 1-2 Pokémon and many UI sprites from Spriter's Resource GSC sprite sheets
+    - Spiky-ear Pichu sprite based on Pichu devamp by Matdemo159 on DeviantArt
+    - A few modified Gen 1-2 Pokémon sprites (Golduck, Aipom, Politoed) by Substitube
+    - Hydrapple line sprites and various other gen 2 style sprites (Charizard, Dudunsparce, Porygon line) by SageDeoxys on Twitter
+    - Alolan Sandshrew/Sandslash and Alolan Vulpix/Ninetales sprites by wittycrow on DeviantArt
+- Overworld Pokémon Sprites:
+    - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
+    - Megaman-Omega on DeviantArt: Onix, Steelix, Lugia, Ho-oh, Lotad, Lombre, Ludicolo, Taillow, Swellow, Surskit, Masquerain, Shroomish, Breloom, Whismur, Loudred, Exploud, Makuhita, Hariyama, Sableye, Mawile, Aron, Lairon, Aggron, Volbeat, Illumise, Torkoal, Cacnea, Cacturne, Swablu, Altaria, Lileep, Cradily, Anorith, Armaldo, Feebas, Milotic, Shuppet, Banette, Duskull, Dusclops, Chimecho, Absol, Relicanth, Bagon, Salamence, Kyogre, Groudon, Rayquaza, Tangrowth, Electivire, Magmortar, Gliscor, Mamoswine, Gallade, Froslass, Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon
+    - Eeveeee: Spoink, Kleavor
+    - SageDeoxys: Wyrdeer
+    - .kedoshim: Ursaluna
+    - Mudskip: Applin
+    - Jaquelion: Dipplin, Hydrapple
+    - DarkusShadow: base Tinkaton line sprites (GBA style)
+    - Many others by resource from Mano_Emet on Discord (Created by Megaman-Omega)
