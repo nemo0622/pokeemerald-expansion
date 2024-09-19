@@ -629,7 +629,7 @@ static const struct SpriteFrameImage sPicTable_Tate[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_Wallace[] = {
-    overworld_ascending_frames(gObjectEventPic_Wallace, 2, 4),
+    overworld_ascending_frames(gObjectEventPic_Wallace, 4, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Steven[] = {

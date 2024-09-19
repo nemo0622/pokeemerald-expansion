@@ -965,7 +965,7 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 # 483 "data/maps/Route119/scripts.pory"
 Route119_Text_MayIntro:
 # 484 "data/maps/Route119/scripts.pory"
-	.string "LYRA: {PLAYER}{KUN}!\n"
+	.string "MAY: {PLAYER}{KUN}!\n"
 # 485 "data/maps/Route119/scripts.pory"
 	.string "Where were you? I was looking for you!\p"
 # 486 "data/maps/Route119/scripts.pory"
@@ -993,7 +993,7 @@ Route119_Text_MayDefeat:
 # 497 "data/maps/Route119/scripts.pory"
 Route119_Text_MayPresentForYou:
 # 498 "data/maps/Route119/scripts.pory"
-	.string "LYRA: But I had absolutely nothing to\n"
+	.string "MAY: But I had absolutely nothing to\n"
 # 499 "data/maps/Route119/scripts.pory"
 	.string "worry about! Keep it up!\p"
 # 500 "data/maps/Route119/scripts.pory"
@@ -1003,7 +1003,7 @@ Route119_Text_MayPresentForYou:
 # 502 "data/maps/Route119/scripts.pory"
 Route119_Text_MayExplainFly:
 # 503 "data/maps/Route119/scripts.pory"
-	.string "LYRA: Use FLY, and your POKéMON will\n"
+	.string "MAY: Use FLY, and your POKéMON will\n"
 # 504 "data/maps/Route119/scripts.pory"
 	.string "instantly carry you to any town you've\l"
 # 505 "data/maps/Route119/scripts.pory"
@@ -1029,7 +1029,7 @@ Route119_Text_MayExplainFly:
 # 515 "data/maps/Route119/scripts.pory"
 Route119_Text_BrendanIntro:
 # 516 "data/maps/Route119/scripts.pory"
-	.string "ETHAN: {PLAYER}! So this is where\n"
+	.string "BRENDAN: {PLAYER}! So this is where\n"
 # 517 "data/maps/Route119/scripts.pory"
 	.string "you've been looking for POKéMON?\p"
 # 518 "data/maps/Route119/scripts.pory"
@@ -1053,7 +1053,7 @@ Route119_Text_BrendanDefeat:
 # 527 "data/maps/Route119/scripts.pory"
 Route119_Text_BrendanIllGiveYouThis:
 # 528 "data/maps/Route119/scripts.pory"
-	.string "ETHAN: I'd say you're good enough\n"
+	.string "BRENDAN: I'd say you're good enough\n"
 # 529 "data/maps/Route119/scripts.pory"
 	.string "to search for POKéMON anywhere.\p"
 # 530 "data/maps/Route119/scripts.pory"
@@ -1065,7 +1065,7 @@ Route119_Text_BrendanIllGiveYouThis:
 # 533 "data/maps/Route119/scripts.pory"
 Route119_Text_BrendanExplainFly:
 # 534 "data/maps/Route119/scripts.pory"
-	.string "ETHAN: Use FLY, and your POKéMON\n"
+	.string "BRENDAN: Use FLY, and your POKéMON\n"
 # 535 "data/maps/Route119/scripts.pory"
 	.string "instantly carries you to any town\l"
 # 536 "data/maps/Route119/scripts.pory"

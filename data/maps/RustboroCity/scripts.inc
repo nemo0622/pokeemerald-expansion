@@ -2275,7 +2275,7 @@ RustboroCity_Text_PleaseComeWithMe:
 # 1138 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayHiLetsRegister:
 # 1139 "data/maps/RustboroCity/scripts.pory"
-	.string "LYRA: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
 # 1140 "data/maps/RustboroCity/scripts.pory"
 	.string "You had a MATCH CALL feature put\n"
 # 1141 "data/maps/RustboroCity/scripts.pory"
@@ -2291,7 +2291,7 @@ RustboroCity_Text_MayHiLetsRegister:
 # 1146 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_RegisteredMay:
 # 1147 "data/maps/RustboroCity/scripts.pory"
-	.string "Registered LYRA\n"
+	.string "Registered MAY\n"
 # 1148 "data/maps/RustboroCity/scripts.pory"
 	.string "in the POKéNAV.$"
 # 1149 "data/maps/RustboroCity/scripts.pory"
@@ -2299,7 +2299,7 @@ RustboroCity_Text_RegisteredMay:
 # 1150 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayPassedBrineyWantToBattle:
 # 1151 "data/maps/RustboroCity/scripts.pory"
-	.string "LYRA: Oh, by the way, I passed\n"
+	.string "MAY: Oh, by the way, I passed\n"
 # 1152 "data/maps/RustboroCity/scripts.pory"
 	.string "MR. BRINEY in PETALBURG WOODS.\p"
 # 1153 "data/maps/RustboroCity/scripts.pory"
@@ -2319,7 +2319,7 @@ RustboroCity_Text_MayPassedBrineyWantToBattle:
 # 1160 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
 # 1161 "data/maps/RustboroCity/scripts.pory"
-	.string "LYRA: Oh, what's the matter?\p"
+	.string "MAY: Oh, what's the matter?\p"
 # 1162 "data/maps/RustboroCity/scripts.pory"
 	.string "Haven't you caught or raised your\n"
 # 1163 "data/maps/RustboroCity/scripts.pory"
@@ -2331,7 +2331,7 @@ RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
 # 1166 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayWantToBattle:
 # 1167 "data/maps/RustboroCity/scripts.pory"
-	.string "LYRA: So, what do you think?\n"
+	.string "MAY: So, what do you think?\n"
 # 1168 "data/maps/RustboroCity/scripts.pory"
 	.string "How about a little battle here?$"
 # 1169 "data/maps/RustboroCity/scripts.pory"
@@ -2339,7 +2339,7 @@ RustboroCity_Text_MayWantToBattle:
 # 1170 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayImNotGoingToLose:
 # 1171 "data/maps/RustboroCity/scripts.pory"
-	.string "LYRA: You just became a TRAINER,\n"
+	.string "MAY: You just became a TRAINER,\n"
 # 1172 "data/maps/RustboroCity/scripts.pory"
 	.string "{PLAYER}{KUN}. I'm not going to lose!$"
 # 1173 "data/maps/RustboroCity/scripts.pory"
@@ -2355,7 +2355,7 @@ RustboroCity_Text_MayDefeat:
 # 1178 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_MayMrBrineyHint:
 # 1179 "data/maps/RustboroCity/scripts.pory"
-	.string "LYRA: Oh, by the way, MR. BRINEY, who\n"
+	.string "MAY: Oh, by the way, MR. BRINEY, who\n"
 # 1180 "data/maps/RustboroCity/scripts.pory"
 	.string "I just passed…\p"
 # 1181 "data/maps/RustboroCity/scripts.pory"
@@ -2369,7 +2369,7 @@ RustboroCity_Text_MayMrBrineyHint:
 # 1185 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanHiLetsRegister:
 # 1186 "data/maps/RustboroCity/scripts.pory"
-	.string "ETHAN: Oh, hey, {PLAYER}!\p"
+	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
 # 1187 "data/maps/RustboroCity/scripts.pory"
 	.string "You had a MATCH CALL feature put\n"
 # 1188 "data/maps/RustboroCity/scripts.pory"
@@ -2385,7 +2385,7 @@ RustboroCity_Text_BrendanHiLetsRegister:
 # 1193 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_RegisteredBrendan:
 # 1194 "data/maps/RustboroCity/scripts.pory"
-	.string "Registered ETHAN\n"
+	.string "Registered BRENDAN\n"
 # 1195 "data/maps/RustboroCity/scripts.pory"
 	.string "in the POKéNAV.$"
 # 1196 "data/maps/RustboroCity/scripts.pory"
@@ -2393,7 +2393,7 @@ RustboroCity_Text_RegisteredBrendan:
 # 1197 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 # 1198 "data/maps/RustboroCity/scripts.pory"
-	.string "ETHAN: By the way, {PLAYER}, I walked\n"
+	.string "BRENDAN: By the way, {PLAYER}, I walked\n"
 # 1199 "data/maps/RustboroCity/scripts.pory"
 	.string "by MR. BRINEY in PETALBURG WOODS.\p"
 # 1200 "data/maps/RustboroCity/scripts.pory"
@@ -2415,7 +2415,7 @@ RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 # 1208 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanNoConfidenceInPokemon:
 # 1209 "data/maps/RustboroCity/scripts.pory"
-	.string "ETHAN: What's the matter? Don't have\n"
+	.string "BRENDAN: What's the matter? Don't have\n"
 # 1210 "data/maps/RustboroCity/scripts.pory"
 	.string "any confidence in your POKéMON?$"
 # 1211 "data/maps/RustboroCity/scripts.pory"
@@ -2423,7 +2423,7 @@ RustboroCity_Text_BrendanNoConfidenceInPokemon:
 # 1212 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanWantToBattle:
 # 1213 "data/maps/RustboroCity/scripts.pory"
-	.string "ETHAN: What's up?\n"
+	.string "BRENDAN: What's up?\n"
 # 1214 "data/maps/RustboroCity/scripts.pory"
 	.string "Want to have a battle with me?$"
 # 1215 "data/maps/RustboroCity/scripts.pory"
@@ -2431,7 +2431,7 @@ RustboroCity_Text_BrendanWantToBattle:
 # 1216 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanIWontGoEasy:
 # 1217 "data/maps/RustboroCity/scripts.pory"
-	.string "ETHAN: I know you just became\n"
+	.string "BRENDAN: I know you just became\n"
 # 1218 "data/maps/RustboroCity/scripts.pory"
 	.string "a TRAINER, but I won't go easy!$"
 # 1219 "data/maps/RustboroCity/scripts.pory"
@@ -2447,7 +2447,7 @@ RustboroCity_Text_BrendanDefeat:
 # 1224 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_BrendanMrBrineyHint:
 # 1225 "data/maps/RustboroCity/scripts.pory"
-	.string "ETHAN: By the way, you know\n"
+	.string "BRENDAN: By the way, you know\n"
 # 1226 "data/maps/RustboroCity/scripts.pory"
 	.string "MR. BRINEY? The guy I just passed?\p"
 # 1227 "data/maps/RustboroCity/scripts.pory"
