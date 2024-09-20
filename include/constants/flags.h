@@ -1230,7 +1230,7 @@
 #define FLAG_ITEM_WISHING_STAR_ROUTE_114                            0x49C 
 #define FLAG_ITEM_LINKING_CORD_ROUTE_119                            0x49D
 #define FLAG_ITEM_LINKING_CORD_2_ROUTE_119                          0x49E
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
+#define FLAG_TOLD_SAFARI_IS_BUGGED                                  0x49F // Set if told by man in front of Safari Zone that it's bugged
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag

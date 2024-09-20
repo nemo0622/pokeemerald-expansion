@@ -382,3 +382,39 @@ Route121_Text_SafariZoneSign:
 	.string "“Filled with rare POKéMON!”\n"
 # 192 "data/maps/Route121/scripts.pory"
 	.string "SAFARI ZONE$"
+
+Route121_EventScript_SafariZoneWarningMan::
+# 198 "data/maps/Route121/scripts.pory"
+	lock
+# 199 "data/maps/Route121/scripts.pory"
+	faceplayer
+# 200 "data/maps/Route121/scripts.pory"
+	msgbox Route121_EventScript_SafariZoneWarningMan_Text_0
+# 201 "data/maps/Route121/scripts.pory"
+	closemessage
+# 202 "data/maps/Route121/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 203 "data/maps/Route121/scripts.pory"
+	delay 30
+# 204 "data/maps/Route121/scripts.pory"
+	setflag FLAG_TOLD_SAFARI_IS_BUGGED
+# 205 "data/maps/Route121/scripts.pory"
+	removeobject 30
+# 206 "data/maps/Route121/scripts.pory"
+	delay 30
+# 207 "data/maps/Route121/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 208 "data/maps/Route121/scripts.pory"
+	delay 20
+# 209 "data/maps/Route121/scripts.pory"
+	release
+	end
+
+
+Route121_EventScript_SafariZoneWarningMan_Text_0:
+# 200 "data/maps/Route121/scripts.pory"
+	.string "Want access to the SAFARI ZONE? Sure,\n"
+	.string "that's fine.\n"
+	.string "Just a warning though, the SAFARI ZONE\l"
+	.string "seems a bit... out of sorts. Make sure to\l"
+	.string "prepare for problems before entering.$"

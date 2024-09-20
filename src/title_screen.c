@@ -848,9 +848,9 @@ static void Task_TitleScreenPhase2(u8 taskId)
                                     | DISPCNT_OBJ_ON);
         CreatePressStartBanner(START_BANNER_X, 83);
         CreateCopyrightBanner(START_BANNER_X, 148);
-        CreateSprite(&sStarter1SpriteTemplate, 194, 100, 0);
-        CreateSprite(&sStarter2SpriteTemplate, 122, 100, 0);
-        CreateSprite(&sStarter3SpriteTemplate, 50, 100, 0);
+        CreateSprite(&sStarter1SpriteTemplate, 194, 105, 0);
+        CreateSprite(&sStarter2SpriteTemplate, 122, 105, 0);
+        CreateSprite(&sStarter3SpriteTemplate, 50, 105, 0);
         gTasks[taskId].tBg1Y = 0;
         gTasks[taskId].func = Task_TitleScreenPhase3;
     }

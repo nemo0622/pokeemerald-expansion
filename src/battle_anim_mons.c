@@ -184,7 +184,7 @@ u8 GetBattlerYDelta(u8 battlerId, u16 species)
 
             species = GetUnownSpeciesId(personality);
         }
-        ret = gSpeciesInfo[species].frontPicYOffset - 4;
+        ret = gSpeciesInfo[species].frontPicYOffset;
     }
     return ret;
 }
@@ -1909,7 +1909,7 @@ static u16 GetBattlerYDeltaFromSpriteId(u8 spriteId)
                     else
                         species = spriteInfo[battlerId].transformSpecies;
 
-                    return gSpeciesInfo[species].frontPicYOffset - 4;
+                    return gSpeciesInfo[species].frontPicYOffset;
                 }
             }
         }
@@ -2088,7 +2088,7 @@ u8 CreateAdditionalMonSpriteForMoveAnim(u16 species, bool8 isBackpic, u8 id, s16
     FREE_AND_SET_NULL(gMonSpritesGfxPtr->buffer);
 
     if (!isBackpic)
-        spriteId = CreateSprite(&sSpriteTemplates_MoveEffectMons[id], x, y + gSpeciesInfo[species].frontPicYOffset - 4, subpriority);
+        spriteId = CreateSprite(&sSpriteTemplates_MoveEffectMons[id], x, y + gSpeciesInfo[species].frontPicYOffset, subpriority);
     else
         spriteId = CreateSprite(&sSpriteTemplates_MoveEffectMons[id], x, y + gSpeciesInfo[species].backPicYOffset, subpriority);
 
@@ -2178,7 +2178,7 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
                 size = gSpeciesInfo[species].frontPicSizeFemale;
             else
                 size = gSpeciesInfo[species].frontPicSize;
-            y_offset = gSpeciesInfo[species].frontPicYOffset - 4;
+            y_offset = gSpeciesInfo[species].frontPicYOffset;
         }
     }
 

@@ -6112,7 +6112,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_SPINDA
     [SPECIES_SPINDA] =
     {
-        .baseHP        = 70,
+        .baseHP        = 75,
         .baseAttack    = 60,
         .baseDefense   = 70,
         .baseSpeed     = 60,
@@ -6700,7 +6700,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_ZANGOOSE
     [SPECIES_ZANGOOSE] =
     {
-        .baseHP        = 73,
+        .baseHP        = 80,
         .baseAttack    = 125,
         .baseDefense   = 60,
         .baseSpeed     = 100,
@@ -6768,8 +6768,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseHP        = 73,
         .baseAttack    = 100,
         .baseDefense   = 75,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 100,
+        .baseSpeed     = 77,
+        .baseSpAttack  = 90,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_POISON),
         .catchRate = 90,
@@ -8512,7 +8512,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseAttack    = 84,
         .baseDefense   = 91,
         .baseSpeed     = 51,
-        .baseSpAttack  = 88,
+        .baseSpAttack  = 93,
         .baseSpDefense = 87,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),
         .catchRate = 200,

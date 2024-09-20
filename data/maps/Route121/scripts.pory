@@ -192,3 +192,20 @@ Route121_Text_SafariZoneSign:
 	.string "SAFARI ZONE$"
 
 `
+
+script Route121_EventScript_SafariZoneWarningMan
+{
+	lock
+	faceplayer
+	msgbox(format("Want access to the SAFARI ZONE? Sure, that's fine.\N Just a warning though, the SAFARI ZONE seems a bit... out of sorts. Make sure to prepare for problems before entering."))
+	closemessage
+	fadescreen(FADE_TO_BLACK)
+	delay(30)
+	setflag(FLAG_TOLD_SAFARI_IS_BUGGED)
+	removeobject(30) // removes man
+	delay(30)
+	fadescreen(FADE_FROM_BLACK)
+	delay(20)
+	release
+	end
+}
