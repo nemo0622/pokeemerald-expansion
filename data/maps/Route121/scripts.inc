@@ -414,7 +414,7 @@ Route121_EventScript_SafariZoneWarningMan::
 Route121_EventScript_SafariZoneWarningMan_Text_0:
 # 200 "data/maps/Route121/scripts.pory"
 	.string "Want access to the SAFARI ZONE? Sure,\n"
-	.string "that's fine.\n"
+	.string "that's fine.\l"
 	.string "Just a warning though, the SAFARI ZONE\l"
 	.string "seems a bit... out of sorts. Make sure to\l"
 	.string "prepare for problems before entering.$"
