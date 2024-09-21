@@ -25,12 +25,22 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
     - Shiny Indicator for wild Pokémon
 
 ## Future Development Plans
-STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to the west, that has recently undergone mass migration events and ecological changes. You play as a college-aged student doing field research at your school's Field Station on the archipelago. Travel around the islands in a semi-open-world setting, helping people and completing tasks to earn Prestige Badges. Filling the Pokédex is the main goal of the game, with some landmarks and Badges being locked behind Pokédex requirements. Many of the trainers you encounter on the islands are other Field Research Students - some islands are inhabited with traditional towns, while others are totally wild aside from other students.
+STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the Greek peninsula and Aegean Sea
+    - Region composed of areas around Greek Peninsula, various Aegean Sea islands, and coastal Turkey
+        - Major cities based on Athens, Byzantium, and Knossos
+        - Post game "Battle Frontier" area (new map with Battle Frontier warps lol) takes place on island of Malta
+        - Semi open-world sections: starts linear, opens up for gyms 3-6 with scaling levels based on gym badges, and playthroughs converge around gym 7 for completing story
+    - Gym Leaders based on Greek Gods
+        - Poison gym leader with toxic orb Gliscor based on Dionysus, likes to confuse opponents
+        - Fairy + normal gym leader based on Aphrodite, uses Attract a lot
+        - Fire + steel gym leader based on Hephastus, whole gym is a forge, Tinkaton main
+    - Player character is a researcher coming to the Agria Academy as a Graduate student researching Pokémon Ecology
+        - Goal: to record and capture all Pokémon in Ilios Region!
+        - Need to become a strong Trainer to handle some Pokémon - motivation to complete Gym challenge
+    - Main Story: Team Kleftis (Team "Thief" in Greek. lol) is stealing important artifacts and Pokémon from the region and selling them for profit!
+        - Your rival is secretly connected to the organization - seems nice at first, but is clearly keeping secrets, revealed to be connected around Gym 7
 
-- THEN, MERGE IN SEAGLASS GRAPHICS
-    - Some UI elements - battle UI, text boxes, DexNav elements
-        - Update text colors! Party menu, summary screen, etc
-- ALSO MERGE SOME OTHER IMPORTANT CHANGES
+- Merge some important Seaglass changes
     - Press L to auto-run, R to register DexNav Pokémon, and make sure creeping with DexNav overrules autorun
 
 - ADD A FEW NEW POKéMON AND ABILITIES:
@@ -48,6 +58,7 @@ STORY PLAN: Takes place on the Sunset Archipelago, a series of islands far to th
     - Use "Dynamic Warps" to change warp location based on script (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Dynamic-Warp)
     - Consider adding FRLG-style map previews (https://github.com/pret/pokeemerald/wiki/Adding-the-Map-Preview-Screens-from-FRLG)
     - Region Map editing:
+        - TEAM AQUAS HIDEOUT VIDEOS: https://www.youtube.com/playlist?list=PLLNv9Lq6kDmT2zNM_gz3IkUUzjT4KaC-G
         - Adding new maps: https://www.pokecommunity.com/threads/tutorial-adding-new-map-sections-for-name-popups-and-region-map.433496/
             - MAKE SURE TO READ "CAVEAT" SECTION!
         - Delete maps: https://github.com/pret/pokeemerald/wiki/How-to-delete-a-map
