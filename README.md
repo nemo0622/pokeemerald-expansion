@@ -29,7 +29,7 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
     - Region composed of areas around Greek Peninsula, various Aegean Sea islands, and coastal Turkey
         - Major cities based on Athens, Byzantium, and Knossos
         - Post game "Battle Frontier" area (new map with Battle Frontier warps lol) takes place on island of Malta
-        - Semi open-world sections: starts linear, opens up for gyms 3-6 with scaling levels based on gym badges, and playthroughs converge around gym 7 for completing story
+        - Semi open-world sections: starts linear, opens up for gyms 3-6 with scaling levels based on gym badges (bouncing around Aegean islands), and playthroughs converge around gym 7 for completing story
     - Gym Leaders based on Greek Gods
         - Poison gym leader with toxic orb Gliscor based on Dionysus, likes to confuse opponents
         - Fairy + normal gym leader based on Aphrodite, uses Attract a lot
