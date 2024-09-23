@@ -27,6 +27,8 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
     - Expanded BAG space to 50 Items
     - Shiny Indicator for wild Pokémon
     - Press L to toggle auto-run
+    - Pokémon types shown in battle
+    - Pokémon animate after KO
 
 ## Future Development Plans
 STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the Greek peninsula and Aegean Sea
@@ -45,8 +47,6 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
         - Your rival is secretly connected to the organization - seems nice at first, but is clearly keeping secrets, revealed to be connected around Gym 7
 
 - SIMPLE QOL CHANGES:
-    - Set I_EXP_SHARE_FLAG in item.h config if necessary
-    - Animate Pokémon on KO (add HP failsafes!!!)
     - Cycle EVs/IVs in stat screen, implement Seaglass fix to show colored stats correctly
 
 - ADD A FEW NEW POKéMON AND ABILITIES:
