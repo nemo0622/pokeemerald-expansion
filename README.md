@@ -20,9 +20,13 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
     - Can find codes in documentation
 - Variable Wild Encounters, randomized between a few balanced preset options every New Game
     - Uses: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Easily-Toggle-Different-Wild-Encounter-Tables
+- Soft Level Caps to keep balance
+- HM Revamp ported from Emerald Seaglass
+    - Pokémon who can learn HM moves can use them in the field without them taking a move slot!
 - Various QOL Changes, such as:
     - Expanded BAG space to 50 Items
     - Shiny Indicator for wild Pokémon
+    - Press L to toggle auto-run
 
 ## Future Development Plans
 STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the Greek peninsula and Aegean Sea
@@ -40,8 +44,10 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
     - Main Story: Team Kleftis (Team "Thief" in Greek. lol) is stealing important artifacts and Pokémon from the region and selling them for profit!
         - Your rival is secretly connected to the organization - seems nice at first, but is clearly keeping secrets, revealed to be connected around Gym 7
 
-- Merge some important Seaglass changes
-    - Press L to auto-run, R to register DexNav Pokémon, and make sure creeping with DexNav overrules autorun
+- SIMPLE QOL CHANGES:
+    - Set I_EXP_SHARE_FLAG in item.h config if necessary
+    - Animate Pokémon on KO (add HP failsafes!!!)
+    - Cycle EVs/IVs in stat screen, implement Seaglass fix to show colored stats correctly
 
 - ADD A FEW NEW POKéMON AND ABILITIES:
     - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
@@ -64,11 +70,15 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
         - Delete maps: https://github.com/pret/pokeemerald/wiki/How-to-delete-a-map
             - Only do this if/when necessary!
         - 2x2 cities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Support-2x2-Cities-on-the-Region-Map
+    - Consider Berry Tree works in map, including maybe implementing mulch, weeds, etc
+        - Could be cool and interesting! Especially in player "home base" area
+    - REMEMBER: Add WISHING WELL to area early on! Maybe it's own dedicated location in some ruins?
 
 - EVENTS AND STUFF:
     - Use in-game day count tracker to have events in different parts of the region every X number of days
-    - Maybe implement seasonal effects? Every 30 in-game days, change season by changing palette values??
-    - Have PokéNav call from representatives from different towns you've visited announcing festivals (Remember to use OW_FLAG_PAUSE_TIME to pause time during calls! So AFK player's dont totally miss them)
+        - Have PokéNav call from representatives from different towns you've visited announcing festivals
+    - Use "Spawn Invisible Player" tutorial for little cutscenes
+        - https://github.com/pret/pokeemerald/wiki/Spawn-Invisible-Player
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting

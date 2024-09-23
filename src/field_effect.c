@@ -2619,9 +2619,9 @@ bool8 FldEff_FieldMoveShowMonInit(void)
 static void (*const sFieldMoveShowMonOutdoorsEffectFuncs[])(struct Task *) = {
     FieldMoveShowMonOutdoorsEffect_Init,
     FieldMoveShowMonOutdoorsEffect_LoadGfx,
-    FieldMoveShowMonOutdoorsEffect_CreateBanner,
-    FieldMoveShowMonOutdoorsEffect_WaitForMon,
-    FieldMoveShowMonOutdoorsEffect_ShrinkBanner,
+    // FieldMoveShowMonOutdoorsEffect_CreateBanner,
+    // FieldMoveShowMonOutdoorsEffect_WaitForMon,
+    // FieldMoveShowMonOutdoorsEffect_ShrinkBanner,
     FieldMoveShowMonOutdoorsEffect_RestoreBg,
     FieldMoveShowMonOutdoorsEffect_End,
 };

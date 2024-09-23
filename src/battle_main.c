@@ -24,6 +24,7 @@
 #include "dma3.h"
 #include "event_data.h"
 #include "evolution_scene.h"
+#include "field_message_box.h"
 #include "graphics.h"
 #include "gpu_regs.h"
 #include "international_string_util.h"
@@ -5605,6 +5606,8 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
         else
             gSaveBlock1Ptr->dexNavChain = 0;
         
+        SetSpeakerName(NULL);
+
         gDexnavBattle = FALSE;
         ResetSpriteData();
         if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK
