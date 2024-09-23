@@ -46,9 +46,6 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
     - Main Story: Team Kleftis (Team "Thief" in Greek. lol) is stealing important artifacts and Pokémon from the region and selling them for profit!
         - Your rival is secretly connected to the organization - seems nice at first, but is clearly keeping secrets, revealed to be connected around Gym 7
 
-- SIMPLE QOL CHANGES:
-    - Cycle EVs/IVs in stat screen, implement Seaglass fix to show colored stats correctly
-
 - ADD A FEW NEW POKéMON AND ABILITIES:
     - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
         - Scurry: Signature ability of Crocky, increases Evasiveness when sent out
@@ -82,6 +79,7 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
+- When cycling stats, the "STATS" text is whited out
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
