@@ -46,6 +46,11 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
     - Main Story: Team Kleftis (Team "Thief" in Greek. lol) is stealing important artifacts and Pokémon from the region and selling them for profit!
         - Your rival is secretly connected to the organization - seems nice at first, but is clearly keeping secrets, revealed to be connected around Gym 7
 
+    HEY JACK! SEPTEMBER 25! READ THIS!:
+        - Move all object event sprites up 1 pixel (do for followers too once you decide what Pokémon to include)
+            - This will stop clipping through bottom of grass and make shadow look better
+        - Then replace grass field effects
+
 - ADD A FEW NEW POKéMON AND ABILITIES:
     - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
         - Scurry: Signature ability of Crocky, increases Evasiveness when sent out
@@ -55,7 +60,6 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
         - Commission Thylacine Pokémon? Ghost/Normal type or Ghost/Rock type?
 
 - Custom Mapping references to remember:
-    - ENABLE TRIPLE LAYER METATILES?
     - Use "Dynamic Warps" to change warp location based on script (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Dynamic-Warp)
     - Consider adding FRLG-style map previews (https://github.com/pret/pokeemerald/wiki/Adding-the-Map-Preview-Screens-from-FRLG)
     - Region Map editing:
@@ -89,6 +93,8 @@ Many, many talented developers and artists are responsible for making this proje
 - Name Box branch by Tustin2121
 - View Pokédex from Party Menu by RavePossum
 - Different Wild Encounter Tables by Bivurnum
+- New Shop UI by mudskip
+- New Continue Menu UI by Archie
 
 ### Graphics
 - Pokémon Sprites:
@@ -111,6 +117,6 @@ Many, many talented developers and artists are responsible for making this proje
     - Jaquelion: Dipplin, Hydrapple
     - DarkusShadow: base Tinkaton line sprites (GBA style)
     - Many others by resource from Mano_Emet on Discord (Created by Megaman-Omega)
-- Title Screen:
-    - Pixel art done over original image [here](https://www.athens-private-tours.com/wp-content/uploads/2015/05/Acropolis-Sunset-15891085.jpg)
-    - The pixel art itself was done by me! yay!
+- User Interface:
+    - Title Screen: Pixel art done by me over original image [here](https://www.athens-private-tours.com/wp-content/uploads/2015/05/Acropolis-Sunset-15891085.jpg)
+    - New Continue menu UI and Shop UI by mudskip (Continue menu code by Archie)
