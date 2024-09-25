@@ -97,6 +97,9 @@ Many, many talented developers and artists are responsible for making this proje
 - New Continue Menu UI by Archie
 
 ### Graphics
+- Tilesets:
+    - Most basic overworld sprites purchased from Arex and Zaebucca on itch.io
+    - Pokémon Center and Mart by TrainerDX
 - Pokémon Sprites:
     - Most Generation 3 and 9 Pokémon sprites by [Egg](https://x.com/Egg3ggEgg) on Twitter
     - Many Generation 3 and other Pokémon sprites by [Nuukiie](https://www.deviantart.com/nuukiie) on DeviantArt
