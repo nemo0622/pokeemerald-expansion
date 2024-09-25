@@ -54,8 +54,6 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
         - A few other beta Pokémon (Ice type Werewolves) (https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Pok%C3%A9mon)
         - Commission Thylacine Pokémon? Ghost/Normal type or Ghost/Rock type?
 
-- THEN, IMPLEMENT PORYSCRIPT!
-
 - Custom Mapping references to remember:
     - ENABLE TRIPLE LAYER METATILES?
     - Use "Dynamic Warps" to change warp location based on script (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Dynamic-Warp)
@@ -113,3 +111,6 @@ Many, many talented developers and artists are responsible for making this proje
     - Jaquelion: Dipplin, Hydrapple
     - DarkusShadow: base Tinkaton line sprites (GBA style)
     - Many others by resource from Mano_Emet on Discord (Created by Megaman-Omega)
+- Title Screen:
+    - Pixel art done over original image [here](https://www.athens-private-tours.com/wp-content/uploads/2015/05/Acropolis-Sunset-15891085.jpg)
+    - The pixel art itself was done by me! yay!
