@@ -36,11 +36,10 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
         - Major cities based on Athens, Byzantium, and Knossos
         - Post game "Battle Frontier" area (new map with Battle Frontier warps lol) takes place on island of Malta
         - Semi open-world sections: starts linear, opens up for gyms 3-6 with scaling levels based on gym badges (bouncing around Aegean islands), and playthroughs converge around gym 7 for completing story
-        - Start playthrough in Demiti Village, the town surrounding the Agria University
+        - Start playthrough in Acrisia, based on city of Larissa, containing Agria University
             - All other students moved into village (village is host of researchers), here for research - introduced to Professor and sent for fieldwork
-            - Head northwest to the nearby city of Acrisia, based on city of Larissa
-                - Go there for Professor's package (like Oak's Parcel in FRLG)
-                - Upon return, Demiti Village could be visibly improved by player's actions - introduces concept of Demiti Village growing and changing as playthrough continues
+            - Head south to Delphi-based town, which has wishing well-like area and 1st gym (psychic)
+                - Travel through a forest on the way south, which includes a "rest camp" area (mini-town w healspot)
     - Gym Leaders based on Greek Gods
         - Poison gym leader with toxic orb Gliscor based on Dionysus, likes to confuse opponents
         - Fairy + normal gym leader based on Aphrodite, uses Attract a lot
@@ -72,6 +71,9 @@ STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the
     - Consider Berry Tree works in map, including maybe implementing mulch, weeds, etc
         - Could be cool and interesting! Especially in player "home base" area
     - REMEMBER: Add WISHING WELL to area early on! Maybe it's own dedicated location in some ruins?
+
+- Battle Gimmick: Terastalization if implemented!
+    - Accessible for all Pokémon, relatively understandable, I think it's fun!
 
 - EVENTS AND STUFF:
     - Use in-game day count tracker to have events in different parts of the region every X number of days

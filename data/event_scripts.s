@@ -1556,3 +1556,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/text/birch_speech.inc"
     .include "data/scripts/dexnav.inc"
     
+
+	.include "data/maps/AcrisiaCity/scripts.inc"

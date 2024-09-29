@@ -91,7 +91,7 @@
 #define MAPSEC_DYNAMIC                      0x57
 #define MAPSEC_PALLET_TOWN                  0x58
 #define MAPSEC_VIRIDIAN_CITY                0x59
-#define MAPSEC_PEWTER_CITY                  0x5A
+#define MAPSEC_ACRISIA_CITY                 0x5A
 #define MAPSEC_CERULEAN_CITY                0x5B
 #define MAPSEC_LAVENDER_TOWN                0x5C
 #define MAPSEC_VERMILION_CITY               0x5D

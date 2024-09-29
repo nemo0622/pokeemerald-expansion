@@ -4410,6 +4410,16 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACRISIA_CITY",
+      "name": "AcrisiaCity_Layout",
+      "width": 50,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Acrisia",
+      "border_filepath": "data/layouts/AcrisiaCity/border.bin",
+      "blockdata_filepath": "data/layouts/AcrisiaCity/map.bin"
     }
   ]
 }

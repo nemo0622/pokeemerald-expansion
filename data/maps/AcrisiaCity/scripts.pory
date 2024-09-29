@@ -1,0 +1,28 @@
+mapscripts AcrisiaCity_MapScripts {
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_INTRO_STATE, 0: AcrisiaCity_EventScript_PlayerExitsTruck
+    ]
+
+}
+
+script AcrisiaCity_EventScript_PlayerExitsTruck
+{
+    setvar(VAR_INTRO_STATE, 1)
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerOffTruck)
+    waitmovement(0)
+
+    // Have event here! Professor greets Player and walks to University
+
+    releaseall
+    end
+}
+
+movement AcrisiaCity_Movement_PlayerOffTruck
+{
+    jump_right
+    delay_16
+    walk_right
+    step_end
+}
