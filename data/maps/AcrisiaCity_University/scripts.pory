@@ -1,0 +1,236 @@
+mapscripts AcrisiaCity_University_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_INTRO_STATE, 1: AcrisiaCity_University_EventScript_PlayerIntro
+    ]
+}
+
+script AcrisiaCity_University_EventScript_PlayerIntro
+{
+    clearflag(FLAG_HIDE_MAP_NAME_POPUP)
+    setvar(VAR_INTRO_STATE, 2)
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    // Enter building
+    speakername("Prof. Elia")
+    msgbox(format("Welcome to the Agria University! Well, one of many campus locations, but still!\p Come, let me introduce you to everyone."))
+    closemessage
+    applymovement(1, Common_Movement_WalkRight)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+    waitmovement(0)
+
+    // Meet Niko
+    speakername("Prof. Elia")
+    msgbox(format("Now this here is-"))
+    closemessage
+    applymovement(3, Common_Movement_ExclamationMark) // Niko
+    waitmovement(0)
+    speakername("???")
+    msgbox(format("WOAH WOAH WOAH!"))
+    closemessage
+    applymovement(3, AcrisiaCity_University_Movement_NikoStopsPlayer)
+    waitmovement(0)
+    speakername("???")
+    msgbox(format("Come on, Professor! You know sudden movements can scare Duskull!"))
+    closemessage
+    speakername("Prof. Elia")
+    msgbox(format("Whoops, my bad, Niko!"))
+    closemessage
+    applymovement(1, Common_Movement_FaceDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Prof. Elia")
+    msgbox(format("As I was saying, this is Niko. He's a bit protective of his work, but he's a great resource for knowledge."))
+    closemessage
+    applymovement(3, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(3, Common_Movement_FaceLeft)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("Sorry about the fuss, but when Duskull gets scared, it starts floating through walls and knocking over the books!\p I study how Pokémon behave in captivity. I'm learning a lot about Pokéballs and how to care for captive Pokémon. Now, back to work."))
+    closemessage
+    applymovement(3, AcrisiaCity_University_Movement_NikoReturnToStation)
+    waitmovement(0)
+
+    // Meet Rania
+    applymovement(1, AcrisiaCity_University_Movement_ProfessorUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_University_Movement_PlayerFollowProfessorUp)
+    waitmovement(0)
+    speakername("Prof. Elia")
+    msgbox(format("This section of the building is for Rania! Here, I'll let her tell you what she does."))
+    closemessage
+    applymovement(4, AcrisiaCity_University_Movement_RaniaGreetsPlayer)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Yia sou! I'm Rania, and you must be... the new field assistant, {PLAYER}!\p I study the movement of Pokémon populations across the Ilios Region. Part of your fieldwork is collecting Pokémon location data, and I'm the one who goes through it all and finds trends!\p I'd love to keep chatting, but I've got a deadline to meet. Nice to meet you!"))
+    closemessage
+    applymovement(4, AcrisiaCity_University_Movement_RaniaReturnsToStation)
+    waitmovement(0)
+
+    // Over to Professor Elia's area
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    applymovement(1, AcrisiaCity_University_Movement_ProfessorToMainPosition)
+    applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_University_Movement_PlayerFollowProfessorToMainPosition)
+    waitmovement(0)
+    speakername("Prof. Elia")
+    msgbox(format("And here's my area of the building! Other students come in and out over time, but they're mostly out doing fieldwork. Speaking of which..."))
+    closemessage
+
+    // Tries to find Pokédex, fails. Gets player Pokémon instead
+    applymovement(1, AcrisiaCity_University_Movement_ProfessorTriesToFindDex_1)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_QuestionMark)
+    applymovement(1, AcrisiaCity_University_Movement_ProfessorTriesToFindDex_2)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Prof. Elia")
+    msgbox(format("Sooo... it looks like I don't quite have an extra Pokédex on hand. I ordered a new set of lab equipment which included a new one, but it seems like that hasn't come yet..."))
+    closemessage
+    delay(30)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    speakername("Prof. Elia")
+    msgbox(format("{PLAYER}! Oh, I've had the most fun idea! How about you go {COLOR GREEN}find the lost delivery{COLOR DARK_GRAY} and help them out?\p I've got a few rare Pokémon in my briefcase here. Why don't you choose one to adventure with you?"))
+    closemessage
+
+}
+
+movement AcrisiaCity_University_Movement_NikoStopsPlayer
+{
+    walk_fast_left * 2
+    jump_in_place_left * 2
+    delay_16
+    step_end
+}
+
+movement AcrisiaCity_University_Movement_NikoReturnToStation
+{
+    walk_right * 2
+    walk_up
+    face_up
+    step_end
+}
+
+movement AcrisiaCity_University_Movement_ProfessorUp
+{
+    walk_up * 5
+    face_right
+    step_end
+}
+
+movement AcrisiaCity_University_Movement_PlayerFollowProfessorUp
+{
+    walk_up * 5
+    walk_right
+    face_up
+    step_end
+}
+
+movement AcrisiaCity_University_Movement_RaniaGreetsPlayer
+{
+    walk_right
+    walk_down * 3
+    walk_left * 2
+    face_down
+    step_end
+}
+
+movement AcrisiaCity_University_Movement_RaniaReturnsToStation
+{
+    walk_right * 2
+    walk_up * 3
+    walk_left
+    face_left
+    step_end
+}
+
+movement AcrisiaCity_University_Movement_ProfessorToMainPosition
+{
+    walk_left * 5
+    walk_up * 2
+    face_down
+    step_end
+}
+
+movement AcrisiaCity_University_Movement_PlayerFollowProfessorToMainPosition
+{
+    walk_left * 6
+    walk_up * 1
+    face_up
+    step_end
+}
+
+movement AcrisiaCity_University_Movement_ProfessorTriesToFindDex_1
+{
+    walk_up
+    walk_left
+    face_left
+    delay_16 * 3
+    emote_question_mark
+    delay_16
+    walk_fast_up
+    face_right
+    delay_16 * 2
+    emote_exclamation_mark
+    delay_16
+    walk_fast_down * 2
+    walk_fast_right * 3
+    walk_fast_up * 2
+    step_end
+}
+
+movement AcrisiaCity_University_Movement_ProfessorTriesToFindDex_2
+{
+    walk_fast_right * 3
+    jump_in_place_right * 2
+    delay_16 * 3
+    walk_left * 3
+    walk_down * 2
+    walk_left * 2
+    face_down
+    step_end
+}
+
+// -------------------------------------------------------------------------------------------------------------
+
+script AcrisiaCity_University_EventScript_Duskull
+{
+    lock
+    speakername("Duskull")
+    playmoncry(SPECIES_DUSKULL, CRY_MODE_NORMAL)
+    msgbox("Bwraaahhh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_University_EventScript_Niko
+{
+    lock
+    faceplayer
+    speakername("Niko")
+    msgbox(format("Come to check out my research, {PLAYER}? I'm observing the Duskull to see how it behaves.\p There are old folktales of Ghost-type Pokémon being evil, but this Duskull seems totlly friendly!"))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_University_EventScript_Rania
+{
+    lock
+    faceplayer
+    speakername("Rania")
+    msgbox(format("Yia sou, {PLAYER}! You doin' well?\p Me? I'm stuck in here doing data analysis. Fieldwork information needs to be sorted into spreadsheets and analyzed, that's where I come in! It's sure not the most exciting part, but I find out some cool stuff."))
+    closemessage
+    release
+    end
+}

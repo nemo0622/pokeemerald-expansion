@@ -9,11 +9,39 @@ mapscripts AcrisiaCity_MapScripts {
 script AcrisiaCity_EventScript_PlayerExitsTruck
 {
     setvar(VAR_INTRO_STATE, 1)
+    setflag(FLAG_HIDE_INTRO_TRUCK)
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerOffTruck)
     waitmovement(0)
 
     // Have event here! Professor greets Player and walks to University
+    applymovement(12, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    speakername("Prof. Elia")
+    msgbox(format("Looks like you made it, {PLAYER}! Sorry about the rough ride, but there's no public transport up here. It's a bit... rural around here.\p Come, follow me! Let's get you to the University building!"))
+    closemessage
+
+    // walk to the university
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    applymovement(12, AcrisiaCity_Movement_ProfGetsAbovePlayer)
+    waitmovement(0)
+    applymovement(12, AcrisiaCity_Movement_ProfWalksPlayerToUniversity_1)
+    applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerFollowsProfToUniversity_1)
+    waitmovement(0)
+    speakername("Prof. Elia")
+    msgbox(format("As you can see, Acrisia City used to be a mining town. It's a bit past its prime now, but the folks here are still willing to support the University, so we've continued our research out of here!"))
+    closemessage
+    applymovement(12, AcrisiaCity_Movement_ProfWalksPlayerToUniversity_2)
+    applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerFollowsProfToUniversity_2)
+    waitmovement(0)
+
+    hideobjectat(12, MAP_ACRISIA_CITY) // hides the professor after he warps
+    
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp) // player enters the university
+    waitmovement(0)
+    setflag(FLAG_HIDE_MAP_NAME_POPUP)
+    warpsilent(MAP_ACRISIA_CITY_UNIVERSITY, 10, 19)
+    waitstate
 
     releaseall
     end
@@ -24,5 +52,48 @@ movement AcrisiaCity_Movement_PlayerOffTruck
     jump_right
     delay_16
     walk_right
+    step_end
+}
+
+movement AcrisiaCity_Movement_ProfGetsAbovePlayer
+{
+    walk_up
+    walk_left
+    face_down
+    delay_16 * 2
+    step_end
+}
+
+movement AcrisiaCity_Movement_ProfWalksPlayerToUniversity_1
+{
+    walk_up * 6
+    walk_right * 5
+    walk_up * 5
+    face_down
+    step_end
+}
+
+movement AcrisiaCity_Movement_PlayerFollowsProfToUniversity_1
+{
+    walk_up * 7
+    walk_right * 5
+    walk_up * 4
+    face_up
+    step_end
+}
+
+movement AcrisiaCity_Movement_ProfWalksPlayerToUniversity_2
+{
+    walk_up * 8
+    walk_right * 20
+    walk_up * 6
+    step_end
+}
+
+movement AcrisiaCity_Movement_PlayerFollowsProfToUniversity_2
+{
+    walk_up * 9
+    walk_right * 20
+    walk_up * 5
     step_end
 }

@@ -1558,3 +1558,5 @@ MysteryGift_Text_ReceivedGiftMon:
     
 
 	.include "data/maps/AcrisiaCity/scripts.inc"
+
+	.include "data/maps/AcrisiaCity_University/scripts.inc"

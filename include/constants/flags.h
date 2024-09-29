@@ -1221,7 +1221,7 @@
 #define FLAG_PAUSE_TIME                                             0x493 // Pauses FakeRTC time (used when DexNav hunting and during Match Calls)
 #define FLAG_FORCE_SHINY                                            0x494 // forces shiny
 #define FLAG_EXP_SHARE_ENABLED                                      0x495 // Toggles EXP share
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
+#define FLAG_HIDE_INTRO_TRUCK                                       0x496 // Hides intro truck in Acrisia
 #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
 #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
 #define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
