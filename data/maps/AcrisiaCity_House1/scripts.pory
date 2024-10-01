@@ -1,0 +1,34 @@
+mapscripts AcrisiaCity_House1_MapScripts {}
+
+script AcrisiaCity_House1_EventScript_Man
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("Another Agrias University student, eh? Nice to meet ya!\p The Ilios Region is ancient, but always changing. I hope ya find something new."))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_House1_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("Ohoho, our family has been here since before the University! I remember watching the minecarts whiz by when I was a girl.\p Now, the city is so much smaller... that's just how things go, I suppose."))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_House1_EventScript_Boy
+{
+    lock
+    faceplayer
+    speakername("Boy")
+    msgbox(format("In Ilios, we use some words of our very own language! Like, we call my grandma 'giagia' in the Ilios language!"))
+    closemessage
+    release
+    end
+}

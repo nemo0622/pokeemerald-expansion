@@ -4430,6 +4430,26 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/AcrisiaCity_University/border.bin",
       "blockdata_filepath": "data/layouts/AcrisiaCity_University/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACRISIA_CITY_HOUSE1",
+      "name": "AcrisiaCity_House1_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/AcrisiaCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/AcrisiaCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACRISIA_CITY_HOUSE2",
+      "name": "AcrisiaCity_House2_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/AcrisiaCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/AcrisiaCity_House2/map.bin"
     }
   ]
 }

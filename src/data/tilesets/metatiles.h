@@ -210,3 +210,6 @@ const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_Acrisia[] = INCBIN_U16("data/tilesets/secondary/acrisia/metatiles.bin");
 const u16 gMetatileAttributes_Acrisia[] = INCBIN_U16("data/tilesets/secondary/acrisia/metatile_attributes.bin");
+
+const u16 gMetatiles_Ilios_GenericBuilding[] = INCBIN_U16("data/tilesets/secondary/ilios_generic_building/metatiles.bin");
+const u16 gMetatileAttributes_Ilios_GenericBuilding[] = INCBIN_U16("data/tilesets/secondary/ilios_generic_building/metatile_attributes.bin");

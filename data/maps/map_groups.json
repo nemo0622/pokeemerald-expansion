@@ -94,7 +94,9 @@
     "Underwater_Route105",
     "Underwater_Route125",
     "AcrisiaCity",
-    "AcrisiaCity_University"
+    "AcrisiaCity_University",
+    "AcrisiaCity_House1",
+    "AcrisiaCity_House2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

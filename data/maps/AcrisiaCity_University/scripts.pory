@@ -4,10 +4,11 @@ mapscripts AcrisiaCity_University_MapScripts {
     ]
 }
 
+// Cutscene introducing Niko and Rania, and Player chooses starter Pokémon!
 script AcrisiaCity_University_EventScript_PlayerIntro
 {
-    clearflag(FLAG_HIDE_MAP_NAME_POPUP)
     setvar(VAR_INTRO_STATE, 2)
+    setobjectxy(1, 10, 18)
     lockall
 
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
@@ -25,6 +26,7 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     speakername("Prof. Elia")
     msgbox(format("Now this here is-"))
     closemessage
+    playse(SE_PIN)
     applymovement(3, Common_Movement_ExclamationMark) // Niko
     waitmovement(0)
     speakername("???")
@@ -86,6 +88,7 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
+    playse(SE_PIN)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_QuestionMark)
     applymovement(1, AcrisiaCity_University_Movement_ProfessorTriesToFindDex_2)
     waitmovement(0)
@@ -100,6 +103,35 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     speakername("Prof. Elia")
     msgbox(format("{PLAYER}! Oh, I've had the most fun idea! How about you go {COLOR GREEN}find the lost delivery{COLOR DARK_GRAY} and help them out?\p I've got a few rare Pokémon in my briefcase here. Why don't you choose one to adventure with you?"))
     closemessage
+
+    // Give Pokémon
+    callnative(StartNewPokeballCaseUI)
+    waitstate
+
+    bufferspeciesname(STR_VAR_1, VAR_STARTER_MON)
+    playfanfare(MUS_OBTAIN_ITEM)
+    message(format("{PLAYER} received a {STR_VAR_1}!"))
+    waitmessage
+    waitfanfare
+    delay(20)
+    speakername("Prof. Elia")
+    msgbox(format("Ah, {STR_VAR_1}! That Pokémon suits you. Now, for the task at hand: the {COLOR GREEN}lost delivery{COLOR DARK_GRAY} should be {COLOR GREEN}South{COLOR DARK_GRAY} of Acrisia City. Usually, the mover that brings our shipments here stops at a {COLOR GREEN}Stable{COLOR DARK_GRAY} in the woods. Why don't you check there?"))
+    closemessage
+
+    setflag(FLAG_SYS_B_DASH)
+    clearflag(FLAG_HIDE_SECOND_PROFESSOR_SPRITE)
+    setflag(FLAG_HIDE_FIRST_PROFESSOR_SPRITE)
+    clearflag(FLAG_HIDE_MAP_NAME_POPUP)
+
+    warpsilent(MAP_ACRISIA_CITY_UNIVERSITY, 6, 12)
+    waitstate
+
+    // NOTES:
+    // VAR_INTRO_STATE is now 2. Player has a Pokémon, and is tasked with heading South to a Stable on the road to find the delivery.
+    // Some other flags, like running shoes, have also been enabled here just for convenience
+
+    releaseall
+    end
 
 }
 
@@ -218,7 +250,7 @@ script AcrisiaCity_University_EventScript_Niko
     lock
     faceplayer
     speakername("Niko")
-    msgbox(format("Come to check out my research, {PLAYER}? I'm observing the Duskull to see how it behaves.\p There are old folktales of Ghost-type Pokémon being evil, but this Duskull seems totlly friendly!"))
+    msgbox(format("Come to check out my research, {PLAYER}? I'm observing the Duskull to see how it behaves.\p There are old folktales of Ghost-type Pokémon being evil, but this Duskull seems totally friendly!"))
     closemessage
     release
     end
@@ -233,4 +265,64 @@ script AcrisiaCity_University_EventScript_Rania
     closemessage
     release
     end
+}
+
+// -------------------------------------------------------------------------------------------------------------
+// ---------------------------  Code called when speaking to Prof. Elia  --------------------------------
+// -------------------------------------------------------------------------------------------------------------
+
+script AcrisiaCity_EventScript_ProfessorElia
+{
+    lock
+    faceplayer
+
+    if(var(VAR_INTRO_STATE) == 2) // sent to get lost delivery of Pokédex
+    {
+        speakername("Prof. Elia")
+        msgbox(format("Welcome back, {PLAYER}! Did you find that {COLOR GREEN}lost delivery{COLOR DARK_GRAY} yet?"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 0) // no
+        {
+            msgbox(format("Hmm, that's concerning... local crime groups have been active lately, I'm nervous that the delivery cart was attacked. Keep us updated on the situation."))
+            closemessage
+        }
+        else
+        {
+            if(flag(FLAG_FOUND_LOST_DELIVERY)) // actually did!
+            {
+                msgbox(format("Ochi! The delivery cart was attacked!? Well I'm glad everyone is okay...\p Here, I'll enable your Pokédex."))
+                closemessage
+                playse(SE_CLICK)
+	            delay(10)
+	            playse(SE_CLICK)
+	            delay (10)
+	            playse(SE_CLICK)
+	            delay(10)
+	            playse(SE_CLICK)
+	            delay(20)
+                playfanfare(MUS_OBTAIN_ITEM)
+                msgbox("{PLAYER}'s Pokédex was enabled!")
+                waitfanfare
+                setflag(FLAG_SYS_POKEDEX_GET)
+                setflag(FLAG_ADVENTURE_STARTED)
+                setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+                closemessage
+                speakername("Prof. Elia")
+                msgbox(format("I think it's a good idea to train your Pokémon for battle, in case more troublemakers come around. Why don't you {COLOR GREEN}battle the Pokémon Gyms{COLOR DARK_GRAY} you find while you're exploring the Ilios Region? That'll get your Pokémon raring to go!"))
+                closemessage
+                speakername("Prof. Elia")
+                msgbox(format("You're all set to go, {PLAYER}! Capture Pokémon, collect data, and get stronger! Oh, and make sure to help people when you can. Good luck!"))
+                closemessage
+                setvar(VAR_INTRO_STATE, 3)
+            }
+            else
+            {
+                msgbox(format("You did? Well where's the Pokédex? ...Come on {PLAYER}, we need to make sure the delivery folks are alright! Go look again!"))
+                closemessage
+            }
+        }
+    }
+
+    release
+    end
+
 }

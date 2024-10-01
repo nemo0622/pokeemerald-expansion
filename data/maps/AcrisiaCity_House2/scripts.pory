@@ -1,0 +1,22 @@
+mapscripts AcrisiaCity_House2_MapScripts {}
+
+script AcrisiaCity_House2_EventScript_Lady
+{
+    lock
+    faceplayer
+    speakername("Lady")
+    msgbox(format("Yia sou, hello, darling! The Agrias University keeps things busy in town."))
+    closemessage
+
+    if(!flag(FLAG_GOT_ARISIA_LUCKY_EGG))
+    {
+        speakername("Lady")
+        msgbox(format("You're a new face! Thank the gods for that University bringing people in. Here, I'll give you something to help you out."))
+        closemessage
+        giveitem(ITEM_LUCKY_EGG)
+        setflag(FLAG_GOT_ARISIA_LUCKY_EGG)
+    }
+
+    release
+    end
+}

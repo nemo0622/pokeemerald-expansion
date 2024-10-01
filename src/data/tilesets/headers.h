@@ -860,3 +860,14 @@ const struct Tileset gTileset_Acrisia =
     .metatileAttributes = gMetatileAttributes_Acrisia,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Ilios_GenericBuilding =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Ilios_GenericBuilding,
+    .palettes = gTilesetPalettes_Ilios_GenericBuilding,
+    .metatiles = gMetatiles_Ilios_GenericBuilding,
+    .metatileAttributes = gMetatileAttributes_Ilios_GenericBuilding,
+    .callback = NULL,
+};

@@ -1222,10 +1222,10 @@
 #define FLAG_FORCE_SHINY                                            0x494 // forces shiny
 #define FLAG_EXP_SHARE_ENABLED                                      0x495 // Toggles EXP share
 #define FLAG_HIDE_INTRO_TRUCK                                       0x496 // Hides intro truck in Acrisia
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
+#define FLAG_FOUND_LOST_DELIVERY                                    0x497 // If found lost delivery w/ Pokédex and saved them from the evil team
+#define FLAG_HIDE_SECOND_PROFESSOR_SPRITE                           0x498 // shitty workaround lol
+#define FLAG_HIDE_FIRST_PROFESSOR_SPRITE                            0x499 // shitty workaround lol
+#define FLAG_GOT_ARISIA_LUCKY_EGG                                   0x49A // Got Lucky Egg from House 2
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
