@@ -693,8 +693,9 @@ AcrisiaCity_University_EventScript_PlayerIntro_Text_17:
 	.string "you. Now, for the task at hand: the {COLOR GREEN}lost\l"
 	.string "delivery{COLOR DARK_GRAY} should be {COLOR GREEN}South{COLOR DARK_GRAY} of Acrisia\l"
 	.string "City. Usually, the mover that brings our\l"
-	.string "shipments here stops at a {COLOR GREEN}Stable{COLOR DARK_GRAY} in the\l"
-	.string "woods. Why don't you check there?$"
+	.string "shipments here stops to rest their\l"
+	.string "Pokémon in the woods. Why don't you\l"
+	.string "check there?$"
 
 AcrisiaCity_University_EventScript_Duskull_Text_0:
 # 239 "data/maps/AcrisiaCity_University/scripts.pory"

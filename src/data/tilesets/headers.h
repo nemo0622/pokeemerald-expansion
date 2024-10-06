@@ -871,3 +871,25 @@ const struct Tileset gTileset_Ilios_GenericBuilding =
     .metatileAttributes = gMetatileAttributes_Ilios_GenericBuilding,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Pythios =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Pythios,
+    .palettes = gTilesetPalettes_Pythios,
+    .metatiles = gMetatiles_Pythios,
+    .metatileAttributes = gMetatileAttributes_Pythios,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Jusmail =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Jusmail,
+    .palettes = gTilesetPalettes_Jusmail,
+    .metatiles = gMetatiles_Jusmail,
+    .metatileAttributes = gMetatileAttributes_Jusmail,
+    .callback = NULL,
+};

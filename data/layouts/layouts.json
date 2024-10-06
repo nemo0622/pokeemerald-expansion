@@ -4450,6 +4450,76 @@
       "secondary_tileset": "gTileset_Ilios_GenericBuilding",
       "border_filepath": "data/layouts/AcrisiaCity_House2/border.bin",
       "blockdata_filepath": "data/layouts/AcrisiaCity_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACRISIA_CITY_HOUSE3",
+      "name": "AcrisiaCity_House3_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/AcrisiaCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/AcrisiaCity_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRONZE_PASS_NORTH",
+      "name": "BronzePass_North_Layout",
+      "width": 24,
+      "height": 52,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Acrisia",
+      "border_filepath": "data/layouts/BronzePass_North/border.bin",
+      "blockdata_filepath": "data/layouts/BronzePass_North/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRONZE_FIELDS_SOUTH",
+      "name": "BronzeFields_South_Layout",
+      "width": 36,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Jusmail",
+      "border_filepath": "data/layouts/BronzeFields_South/border.bin",
+      "blockdata_filepath": "data/layouts/BronzeFields_South/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUSMAIL_TOWN",
+      "name": "JusmailTown_Layout",
+      "width": 20,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Jusmail",
+      "border_filepath": "data/layouts/JusmailTown/border.bin",
+      "blockdata_filepath": "data/layouts/JusmailTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUSMAIL_TOWN_POKEMON_CENTER",
+      "name": "JusmailTown_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/JusmailTown_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/JusmailTown_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACRISIA_MOUNTAINS",
+      "name": "AcrisiaMountains_Layout",
+      "width": 40,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Acrisia",
+      "border_filepath": "data/layouts/AcrisiaMountains/border.bin",
+      "blockdata_filepath": "data/layouts/AcrisiaMountains/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISCUS_FORGE",
+      "name": "DiscusForge_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DiscusForge/border.bin",
+      "blockdata_filepath": "data/layouts/DiscusForge/map.bin"
     }
   ]
 }

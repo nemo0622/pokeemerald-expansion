@@ -1,0 +1,10 @@
+mapscripts AcrisiaMountains_MapScripts {}
+
+script AcrisiaMountains_Sign_GymSign
+{
+    lock
+    msgbox(format("Gym Leader: Mattaios\N The Ever-Working Rocksmith"))
+    closemessage
+    release
+    end
+}

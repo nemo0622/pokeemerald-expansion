@@ -67,6 +67,11 @@
 #define MAP_ACRISIA_CITY_UNIVERSITY (58 | (0 << 8))
 #define MAP_ACRISIA_CITY_HOUSE1     (59 | (0 << 8))
 #define MAP_ACRISIA_CITY_HOUSE2     (60 | (0 << 8))
+#define MAP_ACRISIA_CITY_HOUSE3     (61 | (0 << 8))
+#define MAP_BRONZE_PASS_NORTH       (62 | (0 << 8))
+#define MAP_BRONZE_FIELDS_SOUTH     (63 | (0 << 8))
+#define MAP_JUSMAIL_TOWN            (64 | (0 << 8))
+#define MAP_ACRISIA_MOUNTAINS       (65 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -74,6 +79,7 @@
 #define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F        (2 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F        (3 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB (4 | (1 << 8))
+#define MAP_JUSMAIL_TOWN_POKEMON_CENTER          (5 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))
@@ -404,6 +410,7 @@
 #define MAP_TERRA_CAVE_END                           (105 | (24 << 8))
 #define MAP_ALTERING_CAVE                            (106 | (24 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
+#define MAP_DISCUS_FORGE                             (108 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

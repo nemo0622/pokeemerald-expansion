@@ -1226,7 +1226,7 @@
 #define FLAG_HIDE_SECOND_PROFESSOR_SPRITE                           0x498 // shitty workaround lol
 #define FLAG_HIDE_FIRST_PROFESSOR_SPRITE                            0x499 // shitty workaround lol
 #define FLAG_GOT_ARISIA_LUCKY_EGG                                   0x49A // Got Lucky Egg from House 2
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
+#define FLAG_BROKE_JUSMAIL_TOWN_ROCKS                               0x49B // Hides rock smash rocks in Jusmail Town
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag

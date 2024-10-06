@@ -1,0 +1,10 @@
+mapscripts JusmailTown_MapScripts {}
+
+script JusmailTown_Sign_GymSign
+{
+    lock
+    msgbox(format("Gym Leader: Deo\N The Plant-Friendly Farmer"))
+    closemessage
+    release
+    end
+}

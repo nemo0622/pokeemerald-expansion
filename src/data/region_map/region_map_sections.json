@@ -730,8 +730,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_CERULEAN_CITY",
-      "name": "CERULEAN CITY",
+      "map_section": "MAPSEC_JUSMAIL_TOWN",
+      "name": "Jusmail Town",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -812,16 +812,16 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_1",
-      "name": "ROUTE 1",
+      "map_section": "MAPSEC_BRONZE_PASS",
+      "name": "Bronze Fields",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_2",
-      "name": "ROUTE 2",
+      "map_section": "MAPSEC_ACRISIA_MOUNTAINS",
+      "name": "Acrisia Mountains",
       "x": 0,
       "y": 0,
       "width": 1,

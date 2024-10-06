@@ -1672,3 +1672,41 @@ const u16 gTilesetPalettes_Ilios_GenericBuilding[][16] =
 };
 
 const u32 gTilesetTiles_Ilios_GenericBuilding[] = INCBIN_U32("data/tilesets/secondary/ilios_generic_building/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Pythios[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pythios/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Pythios[] = INCBIN_U32("data/tilesets/secondary/pythios/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Jusmail[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/jusmail/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Jusmail[] = INCBIN_U32("data/tilesets/secondary/jusmail/tiles.4bpp.lz");

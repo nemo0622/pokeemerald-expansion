@@ -213,3 +213,9 @@ const u16 gMetatileAttributes_Acrisia[] = INCBIN_U16("data/tilesets/secondary/ac
 
 const u16 gMetatiles_Ilios_GenericBuilding[] = INCBIN_U16("data/tilesets/secondary/ilios_generic_building/metatiles.bin");
 const u16 gMetatileAttributes_Ilios_GenericBuilding[] = INCBIN_U16("data/tilesets/secondary/ilios_generic_building/metatile_attributes.bin");
+
+const u16 gMetatiles_Pythios[] = INCBIN_U16("data/tilesets/secondary/pythios/metatiles.bin");
+const u16 gMetatileAttributes_Pythios[] = INCBIN_U16("data/tilesets/secondary/pythios/metatile_attributes.bin");
+
+const u16 gMetatiles_Jusmail[] = INCBIN_U16("data/tilesets/secondary/jusmail/metatiles.bin");
+const u16 gMetatileAttributes_Jusmail[] = INCBIN_U16("data/tilesets/secondary/jusmail/metatile_attributes.bin");

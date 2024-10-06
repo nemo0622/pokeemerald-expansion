@@ -115,7 +115,7 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     waitfanfare
     delay(20)
     speakername("Prof. Elia")
-    msgbox(format("Ah, {STR_VAR_1}! That Pokémon suits you. Now, for the task at hand: the {COLOR GREEN}lost delivery{COLOR DARK_GRAY} should be {COLOR GREEN}South{COLOR DARK_GRAY} of Acrisia City. Usually, the mover that brings our shipments here stops at a {COLOR GREEN}Stable{COLOR DARK_GRAY} in the woods. Why don't you check there?"))
+    msgbox(format("Ah, {STR_VAR_1}! That Pokémon suits you. Now, for the task at hand: the {COLOR GREEN}lost delivery{COLOR DARK_GRAY} should be {COLOR GREEN}South{COLOR DARK_GRAY} of Acrisia City. Usually, the mover that brings our shipments here stops to rest their Pokémon in the woods. Why don't you check there?"))
     closemessage
 
     setflag(FLAG_SYS_B_DASH)

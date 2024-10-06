@@ -1564,3 +1564,17 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/AcrisiaCity_House1/scripts.inc"
 
 	.include "data/maps/AcrisiaCity_House2/scripts.inc"
+
+	.include "data/maps/AcrisiaCity_House3/scripts.inc"
+
+	.include "data/maps/BronzePass_North/scripts.inc"
+
+	.include "data/maps/BronzeFields_South/scripts.inc"
+
+	.include "data/maps/JusmailTown/scripts.inc"
+
+	.include "data/maps/JusmailTown_PokemonCenter/scripts.inc"
+
+	.include "data/maps/AcrisiaMountains/scripts.inc"
+
+	.include "data/maps/DiscusForge/scripts.inc"
