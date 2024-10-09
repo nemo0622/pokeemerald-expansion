@@ -219,3 +219,6 @@ const u16 gMetatileAttributes_Pythios[] = INCBIN_U16("data/tilesets/secondary/py
 
 const u16 gMetatiles_Jusmail[] = INCBIN_U16("data/tilesets/secondary/jusmail/metatiles.bin");
 const u16 gMetatileAttributes_Jusmail[] = INCBIN_U16("data/tilesets/secondary/jusmail/metatile_attributes.bin");
+
+const u16 gMetatiles_Sofos[] = INCBIN_U16("data/tilesets/secondary/sofos/metatiles.bin");
+const u16 gMetatileAttributes_Sofos[] = INCBIN_U16("data/tilesets/secondary/sofos/metatile_attributes.bin");

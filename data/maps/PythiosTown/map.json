@@ -1,0 +1,95 @@
+{
+  "id": "MAP_PYTHIOS_TOWN",
+  "name": "PythiosTown",
+  "layout": "LAYOUT_PYTHIOS_TOWN",
+  "music": "MUS_MT_PYRE_EXTERIOR",
+  "region_map_section": "MAPSEC_PYTHIOS_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_WANDERERS_WOODS",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_PYTHIOS_CEMETERY",
+      "offset": -14,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ERINYS_PATH_EAST",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 7,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 1,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SABELLA",
+      "x": 28,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 0,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_PYTHIOS_CEMETERY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_PYTHIOS_CEMETERY",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

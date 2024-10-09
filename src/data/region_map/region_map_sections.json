@@ -738,16 +738,16 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_LAVENDER_TOWN",
-      "name": "LAVENDER TOWN",
+      "map_section": "MAPSEC_PYTHIOS_TOWN",
+      "name": "Pythios Town",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_VERMILION_CITY",
-      "name": "VERMILION CITY",
+      "map_section": "MAPSEC_SOFOS_CITY",
+      "name": "Sofos City",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -828,16 +828,16 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_3",
-      "name": "ROUTE 3",
+      "map_section": "MAPSEC_ERINYS_PATH",
+      "name": "Erinys Path",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_4",
-      "name": "ROUTE 4",
+      "map_section": "MAPSEC_ASFAL_HILLS",
+      "name": "Asfal Hills",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1012,16 +1012,16 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_VIRIDIAN_FOREST",
-      "name": "VIRIDIAN FOREST",
+      "map_section": "MAPSEC_WANDERERS_WOODS",
+      "name": "Wanderer's Woods",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_MT_MOON",
-      "name": "MT. MOON",
+      "map_section": "MAPSEC_FROSLASS_CAVERN",
+      "name": "Froslass Cavern",
       "x": 0,
       "y": 0,
       "width": 1,

@@ -101,7 +101,17 @@
     "BronzePass_North",
     "BronzeFields_South",
     "JusmailTown",
-    "AcrisiaMountains"
+    "AcrisiaMountains",
+    "WanderersWoods",
+    "PythiosTown",
+    "PythiosCemetery",
+    "ErinysPath_East",
+    "ErinysPath_West",
+    "FroslassCavern_TopFloor",
+    "FroslassCavern_Floor2",
+    "FroslassCavern_Floor3",
+    "AsfalHills",
+    "SofosCity"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

@@ -145,6 +145,20 @@
       "elevation": 0,
       "dest_map": "MAP_JUSMAIL_TOWN_POKEMON_CENTER",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_WANDERERS_WOODS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_WANDERERS_WOODS",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

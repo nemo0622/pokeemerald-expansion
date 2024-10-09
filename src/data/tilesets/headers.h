@@ -893,3 +893,14 @@ const struct Tileset gTileset_Jusmail =
     .metatileAttributes = gMetatileAttributes_Jusmail,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Sofos =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Sofos,
+    .palettes = gTilesetPalettes_Sofos,
+    .metatiles = gMetatiles_Sofos,
+    .metatileAttributes = gMetatileAttributes_Sofos,
+    .callback = NULL,
+};

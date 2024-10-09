@@ -65,7 +65,7 @@
 #define OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES     61
 #define OBJ_EVENT_GFX_BERRY_TREE_LATE_STAGES      62
 #define OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE           63
-#define OBJ_EVENT_GFX_PROF_BIRCH                  64
+#define OBJ_EVENT_GFX_PROF_ELIA                   64
 #define OBJ_EVENT_GFX_MAN_4                       65
 #define OBJ_EVENT_GFX_MAN_5                       66
 #define OBJ_EVENT_GFX_REPORTER_M                  67
@@ -126,7 +126,7 @@
 #define OBJ_EVENT_GFX_PHOEBE                     122
 #define OBJ_EVENT_GFX_GLACIA                     123
 #define OBJ_EVENT_GFX_DRAKE                      124
-#define OBJ_EVENT_GFX_ROXANNE                    125
+#define OBJ_EVENT_GFX_SABELLA                    125
 #define OBJ_EVENT_GFX_BRAWLY                     126
 #define OBJ_EVENT_GFX_WATTSON                    127
 #define OBJ_EVENT_GFX_FLANNERY                   128

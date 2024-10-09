@@ -81,7 +81,7 @@ $(OBJEVENTGFXDIR)/people/gym_leaders/liza.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/gym_leaders/norman.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/gym_leaders/roxanne.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/gym_leaders/sabella.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/gym_leaders/tate.4bpp: %.4bpp: %.png
@@ -303,7 +303,7 @@ $(OBJEVENTGFXDIR)/people/old_woman.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/picnicker.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/prof_birch.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/prof_elia.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/psychic_m.4bpp: %.4bpp: %.png

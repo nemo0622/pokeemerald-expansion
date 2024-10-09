@@ -161,8 +161,11 @@ REGION PLAN:
             - Team: Misdreavus, Spoink, and Pumpkaboo (level 17-20)
             - Unlocks Flash outside of battle
         - West: Pottsfield Cemetery, based on Pottsfield from Over the Garden Wall
-            - Mark as FLASH AREA! Have NPCs talk about the "dark mists surrounding the cemetery"
-    - Travel east through Snowrage Pass (a snowy area cursed by Demeter because Persephone is taken to the underworld), south a bit through Absol's Drop, and east more through Floette's Grace
+            - Mark as FLASH AREA! Have NPCs outside talk about the "dark mists surrounding the cemetery"
+            - MINIGAME AREA: Explore the area trying to find items and catch Pokémon without being spotted by patrolling Shuppet and Gastly. If spotted, run a script to end the minigame. Allows area to catch Pokémon and explore while motivating continued visits as you can get further and further
+    - Travel east through Erinys Path, south through Froslass Cavern cave system, and east more through Asfal Hills
+        - Note: Erinys Path East/West are reversed because i am dumb. lol
+        - Froslass Cavern Floor 3: Contains Froslass overworld event on other side of water, gotta set it up
     - Reach Sofos City, based on Athens 
         - Sprawling metropolis city with "department store", a contest hall, and more
         - Gym 4: Minerva, a Tactical gym leader (multi-type, all about stat boosts and baton pass)
@@ -225,7 +228,7 @@ REGION PLAN:
             - Team: Skarmory, Gyarados, Gliscor, Incineroar, Ceruledge, Zapdos (level 48-50)
     - After Elite Four - cutscene where new areas open up:
         - Ferry to Battle Frontier on Rhodes arrives to Port Pello
-        - Mountain pass on Absol's Drop opens up
+        - Mountain pass in Froslass Cavern opens up
             - Opens hyper-difficult cave with competitive-level trainers, descending into the earth with Hades as the final game boss
         - New EV/IV editor opens shop in Sofos City
         - Areas with select Legendary Pokémon appear

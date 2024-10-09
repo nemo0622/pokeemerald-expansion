@@ -16,5 +16,5 @@ AcrisiaMountains_Sign_GymSign::
 
 AcrisiaMountains_Sign_GymSign_Text_0:
 # 6 "data/maps/AcrisiaMountains/scripts.pory"
-	.string "Gym Leader: Mattaios\l"
+	.string "Gym Leader: Mattaios\n"
 	.string "The Ever-Working Rocksmith$"

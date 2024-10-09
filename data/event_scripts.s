@@ -1578,3 +1578,23 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/AcrisiaMountains/scripts.inc"
 
 	.include "data/maps/DiscusForge/scripts.inc"
+
+	.include "data/maps/WanderersWoods/scripts.inc"
+
+	.include "data/maps/PythiosTown/scripts.inc"
+
+	.include "data/maps/PythiosCemetery/scripts.inc"
+
+	.include "data/maps/ErinysPath_East/scripts.inc"
+
+	.include "data/maps/ErinysPath_West/scripts.inc"
+
+	.include "data/maps/FroslassCavern_TopFloor/scripts.inc"
+
+	.include "data/maps/FroslassCavern_Floor2/scripts.inc"
+
+	.include "data/maps/FroslassCavern_Floor3/scripts.inc"
+
+	.include "data/maps/AsfalHills/scripts.inc"
+
+	.include "data/maps/SofosCity/scripts.inc"

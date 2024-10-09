@@ -93,8 +93,8 @@
 #define MAPSEC_VIRIDIAN_CITY                0x59
 #define MAPSEC_ACRISIA_CITY                 0x5A
 #define MAPSEC_JUSMAIL_TOWN                 0x5B
-#define MAPSEC_LAVENDER_TOWN                0x5C
-#define MAPSEC_VERMILION_CITY               0x5D
+#define MAPSEC_PYTHIOS_TOWN                 0x5C
+#define MAPSEC_SOFOS_CITY                   0x5D
 #define MAPSEC_CELADON_CITY                 0x5E
 #define MAPSEC_FUCHSIA_CITY                 0x5F
 #define MAPSEC_CINNABAR_ISLAND              0x60
@@ -104,8 +104,8 @@
 #define MAPSEC_ROUTE_10_POKECENTER          0x64
 #define MAPSEC_BRONZE_PASS                  0x65 // Route connecting Acrisia City to Jusmail Town
 #define MAPSEC_ACRISIA_MOUNTAINS            0x66 // Area West of Acrisia City, up to Discus Mines
-#define MAPSEC_ROUTE_3                      0x67
-#define MAPSEC_ROUTE_4                      0x68
+#define MAPSEC_ERINYS_PATH                  0x67 // East of Pythios Town
+#define MAPSEC_ASFAL_HILLS                  0x68 // Exit from Froslass Cavern, east to Sofos City
 #define MAPSEC_ROUTE_5                      0x69
 #define MAPSEC_ROUTE_6                      0x6A
 #define MAPSEC_ROUTE_7                      0x6B
@@ -127,8 +127,8 @@
 #define MAPSEC_ROUTE_23                     0x7B
 #define MAPSEC_ROUTE_24                     0x7C
 #define MAPSEC_ROUTE_25                     0x7D
-#define MAPSEC_VIRIDIAN_FOREST              0x7E
-#define MAPSEC_MT_MOON                      0x7F
+#define MAPSEC_WANDERERS_WOODS              0x7E // South of Jusmail Town, heading down to Pythios Town
+#define MAPSEC_FROSLASS_CAVERN              0x7F // East of Pythios Town - connects Erinys Path and Floette's Grace
 #define MAPSEC_S_S_ANNE                     0x80
 #define MAPSEC_UNDERGROUND_PATH             0x81
 #define MAPSEC_UNDERGROUND_PATH_2           0x82

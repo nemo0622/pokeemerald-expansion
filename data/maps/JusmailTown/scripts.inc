@@ -16,5 +16,5 @@ JusmailTown_Sign_GymSign::
 
 JusmailTown_Sign_GymSign_Text_0:
 # 6 "data/maps/JusmailTown/scripts.pory"
-	.string "Gym Leader: Deo\l"
+	.string "Gym Leader: Deo\n"
 	.string "The Plant-Friendly Farmer$"

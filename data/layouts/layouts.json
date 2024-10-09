@@ -4520,6 +4520,106 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/DiscusForge/border.bin",
       "blockdata_filepath": "data/layouts/DiscusForge/map.bin"
+    },
+    {
+      "id": "LAYOUT_WANDERERS_WOODS",
+      "name": "WanderersWoods_Layout",
+      "width": 44,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pythios",
+      "border_filepath": "data/layouts/WanderersWoods/border.bin",
+      "blockdata_filepath": "data/layouts/WanderersWoods/map.bin"
+    },
+    {
+      "id": "LAYOUT_PYTHIOS_TOWN",
+      "name": "PythiosTown_Layout",
+      "width": 36,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pythios",
+      "border_filepath": "data/layouts/PythiosTown/border.bin",
+      "blockdata_filepath": "data/layouts/PythiosTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_PYTHIOS_CEMETERY",
+      "name": "PythiosCemetery_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pythios",
+      "border_filepath": "data/layouts/PythiosCemetery/border.bin",
+      "blockdata_filepath": "data/layouts/PythiosCemetery/map.bin"
+    },
+    {
+      "id": "LAYOUT_ERINYS_PATH_EAST",
+      "name": "ErinysPath_East_Layout",
+      "width": 40,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pythios",
+      "border_filepath": "data/layouts/ErinysPath_East/border.bin",
+      "blockdata_filepath": "data/layouts/ErinysPath_East/map.bin"
+    },
+    {
+      "id": "LAYOUT_ERINYS_PATH_WEST",
+      "name": "ErinysPath_West_Layout",
+      "width": 40,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pythios",
+      "border_filepath": "data/layouts/ErinysPath_West/border.bin",
+      "blockdata_filepath": "data/layouts/ErinysPath_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_FROSLASS_CAVERN_TOP_FLOOR",
+      "name": "FroslassCavern_TopFloor_Layout",
+      "width": 30,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FroslassCavern_TopFloor/border.bin",
+      "blockdata_filepath": "data/layouts/FroslassCavern_TopFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_FROSLASS_CAVERN_FLOOR2",
+      "name": "FroslassCavern_Floor2_Layout",
+      "width": 18,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FroslassCavern_Floor2/border.bin",
+      "blockdata_filepath": "data/layouts/FroslassCavern_Floor2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FROSLASS_CAVERN_FLOOR3",
+      "name": "FroslassCavern_Floor3_Layout",
+      "width": 32,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FroslassCavern_Floor3/border.bin",
+      "blockdata_filepath": "data/layouts/FroslassCavern_Floor3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ASFAL_HILLS",
+      "name": "AsfalHills_Layout",
+      "width": 56,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Sofos",
+      "border_filepath": "data/layouts/AsfalHills/border.bin",
+      "blockdata_filepath": "data/layouts/AsfalHills/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY",
+      "name": "SofosCity_Layout",
+      "width": 40,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Sofos",
+      "border_filepath": "data/layouts/SofosCity/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity/map.bin"
     }
   ]
 }
