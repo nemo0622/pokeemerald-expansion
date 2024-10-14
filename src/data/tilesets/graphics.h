@@ -1729,3 +1729,22 @@ const u16 gTilesetPalettes_Sofos[][16] =
 };
 
 const u32 gTilesetTiles_Sofos[] = INCBIN_U32("data/tilesets/secondary/sofos/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_AsteriSea[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/asteri_sea/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_AsteriSea[] = INCBIN_U32("data/tilesets/secondary/asteri_sea/tiles.4bpp.lz");

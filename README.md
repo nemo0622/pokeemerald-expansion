@@ -176,6 +176,7 @@ REGION PLAN:
     - Can Surf out from the Port of Sofos into the Sea of Ilios
         - Gyms 5-7 are on islands, game is sort of non-linear, with slight level increases further out and level scaling trainers/gym leaders
     - East of Sofos City lay the islands of Marmaro and Myrrini, based on Paros and Naxos respectively
+        - MapSec: Named the Asteri Sea, the "northern" section of the Sea of Ilios
         - Marmaro is an island with Marble quarries, many rock and fairy types
         - Myrrini is an island with a large, busy port and is covered in grape vines
             - Gym 5: Thyrsus, a Poison/Confusion themed gym leader
@@ -183,6 +184,7 @@ REGION PLAN:
                 - Team: Ludicolo (party!), Grafaiai, Seviper, Gligar, and Hypno (level 30-32)
                 - Unlocks Dive outside of battle
     - In the middle of the Sea of Ilios lay the islands of Irene and Fresco, based on Santorini
+        - MapSec: Named the Vulcai Sea, the central section of the Sea of Ilios
         - Islands form a ring around Mt. Ifaisteio, an active volcano
         - Irene Isle (based on Therasia, the west island) has ancient Minoan-inspired ruins
         - Fresco Isle (based on Santorini) is long and dotted in patches of desert ("semi-arid environment!") + volcanic ash
@@ -191,6 +193,7 @@ REGION PLAN:
                 - Team: Lairon, Salazzle, Doublade, Darmanitan, Tinkaton (level 32-35)
                 - Unlocks Strength outside of battle
     - Furthest south in the Sea of Ilios is the island of Kaptara, based on Crete
+        - MapSec: Named the Pidima Sea, the southern section of the Sea of Ilios
         - Covered in Minoan-inspired ruins, like Irene Isle
         - Split between east and west, bisected by Palati, based on Knossos
             - Gym 7: Ermo, the Flying gym leader

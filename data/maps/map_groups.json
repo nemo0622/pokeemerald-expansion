@@ -111,7 +111,11 @@
     "FroslassCavern_Floor2",
     "FroslassCavern_Floor3",
     "AsfalHills",
-    "SofosCity"
+    "SofosCity",
+    "SeaOfAsteri_West",
+    "MarmaroIsland",
+    "SeaOfAsteri_Central",
+    "MyrriniIsland"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

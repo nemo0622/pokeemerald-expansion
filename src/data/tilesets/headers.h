@@ -904,3 +904,14 @@ const struct Tileset gTileset_Sofos =
     .metatileAttributes = gMetatileAttributes_Sofos,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_AsteriSea =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AsteriSea,
+    .palettes = gTilesetPalettes_AsteriSea,
+    .metatiles = gMetatiles_AsteriSea,
+    .metatileAttributes = gMetatileAttributes_AsteriSea,
+    .callback = NULL,
+};

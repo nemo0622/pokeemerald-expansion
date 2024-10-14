@@ -106,9 +106,9 @@
 #define MAPSEC_ACRISIA_MOUNTAINS            0x66 // Area West of Acrisia City, up to Discus Mines
 #define MAPSEC_ERINYS_PATH                  0x67 // East of Pythios Town
 #define MAPSEC_ASFAL_HILLS                  0x68 // Exit from Froslass Cavern, east to Sofos City
-#define MAPSEC_ROUTE_5                      0x69
-#define MAPSEC_ROUTE_6                      0x6A
-#define MAPSEC_ROUTE_7                      0x6B
+#define MAPSEC_SEA_OF_ASTERI                0x69 // Sea east of Sofos City (northern Sea of Ilios)
+#define MAPSEC_MARMARO_ISLAND               0x6A // Left island in Sea of Asteri
+#define MAPSEC_MYRRINI_ISLAND               0x6B // Right island in Sea of Asteri
 #define MAPSEC_ROUTE_8                      0x6C
 #define MAPSEC_ROUTE_9                      0x6D
 #define MAPSEC_ROUTE_10                     0x6E

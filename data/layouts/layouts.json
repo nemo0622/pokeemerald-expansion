@@ -4614,12 +4614,52 @@
     {
       "id": "LAYOUT_SOFOS_CITY",
       "name": "SofosCity_Layout",
-      "width": 40,
-      "height": 36,
+      "width": 54,
+      "height": 70,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Sofos",
       "border_filepath": "data/layouts/SofosCity/border.bin",
       "blockdata_filepath": "data/layouts/SofosCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEA_OF_ASTERI_WEST",
+      "name": "SeaOfAsteri_West_Layout",
+      "width": 90,
+      "height": 70,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AsteriSea",
+      "border_filepath": "data/layouts/SeaOfAsteri_West/border.bin",
+      "blockdata_filepath": "data/layouts/SeaOfAsteri_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_MARMARO_ISLAND",
+      "name": "MarmaroIsland_Layout",
+      "width": 60,
+      "height": 64,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AsteriSea",
+      "border_filepath": "data/layouts/MarmaroIsland/border.bin",
+      "blockdata_filepath": "data/layouts/MarmaroIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEA_OF_ASTERI_CENTRAL",
+      "name": "SeaOfAsteri_Central_Layout",
+      "width": 40,
+      "height": 64,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AsteriSea",
+      "border_filepath": "data/layouts/SeaOfAsteri_Central/border.bin",
+      "blockdata_filepath": "data/layouts/SeaOfAsteri_Central/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRRINI_ISLAND",
+      "name": "MyrriniIsland_Layout",
+      "width": 80,
+      "height": 64,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AsteriSea",
+      "border_filepath": "data/layouts/MyrriniIsland/border.bin",
+      "blockdata_filepath": "data/layouts/MyrriniIsland/map.bin"
     }
   ]
 }

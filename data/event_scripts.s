@@ -1598,3 +1598,11 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/AsfalHills/scripts.inc"
 
 	.include "data/maps/SofosCity/scripts.inc"
+
+	.include "data/maps/SeaOfAsteri_West/scripts.inc"
+
+	.include "data/maps/MarmaroIsland/scripts.inc"
+
+	.include "data/maps/SeaOfAsteri_Central/scripts.inc"
+
+	.include "data/maps/MyrriniIsland/scripts.inc"

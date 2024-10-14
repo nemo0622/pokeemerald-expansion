@@ -222,3 +222,6 @@ const u16 gMetatileAttributes_Jusmail[] = INCBIN_U16("data/tilesets/secondary/ju
 
 const u16 gMetatiles_Sofos[] = INCBIN_U16("data/tilesets/secondary/sofos/metatiles.bin");
 const u16 gMetatileAttributes_Sofos[] = INCBIN_U16("data/tilesets/secondary/sofos/metatile_attributes.bin");
+
+const u16 gMetatiles_AsteriSea[] = INCBIN_U16("data/tilesets/secondary/asteri_sea/metatiles.bin");
+const u16 gMetatileAttributes_AsteriSea[] = INCBIN_U16("data/tilesets/secondary/asteri_sea/metatile_attributes.bin");

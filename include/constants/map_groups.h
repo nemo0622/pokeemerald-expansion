@@ -82,6 +82,10 @@
 #define MAP_FROSLASS_CAVERN_FLOOR3    (73 | (0 << 8))
 #define MAP_ASFAL_HILLS               (74 | (0 << 8))
 #define MAP_SOFOS_CITY                (75 | (0 << 8))
+#define MAP_SEA_OF_ASTERI_WEST        (76 | (0 << 8))
+#define MAP_MARMARO_ISLAND            (77 | (0 << 8))
+#define MAP_SEA_OF_ASTERI_CENTRAL     (78 | (0 << 8))
+#define MAP_MYRRINI_ISLAND            (79 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

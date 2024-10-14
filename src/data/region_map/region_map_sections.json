@@ -844,24 +844,24 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_5",
-      "name": "ROUTE 5",
+      "map_section": "MAPSEC_SEA_OF_ASTERI",
+      "name": "Sea of Asteri",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_6",
-      "name": "ROUTE 6",
+      "map_section": "MAPSEC_MARMARO_ISLAND",
+      "name": "Marmaro Island",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_7",
-      "name": "ROUTE 7",
+      "map_section": "MAPSEC_MYRRINI_ISLAND",
+      "name": "Myrrini Island",
       "x": 0,
       "y": 0,
       "width": 1,
