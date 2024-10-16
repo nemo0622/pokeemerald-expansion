@@ -2091,7 +2091,7 @@ static const u16 sZarudeFormSpeciesIdTable[] = {
 static const u16 sCalyrexFormSpeciesIdTable[] = {
     SPECIES_CALYREX,
     SPECIES_CALYREX_ICE_RIDER,
-    SPECIES_CALYREX_SHADOW_RIDER,
+    SPECIES_CALYREX_AUTUMN_RIDER,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_CALYREX

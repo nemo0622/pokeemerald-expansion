@@ -37,6 +37,13 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
         - Scurry: Signature ability of Crocky, increases Evasiveness when sent out
     - New Pokémon
         - Crocky and Kotora (commissioned sprites)
+        - Calyrex + Forms Fakemon
+            - Spectrier and Glastrier Ilian Forms - single stage rare Pokémon found in midgame
+                - Spectrier - pure Fire type horse
+                - Glastrier - pure Ice type horse
+            - Calyrex Ilian form based on Headless Horseman from Ichabod Crane (Ghost type)
+            - Calyrex Autumn Rider Form - Spectrier + Calyrex, Fire/Ghost type (already made sprites!)
+            - Calyrex Winter Rider Form - Glastrier + Calyrex, Ice/Ghost type
         - A few other beta Pokémon (Ice type Werewolves) (https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Pok%C3%A9mon)
         - Commission Thylacine Pokémon? Ghost/Normal type or Ghost/Rock type?
 

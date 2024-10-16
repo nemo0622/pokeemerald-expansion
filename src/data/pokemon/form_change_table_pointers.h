@@ -24,7 +24,7 @@ const struct Fusion *const gFusionTablePointers[NUM_SPECIES] =
 #if P_FAMILY_CALYREX
     [SPECIES_CALYREX] = sCalyrexFusionTable,
 #if P_FAMILY_SPECTRIER
-    [SPECIES_CALYREX_SHADOW_RIDER] = sCalyrexFusionTable,
+    [SPECIES_CALYREX_AUTUMN_RIDER] = sCalyrexFusionTable,
     [SPECIES_SPECTRIER] = sCalyrexFusionTable,
 #endif //P_FAMILY_SPECTRIER
 #if P_FAMILY_GLASTRIER

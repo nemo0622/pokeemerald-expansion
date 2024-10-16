@@ -7435,7 +7435,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formSpeciesIdTable = sCalyrexFormSpeciesIdTable,
     },
 
-    [SPECIES_CALYREX_SHADOW_RIDER] =
+    [SPECIES_CALYREX_AUTUMN_RIDER] =
     {
         .baseHP        = 100,
         .baseAttack    = 85,
@@ -7443,7 +7443,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 150,
         .baseSpAttack  = 165,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GHOST),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_GHOST),
         .catchRate = 3,
         .expYield = 340,
         .evYield_SpAttack = 3,
