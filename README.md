@@ -190,10 +190,9 @@ REGION PLAN:
                 - Based on Dionysus, always talking about festivals and parties
                 - Team: Ludicolo (party!), Grafaiai, Seviper, Gligar, and Hypno (level 30-32)
                 - Unlocks Dive outside of battle
-    - In the middle of the Sea of Ilios lay the islands of Irene and Fresco, based on Santorini
+    - In the middle of the Sea of Ilios lay the island of Fresco, based on Santorini
         - MapSec: Named the Vulcai Sea, the central section of the Sea of Ilios
         - Islands form a ring around Mt. Ifaisteio, an active volcano
-        - Irene Isle (based on Therasia, the west island) has ancient Minoan-inspired ruins
         - Fresco Isle (based on Santorini) is long and dotted in patches of desert ("semi-arid environment!") + volcanic ash
             - Gym 6: Khalkeus, the Fire/Steel gym leader
                 - Based on Hephaestus, living on a little volcanic hotspot on Fresco Isle
@@ -201,13 +200,13 @@ REGION PLAN:
                 - Unlocks Strength outside of battle
     - Furthest south in the Sea of Ilios is the island of Kaptara, based on Crete
         - MapSec: Named the Pidima Sea, the southern section of the Sea of Ilios
-        - Covered in Minoan-inspired ruins, like Irene Isle
+        - Covered in Minoan-inspired ruins
         - Split between east and west, bisected by Palati, based on Knossos
             - Gym 7: Ermo, the Flying gym leader
                 - Based on Hermes, always running around and flying on his Pokémon
                 - Team: Dragonite, Honchkrow, Pelipper, Noctowl, Jolteon, and Kilowattrel (level 35-37)
                 - Unlocks Fly outside of battle
-    - After Gyms 5-7 are defeated, player backtracks through Sofos City and further east to a crossroad in Absol's Drop
+    - After Gyms 5-7 are defeated, player backtracks through Sofos City and further west to a crossroad in Asfal Hills
     - South from this is Port Pello, based on Megara
         - Probably story here, gearing up for final showdown with evil team
     - Head West of Port Pello, through Polemos Pass, then South through the Nyx Trail

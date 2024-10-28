@@ -86,6 +86,13 @@
 #define MAP_MARMARO_ISLAND            (77 | (0 << 8))
 #define MAP_SEA_OF_ASTERI_CENTRAL     (78 | (0 << 8))
 #define MAP_MYRRINI_ISLAND            (79 | (0 << 8))
+#define MAP_SEA_OF_VULCAI_WEST        (80 | (0 << 8))
+#define MAP_SEA_OF_VULCAI_SOUTHWEST   (81 | (0 << 8))
+#define MAP_FRESCO_ISLAND             (82 | (0 << 8))
+#define MAP_PALATI_CITY               (83 | (0 << 8))
+#define MAP_KAPTARA_ISLAND_EAST       (84 | (0 << 8))
+#define MAP_KAPTARA_ISLAND_WEST       (85 | (0 << 8))
+#define MAP_THE_RATTWAY               (86 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

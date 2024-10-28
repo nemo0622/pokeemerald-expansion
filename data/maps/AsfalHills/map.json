@@ -17,6 +17,11 @@
       "map": "MAP_SOFOS_CITY",
       "offset": -8,
       "direction": "right"
+    },
+    {
+      "map": "MAP_THE_RATTWAY",
+      "offset": 12,
+      "direction": "down"
     }
   ],
   "object_events": [

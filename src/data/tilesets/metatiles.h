@@ -225,3 +225,6 @@ const u16 gMetatileAttributes_Sofos[] = INCBIN_U16("data/tilesets/secondary/sofo
 
 const u16 gMetatiles_AsteriSea[] = INCBIN_U16("data/tilesets/secondary/asteri_sea/metatiles.bin");
 const u16 gMetatileAttributes_AsteriSea[] = INCBIN_U16("data/tilesets/secondary/asteri_sea/metatile_attributes.bin");
+
+const u16 gMetatiles_KaptaraIsland[] = INCBIN_U16("data/tilesets/secondary/kaptara_island/metatiles.bin");
+const u16 gMetatileAttributes_KaptaraIsland[] = INCBIN_U16("data/tilesets/secondary/kaptara_island/metatile_attributes.bin");

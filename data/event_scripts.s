@@ -1606,3 +1606,17 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/SeaOfAsteri_Central/scripts.inc"
 
 	.include "data/maps/MyrriniIsland/scripts.inc"
+
+	.include "data/maps/SeaOfVulcai_West/scripts.inc"
+
+	.include "data/maps/SeaOfVulcai_Southwest/scripts.inc"
+
+	.include "data/maps/FrescoIsland/scripts.inc"
+
+	.include "data/maps/PalatiCity/scripts.inc"
+
+	.include "data/maps/KaptaraIsland_East/scripts.inc"
+
+	.include "data/maps/KaptaraIsland_West/scripts.inc"
+
+	.include "data/maps/TheRattway/scripts.inc"

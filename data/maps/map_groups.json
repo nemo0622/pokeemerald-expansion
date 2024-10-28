@@ -115,7 +115,14 @@
     "SeaOfAsteri_West",
     "MarmaroIsland",
     "SeaOfAsteri_Central",
-    "MyrriniIsland"
+    "MyrriniIsland",
+    "SeaOfVulcai_West",
+    "SeaOfVulcai_Southwest",
+    "FrescoIsland",
+    "PalatiCity",
+    "KaptaraIsland_East",
+    "KaptaraIsland_West",
+    "TheRattway"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

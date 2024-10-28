@@ -4604,7 +4604,7 @@
     {
       "id": "LAYOUT_ASFAL_HILLS",
       "name": "AsfalHills_Layout",
-      "width": 56,
+      "width": 96,
       "height": 22,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Sofos",
@@ -4660,6 +4660,76 @@
       "secondary_tileset": "gTileset_AsteriSea",
       "border_filepath": "data/layouts/MyrriniIsland/border.bin",
       "blockdata_filepath": "data/layouts/MyrriniIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEA_OF_VULCAI_WEST",
+      "name": "SeaOfVulcai_West_Layout",
+      "width": 90,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SeaOfVulcai_West/border.bin",
+      "blockdata_filepath": "data/layouts/SeaOfVulcai_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEA_OF_VULCAI_SOUTHWEST",
+      "name": "SeaOfVulcai_Southwest_Layout",
+      "width": 90,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SeaOfVulcai_Southwest/border.bin",
+      "blockdata_filepath": "data/layouts/SeaOfVulcai_Southwest/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRESCO_ISLAND",
+      "name": "FrescoIsland_Layout",
+      "width": 80,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/FrescoIsland/border.bin",
+      "blockdata_filepath": "data/layouts/FrescoIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY",
+      "name": "PalatiCity_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_KaptaraIsland",
+      "border_filepath": "data/layouts/PalatiCity/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_KAPTARA_ISLAND_EAST",
+      "name": "KaptaraIsland_East_Layout",
+      "width": 70,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/KaptaraIsland_East/border.bin",
+      "blockdata_filepath": "data/layouts/KaptaraIsland_East/map.bin"
+    },
+    {
+      "id": "LAYOUT_KAPTARA_ISLAND_WEST",
+      "name": "KaptaraIsland_West_Layout",
+      "width": 70,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/KaptaraIsland_West/border.bin",
+      "blockdata_filepath": "data/layouts/KaptaraIsland_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_RATTWAY",
+      "name": "TheRattway_Layout",
+      "width": 50,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/TheRattway/border.bin",
+      "blockdata_filepath": "data/layouts/TheRattway/map.bin"
     }
   ]
 }

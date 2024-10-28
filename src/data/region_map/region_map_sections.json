@@ -868,40 +868,40 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_8",
-      "name": "ROUTE 8",
+      "map_section": "MAPSEC_SEA_OF_VULCAI",
+      "name": "Sea of Vulcai",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_9",
-      "name": "ROUTE 9",
+      "map_section": "MAPSEC_FRESCO_ISLAND",
+      "name": "Fresco Isles",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_10",
-      "name": "ROUTE 10",
+      "map_section": "MAPSEC_PALATI_CITY",
+      "name": "Palati City",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_11",
-      "name": "ROUTE 11",
+      "map_section": "MAPSEC_KAPTARA_ISLAND",
+      "name": "Kaptara Island",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_12",
-      "name": "ROUTE 12",
+      "map_section": "MAPSEC_THE_RATTWAY",
+      "name": "The Rattway",
       "x": 0,
       "y": 0,
       "width": 1,

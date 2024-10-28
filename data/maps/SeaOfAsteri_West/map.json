@@ -22,6 +22,11 @@
       "map": "MAP_MARMARO_ISLAND",
       "offset": 6,
       "direction": "right"
+    },
+    {
+      "map": "MAP_SEA_OF_VULCAI_WEST",
+      "offset": 0,
+      "direction": "down"
     }
   ],
   "object_events": [

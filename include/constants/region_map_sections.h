@@ -109,11 +109,11 @@
 #define MAPSEC_SEA_OF_ASTERI                0x69 // Sea east of Sofos City (northern Sea of Ilios)
 #define MAPSEC_MARMARO_ISLAND               0x6A // Left island in Sea of Asteri
 #define MAPSEC_MYRRINI_ISLAND               0x6B // Right island in Sea of Asteri
-#define MAPSEC_ROUTE_8                      0x6C
-#define MAPSEC_ROUTE_9                      0x6D
-#define MAPSEC_ROUTE_10                     0x6E
-#define MAPSEC_ROUTE_11                     0x6F
-#define MAPSEC_ROUTE_12                     0x70
+#define MAPSEC_SEA_OF_VULCAI                0x6C // Sea south of Sea of Asteri, Southeast of Sofos
+#define MAPSEC_FRESCO_ISLAND                0x6D // Island with volcano and deserts, based on Santorini
+#define MAPSEC_PALATI_CITY                  0x6E // City in the center of Kaptara Island (Crete-based island, based on Knossos)
+#define MAPSEC_KAPTARA_ISLAND               0x6F // East and West halves of island, bisected by Palati City
+#define MAPSEC_THE_RATTWAY                  0x70 // south of Asfal Hills
 #define MAPSEC_ROUTE_13                     0x71
 #define MAPSEC_ROUTE_14                     0x72
 #define MAPSEC_ROUTE_15                     0x73

@@ -17,6 +17,11 @@
       "map": "MAP_SEA_OF_ASTERI_WEST",
       "offset": -6,
       "direction": "left"
+    },
+    {
+      "map": "MAP_SEA_OF_ASTERI_CENTRAL",
+      "offset": 0,
+      "direction": "right"
     }
   ],
   "object_events": [
