@@ -1620,3 +1620,7 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/KaptaraIsland_West/scripts.inc"
 
 	.include "data/maps/TheRattway/scripts.inc"
+
+	.include "data/maps/PortPello/scripts.inc"
+
+	.include "data/maps/NyxTrails/scripts.inc"

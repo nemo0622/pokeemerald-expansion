@@ -1767,3 +1767,22 @@ const u16 gTilesetPalettes_KaptaraIsland[][16] =
 };
 
 const u32 gTilesetTiles_KaptaraIsland[] = INCBIN_U32("data/tilesets/secondary/kaptara_island/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_PortPello[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/port_pello/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_PortPello[] = INCBIN_U32("data/tilesets/secondary/port_pello/tiles.4bpp.lz");

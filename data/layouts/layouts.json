@@ -4727,9 +4727,29 @@
       "width": 50,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_PortPello",
       "border_filepath": "data/layouts/TheRattway/border.bin",
       "blockdata_filepath": "data/layouts/TheRattway/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_PELLO",
+      "name": "PortPello_Layout",
+      "width": 60,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PortPello",
+      "border_filepath": "data/layouts/PortPello/border.bin",
+      "blockdata_filepath": "data/layouts/PortPello/map.bin"
+    },
+    {
+      "id": "LAYOUT_NYX_TRAILS",
+      "name": "NyxTrails_Layout",
+      "width": 50,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PortPello",
+      "border_filepath": "data/layouts/NyxTrails/border.bin",
+      "blockdata_filepath": "data/layouts/NyxTrails/map.bin"
     }
   ]
 }

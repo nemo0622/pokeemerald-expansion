@@ -93,6 +93,8 @@
 #define MAP_KAPTARA_ISLAND_EAST       (84 | (0 << 8))
 #define MAP_KAPTARA_ISLAND_WEST       (85 | (0 << 8))
 #define MAP_THE_RATTWAY               (86 | (0 << 8))
+#define MAP_PORT_PELLO                (87 | (0 << 8))
+#define MAP_NYX_TRAILS                (88 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

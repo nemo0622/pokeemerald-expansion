@@ -754,8 +754,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_CELADON_CITY",
-      "name": "CELADON CITY",
+      "map_section": "MAPSEC_PORT_PELLO",
+      "name": "Port Pello",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1028,8 +1028,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_S_S_ANNE",
-      "name": "S.S. ANNE",
+      "map_section": "MAPSEC_NYX_TRAILS",
+      "name": "The Nyx Trails",
       "x": 0,
       "y": 0,
       "width": 1,

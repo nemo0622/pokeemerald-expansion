@@ -1,12 +1,12 @@
 {
-  "id": "MAP_THE_RATTWAY",
-  "name": "TheRattway",
-  "layout": "LAYOUT_THE_RATTWAY",
-  "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_THE_RATTWAY",
+  "id": "MAP_PORT_PELLO",
+  "name": "PortPello",
+  "layout": "LAYOUT_PORT_PELLO",
+  "music": "MUS_FALLARBOR",
+  "region_map_section": "MAPSEC_PORT_PELLO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -14,14 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ASFAL_HILLS",
-      "offset": -12,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_PORT_PELLO",
+      "map": "MAP_THE_RATTWAY",
       "offset": 0,
-      "direction": "down"
+      "direction": "up"
     }
   ],
   "object_events": [

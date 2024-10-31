@@ -95,7 +95,7 @@
 #define MAPSEC_JUSMAIL_TOWN                 0x5B
 #define MAPSEC_PYTHIOS_TOWN                 0x5C
 #define MAPSEC_SOFOS_CITY                   0x5D
-#define MAPSEC_CELADON_CITY                 0x5E
+#define MAPSEC_PORT_PELLO                   0x5E
 #define MAPSEC_FUCHSIA_CITY                 0x5F
 #define MAPSEC_CINNABAR_ISLAND              0x60
 #define MAPSEC_INDIGO_PLATEAU               0x61
@@ -129,7 +129,7 @@
 #define MAPSEC_ROUTE_25                     0x7D
 #define MAPSEC_WANDERERS_WOODS              0x7E // South of Jusmail Town, heading down to Pythios Town
 #define MAPSEC_FROSLASS_CAVERN              0x7F // East of Pythios Town - connects Erinys Path and Floette's Grace
-#define MAPSEC_S_S_ANNE                     0x80
+#define MAPSEC_NYX_TRAILS                   0x80 // South of Port Pello
 #define MAPSEC_UNDERGROUND_PATH             0x81
 #define MAPSEC_UNDERGROUND_PATH_2           0x82
 #define MAPSEC_DIGLETTS_CAVE                0x83

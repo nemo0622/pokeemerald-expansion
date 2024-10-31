@@ -228,3 +228,6 @@ const u16 gMetatileAttributes_AsteriSea[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_KaptaraIsland[] = INCBIN_U16("data/tilesets/secondary/kaptara_island/metatiles.bin");
 const u16 gMetatileAttributes_KaptaraIsland[] = INCBIN_U16("data/tilesets/secondary/kaptara_island/metatile_attributes.bin");
+
+const u16 gMetatiles_PortPello[] = INCBIN_U16("data/tilesets/secondary/port_pello/metatiles.bin");
+const u16 gMetatileAttributes_PortPello[] = INCBIN_U16("data/tilesets/secondary/port_pello/metatile_attributes.bin");

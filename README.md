@@ -209,7 +209,8 @@ REGION PLAN:
     - After Gyms 5-7 are defeated, player backtracks through Sofos City and further west to a crossroad in Asfal Hills
     - South from this is Port Pello, based on Megara
         - Probably story here, gearing up for final showdown with evil team
-    - Head West of Port Pello, through Polemos Pass, then South through the Nyx Trail
+        - Pink trees and stuff, blessed by a shiny Celebi centuries ago or something
+    - Head South of Port Pello through the Nyx Trail
     - South to Areios Hideout, the main base of the evil team
         - Gym 8: Alcippe, the Fighting gym leader
             - Named after daughter of Ares

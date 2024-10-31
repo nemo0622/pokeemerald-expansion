@@ -926,3 +926,14 @@ const struct Tileset gTileset_KaptaraIsland =
     .metatileAttributes = gMetatileAttributes_KaptaraIsland,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PortPello =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PortPello,
+    .palettes = gTilesetPalettes_PortPello,
+    .metatiles = gMetatiles_PortPello,
+    .metatileAttributes = gMetatileAttributes_PortPello,
+    .callback = NULL,
+};
