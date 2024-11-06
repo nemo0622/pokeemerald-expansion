@@ -124,7 +124,8 @@
     "KaptaraIsland_West",
     "TheRattway",
     "PortPello",
-    "NyxTrails"
+    "NyxTrails",
+    "AreiosHideout"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -463,7 +464,8 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "DiscusForge"
+    "DiscusForge",
+    "StygianCaves_F1"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

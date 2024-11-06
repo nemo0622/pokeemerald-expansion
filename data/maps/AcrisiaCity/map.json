@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_ACRISIA_MOUNTAINS",
-      "offset": 4,
+      "offset": -16,
       "direction": "left"
     }
   ],

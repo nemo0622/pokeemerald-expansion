@@ -1624,3 +1624,7 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/PortPello/scripts.inc"
 
 	.include "data/maps/NyxTrails/scripts.inc"
+
+	.include "data/maps/AreiosHideout/scripts.inc"
+
+	.include "data/maps/StygianCaves_F1/scripts.inc"

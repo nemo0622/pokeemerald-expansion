@@ -17,7 +17,34 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 42,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_PELLO",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_PELLO",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 2,
+      "y": 75,
+      "elevation": 0,
+      "dest_map": "MAP_NYX_TRAILS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 75,
+      "elevation": 0,
+      "dest_map": "MAP_NYX_TRAILS",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ACRISIA_CITY",
-      "offset": -4,
+      "offset": 16,
       "direction": "right"
     }
   ],
@@ -25,7 +25,7 @@
   "warp_events": [
     {
       "x": 10,
-      "y": 6,
+      "y": 26,
       "elevation": 0,
       "dest_map": "MAP_DISCUS_FORGE",
       "dest_warp_id": "0"
@@ -38,7 +38,7 @@
     {
       "type": "sign",
       "x": 12,
-      "y": 6,
+      "y": 26,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "AcrisiaMountains_Sign_GymSign"

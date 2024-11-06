@@ -1,0 +1,28 @@
+{
+  "id": "MAP_STYGIAN_CAVES_F1",
+  "name": "StygianCaves_F1",
+  "layout": "LAYOUT_STYGIAN_CAVES_F1",
+  "music": "MUS_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_THE_STYGIAN_CAVES",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

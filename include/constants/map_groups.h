@@ -95,6 +95,7 @@
 #define MAP_THE_RATTWAY               (86 | (0 << 8))
 #define MAP_PORT_PELLO                (87 | (0 << 8))
 #define MAP_NYX_TRAILS                (88 | (0 << 8))
+#define MAP_AREIOS_HIDEOUT            (89 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -434,6 +435,7 @@
 #define MAP_ALTERING_CAVE                            (106 | (24 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
 #define MAP_DISCUS_FORGE                             (108 | (24 << 8))
+#define MAP_STYGIAN_CAVES_F1                         (109 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

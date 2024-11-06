@@ -90,20 +90,23 @@ Many, many talented developers and artists are responsible for making this proje
 ### Graphics
 - Tilesets:
     - Most basic overworld sprites purchased from Arex and Zaebucca on itch.io
-    - Pokémon Center and Mart by TrainerDX
+    - Pokémon Center, Mart, and Gym Buildings by TrainerDX
 - Pokémon Sprites:
     - Most Generation 3 and 9 Pokémon sprites by [Egg](https://x.com/Egg3ggEgg) on Twitter
     - Many Generation 3 and other Pokémon sprites by [Nuukiie](https://www.deviantart.com/nuukiie) on DeviantArt
-    - Many Generation 4 sprites by ESY on DeviantArt
+    - Many Generation 4 + some Gen 5 sprites from compilation by ESY on DeviantArt
+    - Most Gen 5 sprites by Pokekoks
     - Some Hisuian Pokémon sprites (Kleavor and Ursaluna) by Katten and dwg1109 on DeviantArt
     - Generation 1-2 Pokémon and many UI sprites from Spriter's Resource GSC sprite sheets
     - Spiky-ear Pichu sprite based on Pichu devamp by Matdemo159 on DeviantArt
+    - Rowlet front sprite by Matdemo159 on DeviantArt
     - A few modified Gen 1-2 Pokémon sprites (Golduck, Aipom, Politoed) by Substitube
     - Hydrapple line sprites and various other gen 2 style sprites (Charizard, Dudunsparce, Porygon line) by SageDeoxys on Twitter
     - Alolan Sandshrew/Sandslash and Alolan Vulpix/Ninetales sprites by wittycrow on DeviantArt
 - Overworld Sprites:
     - Many NPC sprites adapted from Pokémon Crystal
     - Some NPC sprites by Anima_nel on itch.io
+    - Player sprites by Solo993
 - Overworld Pokémon Sprites:
     - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
     - Megaman-Omega on DeviantArt: Onix, Steelix, Lugia, Ho-oh, Lotad, Lombre, Ludicolo, Taillow, Swellow, Surskit, Masquerain, Shroomish, Breloom, Whismur, Loudred, Exploud, Makuhita, Hariyama, Sableye, Mawile, Aron, Lairon, Aggron, Volbeat, Illumise, Torkoal, Cacnea, Cacturne, Swablu, Altaria, Lileep, Cradily, Anorith, Armaldo, Feebas, Milotic, Shuppet, Banette, Duskull, Dusclops, Chimecho, Absol, Relicanth, Bagon, Salamence, Kyogre, Groudon, Rayquaza, Tangrowth, Electivire, Magmortar, Gliscor, Mamoswine, Gallade, Froslass, Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon

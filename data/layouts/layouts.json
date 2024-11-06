@@ -4505,7 +4505,7 @@
       "id": "LAYOUT_ACRISIA_MOUNTAINS",
       "name": "AcrisiaMountains_Layout",
       "width": 40,
-      "height": 26,
+      "height": 46,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Acrisia",
       "border_filepath": "data/layouts/AcrisiaMountains/border.bin",
@@ -4750,6 +4750,26 @@
       "secondary_tileset": "gTileset_PortPello",
       "border_filepath": "data/layouts/NyxTrails/border.bin",
       "blockdata_filepath": "data/layouts/NyxTrails/map.bin"
+    },
+    {
+      "id": "LAYOUT_AREIOS_HIDEOUT",
+      "name": "AreiosHideout_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PortPello",
+      "border_filepath": "data/layouts/AreiosHideout/border.bin",
+      "blockdata_filepath": "data/layouts/AreiosHideout/map.bin"
+    },
+    {
+      "id": "LAYOUT_STYGIAN_CAVES_F1",
+      "name": "StygianCaves_F1_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/StygianCaves_F1/border.bin",
+      "blockdata_filepath": "data/layouts/StygianCaves_F1/map.bin"
     }
   ]
 }
