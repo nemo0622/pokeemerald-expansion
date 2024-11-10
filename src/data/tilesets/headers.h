@@ -937,3 +937,14 @@ const struct Tileset gTileset_PortPello =
     .metatileAttributes = gMetatileAttributes_PortPello,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_ChampionsPeak =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_ChampionsPeak,
+    .palettes = gTilesetPalettes_ChampionsPeak,
+    .metatiles = gMetatiles_ChampionsPeak,
+    .metatileAttributes = gMetatileAttributes_ChampionsPeak,
+    .callback = NULL,
+};

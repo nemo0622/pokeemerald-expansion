@@ -1628,3 +1628,9 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/AreiosHideout/scripts.inc"
 
 	.include "data/maps/StygianCaves_F1/scripts.inc"
+
+	.include "data/maps/StygianCaves_BF1/scripts.inc"
+
+	.include "data/maps/ChampionsPeak_Outside/scripts.inc"
+
+	.include "data/maps/ChampionsPeak_BattleRoom/scripts.inc"

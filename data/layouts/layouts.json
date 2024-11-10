@@ -4770,6 +4770,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/StygianCaves_F1/border.bin",
       "blockdata_filepath": "data/layouts/StygianCaves_F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_STYGIAN_CAVES_BF1",
+      "name": "StygianCaves_BF1_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/StygianCaves_BF1/border.bin",
+      "blockdata_filepath": "data/layouts/StygianCaves_BF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONS_PEAK_OUTSIDE",
+      "name": "ChampionsPeak_Outside_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ChampionsPeak",
+      "border_filepath": "data/layouts/ChampionsPeak_Outside/border.bin",
+      "blockdata_filepath": "data/layouts/ChampionsPeak_Outside/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONS_PEAK_BATTLE_ROOM",
+      "name": "ChampionsPeak_BattleRoom_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleArena",
+      "border_filepath": "data/layouts/ChampionsPeak_BattleRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ChampionsPeak_BattleRoom/map.bin"
     }
   ]
 }

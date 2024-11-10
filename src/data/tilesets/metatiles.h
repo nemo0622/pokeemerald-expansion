@@ -231,3 +231,6 @@ const u16 gMetatileAttributes_KaptaraIsland[] = INCBIN_U16("data/tilesets/second
 
 const u16 gMetatiles_PortPello[] = INCBIN_U16("data/tilesets/secondary/port_pello/metatiles.bin");
 const u16 gMetatileAttributes_PortPello[] = INCBIN_U16("data/tilesets/secondary/port_pello/metatile_attributes.bin");
+
+const u16 gMetatiles_ChampionsPeak[] = INCBIN_U16("data/tilesets/secondary/champions_peak/metatiles.bin");
+const u16 gMetatileAttributes_ChampionsPeak[] = INCBIN_U16("data/tilesets/secondary/champions_peak/metatile_attributes.bin");

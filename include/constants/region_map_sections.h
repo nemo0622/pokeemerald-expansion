@@ -97,7 +97,7 @@
 #define MAPSEC_SOFOS_CITY                   0x5D
 #define MAPSEC_PORT_PELLO                   0x5E
 #define MAPSEC_AREIOS_HIDEOUT               0x5F // City after Nyx Trails, based on Sparta, hideout of evil team
-#define MAPSEC_CINNABAR_ISLAND              0x60
+#define MAPSEC_CHAMPIONS_PEAK               0x60 // Elite Four location
 #define MAPSEC_INDIGO_PLATEAU               0x61
 #define MAPSEC_SAFFRON_CITY                 0x62
 #define MAPSEC_ROUTE_4_POKECENTER           0x63

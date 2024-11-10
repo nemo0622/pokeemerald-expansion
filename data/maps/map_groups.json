@@ -125,7 +125,9 @@
     "TheRattway",
     "PortPello",
     "NyxTrails",
-    "AreiosHideout"
+    "AreiosHideout",
+    "ChampionsPeak_Outside",
+    "ChampionsPeak_BattleRoom"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -465,7 +467,8 @@
     "AlteringCave",
     "MeteorFalls_StevensCave",
     "DiscusForge",
-    "StygianCaves_F1"
+    "StygianCaves_F1",
+    "StygianCaves_BF1"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
