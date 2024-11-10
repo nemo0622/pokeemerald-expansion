@@ -1363,17 +1363,17 @@
 #define NUM_BADGES                                   (1 + FLAG_BADGE08_GET - FLAG_BADGE01_GET)
 
 // Towns and Cities
-#define FLAG_VISITED_LITTLEROOT_TOWN                (SYSTEM_FLAGS + 0xF)
-#define FLAG_VISITED_OLDALE_TOWN                    (SYSTEM_FLAGS + 0x10) // 0x870
-#define FLAG_VISITED_DEWFORD_TOWN                   (SYSTEM_FLAGS + 0x11)
-#define FLAG_VISITED_LAVARIDGE_TOWN                 (SYSTEM_FLAGS + 0x12)
-#define FLAG_VISITED_FALLARBOR_TOWN                 (SYSTEM_FLAGS + 0x13)
-#define FLAG_VISITED_VERDANTURF_TOWN                (SYSTEM_FLAGS + 0x14)
-#define FLAG_VISITED_PACIFIDLOG_TOWN                (SYSTEM_FLAGS + 0x15)
-#define FLAG_VISITED_PETALBURG_CITY                 (SYSTEM_FLAGS + 0x16)
-#define FLAG_VISITED_SLATEPORT_CITY                 (SYSTEM_FLAGS + 0x17)
-#define FLAG_VISITED_MAUVILLE_CITY                  (SYSTEM_FLAGS + 0x18)
-#define FLAG_VISITED_RUSTBORO_CITY                  (SYSTEM_FLAGS + 0x19)
+#define FLAG_VISITED_ACRISIA_CITY                   (SYSTEM_FLAGS + 0xF) // replaced visited littleroot flag
+#define FLAG_VISITED_JUSMAIL_TOWN                   (SYSTEM_FLAGS + 0x10) // 0x870 // replaced oldale flag
+#define FLAG_VISITED_PYTHIOS_TOWN                   (SYSTEM_FLAGS + 0x11) // replaced dewford flag
+#define FLAG_VISITED_SOFOS_CITY                     (SYSTEM_FLAGS + 0x12) // replaced lavaridge flag
+#define FLAG_VISITED_MARMARO_ISLAND                 (SYSTEM_FLAGS + 0x13) // replaced fallarbor flag
+#define FLAG_VISITED_MYRRINI_ISLAND                 (SYSTEM_FLAGS + 0x14) // replaced verdanturf flag
+#define FLAG_VISITED_FRESCO_ISLAND                  (SYSTEM_FLAGS + 0x15) // replaced pacifidlog flag
+#define FLAG_VISITED_PALATI_CITY                    (SYSTEM_FLAGS + 0x16) // replaced petalburg city
+#define FLAG_VISITED_PORT_PELLO                     (SYSTEM_FLAGS + 0x17) // replaced slateport
+#define FLAG_VISITED_AREIOS_HIDEOUT                 (SYSTEM_FLAGS + 0x18) // replaced mauville
+#define FLAG_VISITED_CHAMPIONS_PEAK                 (SYSTEM_FLAGS + 0x19) // replaced rustboro city
 #define FLAG_VISITED_FORTREE_CITY                   (SYSTEM_FLAGS + 0x1A)
 #define FLAG_VISITED_LILYCOVE_CITY                  (SYSTEM_FLAGS + 0x1B)
 #define FLAG_VISITED_MOSSDEEP_CITY                  (SYSTEM_FLAGS + 0x1C)

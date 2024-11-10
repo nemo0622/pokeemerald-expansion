@@ -1274,17 +1274,17 @@ static u8 Debug_CheckToggleFlags(u8 id)
             result = FlagGet(FLAG_SYS_B_DASH);
             break;
         case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS:
-            result = FlagGet(FLAG_VISITED_LITTLEROOT_TOWN) &&
-                FlagGet(FLAG_VISITED_OLDALE_TOWN) &&
-                FlagGet(FLAG_VISITED_DEWFORD_TOWN) &&
-                FlagGet(FLAG_VISITED_LAVARIDGE_TOWN) &&
-                FlagGet(FLAG_VISITED_FALLARBOR_TOWN) &&
-                FlagGet(FLAG_VISITED_VERDANTURF_TOWN) &&
-                FlagGet(FLAG_VISITED_PACIFIDLOG_TOWN) &&
-                FlagGet(FLAG_VISITED_PETALBURG_CITY) &&
-                FlagGet(FLAG_VISITED_SLATEPORT_CITY) &&
-                FlagGet(FLAG_VISITED_MAUVILLE_CITY) &&
-                FlagGet(FLAG_VISITED_RUSTBORO_CITY) &&
+            result = FlagGet(FLAG_VISITED_ACRISIA_CITY) &&
+                FlagGet(FLAG_VISITED_JUSMAIL_TOWN) &&
+                FlagGet(FLAG_VISITED_PYTHIOS_TOWN) &&
+                FlagGet(FLAG_VISITED_SOFOS_CITY) &&
+                FlagGet(FLAG_VISITED_MARMARO_ISLAND) &&
+                FlagGet(FLAG_VISITED_MYRRINI_ISLAND) &&
+                FlagGet(FLAG_VISITED_FRESCO_ISLAND) &&
+                FlagGet(FLAG_VISITED_PALATI_CITY) &&
+                FlagGet(FLAG_VISITED_PORT_PELLO) &&
+                FlagGet(FLAG_VISITED_AREIOS_HIDEOUT) &&
+                FlagGet(FLAG_VISITED_CHAMPIONS_PEAK) &&
                 FlagGet(FLAG_VISITED_FORTREE_CITY) &&
                 FlagGet(FLAG_VISITED_LILYCOVE_CITY) &&
                 FlagGet(FLAG_VISITED_MOSSDEEP_CITY) &&
@@ -2781,17 +2781,17 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
     if (FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER))
     {
         PlaySE(SE_PC_OFF);
-        FlagClear(FLAG_VISITED_LITTLEROOT_TOWN);
-        FlagClear(FLAG_VISITED_OLDALE_TOWN);
-        FlagClear(FLAG_VISITED_DEWFORD_TOWN);
-        FlagClear(FLAG_VISITED_LAVARIDGE_TOWN);
-        FlagClear(FLAG_VISITED_FALLARBOR_TOWN);
-        FlagClear(FLAG_VISITED_VERDANTURF_TOWN);
-        FlagClear(FLAG_VISITED_PACIFIDLOG_TOWN);
-        FlagClear(FLAG_VISITED_PETALBURG_CITY);
-        FlagClear(FLAG_VISITED_SLATEPORT_CITY);
-        FlagClear(FLAG_VISITED_MAUVILLE_CITY);
-        FlagClear(FLAG_VISITED_RUSTBORO_CITY);
+        FlagClear(FLAG_VISITED_ACRISIA_CITY);
+        FlagClear(FLAG_VISITED_JUSMAIL_TOWN);
+        FlagClear(FLAG_VISITED_PYTHIOS_TOWN);
+        FlagClear(FLAG_VISITED_SOFOS_CITY);
+        FlagClear(FLAG_VISITED_MARMARO_ISLAND);
+        FlagClear(FLAG_VISITED_MYRRINI_ISLAND);
+        FlagClear(FLAG_VISITED_FRESCO_ISLAND);
+        FlagClear(FLAG_VISITED_PALATI_CITY);
+        FlagClear(FLAG_VISITED_PORT_PELLO);
+        FlagClear(FLAG_VISITED_AREIOS_HIDEOUT);
+        FlagClear(FLAG_VISITED_CHAMPIONS_PEAK);
         FlagClear(FLAG_VISITED_FORTREE_CITY);
         FlagClear(FLAG_VISITED_LILYCOVE_CITY);
         FlagClear(FLAG_VISITED_MOSSDEEP_CITY);
@@ -2803,17 +2803,17 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
     else
     {
         PlaySE(SE_PC_LOGIN);
-        FlagSet(FLAG_VISITED_LITTLEROOT_TOWN);
-        FlagSet(FLAG_VISITED_OLDALE_TOWN);
-        FlagSet(FLAG_VISITED_DEWFORD_TOWN);
-        FlagSet(FLAG_VISITED_LAVARIDGE_TOWN);
-        FlagSet(FLAG_VISITED_FALLARBOR_TOWN);
-        FlagSet(FLAG_VISITED_VERDANTURF_TOWN);
-        FlagSet(FLAG_VISITED_PACIFIDLOG_TOWN);
-        FlagSet(FLAG_VISITED_PETALBURG_CITY);
-        FlagSet(FLAG_VISITED_SLATEPORT_CITY);
-        FlagSet(FLAG_VISITED_MAUVILLE_CITY);
-        FlagSet(FLAG_VISITED_RUSTBORO_CITY);
+        FlagSet(FLAG_VISITED_ACRISIA_CITY);
+        FlagSet(FLAG_VISITED_JUSMAIL_TOWN);
+        FlagSet(FLAG_VISITED_PYTHIOS_TOWN);
+        FlagSet(FLAG_VISITED_SOFOS_CITY);
+        FlagSet(FLAG_VISITED_MARMARO_ISLAND);
+        FlagSet(FLAG_VISITED_MYRRINI_ISLAND);
+        FlagSet(FLAG_VISITED_FRESCO_ISLAND);
+        FlagSet(FLAG_VISITED_PALATI_CITY);
+        FlagSet(FLAG_VISITED_PORT_PELLO);
+        FlagSet(FLAG_VISITED_AREIOS_HIDEOUT);
+        FlagSet(FLAG_VISITED_CHAMPIONS_PEAK);
         FlagSet(FLAG_VISITED_FORTREE_CITY);
         FlagSet(FLAG_VISITED_LILYCOVE_CITY);
         FlagSet(FLAG_VISITED_MOSSDEEP_CITY);
