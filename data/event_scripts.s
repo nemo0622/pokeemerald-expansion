@@ -1634,3 +1634,7 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/ChampionsPeak_Outside/scripts.inc"
 
 	.include "data/maps/ChampionsPeak_BattleRoom/scripts.inc"
+
+	.include "data/maps/AcrisiaCity_House4/scripts.inc"
+
+	.include "data/maps/AcrisiaCity_House5/scripts.inc"

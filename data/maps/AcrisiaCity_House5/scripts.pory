@@ -1,0 +1,12 @@
+mapscripts AcrisiaCity_House5_MapScripts {}
+
+script AcrisiaCity_House5_EventScript_Boy
+{
+    lock
+    faceplayer
+    speakername("Boy")
+    msgbox(format("You can learn a lot from books! Look, it says here that some Pokémon in the Ilios Region have stats different from other areas. Neat!"))
+    closemessage
+    release
+    end
+}

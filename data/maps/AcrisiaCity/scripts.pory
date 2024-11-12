@@ -101,3 +101,141 @@ movement AcrisiaCity_Movement_PlayerFollowsProfToUniversity_2
     walk_up * 5
     step_end
 }
+
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+
+script AcrisiaCity_EventScript_LadyByWater
+{
+    lock
+    faceplayer
+    speakername("Pokéfan Lady")
+    msgbox(format("Baby Pokémon are the cutest, don't you think?"))
+    closemessage
+
+    if(!flag(FLAG_GOT_EVIOLITE_ACRISIA_CITY))
+    {
+        speakername("Pokéfan Lady")
+        msgbox(format("I've always wanted to learn more about Togepi... hey! You're a researcher with the University! Come to me when you have a {COLOR GREEN}complete Pokédex entry{COLOR DARK_GRAY} of Togepi."))
+
+        getcaughtmon(SPECIES_TOGEPI)
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Pokéfan Lady")
+            msgbox(format("Hurry on now, I'll have a {COLOR GREEN}prize{COLOR DARK_GRAY} for you!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Pokéfan Lady")
+            msgbox(format("Goodness, you've caught a Togepi! That makes me so happy!\p Here, let me give you a little something."))
+            closemessage
+            giveitem(ITEM_EVIOLITE)
+            speakername("Pokéfan Lady")
+            msgbox(format("The {COLOR GREEN}Eviolite{COLOR DARK_GRAY} stops Pokémon from evolving and boosts their stats.\p It's great if you want to keep your cute baby Pokémon strong!"))
+            closemessage
+        }
+    }
+
+    else
+    {
+        speakername("Pokéfan Lady")
+        msgbox(format("I hope that {COLOR GREEN}Eviolite{COLOR DARK_GRAY} has been helpful for you! It'll make your cute little Pokémon a bit stronger!"))
+        closemessage
+    }
+
+    release
+    end
+}
+
+script AcrisiaCity_EventScript_Woman2
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("Even though not much mining happens here anymore, plenty of Trainers still come through Acrisia City. People are always looking for advice and to train in the mountains."))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_EventScript_Camper
+{
+    lock
+    faceplayer
+    speakername("Camper")
+    msgbox(format("My family is camping in the Acrisia Mountains! I came down to check out the University and wild Pokémon."))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_EventScript_NinjaBoy
+{
+    lock
+    faceplayer
+    speakername("Excited Boy")
+    msgbox(format("The Pokémon here are so cool! I wanna find them all!"))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_EventScript_RailMan
+{
+    lock
+    faceplayer
+    speakername("Nervous Man")
+    msgbox(format("I want to hop down and check this area out, but I'm too scared to jump... I should just get the Rock Smash HM."))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_EventScript_Spearow
+{
+    lock
+    faceplayer
+    speakername("Spearow")
+    playmoncry(SPECIES_SPEAROW, CRY_MODE_NORMAL)
+    msgbox("Craah!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_EventScript_Growlithe
+{
+    lock
+    faceplayer
+    speakername("Growlithe")
+    playmoncry(SPECIES_GROWLITHE, CRY_MODE_NORMAL)
+    msgbox("Bwark bwark!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_EventScript_OldMan
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("Heavens, look at this harvest! Food comes up from Jusmail Town and feeds the folks up here."))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    speakername("Gentleman")
+    msgbox(format("Now that I'm retired, I like to sit here and watch the time pass. I can't help but smile seeing the lights come on in the evening!"))
+    closemessage
+    release
+    end
+}

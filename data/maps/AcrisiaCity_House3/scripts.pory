@@ -1,1 +1,14 @@
 mapscripts AcrisiaCity_House3_MapScripts {}
+
+script AcrisiaCity_House3_EventScripts_Man
+{
+    lock
+    faceplayer
+    speakername("Complaining Man")
+    msgbox(format("Dishes, dishes... I should get a Pokémon that can clean these for me."))
+    closemessage
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}

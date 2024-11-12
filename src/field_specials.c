@@ -71,6 +71,7 @@
 #include "constants/rgb.h"
 #include "palette.h"
 #include "battle_util.h"
+#include "pokedex.h"
 
 #define TAG_ITEM_ICON 5500
 
@@ -4415,4 +4416,25 @@ void GetMysteryGiftFeedback(void)
     // Invalid cheat code
     else
         gSpecialVar_Result = 0;
+}
+
+bool8 GetSeenMon(void)
+{
+    return GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_GET_SEEN);
+}
+
+bool8 GetCaughtMon(void)
+{
+    return GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_GET_CAUGHT);
+}
+
+void SetSeenMon(void)
+{
+    GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_SET_SEEN);
+}
+
+void SetCaughtMon(void)
+{
+    GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_SET_SEEN);
+    GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_SET_CAUGHT);
 }

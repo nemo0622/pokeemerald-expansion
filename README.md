@@ -74,6 +74,7 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 - DexNav chain count and directional arrow not shown correctly when hunting
 - When cycling stats, the "STATS" text is whited out
 - Stat coloration not shown in summary - likely related to the hacky solution to black text lol
+- Shallow water colors are fucked at night time, should just be replaced by sand for lazy solution
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)

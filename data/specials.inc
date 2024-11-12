@@ -555,3 +555,7 @@ gSpecials::
 	def_special Script_GetChosenMonDefensiveIVs
 	def_special EnterMysteryGiftCode
 	def_special GetMysteryGiftFeedback
+	def_special GetSeenMon
+	def_special GetCaughtMon
+	def_special SetSeenMon
+	def_special SetCaughtMon

@@ -127,7 +127,9 @@
     "NyxTrails",
     "AreiosHideout",
     "ChampionsPeak_Outside",
-    "ChampionsPeak_BattleRoom"
+    "ChampionsPeak_BattleRoom",
+    "AcrisiaCity_House4",
+    "AcrisiaCity_House5"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

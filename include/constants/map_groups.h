@@ -98,6 +98,8 @@
 #define MAP_AREIOS_HIDEOUT             (89 | (0 << 8))
 #define MAP_CHAMPIONS_PEAK_OUTSIDE     (90 | (0 << 8))
 #define MAP_CHAMPIONS_PEAK_BATTLE_ROOM (91 | (0 << 8))
+#define MAP_ACRISIA_CITY_HOUSE4        (92 | (0 << 8))
+#define MAP_ACRISIA_CITY_HOUSE5        (93 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

@@ -1,0 +1,23 @@
+mapscripts AcrisiaCity_House4_MapScripts {}
+
+script AcrisiaCity_House4_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Big Guy")
+    msgbox(format("All kids want to do is sit and watch TV! Where's your sense of exploration?"))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_House4_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("My dumb Dad won't give me a phone, so I'm just stuck watching TV all day."))
+    closemessage
+    release
+    end
+}

@@ -343,6 +343,11 @@
 #define LOCALID_BATTLE_FRONTIER_MART_CLERK 1
 #define LOCALID_SLATEPORT_ENERGY_GURU 25
 
+// Emotes for emote scripting macro
+#define EMOTE_EXCLAM 0
+#define EMOTE_QUESTION 1
+#define EMOTE_HEART 3
+
 // Moved from src/event_object_movement.c so that they're accesible from other files.
 #define OBJ_EVENT_PAL_TAG_BRENDAN                 0x1100
 #define OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION      0x1101

@@ -2332,3 +2332,59 @@
 	.macro togglefakertc
 	callnative Script_ToggleFakeRtc
 	.endm
+
+	@ Checks the state of the Pokédex Seen flag of the specified Pokemon
+    @ The result is stored in VAR_RESULT
+    .macro getseenmon species:req
+    setvar VAR_TEMP_1, \species
+    specialvar VAR_RESULT, GetSeenMon
+    .endm
+
+    @ Checks the state of the Pokédex Caught flag of the specified Pokemon
+    @ The result is stored in VAR_RESULT
+    .macro getcaughtmon species:req
+    setvar VAR_TEMP_1, \species
+    specialvar VAR_RESULT, GetCaughtMon
+    .endm
+
+	@ Sets the Pokédex Seen flag of the specified Pokemon
+    .macro setseenmon species:req
+    setvar VAR_TEMP_1, \species
+    special SetSeenMon
+    .endm
+
+    @ Sets the Pokédex Caught flag of the specified Pokemon
+    .macro setcaughtmon species:req
+    setvar VAR_TEMP_1, \species
+    special SetCaughtMon
+    .endm
+
+	@ This replicates the most common emote structure in the game, which is:
+	@ -----
+	@ playse SE_PIN
+	@ applymovement LOCALID, Common_Movement_ExclamationMark @ (or others)
+	@ waitmovement 0
+	@ applymovement LOCALID, Common_Movement_Delay48
+	@ waitmovement 0
+	@ -----
+	@ If emote is not provided, then it will do an exclamation mark emote.
+	@ Other params include:
+	@ EMOTE_EXCLAM, EMOTE_QUESTION, and EMOTE_HEART. Invalid entries
+	@ do the exclamation mark emote.
+	.macro emote localid:req, emoteArg
+	playse SE_PIN
+	.ifb \emoteArg
+		applymovement \localid, Common_Movement_ExclamationMark
+	.else
+		.if \emoteArg == EMOTE_QUESTION
+			applymovement \localid, Common_Movement_QuestionMark
+		.elseif \emoteArg == EMOTE_HEART
+			applymovement \localid, Common_Movement_Heart
+		.else
+			applymovement \localid, Common_Movement_ExclamationMark
+		.endif
+	.endif
+	waitmovement 0
+	applymovement \localid, Common_Movement_Delay48
+	waitmovement 0
+	.endm

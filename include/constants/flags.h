@@ -1227,8 +1227,8 @@
 #define FLAG_HIDE_FIRST_PROFESSOR_SPRITE                            0x499 // shitty workaround lol
 #define FLAG_GOT_ARISIA_LUCKY_EGG                                   0x49A // Got Lucky Egg from House 2
 #define FLAG_BROKE_JUSMAIL_TOWN_ROCKS                               0x49B // Hides rock smash rocks in Jusmail Town
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
+#define FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL                      0x49C // Got wishing stars from girl in Jusmail
+#define FLAG_GOT_EVIOLITE_ACRISIA_CITY                              0x49D // Got Eviolite from Pokéfan Lady in Acrisia
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
