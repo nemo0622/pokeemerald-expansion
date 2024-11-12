@@ -9467,6 +9467,23 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
     return uq4_12_multiply_by_int_half_down(modifier, basePower);
 }
 
+static bool32 CanEvolve(u32 species)
+{
+    u32 i;
+    const struct Evolution *evolutions = GetSpeciesEvolutions(species);
+
+    if (evolutions != NULL)
+    {
+        for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
+        {
+            if (evolutions[i].method
+             && SanitizeSpeciesId(evolutions[i].targetSpecies) != SPECIES_NONE)
+                return TRUE;
+        }
+    }
+    return FALSE;
+}
+
 static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 moveType, bool32 isCrit, bool32 updateFlags, u32 atkAbility, u32 defAbility, u32 holdEffectAtk)
 {
     u8 atkStage;
@@ -9678,23 +9695,6 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
         modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.1));
 
     return uq4_12_multiply_by_int_half_down(modifier, atkStat);
-}
-
-static bool32 CanEvolve(u32 species)
-{
-    u32 i;
-    const struct Evolution *evolutions = GetSpeciesEvolutions(species);
-
-    if (evolutions != NULL)
-    {
-        for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
-        {
-            if (evolutions[i].method
-             && SanitizeSpeciesId(evolutions[i].targetSpecies) != SPECIES_NONE)
-                return TRUE;
-        }
-    }
-    return FALSE;
 }
 
 static inline u32 CalcDefenseStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 moveType, bool32 isCrit, bool32 updateFlags, u32 atkAbility, u32 defAbility, u32 holdEffectDef, u32 weather)

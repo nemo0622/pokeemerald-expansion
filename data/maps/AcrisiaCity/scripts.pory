@@ -239,3 +239,114 @@ script AcrisiaCity_EventScript_Gentleman
     release
     end
 }
+
+
+// pinball scripts ---------------------------------------------------------------------------------
+
+script Minigame_TryMeowthPinballGame
+{
+	lock
+	msgbox(format("Play MEOWTH PINBALL?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlayMeowthPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 PINBALL POINT!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script Minigame_TryDiglettPinballGame
+{
+	lock
+	msgbox(format("Play DIGLETT PINBALL?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlayDiglettPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 PINBALL POINT!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script Minigame_TrySeelPinballGame
+{
+	lock
+	msgbox(format("Play SEEL PINBALL?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlaySeelPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 PINBALL POINT!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script Minigame_TryGengarPinballGame
+{
+	lock
+	msgbox(format("Play GENGAR PINBALL?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlayGengarPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 PINBALL POINT!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}
