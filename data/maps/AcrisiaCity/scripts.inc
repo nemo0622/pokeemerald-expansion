@@ -340,14 +340,14 @@ AcrisiaCity_EventScript_LadyByWater::
 	closemessage
 # 116 "data/maps/AcrisiaCity/scripts.pory"
 	goto_if_unset FLAG_GOT_EVIOLITE_ACRISIA_CITY, AcrisiaCity_EventScript_LadyByWater_2
-# 142 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
 # 143 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_LadyByWater_Text_6
+	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
 # 144 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox AcrisiaCity_EventScript_LadyByWater_Text_6
+# 145 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
 AcrisiaCity_EventScript_LadyByWater_1:
-# 147 "data/maps/AcrisiaCity/scripts.pory"
+# 148 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
@@ -370,10 +370,12 @@ AcrisiaCity_EventScript_LadyByWater_2:
 # 133 "data/maps/AcrisiaCity/scripts.pory"
 	giveitem ITEM_EVIOLITE
 # 134 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
+	setflag FLAG_GOT_EVIOLITE_ACRISIA_CITY
 # 135 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_LadyByWater_Text_5
+	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
 # 136 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox AcrisiaCity_EventScript_LadyByWater_Text_5
+# 137 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
 	goto AcrisiaCity_EventScript_LadyByWater_1
 
@@ -388,293 +390,293 @@ AcrisiaCity_EventScript_LadyByWater_5:
 
 
 AcrisiaCity_EventScript_Woman2::
-# 153 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 154 "data/maps/AcrisiaCity/scripts.pory"
-	faceplayer
+	lock
 # 155 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_Woman2_Text_0
+	faceplayer
 # 156 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_Woman2_Text_1
+	speakername AcrisiaCity_EventScript_Woman2_Text_0
 # 157 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	msgbox AcrisiaCity_EventScript_Woman2_Text_1
 # 158 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 159 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_Camper::
-# 164 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 165 "data/maps/AcrisiaCity/scripts.pory"
-	faceplayer
+	lock
 # 166 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_Camper_Text_0
+	faceplayer
 # 167 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_Camper_Text_1
+	speakername AcrisiaCity_EventScript_Camper_Text_0
 # 168 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	msgbox AcrisiaCity_EventScript_Camper_Text_1
 # 169 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 170 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_NinjaBoy::
-# 175 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 176 "data/maps/AcrisiaCity/scripts.pory"
-	faceplayer
+	lock
 # 177 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_NinjaBoy_Text_0
+	faceplayer
 # 178 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_NinjaBoy_Text_1
+	speakername AcrisiaCity_EventScript_NinjaBoy_Text_0
 # 179 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	msgbox AcrisiaCity_EventScript_NinjaBoy_Text_1
 # 180 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 181 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_RailMan::
-# 186 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 187 "data/maps/AcrisiaCity/scripts.pory"
-	faceplayer
+	lock
 # 188 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_RailMan_Text_0
+	faceplayer
 # 189 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_RailMan_Text_1
+	speakername AcrisiaCity_EventScript_RailMan_Text_0
 # 190 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	msgbox AcrisiaCity_EventScript_RailMan_Text_1
 # 191 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 192 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_Spearow::
-# 197 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 198 "data/maps/AcrisiaCity/scripts.pory"
-	faceplayer
+	lock
 # 199 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_Spearow_Text_0
+	faceplayer
 # 200 "data/maps/AcrisiaCity/scripts.pory"
-	playmoncry SPECIES_SPEAROW, CRY_MODE_NORMAL
+	speakername AcrisiaCity_EventScript_Spearow_Text_0
 # 201 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_Spearow_Text_1
+	playmoncry SPECIES_SPEAROW, CRY_MODE_NORMAL
 # 202 "data/maps/AcrisiaCity/scripts.pory"
-	waitmoncry
+	msgbox AcrisiaCity_EventScript_Spearow_Text_1
 # 203 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	waitmoncry
 # 204 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 205 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_Growlithe::
-# 210 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 211 "data/maps/AcrisiaCity/scripts.pory"
-	faceplayer
+	lock
 # 212 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_Growlithe_Text_0
+	faceplayer
 # 213 "data/maps/AcrisiaCity/scripts.pory"
-	playmoncry SPECIES_GROWLITHE, CRY_MODE_NORMAL
+	speakername AcrisiaCity_EventScript_Growlithe_Text_0
 # 214 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_Growlithe_Text_1
+	playmoncry SPECIES_GROWLITHE, CRY_MODE_NORMAL
 # 215 "data/maps/AcrisiaCity/scripts.pory"
-	waitmoncry
+	msgbox AcrisiaCity_EventScript_Growlithe_Text_1
 # 216 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	waitmoncry
 # 217 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 218 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_OldMan::
-# 223 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 224 "data/maps/AcrisiaCity/scripts.pory"
-	faceplayer
+	lock
 # 225 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_OldMan_Text_0
+	faceplayer
 # 226 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_OldMan_Text_1
+	speakername AcrisiaCity_EventScript_OldMan_Text_0
 # 227 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	msgbox AcrisiaCity_EventScript_OldMan_Text_1
 # 228 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 229 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_Gentleman::
-# 234 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 235 "data/maps/AcrisiaCity/scripts.pory"
-	faceplayer
+	lock
 # 236 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_Gentleman_Text_0
+	faceplayer
 # 237 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_Gentleman_Text_1
+	speakername AcrisiaCity_EventScript_Gentleman_Text_0
 # 238 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	msgbox AcrisiaCity_EventScript_Gentleman_Text_1
 # 239 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 240 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 Minigame_TryMeowthPinballGame::
-# 248 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 249 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryMeowthPinballGame_Text_0, MSGBOX_YESNO
+	lock
 # 250 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox Minigame_TryMeowthPinballGame_Text_0, MSGBOX_YESNO
+# 251 "data/maps/AcrisiaCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Minigame_TryMeowthPinballGame_2
-# 256 "data/maps/AcrisiaCity/scripts.pory"
-	callnative PlayMeowthPinballGame
 # 257 "data/maps/AcrisiaCity/scripts.pory"
-	waitstate
+	callnative PlayMeowthPinballGame
 # 258 "data/maps/AcrisiaCity/scripts.pory"
+	waitstate
+# 259 "data/maps/AcrisiaCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Minigame_TryMeowthPinballGame_5
-# 266 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryMeowthPinballGame_Text_2
 # 267 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox Minigame_TryMeowthPinballGame_Text_2
+# 268 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
 Minigame_TryMeowthPinballGame_4:
-# 269 "data/maps/AcrisiaCity/scripts.pory"
+# 270 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 Minigame_TryMeowthPinballGame_2:
-# 252 "data/maps/AcrisiaCity/scripts.pory"
+# 253 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 Minigame_TryMeowthPinballGame_5:
-# 260 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryMeowthPinballGame_Text_1
 # 261 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	msgbox Minigame_TryMeowthPinballGame_Text_1
 # 262 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 263 "data/maps/AcrisiaCity/scripts.pory"
 	addvar VAR_PINBALL_POINTS, 1
 	goto Minigame_TryMeowthPinballGame_4
 
 
 Minigame_TryDiglettPinballGame::
-# 275 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 276 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryDiglettPinballGame_Text_0, MSGBOX_YESNO
+	lock
 # 277 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox Minigame_TryDiglettPinballGame_Text_0, MSGBOX_YESNO
+# 278 "data/maps/AcrisiaCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Minigame_TryDiglettPinballGame_2
-# 283 "data/maps/AcrisiaCity/scripts.pory"
-	callnative PlayDiglettPinballGame
 # 284 "data/maps/AcrisiaCity/scripts.pory"
-	waitstate
+	callnative PlayDiglettPinballGame
 # 285 "data/maps/AcrisiaCity/scripts.pory"
+	waitstate
+# 286 "data/maps/AcrisiaCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Minigame_TryDiglettPinballGame_5
-# 293 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryMeowthPinballGame_Text_2
 # 294 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox Minigame_TryMeowthPinballGame_Text_2
+# 295 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
 Minigame_TryDiglettPinballGame_4:
-# 296 "data/maps/AcrisiaCity/scripts.pory"
+# 297 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 Minigame_TryDiglettPinballGame_2:
-# 279 "data/maps/AcrisiaCity/scripts.pory"
+# 280 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 Minigame_TryDiglettPinballGame_5:
-# 287 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryMeowthPinballGame_Text_1
 # 288 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	msgbox Minigame_TryMeowthPinballGame_Text_1
 # 289 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 290 "data/maps/AcrisiaCity/scripts.pory"
 	addvar VAR_PINBALL_POINTS, 1
 	goto Minigame_TryDiglettPinballGame_4
 
 
 Minigame_TrySeelPinballGame::
-# 302 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 303 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TrySeelPinballGame_Text_0, MSGBOX_YESNO
+	lock
 # 304 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox Minigame_TrySeelPinballGame_Text_0, MSGBOX_YESNO
+# 305 "data/maps/AcrisiaCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Minigame_TrySeelPinballGame_2
-# 310 "data/maps/AcrisiaCity/scripts.pory"
-	callnative PlaySeelPinballGame
 # 311 "data/maps/AcrisiaCity/scripts.pory"
-	waitstate
+	callnative PlaySeelPinballGame
 # 312 "data/maps/AcrisiaCity/scripts.pory"
+	waitstate
+# 313 "data/maps/AcrisiaCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Minigame_TrySeelPinballGame_5
-# 320 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryMeowthPinballGame_Text_2
 # 321 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox Minigame_TryMeowthPinballGame_Text_2
+# 322 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
 Minigame_TrySeelPinballGame_4:
-# 323 "data/maps/AcrisiaCity/scripts.pory"
+# 324 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 Minigame_TrySeelPinballGame_2:
-# 306 "data/maps/AcrisiaCity/scripts.pory"
+# 307 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 Minigame_TrySeelPinballGame_5:
-# 314 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryMeowthPinballGame_Text_1
 # 315 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	msgbox Minigame_TryMeowthPinballGame_Text_1
 # 316 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 317 "data/maps/AcrisiaCity/scripts.pory"
 	addvar VAR_PINBALL_POINTS, 1
 	goto Minigame_TrySeelPinballGame_4
 
 
 Minigame_TryGengarPinballGame::
-# 329 "data/maps/AcrisiaCity/scripts.pory"
-	lock
 # 330 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryGengarPinballGame_Text_0, MSGBOX_YESNO
+	lock
 # 331 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox Minigame_TryGengarPinballGame_Text_0, MSGBOX_YESNO
+# 332 "data/maps/AcrisiaCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Minigame_TryGengarPinballGame_2
-# 337 "data/maps/AcrisiaCity/scripts.pory"
-	callnative PlayGengarPinballGame
 # 338 "data/maps/AcrisiaCity/scripts.pory"
-	waitstate
+	callnative PlayGengarPinballGame
 # 339 "data/maps/AcrisiaCity/scripts.pory"
+	waitstate
+# 340 "data/maps/AcrisiaCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Minigame_TryGengarPinballGame_5
-# 347 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryMeowthPinballGame_Text_2
 # 348 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox Minigame_TryMeowthPinballGame_Text_2
+# 349 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
 Minigame_TryGengarPinballGame_4:
-# 350 "data/maps/AcrisiaCity/scripts.pory"
+# 351 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 Minigame_TryGengarPinballGame_2:
-# 333 "data/maps/AcrisiaCity/scripts.pory"
+# 334 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 Minigame_TryGengarPinballGame_5:
-# 341 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox Minigame_TryMeowthPinballGame_Text_1
 # 342 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	msgbox Minigame_TryMeowthPinballGame_Text_1
 # 343 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 344 "data/maps/AcrisiaCity/scripts.pory"
 	addvar VAR_PINBALL_POINTS, 1
 	goto Minigame_TryGengarPinballGame_4
 
@@ -728,24 +730,24 @@ AcrisiaCity_EventScript_LadyByWater_Text_4:
 	.string "Here, let me give you a little something.$"
 
 AcrisiaCity_EventScript_LadyByWater_Text_5:
-# 135 "data/maps/AcrisiaCity/scripts.pory"
+# 136 "data/maps/AcrisiaCity/scripts.pory"
 	.string "The {COLOR GREEN}Eviolite{COLOR DARK_GRAY} stops Pokémon from\n"
 	.string "evolving and boosts their stats.\p"
 	.string "It's great if you want to keep your\n"
 	.string "cute baby Pokémon strong!$"
 
 AcrisiaCity_EventScript_LadyByWater_Text_6:
-# 143 "data/maps/AcrisiaCity/scripts.pory"
+# 144 "data/maps/AcrisiaCity/scripts.pory"
 	.string "I hope that {COLOR GREEN}Eviolite{COLOR DARK_GRAY} has been helpful\n"
 	.string "for you! It'll make your cute little\l"
 	.string "Pokémon a bit stronger!$"
 
 AcrisiaCity_EventScript_Woman2_Text_0:
-# 155 "data/maps/AcrisiaCity/scripts.pory"
+# 156 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Woman$"
 
 AcrisiaCity_EventScript_Woman2_Text_1:
-# 156 "data/maps/AcrisiaCity/scripts.pory"
+# 157 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Even though not much mining happens\n"
 	.string "here anymore, plenty of Trainers still\l"
 	.string "come through Acrisia City. People are\l"
@@ -753,92 +755,92 @@ AcrisiaCity_EventScript_Woman2_Text_1:
 	.string "in the mountains.$"
 
 AcrisiaCity_EventScript_Camper_Text_0:
-# 166 "data/maps/AcrisiaCity/scripts.pory"
+# 167 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Camper$"
 
 AcrisiaCity_EventScript_Camper_Text_1:
-# 167 "data/maps/AcrisiaCity/scripts.pory"
+# 168 "data/maps/AcrisiaCity/scripts.pory"
 	.string "My family is camping in the Acrisia\n"
 	.string "Mountains! I came down to check out\l"
 	.string "the University and wild Pokémon.$"
 
 AcrisiaCity_EventScript_NinjaBoy_Text_0:
-# 177 "data/maps/AcrisiaCity/scripts.pory"
+# 178 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Excited Boy$"
 
 AcrisiaCity_EventScript_NinjaBoy_Text_1:
-# 178 "data/maps/AcrisiaCity/scripts.pory"
+# 179 "data/maps/AcrisiaCity/scripts.pory"
 	.string "The Pokémon here are so cool! I wanna\n"
 	.string "find them all!$"
 
 AcrisiaCity_EventScript_RailMan_Text_0:
-# 188 "data/maps/AcrisiaCity/scripts.pory"
+# 189 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Nervous Man$"
 
 AcrisiaCity_EventScript_RailMan_Text_1:
-# 189 "data/maps/AcrisiaCity/scripts.pory"
+# 190 "data/maps/AcrisiaCity/scripts.pory"
 	.string "I want to hop down and check this area\n"
 	.string "out, but I'm too scared to jump... I\l"
 	.string "should just get the Rock Smash HM.$"
 
 AcrisiaCity_EventScript_Spearow_Text_0:
-# 199 "data/maps/AcrisiaCity/scripts.pory"
+# 200 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Spearow$"
 
 AcrisiaCity_EventScript_Spearow_Text_1:
-# 201 "data/maps/AcrisiaCity/scripts.pory"
+# 202 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Craah!$"
 
 AcrisiaCity_EventScript_Growlithe_Text_0:
-# 212 "data/maps/AcrisiaCity/scripts.pory"
+# 213 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Growlithe$"
 
 AcrisiaCity_EventScript_Growlithe_Text_1:
-# 214 "data/maps/AcrisiaCity/scripts.pory"
+# 215 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Bwark bwark!$"
 
 AcrisiaCity_EventScript_OldMan_Text_0:
-# 225 "data/maps/AcrisiaCity/scripts.pory"
+# 226 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Old Man$"
 
 AcrisiaCity_EventScript_OldMan_Text_1:
-# 226 "data/maps/AcrisiaCity/scripts.pory"
+# 227 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Heavens, look at this harvest! Food\n"
 	.string "comes up from Jusmail Town and feeds\l"
 	.string "the folks up here.$"
 
 AcrisiaCity_EventScript_Gentleman_Text_0:
-# 236 "data/maps/AcrisiaCity/scripts.pory"
+# 237 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Gentleman$"
 
 AcrisiaCity_EventScript_Gentleman_Text_1:
-# 237 "data/maps/AcrisiaCity/scripts.pory"
+# 238 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Now that I'm retired, I like to sit here\n"
 	.string "and watch the time pass. I can't help\l"
 	.string "but smile seeing the lights come on in\l"
 	.string "the evening!$"
 
 Minigame_TryMeowthPinballGame_Text_0:
-# 249 "data/maps/AcrisiaCity/scripts.pory"
+# 250 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Play MEOWTH PINBALL?$"
 
 Minigame_TryMeowthPinballGame_Text_1:
-# 260 "data/maps/AcrisiaCity/scripts.pory"
+# 261 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Great job! {PLAYER} gained 1 PINBALL\n"
 	.string "POINT!$"
 
 Minigame_TryMeowthPinballGame_Text_2:
-# 266 "data/maps/AcrisiaCity/scripts.pory"
+# 267 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Better luck next time!$"
 
 Minigame_TryDiglettPinballGame_Text_0:
-# 276 "data/maps/AcrisiaCity/scripts.pory"
+# 277 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Play DIGLETT PINBALL?$"
 
 Minigame_TrySeelPinballGame_Text_0:
-# 303 "data/maps/AcrisiaCity/scripts.pory"
+# 304 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Play SEEL PINBALL?$"
 
 Minigame_TryGengarPinballGame_Text_0:
-# 330 "data/maps/AcrisiaCity/scripts.pory"
+# 331 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Play GENGAR PINBALL?$"

@@ -35,12 +35,14 @@ static void Task_DrawFieldMessage(u8 taskId)
            task->tState++;
            break;
         case 1:
-           if (gSpeakerName != NULL && !FlagGet(FLAG_SUPPRESS_SPEAKER_NAME)) {
+           if (gSpeakerName != NULL) {
+                FlagClear(FLAG_SUPPRESS_SPEAKER_NAME); // there's a speaker name
                 DrawDialogueFrameWithNameplate(0, TRUE);
                 PutWindowTilemap(1);
                 CopyWindowToVram(1, COPYWIN_FULL);
             }
             else {
+                FlagSet(FLAG_SUPPRESS_SPEAKER_NAME); // no speaker name
                 DrawDialogueFrame(0, TRUE);
             } 
             task->tState++;
@@ -128,7 +130,8 @@ extern void FillDialogFramePlate();
 extern int GetDialogFramePlateWidth();
 static void ExpandStringAndStartDrawFieldMessage(const u8 *str, bool32 allowSkippingDelayWithButtonPress)
 {
-    if (gSpeakerName != NULL && !FlagGet(FLAG_SUPPRESS_SPEAKER_NAME)) {
+    if (gSpeakerName != NULL) {
+        FlagClear(FLAG_SUPPRESS_SPEAKER_NAME);
         int strLen = GetStringWidth(FONT_SMALL, gSpeakerName, -1);
         if (strLen > 0) {
             strLen = GetDialogFramePlateWidth()/2 - strLen/2;
@@ -161,6 +164,7 @@ void HideFieldMessageBox(void)
     ClearDialogWindowAndFrame(0, TRUE);
     sFieldMessageBoxMode = FIELD_MESSAGE_BOX_HIDDEN;
     gSpeakerName = NULL;
+    FlagSet(FLAG_SUPPRESS_SPEAKER_NAME);
 }
 
 u8 GetFieldMessageBoxMode(void)

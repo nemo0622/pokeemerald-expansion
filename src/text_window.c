@@ -99,6 +99,12 @@ void LoadMessageBoxGfx(u8 windowId, u16 destOffset, u8 palOffset)
     LoadPalette(GetOverworldTextboxPalettePtr(), palOffset, PLTT_SIZE_4BPP);
 }
 
+void LoadMessageBoxWithNameplateGfx(u8 windowId, u16 destOffset, u8 palOffset)
+{
+    LoadBgTiles(GetWindowAttribute(windowId, WINDOW_BG), gMessageBox_Nameplate_Gfx, 0x1C0, destOffset);
+    LoadPalette(GetOverworldTextboxPalettePtr(), palOffset, PLTT_SIZE_4BPP);
+}
+
 void LoadUserWindowBorderGfx_(u8 windowId, u16 destOffset, u8 palOffset)
 {
     LoadUserWindowBorderGfx(windowId, destOffset, palOffset);

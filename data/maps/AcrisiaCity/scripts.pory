@@ -131,6 +131,7 @@ script AcrisiaCity_EventScript_LadyByWater
             msgbox(format("Goodness, you've caught a Togepi! That makes me so happy!\p Here, let me give you a little something."))
             closemessage
             giveitem(ITEM_EVIOLITE)
+            setflag(FLAG_GOT_EVIOLITE_ACRISIA_CITY)
             speakername("Pokéfan Lady")
             msgbox(format("The {COLOR GREEN}Eviolite{COLOR DARK_GRAY} stops Pokémon from evolving and boosts their stats.\p It's great if you want to keep your cute baby Pokémon strong!"))
             closemessage

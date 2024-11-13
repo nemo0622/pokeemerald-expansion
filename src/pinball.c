@@ -2227,7 +2227,7 @@ static void LoadBgGfx(u8 gameType)
         break;
     }
 
-    LoadBgTiles(PINBALL_BG_COVER, sCoverBgGfx, sizeof(sCoverBgGfx), 0);
+    // LoadBgTiles(PINBALL_BG_COVER, sCoverBgGfx, sizeof(sCoverBgGfx), 0);
     CopyToBgTilemapBuffer(PINBALL_BG_COVER, sCovergTilemap, sizeof(sCovergTilemap), 0);
     LoadPalette(sCoverBgPalette, 0x10, sizeof(sCoverBgPalette));
 }
