@@ -1,1 +1,10 @@
 mapscripts SofosCity_MapScripts {}
+
+script SofosCity_EventScript_GameCornerSign
+{
+    lock
+    msgbox(format("Sofos City Game Corner\p Play Pinball, Get Prizes!"))
+    closemessage
+    release
+    end
+}

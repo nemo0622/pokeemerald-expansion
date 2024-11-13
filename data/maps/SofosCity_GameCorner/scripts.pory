@@ -1,0 +1,269 @@
+mapscripts SofosCity_GameCorner_MapScripts {}
+
+script SofosCity_GameCorner_EventScript_Boy
+{
+    lock
+    faceplayer
+    speakername("Boy")
+    msgbox(format("This one's my favorite Pinball machine! I can predict how the Meowth moves!"))
+    closemessage
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_GameCorner_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("Argh, I can never get those stupid Dugtrio...!"))
+    closemessage
+    applymovement(2, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_GameCorner_EventScript_NinjaBoy
+{
+    lock
+    faceplayer
+    speakername("Little Boy")
+    msgbox(format("Heehee, I love seeing the little Seel heads pop up!"))
+    closemessage
+    applymovement(5, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_GameCorner_EventScript_Fisherman
+{
+    lock
+    faceplayer
+    speakername("Fisherman")
+    msgbox(format("You know, I thought I would be better at this, being a Fisherman and all..."))
+    closemessage
+    applymovement(3, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_GameCorner_EventScript_HexManiac
+{
+    lock
+    faceplayer
+    speakername("Hex Maniac")
+    msgbox(format("This one's my favorite, the ghosts are so exciting!"))
+    closemessage
+    applymovement(4, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_GameCorner_ItemShop
+{
+    lock
+    faceplayer
+    buffernumberstring(STR_VAR_1, VAR_PINBALL_POINTS)
+    if(var(VAR_PINBALL_POINTS) == 0)
+    {
+        bufferstring(STR_VAR_1, "0")
+        speakername("Pinball Man")
+        msgbox(format("Looks like you've got {COLOR GREEN}{STR_VAR_1} Pinball Points{COLOR DARK_GRAY} to spend!\p Go play some Pinball and come back for a prize!"))
+        closemessage
+    }
+    else // has >=1 pinball point
+    {
+        speakername("Pinball Man")
+        msgbox(format("Looks like you've got {COLOR GREEN}{STR_VAR_1} Pinball Points{COLOR DARK_GRAY} to spend!"))
+        closemessage
+        speakername("Pinball Man")
+        msgbox(format("I'll give a random {COLOR GREEN}Rare Item{COLOR DARK_GRAY} in exchange for {COLOR GREEN}1 Pinball Point{COLOR DARK_GRAY}. Interested?"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 0) // no
+        {
+            speakername("Pinball Man")
+            msgbox(format("Want to play more Pinball first? Have fun!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Pinball Man")
+            msgbox(format("Alright, get ready for your new Rare Item! Let's see here..."))
+            closemessage
+
+            subvar(VAR_PINBALL_POINTS, 1)
+            randomelement(ITEM_WISHING_STAR, ITEM_EVIOLITE)
+            giveitem(VAR_RESULT)
+
+            speakername("Pinball Man")
+            msgbox(format("Hope you like what you got! Come on back if you want more."))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+script SofosCity_GameCorner_EggShop
+{
+    lock
+    faceplayer
+    buffernumberstring(STR_VAR_1, VAR_PINBALL_POINTS)
+    if(var(VAR_PINBALL_POINTS) == 0)
+    {
+        bufferstring(STR_VAR_1, "0")
+        speakername("Pinball Lady")
+        msgbox(format("Looks like you've got {COLOR GREEN}{STR_VAR_1} Pinball Points{COLOR DARK_GRAY} to spend!\p Go play some Pinball and come back for a prize!"))
+        closemessage
+    }
+    else // has >=1 pinball point
+    {
+        speakername("Pinball Lady")
+        msgbox(format("Looks like you've got {COLOR GREEN}{STR_VAR_1} Pinball Points{COLOR DARK_GRAY} to spend!"))
+        closemessage
+        speakername("Pinball Lady")
+        msgbox(format("I'll give a random {COLOR GREEN}Pokémon Egg{COLOR DARK_GRAY} in exchange for {COLOR GREEN}1 Pinball Point{COLOR DARK_GRAY}. Interested?"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 0) // no
+        {
+            speakername("Pinball Lady")
+            msgbox(format("Want to play more Pinball first? Have fun!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Pinball Lady")
+            msgbox(format("Alright, get ready for your new Pokémon Egg! Let's see here..."))
+            closemessage
+
+            subvar(VAR_PINBALL_POINTS, 1)
+            randomelement(SPECIES_PIKACHU, SPECIES_VULPIX)
+            giveegg(VAR_RESULT)
+            
+            bufferspeciesname(STR_VAR_1, VAR_RESULT)
+            msgbox(format("{PLAYER} was given a {STR_VAR_1} Egg!"))
+            delay(60)
+            closemessage
+            
+            speakername("Pinball Lady")
+            msgbox(format("Hope you like what you got! Come on back if you want more."))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+// pinball scripts ---------------------------------------------------------------------------------
+
+script Minigame_TryMeowthPinballGame
+{
+	lock
+	msgbox(format("Play Meowth Pinball?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlayMeowthPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 Pinball Point!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script Minigame_TryDiglettPinballGame
+{
+	lock
+	msgbox(format("Play Diglett Pinball?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlayDiglettPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 Pinball Point!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script Minigame_TrySeelPinballGame
+{
+	lock
+	msgbox(format("Play Seel Pinball?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlaySeelPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 Pinball Point!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script Minigame_TryGengarPinballGame
+{
+	lock
+	msgbox(format("Play Gengar Pinball?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 0)
+	{
+		release
+		end
+	}
+
+	callnative(PlayGengarPinballGame)
+	waitstate
+	if(var(VAR_RESULT) == 1)
+	{
+		msgbox(format("Great job! {PLAYER} gained 1 Pinball Point!"))
+		closemessage
+		addvar(VAR_PINBALL_POINTS, 1)
+	}
+	else
+	{
+		msgbox(format("Better luck next time!"))
+		closemessage
+	}
+	release
+	end
+}

@@ -210,6 +210,7 @@ void NewGameInitData(void)
 #endif
     gSaveBlock1Ptr->dexNavChain = 0;
     gSaveBlock2Ptr->autoRun = FALSE;
+    FlagSet(FLAG_SUPPRESS_SPEAKER_NAME);
 }
 
 static void ResetMiniGamesRecords(void)
