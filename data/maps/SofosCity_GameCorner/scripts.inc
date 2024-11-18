@@ -502,8 +502,7 @@ SofosCity_GameCorner_EggShop_Text_2:
 
 SofosCity_GameCorner_EggShop_Text_3:
 # 148 "data/maps/SofosCity_GameCorner/scripts.pory"
-	.string "{PLAYER} was given a {STR_VAR_1}\n"
-	.string "Egg!$"
+	.string "{PLAYER} was given a Pokémon Egg!$"
 
 Minigame_TryMeowthPinballGame_Text_0:
 # 166 "data/maps/SofosCity_GameCorner/scripts.pory"

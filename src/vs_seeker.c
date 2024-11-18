@@ -619,8 +619,8 @@ static bool32 IsRegularLandTrainer(u8 graphicsId)
     u32 i;
     u16 regularTrainersOnLand[] =
     {
-        OBJ_EVENT_GFX_AQUA_MEMBER_F,
-        OBJ_EVENT_GFX_AQUA_MEMBER_M,
+        OBJ_EVENT_GFX_KLEFTIS_MEMBER_F,
+        OBJ_EVENT_GFX_KLEFTIS_MEMBER_M,
         OBJ_EVENT_GFX_BEAUTY,
         OBJ_EVENT_GFX_BLACK_BELT,
         OBJ_EVENT_GFX_BOY_1,

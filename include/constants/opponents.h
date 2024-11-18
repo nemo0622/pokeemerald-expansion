@@ -4,7 +4,7 @@
 #include "constants/battle_partner.h"
 
 #define TRAINER_NONE                          0
-#define TRAINER_SAWYER_1                      1
+#define TRAINER_BRONZE_PASS_KLEFTIS_GRUNT     1 // kleftis grunt
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
 #define TRAINER_GRUNT_AQUA_HIDEOUT_3          4
@@ -40,15 +40,15 @@
 #define TRAINER_ARCHIE                       34
 #define TRAINER_LEAH                         35
 #define TRAINER_DAISY                        36
-#define TRAINER_ROSE_1                       37
-#define TRAINER_FELIX                        38
+#define TRAINER_BRONZEPASS_ROSE              37 // Lass in BronzePass_North
+#define TRAINER_BRONZEPASS_FELIX             38 // Boy in BronzePass_North
 #define TRAINER_VIOLET                       39
 #define TRAINER_ROSE_2                       40
 #define TRAINER_ROSE_3                       41
 #define TRAINER_ROSE_4                       42
 #define TRAINER_ROSE_5                       43
 #define TRAINER_DUSTY_1                      44
-#define TRAINER_CHIP                         45
+#define TRAINER_BRONZEPASS_CHIP              45 // Bug Catcher in BronzePass_North
 #define TRAINER_FOSTER                       46
 #define TRAINER_DUSTY_2                      47
 #define TRAINER_DUSTY_3                      48

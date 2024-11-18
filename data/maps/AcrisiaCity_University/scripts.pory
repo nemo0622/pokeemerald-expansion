@@ -16,7 +16,7 @@ script AcrisiaCity_University_EventScript_PlayerIntro
 
     // Enter building
     speakername("Prof. Elia")
-    msgbox(format("Welcome to the Agria University! Well, one of many campus locations, but still!\p Come, let me introduce you to everyone."))
+    msgbox(format("Welcome to the Acrisia University! Well, one of many campus locations, but still!\p Come, let me introduce you to everyone."))
     closemessage
     applymovement(1, Common_Movement_WalkRight)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
@@ -38,7 +38,7 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     msgbox(format("Come on, Professor! You know sudden movements can scare Duskull!"))
     closemessage
     speakername("Prof. Elia")
-    msgbox(format("Whoops, my bad, Niko!"))
+    msgbox(format("Oof, sorry Niko..."))
     closemessage
     applymovement(1, Common_Movement_FaceDown)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
@@ -53,7 +53,7 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
     speakername("Niko")
-    msgbox(format("Sorry about the fuss, but when Duskull gets scared, it starts floating through walls and knocking over the books!\p I study how Pokémon behave in captivity. I'm learning a lot about Pokéballs and how to care for captive Pokémon. Now, back to work."))
+    msgbox(format("Sorry about the fuss, but when Duskull gets scared, it starts floating through walls and knocking over the books!\p I study how Pokémon behave in captivity. I'm learning a lot about Pokéballs and how to care for captive Pokémon.\p If you have any questions about Pokéballs, let me know."))
     closemessage
     applymovement(3, AcrisiaCity_University_Movement_NikoReturnToStation)
     waitmovement(0)
@@ -68,7 +68,7 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     applymovement(4, AcrisiaCity_University_Movement_RaniaGreetsPlayer)
     waitmovement(0)
     speakername("Rania")
-    msgbox(format("Yia sou! I'm Rania, and you must be... the new field assistant, {PLAYER}!\p I study the movement of Pokémon populations across the Ilios Region. Part of your fieldwork is collecting Pokémon location data, and I'm the one who goes through it all and finds trends!\p I'd love to keep chatting, but I've got a deadline to meet. Nice to meet you!"))
+    msgbox(format("Yia sou! That's how we say 'Hello' here! I'm Rania, and you must be... the new field assistant, {PLAYER}!\p I study the movement of Pokémon populations across the Ilios Region. Part of your fieldwork is collecting Pokémon location data, and I'm the one who goes through it all and finds trends!\p I'd love to keep chatting, but I've got a deadline to meet. Nice to meet you!"))
     closemessage
     applymovement(4, AcrisiaCity_University_Movement_RaniaReturnsToStation)
     waitmovement(0)
@@ -95,7 +95,7 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
     speakername("Prof. Elia")
-    msgbox(format("Sooo... it looks like I don't quite have an extra Pokédex on hand. I ordered a new set of lab equipment which included a new one, but it seems like that hasn't come yet..."))
+    msgbox(format("Ehehe... so, it looks like I don't quite have an extra Pokédex on hand. I ordered a new set of lab equipment which included a new one, but it seems like that hasn't come yet..."))
     closemessage
     delay(30)
     applymovement(1, Common_Movement_ExclamationMark)
@@ -122,12 +122,13 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     clearflag(FLAG_HIDE_SECOND_PROFESSOR_SPRITE)
     setflag(FLAG_HIDE_FIRST_PROFESSOR_SPRITE)
     clearflag(FLAG_HIDE_MAP_NAME_POPUP)
+    setrespawn(HEAL_LOCATION_ACRISIA_CITY)
 
     warpsilent(MAP_ACRISIA_CITY_UNIVERSITY, 6, 12)
     waitstate
 
     // NOTES:
-    // VAR_INTRO_STATE is now 2. Player has a Pokémon, and is tasked with heading South to a Stable on the road to find the delivery.
+    // VAR_INTRO_STATE is now 2. Player has a Pokémon, and is tasked with heading South on the road to find the delivery.
     // Some other flags, like running shoes, have also been enabled here just for convenience
 
     releaseall
@@ -268,6 +269,72 @@ script AcrisiaCity_University_EventScript_Rania
 }
 
 // -------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------
+
+script AcrisiaCity_University_EventScript_RaniaShowsHealspot
+{
+    lockall
+    emote(4, EMOTE_EXCLAM)
+    applymovement(4, AcrisiaCity_University_Movement_RaniaShowsHealing)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    speakername("Rania")
+    msgbox(format("Wait, {PLAYER}! Before you go, take a look at this."))
+    closemessage
+    applymovement(4, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("This machine is a Pokémon Healing device! Whenever your Pokémon are feeling low, come interact with it to heal them up!"))
+    closemessage
+    applymovement(4, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Well, good luck on your first University assignment! Make sure to stop back in sometimes!"))
+    closemessage
+    applymovement(4, AcrisiaCity_University_Movement_RaniaDoneShowingHealing)
+    waitmovement(0)
+    setflag(FLAG_SHOWN_ACRISIA_HEALSPOT)
+    releaseall
+    end
+}
+
+movement AcrisiaCity_University_Movement_RaniaShowsHealing
+{
+    walk_right
+    walk_down * 2
+    walk_left * 4
+    face_down
+    step_end
+}
+
+movement AcrisiaCity_University_Movement_RaniaDoneShowingHealing
+{
+    walk_right * 4
+    walk_up * 2
+    walk_left
+    face_left
+    step_end
+}
+
+script AcrisiaCity_University_HealParty
+{
+    lock
+    speakername("Computer")
+    msgbox(format("-bzzt bzzt-\l Healing Pokémon..."))
+    closemessage
+    special(HealPlayerParty)
+    delay(120)
+    speakername("Computer")
+    msgbox(format("Pokémon are healthy and ready to go."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------------------------------------------------------------------------------
 // ---------------------------  Code called when speaking to Prof. Elia  --------------------------------
 // -------------------------------------------------------------------------------------------------------------
 
@@ -278,51 +345,145 @@ script AcrisiaCity_EventScript_ProfessorElia
 
     if(var(VAR_INTRO_STATE) == 2) // sent to get lost delivery of Pokédex
     {
-        speakername("Prof. Elia")
-        msgbox(format("Welcome back, {PLAYER}! Did you find that {COLOR GREEN}lost delivery{COLOR DARK_GRAY} yet?"), MSGBOX_YESNO)
-        if(var(VAR_RESULT) == 0) // no
-        {
-            msgbox(format("Hmm, that's concerning... local crime groups have been active lately, I'm nervous that the delivery cart was attacked. Keep us updated on the situation."))
-            closemessage
-        }
-        else
-        {
-            if(flag(FLAG_FOUND_LOST_DELIVERY)) // actually did!
-            {
-                msgbox(format("Ochi! The delivery cart was attacked!? Well I'm glad everyone is okay...\p Here, I'll enable your Pokédex."))
-                closemessage
-                playse(SE_CLICK)
-	            delay(10)
-	            playse(SE_CLICK)
-	            delay (10)
-	            playse(SE_CLICK)
-	            delay(10)
-	            playse(SE_CLICK)
-	            delay(20)
-                playfanfare(MUS_OBTAIN_ITEM)
-                msgbox("{PLAYER}'s Pokédex was enabled!")
-                waitfanfare
-                setflag(FLAG_SYS_POKEDEX_GET)
-                setflag(FLAG_ADVENTURE_STARTED)
-                setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
-                closemessage
-                speakername("Prof. Elia")
-                msgbox(format("I think it's a good idea to train your Pokémon for battle, in case more troublemakers come around. Why don't you {COLOR GREEN}battle the Pokémon Gyms{COLOR DARK_GRAY} you find while you're exploring the Ilios Region? That'll get your Pokémon raring to go!"))
-                closemessage
-                speakername("Prof. Elia")
-                msgbox(format("You're all set to go, {PLAYER}! Capture Pokémon, collect data, and get stronger! Oh, and make sure to help people when you can. Good luck!"))
-                closemessage
-                setvar(VAR_INTRO_STATE, 3)
-            }
-            else
-            {
-                msgbox(format("You did? Well where's the Pokédex? ...Come on {PLAYER}, we need to make sure the delivery folks are alright! Go look again!"))
-                closemessage
-            }
-        }
+        goto(AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck)
+    }
+    elif(var(VAR_INTRO_STATE) == 3) // got Pokédex, sent to Jusmail Town to get 1st badge
+    {
+        goto(AcrisiaCity_University_EventScript_EliaCheckBadgeOne)
+    }
+    elif(var(VAR_INTRO_STATE) == 4) // got badge 1, sent to Discus Forge in Acrisia Mountains for 2nd badge
+    {
+        goto(AcrisiaCity_University_EventScript_EliaCheckBadgeTwo)
+    }
+    else
+    {
+        // After VAR_INTRO_STATE is 5, the "introduction" (first two badges) is over
+        // Now, Professor Elia just rates the Pokédex and gives rewards based on progress
+        // NOTE: Use Prof. Elm code from Seaglass as reference to giving rewards based on dex progress!!!
+        goto(AcrisiaCity_University_EventScript_EliaRatePokedex)
     }
 
     release
     end
 
+}
+
+script AcrisiaCity_University_EventScript_EliaRatePokedex
+{
+    // TODO: give rewards based on Pokédex progress, including an HM or two! Encourage catching Pokémon
+    // this is also just kinda busted in general lol
+
+    speakername("Prof. Elia")
+    goto(ProfBirch_EventScript_RatePokedex)
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
+{
+    speakername("Prof. Elia")
+    msgbox(format("Welcome back, {PLAYER}! Did you find that {COLOR GREEN}lost delivery{COLOR DARK_GRAY} yet?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0) // no
+    {
+        msgbox(format("Hmm, that's concerning... local crime groups have been active lately, I'm nervous that the delivery cart was attacked. Keep us updated on the situation."))
+        closemessage
+    }
+    else
+    {
+        if(flag(FLAG_FOUND_LOST_DELIVERY)) // actually did!
+        {
+            msgbox(format("Heavens! The delivery cart was attacked!? Well I'm glad everyone is okay...\p Here, I'll enable your Pokédex."))
+            closemessage
+            removeobject(ITEM_PARCEL) // remove key item parcel from bag
+            playse(SE_CLICK)
+	        delay(10)
+	        playse(SE_CLICK)
+	        delay (10)
+	        playse(SE_CLICK)
+	        delay(10)
+	        playse(SE_CLICK)
+	        delay(20)
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("{PLAYER}'s Pokédex was enabled!")
+            waitfanfare
+            setflag(FLAG_SYS_POKEDEX_GET)
+            setflag(FLAG_ADVENTURE_STARTED)
+            setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+            closemessage
+            speakername("Prof. Elia")
+            msgbox(format("I think it's a good idea to train your Pokémon for battle, in case more troublemakers come around. Why don't you {COLOR GREEN}battle the Pokémon Gyms{COLOR DARK_GRAY} you find while you're exploring the Ilios Region? That'll get your Pokémon raring to go!"))
+            closemessage
+            speakername("Prof. Elia")
+            msgbox(format("The {COLOR GREEN}first Gym{COLOR DARK_GRAY} is south of here, in {COLOR GREEN}Jusmail Town{COLOR DARK_GRAY}. Come back to me with the {COLOR GREEN}first Gym Badge{COLOR DARK_GRAY} to show me your skill as a trainer!"))
+            closemessage
+
+            // Set other vars and stuff
+            setvar(VAR_INTRO_STATE, 3)
+        }
+        else
+        {
+            msgbox(format("You did? Well where's the Pokédex? ...Come on {PLAYER}, we need to make sure the delivery folks are alright! Go look again!"))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+script AcrisiaCity_University_EventScript_EliaCheckBadgeOne
+{
+    speakername("Prof. Elia")
+    msgbox(format("Yia sou, welcome back {PLAYER}! Have you made it to the {COLOR GREEN}Jusmail Town Gym{COLOR DARK_GRAY} yet?"))
+    closemessage
+    if(!flag(FLAG_BADGE01_GET)) // havent gotten the badge
+    {
+        speakername("Prof. Elia")
+        msgbox(format("Still training, eh? No rush, no rush!\p Come back to the University and check in with me when you have your first Gym Badge."))
+        closemessage
+    }
+    else // got the badge!
+    {
+        speakername("Prof. Elia")
+        msgbox(format("Well done! You're well on your way to being a great trainer.\p Here, I wanted to give you something to celebrate!"))
+        closemessage
+        giveitem(ITEM_ABILITY_CAPSULE)
+        speakername("Prof. Elia")
+        msgbox(format("That's an Ability Capsule. It can change the Ability of a Pokémon, which can make it totally different in battle!\p Look, I know I've been sending you back and forth a bunch, but I think I've got a good idea. You should head {COLOR GREEN}west{COLOR DARK_GRAY} from here, up into the {COLOR GREEN}Acrisia Mountains{COLOR DARK_GRAY}. There's a cave nearby called the {COLOR GREEN}Discus Forge{COLOR DARK_GRAY}, which the Ilios Region considers a Gym. If you can win, I have something even better for you!"))
+        closemessage
+        setvar(VAR_INTRO_STATE, 4)
+    }
+    release
+    end
+}
+
+script AcrisiaCity_University_EventScript_EliaCheckBadgeTwo
+{
+    speakername("Prof. Elia")
+    msgbox(format("{PLAYER}, welcome, welcome! Have you explored the {COLOR GREEN}Acrisia Mountains{COLOR DARK_GRAY} to the west yet? The {COLOR GREEN}second Gym{COLOR DARK_GRAY} is there!"))
+    closemessage
+    if(!flag(FLAG_BADGE02_GET))
+    {
+        speakername("Prof. Elia")
+        msgbox(format("Not yet, hm? That's fine, the Mountains are a tough area. Only a small area is safe to explore, so it's packed with trainers.\p Come back and check in with me when you have your second Gym Badge. And remember to heal your Pokémon at the machine to your right!"))
+        closemessage
+    }
+    else // got the badge!
+    {
+        // Gives player Rock Smash, letting them get South of Jusmail Town to rest of region
+        // This will essentially open up the rest of the game! Player will be totally free to do whatever
+        // Speaking to Professor Elia after this will just give prompts to check Pokédex progress
+        
+        speakername("Prof. Elia")
+        msgbox(format("Incredible! You're becoming a great Pokémon trainer. As promised, here's something exciting for you!"))
+        closemessage
+        giveitem(ITEM_HM_ROCK_SMASH)
+        speakername("Prof. Elia")
+        msgbox(format("As you grow stronger, you'll be able to adventure further to find new Pokémon. This'll be great for our studies!\p I believe you're ready to conduct your {COLOR GREEN}independent research{COLOR DARK_GRAY} and {COLOR GREEN}explore Ilios{COLOR DARK_GRAY}. With Rock Smash, you should be able to continue {COLOR GREEN}south to Pythios Town{COLOR DARK_GRAY}.\p Remember to stop back here sometimes! I can check your Pokédex progress and give you rewards for your research, and your fellow University students here will be researching right alongside you. Good luck, {PLAYER}!"))
+        closemessage
+
+        setvar(VAR_INTRO_STATE, 5) // "Introductory" stage of game (first 2 badges) complete!
+    }
+    release
+    end
 }

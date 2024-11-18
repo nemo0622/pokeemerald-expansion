@@ -2499,3 +2499,11 @@ void ScriptSetDoubleBattleFlag(struct ScriptContext *ctx)
 {
     sIsScriptedWildDouble = TRUE;
 }
+
+bool8 ScrCmd_ballfollowingmon(struct ScriptContext *ctx)
+{
+    if (OW_FOLLOWERS_ENABLED == TRUE && FlagGet(FLAG_SYS_POKEMON_GET) && OW_SUBSTITUTE_PLACEHOLDER == TRUE) {
+        ReturnFollowingMonToBall();
+    }
+    return FALSE;
+}

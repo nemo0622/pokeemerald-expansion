@@ -219,8 +219,8 @@ REGION PLAN:
         - Pink trees and stuff, blessed by a shiny Celebi centuries ago or something
     - Head South of Port Pello through the Nyx Trail
     - South to Areios Hideout, the main base of the evil team
-        - Gym 8: Alcippe, the Fighting gym leader
-            - Named after daughter of Ares
+        - Gym 8: Mara, the Fighting gym leader
+            - "Daughter of Ares" esk figure ("Mara", Mars, you get it)
             - LEADER OF EVIL TEAM!
             - Team: Medicham, Falinks, Basculegion, Sneasler, Tyrantrum, Annihilape (level 38-40)
             - Unlocks Waterfall outside of battle, disbands evil team

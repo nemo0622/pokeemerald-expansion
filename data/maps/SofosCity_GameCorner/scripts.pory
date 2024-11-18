@@ -145,7 +145,7 @@ script SofosCity_GameCorner_EggShop
             giveegg(VAR_RESULT)
             
             bufferspeciesname(STR_VAR_1, VAR_RESULT)
-            msgbox(format("{PLAYER} was given a {STR_VAR_1} Egg!"))
+            msgbox(format("{PLAYER} was given a Pokémon Egg!"))
             delay(60)
             closemessage
             

@@ -2388,3 +2388,9 @@
 	applymovement \localid, Common_Movement_Delay48
 	waitmovement 0
 	.endm
+
+	@ Returns Pokemon follower to ball
+	.macro ballfollowingmon
+	.byte 0xe6
+	delay 16
+	.endm

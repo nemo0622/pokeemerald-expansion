@@ -118,8 +118,8 @@
 #define OBJ_EVENT_GFX_CABLE_CAR                  114
 #define OBJ_EVENT_GFX_SCIENTIST_2                115
 #define OBJ_EVENT_GFX_DEVON_EMPLOYEE             116
-#define OBJ_EVENT_GFX_AQUA_MEMBER_M              117
-#define OBJ_EVENT_GFX_AQUA_MEMBER_F              118
+#define OBJ_EVENT_GFX_KLEFTIS_MEMBER_M           117
+#define OBJ_EVENT_GFX_KLEFTIS_MEMBER_F           118
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_M             119
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_F             120
 #define OBJ_EVENT_GFX_SIDNEY                     121
@@ -135,8 +135,8 @@
 #define OBJ_EVENT_GFX_LIZA                       131
 #define OBJ_EVENT_GFX_TATE                       132
 #define OBJ_EVENT_GFX_WALLACE                    133
-#define OBJ_EVENT_GFX_STEVEN                     134
-#define OBJ_EVENT_GFX_WALLY                      135
+#define OBJ_EVENT_GFX_RANIA                      134 // replaces GFX_STEVEN
+#define OBJ_EVENT_GFX_NIKO                       135 // replaces GFX_WALLY
 #define OBJ_EVENT_GFX_LITTLE_BOY_3               136
 #define OBJ_EVENT_GFX_BRENDAN_FISHING            137
 #define OBJ_EVENT_GFX_MAY_FISHING                138
@@ -196,7 +196,7 @@
 #define OBJ_EVENT_GFX_MAY_WATERING               192
 #define OBJ_EVENT_GFX_BRENDAN_DECORATING         193
 #define OBJ_EVENT_GFX_MAY_DECORATING             194
-#define OBJ_EVENT_GFX_ARCHIE                     195
+#define OBJ_EVENT_GFX_MARA                       195 // 8th gym leader, leader of Team Kleftis, Ares' Daughter
 #define OBJ_EVENT_GFX_MAXIE                      196
 #define OBJ_EVENT_GFX_KYOGRE_FRONT               197
 #define OBJ_EVENT_GFX_GROUDON_FRONT              198

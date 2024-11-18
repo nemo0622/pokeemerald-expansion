@@ -1,1 +1,187 @@
 mapscripts BronzePass_North_MapScripts {}
+
+script BronzePass_North_EventScript_KleftisThug
+{
+    lock
+    speakername("Thug")
+    msgbox(format("Gahaha, gimme your stuff! I know you've got a Pokédex in here somewhere!"))
+    closemessage
+    delay(30)
+    emote(2, EMOTE_EXCLAM) // emotes exclamation mark
+    delay(30)
+    faceplayer
+    speakername("Thug")
+    msgbox(format("Get outta here, you! The work of Team Kleftis is none of your business..."))
+    closemessage
+    applymovement(2, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script BronzePass_North_EventScript_Deliveryman
+{
+    lock
+    faceplayer
+    speakername("Deliveryman")
+
+    // Already did the lost Pokédex delivery event
+    if(flag(FLAG_FOUND_LOST_DELIVERY))
+    {
+        msgbox(format("Phew, that was a close call. That thug got away with a few trinkets, but nothing too valuable.\p Now I just have to... clean all this up... hm."))
+        closemessage
+        release
+        end
+    }
+    else
+    {
+        // Do event!!
+        msgbox(format("You! You have to help me! This guy attacked my Mudbray and is trying to rob me!"))
+        closemessage
+        applymovement(2, BronzePass_North_Movement_KleftisEmphasizes)
+        waitmovement(0)
+        speakername("Thug")
+        msgbox(format("Quit stalling for time, I know you've got good stuff here! I've knocked out your Pokémon, I'll knock you out next!"))
+        closemessage
+        ballfollowingmon
+        applymovement(2, BronzePass_North_Movement_KleftisConfrontsPlayer)
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+        waitmovement(0)
+        speakername("Thug")
+        msgbox(format("Trying to stop me, eh? I'll teach you a lesson!"))
+        closemessage
+        // TRAINER BATTLE HERE!
+        trainerbattle_no_intro(TRAINER_BRONZE_PASS_KLEFTIS_GRUNT, BronzePass_North_Text_KleftisGruntDefeated)
+
+        speakername("Kleftis Grunt")
+        msgbox(format("The Boss is gonna freak... well, they shouldn't have sent a new recruit like me out here anyway.\p You just got lucky, kid! I'll get you for this!"))
+        closemessage
+        applymovement(2, BronzePass_North_Movement_KleftisGruntExits)
+        waitmovement(0)
+        removeobject(2)
+        delay(20)
+
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        waitmovement(0)
+        speakername("Deliveryman")
+        msgbox(format("Thanks for saving me, buddy! You're a new student at the University, right? Turns out, that's right where I was headed with this delivery.\p I've got to stay behind and clean this up. Here, take this {COLOR GREEN}package{COLOR DARK_GRAY} and bring it {COLOR GREEN}back to the University{COLOR DARK_GRAY}, I'm sure they'll want it."))
+        closemessage
+        giveitem(ITEM_PARCEL)
+        setflag(FLAG_FOUND_LOST_DELIVERY)
+    }
+
+    release
+    end
+}
+
+text BronzePass_North_Text_KleftisGruntDefeated
+{
+    format("Urgh, you're stronger than you look...")
+}
+
+movement BronzePass_North_Movement_KleftisEmphasizes
+{
+    walk_in_place_right * 2
+    step_end
+}
+
+movement BronzePass_North_Movement_KleftisConfrontsPlayer
+{
+    walk_down
+    face_right
+    step_end
+}
+
+movement BronzePass_North_Movement_KleftisGruntExits
+{
+    walk_fast_left * 6
+    walk_fast_down * 3
+    walk_fast_left
+    walk_fast_down * 4
+    step_end
+}
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+
+script BronzePass_North_EventScript_PreventPassingSouth_GotParcel
+{
+    lock
+    msgbox(format("I shouldn't get too far from the University yet. Professor Elia would be concerned!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+
+// TRAINER & NPC SCRIPTS
+
+script BronzePass_North_EventScript_Trainer_BronzePass_Chip
+{
+    trainerbattle_single(TRAINER_BRONZEPASS_CHIP, BronzePass_North_Text_Trainer_BronzePass_ChipIntro, BronzePass_North_Text_Trainer_BronzePass_ChipDefeat)
+    speakername("Chip")
+    msgbox(format("I guess I need to train my Bug Pokémon more."))
+    closemessage
+    release
+    end
+}
+text BronzePass_North_Text_Trainer_BronzePass_ChipIntro
+{
+    format("You'll never beat my Bug Pokémon!")
+}
+text BronzePass_North_Text_Trainer_BronzePass_ChipDefeat
+{
+    format("W-what? My Bug Pokémon!")
+}
+
+script BronzePass_North_EventScript_NPC_Lass
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("The broken rails around here are a little creepy... It just looks messy to me!"))
+    closemessage
+    release
+    end
+}
+
+script BronzePass_North_EventScript_Trainer_BronzePass_Rose
+{
+    trainerbattle_single(TRAINER_BRONZEPASS_ROSE, BronzePass_North_Text_Trainer_BronzePass_RoseIntro, BronzePass_North_Text_Trainer_BronzePass_RoseDefeat)
+    speakername("Rose")
+    msgbox(format("We just moved to the Ilios Region. The Pokémon here are really different than they were at our old home."))
+    closemessage
+    release
+    end
+}
+text BronzePass_North_Text_Trainer_BronzePass_RoseIntro
+{
+    format("My brother and I are looking for Pokémon here, but battling you sounds more fun!")
+}
+text BronzePass_North_Text_Trainer_BronzePass_RoseDefeat
+{
+    format("No way, I thought we had that!")
+}
+
+script BronzePass_North_EventScript_Trainer_BronzePass_Felix
+{
+    trainerbattle_single(TRAINER_BRONZEPASS_FELIX, BronzePass_North_Text_Trainer_BronzePass_FelixIntro, BronzePass_North_Text_Trainer_BronzePass_FelixDefeat)
+    speakername("Felix")
+    msgbox(format("I brought my Foongus from the Unova Region when we moved here. I didn't know Foongus lives here too!"))
+    closemessage
+    release
+    end
+}
+text BronzePass_North_Text_Trainer_BronzePass_FelixIntro
+{
+    format("Hey sis, I found an item! Huh? You're not my sister!")
+}
+text BronzePass_North_Text_Trainer_BronzePass_FelixDefeat
+{
+    format("Rats, the item was just my Foongus.")
+}

@@ -1229,7 +1229,7 @@
 #define FLAG_BROKE_JUSMAIL_TOWN_ROCKS                               0x49B // Hides rock smash rocks in Jusmail Town
 #define FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL                      0x49C // Got wishing stars from girl in Jusmail
 #define FLAG_GOT_EVIOLITE_ACRISIA_CITY                              0x49D // Got Eviolite from Pokéfan Lady in Acrisia
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
+#define FLAG_SHOWN_ACRISIA_HEALSPOT                                 0x49E // Shown healing by Rania
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
@@ -1352,7 +1352,7 @@
 #define FLAG_UNLOCKED_TRENDY_SAYINGS                 (SYSTEM_FLAGS + 0x6)
 
 // Badges
-#define FLAG_BADGE01_GET                             (SYSTEM_FLAGS + 0x7)
+#define FLAG_BADGE01_GET                             (SYSTEM_FLAGS + 0x7) // 0x867
 #define FLAG_BADGE02_GET                             (SYSTEM_FLAGS + 0x8)
 #define FLAG_BADGE03_GET                             (SYSTEM_FLAGS + 0x9)
 #define FLAG_BADGE04_GET                             (SYSTEM_FLAGS + 0xA)

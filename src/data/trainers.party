@@ -81,22 +81,25 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_SAWYER_1 ===
-Name: SAWYER
-Class: Hiker
-Pic: Hiker
+=== TRAINER_BRONZE_PASS_KLEFTIS_GRUNT ===
+Name: Grunt
+Class: Team Kleftis
+Pic: Aqua Grunt M
 Gender: Male
-Music: Hiker
+Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Check Viability
 
-Geodude
-Level: 21
+Meowth
+Level: 5
+Ability: ABILITY_UNNERVE
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Growl
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -109,7 +112,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -126,7 +129,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -139,7 +142,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -152,7 +155,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -165,7 +168,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -178,7 +181,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -224,7 +227,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_PETALBURG_WOODS ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -289,7 +292,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
@@ -315,7 +318,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -328,7 +331,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -345,7 +348,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_2 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -362,7 +365,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_3 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -383,7 +386,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MUSEUM_1 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -396,7 +399,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MUSEUM_2 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -426,7 +429,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_1 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -439,7 +442,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_2 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -452,7 +455,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_3 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -469,7 +472,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_4 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
@@ -482,7 +485,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
@@ -495,7 +498,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
@@ -640,47 +643,31 @@ Roselia
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROSE_1 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
+=== TRAINER_BRONZEPASS_ROSE ===
+Name: Rose
+Class: Lass
+Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
 
-Roselia
-Level: 14
+Sentret
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shroomish
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Roselia
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_FELIX ===
-Name: FELIX
-Class: Cooltrainer
-Pic: Cooltrainer M
+=== TRAINER_BRONZEPASS_FELIX ===
+Name: Felix
+Class: Youngster
+Pic: Youngster
 Gender: Male
-Music: Cool
-Items: Full Restore
+Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Check Viability
 
-Medicham
-Level: 43
+Foongus
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Psychic
-
-Claydol
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Skill Swap
-- Earthquake
 
 === TRAINER_VIOLET ===
 Name: VIOLET
@@ -796,38 +783,22 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Sand Attack
 - Poison Sting
 
-=== TRAINER_CHIP ===
-Name: CHIP
-Class: Ruin Maniac
-Pic: Ruin Maniac
+=== TRAINER_BRONZEPASS_CHIP === /* Bug Catcher in BronzePass_North */
+Name: Chip
+Class: Bug Catcher
+Pic: Bug Catcher
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
 
-Baltoy
-Level: 27
+Caterpie
+Level: 2
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Psybeam
-- Self Destruct
-- Sandstorm
-- Ancient Power
 
-Sandshrew
-Level: 27
+Ledyba
+Level: 3
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
-
-Sandslash
-Level: 27
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
 === TRAINER_FOSTER ===
 Name: FOSTER
@@ -3380,7 +3351,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
@@ -3397,7 +3368,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -10485,7 +10456,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -10519,7 +10490,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_4 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
@@ -10908,7 +10879,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_5 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Kleftis
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua

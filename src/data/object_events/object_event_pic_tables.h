@@ -474,11 +474,11 @@ static const struct SpriteFrameImage sPicTable_DevonEmployee[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_AquaMemberM[] = {
-    overworld_ascending_frames(gObjectEventPic_AquaMemberM, 2, 4),
+    overworld_ascending_frames(gObjectEventPic_KleftisMemberM, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_AquaMemberF[] = {
-    overworld_ascending_frames(gObjectEventPic_AquaMemberF, 2, 4),
+    overworld_ascending_frames(gObjectEventPic_KleftisMemberF, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_MagmaMemberM[] = {
@@ -633,11 +633,11 @@ static const struct SpriteFrameImage sPicTable_Wallace[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_Steven[] = {
-    overworld_ascending_frames(gObjectEventPic_Steven, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_Rania, 4, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Wally[] = {
-    overworld_ascending_frames(gObjectEventPic_Wally, 2, 4),
+    overworld_ascending_frames(gObjectEventPic_Niko, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_RubySapphireLittleBoy[] = {
