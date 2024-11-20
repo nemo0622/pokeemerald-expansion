@@ -275,7 +275,8 @@ script AcrisiaCity_University_EventScript_Rania
 script AcrisiaCity_University_EventScript_RaniaShowsHealspot
 {
     lockall
-    emote(4, EMOTE_EXCLAM)
+    applymovement(4, AcrisiaCity_University_Movement_RaniaJumps)
+    waitmovement(0)
     applymovement(4, AcrisiaCity_University_Movement_RaniaShowsHealing)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
@@ -301,6 +302,12 @@ script AcrisiaCity_University_EventScript_RaniaShowsHealspot
     end
 }
 
+movement AcrisiaCity_University_Movement_RaniaJumps
+{
+    jump_in_place_left * 2
+    step_end
+}
+
 movement AcrisiaCity_University_Movement_RaniaShowsHealing
 {
     walk_right
@@ -317,6 +324,107 @@ movement AcrisiaCity_University_Movement_RaniaDoneShowingHealing
     walk_left
     face_left
     step_end
+}
+
+script AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger1
+{
+    setvar(VAR_TEMP_1, 1) // indicates trigger used
+    goto(AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs)
+}
+script AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger2
+{
+    setvar(VAR_TEMP_1, 2) // indicates trigger used
+    goto(AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs)
+}
+script AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger3
+{
+    setvar(VAR_TEMP_1, 3) // indicates trigger used
+    goto(AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs)
+}
+script AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger4
+{
+    setvar(VAR_TEMP_1, 4) // indicates trigger used
+    goto(AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs)
+}
+
+script AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs
+{
+    // brought from Trigger1-Trigger4 scripts above
+    lock
+    emote(3, EMOTE_EXCLAM)
+    applymovement(3, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("Hold up, come here {PLAYER}!"))
+    closemessage
+    if(var(VAR_TEMP_1) == 1)
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_University_Movement_PlayerGoesToNiko_1)
+    }
+    elif(var(VAR_TEMP_1) == 2)
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_University_Movement_PlayerGoesToNiko_2)
+    }
+    elif(var(VAR_TEMP_1) == 3)
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_University_Movement_PlayerGoesToNiko_3)
+    }
+    elif(var(VAR_TEMP_1) == 4)
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_University_Movement_PlayerGoesToNiko_4)
+    }
+    waitmovement(0)
+
+    speakername("Niko")
+    msgbox(format("You remember me, right? R-right? I'm the one who works with captive Pokémon!"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0) // say you dont remember niko
+    {
+        speakername("Niko")
+        msgbox(format("No? Some research partner you are.\p I was gonna give you some good Pokéballs, but now you're just getting these."))
+        closemessage
+        giveitem(ITEM_POKE_BALL, 3)
+        speakername("Niko")
+        msgbox(format("A little disappointing, huh? Just like being forgotten about! Well, now we're even.\p Come back to the University as you catch more Pokémon. Rania and I can get you some neat stuff... if you remember me, that is."))
+        closemessage
+    }
+    else // you remember niko
+    {
+        speakername("Niko")
+        msgbox(format("Ehehe, I knew you were a real friend!\p I'm only supposed to give you a few Pokéballs, but you made my day, so I'll make yours!"))
+        closemessage
+        giveitem(ITEM_POKE_BALL, 10)
+        delay(30)
+        giveitem(ITEM_GREAT_BALL, 3)
+        speakername("Niko")
+        msgbox(format("Use those Great Balls on Pokémon giving you a hard time! They work like a charm.\p Come back to the University as you fill up the Pokédex! Rania and I might have some new gear for you to try out."))
+        closemessage
+    }
+    applymovement(3, Common_Movement_FaceUp)
+    waitmovement(0)
+    setvar(VAR_INTRO_STATE, 4) // var_intro_state = 4 means pokeballs have been given
+    release
+    end
+}
+
+movement AcrisiaCity_University_Movement_PlayerGoesToNiko_1
+{
+    walk_down * 2
+    walk_right * 4
+}
+movement AcrisiaCity_University_Movement_PlayerGoesToNiko_2
+{
+    walk_down * 2
+    walk_right * 3
+}
+movement AcrisiaCity_University_Movement_PlayerGoesToNiko_3
+{
+    walk_down * 2
+    walk_right * 2
+}
+movement AcrisiaCity_University_Movement_PlayerGoesToNiko_4
+{
+    walk_down * 2
+    walk_right
 }
 
 script AcrisiaCity_University_HealParty
@@ -347,11 +455,11 @@ script AcrisiaCity_EventScript_ProfessorElia
     {
         goto(AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck)
     }
-    elif(var(VAR_INTRO_STATE) == 3) // got Pokédex, sent to Jusmail Town to get 1st badge
+    elif(var(VAR_INTRO_STATE) == 4) // got Pokédex, sent to Jusmail Town to get 1st badge
     {
         goto(AcrisiaCity_University_EventScript_EliaCheckBadgeOne)
     }
-    elif(var(VAR_INTRO_STATE) == 4) // got badge 1, sent to Discus Forge in Acrisia Mountains for 2nd badge
+    elif(var(VAR_INTRO_STATE) == 5) // got badge 1, sent to Discus Forge in Acrisia Mountains for 2nd badge
     {
         goto(AcrisiaCity_University_EventScript_EliaCheckBadgeTwo)
     }
@@ -371,10 +479,56 @@ script AcrisiaCity_EventScript_ProfessorElia
 script AcrisiaCity_University_EventScript_EliaRatePokedex
 {
     // TODO: give rewards based on Pokédex progress, including an HM or two! Encourage catching Pokémon
+    // Also have Rania and Niko give rewards based on progression - Niko gives Pokéballs, Rania gives battle items (?)
+    // Rania and Niko can also serve as "shops" for unique items unlocked as story progresses
     // this is also just kinda busted in general lol
 
     speakername("Prof. Elia")
-    goto(ProfBirch_EventScript_RatePokedex)
+    msgbox(format("Yia sou, {PLAYER}! How's your research going? I can check your Pokédex progress!"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0) // decline
+    {
+        speakername("Prof. Elia")
+        msgbox(format("No? That's okay, go out there and gather some more data! I may have {COLOR GREEN}rewards{COLOR DARK_GRAY} for you next time."))
+        closemessage
+        release
+        end
+    }
+
+    setvar(VAR_0x8004, 0) // sets check to Regional Dex (Hoenn)
+	specialvar(VAR_RESULT, ScriptGetPokedexInfo)
+	copyvar(VAR_0x8008, VAR_0x8005)
+	copyvar(VAR_0x8009, VAR_0x8006)
+	buffernumberstring(STR_VAR_1, VAR_0x8008) // Num Regional seen
+	buffernumberstring(STR_VAR_2, VAR_0x8009) // Num Regional caught
+    speakername("Prof. Elia")
+	msgbox(format("You've seen {STR_VAR_1} Pokémon, and caught {STR_VAR_2} Pokémon!"))
+
+    // Based on Caught numbers (VAR_0x8009), give rewards and set reward flags (so there arent repeat rewards lol)
+    if(var(VAR_0x8009) >= 10 && !flag(FLAG_UNIVERSITY_REWARD_ELIA_01))
+    {
+        setflag(FLAG_UNIVERSITY_REWARD_ELIA_01) // sets flag that item received
+        speakername("Prof. Elia")
+        msgbox(format("You've captured more than 10 unique Pokémon! You're certainly capable, {PLAYER}. Here's your first progress reward!"))
+        closemessage
+        giveitem(ITEM_NUGGET)
+        speakername("Prof. Elia")
+        msgbox(format("That Nugget can be sold for a pretty penny! It should help fund your studies. As you catch more Pokémon, I'll have more for you."))
+        closemessage
+    }
+    if(var(VAR_0x8009) >= 20 && !flag(FLAG_UNIVERSITY_REWARD_ELIA_02))
+    {
+        setflag(FLAG_UNIVERSITY_REWARD_ELIA_02) // sets flag that item received
+        speakername("Prof. Elia")
+        msgbox(format("You've captured more than 20 unique Pokémon! Great job, {PLAYER}! Here's a nice new item."))
+        closemessage
+        giveitem(ITEM_LOADED_DICE)
+        speakername("Prof. Elia")
+        msgbox(format("Pokémon holding the Loaded Dice will be able to land multi-hit attacks more times in a row! As you catch more Pokémon, I'll have more for you."))
+        closemessage
+    }
+    // NEXT REWARDS: give other starters!
+    // Base code off of Fallarbor Town Elm Pichu event from Seaglass!
+
     closemessage
     release
     end
@@ -419,7 +573,7 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
             closemessage
 
             // Set other vars and stuff
-            setvar(VAR_INTRO_STATE, 3)
+            setvar(VAR_INTRO_STATE, 3) // enables Niko's Pokéball event
         }
         else
         {
@@ -451,7 +605,7 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeOne
         speakername("Prof. Elia")
         msgbox(format("That's an Ability Capsule. It can change the Ability of a Pokémon, which can make it totally different in battle!\p Look, I know I've been sending you back and forth a bunch, but I think I've got a good idea. You should head {COLOR GREEN}west{COLOR DARK_GRAY} from here, up into the {COLOR GREEN}Acrisia Mountains{COLOR DARK_GRAY}. There's a cave nearby called the {COLOR GREEN}Discus Forge{COLOR DARK_GRAY}, which the Ilios Region considers a Gym. If you can win, I have something even better for you!"))
         closemessage
-        setvar(VAR_INTRO_STATE, 4)
+        setvar(VAR_INTRO_STATE, 5)
     }
     release
     end
@@ -482,7 +636,7 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeTwo
         msgbox(format("As you grow stronger, you'll be able to adventure further to find new Pokémon. This'll be great for our studies!\p I believe you're ready to conduct your {COLOR GREEN}independent research{COLOR DARK_GRAY} and {COLOR GREEN}explore Ilios{COLOR DARK_GRAY}. With Rock Smash, you should be able to continue {COLOR GREEN}south to Pythios Town{COLOR DARK_GRAY}.\p Remember to stop back here sometimes! I can check your Pokédex progress and give you rewards for your research, and your fellow University students here will be researching right alongside you. Good luck, {PLAYER}!"))
         closemessage
 
-        setvar(VAR_INTRO_STATE, 5) // "Introductory" stage of game (first 2 badges) complete!
+        setvar(VAR_INTRO_STATE, 6) // "Introductory" stage of game (first 2 badges) complete!
     }
     release
     end

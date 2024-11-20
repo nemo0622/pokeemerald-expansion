@@ -46,20 +46,10 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
             - Calyrex Winter Rider Form - Glastrier + Calyrex, Ice/Ghost type
         - A few other beta Pokémon (Ice type Werewolves) (https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Pok%C3%A9mon)
         - Commission Thylacine Pokémon? Ghost/Normal type or Ghost/Rock type?
-
-- Custom Mapping references to remember:
-    - Use "Dynamic Warps" to change warp location based on script (https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Dynamic-Warp)
-    - Consider adding FRLG-style map previews (https://github.com/pret/pokeemerald/wiki/Adding-the-Map-Preview-Screens-from-FRLG)
-    - Region Map editing:
-        - TEAM AQUAS HIDEOUT VIDEOS: https://www.youtube.com/playlist?list=PLLNv9Lq6kDmT2zNM_gz3IkUUzjT4KaC-G
-        - Adding new maps: https://www.pokecommunity.com/threads/tutorial-adding-new-map-sections-for-name-popups-and-region-map.433496/
-            - MAKE SURE TO READ "CAVEAT" SECTION!
-        - Delete maps: https://github.com/pret/pokeemerald/wiki/How-to-delete-a-map
-            - Only do this if/when necessary!
-        - 2x2 cities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Support-2x2-Cities-on-the-Region-Map
+        
+- World Map Development Notes:
     - Consider Berry Tree works in map, including maybe implementing mulch, weeds, etc
         - Could be cool and interesting! Especially in player "home base" area
-    - REMEMBER: Add WISHING WELL to area early on! Maybe it's own dedicated location in some ruins?
 
 - Battle Gimmick: Terastalization if implemented!
     - Accessible for all Pokémon, relatively understandable, I think it's fun!
@@ -67,8 +57,13 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 - EVENTS AND STUFF:
     - Use in-game day count tracker to have events in different parts of the region every X number of days
         - Have PokéNav call from representatives from different towns you've visited announcing festivals
-    - Use "Spawn Invisible Player" tutorial for little cutscenes
-        - https://github.com/pret/pokeemerald/wiki/Spawn-Invisible-Player
+    - Finish implementing Prof. Elia, Rania, and Niko's gifting / interactions based on Pokédex progress
+        - Prof. Elia gifts a few helpful items and starter Pokémon with special good stats + Oval Charm
+        - Rania provides Tera Shards and other battle items (Rocky Helmet, etc) + Exp Charm
+        - Niko provides unique Pokéballs + Catching Charm, eventually becomes a Pokéball shop
+    - MISSING IMPORTANT BUILDINGS / LOCATIONS
+        - Daycare for Pokémon Breeding (Erynis Path? could be cute)
+        - Contest Hall (Sofos City?)
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
@@ -92,6 +87,7 @@ Many, many talented developers and artists are responsible for making this proje
 - Tilesets:
     - Most basic overworld sprites purchased from Arex and Zaebucca on itch.io
     - Pokémon Center, Mart, and Gym Buildings by TrainerDX
+    - Some GBC-style default houses by TrainerDX
 - Pokémon Sprites:
     - Most Generation 3 and 9 Pokémon sprites by [Egg](https://x.com/Egg3ggEgg) on Twitter
     - Many Generation 3 and other Pokémon sprites by [Nuukiie](https://www.deviantart.com/nuukiie) on DeviantArt
@@ -128,24 +124,6 @@ Many, many talented developers and artists are responsible for making this proje
 
 
 # Story / Region Information for me to look at
-STORY PLAN: Game takes place in the Ilios Region (Greek for "Sun"), based on the Greek peninsula and Aegean Sea
-    - Region composed of areas around Greek Peninsula, various Aegean Sea islands, and coastal Turkey
-        - Major cities based on Athens, Byzantium, and Knossos
-        - Post game "Battle Frontier" area (new map with Battle Frontier warps lol) takes place on island of Malta
-        - Semi open-world sections: starts linear, opens up for gyms 3-6 with scaling levels based on gym badges (bouncing around Aegean islands), and playthroughs converge around gym 7 for completing story
-        - Start playthrough in Acrisia, based on city of Larissa, containing Agria University
-            - All other students moved into village (village is host of researchers), here for research - introduced to Professor and sent for fieldwork
-            - Head south to Delphi-based town, which has wishing well-like area and 1st gym (psychic)
-                - Travel through a forest on the way south, which includes a "rest camp" area (mini-town w healspot)
-    - Gym Leaders based on Greek Gods
-        - Poison gym leader with toxic orb Gliscor based on Dionysus, likes to confuse opponents
-        - Fairy + normal gym leader based on Aphrodite, uses Attract a lot
-        - Fire + steel gym leader based on Hephastus, whole gym is a forge, Tinkaton main
-    - Player character is a researcher coming to the Agria University as a Graduate student researching Pokémon Ecology
-        - Goal: to record and capture all Pokémon in Ilios Region!
-        - Need to become a strong Trainer to handle some Pokémon - motivation to complete Gym challenge
-    - Main Story: Team Kleftis (Team "Thief" in Greek. lol) is stealing important artifacts and Pokémon from the region and selling them for profit!
-        - Your rival is secretly connected to the organization - seems nice at first, but is clearly keeping secrets, revealed to be connected around Gym 7
 
 REGION PLAN:
     - Start in Acrisia City, based on Greek city of Larissa

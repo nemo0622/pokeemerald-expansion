@@ -132,6 +132,42 @@
       "var": "FLAG_SHOWN_ACRISIA_HEALSPOT",
       "var_value": "0",
       "script": "AcrisiaCity_University_EventScript_RaniaShowsHealspot"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_INTRO_STATE",
+      "var_value": "3",
+      "script": "AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_INTRO_STATE",
+      "var_value": "3",
+      "script": "AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_INTRO_STATE",
+      "var_value": "3",
+      "script": "AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger3"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_INTRO_STATE",
+      "var_value": "3",
+      "script": "AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger4"
     }
   ],
   "bg_events": [

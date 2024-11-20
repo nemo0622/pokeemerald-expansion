@@ -242,6 +242,22 @@ BronzePass_North_EventScript_Trainer_BronzePass_Felix::
 	end
 
 
+BronzePass_North_EventScript_NPC_TeenageBoy::
+# 191 "data/maps/BronzePass_North/scripts.pory"
+	lock
+# 192 "data/maps/BronzePass_North/scripts.pory"
+	faceplayer
+# 193 "data/maps/BronzePass_North/scripts.pory"
+	speakername BronzePass_North_EventScript_NPC_TeenageBoy_Text_0
+# 194 "data/maps/BronzePass_North/scripts.pory"
+	msgbox BronzePass_North_EventScript_NPC_TeenageBoy_Text_1
+# 195 "data/maps/BronzePass_North/scripts.pory"
+	closemessage
+# 196 "data/maps/BronzePass_North/scripts.pory"
+	release
+	end
+
+
 BronzePass_North_EventScript_KleftisThug_Text_0:
 # 6 "data/maps/BronzePass_North/scripts.pory"
 	.string "Thug$"
@@ -352,6 +368,17 @@ BronzePass_North_EventScript_Trainer_BronzePass_Felix_Text_1:
 	.string "I brought my Foongus from the Unova\n"
 	.string "Region when we moved here. I didn't know\l"
 	.string "Foongus lives here too!$"
+
+BronzePass_North_EventScript_NPC_TeenageBoy_Text_0:
+# 193 "data/maps/BronzePass_North/scripts.pory"
+	.string "Teenage Boy$"
+
+BronzePass_North_EventScript_NPC_TeenageBoy_Text_1:
+# 194 "data/maps/BronzePass_North/scripts.pory"
+	.string "Guess there's not much farming up here,\n"
+	.string "huh? South of here, the Jusmail Town\l"
+	.string "Gym is based around farming. She uses\l"
+	.string "Grass and Bug-type Pokémon.$"
 
 BronzePass_North_Text_KleftisGruntDefeated::
 # 78 "data/maps/BronzePass_North/scripts.pory"

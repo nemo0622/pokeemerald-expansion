@@ -185,3 +185,14 @@ text BronzePass_North_Text_Trainer_BronzePass_FelixDefeat
 {
     format("Rats, the item was just my Foongus.")
 }
+
+script BronzePass_North_EventScript_NPC_TeenageBoy
+{
+    lock
+    faceplayer
+    speakername("Teenage Boy")
+    msgbox(format("Guess there's not much farming up here, huh? South of here, the Jusmail Town Gym is based around farming. She uses Grass and Bug-type Pokémon."))
+    closemessage
+    release
+    end
+}
