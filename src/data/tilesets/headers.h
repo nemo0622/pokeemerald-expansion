@@ -948,3 +948,14 @@ const struct Tileset gTileset_ChampionsPeak =
     .metatileAttributes = gMetatileAttributes_ChampionsPeak,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_JusmailGym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_JusmailGym,
+    .palettes = gTilesetPalettes_JusmailGym,
+    .metatiles = gMetatiles_JusmailGym,
+    .metatileAttributes = gMetatileAttributes_JusmailGym,
+    .callback = NULL,
+};

@@ -1,1 +1,97 @@
 mapscripts JusmailTown_PokemonCenter_MapScripts {}
+
+script JusmailTown_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_JUSMAIL_TOWN)
+    }
+    release
+    end
+}
+
+script JusmailTown_PokemonCenter_EventScript_Chansey
+{
+    lock
+    faceplayer
+    speakername("Chansey")
+    playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+    msgbox("Bee-eh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_PokemonCenter_EventScript_Farmer
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("After a hard day of work, I come here with my Pokémon to get some rest. I talk with the townsfolk while they heal up."))
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_PokemonCenter_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("These Pokémon Centers are standardized across the Ilios Region! Make sure to talk to everyone, some people might be able to help you out."))
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_PokemonCenter_EventScript_FatMan
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("My Mudbray has a neat ability! Every time it gets hit, their Defense stat raises. Pokémon Abilities sure seem important!"))
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_PokemonCenter_EventScript_Mudbray
+{
+    lock
+    faceplayer
+    speakername("Mudbray")
+    playmoncry(SPECIES_MUDBRAY, CRY_MODE_NORMAL)
+    msgbox("Greeeeh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

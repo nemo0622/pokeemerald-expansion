@@ -35,6 +35,8 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 - ADD A FEW NEW POKéMON AND ABILITIES:
     - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
         - Scurry: Signature ability of Crocky, increases Evasiveness when sent out
+        - Improve Dancer ability to boost Dance move power? really just for oricorio
+            - Also add a new move with EFFECT_REVELATION_DANCE, just weaker and learned at level 20
     - New Pokémon
         - Crocky and Kotora (commissioned sprites)
         - Calyrex + Forms Fakemon
@@ -61,9 +63,15 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
         - Prof. Elia gifts a few helpful items and starter Pokémon with special good stats + Oval Charm
         - Rania provides Tera Shards and other battle items (Rocky Helmet, etc) + Exp Charm
         - Niko provides unique Pokéballs + Catching Charm, eventually becomes a Pokéball shop
-    - MISSING IMPORTANT BUILDINGS / LOCATIONS
+    - MISSING IMPORTANT BUILDINGS / LOCATIONS / UNLOCKS
         - Daycare for Pokémon Breeding (Erynis Path? could be cute)
         - Contest Hall (Sofos City?)
+        - Tera Orb unlock (optional quest after 3rd gym)
+            - Remember to use FLAG_UNLOCKED_TERASTALLIZATION
+            - If flag FLAG_UNLOCKED_TERASTALLIZATION set, allow Gym Leaders to terastallize? Seems fair
+            - ALSO: change Pinball egg shop in Sofos City to a Tera Shard distributor (1 random shard per point)
+        - DexNav unlock (after 2nd gym?)
+        - Berry plant locations
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
@@ -102,6 +110,8 @@ Many, many talented developers and artists are responsible for making this proje
     - Hydrapple line sprites and various other gen 2 style sprites (Charizard, Dudunsparce, Porygon line) by SageDeoxys on Twitter
     - Alolan Sandshrew/Sandslash and Alolan Vulpix/Ninetales sprites by wittycrow on DeviantArt
     - Samurott by Solo993
+    - Ribombee by Rojimenez from Spriter's Resource
+    - Cutiefly sprite by Supahsanti, from Substitube's public sprite resource
 - Overworld Sprites:
     - Many NPC sprites adapted from Pokémon Crystal
     - Some NPC sprites by Anima_nel on itch.io
@@ -134,7 +144,7 @@ REGION PLAN:
         - Gym 1: Deo, based on Demeter
             - Grass and Bug types, gym centered around the harvest + agriculture
             - Team: Ledyba, Bellsprout, and Skiddo (level 10-12)
-            - Unlocks use of Cut outside battle
+            - Rewards: Harvest Badge, unlocks use of Cut outside battle, TM Bullet Seed
     - South path blocked by Rock Smash - told to head back North to Acrisia City
     - West of Acrisia is the Acrisia Mountains, leading up to Discus Mines
         - Discus Mines is not much of a town, mostly just a hermit's workshop and a little infrastructure

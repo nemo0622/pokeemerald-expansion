@@ -1,1 +1,155 @@
 mapscripts BronzeFields_South_MapScripts {}
+
+// TRAINER & NPC SCRIPTS
+
+script BronzeFields_South_EventScript_Trainer_BronzeFields_Emerick
+{
+    trainerbattle_single(TRAINER_EMERICK_BRONZEFIELDS, BronzeFields_South_Text_Trainer_BronzePass_EmerickIntro, BronzeFields_South_Text_Trainer_BronzePass_EmerickDefeat)
+    speakername("Emerick")
+    msgbox(format("Workin' the farm is tough, but my Pokémon do their best to help me out."))
+    closemessage
+    release
+    end
+}
+text BronzeFields_South_Text_Trainer_BronzePass_EmerickIntro
+{
+    format("My Pokémon are farm-raised beauties! Think ya can win against me?")
+}
+text BronzeFields_South_Text_Trainer_BronzePass_EmerickDefeat
+{
+    format("Bwahaha! Looks like I need a li'l more trainin'!")
+}
+
+script BronzeFields_South_EventScript_Trainer_BronzeFields_Joseph
+{
+    trainerbattle_single(TRAINER_JOSEPH_BRONZEFIELDS, BronzeFields_South_Text_Trainer_BronzePass_JosephIntro, BronzeFields_South_Text_Trainer_BronzePass_JosephDefeat)
+    speakername("Joseph")
+    msgbox(format("ACHOO! Why did I become a farmer? I'm allergic to hay!"))
+    closemessage
+    release
+    end
+}
+text BronzeFields_South_Text_Trainer_BronzePass_JosephIntro
+{
+    format("Ahh.. ahh... ACHOO! M-my allergies're bad right now...")
+}
+text BronzeFields_South_Text_Trainer_BronzePass_JosephDefeat
+{
+    format("My eyes were jus' watery, that's why I lost!")
+}
+
+script BronzeFields_South_EventScript_NPC_Girl1
+{
+    lock
+    faceplayer
+    speakername("Flower Girl")
+    if(!flag(FLAG_GOT_WAILMER_PAIL))
+    {
+        msgbox(format("The flowers around here are so pretty! I hear {COLOR GREEN}a Pokémon here is adapted to the red flowers{COLOR DARK_GRAY}."))
+        closemessage
+        checkforspecies(SPECIES_FLABEBE_RED_FLOWER, NO_PARTY_SCREEN, BronzeFields_South_EventScript_NPC_Girl1_HasFlabebe)
+    }
+    else
+    {
+        msgbox(format("Watering flowers and plants feels so nice! It's good to treat the planet well."))
+        closemessage
+    }
+    release
+    end
+}
+script BronzeFields_South_EventScript_NPC_Girl1_HasFlabebe
+{
+    speakername("Flower Girl")
+    msgbox(format("That sweet aroma... you must have a Flabébé in your party!\p That makes me so happy, I'll give you this!"))
+    closemessage
+    giveitem(ITEM_WAILMER_PAIL)
+    speakername("Flower Girl")
+    msgbox(format("The Wailmer Pail can be used to water Berries you grow! Isn't that sweet?"))
+    closemessage
+    setflag(FLAG_GOT_WAILMER_PAIL)
+    release
+    end
+}
+
+script BronzeFields_South_EventScript_NPC_Man1
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("Different parts of Ilios have different climates! It's warm up here, but if you go south, the trees have red and orange leaves."))
+    closemessage
+    release
+    end
+}
+
+script BronzeFields_South_EventScript_Trainer_BronzeFields_Wyatt
+{
+    trainerbattle_single(TRAINER_WYATT_BRONZEFIELDS, BronzeFields_South_Text_Trainer_BronzePass_WyattIntro, BronzeFields_South_Text_Trainer_BronzePass_WyattDefeat)
+    speakername("Wyatt")
+    msgbox(format("Pokémon and people work together in these farms. We help each other out that way."))
+    closemessage
+    release
+    end
+}
+text BronzeFields_South_Text_Trainer_BronzePass_WyattIntro
+{
+    format("My Poliwag helps water my crops. I bet it can win against your Pokémon!")
+}
+text BronzeFields_South_Text_Trainer_BronzePass_WyattDefeat
+{
+    format("Poliwag, no! Who'll water my crops now?")
+}
+
+script BronzeFields_South_EventScript_Trainer_BronzeFields_Milon
+{
+    trainerbattle_single(TRAINER_MILON_BRONZEFIELDS, BronzeFields_South_Text_Trainer_BronzePass_MilonIntro, BronzeFields_South_Text_Trainer_BronzePass_MilonDefeat)
+    speakername("Milon")
+    msgbox(format("I hear there are two things called Shiny Charms somewhere in Ilios. My friends say they make Shiny Pokémon show up more often!"))
+    closemessage
+    release
+    end
+}
+text BronzeFields_South_Text_Trainer_BronzePass_MilonIntro
+{
+    format("I'm looking for Shiny Pokémon! Have you found any?")
+}
+text BronzeFields_South_Text_Trainer_BronzePass_MilonDefeat
+{
+    format("I thought my Grubbin was Shiny, but it was just the electricity around it.")
+}
+
+script BronzeFields_South_EventScript_Trainer_BronzeFields_Kall
+{
+    trainerbattle_single(TRAINER_KALL_BRONZEFIELDS, BronzeFields_South_Text_Trainer_BronzePass_KallIntro, BronzeFields_South_Text_Trainer_BronzePass_KallDefeat)
+    speakername("Kall")
+    msgbox(format("Not many people stay in Jusmail Town. Usually, folks just pass through getting to Acrisia City."))
+    closemessage
+    release
+    end
+}
+text BronzeFields_South_Text_Trainer_BronzePass_KallIntro
+{
+    format("My Pokémon helps me gather firewood around here. Wanna battle?")
+}
+text BronzeFields_South_Text_Trainer_BronzePass_KallDefeat
+{
+    format("Aw, man! My Pokémon!")
+}
+
+script BronzeFields_South_EventScript_Trainer_BronzeFields_Therson
+{
+    trainerbattle_single(TRAINER_THERSON_BRONZEFIELDS, BronzeFields_South_Text_Trainer_BronzePass_ThersonIntro, BronzeFields_South_Text_Trainer_BronzePass_ThersonDefeat)
+    speakername("Therson")
+    msgbox(format("We grow all sorts of things in these fields. The soil is the best in Ilios.\p That's what I tell the customers, anyway! Bwahaha!"))
+    closemessage
+    release
+    end
+}
+text BronzeFields_South_Text_Trainer_BronzePass_ThersonIntro
+{
+    format("Draggin' around these carts gets pretty borin'. There's only one thing to fix that... a battle!")
+}
+text BronzeFields_South_Text_Trainer_BronzePass_ThersonDefeat
+{
+    format("Nothin' like a Pokémon battle to get excited!")
+}

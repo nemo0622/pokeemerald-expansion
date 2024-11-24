@@ -98,8 +98,8 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
-#define FLAG_UNUSED_0x055                    0x55  // Unused Flag
+#define FLAG_TERA_ORB_CHARGED                0x54  // Linked to B_FLAG_TERA_ORB_CHARGED
+#define FLAG_TERA_ORB_CHARGED_NO_COST        0x55  // Linked to B_FLAG_TERA_ORB_NO_COST, unlocked in postgame?
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57
@@ -1231,8 +1231,8 @@
 #define FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL                      0x49C // Got wishing stars from girl in Jusmail
 #define FLAG_GOT_EVIOLITE_ACRISIA_CITY                              0x49D // Got Eviolite from Pokéfan Lady in Acrisia
 #define FLAG_SHOWN_ACRISIA_HEALSPOT                                 0x49E // Shown healing by Rania
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
+#define FLAG_UNLOCKED_TERASTALLIZATION                              0x49F // Used to indicate to certain menus that tera is unlocked, and to signal that tera unlock event happened
+#define FLAG_GOT_WAILMER_PAIL                                       0x4A0 // Set when Flabebe is shown to girl in BronzeFields_South
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag

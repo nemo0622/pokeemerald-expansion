@@ -559,3 +559,4 @@ gSpecials::
 	def_special GetCaughtMon
 	def_special SetSeenMon
 	def_special SetCaughtMon
+	def_special CheckPartyForMon

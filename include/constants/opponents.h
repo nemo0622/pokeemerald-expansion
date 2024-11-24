@@ -5,17 +5,17 @@
 
 #define TRAINER_NONE                          0
 #define TRAINER_BRONZE_PASS_KLEFTIS_GRUNT     1 // kleftis grunt
-#define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
-#define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
-#define TRAINER_GRUNT_AQUA_HIDEOUT_3          4
-#define TRAINER_GRUNT_AQUA_HIDEOUT_4          5
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8
-#define TRAINER_GABRIELLE_1                   9
-#define TRAINER_GRUNT_PETALBURG_WOODS        10
-#define TRAINER_MARCEL                       11
-#define TRAINER_ALBERTO                      12
+#define TRAINER_EMERICK_BRONZEFIELDS          2
+#define TRAINER_JOSEPH_BRONZEFIELDS          3
+#define TRAINER_WYATT_BRONZEFIELDS          4
+#define TRAINER_MILON_BRONZEFIELDS          5
+#define TRAINER_KALL_BRONZEFIELDS       6
+#define TRAINER_THERSON_BRONZEFIELDS       7
+#define TRAINER_LEADER_DEO       8
+#define TRAINER_JUSMAILGYM_KARI                   9
+#define TRAINER_JUSMAILGYM_IASON        10
+#define TRAINER_JUSMAILGYM_BRYCE                       11
+#define TRAINER_JUSMAILGYM_ADEL                      12
 #define TRAINER_ED                           13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
 #define TRAINER_DECLAN                       15

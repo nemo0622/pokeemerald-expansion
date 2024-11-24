@@ -234,3 +234,6 @@ const u16 gMetatileAttributes_PortPello[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_ChampionsPeak[] = INCBIN_U16("data/tilesets/secondary/champions_peak/metatiles.bin");
 const u16 gMetatileAttributes_ChampionsPeak[] = INCBIN_U16("data/tilesets/secondary/champions_peak/metatile_attributes.bin");
+
+const u16 gMetatiles_JusmailGym[] = INCBIN_U16("data/tilesets/secondary/jusmail_gym/metatiles.bin");
+const u16 gMetatileAttributes_JusmailGym[] = INCBIN_U16("data/tilesets/secondary/jusmail_gym/metatile_attributes.bin");

@@ -1640,3 +1640,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/AcrisiaCity_House5/scripts.inc"
 
 	.include "data/maps/SofosCity_GameCorner/scripts.inc"
+
+	.include "data/maps/JusmailTown_Gym/scripts.inc"

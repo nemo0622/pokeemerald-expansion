@@ -455,7 +455,7 @@ script AcrisiaCity_EventScript_ProfessorElia
     {
         goto(AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck)
     }
-    elif(var(VAR_INTRO_STATE) == 4) // got Pokédex, sent to Jusmail Town to get 1st badge
+    elif(var(VAR_INTRO_STATE) == 3 || var(VAR_INTRO_STATE) == 4) // got Pokédex, sent to Jusmail Town to get 1st badge
     {
         goto(AcrisiaCity_University_EventScript_EliaCheckBadgeOne)
     }

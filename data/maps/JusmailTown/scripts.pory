@@ -9,6 +9,66 @@ script JusmailTown_Sign_GymSign
     end
 }
 
+script JusmailTown_EventScript_NPC_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("Jusmail Town is a really small community, but I love it like this. We live alongside nature here, not in conflict with it."))
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_EventScript_NPC_Boy
+{
+    lock
+    faceplayer
+    speakername("Boy")
+    msgbox(format("Flying-type Pokémon are good against Deo's Pokémon, Bug and Grass-type Pokémon.\p I hear most Gym Leaders have a Pokémon that is strong against whatever the Leader is weak against. Sounds like they're tough fights!"))
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_EventScript_NPC_Farmer
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("Bleugh, lots of bugs around here... they're cute, but their little legs scare me!"))
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_EventScript_MarketMan
+{
+    lock
+    faceplayer
+    speakername("Market Man")
+    message(format("Welcome to the Jusmail Town Farmer's Market? How can I help you?"))
+    waitmessage
+    pokemart(JusmailTown_Mart)
+    speakername("Market Man")
+    msgbox(format("Make sure to come back soon!"))
+    closemessage
+    release
+    end
+}
+
+mart JusmailTown_Mart
+{
+    ITEM_POKE_BALL
+    ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+}
+
+// ------------------------------------------------------------------------------------------------
+// ----------------------------------- WISHING WELL CODE ------------------------------------------
+// ------------------------------------------------------------------------------------------------
+
 script JusmailTown_EventScript_WishingWell
 {
 

@@ -1,0 +1,172 @@
+mapscripts JusmailTown_Gym_MapScripts {}
+
+script JusmailTown_Gym_EventScript_GymStatue
+{
+    lock
+    if(flag(FLAG_BADGE01_GET))
+    {
+        msgbox(format("Jusmail Town Pokémon Gym\p Recent Victors: {PLAYER}"))
+    }
+    else
+    {
+        msgbox(format("Jusmail Town Pokémon Gym"))
+    }
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_Gym_EventScript_GymMan
+{
+    lock
+    faceplayer
+    speakername("Gym Guide")
+    if(flag(FLAG_BADGE01_GET))
+    {
+        msgbox(format("Incredible! You're a rising star! Keep it up, future Champ!"))
+    }
+    else
+    {
+        msgbox(format("Welcome to the Jusmail Town Gym!\p The Gym Leader, Deo, designed this building to be a home for her Grass and Bug-type Pokémon. It's becoming a bit of a maze!"))
+    }
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_Gym_EventScript_Skiddo
+{
+    lock
+    faceplayer
+    speakername("Skiddo")
+    playmoncry(SPECIES_SKIDDO, CRY_MODE_NORMAL)
+    msgbox("Bwaa-ah!")
+    waitmoncry
+    closemessage
+    msgbox(format("Skiddo is excited to be challenged!"))
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_Gym_EventScript_Deo
+{
+    trainerbattle_single(TRAINER_LEADER_DEO, JusmailTown_Gym_Text_DeoIntro, JusmailTown_Gym_Text_DeoDefeat, JusmailTown_Gym_EventScript_Deo_DefeatedScript, NO_MUSIC)
+    speakername("Deo")
+    msgbox(format("Skiddo and I are most comfortable here in Jusmail Town. The world can be scary, so it's best to find somewhere you love and put down your roots."))
+    closemessage
+    release
+    end
+}
+text JusmailTown_Gym_Text_DeoIntro
+{
+    format("Welcome, welcome! I'm Deo. I see this is your first Gym Battle, hm? Wonderful!\p My Pokémon are all caught and raised on farms around the Ilios Region. Think you can beat them?")
+}
+text JusmailTown_Gym_Text_DeoDefeat
+{
+    format("Ah, that natural talent! You've earned your first Gym Badge!")
+}
+// Script called when you defeat the gym leader!
+script JusmailTown_Gym_EventScript_Deo_DefeatedScript
+{
+    setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
+    message(format("{PLAYER} received the Harvest Badge from Deo."))
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+
+    // Set gym completion flags
+    setflag(FLAG_BADGE01_GET)
+    // Set all trainers in Gym as defeated
+    settrainerflag(TRAINER_JUSMAILGYM_KARI)
+    settrainerflag(TRAINER_JUSMAILGYM_IASON)
+    settrainerflag(TRAINER_JUSMAILGYM_BRYCE)
+    settrainerflag(TRAINER_JUSMAILGYM_ADEL)
+
+    // Explain badge
+    speakername("Deo")
+    msgbox(format("The Harvest Badge is a sign of an up-and-coming trainer. You've proven that you can form a close bond with your Pokémon. You'll also be able to use the {COLOR GREEN}HM Cut{COLOR DARK_GRAY} outside of battle.\p Ah, how forgetful of me! Take this before you go!"))
+    closemessage
+
+    // Give TM reward and explain, plus end dialogue
+    giveitem(ITEM_TM_BULLET_SEED)
+    speakername("Deo")
+    msgbox(format("That TM contains the move {COLOR GREEN}Bullet Seed{COLOR DARK_GRAY}! That's a move my Pokémon practiced by shooting seeds from the farms around here.\p You're an Acrisia University researcher, yes? You should {COLOR GREEN}return to the University{COLOR DARK_GRAY} and {COLOR GREEN}speak to the Professor{COLOR DARK_GRAY} about what to do next."))
+    closemessage
+
+    release
+    end
+}
+
+// --------------------------------------------------------------------------------------------------
+
+script JusmailTown_Gym_EventScript_Trainer_JusmailGym_Kari
+{
+    trainerbattle_single(TRAINER_JUSMAILGYM_KARI, JusmailTown_Gym_Text_Trainer_JusmailGym_KariIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_KariDefeat)
+    speakername("Kari")
+    msgbox(format("The fruits on these trees are so yummy!"))
+    closemessage
+    release
+    end
+}
+text JusmailTown_Gym_Text_Trainer_JusmailGym_KariIntro
+{
+    format("I like it better in here than outside. It's temperature-controlled inside!")
+}
+text JusmailTown_Gym_Text_Trainer_JusmailGym_KariDefeat
+{
+    format("Guess I should've trained outside more...")
+}
+
+script JusmailTown_Gym_EventScript_Trainer_JusmailGym_Iason
+{
+    trainerbattle_single(TRAINER_JUSMAILGYM_IASON, JusmailTown_Gym_Text_Trainer_JusmailGym_IasonIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_IasonDefeat)
+    speakername("Iason")
+    msgbox(format("My Pokémon help maintain the plants in this building."))
+    closemessage
+    release
+    end
+}
+text JusmailTown_Gym_Text_Trainer_JusmailGym_IasonIntro
+{
+    format("I planted some of these trees. Try the fruit!")
+}
+text JusmailTown_Gym_Text_Trainer_JusmailGym_IasonDefeat
+{
+    format("You might be able to beat Deo!")
+}
+
+script JusmailTown_Gym_EventScript_Trainer_JusmailGym_Bryce
+{
+    trainerbattle_single(TRAINER_JUSMAILGYM_BRYCE, JusmailTown_Gym_Text_Trainer_JusmailGym_BryceIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_BryceDefeat)
+    speakername("Bryce")
+    msgbox(format("Looking for bugs is making me tired..."))
+    closemessage
+    release
+    end
+}
+text JusmailTown_Gym_Text_Trainer_JusmailGym_BryceIntro
+{
+    format("There are some bugs hiding in the trees around here... come on out, little bugs!")
+}
+text JusmailTown_Gym_Text_Trainer_JusmailGym_BryceDefeat
+{
+    format("Rats! You scared all the bugs away.")
+}
+
+script JusmailTown_Gym_EventScript_Trainer_JusmailGym_Adel
+{
+    trainerbattle_single(TRAINER_JUSMAILGYM_ADEL, JusmailTown_Gym_Text_Trainer_JusmailGym_AdelIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_AdelDefeat)
+    speakername("Adel")
+    msgbox(format("I guess using Grass-type Pokémon in the Grass-type Gym made me a little predictable."))
+    closemessage
+    release
+    end
+}
+text JusmailTown_Gym_Text_Trainer_JusmailGym_AdelIntro
+{
+    format("I'm training to take on the Pokémon Gym challenge. Help me get stronger!")
+}
+text JusmailTown_Gym_Text_Trainer_JusmailGym_AdelDefeat
+{
+    format("I'll keep your strategies in mind.")
+}

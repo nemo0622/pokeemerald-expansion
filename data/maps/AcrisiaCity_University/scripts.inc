@@ -823,6 +823,9 @@ AcrisiaCity_EventScript_ProfessorElia::
 	compare VAR_INTRO_STATE, 2
 	goto_if_eq AcrisiaCity_EventScript_ProfessorElia_2
 # 458 "data/maps/AcrisiaCity_University/scripts.pory"
+	compare VAR_INTRO_STATE, 3
+	goto_if_eq AcrisiaCity_EventScript_ProfessorElia_3
+# 458 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_INTRO_STATE, 4
 	goto_if_eq AcrisiaCity_EventScript_ProfessorElia_3
 # 462 "data/maps/AcrisiaCity_University/scripts.pory"
