@@ -32,22 +32,19 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 
 ## Future Development Plans
 
+TODO 11/30 - 12/1:
+- Implement Girlypop cheat codes
+    - Use Phaun's tierlists as guide! all girlypops and mothers
+- Update Wishing Well to fit new dex
+
 - ADD A FEW NEW POKéMON AND ABILITIES:
     - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
         - Scurry: Signature ability of Crocky, increases Evasiveness when sent out
         - Improve Dancer ability to boost Dance move power? really just for oricorio
             - Also add a new move with EFFECT_REVELATION_DANCE, just weaker and learned at level 20
-    - New Pokémon
-        - Crocky and Kotora (commissioned sprites)
-        - Calyrex + Forms Fakemon
-            - Spectrier and Glastrier Ilian Forms - single stage rare Pokémon found in midgame
-                - Spectrier - pure Fire type horse
-                - Glastrier - pure Ice type horse
-            - Calyrex Ilian form based on Headless Horseman from Ichabod Crane (Ghost type)
-            - Calyrex Autumn Rider Form - Spectrier + Calyrex, Fire/Ghost type (already made sprites!)
-            - Calyrex Winter Rider Form - Glastrier + Calyrex, Ice/Ghost type
-        - A few other beta Pokémon (Ice type Werewolves) (https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Pok%C3%A9mon)
-        - Commission Thylacine Pokémon? Ghost/Normal type or Ghost/Rock type?
+    - New "Zygarde Cell" Pokémon
+        - Fully independent Zygarde Cell Pokémon, given by NPC
+        - Evolves into Zygarde, which changes form via Zygarde Cube item
         
 - World Map Development Notes:
     - Consider Berry Tree works in map, including maybe implementing mulch, weeds, etc
@@ -72,6 +69,10 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
             - ALSO: change Pinball egg shop in Sofos City to a Tera Shard distributor (1 random shard per point)
         - DexNav unlock (after 2nd gym?)
         - Berry plant locations
+        - Fishing Rod locations
+        - Safari Zone?
+        - Dive locations
+        - Espathra (bike) give location
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting

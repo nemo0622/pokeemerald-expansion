@@ -65,6 +65,65 @@ mart JusmailTown_Mart
     ITEM_PARALYZE_HEAL
 }
 
+script JusmailTown_EventScript_RaniaEventTrigger
+{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    goto(JusmailTown_EventScript_RaniaEvent)
+    end
+}
+
+script JusmailTown_EventScript_RaniaEvent
+{
+    lockall
+    applymovement(11, Common_Movement_FacePlayer)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Yia sou, {PLAYER}! I see you've won your first Gym Badge!\p Since you left, Niko and I have decided to do some more field research ourselves, which means training up our own Pokémon teams! What do you say, wanna battle?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0) // no
+    {
+        speakername("Rania")
+        msgbox(format("Need more time to train? I get you. Let me know when you wanna battle!"))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+        waitmovement(0)
+    }
+    else
+    {
+        speakername("Rania")
+        msgbox(format("Alright, here I come!"))
+        // TRAINER BATTLE HERE
+        trainerbattle_no_intro(TRAINER_JUSMAIL_RANIA, JusmailTown_Text_RaniaDefeated)
+
+        // post-battle script
+        speakername("Rania")
+        msgbox(format("Phew, what a battle! Even against a strong type trio like mine, you still held your own. Looks like that Gym Badge really means something!\p Ah, right, another thing. Professor Elia sent me to give you this HM. Here!"))
+        closemessage
+        giveitem(ITEM_HM_CUT)
+        speakername("Rania")
+        msgbox(format("With that HM, you can {COLOR GREEN}cut down small trees{COLOR DARK_GRAY} that might be blocking your path.\p You heading {COLOR GREEN}back to the University{COLOR DARK_GRAY}? I'm doing the same. Meet you there!"))
+        closemessage
+
+        // Hide Rania and disable trigger
+        setflag(FLAG_HIDE_RANIA_JUSMAIL)
+        setvar(VAR_RANIA_STATE, 1)
+        setvar(VAR_NIKO_STATE, 1)
+        fadescreen(FADE_TO_BLACK)
+        delay(30)
+        removeobject(11)
+        fadescreen(FADE_FROM_BLACK)
+        delay(20)
+    }
+    releaseall
+    end
+}
+
+text JusmailTown_Text_RaniaDefeated
+{
+    format("Aw, I thought I balanced my team perfectly!")
+}
+
 // ------------------------------------------------------------------------------------------------
 // ----------------------------------- WISHING WELL CODE ------------------------------------------
 // ------------------------------------------------------------------------------------------------
@@ -338,13 +397,15 @@ script JusmailTown_EventScript_LittleGirlWithWishingStar
 
 	lock
 	faceplayer
+    speakername("Little Girl")
 	if(!flag(FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL))
 	{
 		msgbox(format("See that broken well?\N It's actually a Wishing Well, and it grants wishes! Really!"))
 		closemessage
+        speakername("Little Girl")
 		msgbox(format("Sometimes, my friends and me throw Wishing Stars down the Wishing Well! Here's a few for you!"))
 		closemessage
-		giveitem(ITEM_WISHING_STAR, 5)
+		giveitem(ITEM_WISHING_STAR, 3)
 		setflag(FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL)
 	}
 	else

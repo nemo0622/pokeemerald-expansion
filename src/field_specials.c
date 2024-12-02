@@ -4291,13 +4291,13 @@ void GetMysteryGiftFeedback(void)
     // The codes.
     static const u8 sText_CodeRareCandies[]    = _("9RARECANDY");
     static const u8 sText_CodeMasterBalls[]   = _("MASTERBALL");
-    static const u8 sText_CodeSpheal[]   = _("ILOVSPHEAL");
-    static const u8 sText_CodeAipom[]   = _("ILOVEAIPOM");
-    static const u8 sText_CodeKantoStarters[]   = _("ILOVEKANTO");
-    static const u8 sText_CodeJohtoStarters[]  = _("ILOVEJOHTO");
-    static const u8 sText_CodeHoennStarters[]     = _("ILOVEHOENN");
-    static const u8 sText_CodeApplin[] = _("ILOVEAPPLE");
-    static const u8 sText_CodeTinkatink[] = _("ILOVETINKA");
+    static const u8 sText_CodeGirlypopStage1[]   = _("GIRLYPOP01"); // girlypop code, only stage 1 mons
+    static const u8 sText_CodeAipom[]   = _("GIRLYPOP!!"); // girlypop code, all stages
+    static const u8 sText_CodeAlolaStarters[]   = _("ILOVEALOLA");
+    static const u8 sText_CodeKalosStarters[]  = _("ILOVEKALOS");
+    static const u8 sText_CodeUnovaStarters[]     = _("IWANTMONKE");
+    static const u8 sText_CodeUltraBeasts[] = _("ULTRABEAST");
+    static const u8 sText_CodeNemosFavs[] = _("NEMOS FAVE");
     static const u8 sText_CodeJustShowMe[] = _("JUSTSHOWME");
     static const u8 sText_CodeWishingStars[] = _("WISHINGSTR");
     static const u8 sText_CodeNuggets[] = _("GIMMENUGS!");
@@ -4328,25 +4328,25 @@ void GetMysteryGiftFeedback(void)
     else if (!StringCompare(gStringVar2, sText_CodeMasterBalls))
         gSpecialVar_Result = 2;
     // Code 3
-    else if (!StringCompare(gStringVar2, sText_CodeSpheal))
+    else if (!StringCompare(gStringVar2, sText_CodeGirlypopStage1))
         gSpecialVar_Result = 3;
     // Code 4
     else if (!StringCompare(gStringVar2, sText_CodeAipom))
         gSpecialVar_Result = 4;
     // Code 5
-    else if (!StringCompare(gStringVar2, sText_CodeKantoStarters))
+    else if (!StringCompare(gStringVar2, sText_CodeAlolaStarters))
         gSpecialVar_Result = 5;
     // Code 6
-    else if (!StringCompare(gStringVar2, sText_CodeJohtoStarters))
+    else if (!StringCompare(gStringVar2, sText_CodeKalosStarters))
         gSpecialVar_Result = 6;
     // Code 7
-    else if (!StringCompare(gStringVar2, sText_CodeHoennStarters))
+    else if (!StringCompare(gStringVar2, sText_CodeUnovaStarters))
         gSpecialVar_Result = 7;
     // Code 8
-    else if (!StringCompare(gStringVar2, sText_CodeApplin))
+    else if (!StringCompare(gStringVar2, sText_CodeUltraBeasts))
         gSpecialVar_Result = 8;
     // Code 9
-    else if (!StringCompare(gStringVar2, sText_CodeTinkatink))
+    else if (!StringCompare(gStringVar2, sText_CodeNemosFavs))
         gSpecialVar_Result = 9;
     // Code 10
     else if (!StringCompare(gStringVar2, sText_CodeJustShowMe))

@@ -250,9 +250,29 @@ script AcrisiaCity_University_EventScript_Niko
 {
     lock
     faceplayer
-    speakername("Niko")
-    msgbox(format("Come to check out my research, {PLAYER}? I'm observing the Duskull to see how it behaves.\p There are old folktales of Ghost-type Pokémon being evil, but this Duskull seems totally friendly!"))
-    closemessage
+    if(var(VAR_NIKO_STATE) == 0) // adventure starting
+    {
+        speakername("Niko")
+        msgbox(format("Come to check out my research, {PLAYER}? I'm observing the Duskull to see how it behaves.\p There are old folktales of Ghost-type Pokémon being evil, but this Duskull seems totally friendly!"))
+        closemessage
+    }
+    elif(var(VAR_NIKO_STATE) == 1) // beat Rania in Jusmail Town
+    {
+        speakername("Niko")
+        msgbox(format("Yia sou, bud! I hear you beat Rania in Jusmail Town. After all the braggin' she did about her team, fwahaha!\p Ahem, hm. Getting the Harvest Badge is a big step for trainers in Ilios! Rania and I are thinking about doing it ourselves. Here's a little congratulatory gift from me!"))
+        closemessage
+        giveitem(ITEM_NEST_BALL, 3)
+        speakername("Niko")
+        msgbox(format("Those Nest Balls are good for catching young, weak Pokémon. My studies say the inside of Nest Balls remind Pokémon of their home. Isn't that cute?\p {COLOR GREEN}Check back in{COLOR DARK_GRAY} as you {COLOR GREEN}defeat Pokémon Gyms{COLOR DARK_GRAY}, and I'll give you little gifts and tips."))
+        closemessage
+        setvar(VAR_NIKO_STATE, 2)
+    }
+    elif(var(VAR_NIKO_STATE) == 2) // Gym badge 1, beat rania, got Nest Balls
+    {
+        speakername("Niko")
+        msgbox(format("Give those Nest Balls a shot! They work best with low-level Pokémon.\p {COLOR GREEN}Check back in{COLOR DARK_GRAY} as you {COLOR GREEN}defeat Pokémon Gyms{COLOR DARK_GRAY}, and I'll give you little gifts and tips."))
+        closemessage
+    }
     release
     end
 }
@@ -261,16 +281,29 @@ script AcrisiaCity_University_EventScript_Rania
 {
     lock
     faceplayer
-    speakername("Rania")
-    msgbox(format("Yia sou, {PLAYER}! You doin' well?\p Me? I'm stuck in here doing data analysis. Fieldwork information needs to be sorted into spreadsheets and analyzed, that's where I come in! It's sure not the most exciting part, but I find out some cool stuff."))
-    closemessage
+    if(var(VAR_RANIA_STATE) == 0) // adventure starting
+    {
+        speakername("Rania")
+        msgbox(format("Yia sou, {PLAYER}! You doin' well?\p I help out with Pokédex data analysis. Now that you're here, there's gonna be a lot more data. Come {COLOR GREEN}speak with me{COLOR DARK_GRAY} as you {COLOR GREEN}defeat Pokémon Gyms{COLOR DARK_GRAY}, I'll give you some helpful tips and items!"))
+        closemessage
+    }
+    elif(var(VAR_RANIA_STATE) == 1) // beat her in Jusmail Town
+    {
+        speakername("Rania")
+        msgbox(format("Here comes {PLAYER}, the new Champ! ...Ehehe, just kidding! My Pokémon are still calming down from that battle in Jusmail Town, what a fight!"))
+        closemessage
+    }
     release
     end
 }
 
+
+
 // -------------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------------
+
+
 
 script AcrisiaCity_University_EventScript_RaniaShowsHealspot
 {
@@ -433,8 +466,10 @@ script AcrisiaCity_University_HealParty
     speakername("Computer")
     msgbox(format("-bzzt bzzt-\l Healing Pokémon..."))
     closemessage
+    playfanfare(MUS_LEVEL_UP)
     special(HealPlayerParty)
     delay(120)
+    waitfanfare
     speakername("Computer")
     msgbox(format("Pokémon are healthy and ready to go."))
     closemessage
@@ -574,6 +609,7 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
 
             // Set other vars and stuff
             setvar(VAR_INTRO_STATE, 3) // enables Niko's Pokéball event
+            setflag(FLAG_HIDE_RANIA_JUSMAIL) // hides Rania for event in Jusmail
         }
         else
         {
@@ -606,6 +642,7 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeOne
         msgbox(format("That's an Ability Capsule. It can change the Ability of a Pokémon, which can make it totally different in battle!\p Look, I know I've been sending you back and forth a bunch, but I think I've got a good idea. You should head {COLOR GREEN}west{COLOR DARK_GRAY} from here, up into the {COLOR GREEN}Acrisia Mountains{COLOR DARK_GRAY}. There's a cave nearby called the {COLOR GREEN}Discus Forge{COLOR DARK_GRAY}, which the Ilios Region considers a Gym. If you can win, I have something even better for you!"))
         closemessage
         setvar(VAR_INTRO_STATE, 5)
+        setflag(FLAG_HIDE_RANIA_JUSMAIL) // failsafe - incase player somehow skipped rania in Jusmail
     }
     release
     end

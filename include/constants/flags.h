@@ -1233,7 +1233,7 @@
 #define FLAG_SHOWN_ACRISIA_HEALSPOT                                 0x49E // Shown healing by Rania
 #define FLAG_UNLOCKED_TERASTALLIZATION                              0x49F // Used to indicate to certain menus that tera is unlocked, and to signal that tera unlock event happened
 #define FLAG_GOT_WAILMER_PAIL                                       0x4A0 // Set when Flabebe is shown to girl in BronzeFields_South
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
+#define FLAG_HIDE_RANIA_JUSMAIL                                     0x4A1 // Enabled by default, shows Rania for event in Jusmail when cleared
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
 #define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag

@@ -149,6 +149,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "JusmailTown_EventScript_LittleGirlWithWishingStar",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RANIA",
+      "x": 14,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "JusmailTown_EventScript_RaniaEvent",
+      "flag": "FLAG_HIDE_RANIA_JUSMAIL"
     }
   ],
   "warp_events": [
@@ -182,7 +195,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 9,
+      "elevation": 0,
+      "var": "FLAG_HIDE_RANIA_JUSMAIL",
+      "var_value": "0",
+      "script": "JusmailTown_EventScript_RaniaEventTrigger"
+    }
   ],
   "bg_events": [
     {

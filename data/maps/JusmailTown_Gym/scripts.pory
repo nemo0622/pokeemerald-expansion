@@ -81,6 +81,8 @@ script JusmailTown_Gym_EventScript_Deo_DefeatedScript
     settrainerflag(TRAINER_JUSMAILGYM_IASON)
     settrainerflag(TRAINER_JUSMAILGYM_BRYCE)
     settrainerflag(TRAINER_JUSMAILGYM_ADEL)
+    // Toggle event flag in Jusmail
+    clearflag(FLAG_HIDE_RANIA_JUSMAIL)
 
     // Explain badge
     speakername("Deo")
