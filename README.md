@@ -32,11 +32,6 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 
 ## Future Development Plans
 
-TODO 11/30 - 12/1:
-- Implement Girlypop cheat codes
-    - Use Phaun's tierlists as guide! all girlypops and mothers
-- Update Wishing Well to fit new dex
-
 - ADD A FEW NEW POKéMON AND ABILITIES:
     - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
         - Scurry: Signature ability of Crocky, increases Evasiveness when sent out
@@ -45,13 +40,6 @@ TODO 11/30 - 12/1:
     - New "Zygarde Cell" Pokémon
         - Fully independent Zygarde Cell Pokémon, given by NPC
         - Evolves into Zygarde, which changes form via Zygarde Cube item
-        
-- World Map Development Notes:
-    - Consider Berry Tree works in map, including maybe implementing mulch, weeds, etc
-        - Could be cool and interesting! Especially in player "home base" area
-
-- Battle Gimmick: Terastalization if implemented!
-    - Accessible for all Pokémon, relatively understandable, I think it's fun!
 
 - EVENTS AND STUFF:
     - Use in-game day count tracker to have events in different parts of the region every X number of days
@@ -69,15 +57,20 @@ TODO 11/30 - 12/1:
             - ALSO: change Pinball egg shop in Sofos City to a Tera Shard distributor (1 random shard per point)
         - DexNav unlock (after 2nd gym?)
         - Berry plant locations
+            - Consider things like mulch and hybrids?
+            - Create Flower Shop area also selling nature mints
         - Fishing Rod locations
         - Safari Zone?
         - Dive locations
         - Espathra (bike) give location
 
+- SUNSET PREVIEW PLANS
+    - Preview 01 (12/4/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.
+    - Preview 02 (12/11/24) - Pokémon Sunset Starters Reveal - shows starters + best overworld sprites for them
+    - Preview 03 (12/18/24) - Seaglass Feature Ports - shows Pinball, Pokémon type changes, and Wishing Well
+
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
-- When cycling stats, the "STATS" text is whited out
-- Stat coloration not shown in summary - likely related to the hacky solution to black text lol
 - Shallow water colors are fucked at night time, should just be replaced by sand for lazy solution
 
 ## Credits
