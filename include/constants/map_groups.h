@@ -443,6 +443,7 @@
 #define MAP_STYGIAN_CAVES_F1                         (109 | (24 << 8))
 #define MAP_STYGIAN_CAVES_BF1                        (110 | (24 << 8))
 #define MAP_JUSMAIL_TOWN_GYM                         (111 | (24 << 8))
+#define MAP_ACRISIA_CAVES_BF1                        (112 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

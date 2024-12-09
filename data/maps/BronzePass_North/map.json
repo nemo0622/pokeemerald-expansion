@@ -163,6 +163,21 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 15,
+      "y": 38,
+      "elevation": 3,
+      "item": "ITEM_STARDUST",
+      "flag": "FLAG_HIDDEN_ITEM_BRONZE_PASS_NORTH_STARDUST"
+    },
+    {
+      "type": "hidden_item",
+      "x": 18,
+      "y": 40,
+      "elevation": 3,
+      "item": "ITEM_ULTRA_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_BRONZE_PASS_NORTH_ULTRA_BALL"
+    }
   ]
 }

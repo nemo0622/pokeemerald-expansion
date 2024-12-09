@@ -193,25 +193,12 @@ script AcrisiaCity_EventScript_RailMan
     end
 }
 
-script AcrisiaCity_EventScript_Spearow
-{
-    lock
-    faceplayer
-    speakername("Spearow")
-    playmoncry(SPECIES_SPEAROW, CRY_MODE_NORMAL)
-    msgbox("Craah!")
-    waitmoncry
-    closemessage
-    release
-    end
-}
-
 script AcrisiaCity_EventScript_Growlithe
 {
     lock
     faceplayer
     speakername("Growlithe")
-    playmoncry(SPECIES_GROWLITHE, CRY_MODE_NORMAL)
+    playmoncry(SPECIES_GROWLITHE_HISUI, CRY_MODE_NORMAL)
     msgbox("Bwark bwark!")
     waitmoncry
     closemessage

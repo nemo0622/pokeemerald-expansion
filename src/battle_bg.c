@@ -804,6 +804,18 @@ void DrawMainBattleBackground(void)
     }
     else
     {
+
+        // MapSec-specific battle background force loading
+        u8 mapId;
+        mapId = GetCurrentRegionMapSectionId();
+        if(mapId == MAPSEC_ACRISIA_MOUNTAINS)
+        {
+            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].tileset, (void *)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            return;
+        }
+
         if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
         {
             u32 trainerClass = GetTrainerClassFromId(gTrainerBattleOpponent_A);

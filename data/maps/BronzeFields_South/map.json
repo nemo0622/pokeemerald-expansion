@@ -159,6 +159,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 27,
+      "y": 6,
+      "elevation": 3,
+      "item": "ITEM_RED_NECTAR",
+      "flag": "FLAG_HIDDEN_ITEM_BRONZE_FIELD_SOUTH_RED_NECTAR"
+    }
   ]
 }

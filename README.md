@@ -32,6 +32,13 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 
 ## Future Development Plans
 
+- port seaglass learnsets and statsets
+- give umbreon foul play for cecilily
+- POKEMON TO ADD TO SHEET
+    - Spiky eared pichu (+ evolutionary line), Absol (Dark/Fairy), Drilbur + Excadrill, Falinks, Golisopod, Tauros + Variants, Wattrel & Kilowattrel
+- fully implement VAR_DIFFICULTY + place to change it in acrisia university
+- replace Ninja Boy class with something like Warrior Boy
+
 - ADD A FEW NEW POKéMON AND ABILITIES:
     - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
         - Scurry: Signature ability of Crocky, increases Evasiveness when sent out
@@ -65,9 +72,10 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
         - Espathra (bike) give location
 
 - SUNSET PREVIEW PLANS
-    - Preview 01 (12/4/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.
-    - Preview 02 (12/11/24) - Pokémon Sunset Starters Reveal - shows starters + best overworld sprites for them
-    - Preview 03 (12/18/24) - Seaglass Feature Ports - shows Pinball, Pokémon type changes, and Wishing Well
+    - Preview 01 (12/6/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.
+    - Preview 02 (12/??/24) - Pokémon Sunset Starters Reveal - shows starters + best overworld sprites for them
+    - Preview 03 (12/25/24) - Happy Holidays from Pokémon Sunset! Show pine forests and snowy areas
+    - Preview 04 (01/??/25) - Seaglass Feature Ports - shows Pinball, Pokémon type changes, and Wishing Well
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
@@ -91,24 +99,30 @@ Many, many talented developers and artists are responsible for making this proje
     - Pokémon Center, Mart, and Gym Buildings by TrainerDX
     - Some GBC-style default houses by TrainerDX
 - Pokémon Sprites:
-    - Most Generation 3 and 9 Pokémon sprites by [Egg](https://x.com/Egg3ggEgg) on Twitter
-    - Many Generation 3 and other Pokémon sprites by [Nuukiie](https://www.deviantart.com/nuukiie) on DeviantArt
-    - Many Generation 4 + some Gen 5 sprites from compilation by ESY on DeviantArt
-    - Most Gen 5 sprites by Pokekoks
-    - Gen 6 sprites from "WaH XY Dex" image hosted by Substitube's Discord
-    - Some Hisuian Pokémon sprites (Kleavor and Ursaluna) by Katten and dwg1109 on DeviantArt
-    - Generation 1-2 Pokémon and many UI sprites from Spriter's Resource GSC sprite sheets
-    - Spiky-ear Pichu sprite based on Pichu devamp by Matdemo159 on DeviantArt
-    - Rowlet front sprite by Matdemo159 on DeviantArt
-    - A few modified Gen 1-2 Pokémon sprites (Golduck, Aipom, Politoed) by Substitube
-    - Hydrapple line sprites and various other gen 2 style sprites (Charizard, Dudunsparce, Porygon line) by SageDeoxys on Twitter
-    - Alolan Sandshrew/Sandslash and Alolan Vulpix/Ninetales sprites by wittycrow on DeviantArt
-    - Samurott by Solo993
-    - Ribombee by Rojimenez from Spriter's Resource
-    - Cutiefly sprite by Supahsanti, from Substitube's public sprite resource
+    Numbers below match sprites on the official Pokémon Sunset Ilios Pokédex Image:
+    1. Sprite created/edited by Nemo622
+    2. By Matdemo159
+    3. By Supahsanti, from Substitube public resource
+    4. By MonsterHam
+    5. From Whack-a-Hack XY Dex
+    6. By SirWhibbles
+    7. By COMBOY
+    8. Official Pokémon GBC Sprite
+    9. By Nuukiie
+    10. By Egg3ggEgg
+    11. By Enderific
+    12. By Rojimenez
+    13. By SageDeoxys
+    14. From 8BIT Pokédex by sktndo, from Substitube public resource
+    15. By Substitube
+    16. From GBC Sprite compilation by ESY
+    17. By Pia Carrot
+    18. Edited by kesterhenrickpixels
+    19. By EeVeeEe1999
 - Overworld Sprites:
     - Many NPC sprites adapted from Pokémon Crystal
     - Some NPC sprites by Anima_nel on itch.io
+    - Some NPC sprites by kesterhenrickpixels on DeviantArt
     - Player sprites by Solo993
 - Overworld Pokémon Sprites:
     - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
@@ -132,20 +146,20 @@ Many, many talented developers and artists are responsible for making this proje
 REGION PLAN:
     - Start in Acrisia City, based on Greek city of Larissa
         - Location of Agrias University
-        - West: Acrisia Mountains up to Discus Mines
+        - West: Acrisia Mountains up to Acrisia Caves
     - Head south through Bronze Fields
     - Find Jusmail Town, a small farming town based on Lamia
         - Gym 1: Deo, based on Demeter
             - Grass and Bug types, gym centered around the harvest + agriculture
-            - Team: Ledyba, Bellsprout, and Skiddo (level 10-12)
+            - Team: 10-12
             - Rewards: Harvest Badge, unlocks use of Cut outside battle, TM Bullet Seed
     - South path blocked by Rock Smash - told to head back North to Acrisia City
-    - West of Acrisia is the Acrisia Mountains, leading up to Discus Mines
-        - Discus Mines is not much of a town, mostly just a hermit's workshop and a little infrastructure
+    - West of Acrisia is the Acrisia Mountains, leading up to Acrisia Caves
+        - Acrisia Caves is a system of caves, leading down to a dark cavern area
         - Gym 2: Mattaios, the Rock type gym leader
             - Based on Sisyphus, a hermit who is the last worker at this once prolific mine
-            - Team: Aron, Phanpy, Klawf (level 13-16)
-            - Unlocks Rock Smash outside battle
+            - Team: Level 17-19
+            - Reward: Gemstone Badge, unlocks Rock Smash outside battle, TM Rock Tomb
     - Continue south with Rock Smash through Jusmail Town and through the Wanderer's Woods
         - Wanderer's Woods filled with fallen logs, mushrooms, and overgrown plants
         - Many grass, bug, and dark/ghost types (murkrow, drowzee, capsakid, etc)
@@ -232,3 +246,7 @@ REGION PLAN:
         - New EV/IV editor opens shop in Sofos City
         - Areas with select Legendary Pokémon appear
             - These areas also have evolved forms of Pokémon, making Pokédex completion easier
+        - Post-game "FINAL BOSS" area unlocked on Kaptara Island
+            - Area resembles Minotaur Labyrinth
+            - Use "Interior_A" tiles in upper-left of sheet by Zaebucca Advenyure Inside 1.1
+            - Final boss using Tauros + Paldean variants

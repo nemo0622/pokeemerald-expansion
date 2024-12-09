@@ -51,7 +51,32 @@ script JusmailTown_Gym_EventScript_Skiddo
 
 script JusmailTown_Gym_EventScript_Deo
 {
+    lock
+    faceplayer
+    if(var(VAR_DIFFICULTY) == 0)
+    {
+        goto(JusmailTown_Gym_EventScript_Deo_NormalDifficulty)
+    }
+    else
+    {
+        goto(JusmailTown_Gym_EventScript_Deo_HardDifficulty)
+    }
+    release
+    end
+}
+
+script JusmailTown_Gym_EventScript_Deo_NormalDifficulty // called when on normal difficulty
+{
     trainerbattle_single(TRAINER_LEADER_DEO, JusmailTown_Gym_Text_DeoIntro, JusmailTown_Gym_Text_DeoDefeat, JusmailTown_Gym_EventScript_Deo_DefeatedScript, NO_MUSIC)
+    speakername("Deo")
+    msgbox(format("Skiddo and I are most comfortable here in Jusmail Town. The world can be scary, so it's best to find somewhere you love and put down your roots."))
+    closemessage
+    release
+    end
+}
+script JusmailTown_Gym_EventScript_Deo_HardDifficulty // called when on hard difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_DEO_HARD, JusmailTown_Gym_Text_DeoIntro, JusmailTown_Gym_Text_DeoDefeat, JusmailTown_Gym_EventScript_Deo_DefeatedScript, NO_MUSIC)
     speakername("Deo")
     msgbox(format("Skiddo and I are most comfortable here in Jusmail Town. The world can be scary, so it's best to find somewhere you love and put down your roots."))
     closemessage

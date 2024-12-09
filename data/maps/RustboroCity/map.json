@@ -161,7 +161,7 @@
       "flag": "FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
+      "graphics_id": "OBJ_EVENT_GFX_CONSTRUCTION_WORKER",
       "x": 13,
       "y": 34,
       "elevation": 3,

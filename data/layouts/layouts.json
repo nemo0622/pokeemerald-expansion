@@ -4504,7 +4504,7 @@
     {
       "id": "LAYOUT_ACRISIA_MOUNTAINS",
       "name": "AcrisiaMountains_Layout",
-      "width": 40,
+      "width": 44,
       "height": 46,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Acrisia",
@@ -4840,6 +4840,16 @@
       "secondary_tileset": "gTileset_JusmailGym",
       "border_filepath": "data/layouts/JusmailTown_Gym/border.bin",
       "blockdata_filepath": "data/layouts/JusmailTown_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACRISIA_CAVES_BF1",
+      "name": "AcrisiaCaves_BF1_Layout",
+      "width": 22,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_JusmailGym",
+      "border_filepath": "data/layouts/AcrisiaCaves_BF1/border.bin",
+      "blockdata_filepath": "data/layouts/AcrisiaCaves_BF1/map.bin"
     }
   ]
 }

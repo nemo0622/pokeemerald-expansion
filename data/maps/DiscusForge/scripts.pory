@@ -1,1 +1,55 @@
 mapscripts DiscusForge_MapScripts {}
+
+script AcrisiaCaves_F1_EventScript_Trainer_AcrisiaCaves_F1_Lana
+{
+    trainerbattle_single(TRAINER_ACRISIACAVES_F1_LANA, AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_LanaIntro, AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_LanaDefeat)
+    speakername("Lana")
+    msgbox(format("I guess it's not so bad in here. At least the Pokémon are cool."))
+    closemessage
+    release
+    end
+}
+text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_LanaIntro
+{
+    format("This cave is all dusty and icky. Get me outta here!")
+}
+text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_LanaDefeat
+{
+    format("Argh, nothing is going right!")
+}
+
+script AcrisiaCaves_F1_EventScript_Trainer_AcrisiaCaves_F1_Fraia
+{
+    trainerbattle_single(TRAINER_ACRISIACAVES_F1_FRAIA, AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_FraiaIntro, AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_FraiaDefeat)
+    speakername("Fraia")
+    msgbox(format("My Steel-type Pokémon should be a good counter to Mattaios' Rock-type Pokémon!"))
+    closemessage
+    release
+    end
+}
+text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_FraiaIntro
+{
+    format("I'm gonna challenge Mattaios soon, just you wait!")
+}
+text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_FraiaDefeat
+{
+    format("I guess I'm not ready yet.")
+}
+
+script AcrisiaCaves_F1_EventScript_Trainer_AcrisiaCaves_F1_Umber
+{
+    trainerbattle_single(TRAINER_ACRISIACAVES_F1_UMBER, AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_UmberIntro, AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_UmberDefeat)
+    speakername("Umber")
+    msgbox(format("I was hoping my Pokémon was magic somehow!"))
+    closemessage
+    release
+    end
+}
+text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_UmberIntro
+{
+    format("Don't freak out, but... I think my Pokémon is from space.")
+}
+text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_UmberDefeat
+{
+    format("I couldn't even win using the powers of space?!")
+}

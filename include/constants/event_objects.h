@@ -111,13 +111,13 @@
 #define OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE        107
 #define OBJ_EVENT_GFX_RIVAL_MAY_SURFING          108
 #define OBJ_EVENT_GFX_RIVAL_MAY_FIELD_MOVE       109
-#define OBJ_EVENT_GFX_CAMERAMAN                  110
+#define OBJ_EVENT_GFX_TOGA_GIRL                  110 // replaces cameraman
 #define OBJ_EVENT_GFX_BRENDAN_UNDERWATER         111
 #define OBJ_EVENT_GFX_MAY_UNDERWATER             112
 #define OBJ_EVENT_GFX_MOVING_BOX                 113
 #define OBJ_EVENT_GFX_CABLE_CAR                  114
 #define OBJ_EVENT_GFX_SCIENTIST_2                115
-#define OBJ_EVENT_GFX_DEVON_EMPLOYEE             116
+#define OBJ_EVENT_GFX_CONSTRUCTION_WORKER        116 // replaces uhhhh something else idk
 #define OBJ_EVENT_GFX_KLEFTIS_MEMBER_M           117
 #define OBJ_EVENT_GFX_KLEFTIS_MEMBER_F           118
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_M             119
@@ -126,9 +126,9 @@
 #define OBJ_EVENT_GFX_PHOEBE                     122
 #define OBJ_EVENT_GFX_GLACIA                     123
 #define OBJ_EVENT_GFX_DRAKE                      124
-#define OBJ_EVENT_GFX_SABELLA                    125 // Gym Leader 3, in Pythios Town
-#define OBJ_EVENT_GFX_DEO                        126 // Gym Leader 1, in Jusmail Town
-#define OBJ_EVENT_GFX_WATTSON                    127
+#define OBJ_EVENT_GFX_SABELLA                    125 // Gym Leader 3, in Pythios Town (replaces Roxanne gfx)
+#define OBJ_EVENT_GFX_DEO                        126 // Gym Leader 1, in Jusmail Town (replacess Brawly gfx)
+#define OBJ_EVENT_GFX_MATTAIOS                   127 // Gym Leader 2, in Acrisia Mountains / Discus Forge (replaces Wattson gfx)
 #define OBJ_EVENT_GFX_FLANNERY                   128
 #define OBJ_EVENT_GFX_NORMAN                     129
 #define OBJ_EVENT_GFX_WINONA                     130

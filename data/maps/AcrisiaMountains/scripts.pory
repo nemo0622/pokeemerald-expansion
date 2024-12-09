@@ -3,8 +3,214 @@ mapscripts AcrisiaMountains_MapScripts {}
 script AcrisiaMountains_Sign_GymSign
 {
     lock
-    msgbox(format("Gym Leader: Mattaios\N The Ever-Working Rocksmith"))
+    msgbox(format("Welcome to the Acrisia Caverns.\p Gym Leader: Mattaios\n The Ever-Working Rocksmith"))
     closemessage
     release
     end
 }
+
+script AcrisiaMountains_EventScript_RockExploringHiker
+{
+    lock
+    faceplayer
+    speakername("Archaeologist")
+    msgbox(format("The ruins of bygone times are haunting. Ilios is covered in them, and some are thousands of years old. You never know what you'll find hiding under a rock!"))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaMountains_EventScript_MattaiosTraining
+{
+    lock
+    speakername("Mattaios")
+    msgbox(format("Huff huff huff...\p Always training, always working... Come on Larvitar, help me get stronger!"))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaMountains_EventScript_Larvitar
+{
+    lock
+    speakername("Larvitar")
+    playmoncry(SPECIES_LARVITAR, CRY_MODE_NORMAL)
+    msgbox("Graahhh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script AcrisiaMountains_EventScript_Boy3
+{
+    lock
+    faceplayer
+    speakername("Fit Man")
+    msgbox(format("Climbing this mountain is good exercise! But wow, there are so many trainers further on. I hear shouts and battles from up in the caves!"))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaMountains_EventScript_MachoBraceMan
+{
+    lock
+    faceplayer
+    speakername("Muscleman")
+    if(flag(FLAG_GOT_MACHO_BRACE))
+    {
+        msgbox(format("Use that Macho Brace ta get yer Pokémon nice 'n strong!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Yia sou, little buddy! Ya think ya can swim up that waterfall? I've been tryin' every day.\p I've been holdin' this, but it hasn't made me stronger. Maybe it'll help ya with somethin'."))
+        closemessage
+        giveitem(ITEM_MACHO_BRACE)
+        speakername("Muscleman")
+        msgbox(format("Pokémon holding that Macho Brace get nice 'n strong! I guess it doesn't work on people, though."))
+        closemessage
+        setflag(FLAG_GOT_MACHO_BRACE)
+    }
+    release
+    end
+}
+
+script AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Tyre
+{
+    trainerbattle_single(TRAINER_ACRISIAMTNS_TYRE, AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreDefeat)
+    speakername("Tyre")
+    msgbox(format("Pokémon have plenty of skills outside of battle. For example, to reach this area your Pokémon had to be able to cut through those shrubs."))
+    closemessage
+    release
+    end
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreIntro
+{
+    format("My Pokémon are training to throw rocks using their Psychic powers!")
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreDefeat
+{
+    format("Looks like they need more work.")
+}
+
+script AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Elissa
+{
+    trainerbattle_single(TRAINER_ACRISIAMTNS_ELISSA, AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaDefeat)
+    speakername("Elissa")
+    msgbox(format("I've got to replace Hypnosis in Drowzee's moveset."))
+    closemessage
+    release
+    end
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaIntro
+{
+    format("Zzz... augh, my Pokémon keeps putting me to sleep...")
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaDefeat
+{
+    format("...zzz...")
+}
+
+script AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Josua
+{
+    trainerbattle_single(TRAINER_ACRISIAMTNS_JOSUA, AcrisiaMountains_Text_Trainer_AcrisiaMtns_JosuaIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_JosuaDefeat)
+    speakername("Josua")
+    msgbox(format("I just came here to explore the hills, not to fight so many trainers..."))
+    closemessage
+    release
+    end
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_JosuaIntro
+{
+    format("These hills are so steep and cramped, there's hardly room for a good battle!")
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_JosuaDefeat
+{
+    format("Fwahaha, looks like you made do!")
+}
+
+script AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Ulf
+{
+    trainerbattle_single(TRAINER_ACRISIAMTNS_ULF, AcrisiaMountains_Text_Trainer_AcrisiaMtns_UlfIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_UlfDefeat)
+    speakername("Ulf")
+    msgbox(format("Look kid, I'm not gonna be the one to fix up the rails. I just mean that someone should... someone else, that is!"))
+    closemessage
+    release
+    end
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_UlfIntro
+{
+    format("Someone should really clean up these old rails.")
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_UlfDefeat
+{
+    format("Nothing to be done, then.")
+}
+
+script AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Jamma
+{
+    trainerbattle_single(TRAINER_ACRISIAMTNS_JAMMA, AcrisiaMountains_Text_Trainer_AcrisiaMtns_JammaIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_JammaDefeat)
+    speakername("Jamma")
+    msgbox(format("I'm always up for a battle, but my Pokémon aren't. They just need more training!"))
+    closemessage
+    release
+    end
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_JammaIntro
+{
+    format("Hyah! Hrah! Come on, fight me!")
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_JammaDefeat
+{
+    format("Uh oh! Looks like I'd better hike back to a Pokémon Center.")
+}
+
+script AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Greg
+{
+    trainerbattle_single(TRAINER_ACRISIAMTNS_GREG, AcrisiaMountains_Text_Trainer_AcrisiaMtns_GregIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_GregDefeat)
+    speakername("Greg")
+    msgbox(format("I'm hoping to find more rare Pokémon up here. Have you seen any?"))
+    closemessage
+    release
+    end
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_GregIntro
+{
+    format("Ehehe, I bet you've never seen THESE Pokémon!")
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_GregDefeat
+{
+    format("Well, I guess I stand corrected.")
+}
+
+script AcrisiaMountains_EventScript_BugCatcherBoy
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("So... like, where are all the bugs?\p I found a Klawf earlier, but I'm not sure if that's a bug. I guess it has 'bug-eyes' though, ehehe!"))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Hugh
+{
+    trainerbattle_single(TRAINER_ACRISIAMTNS_HUGH, AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughDefeat)
+    speakername("Hugh")
+    msgbox(format("Good luck in the Acrisia Caves. You've certainly got potential, based on our battle!"))
+    closemessage
+    release
+    end
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughIntro
+{
+    format("I make sure no weak trainers get into the Acrisia Caves. Let's see if you're strong enough!")
+}
+text AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughDefeat
+{
+    format("Wow, you're ready!")
+}
+

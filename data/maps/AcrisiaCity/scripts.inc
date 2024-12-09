@@ -453,17 +453,17 @@ AcrisiaCity_EventScript_RailMan::
 	end
 
 
-AcrisiaCity_EventScript_Spearow::
+AcrisiaCity_EventScript_Growlithe::
 # 198 "data/maps/AcrisiaCity/scripts.pory"
 	lock
 # 199 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
 # 200 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_Spearow_Text_0
+	speakername AcrisiaCity_EventScript_Growlithe_Text_0
 # 201 "data/maps/AcrisiaCity/scripts.pory"
-	playmoncry SPECIES_SPEAROW, CRY_MODE_NORMAL
+	playmoncry SPECIES_GROWLITHE_HISUI, CRY_MODE_NORMAL
 # 202 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_Spearow_Text_1
+	msgbox AcrisiaCity_EventScript_Growlithe_Text_1
 # 203 "data/maps/AcrisiaCity/scripts.pory"
 	waitmoncry
 # 204 "data/maps/AcrisiaCity/scripts.pory"
@@ -473,54 +473,34 @@ AcrisiaCity_EventScript_Spearow::
 	end
 
 
-AcrisiaCity_EventScript_Growlithe::
+AcrisiaCity_EventScript_OldMan::
 # 211 "data/maps/AcrisiaCity/scripts.pory"
 	lock
 # 212 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
 # 213 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_Growlithe_Text_0
-# 214 "data/maps/AcrisiaCity/scripts.pory"
-	playmoncry SPECIES_GROWLITHE, CRY_MODE_NORMAL
-# 215 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_Growlithe_Text_1
-# 216 "data/maps/AcrisiaCity/scripts.pory"
-	waitmoncry
-# 217 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
-# 218 "data/maps/AcrisiaCity/scripts.pory"
-	release
-	end
-
-
-AcrisiaCity_EventScript_OldMan::
-# 224 "data/maps/AcrisiaCity/scripts.pory"
-	lock
-# 225 "data/maps/AcrisiaCity/scripts.pory"
-	faceplayer
-# 226 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_OldMan_Text_0
-# 227 "data/maps/AcrisiaCity/scripts.pory"
+# 214 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_OldMan_Text_1
-# 228 "data/maps/AcrisiaCity/scripts.pory"
+# 215 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 229 "data/maps/AcrisiaCity/scripts.pory"
+# 216 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_Gentleman::
-# 235 "data/maps/AcrisiaCity/scripts.pory"
+# 222 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 236 "data/maps/AcrisiaCity/scripts.pory"
+# 223 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 237 "data/maps/AcrisiaCity/scripts.pory"
+# 224 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_Gentleman_Text_0
-# 238 "data/maps/AcrisiaCity/scripts.pory"
+# 225 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_Gentleman_Text_1
-# 239 "data/maps/AcrisiaCity/scripts.pory"
+# 226 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 240 "data/maps/AcrisiaCity/scripts.pory"
+# 227 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
@@ -627,38 +607,30 @@ AcrisiaCity_EventScript_RailMan_Text_1:
 	.string "out, but I'm too scared to jump... I\l"
 	.string "should just get the Rock Smash HM.$"
 
-AcrisiaCity_EventScript_Spearow_Text_0:
-# 200 "data/maps/AcrisiaCity/scripts.pory"
-	.string "Spearow$"
-
-AcrisiaCity_EventScript_Spearow_Text_1:
-# 202 "data/maps/AcrisiaCity/scripts.pory"
-	.string "Craah!$"
-
 AcrisiaCity_EventScript_Growlithe_Text_0:
-# 213 "data/maps/AcrisiaCity/scripts.pory"
+# 200 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Growlithe$"
 
 AcrisiaCity_EventScript_Growlithe_Text_1:
-# 215 "data/maps/AcrisiaCity/scripts.pory"
+# 202 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Bwark bwark!$"
 
 AcrisiaCity_EventScript_OldMan_Text_0:
-# 226 "data/maps/AcrisiaCity/scripts.pory"
+# 213 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Old Man$"
 
 AcrisiaCity_EventScript_OldMan_Text_1:
-# 227 "data/maps/AcrisiaCity/scripts.pory"
+# 214 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Heavens, look at this harvest! Food\n"
 	.string "comes up from Jusmail Town and feeds\l"
 	.string "the folks up here.$"
 
 AcrisiaCity_EventScript_Gentleman_Text_0:
-# 237 "data/maps/AcrisiaCity/scripts.pory"
+# 224 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Gentleman$"
 
 AcrisiaCity_EventScript_Gentleman_Text_1:
-# 238 "data/maps/AcrisiaCity/scripts.pory"
+# 225 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Now that I'm retired, I like to sit here\n"
 	.string "and watch the time pass. I can't help\l"
 	.string "but smile seeing the lights come on in\l"
