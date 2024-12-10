@@ -1283,7 +1283,7 @@ F_TRAINER_FEMALE |
 #line 589
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
 #line 588
-            .lvl = 18,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -1383,7 +1383,7 @@ F_TRAINER_FEMALE |
 #line 632
         .doubleBattle = FALSE,
 #line 633
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -1394,7 +1394,7 @@ F_TRAINER_FEMALE |
 #line 637
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 636
-            .lvl = 22,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {

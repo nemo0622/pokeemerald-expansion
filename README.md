@@ -34,10 +34,17 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 
 - port seaglass learnsets and statsets
 - give umbreon foul play for cecilily
-- POKEMON TO ADD TO SHEET
-    - Spiky eared pichu (+ evolutionary line), Absol (Dark/Fairy), Drilbur + Excadrill, Falinks, Golisopod, Tauros + Variants, Wattrel & Kilowattrel
 - fully implement VAR_DIFFICULTY + place to change it in acrisia university
 - replace Ninja Boy class with something like Warrior Boy
+- Do Trainer Sprites for all regular NPC trainers
+    - Remember Solo993 unova devamps; Substitube Discord sprites
+
+POKéMON TO COMMISSION SPRITES FOR:
+- Impidimp, Morgrem, Grimmsnarl
+- Salazzle
+- Lycanroc forms
+- Mudsdale
+- Galarian Rapidash
 
 - ADD A FEW NEW POKéMON AND ABILITIES:
     - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
@@ -70,6 +77,11 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
         - Safari Zone?
         - Dive locations
         - Espathra (bike) give location
+            - Probably on one of the islands?
+        - Unlock seeing wild Pokémon natures and Abilities
+            - Tutorial: https://www.pokecommunity.com/threads/simple-modifications-directory.416647/post-10893555
+            - Implement above feature using flag in "if" statements. Unlock flag via sidequest
+            - Someone in Sofos City
 
 - SUNSET PREVIEW PLANS
     - Preview 01 (12/6/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.

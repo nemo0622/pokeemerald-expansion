@@ -293,6 +293,11 @@ script AcrisiaCity_University_EventScript_Rania
         msgbox(format("Here comes {PLAYER}, the new Champ! ...Ehehe, just kidding! My Pokémon are still calming down from that battle in Jusmail Town, what a fight!"))
         closemessage
     }
+    elif(var(VAR_RANIA_STATE) == 2) // earned 2nd Gym badge
+    {
+        speakername("Rania")
+        msgbox(format("No way, you got the Gemstone Badge?! I haven't even gotten to the Acrisia Caverns yet!"))
+    }
     release
     end
 }
@@ -494,7 +499,7 @@ script AcrisiaCity_EventScript_ProfessorElia
     {
         goto(AcrisiaCity_University_EventScript_EliaCheckBadgeOne)
     }
-    elif(var(VAR_INTRO_STATE) == 5) // got badge 1, sent to Discus Forge in Acrisia Mountains for 2nd badge
+    elif(var(VAR_INTRO_STATE) == 5) // got badge 1, sent to Acrisia Caverns in Acrisia Mountains for 2nd badge
     {
         goto(AcrisiaCity_University_EventScript_EliaCheckBadgeTwo)
     }
@@ -639,7 +644,7 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeOne
         closemessage
         giveitem(ITEM_ABILITY_CAPSULE)
         speakername("Prof. Elia")
-        msgbox(format("That's an Ability Capsule. It can change the Ability of a Pokémon, which can make it totally different in battle!\p Look, I know I've been sending you back and forth a bunch, but I think I've got a good idea. You should head {COLOR GREEN}west{COLOR DARK_GRAY} from here, up into the {COLOR GREEN}Acrisia Mountains{COLOR DARK_GRAY}. There's a cave nearby called the {COLOR GREEN}Discus Forge{COLOR DARK_GRAY}, which the Ilios Region considers a Gym. If you can win, I have something even better for you!"))
+        msgbox(format("That's an Ability Capsule. It can change the Ability of a Pokémon, which can make it totally different in battle!\p Look, I know I've been sending you back and forth a bunch, but I think I've got a good idea. You should head {COLOR GREEN}west{COLOR DARK_GRAY} from here, up into the {COLOR GREEN}Acrisia Mountains{COLOR DARK_GRAY}. There's a cave nearby called the {COLOR GREEN}Acrisia Caverns{COLOR DARK_GRAY}, which the Ilios Region considers a Gym. If you can win, I have something even better for you!"))
         closemessage
         setvar(VAR_INTRO_STATE, 5)
         setflag(FLAG_HIDE_RANIA_JUSMAIL) // failsafe - incase player somehow skipped rania in Jusmail
