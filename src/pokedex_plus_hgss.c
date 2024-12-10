@@ -2512,15 +2512,11 @@ static bool8 LoadPokedexListPage(u8 page)
 static void CreatePokedexList(u8 dexMode, u8 order)
 {
     u16 vars[3]; //I have no idea why three regular variables are stored in an array, but whatever.
-    vars[0] = 1;
-    vars[1] = 1;
-    vars[2] = 1;
 #define temp_dexCount   vars[0]
 #define temp_isHoennDex vars[1]
 #define temp_dexNum     vars[2]
 
-    s16 i, j;
-    u16 monSeen;
+    s16 i;
 
     sPokedexView->pokemonListCount = 0;
 
@@ -2550,40 +2546,14 @@ static void CreatePokedexList(u8 dexMode, u8 order)
     case ORDER_NUMERICAL:
         if (temp_isHoennDex)
         {
-            s16 r5;
-            for (i = 0, r5 = 0; i < temp_dexCount; i++)
+            for (i = 0; i < temp_dexCount; i++)
             {
-                monSeen = GetSetPokedexFlag(temp_dexNum, FLAG_GET_SEEN);
-                if (!monSeen && i < temp_dexCount - 1 - SKIP_THRESHOLD)
-                {
-                    // Check if the next SKIP_THRESHOLD entries are also unseen
-                    for (j = 1; j <= SKIP_THRESHOLD; j++)
-                    {
-                        if (GetSetPokedexFlag(HoennToNationalOrder(i + j), FLAG_GET_SEEN))
-                            break;
-                    }
-                    if (j == SKIP_THRESHOLD + 1)
-                    {
-                        // Loop until the next seen entry
-                        do
-                        {
-                            i++;
-                            monSeen = GetSetPokedexFlag(HoennToNationalOrder(i + 1), FLAG_GET_SEEN);
-                        } while (!monSeen && i < temp_dexCount - 1);
-                        
-                        temp_dexNum = HoennToNationalOrder(i + 1);
-                        sPokedexView->pokedexList[r5].dexNum = 0;
-                        sPokedexView->pokedexList[r5].seen = FALSE;
-                        sPokedexView->pokedexList[r5].owned = FALSE;
-                        r5++;
-                    }
-                }
-                sPokedexView->pokedexList[r5].dexNum = temp_dexNum;
-                sPokedexView->pokedexList[r5].seen = GetSetPokedexFlag(temp_dexNum, FLAG_GET_SEEN);
-                sPokedexView->pokedexList[r5].owned = GetSetPokedexFlag(temp_dexNum, FLAG_GET_CAUGHT);
-                if (sPokedexView->pokedexList[r5].seen)
-                    sPokedexView->pokemonListCount = r5 + 1;
-                r5++;
+                temp_dexNum = HoennToNationalOrder(i + 1);
+                sPokedexView->pokedexList[i].dexNum = temp_dexNum;
+                sPokedexView->pokedexList[i].seen = GetSetPokedexFlag(temp_dexNum, FLAG_GET_SEEN);
+                sPokedexView->pokedexList[i].owned = GetSetPokedexFlag(temp_dexNum, FLAG_GET_CAUGHT);
+                if (sPokedexView->pokedexList[i].seen)
+                    sPokedexView->pokemonListCount = i + 1;
             }
         }
         else
@@ -2592,34 +2562,10 @@ static void CreatePokedexList(u8 dexMode, u8 order)
             for (i = 0, r5 = 0, r10 = 0; i < temp_dexCount; i++)
             {
                 temp_dexNum = i + 1;
-                monSeen = GetSetPokedexFlag(temp_dexNum, FLAG_GET_SEEN);
-                if (monSeen)
+                if (GetSetPokedexFlag(temp_dexNum, FLAG_GET_SEEN))
                     r10 = 1;
                 if (r10)
                 {
-                    if (!monSeen && i < temp_dexCount - 1 - SKIP_THRESHOLD)
-                    {
-                        // Check if the next SKIP_THRESHOLD entries are also unseen
-                        for (j = 1; j <= SKIP_THRESHOLD; j++)
-                        {
-                            if (GetSetPokedexFlag(i + j + 1, FLAG_GET_SEEN))
-                                break;
-                        }
-                        if (j == SKIP_THRESHOLD + 1)
-                        {
-                            // Loop until the next seen entry
-                            while (i < temp_dexCount - 1 && !GetSetPokedexFlag(i + 1, FLAG_GET_SEEN))
-                            {
-                                i++;
-                            }
-                            
-                            temp_dexNum = i + 1;
-                            sPokedexView->pokedexList[r5].dexNum = 0;
-                            sPokedexView->pokedexList[r5].seen = FALSE;
-                            sPokedexView->pokedexList[r5].owned = FALSE;
-                            r5++;
-                        }
-                    }
                     sPokedexView->pokedexList[r5].dexNum = temp_dexNum;
                     sPokedexView->pokedexList[r5].seen = GetSetPokedexFlag(temp_dexNum, FLAG_GET_SEEN);
                     sPokedexView->pokedexList[r5].owned = GetSetPokedexFlag(temp_dexNum, FLAG_GET_CAUGHT);
@@ -2754,15 +2700,15 @@ static void CreateMonListEntry(u8 position, u16 b, u16 ignored)
                 ClearMonListEntry(MON_LIST_X, i * 2, ignored);
                 if (sPokedexView->pokedexList[entryNum].seen)
                 {
-                    CreateMonDexNum(entryNum, MON_LIST_X+1, i * 2, FALSE);
+                    CreateMonDexNum(entryNum, MON_LIST_X+1, i * 2, ignored);
                     CreateCaughtBall(sPokedexView->pokedexList[entryNum].owned, MON_LIST_X, i * 2, ignored);
                     CreateMonName(sPokedexView->pokedexList[entryNum].dexNum, MON_LIST_X + 5, i * 2);
                 }
                 else
                 {
-                    CreateMonDexNum(entryNum, MON_LIST_X+1, i * 2, sPokedexView->pokedexList[entryNum].dexNum == 0);
+                    CreateMonDexNum(entryNum, MON_LIST_X+1, i * 2, ignored);
                     CreateCaughtBall(FALSE, MON_LIST_X, i * 2, ignored);
-                    CreateMonName(sPokedexView->pokedexList[entryNum].dexNum == 0 ? SHOW_TRIPLE_BULLET : 0, MON_LIST_X + 5, i * 2);
+                    CreateMonName(0, MON_LIST_X + 5, i * 2);
                 }
             }
             entryNum++;
@@ -2779,15 +2725,15 @@ static void CreateMonListEntry(u8 position, u16 b, u16 ignored)
             ClearMonListEntry(MON_LIST_X, sPokedexView->listVOffset * 2, ignored);
             if (sPokedexView->pokedexList[entryNum].seen)
             {
-                CreateMonDexNum(entryNum, MON_LIST_X+1, sPokedexView->listVOffset * 2, FALSE);
+                CreateMonDexNum(entryNum, MON_LIST_X+1, sPokedexView->listVOffset * 2, ignored);
                 CreateCaughtBall(sPokedexView->pokedexList[entryNum].owned, MON_LIST_X, sPokedexView->listVOffset * 2, ignored);
                 CreateMonName(sPokedexView->pokedexList[entryNum].dexNum, MON_LIST_X + 5, sPokedexView->listVOffset * 2);
             }
             else
             {
-                CreateMonDexNum(entryNum, MON_LIST_X+1, sPokedexView->listVOffset * 2, sPokedexView->pokedexList[entryNum].dexNum == 0);
+                CreateMonDexNum(entryNum, MON_LIST_X+1, sPokedexView->listVOffset * 2, ignored);
                 CreateCaughtBall(FALSE, MON_LIST_X, sPokedexView->listVOffset * 2, ignored);
-                CreateMonName(sPokedexView->pokedexList[entryNum].dexNum == 0 ? SHOW_TRIPLE_BULLET : 0, MON_LIST_X + 5, sPokedexView->listVOffset * 2);
+                CreateMonName(0, MON_LIST_X + 5, sPokedexView->listVOffset * 2);
             }
         }
         break;
@@ -2803,15 +2749,15 @@ static void CreateMonListEntry(u8 position, u16 b, u16 ignored)
             ClearMonListEntry(MON_LIST_X, vOffset * 2, ignored);
             if (sPokedexView->pokedexList[entryNum].seen)
             {
-                CreateMonDexNum(entryNum, MON_LIST_X+1, vOffset * 2, FALSE);
+                CreateMonDexNum(entryNum, MON_LIST_X+1, vOffset * 2, ignored);
                 CreateCaughtBall(sPokedexView->pokedexList[entryNum].owned, MON_LIST_X, vOffset * 2, ignored);
                 CreateMonName(sPokedexView->pokedexList[entryNum].dexNum, MON_LIST_X + 5, vOffset * 2);
             }
             else
             {
-                CreateMonDexNum(entryNum, MON_LIST_X+1, vOffset * 2, sPokedexView->pokedexList[entryNum].dexNum == 0);
+                CreateMonDexNum(entryNum, MON_LIST_X+1, vOffset * 2, ignored);
                 CreateCaughtBall(FALSE, MON_LIST_X, vOffset * 2, ignored);
-                CreateMonName(sPokedexView->pokedexList[entryNum].dexNum == 0 ? SHOW_TRIPLE_BULLET : 0, MON_LIST_X + 5, vOffset * 2);
+                CreateMonName(0, MON_LIST_X + 5, vOffset * 2);
             }
         }
         break;
@@ -2819,7 +2765,7 @@ static void CreateMonListEntry(u8 position, u16 b, u16 ignored)
     CopyWindowToVram(0, COPYWIN_GFX);
 }
 
-static void CreateMonDexNum(u16 entryNum, u8 left, u8 top, u16 skip)
+static void CreateMonDexNum(u16 entryNum, u8 left, u8 top, u16 unused)
 {
     u8 text[5];
     u16 dexNum, offset = 0;
@@ -2828,22 +2774,15 @@ static void CreateMonDexNum(u16 entryNum, u8 left, u8 top, u16 skip)
     if (sPokedexView->dexMode == DEX_MODE_HOENN)
         dexNum = NationalToHoennOrder(dexNum);
     memcpy(text, sText_No0000, ARRAY_COUNT(sText_No0000));
-    if (skip)
+    if (NATIONAL_DEX_COUNT > 999 && sPokedexView->dexMode != DEX_MODE_HOENN)
     {
-        text[offset++] = EOS;
+        text[0] = CHAR_0 + dexNum / 1000;
+        offset++;
     }
-    else
-    {
-        if (NATIONAL_DEX_COUNT > 999 && sPokedexView->dexMode != DEX_MODE_HOENN)
-        {
-            text[0] = CHAR_0 + dexNum / 1000;
-            offset++;
-        }
-        text[offset++] = CHAR_0 + (dexNum % 1000) / 100;
-        text[offset++] = CHAR_0 + ((dexNum % 1000) % 100) / 10;
-        text[offset++] = CHAR_0 + ((dexNum % 1000) % 100) % 10;
-        text[offset++] = EOS;
-    }
+    text[offset++] = CHAR_0 + (dexNum % 1000) / 100;
+    text[offset++] = CHAR_0 + ((dexNum % 1000) % 100) / 10;
+    text[offset++] = CHAR_0 + ((dexNum % 1000) % 100) % 10;
+    text[offset++] = EOS;
     PrintMonDexNumAndName(0, FONT_NARROW, text, left, top);
 }
 
@@ -2860,18 +2799,10 @@ static u8 CreateMonName(u16 num, u8 left, u8 top)
     const u8 *str;
 
     num = NationalPokedexNumToSpecies(num);
-    if (num == SHOW_TRIPLE_BULLET)
-    {
-        str = sText_TripleBullet;
-    }
+    if (num)
+        str = GetSpeciesName(num);
     else
-    {
-        num = NationalPokedexNumToSpecies(num);
-        if (num)
-            str = GetSpeciesName(num);
-        else
-            str = sText_TenDashes;
-    }
+        str = sText_TenDashes;
     PrintMonDexNumAndName_2(0, FONT_NARROW, str, left, top);
     return StringLength(str);
 }
