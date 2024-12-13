@@ -1186,12 +1186,12 @@ F_TRAINER_FEMALE |
 #line 549
         .trainerName = _("Berkley"),
 #line 550
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 551
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .encounterMusic_gender = 
 #line 553
-            TRAINER_ENCOUNTER_MUSIC_COOL,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 554
         .doubleBattle = FALSE,
 #line 555

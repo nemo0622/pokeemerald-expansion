@@ -1,6 +1,7 @@
 mapscripts AcrisiaCity_University_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_INTRO_STATE, 1: AcrisiaCity_University_EventScript_PlayerIntro
+        VAR_STARTER_MON, 0: AcrisiaCity_University_EventScript_ChoosePokemon
     ]
 }
 
@@ -104,6 +105,17 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     msgbox(format("{PLAYER}! Oh, I've had the most fun idea! How about you go {COLOR GREEN}find the lost delivery{COLOR DARK_GRAY} and help them out?\p I've got a few rare Pokémon in my briefcase here. Why don't you choose one to adventure with you?"))
     closemessage
 
+    call(Common_EventScript_SaveGame)
+
+    goto(AcrisiaCity_University_EventScript_ChoosePokemon)
+
+    releaseall
+    end
+
+}
+
+script AcrisiaCity_University_EventScript_ChoosePokemon
+{
     // Give Pokémon
     callnative(StartNewPokeballCaseUI)
     waitstate
@@ -133,7 +145,6 @@ script AcrisiaCity_University_EventScript_PlayerIntro
 
     releaseall
     end
-
 }
 
 movement AcrisiaCity_University_Movement_NikoStopsPlayer
@@ -273,6 +284,23 @@ script AcrisiaCity_University_EventScript_Niko
         msgbox(format("Give those Nest Balls a shot! They work best with low-level Pokémon.\p {COLOR GREEN}Check back in{COLOR DARK_GRAY} as you {COLOR GREEN}defeat Pokémon Gyms{COLOR DARK_GRAY}, and I'll give you little gifts and tips."))
         closemessage
     }
+    elif(var(VAR_NIKO_STATE) == 3) // Got Gym Badge 2
+    {
+        speakername("Niko")
+        msgbox(format("Ehehe, looks like I beat you to Mattaios! We're all starting to be pretty strong trainers, huh?\p Ah, I worked on a new Poké Ball type. Give it a test for me!"))
+        closemessage
+        giveitem(ITEM_TIMER_BALL, 3)
+        speakername("Niko")
+        msgbox(format("Those Timer Balls work better when a battle begins to drag on. Hopefully they help... help you catch up to me! Fwahaha!"))
+        closemessage
+        setvar(VAR_NIKO_STATE, 4)
+    }
+    elif(var(VAR_NIKO_STATE) == 4) // got gym badge 2, got niko's gift
+    {
+        speakername("Niko")
+        msgbox(format("{PLAYER}! I'm back here to study this little Duskull. In case you can't tell, I really like Ghost-type Pokémon."))
+        closemessage
+    }
     release
     end
 }
@@ -296,7 +324,19 @@ script AcrisiaCity_University_EventScript_Rania
     elif(var(VAR_RANIA_STATE) == 2) // earned 2nd Gym badge
     {
         speakername("Rania")
-        msgbox(format("No way, you got the Gemstone Badge?! I haven't even gotten to the Acrisia Caverns yet!"))
+        msgbox(format("No way, you got the Gemstone Badge?! I haven't even gotten to the Acrisia Caverns yet!\p Yamas! Cheers! We have to celebrate your success somehow! I'll give you this, as a start."))
+        closemessage
+        giveitem(ITEM_WISHING_STAR, 2)
+        speakername("Rania")
+        msgbox(format("Those Wishing Stars can be used at the Wishing Well in Jusmail Town. Old myths say that worthy trainers may earn something from it.\p Speaking of Jusmail Town, you should be able to get rid of those {COLOR GREEN}rocks blocking the path south{COLOR DARK_GRAY}! I'll be seeing you out there, {PLAYER}!"))
+        closemessage
+        setvar(VAR_RANIA_STATE, 3)
+    }
+    elif(var(VAR_RANIA_STATE) == 3) // earned 2nd badge, got Rania's reward
+    {
+        speakername("Rania")
+        msgbox(format("Yia sou! I come back here to heal my Pokémon and put my new Pokédex data into the computers. Don't you worry, I'll be back out soon! Get ready for some battles!"))
+        closemessage
     }
     release
     end
@@ -587,7 +627,7 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
     {
         if(flag(FLAG_FOUND_LOST_DELIVERY)) // actually did!
         {
-            msgbox(format("Heavens! The delivery cart was attacked!? Well I'm glad everyone is okay...\p Here, I'll enable your Pokédex."))
+            msgbox(format("Aie! The delivery cart was attacked!? Well I'm glad everyone is okay...\p Here, I'll enable your Pokédex."))
             closemessage
             removeobject(ITEM_PARCEL) // remove key item parcel from bag
             playse(SE_CLICK)

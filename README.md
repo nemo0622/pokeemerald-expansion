@@ -38,6 +38,7 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 - replace Ninja Boy class with something like Warrior Boy
 - Do Trainer Sprites for all regular NPC trainers
     - Remember Solo993 unova devamps; Substitube Discord sprites
+    - Replace Pokemaniac class with Nurse or something
 
 POKéMON TO COMMISSION SPRITES FOR:
 - Impidimp, Morgrem, Grimmsnarl
@@ -45,6 +46,13 @@ POKéMON TO COMMISSION SPRITES FOR:
 - Lycanroc forms
 - Mudsdale
 - Galarian Rapidash
+
+GREEK PHRASES AND STUFF:
+- "Opa!" - directly translates to "Oops", but really used to show appreciation/enthusiasm
+- "Yia sou" - greeting
+- "Andio" - goodbye
+- "Yamas" - cheers!
+- "Den gnorzio" - I don't know
 
 - ADD A FEW NEW POKéMON AND ABILITIES:
     - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
@@ -91,7 +99,12 @@ POKéMON TO COMMISSION SPRITES FOR:
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
-- Shallow water colors are fucked at night time, should just be replaced by sand for lazy solution
+- Shallow water colors are fucked at night time - FIX: should just be replaced by sand for lazy solution
+- Time acts weird at start - FIX: every new game, set time to 9 am!
+- Water colors wrong at night (palette problem?)
+- Pokédex START/SELECT buttons on menu messed up - FIX: tilemap fix
+- Field moves work with badge, don't check having HM! - FIX: probable a bag check in field move functions
+- Field move banner shows in caves
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
@@ -131,6 +144,10 @@ Many, many talented developers and artists are responsible for making this proje
     17. By Pia Carrot
     18. Edited by kesterhenrickpixels
     19. By EeVeeEe1999
+- Trainer Sprites:
+    - Many Sapphire-based GBC sprite devamps by leesongjae620 on DeviantArt
+    - Some GBC style Trainer sprites from Pokémon Crystal
+    - Professor sprite by Substitube
 - Overworld Sprites:
     - Many NPC sprites adapted from Pokémon Crystal
     - Some NPC sprites by Anima_nel on itch.io

@@ -547,10 +547,10 @@ IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 
 === TRAINER_ACRISIACAVES_BF1_BERKLEY === /* Trainer in Acrisia Caves BF1 */
 Name: Berkley
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Triathlete
+Pic: Running Triathlete M
 Gender: Male
-Music: Cool
+Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
 
