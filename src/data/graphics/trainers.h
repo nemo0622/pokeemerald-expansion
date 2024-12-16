@@ -76,8 +76,8 @@ const u32 gTrainerPalette_RichBoy[] = INCBIN_U32("graphics/trainers/front_pics/r
 const u32 gTrainerFrontPic_ExpertF[] = INCBIN_U32("graphics/trainers/front_pics/expert_f.4bpp.lz");
 const u32 gTrainerPalette_ExpertF[] = INCBIN_U32("graphics/trainers/front_pics/expert_f.gbapal.lz");
 
-const u32 gTrainerFrontPic_Pokemaniac[] = INCBIN_U32("graphics/trainers/front_pics/pokemaniac.4bpp.lz");
-const u32 gTrainerPalette_Pokemaniac[] = INCBIN_U32("graphics/trainers/front_pics/pokemaniac.gbapal.lz");
+const u32 gTrainerFrontPic_Performer_M[] = INCBIN_U32("graphics/trainers/front_pics/performer_m.4bpp.lz");
+const u32 gTrainerPalette_Performer_M[] = INCBIN_U32("graphics/trainers/front_pics/performer_m.gbapal.lz");
 
 const u32 gTrainerFrontPic_MagmaGruntF[] = INCBIN_U32("graphics/trainers/front_pics/magma_grunt_f.4bpp.lz");
 const u32 gTrainerPalette_MagmaGruntF[] = INCBIN_U32("graphics/trainers/front_pics/magma_grunt_f.gbapal.lz");
@@ -294,6 +294,18 @@ const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pic
 
 const u32 gTrainerFrontPic_Farmer[] = INCBIN_U32("graphics/trainers/front_pics/farmer.4bpp.lz");
 const u32 gTrainerPalette_Farmer[] = INCBIN_U32("graphics/trainers/palettes/farmer.gbapal.lz");
+const u32 gTrainerFrontPic_Performer_F[] = INCBIN_U32("graphics/trainers/front_pics/performer_f.4bpp.lz");
+const u32 gTrainerPalette_Performer_F[] = INCBIN_U32("graphics/trainers/palettes/performer_f.gbapal.lz");
+const u32 gTrainerFrontPic_Scientist_F[] = INCBIN_U32("graphics/trainers/front_pics/scientist_f.4bpp.lz");
+const u32 gTrainerPalette_Scientist_F[] = INCBIN_U32("graphics/trainers/palettes/scientist_f.gbapal.lz");
+const u32 gTrainerFrontPic_Punk_Rocker[] = INCBIN_U32("graphics/trainers/front_pics/punk_rocker.4bpp.lz");
+const u32 gTrainerPalette_Punk_Rocker[] = INCBIN_U32("graphics/trainers/palettes/punk_rocker.gbapal.lz");
+const u32 gTrainerFrontPic_Officer[] = INCBIN_U32("graphics/trainers/front_pics/officer.4bpp.lz");
+const u32 gTrainerPalette_Officer[] = INCBIN_U32("graphics/trainers/palettes/officer.gbapal.lz");
+const u32 gTrainerFrontPic_Worker[] = INCBIN_U32("graphics/trainers/front_pics/worker.4bpp.lz");
+const u32 gTrainerPalette_Worker[] = INCBIN_U32("graphics/trainers/palettes/worker.gbapal.lz");
+const u32 gTrainerFrontPic_Diver[] = INCBIN_U32("graphics/trainers/front_pics/diver.4bpp.lz");
+const u32 gTrainerPalette_Diver[] = INCBIN_U32("graphics/trainers/palettes/diver.gbapal.lz");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
@@ -312,19 +324,19 @@ const u32 gTrainerPalette_Farmer[] = INCBIN_U32("graphics/trainers/palettes/farm
 const struct TrainerSprite gTrainerSprites[] =
 {
     TRAINER_SPRITE(HIKER, Hiker),
-    TRAINER_SPRITE(AQUA_GRUNT_M, AquaGruntM),
+    TRAINER_SPRITE(GRUNT_KECLEON, AquaGruntM),
     TRAINER_SPRITE(POKEMON_BREEDER_F, PokemonBreederF),
     TRAINER_SPRITE(COOLTRAINER_M, CoolTrainerM),
     TRAINER_SPRITE(BIRD_KEEPER, BirdKeeper),
     TRAINER_SPRITE(COLLECTOR, Collector),
-    TRAINER_SPRITE(AQUA_GRUNT_F, AquaGruntF),
+    TRAINER_SPRITE(GRUNT_SANDSLASH, AquaGruntF),
     TRAINER_SPRITE(SWIMMER_M, SwimmerM),
     TRAINER_SPRITE(MAGMA_GRUNT_M, MagmaGruntM),
     TRAINER_SPRITE(EXPERT_M, ExpertM),
-    TRAINER_SPRITE(AQUA_ADMIN_M, AquaAdminM),
+    TRAINER_SPRITE(ADMIN_WALREIN, AquaAdminM),
     TRAINER_SPRITE(BLACK_BELT, BlackBelt),
-    TRAINER_SPRITE(AQUA_ADMIN_F, AquaAdminF),
-    TRAINER_SPRITE(AQUA_LEADER_ARCHIE, AquaLeaderArchie),
+    TRAINER_SPRITE(ADMIN_DUSKNOIR, AquaAdminF),
+    TRAINER_SPRITE(LEADER_SALAMENCE, AquaLeaderArchie),
     TRAINER_SPRITE(HEX_MANIAC, HexManiac),
     TRAINER_SPRITE(AROMA_LADY, AromaLady),
     TRAINER_SPRITE(RUIN_MANIAC, RuinManiac),
@@ -336,7 +348,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(BEAUTY, Beauty),
     TRAINER_SPRITE(RICH_BOY, RichBoy),
     TRAINER_SPRITE(EXPERT_F, ExpertF),
-    TRAINER_SPRITE(POKEMANIAC, Pokemaniac),
+    TRAINER_SPRITE(PERFORMER_M, Performer_M),
     TRAINER_SPRITE(MAGMA_GRUNT_F, MagmaGruntF),
     TRAINER_SPRITE(GUITARIST, Guitarist),
     TRAINER_SPRITE(KINDLER, Kindler),
@@ -405,6 +417,12 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(RS_BRENDAN, RubySapphireBrendan),
     TRAINER_SPRITE(RS_MAY, RubySapphireMay),
     TRAINER_SPRITE(FARMER, Farmer),
+    TRAINER_SPRITE(PERFORMER_F, Performer_F),
+    TRAINER_SPRITE(SCIENTIST_F, Scientist_F),
+    TRAINER_SPRITE(PUNK_ROCKER, Punk_Rocker),
+    TRAINER_SPRITE(OFFICER, Officer),
+    TRAINER_SPRITE(WORKER, Worker),
+    TRAINER_SPRITE(DIVER, Diver),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

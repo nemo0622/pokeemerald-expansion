@@ -16,19 +16,19 @@
 #define TRAINER_UNION_ROOM                  3072
 
 #define TRAINER_PIC_HIKER                  0
-#define TRAINER_PIC_AQUA_GRUNT_M           1
+#define TRAINER_PIC_GRUNT_KECLEON          1 // replaces AQUA_GRUNT_M
 #define TRAINER_PIC_POKEMON_BREEDER_F      2
 #define TRAINER_PIC_COOLTRAINER_M          3
 #define TRAINER_PIC_BIRD_KEEPER            4
 #define TRAINER_PIC_COLLECTOR              5
-#define TRAINER_PIC_AQUA_GRUNT_F           6
+#define TRAINER_PIC_GRUNT_SANDSLASH        6 // replaces AQUA_GRUNT_F
 #define TRAINER_PIC_SWIMMER_M              7
 #define TRAINER_PIC_MAGMA_GRUNT_M          8
 #define TRAINER_PIC_EXPERT_M               9
-#define TRAINER_PIC_AQUA_ADMIN_M          10
+#define TRAINER_PIC_ADMIN_WALREIN         10 // replaces AQUA_ADMIN_M
 #define TRAINER_PIC_BLACK_BELT            11
-#define TRAINER_PIC_AQUA_ADMIN_F          12
-#define TRAINER_PIC_AQUA_LEADER_ARCHIE    13
+#define TRAINER_PIC_ADMIN_DUSKNOIR        12 // replaces AQUA_ADMIN_F
+#define TRAINER_PIC_LEADER_SALAMENCE      13 // replaces AQUA_LEADER_ARCHIE
 #define TRAINER_PIC_HEX_MANIAC            14
 #define TRAINER_PIC_AROMA_LADY            15
 #define TRAINER_PIC_RUIN_MANIAC           16
@@ -40,7 +40,7 @@
 #define TRAINER_PIC_BEAUTY                22
 #define TRAINER_PIC_RICH_BOY              23
 #define TRAINER_PIC_EXPERT_F              24
-#define TRAINER_PIC_POKEMANIAC            25
+#define TRAINER_PIC_PERFORMER_M            25
 #define TRAINER_PIC_MAGMA_GRUNT_F         26
 #define TRAINER_PIC_GUITARIST             27
 #define TRAINER_PIC_KINDLER               28
@@ -109,7 +109,13 @@
 #define TRAINER_PIC_RS_BRENDAN            91
 #define TRAINER_PIC_RS_MAY                92
 #define TRAINER_PIC_FARMER                93
-#define TRAINER_PIC_COUNT                 94
+#define TRAINER_PIC_PERFORMER_F           94
+#define TRAINER_PIC_SCIENTIST_F           95
+#define TRAINER_PIC_PUNK_ROCKER           96
+#define TRAINER_PIC_OFFICER               97
+#define TRAINER_PIC_WORKER                98
+#define TRAINER_PIC_DIVER                 99
+#define TRAINER_PIC_COUNT                 100
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -144,7 +150,7 @@
 #define FACILITY_CLASS_BEAUTY                0x14
 #define FACILITY_CLASS_RICH_BOY              0x15
 #define FACILITY_CLASS_EXPERT_F              0x16
-#define FACILITY_CLASS_POKEMANIAC            0x17
+#define FACILITY_CLASS_PERFORMER_M            0x17
 #define FACILITY_CLASS_MAGMA_GRUNT_F         0x18
 #define FACILITY_CLASS_GUITARIST             0x19
 #define FACILITY_CLASS_KINDLER               0x1a
@@ -220,7 +226,7 @@
 #define RS_FACILITY_CLASS_LADY                  0xB
 #define RS_FACILITY_CLASS_BEAUTY                0xC
 #define RS_FACILITY_CLASS_RICH_BOY              0xD
-#define RS_FACILITY_CLASS_POKEMANIAC            0xE
+#define RS_FACILITY_CLASS_PERFORMER_M            0xE
 #define RS_FACILITY_CLASS_SWIMMER_M             0xF
 #define RS_FACILITY_CLASS_BLACK_BELT            0x10
 #define RS_FACILITY_CLASS_GUITARIST             0x11
@@ -309,7 +315,7 @@
 #define TRAINER_CLASS_LADY           0x14
 #define TRAINER_CLASS_BEAUTY         0x15
 #define TRAINER_CLASS_RICH_BOY       0x16
-#define TRAINER_CLASS_POKEMANIAC     0x17
+#define TRAINER_CLASS_PERFORMER_M     0x17
 #define TRAINER_CLASS_GUITARIST      0x18
 #define TRAINER_CLASS_KINDLER        0x19
 #define TRAINER_CLASS_CAMPER         0x1a
@@ -353,7 +359,13 @@
 #define TRAINER_CLASS_PYRAMID_KING   0x40
 #define TRAINER_CLASS_RS_PROTAG      0x41
 #define TRAINER_CLASS_FARMER         0x42
-#define TRAINER_CLASS_COUNT          0x43
+#define TRAINER_CLASS_PERFORMER_F    0x43
+#define TRAINER_CLASS_SCIENTIST_F    0x44
+#define TRAINER_CLASS_PUNK_ROCKER    0x45
+#define TRAINER_CLASS_OFFICER        0x46
+#define TRAINER_CLASS_WORKER         0x47
+#define TRAINER_CLASS_DIVER          0x48
+#define TRAINER_CLASS_COUNT          0x49
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

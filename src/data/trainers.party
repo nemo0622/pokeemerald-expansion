@@ -84,7 +84,7 @@ Double Battle: No
 === TRAINER_BRONZE_PASS_KLEFTIS_GRUNT === /* Kleftis grunt in bronze pass north */
 Name: Grunt
 Class: Team Kleftis
-Pic: Aqua Grunt M
+Pic: Grunt Kecleon
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -673,7 +673,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_SHELLY_WEATHER_INSTITUTE ===
 Name: SHELLY
 Class: Aqua Admin
-Pic: Aqua Admin F
+Pic: Admin Dusknoir
 Gender: Female
 Music: Aqua
 Double Battle: No
@@ -690,7 +690,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
 Name: SHELLY
 Class: Aqua Admin
-Pic: Aqua Admin F
+Pic: Admin Dusknoir
 Gender: Female
 Music: Aqua
 Double Battle: No
@@ -707,7 +707,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_ARCHIE ===
 Name: ARCHIE
 Class: Aqua Leader
-Pic: Aqua Leader Archie
+Pic: Leader Salamence
 Gender: Male
 Music: Aqua
 Items: Super Potion / Super Potion
@@ -2708,8 +2708,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_STEVE_1 ===
 Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
+Class: Performer_M
+Pic: Performer_M
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -2738,8 +2738,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARK ===
 Name: MARK
-Class: Pokemaniac
-Pic: Pokemaniac
+Class: Performer_M
+Pic: Performer_M
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -2764,8 +2764,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_STEVE_2 ===
 Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
+Class: Performer_M
+Pic: Performer_M
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -2777,8 +2777,8 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_STEVE_3 ===
 Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
+Class: Performer_M
+Pic: Performer_M
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -2794,8 +2794,8 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_STEVE_4 ===
 Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
+Class: Performer_M
+Pic: Performer_M
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -2811,8 +2811,8 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_STEVE_5 ===
 Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
+Class: Performer_M
+Pic: Performer_M
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -3465,7 +3465,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
 Name: GRUNT
 Class: Team Kleftis
-Pic: Aqua Grunt F
+Pic: Grunt Sandslash
 Gender: Female
 Music: Aqua
 Double Battle: No
@@ -3482,7 +3482,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
 Name: GRUNT
 Class: Team Kleftis
-Pic: Aqua Grunt M
+Pic: Grunt Kecleon
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -10570,7 +10570,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
 Name: GRUNT
 Class: Team Kleftis
-Pic: Aqua Grunt M
+Pic: Grunt Kecleon
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -10587,7 +10587,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_GRUNT_UNUSED ===
 Name: GRUNT
 Class: Team Magma
-Pic: Aqua Grunt F
+Pic: Grunt Sandslash
 Gender: Female
 Music: Aqua
 Double Battle: No
@@ -10604,7 +10604,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_MT_PYRE_4 ===
 Name: GRUNT
 Class: Team Kleftis
-Pic: Aqua Grunt F
+Pic: Grunt Sandslash
 Gender: Female
 Music: Aqua
 Double Battle: No
@@ -10993,7 +10993,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_WEATHER_INST_5 ===
 Name: GRUNT
 Class: Team Kleftis
-Pic: Aqua Grunt F
+Pic: Grunt Sandslash
 Gender: Female
 Music: Aqua
 Double Battle: No
@@ -13272,8 +13272,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WYATT ===
 Name: WYATT
-Class: Pokemaniac
-Pic: Pokemaniac
+Class: Performer_M
+Pic: Performer_M
 Gender: Male
 Music: Suspicious
 Double Battle: No

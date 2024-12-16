@@ -249,6 +249,11 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Performer_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Punk_Rocker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Officer;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diver;
+
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -278,7 +283,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POKEFAN_M] =                &gObjectEventGraphicsInfo_PokefanM,
     [OBJ_EVENT_GFX_WOMAN_4] =                  &gObjectEventGraphicsInfo_Woman4,
     [OBJ_EVENT_GFX_COOK] =                     &gObjectEventGraphicsInfo_Cook,
-    [OBJ_EVENT_GFX_FARMER] =        &gObjectEventGraphicsInfo_LinkReceptionist,
+    [OBJ_EVENT_GFX_FARMER] =                   &gObjectEventGraphicsInfo_LinkReceptionist,
     [OBJ_EVENT_GFX_OLD_MAN] =                  &gObjectEventGraphicsInfo_OldMan,
     [OBJ_EVENT_GFX_OLD_WOMAN] =                &gObjectEventGraphicsInfo_OldWoman,
     [OBJ_EVENT_GFX_CAMPER] =                   &gObjectEventGraphicsInfo_Camper,
@@ -492,6 +497,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
+    [OBJ_EVENT_GFX_PERFORMER_M] =              &gObjectEventGraphicsInfo_Performer_M,
+    [OBJ_EVENT_GFX_PUNK_ROCKER] =              &gObjectEventGraphicsInfo_Punk_Rocker,
+    [OBJ_EVENT_GFX_OFFICER] =                  &gObjectEventGraphicsInfo_Officer,
+    [OBJ_EVENT_GFX_DIVER] =                    &gObjectEventGraphicsInfo_Diver,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

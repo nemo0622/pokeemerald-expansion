@@ -81,7 +81,7 @@ static const union AnimCmd *const sAnims_RubySapphireMay[] ={
 const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 {
     [TRAINER_PIC_HIKER] = sAnims_Hiker,
-    [TRAINER_PIC_AQUA_GRUNT_M] = sAnims_AquaGruntM,
+    [TRAINER_PIC_GRUNT_KECLEON] = sAnims_AquaGruntM,
     [TRAINER_PIC_POKEMON_BREEDER_F] = sAnims_PokemonBreederF,
 ...
 
@@ -104,7 +104,7 @@ So, finally, it needs to look like this:
 const struct MonCoords gTrainerFrontPicCoords[] =
 {
     [TRAINER_PIC_HIKER] = {.size = 8, .y_offset = 1},
-    [TRAINER_PIC_AQUA_GRUNT_M] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_GRUNT_KECLEON] = {.size = 8, .y_offset = 1},
 ...
 
 ...

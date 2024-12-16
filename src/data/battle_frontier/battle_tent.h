@@ -566,7 +566,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
         .monSet = gSlateportBattleTentTrainerMons_Rodolfo
     },
     [SLATEPORT_TENT_TRAINER_DAVION] = {
-        .facilityClass = FACILITY_CLASS_POKEMANIAC,
+        .facilityClass = FACILITY_CLASS_PERFORMER_M,
         .trainerName = _("DAVION"),
         .speechBefore = {EC_WORD_GRAAAH, EC_WORD_GRAAAH, EC_WORD_EXCL_EXCL, EC_WORD_GRAAAH, EC_WORD_GRAAAH, EC_WORD_EXCL_EXCL},
         .speechWin = {EC_MOVE2(ROAR), EC_WORD_EXCL, -1, EC_MOVE2(ROAR), EC_WORD_EXCL_EXCL, -1},
@@ -1619,7 +1619,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
         .monSet = gVerdanturfBattleTentTrainerMons_Ronald
     },
     [VERDANTURF_TENT_TRAINER_ASHTEN] = {
-        .facilityClass = FACILITY_CLASS_POKEMANIAC,
+        .facilityClass = FACILITY_CLASS_PERFORMER_M,
         .trainerName = _("ASHTEN"),
         .speechBefore = {EC_WORD_OH_YEAH, EC_WORD_ANOTHER, EC_WORD_EXCITING, EC_WORD_BATTLE, EC_WORD_EXCL, -1},
         .speechWin = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_WIMPY, EC_WORD_AND, EC_WORD_BORING},
@@ -2500,7 +2500,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
         .monSet = gFallarborBattleTentTrainerMons_Gerardo
     },
     [FALLARBOR_TENT_TRAINER_JONN] = {
-        .facilityClass = FACILITY_CLASS_POKEMANIAC,
+        .facilityClass = FACILITY_CLASS_PERFORMER_M,
         .trainerName = _("JONN"),
         .speechBefore = {EC_WORD_THE, EC_WORD_WORLD, EC_MOVE2(SUPERPOWER), EC_MOVE2(STOMP), EC_WORD_CONTEST, EC_WORD_EXCL_EXCL},
         .speechWin = {EC_WORD_I_AM, EC_WORD_NO_1, EC_WORD_EXCL_EXCL, EC_WORD_HEAR, EC_WORD_ME, EC_MOVE2(ROAR)},

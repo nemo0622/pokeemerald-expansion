@@ -390,6 +390,11 @@ const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/pokemon/question_m
 const u16 gObjectEventPaletteEmotes[] = INCBIN_U16("graphics/misc/emotes.gbapal");
 const u16 gObjectEventPaletteNeonLight[] = INCBIN_U16("graphics/object_events/palettes/neon_light.gbapal");
 
+const u32 gObjectEventPic_Performer_M[] = INCBIN_U32("graphics/object_events/pics/people/performer_m.4bpp");
+const u32 gObjectEventPic_Punk_Rocker[] = INCBIN_U32("graphics/object_events/pics/people/punk_rocker.4bpp");
+const u32 gObjectEventPic_Officer[] = INCBIN_U32("graphics/object_events/pics/people/officer.4bpp");
+const u32 gObjectEventPic_Diver[] = INCBIN_U32("graphics/object_events/pics/people/diver.4bpp");
+
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");
 const u32 gObjectEventPic_UltraBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_ultra.4bpp");

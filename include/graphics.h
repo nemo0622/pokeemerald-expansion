@@ -3379,5 +3379,17 @@ extern const u32 gBattleIcons_Pal2[];
 
 extern const u32 gTrainerFrontPic_Farmer[];
 extern const u32 gTrainerPalette_Farmer[];
+extern const u32 gTrainerFrontPic_Performer_F[];
+extern const u32 gTrainerPalette_Performer_F[];
+extern const u32 gTrainerFrontPic_Scientist_F[];
+extern const u32 gTrainerPalette_Scientist_F[];
+extern const u32 gTrainerFrontPic_Punk_Rocker[];
+extern const u32 gTrainerPalette_Punk_Rocker[];
+extern const u32 gTrainerFrontPic_Officer[];
+extern const u32 gTrainerPalette_Officer[];
+extern const u32 gTrainerFrontPic_Worker[];
+extern const u32 gTrainerPalette_Worker[];
+extern const u32 gTrainerFrontPic_Diver[];
+extern const u32 gTrainerPalette_Diver[];
 
 #endif //GUARD_GRAPHICS_H

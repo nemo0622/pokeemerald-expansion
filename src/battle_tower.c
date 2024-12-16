@@ -91,7 +91,7 @@ const u8 gTowerMaleFacilityClasses[30] =
     FACILITY_CLASS_TUBER_M,
     FACILITY_CLASS_COOLTRAINER_M,
     FACILITY_CLASS_RICH_BOY,
-    FACILITY_CLASS_POKEMANIAC,
+    FACILITY_CLASS_PERFORMER_M,
     FACILITY_CLASS_SWIMMER_M,
     FACILITY_CLASS_BLACK_BELT,
     FACILITY_CLASS_GUITARIST,
@@ -218,7 +218,7 @@ static const u8 sRubyFacilityClassToEmerald[RS_FACILITY_CLASSES_COUNT - 2][2] =
     {RS_FACILITY_CLASS_LADY, FACILITY_CLASS_LADY},
     {RS_FACILITY_CLASS_BEAUTY, FACILITY_CLASS_BEAUTY},
     {RS_FACILITY_CLASS_RICH_BOY, FACILITY_CLASS_RICH_BOY},
-    {RS_FACILITY_CLASS_POKEMANIAC, FACILITY_CLASS_POKEMANIAC},
+    {RS_FACILITY_CLASS_PERFORMER_M, FACILITY_CLASS_PERFORMER_M},
     {RS_FACILITY_CLASS_SWIMMER_M, FACILITY_CLASS_SWIMMER_M},
     {RS_FACILITY_CLASS_BLACK_BELT, FACILITY_CLASS_BLACK_BELT},
     {RS_FACILITY_CLASS_GUITARIST, FACILITY_CLASS_GUITARIST},
@@ -553,9 +553,9 @@ static const u8 *const sPartnerTextsCoolTrainerF[] =
     PARTNER_TEXTS(CoolTrainerF)
 };
 
-static const u8 *const sPartnerTextsPokemaniac[] =
+static const u8 *const sPartnerTextsPerformer_M[] =
 {
-    PARTNER_TEXTS(Pokemaniac)
+    PARTNER_TEXTS(Performer_M)
 };
 
 static const u8 *const sPartnerTextsKindler[] =
@@ -661,7 +661,7 @@ struct
     {FACILITY_CLASS_RUIN_MANIAC,           sPartnerTextsRuinManiac},
     {FACILITY_CLASS_COOLTRAINER_M,         sPartnerTextsCoolTrainerM},
     {FACILITY_CLASS_COOLTRAINER_F,         sPartnerTextsCoolTrainerF},
-    {FACILITY_CLASS_POKEMANIAC,            sPartnerTextsPokemaniac},
+    {FACILITY_CLASS_PERFORMER_M,           sPartnerTextsPerformer_M},
     {FACILITY_CLASS_KINDLER,               sPartnerTextsKindler},
     {FACILITY_CLASS_CAMPER,                sPartnerTextsCamper},
     {FACILITY_CLASS_PICNICKER,             sPartnerTextsPicnicker},

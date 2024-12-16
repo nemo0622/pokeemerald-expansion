@@ -68,10 +68,10 @@ const u8 gText_MatchCallRichBoy_Winston_Pokemon[] = _("I spent big money on it!"
 const u8 gText_MatchCallRichBoy_Winston_Intro1[] = _("I, being rich, sleep in a");
 const u8 gText_MatchCallRichBoy_Winston_Intro2[] = _("custom POKéMON bed.");
 
-const u8 gText_MatchCallPokeManiac_Steve_Strategy[] = _("Wrestle down with power.");
-const u8 gText_MatchCallPokeManiac_Steve_Pokemon[] = _("Took all night to catch.");
-const u8 gText_MatchCallPokeManiac_Steve_Intro1[] = _("Big, burly, and buff");
-const u8 gText_MatchCallPokeManiac_Steve_Intro2[] = _("POKéMON are the best...");
+const u8 gText_MatchCallPerformer_M_Steve_Strategy[] = _("Wrestle down with power.");
+const u8 gText_MatchCallPerformer_M_Steve_Pokemon[] = _("Took all night to catch.");
+const u8 gText_MatchCallPerformer_M_Steve_Intro1[] = _("Big, burly, and buff");
+const u8 gText_MatchCallPerformer_M_Steve_Intro2[] = _("POKéMON are the best...");
 
 const u8 gText_MatchCallSwimmer_Tony_Strategy[] = _("Ram at full speed!");
 const u8 gText_MatchCallSwimmer_Tony_Pokemon[] = _("Funky WATER type!");
@@ -404,7 +404,7 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_THALIA] = MCFLAVOR(Beauty_Thalia),
     [REMATCH_JESSICA] = MCFLAVOR(Beauty_Jessica),
     [REMATCH_WINSTON] = MCFLAVOR(RichBoy_Winston),
-    [REMATCH_STEVE] = MCFLAVOR(PokeManiac_Steve),
+    [REMATCH_STEVE] = MCFLAVOR(Performer_M_Steve),
     [REMATCH_TONY] = MCFLAVOR(Swimmer_Tony),
     [REMATCH_NOB] = MCFLAVOR(BlackBelt_Nob),
     [REMATCH_KOJI] = MCFLAVOR(BlackBelt_Koji),

@@ -33,7 +33,7 @@
 #line 86
         .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
 #line 87
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_GRUNT_KECLEON,
         .encounterMusic_gender = 
 #line 89
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -1487,7 +1487,7 @@ F_TRAINER_FEMALE |
 #line 675
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 676
-        .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
+        .trainerPic = TRAINER_PIC_ADMIN_DUSKNOIR,
         .encounterMusic_gender = 
 #line 677
 F_TRAINER_FEMALE | 
@@ -1532,7 +1532,7 @@ F_TRAINER_FEMALE |
 #line 692
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 693
-        .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
+        .trainerPic = TRAINER_PIC_ADMIN_DUSKNOIR,
         .encounterMusic_gender = 
 #line 694
 F_TRAINER_FEMALE | 
@@ -1577,7 +1577,7 @@ F_TRAINER_FEMALE |
 #line 709
         .trainerClass = TRAINER_CLASS_AQUA_LEADER,
 #line 710
-        .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,
+        .trainerPic = TRAINER_PIC_LEADER_SALAMENCE,
         .encounterMusic_gender = 
 #line 712
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -6627,9 +6627,9 @@ F_TRAINER_FEMALE |
 #line 2710
         .trainerName = _("STEVE"),
 #line 2711
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
+        .trainerClass = TRAINER_CLASS_PERFORMER_M,
 #line 2712
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_PERFORMER_M,
         .encounterMusic_gender = 
 #line 2714
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6704,9 +6704,9 @@ F_TRAINER_FEMALE |
 #line 2740
         .trainerName = _("MARK"),
 #line 2741
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
+        .trainerClass = TRAINER_CLASS_PERFORMER_M,
 #line 2742
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_PERFORMER_M,
         .encounterMusic_gender = 
 #line 2744
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6770,9 +6770,9 @@ F_TRAINER_FEMALE |
 #line 2766
         .trainerName = _("STEVE"),
 #line 2767
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
+        .trainerClass = TRAINER_CLASS_PERFORMER_M,
 #line 2768
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_PERFORMER_M,
         .encounterMusic_gender = 
 #line 2770
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6802,9 +6802,9 @@ F_TRAINER_FEMALE |
 #line 2779
         .trainerName = _("STEVE"),
 #line 2780
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
+        .trainerClass = TRAINER_CLASS_PERFORMER_M,
 #line 2781
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_PERFORMER_M,
         .encounterMusic_gender = 
 #line 2783
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6845,9 +6845,9 @@ F_TRAINER_FEMALE |
 #line 2796
         .trainerName = _("STEVE"),
 #line 2797
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
+        .trainerClass = TRAINER_CLASS_PERFORMER_M,
 #line 2798
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_PERFORMER_M,
         .encounterMusic_gender = 
 #line 2800
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6888,9 +6888,9 @@ F_TRAINER_FEMALE |
 #line 2813
         .trainerName = _("STEVE"),
 #line 2814
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
+        .trainerClass = TRAINER_CLASS_PERFORMER_M,
 #line 2815
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_PERFORMER_M,
         .encounterMusic_gender = 
 #line 2817
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -8524,7 +8524,7 @@ F_TRAINER_FEMALE |
 #line 3467
         .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
 #line 3468
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_GRUNT_SANDSLASH,
         .encounterMusic_gender = 
 #line 3469
 F_TRAINER_FEMALE | 
@@ -8569,7 +8569,7 @@ F_TRAINER_FEMALE |
 #line 3484
         .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
 #line 3485
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_GRUNT_KECLEON,
         .encounterMusic_gender = 
 #line 3487
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -26467,7 +26467,7 @@ F_TRAINER_FEMALE |
 #line 10572
         .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
 #line 10573
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_GRUNT_KECLEON,
         .encounterMusic_gender = 
 #line 10575
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -26510,7 +26510,7 @@ F_TRAINER_FEMALE |
 #line 10589
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 10590
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_GRUNT_SANDSLASH,
         .encounterMusic_gender = 
 #line 10591
 F_TRAINER_FEMALE | 
@@ -26555,7 +26555,7 @@ F_TRAINER_FEMALE |
 #line 10606
         .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
 #line 10607
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_GRUNT_SANDSLASH,
         .encounterMusic_gender = 
 #line 10608
 F_TRAINER_FEMALE | 
@@ -27538,7 +27538,7 @@ F_TRAINER_FEMALE |
 #line 10995
         .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
 #line 10996
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_GRUNT_SANDSLASH,
         .encounterMusic_gender = 
 #line 10997
 F_TRAINER_FEMALE | 
@@ -33247,9 +33247,9 @@ F_TRAINER_FEMALE |
 #line 13274
         .trainerName = _("WYATT"),
 #line 13275
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
+        .trainerClass = TRAINER_CLASS_PERFORMER_M,
 #line 13276
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerPic = TRAINER_PIC_PERFORMER_M,
         .encounterMusic_gender = 
 #line 13278
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,

@@ -1357,3 +1357,19 @@ static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
 };
 
 extern const struct SpriteFrameImage gFieldEffectObjectPicTable_BallLight[];
+
+static const struct SpriteFrameImage sPicTable_Performer_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Performer_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Punk_Rocker[] = {
+    overworld_ascending_frames(gObjectEventPic_Punk_Rocker, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Officer[] = {
+    overworld_ascending_frames(gObjectEventPic_Officer, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Diver[] = {
+    overworld_ascending_frames(gObjectEventPic_Diver, 4, 4),
+};

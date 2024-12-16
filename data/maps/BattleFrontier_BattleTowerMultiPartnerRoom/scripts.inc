@@ -1538,25 +1538,25 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFReject::
 	.string "I was thinking how we would be\n"
 	.string "one tough team…$"
 
-BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacIntro::
+BattleFrontier_BattleTowerMultiPartnerRoom_Text_Performer_MIntro::
 	.string "Heyo!\n"
 	.string "I'm {STR_VAR_1}, the POKéMANIAC!$"
 
-BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacMon1::
+BattleFrontier_BattleTowerMultiPartnerRoom_Text_Performer_MMon1::
 	.string "What does a guy like me have?\n"
 	.string "One {STR_VAR_2} with {STR_VAR_1} and$"
 
-BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacMon2Ask::
+BattleFrontier_BattleTowerMultiPartnerRoom_Text_Performer_MMon2Ask::
 	.string "one {STR_VAR_2} with {STR_VAR_1},\n"
 	.string "that's what!\p"
 	.string "Let's do it!\n"
 	.string "We'll stomp around as a tag team!$"
 
-BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacAccept::
+BattleFrontier_BattleTowerMultiPartnerRoom_Text_Performer_MAccept::
 	.string "Good call!\n"
 	.string "I'll register the both of us!$"
 
-BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacReject::
+BattleFrontier_BattleTowerMultiPartnerRoom_Text_Performer_MReject::
 	.string "My POKéMON are brutal!\n"
 	.string "It's not my fault if you regret this!$"
 

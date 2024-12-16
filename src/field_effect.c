@@ -2787,10 +2787,10 @@ static void LoadFieldMoveOutdoorStreaksTilemap(u16 offs)
 static void (*const sFieldMoveShowMonIndoorsEffectFuncs[])(struct Task *) = {
     FieldMoveShowMonIndoorsEffect_Init,
     FieldMoveShowMonIndoorsEffect_LoadGfx,
-    FieldMoveShowMonIndoorsEffect_SlideBannerOn,
-    FieldMoveShowMonIndoorsEffect_WaitForMon,
+    // FieldMoveShowMonIndoorsEffect_SlideBannerOn,
+    // FieldMoveShowMonIndoorsEffect_WaitForMon,
     FieldMoveShowMonIndoorsEffect_RestoreBg,
-    FieldMoveShowMonIndoorsEffect_SlideBannerOff,
+    // FieldMoveShowMonIndoorsEffect_SlideBannerOff,
     FieldMoveShowMonIndoorsEffect_End,
 };
 

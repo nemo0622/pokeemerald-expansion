@@ -35,10 +35,7 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 - port seaglass learnsets and statsets
 - give umbreon foul play for cecilily
 - fully implement VAR_DIFFICULTY + place to change it in acrisia university
-- replace Ninja Boy class with something like Warrior Boy
-- Do Trainer Sprites for all regular NPC trainers
-    - Remember Solo993 unova devamps; Substitube Discord sprites
-    - Replace Pokemaniac class with Nurse or something
+- Begin sprite process (first two or three lines, then back to mapping)
 
 POKéMON TO COMMISSION SPRITES FOR:
 - Impidimp, Morgrem, Grimmsnarl
@@ -99,12 +96,6 @@ GREEK PHRASES AND STUFF:
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
-- Shallow water colors are fucked at night time - FIX: should just be replaced by sand for lazy solution
-- Time acts weird at start - FIX: every new game, set time to 9 am!
-- Water colors wrong at night (palette problem?)
-- Pokédex START/SELECT buttons on menu messed up - FIX: tilemap fix
-- Field moves work with badge, don't check having HM! - FIX: probable a bag check in field move functions
-- Field move banner shows in caves
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
@@ -147,12 +138,13 @@ Many, many talented developers and artists are responsible for making this proje
 - Trainer Sprites:
     - Many Sapphire-based GBC sprite devamps by leesongjae620 on DeviantArt
     - Some GBC style Trainer sprites from Pokémon Crystal
-    - Professor sprite by Substitube
+    - Scientist F, Punk Rocker, Hiker, and a few other sprites from Solo993's Unova sprite devamps
+    - Professor, Performer F, Worker, and Scuba Diver sprites by Substitube
 - Overworld Sprites:
     - Many NPC sprites adapted from Pokémon Crystal
     - Some NPC sprites by Anima_nel on itch.io
     - Some NPC sprites by kesterhenrickpixels on DeviantArt
-    - Player sprites by Solo993
+    - Player sprites by me!
 - Overworld Pokémon Sprites:
     - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
     - Megaman-Omega on DeviantArt: Onix, Steelix, Lugia, Ho-oh, Lotad, Lombre, Ludicolo, Taillow, Swellow, Surskit, Masquerain, Shroomish, Breloom, Whismur, Loudred, Exploud, Makuhita, Hariyama, Sableye, Mawile, Aron, Lairon, Aggron, Volbeat, Illumise, Torkoal, Cacnea, Cacturne, Swablu, Altaria, Lileep, Cradily, Anorith, Armaldo, Feebas, Milotic, Shuppet, Banette, Duskull, Dusclops, Chimecho, Absol, Relicanth, Bagon, Salamence, Kyogre, Groudon, Rayquaza, Tangrowth, Electivire, Magmortar, Gliscor, Mamoswine, Gallade, Froslass, Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon

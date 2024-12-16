@@ -1033,7 +1033,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .monSet = gBattleFrontierTrainerMons_Kelsey
     },
     [FRONTIER_TRAINER_JALEN] = {
-        .facilityClass = FACILITY_CLASS_POKEMANIAC,
+        .facilityClass = FACILITY_CLASS_PERFORMER_M,
         .trainerName = _("JALEN"),
         .speechBefore = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_ALLOW, EC_WORD_POKEMON, EC_WORD_TO, EC_MOVE(THRASH)},
         .speechWin = {EC_WORD_HAHAHA, EC_WORD_EXCL, EC_WORD_ARE, EC_WORD_YOU, EC_WORD_ANGRY, EC_WORD_QUES},
@@ -1041,7 +1041,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .monSet = gBattleFrontierTrainerMons_Jalen
     },
     [FRONTIER_TRAINER_GRIFFEN] = {
-        .facilityClass = FACILITY_CLASS_POKEMANIAC,
+        .facilityClass = FACILITY_CLASS_PERFORMER_M,
         .trainerName = _("GRIFFEN"),
         .speechBefore = {EC_WORD_I, EC_MOVE2(SWALLOW), EC_MOVE2(SLUDGE), EC_WORD_TO, EC_MOVE2(TRANSFORM), EC_WORD_MYSELF},
         .speechWin = {EC_WORD_I, EC_WORD_HAVE, EC_WORD_A, EC_MOVE(GROWTH), EC_WORD_OF, EC_MOVE2(ACID_ARMOR)},
@@ -1049,7 +1049,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .monSet = gBattleFrontierTrainerMons_Griffen
     },
     [FRONTIER_TRAINER_XANDER] = {
-        .facilityClass = FACILITY_CLASS_POKEMANIAC,
+        .facilityClass = FACILITY_CLASS_PERFORMER_M,
         .trainerName = _("XANDER"),
         .speechBefore = {EC_WORD_I, EC_WORD_GOT, EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_ON, EC_WORD_RENTAL},
         .speechWin = {EC_WORD_IT_S, EC_WORD_INCREDIBLE, EC_WORD_MY, EC_WORD_RENTAL, EC_WORD_POKEMON, EC_WORD_WON},
@@ -2065,7 +2065,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .monSet = gBattleFrontierTrainerMons_Lexie
     },
     [FRONTIER_TRAINER_MILLER] = {
-        .facilityClass = FACILITY_CLASS_POKEMANIAC,
+        .facilityClass = FACILITY_CLASS_PERFORMER_M,
         .trainerName = _("MILLER"),
         .speechBefore = {EC_WORD_HELLO, EC_WORD_QUES, EC_EMPTY_WORD, EC_WORD_HELLO, EC_WORD_QUES_EXCL, EC_EMPTY_WORD},
         .speechWin = {EC_WORD_HELLO, EC_WORD_MOTHER, EC_WORD_EXCL, EC_WORD_I, EC_WORD_WON, EC_WORD_EXCL},
@@ -2073,7 +2073,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .monSet = gBattleFrontierTrainerMons_Miller
     },
     [FRONTIER_TRAINER_MARV] = {
-        .facilityClass = FACILITY_CLASS_POKEMANIAC,
+        .facilityClass = FACILITY_CLASS_PERFORMER_M,
         .trainerName = _("MARV"),
         .speechBefore = {EC_WORD_YOU, EC_WORD_CAN, EC_WORD_LOSE, EC_WORD_YOUR, EC_MOVE(SWAGGER), EC_WORD_NOW},
         .speechWin = {EC_WORD_THERE, EC_WORD_IS, EC_WORD_NO, EC_MOVE(SWAGGER), EC_WORD_LEFT, EC_WORD_EH_QUES},
@@ -2081,7 +2081,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .monSet = gBattleFrontierTrainerMons_Marv
     },
     [FRONTIER_TRAINER_LAYTON] = {
-        .facilityClass = FACILITY_CLASS_POKEMANIAC,
+        .facilityClass = FACILITY_CLASS_PERFORMER_M,
         .trainerName = _("LAYTON"),
         .speechBefore = {EC_WORD_I, EC_WORD_KNOW, EC_WORD_I_AM, EC_WORD_TOTALLY, EC_WORD_COOL, EC_WORD_EXCL},
         .speechWin = {EC_WORD_YOU, EC_WORD_CAN, EC_WORD_LOOK, EC_WORD_UP, EC_WORD_TO, EC_WORD_ME},
