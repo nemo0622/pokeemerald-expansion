@@ -9,6 +9,8 @@ This ROM Hack takes place in a brand new region, with a whole new adventure ahea
 Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals and ecosystems. After creating Pokémon Emerald Seaglass, I really wanted to continue my ROM Hacking journey, but I wanted to get more experimental and tie in my real world interests. As a Biology student in college, I have been constantly inspired by classes and what I've learned, and now I hope to apply this passion in a Pokémon game. I hope this experience helps people to think more about the environment around them! :)
 
 ## Feature List
+- Over 350 Pokémon from Generations 1-9 in a beautiful GBC style!
+- Pokémon Reworks ported from Pokémon Emerald Seaglass, with new rebalancing + polish!
 - Day/Night System with FakeRTC
     - Every second in real time is 20 seconds in game
 - DexNav functionality, including bug fixed from Emerald Seaglass
@@ -18,8 +20,6 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
     - Codes for 99 items, such as Rare Candies and Nuggets
     - Codes for a random starter of a selected type (good for monotype runs or randomized starters!)
     - Can find codes in documentation
-- Variable Wild Encounters, randomized between a few balanced preset options every New Game
-    - Uses: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Easily-Toggle-Different-Wild-Encounter-Tables
 - Soft Level Caps to keep balance
 - HM Revamp ported from Emerald Seaglass
     - Pokémon who can learn HM moves can use them in the field without them taking a move slot!

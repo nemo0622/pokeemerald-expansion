@@ -1019,8 +1019,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 3,
         .weight = 25,
         .description = COMPOUND_STRING(
-            "The pads of its paws are electricity-\n"
-            "discharging organs. Pawmi fires\n"
+            "The pads of its paws are\n"
+            "electricity-discharging organs. Pawmi fires\n"
             "electricity from its forepaws while\n"
             "standing unsteadily on its hind legs."),
         .pokemonScale = 356,
@@ -3215,12 +3215,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Scovillain,
         .iconPalIndex = 1,
         FOOTPRINT(Scovillain)
-        OVERWORLD_SET_ANIM(
+        OVERWORLD(
             sPicTable_Scovillain,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following_Asym,
+            //sAnimTable_Following_Asym,
             gOverworldPalette_Scovillain,
             gShinyOverworldPalette_Scovillain
         )
@@ -3495,7 +3495,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_OWN_TEMPO, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_HUGE_POWER },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Tinkatink"),
         .cryId = CRY_TINKATINK,
@@ -3526,12 +3526,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Tinkatink,
         .iconPalIndex = 1,
         FOOTPRINT(Tinkatink)
-        OVERWORLD_SET_ANIM(
+        OVERWORLD(
             sPicTable_Tinkatink,
             SIZE_32x32,
             SHADOW_SIZE_S,
             TRACKS_FOOT,
-            sAnimTable_Following_Asym,
+            //sAnimTable_Following_Asym,
             gOverworldPalette_Tinkatink,
             gShinyOverworldPalette_Tinkatink
         )
@@ -3544,8 +3544,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_TINKATUFF] =
     {
         .baseHP        = 65,
-        .baseAttack    = 55,
-        .baseDefense   = 55,
+        .baseAttack    = 65,
+        .baseDefense   = 65,
         .baseSpeed     = 78,
         .baseSpAttack  = 45,
         .baseSpDefense = 82,
@@ -3558,7 +3558,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_OWN_TEMPO, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_HUGE_POWER },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Tinkatuff"),
         .cryId = CRY_TINKATUFF,
@@ -3589,12 +3589,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Tinkatuff,
         .iconPalIndex = 1,
         FOOTPRINT(Tinkatuff)
-        OVERWORLD_SET_ANIM(
+        OVERWORLD(
             sPicTable_Tinkatuff,
             SIZE_32x32,
             SHADOW_SIZE_S,
             TRACKS_FOOT,
-            sAnimTable_Following_Asym,
+            //sAnimTable_Following_Asym,
             gOverworldPalette_Tinkatuff,
             gShinyOverworldPalette_Tinkatuff
         )
@@ -3605,9 +3605,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_TINKATON] =
     {
-        .baseHP        = 85,
+        .baseHP        = 90,
         .baseAttack    = 75,
-        .baseDefense   = 77,
+        .baseDefense   = 82,
         .baseSpeed     = 94,
         .baseSpAttack  = 70,
         .baseSpDefense = 105,
@@ -3620,7 +3620,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_OWN_TEMPO, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_HUGE_POWER },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Tinkaton"),
         .cryId = CRY_TINKATON,
@@ -3651,12 +3651,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Tinkaton,
         .iconPalIndex = 1,
         FOOTPRINT(Tinkaton)
-        OVERWORLD_SET_ANIM(
+        OVERWORLD(
             sPicTable_Tinkaton,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            sAnimTable_Following_Asym,
+            //sAnimTable_Following_Asym,
             gOverworldPalette_Tinkaton,
             gShinyOverworldPalette_Tinkaton
         )
@@ -3939,8 +3939,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 13,
         .weight = 602,
         .description = COMPOUND_STRING(
-            "This Pokémon changes its appearance\n"
-            "if it hears its allies calling for\n"
+            "This Pokémon changes its\n"
+            "appearance if it hears its allies calling for\n"
             "help. Palafin will never show\n"
             "anybody its moment of transformation."),
         .pokemonScale = 356,
@@ -4002,8 +4002,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .weight = 974,
         .description = COMPOUND_STRING(
             "This Pokémon's ancient genes have\n"
-            "awakened. It is now so extraordinarily\n"
-            "strong that it can easily lift a\n"
+            "awakened. It is now so\n"
+            "extraordinarily strong that it can easily lift a\n"
             "cruise ship with one fin."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
@@ -6232,7 +6232,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_WoChien
         )
         .isLegendary = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sWoChienLevelUpLearnset,
         .teachableLearnset = sWoChienTeachableLearnset,
     },
@@ -6296,7 +6295,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_ChienPao
         )
         .isLegendary = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sChienPaoLevelUpLearnset,
         .teachableLearnset = sChienPaoTeachableLearnset,
     },
@@ -6360,7 +6358,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_TingLu
         )
         .isLegendary = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTingLuLevelUpLearnset,
         .teachableLearnset = sTingLuTeachableLearnset,
     },
@@ -6425,7 +6422,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_ChiYu
         )
         .isLegendary = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sChiYuLevelUpLearnset,
         .teachableLearnset = sChiYuTeachableLearnset,
     },
@@ -6618,7 +6614,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sKoraidonLevelUpLearnset,
         .teachableLearnset = sKoraidonTeachableLearnset,
     },
@@ -6683,7 +6678,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMiraidonLevelUpLearnset,
         .teachableLearnset = sMiraidonTeachableLearnset,
     },
@@ -7119,7 +7113,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_Okidogi
         )
         .isLegendary = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sOkidogiLevelUpLearnset,
         .teachableLearnset = sOkidogiTeachableLearnset,
     },
@@ -7183,7 +7176,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gShinyOverworldPalette_Munkidori
         )
         .isLegendary = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMunkidoriLevelUpLearnset,
         .teachableLearnset = sMunkidoriTeachableLearnset,
     },
@@ -7245,9 +7237,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             TRACKS_FOOT,
             gOverworldPalette_Fezandipiti,
             gShinyOverworldPalette_Fezandipiti
-        )
+        )        
         .isLegendary = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sFezandipitiLevelUpLearnset,
         .teachableLearnset = sFezandipitiTeachableLearnset,
     },
@@ -7313,7 +7304,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .formChangeTable = sOgerponFormChangeTable,                                         \
         .isLegendary = TRUE,                                                                \
         .isTeraForm = isTeraform,                                                           \
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,         \
     }
 
     [SPECIES_OGERPON_TEAL_MASK]             = OGERPON_SPECIES_INFO(Teal,        Mask,     TYPE_GRASS, ABILITY_DEFIANT,                        BODY_COLOR_GREEN, 1, FALSE),
@@ -7645,7 +7635,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTerapagosLevelUpLearnset,
         .teachableLearnset = sTerapagosTeachableLearnset,
         .formSpeciesIdTable = sTerapagosFormSpeciesIdTable,
@@ -7713,7 +7702,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTerapagosLevelUpLearnset,
         .teachableLearnset = sTerapagosTeachableLearnset,
         .formSpeciesIdTable = sTerapagosFormSpeciesIdTable,
@@ -7772,7 +7760,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .isLegendary = TRUE,
         .isTeraForm = TRUE,
         .isFrontierBanned = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTerapagosLevelUpLearnset,
         .teachableLearnset = sTerapagosTeachableLearnset,
         .formSpeciesIdTable = sTerapagosFormSpeciesIdTable,
@@ -7839,7 +7826,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .isMythical = TRUE,
         .isFrontierBanned = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sPecharuntLevelUpLearnset,
         .teachableLearnset = sPecharuntTeachableLearnset,
     },
