@@ -511,12 +511,52 @@ script AcrisiaCity_University_HealParty
     speakername("Computer")
     msgbox(format("-bzzt bzzt-\l Healing Pokémon..."))
     closemessage
-    playfanfare(MUS_LEVEL_UP)
+    playfanfare(MUS_HEAL)
     special(HealPlayerParty)
     delay(120)
     waitfanfare
     speakername("Computer")
-    msgbox(format("Pokémon are healthy and ready to go."))
+    msgbox(format("Pokémon are healthy and ready to go!"))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_University_CustomSettingsComputer
+{
+    lock
+    speakername("Computer")
+    msgbox(format("-bzzt bzzt-\n Welcome to the Sunset Settings Menu!"))
+    closemessage
+
+    // setting 1: difficulty
+    if(var(VAR_DIFFICULTY) == 0)
+    {
+        bufferstring(STR_VAR_1, "NORMAL")
+    }
+    else
+    {
+        bufferstring(STR_VAR_1, "HARD")
+    }
+    speakername("Computer")
+    msgbox(format("{COLOR GREEN}DIFFICULTY OPTION{COLOR DARK_GRAY}\n Should {COLOR RED}HARD MODE{COLOR DARK_GRAY} be enabled? This increases opponent Pokémon levels steadily across the game, adds {COLOR RED}strict Level Caps{COLOR DARK_GRAY}, and {COLOR RED}gives Gym Leaders more difficult teams{COLOR DARK_GRAY}.\p The current difficulty is {STR_VAR_1}. Should {COLOR RED}HARD MODE{COLOR DARK_GRAY} be enabled?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0) // no
+    {
+        setvar(VAR_DIFFICULTY, 0)
+        speakername("Computer")
+        msgbox(format("The game has been set to {COLOR GREEN}NORMAL DIFFICULTY{COLOR DARK_GRAY}."))
+        closemessage
+    }
+    else
+    {
+        setvar(VAR_DIFFICULTY, 1)
+        speakername("Computer")
+        msgbox(format("The game has been set to {COLOR RED}HARD DIFFICULTY{COLOR DARK_GRAY}."))
+        closemessage
+    }
+
+    speakername("Computer")
+    msgbox(format("All settings have been set. Enjoy your time in the Ilios Region!"))
     closemessage
     release
     end
