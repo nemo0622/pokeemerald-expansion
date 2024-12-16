@@ -20,7 +20,9 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
     - Codes for 99 items, such as Rare Candies and Nuggets
     - Codes for a random starter of a selected type (good for monotype runs or randomized starters!)
     - Can find codes in documentation
-- Soft Level Caps to keep balance
+- Difficulty Modes!
+    - Normal Mode: Soft Level Caps, Standard Gym Leader teams. Can likely beat the game with most Pokémon teams, with a few battles requiring extra planning.
+    - Hard Mode: Hard Level Caps, Modified Gym Leaders to be more difficult fights. Opponents gain extra levels as the game progresses, ending in a +5 level bonus to opponents. Planning before Gym battles is key, as their Pokémon have stronger moves and more coverage.
 - HM Revamp ported from Emerald Seaglass
     - Pokémon who can learn HM moves can use them in the field without them taking a move slot!
 - Various QOL Changes, such as:
@@ -32,17 +34,18 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 
 ## Future Development Plans
 
-- port seaglass learnsets and statsets
-- give umbreon foul play for cecilily
 - fully implement VAR_DIFFICULTY + place to change it in acrisia university
 - Begin sprite process (first two or three lines, then back to mapping)
 
-POKéMON TO COMMISSION SPRITES FOR:
-- Impidimp, Morgrem, Grimmsnarl
-- Salazzle
-- Lycanroc forms
-- Mudsdale
-- Galarian Rapidash
+MAJOR TODOS:
+- Finish spritesheet image (with comissioned sprites & my custom sprites)
+    - Comms (Egg3ggEgg): Lycanroc Forms, Impidimp, Morgrem, Grimmsnarl, and Salazzle
+    - Nemo622 Customs: Brionne, Primarina, some Oricorio forms, Galarian Rapidash
+- Implement GBC Pokémon sprites into rom (front, back, followers, + icons)
+- Continue mapping, adding NPCs, and scripting
+- REBALANCING: go through all Pokémon and balance/rebalance, update movesets, etc.
+    - Learn from Seaglass feedback! Less extreme buffs, more balance
+
 
 GREEK PHRASES AND STUFF:
 - "Opa!" - directly translates to "Oops", but really used to show appreciation/enthusiasm
