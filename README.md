@@ -23,6 +23,7 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 - Difficulty Modes!
     - Normal Mode: Soft Level Caps, Standard Gym Leader teams. Can likely beat the game with most Pokémon teams, with a few battles requiring extra planning.
     - Hard Mode: Hard Level Caps, Modified Gym Leaders to be more difficult fights. Opponents gain extra levels as the game progresses, ending in a +5 level bonus to opponents. Planning before Gym battles is key, as their Pokémon have stronger moves and more coverage.
+    - Difficulty toggled at computer on far right side of Acrisia University building!
 - HM Revamp ported from Emerald Seaglass
     - Pokémon who can learn HM moves can use them in the field without them taking a move slot!
 - Various QOL Changes, such as:
@@ -34,7 +35,6 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 
 ## Future Development Plans
 
-- fully implement VAR_DIFFICULTY + place to change it in acrisia university
 - Begin sprite process (first two or three lines, then back to mapping)
 
 MAJOR TODOS:
