@@ -18725,7 +18725,6 @@ SelfDestructExplode:
 Move_SLAM::
 	loadspritegfx ANIM_TAG_SLAM_HIT
 	loadspritegfx ANIM_TAG_IMPACT
-	monbg ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_ATTACKER
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 20, 3, 0, 4
@@ -18733,14 +18732,19 @@ Move_SLAM::
 	createsprite gSlamHitSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
 	delay 3
 	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, ANIM_TARGET, 1
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 1, -12, 10, 0, 3
 	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 5
-	delay 3
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 0, 3, 6, 1
-	waitforvisualfinish
-	delay 5
-	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 1, 0, 6
+	delay 1
+@ Smash bros-esk flyaway animation start - credit to JOKAT and Sadwolf in the RHH discord!
+	loadspritegfx ANIM_TAG_SPARKLE_4
+	createvisualtask AnimTask_TwinkleTackleLaunch, 0x2, 50
+    delay 50
+    playsewithpan SE_M_DETECT, SOUND_PAN_TARGET
+    createsprite gTwinkleTackleTwinkleSpriteTemplate, ANIM_TARGET, 13, 0x0, 0x0, ANIM_TARGET @detect star
+    waitforvisualfinish
+    blendoff
+    createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 0x0, 0x6
+@ Blast away animation end
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
 	blendoff

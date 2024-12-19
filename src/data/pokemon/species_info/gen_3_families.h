@@ -2877,7 +2877,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_POISON_HEAL, ABILITY_TECHNICIAN },
     #else
-        .abilities = { ABILITY_EFFECT_SPORE, ABILITY_NONE, ABILITY_TECHNICIAN },
+        .abilities = { ABILITY_EFFECT_SPORE, ABILITY_ATHLETIC, ABILITY_TECHNICIAN },
     #endif
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Breloom"),

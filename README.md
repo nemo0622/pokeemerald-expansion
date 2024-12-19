@@ -35,12 +35,7 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 
 ## Future Development Plans
 
-- Begin sprite process (first two or three lines, then back to mapping)
-
 MAJOR TODOS:
-- Finish spritesheet image (with comissioned sprites & my custom sprites)
-    - Comms (Egg3ggEgg): Lycanroc Forms, Impidimp, Morgrem, Grimmsnarl, and Salazzle
-    - Nemo622 Customs: Brionne, Primarina, some Oricorio forms, Galarian Rapidash
 - Implement GBC Pokémon sprites into rom (front, back, followers, + icons)
 - Continue mapping, adding NPCs, and scripting
 - REBALANCING: go through all Pokémon and balance/rebalance, update movesets, etc.
@@ -162,6 +157,9 @@ Many, many talented developers and artists are responsible for making this proje
 - User Interface:
     - Title Screen: Pixel art done by me over original image [here](https://www.athens-private-tours.com/wp-content/uploads/2015/05/Acropolis-Sunset-15891085.jpg)
     - New Continue menu UI and Shop UI by mudskip (Continue menu code by Archie)
+    - Many Pokémon Party Icons based on following sprites (credited above), others by Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
+        - EeVeeEe1999: created many small sprites, especially for Gen 3, 5, 6, and 7 Pokémon
+        - A few Gen 6 icon sprites by  dragonball253 (some Kalos starter icons)
 
 
 

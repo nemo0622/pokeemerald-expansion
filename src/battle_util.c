@@ -9187,6 +9187,9 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (gMovesInfo[move].punchingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
+    case ABILITY_ATHLETIC:
+        if (gMovesInfo[move].kickingMove)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
     case ABILITY_SHEER_FORCE:
         if (MoveIsAffectedBySheerForce(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
