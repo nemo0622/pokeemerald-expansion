@@ -50,6 +50,7 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "rtc.h"
+#include "fake_rtc.h"
 
 // Menu actions
 enum
@@ -480,6 +481,11 @@ static void ShowTimeWindow(void)
     sSafariBallsWindowId = AddWindow(&sClockWindowTemplate);
     PutWindowTilemap(sSafariBallsWindowId);
     DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
+
+    struct Time* time = FakeRtc_GetCurrentTime();
+    gLocalTime.hours = time->hours;
+    gLocalTime.minutes = time->minutes;
+    gLocalTime.seconds = time->seconds;
 
     if (gLocalTime.hours < 12)
     {

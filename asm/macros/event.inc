@@ -2047,6 +2047,7 @@
 
 	@ Buffers the given text and calls the relevant standard message script (see gStdScripts).
 	.macro msgbox text:req, type=MSGBOX_DEFAULT
+	delay 1
 	loadword 0, \text
 	callstd \type
 	.endm

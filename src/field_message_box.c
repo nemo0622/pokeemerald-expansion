@@ -28,6 +28,13 @@ static void Task_DrawFieldMessage(u8 taskId)
 {
     struct Task *task = &gTasks[taskId];
 
+    if(gSpeakerName != NULL) {
+        FlagClear(FLAG_SUPPRESS_SPEAKER_NAME); // there's a speaker name
+    }
+    else {
+        FlagSet(FLAG_SUPPRESS_SPEAKER_NAME); // no speaker name
+    }
+
     switch (task->tState)
     {
         case 0:
@@ -160,11 +167,11 @@ static void StartDrawFieldMessage(void)
 
 void HideFieldMessageBox(void)
 {
+    FlagSet(FLAG_SUPPRESS_SPEAKER_NAME);
     DestroyTask_DrawFieldMessage();
     ClearDialogWindowAndFrame(0, TRUE);
     sFieldMessageBoxMode = FIELD_MESSAGE_BOX_HIDDEN;
     gSpeakerName = NULL;
-    FlagSet(FLAG_SUPPRESS_SPEAKER_NAME);
 }
 
 u8 GetFieldMessageBoxMode(void)

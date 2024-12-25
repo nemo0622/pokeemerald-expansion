@@ -145,7 +145,7 @@
 #define B_ABSORBING_ABILITY_STRING  GEN_LATEST // In Gen5+, the abilities that absorb moves of a certain type use a generic string for stat increases and decreases.
 #define B_REDIRECT_ABILITY_IMMUNITY GEN_LATEST // In Gen5+, Pokémon with Lightning Rod/Storm Drain become immune to Electric/Water-type moves and increase their Sp. Attack by 1 stage on top of the redirecting effect.
 #define B_LEAF_GUARD_PREVENTS_REST  GEN_LATEST // In Gen5+, Leaf Guard prevents the use of Rest in harsh sunlight.
-#define B_SNOW_WARNING              GEN_LATEST // In Gen9+, Snow Warning will summon snow instead of hail.
+#define B_SNOW_WARNING              GEN_8      // In Gen9+, Snow Warning will summon snow instead of hail.
 #define B_TRANSISTOR_BOOST          GEN_LATEST // In Gen9+, Transistor will only boost Electric-type moves by 1.3x as opposed to 1.5x.
 #define B_ILLUMINATE_EFFECT         GEN_LATEST // In Gen9+, Illuminate prevents accuracy reductions and ignores the target's evasion.
 #define B_WEAK_ARMOR_SPEED          GEN_LATEST // In Gen7+, Weak Armor raises Speed by 2 stages instead of 1 when hit by a physical move.
@@ -282,5 +282,14 @@
 #define SHOW_TYPES_ALWAYS   1
 #define SHOW_TYPES_CAUGHT   2
 #define B_SHOW_TYPES        SHOW_TYPES_ALWAYS // When defined as SHOW_TYPES_ALWAYS, after selecting "Fight" in battle, the types of all Pokemon are revealed. Whe defined as SHOW_TYPES_OWN, types are only revealed if the player owns the mon in question.
+
+#define B_POOL_SETTING_FAST_VERIFICATION    FALSE // Skips the pool verification for Trainer Party Pools, relies on the user creating valid pools for all trainers
+#define B_POOL_SETTING_CONSISTENT_RNG       FALSE // If set to true, the same trainer will always generate the same pool on the same save file
+#define B_POOL_SETTING_USE_FIXED_SEED       FALSE // If set to true, will use the fixed seed defined in B_POOL_SETTING_FIXED_SEED
+#define B_POOL_SETTING_FIXED_SEED           0x1D4127 // "Random" number, unless a mistake was made, it's へだら in Emerald charmap which should spell he-da-ra
+#define B_POOL_RULE_SPECIES_CLAUSE          TRUE  // Only pick a single pokemon of a unique NatDex number
+#define B_POOL_RULE_EXCLUDE_FORMS           TRUE  // Exclude different forms from the Species Clause
+#define B_POOL_RULE_ITEM_CLAUSE             TRUE  // Only allow each item to be picked once
+#define B_POOL_RULES_USE_ITEM_EXCLUSIONS    FALSE // Exclude items listed in poolItemClauseExclusions
 
 #endif // GUARD_CONFIG_BATTLE_H

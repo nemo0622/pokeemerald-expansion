@@ -89,13 +89,16 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 1
+Pool Rules: Basic
 
 Pancham
 Level: 5
-Ability: ABILITY_UNNERVE
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Scratch
-- Growl
+
+Mankey
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_EMERICK_BRONZEFIELDS === /* Farmer in BronzeFields_South */
 Name: Emerick
@@ -105,6 +108,8 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Mareep
 Level: 5
@@ -112,6 +117,14 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Nincada
 Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mudsdale
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pikipek
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSEPH_BRONZEFIELDS === /* Farmer in BronzeFields_South */
@@ -122,12 +135,22 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Phanpy
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Lillipup
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherubi
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Elekid
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -139,6 +162,8 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Sentret
 Level: 5
@@ -146,6 +171,14 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Poliwag
 Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Meowth
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Stunky
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MILON_BRONZEFIELDS === /* Bug Catcher in BronzeFields_South */
@@ -156,12 +189,23 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Grubbin
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tags: Lead
 
 Yanma
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Shroodle
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dwebble
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -176,7 +220,7 @@ AI: Check Bad Move / Check Viability
 
 Timburr
 Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 0 HP / 12 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_THERSON_BRONZEFIELDS === /* Farmer in BronzeFields_South */
 Name: Therson
@@ -186,6 +230,8 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Stunky
 Level: 7
@@ -193,6 +239,14 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Mudbray
 Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ponyta
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+SPECIES_PONYTA_GALARIAN
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LEADER_DEO === /* Gym Leader 1: Deo (replaces Brawly) */
@@ -203,10 +257,13 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
+Party Size: 3
+Pool Rules: Basic
 
 Cutiefly
 Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tags: Lead
 - Absorb
 - Fairy Wind
 - Stun Spore
@@ -220,9 +277,26 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Low Kick
 - Rock Throw
 
+Shroomish
+Level: 11
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+- Bullet Seed
+- Sleep Powder
+- Mega Drain
+
+Pumpkaboo
+Level: 11
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Shadow Sneak
+- Astonish
+- Confuse Ray
+- Bullet Seed
+
 Skiddo
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tags: Ace
 - Tackle
 - Vine Whip
 - Leech Seed
@@ -237,12 +311,22 @@ Music: Female
 Items: Potion
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Kakuna
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Metapod
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Cutiefly
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Spinarak
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -254,12 +338,22 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Lillipup
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Paras
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hoppip
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Toedscool
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -271,12 +365,22 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Hoppip
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Grubbin
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Shroodle
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cherubi
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -288,13 +392,24 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Paras
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Toedscool
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Nincada
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Pansage
 Level: 10
+Tags: Ace
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ED ===
@@ -356,10 +471,13 @@ Music: Female
 Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient
+Party Size: 3
+Pool Rules: Basic
 
 Cutiefly
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
 - Absorb
 - Draining Kiss
 - Stun Spore
@@ -373,9 +491,26 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Low Kick
 - Rock Throw
 
+Shroomish
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tackle
+- Bullet Seed
+- Spore
+- Mega Drain
+
+Pumpkaboo
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Sneak
+- Will O Wisp
+- Confuse Ray
+- Bullet Seed
+
 Skiddo
 Level: 12
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
 - Bulk Up
 - Vine Whip
 - Leech Seed
@@ -389,16 +524,27 @@ Gender: Male
 Music: Intense
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Baltoy
 Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tags: Lead
 - Mud Slap
 - Rapid Spin
 - Confusion
 - Ancient Power
 
 Chingling
+Level: 11
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Ralts
+Level: 11
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Vulpix
 Level: 11
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -423,14 +569,21 @@ Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Dwebble
+Level: 12
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Omanyte
 Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Trapinch
 Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Tags: Ace
 
 === TRAINER_ACRISIAMTNS_ULF === /* Hiker in Acrisia Mountains */
 Name: Ulf
@@ -440,12 +593,22 @@ Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Vulpix
 Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Cubone
+Level: 13
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Aron
+Level: 13
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Rockruff
 Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -457,12 +620,18 @@ Gender: Female
 Music: Intense
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Mienfoo
 Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Aipom
+Level: 13
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Timburr
 Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -474,9 +643,15 @@ Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Tynamo
 Level: 13
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Sneasel
+Level: 14
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Sneasel Hisui
@@ -491,12 +666,27 @@ Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Growlithe Hisui
 Level: 14
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Tags: Lead
 
 Lileep
+Level: 15
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Anorith
+Level: 15
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Tirtouga
+Level: 15
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Archen
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -508,12 +698,18 @@ Gender: Female
 Music: Girl
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Skorupi
 Level: 14
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Omanyte
+Level: 14
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Wooper Paldean
 Level: 14
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -525,8 +721,14 @@ Gender: Female
 Music: Intense
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 1
+Pool Rules: Basic
 
 Bronzor
+Level: 16
+IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
+
+Stufful
 Level: 16
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 
@@ -538,12 +740,40 @@ Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 1
+Pool Rules: Basic
 
 SPECIES_MINIOR_METEOR_GREEN
 Level: 17
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
 - Acrobatics
+- Defense Curl
+- Rollout
+
+SPECIES_MINIOR_METEOR_RED
+Level: 17
+IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
+- Rock Throw
+- Acrobatics
+- Defense Curl
+- Rollout
+
+SPECIES_MINIOR_METEOR_BLUE
+Level: 17
+IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
+- Rock Throw
+- Acrobatics
+- Defense Curl
+- Rollout
+
+SPECIES_MINIOR_METEOR_YELLOW
+Level: 17
+IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
+- Rock Throw
+- Acrobatics
+- Defense Curl
+- Rollout
 
 === TRAINER_ACRISIACAVES_BF1_BERKLEY === /* Trainer in Acrisia Caves BF1 */
 Name: Berkley
@@ -553,8 +783,14 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 1
+Pool Rules: Basic
 
 Mawile
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Honedge
 Level: 16
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -566,12 +802,26 @@ Gender: Female
 Music: Intense
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Crabrawler
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Anorith
+Level: 15
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Rockruff
+Level: 15
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Sandshrew
+Level: 15
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Sandshrew Alolan
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -597,10 +847,13 @@ Music: Male
 Items: Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
+Party Size: 3
+Pool Rules: Basic
 
 Klawf
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tags: Lead
 - Metal Claw
 - Rock Tomb
 - Rock Smash
@@ -614,9 +867,26 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Stun Spore
 - Bullet Seed
 
+Mawile
+Level: 17
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Metal Claw
+- Fairy Wind
+- Taunt
+- Bite
+
+Sneasel Hisuian
+Level: 17
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Rock Smash
+- Metal Claw
+- Trailblaze
+- Taunt
+
 Larvitar
 Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tags: Ace
 - Stomping Tantrum
 - Rock Tomb
 - Bite
@@ -631,10 +901,13 @@ Music: Male
 Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient
+Party Size: 4
+Pool Rules: Basic
 
 Klawf
 Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
 - Metal Claw
 - Rock Tomb
 - Rock Smash
@@ -648,10 +921,27 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Stun Spore
 - Bullet Seed
 
+Mawile
+Level: 17
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Metal Claw
+- Play Rough
+- Taunt
+- Bite
+
+Sneasel Hisuian
+Level: 17
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Rock Smash
+- Metal Claw
+- Trailblaze
+- Ice Shard
+
 Larvitar
 Level: 19
 Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
 - Stomping Tantrum
 - Rock Tomb
 - Bite
@@ -764,8 +1054,14 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 1
+Pool Rules: Basic
 
 Sentret
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hoppip
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -777,8 +1073,14 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 1
+Pool Rules: Basic
 
 Hoothoot
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pikipek
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -904,10 +1206,29 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
 Caterpie
-Level: 2
+Level: 3
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Weedle
+Level: 3
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Grubbin
+Level: 3
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Paras
+Level: 3
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Nincada
+Level: 4
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Tags: Ace
 
 Spinarak
 Level: 3

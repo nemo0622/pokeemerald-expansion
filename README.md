@@ -12,7 +12,7 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 - Over 350 Pokémon from Generations 1-9 in a beautiful GBC style!
 - Pokémon Reworks ported from Pokémon Emerald Seaglass, with new rebalancing + polish!
 - Day/Night System with FakeRTC
-    - Every second in real time is 60 seconds in game (Pokémon Legends Arceus system!)
+    - Every second in real time is 30 seconds in game (2 real minutes = 1 in-game hour)
     - Comes with Day/Night Encounter Differences! All found in Documentation
 - DexNav functionality, including bug fixed from Emerald Seaglass
     - Including Cheat Code to show all DexNav Pokémon from the start: "JUSTSHOWME"
