@@ -664,11 +664,11 @@ u32 CountPlayerTrainerStars(void)
 {
     u8 stars = 0;
 
-    if (GetGameStat(GAME_STAT_ENTERED_HOF))
+    if (GetGameStat(GAME_STAT_ENTERED_HOF)) // entered hall of fame
         stars++;
-    if (HasAllHoennMons())
+    if (HasAllHoennMons()) // completed dex
         stars++;
-    if (CountPlayerMuseumPaintings() >= CONTEST_CATEGORIES_COUNT)
+    if (FlagGet(FLAG_GOT_BERRY_CLUB_REWARD_200)) // planted over 200 trees
         stars++;
     if (HasAllFrontierSymbols())
         stars++;
@@ -1504,6 +1504,7 @@ static void DrawStarsAndBadgesOnCard(void)
     u16 tileNum = 192;
     u8 palNum = 3;
 
+    sData->trainerCard.stars = CountPlayerTrainerStars();
     FillBgTilemapBufferRect(3, 143, 15, yOffsets[sData->isHoenn], sData->trainerCard.stars, 1, 4);
     if (!sData->isLink)
     {

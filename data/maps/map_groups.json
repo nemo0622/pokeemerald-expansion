@@ -145,7 +145,9 @@
     "OldaleTown_House2",
     "OldaleTown_PokemonCenter_1F",
     "OldaleTown_PokemonCenter_2F",
-    "OldaleTown_Mart"
+    "OldaleTown_Mart",
+    "JusmailTown_House1",
+    "JusmailTown_House2"
   ],
   "gMapGroup_IndoorDewford": [
     "DewfordTown_House1",

@@ -1232,13 +1232,13 @@
 #define FLAG_GOT_EVIOLITE_ACRISIA_CITY                              0x49D // Got Eviolite from Pokéfan Lady in Acrisia
 #define FLAG_SHOWN_ACRISIA_HEALSPOT                                 0x49E // Shown healing by Rania
 #define FLAG_UNLOCKED_TERASTALLIZATION                              0x49F // Used to indicate to certain menus that tera is unlocked, and to signal that tera unlock event happened
-#define FLAG_GOT_WAILMER_PAIL                                       0x4A0 // Set when Flabebe is shown to girl in BronzeFields_South
+#define FLAG_GOT_WAILMER_PAIL                                       0x4A0 // Set when entered Berry Store in Jusmail Town
 #define FLAG_HIDE_RANIA_JUSMAIL                                     0x4A1 // Enabled by default, shows Rania for event in Jusmail when cleared
 #define FLAG_GOT_MACHO_BRACE                                        0x4A2 // Got Macho Brace from fat man in Acrisia Mountains
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
+#define FLAG_GOT_BERRY_CLUB_REWARD_20                               0x4A3 // Reward for over 20 berry trees
+#define FLAG_GOT_BERRY_CLUB_REWARD_50                               0x4A4 // Reward for over 50 berry trees
+#define FLAG_GOT_BERRY_CLUB_REWARD_100                              0x4A5 // Reward for over 100 berry trees
+#define FLAG_GOT_BERRY_CLUB_REWARD_200                              0x4A6 // Reward for over 200 berry trees
 #define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
 #define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
 #define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag

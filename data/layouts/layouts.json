@@ -4850,6 +4850,26 @@
       "secondary_tileset": "gTileset_JusmailGym",
       "border_filepath": "data/layouts/AcrisiaCaves_BF1/border.bin",
       "blockdata_filepath": "data/layouts/AcrisiaCaves_BF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUSMAIL_TOWN_HOUSE1",
+      "name": "JusmailTown_House1_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
+      "border_filepath": "data/layouts/JusmailTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/JusmailTown_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUSMAIL_TOWN_HOUSE2",
+      "name": "JusmailTown_House2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/JusmailTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/JusmailTown_House2/map.bin"
     }
   ]
 }

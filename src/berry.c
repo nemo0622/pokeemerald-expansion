@@ -1927,6 +1927,10 @@ void BerryTreeTimeUpdate(s32 minutes)
 
 void PlantBerryTree(u8 id, u8 berry, u8 stage, bool8 allowGrowth)
 {
+    u8 berryPlantCount = VarGet(VAR_BERRY_TREES_PLANTED);
+    berryPlantCount += 1;
+    VarSet(VAR_BERRY_TREES_PLANTED, berryPlantCount);
+
     struct BerryTree *tree = GetBerryTreeInfo(id);
 
     tree->berry = berry;
@@ -2188,6 +2192,8 @@ void ObjectEventInteractionPickBerryTree(void)
     u8 berry = GetBerryTypeByBerryTreeId(id);
     u8 mutation = GetTreeMutationValue(id);
 
+    
+
     if (!OW_BERRY_MUTATIONS || mutation == 0)
     {
         gSpecialVar_0x8004 = AddBagItem(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id));
@@ -2413,30 +2419,36 @@ static u16 GetBerryPestSpecies(u8 berryId)
     switch(berry->color)
     {
         case BERRY_COLOR_RED:
-            return P_FAMILY_LEDYBA ? SPECIES_LEDYBA : SPECIES_NONE;
+            if (Random() % 100 < 11)
+                return SPECIES_LARVESTA;
+            else
+                return SPECIES_PARAS;
             break;
         case BERRY_COLOR_BLUE:
-            return P_FAMILY_VOLBEAT_ILLUMISE ? SPECIES_VOLBEAT : SPECIES_NONE;
+            return SPECIES_CRABRAWLER;
             break;
         case BERRY_COLOR_PURPLE:
-            return P_FAMILY_VOLBEAT_ILLUMISE ? SPECIES_ILLUMISE : SPECIES_NONE;
+            return SPECIES_SKORUPI;
             break;
         case BERRY_COLOR_GREEN:
-            return P_FAMILY_BURMY ? SPECIES_BURMY_PLANT_CLOAK : SPECIES_NONE;
+            return SPECIES_FOMANTIS;
             break;
         case BERRY_COLOR_YELLOW:
-            return P_FAMILY_COMBEE ? SPECIES_COMBEE : SPECIES_NONE;
+            if (Random() % 100 < 20)
+                return SPECIES_PAWMI;
+            else
+                return SPECIES_CUTIEFLY;
             break;
         case BERRY_COLOR_PINK:
-            return P_FAMILY_SCATTERBUG ? SPECIES_SPEWPA : SPECIES_NONE;
+            return SPECIES_CHERUBI;
             break;
     }
 #endif
     return SPECIES_NONE;
 }
 
-#define BERRY_WEEDS_CHANCE 15
-#define BERRY_PESTS_CHANCE 15
+#define BERRY_WEEDS_CHANCE 10
+#define BERRY_PESTS_CHANCE 20
 
 static void TryForWeeds(struct BerryTree *tree)
 {

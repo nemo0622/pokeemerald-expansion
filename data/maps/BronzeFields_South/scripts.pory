@@ -38,39 +38,6 @@ text BronzeFields_South_Text_Trainer_BronzePass_JosephDefeat
     format("My eyes were jus' watery, that's why I lost!")
 }
 
-script BronzeFields_South_EventScript_NPC_Girl1
-{
-    lock
-    faceplayer
-    speakername("Flower Girl")
-    if(!flag(FLAG_GOT_WAILMER_PAIL))
-    {
-        msgbox(format("The flowers around here are so pretty! I hear {COLOR GREEN}a Pokémon here is adapted to the red flowers{COLOR DARK_GRAY}."))
-        closemessage
-        checkforspecies(SPECIES_FLABEBE_RED_FLOWER, NO_PARTY_SCREEN, BronzeFields_South_EventScript_NPC_Girl1_HasFlabebe)
-    }
-    else
-    {
-        msgbox(format("Watering flowers and plants feels so nice! It's good to treat the planet well."))
-        closemessage
-    }
-    release
-    end
-}
-script BronzeFields_South_EventScript_NPC_Girl1_HasFlabebe
-{
-    speakername("Flower Girl")
-    msgbox(format("That sweet aroma... you must have a Flabébé in your party!\p That makes me so happy, I'll give you this!"))
-    closemessage
-    giveitem(ITEM_WAILMER_PAIL)
-    speakername("Flower Girl")
-    msgbox(format("The Wailmer Pail can be used to water Berries you grow! Isn't that sweet?"))
-    closemessage
-    setflag(FLAG_GOT_WAILMER_PAIL)
-    release
-    end
-}
-
 script BronzeFields_South_EventScript_NPC_Man1
 {
     lock

@@ -365,9 +365,9 @@ BronzePass_North_EventScript_Trainer_BronzePass_Felix_Text_0:
 
 BronzePass_North_EventScript_Trainer_BronzePass_Felix_Text_1:
 # 175 "data/maps/BronzePass_North/scripts.pory"
-	.string "I brought my Foongus from the Unova\n"
+	.string "I brought my Hoothoot from the Johto\n"
 	.string "Region when we moved here. I didn't know\l"
-	.string "Foongus lives here too!$"
+	.string "Hoothoot lives here too!$"
 
 BronzePass_North_EventScript_NPC_TeenageBoy_Text_0:
 # 193 "data/maps/BronzePass_North/scripts.pory"
@@ -409,4 +409,4 @@ BronzePass_North_Text_Trainer_BronzePass_FelixIntro::
 
 BronzePass_North_Text_Trainer_BronzePass_FelixDefeat::
 # 184 "data/maps/BronzePass_North/scripts.pory"
-	.string "Rats, the item was just my Foongus.$"
+	.string "Rats, the item was just a rock.$"

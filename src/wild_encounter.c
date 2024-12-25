@@ -23,6 +23,8 @@
 #include "constants/items.h"
 #include "constants/layouts.h"
 #include "constants/weather.h"
+#include "rtc.h"
+#include "fake_rtc.h"
 
 extern const u8 EventScript_SprayWoreOff[];
 
@@ -367,6 +369,24 @@ u16 GetCurrentMapWildMonHeaderId(void)
         if (gWildMonHeaders[i].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
             gWildMonHeaders[i].mapNum == gSaveBlock1Ptr->location.mapNum)
         {
+
+            RtcCalcLocalTime();
+            if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(ALTERING_CAVE) &&
+              gSaveBlock1Ptr->location.mapNum != MAP_NUM(ALTERING_CAVE))
+            {
+                if (gLocalTime.hours >= 7 && gLocalTime.hours <= 19 &&
+                gWildMonHeaders[i].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
+                gWildMonHeaders[i].mapNum == gSaveBlock1Ptr->location.mapNum)
+                {
+                    i += 0; // Day
+                }
+                else if (gWildMonHeaders[i + 1].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
+                gWildMonHeaders[i + 1].mapNum == gSaveBlock1Ptr->location.mapNum)
+                {
+                    i += 1; // Night
+                }
+            }
+
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ALTERING_CAVE) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(ALTERING_CAVE))
             {
@@ -376,12 +396,6 @@ u16 GetCurrentMapWildMonHeaderId(void)
 
                 i += alteringCaveId;
             }
-
-            // if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE101) &&
-            //     gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE101))
-            // {
-            //     i += VarGet(VAR_ENCOUNTER_TABLE_INDEX_ROUTE101);
-            // }
 
             return i;
         }

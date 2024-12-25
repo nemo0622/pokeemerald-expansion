@@ -99,198 +99,226 @@ JusmailTown_Mart:
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_NONE
 
-JusmailTown_EventScript_RaniaEventTrigger::
+JusmailTown_EventScript_RockSmashHiker::
 # 70 "data/maps/JusmailTown/scripts.pory"
 	lock
 # 71 "data/maps/JusmailTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	faceplayer
 # 72 "data/maps/JusmailTown/scripts.pory"
+	goto_if_unset FLAG_BROKE_JUSMAIL_TOWN_ROCKS, JusmailTown_EventScript_RockSmashHiker_2
+# 80 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_RockSmashHiker_Text_0
+# 81 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_RockSmashHiker_Text_2
+# 82 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+JusmailTown_EventScript_RockSmashHiker_1:
+# 84 "data/maps/JusmailTown/scripts.pory"
+	release
+	end
+
+JusmailTown_EventScript_RockSmashHiker_2:
+# 74 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_RockSmashHiker_Text_0
+# 75 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_RockSmashHiker_Text_1
+# 76 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+	goto JusmailTown_EventScript_RockSmashHiker_1
+
+
+JusmailTown_EventScript_RaniaEventTrigger::
+# 92 "data/maps/JusmailTown/scripts.pory"
+	lock
+# 93 "data/maps/JusmailTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 94 "data/maps/JusmailTown/scripts.pory"
 	waitmovement 0
-# 73 "data/maps/JusmailTown/scripts.pory"
+# 95 "data/maps/JusmailTown/scripts.pory"
 	goto JusmailTown_EventScript_RaniaEvent
 	end
 
 
 JusmailTown_EventScript_RaniaEvent::
-# 79 "data/maps/JusmailTown/scripts.pory"
-	lockall
-# 80 "data/maps/JusmailTown/scripts.pory"
-	applymovement 11, Common_Movement_FacePlayer
-# 81 "data/maps/JusmailTown/scripts.pory"
-	waitmovement 0
-# 82 "data/maps/JusmailTown/scripts.pory"
-	speakername JusmailTown_EventScript_RaniaEvent_Text_0
-# 83 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_RaniaEvent_Text_1, MSGBOX_YESNO
-# 84 "data/maps/JusmailTown/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq JusmailTown_EventScript_RaniaEvent_2
-# 94 "data/maps/JusmailTown/scripts.pory"
-	speakername JusmailTown_EventScript_RaniaEvent_Text_0
-# 95 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_RaniaEvent_Text_3
-# 97 "data/maps/JusmailTown/scripts.pory"
-	trainerbattle_no_intro TRAINER_JUSMAIL_RANIA, JusmailTown_Text_RaniaDefeated
-# 100 "data/maps/JusmailTown/scripts.pory"
-	speakername JusmailTown_EventScript_RaniaEvent_Text_0
 # 101 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_RaniaEvent_Text_4
+	lockall
 # 102 "data/maps/JusmailTown/scripts.pory"
-	closemessage
+	applymovement 11, Common_Movement_FacePlayer
 # 103 "data/maps/JusmailTown/scripts.pory"
-	giveitem ITEM_HM_CUT
+	waitmovement 0
 # 104 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_RaniaEvent_Text_0
 # 105 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_RaniaEvent_Text_5
+	msgbox JusmailTown_EventScript_RaniaEvent_Text_1, MSGBOX_YESNO
 # 106 "data/maps/JusmailTown/scripts.pory"
-	closemessage
-# 109 "data/maps/JusmailTown/scripts.pory"
-	setflag FLAG_HIDE_RANIA_JUSMAIL
-# 110 "data/maps/JusmailTown/scripts.pory"
-	setvar VAR_RANIA_STATE, 1
-# 111 "data/maps/JusmailTown/scripts.pory"
-	setvar VAR_NIKO_STATE, 1
-# 112 "data/maps/JusmailTown/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 113 "data/maps/JusmailTown/scripts.pory"
-	delay 30
-# 114 "data/maps/JusmailTown/scripts.pory"
-	removeobject 11
-# 115 "data/maps/JusmailTown/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	compare VAR_RESULT, 0
+	goto_if_eq JusmailTown_EventScript_RaniaEvent_2
 # 116 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_RaniaEvent_Text_0
+# 117 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_RaniaEvent_Text_3
+# 119 "data/maps/JusmailTown/scripts.pory"
+	trainerbattle_no_intro TRAINER_JUSMAIL_RANIA, JusmailTown_Text_RaniaDefeated
+# 122 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_RaniaEvent_Text_0
+# 123 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_RaniaEvent_Text_4
+# 124 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 125 "data/maps/JusmailTown/scripts.pory"
+	giveitem ITEM_HM_CUT
+# 126 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_RaniaEvent_Text_0
+# 127 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_RaniaEvent_Text_5
+# 128 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 131 "data/maps/JusmailTown/scripts.pory"
+	setflag FLAG_HIDE_RANIA_JUSMAIL
+# 132 "data/maps/JusmailTown/scripts.pory"
+	setvar VAR_RANIA_STATE, 1
+# 133 "data/maps/JusmailTown/scripts.pory"
+	setvar VAR_NIKO_STATE, 1
+# 134 "data/maps/JusmailTown/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 135 "data/maps/JusmailTown/scripts.pory"
+	delay 30
+# 136 "data/maps/JusmailTown/scripts.pory"
+	removeobject 11
+# 137 "data/maps/JusmailTown/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 138 "data/maps/JusmailTown/scripts.pory"
 	delay 20
 JusmailTown_EventScript_RaniaEvent_1:
-# 118 "data/maps/JusmailTown/scripts.pory"
+# 140 "data/maps/JusmailTown/scripts.pory"
 	releaseall
 	end
 
 JusmailTown_EventScript_RaniaEvent_2:
-# 86 "data/maps/JusmailTown/scripts.pory"
+# 108 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_RaniaEvent_Text_0
-# 87 "data/maps/JusmailTown/scripts.pory"
+# 109 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_RaniaEvent_Text_2
-# 88 "data/maps/JusmailTown/scripts.pory"
+# 110 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 89 "data/maps/JusmailTown/scripts.pory"
+# 111 "data/maps/JusmailTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
-# 90 "data/maps/JusmailTown/scripts.pory"
+# 112 "data/maps/JusmailTown/scripts.pory"
 	waitmovement 0
 	goto JusmailTown_EventScript_RaniaEvent_1
 
 
 JusmailTown_EventScript_WishingWell::
-# 134 "data/maps/JusmailTown/scripts.pory"
+# 156 "data/maps/JusmailTown/scripts.pory"
 	lockall
-# 135 "data/maps/JusmailTown/scripts.pory"
+# 157 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWell_Text_0
-# 136 "data/maps/JusmailTown/scripts.pory"
+# 158 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 138 "data/maps/JusmailTown/scripts.pory"
+# 160 "data/maps/JusmailTown/scripts.pory"
 	checkitem ITEM_WISHING_STAR
-# 140 "data/maps/JusmailTown/scripts.pory"
+# 162 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq JusmailTown_EventScript_WishingWell_2
 JusmailTown_EventScript_WishingWell_1:
-# 323 "data/maps/JusmailTown/scripts.pory"
+# 345 "data/maps/JusmailTown/scripts.pory"
 	releaseall
 	end
 
 JusmailTown_EventScript_WishingWell_2:
-# 142 "data/maps/JusmailTown/scripts.pory"
+# 164 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWell_Text_1, MSGBOX_YESNO
-# 144 "data/maps/JusmailTown/scripts.pory"
+# 166 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq JusmailTown_EventScript_WishingWell_4
 	goto JusmailTown_EventScript_WishingWell_1
 
 JusmailTown_EventScript_WishingWell_4:
-# 147 "data/maps/JusmailTown/scripts.pory"
+# 169 "data/maps/JusmailTown/scripts.pory"
 	removeitem ITEM_WISHING_STAR
-# 149 "data/maps/JusmailTown/scripts.pory"
+# 171 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWell_Text_2
-# 150 "data/maps/JusmailTown/scripts.pory"
+# 172 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 151 "data/maps/JusmailTown/scripts.pory"
+# 173 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWell_Text_3
-# 152 "data/maps/JusmailTown/scripts.pory"
+# 174 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 155 "data/maps/JusmailTown/scripts.pory"
+# 177 "data/maps/JusmailTown/scripts.pory"
 	randomelement SPECIES_ROWLET, SPECIES_LITTEN, SPECIES_POPPLIO, SPECIES_CHESPIN, SPECIES_FENNEKIN, SPECIES_FROAKIE, SPECIES_PANSAGE, SPECIES_PANSEAR, SPECIES_PANPOUR, SPECIES_SENTRET, SPECIES_LILLIPUP, SPECIES_PIKIPEK, SPECIES_DUCKLETT, SPECIES_HOPPIP, SPECIES_NINCADA, SPECIES_GRUBBIN, SPECIES_PARAS, SPECIES_PHANPY, SPECIES_CUBONE, SPECIES_MUDBRAY, SPECIES_MAREEP, SPECIES_FLABEBE, SPECIES_CUTIEFLY, SPECIES_CATERPIE, SPECIES_WEEDLE, SPECIES_RALTS, SPECIES_EEVEE, SPECIES_SKIDDO, SPECIES_MURKROW, SPECIES_ORICORIO, SPECIES_SANDSHREW, SPECIES_NOSEPASS, SPECIES_MAWILE, SPECIES_ROCKRUFF, SPECIES_VULLABY, SPECIES_WOOBAT, SPECIES_ARON, SPECIES_TIMBURR, SPECIES_KLAWF, SPECIES_POLIWAG, SPECIES_PUMPKABOO, SPECIES_SHROOMISH, SPECIES_HERACROSS, SPECIES_SHUPPET, SPECIES_AIPOM, SPECIES_WOOPER, SPECIES_TOEDSCOOL, SPECIES_BLITZLE, SPECIES_HOOTHOOT, SPECIES_MIENFOO, SPECIES_FLITTLE, SPECIES_VULPIX, SPECIES_HONEDGE, SPECIES_DWEBBLE, SPECIES_MINIOR, SPECIES_GASTLY, SPECIES_BALTOY, SPECIES_SALANDIT, SPECIES_TOGEPI, SPECIES_CHERUBI, SPECIES_HOUNDOUR, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_SKORUPI, SPECIES_SPINARAK, SPECIES_ELEKID, SPECIES_MAGBY, SPECIES_SNORUNT, SPECIES_SPHEAL, SPECIES_SEEL, SPECIES_BRONZOR, SPECIES_ZORUA_HISUI, SPECIES_SNEASEL_HISUI, SPECIES_VULPIX_ALOLA, SPECIES_NOIBAT, SPECIES_MEOWTH_GALAR, SPECIES_PACHIRISU, SPECIES_CHINGLING, SPECIES_TYNAMO, SPECIES_PAWMI, SPECIES_SHROODLE, SPECIES_BUIZEL, SPECIES_STUNKY, SPECIES_CORSOLA_GALAR, SPECIES_FINNEON, SPECIES_WAILMER, SPECIES_TENTACOOL, SPECIES_CLAUNCHER, SPECIES_SCYTHER, SPECIES_STUFFUL, SPECIES_BAGON, SPECIES_TOGEDEMARU, SPECIES_CRABRAWLER, SPECIES_LILEEP, SPECIES_ANORITH, SPECIES_DEDENNE, SPECIES_MEDITITE, SPECIES_DROWZEE, SPECIES_EKANS, SPECIES_BASCULIN_WHITE_STRIPED, SPECIES_PANCHAM, SPECIES_SKRELP, SPECIES_CHINCHOU, SPECIES_SHELLDER, SPECIES_CLAMPERL, SPECIES_CLEFFA, SPECIES_IGGLYBUFF, SPECIES_TRAPINCH, SPECIES_DODUO, SPECIES_TINKATINK, SPECIES_SCRAGGY, SPECIES_DARUMAKA, SPECIES_TORKOAL, SPECIES_NUMEL, SPECIES_MUNNA, SPECIES_KECLEON, SPECIES_MAGIKARP, SPECIES_FOMANTIS, SPECIES_ORANGURU, SPECIES_PASSIMIAN, SPECIES_ZIGZAGOON_GALAR, SPECIES_GOOMY, SPECIES_BRUXISH, SPECIES_IMPIDIMP, SPECIES_SWABLU, SPECIES_FARFETCHD, SPECIES_MANKEY, SPECIES_VOLTORB_HISUI, SPECIES_LAPRAS, SPECIES_GIRAFARIG, SPECIES_BUDEW, SPECIES_MAGNEMITE, SPECIES_CUBCHOO, SPECIES_GROWLITHE_HISUI, SPECIES_PSYDUCK, SPECIES_YANMA, SPECIES_SKARMORY, SPECIES_REMORAID, SPECIES_RUFFLET, SPECIES_PHANTUMP, SPECIES_SNOVER, SPECIES_DUSKULL, SPECIES_VANILLITE, SPECIES_PAWNIARD, SPECIES_LARVESTA, SPECIES_TIRTOUGA, SPECIES_ARCHEN, SPECIES_LARVITAR, SPECIES_DHELMISE
-# 305 "data/maps/JusmailTown/scripts.pory"
+# 327 "data/maps/JusmailTown/scripts.pory"
 	givemon VAR_RESULT, 1
-# 306 "data/maps/JusmailTown/scripts.pory"
+# 328 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWell_Text_4
-# 307 "data/maps/JusmailTown/scripts.pory"
+# 329 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 308 "data/maps/JusmailTown/scripts.pory"
+# 330 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq JusmailTown_EventScript_WishingWell_6
-# 315 "data/maps/JusmailTown/scripts.pory"
+# 337 "data/maps/JusmailTown/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
-# 316 "data/maps/JusmailTown/scripts.pory"
+# 338 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWell_Text_5
-# 317 "data/maps/JusmailTown/scripts.pory"
+# 339 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 	goto JusmailTown_EventScript_WishingWell_1
 
 JusmailTown_EventScript_WishingWell_6:
-# 310 "data/maps/JusmailTown/scripts.pory"
+# 332 "data/maps/JusmailTown/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 311 "data/maps/JusmailTown/scripts.pory"
+# 333 "data/maps/JusmailTown/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto JusmailTown_EventScript_WishingWell_1
 
 
 JusmailTown_EventScript_LittleGirlWithWishingStar::
-# 331 "data/maps/JusmailTown/scripts.pory"
+# 353 "data/maps/JusmailTown/scripts.pory"
 	lock
-# 332 "data/maps/JusmailTown/scripts.pory"
+# 354 "data/maps/JusmailTown/scripts.pory"
 	faceplayer
-# 333 "data/maps/JusmailTown/scripts.pory"
+# 355 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_LittleGirlWithWishingStar_Text_0
-# 334 "data/maps/JusmailTown/scripts.pory"
+# 356 "data/maps/JusmailTown/scripts.pory"
 	goto_if_unset FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL, JusmailTown_EventScript_LittleGirlWithWishingStar_2
-# 346 "data/maps/JusmailTown/scripts.pory"
+# 368 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_3
-# 347 "data/maps/JusmailTown/scripts.pory"
+# 369 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 JusmailTown_EventScript_LittleGirlWithWishingStar_1:
-# 349 "data/maps/JusmailTown/scripts.pory"
+# 371 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_2:
-# 336 "data/maps/JusmailTown/scripts.pory"
+# 358 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_1
-# 337 "data/maps/JusmailTown/scripts.pory"
+# 359 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 338 "data/maps/JusmailTown/scripts.pory"
+# 360 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_LittleGirlWithWishingStar_Text_0
-# 339 "data/maps/JusmailTown/scripts.pory"
+# 361 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_2
-# 340 "data/maps/JusmailTown/scripts.pory"
+# 362 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 341 "data/maps/JusmailTown/scripts.pory"
+# 363 "data/maps/JusmailTown/scripts.pory"
 	giveitem ITEM_WISHING_STAR, 3
-# 342 "data/maps/JusmailTown/scripts.pory"
+# 364 "data/maps/JusmailTown/scripts.pory"
 	setflag FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL
 	goto JusmailTown_EventScript_LittleGirlWithWishingStar_1
 
 
 JusmailTown_EventScript_WishingWellSign::
-# 357 "data/maps/JusmailTown/scripts.pory"
+# 379 "data/maps/JusmailTown/scripts.pory"
 	lock
-# 358 "data/maps/JusmailTown/scripts.pory"
+# 380 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWellSign_Text_0
-# 359 "data/maps/JusmailTown/scripts.pory"
+# 381 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 360 "data/maps/JusmailTown/scripts.pory"
+# 382 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWellSign_Text_1
-# 361 "data/maps/JusmailTown/scripts.pory"
+# 383 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 362 "data/maps/JusmailTown/scripts.pory"
+# 384 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
@@ -347,12 +375,28 @@ JusmailTown_EventScript_MarketMan_Text_2:
 # 54 "data/maps/JusmailTown/scripts.pory"
 	.string "Make sure to come back soon!$"
 
+JusmailTown_EventScript_RockSmashHiker_Text_0:
+# 74 "data/maps/JusmailTown/scripts.pory"
+	.string "Hiker$"
+
+JusmailTown_EventScript_RockSmashHiker_Text_1:
+# 75 "data/maps/JusmailTown/scripts.pory"
+	.string "Trying to head south too, huh? Well,\n"
+	.string "these rocks are blocking the only way.\p"
+	.string "Someone with {COLOR GREEN}Rock Smash{COLOR DARK_GRAY} could break\n"
+	.string "these rocks, though.$"
+
+JusmailTown_EventScript_RockSmashHiker_Text_2:
+# 81 "data/maps/JusmailTown/scripts.pory"
+	.string "Woah, thanks for clearing the path! Now\n"
+	.string "I can finally head south!$"
+
 JusmailTown_EventScript_RaniaEvent_Text_0:
-# 82 "data/maps/JusmailTown/scripts.pory"
+# 104 "data/maps/JusmailTown/scripts.pory"
 	.string "Rania$"
 
 JusmailTown_EventScript_RaniaEvent_Text_1:
-# 83 "data/maps/JusmailTown/scripts.pory"
+# 105 "data/maps/JusmailTown/scripts.pory"
 	.string "Yia sou, {PLAYER}! I see you've won\n"
 	.string "your first Gym Badge!\p"
 	.string "Since you left, Niko and I have decided\n"
@@ -362,16 +406,16 @@ JusmailTown_EventScript_RaniaEvent_Text_1:
 	.string "wanna battle?$"
 
 JusmailTown_EventScript_RaniaEvent_Text_2:
-# 87 "data/maps/JusmailTown/scripts.pory"
+# 109 "data/maps/JusmailTown/scripts.pory"
 	.string "Need more time to train? I get you. Let\n"
 	.string "me know when you wanna battle!$"
 
 JusmailTown_EventScript_RaniaEvent_Text_3:
-# 95 "data/maps/JusmailTown/scripts.pory"
+# 117 "data/maps/JusmailTown/scripts.pory"
 	.string "Alright, here I come!$"
 
 JusmailTown_EventScript_RaniaEvent_Text_4:
-# 101 "data/maps/JusmailTown/scripts.pory"
+# 123 "data/maps/JusmailTown/scripts.pory"
 	.string "Phew, what a battle! Even against a\n"
 	.string "strong type trio like mine, you still\l"
 	.string "held your own. Looks like that Gym\l"
@@ -380,72 +424,72 @@ JusmailTown_EventScript_RaniaEvent_Text_4:
 	.string "sent me to give you this HM. Here!$"
 
 JusmailTown_EventScript_RaniaEvent_Text_5:
-# 105 "data/maps/JusmailTown/scripts.pory"
+# 127 "data/maps/JusmailTown/scripts.pory"
 	.string "With that HM, you can {COLOR GREEN}cut down small\n"
 	.string "trees{COLOR DARK_GRAY} that might be blocking your path.\p"
 	.string "You heading {COLOR GREEN}back to the University{COLOR DARK_GRAY}? I'm\n"
 	.string "doing the same. Meet you there!$"
 
 JusmailTown_EventScript_WishingWell_Text_0:
-# 135 "data/maps/JusmailTown/scripts.pory"
+# 157 "data/maps/JusmailTown/scripts.pory"
 	.string "You peer down the Wishing Well...\n"
 	.string "The air begins to sparkle.$"
 
 JusmailTown_EventScript_WishingWell_Text_1:
-# 142 "data/maps/JusmailTown/scripts.pory"
+# 164 "data/maps/JusmailTown/scripts.pory"
 	.string "Toss a Wishing Star into the Well?$"
 
 JusmailTown_EventScript_WishingWell_Text_2:
-# 149 "data/maps/JusmailTown/scripts.pory"
+# 171 "data/maps/JusmailTown/scripts.pory"
 	.string "The Wishing Star shines as it falls...$"
 
 JusmailTown_EventScript_WishingWell_Text_3:
-# 151 "data/maps/JusmailTown/scripts.pory"
+# 173 "data/maps/JusmailTown/scripts.pory"
 	.string "...  ...  ...  ...!$"
 
 JusmailTown_EventScript_WishingWell_Text_4:
-# 306 "data/maps/JusmailTown/scripts.pory"
+# 328 "data/maps/JusmailTown/scripts.pory"
 	.string "A POKé BALL appeared... containing a\n"
 	.string "POKéMON!$"
 
 JusmailTown_EventScript_WishingWell_Text_5:
-# 316 "data/maps/JusmailTown/scripts.pory"
+# 338 "data/maps/JusmailTown/scripts.pory"
 	.string "The POKéMON was sent to the PC.$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_0:
-# 333 "data/maps/JusmailTown/scripts.pory"
+# 355 "data/maps/JusmailTown/scripts.pory"
 	.string "Little Girl$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_1:
-# 336 "data/maps/JusmailTown/scripts.pory"
+# 358 "data/maps/JusmailTown/scripts.pory"
 	.string "See that broken well?\n"
 	.string "It's actually a Wishing Well, and it\l"
 	.string "grants wishes! Really!$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_2:
-# 339 "data/maps/JusmailTown/scripts.pory"
+# 361 "data/maps/JusmailTown/scripts.pory"
 	.string "Sometimes, my friends and me throw\n"
 	.string "Wishing Stars down the Wishing Well!\l"
 	.string "Here's a few for you!$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_3:
-# 346 "data/maps/JusmailTown/scripts.pory"
+# 368 "data/maps/JusmailTown/scripts.pory"
 	.string "Did you get anything cool from the\n"
 	.string "Wishing Well?$"
 
 JusmailTown_EventScript_WishingWellSign_Text_0:
-# 358 "data/maps/JusmailTown/scripts.pory"
+# 380 "data/maps/JusmailTown/scripts.pory"
 	.string "JUSMAIL TOWN WELL\n"
 	.string "More than meets the eye.$"
 
 JusmailTown_EventScript_WishingWellSign_Text_1:
-# 360 "data/maps/JusmailTown/scripts.pory"
+# 382 "data/maps/JusmailTown/scripts.pory"
 	.string "There's more scribbled on here...\p"
 	.string "Use Wishing Stars at the Wishing Well!\n"
 	.string "POKéMON are granted to those who seek\l"
 	.string "them!$"
 
 JusmailTown_Text_RaniaDefeated::
-# 122 "data/maps/JusmailTown/scripts.pory"
+# 144 "data/maps/JusmailTown/scripts.pory"
 	.string "Aw, I thought I balanced my team\n"
 	.string "perfectly!$"

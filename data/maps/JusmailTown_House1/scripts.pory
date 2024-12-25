@@ -1,0 +1,576 @@
+mapscripts JusmailTown_House1_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: JusmailTown_House1_EventScript_CheckStatus
+    ]
+}
+
+script JusmailTown_House1_EventScript_CheckStatus
+{
+    setvar(VAR_TEMP_1, 1)
+    if(!flag(FLAG_GOT_WAILMER_PAIL)) // introductory scene
+    {
+        goto(JusmailTown_House1_EventScript_EnterBuildingForFirstTime)
+    }
+    elif(!flag(FLAG_GOT_BERRY_CLUB_REWARD_20) && var(VAR_BERRY_TREES_PLANTED) >= 20)
+    {
+        goto(JusmailTown_House1_EventScript_EnterBuilding_20BerryTreeReward)
+    }
+    elif(!flag(FLAG_GOT_BERRY_CLUB_REWARD_50) && var(VAR_BERRY_TREES_PLANTED) >= 50)
+    {
+        goto(JusmailTown_House1_EventScript_EnterBuilding_50BerryTreeReward)
+    }
+    elif(!flag(FLAG_GOT_BERRY_CLUB_REWARD_100) && var(VAR_BERRY_TREES_PLANTED) >= 100)
+    {
+        goto(JusmailTown_House1_EventScript_EnterBuilding_100BerryTreeReward)
+    }
+    elif(!flag(FLAG_GOT_BERRY_CLUB_REWARD_200) && var(VAR_BERRY_TREES_PLANTED) >= 200)
+    {
+        goto(JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward)
+    }
+    else
+    {
+        goto(JusmailTown_House1_EventScript_EndScript)
+    }
+    releaseall
+    end
+}
+
+script JusmailTown_House1_EventScript_Herdier
+{
+    lock
+    faceplayer
+    speakername("Herdier")
+    playmoncry(SPECIES_HERDIER, CRY_MODE_NORMAL)
+    msgbox("Arf arf!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_House1_EventScript_Pumpkaboo
+{
+    lock
+    faceplayer
+    speakername("Pumpkaboo")
+    playmoncry(SPECIES_PUMPKABOO, CRY_MODE_NORMAL)
+    msgbox("Ke ke ke!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_House1_EventScript_EnterBuildingForFirstTime
+{
+    lockall
+    applymovement(1, Common_Movement_FaceRight)
+    applymovement(2, Common_Movement_FaceDown)
+    applymovement(3, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(1, Common_Movement_ExclamationMark)
+    applymovement(2, Common_Movement_ExclamationMark)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    applymovement(1, JusmailTown_House1_Movement_ArtistGreetsPlayer)
+    applymovement(2, JusmailTown_House1_Movement_PsychicGreetsPlayer)
+    applymovement(3, JusmailTown_House1_Movement_BeautyGreetsPlayer)
+    delay(60)
+
+    speakername("Group")
+    msgbox(format("Opa, opa! Welcome to the Jusmail Town Berry Club!!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    
+    if(!flag(FLAG_BADGE01_GET)) // dont have badge 1 yet
+    {
+        speakername("Artist")
+        msgbox(format("What's this? I can't smell the scent of fresh grass and fruits on you... you must not have fought Deo yet! Oh no no NO, this won't do!\p Come back when you've {COLOR GREEN}beaten the Jusmail Town Gym Leader{COLOR DARK_GRAY}, darling."))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        waitmovement(0)
+        speakername("Beauty")
+        msgbox(format("Don't take it to heart, hon. It's just the rule of the owner, he gets a little, well, intense."))
+        closemessage
+
+        warpsilent(MAP_JUSMAIL_TOWN, 10, 14)
+        waitstate
+    }
+    else // ready!
+    {
+        speakername("Artist")
+        msgbox(format("Mmmm, that smell... grass, fruit, a hint of honey... you must have beaten Deo! Congratulations!"))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+        waitmovement(0)
+        speakername("Psychic")
+        msgbox(format("You're now an official member of the Jusmail Town Berry Club! Uh, if that's alright with you, of course..."))
+        closemessage
+        applymovement(1, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        delay(20)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+        waitmovement(0)
+        speakername("Artist")
+        msgbox(format("Of course they're alright with it! This is the largest recognized Berry enthusiast club in town! Put some respect on our name.\p 'Name'... name... oh yeah, I guess we don't even know your name! What should we call you, darling?"))
+        closemessage
+        delay(60)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        waitmovement(0)
+        speakername("Beauty")
+        msgbox(format("Well it's nice to actually meet you, {PLAYER}! Here's a little something to get you started on your Berry-growing journey."))
+        closemessage
+
+        giveitem(ITEM_WAILMER_PAIL)
+        setflag(FLAG_GOT_WAILMER_PAIL)
+
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+        waitmovement(0)
+        speakername("Artist")
+        msgbox(format("We're dedicated to growing Berries all around Ilios. Here, we sell {COLOR GREEN}Mulch{COLOR DARK_GRAY} to enhance the soil, plus {COLOR GREEN}Berries and Mints{COLOR DARK_GRAY} to help your Pokémon!"))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+        waitmovement(0)
+        speakername("Psychic")
+        msgbox(format("Berries here have some extra complexity. The soil needs to be kept moist and can be helped with our Mulch, and it's important to keep weeds and pests away from the plants. Berries can also hybridize, producing rare Berry varieties!"))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        waitmovement(0)
+        speakername("Beauty")
+        msgbox(format("Okay, okay, we've talked your ear off long enough. Glad to have you here!"))
+        closemessage
+
+        warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)
+        waitstate
+        goto(JusmailTown_House1_EventScript_EndScript)
+    }
+    releaseall
+    end
+}
+
+script JusmailTown_House1_EventScript_EndScript
+{
+    lockall
+    delay(10)
+    releaseall
+    end
+}
+
+movement JusmailTown_House1_Movement_ArtistGreetsPlayer
+{
+    jump_right * 2
+    walk_fast_down * 4
+    walk_fast_right * 3
+    face_right
+    step_end
+}
+
+movement JusmailTown_House1_Movement_PsychicGreetsPlayer
+{
+    walk_fast_down * 2
+    walk_fast_left
+    face_left
+    step_end
+}
+
+movement JusmailTown_House1_Movement_BeautyGreetsPlayer
+{
+    walk_fast_down
+    walk_fast_right
+    walk_fast_down
+    face_down
+    step_end
+}
+
+
+
+script JusmailTown_House1_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    message(format("Welcome back to the Berry Club, darling! How can I help you?"))
+    waitmessage
+    pokemart(JusmailTown_House1_Mart_Mints)
+    applymovement(1, Common_Movement_FacePlayer)
+    waitmovement(0)
+    speakername("Artist")
+    msgbox(format("Come on back! Don't make me jump the counter again!"))
+    closemessage
+    release
+    end
+}
+
+mart JusmailTown_House1_Mart_Mints
+{
+    ITEM_LONELY_MINT
+	ITEM_ADAMANT_MINT
+	ITEM_NAUGHTY_MINT
+	ITEM_BRAVE_MINT
+	ITEM_BOLD_MINT
+	ITEM_IMPISH_MINT
+	ITEM_LAX_MINT
+	ITEM_RELAXED_MINT
+	ITEM_MODEST_MINT
+	ITEM_MILD_MINT
+	ITEM_RASH_MINT
+	ITEM_QUIET_MINT
+	ITEM_CALM_MINT
+	ITEM_GENTLE_MINT
+	ITEM_CAREFUL_MINT
+	ITEM_SASSY_MINT
+	ITEM_TIMID_MINT
+	ITEM_HASTY_MINT
+	ITEM_JOLLY_MINT
+	ITEM_NAIVE_MINT
+	ITEM_SERIOUS_MINT
+}
+
+script JusmailTown_House1_EventScript_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    message(format("Welcome back to the Berry Club, hon! How can I help you?"))
+    waitmessage
+    pokemart(JusmailTown_House1_Mart_Berries)
+    applymovement(3, Common_Movement_FacePlayer)
+    waitmovement(0)
+    speakername("Beauty")
+    msgbox(format("Come back soon! And remember to try and hybridize your Berries!"))
+    closemessage
+    release
+    end
+}
+
+mart JusmailTown_House1_Mart_Berries
+{
+    ITEM_CHERI_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_ASPEAR_BERRY
+    ITEM_LEPPA_BERRY
+    ITEM_ORAN_BERRY
+    ITEM_PERSIM_BERRY
+    ITEM_LUM_BERRY
+    ITEM_SITRUS_BERRY
+    ITEM_FIGY_BERRY
+    ITEM_WIKI_BERRY
+    ITEM_MAGO_BERRY
+    ITEM_AGUAV_BERRY
+    ITEM_IAPAPA_BERRY
+    ITEM_RAZZ_BERRY
+    ITEM_BLUK_BERRY
+    ITEM_NANAB_BERRY
+    ITEM_WEPEAR_BERRY
+    ITEM_PINAP_BERRY
+    ITEM_OCCA_BERRY
+    ITEM_PASSHO_BERRY
+    ITEM_WACAN_BERRY
+    ITEM_RINDO_BERRY
+    ITEM_YACHE_BERRY
+    ITEM_CHOPLE_BERRY
+    ITEM_KEBIA_BERRY
+    ITEM_SHUCA_BERRY
+    ITEM_COBA_BERRY
+    ITEM_PAYAPA_BERRY
+    ITEM_TANGA_BERRY
+    ITEM_CHARTI_BERRY
+    ITEM_KASIB_BERRY
+    ITEM_HABAN_BERRY
+    ITEM_COLBUR_BERRY
+    ITEM_BABIRI_BERRY
+    ITEM_CHILAN_BERRY
+    ITEM_ROSELI_BERRY
+    ITEM_LANSAT_BERRY
+    ITEM_STARF_BERRY
+}
+
+script JusmailTown_House1_EventScript_Psychic
+{
+    lock
+    faceplayer
+    speakername("Psychic")
+    message(format("Welcome back to the Berry Club. Looking for some Mulch?"))
+    waitmessage
+    pokemart(JusmailTown_House1_Mart_Mulch)
+    applymovement(2, Common_Movement_FacePlayer)
+    waitmovement(0)
+    speakername("Psychic")
+    msgbox(format("Well, have fun with your Mulch! If you end up {COLOR GREEN}harvesting many Berry Trees{COLOR DARK_GRAY}, let us know! We might have a {COLOR GREEN}reward{COLOR DARK_GRAY} for you, ehehe!"))
+    closemessage
+    release
+    end
+}
+
+mart JusmailTown_House1_Mart_Mulch
+{
+    ITEM_GROWTH_MULCH
+    ITEM_DAMP_MULCH
+    ITEM_RICH_MULCH
+    ITEM_SURPRISE_MULCH
+    ITEM_BOOST_MULCH
+    ITEM_AMAZE_MULCH
+}
+
+// ----------------------------------------- BERRY TREE REWARD EVENTS ---------------------------
+
+script JusmailTown_House1_EventScript_EnterBuilding_20BerryTreeReward
+{
+    lockall
+    applymovement(1, Common_Movement_FaceRight)
+    applymovement(2, Common_Movement_FaceDown)
+    applymovement(3, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(1, Common_Movement_ExclamationMark)
+    applymovement(2, Common_Movement_ExclamationMark)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    applymovement(1, JusmailTown_House1_Movement_ArtistGreetsPlayer)
+    applymovement(2, JusmailTown_House1_Movement_PsychicGreetsPlayer)
+    applymovement(3, JusmailTown_House1_Movement_BeautyGreetsPlayer)
+    delay(60)
+
+    speakername("Group")
+    msgbox(format("{PLAYER}! Yia sou!!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+
+    speakername("Artist")
+    msgbox(format("Let me see your Wailmer Pail!\p Mhm, just as I thought, plenty of use. You must be growing Berries!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Psychic")
+    msgbox(format("It's not that common for people to really care about Berries like we do! We were talking, and we think it would be nice to reward you somehow."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Beauty")
+    msgbox(format("We've been experimenting with new Berry species, and one new Berry is especially unique. Here you go!"))
+    closemessage
+
+    giveitem(ITEM_ENIGMA_BERRY, 3)
+    setflag(FLAG_GOT_BERRY_CLUB_REWARD_20)
+
+    speakername("Beauty")
+    msgbox(format("Those Berries help your Pokémon heal up after being hit with super-effective moves. Make sure to plant them and grow more!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Artist")
+    msgbox(format("The more Berries you plant, the more people notice, darling! {COLOR GREEN}Keep planting{COLOR DARK_GRAY} Berries and caring for them, and we'll have {COLOR GREEN}more gifts{COLOR DARK_GRAY} for you."))
+    closemessage
+
+    warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)
+    waitstate
+    goto(JusmailTown_House1_EventScript_EndScript)
+    releaseall
+    end
+}
+
+script JusmailTown_House1_EventScript_EnterBuilding_50BerryTreeReward
+{
+    lockall
+    applymovement(1, Common_Movement_FaceRight)
+    applymovement(2, Common_Movement_FaceDown)
+    applymovement(3, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(1, Common_Movement_ExclamationMark)
+    applymovement(2, Common_Movement_ExclamationMark)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    applymovement(1, JusmailTown_House1_Movement_ArtistGreetsPlayer)
+    applymovement(2, JusmailTown_House1_Movement_PsychicGreetsPlayer)
+    applymovement(3, JusmailTown_House1_Movement_BeautyGreetsPlayer)
+    delay(60)
+
+    speakername("Group")
+    msgbox(format("{PLAYER}! Welcome back!!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+
+    speakername("Artist")
+    msgbox(format("Just look at your Berry pouch of your Bag, darling! Residue from so many Berries!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Psychic")
+    msgbox(format("We've started to get some more recognition thanks to your Berry-planting efforts! You really must have been busy."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Beauty")
+    msgbox(format("We caught this Pokémon feeding on some of our Berries recently. You're the best trainer in the Berry Club, so we figured you should have it!"))
+    closemessage
+
+    setflag(FLAG_GOT_BERRY_CLUB_REWARD_50)
+    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_WOOBAT)
+	givemon(SPECIES_WOOBAT, 20, ITEM_SITRUS_BERRY, ITEM_POKE_BALL, NATURE_MODEST, 2, MON_MALE, 0, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_CHATTER, MOVE_DRAINING_KISS, MOVE_STUFF_CHEEKS, MOVE_ESPER_WING)
+
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} received the fruit-eating Woobat!"))
+	waitfanfare
+	closemessage
+
+    speakername("Beauty")
+    msgbox(format("That Woobat has {COLOR GREEN}special moves{COLOR DARK_GRAY} that none of us have seen the species use before. Maybe it can help you on your adventure!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Artist")
+    msgbox(format("Berries in the Ilios Region are getting more popular! {COLOR GREEN}Keep planting{COLOR DARK_GRAY} Berries and caring for them, and we'll have {COLOR GREEN}more gifts{COLOR DARK_GRAY} for you."))
+    closemessage
+
+    warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)
+    waitstate
+    goto(JusmailTown_House1_EventScript_EndScript)
+    releaseall
+    end
+}
+
+script JusmailTown_House1_EventScript_EnterBuilding_100BerryTreeReward
+{
+    lockall
+    applymovement(1, Common_Movement_FaceRight)
+    applymovement(2, Common_Movement_FaceDown)
+    applymovement(3, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(1, Common_Movement_ExclamationMark)
+    applymovement(2, Common_Movement_ExclamationMark)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    applymovement(1, JusmailTown_House1_Movement_ArtistGreetsPlayer)
+    applymovement(2, JusmailTown_House1_Movement_PsychicGreetsPlayer)
+    applymovement(3, JusmailTown_House1_Movement_BeautyGreetsPlayer)
+    delay(60)
+
+    speakername("Group")
+    msgbox(format("Yia sou, {PLAYER}! Welcome back!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+
+    speakername("Artist")
+    msgbox(format("Is that... it is! Mulch on your hands! Ehehe, I knew you were a real Berry fan, darling!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Psychic")
+    msgbox(format("We just finished a regional Berry sampling study with Acrisia University, and the records show you've {COLOR GREEN}planted over 100 Berry Trees{COLOR DARK_GRAY}!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Beauty")
+    msgbox(format("You're helping keep the ecosystem of the Ilios Region healthy with your Berries. To celebrate the milestone, we got you a few things!"))
+    closemessage
+
+    giveitem(ITEM_AMAZE_MULCH, 10)
+    setflag(FLAG_GOT_BERRY_CLUB_REWARD_100)
+
+    giveitem(ITEM_SHINY_CHARM)
+
+    speakername("Beauty")
+    msgbox(format("That Amaze Mulch is good for more Berry growing, but we thought a Shiny Charm would be a nice extra reward! That's a rare item that makes Shiny Pokémon more common!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Artist")
+    msgbox(format("Thank you for everything you do for the Jusmail Town Berry Club, darling. {COLOR GREEN}Keep planting{COLOR DARK_GRAY} Berries and caring for them, and we'll have {COLOR GREEN}more gifts{COLOR DARK_GRAY} for you."))
+    closemessage
+
+    warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)
+    waitstate
+    goto(JusmailTown_House1_EventScript_EndScript)
+    releaseall
+    end
+}
+
+script JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward
+{
+    lockall
+    applymovement(1, Common_Movement_FaceRight)
+    applymovement(2, Common_Movement_FaceDown)
+    applymovement(3, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(1, Common_Movement_ExclamationMark)
+    applymovement(2, Common_Movement_ExclamationMark)
+    applymovement(3, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    applymovement(1, JusmailTown_House1_Movement_ArtistGreetsPlayer)
+    applymovement(2, JusmailTown_House1_Movement_PsychicGreetsPlayer)
+    applymovement(3, JusmailTown_House1_Movement_BeautyGreetsPlayer)
+    delay(60)
+
+    speakername("Group")
+    msgbox(format("Opa, opa!! It's {PLAYER}!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+
+    speakername("Artist")
+    msgbox(format("Berries have never been more popular in Ilios, all thanks to you!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Psychic")
+    msgbox(format("People are coming to Jusmail Town just to visit the Berru Club! We've started more research and even gotten into public education. People are really starting to take Berries seriously!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Beauty")
+    msgbox(format("Nothing we give could repay what you've done for us. We've been raising a special Pokémon here, so maybe this can be a start!"))
+    closemessage
+
+    setflag(FLAG_GOT_BERRY_CLUB_REWARD_200)
+    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_LARVESTA)
+	givemon(SPECIES_LARVESTA, 50, ITEM_IAPAPA_BERRY, ITEM_POKE_BALL, NATURE_TIMID, 0, MON_FEMALE, 0, 0, 0, 252, 252, 4, 31, 31, 31, 31, 31, 31, MOVE_TORCH_SONG, MOVE_BUG_BUZZ, MOVE_STUFF_CHEEKS, MOVE_QUIVER_DANCE)
+
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} received the fruit-eating Larvesta!"))
+	waitfanfare
+	closemessage
+
+    speakername("Beauty")
+    msgbox(format("That Larvesta has {COLOR GREEN}special moves{COLOR DARK_GRAY} learned from growing up around all these Berries. Make sure to take care of it!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Artist")
+    msgbox(format("Here darling, hand me your Trainer Card.\p... ... ...\p There, you've {COLOR GREEN}earned a star{COLOR DARK_GRAY} for your Trainer Card. That represents your status as an elite Berry grower!\p Thank you for everything you've done, {PLAYER}. Remember to never stop caring about the environment! And of course, keep coming to visit us, darling!"))
+    closemessage
+
+    warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)
+    waitstate
+    goto(JusmailTown_House1_EventScript_EndScript)
+    releaseall
+    end
+}
+
+// ---------------------------------------------------------------------------------------------------
+
+script JusmailTown_House1_EventScript_CheckBerryTreeRecord
+{
+    lock
+    if(var(VAR_BERRY_TREES_PLANTED) == 0)
+    {
+        bufferstring(STR_VAR_1, "0")
+    }
+    else
+    {
+        buffernumberstring(STR_VAR_1, VAR_BERRY_TREES_PLANTED)
+    }
+    msgbox(format("Jusmail Town Berry Club - Berry Tree Records\p {PLAYER}'s Trees: {STR_VAR_1} Planted!"))
+    closemessage
+    release
+    end
+}

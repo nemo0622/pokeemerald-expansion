@@ -172,7 +172,7 @@ script BronzePass_North_EventScript_Trainer_BronzePass_Felix
 {
     trainerbattle_single(TRAINER_BRONZEPASS_FELIX, BronzePass_North_Text_Trainer_BronzePass_FelixIntro, BronzePass_North_Text_Trainer_BronzePass_FelixDefeat)
     speakername("Felix")
-    msgbox(format("I brought my Foongus from the Unova Region when we moved here. I didn't know Foongus lives here too!"))
+    msgbox(format("I brought my Hoothoot from the Johto Region when we moved here. I didn't know Hoothoot lives here too!"))
     closemessage
     release
     end
@@ -183,7 +183,7 @@ text BronzePass_North_Text_Trainer_BronzePass_FelixIntro
 }
 text BronzePass_North_Text_Trainer_BronzePass_FelixDefeat
 {
-    format("Rats, the item was just my Foongus.")
+    format("Rats, the item was just a rock.")
 }
 
 script BronzePass_North_EventScript_NPC_TeenageBoy

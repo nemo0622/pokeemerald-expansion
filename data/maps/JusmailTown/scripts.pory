@@ -65,6 +65,28 @@ mart JusmailTown_Mart
     ITEM_PARALYZE_HEAL
 }
 
+script JusmailTown_EventScript_RockSmashHiker
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BROKE_JUSMAIL_TOWN_ROCKS))
+    {
+        speakername("Hiker")
+        msgbox(format("Trying to head south too, huh? Well, these rocks are blocking the only way.\p Someone with {COLOR GREEN}Rock Smash{COLOR DARK_GRAY} could break these rocks, though."))
+        closemessage
+    }
+    else
+    {
+        speakername("Hiker")
+        msgbox(format("Woah, thanks for clearing the path! Now I can finally head south!"))
+        closemessage
+    }
+    release
+    end
+}
+
+// ----------------------------------------------------------------------------------------------------
+
 script JusmailTown_EventScript_RaniaEventTrigger
 {
     lock

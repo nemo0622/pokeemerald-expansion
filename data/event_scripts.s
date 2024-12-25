@@ -1671,3 +1671,7 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/JusmailTown_Gym/scripts.inc"
 
 	.include "data/maps/AcrisiaCaves_BF1/scripts.inc"
+
+	.include "data/maps/JusmailTown_House1/scripts.inc"
+
+	.include "data/maps/JusmailTown_House2/scripts.inc"

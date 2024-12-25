@@ -1,0 +1,36 @@
+mapscripts JusmailTown_House2_MapScripts {}
+
+script JusmailTown_House2_EventScript_Aipom
+{
+    lock
+    faceplayer
+    speakername("Aipom")
+    playmoncry(SPECIES_AIPOM, CRY_MODE_NORMAL)
+    msgbox("Skee hee hee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_House2_EventScript_Farmer
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("Lots of Pokémon found in Ilios weren't from here originally.\p For example, Aipom was introduced by traders from a region across the sea to the south. The Pikipek around here aren't native, either. Humans have had a big impact on the environment."))
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_House2_EventScript_PunkRocker
+{
+    lock
+    faceplayer
+    speakername("Punk Rocker")
+    msgbox(format("I'm trying to catch some rockin' Pokémon for my band, but there are mostly just cute Pokémon around here. I guess I could make a... 'cute' rock band?"))
+    closemessage
+    release
+    end
+}

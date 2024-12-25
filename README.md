@@ -12,10 +12,10 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 - Over 350 Pokémon from Generations 1-9 in a beautiful GBC style!
 - Pokémon Reworks ported from Pokémon Emerald Seaglass, with new rebalancing + polish!
 - Day/Night System with FakeRTC
-    - Every second in real time is 20 seconds in game
+    - Every second in real time is 60 seconds in game (Pokémon Legends Arceus system!)
+    - Comes with Day/Night Encounter Differences! All found in Documentation
 - DexNav functionality, including bug fixed from Emerald Seaglass
     - Including Cheat Code to show all DexNav Pokémon from the start: "JUSTSHOWME"
-- NPC speaker name shown above text box ("speakername" command)
 - Cheat Code system, with many helpful cheats and ways to shake up repeat playthroughs!
     - Codes for 99 items, such as Rare Candies and Nuggets
     - Codes for a random starter of a selected type (good for monotype runs or randomized starters!)
@@ -32,14 +32,21 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
     - Press L to toggle auto-run
     - Pokémon types shown in battle
     - Pokémon animate after KO
+    - NPC speaker name shown above text box
 
 ## Future Development Plans
 
 MAJOR TODOS:
+- BEFORE ANYTHING ELSE: implement TRAINER PARTY POOL system!
+    - Involves rework of previously made trainers
+    - Do this before making any new trainers! Enough work as it is lol
 - Implement GBC Pokémon sprites into rom (front, back, followers, + icons)
 - Continue mapping, adding NPCs, and scripting
 - REBALANCING: go through all Pokémon and balance/rebalance, update movesets, etc.
     - Learn from Seaglass feedback! Less extreme buffs, more balance
+- DOCUMENTATION!
+    - Important item locations
+    - TM/HM locations + Gym Leader rewards
 
 
 GREEK PHRASES AND STUFF:
@@ -66,6 +73,7 @@ GREEK PHRASES AND STUFF:
         - Rania provides Tera Shards and other battle items (Rocky Helmet, etc) + Exp Charm
         - Niko provides unique Pokéballs + Catching Charm, eventually becomes a Pokéball shop
     - MISSING IMPORTANT BUILDINGS / LOCATIONS / UNLOCKS
+        - EXPERIENCE SHARE!!! NECESSARY EARLY
         - Daycare for Pokémon Breeding (Erynis Path? could be cute)
         - Contest Hall (Sofos City?)
         - Tera Orb unlock (optional quest after 3rd gym)
@@ -85,6 +93,8 @@ GREEK PHRASES AND STUFF:
             - Tutorial: https://www.pokecommunity.com/threads/simple-modifications-directory.416647/post-10893555
             - Implement above feature using flag in "if" statements. Unlock flag via sidequest
             - Someone in Sofos City
+        - Move Relearner
+        - Spiky Ear Pichu gift
 
 - SUNSET PREVIEW PLANS
     - Preview 01 (12/6/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.
@@ -123,7 +133,7 @@ Many, many talented developers and artists are responsible for making this proje
     7. By COMBOY
     8. Official Pokémon GBC Sprite
     9. By Nuukiie
-    10. By Egg3ggEgg
+    10. By Egg3ggEgg (Public works & Commissions!)
     11. By Enderific
     12. By Rojimenez
     13. By SageDeoxys
@@ -133,6 +143,8 @@ Many, many talented developers and artists are responsible for making this proje
     17. By Pia Carrot
     18. Edited by kesterhenrickpixels
     19. By EeVeeEe1999
+    20. By wittycrow
+    21. By Coffee in the Pokémon Emerald Seaglass Discord Server (thank you!)
 - Trainer Sprites:
     - Many Sapphire-based GBC sprite devamps by leesongjae620 on DeviantArt
     - Some GBC style Trainer sprites from Pokémon Crystal

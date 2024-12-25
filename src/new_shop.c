@@ -647,6 +647,7 @@ static void MapPostLoadHook_ReturnToShopMenu(void)
 
 static void Task_ReturnToShopMenu(u8 taskId)
 {
+    FlagSet(FLAG_SUPPRESS_SPEAKER_NAME);
     if (IsWeatherNotFadingIn() == TRUE)
     {
         if (sMartInfo.martType == MART_TYPE_DECOR2)
