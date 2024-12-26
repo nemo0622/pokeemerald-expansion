@@ -1051,11 +1051,13 @@ const u16 gPokedexOrder_Alphabetical[] =
     NATIONAL_DEX_ZUBAT,
     NATIONAL_DEX_ZWEILOUS,
     NATIONAL_DEX_ZYGARDE,
+    NATIONAL_DEX_ZYGARDE_CELL,
 };
 
 const u16 gPokedexOrder_Weight[] =
 {
     // 0.0 - 21.8 lbs / 0.0 - 9.9 kg
+    NATIONAL_DEX_ZYGARDE_CELL,
     NATIONAL_DEX_GASTLY,
     NATIONAL_DEX_HAUNTER,
     NATIONAL_DEX_FLABEBE,//_RED_FLOWER,
@@ -2937,6 +2939,7 @@ const u16 gPokedexOrder_Weight[] =
 const u16 gPokedexOrder_Height[] =
 {
     // 0'04" / 0.1m
+    NATIONAL_DEX_ZYGARDE_CELL,
     NATIONAL_DEX_JOLTIK,
     NATIONAL_DEX_FLABEBE,//_RED_FLOWER,
     //NATIONAL_DEX_FLABEBE_YELLOW_FLOWER,

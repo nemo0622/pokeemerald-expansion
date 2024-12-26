@@ -22038,6 +22038,34 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_PECHARUNT
 
+    const u32 gMonFrontPic_Zygarde_Cell[] = INCBIN_U32("graphics/pokemon/zygarde_cell/anim_front.4bpp.lz");
+    const u32 gMonPalette_Zygarde_Cell[] = INCBIN_U32("graphics/pokemon/zygarde_cell/normal.gbapal.lz");
+    const u32 gMonBackPic_Zygarde_Cell[] = INCBIN_U32("graphics/pokemon/zygarde_cell/back.4bpp.lz");
+    const u32 gMonShinyPalette_Zygarde_Cell[] = INCBIN_U32("graphics/pokemon/zygarde_cell/shiny.gbapal.lz");
+    const u8 gMonIcon_Zygarde_Cell[] = INCBIN_U8("graphics/pokemon/zygarde_cell/icon.4bpp");
+
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Zygarde_Cell[] = INCBIN_COMP("graphics/pokemon/zygarde_cell/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gOverworldPalette_Zygarde_Cell[] = INCBIN_U32("graphics/pokemon/zygarde_cell/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_Zygarde_Cell[] = INCBIN_U32("graphics/pokemon/zygarde_cell/overworld_shiny.gbapal.lz");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif // OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Zygarde_10[] = INCBIN_U32("graphics/pokemon/zygarde/10_percent/anim_front.4bpp.lz");
+    const u32 gMonPalette_Zygarde_10[] = INCBIN_U32("graphics/pokemon/zygarde/10_percent/normal.gbapal.lz");
+    const u32 gMonBackPic_Zygarde_10[] = INCBIN_U32("graphics/pokemon/zygarde/10_percent/back.4bpp.lz");
+    const u32 gMonShinyPalette_Zygarde_10[] = INCBIN_U32("graphics/pokemon/zygarde/10_percent/shiny.gbapal.lz");
+    const u8 gMonIcon_Zygarde_10[] = INCBIN_U8("graphics/pokemon/zygarde/10_percent/icon.4bpp");
+
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Zygarde_10[] = INCBIN_COMP("graphics/pokemon/zygarde/10_percent/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gOverworldPalette_Zygarde_10[] = INCBIN_U32("graphics/pokemon/zygarde/10_percent/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_Zygarde_10[] = INCBIN_U32("graphics/pokemon/zygarde/10_percent/overworld_shiny.gbapal.lz");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif // OW_POKEMON_OBJECT_EVENTS
+
     const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
     const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
     const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");

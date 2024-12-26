@@ -318,7 +318,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(PKMN_TRAINER_1, "{PKMN} Trainer"),
     TRAINER_CLASS(PKMN_TRAINER_2, "{PKMN} Trainer"),
     TRAINER_CLASS(HIKER, "Hiker", 10),
-    TRAINER_CLASS(TEAM_KLEFTIS, "Team Kleftis"),
+    TRAINER_CLASS(TEAM_CHIMERA, "Team Chimera"),
     TRAINER_CLASS(PKMN_BREEDER, "{PKMN} Breeder", 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? ITEM_HEAL_BALL : ITEM_FRIEND_BALL),
     TRAINER_CLASS(COOLTRAINER, "Cooltrainer", 12, ITEM_ULTRA_BALL),
     TRAINER_CLASS(BIRD_KEEPER, "Bird Keeper", 8),
@@ -5920,7 +5920,7 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_CHAMPION:
             PlayBGM(MUS_VICTORY_LEAGUE);
             break;
-        case TRAINER_CLASS_TEAM_KLEFTIS:
+        case TRAINER_CLASS_TEAM_CHIMERA:
         case TRAINER_CLASS_TEAM_MAGMA:
         case TRAINER_CLASS_AQUA_ADMIN:
         case TRAINER_CLASS_AQUA_LEADER:

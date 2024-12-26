@@ -12915,8 +12915,7 @@ Move_MAGIC_POWDER::
 	end
 
 Move_DRAGON_DARTS::
-	loadspritegfx ANIM_TAG_DREEPY_SHINY
-	loadspritegfx ANIM_TAG_DREEPY
+	loadspritegfx ANIM_TAG_FLAT_ROCK
         loadspritegfx ANIM_TAG_AIR_WAVE
 	loadspritegfx ANIM_TAG_EXPLOSION
 	playsewithpan SE_FALL, SOUND_PAN_ATTACKER

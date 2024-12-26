@@ -113,7 +113,7 @@ Converts trainer data (for `convert_trainer_parties.py`) and partner data (for `
 
 #### [src/data/trainers.party](..src/data/trainers.party)
 ```diff
-+=== TRAINER_BRONZE_PASS_KLEFTIS_GRUNT ===
++=== TRAINER_BRONZE_PASS_CHIMERA_GRUNT ===
 +Name: SAWYER
 +Class: Hiker
 +Pic: Hiker

@@ -5413,7 +5413,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #endif //P_FAMILY_YVELTAL
 
 #if P_FAMILY_ZYGARDE
-    [SPECIES_ZYGARDE_50_AURA_BREAK] =
+    [SPECIES_ZYGARDE_50_AURA_BREAK] = /* UNUSED IN POKéMON SUNSET */
     {
         .baseHP        = 108,
         .baseAttack    = 100,
@@ -5490,7 +5490,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_POWER_CONSTRUCT, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_POWER_CONSTRUCT, ABILITY_NONE, ABILITY_CELL_ASSIST },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("Zygarde"),
@@ -5533,7 +5533,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .formSpeciesIdTable = sZygardeFormSpeciesIdTable,
         .formChangeTable = sZygarde50PowerConstructFormChangeTable,
     },
-    [SPECIES_ZYGARDE_10_AURA_BREAK] =
+    [SPECIES_ZYGARDE_10_AURA_BREAK] = /* UNUSED IN POKéMON SUNSET */
     {
         .baseHP        = 54,
         .baseAttack    = 100,
@@ -5567,7 +5567,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPic = gMonFrontPic_Zygarde10,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Zygarde10,
+        .frontAnimFrames = sAnims_Zygarde_10,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,,
         .backPic = gMonBackPic_Zygarde10,
         .backPicSize = MON_COORDS_SIZE(64, 56),
@@ -5603,12 +5603,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_POWER_CONSTRUCT, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_POWER_CONSTRUCT, ABILITY_NONE, ABILITY_CELL_ASSIST },
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Zygarde"),
         .cryId = CRY_ZYGARDE_10,
-        .natDexNum = NATIONAL_DEX_ZYGARDE,
+        .natDexNum = NATIONAL_DEX_ZYGARDE_10,
         .categoryName = _("Order"),
         .height = 12,
         .weight = 335,
@@ -5620,8 +5620,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPic = gMonFrontPic_Zygarde10,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Zygarde10,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,,
+        .frontAnimFrames = sAnims_Zygarde_10,
+        .frontAnimId = ANIM_TIP_MOVE_FORWARD,
         .backPic = gMonBackPic_Zygarde10,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
@@ -5635,8 +5635,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .isFrontierBanned = TRUE,
         .levelUpLearnset = sZygardeLevelUpLearnset,
         .teachableLearnset = sZygardeTeachableLearnset,
-        .formSpeciesIdTable = sZygardeFormSpeciesIdTable,
-        .formChangeTable = sZygarde10PowerConstructFormChangeTable,
     },
 
     [SPECIES_ZYGARDE_COMPLETE] =

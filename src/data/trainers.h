@@ -26,12 +26,12 @@
         },
     },
 #line 84
-    [TRAINER_BRONZE_PASS_KLEFTIS_GRUNT] =
+    [TRAINER_BRONZE_PASS_CHIMERA_GRUNT] =
     {
 #line 85
         .trainerName = _("Grunt"),
 #line 86
-        .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
+        .trainerClass = TRAINER_CLASS_TEAM_CHIMERA,
 #line 87
         .trainerPic = TRAINER_PIC_GRUNT_KECLEON,
         .encounterMusic_gender = 
@@ -9306,7 +9306,7 @@ F_TRAINER_FEMALE |
 #line 3787
         .trainerName = _("GRUNT"),
 #line 3788
-        .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
+        .trainerClass = TRAINER_CLASS_TEAM_CHIMERA,
 #line 3789
         .trainerPic = TRAINER_PIC_GRUNT_SANDSLASH,
         .encounterMusic_gender = 
@@ -9351,7 +9351,7 @@ F_TRAINER_FEMALE |
 #line 3804
         .trainerName = _("GRUNT"),
 #line 3805
-        .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
+        .trainerClass = TRAINER_CLASS_TEAM_CHIMERA,
 #line 3806
         .trainerPic = TRAINER_PIC_GRUNT_KECLEON,
         .encounterMusic_gender = 
@@ -27249,7 +27249,7 @@ F_TRAINER_FEMALE |
 #line 10892
         .trainerName = _("GRUNT"),
 #line 10893
-        .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
+        .trainerClass = TRAINER_CLASS_TEAM_CHIMERA,
 #line 10894
         .trainerPic = TRAINER_PIC_GRUNT_KECLEON,
         .encounterMusic_gender = 
@@ -27337,7 +27337,7 @@ F_TRAINER_FEMALE |
 #line 10926
         .trainerName = _("GRUNT"),
 #line 10927
-        .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
+        .trainerClass = TRAINER_CLASS_TEAM_CHIMERA,
 #line 10928
         .trainerPic = TRAINER_PIC_GRUNT_SANDSLASH,
         .encounterMusic_gender = 
@@ -28320,7 +28320,7 @@ F_TRAINER_FEMALE |
 #line 11315
         .trainerName = _("GRUNT"),
 #line 11316
-        .trainerClass = TRAINER_CLASS_TEAM_KLEFTIS,
+        .trainerClass = TRAINER_CLASS_TEAM_CHIMERA,
 #line 11317
         .trainerPic = TRAINER_PIC_GRUNT_SANDSLASH,
         .encounterMusic_gender = 

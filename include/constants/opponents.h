@@ -4,7 +4,7 @@
 #include "constants/battle_partner.h"
 
 #define TRAINER_NONE                          0
-#define TRAINER_BRONZE_PASS_KLEFTIS_GRUNT     1 // kleftis grunt
+#define TRAINER_BRONZE_PASS_CHIMERA_GRUNT     1 // chimera grunt
 #define TRAINER_EMERICK_BRONZEFIELDS          2
 #define TRAINER_JOSEPH_BRONZEFIELDS          3
 #define TRAINER_WYATT_BRONZEFIELDS          4

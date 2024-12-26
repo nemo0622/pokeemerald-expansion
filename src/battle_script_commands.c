@@ -1242,7 +1242,7 @@ static void Cmd_attackcanceler(void)
     }
 
     if (gSpecialStatuses[gBattlerAttacker].parentalBondState == PARENTAL_BOND_OFF
-    && GetBattlerAbility(gBattlerAttacker) == ABILITY_PARENTAL_BOND
+    && (GetBattlerAbility(gBattlerAttacker) == ABILITY_PARENTAL_BOND || GetBattlerAbility(gBattlerAttacker) == ABILITY_CELL_ASSIST)
     && IsMoveAffectedByParentalBond(gCurrentMove, gBattlerAttacker)
     && !(gAbsentBattlerFlags & (1u << gBattlerTarget))
     && GetActiveGimmick(gBattlerAttacker) != GIMMICK_Z_MOVE)
@@ -3485,7 +3485,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                 gBattleMoveDamage = (gBattleMons[gEffectBattler].maxHP) / 4;
                 if (gBattleMoveDamage == 0)
                     gBattleMoveDamage = 1;
-                if (GetBattlerAbility(gEffectBattler) == ABILITY_PARENTAL_BOND)
+                if (GetBattlerAbility(gEffectBattler) == ABILITY_PARENTAL_BOND || GetBattlerAbility(gEffectBattler) == ABILITY_CELL_ASSIST)
                     gBattleMoveDamage *= 2;
 
                 BattleScriptPush(gBattlescriptCurrInstr + 1);

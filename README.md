@@ -37,9 +37,9 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 ## Future Development Plans
 
 MAJOR TODOS:
-- BEFORE ANYTHING ELSE: implement TRAINER PARTY POOL system!
-    - Involves rework of previously made trainers
-    - Do this before making any new trainers! Enough work as it is lol
+- Add Zygarde-Cell Pokémon
+- NPCs and Trainers through Wanderer's Woods
+    - Zygarde/Cosmog event: Fight Team Chimera in Wanderer's Woods. When you win, you free some Pokémon from captivity, and Rania/Niko find a rare-looking Pokémon egg. They ask you if you think it's from far away (Cosmog) or nearby (Zygarde-Cell). Give you the corresponding egg!
 - Implement GBC Pokémon sprites into rom (front, back, followers, + icons)
 - Continue mapping, adding NPCs, and scripting
 - REBALANCING: go through all Pokémon and balance/rebalance, update movesets, etc.
@@ -98,12 +98,12 @@ GREEK PHRASES AND STUFF:
 
 - SUNSET PREVIEW PLANS
     - Preview 01 (12/6/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.
-    - Preview 02 (12/??/24) - Pokémon Sunset Starters Reveal - shows starters + best overworld sprites for them
-    - Preview 03 (12/25/24) - Happy Holidays from Pokémon Sunset! Show pine forests and snowy areas
-    - Preview 04 (01/??/25) - Seaglass Feature Ports - shows Pinball, Pokémon type changes, and Wishing Well
+    - Preview 02 (122424) - Pokémon Sunset Starters Reveal - shows starters + best overworld sprites for them
+    - Preview 03 (01/??/25) - Seaglass Feature Ports - shows Pinball, Pokémon type changes, and Wishing Well
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
+- When all Pokédex flags set, Caught Pokémon icon in battle appears twice
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)

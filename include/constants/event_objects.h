@@ -118,8 +118,8 @@
 #define OBJ_EVENT_GFX_CABLE_CAR                  114
 #define OBJ_EVENT_GFX_SCIENTIST_2                115
 #define OBJ_EVENT_GFX_CONSTRUCTION_WORKER        116 // replaces uhhhh something else idk
-#define OBJ_EVENT_GFX_KLEFTIS_MEMBER_M           117
-#define OBJ_EVENT_GFX_KLEFTIS_MEMBER_F           118
+#define OBJ_EVENT_GFX_CHIMERA_MEMBER_M           117
+#define OBJ_EVENT_GFX_CHIMERA_MEMBER_F           118
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_M             119
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_F             120
 #define OBJ_EVENT_GFX_SIDNEY                     121
@@ -196,7 +196,7 @@
 #define OBJ_EVENT_GFX_MAY_WATERING               192
 #define OBJ_EVENT_GFX_BRENDAN_DECORATING         193
 #define OBJ_EVENT_GFX_MAY_DECORATING             194
-#define OBJ_EVENT_GFX_MARA                       195 // 8th gym leader, leader of Team Kleftis, Ares' Daughter
+#define OBJ_EVENT_GFX_MARA                       195 // 8th gym leader, leader of Team Chimera, Ares' Daughter
 #define OBJ_EVENT_GFX_MAXIE                      196
 #define OBJ_EVENT_GFX_KYOGRE_FRONT               197
 #define OBJ_EVENT_GFX_GROUDON_FRONT              198

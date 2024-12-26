@@ -2,13 +2,13 @@ BronzePass_North_MapScripts::
 	.byte 0
 
 
-BronzePass_North_EventScript_KleftisThug::
+BronzePass_North_EventScript_ChimeraThug::
 # 5 "data/maps/BronzePass_North/scripts.pory"
 	lock
 # 6 "data/maps/BronzePass_North/scripts.pory"
-	speakername BronzePass_North_EventScript_KleftisThug_Text_0
+	speakername BronzePass_North_EventScript_ChimeraThug_Text_0
 # 7 "data/maps/BronzePass_North/scripts.pory"
-	msgbox BronzePass_North_EventScript_KleftisThug_Text_1
+	msgbox BronzePass_North_EventScript_ChimeraThug_Text_1
 # 8 "data/maps/BronzePass_North/scripts.pory"
 	closemessage
 # 9 "data/maps/BronzePass_North/scripts.pory"
@@ -20,9 +20,9 @@ BronzePass_North_EventScript_KleftisThug::
 # 12 "data/maps/BronzePass_North/scripts.pory"
 	faceplayer
 # 13 "data/maps/BronzePass_North/scripts.pory"
-	speakername BronzePass_North_EventScript_KleftisThug_Text_0
+	speakername BronzePass_North_EventScript_ChimeraThug_Text_0
 # 14 "data/maps/BronzePass_North/scripts.pory"
-	msgbox BronzePass_North_EventScript_KleftisThug_Text_2
+	msgbox BronzePass_North_EventScript_ChimeraThug_Text_2
 # 15 "data/maps/BronzePass_North/scripts.pory"
 	closemessage
 # 16 "data/maps/BronzePass_North/scripts.pory"
@@ -48,11 +48,11 @@ BronzePass_North_EventScript_Deliveryman::
 # 40 "data/maps/BronzePass_North/scripts.pory"
 	closemessage
 # 41 "data/maps/BronzePass_North/scripts.pory"
-	applymovement 2, BronzePass_North_Movement_KleftisEmphasizes
+	applymovement 2, BronzePass_North_Movement_ChimeraEmphasizes
 # 42 "data/maps/BronzePass_North/scripts.pory"
 	waitmovement 0
 # 43 "data/maps/BronzePass_North/scripts.pory"
-	speakername BronzePass_North_EventScript_KleftisThug_Text_0
+	speakername BronzePass_North_EventScript_ChimeraThug_Text_0
 # 44 "data/maps/BronzePass_North/scripts.pory"
 	msgbox BronzePass_North_EventScript_Deliveryman_Text_3
 # 45 "data/maps/BronzePass_North/scripts.pory"
@@ -60,7 +60,7 @@ BronzePass_North_EventScript_Deliveryman::
 # 46 "data/maps/BronzePass_North/scripts.pory"
 	ballfollowingmon
 # 47 "data/maps/BronzePass_North/scripts.pory"
-	applymovement 2, BronzePass_North_Movement_KleftisConfrontsPlayer
+	applymovement 2, BronzePass_North_Movement_ChimeraConfrontsPlayer
 # 48 "data/maps/BronzePass_North/scripts.pory"
 	waitmovement 0
 # 49 "data/maps/BronzePass_North/scripts.pory"
@@ -68,13 +68,13 @@ BronzePass_North_EventScript_Deliveryman::
 # 50 "data/maps/BronzePass_North/scripts.pory"
 	waitmovement 0
 # 51 "data/maps/BronzePass_North/scripts.pory"
-	speakername BronzePass_North_EventScript_KleftisThug_Text_0
+	speakername BronzePass_North_EventScript_ChimeraThug_Text_0
 # 52 "data/maps/BronzePass_North/scripts.pory"
 	msgbox BronzePass_North_EventScript_Deliveryman_Text_4
 # 53 "data/maps/BronzePass_North/scripts.pory"
 	closemessage
 # 55 "data/maps/BronzePass_North/scripts.pory"
-	trainerbattle_no_intro TRAINER_BRONZE_PASS_KLEFTIS_GRUNT, BronzePass_North_Text_KleftisGruntDefeated
+	trainerbattle_no_intro TRAINER_BRONZE_PASS_CHIMERA_GRUNT, BronzePass_North_Text_ChimeraGruntDefeated
 # 57 "data/maps/BronzePass_North/scripts.pory"
 	speakername BronzePass_North_EventScript_Deliveryman_Text_5
 # 58 "data/maps/BronzePass_North/scripts.pory"
@@ -82,7 +82,7 @@ BronzePass_North_EventScript_Deliveryman::
 # 59 "data/maps/BronzePass_North/scripts.pory"
 	closemessage
 # 60 "data/maps/BronzePass_North/scripts.pory"
-	applymovement 2, BronzePass_North_Movement_KleftisGruntExits
+	applymovement 2, BronzePass_North_Movement_ChimeraGruntExits
 # 61 "data/maps/BronzePass_North/scripts.pory"
 	waitmovement 0
 # 62 "data/maps/BronzePass_North/scripts.pory"
@@ -118,7 +118,7 @@ BronzePass_North_EventScript_Deliveryman_2:
 
 
 # 83 "data/maps/BronzePass_North/scripts.pory"
-BronzePass_North_Movement_KleftisEmphasizes:
+BronzePass_North_Movement_ChimeraEmphasizes:
 # 85 "data/maps/BronzePass_North/scripts.pory"
 	walk_in_place_right
 # 85 "data/maps/BronzePass_North/scripts.pory"
@@ -127,7 +127,7 @@ BronzePass_North_Movement_KleftisEmphasizes:
 	step_end
 
 # 89 "data/maps/BronzePass_North/scripts.pory"
-BronzePass_North_Movement_KleftisConfrontsPlayer:
+BronzePass_North_Movement_ChimeraConfrontsPlayer:
 # 91 "data/maps/BronzePass_North/scripts.pory"
 	walk_down
 # 92 "data/maps/BronzePass_North/scripts.pory"
@@ -136,7 +136,7 @@ BronzePass_North_Movement_KleftisConfrontsPlayer:
 	step_end
 
 # 96 "data/maps/BronzePass_North/scripts.pory"
-BronzePass_North_Movement_KleftisGruntExits:
+BronzePass_North_Movement_ChimeraGruntExits:
 # 98 "data/maps/BronzePass_North/scripts.pory"
 	walk_fast_left
 # 98 "data/maps/BronzePass_North/scripts.pory"
@@ -258,19 +258,19 @@ BronzePass_North_EventScript_NPC_TeenageBoy::
 	end
 
 
-BronzePass_North_EventScript_KleftisThug_Text_0:
+BronzePass_North_EventScript_ChimeraThug_Text_0:
 # 6 "data/maps/BronzePass_North/scripts.pory"
 	.string "Thug$"
 
-BronzePass_North_EventScript_KleftisThug_Text_1:
+BronzePass_North_EventScript_ChimeraThug_Text_1:
 # 7 "data/maps/BronzePass_North/scripts.pory"
 	.string "Gahaha, gimme your stuff! I know you've\n"
 	.string "got a Pokédex in here somewhere!$"
 
-BronzePass_North_EventScript_KleftisThug_Text_2:
+BronzePass_North_EventScript_ChimeraThug_Text_2:
 # 14 "data/maps/BronzePass_North/scripts.pory"
 	.string "Get outta here, you! The work of Team\n"
-	.string "Kleftis is none of your business...$"
+	.string "Chimera is none of your business...$"
 
 BronzePass_North_EventScript_Deliveryman_Text_0:
 # 26 "data/maps/BronzePass_North/scripts.pory"
@@ -303,7 +303,7 @@ BronzePass_North_EventScript_Deliveryman_Text_4:
 
 BronzePass_North_EventScript_Deliveryman_Text_5:
 # 57 "data/maps/BronzePass_North/scripts.pory"
-	.string "Kleftis Grunt$"
+	.string "Chimera Grunt$"
 
 BronzePass_North_EventScript_Deliveryman_Text_6:
 # 58 "data/maps/BronzePass_North/scripts.pory"
@@ -380,7 +380,7 @@ BronzePass_North_EventScript_NPC_TeenageBoy_Text_1:
 	.string "Gym is based around farming. She uses\l"
 	.string "Grass and Bug-type Pokémon.$"
 
-BronzePass_North_Text_KleftisGruntDefeated::
+BronzePass_North_Text_ChimeraGruntDefeated::
 # 78 "data/maps/BronzePass_North/scripts.pory"
 	.string "Urgh, you're stronger than you look...$"
 

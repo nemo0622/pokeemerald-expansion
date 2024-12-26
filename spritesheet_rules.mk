@@ -136,13 +136,13 @@ $(OBJEVENTGFXDIR)/people/ruby_sapphire_may/running.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 
-$(OBJEVENTGFXDIR)/people/team_kleftis/kleftis_member_f.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/team_chimera/chimera_member_f.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/team_kleftis/kleftis_member_m.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/team_chimera/chimera_member_m.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/team_kleftis/mara.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/team_chimera/mara.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 
@@ -2996,6 +2996,12 @@ $(POKEMONGFXDIR)/yveltal/overworld.4bpp: %.4bpp: %.png
 
 $(POKEMONGFXDIR)/zygarde/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
+
+$(POKEMONGFXDIR)/zygarde_cell/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/zygarde/10_percent/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/diancie/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4

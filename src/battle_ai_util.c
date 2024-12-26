@@ -649,14 +649,14 @@ struct SimulatedDamage AI_CalcDamage(u32 move, u32 battlerAtk, u32 battlerDef, u
             switch (moveEffect)
             {
             case EFFECT_LEVEL_DAMAGE:
-                simDamage.expected = simDamage.minimum = gBattleMons[battlerAtk].level * (aiData->abilities[battlerAtk] == ABILITY_PARENTAL_BOND ? 2 : 1);
+                simDamage.expected = simDamage.minimum = gBattleMons[battlerAtk].level * (aiData->abilities[battlerAtk] == ABILITY_PARENTAL_BOND ? 2 : 1) * (aiData->abilities[battlerAtk] == ABILITY_CELL_ASSIST ? 2 : 1);
                 break;
             case EFFECT_PSYWAVE:
-                simDamage.expected = gBattleMons[battlerAtk].level * (aiData->abilities[battlerAtk] == ABILITY_PARENTAL_BOND ? 2 : 1);
+                simDamage.expected = gBattleMons[battlerAtk].level * (aiData->abilities[battlerAtk] == ABILITY_PARENTAL_BOND ? 2 : 1) * (aiData->abilities[battlerAtk] == ABILITY_CELL_ASSIST ? 2 : 1);
                 simDamage.minimum = simDamage.expected / 2;
                 break;
             case EFFECT_FIXED_DAMAGE_ARG:
-                simDamage.expected = simDamage.minimum = gMovesInfo[move].argument * (aiData->abilities[battlerAtk] == ABILITY_PARENTAL_BOND ? 2 : 1);
+                simDamage.expected = simDamage.minimum = gMovesInfo[move].argument * (aiData->abilities[battlerAtk] == ABILITY_PARENTAL_BOND ? 2 : 1) * (aiData->abilities[battlerAtk] == ABILITY_CELL_ASSIST ? 2 : 1);
                 break;
             case EFFECT_MULTI_HIT:
                 if (move == MOVE_WATER_SHURIKEN && gBattleMons[battlerAtk].species == SPECIES_GRENINJA_ASH)

@@ -474,11 +474,11 @@ static const struct SpriteFrameImage sPicTable_DevonEmployee[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_AquaMemberM[] = {
-    overworld_ascending_frames(gObjectEventPic_KleftisMemberM, 2, 4),
+    overworld_ascending_frames(gObjectEventPic_ChimeraMemberM, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_AquaMemberF[] = {
-    overworld_ascending_frames(gObjectEventPic_KleftisMemberF, 2, 4),
+    overworld_ascending_frames(gObjectEventPic_ChimeraMemberF, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_MagmaMemberM[] = {

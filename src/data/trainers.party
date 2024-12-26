@@ -81,9 +81,9 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_BRONZE_PASS_KLEFTIS_GRUNT === /* Kleftis grunt in bronze pass north */
+=== TRAINER_BRONZE_PASS_CHIMERA_GRUNT === /* Chimera grunt in bronze pass north */
 Name: Grunt
-Class: Team Kleftis
+Class: Team Chimera
 Pic: Grunt Kecleon
 Gender: Male
 Music: Aqua
@@ -3785,7 +3785,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
 Name: GRUNT
-Class: Team Kleftis
+Class: Team Chimera
 Pic: Grunt Sandslash
 Gender: Female
 Music: Aqua
@@ -3802,7 +3802,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
 Name: GRUNT
-Class: Team Kleftis
+Class: Team Chimera
 Pic: Grunt Kecleon
 Gender: Male
 Music: Aqua
@@ -10890,7 +10890,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
 Name: GRUNT
-Class: Team Kleftis
+Class: Team Chimera
 Pic: Grunt Kecleon
 Gender: Male
 Music: Aqua
@@ -10924,7 +10924,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_4 ===
 Name: GRUNT
-Class: Team Kleftis
+Class: Team Chimera
 Pic: Grunt Sandslash
 Gender: Female
 Music: Aqua
@@ -11313,7 +11313,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_5 ===
 Name: GRUNT
-Class: Team Kleftis
+Class: Team Chimera
 Pic: Grunt Sandslash
 Gender: Female
 Music: Aqua

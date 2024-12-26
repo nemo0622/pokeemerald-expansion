@@ -8813,6 +8813,14 @@ static const union AnimCmd sAnim_Yveltal_1[] =
 #endif //P_FAMILY_YVELTAL
 
 #if P_FAMILY_ZYGARDE
+static const union AnimCmd sAnim_Zygarde_Cell_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Zygarde50_1[] =
 {
     ANIMCMD_FRAME(0, 10),
@@ -8821,7 +8829,7 @@ static const union AnimCmd sAnim_Zygarde50_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Zygarde10_1[] =
+static const union AnimCmd sAnim_Zygarde_10_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 10),
@@ -12087,8 +12095,9 @@ SINGLE_ANIMATION(Xerneas);
 SINGLE_ANIMATION(Yveltal);
 #endif //P_FAMILY_YVELTAL
 #if P_FAMILY_ZYGARDE
+SINGLE_ANIMATION(Zygarde_Cell);
 SINGLE_ANIMATION(Zygarde50);
-SINGLE_ANIMATION(Zygarde10);
+SINGLE_ANIMATION(Zygarde_10);
 SINGLE_ANIMATION(ZygardeComplete);
 #endif //P_FAMILY_ZYGARDE
 #if P_FAMILY_DIANCIE

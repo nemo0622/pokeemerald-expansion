@@ -1,6 +1,6 @@
 mapscripts BronzePass_North_MapScripts {}
 
-script BronzePass_North_EventScript_KleftisThug
+script BronzePass_North_EventScript_ChimeraThug
 {
     lock
     speakername("Thug")
@@ -11,7 +11,7 @@ script BronzePass_North_EventScript_KleftisThug
     delay(30)
     faceplayer
     speakername("Thug")
-    msgbox(format("Get outta here, you! The work of Team Kleftis is none of your business..."))
+    msgbox(format("Get outta here, you! The work of Team Chimera is none of your business..."))
     closemessage
     applymovement(2, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
@@ -38,13 +38,13 @@ script BronzePass_North_EventScript_Deliveryman
         // Do event!!
         msgbox(format("You! You have to help me! This guy attacked my Mudbray and is trying to rob me!"))
         closemessage
-        applymovement(2, BronzePass_North_Movement_KleftisEmphasizes)
+        applymovement(2, BronzePass_North_Movement_ChimeraEmphasizes)
         waitmovement(0)
         speakername("Thug")
         msgbox(format("Quit stalling for time, I know you've got good stuff here! I've knocked out your Pokémon, I'll knock you out next!"))
         closemessage
         ballfollowingmon
-        applymovement(2, BronzePass_North_Movement_KleftisConfrontsPlayer)
+        applymovement(2, BronzePass_North_Movement_ChimeraConfrontsPlayer)
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
         waitmovement(0)
@@ -52,12 +52,12 @@ script BronzePass_North_EventScript_Deliveryman
         msgbox(format("Trying to stop me, eh? I'll teach you a lesson!"))
         closemessage
         // TRAINER BATTLE HERE!
-        trainerbattle_no_intro(TRAINER_BRONZE_PASS_KLEFTIS_GRUNT, BronzePass_North_Text_KleftisGruntDefeated)
+        trainerbattle_no_intro(TRAINER_BRONZE_PASS_CHIMERA_GRUNT, BronzePass_North_Text_ChimeraGruntDefeated)
 
-        speakername("Kleftis Grunt")
+        speakername("Chimera Grunt")
         msgbox(format("The Boss is gonna freak... well, they shouldn't have sent a new recruit like me out here anyway.\p You just got lucky, kid! I'll get you for this!"))
         closemessage
-        applymovement(2, BronzePass_North_Movement_KleftisGruntExits)
+        applymovement(2, BronzePass_North_Movement_ChimeraGruntExits)
         waitmovement(0)
         removeobject(2)
         delay(20)
@@ -75,25 +75,25 @@ script BronzePass_North_EventScript_Deliveryman
     end
 }
 
-text BronzePass_North_Text_KleftisGruntDefeated
+text BronzePass_North_Text_ChimeraGruntDefeated
 {
     format("Urgh, you're stronger than you look...")
 }
 
-movement BronzePass_North_Movement_KleftisEmphasizes
+movement BronzePass_North_Movement_ChimeraEmphasizes
 {
     walk_in_place_right * 2
     step_end
 }
 
-movement BronzePass_North_Movement_KleftisConfrontsPlayer
+movement BronzePass_North_Movement_ChimeraConfrontsPlayer
 {
     walk_down
     face_right
     step_end
 }
 
-movement BronzePass_North_Movement_KleftisGruntExits
+movement BronzePass_North_Movement_ChimeraGruntExits
 {
     walk_fast_left * 6
     walk_fast_down * 3

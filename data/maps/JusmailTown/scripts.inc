@@ -221,7 +221,7 @@ JusmailTown_EventScript_WishingWell::
 	compare VAR_RESULT, 1
 	goto_if_eq JusmailTown_EventScript_WishingWell_2
 JusmailTown_EventScript_WishingWell_1:
-# 345 "data/maps/JusmailTown/scripts.pory"
+# 363 "data/maps/JusmailTown/scripts.pory"
 	releaseall
 	end
 
@@ -245,80 +245,80 @@ JusmailTown_EventScript_WishingWell_4:
 # 174 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 # 177 "data/maps/JusmailTown/scripts.pory"
-	randomelement SPECIES_ROWLET, SPECIES_LITTEN, SPECIES_POPPLIO, SPECIES_CHESPIN, SPECIES_FENNEKIN, SPECIES_FROAKIE, SPECIES_PANSAGE, SPECIES_PANSEAR, SPECIES_PANPOUR, SPECIES_SENTRET, SPECIES_LILLIPUP, SPECIES_PIKIPEK, SPECIES_DUCKLETT, SPECIES_HOPPIP, SPECIES_NINCADA, SPECIES_GRUBBIN, SPECIES_PARAS, SPECIES_PHANPY, SPECIES_CUBONE, SPECIES_MUDBRAY, SPECIES_MAREEP, SPECIES_FLABEBE, SPECIES_CUTIEFLY, SPECIES_CATERPIE, SPECIES_WEEDLE, SPECIES_RALTS, SPECIES_EEVEE, SPECIES_SKIDDO, SPECIES_MURKROW, SPECIES_ORICORIO, SPECIES_SANDSHREW, SPECIES_NOSEPASS, SPECIES_MAWILE, SPECIES_ROCKRUFF, SPECIES_VULLABY, SPECIES_WOOBAT, SPECIES_ARON, SPECIES_TIMBURR, SPECIES_KLAWF, SPECIES_POLIWAG, SPECIES_PUMPKABOO, SPECIES_SHROOMISH, SPECIES_HERACROSS, SPECIES_SHUPPET, SPECIES_AIPOM, SPECIES_WOOPER, SPECIES_TOEDSCOOL, SPECIES_BLITZLE, SPECIES_HOOTHOOT, SPECIES_MIENFOO, SPECIES_FLITTLE, SPECIES_VULPIX, SPECIES_HONEDGE, SPECIES_DWEBBLE, SPECIES_MINIOR, SPECIES_GASTLY, SPECIES_BALTOY, SPECIES_SALANDIT, SPECIES_TOGEPI, SPECIES_CHERUBI, SPECIES_HOUNDOUR, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_SKORUPI, SPECIES_SPINARAK, SPECIES_ELEKID, SPECIES_MAGBY, SPECIES_SNORUNT, SPECIES_SPHEAL, SPECIES_SEEL, SPECIES_BRONZOR, SPECIES_ZORUA_HISUI, SPECIES_SNEASEL_HISUI, SPECIES_VULPIX_ALOLA, SPECIES_NOIBAT, SPECIES_MEOWTH_GALAR, SPECIES_PACHIRISU, SPECIES_CHINGLING, SPECIES_TYNAMO, SPECIES_PAWMI, SPECIES_SHROODLE, SPECIES_BUIZEL, SPECIES_STUNKY, SPECIES_CORSOLA_GALAR, SPECIES_FINNEON, SPECIES_WAILMER, SPECIES_TENTACOOL, SPECIES_CLAUNCHER, SPECIES_SCYTHER, SPECIES_STUFFUL, SPECIES_BAGON, SPECIES_TOGEDEMARU, SPECIES_CRABRAWLER, SPECIES_LILEEP, SPECIES_ANORITH, SPECIES_DEDENNE, SPECIES_MEDITITE, SPECIES_DROWZEE, SPECIES_EKANS, SPECIES_BASCULIN_WHITE_STRIPED, SPECIES_PANCHAM, SPECIES_SKRELP, SPECIES_CHINCHOU, SPECIES_SHELLDER, SPECIES_CLAMPERL, SPECIES_CLEFFA, SPECIES_IGGLYBUFF, SPECIES_TRAPINCH, SPECIES_DODUO, SPECIES_TINKATINK, SPECIES_SCRAGGY, SPECIES_DARUMAKA, SPECIES_TORKOAL, SPECIES_NUMEL, SPECIES_MUNNA, SPECIES_KECLEON, SPECIES_MAGIKARP, SPECIES_FOMANTIS, SPECIES_ORANGURU, SPECIES_PASSIMIAN, SPECIES_ZIGZAGOON_GALAR, SPECIES_GOOMY, SPECIES_BRUXISH, SPECIES_IMPIDIMP, SPECIES_SWABLU, SPECIES_FARFETCHD, SPECIES_MANKEY, SPECIES_VOLTORB_HISUI, SPECIES_LAPRAS, SPECIES_GIRAFARIG, SPECIES_BUDEW, SPECIES_MAGNEMITE, SPECIES_CUBCHOO, SPECIES_GROWLITHE_HISUI, SPECIES_PSYDUCK, SPECIES_YANMA, SPECIES_SKARMORY, SPECIES_REMORAID, SPECIES_RUFFLET, SPECIES_PHANTUMP, SPECIES_SNOVER, SPECIES_DUSKULL, SPECIES_VANILLITE, SPECIES_PAWNIARD, SPECIES_LARVESTA, SPECIES_TIRTOUGA, SPECIES_ARCHEN, SPECIES_LARVITAR, SPECIES_DHELMISE
-# 327 "data/maps/JusmailTown/scripts.pory"
+	randomelement SPECIES_ROWLET, SPECIES_LITTEN, SPECIES_POPPLIO, SPECIES_CHESPIN, SPECIES_FENNEKIN, SPECIES_FROAKIE, SPECIES_PANSAGE, SPECIES_PANSEAR, SPECIES_PANPOUR, SPECIES_SENTRET, SPECIES_LILLIPUP, SPECIES_PIKIPEK, SPECIES_DUCKLETT, SPECIES_HOPPIP, SPECIES_NINCADA, SPECIES_GRUBBIN, SPECIES_PARAS, SPECIES_PHANPY, SPECIES_CUBONE, SPECIES_MUDBRAY, SPECIES_MAREEP, SPECIES_FLABEBE, SPECIES_CUTIEFLY, SPECIES_GRIMER, SPECIES_GRIMER_ALOLAN, SPECIES_CATERPIE, SPECIES_WEEDLE, SPECIES_RALTS, SPECIES_EEVEE, SPECIES_SKIDDO, SPECIES_MURKROW, SPECIES_ORICORIO_BAILE, SPECIES_ORICORIO_POM_POM, SPECIES_ORICORIO_PAU, SPECIES_ORICORIO_SENSU, SPECIES_SANDSHREW, SPECIES_SANDSHREW_ALOLAN, SPECIES_NOSEPASS, SPECIES_MAWILE, SPECIES_ROCKRUFF, SPECIES_VULLABY, SPECIES_WOOBAT, SPECIES_ARON, SPECIES_TIMBURR, SPECIES_KLAWF, SPECIES_POLIWAG, SPECIES_PUMPKABOO, SPECIES_SHROOMISH, SPECIES_HERACROSS, SPECIES_SHUPPET, SPECIES_AIPOM, SPECIES_WOOPER, SPECIES_WOOPER_PALDEAN, SPECIES_TOEDSCOOL, SPECIES_BLITZLE, SPECIES_HOOTHOOT, SPECIES_MIENFOO, SPECIES_FLITTLE, SPECIES_VULPIX, SPECIES_VULPIX_ALOLAN, SPECIES_HONEDGE, SPECIES_DWEBBLE, SPECIES_MINIOR, SPECIES_GASTLY, SPECIES_BALTOY, SPECIES_SALANDIT, SPECIES_TOGEPI, SPECIES_CHERUBI, SPECIES_HOUNDOUR, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_SKORUPI, SPECIES_SPINARAK, SPECIES_ELEKID, SPECIES_MAGBY, SPECIES_SNORUNT, SPECIES_SPHEAL, SPECIES_SEEL, SPECIES_BRONZOR, SPECIES_ZORUA, SPECIES_ZORUA_HISUI, SPECIES_SNEASEL, SPECIES_SNEASEL_HISUI, SPECIES_NOIBAT, SPECIES_MEOWTH, SPECIES_MEOWTH_ALOLAN, SPECIES_MEOWTH_GALAR, SPECIES_PACHIRISU, SPECIES_CHINGLING, SPECIES_TYNAMO, SPECIES_PAWMI, SPECIES_SHROODLE, SPECIES_BUIZEL, SPECIES_STUNKY, SPECIES_CORSOLA, SPECIES_CORSOLA_GALAR, SPECIES_FINNEON, SPECIES_WAILMER, SPECIES_TENTACOOL, SPECIES_CLAUNCHER, SPECIES_SCYTHER, SPECIES_STUFFUL, SPECIES_BAGON, SPECIES_TOGEDEMARU, SPECIES_CRABRAWLER, SPECIES_LILEEP, SPECIES_ANORITH, SPECIES_DEDENNE, SPECIES_MEDITITE, SPECIES_DROWZEE, SPECIES_EKANS, SPECIES_BASCULIN_WHITE_STRIPED, SPECIES_PANCHAM, SPECIES_SKRELP, SPECIES_CHINCHOU, SPECIES_SHELLDER, SPECIES_CLAMPERL, SPECIES_CLEFFA, SPECIES_IGGLYBUFF, SPECIES_TRAPINCH, SPECIES_DODUO, SPECIES_TINKATINK, SPECIES_SCRAGGY, SPECIES_DARUMAKA, SPECIES_DARUMAKA_GALARIAN, SPECIES_TORKOAL, SPECIES_NUMEL, SPECIES_MUNNA, SPECIES_KECLEON, SPECIES_MAGIKARP, SPECIES_FOMANTIS, SPECIES_ORANGURU, SPECIES_PASSIMIAN, SPECIES_ZIGZAGOON, SPECIES_ZIGZAGOON_GALAR, SPECIES_GOOMY, SPECIES_BRUXISH, SPECIES_IMPIDIMP, SPECIES_SWABLU, SPECIES_FARFETCHD, SPECIES_FARFETCHD_GALARIAN, SPECIES_MANKEY, SPECIES_VOLTORB, SPECIES_VOLTORB_HISUI, SPECIES_LAPRAS, SPECIES_GIRAFARIG, SPECIES_BUDEW, SPECIES_MAGNEMITE, SPECIES_CUBCHOO, SPECIES_GROWLITHE, SPECIES_GROWLITHE_HISUI, SPECIES_PSYDUCK, SPECIES_YANMA, SPECIES_SKARMORY, SPECIES_REMORAID, SPECIES_RUFFLET, SPECIES_PHANTUMP, SPECIES_SNOVER, SPECIES_DUSKULL, SPECIES_VANILLITE, SPECIES_PAWNIARD, SPECIES_LARVESTA, SPECIES_TIRTOUGA, SPECIES_ARCHEN, SPECIES_LARVITAR, SPECIES_DHELMISE, SPECIES_DRATINI
+# 345 "data/maps/JusmailTown/scripts.pory"
 	givemon VAR_RESULT, 1
-# 328 "data/maps/JusmailTown/scripts.pory"
+# 346 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWell_Text_4
-# 329 "data/maps/JusmailTown/scripts.pory"
+# 347 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 330 "data/maps/JusmailTown/scripts.pory"
+# 348 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq JusmailTown_EventScript_WishingWell_6
-# 337 "data/maps/JusmailTown/scripts.pory"
+# 355 "data/maps/JusmailTown/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
-# 338 "data/maps/JusmailTown/scripts.pory"
+# 356 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWell_Text_5
-# 339 "data/maps/JusmailTown/scripts.pory"
+# 357 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 	goto JusmailTown_EventScript_WishingWell_1
 
 JusmailTown_EventScript_WishingWell_6:
-# 332 "data/maps/JusmailTown/scripts.pory"
+# 350 "data/maps/JusmailTown/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 333 "data/maps/JusmailTown/scripts.pory"
+# 351 "data/maps/JusmailTown/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto JusmailTown_EventScript_WishingWell_1
 
 
 JusmailTown_EventScript_LittleGirlWithWishingStar::
-# 353 "data/maps/JusmailTown/scripts.pory"
+# 371 "data/maps/JusmailTown/scripts.pory"
 	lock
-# 354 "data/maps/JusmailTown/scripts.pory"
+# 372 "data/maps/JusmailTown/scripts.pory"
 	faceplayer
-# 355 "data/maps/JusmailTown/scripts.pory"
+# 373 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_LittleGirlWithWishingStar_Text_0
-# 356 "data/maps/JusmailTown/scripts.pory"
+# 374 "data/maps/JusmailTown/scripts.pory"
 	goto_if_unset FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL, JusmailTown_EventScript_LittleGirlWithWishingStar_2
-# 368 "data/maps/JusmailTown/scripts.pory"
+# 386 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_3
-# 369 "data/maps/JusmailTown/scripts.pory"
+# 387 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 JusmailTown_EventScript_LittleGirlWithWishingStar_1:
-# 371 "data/maps/JusmailTown/scripts.pory"
+# 389 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_2:
-# 358 "data/maps/JusmailTown/scripts.pory"
+# 376 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_1
-# 359 "data/maps/JusmailTown/scripts.pory"
+# 377 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 360 "data/maps/JusmailTown/scripts.pory"
+# 378 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_LittleGirlWithWishingStar_Text_0
-# 361 "data/maps/JusmailTown/scripts.pory"
+# 379 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_2
-# 362 "data/maps/JusmailTown/scripts.pory"
+# 380 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 363 "data/maps/JusmailTown/scripts.pory"
+# 381 "data/maps/JusmailTown/scripts.pory"
 	giveitem ITEM_WISHING_STAR, 3
-# 364 "data/maps/JusmailTown/scripts.pory"
+# 382 "data/maps/JusmailTown/scripts.pory"
 	setflag FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL
 	goto JusmailTown_EventScript_LittleGirlWithWishingStar_1
 
 
 JusmailTown_EventScript_WishingWellSign::
-# 379 "data/maps/JusmailTown/scripts.pory"
+# 397 "data/maps/JusmailTown/scripts.pory"
 	lock
-# 380 "data/maps/JusmailTown/scripts.pory"
+# 398 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWellSign_Text_0
-# 381 "data/maps/JusmailTown/scripts.pory"
+# 399 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 382 "data/maps/JusmailTown/scripts.pory"
+# 400 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWellSign_Text_1
-# 383 "data/maps/JusmailTown/scripts.pory"
+# 401 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 384 "data/maps/JusmailTown/scripts.pory"
+# 402 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
@@ -448,42 +448,42 @@ JusmailTown_EventScript_WishingWell_Text_3:
 	.string "...  ...  ...  ...!$"
 
 JusmailTown_EventScript_WishingWell_Text_4:
-# 328 "data/maps/JusmailTown/scripts.pory"
+# 346 "data/maps/JusmailTown/scripts.pory"
 	.string "A POKé BALL appeared... containing a\n"
 	.string "POKéMON!$"
 
 JusmailTown_EventScript_WishingWell_Text_5:
-# 338 "data/maps/JusmailTown/scripts.pory"
+# 356 "data/maps/JusmailTown/scripts.pory"
 	.string "The POKéMON was sent to the PC.$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_0:
-# 355 "data/maps/JusmailTown/scripts.pory"
+# 373 "data/maps/JusmailTown/scripts.pory"
 	.string "Little Girl$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_1:
-# 358 "data/maps/JusmailTown/scripts.pory"
+# 376 "data/maps/JusmailTown/scripts.pory"
 	.string "See that broken well?\n"
 	.string "It's actually a Wishing Well, and it\l"
 	.string "grants wishes! Really!$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_2:
-# 361 "data/maps/JusmailTown/scripts.pory"
+# 379 "data/maps/JusmailTown/scripts.pory"
 	.string "Sometimes, my friends and me throw\n"
 	.string "Wishing Stars down the Wishing Well!\l"
 	.string "Here's a few for you!$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_3:
-# 368 "data/maps/JusmailTown/scripts.pory"
+# 386 "data/maps/JusmailTown/scripts.pory"
 	.string "Did you get anything cool from the\n"
 	.string "Wishing Well?$"
 
 JusmailTown_EventScript_WishingWellSign_Text_0:
-# 380 "data/maps/JusmailTown/scripts.pory"
+# 398 "data/maps/JusmailTown/scripts.pory"
 	.string "JUSMAIL TOWN WELL\n"
 	.string "More than meets the eye.$"
 
 JusmailTown_EventScript_WishingWellSign_Text_1:
-# 382 "data/maps/JusmailTown/scripts.pory"
+# 400 "data/maps/JusmailTown/scripts.pory"
 	.string "There's more scribbled on here...\p"
 	.string "Use Wishing Stars at the Wishing Well!\n"
 	.string "POKéMON are granted to those who seek\l"

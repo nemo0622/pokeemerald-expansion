@@ -752,7 +752,7 @@
 #define SPECIES_XERNEAS_NEUTRAL                         716
 #define SPECIES_YVELTAL                                 717
 #define SPECIES_ZYGARDE                                 SPECIES_ZYGARDE_50
-#define SPECIES_ZYGARDE_50                              SPECIES_ZYGARDE_50_AURA_BREAK
+#define SPECIES_ZYGARDE_50                              SPECIES_ZYGARDE_50_POWER_CONSTRUCT
 #define SPECIES_ZYGARDE_50_AURA_BREAK                   718
 #define SPECIES_DIANCIE                                 719
 #define SPECIES_HOOPA                                   SPECIES_HOOPA_CONFINED
@@ -1227,7 +1227,6 @@
 #define SPECIES_GOURGEIST_LARGE                         1161
 #define SPECIES_GOURGEIST_SUPER                         1162
 #define SPECIES_XERNEAS_ACTIVE                          1163
-#define SPECIES_ZYGARDE_10                              SPECIES_ZYGARDE_10_AURA_BREAK
 #define SPECIES_ZYGARDE_10_AURA_BREAK                   1164
 #define SPECIES_ZYGARDE_10_POWER_CONSTRUCT              1165
 #define SPECIES_ZYGARDE_50_POWER_CONSTRUCT              1166
@@ -1628,8 +1627,10 @@
 #define SPECIES_URSHIFU_SINGLE_STRIKE_STYLE_GIGANTAMAX  1521
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GIGANTAMAX   1522
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    1523
+#define SPECIES_ZYGARDE_CELL                            1524
+#define SPECIES_ZYGARDE_10                              1525
 
-#define SPECIES_EGG (SPECIES_MIMIKYU_TOTEM_BUSTED + 1)
+#define SPECIES_EGG (SPECIES_ZYGARDE_10 + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

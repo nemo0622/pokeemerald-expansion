@@ -2615,4 +2615,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Boosts kicking moves."),
         .aiRating = 6,
     },
+
+    [ABILITY_CELL_ASSIST] =
+    {
+        .name = _("Z-Cell Assist"),
+        .description = COMPOUND_STRING("Extra attack + Technician."),
+        .aiRating = 6,
+    },
 };
