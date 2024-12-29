@@ -180,13 +180,13 @@ JusmailTown_EventScript_RaniaEvent::
 # 133 "data/maps/JusmailTown/scripts.pory"
 	setvar VAR_NIKO_STATE, 1
 # 134 "data/maps/JusmailTown/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 135 "data/maps/JusmailTown/scripts.pory"
 	delay 30
 # 136 "data/maps/JusmailTown/scripts.pory"
 	removeobject 11
 # 137 "data/maps/JusmailTown/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 138 "data/maps/JusmailTown/scripts.pory"
 	delay 20
 JusmailTown_EventScript_RaniaEvent_1:

@@ -34,17 +34,17 @@
 #define TRAINER_ACRISIACAVES_BF1_KYLON         28
 #define TRAINER_LEADER_MATTAIOS                     29
 #define TRAINER_LEADER_MATTAIOS_HARD                         30
-#define TRAINER_ZANDER                       31
-#define TRAINER_SHELLY_WEATHER_INSTITUTE     32
-#define TRAINER_SHELLY_SEAFLOOR_CAVERN       33
-#define TRAINER_ARCHIE                       34
-#define TRAINER_LEAH                         35
-#define TRAINER_DAISY                        36
+#define TRAINER_WANDERERSWOODS_ZANDER                       31
+#define TRAINER_WANDERERSWOODS_KALLAS     32
+#define TRAINER_WANDERERSWOODS_MARTHA       33
+#define TRAINER_WANDERERSWOODS_ALEXI                       34
+#define TRAINER_WANDERERSWOODS_ELLIE                         35
+#define TRAINER_WANDERERSWOODS_CHIMERA_ADMIN                        36
 #define TRAINER_BRONZEPASS_ROSE              37 // Lass in BronzePass_North
 #define TRAINER_BRONZEPASS_FELIX             38 // Boy in BronzePass_North
-#define TRAINER_VIOLET                       39
-#define TRAINER_ROSE_2                       40
-#define TRAINER_ROSE_3                       41
+#define TRAINER_WANDERERSWOODS_CHIMERA_ADMIN_HARD                       39
+#define TRAINER_WANDERERSWOODS_LYDIA                       40
+#define TRAINER_WANDERERSWOODS_THOMAS                       41
 #define TRAINER_ROSE_4                       42
 #define TRAINER_ROSE_5                       43
 #define TRAINER_DUSTY_1                      44

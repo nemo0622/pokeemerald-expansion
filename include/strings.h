@@ -2901,6 +2901,9 @@ extern const u8 gText_BasePointsResetToZero[];
 extern const u8 gText_Fertilize[];
 extern const u8 gText_PlantBerry[];
 
+extern const u8 gText_Niko[];
+extern const u8 gText_Rania[];
+
 // Map name pop-up
 extern const u8 gText_AM[];
 extern const u8 gText_PM[];

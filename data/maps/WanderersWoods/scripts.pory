@@ -1,1 +1,516 @@
 mapscripts WanderersWoods_MapScripts {}
+
+script WanderersWoods_EventScript_Trainer_WanderersWoods_Zander
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_ZANDER, WanderersWoods_Text_Trainer_WanderersWoods_ZanderIntro, WanderersWoods_Text_Trainer_WanderersWoods_ZanderDefeat)
+    speakername("Zander")
+    msgbox(format("Apparently people get lost in here all the time. I'm not letting Jusmail Town out of my sight!"))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_ZanderIntro
+{
+    format("I came here for Toedscool because it's funny, but some of these Pokémon are so scary!")
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_ZanderDefeat
+{
+    format("Eek! I thought I saw a Ghost Pokémon!")
+}
+
+script WanderersWoods_EventScript_Trainer_WanderersWoods_Kallas
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_KALLAS, WanderersWoods_Text_Trainer_WanderersWoods_KallasIntro, WanderersWoods_Text_Trainer_WanderersWoods_KallasDefeat)
+    speakername("Kallas")
+    msgbox(format("These Grass-type Pokémon are weak to my Flying-type moves."))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_KallasIntro
+{
+    format("My Bird Pokémon and I come here to train! I'll let you help us out.")
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_KallasDefeat
+{
+    format("My little birds!")
+}
+
+script WanderersWoods_EventScript_Trainer_WanderersWoods_Martha
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_MARTHA, WanderersWoods_Text_Trainer_WanderersWoods_MarthaIntro, WanderersWoods_Text_Trainer_WanderersWoods_MarthaDefeat)
+    speakername("Martha")
+    msgbox(format("There are rumors of Team Chimera operating around here recently."))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_MarthaIntro
+{
+    format("I hear some shouting up ahead. I'll stay away from there.")
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_MarthaDefeat
+{
+    format("I hope it's not Team Chimera...!")
+}
+
+script WanderersWoods_EventScript_Trainer_WanderersWoods_Alexi
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_ALEXI, WanderersWoods_Text_Trainer_WanderersWoods_AlexiIntro, WanderersWoods_Text_Trainer_WanderersWoods_AlexiDefeat)
+    speakername("Alexi")
+    msgbox(format("How do people get through here, anyway? Ugh."))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_AlexiIntro
+{
+    format("I've got a job down in Pythios Town, but now I'm lost!")
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_AlexiDefeat
+{
+    format("Argh, I'm gonna be late!")
+}
+
+script WanderersWoods_EventScript_Trainer_WanderersWoods_Ellie
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_ELLIE, WanderersWoods_Text_Trainer_WanderersWoods_EllieIntro, WanderersWoods_Text_Trainer_WanderersWoods_EllieDefeat)
+    speakername("Ellie")
+    msgbox(format("Some Pokémon only come out at night. Maybe my music will bring out the coolest Pokémon!"))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_EllieIntro
+{
+    format("I hear wild Impidimp only come out at night. So rad!")
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_EllieDefeat
+{
+    format("Well that's not rad at all!")
+}
+
+script WanderersWoods_EventScript_Trainer_WanderersWoods_Lydia
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_LYDIA, WanderersWoods_Text_Trainer_WanderersWoods_LydiaIntro, WanderersWoods_Text_Trainer_WanderersWoods_LydiaDefeat)
+    speakername("Lydia")
+    msgbox(format("Team Chimera was in the woods?! Their treatment of Pokémon is known to be terrible."))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_LydiaIntro
+{
+    format("Some Pokémon just scampered through here, like they were running from something. I wonder what happened?")
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_LydiaDefeat
+{
+    format("Maybe I should've caught one.")
+}
+
+script WanderersWoods_EventScript_Trainer_WanderersWoods_Thomas
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_THOMAS, WanderersWoods_Text_Trainer_WanderersWoods_ThomasIntro, WanderersWoods_Text_Trainer_WanderersWoods_ThomasDefeat)
+    speakername("Thomas")
+    msgbox(format("Not all Ghost-type or Dark-type Pokémon are actually evil! That's a common misconception."))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_ThomasIntro
+{
+    format("Pythios Town has a strange aura around it, that must be why the plants turn orange here.")
+}
+text WanderersWoods_Text_Trainer_WanderersWoods_ThomasDefeat
+{
+    format("I bet it's all the Ghost-type Pokémon.")
+}
+
+script WanderersWoods_EventScript_NPC_Man
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("I think I finally found the way out of the woods! These red-orange plants are a sure sign of Pythios Town."))
+    closemessage
+    release
+    end
+}
+
+script WanderersWoods_EventScript_RaniaNPC
+{
+    lock
+    faceplayer
+    speakername("Rania")
+    msgbox(format("{PLAYER}! Are you headed south to Pythios Town too?\p Niko and I are recording Pokémon behavior around here. Every area in the Ilios Region is packed with new Pokémon!"))
+    closemessage
+    release
+    end
+}
+
+script WanderersWoods_EventScript_NikoNPC
+{
+    lock
+    faceplayer
+    speakername("Niko")
+    msgbox(format("Yia sou, {PLAYER}! Pokémon behavior is so interesting, eh?\p Rania and I are getting some data and training our Pokémon while we're at it! Who knows, we might beat you to Pythios Town!"))
+    closemessage
+    release
+    end
+}
+
+
+// ------------------------------------------------------------------------------------------------------
+// ------------------------------------ TEAM CHIMERA EVENT ----------------------------------------------
+// ------------------------------------------------------------------------------------------------------
+
+script WanderersWoods_Trigger_ChimeraEvent
+{
+    lock
+    applymovement(6, Common_Movement_WalkDown)
+    applymovement(7, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(7, Common_Movement_WalkRight)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Headed down to Pythios Town? We'll come with you!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("There are reports of Ghost-type and Psychic-type Pokémon there. Maybe we can record some new species!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, WanderersWoods_Movement_PlayerLeadsToChimera)
+    applymovement(6, WanderersWoods_Movement_RaniaFollowsToChimera)
+    applymovement(7, WanderersWoods_Movement_NikoFollowsToChimera)
+    waitmovement(0)
+    goto(WanderersWoods_EventScript_ChimeraEvent)
+    end
+}
+
+script WanderersWoods_EventScript_ChimeraEvent
+{
+    // Niko & Rania look down and see Team Chimera
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    applymovement(7, Common_Movement_FaceDown)
+    applymovement(6, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(7, Common_Movement_ExclamationMark)
+    applymovement(6, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(30)
+
+    // Rania wonders what Team Chimera is doing here
+    applymovement(6, Common_Movement_FaceLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Those are Team Chimera thugs! Remember, that group who attacked the Pokédex shipment when you get here, {PLAYER}? What are they doing to those poor Pokémon?!"))
+    closemessage
+    applymovement(6, Common_Movement_FaceDown)
+    applymovement(7, Common_Movement_FaceDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+
+    // Team Chimera grunts approach, shout it's none of our business
+    applymovement(8, Common_Movement_WalkUp)
+    waitmovement(0)
+    delay(15)
+    speakername("Chimera Grunt")
+    msgbox(format("Argh, nothin' like spectators to ruin a perfectly good plan. Stay out of our business!"))
+    closemessage
+    delay(15)
+    applymovement(9, Common_Movement_WalkUp2)
+    waitmovement(0)
+    speakername("Chimera Grunt")
+    msgbox(format("Yeah, this doesn't concern you! The Boss is lookin' for new Pokémon for our ar-"))
+    closemessage
+    applymovement(10, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(10, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("Shut it, Grunt! Do you wanna give away all our plans?!"))
+    closemessage
+    
+    // Pokémon take the chance to run
+    applymovement(11, Common_Movement_JumpInPlaceLeft)
+    applymovement(12, Common_Movement_JumpInPlaceDown)
+    applymovement(13, Common_Movement_JumpInPlaceLeft)
+    waitmovement(0)
+    delay(20)
+    applymovement(10, Common_Movement_ExclamationMark)
+    applymovement(8, Common_Movement_FaceDown)
+    applymovement(9, Common_Movement_FaceDown)
+    applymovement(10, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(11, WanderersWoods_Movement_ShroomishEscape)
+    applymovement(12, WanderersWoods_Movement_BlitzleEscape)
+    applymovement(13, WanderersWoods_Movement_ImpidimpEscape)
+    waitmovement(0)
+    delay(60)
+
+    // Niko and Rania agree to battle the other grunts, while you take the middle Admin
+    applymovement(8, Common_Movement_FaceUp)
+    applymovement(9, Common_Movement_FaceUp)
+    applymovement(10, Common_Movement_FaceUp)
+    speakername("Chimera Admin")
+    msgbox(format("No! Our Pokémon got away! This is your fault... you have to pay! Grunts, let's get 'em!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    applymovement(6, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("We'll help you fight them, {PLAYER}! These thugs can't get away with treating Pokémon like that!"))
+    closemessage
+    applymovement(6, Common_Movement_FaceDown)
+    applymovement(7, Common_Movement_FaceDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+
+    // Grunts approach, you battle the admin in the middle
+    applymovement(8, Common_Movement_WalkUp)
+    applymovement(9, Common_Movement_WalkUp)
+    applymovement(10, Common_Movement_WalkUp)
+    if(var(VAR_DIFFICULTY) == 0)
+    {
+        trainerbattle_no_intro(TRAINER_WANDERERSWOODS_CHIMERA_ADMIN, WanderersWoods_Text_ChimeraAdminDefeated)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_WANDERERSWOODS_CHIMERA_ADMIN_HARD, WanderersWoods_Text_ChimeraAdminDefeated)
+    }
+
+    // Grunts scatter, Admin watches in disbelief as Niko and Rania run off after them
+    applymovement(10, Common_Movement_QuestionMark)
+    waitmovement(0)
+    applymovement(10, Common_Movement_FaceLeft)
+    waitmovement(0)
+    applymovement(8, WanderersWoods_Movement_GruntEscapes1)
+    waitmovement(0)
+    applymovement(7, Common_Movement_WalkDown)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("Hold it! You're not getting away!"))
+    closemessage
+    applymovement(7, WanderersWoods_Movement_GruntEscapes1)
+    waitmovement(0)
+    delay(20)
+    applymovement(10, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(10, Common_Movement_FaceRight)
+    waitmovement(0)
+    applymovement(9, WanderersWoods_Movement_GruntEscapes2)
+    waitmovement(0)
+    applymovement(6, Common_Movement_WalkDown)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("{PLAYER}, you stay here and watch this one. I'm going after them!"))
+    closemessage
+    applymovement(6, WanderersWoods_Movement_GruntEscapes2)
+    waitmovement(0)
+    delay(60)
+
+    // Admin speaks to player before running off
+    applymovement(10, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("I can't believe they just ran off like that! So much for loyalty.\p First we failed to take the Pokédex shipment, and now this... {PLAYER}, right? You're becoming a real problem for Team Chimera. You'd better stay out of our business, or the Boss'll destroy you!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    applymovement(10, WanderersWoods_Movement_AdminEscapes)
+    waitmovement(0)
+    delay(20)
+
+    // Player hears a shout, choose if it was Niko (get Zygarde-Cell) or Rania (get Cosmog)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    speakername("???")
+    msgbox(format("WHAT'S THIS?!"))
+    closemessage
+    delay(30)
+    message(format("One of your friends shouted in the distance. Who was it?"))
+    waitmessage
+    multichoice(21, 8, MULTI_NIKO_OR_RANIA, TRUE) // VAR_RESULT: 0 = Niko, 1 = Rania
+    closemessage
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(20)
+    addobject(7)
+    applymovement(7, WanderersWoods_Movement_NikoReturns)
+    waitmovement(0)
+    addobject(6)
+    applymovement(6, WanderersWoods_Movement_RaniaReturns)
+    waitmovement(0)
+    delay(10)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(30)
+
+    // Niko/Rania talks to player, gives rare egg
+    if(var(VAR_RESULT) == 0) // niko egg (zygarde cell)
+    {
+        applymovement(7, Common_Movement_FaceRight)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+        waitmovement(0)
+        speakername("Niko")
+        msgbox(format("Team Chimera got away from us, but look what one of them dropped! It's a {COLOR GREEN}Pokémon Egg like I've never seen before{COLOR DARK_GRAY}! Maybe it holds a rare Pokémon.\p {PLAYER}, I want you to have it. Pokémon Eggs aren't my specialty."))
+        closemessage
+        giveegg(SPECIES_ZYGARDE_CELL)
+        playfanfare(MUS_OBTAIN_ITEM)
+        message(format("{PLAYER} received a {COLOR GREEN}Rare Egg{COLOR DARK_GRAY}!"))
+        waitmessage
+        waitfanfare
+        delay(20)
+        speakername("Niko")
+        msgbox(format("Carry that Egg around until it hatches. Who knows, maybe it's a new species of Pokémon!\p Rania and I are gonna head back to the University for a while. Let us know if Pythios Town is worth a visit!"))
+        closemessage
+    }
+    else // rania egg (cosmog)
+    {
+        applymovement(6, Common_Movement_FaceLeft)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+        waitmovement(0)
+        speakername("Rania")
+        msgbox(format("Team Chimera got away from us, but look what one of them dropped! It's a {COLOR GREEN}Pokémon Egg like I've never seen before{COLOR DARK_GRAY}! Maybe it holds a rare Pokémon.\p {PLAYER}, I want you to have it. Pokémon Eggs aren't my specialty."))
+        closemessage
+        giveegg(SPECIES_COSMOG)
+        playfanfare(MUS_OBTAIN_ITEM)
+        message(format("{PLAYER} received a {COLOR GREEN}Rare Egg{COLOR DARK_GRAY}!"))
+        waitmessage
+        waitfanfare
+        delay(20)
+        speakername("Rania")
+        msgbox(format("Carry that Egg around until it hatches. Who knows, maybe it's a new species of Pokémon!\p Niko and I are gonna head back to the University for a while. Let us know if Pythios Town is worth a visit!"))
+        closemessage
+    }
+
+    // fadescreen, remove objects and set hide flags
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(30)
+    setflag(FLAG_BEAT_CHIMERA_WANDERING_WOODS)
+    removeobject(6)
+    removeobject(7)
+    removeobject(8)
+    removeobject(9)
+    removeobject(10)
+    removeobject(11)
+    removeobject(12)
+    removeobject(13)
+    delay(30)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(30)
+    releaseall
+    end
+}
+
+movement WanderersWoods_Movement_PlayerLeadsToChimera
+{
+    walk_right * 2
+    walk_down * 3
+    emote_question_mark
+    delay_16
+    walk_down * 2
+    step_end
+}
+
+movement WanderersWoods_Movement_RaniaFollowsToChimera
+{
+    walk_down
+    walk_right * 2
+    walk_down * 2
+    delay_16
+    walk_down * 2
+    walk_right
+    walk_down
+    step_end
+}
+
+movement WanderersWoods_Movement_NikoFollowsToChimera
+{
+    walk_in_place_right
+    walk_right * 2
+    walk_down * 3
+    walk_down * 2
+    step_end
+}
+
+movement WanderersWoods_Movement_ShroomishEscape
+{
+    walk_fast_left
+    walk_fast_up
+    walk_fast_left * 7
+    step_end
+}
+
+movement WanderersWoods_Movement_BlitzleEscape
+{
+    walk_fast_down * 2
+    walk_fast_left * 2
+    walk_fast_down * 2
+    step_end
+}
+
+movement WanderersWoods_Movement_ImpidimpEscape
+{
+    walk_fast_down
+    walk_fast_left * 2
+    walk_fast_up
+    walk_fast_left * 3
+    walk_fast_down * 4
+    step_end
+}
+
+text WanderersWoods_Text_ChimeraAdminDefeated
+{
+    format("Beaten and stopped... the Boss won't take this.")
+}
+
+movement WanderersWoods_Movement_GruntEscapes1
+{
+    walk_fast_down * 2
+    walk_fast_left * 2
+    jump_down * 3
+    walk_fast_down * 3
+    step_end
+}
+
+movement WanderersWoods_Movement_GruntEscapes2
+{
+    walk_fast_down * 3
+    walk_fast_left * 2
+    walk_fast_down * 2
+    walk_fast_left
+    walk_fast_down * 2
+    step_end
+}
+
+movement WanderersWoods_Movement_AdminEscapes
+{
+    walk_fast_down * 5
+    walk_fast_left * 3
+    walk_fast_down * 3
+    step_end
+}
+
+movement WanderersWoods_Movement_NikoReturns
+{
+    walk_faster_up * 3
+    jump_up * 3
+    walk_faster_right * 2
+    walk_faster_up * 2
+    face_right
+    step_end
+}
+
+movement WanderersWoods_Movement_RaniaReturns
+{
+    walk_faster_up * 2
+    walk_faster_right
+    walk_faster_up * 2
+    walk_faster_right * 2
+    walk_faster_up * 3
+    face_left
+    step_end
+}

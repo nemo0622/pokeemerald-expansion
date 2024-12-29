@@ -37,9 +37,13 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 ## Future Development Plans
 
 MAJOR TODOS:
-- Add Zygarde-Cell Pokémon
 - NPCs and Trainers through Wanderer's Woods
-    - Zygarde/Cosmog event: Fight Team Chimera in Wanderer's Woods. When you win, you free some Pokémon from captivity, and Rania/Niko find a rare-looking Pokémon egg. They ask you if you think it's from far away (Cosmog) or nearby (Zygarde-Cell). Give you the corresponding egg!
+- New orange-themed edit of battle background for Pythios Town and Erinys Path
+- Give Magcargo ability giving immunity to Water moves (+ document!)
+- COMMISSION SPRITES:
+    - Oricorio Formes
+    - Mudsdale
+    - Toxel & Toxtricity?
 - Implement GBC Pokémon sprites into rom (front, back, followers, + icons)
 - Continue mapping, adding NPCs, and scripting
 - REBALANCING: go through all Pokémon and balance/rebalance, update movesets, etc.
@@ -104,6 +108,7 @@ GREEK PHRASES AND STUFF:
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
 - When all Pokédex flags set, Caught Pokémon icon in battle appears twice
+- Zygarde-10 bugged in pokedex
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)

@@ -12769,7 +12769,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_WOOPER"
+                "species": "SPECIES_WOOPER_PALDEAN"
               },
               {
                 "min_level": 12,
@@ -14451,6 +14451,71 @@
         {
           "map": "MAP_SEA_OF_ASTERI_CENTRAL",
           "base_label": "gSeaOfAsteri_Central0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_CRABRAWLER"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_RUFFLET"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_TRUMBEAK"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_CHARJABUG"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_NINJASK"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_TOGEPI"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_PANSAGE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_PANSEAR"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_PANPOUR"
+              },
+              {
+                "min_level": 26,
+                "max_level": 29,
+                "species": "SPECIES_TOUCANNON"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
+                "species": "SPECIES_PANPOUR"
+              },
+              {
+                "min_level": 26,
+                "max_level": 29,
+                "species": "SPECIES_TOUCANNON"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 4,
             "mons": [
@@ -14533,71 +14598,6 @@
                 "min_level": 25,
                 "max_level": 35,
                 "species": "SPECIES_LANTURN"
-              }
-            ]
-          },
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 24,
-                "max_level": 27,
-                "species": "SPECIES_CRABRAWLER"
-              },
-              {
-                "min_level": 24,
-                "max_level": 27,
-                "species": "SPECIES_RUFFLET"
-              },
-              {
-                "min_level": 24,
-                "max_level": 27,
-                "species": "SPECIES_TRUMBEAK"
-              },
-              {
-                "min_level": 24,
-                "max_level": 27,
-                "species": "SPECIES_CHARJABUG"
-              },
-              {
-                "min_level": 24,
-                "max_level": 27,
-                "species": "SPECIES_NINJASK"
-              },
-              {
-                "min_level": 24,
-                "max_level": 27,
-                "species": "SPECIES_TOGEPI"
-              },
-              {
-                "min_level": 24,
-                "max_level": 27,
-                "species": "SPECIES_PANSAGE"
-              },
-              {
-                "min_level": 24,
-                "max_level": 27,
-                "species": "SPECIES_PANSEAR"
-              },
-              {
-                "min_level": 24,
-                "max_level": 27,
-                "species": "SPECIES_PANPOUR"
-              },
-              {
-                "min_level": 26,
-                "max_level": 29,
-                "species": "SPECIES_TOUCANNON"
-              },
-              {
-                "min_level": 24,
-                "max_level": 27,
-                "species": "SPECIES_PANPOUR"
-              },
-              {
-                "min_level": 26,
-                "max_level": 29,
-                "species": "SPECIES_TOUCANNON"
               }
             ]
           }

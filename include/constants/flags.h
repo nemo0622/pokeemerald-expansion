@@ -1239,7 +1239,7 @@
 #define FLAG_GOT_BERRY_CLUB_REWARD_50                               0x4A4 // Reward for over 50 berry trees
 #define FLAG_GOT_BERRY_CLUB_REWARD_100                              0x4A5 // Reward for over 100 berry trees
 #define FLAG_GOT_BERRY_CLUB_REWARD_200                              0x4A6 // Reward for over 200 berry trees
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
+#define FLAG_BEAT_CHIMERA_WANDERING_WOODS                           0x4A7 // Did Wandering Woods Chimera event
 #define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
 #define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
 #define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag

@@ -112,7 +112,36 @@ Common_Movement_WalkDown:
 	walk_down
 	step_end
 
-@ Unused
+Common_Movement_WalkDown2:
+	walk_down
+	walk_down
+	step_end
+
+Common_Movement_WalkLeft2:
+	walk_left
+	walk_left
+	step_end
+
+Common_Movement_JumpInPlaceUp:
+	jump_in_place_up
+	jump_in_place_up
+	step_end
+
+Common_Movement_JumpInPlaceDown:
+	jump_in_place_down
+	jump_in_place_down
+	step_end
+
+Common_Movement_JumpInPlaceLeft:
+	jump_in_place_left
+	jump_in_place_left
+	step_end
+
+Common_Movement_JumpInPlaceRight:
+	jump_in_place_right
+	jump_in_place_right
+	step_end
+
 Common_Movement_WalkUp2::
 	walk_up
 	walk_up
