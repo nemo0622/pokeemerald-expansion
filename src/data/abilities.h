@@ -2620,6 +2620,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Z-Cell Assist"),
         .description = COMPOUND_STRING("Extra attack + Technician."),
-        .aiRating = 6,
+        .aiRating = 9,
+    },
+
+    [ABILITY_CELESTIAL_BOOST] =
+    {
+        .name = _("Celestial Boost"),
+        .description = COMPOUND_STRING("Boost Fire + Ghost moves."),
+        .aiRating = 9,
     },
 };

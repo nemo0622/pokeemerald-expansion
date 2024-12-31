@@ -37,17 +37,17 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 ## Future Development Plans
 
 MAJOR TODOS:
-- NPCs and Trainers through Wanderer's Woods
+- Add Bounsweet, Cufant, and Applin to cheat codes + Wishing Well; remove Flabebe from all dialogue and WW
 - New orange-themed edit of battle background for Pythios Town and Erinys Path
 - Give Magcargo ability giving immunity to Water moves (+ document!)
 - COMMISSION SPRITES:
     - Oricorio Formes
-    - Mudsdale
     - Toxel & Toxtricity?
 - Implement GBC Pokémon sprites into rom (front, back, followers, + icons)
 - Continue mapping, adding NPCs, and scripting
 - REBALANCING: go through all Pokémon and balance/rebalance, update movesets, etc.
     - Learn from Seaglass feedback! Less extreme buffs, more balance
+    - Rewrite custom Pokédex entries for each mon!
 - DOCUMENTATION!
     - Important item locations
     - TM/HM locations + Gym Leader rewards
@@ -129,7 +129,7 @@ Many, many talented developers and artists are responsible for making this proje
     - Some GBC-style default houses by TrainerDX
 - Pokémon Sprites:
     Numbers below match sprites on the official Pokémon Sunset Ilios Pokédex Image:
-    1. Sprite created/edited by Nemo622
+    1. Sprite created/edited by Nemo622 (edits based on pokeemerald-expansion sprites)
     2. By Matdemo159
     3. By Supahsanti, from Substitube public resource
     4. By MonsterHam

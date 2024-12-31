@@ -16592,8 +16592,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = HANDLE_EXPANDED_MOVE_NAME("SnsteelStrke", "Sunsteel Strike"),
         .description = COMPOUND_STRING(
             "A sun-fueled strike that\n"
-            "ignores abilities."),
-        .effect = EFFECT_HIT,
+            "is Fire and Steel-type."),
+        .effect = EFFECT_TWO_TYPED_MOVE,
         .power = 100,
         .type = TYPE_STEEL,
         .accuracy = 100,
@@ -16601,6 +16601,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .argument = TYPE_FIRE,
         .makesContact = TRUE,
         .ignoresTargetAbility = TRUE,
         .metronomeBanned = B_UPDATED_MOVE_FLAGS >= GEN_8,
@@ -16616,8 +16617,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = HANDLE_EXPANDED_MOVE_NAME("MoongestBeam", "Moongeist Beam"),
         .description = COMPOUND_STRING(
             "A moon-powered beam that\n"
-            "ignores abilities."),
-        .effect = EFFECT_HIT,
+            "is Ghost and Fairy-type."),
+        .effect = EFFECT_TWO_TYPED_MOVE,
         .power = 100,
         .type = TYPE_GHOST,
         .accuracy = 100,
@@ -16625,6 +16626,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = TYPE_FAIRY,
         .ignoresTargetAbility = TRUE,
         .metronomeBanned = B_UPDATED_MOVE_FLAGS >= GEN_8,
         .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
