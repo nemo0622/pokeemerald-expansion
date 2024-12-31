@@ -195,7 +195,6 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_CUBONE,
             SPECIES_MUDBRAY,
             SPECIES_MAREEP,
-            SPECIES_FLABEBE,
             SPECIES_CUTIEFLY,
             SPECIES_GRIMER,
             SPECIES_GRIMER_ALOLAN,
@@ -340,7 +339,13 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_ARCHEN,
             SPECIES_LARVITAR,
             SPECIES_DHELMISE,
-            SPECIES_DRATINI)
+            SPECIES_DRATINI,
+            SPECIES_BOUNSWEET,
+            SPECIES_CUFANT,
+            SPECIES_FINIZEN,
+            SPECIES_APPLIN,
+            SPECIES_SANDILE,
+            SPECIES_FALINKS)
 
 			givemon(VAR_RESULT, 1)
 			msgbox(format("A POKé BALL appeared... containing a POKéMON!"))

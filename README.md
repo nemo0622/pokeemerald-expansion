@@ -37,12 +37,8 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
 ## Future Development Plans
 
 MAJOR TODOS:
-- Add Bounsweet, Cufant, and Applin to cheat codes + Wishing Well; remove Flabebe from all dialogue and WW
 - New orange-themed edit of battle background for Pythios Town and Erinys Path
 - Give Magcargo ability giving immunity to Water moves (+ document!)
-- COMMISSION SPRITES:
-    - Oricorio Formes
-    - Toxel & Toxtricity?
 - Implement GBC Pokémon sprites into rom (front, back, followers, + icons)
 - Continue mapping, adding NPCs, and scripting
 - REBALANCING: go through all Pokémon and balance/rebalance, update movesets, etc.
@@ -150,6 +146,7 @@ Many, many talented developers and artists are responsible for making this proje
     19. By EeVeeEe1999
     20. By wittycrow
     21. By Coffee in the Pokémon Emerald Seaglass Discord Server (thank you!)
+    22. By lakeofdance, from Substitube public resource
 - Trainer Sprites:
     - Many Sapphire-based GBC sprite devamps by leesongjae620 on DeviantArt
     - Some GBC style Trainer sprites from Pokémon Crystal

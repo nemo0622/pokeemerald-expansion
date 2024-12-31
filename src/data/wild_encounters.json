@@ -12625,7 +12625,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_APPLIN"
               },
               {
                 "min_level": 12,
@@ -13056,7 +13056,7 @@
               {
                 "min_level": 16,
                 "max_level": 19,
-                "species": "SPECIES_BALTOY"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 16,
@@ -13194,7 +13194,7 @@
               {
                 "min_level": 17,
                 "max_level": 20,
-                "species": "SPECIES_ELEKID"
+                "species": "SPECIES_FALINKS"
               },
               {
                 "min_level": 17,
@@ -13263,12 +13263,12 @@
               {
                 "min_level": 17,
                 "max_level": 20,
-                "species": "SPECIES_ELEKID"
+                "species": "SPECIES_FALINKS"
               },
               {
                 "min_level": 17,
                 "max_level": 20,
-                "species": "SPECIES_MAGBY"
+                "species": "SPECIES_ELEKID"
               },
               {
                 "min_level": 17,
@@ -14219,7 +14219,7 @@
               {
                 "min_level": 24,
                 "max_level": 30,
-                "species": "SPECIES_LANTURN"
+                "species": "SPECIES_FINIZEN"
               },
               {
                 "min_level": 22,
@@ -14770,7 +14770,7 @@
               {
                 "min_level": 26,
                 "max_level": 29,
-                "species": "SPECIES_DROWZEE"
+                "species": "SPECIES_STEENEE"
               },
               {
                 "min_level": 26,
@@ -14840,17 +14840,17 @@
               {
                 "min_level": 22,
                 "max_level": 28,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_FINIZEN"
               },
               {
                 "min_level": 22,
                 "max_level": 28,
-                "species": "SPECIES_CORSOLA_GALARIAN"
+                "species": "SPECIES_FINIZEN"
               },
               {
                 "min_level": 22,
                 "max_level": 28,
-                "species": "SPECIES_CORSOLA_GALARIAN"
+                "species": "SPECIES_FINIZEN"
               }
             ]
           },
@@ -15505,7 +15505,7 @@
               {
                 "min_level": 27,
                 "max_level": 31,
-                "species": "SPECIES_WOOPER"
+                "species": "SPECIES_KROKOROK"
               },
               {
                 "min_level": 27,
