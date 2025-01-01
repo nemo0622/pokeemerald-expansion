@@ -301,6 +301,12 @@ script AcrisiaCity_University_EventScript_Niko
         msgbox(format("{PLAYER}! I'm back here to study this little Duskull. In case you can't tell, I really like Ghost-type Pokémon."))
         closemessage
     }
+    elif(var(VAR_NIKO_STATE) == 5) // completed Team Chimera event in Wanderer's Woods
+    {
+        speakername("Niko")
+        msgbox(format("Welcome back, {PLAYER}. I hope that run-in with Team Chimera didn't rattle you too bad.\p The Ilios Region is mostly peaceful, but just like anywhere else, there are some people willing to do anything to gain power."))
+        closemessage
+    }
     release
     end
 }
@@ -336,6 +342,12 @@ script AcrisiaCity_University_EventScript_Rania
     {
         speakername("Rania")
         msgbox(format("Yia sou! I come back here to heal my Pokémon and put my new Pokédex data into the computers. Don't you worry, I'll be back out soon! Get ready for some battles!"))
+        closemessage
+    }
+    elif(var(VAR_RANIA_STATE) == 4) // finished Team Chimera event in Wanderer's Woods
+    {
+        speakername("Rania")
+        msgbox(format("Come back to cool off too, {PLAYER}? That fight with Team Chimera sure was something. I wonder why they're collecting Pokémon..."))
         closemessage
     }
     release
@@ -679,12 +691,16 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
 	        playse(SE_CLICK)
 	        delay(20)
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("{PLAYER}'s Pokédex was enabled!")
+            msgbox("{PLAYER}'s {COLOR GREEN}Pokédex{COLOR DARK_GRAY} was enabled!")
             waitfanfare
             setflag(FLAG_SYS_POKEDEX_GET)
             setflag(FLAG_ADVENTURE_STARTED)
             setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
             closemessage
+            speakername("Prof. Elia")
+            msgbox(format("Ah, speaking of electronics, here's an {COLOR GREEN}EXP. Share{COLOR DARK_GRAY} to help raise your Pokémon faster."))
+            closemessage
+            giveitem(ITEM_EXP_SHARE)
             speakername("Prof. Elia")
             msgbox(format("I think it's a good idea to train your Pokémon for battle, in case more troublemakers come around. Why don't you {COLOR GREEN}battle the Pokémon Gyms{COLOR DARK_GRAY} you find while you're exploring the Ilios Region? That'll get your Pokémon raring to go!"))
             closemessage
@@ -754,6 +770,25 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeTwo
         msgbox(format("Incredible! You're becoming a great Pokémon trainer. As promised, here's something exciting for you!"))
         closemessage
         giveitem(ITEM_HM_ROCK_SMASH)
+        speakername("Prof. Elia")
+        msgbox(format("Oh right, another thing! I ordered an upgrade for your Pokédex."))
+        closemessage
+        playse(SE_CLICK)
+	    delay(10)
+	    playse(SE_CLICK)
+	    delay (10)
+	    playse(SE_CLICK)
+	    delay(10)
+	    playse(SE_CLICK)
+	    delay(20)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} can use the {COLOR GREEN}DexNav{COLOR DARK_GRAY}!")
+        waitfanfare
+        setflag(FLAG_SYS_DEXNAV_GET)
+        closemessage
+        speakername("Prof. Elia")
+        msgbox(format("It came with directions! It says to select a Pokémon from the {COLOR GREEN}DexNav menu{COLOR DARK_GRAY} to try and find it, then {COLOR GREEN}hold the A Button{COLOR DARK_GRAY} to {COLOR GREEN}creep up on the Pokémon{COLOR DARK_GRAY}! If you move too fast, the Pokémon will {COLOR RED}run away{COLOR DARK_GRAY}. Seems useful!"))
+        closemessage
         speakername("Prof. Elia")
         msgbox(format("As you grow stronger, you'll be able to adventure further to find new Pokémon. This'll be great for our studies!\p I believe you're ready to conduct your {COLOR GREEN}independent research{COLOR DARK_GRAY} and {COLOR GREEN}explore Ilios{COLOR DARK_GRAY}. With Rock Smash, you should be able to continue {COLOR GREEN}south to Pythios Town{COLOR DARK_GRAY}.\p Remember to stop back here sometimes! I can check your Pokédex progress and give you rewards for your research, and your fellow University students here will be researching right alongside you. Good luck, {PLAYER}!"))
         closemessage

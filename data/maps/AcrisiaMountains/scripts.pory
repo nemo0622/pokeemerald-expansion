@@ -9,6 +9,44 @@ script AcrisiaMountains_Sign_GymSign
     end
 }
 
+script AcrisiaMountains_EventScript_FishingGuru
+{
+    lock
+    faceplayer
+
+    if(flag(FLAG_RECEIVED_OLD_ROD))
+    {
+        speakername("Fishing Guru")
+        msgbox(format("Plenty of good Pokémon can be fished up! Make sure to cast a rod a few times in each pond you see!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Fishing Guru")
+        msgbox(format("You! Yes, you! Tell me, do you like to fish?"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Fishing Guru")
+            msgbox(format("Oh. Well, okay then."))
+            closemessage
+        }
+        else
+        {
+            speakername("Fishing Guru")
+            msgbox(format("Grand! We can be great friends. Here, I want you to take this."))
+            closemessage
+            giveitem(ITEM_OLD_ROD)
+            speakername("Fishing Guru")
+            msgbox(format("The Ilios Region has extremely diverse water life! Make sure to fish every day."))
+            closemessage
+            setflag(FLAG_RECEIVED_OLD_ROD)
+        }
+    }
+
+    release
+    end
+}
+
 script AcrisiaMountains_EventScript_RockExploringHiker
 {
     lock

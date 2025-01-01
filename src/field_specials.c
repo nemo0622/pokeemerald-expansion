@@ -4290,7 +4290,7 @@ void GetMysteryGiftFeedback(void)
 {
     // The codes.
     static const u8 sText_CodeRareCandies[]    = _("9RARECANDY");
-    static const u8 sText_CodeMasterBalls[]   = _("MASTERBALL");
+    static const u8 sText_CodePerfectCatchRate[]   = _("JUSTCATCH!");
     static const u8 sText_CodeWorldChamp[]   = _("WORLDCHAMP");
     static const u8 sText_CodeGirlypop[]   = _("WATCHPHAUN"); // girlypop code, only stage 1's though
     static const u8 sText_CodeAlolaStarters[]   = _("ILOVEALOLA");
@@ -4325,7 +4325,7 @@ void GetMysteryGiftFeedback(void)
     if (!StringCompare(gStringVar2, sText_CodeRareCandies))
         gSpecialVar_Result = 1;
     // Code 2
-    else if (!StringCompare(gStringVar2, sText_CodeMasterBalls))
+    else if (!StringCompare(gStringVar2, sText_CodePerfectCatchRate))
         gSpecialVar_Result = 2;
     // Code 3
     else if (!StringCompare(gStringVar2, sText_CodeWorldChamp))

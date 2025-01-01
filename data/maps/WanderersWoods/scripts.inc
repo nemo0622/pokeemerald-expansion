@@ -524,6 +524,10 @@ WanderersWoods_EventScript_ChimeraEvent_5:
 # 403 "data/maps/WanderersWoods/scripts.pory"
 	delay 30
 # 404 "data/maps/WanderersWoods/scripts.pory"
+	setvar VAR_RANIA_STATE, 4
+# 405 "data/maps/WanderersWoods/scripts.pory"
+	setvar VAR_NIKO_STATE, 5
+# 406 "data/maps/WanderersWoods/scripts.pory"
 	releaseall
 	end
 
@@ -566,183 +570,177 @@ WanderersWoods_EventScript_ChimeraEvent_6:
 	goto WanderersWoods_EventScript_ChimeraEvent_5
 
 
-# 408 "data/maps/WanderersWoods/scripts.pory"
+# 410 "data/maps/WanderersWoods/scripts.pory"
 WanderersWoods_Movement_PlayerLeadsToChimera:
-# 410 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 410 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 411 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 411 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 411 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
 # 412 "data/maps/WanderersWoods/scripts.pory"
-	emote_question_mark
+	walk_right
+# 412 "data/maps/WanderersWoods/scripts.pory"
+	walk_right
 # 413 "data/maps/WanderersWoods/scripts.pory"
-	delay_16
-# 414 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 413 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 413 "data/maps/WanderersWoods/scripts.pory"
 	walk_down
 # 414 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
+	emote_question_mark
 # 415 "data/maps/WanderersWoods/scripts.pory"
+	delay_16
+# 416 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 416 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 417 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 418 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_RaniaFollowsToChimera:
 # 420 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 421 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 421 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 422 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
+WanderersWoods_Movement_RaniaFollowsToChimera:
 # 422 "data/maps/WanderersWoods/scripts.pory"
 	walk_down
 # 423 "data/maps/WanderersWoods/scripts.pory"
-	delay_16
+	walk_right
+# 423 "data/maps/WanderersWoods/scripts.pory"
+	walk_right
 # 424 "data/maps/WanderersWoods/scripts.pory"
 	walk_down
 # 424 "data/maps/WanderersWoods/scripts.pory"
 	walk_down
 # 425 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
+	delay_16
+# 426 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
 # 426 "data/maps/WanderersWoods/scripts.pory"
 	walk_down
 # 427 "data/maps/WanderersWoods/scripts.pory"
+	walk_right
+# 428 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 429 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 430 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_NikoFollowsToChimera:
 # 432 "data/maps/WanderersWoods/scripts.pory"
+WanderersWoods_Movement_NikoFollowsToChimera:
+# 434 "data/maps/WanderersWoods/scripts.pory"
 	walk_in_place_right
-# 433 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 433 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 434 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 434 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 434 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
 # 435 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
+	walk_right
 # 435 "data/maps/WanderersWoods/scripts.pory"
+	walk_right
+# 436 "data/maps/WanderersWoods/scripts.pory"
 	walk_down
 # 436 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 436 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 437 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 437 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 438 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 439 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_ShroomishEscape:
 # 441 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 442 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_up
-# 443 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 443 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 443 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 443 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 443 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 443 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
+WanderersWoods_Movement_ShroomishEscape:
 # 443 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
 # 444 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_up
+# 445 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 445 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 445 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 445 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 445 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 445 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 445 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 446 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 447 "data/maps/WanderersWoods/scripts.pory"
+# 449 "data/maps/WanderersWoods/scripts.pory"
 WanderersWoods_Movement_BlitzleEscape:
-# 449 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 449 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 450 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 450 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
 # 451 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
 # 451 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
 # 452 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 452 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 453 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 453 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 454 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 455 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_ImpidimpEscape:
 # 457 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 458 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 458 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
+WanderersWoods_Movement_ImpidimpEscape:
 # 459 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 460 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 460 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 461 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_up
-# 460 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 460 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 460 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 461 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 461 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 461 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 461 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
 # 462 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 462 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 462 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 463 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 463 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 463 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 463 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 464 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 470 "data/maps/WanderersWoods/scripts.pory"
+# 472 "data/maps/WanderersWoods/scripts.pory"
 WanderersWoods_Movement_GruntEscapes1:
-# 472 "data/maps/WanderersWoods/scripts.pory"
+# 474 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
-# 472 "data/maps/WanderersWoods/scripts.pory"
+# 474 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
-# 473 "data/maps/WanderersWoods/scripts.pory"
+# 475 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
-# 473 "data/maps/WanderersWoods/scripts.pory"
+# 475 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
-# 474 "data/maps/WanderersWoods/scripts.pory"
-	jump_down
-# 474 "data/maps/WanderersWoods/scripts.pory"
-	jump_down
-# 474 "data/maps/WanderersWoods/scripts.pory"
-	jump_down
-# 475 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 475 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 475 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
 # 476 "data/maps/WanderersWoods/scripts.pory"
+	jump_down
+# 476 "data/maps/WanderersWoods/scripts.pory"
+	jump_down
+# 476 "data/maps/WanderersWoods/scripts.pory"
+	jump_down
+# 477 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 477 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 477 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 478 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 479 "data/maps/WanderersWoods/scripts.pory"
+# 481 "data/maps/WanderersWoods/scripts.pory"
 WanderersWoods_Movement_GruntEscapes2:
-# 481 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 481 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 481 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 482 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 482 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
 # 483 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
 # 483 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
+# 483 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 484 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
 # 484 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
 # 485 "data/maps/WanderersWoods/scripts.pory"
@@ -750,26 +748,20 @@ WanderersWoods_Movement_GruntEscapes2:
 # 485 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
 # 486 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 487 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 487 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 488 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 489 "data/maps/WanderersWoods/scripts.pory"
+# 491 "data/maps/WanderersWoods/scripts.pory"
 WanderersWoods_Movement_AdminEscapes:
-# 491 "data/maps/WanderersWoods/scripts.pory"
+# 493 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
-# 491 "data/maps/WanderersWoods/scripts.pory"
+# 493 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
-# 491 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 491 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 491 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 492 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 492 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 492 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
 # 493 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
 # 493 "data/maps/WanderersWoods/scripts.pory"
@@ -777,60 +769,72 @@ WanderersWoods_Movement_AdminEscapes:
 # 493 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
 # 494 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 494 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 494 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 495 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 495 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 495 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 496 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 497 "data/maps/WanderersWoods/scripts.pory"
+# 499 "data/maps/WanderersWoods/scripts.pory"
 WanderersWoods_Movement_NikoReturns:
-# 499 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 499 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 499 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 500 "data/maps/WanderersWoods/scripts.pory"
-	jump_up
-# 500 "data/maps/WanderersWoods/scripts.pory"
-	jump_up
-# 500 "data/maps/WanderersWoods/scripts.pory"
-	jump_up
 # 501 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_right
+	walk_faster_up
 # 501 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_right
-# 502 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 501 "data/maps/WanderersWoods/scripts.pory"
 	walk_faster_up
 # 502 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
+	jump_up
+# 502 "data/maps/WanderersWoods/scripts.pory"
+	jump_up
+# 502 "data/maps/WanderersWoods/scripts.pory"
+	jump_up
 # 503 "data/maps/WanderersWoods/scripts.pory"
-	face_right
+	walk_faster_right
+# 503 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_right
 # 504 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 504 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 505 "data/maps/WanderersWoods/scripts.pory"
+	face_right
+# 506 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 507 "data/maps/WanderersWoods/scripts.pory"
+# 509 "data/maps/WanderersWoods/scripts.pory"
 WanderersWoods_Movement_RaniaReturns:
-# 509 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 509 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 510 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_right
 # 511 "data/maps/WanderersWoods/scripts.pory"
 	walk_faster_up
 # 511 "data/maps/WanderersWoods/scripts.pory"
 	walk_faster_up
 # 512 "data/maps/WanderersWoods/scripts.pory"
 	walk_faster_right
-# 512 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_right
-# 513 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
 # 513 "data/maps/WanderersWoods/scripts.pory"
 	walk_faster_up
 # 513 "data/maps/WanderersWoods/scripts.pory"
 	walk_faster_up
 # 514 "data/maps/WanderersWoods/scripts.pory"
-	face_left
+	walk_faster_right
+# 514 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_right
 # 515 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 515 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 515 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 516 "data/maps/WanderersWoods/scripts.pory"
+	face_left
+# 517 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Zander_Text_0:
@@ -1123,6 +1127,6 @@ WanderersWoods_Text_Trainer_WanderersWoods_ThomasDefeat::
 	.string "I bet it's all the Ghost-type Pokémon.$"
 
 WanderersWoods_Text_ChimeraAdminDefeated::
-# 465 "data/maps/WanderersWoods/scripts.pory"
+# 467 "data/maps/WanderersWoods/scripts.pory"
 	.string "Beaten and stopped... the Boss won't\n"
 	.string "take this.$"

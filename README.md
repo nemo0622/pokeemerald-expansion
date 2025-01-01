@@ -73,18 +73,17 @@ GREEK PHRASES AND STUFF:
         - Rania provides Tera Shards and other battle items (Rocky Helmet, etc) + Exp Charm
         - Niko provides unique Pokéballs + Catching Charm, eventually becomes a Pokéball shop
     - MISSING IMPORTANT BUILDINGS / LOCATIONS / UNLOCKS
-        - EXPERIENCE SHARE!!! NECESSARY EARLY
         - Daycare for Pokémon Breeding (Erynis Path? could be cute)
         - Contest Hall (Sofos City?)
         - Tera Orb unlock (optional quest after 3rd gym)
             - Remember to use FLAG_UNLOCKED_TERASTALLIZATION
             - If flag FLAG_UNLOCKED_TERASTALLIZATION set, allow Gym Leaders to terastallize? Seems fair
             - ALSO: change Pinball egg shop in Sofos City to a Tera Shard distributor (1 random shard per point)
-        - DexNav unlock (after 2nd gym?)
         - Berry plant locations
             - Consider things like mulch and hybrids?
             - Create Flower Shop area also selling nature mints
-        - Fishing Rod locations
+        - Hidden & Ball items across maps
+        - Fishing Rod locations (Good/Super rods still need places)
         - Safari Zone?
         - Dive locations
         - Espathra (bike) give location
@@ -92,9 +91,10 @@ GREEK PHRASES AND STUFF:
         - Unlock seeing wild Pokémon natures and Abilities
             - Tutorial: https://www.pokecommunity.com/threads/simple-modifications-directory.416647/post-10893555
             - Implement above feature using flag in "if" statements. Unlock flag via sidequest
-            - Someone in Sofos City
+            - Unlocked by Rania quest line?
         - Move Relearner
         - Spiky Ear Pichu gift
+        - Wishing Star mart location
 
 - SUNSET PREVIEW PLANS
     - Preview 01 (12/6/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.

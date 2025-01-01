@@ -401,6 +401,8 @@ script WanderersWoods_EventScript_ChimeraEvent
     delay(30)
     fadescreenswapbuffers(FADE_FROM_BLACK)
     delay(30)
+    setvar(VAR_RANIA_STATE, 4)
+    setvar(VAR_NIKO_STATE, 5)
     releaseall
     end
 }
