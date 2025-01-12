@@ -4535,7 +4535,7 @@
       "id": "LAYOUT_PYTHIOS_TOWN",
       "name": "PythiosTown_Layout",
       "width": 36,
-      "height": 26,
+      "height": 38,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Pythios",
       "border_filepath": "data/layouts/PythiosTown/border.bin",
@@ -4870,6 +4870,76 @@
       "secondary_tileset": "gTileset_Ilios_GenericBuilding",
       "border_filepath": "data/layouts/JusmailTown_House2/border.bin",
       "blockdata_filepath": "data/layouts/JusmailTown_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACRISIA_CITY_POKEMON_CENTER",
+      "name": "AcrisiaCity_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/AcrisiaCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/AcrisiaCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACRISIA_CITY_MART",
+      "name": "AcrisiaCity_Mart_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/AcrisiaCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/AcrisiaCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_PYTHIOS_TOWN_POKEMON_CENTER",
+      "name": "PythiosTown_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PythiosTown_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/PythiosTown_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_PYTHIOS_TOWN_MART",
+      "name": "PythiosTown_Mart_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PythiosTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/PythiosTown_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_PYTHIOS_TOWN_HOUSE1",
+      "name": "PythiosTown_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PythiosTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/PythiosTown_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_PYTHIOS_TOWN_HOUSE2",
+      "name": "PythiosTown_House2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PythiosTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/PythiosTown_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_PYTHIOS_TOWN_GYM",
+      "name": "PythiosTown_Gym_Layout",
+      "width": 16,
+      "height": 18,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_JusmailGym",
+      "border_filepath": "data/layouts/PythiosTown_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/PythiosTown_Gym/map.bin"
     }
   ]
 }

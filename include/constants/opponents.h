@@ -45,14 +45,14 @@
 #define TRAINER_WANDERERSWOODS_CHIMERA_ADMIN_HARD                       39
 #define TRAINER_WANDERERSWOODS_LYDIA                       40
 #define TRAINER_WANDERERSWOODS_THOMAS                       41
-#define TRAINER_ROSE_4                       42
-#define TRAINER_ROSE_5                       43
-#define TRAINER_DUSTY_1                      44
+#define TRAINER_PYTHIOSGYM_ROSARA                       42
+#define TRAINER_PYTHIOSGYM_TAFOS                       43
+#define TRAINER_PYTHIOSGYM_ADDONIS                      44
 #define TRAINER_BRONZEPASS_CHIP              45 // Bug Catcher in BronzePass_North
-#define TRAINER_FOSTER                       46
-#define TRAINER_DUSTY_2                      47
-#define TRAINER_DUSTY_3                      48
-#define TRAINER_DUSTY_4                      49
+#define TRAINER_PYTHIOSGYM_GERONI                       46
+#define TRAINER_PYTHIOSGYM_YANNA                      47
+#define TRAINER_LEADER_SABELLA                      48
+#define TRAINER_LEADER_SABELLA_HARD                      49
 #define TRAINER_DUSTY_5                      50
 #define TRAINER_GABBY_AND_TY_1               51
 #define TRAINER_GABBY_AND_TY_2               52

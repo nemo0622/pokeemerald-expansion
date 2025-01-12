@@ -256,7 +256,7 @@ Pic: Leader Brawly
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
 Party Size: 3
 Pool Rules: Basic
 
@@ -470,7 +470,7 @@ Gender: Female
 Music: Female
 Items: Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
 Party Size: 3
 Pool Rules: Basic
 
@@ -846,7 +846,7 @@ Gender: Male
 Music: Male
 Items: Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
 Party Size: 3
 Pool Rules: Basic
 
@@ -900,7 +900,7 @@ Gender: Male
 Music: Male
 Items: Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
 Party Size: 4
 Pool Rules: Basic
 
@@ -1088,7 +1088,7 @@ Pic: Admin Dusknoir
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Check Viability
+AI: Check Bad Move / Check Viability  / AI_FLAG_ACE_POKEMON
 Party Size: 3
 Pool Rules: Basic
 
@@ -1163,7 +1163,7 @@ Pic: Admin Dusknoir
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Check Bad Move / Check Viability / Try To Faint
+AI: Check Bad Move / Check Viability / Try To Faint  / AI_FLAG_ACE_POKEMON
 Party Size: 4
 Pool Rules: Basic
 
@@ -1246,64 +1246,110 @@ Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Tags: Ace
 
-=== TRAINER_ROSE_4 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
+=== TRAINER_PYTHIOSGYM_ROSARA ===
+Name: Rosara
+Class: Performer_F
+Pic: Performer_F
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
 
-Shroomish
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Gloom
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Roselia
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_ROSE_5 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move
-
-Breloom
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Gloom
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Roselia
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-=== TRAINER_DUSTY_1 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
-Music: Hiker
-Double Battle: No
-AI: Check Bad Move
-
-Sandslash
-Level: 23
+Munna
+Level: 19
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+
+Clefairy
+Level: 18
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Jigglypuff
+Level: 18
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Shuppet
+Level: 19
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Duskull
+Level: 19
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+=== TRAINER_PYTHIOSGYM_TAFOS ===
+Name: Tafos
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Female
+Music: Cool
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Hoothoot
+Level: 18
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Murkrow
+Level: 18
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Chingling
+Level: 19
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Ponyta Galarian
+Level: 19
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Butterfree
+Level: 19
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+=== TRAINER_PYTHIOSGYM_ADDONIS ===
+Name: Addonis
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Butterfree
+Level: 20
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Psybeam
+- Bug Buzz
+- Sleep Powder
+- Stun Spore
+
+Noctowl
+Level: 20
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Night Shade
+- Wing Attack
+- Confusion
+- Hex
+
+Vulpix
+Level: 20
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Ember
+- Will O Wisp
+- Confuse Ray
+- Disarming Voice
+
+Meditite
+Level: 20
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Force Palm
+- Confusion
+- Detect
+- Hidden Power
 
 === TRAINER_BRONZEPASS_CHIP === /* Bug Catcher in BronzePass_North */
 Name: Chip
@@ -1341,81 +1387,203 @@ Spinarak
 Level: 3
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_FOSTER ===
-Name: FOSTER
-Class: Ruin Maniac
-Pic: Ruin Maniac
+=== TRAINER_PYTHIOSGYM_GERONI ===
+Name: Geroni
+Class: Expert
+Pic: Expert M
 Gender: Male
-Music: Hiker
+Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
 
-Sandshrew
-Level: 25
+Zorua
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+- Feint Attack
+- Pursuit
+- Taunt
+- Snarl
 
-Sandslash
-Level: 25
+Oricorio Pau
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+- Revelation Dance
+- Wing Attack
+- Helping Hand
+- Teeter Dance
 
-=== TRAINER_DUSTY_2 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
-Music: Hiker
+=== TRAINER_PYTHIOSGYM_YANNA ===
+Name: Yanna
+Class: Expert
+Pic: Expert F
+Gender: Female
+Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
 
-Sandslash
-Level: 27
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Pumpkaboo
+Level: 20
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Feint Attack
+- Pursuit
+- Taunt
+- Snarl
 
-=== TRAINER_DUSTY_3 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
-Music: Hiker
+Oricorio Sensu
+Level: 20
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Revelation Dance
+- Wing Attack
+- Helping Hand
+- Feather Dance
+
+=== TRAINER_LEADER_SABELLA ===
+Name: Sabella
+Class: Leader
+Pic: Leader Roxanne
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 4
+Pool Rules: Basic
 
-Sandslash
-Level: 30
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Zorua Hisui
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Shadow Sneak
+- Snarl
+- Will O Wisp
+- Hex
 
-=== TRAINER_DUSTY_4 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
-Music: Hiker
+Pumpkaboo
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Razor Leaf
+- Leech Seed
+- Confuse Ray
+- Astonish
+
+Shuppet
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Knock Off
+- Night Shade
+- Will O Wisp
+- Headbutt
+
+Noctowl
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Wing Attack
+- Confusion
+- Hypnosis
+- Dream Eater
+
+Bruxish
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Water Gun
+- Aqua Jet
+- Bite
+- Draining Kiss
+
+Mimikyu
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Shadow Sneak
+- Feint Attack
+- Charm
+- Pain Split
+
+=== TRAINER_LEADER_SABELLA_HARD ===
+Name: Sabella
+Class: Leader
+Pic: Leader Roxanne
+Gender: Female
+Music: Female
+Items: Super Potion / Hyper Potion
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
 
-Sandslash
-Level: 33
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Zorua Hisui @ Focus Sash
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
+- Shadow Sneak
+- Snarl
+- Will O Wisp
+- Hex
+
+Corsola Galarian @ Eviolite
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
+- Ancient Power
+- Bitter Malice
+- Recover
+- Perish Song
+
+Pumpkaboo
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Razor Leaf
+- Leech Seed
+- Confuse Ray
+- Hex
+
+Shuppet
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Knock Off
+- Night Shade
+- Will O Wisp
+- Headbutt
+
+Ponyta Galarian
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psybeam
+- Stomp
+- Draining Kiss
+- Trop Kick
+
+Bronzor
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Feint Attack
+- Psywave
+- Gyro Ball
+- Payback
+
+Noctowl @ Wide Lens
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wing Attack
+- Psybeam
+- Hypnosis
+- Dream Eater
+
+Bruxish @ Assault Vest
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Water Pulse
+- Aqua Jet
+- Bite
+- Draining Kiss
+
+Mimikyu @ Muscle Band
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Shadow Sneak
+- Feint Attack
+- Shadow Claw
+- Play Rough
 
 === TRAINER_DUSTY_5 ===
 Name: DUSTY

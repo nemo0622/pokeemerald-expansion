@@ -1,0 +1,49 @@
+mapscripts PythiosTown_Mart_MapScripts {}
+
+script PythiosTown_Mart_EventScript_MartEmployee
+{
+    lock
+    faceplayer
+    speakername("Mart Employee")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(PythiosTown_Mart_Shop)
+    speakername("Mart Employee")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+mart PythiosTown_Mart_Shop
+{
+    ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+	ITEM_POTION
+	ITEM_SUPER_POTION
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+	ITEM_ESCAPE_ROPE
+	ITEM_REPEL
+}
+
+script PythiosTown_Mart_EventScript_Picnicker
+{
+    lock
+    faceplayer
+    speakername("Picnicker")
+    msgbox(format("Any good Pokémon Trainer knows to stay stocked up on Great Balls!"))
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_Mart_EventScript_Youngster
+{
+    lock
+    faceplayer
+    speakername("Youngster")
+    msgbox(format("I love learning about the old Heroes of Ilios! They were the best Pokémon Trainers of all time!"))
+    closemessage
+    release
+    end
+}

@@ -5,7 +5,7 @@ script JusmailTown_PokemonCenter_EventScript_PkmnCenterNurse
     lock
     faceplayer
     speakername("Nurse")
-    msgbox(format("Welcome to the Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    msgbox(format("Welcome to the Jusmail Town Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == 0)
     {
         speakername("Nurse")

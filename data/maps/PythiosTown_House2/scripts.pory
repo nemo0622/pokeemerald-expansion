@@ -1,0 +1,36 @@
+mapscripts PythiosTown_House2_MapScripts {}
+
+script PythiosTown_House2_EventScript_LittleGirl
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    msgbox(format("Cartoons are so cool! I can't just sit on the couch, I have to be right up in front of the TV!"))
+    closemessage
+    applymovement(1, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script PythiosTown_House2_EventScript_Man
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("Don't tell my daughter, but I also like the cartoons she watches. I guess animation really IS for all ages!"))
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_House2_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("In my prime, I used to go into these woods and catch Pokémon for fun. I'm a bit too old now for adventures, but the walks are still nice."))
+    closemessage
+    release
+    end
+}

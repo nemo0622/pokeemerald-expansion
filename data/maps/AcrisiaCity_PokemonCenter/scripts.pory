@@ -1,0 +1,51 @@
+mapscripts AcrisiaCity_PokemonCenter_MapScripts {}
+
+script AcrisiaCity_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Acrisia City Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_ACRISIA_CITY)
+    }
+    release
+    end
+}
+
+script AcrisiaCity_PokemonCenter_EventScript_Chansey
+{
+    lock
+    faceplayer
+    speakername("Chansey")
+    playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+    msgbox("Bee-eh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

@@ -1,0 +1,31 @@
+mapscripts PythiosTown_House1_MapScripts {}
+
+script PythiosTown_House1_EventScript_BlackBelt
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    msgbox(format("Ahh, it's nice to take a load off after a long day of training..."))
+    closemessage
+    if(!flag(FLAG_RECEIVED_TM_REST))
+    {
+        speakername("Black Belt")
+        msgbox(format("Hey, it looks like you could use a rest, too. A little on the nose, but take this!"))
+        closemessage
+        giveitem(ITEM_TM_REST)
+        setflag(FLAG_RECEIVED_TM_REST)
+    }
+    release
+    end
+}
+
+script PythiosTown_House1_EventScript_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("I've made a few pearl and seashell necklaces from what I find on the beach!\p I know places like Sofos City have larger beaches, but there's something so comfortable about Pythios Town."))
+    closemessage
+    release
+    end
+}

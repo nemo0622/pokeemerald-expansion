@@ -257,7 +257,7 @@
 
 #define FLAG_UNUSED_0x0E9                    0xE9 // Unused Flag
 
-#define FLAG_RECEIVED_TM_REST                0xEA
+#define FLAG_RECEIVED_TM_REST                0xEA // now used in pythios town house 1
 #define FLAG_RECEIVED_TM_ATTRACT             0xEB
 #define FLAG_RECEIVED_GLASS_ORNAMENT         0xEC
 #define FLAG_RECEIVED_SILVER_SHIELD          0xED
@@ -1240,10 +1240,10 @@
 #define FLAG_GOT_BERRY_CLUB_REWARD_100                              0x4A5 // Reward for over 100 berry trees
 #define FLAG_GOT_BERRY_CLUB_REWARD_200                              0x4A6 // Reward for over 200 berry trees
 #define FLAG_BEAT_CHIMERA_WANDERING_WOODS                           0x4A7 // Did Wandering Woods Chimera event
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
+#define FLAG_GOT_WILL_O_WISP                                        0x4A8 // Got Will O Wisp TM from Gentleman in Pythios Town
+#define FLAG_SPOKE_TO_MOVE_RELEARNER                                0x4A9 // spoke to artist (move relearner) in Pythios Town
+#define FLAG_UNLOCKED_MOVE_RELEARNER                                0x4AA // showed artist (move relearner) 20 Pokémon in dex
+#define FLAG_MET_SABELLA_PYTHIOS_TOWN                               0x4AB // did Sabella meet event
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag

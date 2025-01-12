@@ -1,0 +1,44 @@
+mapscripts AcrisiaCity_Mart_MapScripts {}
+
+script AcrisiaCity_Mart_EventScript_MartEmployee
+{
+    lock
+    faceplayer
+    speakername("Mart Employee")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(AcrisiaCity_Mart_Shop)
+    speakername("Mart Employee")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+mart AcrisiaCity_Mart_Shop
+{
+    ITEM_POKE_BALL
+    ITEM_POTION
+    ITEM_REPEL
+}
+
+script AcrisiaCity_Mart_NPC_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("I'm all for respecting service workers, but... this shop hardly has anything for sale!\p I guess that's the downside to being in such a remote area."))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCity_Mart_NPC_GameboyKid
+{
+    lock
+    faceplayer
+    speakername("Kid")
+    msgbox(format("I'm just here to play my game. How about you?"))
+    closemessage
+    release
+    end
+}

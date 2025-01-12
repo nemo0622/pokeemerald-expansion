@@ -6602,10 +6602,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 11,
         .weight = 206,
         .description = COMPOUND_STRING(
-            "It hums in a beautiful soprano voice.\n"
-            "It flies among white clouds in the blue\n"
-            "sky. It launches intensely hot fireballs\n"
-            "from its mouth."),
+            "It can be heard singing in the skies from\n"
+            "miles away. They make their nests on high,\n"
+            "solitary rock peaks. They seem to mate for\n"
+            "life."),
         .pokemonScale = 327,
         .pokemonOffset = 0,
         .trainerScale = 256,

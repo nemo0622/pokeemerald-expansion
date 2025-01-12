@@ -1373,3 +1373,15 @@ static const struct SpriteFrameImage sPicTable_Officer[] = {
 static const struct SpriteFrameImage sPicTable_Diver[] = {
     overworld_ascending_frames(gObjectEventPic_Diver, 4, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_Bardas[] = {
+    overworld_ascending_frames(gObjectEventPic_Bardas, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Chimera_Member_Dusknoir[] = {
+    overworld_ascending_frames(gObjectEventPic_Chimera_Member_Dusknoir, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Chimera_Member_Walrein[] = {
+    overworld_ascending_frames(gObjectEventPic_Chimera_Member_Walrein, 2, 4),
+};

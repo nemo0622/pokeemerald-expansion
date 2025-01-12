@@ -88,17 +88,17 @@ movement AcrisiaCity_Movement_PlayerFollowsProfToUniversity_1
 
 movement AcrisiaCity_Movement_ProfWalksPlayerToUniversity_2
 {
-    walk_up * 8
+    walk_up * 9
     walk_right * 20
-    walk_up * 6
+    walk_up * 5
     step_end
 }
 
 movement AcrisiaCity_Movement_PlayerFollowsProfToUniversity_2
 {
-    walk_up * 9
+    walk_up * 10
     walk_right * 20
-    walk_up * 5
+    walk_up * 4
     step_end
 }
 
@@ -206,6 +206,19 @@ script AcrisiaCity_EventScript_Growlithe
     end
 }
 
+script AcrisiaCity_EventScript_Phanpy
+{
+    lock
+    faceplayer
+    speakername("Phanpy")
+    playmoncry(SPECIES_PHANPY, CRY_MODE_NORMAL)
+    msgbox("Toooot!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
 script AcrisiaCity_EventScript_OldMan
 {
     lock
@@ -224,6 +237,19 @@ script AcrisiaCity_EventScript_Gentleman
     speakername("Gentleman")
     msgbox(format("Now that I'm retired, I like to sit here and watch the time pass. I can't help but smile seeing the lights come on in the evening!"))
     closemessage
+    release
+    end
+}
+
+script AcrisiaCity_EventScript_FatMan
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("I'm looking for some food for my Phanpy. Towns in the Ilios Region tend to have little farmers' markets like this."))
+    closemessage
+    applymovement(23, Common_Movement_FaceUp)
+    waitmovement(0)
     release
     end
 }

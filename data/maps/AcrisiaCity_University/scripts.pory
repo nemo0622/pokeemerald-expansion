@@ -360,62 +360,6 @@ script AcrisiaCity_University_EventScript_Rania
 // -------------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------------
 
-
-
-script AcrisiaCity_University_EventScript_RaniaShowsHealspot
-{
-    lockall
-    applymovement(4, AcrisiaCity_University_Movement_RaniaJumps)
-    waitmovement(0)
-    applymovement(4, AcrisiaCity_University_Movement_RaniaShowsHealing)
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
-    waitmovement(0)
-
-    speakername("Rania")
-    msgbox(format("Wait, {PLAYER}! Before you go, take a look at this."))
-    closemessage
-    applymovement(4, Common_Movement_FaceUp)
-    waitmovement(0)
-    speakername("Rania")
-    msgbox(format("This machine is a Pokémon Healing device! Whenever your Pokémon are feeling low, come interact with it to heal them up!"))
-    closemessage
-    applymovement(4, Common_Movement_FaceDown)
-    waitmovement(0)
-    speakername("Rania")
-    msgbox(format("Well, good luck on your first University assignment! Make sure to stop back in sometimes!"))
-    closemessage
-    applymovement(4, AcrisiaCity_University_Movement_RaniaDoneShowingHealing)
-    waitmovement(0)
-    setflag(FLAG_SHOWN_ACRISIA_HEALSPOT)
-    releaseall
-    end
-}
-
-movement AcrisiaCity_University_Movement_RaniaJumps
-{
-    jump_in_place_left * 2
-    step_end
-}
-
-movement AcrisiaCity_University_Movement_RaniaShowsHealing
-{
-    walk_right
-    walk_down * 2
-    walk_left * 4
-    face_down
-    step_end
-}
-
-movement AcrisiaCity_University_Movement_RaniaDoneShowingHealing
-{
-    walk_right * 4
-    walk_up * 2
-    walk_left
-    face_left
-    step_end
-}
-
 script AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger1
 {
     setvar(VAR_TEMP_1, 1) // indicates trigger used
@@ -517,23 +461,6 @@ movement AcrisiaCity_University_Movement_PlayerGoesToNiko_4
     walk_right
 }
 
-script AcrisiaCity_University_HealParty
-{
-    lock
-    speakername("Computer")
-    msgbox(format("-bzzt bzzt-\l Healing Pokémon..."))
-    closemessage
-    playfanfare(MUS_HEAL)
-    special(HealPlayerParty)
-    delay(120)
-    waitfanfare
-    speakername("Computer")
-    msgbox(format("Pokémon are healthy and ready to go!"))
-    closemessage
-    release
-    end
-}
-
 script AcrisiaCity_University_CustomSettingsComputer
 {
     lock
@@ -597,7 +524,7 @@ script AcrisiaCity_EventScript_ProfessorElia
     }
     else
     {
-        // After VAR_INTRO_STATE is 5, the "introduction" (first two badges) is over
+        // After VAR_INTRO_STATE is above 5, the "introduction" (first two badges) is over
         // Now, Professor Elia just rates the Pokédex and gives rewards based on progress
         // NOTE: Use Prof. Elm code from Seaglass as reference to giving rewards based on dex progress!!!
         goto(AcrisiaCity_University_EventScript_EliaRatePokedex)

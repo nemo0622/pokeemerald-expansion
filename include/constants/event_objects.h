@@ -118,8 +118,8 @@
 #define OBJ_EVENT_GFX_CABLE_CAR                  114
 #define OBJ_EVENT_GFX_SCIENTIST_2                115
 #define OBJ_EVENT_GFX_CONSTRUCTION_WORKER        116 // replaces uhhhh something else idk
-#define OBJ_EVENT_GFX_CHIMERA_MEMBER_M           117
-#define OBJ_EVENT_GFX_CHIMERA_MEMBER_F           118
+#define OBJ_EVENT_GFX_CHIMERA_MEMBER_KECLEON     117 // replaces AQUA_MEMBER_M
+#define OBJ_EVENT_GFX_CHIMERA_MEMBER_SANDSLASH   118 // replaces AQUA_MEMBER_F
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_M             119
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_F             120
 #define OBJ_EVENT_GFX_SIDNEY                     121
@@ -141,7 +141,7 @@
 #define OBJ_EVENT_GFX_BRENDAN_FISHING            137
 #define OBJ_EVENT_GFX_MAY_FISHING                138
 #define OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN      139
-#define OBJ_EVENT_GFX_SS_TIDAL                   140
+#define OBJ_EVENT_GFX_THE_DELPHIS                   140
 #define OBJ_EVENT_GFX_SUBMARINE_SHADOW           141
 #define OBJ_EVENT_GFX_PICHU_DOLL                 142
 #define OBJ_EVENT_GFX_PIKACHU_DOLL               143
@@ -247,11 +247,14 @@
 #define OBJ_EVENT_GFX_PUNK_ROCKER                242
 #define OBJ_EVENT_GFX_OFFICER                    243
 #define OBJ_EVENT_GFX_DIVER                      244
+#define OBJ_EVENT_GFX_BARDAS                     245
+#define OBJ_EVENT_GFX_CHIMERA_MEMBER_DUSKNOIR    246
+#define OBJ_EVENT_GFX_CHIMERA_MEMBER_WALREIN     247
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        245
+#define NUM_OBJ_EVENT_GFX                        248
 
 
 // These are dynamic object gfx ids.

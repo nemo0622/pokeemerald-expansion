@@ -1,1 +1,371 @@
 mapscripts PythiosTown_MapScripts {}
+
+script PythiosTown_EventScripts_NPC_Gentleman
+{
+    lock
+    faceplayer
+    speakername("Gentleman")
+    msgbox(format("Pythios Town is famous for the concentration of spiritual energy here. It attracts Ghost-type and Psychic-type Pokémon.\p Folktales say that the spirits have turned the plants orange, putting the area into a permanent Autumn.\p People flock from all over to hear Sabella, the Gym Leader, predict the future. Some say she has a magic gift..."))
+    closemessage
+    if(!flag(FLAG_GOT_WILL_O_WISP))
+    {
+        speakername("Gentleman")
+        msgbox(format("Thanks for listening to me ramble. Here, take this {COLOR GREEN}TM Will-O-Wisp{COLOR DARK_GRAY}. It feels like it's connected to this strange town."))
+        closemessage
+        giveitem(ITEM_TM51)
+        setflag(FLAG_GOT_WILL_O_WISP)
+    }
+    release
+    end
+}
+
+script PythiosTown_EventScripts_NPC_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("Ruins dot the areas around Pythios Town. I grew up exploring them!\p The Ilios Region has a rich history stretching back thousands of years. Keep an eye out for hidden lore and items!"))
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_EventScripts_NPC_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("People come from all over to hear from Sabella, the Gym Leader and spiritual guide of Pythios Town.\p Me? I moved here with my husband to watch the water and feel the energy."))
+    closemessage
+    applymovement(6, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script PythiosTown_EventScripts_NPC_OldMan
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("The graves around Pythios Town are for old heroes of the Ilios Region. Them and their Pokémon helped win wars and fought in great battles.\p Nowadays, people prefer Pokémon battling for entertainment. That's probably for the best."))
+    closemessage
+    applymovement(7, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script PythiosTown_EventScripts_NPC_Artist
+{
+    lock
+    if(!flag(FLAG_SPOKE_TO_MOVE_RELEARNER))
+    {
+        speakername("Artist")
+        msgbox(format("A stoic man staring off to the distance...\p Think of the story this statue tells...\n A hero, lost to time...\p I need inspiration, a modern hero!"))
+        closemessage
+        applymovement(12, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        delay(20)
+        applymovement(12, Common_Movement_FacePlayer)
+        waitmovement(0)
+        speakername("Artist")
+        msgbox(format("Oh? And you, are you a young trainer? A new hero in-the-making?\p I see a Pokédex on you. Speak to me when you have {COLOR GREEN}20 Pokémon{COLOR DARK_GRAY} registered in your Pokédex. If you can give me inspiration, I can {COLOR GREEN}help your Pokémon{COLOR DARK_GRAY}!"))
+        closemessage
+        setflag(FLAG_SPOKE_TO_MOVE_RELEARNER)
+    }
+    elif(!flag(FLAG_UNLOCKED_MOVE_RELEARNER))
+    {
+        applymovement(12, Common_Movement_FacePlayer)
+        waitmovement(0)
+        speakername("Artist")
+        msgbox(format("Chaire, my young hero! I wonder, will we make statues of you someday?\p Have you completed my task? Let me see your Pokédex."))
+        closemessage
+
+        setvar(VAR_0x8004, 0) // sets check to Regional Dex (Hoenn)
+	    specialvar(VAR_RESULT, ScriptGetPokedexInfo)
+	    copyvar(VAR_0x8008, VAR_0x8005)
+	    copyvar(VAR_0x8009, VAR_0x8006)
+	    buffernumberstring(STR_VAR_1, VAR_0x8008) // Num Regional seen
+	    buffernumberstring(STR_VAR_2, VAR_0x8009) // Num Regional caught
+        delay(30)
+        speakername("Artist")
+        msgbox(format("You've caught and recorded data on {STR_VAR_2} Pokémon."))
+        closemessage
+        delay(30)
+
+        if(var(VAR_0x8009) >= 20) // caught over 20 mons
+        {
+            applymovement(12, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            applymovement(12, Common_Movement_JumpInPlaceRight)
+            waitmovement(0)
+            speakername("Artist")
+            msgbox(format("Oh, visions of Pokémon and beauty flow through me! Be still, my beating heart!\p Calm me, sweet statue..."))
+            closemessage
+            delay(30)
+            applymovement(12, Common_Movement_FacePlayer)
+            waitmovement(0)
+            speakername("Artist")
+            msgbox(format("Splendid! Fantastic! You've shown me more than I ever could have hoped!\p Please, young hero, allow me to help you.\n I can draw move directions, which can help {COLOR GREEN}Pokémon relearn old moves{COLOR DARK_GRAY}. Come visit me whenever you need!"))
+            closemessage
+            setflag(FLAG_UNLOCKED_MOVE_RELEARNER)
+        }
+        else // did not do it
+        {
+            speakername("Artist")
+            msgbox(format("Mmm... I'm just not quite inspired. Show me {COLOR GREEN}20 complete Pokédex entries{COLOR DARK_GRAY} of caught Pokémon. I must see more of Ilios!"))
+            closemessage
+        }
+    }
+    else // did quests, unlocked move relearner, do that
+    {
+        applymovement(12, Common_Movement_FacePlayer)
+        waitmovement(0)
+        speakername("Artist")
+        msgbox(format("Chaire, young hero! Are you here for move drawings? They can help Pokémon {COLOR GREEN}relearn old moves{COLOR DARK_GRAY}!"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 0) // no
+        {
+            speakername("Artist")
+            msgbox(format("Understood. I'll stay here and practice my art with this incredible statue. Andio, goodbye!"))
+            closemessage
+        }
+        else // yes
+        {
+            special(ChooseMonForMoveRelearner)
+            waitstate
+            if(var(VAR_0x8004) == PARTY_NOTHING_CHOSEN)
+            {
+                speakername("Artist")
+                msgbox(format("Not today? That's okay, it's your journey! Come back when you want a Pokémon to remember a move."))
+                closemessage
+                applymovement(12, Common_Movement_FaceRight)
+                waitmovement(0)
+                release
+                end
+            }
+            special(IsSelectedMonEgg)
+            if(var(VAR_RESULT) == TRUE) // it's a egg
+            {
+                speakername("Artist")
+                msgbox(format("Ah, ever the hero, rushing right into things! I'm sorry, but I cannot teach an Egg to do anything more than sit there. Let me know when it hatches though, perhaps I can draw moves for it as it grows older!"))
+                closemessage
+                applymovement(12, Common_Movement_FaceRight)
+                waitmovement(0)
+                release
+                end
+            }
+            if(var(VAR_0x8005) == 0) // no moves to teach
+            {
+                speakername("Artist")
+                msgbox(format("Hmm... ehehe, this is a little embarrassing, young hero... but I don't have anything to teach this Pokémon! It doesn't respond to any of my move drawings.\p Come back with another Pokémon! Andio, goodbye, hero!"))
+                closemessage
+                applymovement(12, Common_Movement_FaceRight)
+                waitmovement(0)
+                release
+                end
+            }
+            speakername("Artist")
+            msgbox(format("Splendid! Now, what move should this Pokémon learn?"))
+            special(TeachMoveRelearnerMove)
+	        waitstate
+            if(var(VAR_0x8004) == 0) // didnt teach move
+            {
+                speakername("Artist")
+                msgbox(format("Not today? That's okay, it's your journey! Come back when you want a Pokémon to remember a move."))
+                closemessage
+                applymovement(12, Common_Movement_FaceRight)
+                waitmovement(0)
+                release
+                end
+            }
+            else
+            {
+                speakername("Artist")
+                msgbox(format("It was a complete success! Your Pokémon recognized my drawings and relearned the move.\p Come back when you want another move relearned, my young hero!"))
+                closemessage
+            }
+        }
+    }
+
+    applymovement(12, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script PythiosTown_EventScripts_NPC_Woman2
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("It's nice living in a small place like this. Areas like Sofos City and the islands in the eastern sea are too busy for me.\p Of course, places like that have more to do... Ugh, now I can't decide which is better!"))
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_EventScript_Hoothoot
+{
+    lock
+    faceplayer
+    speakername("Hoothoot")
+    playmoncry(SPECIES_HOOTHOOT, CRY_MODE_NORMAL)
+    msgbox("Craaww!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_EventScript_Drowzee
+{
+    lock
+    faceplayer
+    speakername("Drowzee")
+    playmoncry(SPECIES_DROWZEE, CRY_MODE_NORMAL)
+    msgbox("Hoooonk!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_EventScript_Dwebble
+{
+    lock
+    faceplayer
+    speakername("Dwebble")
+    playmoncry(SPECIES_DWEBBLE, CRY_MODE_NORMAL)
+    msgbox("Chk chk chk.")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_EventScript_Trigger_SabellaIntroductionEvent
+{
+    lockall
+    applymovement(15, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(30)
+    applymovement(15, PythiosTown_Movement_FirstSabellaFanWalksToPlayer)
+    waitmovement(0)
+    applymovement(16, Common_Movement_WalkUp)
+    waitmovement(0)
+    speakername("Mystical Woman")
+    msgbox(format("YES!! Sabella said I'm guarenteed to win my next Pokémon battle! She's never wrong!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    applymovement(15, PythiosTown_Movement_FirstSabellaFanWalksAway)
+    waitmovement(0)
+    delay(60)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, PythiosTown_Movement_PlayerApproachesLine)
+    waitmovement(0)
+    delay(60)
+    applymovement(16, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(30)
+    applymovement(16, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Worker")
+    msgbox(format("Sabella just read my future! She told me 'a big shake-up at work is coming'... that probably means a raise!\p ...Probably!"))
+    closemessage
+    applymovement(16, PythiosTown_Movement_SecondSabellaFanWalksAway)
+    waitmovement(0)
+    delay(30)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+
+    // finally talk to sabella
+    speakername("Sabella")
+    msgbox(format("Ah... {PLAYER}, yes?\p How do I know your name? I know much and more, young trainer. My name is Sabella, the spiritual guide and {COLOR GREEN}Gym Leader of Pythios Town{COLOR DARK_GRAY}.\p You're here for your third Gym Challenge. I sense a great battle on the horizon... I shall be {COLOR GREEN}in my Gym{COLOR DARK_GRAY}. I await your challenge."))
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    delay(30)
+    removeobject(15) // sabellas fans
+    removeobject(16)
+    removeobject(3) // sabella
+    removeobject(17) // sabella's pokémon
+    removeobject(19) // man blocking gym
+    setflag(FLAG_MET_SABELLA_PYTHIOS_TOWN)
+    delay(30)
+    fadescreen(FADE_FROM_BLACK)
+    delay(20)
+
+    releaseall
+    end
+}
+
+movement PythiosTown_Movement_FirstSabellaFanWalksToPlayer
+{
+    walk_fast_left
+    walk_fast_down * 2
+    step_end
+}
+
+movement PythiosTown_Movement_FirstSabellaFanWalksAway
+{
+    walk_fast_down * 6
+    walk_fast_right * 8
+    step_end
+}
+
+movement PythiosTown_Movement_PlayerApproachesLine
+{
+    walk_right
+    walk_up * 2
+    walk_right
+    face_up
+    step_end
+}
+
+movement PythiosTown_Movement_SecondSabellaFanWalksAway
+{
+    walk_fast_left
+    walk_fast_down * 9
+    step_end
+}
+
+script PythiosTown_EventScripts_NPC_OldMan2
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("Everyone seems to believe in Sabella and her visions. I'm not so sure, but my wife comes around to talk to her all the time. I'm waiting for her here."))
+    closemessage
+    applymovement(13, Common_Movement_FaceLeft)
+    waitmovement(0)
+    release
+    end
+}
+
+script PythiosTown_EventScripts_NPC_PsychicM
+{
+    lock
+    faceplayer
+    speakername("Psychic")
+    msgbox(format("I promise, Sabella's powers are real! She has the same powers as her Psychic-type and Ghost-type Pokémon!"))
+    closemessage
+    applymovement(14, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script PythiosTown_EventScripts_NPC_ManBlockingGym
+{
+    lock
+    faceplayer
+    speakername("Gym Guide")
+    msgbox(format("Welcome to the Pythios Town Pokémon Gym!\p Well... that's what I would say, if the {COLOR GREEN}Gym Leader, Sabella{COLOR DARK_GRAY}, was here. She's probably meeting with people in the {COLOR GREEN}east of town{COLOR DARK_GRAY}."))
+    closemessage
+    release
+    end
+}

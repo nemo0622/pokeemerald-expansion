@@ -2760,8 +2760,8 @@ bool8 DexNavTryMakeShinyMon(void)
     #endif
     
     chainBonus = (chain == 50) ? 5 : (chain == 100) ? 10 : 0;
-    if(chain > 100)
-        chainBonus = 1;
+    if(chain > 20)
+        chainBonus = 3;
     rndBonus = (Random() % 100 < 8 ? 4 : 0);
     shinyRolls = 1 + charmBonus + chainBonus + rndBonus + 3;
 

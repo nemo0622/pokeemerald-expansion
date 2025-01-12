@@ -108,9 +108,10 @@ void Clouds_InitVars(void)
 
 void Clouds_InitAll(void)
 {
-    Clouds_InitVars();
-    while (gWeatherPtr->weatherGfxLoaded == FALSE)
-        Clouds_Main();
+    // commented out to disable clouds effect (caused problems with some tiles oops)
+    // Clouds_InitVars();
+    // while (gWeatherPtr->weatherGfxLoaded == FALSE)
+    //     Clouds_Main();
 }
 
 void Clouds_Main(void)

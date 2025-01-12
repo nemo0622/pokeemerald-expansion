@@ -874,10 +874,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 16,
         .weight = 408,
         .description = COMPOUND_STRING(
-            "It unfailingly catches prey in darkness.\n"
-            "Noctowl owe their success to superior\n"
-            "vision that allows them to see in minimal\n"
-            "light, and to their supple and silent wings."),
+            "Noctowl only comes out to hunt at night.\n"
+            "Legends say they can pass through\n"
+            "trees when hunting their prey. People in\n"
+            "Ilios hold Noctowl in high regard."),
         .pokemonScale = 278,
         .pokemonOffset = 3,
         .trainerScale = 256,

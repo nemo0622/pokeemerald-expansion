@@ -109,6 +109,8 @@
 #define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F        (3 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB (4 | (1 << 8))
 #define MAP_JUSMAIL_TOWN_POKEMON_CENTER          (5 | (1 << 8))
+#define MAP_ACRISIA_CITY_POKEMON_CENTER          (6 | (1 << 8))
+#define MAP_ACRISIA_CITY_MART                    (7 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))
@@ -118,6 +120,11 @@
 #define MAP_OLDALE_TOWN_MART              (4 | (2 << 8))
 #define MAP_JUSMAIL_TOWN_HOUSE1           (5 | (2 << 8))
 #define MAP_JUSMAIL_TOWN_HOUSE2           (6 | (2 << 8))
+#define MAP_PYTHIOS_TOWN_POKEMON_CENTER   (7 | (2 << 8))
+#define MAP_PYTHIOS_TOWN_MART             (8 | (2 << 8))
+#define MAP_PYTHIOS_TOWN_HOUSE1           (9 | (2 << 8))
+#define MAP_PYTHIOS_TOWN_HOUSE2           (10 | (2 << 8))
+#define MAP_PYTHIOS_TOWN_GYM              (11 | (2 << 8))
 
 // gMapGroup_IndoorDewford
 #define MAP_DEWFORD_TOWN_HOUSE1            (0 | (3 << 8))

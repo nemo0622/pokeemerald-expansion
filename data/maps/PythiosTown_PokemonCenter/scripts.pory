@@ -1,0 +1,84 @@
+mapscripts PythiosTown_PokemonCenter_MapScripts {}
+
+script PythiosTown_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Pythios Town Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_PYTHIOS_TOWN)
+    }
+    release
+    end
+}
+
+script PythiosTown_PokemonCenter_EventScript_Chansey
+{
+    lock
+    faceplayer
+    speakername("Chansey")
+    playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+    msgbox("Bee-eh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_PokemonCenter_Camper
+{
+    lock
+    faceplayer
+    speakername("Camper")
+    msgbox(format("The western half of Ilios is perfect for camping! The further east you go, the more development there is."))
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_PokemonCenter_Lass
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("Ghost-type Pokémon are a little scary, but they're so cute at the same time!"))
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_PokemonCenter_NinjaBoy
+{
+    lock
+    faceplayer
+    speakername("Little Boy")
+    msgbox(format("Hey, hey! I wanna battle the Gym here!\p ...I need to beat two other Gyms first!? How am I supposed to do that?"))
+    closemessage
+    release
+    end
+}

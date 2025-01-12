@@ -4763,7 +4763,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 75,
         .baseSpAttack  = 70,
         .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_FIGHTING),
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_BUG),
         .catchRate = 45,
         .expYield = 165,
         .evYield_Attack = 2,
@@ -4782,8 +4782,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 30,
         .weight = 620,
         .description = COMPOUND_STRING(
-            "Five of them are troopers, and one is the\n"
-            "brass. The brass's orders are absolute."),
+            "This Pokémon inspired the armor and\n"
+            "tactics of ancient Ilian warriors. They\n"
+            "form walls with their shields and\n"
+            "strike with their spikes."), // rewritten 01/04/25
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,

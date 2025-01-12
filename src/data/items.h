@@ -10513,6 +10513,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_BULK_UP,
     },
 
+    // Obtained from Deo (Gym 1)
     [ITEM_TM_BULLET_SEED] =
     {
         .name = _("TM09"),
@@ -10616,7 +10617,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TM_HYPER_BEAM] =
     {
         .name = _("TM15"),
-        .price = 7500,
+        .price = 5000,
         .description = COMPOUND_STRING(
             "Powerful, but needs\n"
             "recharging the\n"
@@ -10973,13 +10974,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_FIRE_BLAST,
     },
 
+    // Obtained from Mattaios (Gym 2)
     [ITEM_TM_ROCK_TOMB] =
     {
         .name = _("TM39"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Stops the foe from\n"
-            "moving with rocks.\n"
+            "Move: Rock Tomb\n"
+            "Throws heavy rocks.\n"
             "May lower Speed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
@@ -11156,13 +11158,16 @@ const struct Item gItemsInfo[] =
     [ITEM_TM51] =
     {
         .name = _("TM51"),
-        .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .price = 5000,
+        .description = COMPOUND_STRING(
+            "Move: Will-O Wisp\n"
+            "Burns the opponent\n"
+            "when landed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_WILL_O_WISP,
     },
 
     [ITEM_TM52] =

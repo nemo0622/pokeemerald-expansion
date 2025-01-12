@@ -1,12 +1,12 @@
-# Pokémon Sunset Version
+# Pokémon Lazarus Version
 
 A Pokémon ROM Hack based on the [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion) project.
 
-## What is Pokémon Sunset?
+## What is Pokémon Lazarus?
 
 This ROM Hack takes place in a brand new region, with a whole new adventure ahead of you! By helping people and making an impact on this living, active region, you can rise through the ranks and become a great Pokémon Trainer.
 
-Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals and ecosystems. After creating Pokémon Emerald Seaglass, I really wanted to continue my ROM Hacking journey, but I wanted to get more experimental and tie in my real world interests. As a Biology student in college, I have been constantly inspired by classes and what I've learned, and now I hope to apply this passion in a Pokémon game. I hope this experience helps people to think more about the environment around them! :)
+Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animals and ecosystems. After creating Pokémon Emerald Seaglass, I really wanted to continue my ROM Hacking journey, but I wanted to get more experimental and tie in my real world interests. As a Biology student in college, I have been constantly inspired by classes and what I've learned, and now I hope to apply this passion in a Pokémon game. I hope this experience helps people to think more about the environment around them! :)
 
 ## Feature List
 - Over 350 Pokémon from Generations 1-9 in a beautiful GBC style!
@@ -33,26 +33,37 @@ Pokémon Sunset Version is a ROM Hack coming from my love for real-world animals
     - Pokémon types shown in battle
     - Pokémon animate after KO
     - NPC speaker name shown above text box
+    - Reusable TMs!
 
 ## Future Development Plans
 
 MAJOR TODOS:
-- New orange-themed edit of battle background for Pythios Town and Erinys Path
-- Give Magcargo ability giving immunity to Water moves (+ document!)
-- Implement GBC Pokémon sprites into rom (front, back, followers, + icons)
-- Continue mapping, adding NPCs, and scripting
+- PRE-DEMO RELEASE PROJECTS:
+    - "Bardas the Sailor" - unique, old sailor first met in Pythios Town
+        - Sailors blocking path east until gym beaten + Bardas spoken to
+        - Allows fast-travel to other, visited coastal locations
+    - Minigame in Pythios Town
+    - Berry locations
+    - Continue implementing GBC sprites of Pokémon
+    - Create Sabella GBC battle sprite (replaces Roxanne sprite)
+    - New orange-themed edit of battle background for Pythios Town and Erinys Path
+    - Finalize and Pretty-up the region map
+        - Also test Town Map item (no PokéNav!)
+- Work on ideas from note on phone
+    - Elite Redux inspired abilities & moves
+    - New areas: 
+        - Arena-like pirate cove area similar to AC: Odyssey
+        - Eastern cliff expansion off Sofos City with encounters and Parthenon area (legendary encounters?)
 - REBALANCING: go through all Pokémon and balance/rebalance, update movesets, etc.
     - Learn from Seaglass feedback! Less extreme buffs, more balance
     - Rewrite custom Pokédex entries for each mon!
-- DOCUMENTATION!
-    - Important item locations
-    - TM/HM locations + Gym Leader rewards
 
 
 GREEK PHRASES AND STUFF:
 - "Opa!" - directly translates to "Oops", but really used to show appreciation/enthusiasm
 - "Yia sou" - greeting
 - "Andio" - goodbye
+- "Chaire" - basically ancient greek "aloha" (hello/goodbye)
 - "Yamas" - cheers!
 - "Den gnorzio" - I don't know
 
@@ -83,6 +94,7 @@ GREEK PHRASES AND STUFF:
             - Consider things like mulch and hybrids?
             - Create Flower Shop area also selling nature mints
         - Hidden & Ball items across maps
+            - ex: add item ball in acrisia city rock smash area!
         - Fishing Rod locations (Good/Super rods still need places)
         - Safari Zone?
         - Dive locations
@@ -92,14 +104,13 @@ GREEK PHRASES AND STUFF:
             - Tutorial: https://www.pokecommunity.com/threads/simple-modifications-directory.416647/post-10893555
             - Implement above feature using flag in "if" statements. Unlock flag via sidequest
             - Unlocked by Rania quest line?
-        - Move Relearner
         - Spiky Ear Pichu gift
         - Wishing Star mart location
 
-- SUNSET PREVIEW PLANS
+- LAZARUS PREVIEW PLANS
     - Preview 01 (12/6/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.
     - Preview 02 (122424) - Pokémon Sunset Starters Reveal - shows starters + best overworld sprites for them
-    - Preview 03 (01/??/25) - Seaglass Feature Ports - shows Pinball, Pokémon type changes, and Wishing Well
+    - Preview 03 (01/??/25) - Pokémon Lazarus Rename Reveal + Seaglass Feature Ports - shows Pinball, Pokémon type changes, and Wishing Well
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
@@ -124,7 +135,7 @@ Many, many talented developers and artists are responsible for making this proje
     - Pokémon Center, Mart, and Gym Buildings by TrainerDX
     - Some GBC-style default houses by TrainerDX
 - Pokémon Sprites:
-    Numbers below match sprites on the official Pokémon Sunset Ilios Pokédex Image:
+    Numbers below match sprites on the official Pokémon Lazarus Ilios Pokédex Image:
     1. Sprite created/edited by Nemo622 (edits based on pokeemerald-expansion sprites)
     2. By Matdemo159
     3. By Supahsanti, from Substitube public resource
@@ -205,7 +216,7 @@ REGION PLAN:
             - Based on the Oracle of Delphi, and Enoch from Over the Garden Wall (wears pumpkin mask)
             - Gym centered around mysterious spirits in fields of crops
             - Team: Misdreavus, Spoink, and Pumpkaboo (level 17-20)
-            - Unlocks Flash outside of battle
+            - Reward: Grave Badge, unlocks Flash outside of battle, TM Calm Mind
         - West: Pottsfield Cemetery, based on Pottsfield from Over the Garden Wall
             - Mark as FLASH AREA! Have NPCs outside talk about the "dark mists surrounding the cemetery"
             - MINIGAME AREA: Explore the area trying to find items and catch Pokémon without being spotted by patrolling Shuppet and Gastly. If spotted, run a script to end the minigame. Allows area to catch Pokémon and explore while motivating continued visits as you can get further and further

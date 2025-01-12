@@ -138,7 +138,9 @@
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
     "LittlerootTown_ProfessorBirchsLab",
-    "JusmailTown_PokemonCenter"
+    "JusmailTown_PokemonCenter",
+    "AcrisiaCity_PokemonCenter",
+    "AcrisiaCity_Mart"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
@@ -147,7 +149,12 @@
     "OldaleTown_PokemonCenter_2F",
     "OldaleTown_Mart",
     "JusmailTown_House1",
-    "JusmailTown_House2"
+    "JusmailTown_House2",
+    "PythiosTown_PokemonCenter",
+    "PythiosTown_Mart",
+    "PythiosTown_House1",
+    "PythiosTown_House2",
+    "PythiosTown_Gym"
   ],
   "gMapGroup_IndoorDewford": [
     "DewfordTown_House1",

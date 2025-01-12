@@ -2202,11 +2202,11 @@ static u32 PickMonFromPool(const struct Trainer *trainer, u8 *poolIndexArray, u3
         }
     }
     if (monIndex == POOL_SLOT_DISABLED
-     && (((partyIndex == monsCount - 1)
+    && (((partyIndex == monsCount - 1)
       || (partyIndex == monsCount - 2
        && battleTypeFlags & BATTLE_TYPE_DOUBLE))
        && (rules->tagMaxMembers[1] == POOL_MEMBER_COUNT_UNLIMITED
-        || rules->tagMaxMembers[1] > 1)))
+        || rules->tagMaxMembers[1] >= 1)))
     {
         //  Find required + ace tags
         bool32 foundRequiredTag = FALSE;

@@ -155,8 +155,9 @@ JusmailTown_PokemonCenter_EventScript_PkmnCenterNurse_Text_0:
 
 JusmailTown_PokemonCenter_EventScript_PkmnCenterNurse_Text_1:
 # 8 "data/maps/JusmailTown_PokemonCenter/scripts.pory"
-	.string "Welcome to the Pokémon Center! Would\n"
-	.string "you like to heal your Pokémon?$"
+	.string "Welcome to the Jusmail Town Pokémon\n"
+	.string "Center! Would you like to heal your\l"
+	.string "Pokémon?$"
 
 JusmailTown_PokemonCenter_EventScript_PkmnCenterNurse_Text_2:
 # 12 "data/maps/JusmailTown_PokemonCenter/scripts.pory"

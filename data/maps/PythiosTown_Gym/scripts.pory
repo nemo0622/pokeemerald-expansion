@@ -1,0 +1,222 @@
+mapscripts PythiosTown_Gym_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflashlevel(1)
+    }
+}
+
+script PythiosTown_Gym_EventScript_GymStatue
+{
+    lock
+    if(flag(FLAG_BADGE03_GET))
+    {
+        msgbox(format("Pythios Town Pokémon Gym\p Recent Victors: Niko, {PLAYER}"))
+    }
+    else
+    {
+        msgbox(format("Pythios Town Pokémon Gym\p Recent Victors: Niko"))
+    }
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_Gym_EventScript_GymMan
+{
+    lock
+    faceplayer
+    speakername("Gym Guide")
+    if(flag(FLAG_BADGE03_GET))
+    {
+        msgbox(format("Incredible! You're a rising star! Keep it up, future Champ!"))
+    }
+    else
+    {
+        msgbox(format("Welcome to the Pythios Town Gym!\p The Gym Leader, Sabella, has designed this building as a paradise for Ghost-type and other spiritually-inclined Pokémon. Of course, that makes it seem pretty creepy to me..."))
+    }
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_Gym_EventScript_Mimikyu
+{
+    lock
+    faceplayer
+    speakername("Mimikyu")
+    playmoncry(SPECIES_MIMIKYU, CRY_MODE_NORMAL)
+    msgbox("Kk... ooouuuuhhh!")
+    waitmoncry
+    closemessage
+    msgbox(format("Mimikyu seems tired."))
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_Gym_EventScript_Trainer_PythiosGym_Rosara
+{
+    trainerbattle_single(TRAINER_PYTHIOSGYM_ROSARA, PythiosTown_Gym_Text_Trainer_PythiosGym_RosaraIntro, PythiosTown_Gym_Text_Trainer_PythiosGym_RosaraDefeat)
+    speakername("Rosara")
+    msgbox(format("Some people say that Ghost-type Pokémon are lost souls reincarnated."))
+    closemessage
+    release
+    end
+}
+text PythiosTown_Gym_Text_Trainer_PythiosGym_RosaraIntro
+{
+    format("I come in here to sing for lost Pokémon. Are you here for battle?")
+}
+text PythiosTown_Gym_Text_Trainer_PythiosGym_RosaraDefeat
+{
+    format("Oh, well. Back to singing.")
+}
+
+script PythiosTown_Gym_EventScript_Trainer_PythiosGym_Tafos
+{
+    trainerbattle_single(TRAINER_PYTHIOSGYM_TAFOS, PythiosTown_Gym_Text_Trainer_PythiosGym_TafosIntro, PythiosTown_Gym_Text_Trainer_PythiosGym_TafosDefeat)
+    speakername("Tafos")
+    msgbox(format("Sabella is guarded by two older folks who will try to start a Double Battle. Be ready for that!"))
+    closemessage
+    release
+    end
+}
+text PythiosTown_Gym_Text_Trainer_PythiosGym_TafosIntro
+{
+    format("Each Gym in Ilios gets stronger and stronger. Are you sure you're ready for this one?")
+}
+text PythiosTown_Gym_Text_Trainer_PythiosGym_TafosDefeat
+{
+    format("You might have a shot at beating Sabella!")
+}
+
+script PythiosTown_Gym_EventScript_Trainer_PythiosGym_Addonis
+{
+    trainerbattle_single(TRAINER_PYTHIOSGYM_ADDONIS, PythiosTown_Gym_Text_Trainer_PythiosGym_AddonisIntro, PythiosTown_Gym_Text_Trainer_PythiosGym_AddonisDefeat)
+    speakername("Addonis")
+    msgbox(format("I feel the spirits in this room... They're here...!"))
+    closemessage
+    release
+    end
+}
+text PythiosTown_Gym_Text_Trainer_PythiosGym_AddonisIntro
+{
+    format("Ouuhhh... ARRRUUUUUUUHHHHH!!")
+}
+text PythiosTown_Gym_Text_Trainer_PythiosGym_AddonisDefeat
+{
+    format("Huff, huff, huff...")
+}
+
+script PythiosTown_Gym_EventScript_Trainer_PythiosGym_Geroni
+{
+    trainerbattle_single(TRAINER_PYTHIOSGYM_GERONI, PythiosTown_Gym_Text_Trainer_PythiosGym_GeroniIntro, PythiosTown_Gym_Text_Trainer_PythiosGym_GeroniDefeat)
+    speakername("Geroni")
+    msgbox(format("We make sure only the strongest, smartest Pokémon Trainers make it to Sabella."))
+    closemessage
+    release
+    end
+}
+text PythiosTown_Gym_Text_Trainer_PythiosGym_GeroniIntro
+{
+    format("Fwahaha, get ready for the fight of a lifetime!")
+}
+text PythiosTown_Gym_Text_Trainer_PythiosGym_GeroniDefeat
+{
+    format("You're definitely ready!")
+}
+
+script PythiosTown_Gym_EventScript_Trainer_PythiosGym_Yanna
+{
+    trainerbattle_single(TRAINER_PYTHIOSGYM_YANNA, PythiosTown_Gym_Text_Trainer_PythiosGym_YannaIntro, PythiosTown_Gym_Text_Trainer_PythiosGym_YannaDefeat)
+    speakername("Yanna")
+    msgbox(format("Many Pokémon Trainers come to Sabella, but very few are worthy."))
+    closemessage
+    release
+    end
+}
+text PythiosTown_Gym_Text_Trainer_PythiosGym_YannaIntro
+{
+    format("Hold it right there! You must prove yourself, young Trainer!")
+}
+text PythiosTown_Gym_Text_Trainer_PythiosGym_YannaDefeat
+{
+    format("It seems you are worthy of Sabella.")
+}
+
+// ----------------------------------------------------------------------------------------------
+
+script PythiosTown_Gym_EventScript_Sabella
+{
+    lock
+    faceplayer
+    if(var(VAR_DIFFICULTY) == 0)
+    {
+        goto(PythiosTown_Gym_EventScript_Sabella_NormalDifficulty)
+    }
+    else
+    {
+        goto(PythiosTown_Gym_EventScript_Sabella_HardDifficulty)
+    }
+    release
+    end
+}
+
+script PythiosTown_Gym_EventScript_Sabella_NormalDifficulty // called when on normal difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_SABELLA, PythiosTown_Gym_Text_SabellaIntro, PythiosTown_Gym_Text_SabellaDefeat, PythiosTown_Gym_EventScript_Sabella_DefeatedScript, NO_MUSIC)
+    speakername("Sabella")
+    msgbox(format("As I saw in my visions, you were a worthy challenger. I hope we meet again one day, {PLAYER}."))
+    closemessage
+    release
+    end
+}
+script PythiosTown_Gym_EventScript_Sabella_HardDifficulty // called when on hard difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_SABELLA_HARD, PythiosTown_Gym_Text_SabellaIntro, PythiosTown_Gym_Text_SabellaDefeat, PythiosTown_Gym_EventScript_Sabella_DefeatedScript, NO_MUSIC)
+    speakername("Sabella")
+    msgbox(format("As I saw in my visions, you were a worthy challenger. I hope we meet again one day, {PLAYER}."))
+    closemessage
+    release
+    end
+}
+text PythiosTown_Gym_Text_SabellaIntro
+{
+    format("Chaire. I knew you were coming, {PLAYER}. I've seen your journey in my visions, and I believe you are ready to challenge me.\p The Fates have led us here for a great battle. Let us follow our destiny, here and now!")
+}
+text PythiosTown_Gym_Text_SabellaDefeat
+{
+    format("Amazing... You've earned your third Gym Badge, as predicted.")
+}
+// Script called when you defeat the gym leader!
+script PythiosTown_Gym_EventScript_Sabella_DefeatedScript
+{
+    setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
+    message(format("{PLAYER} received the Grave Badge from Sabella."))
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+
+    // Set gym completion flags
+    setflag(FLAG_BADGE03_GET)
+    // Set all trainers in Gym as defeated
+    settrainerflag(TRAINER_PYTHIOSGYM_ROSARA)
+    settrainerflag(TRAINER_PYTHIOSGYM_TAFOS)
+    settrainerflag(TRAINER_PYTHIOSGYM_ADDONIS)
+    settrainerflag(TRAINER_PYTHIOSGYM_GERONI)
+    settrainerflag(TRAINER_PYTHIOSGYM_YANNA)
+    // // Toggle event flag in Jusmail
+    // clearflag(FLAG_HIDE_RANIA_JUSMAIL)
+
+    // Explain badge
+    speakername("Sabella")
+    msgbox(format("The Grave Badge proves your skills of connecting to the hearts and souls of your Pokémon. You'll also be able to use the {COLOR GREEN}HM Flash{COLOR DARK_GRAY} outside of battle.\p Please, take this before you leave."))
+    closemessage
+
+    // Give TM reward and explain, plus end dialogue
+    giveitem(ITEM_TM_CALM_MIND)
+    speakername("Sabella")
+    msgbox(format("That TM contains the move {COLOR GREEN}Calm Mind{COLOR DARK_GRAY}, which will boost your Pokémon's stats.\p I see the open ocean in your future... make sure you speak with a {COLOR GREEN}strange sailor{COLOR DARK_GRAY} on the beach. Then you'll be ready to head east, through the caves to {COLOR GREEN}Sofos City{COLOR DARK_GRAY}. I see greatness in your future."))
+    closemessage
+
+    release
+    end
+}

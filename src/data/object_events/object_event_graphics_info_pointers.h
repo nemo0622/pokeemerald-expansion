@@ -253,6 +253,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Performer_M
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Punk_Rocker;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Officer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diver;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bardas;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Member_Dusknoir;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Member_Walrein;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -372,8 +375,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CABLE_CAR] =                &gObjectEventGraphicsInfo_CableCar,
     [OBJ_EVENT_GFX_SCIENTIST_2] =              &gObjectEventGraphicsInfo_Scientist2,
     [OBJ_EVENT_GFX_CONSTRUCTION_WORKER] =           &gObjectEventGraphicsInfo_DevonEmployee,
-    [OBJ_EVENT_GFX_CHIMERA_MEMBER_M] =            &gObjectEventGraphicsInfo_AquaMemberM,
-    [OBJ_EVENT_GFX_CHIMERA_MEMBER_F] =            &gObjectEventGraphicsInfo_AquaMemberF,
+    [OBJ_EVENT_GFX_CHIMERA_MEMBER_KECLEON] =            &gObjectEventGraphicsInfo_AquaMemberM,
+    [OBJ_EVENT_GFX_CHIMERA_MEMBER_SANDSLASH] =            &gObjectEventGraphicsInfo_AquaMemberF,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_M] =           &gObjectEventGraphicsInfo_MagmaMemberM,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_F] =           &gObjectEventGraphicsInfo_MagmaMemberF,
     [OBJ_EVENT_GFX_SIDNEY] =                   &gObjectEventGraphicsInfo_Sidney,
@@ -395,7 +398,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BRENDAN_FISHING] =          &gObjectEventGraphicsInfo_BrendanFishing,
     [OBJ_EVENT_GFX_MAY_FISHING] =              &gObjectEventGraphicsInfo_MayFishing,
     [OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN] =    &gObjectEventGraphicsInfo_HotSpringsOldWoman,
-    [OBJ_EVENT_GFX_SS_TIDAL] =                 &gObjectEventGraphicsInfo_SSTidal,
+    [OBJ_EVENT_GFX_THE_DELPHIS] =              &gObjectEventGraphicsInfo_SSTidal,
     [OBJ_EVENT_GFX_SUBMARINE_SHADOW] =         &gObjectEventGraphicsInfo_SubmarineShadow,
     [OBJ_EVENT_GFX_PICHU_DOLL] =               &gObjectEventGraphicsInfo_PichuDoll,
     [OBJ_EVENT_GFX_PIKACHU_DOLL] =             &gObjectEventGraphicsInfo_PikachuDoll,
@@ -501,6 +504,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PUNK_ROCKER] =              &gObjectEventGraphicsInfo_Punk_Rocker,
     [OBJ_EVENT_GFX_OFFICER] =                  &gObjectEventGraphicsInfo_Officer,
     [OBJ_EVENT_GFX_DIVER] =                    &gObjectEventGraphicsInfo_Diver,
+    [OBJ_EVENT_GFX_BARDAS] =                   &gObjectEventGraphicsInfo_Bardas,
+    [OBJ_EVENT_GFX_CHIMERA_MEMBER_DUSKNOIR] =  &gObjectEventGraphicsInfo_Chimera_Member_Dusknoir,
+    [OBJ_EVENT_GFX_CHIMERA_MEMBER_WALREIN] =  &gObjectEventGraphicsInfo_Chimera_Member_Walrein,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
