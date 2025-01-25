@@ -41,12 +41,15 @@ MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
     - "Bardas the Sailor" - unique, old sailor first met in Pythios Town
         - Allows fast-travel to other, visited coastal locations
-    - Berry locations
     - Consider Overworld Encounters (https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters?tab=readme-ov-file)
     - Consider Surfable Pokémon (https://github.com/grunt-lucas/pokeemerald-expansion/commits/surfable/)
+    - Implement Biv's Fishing Minigame
+        - Maybe also that upgrade-able fishing rod thing?
     - Continue implementing GBC sprites of Pokémon
     - Create Sabella GBC battle sprite (replaces Roxanne sprite)
-    - New orange-themed edit of battle background for Pythios Town and Erinys Path
+    - Rework Team Chimera to resemble the Cult of Kosmos
+    - Determine Battle Background situation
+        - Plus new orange-themed edit of battle background for Pythios Town and Erinys Path
     - Finalize and Pretty-up the region map
         - Also test Town Map item (no PokéNav!)
 - Work on ideas from note on phone

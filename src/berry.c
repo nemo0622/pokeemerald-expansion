@@ -2419,8 +2419,8 @@ static u16 GetBerryPestSpecies(u8 berryId)
     switch(berry->color)
     {
         case BERRY_COLOR_RED:
-            if (Random() % 100 < 11)
-                return SPECIES_LARVESTA;
+            if (Random() % 100 < 41)
+                return SPECIES_BOUNSWEET;
             else
                 return SPECIES_PARAS;
             break;
