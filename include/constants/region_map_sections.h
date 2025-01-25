@@ -126,7 +126,7 @@
 #define MAPSEC_ROUTE_22                     0x7A
 #define MAPSEC_ROUTE_23                     0x7B
 #define MAPSEC_ROUTE_24                     0x7C
-#define MAPSEC_ROUTE_25                     0x7D
+#define MAPSEC_THE_DELPHIS                  0x7D // Bardas' ship
 #define MAPSEC_WANDERERS_WOODS              0x7E // South of Jusmail Town, heading down to Pythios Town
 #define MAPSEC_FROSLASS_CAVERN              0x7F // East of Pythios Town - connects Erinys Path and Floette's Grace
 #define MAPSEC_NYX_TRAILS                   0x80 // South of Port Pello

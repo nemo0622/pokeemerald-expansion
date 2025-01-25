@@ -1,1 +1,5 @@
-mapscripts MyrriniIsland_MapScripts {}
+mapscripts MyrriniIsland_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_MYRRINI_ISLAND)
+    }
+}

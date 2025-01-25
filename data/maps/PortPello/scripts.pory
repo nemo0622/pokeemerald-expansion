@@ -1,1 +1,5 @@
-mapscripts PortPello_MapScripts {}
+mapscripts PortPello_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_PORT_PELLO)
+    }
+}

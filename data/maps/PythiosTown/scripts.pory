@@ -1,4 +1,14 @@
-mapscripts PythiosTown_MapScripts {}
+mapscripts PythiosTown_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_PYTHIOS_TOWN)
+        random(3)
+        switch (var(VAR_RESULT)) {
+            case 0: setweather(WEATHER_NONE)
+            case 1: setweather(WEATHER_NONE)
+            case 2: setweather(WEATHER_RAIN)
+        }
+    }
+}
 
 script PythiosTown_EventScripts_NPC_Gentleman
 {
@@ -366,6 +376,165 @@ script PythiosTown_EventScripts_NPC_ManBlockingGym
     speakername("Gym Guide")
     msgbox(format("Welcome to the Pythios Town Pokémon Gym!\p Well... that's what I would say, if the {COLOR GREEN}Gym Leader, Sabella{COLOR DARK_GRAY}, was here. She's probably meeting with people in the {COLOR GREEN}east of town{COLOR DARK_GRAY}."))
     closemessage
+    release
+    end
+}
+
+script PythiosTown_EventScripts_Bardas
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_MET_BARDAS_PYTHIOS_TOWN)) // first speak
+    {
+        speakername("Strange Sailor")
+        msgbox(format("Yia sou! Hey! I need a strong Trainer to help me out of a bind.\p Come to me when you have the {COLOR GREEN}Pythios Town Gym Badge{COLOR DARK_GRAY}... please!"))
+        closemessage
+        setflag(FLAG_MET_BARDAS_PYTHIOS_TOWN)
+        release
+        end
+    }
+    elif(flag(FLAG_MET_BARDAS_PYTHIOS_TOWN) && !flag(FLAG_GOT_BADGE_FOR_BARDAS))
+    {
+        speakername("Strange Sailor")
+        msgbox(format("Thanks for coming back, I thought you might've left for good! Lemme check your {COLOR GREEN}Badges{COLOR DARK_GRAY}..."))
+        closemessage
+        delay(60)
+        if(!flag(FLAG_BADGE03_GET)) // no badge yet
+        {
+            speakername("Strange Sailor")
+            msgbox(format("Nope, only 2 Gym Badges. That might not be enough.\p Come back when you have the {COLOR GREEN}Pythios Town Gym Badge{COLOR DARK_GRAY}, I need to mke sure you're a strong Trainer."))
+            closemessage
+            release
+            end
+        }
+        else // got badge
+        {
+            speakername("Strange Sailor")
+            msgbox(format("Hey, you got the Gym Badge! You must be pretty strong.\p So look, here's my situation. Some Team Chimera thugs wanted to take my precious, gorgeous, perfect boat! I took one down with my Pokémon, but they called for backup from an Admin, so now I'm stuck hiding out here.\p Last I saw, the Team Chimera Admin was waiting to catch me leaving {COLOR GREEN}east of Pythios Town{COLOR DARK_GRAY}. Please, help me out here!"))
+            closemessage
+            setflag(FLAG_GOT_BADGE_FOR_BARDAS) // means player can fight Team Chimera east of Pythios Town
+            delay(30)
+            applymovement(20, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(20)
+            speakername("Bardas")
+            msgbox(format("Oh, and tell 'em {COLOR GREEN}Bardas{COLOR DARK_GRAY} sent you! Bardas the Strong! No, Bardas the Wise... maybe even Bardas the Great! Fwahaha!"))
+            closemessage
+            release
+            end
+        }
+    }
+    elif(flag(FLAG_GOT_BADGE_FOR_BARDAS) && !flag(FLAG_HELPED_BARDAS_PYTHIOS_TOWN))
+    {
+        speakername("Bardas")
+        msgbox(format("The Team Chimera Admin is {COLOR GREEN}east of Pythios Town{COLOR DARK_GRAY}, last I saw. Let me know when you've taken care of them!"))
+        closemessage
+        release
+        end
+    }
+    elif(flag(FLAG_HELPED_BARDAS_PYTHIOS_TOWN)) // unlocked Bardas services
+    {
+        speakername("Bardas")
+        msgbox(format("Chaire, {PLAYER}! Where are we going today?"))
+        
+        // generate list of locations/options
+        dynmultipush("Just chatting!", 0)
+        if(flag(FLAG_VISITED_PYTHIOS_TOWN)) {
+            dynmultipush("Pythios Town", 1)
+        }
+        if(flag(FLAG_VISITED_SOFOS_CITY)) {
+            dynmultipush("Sofos City", 2)
+        }
+        if(flag(FLAG_VISITED_MARMARO_ISLAND)) {
+            dynmultipush("Marmaro Island", 3)
+        }
+        if(flag(FLAG_VISITED_MYRRINI_ISLAND)) {
+            dynmultipush("Myrrini Island", 4)
+        }
+        if(flag(FLAG_VISITED_FRESCO_ISLAND)) {
+            dynmultipush("Fresco Isles", 5)
+        }
+        if(flag(FLAG_VISITED_PALATI_CITY)) {
+            dynmultipush("Palati City", 6)
+        }
+        if(flag(FLAG_VISITED_PORT_PELLO)) {
+            dynmultipush("Port Pello", 7)
+        }
+        dynmultistack(100, 0, TRUE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+
+        // based on choice, say different things
+        if(var(VAR_RESULT) == 0) // "Just chatting"
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 0)
+            speakername("Bardas")
+            if(flag(FLAG_SYS_GAME_CLEAR))
+            {
+                msgbox(format("Ehehe, glad to see the Champion still hangs around with the likes of me!"))
+                closemessage
+            }
+            else
+            {
+                msgbox(format("How's the ol' adventure going, {PLAYER}? You still winning Gym Badges and knocking Team Chimera heads? Fwahaha!"))
+                closemessage
+            }
+            release
+            end
+        }
+        else // chose a location
+        {
+            if(var(VAR_RESULT) == 1) // Pythios Town
+            {
+                setvar(VAR_CHOSEN_SAIL_LOCATION, 1)
+                speakername("Bardas")
+                msgbox(format("Pythios Town, eh? I've still got bad memories from that place, after my run-in with Team Chimera. Let's make this a quick trip, ehehe!"))
+                closemessage
+            }
+            elif(var(VAR_RESULT) == 2) // Sofos City
+            {
+                setvar(VAR_CHOSEN_SAIL_LOCATION, 2)
+                speakername("Bardas")
+                msgbox(format("Sofos City, eh? The heart of the Ilios Region! While you keep adventuring, I may play a little Pinball. I'm not good, but it's fun!"))
+                closemessage
+            }
+            elif(var(VAR_RESULT) == 3) // Marmaro Island
+            {
+                setvar(VAR_CHOSEN_SAIL_LOCATION, 3)
+                speakername("Bardas")
+                msgbox(format("Marmaro Island! A beautiful little spot. Their marble helped build structures across the ancient Ilios Region. Let's check it out!"))
+                closemessage
+            }
+            elif(var(VAR_RESULT) == 4) // Myrrini Island
+            {
+                setvar(VAR_CHOSEN_SAIL_LOCATION, 4)
+                speakername("Bardas")
+                msgbox(format("Hey, I love Myrrini Island! Maybe I'll do some walking around while I'm there! You know what they say, Myrrini parties are the best parties!"))
+                closemessage
+            }
+            elif(var(VAR_RESULT) == 5) // Fresco Isles
+            {
+                setvar(VAR_CHOSEN_SAIL_LOCATION, 5)
+                speakername("Bardas")
+                msgbox(format("The Fresco Isles, eh? For a group of islands, it gets awful dry there. Maybe you'll find some unique Pokémon there!"))
+                closemessage
+            }
+            elif(var(VAR_RESULT) == 6) // Palati City
+            {
+                setvar(VAR_CHOSEN_SAIL_LOCATION, 6)
+                speakername("Bardas")
+                msgbox(format("Palati City! That's on Kaptara Island, right? That place is covered with gorgeous ruins... maybe I'll do a little exploring when we get there!"))
+                closemessage
+            }
+            elif(var(VAR_RESULT) == 7) // Port Pello
+            {
+                setvar(VAR_CHOSEN_SAIL_LOCATION, 7)
+                speakername("Bardas")
+                msgbox(format("Port Pello! Their cherry trees are world-famous! They say the gods blessed the lands. How about we see it for ourselves?"))
+                closemessage
+            }
+            warp(MAP_THE_DELPHIS, 9, 3) // Warps to The Delphis ship map
+            waitstate
+        }
+    }
     release
     end
 }

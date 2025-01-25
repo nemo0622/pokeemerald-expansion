@@ -420,10 +420,10 @@ $(OBJEVENTGFXDIR)/people/diver.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/bardas.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/chimera_member_dusknoir.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/team_chimera/chimera_member_dusknoir.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/chimera_member_walrein.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/team_chimera/chimera_member_walrein.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 

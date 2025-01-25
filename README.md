@@ -40,10 +40,10 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
     - "Bardas the Sailor" - unique, old sailor first met in Pythios Town
-        - Sailors blocking path east until gym beaten + Bardas spoken to
         - Allows fast-travel to other, visited coastal locations
-    - Minigame in Pythios Town
     - Berry locations
+    - Consider Overworld Encounters (https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters?tab=readme-ov-file)
+    - Consider Surfable Pokémon (https://github.com/grunt-lucas/pokeemerald-expansion/commits/surfable/)
     - Continue implementing GBC sprites of Pokémon
     - Create Sabella GBC battle sprite (replaces Roxanne sprite)
     - New orange-themed edit of battle background for Pythios Town and Erinys Path
@@ -153,7 +153,7 @@ Many, many talented developers and artists are responsible for making this proje
     15. By Substitube
     16. From GBC Sprite compilation by ESY
     17. By Pia Carrot
-    18. Edited by kesterhenrickpixels
+    18. Created and/or edited by kesterhenrickpixels
     19. By EeVeeEe1999
     20. By wittycrow
     21. By Coffee in the Pokémon Emerald Seaglass Discord Server (thank you!)

@@ -1244,9 +1244,9 @@
 #define FLAG_SPOKE_TO_MOVE_RELEARNER                                0x4A9 // spoke to artist (move relearner) in Pythios Town
 #define FLAG_UNLOCKED_MOVE_RELEARNER                                0x4AA // showed artist (move relearner) 20 Pokémon in dex
 #define FLAG_MET_SABELLA_PYTHIOS_TOWN                               0x4AB // did Sabella meet event
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
+#define FLAG_MET_BARDAS_PYTHIOS_TOWN                                0x4AC // spoke to bardas before
+#define FLAG_HELPED_BARDAS_PYTHIOS_TOWN                             0x4AD // did the help task for bardas after 3rd gym badge
+#define FLAG_GOT_BADGE_FOR_BARDAS                                   0x4AE // flag used in bardas pythios town event
 #define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag

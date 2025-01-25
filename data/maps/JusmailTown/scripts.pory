@@ -1,4 +1,8 @@
-mapscripts JusmailTown_MapScripts {}
+mapscripts JusmailTown_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_JUSMAIL_TOWN)
+    }
+}
 
 script JusmailTown_Sign_GymSign
 {
@@ -180,10 +184,12 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_CHESPIN,
             SPECIES_FENNEKIN,
             SPECIES_FROAKIE,
+            SPECIES_SPRIGATITO,
+            SPECIES_FUECOCO,
+            SPECIES_QUAXLY,
             SPECIES_PANSAGE,
             SPECIES_PANSEAR,
             SPECIES_PANPOUR,
-            SPECIES_SENTRET,
             SPECIES_LILLIPUP,
             SPECIES_PIKIPEK,
             SPECIES_DUCKLETT,
@@ -192,6 +198,7 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_GRUBBIN,
             SPECIES_PARAS,
             SPECIES_PHANPY,
+            SPECIES_SNOM,
             SPECIES_CUBONE,
             SPECIES_MUDBRAY,
             SPECIES_MAREEP,
@@ -246,8 +253,10 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_KABUTO,
             SPECIES_SKORUPI,
             SPECIES_SPINARAK,
-            SPECIES_ELEKID,
-            SPECIES_MAGBY,
+            SPECIES_ONIX,
+            SPECIES_KOMALA,
+            SPECIES_WINGULL,
+            SPECIES_STANTLER,
             SPECIES_SNORUNT,
             SPECIES_SPHEAL,
             SPECIES_SEEL,
@@ -288,20 +297,25 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_BASCULIN_WHITE_STRIPED,
             SPECIES_PANCHAM,
             SPECIES_SKRELP,
+            SPECIES_GOTHITA,
+            SPECIES_SOLOSIS,
+            SPECIES_LITWICK,
+            SPECIES_CHARCADET,
             SPECIES_CHINCHOU,
             SPECIES_SHELLDER,
             SPECIES_CLAMPERL,
             SPECIES_CLEFFA,
             SPECIES_IGGLYBUFF,
+            SPECIES_HELIOPTILE,
             SPECIES_TRAPINCH,
             SPECIES_DODUO,
             SPECIES_TINKATINK,
             SPECIES_SCRAGGY,
-            SPECIES_DARUMAKA,
-            SPECIES_DARUMAKA_GALARIAN,
+            SPECIES_GLIGAR,
             SPECIES_TORKOAL,
             SPECIES_NUMEL,
             SPECIES_RELICANTH,
+            SPECIES_BARBOACH,
             SPECIES_MUNNA,
             SPECIES_KECLEON,
             SPECIES_MAGIKARP,
@@ -314,8 +328,6 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_BRUXISH,
             SPECIES_IMPIDIMP,
             SPECIES_SWABLU,
-            SPECIES_FARFETCHD,
-            SPECIES_FARFETCHD_GALARIAN,
             SPECIES_MANKEY,
             SPECIES_VOLTORB,
             SPECIES_VOLTORB_HISUI,
@@ -331,12 +343,11 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_SKARMORY,
             SPECIES_REMORAID,
             SPECIES_RUFFLET,
-            SPECIES_PHANTUMP,
+            SPECIES_NATU,
             SPECIES_SNOVER,
             SPECIES_DUSKULL,
-            SPECIES_VANILLITE,
+            SPECIES_SWINUB,
             SPECIES_PAWNIARD,
-            SPECIES_LARVESTA,
             SPECIES_TIRTOUGA,
             SPECIES_ARCHEN,
             SPECIES_LARVITAR,
@@ -350,7 +361,7 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_FALINKS)
 
 			givemon(VAR_RESULT, 1)
-			msgbox(format("A POKé BALL appeared... containing a POKéMON!"))
+			msgbox(format("A Poké ball appeared... containing a Pokémon!"))
 			closemessage
 			if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY) 
 			{ 
@@ -360,7 +371,7 @@ script JusmailTown_EventScript_WishingWell
 			else 
 			{ 
 				call(Common_EventScript_NameReceivedBoxMon)
-				msgbox("The POKéMON was sent to the PC.")
+				msgbox("The Pokémon was sent to the PC.")
 				closemessage
 			}
 

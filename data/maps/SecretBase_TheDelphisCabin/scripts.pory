@@ -1,0 +1,8 @@
+mapscripts SecretBase_TheDelphisCabin_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if(var(VAR_SECRET_BASE_INITIALIZED) != 1)
+        {
+            goto(SecretBase_EventScript_FirstEntrance)
+        }
+    }
+}

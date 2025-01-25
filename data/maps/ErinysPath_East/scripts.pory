@@ -1,1 +1,139 @@
 mapscripts ErinysPath_East_MapScripts {}
+
+script ErinysPath_East_EventScript_Basculin
+{
+    lock
+    faceplayer
+    speakername("Basculin")
+    playmoncry(SPECIES_BASCULIN_WHITE_STRIPED, CRY_MODE_NORMAL)
+    msgbox("Raawwhhh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script ErinysPath_East_EventScript_Tauros
+{
+    lock
+    faceplayer
+    speakername("Tauros")
+    playmoncry(SPECIES_TAUROS_PALDEAN_AQUA_BREED, CRY_MODE_NORMAL)
+    msgbox("Grrr-huff!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script ErinysPath_East_EventScript_ChimeraWalrein
+{
+    lockall
+    faceplayer
+    applymovement(2, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(3, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("Grrr, when I find that stupid Sailor, I swear I'll show him not to mess with Team Chimera!"))
+    closemessage
+    if(flag(FLAG_GOT_BADGE_FOR_BARDAS)) // got badge 3 and talked to Bardas
+    {
+        delay(30)
+        applymovement(1, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        delay(30)
+        speakername("Chimera Admin")
+        msgbox(format("Hold it right there... I've been scouting around Pythios Town, and I think I saw you hanging around that Bardas guy! That fool wouldn't donate his ratty little boat to our cause, then took a Team Chimera member by surprise!\p I'll destroy you, then I'll take down Bardas!"))
+        closemessage
+        if(var(VAR_DIFFICULTY) == 0)
+        {
+            trainerbattle_no_intro(TRAINER_ERINYSPATH_CHIMERA_ADMIN, ErinysPath_East_Text_ChimeraAdminDefeated)
+        }
+        else
+        {
+            trainerbattle_no_intro(TRAINER_ERINYSPATH_CHIMERA_ADMIN_HARD, ErinysPath_East_Text_ChimeraAdminDefeated)
+        }
+
+        lockall
+        applymovement(1, Common_Movement_FacePlayer)
+        waitmovement(0)
+        delay(20)
+        applymovement(2, ErinysPath_East_Movement_BasculinFlee)
+        applymovement(3, ErinysPath_East_Movement_TaurosFlee)
+        waitmovement(0)
+        delay(20)
+        speakername("Chimera Admin")
+        msgbox(format("...Well, so much for team loyalty.\p Looks like you and Bardas are winning for now. Mark my words, Team Chimera will make you pay for this humiliation!"))
+        closemessage
+        
+        applymovement(1, ErinysPath_East_Movement_ChimeraAdminFlee)
+        waitmovement(0)
+        delay(30)
+
+        applymovement(4, ErinysPath_East_Movement_BardasApproach)
+        waitmovement(0)
+        speakername("Bardas")
+        msgbox(format("Woah, I never thought I'd see that Chimera thug run like that! I was climbing up the cliff to ambush him, but looks like you beat me!\p Really, I owe you a lot, {PLAYER}. You've saved my ship, so I'll offer you what I can - my service.\p I'll stop at docks around {COLOR GREEN}coastal towns and islands{COLOR DARK_GRAY}. Talk to me if you want to {COLOR GREEN}sail with me{COLOR DARK_GRAY} and get places faster! You can also have {COLOR GREEN}your own room{COLOR DARK_GRAY} on The Delphis. Chaire!"))
+        closemessage
+        applymovement(4, ErinysPath_East_Movement_BardasExit)
+        delay(30)
+
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        delay(30)
+        removeobject(1)
+        removeobject(2)
+        removeobject(3)
+        removeobject(4)
+        delay(30)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        delay(20)
+
+        msgbox(format("You can now travel with {COLOR GREEN}Bardas{COLOR DARK_GRAY} on his ship, {COLOR GREEN}The Delphis{COLOR DARK_GRAY}!\p Some areas can only be reached via sailing with Bardas, unlocked based on {COLOR GREEN}Gym Badges{COLOR DARK_GRAY}. Sailing to a location is only unlocked {COLOR GREEN}after visiting it{COLOR DARK_GRAY} if accessible by Surf or walking."))
+        closemessage
+        setflag(FLAG_HELPED_BARDAS_PYTHIOS_TOWN)
+    }
+    releaseall
+    end
+}
+
+text ErinysPath_East_Text_ChimeraAdminDefeated
+{
+    format("First Bardas, then you... Team Chimera is having real problems recently.")
+}
+
+movement ErinysPath_East_Movement_BasculinFlee
+{
+    walk_fast_right * 2
+    walk_fast_down * 8
+    step_end
+}
+
+movement ErinysPath_East_Movement_TaurosFlee
+{
+    walk_fast_right * 3
+    walk_fast_down * 6
+    step_end
+}
+
+movement ErinysPath_East_Movement_ChimeraAdminFlee
+{
+    walk_fast_right * 4
+    walk_fast_down * 2
+    walk_fast_right * 4
+    step_end
+}
+
+movement ErinysPath_East_Movement_BardasApproach
+{
+    walk_up * 7
+    walk_left * 2
+    step_end
+}
+
+movement ErinysPath_East_Movement_BardasExit
+{
+    walk_down
+    walk_left * 4
+    step_end
+}

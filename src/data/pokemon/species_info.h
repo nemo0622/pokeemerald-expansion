@@ -297,16 +297,15 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sZygarde_CellLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_ZYGARDE_10}),
     },
 
-    [SPECIES_ZYGARDE_10] = 
+    [SPECIES_ZYGARDE_10] = // for some reason, the Pokédex reads the data of SPECIES_ZYGARDE_10_POWER_CONSTRUCT
     {
-        .baseHP        = 54,
-        .baseAttack    = 100,
+        .baseHP        = 64,
+        .baseAttack    = 105,
         .baseDefense   = 71,
-        .baseSpeed     = 115,
-        .baseSpAttack  = 61,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 60,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
         .catchRate = 3,
@@ -317,16 +316,20 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_POWER_CONSTRUCT, ABILITY_NONE, ABILITY_CELL_ASSIST },
+        .abilities = { ABILITY_CELL_ASSIST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
-        .speciesName = _("Zygarde-10"),
+        .speciesName = _("Zygarde"),
         .cryId = CRY_ZYGARDE_10,
         .natDexNum = NATIONAL_DEX_ZYGARDE_10,
         .categoryName = _("Order"),
         .height = 12,
         .weight = 335,
-        .description = gZygarde10PokedexText,
+        .description = COMPOUND_STRING(
+            "Legends tell of Zygarde being assembled\n"
+            "from countless cells. This Pokémon\n"
+            "seems to be one of them, separated from\n"
+            "the others. It is small and skittish."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 721,
@@ -356,6 +359,5 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sZygardeLevelUpLearnset,
         .teachableLearnset = sZygardeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_ZYGARDE_50}),
     }
 };

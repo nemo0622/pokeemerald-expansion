@@ -2619,7 +2619,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_CELL_ASSIST] =
     {
         .name = _("Z-Cell Assist"),
-        .description = COMPOUND_STRING("Extra attack + Technician."),
+        .description = COMPOUND_STRING("Cells provide extra attack."),
         .aiRating = 9,
     },
 

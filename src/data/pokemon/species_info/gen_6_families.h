@@ -5586,7 +5586,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .formChangeTable = sZygarde10AuraBreakFormChangeTable,
     },
 
-    [SPECIES_ZYGARDE_10_POWER_CONSTRUCT] =
+    [SPECIES_ZYGARDE_10_POWER_CONSTRUCT] = // this is what the Pokédex reads for some reason
     {
         .baseHP        = 54,
         .baseAttack    = 100,
@@ -5632,7 +5632,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .iconPalIndex = 1,
         FOOTPRINT(Zygarde)
         .isLegendary = TRUE,
-        .isFrontierBanned = TRUE,
         .levelUpLearnset = sZygardeLevelUpLearnset,
         .teachableLearnset = sZygardeTeachableLearnset,
     },

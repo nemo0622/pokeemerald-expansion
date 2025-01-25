@@ -4544,7 +4544,7 @@
     {
       "id": "LAYOUT_PYTHIOS_CEMETERY",
       "name": "PythiosCemetery_Layout",
-      "width": 30,
+      "width": 38,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Pythios",
@@ -4940,6 +4940,26 @@
       "secondary_tileset": "gTileset_JusmailGym",
       "border_filepath": "data/layouts/PythiosTown_Gym/border.bin",
       "blockdata_filepath": "data/layouts/PythiosTown_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_DELPHIS",
+      "name": "TheDelphis_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/TheDelphis/border.bin",
+      "blockdata_filepath": "data/layouts/TheDelphis/map.bin"
+    },
+    {
+      "id": "LAYOUT_SECRET_BASE_THE_DELPHIS_CABIN",
+      "name": "SecretBase_TheDelphisCabin_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_SecretBase",
+      "secondary_tileset": "gTileset_SecretBaseBrownCave",
+      "border_filepath": "data/layouts/SecretBase_TheDelphisCabin/border.bin",
+      "blockdata_filepath": "data/layouts/SecretBase_TheDelphisCabin/map.bin"
     }
   ]
 }

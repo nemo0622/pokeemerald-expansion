@@ -3,6 +3,9 @@ mapscripts AcrisiaCity_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_INTRO_STATE, 0: AcrisiaCity_EventScript_PlayerExitsTruck
     ]
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_ACRISIA_CITY)
+    }
 
 }
 

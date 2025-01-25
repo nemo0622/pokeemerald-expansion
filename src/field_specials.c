@@ -4296,7 +4296,7 @@ void GetMysteryGiftFeedback(void)
     static const u8 sText_CodeAlolaStarters[]   = _("ILOVEALOLA");
     static const u8 sText_CodeKalosStarters[]  = _("ILOVEKALOS");
     static const u8 sText_CodeUnovaStarters[]     = _("IWANTMONKE");
-    static const u8 sText_CodeUltraBeasts[] = _("ULTRABEAST");
+    static const u8 sText_CodePaldeaStarters[] = _("ILOVPALDEA");
     static const u8 sText_CodeNemosFavs[] = _("NEMOS FAVE");
     static const u8 sText_CodeJustShowMe[] = _("JUSTSHOWME");
     static const u8 sText_CodeWishingStars[] = _("WISHINGSTR");
@@ -4343,7 +4343,7 @@ void GetMysteryGiftFeedback(void)
     else if (!StringCompare(gStringVar2, sText_CodeUnovaStarters))
         gSpecialVar_Result = 7;
     // Code 8
-    else if (!StringCompare(gStringVar2, sText_CodeUltraBeasts))
+    else if (!StringCompare(gStringVar2, sText_CodePaldeaStarters))
         gSpecialVar_Result = 8;
     // Code 9
     else if (!StringCompare(gStringVar2, sText_CodeNemosFavs))

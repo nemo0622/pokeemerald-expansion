@@ -1,5 +1,167 @@
 mapscripts PythiosCemetery_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
-        setflashlevel(1)
+        setflashlevel(4)
     }
+}
+
+script PythiosCemetery_EventScript_Linoone
+{
+    lock
+    faceplayer
+    speakername("Linoone")
+    playmoncry(SPECIES_LINOONE_GALARIAN, CRY_MODE_NORMAL)
+    msgbox("Hissss!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt1
+{
+    trainerbattle_single(TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_1, PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt1Intro, PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt1Defeat)
+    speakername("Grunt")
+    msgbox(format("Look, just leave and don't cause trouble."))
+    closemessage
+    release
+    end
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt1Intro
+{
+    format("Hey, you! This is our private Team Chimera meeting spot!")
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt1Defeat
+{
+    format("Darn, we might get cleaned out!")
+}
+
+script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt2
+{
+    trainerbattle_single(TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_2, PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Intro, PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Defeat)
+    speakername("Grunt")
+    msgbox(format("I hope the Admin didn't see me lose like that."))
+    closemessage
+    release
+    end
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Intro
+{
+    format("You'll never reach the Admin!")
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Defeat
+{
+    format("Okay, you might reach the Admin...")
+}
+
+script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin
+{
+    lock
+    faceplayer
+    speakername("Chimera Admin")
+    msgbox(format("Wh-what? How did you reach us? I thought that we were the only ones who could get through the Cemetery, thanks to our {COLOR GREEN}Flash HM{COLOR DARK_GRAY}.\p No matter. I'd recognize the Trainer messing up our plans anywhere, even in the dark. I'll stop you, here and now!"))
+    closemessage
+    trainerbattle_no_intro(TRAINER_PYTHIOSCEMETERY_CHIMERA_ADMIN, PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat)
+    
+    lock
+    faceplayer
+    speakername("Chimera Admin")
+    msgbox(format("Eek! We'd better scram!"))
+    closemessage
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(30)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    setflag(FLAG_RECEIVED_HM_FLASH) // also hides chimera grunts here #efficient
+    delay(30)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(20)
+    msgbox(format("The Team Chimera members dropped something while they ran..."))
+    closemessage
+    giveitem(ITEM_HM_FLASH)
+    release
+    end
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat
+{
+    format("Uh oh, this isn't good...!")
+}
+
+script PythiosCemetery_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("I'd love to make paintings of the Pythios Cemetery, but it's so dark and rainy that I can't see!"))
+    closemessage
+    release
+    end
+}
+
+script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Maria
+{
+    trainerbattle_single(TRAINER_PYTHIOSCEMETERY_MARIA, PythiosCemetery_Text_Trainer_PythiosCemetery_MariaIntro, PythiosCemetery_Text_Trainer_PythiosCemetery_MariaDefeat)
+    speakername("Maria")
+    msgbox(format("I wonder if there are new, cute Pokémon to catch here."))
+    closemessage
+    release
+    end
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_MariaIntro
+{
+    format("My poor Pokémon are getting lost in this darkness!")
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_MariaDefeat
+{
+    format("Where'd they go?")
+}
+
+script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Arkos
+{
+    trainerbattle_single(TRAINER_PYTHIOSCEMETERY_ARKOS, PythiosCemetery_Text_Trainer_PythiosCemetery_ArkosIntro, PythiosCemetery_Text_Trainer_PythiosCemetery_ArkosDefeat)
+    speakername("Arkos")
+    msgbox(format("That battle cheered me up a bit."))
+    closemessage
+    release
+    end
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_ArkosIntro
+{
+    format("I'm here to sulk...")
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_ArkosDefeat
+{
+    format("I can't even sulk in peace, huh?")
+}
+
+script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Galei
+{
+    trainerbattle_single(TRAINER_PYTHIOSCEMETERY_GALEI, PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiIntro, PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiDefeat)
+    speakername("Galei")
+    msgbox(format("That battle cheered me up a bit."))
+    closemessage
+    release
+    end
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiIntro
+{
+    format("I'm here to sulk...")
+}
+text PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiDefeat
+{
+    format("I can't even sulk in peace, huh?")
+}
+
+script PythiosCemetery_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("People tend to stay away from cemeteries, so the graves fall into ruin. I'm trying to clean some of them up."))
+    closemessage
+    applymovement(12, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
 }

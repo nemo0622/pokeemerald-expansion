@@ -7,6 +7,7 @@
 #define SECRET_BASE_YELLOW_CAVE 4
 #define SECRET_BASE_TREE 5
 #define SECRET_BASE_SHRUB 6
+#define SECRET_BASE_THE_DELPHIS 7
 
 // Each secret base location is assigned an identifier value.
 // The secret base's map is determined by (id / 10). The ones
@@ -166,6 +167,10 @@
 
 #define SECRET_BASE_SHRUB4 SECRET_BASE_GROUP(23)
 
-#define NUM_SECRET_BASE_GROUPS 24
+#define SECRET_BASE_THE_DELPHIS_CABIN_1     241
+
+#define SECRET_BASE_THE_DELPHIS_CABIN SECRET_BASE_GROUP(24)
+
+#define NUM_SECRET_BASE_GROUPS 25
 
 #endif  // GUARD_CONSTANTS_SECRET_BASES_H

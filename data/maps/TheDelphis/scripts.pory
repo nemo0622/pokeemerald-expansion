@@ -1,0 +1,81 @@
+mapscripts TheDelphis_MapScripts {}
+
+script TheDelphis_EventScript_CabinSign
+{
+    lock
+    msgbox(format("{PLAYER}'s Cabin"))
+    closemessage
+    release
+    end
+}
+
+script TheDelphis_EventScript_Bardas
+{
+    lock
+    faceplayer
+    speakername("Bardas")
+    msgbox(format("How're you liking The Delphis, {PLAYER}? Make sure to check out {COLOR GREEN}your Cabin{COLOR DARK_GRAY} and decorate it!\p I can feel the boat slowing down, so we must be near our destination. Are you ready to leave?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0) // stay on boat
+    {
+        speakername("Bardas")
+        msgbox(format("No rush! You're always welcome on The Delphis!"))
+        closemessage
+    }
+    else
+    {
+        // warp to appropriate location using VAR_CHOSEN_SAIL_LOCATION
+        if(var(VAR_CHOSEN_SAIL_LOCATION) == 1) // pythios town
+        {
+            warp(MAP_PYTHIOS_TOWN, 17, 21)
+            waitstate
+        }
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 2) // sofos city
+        {
+            warp(MAP_SOFOS_CITY, 22, 30) // currently set to Pokémon center entrance, no dock yet
+            waitstate
+        }
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 3) // marmaro island
+        {
+            warp(MAP_MARMARO_ISLAND, 19, 32) // currently set to Pokémon center entrance, no dock yet
+            waitstate
+        }
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 4) // myrrini island
+        {
+            warp(MAP_MYRRINI_ISLAND, 23, 38) // currently set to Pokémon center entrance, no dock yet
+            waitstate
+        }
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 5) // fresco isles
+        {
+            warp(MAP_FRESCO_ISLAND, 65, 27) // currently set to Pokémon center entrance, no dock yet
+            waitstate
+        }
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 6) // palati city
+        {
+            warp(MAP_PALATI_CITY, 39, 19) // currently set to Pokémon center entrance, no dock yet
+            waitstate
+        }
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 7) // port pello
+        {
+            warp(MAP_PORT_PELLO, 22, 19) // currently set to Pokémon center entrance, no dock yet
+            waitstate
+        }
+        else // FAILSAFE: just warp to Pythios Town Pokémon Center
+        {
+            warp(MAP_PYTHIOS_TOWN, 9, 7)
+            waitstate
+        }
+    }
+    release
+    end
+}
+
+script TheDelphis_EventScript_SailorBlockingCabin
+{
+    lock
+    faceplayer
+    speakername("Sailor")
+    msgbox(format("Sorry, the Cabin isn't available right now."))
+    closemessage
+    release
+    end
+}

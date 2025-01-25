@@ -26,8 +26,21 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "graphics_id": "OBJ_EVENT_GFX_CHIMERA_MEMBER_WALREIN",
       "x": 9,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ErinysPath_East_EventScript_ChimeraWalrein",
+      "flag": "FLAG_HELPED_BARDAS_PYTHIOS_TOWN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BASCULIN_WHITE_STRIPED)",
+      "x": 8,
       "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -35,8 +48,34 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
+      "script": "ErinysPath_East_EventScript_Basculin",
+      "flag": "FLAG_HELPED_BARDAS_PYTHIOS_TOWN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS_PALDEAN_AQUA_BREED)",
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ErinysPath_East_EventScript_Tauros",
+      "flag": "FLAG_HELPED_BARDAS_PYTHIOS_TOWN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BARDAS",
+      "x": 11,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HELPED_BARDAS_PYTHIOS_TOWN"
     }
   ],
   "warp_events": [
