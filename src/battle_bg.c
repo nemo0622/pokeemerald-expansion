@@ -805,21 +805,29 @@ void DrawMainBattleBackground(void)
     else
     {
 
+        // NOTE: Commented largely unnecessary bits out because of improvements with the simpler battle backgrounds
         // MapSec-specific battle background force loading
         u8 mapId;
         mapId = GetCurrentRegionMapSectionId();
-        if(mapId == MAPSEC_ACRISIA_MOUNTAINS)
-        {
-            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].tileset, (void *)(BG_CHAR_ADDR(2)));
-            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
-            return;
-        }
-        else if (mapId == MAPSEC_BRONZE_PASS || mapId == MAPSEC_WANDERERS_WOODS)
+        // if(mapId == MAPSEC_ACRISIA_MOUNTAINS)
+        // {
+        //     LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].tileset, (void *)(BG_CHAR_ADDR(2)));
+        //     LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+        //     LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        //     return;
+        // }
+        // else if (mapId == MAPSEC_BRONZE_PASS || mapId == MAPSEC_WANDERERS_WOODS)
+        // {
+        //     LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tileset, (void *)(BG_CHAR_ADDR(2)));
+        //     LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+        //     LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        //     return;
+        // }
+        if(mapId == MAPSEC_PYTHIOS_TOWN || mapId == MAPSEC_ERINYS_PATH) // loads orange/red grass
         {
             LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(gBattleTerrainPalette_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             return;
         }
 
