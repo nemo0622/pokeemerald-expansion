@@ -41,7 +41,6 @@ MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
     - "Bardas the Sailor" - unique, old sailor first met in Pythios Town
         - Allows fast-travel to other, visited coastal locations
-    - Consider Overworld Encounters (https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters?tab=readme-ov-file)
     - Consider Surfable Pokémon (https://github.com/grunt-lucas/pokeemerald-expansion/commits/surfable/)
     - Implement Biv's Fishing Minigame
         - Maybe also that upgrade-able fishing rod thing?
@@ -188,6 +187,7 @@ Many, many talented developers and artists are responsible for making this proje
     - Many Pokémon Party Icons based on following sprites (credited above), others by Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
         - EeVeeEe1999: created many small sprites, especially for Gen 3, 5, 6, and 7 Pokémon
         - A few Gen 6 icon sprites by  dragonball253 (some Kalos starter icons)
+    - Battle Backgrounds based on work by PurrfectDoodle, RavePossum, and Ruki; some slight edits by me
 
 
 
