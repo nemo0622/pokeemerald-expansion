@@ -23,6 +23,7 @@
 #include "dexnav.h"
 #include "dma3.h"
 #include "event_data.h"
+#include "event_object_movement.h"
 #include "evolution_scene.h"
 #include "field_message_box.h"
 #include "graphics.h"
@@ -35,6 +36,7 @@
 #include "main.h"
 #include "malloc.h"
 #include "m4a.h"
+#include "overworld.h"
 #include "palette.h"
 #include "party_menu.h"
 #include "pokeball.h"
@@ -6068,6 +6070,12 @@ static void HandleEndTurn_FinishBattle(void)
             && gBattleResults.shinyWildMon)
         {
             TryPutBreakingNewsOnAir();
+        }
+
+        if(FlagGet(FLAG_DOING_OVERWORLD_ENCOUNTER))
+        {
+            RemoveObjectEventByLocalIdAndMap(VarGet(VAR_LAST_TALKED), gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup); // removes overworld mon object
+            FlagClear(FLAG_DOING_OVERWORLD_ENCOUNTER);
         }
 
         RecordedBattle_SetPlaybackFinished();

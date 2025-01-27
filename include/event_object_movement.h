@@ -496,4 +496,7 @@ bool8 MovementAction_EmoteDoubleExclamationMark_Step0(struct ObjectEvent *, stru
 
 void ReturnFollowingMonToBall(void);
 
+u16 GetObjectEventFlagIdByLocalIdAndMap(u8 localId, u8 mapNum, u8 mapGroup);
+u16 GetObjectEventGraphicsIdByLocalIdAndMap(u8 localId, u8 mapNum, u8 mapGroup);
+
 #endif //GUARD_EVENT_OBJECT_MOVEMENT_H

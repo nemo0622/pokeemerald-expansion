@@ -2412,3 +2412,29 @@
         goto_if_eq VAR_RESULT, TRUE, \script
     .endif
     .endm
+
+	@ Begins a wild battle against an overworld mon object event with a DEFINED level.
+	.macro startoverworldencounter level=req
+	callnative GetOverworldMonSpecies
+	playmoncry VAR_0x8004, CRY_MODE_ENCOUNTER
+	createmon B_SIDE_OPPONENT, B_FLANK_LEFT, VAR_0x8004, VAR_0x8006, isShiny=VAR_0x8005
+	waitmoncry
+	dowildbattle
+	.endm
+
+	@ Begins a wild battle against an overworld mon object event with an AUTOMATIC level.
+	@ NOTE: CURRENTLY BUSTED (lol)
+	.macro startwildoverworldencounter
+	callnative GetOverworldMonSpecies
+	playmoncry VAR_0x8004, CRY_MODE_ENCOUNTER
+	callnative GenerateOverworldWildMon
+	waitmoncry
+	dowildbattle
+	.endm
+
+	.macro setobjectaswildencounter localId:req, encounterType=ENCOUNTER_FIXED
+	.byte 0xe7
+	.2byte \localId
+	.byte \encounterType
+	release
+	.endm

@@ -5,8 +5,37 @@ mapscripts AcrisiaCity_MapScripts {
     ]
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_ACRISIA_CITY)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(26, ENCOUNTER_LAND)
+        setobjectaswildencounter(27, ENCOUNTER_LAND)
     }
 
+}
+
+script Overworld_EventScript_WildPokemon
+{
+    lockall
+    faceplayer
+    setflag(FLAG_DOING_OVERWORLD_ENCOUNTER)
+
+    // Set level based on average party level
+    startoverworldencounter(5) // the 5 is just a place holder lol
+
+    clearflag(FLAG_DOING_OVERWORLD_ENCOUNTER)
+    release
+    end
 }
 
 script AcrisiaCity_EventScript_PlayerExitsTruck

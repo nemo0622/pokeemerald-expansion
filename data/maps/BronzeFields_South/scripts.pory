@@ -1,4 +1,26 @@
-mapscripts BronzeFields_South_MapScripts {}
+mapscripts BronzeFields_South_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(8, ENCOUNTER_LAND)
+        setobjectaswildencounter(9, ENCOUNTER_LAND)
+        setobjectaswildencounter(10, ENCOUNTER_LAND)
+        setobjectaswildencounter(11, ENCOUNTER_LAND)
+        setobjectaswildencounter(12, ENCOUNTER_LAND)
+        setobjectaswildencounter(13, ENCOUNTER_LAND)
+        setobjectaswildencounter(14, ENCOUNTER_LAND)
+    }
+}
 
 // TRAINER & NPC SCRIPTS
 

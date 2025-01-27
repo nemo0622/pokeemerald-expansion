@@ -1,146 +1,157 @@
 WanderersWoods_MapScripts::
+# 2 "data/maps/WanderersWoods/scripts.pory"
+	map_script MAP_SCRIPT_ON_TRANSITION, WanderersWoods_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+WanderersWoods_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+# 3 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1
+# 4 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2
+# 5 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3
+# 6 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4
+# 7 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5
+# 8 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6
+# 9 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7
+# 10 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8
+# 11 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9
+# 12 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10
+# 13 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11
+# 14 "data/maps/WanderersWoods/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12
+# 15 "data/maps/WanderersWoods/scripts.pory"
+	setobjectaswildencounter 22, ENCOUNTER_LAND
+# 16 "data/maps/WanderersWoods/scripts.pory"
+	setobjectaswildencounter 23, ENCOUNTER_LAND
+# 17 "data/maps/WanderersWoods/scripts.pory"
+	setobjectaswildencounter 24, ENCOUNTER_LAND
+# 18 "data/maps/WanderersWoods/scripts.pory"
+	setobjectaswildencounter 25, ENCOUNTER_LAND
+# 19 "data/maps/WanderersWoods/scripts.pory"
+	setobjectaswildencounter 26, ENCOUNTER_LAND
+# 20 "data/maps/WanderersWoods/scripts.pory"
+	setobjectaswildencounter 27, ENCOUNTER_LAND
+# 21 "data/maps/WanderersWoods/scripts.pory"
+	setobjectaswildencounter 28, ENCOUNTER_LAND
+	return
 
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Zander::
-# 5 "data/maps/WanderersWoods/scripts.pory"
+# 27 "data/maps/WanderersWoods/scripts.pory"
 	trainerbattle_single TRAINER_WANDERERSWOODS_ZANDER, WanderersWoods_Text_Trainer_WanderersWoods_ZanderIntro, WanderersWoods_Text_Trainer_WanderersWoods_ZanderDefeat
-# 6 "data/maps/WanderersWoods/scripts.pory"
+# 28 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_Trainer_WanderersWoods_Zander_Text_0
-# 7 "data/maps/WanderersWoods/scripts.pory"
+# 29 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_Trainer_WanderersWoods_Zander_Text_1
-# 8 "data/maps/WanderersWoods/scripts.pory"
+# 30 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 9 "data/maps/WanderersWoods/scripts.pory"
+# 31 "data/maps/WanderersWoods/scripts.pory"
 	release
 	end
 
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Kallas::
-# 23 "data/maps/WanderersWoods/scripts.pory"
+# 45 "data/maps/WanderersWoods/scripts.pory"
 	trainerbattle_single TRAINER_WANDERERSWOODS_KALLAS, WanderersWoods_Text_Trainer_WanderersWoods_KallasIntro, WanderersWoods_Text_Trainer_WanderersWoods_KallasDefeat
-# 24 "data/maps/WanderersWoods/scripts.pory"
+# 46 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_Trainer_WanderersWoods_Kallas_Text_0
-# 25 "data/maps/WanderersWoods/scripts.pory"
+# 47 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_Trainer_WanderersWoods_Kallas_Text_1
-# 26 "data/maps/WanderersWoods/scripts.pory"
+# 48 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 27 "data/maps/WanderersWoods/scripts.pory"
+# 49 "data/maps/WanderersWoods/scripts.pory"
 	release
 	end
 
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Martha::
-# 41 "data/maps/WanderersWoods/scripts.pory"
+# 63 "data/maps/WanderersWoods/scripts.pory"
 	trainerbattle_single TRAINER_WANDERERSWOODS_MARTHA, WanderersWoods_Text_Trainer_WanderersWoods_MarthaIntro, WanderersWoods_Text_Trainer_WanderersWoods_MarthaDefeat
-# 42 "data/maps/WanderersWoods/scripts.pory"
+# 64 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_Trainer_WanderersWoods_Martha_Text_0
-# 43 "data/maps/WanderersWoods/scripts.pory"
+# 65 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_Trainer_WanderersWoods_Martha_Text_1
-# 44 "data/maps/WanderersWoods/scripts.pory"
+# 66 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 45 "data/maps/WanderersWoods/scripts.pory"
+# 67 "data/maps/WanderersWoods/scripts.pory"
 	release
 	end
 
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Alexi::
-# 59 "data/maps/WanderersWoods/scripts.pory"
+# 81 "data/maps/WanderersWoods/scripts.pory"
 	trainerbattle_single TRAINER_WANDERERSWOODS_ALEXI, WanderersWoods_Text_Trainer_WanderersWoods_AlexiIntro, WanderersWoods_Text_Trainer_WanderersWoods_AlexiDefeat
-# 60 "data/maps/WanderersWoods/scripts.pory"
+# 82 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_Trainer_WanderersWoods_Alexi_Text_0
-# 61 "data/maps/WanderersWoods/scripts.pory"
+# 83 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_Trainer_WanderersWoods_Alexi_Text_1
-# 62 "data/maps/WanderersWoods/scripts.pory"
+# 84 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 63 "data/maps/WanderersWoods/scripts.pory"
+# 85 "data/maps/WanderersWoods/scripts.pory"
 	release
 	end
 
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Ellie::
-# 77 "data/maps/WanderersWoods/scripts.pory"
+# 99 "data/maps/WanderersWoods/scripts.pory"
 	trainerbattle_single TRAINER_WANDERERSWOODS_ELLIE, WanderersWoods_Text_Trainer_WanderersWoods_EllieIntro, WanderersWoods_Text_Trainer_WanderersWoods_EllieDefeat
-# 78 "data/maps/WanderersWoods/scripts.pory"
+# 100 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_Trainer_WanderersWoods_Ellie_Text_0
-# 79 "data/maps/WanderersWoods/scripts.pory"
+# 101 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_Trainer_WanderersWoods_Ellie_Text_1
-# 80 "data/maps/WanderersWoods/scripts.pory"
+# 102 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 81 "data/maps/WanderersWoods/scripts.pory"
+# 103 "data/maps/WanderersWoods/scripts.pory"
 	release
 	end
 
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Lydia::
-# 95 "data/maps/WanderersWoods/scripts.pory"
+# 117 "data/maps/WanderersWoods/scripts.pory"
 	trainerbattle_single TRAINER_WANDERERSWOODS_LYDIA, WanderersWoods_Text_Trainer_WanderersWoods_LydiaIntro, WanderersWoods_Text_Trainer_WanderersWoods_LydiaDefeat
-# 96 "data/maps/WanderersWoods/scripts.pory"
+# 118 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_Trainer_WanderersWoods_Lydia_Text_0
-# 97 "data/maps/WanderersWoods/scripts.pory"
+# 119 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_Trainer_WanderersWoods_Lydia_Text_1
-# 98 "data/maps/WanderersWoods/scripts.pory"
+# 120 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 99 "data/maps/WanderersWoods/scripts.pory"
+# 121 "data/maps/WanderersWoods/scripts.pory"
 	release
 	end
 
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Thomas::
-# 113 "data/maps/WanderersWoods/scripts.pory"
+# 135 "data/maps/WanderersWoods/scripts.pory"
 	trainerbattle_single TRAINER_WANDERERSWOODS_THOMAS, WanderersWoods_Text_Trainer_WanderersWoods_ThomasIntro, WanderersWoods_Text_Trainer_WanderersWoods_ThomasDefeat
-# 114 "data/maps/WanderersWoods/scripts.pory"
+# 136 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_Trainer_WanderersWoods_Thomas_Text_0
-# 115 "data/maps/WanderersWoods/scripts.pory"
+# 137 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_Trainer_WanderersWoods_Thomas_Text_1
-# 116 "data/maps/WanderersWoods/scripts.pory"
+# 138 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 117 "data/maps/WanderersWoods/scripts.pory"
+# 139 "data/maps/WanderersWoods/scripts.pory"
 	release
 	end
 
 
 WanderersWoods_EventScript_NPC_Man::
-# 131 "data/maps/WanderersWoods/scripts.pory"
-	lock
-# 132 "data/maps/WanderersWoods/scripts.pory"
-	faceplayer
-# 133 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_NPC_Man_Text_0
-# 134 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_NPC_Man_Text_1
-# 135 "data/maps/WanderersWoods/scripts.pory"
-	closemessage
-# 136 "data/maps/WanderersWoods/scripts.pory"
-	release
-	end
-
-
-WanderersWoods_EventScript_RaniaNPC::
-# 142 "data/maps/WanderersWoods/scripts.pory"
-	lock
-# 143 "data/maps/WanderersWoods/scripts.pory"
-	faceplayer
-# 144 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
-# 145 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_RaniaNPC_Text_1
-# 146 "data/maps/WanderersWoods/scripts.pory"
-	closemessage
-# 147 "data/maps/WanderersWoods/scripts.pory"
-	release
-	end
-
-
-WanderersWoods_EventScript_NikoNPC::
 # 153 "data/maps/WanderersWoods/scripts.pory"
 	lock
 # 154 "data/maps/WanderersWoods/scripts.pory"
 	faceplayer
 # 155 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_NikoNPC_Text_0
+	speakername WanderersWoods_EventScript_NPC_Man_Text_0
 # 156 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_NikoNPC_Text_1
+	msgbox WanderersWoods_EventScript_NPC_Man_Text_1
 # 157 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
 # 158 "data/maps/WanderersWoods/scripts.pory"
@@ -148,778 +159,810 @@ WanderersWoods_EventScript_NikoNPC::
 	end
 
 
-WanderersWoods_Trigger_ChimeraEvent::
-# 169 "data/maps/WanderersWoods/scripts.pory"
+WanderersWoods_EventScript_RaniaNPC::
+# 164 "data/maps/WanderersWoods/scripts.pory"
 	lock
-# 170 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, Common_Movement_WalkDown
-# 171 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 7, Common_Movement_WalkDown
-# 172 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 173 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 7, Common_Movement_WalkRight
-# 174 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 175 "data/maps/WanderersWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
-# 176 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 177 "data/maps/WanderersWoods/scripts.pory"
+# 165 "data/maps/WanderersWoods/scripts.pory"
+	faceplayer
+# 166 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
+# 167 "data/maps/WanderersWoods/scripts.pory"
+	msgbox WanderersWoods_EventScript_RaniaNPC_Text_1
+# 168 "data/maps/WanderersWoods/scripts.pory"
+	closemessage
+# 169 "data/maps/WanderersWoods/scripts.pory"
+	release
+	end
+
+
+WanderersWoods_EventScript_NikoNPC::
+# 175 "data/maps/WanderersWoods/scripts.pory"
+	lock
+# 176 "data/maps/WanderersWoods/scripts.pory"
+	faceplayer
+# 177 "data/maps/WanderersWoods/scripts.pory"
+	speakername WanderersWoods_EventScript_NikoNPC_Text_0
 # 178 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_Trigger_ChimeraEvent_Text_0
+	msgbox WanderersWoods_EventScript_NikoNPC_Text_1
 # 179 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
 # 180 "data/maps/WanderersWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
-# 181 "data/maps/WanderersWoods/scripts.pory"
+	release
+	end
+
+
+WanderersWoods_Trigger_ChimeraEvent::
+# 191 "data/maps/WanderersWoods/scripts.pory"
+	lock
+# 192 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 6, Common_Movement_WalkDown
+# 193 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 7, Common_Movement_WalkDown
+# 194 "data/maps/WanderersWoods/scripts.pory"
 	waitmovement 0
-# 182 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_NikoNPC_Text_0
-# 183 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_Trigger_ChimeraEvent_Text_1
-# 184 "data/maps/WanderersWoods/scripts.pory"
+# 195 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 7, Common_Movement_WalkRight
+# 196 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 197 "data/maps/WanderersWoods/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 198 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 199 "data/maps/WanderersWoods/scripts.pory"
+	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
+# 200 "data/maps/WanderersWoods/scripts.pory"
+	msgbox WanderersWoods_Trigger_ChimeraEvent_Text_0
+# 201 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 185 "data/maps/WanderersWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, WanderersWoods_Movement_PlayerLeadsToChimera
-# 186 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, WanderersWoods_Movement_RaniaFollowsToChimera
-# 187 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 7, WanderersWoods_Movement_NikoFollowsToChimera
-# 188 "data/maps/WanderersWoods/scripts.pory"
+# 202 "data/maps/WanderersWoods/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 203 "data/maps/WanderersWoods/scripts.pory"
 	waitmovement 0
-# 189 "data/maps/WanderersWoods/scripts.pory"
+# 204 "data/maps/WanderersWoods/scripts.pory"
+	speakername WanderersWoods_EventScript_NikoNPC_Text_0
+# 205 "data/maps/WanderersWoods/scripts.pory"
+	msgbox WanderersWoods_Trigger_ChimeraEvent_Text_1
+# 206 "data/maps/WanderersWoods/scripts.pory"
+	closemessage
+# 207 "data/maps/WanderersWoods/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, WanderersWoods_Movement_PlayerLeadsToChimera
+# 208 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 6, WanderersWoods_Movement_RaniaFollowsToChimera
+# 209 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 7, WanderersWoods_Movement_NikoFollowsToChimera
+# 210 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 211 "data/maps/WanderersWoods/scripts.pory"
 	goto WanderersWoods_EventScript_ChimeraEvent
 	end
 
 
 WanderersWoods_EventScript_ChimeraEvent::
-# 196 "data/maps/WanderersWoods/scripts.pory"
+# 218 "data/maps/WanderersWoods/scripts.pory"
 	delay 20
-# 197 "data/maps/WanderersWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
-# 198 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 7, Common_Movement_FaceDown
-# 199 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, Common_Movement_FaceDown
-# 200 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 201 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 7, Common_Movement_ExclamationMark
-# 202 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, Common_Movement_ExclamationMark
-# 203 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 204 "data/maps/WanderersWoods/scripts.pory"
-	delay 30
-# 207 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, Common_Movement_FaceLeft
-# 208 "data/maps/WanderersWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
-# 209 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 210 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
-# 211 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_0
-# 212 "data/maps/WanderersWoods/scripts.pory"
-	closemessage
-# 213 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, Common_Movement_FaceDown
-# 214 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 7, Common_Movement_FaceDown
-# 215 "data/maps/WanderersWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
-# 216 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
 # 219 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 8, Common_Movement_WalkUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 # 220 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
+	applymovement 7, Common_Movement_FaceDown
 # 221 "data/maps/WanderersWoods/scripts.pory"
-	delay 15
+	applymovement 6, Common_Movement_FaceDown
 # 222 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_ChimeraEvent_Text_1
+	waitmovement 0
 # 223 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_2
+	applymovement 7, Common_Movement_ExclamationMark
 # 224 "data/maps/WanderersWoods/scripts.pory"
-	closemessage
+	applymovement 6, Common_Movement_ExclamationMark
 # 225 "data/maps/WanderersWoods/scripts.pory"
-	delay 15
+	waitmovement 0
 # 226 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 9, Common_Movement_WalkUp2
-# 227 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 228 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_ChimeraEvent_Text_1
+	delay 30
 # 229 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_3
+	applymovement 6, Common_Movement_FaceLeft
 # 230 "data/maps/WanderersWoods/scripts.pory"
-	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 # 231 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, Common_Movement_ExclamationMark
+	waitmovement 0
 # 232 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
+	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
 # 233 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, Common_Movement_FaceRight
+	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_0
 # 234 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 235 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_ChimeraEvent_Text_4
-# 236 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_5
-# 237 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 240 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 11, Common_Movement_JumpInPlaceLeft
-# 241 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 12, Common_Movement_JumpInPlaceDown
-# 242 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 13, Common_Movement_JumpInPlaceLeft
-# 243 "data/maps/WanderersWoods/scripts.pory"
+# 235 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 6, Common_Movement_FaceDown
+# 236 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 7, Common_Movement_FaceDown
+# 237 "data/maps/WanderersWoods/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+# 238 "data/maps/WanderersWoods/scripts.pory"
 	waitmovement 0
+# 241 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 8, Common_Movement_WalkUp
+# 242 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 243 "data/maps/WanderersWoods/scripts.pory"
+	delay 15
 # 244 "data/maps/WanderersWoods/scripts.pory"
-	delay 20
+	speakername WanderersWoods_EventScript_ChimeraEvent_Text_1
 # 245 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, Common_Movement_ExclamationMark
+	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_2
 # 246 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 8, Common_Movement_FaceDown
+	closemessage
 # 247 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 9, Common_Movement_FaceDown
+	delay 15
 # 248 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, Common_Movement_FaceDown
+	applymovement 9, Common_Movement_WalkUp2
 # 249 "data/maps/WanderersWoods/scripts.pory"
 	waitmovement 0
 # 250 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 11, WanderersWoods_Movement_ShroomishEscape
+	speakername WanderersWoods_EventScript_ChimeraEvent_Text_1
 # 251 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 12, WanderersWoods_Movement_BlitzleEscape
+	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_3
 # 252 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 13, WanderersWoods_Movement_ImpidimpEscape
+	closemessage
 # 253 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
+	applymovement 10, Common_Movement_ExclamationMark
 # 254 "data/maps/WanderersWoods/scripts.pory"
-	delay 60
+	waitmovement 0
+# 255 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 10, Common_Movement_FaceRight
+# 256 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
 # 257 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 8, Common_Movement_FaceUp
-# 258 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 9, Common_Movement_FaceUp
-# 259 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, Common_Movement_FaceUp
-# 260 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_ChimeraEvent_Text_4
-# 261 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_6
+# 258 "data/maps/WanderersWoods/scripts.pory"
+	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_5
+# 259 "data/maps/WanderersWoods/scripts.pory"
+	closemessage
 # 262 "data/maps/WanderersWoods/scripts.pory"
-	closemessage
+	applymovement 11, Common_Movement_JumpInPlaceLeft
 # 263 "data/maps/WanderersWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	applymovement 12, Common_Movement_JumpInPlaceDown
 # 264 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
+	applymovement 13, Common_Movement_JumpInPlaceLeft
 # 265 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, Common_Movement_FaceLeft
-# 266 "data/maps/WanderersWoods/scripts.pory"
 	waitmovement 0
+# 266 "data/maps/WanderersWoods/scripts.pory"
+	delay 20
 # 267 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
+	applymovement 10, Common_Movement_ExclamationMark
 # 268 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_7
+	applymovement 8, Common_Movement_FaceDown
 # 269 "data/maps/WanderersWoods/scripts.pory"
-	closemessage
+	applymovement 9, Common_Movement_FaceDown
 # 270 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, Common_Movement_FaceDown
+	applymovement 10, Common_Movement_FaceDown
 # 271 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 7, Common_Movement_FaceDown
+	waitmovement 0
 # 272 "data/maps/WanderersWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	applymovement 11, WanderersWoods_Movement_ShroomishEscape
+# 273 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 12, WanderersWoods_Movement_BlitzleEscape
+# 274 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 13, WanderersWoods_Movement_ImpidimpEscape
 # 275 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 8, Common_Movement_WalkUp
+	waitmovement 0
 # 276 "data/maps/WanderersWoods/scripts.pory"
+	delay 60
+# 279 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 8, Common_Movement_FaceUp
+# 280 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 9, Common_Movement_FaceUp
+# 281 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 10, Common_Movement_FaceUp
+# 282 "data/maps/WanderersWoods/scripts.pory"
+	speakername WanderersWoods_EventScript_ChimeraEvent_Text_4
+# 283 "data/maps/WanderersWoods/scripts.pory"
+	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_6
+# 284 "data/maps/WanderersWoods/scripts.pory"
+	closemessage
+# 285 "data/maps/WanderersWoods/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 286 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 287 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 6, Common_Movement_FaceLeft
+# 288 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 289 "data/maps/WanderersWoods/scripts.pory"
+	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
+# 290 "data/maps/WanderersWoods/scripts.pory"
+	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_7
+# 291 "data/maps/WanderersWoods/scripts.pory"
+	closemessage
+# 292 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 6, Common_Movement_FaceDown
+# 293 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 7, Common_Movement_FaceDown
+# 294 "data/maps/WanderersWoods/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+# 297 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 8, Common_Movement_WalkUp
+# 298 "data/maps/WanderersWoods/scripts.pory"
 	applymovement 9, Common_Movement_WalkUp
-# 277 "data/maps/WanderersWoods/scripts.pory"
+# 299 "data/maps/WanderersWoods/scripts.pory"
 	applymovement 10, Common_Movement_WalkUp
-# 278 "data/maps/WanderersWoods/scripts.pory"
+# 300 "data/maps/WanderersWoods/scripts.pory"
 	compare VAR_DIFFICULTY, 0
 	goto_if_eq WanderersWoods_EventScript_ChimeraEvent_2
-# 284 "data/maps/WanderersWoods/scripts.pory"
+# 306 "data/maps/WanderersWoods/scripts.pory"
 	trainerbattle_no_intro TRAINER_WANDERERSWOODS_CHIMERA_ADMIN_HARD, WanderersWoods_Text_ChimeraAdminDefeated
 WanderersWoods_EventScript_ChimeraEvent_1:
-# 288 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, Common_Movement_QuestionMark
-# 289 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 290 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, Common_Movement_FaceLeft
-# 291 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 292 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 8, WanderersWoods_Movement_GruntEscapes1
-# 293 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 294 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 7, Common_Movement_WalkDown
-# 295 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 296 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_NikoNPC_Text_0
-# 297 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_8
-# 298 "data/maps/WanderersWoods/scripts.pory"
-	closemessage
-# 299 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 7, WanderersWoods_Movement_GruntEscapes1
-# 300 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 301 "data/maps/WanderersWoods/scripts.pory"
-	delay 20
-# 302 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, Common_Movement_ExclamationMark
-# 303 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 304 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, Common_Movement_FaceRight
-# 305 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 306 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 9, WanderersWoods_Movement_GruntEscapes2
-# 307 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
-# 308 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, Common_Movement_WalkDown
-# 309 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
 # 310 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
+	applymovement 10, Common_Movement_QuestionMark
 # 311 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_9
+	waitmovement 0
 # 312 "data/maps/WanderersWoods/scripts.pory"
-	closemessage
+	applymovement 10, Common_Movement_FaceLeft
 # 313 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, WanderersWoods_Movement_GruntEscapes2
+	waitmovement 0
 # 314 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
+	applymovement 8, WanderersWoods_Movement_GruntEscapes1
 # 315 "data/maps/WanderersWoods/scripts.pory"
-	delay 60
-# 318 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, Common_Movement_FaceUp
-# 319 "data/maps/WanderersWoods/scripts.pory"
 	waitmovement 0
+# 316 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 7, Common_Movement_WalkDown
+# 317 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 318 "data/maps/WanderersWoods/scripts.pory"
+	speakername WanderersWoods_EventScript_NikoNPC_Text_0
+# 319 "data/maps/WanderersWoods/scripts.pory"
+	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_8
 # 320 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_ChimeraEvent_Text_4
-# 321 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_10
-# 322 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
+# 321 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 7, WanderersWoods_Movement_GruntEscapes1
+# 322 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
 # 323 "data/maps/WanderersWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	delay 20
 # 324 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 10, WanderersWoods_Movement_AdminEscapes
+	applymovement 10, Common_Movement_ExclamationMark
 # 325 "data/maps/WanderersWoods/scripts.pory"
 	waitmovement 0
 # 326 "data/maps/WanderersWoods/scripts.pory"
-	delay 20
+	applymovement 10, Common_Movement_FaceRight
+# 327 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 328 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 9, WanderersWoods_Movement_GruntEscapes2
 # 329 "data/maps/WanderersWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+	waitmovement 0
 # 330 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
+	applymovement 6, Common_Movement_WalkDown
 # 331 "data/maps/WanderersWoods/scripts.pory"
-	speakername WanderersWoods_EventScript_ChimeraEvent_Text_11
+	waitmovement 0
 # 332 "data/maps/WanderersWoods/scripts.pory"
-	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_12
+	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
 # 333 "data/maps/WanderersWoods/scripts.pory"
-	closemessage
+	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_9
 # 334 "data/maps/WanderersWoods/scripts.pory"
-	delay 30
-# 335 "data/maps/WanderersWoods/scripts.pory"
-	message WanderersWoods_EventScript_ChimeraEvent_Text_13
-# 336 "data/maps/WanderersWoods/scripts.pory"
-	waitmessage
-# 337 "data/maps/WanderersWoods/scripts.pory"
-	multichoice 21, 8, MULTI_NIKO_OR_RANIA, TRUE
-# 338 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 339 "data/maps/WanderersWoods/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+# 335 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 6, WanderersWoods_Movement_GruntEscapes2
+# 336 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 337 "data/maps/WanderersWoods/scripts.pory"
+	delay 60
 # 340 "data/maps/WanderersWoods/scripts.pory"
-	delay 20
+	applymovement 10, Common_Movement_FaceUp
 # 341 "data/maps/WanderersWoods/scripts.pory"
-	addobject 7
+	waitmovement 0
 # 342 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 7, WanderersWoods_Movement_NikoReturns
+	speakername WanderersWoods_EventScript_ChimeraEvent_Text_4
 # 343 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
+	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_10
 # 344 "data/maps/WanderersWoods/scripts.pory"
-	addobject 6
+	closemessage
 # 345 "data/maps/WanderersWoods/scripts.pory"
-	applymovement 6, WanderersWoods_Movement_RaniaReturns
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 # 346 "data/maps/WanderersWoods/scripts.pory"
-	waitmovement 0
+	applymovement 10, WanderersWoods_Movement_AdminEscapes
 # 347 "data/maps/WanderersWoods/scripts.pory"
-	delay 10
+	waitmovement 0
 # 348 "data/maps/WanderersWoods/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
-# 349 "data/maps/WanderersWoods/scripts.pory"
-	delay 30
+	delay 20
+# 351 "data/maps/WanderersWoods/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 # 352 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 353 "data/maps/WanderersWoods/scripts.pory"
+	speakername WanderersWoods_EventScript_ChimeraEvent_Text_11
+# 354 "data/maps/WanderersWoods/scripts.pory"
+	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_12
+# 355 "data/maps/WanderersWoods/scripts.pory"
+	closemessage
+# 356 "data/maps/WanderersWoods/scripts.pory"
+	delay 30
+# 357 "data/maps/WanderersWoods/scripts.pory"
+	message WanderersWoods_EventScript_ChimeraEvent_Text_13
+# 358 "data/maps/WanderersWoods/scripts.pory"
+	waitmessage
+# 359 "data/maps/WanderersWoods/scripts.pory"
+	multichoice 21, 8, MULTI_NIKO_OR_RANIA, TRUE
+# 360 "data/maps/WanderersWoods/scripts.pory"
+	closemessage
+# 361 "data/maps/WanderersWoods/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 362 "data/maps/WanderersWoods/scripts.pory"
+	delay 20
+# 363 "data/maps/WanderersWoods/scripts.pory"
+	addobject 7
+# 364 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 7, WanderersWoods_Movement_NikoReturns
+# 365 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 366 "data/maps/WanderersWoods/scripts.pory"
+	addobject 6
+# 367 "data/maps/WanderersWoods/scripts.pory"
+	applymovement 6, WanderersWoods_Movement_RaniaReturns
+# 368 "data/maps/WanderersWoods/scripts.pory"
+	waitmovement 0
+# 369 "data/maps/WanderersWoods/scripts.pory"
+	delay 10
+# 370 "data/maps/WanderersWoods/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 371 "data/maps/WanderersWoods/scripts.pory"
+	delay 30
+# 374 "data/maps/WanderersWoods/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq WanderersWoods_EventScript_ChimeraEvent_6
-# 372 "data/maps/WanderersWoods/scripts.pory"
+# 394 "data/maps/WanderersWoods/scripts.pory"
 	applymovement 6, Common_Movement_FaceLeft
-# 373 "data/maps/WanderersWoods/scripts.pory"
+# 395 "data/maps/WanderersWoods/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
-# 374 "data/maps/WanderersWoods/scripts.pory"
+# 396 "data/maps/WanderersWoods/scripts.pory"
 	waitmovement 0
-# 375 "data/maps/WanderersWoods/scripts.pory"
+# 397 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
-# 376 "data/maps/WanderersWoods/scripts.pory"
+# 398 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_14
-# 377 "data/maps/WanderersWoods/scripts.pory"
+# 399 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 378 "data/maps/WanderersWoods/scripts.pory"
+# 400 "data/maps/WanderersWoods/scripts.pory"
 	giveegg SPECIES_COSMOG
-# 379 "data/maps/WanderersWoods/scripts.pory"
+# 401 "data/maps/WanderersWoods/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 380 "data/maps/WanderersWoods/scripts.pory"
+# 402 "data/maps/WanderersWoods/scripts.pory"
 	message WanderersWoods_EventScript_ChimeraEvent_Text_15
-# 381 "data/maps/WanderersWoods/scripts.pory"
+# 403 "data/maps/WanderersWoods/scripts.pory"
 	waitmessage
-# 382 "data/maps/WanderersWoods/scripts.pory"
+# 404 "data/maps/WanderersWoods/scripts.pory"
 	waitfanfare
-# 383 "data/maps/WanderersWoods/scripts.pory"
+# 405 "data/maps/WanderersWoods/scripts.pory"
 	delay 20
-# 384 "data/maps/WanderersWoods/scripts.pory"
+# 406 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_RaniaNPC_Text_0
-# 385 "data/maps/WanderersWoods/scripts.pory"
+# 407 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_17
-# 386 "data/maps/WanderersWoods/scripts.pory"
+# 408 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
 WanderersWoods_EventScript_ChimeraEvent_5:
-# 390 "data/maps/WanderersWoods/scripts.pory"
+# 412 "data/maps/WanderersWoods/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 391 "data/maps/WanderersWoods/scripts.pory"
+# 413 "data/maps/WanderersWoods/scripts.pory"
 	delay 30
-# 392 "data/maps/WanderersWoods/scripts.pory"
+# 414 "data/maps/WanderersWoods/scripts.pory"
 	setflag FLAG_BEAT_CHIMERA_WANDERING_WOODS
-# 393 "data/maps/WanderersWoods/scripts.pory"
+# 415 "data/maps/WanderersWoods/scripts.pory"
 	removeobject 6
-# 394 "data/maps/WanderersWoods/scripts.pory"
+# 416 "data/maps/WanderersWoods/scripts.pory"
 	removeobject 7
-# 395 "data/maps/WanderersWoods/scripts.pory"
+# 417 "data/maps/WanderersWoods/scripts.pory"
 	removeobject 8
-# 396 "data/maps/WanderersWoods/scripts.pory"
+# 418 "data/maps/WanderersWoods/scripts.pory"
 	removeobject 9
-# 397 "data/maps/WanderersWoods/scripts.pory"
+# 419 "data/maps/WanderersWoods/scripts.pory"
 	removeobject 10
-# 398 "data/maps/WanderersWoods/scripts.pory"
+# 420 "data/maps/WanderersWoods/scripts.pory"
 	removeobject 11
-# 399 "data/maps/WanderersWoods/scripts.pory"
+# 421 "data/maps/WanderersWoods/scripts.pory"
 	removeobject 12
-# 400 "data/maps/WanderersWoods/scripts.pory"
+# 422 "data/maps/WanderersWoods/scripts.pory"
 	removeobject 13
-# 401 "data/maps/WanderersWoods/scripts.pory"
+# 423 "data/maps/WanderersWoods/scripts.pory"
 	delay 30
-# 402 "data/maps/WanderersWoods/scripts.pory"
+# 424 "data/maps/WanderersWoods/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 403 "data/maps/WanderersWoods/scripts.pory"
+# 425 "data/maps/WanderersWoods/scripts.pory"
 	delay 30
-# 404 "data/maps/WanderersWoods/scripts.pory"
+# 426 "data/maps/WanderersWoods/scripts.pory"
 	setvar VAR_RANIA_STATE, 4
-# 405 "data/maps/WanderersWoods/scripts.pory"
+# 427 "data/maps/WanderersWoods/scripts.pory"
 	setvar VAR_NIKO_STATE, 5
-# 406 "data/maps/WanderersWoods/scripts.pory"
+# 428 "data/maps/WanderersWoods/scripts.pory"
 	releaseall
 	end
 
 WanderersWoods_EventScript_ChimeraEvent_2:
-# 280 "data/maps/WanderersWoods/scripts.pory"
+# 302 "data/maps/WanderersWoods/scripts.pory"
 	trainerbattle_no_intro TRAINER_WANDERERSWOODS_CHIMERA_ADMIN, WanderersWoods_Text_ChimeraAdminDefeated
 	goto WanderersWoods_EventScript_ChimeraEvent_1
 
 WanderersWoods_EventScript_ChimeraEvent_6:
-# 354 "data/maps/WanderersWoods/scripts.pory"
+# 376 "data/maps/WanderersWoods/scripts.pory"
 	applymovement 7, Common_Movement_FaceRight
-# 355 "data/maps/WanderersWoods/scripts.pory"
+# 377 "data/maps/WanderersWoods/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
-# 356 "data/maps/WanderersWoods/scripts.pory"
+# 378 "data/maps/WanderersWoods/scripts.pory"
 	waitmovement 0
-# 357 "data/maps/WanderersWoods/scripts.pory"
+# 379 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_NikoNPC_Text_0
-# 358 "data/maps/WanderersWoods/scripts.pory"
+# 380 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_14
-# 359 "data/maps/WanderersWoods/scripts.pory"
+# 381 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
-# 360 "data/maps/WanderersWoods/scripts.pory"
+# 382 "data/maps/WanderersWoods/scripts.pory"
 	giveegg SPECIES_ZYGARDE_CELL
-# 361 "data/maps/WanderersWoods/scripts.pory"
+# 383 "data/maps/WanderersWoods/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 362 "data/maps/WanderersWoods/scripts.pory"
+# 384 "data/maps/WanderersWoods/scripts.pory"
 	message WanderersWoods_EventScript_ChimeraEvent_Text_15
-# 363 "data/maps/WanderersWoods/scripts.pory"
+# 385 "data/maps/WanderersWoods/scripts.pory"
 	waitmessage
-# 364 "data/maps/WanderersWoods/scripts.pory"
+# 386 "data/maps/WanderersWoods/scripts.pory"
 	waitfanfare
-# 365 "data/maps/WanderersWoods/scripts.pory"
+# 387 "data/maps/WanderersWoods/scripts.pory"
 	delay 20
-# 366 "data/maps/WanderersWoods/scripts.pory"
+# 388 "data/maps/WanderersWoods/scripts.pory"
 	speakername WanderersWoods_EventScript_NikoNPC_Text_0
-# 367 "data/maps/WanderersWoods/scripts.pory"
+# 389 "data/maps/WanderersWoods/scripts.pory"
 	msgbox WanderersWoods_EventScript_ChimeraEvent_Text_16
-# 368 "data/maps/WanderersWoods/scripts.pory"
+# 390 "data/maps/WanderersWoods/scripts.pory"
 	closemessage
 	goto WanderersWoods_EventScript_ChimeraEvent_5
 
 
-# 410 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_PlayerLeadsToChimera:
-# 412 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 412 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 413 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 413 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 413 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 414 "data/maps/WanderersWoods/scripts.pory"
-	emote_question_mark
-# 415 "data/maps/WanderersWoods/scripts.pory"
-	delay_16
-# 416 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 416 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 417 "data/maps/WanderersWoods/scripts.pory"
-	step_end
-
-# 420 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_RaniaFollowsToChimera:
-# 422 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 423 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 423 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 424 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 424 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 425 "data/maps/WanderersWoods/scripts.pory"
-	delay_16
-# 426 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 426 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 427 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 428 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 429 "data/maps/WanderersWoods/scripts.pory"
-	step_end
-
 # 432 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_NikoFollowsToChimera:
+WanderersWoods_Movement_PlayerLeadsToChimera:
 # 434 "data/maps/WanderersWoods/scripts.pory"
-	walk_in_place_right
-# 435 "data/maps/WanderersWoods/scripts.pory"
+	walk_right
+# 434 "data/maps/WanderersWoods/scripts.pory"
 	walk_right
 # 435 "data/maps/WanderersWoods/scripts.pory"
-	walk_right
-# 436 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 435 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 435 "data/maps/WanderersWoods/scripts.pory"
 	walk_down
 # 436 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 436 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
+	emote_question_mark
 # 437 "data/maps/WanderersWoods/scripts.pory"
-	walk_down
-# 437 "data/maps/WanderersWoods/scripts.pory"
+	delay_16
+# 438 "data/maps/WanderersWoods/scripts.pory"
 	walk_down
 # 438 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 439 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 441 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_ShroomishEscape:
-# 443 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
+# 442 "data/maps/WanderersWoods/scripts.pory"
+WanderersWoods_Movement_RaniaFollowsToChimera:
 # 444 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_up
+	walk_down
 # 445 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
+	walk_right
 # 445 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 445 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 445 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 445 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 445 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 445 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
+	walk_right
 # 446 "data/maps/WanderersWoods/scripts.pory"
-	step_end
-
+	walk_down
+# 446 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 447 "data/maps/WanderersWoods/scripts.pory"
+	delay_16
+# 448 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 448 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
 # 449 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_BlitzleEscape:
+	walk_right
+# 450 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
 # 451 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 451 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 452 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 452 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 453 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 453 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
+	step_end
+
 # 454 "data/maps/WanderersWoods/scripts.pory"
-	step_end
-
+WanderersWoods_Movement_NikoFollowsToChimera:
+# 456 "data/maps/WanderersWoods/scripts.pory"
+	walk_in_place_right
 # 457 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_ImpidimpEscape:
+	walk_right
+# 457 "data/maps/WanderersWoods/scripts.pory"
+	walk_right
+# 458 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 458 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
+# 458 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
 # 459 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
+	walk_down
+# 459 "data/maps/WanderersWoods/scripts.pory"
+	walk_down
 # 460 "data/maps/WanderersWoods/scripts.pory"
+	step_end
+
+# 463 "data/maps/WanderersWoods/scripts.pory"
+WanderersWoods_Movement_ShroomishEscape:
+# 465 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
-# 460 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 461 "data/maps/WanderersWoods/scripts.pory"
+# 466 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_up
-# 462 "data/maps/WanderersWoods/scripts.pory"
+# 467 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
-# 462 "data/maps/WanderersWoods/scripts.pory"
+# 467 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
-# 462 "data/maps/WanderersWoods/scripts.pory"
+# 467 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
-# 463 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 463 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 463 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 463 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 464 "data/maps/WanderersWoods/scripts.pory"
+# 467 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 467 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 467 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 467 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 468 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 472 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_GruntEscapes1:
-# 474 "data/maps/WanderersWoods/scripts.pory"
+# 471 "data/maps/WanderersWoods/scripts.pory"
+WanderersWoods_Movement_BlitzleEscape:
+# 473 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 473 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
 # 474 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 475 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 474 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
 # 475 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 476 "data/maps/WanderersWoods/scripts.pory"
-	jump_down
-# 476 "data/maps/WanderersWoods/scripts.pory"
-	jump_down
-# 476 "data/maps/WanderersWoods/scripts.pory"
-	jump_down
-# 477 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
-# 477 "data/maps/WanderersWoods/scripts.pory"
+# 475 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
-# 477 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 478 "data/maps/WanderersWoods/scripts.pory"
+# 476 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
+# 479 "data/maps/WanderersWoods/scripts.pory"
+WanderersWoods_Movement_ImpidimpEscape:
 # 481 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_GruntEscapes2:
-# 483 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
+# 482 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 482 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
 # 483 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 483 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
+	walk_fast_up
 # 484 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
 # 484 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_left
+# 484 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 485 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 485 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
 # 485 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
 # 485 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
 # 486 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 487 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 487 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 488 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
-# 491 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_AdminEscapes:
-# 493 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 493 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 493 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 493 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 493 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
 # 494 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 494 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 494 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_left
-# 495 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 495 "data/maps/WanderersWoods/scripts.pory"
-	walk_fast_down
-# 495 "data/maps/WanderersWoods/scripts.pory"
+WanderersWoods_Movement_GruntEscapes1:
+# 496 "data/maps/WanderersWoods/scripts.pory"
 	walk_fast_down
 # 496 "data/maps/WanderersWoods/scripts.pory"
-	step_end
-
+	walk_fast_down
+# 497 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 497 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 498 "data/maps/WanderersWoods/scripts.pory"
+	jump_down
+# 498 "data/maps/WanderersWoods/scripts.pory"
+	jump_down
+# 498 "data/maps/WanderersWoods/scripts.pory"
+	jump_down
 # 499 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_NikoReturns:
-# 501 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 501 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 501 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 502 "data/maps/WanderersWoods/scripts.pory"
-	jump_up
-# 502 "data/maps/WanderersWoods/scripts.pory"
-	jump_up
-# 502 "data/maps/WanderersWoods/scripts.pory"
-	jump_up
-# 503 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_right
-# 503 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_right
-# 504 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 504 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 505 "data/maps/WanderersWoods/scripts.pory"
-	face_right
-# 506 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 499 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 499 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 500 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
+# 503 "data/maps/WanderersWoods/scripts.pory"
+WanderersWoods_Movement_GruntEscapes2:
+# 505 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 505 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 505 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 506 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 506 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 507 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 507 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 508 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
 # 509 "data/maps/WanderersWoods/scripts.pory"
-WanderersWoods_Movement_RaniaReturns:
-# 511 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 511 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 512 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_right
+	walk_fast_down
+# 509 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 510 "data/maps/WanderersWoods/scripts.pory"
+	step_end
+
 # 513 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 513 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
-# 514 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_right
-# 514 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_right
+WanderersWoods_Movement_AdminEscapes:
 # 515 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
+	walk_fast_down
 # 515 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
+	walk_fast_down
 # 515 "data/maps/WanderersWoods/scripts.pory"
-	walk_faster_up
+	walk_fast_down
+# 515 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 515 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
 # 516 "data/maps/WanderersWoods/scripts.pory"
-	face_left
+	walk_fast_left
+# 516 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
+# 516 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_left
 # 517 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 517 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 517 "data/maps/WanderersWoods/scripts.pory"
+	walk_fast_down
+# 518 "data/maps/WanderersWoods/scripts.pory"
+	step_end
+
+# 521 "data/maps/WanderersWoods/scripts.pory"
+WanderersWoods_Movement_NikoReturns:
+# 523 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 523 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 523 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 524 "data/maps/WanderersWoods/scripts.pory"
+	jump_up
+# 524 "data/maps/WanderersWoods/scripts.pory"
+	jump_up
+# 524 "data/maps/WanderersWoods/scripts.pory"
+	jump_up
+# 525 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_right
+# 525 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_right
+# 526 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 526 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 527 "data/maps/WanderersWoods/scripts.pory"
+	face_right
+# 528 "data/maps/WanderersWoods/scripts.pory"
+	step_end
+
+# 531 "data/maps/WanderersWoods/scripts.pory"
+WanderersWoods_Movement_RaniaReturns:
+# 533 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 533 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 534 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_right
+# 535 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 535 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 536 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_right
+# 536 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_right
+# 537 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 537 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 537 "data/maps/WanderersWoods/scripts.pory"
+	walk_faster_up
+# 538 "data/maps/WanderersWoods/scripts.pory"
+	face_left
+# 539 "data/maps/WanderersWoods/scripts.pory"
 	step_end
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Zander_Text_0:
-# 6 "data/maps/WanderersWoods/scripts.pory"
+# 28 "data/maps/WanderersWoods/scripts.pory"
 	.string "Zander$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Zander_Text_1:
-# 7 "data/maps/WanderersWoods/scripts.pory"
+# 29 "data/maps/WanderersWoods/scripts.pory"
 	.string "Apparently people get lost in here all\n"
 	.string "the time. I'm not letting Jusmail Town\l"
 	.string "out of my sight!$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Kallas_Text_0:
-# 24 "data/maps/WanderersWoods/scripts.pory"
+# 46 "data/maps/WanderersWoods/scripts.pory"
 	.string "Kallas$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Kallas_Text_1:
-# 25 "data/maps/WanderersWoods/scripts.pory"
+# 47 "data/maps/WanderersWoods/scripts.pory"
 	.string "These Grass-type Pokémon are weak to\n"
 	.string "my Flying-type moves.$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Martha_Text_0:
-# 42 "data/maps/WanderersWoods/scripts.pory"
+# 64 "data/maps/WanderersWoods/scripts.pory"
 	.string "Martha$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Martha_Text_1:
-# 43 "data/maps/WanderersWoods/scripts.pory"
+# 65 "data/maps/WanderersWoods/scripts.pory"
 	.string "There are rumors of Team Chimera\n"
 	.string "operating around here recently.$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Alexi_Text_0:
-# 60 "data/maps/WanderersWoods/scripts.pory"
+# 82 "data/maps/WanderersWoods/scripts.pory"
 	.string "Alexi$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Alexi_Text_1:
-# 61 "data/maps/WanderersWoods/scripts.pory"
+# 83 "data/maps/WanderersWoods/scripts.pory"
 	.string "How do people get through here,\n"
 	.string "anyway? Ugh.$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Ellie_Text_0:
-# 78 "data/maps/WanderersWoods/scripts.pory"
+# 100 "data/maps/WanderersWoods/scripts.pory"
 	.string "Ellie$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Ellie_Text_1:
-# 79 "data/maps/WanderersWoods/scripts.pory"
+# 101 "data/maps/WanderersWoods/scripts.pory"
 	.string "Some Pokémon only come out at night.\n"
 	.string "Maybe my music will bring out the\l"
 	.string "coolest Pokémon!$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Lydia_Text_0:
-# 96 "data/maps/WanderersWoods/scripts.pory"
+# 118 "data/maps/WanderersWoods/scripts.pory"
 	.string "Lydia$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Lydia_Text_1:
-# 97 "data/maps/WanderersWoods/scripts.pory"
+# 119 "data/maps/WanderersWoods/scripts.pory"
 	.string "Team Chimera was in the woods?! Their\n"
 	.string "treatment of Pokémon is known to be\l"
 	.string "terrible.$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Thomas_Text_0:
-# 114 "data/maps/WanderersWoods/scripts.pory"
+# 136 "data/maps/WanderersWoods/scripts.pory"
 	.string "Thomas$"
 
 WanderersWoods_EventScript_Trainer_WanderersWoods_Thomas_Text_1:
-# 115 "data/maps/WanderersWoods/scripts.pory"
+# 137 "data/maps/WanderersWoods/scripts.pory"
 	.string "Not all Ghost-type or Dark-type\n"
 	.string "Pokémon are actually evil! That's a\l"
 	.string "common misconception.$"
 
 WanderersWoods_EventScript_NPC_Man_Text_0:
-# 133 "data/maps/WanderersWoods/scripts.pory"
+# 155 "data/maps/WanderersWoods/scripts.pory"
 	.string "Man$"
 
 WanderersWoods_EventScript_NPC_Man_Text_1:
-# 134 "data/maps/WanderersWoods/scripts.pory"
+# 156 "data/maps/WanderersWoods/scripts.pory"
 	.string "I think I finally found the way out of\n"
 	.string "the woods! These red-orange plants are\l"
 	.string "a sure sign of Pythios Town.$"
 
 WanderersWoods_EventScript_RaniaNPC_Text_0:
-# 144 "data/maps/WanderersWoods/scripts.pory"
+# 166 "data/maps/WanderersWoods/scripts.pory"
 	.string "Rania$"
 
 WanderersWoods_EventScript_RaniaNPC_Text_1:
-# 145 "data/maps/WanderersWoods/scripts.pory"
+# 167 "data/maps/WanderersWoods/scripts.pory"
 	.string "{PLAYER}! Are you headed south to\n"
 	.string "Pythios Town too?\p"
 	.string "Niko and I are recording Pokémon\n"
@@ -928,11 +971,11 @@ WanderersWoods_EventScript_RaniaNPC_Text_1:
 	.string "Pokémon!$"
 
 WanderersWoods_EventScript_NikoNPC_Text_0:
-# 155 "data/maps/WanderersWoods/scripts.pory"
+# 177 "data/maps/WanderersWoods/scripts.pory"
 	.string "Niko$"
 
 WanderersWoods_EventScript_NikoNPC_Text_1:
-# 156 "data/maps/WanderersWoods/scripts.pory"
+# 178 "data/maps/WanderersWoods/scripts.pory"
 	.string "Yia sou, {PLAYER}! Pokémon behavior\n"
 	.string "is so interesting, eh?\p"
 	.string "Rania and I are getting some data and\n"
@@ -941,18 +984,18 @@ WanderersWoods_EventScript_NikoNPC_Text_1:
 	.string "Town!$"
 
 WanderersWoods_Trigger_ChimeraEvent_Text_0:
-# 178 "data/maps/WanderersWoods/scripts.pory"
+# 200 "data/maps/WanderersWoods/scripts.pory"
 	.string "Headed down to Pythios Town? We'll come\n"
 	.string "with you!$"
 
 WanderersWoods_Trigger_ChimeraEvent_Text_1:
-# 183 "data/maps/WanderersWoods/scripts.pory"
+# 205 "data/maps/WanderersWoods/scripts.pory"
 	.string "There are reports of Ghost-type and\n"
 	.string "Psychic-type Pokémon there. Maybe we\l"
 	.string "can record some new species!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_0:
-# 211 "data/maps/WanderersWoods/scripts.pory"
+# 233 "data/maps/WanderersWoods/scripts.pory"
 	.string "Those are Team Chimera thugs!\n"
 	.string "Remember, that group who attacked the\l"
 	.string "Pokédex shipment when you get here,\l"
@@ -960,53 +1003,53 @@ WanderersWoods_EventScript_ChimeraEvent_Text_0:
 	.string "those poor Pokémon?!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_1:
-# 222 "data/maps/WanderersWoods/scripts.pory"
+# 244 "data/maps/WanderersWoods/scripts.pory"
 	.string "Chimera Grunt$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_2:
-# 223 "data/maps/WanderersWoods/scripts.pory"
+# 245 "data/maps/WanderersWoods/scripts.pory"
 	.string "Argh, nothin' like spectators to ruin a\n"
 	.string "perfectly good plan. Stay out of our\l"
 	.string "business!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_3:
-# 229 "data/maps/WanderersWoods/scripts.pory"
+# 251 "data/maps/WanderersWoods/scripts.pory"
 	.string "Yeah, this doesn't concern you! The\n"
 	.string "Boss is lookin' for new Pokémon for our\l"
 	.string "ar-$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_4:
-# 235 "data/maps/WanderersWoods/scripts.pory"
+# 257 "data/maps/WanderersWoods/scripts.pory"
 	.string "Chimera Admin$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_5:
-# 236 "data/maps/WanderersWoods/scripts.pory"
+# 258 "data/maps/WanderersWoods/scripts.pory"
 	.string "Shut it, Grunt! Do you wanna give away\n"
 	.string "all our plans?!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_6:
-# 261 "data/maps/WanderersWoods/scripts.pory"
+# 283 "data/maps/WanderersWoods/scripts.pory"
 	.string "No! Our Pokémon got away! This is your\n"
 	.string "fault... you have to pay! Grunts, let's\l"
 	.string "get 'em!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_7:
-# 268 "data/maps/WanderersWoods/scripts.pory"
+# 290 "data/maps/WanderersWoods/scripts.pory"
 	.string "We'll help you fight them, {PLAYER}!\n"
 	.string "These thugs can't get away with\l"
 	.string "treating Pokémon like that!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_8:
-# 297 "data/maps/WanderersWoods/scripts.pory"
+# 319 "data/maps/WanderersWoods/scripts.pory"
 	.string "Hold it! You're not getting away!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_9:
-# 311 "data/maps/WanderersWoods/scripts.pory"
+# 333 "data/maps/WanderersWoods/scripts.pory"
 	.string "{PLAYER}, you stay here and watch\n"
 	.string "this one. I'm going after them!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_10:
-# 321 "data/maps/WanderersWoods/scripts.pory"
+# 343 "data/maps/WanderersWoods/scripts.pory"
 	.string "I can't believe they just ran off like\n"
 	.string "that! So much for loyalty.\p"
 	.string "First we failed to take the Pokédex\n"
@@ -1017,20 +1060,20 @@ WanderersWoods_EventScript_ChimeraEvent_Text_10:
 	.string "you!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_11:
-# 331 "data/maps/WanderersWoods/scripts.pory"
+# 353 "data/maps/WanderersWoods/scripts.pory"
 	.string "???$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_12:
-# 332 "data/maps/WanderersWoods/scripts.pory"
+# 354 "data/maps/WanderersWoods/scripts.pory"
 	.string "WHAT'S THIS?!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_13:
-# 335 "data/maps/WanderersWoods/scripts.pory"
+# 357 "data/maps/WanderersWoods/scripts.pory"
 	.string "One of your friends shouted in the\n"
 	.string "distance. Who was it?$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_14:
-# 358 "data/maps/WanderersWoods/scripts.pory"
+# 380 "data/maps/WanderersWoods/scripts.pory"
 	.string "Team Chimera got away from us, but look\n"
 	.string "what one of them dropped! It's a\l"
 	.string "{COLOR GREEN}Pokémon Egg like I've never seen\l"
@@ -1039,11 +1082,11 @@ WanderersWoods_EventScript_ChimeraEvent_Text_14:
 	.string "Pokémon Eggs aren't my specialty.$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_15:
-# 362 "data/maps/WanderersWoods/scripts.pory"
+# 384 "data/maps/WanderersWoods/scripts.pory"
 	.string "{PLAYER} received a {COLOR GREEN}Rare Egg{COLOR DARK_GRAY}!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_16:
-# 367 "data/maps/WanderersWoods/scripts.pory"
+# 389 "data/maps/WanderersWoods/scripts.pory"
 	.string "Carry that Egg around until it hatches.\n"
 	.string "Who knows, maybe it's a new species of\l"
 	.string "Pokémon!\p"
@@ -1052,7 +1095,7 @@ WanderersWoods_EventScript_ChimeraEvent_Text_16:
 	.string "Pythios Town is worth a visit!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_17:
-# 385 "data/maps/WanderersWoods/scripts.pory"
+# 407 "data/maps/WanderersWoods/scripts.pory"
 	.string "Carry that Egg around until it hatches.\n"
 	.string "Who knows, maybe it's a new species of\l"
 	.string "Pokémon!\p"
@@ -1061,72 +1104,72 @@ WanderersWoods_EventScript_ChimeraEvent_Text_17:
 	.string "Pythios Town is worth a visit!$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_ZanderIntro::
-# 12 "data/maps/WanderersWoods/scripts.pory"
+# 34 "data/maps/WanderersWoods/scripts.pory"
 	.string "I came here for Toedscool because it's\n"
 	.string "funny, but some of these Pokémon are\l"
 	.string "so scary!$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_ZanderDefeat::
-# 16 "data/maps/WanderersWoods/scripts.pory"
+# 38 "data/maps/WanderersWoods/scripts.pory"
 	.string "Eek! I thought I saw a Ghost Pokémon!$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_KallasIntro::
-# 30 "data/maps/WanderersWoods/scripts.pory"
+# 52 "data/maps/WanderersWoods/scripts.pory"
 	.string "My Bird Pokémon and I come here to\n"
 	.string "train! I'll let you help us out.$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_KallasDefeat::
-# 34 "data/maps/WanderersWoods/scripts.pory"
+# 56 "data/maps/WanderersWoods/scripts.pory"
 	.string "My little birds!$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_MarthaIntro::
-# 48 "data/maps/WanderersWoods/scripts.pory"
+# 70 "data/maps/WanderersWoods/scripts.pory"
 	.string "I hear some shouting up ahead. I'll stay\n"
 	.string "away from there.$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_MarthaDefeat::
-# 52 "data/maps/WanderersWoods/scripts.pory"
+# 74 "data/maps/WanderersWoods/scripts.pory"
 	.string "I hope it's not Team Chimera...!$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_AlexiIntro::
-# 66 "data/maps/WanderersWoods/scripts.pory"
+# 88 "data/maps/WanderersWoods/scripts.pory"
 	.string "I've got a job down in Pythios Town, but\n"
 	.string "now I'm lost!$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_AlexiDefeat::
-# 70 "data/maps/WanderersWoods/scripts.pory"
+# 92 "data/maps/WanderersWoods/scripts.pory"
 	.string "Argh, I'm gonna be late!$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_EllieIntro::
-# 84 "data/maps/WanderersWoods/scripts.pory"
+# 106 "data/maps/WanderersWoods/scripts.pory"
 	.string "I hear wild Impidimp only come out at\n"
 	.string "night. So rad!$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_EllieDefeat::
-# 88 "data/maps/WanderersWoods/scripts.pory"
+# 110 "data/maps/WanderersWoods/scripts.pory"
 	.string "Well that's not rad at all!$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_LydiaIntro::
-# 102 "data/maps/WanderersWoods/scripts.pory"
+# 124 "data/maps/WanderersWoods/scripts.pory"
 	.string "Some Pokémon just scampered through\n"
 	.string "here, like they were running from\l"
 	.string "something. I wonder what happened?$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_LydiaDefeat::
-# 106 "data/maps/WanderersWoods/scripts.pory"
+# 128 "data/maps/WanderersWoods/scripts.pory"
 	.string "Maybe I should've caught one.$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_ThomasIntro::
-# 120 "data/maps/WanderersWoods/scripts.pory"
+# 142 "data/maps/WanderersWoods/scripts.pory"
 	.string "Pythios Town has a strange aura around\n"
 	.string "it, that must be why the plants turn\l"
 	.string "orange here.$"
 
 WanderersWoods_Text_Trainer_WanderersWoods_ThomasDefeat::
-# 124 "data/maps/WanderersWoods/scripts.pory"
+# 146 "data/maps/WanderersWoods/scripts.pory"
 	.string "I bet it's all the Ghost-type Pokémon.$"
 
 WanderersWoods_Text_ChimeraAdminDefeated::
-# 467 "data/maps/WanderersWoods/scripts.pory"
+# 489 "data/maps/WanderersWoods/scripts.pory"
 	.string "Beaten and stopped... the Boss won't\n"
 	.string "take this.$"

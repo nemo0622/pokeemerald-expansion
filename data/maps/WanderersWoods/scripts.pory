@@ -1,4 +1,26 @@
-mapscripts WanderersWoods_MapScripts {}
+mapscripts WanderersWoods_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(22, ENCOUNTER_LAND)
+        setobjectaswildencounter(23, ENCOUNTER_LAND)
+        setobjectaswildencounter(24, ENCOUNTER_LAND)
+        setobjectaswildencounter(25, ENCOUNTER_LAND)
+        setobjectaswildencounter(26, ENCOUNTER_LAND)
+        setobjectaswildencounter(27, ENCOUNTER_LAND)
+        setobjectaswildencounter(28, ENCOUNTER_LAND)
+    }
+}
 
 script WanderersWoods_EventScript_Trainer_WanderersWoods_Zander
 {

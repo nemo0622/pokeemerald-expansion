@@ -1247,19 +1247,19 @@
 #define FLAG_MET_BARDAS_PYTHIOS_TOWN                                0x4AC // spoke to bardas before
 #define FLAG_HELPED_BARDAS_PYTHIOS_TOWN                             0x4AD // did the help task for bardas after 3rd gym badge
 #define FLAG_GOT_BADGE_FOR_BARDAS                                   0x4AE // flag used in bardas pythios town event
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
-#define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
-#define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
-#define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
-#define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
-#define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag
-#define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag
-#define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
-#define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
-#define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1                        0x4AF // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2                        0x4B0 // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3                        0x4B1 // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4                        0x4B2 // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5                        0x4B3 // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6                        0x4B4 // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7                        0x4B5 // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8                        0x4B6 // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9                        0x4B7 // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10                       0x4B8 // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11                       0x4B9 // Used to hide overworld mons
+#define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12                       0x4BA // Used to hide overworld mons
+#define FLAG_DOING_OVERWORLD_ENCOUNTER                              0x4BB // Flag telling game to remove overworld mon object after battle
 #define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag

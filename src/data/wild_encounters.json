@@ -11570,7 +11570,7 @@
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_SENTRET"
+                "species": "SPECIES_LILLIPUP"
               },
               {
                 "min_level": 2,
@@ -11639,7 +11639,7 @@
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_SENTRET"
+                "species": "SPECIES_LILLIPUP"
               },
               {
                 "min_level": 2,
@@ -11728,7 +11728,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_FLABEBE"
+                "species": "SPECIES_FOMANTIS"
               },
               {
                 "min_level": 4,
