@@ -73,7 +73,7 @@
       "flag": "FLAG_RECEIVED_HM_FLASH"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CHIMERA_MEMBER_DUSKNOIR",
+      "graphics_id": "OBJ_EVENT_GFX_CHIMERA_ADMIN_M",
       "x": 15,
       "y": 22,
       "elevation": 0,
@@ -86,7 +86,7 @@
       "flag": "FLAG_RECEIVED_HM_FLASH"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CHIMERA_MEMBER_KECLEON",
+      "graphics_id": "OBJ_EVENT_GFX_CHIMERA_MEMBER_M",
       "x": 14,
       "y": 24,
       "elevation": 0,
@@ -99,7 +99,7 @@
       "flag": "FLAG_RECEIVED_HM_FLASH"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CHIMERA_MEMBER_SANDSLASH",
+      "graphics_id": "OBJ_EVENT_GFX_CHIMERA_MEMBER_F",
       "x": 17,
       "y": 25,
       "elevation": 0,

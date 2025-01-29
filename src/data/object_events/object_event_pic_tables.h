@@ -1378,10 +1378,10 @@ static const struct SpriteFrameImage sPicTable_Bardas[] = {
     overworld_ascending_frames(gObjectEventPic_Bardas, 2, 4),
 };
 
-static const struct SpriteFrameImage sPicTable_Chimera_Member_Dusknoir[] = {
-    overworld_ascending_frames(gObjectEventPic_Chimera_Member_Dusknoir, 2, 4),
+static const struct SpriteFrameImage sPicTable_Chimera_Admin_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Chimera_Admin_M, 2, 4),
 };
 
-static const struct SpriteFrameImage sPicTable_Chimera_Member_Walrein[] = {
-    overworld_ascending_frames(gObjectEventPic_Chimera_Member_Walrein, 2, 4),
+static const struct SpriteFrameImage sPicTable_Chimera_Admin_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Chimera_Admin_F, 2, 4),
 };

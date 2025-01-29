@@ -118,8 +118,8 @@
 #define OBJ_EVENT_GFX_CABLE_CAR                  114
 #define OBJ_EVENT_GFX_SCIENTIST_2                115
 #define OBJ_EVENT_GFX_CONSTRUCTION_WORKER        116 // replaces uhhhh something else idk
-#define OBJ_EVENT_GFX_CHIMERA_MEMBER_KECLEON     117 // replaces AQUA_MEMBER_M
-#define OBJ_EVENT_GFX_CHIMERA_MEMBER_SANDSLASH   118 // replaces AQUA_MEMBER_F
+#define OBJ_EVENT_GFX_CHIMERA_MEMBER_M     117 // replaces AQUA_MEMBER_M
+#define OBJ_EVENT_GFX_CHIMERA_MEMBER_F   118 // replaces AQUA_MEMBER_F
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_M             119
 #define OBJ_EVENT_GFX_MAGMA_MEMBER_F             120
 #define OBJ_EVENT_GFX_SIDNEY                     121
@@ -248,8 +248,8 @@
 #define OBJ_EVENT_GFX_OFFICER                    243
 #define OBJ_EVENT_GFX_DIVER                      244
 #define OBJ_EVENT_GFX_BARDAS                     245
-#define OBJ_EVENT_GFX_CHIMERA_MEMBER_DUSKNOIR    246
-#define OBJ_EVENT_GFX_CHIMERA_MEMBER_WALREIN     247
+#define OBJ_EVENT_GFX_CHIMERA_ADMIN_M    246
+#define OBJ_EVENT_GFX_CHIMERA_ADMIN_F     247
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit

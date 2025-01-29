@@ -254,8 +254,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Punk_Rocker
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Officer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diver;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bardas;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Member_Dusknoir;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Member_Walrein;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Admin_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Admin_F;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -375,8 +375,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CABLE_CAR] =                &gObjectEventGraphicsInfo_CableCar,
     [OBJ_EVENT_GFX_SCIENTIST_2] =              &gObjectEventGraphicsInfo_Scientist2,
     [OBJ_EVENT_GFX_CONSTRUCTION_WORKER] =           &gObjectEventGraphicsInfo_DevonEmployee,
-    [OBJ_EVENT_GFX_CHIMERA_MEMBER_KECLEON] =            &gObjectEventGraphicsInfo_AquaMemberM,
-    [OBJ_EVENT_GFX_CHIMERA_MEMBER_SANDSLASH] =            &gObjectEventGraphicsInfo_AquaMemberF,
+    [OBJ_EVENT_GFX_CHIMERA_MEMBER_M] =            &gObjectEventGraphicsInfo_AquaMemberM,
+    [OBJ_EVENT_GFX_CHIMERA_MEMBER_F] =            &gObjectEventGraphicsInfo_AquaMemberF,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_M] =           &gObjectEventGraphicsInfo_MagmaMemberM,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_F] =           &gObjectEventGraphicsInfo_MagmaMemberF,
     [OBJ_EVENT_GFX_SIDNEY] =                   &gObjectEventGraphicsInfo_Sidney,
@@ -505,8 +505,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_OFFICER] =                  &gObjectEventGraphicsInfo_Officer,
     [OBJ_EVENT_GFX_DIVER] =                    &gObjectEventGraphicsInfo_Diver,
     [OBJ_EVENT_GFX_BARDAS] =                   &gObjectEventGraphicsInfo_Bardas,
-    [OBJ_EVENT_GFX_CHIMERA_MEMBER_DUSKNOIR] =  &gObjectEventGraphicsInfo_Chimera_Member_Dusknoir,
-    [OBJ_EVENT_GFX_CHIMERA_MEMBER_WALREIN] =  &gObjectEventGraphicsInfo_Chimera_Member_Walrein,
+    [OBJ_EVENT_GFX_CHIMERA_ADMIN_M] =  &gObjectEventGraphicsInfo_Chimera_Admin_M,
+    [OBJ_EVENT_GFX_CHIMERA_ADMIN_F] =  &gObjectEventGraphicsInfo_Chimera_Admin_F,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
