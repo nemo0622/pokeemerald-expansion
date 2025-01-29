@@ -16,7 +16,7 @@
 const struct Tileset gTileset_General =
 {
     .isCompressed = TRUE,
-    .swapPalettes = SWAP_PAL(4),
+    // .swapPalettes = SWAP_PAL(4),
     .isSecondary = FALSE,
     .tiles = gTilesetTiles_General,
     .palettes = gTilesetPalettes_General,

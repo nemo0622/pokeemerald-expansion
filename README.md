@@ -44,8 +44,8 @@ MAJOR TODOS:
     - Consider Surfable Pokémon (https://github.com/grunt-lucas/pokeemerald-expansion/commits/surfable/)
     - Implement Biv's Fishing Minigame
         - Maybe also that upgrade-able fishing rod thing?
+        - Wait until treasure catching is implemented because that's so cool!
     - Continue implementing GBC sprites of Pokémon
-    - Create Sabella GBC battle sprite (replaces Roxanne sprite)
     - Rework Team Chimera to resemble the Cult of Kosmos
     - Finalize and Pretty-up the region map
         - Also test Town Map item (no PokéNav!)
@@ -115,7 +115,6 @@ GREEK PHRASES AND STUFF:
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
 - When all Pokédex flags set, Caught Pokémon icon in battle appears twice
-- Zygarde-10 bugged in pokedex
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
