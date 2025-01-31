@@ -41,12 +41,13 @@ MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
     - "Bardas the Sailor" - unique, old sailor first met in Pythios Town
         - Allows fast-travel to other, visited coastal locations
+        - RENAME "BARDAS" TO "PIRAEUS"
+            - named after a port in Athens
     - Consider Surfable Pokémon (https://github.com/grunt-lucas/pokeemerald-expansion/commits/surfable/)
     - Implement Biv's Fishing Minigame
         - Maybe also that upgrade-able fishing rod thing?
         - Wait until treasure catching is implemented because that's so cool!
     - Continue implementing GBC sprites of Pokémon
-    - Rework Team Chimera to resemble the Cult of Kosmos
     - Finalize and Pretty-up the region map
         - Also test Town Map item (no PokéNav!)
 - Work on ideas from note on phone
