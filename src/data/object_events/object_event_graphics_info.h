@@ -4750,7 +4750,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diver = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bardas = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PIRAEUS = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -4765,7 +4765,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bardas = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Bardas,
+    .images = sPicTable_PIRAEUS,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 

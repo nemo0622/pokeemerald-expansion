@@ -253,7 +253,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Performer_M
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Punk_Rocker;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Officer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diver;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bardas;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PIRAEUS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Admin_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Admin_F;
 
@@ -504,7 +504,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PUNK_ROCKER] =              &gObjectEventGraphicsInfo_Punk_Rocker,
     [OBJ_EVENT_GFX_OFFICER] =                  &gObjectEventGraphicsInfo_Officer,
     [OBJ_EVENT_GFX_DIVER] =                    &gObjectEventGraphicsInfo_Diver,
-    [OBJ_EVENT_GFX_BARDAS] =                   &gObjectEventGraphicsInfo_Bardas,
+    [OBJ_EVENT_GFX_PIRAEUS] =                   &gObjectEventGraphicsInfo_PIRAEUS,
     [OBJ_EVENT_GFX_CHIMERA_ADMIN_M] =  &gObjectEventGraphicsInfo_Chimera_Admin_M,
     [OBJ_EVENT_GFX_CHIMERA_ADMIN_F] =  &gObjectEventGraphicsInfo_Chimera_Admin_F,
 };

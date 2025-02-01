@@ -394,7 +394,7 @@ const u32 gObjectEventPic_Performer_M[] = INCBIN_U32("graphics/object_events/pic
 const u32 gObjectEventPic_Punk_Rocker[] = INCBIN_U32("graphics/object_events/pics/people/punk_rocker.4bpp");
 const u32 gObjectEventPic_Officer[] = INCBIN_U32("graphics/object_events/pics/people/officer.4bpp");
 const u32 gObjectEventPic_Diver[] = INCBIN_U32("graphics/object_events/pics/people/diver.4bpp");
-const u32 gObjectEventPic_Bardas[] = INCBIN_U32("graphics/object_events/pics/people/bardas.4bpp");
+const u32 gObjectEventPic_PIRAEUS[] = INCBIN_U32("graphics/object_events/pics/people/piraeus.4bpp");
 const u32 gObjectEventPic_Chimera_Admin_M[] = INCBIN_U32("graphics/object_events/pics/people/team_chimera/chimera_admin_m.4bpp");
 const u32 gObjectEventPic_Chimera_Admin_F[] = INCBIN_U32("graphics/object_events/pics/people/team_chimera/chimera_admin_f.4bpp");
 

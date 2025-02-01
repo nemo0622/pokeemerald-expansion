@@ -247,7 +247,7 @@
 #define OBJ_EVENT_GFX_PUNK_ROCKER                242
 #define OBJ_EVENT_GFX_OFFICER                    243
 #define OBJ_EVENT_GFX_DIVER                      244
-#define OBJ_EVENT_GFX_BARDAS                     245
+#define OBJ_EVENT_GFX_PIRAEUS                     245
 #define OBJ_EVENT_GFX_CHIMERA_ADMIN_M    246
 #define OBJ_EVENT_GFX_CHIMERA_ADMIN_F     247
 

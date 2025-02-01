@@ -62,7 +62,7 @@ ErinysPath_East_EventScript_ChimeraWalrein::
 # 39 "data/maps/ErinysPath_East/scripts.pory"
 	closemessage
 # 40 "data/maps/ErinysPath_East/scripts.pory"
-	goto_if_set FLAG_GOT_BADGE_FOR_BARDAS, ErinysPath_East_EventScript_ChimeraWalrein_2
+	goto_if_set FLAG_GOT_BADGE_FOR_PIRAEUS, ErinysPath_East_EventScript_ChimeraWalrein_2
 ErinysPath_East_EventScript_ChimeraWalrein_1:
 # 96 "data/maps/ErinysPath_East/scripts.pory"
 	releaseall
@@ -118,7 +118,7 @@ ErinysPath_East_EventScript_ChimeraWalrein_4:
 # 72 "data/maps/ErinysPath_East/scripts.pory"
 	delay 30
 # 74 "data/maps/ErinysPath_East/scripts.pory"
-	applymovement 4, ErinysPath_East_Movement_BardasApproach
+	applymovement 4, ErinysPath_East_Movement_PIRAEUSApproach
 # 75 "data/maps/ErinysPath_East/scripts.pory"
 	waitmovement 0
 # 76 "data/maps/ErinysPath_East/scripts.pory"
@@ -128,7 +128,7 @@ ErinysPath_East_EventScript_ChimeraWalrein_4:
 # 78 "data/maps/ErinysPath_East/scripts.pory"
 	closemessage
 # 79 "data/maps/ErinysPath_East/scripts.pory"
-	applymovement 4, ErinysPath_East_Movement_BardasExit
+	applymovement 4, ErinysPath_East_Movement_PIRAEUSExit
 # 80 "data/maps/ErinysPath_East/scripts.pory"
 	delay 30
 # 82 "data/maps/ErinysPath_East/scripts.pory"
@@ -154,7 +154,7 @@ ErinysPath_East_EventScript_ChimeraWalrein_4:
 # 93 "data/maps/ErinysPath_East/scripts.pory"
 	closemessage
 # 94 "data/maps/ErinysPath_East/scripts.pory"
-	setflag FLAG_HELPED_BARDAS_PYTHIOS_TOWN
+	setflag FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN
 	goto ErinysPath_East_EventScript_ChimeraWalrein_1
 
 ErinysPath_East_EventScript_ChimeraWalrein_5:
@@ -237,7 +237,7 @@ ErinysPath_East_Movement_ChimeraAdminFlee:
 	step_end
 
 # 127 "data/maps/ErinysPath_East/scripts.pory"
-ErinysPath_East_Movement_BardasApproach:
+ErinysPath_East_Movement_PIRAEUSApproach:
 # 129 "data/maps/ErinysPath_East/scripts.pory"
 	walk_up
 # 129 "data/maps/ErinysPath_East/scripts.pory"
@@ -260,7 +260,7 @@ ErinysPath_East_Movement_BardasApproach:
 	step_end
 
 # 134 "data/maps/ErinysPath_East/scripts.pory"
-ErinysPath_East_Movement_BardasExit:
+ErinysPath_East_Movement_PIRAEUSExit:
 # 136 "data/maps/ErinysPath_East/scripts.pory"
 	walk_down
 # 137 "data/maps/ErinysPath_East/scripts.pory"
@@ -304,23 +304,23 @@ ErinysPath_East_EventScript_ChimeraWalrein_Text_2:
 # 47 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Hold it right there... I've been scouting\n"
 	.string "around Pythios Town, and I think I saw\l"
-	.string "you hanging around that Bardas guy!\l"
+	.string "you hanging around that PIRAEUS guy!\l"
 	.string "That fool wouldn't donate his ratty\l"
 	.string "little boat to our cause, then took a\l"
 	.string "Team Chimera member by surprise!\p"
 	.string "I'll destroy you, then I'll take down\n"
-	.string "Bardas!$"
+	.string "PIRAEUS!$"
 
 ErinysPath_East_EventScript_ChimeraWalrein_Text_3:
 # 67 "data/maps/ErinysPath_East/scripts.pory"
 	.string "...Well, so much for team loyalty.\p"
-	.string "Looks like you and Bardas are winning\n"
+	.string "Looks like you and PIRAEUS are winning\n"
 	.string "for now. Mark my words, Team Chimera will\l"
 	.string "make you pay for this humiliation!$"
 
 ErinysPath_East_EventScript_ChimeraWalrein_Text_4:
 # 76 "data/maps/ErinysPath_East/scripts.pory"
-	.string "Bardas$"
+	.string "PIRAEUS$"
 
 ErinysPath_East_EventScript_ChimeraWalrein_Text_5:
 # 77 "data/maps/ErinysPath_East/scripts.pory"
@@ -339,15 +339,15 @@ ErinysPath_East_EventScript_ChimeraWalrein_Text_5:
 
 ErinysPath_East_EventScript_ChimeraWalrein_Text_6:
 # 92 "data/maps/ErinysPath_East/scripts.pory"
-	.string "You can now travel with {COLOR GREEN}Bardas{COLOR DARK_GRAY} on his\n"
+	.string "You can now travel with {COLOR GREEN}PIRAEUS{COLOR DARK_GRAY} on his\n"
 	.string "ship, {COLOR GREEN}The Delphis{COLOR DARK_GRAY}!\p"
 	.string "Some areas can only be reached via\n"
-	.string "sailing with Bardas, unlocked based on\l"
+	.string "sailing with PIRAEUS, unlocked based on\l"
 	.string "{COLOR GREEN}Gym Badges{COLOR DARK_GRAY}. Sailing to a location is only\l"
 	.string "unlocked {COLOR GREEN}after visiting it{COLOR DARK_GRAY} if accessible\l"
 	.string "by Surf or walking.$"
 
 ErinysPath_East_Text_ChimeraAdminDefeated::
 # 100 "data/maps/ErinysPath_East/scripts.pory"
-	.string "First Bardas, then you... Team Chimera is\n"
-	.string "having real problems recently.$"
+	.string "First PIRAEUS, then you... Team Chimera\n"
+	.string "is having real problems recently.$"

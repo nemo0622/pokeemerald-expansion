@@ -9,15 +9,15 @@ script TheDelphis_EventScript_CabinSign
     end
 }
 
-script TheDelphis_EventScript_Bardas
+script TheDelphis_EventScript_PIRAEUS
 {
     lock
     faceplayer
-    speakername("Bardas")
+    speakername("PIRAEUS")
     msgbox(format("How're you liking The Delphis, {PLAYER}? Make sure to check out {COLOR GREEN}your Cabin{COLOR DARK_GRAY} and decorate it!\p I can feel the boat slowing down, so we must be near our destination. Are you ready to leave?"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == 0) // stay on boat
     {
-        speakername("Bardas")
+        speakername("PIRAEUS")
         msgbox(format("No rush! You're always welcome on The Delphis!"))
         closemessage
     }

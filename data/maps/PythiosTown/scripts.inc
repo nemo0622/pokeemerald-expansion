@@ -698,58 +698,58 @@ PythiosTown_EventScripts_NPC_ManBlockingGym::
 	end
 
 
-PythiosTown_EventScripts_Bardas::
+PythiosTown_EventScripts_PIRAEUS::
 # 399 "data/maps/PythiosTown/scripts.pory"
 	lock
 # 400 "data/maps/PythiosTown/scripts.pory"
 	faceplayer
 # 401 "data/maps/PythiosTown/scripts.pory"
-	goto_if_unset FLAG_MET_BARDAS_PYTHIOS_TOWN, PythiosTown_EventScripts_Bardas_2
+	goto_if_unset FLAG_MET_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_2
 # 410 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_MET_BARDAS_PYTHIOS_TOWN, PythiosTown_EventScripts_Bardas_10
-PythiosTown_EventScripts_Bardas_8:
+	goto_if_set FLAG_MET_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_10
+PythiosTown_EventScripts_PIRAEUS_8:
 # 441 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_GOT_BADGE_FOR_BARDAS, PythiosTown_EventScripts_Bardas_7
-PythiosTown_EventScripts_Bardas_6:
+	goto_if_set FLAG_GOT_BADGE_FOR_PIRAEUS, PythiosTown_EventScripts_PIRAEUS_7
+PythiosTown_EventScripts_PIRAEUS_6:
 # 449 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_HELPED_BARDAS_PYTHIOS_TOWN, PythiosTown_EventScripts_Bardas_5
-PythiosTown_EventScripts_Bardas_1:
+	goto_if_set FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_5
+PythiosTown_EventScripts_PIRAEUS_1:
 # 552 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
-PythiosTown_EventScripts_Bardas_2:
+PythiosTown_EventScripts_PIRAEUS_2:
 # 403 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_0
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_0
 # 404 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_1
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_1
 # 405 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 406 "data/maps/PythiosTown/scripts.pory"
-	setflag FLAG_MET_BARDAS_PYTHIOS_TOWN
+	setflag FLAG_MET_PIRAEUS_PYTHIOS_TOWN
 # 407 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
-PythiosTown_EventScripts_Bardas_3:
+PythiosTown_EventScripts_PIRAEUS_3:
 # 412 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_0
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_0
 # 413 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_2
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_2
 # 414 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 415 "data/maps/PythiosTown/scripts.pory"
 	delay 60
 # 416 "data/maps/PythiosTown/scripts.pory"
-	goto_if_unset FLAG_BADGE03_GET, PythiosTown_EventScripts_Bardas_14
+	goto_if_unset FLAG_BADGE03_GET, PythiosTown_EventScripts_PIRAEUS_14
 # 426 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_0
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_0
 # 427 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_4
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_4
 # 428 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 429 "data/maps/PythiosTown/scripts.pory"
-	setflag FLAG_GOT_BADGE_FOR_BARDAS
+	setflag FLAG_GOT_BADGE_FOR_PIRAEUS
 # 430 "data/maps/PythiosTown/scripts.pory"
 	delay 30
 # 431 "data/maps/PythiosTown/scripts.pory"
@@ -759,242 +759,242 @@ PythiosTown_EventScripts_Bardas_3:
 # 433 "data/maps/PythiosTown/scripts.pory"
 	delay 20
 # 434 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 435 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_6
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_6
 # 436 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 437 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
-PythiosTown_EventScripts_Bardas_4:
+PythiosTown_EventScripts_PIRAEUS_4:
 # 443 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 444 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_7
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_7
 # 445 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 446 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
-PythiosTown_EventScripts_Bardas_5:
+PythiosTown_EventScripts_PIRAEUS_5:
 # 451 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 452 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_8
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_8
 # 455 "data/maps/PythiosTown/scripts.pory"
-	dynmultipush PythiosTown_EventScripts_Bardas_Text_9, 0
+	dynmultipush PythiosTown_EventScripts_PIRAEUS_Text_9, 0
 # 456 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_VISITED_PYTHIOS_TOWN, PythiosTown_EventScripts_Bardas_18
-PythiosTown_EventScripts_Bardas_17:
+	goto_if_set FLAG_VISITED_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_18
+PythiosTown_EventScripts_PIRAEUS_17:
 # 459 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_VISITED_SOFOS_CITY, PythiosTown_EventScripts_Bardas_21
-PythiosTown_EventScripts_Bardas_20:
+	goto_if_set FLAG_VISITED_SOFOS_CITY, PythiosTown_EventScripts_PIRAEUS_21
+PythiosTown_EventScripts_PIRAEUS_20:
 # 462 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_VISITED_MARMARO_ISLAND, PythiosTown_EventScripts_Bardas_24
-PythiosTown_EventScripts_Bardas_23:
+	goto_if_set FLAG_VISITED_MARMARO_ISLAND, PythiosTown_EventScripts_PIRAEUS_24
+PythiosTown_EventScripts_PIRAEUS_23:
 # 465 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_VISITED_MYRRINI_ISLAND, PythiosTown_EventScripts_Bardas_27
-PythiosTown_EventScripts_Bardas_26:
+	goto_if_set FLAG_VISITED_MYRRINI_ISLAND, PythiosTown_EventScripts_PIRAEUS_27
+PythiosTown_EventScripts_PIRAEUS_26:
 # 468 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_VISITED_FRESCO_ISLAND, PythiosTown_EventScripts_Bardas_30
-PythiosTown_EventScripts_Bardas_29:
+	goto_if_set FLAG_VISITED_FRESCO_ISLAND, PythiosTown_EventScripts_PIRAEUS_30
+PythiosTown_EventScripts_PIRAEUS_29:
 # 471 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_VISITED_PALATI_CITY, PythiosTown_EventScripts_Bardas_33
-PythiosTown_EventScripts_Bardas_32:
+	goto_if_set FLAG_VISITED_PALATI_CITY, PythiosTown_EventScripts_PIRAEUS_33
+PythiosTown_EventScripts_PIRAEUS_32:
 # 474 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_VISITED_PORT_PELLO, PythiosTown_EventScripts_Bardas_36
-PythiosTown_EventScripts_Bardas_35:
+	goto_if_set FLAG_VISITED_PORT_PELLO, PythiosTown_EventScripts_PIRAEUS_36
+PythiosTown_EventScripts_PIRAEUS_35:
 # 477 "data/maps/PythiosTown/scripts.pory"
 	dynmultistack 100, 0, TRUE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE
 # 480 "data/maps/PythiosTown/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq PythiosTown_EventScripts_Bardas_38
+	goto_if_eq PythiosTown_EventScripts_PIRAEUS_38
 # 499 "data/maps/PythiosTown/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq PythiosTown_EventScripts_Bardas_46
+	goto_if_eq PythiosTown_EventScripts_PIRAEUS_46
 # 506 "data/maps/PythiosTown/scripts.pory"
 	compare VAR_RESULT, 2
-	goto_if_eq PythiosTown_EventScripts_Bardas_47
+	goto_if_eq PythiosTown_EventScripts_PIRAEUS_47
 # 513 "data/maps/PythiosTown/scripts.pory"
 	compare VAR_RESULT, 3
-	goto_if_eq PythiosTown_EventScripts_Bardas_48
+	goto_if_eq PythiosTown_EventScripts_PIRAEUS_48
 # 520 "data/maps/PythiosTown/scripts.pory"
 	compare VAR_RESULT, 4
-	goto_if_eq PythiosTown_EventScripts_Bardas_49
+	goto_if_eq PythiosTown_EventScripts_PIRAEUS_49
 # 527 "data/maps/PythiosTown/scripts.pory"
 	compare VAR_RESULT, 5
-	goto_if_eq PythiosTown_EventScripts_Bardas_50
+	goto_if_eq PythiosTown_EventScripts_PIRAEUS_50
 # 534 "data/maps/PythiosTown/scripts.pory"
 	compare VAR_RESULT, 6
-	goto_if_eq PythiosTown_EventScripts_Bardas_51
+	goto_if_eq PythiosTown_EventScripts_PIRAEUS_51
 # 541 "data/maps/PythiosTown/scripts.pory"
 	compare VAR_RESULT, 7
-	goto_if_eq PythiosTown_EventScripts_Bardas_52
-PythiosTown_EventScripts_Bardas_45:
+	goto_if_eq PythiosTown_EventScripts_PIRAEUS_52
+PythiosTown_EventScripts_PIRAEUS_45:
 # 548 "data/maps/PythiosTown/scripts.pory"
 	warp MAP_THE_DELPHIS, 9, 3
 # 549 "data/maps/PythiosTown/scripts.pory"
 	waitstate
-	goto PythiosTown_EventScripts_Bardas_1
+	goto PythiosTown_EventScripts_PIRAEUS_1
 
-PythiosTown_EventScripts_Bardas_7:
+PythiosTown_EventScripts_PIRAEUS_7:
 # 441 "data/maps/PythiosTown/scripts.pory"
-	goto_if_unset FLAG_HELPED_BARDAS_PYTHIOS_TOWN, PythiosTown_EventScripts_Bardas_4
-	goto PythiosTown_EventScripts_Bardas_6
+	goto_if_unset FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_4
+	goto PythiosTown_EventScripts_PIRAEUS_6
 
-PythiosTown_EventScripts_Bardas_10:
+PythiosTown_EventScripts_PIRAEUS_10:
 # 410 "data/maps/PythiosTown/scripts.pory"
-	goto_if_unset FLAG_GOT_BADGE_FOR_BARDAS, PythiosTown_EventScripts_Bardas_3
-	goto PythiosTown_EventScripts_Bardas_8
+	goto_if_unset FLAG_GOT_BADGE_FOR_PIRAEUS, PythiosTown_EventScripts_PIRAEUS_3
+	goto PythiosTown_EventScripts_PIRAEUS_8
 
-PythiosTown_EventScripts_Bardas_14:
+PythiosTown_EventScripts_PIRAEUS_14:
 # 418 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_0
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_0
 # 419 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_3
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_3
 # 420 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 421 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
-PythiosTown_EventScripts_Bardas_18:
+PythiosTown_EventScripts_PIRAEUS_18:
 # 457 "data/maps/PythiosTown/scripts.pory"
-	dynmultipush PythiosTown_EventScripts_Bardas_Text_10, 1
-	goto PythiosTown_EventScripts_Bardas_17
+	dynmultipush PythiosTown_EventScripts_PIRAEUS_Text_10, 1
+	goto PythiosTown_EventScripts_PIRAEUS_17
 
-PythiosTown_EventScripts_Bardas_21:
+PythiosTown_EventScripts_PIRAEUS_21:
 # 460 "data/maps/PythiosTown/scripts.pory"
-	dynmultipush PythiosTown_EventScripts_Bardas_Text_11, 2
-	goto PythiosTown_EventScripts_Bardas_20
+	dynmultipush PythiosTown_EventScripts_PIRAEUS_Text_11, 2
+	goto PythiosTown_EventScripts_PIRAEUS_20
 
-PythiosTown_EventScripts_Bardas_24:
+PythiosTown_EventScripts_PIRAEUS_24:
 # 463 "data/maps/PythiosTown/scripts.pory"
-	dynmultipush PythiosTown_EventScripts_Bardas_Text_12, 3
-	goto PythiosTown_EventScripts_Bardas_23
+	dynmultipush PythiosTown_EventScripts_PIRAEUS_Text_12, 3
+	goto PythiosTown_EventScripts_PIRAEUS_23
 
-PythiosTown_EventScripts_Bardas_27:
+PythiosTown_EventScripts_PIRAEUS_27:
 # 466 "data/maps/PythiosTown/scripts.pory"
-	dynmultipush PythiosTown_EventScripts_Bardas_Text_13, 4
-	goto PythiosTown_EventScripts_Bardas_26
+	dynmultipush PythiosTown_EventScripts_PIRAEUS_Text_13, 4
+	goto PythiosTown_EventScripts_PIRAEUS_26
 
-PythiosTown_EventScripts_Bardas_30:
+PythiosTown_EventScripts_PIRAEUS_30:
 # 469 "data/maps/PythiosTown/scripts.pory"
-	dynmultipush PythiosTown_EventScripts_Bardas_Text_14, 5
-	goto PythiosTown_EventScripts_Bardas_29
+	dynmultipush PythiosTown_EventScripts_PIRAEUS_Text_14, 5
+	goto PythiosTown_EventScripts_PIRAEUS_29
 
-PythiosTown_EventScripts_Bardas_33:
+PythiosTown_EventScripts_PIRAEUS_33:
 # 472 "data/maps/PythiosTown/scripts.pory"
-	dynmultipush PythiosTown_EventScripts_Bardas_Text_15, 6
-	goto PythiosTown_EventScripts_Bardas_32
+	dynmultipush PythiosTown_EventScripts_PIRAEUS_Text_15, 6
+	goto PythiosTown_EventScripts_PIRAEUS_32
 
-PythiosTown_EventScripts_Bardas_36:
+PythiosTown_EventScripts_PIRAEUS_36:
 # 475 "data/maps/PythiosTown/scripts.pory"
-	dynmultipush PythiosTown_EventScripts_Bardas_Text_16, 7
-	goto PythiosTown_EventScripts_Bardas_35
+	dynmultipush PythiosTown_EventScripts_PIRAEUS_Text_16, 7
+	goto PythiosTown_EventScripts_PIRAEUS_35
 
-PythiosTown_EventScripts_Bardas_38:
+PythiosTown_EventScripts_PIRAEUS_38:
 # 482 "data/maps/PythiosTown/scripts.pory"
 	setvar VAR_CHOSEN_SAIL_LOCATION, 0
 # 483 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 484 "data/maps/PythiosTown/scripts.pory"
-	goto_if_set FLAG_SYS_GAME_CLEAR, PythiosTown_EventScripts_Bardas_42
+	goto_if_set FLAG_SYS_GAME_CLEAR, PythiosTown_EventScripts_PIRAEUS_42
 # 491 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_18
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_18
 # 492 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-PythiosTown_EventScripts_Bardas_41:
+PythiosTown_EventScripts_PIRAEUS_41:
 # 494 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
-PythiosTown_EventScripts_Bardas_42:
+PythiosTown_EventScripts_PIRAEUS_42:
 # 486 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_17
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_17
 # 487 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-	goto PythiosTown_EventScripts_Bardas_41
+	goto PythiosTown_EventScripts_PIRAEUS_41
 
-PythiosTown_EventScripts_Bardas_46:
+PythiosTown_EventScripts_PIRAEUS_46:
 # 501 "data/maps/PythiosTown/scripts.pory"
 	setvar VAR_CHOSEN_SAIL_LOCATION, 1
 # 502 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 503 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_19
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_19
 # 504 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-	goto PythiosTown_EventScripts_Bardas_45
+	goto PythiosTown_EventScripts_PIRAEUS_45
 
-PythiosTown_EventScripts_Bardas_47:
+PythiosTown_EventScripts_PIRAEUS_47:
 # 508 "data/maps/PythiosTown/scripts.pory"
 	setvar VAR_CHOSEN_SAIL_LOCATION, 2
 # 509 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 510 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_20
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_20
 # 511 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-	goto PythiosTown_EventScripts_Bardas_45
+	goto PythiosTown_EventScripts_PIRAEUS_45
 
-PythiosTown_EventScripts_Bardas_48:
+PythiosTown_EventScripts_PIRAEUS_48:
 # 515 "data/maps/PythiosTown/scripts.pory"
 	setvar VAR_CHOSEN_SAIL_LOCATION, 3
 # 516 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 517 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_21
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_21
 # 518 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-	goto PythiosTown_EventScripts_Bardas_45
+	goto PythiosTown_EventScripts_PIRAEUS_45
 
-PythiosTown_EventScripts_Bardas_49:
+PythiosTown_EventScripts_PIRAEUS_49:
 # 522 "data/maps/PythiosTown/scripts.pory"
 	setvar VAR_CHOSEN_SAIL_LOCATION, 4
 # 523 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 524 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_22
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_22
 # 525 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-	goto PythiosTown_EventScripts_Bardas_45
+	goto PythiosTown_EventScripts_PIRAEUS_45
 
-PythiosTown_EventScripts_Bardas_50:
+PythiosTown_EventScripts_PIRAEUS_50:
 # 529 "data/maps/PythiosTown/scripts.pory"
 	setvar VAR_CHOSEN_SAIL_LOCATION, 5
 # 530 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 531 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_23
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_23
 # 532 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-	goto PythiosTown_EventScripts_Bardas_45
+	goto PythiosTown_EventScripts_PIRAEUS_45
 
-PythiosTown_EventScripts_Bardas_51:
+PythiosTown_EventScripts_PIRAEUS_51:
 # 536 "data/maps/PythiosTown/scripts.pory"
 	setvar VAR_CHOSEN_SAIL_LOCATION, 6
 # 537 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 538 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_24
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_24
 # 539 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-	goto PythiosTown_EventScripts_Bardas_45
+	goto PythiosTown_EventScripts_PIRAEUS_45
 
-PythiosTown_EventScripts_Bardas_52:
+PythiosTown_EventScripts_PIRAEUS_52:
 # 543 "data/maps/PythiosTown/scripts.pory"
 	setvar VAR_CHOSEN_SAIL_LOCATION, 7
 # 544 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScripts_Bardas_Text_5
+	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
 # 545 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScripts_Bardas_Text_25
+	msgbox PythiosTown_EventScripts_PIRAEUS_Text_25
 # 546 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-	goto PythiosTown_EventScripts_Bardas_45
+	goto PythiosTown_EventScripts_PIRAEUS_45
 
 
 PythiosTown_EventScripts_NPC_Gentleman_Text_0:
@@ -1265,24 +1265,24 @@ PythiosTown_EventScripts_NPC_ManBlockingGym_Text_1:
 	.string "probably meeting with people in the\l"
 	.string "{COLOR GREEN}east of town{COLOR DARK_GRAY}.$"
 
-PythiosTown_EventScripts_Bardas_Text_0:
+PythiosTown_EventScripts_PIRAEUS_Text_0:
 # 403 "data/maps/PythiosTown/scripts.pory"
 	.string "Strange Sailor$"
 
-PythiosTown_EventScripts_Bardas_Text_1:
+PythiosTown_EventScripts_PIRAEUS_Text_1:
 # 404 "data/maps/PythiosTown/scripts.pory"
 	.string "Yia sou! Hey! I need a strong Trainer to\n"
 	.string "help me out of a bind.\p"
 	.string "Come to me when you have the {COLOR GREEN}Pythios\n"
 	.string "Town Gym Badge{COLOR DARK_GRAY}... please!$"
 
-PythiosTown_EventScripts_Bardas_Text_2:
+PythiosTown_EventScripts_PIRAEUS_Text_2:
 # 413 "data/maps/PythiosTown/scripts.pory"
 	.string "Thanks for coming back, I thought you\n"
 	.string "might've left for good! Lemme check\l"
 	.string "your {COLOR GREEN}Badges{COLOR DARK_GRAY}...$"
 
-PythiosTown_EventScripts_Bardas_Text_3:
+PythiosTown_EventScripts_PIRAEUS_Text_3:
 # 419 "data/maps/PythiosTown/scripts.pory"
 	.string "Nope, only 2 Gym Badges. That might not\n"
 	.string "be enough.\p"
@@ -1290,7 +1290,7 @@ PythiosTown_EventScripts_Bardas_Text_3:
 	.string "Town Gym Badge{COLOR DARK_GRAY}, I need to mke sure\l"
 	.string "you're a strong Trainer.$"
 
-PythiosTown_EventScripts_Bardas_Text_4:
+PythiosTown_EventScripts_PIRAEUS_Text_4:
 # 427 "data/maps/PythiosTown/scripts.pory"
 	.string "Hey, you got the Gym Badge! You must be\n"
 	.string "pretty strong.\p"
@@ -1304,113 +1304,114 @@ PythiosTown_EventScripts_Bardas_Text_4:
 	.string "waiting to catch me leaving {COLOR GREEN}east of\l"
 	.string "Pythios Town{COLOR DARK_GRAY}. Please, help me out here!$"
 
-PythiosTown_EventScripts_Bardas_Text_5:
+PythiosTown_EventScripts_PIRAEUS_Text_5:
 # 434 "data/maps/PythiosTown/scripts.pory"
-	.string "Bardas$"
+	.string "PIRAEUS$"
 
-PythiosTown_EventScripts_Bardas_Text_6:
+PythiosTown_EventScripts_PIRAEUS_Text_6:
 # 435 "data/maps/PythiosTown/scripts.pory"
-	.string "Oh, and tell 'em {COLOR GREEN}Bardas{COLOR DARK_GRAY} sent you! Bardas\n"
-	.string "the Strong! No, Bardas the Wise... maybe\l"
-	.string "even Bardas the Great! Fwahaha!$"
+	.string "Oh, and tell 'em {COLOR GREEN}PIRAEUS{COLOR DARK_GRAY} sent you!\n"
+	.string "PIRAEUS the Strong! No, PIRAEUS the\l"
+	.string "Wise... maybe even PIRAEUS the Great!\l"
+	.string "Fwahaha!$"
 
-PythiosTown_EventScripts_Bardas_Text_7:
+PythiosTown_EventScripts_PIRAEUS_Text_7:
 # 444 "data/maps/PythiosTown/scripts.pory"
 	.string "The Team Chimera Admin is {COLOR GREEN}east of\n"
 	.string "Pythios Town{COLOR DARK_GRAY}, last I saw. Let me know\l"
 	.string "when you've taken care of them!$"
 
-PythiosTown_EventScripts_Bardas_Text_8:
+PythiosTown_EventScripts_PIRAEUS_Text_8:
 # 452 "data/maps/PythiosTown/scripts.pory"
 	.string "Chaire, {PLAYER}! Where are we going\n"
 	.string "today?$"
 
-PythiosTown_EventScripts_Bardas_Text_9:
+PythiosTown_EventScripts_PIRAEUS_Text_9:
 # 455 "data/maps/PythiosTown/scripts.pory"
 	.string "Just chatting!$"
 
-PythiosTown_EventScripts_Bardas_Text_10:
+PythiosTown_EventScripts_PIRAEUS_Text_10:
 # 457 "data/maps/PythiosTown/scripts.pory"
 	.string "Pythios Town$"
 
-PythiosTown_EventScripts_Bardas_Text_11:
+PythiosTown_EventScripts_PIRAEUS_Text_11:
 # 460 "data/maps/PythiosTown/scripts.pory"
 	.string "Sofos City$"
 
-PythiosTown_EventScripts_Bardas_Text_12:
+PythiosTown_EventScripts_PIRAEUS_Text_12:
 # 463 "data/maps/PythiosTown/scripts.pory"
 	.string "Marmaro Island$"
 
-PythiosTown_EventScripts_Bardas_Text_13:
+PythiosTown_EventScripts_PIRAEUS_Text_13:
 # 466 "data/maps/PythiosTown/scripts.pory"
 	.string "Myrrini Island$"
 
-PythiosTown_EventScripts_Bardas_Text_14:
+PythiosTown_EventScripts_PIRAEUS_Text_14:
 # 469 "data/maps/PythiosTown/scripts.pory"
 	.string "Fresco Isles$"
 
-PythiosTown_EventScripts_Bardas_Text_15:
+PythiosTown_EventScripts_PIRAEUS_Text_15:
 # 472 "data/maps/PythiosTown/scripts.pory"
 	.string "Palati City$"
 
-PythiosTown_EventScripts_Bardas_Text_16:
+PythiosTown_EventScripts_PIRAEUS_Text_16:
 # 475 "data/maps/PythiosTown/scripts.pory"
 	.string "Port Pello$"
 
-PythiosTown_EventScripts_Bardas_Text_17:
+PythiosTown_EventScripts_PIRAEUS_Text_17:
 # 486 "data/maps/PythiosTown/scripts.pory"
 	.string "Ehehe, glad to see the Champion still\n"
 	.string "hangs around with the likes of me!$"
 
-PythiosTown_EventScripts_Bardas_Text_18:
+PythiosTown_EventScripts_PIRAEUS_Text_18:
 # 491 "data/maps/PythiosTown/scripts.pory"
 	.string "How's the ol' adventure going,\n"
 	.string "{PLAYER}? You still winning Gym\l"
 	.string "Badges and knocking Team Chimera\l"
 	.string "heads? Fwahaha!$"
 
-PythiosTown_EventScripts_Bardas_Text_19:
+PythiosTown_EventScripts_PIRAEUS_Text_19:
 # 503 "data/maps/PythiosTown/scripts.pory"
 	.string "Pythios Town, eh? I've still got bad\n"
 	.string "memories from that place, after my\l"
 	.string "run-in with Team Chimera. Let's make\l"
 	.string "this a quick trip, ehehe!$"
 
-PythiosTown_EventScripts_Bardas_Text_20:
+PythiosTown_EventScripts_PIRAEUS_Text_20:
 # 510 "data/maps/PythiosTown/scripts.pory"
 	.string "Sofos City, eh? The heart of the Ilios\n"
 	.string "Region! While you keep adventuring, I\l"
 	.string "may play a little Pinball. I'm not good,\l"
 	.string "but it's fun!$"
 
-PythiosTown_EventScripts_Bardas_Text_21:
+PythiosTown_EventScripts_PIRAEUS_Text_21:
 # 517 "data/maps/PythiosTown/scripts.pory"
 	.string "Marmaro Island! A beautiful little spot.\n"
 	.string "Their marble helped build structures\l"
 	.string "across the ancient Ilios Region. Let's\l"
 	.string "check it out!$"
 
-PythiosTown_EventScripts_Bardas_Text_22:
+PythiosTown_EventScripts_PIRAEUS_Text_22:
 # 524 "data/maps/PythiosTown/scripts.pory"
 	.string "Hey, I love Myrrini Island! Maybe I'll do\n"
 	.string "some walking around while I'm there! You\l"
 	.string "know what they say, Myrrini parties are\l"
 	.string "the best parties!$"
 
-PythiosTown_EventScripts_Bardas_Text_23:
+PythiosTown_EventScripts_PIRAEUS_Text_23:
 # 531 "data/maps/PythiosTown/scripts.pory"
 	.string "The Fresco Isles, eh? For a group of\n"
 	.string "islands, it gets awful dry there. Maybe\l"
 	.string "you'll find some unique Pokémon there!$"
 
-PythiosTown_EventScripts_Bardas_Text_24:
+PythiosTown_EventScripts_PIRAEUS_Text_24:
 # 538 "data/maps/PythiosTown/scripts.pory"
 	.string "Palati City! That's on Kaptara Island,\n"
 	.string "right? That place is covered with\l"
 	.string "gorgeous ruins... maybe I'll do a little\l"
 	.string "exploring when we get there!$"
 
-PythiosTown_EventScripts_Bardas_Text_25:
+PythiosTown_EventScripts_PIRAEUS_Text_25:
 # 545 "data/maps/PythiosTown/scripts.pory"
 	.string "Port Pello! Their cherry trees are\n"
 	.string "world-famous! They say the gods\l"

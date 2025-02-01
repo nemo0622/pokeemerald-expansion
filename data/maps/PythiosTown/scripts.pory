@@ -394,20 +394,20 @@ script PythiosTown_EventScripts_NPC_ManBlockingGym
     end
 }
 
-script PythiosTown_EventScripts_Bardas
+script PythiosTown_EventScripts_PIRAEUS
 {
     lock
     faceplayer
-    if(!flag(FLAG_MET_BARDAS_PYTHIOS_TOWN)) // first speak
+    if(!flag(FLAG_MET_PIRAEUS_PYTHIOS_TOWN)) // first speak
     {
         speakername("Strange Sailor")
         msgbox(format("Yia sou! Hey! I need a strong Trainer to help me out of a bind.\p Come to me when you have the {COLOR GREEN}Pythios Town Gym Badge{COLOR DARK_GRAY}... please!"))
         closemessage
-        setflag(FLAG_MET_BARDAS_PYTHIOS_TOWN)
+        setflag(FLAG_MET_PIRAEUS_PYTHIOS_TOWN)
         release
         end
     }
-    elif(flag(FLAG_MET_BARDAS_PYTHIOS_TOWN) && !flag(FLAG_GOT_BADGE_FOR_BARDAS))
+    elif(flag(FLAG_MET_PIRAEUS_PYTHIOS_TOWN) && !flag(FLAG_GOT_BADGE_FOR_PIRAEUS))
     {
         speakername("Strange Sailor")
         msgbox(format("Thanks for coming back, I thought you might've left for good! Lemme check your {COLOR GREEN}Badges{COLOR DARK_GRAY}..."))
@@ -426,29 +426,29 @@ script PythiosTown_EventScripts_Bardas
             speakername("Strange Sailor")
             msgbox(format("Hey, you got the Gym Badge! You must be pretty strong.\p So look, here's my situation. Some Team Chimera thugs wanted to take my precious, gorgeous, perfect boat! I took one down with my Pokémon, but they called for backup from an Admin, so now I'm stuck hiding out here.\p Last I saw, the Team Chimera Admin was waiting to catch me leaving {COLOR GREEN}east of Pythios Town{COLOR DARK_GRAY}. Please, help me out here!"))
             closemessage
-            setflag(FLAG_GOT_BADGE_FOR_BARDAS) // means player can fight Team Chimera east of Pythios Town
+            setflag(FLAG_GOT_BADGE_FOR_PIRAEUS) // means player can fight Team Chimera east of Pythios Town
             delay(30)
             applymovement(20, Common_Movement_ExclamationMark)
             waitmovement(0)
             delay(20)
-            speakername("Bardas")
-            msgbox(format("Oh, and tell 'em {COLOR GREEN}Bardas{COLOR DARK_GRAY} sent you! Bardas the Strong! No, Bardas the Wise... maybe even Bardas the Great! Fwahaha!"))
+            speakername("PIRAEUS")
+            msgbox(format("Oh, and tell 'em {COLOR GREEN}PIRAEUS{COLOR DARK_GRAY} sent you! PIRAEUS the Strong! No, PIRAEUS the Wise... maybe even PIRAEUS the Great! Fwahaha!"))
             closemessage
             release
             end
         }
     }
-    elif(flag(FLAG_GOT_BADGE_FOR_BARDAS) && !flag(FLAG_HELPED_BARDAS_PYTHIOS_TOWN))
+    elif(flag(FLAG_GOT_BADGE_FOR_PIRAEUS) && !flag(FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN))
     {
-        speakername("Bardas")
+        speakername("PIRAEUS")
         msgbox(format("The Team Chimera Admin is {COLOR GREEN}east of Pythios Town{COLOR DARK_GRAY}, last I saw. Let me know when you've taken care of them!"))
         closemessage
         release
         end
     }
-    elif(flag(FLAG_HELPED_BARDAS_PYTHIOS_TOWN)) // unlocked Bardas services
+    elif(flag(FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN)) // unlocked PIRAEUS services
     {
-        speakername("Bardas")
+        speakername("PIRAEUS")
         msgbox(format("Chaire, {PLAYER}! Where are we going today?"))
         
         // generate list of locations/options
@@ -480,7 +480,7 @@ script PythiosTown_EventScripts_Bardas
         if(var(VAR_RESULT) == 0) // "Just chatting"
         {
             setvar(VAR_CHOSEN_SAIL_LOCATION, 0)
-            speakername("Bardas")
+            speakername("PIRAEUS")
             if(flag(FLAG_SYS_GAME_CLEAR))
             {
                 msgbox(format("Ehehe, glad to see the Champion still hangs around with the likes of me!"))
@@ -499,49 +499,49 @@ script PythiosTown_EventScripts_Bardas
             if(var(VAR_RESULT) == 1) // Pythios Town
             {
                 setvar(VAR_CHOSEN_SAIL_LOCATION, 1)
-                speakername("Bardas")
+                speakername("PIRAEUS")
                 msgbox(format("Pythios Town, eh? I've still got bad memories from that place, after my run-in with Team Chimera. Let's make this a quick trip, ehehe!"))
                 closemessage
             }
             elif(var(VAR_RESULT) == 2) // Sofos City
             {
                 setvar(VAR_CHOSEN_SAIL_LOCATION, 2)
-                speakername("Bardas")
+                speakername("PIRAEUS")
                 msgbox(format("Sofos City, eh? The heart of the Ilios Region! While you keep adventuring, I may play a little Pinball. I'm not good, but it's fun!"))
                 closemessage
             }
             elif(var(VAR_RESULT) == 3) // Marmaro Island
             {
                 setvar(VAR_CHOSEN_SAIL_LOCATION, 3)
-                speakername("Bardas")
+                speakername("PIRAEUS")
                 msgbox(format("Marmaro Island! A beautiful little spot. Their marble helped build structures across the ancient Ilios Region. Let's check it out!"))
                 closemessage
             }
             elif(var(VAR_RESULT) == 4) // Myrrini Island
             {
                 setvar(VAR_CHOSEN_SAIL_LOCATION, 4)
-                speakername("Bardas")
+                speakername("PIRAEUS")
                 msgbox(format("Hey, I love Myrrini Island! Maybe I'll do some walking around while I'm there! You know what they say, Myrrini parties are the best parties!"))
                 closemessage
             }
             elif(var(VAR_RESULT) == 5) // Fresco Isles
             {
                 setvar(VAR_CHOSEN_SAIL_LOCATION, 5)
-                speakername("Bardas")
+                speakername("PIRAEUS")
                 msgbox(format("The Fresco Isles, eh? For a group of islands, it gets awful dry there. Maybe you'll find some unique Pokémon there!"))
                 closemessage
             }
             elif(var(VAR_RESULT) == 6) // Palati City
             {
                 setvar(VAR_CHOSEN_SAIL_LOCATION, 6)
-                speakername("Bardas")
+                speakername("PIRAEUS")
                 msgbox(format("Palati City! That's on Kaptara Island, right? That place is covered with gorgeous ruins... maybe I'll do a little exploring when we get there!"))
                 closemessage
             }
             elif(var(VAR_RESULT) == 7) // Port Pello
             {
                 setvar(VAR_CHOSEN_SAIL_LOCATION, 7)
-                speakername("Bardas")
+                speakername("PIRAEUS")
                 msgbox(format("Port Pello! Their cherry trees are world-famous! They say the gods blessed the lands. How about we see it for ourselves?"))
                 closemessage
             }

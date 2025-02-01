@@ -36,7 +36,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ErinysPath_East_EventScript_ChimeraWalrein",
-      "flag": "FLAG_HELPED_BARDAS_PYTHIOS_TOWN"
+      "flag": "FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(BASCULIN_WHITE_STRIPED)",
@@ -49,7 +49,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ErinysPath_East_EventScript_Basculin",
-      "flag": "FLAG_HELPED_BARDAS_PYTHIOS_TOWN"
+      "flag": "FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS_PALDEAN_AQUA_BREED)",
@@ -62,10 +62,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ErinysPath_East_EventScript_Tauros",
-      "flag": "FLAG_HELPED_BARDAS_PYTHIOS_TOWN"
+      "flag": "FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BARDAS",
+      "graphics_id": "OBJ_EVENT_GFX_PIRAEUS",
       "x": 11,
       "y": 17,
       "elevation": 0,
@@ -75,7 +75,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HELPED_BARDAS_PYTHIOS_TOWN"
+      "flag": "FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN"
     }
   ],
   "warp_events": [

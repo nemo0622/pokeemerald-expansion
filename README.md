@@ -39,11 +39,14 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - "Bardas the Sailor" - unique, old sailor first met in Pythios Town
-        - Allows fast-travel to other, visited coastal locations
-        - RENAME "BARDAS" TO "PIRAEUS"
-            - named after a port in Athens
-    - Consider Surfable Pokémon (https://github.com/grunt-lucas/pokeemerald-expansion/commits/surfable/)
+    - Remove Cabin shit from Piraeus' ship
+        - Redo dialogue and stuff
+        - Ask Discord for help with secret base shit, or just remove it
+    - Replace surfing sprite with a Palafin you unlock to surf on
+        - Make it so it unlocks with the Surf HM
+    - CONSIDER: Replacing berry trees and shit with Apricorn Trees
+        - https://github.com/GraionDilach/spinarakgreen/wiki/Apricorn-Trees-(pokeemerald%E2%80%90expansion)
+        - Exchange for important berries, Pokéballs, and other stuff at the Berry Club (rename to Apricorn Club ofc)
     - Implement Biv's Fishing Minigame
         - Maybe also that upgrade-able fishing rod thing?
         - Wait until treasure catching is implemented because that's so cool!
@@ -110,7 +113,7 @@ GREEK PHRASES AND STUFF:
 
 - LAZARUS PREVIEW PLANS
     - Preview 01 (12/6/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.
-    - Preview 02 (122424) - Pokémon Sunset Starters Reveal - shows starters + best overworld sprites for them
+    - Preview 02 (12/24/24) - Pokémon Sunset Starters Reveal - shows starters + best overworld sprites for them
     - Preview 03 (01/??/25) - Pokémon Lazarus Rename Reveal + Seaglass Feature Ports - shows Pinball, Pokémon type changes, and Wishing Well
 
 ## Known Bugs & Problems
@@ -128,6 +131,7 @@ Many, many talented developers and artists are responsible for making this proje
 - Different Wild Encounter Tables by Bivurnum
 - New Shop UI by mudskip
 - New Continue Menu UI by Archie
+- Overworld Encounters by HashtagMarky
 
 ### Graphics
 - Tilesets:

@@ -1244,9 +1244,9 @@
 #define FLAG_SPOKE_TO_MOVE_RELEARNER                                0x4A9 // spoke to artist (move relearner) in Pythios Town
 #define FLAG_UNLOCKED_MOVE_RELEARNER                                0x4AA // showed artist (move relearner) 20 Pokémon in dex
 #define FLAG_MET_SABELLA_PYTHIOS_TOWN                               0x4AB // did Sabella meet event
-#define FLAG_MET_BARDAS_PYTHIOS_TOWN                                0x4AC // spoke to bardas before
-#define FLAG_HELPED_BARDAS_PYTHIOS_TOWN                             0x4AD // did the help task for bardas after 3rd gym badge
-#define FLAG_GOT_BADGE_FOR_BARDAS                                   0x4AE // flag used in bardas pythios town event
+#define FLAG_MET_PIRAEUS_PYTHIOS_TOWN                                0x4AC // spoke to piraeus before
+#define FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN                             0x4AD // did the help task for piraeus after 3rd gym badge
+#define FLAG_GOT_BADGE_FOR_PIRAEUS                                   0x4AE // flag used in piraeus pythios town event
 #define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1                        0x4AF // Used to hide overworld mons
 #define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2                        0x4B0 // Used to hide overworld mons
 #define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3                        0x4B1 // Used to hide overworld mons

@@ -1374,8 +1374,8 @@ static const struct SpriteFrameImage sPicTable_Diver[] = {
     overworld_ascending_frames(gObjectEventPic_Diver, 4, 4),
 };
 
-static const struct SpriteFrameImage sPicTable_Bardas[] = {
-    overworld_ascending_frames(gObjectEventPic_Bardas, 2, 4),
+static const struct SpriteFrameImage sPicTable_PIRAEUS[] = {
+    overworld_ascending_frames(gObjectEventPic_PIRAEUS, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Chimera_Admin_M[] = {

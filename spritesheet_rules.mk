@@ -417,7 +417,7 @@ $(OBJEVENTGFXDIR)/people/officer.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/diver.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/bardas.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/piraeus.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/team_chimera/chimera_admin_m.4bpp: %.4bpp: %.png
