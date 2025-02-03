@@ -39,9 +39,10 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - Redo "Copyright" screen. again. lol
-        - make like Pokabbie's screen, but with icons of Helix, Dome, and Amber fossils (or of Omanyte, Kabuto, and Aerodactyl! They have cute icon sprites)
-        - Also replace Skarmory or something with Aerodactyl
+    - REMOVED: Noibat, Noivern, Chingling, Chimecho
+        - Replaced with Tyrunt, Tyrantrum, Amaura, and Aurorus
+    - Replace something (Skarmory?) with Aerodactyl
+    - Add Hisuian Decidueye. Cannot believe I forgot so far. lol
     - Fix Cabin shit from Piraeus' ship
         - Redo dialogue and stuff
         - Ask Discord for help with secret base shit, or just remove it

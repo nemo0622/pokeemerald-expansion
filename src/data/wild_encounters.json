@@ -13512,12 +13512,12 @@
               {
                 "min_level": 19,
                 "max_level": 22,
-                "species": "SPECIES_NOIBAT"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 19,
                 "max_level": 22,
-                "species": "SPECIES_NOIBAT"
+                "species": "SPECIES_AMAURA"
               }
             ]
           }
@@ -13581,12 +13581,12 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_NOIBAT"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_NOIBAT"
+                "species": "SPECIES_AMAURA"
               }
             ]
           }
@@ -13630,12 +13630,12 @@
               {
                 "min_level": 21,
                 "max_level": 23,
-                "species": "SPECIES_CHINGLING"
+                "species": "SPECIES_SWINUB"
               },
               {
                 "min_level": 21,
                 "max_level": 23,
-                "species": "SPECIES_CHINGLING"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 21,
@@ -13650,12 +13650,12 @@
               {
                 "min_level": 21,
                 "max_level": 23,
-                "species": "SPECIES_NOIBAT"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 21,
                 "max_level": 23,
-                "species": "SPECIES_NOIBAT"
+                "species": "SPECIES_AMAURA"
               }
             ]
           },
@@ -17051,12 +17051,12 @@
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_LARVESTA"
+                "species": "SPECIES_TYRUNT"
               },
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_LARVESTA"
+                "species": "SPECIES_TYRUNT"
               }
             ]
           }
@@ -17120,12 +17120,12 @@
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_LARVESTA"
+                "species": "SPECIES_TYRUNT"
               },
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_LARVESTA"
+                "species": "SPECIES_TYRUNT"
               }
             ]
           }
@@ -17446,7 +17446,7 @@
               {
                 "min_level": 14,
                 "max_level": 17,
-                "species": "SPECIES_CHINGLING"
+                "species": "SPECIES_STUNKY"
               },
               {
                 "min_level": 14,
