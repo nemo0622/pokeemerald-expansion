@@ -1423,7 +1423,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 649
-            .species = SPECIES_TYNAMO,
+            .species = SPECIES_ELECTRIKE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 651
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),

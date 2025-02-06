@@ -13774,7 +13774,7 @@
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_TYNAMO"
+                "species": "SPECIES_ELECTRIKE"
               },
               {
                 "min_level": 22,
@@ -13843,7 +13843,7 @@
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_TYNAMO"
+                "species": "SPECIES_ELECTRIKE"
               },
               {
                 "min_level": 22,
@@ -17026,7 +17026,7 @@
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_EELEKTRIK"
+                "species": "SPECIES_MANECTRIC"
               },
               {
                 "min_level": 35,
@@ -17095,7 +17095,7 @@
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_EELEKTRIK"
+                "species": "SPECIES_MANECTRIC"
               },
               {
                 "min_level": 35,
