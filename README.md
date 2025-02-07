@@ -39,8 +39,8 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - REMOVED: Noibat, Noivern, Chingling, Chimecho
-        - Replaced with Tyrunt, Tyrantrum, Amaura, and Aurorus
+    - GRAPHICAL REWORK - MAKE GAME LOOK MORE GBC!
+        - Strayed a tad too far - reference tiles from Polished Crystal with permission!
     - Replace something (Skarmory?) with Aerodactyl
     - Add Hisuian Decidueye. Cannot believe I forgot so far. lol
     - Fix Cabin shit from Piraeus' ship
