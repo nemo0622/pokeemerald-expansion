@@ -209,7 +209,7 @@
 #define P_FAMILY_MAWILE                  P_GEN_3_POKEMON
 #define P_FAMILY_ARON                    P_GEN_3_POKEMON
 #define P_FAMILY_MEDITITE                P_GEN_3_POKEMON
-#define P_FAMILY_ELECTRIKE               FALSE
+#define P_FAMILY_ELECTRIKE               P_GEN_3_POKEMON
 #define P_FAMILY_PLUSLE                  FALSE
 #define P_FAMILY_MINUN                   FALSE
 #define P_FAMILY_VOLBEAT_ILLUMISE        FALSE
@@ -407,8 +407,8 @@
 #define P_FAMILY_SKRELP                  P_GEN_6_POKEMON
 #define P_FAMILY_CLAUNCHER               P_GEN_6_POKEMON
 #define P_FAMILY_HELIOPTILE              P_GEN_6_POKEMON
-#define P_FAMILY_TYRUNT                  FALSE
-#define P_FAMILY_AMAURA                  FALSE
+#define P_FAMILY_TYRUNT                  P_GEN_6_POKEMON
+#define P_FAMILY_AMAURA                  P_GEN_6_POKEMON
 #define P_FAMILY_HAWLUCHA                FALSE
 #define P_FAMILY_DEDENNE                 P_GEN_6_POKEMON
 #define P_FAMILY_CARBINK                 FALSE
