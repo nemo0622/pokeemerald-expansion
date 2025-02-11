@@ -43,214 +43,390 @@ PythiosCemetery_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 
-PythiosCemetery_EventScript_Linoone::
-# 26 "data/maps/PythiosCemetery/scripts.pory"
-	lock
+EventScript_KabutoPuzzle::
 # 27 "data/maps/PythiosCemetery/scripts.pory"
-	faceplayer
+	lockall
 # 28 "data/maps/PythiosCemetery/scripts.pory"
-	speakername PythiosCemetery_EventScript_Linoone_Text_0
+	fadescreenswapbuffers FADE_TO_BLACK
 # 29 "data/maps/PythiosCemetery/scripts.pory"
-	playmoncry SPECIES_LINOONE_GALARIAN, CRY_MODE_NORMAL
+	delay 30
 # 30 "data/maps/PythiosCemetery/scripts.pory"
-	msgbox PythiosCemetery_EventScript_Linoone_Text_1
-# 31 "data/maps/PythiosCemetery/scripts.pory"
-	waitmoncry
+	goto_if_set FLAG_SOLVED_KABUTO_PUZZLE, EventScript_KabutoPuzzle_2
+# 36 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8005, FALSE
+EventScript_KabutoPuzzle_1:
+# 38 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8004, SLIDING_PUZZLE_KABUTO
+# 39 "data/maps/PythiosCemetery/scripts.pory"
+	special DoSlidingPuzzle
+# 40 "data/maps/PythiosCemetery/scripts.pory"
+	waitstate
+# 41 "data/maps/PythiosCemetery/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_KabutoPuzzle_7
+EventScript_KabutoPuzzle_5:
+# 46 "data/maps/PythiosCemetery/scripts.pory"
+	releaseall
+	end
+
+EventScript_KabutoPuzzle_2:
 # 32 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8005, TRUE
+	goto EventScript_KabutoPuzzle_1
+
+EventScript_KabutoPuzzle_6:
+# 43 "data/maps/PythiosCemetery/scripts.pory"
+	setflag FLAG_SOLVED_KABUTO_PUZZLE
+# 44 "data/maps/PythiosCemetery/scripts.pory"
+	giveitem ITEM_ULTRA_BALL
+	goto EventScript_KabutoPuzzle_5
+
+EventScript_KabutoPuzzle_7:
+# 41 "data/maps/PythiosCemetery/scripts.pory"
+	goto_if_unset FLAG_SOLVED_KABUTO_PUZZLE, EventScript_KabutoPuzzle_6
+	goto EventScript_KabutoPuzzle_5
+
+
+EventScript_AerodactylPuzzle::
+# 52 "data/maps/PythiosCemetery/scripts.pory"
+	lockall
+# 53 "data/maps/PythiosCemetery/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 54 "data/maps/PythiosCemetery/scripts.pory"
+	delay 30
+# 55 "data/maps/PythiosCemetery/scripts.pory"
+	goto_if_set FLAG_SOLVED_AERODACTYL_PUZZLE, EventScript_AerodactylPuzzle_2
+# 61 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8005, FALSE
+EventScript_AerodactylPuzzle_1:
+# 63 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8004, SLIDING_PUZZLE_AERODACTYL
+# 64 "data/maps/PythiosCemetery/scripts.pory"
+	special DoSlidingPuzzle
+# 65 "data/maps/PythiosCemetery/scripts.pory"
+	waitstate
+# 66 "data/maps/PythiosCemetery/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_AerodactylPuzzle_7
+EventScript_AerodactylPuzzle_5:
+# 71 "data/maps/PythiosCemetery/scripts.pory"
+	releaseall
+	end
+
+EventScript_AerodactylPuzzle_2:
+# 57 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8005, TRUE
+	goto EventScript_AerodactylPuzzle_1
+
+EventScript_AerodactylPuzzle_6:
+# 68 "data/maps/PythiosCemetery/scripts.pory"
+	setflag FLAG_SOLVED_AERODACTYL_PUZZLE
+# 69 "data/maps/PythiosCemetery/scripts.pory"
+	giveitem ITEM_ULTRA_BALL
+	goto EventScript_AerodactylPuzzle_5
+
+EventScript_AerodactylPuzzle_7:
+# 66 "data/maps/PythiosCemetery/scripts.pory"
+	goto_if_unset FLAG_SOLVED_AERODACTYL_PUZZLE, EventScript_AerodactylPuzzle_6
+	goto EventScript_AerodactylPuzzle_5
+
+
+EventScript_OmanytePuzzle::
+# 77 "data/maps/PythiosCemetery/scripts.pory"
+	lockall
+# 78 "data/maps/PythiosCemetery/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 79 "data/maps/PythiosCemetery/scripts.pory"
+	delay 30
+# 80 "data/maps/PythiosCemetery/scripts.pory"
+	goto_if_set FLAG_SOLVED_OMANYTE_PUZZLE, EventScript_OmanytePuzzle_2
+# 86 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8005, FALSE
+EventScript_OmanytePuzzle_1:
+# 88 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8004, SLIDING_PUZZLE_OMANYTE
+# 89 "data/maps/PythiosCemetery/scripts.pory"
+	special DoSlidingPuzzle
+# 90 "data/maps/PythiosCemetery/scripts.pory"
+	waitstate
+# 91 "data/maps/PythiosCemetery/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_OmanytePuzzle_7
+EventScript_OmanytePuzzle_5:
+# 96 "data/maps/PythiosCemetery/scripts.pory"
+	releaseall
+	end
+
+EventScript_OmanytePuzzle_2:
+# 82 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8005, TRUE
+	goto EventScript_OmanytePuzzle_1
+
+EventScript_OmanytePuzzle_6:
+# 93 "data/maps/PythiosCemetery/scripts.pory"
+	setflag FLAG_SOLVED_OMANYTE_PUZZLE
+# 94 "data/maps/PythiosCemetery/scripts.pory"
+	giveitem ITEM_ULTRA_BALL
+	goto EventScript_OmanytePuzzle_5
+
+EventScript_OmanytePuzzle_7:
+# 91 "data/maps/PythiosCemetery/scripts.pory"
+	goto_if_unset FLAG_SOLVED_OMANYTE_PUZZLE, EventScript_OmanytePuzzle_6
+	goto EventScript_OmanytePuzzle_5
+
+
+EventScript_HoOhPuzzle::
+# 102 "data/maps/PythiosCemetery/scripts.pory"
+	lockall
+# 103 "data/maps/PythiosCemetery/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 104 "data/maps/PythiosCemetery/scripts.pory"
+	delay 30
+# 105 "data/maps/PythiosCemetery/scripts.pory"
+	goto_if_set FLAG_SOLVED_HO_OH_PUZZLE, EventScript_HoOhPuzzle_2
+# 111 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8005, FALSE
+EventScript_HoOhPuzzle_1:
+# 113 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8004, SLIDING_PUZZLE_HO_OH
+# 114 "data/maps/PythiosCemetery/scripts.pory"
+	special DoSlidingPuzzle
+# 115 "data/maps/PythiosCemetery/scripts.pory"
+	waitstate
+# 116 "data/maps/PythiosCemetery/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_HoOhPuzzle_7
+EventScript_HoOhPuzzle_5:
+# 121 "data/maps/PythiosCemetery/scripts.pory"
+	releaseall
+	end
+
+EventScript_HoOhPuzzle_2:
+# 107 "data/maps/PythiosCemetery/scripts.pory"
+	setvar VAR_0x8005, TRUE
+	goto EventScript_HoOhPuzzle_1
+
+EventScript_HoOhPuzzle_6:
+# 118 "data/maps/PythiosCemetery/scripts.pory"
+	setflag FLAG_SOLVED_HO_OH_PUZZLE
+# 119 "data/maps/PythiosCemetery/scripts.pory"
+	giveitem ITEM_ULTRA_BALL
+	goto EventScript_HoOhPuzzle_5
+
+EventScript_HoOhPuzzle_7:
+# 116 "data/maps/PythiosCemetery/scripts.pory"
+	goto_if_unset FLAG_SOLVED_HO_OH_PUZZLE, EventScript_HoOhPuzzle_6
+	goto EventScript_HoOhPuzzle_5
+
+
+PythiosCemetery_EventScript_Linoone::
+# 127 "data/maps/PythiosCemetery/scripts.pory"
+	lock
+# 128 "data/maps/PythiosCemetery/scripts.pory"
+	faceplayer
+# 129 "data/maps/PythiosCemetery/scripts.pory"
+	speakername PythiosCemetery_EventScript_Linoone_Text_0
+# 130 "data/maps/PythiosCemetery/scripts.pory"
+	playmoncry SPECIES_LINOONE_GALARIAN, CRY_MODE_NORMAL
+# 131 "data/maps/PythiosCemetery/scripts.pory"
+	msgbox PythiosCemetery_EventScript_Linoone_Text_1
+# 132 "data/maps/PythiosCemetery/scripts.pory"
+	waitmoncry
+# 133 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 33 "data/maps/PythiosCemetery/scripts.pory"
+# 134 "data/maps/PythiosCemetery/scripts.pory"
 	release
 	end
 
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt1::
-# 39 "data/maps/PythiosCemetery/scripts.pory"
+# 140 "data/maps/PythiosCemetery/scripts.pory"
 	trainerbattle_single TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_1, PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt1Intro, PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt1Defeat
-# 40 "data/maps/PythiosCemetery/scripts.pory"
+# 141 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt1_Text_0
-# 41 "data/maps/PythiosCemetery/scripts.pory"
+# 142 "data/maps/PythiosCemetery/scripts.pory"
 	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt1_Text_1
-# 42 "data/maps/PythiosCemetery/scripts.pory"
+# 143 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 43 "data/maps/PythiosCemetery/scripts.pory"
+# 144 "data/maps/PythiosCemetery/scripts.pory"
 	release
 	end
 
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt2::
-# 57 "data/maps/PythiosCemetery/scripts.pory"
+# 158 "data/maps/PythiosCemetery/scripts.pory"
 	trainerbattle_single TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_2, PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Intro, PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Defeat
-# 58 "data/maps/PythiosCemetery/scripts.pory"
+# 159 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt1_Text_0
-# 59 "data/maps/PythiosCemetery/scripts.pory"
+# 160 "data/maps/PythiosCemetery/scripts.pory"
 	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt2_Text_0
-# 60 "data/maps/PythiosCemetery/scripts.pory"
+# 161 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 61 "data/maps/PythiosCemetery/scripts.pory"
+# 162 "data/maps/PythiosCemetery/scripts.pory"
 	release
 	end
 
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin::
-# 75 "data/maps/PythiosCemetery/scripts.pory"
+# 176 "data/maps/PythiosCemetery/scripts.pory"
 	lock
-# 76 "data/maps/PythiosCemetery/scripts.pory"
+# 177 "data/maps/PythiosCemetery/scripts.pory"
 	faceplayer
-# 77 "data/maps/PythiosCemetery/scripts.pory"
+# 178 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_0
-# 78 "data/maps/PythiosCemetery/scripts.pory"
+# 179 "data/maps/PythiosCemetery/scripts.pory"
 	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_1
-# 79 "data/maps/PythiosCemetery/scripts.pory"
+# 180 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 80 "data/maps/PythiosCemetery/scripts.pory"
+# 181 "data/maps/PythiosCemetery/scripts.pory"
 	trainerbattle_no_intro TRAINER_PYTHIOSCEMETERY_CHIMERA_ADMIN, PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat
-# 82 "data/maps/PythiosCemetery/scripts.pory"
+# 183 "data/maps/PythiosCemetery/scripts.pory"
 	lock
-# 83 "data/maps/PythiosCemetery/scripts.pory"
+# 184 "data/maps/PythiosCemetery/scripts.pory"
 	faceplayer
-# 84 "data/maps/PythiosCemetery/scripts.pory"
+# 185 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_0
-# 85 "data/maps/PythiosCemetery/scripts.pory"
+# 186 "data/maps/PythiosCemetery/scripts.pory"
 	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_2
-# 86 "data/maps/PythiosCemetery/scripts.pory"
+# 187 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 87 "data/maps/PythiosCemetery/scripts.pory"
+# 188 "data/maps/PythiosCemetery/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 88 "data/maps/PythiosCemetery/scripts.pory"
+# 189 "data/maps/PythiosCemetery/scripts.pory"
 	delay 30
-# 89 "data/maps/PythiosCemetery/scripts.pory"
+# 190 "data/maps/PythiosCemetery/scripts.pory"
 	removeobject 4
-# 90 "data/maps/PythiosCemetery/scripts.pory"
+# 191 "data/maps/PythiosCemetery/scripts.pory"
 	removeobject 5
-# 91 "data/maps/PythiosCemetery/scripts.pory"
+# 192 "data/maps/PythiosCemetery/scripts.pory"
 	removeobject 6
-# 92 "data/maps/PythiosCemetery/scripts.pory"
+# 193 "data/maps/PythiosCemetery/scripts.pory"
 	removeobject 7
-# 93 "data/maps/PythiosCemetery/scripts.pory"
+# 194 "data/maps/PythiosCemetery/scripts.pory"
 	setflag FLAG_RECEIVED_HM_FLASH
-# 94 "data/maps/PythiosCemetery/scripts.pory"
+# 195 "data/maps/PythiosCemetery/scripts.pory"
 	delay 30
-# 95 "data/maps/PythiosCemetery/scripts.pory"
+# 196 "data/maps/PythiosCemetery/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 96 "data/maps/PythiosCemetery/scripts.pory"
+# 197 "data/maps/PythiosCemetery/scripts.pory"
 	delay 20
-# 97 "data/maps/PythiosCemetery/scripts.pory"
+# 198 "data/maps/PythiosCemetery/scripts.pory"
 	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_3
-# 98 "data/maps/PythiosCemetery/scripts.pory"
+# 199 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 99 "data/maps/PythiosCemetery/scripts.pory"
+# 200 "data/maps/PythiosCemetery/scripts.pory"
 	giveitem ITEM_HM_FLASH
-# 100 "data/maps/PythiosCemetery/scripts.pory"
+# 201 "data/maps/PythiosCemetery/scripts.pory"
 	release
 	end
 
 
 PythiosCemetery_EventScript_Artist::
-# 110 "data/maps/PythiosCemetery/scripts.pory"
+# 211 "data/maps/PythiosCemetery/scripts.pory"
 	lock
-# 111 "data/maps/PythiosCemetery/scripts.pory"
+# 212 "data/maps/PythiosCemetery/scripts.pory"
 	faceplayer
-# 112 "data/maps/PythiosCemetery/scripts.pory"
+# 213 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_Artist_Text_0
-# 113 "data/maps/PythiosCemetery/scripts.pory"
+# 214 "data/maps/PythiosCemetery/scripts.pory"
 	msgbox PythiosCemetery_EventScript_Artist_Text_1
-# 114 "data/maps/PythiosCemetery/scripts.pory"
+# 215 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 115 "data/maps/PythiosCemetery/scripts.pory"
+# 216 "data/maps/PythiosCemetery/scripts.pory"
 	release
 	end
 
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Maria::
-# 121 "data/maps/PythiosCemetery/scripts.pory"
+# 222 "data/maps/PythiosCemetery/scripts.pory"
 	trainerbattle_single TRAINER_PYTHIOSCEMETERY_MARIA, PythiosCemetery_Text_Trainer_PythiosCemetery_MariaIntro, PythiosCemetery_Text_Trainer_PythiosCemetery_MariaDefeat
-# 122 "data/maps/PythiosCemetery/scripts.pory"
+# 223 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Maria_Text_0
-# 123 "data/maps/PythiosCemetery/scripts.pory"
+# 224 "data/maps/PythiosCemetery/scripts.pory"
 	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Maria_Text_1
-# 124 "data/maps/PythiosCemetery/scripts.pory"
+# 225 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 125 "data/maps/PythiosCemetery/scripts.pory"
+# 226 "data/maps/PythiosCemetery/scripts.pory"
 	release
 	end
 
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Arkos::
-# 139 "data/maps/PythiosCemetery/scripts.pory"
+# 240 "data/maps/PythiosCemetery/scripts.pory"
 	trainerbattle_single TRAINER_PYTHIOSCEMETERY_ARKOS, PythiosCemetery_Text_Trainer_PythiosCemetery_ArkosIntro, PythiosCemetery_Text_Trainer_PythiosCemetery_ArkosDefeat
-# 140 "data/maps/PythiosCemetery/scripts.pory"
+# 241 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Arkos_Text_0
-# 141 "data/maps/PythiosCemetery/scripts.pory"
+# 242 "data/maps/PythiosCemetery/scripts.pory"
 	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Arkos_Text_1
-# 142 "data/maps/PythiosCemetery/scripts.pory"
+# 243 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 143 "data/maps/PythiosCemetery/scripts.pory"
+# 244 "data/maps/PythiosCemetery/scripts.pory"
 	release
 	end
 
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Galei::
-# 157 "data/maps/PythiosCemetery/scripts.pory"
+# 258 "data/maps/PythiosCemetery/scripts.pory"
 	trainerbattle_single TRAINER_PYTHIOSCEMETERY_GALEI, PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiIntro, PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiDefeat
-# 158 "data/maps/PythiosCemetery/scripts.pory"
+# 259 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Galei_Text_0
-# 159 "data/maps/PythiosCemetery/scripts.pory"
+# 260 "data/maps/PythiosCemetery/scripts.pory"
 	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Arkos_Text_1
-# 160 "data/maps/PythiosCemetery/scripts.pory"
+# 261 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 161 "data/maps/PythiosCemetery/scripts.pory"
+# 262 "data/maps/PythiosCemetery/scripts.pory"
 	release
 	end
 
 
 PythiosCemetery_EventScript_OldWoman::
-# 175 "data/maps/PythiosCemetery/scripts.pory"
+# 276 "data/maps/PythiosCemetery/scripts.pory"
 	lock
-# 176 "data/maps/PythiosCemetery/scripts.pory"
+# 277 "data/maps/PythiosCemetery/scripts.pory"
 	faceplayer
-# 177 "data/maps/PythiosCemetery/scripts.pory"
+# 278 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_OldWoman_Text_0
-# 178 "data/maps/PythiosCemetery/scripts.pory"
+# 279 "data/maps/PythiosCemetery/scripts.pory"
 	msgbox PythiosCemetery_EventScript_OldWoman_Text_1
-# 179 "data/maps/PythiosCemetery/scripts.pory"
+# 280 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 180 "data/maps/PythiosCemetery/scripts.pory"
+# 281 "data/maps/PythiosCemetery/scripts.pory"
 	applymovement 12, Common_Movement_FaceUp
-# 181 "data/maps/PythiosCemetery/scripts.pory"
+# 282 "data/maps/PythiosCemetery/scripts.pory"
 	waitmovement 0
-# 182 "data/maps/PythiosCemetery/scripts.pory"
+# 283 "data/maps/PythiosCemetery/scripts.pory"
 	release
 	end
 
 
 PythiosCemetery_EventScript_Linoone_Text_0:
-# 28 "data/maps/PythiosCemetery/scripts.pory"
+# 129 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Linoone$"
 
 PythiosCemetery_EventScript_Linoone_Text_1:
-# 30 "data/maps/PythiosCemetery/scripts.pory"
+# 131 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Hissss!$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt1_Text_0:
-# 40 "data/maps/PythiosCemetery/scripts.pory"
+# 141 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Grunt$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt1_Text_1:
-# 41 "data/maps/PythiosCemetery/scripts.pory"
+# 142 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Look, just leave and don't cause\n"
 	.string "trouble.$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt2_Text_0:
-# 59 "data/maps/PythiosCemetery/scripts.pory"
+# 160 "data/maps/PythiosCemetery/scripts.pory"
 	.string "I hope the Admin didn't see me lose like\n"
 	.string "that.$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_0:
-# 77 "data/maps/PythiosCemetery/scripts.pory"
+# 178 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Chimera Admin$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_1:
-# 78 "data/maps/PythiosCemetery/scripts.pory"
+# 179 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Wh-what? How did you reach us? I\n"
 	.string "thought that we were the only ones who\l"
 	.string "could get through the Cemetery, thanks\l"
@@ -260,98 +436,98 @@ PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_1:
 	.string "the dark. I'll stop you, here and now!$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_2:
-# 85 "data/maps/PythiosCemetery/scripts.pory"
+# 186 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Eek! We'd better scram!$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_3:
-# 97 "data/maps/PythiosCemetery/scripts.pory"
+# 198 "data/maps/PythiosCemetery/scripts.pory"
 	.string "The Team Chimera members dropped\n"
 	.string "something while they ran...$"
 
 PythiosCemetery_EventScript_Artist_Text_0:
-# 112 "data/maps/PythiosCemetery/scripts.pory"
+# 213 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Artist$"
 
 PythiosCemetery_EventScript_Artist_Text_1:
-# 113 "data/maps/PythiosCemetery/scripts.pory"
+# 214 "data/maps/PythiosCemetery/scripts.pory"
 	.string "I'd love to make paintings of the\n"
 	.string "Pythios Cemetery, but it's so dark and\l"
 	.string "rainy that I can't see!$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Maria_Text_0:
-# 122 "data/maps/PythiosCemetery/scripts.pory"
+# 223 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Maria$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Maria_Text_1:
-# 123 "data/maps/PythiosCemetery/scripts.pory"
+# 224 "data/maps/PythiosCemetery/scripts.pory"
 	.string "I wonder if there are new, cute Pokémon\n"
 	.string "to catch here.$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Arkos_Text_0:
-# 140 "data/maps/PythiosCemetery/scripts.pory"
+# 241 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Arkos$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Arkos_Text_1:
-# 141 "data/maps/PythiosCemetery/scripts.pory"
+# 242 "data/maps/PythiosCemetery/scripts.pory"
 	.string "That battle cheered me up a bit.$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Galei_Text_0:
-# 158 "data/maps/PythiosCemetery/scripts.pory"
+# 259 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Galei$"
 
 PythiosCemetery_EventScript_OldWoman_Text_0:
-# 177 "data/maps/PythiosCemetery/scripts.pory"
+# 278 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Old Woman$"
 
 PythiosCemetery_EventScript_OldWoman_Text_1:
-# 178 "data/maps/PythiosCemetery/scripts.pory"
+# 279 "data/maps/PythiosCemetery/scripts.pory"
 	.string "People tend to stay away from\n"
 	.string "cemeteries, so the graves fall into\l"
 	.string "ruin. I'm trying to clean some of them\l"
 	.string "up.$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt1Intro::
-# 46 "data/maps/PythiosCemetery/scripts.pory"
+# 147 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Hey, you! This is our private Team\n"
 	.string "Chimera meeting spot!$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt1Defeat::
-# 50 "data/maps/PythiosCemetery/scripts.pory"
+# 151 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Darn, we might get cleaned out!$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Intro::
-# 64 "data/maps/PythiosCemetery/scripts.pory"
+# 165 "data/maps/PythiosCemetery/scripts.pory"
 	.string "You'll never reach the Admin!$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Defeat::
-# 68 "data/maps/PythiosCemetery/scripts.pory"
+# 169 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Okay, you might reach the Admin...$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat::
-# 103 "data/maps/PythiosCemetery/scripts.pory"
+# 204 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Uh oh, this isn't good...!$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_MariaIntro::
-# 128 "data/maps/PythiosCemetery/scripts.pory"
+# 229 "data/maps/PythiosCemetery/scripts.pory"
 	.string "My poor Pokémon are getting lost in\n"
 	.string "this darkness!$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_MariaDefeat::
-# 132 "data/maps/PythiosCemetery/scripts.pory"
+# 233 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Where'd they go?$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_ArkosIntro::
-# 146 "data/maps/PythiosCemetery/scripts.pory"
+# 247 "data/maps/PythiosCemetery/scripts.pory"
 	.string "I'm here to sulk...$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_ArkosDefeat::
-# 150 "data/maps/PythiosCemetery/scripts.pory"
+# 251 "data/maps/PythiosCemetery/scripts.pory"
 	.string "I can't even sulk in peace, huh?$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiIntro::
-# 164 "data/maps/PythiosCemetery/scripts.pory"
+# 265 "data/maps/PythiosCemetery/scripts.pory"
 	.string "I'm here to sulk...$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiDefeat::
-# 168 "data/maps/PythiosCemetery/scripts.pory"
+# 269 "data/maps/PythiosCemetery/scripts.pory"
 	.string "I can't even sulk in peace, huh?$"

@@ -138,11 +138,11 @@ Many, many talented developers and artists are responsible for making this proje
 - Day/Night System created by merrp, and updated to pokeemerald-expansion by Greenphx9
 - DexNav feature branch by ghoulslash
 - Name Box branch by Tustin2121
-- View Pokédex from Party Menu by RavePossum
 - Different Wild Encounter Tables by Bivurnum
 - New Shop UI by mudskip
 - New Continue Menu UI by Archie
-- Overworld Encounters by HashtagMarky
+- Overworld Encounters by [HashtagMarky](https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters)
+- GSC/HGSS Ruins of Alph Sliding Puzzles by [Spherical Ice](https://www.pokecommunity.com/threads/ruins-of-alph-sliding-puzzles-pokefirered.463032/)
 
 ### Graphics
 - Tilesets:

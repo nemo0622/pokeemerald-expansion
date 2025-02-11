@@ -1260,10 +1260,10 @@
 #define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11                       0x4B9 // Used to hide overworld mons
 #define FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12                       0x4BA // Used to hide overworld mons
 #define FLAG_DOING_OVERWORLD_ENCOUNTER                              0x4BB // Flag telling game to remove overworld mon object after battle
-#define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
-#define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
-#define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
-#define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
+#define FLAG_SOLVED_KABUTO_PUZZLE                                   0x4BC // Solved Ruins of Alph style Kabuto sliding puzzle
+#define FLAG_SOLVED_AERODACTYL_PUZZLE                               0x4BD // Solved Ruins of Alph style Aerodactyl sliding puzzle
+#define FLAG_SOLVED_OMANYTE_PUZZLE                                  0x4BE // Solved Ruins of Alph style Omanyte sliding puzzle
+#define FLAG_SOLVED_HO_OH_PUZZLE                                    0x4BF // Solved Ruins of Alph style Ho-oh sliding puzzle
 #define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
 #define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
 #define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag

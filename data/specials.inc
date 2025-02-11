@@ -560,3 +560,4 @@ gSpecials::
 	def_special SetSeenMon
 	def_special SetCaughtMon
 	def_special CheckPartyForMon
+	def_special DoSlidingPuzzle
