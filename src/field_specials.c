@@ -1008,15 +1008,16 @@ static bool8 IsPlayerInFrontOfPC(void)
 // For this special, gSpecialVar_0x8004 is expected to be some PC_LOCATION_* value.
 void DoPCTurnOnEffect(void)
 {
-    if (FuncIsActiveTask(Task_PCTurnOnEffect) != TRUE && IsPlayerInFrontOfPC() == TRUE)
-    {
-        u8 taskId = CreateTask(Task_PCTurnOnEffect, 8);
-        gTasks[taskId].tPaused = FALSE;
-        gTasks[taskId].tTaskId = taskId;
-        gTasks[taskId].tFlickerCount = 0;
-        gTasks[taskId].tTimer = 0;
-        gTasks[taskId].tIsScreenOn = FALSE;
-    }
+    // commented out to make new GBC PC sprite work
+    // if (FuncIsActiveTask(Task_PCTurnOnEffect) != TRUE && IsPlayerInFrontOfPC() == TRUE)
+    // {
+    //     u8 taskId = CreateTask(Task_PCTurnOnEffect, 8);
+    //     gTasks[taskId].tPaused = FALSE;
+    //     gTasks[taskId].tTaskId = taskId;
+    //     gTasks[taskId].tFlickerCount = 0;
+    //     gTasks[taskId].tTimer = 0;
+    //     gTasks[taskId].tIsScreenOn = FALSE;
+    // }
 }
 
 static void Task_PCTurnOnEffect(u8 taskId)

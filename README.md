@@ -41,6 +41,11 @@ MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
     - GRAPHICAL REWORK - MAKE GAME LOOK MORE GBC!
         - Strayed a tad too far - reference tiles from Polished Crystal with permission!
+    - REWORK WANDERERS WOODS EVENT
+        - Have egg contain random Pokémon from a pool based on who you choose
+        - Choose Niko = random Electric, Steel, or Dark type
+        - Choose Rania = random Water, Fire, or Grass type
+        - Force shiny! Like Odd Egg in Crystal type beat
     - Replace something (Skarmory?) with Aerodactyl
     - Add Hisuian Decidueye. Cannot believe I forgot so far. lol
     - Fix Cabin shit from Piraeus' ship
@@ -57,6 +62,8 @@ MAJOR TODOS:
     - Continue implementing GBC sprites of Pokémon
     - Finalize and Pretty-up the region map
         - Also test Town Map item (no PokéNav!)
+    - Add evolution methods for hisuian forms
+        - Make list of evolution items/methods used (stones, link cables, etc) to be added in marts / to maps
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
