@@ -4515,7 +4515,7 @@
       "id": "LAYOUT_DISCUS_FORGE",
       "name": "DiscusForge_Layout",
       "width": 14,
-      "height": 14,
+      "height": 26,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/DiscusForge/border.bin",

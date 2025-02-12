@@ -321,6 +321,58 @@ AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Hugh::
 	end
 
 
+AcrisiaMountains_EventScript_LassExploringRuins::
+# 277 "data/maps/AcrisiaMountains/scripts.pory"
+	lock
+# 278 "data/maps/AcrisiaMountains/scripts.pory"
+	faceplayer
+# 279 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_LassExploringRuins_Text_0
+# 280 "data/maps/AcrisiaMountains/scripts.pory"
+	goto_if_unset FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS, AcrisiaMountains_EventScript_LassExploringRuins_2
+# 301 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_LassExploringRuins_Text_3
+# 302 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+AcrisiaMountains_EventScript_LassExploringRuins_1:
+# 304 "data/maps/AcrisiaMountains/scripts.pory"
+	release
+	end
+
+AcrisiaMountains_EventScript_LassExploringRuins_2:
+# 282 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_LassExploringRuins_Text_1
+# 283 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 285 "data/maps/AcrisiaMountains/scripts.pory"
+	getcaughtmon SPECIES_BALTOY
+# 286 "data/maps/AcrisiaMountains/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq AcrisiaMountains_EventScript_LassExploringRuins_5
+	goto AcrisiaMountains_EventScript_LassExploringRuins_1
+
+AcrisiaMountains_EventScript_LassExploringRuins_5:
+# 288 "data/maps/AcrisiaMountains/scripts.pory"
+	delay 30
+# 289 "data/maps/AcrisiaMountains/scripts.pory"
+	applymovement 22, Common_Movement_ExclamationMark
+# 290 "data/maps/AcrisiaMountains/scripts.pory"
+	waitmovement 0
+# 291 "data/maps/AcrisiaMountains/scripts.pory"
+	delay 20
+# 292 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_LassExploringRuins_Text_0
+# 293 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_LassExploringRuins_Text_2
+# 294 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 295 "data/maps/AcrisiaMountains/scripts.pory"
+	giveitem ITEM_DUSK_STONE
+# 296 "data/maps/AcrisiaMountains/scripts.pory"
+	setflag FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS
+	goto AcrisiaMountains_EventScript_LassExploringRuins_1
+
+
 AcrisiaMountains_Sign_GymSign_Text_0:
 # 26 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Welcome to the Acrisia Caverns.\p"
@@ -498,6 +550,35 @@ AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Hugh_Text_1:
 	.string "Good luck in the Acrisia Caves. You've\n"
 	.string "certainly got potential, based on our\l"
 	.string "battle!$"
+
+AcrisiaMountains_EventScript_LassExploringRuins_Text_0:
+# 279 "data/maps/AcrisiaMountains/scripts.pory"
+	.string "Lass$"
+
+AcrisiaMountains_EventScript_LassExploringRuins_Text_1:
+# 282 "data/maps/AcrisiaMountains/scripts.pory"
+	.string "There are lots of ancient ruins this far\n"
+	.string "up the mountains. I wish we knew more\l"
+	.string "about what came before us...\p"
+	.string "The Pokémon {COLOR GREEN}Baltoy{COLOR DARK_GRAY} is said to be from\n"
+	.string "an old civilization. I've always wanted\l"
+	.string "to see one!$"
+
+AcrisiaMountains_EventScript_LassExploringRuins_Text_2:
+# 293 "data/maps/AcrisiaMountains/scripts.pory"
+	.string "Hey! That's the Pokédex entry for\n"
+	.string "Baltoy!\p"
+	.string "Thanks for showing me. Maybe I'll check\n"
+	.string "out the University for more Pokédex\l"
+	.string "information. Here, take this cool stone\l"
+	.string "I found around here.$"
+
+AcrisiaMountains_EventScript_LassExploringRuins_Text_3:
+# 301 "data/maps/AcrisiaMountains/scripts.pory"
+	.string "I can't wait to check out the\n"
+	.string "University and learn more about Baltoy!\l"
+	.string "I want to figure out everything about\l"
+	.string "the past.$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreIntro::
 # 147 "data/maps/AcrisiaMountains/scripts.pory"

@@ -1264,8 +1264,8 @@
 #define FLAG_SOLVED_AERODACTYL_PUZZLE                               0x4BD // Solved Ruins of Alph style Aerodactyl sliding puzzle
 #define FLAG_SOLVED_OMANYTE_PUZZLE                                  0x4BE // Solved Ruins of Alph style Omanyte sliding puzzle
 #define FLAG_SOLVED_HO_OH_PUZZLE                                    0x4BF // Solved Ruins of Alph style Ho-oh sliding puzzle
-#define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
-#define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
+#define FLAG_SOLVED_GYM_2_PUZZLE                                    0x4C0 // Flag marking both Kabuto and Omanyte solved, hiding NPCs blocking ladder
+#define FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS                        0x4C1 // Showed Lass in Acrisia Mountains a Baltoy
 #define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
 #define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
 #define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag

@@ -272,3 +272,36 @@ text AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughDefeat
     format("Wow, you're ready!")
 }
 
+script AcrisiaMountains_EventScript_LassExploringRuins
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    if(!flag(FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS)) // hasnt done quest yet
+    {
+        msgbox(format("There are lots of ancient ruins this far up the mountains. I wish we knew more about what came before us...\p The Pokémon {COLOR GREEN}Baltoy{COLOR DARK_GRAY} is said to be from an old civilization. I've always wanted to see one!"))
+        closemessage
+
+        getcaughtmon(SPECIES_BALTOY)
+        if(var(VAR_RESULT) == 1) // has a baltoy!
+        {
+            delay(30)
+            applymovement(22, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(20)
+            speakername("Lass")
+            msgbox(format("Hey! That's the Pokédex entry for Baltoy!\p Thanks for showing me. Maybe I'll check out the University for more Pokédex information. Here, take this cool stone I found around here."))
+            closemessage
+            giveitem(ITEM_DUSK_STONE)
+            setflag(FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS)
+        }
+    }
+    else // already did event
+    {
+        msgbox(format("I can't wait to check out the University and learn more about Baltoy! I want to figure out everything about the past."))
+        closemessage
+    }
+    release
+    end
+}
+

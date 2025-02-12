@@ -53,3 +53,178 @@ text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_UmberDefeat
 {
     format("I couldn't even win using the powers of space?!")
 }
+
+script AcrisiaCaves_F1_EventScript_ScientistBlockingLadder
+{
+    lock
+    faceplayer
+    speakername("Researcher")
+    msgbox(format("To pass into the deeper level of the cave, you must {COLOR GREEN}solve these Ruin Puzzles{COLOR DARK_GRAY}.\p Our Gym Leader believes that only those who understand the past should be considered worthy of earning his Gym Badge."))
+    closemessage
+    if(flag(FLAG_SOLVED_KABUTO_PUZZLE) && flag(FLAG_SOLVED_OMANYTE_PUZZLE))
+    {
+        setflag(FLAG_SOLVED_GYM_2_PUZZLE)
+        speakername("Researcher")
+        msgbox(format("Could it be...? You solved the Ruin Puzzles!\p Climb down the ladder behind us to continue your Gym Challenge. Good luck!"))
+        closemessage
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        delay(30)
+        removeobject(3)
+        removeobject(4)
+        delay(30)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        delay(20)
+    }
+    release
+    end
+}
+
+script AcrisiaCaves_F1_EventScript_Statue
+{
+    lock
+    msgbox(format("An imposing form looms down from the pedestal. It seems to resemble an ancient Pokémon."))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCaves_F1_EventScript_KabutoDescription
+{
+    lock
+    msgbox(format("It looks like this Pokémon used to scuttle along the sea floor in oceans around the world. It was only known from fossils until living specimens were recently found in the Ilios Region."))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaCaves_F1_EventScript_OmanyteDescription
+{
+    lock
+    msgbox(format("It looks like this Pokémon used to float through the ocean in ancient times, using internal pumps to shoot water and propel itself. Living individuals can only be found in the Ilios Region."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------
+
+// Putting all Ruins of Alph puzzle code here for now, even though only Kabuto and Omanyte are done here
+script EventScript_KabutoPuzzle // easiest
+{
+    lockall
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(30)
+    if(flag(FLAG_SOLVED_KABUTO_PUZZLE))
+    {
+        setvar(VAR_0x8005, TRUE) // marks puzzle as solved
+    }
+    else
+    {
+        setvar(VAR_0x8005, FALSE) // marks puzzle as unsolved
+    }
+    setvar(VAR_0x8004, SLIDING_PUZZLE_KABUTO) // sets puzzle to do
+    special(DoSlidingPuzzle)
+    waitstate
+    if(var(VAR_RESULT) == TRUE && !flag(FLAG_SOLVED_KABUTO_PUZZLE)) // solved puzzle for the first time!
+    {
+        setflag(FLAG_SOLVED_KABUTO_PUZZLE)
+        delay(30)
+        playse(SE_BANG)
+        delay(30)
+        if(!flag(FLAG_SOLVED_OMANYTE_PUZZLE)) // hasnt solved omanyte yet
+        {
+            msgbox(format("The puzzle has been solved! The other puzzle must still be completed."))
+        }
+        else
+        {
+            msgbox(format("The puzzles have been solved! Time to let the {COLOR GREEN}Researchers{COLOR DARK_GRAY} know."))
+        }
+    }
+    releaseall
+    end
+}
+
+script EventScript_AerodactylPuzzle // medium
+{
+    lockall
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(30)
+    if(flag(FLAG_SOLVED_AERODACTYL_PUZZLE))
+    {
+        setvar(VAR_0x8005, TRUE) // marks puzzle as solved
+    }
+    else
+    {
+        setvar(VAR_0x8005, FALSE) // marks puzzle as unsolved
+    }
+    setvar(VAR_0x8004, SLIDING_PUZZLE_AERODACTYL) // sets puzzle to do
+    special(DoSlidingPuzzle)
+    waitstate
+    if(var(VAR_RESULT) == TRUE && !flag(FLAG_SOLVED_AERODACTYL_PUZZLE)) // solved puzzle for the first time!
+    {
+        setflag(FLAG_SOLVED_AERODACTYL_PUZZLE)
+        giveitem(ITEM_ULTRA_BALL) // placeholder reward
+    }
+    releaseall
+    end
+}
+
+script EventScript_OmanytePuzzle // medium-hard
+{
+    lockall
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(30)
+    if(flag(FLAG_SOLVED_OMANYTE_PUZZLE))
+    {
+        setvar(VAR_0x8005, TRUE) // marks puzzle as solved
+    }
+    else
+    {
+        setvar(VAR_0x8005, FALSE) // marks puzzle as unsolved
+    }
+    setvar(VAR_0x8004, SLIDING_PUZZLE_OMANYTE) // sets puzzle to do
+    special(DoSlidingPuzzle)
+    waitstate
+    if(var(VAR_RESULT) == TRUE && !flag(FLAG_SOLVED_OMANYTE_PUZZLE)) // solved puzzle for the first time!
+    {
+        setflag(FLAG_SOLVED_OMANYTE_PUZZLE)
+        delay(30)
+        playse(SE_BANG)
+        delay(30)
+        if(!flag(FLAG_SOLVED_KABUTO_PUZZLE)) // hasnt solved kabuto yet
+        {
+            msgbox(format("The puzzle has been solved! The other puzzle must still be completed."))
+        }
+        else
+        {
+            msgbox(format("The puzzles have been solved! Time to let the {COLOR GREEN}Researchers{COLOR DARK_GRAY} know."))
+        }
+    }
+    releaseall
+    end
+}
+
+script EventScript_HoOhPuzzle // hard
+{
+    lockall
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(30)
+    if(flag(FLAG_SOLVED_HO_OH_PUZZLE))
+    {
+        setvar(VAR_0x8005, TRUE) // marks puzzle as solved
+    }
+    else
+    {
+        setvar(VAR_0x8005, FALSE) // marks puzzle as unsolved
+    }
+    setvar(VAR_0x8004, SLIDING_PUZZLE_HO_OH) // sets puzzle to do
+    special(DoSlidingPuzzle)
+    waitstate
+    if(var(VAR_RESULT) == TRUE && !flag(FLAG_SOLVED_HO_OH_PUZZLE)) // solved puzzle for the first time!
+    {
+        setflag(FLAG_SOLVED_HO_OH_PUZZLE)
+        giveitem(ITEM_ULTRA_BALL) // placeholder reward
+    }
+    releaseall
+    end
+}

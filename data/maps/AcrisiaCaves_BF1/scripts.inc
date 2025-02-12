@@ -139,49 +139,53 @@ AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript::
 	settrainerflag TRAINER_ACRISIACAVES_BF1_MARGAREY
 # 136 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	settrainerflag TRAINER_ACRISIACAVES_BF1_KYLON
+# 137 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+	settrainerflag TRAINER_ACRISIACAVES_F1_FRAIA
 # 138 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+	settrainerflag TRAINER_ACRISIACAVES_F1_LANA
+# 140 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	setvar VAR_RANIA_STATE, 2
-# 139 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+# 141 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	setvar VAR_NIKO_STATE, 3
-# 142 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	speakername AcrisiaCaves_BF1_EventScript_MattaiosNormal_Text_0
-# 143 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	msgbox AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript_Text_1
 # 144 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	closemessage
-# 147 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	giveitem ITEM_TM_ROCK_TOMB
-# 148 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	speakername AcrisiaCaves_BF1_EventScript_MattaiosNormal_Text_0
-# 149 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	msgbox AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript_Text_2
-# 150 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+# 145 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+	msgbox AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript_Text_1
+# 146 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	closemessage
+# 149 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+	giveitem ITEM_TM_ROCK_TOMB
+# 150 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+	speakername AcrisiaCaves_BF1_EventScript_MattaiosNormal_Text_0
+# 151 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+	msgbox AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript_Text_2
 # 152 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+	closemessage
+# 154 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	release
 	end
 
 
 AcrisiaCaves_BF1_EventScript_Larvitar::
-# 158 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	lock
-# 159 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	faceplayer
 # 160 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	speakername AcrisiaCaves_BF1_EventScript_Larvitar_Text_0
+	lock
 # 161 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	playmoncry SPECIES_LARVITAR, CRY_MODE_NORMAL
+	faceplayer
 # 162 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	msgbox AcrisiaCaves_BF1_EventScript_Larvitar_Text_1
+	speakername AcrisiaCaves_BF1_EventScript_Larvitar_Text_0
 # 163 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_LARVITAR, CRY_MODE_NORMAL
 # 164 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	closemessage
+	msgbox AcrisiaCaves_BF1_EventScript_Larvitar_Text_1
 # 165 "data/maps/AcrisiaCaves_BF1/scripts.pory"
-	msgbox AcrisiaCaves_BF1_EventScript_Larvitar_Text_2
+	waitmoncry
 # 166 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	closemessage
 # 167 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+	msgbox AcrisiaCaves_BF1_EventScript_Larvitar_Text_2
+# 168 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+	closemessage
+# 169 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	release
 	end
 
@@ -240,7 +244,7 @@ AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript_Text_0:
 	.string "Badge from Mattaios.$"
 
 AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript_Text_1:
-# 143 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+# 145 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	.string "The Gemstone Badge marks yer second\n"
 	.string "completed Gym, eh? After two Badges,\l"
 	.string "most trainers are fit to explore more of\l"
@@ -250,7 +254,7 @@ AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript_Text_1:
 	.string "Fwahaha, there's more fer ya!$"
 
 AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript_Text_2:
-# 149 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+# 151 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	.string "That's the TM fer {COLOR GREEN}Rock Tomb{COLOR DARK_GRAY}! My\n"
 	.string "Larvitar here learned this after\l"
 	.string "gettin' rocks dropped on us one-too\l"
@@ -261,15 +265,15 @@ AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript_Text_2:
 	.string "University{COLOR DARK_GRAY} to see what's what!$"
 
 AcrisiaCaves_BF1_EventScript_Larvitar_Text_0:
-# 160 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+# 162 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	.string "Larvitar$"
 
 AcrisiaCaves_BF1_EventScript_Larvitar_Text_1:
-# 162 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+# 164 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	.string "Gwaah.$"
 
 AcrisiaCaves_BF1_EventScript_Larvitar_Text_2:
-# 165 "data/maps/AcrisiaCaves_BF1/scripts.pory"
+# 167 "data/maps/AcrisiaCaves_BF1/scripts.pory"
 	.string "Larvitar is happy to take a break.$"
 
 AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_BerkleyIntro::

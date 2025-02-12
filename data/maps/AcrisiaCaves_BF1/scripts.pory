@@ -134,6 +134,8 @@ script AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript
     settrainerflag(TRAINER_ACRISIACAVES_BF1_BERKLEY)
     settrainerflag(TRAINER_ACRISIACAVES_BF1_MARGAREY)
     settrainerflag(TRAINER_ACRISIACAVES_BF1_KYLON)
+    settrainerflag(TRAINER_ACRISIACAVES_F1_FRAIA)
+    settrainerflag(TRAINER_ACRISIACAVES_F1_LANA)
     // Set Niko and Rania states
     setvar(VAR_RANIA_STATE, 2)
     setvar(VAR_NIKO_STATE, 3)
