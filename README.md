@@ -46,7 +46,7 @@ MAJOR TODOS:
         - Choose Niko = random Electric, Steel, or Dark type
         - Choose Rania = random Water, Fire, or Grass type
         - Force shiny! Like Odd Egg in Crystal type beat
-    - Replace something (Skarmory?) with Aerodactyl
+    - Add Unown to dex? idk ugh
     - Add Hisuian Decidueye. Cannot believe I forgot so far. lol
     - Fix Cabin shit from Piraeus' ship
         - Redo dialogue and stuff

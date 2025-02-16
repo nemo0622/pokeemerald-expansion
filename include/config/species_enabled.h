@@ -125,7 +125,7 @@
 #define P_FAMILY_PORYGON                 FALSE
 #define P_FAMILY_OMANYTE                 P_GEN_1_POKEMON
 #define P_FAMILY_KABUTO                  P_GEN_1_POKEMON
-#define P_FAMILY_AERODACTYL              FALSE
+#define P_FAMILY_AERODACTYL              P_GEN_1_POKEMON
 #define P_FAMILY_SNORLAX                 FALSE
 #define P_FAMILY_ARTICUNO                FALSE
 #define P_FAMILY_ZAPDOS                  FALSE
