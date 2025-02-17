@@ -2520,7 +2520,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1095
-            .species = SPECIES_PAWNIARD,
+            .species = SPECIES_MAGNEMITE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1097
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -2711,7 +2711,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1170
-            .species = SPECIES_PAWNIARD,
+            .species = SPECIES_MAGNEMITE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1172
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -4307,7 +4307,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1826
-            .species = SPECIES_PAWNIARD,
+            .species = SPECIES_CHARCADET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1828
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),

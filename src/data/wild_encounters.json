@@ -13008,7 +13008,7 @@
               {
                 "min_level": 10,
                 "max_level": 15,
-                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+                "species": "SPECIES_CORPHISH"
               },
               {
                 "min_level": 10,
@@ -13132,7 +13132,7 @@
               {
                 "min_level": 10,
                 "max_level": 15,
-                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+                "species": "SPECIES_CORPHISH"
               },
               {
                 "min_level": 10,
@@ -15958,22 +15958,22 @@
               {
                 "min_level": 31,
                 "max_level": 34,
-                "species": "SPECIES_PAWNIARD"
+                "species": "SPECIES_DUOSION"
               },
               {
                 "min_level": 31,
                 "max_level": 34,
-                "species": "SPECIES_PAWNIARD"
+                "species": "SPECIES_DUOSION"
               },
               {
                 "min_level": 31,
                 "max_level": 34,
-                "species": "SPECIES_BISHARP"
+                "species": "SPECIES_REUNICLUS"
               },
               {
                 "min_level": 31,
                 "max_level": 34,
-                "species": "SPECIES_BISHARP"
+                "species": "SPECIES_REUNICLUS"
               }
             ]
           }
@@ -16027,22 +16027,22 @@
               {
                 "min_level": 31,
                 "max_level": 34,
-                "species": "SPECIES_PAWNIARD"
+                "species": "SPECIES_GOTHORITA"
               },
               {
                 "min_level": 31,
                 "max_level": 34,
-                "species": "SPECIES_PAWNIARD"
+                "species": "SPECIES_GOTHORITA"
               },
               {
                 "min_level": 31,
                 "max_level": 34,
-                "species": "SPECIES_BISHARP"
+                "species": "SPECIES_GOTHITELLE"
               },
               {
                 "min_level": 31,
                 "max_level": 34,
-                "species": "SPECIES_BISHARP"
+                "species": "SPECIES_GOTHITELLE"
               }
             ]
           }
@@ -17377,7 +17377,7 @@
               {
                 "min_level": 5,
                 "max_level": 15,
-                "species": "SPECIES_BARBOACH"
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
               },
               {
                 "min_level": 10,
@@ -17531,7 +17531,7 @@
               {
                 "min_level": 5,
                 "max_level": 15,
-                "species": "SPECIES_BARBOACH"
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
               },
               {
                 "min_level": 10,
@@ -17572,6 +17572,75 @@
                 "min_level": 25,
                 "max_level": 35,
                 "species": "SPECIES_DRAGONAIR"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_DISCUS_FORGE",
+          "base_label": "gDiscusForge0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_UNOWN"
               }
             ]
           }

@@ -154,7 +154,7 @@
 #define P_FAMILY_WOOPER                  P_GEN_2_POKEMON
 #define P_FAMILY_MURKROW                 P_GEN_2_POKEMON
 #define P_FAMILY_MISDREAVUS              FALSE
-#define P_FAMILY_UNOWN                   FALSE
+#define P_FAMILY_UNOWN                   P_GEN_2_POKEMON
 #define P_FAMILY_WOBBUFFET               FALSE
 #define P_FAMILY_GIRAFARIG               P_GEN_2_POKEMON
 #define P_FAMILY_PINECO                  FALSE
@@ -229,7 +229,7 @@
 #define P_FAMILY_LUNATONE                FALSE
 #define P_FAMILY_SOLROCK                 FALSE
 #define P_FAMILY_BARBOACH                P_GEN_3_POKEMON
-#define P_FAMILY_CORPHISH                FALSE
+#define P_FAMILY_CORPHISH                P_GEN_3_POKEMON
 #define P_FAMILY_BALTOY                  P_GEN_3_POKEMON
 #define P_FAMILY_LILEEP                  P_GEN_3_POKEMON
 #define P_FAMILY_ANORITH                 P_GEN_3_POKEMON

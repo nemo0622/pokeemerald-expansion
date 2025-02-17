@@ -1092,7 +1092,7 @@ AI: Check Bad Move / Check Viability  / AI_FLAG_ACE_POKEMON
 Party Size: 3
 Pool Rules: Basic
 
-Pawniard
+Magnemite
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Tags: Lead
@@ -1167,7 +1167,7 @@ AI: Check Bad Move / Check Viability / Try To Faint  / AI_FLAG_ACE_POKEMON
 Party Size: 4
 Pool Rules: Basic
 
-Pawniard
+Magnemite
 Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Tags: Lead
@@ -1823,7 +1823,7 @@ Cubchoo
 Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Pawniard
+Charcadet
 Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
