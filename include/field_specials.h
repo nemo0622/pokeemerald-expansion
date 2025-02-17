@@ -36,4 +36,6 @@ void PreparePartyForSkyBattle(void);
 void EnterMysteryGiftCode(void);
 void GetMysteryGiftFeedback(void);
 
+void CB2_FieldShowRegionMap(void);
+
 #endif // GUARD_FIELD_SPECIALS_H

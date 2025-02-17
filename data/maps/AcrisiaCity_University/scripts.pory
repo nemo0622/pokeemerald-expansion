@@ -625,9 +625,10 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
             setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
             closemessage
             speakername("Prof. Elia")
-            msgbox(format("Ah, speaking of electronics, here's an {COLOR GREEN}EXP. Share{COLOR DARK_GRAY} to help raise your Pokémon faster."))
+            msgbox(format("Ah, speaking of electronics, here's an {COLOR GREEN}EXP. Share{COLOR DARK_GRAY} to help raise your Pokémon faster. I'll give you a Town Map, too."))
             closemessage
             giveitem(ITEM_EXP_SHARE)
+            giveitem(ITEM_TOWN_MAP)
             speakername("Prof. Elia")
             msgbox(format("I think it's a good idea to train your Pokémon for battle, in case more troublemakers come around. Why don't you {COLOR GREEN}battle the Pokémon Gyms{COLOR DARK_GRAY} you find while you're exploring the Ilios Region? That'll get your Pokémon raring to go!"))
             closemessage

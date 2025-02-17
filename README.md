@@ -39,8 +39,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - GRAPHICAL REWORK - MAKE GAME LOOK MORE GBC!
-        - Strayed a tad too far - reference tiles from Polished Crystal with permission!
+    - Disable pokemon faint-victory anims in double battles (set a temporary flag?)
     - REWORK WANDERERS WOODS EVENT
         - Have egg contain random Pokémon from a pool based on who you choose
         - Choose Niko = random Electric, Steel, or Dark type
@@ -51,9 +50,6 @@ MAJOR TODOS:
         - Ask Discord for help with secret base shit, or just remove it
     - Replace surfing sprite with a Palafin you unlock to surf on
         - Make it so it unlocks with the Surf HM
-    - CONSIDER: Replacing berry trees and shit with Apricorn Trees
-        - https://github.com/GraionDilach/spinarakgreen/wiki/Apricorn-Trees-(pokeemerald%E2%80%90expansion)
-        - Exchange for important berries, Pokéballs, and other stuff at the Berry Club (rename to Apricorn Club ofc)
     - Implement Biv's Fishing Minigame
         - Maybe also that upgrade-able fishing rod thing?
         - Wait until treasure catching is implemented because that's so cool!
@@ -62,6 +58,7 @@ MAJOR TODOS:
         - Also test Town Map item (no PokéNav!)
     - Add evolution methods for hisuian forms
         - Make list of evolution items/methods used (stones, link cables, etc) to be added in marts / to maps
+    - Overworld speedup? https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Overworld-Speedup
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
