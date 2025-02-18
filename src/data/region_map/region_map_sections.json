@@ -190,13 +190,13 @@
       "x": 12,
       "y": 8,
       "width": 1,
-      "height": 3
+      "height": 4
     },
     {
       "map_section": "MAPSEC_FRESCO_ISLAND",
       "name": "Fresco Isles",
       "x": 13,
-      "y": 9,
+      "y": 10,
       "width": 1,
       "height": 1
     },
@@ -204,7 +204,7 @@
       "map_section": "MAPSEC_PALATI_CITY",
       "name": "Palati City",
       "x": 12,
-      "y": 11,
+      "y": 12,
       "width": 1,
       "height": 1
     },
@@ -212,7 +212,7 @@
       "map_section": "MAPSEC_KAPTARA_ISLAND",
       "name": "Kaptara Island",
       "x": 11,
-      "y": 11,
+      "y": 12,
       "width": 3,
       "height": 1
     },

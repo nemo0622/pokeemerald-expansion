@@ -55,7 +55,6 @@ MAJOR TODOS:
         - Wait until treasure catching is implemented because that's so cool!
     - Continue implementing GBC sprites of Pokémon
     - Finalize and Pretty-up the region map
-        - Also test Town Map item (no PokéNav!)
     - Add evolution methods for hisuian forms
         - Make list of evolution items/methods used (stones, link cables, etc) to be added in marts / to maps
     - Overworld speedup? https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Overworld-Speedup
@@ -196,6 +195,7 @@ Many, many talented developers and artists are responsible for making this proje
         - EeVeeEe1999: created many small sprites, especially for Gen 3, 5, 6, and 7 Pokémon
         - A few Gen 6 icon sprites by  dragonball253 (some Kalos starter icons)
     - Battle Backgrounds based on work by PurrfectDoodle, RavePossum, and Ruki; some slight edits by me
+    - HGSS-style map icon kit by NikNaks93 on DeviantArt
 
 
 
