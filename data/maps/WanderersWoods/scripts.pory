@@ -347,7 +347,7 @@ script WanderersWoods_EventScript_ChimeraEvent
     waitmovement(0)
     delay(20)
 
-    // Player hears a shout, choose if it was Niko (get Zygarde-Cell) or Rania (get Cosmog)
+    // Player hears a shout, choose if it was Niko or Rania (determines random Pokémon pool)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
     waitmovement(0)
     speakername("???")
@@ -371,7 +371,7 @@ script WanderersWoods_EventScript_ChimeraEvent
     delay(30)
 
     // Niko/Rania talks to player, gives rare egg
-    if(var(VAR_RESULT) == 0) // niko egg (zygarde cell)
+    if(var(VAR_RESULT) == 0) // niko egg (random electric, steel, or dark type)
     {
         applymovement(7, Common_Movement_FaceRight)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
@@ -379,7 +379,9 @@ script WanderersWoods_EventScript_ChimeraEvent
         speakername("Niko")
         msgbox(format("Team Chimera got away from us, but look what one of them dropped! It's a {COLOR GREEN}Pokémon Egg like I've never seen before{COLOR DARK_GRAY}! Maybe it holds a rare Pokémon.\p {PLAYER}, I want you to have it. Pokémon Eggs aren't my specialty."))
         closemessage
-        giveegg(SPECIES_ZYGARDE_CELL)
+        // generate random egg species and give
+        randomelement(SPECIES_MAREEP, SPECIES_BLITZLE, SPECIES_PACHIRISU, SPECIES_ELECTRIKE, SPECIES_PAWMI, SPECIES_WATTREL, SPECIES_PICHU, SPECIES_TOGEDEMARU, SPECIES_DEDENNE, SPECIES_CHINCHOU, SPECIES_HELIOPTILE, SPECIES_VOLTORB, SPECIES_VOLTORB_HISUI, SPECIES_MAGNEMITE, SPECIES_SANDSHREW_ALOLAN, SPECIES_MAWILE, SPECIES_ARON, SPECIES_HONEDGE, SPECIES_BRONZOR, SPECIES_CUFANT, SPECIES_MEOWTH_GALAR, SPECIES_TINKATINK, SPECIES_GRIMER_ALOLAN, SPECIES_MURKROW, SPECIES_VULLABY, SPECIES_SANDILE, SPECIES_HOUNDOUR, SPECIES_ZORUA, SPECIES_MEOWTH_ALOLAN, SPECIES_STUNKY, SPECIES_EKANS, SPECIES_SCRAGGY, SPECIES_IMPIDIMP, SPECIES_ZIGZAGOON_GALAR)
+        giveegg(VAR_RESULT)
         playfanfare(MUS_OBTAIN_ITEM)
         message(format("{PLAYER} received a {COLOR GREEN}Rare Egg{COLOR DARK_GRAY}!"))
         waitmessage
@@ -389,7 +391,7 @@ script WanderersWoods_EventScript_ChimeraEvent
         msgbox(format("Carry that Egg around until it hatches. Who knows, maybe it's a new species of Pokémon!\p Rania and I are gonna head back to the University for a while. Let us know if Pythios Town is worth a visit!"))
         closemessage
     }
-    else // rania egg (cosmog)
+    else // rania egg (random water, fire, or grass type)
     {
         applymovement(6, Common_Movement_FaceLeft)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
@@ -397,7 +399,9 @@ script WanderersWoods_EventScript_ChimeraEvent
         speakername("Rania")
         msgbox(format("Team Chimera got away from us, but look what one of them dropped! It's a {COLOR GREEN}Pokémon Egg like I've never seen before{COLOR DARK_GRAY}! Maybe it holds a rare Pokémon.\p {PLAYER}, I want you to have it. Pokémon Eggs aren't my specialty."))
         closemessage
-        giveegg(SPECIES_COSMOG)
+        // generate random egg species and give
+        randomelement(SPECIES_POPPLIO, SPECIES_FROAKIE, SPECIES_QUAXLY, SPECIES_PANPOUR, SPECIES_DUCKLETT, SPECIES_POLIWAG, SPECIES_WOOPER, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_WINGULL, SPECIES_SPHEAL, SPECIES_SEEL, SPECIES_BUIZEL, SPECIES_WIMPOD, SPECIES_FINIZEN, SPECIES_CORSOLA, SPECIES_FINNEON, SPECIES_WAILMER, SPECIES_TENTACOOL, SPECIES_CLAUNCHER, SPECIES_BASCULIN_WHITE_STRIPED, SPECIES_SKRELP, SPECIES_CHINCHOU, SPECIES_SHELLDER, SPECIES_CLAMPERL, SPECIES_RELICANTH, SPECIES_MAGIKARP, SPECIES_BRUXISH, SPECIES_LAPRAS, SPECIES_PSYDUCK, SPECIES_REMORAID, SPECIES_CORPHISH, SPECIES_TIRTOUGA, SPECIES_ROWLET, SPECIES_CHESPIN, SPECIES_SPRIGATITO, SPECIES_PANSAGE, SPECIES_HOPPIP, SPECIES_PARAS, SPECIES_APPLIN, SPECIES_SKIDDO, SPECIES_PUMPKABOO, SPECIES_SHROOMISH, SPECIES_BOUNSWEET, SPECIES_TOEDSCOOL, SPECIES_CHERUBI, SPECIES_LILEEP, SPECIES_FOMANTIS, SPECIES_VOLTORB_HISUI, SPECIES_BUDEW, SPECIES_SNOVER, SPECIES_LITTEN, SPECIES_FENNEKIN, SPECIES_FUECOCO, SPECIES_PANSEAR, SPECIES_VULPIX, SPECIES_SALANDIT, SPECIES_HOUNDOUR, SPECIES_PONYTA, SPECIES_LITWICK, SPECIES_CHARCADET, SPECIES_TORKOAL, SPECIES_NUMEL, SPECIES_GROWLITHE, SPECIES_GROWLITHE_HISUI)
+        giveegg(VAR_RESULT)
         playfanfare(MUS_OBTAIN_ITEM)
         message(format("{PLAYER} received a {COLOR GREEN}Rare Egg{COLOR DARK_GRAY}!"))
         waitmessage

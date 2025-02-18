@@ -39,12 +39,6 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - Disable pokemon faint-victory anims in double battles (set a temporary flag?)
-    - REWORK WANDERERS WOODS EVENT
-        - Have egg contain random Pokémon from a pool based on who you choose
-        - Choose Niko = random Electric, Steel, or Dark type
-        - Choose Rania = random Water, Fire, or Grass type
-        - Force shiny! Like Odd Egg in Crystal type beat
     - Fix Cabin shit from Piraeus' ship
         - Redo dialogue and stuff
         - Ask Discord for help with secret base shit, or just remove it
@@ -100,8 +94,6 @@ GREEK PHRASES AND STUFF:
             - If flag FLAG_UNLOCKED_TERASTALLIZATION set, allow Gym Leaders to terastallize? Seems fair
             - ALSO: change Pinball egg shop in Sofos City to a Tera Shard distributor (1 random shard per point)
         - Berry plant locations
-            - Consider things like mulch and hybrids?
-            - Create Flower Shop area also selling nature mints
         - Hidden & Ball items across maps
             - ex: add item ball in acrisia city rock smash area!
         - Fishing Rod locations (Good/Super rods still need places)
