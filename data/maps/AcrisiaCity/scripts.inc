@@ -685,8 +685,9 @@ AcrisiaCity_EventScript_NinjaBoy_Text_0:
 
 AcrisiaCity_EventScript_NinjaBoy_Text_1:
 # 211 "data/maps/AcrisiaCity/scripts.pory"
-	.string "The Pokémon here are so cool! I wanna\n"
-	.string "find them all!$"
+	.string "Some Pokémon are brave enough to walk\n"
+	.string "around openly in the grass! It's so\l"
+	.string "cool!$"
 
 AcrisiaCity_EventScript_RailMan_Text_0:
 # 221 "data/maps/AcrisiaCity/scripts.pory"

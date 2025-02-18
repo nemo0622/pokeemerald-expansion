@@ -208,7 +208,7 @@ script AcrisiaCity_EventScript_NinjaBoy
     lock
     faceplayer
     speakername("Excited Boy")
-    msgbox(format("The Pokémon here are so cool! I wanna find them all!"))
+    msgbox(format("Some Pokémon are brave enough to walk around openly in the grass! It's so cool!"))
     closemessage
     release
     end

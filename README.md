@@ -137,6 +137,7 @@ Many, many talented developers and artists are responsible for making this proje
 - New Continue Menu UI by Archie
 - Overworld Encounters by [HashtagMarky](https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters)
 - GSC/HGSS Ruins of Alph Sliding Puzzles by [Spherical Ice](https://www.pokecommunity.com/threads/ruins-of-alph-sliding-puzzles-pokefirered.463032/)
+- Town Map feature port by Vol
 
 ### Graphics
 - Tilesets:
