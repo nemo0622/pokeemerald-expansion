@@ -47,16 +47,20 @@ MAJOR TODOS:
     - Implement Biv's Fishing Minigame
         - Maybe also that upgrade-able fishing rod thing?
         - Wait until treasure catching is implemented because that's so cool!
-    - Continue implementing GBC sprites of Pokémon
-    - Finalize and Pretty-up the region map
-    - Add evolution methods for hisuian forms
+    - POKÉMON REBALANCING
+        - Remove totally busted moves and change abilities to be less cracked (I'm looking at you froslass)
+        - Add evolution methods for hisuian forms
         - Make list of evolution items/methods used (stones, link cables, etc) to be added in marts / to maps
     - Overworld speedup? https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Overworld-Speedup
+    - Make maps for new area east of Acrisia City
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
-        - Arena-like pirate cove area similar to AC: Odyssey
-        - Eastern cliff expansion off Sofos City with encounters and Parthenon area (legendary encounters?)
+        - Riverwalk Trail: east of Acrisia City, curving south near end to Potami City
+            - Slightly swampy area with some reeds, but not major swamp area. Whole route slopes down from west-east
+        - Potami City: city among rivers, based on city of Volos (real city in area with 3 rivers flowing through)
+            - City centered around 3 main rivers, with many bridges and palm trees
+        - Explore AC odyssey world for other location inspo lol
 - REBALANCING: go through all Pokémon and balance/rebalance, update movesets, etc.
     - Learn from Seaglass feedback! Less extreme buffs, more balance
     - Rewrite custom Pokédex entries for each mon!
@@ -116,6 +120,7 @@ GREEK PHRASES AND STUFF:
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown correctly when hunting
 - When all Pokédex flags set, Caught Pokémon icon in battle appears twice
+- Water surfing encounter background palette messed up, see in game
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
