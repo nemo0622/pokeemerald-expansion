@@ -864,10 +864,10 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_PIKA_POSTER,
     },
 
-    [DECOR_LONG_POSTER] =
+    [DECOR_PUPPY_POSTER] =
     {
-        .id = DECOR_LONG_POSTER,
-        .name = _("LONG POSTER"),
+        .id = DECOR_PUPPY_POSTER,
+        .name = _("Puppy Poster"),
         .permission = DECORPERM_NA_WALL,
         .shape = DECORSHAPE_2x1,
         .category = DECORCAT_POSTER,

@@ -73,7 +73,7 @@
 #define DECOR_BLUE_POSTER      69
 #define DECOR_CUTE_POSTER      70
 #define DECOR_PIKA_POSTER      71
-#define DECOR_LONG_POSTER      72
+#define DECOR_PUPPY_POSTER     72 // replaces LONG_POSTER; shows Hisuian and Kantonian Growlithe
 #define DECOR_SEA_POSTER       73
 #define DECOR_SKY_POSTER       74
 #define DECOR_KISS_POSTER      75

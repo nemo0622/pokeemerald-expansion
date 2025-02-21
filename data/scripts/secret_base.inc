@@ -140,6 +140,7 @@ SecretBase_EventScript_InitSecretBase::
 	setvar VAR_0x8005, 0
 	special InitSecretBaseDecorationSprites
 	setvar VAR_SECRET_BASE_INITIALIZED, 1
+	setflag FLAG_INITIALIZED_CABIN
 	waitstate
 	end
 
@@ -147,11 +148,14 @@ SecretBase_EventScript_FirstEntrance::
 	applymovement OBJ_EVENT_ID_PLAYER, SecretBase_Movement_EnterBase
 	waitmovement 0
 	setvar VAR_INIT_SECRET_BASE, 1
-	msgbox SecretBase_Text_WantToMakeYourSecretBaseHere, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, SecretBase_EventScript_SetAsBase
+	@ commented out because in lazarus it's not an option lol it's just the cabin of the Delphis so
+	@ msgbox SecretBase_Text_WantToMakeYourSecretBaseHere, MSGBOX_YESNO
+	@ goto_if_eq VAR_RESULT, YES, SecretBase_EventScript_SetAsBase
+	msgbox SecretBase_Text_WantToMakeYourSecretBaseHere
+	goto SecretBase_EventScript_SetAsBase
 	closemessage
-	playse SE_EXIT
-	special ClearAndLeaveSecretBase
+	@ playse SE_EXIT
+	@ special ClearAndLeaveSecretBase
 	end
 
 SecretBase_EventScript_SetAsBase::
@@ -176,6 +180,8 @@ SecretBase_EventScript_Enter::
 	special EnterSecretBase
 	setvar VAR_SECRET_BASE_INITIALIZED, 0
 	waitstate
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
 	end
 
 SecretBase_EventScript_EnterPlayersBase::

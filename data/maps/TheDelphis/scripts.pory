@@ -1,28 +1,110 @@
-mapscripts TheDelphis_MapScripts {}
+mapscripts TheDelphis_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: TheDelphis_EventScript_CheckStatus
+    ]
+}
 
-script TheDelphis_EventScript_CabinSign
+script TheDelphis_EventScript_CheckStatus
+{
+    setvar(VAR_TEMP_1, 1) // ensures only called once
+    if(!flag(FLAG_ON_PIRAEUS_BOAT))
+    {
+        goto(TheDelphis_EventScript_EnterBoatCutscene) // only do enter boat cutscene when first getting on, NOT from cabin
+    }
+}
+
+script TheDelphis_EventScript_EnterBoatCutscene
 {
     lock
-    msgbox(format("{PLAYER}'s Cabin"))
+    applymovement(1, TheDelphis_Movement_PiraeusGreetPlayer)
+    applymovement(OBJ_EVENT_ID_PLAYER, TheDelphis_Movement_PlayerLeaveDoorway)
+    applymovement(7, TheDelphis_Movement_PiraeusGreetPlayer)
+    waitmovement(0)
+    delay(10)
+
+    speakername("Piraeus")
+    msgbox(format("Welcome to The Delphis! We're en route to our destination, so feel free to {COLOR GREEN}press A at the door to check your Cabin{COLOR DARK_GRAY}. When you're ready to leave, just stand by that {COLOR GREEN}Exit door{COLOR DARK_GRAY}.\p Don't get seasick, now! We'll be there soon!"))
     closemessage
-    release
+
+    // if first time, give decorations to Player
+    if(!flag(FLAG_USED_PIRAEUS_BOAT_BEFORE))
+    {
+        delay(60)
+        applymovement(1, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        speakername("Piraeus")
+        msgbox(format("Ah, I suppose you won't have much to decorate your Cabin with yet! I've put a few basic items in your personal PC, which you can find in the room."))
+        closemessage
+        // gives decorations silently (i hope)
+        adddecoration(DECOR_SMALL_DESK)
+        adddecoration(DECOR_SMALL_CHAIR)
+        adddecoration(DECOR_TV)
+        adddecoration(DECOR_BALL_POSTER)
+        adddecoration(DECOR_SURF_MAT)
+        adddecoration(DECOR_PUPPY_POSTER)
+        setflag(FLAG_USED_PIRAEUS_BOAT_BEFORE)
+    }
+
+    applymovement(1, TheDelphis_Movement_PiraeusGoToDesk)
+    applymovement(7, TheDelphis_Movement_PiraeusGoToDesk)
+    waitmovement(0)
+    applymovement(7, Common_Movement_FaceRight)
+    waitmovement(0)
+
+    setflag(FLAG_ON_PIRAEUS_BOAT)
+    setflag(FLAG_HIDE_SECRET_BASE_TRAINER) // hides secret base trainer ig?
+    releaseall
     end
 }
 
-script TheDelphis_EventScript_PIRAEUS
+movement TheDelphis_Movement_PiraeusGreetPlayer
+{
+    walk_right * 3
+    step_end
+}
+movement TheDelphis_Movement_PlayerLeaveDoorway
+{
+    delay_16
+    walk_left * 2
+    step_end
+}
+movement TheDelphis_Movement_PiraeusGoToDesk
+{
+    walk_left * 3
+    face_down
+    step_end
+}
+
+// ----------------------------------------------------------------------------------------------
+
+script TheDelphis_EventScript_LeaveShipTrigger
 {
     lock
-    faceplayer
-    speakername("PIRAEUS")
-    msgbox(format("How're you liking The Delphis, {PLAYER}? Make sure to check out {COLOR GREEN}your Cabin{COLOR DARK_GRAY} and decorate it!\p I can feel the boat slowing down, so we must be near our destination. Are you ready to leave?"), MSGBOX_YESNO)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(20)
+    applymovement(1, TheDelphis_Movement_PiraeusGreetPlayer)
+    applymovement(7, TheDelphis_Movement_PiraeusGreetPlayer)
+    waitmovement(0)
+    speakername("Piraeus")
+    msgbox(format("I can feel the boat slowing down, so we must be near our destination. Are you ready to leave?"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == 0) // stay on boat
     {
-        speakername("PIRAEUS")
+        speakername("Piraeus")
         msgbox(format("No rush! You're always welcome on The Delphis!"))
         closemessage
+        applymovement(1, TheDelphis_Movement_PiraeusGoToDesk)
+        applymovement(7, TheDelphis_Movement_PiraeusGoToDesk)
+        waitmovement(0)
+        applymovement(7, Common_Movement_FaceRight)
+        waitmovement(0)
     }
     else
     {
+        // clear all boat flags
+        clearflag(FLAG_ON_PIRAEUS_BOAT)
+
         // warp to appropriate location using VAR_CHOSEN_SAIL_LOCATION
         if(var(VAR_CHOSEN_SAIL_LOCATION) == 1) // pythios town
         {
@@ -65,17 +147,162 @@ script TheDelphis_EventScript_PIRAEUS
             waitstate
         }
     }
+    releaseall
+    end
+}
+
+script TheDelphis_EventScript_CabinSign
+{
+    lock
+    msgbox(format("{PLAYER}'s Cabin"))
+    closemessage
+    release
+    end
+}
+script TheDelphis_EventScript_Book
+{
+    lock
+    msgbox(format("Vaporeon's paw prints have smudged up the words! Piraeus isn't reading here at all!"))
+    closemessage
     release
     end
 }
 
-script TheDelphis_EventScript_SailorBlockingCabin
+script TheDelphis_EventScript_PIRAEUS
+{
+    lock
+    random(3)
+    switch (var(VAR_RESULT)) {
+        case 0: goto(TheDelphis_EventScript_PiraeusInteraction1)
+        case 1: goto(TheDelphis_EventScript_PiraeusInteraction2)
+        case 2: goto(TheDelphis_EventScript_PiraeusInteraction3)
+    }
+    release
+    end
+}
+script TheDelphis_EventScript_PiraeusInteraction1
+{
+    speakername("Piraeus")
+    msgbox(format("...Zzz...snort!...zzz..."))
+    closemessage
+    msgbox(format("He's snoozing!"))
+    closemessage
+    delay(60)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(1, Common_Movement_FacePlayer)
+    waitmovement(0)
+    speakername("Piraeus")
+    msgbox(format("Hm? {PLAYER}! No, no, I wasn't sleeping... I was reading and needed to rest my eyes, that's all!"))
+    closemessage
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+script TheDelphis_EventScript_PiraeusInteraction2
+{
+    faceplayer
+    speakername("Piraeus")
+    msgbox(format("Have you met my crew? We're a bit of a rag-tag bunch, but that makes sailing so much more fun."))
+    closemessage
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+script TheDelphis_EventScript_PiraeusInteraction3
+{
+    faceplayer
+    speakername("Piraeus")
+    msgbox(format("Are you enjoying your Cabin, {PLAYER}? I figure I owe you for saving my butt back in Pythios Town, so you can decorate it however you want."))
+    closemessage
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script TheDelphis_EventScript_Sailor
 {
     lock
     faceplayer
     speakername("Sailor")
-    msgbox(format("Sorry, the Cabin isn't available right now."))
+    msgbox(format("Hey, watch it! This food is all mine!\p ...You were just saying hi? Well, hi.\p Um... have you seen this Arcanine statue? Pretty cool, huh?"))
     closemessage
     release
+    end
+}
+
+script TheDelphis_EventScript_PunkRocker
+{
+    lock
+    faceplayer
+    speakername("Punk Rocker")
+    msgbox(format("I'm trying to get these guys to form a band with me. Right now, I'm the only one who can play an instrument! It makes music nights kind of boring."))
+    closemessage
+    release
+    end
+}
+
+script TheDelphis_EventScript_TogaGirl
+{
+    lock
+    faceplayer
+    speakername("Toga Lady")
+    msgbox(format("I play with our Passimian while we're on the ship.\p Passimian helps us fight off wild Pokémon, while Oranguru can use psychic powers to steer us clear of storms. Pokémon are so helpful!"))
+    closemessage
+    release
+    end
+}
+
+script TheDelphis_EventScript_Passimian
+{
+    lock
+    faceplayer
+    speakername("Passimian")
+    playmoncry(SPECIES_PASSIMIAN, CRY_MODE_NORMAL)
+    msgbox("Cree-ee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script TheDelphis_EventScript_Oranguru
+{
+    lock
+    faceplayer
+    speakername("Oranguru")
+    playmoncry(SPECIES_ORANGURU, CRY_MODE_NORMAL)
+    msgbox("Mmm... oo-oo!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script TheDelphis_EventScript_CabinDoorInteract
+{
+    lock
+    msgbox(format("Enter {PLAYER}'s Cabin?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0) // no
+    {
+        closemessage
+    }
+    else
+    {
+        closemessage
+        // special(EnterSecretBase)
+        if(!flag(FLAG_INITIALIZED_CABIN))
+        {
+            goto(SecretBase_EventScript_InitSecretBase)
+        }
+        else
+        {
+            goto(SecretBase_EventScript_Enter)
+        }
+    }
+    releaseall
     end
 }

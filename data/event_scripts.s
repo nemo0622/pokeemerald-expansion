@@ -1683,3 +1683,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/TheDelphis/scripts.inc"
 
 	.include "data/maps/SecretBase_TheDelphisCabin/scripts.inc"
+
+	.include "data/maps/TheDelphis_PlayerCabin/scripts.inc"

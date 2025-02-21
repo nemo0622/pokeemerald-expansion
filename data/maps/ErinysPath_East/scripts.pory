@@ -44,7 +44,7 @@ script ErinysPath_East_EventScript_ChimeraWalrein
         waitmovement(0)
         delay(30)
         speakername("Chimera Admin")
-        msgbox(format("Hold it right there... I've been scouting around Pythios Town, and I think I saw you hanging around that PIRAEUS guy! That fool wouldn't donate his ratty little boat to our cause, then took a Team Chimera member by surprise!\p I'll destroy you, then I'll take down PIRAEUS!"))
+        msgbox(format("Hold it right there... I've been scouting around Pythios Town, and I think I saw you hanging around that Piraeus guy! That fool wouldn't donate his ratty little boat to our cause, then took a Team Chimera member by surprise!\p I'll destroy you, then I'll take down Piraeus!"))
         closemessage
         if(var(VAR_DIFFICULTY) == 0)
         {
@@ -64,7 +64,7 @@ script ErinysPath_East_EventScript_ChimeraWalrein
         waitmovement(0)
         delay(20)
         speakername("Chimera Admin")
-        msgbox(format("...Well, so much for team loyalty.\p Looks like you and PIRAEUS are winning for now. Mark my words, Team Chimera will make you pay for this humiliation!"))
+        msgbox(format("...Well, so much for team loyalty.\p Looks like you and Piraeus are winning for now. Mark my words, Team Chimera will make you pay for this humiliation!"))
         closemessage
         
         applymovement(1, ErinysPath_East_Movement_ChimeraAdminFlee)
@@ -73,7 +73,7 @@ script ErinysPath_East_EventScript_ChimeraWalrein
 
         applymovement(4, ErinysPath_East_Movement_PIRAEUSApproach)
         waitmovement(0)
-        speakername("PIRAEUS")
+        speakername("Piraeus")
         msgbox(format("Woah, I never thought I'd see that Chimera thug run like that! I was climbing up the cliff to ambush him, but looks like you beat me!\p Really, I owe you a lot, {PLAYER}. You've saved my ship, so I'll offer you what I can - my service.\p I'll stop at docks around {COLOR GREEN}coastal towns and islands{COLOR DARK_GRAY}. Talk to me if you want to {COLOR GREEN}sail with me{COLOR DARK_GRAY} and get places faster! You can also have {COLOR GREEN}your own room{COLOR DARK_GRAY} on The Delphis. Chaire!"))
         closemessage
         applymovement(4, ErinysPath_East_Movement_PIRAEUSExit)
@@ -89,7 +89,7 @@ script ErinysPath_East_EventScript_ChimeraWalrein
         fadescreenswapbuffers(FADE_FROM_BLACK)
         delay(20)
 
-        msgbox(format("You can now travel with {COLOR GREEN}PIRAEUS{COLOR DARK_GRAY} on his ship, {COLOR GREEN}The Delphis{COLOR DARK_GRAY}!\p Some areas can only be reached via sailing with PIRAEUS, unlocked based on {COLOR GREEN}Gym Badges{COLOR DARK_GRAY}. Sailing to a location is only unlocked {COLOR GREEN}after visiting it{COLOR DARK_GRAY} if accessible by Surf or walking."))
+        msgbox(format("You can now travel with {COLOR GREEN}Piraeus{COLOR DARK_GRAY} on his ship, {COLOR GREEN}The Delphis{COLOR DARK_GRAY}!\p Some areas can only be reached via sailing with Piraeus, unlocked based on {COLOR GREEN}Gym Badges{COLOR DARK_GRAY}.\p A {COLOR GREEN}customizable Cabin{COLOR DARK_GRAY} room is also reserved on The Delphis!"))
         closemessage
         setflag(FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN)
     }
@@ -99,7 +99,7 @@ script ErinysPath_East_EventScript_ChimeraWalrein
 
 text ErinysPath_East_Text_ChimeraAdminDefeated
 {
-    format("First PIRAEUS, then you... Team Chimera is having real problems recently.")
+    format("First Piraeus, then you... Team Chimera is having real problems recently.")
 }
 
 movement ErinysPath_East_Movement_BasculinFlee

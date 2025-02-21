@@ -42,8 +42,6 @@ MAJOR TODOS:
     - Fix Cabin shit from Piraeus' ship
         - Redo dialogue and stuff
         - Ask Discord for help with secret base shit, or just remove it
-    - Replace surfing sprite with a Palafin you unlock to surf on
-        - Make it so it unlocks with the Surf HM
     - Implement Biv's Fishing Minigame
         - Maybe also that upgrade-able fishing rod thing?
         - Wait until treasure catching is implemented because that's so cool!
@@ -111,6 +109,9 @@ GREEK PHRASES AND STUFF:
             - Unlocked by Rania quest line?
         - Spiky Ear Pichu gift
         - Wishing Star mart location
+        - Ogerpon gift event
+            - Reward for helping Daycare / zoo area?
+        - Cabin (secret base) decor shops!
 
 - LAZARUS PREVIEW PLANS
     - Preview 01 (12/6/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.

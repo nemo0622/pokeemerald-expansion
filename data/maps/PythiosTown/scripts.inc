@@ -835,7 +835,7 @@ PythiosTown_EventScripts_PIRAEUS_35:
 	goto_if_eq PythiosTown_EventScripts_PIRAEUS_52
 PythiosTown_EventScripts_PIRAEUS_45:
 # 548 "data/maps/PythiosTown/scripts.pory"
-	warp MAP_THE_DELPHIS, 9, 3
+	warp MAP_THE_DELPHIS, 9, 2
 # 549 "data/maps/PythiosTown/scripts.pory"
 	waitstate
 	goto PythiosTown_EventScripts_PIRAEUS_1
@@ -1306,13 +1306,13 @@ PythiosTown_EventScripts_PIRAEUS_Text_4:
 
 PythiosTown_EventScripts_PIRAEUS_Text_5:
 # 434 "data/maps/PythiosTown/scripts.pory"
-	.string "PIRAEUS$"
+	.string "Piraeus$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_6:
 # 435 "data/maps/PythiosTown/scripts.pory"
-	.string "Oh, and tell 'em {COLOR GREEN}PIRAEUS{COLOR DARK_GRAY} sent you!\n"
-	.string "PIRAEUS the Strong! No, PIRAEUS the\l"
-	.string "Wise... maybe even PIRAEUS the Great!\l"
+	.string "Oh, and tell 'em {COLOR GREEN}Piraeus{COLOR DARK_GRAY} sent you!\n"
+	.string "Piraeus the Strong! No, Piraeus the\l"
+	.string "Wise... maybe even Piraeus the Great!\l"
 	.string "Fwahaha!$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_7:

@@ -304,23 +304,23 @@ ErinysPath_East_EventScript_ChimeraWalrein_Text_2:
 # 47 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Hold it right there... I've been scouting\n"
 	.string "around Pythios Town, and I think I saw\l"
-	.string "you hanging around that PIRAEUS guy!\l"
+	.string "you hanging around that Piraeus guy!\l"
 	.string "That fool wouldn't donate his ratty\l"
 	.string "little boat to our cause, then took a\l"
 	.string "Team Chimera member by surprise!\p"
 	.string "I'll destroy you, then I'll take down\n"
-	.string "PIRAEUS!$"
+	.string "Piraeus!$"
 
 ErinysPath_East_EventScript_ChimeraWalrein_Text_3:
 # 67 "data/maps/ErinysPath_East/scripts.pory"
 	.string "...Well, so much for team loyalty.\p"
-	.string "Looks like you and PIRAEUS are winning\n"
+	.string "Looks like you and Piraeus are winning\n"
 	.string "for now. Mark my words, Team Chimera will\l"
 	.string "make you pay for this humiliation!$"
 
 ErinysPath_East_EventScript_ChimeraWalrein_Text_4:
 # 76 "data/maps/ErinysPath_East/scripts.pory"
-	.string "PIRAEUS$"
+	.string "Piraeus$"
 
 ErinysPath_East_EventScript_ChimeraWalrein_Text_5:
 # 77 "data/maps/ErinysPath_East/scripts.pory"
@@ -339,15 +339,15 @@ ErinysPath_East_EventScript_ChimeraWalrein_Text_5:
 
 ErinysPath_East_EventScript_ChimeraWalrein_Text_6:
 # 92 "data/maps/ErinysPath_East/scripts.pory"
-	.string "You can now travel with {COLOR GREEN}PIRAEUS{COLOR DARK_GRAY} on his\n"
+	.string "You can now travel with {COLOR GREEN}Piraeus{COLOR DARK_GRAY} on his\n"
 	.string "ship, {COLOR GREEN}The Delphis{COLOR DARK_GRAY}!\p"
 	.string "Some areas can only be reached via\n"
-	.string "sailing with PIRAEUS, unlocked based on\l"
-	.string "{COLOR GREEN}Gym Badges{COLOR DARK_GRAY}. Sailing to a location is only\l"
-	.string "unlocked {COLOR GREEN}after visiting it{COLOR DARK_GRAY} if accessible\l"
-	.string "by Surf or walking.$"
+	.string "sailing with Piraeus, unlocked based on\l"
+	.string "{COLOR GREEN}Gym Badges{COLOR DARK_GRAY}.\p"
+	.string "A {COLOR GREEN}customizable Cabin{COLOR DARK_GRAY} room is also\n"
+	.string "reserved on The Delphis!$"
 
 ErinysPath_East_Text_ChimeraAdminDefeated::
 # 100 "data/maps/ErinysPath_East/scripts.pory"
-	.string "First PIRAEUS, then you... Team Chimera\n"
+	.string "First Piraeus, then you... Team Chimera\n"
 	.string "is having real problems recently.$"

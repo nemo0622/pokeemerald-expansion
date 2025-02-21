@@ -894,7 +894,8 @@ static bool8 TryDoorWarp(struct MapPosition *position, u16 metatileBehavior, u8 
 
     if (direction == DIR_NORTH)
     {
-        if (MetatileBehavior_IsOpenSecretBaseDoor(metatileBehavior) == TRUE)
+        if ((MetatileBehavior_IsOpenSecretBaseDoor(metatileBehavior) == TRUE) || 
+        (MetatileBehavior_IsWarpDoor(metatileBehavior) == TRUE && GetCurrentRegionMapSectionId() == MAPSEC_THE_DELPHIS)) // hacky workaround because the only working door on the Delphis is the door to the cabin
         {
             WarpIntoSecretBase(position, gMapHeader.events);
             return TRUE;

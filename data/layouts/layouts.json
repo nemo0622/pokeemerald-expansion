@@ -4960,6 +4960,16 @@
       "secondary_tileset": "gTileset_SecretBaseBrownCave",
       "border_filepath": "data/layouts/SecretBase_TheDelphisCabin/border.bin",
       "blockdata_filepath": "data/layouts/SecretBase_TheDelphisCabin/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_DELPHIS_PLAYER_CABIN",
+      "name": "TheDelphis_PlayerCabin_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/TheDelphis_PlayerCabin/border.bin",
+      "blockdata_filepath": "data/layouts/TheDelphis_PlayerCabin/map.bin"
     }
   ]
 }
