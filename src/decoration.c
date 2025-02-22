@@ -1516,7 +1516,7 @@ static bool8 IsFloorOrBoardAndHole(u16 behaviorAt, const struct Decoration *deco
 {
     if (MetatileBehavior_IsSecretBaseTrainerSpot(behaviorAt) != TRUE)
     {
-        if (decoration->id == DECOR_SOLID_BOARD && MetatileBehavior_IsSecretBaseHole(behaviorAt) == TRUE)
+        if (decoration->id == DECOR_SHRINE && MetatileBehavior_IsSecretBaseHole(behaviorAt) == TRUE)
             return TRUE;
 
         if (MetatileBehavior_IsNormal(behaviorAt))

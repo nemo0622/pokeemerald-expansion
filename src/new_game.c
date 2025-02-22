@@ -212,7 +212,7 @@ void NewGameInitData(void)
     gSaveBlock1Ptr->dexNavChain = 0;
     gSaveBlock2Ptr->autoRun = FALSE;
     FlagSet(FLAG_SUPPRESS_SPEAKER_NAME);
-    FakeRtc_ManuallySetTime(9, 0, 0); // sets time to 9 am in new game
+    FakeRtc_ManuallySetTime(10, 30, 0); // sets time to 10:30 am in new game
 }
 
 static void ResetMiniGamesRecords(void)

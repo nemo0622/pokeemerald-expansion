@@ -1,6 +1,6 @@
 static const u16 sFrontierExchangeCorner_Decor1[] =
 {
-    DECOR_KISS_POSTER,
+    DECOR_SUNSET_POSTER,
     DECOR_KISS_CUSHION,
     DECOR_SMOOCHUM_DOLL,
     DECOR_TOGEPI_DOLL,

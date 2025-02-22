@@ -171,11 +171,11 @@ Route110_TrickHouseEnd_EventScript_ChooseTent::
 	goto Route110_TrickHouseEnd_EventScript_GiveBlueTent
 
 Route110_TrickHouseEnd_EventScript_GiveRedTent::
-	givedecoration DECOR_RED_TENT
+	givedecoration DECOR_ENTERTAINMENT_CENTER
 	return
 
 Route110_TrickHouseEnd_EventScript_GiveBlueTent::
-	givedecoration DECOR_BLUE_TENT
+	givedecoration DECOR_POKEBALL_STATION
 	return
 
 Route110_TrickHouseEnd_EventScript_TrickMasterExit::

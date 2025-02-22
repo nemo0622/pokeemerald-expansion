@@ -182,33 +182,33 @@ const u16 DecorGfx_YELLOW_BALLOON[] = {
     DECOR_TILE(YellowBalloon)
 };
 
-const u16 DecorGfx_RED_TENT[] = {
-    DECOR_TILE(RedTent_TopLeft),
-    DECOR_TILE(RedTent_TopMid),
-    DECOR_TILE(RedTent_TopRight),
-    DECOR_TILE(RedTent_MidLeft),
-    DECOR_TILE(RedTent_DoorTop),
-    DECOR_TILE(RedTent_MidRight),
-    DECOR_TILE(RedTent_BottomLeft),
-    DECOR_TILE(RedTent_Door),
-    DECOR_TILE(RedTent_BottomRight)
+const u16 DecorGfx_ENTERTAINMENT_CENTER[] = {
+    (METATILE_SecretBaseRedCave_EntertainmentCenter_TopLeft - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_EntertainmentCenter_TopMid - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_EntertainmentCenter_TopRight - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_EntertainmentCenter_MidLeft - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_EntertainmentCenter_Center - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_EntertainmentCenter_MidRight - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_EntertainmentCenter_BottomLeft - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_EntertainmentCenter_BottomMid - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_EntertainmentCenter_BottomRight - NUM_TILES_IN_PRIMARY)
 };
 
-const u16 DecorGfx_BLUE_TENT[] = {
-    DECOR_TILE(BlueTent_TopLeft),
-    DECOR_TILE(BlueTent_TopMid),
-    DECOR_TILE(BlueTent_TopRight),
-    DECOR_TILE(BlueTent_MidLeft),
-    DECOR_TILE(BlueTent_DoorTop),
-    DECOR_TILE(BlueTent_MidRight),
-    DECOR_TILE(BlueTent_BottomLeft),
-    DECOR_TILE(BlueTent_Door),
-    DECOR_TILE(BlueTent_BottomRight)
+const u16 DecorGfx_POKEBALL_STATION[] = {
+    (METATILE_SecretBaseRedCave_PokeballStation_TopLeft - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PokeballStation_TopMid - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PokeballStation_TopRight - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PokeballStation_MidLeft - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PokeballStation_Center - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PokeballStation_MidRight - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PokeballStation_BottomLeft - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PokeballStation_BottomMid - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PokeballStation_BottomRight - NUM_TILES_IN_PRIMARY)
 };
 
-const u16 DecorGfx_SOLID_BOARD[] = {
-    DECOR_TILE(SolidBoard_Top),
-    DECOR_TILE(SolidBoard_Bottom)
+const u16 DecorGfx_SHRINE[] = {
+    (METATILE_SecretBaseRedCave_Shrine_Top - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_Shrine_Base1 - NUM_TILES_IN_PRIMARY)
 };
 
 const u16 DecorGfx_SLIDE[] = {
@@ -248,8 +248,8 @@ const u16 DecorGfx_STAND[] = {
     DECOR_TILE(Stand_StairsRight)
 };
 
-const u16 DecorGfx_MUD_BALL[] = {
-    DECOR_TILE(MudBall)
+const u16 DecorGfx_MINOTAUROS_PLAQUE[] = {
+    (METATILE_SecretBaseRedCave_MinotaurosHead - NUM_TILES_IN_PRIMARY)
 };
 
 const u16 DecorGfx_BREAKABLE_DOOR[] = {
@@ -640,4 +640,26 @@ const u16 DecorGfx_REGICE_DOLL[] = {
 
 const u16 DecorGfx_REGISTEEL_DOLL[] = {
     OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL
+};
+
+const u16 DecorGfx_SMALL_FLOWER_BOX[] = {
+    (METATILE_SecretBaseRedCave_SmallFlowerBox - NUM_TILES_IN_PRIMARY)
+};
+
+const u16 DecorGfx_LARGE_BED[] = {
+    (METATILE_SecretBaseRedCave_LargeBed_TopLeft - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_LargeBed_TopRight - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_LargeBed_BottomLeft - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_LargeBed_BottomRight - NUM_TILES_IN_PRIMARY),
+};
+
+const u16 DecorGfx_PATTERNED_BED[] = {
+    (METATILE_SecretBaseRedCave_PatternedBed_TopLeft - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PatternedBed_TopRight - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PatternedBed_BottomLeft - NUM_TILES_IN_PRIMARY),
+    (METATILE_SecretBaseRedCave_PatternedBed_BottomRight - NUM_TILES_IN_PRIMARY),
+};
+
+const u16 DecorGfx_BOOK_AND_QUILL[] = {
+    (METATILE_SecretBaseRedCave_BookAndQuill - NUM_TILES_IN_PRIMARY)
 };

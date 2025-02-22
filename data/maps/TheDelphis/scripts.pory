@@ -41,7 +41,6 @@ script TheDelphis_EventScript_EnterBoatCutscene
         adddecoration(DECOR_TV)
         adddecoration(DECOR_BALL_POSTER)
         adddecoration(DECOR_SURF_MAT)
-        adddecoration(DECOR_PUPPY_POSTER)
         setflag(FLAG_USED_PIRAEUS_BOAT_BEFORE)
     }
 

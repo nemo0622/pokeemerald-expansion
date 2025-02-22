@@ -707,6 +707,41 @@
 #define METATILE_SecretBase_YellowBrick_Bottom          0x22E
 #define METATILE_SecretBase_YellowBrick_Top             0x226
 
+// gTileset_SecretBaseRedCave
+#define METATILE_SecretBaseRedCave_BookAndQuill                     0x349
+#define METATILE_SecretBaseRedCave_EntertainmentCenter_BottomLeft   0x356
+#define METATILE_SecretBaseRedCave_EntertainmentCenter_BottomMid    0x357
+#define METATILE_SecretBaseRedCave_EntertainmentCenter_BottomRight  0x358
+#define METATILE_SecretBaseRedCave_EntertainmentCenter_Center       0x34F
+#define METATILE_SecretBaseRedCave_EntertainmentCenter_MidLeft      0x34E
+#define METATILE_SecretBaseRedCave_EntertainmentCenter_MidRight     0x350
+#define METATILE_SecretBaseRedCave_EntertainmentCenter_TopLeft      0x346
+#define METATILE_SecretBaseRedCave_EntertainmentCenter_TopMid       0x347
+#define METATILE_SecretBaseRedCave_EntertainmentCenter_TopRight     0x348
+#define METATILE_SecretBaseRedCave_LargeBed_BottomLeft              0x34C
+#define METATILE_SecretBaseRedCave_LargeBed_BottomRight             0x34D
+#define METATILE_SecretBaseRedCave_LargeBed_TopLeft                 0x344
+#define METATILE_SecretBaseRedCave_LargeBed_TopRight                0x345
+#define METATILE_SecretBaseRedCave_MinotaurosHead                   0x2FC
+#define METATILE_SecretBaseRedCave_PatternedBed_BottomLeft          0x35C
+#define METATILE_SecretBaseRedCave_PatternedBed_BottomRight         0x35D
+#define METATILE_SecretBaseRedCave_PatternedBed_TopLeft             0x354
+#define METATILE_SecretBaseRedCave_PatternedBed_TopRight            0x355
+#define METATILE_SecretBaseRedCave_PokeballStation_BottomLeft       0x36E
+#define METATILE_SecretBaseRedCave_PokeballStation_BottomMid        0x36F
+#define METATILE_SecretBaseRedCave_PokeballStation_BottomRight      0x370
+#define METATILE_SecretBaseRedCave_PokeballStation_Center           0x367
+#define METATILE_SecretBaseRedCave_PokeballStation_MidLeft          0x366
+#define METATILE_SecretBaseRedCave_PokeballStation_MidRight         0x368
+#define METATILE_SecretBaseRedCave_PokeballStation_TopLeft          0x35E
+#define METATILE_SecretBaseRedCave_PokeballStation_TopMid           0x35F
+#define METATILE_SecretBaseRedCave_PokeballStation_TopRight         0x360
+#define METATILE_SecretBaseRedCave_Shrine_Base1                     0x352
+#define METATILE_SecretBaseRedCave_Shrine_Base2                     0x353
+#define METATILE_SecretBaseRedCave_Shrine_Top                       0x34A
+#define METATILE_SecretBaseRedCave_Shrine_TopWall                   0x34B
+#define METATILE_SecretBaseRedCave_SmallFlowerBox                   0x2F7
+
 // gTileset_Shop
 #define METATILE_Shop_Door_Elevator   0x285
 #define METATILE_Shop_Laptop1_Flash   0x258

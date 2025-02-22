@@ -28,12 +28,12 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_SaleWoman::
 
 	.align 2
 LilycoveCity_DepartmentStoreRooftop_PokemartDecor_ClearOutSale:
-	.2byte DECOR_MUD_BALL
+	.2byte DECOR_MINOTAUROS_PLAQUE
 	.2byte DECOR_FENCE_LENGTH
 	.2byte DECOR_FENCE_WIDTH
 	.2byte DECOR_TIRE
 	.2byte DECOR_BREAKABLE_DOOR
-	.2byte DECOR_SOLID_BOARD
+	.2byte DECOR_SHRINE
 	.2byte DECOR_SAND_ORNAMENT
 	.2byte DECOR_STAND
 	.2byte DECOR_SLIDE

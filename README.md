@@ -39,9 +39,10 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - Fix Cabin shit from Piraeus' ship
-        - Redo dialogue and stuff
-        - Ask Discord for help with secret base shit, or just remove it
+    - Add Cecilily as a trainer
+        - "PkMn Trainer" class, comissioned sprite or she can choose one?
+        - Rewards with level 10 Johto starters
+        - Can be rebattled after the Elite Four (when flag FLAG_SYS_GAME_CLEAR set) to give Johto starter cabin dolls!
     - Implement Biv's Fishing Minigame
         - Maybe also that upgrade-able fishing rod thing?
         - Wait until treasure catching is implemented because that's so cool!
@@ -112,6 +113,11 @@ GREEK PHRASES AND STUFF:
         - Ogerpon gift event
             - Reward for helping Daycare / zoo area?
         - Cabin (secret base) decor shops!
+            - Decor merchants in EVERY POKEMART selling some area-themed stuff (ex: decor merchant in Pythios Town selling candle decor from Zaebucca's Decoration & Furniture tileset)
+            - Large shop in Sofos City or another city dedicated to decorations?
+            - Replace dolls of Pokémon not in Ilios region: marked in include/constants/decorations.h with "// Needs Replacement" comment
+            - Can also add more decorations: see include/constants/decorations.h for list
+            - Make Silver Shield, Gold Shield, and Glass Ornament decorations into rewards fit to Ilios Region! (idea: replace Shields with Opal Fossil and Shocking Relic, based on Opalized fossils and the Antikythera Mechanism. Replace Glass Ornament with a statue sprite)
 
 - LAZARUS PREVIEW PLANS
     - Preview 01 (12/6/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.
