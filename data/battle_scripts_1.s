@@ -2692,6 +2692,7 @@ BattleScript_TryTailwindAbilitiesLoop:
 BattleScript_TryTailwindAbilitiesLoop_Iter:
 	trywindriderpower BS_TARGET, BattleScript_TryTailwindAbilitiesLoop_Increment
 	jumpifability BS_TARGET, ABILITY_WIND_RIDER, BattleScript_TryTailwindAbilitiesLoop_WindRider
+	jumpifability BS_TARGET, ABILITY_ATMOSPHERIC, BattleScript_TryTailwindAbilitiesLoop_WindRider
 	jumpifability BS_TARGET, ABILITY_WIND_POWER, BattleScript_TryTailwindAbilitiesLoop_WindPower
 BattleScript_TryTailwindAbilitiesLoop_Increment:
 	addbyte gBattlerTarget, 0x1

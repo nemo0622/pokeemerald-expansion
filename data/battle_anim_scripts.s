@@ -10981,6 +10981,7 @@ Move_PURIFY::
 	blendoff
 	end
 
+Move_REVELATION_STEP::
 Move_REVELATION_DANCE::
 	loadspritegfx ANIM_TAG_ORBS @circles
 	loadspritegfx ANIM_TAG_FLOWER @particles

@@ -49,7 +49,30 @@ MAJOR TODOS:
     - POKÉMON REBALANCING
         - Remove totally busted moves and change abilities to be less cracked (I'm looking at you froslass)
         - Add evolution methods for hisuian forms
-        - Make list of evolution items/methods used (stones, link cables, etc) to be added in marts / to maps
+        - LIST OF EVOLUTION ITEMS TO ADD:
+            - Ice Stone (Alolan Sandshrew, A. Vulpix, Eevee, Crabrawler)
+            - Moon Stone (Clefairy, Jigglypuff, Eevee, Munna)
+            - Sun Stone (Eevee, Helioptile)
+            - Thunder Stone (Eevee, Charjabug)
+            - Fire Stone (Vulpix, Growlithe, Eevee, Pansear)
+            - Water Stone (Poliwhirl, Eevee, Panpour)
+            - Leaf Stone (Eevee, Pansage)
+            - Shiny Stone (Eevee, Togetic)
+            - Dusk Stone (Quilava, Murkrow, Lampent, Doublade)
+            - King's Rock (Poliwhirl)
+            - Linking Cord (Haunter, Gurdurr, Pumpkaboo)
+            - Metal Coat (Onix, Scyther, H. Goomy)
+            - Black Augarite (Scyther)
+            - Razor Fang (Gligar)
+            - Razor Claw (Sneasel, H. Sneasel)
+            - Reaper Cloth (Duskull)
+            - Nectar locations (Oricorio forms)
+            - Tart, Sweet, and Syrupy Apples (Applin)
+            - Auspicious and Malicious Armor (Charcadet)
+            - ADD METHOD AND CODE FOR EVOLVING JOHTO TRIO INTO PARADOX FORMS?
+    - ADD ZAEBUCCA WINDMILL SPRITES TO JUSMAIL AREA
+        - Make spinning blades into an event object! look at how other sprites do it
+    - Add Hisuian Typhlosion sprites lol
     - Overworld speedup? https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Overworld-Speedup
     - Make maps for new area east of Acrisia City
 - Work on ideas from note on phone
@@ -59,10 +82,9 @@ MAJOR TODOS:
             - Slightly swampy area with some reeds, but not major swamp area. Whole route slopes down from west-east
         - Potami City: city among rivers, based on city of Volos (real city in area with 3 rivers flowing through)
             - City centered around 3 main rivers, with many bridges and palm trees
+            - Make Buizel encounter-able here! I like it :) propeller tail ability is cool now
         - Explore AC odyssey world for other location inspo lol
-- REBALANCING: go through all Pokémon and balance/rebalance, update movesets, etc.
-    - Learn from Seaglass feedback! Less extreme buffs, more balance
-    - Rewrite custom Pokédex entries for each mon!
+- Give all Pokémon unique Pokédex entries
 
 
 GREEK PHRASES AND STUFF:

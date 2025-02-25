@@ -1634,6 +1634,7 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
     // Attacker's ability
     switch (atkAbility)
     {
+    case ABILITY_ILLUMINATE:
     case ABILITY_COMPOUND_EYES:
         calc = (calc * 130) / 100; // 1.3 compound eyes boost
         break;
@@ -10920,7 +10921,7 @@ static void Cmd_various(void)
             VARIOUS_ARGS(const u8 *failInstr);
             u16 ability = GetBattlerAbility(battler);
             if (GetBattlerSide(battler) == GetBattlerSide(gBattlerAttacker)
-             && (ability == ABILITY_WIND_RIDER || ability == ABILITY_WIND_POWER))
+             && (ability == ABILITY_WIND_RIDER || ability == ABILITY_WIND_POWER || ability == ABILITY_ATMOSPHERIC))
             {
                 gLastUsedAbility = ability;
                 RecordAbilityBattle(battler, gLastUsedAbility);

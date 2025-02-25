@@ -7,7 +7,7 @@ DOUBLE_BATTLE_TEST("Supreme Overlord boosts Attack by an additive 10% per fainte
     PARAMETRIZE { switchMon = FALSE; }
     PARAMETRIZE { switchMon = TRUE; }
     GIVEN {
-        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_ANCIENT_MEMORY); }
         PLAYER(SPECIES_PAWNIARD);
         PLAYER(SPECIES_PAWNIARD);
         PLAYER(SPECIES_PAWNIARD);
@@ -22,7 +22,7 @@ DOUBLE_BATTLE_TEST("Supreme Overlord boosts Attack by an additive 10% per fainte
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }
     } SCENE {
         if (switchMon) {
-            ABILITY_POPUP(playerLeft, ABILITY_SUPREME_OVERLORD);
+            ABILITY_POPUP(playerLeft, ABILITY_ANCIENT_MEMORY);
             MESSAGE("Kingambit gained strength from the fallen!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
@@ -41,7 +41,7 @@ DOUBLE_BATTLE_TEST("Supreme Overlord's boost caps at a 1.5x multipler", s16 dama
         PLAYER(SPECIES_PAWNIARD);
         PLAYER(SPECIES_PAWNIARD);
         PLAYER(SPECIES_PAWNIARD);
-        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_ANCIENT_MEMORY); }
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -55,7 +55,7 @@ DOUBLE_BATTLE_TEST("Supreme Overlord's boost caps at a 1.5x multipler", s16 dama
         TURN { SWITCH(playerRight, 3); }
         TURN { MOVE(playerRight, MOVE_TACKLE, target: opponentLeft); }
     } SCENE {
-        ABILITY_POPUP(playerRight, ABILITY_SUPREME_OVERLORD);
+        ABILITY_POPUP(playerRight, ABILITY_ANCIENT_MEMORY);
         MESSAGE("Kingambit gained strength from the fallen!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
         HP_BAR(opponentLeft, captureDamage: &results[i].damage);
@@ -71,7 +71,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord does not boost attack if party members are 
     PARAMETRIZE { fainted = FALSE; }
     PARAMETRIZE { fainted = TRUE; }
     GIVEN {
-        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_ANCIENT_MEMORY); }
         PLAYER(SPECIES_PAWNIARD) { HP(fainted ? 0 : 1); }
         PLAYER(SPECIES_PAWNIARD) { HP(fainted ? 0 : 1); }
         PLAYER(SPECIES_PAWNIARD) { HP(fainted ? 0 : 1); }
@@ -82,7 +82,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord does not boost attack if party members are 
         TURN { MOVE(player, MOVE_TACKLE, target: opponent); }
     } SCENE {
         NONE_OF {
-            ABILITY_POPUP(player, ABILITY_SUPREME_OVERLORD);
+            ABILITY_POPUP(player, ABILITY_ANCIENT_MEMORY);
             MESSAGE("Kingambit gained strength from the fallen!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
@@ -97,7 +97,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EXPLOSION].effect == EFFECT_EXPLOSION);
         PLAYER(SPECIES_WOBBUFFET) { HP(1);}
-        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_ANCIENT_MEMORY); }
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -108,7 +108,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
         // Everyone faints.
         SEND_IN_MESSAGE("Kingambit");
         MESSAGE("2 sent out Wobbuffet!");
-        ABILITY_POPUP(player, ABILITY_SUPREME_OVERLORD);
+        ABILITY_POPUP(player, ABILITY_ANCIENT_MEMORY);
         MESSAGE("Kingambit gained strength from the fallen!");
     }
 }
@@ -120,7 +120,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { HP(1);}
-        OPPONENT(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        OPPONENT(SPECIES_KINGAMBIT) { Ability(ABILITY_ANCIENT_MEMORY); }
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -129,7 +129,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
         // Everyone faints.
         SEND_IN_MESSAGE("Wobbuffet");
         MESSAGE("2 sent out Kingambit!");
-        ABILITY_POPUP(opponent, ABILITY_SUPREME_OVERLORD);
+        ABILITY_POPUP(opponent, ABILITY_ANCIENT_MEMORY);
         MESSAGE("Foe Kingambit gained strength from the fallen!");
     }
 }

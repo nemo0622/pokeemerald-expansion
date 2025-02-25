@@ -278,7 +278,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ILLUMINATE] =
     {
         .name = _("Illuminate"),
-        .description = COMPOUND_STRING("Encounter rate increases."),
+        .description = COMPOUND_STRING("Boosts accuracy greatly."),
         .aiRating = 0,
         .breakable = TRUE,
     },
@@ -1207,9 +1207,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 4,
     },
 
-    [ABILITY_IRON_BARBS] =
+    [ABILITY_SPIKED_SHELL] = // replaced IRON_BARBS
     {
-        .name = _("Iron Barbs"),
+        .name = _("Spiked Shell"),
         .description = COMPOUND_STRING("Hurts to touch."),
         .aiRating = 6,
     },
@@ -1684,7 +1684,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_DANCER] =
     {
         .name = _("Dancer"),
-        .description = COMPOUND_STRING("Dances along with others."),
+        .description = COMPOUND_STRING("Boosts and joins dances."),
         .aiRating = 5,
     },
 
@@ -1891,7 +1891,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     #else
         .name = _("PropellrTail"),
     #endif
-        .description = COMPOUND_STRING("Ignores foe's redirection."),
+        .description = COMPOUND_STRING("Boosts priority moves."),
         .aiRating = 2,
     },
 
@@ -2004,7 +2004,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     #else
         .name = _("SteelySpirit"),
     #endif
-        .description = COMPOUND_STRING("Boosts ally's Steel moves."),
+        .description = COMPOUND_STRING("Boosts Steel moves."),
         .aiRating = 2,
     },
 
@@ -2412,12 +2412,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
     },
 
-    [ABILITY_SUPREME_OVERLORD] =
+    [ABILITY_ANCIENT_MEMORY] = // replaces ABILITY_SUPREME_OVERLORD
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Supreme Overlord"),
+        .name = _("Ancient Memory"),
     #else
-        .name = _("SuprmeOvrlrd"),
+        .name = _("AncientMemry"),
     #endif
         .description = COMPOUND_STRING("Inherits fallen's strength."),
         .aiRating = 6,
@@ -2609,9 +2609,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
     },
 
-    [ABILITY_ATHLETIC] =
+    [ABILITY_STRONG_LEGS] = // replaces ABILITY_ATHLETIC
     {
-        .name = _("Athletic"),
+        .name = _("Strong Legs"),
         .description = COMPOUND_STRING("Boosts kicking moves."),
         .aiRating = 6,
     },
@@ -2628,5 +2628,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Celestial Boost"),
         .description = COMPOUND_STRING("Boost Fire + Ghost moves."),
         .aiRating = 9,
+    },
+
+    [ABILITY_ATMOSPHERIC] =
+    {
+        .name = _("Atmospheric"),
+        .description = COMPOUND_STRING("Absorb Flying + Water moves."),
+        .aiRating = 8,
+        .breakable = TRUE,
     },
 };

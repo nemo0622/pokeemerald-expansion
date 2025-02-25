@@ -2403,7 +2403,7 @@ u8 DoBattlerEndTurnEffects(void)
              && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
              && IsBattlerAlive(battler))
             {
-                gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) / 16);
+                gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) / 8);
                 BattleScriptExecute(BattleScript_IngrainTurnHeal);
                 effect++;
             }
@@ -2415,7 +2415,7 @@ u8 DoBattlerEndTurnEffects(void)
              && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
              && IsBattlerAlive(battler))
             {
-                gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) / 16);
+                gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) / 8);
                 BattleScriptExecute(BattleScript_AquaRingHeal);
                 effect++;
             }
@@ -4778,6 +4778,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_WIND_RIDER:
+        case ABILITY_ATMOSPHERIC:
             if (!gSpecialStatuses[battler].switchInAbilityDone
              && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN)
              && gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_TAILWIND)
@@ -4854,7 +4855,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_SUPREME_OVERLORD:
+        case ABILITY_ANCIENT_MEMORY:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
@@ -5304,6 +5305,10 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 if (moveType == TYPE_GROUND)
                     effect = 1;
                 break;
+            case ABILITY_ATMOSPHERIC:
+                if(moveType == TYPE_WATER || moveType == TYPE_FLYING)
+                    effect = 1;
+                break;
             }
             if (caseID == ABILITYEFFECT_WOULD_ABSORB)
             {
@@ -5611,7 +5616,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_ROUGH_SKIN:
-        case ABILITY_IRON_BARBS:
+        case ABILITY_SPIKED_SHELL:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && IsBattlerAlive(gBattlerAttacker)
              && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
@@ -9187,9 +9192,12 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (gMovesInfo[move].punchingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
-    case ABILITY_ATHLETIC:
+    case ABILITY_STRONG_LEGS:
         if (gMovesInfo[move].kickingMove)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+    case ABILITY_PROPELLER_TAIL:
+        if(gMovesInfo[move].priority >= 1)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
     case ABILITY_SHEER_FORCE:
         if (MoveIsAffectedBySheerForce(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
@@ -9308,7 +9316,11 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (gMovesInfo[move].slicingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
-    case ABILITY_SUPREME_OVERLORD:
+    case ABILITY_DANCER:
+        if (gMovesInfo[move].danceMove)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        break;
+    case ABILITY_ANCIENT_MEMORY:
         modifier = uq4_12_multiply(modifier, GetSupremeOverlordModifier(battlerAtk));
         break;
     }
@@ -10536,7 +10548,8 @@ uq4_12_t GetTypeEffectiveness(struct Pokemon *mon, u8 moveType)
          || (moveType == TYPE_GROUND   && (abilityDef == ABILITY_LEVITATE
                                        ||  abilityDef == ABILITY_EARTH_EATER))
          || (moveType == TYPE_WATER    && (abilityDef == ABILITY_WATER_ABSORB
-                                       || abilityDef == ABILITY_DRY_SKIN
+                                       || abilityDef == ABILITY_DRY_SKIN 
+                                       || abilityDef == ABILITY_ATMOSPHERIC
                                        || abilityDef == ABILITY_STORM_DRAIN))
          || (moveType == TYPE_ELECTRIC && (abilityDef == ABILITY_LIGHTNING_ROD // TODO: Add Gen 3/4 config check
                                        || abilityDef == ABILITY_VOLT_ABSORB
