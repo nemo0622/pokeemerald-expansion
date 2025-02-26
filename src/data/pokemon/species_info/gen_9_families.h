@@ -6687,7 +6687,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_WALKING_WAKE] =
     {
         .baseHP        = 99,
-        .baseAttack    = 83,
+        .baseAttack    = 93,
         .baseDefense   = 91,
         .baseSpeed     = 109,
         .baseSpAttack  = 125,
@@ -7324,7 +7324,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     {
         .baseHP        = 105,
         .baseAttack    = 115,
-        .baseDefense   = 121,
+        .baseDefense   = 131,
         .baseSpeed     = 91,
         .baseSpAttack  = 65,
         .baseSpDefense = 93,
@@ -7386,7 +7386,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_RAGING_BOLT
     [SPECIES_RAGING_BOLT] =
     {
-        .baseHP        = 125,
+        .baseHP        = 135,
         .baseAttack    = 73,
         .baseDefense   = 91,
         .baseSpeed     = 75,

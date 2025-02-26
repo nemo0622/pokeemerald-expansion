@@ -119,7 +119,7 @@
             },
             {
 #line 122
-            .species = SPECIES_MUDSDALE,
+            .species = SPECIES_MUDBRAY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 124
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

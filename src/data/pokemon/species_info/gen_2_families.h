@@ -6700,10 +6700,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         .baseHP        = 90,
         .baseAttack    = 85,
-        .baseDefense   = 75,
+        .baseDefense   = 65,
         .baseSpeed     = 115,
         .baseSpAttack  = 115,
-        .baseSpDefense = 100,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 3,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -6766,6 +6766,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sRaikouLevelUpLearnset,
         .teachableLearnset = sRaikouTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_USE_MOVE_TWENTY_TIMES, MOVE_DRAGON_ENERGY, SPECIES_RAGING_BOLT}),
     },
 #endif //P_FAMILY_RAIKOU
 
@@ -6775,9 +6776,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseHP        = 115,
         .baseAttack    = 115,
         .baseDefense   = 85,
-        .baseSpeed     = 100,
+        .baseSpeed     = 90,
         .baseSpAttack  = 90,
-        .baseSpDefense = 75,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 3,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -6840,6 +6841,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sEnteiLevelUpLearnset,
         .teachableLearnset = sEnteiTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_USE_MOVE_TWENTY_TIMES, MOVE_DRAGON_ENERGY, SPECIES_GOUGING_FIRE}),
     },
 #endif //P_FAMILY_ENTEI
 
@@ -6847,11 +6849,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_SUICUNE] =
     {
         .baseHP        = 100,
-        .baseAttack    = 75,
-        .baseDefense   = 115,
-        .baseSpeed     = 85,
+        .baseAttack    = 65,
+        .baseDefense   = 105,
+        .baseSpeed     = 95,
         .baseSpAttack  = 90,
-        .baseSpDefense = 115,
+        .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 3,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -6914,6 +6916,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sSuicuneLevelUpLearnset,
         .teachableLearnset = sSuicuneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_USE_MOVE_TWENTY_TIMES, MOVE_DRAGON_ENERGY, SPECIES_WALKING_WAKE}),
     },
 #endif //P_FAMILY_SUICUNE
 

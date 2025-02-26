@@ -256,6 +256,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diver;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PIRAEUS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Admin_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Admin_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Windmill_TL;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Windmill_TR;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Windmill_BL;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Windmill_BR;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -507,6 +511,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PIRAEUS] =                   &gObjectEventGraphicsInfo_PIRAEUS,
     [OBJ_EVENT_GFX_CHIMERA_ADMIN_M] =  &gObjectEventGraphicsInfo_Chimera_Admin_M,
     [OBJ_EVENT_GFX_CHIMERA_ADMIN_F] =  &gObjectEventGraphicsInfo_Chimera_Admin_F,
+    [OBJ_EVENT_GFX_WINDMILL_TL] =  &gObjectEventGraphicsInfo_Windmill_TL,
+    [OBJ_EVENT_GFX_WINDMILL_TR] =  &gObjectEventGraphicsInfo_Windmill_TR,
+    [OBJ_EVENT_GFX_WINDMILL_BL] =  &gObjectEventGraphicsInfo_Windmill_BL,
+    [OBJ_EVENT_GFX_WINDMILL_BR] =  &gObjectEventGraphicsInfo_Windmill_BR,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

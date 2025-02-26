@@ -1,7 +1,36 @@
 mapscripts JusmailTown_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_JUSMAIL_TOWN)
+
+        // windmill management sigh
+        clearflag(FLAG_TRIGGERED_WINDMILL_SPAWN)
     }
+
+    MAP_SCRIPT_ON_RETURN_TO_FIELD {
+        goto(JusmailTown_SpawnWindmillVirtualObjects)
+    }
+}
+
+script JusmailTown_EventScript_TriggerWindmillSpawn
+{
+    setflag(FLAG_TRIGGERED_WINDMILL_SPAWN) // marks that the player has taken >1 step into the route, avoiding interference with event object spawning
+    goto(JusmailTown_SpawnWindmillVirtualObjects)
+}
+
+// Function called by triggers on the entrance tiles of the route!
+script JusmailTown_SpawnWindmillVirtualObjects
+{
+    // windmill tiles
+    if(flag(FLAG_TRIGGERED_WINDMILL_SPAWN)) // if >1 step has been taken into the route and the mills have not been spawned yet, spawn them!
+    {
+        createvobject(OBJ_EVENT_GFX_WINDMILL_TL, 16, 20, 19, 4, DIR_SOUTH)
+        createvobject(OBJ_EVENT_GFX_WINDMILL_TR, 17, 24, 19, 4, DIR_SOUTH)
+        createvobject(OBJ_EVENT_GFX_WINDMILL_BL, 18, 20, 23, 4, DIR_SOUTH)
+        createvobject(OBJ_EVENT_GFX_WINDMILL_BR, 19, 24, 23, 4, DIR_SOUTH)
+        // setvar(VAR_TEMP_A, 1) // marks them as spawned for now
+    }
+    release
+    end
 }
 
 script JusmailTown_Sign_GymSign

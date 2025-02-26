@@ -1269,7 +1269,7 @@
 #define FLAG_ON_PIRAEUS_BOAT                                        0x4C2 // Marks if you're on The Delphis (used in leaving code)
 #define FLAG_USED_PIRAEUS_BOAT_BEFORE                               0x4C3 // tracks first time riding The Delphis
 #define FLAG_INITIALIZED_CABIN                                      0x4C4 // determines whether or not first time in Delphis Cabin
-#define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
+#define FLAG_TRIGGERED_WINDMILL_SPAWN                               0x4C5 // used in function spawning windmill animation in Bronze Fields south
 #define FLAG_UNUSED_0x4C6                                           0x4C6 // Unused Flag
 #define FLAG_UNUSED_0x4C7                                           0x4C7 // Unused Flag
 #define FLAG_UNUSED_0x4C8                                           0x4C8 // Unused Flag

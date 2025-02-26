@@ -1094,6 +1094,26 @@ static const union AnimCmd sAnim_HoOhStayStill[] =
     ANIMCMD_JUMP(0),
 };
 
+static const union AnimCmd sAnim_Windmill[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 6),
+    ANIMCMD_FRAME(2, 6),
+    ANIMCMD_FRAME(3, 6),
+    ANIMCMD_FRAME(4, 6),
+    ANIMCMD_FRAME(5, 6),
+    ANIMCMD_FRAME(6, 6),
+    ANIMCMD_FRAME(7, 6),
+    ANIMCMD_FRAME(8, 6),
+    ANIMCMD_FRAME(9, 6),
+    ANIMCMD_FRAME(10, 6),
+    ANIMCMD_FRAME(11, 6),
+    ANIMCMD_FRAME(12, 6),
+    ANIMCMD_FRAME(13, 6),
+    ANIMCMD_FRAME(14, 6),
+    ANIMCMD_JUMP(0),
+};
+
 static const union AnimCmd *const sAnimTable_Inanimate[] = {
     [ANIM_STAY_STILL] = sAnim_StayStill,
 };
@@ -1119,6 +1139,17 @@ static const union AnimCmd *const sAnimTable_QuintyPlump[] = {
     [ANIM_STD_GO_FASTEST_NORTH] = sAnim_QuintyPlumpGoFastestNorth,
     [ANIM_STD_GO_FASTEST_WEST] = sAnim_QuintyPlumpGoFastestWest,
     [ANIM_STD_GO_FASTEST_EAST] = sAnim_QuintyPlumpGoFastestEast,
+};
+
+static const union AnimCmd *const sAnimTable_Windmill[] = {
+    [ANIM_STD_FACE_SOUTH] = sAnim_Windmill,
+    [ANIM_STD_FACE_NORTH] = sAnim_Windmill,
+    [ANIM_STD_FACE_WEST] = sAnim_Windmill,
+    [ANIM_STD_FACE_EAST] = sAnim_Windmill,
+    [ANIM_STD_GO_SOUTH] = sAnim_Windmill,
+    [ANIM_STD_GO_NORTH] = sAnim_Windmill,
+    [ANIM_STD_GO_WEST] = sAnim_Windmill,
+    [ANIM_STD_GO_EAST] = sAnim_Windmill,
 };
 
 static const union AnimCmd *const sAnimTable_Standard[] = {

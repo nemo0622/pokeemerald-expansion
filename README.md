@@ -39,15 +39,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - Add Cecilily as a trainer
-        - "PkMn Trainer" class, comissioned sprite or she can choose one?
-        - Rewards with level 10 Johto starters
-        - Can be rebattled after the Elite Four (when flag FLAG_SYS_GAME_CLEAR set) to give Johto starter cabin dolls!
-    - Implement Biv's Fishing Minigame
-        - Maybe also that upgrade-able fishing rod thing?
-        - Wait until treasure catching is implemented because that's so cool!
     - POKÉMON REBALANCING
-        - Remove totally busted moves and change abilities to be less cracked (I'm looking at you froslass)
         - Add evolution methods for hisuian forms
         - LIST OF EVOLUTION ITEMS TO ADD:
             - Ice Stone (Alolan Sandshrew, A. Vulpix, Eevee, Crabrawler)
@@ -62,19 +54,18 @@ MAJOR TODOS:
             - King's Rock (Poliwhirl)
             - Linking Cord (Haunter, Gurdurr, Pumpkaboo)
             - Metal Coat (Onix, Scyther, H. Goomy)
-            - Black Augarite (Scyther)
+            - Black Augarite (Scyther, Johto Trio into Paradox forms)
             - Razor Fang (Gligar)
             - Razor Claw (Sneasel, H. Sneasel)
             - Reaper Cloth (Duskull)
             - Nectar locations (Oricorio forms)
             - Tart, Sweet, and Syrupy Apples (Applin)
             - Auspicious and Malicious Armor (Charcadet)
-            - ADD METHOD AND CODE FOR EVOLVING JOHTO TRIO INTO PARADOX FORMS?
-    - ADD ZAEBUCCA WINDMILL SPRITES TO JUSMAIL AREA
-        - Make spinning blades into an event object! look at how other sprites do it
-    - Add Hisuian Typhlosion sprites lol
+    - Create Battle sprite for Rania (currently Wally lol)
+    - Modify Birch intro sequence dialogue
     - Overworld speedup? https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Overworld-Speedup
     - Make maps for new area east of Acrisia City
+    - Reread through existing dialogue and fix some of the cringe Greek phrases (sorry lol but it's true)
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
@@ -85,6 +76,18 @@ MAJOR TODOS:
             - Make Buizel encounter-able here! I like it :) propeller tail ability is cool now
         - Explore AC odyssey world for other location inspo lol
 - Give all Pokémon unique Pokédex entries
+- PROPER QUEST SYSTEM: https://github.com/PokemonSanFran/pokeemerald/wiki/Unbound-Quest-Menu
+    - Should work better now that I actually understand coding lol
+    - Integrate with "Main Quest" (find Pokédex shipment, get badge 1, etc)
+    - Integrate with "University Quests" (do things for Rania and Niko for rewards)
+    - Set up with "Side Quests" (show Togepi for Eviolite in Acrisia City, etc)
+- Add Cecilily as a trainer
+    - "PkMn Trainer" class, comissioned sprite or she can choose one?
+    - Rewards with level 10 Johto starters
+    - Can be rebattled after the Elite Four (when flag FLAG_SYS_GAME_CLEAR set) to give Johto starter cabin dolls!
+- Implement Biv's Fishing Minigame
+    - Maybe also that upgrade-able fishing rod thing?
+    - Wait until treasure catching is implemented because that's so cool!
 
 
 GREEK PHRASES AND STUFF:
@@ -94,15 +97,6 @@ GREEK PHRASES AND STUFF:
 - "Chaire" - basically ancient greek "aloha" (hello/goodbye)
 - "Yamas" - cheers!
 - "Den gnorzio" - I don't know
-
-- ADD A FEW NEW POKéMON AND ABILITIES:
-    - Add abilities: https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Buffing-&-Adding-abilities
-        - Scurry: Signature ability of Crocky, increases Evasiveness when sent out
-        - Improve Dancer ability to boost Dance move power? really just for oricorio
-            - Also add a new move with EFFECT_REVELATION_DANCE, just weaker and learned at level 20
-    - New "Zygarde Cell" Pokémon
-        - Fully independent Zygarde Cell Pokémon, given by NPC
-        - Evolves into Zygarde, which changes form via Zygarde Cube item
 
 - EVENTS AND STUFF:
     - Use in-game day count tracker to have events in different parts of the region every X number of days

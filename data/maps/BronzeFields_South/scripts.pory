@@ -19,7 +19,36 @@ mapscripts BronzeFields_South_MapScripts {
         setobjectaswildencounter(12, ENCOUNTER_LAND)
         setobjectaswildencounter(13, ENCOUNTER_LAND)
         setobjectaswildencounter(14, ENCOUNTER_LAND)
+
+        // windmill management sigh
+        clearflag(FLAG_TRIGGERED_WINDMILL_SPAWN)
     }
+
+    MAP_SCRIPT_ON_RETURN_TO_FIELD {
+        goto(BronzeFields_South_SpawnWindmillVirtualObjects)
+    }
+}
+
+script BronzeFields_South_EventScript_TriggerWindmillSpawn
+{
+    setflag(FLAG_TRIGGERED_WINDMILL_SPAWN) // marks that the player has taken >1 step into the route, avoiding interference with event object spawning
+    goto(BronzeFields_South_SpawnWindmillVirtualObjects)
+}
+
+// Function called by triggers on the entrance tiles of the route!
+script BronzeFields_South_SpawnWindmillVirtualObjects
+{
+    // windmill tiles
+    if(flag(FLAG_TRIGGERED_WINDMILL_SPAWN)) // if >1 step has been taken into the route and the mills have not been spawned yet, spawn them!
+    {
+        createvobject(OBJ_EVENT_GFX_WINDMILL_TL, 15, 22, 27, 4, DIR_SOUTH)
+        createvobject(OBJ_EVENT_GFX_WINDMILL_TR, 16, 26, 27, 4, DIR_SOUTH)
+        createvobject(OBJ_EVENT_GFX_WINDMILL_BL, 17, 22, 31, 4, DIR_SOUTH)
+        createvobject(OBJ_EVENT_GFX_WINDMILL_BR, 18, 26, 31, 4, DIR_SOUTH)
+        // setvar(VAR_TEMP_A, 1) // marks them as spawned for now
+    }
+    release
+    end
 }
 
 // TRAINER & NPC SCRIPTS

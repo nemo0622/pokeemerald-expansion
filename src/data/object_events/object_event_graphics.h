@@ -398,6 +398,12 @@ const u32 gObjectEventPic_PIRAEUS[] = INCBIN_U32("graphics/object_events/pics/pe
 const u32 gObjectEventPic_Chimera_Admin_M[] = INCBIN_U32("graphics/object_events/pics/people/team_chimera/chimera_admin_m.4bpp");
 const u32 gObjectEventPic_Chimera_Admin_F[] = INCBIN_U32("graphics/object_events/pics/people/team_chimera/chimera_admin_f.4bpp");
 
+const u32 gObjectEventPic_Windmill_TL[] = INCBIN_U32("graphics/object_events/pics/misc/windmill/top_left.4bpp"); // top left
+const u32 gObjectEventPic_Windmill_TR[] = INCBIN_U32("graphics/object_events/pics/misc/windmill/top_right.4bpp"); // top right
+const u32 gObjectEventPic_Windmill_BL[] = INCBIN_U32("graphics/object_events/pics/misc/windmill/bottom_left.4bpp"); // bottom left
+const u32 gObjectEventPic_Windmill_BR[] = INCBIN_U32("graphics/object_events/pics/misc/windmill/bottom_right.4bpp"); // bottom right
+const u16 gObjectEventPal_Windmill[] = INCBIN_U16("graphics/object_events/pics/misc/windmill/top_left.gbapal"); // kinda used for everything
+
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");
 const u32 gObjectEventPic_UltraBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_ultra.4bpp");
