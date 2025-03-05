@@ -1,0 +1,112 @@
+mapscripts RiverwalkTrail_South_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(1, ENCOUNTER_LAND)
+        setobjectaswildencounter(2, ENCOUNTER_LAND)
+        setobjectaswildencounter(3, ENCOUNTER_LAND)
+        setobjectaswildencounter(4, ENCOUNTER_LAND)
+        setobjectaswildencounter(5, ENCOUNTER_SURF)
+        setobjectaswildencounter(6, ENCOUNTER_SURF)
+    }
+}
+
+script RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley
+{
+    trainerbattle_single(TRAINER_RIVERWALK_TRAIL_S_BERKLEY, RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyIntro, RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyDefeat)
+    speakername("Berkley")
+    msgbox(format("I can see myself in the puddles! My muscles look good, right?"))
+    closemessage
+    release
+    end
+}
+text RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyIntro
+{
+    format("I could splash through these puddles all day! Huh? A battle?")
+}
+text RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyDefeat
+{
+    format("My head wasn't in the game!")
+}
+
+script RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Markus
+{
+    trainerbattle_single(TRAINER_RIVERWALK_TRAIL_S_MARKUS, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_MarkusIntro, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_MarkusDefeat)
+    speakername("Markus")
+    msgbox(format("Some Pokémon you can only find by Surfing can come up into the shallow water to fight. Keep an eye out!"))
+    closemessage
+    release
+    end
+}
+text RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_MarkusIntro
+{
+    format("Some water-dwelling Pokémon come out of the water into the shallows for a fight!")
+}
+text RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_MarkusDefeat
+{
+    format("Wow, I'd better crawl back into the water.")
+}
+
+script RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Tina
+{
+    trainerbattle_single(TRAINER_RIVERWALK_TRAIL_S_TINA, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_TinaIntro, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_TinasDefeat)
+    speakername("Tina")
+    msgbox(format("I hear that a small population of Tropius can be found here. Maybe one of them would help me get stronger!"))
+    closemessage
+    release
+    end
+}
+text RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_TinaIntro
+{
+    format("My Pokémon will rule the swamp!")
+}
+text RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_TinasDefeat
+{
+    format("Well, we COULD rule the swamp someday!")
+}
+
+script RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Gianna
+{
+    trainerbattle_single(TRAINER_RIVERWALK_TRAIL_S_GIANNA, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_GiannaIntro, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_GiannasDefeat)
+    speakername("Gianna")
+    msgbox(format("Pokémon that come out of the grass and show themselves can be Shiny. Make sure to check whenever you see them!"))
+    closemessage
+    release
+    end
+}
+text RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_GiannaIntro
+{
+    format("I'm studying Pokémon wetland environments! Help me learn more!")
+}
+text RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_GiannasDefeat
+{
+    format("I guess strong Trainers are found in wetlands, too.")
+}
+
+script RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Barnett
+{
+    trainerbattle_single(TRAINER_RIVERWALK_TRAIL_S_BARNETT, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_BarnettIntro, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_BarnettsDefeat)
+    speakername("Barnett")
+    msgbox(format("I'm on the lookout for Team Chimera grunts. They're on the rise!"))
+    closemessage
+    release
+    end
+}
+text RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_BarnettIntro
+{
+    format("Hey, you! No Team Chimera members can get past me!")
+}
+text RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_BarnettsDefeat
+{
+    format("Oh, you're not with Team Chimera? ...Hm.")
+}

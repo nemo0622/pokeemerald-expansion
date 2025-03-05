@@ -1,0 +1,183 @@
+mapscripts KalamiCity_Gym_MapScripts {}
+
+script KalamiCity_Gym_EventScript_GymStatue
+{
+    lock
+    if(flag(FLAG_BADGE02_GET))
+    {
+        msgbox(format("Acrisia Caves Pokémon Gym\p Recent Victors: Niko, {PLAYER}"))
+    }
+    else
+    {
+        msgbox(format("Acrisia Caves Pokémon Gym\p Recent Victors: Niko"))
+    }
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_Gym_EventScript_GymMan
+{
+    lock
+    faceplayer
+    speakername("Gym Guide")
+    if(flag(FLAG_BADGE02_GET))
+    {
+        msgbox(format("Incredible! You're a rising star! Keep it up, future Champ!"))
+    }
+    else
+    {
+        msgbox(format("Welcome to the Kalami City Gym!\p The Gym Leader, Mattaios, oversees production of industrial goods here. Expect plenty of tough Pokémon, with Rock, Steel, or Electric types!"))
+    }
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_Gym_EventScript_Mattaios
+{
+    lock
+    faceplayer
+    if(var(VAR_DIFFICULTY) == 0)
+    {
+        goto(KalamiCity_Gym_EventScript_MattaiosNormal)
+    }
+    else
+    {
+        goto(KalamiCity_Gym_EventScript_MattaiosHard)
+    }
+    release
+    end
+}
+
+script KalamiCity_Gym_EventScript_MattaiosNormal
+{
+    trainerbattle_single(TRAINER_LEADER_MATTAIOS, KalamiCity_Gym_Text_MattaiosIntro, KalamiCity_Gym_Text_MattaiosDefeat, KalamiCity_Gym_EventScript_MattaiosDefeatScript, NO_MUSIC)
+    speakername("Mattaios")
+    msgbox(format("Now that our battle's over, I should get back to work. Bendin' steel and making Poké balls never stops!"))
+    closemessage
+    release
+    end
+}
+script KalamiCity_Gym_EventScript_MattaiosHard
+{
+    trainerbattle_single(TRAINER_LEADER_MATTAIOS_HARD, KalamiCity_Gym_Text_MattaiosIntro, KalamiCity_Gym_Text_MattaiosDefeat, KalamiCity_Gym_EventScript_MattaiosDefeatScript, NO_MUSIC)
+    speakername("Mattaios")
+    msgbox(format("Now that our battle's over, I should get back to work. Bendin' steel and making Poké balls never stops!"))
+    closemessage
+    release
+    end
+}
+
+text KalamiCity_Gym_Text_MattaiosIntro
+{
+    format("Got past my workers, eh? Welcome to my humble factory-turned-Gym!\p My Larvitar and I train hard every day. We're so strong, we can bend metal all by 'rselves. Now, help us get stronger!")
+}
+text KalamiCity_Gym_Text_MattaiosDefeat
+{
+    format("Woah, you darn-near broke my flashlight!")
+}
+
+script KalamiCity_Gym_EventScript_MattaiosDefeatScript
+{
+    setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug
+    message(format("{PLAYER} received the Gemstone Badge from Mattaios."))
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+
+    // Set gym completion flags
+    setflag(FLAG_BADGE02_GET)
+    // Set all trainers in Gym as defeated
+    settrainerflag(TRAINER_KALAMI_GYM_REX)
+    settrainerflag(TRAINER_KALAMI_GYM_DANIEL)
+    settrainerflag(TRAINER_KALAMI_GYM_TASOULA)
+    // Set Niko and Rania states
+    setvar(VAR_RANIA_STATE, 2)
+    setvar(VAR_NIKO_STATE, 3)
+
+    // Explain badge
+    speakername("Mattaios")
+    msgbox(format("The Gemstone Badge marks yer second completed Gym, eh? After two Badges, most trainers are fit to explore more of Ilios. Yer certainly strong enough! You'll also be able to use the {COLOR GREEN}HM Rock Smash{COLOR DARK_GRAY} outside battle.\p Fwahaha, there's more fer ya!"))
+    closemessage
+
+    // Give TM, explain, end dialogue
+    giveitem(ITEM_TM_ROCK_TOMB)
+    speakername("Mattaios")
+    msgbox(format("That's the TM fer {COLOR GREEN}Rock Tomb{COLOR DARK_GRAY}! My Larvitar here learned this from digging around for metals.\p Y'know, another Acrisia University student just passed through here. If I were you, I'd hightail it {COLOR GREEN}back to the University{COLOR DARK_GRAY} to see what's what!"))
+    closemessage
+
+    release
+    end
+}
+
+script KalamiCity_Gym_EventScript_Larvitar
+{
+    lock
+    faceplayer
+    speakername("Larvitar")
+    playmoncry(SPECIES_LARVITAR, CRY_MODE_NORMAL)
+    msgbox("Gwaah.")
+    waitmoncry
+    closemessage
+    msgbox(format("Larvitar is happy to take a break from working."))
+    closemessage
+    release
+    end
+}
+
+// --------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------
+
+script KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Rex
+{
+    trainerbattle_single(TRAINER_KALAMI_GYM_REX, KalamiCity_Gym_Text_Trainer_Kalami_Gym_RexIntro, KalamiCity_Gym_Text_Trainer_Kalami_Gym_RexDefeat)
+    speakername("Rex")
+    msgbox(format("We make a bunch goods here that we ship across the region.\p ...I realize it's a mess in here. We're at work, darn it!"))
+    closemessage
+    release
+    end
+}
+text KalamiCity_Gym_Text_Trainer_Kalami_Gym_RexIntro
+{
+    format("Woah woah, watch yourself! We're at work here!")
+}
+text KalamiCity_Gym_Text_Trainer_Kalami_Gym_RexDefeat
+{
+    format("Hmph, I guess you can get past.")
+}
+
+script KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Daniel
+{
+    trainerbattle_single(TRAINER_KALAMI_GYM_DANIEL, KalamiCity_Gym_Text_Trainer_Kalami_Gym_DanielIntro, KalamiCity_Gym_Text_Trainer_Kalami_Gym_DanielDefeat)
+    speakername("Daniel")
+    msgbox(format("Our Gym produces Poké balls and other helpful items for Trainers. We make Kalami City a major exporter!"))
+    closemessage
+    release
+    end
+}
+text KalamiCity_Gym_Text_Trainer_Kalami_Gym_DanielIntro
+{
+    format("Excuse the mess, we're hard at work!")
+}
+text KalamiCity_Gym_Text_Trainer_Kalami_Gym_DanielDefeat
+{
+    format("Well, back to work.")
+}
+
+script KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Tasoula
+{
+    trainerbattle_single(TRAINER_KALAMI_GYM_TASOULA, KalamiCity_Gym_Text_Trainer_Kalami_Gym_TasoulaIntro, KalamiCity_Gym_Text_Trainer_Kalami_Gym_TasoulaDefeat)
+    speakername("Tasoula")
+    msgbox(format("Our Gym produces Poké balls and other helpful items for Trainers. We make Kalami City a major exporter!"))
+    closemessage
+    release
+    end
+}
+text KalamiCity_Gym_Text_Trainer_Kalami_Gym_TasoulaIntro
+{
+    format("Excuse the mess, we're hard at work!")
+}
+text KalamiCity_Gym_Text_Trainer_Kalami_Gym_TasoulaDefeat
+{
+    format("Well, back to work.")
+}

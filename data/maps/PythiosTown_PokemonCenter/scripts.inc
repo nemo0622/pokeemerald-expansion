@@ -61,17 +61,17 @@ PythiosTown_PokemonCenter_EventScript_PkmnCenterNurse_2:
 	goto PythiosTown_PokemonCenter_EventScript_PkmnCenterNurse_1
 
 
-PythiosTown_PokemonCenter_EventScript_Chansey::
+PythiosTown_PokemonCenter_EventScript_Togetic::
 # 42 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	lock
 # 43 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	faceplayer
 # 44 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
-	speakername PythiosTown_PokemonCenter_EventScript_Chansey_Text_0
+	speakername PythiosTown_PokemonCenter_EventScript_Togetic_Text_0
 # 45 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
-	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
+	playmoncry SPECIES_TOGETIC, CRY_MODE_NORMAL
 # 46 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
-	msgbox PythiosTown_PokemonCenter_EventScript_Chansey_Text_1
+	msgbox PythiosTown_PokemonCenter_EventScript_Togetic_Text_1
 # 47 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	waitmoncry
 # 48 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
@@ -153,11 +153,11 @@ PythiosTown_PokemonCenter_EventScript_PkmnCenterNurse_Text_4:
 	.string "Your Pokémon are happy and healthy! We\n"
 	.string "hope to see you again!$"
 
-PythiosTown_PokemonCenter_EventScript_Chansey_Text_0:
+PythiosTown_PokemonCenter_EventScript_Togetic_Text_0:
 # 44 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
-	.string "Chansey$"
+	.string "Togetic$"
 
-PythiosTown_PokemonCenter_EventScript_Chansey_Text_1:
+PythiosTown_PokemonCenter_EventScript_Togetic_Text_1:
 # 46 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	.string "Bee-eh!$"
 

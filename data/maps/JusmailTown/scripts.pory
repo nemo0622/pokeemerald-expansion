@@ -135,7 +135,7 @@ script JusmailTown_EventScript_RaniaEvent
     applymovement(11, Common_Movement_FacePlayer)
     waitmovement(0)
     speakername("Rania")
-    msgbox(format("Yia sou, {PLAYER}! I see you've won your first Gym Badge!\p Since you left, Niko and I have decided to do some more field research ourselves, which means training up our own Pokémon teams! What do you say, wanna battle?"), MSGBOX_YESNO)
+    msgbox(format("Chaire, {PLAYER}! I see you've won your first Gym Badge!\p Since you left, Niko and I have decided to do some more field research ourselves, which means training up our own Pokémon teams! What do you say, wanna battle?"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == 0) // no
     {
         speakername("Rania")
@@ -234,8 +234,8 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_CUTIEFLY,
             SPECIES_GRIMER,
             SPECIES_GRIMER_ALOLAN,
-            SPECIES_CATERPIE,
-            SPECIES_WEEDLE,
+            SPECIES_WURMPLE,
+            SPECIES_TROPIUS,
             SPECIES_RALTS,
             SPECIES_EEVEE,
             SPECIES_SKIDDO,

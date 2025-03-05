@@ -847,7 +847,7 @@
       "y": 82,
       "elevation": 3,
       "item": "ITEM_CALCIUM",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM"
+      "flag": "FLAG_HIDDEN_ITEM_RIVERWALK_WEST_MIRACLE_SEED"
     },
     {
       "type": "hidden_item",

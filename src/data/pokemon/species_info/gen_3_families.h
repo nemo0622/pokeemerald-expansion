@@ -8509,9 +8509,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_TROPIUS] =
     {
         .baseHP        = 109,
-        .baseAttack    = 84,
+        .baseAttack    = 93,
         .baseDefense   = 91,
-        .baseSpeed     = 51,
+        .baseSpeed     = 42,
         .baseSpAttack  = 93,
         .baseSpDefense = 87,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),

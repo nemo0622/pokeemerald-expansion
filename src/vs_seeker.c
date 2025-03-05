@@ -543,7 +543,7 @@ static u32 GetGameProgressFlags()
 {
     const u32 gameProgressFlags[] = {
         FLAG_VISITED_SOFOS_CITY,
-        FLAG_VISITED_FORTREE_CITY,
+        FLAG_VISITED_KALAMI_CITY,
         FLAG_SYS_GAME_CLEAR,
         FLAG_DEFEATED_METEOR_FALLS_STEVEN
     };

@@ -101,6 +101,9 @@
 #define MAP_ACRISIA_CITY_HOUSE4        (92 | (0 << 8))
 #define MAP_ACRISIA_CITY_HOUSE5        (93 | (0 << 8))
 #define MAP_SOFOS_CITY_GAME_CORNER     (94 | (0 << 8))
+#define MAP_RIVERWALK_TRAIL_WEST       (95 | (0 << 8))
+#define MAP_RIVERWALK_TRAIL_SOUTH      (96 | (0 << 8))
+#define MAP_KALAMI_CITY                (97 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -152,6 +155,13 @@
 #define MAP_FALLARBOR_TOWN_POKEMON_CENTER_2F       (5 | (5 << 8))
 #define MAP_FALLARBOR_TOWN_COZMOS_HOUSE            (6 | (5 << 8))
 #define MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE   (7 | (5 << 8))
+#define MAP_KALAMI_CITY_HOUSE1                     (8 | (5 << 8))
+#define MAP_KALAMI_CITY_HOUSE2                     (9 | (5 << 8))
+#define MAP_KALAMI_CITY_HOUSE3                     (10 | (5 << 8))
+#define MAP_KALAMI_CITY_HOUSE4                     (11 | (5 << 8))
+#define MAP_KALAMI_CITY_POKEMON_CENTER             (12 | (5 << 8))
+#define MAP_KALAMI_CITY_MART                       (13 | (5 << 8))
+#define MAP_KALAMI_CITY_GYM                        (14 | (5 << 8))
 
 // gMapGroup_IndoorVerdanturf
 #define MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       (0 | (6 << 8))

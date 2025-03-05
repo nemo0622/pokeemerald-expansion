@@ -172,12 +172,15 @@ TheDelphis_EventScript_LeaveShipTrigger::
 # 138 "data/maps/TheDelphis/scripts.pory"
 	compare VAR_CHOSEN_SAIL_LOCATION, 7
 	goto_if_eq TheDelphis_EventScript_LeaveShipTrigger_11
-# 145 "data/maps/TheDelphis/scripts.pory"
+# 143 "data/maps/TheDelphis/scripts.pory"
+	compare VAR_CHOSEN_SAIL_LOCATION, 8
+	goto_if_eq TheDelphis_EventScript_LeaveShipTrigger_12
+# 150 "data/maps/TheDelphis/scripts.pory"
 	warp MAP_PYTHIOS_TOWN, 9, 7
-# 146 "data/maps/TheDelphis/scripts.pory"
+# 151 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 TheDelphis_EventScript_LeaveShipTrigger_1:
-# 149 "data/maps/TheDelphis/scripts.pory"
+# 154 "data/maps/TheDelphis/scripts.pory"
 	releaseall
 	end
 
@@ -202,298 +205,305 @@ TheDelphis_EventScript_LeaveShipTrigger_2:
 
 TheDelphis_EventScript_LeaveShipTrigger_5:
 # 110 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_PYTHIOS_TOWN, 17, 21
+	warp MAP_KALAMI_CITY, 44, 12
 # 111 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1
 
 TheDelphis_EventScript_LeaveShipTrigger_6:
 # 115 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_SOFOS_CITY, 22, 30
+	warp MAP_PYTHIOS_TOWN, 17, 21
 # 116 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1
 
 TheDelphis_EventScript_LeaveShipTrigger_7:
 # 120 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_MARMARO_ISLAND, 19, 32
+	warp MAP_SOFOS_CITY, 22, 30
 # 121 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1
 
 TheDelphis_EventScript_LeaveShipTrigger_8:
 # 125 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_MYRRINI_ISLAND, 23, 38
+	warp MAP_MARMARO_ISLAND, 19, 32
 # 126 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1
 
 TheDelphis_EventScript_LeaveShipTrigger_9:
 # 130 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_FRESCO_ISLAND, 65, 27
+	warp MAP_MYRRINI_ISLAND, 23, 38
 # 131 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1
 
 TheDelphis_EventScript_LeaveShipTrigger_10:
 # 135 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_PALATI_CITY, 39, 19
+	warp MAP_FRESCO_ISLAND, 65, 27
 # 136 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1
 
 TheDelphis_EventScript_LeaveShipTrigger_11:
 # 140 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_PORT_PELLO, 22, 19
+	warp MAP_PALATI_CITY, 39, 19
 # 141 "data/maps/TheDelphis/scripts.pory"
+	waitstate
+	goto TheDelphis_EventScript_LeaveShipTrigger_1
+
+TheDelphis_EventScript_LeaveShipTrigger_12:
+# 145 "data/maps/TheDelphis/scripts.pory"
+	warp MAP_PORT_PELLO, 22, 19
+# 146 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1
 
 
 TheDelphis_EventScript_CabinSign::
-# 155 "data/maps/TheDelphis/scripts.pory"
+# 160 "data/maps/TheDelphis/scripts.pory"
 	lock
-# 156 "data/maps/TheDelphis/scripts.pory"
+# 161 "data/maps/TheDelphis/scripts.pory"
 	msgbox TheDelphis_EventScript_CabinSign_Text_0
-# 157 "data/maps/TheDelphis/scripts.pory"
+# 162 "data/maps/TheDelphis/scripts.pory"
 	closemessage
-# 158 "data/maps/TheDelphis/scripts.pory"
+# 163 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 
 TheDelphis_EventScript_Book::
-# 163 "data/maps/TheDelphis/scripts.pory"
+# 168 "data/maps/TheDelphis/scripts.pory"
 	lock
-# 164 "data/maps/TheDelphis/scripts.pory"
+# 169 "data/maps/TheDelphis/scripts.pory"
 	msgbox TheDelphis_EventScript_Book_Text_0
-# 165 "data/maps/TheDelphis/scripts.pory"
+# 170 "data/maps/TheDelphis/scripts.pory"
 	closemessage
-# 166 "data/maps/TheDelphis/scripts.pory"
+# 171 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 
 TheDelphis_EventScript_PIRAEUS::
-# 172 "data/maps/TheDelphis/scripts.pory"
-	lock
-# 173 "data/maps/TheDelphis/scripts.pory"
-	random 3
-# 174 "data/maps/TheDelphis/scripts.pory"
-	switch VAR_RESULT
-# 175 "data/maps/TheDelphis/scripts.pory"
-	case 0, TheDelphis_EventScript_PIRAEUS_3
-# 176 "data/maps/TheDelphis/scripts.pory"
-	case 1, TheDelphis_EventScript_PIRAEUS_4
 # 177 "data/maps/TheDelphis/scripts.pory"
+	lock
+# 178 "data/maps/TheDelphis/scripts.pory"
+	random 3
+# 179 "data/maps/TheDelphis/scripts.pory"
+	switch VAR_RESULT
+# 180 "data/maps/TheDelphis/scripts.pory"
+	case 0, TheDelphis_EventScript_PIRAEUS_3
+# 181 "data/maps/TheDelphis/scripts.pory"
+	case 1, TheDelphis_EventScript_PIRAEUS_4
+# 182 "data/maps/TheDelphis/scripts.pory"
 	case 2, TheDelphis_EventScript_PIRAEUS_5
 TheDelphis_EventScript_PIRAEUS_1:
-# 179 "data/maps/TheDelphis/scripts.pory"
+# 184 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 TheDelphis_EventScript_PIRAEUS_3:
-# 175 "data/maps/TheDelphis/scripts.pory"
+# 180 "data/maps/TheDelphis/scripts.pory"
 	goto TheDelphis_EventScript_PiraeusInteraction1
 	goto TheDelphis_EventScript_PIRAEUS_1
 
 TheDelphis_EventScript_PIRAEUS_4:
-# 176 "data/maps/TheDelphis/scripts.pory"
+# 181 "data/maps/TheDelphis/scripts.pory"
 	goto TheDelphis_EventScript_PiraeusInteraction2
 	goto TheDelphis_EventScript_PIRAEUS_1
 
 TheDelphis_EventScript_PIRAEUS_5:
-# 177 "data/maps/TheDelphis/scripts.pory"
+# 182 "data/maps/TheDelphis/scripts.pory"
 	goto TheDelphis_EventScript_PiraeusInteraction3
 	goto TheDelphis_EventScript_PIRAEUS_1
 
 
 TheDelphis_EventScript_PiraeusInteraction1::
-# 184 "data/maps/TheDelphis/scripts.pory"
-	speakername TheDelphis_EventScript_EnterBoatCutscene_Text_0
-# 185 "data/maps/TheDelphis/scripts.pory"
-	msgbox TheDelphis_EventScript_PiraeusInteraction1_Text_0
-# 186 "data/maps/TheDelphis/scripts.pory"
-	closemessage
-# 187 "data/maps/TheDelphis/scripts.pory"
-	msgbox TheDelphis_EventScript_PiraeusInteraction1_Text_1
-# 188 "data/maps/TheDelphis/scripts.pory"
-	closemessage
 # 189 "data/maps/TheDelphis/scripts.pory"
-	delay 60
-# 190 "data/maps/TheDelphis/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
-# 191 "data/maps/TheDelphis/scripts.pory"
-	waitmovement 0
-# 192 "data/maps/TheDelphis/scripts.pory"
-	applymovement 1, Common_Movement_FacePlayer
-# 193 "data/maps/TheDelphis/scripts.pory"
-	waitmovement 0
-# 194 "data/maps/TheDelphis/scripts.pory"
 	speakername TheDelphis_EventScript_EnterBoatCutscene_Text_0
-# 195 "data/maps/TheDelphis/scripts.pory"
-	msgbox TheDelphis_EventScript_PiraeusInteraction1_Text_2
-# 196 "data/maps/TheDelphis/scripts.pory"
+# 190 "data/maps/TheDelphis/scripts.pory"
+	msgbox TheDelphis_EventScript_PiraeusInteraction1_Text_0
+# 191 "data/maps/TheDelphis/scripts.pory"
 	closemessage
+# 192 "data/maps/TheDelphis/scripts.pory"
+	msgbox TheDelphis_EventScript_PiraeusInteraction1_Text_1
+# 193 "data/maps/TheDelphis/scripts.pory"
+	closemessage
+# 194 "data/maps/TheDelphis/scripts.pory"
+	delay 60
+# 195 "data/maps/TheDelphis/scripts.pory"
+	applymovement 1, Common_Movement_ExclamationMark
+# 196 "data/maps/TheDelphis/scripts.pory"
+	waitmovement 0
 # 197 "data/maps/TheDelphis/scripts.pory"
-	applymovement 1, Common_Movement_FaceDown
+	applymovement 1, Common_Movement_FacePlayer
 # 198 "data/maps/TheDelphis/scripts.pory"
 	waitmovement 0
 # 199 "data/maps/TheDelphis/scripts.pory"
+	speakername TheDelphis_EventScript_EnterBoatCutscene_Text_0
+# 200 "data/maps/TheDelphis/scripts.pory"
+	msgbox TheDelphis_EventScript_PiraeusInteraction1_Text_2
+# 201 "data/maps/TheDelphis/scripts.pory"
+	closemessage
+# 202 "data/maps/TheDelphis/scripts.pory"
+	applymovement 1, Common_Movement_FaceDown
+# 203 "data/maps/TheDelphis/scripts.pory"
+	waitmovement 0
+# 204 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 
 TheDelphis_EventScript_PiraeusInteraction2::
-# 204 "data/maps/TheDelphis/scripts.pory"
-	faceplayer
-# 205 "data/maps/TheDelphis/scripts.pory"
-	speakername TheDelphis_EventScript_EnterBoatCutscene_Text_0
-# 206 "data/maps/TheDelphis/scripts.pory"
-	msgbox TheDelphis_EventScript_PiraeusInteraction2_Text_0
-# 207 "data/maps/TheDelphis/scripts.pory"
-	closemessage
-# 208 "data/maps/TheDelphis/scripts.pory"
-	applymovement 1, Common_Movement_FaceDown
 # 209 "data/maps/TheDelphis/scripts.pory"
-	waitmovement 0
+	faceplayer
 # 210 "data/maps/TheDelphis/scripts.pory"
+	speakername TheDelphis_EventScript_EnterBoatCutscene_Text_0
+# 211 "data/maps/TheDelphis/scripts.pory"
+	msgbox TheDelphis_EventScript_PiraeusInteraction2_Text_0
+# 212 "data/maps/TheDelphis/scripts.pory"
+	closemessage
+# 213 "data/maps/TheDelphis/scripts.pory"
+	applymovement 1, Common_Movement_FaceDown
+# 214 "data/maps/TheDelphis/scripts.pory"
+	waitmovement 0
+# 215 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 
 TheDelphis_EventScript_PiraeusInteraction3::
-# 215 "data/maps/TheDelphis/scripts.pory"
-	faceplayer
-# 216 "data/maps/TheDelphis/scripts.pory"
-	speakername TheDelphis_EventScript_EnterBoatCutscene_Text_0
-# 217 "data/maps/TheDelphis/scripts.pory"
-	msgbox TheDelphis_EventScript_PiraeusInteraction3_Text_0
-# 218 "data/maps/TheDelphis/scripts.pory"
-	closemessage
-# 219 "data/maps/TheDelphis/scripts.pory"
-	applymovement 1, Common_Movement_FaceDown
 # 220 "data/maps/TheDelphis/scripts.pory"
-	waitmovement 0
+	faceplayer
 # 221 "data/maps/TheDelphis/scripts.pory"
+	speakername TheDelphis_EventScript_EnterBoatCutscene_Text_0
+# 222 "data/maps/TheDelphis/scripts.pory"
+	msgbox TheDelphis_EventScript_PiraeusInteraction3_Text_0
+# 223 "data/maps/TheDelphis/scripts.pory"
+	closemessage
+# 224 "data/maps/TheDelphis/scripts.pory"
+	applymovement 1, Common_Movement_FaceDown
+# 225 "data/maps/TheDelphis/scripts.pory"
+	waitmovement 0
+# 226 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 
 TheDelphis_EventScript_Sailor::
-# 227 "data/maps/TheDelphis/scripts.pory"
-	lock
-# 228 "data/maps/TheDelphis/scripts.pory"
-	faceplayer
-# 229 "data/maps/TheDelphis/scripts.pory"
-	speakername TheDelphis_EventScript_Sailor_Text_0
-# 230 "data/maps/TheDelphis/scripts.pory"
-	msgbox TheDelphis_EventScript_Sailor_Text_1
-# 231 "data/maps/TheDelphis/scripts.pory"
-	closemessage
 # 232 "data/maps/TheDelphis/scripts.pory"
+	lock
+# 233 "data/maps/TheDelphis/scripts.pory"
+	faceplayer
+# 234 "data/maps/TheDelphis/scripts.pory"
+	speakername TheDelphis_EventScript_Sailor_Text_0
+# 235 "data/maps/TheDelphis/scripts.pory"
+	msgbox TheDelphis_EventScript_Sailor_Text_1
+# 236 "data/maps/TheDelphis/scripts.pory"
+	closemessage
+# 237 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 
 TheDelphis_EventScript_PunkRocker::
-# 238 "data/maps/TheDelphis/scripts.pory"
-	lock
-# 239 "data/maps/TheDelphis/scripts.pory"
-	faceplayer
-# 240 "data/maps/TheDelphis/scripts.pory"
-	speakername TheDelphis_EventScript_PunkRocker_Text_0
-# 241 "data/maps/TheDelphis/scripts.pory"
-	msgbox TheDelphis_EventScript_PunkRocker_Text_1
-# 242 "data/maps/TheDelphis/scripts.pory"
-	closemessage
 # 243 "data/maps/TheDelphis/scripts.pory"
+	lock
+# 244 "data/maps/TheDelphis/scripts.pory"
+	faceplayer
+# 245 "data/maps/TheDelphis/scripts.pory"
+	speakername TheDelphis_EventScript_PunkRocker_Text_0
+# 246 "data/maps/TheDelphis/scripts.pory"
+	msgbox TheDelphis_EventScript_PunkRocker_Text_1
+# 247 "data/maps/TheDelphis/scripts.pory"
+	closemessage
+# 248 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 
 TheDelphis_EventScript_TogaGirl::
-# 249 "data/maps/TheDelphis/scripts.pory"
-	lock
-# 250 "data/maps/TheDelphis/scripts.pory"
-	faceplayer
-# 251 "data/maps/TheDelphis/scripts.pory"
-	speakername TheDelphis_EventScript_TogaGirl_Text_0
-# 252 "data/maps/TheDelphis/scripts.pory"
-	msgbox TheDelphis_EventScript_TogaGirl_Text_1
-# 253 "data/maps/TheDelphis/scripts.pory"
-	closemessage
 # 254 "data/maps/TheDelphis/scripts.pory"
+	lock
+# 255 "data/maps/TheDelphis/scripts.pory"
+	faceplayer
+# 256 "data/maps/TheDelphis/scripts.pory"
+	speakername TheDelphis_EventScript_TogaGirl_Text_0
+# 257 "data/maps/TheDelphis/scripts.pory"
+	msgbox TheDelphis_EventScript_TogaGirl_Text_1
+# 258 "data/maps/TheDelphis/scripts.pory"
+	closemessage
+# 259 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 
 TheDelphis_EventScript_Passimian::
-# 260 "data/maps/TheDelphis/scripts.pory"
-	lock
-# 261 "data/maps/TheDelphis/scripts.pory"
-	faceplayer
-# 262 "data/maps/TheDelphis/scripts.pory"
-	speakername TheDelphis_EventScript_Passimian_Text_0
-# 263 "data/maps/TheDelphis/scripts.pory"
-	playmoncry SPECIES_PASSIMIAN, CRY_MODE_NORMAL
-# 264 "data/maps/TheDelphis/scripts.pory"
-	msgbox TheDelphis_EventScript_Passimian_Text_1
 # 265 "data/maps/TheDelphis/scripts.pory"
-	waitmoncry
+	lock
 # 266 "data/maps/TheDelphis/scripts.pory"
-	closemessage
+	faceplayer
 # 267 "data/maps/TheDelphis/scripts.pory"
+	speakername TheDelphis_EventScript_Passimian_Text_0
+# 268 "data/maps/TheDelphis/scripts.pory"
+	playmoncry SPECIES_PASSIMIAN, CRY_MODE_NORMAL
+# 269 "data/maps/TheDelphis/scripts.pory"
+	msgbox TheDelphis_EventScript_Passimian_Text_1
+# 270 "data/maps/TheDelphis/scripts.pory"
+	waitmoncry
+# 271 "data/maps/TheDelphis/scripts.pory"
+	closemessage
+# 272 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 
 TheDelphis_EventScript_Oranguru::
-# 273 "data/maps/TheDelphis/scripts.pory"
-	lock
-# 274 "data/maps/TheDelphis/scripts.pory"
-	faceplayer
-# 275 "data/maps/TheDelphis/scripts.pory"
-	speakername TheDelphis_EventScript_Oranguru_Text_0
-# 276 "data/maps/TheDelphis/scripts.pory"
-	playmoncry SPECIES_ORANGURU, CRY_MODE_NORMAL
-# 277 "data/maps/TheDelphis/scripts.pory"
-	msgbox TheDelphis_EventScript_Oranguru_Text_1
 # 278 "data/maps/TheDelphis/scripts.pory"
-	waitmoncry
+	lock
 # 279 "data/maps/TheDelphis/scripts.pory"
-	closemessage
+	faceplayer
 # 280 "data/maps/TheDelphis/scripts.pory"
+	speakername TheDelphis_EventScript_Oranguru_Text_0
+# 281 "data/maps/TheDelphis/scripts.pory"
+	playmoncry SPECIES_ORANGURU, CRY_MODE_NORMAL
+# 282 "data/maps/TheDelphis/scripts.pory"
+	msgbox TheDelphis_EventScript_Oranguru_Text_1
+# 283 "data/maps/TheDelphis/scripts.pory"
+	waitmoncry
+# 284 "data/maps/TheDelphis/scripts.pory"
+	closemessage
+# 285 "data/maps/TheDelphis/scripts.pory"
 	release
 	end
 
 
 TheDelphis_EventScript_CabinDoorInteract::
-# 286 "data/maps/TheDelphis/scripts.pory"
+# 291 "data/maps/TheDelphis/scripts.pory"
 	lock
-# 287 "data/maps/TheDelphis/scripts.pory"
+# 292 "data/maps/TheDelphis/scripts.pory"
 	msgbox TheDelphis_EventScript_CabinDoorInteract_Text_0, MSGBOX_YESNO
-# 288 "data/maps/TheDelphis/scripts.pory"
+# 293 "data/maps/TheDelphis/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq TheDelphis_EventScript_CabinDoorInteract_2
-# 294 "data/maps/TheDelphis/scripts.pory"
+# 299 "data/maps/TheDelphis/scripts.pory"
 	closemessage
-# 296 "data/maps/TheDelphis/scripts.pory"
+# 301 "data/maps/TheDelphis/scripts.pory"
 	goto_if_unset FLAG_INITIALIZED_CABIN, TheDelphis_EventScript_CabinDoorInteract_5
-# 302 "data/maps/TheDelphis/scripts.pory"
+# 307 "data/maps/TheDelphis/scripts.pory"
 	goto SecretBase_EventScript_Enter
 TheDelphis_EventScript_CabinDoorInteract_1:
-# 305 "data/maps/TheDelphis/scripts.pory"
+# 310 "data/maps/TheDelphis/scripts.pory"
 	releaseall
 	end
 
 TheDelphis_EventScript_CabinDoorInteract_2:
-# 290 "data/maps/TheDelphis/scripts.pory"
+# 295 "data/maps/TheDelphis/scripts.pory"
 	closemessage
 	goto TheDelphis_EventScript_CabinDoorInteract_1
 
 TheDelphis_EventScript_CabinDoorInteract_5:
-# 298 "data/maps/TheDelphis/scripts.pory"
+# 303 "data/maps/TheDelphis/scripts.pory"
 	goto SecretBase_EventScript_InitSecretBase
 	goto TheDelphis_EventScript_CabinDoorInteract_1
 
@@ -531,70 +541,70 @@ TheDelphis_EventScript_LeaveShipTrigger_Text_1:
 	.string "Delphis!$"
 
 TheDelphis_EventScript_CabinSign_Text_0:
-# 156 "data/maps/TheDelphis/scripts.pory"
+# 161 "data/maps/TheDelphis/scripts.pory"
 	.string "{PLAYER}'s Cabin$"
 
 TheDelphis_EventScript_Book_Text_0:
-# 164 "data/maps/TheDelphis/scripts.pory"
+# 169 "data/maps/TheDelphis/scripts.pory"
 	.string "Vaporeon's paw prints have smudged up\n"
 	.string "the words! Piraeus isn't reading here at\l"
 	.string "all!$"
 
 TheDelphis_EventScript_PiraeusInteraction1_Text_0:
-# 185 "data/maps/TheDelphis/scripts.pory"
+# 190 "data/maps/TheDelphis/scripts.pory"
 	.string "...Zzz...snort!...zzz...$"
 
 TheDelphis_EventScript_PiraeusInteraction1_Text_1:
-# 187 "data/maps/TheDelphis/scripts.pory"
+# 192 "data/maps/TheDelphis/scripts.pory"
 	.string "He's snoozing!$"
 
 TheDelphis_EventScript_PiraeusInteraction1_Text_2:
-# 195 "data/maps/TheDelphis/scripts.pory"
+# 200 "data/maps/TheDelphis/scripts.pory"
 	.string "Hm? {PLAYER}! No, no, I wasn't\n"
 	.string "sleeping... I was reading and needed to\l"
 	.string "rest my eyes, that's all!$"
 
 TheDelphis_EventScript_PiraeusInteraction2_Text_0:
-# 206 "data/maps/TheDelphis/scripts.pory"
+# 211 "data/maps/TheDelphis/scripts.pory"
 	.string "Have you met my crew? We're a bit of a\n"
 	.string "rag-tag bunch, but that makes sailing\l"
 	.string "so much more fun.$"
 
 TheDelphis_EventScript_PiraeusInteraction3_Text_0:
-# 217 "data/maps/TheDelphis/scripts.pory"
+# 222 "data/maps/TheDelphis/scripts.pory"
 	.string "Are you enjoying your Cabin,\n"
 	.string "{PLAYER}? I figure I owe you for\l"
 	.string "saving my butt back in Pythios Town, so\l"
 	.string "you can decorate it however you want.$"
 
 TheDelphis_EventScript_Sailor_Text_0:
-# 229 "data/maps/TheDelphis/scripts.pory"
+# 234 "data/maps/TheDelphis/scripts.pory"
 	.string "Sailor$"
 
 TheDelphis_EventScript_Sailor_Text_1:
-# 230 "data/maps/TheDelphis/scripts.pory"
+# 235 "data/maps/TheDelphis/scripts.pory"
 	.string "Hey, watch it! This food is all mine!\p"
 	.string "...You were just saying hi? Well, hi.\p"
 	.string "Um... have you seen this Arcanine\n"
 	.string "statue? Pretty cool, huh?$"
 
 TheDelphis_EventScript_PunkRocker_Text_0:
-# 240 "data/maps/TheDelphis/scripts.pory"
+# 245 "data/maps/TheDelphis/scripts.pory"
 	.string "Punk Rocker$"
 
 TheDelphis_EventScript_PunkRocker_Text_1:
-# 241 "data/maps/TheDelphis/scripts.pory"
+# 246 "data/maps/TheDelphis/scripts.pory"
 	.string "I'm trying to get these guys to form a\n"
 	.string "band with me. Right now, I'm the only one\l"
 	.string "who can play an instrument! It makes\l"
 	.string "music nights kind of boring.$"
 
 TheDelphis_EventScript_TogaGirl_Text_0:
-# 251 "data/maps/TheDelphis/scripts.pory"
+# 256 "data/maps/TheDelphis/scripts.pory"
 	.string "Toga Lady$"
 
 TheDelphis_EventScript_TogaGirl_Text_1:
-# 252 "data/maps/TheDelphis/scripts.pory"
+# 257 "data/maps/TheDelphis/scripts.pory"
 	.string "I play with our Passimian while we're on\n"
 	.string "the ship.\p"
 	.string "Passimian helps us fight off wild\n"
@@ -603,21 +613,21 @@ TheDelphis_EventScript_TogaGirl_Text_1:
 	.string "Pokémon are so helpful!$"
 
 TheDelphis_EventScript_Passimian_Text_0:
-# 262 "data/maps/TheDelphis/scripts.pory"
+# 267 "data/maps/TheDelphis/scripts.pory"
 	.string "Passimian$"
 
 TheDelphis_EventScript_Passimian_Text_1:
-# 264 "data/maps/TheDelphis/scripts.pory"
+# 269 "data/maps/TheDelphis/scripts.pory"
 	.string "Cree-ee!$"
 
 TheDelphis_EventScript_Oranguru_Text_0:
-# 275 "data/maps/TheDelphis/scripts.pory"
+# 280 "data/maps/TheDelphis/scripts.pory"
 	.string "Oranguru$"
 
 TheDelphis_EventScript_Oranguru_Text_1:
-# 277 "data/maps/TheDelphis/scripts.pory"
+# 282 "data/maps/TheDelphis/scripts.pory"
 	.string "Mmm... oo-oo!$"
 
 TheDelphis_EventScript_CabinDoorInteract_Text_0:
-# 287 "data/maps/TheDelphis/scripts.pory"
+# 292 "data/maps/TheDelphis/scripts.pory"
 	.string "Enter {PLAYER}'s Cabin?$"

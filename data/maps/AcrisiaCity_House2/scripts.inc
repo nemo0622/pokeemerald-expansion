@@ -40,12 +40,11 @@ AcrisiaCity_House2_EventScript_Lady_Text_0:
 
 AcrisiaCity_House2_EventScript_Lady_Text_1:
 # 8 "data/maps/AcrisiaCity_House2/scripts.pory"
-	.string "Yia sou, hello, darling! The Agrias\n"
+	.string "Chaire, hello, darling! The Acrisia\n"
 	.string "University keeps things busy in town.$"
 
 AcrisiaCity_House2_EventScript_Lady_Text_2:
 # 14 "data/maps/AcrisiaCity_House2/scripts.pory"
-	.string "You're a new face! Thank the gods for\n"
-	.string "that University bringing people in.\l"
-	.string "Here, I'll give you something to help you\l"
-	.string "out.$"
+	.string "You must be the new research assistant\n"
+	.string "everyone's been talking about! Here,\l"
+	.string "I'll give you something to help you out.$"

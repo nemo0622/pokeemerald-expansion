@@ -84,7 +84,7 @@ Double Battle: No
 === TRAINER_BRONZE_PASS_CHIMERA_GRUNT === /* Chimera grunt in bronze pass north */
 Name: Grunt
 Class: Team Chimera
-Pic: Grunt Kecleon
+Pic: Chimera Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -314,13 +314,18 @@ AI: Check Bad Move / Check Viability
 Party Size: 2
 Pool Rules: Basic
 
-Kakuna
+Silcoon
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bug Bite
+- Harden
 
-Metapod
+Cascoon
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bug Bite
+- Poison Sting
+- Harden
 
 Cutiefly
 Level: 9
@@ -561,7 +566,7 @@ Drowzee
 Level: 11
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_ACRISIAMTNS_JOSUA === /* Hiker in Acrisia Mountains */
+=== TRAINER_RIVERWALK_TRAIL_W_JOSUA === /* Hiker moved to Riverwalk Trail West */
 Name: Josua
 Class: Hiker
 Pic: Hiker
@@ -573,16 +578,16 @@ Party Size: 2
 Pool Rules: Basic
 
 Dwebble
-Level: 12
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 14
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Omanyte
-Level: 12
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 14
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Trapinch
-Level: 12
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 15
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Tags: Ace
 
 === TRAINER_ACRISIAMTNS_ULF === /* Hiker in Acrisia Mountains */
@@ -597,19 +602,19 @@ Party Size: 2
 Pool Rules: Basic
 
 Vulpix
-Level: 12
+Level: 11
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Cubone
-Level: 13
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Aron
-Level: 13
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Rockruff
-Level: 13
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ACRISIAMTNS_JAMMA === /* Battle Girl in Acrisia Mountains */
@@ -624,7 +629,7 @@ Party Size: 2
 Pool Rules: Basic
 
 Mienfoo
-Level: 13
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Aipom
@@ -632,7 +637,7 @@ Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Timburr
-Level: 13
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ACRISIAMTNS_GREG === /* Scientist (Collector) in Acrisia Mountains */
@@ -651,11 +656,11 @@ Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Sneasel
-Level: 14
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Sneasel Hisui
-Level: 14
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ACRISIAMTNS_HUGH ===
@@ -670,24 +675,24 @@ Party Size: 2
 Pool Rules: Basic
 
 Growlithe Hisui
-Level: 14
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Tags: Lead
 
 Lileep
-Level: 15
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Anorith
-Level: 15
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Tirtouga
-Level: 15
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Archen
-Level: 15
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ACRISIACAVES_F1_LANA === /* Picknicker in Acrisia Caves F1 */
@@ -725,14 +730,14 @@ Party Size: 1
 Pool Rules: Basic
 
 Bronzor
-Level: 16
+Level: 15
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 
 Stufful
-Level: 16
+Level: 15
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 
-=== TRAINER_ACRISIACAVES_F1_UMBER === /* Hiker in Acrisia Caves BF1 */
+=== TRAINER_RIVERWALK_TRAIL_W_UMBER === /* Hiker moved to Riverwalk Trail West */
 Name: Umber
 Class: Hiker
 Pic: Hiker
@@ -744,7 +749,7 @@ Party Size: 1
 Pool Rules: Basic
 
 SPECIES_MINIOR_METEOR_GREEN
-Level: 17
+Level: 16
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
 - Acrobatics
@@ -752,7 +757,7 @@ IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rollout
 
 SPECIES_MINIOR_METEOR_RED
-Level: 17
+Level: 16
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
 - Acrobatics
@@ -760,7 +765,7 @@ IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rollout
 
 SPECIES_MINIOR_METEOR_BLUE
-Level: 17
+Level: 16
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
 - Acrobatics
@@ -768,14 +773,14 @@ IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rollout
 
 SPECIES_MINIOR_METEOR_YELLOW
-Level: 17
+Level: 16
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
 - Acrobatics
 - Defense Curl
 - Rollout
 
-=== TRAINER_ACRISIACAVES_BF1_BERKLEY === /* Trainer in Acrisia Caves BF1 */
+=== TRAINER_RIVERWALK_TRAIL_S_BERKLEY === /* Trainer moved to Riverwalk Trail South */
 Name: Berkley
 Class: Triathlete
 Pic: Running Triathlete M
@@ -783,18 +788,22 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
-Party Size: 1
+Party Size: 2
 Pool Rules: Basic
 
 Mawile
-Level: 16
+Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Honedge
-Level: 16
+Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_ACRISIACAVES_BF1_MARGAREY === /* Battle Girl in Acrisia Caves BF1 */
+Mienfoo
+Level: 15
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+=== TRAINER_RIVERWALK_TRAIL_W_MARGAREY === /* Battle Girl moved to Riverwalk Trail West */
 Name: Fraia
 Class: Battle Girl
 Pic: Battle Girl
@@ -825,7 +834,7 @@ Sandshrew Alolan
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_ACRISIACAVES_BF1_KYLON === /* Ninja Boy in Acrisia Caves BF1 */
+=== TRAINER_RIVERWALK_TRAIL_W_KYLON === /* Ninja Boy moved to Riverwalk Trail West */
 Name: Kylon
 Class: Ninja Boy
 Pic: Ninja Boy
@@ -851,7 +860,7 @@ Party Size: 3
 Pool Rules: Basic
 
 Klawf
-Level: 17
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Tags: Lead
 - Metal Claw
@@ -860,7 +869,7 @@ Tags: Lead
 - Mud Slap
 
 SPECIES_VOLTORB_HISUI
-Level: 17
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Charge Beam
 - Rollout
@@ -868,7 +877,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bullet Seed
 
 Mawile
-Level: 17
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Metal Claw
 - Fairy Wind
@@ -876,7 +885,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bite
 
 Sneasel Hisuian
-Level: 17
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rock Smash
 - Metal Claw
@@ -884,7 +893,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Taunt
 
 Larvitar
-Level: 19
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Tags: Ace
 - Stomping Tantrum
@@ -905,7 +914,7 @@ Party Size: 4
 Pool Rules: Basic
 
 Klawf
-Level: 17
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Tags: Lead
 - Metal Claw
@@ -914,7 +923,7 @@ Tags: Lead
 - Bulldoze
 
 SPECIES_VOLTORB_HISUI @ ITEM_WIDE_LENS
-Level: 17
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Charge Beam
 - Rollout
@@ -922,7 +931,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bullet Seed
 
 Mawile
-Level: 17
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Metal Claw
 - Play Rough
@@ -930,7 +939,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
 
 Sneasel Hisuian
-Level: 17
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Smash
 - Metal Claw
@@ -938,7 +947,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Shard
 
 Larvitar
-Level: 19
+Level: 20
 Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Tags: Ace
@@ -1084,7 +1093,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_WANDERERSWOODS_CHIMERA_ADMIN ===
 Name: Admin
 Class: Team Chimera
-Pic: Admin Dusknoir
+Pic: Chimera Admin M
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -1145,21 +1154,15 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability
-Party Size: 1
-Pool Rules: Basic
 
 Hoothoot
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Pikipek
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WANDERERSWOODS_CHIMERA_ADMIN_HARD ===
 Name: Admin
 Class: Team Chimera
-Pic: Admin Dusknoir
+Pic: Chimera Admin M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -1304,7 +1307,7 @@ Ponyta Galarian
 Level: 19
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Butterfree
+Dustox
 Level: 19
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -1319,13 +1322,9 @@ AI: Check Bad Move / Check Viability
 Party Size: 2
 Pool Rules: Basic
 
-Butterfree
+Dustox
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Psybeam
-- Bug Buzz
-- Sleep Powder
-- Stun Spore
 
 Noctowl
 Level: 20
@@ -1362,11 +1361,11 @@ AI: Check Bad Move / Check Viability
 Party Size: 2
 Pool Rules: Basic
 
-Caterpie
+Wurmple
 Level: 3
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Weedle
+Pikipek
 Level: 3
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -1588,7 +1587,7 @@ Tags: Ace
 === TRAINER_ERINYSPATH_CHIMERA_ADMIN ===
 Name: Admin
 Class: Team Chimera
-Pic: Admin Walrein
+Pic: Chimera Admin F
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -1632,7 +1631,7 @@ Tags: Ace
 === TRAINER_ERINYSPATH_CHIMERA_ADMIN_HARD ===
 Name: Admin
 Class: Team Chimera
-Pic: Admin Walrein
+Pic: Chimera Admin F
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -1693,7 +1692,7 @@ Tags: Ace
 === TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_1 ===
 Name: Grunt
 Class: Team Chimera
-Pic: Grunt Sandslash
+Pic: Chimera Grunt F
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -1720,7 +1719,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_2 ===
 Name: Grunt
 Class: Team Chimera
-Pic: Grunt Sandslash
+Pic: Chimera Grunt F
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -1747,7 +1746,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_PYTHIOSCEMETERY_CHIMERA_ADMIN ===
 Name: Admin
 Class: Team Chimera
-Pic: Admin Dusknoir
+Pic: Chimera Admin M
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -1858,116 +1857,174 @@ Steenee
 Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_AUSTINA ===
-Name: AUSTINA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
-Double Battle: No
-AI: Check Bad Move
-
-Marill
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GWEN ===
-Name: GWEN
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
-Double Battle: No
-AI: Check Bad Move
-
-Marill
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_LOLA_2 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
-Double Battle: No
-AI: Check Bad Move
-
-Marill
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Marill
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_LOLA_3 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
-Double Battle: No
-AI: Check Bad Move
-
-Marill
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Marill
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_LOLA_4 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
-Double Battle: No
-AI: Check Bad Move
-
-Marill
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Marill
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_LOLA_5 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
-Double Battle: No
-AI: Check Bad Move
-
-Azumarill
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Azumarill
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-=== TRAINER_RICKY_1 ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
+=== TRAINER_RIVERWALK_TRAIL_S_MARKUS ===
+Name: Markus
+Class: Fisherman
+Pic: Fisherman
 Gender: Male
-Music: Girl
+Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint
+Party Size: 3
+Pool Rules: Basic
 
-Zigzagoon
-Level: 13
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Sand Attack
-- Headbutt
-- Tail Whip
-- Surf
+Seel
+Level: 15
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Clamperl
+Level: 15
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Goomy
+Level: 15
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_RIVERWALK_TRAIL_S_TINA ===
+Name: Tina
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Sandile
+Level: 16
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Beautifly
+Level: 16
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Dustox
+Level: 16
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_RIVERWALK_TRAIL_S_GIANNA ===
+Name: Gianna
+Class: Scientist F
+Pic: Scientist F
+Gender: Female
+Music: Cool
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Oricorio Pom Pom
+Level: 16
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Magnemite
+Level: 16
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Natu
+Level: 16
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_RIVERWALK_TRAIL_S_BARNETT ===
+Name: Barnett
+Class: Officer
+Pic: Officer
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Barboach
+Level: 16
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Helioptile
+Level: 16
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Charcadet
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Chatot
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_KALAMI_GYM_REX ===
+Name: Rex
+Class: Worker
+Pic: Worker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Timburr
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Tyrunt
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Cufant
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_KALAMI_GYM_DANIEL ===
+Name: Daniel
+Class: Worker
+Pic: Worker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Tinkatink
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Numel
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Stufful
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_KALAMI_GYM_TASOULA ===
+Name: Tasoula
+Class: Scientist F
+Pic: Scientist F
+Gender: Female
+Music: Cool
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Togedemaru
+Level: 18
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Rockruff
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Grimer
+Level: 18
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Grimer Alolan
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_SIMON ===
 Name: SIMON
@@ -4190,7 +4247,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
 Name: GRUNT
 Class: Team Chimera
-Pic: Grunt Sandslash
+Pic: Chimera Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No
@@ -4207,7 +4264,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
 Name: GRUNT
 Class: Team Chimera
-Pic: Grunt Kecleon
+Pic: Chimera Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -11295,7 +11352,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
 Name: GRUNT
 Class: Team Chimera
-Pic: Grunt Kecleon
+Pic: Chimera Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -11312,7 +11369,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_GRUNT_UNUSED ===
 Name: GRUNT
 Class: Team Magma
-Pic: Grunt Sandslash
+Pic: Chimera Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No
@@ -11329,7 +11386,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_MT_PYRE_4 ===
 Name: GRUNT
 Class: Team Chimera
-Pic: Grunt Sandslash
+Pic: Chimera Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No
@@ -11718,7 +11775,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_WEATHER_INST_5 ===
 Name: GRUNT
 Class: Team Chimera
-Pic: Grunt Sandslash
+Pic: Chimera Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No

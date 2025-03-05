@@ -858,7 +858,7 @@
 
 // Misc. Key Items
 #define ITEM_BICYCLE 706
-#define ITEM_MACH_BIKE 707
+#define ITEM_ESPATHRA_WHISTLE 707
 #define ITEM_ACRO_BIKE 708
 #define ITEM_OLD_ROD 709
 #define ITEM_GOOD_ROD 710

@@ -1,0 +1,86 @@
+mapscripts KalamiCity_PokemonCenter_MapScripts {}
+
+script KalamiCity_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Kalami City Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_KALAMI_CITY)
+    }
+    release
+    end
+}
+
+script KalamiCity_PokemonCenter_EventScript_Togetic
+{
+    lock
+    faceplayer
+    speakername("Togetic")
+    playmoncry(SPECIES_TOGETIC, CRY_MODE_NORMAL)
+    msgbox("Bee-eh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_PokemonCenter_EventScript_FatMan
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("Mattaios, the Gym Leader that lives here, is constantly working. Does he ever take a break?"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_PokemonCenter_EventScript_PokefanF
+{
+    lock
+    faceplayer
+    speakername("Pokéfan")
+    msgbox(format("My Trumbeak flies letters to my friends across the region!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_PokemonCenter_EventScript_Trumbeak
+{
+    lock
+    faceplayer
+    speakername("Trumbeak")
+    playmoncry(SPECIES_TRUMBEAK, CRY_MODE_NORMAL)
+    msgbox("Caw!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

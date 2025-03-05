@@ -36,7 +36,7 @@ AcrisiaCity_House4_EventScript_Girl::
 
 AcrisiaCity_House4_EventScript_Hiker_Text_0:
 # 7 "data/maps/AcrisiaCity_House4/scripts.pory"
-	.string "Big Guy$"
+	.string "Father$"
 
 AcrisiaCity_House4_EventScript_Hiker_Text_1:
 # 8 "data/maps/AcrisiaCity_House4/scripts.pory"
@@ -45,9 +45,9 @@ AcrisiaCity_House4_EventScript_Hiker_Text_1:
 
 AcrisiaCity_House4_EventScript_Girl_Text_0:
 # 18 "data/maps/AcrisiaCity_House4/scripts.pory"
-	.string "Girl$"
+	.string "Daughter$"
 
 AcrisiaCity_House4_EventScript_Girl_Text_1:
 # 19 "data/maps/AcrisiaCity_House4/scripts.pory"
-	.string "My dumb Dad won't give me a phone, so I'm\n"
-	.string "just stuck watching TV all day.$"
+	.string "My Dad won't give me a phone, so I'm just\n"
+	.string "stuck watching TV all day.$"

@@ -191,7 +191,7 @@
 #define P_FAMILY_MUDKIP                  FALSE
 #define P_FAMILY_POOCHYENA               FALSE
 #define P_FAMILY_ZIGZAGOON               P_GEN_3_POKEMON
-#define P_FAMILY_WURMPLE                 FALSE
+#define P_FAMILY_WURMPLE                 P_GEN_3_POKEMON
 #define P_FAMILY_LOTAD                   FALSE
 #define P_FAMILY_SEEDOT                  FALSE
 #define P_FAMILY_TAILLOW                 FALSE
@@ -238,7 +238,7 @@
 #define P_FAMILY_KECLEON                 P_GEN_3_POKEMON
 #define P_FAMILY_SHUPPET                 P_GEN_3_POKEMON
 #define P_FAMILY_DUSKULL                 P_GEN_3_POKEMON
-#define P_FAMILY_TROPIUS                 FALSE
+#define P_FAMILY_TROPIUS                 P_GEN_3_POKEMON
 #define P_FAMILY_CHIMECHO                P_GEN_3_POKEMON
 #define P_FAMILY_ABSOL                   FALSE
 #define P_FAMILY_SNORUNT                 P_GEN_3_POKEMON

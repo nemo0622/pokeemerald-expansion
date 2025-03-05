@@ -1,0 +1,23 @@
+mapscripts KalamiCity_House4_MapScripts {}
+
+script KalamiCity_House4_EventScript_Farmer
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("Most buildings on this side of Kalami City are actually storage warehouses, not homes. Pokémon from the swamp sneak in sometimes."))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_House4_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("Some people make rafts which can float up and down the rivers here. I want to ride on one someday!"))
+    closemessage
+    release
+    end
+}

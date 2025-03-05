@@ -24,6 +24,15 @@ mapscripts PythiosTown_MapScripts {
     }
 }
 
+script PythiosTown_Sign_GymSign
+{
+    lock
+    msgbox(format("Gym Leader: Sabella\n The Oracle of Ilios"))
+    closemessage
+    release
+    end
+}
+
 script PythiosTown_EventScripts_NPC_Gentleman
 {
     lock
@@ -401,7 +410,7 @@ script PythiosTown_EventScripts_PIRAEUS
     if(!flag(FLAG_MET_PIRAEUS_PYTHIOS_TOWN)) // first speak
     {
         speakername("Strange Sailor")
-        msgbox(format("Yia sou! Hey! I need a strong Trainer to help me out of a bind.\p Come to me when you have the {COLOR GREEN}Pythios Town Gym Badge{COLOR DARK_GRAY}... please!"))
+        msgbox(format("Chaire! Hey! I need a strong Trainer to help me out of a bind.\p Come to me when you have the {COLOR GREEN}Pythios Town Gym Badge{COLOR DARK_GRAY}... please!"))
         closemessage
         setflag(FLAG_MET_PIRAEUS_PYTHIOS_TOWN)
         release
@@ -448,106 +457,7 @@ script PythiosTown_EventScripts_PIRAEUS
     }
     elif(flag(FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN)) // unlocked PIRAEUS services
     {
-        speakername("Piraeus")
-        msgbox(format("Chaire, {PLAYER}! Where are we going today?"))
-        
-        // generate list of locations/options
-        dynmultipush("Just chatting!", 0)
-        if(flag(FLAG_VISITED_PYTHIOS_TOWN)) {
-            dynmultipush("Pythios Town", 1)
-        }
-        if(flag(FLAG_VISITED_SOFOS_CITY)) {
-            dynmultipush("Sofos City", 2)
-        }
-        if(flag(FLAG_VISITED_MARMARO_ISLAND)) {
-            dynmultipush("Marmaro Island", 3)
-        }
-        if(flag(FLAG_VISITED_MYRRINI_ISLAND)) {
-            dynmultipush("Myrrini Island", 4)
-        }
-        if(flag(FLAG_VISITED_FRESCO_ISLAND)) {
-            dynmultipush("Fresco Isles", 5)
-        }
-        if(flag(FLAG_VISITED_PALATI_CITY)) {
-            dynmultipush("Palati City", 6)
-        }
-        if(flag(FLAG_VISITED_PORT_PELLO)) {
-            dynmultipush("Port Pello", 7)
-        }
-        dynmultistack(100, 0, TRUE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
-
-        // based on choice, say different things
-        if(var(VAR_RESULT) == 0) // "Just chatting"
-        {
-            setvar(VAR_CHOSEN_SAIL_LOCATION, 0)
-            speakername("Piraeus")
-            if(flag(FLAG_SYS_GAME_CLEAR))
-            {
-                msgbox(format("Ehehe, glad to see the Champion still hangs around with the likes of me!"))
-                closemessage
-            }
-            else
-            {
-                msgbox(format("How's the ol' adventure going, {PLAYER}? You still winning Gym Badges and knocking Team Chimera heads? Fwahaha!"))
-                closemessage
-            }
-            release
-            end
-        }
-        else // chose a location
-        {
-            if(var(VAR_RESULT) == 1) // Pythios Town
-            {
-                setvar(VAR_CHOSEN_SAIL_LOCATION, 1)
-                speakername("Piraeus")
-                msgbox(format("Pythios Town, eh? I've still got bad memories from that place, after my run-in with Team Chimera. Let's make this a quick trip, ehehe!"))
-                closemessage
-            }
-            elif(var(VAR_RESULT) == 2) // Sofos City
-            {
-                setvar(VAR_CHOSEN_SAIL_LOCATION, 2)
-                speakername("Piraeus")
-                msgbox(format("Sofos City, eh? The heart of the Ilios Region! While you keep adventuring, I may play a little Pinball. I'm not good, but it's fun!"))
-                closemessage
-            }
-            elif(var(VAR_RESULT) == 3) // Marmaro Island
-            {
-                setvar(VAR_CHOSEN_SAIL_LOCATION, 3)
-                speakername("Piraeus")
-                msgbox(format("Marmaro Island! A beautiful little spot. Their marble helped build structures across the ancient Ilios Region. Let's check it out!"))
-                closemessage
-            }
-            elif(var(VAR_RESULT) == 4) // Myrrini Island
-            {
-                setvar(VAR_CHOSEN_SAIL_LOCATION, 4)
-                speakername("Piraeus")
-                msgbox(format("Hey, I love Myrrini Island! Maybe I'll do some walking around while I'm there! You know what they say, Myrrini parties are the best parties!"))
-                closemessage
-            }
-            elif(var(VAR_RESULT) == 5) // Fresco Isles
-            {
-                setvar(VAR_CHOSEN_SAIL_LOCATION, 5)
-                speakername("Piraeus")
-                msgbox(format("The Fresco Isles, eh? For a group of islands, it gets awful dry there. Maybe you'll find some unique Pokémon there!"))
-                closemessage
-            }
-            elif(var(VAR_RESULT) == 6) // Palati City
-            {
-                setvar(VAR_CHOSEN_SAIL_LOCATION, 6)
-                speakername("Piraeus")
-                msgbox(format("Palati City! That's on Kaptara Island, right? That place is covered with gorgeous ruins... maybe I'll do a little exploring when we get there!"))
-                closemessage
-            }
-            elif(var(VAR_RESULT) == 7) // Port Pello
-            {
-                setvar(VAR_CHOSEN_SAIL_LOCATION, 7)
-                speakername("Piraeus")
-                msgbox(format("Port Pello! Their cherry trees are world-famous! They say the gods blessed the lands. How about we see it for ourselves?"))
-                closemessage
-            }
-            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
-            waitstate
-        }
+        goto(Common_EventScript_Piraeus)
     }
     release
     end

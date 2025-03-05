@@ -22,50 +22,32 @@ script AcrisiaCaves_F1_EventScript_Trainer_AcrisiaCaves_F1_Fraia
 {
     trainerbattle_single(TRAINER_ACRISIACAVES_F1_FRAIA, AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_FraiaIntro, AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_FraiaDefeat)
     speakername("Fraia")
-    msgbox(format("My Steel-type Pokémon should be a good counter to Mattaios' Rock-type Pokémon!"))
+    msgbox(format("I though my Pokémon could fight their way through the cave..."))
     closemessage
     release
     end
 }
 text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_FraiaIntro
 {
-    format("I'm gonna challenge Mattaios soon, just you wait!")
+    format("I hear there's an old man keeping cool secrets at the end of the cave! I wanna see!")
 }
 text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_FraiaDefeat
 {
     format("I guess I'm not ready yet.")
 }
 
-script AcrisiaCaves_F1_EventScript_Trainer_AcrisiaCaves_F1_Umber
-{
-    trainerbattle_single(TRAINER_ACRISIACAVES_F1_UMBER, AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_UmberIntro, AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_UmberDefeat)
-    speakername("Umber")
-    msgbox(format("I was hoping my Pokémon was magic somehow!"))
-    closemessage
-    release
-    end
-}
-text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_UmberIntro
-{
-    format("Don't freak out, but... I think my Pokémon is from space.")
-}
-text AcrisiaCaves_F1_Text_Trainer_AcrisiaCaves_F1_UmberDefeat
-{
-    format("I couldn't even win using the powers of space?!")
-}
-
 script AcrisiaCaves_F1_EventScript_ScientistBlockingLadder
 {
     lock
     faceplayer
-    speakername("Researcher")
-    msgbox(format("To pass into the deeper level of the cave, you must {COLOR GREEN}solve these Ruin Puzzles{COLOR DARK_GRAY}.\p Our Gym Leader believes that only those who understand the past should be considered worthy of earning his Gym Badge."))
+    speakername("Elder Follower")
+    msgbox(format("To pass into the deeper level of the cave, you must {COLOR GREEN}solve these Ruin Puzzles{COLOR DARK_GRAY}.\p The Elder believes that only those wise enough to understand the past should be allowed to train with him."))
     closemessage
     if(flag(FLAG_SOLVED_KABUTO_PUZZLE) && flag(FLAG_SOLVED_OMANYTE_PUZZLE))
     {
-        setflag(FLAG_SOLVED_GYM_2_PUZZLE)
-        speakername("Researcher")
-        msgbox(format("Could it be...? You solved the Ruin Puzzles!\p Climb down the ladder behind us to continue your Gym Challenge. Good luck!"))
+        setflag(FLAG_SOLVED_ACRISIA_MOUNTAIN_PUZZLE)
+        speakername("Elder Follower")
+        msgbox(format("Could it be...? You solved the Ruin Puzzles!\p Please, follow the ladder up to the top of the mountain."))
         closemessage
         fadescreenswapbuffers(FADE_TO_BLACK)
         delay(30)
@@ -137,7 +119,7 @@ script EventScript_KabutoPuzzle // easiest
         }
         else
         {
-            msgbox(format("The puzzles have been solved! Time to let the {COLOR GREEN}Researchers{COLOR DARK_GRAY} know."))
+            msgbox(format("The puzzles have been solved! Time to let the {COLOR GREEN}Elder Followers{COLOR DARK_GRAY} know."))
         }
     }
     releaseall
@@ -197,7 +179,7 @@ script EventScript_OmanytePuzzle // medium-hard
         }
         else
         {
-            msgbox(format("The puzzles have been solved! Time to let the {COLOR GREEN}Researchers{COLOR DARK_GRAY} know."))
+            msgbox(format("The puzzles have been solved! Time to let the {COLOR GREEN}Elder Followers{COLOR DARK_GRAY} know."))
         }
     }
     releaseall

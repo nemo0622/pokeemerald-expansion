@@ -154,7 +154,7 @@ script AcrisiaCity_EventScript_LadyByWater
         if(var(VAR_RESULT) == 0)
         {
             speakername("Pokéfan Lady")
-            msgbox(format("Hurry on now, I'll have a {COLOR GREEN}prize{COLOR DARK_GRAY} for you!"))
+            msgbox(format("Hurry up now, I'll have a {COLOR GREEN}prize{COLOR DARK_GRAY} for you!"))
             closemessage
         }
         else

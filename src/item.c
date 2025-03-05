@@ -545,11 +545,11 @@ void SwapRegisteredBike(void)
 {
     switch (gSaveBlock1Ptr->registeredItem)
     {
-    case ITEM_MACH_BIKE:
+    case ITEM_ESPATHRA_WHISTLE:
         gSaveBlock1Ptr->registeredItem = ITEM_ACRO_BIKE;
         break;
     case ITEM_ACRO_BIKE:
-        gSaveBlock1Ptr->registeredItem = ITEM_MACH_BIKE;
+        gSaveBlock1Ptr->registeredItem = ITEM_ESPATHRA_WHISTLE;
         break;
     }
 }

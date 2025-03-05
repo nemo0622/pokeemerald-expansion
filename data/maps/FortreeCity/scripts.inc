@@ -4,7 +4,7 @@ FortreeCity_MapScripts::
 	.byte 0
 
 FortreeCity_OnTransition:
-	setflag FLAG_VISITED_FORTREE_CITY
+	setflag FLAG_VISITED_KALAMI_CITY
 	end
 
 FortreeCity_OnResume:

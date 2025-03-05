@@ -1,0 +1,25 @@
+mapscripts KalamiCity_House1_MapScripts {}
+
+script KalamiCity_House1_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("I'm a digital artist of Pokémon environments. In fact, I make a lot of the Pokémon art for Pokédex entries!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_House1_EventScript_Trapinch
+{
+    lock
+    faceplayer
+    speakername("Trapinch")
+    playmoncry(SPECIES_TRAPINCH, CRY_MODE_NORMAL)
+    msgbox("K-k-k-k.")
+    waitmoncry
+    closemessage
+    release
+    end
+}

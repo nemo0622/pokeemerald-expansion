@@ -336,7 +336,7 @@ script JusmailTown_House1_EventScript_EnterBuilding_20BerryTreeReward
     delay(60)
 
     speakername("Group")
-    msgbox(format("{PLAYER}! Yia sou!!"))
+    msgbox(format("{PLAYER}! Chaire!!"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)
@@ -454,7 +454,7 @@ script JusmailTown_House1_EventScript_EnterBuilding_100BerryTreeReward
     delay(60)
 
     speakername("Group")
-    msgbox(format("Yia sou, {PLAYER}! Welcome back!"))
+    msgbox(format("Chaire, {PLAYER}! Welcome back!"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)

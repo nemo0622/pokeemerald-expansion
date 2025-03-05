@@ -1,170 +1,152 @@
 mapscripts AcrisiaCaves_BF1_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
-        setflashlevel(5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(3, ENCOUNTER_LAND)
+        setobjectaswildencounter(4, ENCOUNTER_LAND)
     }
 }
 
-script AcrisiaCaves_BF1_EventScript_GymStatue
+script AcrisiaPeak_EventScript_TryEvent
 {
-    lock
-    if(flag(FLAG_BADGE02_GET))
+    setvar(VAR_TEMP_1, 1)
+    if(flag(FLAG_RECEIVED_BIKE)) // if Espathra gotten, just default to wandering Elder
     {
-        msgbox(format("Acrisia Caves Pokémon Gym\p Recent Victors: Niko, {PLAYER}"))
+        setobjectmovementtype(1, MOVEMENT_TYPE_WANDER_AROUND)
+        releaseall
+        end
     }
     else
     {
-        msgbox(format("Acrisia Caves Pokémon Gym\p Recent Victors: Niko"))
+        goto(AcrisiaPeak_EventScript_GiveEspathraEvent)
     }
-    closemessage
-    release
+    releaseall
     end
 }
 
-script AcrisiaCaves_BF1_EventScript_Trainer_AcrisiaCaves_BF1_Berkley
+script AcrisiaPeak_EventScript_GiveEspathraEvent
 {
-    trainerbattle_single(TRAINER_ACRISIACAVES_BF1_BERKLEY, AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_BerkleyIntro, AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_BerkleyDefeat)
-    speakername("Berkley")
-    msgbox(format("I hear fire crackling to the right, could that be where Mattaios is...?"))
+    lockall
+    delay(20)
+    applymovement(2, AcrisiaPeak_Movement_EspathraRunsAround)
+    // applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(2)
+    delay(20)
+
+    speakername("Elder")
+    msgbox(format("Hush now, Espathra, great protector of the mountain! A Trainer will come soon to quell your thirst for adventure."))
     closemessage
-    release
+    delay(30)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(1, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    speakername("Elder")
+    msgbox(format("Oho, and what do we have here? See, Espathra, it's just as I said. Come forth, young Trainer."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    applymovement(1, Common_Movement_WalkUp)
+    applymovement(2, AcrisiaPeak_Movement_EspathraGreetsPlayer)
+    waitmovement(2)
+
+    speakername("Elder")
+    msgbox(format("This Pokémon is special among its kind. It has lived among the mountains here since I was a child, refusing to enter a Poké ball and trusting few. Many have called it a threat, spreading rumors about a monster in the mountain, but it is wise in ways we can't comprehend."))
+    closemessage
+    applymovement(1, Common_Movement_WalkLeft)
+    waitmovement(0)
+    applymovement(1, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(20)
+    speakername("Elder")
+    msgbox(format("Great Espathra, is this the Trainer you wish to join?"))
+    closemessage
+    applymovement(2, AcrisiaPeak_Movement_EspathraJumpInAgreement)
+    waitmovement(0)
+    delay(10)
+    speakername("Elder")
+    msgbox(format("Fwahaha, okay, okay! You are free to join them and see the world. Be well, Espathra."))
+    closemessage
+    applymovement(1, Common_Movement_WalkRight)
+    waitmovement(0)
+    applymovement(1, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    speakername("Elder")
+    msgbox(format("As I said, Espathra does not live in a Poké ball. This means it {COLOR GREEN}cannot be used in battle{COLOR DARK_GRAY}. Instead, it can be called at any time to be {COLOR GREEN}ridden across the Ilios Region{COLOR DARK_GRAY} as a loyal mount!\p Take this {COLOR GREEN}Whistle{COLOR DARK_GRAY}. You can use it to summon Espathra from anywhere in Ilios."))
+    closemessage
+    giveitem(ITEM_ESPATHRA_WHISTLE)
+    speakername("Elder")
+    msgbox(format("Thank you, young Trainer. You're welcome to come visit me and my sanctuary again."))
+    closemessage
+
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(30)
+    removeobject(2)
+    setflag(FLAG_RECEIVED_BIKE)
+    setobjectmovementtype(1, MOVEMENT_TYPE_WANDER_AROUND)
+    delay(30)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(30)
+    releaseall
     end
 }
-text AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_BerkleyIntro
+movement AcrisiaPeak_Movement_EspathraRunsAround
 {
-    format("I want to challenge Mattaios, but I can't find him in this darkness!")
+    walk_fast_left
+    walk_fast_up * 2
+    walk_fast_right * 2
+    walk_fast_down * 2
+    walk_fast_left
+    jump_in_place_up * 2
+    step_end
 }
-text AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_BerkleyDefeat
+movement AcrisiaPeak_Movement_EspathraGreetsPlayer
 {
-    format("I'll never reach him at this rate!")
+    walk_fast_left
+    walk_fast_up * 3
+    face_right
+    jump_in_place_right * 2
+    step_end
 }
-
-script AcrisiaCaves_BF1_EventScript_Trainer_AcrisiaCaves_BF1_Margarey
+movement AcrisiaPeak_Movement_EspathraJumpInAgreement
 {
-    trainerbattle_single(TRAINER_ACRISIACAVES_BF1_MARGAREY, AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_MargareyIntro, AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_MargareyDefeat)
-    speakername("Margarey")
-    msgbox(format("This Gym is unique, because... well, it's not really a Gym at all! Mattaios spends all his time digging down here."))
-    closemessage
-    release
-    end
-}
-text AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_MargareyIntro
-{
-    format("My Pokémon can punch through these quartz gems!")
-}
-text AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_MargareyDefeat
-{
-    format("I bet yours can too.")
+    jump_in_place_down * 2
+    face_right
+    step_end
 }
 
-script AcrisiaCaves_BF1_EventScript_Trainer_AcrisiaCaves_BF1_Kylon
-{
-    trainerbattle_single(TRAINER_ACRISIACAVES_BF1_KYLON, AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_KylonIntro, AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_KylonDefeat)
-    speakername("Kylon")
-    msgbox(format("You'll just weaken Mattaios up, that'll help me win!"))
-    closemessage
-    release
-    end
-}
-text AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_KylonIntro
-{
-    format("Nuh uh, Mattaios is gonna fight ME next!")
-}
-text AcrisiaCaves_BF1_Text_Trainer_AcrisiaCaves_BF1_KylonDefeat
-{
-    format("Sniffle... this isn't fair!")
-}
-
-// ---------------------------------------------------------------------------------
-
-script AcrisiaCaves_BF1_EventScript_Mattaios
+script AcrisiaPeak_EventScript_Espathra
 {
     lock
     faceplayer
-    if(var(VAR_DIFFICULTY) == 0)
-    {
-        goto(AcrisiaCaves_BF1_EventScript_MattaiosNormal)
-    }
-    else
-    {
-        goto(AcrisiaCaves_BF1_EventScript_MattaiosHard)
-    }
-    release
-    end
-}
-
-script AcrisiaCaves_BF1_EventScript_MattaiosNormal
-{
-    trainerbattle_single(TRAINER_LEADER_MATTAIOS, AcrisiaCaves_BF1_Text_MattaiosIntro, AcrisiaCaves_BF1_Text_MattaiosDefeat, AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript, NO_MUSIC)
-    speakername("Mattaios")
-    msgbox(format("Now that our battle's over, I should get back to work. Expandin' the caves and looking fer gems never stops fer me."))
-    closemessage
-    release
-    end
-}
-script AcrisiaCaves_BF1_EventScript_MattaiosHard
-{
-    trainerbattle_single(TRAINER_LEADER_MATTAIOS_HARD, AcrisiaCaves_BF1_Text_MattaiosIntro, AcrisiaCaves_BF1_Text_MattaiosDefeat, AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript, NO_MUSIC)
-    speakername("Mattaios")
-    msgbox(format("Now that our battle's over, I should get back to work. Expandin' the caves and looking fer gems never stops fer me."))
-    closemessage
-    release
-    end
-}
-
-text AcrisiaCaves_BF1_Text_MattaiosIntro
-{
-    format("Found yer way down here, eh?\p Most Gym Leaders have their fancy buildings, with their fancy lights and walls. Not me. I dig away down here, always diggin', always in the dark...\p Well, this'll be my break. C'mon!")
-}
-text AcrisiaCaves_BF1_Text_MattaiosDefeat
-{
-    format("Yer stronger than me, even after all this diggin'!")
-}
-
-script AcrisiaCaves_BF1_EventScript_MattaiosDefeatScript
-{
-    setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug
-    message(format("{PLAYER} received the Gemstone Badge from Mattaios."))
-	waitmessage
-	call(Common_EventScript_PlayGymBadgeFanfare)
-
-    // Set gym completion flags
-    setflag(FLAG_BADGE02_GET)
-    // Set all trainers in Gym as defeated
-    settrainerflag(TRAINER_ACRISIACAVES_F1_UMBER)
-    settrainerflag(TRAINER_ACRISIACAVES_BF1_BERKLEY)
-    settrainerflag(TRAINER_ACRISIACAVES_BF1_MARGAREY)
-    settrainerflag(TRAINER_ACRISIACAVES_BF1_KYLON)
-    settrainerflag(TRAINER_ACRISIACAVES_F1_FRAIA)
-    settrainerflag(TRAINER_ACRISIACAVES_F1_LANA)
-    // Set Niko and Rania states
-    setvar(VAR_RANIA_STATE, 2)
-    setvar(VAR_NIKO_STATE, 3)
-
-    // Explain badge
-    speakername("Mattaios")
-    msgbox(format("The Gemstone Badge marks yer second completed Gym, eh? After two Badges, most trainers are fit to explore more of Ilios. Yer certainly strong enough! You'll also be able to use the {COLOR GREEN}HM Rock Smash{COLOR DARK_GRAY} outside battle.\p Fwahaha, there's more fer ya!"))
-    closemessage
-
-    // Give TM, explain, end dialogue
-    giveitem(ITEM_TM_ROCK_TOMB)
-    speakername("Mattaios")
-    msgbox(format("That's the TM fer {COLOR GREEN}Rock Tomb{COLOR DARK_GRAY}! My Larvitar here learned this after gettin' rocks dropped on us one-too many times, fwahaha!\p Y'know, another Acrisia University student just passed through here. If I were you, I'd hightail it {COLOR GREEN}back to the University{COLOR DARK_GRAY} to see what's what!"))
-    closemessage
-
-    release
-    end
-}
-
-script AcrisiaCaves_BF1_EventScript_Larvitar
-{
-    lock
-    faceplayer
-    speakername("Larvitar")
-    playmoncry(SPECIES_LARVITAR, CRY_MODE_NORMAL)
-    msgbox("Gwaah.")
+    speakername("Espathra")
+    playmoncry(SPECIES_ESPATHRA, CRY_MODE_NORMAL)
+    msgbox("Craah! Haaahh!")
     waitmoncry
     closemessage
-    msgbox(format("Larvitar is happy to take a break."))
+    msgbox(format("Espathra seems raring to go!"))
+    closemessage
+    release
+    end
+}
+
+script AcrisiaPeak_EventScript_Elder
+{
+    lock
+    faceplayer
+    speakername("Elder")
+    msgbox(format("How is the great Espathra doing under your care? It may not battle for you on your quest for Gym Badges, but I hope it is helping in whatever way it can."))
     closemessage
     release
     end

@@ -37,12 +37,12 @@ script JusmailTown_PokemonCenter_EventScript_PkmnCenterNurse
     end
 }
 
-script JusmailTown_PokemonCenter_EventScript_Chansey
+script JusmailTown_PokemonCenter_EventScript_Togetic
 {
     lock
     faceplayer
-    speakername("Chansey")
-    playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+    speakername("Togetic")
+    playmoncry(SPECIES_TOGETIC, CRY_MODE_NORMAL)
     msgbox("Bee-eh!")
     waitmoncry
     closemessage

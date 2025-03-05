@@ -175,7 +175,7 @@ script WanderersWoods_EventScript_NikoNPC
     lock
     faceplayer
     speakername("Niko")
-    msgbox(format("Yia sou, {PLAYER}! Pokémon behavior is so interesting, eh?\p Rania and I are getting some data and training our Pokémon while we're at it! Who knows, we might beat you to Pythios Town!"))
+    msgbox(format("Chaire, {PLAYER}! Pokémon behavior is so interesting, eh?\p Rania and I are getting some data and training our Pokémon while we're at it! Who knows, we might beat you to Pythios Town!"))
     closemessage
     release
     end
@@ -248,7 +248,7 @@ script WanderersWoods_EventScript_ChimeraEvent
     applymovement(9, Common_Movement_WalkUp2)
     waitmovement(0)
     speakername("Chimera Grunt")
-    msgbox(format("Yeah, this doesn't concern you! The Boss is lookin' for new Pokémon for our ar-"))
+    msgbox(format("Yeah, this doesn't concern you! The Boss is lookin' for new Pokémon for-"))
     closemessage
     applymovement(10, Common_Movement_ExclamationMark)
     waitmovement(0)
@@ -340,7 +340,7 @@ script WanderersWoods_EventScript_ChimeraEvent
     applymovement(10, Common_Movement_FaceUp)
     waitmovement(0)
     speakername("Chimera Admin")
-    msgbox(format("I can't believe they just ran off like that! So much for loyalty.\p First we failed to take the Pokédex shipment, and now this... {PLAYER}, right? You're becoming a real problem for Team Chimera. You'd better stay out of our business, or the Boss'll destroy you!"))
+    msgbox(format("Grr... you're lucky my Arcanine was knocked out while we caught those Pokémon.\p First we failed to take the Pokédex shipment, and now this... {PLAYER}, right? You're becoming a real problem for Team Chimera. You'd better stay out of our business, or the Boss'll destroy you!"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
     applymovement(10, WanderersWoods_Movement_AdminEscapes)
@@ -380,6 +380,8 @@ script WanderersWoods_EventScript_ChimeraEvent
         msgbox(format("Team Chimera got away from us, but look what one of them dropped! It's a {COLOR GREEN}Pokémon Egg like I've never seen before{COLOR DARK_GRAY}! Maybe it holds a rare Pokémon.\p {PLAYER}, I want you to have it. Pokémon Eggs aren't my specialty."))
         closemessage
         // generate random egg species and give
+        setflag(FLAG_FORCE_SHINY) // trying my best to force a shiny egg
+        setflag(FLAG_SHINY_CREATION)
         randomelement(SPECIES_MAREEP, SPECIES_BLITZLE, SPECIES_PACHIRISU, SPECIES_ELECTRIKE, SPECIES_PAWMI, SPECIES_WATTREL, SPECIES_PICHU, SPECIES_TOGEDEMARU, SPECIES_DEDENNE, SPECIES_CHINCHOU, SPECIES_HELIOPTILE, SPECIES_VOLTORB, SPECIES_VOLTORB_HISUI, SPECIES_MAGNEMITE, SPECIES_SANDSHREW_ALOLAN, SPECIES_MAWILE, SPECIES_ARON, SPECIES_HONEDGE, SPECIES_BRONZOR, SPECIES_CUFANT, SPECIES_MEOWTH_GALAR, SPECIES_TINKATINK, SPECIES_GRIMER_ALOLAN, SPECIES_MURKROW, SPECIES_VULLABY, SPECIES_SANDILE, SPECIES_HOUNDOUR, SPECIES_ZORUA, SPECIES_MEOWTH_ALOLAN, SPECIES_STUNKY, SPECIES_EKANS, SPECIES_SCRAGGY, SPECIES_IMPIDIMP, SPECIES_ZIGZAGOON_GALAR)
         giveegg(VAR_RESULT)
         playfanfare(MUS_OBTAIN_ITEM)
@@ -387,6 +389,8 @@ script WanderersWoods_EventScript_ChimeraEvent
         waitmessage
         waitfanfare
         delay(20)
+        clearflag(FLAG_FORCE_SHINY)
+        clearflag(FLAG_SHINY_CREATION)
         speakername("Niko")
         msgbox(format("Carry that Egg around until it hatches. Who knows, maybe it's a new species of Pokémon!\p Rania and I are gonna head back to the University for a while. Let us know if Pythios Town is worth a visit!"))
         closemessage
@@ -400,6 +404,8 @@ script WanderersWoods_EventScript_ChimeraEvent
         msgbox(format("Team Chimera got away from us, but look what one of them dropped! It's a {COLOR GREEN}Pokémon Egg like I've never seen before{COLOR DARK_GRAY}! Maybe it holds a rare Pokémon.\p {PLAYER}, I want you to have it. Pokémon Eggs aren't my specialty."))
         closemessage
         // generate random egg species and give
+        setflag(FLAG_FORCE_SHINY) // trying my best to force a shiny egg
+        setflag(FLAG_SHINY_CREATION)
         randomelement(SPECIES_POPPLIO, SPECIES_FROAKIE, SPECIES_QUAXLY, SPECIES_PANPOUR, SPECIES_DUCKLETT, SPECIES_POLIWAG, SPECIES_WOOPER, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_WINGULL, SPECIES_SPHEAL, SPECIES_SEEL, SPECIES_BUIZEL, SPECIES_WIMPOD, SPECIES_FINIZEN, SPECIES_CORSOLA, SPECIES_FINNEON, SPECIES_WAILMER, SPECIES_TENTACOOL, SPECIES_CLAUNCHER, SPECIES_BASCULIN_WHITE_STRIPED, SPECIES_SKRELP, SPECIES_CHINCHOU, SPECIES_SHELLDER, SPECIES_CLAMPERL, SPECIES_RELICANTH, SPECIES_MAGIKARP, SPECIES_BRUXISH, SPECIES_LAPRAS, SPECIES_PSYDUCK, SPECIES_REMORAID, SPECIES_CORPHISH, SPECIES_TIRTOUGA, SPECIES_ROWLET, SPECIES_CHESPIN, SPECIES_SPRIGATITO, SPECIES_PANSAGE, SPECIES_HOPPIP, SPECIES_PARAS, SPECIES_APPLIN, SPECIES_SKIDDO, SPECIES_PUMPKABOO, SPECIES_SHROOMISH, SPECIES_BOUNSWEET, SPECIES_TOEDSCOOL, SPECIES_CHERUBI, SPECIES_LILEEP, SPECIES_FOMANTIS, SPECIES_VOLTORB_HISUI, SPECIES_BUDEW, SPECIES_SNOVER, SPECIES_LITTEN, SPECIES_FENNEKIN, SPECIES_FUECOCO, SPECIES_PANSEAR, SPECIES_VULPIX, SPECIES_SALANDIT, SPECIES_HOUNDOUR, SPECIES_PONYTA, SPECIES_LITWICK, SPECIES_CHARCADET, SPECIES_TORKOAL, SPECIES_NUMEL, SPECIES_GROWLITHE, SPECIES_GROWLITHE_HISUI)
         giveegg(VAR_RESULT)
         playfanfare(MUS_OBTAIN_ITEM)
@@ -407,6 +413,8 @@ script WanderersWoods_EventScript_ChimeraEvent
         waitmessage
         waitfanfare
         delay(20)
+        clearflag(FLAG_FORCE_SHINY)
+        clearflag(FLAG_SHINY_CREATION)
         speakername("Rania")
         msgbox(format("Carry that Egg around until it hatches. Who knows, maybe it's a new species of Pokémon!\p Niko and I are gonna head back to the University for a while. Let us know if Pythios Town is worth a visit!"))
         closemessage

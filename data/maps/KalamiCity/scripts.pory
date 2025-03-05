@@ -1,0 +1,390 @@
+mapscripts KalamiCity_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_KALAMI_CITY)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(23, ENCOUNTER_LAND)
+        setobjectaswildencounter(24, ENCOUNTER_LAND)
+        setobjectaswildencounter(25, ENCOUNTER_SURF)
+        setobjectaswildencounter(26, ENCOUNTER_LAND)
+        setobjectaswildencounter(27, ENCOUNTER_SURF)
+    }
+}
+
+// PIRAEUS SCRIPTS BELOW
+
+script KalamiCity_EventScript_Piraeus
+{
+    if(!flag(FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN)) // havent unlocked Piraeus yet
+    {
+        lock
+        speakername("Strange Sailor")
+        msgbox(format("Grumble, grumble... darn thugs... no {COLOR GREEN}Team Chimera{COLOR DARK_GRAY} member is setting a hand on my boat, I swear!"))
+        closemessage
+        delay(30)
+        msgbox(format("The sailor doesn't seem to notice anyone is there."))
+        closemessage
+        release
+        end
+    }
+    else // unlocked piraeus, do greeting and sailing code
+    {
+        goto(Common_EventScript_Piraeus)
+    }
+    release
+    end
+}
+
+script Common_EventScript_Piraeus
+{
+    speakername("Piraeus")
+    msgbox(format("Chaire, {PLAYER}! Where are we going today?"))
+    
+    // generate list of locations/options
+    dynmultipush("Just chatting!", 0)
+    if(flag(FLAG_VISITED_KALAMI_CITY)) {
+        dynmultipush("Kalami City", 1)
+    }
+    if(flag(FLAG_VISITED_PYTHIOS_TOWN)) {
+        dynmultipush("Pythios Town", 2)
+    }
+    if(flag(FLAG_VISITED_SOFOS_CITY)) {
+        dynmultipush("Sofos City", 3)
+    }
+    if(flag(FLAG_VISITED_MARMARO_ISLAND)) {
+        dynmultipush("Marmaro Island", 4)
+    }
+    if(flag(FLAG_VISITED_MYRRINI_ISLAND)) {
+        dynmultipush("Myrrini Island", 5)
+    }
+    if(flag(FLAG_VISITED_FRESCO_ISLAND)) {
+        dynmultipush("Fresco Isles", 6)
+    }
+    if(flag(FLAG_VISITED_PALATI_CITY)) {
+        dynmultipush("Palati City", 7)
+    }
+    if(flag(FLAG_VISITED_PORT_PELLO)) {
+        dynmultipush("Port Pello", 8)
+    }
+    dynmultistack(100, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+
+    // based on choice, say different things
+    if(var(VAR_RESULT) == 0) // "Just chatting"
+    {
+        setvar(VAR_CHOSEN_SAIL_LOCATION, 0)
+        speakername("Piraeus")
+        if(flag(FLAG_SYS_GAME_CLEAR))
+        {
+            msgbox(format("Ehehe, glad to see the Champion still hangs around with the likes of me!"))
+            closemessage
+        }
+        else
+        {
+            msgbox(format("How's the ol' adventure going, {PLAYER}? You still winning Gym Badges and knocking Team Chimera heads? Fwahaha!"))
+            closemessage
+        }
+        release
+        end
+    }
+    else // chose a location
+    {
+        if(var(VAR_RESULT) == 1) // Kalami City
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 1)
+            speakername("Piraeus")
+            msgbox(format("Kalami City! That's quite the challenge, sailing between those mangrove trees and shallow patches. But hey, I've got some Poké ball shopping to do there, so let's go!"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+        elif(var(VAR_RESULT) == 2) // Pythios Town
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 2)
+            speakername("Piraeus")
+            msgbox(format("Pythios Town, eh? I've still got bad memories from that place, after my run-in with Team Chimera. Let's make this a quick trip, ehehe!"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+        elif(var(VAR_RESULT) == 3) // Sofos City
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 3)
+            speakername("Piraeus")
+            msgbox(format("Sofos City, eh? The heart of the Ilios Region! While you keep adventuring, I may play a little Pinball. I'm not good, but it's fun!"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+        elif(var(VAR_RESULT) == 4) // Marmaro Island
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 4)
+            speakername("Piraeus")
+            msgbox(format("Marmaro Island! A beautiful little spot. Their marble helped build structures across the ancient Ilios Region. Let's check it out!"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+        elif(var(VAR_RESULT) == 5) // Myrrini Island
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 5)
+            speakername("Piraeus")
+            msgbox(format("Hey, I love Myrrini Island! Maybe I'll do some walking around while I'm there! You know what they say, Myrrini parties are the best parties!"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+        elif(var(VAR_RESULT) == 6) // Fresco Isles
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 6)
+            speakername("Piraeus")
+            msgbox(format("The Fresco Isles, eh? For a group of islands, it gets awful dry there. Maybe you'll find some unique Pokémon there!"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+        elif(var(VAR_RESULT) == 7) // Palati City
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 7)
+            speakername("Piraeus")
+            msgbox(format("Palati City! That's on Kaptara Island, right? That place is covered with gorgeous ruins... maybe I'll do a little exploring when we get there!"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+        elif(var(VAR_RESULT) == 8) // Port Pello
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 8)
+            speakername("Piraeus")
+            msgbox(format("Port Pello! Their cherry trees are world-famous! They say the gods blessed the lands. How about we see it for ourselves?"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+    }
+    release
+    end
+}
+
+// ---------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------
+
+script KalamiCity_Sign_GymSign
+{
+    lock
+    msgbox(format("Gym Leader: Mattaios\n The Hard-Working Engineer"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_Camper
+{
+    lock
+    faceplayer
+    speakername("Camper")
+    msgbox(format("Hehehe, I love the shallows around Kalami City! I like feeling the sand and pebbles between my toes!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("Kalami City, the city of reeds and rivers...\p We coexist with nature here. We're treated to the natural beauty of the land, and in return, we've thrown crates in the water, cut some trees, and built an industrial sector in the heart of the swamp.\p Just something to reflect on."))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_Sailor
+{
+    lock
+    faceplayer
+    speakername("Sailor")
+    msgbox(format("Only a few larger boats like this can make it past the rocks and plants to these docks. It's tough, but we make it work."))
+    closemessage
+    applymovement(5, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script KalamiCity_EventScript_Sailor2
+{
+    lock
+    faceplayer
+    speakername("Sailor")
+    msgbox(format("A lot of important goods come through the Kalami City ports.\p It's hard to sail through the mangrove, but the items produced by the industrial center here are real useful."))
+    closemessage
+    if(!flag(FLAG_GOT_ABILITY_CAPSULE_KALAMI_CITY))
+    {
+        setflag(FLAG_GOT_ABILITY_CAPSULE_KALAMI_CITY)
+        speakername("Sailor")
+        msgbox(format("Here, I'll give you a sample!"))
+        closemessage
+        giveitem(ITEM_ABILITY_CAPSULE)
+    }
+    release
+    end
+}
+
+script KalamiCity_EventScript_Fisherman
+{
+    lock
+    faceplayer
+    speakername("Fishing Guru")
+    msgbox(format("I've lived here since before Mattaios and the industrial center was settled here. I fished here when I was a kid, and I'll keep fishing here until I'm old!"))
+    closemessage
+    if(!flag(FLAG_RECEIVED_OLD_ROD))
+    {
+        speakername("Fishing Guru")
+        msgbox(format("I've got an extra {COLOR GREEN}Old Rod{COLOR DARK_GRAY} here. You look like you'd make a great angler one day... here, I want you to have this!"))
+        closemessage
+        giveitem(ITEM_OLD_ROD)
+        setflag(FLAG_RECEIVED_OLD_ROD)
+        speakername("Fishing Guru")
+        msgbox(format("Fishing opens up a whole new world of Pokémon! Make sure you fish every day."))
+        closemessage
+    }
+    release
+    end
+}
+
+script KalamiCity_EventScript_Bounsweet
+{
+    lock
+    faceplayer
+    speakername("Bounsweet")
+    playmoncry(SPECIES_BOUNSWEET, CRY_MODE_NORMAL)
+    msgbox("Cree-ee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_Aipom
+{
+    lock
+    faceplayer
+    speakername("Aipom")
+    playmoncry(SPECIES_AIPOM, CRY_MODE_NORMAL)
+    msgbox("Eek eek!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_Lass
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("Look, I found this Bounsweet rooting around in the crates! I think it wanted a Trainer to be its friend."))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("I learned all about how Pokémon live together in places like this in school! Pokémon from the water and the land help each other out in a bunch of cool ways!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("This fruit tree at the center of town is the only one of its kind in Kalami City. They say it's the last tree from before the swamp crept in and people started building here."))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_WallWorker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("The land around Kalami City is always sinking. The swamp and water creeps in, and I'm stuck trying to keep these walls in good condition!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_PerformerM
+{
+    lock
+    faceplayer
+    speakername("Performer")
+    msgbox(format("I dream of performing comedy shows on the biggest stages of Ilios! For now, though, I'm just sticking with street shows here."))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_BlackBelt
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    msgbox(format("I taught my Pokémon to use Karate Chop so it could cut through the vines and reeds in the swamp. Now it helps me explore the area around the city!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_Youngster
+{
+    lock
+    faceplayer
+    speakername("Youngster")
+    msgbox(format("My dad says the walls keep the swamp from coming into the city. I don't see what would be so wrong about that! I could make friends with all the new Pokémon!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("My Pokémon was rooting around in the dirt, and it found a weird, minty plant. I think it changed natures after sniffing it!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_EventScript_Athlete
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    msgbox(format("I'm training in the shallow water to make my legs stronger! At this rate, I'll be the fastest guy in Ilios!"))
+    closemessage
+    release
+    end
+}

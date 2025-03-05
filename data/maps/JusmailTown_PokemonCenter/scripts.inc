@@ -61,17 +61,17 @@ JusmailTown_PokemonCenter_EventScript_PkmnCenterNurse_2:
 	goto JusmailTown_PokemonCenter_EventScript_PkmnCenterNurse_1
 
 
-JusmailTown_PokemonCenter_EventScript_Chansey::
+JusmailTown_PokemonCenter_EventScript_Togetic::
 # 42 "data/maps/JusmailTown_PokemonCenter/scripts.pory"
 	lock
 # 43 "data/maps/JusmailTown_PokemonCenter/scripts.pory"
 	faceplayer
 # 44 "data/maps/JusmailTown_PokemonCenter/scripts.pory"
-	speakername JusmailTown_PokemonCenter_EventScript_Chansey_Text_0
+	speakername JusmailTown_PokemonCenter_EventScript_Togetic_Text_0
 # 45 "data/maps/JusmailTown_PokemonCenter/scripts.pory"
-	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
+	playmoncry SPECIES_TOGETIC, CRY_MODE_NORMAL
 # 46 "data/maps/JusmailTown_PokemonCenter/scripts.pory"
-	msgbox JusmailTown_PokemonCenter_EventScript_Chansey_Text_1
+	msgbox JusmailTown_PokemonCenter_EventScript_Togetic_Text_1
 # 47 "data/maps/JusmailTown_PokemonCenter/scripts.pory"
 	waitmoncry
 # 48 "data/maps/JusmailTown_PokemonCenter/scripts.pory"
@@ -173,11 +173,11 @@ JusmailTown_PokemonCenter_EventScript_PkmnCenterNurse_Text_4:
 	.string "Your Pokémon are happy and healthy! We\n"
 	.string "hope to see you again!$"
 
-JusmailTown_PokemonCenter_EventScript_Chansey_Text_0:
+JusmailTown_PokemonCenter_EventScript_Togetic_Text_0:
 # 44 "data/maps/JusmailTown_PokemonCenter/scripts.pory"
-	.string "Chansey$"
+	.string "Togetic$"
 
-JusmailTown_PokemonCenter_EventScript_Chansey_Text_1:
+JusmailTown_PokemonCenter_EventScript_Togetic_Text_1:
 # 46 "data/maps/JusmailTown_PokemonCenter/scripts.pory"
 	.string "Bee-eh!$"
 

@@ -61,17 +61,17 @@ AcrisiaCity_PokemonCenter_EventScript_PkmnCenterNurse_2:
 	goto AcrisiaCity_PokemonCenter_EventScript_PkmnCenterNurse_1
 
 
-AcrisiaCity_PokemonCenter_EventScript_Chansey::
+AcrisiaCity_PokemonCenter_EventScript_Togetic::
 # 42 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	lock
 # 43 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	faceplayer
 # 44 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	speakername AcrisiaCity_PokemonCenter_EventScript_Chansey_Text_0
+	speakername AcrisiaCity_PokemonCenter_EventScript_Togetic_Text_0
 # 45 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
+	playmoncry SPECIES_TOGETIC, CRY_MODE_NORMAL
 # 46 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox AcrisiaCity_PokemonCenter_EventScript_Chansey_Text_1
+	msgbox AcrisiaCity_PokemonCenter_EventScript_Togetic_Text_1
 # 47 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	waitmoncry
 # 48 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
@@ -105,10 +105,10 @@ AcrisiaCity_PokemonCenter_EventScript_PkmnCenterNurse_Text_4:
 	.string "Your Pokémon are happy and healthy! We\n"
 	.string "hope to see you again!$"
 
-AcrisiaCity_PokemonCenter_EventScript_Chansey_Text_0:
+AcrisiaCity_PokemonCenter_EventScript_Togetic_Text_0:
 # 44 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	.string "Chansey$"
+	.string "Togetic$"
 
-AcrisiaCity_PokemonCenter_EventScript_Chansey_Text_1:
+AcrisiaCity_PokemonCenter_EventScript_Togetic_Text_1:
 # 46 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Bee-eh!$"

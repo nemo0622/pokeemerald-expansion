@@ -8,11 +8,16 @@
 #include "bg.h"
 #include "data.h"
 #include "decompress.h"
+#include "fieldmap.h"
+#include "field_control_avatar.h"
+#include "field_player_avatar.h"
 #include "gpu_regs.h"
 #include "graphics.h"
 #include "link.h"
 #include "main.h"
 #include "menu.h"
+#include "metatile_behavior.h"
+#include "constants/metatile_labels.h"
 #include "overworld.h"
 #include "palette.h"
 #include "sound.h"
@@ -808,26 +813,55 @@ void DrawMainBattleBackground(void)
         // NOTE: Commented largely unnecessary bits out because of improvements with the simpler battle backgrounds
         // MapSec-specific battle background force loading
         u8 mapId;
-        mapId = GetCurrentRegionMapSectionId();
-        // if(mapId == MAPSEC_ACRISIA_MOUNTAINS)
-        // {
-        //     LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].tileset, (void *)(BG_CHAR_ADDR(2)));
-        //     LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-        //     LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_CAVE].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
-        //     return;
-        // }
-        // else if (mapId == MAPSEC_BRONZE_PASS || mapId == MAPSEC_WANDERERS_WOODS)
-        // {
-        //     LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tileset, (void *)(BG_CHAR_ADDR(2)));
-        //     LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-        //     LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
-        //     return;
-        // }
-        if(mapId == MAPSEC_PYTHIOS_TOWN || mapId == MAPSEC_ERINYS_PATH) // loads orange/red grass
+        mapId = GetCurrentRegionMapSectionId(); // gets current mapSec
+        u16 currMetatile = GetPlayerCurMetatileBehavior(0); // gets current metatile behavior
+        s16 x, y;
+        PlayerGetDestCoords(&x, &y);
+        if((mapId == MAPSEC_PYTHIOS_TOWN || mapId == MAPSEC_ERINYS_PATH) && (MetatileBehavior_IsPokeGrass(currMetatile) || MapGridGetMetatileIdAt(x, y) == METATILE_Pythios_RedGrass)) // loads orange/red grass
         {
             LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tilemap, (void *)(BG_SCREEN_ADDR(26)));
             LoadCompressedPalette(gBattleTerrainPalette_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            return;
+        }
+        else if(MetatileBehavior_IsShallowFlowingWater(currMetatile)) // loads pond water for shallows encounters
+        {
+            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_POND].tileset, (void *)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_POND].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(gBattleTerrainPalette_PondWater, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            return;
+        }
+
+        // Map-specific failsafes to try and avoid "Plain" battle background
+        // Sometimes it's fine, but something is better than the nothing plain background lol
+        if(BattleSetup_GetTerrainId() == BATTLE_TERRAIN_PLAIN || MetatileBehavior_IsNormal(currMetatile))
+        {
+            switch (mapId)
+            {
+            default:
+            case MAPSEC_ACRISIA_CITY:
+                LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tileset, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleTerrainPalette_TallGrass, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                break;
+            case MAPSEC_KALAMI_CITY:
+            case MAPSEC_RIVERWALK_TRAIL:
+                LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_POND].tileset, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_POND].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleTerrainPalette_PondWater, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                break;
+            case MAPSEC_PYTHIOS_TOWN:
+            case MAPSEC_ERINYS_PATH:
+                LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tileset, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleTerrainPalette_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                break;
+            case MAPSEC_ACRISIA_MOUNTAINS:
+                LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_MOUNTAIN].tileset, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_MOUNTAIN].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleTerrainPalette_Rock, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                break;
+            }
             return;
         }
 

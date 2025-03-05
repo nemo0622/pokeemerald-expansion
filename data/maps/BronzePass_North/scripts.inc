@@ -211,88 +211,121 @@ BronzePass_North_EventScript_PreventPassingSouth_GotParcel::
 # 130 "data/maps/BronzePass_North/scripts.pory"
 	lock
 # 131 "data/maps/BronzePass_North/scripts.pory"
-	msgbox BronzePass_North_EventScript_PreventPassingSouth_GotParcel_Text_0
+	applymovement 13, Common_Movement_FaceRight
 # 132 "data/maps/BronzePass_North/scripts.pory"
-	closemessage
-# 133 "data/maps/BronzePass_North/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
-# 134 "data/maps/BronzePass_North/scripts.pory"
 	waitmovement 0
+# 133 "data/maps/BronzePass_North/scripts.pory"
+	speakername BronzePass_North_EventScript_PreventPassingSouth_GotParcel_Text_0
+# 134 "data/maps/BronzePass_North/scripts.pory"
+	msgbox BronzePass_North_EventScript_PreventPassingSouth_GotParcel_Text_1
 # 135 "data/maps/BronzePass_North/scripts.pory"
+	closemessage
+# 136 "data/maps/BronzePass_North/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+# 137 "data/maps/BronzePass_North/scripts.pory"
+	waitmovement 0
+# 138 "data/maps/BronzePass_North/scripts.pory"
 	release
 	end
 
 
-BronzePass_North_EventScript_Trainer_BronzePass_Chip::
+BronzePass_North_EventScript_LittleGirlBlockingExit::
+# 144 "data/maps/BronzePass_North/scripts.pory"
+	lock
+# 145 "data/maps/BronzePass_North/scripts.pory"
+	faceplayer
 # 146 "data/maps/BronzePass_North/scripts.pory"
-	trainerbattle_single TRAINER_BRONZEPASS_CHIP, BronzePass_North_Text_Trainer_BronzePass_ChipIntro, BronzePass_North_Text_Trainer_BronzePass_ChipDefeat
+	speakername BronzePass_North_EventScript_PreventPassingSouth_GotParcel_Text_0
 # 147 "data/maps/BronzePass_North/scripts.pory"
-	speakername BronzePass_North_EventScript_Trainer_BronzePass_Chip_Text_0
-# 148 "data/maps/BronzePass_North/scripts.pory"
-	msgbox BronzePass_North_EventScript_Trainer_BronzePass_Chip_Text_1
-# 149 "data/maps/BronzePass_North/scripts.pory"
+	compare VAR_INTRO_STATE, 2
+	goto_if_eq BronzePass_North_EventScript_LittleGirlBlockingExit_2
+# 154 "data/maps/BronzePass_North/scripts.pory"
+	msgbox BronzePass_North_EventScript_LittleGirlBlockingExit_Text_1
+# 155 "data/maps/BronzePass_North/scripts.pory"
 	closemessage
+BronzePass_North_EventScript_LittleGirlBlockingExit_1:
+# 157 "data/maps/BronzePass_North/scripts.pory"
+	release
+	end
+
+BronzePass_North_EventScript_LittleGirlBlockingExit_2:
+# 149 "data/maps/BronzePass_North/scripts.pory"
+	msgbox BronzePass_North_EventScript_LittleGirlBlockingExit_Text_0
 # 150 "data/maps/BronzePass_North/scripts.pory"
+	closemessage
+	goto BronzePass_North_EventScript_LittleGirlBlockingExit_1
+
+
+BronzePass_North_EventScript_Trainer_BronzePass_Chip::
+# 168 "data/maps/BronzePass_North/scripts.pory"
+	trainerbattle_single TRAINER_BRONZEPASS_CHIP, BronzePass_North_Text_Trainer_BronzePass_ChipIntro, BronzePass_North_Text_Trainer_BronzePass_ChipDefeat
+# 169 "data/maps/BronzePass_North/scripts.pory"
+	speakername BronzePass_North_EventScript_Trainer_BronzePass_Chip_Text_0
+# 170 "data/maps/BronzePass_North/scripts.pory"
+	msgbox BronzePass_North_EventScript_Trainer_BronzePass_Chip_Text_1
+# 171 "data/maps/BronzePass_North/scripts.pory"
+	closemessage
+# 172 "data/maps/BronzePass_North/scripts.pory"
 	release
 	end
 
 
 BronzePass_North_EventScript_NPC_Lass::
-# 164 "data/maps/BronzePass_North/scripts.pory"
+# 186 "data/maps/BronzePass_North/scripts.pory"
 	lock
-# 165 "data/maps/BronzePass_North/scripts.pory"
+# 187 "data/maps/BronzePass_North/scripts.pory"
 	faceplayer
-# 166 "data/maps/BronzePass_North/scripts.pory"
+# 188 "data/maps/BronzePass_North/scripts.pory"
 	speakername BronzePass_North_EventScript_NPC_Lass_Text_0
-# 167 "data/maps/BronzePass_North/scripts.pory"
+# 189 "data/maps/BronzePass_North/scripts.pory"
 	msgbox BronzePass_North_EventScript_NPC_Lass_Text_1
-# 168 "data/maps/BronzePass_North/scripts.pory"
+# 190 "data/maps/BronzePass_North/scripts.pory"
 	closemessage
-# 169 "data/maps/BronzePass_North/scripts.pory"
+# 191 "data/maps/BronzePass_North/scripts.pory"
 	release
 	end
 
 
 BronzePass_North_EventScript_Trainer_BronzePass_Rose::
-# 175 "data/maps/BronzePass_North/scripts.pory"
+# 197 "data/maps/BronzePass_North/scripts.pory"
 	trainerbattle_single TRAINER_BRONZEPASS_ROSE, BronzePass_North_Text_Trainer_BronzePass_RoseIntro, BronzePass_North_Text_Trainer_BronzePass_RoseDefeat
-# 176 "data/maps/BronzePass_North/scripts.pory"
+# 198 "data/maps/BronzePass_North/scripts.pory"
 	speakername BronzePass_North_EventScript_Trainer_BronzePass_Rose_Text_0
-# 177 "data/maps/BronzePass_North/scripts.pory"
+# 199 "data/maps/BronzePass_North/scripts.pory"
 	msgbox BronzePass_North_EventScript_Trainer_BronzePass_Rose_Text_1
-# 178 "data/maps/BronzePass_North/scripts.pory"
+# 200 "data/maps/BronzePass_North/scripts.pory"
 	closemessage
-# 179 "data/maps/BronzePass_North/scripts.pory"
+# 201 "data/maps/BronzePass_North/scripts.pory"
 	release
 	end
 
 
 BronzePass_North_EventScript_Trainer_BronzePass_Felix::
-# 193 "data/maps/BronzePass_North/scripts.pory"
+# 215 "data/maps/BronzePass_North/scripts.pory"
 	trainerbattle_single TRAINER_BRONZEPASS_FELIX, BronzePass_North_Text_Trainer_BronzePass_FelixIntro, BronzePass_North_Text_Trainer_BronzePass_FelixDefeat
-# 194 "data/maps/BronzePass_North/scripts.pory"
+# 216 "data/maps/BronzePass_North/scripts.pory"
 	speakername BronzePass_North_EventScript_Trainer_BronzePass_Felix_Text_0
-# 195 "data/maps/BronzePass_North/scripts.pory"
+# 217 "data/maps/BronzePass_North/scripts.pory"
 	msgbox BronzePass_North_EventScript_Trainer_BronzePass_Felix_Text_1
-# 196 "data/maps/BronzePass_North/scripts.pory"
+# 218 "data/maps/BronzePass_North/scripts.pory"
 	closemessage
-# 197 "data/maps/BronzePass_North/scripts.pory"
+# 219 "data/maps/BronzePass_North/scripts.pory"
 	release
 	end
 
 
 BronzePass_North_EventScript_NPC_TeenageBoy::
-# 211 "data/maps/BronzePass_North/scripts.pory"
+# 233 "data/maps/BronzePass_North/scripts.pory"
 	lock
-# 212 "data/maps/BronzePass_North/scripts.pory"
+# 234 "data/maps/BronzePass_North/scripts.pory"
 	faceplayer
-# 213 "data/maps/BronzePass_North/scripts.pory"
+# 235 "data/maps/BronzePass_North/scripts.pory"
 	speakername BronzePass_North_EventScript_NPC_TeenageBoy_Text_0
-# 214 "data/maps/BronzePass_North/scripts.pory"
+# 236 "data/maps/BronzePass_North/scripts.pory"
 	msgbox BronzePass_North_EventScript_NPC_TeenageBoy_Text_1
-# 215 "data/maps/BronzePass_North/scripts.pory"
+# 237 "data/maps/BronzePass_North/scripts.pory"
 	closemessage
-# 216 "data/maps/BronzePass_North/scripts.pory"
+# 238 "data/maps/BronzePass_North/scripts.pory"
 	release
 	end
 
@@ -364,59 +397,74 @@ BronzePass_North_EventScript_Deliveryman_Text_7:
 	.string "want it.$"
 
 BronzePass_North_EventScript_PreventPassingSouth_GotParcel_Text_0:
-# 131 "data/maps/BronzePass_North/scripts.pory"
-	.string "I shouldn't get too far from the\n"
-	.string "University yet. Professor Elia would be\l"
-	.string "concerned!$"
+# 133 "data/maps/BronzePass_North/scripts.pory"
+	.string "Little Girl$"
+
+BronzePass_North_EventScript_PreventPassingSouth_GotParcel_Text_1:
+# 134 "data/maps/BronzePass_North/scripts.pory"
+	.string "E-excuse me... I think that deliveryman\n"
+	.string "is in trouble! I ran away to hide from\l"
+	.string "the scary man over here. Please, you\l"
+	.string "have to help!$"
+
+BronzePass_North_EventScript_LittleGirlBlockingExit_Text_0:
+# 149 "data/maps/BronzePass_North/scripts.pory"
+	.string "I'm too scared of that scary man to\n"
+	.string "move... Please, don't go away without\l"
+	.string "helping!$"
+
+BronzePass_North_EventScript_LittleGirlBlockingExit_Text_1:
+# 154 "data/maps/BronzePass_North/scripts.pory"
+	.string "The scary man is gone! Thank you!$"
 
 BronzePass_North_EventScript_Trainer_BronzePass_Chip_Text_0:
-# 147 "data/maps/BronzePass_North/scripts.pory"
+# 169 "data/maps/BronzePass_North/scripts.pory"
 	.string "Chip$"
 
 BronzePass_North_EventScript_Trainer_BronzePass_Chip_Text_1:
-# 148 "data/maps/BronzePass_North/scripts.pory"
+# 170 "data/maps/BronzePass_North/scripts.pory"
 	.string "I guess I need to train my Bug Pokémon\n"
 	.string "more.$"
 
 BronzePass_North_EventScript_NPC_Lass_Text_0:
-# 166 "data/maps/BronzePass_North/scripts.pory"
+# 188 "data/maps/BronzePass_North/scripts.pory"
 	.string "Girl$"
 
 BronzePass_North_EventScript_NPC_Lass_Text_1:
-# 167 "data/maps/BronzePass_North/scripts.pory"
+# 189 "data/maps/BronzePass_North/scripts.pory"
 	.string "The broken rails around here are a\n"
 	.string "little creepy... It just looks messy to\l"
 	.string "me!$"
 
 BronzePass_North_EventScript_Trainer_BronzePass_Rose_Text_0:
-# 176 "data/maps/BronzePass_North/scripts.pory"
+# 198 "data/maps/BronzePass_North/scripts.pory"
 	.string "Rose$"
 
 BronzePass_North_EventScript_Trainer_BronzePass_Rose_Text_1:
-# 177 "data/maps/BronzePass_North/scripts.pory"
+# 199 "data/maps/BronzePass_North/scripts.pory"
 	.string "We just moved to the Ilios Region. The\n"
 	.string "Pokémon here are really different than\l"
 	.string "they were at our old home.$"
 
 BronzePass_North_EventScript_Trainer_BronzePass_Felix_Text_0:
-# 194 "data/maps/BronzePass_North/scripts.pory"
+# 216 "data/maps/BronzePass_North/scripts.pory"
 	.string "Felix$"
 
 BronzePass_North_EventScript_Trainer_BronzePass_Felix_Text_1:
-# 195 "data/maps/BronzePass_North/scripts.pory"
+# 217 "data/maps/BronzePass_North/scripts.pory"
 	.string "I brought my Hoothoot from the Johto\n"
 	.string "Region when we moved here. I didn't know\l"
 	.string "Hoothoot lives here too!$"
 
 BronzePass_North_EventScript_NPC_TeenageBoy_Text_0:
-# 213 "data/maps/BronzePass_North/scripts.pory"
+# 235 "data/maps/BronzePass_North/scripts.pory"
 	.string "Teenage Boy$"
 
 BronzePass_North_EventScript_NPC_TeenageBoy_Text_1:
-# 214 "data/maps/BronzePass_North/scripts.pory"
-	.string "Guess there's not much farming up here,\n"
-	.string "huh? South of here, the Jusmail Town\l"
-	.string "Gym is based around farming. She uses\l"
+# 236 "data/maps/BronzePass_North/scripts.pory"
+	.string "Guess it's super rocky up here, huh?\n"
+	.string "South of here, the Jusmail Town Gym is\l"
+	.string "based around farming. The leader uses\l"
 	.string "Grass and Bug-type Pokémon.$"
 
 BronzePass_North_Text_ChimeraGruntDefeated::
@@ -424,28 +472,28 @@ BronzePass_North_Text_ChimeraGruntDefeated::
 	.string "Urgh, you're stronger than you look...$"
 
 BronzePass_North_Text_Trainer_BronzePass_ChipIntro::
-# 153 "data/maps/BronzePass_North/scripts.pory"
+# 175 "data/maps/BronzePass_North/scripts.pory"
 	.string "You'll never beat my Bug Pokémon!$"
 
 BronzePass_North_Text_Trainer_BronzePass_ChipDefeat::
-# 157 "data/maps/BronzePass_North/scripts.pory"
+# 179 "data/maps/BronzePass_North/scripts.pory"
 	.string "W-what? My Bug Pokémon!$"
 
 BronzePass_North_Text_Trainer_BronzePass_RoseIntro::
-# 182 "data/maps/BronzePass_North/scripts.pory"
+# 204 "data/maps/BronzePass_North/scripts.pory"
 	.string "My brother and I are looking for\n"
 	.string "Pokémon here, but battling you sounds\l"
 	.string "more fun!$"
 
 BronzePass_North_Text_Trainer_BronzePass_RoseDefeat::
-# 186 "data/maps/BronzePass_North/scripts.pory"
+# 208 "data/maps/BronzePass_North/scripts.pory"
 	.string "No way, I thought we had that!$"
 
 BronzePass_North_Text_Trainer_BronzePass_FelixIntro::
-# 200 "data/maps/BronzePass_North/scripts.pory"
+# 222 "data/maps/BronzePass_North/scripts.pory"
 	.string "Hey sis, I found an item! Huh? You're\n"
 	.string "not my sister!$"
 
 BronzePass_North_Text_Trainer_BronzePass_FelixDefeat::
-# 204 "data/maps/BronzePass_North/scripts.pory"
+# 226 "data/maps/BronzePass_North/scripts.pory"
 	.string "Rats, the item was just a rock.$"

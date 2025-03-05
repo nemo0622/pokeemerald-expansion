@@ -1137,7 +1137,7 @@ JusmailTown_House1_EventScript_Psychic_Text_1:
 
 JusmailTown_House1_EventScript_EnterBuilding_20BerryTreeReward_Text_0:
 # 339 "data/maps/JusmailTown_House1/scripts.pory"
-	.string "{PLAYER}! Yia sou!!$"
+	.string "{PLAYER}! Chaire!!$"
 
 JusmailTown_House1_EventScript_EnterBuilding_20BerryTreeReward_Text_1:
 # 345 "data/maps/JusmailTown_House1/scripts.pory"
@@ -1217,7 +1217,7 @@ JusmailTown_House1_EventScript_EnterBuilding_50BerryTreeReward_Text_6:
 
 JusmailTown_House1_EventScript_EnterBuilding_100BerryTreeReward_Text_0:
 # 457 "data/maps/JusmailTown_House1/scripts.pory"
-	.string "Yia sou, {PLAYER}! Welcome back!$"
+	.string "Chaire, {PLAYER}! Welcome back!$"
 
 JusmailTown_House1_EventScript_EnterBuilding_100BerryTreeReward_Text_1:
 # 463 "data/maps/JusmailTown_House1/scripts.pory"

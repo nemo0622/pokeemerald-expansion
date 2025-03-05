@@ -1,0 +1,36 @@
+mapscripts KalamiCity_House2_MapScripts {}
+
+script KalamiCity_House2_EventScript_OldMan
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("We came here when we retired to be closer to nature. Walking through the shallow water keeps us active!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_House2_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("There are new rumors about rediscovered Pokémon species all the time in the Ilios Region. Our little Kabuto is one of them!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_House2_EventScript_Kabuto
+{
+    lock
+    faceplayer
+    speakername("Kabuto")
+    playmoncry(SPECIES_KABUTO, CRY_MODE_NORMAL)
+    msgbox("Shree!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

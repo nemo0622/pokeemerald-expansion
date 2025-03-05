@@ -1,0 +1,45 @@
+mapscripts KalamiCity_House3_MapScripts {}
+
+script KalamiCity_House3_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("This is the locally-run data processing center for the Kalami City trade ports. We keep track of everything that goes through the city."))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_House3_EventScript_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+    msgbox(format("I manage all the spreadsheets for the city! It's stressful sometimes, but the work environment is nice. I've got my own flower box!"))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_House3_EventScript_Reporter
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("I'm getting tired of looking at this screen... maybe I'll take a break and read for a bit."))
+    closemessage
+    release
+    end
+}
+
+script KalamiCity_House3_EventScript_ScientistF
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+    msgbox(format("I help manage the data processing center. Mattaios, the Gym Leader of Kalami City, also likes to stay involved in the running of the city."))
+    closemessage
+    release
+    end
+}

@@ -16,19 +16,19 @@
 #define TRAINER_UNION_ROOM                  3072
 
 #define TRAINER_PIC_HIKER                  0
-#define TRAINER_PIC_GRUNT_KECLEON          1 // replaces AQUA_GRUNT_M
+#define TRAINER_PIC_CHIMERA_GRUNT_M        1 // replaces AQUA_GRUNT_M
 #define TRAINER_PIC_POKEMON_BREEDER_F      2
 #define TRAINER_PIC_COOLTRAINER_M          3
 #define TRAINER_PIC_BIRD_KEEPER            4
 #define TRAINER_PIC_COLLECTOR              5
-#define TRAINER_PIC_GRUNT_SANDSLASH        6 // replaces AQUA_GRUNT_F
+#define TRAINER_PIC_CHIMERA_GRUNT_F        6 // replaces AQUA_GRUNT_F
 #define TRAINER_PIC_SWIMMER_M              7
 #define TRAINER_PIC_MAGMA_GRUNT_M          8
 #define TRAINER_PIC_EXPERT_M               9
-#define TRAINER_PIC_ADMIN_WALREIN         10 // replaces AQUA_ADMIN_M
+#define TRAINER_PIC_CHIMERA_ADMIN_M         10 // replaces AQUA_ADMIN_M
 #define TRAINER_PIC_BLACK_BELT            11
-#define TRAINER_PIC_ADMIN_DUSKNOIR        12 // replaces AQUA_ADMIN_F
-#define TRAINER_PIC_LEADER_SALAMENCE      13 // replaces AQUA_LEADER_ARCHIE
+#define TRAINER_PIC_CHIMERA_ADMIN_F        12 // replaces AQUA_ADMIN_F
+#define TRAINER_PIC_CHIMERA_LEADER      13 // replaces AQUA_LEADER_ARCHIE
 #define TRAINER_PIC_HEX_MANIAC            14
 #define TRAINER_PIC_AROMA_LADY            15
 #define TRAINER_PIC_RUIN_MANIAC           16

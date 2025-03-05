@@ -4846,8 +4846,8 @@
       "name": "AcrisiaCaves_BF1_Layout",
       "width": 22,
       "height": 20,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_JusmailGym",
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Acrisia",
       "border_filepath": "data/layouts/AcrisiaCaves_BF1/border.bin",
       "blockdata_filepath": "data/layouts/AcrisiaCaves_BF1/map.bin"
     },
@@ -4970,6 +4970,106 @@
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/TheDelphis_PlayerCabin/border.bin",
       "blockdata_filepath": "data/layouts/TheDelphis_PlayerCabin/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVERWALK_TRAIL_WEST",
+      "name": "RiverwalkTrail_West_Layout",
+      "width": 80,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Riverwalk",
+      "border_filepath": "data/layouts/RiverwalkTrail_West/border.bin",
+      "blockdata_filepath": "data/layouts/RiverwalkTrail_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVERWALK_TRAIL_SOUTH",
+      "name": "RiverwalkTrail_South_Layout",
+      "width": 36,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Riverwalk",
+      "border_filepath": "data/layouts/RiverwalkTrail_South/border.bin",
+      "blockdata_filepath": "data/layouts/RiverwalkTrail_South/map.bin"
+    },
+    {
+      "id": "LAYOUT_KALAMI_CITY",
+      "name": "KalamiCity_Layout",
+      "width": 70,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Riverwalk",
+      "border_filepath": "data/layouts/KalamiCity/border.bin",
+      "blockdata_filepath": "data/layouts/KalamiCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_KALAMI_CITY_HOUSE1",
+      "name": "KalamiCity_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/KalamiCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/KalamiCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_KALAMI_CITY_HOUSE2",
+      "name": "KalamiCity_House2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/KalamiCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/KalamiCity_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_KALAMI_CITY_HOUSE3",
+      "name": "KalamiCity_House3_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/KalamiCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/KalamiCity_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_KALAMI_CITY_HOUSE4",
+      "name": "KalamiCity_House4_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/KalamiCity_House4/border.bin",
+      "blockdata_filepath": "data/layouts/KalamiCity_House4/map.bin"
+    },
+    {
+      "id": "LAYOUT_KALAMI_CITY_POKEMON_CENTER",
+      "name": "KalamiCity_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/KalamiCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/KalamiCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_KALAMI_CITY_MART",
+      "name": "KalamiCity_Mart_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/KalamiCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/KalamiCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_KALAMI_CITY_GYM",
+      "name": "KalamiCity_Gym_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_JusmailGym",
+      "border_filepath": "data/layouts/KalamiCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/KalamiCity_Gym/map.bin"
     }
   ]
 }

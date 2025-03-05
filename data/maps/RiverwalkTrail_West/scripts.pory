@@ -1,0 +1,126 @@
+mapscripts RiverwalkTrail_West_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(10, ENCOUNTER_LAND)
+        setobjectaswildencounter(11, ENCOUNTER_LAND)
+        setobjectaswildencounter(12, ENCOUNTER_LAND)
+        setobjectaswildencounter(13, ENCOUNTER_LAND)
+        setobjectaswildencounter(14, ENCOUNTER_LAND)
+    }
+}
+
+script RiverwalkTrail_West_EventScript_ManCrossedBridge
+{
+    lock
+    faceplayer
+    speakername("PokéManiac")
+    msgbox(format("Ahahaha, yes! I did it! I crossed the bridge and found a new area to catch Pokémon!\p This trail leads into a marshland and Kalami City. Who knows what I'll find!"))
+    closemessage
+    release
+    end
+}
+
+script RiverwalkTrail_West_EventScript_TRAINER_RIVERWALK_TRAIL_W_JOSUA
+{
+    trainerbattle_single(TRAINER_RIVERWALK_TRAIL_W_JOSUA, RiverwalkTrail_West_Text_TRAINER_RIVERWALK_TRAIL_W_JOSUAIntro, RiverwalkTrail_West_Text_TRAINER_RIVERWALK_TRAIL_W_JOSUADefeat)
+    speakername("Josua")
+    msgbox(format("People often go to the Acrisia Mountains to train. The Trainers there can help prepare your Pokémon for Riverwalk Trail."))
+    closemessage
+    release
+    end
+}
+text RiverwalkTrail_West_Text_TRAINER_RIVERWALK_TRAIL_W_JOSUAIntro
+{
+    format("I'm a step above the Trainers in the Bronze Fields! I hope you've been training!")
+}
+text RiverwalkTrail_West_Text_TRAINER_RIVERWALK_TRAIL_W_JOSUADefeat
+{
+    format("Wow! Have you been to the Acrisia Mountains yet?")
+}
+
+script RiverwalkTrail_WEST_EventScript_Trainer_RiverwalkTrail_WEST_Umber
+{
+    trainerbattle_single(TRAINER_RIVERWALK_TRAIL_W_UMBER, RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_UmberIntro, RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_UmberDefeat)
+    speakername("Umber")
+    msgbox(format("I was hoping my Pokémon was magic somehow!"))
+    closemessage
+    release
+    end
+}
+text RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_UmberIntro
+{
+    format("Don't freak out, but... I think my Pokémon is from space.")
+}
+text RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_UmberDefeat
+{
+    format("I couldn't even win using the powers of space?!")
+}
+
+script RiverwalkTrail_West_EventScript_Athlete
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    msgbox(format("This way down from Acrisia City is super steep! It's quite the hike down the mountains, but the nice sights make it more fun."))
+    closemessage
+    release
+    end
+}
+
+script RiverwalkTrail_WEST_EventScript_Trainer_RiverwalkTrail_WEST_Margarey
+{
+    trainerbattle_single(TRAINER_RIVERWALK_TRAIL_W_MARGAREY, RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_MargareyIntro, RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_MargareyDefeat)
+    speakername("Margarey")
+    msgbox(format("I've heard of a special Pokémon which can be ridden. I wonder how you get that..."))
+    closemessage
+    release
+    end
+}
+text RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_MargareyIntro
+{
+    format("My Pokémon are used to rocky conditions. Let me show you!")
+}
+text RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_MargareyDefeat
+{
+    format("Phew, your Pokémon might be tougher than mine!")
+}
+
+script RiverwalkTrail_West_EventScript_Fisherman
+{
+    lock
+    faceplayer
+    speakername("Fisherman")
+    msgbox(format("Multiple rivers flow down from the mountains towards Kalami City and the sea beyond. Lots of Water-type Pokémon make this area their home!"))
+    closemessage
+    release
+    end
+}
+
+script RiverwalkTrail_WEST_EventScript_Trainer_RiverwalkTrail_WEST_Kylon
+{
+    trainerbattle_single(TRAINER_RIVERWALK_TRAIL_W_KYLON, RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_KylonIntro, RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_KylonDefeat)
+    speakername("Kylon")
+    msgbox(format("My mom says that Ghost-type Corsola are only found in polluted waters."))
+    closemessage
+    release
+    end
+}
+text RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_KylonIntro
+{
+    format("My Pokémon is old and wise, it can't lose!")
+}
+text RiverwalkTrail_WEST_Text_Trainer_RiverwalkTrail_WEST_KylonDefeat
+{
+    format("Maybe it's not so wise after all...")
+}

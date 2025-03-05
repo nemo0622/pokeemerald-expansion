@@ -130,7 +130,10 @@
     "ChampionsPeak_BattleRoom",
     "AcrisiaCity_House4",
     "AcrisiaCity_House5",
-    "SofosCity_GameCorner"
+    "SofosCity_GameCorner",
+    "RiverwalkTrail_West",
+    "RiverwalkTrail_South",
+    "KalamiCity"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -181,7 +184,14 @@
     "FallarborTown_PokemonCenter_1F",
     "FallarborTown_PokemonCenter_2F",
     "FallarborTown_CozmosHouse",
-    "FallarborTown_MoveRelearnersHouse"
+    "FallarborTown_MoveRelearnersHouse",
+    "KalamiCity_House1",
+    "KalamiCity_House2",
+    "KalamiCity_House3",
+    "KalamiCity_House4",
+    "KalamiCity_PokemonCenter",
+    "KalamiCity_Mart",
+    "KalamiCity_Gym"
   ],
   "gMapGroup_IndoorVerdanturf": [
     "VerdanturfTown_BattleTentLobby",

@@ -105,37 +105,42 @@ script TheDelphis_EventScript_LeaveShipTrigger
         clearflag(FLAG_ON_PIRAEUS_BOAT)
 
         // warp to appropriate location using VAR_CHOSEN_SAIL_LOCATION
-        if(var(VAR_CHOSEN_SAIL_LOCATION) == 1) // pythios town
+        if(var(VAR_CHOSEN_SAIL_LOCATION) == 1) // kalami city
+        {
+            warp(MAP_KALAMI_CITY, 44, 12)
+            waitstate
+        }
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 2) // pythios town
         {
             warp(MAP_PYTHIOS_TOWN, 17, 21)
             waitstate
         }
-        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 2) // sofos city
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 3) // sofos city
         {
             warp(MAP_SOFOS_CITY, 22, 30) // currently set to Pokémon center entrance, no dock yet
             waitstate
         }
-        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 3) // marmaro island
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 4) // marmaro island
         {
             warp(MAP_MARMARO_ISLAND, 19, 32) // currently set to Pokémon center entrance, no dock yet
             waitstate
         }
-        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 4) // myrrini island
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 5) // myrrini island
         {
             warp(MAP_MYRRINI_ISLAND, 23, 38) // currently set to Pokémon center entrance, no dock yet
             waitstate
         }
-        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 5) // fresco isles
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 6) // fresco isles
         {
             warp(MAP_FRESCO_ISLAND, 65, 27) // currently set to Pokémon center entrance, no dock yet
             waitstate
         }
-        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 6) // palati city
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 7) // palati city
         {
             warp(MAP_PALATI_CITY, 39, 19) // currently set to Pokémon center entrance, no dock yet
             waitstate
         }
-        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 7) // port pello
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 8) // port pello
         {
             warp(MAP_PORT_PELLO, 22, 19) // currently set to Pokémon center entrance, no dock yet
             waitstate

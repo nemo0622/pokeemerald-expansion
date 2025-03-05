@@ -237,3 +237,6 @@ const u16 gMetatileAttributes_ChampionsPeak[] = INCBIN_U16("data/tilesets/second
 
 const u16 gMetatiles_JusmailGym[] = INCBIN_U16("data/tilesets/secondary/jusmail_gym/metatiles.bin");
 const u16 gMetatileAttributes_JusmailGym[] = INCBIN_U16("data/tilesets/secondary/jusmail_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_Riverwalk[] = INCBIN_U16("data/tilesets/secondary/riverwalk/metatiles.bin");
+const u16 gMetatileAttributes_Riverwalk[] = INCBIN_U16("data/tilesets/secondary/riverwalk/metatile_attributes.bin");

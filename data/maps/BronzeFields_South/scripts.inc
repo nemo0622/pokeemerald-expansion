@@ -275,12 +275,12 @@ BronzeFields_South_Text_Trainer_BronzePass_JosephDefeat::
 
 BronzeFields_South_Text_Trainer_BronzePass_WyattIntro::
 # 112 "data/maps/BronzeFields_South/scripts.pory"
-	.string "My Poliwag helps water my crops. I bet\n"
+	.string "My Pokémon helps water my crops. I bet\n"
 	.string "it can win against your Pokémon!$"
 
 BronzeFields_South_Text_Trainer_BronzePass_WyattDefeat::
 # 116 "data/maps/BronzeFields_South/scripts.pory"
-	.string "Poliwag, no! Who'll water my crops now?$"
+	.string "No, my Pokémon! Who'll help me work now?$"
 
 BronzeFields_South_Text_Trainer_BronzePass_MilonIntro::
 # 130 "data/maps/BronzeFields_South/scripts.pory"

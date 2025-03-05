@@ -636,7 +636,7 @@ AcrisiaCity_EventScript_LadyByWater_Text_2:
 
 AcrisiaCity_EventScript_LadyByWater_Text_3:
 # 157 "data/maps/AcrisiaCity/scripts.pory"
-	.string "Hurry on now, I'll have a {COLOR GREEN}prize{COLOR DARK_GRAY} for you!$"
+	.string "Hurry up now, I'll have a {COLOR GREEN}prize{COLOR DARK_GRAY} for you!$"
 
 AcrisiaCity_EventScript_LadyByWater_Text_4:
 # 163 "data/maps/AcrisiaCity/scripts.pory"

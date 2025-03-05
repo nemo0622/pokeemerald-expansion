@@ -128,10 +128,32 @@ movement BronzePass_North_Movement_ChimeraGruntExits
 script BronzePass_North_EventScript_PreventPassingSouth_GotParcel
 {
     lock
-    msgbox(format("I shouldn't get too far from the University yet. Professor Elia would be concerned!"))
-    closemessage
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    applymovement(13, Common_Movement_FaceRight)
     waitmovement(0)
+    speakername("Little Girl")
+    msgbox(format("E-excuse me... I think that deliveryman is in trouble! I ran away to hide from the scary man over here. Please, you have to help!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    release
+    end
+}
+
+script BronzePass_North_EventScript_LittleGirlBlockingExit
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    if(var(VAR_INTRO_STATE) == 2)
+    {
+        msgbox(format("I'm too scared of that scary man to move... Please, don't go away without helping!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("The scary man is gone! Thank you!"))
+        closemessage
+    }
     release
     end
 }
@@ -211,7 +233,7 @@ script BronzePass_North_EventScript_NPC_TeenageBoy
     lock
     faceplayer
     speakername("Teenage Boy")
-    msgbox(format("Guess there's not much farming up here, huh? South of here, the Jusmail Town Gym is based around farming. She uses Grass and Bug-type Pokémon."))
+    msgbox(format("Guess it's super rocky up here, huh? South of here, the Jusmail Town Gym is based around farming. The leader uses Grass and Bug-type Pokémon."))
     closemessage
     release
     end

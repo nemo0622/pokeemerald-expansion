@@ -98,7 +98,7 @@
 #define MAPSEC_PORT_PELLO                   0x5E
 #define MAPSEC_AREIOS_HIDEOUT               0x5F // City after Nyx Trails, based on Sparta, hideout of evil team
 #define MAPSEC_CHAMPIONS_PEAK               0x60 // Elite Four location
-#define MAPSEC_INDIGO_PLATEAU               0x61
+#define MAPSEC_KALAMI_CITY                  0x61 // east of Acrisia City, new location
 #define MAPSEC_SAFFRON_CITY                 0x62
 #define MAPSEC_ROUTE_4_POKECENTER           0x63
 #define MAPSEC_ROUTE_10_POKECENTER          0x64
@@ -113,9 +113,9 @@
 #define MAPSEC_FRESCO_ISLAND                0x6D // Island with volcano and deserts, based on Santorini
 #define MAPSEC_PALATI_CITY                  0x6E // City in the center of Kaptara Island (Crete-based island, based on Knossos)
 #define MAPSEC_KAPTARA_ISLAND               0x6F // East and West halves of island, bisected by Palati City
-#define MAPSEC_CORRIN_CROSSING                  0x70 // South of Asfal Hills
+#define MAPSEC_CORRIN_CROSSING              0x70 // South of Asfal Hills
 #define MAPSEC_THE_STYGIAN_CAVES            0x71 // North of Acrisia Mountains, leading up to Champion's Peak (E4)
-#define MAPSEC_ROUTE_14                     0x72
+#define MAPSEC_RIVERWALK_TRAIL              0x72 // Route east of Acrisia City to Kalami City
 #define MAPSEC_ROUTE_15                     0x73
 #define MAPSEC_ROUTE_16                     0x74
 #define MAPSEC_ROUTE_17                     0x75

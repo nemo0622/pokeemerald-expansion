@@ -9,71 +9,54 @@ This ROM Hack takes place in a brand new region, with a whole new adventure ahea
 Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animals and ecosystems. After creating Pokémon Emerald Seaglass, I really wanted to continue my ROM Hacking journey, but I wanted to get more experimental and tie in my real world interests. As a Biology student in college, I have been constantly inspired by classes and what I've learned, and now I hope to apply this passion in a Pokémon game. I hope this experience helps people to think more about the environment around them! :)
 
 ## Feature List
-- Over 350 Pokémon from Generations 1-9 in a beautiful GBC style!
-- Pokémon Reworks ported from Pokémon Emerald Seaglass, with new rebalancing + polish!
+- Graphics in a GBC-like style, mixing Generation II graphics with GBA capabilities to form "Generation 2.5 style"
+    - See the credits list to find more information about who made the graphics for this game! :)
+- A completely new region, the Ilios Region, based on the geographical region of Greece
+    - Various references to Greek history and culture
+    - All routes & locations have unique names, looks, and ecosystems!
+- Carefully curated Pokédex of 400 Pokémon from Generations 1-9 in a beautiful GBC style!
+    - Many Pokémon have undergone rebalancing, with new moves, abilities, and slight stat changes!
+    - Including regional (Alolan/Galarian/Hisuian) forms, total count is around 430 unique Pokémon
 - Day/Night System with FakeRTC
     - Every second in real time is 30 seconds in game (2 real minutes = 1 in-game hour)
     - Comes with Day/Night Encounter Differences! All found in Documentation
+- Overworld Encounters with Wild Pokémon
+    - Most routes have a few randomized locations for Pokémon to spawn
+    - Shiny Pokémon are visible in the overworld!
 - DexNav functionality, including bug fixed from Emerald Seaglass
     - Including Cheat Code to show all DexNav Pokémon from the start: "JUSTSHOWME"
 - Cheat Code system, with many helpful cheats and ways to shake up repeat playthroughs!
-    - Codes for 99 items, such as Rare Candies and Nuggets
-    - Codes for a random starter of a selected type (good for monotype runs or randomized starters!)
-    - Can find codes in documentation
+    - Codes for 999 items, such as Rare Candies and Nuggets
+    - Codes for starters, a selection of random Pokémon, and even a Girlypop Pokémon code!
+    - Codes for giving a random stage 1 Pokémon of any type for Monotype Challenge runs
+        - Find codes in documentation!
 - Difficulty Modes!
     - Normal Mode: Soft Level Caps, Standard Gym Leader teams. Can likely beat the game with most Pokémon teams, with a few battles requiring extra planning.
     - Hard Mode: Hard Level Caps, Modified Gym Leaders to be more difficult fights. Opponents gain extra levels as the game progresses, ending in a +5 level bonus to opponents. Planning before Gym battles is key, as their Pokémon have stronger moves and more coverage.
     - Difficulty toggled at computer on far right side of Acrisia University building!
-- HM Revamp ported from Emerald Seaglass
-    - Pokémon who can learn HM moves can use them in the field without them taking a move slot!
 - Various QOL Changes, such as:
-    - Expanded BAG space to 50 Items
+    - Expanded Bag space to 50 Items
     - Shiny Indicator for wild Pokémon
     - Press L to toggle auto-run
     - Pokémon types shown in battle
     - Pokémon animate after KO
     - NPC speaker name shown above text box
     - Reusable TMs!
+    - HM Revamp ported from Emerald Seaglass
+        - Pokémon who can learn HM moves can use them in the field without them taking a move slot!
 
 ## Future Development Plans
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - POKÉMON REBALANCING
-        - Add evolution methods for hisuian forms
-        - LIST OF EVOLUTION ITEMS TO ADD:
-            - Ice Stone (Alolan Sandshrew, A. Vulpix, Eevee, Crabrawler)
-            - Moon Stone (Clefairy, Jigglypuff, Eevee, Munna)
-            - Sun Stone (Eevee, Helioptile)
-            - Thunder Stone (Eevee, Charjabug)
-            - Fire Stone (Vulpix, Growlithe, Eevee, Pansear)
-            - Water Stone (Poliwhirl, Eevee, Panpour)
-            - Leaf Stone (Eevee, Pansage)
-            - Shiny Stone (Eevee, Togetic)
-            - Dusk Stone (Quilava, Murkrow, Lampent, Doublade)
-            - King's Rock (Poliwhirl)
-            - Linking Cord (Haunter, Gurdurr, Pumpkaboo)
-            - Metal Coat (Onix, Scyther, H. Goomy)
-            - Black Augarite (Scyther, Johto Trio into Paradox forms)
-            - Razor Fang (Gligar)
-            - Razor Claw (Sneasel, H. Sneasel)
-            - Reaper Cloth (Duskull)
-            - Nectar locations (Oricorio forms)
-            - Tart, Sweet, and Syrupy Apples (Applin)
-            - Auspicious and Malicious Armor (Charcadet)
-    - Create Battle sprite for Rania (currently Wally lol)
-    - Modify Birch intro sequence dialogue
-    - Overworld speedup? https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Overworld-Speedup
-    - Make maps for new area east of Acrisia City
-    - Reread through existing dialogue and fix some of the cringe Greek phrases (sorry lol but it's true)
+    - Prepare for Demo release
+        - Disable debug functions
+        - Create "Demo" gfx for version # on title screen
+        - Create "demo disclaimer" PDF (acknowledge possibility for bugs & changes, placeholder sprites, etc)
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
-        - Riverwalk Trail: east of Acrisia City, curving south near end to Potami City
-            - Slightly swampy area with some reeds, but not major swamp area. Whole route slopes down from west-east
-        - Potami City: city among rivers, based on city of Volos (real city in area with 3 rivers flowing through)
-            - City centered around 3 main rivers, with many bridges and palm trees
-            - Make Buizel encounter-able here! I like it :) propeller tail ability is cool now
+        - 
         - Explore AC odyssey world for other location inspo lol
 - Give all Pokémon unique Pokédex entries
 - PROPER QUEST SYSTEM: https://github.com/PokemonSanFran/pokeemerald/wiki/Unbound-Quest-Menu
@@ -91,10 +74,9 @@ MAJOR TODOS:
 
 
 GREEK PHRASES AND STUFF:
-- "Opa!" - directly translates to "Oops", but really used to show appreciation/enthusiasm
-- "Yia sou" - greeting
-- "Andio" - goodbye
 - "Chaire" - basically ancient greek "aloha" (hello/goodbye)
+- "Andio" - goodbye
+- "Opa!" - directly translates to "Oops", but really used to show appreciation/enthusiasm
 - "Yamas" - cheers!
 - "Den gnorzio" - I don't know
 

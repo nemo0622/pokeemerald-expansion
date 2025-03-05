@@ -22,6 +22,11 @@
       "map": "MAP_ACRISIA_MOUNTAINS",
       "offset": -16,
       "direction": "left"
+    },
+    {
+      "map": "MAP_RIVERWALK_TRAIL_WEST",
+      "offset": 10,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -375,6 +380,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Overworld_EventScript_WildPokemon",
       "flag": "FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 21,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_KINGS_ROCK",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ACRISIA_CITY_KINGS_ROCK"
     }
   ],
   "warp_events": [

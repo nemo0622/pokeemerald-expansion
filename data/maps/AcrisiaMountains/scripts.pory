@@ -12,11 +12,11 @@ mapscripts AcrisiaMountains_MapScripts {
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(15, ENCOUNTER_LAND)
+        setobjectaswildencounter(16, ENCOUNTER_LAND)
         setobjectaswildencounter(17, ENCOUNTER_LAND)
         setobjectaswildencounter(18, ENCOUNTER_LAND)
         setobjectaswildencounter(19, ENCOUNTER_LAND)
-        setobjectaswildencounter(20, ENCOUNTER_LAND)
-        setobjectaswildencounter(21, ENCOUNTER_LAND)
     }
 }
 
@@ -25,44 +25,6 @@ script AcrisiaMountains_Sign_GymSign
     lock
     msgbox(format("Welcome to the Acrisia Caverns.\p Gym Leader: Mattaios\n The Ever-Working Rocksmith"))
     closemessage
-    release
-    end
-}
-
-script AcrisiaMountains_EventScript_FishingGuru
-{
-    lock
-    faceplayer
-
-    if(flag(FLAG_RECEIVED_OLD_ROD))
-    {
-        speakername("Fishing Guru")
-        msgbox(format("Plenty of good Pokémon can be fished up! Make sure to cast a rod a few times in each pond you see!"))
-        closemessage
-    }
-    else
-    {
-        speakername("Fishing Guru")
-        msgbox(format("You! Yes, you! Tell me, do you like to fish?"), MSGBOX_YESNO)
-        if(var(VAR_RESULT) == 0)
-        {
-            speakername("Fishing Guru")
-            msgbox(format("Oh. Well, okay then."))
-            closemessage
-        }
-        else
-        {
-            speakername("Fishing Guru")
-            msgbox(format("Grand! We can be great friends. Here, I want you to take this."))
-            closemessage
-            giveitem(ITEM_OLD_ROD)
-            speakername("Fishing Guru")
-            msgbox(format("The Ilios Region has extremely diverse water life! Make sure to fish every day."))
-            closemessage
-            setflag(FLAG_RECEIVED_OLD_ROD)
-        }
-    }
-
     release
     end
 }
@@ -123,7 +85,7 @@ script AcrisiaMountains_EventScript_MachoBraceMan
     }
     else
     {
-        msgbox(format("Yia sou, little buddy! Ya think ya can swim up that waterfall? I've been tryin' every day.\p I've been holdin' this, but it hasn't made me stronger. Maybe it'll help ya with somethin'."))
+        msgbox(format("Chaire, little buddy! Ya think ya can swim up that waterfall? I've been tryin' every day.\p I've been holdin' this, but it hasn't made me stronger. Maybe it'll help ya with somethin'."))
         closemessage
         giveitem(ITEM_MACHO_BRACE)
         speakername("Muscleman")
@@ -169,24 +131,6 @@ text AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaIntro
 text AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaDefeat
 {
     format("...zzz...")
-}
-
-script AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Josua
-{
-    trainerbattle_single(TRAINER_ACRISIAMTNS_JOSUA, AcrisiaMountains_Text_Trainer_AcrisiaMtns_JosuaIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_JosuaDefeat)
-    speakername("Josua")
-    msgbox(format("I just came here to explore the hills, not to fight so many trainers..."))
-    closemessage
-    release
-    end
-}
-text AcrisiaMountains_Text_Trainer_AcrisiaMtns_JosuaIntro
-{
-    format("These hills are so steep and cramped, there's hardly room for a good battle!")
-}
-text AcrisiaMountains_Text_Trainer_AcrisiaMtns_JosuaDefeat
-{
-    format("Fwahaha, looks like you made do!")
 }
 
 script AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Ulf
@@ -286,7 +230,7 @@ script AcrisiaMountains_EventScript_LassExploringRuins
         if(var(VAR_RESULT) == 1) // has a baltoy!
         {
             delay(30)
-            applymovement(22, Common_Movement_ExclamationMark)
+            applymovement(20, Common_Movement_ExclamationMark)
             waitmovement(0)
             delay(20)
             speakername("Lass")

@@ -69,7 +69,7 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     applymovement(4, AcrisiaCity_University_Movement_RaniaGreetsPlayer)
     waitmovement(0)
     speakername("Rania")
-    msgbox(format("Yia sou! That's how we say 'Hello' here! I'm Rania, and you must be... the new field assistant, {PLAYER}!\p I study the movement of Pokémon populations across the Ilios Region. Part of your fieldwork is collecting Pokémon location data, and I'm the one who goes through it all and finds trends!\p I'd love to keep chatting, but I've got a deadline to meet. Nice to meet you!"))
+    msgbox(format("Chaire (Hyeh-rei)! That's how we say 'Hello' here! I'm Rania, and you must be... the new field assistant, {PLAYER}!\p I study the movement of Pokémon populations across the Ilios Region. Part of your fieldwork is collecting Pokémon location data, and I'm the one who goes through it all and finds trends!\p I'd love to keep chatting, but I've got a deadline to meet. Nice to meet you!"))
     closemessage
     applymovement(4, AcrisiaCity_University_Movement_RaniaReturnsToStation)
     waitmovement(0)
@@ -270,7 +270,7 @@ script AcrisiaCity_University_EventScript_Niko
     elif(var(VAR_NIKO_STATE) == 1) // beat Rania in Jusmail Town
     {
         speakername("Niko")
-        msgbox(format("Yia sou, bud! I hear you beat Rania in Jusmail Town. After all the braggin' she did about her team, fwahaha!\p Ahem, hm. Getting the Harvest Badge is a big step for trainers in Ilios! Rania and I are thinking about doing it ourselves. Here's a little congratulatory gift from me!"))
+        msgbox(format("Chaire, bud! I hear you beat Rania in Jusmail Town. After all the braggin' she did about her team, fwahaha!\p Ahem, hm. Getting the Harvest Badge is a big step for trainers in Ilios! Rania and I are thinking about doing it ourselves. Here's a little congratulatory gift from me!"))
         closemessage
         giveitem(ITEM_NEST_BALL, 3)
         speakername("Niko")
@@ -318,7 +318,7 @@ script AcrisiaCity_University_EventScript_Rania
     if(var(VAR_RANIA_STATE) == 0) // adventure starting
     {
         speakername("Rania")
-        msgbox(format("Yia sou, {PLAYER}! You doin' well?\p I help out with Pokédex data analysis. Now that you're here, there's gonna be a lot more data. Come {COLOR GREEN}speak with me{COLOR DARK_GRAY} as you {COLOR GREEN}defeat Pokémon Gyms{COLOR DARK_GRAY}, I'll give you some helpful tips and items!"))
+        msgbox(format("Chaire, {PLAYER}! You doin' well?\p I help out with Pokédex data analysis. Now that you're here, there's gonna be a lot more data. Come {COLOR GREEN}speak with me{COLOR DARK_GRAY} as you {COLOR GREEN}defeat Pokémon Gyms{COLOR DARK_GRAY}, I'll give you some helpful tips and items!"))
         closemessage
     }
     elif(var(VAR_RANIA_STATE) == 1) // beat her in Jusmail Town
@@ -341,7 +341,7 @@ script AcrisiaCity_University_EventScript_Rania
     elif(var(VAR_RANIA_STATE) == 3) // earned 2nd badge, got Rania's reward
     {
         speakername("Rania")
-        msgbox(format("Yia sou! I come back here to heal my Pokémon and put my new Pokédex data into the computers. Don't you worry, I'll be back out soon! Get ready for some battles!"))
+        msgbox(format("Chaire! I come back here to heal my Pokémon and put my new Pokédex data into the computers. Don't you worry, I'll be back out soon! Get ready for some battles!"))
         closemessage
     }
     elif(var(VAR_RANIA_STATE) == 4) // finished Team Chimera event in Wanderer's Woods
@@ -543,7 +543,7 @@ script AcrisiaCity_University_EventScript_EliaRatePokedex
     // this is also just kinda busted in general lol
 
     speakername("Prof. Elia")
-    msgbox(format("Yia sou, {PLAYER}! How's your research going? I can check your Pokédex progress!"), MSGBOX_YESNO)
+    msgbox(format("Chaire, {PLAYER}! How's your research going? I can check your Pokédex progress!"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == 0) // decline
     {
         speakername("Prof. Elia")
@@ -587,6 +587,14 @@ script AcrisiaCity_University_EventScript_EliaRatePokedex
     }
     // NEXT REWARDS: give other starters!
     // Base code off of Fallarbor Town Elm Pichu event from Seaglass!
+
+    // fallthrough failsafe - if you've gotten all the rewards possible, just say something vague and end it
+    else
+    {
+        speakername("Prof. Elia")
+        msgbox(format("Hmm, it doesn't look like I have any more rewards for you at the moment. Get back out there and find some new Pokémon!"))
+        closemessage
+    }
 
     closemessage
     release
@@ -653,7 +661,7 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
 script AcrisiaCity_University_EventScript_EliaCheckBadgeOne
 {
     speakername("Prof. Elia")
-    msgbox(format("Yia sou, welcome back {PLAYER}! Have you made it to the {COLOR GREEN}Jusmail Town Gym{COLOR DARK_GRAY} yet?"))
+    msgbox(format("Chaire, welcome back {PLAYER}! Have you made it to the {COLOR GREEN}Jusmail Town Gym{COLOR DARK_GRAY} yet?"))
     closemessage
     if(!flag(FLAG_BADGE01_GET)) // havent gotten the badge
     {
@@ -668,10 +676,11 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeOne
         closemessage
         giveitem(ITEM_ABILITY_CAPSULE)
         speakername("Prof. Elia")
-        msgbox(format("That's an Ability Capsule. It can change the Ability of a Pokémon, which can make it totally different in battle!\p Look, I know I've been sending you back and forth a bunch, but I think I've got a good idea. You should head {COLOR GREEN}west{COLOR DARK_GRAY} from here, up into the {COLOR GREEN}Acrisia Mountains{COLOR DARK_GRAY}. There's a cave nearby called the {COLOR GREEN}Acrisia Caverns{COLOR DARK_GRAY}, which the Ilios Region considers a Gym. If you can win, I have something even better for you!"))
+        msgbox(format("That's an Ability Capsule. It can change the Ability of a Pokémon, which can make it totally different in battle!\p Look, I know I've been sending you back and forth a bunch, but I think I've got a good idea. You should head {COLOR GREEN}west{COLOR DARK_GRAY} from here, up into the {COLOR GREEN}Acrisia Mountains{COLOR DARK_GRAY} for extra training.\p After your training, or if you just feel ready, you can {COLOR GREEN}cross the rail bridge{COLOR DARK_GRAY} over Acrisia City to the east towards {COLOR GREEN}Kalami City{COLOR DARK_GRAY}. Your next Gym Badge will be there. Be sure to come back to Acrisia City after your fight!"))
         closemessage
         setvar(VAR_INTRO_STATE, 5)
         setflag(FLAG_HIDE_RANIA_JUSMAIL) // failsafe - incase player somehow skipped rania in Jusmail
+        setflag(FLAG_UNLOCKED_ACRISIA_MTNS) // allows travel into Acrisia Mountains and Riverwalk Trail
     }
     release
     end
@@ -680,12 +689,12 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeOne
 script AcrisiaCity_University_EventScript_EliaCheckBadgeTwo
 {
     speakername("Prof. Elia")
-    msgbox(format("{PLAYER}, welcome, welcome! Have you explored the {COLOR GREEN}Acrisia Mountains{COLOR DARK_GRAY} to the west yet? The {COLOR GREEN}second Gym{COLOR DARK_GRAY} is there!"))
+    msgbox(format("{PLAYER}, welcome, welcome! Have you crossed the rail bridge and explored east to {COLOR GREEN}Kalami City{COLOR DARK_GRAY} yet? Your next Gym Badge is there!"))
     closemessage
     if(!flag(FLAG_BADGE02_GET))
     {
         speakername("Prof. Elia")
-        msgbox(format("Not yet, hm? That's fine, the Mountains are a tough area. Only a small area is safe to explore, so it's packed with trainers.\p Come back and check in with me when you have your second Gym Badge. And remember to heal your Pokémon at the machine to your right!"))
+        msgbox(format("Not yet, hm? That's fine, the swamps to the east are a tough area. Remember, you can always do some extra training in the Acrisia Mountains to the west!\p Come back and check in with me when you have your second Gym Badge. I've got another gift for you!"))
         closemessage
     }
     else // got the badge!

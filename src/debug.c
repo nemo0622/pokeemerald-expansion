@@ -1285,7 +1285,7 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_VISITED_PORT_PELLO) &&
                 FlagGet(FLAG_VISITED_AREIOS_HIDEOUT) &&
                 FlagGet(FLAG_VISITED_CHAMPIONS_PEAK) &&
-                FlagGet(FLAG_VISITED_FORTREE_CITY) &&
+                FlagGet(FLAG_VISITED_KALAMI_CITY) &&
                 FlagGet(FLAG_VISITED_LILYCOVE_CITY) &&
                 FlagGet(FLAG_VISITED_MOSSDEEP_CITY) &&
                 FlagGet(FLAG_VISITED_SOOTOPOLIS_CITY) &&
@@ -2792,7 +2792,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_VISITED_PORT_PELLO);
         FlagClear(FLAG_VISITED_AREIOS_HIDEOUT);
         FlagClear(FLAG_VISITED_CHAMPIONS_PEAK);
-        FlagClear(FLAG_VISITED_FORTREE_CITY);
+        FlagClear(FLAG_VISITED_KALAMI_CITY);
         FlagClear(FLAG_VISITED_LILYCOVE_CITY);
         FlagClear(FLAG_VISITED_MOSSDEEP_CITY);
         FlagClear(FLAG_VISITED_SOOTOPOLIS_CITY);
@@ -2814,7 +2814,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_VISITED_PORT_PELLO);
         FlagSet(FLAG_VISITED_AREIOS_HIDEOUT);
         FlagSet(FLAG_VISITED_CHAMPIONS_PEAK);
-        FlagSet(FLAG_VISITED_FORTREE_CITY);
+        FlagSet(FLAG_VISITED_KALAMI_CITY);
         FlagSet(FLAG_VISITED_LILYCOVE_CITY);
         FlagSet(FLAG_VISITED_MOSSDEEP_CITY);
         FlagSet(FLAG_VISITED_SOOTOPOLIS_CITY);

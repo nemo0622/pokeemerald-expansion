@@ -4,11 +4,24 @@ script AcrisiaCity_House3_EventScripts_Man
 {
     lock
     faceplayer
-    speakername("Complaining Man")
-    msgbox(format("Dishes, dishes... I should get a Pokémon that can clean these for me."))
+    speakername("Hungry Man")
+    msgbox(format("Hmm, what to eat... I should get a Pokémon like Tropius. You know, they grow fruit for Trainers they like!\p No offense to my Grimer! But I'm not about to go snacking on that slime trail it leaves behind..."))
     closemessage
     applymovement(1, Common_Movement_FaceOriginalDirection)
     waitmovement(0)
+    release
+    end
+}
+
+script AcrisiaCity_House3_EventScript_Grimer
+{
+    lock
+    faceplayer
+    speakername("Grimer")
+    playmoncry(SPECIES_GRIMER, CRY_MODE_NORMAL)
+    msgbox("Gurgle?")
+    waitmoncry
+    closemessage
     release
     end
 }

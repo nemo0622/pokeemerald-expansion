@@ -111,11 +111,11 @@ script BronzeFields_South_EventScript_Trainer_BronzeFields_Wyatt
 }
 text BronzeFields_South_Text_Trainer_BronzePass_WyattIntro
 {
-    format("My Poliwag helps water my crops. I bet it can win against your Pokémon!")
+    format("My Pokémon helps water my crops. I bet it can win against your Pokémon!")
 }
 text BronzeFields_South_Text_Trainer_BronzePass_WyattDefeat
 {
-    format("Poliwag, no! Who'll water my crops now?")
+    format("No, my Pokémon! Who'll help me work now?")
 }
 
 script BronzeFields_South_EventScript_Trainer_BronzeFields_Milon

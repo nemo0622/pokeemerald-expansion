@@ -1824,3 +1824,22 @@ const u16 gTilesetPalettes_JusmailGym[][16] =
 };
 
 const u32 gTilesetTiles_JusmailGym[] = INCBIN_U32("data/tilesets/secondary/jusmail_gym/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Riverwalk[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/riverwalk/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Riverwalk[] = INCBIN_U32("data/tilesets/secondary/riverwalk/tiles.4bpp.lz");
