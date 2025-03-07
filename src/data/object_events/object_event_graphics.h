@@ -404,6 +404,31 @@ const u32 gObjectEventPic_Windmill_BL[] = INCBIN_U32("graphics/object_events/pic
 const u32 gObjectEventPic_Windmill_BR[] = INCBIN_U32("graphics/object_events/pics/misc/windmill/bottom_right.4bpp"); // bottom right
 const u16 gObjectEventPal_Windmill[] = INCBIN_U16("graphics/object_events/pics/misc/windmill/top_left.gbapal"); // kinda used for everything
 
+// custom berry tree palettes below
+const u16 gObjectEventPal_BerryTree_Cheri[] = INCBIN_U16("graphics/object_events/pics/berry_trees/cheri.gbapal");
+const u16 gObjectEventPal_BerryTree_Chesto[] = INCBIN_U16("graphics/object_events/pics/berry_trees/chesto.gbapal");
+const u16 gObjectEventPal_BerryTree_Pecha[] = INCBIN_U16("graphics/object_events/pics/berry_trees/pecha.gbapal");
+const u16 gObjectEventPal_BerryTree_Rawst[] = INCBIN_U16("graphics/object_events/pics/berry_trees/rawst.gbapal");
+const u16 gObjectEventPal_BerryTree_Aspear[] = INCBIN_U16("graphics/object_events/pics/berry_trees/aspear.gbapal");
+const u16 gObjectEventPal_BerryTree_Leppa[] = INCBIN_U16("graphics/object_events/pics/berry_trees/leppa.gbapal");
+const u16 gObjectEventPal_BerryTree_Oran[] = INCBIN_U16("graphics/object_events/pics/berry_trees/oran.gbapal");
+const u16 gObjectEventPal_BerryTree_Persim[] = INCBIN_U16("graphics/object_events/pics/berry_trees/persim.gbapal");
+const u16 gObjectEventPal_BerryTree_Lum[] = INCBIN_U16("graphics/object_events/pics/berry_trees/lum.gbapal");
+const u16 gObjectEventPal_BerryTree_Sitrus[] = INCBIN_U16("graphics/object_events/pics/berry_trees/sitrus.gbapal");
+const u16 gObjectEventPal_BerryTree_Chilan[] = INCBIN_U16("graphics/object_events/pics/berry_trees/grepa.gbapal");
+const u16 gObjectEventPal_BerryTree_Occa[] = INCBIN_U16("graphics/object_events/pics/berry_trees/occa.gbapal");
+const u16 gObjectEventPal_BerryTree_Passho[] = INCBIN_U16("graphics/object_events/pics/berry_trees/cornn.gbapal");
+const u16 gObjectEventPal_BerryTree_Wacan[] = INCBIN_U16("graphics/object_events/pics/berry_trees/razz.gbapal");
+const u16 gObjectEventPal_BerryTree_Rindo[] = INCBIN_U16("graphics/object_events/pics/berry_trees/tamato.gbapal");
+const u16 gObjectEventPal_BerryTree_Yache[] = INCBIN_U16("graphics/object_events/pics/berry_trees/yache.gbapal");
+const u16 gObjectEventPal_BerryTree_Chople[] = INCBIN_U16("graphics/object_events/pics/berry_trees/chople.gbapal");
+const u16 gObjectEventPal_BerryTree_Kebia[] = INCBIN_U16("graphics/object_events/pics/berry_trees/kebia.gbapal");
+const u16 gObjectEventPal_BerryTree_Shuca[] = INCBIN_U16("graphics/object_events/pics/berry_trees/shuca.gbapal");
+const u16 gObjectEventPal_BerryTree_Payapa[] = INCBIN_U16("graphics/object_events/pics/berry_trees/payapa.gbapal");
+const u16 gObjectEventPal_BerryTree_Tanga[] = INCBIN_U16("graphics/object_events/pics/berry_trees/tanga.gbapal");
+const u16 gObjectEventPal_BerryTree_Charti[] = INCBIN_U16("graphics/object_events/pics/berry_trees/lansat.gbapal");
+const u16 gObjectEventPal_BerryTree_Kasib[] = INCBIN_U16("graphics/object_events/pics/berry_trees/kasib.gbapal");
+
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");
 const u32 gObjectEventPic_UltraBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_ultra.4bpp");

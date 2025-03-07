@@ -56,7 +56,7 @@ AcrisiaCity_House1_EventScript_Man_Text_0:
 
 AcrisiaCity_House1_EventScript_Man_Text_1:
 # 8 "data/maps/AcrisiaCity_House1/scripts.pory"
-	.string "Another Agrias University student, eh?\n"
+	.string "Another Acrisia University member, eh?\n"
 	.string "Nice to meet ya!\p"
 	.string "The Ilios Region is ancient, but always\n"
 	.string "changing. I hope ya find something new.$"

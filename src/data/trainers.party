@@ -684,7 +684,7 @@ Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Anorith
-Level: 13
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Tirtouga
@@ -692,7 +692,7 @@ Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Archen
-Level: 13
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ACRISIACAVES_F1_LANA === /* Picknicker in Acrisia Caves F1 */
@@ -711,7 +711,7 @@ Level: 14
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Omanyte
-Level: 14
+Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Wooper Paldean
@@ -730,11 +730,11 @@ Party Size: 1
 Pool Rules: Basic
 
 Bronzor
-Level: 15
+Level: 14
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 
 Stufful
-Level: 15
+Level: 14
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 
 === TRAINER_RIVERWALK_TRAIL_W_UMBER === /* Hiker moved to Riverwalk Trail West */
@@ -749,7 +749,7 @@ Party Size: 1
 Pool Rules: Basic
 
 SPECIES_MINIOR_METEOR_GREEN
-Level: 16
+Level: 15
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
 - Acrobatics
@@ -757,7 +757,7 @@ IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rollout
 
 SPECIES_MINIOR_METEOR_RED
-Level: 16
+Level: 15
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
 - Acrobatics
@@ -765,7 +765,7 @@ IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rollout
 
 SPECIES_MINIOR_METEOR_BLUE
-Level: 16
+Level: 15
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
 - Acrobatics
@@ -773,7 +773,7 @@ IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rollout
 
 SPECIES_MINIOR_METEOR_YELLOW
-Level: 16
+Level: 15
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
 - Acrobatics
@@ -844,7 +844,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 
 SPECIES_CORSOLA_GALAR
-Level: 17
+Level: 16
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_LEADER_MATTAIOS === /* Gym Leader #2: Mattaios (Normal Difficulty) */
@@ -860,7 +860,7 @@ Party Size: 3
 Pool Rules: Basic
 
 Klawf
-Level: 18
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Tags: Lead
 - Metal Claw
@@ -877,7 +877,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bullet Seed
 
 Mawile
-Level: 18
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Metal Claw
 - Fairy Wind
@@ -885,7 +885,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bite
 
 Sneasel Hisuian
-Level: 18
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rock Smash
 - Metal Claw
@@ -893,7 +893,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Taunt
 
 Larvitar
-Level: 20
+Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Tags: Ace
 - Stomping Tantrum
@@ -914,7 +914,7 @@ Party Size: 4
 Pool Rules: Basic
 
 Klawf
-Level: 18
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Tags: Lead
 - Metal Claw
@@ -931,7 +931,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bullet Seed
 
 Mawile
-Level: 18
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Metal Claw
 - Play Rough
@@ -939,7 +939,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
 
 Sneasel Hisuian
-Level: 18
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Smash
 - Metal Claw
@@ -947,7 +947,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Shard
 
 Larvitar
-Level: 20
+Level: 19
 Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Tags: Ace
@@ -1158,6 +1158,8 @@ AI: Check Bad Move / Check Viability
 Hoothoot
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Peck
+- Foresight
 
 === TRAINER_WANDERERSWOODS_CHIMERA_ADMIN_HARD ===
 Name: Admin
@@ -1378,7 +1380,7 @@ Level: 3
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Nincada
-Level: 4
+Level: 3
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Tags: Ace
 
@@ -1896,11 +1898,11 @@ Level: 16
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Beautifly
-Level: 16
+Level: 15
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Dustox
-Level: 16
+Level: 15
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_RIVERWALK_TRAIL_S_GIANNA ===
@@ -1915,7 +1917,7 @@ Party Size: 2
 Pool Rules: Basic
 
 Oricorio Pom Pom
-Level: 16
+Level: 15
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Magnemite
@@ -1938,19 +1940,19 @@ Party Size: 3
 Pool Rules: Basic
 
 Barboach
-Level: 16
+Level: 15
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Helioptile
-Level: 16
+Level: 15
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Charcadet
-Level: 17
+Level: 16
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Chatot
-Level: 17
+Level: 16
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_KALAMI_GYM_REX ===
@@ -1965,11 +1967,11 @@ Party Size: 2
 Pool Rules: Basic
 
 Timburr
-Level: 17
+Level: 16
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Tyrunt
-Level: 17
+Level: 16
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Cufant
@@ -1988,15 +1990,15 @@ Party Size: 2
 Pool Rules: Basic
 
 Tinkatink
-Level: 17
+Level: 16
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Numel
-Level: 17
+Level: 16
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Stufful
-Level: 17
+Level: 16
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_KALAMI_GYM_TASOULA ===
@@ -2011,7 +2013,7 @@ Party Size: 3
 Pool Rules: Basic
 
 Togedemaru
-Level: 18
+Level: 17
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Rockruff
@@ -2019,7 +2021,7 @@ Level: 17
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Grimer
-Level: 18
+Level: 17
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Grimer Alolan

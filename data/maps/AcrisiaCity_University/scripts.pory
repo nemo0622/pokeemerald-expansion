@@ -54,7 +54,7 @@ script AcrisiaCity_University_EventScript_PlayerIntro
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
     speakername("Niko")
-    msgbox(format("Sorry about the fuss, but when Duskull gets scared, it starts floating through walls and knocking over the books!\p I study how Pokémon behave in captivity. I'm learning a lot about Pokéballs and how to care for captive Pokémon.\p If you have any questions about Pokéballs, let me know."))
+    msgbox(format("Sorry about the fuss, but when Duskull gets scared, it starts floating through walls and knocking over the books!\p I study how Pokémon behave in captivity. I'm learning a lot about Poké balls and how to care for captive Pokémon.\p If you have any questions about Poké balls, let me know."))
     closemessage
     applymovement(3, AcrisiaCity_University_Movement_NikoReturnToStation)
     waitmovement(0)
@@ -135,6 +135,7 @@ script AcrisiaCity_University_EventScript_ChoosePokemon
     setflag(FLAG_HIDE_FIRST_PROFESSOR_SPRITE)
     clearflag(FLAG_HIDE_MAP_NAME_POPUP)
     setrespawn(HEAL_LOCATION_ACRISIA_CITY)
+    setvar(VAR_BERRY_TREES_PLANTED, 0) // resets number of berry trees planted just in case
 
     warpsilent(MAP_ACRISIA_CITY_UNIVERSITY, 6, 12)
     waitstate
@@ -414,7 +415,7 @@ script AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs
     if(var(VAR_RESULT) == 0) // say you dont remember niko
     {
         speakername("Niko")
-        msgbox(format("No? Some research partner you are.\p I was gonna give you some good Pokéballs, but now you're just getting these."))
+        msgbox(format("No? Some research partner you are.\p I was gonna give you some good Poké balls, but now you're just getting these."))
         closemessage
         giveitem(ITEM_POKE_BALL, 3)
         speakername("Niko")
@@ -424,7 +425,7 @@ script AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs
     else // you remember niko
     {
         speakername("Niko")
-        msgbox(format("Ehehe, I knew you were a real friend!\p I'm only supposed to give you a few Pokéballs, but you made my day, so I'll make yours!"))
+        msgbox(format("Ehehe, I knew you were a real friend!\p I'm only supposed to give you a few Poké balls, but you made my day, so I'll make yours!"))
         closemessage
         giveitem(ITEM_POKE_BALL, 10)
         delay(30)
@@ -465,7 +466,7 @@ script AcrisiaCity_University_CustomSettingsComputer
 {
     lock
     speakername("Computer")
-    msgbox(format("-bzzt bzzt-\n Welcome to the Sunset Settings Menu!"))
+    msgbox(format("Welcome to the Pokémon Lazarus Settings Menu!"))
     closemessage
 
     // setting 1: difficulty
@@ -491,6 +492,32 @@ script AcrisiaCity_University_CustomSettingsComputer
         setvar(VAR_DIFFICULTY, 1)
         speakername("Computer")
         msgbox(format("The game has been set to {COLOR RED}HARD DIFFICULTY{COLOR DARK_GRAY}."))
+        closemessage
+    }
+
+    // setting 2: visible day/night cycle
+    if(flag(FLAG_VISIBLE_DAY_NIGHT_CYCLE))
+    {
+        bufferstring(STR_VAR_1, "VISIBLE")
+    }
+    else
+    {
+        bufferstring(STR_VAR_1, "INVISIBLE")
+    }
+    speakername("Computer")
+    msgbox(format("{COLOR GREEN}TIME OF DAY TINT{COLOR DARK_GRAY}\n Should {COLOR GREEN}Nighttime Tint{COLOR DARK_GRAY} be enabled? When enabled, the in-game time of day influences how the game looks.\p The current setting is {STR_VAR_1}. Should {COLOR GREEN}NIGHTTIME TINT{COLOR DARK_GRAY} be enabled?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0) // no
+    {
+        clearflag(FLAG_VISIBLE_DAY_NIGHT_CYCLE)
+        speakername("Computer")
+        msgbox(format("The {COLOR GREEN}Time of Day Tint{COLOR DARK_GRAY} has been {COLOR RED}disabled{COLOR DARK_GRAY}. The game will always be at full brightness."))
+        closemessage
+    }
+    else
+    {
+        setflag(FLAG_VISIBLE_DAY_NIGHT_CYCLE)
+        speakername("Computer")
+        msgbox(format("The {COLOR GREEN}Time of Day Tint{COLOR DARK_GRAY} has been {COLOR GREEN}enabled{COLOR DARK_GRAY}. The time of day will be visible in the overworld."))
         closemessage
     }
 
@@ -616,7 +643,7 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
         {
             msgbox(format("Aie! The delivery cart was attacked!? Well I'm glad everyone is okay...\p Here, I'll enable your Pokédex."))
             closemessage
-            removeobject(ITEM_PARCEL) // remove key item parcel from bag
+            removeitem(ITEM_PARCEL) // remove key item parcel from bag
             playse(SE_CLICK)
 	        delay(10)
 	        playse(SE_CLICK)
@@ -636,6 +663,7 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
             msgbox(format("Ah, speaking of electronics, here's an {COLOR GREEN}EXP. Share{COLOR DARK_GRAY} to help raise your Pokémon faster. I'll give you a Town Map, too."))
             closemessage
             giveitem(ITEM_EXP_SHARE)
+            setflag(FLAG_EXP_SHARE_ENABLED)
             giveitem(ITEM_TOWN_MAP)
             speakername("Prof. Elia")
             msgbox(format("I think it's a good idea to train your Pokémon for battle, in case more troublemakers come around. Why don't you {COLOR GREEN}battle the Pokémon Gyms{COLOR DARK_GRAY} you find while you're exploring the Ilios Region? That'll get your Pokémon raring to go!"))

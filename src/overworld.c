@@ -1598,7 +1598,7 @@ void UpdateAltBgPalettes(u16 palettes) {
     const struct Tileset *primary = gMapHeader.mapLayout->primaryTileset;
     const struct Tileset *secondary = gMapHeader.mapLayout->secondaryTileset;
     u32 i = 1;
-    if (!MapHasNaturalLight(gMapHeader.mapType))
+    if (!MapHasNaturalLight(gMapHeader.mapType) || !FlagGet(FLAG_VISIBLE_DAY_NIGHT_CYCLE))
         return;
     palettes &= ~((1 << NUM_PALS_IN_PRIMARY) - 1) | primary->swapPalettes;
     palettes &= ((1 << NUM_PALS_IN_PRIMARY) - 1) | (secondary->swapPalettes << NUM_PALS_IN_PRIMARY);
@@ -1619,7 +1619,7 @@ void UpdateAltBgPalettes(u16 palettes) {
 }
 
 void UpdatePalettesWithTime(u32 palettes) {
-    if (MapHasNaturalLight(gMapHeader.mapType)) {
+    if (MapHasNaturalLight(gMapHeader.mapType) && FlagGet(FLAG_VISIBLE_DAY_NIGHT_CYCLE)) {
         u32 i;
         u32 mask = 1 << 16;
         if (palettes >= (1 << 16))
@@ -1642,7 +1642,7 @@ void UpdatePalettesWithTime(u32 palettes) {
 }
 
 u8 UpdateSpritePaletteWithTime(u8 paletteNum) {
-    if (MapHasNaturalLight(gMapHeader.mapType)) {
+    if (MapHasNaturalLight(gMapHeader.mapType) && FlagGet(FLAG_VISIBLE_DAY_NIGHT_CYCLE)) {
         if (IS_BLEND_IMMUNE_TAG(GetSpritePaletteTagByPaletteNum(paletteNum)))
         return paletteNum;
     TimeMixPalettes(

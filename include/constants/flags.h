@@ -1388,7 +1388,7 @@
 #define FLAG_SHINY_CREATION                         (SYSTEM_FLAGS + 0x22)   // force creation of a shiny mon
 #define FLAG_SYS_SHOW_ALL_DEXNAV_MONS               (SYSTEM_FLAGS + 0x23) // Turns all "?" symbols to Pokémon icons in DexNav
 #define FLAG_SUPPRESS_SPEAKER_NAME                  (SYSTEM_FLAGS + 0x24) // Blocks speaker name plate
-#define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
+#define FLAG_VISIBLE_DAY_NIGHT_CYCLE                (SYSTEM_FLAGS + 0x25) // Whether day/night cycle is visible (toggled ON by default in new_game.inc)
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
 

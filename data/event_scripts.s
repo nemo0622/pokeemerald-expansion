@@ -1476,7 +1476,7 @@ MysteryGift_EventScript_Monotype_Water::
 
 MysteryGift_Text_WelcomeToMysteryGiftSystem:
 	.string "Hello, {PLAYER}!\p"
-	.string "Welcome to the Pokémon Sunset\n"
+	.string "Welcome to the Pokémon Lazarus\n"
 	.string "Cheat Code System!\p"
 	.string "Would you like to enter a code?$"
 

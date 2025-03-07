@@ -651,7 +651,7 @@
 
 #define CONFUSE_BERRY_HP_FRACTION ((B_CONFUSE_BERRIES_HEAL >= GEN_7) ? 4 : 2)
 
-#define ITEM_CHERI_BERRY 514
+#define ITEM_CHERI_BERRY 514 // berryId 0
 #define ITEM_CHESTO_BERRY 515
 #define ITEM_PECHA_BERRY 516
 #define ITEM_RAWST_BERRY 517
@@ -661,7 +661,7 @@
 #define ITEM_PERSIM_BERRY 521
 #define ITEM_LUM_BERRY 522
 #define ITEM_SITRUS_BERRY 523
-#define ITEM_FIGY_BERRY 524
+#define ITEM_FIGY_BERRY 524 // berryId 10
 #define ITEM_WIKI_BERRY 525
 #define ITEM_MAGO_BERRY 526
 #define ITEM_AGUAV_BERRY 527
@@ -671,7 +671,7 @@
 #define ITEM_NANAB_BERRY 531
 #define ITEM_WEPEAR_BERRY 532
 #define ITEM_PINAP_BERRY 533
-#define ITEM_POMEG_BERRY 534
+#define ITEM_POMEG_BERRY 534 // berryId 20
 #define ITEM_KELPSY_BERRY 535
 #define ITEM_QUALOT_BERRY 536
 #define ITEM_HONDEW_BERRY 537
@@ -686,24 +686,24 @@
 #define ITEM_WATMEL_BERRY 546
 #define ITEM_DURIN_BERRY 547
 #define ITEM_BELUE_BERRY 548
-#define ITEM_CHILAN_BERRY 549
-#define ITEM_OCCA_BERRY 550
+#define ITEM_CHILAN_BERRY 549 // i think this is where damage reducing berries start (berryId 35)
+#define ITEM_OCCA_BERRY 550 // has unique overworld
 #define ITEM_PASSHO_BERRY 551
 #define ITEM_WACAN_BERRY 552
 #define ITEM_RINDO_BERRY 553
-#define ITEM_YACHE_BERRY 554
-#define ITEM_CHOPLE_BERRY 555
-#define ITEM_KEBIA_BERRY 556
-#define ITEM_SHUCA_BERRY 557
-#define ITEM_COBA_BERRY 558
-#define ITEM_PAYAPA_BERRY 559
-#define ITEM_TANGA_BERRY 560
+#define ITEM_YACHE_BERRY 554 // has unique overworld // berryId 40
+#define ITEM_CHOPLE_BERRY 555 // has unique overworld
+#define ITEM_KEBIA_BERRY 556 // has unique overworld
+#define ITEM_SHUCA_BERRY 557 // has unique overworld
+#define ITEM_COBA_BERRY 558 // reuses RAWST gfx
+#define ITEM_PAYAPA_BERRY 559 // has unique overworld
+#define ITEM_TANGA_BERRY 560 // has unique overworld
 #define ITEM_CHARTI_BERRY 561
-#define ITEM_KASIB_BERRY 562
-#define ITEM_HABAN_BERRY 563
-#define ITEM_COLBUR_BERRY 564
+#define ITEM_KASIB_BERRY 562 // has unique overworld
+#define ITEM_HABAN_BERRY 563 // has unique overworld
+#define ITEM_COLBUR_BERRY 564 // has unique overworld
 #define ITEM_BABIRI_BERRY 565
-#define ITEM_ROSELI_BERRY 566
+#define ITEM_ROSELI_BERRY 566 // has unique overworld; last damage reducing berries
 #define ITEM_LIECHI_BERRY 567
 #define ITEM_GANLON_BERRY 568
 #define ITEM_SALAC_BERRY 569

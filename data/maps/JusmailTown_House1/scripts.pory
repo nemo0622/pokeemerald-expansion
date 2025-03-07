@@ -114,7 +114,7 @@ script JusmailTown_House1_EventScript_EnterBuildingForFirstTime
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
         waitmovement(0)
         speakername("Artist")
-        msgbox(format("Of course they're alright with it! This is the largest recognized Berry enthusiast club in town! Put some respect on our name.\p 'Name'... name... oh yeah, I guess we don't even know your name! What should we call you, darling?"))
+        msgbox(format("Of course they're alright with it! This is the largest recognized Berry enthusiast club in town! That means a great deal to people like us!\p Pardon my outburst, darling... erm, I suppose I shouldn't call you that forever. What's your name?"))
         closemessage
         delay(60)
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
@@ -134,7 +134,7 @@ script JusmailTown_House1_EventScript_EnterBuildingForFirstTime
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
         waitmovement(0)
         speakername("Psychic")
-        msgbox(format("Berries here have some extra complexity. The soil needs to be kept moist and can be helped with our Mulch, and it's important to keep weeds and pests away from the plants. Berries can also hybridize, producing rare Berry varieties!"))
+        msgbox(format("Berries here have some extra complexity. The soil needs to be kept moist and can be helped with our Mulch, and it's important to keep weeds and pests away from the plants. Berries can also hybridize, producing rare, {COLOR GREEN}damage-reducing Berry varieties{COLOR DARK_GRAY}!"))
         closemessage
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
         waitmovement(0)
@@ -257,36 +257,6 @@ mart JusmailTown_House1_Mart_Berries
     ITEM_PERSIM_BERRY
     ITEM_LUM_BERRY
     ITEM_SITRUS_BERRY
-    ITEM_FIGY_BERRY
-    ITEM_WIKI_BERRY
-    ITEM_MAGO_BERRY
-    ITEM_AGUAV_BERRY
-    ITEM_IAPAPA_BERRY
-    ITEM_RAZZ_BERRY
-    ITEM_BLUK_BERRY
-    ITEM_NANAB_BERRY
-    ITEM_WEPEAR_BERRY
-    ITEM_PINAP_BERRY
-    ITEM_OCCA_BERRY
-    ITEM_PASSHO_BERRY
-    ITEM_WACAN_BERRY
-    ITEM_RINDO_BERRY
-    ITEM_YACHE_BERRY
-    ITEM_CHOPLE_BERRY
-    ITEM_KEBIA_BERRY
-    ITEM_SHUCA_BERRY
-    ITEM_COBA_BERRY
-    ITEM_PAYAPA_BERRY
-    ITEM_TANGA_BERRY
-    ITEM_CHARTI_BERRY
-    ITEM_KASIB_BERRY
-    ITEM_HABAN_BERRY
-    ITEM_COLBUR_BERRY
-    ITEM_BABIRI_BERRY
-    ITEM_CHILAN_BERRY
-    ITEM_ROSELI_BERRY
-    ITEM_LANSAT_BERRY
-    ITEM_STARF_BERRY
 }
 
 script JusmailTown_House1_EventScript_Psychic
@@ -352,14 +322,16 @@ script JusmailTown_House1_EventScript_EnterBuilding_20BerryTreeReward
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
     speakername("Beauty")
-    msgbox(format("We've been experimenting with new Berry species, and one new Berry is especially unique. Here you go!"))
+    msgbox(format("We've gotten into contact with fellow Berry-growers from other regions, and they've sent us these samples. We want you to have them!"))
     closemessage
 
-    giveitem(ITEM_ENIGMA_BERRY, 3)
+    giveitem(ITEM_CHILAN_BERRY, 1)
+    giveitem(ITEM_HABAN_BERRY, 1)
+    giveitem(ITEM_ROSELI_BERRY, 1)
     setflag(FLAG_GOT_BERRY_CLUB_REWARD_20)
 
     speakername("Beauty")
-    msgbox(format("Those Berries help your Pokémon heal up after being hit with super-effective moves. Make sure to plant them and grow more!"))
+    msgbox(format("Those Berries can help your Pokémon resist powerful moves of certain types.\p Remember, these are {COLOR GREEN}one of a kind{COLOR DARK_GRAY}, so make sure to plant them and grow more before using them!"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)
@@ -532,16 +504,16 @@ script JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward
     closemessage
 
     setflag(FLAG_GOT_BERRY_CLUB_REWARD_200)
-    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_LARVESTA)
-	givemon(SPECIES_LARVESTA, 50, ITEM_IAPAPA_BERRY, ITEM_POKE_BALL, NATURE_TIMID, 0, MON_FEMALE, 0, 0, 0, 252, 252, 4, 31, 31, 31, 31, 31, 31, MOVE_TORCH_SONG, MOVE_BUG_BUZZ, MOVE_STUFF_CHEEKS, MOVE_QUIVER_DANCE)
+    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ARCHEN)
+	givemon(SPECIES_ARCHEN, 50, ITEM_YACHE_BERRY, ITEM_POKE_BALL, NATURE_ADAMANT, 2, MON_FEMALE, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_DUAL_WINGBEAT, MOVE_U_TURN, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE)
 
 	playfanfare(MUS_OBTAIN_ITEM)
-	msgbox(format("{PLAYER} received the fruit-eating Larvesta!"))
+	msgbox(format("{PLAYER} received the fruit-eating Archen!"))
 	waitfanfare
 	closemessage
 
     speakername("Beauty")
-    msgbox(format("That Larvesta has {COLOR GREEN}special moves{COLOR DARK_GRAY} learned from growing up around all these Berries. Make sure to take care of it!"))
+    msgbox(format("That Archen has {COLOR GREEN}special moves{COLOR DARK_GRAY} learned from growing up around all these Berries. Make sure to take care of it!"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)

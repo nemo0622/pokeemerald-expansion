@@ -152,6 +152,9 @@ script JusmailTown_EventScript_RaniaEvent
         trainerbattle_no_intro(TRAINER_JUSMAIL_RANIA, JusmailTown_Text_RaniaDefeated)
 
         // post-battle script
+        lockall
+        applymovement(11, Common_Movement_FacePlayer)
+        waitmovement(0)
         speakername("Rania")
         msgbox(format("Phew, what a battle! Even against a strong type trio like mine, you still held your own. Looks like that Gym Badge really means something!\p Ah, right, another thing. Professor Elia sent me to give you this HM. Here!"))
         closemessage

@@ -543,6 +543,29 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     #endif //ITEM_STRANGE_BALL
 #endif //OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_Windmill,              OBJ_EVENT_PAL_TAG_WINDMILL},
+    {gObjectEventPal_BerryTree_Cheri,       OBJ_EVENT_PAL_TAG_BERRY_TREE_CHERI},
+    {gObjectEventPal_BerryTree_Chesto,      OBJ_EVENT_PAL_TAG_BERRY_TREE_CHESTO},
+    {gObjectEventPal_BerryTree_Pecha,       OBJ_EVENT_PAL_TAG_BERRY_TREE_PECHA},
+    {gObjectEventPal_BerryTree_Rawst,       OBJ_EVENT_PAL_TAG_BERRY_TREE_RAWST},
+    {gObjectEventPal_BerryTree_Aspear,      OBJ_EVENT_PAL_TAG_BERRY_TREE_ASPEAR},
+    {gObjectEventPal_BerryTree_Leppa,       OBJ_EVENT_PAL_TAG_BERRY_TREE_LEPPA},
+    {gObjectEventPal_BerryTree_Oran,        OBJ_EVENT_PAL_TAG_BERRY_TREE_ORAN},
+    {gObjectEventPal_BerryTree_Persim,      OBJ_EVENT_PAL_TAG_BERRY_TREE_PERSIM},
+    {gObjectEventPal_BerryTree_Lum,         OBJ_EVENT_PAL_TAG_BERRY_TREE_LUM},
+    {gObjectEventPal_BerryTree_Sitrus,      OBJ_EVENT_PAL_TAG_BERRY_TREE_SITRUS},
+    {gObjectEventPal_BerryTree_Chilan,      OBJ_EVENT_PAL_TAG_BERRY_TREE_CHILAN},
+    {gObjectEventPal_BerryTree_Occa,        OBJ_EVENT_PAL_TAG_BERRY_TREE_OCCA},
+    {gObjectEventPal_BerryTree_Passho,      OBJ_EVENT_PAL_TAG_BERRY_TREE_PASSHO},
+    {gObjectEventPal_BerryTree_Wacan,       OBJ_EVENT_PAL_TAG_BERRY_TREE_WACAN},
+    {gObjectEventPal_BerryTree_Rindo,       OBJ_EVENT_PAL_TAG_BERRY_TREE_RINDO},
+    {gObjectEventPal_BerryTree_Yache,       OBJ_EVENT_PAL_TAG_BERRY_TREE_YACHE},
+    {gObjectEventPal_BerryTree_Chople,      OBJ_EVENT_PAL_TAG_BERRY_TREE_CHOPLE},
+    {gObjectEventPal_BerryTree_Kebia,       OBJ_EVENT_PAL_TAG_BERRY_TREE_KEBIA},
+    {gObjectEventPal_BerryTree_Shuca,       OBJ_EVENT_PAL_TAG_BERRY_TREE_SHUCA},
+    {gObjectEventPal_BerryTree_Payapa,      OBJ_EVENT_PAL_TAG_BERRY_TREE_PAYAPA},
+    {gObjectEventPal_BerryTree_Tanga,       OBJ_EVENT_PAL_TAG_BERRY_TREE_TANGA},
+    {gObjectEventPal_BerryTree_Charti,      OBJ_EVENT_PAL_TAG_BERRY_TREE_CHARTI},
+    {gObjectEventPal_BerryTree_Kasib,       OBJ_EVENT_PAL_TAG_BERRY_TREE_KASIB},
     {gObjectEventPal_Substitute,            OBJ_EVENT_PAL_TAG_SUBSTITUTE},
     {gObjectEventPaletteEmotes,             OBJ_EVENT_PAL_TAG_EMOTES},
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
@@ -2485,7 +2508,7 @@ void UpdateLightSprite(struct Sprite *sprite) {
         return;
     }
 
-    if (gTimeOfDay != TIME_OF_DAY_NIGHT) {
+    if (gTimeOfDay != TIME_OF_DAY_NIGHT || !FlagGet(FLAG_VISIBLE_DAY_NIGHT_CYCLE)) {
         sprite->invisible = TRUE;
         return;
     }
@@ -2855,7 +2878,100 @@ static void SetBerryTreeGraphicsById(struct ObjectEvent *objectEvent, u8 berryId
     const u16 graphicsId = gBerryTreeObjectEventGraphicsIdTable[berryStage];
     const struct ObjectEventGraphicsInfo *graphicsInfo = GetObjectEventGraphicsInfo(graphicsId);
     struct Sprite *sprite = &gSprites[objectEvent->spriteId];
-    UpdateSpritePalette(&sObjectEventSpritePalettes[gBerryTreePaletteSlotTablePointers[berryId][berryStage]-2], sprite);
+
+    // Custom berry palettes
+    // yes i know i could do this a million better ways. let me liveeee
+    switch (berryId)
+    {
+        case 0: // cheri berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_CHERI)], sprite);
+            break;
+        case 1: // chesto berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_CHESTO)], sprite);
+            break;
+        case 2: // pecha berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_PECHA)], sprite);
+            break;
+        case 3: // rawst berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_RAWST)], sprite);
+            break;
+        case 4: // aspear berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_ASPEAR)], sprite);
+            break;
+        case 5: // leppa berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_LEPPA)], sprite);
+            break;
+        case 6: // oran berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_ORAN)], sprite);
+            break;
+        case 7: // persim berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_PERSIM)], sprite);
+            break;
+        case 8: // lum berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_LUM)], sprite);
+            break;
+        case 9: // sitrus berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_SITRUS)], sprite);
+            break;
+        case 35: // chilan berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_CHILAN)], sprite);
+            break;
+        case 36: // occa berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_OCCA)], sprite);
+            break;
+        case 37: // passho berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_PASSHO)], sprite);
+            break;
+        case 38: // wacan berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_WACAN)], sprite);
+            break;
+        case 39: // rindo berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_RINDO)], sprite);
+            break;
+        case 40: // yache berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_YACHE)], sprite);
+            break;
+        case 41: // chople berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_CHOPLE)], sprite);
+            break;
+        case 42: // kebia berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_KEBIA)], sprite);
+            break;
+        case 43: // shuca berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_SHUCA)], sprite);
+            break;
+        case 44: // coba berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_RAWST)], sprite);
+            break;
+        case 45: // payapa berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_PAYAPA)], sprite);
+            break;
+        case 46: // tanga berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_TANGA)], sprite);
+            break;
+        case 47: // charti berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_CHARTI)], sprite);
+            break;
+        case 48: // kasib berry
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_KASIB)], sprite);
+            break;
+        case 49: // haban berry (uses chople palette)
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_CHOPLE)], sprite);
+            break;
+        case 50: // colbur berry (uses kasib palette)
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_KASIB)], sprite);
+            break;
+        case 51: // babiri berry (uses charti palette)
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_CHARTI)], sprite);
+            break;
+        case 52: // roseli berry (uses payapa palette)
+            UpdateSpritePalette(&sObjectEventSpritePalettes[FindObjectEventPaletteIndexByTag(OBJ_EVENT_PAL_TAG_BERRY_TREE_PAYAPA)], sprite);
+            break;
+        default: // fallback to normal code for unmodified berry trees
+            UpdateSpritePalette(&sObjectEventSpritePalettes[gBerryTreePaletteSlotTablePointers[berryId][berryStage]-2], sprite);
+            break;
+    }
+
     sprite->oam.shape = graphicsInfo->oam->shape;
     sprite->oam.size = graphicsInfo->oam->size;
     sprite->images = gBerryTreePicTablePointers[berryId];

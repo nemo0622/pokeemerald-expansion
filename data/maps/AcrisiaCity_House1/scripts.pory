@@ -5,7 +5,7 @@ script AcrisiaCity_House1_EventScript_Man
     lock
     faceplayer
     speakername("Man")
-    msgbox(format("Another Agrias University student, eh? Nice to meet ya!\p The Ilios Region is ancient, but always changing. I hope ya find something new."))
+    msgbox(format("Another Acrisia University member, eh? Nice to meet ya!\p The Ilios Region is ancient, but always changing. I hope ya find something new."))
     closemessage
     release
     end
