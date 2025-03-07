@@ -42,7 +42,7 @@ PythiosTown_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 22 "data/maps/PythiosTown/scripts.pory"
 	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12
 # 23 "data/maps/PythiosTown/scripts.pory"
-	setobjectaswildencounter 21, ENCOUNTER_LAND
+	setobjectaswildencounter 19, ENCOUNTER_LAND
 	return
 
 PythiosTown_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
@@ -169,7 +169,7 @@ PythiosTown_EventScripts_NPC_Artist::
 # 110 "data/maps/PythiosTown/scripts.pory"
 	goto_if_unset FLAG_UNLOCKED_MOVE_RELEARNER, PythiosTown_EventScripts_NPC_Artist_3
 # 156 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_FacePlayer
+	applymovement 10, Common_Movement_FacePlayer
 # 157 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 158 "data/maps/PythiosTown/scripts.pory"
@@ -213,7 +213,7 @@ PythiosTown_EventScripts_NPC_Artist::
 	closemessage
 PythiosTown_EventScripts_NPC_Artist_1:
 # 224 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_FaceRight
+	applymovement 10, Common_Movement_FaceRight
 # 225 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 226 "data/maps/PythiosTown/scripts.pory"
@@ -228,13 +228,13 @@ PythiosTown_EventScripts_NPC_Artist_2:
 # 99 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 100 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_ExclamationMark
+	applymovement 10, Common_Movement_ExclamationMark
 # 101 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 102 "data/maps/PythiosTown/scripts.pory"
 	delay 20
 # 103 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_FacePlayer
+	applymovement 10, Common_Movement_FacePlayer
 # 104 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 105 "data/maps/PythiosTown/scripts.pory"
@@ -249,7 +249,7 @@ PythiosTown_EventScripts_NPC_Artist_2:
 
 PythiosTown_EventScripts_NPC_Artist_3:
 # 112 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_FacePlayer
+	applymovement 10, Common_Movement_FacePlayer
 # 113 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 114 "data/maps/PythiosTown/scripts.pory"
@@ -293,11 +293,11 @@ PythiosTown_EventScripts_NPC_Artist_3:
 
 PythiosTown_EventScripts_NPC_Artist_7:
 # 132 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_ExclamationMark
+	applymovement 10, Common_Movement_ExclamationMark
 # 133 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 134 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_JumpInPlaceRight
+	applymovement 10, Common_Movement_JumpInPlaceRight
 # 135 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 136 "data/maps/PythiosTown/scripts.pory"
@@ -309,7 +309,7 @@ PythiosTown_EventScripts_NPC_Artist_7:
 # 139 "data/maps/PythiosTown/scripts.pory"
 	delay 30
 # 140 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_FacePlayer
+	applymovement 10, Common_Movement_FacePlayer
 # 141 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 142 "data/maps/PythiosTown/scripts.pory"
@@ -339,7 +339,7 @@ PythiosTown_EventScripts_NPC_Artist_14:
 # 174 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 175 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_FaceRight
+	applymovement 10, Common_Movement_FaceRight
 # 176 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 177 "data/maps/PythiosTown/scripts.pory"
@@ -354,7 +354,7 @@ PythiosTown_EventScripts_NPC_Artist_17:
 # 185 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 186 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_FaceRight
+	applymovement 10, Common_Movement_FaceRight
 # 187 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 188 "data/maps/PythiosTown/scripts.pory"
@@ -369,7 +369,7 @@ PythiosTown_EventScripts_NPC_Artist_20:
 # 195 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 196 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_FaceRight
+	applymovement 10, Common_Movement_FaceRight
 # 197 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 198 "data/maps/PythiosTown/scripts.pory"
@@ -384,7 +384,7 @@ PythiosTown_EventScripts_NPC_Artist_22:
 # 209 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 210 "data/maps/PythiosTown/scripts.pory"
-	applymovement 12, Common_Movement_FaceRight
+	applymovement 10, Common_Movement_FaceRight
 # 211 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 212 "data/maps/PythiosTown/scripts.pory"
@@ -472,17 +472,17 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 282 "data/maps/PythiosTown/scripts.pory"
 	lockall
 # 283 "data/maps/PythiosTown/scripts.pory"
-	applymovement 15, Common_Movement_ExclamationMark
+	applymovement 13, Common_Movement_ExclamationMark
 # 284 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 285 "data/maps/PythiosTown/scripts.pory"
 	delay 30
 # 286 "data/maps/PythiosTown/scripts.pory"
-	applymovement 15, PythiosTown_Movement_FirstSabellaFanWalksToPlayer
+	applymovement 13, PythiosTown_Movement_FirstSabellaFanWalksToPlayer
 # 287 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 288 "data/maps/PythiosTown/scripts.pory"
-	applymovement 16, Common_Movement_WalkUp
+	applymovement 14, Common_Movement_WalkUp
 # 289 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 290 "data/maps/PythiosTown/scripts.pory"
@@ -500,7 +500,7 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 296 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 297 "data/maps/PythiosTown/scripts.pory"
-	applymovement 15, PythiosTown_Movement_FirstSabellaFanWalksAway
+	applymovement 13, PythiosTown_Movement_FirstSabellaFanWalksAway
 # 298 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 299 "data/maps/PythiosTown/scripts.pory"
@@ -512,13 +512,13 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 303 "data/maps/PythiosTown/scripts.pory"
 	delay 60
 # 304 "data/maps/PythiosTown/scripts.pory"
-	applymovement 16, Common_Movement_ExclamationMark
+	applymovement 14, Common_Movement_ExclamationMark
 # 305 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 306 "data/maps/PythiosTown/scripts.pory"
 	delay 30
 # 307 "data/maps/PythiosTown/scripts.pory"
-	applymovement 16, Common_Movement_FaceDown
+	applymovement 14, Common_Movement_FaceDown
 # 308 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 309 "data/maps/PythiosTown/scripts.pory"
@@ -528,7 +528,7 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 311 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 312 "data/maps/PythiosTown/scripts.pory"
-	applymovement 16, PythiosTown_Movement_SecondSabellaFanWalksAway
+	applymovement 14, PythiosTown_Movement_SecondSabellaFanWalksAway
 # 313 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 314 "data/maps/PythiosTown/scripts.pory"
@@ -548,15 +548,15 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 324 "data/maps/PythiosTown/scripts.pory"
 	delay 30
 # 325 "data/maps/PythiosTown/scripts.pory"
-	removeobject 15
+	removeobject 13
 # 326 "data/maps/PythiosTown/scripts.pory"
-	removeobject 16
+	removeobject 14
 # 327 "data/maps/PythiosTown/scripts.pory"
 	removeobject 3
 # 328 "data/maps/PythiosTown/scripts.pory"
-	removeobject 17
+	removeobject 15
 # 329 "data/maps/PythiosTown/scripts.pory"
-	removeobject 19
+	removeobject 16
 # 330 "data/maps/PythiosTown/scripts.pory"
 	setflag FLAG_MET_SABELLA_PYTHIOS_TOWN
 # 331 "data/maps/PythiosTown/scripts.pory"
@@ -666,7 +666,7 @@ PythiosTown_EventScripts_NPC_OldMan2::
 # 375 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 376 "data/maps/PythiosTown/scripts.pory"
-	applymovement 13, Common_Movement_FaceLeft
+	applymovement 11, Common_Movement_FaceLeft
 # 377 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 378 "data/maps/PythiosTown/scripts.pory"
@@ -686,7 +686,7 @@ PythiosTown_EventScripts_NPC_PsychicM::
 # 388 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 389 "data/maps/PythiosTown/scripts.pory"
-	applymovement 14, Common_Movement_FaceRight
+	applymovement 12, Common_Movement_FaceRight
 # 390 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 391 "data/maps/PythiosTown/scripts.pory"
@@ -765,7 +765,7 @@ PythiosTown_EventScripts_PIRAEUS_3:
 # 439 "data/maps/PythiosTown/scripts.pory"
 	delay 30
 # 440 "data/maps/PythiosTown/scripts.pory"
-	applymovement 20, Common_Movement_ExclamationMark
+	applymovement 17, Common_Movement_ExclamationMark
 # 441 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 442 "data/maps/PythiosTown/scripts.pory"

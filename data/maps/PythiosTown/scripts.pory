@@ -20,7 +20,7 @@ mapscripts PythiosTown_MapScripts {
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
-        setobjectaswildencounter(21, ENCOUNTER_LAND)
+        setobjectaswildencounter(19, ENCOUNTER_LAND)
     }
 }
 
@@ -97,10 +97,10 @@ script PythiosTown_EventScripts_NPC_Artist
         speakername("Artist")
         msgbox(format("A stoic man staring off to the distance...\p Think of the story this statue tells...\n A hero, lost to time...\p I need inspiration, a modern hero!"))
         closemessage
-        applymovement(12, Common_Movement_ExclamationMark)
+        applymovement(10, Common_Movement_ExclamationMark)
         waitmovement(0)
         delay(20)
-        applymovement(12, Common_Movement_FacePlayer)
+        applymovement(10, Common_Movement_FacePlayer)
         waitmovement(0)
         speakername("Artist")
         msgbox(format("Oh? And you, are you a young trainer? A new hero in-the-making?\p I see a Pokédex on you. Speak to me when you have {COLOR GREEN}20 Pokémon{COLOR DARK_GRAY} registered in your Pokédex. If you can give me inspiration, I can {COLOR GREEN}help your Pokémon{COLOR DARK_GRAY}!"))
@@ -109,7 +109,7 @@ script PythiosTown_EventScripts_NPC_Artist
     }
     elif(!flag(FLAG_UNLOCKED_MOVE_RELEARNER))
     {
-        applymovement(12, Common_Movement_FacePlayer)
+        applymovement(10, Common_Movement_FacePlayer)
         waitmovement(0)
         speakername("Artist")
         msgbox(format("Chaire, my young hero! I wonder, will we make statues of you someday?\p Have you completed my task? Let me see your Pokédex."))
@@ -129,15 +129,15 @@ script PythiosTown_EventScripts_NPC_Artist
 
         if(var(VAR_0x8009) >= 20) // caught over 20 mons
         {
-            applymovement(12, Common_Movement_ExclamationMark)
+            applymovement(10, Common_Movement_ExclamationMark)
             waitmovement(0)
-            applymovement(12, Common_Movement_JumpInPlaceRight)
+            applymovement(10, Common_Movement_JumpInPlaceRight)
             waitmovement(0)
             speakername("Artist")
             msgbox(format("Oh, visions of Pokémon and beauty flow through me! Be still, my beating heart!\p Calm me, sweet statue..."))
             closemessage
             delay(30)
-            applymovement(12, Common_Movement_FacePlayer)
+            applymovement(10, Common_Movement_FacePlayer)
             waitmovement(0)
             speakername("Artist")
             msgbox(format("Splendid! Fantastic! You've shown me more than I ever could have hoped!\p Please, young hero, allow me to help you.\n I can draw move directions, which can help {COLOR GREEN}Pokémon relearn old moves{COLOR DARK_GRAY}. Come visit me whenever you need!"))
@@ -153,7 +153,7 @@ script PythiosTown_EventScripts_NPC_Artist
     }
     else // did quests, unlocked move relearner, do that
     {
-        applymovement(12, Common_Movement_FacePlayer)
+        applymovement(10, Common_Movement_FacePlayer)
         waitmovement(0)
         speakername("Artist")
         msgbox(format("Chaire, young hero! Are you here for move drawings? They can help Pokémon {COLOR GREEN}relearn old moves{COLOR DARK_GRAY}!"), MSGBOX_YESNO)
@@ -172,7 +172,7 @@ script PythiosTown_EventScripts_NPC_Artist
                 speakername("Artist")
                 msgbox(format("Not today? That's okay, it's your journey! Come back when you want a Pokémon to remember a move."))
                 closemessage
-                applymovement(12, Common_Movement_FaceRight)
+                applymovement(10, Common_Movement_FaceRight)
                 waitmovement(0)
                 release
                 end
@@ -183,7 +183,7 @@ script PythiosTown_EventScripts_NPC_Artist
                 speakername("Artist")
                 msgbox(format("Ah, ever the hero, rushing right into things! I'm sorry, but I cannot teach an Egg to do anything more than sit there. Let me know when it hatches though, perhaps I can draw moves for it as it grows older!"))
                 closemessage
-                applymovement(12, Common_Movement_FaceRight)
+                applymovement(10, Common_Movement_FaceRight)
                 waitmovement(0)
                 release
                 end
@@ -193,7 +193,7 @@ script PythiosTown_EventScripts_NPC_Artist
                 speakername("Artist")
                 msgbox(format("Hmm... ehehe, this is a little embarrassing, young hero... but I don't have anything to teach this Pokémon! It doesn't respond to any of my move drawings.\p Come back with another Pokémon! Andio, goodbye, hero!"))
                 closemessage
-                applymovement(12, Common_Movement_FaceRight)
+                applymovement(10, Common_Movement_FaceRight)
                 waitmovement(0)
                 release
                 end
@@ -207,7 +207,7 @@ script PythiosTown_EventScripts_NPC_Artist
                 speakername("Artist")
                 msgbox(format("Not today? That's okay, it's your journey! Come back when you want a Pokémon to remember a move."))
                 closemessage
-                applymovement(12, Common_Movement_FaceRight)
+                applymovement(10, Common_Movement_FaceRight)
                 waitmovement(0)
                 release
                 end
@@ -221,7 +221,7 @@ script PythiosTown_EventScripts_NPC_Artist
         }
     }
 
-    applymovement(12, Common_Movement_FaceRight)
+    applymovement(10, Common_Movement_FaceRight)
     waitmovement(0)
     release
     end
@@ -280,12 +280,12 @@ script PythiosTown_EventScript_Dwebble
 script PythiosTown_EventScript_Trigger_SabellaIntroductionEvent
 {
     lockall
-    applymovement(15, Common_Movement_ExclamationMark)
+    applymovement(13, Common_Movement_ExclamationMark)
     waitmovement(0)
     delay(30)
-    applymovement(15, PythiosTown_Movement_FirstSabellaFanWalksToPlayer)
+    applymovement(13, PythiosTown_Movement_FirstSabellaFanWalksToPlayer)
     waitmovement(0)
-    applymovement(16, Common_Movement_WalkUp)
+    applymovement(14, Common_Movement_WalkUp)
     waitmovement(0)
     speakername("Mystical Woman")
     msgbox(format("YES!! Sabella said I'm guarenteed to win my next Pokémon battle! She's never wrong!"))
@@ -294,22 +294,22 @@ script PythiosTown_EventScript_Trigger_SabellaIntroductionEvent
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
-    applymovement(15, PythiosTown_Movement_FirstSabellaFanWalksAway)
+    applymovement(13, PythiosTown_Movement_FirstSabellaFanWalksAway)
     waitmovement(0)
     delay(60)
 
     applymovement(OBJ_EVENT_ID_PLAYER, PythiosTown_Movement_PlayerApproachesLine)
     waitmovement(0)
     delay(60)
-    applymovement(16, Common_Movement_ExclamationMark)
+    applymovement(14, Common_Movement_ExclamationMark)
     waitmovement(0)
     delay(30)
-    applymovement(16, Common_Movement_FaceDown)
+    applymovement(14, Common_Movement_FaceDown)
     waitmovement(0)
     speakername("Worker")
     msgbox(format("Sabella just read my future! She told me 'a big shake-up at work is coming'... that probably means a raise!\p ...Probably!"))
     closemessage
-    applymovement(16, PythiosTown_Movement_SecondSabellaFanWalksAway)
+    applymovement(14, PythiosTown_Movement_SecondSabellaFanWalksAway)
     waitmovement(0)
     delay(30)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
@@ -322,11 +322,11 @@ script PythiosTown_EventScript_Trigger_SabellaIntroductionEvent
 
     fadescreen(FADE_TO_BLACK)
     delay(30)
-    removeobject(15) // sabellas fans
-    removeobject(16)
+    removeobject(13) // sabellas fans
+    removeobject(14)
     removeobject(3) // sabella
-    removeobject(17) // sabella's pokémon
-    removeobject(19) // man blocking gym
+    removeobject(15) // sabella's pokémon
+    removeobject(16) // man blocking gym
     setflag(FLAG_MET_SABELLA_PYTHIOS_TOWN)
     delay(30)
     fadescreen(FADE_FROM_BLACK)
@@ -373,7 +373,7 @@ script PythiosTown_EventScripts_NPC_OldMan2
     speakername("Old Man")
     msgbox(format("Everyone seems to believe in Sabella and her visions. I'm not so sure, but my wife comes around to talk to her all the time. I'm waiting for her here."))
     closemessage
-    applymovement(13, Common_Movement_FaceLeft)
+    applymovement(11, Common_Movement_FaceLeft)
     waitmovement(0)
     release
     end
@@ -386,7 +386,7 @@ script PythiosTown_EventScripts_NPC_PsychicM
     speakername("Psychic")
     msgbox(format("I promise, Sabella's powers are real! She has the same powers as her Psychic-type and Ghost-type Pokémon!"))
     closemessage
-    applymovement(14, Common_Movement_FaceRight)
+    applymovement(12, Common_Movement_FaceRight)
     waitmovement(0)
     release
     end
@@ -437,7 +437,7 @@ script PythiosTown_EventScripts_PIRAEUS
             closemessage
             setflag(FLAG_GOT_BADGE_FOR_PIRAEUS) // means player can fight Team Chimera east of Pythios Town
             delay(30)
-            applymovement(20, Common_Movement_ExclamationMark)
+            applymovement(17, Common_Movement_ExclamationMark)
             waitmovement(0)
             delay(20)
             speakername("Piraeus")

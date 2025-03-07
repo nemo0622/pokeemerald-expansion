@@ -50,6 +50,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
     - IMPLEMENT "Gen 5-ish" party menu & make GBC graphics devamp for it
+    - Fill out more Pokédex/Gym rewards from Prof. Elia, Rania, and Niko (reward ideas down in "EVENTS AND STUFF" section lol)
     - Prepare for Demo release
         - Disable debug functions
         - Create "Demo" gfx for version # on title screen
