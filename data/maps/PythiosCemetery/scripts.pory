@@ -1,6 +1,6 @@
 mapscripts PythiosCemetery_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
-        setflashlevel(4)
+        setflashlevel(3)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)

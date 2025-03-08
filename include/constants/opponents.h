@@ -68,9 +68,9 @@
 #define TRAINER_KALAMI_GYM_REX                       62
 #define TRAINER_KALAMI_GYM_DANIEL                       63
 #define TRAINER_KALAMI_GYM_TASOULA                      64
-#define TRAINER_SIMON                        65
-#define TRAINER_CHARLIE                      66
-#define TRAINER_RICKY_2                      67
+#define TRAINER_ERINYSPATH_E_LUEROI                        65
+#define TRAINER_ERINYSPATH_E_KAYLEY                      66
+#define TRAINER_ERINYSPATH_E_ROGER                      67
 #define TRAINER_RICKY_3                      68
 #define TRAINER_RICKY_4                      69
 #define TRAINER_RICKY_5                      70

@@ -49,7 +49,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - IMPLEMENT "Gen 5-ish" party menu & make GBC graphics devamp for it
+    - Add a few trainers to Erinys Path East to fill out the end of the demo
     - Fill out more Pokédex/Gym rewards from Prof. Elia, Rania, and Niko (reward ideas down in "EVENTS AND STUFF" section lol)
     - Prepare for Demo release
         - Disable debug functions
@@ -138,16 +138,17 @@ Many, many talented developers and artists are responsible for making this proje
 - Name Box branch by Tustin2121
 - Different Wild Encounter Tables by Bivurnum
 - New Shop UI by mudskip
-- New Continue Menu UI by Archie
+- New Continue Menu UI and Party Menu by Archie
 - Overworld Encounters by [HashtagMarky](https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters)
 - GSC/HGSS Ruins of Alph Sliding Puzzles by [Spherical Ice](https://www.pokecommunity.com/threads/ruins-of-alph-sliding-puzzles-pokefirered.463032/)
 - Town Map feature port by Vol
 
 ### Graphics
 - Tilesets:
-    - Most basic overworld sprites purchased from Arex and Zaebucca on itch.io
+    - Most basic overworld sprites purchased from Zaebucca and Arex on itch.io
     - Pokémon Center, Mart, and Gym Buildings by TrainerDX
     - Some GBC-style default houses by TrainerDX
+    - Broken pillar tiles by Hek-el-Grande on DeviantArt
 - Pokémon Sprites:
     Numbers below match sprites on the official Pokémon Lazarus Ilios Pokédex Image:
     1. Sprite created/edited by Nemo622 (edits based on pokeemerald-expansion sprites)

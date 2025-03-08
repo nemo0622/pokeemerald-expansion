@@ -1,1 +1,10 @@
 mapscripts ErinysPath_West_MapScripts {}
+
+script ErinysPath_West_SignBlockingDemoProgress
+{
+    lock
+    msgbox(format("This is the end of the Pokémon Lazarus Demo content.\p Join the Nemo622 Rom Hack Development Discord server to stay up-to-date with the official release!\p Thank you for playing! -Nemo"))
+    closemessage
+    release
+    end
+}

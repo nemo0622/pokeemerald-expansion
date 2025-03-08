@@ -5,7 +5,7 @@ PythiosCemetery_MapScripts::
 
 PythiosCemetery_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 3 "data/maps/PythiosCemetery/scripts.pory"
-	setflashlevel 4
+	setflashlevel 3
 # 4 "data/maps/PythiosCemetery/scripts.pory"
 	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1
 # 5 "data/maps/PythiosCemetery/scripts.pory"

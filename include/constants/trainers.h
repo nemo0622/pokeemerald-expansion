@@ -25,10 +25,10 @@
 #define TRAINER_PIC_SWIMMER_M              7
 #define TRAINER_PIC_MAGMA_GRUNT_M          8
 #define TRAINER_PIC_EXPERT_M               9
-#define TRAINER_PIC_CHIMERA_ADMIN_M         10 // replaces AQUA_ADMIN_M
+#define TRAINER_PIC_CHIMERA_ADMIN_M       10 // replaces AQUA_ADMIN_M
 #define TRAINER_PIC_BLACK_BELT            11
-#define TRAINER_PIC_CHIMERA_ADMIN_F        12 // replaces AQUA_ADMIN_F
-#define TRAINER_PIC_CHIMERA_LEADER      13 // replaces AQUA_LEADER_ARCHIE
+#define TRAINER_PIC_CHIMERA_ADMIN_F       12 // replaces AQUA_ADMIN_F
+#define TRAINER_PIC_CHIMERA_LEADER        13 // replaces AQUA_LEADER_ARCHIE
 #define TRAINER_PIC_HEX_MANIAC            14
 #define TRAINER_PIC_AROMA_LADY            15
 #define TRAINER_PIC_RUIN_MANIAC           16
@@ -40,7 +40,7 @@
 #define TRAINER_PIC_BEAUTY                22
 #define TRAINER_PIC_RICH_BOY              23
 #define TRAINER_PIC_EXPERT_F              24
-#define TRAINER_PIC_PERFORMER_M            25
+#define TRAINER_PIC_PERFORMER_M           25
 #define TRAINER_PIC_MAGMA_GRUNT_F         26
 #define TRAINER_PIC_GUITARIST             27
 #define TRAINER_PIC_KINDLER               28

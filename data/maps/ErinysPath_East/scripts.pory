@@ -1,4 +1,23 @@
-mapscripts ErinysPath_East_MapScripts {}
+mapscripts ErinysPath_East_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(5, ENCOUNTER_LAND)
+        setobjectaswildencounter(6, ENCOUNTER_LAND)
+        setobjectaswildencounter(7, ENCOUNTER_LAND)
+        setobjectaswildencounter(8, ENCOUNTER_LAND)
+    }
+}
 
 script ErinysPath_East_EventScript_Basculin
 {
@@ -136,4 +155,83 @@ movement ErinysPath_East_Movement_PIRAEUSExit
     walk_down
     walk_left * 4
     step_end
+}
+
+// ---------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------
+
+script ErinysPath_East_EventScript_Trainer_ErinysPath_E_Lueroi
+{
+    trainerbattle_single(TRAINER_ERINYSPATH_E_LUEROI, ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiIntro, ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiDefeat)
+    speakername("Lueroi")
+    msgbox(format("I'm originally from the Kanto Region. That's a long way from here!"))
+    closemessage
+    release
+    end
+}
+text ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiIntro
+{
+    format("It's a long road from here to Sofos City. The views are worth the journey, though!")
+}
+text ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiDefeat
+{
+    format("Back to the Pokémon Center for me.")
+}
+
+script ErinysPath_East_EventScript_Trainer_ErinysPath_E_Kayley
+{
+    trainerbattle_single(TRAINER_ERINYSPATH_E_KAYLEY, ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyIntro, ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyDefeat)
+    speakername("Kayley")
+    msgbox(format("I hear they hold Pokémon Contests in the Hoenn Region. I wonder if they hold Contests in Ilios?"))
+    closemessage
+    release
+    end
+}
+text ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyIntro
+{
+    format("Help my Pokémon train for our show!")
+}
+text ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyDefeat
+{
+    format("Phew, great vocals!")
+}
+
+script ErinysPath_East_EventScript_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("Some of the wild Pokémon here are... weird. They looked like one thing, but I caught it, and it turned into a different Pokémon!"))
+    closemessage
+    release
+    end
+}
+
+script ErinysPath_East_EventScript_Trainer_ErinysPath_E_Roger
+{
+    trainerbattle_single(TRAINER_ERINYSPATH_E_ROGER, ErinysPath_East_Text_Trainer_ErinysPath_E_RogerIntro, ErinysPath_East_Text_Trainer_ErinysPath_E_RogerDefeat)
+    speakername("Roger")
+    msgbox(format("Not many people pass through this way. Most trade goes from Sofos City, around the south of Ilios, into the port at Pythios Town."))
+    closemessage
+    release
+    end
+}
+text ErinysPath_East_Text_Trainer_ErinysPath_E_RogerIntro
+{
+    format("Gosh, this patrol is boring. Let's spice it up!")
+}
+text ErinysPath_East_Text_Trainer_ErinysPath_E_RogerDefeat
+{
+    format("Darn! Out of energy!")
+}
+
+script ErinysPath_East_EventScript_Man2
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("In some areas, totally different Pokémon come out during the day versus the night. For example, Solosis is only active in the day, but Gothita comes out at night!"))
+    closemessage
+    release
+    end
 }
