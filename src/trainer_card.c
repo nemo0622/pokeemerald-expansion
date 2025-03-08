@@ -666,7 +666,7 @@ u32 CountPlayerTrainerStars(void)
 
     if (GetGameStat(GAME_STAT_ENTERED_HOF)) // entered hall of fame
         stars++;
-    if (HasAllHoennMons()) // completed dex
+    if (HasAllHoennMons() && FlagGet(FLAG_UNIVERSITY_REWARD_ELIA_10)) // completed dex
         stars++;
     if (FlagGet(FLAG_GOT_BERRY_CLUB_REWARD_200)) // planted over 200 trees
         stars++;

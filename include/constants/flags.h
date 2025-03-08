@@ -45,14 +45,14 @@
 // Acrisia University Reward Flags
 #define FLAG_UNIVERSITY_REWARD_ELIA_01    0x20
 #define FLAG_UNIVERSITY_REWARD_ELIA_02    0x21
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
+#define FLAG_UNIVERSITY_REWARD_ELIA_03    0x22
+#define FLAG_UNIVERSITY_REWARD_ELIA_04    0x23
+#define FLAG_UNIVERSITY_REWARD_ELIA_05    0x24
+#define FLAG_UNIVERSITY_REWARD_ELIA_06    0x25
+#define FLAG_UNIVERSITY_REWARD_ELIA_07    0x26
+#define FLAG_UNIVERSITY_REWARD_ELIA_08    0x27
+#define FLAG_UNIVERSITY_REWARD_ELIA_09    0x28
+#define FLAG_UNIVERSITY_REWARD_ELIA_10    0x29
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag

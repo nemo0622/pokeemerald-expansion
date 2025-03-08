@@ -518,7 +518,18 @@ script JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)
     speakername("Artist")
-    msgbox(format("Here darling, hand me your Trainer Card.\p... ... ...\p There, you've {COLOR GREEN}earned a star{COLOR DARK_GRAY} for your Trainer Card. That represents your status as an elite Berry grower!\p Thank you for everything you've done, {PLAYER}. Remember to never stop caring about the environment! And of course, keep coming to visit us, darling!"))
+    msgbox(format("{PLAYER}, I've had an idea! Here darling, hand me your Trainer Card."))
+    closemessage
+
+    delay(30)
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox(format("{PLAYER} received a Trainer Card Gold Star!"))
+    waitfanfare
+    closemessage
+    delay(30)
+
+    speakername("Artist")
+    msgbox(format("There, you've {COLOR GREEN}earned a star{COLOR DARK_GRAY} for your Trainer Card. That represents your status as an elite Berry grower!\p Thank you for everything you've done, {PLAYER}. Remember to never stop caring about the environment! And of course, keep coming to visit us, darling!"))
     closemessage
 
     warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)

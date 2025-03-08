@@ -911,35 +911,53 @@ JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward::
 # 522 "data/maps/JusmailTown_House1/scripts.pory"
 	closemessage
 # 524 "data/maps/JusmailTown_House1/scripts.pory"
-	warpsilent MAP_JUSMAIL_TOWN_HOUSE1, 6, 9
+	delay 30
 # 525 "data/maps/JusmailTown_House1/scripts.pory"
-	waitstate
+	playfanfare MUS_OBTAIN_ITEM
 # 526 "data/maps/JusmailTown_House1/scripts.pory"
-	goto JusmailTown_House1_EventScript_EndScript
+	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_7
 # 527 "data/maps/JusmailTown_House1/scripts.pory"
+	waitfanfare
+# 528 "data/maps/JusmailTown_House1/scripts.pory"
+	closemessage
+# 529 "data/maps/JusmailTown_House1/scripts.pory"
+	delay 30
+# 531 "data/maps/JusmailTown_House1/scripts.pory"
+	speakername JusmailTown_House1_EventScript_EnterBuildingForFirstTime_Text_2
+# 532 "data/maps/JusmailTown_House1/scripts.pory"
+	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_8
+# 533 "data/maps/JusmailTown_House1/scripts.pory"
+	closemessage
+# 535 "data/maps/JusmailTown_House1/scripts.pory"
+	warpsilent MAP_JUSMAIL_TOWN_HOUSE1, 6, 9
+# 536 "data/maps/JusmailTown_House1/scripts.pory"
+	waitstate
+# 537 "data/maps/JusmailTown_House1/scripts.pory"
+	goto JusmailTown_House1_EventScript_EndScript
+# 538 "data/maps/JusmailTown_House1/scripts.pory"
 	releaseall
 	end
 
 
 JusmailTown_House1_EventScript_CheckBerryTreeRecord::
-# 535 "data/maps/JusmailTown_House1/scripts.pory"
+# 546 "data/maps/JusmailTown_House1/scripts.pory"
 	lock
-# 536 "data/maps/JusmailTown_House1/scripts.pory"
+# 547 "data/maps/JusmailTown_House1/scripts.pory"
 	compare VAR_BERRY_TREES_PLANTED, 0
 	goto_if_eq JusmailTown_House1_EventScript_CheckBerryTreeRecord_2
-# 542 "data/maps/JusmailTown_House1/scripts.pory"
+# 553 "data/maps/JusmailTown_House1/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_BERRY_TREES_PLANTED
 JusmailTown_House1_EventScript_CheckBerryTreeRecord_1:
-# 544 "data/maps/JusmailTown_House1/scripts.pory"
+# 555 "data/maps/JusmailTown_House1/scripts.pory"
 	msgbox JusmailTown_House1_EventScript_CheckBerryTreeRecord_Text_1
-# 545 "data/maps/JusmailTown_House1/scripts.pory"
+# 556 "data/maps/JusmailTown_House1/scripts.pory"
 	closemessage
-# 546 "data/maps/JusmailTown_House1/scripts.pory"
+# 557 "data/maps/JusmailTown_House1/scripts.pory"
 	release
 	end
 
 JusmailTown_House1_EventScript_CheckBerryTreeRecord_2:
-# 538 "data/maps/JusmailTown_House1/scripts.pory"
+# 549 "data/maps/JusmailTown_House1/scripts.pory"
 	bufferstring STR_VAR_1, JusmailTown_House1_EventScript_CheckBerryTreeRecord_Text_0
 	goto JusmailTown_House1_EventScript_CheckBerryTreeRecord_1
 
@@ -1237,8 +1255,16 @@ JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_5:
 
 JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_6:
 # 521 "data/maps/JusmailTown_House1/scripts.pory"
-	.string "Here darling, hand me your Trainer Card.\p"
-	.string "... ... ...\p"
+	.string "{PLAYER}, I've had an idea! Here\n"
+	.string "darling, hand me your Trainer Card.$"
+
+JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_7:
+# 526 "data/maps/JusmailTown_House1/scripts.pory"
+	.string "{PLAYER} received a Trainer Card Gold\n"
+	.string "Star!$"
+
+JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_8:
+# 532 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "There, you've {COLOR GREEN}earned a star{COLOR DARK_GRAY} for your\n"
 	.string "Trainer Card. That represents your\l"
 	.string "status as an elite Berry grower!\p"
@@ -1248,11 +1274,11 @@ JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_6:
 	.string "course, keep coming to visit us, darling!$"
 
 JusmailTown_House1_EventScript_CheckBerryTreeRecord_Text_0:
-# 538 "data/maps/JusmailTown_House1/scripts.pory"
+# 549 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "0$"
 
 JusmailTown_House1_EventScript_CheckBerryTreeRecord_Text_1:
-# 544 "data/maps/JusmailTown_House1/scripts.pory"
+# 555 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "Jusmail Town Berry Club - Berry Tree\n"
 	.string "Records\p"
 	.string "{PLAYER}'s Trees: {STR_VAR_1}\n"

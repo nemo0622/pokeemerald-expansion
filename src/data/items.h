@@ -8780,7 +8780,7 @@ const struct Item gItemsInfo[] =
     [ITEM_EVIOLITE] =
     {
         .name = _("Eviolite"),
-        .price = (I_PRICE >= GEN_9) ? 50000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = 25000,
         .holdEffect = HOLD_EFFECT_EVIOLITE,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(
@@ -10443,9 +10443,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM04"),
         .price = 3000,
         .description = COMPOUND_STRING(
+            "Move: Calm Mind\n"
             "Raises Sp. Atk and\n"
-            "Sp. Def by focusing\n"
-            "the mind."),
+            "Sp. Def."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10799,9 +10799,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM27"),
         .price = 1000,
         .description = COMPOUND_STRING(
-            "The more the user\n"
-            "likes you, the more\n"
-            "powerful this move."),
+            "Move: Return\n"
+            "Channels positivity\n"
+            "into an attack."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11055,9 +11055,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM44"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "The user sleeps for\n"
-            "2 turns to restore\n"
-            "health and status."),
+            "Move: Rest\n"
+            "User sleeps 2 turns\n"
+            "to restore health."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11763,9 +11763,9 @@ const struct Item gItemsInfo[] =
         .name = _("HM01"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Attacks the foe\n"
-            "with sharp blades\n"
-            "or claws."),
+            "Move: Cut\n"
+            "Chops foes or\n"
+            "small trees."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11778,9 +11778,9 @@ const struct Item gItemsInfo[] =
         .name = _("HM02"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Flies up on the\n"
-            "first turn, then\n"
-            "attacks next turn."),
+            "Move: Fly\n"
+            "Two-turn attack or\n"
+            "fast travel."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11793,9 +11793,9 @@ const struct Item gItemsInfo[] =
         .name = _("HM03"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Creates a huge\n"
-            "wave, then crashes\n"
-            "it down on the foe."),
+            "Move: Surf\n"
+            "Creates a large wave\n"
+            "or rides the water."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11808,9 +11808,9 @@ const struct Item gItemsInfo[] =
         .name = _("HM04"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Builds enormous\n"
-            "power, then slams\n"
-            "the foe."),
+            "Move: Strength\n"
+            "Uses power to hit\n"
+            "foe or move stone."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11823,9 +11823,9 @@ const struct Item gItemsInfo[] =
         .name = _("HM05"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Looses a powerful\n"
-            "blast of light that\n"
-            "reduces accuracy."),
+            "Move: Flash\n"
+            "Lights up area and\n"
+            "hurts eyes."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11838,9 +11838,9 @@ const struct Item gItemsInfo[] =
         .name = _("HM06"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A rock-crushingly\n"
-            "tough attack that\n"
-            "may lower Defense."),
+            "Move: Rock Smash\n"
+            "A hit that breaks\n"
+            "rocks and drops Def."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11853,8 +11853,8 @@ const struct Item gItemsInfo[] =
         .name = _("HM07"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Attacks the foe\n"
-            "with enough power\n"
+            "Move: Waterfall\n"
+            "Uses strong power\n"
             "to climb waterfalls."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
@@ -11868,9 +11868,9 @@ const struct Item gItemsInfo[] =
         .name = _("HM08"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Dives underwater\n"
-            "the 1st turn, then\n"
-            "attacks next turn."),
+            "Move: Dive\n"
+            "Two-turn attack by\n"
+            "hiding underwater."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
