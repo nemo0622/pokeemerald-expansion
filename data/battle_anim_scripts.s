@@ -27455,10 +27455,10 @@ ConfusionEffect:
 	return
 
 SetPsychicBackground:
-	fadetobg BG_PSYCHIC
-	waitbgfadeout
-	createvisualtask AnimTask_SetPsychicBackground, 5
-	waitbgfadein
+	@ fadetobg BG_PSYCHIC
+	@ waitbgfadeout
+	@ createvisualtask AnimTask_SetPsychicBackground, 5
+	@ waitbgfadein
 	return
 
 UnsetPsychicBg:

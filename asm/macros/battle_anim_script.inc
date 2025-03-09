@@ -111,9 +111,10 @@
 	.4byte \ptr
 	.endm
 
+	@ FUTURE JACK / NEMO622! I commented this out to stop battle background changing (like when using shadow ball). Uncomment if issues happen!
 	.macro fadetobg bg:req
-	.byte 0x14
-	.byte \bg
+	@ .byte 0x14
+	@ .byte \bg
 	.endm
 
 	.macro restorebg
@@ -208,11 +209,12 @@
 	.4byte \ptr
 	.endm
 
+	@ FUTURE JACK / NEMO622! I commented this out to stop battle background changing (like when using shadow ball). Uncomment if issues happen!
 	.macro fadetobgfromset bgOpponent:req, bgPlayer:req, bgContest:req
-	.byte 0x25
-	.byte \bgOpponent
-	.byte \bgPlayer
-	.byte \bgContest
+	@ .byte 0x25
+	@ .byte \bgOpponent
+	@ .byte \bgPlayer
+	@ .byte \bgContest
 	.endm
 
 	.macro panse_adjustnone se:req, currentPan:req, targetPan:req, incrementPan:req, delay:req
