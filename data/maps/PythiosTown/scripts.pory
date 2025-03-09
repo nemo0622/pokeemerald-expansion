@@ -320,7 +320,7 @@ script PythiosTown_EventScript_Trigger_SabellaIntroductionEvent
     msgbox(format("Ah... {PLAYER}, yes?\p How do I know your name? I know much and more, young trainer. My name is Sabella, the spiritual guide and {COLOR GREEN}Gym Leader of Pythios Town{COLOR DARK_GRAY}.\p You're here for your third Gym Challenge. I sense a great battle on the horizon... I shall be {COLOR GREEN}in my Gym{COLOR DARK_GRAY}. I await your challenge."))
     closemessage
 
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     delay(30)
     removeobject(13) // sabellas fans
     removeobject(14)
@@ -329,7 +329,7 @@ script PythiosTown_EventScript_Trigger_SabellaIntroductionEvent
     removeobject(16) // man blocking gym
     setflag(FLAG_MET_SABELLA_PYTHIOS_TOWN)
     delay(30)
-    fadescreen(FADE_FROM_BLACK)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
     delay(20)
 
     releaseall
@@ -433,7 +433,7 @@ script PythiosTown_EventScripts_PIRAEUS
         else // got badge
         {
             speakername("Strange Sailor")
-            msgbox(format("Hey, you got the Gym Badge! You must be pretty strong.\p So look, here's my situation. Some Team Chimera thugs wanted to take my precious, gorgeous, perfect boat! I took one down with my Pokémon, but they called for backup from an Admin, so now I'm stuck hiding out here.\p Last I saw, the Team Chimera Admin was waiting to catch me leaving {COLOR GREEN}east of Pythios Town{COLOR DARK_GRAY}. Please, help me out here!"))
+            msgbox(format("Hey, you got the Gym Badge! You must be pretty strong.\p So look, here's my situation. Some Team Chimera thugs wanted to take my precious, gorgeous, perfect boat! I fought with the Admin and took down their strongest Pokémon, but I lost and had to run. Now I'm hiding here, doing what I can to protect my boat.\p Last I saw, the Team Chimera Admin was waiting to catch me leaving {COLOR GREEN}east of Pythios Town{COLOR DARK_GRAY}. Please, help me out here!"))
             closemessage
             setflag(FLAG_GOT_BADGE_FOR_PIRAEUS) // means player can fight Team Chimera east of Pythios Town
             delay(30)

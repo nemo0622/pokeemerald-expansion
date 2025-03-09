@@ -417,8 +417,8 @@ ErinysPath_East_EventScript_ChimeraWalrein_Text_2:
 	.string "around Pythios Town, and I think I saw\l"
 	.string "you hanging around that Piraeus guy!\l"
 	.string "That fool wouldn't donate his ratty\l"
-	.string "little boat to our cause, then took a\l"
-	.string "Team Chimera member by surprise!\p"
+	.string "little boat to our cause, then took me\l"
+	.string "by surprise!\p"
 	.string "I'll destroy you, then I'll take down\n"
 	.string "Piraeus!$"
 

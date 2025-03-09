@@ -3128,7 +3128,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1331
-            .species = SPECIES_NOCTOWL,
+            .species = SPECIES_HOOTHOOT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1333
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -3324,7 +3324,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 1411
-                MOVE_REVELATION_DANCE,
+                MOVE_REVELATION_STEP,
                 MOVE_WING_ATTACK,
                 MOVE_HELPING_HAND,
                 MOVE_TEETER_DANCE,
@@ -3383,7 +3383,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 1436
-                MOVE_REVELATION_DANCE,
+                MOVE_REVELATION_STEP,
                 MOVE_WING_ATTACK,
                 MOVE_HELPING_HAND,
                 MOVE_FEATHER_DANCE,
@@ -3479,7 +3479,7 @@ F_TRAINER_FEMALE |
 #line 1479
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 1478
-            .lvl = 21,
+            .lvl = 19,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -3497,7 +3497,7 @@ F_TRAINER_FEMALE |
 #line 1487
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 1486
-            .lvl = 21,
+            .lvl = 18,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -3682,7 +3682,7 @@ F_TRAINER_FEMALE |
 #line 1566
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 1565
-            .lvl = 21,
+            .lvl = 19,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -3702,7 +3702,7 @@ F_TRAINER_FEMALE |
 #line 1574
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 1573
-            .lvl = 21,
+            .lvl = 18,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {

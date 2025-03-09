@@ -123,9 +123,9 @@ GREEK PHRASES AND STUFF:
     - Preview 03 (01/??/25) - Pokémon Lazarus Rename Reveal + Seaglass Feature Ports - shows Pinball, Pokémon type changes, and Wishing Well
 
 ## Known Bugs & Problems
-- DexNav chain count and directional arrow not shown correctly when hunting
-- When all Pokédex flags set, Caught Pokémon icon in battle appears twice
-- Water surfing encounter background palette messed up, see in game
+- DexNav chain count and directional arrow not shown when hunting
+- When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
+    - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)

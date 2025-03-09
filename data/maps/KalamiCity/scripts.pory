@@ -48,6 +48,8 @@ script KalamiCity_EventScript_Piraeus
 
 script Common_EventScript_Piraeus
 {
+    lock
+    faceplayer
     speakername("Piraeus")
     msgbox(format("Chaire, {PLAYER}! Where are we going today?"))
     

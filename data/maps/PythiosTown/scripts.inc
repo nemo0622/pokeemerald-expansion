@@ -544,7 +544,7 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 321 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 323 "data/maps/PythiosTown/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 324 "data/maps/PythiosTown/scripts.pory"
 	delay 30
 # 325 "data/maps/PythiosTown/scripts.pory"
@@ -562,7 +562,7 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 331 "data/maps/PythiosTown/scripts.pory"
 	delay 30
 # 332 "data/maps/PythiosTown/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 333 "data/maps/PythiosTown/scripts.pory"
 	delay 20
 # 335 "data/maps/PythiosTown/scripts.pory"
@@ -1123,9 +1123,10 @@ PythiosTown_EventScripts_PIRAEUS_Text_4:
 	.string "So look, here's my situation. Some Team\n"
 	.string "Chimera thugs wanted to take my\l"
 	.string "precious, gorgeous, perfect boat! I\l"
-	.string "took one down with my Pokémon, but they\l"
-	.string "called for backup from an Admin, so now\l"
-	.string "I'm stuck hiding out here.\p"
+	.string "fought with the Admin and took down\l"
+	.string "their strongest Pokémon, but I lost and\l"
+	.string "had to run. Now I'm hiding here, doing\l"
+	.string "what I can to protect my boat.\p"
 	.string "Last I saw, the Team Chimera Admin was\n"
 	.string "waiting to catch me leaving {COLOR GREEN}east of\l"
 	.string "Pythios Town{COLOR DARK_GRAY}. Please, help me out here!$"

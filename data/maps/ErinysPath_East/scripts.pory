@@ -63,7 +63,7 @@ script ErinysPath_East_EventScript_ChimeraWalrein
         waitmovement(0)
         delay(30)
         speakername("Chimera Admin")
-        msgbox(format("Hold it right there... I've been scouting around Pythios Town, and I think I saw you hanging around that Piraeus guy! That fool wouldn't donate his ratty little boat to our cause, then took a Team Chimera member by surprise!\p I'll destroy you, then I'll take down Piraeus!"))
+        msgbox(format("Hold it right there... I've been scouting around Pythios Town, and I think I saw you hanging around that Piraeus guy! That fool wouldn't donate his ratty little boat to our cause, then took me by surprise!\p I'll destroy you, then I'll take down Piraeus!"))
         closemessage
         if(var(VAR_DIFFICULTY) == 0)
         {
