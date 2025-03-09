@@ -71,6 +71,10 @@ MAJOR TODOS:
 - Implement Biv's Fishing Minigame
     - Maybe also that upgrade-able fishing rod thing?
     - Wait until treasure catching is implemented because that's so cool!
+- Mudskip's Outfit system: https://github.com/mudskipper13/pokeemerald/tree/feature/outfits-system-rhh?tab=readme-ov-file
+    - Outfits: Default (Musa & Harper), Calem & Serena (unlocked on catching/choosing a Gen 6 starter), USUM Protagonists (unlocked w/ Gen 7 starter), Arven & Nemona (unlocked w/ Gen 9 starter), Yellow (unlocked w/ catching a Pikachu). Plus a few basic variant customizations for Musa and Harper which can be earned or bought from vendors.
+- Mudskip's GSC Battle Background code: https://github.com/mudskipper13/pokeemerald/commits/battle-bg-option/
+    - Also implement the second options page, and move the computer options (difficulty, visible day/night) from Acrisia University to the options menu
 
 
 GREEK PHRASES AND STUFF:
