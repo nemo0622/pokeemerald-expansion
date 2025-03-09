@@ -2,6 +2,7 @@
 #include "sprite.h"
 #include "main.h"
 #include "palette.h"
+#include "util.h"
 
 #define MAX_SPRITE_COPY_REQUESTS 64
 
@@ -1782,4 +1783,27 @@ static const u8 sSpanPerImage[4][4] =
 u32 GetSpanPerImage(u32 shape, u32 size)
 {
     return sSpanPerImage[shape][size];
+}
+
+u8 LoadUniqueSpritePalette(const struct SpritePalette *palette, u16 species, u32 personality, bool8 isShiny)
+{
+    u8 index = IndexOfSpritePaletteTag(palette->tag);
+
+    //if (index != 0xFF)
+    //    return index;
+
+    index = IndexOfSpritePaletteTag(0xFFFF);
+
+    if (index == 0xFF)
+    {
+        return 0xFF;
+    }
+    else
+    {
+        sSpritePaletteTags[index] = palette->tag;
+        DoLoadSpritePalette(palette->data, PLTT_ID(index));
+        UniquePalette(OBJ_PLTT_ID(index), species, personality, isShiny);
+        CpuCopy32(gPlttBufferFaded + OBJ_PLTT_ID(index), gPlttBufferUnfaded + OBJ_PLTT_ID(index), 32);
+        return index;
+    }
 }

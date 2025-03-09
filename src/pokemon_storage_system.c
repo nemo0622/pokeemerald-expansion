@@ -36,6 +36,7 @@
 #include "text.h"
 #include "text_window.h"
 #include "trig.h"
+#include "util.h"
 #include "walda_phrase.h"
 #include "window.h"
 #include "constants/form_change_types.h"
@@ -4029,6 +4030,7 @@ static void LoadDisplayMonGfx(u16 species, u32 pid)
         LZ77UnCompWram(sStorage->displayMonPalette, sStorage->displayMonPalBuffer);
         CpuCopy32(sStorage->tileBuffer, sStorage->displayMonTilePtr, MON_PIC_SIZE);
         LoadPalette(sStorage->displayMonPalBuffer, sStorage->displayMonPalOffset, PLTT_SIZE_4BPP);
+        UniquePalette(sStorage->displayMonPalOffset, species, pid, (bool8)sStorage->filler2[0]);
         sStorage->displayMonSprite->invisible = FALSE;
     }
     else
@@ -7003,6 +7005,7 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
             sStorage->displayMonPalette = GetMonFrontSpritePal(mon);
             gender = GetMonGender(mon);
             sStorage->displayMonItemId = GetMonData(mon, MON_DATA_HELD_ITEM);
+            sStorage->filler2[0] = IsMonShiny(mon);
         }
     }
     else if (mode == MODE_BOX)
@@ -7028,6 +7031,7 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
             sStorage->displayMonPalette = GetMonSpritePalFromSpeciesAndPersonality(sStorage->displayMonSpecies, isShiny, sStorage->displayMonPersonality);
             gender = GetGenderFromSpeciesAndPersonality(sStorage->displayMonSpecies, sStorage->displayMonPersonality);
             sStorage->displayMonItemId = GetBoxMonData(boxMon, MON_DATA_HELD_ITEM);
+            sStorage->filler2[0] = isShiny;
         }
     }
     else

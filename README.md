@@ -93,7 +93,8 @@ GREEK PHRASES AND STUFF:
         - Niko provides unique Pokéballs + Catching Charm, eventually becomes a Pokéball shop
     - MISSING IMPORTANT BUILDINGS / LOCATIONS / UNLOCKS
         - Daycare for Pokémon Breeding (Erynis Path? could be cute)
-        - Contest Hall (Sofos City?)
+        - Contest Hall (Sofos City?) (+ unique Contest competitors)
+        - Battle Factory (+ unique Battle Factory teams)
         - Tera Orb unlock (optional quest after 3rd gym)
             - Remember to use FLAG_UNLOCKED_TERASTALLIZATION
             - If flag FLAG_UNLOCKED_TERASTALLIZATION set, allow Gym Leaders to terastallize? Seems fair

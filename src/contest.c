@@ -3226,6 +3226,8 @@ static u8 CreateContestantSprite(u16 species, bool8 isShiny, u32 personality, u3
     HandleLoadSpecialPokePic(FALSE, gMonSpritesGfxPtr->spritesGfx[B_POSITION_PLAYER_LEFT], species, personality);
 
     LoadCompressedPalette(GetMonSpritePalFromSpeciesAndPersonality(species, isShiny, personality), OBJ_PLTT_ID(2), PLTT_SIZE_4BPP);
+    UniquePalette(OBJ_PLTT_ID(2), species, personality, isShiny);
+    CpuCopy32(gPlttBufferFaded + OBJ_PLTT_ID(2), gPlttBufferUnfaded + OBJ_PLTT_ID(2), PLTT_SIZE_4BPP);
     SetMultiuseSpriteTemplateToPokemon(species, B_POSITION_PLAYER_LEFT);
 
     spriteId = CreateSprite(&gMultiuseSpriteTemplate, 0x70, GetBattlerSpriteFinal_Y(2, species, FALSE), 30);

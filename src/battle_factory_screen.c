@@ -2004,6 +2004,7 @@ static void Select_CreateMonSprite(void)
     bool8 isShiny = GetMonData(mon, MON_DATA_IS_SHINY, NULL);
 
     sFactorySelectScreen->monPics[1].monSpriteId = CreateMonPicSprite(species, isShiny, personality, TRUE, 88, 32, 15, TAG_NONE);
+    UniquePalette(0x1F0, species, personality, isShiny);
     gSprites[sFactorySelectScreen->monPics[1].monSpriteId].centerToCornerVecX = 0;
     gSprites[sFactorySelectScreen->monPics[1].monSpriteId].centerToCornerVecY = 0;
 
@@ -2018,7 +2019,7 @@ static void Select_SetMonPicAnimating(bool8 animating)
 static void Select_ReshowMonSprite(void)
 {
     struct Pokemon *mon;
-    u16 species;
+    u16 species, i;
     u32 personality;
     bool8 isShiny;
 
@@ -2031,6 +2032,11 @@ static void Select_ReshowMonSprite(void)
     isShiny = GetMonData(mon, MON_DATA_IS_SHINY, NULL);
 
     sFactorySelectScreen->monPics[1].monSpriteId = CreateMonPicSprite(species, isShiny, personality, TRUE, 88, 32, 15, TAG_NONE);
+    UniquePalette(0x1F0, species, personality, isShiny);
+    for (i = 0x1F0; i < 0x200; i++)
+    {
+        gPlttBufferUnfaded[i] = gPlttBufferFaded[i];
+    }
     gSprites[sFactorySelectScreen->monPics[1].monSpriteId].centerToCornerVecX = 0;
     gSprites[sFactorySelectScreen->monPics[1].monSpriteId].centerToCornerVecY = 0;
 
@@ -2053,6 +2059,7 @@ static void Select_CreateChosenMonsSprites(void)
                 bool8 isShiny = GetMonData(mon, MON_DATA_IS_SHINY, NULL);
 
                 sFactorySelectScreen->monPics[i].monSpriteId = CreateMonPicSprite(species, isShiny, personality, TRUE, (i * 72) + 16, 32, i + 13, TAG_NONE);
+                UniquePalette(0x100 + (i + 13) * 0x10, species, personality, isShiny);
                 gSprites[sFactorySelectScreen->monPics[i].monSpriteId].centerToCornerVecX = 0;
                 gSprites[sFactorySelectScreen->monPics[i].monSpriteId].centerToCornerVecY = 0;
                 break;
@@ -2362,9 +2369,12 @@ static void CopySwappedMonData(void)
 
 static void Swap_Task_OpenSummaryScreen(u8 taskId)
 {
+    u32 i;
     switch (gTasks[taskId].tState)
     {
     case STATE_SUMMARY_FADE:
+        for (i = 0x1F0; i < 0x200; i++)
+            gPlttBufferUnfaded[i] = gPlttBufferFaded[i];
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
         gTasks[taskId].tState = STATE_SUMMARY_CLEAN;
         break;
@@ -4063,7 +4073,7 @@ static void OpenMonPic(u8 *spriteId, bool8 *animating, bool8 swapScreen)
 static void Swap_ShowSummaryMonSprite(void)
 {
     struct Pokemon *mon;
-    u16 species;
+    u16 species, i;
     u32 personality;
     bool8 isShiny;
 
@@ -4076,6 +4086,9 @@ static void Swap_ShowSummaryMonSprite(void)
     isShiny = GetMonData(mon, MON_DATA_IS_SHINY, NULL);
 
     sFactorySwapScreen->monPic.monSpriteId = CreateMonPicSprite(species, isShiny, personality, TRUE, 88, 32, 15, TAG_NONE);
+    UniquePalette(0x1F0, species, personality, isShiny);
+    for (i = 0x1F0; i < 0x200; i++)
+        gPlttBufferUnfaded[i] = gPlttBufferFaded[i];
     gSprites[sFactorySwapScreen->monPic.monSpriteId].centerToCornerVecX = 0;
     gSprites[sFactorySwapScreen->monPic.monSpriteId].centerToCornerVecY = 0;
 
@@ -4293,6 +4306,7 @@ static void Swap_CreateMonSprite(void)
     isShiny = GetMonData(mon, MON_DATA_IS_SHINY, NULL);
 
     sFactorySwapScreen->monPic.monSpriteId = CreateMonPicSprite(species, isShiny, personality, TRUE, 88, 32, 15, TAG_NONE);
+    UniquePalette(0x1F0, species, personality, isShiny);
     gSprites[sFactorySwapScreen->monPic.monSpriteId].centerToCornerVecX = 0;
     gSprites[sFactorySwapScreen->monPic.monSpriteId].centerToCornerVecY = 0;
 
