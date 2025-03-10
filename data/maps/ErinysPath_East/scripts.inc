@@ -121,8 +121,7 @@ ErinysPath_East_EventScript_ChimeraWalrein_2:
 # 67 "data/maps/ErinysPath_East/scripts.pory"
 	closemessage
 # 68 "data/maps/ErinysPath_East/scripts.pory"
-	compare VAR_DIFFICULTY, 0
-	goto_if_eq ErinysPath_East_EventScript_ChimeraWalrein_5
+	goto_if_unset FLAG_HARD_MODE, ErinysPath_East_EventScript_ChimeraWalrein_5
 # 74 "data/maps/ErinysPath_East/scripts.pory"
 	trainerbattle_no_intro TRAINER_ERINYSPATH_CHIMERA_ADMIN_HARD, ErinysPath_East_Text_ChimeraAdminDefeated
 ErinysPath_East_EventScript_ChimeraWalrein_4:

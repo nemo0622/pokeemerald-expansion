@@ -2914,4 +2914,22 @@ extern const u8 gText_PlayerScurriedBackHome[];
 
 extern const u8 gText_ShinyIndicator[];
 
+extern const u8 gText_SmallDot[];
+extern const u8 gText_LargeDot[];
+extern const u8 gText_PageNav[];
+
+// Custom Page 2 option text here
+extern const u8 gText_DifficultySetting[];
+extern const u8 gText_DifficultySetting_Normal[];
+extern const u8 gText_DifficultySetting_Hard[];
+extern const u8 gText_BattleBg[];
+extern const u8 gText_BattleBgGSC[];
+extern const u8 gText_BattleBgCustom[];
+extern const u8 gText_DayNightCycleSetting[];
+extern const u8 gText_DayNightCycleSetting_On[];
+extern const u8 gText_DayNightCycleSetting_Off[];
+extern const u8 gText_ColorTintSetting[];
+extern const u8 gText_ColorTintSetting_On[];
+extern const u8 gText_ColorTintSetting_Off[];
+
 #endif // GUARD_STRINGS_H

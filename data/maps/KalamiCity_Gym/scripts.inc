@@ -52,8 +52,7 @@ KalamiCity_Gym_EventScript_Mattaios::
 # 40 "data/maps/KalamiCity_Gym/scripts.pory"
 	faceplayer
 # 41 "data/maps/KalamiCity_Gym/scripts.pory"
-	compare VAR_DIFFICULTY, 0
-	goto_if_eq KalamiCity_Gym_EventScript_Mattaios_2
+	goto_if_unset FLAG_HARD_MODE, KalamiCity_Gym_EventScript_Mattaios_2
 # 47 "data/maps/KalamiCity_Gym/scripts.pory"
 	goto KalamiCity_Gym_EventScript_MattaiosHard
 KalamiCity_Gym_EventScript_Mattaios_1:

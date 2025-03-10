@@ -149,7 +149,7 @@ script PythiosTown_Gym_EventScript_Sabella
 {
     lock
     faceplayer
-    if(var(VAR_DIFFICULTY) == 0)
+    if(!flag(FLAG_HARD_MODE))
     {
         goto(PythiosTown_Gym_EventScript_Sabella_NormalDifficulty)
     }

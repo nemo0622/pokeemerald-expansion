@@ -13,6 +13,8 @@
 #include "text.h"
 #include "text_window.h"
 #include "window.h"
+#include "event_data.h"
+#include "string_util.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
 
@@ -23,8 +25,13 @@
 #define tSound data[4]
 #define tButtonMode data[5]
 #define tWindowFrameType data[6]
+#define TDifficulty data[7]
+#define TBattleBgOff data[8]
+#define TNightCycle data[9]
+#define TColorTint data[10]
 
-enum
+// vanilla
+enum Page1
 {
     MENUITEM_TEXTSPEED,
     MENUITEM_BATTLESCENE,
@@ -36,18 +43,38 @@ enum
     MENUITEM_COUNT,
 };
 
+// custom
+enum Page2
+{
+    MENUITEM_DIFFICULTY,
+    MENUITEM_BATTLEBG,
+    MENUITEM_NIGHTCYCLE,
+    MENUITEM_COLORTINT,
+    MENUITEM_CANCEL_PG2,
+    MENUITEM_COUNT_PG2,
+};
+
 enum
 {
     WIN_HEADER,
     WIN_OPTIONS
 };
 
+// page 1: vanilla
 #define YPOS_TEXTSPEED    (MENUITEM_TEXTSPEED * 16)
 #define YPOS_BATTLESCENE  (MENUITEM_BATTLESCENE * 16)
 #define YPOS_BATTLESTYLE  (MENUITEM_BATTLESTYLE * 16)
 #define YPOS_SOUND        (MENUITEM_SOUND * 16)
 #define YPOS_BUTTONMODE   (MENUITEM_BUTTONMODE * 16)
 #define YPOS_FRAMETYPE    (MENUITEM_FRAMETYPE * 16)
+
+// page 2: custom
+#define YPOS_DIFFICULTY   (MENUITEM_DIFFICULTY * 16)
+#define YPOS_BATTLEBG     (MENUITEM_BATTLEBG * 16)
+#define YPOS_NIGHTCYCLE   (MENUITEM_NIGHTCYCLE * 16)
+#define YPOS_COLORTINT    (MENUITEM_COLORTINT * 16)
+
+#define PAGE_COUNT  2
 
 static void Task_OptionMenuFadeIn(u8 taskId);
 static void Task_OptionMenuProcessInput(u8 taskId);
@@ -70,7 +97,20 @@ static void DrawHeaderText(void);
 static void DrawOptionMenuTexts(void);
 static void DrawBgWindowFrames(void);
 
+// pages
+static void Task_OptionMenuFadeIn_Pg2(u8 taskId);
+static void Task_OptionMenuProcessInput_Pg2(u8 taskId);
+static u8   BattleBg_ProcessInput(u8 selection);
+static void BattleBg_DrawChoices(u8 selection);
+static u8   Difficulty_ProcessInput(u8 selection);
+static void Difficulty_DrawChoices(u8 selection);
+static u8   NightCycle_ProcessInput(u8 selection);
+static void NightCycle_DrawChoices(u8 selection);
+static u8   ColorTint_ProcessInput(u8 selection);
+static void ColorTint_DrawChoices(u8 selection);
+
 EWRAM_DATA static bool8 sArrowPressed = FALSE;
+EWRAM_DATA static u8 sCurrPage = 0;
 
 static const u16 sOptionMenuText_Pal[] = INCBIN_U16("graphics/interface/option_menu_text.gbapal");
 // note: this is only used in the Japanese release
@@ -85,6 +125,15 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
     [MENUITEM_BUTTONMODE]  = gText_ButtonMode,
     [MENUITEM_FRAMETYPE]   = gText_Frame,
     [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
+};
+
+static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
+{
+    [MENUITEM_DIFFICULTY]      = gText_DifficultySetting,
+    [MENUITEM_BATTLEBG]        = gText_BattleBg,
+    [MENUITEM_NIGHTCYCLE]      = gText_DayNightCycleSetting,
+    [MENUITEM_COLORTINT]       = gText_ColorTintSetting,
+    [MENUITEM_CANCEL_PG2]      = gText_OptionMenuCancel,
 };
 
 static const struct WindowTemplate sOptionMenuWinTemplates[] =
@@ -149,8 +198,51 @@ static void VBlankCB(void)
     TransferPlttBuffer();
 }
 
+static void ReadAllCurrentSettings(u8 taskId)
+{
+    gTasks[taskId].tMenuSelection = 0;
+    gTasks[taskId].tTextSpeed = gSaveBlock2Ptr->optionsTextSpeed;
+    gTasks[taskId].tBattleSceneOff = gSaveBlock2Ptr->optionsBattleSceneOff;
+    gTasks[taskId].tBattleStyle = gSaveBlock2Ptr->optionsBattleStyle;
+    gTasks[taskId].tSound = gSaveBlock2Ptr->optionsSound;
+    gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
+    gTasks[taskId].tWindowFrameType = gSaveBlock2Ptr->optionsWindowFrameType;
+    // custom page2 settings below
+    gTasks[taskId].TDifficulty = FlagGet(FLAG_HARD_MODE);
+    gTasks[taskId].TBattleBgOff = FlagGet(FLAG_SYS_DISABLE_BATTLE_BG);
+    gTasks[taskId].TNightCycle = FlagGet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE);
+    gTasks[taskId].TColorTint = FlagGet(FLAG_HIDE_POKEMON_COLOR_TINT);
+}
+
+static void DrawOptionsPg1(u8 taskId)
+{  
+    ReadAllCurrentSettings(taskId);
+    TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
+    BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
+    BattleStyle_DrawChoices(gTasks[taskId].tBattleStyle);
+    Sound_DrawChoices(gTasks[taskId].tSound);
+    ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
+    FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
+    HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+    CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
+}
+
+// add custom page2 settings here
+static void DrawOptionsPg2(u8 taskId)
+{
+    ReadAllCurrentSettings(taskId);
+    Difficulty_DrawChoices(gTasks[taskId].TDifficulty);
+    BattleBg_DrawChoices(gTasks[taskId].TBattleBgOff);
+    NightCycle_DrawChoices(gTasks[taskId].TNightCycle);
+    ColorTint_DrawChoices(gTasks[taskId].TColorTint);
+    // new settings here
+    HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+    CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
+}
+
 void CB2_InitOptionMenu(void)
 {
+    u8 taskId;
     switch (gMain.state)
     {
     default:
@@ -225,33 +317,60 @@ void CB2_InitOptionMenu(void)
         break;
     case 10:
     {
-        u8 taskId = CreateTask(Task_OptionMenuFadeIn, 0);
-
-        gTasks[taskId].tMenuSelection = 0;
-        gTasks[taskId].tTextSpeed = gSaveBlock2Ptr->optionsTextSpeed;
-        gTasks[taskId].tBattleSceneOff = gSaveBlock2Ptr->optionsBattleSceneOff;
-        gTasks[taskId].tBattleStyle = gSaveBlock2Ptr->optionsBattleStyle;
-        gTasks[taskId].tSound = gSaveBlock2Ptr->optionsSound;
-        gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
-        gTasks[taskId].tWindowFrameType = gSaveBlock2Ptr->optionsWindowFrameType;
-
-        TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
-        BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
-        BattleStyle_DrawChoices(gTasks[taskId].tBattleStyle);
-        Sound_DrawChoices(gTasks[taskId].tSound);
-        ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
-        FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
-        HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
-
-        CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
-        gMain.state++;
-        break;
+        switch(sCurrPage)
+        {
+        case 0:
+            taskId = CreateTask(Task_OptionMenuFadeIn, 0);
+            DrawOptionsPg1(taskId);
+            break;
+        case 1:
+            taskId = CreateTask(Task_OptionMenuFadeIn_Pg2, 0);
+            DrawOptionsPg2(taskId);
+            break;            
+        }
     }
     case 11:
         BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
         SetVBlankCallback(VBlankCB);
         SetMainCallback2(MainCB2);
         return;
+    }
+}
+
+static u8 Process_ChangePage(u8 CurrentPage)
+{
+    if (JOY_NEW(R_BUTTON))
+    {
+        if (CurrentPage < PAGE_COUNT - 1)
+            CurrentPage++;
+        else
+            CurrentPage = 0;
+    }
+    if (JOY_NEW(L_BUTTON))
+    {
+        if (CurrentPage != 0)
+            CurrentPage--;
+        else
+            CurrentPage = PAGE_COUNT - 1;
+    }
+    return CurrentPage;
+}
+
+static void Task_ChangePage(u8 taskId)
+{
+    DrawHeaderText();
+    PutWindowTilemap(1);
+    DrawOptionMenuTexts();
+    switch(sCurrPage)
+    {
+    case 0:
+        DrawOptionsPg1(taskId);
+        gTasks[taskId].func = Task_OptionMenuFadeIn;
+        break;
+    case 1:
+        DrawOptionsPg2(taskId);
+        gTasks[taskId].func = Task_OptionMenuFadeIn_Pg2;
+        break;
     }
 }
 
@@ -263,7 +382,14 @@ static void Task_OptionMenuFadeIn(u8 taskId)
 
 static void Task_OptionMenuProcessInput(u8 taskId)
 {
-    if (JOY_NEW(A_BUTTON))
+    if (JOY_NEW(L_BUTTON) || JOY_NEW(R_BUTTON))
+    {
+        FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
+        ClearStdWindowAndFrame(WIN_OPTIONS, FALSE);
+        sCurrPage = Process_ChangePage(sCurrPage);
+        gTasks[taskId].func = Task_ChangePage;
+    }
+    else if (JOY_NEW(A_BUTTON))
     {
         if (gTasks[taskId].tMenuSelection == MENUITEM_CANCEL)
             gTasks[taskId].func = Task_OptionMenuSave;
@@ -348,6 +474,92 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     }
 }
 
+static void Task_OptionMenuFadeIn_Pg2(u8 taskId)
+{
+    if (!gPaletteFade.active)
+        gTasks[taskId].func = Task_OptionMenuProcessInput_Pg2;
+}
+
+static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
+{
+    if (JOY_NEW(L_BUTTON) || JOY_NEW(R_BUTTON))
+    {
+        FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
+        ClearStdWindowAndFrame(WIN_OPTIONS, FALSE);
+        sCurrPage = Process_ChangePage(sCurrPage);
+        gTasks[taskId].func = Task_ChangePage;
+    }
+    else if (JOY_NEW(A_BUTTON))
+    {
+        if (gTasks[taskId].tMenuSelection == MENUITEM_CANCEL_PG2)
+            gTasks[taskId].func = Task_OptionMenuSave;
+    }
+    else if (JOY_NEW(B_BUTTON))
+    {
+        gTasks[taskId].func = Task_OptionMenuSave;
+    }
+    else if (JOY_NEW(DPAD_UP))
+    {
+        if (gTasks[taskId].tMenuSelection > 0)
+            gTasks[taskId].tMenuSelection--;
+        else
+            gTasks[taskId].tMenuSelection = MENUITEM_CANCEL_PG2;
+        HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+    }
+    else if (JOY_NEW(DPAD_DOWN))
+    {
+        if (gTasks[taskId].tMenuSelection < MENUITEM_CANCEL_PG2)
+            gTasks[taskId].tMenuSelection++;
+        else
+            gTasks[taskId].tMenuSelection = 0;
+        HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+    }
+    else
+    {
+        u8 previousOption;
+
+        switch (gTasks[taskId].tMenuSelection)
+        {
+        case MENUITEM_DIFFICULTY:
+            previousOption = gTasks[taskId].TDifficulty;
+            gTasks[taskId].TDifficulty = Difficulty_ProcessInput(gTasks[taskId].TDifficulty);
+
+            if (previousOption != gTasks[taskId].TDifficulty)
+                Difficulty_DrawChoices(gTasks[taskId].TDifficulty);
+            break;
+        case MENUITEM_BATTLEBG:
+            previousOption = gTasks[taskId].TBattleBgOff;
+            gTasks[taskId].TBattleBgOff = BattleBg_ProcessInput(gTasks[taskId].TBattleBgOff);
+
+            if (previousOption != gTasks[taskId].TBattleBgOff)
+                BattleBg_DrawChoices(gTasks[taskId].TBattleBgOff);
+            break;
+        case MENUITEM_NIGHTCYCLE:
+            previousOption = gTasks[taskId].TNightCycle;
+            gTasks[taskId].TNightCycle = NightCycle_ProcessInput(gTasks[taskId].TNightCycle);
+
+            if (previousOption != gTasks[taskId].TNightCycle)
+                NightCycle_DrawChoices(gTasks[taskId].TNightCycle);
+            break;
+        case MENUITEM_COLORTINT:
+            previousOption = gTasks[taskId].TColorTint;
+            gTasks[taskId].TColorTint = ColorTint_ProcessInput(gTasks[taskId].TColorTint);
+
+            if (previousOption != gTasks[taskId].TColorTint)
+                ColorTint_DrawChoices(gTasks[taskId].TColorTint);
+            break;
+        default:
+            return;
+        }
+
+        if (sArrowPressed)
+        {
+            sArrowPressed = FALSE;
+            CopyWindowToVram(WIN_OPTIONS, COPYWIN_GFX);
+        }
+    }
+}
+
 static void Task_OptionMenuSave(u8 taskId)
 {
     gSaveBlock2Ptr->optionsTextSpeed = gTasks[taskId].tTextSpeed;
@@ -356,6 +568,11 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsSound = gTasks[taskId].tSound;
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
+    // add custom page2 settings here
+    gTasks[taskId].TDifficulty == 0 ? FlagClear(FLAG_HARD_MODE) : FlagSet(FLAG_HARD_MODE);
+    gTasks[taskId].TBattleBgOff == 0 ? FlagClear(FLAG_SYS_DISABLE_BATTLE_BG) : FlagSet(FLAG_SYS_DISABLE_BATTLE_BG);
+    gTasks[taskId].TNightCycle == 0 ? FlagClear(FLAG_INVISIBLE_DAY_NIGHT_CYCLE) : FlagSet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE);
+    gTasks[taskId].TColorTint == 0 ? FlagClear(FLAG_HIDE_POKEMON_COLOR_TINT) : FlagSet(FLAG_HIDE_POKEMON_COLOR_TINT);
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -615,20 +832,143 @@ static void ButtonMode_DrawChoices(u8 selection)
     DrawOptionMenuChoice(gText_ButtonTypeLEqualsA, GetStringRightAlignXOffset(FONT_NORMAL, gText_ButtonTypeLEqualsA, 198), YPOS_BUTTONMODE, styles[2]);
 }
 
+static u8 BattleBg_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        selection ^= 1;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static u8 Difficulty_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        if(selection == 0)
+            selection = 1;
+        else
+            selection = 0;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static u8 NightCycle_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        if(selection == 0)
+            selection = 1;
+        else
+            selection = 0;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static u8 ColorTint_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        if(selection == 0)
+            selection = 1;
+        else
+            selection = 0;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static void BattleBg_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+    DrawOptionMenuChoice(gText_BattleBgCustom, 104, YPOS_BATTLEBG, styles[0]);
+    DrawOptionMenuChoice(gText_BattleBgGSC, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleBgCustom, 198), YPOS_BATTLEBG, styles[1]);
+}
+
+static void Difficulty_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+    DrawOptionMenuChoice(gText_DifficultySetting_Normal, 104, YPOS_DIFFICULTY, styles[0]);
+    DrawOptionMenuChoice(gText_DifficultySetting_Hard, GetStringRightAlignXOffset(FONT_NORMAL, gText_DifficultySetting_Normal, 198), YPOS_DIFFICULTY, styles[1]);
+}
+
+static void NightCycle_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+    DrawOptionMenuChoice(gText_DayNightCycleSetting_On, 104, YPOS_NIGHTCYCLE, styles[0]);
+    DrawOptionMenuChoice(gText_DayNightCycleSetting_Off, GetStringRightAlignXOffset(FONT_NORMAL, gText_DayNightCycleSetting_On, 198), YPOS_NIGHTCYCLE, styles[1]);
+}
+
+static void ColorTint_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+    DrawOptionMenuChoice(gText_ColorTintSetting_On, 104, YPOS_COLORTINT, styles[0]);
+    DrawOptionMenuChoice(gText_ColorTintSetting_Off, GetStringRightAlignXOffset(FONT_NORMAL, gText_ColorTintSetting_On, 198), YPOS_COLORTINT, styles[1]);
+}
+
 static void DrawHeaderText(void)
 {
+    u32 i, widthOptions, xMid;
+    u8 pageDots[9] = _("");  // Array size should be at least (2 * PAGE_COUNT) -1
+    widthOptions = GetStringWidth(FONT_NORMAL, gText_Option, 0);
+ 
+    for (i = 0; i < PAGE_COUNT; i++)
+    {
+        if (i == sCurrPage)
+            StringAppend(pageDots, gText_LargeDot);
+        else
+            StringAppend(pageDots, gText_SmallDot);
+        if (i < PAGE_COUNT - 1)
+            StringAppend(pageDots, gText_Space);
+    }
+    xMid = (8 + widthOptions + 5);
     FillWindowPixelBuffer(WIN_HEADER, PIXEL_FILL(1));
     AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_Option, 8, 1, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, pageDots, xMid, 1, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_PageNav, GetStringRightAlignXOffset(FONT_NORMAL, gText_PageNav, 198), 1, TEXT_SKIP_DRAW, NULL);
     CopyWindowToVram(WIN_HEADER, COPYWIN_FULL);
 }
 
 static void DrawOptionMenuTexts(void)
 {
-    u8 i;
+    u8 i, items;
+    const u8* const* menu = NULL;
+ 
+    switch (sCurrPage)
+    {
+    default:
+    case 0:
+        items = MENUITEM_COUNT;
+        menu = sOptionMenuItemsNames;
+        break;
+    case 1:
+        items = MENUITEM_COUNT_PG2;
+        menu = sOptionMenuItemsNames_Pg2;
+        break;    
+    }
 
     FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
-    for (i = 0; i < MENUITEM_COUNT; i++)
-        AddTextPrinterParameterized(WIN_OPTIONS, FONT_NORMAL, sOptionMenuItemsNames[i], 8, (i * 16) + 1, TEXT_SKIP_DRAW, NULL);
+    for (i = 0; i < items; i++)
+        AddTextPrinterParameterized(WIN_OPTIONS, FONT_NORMAL, menu[i], 8, (i * 16) + 1, TEXT_SKIP_DRAW, NULL);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
 

@@ -297,7 +297,7 @@ script WanderersWoods_EventScript_ChimeraEvent
     applymovement(8, Common_Movement_WalkUp)
     applymovement(9, Common_Movement_WalkUp)
     applymovement(10, Common_Movement_WalkUp)
-    if(var(VAR_DIFFICULTY) == 0)
+    if(!flag(FLAG_HARD_MODE))
     {
         trainerbattle_no_intro(TRAINER_WANDERERSWOODS_CHIMERA_ADMIN, WanderersWoods_Text_ChimeraAdminDefeated)
     }

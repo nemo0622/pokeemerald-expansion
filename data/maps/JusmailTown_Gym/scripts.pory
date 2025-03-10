@@ -53,7 +53,7 @@ script JusmailTown_Gym_EventScript_Deo
 {
     lock
     faceplayer
-    if(var(VAR_DIFFICULTY) == 0)
+    if(!flag(FLAG_HARD_MODE))
     {
         goto(JusmailTown_Gym_EventScript_Deo_NormalDifficulty)
     }

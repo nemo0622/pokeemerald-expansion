@@ -65,7 +65,7 @@ script ErinysPath_East_EventScript_ChimeraWalrein
         speakername("Chimera Admin")
         msgbox(format("Hold it right there... I've been scouting around Pythios Town, and I think I saw you hanging around that Piraeus guy! That fool wouldn't donate his ratty little boat to our cause, then took me by surprise!\p I'll destroy you, then I'll take down Piraeus!"))
         closemessage
-        if(var(VAR_DIFFICULTY) == 0)
+        if(!flag(FLAG_HARD_MODE))
         {
             trainerbattle_no_intro(TRAINER_ERINYSPATH_CHIMERA_ADMIN, ErinysPath_East_Text_ChimeraAdminDefeated)
         }

@@ -33,7 +33,6 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 - Difficulty Modes!
     - Normal Mode: Soft Level Caps, Standard Gym Leader teams. Can likely beat the game with most Pokémon teams, with a few battles requiring extra planning.
     - Hard Mode: Hard Level Caps, Modified Gym Leaders to be more difficult fights. Opponents gain extra levels as the game progresses, ending in a +5 level bonus to opponents. Planning before Gym battles is key, as their Pokémon have stronger moves and more coverage.
-    - Difficulty toggled at computer on far right side of Acrisia University building!
 - Various QOL Changes, such as:
     - Expanded Bag space to 50 Items
     - Shiny Indicator for wild Pokémon
@@ -73,8 +72,6 @@ MAJOR TODOS:
     - Wait until treasure catching is implemented because that's so cool!
 - Mudskip's Outfit system: https://github.com/mudskipper13/pokeemerald/tree/feature/outfits-system-rhh?tab=readme-ov-file
     - Outfits: Default (Musa & Harper), Calem & Serena (unlocked on catching/choosing a Gen 6 starter), USUM Protagonists (unlocked w/ Gen 7 starter), Arven & Nemona (unlocked w/ Gen 9 starter), Yellow (unlocked w/ catching a Pikachu). Plus a few basic variant customizations for Musa and Harper which can be earned or bought from vendors.
-- Mudskip's GSC Battle Background code: https://github.com/mudskipper13/pokeemerald/commits/battle-bg-option/
-    - Also implement the second options page, and move the computer options (difficulty, visible day/night) from Acrisia University to the options menu
 
 
 GREEK PHRASES AND STUFF:
@@ -140,11 +137,12 @@ Many, many talented developers and artists are responsible for making this proje
 - DexNav feature branch by ghoulslash
 - Name Box branch by Tustin2121
 - Different Wild Encounter Tables by Bivurnum
-- New Shop UI by mudskip
+- New Shop UI and GSC White Battle Background by mudskip
 - New Continue Menu UI and Party Menu by Archie
 - Overworld Encounters by [HashtagMarky](https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters)
 - GSC/HGSS Ruins of Alph Sliding Puzzles by [Spherical Ice](https://www.pokecommunity.com/threads/ruins-of-alph-sliding-puzzles-pokefirered.463032/)
 - Town Map feature port by Vol
+- Pokémon Color Variation by Jaizu
 
 ### Graphics
 - Tilesets:

@@ -286,35 +286,8 @@
     },
     {
       "type": "trigger",
-      "x": 16,
-      "y": 7,
-      "elevation": 0,
-      "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
-      "var_value": "0",
-      "script": "JusmailTown_EventScript_TriggerWindmillSpawn"
-    },
-    {
-      "type": "trigger",
-      "x": 15,
-      "y": 7,
-      "elevation": 0,
-      "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
-      "var_value": "0",
-      "script": "JusmailTown_EventScript_TriggerWindmillSpawn"
-    },
-    {
-      "type": "trigger",
-      "x": 14,
-      "y": 7,
-      "elevation": 0,
-      "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
-      "var_value": "0",
-      "script": "JusmailTown_EventScript_TriggerWindmillSpawn"
-    },
-    {
-      "type": "trigger",
-      "x": 13,
-      "y": 7,
+      "x": 12,
+      "y": 15,
       "elevation": 0,
       "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
       "var_value": "0",
@@ -323,7 +296,7 @@
     {
       "type": "trigger",
       "x": 12,
-      "y": 7,
+      "y": 14,
       "elevation": 0,
       "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
       "var_value": "0",
@@ -331,8 +304,8 @@
     },
     {
       "type": "trigger",
-      "x": 10,
-      "y": 21,
+      "x": 15,
+      "y": 13,
       "elevation": 0,
       "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
       "var_value": "0",
@@ -340,7 +313,25 @@
     },
     {
       "type": "trigger",
-      "x": 11,
+      "x": 14,
+      "y": 13,
+      "elevation": 0,
+      "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
+      "var_value": "0",
+      "script": "JusmailTown_EventScript_TriggerWindmillSpawn"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 13,
+      "elevation": 0,
+      "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
+      "var_value": "0",
+      "script": "JusmailTown_EventScript_TriggerWindmillSpawn"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
       "y": 22,
       "elevation": 0,
       "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
@@ -349,7 +340,7 @@
     },
     {
       "type": "trigger",
-      "x": 11,
+      "x": 12,
       "y": 23,
       "elevation": 0,
       "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
@@ -360,6 +351,24 @@
       "type": "trigger",
       "x": 12,
       "y": 21,
+      "elevation": 0,
+      "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
+      "var_value": "0",
+      "script": "JusmailTown_EventScript_TriggerWindmillSpawn"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 16,
+      "elevation": 0,
+      "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
+      "var_value": "0",
+      "script": "JusmailTown_EventScript_TriggerWindmillSpawn"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 17,
       "elevation": 0,
       "var": "FLAG_TRIGGERED_WINDMILL_SPAWN",
       "var_value": "0",

@@ -76,8 +76,7 @@ JusmailTown_Gym_EventScript_Deo::
 # 55 "data/maps/JusmailTown_Gym/scripts.pory"
 	faceplayer
 # 56 "data/maps/JusmailTown_Gym/scripts.pory"
-	compare VAR_DIFFICULTY, 0
-	goto_if_eq JusmailTown_Gym_EventScript_Deo_2
+	goto_if_unset FLAG_HARD_MODE, JusmailTown_Gym_EventScript_Deo_2
 # 62 "data/maps/JusmailTown_Gym/scripts.pory"
 	goto JusmailTown_Gym_EventScript_Deo_HardDifficulty
 JusmailTown_Gym_EventScript_Deo_1:

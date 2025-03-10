@@ -38,7 +38,7 @@ script KalamiCity_Gym_EventScript_Mattaios
 {
     lock
     faceplayer
-    if(var(VAR_DIFFICULTY) == 0)
+    if(!flag(FLAG_HARD_MODE))
     {
         goto(KalamiCity_Gym_EventScript_MattaiosNormal)
     }

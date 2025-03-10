@@ -2078,7 +2078,7 @@ u8 GetScaledLevel(u8 lvl)
     else
         levelScaling = 1;
 
-    if (VarGet(VAR_DIFFICULTY) == 1) // hard mode
+    if (FlagGet(FLAG_HARD_MODE)) // hard mode
         lvl += levelScaling;
 
     if (lvl > 100)

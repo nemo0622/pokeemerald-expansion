@@ -482,7 +482,7 @@ static void ApplyColorMap(u8 startPalIndex, u8 numPalettes, s8 colorMapIndex)
         palOffset = PLTT_ID(startPalIndex);
         UpdateAltBgPalettes(palettes & PALETTES_BG);
         // Thunder gamma-shift looks bad on night-blended palettes, so ignore time blending in some situations
-        if (!(colorMapIndex > 3) && MapHasNaturalLight(gMapHeader.mapType) && FlagGet(FLAG_VISIBLE_DAY_NIGHT_CYCLE))
+        if (!(colorMapIndex > 3) && MapHasNaturalLight(gMapHeader.mapType) && !FlagGet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE))
           UpdatePalettesWithTime(palettes);
         else
           CpuFastCopy(gPlttBufferUnfaded + palOffset, gPlttBufferFaded + palOffset, PLTT_SIZE_4BPP * numPalettes);
@@ -552,7 +552,7 @@ static void ApplyColorMap(u8 startPalIndex, u8 numPalettes, s8 colorMapIndex)
     }
     else
     {
-        if (MapHasNaturalLight(gMapHeader.mapType) && FlagGet(FLAG_VISIBLE_DAY_NIGHT_CYCLE)) { // Time-blend
+        if (MapHasNaturalLight(gMapHeader.mapType) && !FlagGet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE)) { // Time-blend
             u32 palettes = ((1 << numPalettes) - 1) << startPalIndex;
             UpdateAltBgPalettes(palettes & PALETTES_BG);
             UpdatePalettesWithTime(palettes);
@@ -802,7 +802,7 @@ void FadeScreen(u8 mode, s8 delay)
           gWeatherPtr->fadeScreenCounter = 0; // Triggers gamma-shift-based fade-in
         else 
         {
-            if (MapHasNaturalLight(gMapHeader.mapType) && FlagGet(FLAG_VISIBLE_DAY_NIGHT_CYCLE)) 
+            if (MapHasNaturalLight(gMapHeader.mapType) && !FlagGet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE)) 
             {
                 UpdateAltBgPalettes(PALETTES_BG);
                 BeginTimeOfDayPaletteFade(PALETTES_ALL, delay, 16, 0,

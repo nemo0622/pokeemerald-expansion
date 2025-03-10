@@ -2,6 +2,7 @@
 #include "util.h"
 #include "sprite.h"
 #include "palette.h"
+#include "event_data.h"
 #include "constants/rgb.h"
 
 const u32 gBitTable[] =
@@ -425,7 +426,14 @@ void UniquePalette(u16 palOffset, u16 species, u32 personality, bool8 isShiny)
             if(gPlttBufferUnfaded[index] == RGB(31, 31, 31))
             {
                 gPlttBufferFaded[index] = RGB(31, 31, 31);
-                return;
+                continue;
+            }
+
+            // if system is disabled by player, just return normal colors
+            if(FlagGet(FLAG_HIDE_POKEMON_COLOR_TINT))
+            {
+                gPlttBufferFaded[index] = gPlttBufferUnfaded[index];
+                continue;
             }
 
             // slightly randomize colors below
@@ -460,7 +468,14 @@ void UniquePalette(u16 palOffset, u16 species, u32 personality, bool8 isShiny)
             if(gPlttBufferUnfaded[index] == RGB(31, 31, 31))
             {
                 gPlttBufferFaded[index] = RGB(31, 31, 31);
-                return;
+                continue;
+            }
+
+            // if system is disabled by player, just return normal colors
+            if(FlagGet(FLAG_HIDE_POKEMON_COLOR_TINT))
+            {
+                gPlttBufferFaded[index] = RGB(data1->r, data1->g, data1->b);
+                continue;
             }
 
             // slightly randomize colors below

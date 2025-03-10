@@ -153,8 +153,7 @@ PythiosTown_Gym_EventScript_Sabella::
 # 151 "data/maps/PythiosTown_Gym/scripts.pory"
 	faceplayer
 # 152 "data/maps/PythiosTown_Gym/scripts.pory"
-	compare VAR_DIFFICULTY, 0
-	goto_if_eq PythiosTown_Gym_EventScript_Sabella_2
+	goto_if_unset FLAG_HARD_MODE, PythiosTown_Gym_EventScript_Sabella_2
 # 158 "data/maps/PythiosTown_Gym/scripts.pory"
 	goto PythiosTown_Gym_EventScript_Sabella_HardDifficulty
 PythiosTown_Gym_EventScript_Sabella_1:

@@ -383,8 +383,7 @@ WanderersWoods_EventScript_ChimeraEvent::
 # 299 "data/maps/WanderersWoods/scripts.pory"
 	applymovement 10, Common_Movement_WalkUp
 # 300 "data/maps/WanderersWoods/scripts.pory"
-	compare VAR_DIFFICULTY, 0
-	goto_if_eq WanderersWoods_EventScript_ChimeraEvent_2
+	goto_if_unset FLAG_HARD_MODE, WanderersWoods_EventScript_ChimeraEvent_2
 # 306 "data/maps/WanderersWoods/scripts.pory"
 	trainerbattle_no_intro TRAINER_WANDERERSWOODS_CHIMERA_ADMIN_HARD, WanderersWoods_Text_ChimeraAdminDefeated
 WanderersWoods_EventScript_ChimeraEvent_1:
