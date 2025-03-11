@@ -1238,7 +1238,7 @@ Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Tags: Lead
 
-Cleffa
+Flabebe Blue Flower
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -1266,7 +1266,7 @@ Munna
 Level: 19
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Clefairy
+Flabebe Orange Flower
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -1703,19 +1703,19 @@ Party Size: 2
 Pool Rules: Basic
 
 Skorupi
-Level: 25
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Honedge
-Level: 26
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sneasel
-Level: 25
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Breloom
-Level: 26
+Shroomish
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_2 ===
@@ -1729,20 +1729,20 @@ AI: Check Bad Move / Check Viability
 Party Size: 3
 Pool Rules: Basic
 
-Scyther
-Level: 26
+Dustox
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Chatot
-Level: 25
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Grafaiai
-Level: 26
+Shroodle
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Ariados
-Level: 25
+Spinarak
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_PYTHIOSCEMETERY_CHIMERA_ADMIN ===
@@ -1756,27 +1756,27 @@ AI: Check Bad Move / Check Viability  / AI_FLAG_ACE_POKEMON
 Party Size: 3
 Pool Rules: Basic
 
-Doublade
-Level: 26
+Honedge
+Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Crabrawler
-Level: 27
+Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Tauros
-Level: 27
+Level: 17
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Togedemaru
-Level: 26
+Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Linoone Galarian @ Chesto Berry
-Level: 27
+Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Tags: Ace
-- Night Slash
+- Lick
 - Snarl
 - Headbutt
 - Rest
@@ -1792,7 +1792,7 @@ AI: Check Bad Move / Try To Faint
 Party Size: 3
 Pool Rules: Basic
 
-Clefairy
+Flabebe Red Flower
 Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1852,11 +1852,11 @@ Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Pansear
-Level: 19
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Steenee
-Level: 19
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVERWALK_TRAIL_S_MARKUS ===

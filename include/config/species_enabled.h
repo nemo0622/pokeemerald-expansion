@@ -68,7 +68,7 @@
 #define P_FAMILY_PIKACHU                 P_GEN_1_POKEMON
 #define P_FAMILY_SANDSHREW               P_GEN_1_POKEMON
 #define P_FAMILY_NIDORAN                 FALSE
-#define P_FAMILY_CLEFAIRY                P_GEN_1_POKEMON
+#define P_FAMILY_CLEFAIRY                FALSE
 #define P_FAMILY_VULPIX                  P_GEN_1_POKEMON
 #define P_FAMILY_JIGGLYPUFF              P_GEN_1_POKEMON
 #define P_FAMILY_ZUBAT                   FALSE
@@ -394,7 +394,7 @@
 #define P_FAMILY_FLETCHLING              FALSE
 #define P_FAMILY_SCATTERBUG              FALSE
 #define P_FAMILY_LITLEO                  FALSE
-#define P_FAMILY_FLABEBE                 FALSE
+#define P_FAMILY_FLABEBE                 P_GEN_6_POKEMON
 #define P_FAMILY_SKIDDO                  P_GEN_6_POKEMON
 #define P_FAMILY_PANCHAM                 P_GEN_6_POKEMON
 #define P_FAMILY_FURFROU                 FALSE

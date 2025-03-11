@@ -546,7 +546,7 @@
 #define FLAG_HIDDEN_ITEM_JUSMAIL_WISHING_STAR                (FLAG_HIDDEN_ITEMS_START + 0x03)
 #define FLAG_HIDDEN_ITEM_ACRISIA_MOUNTAINS_EXP_CANDY         (FLAG_HIDDEN_ITEMS_START + 0x04)
 #define FLAG_HIDDEN_ITEM_RIVERWALK_WEST_MIRACLE_SEED         (FLAG_HIDDEN_ITEMS_START + 0x05)
-#define FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL                (FLAG_HIDDEN_ITEMS_START + 0x06)
+#define FLAG_HIDDEN_ITEM_PYTHIOS_CEMETERY_PURPLE_NECTAR      (FLAG_HIDDEN_ITEMS_START + 0x06)
 #define FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL               (FLAG_HIDDEN_ITEMS_START + 0x07)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS               (FLAG_HIDDEN_ITEMS_START + 0x08)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD          (FLAG_HIDDEN_ITEMS_START + 0x09)
@@ -1056,10 +1056,10 @@
 #define FLAG_ITEM_RIVERWALK_WEST_SUPER_POTION                       0x3EE
 #define FLAG_ITEM_RIVERWALK_WEST_MAX_REVIVE                         0x3EF
 #define FLAG_ITEM_RIVERWALK_SOUTH_WATER_STONE                       0x3F0
-#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
-#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2
-#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
-#define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
+#define FLAG_ITEM_PYTHIOS_CEMETERY_DUSK_BALL                        0x3F1
+#define FLAG_ITEM_PYTHIOS_CEMETERY_MAX_REVIVE                       0x3F2
+#define FLAG_ITEM_PYTHIOS_CEMETERY_STARDUST                         0x3F3
+#define FLAG_ITEM_PYTHIOS_CEMETERY_SHADOW_BALL                      0x3F4
 #define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
 #define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
 #define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
@@ -1264,7 +1264,7 @@
 #define FLAG_SOLVED_AERODACTYL_PUZZLE                               0x4BD // Solved Ruins of Alph style Aerodactyl sliding puzzle
 #define FLAG_SOLVED_OMANYTE_PUZZLE                                  0x4BE // Solved Ruins of Alph style Omanyte sliding puzzle
 #define FLAG_SOLVED_HO_OH_PUZZLE                                    0x4BF // Solved Ruins of Alph style Ho-oh sliding puzzle
-#define FLAG_SOLVED_ACRISIA_MOUNTAIN_PUZZLE                                    0x4C0 // Flag marking both Kabuto and Omanyte solved, hiding NPCs blocking ladder
+#define FLAG_SOLVED_ACRISIA_MOUNTAIN_PUZZLE                         0x4C0 // Flag marking both Kabuto and Omanyte solved, hiding NPCs blocking ladder
 #define FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS                        0x4C1 // Showed Lass in Acrisia Mountains a Baltoy
 #define FLAG_ON_PIRAEUS_BOAT                                        0x4C2 // Marks if you're on The Delphis (used in leaving code)
 #define FLAG_USED_PIRAEUS_BOAT_BEFORE                               0x4C3 // tracks first time riding The Delphis
@@ -1272,7 +1272,7 @@
 #define FLAG_TRIGGERED_WINDMILL_SPAWN                               0x4C5 // used in function spawning windmill animation in Bronze Fields south
 #define FLAG_GOT_ABILITY_CAPSULE_KALAMI_CITY                        0x4C6 // Get Kalami City ability capsule from sailor 2
 #define FLAG_UNLOCKED_ACRISIA_MTNS                                  0x4C7 // Set after Badge 1 + talking to Prof Elia
-#define FLAG_UNUSED_0x4C8                                           0x4C8 // Unused Flag
+#define FLAG_SHOWED_CEMETERY_LADY_SNOM                              0x4C8 // showed old lady in pythios cemetery a snom
 #define FLAG_UNUSED_0x4C9                                           0x4C9 // Unused Flag
 #define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
 #define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag

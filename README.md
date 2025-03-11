@@ -53,10 +53,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - Add items and missing old lady script to Pythios Cemetary
-    - Make Unique Palette system work for followers:
-        - Find where follower palettes are loaded and replace with UniquePalette or that other function
-    - Commission Flabebe, Floette, and Florges sprites (all red) + Floette Eternal form sprite (different shape flower)
+    - Snag ravepossum updates to bw-summary-screen, adding rename and relearn moves from summary screen (https://github.com/rh-hideout/pokeemerald-expansion/compare/master...ravepossum:pokeemerald-expansion:bw_summary_screen_expansion)
     - Prepare for Demo release
         - Disable debug functions
         - Create "Demo" gfx for version # on title screen
@@ -67,6 +64,10 @@ MAJOR TODOS:
         - 
         - Explore AC odyssey world for other location inspo lol
 - Give all Pokémon unique Pokédex entries
+- Make Unique Palette system work for followers:
+    - Find where follower palettes are loaded and replace with UniquePalette or that other function
+    - NOTE: This will require making sure all follower and battle palettes match! For gen 1-2 Pokémon, that means going in and saving over the old follower pals. This is for the best, it'll just take time
+    - Also take this time to offset the Swinub and Piloswine follower sprites or whatever to fix the palette bug
 - Add Cecilily as a trainer
     - "PkMn Trainer" class, comissioned sprite or she can choose one?
     - Rewards with level 10 Johto starters

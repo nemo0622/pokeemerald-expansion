@@ -102,7 +102,7 @@ script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin
 }
 text PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat
 {
-    format("Uh oh, this isn't good...!")
+    format("M-my Arcanine won't come out to fight! Is it really scared of the dark?! This isn't good...!")
 }
 
 script PythiosCemetery_EventScript_Artist
@@ -175,10 +175,61 @@ script PythiosCemetery_EventScript_OldWoman
     lock
     faceplayer
     speakername("Old Woman")
-    msgbox(format("People tend to stay away from cemeteries, so the graves fall into ruin. I'm trying to clean some of them up."))
-    closemessage
+    if(!flag(FLAG_SHOWED_CEMETERY_LADY_SNOM))
+    {
+        msgbox(format("People tend to stay away from cemeteries, so the graves fall into ruin. I'm trying to clean some of them up.\p There's an {COLOR GREEN}Ice-type Bug Pokémon{COLOR DARK_GRAY} that especially likes to creep around the graves {COLOR GREEN}at night{COLOR DARK_GRAY}. If you help catch one, let me know."))
+        closemessage
+
+        questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_SNOM_ICE_STONE)
+        if(var(VAR_RESULT) == 0) // quest not active yet
+        {
+            delay(20)
+            startquest(QUEST_SNOM_ICE_STONE)
+        }
+        else // quest active, check results
+        {
+            getcaughtmon(SPECIES_SNOM)
+            if(var(VAR_RESULT) == 1) // caught a snom for her! now check if it's in the party, she wants to see it!
+            {
+                speakername("Old Woman")
+                msgbox(format("I can see it on your face... have you found the Ice-type Bug for me?"))
+                closemessage
+                checkforspecies(SPECIES_SNOM, OPEN_PARTY_SCREEN, PythiosCemetery_EventScript_OldWoman_ReactToSnom) // goto that script if have snom in party
+                // if no snom in party, continue below
+                speakername("Old Woman")
+                msgbox(format("I suppose not. Bring me the Ice-type Bug Pokémon you've caught!"))
+                closemessage
+            }
+        }
+    }
+    else
+    {
+        msgbox(format("Thank you for helping with my Snom problem, young Trainer. Now the Snom can go on an adventure with you, and I can be left to continue cleaning the area."))
+        closemessage
+    }
     applymovement(12, Common_Movement_FaceUp)
     waitmovement(0)
+    release
+    end
+}
+
+script PythiosCemetery_EventScript_OldWoman_ReactToSnom
+{
+    delay(20)
+    applymovement(12, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    speakername("Old Woman")
+    msgbox(format("A Snom! Ah, this makes sense!\p I found this strange, cold stone in the rocks nearby. Maybe this is what attracted the Snom!"))
+    closemessage
+    giveitem(ITEM_ICE_STONE)
+    speakername("Old Woman")
+    msgbox(format("Snom living in the Ilios Region can evolve using an Ice Stone. Perhaps the Snom is looking for a life of adventure?"))
+    closemessage
+    setflag(FLAG_SHOWED_CEMETERY_LADY_SNOM)
+
+    delay(20)
+    completequest(QUEST_SNOM_ICE_STONE)
+
     release
     end
 }

@@ -211,14 +211,90 @@ PythiosCemetery_EventScript_OldWoman::
 # 177 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_OldWoman_Text_0
 # 178 "data/maps/PythiosCemetery/scripts.pory"
-	msgbox PythiosCemetery_EventScript_OldWoman_Text_1
-# 179 "data/maps/PythiosCemetery/scripts.pory"
+	goto_if_unset FLAG_SHOWED_CEMETERY_LADY_SNOM, PythiosCemetery_EventScript_OldWoman_2
+# 207 "data/maps/PythiosCemetery/scripts.pory"
+	msgbox PythiosCemetery_EventScript_OldWoman_Text_4
+# 208 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
-# 180 "data/maps/PythiosCemetery/scripts.pory"
+PythiosCemetery_EventScript_OldWoman_1:
+# 210 "data/maps/PythiosCemetery/scripts.pory"
 	applymovement 12, Common_Movement_FaceUp
-# 181 "data/maps/PythiosCemetery/scripts.pory"
+# 211 "data/maps/PythiosCemetery/scripts.pory"
 	waitmovement 0
-# 182 "data/maps/PythiosCemetery/scripts.pory"
+# 212 "data/maps/PythiosCemetery/scripts.pory"
+	release
+	end
+
+PythiosCemetery_EventScript_OldWoman_2:
+# 180 "data/maps/PythiosCemetery/scripts.pory"
+	msgbox PythiosCemetery_EventScript_OldWoman_Text_1
+# 181 "data/maps/PythiosCemetery/scripts.pory"
+	closemessage
+# 183 "data/maps/PythiosCemetery/scripts.pory"
+	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_SNOM_ICE_STONE
+# 184 "data/maps/PythiosCemetery/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PythiosCemetery_EventScript_OldWoman_5
+# 191 "data/maps/PythiosCemetery/scripts.pory"
+	getcaughtmon SPECIES_SNOM
+# 192 "data/maps/PythiosCemetery/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq PythiosCemetery_EventScript_OldWoman_8
+	goto PythiosCemetery_EventScript_OldWoman_1
+
+PythiosCemetery_EventScript_OldWoman_5:
+# 186 "data/maps/PythiosCemetery/scripts.pory"
+	delay 20
+# 187 "data/maps/PythiosCemetery/scripts.pory"
+	startquest QUEST_SNOM_ICE_STONE
+	goto PythiosCemetery_EventScript_OldWoman_1
+
+PythiosCemetery_EventScript_OldWoman_8:
+# 194 "data/maps/PythiosCemetery/scripts.pory"
+	speakername PythiosCemetery_EventScript_OldWoman_Text_0
+# 195 "data/maps/PythiosCemetery/scripts.pory"
+	msgbox PythiosCemetery_EventScript_OldWoman_Text_2
+# 196 "data/maps/PythiosCemetery/scripts.pory"
+	closemessage
+# 197 "data/maps/PythiosCemetery/scripts.pory"
+	checkforspecies SPECIES_SNOM, OPEN_PARTY_SCREEN, PythiosCemetery_EventScript_OldWoman_ReactToSnom
+# 199 "data/maps/PythiosCemetery/scripts.pory"
+	speakername PythiosCemetery_EventScript_OldWoman_Text_0
+# 200 "data/maps/PythiosCemetery/scripts.pory"
+	msgbox PythiosCemetery_EventScript_OldWoman_Text_3
+# 201 "data/maps/PythiosCemetery/scripts.pory"
+	closemessage
+	goto PythiosCemetery_EventScript_OldWoman_1
+
+
+PythiosCemetery_EventScript_OldWoman_ReactToSnom::
+# 218 "data/maps/PythiosCemetery/scripts.pory"
+	delay 20
+# 219 "data/maps/PythiosCemetery/scripts.pory"
+	applymovement 12, Common_Movement_ExclamationMark
+# 220 "data/maps/PythiosCemetery/scripts.pory"
+	waitmovement 0
+# 221 "data/maps/PythiosCemetery/scripts.pory"
+	speakername PythiosCemetery_EventScript_OldWoman_Text_0
+# 222 "data/maps/PythiosCemetery/scripts.pory"
+	msgbox PythiosCemetery_EventScript_OldWoman_ReactToSnom_Text_0
+# 223 "data/maps/PythiosCemetery/scripts.pory"
+	closemessage
+# 224 "data/maps/PythiosCemetery/scripts.pory"
+	giveitem ITEM_ICE_STONE
+# 225 "data/maps/PythiosCemetery/scripts.pory"
+	speakername PythiosCemetery_EventScript_OldWoman_Text_0
+# 226 "data/maps/PythiosCemetery/scripts.pory"
+	msgbox PythiosCemetery_EventScript_OldWoman_ReactToSnom_Text_1
+# 227 "data/maps/PythiosCemetery/scripts.pory"
+	closemessage
+# 228 "data/maps/PythiosCemetery/scripts.pory"
+	setflag FLAG_SHOWED_CEMETERY_LADY_SNOM
+# 230 "data/maps/PythiosCemetery/scripts.pory"
+	delay 20
+# 231 "data/maps/PythiosCemetery/scripts.pory"
+	completequest QUEST_SNOM_ICE_STONE
+# 233 "data/maps/PythiosCemetery/scripts.pory"
 	release
 	end
 
@@ -304,11 +380,46 @@ PythiosCemetery_EventScript_OldWoman_Text_0:
 	.string "Old Woman$"
 
 PythiosCemetery_EventScript_OldWoman_Text_1:
-# 178 "data/maps/PythiosCemetery/scripts.pory"
+# 180 "data/maps/PythiosCemetery/scripts.pory"
 	.string "People tend to stay away from\n"
 	.string "cemeteries, so the graves fall into\l"
 	.string "ruin. I'm trying to clean some of them\l"
-	.string "up.$"
+	.string "up.\p"
+	.string "There's an {COLOR GREEN}Ice-type Bug Pokémon{COLOR DARK_GRAY} that\n"
+	.string "especially likes to creep around the\l"
+	.string "graves {COLOR GREEN}at night{COLOR DARK_GRAY}. If you help catch one,\l"
+	.string "let me know.$"
+
+PythiosCemetery_EventScript_OldWoman_Text_2:
+# 195 "data/maps/PythiosCemetery/scripts.pory"
+	.string "I can see it on your face... have you\n"
+	.string "found the Ice-type Bug for me?$"
+
+PythiosCemetery_EventScript_OldWoman_Text_3:
+# 200 "data/maps/PythiosCemetery/scripts.pory"
+	.string "I suppose not. Bring me the Ice-type\n"
+	.string "Bug Pokémon you've caught!$"
+
+PythiosCemetery_EventScript_OldWoman_Text_4:
+# 207 "data/maps/PythiosCemetery/scripts.pory"
+	.string "Thank you for helping with my Snom\n"
+	.string "problem, young Trainer. Now the Snom\l"
+	.string "can go on an adventure with you, and I\l"
+	.string "can be left to continue cleaning the\l"
+	.string "area.$"
+
+PythiosCemetery_EventScript_OldWoman_ReactToSnom_Text_0:
+# 222 "data/maps/PythiosCemetery/scripts.pory"
+	.string "A Snom! Ah, this makes sense!\p"
+	.string "I found this strange, cold stone in the\n"
+	.string "rocks nearby. Maybe this is what\l"
+	.string "attracted the Snom!$"
+
+PythiosCemetery_EventScript_OldWoman_ReactToSnom_Text_1:
+# 226 "data/maps/PythiosCemetery/scripts.pory"
+	.string "Snom living in the Ilios Region can\n"
+	.string "evolve using an Ice Stone. Perhaps the\l"
+	.string "Snom is looking for a life of adventure?$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt1Intro::
 # 46 "data/maps/PythiosCemetery/scripts.pory"
@@ -329,7 +440,9 @@ PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Defeat::
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat::
 # 103 "data/maps/PythiosCemetery/scripts.pory"
-	.string "Uh oh, this isn't good...!$"
+	.string "M-my Arcanine won't come out to fight!\n"
+	.string "Is it really scared of the dark?! This\l"
+	.string "isn't good...!$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_MariaIntro::
 # 128 "data/maps/PythiosCemetery/scripts.pory"

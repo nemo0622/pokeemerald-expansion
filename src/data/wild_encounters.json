@@ -15099,7 +15099,7 @@
               {
                 "min_level": 26,
                 "max_level": 29,
-                "species": "SPECIES_CLEFAIRY"
+                "species": "SPECIES_FLOETTE_BLUE_FLOWER"
               },
               {
                 "min_level": 26,
@@ -16829,7 +16829,7 @@
               {
                 "min_level": 33,
                 "max_level": 36,
-                "species": "SPECIES_CLEFAIRY"
+                "species": "SPECIES_FLOETTE"
               },
               {
                 "min_level": 33,
@@ -16859,7 +16859,7 @@
               {
                 "min_level": 33,
                 "max_level": 36,
-                "species": "SPECIES_CLEFABLE"
+                "species": "SPECIES_FLORGES"
               },
               {
                 "min_level": 33,
@@ -17689,27 +17689,27 @@
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_CHERUBI"
-              },
-              {
-                "min_level": 10,
-                "max_level": 12,
                 "species": "SPECIES_PICHU"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_SKIDDO"
+                "species": "SPECIES_FLABEBE_RED_FLOWER"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_ROCKRUFF"
+                "species": "SPECIES_FLABEBE_ORANGE_FLOWER"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_DEDENNE"
+                "species": "SPECIES_FLABEBE_BLUE_FLOWER"
+              },
+              {
+                "min_level": 10,
+                "max_level": 12,
+                "species": "SPECIES_FLABEBE_WHITE_FLOWER"
               },
               {
                 "min_level": 10,
@@ -17724,22 +17724,22 @@
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_STANTLER"
+                "species": "SPECIES_FLABEBE_YELLOW_FLOWER"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_STANTLER"
+                "species": "SPECIES_FLABEBE_YELLOW_FLOWER"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_BEAUTIFLY"
+                "species": "SPECIES_FLABEBE_YELLOW_FLOWER"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_BEAUTIFLY"
+                "species": "SPECIES_FLABEBE_YELLOW_FLOWER"
               }
             ]
           }
@@ -17793,22 +17793,22 @@
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_STANTLER"
+                "species": "SPECIES_SKIDDO"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_STANTLER"
+                "species": "SPECIES_SKIDDO"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_DUSTOX"
+                "species": "SPECIES_SKIDDO"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_DUSTOX"
+                "species": "SPECIES_SKIDDO"
               }
             ]
           }
