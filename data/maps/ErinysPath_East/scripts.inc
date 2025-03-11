@@ -101,7 +101,7 @@ ErinysPath_East_EventScript_ChimeraWalrein::
 # 59 "data/maps/ErinysPath_East/scripts.pory"
 	goto_if_set FLAG_GOT_BADGE_FOR_PIRAEUS, ErinysPath_East_EventScript_ChimeraWalrein_2
 ErinysPath_East_EventScript_ChimeraWalrein_1:
-# 115 "data/maps/ErinysPath_East/scripts.pory"
+# 119 "data/maps/ErinysPath_East/scripts.pory"
 	releaseall
 	end
 
@@ -191,6 +191,12 @@ ErinysPath_East_EventScript_ChimeraWalrein_4:
 	closemessage
 # 113 "data/maps/ErinysPath_East/scripts.pory"
 	setflag FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN
+# 115 "data/maps/ErinysPath_East/scripts.pory"
+	delay 20
+# 116 "data/maps/ErinysPath_East/scripts.pory"
+	special DoDomeConfetti
+# 117 "data/maps/ErinysPath_East/scripts.pory"
+	completequest QUEST_HELP_PIRAEUS
 	goto ErinysPath_East_EventScript_ChimeraWalrein_1
 
 ErinysPath_East_EventScript_ChimeraWalrein_5:
@@ -199,187 +205,187 @@ ErinysPath_East_EventScript_ChimeraWalrein_5:
 	goto ErinysPath_East_EventScript_ChimeraWalrein_4
 
 
-# 124 "data/maps/ErinysPath_East/scripts.pory"
-ErinysPath_East_Movement_BasculinFlee:
-# 126 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_right
-# 126 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_right
-# 127 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_down
-# 127 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_down
-# 127 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_down
-# 127 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_down
-# 127 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_down
-# 127 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_down
-# 127 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_down
-# 127 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_down
 # 128 "data/maps/ErinysPath_East/scripts.pory"
-	step_end
-
+ErinysPath_East_Movement_BasculinFlee:
+# 130 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_right
+# 130 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_right
 # 131 "data/maps/ErinysPath_East/scripts.pory"
-ErinysPath_East_Movement_TaurosFlee:
-# 133 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_right
-# 133 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_right
-# 133 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_right
-# 134 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_down
-# 134 "data/maps/ErinysPath_East/scripts.pory"
+# 131 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_down
-# 134 "data/maps/ErinysPath_East/scripts.pory"
+# 131 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_down
-# 134 "data/maps/ErinysPath_East/scripts.pory"
+# 131 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_down
-# 134 "data/maps/ErinysPath_East/scripts.pory"
+# 131 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_down
-# 134 "data/maps/ErinysPath_East/scripts.pory"
+# 131 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_down
+# 131 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_down
+# 131 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_down
+# 132 "data/maps/ErinysPath_East/scripts.pory"
+	step_end
+
 # 135 "data/maps/ErinysPath_East/scripts.pory"
-	step_end
-
+ErinysPath_East_Movement_TaurosFlee:
+# 137 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_right
+# 137 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_right
+# 137 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_right
 # 138 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_down
+# 138 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_down
+# 138 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_down
+# 138 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_down
+# 138 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_down
+# 138 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_down
+# 139 "data/maps/ErinysPath_East/scripts.pory"
+	step_end
+
+# 142 "data/maps/ErinysPath_East/scripts.pory"
 ErinysPath_East_Movement_ChimeraAdminFlee:
-# 140 "data/maps/ErinysPath_East/scripts.pory"
+# 144 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_right
-# 140 "data/maps/ErinysPath_East/scripts.pory"
+# 144 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_right
-# 140 "data/maps/ErinysPath_East/scripts.pory"
+# 144 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_right
-# 140 "data/maps/ErinysPath_East/scripts.pory"
+# 144 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_right
-# 141 "data/maps/ErinysPath_East/scripts.pory"
+# 145 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_down
-# 141 "data/maps/ErinysPath_East/scripts.pory"
+# 145 "data/maps/ErinysPath_East/scripts.pory"
 	walk_fast_down
-# 142 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_right
-# 142 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_right
-# 142 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_right
-# 142 "data/maps/ErinysPath_East/scripts.pory"
-	walk_fast_right
-# 143 "data/maps/ErinysPath_East/scripts.pory"
-	step_end
-
 # 146 "data/maps/ErinysPath_East/scripts.pory"
-ErinysPath_East_Movement_PIRAEUSApproach:
-# 148 "data/maps/ErinysPath_East/scripts.pory"
-	walk_up
-# 148 "data/maps/ErinysPath_East/scripts.pory"
-	walk_up
-# 148 "data/maps/ErinysPath_East/scripts.pory"
-	walk_up
-# 148 "data/maps/ErinysPath_East/scripts.pory"
-	walk_up
-# 148 "data/maps/ErinysPath_East/scripts.pory"
-	walk_up
-# 148 "data/maps/ErinysPath_East/scripts.pory"
-	walk_up
-# 148 "data/maps/ErinysPath_East/scripts.pory"
-	walk_up
-# 149 "data/maps/ErinysPath_East/scripts.pory"
-	walk_left
-# 149 "data/maps/ErinysPath_East/scripts.pory"
-	walk_left
-# 150 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_right
+# 146 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_right
+# 146 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_right
+# 146 "data/maps/ErinysPath_East/scripts.pory"
+	walk_fast_right
+# 147 "data/maps/ErinysPath_East/scripts.pory"
 	step_end
 
+# 150 "data/maps/ErinysPath_East/scripts.pory"
+ErinysPath_East_Movement_PIRAEUSApproach:
+# 152 "data/maps/ErinysPath_East/scripts.pory"
+	walk_up
+# 152 "data/maps/ErinysPath_East/scripts.pory"
+	walk_up
+# 152 "data/maps/ErinysPath_East/scripts.pory"
+	walk_up
+# 152 "data/maps/ErinysPath_East/scripts.pory"
+	walk_up
+# 152 "data/maps/ErinysPath_East/scripts.pory"
+	walk_up
+# 152 "data/maps/ErinysPath_East/scripts.pory"
+	walk_up
+# 152 "data/maps/ErinysPath_East/scripts.pory"
+	walk_up
 # 153 "data/maps/ErinysPath_East/scripts.pory"
-ErinysPath_East_Movement_PIRAEUSExit:
-# 155 "data/maps/ErinysPath_East/scripts.pory"
-	walk_down
-# 156 "data/maps/ErinysPath_East/scripts.pory"
 	walk_left
-# 156 "data/maps/ErinysPath_East/scripts.pory"
+# 153 "data/maps/ErinysPath_East/scripts.pory"
 	walk_left
-# 156 "data/maps/ErinysPath_East/scripts.pory"
-	walk_left
-# 156 "data/maps/ErinysPath_East/scripts.pory"
-	walk_left
+# 154 "data/maps/ErinysPath_East/scripts.pory"
+	step_end
+
 # 157 "data/maps/ErinysPath_East/scripts.pory"
+ErinysPath_East_Movement_PIRAEUSExit:
+# 159 "data/maps/ErinysPath_East/scripts.pory"
+	walk_down
+# 160 "data/maps/ErinysPath_East/scripts.pory"
+	walk_left
+# 160 "data/maps/ErinysPath_East/scripts.pory"
+	walk_left
+# 160 "data/maps/ErinysPath_East/scripts.pory"
+	walk_left
+# 160 "data/maps/ErinysPath_East/scripts.pory"
+	walk_left
+# 161 "data/maps/ErinysPath_East/scripts.pory"
 	step_end
 
 ErinysPath_East_EventScript_Trainer_ErinysPath_E_Lueroi::
-# 165 "data/maps/ErinysPath_East/scripts.pory"
-	trainerbattle_single TRAINER_ERINYSPATH_E_LUEROI, ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiIntro, ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiDefeat
-# 166 "data/maps/ErinysPath_East/scripts.pory"
-	speakername ErinysPath_East_EventScript_Trainer_ErinysPath_E_Lueroi_Text_0
-# 167 "data/maps/ErinysPath_East/scripts.pory"
-	msgbox ErinysPath_East_EventScript_Trainer_ErinysPath_E_Lueroi_Text_1
-# 168 "data/maps/ErinysPath_East/scripts.pory"
-	closemessage
 # 169 "data/maps/ErinysPath_East/scripts.pory"
+	trainerbattle_single TRAINER_ERINYSPATH_E_LUEROI, ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiIntro, ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiDefeat
+# 170 "data/maps/ErinysPath_East/scripts.pory"
+	speakername ErinysPath_East_EventScript_Trainer_ErinysPath_E_Lueroi_Text_0
+# 171 "data/maps/ErinysPath_East/scripts.pory"
+	msgbox ErinysPath_East_EventScript_Trainer_ErinysPath_E_Lueroi_Text_1
+# 172 "data/maps/ErinysPath_East/scripts.pory"
+	closemessage
+# 173 "data/maps/ErinysPath_East/scripts.pory"
 	release
 	end
 
 
 ErinysPath_East_EventScript_Trainer_ErinysPath_E_Kayley::
-# 183 "data/maps/ErinysPath_East/scripts.pory"
-	trainerbattle_single TRAINER_ERINYSPATH_E_KAYLEY, ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyIntro, ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyDefeat
-# 184 "data/maps/ErinysPath_East/scripts.pory"
-	speakername ErinysPath_East_EventScript_Trainer_ErinysPath_E_Kayley_Text_0
-# 185 "data/maps/ErinysPath_East/scripts.pory"
-	msgbox ErinysPath_East_EventScript_Trainer_ErinysPath_E_Kayley_Text_1
-# 186 "data/maps/ErinysPath_East/scripts.pory"
-	closemessage
 # 187 "data/maps/ErinysPath_East/scripts.pory"
+	trainerbattle_single TRAINER_ERINYSPATH_E_KAYLEY, ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyIntro, ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyDefeat
+# 188 "data/maps/ErinysPath_East/scripts.pory"
+	speakername ErinysPath_East_EventScript_Trainer_ErinysPath_E_Kayley_Text_0
+# 189 "data/maps/ErinysPath_East/scripts.pory"
+	msgbox ErinysPath_East_EventScript_Trainer_ErinysPath_E_Kayley_Text_1
+# 190 "data/maps/ErinysPath_East/scripts.pory"
+	closemessage
+# 191 "data/maps/ErinysPath_East/scripts.pory"
 	release
 	end
 
 
 ErinysPath_East_EventScript_BugCatcher::
-# 201 "data/maps/ErinysPath_East/scripts.pory"
-	lock
-# 202 "data/maps/ErinysPath_East/scripts.pory"
-	faceplayer
-# 203 "data/maps/ErinysPath_East/scripts.pory"
-	speakername ErinysPath_East_EventScript_BugCatcher_Text_0
-# 204 "data/maps/ErinysPath_East/scripts.pory"
-	msgbox ErinysPath_East_EventScript_BugCatcher_Text_1
 # 205 "data/maps/ErinysPath_East/scripts.pory"
-	closemessage
+	lock
 # 206 "data/maps/ErinysPath_East/scripts.pory"
+	faceplayer
+# 207 "data/maps/ErinysPath_East/scripts.pory"
+	speakername ErinysPath_East_EventScript_BugCatcher_Text_0
+# 208 "data/maps/ErinysPath_East/scripts.pory"
+	msgbox ErinysPath_East_EventScript_BugCatcher_Text_1
+# 209 "data/maps/ErinysPath_East/scripts.pory"
+	closemessage
+# 210 "data/maps/ErinysPath_East/scripts.pory"
 	release
 	end
 
 
 ErinysPath_East_EventScript_Trainer_ErinysPath_E_Roger::
-# 212 "data/maps/ErinysPath_East/scripts.pory"
-	trainerbattle_single TRAINER_ERINYSPATH_E_ROGER, ErinysPath_East_Text_Trainer_ErinysPath_E_RogerIntro, ErinysPath_East_Text_Trainer_ErinysPath_E_RogerDefeat
-# 213 "data/maps/ErinysPath_East/scripts.pory"
-	speakername ErinysPath_East_EventScript_Trainer_ErinysPath_E_Roger_Text_0
-# 214 "data/maps/ErinysPath_East/scripts.pory"
-	msgbox ErinysPath_East_EventScript_Trainer_ErinysPath_E_Roger_Text_1
-# 215 "data/maps/ErinysPath_East/scripts.pory"
-	closemessage
 # 216 "data/maps/ErinysPath_East/scripts.pory"
+	trainerbattle_single TRAINER_ERINYSPATH_E_ROGER, ErinysPath_East_Text_Trainer_ErinysPath_E_RogerIntro, ErinysPath_East_Text_Trainer_ErinysPath_E_RogerDefeat
+# 217 "data/maps/ErinysPath_East/scripts.pory"
+	speakername ErinysPath_East_EventScript_Trainer_ErinysPath_E_Roger_Text_0
+# 218 "data/maps/ErinysPath_East/scripts.pory"
+	msgbox ErinysPath_East_EventScript_Trainer_ErinysPath_E_Roger_Text_1
+# 219 "data/maps/ErinysPath_East/scripts.pory"
+	closemessage
+# 220 "data/maps/ErinysPath_East/scripts.pory"
 	release
 	end
 
 
 ErinysPath_East_EventScript_Man2::
-# 230 "data/maps/ErinysPath_East/scripts.pory"
-	lock
-# 231 "data/maps/ErinysPath_East/scripts.pory"
-	faceplayer
-# 232 "data/maps/ErinysPath_East/scripts.pory"
-	speakername ErinysPath_East_EventScript_Man2_Text_0
-# 233 "data/maps/ErinysPath_East/scripts.pory"
-	msgbox ErinysPath_East_EventScript_Man2_Text_1
 # 234 "data/maps/ErinysPath_East/scripts.pory"
-	closemessage
+	lock
 # 235 "data/maps/ErinysPath_East/scripts.pory"
+	faceplayer
+# 236 "data/maps/ErinysPath_East/scripts.pory"
+	speakername ErinysPath_East_EventScript_Man2_Text_0
+# 237 "data/maps/ErinysPath_East/scripts.pory"
+	msgbox ErinysPath_East_EventScript_Man2_Text_1
+# 238 "data/maps/ErinysPath_East/scripts.pory"
+	closemessage
+# 239 "data/maps/ErinysPath_East/scripts.pory"
 	release
 	end
 
@@ -458,52 +464,52 @@ ErinysPath_East_EventScript_ChimeraWalrein_Text_6:
 	.string "reserved on The Delphis!$"
 
 ErinysPath_East_EventScript_Trainer_ErinysPath_E_Lueroi_Text_0:
-# 166 "data/maps/ErinysPath_East/scripts.pory"
+# 170 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Lueroi$"
 
 ErinysPath_East_EventScript_Trainer_ErinysPath_E_Lueroi_Text_1:
-# 167 "data/maps/ErinysPath_East/scripts.pory"
+# 171 "data/maps/ErinysPath_East/scripts.pory"
 	.string "I'm originally from the Kanto Region.\n"
 	.string "That's a long way from here!$"
 
 ErinysPath_East_EventScript_Trainer_ErinysPath_E_Kayley_Text_0:
-# 184 "data/maps/ErinysPath_East/scripts.pory"
+# 188 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Kayley$"
 
 ErinysPath_East_EventScript_Trainer_ErinysPath_E_Kayley_Text_1:
-# 185 "data/maps/ErinysPath_East/scripts.pory"
+# 189 "data/maps/ErinysPath_East/scripts.pory"
 	.string "I hear they hold Pokémon Contests in\n"
 	.string "the Hoenn Region. I wonder if they hold\l"
 	.string "Contests in Ilios?$"
 
 ErinysPath_East_EventScript_BugCatcher_Text_0:
-# 203 "data/maps/ErinysPath_East/scripts.pory"
+# 207 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Bug Catcher$"
 
 ErinysPath_East_EventScript_BugCatcher_Text_1:
-# 204 "data/maps/ErinysPath_East/scripts.pory"
+# 208 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Some of the wild Pokémon here are...\n"
 	.string "weird. They looked like one thing, but I\l"
 	.string "caught it, and it turned into a\l"
 	.string "different Pokémon!$"
 
 ErinysPath_East_EventScript_Trainer_ErinysPath_E_Roger_Text_0:
-# 213 "data/maps/ErinysPath_East/scripts.pory"
+# 217 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Roger$"
 
 ErinysPath_East_EventScript_Trainer_ErinysPath_E_Roger_Text_1:
-# 214 "data/maps/ErinysPath_East/scripts.pory"
+# 218 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Not many people pass through this way.\n"
 	.string "Most trade goes from Sofos City, around\l"
 	.string "the south of Ilios, into the port at\l"
 	.string "Pythios Town.$"
 
 ErinysPath_East_EventScript_Man2_Text_0:
-# 232 "data/maps/ErinysPath_East/scripts.pory"
+# 236 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Man$"
 
 ErinysPath_East_EventScript_Man2_Text_1:
-# 233 "data/maps/ErinysPath_East/scripts.pory"
+# 237 "data/maps/ErinysPath_East/scripts.pory"
 	.string "In some areas, totally different\n"
 	.string "Pokémon come out during the day versus\l"
 	.string "the night. For example, Solosis is only\l"
@@ -511,33 +517,33 @@ ErinysPath_East_EventScript_Man2_Text_1:
 	.string "out at night!$"
 
 ErinysPath_East_Text_ChimeraAdminDefeated::
-# 119 "data/maps/ErinysPath_East/scripts.pory"
+# 123 "data/maps/ErinysPath_East/scripts.pory"
 	.string "First Piraeus, then you... Team Chimera\n"
 	.string "is having real problems recently.$"
 
 ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiIntro::
-# 172 "data/maps/ErinysPath_East/scripts.pory"
+# 176 "data/maps/ErinysPath_East/scripts.pory"
 	.string "It's a long road from here to Sofos\n"
 	.string "City. The views are worth the journey,\l"
 	.string "though!$"
 
 ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiDefeat::
-# 176 "data/maps/ErinysPath_East/scripts.pory"
+# 180 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Back to the Pokémon Center for me.$"
 
 ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyIntro::
-# 190 "data/maps/ErinysPath_East/scripts.pory"
+# 194 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Help my Pokémon train for our show!$"
 
 ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyDefeat::
-# 194 "data/maps/ErinysPath_East/scripts.pory"
+# 198 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Phew, great vocals!$"
 
 ErinysPath_East_Text_Trainer_ErinysPath_E_RogerIntro::
-# 219 "data/maps/ErinysPath_East/scripts.pory"
+# 223 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Gosh, this patrol is boring. Let's spice\n"
 	.string "it up!$"
 
 ErinysPath_East_Text_Trainer_ErinysPath_E_RogerDefeat::
-# 223 "data/maps/ErinysPath_East/scripts.pory"
+# 227 "data/maps/ErinysPath_East/scripts.pory"
 	.string "Darn! Out of energy!$"

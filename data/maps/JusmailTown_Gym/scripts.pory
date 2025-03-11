@@ -120,6 +120,11 @@ script JusmailTown_Gym_EventScript_Deo_DefeatedScript
     msgbox(format("That TM contains the move {COLOR GREEN}Bullet Seed{COLOR DARK_GRAY}! That's a move my Pokémon practiced by shooting seeds from the farms around here.\p You're an Acrisia University researcher, yes? You should {COLOR GREEN}return to the University{COLOR DARK_GRAY} and {COLOR GREEN}speak to the Professor{COLOR DARK_GRAY} about what to do next."))
     closemessage
 
+    delay(20)
+    completequest(QUEST_GYM_1)
+    delay(20)
+    startquest(QUEST_CHECK_AFTER_GYM_1)
+
     release
     end
 }

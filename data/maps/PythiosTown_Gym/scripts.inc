@@ -231,6 +231,14 @@ PythiosTown_Gym_EventScript_Sabella_DefeatedScript::
 # 218 "data/maps/PythiosTown_Gym/scripts.pory"
 	closemessage
 # 220 "data/maps/PythiosTown_Gym/scripts.pory"
+	delay 20
+# 221 "data/maps/PythiosTown_Gym/scripts.pory"
+	completequest QUEST_GYM_3
+# 222 "data/maps/PythiosTown_Gym/scripts.pory"
+	delay 20
+# 223 "data/maps/PythiosTown_Gym/scripts.pory"
+	startquest QUEST_GYM_4
+# 225 "data/maps/PythiosTown_Gym/scripts.pory"
 	release
 	end
 

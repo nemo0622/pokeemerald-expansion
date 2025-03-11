@@ -130,72 +130,80 @@ KalamiCity_Gym_EventScript_MattaiosDefeatScript::
 # 107 "data/maps/KalamiCity_Gym/scripts.pory"
 	closemessage
 # 109 "data/maps/KalamiCity_Gym/scripts.pory"
+	delay 20
+# 110 "data/maps/KalamiCity_Gym/scripts.pory"
+	completequest QUEST_GYM_2
+# 111 "data/maps/KalamiCity_Gym/scripts.pory"
+	delay 20
+# 112 "data/maps/KalamiCity_Gym/scripts.pory"
+	startquest QUEST_CHECK_AFTER_GYM_2
+# 114 "data/maps/KalamiCity_Gym/scripts.pory"
 	release
 	end
 
 
 KalamiCity_Gym_EventScript_Larvitar::
-# 115 "data/maps/KalamiCity_Gym/scripts.pory"
-	lock
-# 116 "data/maps/KalamiCity_Gym/scripts.pory"
-	faceplayer
-# 117 "data/maps/KalamiCity_Gym/scripts.pory"
-	speakername KalamiCity_Gym_EventScript_Larvitar_Text_0
-# 118 "data/maps/KalamiCity_Gym/scripts.pory"
-	playmoncry SPECIES_LARVITAR, CRY_MODE_NORMAL
-# 119 "data/maps/KalamiCity_Gym/scripts.pory"
-	msgbox KalamiCity_Gym_EventScript_Larvitar_Text_1
 # 120 "data/maps/KalamiCity_Gym/scripts.pory"
-	waitmoncry
+	lock
 # 121 "data/maps/KalamiCity_Gym/scripts.pory"
-	closemessage
+	faceplayer
 # 122 "data/maps/KalamiCity_Gym/scripts.pory"
-	msgbox KalamiCity_Gym_EventScript_Larvitar_Text_2
+	speakername KalamiCity_Gym_EventScript_Larvitar_Text_0
 # 123 "data/maps/KalamiCity_Gym/scripts.pory"
-	closemessage
+	playmoncry SPECIES_LARVITAR, CRY_MODE_NORMAL
 # 124 "data/maps/KalamiCity_Gym/scripts.pory"
+	msgbox KalamiCity_Gym_EventScript_Larvitar_Text_1
+# 125 "data/maps/KalamiCity_Gym/scripts.pory"
+	waitmoncry
+# 126 "data/maps/KalamiCity_Gym/scripts.pory"
+	closemessage
+# 127 "data/maps/KalamiCity_Gym/scripts.pory"
+	msgbox KalamiCity_Gym_EventScript_Larvitar_Text_2
+# 128 "data/maps/KalamiCity_Gym/scripts.pory"
+	closemessage
+# 129 "data/maps/KalamiCity_Gym/scripts.pory"
 	release
 	end
 
 
 KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Rex::
-# 133 "data/maps/KalamiCity_Gym/scripts.pory"
+# 138 "data/maps/KalamiCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_KALAMI_GYM_REX, KalamiCity_Gym_Text_Trainer_Kalami_Gym_RexIntro, KalamiCity_Gym_Text_Trainer_Kalami_Gym_RexDefeat
-# 134 "data/maps/KalamiCity_Gym/scripts.pory"
+# 139 "data/maps/KalamiCity_Gym/scripts.pory"
 	speakername KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Rex_Text_0
-# 135 "data/maps/KalamiCity_Gym/scripts.pory"
+# 140 "data/maps/KalamiCity_Gym/scripts.pory"
 	msgbox KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Rex_Text_1
-# 136 "data/maps/KalamiCity_Gym/scripts.pory"
+# 141 "data/maps/KalamiCity_Gym/scripts.pory"
 	closemessage
-# 137 "data/maps/KalamiCity_Gym/scripts.pory"
+# 142 "data/maps/KalamiCity_Gym/scripts.pory"
 	release
 	end
 
 
 KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Daniel::
-# 151 "data/maps/KalamiCity_Gym/scripts.pory"
+# 156 "data/maps/KalamiCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_KALAMI_GYM_DANIEL, KalamiCity_Gym_Text_Trainer_Kalami_Gym_DanielIntro, KalamiCity_Gym_Text_Trainer_Kalami_Gym_DanielDefeat
-# 152 "data/maps/KalamiCity_Gym/scripts.pory"
+# 157 "data/maps/KalamiCity_Gym/scripts.pory"
 	speakername KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Daniel_Text_0
-# 153 "data/maps/KalamiCity_Gym/scripts.pory"
+# 158 "data/maps/KalamiCity_Gym/scripts.pory"
 	msgbox KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Daniel_Text_1
-# 154 "data/maps/KalamiCity_Gym/scripts.pory"
+# 159 "data/maps/KalamiCity_Gym/scripts.pory"
 	closemessage
-# 155 "data/maps/KalamiCity_Gym/scripts.pory"
+# 160 "data/maps/KalamiCity_Gym/scripts.pory"
 	release
 	end
 
 
 KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Tasoula::
-# 169 "data/maps/KalamiCity_Gym/scripts.pory"
+# 174 "data/maps/KalamiCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_KALAMI_GYM_TASOULA, KalamiCity_Gym_Text_Trainer_Kalami_Gym_TasoulaIntro, KalamiCity_Gym_Text_Trainer_Kalami_Gym_TasoulaDefeat
-# 170 "data/maps/KalamiCity_Gym/scripts.pory"
+# 175 "data/maps/KalamiCity_Gym/scripts.pory"
 	speakername KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Tasoula_Text_0
-# 171 "data/maps/KalamiCity_Gym/scripts.pory"
+# 176 "data/maps/KalamiCity_Gym/scripts.pory"
 	msgbox KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Daniel_Text_1
-# 172 "data/maps/KalamiCity_Gym/scripts.pory"
+# 177 "data/maps/KalamiCity_Gym/scripts.pory"
 	closemessage
-# 173 "data/maps/KalamiCity_Gym/scripts.pory"
+# 178 "data/maps/KalamiCity_Gym/scripts.pory"
 	release
 	end
 
@@ -263,41 +271,41 @@ KalamiCity_Gym_EventScript_MattaiosDefeatScript_Text_2:
 	.string "University{COLOR DARK_GRAY} to see what's what!$"
 
 KalamiCity_Gym_EventScript_Larvitar_Text_0:
-# 117 "data/maps/KalamiCity_Gym/scripts.pory"
+# 122 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Larvitar$"
 
 KalamiCity_Gym_EventScript_Larvitar_Text_1:
-# 119 "data/maps/KalamiCity_Gym/scripts.pory"
+# 124 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Gwaah.$"
 
 KalamiCity_Gym_EventScript_Larvitar_Text_2:
-# 122 "data/maps/KalamiCity_Gym/scripts.pory"
+# 127 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Larvitar is happy to take a break from\n"
 	.string "working.$"
 
 KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Rex_Text_0:
-# 134 "data/maps/KalamiCity_Gym/scripts.pory"
+# 139 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Rex$"
 
 KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Rex_Text_1:
-# 135 "data/maps/KalamiCity_Gym/scripts.pory"
+# 140 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "We make a bunch goods here that we ship\n"
 	.string "across the region.\p"
 	.string "...I realize it's a mess in here. We're at\n"
 	.string "work, darn it!$"
 
 KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Daniel_Text_0:
-# 152 "data/maps/KalamiCity_Gym/scripts.pory"
+# 157 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Daniel$"
 
 KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Daniel_Text_1:
-# 153 "data/maps/KalamiCity_Gym/scripts.pory"
+# 158 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Our Gym produces Poké balls and other\n"
 	.string "helpful items for Trainers. We make\l"
 	.string "Kalami City a major exporter!$"
 
 KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Tasoula_Text_0:
-# 170 "data/maps/KalamiCity_Gym/scripts.pory"
+# 175 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Tasoula$"
 
 KalamiCity_Gym_Text_MattaiosIntro::
@@ -314,26 +322,26 @@ KalamiCity_Gym_Text_MattaiosDefeat::
 	.string "flashlight!$"
 
 KalamiCity_Gym_Text_Trainer_Kalami_Gym_RexIntro::
-# 140 "data/maps/KalamiCity_Gym/scripts.pory"
+# 145 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Woah woah, watch yourself! We're at\n"
 	.string "work here!$"
 
 KalamiCity_Gym_Text_Trainer_Kalami_Gym_RexDefeat::
-# 144 "data/maps/KalamiCity_Gym/scripts.pory"
+# 149 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Hmph, I guess you can get past.$"
 
 KalamiCity_Gym_Text_Trainer_Kalami_Gym_DanielIntro::
-# 158 "data/maps/KalamiCity_Gym/scripts.pory"
+# 163 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Excuse the mess, we're hard at work!$"
 
 KalamiCity_Gym_Text_Trainer_Kalami_Gym_DanielDefeat::
-# 162 "data/maps/KalamiCity_Gym/scripts.pory"
+# 167 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Well, back to work.$"
 
 KalamiCity_Gym_Text_Trainer_Kalami_Gym_TasoulaIntro::
-# 176 "data/maps/KalamiCity_Gym/scripts.pory"
+# 181 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Excuse the mess, we're hard at work!$"
 
 KalamiCity_Gym_Text_Trainer_Kalami_Gym_TasoulaDefeat::
-# 180 "data/maps/KalamiCity_Gym/scripts.pory"
+# 185 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Well, back to work.$"

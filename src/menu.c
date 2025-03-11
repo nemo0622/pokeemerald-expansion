@@ -22,6 +22,7 @@
 #include "window.h"
 #include "config/overworld.h"
 #include "constants/songs.h"
+#include "gpu_regs.h"
 
 #define DLG_WINDOW_PALETTE_NUM 15
 #define DLG_WINDOW_BASE_TILE_NUM 0x200
@@ -1986,6 +1987,23 @@ void ResetBgPositions(void)
     ChangeBgY(1, 0, BG_COORD_SET);
     ChangeBgY(2, 0, BG_COORD_SET);
     ChangeBgY(3, 0, BG_COORD_SET);
+}
+
+void ResetAllBgsCoordinatesAndBgCntRegs(void)
+{
+    SetGpuReg(REG_OFFSET_DISPCNT, 0);
+    SetGpuReg(REG_OFFSET_BG3CNT, 0);
+    SetGpuReg(REG_OFFSET_BG2CNT, 0);
+    SetGpuReg(REG_OFFSET_BG1CNT, 0);
+    SetGpuReg(REG_OFFSET_BG0CNT, 0);
+    ChangeBgX(0, 0, 0);
+    ChangeBgY(0, 0, 0);
+    ChangeBgX(1, 0, 0);
+    ChangeBgY(1, 0, 0);
+    ChangeBgX(2, 0, 0);
+    ChangeBgY(2, 0, 0);
+    ChangeBgX(3, 0, 0);
+    ChangeBgY(3, 0, 0);
 }
 
 void BgDmaFill(u32 bg, u8 value, int offset, int size)

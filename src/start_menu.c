@@ -51,6 +51,7 @@
 #include "constants/songs.h"
 #include "rtc.h"
 #include "fake_rtc.h"
+#include "quests.h"
 
 // Menu actions
 enum
@@ -69,7 +70,8 @@ enum
     MENU_ACTION_RETIRE_FRONTIER,
     MENU_ACTION_PYRAMID_BAG,
     MENU_ACTION_DEBUG,
-    MENU_ACTION_DEXNAV
+    MENU_ACTION_DEXNAV,
+    MENU_ACTION_QUEST_MENU
 };
 
 // Save status
@@ -113,6 +115,7 @@ static bool8 StartMenuBattlePyramidBagCallback(void);
 static bool8 StartMenuDebugCallback(void);
 static bool8 StartMenuDexNavCallback(void);
 static bool8 StartMenuUiMenuCallback(void);
+static bool8 QuestMenuCallback(void);
 
 // Menu callbacks
 static bool8 SaveStartCallback(void);
@@ -194,6 +197,7 @@ static const struct WindowTemplate sWindowTemplate_PyramidPeak = {
 static const u8 sText_MenuDebug[] = _("DEBUG");
 
 static const u8 sText_NewMenu[] = _("My Menu");
+static const u8 sText_QuestMenu[] = _("Quests");
 static const struct MenuAction sStartMenuItems[] =
 {
     [MENU_ACTION_POKEDEX]         = {gText_MenuPokedex, {.u8_void = StartMenuPokedexCallback}},
@@ -211,6 +215,7 @@ static const struct MenuAction sStartMenuItems[] =
     [MENU_ACTION_PYRAMID_BAG]     = {gText_MenuBag,     {.u8_void = StartMenuBattlePyramidBagCallback}},
     [MENU_ACTION_DEBUG]           = {sText_MenuDebug,   {.u8_void = StartMenuDebugCallback}},
     [MENU_ACTION_DEXNAV]          = {gText_MenuDexNav,  {.u8_void = StartMenuDexNavCallback}},
+    [MENU_ACTION_QUEST_MENU]      = {sText_QuestMenu,   {.u8_void = QuestMenuCallback}},
 };
 
 static const struct BgTemplate sBgTemplates_LinkBattleSave[] =
@@ -348,13 +353,16 @@ static void BuildNormalStartMenu(void)
     if (FlagGet(FLAG_SYS_DEXNAV_GET))
         AddStartMenuAction(MENU_ACTION_DEXNAV);
 
-    if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
-        AddStartMenuAction(MENU_ACTION_POKENAV);
+    // if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
+    //     AddStartMenuAction(MENU_ACTION_POKENAV);
+
+    if (FlagGet(FLAG_SYS_QUEST_MENU_GET))
+        AddStartMenuAction(MENU_ACTION_QUEST_MENU);
 
     AddStartMenuAction(MENU_ACTION_PLAYER);
     AddStartMenuAction(MENU_ACTION_SAVE);
     AddStartMenuAction(MENU_ACTION_OPTION);
-    AddStartMenuAction(MENU_ACTION_EXIT);
+    // AddStartMenuAction(MENU_ACTION_EXIT);
 }
 
 static void BuildDebugStartMenu(void)
@@ -1568,5 +1576,11 @@ void AppendToList(u8 *list, u8 *pos, u8 newEntry)
 static bool8 StartMenuDexNavCallback(void)
 {
     CreateTask(Task_OpenDexNavFromStartMenu, 0);
+    return TRUE;
+}
+
+static bool8 QuestMenuCallback(void)
+{
+    CreateTask(Task_QuestMenu_OpenFromStartMenu, 0);
     return TRUE;
 }

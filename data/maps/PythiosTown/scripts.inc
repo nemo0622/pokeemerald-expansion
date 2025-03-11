@@ -720,13 +720,13 @@ PythiosTown_EventScripts_PIRAEUS::
 # 419 "data/maps/PythiosTown/scripts.pory"
 	goto_if_set FLAG_MET_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_10
 PythiosTown_EventScripts_PIRAEUS_8:
-# 450 "data/maps/PythiosTown/scripts.pory"
+# 454 "data/maps/PythiosTown/scripts.pory"
 	goto_if_set FLAG_GOT_BADGE_FOR_PIRAEUS, PythiosTown_EventScripts_PIRAEUS_7
 PythiosTown_EventScripts_PIRAEUS_6:
-# 458 "data/maps/PythiosTown/scripts.pory"
+# 462 "data/maps/PythiosTown/scripts.pory"
 	goto_if_set FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_5
 PythiosTown_EventScripts_PIRAEUS_1:
-# 462 "data/maps/PythiosTown/scripts.pory"
+# 466 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
@@ -776,28 +776,32 @@ PythiosTown_EventScripts_PIRAEUS_3:
 	msgbox PythiosTown_EventScripts_PIRAEUS_Text_6
 # 445 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-# 446 "data/maps/PythiosTown/scripts.pory"
+# 447 "data/maps/PythiosTown/scripts.pory"
+	delay 20
+# 448 "data/maps/PythiosTown/scripts.pory"
+	startquest QUEST_HELP_PIRAEUS
+# 450 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
 PythiosTown_EventScripts_PIRAEUS_4:
-# 452 "data/maps/PythiosTown/scripts.pory"
+# 456 "data/maps/PythiosTown/scripts.pory"
 	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
-# 453 "data/maps/PythiosTown/scripts.pory"
+# 457 "data/maps/PythiosTown/scripts.pory"
 	msgbox PythiosTown_EventScripts_PIRAEUS_Text_7
-# 454 "data/maps/PythiosTown/scripts.pory"
+# 458 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-# 455 "data/maps/PythiosTown/scripts.pory"
+# 459 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
 PythiosTown_EventScripts_PIRAEUS_5:
-# 460 "data/maps/PythiosTown/scripts.pory"
+# 464 "data/maps/PythiosTown/scripts.pory"
 	goto Common_EventScript_Piraeus
 	goto PythiosTown_EventScripts_PIRAEUS_1
 
 PythiosTown_EventScripts_PIRAEUS_7:
-# 450 "data/maps/PythiosTown/scripts.pory"
+# 454 "data/maps/PythiosTown/scripts.pory"
 	goto_if_unset FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_4
 	goto PythiosTown_EventScripts_PIRAEUS_6
 
@@ -1143,7 +1147,7 @@ PythiosTown_EventScripts_PIRAEUS_Text_6:
 	.string "Fwahaha!$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_7:
-# 453 "data/maps/PythiosTown/scripts.pory"
+# 457 "data/maps/PythiosTown/scripts.pory"
 	.string "The Team Chimera Admin is {COLOR GREEN}east of\n"
 	.string "Pythios Town{COLOR DARK_GRAY}, last I saw. Let me know\l"
 	.string "when you've taken care of them!$"

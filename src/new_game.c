@@ -45,6 +45,7 @@
 #include "berry_powder.h"
 #include "mystery_gift.h"
 #include "union_room_chat.h"
+#include "quests.h"
 #include "constants/map_groups.h"
 #include "constants/items.h"
 
@@ -213,6 +214,7 @@ void NewGameInitData(void)
     gSaveBlock2Ptr->autoRun = FALSE;
     FlagSet(FLAG_SUPPRESS_SPEAKER_NAME);
     FakeRtc_ManuallySetTime(10, 30, 0); // sets time to 10:30 am in new game
+    QuestMenu_ResetMenuSaveData();
 }
 
 static void ResetMiniGamesRecords(void)

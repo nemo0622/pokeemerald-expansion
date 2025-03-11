@@ -1506,7 +1506,7 @@
 #define FLAG_SYS_DISABLE_BATTLE_BG                  (SYSTEM_FLAGS + 0x85) // GSC White Battle Background (thank you mudskip!) // 0x945
 #define FLAG_HARD_MODE                              (SYSTEM_FLAGS + 0x86) // Flag indicating hard mode // 0x946
 #define FLAG_HIDE_POKEMON_COLOR_TINT                (SYSTEM_FLAGS + 0x87) // Whether or not to show Jaizu's individual color tint
-#define FLAG_UNUSED_0x8E8                           (SYSTEM_FLAGS + 0x88) // Unused Flag
+#define FLAG_SYS_QUEST_MENU_GET                     (SYSTEM_FLAGS + 0x88) // add QUESTS to start menu
 #define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag
 #define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag

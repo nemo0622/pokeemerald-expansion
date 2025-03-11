@@ -443,6 +443,10 @@ script PythiosTown_EventScripts_PIRAEUS
             speakername("Piraeus")
             msgbox(format("Oh, and tell 'em {COLOR GREEN}Piraeus{COLOR DARK_GRAY} sent you! Piraeus the Strong! No, Piraeus the Wise... maybe even Piraeus the Great! Fwahaha!"))
             closemessage
+
+            delay(20)
+            startquest(QUEST_HELP_PIRAEUS)
+
             release
             end
         }

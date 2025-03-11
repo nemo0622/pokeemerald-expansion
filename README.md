@@ -23,7 +23,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 - Overworld Encounters with Wild Pokémon
     - Most routes have a few randomized locations for Pokémon to spawn
     - Shiny Pokémon are visible in the overworld!
-- DexNav functionality, including bug fixed from Emerald Seaglass
+- DexNav functionality unlocked after Gym 2, allowing for targeted Pokémon hunting
     - Including Cheat Code to show all DexNav Pokémon from the start: "JUSTSHOWME"
 - Cheat Code system, with many helpful cheats and ways to shake up repeat playthroughs!
     - Codes for 999 items, such as Rare Candies and Nuggets
@@ -34,6 +34,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
     - Normal Mode: Soft Level Caps, Standard Gym Leader teams. Can likely beat the game with most Pokémon teams, with a few battles requiring extra planning.
     - Hard Mode: Hard Level Caps, Modified Gym Leaders to be more difficult fights. Opponents gain extra levels as the game progresses, ending in a +5 level bonus to opponents. Planning before Gym battles is key, as their Pokémon have stronger moves and more coverage.
 - Various QOL Changes, such as:
+    - A dedicated Quest Menu to keep track of story objectives
     - Expanded Bag space to 50 Items
     - Shiny Indicator for wild Pokémon
     - Press L to toggle auto-run
@@ -43,11 +44,19 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
     - Reusable TMs!
     - HM Revamp ported from Emerald Seaglass
         - Pokémon who can learn HM moves can use them in the field without them taking a move slot!
+    - A variety of settings accessible in the Options menu, including:
+        - Custom, detailed battle backgrounds vs GSC-style White backgrounds
+        - Toggle the visibility of the Day/Night cycle, for those who dislike how dark it gets
+        - Toggle Unique Pokémon Tint, which adds slight color variations to individual Pokémon
 
 ## Future Development Plans
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
+    - Add items and missing old lady script to Pythios Cemetary
+    - Make Unique Palette system work for followers:
+        - Find where follower palettes are loaded and replace with UniquePalette or that other function
+    - Commission Flabebe, Floette, and Florges sprites (all red) + Floette Eternal form sprite (different shape flower)
     - Prepare for Demo release
         - Disable debug functions
         - Create "Demo" gfx for version # on title screen
@@ -58,11 +67,6 @@ MAJOR TODOS:
         - 
         - Explore AC odyssey world for other location inspo lol
 - Give all Pokémon unique Pokédex entries
-- PROPER QUEST SYSTEM: https://github.com/PokemonSanFran/pokeemerald/wiki/Unbound-Quest-Menu
-    - Should work better now that I actually understand coding lol
-    - Integrate with "Main Quest" (find Pokédex shipment, get badge 1, etc)
-    - Integrate with "University Quests" (do things for Rania and Niko for rewards)
-    - Set up with "Side Quests" (show Togepi for Eviolite in Acrisia City, etc)
 - Add Cecilily as a trainer
     - "PkMn Trainer" class, comissioned sprite or she can choose one?
     - Rewards with level 10 Johto starters
@@ -71,7 +75,7 @@ MAJOR TODOS:
     - Maybe also that upgrade-able fishing rod thing?
     - Wait until treasure catching is implemented because that's so cool!
 - Mudskip's Outfit system: https://github.com/mudskipper13/pokeemerald/tree/feature/outfits-system-rhh?tab=readme-ov-file
-    - Outfits: Default (Musa & Harper), Calem & Serena (unlocked on catching/choosing a Gen 6 starter), USUM Protagonists (unlocked w/ Gen 7 starter), Arven & Nemona (unlocked w/ Gen 9 starter), Yellow (unlocked w/ catching a Pikachu). Plus a few basic variant customizations for Musa and Harper which can be earned or bought from vendors.
+    - Outfits: Default (Amali & Harper), Calem & Serena (unlocked on catching/choosing a Gen 6 starter), USUM Protagonists (unlocked w/ Gen 7 starter), Arven & Nemona (unlocked w/ Gen 9 starter), Yellow (unlocked w/ catching a Pikachu). Plus a few basic variant customizations for Amali and Harper which can be earned or bought from vendors.
 
 
 GREEK PHRASES AND STUFF:
@@ -143,6 +147,7 @@ Many, many talented developers and artists are responsible for making this proje
 - GSC/HGSS Ruins of Alph Sliding Puzzles by [Spherical Ice](https://www.pokecommunity.com/threads/ruins-of-alph-sliding-puzzles-pokefirered.463032/)
 - Town Map feature port by Vol
 - Pokémon Color Variation by Jaizu
+- Quest System by [PokémonSanFran](https://github.com/PokemonSanFran/pokeemerald/wiki/Unbound-Quest-Menu)
 
 ### Graphics
 - Tilesets:

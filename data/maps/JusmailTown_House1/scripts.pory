@@ -142,6 +142,9 @@ script JusmailTown_House1_EventScript_EnterBuildingForFirstTime
         msgbox(format("Okay, okay, we've talked your ear off long enough. Glad to have you here!"))
         closemessage
 
+        delay(20)
+        startquest(QUEST_PLANT_20_BERRIES)
+
         warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)
         waitstate
         goto(JusmailTown_House1_EventScript_EndScript)
@@ -339,6 +342,11 @@ script JusmailTown_House1_EventScript_EnterBuilding_20BerryTreeReward
     msgbox(format("The more Berries you plant, the more people notice, darling! {COLOR GREEN}Keep planting{COLOR DARK_GRAY} Berries and caring for them, and we'll have {COLOR GREEN}more gifts{COLOR DARK_GRAY} for you."))
     closemessage
 
+    delay(20)
+    completequest(QUEST_PLANT_20_BERRIES)
+    delay(20)
+    startquest(QUEST_PLANT_50_BERRIES)
+
     warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)
     waitstate
     goto(JusmailTown_House1_EventScript_EndScript)
@@ -401,6 +409,11 @@ script JusmailTown_House1_EventScript_EnterBuilding_50BerryTreeReward
     msgbox(format("Berries in the Ilios Region are getting more popular! {COLOR GREEN}Keep planting{COLOR DARK_GRAY} Berries and caring for them, and we'll have {COLOR GREEN}more gifts{COLOR DARK_GRAY} for you."))
     closemessage
 
+    delay(20)
+    completequest(QUEST_PLANT_50_BERRIES)
+    delay(20)
+    startquest(QUEST_PLANT_100_BERRIES)
+
     warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)
     waitstate
     goto(JusmailTown_House1_EventScript_EndScript)
@@ -458,6 +471,11 @@ script JusmailTown_House1_EventScript_EnterBuilding_100BerryTreeReward
     speakername("Artist")
     msgbox(format("Thank you for everything you do for the Jusmail Town Berry Club, darling. {COLOR GREEN}Keep planting{COLOR DARK_GRAY} Berries and caring for them, and we'll have {COLOR GREEN}more gifts{COLOR DARK_GRAY} for you."))
     closemessage
+
+    delay(20)
+    completequest(QUEST_PLANT_100_BERRIES)
+    delay(20)
+    startquest(QUEST_PLANT_200_BERRIES)
 
     warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)
     waitstate
@@ -531,6 +549,10 @@ script JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward
     speakername("Artist")
     msgbox(format("There, you've {COLOR GREEN}earned a star{COLOR DARK_GRAY} for your Trainer Card. That represents your status as an elite Berry grower!\p Thank you for everything you've done, {PLAYER}. Remember to never stop caring about the environment! And of course, keep coming to visit us, darling!"))
     closemessage
+
+    delay(20)
+    special(DoDomeConfetti)
+    completequest(QUEST_PLANT_200_BERRIES)
 
     warpsilent(MAP_JUSMAIL_TOWN_HOUSE1, 6, 9)
     waitstate

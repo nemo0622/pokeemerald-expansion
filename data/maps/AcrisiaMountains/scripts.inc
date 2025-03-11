@@ -262,12 +262,12 @@ AcrisiaMountains_EventScript_LassExploringRuins::
 	speakername AcrisiaMountains_EventScript_LassExploringRuins_Text_0
 # 224 "data/maps/AcrisiaMountains/scripts.pory"
 	goto_if_unset FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS, AcrisiaMountains_EventScript_LassExploringRuins_2
-# 245 "data/maps/AcrisiaMountains/scripts.pory"
+# 257 "data/maps/AcrisiaMountains/scripts.pory"
 	msgbox AcrisiaMountains_EventScript_LassExploringRuins_Text_3
-# 246 "data/maps/AcrisiaMountains/scripts.pory"
+# 258 "data/maps/AcrisiaMountains/scripts.pory"
 	closemessage
 AcrisiaMountains_EventScript_LassExploringRuins_1:
-# 248 "data/maps/AcrisiaMountains/scripts.pory"
+# 260 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
@@ -281,6 +281,11 @@ AcrisiaMountains_EventScript_LassExploringRuins_2:
 # 230 "data/maps/AcrisiaMountains/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq AcrisiaMountains_EventScript_LassExploringRuins_5
+# 247 "data/maps/AcrisiaMountains/scripts.pory"
+	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_BALTOY_DUSK_STONE
+# 248 "data/maps/AcrisiaMountains/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq AcrisiaMountains_EventScript_LassExploringRuins_8
 	goto AcrisiaMountains_EventScript_LassExploringRuins_1
 
 AcrisiaMountains_EventScript_LassExploringRuins_5:
@@ -302,6 +307,17 @@ AcrisiaMountains_EventScript_LassExploringRuins_5:
 	giveitem ITEM_DUSK_STONE
 # 240 "data/maps/AcrisiaMountains/scripts.pory"
 	setflag FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS
+# 242 "data/maps/AcrisiaMountains/scripts.pory"
+	delay 20
+# 243 "data/maps/AcrisiaMountains/scripts.pory"
+	completequest QUEST_BALTOY_DUSK_STONE
+	goto AcrisiaMountains_EventScript_LassExploringRuins_1
+
+AcrisiaMountains_EventScript_LassExploringRuins_8:
+# 250 "data/maps/AcrisiaMountains/scripts.pory"
+	delay 20
+# 251 "data/maps/AcrisiaMountains/scripts.pory"
+	startquest QUEST_BALTOY_DUSK_STONE
 	goto AcrisiaMountains_EventScript_LassExploringRuins_1
 
 
@@ -465,10 +481,10 @@ AcrisiaMountains_EventScript_LassExploringRuins_Text_2:
 	.string "Thanks for showing me. Maybe I'll check\n"
 	.string "out the University for more Pokédex\l"
 	.string "information. Here, take this cool stone\l"
-	.string "I found around here.$"
+	.string "I found around the Mountains.$"
 
 AcrisiaMountains_EventScript_LassExploringRuins_Text_3:
-# 245 "data/maps/AcrisiaMountains/scripts.pory"
+# 257 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "I can't wait to check out the\n"
 	.string "University and learn more about Baltoy!\l"
 	.string "I want to figure out everything about\l"

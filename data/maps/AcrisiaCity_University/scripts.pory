@@ -137,6 +137,8 @@ script AcrisiaCity_University_EventScript_ChoosePokemon
     setrespawn(HEAL_LOCATION_ACRISIA_CITY)
     setvar(VAR_BERRY_TREES_PLANTED, 0) // resets number of berry trees planted just in case
 
+    startquest(QUEST_FIND_POKEDEX)
+
     warpsilent(MAP_ACRISIA_CITY_UNIVERSITY, 6, 12)
     waitstate
 
@@ -670,6 +672,10 @@ script AcrisiaCity_University_EventScript_EliaRatePokedex
             speakername("Prof. Elia")
             msgbox(format("Earning a Gold Star on your Trainer Card is no easy feat. This shows you have done something truly remarkable. Your research will help the Ilios Region for years to come!"))
             closemessage
+
+            delay(20)
+            special(DoDomeConfetti)
+            completequest(QUEST_COMPLETE_DEX)
         }
         else
         {
@@ -735,6 +741,11 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
             msgbox(format("The {COLOR GREEN}first Gym{COLOR DARK_GRAY} is south of here, in {COLOR GREEN}Jusmail Town{COLOR DARK_GRAY}. Come back to me with the {COLOR GREEN}first Gym Badge{COLOR DARK_GRAY} to show me your skill as a trainer!"))
             closemessage
 
+            delay(20)
+            completequest(QUEST_FIND_POKEDEX)
+            delay(20)
+            startquest(QUEST_GYM_1)
+
             // Set other vars and stuff
             setvar(VAR_INTRO_STATE, 3) // enables Niko's Pokéball event
             setflag(FLAG_HIDE_RANIA_JUSMAIL) // hides Rania for event in Jusmail
@@ -772,6 +783,11 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeOne
         setvar(VAR_INTRO_STATE, 5)
         setflag(FLAG_HIDE_RANIA_JUSMAIL) // failsafe - incase player somehow skipped rania in Jusmail
         setflag(FLAG_UNLOCKED_ACRISIA_MTNS) // allows travel into Acrisia Mountains and Riverwalk Trail
+
+        delay(20)
+        completequest(QUEST_CHECK_AFTER_GYM_1)
+        delay(20)
+        startquest(QUEST_GYM_2)
     }
     release
     end
@@ -822,6 +838,13 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeTwo
         closemessage
 
         setvar(VAR_INTRO_STATE, 6) // "Introductory" stage of game (first 2 badges) complete!
+
+        delay(20)
+        completequest(QUEST_CHECK_AFTER_GYM_2)
+        delay(20)
+        startquest(QUEST_GYM_3)
+        delay(20)
+        startquest(QUEST_COMPLETE_DEX)
     }
     release
     end

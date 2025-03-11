@@ -234,10 +234,22 @@ script AcrisiaMountains_EventScript_LassExploringRuins
             waitmovement(0)
             delay(20)
             speakername("Lass")
-            msgbox(format("Hey! That's the Pokédex entry for Baltoy!\p Thanks for showing me. Maybe I'll check out the University for more Pokédex information. Here, take this cool stone I found around here."))
+            msgbox(format("Hey! That's the Pokédex entry for Baltoy!\p Thanks for showing me. Maybe I'll check out the University for more Pokédex information. Here, take this cool stone I found around the Mountains."))
             closemessage
             giveitem(ITEM_DUSK_STONE)
             setflag(FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS)
+
+            delay(20)
+            completequest(QUEST_BALTOY_DUSK_STONE)
+        }
+        else // no baltoy (prolly first time talking to her)
+        {
+            questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_BALTOY_DUSK_STONE)
+            if(var(VAR_RESULT) == 0) // hasnt activated quest yet
+            {
+                delay(20)
+                startquest(QUEST_BALTOY_DUSK_STONE)
+            }
         }
     }
     else // already did event
