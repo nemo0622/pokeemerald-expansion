@@ -11,6 +11,14 @@
 #define FOOTPRINT(sprite)
 #endif
 
+#if B_ENEMY_MON_SHADOW_STYLE >= GEN_4
+#define SHADOW(x, y, size)  .enemyShadowXOffset = x, .enemyShadowYOffset = y, .enemyShadowSize = size,
+#define NO_SHADOW           .suppressEnemyShadow = TRUE,
+#else
+#define SHADOW(x, y, size)  .enemyShadowXOffset = 0, .enemyShadowYOffset = 0, .enemyShadowSize = 0,
+#define NO_SHADOW           .suppressEnemyShadow = FALSE,
+#endif
+
 #define SIZE_32x32 1
 #define SIZE_64x64 0
 
@@ -257,7 +265,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .abilities = { ABILITY_CELL_ASSIST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Zygarde-Cell"),
-        .cryId = CRY_TYNAMO,
+        .cryId = CRY_EKANS,
         .natDexNum = NATIONAL_DEX_ZYGARDE_CELL,
         .categoryName = _("Lost Cell"),
         .height = 1,

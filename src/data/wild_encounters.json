@@ -12291,62 +12291,62 @@
             "mons": [
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_SANDSHREW"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_POLIWAG"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_SHROOMISH"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_DUCKLETT"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PHANPY"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PANSAGE"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_GRIMER"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PANSEAR"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PANPOUR"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PANSEAR"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PANPOUR"
               }
             ]
@@ -12445,62 +12445,62 @@
             "mons": [
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_HOOTHOOT"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_SANDSHREW"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_POLIWAG"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_SHROOMISH"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_MUNNA"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PHANPY"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PANSAGE"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_GRIMER_ALOLAN"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PANSEAR"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PANPOUR"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PANSEAR"
               },
               {
                 "min_level": 2,
-                "max_level": 4,
+                "max_level": 3,
                 "species": "SPECIES_PANPOUR"
               }
             ]

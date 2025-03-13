@@ -5265,7 +5265,6 @@ static const struct LevelUpMove sTyphlosionHisuianLevelUpLearnset[] = {
     LEVEL_UP_MOVE(68, MOVE_BURN_UP),
     LEVEL_UP_MOVE(75, MOVE_ERUPTION),
     LEVEL_UP_END
-    LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_CYNDAQUIL

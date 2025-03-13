@@ -2931,6 +2931,9 @@ extern const u8 gText_DayNightCycleSetting_Off[];
 extern const u8 gText_ColorTintSetting[];
 extern const u8 gText_ColorTintSetting_On[];
 extern const u8 gText_ColorTintSetting_Off[];
+extern const u8 gText_ShadowsSetting[];
+extern const u8 gText_ShadowsSetting_On[];
+extern const u8 gText_ShadowsSetting_Off[];
 
 ////side quests
 //generic strings

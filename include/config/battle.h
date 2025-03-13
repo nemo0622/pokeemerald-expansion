@@ -292,4 +292,7 @@
 #define B_POOL_RULE_ITEM_CLAUSE             TRUE  // Only allow each item to be picked once
 #define B_POOL_RULES_USE_ITEM_EXCLUSIONS    FALSE // Exclude items listed in poolItemClauseExclusions
 
+// Pokémon battle sprite settings
+#define B_ENEMY_MON_SHADOW_STYLE        GEN_LATEST // In Gen4+, all enemy Pokemon will have a shadow drawn beneath them.
+
 #endif // GUARD_CONFIG_BATTLE_H

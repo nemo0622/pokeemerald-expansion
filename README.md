@@ -53,11 +53,20 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - Snag ravepossum updates to bw-summary-screen, adding rename and relearn moves from summary screen (https://github.com/rh-hideout/pokeemerald-expansion/compare/master...ravepossum:pokeemerald-expansion:bw_summary_screen_expansion)
+    - BUG: Froslass's palette is fucked!
+    - BUG: Zoroark's sprite flickers when animating
+    - BUG: Give Hisuian Decidueye a real overworld sprite
+    - BUG: Frosmoth palettes fucked
+    - Add Choose Follower in Party Menu feature from pawwkie page
+    - MORE CLEAR TEAM CHIMERA PLAN: to overexploit Pokémon and nature however they can
+        - See Lazarus Taxa as an opportunity to control the power of the past, directly mentioning how they already do so by using fossil fuels
+        - Talk about how the past needs to return, and how nature is meant to bend to human will
+        - Ultimate plan: to use Celebi's time powers and Ho-oh's life regeneration powers to convert legendary dogs into paradox forms, giving them control over land (gouging fire), sea (walking wake), and sky (raging bolt). They'll take oil from the sea floor with Walking Wake, strip mountains for coal with Gouging Fire, and summon lightning to supercharge their machines with Raging Bolt.
+            - Make the Admin in Pythios Cemetery talk more about their plans, to include some level of motivation in the demo (say something about how they meet in Pythios Cemetery for clues about lost, ancient power, and how they vow to control it soon)
     - Prepare for Demo release
         - Disable debug functions
         - Create "Demo" gfx for version # on title screen
-        - Create "demo disclaimer" PDF (acknowledge possibility for bugs & changes, placeholder sprites, etc)
+        - Create "demo disclaimer" trigger in Acrisia City, acknowledging potential placeholder sprites and bugs
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 

@@ -27,8 +27,9 @@
 #define tWindowFrameType data[6]
 #define TDifficulty data[7]
 #define TBattleBgOff data[8]
-#define TNightCycle data[9]
-#define TColorTint data[10]
+#define TShadowsOff data[9]
+#define TNightCycle data[10]
+#define TColorTint data[11]
 
 // vanilla
 enum Page1
@@ -48,6 +49,7 @@ enum Page2
 {
     MENUITEM_DIFFICULTY,
     MENUITEM_BATTLEBG,
+    MENUITEM_SHADOWS,
     MENUITEM_NIGHTCYCLE,
     MENUITEM_COLORTINT,
     MENUITEM_CANCEL_PG2,
@@ -71,6 +73,7 @@ enum
 // page 2: custom
 #define YPOS_DIFFICULTY   (MENUITEM_DIFFICULTY * 16)
 #define YPOS_BATTLEBG     (MENUITEM_BATTLEBG * 16)
+#define YPOS_SHADOWS      (MENUITEM_SHADOWS * 16)
 #define YPOS_NIGHTCYCLE   (MENUITEM_NIGHTCYCLE * 16)
 #define YPOS_COLORTINT    (MENUITEM_COLORTINT * 16)
 
@@ -108,6 +111,8 @@ static u8   NightCycle_ProcessInput(u8 selection);
 static void NightCycle_DrawChoices(u8 selection);
 static u8   ColorTint_ProcessInput(u8 selection);
 static void ColorTint_DrawChoices(u8 selection);
+static u8   Shadows_ProcessInput(u8 selection);
+static void Shadows_DrawChoices(u8 selection);
 
 EWRAM_DATA static bool8 sArrowPressed = FALSE;
 EWRAM_DATA static u8 sCurrPage = 0;
@@ -131,6 +136,7 @@ static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
 {
     [MENUITEM_DIFFICULTY]      = gText_DifficultySetting,
     [MENUITEM_BATTLEBG]        = gText_BattleBg,
+    [MENUITEM_SHADOWS]         = gText_ShadowsSetting,
     [MENUITEM_NIGHTCYCLE]      = gText_DayNightCycleSetting,
     [MENUITEM_COLORTINT]       = gText_ColorTintSetting,
     [MENUITEM_CANCEL_PG2]      = gText_OptionMenuCancel,
@@ -210,6 +216,7 @@ static void ReadAllCurrentSettings(u8 taskId)
     // custom page2 settings below
     gTasks[taskId].TDifficulty = FlagGet(FLAG_HARD_MODE);
     gTasks[taskId].TBattleBgOff = FlagGet(FLAG_SYS_DISABLE_BATTLE_BG);
+    gTasks[taskId].TShadowsOff = FlagGet(FLAG_HIDE_BATTLE_SHADOWS);
     gTasks[taskId].TNightCycle = FlagGet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE);
     gTasks[taskId].TColorTint = FlagGet(FLAG_HIDE_POKEMON_COLOR_TINT);
 }
@@ -233,6 +240,7 @@ static void DrawOptionsPg2(u8 taskId)
     ReadAllCurrentSettings(taskId);
     Difficulty_DrawChoices(gTasks[taskId].TDifficulty);
     BattleBg_DrawChoices(gTasks[taskId].TBattleBgOff);
+    Shadows_DrawChoices(gTasks[taskId].TShadowsOff);
     NightCycle_DrawChoices(gTasks[taskId].TNightCycle);
     ColorTint_DrawChoices(gTasks[taskId].TColorTint);
     // new settings here
@@ -534,6 +542,13 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
             if (previousOption != gTasks[taskId].TBattleBgOff)
                 BattleBg_DrawChoices(gTasks[taskId].TBattleBgOff);
             break;
+        case MENUITEM_SHADOWS:
+            previousOption = gTasks[taskId].TShadowsOff;
+            gTasks[taskId].TShadowsOff = Shadows_ProcessInput(gTasks[taskId].TShadowsOff);
+
+            if (previousOption != gTasks[taskId].TShadowsOff)
+                Shadows_DrawChoices(gTasks[taskId].TShadowsOff);
+            break;
         case MENUITEM_NIGHTCYCLE:
             previousOption = gTasks[taskId].TNightCycle;
             gTasks[taskId].TNightCycle = NightCycle_ProcessInput(gTasks[taskId].TNightCycle);
@@ -571,6 +586,7 @@ static void Task_OptionMenuSave(u8 taskId)
     // add custom page2 settings here
     gTasks[taskId].TDifficulty == 0 ? FlagClear(FLAG_HARD_MODE) : FlagSet(FLAG_HARD_MODE);
     gTasks[taskId].TBattleBgOff == 0 ? FlagClear(FLAG_SYS_DISABLE_BATTLE_BG) : FlagSet(FLAG_SYS_DISABLE_BATTLE_BG);
+    gTasks[taskId].TShadowsOff == 0 ? FlagClear(FLAG_HIDE_BATTLE_SHADOWS) : FlagSet(FLAG_HIDE_BATTLE_SHADOWS);
     gTasks[taskId].TNightCycle == 0 ? FlagClear(FLAG_INVISIBLE_DAY_NIGHT_CYCLE) : FlagSet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE);
     gTasks[taskId].TColorTint == 0 ? FlagClear(FLAG_HIDE_POKEMON_COLOR_TINT) : FlagSet(FLAG_HIDE_POKEMON_COLOR_TINT);
 
@@ -885,6 +901,20 @@ static u8 ColorTint_ProcessInput(u8 selection)
     return selection;
 }
 
+static u8 Shadows_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        if(selection == 0)
+            selection = 1;
+        else
+            selection = 0;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
 static void BattleBg_DrawChoices(u8 selection)
 {
     u8 styles[2];
@@ -923,6 +953,16 @@ static void ColorTint_DrawChoices(u8 selection)
     styles[selection] = 1;
     DrawOptionMenuChoice(gText_ColorTintSetting_On, 104, YPOS_COLORTINT, styles[0]);
     DrawOptionMenuChoice(gText_ColorTintSetting_Off, GetStringRightAlignXOffset(FONT_NORMAL, gText_ColorTintSetting_On, 198), YPOS_COLORTINT, styles[1]);
+}
+
+static void Shadows_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+    DrawOptionMenuChoice(gText_ShadowsSetting_On, 104, YPOS_SHADOWS, styles[0]);
+    DrawOptionMenuChoice(gText_ShadowsSetting_Off, GetStringRightAlignXOffset(FONT_NORMAL, gText_ShadowsSetting_On, 198), YPOS_SHADOWS, styles[1]);
 }
 
 static void DrawHeaderText(void)

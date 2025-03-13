@@ -1715,6 +1715,9 @@ const u8 gText_DayNightCycleSetting_Off[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}
 const u8 gText_ColorTintSetting[] = _("{PKMN} Tint");
 const u8 gText_ColorTintSetting_On[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Unique");
 const u8 gText_ColorTintSetting_Off[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}No Tint");
+const u8 gText_ShadowsSetting[] = _("Battle Shadows");
+const u8 gText_ShadowsSetting_On[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}On");
+const u8 gText_ShadowsSetting_Off[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Off");
 
 //// side quest data
 //generic strings
