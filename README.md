@@ -47,17 +47,16 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
     - A variety of settings accessible in the Options menu, including:
         - Custom, detailed battle backgrounds vs GSC-style White backgrounds
         - Toggle the visibility of the Day/Night cycle, for those who dislike how dark it gets
+        - Toggle shadows under Pokémon in battle
         - Toggle Unique Pokémon Tint, which adds slight color variations to individual Pokémon
+    - Choose which Pokémon you want to follow you (or disable follower altogether) from party menu
 
 ## Future Development Plans
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - BUG: Froslass's palette is fucked!
-    - BUG: Zoroark's sprite flickers when animating
-    - BUG: Give Hisuian Decidueye a real overworld sprite
-    - BUG: Frosmoth palettes fucked
-    - Add Choose Follower in Party Menu feature from pawwkie page
+    - BUG: Magnemite follower causes Lum Berry tree palette to bug. sigh
+        - Probably the case of a repeat palette, similar to Swinub?
     - MORE CLEAR TEAM CHIMERA PLAN: to overexploit Pokémon and nature however they can
         - See Lazarus Taxa as an opportunity to control the power of the past, directly mentioning how they already do so by using fossil fuels
         - Talk about how the past needs to return, and how nature is meant to bend to human will
@@ -158,6 +157,7 @@ Many, many talented developers and artists are responsible for making this proje
 - Town Map feature port by Vol
 - Pokémon Color Variation by Jaizu
 - Quest System by [PokémonSanFran](https://github.com/PokemonSanFran/pokeemerald/wiki/Unbound-Quest-Menu)
+- Set Preferred Follower from Party Menu by Kasen
 
 ### Graphics
 - Tilesets:

@@ -207,6 +207,7 @@ void NewGameInitData(void)
     WipeTrainerNameRecords();
     ResetTrainerHillResults();
     ResetContestLinkResults();
+    gSaveBlock3Ptr->followerIndex = OW_FOLLOWER_NOT_SET;
 #if USE_DEXNAV_SEARCH_LEVELS == TRUE
     memset(gSaveBlock1Ptr->dexNavSearchLevels, 0, sizeof(gSaveBlock1Ptr->dexNavSearchLevels));
 #endif

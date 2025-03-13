@@ -2914,6 +2914,17 @@ extern const u8 gText_PlayerScurriedBackHome[];
 
 extern const u8 gText_ShinyIndicator[];
 
+// Follower party menu
+extern const u8 gText_Follower[];
+extern const u8 gText_FollowerSet[];
+extern const u8 gText_FollowerReturn[];
+extern const u8 gText_FollowerUnset[];
+extern const u8 gText_FollowerPreferred[];
+extern const u8 gText_FollowerDefaulted[];
+extern const u8 gText_FollowerFainted[];
+extern const u8 gText_FollowerReturnedToBall[];
+extern const u8 gText_DoWhatWithFollower[];
+
 extern const u8 gText_SmallDot[];
 extern const u8 gText_LargeDot[];
 extern const u8 gText_PageNav[];
