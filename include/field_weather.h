@@ -4,7 +4,7 @@
 #include "sprite.h"
 #include "constants/field_weather.h"
 
-#define TAG_WEATHER_START 0x1200
+#define TAG_WEATHER_START 0x2000 // changed from 0x1200 because 0x1124 (PAL_DYNAMIC) + 220 (Swinub's species num) equaled 0x1200, conflicting with it and bugging swinub. I think
 enum {
     GFXTAG_CLOUD = TAG_WEATHER_START,
     GFXTAG_FOG_H,

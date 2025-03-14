@@ -55,8 +55,6 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - BUG: Magnemite follower causes Lum Berry tree palette to bug. sigh
-        - Probably the case of a repeat palette, similar to Swinub?
     - MORE CLEAR TEAM CHIMERA PLAN: to overexploit Pokémon and nature however they can
         - See Lazarus Taxa as an opportunity to control the power of the past, directly mentioning how they already do so by using fossil fuels
         - Talk about how the past needs to return, and how nature is meant to bend to human will
