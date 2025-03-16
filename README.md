@@ -113,8 +113,6 @@ GREEK PHRASES AND STUFF:
         - Fishing Rod locations (Good/Super rods still need places)
         - Safari Zone?
         - Dive locations
-        - Espathra (bike) give location
-            - Probably on one of the islands?
         - Unlock seeing wild Pokémon natures and Abilities
             - Tutorial: https://www.pokecommunity.com/threads/simple-modifications-directory.416647/post-10893555
             - Implement above feature using flag in "if" statements. Unlock flag via sidequest
@@ -123,6 +121,7 @@ GREEK PHRASES AND STUFF:
         - Wishing Star mart location
         - Ogerpon gift event
             - Reward for helping Daycare / zoo area?
+        - Eternal Flower Floette gift event
         - Cabin (secret base) decor shops!
             - Decor merchants in EVERY POKEMART selling some area-themed stuff (ex: decor merchant in Pythios Town selling candle decor from Zaebucca's Decoration & Furniture tileset)
             - Large shop in Sofos City or another city dedicated to decorations?

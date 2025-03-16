@@ -804,11 +804,11 @@ Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_RIVERWALK_TRAIL_W_MARGAREY === /* Battle Girl moved to Riverwalk Trail West */
-Name: Fraia
-Class: Battle Girl
-Pic: Battle Girl
+Name: Margarey
+Class: Triathlete
+Pic: Cycling Triathlete F
 Gender: Female
-Music: Intense
+Music: Female
 Double Battle: No
 AI: Check Bad Move / Check Viability
 Party Size: 2

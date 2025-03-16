@@ -1817,16 +1817,16 @@ F_TRAINER_FEMALE |
     [TRAINER_RIVERWALK_TRAIL_W_MARGAREY] =
     {
 #line 807
-        .trainerName = _("Fraia"),
+        .trainerName = _("Margarey"),
 #line 808
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
+        .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 809
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .encounterMusic_gender = 
 #line 810
 F_TRAINER_FEMALE | 
 #line 811
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 812
         .doubleBattle = FALSE,
 #line 813

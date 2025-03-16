@@ -2678,18 +2678,18 @@ static void PssScroll(u8 taskId)
             SetGpuRegBits(REG_OFFSET_BG1CNT, BGCNT_MOSAIC);
     }
     
-    // build up mosaic effect
-    if (tScrollState <= 3)
-    {
-        tMosaicStrength += 1;
-        SetGpuReg(REG_OFFSET_MOSAIC, (tMosaicStrength & 15) * 17);
-    }
-    // build down mosaic effect
-    if (tScrollState > 3)
-    {
-        tMosaicStrength -= 1;
-        SetGpuReg(REG_OFFSET_MOSAIC, (tMosaicStrength & 15) * 17);
-    }
+    // // build up mosaic effect
+    // if (tScrollState <= 3)
+    // {
+    //     tMosaicStrength += 1;
+    //     SetGpuReg(REG_OFFSET_MOSAIC, (tMosaicStrength & 15) * 17);
+    // }
+    // // build down mosaic effect
+    // if (tScrollState > 3)
+    // {
+    //     tMosaicStrength -= 1;
+    //     SetGpuReg(REG_OFFSET_MOSAIC, (tMosaicStrength & 15) * 17);
+    // }
 
     tScrollState++;
 
@@ -3169,13 +3169,13 @@ static void Task_ShowEffectTilemap(u8 taskId)
         SetGpuRegBits(REG_OFFSET_BG1CNT, BGCNT_MOSAIC);
         tMoveTaskState++;
     }
-    // attenuate mosaic effect
-    else if (tMoveTaskState <= 4)
-    {
-        tMosaicStrength -= 1;
-        SetGpuReg(REG_OFFSET_MOSAIC, (tMosaicStrength & 15) * 17);
-        tMoveTaskState++;
-    }
+    // // attenuate mosaic effect
+    // else if (tMoveTaskState <= 4)
+    // {
+    //     tMosaicStrength -= 1;
+    //     SetGpuReg(REG_OFFSET_MOSAIC, (tMosaicStrength & 15) * 17);
+    //     tMoveTaskState++;
+    // }
     // finish mosaic effect and print text
     else
     {
@@ -3221,13 +3221,13 @@ static void Task_HideEffectTilemap(u8 taskId)
 
         tMoveTaskState++;
     }
-    // dial up mosaic effect over time
-    else if (tMoveTaskState < 5)
-    {
-        tMosaicStrength++;
-        SetGpuReg(REG_OFFSET_MOSAIC, (tMosaicStrength & 15) * 17);
-        tMoveTaskState++;
-    }
+    // // dial up mosaic effect over time
+    // else if (tMoveTaskState < 5)
+    // {
+    //     tMosaicStrength++;
+    //     SetGpuReg(REG_OFFSET_MOSAIC, (tMosaicStrength & 15) * 17);
+    //     tMoveTaskState++;
+    // }
     // hide BG and clear mosaic effect
     else
     {
@@ -3460,19 +3460,19 @@ static void PrintTextOnWindow(u8 windowId, const u8 *string, u8 x, u8 y, u8 line
 // need to be compressed more vertically
 static void PrintTextOnWindow_BW_Font(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId)
 {
-    PrintTextOnWindowWithFont(windowId, string, x, y, lineSpacing, colorId, FONT_BW_SUMMARY_SCREEN);
+    PrintTextOnWindowWithFont(windowId, string, x, y, lineSpacing, 0, FONT_BW_SUMMARY_SCREEN);
 }
 
 static void PrintTextOnWindowToFitPx(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId, u32 width)
 {
     u32 fontId = GetFontIdToFit(string, FONT_SHORT, 0, width);
-    PrintTextOnWindowWithFont(windowId, string, x, y, lineSpacing, colorId, fontId);
+    PrintTextOnWindowWithFont(windowId, string, x, y, lineSpacing, 0, fontId);
 }
 
 static void PrintTextOnWindowToFitPx_WithFont(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId, u32 fontId, u32 width)
 {
     u32 font = GetFontIdToFit(string, fontId, 0, width);
-    PrintTextOnWindowWithFont(windowId, string, x, y, lineSpacing, colorId, font);
+    PrintTextOnWindowWithFont(windowId, string, x, y, lineSpacing, 4, font);
 }
 
 static void PrintMonPortraitInfo(void)
@@ -3546,31 +3546,31 @@ static void PrintPageNamesAndStats(void)
     int iconXPos;
     int skillsLabelWidth = 78;
 
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_INFO_TITLE, sText_PkmnInfo, 2, 1, 0, 1);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_TITLE, sText_PkmnSkills, 2, 1, 0, 1);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_BATTLE_MOVES_TITLE, sText_BattleMoves, 2, 1, 0, 1);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_CONTEST_MOVES_TITLE, sText_ContestMoves, 2, 1, 0, 1);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_INFO_TITLE, sText_PkmnInfo, 2, 1, 0, 0);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_TITLE, sText_PkmnSkills, 2, 1, 0, 0);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_BATTLE_MOVES_TITLE, sText_BattleMoves, 2, 1, 0, 0);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_CONTEST_MOVES_TITLE, sText_ContestMoves, 2, 1, 0, 0);
 
     stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_Cancel, 62);
     iconXPos = stringXPos - 16;
     if (iconXPos < 0)
         iconXPos = 0;
     PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_CANCEL, FALSE, iconXPos);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_CANCEL, sText_Cancel, stringXPos, 1, 0, 1);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_CANCEL, sText_Cancel, stringXPos, 1, 0, 0);
 
     stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_Info, 62);
     iconXPos = stringXPos - 16;
     if (iconXPos < 0)
         iconXPos = 0;
     PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_INFO, FALSE, iconXPos);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_INFO, sText_Info, stringXPos, 1, 0, 1);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_INFO, sText_Info, stringXPos, 1, 0, 0);
 
     stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_Switch, 62);
     iconXPos = stringXPos - 16;
     if (iconXPos < 0)
         iconXPos = 0;
     PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_SWITCH, FALSE, iconXPos);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_SWITCH, sText_Switch, stringXPos, 1, 0, 1);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_SWITCH, sText_Switch, stringXPos, 1, 0, 0);
 
     if (BW_SUMMARY_IV_EV_DISPLAY != BW_IV_EV_HIDDEN)
     {
@@ -3581,14 +3581,14 @@ static void PrintPageNamesAndStats(void)
             if (iconXPos < 0)
                 iconXPos = 0;
             PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_IVS, FALSE, iconXPos);
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_IVS, sText_ViewIVs_Graded, stringXPos, 1, 0, 1);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_IVS, sText_ViewIVs_Graded, stringXPos, 1, 0, 0);
 
             stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_ViewEVs_Graded, skillsLabelWidth);
             iconXPos = stringXPos - 16;
             if (iconXPos < 0)
                 iconXPos = 0;
             PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_EVS, FALSE, iconXPos);
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_EVS, sText_ViewEVs_Graded, stringXPos, 1, 0, 1);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_EVS, sText_ViewEVs_Graded, stringXPos, 1, 0, 0);
         }
         else // precise display
         {
@@ -3597,14 +3597,14 @@ static void PrintPageNamesAndStats(void)
             if (iconXPos < 0)
                 iconXPos = 0;
             PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_IVS, FALSE, iconXPos);
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_IVS, sText_ViewIVs, stringXPos, 1, 0, 1);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_IVS, sText_ViewIVs, stringXPos, 1, 0, 0);
 
             stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_ViewEVs, skillsLabelWidth);
             iconXPos = stringXPos - 16;
             if (iconXPos < 0)
                 iconXPos = 0;
             PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_EVS, FALSE, iconXPos);
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_EVS, sText_ViewEVs, stringXPos, 1, 0, 1);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_EVS, sText_ViewEVs, stringXPos, 1, 0, 0);
         }
 
         stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_ViewStats, skillsLabelWidth);
@@ -3612,7 +3612,7 @@ static void PrintPageNamesAndStats(void)
         if (iconXPos < 0)
             iconXPos = 0;
         PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_STATS, FALSE, iconXPos);
-        PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_STATS, sText_ViewStats, stringXPos, 1, 0, 1);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_STATS, sText_ViewStats, stringXPos, 1, 0, 0);
     }
 
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, sText_NextLv, 0, 4, 0, 0);
@@ -4425,7 +4425,7 @@ static void PrintMoveNameAndPP(u8 moveIndex)
 
     if (move != 0)
     {
-        PrintTextOnWindowToFitPx_WithFont(moveNameWindowId, GetMoveName(move), 3, moveIndex * 28 + 2, 0, 12, fontId, WindowWidthPx(moveNameWindowId) - 3);
+        PrintTextOnWindowToFitPx_WithFont(moveNameWindowId, GetMoveName(move), 3, moveIndex * 28 + 2, 0, 4, fontId, WindowWidthPx(moveNameWindowId) - 3);
         pp = CalculatePPWithBonus(move, summary->ppBonuses, moveIndex);
         ConvertIntToDecimalStringN(gStringVar1, summary->pp[moveIndex], STR_CONV_MODE_RIGHT_ALIGN, 2);
         ConvertIntToDecimalStringN(gStringVar2, pp, STR_CONV_MODE_RIGHT_ALIGN, 2);
@@ -4438,12 +4438,12 @@ static void PrintMoveNameAndPP(u8 moveIndex)
     }
     else
     {
-        PrintTextOnWindow(moveNameWindowId, gText_OneDash, 3, moveIndex * 28 + 2, 0, 12);
+        PrintTextOnWindow(moveNameWindowId, gText_OneDash, 3, moveIndex * 28 + 2, 0, 4);
         text = gText_TwoDashes;
         ppState = 12;
     }
 
-    PrintTextOnWindowWithFont(moveNameWindowId, text, 8, moveIndex * 28 + 16, 0, ppState, fontId);
+    PrintTextOnWindowWithFont(moveNameWindowId, text, 8, moveIndex * 28 + 16, 0, 4, fontId);
 }
 
 static void PrintMovePowerAndAccuracy(u16 moveIndex)
@@ -4621,23 +4621,23 @@ static void PrintNewMoveDetailsOrCancelText(void)
 
     if (sMonSummaryScreen->newMove == MOVE_NONE)
     {
-        PrintTextOnWindow(windowId1, sText_Cancel, 0, 116, 0, 12);
+        PrintTextOnWindow(windowId1, sText_Cancel, 0, 116, 0, 4);
     }
     else
     {
         u16 move = sMonSummaryScreen->newMove;
 
         if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)
-            PrintTextOnWindowToFitPx_WithFont(windowId1, GetMoveName(move), 3, 114, 0, 12, fontId, WindowWidthPx(windowId1) - 3);
+            PrintTextOnWindowToFitPx_WithFont(windowId1, GetMoveName(move), 3, 114, 0, 0, fontId, WindowWidthPx(windowId1) - 3);
         else
-            PrintTextOnWindowToFitPx_WithFont(windowId1, GetMoveName(move), 3, 114, 0, 12, fontId, WindowWidthPx(windowId1) - 3);
+            PrintTextOnWindowToFitPx_WithFont(windowId1, GetMoveName(move), 3, 114, 0, 0, fontId, WindowWidthPx(windowId1) - 3);
 
         ConvertIntToDecimalStringN(gStringVar1, gMovesInfo[move].pp, STR_CONV_MODE_RIGHT_ALIGN, 2);
         DynamicPlaceholderTextUtil_Reset();
         DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, gStringVar1);
         DynamicPlaceholderTextUtil_SetPlaceholderPtr(1, gStringVar1);
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sMovesPPLayout);
-        PrintTextOnWindowWithFont(windowId1, gStringVar4, 8, 128, 0, 12, fontId);
+        PrintTextOnWindowWithFont(windowId1, gStringVar4, 8, 128, 0, 4, fontId);
     }
 }
 

@@ -11,7 +11,7 @@
 #define BW_IV_EV_HIDDEN                             0       // don't show IVs and EVs
 #define BW_IV_EV_GRADED                             1       // show graded values for IVs and EVs
 #define BW_IV_EV_PRECISE                            2       // show precise values for IVs and EVs
-#define BW_SUMMARY_MON_IDLE_ANIMS_FRAMES            300     // number of frames between each idle anim IF BW_SUMMARY_MON_IDLE_ANIMS is true.
+#define BW_SUMMARY_MON_IDLE_ANIMS_FRAMES            400     // number of frames between each idle anim IF BW_SUMMARY_MON_IDLE_ANIMS is true.
                                                             // for reference, Emerald runs at 60FPS by default
 
 // configs
@@ -27,7 +27,7 @@
                                                                         // out of the box the vanilla icons don't fit well, this is mostly a compatibility
                                                                         // option for people who already use custom icons everywhere else
 #define BW_SUMMARY_SCROLLING_BG                     FALSE                // enables scrolling animated background
-#define BW_SUMMARY_BG_BLEND                         TRUE                // enables alpha blending for the main UI (semi-transparency)
+#define BW_SUMMARY_BG_BLEND                         FALSE                // enables alpha blending for the main UI (semi-transparency)
 #define BW_SUMMARY_MON_IDLE_ANIMS                   TRUE                // loops the mon animations regularly as an "idle" anim
 #define BW_SUMMARY_MON_SHADOWS                      FALSE               // displays a shadow for the mon sprite
 #define BW_SUMMARY_SHOW_TERA_TYPE                   TRUE                // show tera type icons

@@ -15246,7 +15246,7 @@ static void Cmd_handleballthrow(void)
             case ITEM_DUSK_BALL:
                 i = GetTimeOfDay();
                 if (i == TIME_EVENING || i == TIME_NIGHT || gMapHeader.cave || gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
-                    ballMultiplier = (B_DUSK_BALL_MODIFIER >= GEN_7 ? 300 : 350);
+                    ballMultiplier = 500;
                 break;
             case ITEM_QUICK_BALL:
                 if (gBattleResults.battleTurnCounter == 0)
@@ -15273,6 +15273,10 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_MOON_BALL:
             {
+                i = GetTimeOfDay();
+                if (i == TIME_EVENING || i == TIME_NIGHT || gMapHeader.cave || gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
+                    ballMultiplier = 500;
+                
                 const struct Evolution *evolutions = GetSpeciesEvolutions(gBattleMons[gBattlerTarget].species);
                 if (evolutions == NULL)
                     break;
@@ -15280,7 +15284,7 @@ static void Cmd_handleballthrow(void)
                 {
                     if (evolutions[i].method == EVO_ITEM
                         && evolutions[i].param == ITEM_MOON_STONE)
-                        ballMultiplier = 400;
+                        ballMultiplier = 500;
                 }
             }
             break;
