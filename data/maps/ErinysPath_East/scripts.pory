@@ -83,7 +83,7 @@ script ErinysPath_East_EventScript_ChimeraWalrein
         waitmovement(0)
         delay(20)
         speakername("Chimera Admin")
-        msgbox(format("...Well, so much for team loyalty.\p Looks like you and Piraeus are winning for now. Mark my words, Team Chimera will make you pay for this humiliation!"))
+        msgbox(format("...Well, so much for team loyalty.\p Team Chimera must control land, sea, and sky. It is our destiny to hold the world in our hands, and one day you'll see the truth of that. I'll get you for this!"))
         closemessage
         
         applymovement(1, ErinysPath_East_Movement_ChimeraAdminFlee)
@@ -93,7 +93,7 @@ script ErinysPath_East_EventScript_ChimeraWalrein
         applymovement(4, ErinysPath_East_Movement_PIRAEUSApproach)
         waitmovement(0)
         speakername("Piraeus")
-        msgbox(format("Woah, I never thought I'd see that Chimera thug run like that! I was climbing up the cliff to ambush him, but looks like you beat me!\p Really, I owe you a lot, {PLAYER}. You've saved my ship, so I'll offer you what I can - my service.\p I'll stop at docks around {COLOR GREEN}coastal towns and islands{COLOR DARK_GRAY}. Talk to me if you want to {COLOR GREEN}sail with me{COLOR DARK_GRAY} and get places faster! You can also have {COLOR GREEN}your own room{COLOR DARK_GRAY} on The Delphis. Chaire!"))
+        msgbox(format("Woah, I never thought I'd see a Team Chimera thug run like that! I was climbing up the cliff to ambush them, but looks like you beat me!\p Really, I owe you a lot, {PLAYER}. You've saved my ship, so I'll offer you what I can - my service.\p I'll stop at docks around {COLOR GREEN}coastal towns and islands{COLOR DARK_GRAY}. Talk to me if you want to {COLOR GREEN}sail with me{COLOR DARK_GRAY} and get places faster! You can also have {COLOR GREEN}your own room{COLOR DARK_GRAY} on The Delphis. Chaire!"))
         closemessage
         applymovement(4, ErinysPath_East_Movement_PIRAEUSExit)
         delay(30)

@@ -75,7 +75,7 @@ script BronzePass_North_EventScript_Deliveryman
         trainerbattle_no_intro(TRAINER_BRONZE_PASS_CHIMERA_GRUNT, BronzePass_North_Text_ChimeraGruntDefeated)
 
         speakername("Chimera Grunt")
-        msgbox(format("The Boss is gonna freak... well, they shouldn't have sent a new recruit like me out here anyway.\p You just got lucky, kid! I'll get you for this!"))
+        msgbox(format("A Pokédex is key to our plans, we need to know where to find- ah, no, I almost let it slip!\p You just got lucky, kid! I'll get you for this!"))
         closemessage
         applymovement(2, BronzePass_North_Movement_ChimeraGruntExits)
         waitmovement(0)

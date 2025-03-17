@@ -38,6 +38,20 @@ script Overworld_EventScript_WildPokemon
     end
 }
 
+// -----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+script AcrisiaCity_DemoWarning
+{
+    lock
+    speakername("Nemo622")
+    msgbox(format("Hold on, {PLAYER}! Welcome to the Pokémon Lazarus Demo!\p Please remember that everything seen in this demo is in {COLOR GREEN}active development{COLOR DARK_GRAY}. There is no guarantee that what you see here will be reflected in the final game (although most should remain the same, as of typing this). Bugs and placeholder sprites should be anticipated, although I've done my best to polish as much as possible.\p With that said, have fun exploring the first portion of the Ilios Region! -Nemo"))
+    closemessage
+    setflag(FLAG_DID_DEMO_WARNING)
+    release
+    end
+}
+
 script AcrisiaCity_EventScript_PlayerExitsTruck
 {
     setvar(VAR_INTRO_STATE, 1)

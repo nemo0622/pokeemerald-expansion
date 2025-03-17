@@ -4113,14 +4113,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1748
-    [TRAINER_PYTHIOSCEMETERY_CHIMERA_ADMIN] =
+    [TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_3] =
     {
 #line 1749
-        .trainerName = _("Admin"),
+        .trainerName = _("Grunt"),
 #line 1750
         .trainerClass = TRAINER_CLASS_TEAM_CHIMERA,
 #line 1751
-        .trainerPic = TRAINER_PIC_CHIMERA_ADMIN_M,
+        .trainerPic = TRAINER_PIC_CHIMERA_GRUNT_M,
         .encounterMusic_gender = 
 #line 1753
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -4142,7 +4142,7 @@ F_TRAINER_FEMALE |
 #line 1761
             .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
 #line 1760
-            .lvl = 18,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -4183,12 +4183,10 @@ F_TRAINER_FEMALE |
 #line 1775
             .species = SPECIES_LINOONE_GALARIAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 1775
-            .heldItem = ITEM_CHESTO_BERRY,
 #line 1777
             .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
 #line 1776
-            .lvl = 20,
+            .lvl = 19,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
 #line 1778

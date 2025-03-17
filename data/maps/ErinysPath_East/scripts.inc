@@ -430,9 +430,10 @@ ErinysPath_East_EventScript_ChimeraWalrein_Text_2:
 ErinysPath_East_EventScript_ChimeraWalrein_Text_3:
 # 86 "data/maps/ErinysPath_East/scripts.pory"
 	.string "...Well, so much for team loyalty.\p"
-	.string "Looks like you and Piraeus are winning\n"
-	.string "for now. Mark my words, Team Chimera will\l"
-	.string "make you pay for this humiliation!$"
+	.string "Team Chimera must control land, sea, and\n"
+	.string "sky. It is our destiny to hold the world\l"
+	.string "in our hands, and one day you'll see the\l"
+	.string "truth of that. I'll get you for this!$"
 
 ErinysPath_East_EventScript_ChimeraWalrein_Text_4:
 # 95 "data/maps/ErinysPath_East/scripts.pory"
@@ -440,10 +441,10 @@ ErinysPath_East_EventScript_ChimeraWalrein_Text_4:
 
 ErinysPath_East_EventScript_ChimeraWalrein_Text_5:
 # 96 "data/maps/ErinysPath_East/scripts.pory"
-	.string "Woah, I never thought I'd see that\n"
+	.string "Woah, I never thought I'd see a Team\n"
 	.string "Chimera thug run like that! I was\l"
-	.string "climbing up the cliff to ambush him, but\l"
-	.string "looks like you beat me!\p"
+	.string "climbing up the cliff to ambush them,\l"
+	.string "but looks like you beat me!\p"
 	.string "Really, I owe you a lot, {PLAYER}.\n"
 	.string "You've saved my ship, so I'll offer you\l"
 	.string "what I can - my service.\p"

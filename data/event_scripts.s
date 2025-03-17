@@ -1139,6 +1139,10 @@ MysteryGift_EventScript_DoMysteryGift::
 	goto_if_eq VAR_RESULT, 28, MysteryGift_EventScript_Monotype_Rock
 	goto_if_eq VAR_RESULT, 29, MysteryGift_EventScript_Monotype_Steel
 	goto_if_eq VAR_RESULT, 30, MysteryGift_EventScript_Monotype_Water
+	goto_if_eq VAR_RESULT, 31, MysteryGift_EventScript_IMissJohto
+	goto_if_eq VAR_RESULT, 32, MysteryGift_EventScript_Ogerpon
+	goto_if_eq VAR_RESULT, 33, MysteryGift_EventScript_Floette
+	goto_if_eq VAR_RESULT, 34, MysteryGift_EventScript_Rockruff
 	end
 
 MysteryGift_Failed::
@@ -1470,6 +1474,50 @@ MysteryGift_EventScript_Monotype_Water::
 	bufferspeciesname STR_VAR_1, VAR_RESULT
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
 	givemon VAR_RESULT, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_IMissJohto::
+	bufferspeciesname STR_VAR_1, SPECIES_CHIKORITA
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHIKORITA
+	givemon SPECIES_CHIKORITA, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_CYNDAQUIL
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CYNDAQUIL
+	givemon SPECIES_CYNDAQUIL, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_TOTODILE
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE
+	givemon SPECIES_TOTODILE, 5
+	@ call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Ogerpon::
+	giveitem ITEM_CORNERSTONE_MASK
+	giveitem ITEM_WELLSPRING_MASK
+	giveitem ITEM_HEARTHFLAME_MASK
+	bufferspeciesname STR_VAR_1, SPECIES_OGERPON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_OGERPON
+	givemon SPECIES_OGERPON, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Floette::
+	bufferspeciesname STR_VAR_1, SPECIES_FLOETTE_ETERNAL_FLOWER
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FLOETTE_ETERNAL_FLOWER
+	givemon SPECIES_FLOETTE_ETERNAL_FLOWER, 5
+	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_Rockruff::
+	random 2 // stores 0 or 1 in VAR_RESULT, for random gender
+	bufferspeciesname STR_VAR_1, SPECIES_ROCKRUFF
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ROCKRUFF
+	givemon SPECIES_ROCKRUFF, 5, ITEM_NEVER_MELT_ICE, ITEM_MOON_BALL, NATURE_ADAMANT, 2, VAR_RESULT, 6, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_LEER, MOVE_SAND_ATTACK, MOVE_MOUNTAIN_GALE, TRUE, FALSE, TYPE_ICE
 	call MysteryGift_EventScript_ReceivedMon
 	releaseall
 	end

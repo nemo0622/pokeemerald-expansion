@@ -379,9 +379,9 @@ BronzePass_North_EventScript_Deliveryman_Text_5:
 
 BronzePass_North_EventScript_Deliveryman_Text_6:
 # 78 "data/maps/BronzePass_North/scripts.pory"
-	.string "The Boss is gonna freak... well, they\n"
-	.string "shouldn't have sent a new recruit like\l"
-	.string "me out here anyway.\p"
+	.string "A Pokédex is key to our plans, we need\n"
+	.string "to know where to find- ah, no, I almost\l"
+	.string "let it slip!\p"
 	.string "You just got lucky, kid! I'll get you for\n"
 	.string "this!$"
 

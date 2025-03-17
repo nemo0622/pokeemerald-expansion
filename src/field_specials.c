@@ -4322,6 +4322,11 @@ void GetMysteryGiftFeedback(void)
     static const u8 sText_CodeMonotype_Steel[] = _("MONO STEEL");
     static const u8 sText_CodeMonotype_Water[] = _("MONO WATER");
 
+    static const u8 sText_CodeIMissJohto[] = _("IMISSJOHTO");
+    static const u8 sText_CodeOgerpon[] = _("MASKEDOGRE");
+    static const u8 sText_CodeFloette[] = _("LEGENDS ZA");
+    static const u8 sText_CodeRockruff[] = _("HOUSESTARK");
+
     // Code 1
     if (!StringCompare(gStringVar2, sText_CodeRareCandies))
         gSpecialVar_Result = 1;
@@ -4413,6 +4418,18 @@ void GetMysteryGiftFeedback(void)
     // Code 30
     else if (!StringCompare(gStringVar2, sText_CodeMonotype_Water))
         gSpecialVar_Result = 30;
+    // Code 31
+    else if (!StringCompare(gStringVar2, sText_CodeIMissJohto))
+        gSpecialVar_Result = 31;
+    // Code 32
+    else if (!StringCompare(gStringVar2, sText_CodeOgerpon))
+        gSpecialVar_Result = 32;
+    // Code 33
+    else if (!StringCompare(gStringVar2, sText_CodeFloette))
+        gSpecialVar_Result = 33;
+    // Code 34
+    else if (!StringCompare(gStringVar2, sText_CodeRockruff))
+        gSpecialVar_Result = 34;
 
     // Invalid cheat code
     else

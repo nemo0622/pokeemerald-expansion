@@ -15357,12 +15357,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = HANDLE_EXPANDED_MOVE_NAME("LightOfRuin", "Light Of Ruin"),
         .description = COMPOUND_STRING(
             "Fires a great beam of light\n"
-            "that also hurts the user."),
+            "that hurts the user a bit."),
         .effect = EFFECT_HIT,
         .power = 140,
         .type = TYPE_FAIRY,
-        .accuracy = 90,
-        .recoil = 50,
+        .accuracy = 100,
+        .recoil = 10,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -18905,9 +18905,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Giant chunks of ice damage\n"
             "the foe. It may flinch."),
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = 90,
         .type = TYPE_ICE,
-        .accuracy = 85,
+        .accuracy = 95,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

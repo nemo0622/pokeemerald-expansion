@@ -55,25 +55,17 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - PRE-DEMO RELEASE PROJECTS:
-    - MORE CLEAR TEAM CHIMERA PLAN: to overexploit Pokémon and nature however they can
-        - See Lazarus Taxa as an opportunity to control the power of the past, directly mentioning how they already do so by using fossil fuels
-        - Talk about how the past needs to return, and how nature is meant to bend to human will
-        - Ultimate plan: to use Celebi's time powers and Ho-oh's life regeneration powers to convert legendary dogs into paradox forms, giving them control over land (gouging fire), sea (walking wake), and sky (raging bolt). They'll take oil from the sea floor with Walking Wake, strip mountains for coal with Gouging Fire, and summon lightning to supercharge their machines with Raging Bolt.
-            - Make the Admin in Pythios Cemetery talk more about their plans, to include some level of motivation in the demo (say something about how they meet in Pythios Cemetery for clues about lost, ancient power, and how they vow to control it soon)
     - Prepare for Demo release
         - Disable debug functions
-        - Create "Demo" gfx for version # on title screen
-        - Create "demo disclaimer" trigger in Acrisia City, acknowledging potential placeholder sprites and bugs
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
-        - 
+        - Kipos Town ("Garden Town") - port town on the north coast of the southern peninsula of Ilios, west of Port Pello. Covered in flowers and palm trees
+            - Home to the PokéPark, a zoo-like area for Pokémon that can be filled by the Player by donating Pokémon, money, and other resources!
+                - Another progression system and maybe another gold star location?
+                - Rewards: Ogerpon masks and eventually Ogerpon itself? OR Floette Eternal Flower?
         - Explore AC odyssey world for other location inspo lol
 - Give all Pokémon unique Pokédex entries
-- Make Unique Palette system work for followers:
-    - Find where follower palettes are loaded and replace with UniquePalette or that other function
-    - NOTE: This will require making sure all follower and battle palettes match! For gen 1-2 Pokémon, that means going in and saving over the old follower pals. This is for the best, it'll just take time
-    - Also take this time to offset the Swinub and Piloswine follower sprites or whatever to fix the palette bug
 - Add Cecilily as a trainer
     - "PkMn Trainer" class, comissioned sprite or she can choose one?
     - Rewards with level 10 Johto starters
@@ -128,11 +120,6 @@ GREEK PHRASES AND STUFF:
             - Replace dolls of Pokémon not in Ilios region: marked in include/constants/decorations.h with "// Needs Replacement" comment
             - Can also add more decorations: see include/constants/decorations.h for list
             - Make Silver Shield, Gold Shield, and Glass Ornament decorations into rewards fit to Ilios Region! (idea: replace Shields with Opal Fossil and Shocking Relic, based on Opalized fossils and the Antikythera Mechanism. Replace Glass Ornament with a statue sprite)
-
-- LAZARUS PREVIEW PLANS
-    - Preview 01 (12/6/24) - Pokémon Sunset Reveal - shows graphics, Day/Night cycle, etc.
-    - Preview 02 (12/24/24) - Pokémon Sunset Starters Reveal - shows starters + best overworld sprites for them
-    - Preview 03 (01/??/25) - Pokémon Lazarus Rename Reveal + Seaglass Feature Ports - shows Pinball, Pokémon type changes, and Wishing Well
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown when hunting
@@ -219,6 +206,13 @@ Many, many talented developers and artists are responsible for making this proje
 
 
 # Story / Region Information for me to look at
+
+STORY PLAN:
+- TEAM CHIMERA: Plans to gather Pokémon through any means necessary to traffic for profit and use to control sections of the region, like the Areios Hideout
+    - BIG BAD PLAN: Preparing to summon Ho-oh, Celebi, and the Legendary Dogs, using powers to convert the dogs to Gouging Fire, Raging Bolt, and Walking Wake
+        - Use Gouging Fire to mine for coal on land, Walking Wake to drill at sea for oil, and Raging Bolt to blast open shale (fracking) and summon storms to protect Team Chimera operations
+        - Basically, they only see the monetary value of nature, the past, and Pokémon, and this ultimate goal is the synthesis of all these ideas
+    - They see the emergence of LAZARUS TAXA as evidence for the "return of the past", seeing an opportunity for profit
 
 REGION PLAN:
     - Start in Acrisia City, based on Greek city of Larissa

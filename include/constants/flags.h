@@ -1273,7 +1273,7 @@
 #define FLAG_GOT_ABILITY_CAPSULE_KALAMI_CITY                        0x4C6 // Get Kalami City ability capsule from sailor 2
 #define FLAG_UNLOCKED_ACRISIA_MTNS                                  0x4C7 // Set after Badge 1 + talking to Prof Elia
 #define FLAG_SHOWED_CEMETERY_LADY_SNOM                              0x4C8 // showed old lady in pythios cemetery a snom
-#define FLAG_UNUSED_0x4C9                                           0x4C9 // Unused Flag
+#define FLAG_DID_DEMO_WARNING                                       0x4C9 // Encountered demo warning in acrisia city
 #define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
 #define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
 #define FLAG_UNUSED_0x4CC                                           0x4CC // Unused Flag

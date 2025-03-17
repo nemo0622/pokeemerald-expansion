@@ -1071,12 +1071,19 @@ WanderersWoods_EventScript_ChimeraEvent_Text_10:
 	.string "Grr... you're lucky my Arcanine was\n"
 	.string "knocked out while we caught those\l"
 	.string "Pokémon.\p"
-	.string "First we failed to take the Pokédex\n"
-	.string "shipment, and now this... {PLAYER},\l"
-	.string "right? You're becoming a real problem\l"
-	.string "for Team Chimera. You'd better stay out\l"
-	.string "of our business, or the Boss'll destroy\l"
-	.string "you!$"
+	.string "You learn so much about Pokémon, but\n"
+	.string "you do nothing with it! Pokémon, nature,\l"
+	.string "everything around us - you need to use\l"
+	.string "them for everything they're worth!\p"
+	.string "The Pokémon we rounded up were to be\n"
+	.string "trained, bringing out their full\l"
+	.string "potential. Of course, some Pokémon\l"
+	.string "can't handle the pressure, so we sell\l"
+	.string "them for a little extra cash. What's the\l"
+	.string "harm in that?\p"
+	.string "You won't stop Team Chimera. Next time,\n"
+	.string "my Arcanine will knock you back to your\l"
+	.string "precious University!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_11:
 # 353 "data/maps/WanderersWoods/scripts.pory"
@@ -1084,12 +1091,11 @@ WanderersWoods_EventScript_ChimeraEvent_Text_11:
 
 WanderersWoods_EventScript_ChimeraEvent_Text_12:
 # 354 "data/maps/WanderersWoods/scripts.pory"
-	.string "WHAT'S THIS?!$"
+	.string "Woah, what's this?!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_13:
 # 357 "data/maps/WanderersWoods/scripts.pory"
-	.string "One of your friends shouted in the\n"
-	.string "distance. Who was it?$"
+	.string "Who shouted in the distance?$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_14:
 # 380 "data/maps/WanderersWoods/scripts.pory"

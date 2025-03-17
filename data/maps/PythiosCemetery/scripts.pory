@@ -56,33 +56,33 @@ script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt2
 {
     trainerbattle_single(TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_2, PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Intro, PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Defeat)
     speakername("Grunt")
-    msgbox(format("I hope the Admin didn't see me lose like that."))
+    msgbox(format("I hope the other Grunts didn't see me lose like that."))
     closemessage
     release
     end
 }
 text PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Intro
 {
-    format("You'll never reach the Admin!")
+    format("You'll never reach the other Grunts!")
 }
 text PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Defeat
 {
-    format("Okay, you might reach the Admin...")
+    format("Okay, you might beat us...")
 }
 
 script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin
 {
     lock
     faceplayer
-    speakername("Chimera Admin")
+    speakername("Grunt")
     msgbox(format("Wh-what? How did you reach us? I thought that we were the only ones who could get through the Cemetery, thanks to our {COLOR GREEN}Flash HM{COLOR DARK_GRAY}.\p No matter. I'd recognize the Trainer messing up our plans anywhere, even in the dark. I'll stop you, here and now!"))
     closemessage
-    trainerbattle_no_intro(TRAINER_PYTHIOSCEMETERY_CHIMERA_ADMIN, PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat)
+    trainerbattle_no_intro(TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_3, PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat)
     
     lock
     faceplayer
-    speakername("Chimera Admin")
-    msgbox(format("Eek! We'd better scram!"))
+    speakername("Grunt")
+    msgbox(format("Lazarus Taxa, the once-thought-extinct Pokémon species, coming back to the world is a sign. Change is coming, and only Team Chimera is strong enough to control it!"))
     closemessage
     fadescreenswapbuffers(FADE_TO_BLACK)
     delay(30)
@@ -102,7 +102,7 @@ script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin
 }
 text PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat
 {
-    format("M-my Arcanine won't come out to fight! Is it really scared of the dark?! This isn't good...!")
+    format("No! The Pythios Cemetery was supposed to be our next new meeting ground!")
 }
 
 script PythiosCemetery_EventScript_Artist

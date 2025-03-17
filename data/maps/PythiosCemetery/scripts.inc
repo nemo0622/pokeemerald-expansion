@@ -97,21 +97,21 @@ PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin::
 # 76 "data/maps/PythiosCemetery/scripts.pory"
 	faceplayer
 # 77 "data/maps/PythiosCemetery/scripts.pory"
-	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_0
+	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt1_Text_0
 # 78 "data/maps/PythiosCemetery/scripts.pory"
-	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_1
+	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_0
 # 79 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
 # 80 "data/maps/PythiosCemetery/scripts.pory"
-	trainerbattle_no_intro TRAINER_PYTHIOSCEMETERY_CHIMERA_ADMIN, PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat
+	trainerbattle_no_intro TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_3, PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat
 # 82 "data/maps/PythiosCemetery/scripts.pory"
 	lock
 # 83 "data/maps/PythiosCemetery/scripts.pory"
 	faceplayer
 # 84 "data/maps/PythiosCemetery/scripts.pory"
-	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_0
+	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt1_Text_0
 # 85 "data/maps/PythiosCemetery/scripts.pory"
-	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_2
+	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_1
 # 86 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
 # 87 "data/maps/PythiosCemetery/scripts.pory"
@@ -135,7 +135,7 @@ PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin::
 # 96 "data/maps/PythiosCemetery/scripts.pory"
 	delay 20
 # 97 "data/maps/PythiosCemetery/scripts.pory"
-	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_3
+	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_2
 # 98 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
 # 99 "data/maps/PythiosCemetery/scripts.pory"
@@ -318,14 +318,10 @@ PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt1_Text_1:
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt2_Text_0:
 # 59 "data/maps/PythiosCemetery/scripts.pory"
-	.string "I hope the Admin didn't see me lose like\n"
-	.string "that.$"
+	.string "I hope the other Grunts didn't see me\n"
+	.string "lose like that.$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_0:
-# 77 "data/maps/PythiosCemetery/scripts.pory"
-	.string "Chimera Admin$"
-
-PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_1:
 # 78 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Wh-what? How did you reach us? I\n"
 	.string "thought that we were the only ones who\l"
@@ -335,11 +331,15 @@ PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_1:
 	.string "messing up our plans anywhere, even in\l"
 	.string "the dark. I'll stop you, here and now!$"
 
-PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_2:
+PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_1:
 # 85 "data/maps/PythiosCemetery/scripts.pory"
-	.string "Eek! We'd better scram!$"
+	.string "Lazarus Taxa, the\n"
+	.string "once-thought-extinct Pokémon\l"
+	.string "species, coming back to the world is a\l"
+	.string "sign. Change is coming, and only Team\l"
+	.string "Chimera is strong enough to control it!$"
 
-PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_3:
+PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_2:
 # 97 "data/maps/PythiosCemetery/scripts.pory"
 	.string "The Team Chimera members dropped\n"
 	.string "something while they ran...$"
@@ -432,17 +432,16 @@ PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt1Defeat::
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Intro::
 # 64 "data/maps/PythiosCemetery/scripts.pory"
-	.string "You'll never reach the Admin!$"
+	.string "You'll never reach the other Grunts!$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_Grunt2Defeat::
 # 68 "data/maps/PythiosCemetery/scripts.pory"
-	.string "Okay, you might reach the Admin...$"
+	.string "Okay, you might beat us...$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat::
 # 103 "data/maps/PythiosCemetery/scripts.pory"
-	.string "M-my Arcanine won't come out to fight!\n"
-	.string "Is it really scared of the dark?! This\l"
-	.string "isn't good...!$"
+	.string "No! The Pythios Cemetery was supposed\n"
+	.string "to be our next new meeting ground!$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_MariaIntro::
 # 128 "data/maps/PythiosCemetery/scripts.pory"
