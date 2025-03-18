@@ -1705,7 +1705,7 @@ const u8 gText_Rania[] = _("Rania");
 const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
 
-const u8 gText_ShinyIndicator[] = _("{SHINY_STAR}!");
+const u8 gText_ShinyIndicator[] = _("{EMOJI_HEART}");
 
 const u8 gText_SmallDot[] = _("·");
 const u8 gText_LargeDot[] = _("{EMOJI_CIRCLE}");
