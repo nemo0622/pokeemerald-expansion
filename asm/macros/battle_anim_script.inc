@@ -113,8 +113,8 @@
 
 	@ FUTURE JACK / NEMO622! I commented this out to stop battle background changing (like when using shadow ball). Uncomment if issues happen!
 	.macro fadetobg bg:req
-	@ .byte 0x14
-	@ .byte \bg
+	.byte 0x14
+	.byte \bg
 	.endm
 
 	.macro restorebg
