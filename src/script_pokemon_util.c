@@ -510,6 +510,9 @@ u32 BirchCase_GiveMonParameterized(u16 species, u8 level, u16 item, u8 ball, u8 
     SetMonData(&mon, MON_DATA_TERA_TYPE, &teraType);
 #endif
 
+    u8 localIvs[NUM_STATS]      = {MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1,   // We pass "MAX_PER_STAT_IVS + 1" here to ensure that
+                                MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1};  // ScriptGiveMonParameterized won't touch the stats' IV.
+
     // EV and IV
     for (i = 0; i < NUM_STATS; i++)
     {
@@ -518,8 +521,8 @@ u32 BirchCase_GiveMonParameterized(u16 species, u8 level, u16 item, u8 ball, u8 
             SetMonData(&mon, MON_DATA_HP_EV + i, &evs[i]);
 
         // IV
-        if (ivs[i] <= MAX_PER_STAT_IVS)
-            SetMonData(&mon, MON_DATA_HP_IV + i, &ivs[i]);
+        if (localIvs[i] <= MAX_PER_STAT_IVS)
+            SetMonData(&mon, MON_DATA_HP_IV + i, &localIvs[i]);
     }
     CalculateMonStats(&mon);
 
