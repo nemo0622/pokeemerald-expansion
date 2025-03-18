@@ -922,7 +922,7 @@ static void BattleBg_DrawChoices(u8 selection)
     styles[1] = 0;
     styles[selection] = 1;
     DrawOptionMenuChoice(gText_BattleBgCustom, 104, YPOS_BATTLEBG, styles[0]);
-    DrawOptionMenuChoice(gText_BattleBgGSC, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleBgCustom, 198), YPOS_BATTLEBG, styles[1]);
+    DrawOptionMenuChoice(gText_BattleBgGSC, 160, YPOS_BATTLEBG, styles[1]);
 }
 
 static void Difficulty_DrawChoices(u8 selection)
@@ -932,7 +932,7 @@ static void Difficulty_DrawChoices(u8 selection)
     styles[1] = 0;
     styles[selection] = 1;
     DrawOptionMenuChoice(gText_DifficultySetting_Normal, 104, YPOS_DIFFICULTY, styles[0]);
-    DrawOptionMenuChoice(gText_DifficultySetting_Hard, GetStringRightAlignXOffset(FONT_NORMAL, gText_DifficultySetting_Normal, 198), YPOS_DIFFICULTY, styles[1]);
+    DrawOptionMenuChoice(gText_DifficultySetting_Hard, 160, YPOS_DIFFICULTY, styles[1]);
 }
 
 static void NightCycle_DrawChoices(u8 selection)
@@ -942,7 +942,7 @@ static void NightCycle_DrawChoices(u8 selection)
     styles[1] = 0;
     styles[selection] = 1;
     DrawOptionMenuChoice(gText_DayNightCycleSetting_On, 104, YPOS_NIGHTCYCLE, styles[0]);
-    DrawOptionMenuChoice(gText_DayNightCycleSetting_Off, GetStringRightAlignXOffset(FONT_NORMAL, gText_DayNightCycleSetting_On, 198), YPOS_NIGHTCYCLE, styles[1]);
+    DrawOptionMenuChoice(gText_DayNightCycleSetting_Off, 160, YPOS_NIGHTCYCLE, styles[1]);
 }
 
 static void ColorTint_DrawChoices(u8 selection)
@@ -952,7 +952,7 @@ static void ColorTint_DrawChoices(u8 selection)
     styles[1] = 0;
     styles[selection] = 1;
     DrawOptionMenuChoice(gText_ColorTintSetting_On, 104, YPOS_COLORTINT, styles[0]);
-    DrawOptionMenuChoice(gText_ColorTintSetting_Off, GetStringRightAlignXOffset(FONT_NORMAL, gText_ColorTintSetting_On, 198), YPOS_COLORTINT, styles[1]);
+    DrawOptionMenuChoice(gText_ColorTintSetting_Off, 160, YPOS_COLORTINT, styles[1]);
 }
 
 static void Shadows_DrawChoices(u8 selection)
@@ -962,7 +962,7 @@ static void Shadows_DrawChoices(u8 selection)
     styles[1] = 0;
     styles[selection] = 1;
     DrawOptionMenuChoice(gText_ShadowsSetting_On, 104, YPOS_SHADOWS, styles[0]);
-    DrawOptionMenuChoice(gText_ShadowsSetting_Off, GetStringRightAlignXOffset(FONT_NORMAL, gText_ShadowsSetting_On, 198), YPOS_SHADOWS, styles[1]);
+    DrawOptionMenuChoice(gText_ShadowsSetting_Off, 160, YPOS_SHADOWS, styles[1]);
 }
 
 static void DrawHeaderText(void)
