@@ -1,6 +1,6 @@
 mapscripts PythiosCemetery_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
-        setflashlevel(3)
+        // setflashlevel(3) // disabled rn because it fucks up the chimera intro i think
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
@@ -110,7 +110,7 @@ script PythiosCemetery_EventScript_Artist
     lock
     faceplayer
     speakername("Artist")
-    msgbox(format("I'd love to make paintings of the Pythios Cemetery, but it's so dark and rainy that I can't see!"))
+    msgbox(format("I'd love to make paintings of the Pythios Cemetery, but it's so dark and rainy that my paint keeps running!"))
     closemessage
     release
     end
@@ -127,7 +127,7 @@ script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Maria
 }
 text PythiosCemetery_Text_Trainer_PythiosCemetery_MariaIntro
 {
-    format("My poor Pokémon are getting lost in this darkness!")
+    format("My poor Pokémon are getting lost in the rainy weather!")
 }
 text PythiosCemetery_Text_Trainer_PythiosCemetery_MariaDefeat
 {

@@ -36,7 +36,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 - Various QOL Changes, such as:
     - A dedicated Quest Menu to keep track of story objectives
     - Expanded Bag space to 50 Items
-    - Shiny Indicator for wild Pokémon
+    - Shiny Indicator for wild Pokémon (a Heart shown next to the gender icon)
     - Press L to toggle auto-run
     - Pokémon types shown in battle
     - Pokémon animate after KO
@@ -61,12 +61,12 @@ MAJOR TODOS:
     - Elite Redux inspired abilities & moves
     - New areas: 
         - Kipos Town ("Garden Town") - port town on the north coast of the southern peninsula of Ilios, west of Port Pello. Covered in flowers and palm trees
-            - Home to the PokéPark, a zoo-like area for Pokémon that can be filled by the Player by donating Pokémon, money, and other resources!
+            - Home to the Sunset Wildlife Reserve, a zoo-like area for Pokémon that can be filled by the Player by donating Pokémon, money, and other resources!
                 - Another progression system and maybe another gold star location?
                 - Rewards: Ogerpon masks and eventually Ogerpon itself? OR Floette Eternal Flower?
             - Can be sailed to with Piraeus, unlocked after Gym 3 (shows player than some locations can be unlocked only via Piraeus! #gamedesign)
-        - Pillar Pass - Route leading south of Kipos Town, going up and then down mountains, some snowy Pokémon
-        - Torchlight Tower - small settlement south of Kipos Town, with a large tower and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
+        - Lastlight Road - Route leading south of Kipos Town, going up and then down mountains, some snowy Pokémon
+        - Rainbow Tower - small settlement south of Kipos Town, with a large tower and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
             - Rumored to be the home of a great, godlike Pokémon with the power to restore life (Ho-oh!)
             - This will be where Ho-oh can be caught later in the game, probably after the Chimera story
         - Explore AC odyssey world for other location inspo lol

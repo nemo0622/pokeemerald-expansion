@@ -4,8 +4,6 @@ PythiosCemetery_MapScripts::
 	.byte 0
 
 PythiosCemetery_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-# 3 "data/maps/PythiosCemetery/scripts.pory"
-	setflashlevel 3
 # 4 "data/maps/PythiosCemetery/scripts.pory"
 	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1
 # 5 "data/maps/PythiosCemetery/scripts.pory"
@@ -352,7 +350,7 @@ PythiosCemetery_EventScript_Artist_Text_1:
 # 113 "data/maps/PythiosCemetery/scripts.pory"
 	.string "I'd love to make paintings of the\n"
 	.string "Pythios Cemetery, but it's so dark and\l"
-	.string "rainy that I can't see!$"
+	.string "rainy that my paint keeps running!$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Maria_Text_0:
 # 122 "data/maps/PythiosCemetery/scripts.pory"
@@ -445,8 +443,8 @@ PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat::
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_MariaIntro::
 # 128 "data/maps/PythiosCemetery/scripts.pory"
-	.string "My poor Pokémon are getting lost in\n"
-	.string "this darkness!$"
+	.string "My poor Pokémon are getting lost in the\n"
+	.string "rainy weather!$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_MariaDefeat::
 # 132 "data/maps/PythiosCemetery/scripts.pory"
