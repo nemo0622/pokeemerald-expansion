@@ -83,6 +83,8 @@ script JusmailTown_EventScript_MarketMan
     message(format("Welcome to the Jusmail Town Farmer's Market? How can I help you?"))
     waitmessage
     pokemart(JusmailTown_Mart)
+    closemessage
+    delay(1)
     speakername("Market Man")
     msgbox(format("Make sure to come back soon!"))
     closemessage

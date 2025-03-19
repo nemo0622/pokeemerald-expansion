@@ -8,6 +8,8 @@ script AcrisiaCity_Mart_EventScript_MartEmployee
     message(gText_HowMayIServeYou)
     waitmessage
     pokemart(AcrisiaCity_Mart_Shop)
+    closemessage
+    delay(1)
     speakername("Mart Employee")
     msgbox(gText_PleaseComeAgain)
     release

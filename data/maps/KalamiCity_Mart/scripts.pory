@@ -8,6 +8,8 @@ script KalamiCity_Mart_EventScript_MartEmployee
     message(gText_HowMayIServeYou)
     waitmessage
     pokemart(KalamiCity_Mart_Shop)
+    closemessage
+    delay(1)
     speakername("Mart Employee")
     msgbox(gText_PleaseComeAgain)
     release
@@ -34,6 +36,8 @@ script KalamiCity_Mart_EventScript_BallMartEmployee
     message(gText_HowMayIServeYou)
     waitmessage
     pokemart(KalamiCity_Mart_BallShop)
+    closemessage
+    delay(1)
     speakername("Mart Employee")
     msgbox(gText_PleaseComeAgain)
     release

@@ -199,6 +199,8 @@ script JusmailTown_House1_EventScript_Artist
     pokemart(JusmailTown_House1_Mart_Mints)
     applymovement(1, Common_Movement_FacePlayer)
     waitmovement(0)
+    closemessage
+    delay(1)
     speakername("Artist")
     msgbox(format("Come on back! Don't make me jump the counter again!"))
     closemessage
@@ -241,6 +243,8 @@ script JusmailTown_House1_EventScript_Beauty
     pokemart(JusmailTown_House1_Mart_Berries)
     applymovement(3, Common_Movement_FacePlayer)
     waitmovement(0)
+    closemessage
+    delay(1)
     speakername("Beauty")
     msgbox(format("Come back soon! And remember to try and hybridize your Berries!"))
     closemessage
@@ -272,6 +276,8 @@ script JusmailTown_House1_EventScript_Psychic
     pokemart(JusmailTown_House1_Mart_Mulch)
     applymovement(2, Common_Movement_FacePlayer)
     waitmovement(0)
+    closemessage
+    delay(1)
     speakername("Psychic")
     msgbox(format("Well, have fun with your Mulch! If you end up {COLOR GREEN}harvesting many Berry Trees{COLOR DARK_GRAY}, let us know! We might have a {COLOR GREEN}reward{COLOR DARK_GRAY} for you, ehehe!"))
     closemessage

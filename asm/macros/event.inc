@@ -861,6 +861,7 @@
 	@ Closes the current message box.
 	.macro closemessage
 	.byte 0x68
+	delay 2
 	.endm
 
 	@ Freezes all objects immediately except the player. The player is frozen once their movement is finished.
@@ -2047,7 +2048,7 @@
 
 	@ Buffers the given text and calls the relevant standard message script (see gStdScripts).
 	.macro msgbox text:req, type=MSGBOX_DEFAULT
-	delay 1
+	delay 2
 	loadword 0, \text
 	callstd \type
 	.endm

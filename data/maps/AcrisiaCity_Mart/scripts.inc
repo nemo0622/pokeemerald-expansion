@@ -16,53 +16,57 @@ AcrisiaCity_Mart_EventScript_MartEmployee::
 # 10 "data/maps/AcrisiaCity_Mart/scripts.pory"
 	pokemart AcrisiaCity_Mart_Shop
 # 11 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	speakername AcrisiaCity_Mart_EventScript_MartEmployee_Text_0
+	closemessage
 # 12 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	msgbox gText_PleaseComeAgain
+	delay 1
 # 13 "data/maps/AcrisiaCity_Mart/scripts.pory"
+	speakername AcrisiaCity_Mart_EventScript_MartEmployee_Text_0
+# 14 "data/maps/AcrisiaCity_Mart/scripts.pory"
+	msgbox gText_PleaseComeAgain
+# 15 "data/maps/AcrisiaCity_Mart/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 17 "data/maps/AcrisiaCity_Mart/scripts.pory"
-AcrisiaCity_Mart_Shop:
 # 19 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	.2byte ITEM_POKE_BALL
-# 20 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	.2byte ITEM_POTION
+AcrisiaCity_Mart_Shop:
 # 21 "data/maps/AcrisiaCity_Mart/scripts.pory"
+	.2byte ITEM_POKE_BALL
+# 22 "data/maps/AcrisiaCity_Mart/scripts.pory"
+	.2byte ITEM_POTION
+# 23 "data/maps/AcrisiaCity_Mart/scripts.pory"
 	.2byte ITEM_REPEL
 	.2byte ITEM_NONE
 
 AcrisiaCity_Mart_NPC_Beauty::
-# 26 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	lock
-# 27 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	faceplayer
 # 28 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	speakername AcrisiaCity_Mart_NPC_Beauty_Text_0
+	lock
 # 29 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	msgbox AcrisiaCity_Mart_NPC_Beauty_Text_1
+	faceplayer
 # 30 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	closemessage
+	speakername AcrisiaCity_Mart_NPC_Beauty_Text_0
 # 31 "data/maps/AcrisiaCity_Mart/scripts.pory"
+	msgbox AcrisiaCity_Mart_NPC_Beauty_Text_1
+# 32 "data/maps/AcrisiaCity_Mart/scripts.pory"
+	closemessage
+# 33 "data/maps/AcrisiaCity_Mart/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_Mart_NPC_GameboyKid::
-# 37 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	lock
-# 38 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	faceplayer
 # 39 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	speakername AcrisiaCity_Mart_NPC_GameboyKid_Text_0
+	lock
 # 40 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	msgbox AcrisiaCity_Mart_NPC_GameboyKid_Text_1
+	faceplayer
 # 41 "data/maps/AcrisiaCity_Mart/scripts.pory"
-	closemessage
+	speakername AcrisiaCity_Mart_NPC_GameboyKid_Text_0
 # 42 "data/maps/AcrisiaCity_Mart/scripts.pory"
+	msgbox AcrisiaCity_Mart_NPC_GameboyKid_Text_1
+# 43 "data/maps/AcrisiaCity_Mart/scripts.pory"
+	closemessage
+# 44 "data/maps/AcrisiaCity_Mart/scripts.pory"
 	release
 	end
 
@@ -72,11 +76,11 @@ AcrisiaCity_Mart_EventScript_MartEmployee_Text_0:
 	.string "Mart Employee$"
 
 AcrisiaCity_Mart_NPC_Beauty_Text_0:
-# 28 "data/maps/AcrisiaCity_Mart/scripts.pory"
+# 30 "data/maps/AcrisiaCity_Mart/scripts.pory"
 	.string "Beauty$"
 
 AcrisiaCity_Mart_NPC_Beauty_Text_1:
-# 29 "data/maps/AcrisiaCity_Mart/scripts.pory"
+# 31 "data/maps/AcrisiaCity_Mart/scripts.pory"
 	.string "I'm all for respecting service workers,\n"
 	.string "but... this shop hardly has anything for\l"
 	.string "sale!\p"
@@ -84,10 +88,10 @@ AcrisiaCity_Mart_NPC_Beauty_Text_1:
 	.string "such a remote area.$"
 
 AcrisiaCity_Mart_NPC_GameboyKid_Text_0:
-# 39 "data/maps/AcrisiaCity_Mart/scripts.pory"
+# 41 "data/maps/AcrisiaCity_Mart/scripts.pory"
 	.string "Kid$"
 
 AcrisiaCity_Mart_NPC_GameboyKid_Text_1:
-# 40 "data/maps/AcrisiaCity_Mart/scripts.pory"
+# 42 "data/maps/AcrisiaCity_Mart/scripts.pory"
 	.string "I'm just here to play my game. How about\n"
 	.string "you?$"

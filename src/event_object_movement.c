@@ -5630,50 +5630,9 @@ bool8 MovementType_FollowPlayer_Shadow(struct ObjectEvent *objectEvent, struct S
     return TRUE;
 }
 
-bool8 MovementType_FollowPlayer_Active(struct ObjectEvent *objectEvent, struct Sprite *sprite)
-{
-    if (!IsFollowerVisible())
-    {
-        if (objectEvent->invisible)
-        {
-            // Return to shadowing state
-            sprite->sTypeFuncId = 0;
-            return FALSE;
-        }
-        // Animate entering pokeball
-        ClearObjectEventMovement(objectEvent, sprite);
-        ObjectEventSetSingleMovement(objectEvent, sprite, MOVEMENT_ACTION_ENTER_POKEBALL);
-        objectEvent->singleMovementActive = TRUE;
-        sprite->sTypeFuncId = 2; // movement action sets state to 0
-        return TRUE;
-    }
-    return gFollowPlayerMovementFuncs[PlayerGetCopyableMovement()](objectEvent, sprite, GetPlayerMovementDirection(), NULL);
-}
+// old movementtype_followplayer_active location
 
-bool8 MovementType_FollowPlayer_Moving(struct ObjectEvent *objectEvent, struct Sprite *sprite)
-{
-    #ifdef MB_SIDEWAYS_STAIRS_RIGHT_SIDE
-    // Copied from ObjectEventExecSingleMovementAction
-    if (gMovementActionFuncs[objectEvent->movementActionId][sprite->sActionFuncId](objectEvent, sprite))
-    {
-        objectEvent->movementActionId = MOVEMENT_ACTION_NONE;
-        sprite->sActionFuncId = 0;
-    #else
-    if (ObjectEventExecSingleMovementAction(objectEvent, sprite))
-    {
-    #endif
-        objectEvent->singleMovementActive = FALSE;
-        if (sprite->sTypeFuncId) // restore nonzero state
-            sprite->sTypeFuncId = 1;
-    }
-    else if (objectEvent->movementActionId < MOVEMENT_ACTION_EXIT_POKEBALL)
-    {
-        UpdateFollowerTransformEffect(objectEvent, sprite);
-        if (OW_FOLLOWERS_BOBBING == TRUE && (sprite->data[5] & 7) == 2)
-            sprite->y2 ^= -1;
-    }
-    return FALSE;
-}
+// old movementtype_followplayer_moving location
 
 // single function for updating an OW mon's walk-in-place movements
 static bool32 UpdateMonMoveInPlace(struct ObjectEvent *objectEvent, struct Sprite *sprite)
@@ -10000,6 +9959,60 @@ static void DoFlaggedGroundEffects(struct ObjectEvent *objEvent, struct Sprite *
             sGroundEffectFuncs[i](objEvent, sprite);
     if (!(gWeatherPtr->noShadows || objEvent->inHotSprings || objEvent->inSandPile || MetatileBehavior_IsPuddle(objEvent->currentMetatileBehavior)))
       GroundEffect_Shadow(objEvent, sprite);
+}
+
+bool8 MovementType_FollowPlayer_Active(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    if (!IsFollowerVisible())
+    {
+        if (objectEvent->invisible)
+        {
+            // Return to shadowing state
+            sprite->sTypeFuncId = 0;
+            return FALSE;
+        }
+        // Animate entering pokeball
+        ClearObjectEventMovement(objectEvent, sprite);
+        ObjectEventSetSingleMovement(objectEvent, sprite, MOVEMENT_ACTION_ENTER_POKEBALL);
+        objectEvent->singleMovementActive = TRUE;
+        sprite->sTypeFuncId = 2; // movement action sets state to 0
+        return TRUE;
+    }
+    // // added to try and make sure follower always has a shadow
+    // if (!(gWeatherPtr->noShadows || objectEvent->inHotSprings || objectEvent->inSandPile || MetatileBehavior_IsPuddle(objectEvent->currentMetatileBehavior)))
+    //     DoFlaggedGroundEffects(objectEvent, sprite, 0);
+    
+    return gFollowPlayerMovementFuncs[PlayerGetCopyableMovement()](objectEvent, sprite, GetPlayerMovementDirection(), NULL);
+}
+
+bool8 MovementType_FollowPlayer_Moving(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    #ifdef MB_SIDEWAYS_STAIRS_RIGHT_SIDE
+    // Copied from ObjectEventExecSingleMovementAction
+    if (gMovementActionFuncs[objectEvent->movementActionId][sprite->sActionFuncId](objectEvent, sprite))
+    {
+        objectEvent->movementActionId = MOVEMENT_ACTION_NONE;
+        sprite->sActionFuncId = 0;
+    #else
+    if (ObjectEventExecSingleMovementAction(objectEvent, sprite))
+    {
+    #endif
+        objectEvent->singleMovementActive = FALSE;
+        if (sprite->sTypeFuncId) // restore nonzero state
+            sprite->sTypeFuncId = 1;
+    }
+    else if (objectEvent->movementActionId < MOVEMENT_ACTION_EXIT_POKEBALL)
+    {
+        UpdateFollowerTransformEffect(objectEvent, sprite);
+        if (OW_FOLLOWERS_BOBBING == TRUE && (sprite->data[5] & 7) == 2)
+            sprite->y2 ^= -1;
+    }
+
+    // // added to try and make sure follower always has a shadow
+    // if (!(gWeatherPtr->noShadows || objectEvent->inHotSprings || objectEvent->inSandPile || MetatileBehavior_IsPuddle(objectEvent->currentMetatileBehavior)))
+    //     DoFlaggedGroundEffects(objectEvent, sprite, 0);
+    
+    return FALSE;
 }
 
 void filters_out_some_ground_effects(struct ObjectEvent *objEvent, u32 *flags)

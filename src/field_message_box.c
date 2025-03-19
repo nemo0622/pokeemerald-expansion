@@ -167,9 +167,11 @@ static void StartDrawFieldMessage(void)
 
 void HideFieldMessageBox(void)
 {
-    FlagSet(FLAG_SUPPRESS_SPEAKER_NAME);
     DestroyTask_DrawFieldMessage();
     ClearDialogWindowAndFrame(0, TRUE);
+
+    FlagSet(FLAG_SUPPRESS_SPEAKER_NAME);
+    
     sFieldMessageBoxMode = FIELD_MESSAGE_BOX_HIDDEN;
     gSpeakerName = NULL;
 }

@@ -547,7 +547,8 @@ ErinysPath_East_Text_Trainer_ErinysPath_E_LueroiDefeat::
 
 ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyIntro::
 # 204 "data/maps/ErinysPath_East/scripts.pory"
-	.string "Help my Pokémon train for our show!$"
+	.string "I'm on the path to Sofos City. Help my\n"
+	.string "Pokémon train for our show!$"
 
 ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyDefeat::
 # 208 "data/maps/ErinysPath_East/scripts.pory"
