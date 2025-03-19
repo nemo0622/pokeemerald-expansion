@@ -16,6 +16,12 @@ mapscripts ErinysPath_East_MapScripts {
         setobjectaswildencounter(6, ENCOUNTER_LAND)
         setobjectaswildencounter(7, ENCOUNTER_LAND)
         setobjectaswildencounter(8, ENCOUNTER_LAND)
+
+        // actually hide encounter 5 if a flag hasnt been set yet for story purposes lol
+        if(!flag(FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN))
+        {
+            setflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        }
     }
 }
 
@@ -115,6 +121,10 @@ script ErinysPath_East_EventScript_ChimeraWalrein
         delay(20)
         special(DoDomeConfetti) // tbh just added confetti here to make it less boring to spam through all the dialogue lmfao
         completequest(QUEST_HELP_PIRAEUS)
+        delay(20)
+
+        warpsilent(MAP_ERINYS_PATH_EAST, 8, 10)
+        waitstate
     }
     releaseall
     end
@@ -193,7 +203,7 @@ script ErinysPath_East_EventScript_Trainer_ErinysPath_E_Kayley
 }
 text ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyIntro
 {
-    format("Help my Pokémon train for our show!")
+    format("I'm on the path to Sofos City. Help my Pokémon train for our show!")
 }
 text ErinysPath_East_Text_Trainer_ErinysPath_E_KayleyDefeat
 {

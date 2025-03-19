@@ -4921,7 +4921,7 @@ F_TRAINER_FEMALE |
     [TRAINER_ERINYSPATH_E_KAYLEY] =
     {
 #line 2064
-        .trainerName = _("CHARLIE"),
+        .trainerName = _("Kayley"),
 #line 2065
         .trainerClass = TRAINER_CLASS_PERFORMER_F,
 #line 2066

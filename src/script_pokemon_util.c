@@ -468,22 +468,8 @@ u32 BirchCase_GiveMonParameterized(u16 species, u8 level, u16 item, u8 ball, u8 
     u8 genderRatio = gSpeciesInfo[species].genderRatio;
     u16 targetSpecies;
 
-    // check whether to use a specific nature or a random one
-    if (nature >= NUM_NATURES)
-    {
-#ifdef POKEMON_EXPANSION
-        if (OW_SYNCHRONIZE_NATURE >= GEN_6
-         && (gSpeciesInfo[species].eggGroups[0] == EGG_GROUP_NO_EGGS_DISCOVERED || OW_SYNCHRONIZE_NATURE == GEN_7))
-            nature = PickWildMonNature();
-        else
-            nature = Random() % NUM_NATURES;
-#else
-        if ((gSpeciesInfo[species].eggGroups[0] == EGG_GROUP_NO_EGGS_DISCOVERED))
-                nature = PickWildMonNature();
-            else
-                nature = Random() % NUM_NATURES;
-#endif
-    }
+    // generate random nature
+    nature = Random() % NUM_NATURES;
 
     // create a Pokémon with basic data
     if ((gender == MON_MALE && genderRatio != MON_FEMALE && genderRatio != MON_GENDERLESS)
