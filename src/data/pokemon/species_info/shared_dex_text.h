@@ -72,10 +72,10 @@ const u8 gGenesectPokedexText[] = _(
 
 // Gen 6 families
 const u8 gGreninjaPokedexText[] = _(
-    "It appears and vanishes with a ninja's\n"
-    "grace. It toys with its enemies using\n"
-    "swift movements, while slicing them with\n"
-    "throwing stars made of compressed water.");
+    "Observers in the field can blink and\n"
+    "miss a passing Greninja. They create\n"
+    "water shurikens to take down foes before\n"
+    "they can even tell what's happening.");
 
 const u8 gScatterbugPokedexText[] = _(
     "When under attack from bird Pokémon,\n"

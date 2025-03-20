@@ -30,10 +30,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 3,
         .weight = 15,
         .description = COMPOUND_STRING(
-            "This wary Pokémon uses photosynthesis\n"
-            "to store up energy during the day, while\n"
-            "becoming active at night. Silently it\n"
-            "glides, drawing near to its target."),
+            "It loves the darkness, storing energy\n"
+            "from the sun during the day while flying\n"
+            "free at night. When comfortable with a\n"
+            "Trainer, it may rest in their open bag."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -94,10 +94,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 7,
         .weight = 160,
         .description = COMPOUND_STRING(
-            "A bit of a dandy, it spends its free time\n"
-            "preening its wings. Its preoccupation\n"
-            "with any dirt on its plumage can leave\n"
-            "it unable to battle."),
+            "Dartrix is very serious about staying\n"
+            "clean. Young individuals may struggle\n"
+            "with this, fleeing battle to preen their\n"
+            "feathers rather than fighting."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -157,10 +157,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 16,
         .weight = 366,
         .description = COMPOUND_STRING(
-            "Decidueye is cool and cautious.\n"
-            "It fires arrow quills from its wings with\n"
-            "such precision, they can pierce a pebble\n"
-            "at distances of over a hundred yards."),
+            "Decidueye can go toe-to-toe with the\n"
+            "best archers in Ilios. In fact, an\n"
+            "ancient competition has a record of a\n"
+            "Decidueye winning the whole event."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -220,10 +220,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 16,
         .weight = 370,
         .description = COMPOUND_STRING(
-            "The air stored inside the rachises\n"
-            "of Decidueye's feathers insulates\n"
-            "the Pokémon against Hisui's extreme\n"
-            "cold."),
+            "This subspecies of Decidueye seems\n"
+            "to be adapted to colder climates, with\n"
+            "heavy, insulating feathers. It was not\n"
+            "recorded for generations until now."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -286,10 +286,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 4,
         .weight = 43,
         .description = COMPOUND_STRING(
-            "While grooming itself, it builds up fur\n"
-            "inside its stomach. It sets the fur alight\n"
-            "and spews fiery attacks, which change\n"
-            "based on how it coughs."),
+            "They tend to be quite self-centered, to\n"
+            "the dismay of many young Trainers. If\n"
+            "given enough time, they may become\n"
+            "comfortable enough to sleep near them."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -349,10 +349,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 7,
         .weight = 250,
         .description = COMPOUND_STRING(
-            "At its throat, it bears a bell of fire. The\n"
-            "bell rings brightly whenever this Pokémon\n"
-            "spits fire. With a single punch, it can bend\n"
-            "an iron bar right over."),
+            "Domestic Torracat often love attention,\n"
+            "using purrs and bell-ringing to communicate\n"
+            "with their Trainer. Wild Torracat, however,\n"
+            "can quickly become hostile."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -411,10 +411,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 18,
         .weight = 830,
         .description = COMPOUND_STRING(
-            "This Pokémon has a violent, selfish\n"
-            "disposition. If it's not in the mood to\n"
-            "listen, it will ignore its Trainer's orders\n"
-            "with complete nonchalance."),
+            "This Pokémon is especially adapted to\n"
+            "human culture, imitating wrestlers and\n"
+            "warriors in front of massive crowds.\n"
+            "It is ferocious and merciless."),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,
@@ -474,10 +474,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 4,
         .weight = 75,
         .description = COMPOUND_STRING(
-            "This Pokémon snorts body fluids from\n"
-            "its nose, blowing balloons to smash into\n"
-            "its foes. It practices diligently so it can\n"
-            "learn to make big bubbles."),
+            "Popplio are specially adapted to blowing\n"
+            "water bubbles from their prominent noses.\n"
+            "Larger bubbles make them clap and celebrate\n"
+            "most of all, making them proud."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -537,10 +537,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 6,
         .weight = 175,
         .description = COMPOUND_STRING(
-            "It cares deeply for its companions.\n"
-            "When its Trainer is feeling down, it\n"
-            "performs a cheery dance with a sequence\n"
-            "of water balloons  to try and help."),
+            "It can sense the mood of its Trainer\n"
+            "through vibrations in the water. Playing\n"
+            "with a Brionne is a common treatment\n"
+            "for minor illnesses in coastal towns."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -599,10 +599,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 18,
         .weight = 440,
         .description = COMPOUND_STRING(
-            "It controls its water balloons with song.\n"
-            "The melody is learned from others of\n"
-            "its kind and is passed down from one\n"
-            "generation to the next."),
+            "Primarina develop their own songs as\n"
+            "they grow, passing down their melodies\n"
+            "and creating their own form of culture.\n"
+            "They sing to pods of Popplio."),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,

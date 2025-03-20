@@ -30,10 +30,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 4,
         .weight = 90,
         .description = COMPOUND_STRING(
-            "The quills on its head are usually soft.\n"
-            "When it flexes them, the points become\n"
-            "so hard and sharp that they can pierce\n"
-            "rock without any effort."),
+            "Chespin eats so many berries, the shell\n"
+            "covering their body becomes hard due\n"
+            "to increased nutrition. They can harden\n"
+            "the spines on their body."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -93,10 +93,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 7,
         .weight = 290,
         .description = COMPOUND_STRING(
-            "They strengthen the sturdy shell covering\n"
-            "their bodies by running into one another.\n"
-            "They are very kind and won't start fights,\n"
-            "but will counterattack with sharp quills."),
+            "Quilladin are very peaceful in the wild,\n"
+            "forming colonies with Chespin and tending\n"
+            "to berry bush groves. When threatened, it\n"
+            "can use hard quills to protect themselves."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -155,10 +155,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 16,
         .weight = 900,
         .description = COMPOUND_STRING(
-            "It shields its allies from danger with\n"
-            "its own body. When it takes a defensive\n"
-            "posture with its fists guarding its face,\n"
-            "it can withstand a bomb blast."),
+            "They excel in defensive battles, using\n"
+            "powerful arms and padding to block any\n"
+            "attack. Chesnaught trained with love\n"
+            "will protect a Trainer from anything."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -218,10 +218,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 4,
         .weight = 94,
         .description = COMPOUND_STRING(
-            "As it walks, it munches on a twig to fill\n"
-            "itself with energy in place of a snack.\n"
-            "It intimidates opponents by puffing hot\n"
-            "air out of its roomy ears."),
+            "Instead of fighting, Fennekin often\n"
+            "searches for sticks to snack on. They\n"
+            "seem to prefer old, dry wood, becoming\n"
+            "excited by the flammable treat."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -281,10 +281,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 10,
         .weight = 145,
         .description = COMPOUND_STRING(
-            "Braixen has a twig stuck in its tail.\n"
-            "When the twig is plucked from its tail,\n"
-            "friction sets the twig alight. The flame\n"
-            "is used to send signals to its allies."),
+            "Following their love of branches and\n"
+            "twigs as a Fennekin, Braixen has evolved\n"
+            "to use them in battle. Their branch can\n"
+            "send signals and create strong flames."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -343,10 +343,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 15,
         .weight = 390,
         .description = COMPOUND_STRING(
-            "It gazes into the flame at the tip of its\n"
-            "branch to achieve a focused state, which\n"
-            "allows it to see into the future. It uses\n"
-            "psychic power to incinerate its foes."),
+            "Delphox has become perfectly adapted for\n"
+            "ranged attacks, using their branch to\n"
+            "cast powerful spells and control fire.\n"
+            "It moves projectiles with telekinesis."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
@@ -406,10 +406,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 3,
         .weight = 70,
         .description = COMPOUND_STRING(
-            "It protects its skin by covering its body\n"
-            "in bubbles it secretes from its chest and\n"
-            "back. Beneath its happy-go-lucky air, it\n"
-            "keeps a watchful eye on its surroundings."),
+            "Froakie must never stray too far from\n"
+            "water, as it needs to be constantly damp\n"
+            "to be at full strength. It blows bubbles\n"
+            "to keep their skin moist."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -469,10 +469,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 6,
         .weight = 109,
         .description = COMPOUND_STRING(
-            "It can throw bubble-covered pebbles with\n"
-            "precise control, hitting empty cans up to\n"
-            "a hundred feet away. Frogadier's swiftness\n"
-            "is unparalleled."),
+            "It is often found clinging to the sides\n"
+            "of trees, rocks, and even houses near\n"
+            "their home pond. It can blast opponents\n"
+            "with strong barrages of bubbles."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
