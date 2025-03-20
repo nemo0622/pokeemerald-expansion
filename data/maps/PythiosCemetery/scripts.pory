@@ -75,14 +75,14 @@ script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin
     lock
     faceplayer
     speakername("Grunt")
-    msgbox(format("Wh-what? How did you reach us? I thought that we were the only ones who could get through the Cemetery, thanks to our {COLOR GREEN}Flash HM{COLOR DARK_GRAY}.\p No matter. I'd recognize the Trainer messing up our plans anywhere, even in the dark. I'll stop you, here and now!"))
+    msgbox(format("Wh-what? I thought those other Grunts would hold back any intruders! We were tasked with finding this {COLOR GREEN}Flash HM{COLOR DARK_GRAY} and bringing it to the Boss...\p No matter. I'd recognize the Trainer messing up our plans anywhere, even in the pouring rain. I'll stop you, here and now!"))
     closemessage
     trainerbattle_no_intro(TRAINER_PYTHIOSCEMETERY_CHIMERA_GRUNT_3, PythiosCemetery_Text_Trainer_PythiosCemetery_AdminDefeat)
     
     lock
     faceplayer
     speakername("Grunt")
-    msgbox(format("Lazarus Taxa, the once-thought-extinct Pokémon species, coming back to the world is a sign. Change is coming, and only Team Chimera is strong enough to control it!"))
+    msgbox(format("Darn it, we needed this plan to work! Lazarus Taxa, the once-thought-extinct Pokémon species, coming back to the world is a sign. Change is coming, and only Team Chimera is strong enough to control it!"))
     closemessage
     fadescreenswapbuffers(FADE_TO_BLACK)
     delay(30)

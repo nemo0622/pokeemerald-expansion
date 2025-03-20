@@ -476,7 +476,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .description = COMPOUND_STRING(
             "Popplio are specially adapted to blowing\n"
             "water bubbles from their prominent noses.\n"
-            "Larger bubbles make them clap and celebrate\n"
+            "Larger bubbles make them clap and yelp\n"
             "most of all, making them proud."),
         .pokemonScale = 491,
         .pokemonOffset = 12,

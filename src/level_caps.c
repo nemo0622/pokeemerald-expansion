@@ -40,14 +40,11 @@ u32 GetCurrentLevelCap(void)
 
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
 {
-    static const u32 sExpScalingDown[5] = { 4, 8, 16, 32, 64 };
+    static const u32 sExpScalingDown[5] = { 2, 4, 8, 16, 32 };
     static const u32 sExpScalingUp[5]   = { 16, 8, 4, 2, 1 };
 
     u32 levelDifference;
     u32 currentLevelCap = GetCurrentLevelCap();
-
-    if(FlagGet(FLAG_HARD_MODE))
-        return 1;
 
     if (B_EXP_CAP_TYPE == EXP_CAP_NONE)
         return expValue;
@@ -73,6 +70,11 @@ u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
     }
     else if (B_EXP_CAP_TYPE == EXP_CAP_SOFT)
     {
+        // code only reached assuming level is at or reaching above cap level
+        // if in hard mode, return 0 exp points. otherwise, calculate scaled down experience
+        if(FlagGet(FLAG_HARD_MODE))
+            return 0;
+
         levelDifference = level - currentLevelCap;
         if (levelDifference > ARRAY_COUNT(sExpScalingDown))
             return expValue / sExpScalingDown[ARRAY_COUNT(sExpScalingDown) - 1];

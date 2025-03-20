@@ -321,17 +321,19 @@ PythiosCemetery_EventScript_Trainer_PythiosCemetery_Grunt2_Text_0:
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_0:
 # 78 "data/maps/PythiosCemetery/scripts.pory"
-	.string "Wh-what? How did you reach us? I\n"
-	.string "thought that we were the only ones who\l"
-	.string "could get through the Cemetery, thanks\l"
-	.string "to our {COLOR GREEN}Flash HM{COLOR DARK_GRAY}.\p"
+	.string "Wh-what? I thought those other Grunts\n"
+	.string "would hold back any intruders! We were\l"
+	.string "tasked with finding this {COLOR GREEN}Flash HM{COLOR DARK_GRAY} and\l"
+	.string "bringing it to the Boss...\p"
 	.string "No matter. I'd recognize the Trainer\n"
 	.string "messing up our plans anywhere, even in\l"
-	.string "the dark. I'll stop you, here and now!$"
+	.string "the pouring rain. I'll stop you, here and\l"
+	.string "now!$"
 
 PythiosCemetery_EventScript_Trainer_PythiosCemetery_Admin_Text_1:
 # 85 "data/maps/PythiosCemetery/scripts.pory"
-	.string "Lazarus Taxa, the\n"
+	.string "Darn it, we needed this plan to work!\n"
+	.string "Lazarus Taxa, the\l"
 	.string "once-thought-extinct Pokémon\l"
 	.string "species, coming back to the world is a\l"
 	.string "sign. Change is coming, and only Team\l"
