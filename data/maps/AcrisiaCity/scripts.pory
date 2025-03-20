@@ -20,6 +20,8 @@ mapscripts AcrisiaCity_MapScripts {
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
         setobjectaswildencounter(26, ENCOUNTER_LAND)
         setobjectaswildencounter(27, ENCOUNTER_LAND)
+        setobjectaswildencounter(18, ENCOUNTER_LAND)
+        setobjectaswildencounter(29, ENCOUNTER_LAND)
     }
 
 }
@@ -55,7 +57,6 @@ script AcrisiaCity_DemoWarning
 script AcrisiaCity_EventScript_PlayerExitsTruck
 {
     setvar(VAR_INTRO_STATE, 1)
-    setflag(FLAG_HIDE_INTRO_TRUCK)
     setflag(FLAG_HIDE_SECOND_PROFESSOR_SPRITE)
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerOffTruck)
@@ -83,8 +84,26 @@ script AcrisiaCity_EventScript_PlayerExitsTruck
     applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerFollowsProfToUniversity_2)
     waitmovement(0)
 
+    applymovement(12, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(15)
+    applymovement(18, AcrisiaCity_Movement_ShroomishRunFromProf)
+    applymovement(29, AcrisiaCity_Movement_DucklettRunFromProf)
+    waitmovement(0)
+
+    applymovement(12, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Prof. Elia")
+    msgbox(format("Oho! Looks like a few Pokémon are out and about this morning!\p As you explore the region, you may find some Pokémon wandering around like this. But I'm getting ahead of myself! Come, let's get inside."))
+    closemessage
+    applymovement(12, AcrisiaCity_Movement_ProfWalksPlayerToUniversity_3)
+    applymovement(OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerFollowsProfToUniversity_3)
+    waitmovement(0)
+
     hideobjectat(12, MAP_ACRISIA_CITY) // hides the professor after he warps
     
+    setflag(FLAG_HIDE_INTRO_TRUCK) // hides intro truck and those little pokemon who run away as you walk up
+
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp) // player enters the university
     waitmovement(0)
     setflag(FLAG_HIDE_MAP_NAME_POPUP)
@@ -135,15 +154,52 @@ movement AcrisiaCity_Movement_PlayerFollowsProfToUniversity_1
 movement AcrisiaCity_Movement_ProfWalksPlayerToUniversity_2
 {
     walk_up * 9
-    walk_right * 20
-    walk_up * 5
+    walk_right * 16
     step_end
 }
 
 movement AcrisiaCity_Movement_PlayerFollowsProfToUniversity_2
 {
     walk_up * 10
-    walk_right * 20
+    walk_right * 15
+    step_end
+}
+
+movement AcrisiaCity_Movement_ShroomishRunFromProf
+{
+    emote_exclamation_mark
+    walk_fast_down * 7
+    step_end
+}
+
+movement AcrisiaCity_Movement_DucklettRunFromProf
+{
+    emote_exclamation_mark
+    walk_fast_up * 2
+    walk_fast_right * 2
+    walk_fast_down * 2
+    walk_fast_left
+    walk_fast_down * 7
+    step_end 
+}
+
+movement AcrisiaCity_Movement_ProfWalksPlayerToUniversity_3
+{
+    walk_right * 3
+    face_left
+    delay_16 * 3
+    walk_right
+    walk_up * 5
+    step_end
+}
+
+movement AcrisiaCity_Movement_PlayerFollowsProfToUniversity_3
+{
+    walk_right * 3
+    face_down
+    emote_heart
+    delay_16 * 3
+    walk_right * 2
     walk_up * 4
     step_end
 }
