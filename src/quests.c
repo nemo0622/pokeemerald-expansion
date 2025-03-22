@@ -773,22 +773,22 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_21,
+	      gText_SideQuestName_21, // QUEST_SNOM_ICE_STONE
 	      gText_SideQuestDesc_21,
 	      gText_SideQuestDoneDesc_21,
 	      gText_SideQuestMap21,
-	      OBJ_EVENT_GFX_RANIA,
-	      OBJECT,
+	      SPECIES_SNOM,
+	      PKMN,
 	      NULL,
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_22,
+	      gText_SideQuestName_22, // QUEST_YACHE_BERRY_FROST_BREATH
 	      gText_SideQuestDesc_22,
 	      gText_SideQuestDoneDesc_22,
 	      gText_SideQuestMap22,
-	      OBJ_EVENT_GFX_RANIA,
-	      OBJECT,
+	      ITEM_YACHE_BERRY,
+	      ITEM,
 	      NULL,
 	      0
 	),

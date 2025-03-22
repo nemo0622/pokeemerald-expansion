@@ -54,22 +54,36 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- PRE-DEMO RELEASE PROJECTS:
-    - Prepare for Demo release
-        - Disable debug functions
+- Continue Mapping and NPC development
+    - Next: Erinys Path, Froslass Cavern, and onwards towards Sofos City
+        - Add Tyrantrum Exhibit tiles to a town square area in Sofos City!
+    - Also rework existing areas based on Demo feedback
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
         - Kipos Town ("Garden Town") - port town on the north coast of the southern peninsula of Ilios, west of Port Pello. Covered in flowers and palm trees
             - Home to the Sunset Wildlife Reserve, a zoo-like area for Pokémon that can be filled by the Player by donating Pokémon, money, and other resources!
                 - Another progression system and maybe another gold star location?
-                - Rewards: Ogerpon masks and eventually Ogerpon itself? OR Floette Eternal Flower?
+                - Rewards: Ogerpon masks and eventually Ogerpon itself
             - Can be sailed to with Piraeus, unlocked after Gym 3 (shows player than some locations can be unlocked only via Piraeus! #gamedesign)
         - Lastlight Road - Route leading south of Kipos Town, going up and then down mountains, some snowy Pokémon
         - Rainbow Tower - small settlement south of Kipos Town, with a large tower and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
             - Rumored to be the home of a great, godlike Pokémon with the power to restore life (Ho-oh!)
             - This will be where Ho-oh can be caught later in the game, probably after the Chimera story
-        - Explore AC odyssey world for other location inspo lol
+        - Péntepetal City ("Five-petal City") - name inspired by the Wild Pansy / Violet, which is a major lesbian/queer symbol with 5 petals. City obviously on island inspired by Lesbos
+            - Questline unlocking Eternal Flower Floette
+            - Major Cabin Decor shops! Ways here to unlock many poké dolls?
+            - Wishing Star mart location could be here too! Makes sense to make it late-ish in game
+                - Make sure to add some wishing stars on the ground across the region before here though
+        - The Pollen Road - route east of Péntepetal City, home to many Tropius, Roselia, and Lileep
+        - Davosian Strait - ocean route heading north of the Pollen Road (name inspired by Ser Davos Seaworth)
+            - Only place where Dhelmise can be fished up!
+        - Tricker's Coast - small area where ocean turns east towards land (name inspired by Trojan Horse)
+            - Include rocky, sandy coastal area with broken ship tiles and ruins
+        - Ruins of Ahiyawa (name based on Ahhiyawa, the term for Achean Greeks by the Hittites) - based on the ruins of Troy, covered in broken walls and stones with only a few standing buildings
+            - Basically a jumping off point for the player to get to Champion's Peak
+        - The Stygian Caves - moved east of Ruins of Ahiyawa, caves leading north to Champion's Peak
+        - Champion's Peak - moved northeast of Ruins of Ahiyawa, location of Elite Four obviously
 - Give all Pokémon unique Pokédex entries
 - Add Cecilily as a trainer
     - "PkMn Trainer" class, comissioned sprite or she can choose one?
@@ -80,6 +94,8 @@ MAJOR TODOS:
     - Wait until treasure catching is implemented because that's so cool!
 - Mudskip's Outfit system: https://github.com/mudskipper13/pokeemerald/tree/feature/outfits-system-rhh?tab=readme-ov-file
     - Outfits: Default (Amali & Harper), Calem & Serena (unlocked on catching/choosing a Gen 6 starter), USUM Protagonists (unlocked w/ Gen 7 starter), Arven & Nemona (unlocked w/ Gen 9 starter), Yellow (unlocked w/ catching a Pikachu). Plus a few basic variant customizations for Amali and Harper which can be earned or bought from vendors.
+- Implement Vol's Mining Minigame? https://github.com/volromhacking/pokeemerald-expansion/tree/mining_minigame
+    - Keep up with thread in RHH about it
 
 
 GREEK PHRASES AND STUFF:
@@ -117,8 +133,9 @@ GREEK PHRASES AND STUFF:
         - Spiky Ear Pichu gift
         - Wishing Star mart location
         - Ogerpon gift event
-            - Reward for helping Daycare / zoo area?
+            - Reward for helping Daycare / zoo area in Kipos Town
         - Eternal Flower Floette gift event
+            - Reward for something (lol) in Péntepetal City
         - Cabin (secret base) decor shops!
             - Decor merchants in EVERY POKEMART selling some area-themed stuff (ex: decor merchant in Pythios Town selling candle decor from Zaebucca's Decoration & Furniture tileset)
             - Large shop in Sofos City or another city dedicated to decorations?
@@ -189,8 +206,7 @@ Many, many talented developers and artists are responsible for making this proje
     - Some NPC sprites by kesterhenrickpixels on DeviantArt
     - Player sprites by me!
 - Overworld Pokémon Sprites:
-    - Gen 1 and 2 overworld sprites by Anima_nel on itch.io!
-    - Megaman-Omega on DeviantArt: Onix, Steelix, Lugia, Ho-oh, Lotad, Lombre, Ludicolo, Taillow, Swellow, Surskit, Masquerain, Shroomish, Breloom, Whismur, Loudred, Exploud, Makuhita, Hariyama, Sableye, Mawile, Aron, Lairon, Aggron, Volbeat, Illumise, Torkoal, Cacnea, Cacturne, Swablu, Altaria, Lileep, Cradily, Anorith, Armaldo, Feebas, Milotic, Shuppet, Banette, Duskull, Dusclops, Chimecho, Absol, Relicanth, Bagon, Salamence, Kyogre, Groudon, Rayquaza, Tangrowth, Electivire, Magmortar, Gliscor, Mamoswine, Gallade, Froslass, Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon
+    - Many Gen 1 and 2 overworld sprites by Anima_nel on itch.io
     - Eeveeee: Spoink, Kleavor
     - SageDeoxys: Wyrdeer
     - .kedoshim: Ursaluna
@@ -198,7 +214,7 @@ Many, many talented developers and artists are responsible for making this proje
     - Jaquelion: Dipplin, Hydrapple
     - DarkusShadow: base Tinkaton line sprites (GBA style)
     - Many others from Generations 3-4 by resource from Mano_Emet on Discord (Created by Megaman-Omega)
-    - Many Generation 5-7 overworlds based on icon sprites by Eeveee1999 on DeviantArt
+    - Many Generation 5-7 overworlds based on icon sprites by Eeveee1999 on DeviantArt, made by me
 - User Interface:
     - Title Screen: Pixel art done by me over original image [here](https://www.athens-private-tours.com/wp-content/uploads/2015/05/Acropolis-Sunset-15891085.jpg)
     - New Continue menu UI and Shop UI by mudskip (Continue menu code by Archie)

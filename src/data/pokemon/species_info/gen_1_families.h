@@ -11679,7 +11679,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sCuboneLevelUpLearnset,
         .teachableLearnset = sCuboneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 28, SPECIES_MAROWAK},
+                                {EVO_LEVEL_NIGHT, 28, SPECIES_MAROWAK_ALOLAN}),
     },
 
     [SPECIES_MAROWAK] =

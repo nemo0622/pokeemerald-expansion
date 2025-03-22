@@ -8,3 +8,77 @@ script ErinysPath_West_SignBlockingDemoProgress
     release
     end
 }
+
+script ErinysPath_West_EventScript_FatMan
+{
+    lock
+    faceplayer
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_YACHE_BERRY_FROST_BREATH)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        speakername("Berry Enthusiast")
+        msgbox(format("Thanks to that Yache Berry, I can stand in the cold just fine! Berries are so amazing."))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_YACHE_BERRY_FROST_BREATH)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        speakername("Berry Enthusiast")
+        msgbox(format("Berries found here are growing right at the snow line. These are some tough little plants!\p Brrr, it's real chilly up here... I have an idea. How about you bring me back a Berry that can help me {COLOR GREEN}resist Ice-type damage{COLOR DARK_GRAY}? I'm not sure if Berries work on humans, but it's worth a try."))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_YACHE_BERRY_FROST_BREATH)
+    }
+    else // else, the quest is active, so ask the player about it
+    {
+        speakername("Berry Enthusiast")
+        msgbox(format("Brrr, it's freezing up here! Do you have a {COLOR GREEN}Yache Berry{COLOR DARK_GRAY} for me to try yet? Maybe it'll help me shrug off the cold."))
+        closemessage
+
+        checkitem(ITEM_YACHE_BERRY)
+        delay(30)
+
+        if(var(VAR_RESULT) == 0) // no Yache Berry
+        {
+            speakername("Berry Enthusiast")
+            msgbox(format("No, I can't smell it. Berries all have a unique smell, but I can't sense a Yache Berry around here.\p From what I remember from those people at the Jusmail Town Berry Club, you need to {COLOR GREEN}grow Aspear and Persim Berries next to each other{COLOR DARK_GRAY} to get the hybrid Yache Berry."))
+            closemessage
+        }
+        else // has the berry!
+        {
+            applymovement(1, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(10)
+            speakername("Berry Enthusiast")
+            msgbox(format("Sniff sniff sniff... Hey, I know that smell! It must be a Yache Berry! Quick, give it here!"))
+            closemessage
+            removeitem(ITEM_YACHE_BERRY)
+            delay(30)
+            // little jump around animation
+            applymovement(1, Common_Movement_JumpInPlaceCircle)
+            waitmovement(0)
+            applymovement(1, Common_Movement_FacePlayer)
+            waitmovement(0)
+            speakername("Berry Enthusiast")
+            msgbox(format("Yum-yum-yum! Wow, I think I feel less cold!\p Thanks, bud. Here, I've got something for you."))
+            closemessage
+
+            giveitem(ITEM_TM52) // give Frost Breath TM
+
+            delay(5)
+            speakername("Berry Enthusiast")
+            msgbox(format("That TM contains the move {COLOR GREEN}Frost Breath{COLOR DARK_GRAY}. By itself, it's not the strongest, but it always lands a critical hit!\p My Pokémon and I learned how to do that up here in the cold. Hopefully, with my Yache Berry, I won't ever have to do that again!"))
+            closemessage
+
+            delay(20)
+            completequest(QUEST_YACHE_BERRY_FROST_BREATH)
+        }
+    }
+}

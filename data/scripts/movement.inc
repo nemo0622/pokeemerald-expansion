@@ -142,6 +142,14 @@ Common_Movement_JumpInPlaceRight:
 	jump_in_place_right
 	step_end
 
+Common_Movement_JumpInPlaceCircle:
+	jump_in_place_down
+	jump_in_place_right
+	jump_in_place_up
+	jump_in_place_left
+	jump_in_place_down
+	step_end
+
 Common_Movement_WalkUp2::
 	walk_up
 	walk_up

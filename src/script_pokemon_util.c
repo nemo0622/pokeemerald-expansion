@@ -471,13 +471,20 @@ u32 BirchCase_GiveMonParameterized(u16 species, u8 level, u16 item, u8 ball, u8 
     // generate random nature
     nature = Random() % NUM_NATURES;
 
-    // create a Pokémon with basic data
-    if ((gender == MON_MALE && genderRatio != MON_FEMALE && genderRatio != MON_GENDERLESS)
-     || (gender == MON_FEMALE && genderRatio != MON_MALE && genderRatio != MON_GENDERLESS)
-     || (gender == MON_GENDERLESS && genderRatio == MON_GENDERLESS))
-        CreateMonWithGenderNatureLetter(&mon, species, level, 32, gender, nature, 0);
+    // generate random gender
+    genderRatio = Random() % 2; // fuck it whatever
+    if(genderRatio == 0)
+        CreateMonWithGenderNatureLetter(&mon, species, level, 32, MON_MALE, nature, 0);
     else
-        CreateMonWithNature(&mon, species, level, 32, nature);
+        CreateMonWithGenderNatureLetter(&mon, species, level, 32, MON_FEMALE, nature, 0);
+
+    // // create a Pokémon with basic data
+    // if ((gender == MON_MALE && genderRatio != MON_FEMALE && genderRatio != MON_GENDERLESS)
+    //  || (gender == MON_FEMALE && genderRatio != MON_MALE && genderRatio != MON_GENDERLESS)
+    //  || (gender == MON_GENDERLESS && genderRatio == MON_GENDERLESS))
+    //     CreateMonWithGenderNatureLetter(&mon, species, level, 32, gender, nature, 0);
+    // else
+    //     CreateMonWithNature(&mon, species, level, 32, nature);
 
 #ifdef POKEMON_EXPANSION // the Expansion shiny code doesn't work in vanilla
     // shininess

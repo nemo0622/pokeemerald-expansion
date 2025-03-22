@@ -3466,10 +3466,14 @@ void GetOverworldMonSpecies(void)
         }
     }
     finalLevel = ((totalLevel / numOfPokemon) - (Random() % 5) - 1); // calculates average minus random number 0-4 minus 1
-    if(finalLevel <= 1)
-        finalLevel = (Random() % 3) + 2; // random level between 2 and like 4
-    else if(finalLevel > 100)
-        finalLevel = 100;
+    if(finalLevel <= 2 || finalLevel >= 90)
+    {
+        finalLevel = (totalLevel / numOfPokemon); // regenerates the raw average
+        if(finalLevel <= 1)
+            finalLevel = (Random() % 3) + 2; // random level between 2 and like 4
+        else if(finalLevel > 90)
+            finalLevel = 90;
+    }
     gSpecialVar_0x8006 = finalLevel;
     
 

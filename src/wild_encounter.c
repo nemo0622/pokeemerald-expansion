@@ -357,6 +357,11 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon, u8 wildMonIn
                     rand--;
             }
         }
+        if((min + rand) <= 2 || (min + rand) >= 90)
+        {
+            // something fucked happened. just return minimum level
+            return min;
+        }
         return min + rand;
     }
     else
