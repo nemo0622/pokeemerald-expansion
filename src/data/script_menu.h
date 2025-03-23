@@ -784,6 +784,15 @@ static const struct MenuAction MultichoiceList_NikoOrRania[] =
     {gText_Rania},
 };
 
+static const struct MenuAction MultichoiceList_ChooseInnTime[] =
+{
+    {gText_InnTime_Morning},
+    {gText_InnTime_Noon},
+    {gText_InnTime_Evening},
+    {gText_InnTime_Night},
+    {gText_Cancel},
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -913,6 +922,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
     [MULTI_NIKO_OR_RANIA]              = MULTICHOICE(MultichoiceList_NikoOrRania),
+    [MULTI_CHOOSE_INN_TIME]            = MULTICHOICE(MultichoiceList_ChooseInnTime),
 };
 
 const u8 *const gStdStrings[] =

@@ -103,3 +103,23 @@ void Script_ToggleFakeRtc(void)
 {
     FlagToggle(OW_FLAG_PAUSE_TIME);
 }
+
+void Script_SetFakeRTCMorning(void)
+{
+    FakeRtc_ManuallySetTime(7, 0, 0);
+}
+
+void Script_SetFakeRTCNoon(void)
+{
+    FakeRtc_ManuallySetTime(12, 0, 0);
+}
+
+void Script_SetFakeRTCEvening(void)
+{
+    FakeRtc_ManuallySetTime(19, 0, 0);
+}
+
+void Script_SetFakeRTCNight(void)
+{
+    FakeRtc_ManuallySetTime(22, 0, 0);
+}

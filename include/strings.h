@@ -2904,6 +2904,11 @@ extern const u8 gText_PlantBerry[];
 extern const u8 gText_Niko[];
 extern const u8 gText_Rania[];
 
+extern const u8 gText_InnTime_Morning[];
+extern const u8 gText_InnTime_Noon[];
+extern const u8 gText_InnTime_Evening[];
+extern const u8 gText_InnTime_Night[];
+
 // Map name pop-up
 extern const u8 gText_AM[];
 extern const u8 gText_PM[];

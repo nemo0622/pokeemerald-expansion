@@ -1704,6 +1704,10 @@ const u8 gText_Niko[] = _("Niko");
 const u8 gText_Rania[] = _("Rania");
 const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
+const u8 gText_InnTime_Morning[] = _("Morning");
+const u8 gText_InnTime_Noon[] = _("Noon");
+const u8 gText_InnTime_Evening[] = _("Evening");
+const u8 gText_InnTime_Night[] = _("Night");
 
 const u8 gText_ShinyIndicator[] = _(" {EMOJI_HEART}");
 

@@ -70,6 +70,8 @@ MAJOR TODOS:
         - Rainbow Tower - small settlement south of Kipos Town, with a large tower and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
             - Rumored to be the home of a great, godlike Pokémon with the power to restore life (Ho-oh!)
             - This will be where Ho-oh can be caught later in the game, probably after the Chimera story
+            - MANY BERRY TREES HERE!
+            - Use hanging light graphics from Yanako's tilesets (plus other buildings from that sheet too tbh)
         - Péntepetal City ("Five-petal City") - name inspired by the Wild Pansy / Violet, which is a major lesbian/queer symbol with 5 petals. City obviously on island inspired by Lesbos
             - Questline unlocking Eternal Flower Floette
             - Major Cabin Decor shops! Ways here to unlock many poké dolls?

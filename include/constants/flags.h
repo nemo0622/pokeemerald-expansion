@@ -1274,7 +1274,7 @@
 #define FLAG_UNLOCKED_ACRISIA_MTNS                                  0x4C7 // Set after Badge 1 + talking to Prof Elia
 #define FLAG_SHOWED_CEMETERY_LADY_SNOM                              0x4C8 // showed old lady in pythios cemetery a snom
 #define FLAG_DID_DEMO_WARNING                                       0x4C9 // Encountered demo warning in acrisia city
-#define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
+#define FLAG_MET_INKEEPER                                           0x4CA // If met the innkeeper in all Pokémon centers
 #define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
 #define FLAG_UNUSED_0x4CC                                           0x4CC // Unused Flag
 #define FLAG_UNUSED_0x4CD                                           0x4CD // Unused Flag

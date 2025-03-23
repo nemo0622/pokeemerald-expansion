@@ -2593,3 +2593,20 @@
     subquestmenu QUEST_MENU_CHECK_COMPLETE \parent \child
     call_if_eq VAR_RESULT, FALSE, \dest
     .endm
+
+	@ macros setting different rtc times
+	.macro setfakertcmorning
+	callnative Script_SetFakeRTCMorning
+	.endm
+
+	.macro setfakertcnoon
+	callnative Script_SetFakeRTCNoon
+	.endm
+
+	.macro setfakertcevening
+	callnative Script_SetFakeRTCEvening
+	.endm
+
+	.macro setfakertcnight
+	callnative Script_SetFakeRTCNight
+	.endm

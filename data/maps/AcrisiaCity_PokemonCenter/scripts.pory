@@ -49,3 +49,136 @@ script AcrisiaCity_PokemonCenter_EventScript_Togetic
     release
     end
 }
+
+// -----------------------------------------------------------------------------------------------
+
+script Common_PokemonCenter_EventScript_Innkeeper
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_MET_INKEEPER)) // never met innkeeper, do intro text
+    {
+        setflag(FLAG_MET_INKEEPER)
+        speakername("Innkeeper")
+        msgbox(format("Oh, a new customer! Welcome to the Pokémon Center Inn!\p Wait... yes, I can't believe it! You're the 100,000th visitor to the system of Pokémon Center Inns! Congratulations, you've won a free lifetime membership!\p We offer services in every Pokémon Center, allowing Trainers to sleep and {COLOR GREEN}skip to a chosen time{COLOR DARK_GRAY}. This helps for Trainers looking for Pokémon which only come out at certain times!"))
+        closemessage
+        delay(5)
+    }
+    speakername("Innkeeper")
+    message(format("Are you interested in taking a rest? My Musharna guarantees sweet dreams!"))
+    waitmessage
+    multichoice(21, 2, MULTI_CHOOSE_INN_TIME, TRUE) // VAR_RESULT: 0 = Morning, 1 = Noon, 2 = Evening, 3 = Night, 4 = Cancel
+    closemessage
+    delay(5)
+
+    // based on answer, skip time or cancel!
+    if(var(VAR_RESULT) == 4) // cancel
+    {
+        speakername("Innkeeper")
+        msgbox(format("Okay! Come back when you need a good rest!"))
+        closemessage
+        release
+        end
+    }
+    elif(var(VAR_RESULT) == 0) // morning
+    {
+        speakername("Innkeeper")
+        msgbox(format("Ah, the best time of day! I love waking up to wild Pikipek chirping outside. Sweet dreams!"))
+        closemessage
+        ballfollowingmon
+        fadescreen(FADE_TO_BLACK)
+        delay(30)
+
+        setfakertcmorning
+        playfanfare(MUS_RG_POKE_FLUTE)
+        waitfanfare
+
+        delay(30)
+        fadescreen(FADE_FROM_BLACK)
+        delay(30)
+        
+        speakername("Innkeeper")
+        msgbox(format("Good morning, rise and shine! It's 7:00 AM, just as you requested.\p We hope you stay well-rested and healthy!"))
+        closemessage
+        release
+        end
+    }
+    elif(var(VAR_RESULT) == 1) // noon
+    {
+        speakername("Innkeeper")
+        msgbox(format("Lovely, just as the sun shines brightest! Tons of Pokémon are at their most active around noon. Sweet dreams!"))
+        closemessage
+        ballfollowingmon
+        fadescreen(FADE_TO_BLACK)
+        delay(30)
+
+        setfakertcnoon
+        playfanfare(MUS_RG_POKE_FLUTE)
+        waitfanfare
+
+        delay(30)
+        fadescreen(FADE_FROM_BLACK)
+        delay(30)
+        
+        speakername("Innkeeper")
+        msgbox(format("Rise and shine! It's 12:00 Noon, just as you requested.\p We hope you stay well-rested and healthy!"))
+        closemessage
+        release
+        end
+    }
+    elif(var(VAR_RESULT) == 2) // evening
+    {
+        speakername("Innkeeper")
+        msgbox(format("Ah, preparing for some end-of-day exploring? Maybe you can catch the sunset as you wake up. Sweet dreams!"))
+        closemessage
+        ballfollowingmon
+        fadescreen(FADE_TO_BLACK)
+        delay(30)
+
+        setfakertcevening
+        playfanfare(MUS_RG_POKE_FLUTE)
+        waitfanfare
+
+        delay(30)
+        fadescreen(FADE_FROM_BLACK)
+        delay(30)
+        
+        speakername("Innkeeper")
+        msgbox(format("Good evening! It's 7:00 PM, just as you requested.\p We hope you stay well-rested and healthy!"))
+        closemessage
+        release
+        end
+    }
+    else // night
+    {
+        speakername("Innkeeper")
+        msgbox(format("Living like a Noctowl, huh? Some Pokémon are only found at night, maybe you can find a few! Sweet dreams!"))
+        closemessage
+        ballfollowingmon
+        fadescreen(FADE_TO_BLACK)
+        delay(30)
+
+        setfakertcnight
+        playfanfare(MUS_RG_POKE_FLUTE)
+        waitfanfare
+
+        delay(30)
+        fadescreen(FADE_FROM_BLACK)
+        delay(30)
+        
+        speakername("Innkeeper")
+        msgbox(format("I hope you're ready for a late night! It's 10:00 PM, just as you requested.\p We hope you stay well-rested and healthy!"))
+        closemessage
+        release
+        end
+    }
+}
+
+script Common_PokemonCenter_EventScript_CandleSign
+{
+    lock
+    msgbox(format("It's a candle with a soothing aroma. It almost smells like a Flabébé flower!\p The sign above is advertising the Pokémon Center Inn services."))
+    closemessage
+    release
+    end
+}
