@@ -20,8 +20,11 @@ mapscripts AcrisiaCity_MapScripts {
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
         setobjectaswildencounter(26, ENCOUNTER_LAND)
         setobjectaswildencounter(27, ENCOUNTER_LAND)
-        setobjectaswildencounter(18, ENCOUNTER_LAND)
-        setobjectaswildencounter(29, ENCOUNTER_LAND)
+        
+        if(!flag(FLAG_HIDE_INTRO_TRUCK))
+        {
+            clearflag(FLAG_HIDE_STARTING_POKEMON) // force starting Pokémon to be seen at the start i hope
+        }
     }
 
 }
@@ -102,7 +105,8 @@ script AcrisiaCity_EventScript_PlayerExitsTruck
 
     hideobjectat(12, MAP_ACRISIA_CITY) // hides the professor after he warps
     
-    setflag(FLAG_HIDE_INTRO_TRUCK) // hides intro truck and those little pokemon who run away as you walk up
+    setflag(FLAG_HIDE_INTRO_TRUCK) // hides intro truck
+    setflag(FLAG_HIDE_STARTING_POKEMON) // hide those little pokemon who run away as you walk up
 
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp) // player enters the university
     waitmovement(0)

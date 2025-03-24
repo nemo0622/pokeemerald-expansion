@@ -1275,7 +1275,7 @@
 #define FLAG_SHOWED_CEMETERY_LADY_SNOM                              0x4C8 // showed old lady in pythios cemetery a snom
 #define FLAG_DID_DEMO_WARNING                                       0x4C9 // Encountered demo warning in acrisia city
 #define FLAG_MET_INKEEPER                                           0x4CA // If met the innkeeper in all Pokémon centers
-#define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
+#define FLAG_HIDE_STARTING_POKEMON                                  0x4CB // hides pokemon seen in intro sequence
 #define FLAG_UNUSED_0x4CC                                           0x4CC // Unused Flag
 #define FLAG_UNUSED_0x4CD                                           0x4CD // Unused Flag
 #define FLAG_UNUSED_0x4CE                                           0x4CE // Unused Flag

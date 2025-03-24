@@ -16685,8 +16685,8 @@ static const struct LevelUpMove sGenesectLevelUpLearnset[] = {
 
 #if P_FAMILY_CHESPIN
 static const struct LevelUpMove sChespinLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
     LEVEL_UP_MOVE( 5, MOVE_VINE_WHIP),
     LEVEL_UP_MOVE( 8, MOVE_ROLLOUT),
     LEVEL_UP_MOVE(11, MOVE_BITE),

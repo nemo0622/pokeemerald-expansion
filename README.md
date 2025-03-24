@@ -54,6 +54,18 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
+- DEMO REVISION 1.2 RELEASE
+    - Make sure to disable DEBUG FEATURES
+    - List of changes:
+        - Added Inn to Pokémon Centers, allowing time skipping
+        - Added Recommended Emulator list
+        - Fixed rare professor invisibility during the intro
+        - Fixed Starter gender lock
+        - Removed glitched MissingNo (empty Pokémon) from Girlypop cheat code
+        - Fixed unassigned follower crashing Pokémon Center & certain events
+        - Added quest information for Old Woman's Snom quest in Pythios Cemetery
+        - Fixed blank Togepi evolution description
+        - Fixed various other minor bugs (dialogue fixes, Low Kick description crash, Cubone evolution, etc.)
 - Continue Mapping and NPC development
     - Next: Erinys Path, Froslass Cavern, and onwards towards Sofos City
         - Add Tyrantrum Exhibit tiles to a town square area in Sofos City!
@@ -149,7 +161,6 @@ GREEK PHRASES AND STUFF:
 - DexNav chain count and directional arrow not shown when hunting
 - When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
-- ADD DISCLAIMER NOT TO USE MYBOY, SIGH
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
