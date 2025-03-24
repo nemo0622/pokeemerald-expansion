@@ -43,6 +43,7 @@ static void TilesetAnim_MauvilleGym(u16);
 static void TilesetAnim_BikeShop(u16);
 static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
+static void TilesetAnim_Jusmail(u16);
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
@@ -57,6 +58,7 @@ static void QueueAnimTiles_Mauville_Flowers(u16, u8);
 static void QueueAnimTiles_BikeShop_BlinkingLights(u16);
 static void QueueAnimTiles_BattlePyramid_Torch(u16);
 static void QueueAnimTiles_BattlePyramid_StatueShadow(u16);
+static void QueueAnimTiles_Jusmail_Windmill_Row01(u16);
 static void BlendAnimPalette_BattleDome_FloorLights(u16);
 static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16);
 static void QueueAnimTiles_Lavaridge_Steam(u8);
@@ -544,6 +546,40 @@ static const u16 *const sTilesetAnims_BattleDomeFloorLightPals[] = {
     gTilesetAnims_BattleDomePals0_3,
 };
 
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame0[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_00.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame1[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_01.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame2[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_02.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame3[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_03.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame4[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_04.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame5[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_05.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame6[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_06.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame7[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_07.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame8[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_08.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame9[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_09.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame10[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_10.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame11[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_11.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame12[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_12.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame13[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_13.4bpp");
+const u16 gTilesetAnims_Jusmail_Windmill_Row01_Frame14[] = INCBIN_U16("data/tilesets/secondary/jusmail/anim/windmill/row01/windmill_anim_14.4bpp");
+
+static const u16 *const gTilesetAnims_Jusmail_Windmill_Row01[] = {
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame0,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame1,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame2,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame3,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame4,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame5,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame6,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame7,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame8,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame9,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame10,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame11,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame12,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame13,
+    gTilesetAnims_Jusmail_Windmill_Row01_Frame14
+};
+
 static void ResetTilesetAnimBuffer(void)
 {
     sTilesetDMA3TransferBufferSize = 0;
@@ -629,6 +665,13 @@ void InitTilesetAnim_Building(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_Building;
 }
 
+void InitTilesetAnim_Jusmail(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_Jusmail;
+}
+
 static void TilesetAnim_General(u16 timer)
 {
     if (timer % 16 == 0)
@@ -672,6 +715,28 @@ static void QueueAnimTiles_General_Waterfall(u16 timer)
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_Waterfall);
     AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(496)), 6 * TILE_SIZE_4BPP);
 }
+
+static void TilesetAnim_Jusmail(u16 timer)
+{
+    if (timer % 16 == 0)
+    {
+        QueueAnimTiles_Jusmail_Windmill_Row01(timer >> 4);
+    }
+}
+
+static void QueueAnimTiles_Jusmail_Windmill_Row01(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Jusmail_Windmill_Row01);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Jusmail_Windmill_Row01[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(0x344)), 0x180);
+}
+
+// NOTE TO SELF:
+// If this doesn't work (which is likely lol), split these animations into 12 separate animations, one for each 8x8 horizontal row making up the windmill frames
+// This is to satisfy the "The animated tiles need to be right next to each other, not above or below" requirement -
+// by doing this, each row's animations are already going to be aligned!
+
+// ALSO: if there are still problems, it looks like the "maximum 16 pixel width" requirement is actually real
+// This means each windmill frame must be organized vertically, with each 16x16 box below the next
 
 void InitTilesetAnim_Petalburg(void)
 {

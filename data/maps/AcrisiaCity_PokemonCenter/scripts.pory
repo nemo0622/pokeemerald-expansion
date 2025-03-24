@@ -56,6 +56,7 @@ script Common_PokemonCenter_EventScript_Innkeeper
 {
     lock
     faceplayer
+    setflag(FLAG_SYS_CLOCK_SET) // makes sure the clock is set, to keep save compatibility with older demo saves
     if(!flag(FLAG_MET_INKEEPER)) // never met innkeeper, do intro text
     {
         setflag(FLAG_MET_INKEEPER)

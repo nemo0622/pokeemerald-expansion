@@ -87,204 +87,206 @@ Common_PokemonCenter_EventScript_Innkeeper::
 # 58 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	faceplayer
 # 59 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	setflag FLAG_SYS_CLOCK_SET
+# 60 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	goto_if_unset FLAG_MET_INKEEPER, Common_PokemonCenter_EventScript_Innkeeper_2
 Common_PokemonCenter_EventScript_Innkeeper_1:
-# 67 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
 # 68 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	message Common_PokemonCenter_EventScript_Innkeeper_Text_2
+	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
 # 69 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	waitmessage
+	message Common_PokemonCenter_EventScript_Innkeeper_Text_2
 # 70 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	multichoice 21, 2, MULTI_CHOOSE_INN_TIME, TRUE
+	waitmessage
 # 71 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	closemessage
+	multichoice 21, 2, MULTI_CHOOSE_INN_TIME, TRUE
 # 72 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 73 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	delay 5
-# 75 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 76 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	compare VAR_RESULT, 4
 	goto_if_eq Common_PokemonCenter_EventScript_Innkeeper_4
-# 83 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 84 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_PokemonCenter_EventScript_Innkeeper_5
-# 106 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 107 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_PokemonCenter_EventScript_Innkeeper_6
-# 129 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 130 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq Common_PokemonCenter_EventScript_Innkeeper_7
-# 154 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
 # 155 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_10
-# 156 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	closemessage
-# 157 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	ballfollowingmon
-# 158 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 159 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 161 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	setfakertcnight
-# 162 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	playfanfare MUS_RG_POKE_FLUTE
-# 163 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	waitfanfare
-# 165 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 166 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 167 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 169 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
-# 170 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_11
-# 171 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 156 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_10
+# 157 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	closemessage
+# 158 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	ballfollowingmon
+# 159 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 160 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 162 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	setfakertcnight
+# 163 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	playfanfare MUS_RG_POKE_FLUTE
+# 164 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	waitfanfare
+# 166 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 167 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 168 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 170 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
+# 171 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_11
 # 172 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 173 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	release
 	end
 
 Common_PokemonCenter_EventScript_Innkeeper_2:
-# 61 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	setflag FLAG_MET_INKEEPER
 # 62 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
+	setflag FLAG_MET_INKEEPER
 # 63 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_1
+	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
 # 64 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	closemessage
+	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_1
 # 65 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 66 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	delay 5
 	goto Common_PokemonCenter_EventScript_Innkeeper_1
 
 Common_PokemonCenter_EventScript_Innkeeper_4:
-# 77 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
 # 78 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_3
+	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
 # 79 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	closemessage
+	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_3
 # 80 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 81 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	release
 	end
 
 Common_PokemonCenter_EventScript_Innkeeper_5:
-# 85 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
 # 86 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_4
-# 87 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	closemessage
-# 88 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	ballfollowingmon
-# 89 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 90 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 92 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	setfakertcmorning
-# 93 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	playfanfare MUS_RG_POKE_FLUTE
-# 94 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	waitfanfare
-# 96 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 97 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 98 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 100 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
-# 101 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_5
-# 102 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 87 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_4
+# 88 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	closemessage
+# 89 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	ballfollowingmon
+# 90 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 91 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 93 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	setfakertcmorning
+# 94 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	playfanfare MUS_RG_POKE_FLUTE
+# 95 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	waitfanfare
+# 97 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 98 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 99 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 101 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
+# 102 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_5
 # 103 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 104 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	release
 	end
 
 Common_PokemonCenter_EventScript_Innkeeper_6:
-# 108 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
 # 109 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_6
-# 110 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	closemessage
-# 111 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	ballfollowingmon
-# 112 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 113 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 115 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	setfakertcnoon
-# 116 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	playfanfare MUS_RG_POKE_FLUTE
-# 117 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	waitfanfare
-# 119 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 120 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 121 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 123 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
-# 124 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_7
-# 125 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 110 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_6
+# 111 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	closemessage
+# 112 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	ballfollowingmon
+# 113 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 114 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 116 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	setfakertcnoon
+# 117 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	playfanfare MUS_RG_POKE_FLUTE
+# 118 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	waitfanfare
+# 120 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 121 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 122 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 124 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
+# 125 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_7
 # 126 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 127 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	release
 	end
 
 Common_PokemonCenter_EventScript_Innkeeper_7:
-# 131 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
 # 132 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_8
-# 133 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	closemessage
-# 134 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	ballfollowingmon
-# 135 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 136 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 138 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	setfakertcevening
-# 139 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	playfanfare MUS_RG_POKE_FLUTE
-# 140 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	waitfanfare
-# 142 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 143 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 144 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	delay 30
-# 146 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
-# 147 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_9
-# 148 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 133 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_8
+# 134 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	closemessage
+# 135 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	ballfollowingmon
+# 136 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 137 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 139 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	setfakertcevening
+# 140 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	playfanfare MUS_RG_POKE_FLUTE
+# 141 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	waitfanfare
+# 143 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 144 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 145 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 30
+# 147 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	speakername Common_PokemonCenter_EventScript_Innkeeper_Text_0
+# 148 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox Common_PokemonCenter_EventScript_Innkeeper_Text_9
 # 149 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 150 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	release
 	end
 
 
 Common_PokemonCenter_EventScript_CandleSign::
-# 179 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	lock
 # 180 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	msgbox Common_PokemonCenter_EventScript_CandleSign_Text_0
+	lock
 # 181 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
-	closemessage
+	msgbox Common_PokemonCenter_EventScript_CandleSign_Text_0
 # 182 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 183 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	release
 	end
 
@@ -322,11 +324,11 @@ AcrisiaCity_PokemonCenter_EventScript_Togetic_Text_1:
 	.string "Bee-eh!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_0:
-# 62 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 63 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Innkeeper$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_1:
-# 63 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 64 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Oh, a new customer! Welcome to the\n"
 	.string "Pokémon Center Inn!\p"
 	.string "Wait... yes, I can't believe it! You're the\n"
@@ -340,69 +342,69 @@ Common_PokemonCenter_EventScript_Innkeeper_Text_1:
 	.string "come out at certain times!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_2:
-# 68 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 69 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Are you interested in taking a rest? My\n"
 	.string "Musharna guarantees sweet dreams!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_3:
-# 78 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 79 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Okay! Come back when you need a good\n"
 	.string "rest!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_4:
-# 86 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 87 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Ah, the best time of day! I love waking\n"
 	.string "up to wild Pikipek chirping outside.\l"
 	.string "Sweet dreams!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_5:
-# 101 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 102 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Good morning, rise and shine! It's 7:00\n"
 	.string "AM, just as you requested.\p"
 	.string "We hope you stay well-rested and\n"
 	.string "healthy!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_6:
-# 109 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 110 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Lovely, just as the sun shines\n"
 	.string "brightest! Tons of Pokémon are at their\l"
 	.string "most active around noon. Sweet dreams!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_7:
-# 124 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 125 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Rise and shine! It's 12:00 Noon, just as\n"
 	.string "you requested.\p"
 	.string "We hope you stay well-rested and\n"
 	.string "healthy!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_8:
-# 132 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 133 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Ah, preparing for some end-of-day\n"
 	.string "exploring? Maybe you can catch the\l"
 	.string "sunset as you wake up. Sweet dreams!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_9:
-# 147 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 148 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Good evening! It's 7:00 PM, just as you\n"
 	.string "requested.\p"
 	.string "We hope you stay well-rested and\n"
 	.string "healthy!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_10:
-# 155 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 156 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Living like a Noctowl, huh? Some\n"
 	.string "Pokémon are only found at night, maybe\l"
 	.string "you can find a few! Sweet dreams!$"
 
 Common_PokemonCenter_EventScript_Innkeeper_Text_11:
-# 170 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 171 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "I hope you're ready for a late night!\n"
 	.string "It's 10:00 PM, just as you requested.\p"
 	.string "We hope you stay well-rested and\n"
 	.string "healthy!$"
 
 Common_PokemonCenter_EventScript_CandleSign_Text_0:
-# 180 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+# 181 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "It's a candle with a soothing aroma. It\n"
 	.string "almost smells like a Flabébé flower!\p"
 	.string "The sign above is advertising the\n"
