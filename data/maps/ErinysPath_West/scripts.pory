@@ -82,3 +82,96 @@ script ErinysPath_West_EventScript_FatMan
         }
     }
 }
+
+script ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena
+{
+    trainerbattle_single(TRAINER_ERINYSPATH_W_HELENA, ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaDefeat)
+    speakername("Helena")
+    msgbox(format("Maybe I'll find a boat to take me to Sofos City. Froslass Cavern sounds scary!"))
+    closemessage
+    release
+    end
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaIntro
+{
+    format("We're not far from Froslass Cavern! A little battle practice should help us get through!")
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaDefeat
+{
+    format("Aw, I better head home...")
+}
+
+script ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey
+{
+    trainerbattle_single(TRAINER_ERINYSPATH_W_LEWEY, ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyDefeat)
+    speakername("Lewey")
+    msgbox(format("No, no, I don't need help, I'll just keep pedaling. It's bound to work sooner or later!"))
+    closemessage
+    release
+    end
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyIntro
+{
+    format("My bike wheels got stuck in the mud!")
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyDefeat
+{
+    format("Not my best day, huh?")
+}
+
+script ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro
+{
+    trainerbattle_double(TRAINER_ERINYSPATH_W_IRO_AND_ANNA, ErinysPath_West_Text_Trainer_ErinysPath_W_IroIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_IroDefeat, ErinysPath_West_Text_Trainer_ErinysPath_W_IroNotEnoughMons)
+    speakername("Iro")
+    msgbox(format("My sister and I come here to play all the time. All the wild Pokémon like us!"))
+    closemessage
+    release
+    end
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_IroIntro
+{
+    format("We caught these Pokémon while we built snowmen!")
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_IroDefeat
+{
+    format("At least we made some new friends!")
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_IroNotEnoughMons
+{
+    format("Aw, you don't have enough Pokémon to battle us. It wouldn't be fair!")
+}
+
+script ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna
+{
+    trainerbattle_double(TRAINER_ERINYSPATH_W_IRO_AND_ANNA, ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaDefeat, ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaNotEnoughMons)
+    speakername("Anna")
+    msgbox(format("Iro tells me scary stories about the Froslass in the caves, but I'm not scared! It made the cold and snow for us to play in!"))
+    closemessage
+    release
+    end
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaIntro
+{
+    format("We caught these Pokémon while we built snowmen!")
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaDefeat
+{
+    format("Who'll help us build snowmen now?")
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaNotEnoughMons
+{
+    format("Our parents say we can't battle someone without at least 2 Pokémon, or else it wouldn't be fair.")
+}
+
+script ErinysPath_West_EventScript_Performer
+{
+    lock
+    faceplayer
+    speakername("Performer")
+    msgbox(format("This area around Froslass Cavern is just about the only snowy place in the Ilios Region. It's worth visiting here to play in the snow sometimes!"))
+    closemessage
+    applymovement(8, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}

@@ -6890,7 +6890,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_GrowlitheHisuian,
         .iconSprite = gMonIcon_GrowlitheHisuian,
         .iconPalIndex = 0,
-        SHADOW(2, -2, SHADOW_SIZE_M)
+        SHADOW(0, 1, SHADOW_SIZE_M)
         FOOTPRINT(Growlithe)
         OVERWORLD(
             sPicTable_GrowlitheHisuian,
@@ -6954,7 +6954,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_ArcanineHisuian,
         .iconSprite = gMonIcon_ArcanineHisuian,
         .iconPalIndex = 0,
-        SHADOW(-1, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(4, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Arcanine)
         OVERWORLD(
             sPicTable_ArcanineHisuian,

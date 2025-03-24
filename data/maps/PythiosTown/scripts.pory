@@ -425,7 +425,7 @@ script PythiosTown_EventScripts_PIRAEUS
         if(!flag(FLAG_BADGE03_GET)) // no badge yet
         {
             speakername("Strange Sailor")
-            msgbox(format("Nope, only 2 Gym Badges. That might not be enough.\p Come back when you have the {COLOR GREEN}Pythios Town Gym Badge{COLOR DARK_GRAY}, I need to mke sure you're a strong Trainer."))
+            msgbox(format("Nope, only 2 Gym Badges. That might not be enough.\p Come back when you have the {COLOR GREEN}Pythios Town Gym Badge{COLOR DARK_GRAY}, I need to make sure you're a strong Trainer."))
             closemessage
             release
             end

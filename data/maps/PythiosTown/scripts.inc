@@ -1117,7 +1117,7 @@ PythiosTown_EventScripts_PIRAEUS_Text_3:
 	.string "Nope, only 2 Gym Badges. That might not\n"
 	.string "be enough.\p"
 	.string "Come back when you have the {COLOR GREEN}Pythios\n"
-	.string "Town Gym Badge{COLOR DARK_GRAY}, I need to mke sure\l"
+	.string "Town Gym Badge{COLOR DARK_GRAY}, I need to make sure\l"
 	.string "you're a strong Trainer.$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_4:

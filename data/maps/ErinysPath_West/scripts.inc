@@ -122,6 +122,82 @@ ErinysPath_West_EventScript_FatMan_7:
 	return
 
 
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena::
+# 88 "data/maps/ErinysPath_West/scripts.pory"
+	trainerbattle_single TRAINER_ERINYSPATH_W_HELENA, ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaDefeat
+# 89 "data/maps/ErinysPath_West/scripts.pory"
+	speakername ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena_Text_0
+# 90 "data/maps/ErinysPath_West/scripts.pory"
+	msgbox ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena_Text_1
+# 91 "data/maps/ErinysPath_West/scripts.pory"
+	closemessage
+# 92 "data/maps/ErinysPath_West/scripts.pory"
+	release
+	end
+
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey::
+# 106 "data/maps/ErinysPath_West/scripts.pory"
+	trainerbattle_single TRAINER_ERINYSPATH_W_LEWEY, ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyDefeat
+# 107 "data/maps/ErinysPath_West/scripts.pory"
+	speakername ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey_Text_0
+# 108 "data/maps/ErinysPath_West/scripts.pory"
+	msgbox ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey_Text_1
+# 109 "data/maps/ErinysPath_West/scripts.pory"
+	closemessage
+# 110 "data/maps/ErinysPath_West/scripts.pory"
+	release
+	end
+
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro::
+# 124 "data/maps/ErinysPath_West/scripts.pory"
+	trainerbattle_double TRAINER_ERINYSPATH_W_IRO_AND_ANNA, ErinysPath_West_Text_Trainer_ErinysPath_W_IroIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_IroDefeat, ErinysPath_West_Text_Trainer_ErinysPath_W_IroNotEnoughMons
+# 125 "data/maps/ErinysPath_West/scripts.pory"
+	speakername ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro_Text_0
+# 126 "data/maps/ErinysPath_West/scripts.pory"
+	msgbox ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro_Text_1
+# 127 "data/maps/ErinysPath_West/scripts.pory"
+	closemessage
+# 128 "data/maps/ErinysPath_West/scripts.pory"
+	release
+	end
+
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna::
+# 146 "data/maps/ErinysPath_West/scripts.pory"
+	trainerbattle_double TRAINER_ERINYSPATH_W_IRO_AND_ANNA, ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaDefeat, ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaNotEnoughMons
+# 147 "data/maps/ErinysPath_West/scripts.pory"
+	speakername ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna_Text_0
+# 148 "data/maps/ErinysPath_West/scripts.pory"
+	msgbox ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna_Text_1
+# 149 "data/maps/ErinysPath_West/scripts.pory"
+	closemessage
+# 150 "data/maps/ErinysPath_West/scripts.pory"
+	release
+	end
+
+
+ErinysPath_West_EventScript_Performer::
+# 168 "data/maps/ErinysPath_West/scripts.pory"
+	lock
+# 169 "data/maps/ErinysPath_West/scripts.pory"
+	faceplayer
+# 170 "data/maps/ErinysPath_West/scripts.pory"
+	speakername ErinysPath_West_EventScript_Performer_Text_0
+# 171 "data/maps/ErinysPath_West/scripts.pory"
+	msgbox ErinysPath_West_EventScript_Performer_Text_1
+# 172 "data/maps/ErinysPath_West/scripts.pory"
+	closemessage
+# 173 "data/maps/ErinysPath_West/scripts.pory"
+	applymovement 8, Common_Movement_FaceRight
+# 174 "data/maps/ErinysPath_West/scripts.pory"
+	waitmovement 0
+# 175 "data/maps/ErinysPath_West/scripts.pory"
+	release
+	end
+
+
 ErinysPath_West_SignBlockingDemoProgress_Text_0:
 # 6 "data/maps/ErinysPath_West/scripts.pory"
 	.string "This is the end of the Pokémon Lazarus\n"
@@ -192,3 +268,101 @@ ErinysPath_West_EventScript_FatMan_Text_7:
 	.string "up here in the cold. Hopefully, with my\l"
 	.string "Yache Berry, I won't ever have to do\l"
 	.string "that again!$"
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena_Text_0:
+# 89 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Helena$"
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena_Text_1:
+# 90 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Maybe I'll find a boat to take me to\n"
+	.string "Sofos City. Froslass Cavern sounds\l"
+	.string "scary!$"
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey_Text_0:
+# 107 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Lewey$"
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey_Text_1:
+# 108 "data/maps/ErinysPath_West/scripts.pory"
+	.string "No, no, I don't need help, I'll just keep\n"
+	.string "pedaling. It's bound to work sooner or\l"
+	.string "later!$"
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro_Text_0:
+# 125 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Iro$"
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro_Text_1:
+# 126 "data/maps/ErinysPath_West/scripts.pory"
+	.string "My sister and I come here to play all\n"
+	.string "the time. All the wild Pokémon like us!$"
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna_Text_0:
+# 147 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Anna$"
+
+ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna_Text_1:
+# 148 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Iro tells me scary stories about the\n"
+	.string "Froslass in the caves, but I'm not\l"
+	.string "scared! It made the cold and snow for\l"
+	.string "us to play in!$"
+
+ErinysPath_West_EventScript_Performer_Text_0:
+# 170 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Performer$"
+
+ErinysPath_West_EventScript_Performer_Text_1:
+# 171 "data/maps/ErinysPath_West/scripts.pory"
+	.string "This area around Froslass Cavern is\n"
+	.string "just about the only snowy place in the\l"
+	.string "Ilios Region. It's worth visiting here to\l"
+	.string "play in the snow sometimes!$"
+
+ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaIntro::
+# 95 "data/maps/ErinysPath_West/scripts.pory"
+	.string "We're not far from Froslass Cavern! A\n"
+	.string "little battle practice should help us\l"
+	.string "get through!$"
+
+ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaDefeat::
+# 99 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Aw, I better head home...$"
+
+ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyIntro::
+# 113 "data/maps/ErinysPath_West/scripts.pory"
+	.string "My bike wheels got stuck in the mud!$"
+
+ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyDefeat::
+# 117 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Not my best day, huh?$"
+
+ErinysPath_West_Text_Trainer_ErinysPath_W_IroIntro::
+# 131 "data/maps/ErinysPath_West/scripts.pory"
+	.string "We caught these Pokémon while we built\n"
+	.string "snowmen!$"
+
+ErinysPath_West_Text_Trainer_ErinysPath_W_IroDefeat::
+# 135 "data/maps/ErinysPath_West/scripts.pory"
+	.string "At least we made some new friends!$"
+
+ErinysPath_West_Text_Trainer_ErinysPath_W_IroNotEnoughMons::
+# 139 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Aw, you don't have enough Pokémon to\n"
+	.string "battle us. It wouldn't be fair!$"
+
+ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaIntro::
+# 153 "data/maps/ErinysPath_West/scripts.pory"
+	.string "We caught these Pokémon while we built\n"
+	.string "snowmen!$"
+
+ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaDefeat::
+# 157 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Who'll help us build snowmen now?$"
+
+ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaNotEnoughMons::
+# 161 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Our parents say we can't battle\n"
+	.string "someone without at least 2 Pokémon, or\l"
+	.string "else it wouldn't be fair.$"

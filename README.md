@@ -149,6 +149,10 @@ GREEK PHRASES AND STUFF:
 - DexNav chain count and directional arrow not shown when hunting
 - When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
+- Follower must be set during Pokédex wagon cutscene and Pokémon Center heal
+    - Also true for large followers like Ho-oh, which freezes Pokémon center because it's not out of the ball
+- ADD DISCLAIMER NOT TO USE MYBOY, SIGH
+- Overworld Mon sprites occasionally glitch around windmill maps :(
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)

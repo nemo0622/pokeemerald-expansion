@@ -541,7 +541,7 @@ Tags: Lead
 - Confusion
 - Ancient Power
 
-Chingling
+Flittle
 Level: 11
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1301,7 +1301,7 @@ Murkrow
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Chingling
+Finneon
 Level: 19
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -2099,7 +2099,7 @@ Party Size: 2
 Pool Rules: Basic
 
 Cyclizar
-Level: 19
+Level: 18
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Snover
@@ -2110,56 +2110,70 @@ Rufflet
 Level: 20
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_RICKY_3 ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
-Gender: Male
+=== TRAINER_ERINYSPATH_W_HELENA ===
+Name: Helena
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
-Linoone
-Level: 30
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+Meowth Galarian
+Level: 20
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_RICKY_4 ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
+Wattrel
+Level: 20
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Cherubi
+Level: 21
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Solosis
+Level: 21
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_ERINYSPATH_W_LEWEY ===
+Name: Lewey
+Class: Triathlete
+Pic: Cycling Triathlete M
 Gender: Male
-Music: Girl
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
 
-Linoone
-Level: 33
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+Cyclizar
+Level: 20
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_RICKY_5 ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
+=== TRAINER_ERINYSPATH_W_IRO_AND_ANNA ===
+Name: Iro & Anna
+Class: Twins
+Pic: Twins
 Gender: Male
-Music: Girl
-Double Battle: No
-AI: Check Bad Move
+Music: Twins
+Double Battle: Yes
+AI: Check Bad Move / Check Viability
 
-Linoone
-Level: 36
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+Omanyte
+Level: 20
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Kabuto
+Level: 20
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Spinarak
+Level: 21
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Skorupi
+Level: 21
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_RANDALL ===
 Name: RANDALL

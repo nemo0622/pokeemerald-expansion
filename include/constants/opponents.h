@@ -71,9 +71,9 @@
 #define TRAINER_ERINYSPATH_E_LUEROI                        65
 #define TRAINER_ERINYSPATH_E_KAYLEY                      66
 #define TRAINER_ERINYSPATH_E_ROGER                      67
-#define TRAINER_RICKY_3                      68
-#define TRAINER_RICKY_4                      69
-#define TRAINER_RICKY_5                      70
+#define TRAINER_ERINYSPATH_W_HELENA                      68
+#define TRAINER_ERINYSPATH_W_LEWEY                      69
+#define TRAINER_ERINYSPATH_W_IRO_AND_ANNA                      70
 #define TRAINER_RANDALL                      71
 #define TRAINER_PARKER                       72
 #define TRAINER_GEORGE                       73
