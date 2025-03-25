@@ -61,11 +61,14 @@ MAJOR TODOS:
         - Added Recommended Emulator list
         - Fixed rare professor invisibility during the intro
         - Fixed Starter gender lock
+        - Fixed Berry Growth problems
+            - OLD SAVES: Enter a Pokémon Center and speak to the Innkeeper! This will manually enable all time-based events, including Berry growth, while maintaining old save compatibility.
         - Removed glitched MissingNo (empty Pokémon) from Girlypop cheat code
         - Fixed unassigned follower crashing Pokémon Center & certain events
         - Added quest information for Old Woman's Snom quest in Pythios Cemetery
+        - Improved certain Trainer sprites
         - Fixed blank Togepi evolution description
-        - Fixed various other minor bugs (dialogue fixes, Low Kick description crash, Cubone evolution, etc.)
+        - Fixed various other minor bugs (dialogue fixes, Low Kick description crash, Cubone evolution, and many more)
 - Continue Mapping and NPC development
     - Next: Erinys Path, Froslass Cavern, and onwards towards Sofos City
         - Add Tyrantrum Exhibit tiles to a town square area in Sofos City!
@@ -214,6 +217,7 @@ Many, many talented developers and artists are responsible for making this proje
     - Some GBC style Trainer sprites from Pokémon Crystal
     - Scientist F, Punk Rocker, Hiker, and a few other sprites from Solo993's Unova sprite devamps
     - Professor, Performer F, Worker, and Scuba Diver sprites by Substitube
+    - Aroma Lady, Battle Girl, Beauty, Bug Maniac, Pokémon Ranger, and Swimming Triathlete by Justin8964 on DeviantArt
 - Overworld Sprites:
     - Many NPC sprites adapted from Pokémon Crystal
     - Some NPC sprites by Anima_nel on itch.io
