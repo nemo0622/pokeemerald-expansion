@@ -54,21 +54,6 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- DEMO REVISION 1.2 RELEASE
-    - Make sure to disable DEBUG FEATURES
-    - List of changes:
-        - Added Inn to Pokémon Centers, allowing time skipping
-        - Added Recommended Emulator list
-        - Fixed rare professor invisibility during the intro
-        - Fixed Starter gender lock
-        - Fixed Berry Growth problems
-            - OLD SAVES: Enter a Pokémon Center and speak to the Innkeeper! This will manually enable all time-based events, including Berry growth, while maintaining old save compatibility.
-        - Removed glitched MissingNo (empty Pokémon) from Girlypop cheat code
-        - Fixed unassigned follower crashing Pokémon Center & certain events
-        - Added quest information for Old Woman's Snom quest in Pythios Cemetery
-        - Improved certain Trainer sprites
-        - Fixed blank Togepi evolution description
-        - Fixed various other minor bugs (dialogue fixes, Low Kick description crash, Cubone evolution, and many more)
 - Continue Mapping and NPC development
     - Next: Erinys Path, Froslass Cavern, and onwards towards Sofos City
         - Add Tyrantrum Exhibit tiles to a town square area in Sofos City!
@@ -143,6 +128,8 @@ GREEK PHRASES AND STUFF:
         - Fishing Rod locations (Good/Super rods still need places)
         - Safari Zone?
         - Dive locations
+            - SIDE QUEST IDEA: Have a sidequest centered around the rediscovery of Relicanth, a new Lazarus Taxa rumored to be living deep underwater!
+                - This will make Relicanth feel more special, as it's the poster child for Lazarus Taxa
         - Unlock seeing wild Pokémon natures and Abilities
             - Tutorial: https://www.pokecommunity.com/threads/simple-modifications-directory.416647/post-10893555
             - Implement above feature using flag in "if" statements. Unlock flag via sidequest

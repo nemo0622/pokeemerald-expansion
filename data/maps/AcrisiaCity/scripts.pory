@@ -25,6 +25,10 @@ mapscripts AcrisiaCity_MapScripts {
         {
             clearflag(FLAG_HIDE_STARTING_POKEMON) // force starting Pokémon to be seen at the start i hope
         }
+        else
+        {
+            setflag(FLAG_HIDE_STARTING_POKEMON)
+        }
 
         setflag(FLAG_SYS_CLOCK_SET) // force flag to maintain save compatibility with older demo saves
     }
