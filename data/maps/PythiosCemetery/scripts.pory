@@ -156,18 +156,18 @@ script PythiosCemetery_EventScript_Trainer_PythiosCemetery_Galei
 {
     trainerbattle_single(TRAINER_PYTHIOSCEMETERY_GALEI, PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiIntro, PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiDefeat)
     speakername("Galei")
-    msgbox(format("That battle cheered me up a bit."))
+    msgbox(format("Looks like I lost our battle. I should probably just stick to comedy..."))
     closemessage
     release
     end
 }
 text PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiIntro
 {
-    format("I'm here to sulk...")
+    format("I'm on the lookout for new jokes. Do you have any?")
 }
 text PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiDefeat
 {
-    format("I can't even sulk in peace, huh?")
+    format("Looks like the joke's on me!")
 }
 
 script PythiosCemetery_EventScript_OldWoman

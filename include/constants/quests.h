@@ -37,7 +37,7 @@
 #define QUEST_HELP_PIRAEUS          19 // defeat team chimera admin east of Pythios Town for Piraeus
 #define QUEST_SNOM_ICE_STONE        20 // showed Old Lady a Snom in Pythios Cemetery for an Ice Stone
 #define QUEST_YACHE_BERRY_FROST_BREATH 21 // show Yache Berry to Fat Man in Erinys Path to earn TM52 Frost Breath
-#define QUEST_23        22
+#define QUEST_BEAT_FROSLASS         22 // beat Froslass in Froslass Cavern and tell little girl
 #define QUEST_24        23
 #define QUEST_25        24
 #define QUEST_26        25

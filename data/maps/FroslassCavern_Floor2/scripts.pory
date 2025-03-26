@@ -1,1 +1,23 @@
-mapscripts FroslassCavern_Floor2_MapScripts {}
+mapscripts FroslassCavern_Floor2_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflashlevel(4)
+    }
+}
+
+script FroslassCavern_F2_EventScript_Trainer_FroslassCavern_F2_Sandor
+{
+    trainerbattle_single(TRAINER_FROSLASSCAVERN_F2_SANDOR, FroslassCavern_F2_Text_Trainer_FroslassCavern_F2_SandorIntro, FroslassCavern_F2_Text_Trainer_FroslassCavern_F2_SandorDefeat)
+    speakername("Sandor")
+    msgbox(format("I don't just laugh at people on the ice, you know! I've sent my Pokémon to help before, I'm not a total jerk!"))
+    closemessage
+    release
+    end
+}
+text FroslassCavern_F2_Text_Trainer_FroslassCavern_F2_SandorIntro
+{
+    format("It's hilarious watching people struggle to get across the ice!")
+}
+text FroslassCavern_F2_Text_Trainer_FroslassCavern_F2_SandorDefeat
+{
+    format("Maybe I'm a bit too mean.")
+}

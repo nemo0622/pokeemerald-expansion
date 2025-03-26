@@ -547,8 +547,8 @@
 #define FLAG_HIDDEN_ITEM_ACRISIA_MOUNTAINS_EXP_CANDY         (FLAG_HIDDEN_ITEMS_START + 0x04)
 #define FLAG_HIDDEN_ITEM_RIVERWALK_WEST_MIRACLE_SEED         (FLAG_HIDDEN_ITEMS_START + 0x05)
 #define FLAG_HIDDEN_ITEM_PYTHIOS_CEMETERY_PURPLE_NECTAR      (FLAG_HIDDEN_ITEMS_START + 0x06)
-#define FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL               (FLAG_HIDDEN_ITEMS_START + 0x07)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS               (FLAG_HIDDEN_ITEMS_START + 0x08)
+#define FLAG_HIDDEN_ITEM_FROSLASS_CAVERN_ICE_TERA_SHARD_1    (FLAG_HIDDEN_ITEMS_START + 0x07)
+#define FLAG_HIDDEN_ITEM_FROSLASS_CAVERN_ICE_TERA_SHARD_2    (FLAG_HIDDEN_ITEMS_START + 0x08)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD          (FLAG_HIDDEN_ITEMS_START + 0x09)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x0A)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x0B)
@@ -1060,14 +1060,14 @@
 #define FLAG_ITEM_PYTHIOS_CEMETERY_MAX_REVIVE                       0x3F2
 #define FLAG_ITEM_PYTHIOS_CEMETERY_STARDUST                         0x3F3
 #define FLAG_ITEM_PYTHIOS_CEMETERY_SHADOW_BALL                      0x3F4
-#define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
-#define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
-#define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
-#define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8
-#define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9
-#define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA
-#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB
-#define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC
+#define FLAG_ITEM_ERINYS_PATH_FULL_RESTORE                          0x3F5
+#define FLAG_ITEM_ERINYS_PATH_RARE_CANDY                            0x3F6
+#define FLAG_ITEM_ERINYS_PATH_FULL_HEAL                             0x3F7
+#define FLAG_ITEM_FROSLASS_CAVERN_DUSK_BALL                         0x3F8
+#define FLAG_ITEM_FROSLASS_CAVERN_PEARL                             0x3F9
+#define FLAG_ITEM_FROSLASS_CAVERN_NEVER_MELT_ICE                    0x3FA
+#define FLAG_ITEM_FROSLASS_CAVERN_MOON_STONE                        0x3FB
+#define FLAG_ITEM_FROSLASS_CAVERN_TM_THIEF                          0x3FC
 #define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
 #define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
 #define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
@@ -1276,7 +1276,7 @@
 #define FLAG_DID_DEMO_WARNING                                       0x4C9 // Encountered demo warning in acrisia city
 #define FLAG_MET_INKEEPER                                           0x4CA // If met the innkeeper in all Pokémon centers
 #define FLAG_HIDE_STARTING_POKEMON                                  0x4CB // hides pokemon seen in intro sequence
-#define FLAG_UNUSED_0x4CC                                           0x4CC // Unused Flag
+#define FLAG_HIDE_FROSLASS                                          0x4CC // Hide Froslass in Froslass Cavern
 #define FLAG_UNUSED_0x4CD                                           0x4CD // Unused Flag
 #define FLAG_UNUSED_0x4CE                                           0x4CE // Unused Flag
 #define FLAG_UNUSED_0x4CF                                           0x4CF // Unused Flag

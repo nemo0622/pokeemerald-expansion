@@ -85,7 +85,7 @@
 #define TRAINER_PIC_TWINS                 67
 #define TRAINER_PIC_SAILOR                68
 #define TRAINER_PIC_MAGMA_ADMIN           69
-#define TRAINER_PIC_WALLY                 70
+#define TRAINER_PIC_WALLY                 70 // Rania I think
 #define TRAINER_PIC_BRENDAN               71
 #define TRAINER_PIC_MAY                   72
 #define TRAINER_PIC_BUG_CATCHER           73

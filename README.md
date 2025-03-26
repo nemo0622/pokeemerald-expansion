@@ -57,7 +57,13 @@ MAJOR TODOS:
 - Continue Mapping and NPC development
     - Next: Erinys Path, Froslass Cavern, and onwards towards Sofos City
         - Add Tyrantrum Exhibit tiles to a town square area in Sofos City!
+    - ADD NIKO TERASTALLIZATION QUEST TO ASFAL HILLS
+        - Quest: bring Niko the Tera Orb (obtained from a Team Chimera Admin hiding in Sofos City). He will examine it and see how it reacts with Tera Shards and the player's Pokémon. He lets the player keep the Tera Orb, and offers to change a Pokémon's Tera Type at the Acrisia University
+            - Team Chimera Admin could be hiding in an old, "abandoned" cave in the northern portion of Sofos City
     - Also rework existing areas based on Demo feedback
+        - Add more quests! Requests for items, Pokédex entries, Pokémon, and more extensive ones like the Sandslash unbound quest!
+        - Add DIRECTIONAL SIGNS (good 2-tile-tall ones from Yanako I think?) with town information and directions!
+            - Important in this region because it's new for people
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
@@ -113,13 +119,15 @@ GREEK PHRASES AND STUFF:
     - Finish implementing Prof. Elia, Rania, and Niko's gifting / interactions based on Pokédex progress
         - Prof. Elia gifts a few helpful items and starter Pokémon with special good stats + Oval Charm
         - Rania provides Tera Shards and other battle items (Rocky Helmet, etc) + Exp Charm
-        - Niko provides unique Pokéballs + Catching Charm, eventually becomes a Pokéball shop
+        - Niko provides unique Pokéballs + Catching Charm, also becomes the Tera Type changer
+            - After unlocking Terastallization, increase Niko's State variable. When the state is greater than or equal to that value, have Niko ask if you're looking for Tera Type Change or Conversation (rewards, etc)
     - MISSING IMPORTANT BUILDINGS / LOCATIONS / UNLOCKS
         - Daycare for Pokémon Breeding (Erynis Path? could be cute)
         - Contest Hall (Sofos City?) (+ unique Contest competitors)
         - Battle Factory (+ unique Battle Factory teams)
         - Tera Orb unlock (optional quest after 3rd gym)
             - Remember to use FLAG_UNLOCKED_TERASTALLIZATION
+            - Unlocked by doing a quest for Niko in Asfal Hills
             - If flag FLAG_UNLOCKED_TERASTALLIZATION set, allow Gym Leaders to terastallize? Seems fair
             - ALSO: change Pinball egg shop in Sofos City to a Tera Shard distributor (1 random shard per point)
         - Berry plant locations

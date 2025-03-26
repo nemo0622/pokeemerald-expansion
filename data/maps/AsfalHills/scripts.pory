@@ -1,1 +1,71 @@
 mapscripts AsfalHills_MapScripts {}
+
+script AsfalHills_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Asfal Hills\n The Gentle Coastal Road\p {LEFT_ARROW} Froslass Cavern\n Sofos City {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
+script AsfalHills_EventScript_Nurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to my Roadside Pokémon Healing Service! I'm here to help Trainers coming from Pythios Town make it to Sofos City.\p Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 1)
+    {
+        closemessage
+        call(Common_EventScript_OutOfCenterPartyHeal)
+        delay(10)
+        speakername("Nurse")
+        msgbox(format("Good luck on your adventures!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Feel free to come back any time!"))
+        closemessage
+    }
+    release
+    end
+}
+
+script AsfalHills_EventScript_Trainer_AsfalHills_Salmai
+{
+    trainerbattle_single(TRAINER_ASFALHILLS_SALMAI, AsfalHills_Text_Trainer_AsfalHills_SalmaiIntro, AsfalHills_Text_Trainer_AsfalHills_SalmaiDefeat)
+    speakername("Salmai")
+    msgbox(format("Pokémon Eggs take many steps to hatch. Moving back and forth like this is a way to quickly hatch them!"))
+    closemessage
+    release
+    end
+}
+text AsfalHills_Text_Trainer_AsfalHills_SalmaiIntro
+{
+    format("There's a good, long horizontal stretch on this route. Perfect for biking back and forth!")
+}
+text AsfalHills_Text_Trainer_AsfalHills_SalmaiDefeat
+{
+    format("Huff, huff... I have to keep training!")
+}
+
+script AsfalHills_EventScript_Trainer_AsfalHills_Ardrin
+{
+    trainerbattle_single(TRAINER_ASFALHILLS_ARDRIN, AsfalHills_Text_Trainer_AsfalHills_ArdrinIntro, AsfalHills_Text_Trainer_AsfalHills_ArdrinDefeat)
+    speakername("Ardrin")
+    msgbox(format("I'm grateful for the roadside Nurse just over there."))
+    closemessage
+    release
+    end
+}
+text AsfalHills_Text_Trainer_AsfalHills_ArdrinIntro
+{
+    format("I'm hiking all the way from Jusmail Town. Where are you from?")
+}
+text AsfalHills_Text_Trainer_AsfalHills_ArdrinDefeat
+{
+    format("That's quite a journey!")
+}

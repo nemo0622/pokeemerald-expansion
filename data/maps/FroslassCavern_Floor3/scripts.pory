@@ -1,1 +1,188 @@
-mapscripts FroslassCavern_Floor3_MapScripts {}
+mapscripts FroslassCavern_Floor3_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflashlevel(4)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(6, ENCOUNTER_LAND)
+        setobjectaswildencounter(7, ENCOUNTER_LAND)
+        setobjectaswildencounter(8, ENCOUNTER_LAND)
+    }
+}
+
+script FroslassCavern_F3_EventScript_LittleGirl
+{
+    lock
+    faceplayer
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_BEAT_FROSLASS)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        speakername("Little Girl")
+        msgbox(format("This cave is a little scary, but the Froslass was so friendly! I'll catch a Snorunt and raise it all by myself someday!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_BEAT_FROSLASS)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        applymovement(2, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        speakername("Little Girl")
+        msgbox(format("Eek! Don't haunt me!!"))
+        closemessage
+        delay(20)
+        speakername("Little Girl")
+        msgbox(format("Oh, sorry. I thought you were a Ghost-type Pokémon!\p People say there's a huge {COLOR GREEN}wild Froslass{COLOR DARK_GRAY} somewhere in this cave. I want to find it and be friends with it, but I'm too scared...\p Wait, you're a grown up, you can help me! Can you {COLOR GREEN}find and catch a Froslass{COLOR DARK_GRAY} in the cave for me?"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_BEAT_FROSLASS)
+    }
+    else
+    {
+        speakername("Little Girl")
+        msgbox(format("Oh, hi! Did you {COLOR GREEN}bring me the Froslass to see{COLOR DARK_GRAY}?"))
+        closemessage
+
+        // if beat Froslass flag set in cavern and have Froslass in party, go to meet froslass and complete quest!
+        if(flag(FLAG_HIDE_FROSLASS))
+        {
+            checkforspecies(SPECIES_FROSLASS, FALSE, FroslassCavern_F3_EventScript_LittleGirlMeetsFroslass)
+        }
+        
+        // if here, you haven't beaten the Froslass and/or you don't have Froslass in your party
+        delay(30)
+        speakername("Little Girl")
+        msgbox(format("Sniff... I guess not.\p I'm scared of the Froslass, but I kinda want to be friends with it! Lemme know when you {COLOR GREEN}have the Froslass for me{COLOR DARK_GRAY}."))
+        closemessage
+    }
+    release
+    end
+}
+
+script FroslassCavern_F3_EventScript_LittleGirlMeetsFroslass
+{
+    lock
+    delay(30)
+    applymovement(2, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    speakername("Little Girl")
+    msgbox(format("Woah, a real Froslass! Can I hold the Poké ball for a minute?"))
+    closemessage
+    delay(20)
+    applymovement(2, Common_Movement_Heart)
+    waitmovement(0)
+    delay(10)
+    speakername("Little Girl")
+    msgbox(format("Wow, she's so pretty! Nothing to be afraid of...!\p Here's her Poké ball back. I'm gonna catch a Snorunt someday, and I'll raise it to be just like Froslass! Thanks for showing me!"))
+    closemessage
+    giveitem(ITEM_EXP_CANDY_M, 3)
+
+    delay(20)
+    completequest(QUEST_BEAT_FROSLASS)
+
+    release
+    end
+}
+
+script FroslassCavern_F3_EventScript_Froslass
+{
+    lock
+    faceplayer
+    playmoncry(SPECIES_FROSLASS, CRY_MODE_ENCOUNTER)
+	delay(30)
+	waitmoncry
+	delay(60)
+    seteventmon(SPECIES_FROSLASS, 35, ITEM_AMULET_COIN)
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    
+    // check battle outcome
+    removeobject(1)
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_LOST)
+    {
+        msgbox(format("Froslass vanishes through the walls, sending a chill down your spine..."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Froslass bows her head to you, and the cave warms a litte."))
+        closemessage
+    }
+
+    setflag(FLAG_HIDE_FROSLASS)
+    releaseall
+    end
+}
+
+script FroslassCavern_F3_EventScript_Trainer_FroslassCavern_F3_Beatrice
+{
+    trainerbattle_single(TRAINER_FROSLASSCAVERN_F3_BEATRICE, FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_BeatriceIntro, FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_BeatriceDefeat)
+    speakername("Beatrice")
+    msgbox(format("The powers of winter are stronger here than anywhere else in the Ilios Region."))
+    closemessage
+    release
+    end
+}
+text FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_BeatriceIntro
+{
+    format("The icy walls... they're closing in!")
+}
+text FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_BeatriceDefeat
+{
+    format("It was just an illusion!")
+}
+
+script FroslassCavern_F3_EventScript_Trainer_FroslassCavern_F3_Kauros
+{
+    trainerbattle_single(TRAINER_FROSLASSCAVERN_F3_KAUROS, FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_KaurosIntro, FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_KaurosDefeat)
+    speakername("Kauros")
+    msgbox(format("I make the hike from Sofos City to train here every day. It's hard, but it makes my Pokémon strong!"))
+    closemessage
+    release
+    end
+}
+text FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_KaurosIntro
+{
+    format("We only let strong Trainers get past us. Let's see what you're worth!")
+}
+text FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_KaurosDefeat
+{
+    format("You're definitely strong enough.")
+}
+
+script FroslassCavern_F3_EventScript_Trainer_FroslassCavern_F3_Maxilla
+{
+    trainerbattle_single(TRAINER_FROSLASSCAVERN_F3_MAXILLA, FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_MaxillaIntro, FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_MaxillaDefeat)
+    speakername("Maxilla")
+    msgbox(format("My Amaura and Kauros' Tyrunt are both considered Lazarus Taxa. Apparently, they were thought to be extinct until recently."))
+    closemessage
+    release
+    end
+}
+text FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_MaxillaIntro
+{
+    format("Our Pokémon are made to work together!")
+}
+text FroslassCavern_F3_Text_Trainer_FroslassCavern_F3_MaxillaDefeat
+{
+    format("We need more practice with teamwork.")
+}

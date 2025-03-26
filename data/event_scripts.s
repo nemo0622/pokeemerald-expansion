@@ -1754,3 +1754,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/KalamiCity_Mart/scripts.inc"
 
 	.include "data/maps/KalamiCity_Gym/scripts.inc"
+
+	.include "data/maps/AcrisiaMountain_Peak/scripts.inc"

@@ -104,6 +104,7 @@
 #define MAP_RIVERWALK_TRAIL_WEST       (95 | (0 << 8))
 #define MAP_RIVERWALK_TRAIL_SOUTH      (96 | (0 << 8))
 #define MAP_KALAMI_CITY                (97 | (0 << 8))
+#define MAP_ACRISIA_MOUNTAIN_PEAK      (98 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

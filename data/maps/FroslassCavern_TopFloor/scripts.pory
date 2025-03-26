@@ -1,1 +1,74 @@
-mapscripts FroslassCavern_TopFloor_MapScripts {}
+mapscripts FroslassCavern_TopFloor_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflashlevel(4)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(6, ENCOUNTER_LAND)
+        setobjectaswildencounter(7, ENCOUNTER_LAND)
+    }
+}
+
+script FroslassCavern_F1_EventScript_Trainer_FroslassCavern_F1_Robin
+{
+    trainerbattle_single(TRAINER_FROSLASSCAVERN_F1_ROBIN, FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_RobinIntro, FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_RobinDefeat)
+    speakername("Robin")
+    msgbox(format("I'm a Scientist, so I'm naturally a skeptic. But even I can't deny Ghost-type Pokémon!"))
+    closemessage
+    release
+    end
+}
+text FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_RobinIntro
+{
+    format("People say a ghostly Froslass lives deep in this cave. I'm here to test those rumors!")
+}
+text FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_RobinDefeat
+{
+    format("Back to the drawing board.")
+}
+
+script FroslassCavern_F1_EventScript_Trainer_FroslassCavern_F1_Carmin
+{
+    trainerbattle_single(TRAINER_FROSLASSCAVERN_F1_CARMIN, FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_CarminIntro, FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_CarminDefeat)
+    speakername("Carmin")
+    msgbox(format("I got confused in the dark, so I thought you were a monster. I'm on guard!"))
+    closemessage
+    release
+    end
+}
+text FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_CarminIntro
+{
+    format("Hiya! I'll defeat you, evil demon!")
+}
+text FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_CarminDefeat
+{
+    format("Oh, you're not a demon! Sorry!")
+}
+
+script FroslassCavern_F1_EventScript_Trainer_FroslassCavern_F1_Ento
+{
+    trainerbattle_single(TRAINER_FROSLASSCAVERN_F1_ENTO, FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_EntoIntro, FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_EntoDefeat)
+    speakername("Ento")
+    msgbox(format("I heard there's an Ice-type Bug Pokémon in the Ilios Region. Are they not found in the icy caves?"))
+    closemessage
+    release
+    end
+}
+text FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_EntoIntro
+{
+    format("None... not a one! Not a single bug in this cave!")
+}
+text FroslassCavern_F1_Text_Trainer_FroslassCavern_F1_EntoDefeat
+{
+    format("How disappointing. I'm only interested in Bug-type Pokémon.")
+}

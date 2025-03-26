@@ -1,4 +1,24 @@
-mapscripts ErinysPath_West_MapScripts {}
+mapscripts ErinysPath_West_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(12, ENCOUNTER_LAND)
+        setobjectaswildencounter(13, ENCOUNTER_LAND)
+        setobjectaswildencounter(14, ENCOUNTER_LAND)
+        setobjectaswildencounter(15, ENCOUNTER_LAND)
+        setobjectaswildencounter(16, ENCOUNTER_LAND)
+    }
+}
 
 script ErinysPath_West_SignBlockingDemoProgress
 {
@@ -81,6 +101,8 @@ script ErinysPath_West_EventScript_FatMan
             completequest(QUEST_YACHE_BERRY_FROST_BREATH)
         }
     }
+    release
+    end
 }
 
 script ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena
@@ -172,6 +194,53 @@ script ErinysPath_West_EventScript_Performer
     closemessage
     applymovement(8, Common_Movement_FaceRight)
     waitmovement(0)
+    release
+    end
+}
+
+script ErinysPath_West_EventScript_Trainer_ErinysPath_W_Damon
+{
+    trainerbattle_single(TRAINER_ERINYSPATH_W_DAMON, ErinysPath_West_Text_Trainer_ErinysPath_W_DamonIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_DamonDefeat)
+    speakername("Damon")
+    msgbox(format("While I'm up here, I might as well make a few snowballs. My Ice-type Pokémon like it here!"))
+    closemessage
+    release
+    end
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_DamonIntro
+{
+    format("I got a maintenance call for someone up here... Where are they?")
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_DamonDefeat
+{
+    format("Argh, I bet it was just a prank call.")
+}
+
+script ErinysPath_West_EventScript_Trainer_ErinysPath_W_Tisias
+{
+    trainerbattle_single(TRAINER_ERINYSPATH_W_TISIAS, ErinysPath_West_Text_Trainer_ErinysPath_W_TisiasIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_TisiasDefeat)
+    speakername("Tisias")
+    msgbox(format("Maybe the snowmen aren't fighting, maybe they're friends!"))
+    closemessage
+    release
+    end
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_TisiasIntro
+{
+    format("Look! These snowmen look like they're battling! Let's battle, too!")
+}
+text ErinysPath_West_Text_Trainer_ErinysPath_W_TisiasDefeat
+{
+    format("I couldn't even win with all this money?!")
+}
+
+script ErinysPath_West_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("Froslass Cavern has huge sheets of ice on the cave floor. I tried to slide across them, but I slipped and fell!"))
+    closemessage
     release
     end
 }

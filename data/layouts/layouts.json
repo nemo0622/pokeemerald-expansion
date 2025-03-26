@@ -4585,7 +4585,7 @@
       "id": "LAYOUT_FROSLASS_CAVERN_FLOOR2",
       "name": "FroslassCavern_Floor2_Layout",
       "width": 18,
-      "height": 12,
+      "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/FroslassCavern_Floor2/border.bin",
@@ -4595,7 +4595,7 @@
       "id": "LAYOUT_FROSLASS_CAVERN_FLOOR3",
       "name": "FroslassCavern_Floor3_Layout",
       "width": 32,
-      "height": 16,
+      "height": 26,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/FroslassCavern_Floor3/border.bin",
@@ -5070,6 +5070,16 @@
       "secondary_tileset": "gTileset_JusmailGym",
       "border_filepath": "data/layouts/KalamiCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/KalamiCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACRISIA_MOUNTAIN_PEAK",
+      "name": "AcrisiaMountain_Peak_Layout",
+      "width": 22,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Acrisia",
+      "border_filepath": "data/layouts/AcrisiaMountain_Peak/border.bin",
+      "blockdata_filepath": "data/layouts/AcrisiaMountain_Peak/map.bin"
     }
   ]
 }

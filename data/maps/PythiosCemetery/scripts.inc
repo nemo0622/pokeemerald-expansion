@@ -193,7 +193,7 @@ PythiosCemetery_EventScript_Trainer_PythiosCemetery_Galei::
 # 158 "data/maps/PythiosCemetery/scripts.pory"
 	speakername PythiosCemetery_EventScript_Trainer_PythiosCemetery_Galei_Text_0
 # 159 "data/maps/PythiosCemetery/scripts.pory"
-	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Arkos_Text_1
+	msgbox PythiosCemetery_EventScript_Trainer_PythiosCemetery_Galei_Text_1
 # 160 "data/maps/PythiosCemetery/scripts.pory"
 	closemessage
 # 161 "data/maps/PythiosCemetery/scripts.pory"
@@ -375,6 +375,11 @@ PythiosCemetery_EventScript_Trainer_PythiosCemetery_Galei_Text_0:
 # 158 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Galei$"
 
+PythiosCemetery_EventScript_Trainer_PythiosCemetery_Galei_Text_1:
+# 159 "data/maps/PythiosCemetery/scripts.pory"
+	.string "Looks like I lost our battle. I should\n"
+	.string "probably just stick to comedy...$"
+
 PythiosCemetery_EventScript_OldWoman_Text_0:
 # 177 "data/maps/PythiosCemetery/scripts.pory"
 	.string "Old Woman$"
@@ -462,8 +467,9 @@ PythiosCemetery_Text_Trainer_PythiosCemetery_ArkosDefeat::
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiIntro::
 # 164 "data/maps/PythiosCemetery/scripts.pory"
-	.string "I'm here to sulk...$"
+	.string "I'm on the lookout for new jokes. Do you\n"
+	.string "have any?$"
 
 PythiosCemetery_Text_Trainer_PythiosCemetery_GaleiDefeat::
 # 168 "data/maps/PythiosCemetery/scripts.pory"
-	.string "I can't even sulk in peace, huh?$"
+	.string "Looks like the joke's on me!$"

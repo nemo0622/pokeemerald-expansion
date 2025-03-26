@@ -793,11 +793,11 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_23,
+	      gText_SideQuestName_23, // QUEST_BEAT_FROSLASS
 	      gText_SideQuestDesc_23,
 	      gText_SideQuestDoneDesc_23,
 	      gText_SideQuestMap23,
-	      OBJ_EVENT_GFX_RANIA,
+	      OBJ_EVENT_GFX_LITTLE_GIRL,
 	      OBJECT,
 	      NULL,
 	      0
