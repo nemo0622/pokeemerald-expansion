@@ -105,6 +105,7 @@
 #define MAP_RIVERWALK_TRAIL_SOUTH      (96 | (0 << 8))
 #define MAP_KALAMI_CITY                (97 | (0 << 8))
 #define MAP_ACRISIA_MOUNTAIN_PEAK      (98 | (0 << 8))
+#define MAP_WANDERERS_WOODS_SOUTH      (99 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -208,6 +209,11 @@
 #define MAP_SLATEPORT_CITY_POKEMON_CENTER_1F       (11 | (9 << 8))
 #define MAP_SLATEPORT_CITY_POKEMON_CENTER_2F       (12 | (9 << 8))
 #define MAP_SLATEPORT_CITY_MART                    (13 | (9 << 8))
+#define MAP_ASFAL_HILLS_HOUSE1                     (14 | (9 << 8))
+#define MAP_ASFAL_HILLS_HOUSE2                     (15 | (9 << 8))
+#define MAP_ASFAL_HILLS_HOUSE3                     (16 | (9 << 8))
+#define MAP_SOFOS_CITY_POKEMON_CENTER              (17 | (9 << 8))
+#define MAP_SOFOS_CITY_MART                        (18 | (9 << 8))
 
 // gMapGroup_IndoorMauville
 #define MAP_MAUVILLE_CITY_GYM               (0 | (10 << 8))
@@ -465,6 +471,7 @@
 #define MAP_STYGIAN_CAVES_BF1                        (110 | (24 << 8))
 #define MAP_JUSMAIL_TOWN_GYM                         (111 | (24 << 8))
 #define MAP_ACRISIA_CAVES_BF1                        (112 | (24 << 8))
+#define MAP_SATYRS_LAIR                              (113 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1         (0 | (25 << 8))

@@ -38,14 +38,16 @@
 #define QUEST_SNOM_ICE_STONE        20 // showed Old Lady a Snom in Pythios Cemetery for an Ice Stone
 #define QUEST_YACHE_BERRY_FROST_BREATH 21 // show Yache Berry to Fat Man in Erinys Path to earn TM52 Frost Breath
 #define QUEST_BEAT_FROSLASS         22 // beat Froslass in Froslass Cavern and tell little girl
-#define QUEST_24        23
-#define QUEST_25        24
-#define QUEST_26        25
-#define QUEST_27        26
-#define QUEST_28        27
-#define QUEST_29        28
-#define QUEST_30        29
-#define QUEST_COUNT     (QUEST_30 + 1)
+#define QUEST_24        23 // FILL WITH EARLIER GAME QUEST
+#define QUEST_25        24 // FILL WITH EARLIER GAME QUEST
+#define QUEST_26        25 // FILL WITH EARLIER GAME QUEST
+#define QUEST_27        26 // FILL WITH EARLIER GAME QUEST
+#define QUEST_28        27 // FILL WITH EARLIER GAME QUEST
+#define QUEST_BEAT_CHIMERA_SOFOS_CITY 28 // quest to beat Team Chimera in Sofos City and bring Niko the Tera Orb in Asfal Hills
+#define QUEST_SHOW_BOY_GIRAFARIG    29 // show little boy in Asfal Hills House 1 a Girafarig dex entry
+#define QUEST_SHOW_CAMPER_ALOLAN_RAICHU    30 // show camper in Sofos City Alolan Raichu dex entry for Terrain Extender
+#define QUEST_TRY_SOFOS_BATTLE_PAVILION    31 // participate in Sofos City Battle Pavilion
+#define QUEST_COUNT     (QUEST_TRY_SOFOS_BATTLE_PAVILION + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

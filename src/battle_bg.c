@@ -827,7 +827,7 @@ void DrawMainBattleBackground(void)
         u16 currMetatile = GetPlayerCurMetatileBehavior(0); // gets current metatile behavior
         s16 x, y;
         PlayerGetDestCoords(&x, &y);
-        if((mapId == MAPSEC_PYTHIOS_TOWN || mapId == MAPSEC_ERINYS_PATH) && (MetatileBehavior_IsPokeGrass(currMetatile) || MapGridGetMetatileIdAt(x, y) == METATILE_Pythios_RedGrass)) // loads orange/red grass
+        if(MapGridGetMetatileIdAt(x, y) == METATILE_Pythios_RedGrass || MapGridGetMetatileIdAt(x, y) == METATILE_Pythios_RedTallGrass) // loads orange/red grass
         {
             LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tilemap, (void *)(BG_SCREEN_ADDR(26)));

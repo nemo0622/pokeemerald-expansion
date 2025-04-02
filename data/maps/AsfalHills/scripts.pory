@@ -1,9 +1,39 @@
-mapscripts AsfalHills_MapScripts {}
+mapscripts AsfalHills_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(23, ENCOUNTER_LAND)
+        setobjectaswildencounter(24, ENCOUNTER_LAND)
+        setobjectaswildencounter(25, ENCOUNTER_LAND)
+        setobjectaswildencounter(26, ENCOUNTER_LAND)
+        setobjectaswildencounter(27, ENCOUNTER_LAND)
+        setobjectaswildencounter(32, ENCOUNTER_LAND)
+    }
+}
 
 script AsfalHills_EventScript_DirectionSign
 {
     lock
     msgbox(format("Asfal Hills\n The Gentle Coastal Road\p {LEFT_ARROW} Froslass Cavern\n Sofos City {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
+script AsfalHills_EventScript_LibrarySign
+{
+    lock
+    msgbox(format("Sofos Outskirts Public Library\n Open to all, 24 Hours a day!"))
     closemessage
     release
     end
@@ -56,16 +86,362 @@ script AsfalHills_EventScript_Trainer_AsfalHills_Ardrin
 {
     trainerbattle_single(TRAINER_ASFALHILLS_ARDRIN, AsfalHills_Text_Trainer_AsfalHills_ArdrinIntro, AsfalHills_Text_Trainer_AsfalHills_ArdrinDefeat)
     speakername("Ardrin")
-    msgbox(format("I'm grateful for the roadside Nurse just over there."))
+    msgbox(format("These hills are nice, but they're covered in stony ruins. That makes it hard for crops to grow."))
     closemessage
     release
     end
 }
 text AsfalHills_Text_Trainer_AsfalHills_ArdrinIntro
 {
-    format("I'm hiking all the way from Jusmail Town. Where are you from?")
+    format("Ahh, it's no good. There are too many stones in the ground here for farming!")
 }
 text AsfalHills_Text_Trainer_AsfalHills_ArdrinDefeat
 {
-    format("That's quite a journey!")
+    format("I should head back towards Jusmail Town.")
+}
+
+script AsfalHills_EventScript_Trainer_AsfalHills_Vito
+{
+    trainerbattle_single(TRAINER_ASFALHILLS_VITO, AsfalHills_Text_Trainer_AsfalHills_VitoIntro, AsfalHills_Text_Trainer_AsfalHills_VitoDefeat)
+    speakername("Vito")
+    msgbox(format("Maybe I'll take a boat from Sofos City back to Pythios Town. My parents say it's a lot faster!"))
+    closemessage
+    release
+    end
+}
+text AsfalHills_Text_Trainer_AsfalHills_VitoIntro
+{
+    format("I came all the way from Pythios Town!")
+}
+text AsfalHills_Text_Trainer_AsfalHills_VitoDefeat
+{
+    format("I'm not sure how I'll get back...")
+}
+
+// changed name to Maria to make short enough to fit lol sigh
+script AsfalHills_EventScript_Trainer_AsfalHills_Marisa
+{
+    trainerbattle_double(TRAINER_ASFALHILLS_LENA_AND_MARISA, AsfalHills_Text_Trainer_AsfalHills_MarisaIntro, AsfalHills_Text_Trainer_AsfalHills_MarisaDefeat, AsfalHills_Text_Trainer_AsfalHills_MarisaNotEnoughMons)
+    speakername("Maria")
+    msgbox(format("You only won because I was looking at the statues!"))
+    closemessage
+    release
+    end
+}
+text AsfalHills_Text_Trainer_AsfalHills_MarisaIntro
+{
+    format("There are two statues over there. Maybe they're twins like us!")
+}
+text AsfalHills_Text_Trainer_AsfalHills_MarisaDefeat
+{
+    format("So much for twin power...")
+}
+text AsfalHills_Text_Trainer_AsfalHills_MarisaNotEnoughMons
+{
+    format("We can't battle anyone without at least 2 Pokémon!")
+}
+
+script AsfalHills_EventScript_Trainer_AsfalHills_Lena
+{
+    trainerbattle_double(TRAINER_ASFALHILLS_LENA_AND_MARISA, AsfalHills_Text_Trainer_AsfalHills_LenaIntro, AsfalHills_Text_Trainer_AsfalHills_LenaDefeat, AsfalHills_Text_Trainer_AsfalHills_LenaNotEnoughMons)
+    speakername("Lena")
+    msgbox(format("I guess Marisa and I need to train some more."))
+    closemessage
+    release
+    end
+}
+text AsfalHills_Text_Trainer_AsfalHills_LenaIntro
+{
+    format("Two is better than one!")
+}
+text AsfalHills_Text_Trainer_AsfalHills_LenaDefeat
+{
+    format("I thought two was better than one!")
+}
+text AsfalHills_Text_Trainer_AsfalHills_LenaNotEnoughMons
+{
+    format("We can't battle anyone without at least 2 Pokémon!")
+}
+
+script AsfalHills_EventScript_Trainer_AsfalHills_Arisbe
+{
+    trainerbattle_single(TRAINER_ASFALHILLS_ARISBE, AsfalHills_Text_Trainer_AsfalHills_ArisbeIntro, AsfalHills_Text_Trainer_AsfalHills_ArisbeDefeat)
+    speakername("Arisbe")
+    msgbox(format("Most outside areas have different Pokémon come out at night. It can feel like a whole new area!"))
+    closemessage
+    release
+    end
+}
+text AsfalHills_Text_Trainer_AsfalHills_ArisbeIntro
+{
+    format("Look at the Pokémon I found around here!")
+}
+text AsfalHills_Text_Trainer_AsfalHills_ArisbeDefeat
+{
+    format("How could you fight my cuties?!")
+}
+
+script AsfalHills_EventScript_PsychicM
+{
+    lock
+    faceplayer
+    speakername("Psychic")
+    msgbox(format("Sofos City is the biggest city in Ilios by far. If you go south by Corrin Crossing, you get to the sister city of Sofos, Port Pello."))
+    closemessage
+    release
+    end
+}
+
+script AsfalHills_EventScript_OfficerBlockingPath
+{
+    lock
+    faceplayer
+    speakername("Officer")
+    msgbox(format("Corrin Crossing is currently unsafe to travel due to a high number of sinkholes. Come back later, when the situation has stabilized."))
+    closemessage
+    release
+    end
+}
+
+script AsfalHills_EventScript_ManTryingToGetSouth
+{
+    lock
+    applymovement(15, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    speakername("Angry Man")
+    msgbox(format("This is ridiculous! I have business in Port Pello!"))
+    closemessage
+    applymovement(15, Common_Movement_FacePlayer)
+    waitmovement(0)
+    speakername("Angry Man")
+    msgbox(format("Can you believe this?! Blocking the path to a major city like it's nothing. I have to wonder why they're really stopping us from going south."))
+    closemessage
+    applymovement(15, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script AsfalHills_EventScript_WomanTryingToGetSouth
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("Stopping people from getting to Port Pello... this is unbelieveable! There's no way this is just about sinkholes like they say."))
+    closemessage
+    release
+    end
+}
+
+script AsfalHills_EventScript_Trainer_AsfalHills_Prothoe
+{
+    trainerbattle_single(TRAINER_ASFALHILLS_PROTHOE, AsfalHills_Text_Trainer_AsfalHills_ProthoeIntro, AsfalHills_Text_Trainer_AsfalHills_ProthoeDefeat)
+    speakername("Prothoe")
+    msgbox(format("Sofos City is huge! It's certainly pretty, but there's a certain beauty to the wilderness out here, too."))
+    closemessage
+    release
+    end
+}
+text AsfalHills_Text_Trainer_AsfalHills_ProthoeIntro
+{
+    format("We're not far from the suburbs around Sofos City. Battle me before you go!")
+}
+text AsfalHills_Text_Trainer_AsfalHills_ProthoeDefeat
+{
+    format("My Pokémon need a rest now!")
+}
+
+script AsfalHills_EventScript_Trainer_AsfalHills_Batto
+{
+    trainerbattle_single(TRAINER_ASFALHILLS_BATTO, AsfalHills_Text_Trainer_AsfalHills_BattoIntro, AsfalHills_Text_Trainer_AsfalHills_BattoDefeat)
+    speakername("Batto")
+    msgbox(format("My favorite part about the city is the Arcade! You can play Pinball to win all these cool prizes, it's the best!"))
+    closemessage
+    release
+    end
+}
+text AsfalHills_Text_Trainer_AsfalHills_BattoIntro
+{
+    format("Finally, I can see the walls of the city from here!")
+}
+text AsfalHills_Text_Trainer_AsfalHills_BattoDefeat
+{
+    format("I guess my first stop is a Pokémon Center!")
+}
+
+script AsfalHills_EventScript_OldMan
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("Back in my day, Sofos City was half the size it is now. I moved out here because the inner city got too busy for an old man like me."))
+    closemessage
+    release
+    end
+}
+
+script AsfalHills_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("I hiked all the way down from the mountains in the north. I'm exhausted, but it was totally worth it!"))
+    closemessage
+    release
+    end
+}
+
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+
+script AsfalHills_EventScript_NikoMeetPlayerEvent
+{
+    lockall
+    ballfollowingmon
+    applymovement(7, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    applymovement(7, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("{PLAYER}? Opa! I thought it was you! Here, come look at these statues."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, AsfalHills_Movement_PlayerApproachNiko)
+    applymovement(8, AsfalHills_Movement_DuskullApproachPlayer)
+    waitmovement(0)
+    applymovement(7, Common_Movement_FacePlayer)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    delay(10)
+    speakername("Niko")
+    msgbox(format("Ehehe, looks like Duskull remembers you too!"))
+    closemessage
+    applymovement(7, Common_Movement_FaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    applymovement(8, AsfalHills_Movement_DuskullReturnsToNiko)
+    waitmovement(0)
+
+    // cutscene explaining the statues and connecting to Tera
+    delay(5)
+    speakername("Niko")
+    msgbox(format("These were two brothers who lived back when the Ilios Region was young. On the left was a mighty king, while to the right was a humble poet.\p Both pursued happiness in different ways. The king, obsessed with worldly possessions, strove to become the richest man in the region. The poet remained humble, choosing to help others and follow his heart.\p Now, thousands of years later, you can see which was better for everyone. The king's statue remains overgrown and weathered, while the statue of the poet is cleaned and cared for."))
+    closemessage
+    delay(10)
+    applymovement(7, Common_Movement_FaceRight)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("Ahem, sorry for the info dump. The point is, there are more important things in the world than money and power.\p You've had encounters with {COLOR GREEN}Team Chimera{COLOR DARK_GRAY}, as I'm sure you remember. I believe they share a goal with this ancient king. I heard rumors that they've set up camp {COLOR GREEN}in Sofos City{COLOR DARK_GRAY} and stole an important artifact - a {COLOR GREEN}Terastallization Orb{COLOR DARK_GRAY}. My bet is, they want to sell it or use it to control people even more.\p Head into Sofos City, {COLOR GREEN}root out Team Chimera{COLOR DARK_GRAY}, and {COLOR GREEN}bring me back that Tera Orb{COLOR DARK_GRAY}. We can't let them keep their hands on it!"))
+    closemessage
+    delay(10)
+    applymovement(8, AsfalHills_Movement_DuskullReturnsToStatue)
+    waitmovement(0)
+    applymovement(7, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    delay(20)
+    startquest(QUEST_BEAT_CHIMERA_SOFOS_CITY) // START TERA ORB QUEST
+    // QUEST REWARD: Niko gives you the Tera Orb to keep, along with the HM Surf. This ensures that the
+    // player will absolutely have to do this quest no matter what lol, even following the Team Chimera root-out
+    // battles and the return of the Gym Leader to the Gym.
+
+    setflag(FLAG_TRIGGERED_NIKO_EVENT_ASFAL_HILLS)
+    clearflag(FLAG_HIDE_BLOCKING_SOFOS_GYM) // blocks off Sofos Gym
+    setflag(FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY)
+}
+
+movement AsfalHills_Movement_PlayerApproachNiko
+{
+    walk_right * 3
+    walk_up * 2
+    step_end
+}
+movement AsfalHills_Movement_DuskullApproachPlayer
+{
+    walk_right * 2
+    walk_down
+    delay_16
+    emote_heart
+    step_end
+}
+movement AsfalHills_Movement_DuskullReturnsToNiko
+{
+    walk_left * 2
+    walk_down
+    face_up
+    step_end
+}
+movement AsfalHills_Movement_DuskullReturnsToStatue
+{
+    walk_up * 2
+    face_left
+    step_end
+}
+script AsfalHills_EventScript_Duskull
+{
+    lock
+    faceplayer
+    speakername("Duskull")
+    playmoncry(SPECIES_DUSKULL, CRY_MODE_NORMAL)
+    msgbox("Kaaahhh...")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Duskull is studying the statue closely."))
+    closemessage
+    release
+    end
+}
+
+script AsfalHills_EventScript_NikoWaitingForPlayer
+{
+    lock
+    faceplayer
+    speakername("Niko")
+    msgbox(format("Chaire, {PLAYER}. I'm sorry for sending you on such a dangerous quest, but I'm afraid I'm not much of a Pokémon battler.\p Did you find {COLOR GREEN}Team Chimera's Hideout{COLOR DARK_GRAY} around Sofos City?"))
+    closemessage
+
+    delay(20)
+    checkitem(ITEM_TERA_ORB)
+    if(var(VAR_RESULT) == 0) // no tera orb yet
+    {
+        speakername("Niko")
+        msgbox(format("Hmm, I don't see the {COLOR GREEN}Tera Orb{COLOR DARK_GRAY} with you. Please, we can't let Team Chimera keep that, it's a precious artifact that may hold more power than we know.\p Please, find {COLOR GREEN}Team Chimera's Hideout{COLOR DARK_GRAY} around Sofos City and {COLOR GREEN}bring back the Tera Orb{COLOR DARK_GRAY}!"))
+        closemessage
+        release
+        end
+    }
+    else // brought the tera orb!
+    {
+        applymovement(7, Common_Movement_ExclamationMark)
+        waitmovement(0)
+        delay(5)
+        speakername("Niko")
+        msgbox(format("Woah, you got it! The aura radiating around it... it can only mean one thing, my hunch was correct.\p The Tera Orb allows skilled Trainers to unlock the powers of {COLOR GREEN}Terastallization{COLOR DARK_GRAY}, temporarily changing a Pokémon's type and giving them an edge in battle. There are only a few of these outside of the Paldea Region... I thought only Gym Leaders and a few other powerful Trainers could have them.\p {PLAYER}, I want you to keep the Tera Orb. Team Chimera is clearly trying to grow in power, so the safest place for it would be with a skilled Trainer like you. The Tera Orb can be recharged at most Pokémon Centers after being used."))
+        closemessage
+        delay(10)
+        speakername("Niko")
+        msgbox(format("What a wreck! I'm glad you were here to help, {PLAYER}. This has been way too much excitement for me, so I'll be bringing Duskull back to the University.\p Oh! Speaking of which, I have something for you we've been working on in the lab. Take this!"))
+        closemessage
+        giveitem(ITEM_HM_SURF)
+        closemessage
+        delay(5)
+        speakername("Niko")
+        msgbox(format("The HM Surf will allow you to cross the waters of Ilios. Of course, you need the Gym Badge from Sofos City to use it!\p Alright, Duskull and I are getting out of here before any Team Chimera members pay us a visit. Come to Acrisia University if you have any {COLOR GREEN}Terastallization questions{COLOR DARK_GRAY}!"))
+        closemessage
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        delay(20)
+        setflag(FLAG_HIDE_NIKO_ASFAL_HILLS)
+        removeobject(7)
+        removeobject(8)
+        setflag(FLAG_HIDE_BLOCKING_SOFOS_GYM)
+        delay(20)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        delay(10)
+
+        delay(20)
+        completequest(QUEST_BEAT_CHIMERA_SOFOS_CITY)
+    }
+    releaseall
+    end
 }

@@ -4604,8 +4604,8 @@
     {
       "id": "LAYOUT_ASFAL_HILLS",
       "name": "AsfalHills_Layout",
-      "width": 96,
-      "height": 22,
+      "width": 94,
+      "height": 24,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Sofos",
       "border_filepath": "data/layouts/AsfalHills/border.bin",
@@ -4614,8 +4614,8 @@
     {
       "id": "LAYOUT_SOFOS_CITY",
       "name": "SofosCity_Layout",
-      "width": 54,
-      "height": 70,
+      "width": 60,
+      "height": 90,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Sofos",
       "border_filepath": "data/layouts/SofosCity/border.bin",
@@ -5080,6 +5080,76 @@
       "secondary_tileset": "gTileset_Acrisia",
       "border_filepath": "data/layouts/AcrisiaMountain_Peak/border.bin",
       "blockdata_filepath": "data/layouts/AcrisiaMountain_Peak/map.bin"
+    },
+    {
+      "id": "LAYOUT_WANDERERS_WOODS_SOUTH",
+      "name": "WanderersWoods_South_Layout",
+      "width": 34,
+      "height": 38,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pythios",
+      "border_filepath": "data/layouts/WanderersWoods_South/border.bin",
+      "blockdata_filepath": "data/layouts/WanderersWoods_South/map.bin"
+    },
+    {
+      "id": "LAYOUT_ASFAL_HILLS_HOUSE1",
+      "name": "AsfalHills_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/AsfalHills_House1/border.bin",
+      "blockdata_filepath": "data/layouts/AsfalHills_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ASFAL_HILLS_HOUSE2",
+      "name": "AsfalHills_House2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/AsfalHills_House2/border.bin",
+      "blockdata_filepath": "data/layouts/AsfalHills_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ASFAL_HILLS_HOUSE3",
+      "name": "AsfalHills_House3_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/AsfalHills_House3/border.bin",
+      "blockdata_filepath": "data/layouts/AsfalHills_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_SATYRS_LAIR",
+      "name": "SatyrsLair_Layout",
+      "width": 15,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SatyrsLair/border.bin",
+      "blockdata_filepath": "data/layouts/SatyrsLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_POKEMON_CENTER",
+      "name": "SofosCity_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/SofosCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_MART",
+      "name": "SofosCity_Mart_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/SofosCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_Mart/map.bin"
     }
   ]
 }

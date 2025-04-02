@@ -1756,3 +1756,17 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/KalamiCity_Gym/scripts.inc"
 
 	.include "data/maps/AcrisiaMountain_Peak/scripts.inc"
+
+	.include "data/maps/WanderersWoods_South/scripts.inc"
+
+	.include "data/maps/AsfalHills_House1/scripts.inc"
+
+	.include "data/maps/AsfalHills_House2/scripts.inc"
+
+	.include "data/maps/AsfalHills_House3/scripts.inc"
+
+	.include "data/maps/SatyrsLair/scripts.inc"
+
+	.include "data/maps/SofosCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/SofosCity_Mart/scripts.inc"

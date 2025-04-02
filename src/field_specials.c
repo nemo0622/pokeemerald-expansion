@@ -72,6 +72,8 @@
 #include "palette.h"
 #include "battle_util.h"
 #include "pokedex.h"
+#include "item.h"
+#include "item_menu.h"
 
 #define TAG_ITEM_ICON 5500
 
@@ -4466,4 +4468,19 @@ bool8 CheckPartyForMon(void)
             return TRUE;
     }
     return FALSE;
+}
+
+void ChooseItemFromBag(void)
+{
+    switch (VarGet(VAR_TEMP_1))
+    {
+    case ITEMS_POCKET:
+    case BALLS_POCKET:
+    case TMHM_POCKET:
+    case BERRIES_POCKET:
+    case KEYITEMS_POCKET:
+        GoToBagMenu(ITEMMENULOCATION_CHOOSE_ITEM, VarGet(VAR_TEMP_1), CB2_ReturnToFieldContinueScript);
+    default:
+        break;
+    }
 }

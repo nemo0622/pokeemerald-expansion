@@ -129,7 +129,7 @@
 #define OBJ_EVENT_GFX_SABELLA                    125 // Gym Leader 3, in Pythios Town (replaces Roxanne gfx)
 #define OBJ_EVENT_GFX_DEO                        126 // Gym Leader 1, in Jusmail Town (replacess Brawly gfx)
 #define OBJ_EVENT_GFX_MATTAIOS                   127 // Gym Leader 2, in Acrisia Mountains / Discus Forge (replaces Wattson gfx)
-#define OBJ_EVENT_GFX_FLANNERY                   128
+#define OBJ_EVENT_GFX_MENESWO                   128
 #define OBJ_EVENT_GFX_NORMAN                     129
 #define OBJ_EVENT_GFX_WINONA                     130
 #define OBJ_EVENT_GFX_LIZA                       131

@@ -22,6 +22,15 @@ mapscripts WanderersWoods_MapScripts {
     }
 }
 
+script WanderersWoods_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Wanderers' Woods - North\n A Trail of Loss and Discovery\p {UP_ARROW} Jusmail Town\n Pythios Town {DOWN_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script WanderersWoods_EventScript_Trainer_WanderersWoods_Zander
 {
     trainerbattle_single(TRAINER_WANDERERSWOODS_ZANDER, WanderersWoods_Text_Trainer_WanderersWoods_ZanderIntro, WanderersWoods_Text_Trainer_WanderersWoods_ZanderDefeat)
@@ -153,7 +162,7 @@ script WanderersWoods_EventScript_NPC_Man
     lock
     faceplayer
     speakername("Man")
-    msgbox(format("I think I finally found the way out of the woods! These red-orange plants are a sure sign of Pythios Town."))
+    msgbox(format("These red-orange plants are a sign that we're close to Pythios Town. Nobody quite knows why, but plants around there are stuck in a permanent state of autumn."))
     closemessage
     release
     end

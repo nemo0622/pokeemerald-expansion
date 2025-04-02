@@ -803,7 +803,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_24,
+	      gText_SideQuestName_24, // FILL WITH EARLIER GAME QUEST
 	      gText_SideQuestDesc_24,
 	      gText_SideQuestDoneDesc_24,
 	      gText_SideQuestMap24,
@@ -813,7 +813,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_25,
+	      gText_SideQuestName_25, // FILL WITH EARLIER GAME QUEST
 	      gText_SideQuestDesc_25,
 	      gText_SideQuestDoneDesc_25,
 	      gText_SideQuestMap25,
@@ -823,7 +823,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_26,
+	      gText_SideQuestName_26, // FILL WITH EARLIER GAME QUEST
 	      gText_SideQuestDesc_26,
 	      gText_SideQuestDoneDesc_26,
 	      gText_SideQuestMap26,
@@ -833,7 +833,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_27,
+	      gText_SideQuestName_27, // FILL WITH EARLIER GAME QUEST
 	      gText_SideQuestDesc_27,
 	      gText_SideQuestDoneDesc_27,
 	      gText_SideQuestMap27,
@@ -843,7 +843,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_28,
+	      gText_SideQuestName_28, // FILL WITH EARLIER GAME QUEST
 	      gText_SideQuestDesc_28,
 	      gText_SideQuestDoneDesc_28,
 	      gText_SideQuestMap28,
@@ -853,25 +853,45 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_29,
+	      gText_SideQuestName_29, // QUEST_BEAT_CHIMERA_SOFOS_CITY
 	      gText_SideQuestDesc_29,
 	      gText_SideQuestDoneDesc_29,
 	      gText_SideQuestMap29,
-	      OBJ_EVENT_GFX_RANIA,
-	      OBJECT,
+	      ITEM_TERA_ORB,
+	      ITEM,
 	      NULL,
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_30,
+	      gText_SideQuestName_30, // QUEST_SHOW_BOY_GIRAFARIG
 	      gText_SideQuestDesc_30,
 	      gText_SideQuestDoneDesc_30,
 	      gText_SideQuestMap30,
-	      OBJ_EVENT_GFX_RANIA,
-	      OBJECT,
+	      SPECIES_GIRAFARIG,
+	      PKMN,
 	      NULL,
 	      0
 	),
+	side_quest(
+		gText_SideQuestName_31, // QUEST_SHOW_CAMPER_ALOLAN_RAICHU
+		gText_SideQuestDesc_31,
+		gText_SideQuestDesc_31,
+		gText_SideQuestMap31,
+		SPECIES_RAICHU_ALOLAN,
+		PKMN,
+		NULL,
+		0
+  ),
+  side_quest(
+	gText_SideQuestName_32, // QUEST_TRY_SOFOS_BATTLE_PAVILION
+	gText_SideQuestDesc_32,
+	gText_SideQuestDesc_32,
+	gText_SideQuestMap32,
+	OBJ_EVENT_GFX_MAN_2,
+	OBJECT,
+	NULL,
+	0
+),
 };
 ////////////////////////END QUEST CUSTOMIZATION////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////

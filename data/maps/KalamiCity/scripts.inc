@@ -325,11 +325,11 @@ Common_EventScript_Piraeus_40:
 	goto Common_EventScript_Piraeus_25
 
 
-KalamiCity_Sign_GymSign::
+KalamiCity_EventScript_DirectionSign::
 # 186 "data/maps/KalamiCity/scripts.pory"
 	lock
 # 187 "data/maps/KalamiCity/scripts.pory"
-	msgbox KalamiCity_Sign_GymSign_Text_0
+	msgbox KalamiCity_EventScript_DirectionSign_Text_0
 # 188 "data/maps/KalamiCity/scripts.pory"
 	closemessage
 # 189 "data/maps/KalamiCity/scripts.pory"
@@ -337,308 +337,320 @@ KalamiCity_Sign_GymSign::
 	end
 
 
-KalamiCity_EventScript_Camper::
+KalamiCity_Sign_GymSign::
 # 195 "data/maps/KalamiCity/scripts.pory"
 	lock
 # 196 "data/maps/KalamiCity/scripts.pory"
-	faceplayer
+	msgbox KalamiCity_Sign_GymSign_Text_0
 # 197 "data/maps/KalamiCity/scripts.pory"
-	speakername KalamiCity_EventScript_Camper_Text_0
-# 198 "data/maps/KalamiCity/scripts.pory"
-	msgbox KalamiCity_EventScript_Camper_Text_1
-# 199 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 200 "data/maps/KalamiCity/scripts.pory"
+# 198 "data/maps/KalamiCity/scripts.pory"
+	release
+	end
+
+
+KalamiCity_EventScript_Camper::
+# 204 "data/maps/KalamiCity/scripts.pory"
+	lock
+# 205 "data/maps/KalamiCity/scripts.pory"
+	faceplayer
+# 206 "data/maps/KalamiCity/scripts.pory"
+	speakername KalamiCity_EventScript_Camper_Text_0
+# 207 "data/maps/KalamiCity/scripts.pory"
+	msgbox KalamiCity_EventScript_Camper_Text_1
+# 208 "data/maps/KalamiCity/scripts.pory"
+	closemessage
+# 209 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_Artist::
-# 206 "data/maps/KalamiCity/scripts.pory"
+# 215 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 207 "data/maps/KalamiCity/scripts.pory"
+# 216 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 208 "data/maps/KalamiCity/scripts.pory"
+# 217 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Artist_Text_0
-# 209 "data/maps/KalamiCity/scripts.pory"
+# 218 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Artist_Text_1
-# 210 "data/maps/KalamiCity/scripts.pory"
+# 219 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 211 "data/maps/KalamiCity/scripts.pory"
+# 220 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_Sailor::
-# 217 "data/maps/KalamiCity/scripts.pory"
+# 226 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 218 "data/maps/KalamiCity/scripts.pory"
+# 227 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 219 "data/maps/KalamiCity/scripts.pory"
+# 228 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Sailor_Text_0
-# 220 "data/maps/KalamiCity/scripts.pory"
+# 229 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Sailor_Text_1
-# 221 "data/maps/KalamiCity/scripts.pory"
+# 230 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 222 "data/maps/KalamiCity/scripts.pory"
+# 231 "data/maps/KalamiCity/scripts.pory"
 	applymovement 5, Common_Movement_FaceRight
-# 223 "data/maps/KalamiCity/scripts.pory"
+# 232 "data/maps/KalamiCity/scripts.pory"
 	waitmovement 0
-# 224 "data/maps/KalamiCity/scripts.pory"
+# 233 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_Sailor2::
-# 230 "data/maps/KalamiCity/scripts.pory"
+# 239 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 231 "data/maps/KalamiCity/scripts.pory"
+# 240 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 232 "data/maps/KalamiCity/scripts.pory"
+# 241 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Sailor_Text_0
-# 233 "data/maps/KalamiCity/scripts.pory"
+# 242 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Sailor2_Text_0
-# 234 "data/maps/KalamiCity/scripts.pory"
+# 243 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 235 "data/maps/KalamiCity/scripts.pory"
+# 244 "data/maps/KalamiCity/scripts.pory"
 	goto_if_unset FLAG_GOT_ABILITY_CAPSULE_KALAMI_CITY, KalamiCity_EventScript_Sailor2_2
 KalamiCity_EventScript_Sailor2_1:
-# 243 "data/maps/KalamiCity/scripts.pory"
+# 252 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 KalamiCity_EventScript_Sailor2_2:
-# 237 "data/maps/KalamiCity/scripts.pory"
+# 246 "data/maps/KalamiCity/scripts.pory"
 	setflag FLAG_GOT_ABILITY_CAPSULE_KALAMI_CITY
-# 238 "data/maps/KalamiCity/scripts.pory"
+# 247 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Sailor_Text_0
-# 239 "data/maps/KalamiCity/scripts.pory"
+# 248 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Sailor2_Text_1
-# 240 "data/maps/KalamiCity/scripts.pory"
+# 249 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 241 "data/maps/KalamiCity/scripts.pory"
+# 250 "data/maps/KalamiCity/scripts.pory"
 	giveitem ITEM_ABILITY_CAPSULE
 	goto KalamiCity_EventScript_Sailor2_1
 
 
 KalamiCity_EventScript_Fisherman::
-# 249 "data/maps/KalamiCity/scripts.pory"
+# 258 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 250 "data/maps/KalamiCity/scripts.pory"
+# 259 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 251 "data/maps/KalamiCity/scripts.pory"
+# 260 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Fisherman_Text_0
-# 252 "data/maps/KalamiCity/scripts.pory"
+# 261 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Fisherman_Text_1
-# 253 "data/maps/KalamiCity/scripts.pory"
+# 262 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 254 "data/maps/KalamiCity/scripts.pory"
+# 263 "data/maps/KalamiCity/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_OLD_ROD, KalamiCity_EventScript_Fisherman_2
 KalamiCity_EventScript_Fisherman_1:
-# 265 "data/maps/KalamiCity/scripts.pory"
+# 274 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 KalamiCity_EventScript_Fisherman_2:
-# 256 "data/maps/KalamiCity/scripts.pory"
+# 265 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Fisherman_Text_0
-# 257 "data/maps/KalamiCity/scripts.pory"
+# 266 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Fisherman_Text_2
-# 258 "data/maps/KalamiCity/scripts.pory"
+# 267 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 259 "data/maps/KalamiCity/scripts.pory"
+# 268 "data/maps/KalamiCity/scripts.pory"
 	giveitem ITEM_OLD_ROD
-# 260 "data/maps/KalamiCity/scripts.pory"
+# 269 "data/maps/KalamiCity/scripts.pory"
 	setflag FLAG_RECEIVED_OLD_ROD
-# 261 "data/maps/KalamiCity/scripts.pory"
+# 270 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Fisherman_Text_0
-# 262 "data/maps/KalamiCity/scripts.pory"
+# 271 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Fisherman_Text_3
-# 263 "data/maps/KalamiCity/scripts.pory"
+# 272 "data/maps/KalamiCity/scripts.pory"
 	closemessage
 	goto KalamiCity_EventScript_Fisherman_1
 
 
 KalamiCity_EventScript_Bounsweet::
-# 271 "data/maps/KalamiCity/scripts.pory"
+# 280 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 272 "data/maps/KalamiCity/scripts.pory"
+# 281 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 273 "data/maps/KalamiCity/scripts.pory"
+# 282 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Bounsweet_Text_0
-# 274 "data/maps/KalamiCity/scripts.pory"
+# 283 "data/maps/KalamiCity/scripts.pory"
 	playmoncry SPECIES_BOUNSWEET, CRY_MODE_NORMAL
-# 275 "data/maps/KalamiCity/scripts.pory"
+# 284 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Bounsweet_Text_1
-# 276 "data/maps/KalamiCity/scripts.pory"
+# 285 "data/maps/KalamiCity/scripts.pory"
 	waitmoncry
-# 277 "data/maps/KalamiCity/scripts.pory"
+# 286 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 278 "data/maps/KalamiCity/scripts.pory"
+# 287 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_Aipom::
-# 284 "data/maps/KalamiCity/scripts.pory"
+# 293 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 285 "data/maps/KalamiCity/scripts.pory"
+# 294 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 286 "data/maps/KalamiCity/scripts.pory"
+# 295 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Aipom_Text_0
-# 287 "data/maps/KalamiCity/scripts.pory"
+# 296 "data/maps/KalamiCity/scripts.pory"
 	playmoncry SPECIES_AIPOM, CRY_MODE_NORMAL
-# 288 "data/maps/KalamiCity/scripts.pory"
+# 297 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Aipom_Text_1
-# 289 "data/maps/KalamiCity/scripts.pory"
+# 298 "data/maps/KalamiCity/scripts.pory"
 	waitmoncry
-# 290 "data/maps/KalamiCity/scripts.pory"
+# 299 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 291 "data/maps/KalamiCity/scripts.pory"
+# 300 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_Lass::
-# 297 "data/maps/KalamiCity/scripts.pory"
+# 306 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 298 "data/maps/KalamiCity/scripts.pory"
+# 307 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 299 "data/maps/KalamiCity/scripts.pory"
+# 308 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Lass_Text_0
-# 300 "data/maps/KalamiCity/scripts.pory"
+# 309 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Lass_Text_1
-# 301 "data/maps/KalamiCity/scripts.pory"
+# 310 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 302 "data/maps/KalamiCity/scripts.pory"
+# 311 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_BugCatcher::
-# 308 "data/maps/KalamiCity/scripts.pory"
+# 317 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 309 "data/maps/KalamiCity/scripts.pory"
+# 318 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 310 "data/maps/KalamiCity/scripts.pory"
+# 319 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_BugCatcher_Text_0
-# 311 "data/maps/KalamiCity/scripts.pory"
+# 320 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_BugCatcher_Text_1
-# 312 "data/maps/KalamiCity/scripts.pory"
+# 321 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 313 "data/maps/KalamiCity/scripts.pory"
+# 322 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_Beauty::
-# 319 "data/maps/KalamiCity/scripts.pory"
+# 328 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 320 "data/maps/KalamiCity/scripts.pory"
+# 329 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 321 "data/maps/KalamiCity/scripts.pory"
+# 330 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Beauty_Text_0
-# 322 "data/maps/KalamiCity/scripts.pory"
+# 331 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Beauty_Text_1
-# 323 "data/maps/KalamiCity/scripts.pory"
+# 332 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 324 "data/maps/KalamiCity/scripts.pory"
+# 333 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_WallWorker::
-# 330 "data/maps/KalamiCity/scripts.pory"
+# 339 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 331 "data/maps/KalamiCity/scripts.pory"
+# 340 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 332 "data/maps/KalamiCity/scripts.pory"
+# 341 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_WallWorker_Text_0
-# 333 "data/maps/KalamiCity/scripts.pory"
+# 342 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_WallWorker_Text_1
-# 334 "data/maps/KalamiCity/scripts.pory"
+# 343 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 335 "data/maps/KalamiCity/scripts.pory"
+# 344 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_PerformerM::
-# 341 "data/maps/KalamiCity/scripts.pory"
+# 350 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 342 "data/maps/KalamiCity/scripts.pory"
+# 351 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 343 "data/maps/KalamiCity/scripts.pory"
+# 352 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_PerformerM_Text_0
-# 344 "data/maps/KalamiCity/scripts.pory"
+# 353 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_PerformerM_Text_1
-# 345 "data/maps/KalamiCity/scripts.pory"
+# 354 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 346 "data/maps/KalamiCity/scripts.pory"
+# 355 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_BlackBelt::
-# 352 "data/maps/KalamiCity/scripts.pory"
+# 361 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 353 "data/maps/KalamiCity/scripts.pory"
+# 362 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 354 "data/maps/KalamiCity/scripts.pory"
+# 363 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_BlackBelt_Text_0
-# 355 "data/maps/KalamiCity/scripts.pory"
+# 364 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_BlackBelt_Text_1
-# 356 "data/maps/KalamiCity/scripts.pory"
+# 365 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 357 "data/maps/KalamiCity/scripts.pory"
+# 366 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_Youngster::
-# 363 "data/maps/KalamiCity/scripts.pory"
+# 372 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 364 "data/maps/KalamiCity/scripts.pory"
+# 373 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 365 "data/maps/KalamiCity/scripts.pory"
+# 374 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Youngster_Text_0
-# 366 "data/maps/KalamiCity/scripts.pory"
+# 375 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Youngster_Text_1
-# 367 "data/maps/KalamiCity/scripts.pory"
+# 376 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 368 "data/maps/KalamiCity/scripts.pory"
+# 377 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_Girl::
-# 374 "data/maps/KalamiCity/scripts.pory"
+# 383 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 375 "data/maps/KalamiCity/scripts.pory"
+# 384 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 376 "data/maps/KalamiCity/scripts.pory"
+# 385 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Girl_Text_0
-# 377 "data/maps/KalamiCity/scripts.pory"
+# 386 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Girl_Text_1
-# 378 "data/maps/KalamiCity/scripts.pory"
+# 387 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 379 "data/maps/KalamiCity/scripts.pory"
+# 388 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
 
 KalamiCity_EventScript_Athlete::
-# 385 "data/maps/KalamiCity/scripts.pory"
+# 394 "data/maps/KalamiCity/scripts.pory"
 	lock
-# 386 "data/maps/KalamiCity/scripts.pory"
+# 395 "data/maps/KalamiCity/scripts.pory"
 	faceplayer
-# 387 "data/maps/KalamiCity/scripts.pory"
+# 396 "data/maps/KalamiCity/scripts.pory"
 	speakername KalamiCity_EventScript_Athlete_Text_0
-# 388 "data/maps/KalamiCity/scripts.pory"
+# 397 "data/maps/KalamiCity/scripts.pory"
 	msgbox KalamiCity_EventScript_Athlete_Text_1
-# 389 "data/maps/KalamiCity/scripts.pory"
+# 398 "data/maps/KalamiCity/scripts.pory"
 	closemessage
-# 390 "data/maps/KalamiCity/scripts.pory"
+# 399 "data/maps/KalamiCity/scripts.pory"
 	release
 	end
 
@@ -771,27 +783,33 @@ Common_EventScript_Piraeus_Text_20:
 	.string "blessed the lands. How about we see it\l"
 	.string "for ourselves?$"
 
-KalamiCity_Sign_GymSign_Text_0:
+KalamiCity_EventScript_DirectionSign_Text_0:
 # 187 "data/maps/KalamiCity/scripts.pory"
+	.string "Kalami City\n"
+	.string "Reeds, Vines, and Industry\p"
+	.string "{UP_ARROW} Riverwalk Trail - South$"
+
+KalamiCity_Sign_GymSign_Text_0:
+# 196 "data/maps/KalamiCity/scripts.pory"
 	.string "Gym Leader: Mattaios\n"
 	.string "The Hard-Working Engineer$"
 
 KalamiCity_EventScript_Camper_Text_0:
-# 197 "data/maps/KalamiCity/scripts.pory"
+# 206 "data/maps/KalamiCity/scripts.pory"
 	.string "Camper$"
 
 KalamiCity_EventScript_Camper_Text_1:
-# 198 "data/maps/KalamiCity/scripts.pory"
+# 207 "data/maps/KalamiCity/scripts.pory"
 	.string "Hehehe, I love the shallows around\n"
 	.string "Kalami City! I like feeling the sand and\l"
 	.string "pebbles between my toes!$"
 
 KalamiCity_EventScript_Artist_Text_0:
-# 208 "data/maps/KalamiCity/scripts.pory"
+# 217 "data/maps/KalamiCity/scripts.pory"
 	.string "Artist$"
 
 KalamiCity_EventScript_Artist_Text_1:
-# 209 "data/maps/KalamiCity/scripts.pory"
+# 218 "data/maps/KalamiCity/scripts.pory"
 	.string "Kalami City, the city of reeds and\n"
 	.string "rivers...\p"
 	.string "We coexist with nature here. We're\n"
@@ -803,18 +821,18 @@ KalamiCity_EventScript_Artist_Text_1:
 	.string "Just something to reflect on.$"
 
 KalamiCity_EventScript_Sailor_Text_0:
-# 219 "data/maps/KalamiCity/scripts.pory"
+# 228 "data/maps/KalamiCity/scripts.pory"
 	.string "Sailor$"
 
 KalamiCity_EventScript_Sailor_Text_1:
-# 220 "data/maps/KalamiCity/scripts.pory"
+# 229 "data/maps/KalamiCity/scripts.pory"
 	.string "Only a few larger boats like this can\n"
 	.string "make it past the rocks and plants to\l"
 	.string "these docks. It's tough, but we make it\l"
 	.string "work.$"
 
 KalamiCity_EventScript_Sailor2_Text_0:
-# 233 "data/maps/KalamiCity/scripts.pory"
+# 242 "data/maps/KalamiCity/scripts.pory"
 	.string "A lot of important goods come through\n"
 	.string "the Kalami City ports.\p"
 	.string "It's hard to sail through the mangrove,\n"
@@ -822,63 +840,63 @@ KalamiCity_EventScript_Sailor2_Text_0:
 	.string "industrial center here are real useful.$"
 
 KalamiCity_EventScript_Sailor2_Text_1:
-# 239 "data/maps/KalamiCity/scripts.pory"
+# 248 "data/maps/KalamiCity/scripts.pory"
 	.string "Here, I'll give you a sample!$"
 
 KalamiCity_EventScript_Fisherman_Text_0:
-# 251 "data/maps/KalamiCity/scripts.pory"
+# 260 "data/maps/KalamiCity/scripts.pory"
 	.string "Fishing Guru$"
 
 KalamiCity_EventScript_Fisherman_Text_1:
-# 252 "data/maps/KalamiCity/scripts.pory"
+# 261 "data/maps/KalamiCity/scripts.pory"
 	.string "I've lived here since before Mattaios\n"
 	.string "and the industrial center was settled\l"
 	.string "here. I fished here when I was a kid, and\l"
 	.string "I'll keep fishing here until I'm old!$"
 
 KalamiCity_EventScript_Fisherman_Text_2:
-# 257 "data/maps/KalamiCity/scripts.pory"
+# 266 "data/maps/KalamiCity/scripts.pory"
 	.string "I've got an extra {COLOR GREEN}Old Rod{COLOR DARK_GRAY} here. You look\n"
 	.string "like you'd make a great angler one day...\l"
 	.string "here, I want you to have this!$"
 
 KalamiCity_EventScript_Fisherman_Text_3:
-# 262 "data/maps/KalamiCity/scripts.pory"
+# 271 "data/maps/KalamiCity/scripts.pory"
 	.string "Fishing opens up a whole new world of\n"
 	.string "Pokémon! Make sure you fish every day.$"
 
 KalamiCity_EventScript_Bounsweet_Text_0:
-# 273 "data/maps/KalamiCity/scripts.pory"
+# 282 "data/maps/KalamiCity/scripts.pory"
 	.string "Bounsweet$"
 
 KalamiCity_EventScript_Bounsweet_Text_1:
-# 275 "data/maps/KalamiCity/scripts.pory"
+# 284 "data/maps/KalamiCity/scripts.pory"
 	.string "Cree-ee!$"
 
 KalamiCity_EventScript_Aipom_Text_0:
-# 286 "data/maps/KalamiCity/scripts.pory"
+# 295 "data/maps/KalamiCity/scripts.pory"
 	.string "Aipom$"
 
 KalamiCity_EventScript_Aipom_Text_1:
-# 288 "data/maps/KalamiCity/scripts.pory"
+# 297 "data/maps/KalamiCity/scripts.pory"
 	.string "Eek eek!$"
 
 KalamiCity_EventScript_Lass_Text_0:
-# 299 "data/maps/KalamiCity/scripts.pory"
+# 308 "data/maps/KalamiCity/scripts.pory"
 	.string "Lass$"
 
 KalamiCity_EventScript_Lass_Text_1:
-# 300 "data/maps/KalamiCity/scripts.pory"
+# 309 "data/maps/KalamiCity/scripts.pory"
 	.string "Look, I found this Bounsweet rooting\n"
 	.string "around in the crates! I think it wanted\l"
 	.string "a Trainer to be its friend.$"
 
 KalamiCity_EventScript_BugCatcher_Text_0:
-# 310 "data/maps/KalamiCity/scripts.pory"
+# 319 "data/maps/KalamiCity/scripts.pory"
 	.string "Bug Catcher$"
 
 KalamiCity_EventScript_BugCatcher_Text_1:
-# 311 "data/maps/KalamiCity/scripts.pory"
+# 320 "data/maps/KalamiCity/scripts.pory"
 	.string "I learned all about how Pokémon live\n"
 	.string "together in places like this in school!\l"
 	.string "Pokémon from the water and the land\l"
@@ -886,11 +904,11 @@ KalamiCity_EventScript_BugCatcher_Text_1:
 	.string "ways!$"
 
 KalamiCity_EventScript_Beauty_Text_0:
-# 321 "data/maps/KalamiCity/scripts.pory"
+# 330 "data/maps/KalamiCity/scripts.pory"
 	.string "Beauty$"
 
 KalamiCity_EventScript_Beauty_Text_1:
-# 322 "data/maps/KalamiCity/scripts.pory"
+# 331 "data/maps/KalamiCity/scripts.pory"
 	.string "This fruit tree at the center of town is\n"
 	.string "the only one of its kind in Kalami City.\l"
 	.string "They say it's the last tree from before\l"
@@ -898,44 +916,44 @@ KalamiCity_EventScript_Beauty_Text_1:
 	.string "building here.$"
 
 KalamiCity_EventScript_WallWorker_Text_0:
-# 332 "data/maps/KalamiCity/scripts.pory"
+# 341 "data/maps/KalamiCity/scripts.pory"
 	.string "Worker$"
 
 KalamiCity_EventScript_WallWorker_Text_1:
-# 333 "data/maps/KalamiCity/scripts.pory"
+# 342 "data/maps/KalamiCity/scripts.pory"
 	.string "The land around Kalami City is always\n"
 	.string "sinking. The swamp and water creeps in,\l"
 	.string "and I'm stuck trying to keep these\l"
 	.string "walls in good condition!$"
 
 KalamiCity_EventScript_PerformerM_Text_0:
-# 343 "data/maps/KalamiCity/scripts.pory"
+# 352 "data/maps/KalamiCity/scripts.pory"
 	.string "Performer$"
 
 KalamiCity_EventScript_PerformerM_Text_1:
-# 344 "data/maps/KalamiCity/scripts.pory"
+# 353 "data/maps/KalamiCity/scripts.pory"
 	.string "I dream of performing comedy shows on\n"
 	.string "the biggest stages of Ilios! For now,\l"
 	.string "though, I'm just sticking with street\l"
 	.string "shows here.$"
 
 KalamiCity_EventScript_BlackBelt_Text_0:
-# 354 "data/maps/KalamiCity/scripts.pory"
+# 363 "data/maps/KalamiCity/scripts.pory"
 	.string "Black Belt$"
 
 KalamiCity_EventScript_BlackBelt_Text_1:
-# 355 "data/maps/KalamiCity/scripts.pory"
+# 364 "data/maps/KalamiCity/scripts.pory"
 	.string "I taught my Pokémon to use Karate Chop\n"
 	.string "so it could cut through the vines and\l"
 	.string "reeds in the swamp. Now it helps me\l"
 	.string "explore the area around the city!$"
 
 KalamiCity_EventScript_Youngster_Text_0:
-# 365 "data/maps/KalamiCity/scripts.pory"
+# 374 "data/maps/KalamiCity/scripts.pory"
 	.string "Youngster$"
 
 KalamiCity_EventScript_Youngster_Text_1:
-# 366 "data/maps/KalamiCity/scripts.pory"
+# 375 "data/maps/KalamiCity/scripts.pory"
 	.string "My dad says the walls keep the swamp\n"
 	.string "from coming into the city. I don't see\l"
 	.string "what would be so wrong about that! I\l"
@@ -943,22 +961,22 @@ KalamiCity_EventScript_Youngster_Text_1:
 	.string "Pokémon!$"
 
 KalamiCity_EventScript_Girl_Text_0:
-# 376 "data/maps/KalamiCity/scripts.pory"
+# 385 "data/maps/KalamiCity/scripts.pory"
 	.string "Girl$"
 
 KalamiCity_EventScript_Girl_Text_1:
-# 377 "data/maps/KalamiCity/scripts.pory"
+# 386 "data/maps/KalamiCity/scripts.pory"
 	.string "My Pokémon was rooting around in the\n"
 	.string "dirt, and it found a weird, minty plant. I\l"
 	.string "think it changed natures after\l"
 	.string "sniffing it!$"
 
 KalamiCity_EventScript_Athlete_Text_0:
-# 387 "data/maps/KalamiCity/scripts.pory"
+# 396 "data/maps/KalamiCity/scripts.pory"
 	.string "Athlete$"
 
 KalamiCity_EventScript_Athlete_Text_1:
-# 388 "data/maps/KalamiCity/scripts.pory"
+# 397 "data/maps/KalamiCity/scripts.pory"
 	.string "I'm training in the shallow water to\n"
 	.string "make my legs stronger! At this rate, I'll\l"
 	.string "be the fastest guy in Ilios!$"

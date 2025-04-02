@@ -9192,6 +9192,12 @@ static void UpdateObjectEventOffscreen(struct ObjectEvent *objectEvent, struct S
 
     if ((s16)y >= DISPLAY_HEIGHT + 16 || (s16)y2 < -16)
         objectEvent->offScreen = TRUE;
+
+    // if(objectEvent->movementType == MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_DOWN) // should only be windmill sprites I think
+    // {
+    //     objectEvent->offScreen = FALSE;
+    //     DebugPrintf("windmill detected");
+    // }
 }
 
 static void UpdateObjectEventSpriteVisibility(struct ObjectEvent *objectEvent, struct Sprite *sprite)
@@ -9199,6 +9205,8 @@ static void UpdateObjectEventSpriteVisibility(struct ObjectEvent *objectEvent, s
     sprite->invisible = FALSE;
     if (objectEvent->invisible || objectEvent->offScreen)
         sprite->invisible = TRUE;
+    // if (objectEvent->movementType == MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_DOWN)
+    //     sprite->invisible = FALSE;
 }
 
 static void GetAllGroundEffectFlags_OnSpawn(struct ObjectEvent *objEvent, u32 *flags)

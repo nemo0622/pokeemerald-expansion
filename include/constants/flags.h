@@ -288,7 +288,7 @@
 #define FLAG_RECEIVED_TM_BULLET_SEED         0x106
 #define FLAG_ENTERED_ELITE_FOUR              0x107
 #define FLAG_RECEIVED_TM_HIDDEN_POWER        0x108
-#define FLAG_RECEIVED_TM_TORMENT             0x109
+#define FLAG_RECEIVED_TM_TOXIC             0x109
 #define FLAG_RECEIVED_LAVARIDGE_EGG          0x10A
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10B
 #define FLAG_SECRET_BASE_REGISTRY_ENABLED    0x10C
@@ -1068,9 +1068,9 @@
 #define FLAG_ITEM_FROSLASS_CAVERN_NEVER_MELT_ICE                    0x3FA
 #define FLAG_ITEM_FROSLASS_CAVERN_MOON_STONE                        0x3FB
 #define FLAG_ITEM_FROSLASS_CAVERN_TM_THIEF                          0x3FC
-#define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
-#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
-#define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
+#define FLAG_ITEM_WANDERERS_WOODS_S_REVIVE                          0x3FD
+#define FLAG_ITEM_SOFOS_CITY_HYPER_POTION                           0x3FE
+#define FLAG_ITEM_SOFOS_CITY_MAX_REVIVE                             0x3FF
 #define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
 #define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
 #define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
@@ -1277,17 +1277,17 @@
 #define FLAG_MET_INKEEPER                                           0x4CA // If met the innkeeper in all Pokémon centers
 #define FLAG_HIDE_STARTING_POKEMON                                  0x4CB // hides pokemon seen in intro sequence
 #define FLAG_HIDE_FROSLASS                                          0x4CC // Hide Froslass in Froslass Cavern
-#define FLAG_UNUSED_0x4CD                                           0x4CD // Unused Flag
-#define FLAG_UNUSED_0x4CE                                           0x4CE // Unused Flag
-#define FLAG_UNUSED_0x4CF                                           0x4CF // Unused Flag
-#define FLAG_UNUSED_0x4D0                                           0x4D0 // Unused Flag
-#define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag
-#define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
-#define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
-#define FLAG_UNUSED_0x4D4                                           0x4D4 // Unused Flag
-#define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag
-#define FLAG_UNUSED_0x4D6                                           0x4D6 // Unused Flag
-#define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
+#define FLAG_TRIGGERED_NIKO_EVENT_ASFAL_HILLS                       0x4CD // Set after first talking with Niko in Asfal Hills
+#define FLAG_HIDE_BLOCKING_SOFOS_GYM                                0x4CE // Flag hiding the Gym coach and Chimera grunts blocking the gym
+#define FLAG_HIDE_NIKO_ASFAL_HILLS                                  0x4CF // Hides Niko and Duskull in Asfal Hills after quest completion
+#define FLAG_HIDE_CORRIN_CROSSING_ROADBLOCK                         0x4D0 // Hides Officers and surrounding crowd blocking way down to Port Pello
+#define FLAG_GOT_YELLOW_NECTAR_ASFAL_HOUSE                          0x4D1 // got yellow nectar from house 2 in Asfal Hills
+#define FLAG_GOT_PINK_NECTAR_ASFAL_HOUSE                            0x4D2 // got pink nectar from house 2 in Asfal Hills
+#define FLAG_GOT_TM_TORMENT                                         0x4D3 // from Angry Man with Murkrow in Sofos City
+#define FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA                 0x4D4 // Hides certain NPCs while Team Chimera is present in the city (near Gym and near hideout)
+#define FLAG_PLAYED_IN_SOFOS_BATTLE_PAVILION                        0x4D5 // Set after playing the battle pavilion (battle tent) in sofos city, used for a quest
+#define FLAG_HIDE_MENESWO_SATYRS_LAIR                               0x4D6 // Separate flag hiding Meneswo in Satyrs Lair
+#define FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY                           0x4D7 // temporarily hide Niko in the University
 #define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
 #define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
 #define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag

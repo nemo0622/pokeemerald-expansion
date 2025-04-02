@@ -1,0 +1,25 @@
+mapscripts AsfalHills_House3_MapScripts {}
+
+script AsfalHills_House3_EventScript_Worker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("I live out here with my Pokémon to get away from the city noise. It's like another world on the other side of the city walls!"))
+    closemessage
+    release
+    end
+}
+
+script AsfalHills_House3_EventScript_Pichu
+{
+    lock
+    faceplayer
+    speakername("Pichu")
+    playmoncry(SPECIES_PICHU, CRY_MODE_NORMAL)
+    msgbox("Pii-i!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

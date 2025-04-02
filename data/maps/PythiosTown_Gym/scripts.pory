@@ -217,10 +217,14 @@ script PythiosTown_Gym_EventScript_Sabella_DefeatedScript
     msgbox(format("That TM contains the move {COLOR GREEN}Calm Mind{COLOR DARK_GRAY}, which will boost your Pokémon's stats.\p I see the open ocean in your future... make sure you speak with a {COLOR GREEN}strange sailor{COLOR DARK_GRAY} on the beach. Then you'll be ready to head east, through the caves to {COLOR GREEN}Sofos City{COLOR DARK_GRAY}. I see greatness in your future."))
     closemessage
 
+    // complete gym quest and begin next one
     delay(20)
     completequest(QUEST_GYM_3)
     delay(20)
     startquest(QUEST_GYM_4)
+
+    // set Niko and Rania state variables if necessary
+    setvar(VAR_NIKO_STATE, 6)
 
     release
     end

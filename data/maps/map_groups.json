@@ -134,7 +134,8 @@
     "RiverwalkTrail_West",
     "RiverwalkTrail_South",
     "KalamiCity",
-    "AcrisiaMountain_Peak"
+    "AcrisiaMountain_Peak",
+    "WanderersWoods_South"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -237,7 +238,12 @@
     "SlateportCity_House",
     "SlateportCity_PokemonCenter_1F",
     "SlateportCity_PokemonCenter_2F",
-    "SlateportCity_Mart"
+    "SlateportCity_Mart",
+    "AsfalHills_House1",
+    "AsfalHills_House2",
+    "AsfalHills_House3",
+    "SofosCity_PokemonCenter",
+    "SofosCity_Mart"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",
@@ -494,7 +500,8 @@
     "StygianCaves_F1",
     "StygianCaves_BF1",
     "JusmailTown_Gym",
-    "AcrisiaCaves_BF1"
+    "AcrisiaCaves_BF1",
+    "SatyrsLair"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

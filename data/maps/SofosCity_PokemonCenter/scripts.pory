@@ -1,0 +1,86 @@
+mapscripts SofosCity_PokemonCenter_MapScripts {}
+
+script SofosCity_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Sofos City Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_SOFOS_CITY)
+    }
+    release
+    end
+}
+
+script SofosCity_PokemonCenter_EventScript_Togetic
+{
+    lock
+    faceplayer
+    speakername("Togetic")
+    playmoncry(SPECIES_TOGETIC, CRY_MODE_NORMAL)
+    msgbox("Bee-eh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script SofosCity_PokemonCenter_EventScript_Flabebe
+{
+    lock
+    faceplayer
+    speakername("Flabébé")
+    playmoncry(SPECIES_FLABEBE_ORANGE_FLOWER, CRY_MODE_NORMAL)
+    msgbox("Twee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script SofosCity_PokemonCenter_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("I've had my Flabébé since I was young. Some Pokémon have lifespans that rival humans. I've even heard that a few Pokémon can live for centuries!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_PokemonCenter_EventScript_GameboyKid
+{
+    lock
+    faceplayer
+    speakername("Gamer Kid")
+    msgbox(format("I put my Pokémon's data on my portable device! Now it can follow me wherever I go digitally!"))
+    closemessage
+    release
+    end
+}

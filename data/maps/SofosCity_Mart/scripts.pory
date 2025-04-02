@@ -1,0 +1,54 @@
+mapscripts SofosCity_Mart_MapScripts {}
+
+script SofosCity_Mart_EventScript_MartEmployee
+{
+    lock
+    faceplayer
+    speakername("Mart Employee")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(SofosCity_Mart_Shop)
+    closemessage
+    delay(1)
+    speakername("Mart Employee")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+mart SofosCity_Mart_Shop
+{
+    ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+	ITEM_POTION
+	ITEM_SUPER_POTION
+    ITEM_REVIVE
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+    ITEM_BURN_HEAL
+	ITEM_ESCAPE_ROPE
+	ITEM_REPEL
+    ITEM_SUPER_REPEL
+}
+
+script SofosCity_Mart_EventScript_ShoppingMan
+{
+    lock
+    faceplayer
+    speakername("Young Man")
+    msgbox(format("There are some things that only official Marts have, but when I can, I like to stop by the Street Vendors of the city to see what they have."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_Mart_EventScript_WorkerMan
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("Goods from all around the Ilios Region make their way to Sofos City. The only places that rival it in trade are Péntepetal City and Port Pello."))
+    closemessage
+    release
+    end
+}

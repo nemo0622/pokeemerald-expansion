@@ -561,3 +561,4 @@ gSpecials::
 	def_special SetCaughtMon
 	def_special CheckPartyForMon
 	def_special DoSlidingPuzzle
+	def_special ChooseItemFromBag

@@ -1,0 +1,75 @@
+mapscripts AsfalHills_House1_MapScripts {}
+
+script AsfalHills_House1_EventScript_LittleBoy
+{
+    lock
+    faceplayer
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_BOY_GIRAFARIG)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        speakername("Short Boy")
+        msgbox(format("That Girafarig picture inspired me! I'm gonna get as tall as that one day!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_BOY_GIRAFARIG)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        speakername("Short Boy")
+        msgbox(format("Woooahhh, you're... you're so tall! I wanna be tall like you someday!\p The problem is, I'm still short. My friend told me that {COLOR GREEN}Girafarig{COLOR DARK_GRAY} was the tallest Pokémon to ever exist EVER! If you find one, {COLOR GREEN}show me the picture on your Pokédex{COLOR DARK_GRAY}!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_SHOW_BOY_GIRAFARIG)
+    }
+    else // else, the quest is active, so ask the player about it
+    {
+        speakername("Short Boy")
+        msgbox(format("Chaire!! Did you bring me the {COLOR GREEN}Girafarig Pokédex page{COLOR DARK_GRAY}?"))
+        closemessage
+
+        getcaughtmon(SPECIES_GIRAFARIG)
+        delay(30)
+
+        if(var(VAR_RESULT) == 0) // nope
+        {
+            speakername("Short Boy")
+            msgbox(format("Aw, mannn! I wanna learn all about Girafarig, so the Pokédex page needs to be {COLOR GREEN}complete{COLOR DARK_GRAY}! Let me know when you catch one!"))
+            closemessage
+        }
+        else
+        {
+            applymovement(1, Common_Movement_Heart)
+            waitmovement(0)
+            speakername("Short Boy")
+            msgbox(format("Wow, it's so cool! It really IS super tall!\p I'm gonna live like a Girafarig to get as tall as I can. My Dad says I should give gifts to people who help me, so here!"))
+            closemessage
+            giveitem(ITEM_FRESH_START_MOCHI)
+            delay(5)
+            speakername("Short Boy")
+            msgbox(format("That Mochi resets Pokémon stats to their basic level. I think it's helpful for some special training, but I just think they're yummy!"))
+            closemessage
+
+            delay(20)
+            completequest(QUEST_SHOW_BOY_GIRAFARIG)
+        }
+    }
+    release
+    end
+}
+
+script AsfalHills_House1_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("My kid is growing up fast. He's so obsessed with getting taller and older, but I wish he'd appreciate how fun it is to be young."))
+    closemessage
+    release
+    end
+}

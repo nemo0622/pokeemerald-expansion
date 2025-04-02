@@ -41,11 +41,11 @@ AcrisiaMountains_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 
-AcrisiaMountains_Sign_GymSign::
+AcrisiaMountains_EventScript_DirectionSign::
 # 25 "data/maps/AcrisiaMountains/scripts.pory"
 	lock
 # 26 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_Sign_GymSign_Text_0
+	msgbox AcrisiaMountains_EventScript_DirectionSign_Text_0
 # 27 "data/maps/AcrisiaMountains/scripts.pory"
 	closemessage
 # 28 "data/maps/AcrisiaMountains/scripts.pory"
@@ -321,11 +321,11 @@ AcrisiaMountains_EventScript_LassExploringRuins_8:
 	goto AcrisiaMountains_EventScript_LassExploringRuins_1
 
 
-AcrisiaMountains_Sign_GymSign_Text_0:
+AcrisiaMountains_EventScript_DirectionSign_Text_0:
 # 26 "data/maps/AcrisiaMountains/scripts.pory"
-	.string "Welcome to the Acrisia Caverns.\p"
-	.string "Gym Leader: Mattaios\n"
-	.string "The Ever-Working Rocksmith$"
+	.string "Acrisia Mountains\n"
+	.string "A Rocky, Untamed Wilderness\p"
+	.string "Acrisia City {RIGHT_ARROW}$"
 
 AcrisiaMountains_EventScript_RockExploringHiker_Text_0:
 # 36 "data/maps/AcrisiaMountains/scripts.pory"

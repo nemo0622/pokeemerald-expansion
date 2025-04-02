@@ -20,10 +20,10 @@ mapscripts AcrisiaMountains_MapScripts {
     }
 }
 
-script AcrisiaMountains_Sign_GymSign
+script AcrisiaMountains_EventScript_DirectionSign
 {
     lock
-    msgbox(format("Welcome to the Acrisia Caverns.\p Gym Leader: Mattaios\n The Ever-Working Rocksmith"))
+    msgbox(format("Acrisia Mountains\n A Rocky, Untamed Wilderness\p Acrisia City {RIGHT_ARROW}"))
     closemessage
     release
     end

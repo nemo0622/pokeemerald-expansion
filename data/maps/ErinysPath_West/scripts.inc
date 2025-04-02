@@ -53,233 +53,245 @@ ErinysPath_West_SignBlockingDemoProgress::
 	end
 
 
-ErinysPath_West_EventScript_FatMan::
+ErinysPath_West_EventScript_DirectionSign::
 # 34 "data/maps/ErinysPath_West/scripts.pory"
 	lock
 # 35 "data/maps/ErinysPath_West/scripts.pory"
+	msgbox ErinysPath_West_EventScript_DirectionSign_Text_0
+# 36 "data/maps/ErinysPath_West/scripts.pory"
+	closemessage
+# 37 "data/maps/ErinysPath_West/scripts.pory"
+	release
+	end
+
+
+ErinysPath_West_EventScript_FatMan::
+# 43 "data/maps/ErinysPath_West/scripts.pory"
+	lock
+# 44 "data/maps/ErinysPath_West/scripts.pory"
 	faceplayer
-# 38 "data/maps/ErinysPath_West/scripts.pory"
+# 47 "data/maps/ErinysPath_West/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_YACHE_BERRY_FROST_BREATH
-# 39 "data/maps/ErinysPath_West/scripts.pory"
+# 48 "data/maps/ErinysPath_West/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq ErinysPath_West_EventScript_FatMan_2
-# 49 "data/maps/ErinysPath_West/scripts.pory"
+# 58 "data/maps/ErinysPath_West/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_YACHE_BERRY_FROST_BREATH
-# 50 "data/maps/ErinysPath_West/scripts.pory"
+# 59 "data/maps/ErinysPath_West/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq ErinysPath_West_EventScript_FatMan_5
-# 61 "data/maps/ErinysPath_West/scripts.pory"
+# 70 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_FatMan_Text_0
-# 62 "data/maps/ErinysPath_West/scripts.pory"
+# 71 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_FatMan_Text_3
-# 63 "data/maps/ErinysPath_West/scripts.pory"
+# 72 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 65 "data/maps/ErinysPath_West/scripts.pory"
+# 74 "data/maps/ErinysPath_West/scripts.pory"
 	checkitem ITEM_YACHE_BERRY
-# 66 "data/maps/ErinysPath_West/scripts.pory"
+# 75 "data/maps/ErinysPath_West/scripts.pory"
 	delay 30
-# 68 "data/maps/ErinysPath_West/scripts.pory"
+# 77 "data/maps/ErinysPath_West/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq ErinysPath_West_EventScript_FatMan_8
-# 76 "data/maps/ErinysPath_West/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
-# 77 "data/maps/ErinysPath_West/scripts.pory"
-	waitmovement 0
-# 78 "data/maps/ErinysPath_West/scripts.pory"
-	delay 10
-# 79 "data/maps/ErinysPath_West/scripts.pory"
-	speakername ErinysPath_West_EventScript_FatMan_Text_0
-# 80 "data/maps/ErinysPath_West/scripts.pory"
-	msgbox ErinysPath_West_EventScript_FatMan_Text_5
-# 81 "data/maps/ErinysPath_West/scripts.pory"
-	closemessage
-# 82 "data/maps/ErinysPath_West/scripts.pory"
-	removeitem ITEM_YACHE_BERRY
-# 83 "data/maps/ErinysPath_West/scripts.pory"
-	delay 30
 # 85 "data/maps/ErinysPath_West/scripts.pory"
-	applymovement 1, Common_Movement_JumpInPlaceCircle
+	applymovement 1, Common_Movement_ExclamationMark
 # 86 "data/maps/ErinysPath_West/scripts.pory"
 	waitmovement 0
 # 87 "data/maps/ErinysPath_West/scripts.pory"
-	applymovement 1, Common_Movement_FacePlayer
+	delay 10
 # 88 "data/maps/ErinysPath_West/scripts.pory"
-	waitmovement 0
+	speakername ErinysPath_West_EventScript_FatMan_Text_0
 # 89 "data/maps/ErinysPath_West/scripts.pory"
-	speakername ErinysPath_West_EventScript_FatMan_Text_0
+	msgbox ErinysPath_West_EventScript_FatMan_Text_5
 # 90 "data/maps/ErinysPath_West/scripts.pory"
-	msgbox ErinysPath_West_EventScript_FatMan_Text_6
+	closemessage
 # 91 "data/maps/ErinysPath_West/scripts.pory"
-	closemessage
-# 93 "data/maps/ErinysPath_West/scripts.pory"
-	giveitem ITEM_TM52
+	removeitem ITEM_YACHE_BERRY
+# 92 "data/maps/ErinysPath_West/scripts.pory"
+	delay 30
+# 94 "data/maps/ErinysPath_West/scripts.pory"
+	applymovement 1, Common_Movement_JumpInPlaceCircle
 # 95 "data/maps/ErinysPath_West/scripts.pory"
-	delay 5
+	waitmovement 0
 # 96 "data/maps/ErinysPath_West/scripts.pory"
-	speakername ErinysPath_West_EventScript_FatMan_Text_0
+	applymovement 1, Common_Movement_FacePlayer
 # 97 "data/maps/ErinysPath_West/scripts.pory"
-	msgbox ErinysPath_West_EventScript_FatMan_Text_7
+	waitmovement 0
 # 98 "data/maps/ErinysPath_West/scripts.pory"
-	closemessage
+	speakername ErinysPath_West_EventScript_FatMan_Text_0
+# 99 "data/maps/ErinysPath_West/scripts.pory"
+	msgbox ErinysPath_West_EventScript_FatMan_Text_6
 # 100 "data/maps/ErinysPath_West/scripts.pory"
+	closemessage
+# 102 "data/maps/ErinysPath_West/scripts.pory"
+	giveitem ITEM_TM52
+# 104 "data/maps/ErinysPath_West/scripts.pory"
+	delay 5
+# 105 "data/maps/ErinysPath_West/scripts.pory"
+	speakername ErinysPath_West_EventScript_FatMan_Text_0
+# 106 "data/maps/ErinysPath_West/scripts.pory"
+	msgbox ErinysPath_West_EventScript_FatMan_Text_7
+# 107 "data/maps/ErinysPath_West/scripts.pory"
+	closemessage
+# 109 "data/maps/ErinysPath_West/scripts.pory"
 	delay 20
-# 101 "data/maps/ErinysPath_West/scripts.pory"
+# 110 "data/maps/ErinysPath_West/scripts.pory"
 	completequest QUEST_YACHE_BERRY_FROST_BREATH
 ErinysPath_West_EventScript_FatMan_4:
-# 104 "data/maps/ErinysPath_West/scripts.pory"
+# 113 "data/maps/ErinysPath_West/scripts.pory"
 	release
 	end
 
 ErinysPath_West_EventScript_FatMan_2:
-# 41 "data/maps/ErinysPath_West/scripts.pory"
+# 50 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_FatMan_Text_0
-# 42 "data/maps/ErinysPath_West/scripts.pory"
+# 51 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_FatMan_Text_1
-# 43 "data/maps/ErinysPath_West/scripts.pory"
+# 52 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 44 "data/maps/ErinysPath_West/scripts.pory"
+# 53 "data/maps/ErinysPath_West/scripts.pory"
 	release
 	end
 
 ErinysPath_West_EventScript_FatMan_5:
-# 52 "data/maps/ErinysPath_West/scripts.pory"
+# 61 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_FatMan_Text_0
-# 53 "data/maps/ErinysPath_West/scripts.pory"
+# 62 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_FatMan_Text_2
-# 54 "data/maps/ErinysPath_West/scripts.pory"
+# 63 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 56 "data/maps/ErinysPath_West/scripts.pory"
+# 65 "data/maps/ErinysPath_West/scripts.pory"
 	delay 20
-# 57 "data/maps/ErinysPath_West/scripts.pory"
+# 66 "data/maps/ErinysPath_West/scripts.pory"
 	startquest QUEST_YACHE_BERRY_FROST_BREATH
 	goto ErinysPath_West_EventScript_FatMan_4
 
 ErinysPath_West_EventScript_FatMan_8:
-# 70 "data/maps/ErinysPath_West/scripts.pory"
+# 79 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_FatMan_Text_0
-# 71 "data/maps/ErinysPath_West/scripts.pory"
+# 80 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_FatMan_Text_4
-# 72 "data/maps/ErinysPath_West/scripts.pory"
+# 81 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
 	goto ErinysPath_West_EventScript_FatMan_4
 
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena::
-# 110 "data/maps/ErinysPath_West/scripts.pory"
+# 119 "data/maps/ErinysPath_West/scripts.pory"
 	trainerbattle_single TRAINER_ERINYSPATH_W_HELENA, ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaDefeat
-# 111 "data/maps/ErinysPath_West/scripts.pory"
+# 120 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena_Text_0
-# 112 "data/maps/ErinysPath_West/scripts.pory"
+# 121 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena_Text_1
-# 113 "data/maps/ErinysPath_West/scripts.pory"
+# 122 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 114 "data/maps/ErinysPath_West/scripts.pory"
+# 123 "data/maps/ErinysPath_West/scripts.pory"
 	release
 	end
 
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey::
-# 128 "data/maps/ErinysPath_West/scripts.pory"
+# 137 "data/maps/ErinysPath_West/scripts.pory"
 	trainerbattle_single TRAINER_ERINYSPATH_W_LEWEY, ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyDefeat
-# 129 "data/maps/ErinysPath_West/scripts.pory"
+# 138 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey_Text_0
-# 130 "data/maps/ErinysPath_West/scripts.pory"
+# 139 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey_Text_1
-# 131 "data/maps/ErinysPath_West/scripts.pory"
+# 140 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 132 "data/maps/ErinysPath_West/scripts.pory"
+# 141 "data/maps/ErinysPath_West/scripts.pory"
 	release
 	end
 
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro::
-# 146 "data/maps/ErinysPath_West/scripts.pory"
+# 155 "data/maps/ErinysPath_West/scripts.pory"
 	trainerbattle_double TRAINER_ERINYSPATH_W_IRO_AND_ANNA, ErinysPath_West_Text_Trainer_ErinysPath_W_IroIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_IroDefeat, ErinysPath_West_Text_Trainer_ErinysPath_W_IroNotEnoughMons
-# 147 "data/maps/ErinysPath_West/scripts.pory"
+# 156 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro_Text_0
-# 148 "data/maps/ErinysPath_West/scripts.pory"
+# 157 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro_Text_1
-# 149 "data/maps/ErinysPath_West/scripts.pory"
+# 158 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 150 "data/maps/ErinysPath_West/scripts.pory"
+# 159 "data/maps/ErinysPath_West/scripts.pory"
 	release
 	end
 
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna::
-# 168 "data/maps/ErinysPath_West/scripts.pory"
+# 177 "data/maps/ErinysPath_West/scripts.pory"
 	trainerbattle_double TRAINER_ERINYSPATH_W_IRO_AND_ANNA, ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaDefeat, ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaNotEnoughMons
-# 169 "data/maps/ErinysPath_West/scripts.pory"
+# 178 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna_Text_0
-# 170 "data/maps/ErinysPath_West/scripts.pory"
+# 179 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna_Text_1
-# 171 "data/maps/ErinysPath_West/scripts.pory"
+# 180 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 172 "data/maps/ErinysPath_West/scripts.pory"
+# 181 "data/maps/ErinysPath_West/scripts.pory"
 	release
 	end
 
 
 ErinysPath_West_EventScript_Performer::
-# 190 "data/maps/ErinysPath_West/scripts.pory"
+# 199 "data/maps/ErinysPath_West/scripts.pory"
 	lock
-# 191 "data/maps/ErinysPath_West/scripts.pory"
+# 200 "data/maps/ErinysPath_West/scripts.pory"
 	faceplayer
-# 192 "data/maps/ErinysPath_West/scripts.pory"
+# 201 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_Performer_Text_0
-# 193 "data/maps/ErinysPath_West/scripts.pory"
+# 202 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_Performer_Text_1
-# 194 "data/maps/ErinysPath_West/scripts.pory"
+# 203 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 195 "data/maps/ErinysPath_West/scripts.pory"
+# 204 "data/maps/ErinysPath_West/scripts.pory"
 	applymovement 8, Common_Movement_FaceRight
-# 196 "data/maps/ErinysPath_West/scripts.pory"
+# 205 "data/maps/ErinysPath_West/scripts.pory"
 	waitmovement 0
-# 197 "data/maps/ErinysPath_West/scripts.pory"
+# 206 "data/maps/ErinysPath_West/scripts.pory"
 	release
 	end
 
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Damon::
-# 203 "data/maps/ErinysPath_West/scripts.pory"
+# 212 "data/maps/ErinysPath_West/scripts.pory"
 	trainerbattle_single TRAINER_ERINYSPATH_W_DAMON, ErinysPath_West_Text_Trainer_ErinysPath_W_DamonIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_DamonDefeat
-# 204 "data/maps/ErinysPath_West/scripts.pory"
+# 213 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_Trainer_ErinysPath_W_Damon_Text_0
-# 205 "data/maps/ErinysPath_West/scripts.pory"
+# 214 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_Trainer_ErinysPath_W_Damon_Text_1
-# 206 "data/maps/ErinysPath_West/scripts.pory"
+# 215 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 207 "data/maps/ErinysPath_West/scripts.pory"
+# 216 "data/maps/ErinysPath_West/scripts.pory"
 	release
 	end
 
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Tisias::
-# 221 "data/maps/ErinysPath_West/scripts.pory"
+# 230 "data/maps/ErinysPath_West/scripts.pory"
 	trainerbattle_single TRAINER_ERINYSPATH_W_TISIAS, ErinysPath_West_Text_Trainer_ErinysPath_W_TisiasIntro, ErinysPath_West_Text_Trainer_ErinysPath_W_TisiasDefeat
-# 222 "data/maps/ErinysPath_West/scripts.pory"
+# 231 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_Trainer_ErinysPath_W_Tisias_Text_0
-# 223 "data/maps/ErinysPath_West/scripts.pory"
+# 232 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_Trainer_ErinysPath_W_Tisias_Text_1
-# 224 "data/maps/ErinysPath_West/scripts.pory"
+# 233 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 225 "data/maps/ErinysPath_West/scripts.pory"
+# 234 "data/maps/ErinysPath_West/scripts.pory"
 	release
 	end
 
 
 ErinysPath_West_EventScript_Hiker::
-# 239 "data/maps/ErinysPath_West/scripts.pory"
+# 248 "data/maps/ErinysPath_West/scripts.pory"
 	lock
-# 240 "data/maps/ErinysPath_West/scripts.pory"
+# 249 "data/maps/ErinysPath_West/scripts.pory"
 	faceplayer
-# 241 "data/maps/ErinysPath_West/scripts.pory"
+# 250 "data/maps/ErinysPath_West/scripts.pory"
 	speakername ErinysPath_West_EventScript_Hiker_Text_0
-# 242 "data/maps/ErinysPath_West/scripts.pory"
+# 251 "data/maps/ErinysPath_West/scripts.pory"
 	msgbox ErinysPath_West_EventScript_Hiker_Text_1
-# 243 "data/maps/ErinysPath_West/scripts.pory"
+# 252 "data/maps/ErinysPath_West/scripts.pory"
 	closemessage
-# 244 "data/maps/ErinysPath_West/scripts.pory"
+# 253 "data/maps/ErinysPath_West/scripts.pory"
 	release
 	end
 
@@ -293,18 +305,25 @@ ErinysPath_West_SignBlockingDemoProgress_Text_0:
 	.string "the official release!\p"
 	.string "Thank you for playing! -Nemo$"
 
+ErinysPath_West_EventScript_DirectionSign_Text_0:
+# 35 "data/maps/ErinysPath_West/scripts.pory"
+	.string "Erinys Path - East\n"
+	.string "Where Winter Winds Rise\p"
+	.string "{LEFT_ARROW} Erinys Path - West\n"
+	.string "Froslass Cavern {RIGHT_ARROW}$"
+
 ErinysPath_West_EventScript_FatMan_Text_0:
-# 41 "data/maps/ErinysPath_West/scripts.pory"
+# 50 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Berry Enthusiast$"
 
 ErinysPath_West_EventScript_FatMan_Text_1:
-# 42 "data/maps/ErinysPath_West/scripts.pory"
+# 51 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Thanks to that Yache Berry, I can stand\n"
 	.string "in the cold just fine! Berries are so\l"
 	.string "amazing.$"
 
 ErinysPath_West_EventScript_FatMan_Text_2:
-# 53 "data/maps/ErinysPath_West/scripts.pory"
+# 62 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Berries found here are growing right at\n"
 	.string "the snow line. These are some tough\l"
 	.string "little plants!\p"
@@ -315,13 +334,13 @@ ErinysPath_West_EventScript_FatMan_Text_2:
 	.string "humans, but it's worth a try.$"
 
 ErinysPath_West_EventScript_FatMan_Text_3:
-# 62 "data/maps/ErinysPath_West/scripts.pory"
+# 71 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Brrr, it's freezing up here! Do you have\n"
 	.string "a {COLOR GREEN}Yache Berry{COLOR DARK_GRAY} for me to try yet? Maybe\l"
 	.string "it'll help me shrug off the cold.$"
 
 ErinysPath_West_EventScript_FatMan_Text_4:
-# 71 "data/maps/ErinysPath_West/scripts.pory"
+# 80 "data/maps/ErinysPath_West/scripts.pory"
 	.string "No, I can't smell it. Berries all have a\n"
 	.string "unique smell, but I can't sense a Yache\l"
 	.string "Berry around here.\p"
@@ -332,20 +351,20 @@ ErinysPath_West_EventScript_FatMan_Text_4:
 	.string "Berry.$"
 
 ErinysPath_West_EventScript_FatMan_Text_5:
-# 80 "data/maps/ErinysPath_West/scripts.pory"
+# 89 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Sniff sniff sniff... Hey, I know that\n"
 	.string "smell! It must be a Yache Berry! Quick,\l"
 	.string "give it here!$"
 
 ErinysPath_West_EventScript_FatMan_Text_6:
-# 90 "data/maps/ErinysPath_West/scripts.pory"
+# 99 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Yum-yum-yum! Wow, I think I feel less\n"
 	.string "cold!\p"
 	.string "Thanks, bud. Here, I've got something\n"
 	.string "for you.$"
 
 ErinysPath_West_EventScript_FatMan_Text_7:
-# 97 "data/maps/ErinysPath_West/scripts.pory"
+# 106 "data/maps/ErinysPath_West/scripts.pory"
 	.string "That TM contains the move {COLOR GREEN}Frost\n"
 	.string "Breath{COLOR DARK_GRAY}. By itself, it's not the\l"
 	.string "strongest, but it always lands a\l"
@@ -356,146 +375,146 @@ ErinysPath_West_EventScript_FatMan_Text_7:
 	.string "that again!$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena_Text_0:
-# 111 "data/maps/ErinysPath_West/scripts.pory"
+# 120 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Helena$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Helena_Text_1:
-# 112 "data/maps/ErinysPath_West/scripts.pory"
+# 121 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Maybe I'll find a boat to take me to\n"
 	.string "Sofos City. Froslass Cavern sounds\l"
 	.string "scary!$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey_Text_0:
-# 129 "data/maps/ErinysPath_West/scripts.pory"
+# 138 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Lewey$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Lewey_Text_1:
-# 130 "data/maps/ErinysPath_West/scripts.pory"
+# 139 "data/maps/ErinysPath_West/scripts.pory"
 	.string "No, no, I don't need help, I'll just keep\n"
 	.string "pedaling. It's bound to work sooner or\l"
 	.string "later!$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro_Text_0:
-# 147 "data/maps/ErinysPath_West/scripts.pory"
+# 156 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Iro$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Iro_Text_1:
-# 148 "data/maps/ErinysPath_West/scripts.pory"
+# 157 "data/maps/ErinysPath_West/scripts.pory"
 	.string "My sister and I come here to play all\n"
 	.string "the time. All the wild Pokémon like us!$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna_Text_0:
-# 169 "data/maps/ErinysPath_West/scripts.pory"
+# 178 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Anna$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Anna_Text_1:
-# 170 "data/maps/ErinysPath_West/scripts.pory"
+# 179 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Iro tells me scary stories about the\n"
 	.string "Froslass in the caves, but I'm not\l"
 	.string "scared! It made the cold and snow for\l"
 	.string "us to play in!$"
 
 ErinysPath_West_EventScript_Performer_Text_0:
-# 192 "data/maps/ErinysPath_West/scripts.pory"
+# 201 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Performer$"
 
 ErinysPath_West_EventScript_Performer_Text_1:
-# 193 "data/maps/ErinysPath_West/scripts.pory"
+# 202 "data/maps/ErinysPath_West/scripts.pory"
 	.string "This area around Froslass Cavern is\n"
 	.string "just about the only snowy place in the\l"
 	.string "Ilios Region. It's worth visiting here to\l"
 	.string "play in the snow sometimes!$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Damon_Text_0:
-# 204 "data/maps/ErinysPath_West/scripts.pory"
+# 213 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Damon$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Damon_Text_1:
-# 205 "data/maps/ErinysPath_West/scripts.pory"
+# 214 "data/maps/ErinysPath_West/scripts.pory"
 	.string "While I'm up here, I might as well make a\n"
 	.string "few snowballs. My Ice-type Pokémon like\l"
 	.string "it here!$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Tisias_Text_0:
-# 222 "data/maps/ErinysPath_West/scripts.pory"
+# 231 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Tisias$"
 
 ErinysPath_West_EventScript_Trainer_ErinysPath_W_Tisias_Text_1:
-# 223 "data/maps/ErinysPath_West/scripts.pory"
+# 232 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Maybe the snowmen aren't fighting,\n"
 	.string "maybe they're friends!$"
 
 ErinysPath_West_EventScript_Hiker_Text_0:
-# 241 "data/maps/ErinysPath_West/scripts.pory"
+# 250 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Hiker$"
 
 ErinysPath_West_EventScript_Hiker_Text_1:
-# 242 "data/maps/ErinysPath_West/scripts.pory"
+# 251 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Froslass Cavern has huge sheets of ice\n"
 	.string "on the cave floor. I tried to slide\l"
 	.string "across them, but I slipped and fell!$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaIntro::
-# 117 "data/maps/ErinysPath_West/scripts.pory"
+# 126 "data/maps/ErinysPath_West/scripts.pory"
 	.string "We're not far from Froslass Cavern! A\n"
 	.string "little battle practice should help us\l"
 	.string "get through!$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_HelenaDefeat::
-# 121 "data/maps/ErinysPath_West/scripts.pory"
+# 130 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Aw, I better head home...$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyIntro::
-# 135 "data/maps/ErinysPath_West/scripts.pory"
+# 144 "data/maps/ErinysPath_West/scripts.pory"
 	.string "My bike wheels got stuck in the mud!$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_LeweyDefeat::
-# 139 "data/maps/ErinysPath_West/scripts.pory"
+# 148 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Not my best day, huh?$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_IroIntro::
-# 153 "data/maps/ErinysPath_West/scripts.pory"
+# 162 "data/maps/ErinysPath_West/scripts.pory"
 	.string "We caught these Pokémon while we built\n"
 	.string "snowmen!$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_IroDefeat::
-# 157 "data/maps/ErinysPath_West/scripts.pory"
+# 166 "data/maps/ErinysPath_West/scripts.pory"
 	.string "At least we made some new friends!$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_IroNotEnoughMons::
-# 161 "data/maps/ErinysPath_West/scripts.pory"
+# 170 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Aw, you don't have enough Pokémon to\n"
 	.string "battle us. It wouldn't be fair!$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaIntro::
-# 175 "data/maps/ErinysPath_West/scripts.pory"
+# 184 "data/maps/ErinysPath_West/scripts.pory"
 	.string "We caught these Pokémon while we built\n"
 	.string "snowmen!$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaDefeat::
-# 179 "data/maps/ErinysPath_West/scripts.pory"
+# 188 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Who'll help us build snowmen now?$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_AnnaNotEnoughMons::
-# 183 "data/maps/ErinysPath_West/scripts.pory"
+# 192 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Our parents say we can't battle\n"
 	.string "someone without at least 2 Pokémon, or\l"
 	.string "else it wouldn't be fair.$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_DamonIntro::
-# 210 "data/maps/ErinysPath_West/scripts.pory"
+# 219 "data/maps/ErinysPath_West/scripts.pory"
 	.string "I got a maintenance call for someone up\n"
 	.string "here... Where are they?$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_DamonDefeat::
-# 214 "data/maps/ErinysPath_West/scripts.pory"
+# 223 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Argh, I bet it was just a prank call.$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_TisiasIntro::
-# 228 "data/maps/ErinysPath_West/scripts.pory"
+# 237 "data/maps/ErinysPath_West/scripts.pory"
 	.string "Look! These snowmen look like they're\n"
 	.string "battling! Let's battle, too!$"
 
 ErinysPath_West_Text_Trainer_ErinysPath_W_TisiasDefeat::
-# 232 "data/maps/ErinysPath_West/scripts.pory"
+# 241 "data/maps/ErinysPath_West/scripts.pory"
 	.string "I couldn't even win with all this money?!$"

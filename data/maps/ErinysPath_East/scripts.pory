@@ -25,6 +25,15 @@ mapscripts ErinysPath_East_MapScripts {
     }
 }
 
+script ErinysPath_East_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Erinys Path - West\n Where Red Leaves Fall\p {LEFT_ARROW} Pythios Town\n Erinys Path - East {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script ErinysPath_East_EventScript_Basculin
 {
     lock

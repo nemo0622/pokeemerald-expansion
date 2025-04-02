@@ -432,7 +432,8 @@
 #define METATILE_PokemonCenter_Floor_ShadowTop_Alt       0x2DC
 
 // gTileset_Pythios
-#define METATILE_Pythios_RedGrass  0x218
+#define METATILE_Pythios_RedGrass      0x218
+#define METATILE_Pythios_RedTallGrass  0x25B
 
 // gTileset_Rustboro
 #define METATILE_Rustboro_Door_Gray  0x21F

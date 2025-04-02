@@ -1,0 +1,104 @@
+mapscripts WanderersWoods_South_MapScripts {}
+
+script WanderersWoods_S_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Wanderers' Woods - South\n A Land of Ancient Shadows\p {UP_ARROW} Jusmail Town\n Pythios Town {DOWN_ARROW}"))
+    closemessage
+    release
+    end
+}
+
+script WanderersWoods_S_EventScript_Trainer_WanderersWoods_S_Yamir
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_S_YAMIR, WanderersWoods_S_Text_Trainer_WanderersWoods_S_YamirIntro, WanderersWoods_S_Text_Trainer_WanderersWoods_S_YamirDefeat)
+    speakername("Yamir")
+    msgbox(format("I come into these woods to ponder. Seeing history and the power of time stirs something in me."))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_S_Text_Trainer_WanderersWoods_S_YamirIntro
+{
+    format("These overhead beam structures used to carry rainwater to other towns. Let's honor the past with a battle!")
+}
+text WanderersWoods_S_Text_Trainer_WanderersWoods_S_YamirDefeat
+{
+    format("Fallen to ruin, just as the aqueducts have.")
+}
+
+script WanderersWoods_S_EventScript_Trainer_WanderersWoods_S_Warren
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_S_WARREN, WanderersWoods_S_Text_Trainer_WanderersWoods_S_WarrenIntro, WanderersWoods_S_Text_Trainer_WanderersWoods_S_WarrenDefeat)
+    speakername("Warren")
+    msgbox(format("The Ilios Region is home to some of the oldest sports competitions in the world. I have to be ready to do my best!"))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_S_Text_Trainer_WanderersWoods_S_WarrenIntro
+{
+    format("I'm gonna ride across the entire Ilios Region!")
+}
+text WanderersWoods_S_Text_Trainer_WanderersWoods_S_WarrenDefeat
+{
+    format("I better ride down to a Pokémon Center.")
+}
+
+script WanderersWoods_S_EventScript_Trainer_WanderersWoods_S_Duncan
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_S_DUNCAN, WanderersWoods_S_Text_Trainer_WanderersWoods_S_DuncanIntro, WanderersWoods_S_Text_Trainer_WanderersWoods_S_DuncanDefeat)
+    speakername("Duncan")
+    msgbox(format("These ruins are an important part of the region's history. I don't want any wild Grafaiai or their Trainers touching them!"))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_S_Text_Trainer_WanderersWoods_S_DuncanIntro
+{
+    format("Halt! Don't despoil these ancient ruins!")
+}
+text WanderersWoods_S_Text_Trainer_WanderersWoods_S_DuncanDefeat
+{
+    format("My mistake, you may pass.")
+}
+
+script WanderersWoods_S_EventScript_Lass
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("The lands around Pythios Town have been inhabited for thousands of years. Some of these graves are so old, they're in a different language."))
+    closemessage
+    release
+    end
+}
+
+script WanderersWoods_S_EventScript_Trainer_WanderersWoods_S_Donna
+{
+    trainerbattle_single(TRAINER_WANDERERSWOODS_S_DONNA, WanderersWoods_S_Text_Trainer_WanderersWoods_S_DonnaIntro, WanderersWoods_S_Text_Trainer_WanderersWoods_S_DonnaDefeat)
+    speakername("Donna")
+    msgbox(format("Some people think it's creepy, but I think this is the prettiest place on the mainland. Nothing beats Myrrini Island, though!"))
+    closemessage
+    release
+    end
+}
+text WanderersWoods_S_Text_Trainer_WanderersWoods_S_DonnaIntro
+{
+    format("My hair looks great in the rain, don't you think?")
+}
+text WanderersWoods_S_Text_Trainer_WanderersWoods_S_DonnaDefeat
+{
+    format("It looks better than yours!")
+}
+
+script WanderersWoods_S_EventScript_LittleBoy
+{
+    lock
+    faceplayer
+    speakername("Little Boy")
+    msgbox(format("Some fence posts got put up along the tree lines here to keep people from getting lost! But when you get closer to Jusmail Town, the woods get a lot more confusing."))
+    closemessage
+    release
+    end
+}

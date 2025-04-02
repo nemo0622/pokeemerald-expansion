@@ -278,6 +278,8 @@ script AcrisiaCity_University_EventScript_Niko
         msgbox(format("Chaire, bud! I hear you beat Rania in Jusmail Town. After all the braggin' she did about her team, fwahaha!\p Ahem, hm. Getting the Harvest Badge is a big step for trainers in Ilios! Rania and I are thinking about doing it ourselves. Here's a little congratulatory gift from me!"))
         closemessage
         giveitem(ITEM_NEST_BALL, 3)
+        closemessage
+        delay(5)
         speakername("Niko")
         msgbox(format("Those Nest Balls are good for catching young, weak Pokémon. My studies say the inside of Nest Balls remind Pokémon of their home. Isn't that cute?\p {COLOR GREEN}Check back in{COLOR DARK_GRAY} as you {COLOR GREEN}defeat Pokémon Gyms{COLOR DARK_GRAY}, and I'll give you little gifts and tips."))
         closemessage
@@ -295,6 +297,8 @@ script AcrisiaCity_University_EventScript_Niko
         msgbox(format("Ehehe, looks like I beat you to Mattaios! We're all starting to be pretty strong trainers, huh?\p Ah, I worked on a new Poké Ball type. Give it a test for me!"))
         closemessage
         giveitem(ITEM_TIMER_BALL, 3)
+        closemessage
+        delay(5)
         speakername("Niko")
         msgbox(format("Those Timer Balls work better when a battle begins to drag on. Hopefully they help... help you catch up to me! Fwahaha!"))
         closemessage
@@ -311,6 +315,212 @@ script AcrisiaCity_University_EventScript_Niko
         speakername("Niko")
         msgbox(format("Welcome back, {PLAYER}. I hope that run-in with Team Chimera didn't rattle you too bad.\p The Ilios Region is mostly peaceful, but just like anywhere else, there are some people willing to do anything to gain power."))
         closemessage
+    }
+    elif(var(VAR_NIKO_STATE) == 6) // got Gym Badge 3
+    {
+        speakername("Niko")
+        msgbox(format("Oh, I see you've got the Gym Badge from Pythios Town! Was it worth visiting, even after all the commotion in Wanderer's Woods?\p Ah, yes, while I've got you here - I have a gift!"))
+        closemessage
+        giveitem(ITEM_WATER_TERA_SHARD)
+        closemessage
+        delay(5)
+        speakername("Niko")
+        msgbox(format("That's something called a {COLOR GREEN}Tera Shard{COLOR DARK_GRAY}. In the Paldea Region, where Terastallization comes from, these Tera Shards can be used to change a Pokémon's Tera Type.\p I took it from one of the Team Chimera Grunts in Wanderer's Woods while they ran. I wonder why they'd be collecting them..."))
+        closemessage
+        setvar(VAR_NIKO_STATE, 7)
+    }
+    elif(var(VAR_NIKO_STATE) == 7) // got gym badge 3, got gift
+    {
+        speakername("Niko")
+        msgbox(format("I'm still thinking about that {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} I gave you. Why would Team Chimera be collecting them?"))
+        closemessage
+    }
+    elif(var(VAR_NIKO_STATE) >= 8) // did Tera Orb quest
+    {
+        speakername("Niko")
+        message(format("Chaire, {PLAYER}! What brings you to my corner of the University?"))
+        waitmessage
+        multichoice(21, 5, MULTI_CHOOSE_NIKO_DIALOGUE, TRUE)
+        closemessage
+        delay(5)
+
+        if(var(VAR_RESULT) == 0) // chose Tera
+        {
+            speakername("Niko")
+            msgbox(format("Right, Terastallization! I've been doing more research on those {COLOR GREEN}Tera Shards{COLOR DARK_GRAY}, and I believe they allow Trainers to {COLOR GREEN}change a Pokémon's Tera type{COLOR DARK_GRAY}!\p Do you want me to change your Pokémon's Tera type?"), MSGBOX_YESNO)
+            closemessage
+            delay(5)
+            if(var(VAR_RESULT) == 0) // say no
+            {
+                speakername("Niko")
+                msgbox(format("Ehehe, no worries! Sometimes, a Pokémon's natural Tera type works best for it.\p In the future, bring me a {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} to change a Pokémon's Tera type!"))
+                closemessage
+                release
+                end
+            }
+            else // say yes
+            {
+                speakername("Niko")
+                msgbox(format("Yesss, alright, let's do this! First, what Pokémon do you want to use?"))
+                closemessage
+                delay(5)
+                special(ChoosePartyMon)
+                waitstate
+                copyvar(VAR_0x800A, VAR_0x8004) // stores chosen Pokémon in VAR_0x8004 i think
+                if(var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) // if didn't choose anything, end early
+                {
+                    speakername("Niko")
+                    msgbox(format("Changed your mind, eh? That's fine.\p In the future, bring me a {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} to change a Pokémon's Tera type!"))
+                    closemessage
+                    release
+                    end
+                }
+                speakername("Niko")
+                msgbox(format("Great! Now, what Tera Shard do you want to use? This will {COLOR GREEN}determine the Tera type of your Pokémon{COLOR DARK_GRAY}."))
+                closemessage
+                delay(5)
+                chooseitem(ITEMS_POCKET)
+                delay(5)
+
+                if(var(VAR_ITEM_ID) < ITEM_BUG_TERA_SHARD || var(VAR_ITEM_ID) > ITEM_WATER_TERA_SHARD) // if not a tera shard, end early
+                {
+                    speakername("Niko")
+                    msgbox(format("Umm... {PLAYER}, I hate to break it to you, but that's not a Tera Shard.\p Bring me a {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} if you want to change a Pokémon's Tera Type!"))
+                    closemessage
+                    release
+                    end
+                }
+
+                speakername("Niko")
+                msgbox(format("Okay, let's get started. Stand back, {PLAYER}!"))
+                closemessage
+                fadescreen(FADE_TO_BLACK)
+                delay(30)
+                playfanfare(MUS_LEVEL_UP)
+                waitfanfare
+                // change Tera type based on item chosen
+                // note: this is genuinely the least efficient way to code this. i dont care though im doing it at work
+                if(var(VAR_ITEM_ID) == ITEM_BUG_TERA_SHARD)
+                {
+                    setteratype(TYPE_BUG, VAR_0x8004)
+                    removeitem(ITEM_BUG_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_DARK_TERA_SHARD)
+                {
+                    setteratype(TYPE_DARK, VAR_0x8004)
+                    removeitem(ITEM_DARK_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_DRAGON_TERA_SHARD)
+                {
+                    setteratype(TYPE_DRAGON, VAR_0x8004)
+                    removeitem(ITEM_DRAGON_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_ELECTRIC_TERA_SHARD)
+                {
+                    setteratype(TYPE_ELECTRIC, VAR_0x8004)
+                    removeitem(ITEM_ELECTRIC_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_FAIRY_TERA_SHARD)
+                {
+                    setteratype(TYPE_FAIRY, VAR_0x8004)
+                    removeitem(ITEM_FAIRY_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_FIGHTING_TERA_SHARD)
+                {
+                    setteratype(TYPE_FIGHTING, VAR_0x8004)
+                    removeitem(ITEM_FIGHTING_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_FIRE_TERA_SHARD)
+                {
+                    setteratype(TYPE_FIRE, VAR_0x8004)
+                    removeitem(ITEM_FIRE_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_FLYING_TERA_SHARD)
+                {
+                    setteratype(TYPE_FLYING, VAR_0x8004)
+                    removeitem(ITEM_FLYING_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_GHOST_TERA_SHARD)
+                {
+                    setteratype(TYPE_GHOST, VAR_0x8004)
+                    removeitem(ITEM_GHOST_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_GRASS_TERA_SHARD)
+                {
+                    setteratype(TYPE_GRASS, VAR_0x8004)
+                    removeitem(ITEM_GRASS_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_GROUND_TERA_SHARD)
+                {
+                    setteratype(TYPE_GROUND, VAR_0x8004)
+                    removeitem(ITEM_GROUND_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_ICE_TERA_SHARD)
+                {
+                    setteratype(TYPE_ICE, VAR_0x8004)
+                    removeitem(ITEM_ICE_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_NORMAL_TERA_SHARD)
+                {
+                    setteratype(TYPE_NORMAL, VAR_0x8004)
+                    removeitem(ITEM_NORMAL_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_POISON_TERA_SHARD)
+                {
+                    setteratype(TYPE_POISON, VAR_0x8004)
+                    removeitem(ITEM_POISON_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_PSYCHIC_TERA_SHARD)
+                {
+                    setteratype(TYPE_PSYCHIC, VAR_0x8004)
+                    removeitem(ITEM_PSYCHIC_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_ROCK_TERA_SHARD)
+                {
+                    setteratype(TYPE_ROCK, VAR_0x8004)
+                    removeitem(ITEM_ROCK_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_STEEL_TERA_SHARD)
+                {
+                    setteratype(TYPE_STEEL, VAR_0x8004)
+                    removeitem(ITEM_STEEL_TERA_SHARD)
+                }
+                elif(var(VAR_ITEM_ID) == ITEM_WATER_TERA_SHARD)
+                {
+                    setteratype(TYPE_WATER, VAR_0x8004)
+                    removeitem(ITEM_WATER_TERA_SHARD)
+                }
+
+                delay(30)
+                fadescreen(FADE_FROM_BLACK)
+                delay(20)
+                speakername("Niko")
+                msgbox(format("Look at that, it was a complete success! You can check the Tera type of your Pokémon in their Summary Screen.\p Come back for more Tera type changes. Andio! See ya!"))
+                closemessage
+                release
+                end
+            }
+        }
+        elif(var(VAR_RESULT) == 1) // conversation
+        {
+            // ALL FUTURE VAR_NIKO_STATE DIALOGUE DOWN HERE!!!
+            if(var(VAR_NIKO_STATE) == 8)
+            {
+                speakername("Niko")
+                msgbox(format("Team Chimera chasing down Tera Orbs and Tera Shards is making me worried. There are already reports of Team Chimera stealing Pokémon, so if they're able to Terastallize, they could become even more threatening."))
+                closemessage
+                release
+                end
+            }
+        }
+        else // chose cancel probably
+        {
+            speakername("Niko")
+            msgbox(format("Come back with {COLOR GREEN}Tera Shards{COLOR DARK_GRAY} to change a Pokémon's Tera type. And hey, I've still got rewards and fun things to talk about, too!"))
+            closemessage
+            release
+            end
+        }
     }
     release
     end
@@ -338,6 +548,8 @@ script AcrisiaCity_University_EventScript_Rania
         msgbox(format("No way, you got the Gemstone Badge?! I haven't even gotten to the Acrisia Caverns yet!\p Yamas! Cheers! We have to celebrate your success somehow! I'll give you this, as a start."))
         closemessage
         giveitem(ITEM_WISHING_STAR, 2)
+        closemessage
+        delay(5)
         speakername("Rania")
         msgbox(format("Those Wishing Stars can be used at the Wishing Well in Jusmail Town. Old myths say that worthy trainers may earn something from it.\p Speaking of Jusmail Town, you should be able to get rid of those {COLOR GREEN}rocks blocking the path south{COLOR DARK_GRAY}! I'll be seeing you out there, {PLAYER}!"))
         closemessage
@@ -422,6 +634,8 @@ script AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs
         msgbox(format("No? Some research partner you are.\p I was gonna give you some good Poké balls, but now you're just getting these."))
         closemessage
         giveitem(ITEM_POKE_BALL, 3)
+        closemessage
+        delay(5)
         speakername("Niko")
         msgbox(format("A little disappointing, huh? Just like being forgotten about! Well, now we're even.\p Come back to the University as you catch more Pokémon. Rania and I can get you some neat stuff... if you remember me, that is."))
         closemessage
@@ -432,8 +646,11 @@ script AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs
         msgbox(format("Ehehe, I knew you were a real friend!\p I'm only supposed to give you a few Poké balls, but you made my day, so I'll make yours!"))
         closemessage
         giveitem(ITEM_POKE_BALL, 10)
+        closemessage
         delay(30)
         giveitem(ITEM_GREAT_BALL, 3)
+        closemessage
+        delay(5)
         speakername("Niko")
         msgbox(format("Use those Great Balls on Pokémon giving you a hard time! They work like a charm.\p Come back to the University as you fill up the Pokédex! Rania and I might have some new gear for you to try out."))
         closemessage
@@ -535,6 +752,8 @@ script AcrisiaCity_University_EventScript_EliaRatePokedex
         msgbox(format("You've captured at least 10 unique Pokémon! You're certainly capable, {PLAYER}. Here's your first progress reward!"))
         closemessage
         giveitem(ITEM_NUGGET)
+        closemessage
+        delay(5)
         speakername("Prof. Elia")
         msgbox(format("That Nugget can be sold for a pretty penny! It should help fund your studies. As you catch more Pokémon, I'll have more for you."))
         closemessage
@@ -546,6 +765,8 @@ script AcrisiaCity_University_EventScript_EliaRatePokedex
         msgbox(format("You've captured at least 25 unique Pokémon! Great job, {PLAYER}! Here's a nice new item."))
         closemessage
         giveitem(ITEM_LOADED_DICE)
+        closemessage
+        delay(5)
         speakername("Prof. Elia")
         msgbox(format("Pokémon holding the Loaded Dice will be able to land multi-hit attacks more times in a row! As you catch more Pokémon, I'll have more for you."))
         closemessage
@@ -557,6 +778,8 @@ script AcrisiaCity_University_EventScript_EliaRatePokedex
         msgbox(format("You've captured at least 50 unique Pokémon! Great job, {PLAYER}! Here's a nice new item."))
         closemessage
         giveitem(ITEM_TM_RETURN)
+        closemessage
+        delay(5)
         speakername("Prof. Elia")
         msgbox(format("That move, Return, gets more powerful the more your Pokémon like you! As you catch more Pokémon, I'll have more for you."))
         closemessage
@@ -631,6 +854,8 @@ script AcrisiaCity_University_EventScript_EliaRatePokedex
         msgbox(format("You've captured at least 200 unique Pokémon! Great job, {PLAYER}! Here's a nice new item."))
         closemessage
         giveitem(ITEM_OVAL_CHARM)
+        closemessage
+        delay(5)
         speakername("Prof. Elia")
         msgbox(format("The Oval Charm increases the odds of Pokémon laying Eggs, which is key to our research!\p You've recorded half of the estimated native Pokémon species in the Ilios Region! As you catch more Pokémon, I'll have more for you."))
         closemessage
@@ -642,6 +867,8 @@ script AcrisiaCity_University_EventScript_EliaRatePokedex
         msgbox(format("You've captured at least 250 unique Pokémon! Great job, {PLAYER}! Here's a nice new item."))
         closemessage
         giveitem(ITEM_LEFTOVERS, 3)
+        closemessage
+        delay(5)
         speakername("Prof. Elia")
         msgbox(format("Those are 3 Leftovers items, which let your Pokémon regain health every turn during battle.\p As you catch more Pokémon, I'll have more for you."))
         closemessage
@@ -653,6 +880,8 @@ script AcrisiaCity_University_EventScript_EliaRatePokedex
         msgbox(format("You've captured at least 300 unique Pokémon! Great job, {PLAYER}! Here's a nice new item."))
         closemessage
         giveitem(ITEM_SHINY_CHARM)
+        closemessage
+        delay(5)
         speakername("Prof. Elia")
         msgbox(format("The Shiny Charm drastically increases the chances of finding wild Shiny Pokémon. While you continue to complete the Pokédex, maybe you'll get lucky and find one!\p As you catch more Pokémon, I'll have more for you. You're almost done!"))
         closemessage
@@ -734,8 +963,12 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
             msgbox(format("Ah, speaking of electronics, here's an {COLOR GREEN}EXP. Share{COLOR DARK_GRAY} to help raise your Pokémon faster. I'll give you a Town Map, too."))
             closemessage
             giveitem(ITEM_EXP_SHARE)
+            closemessage
+            delay(5)
             setflag(FLAG_EXP_SHARE_ENABLED)
             giveitem(ITEM_TOWN_MAP)
+            closemessage
+            delay(5)
             speakername("Prof. Elia")
             msgbox(format("I think it's a good idea to train your Pokémon for battle, in case more troublemakers come around. Why don't you {COLOR GREEN}battle the Pokémon Gyms{COLOR DARK_GRAY} you find while you're exploring the Ilios Region? That'll get your Pokémon raring to go!"))
             closemessage
@@ -779,6 +1012,8 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeOne
         msgbox(format("Well done! You're well on your way to being a great trainer.\p Here, I wanted to give you something to celebrate!"))
         closemessage
         giveitem(ITEM_ABILITY_CAPSULE)
+        closemessage
+        delay(5)
         speakername("Prof. Elia")
         msgbox(format("That's an Ability Capsule. It can change the Ability of a Pokémon, which can make it totally different in battle!\p Look, I know I've been sending you back and forth a bunch, but I think I've got a good idea. You should head {COLOR GREEN}west{COLOR DARK_GRAY} from here, up into the {COLOR GREEN}Acrisia Mountains{COLOR DARK_GRAY} for extra training.\p After your training, or if you just feel ready, you can {COLOR GREEN}cross the rail bridge{COLOR DARK_GRAY} over Acrisia City to the east towards {COLOR GREEN}Kalami City{COLOR DARK_GRAY}. Your next Gym Badge will be there. Be sure to come back to Acrisia City after your fight!"))
         closemessage
@@ -816,6 +1051,8 @@ script AcrisiaCity_University_EventScript_EliaCheckBadgeTwo
         msgbox(format("Incredible! You're becoming a great Pokémon trainer. As promised, here's something exciting for you!"))
         closemessage
         giveitem(ITEM_HM_ROCK_SMASH)
+        closemessage
+        delay(5)
         speakername("Prof. Elia")
         msgbox(format("Oh right, another thing! I ordered an upgrade for your Pokédex."))
         closemessage

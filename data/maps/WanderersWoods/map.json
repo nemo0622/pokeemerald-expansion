@@ -14,7 +14,7 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_PYTHIOS_TOWN",
+      "map": "MAP_WANDERERS_WOODS_SOUTH",
       "offset": 0,
       "direction": "down"
     }
@@ -427,6 +427,13 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WanderersWoods_EventScript_DirectionSign"
+    }
   ]
 }

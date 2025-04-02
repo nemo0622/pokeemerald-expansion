@@ -20,6 +20,15 @@ mapscripts RiverwalkTrail_West_MapScripts {
     }
 }
 
+script RiverwalkTrail_West_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Riverwalk Trail - West\n The Steep Hiking Trail\p {LEFT_ARROW} Acrisia City\n Riverwalk Trail - South {DOWN_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script RiverwalkTrail_West_EventScript_ManCrossedBridge
 {
     lock

@@ -29,6 +29,15 @@ script ErinysPath_West_SignBlockingDemoProgress
     end
 }
 
+script ErinysPath_West_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Erinys Path - East\n Where Winter Winds Rise\p {LEFT_ARROW} Erinys Path - West\n Froslass Cavern {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script ErinysPath_West_EventScript_FatMan
 {
     lock

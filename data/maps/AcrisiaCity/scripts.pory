@@ -63,6 +63,15 @@ script AcrisiaCity_DemoWarning
     end
 }
 
+script AcrisiaCity_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Acrisia City\n The Heart of Ilian Learning\p {LEFT_ARROW} Acrisia Mountains\n Riverwalk Trail {RIGHT_ARROW}\n {DOWN_ARROW} Bronze Fields - North"))
+    closemessage
+    release
+    end
+}
+
 script AcrisiaCity_EventScript_PlayerExitsTruck
 {
     setvar(VAR_INTRO_STATE, 1)

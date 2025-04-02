@@ -1,0 +1,69 @@
+mapscripts AsfalHills_House2_MapScripts {}
+
+script AsfalHills_House2_BlackBelt
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    msgbox(format("I come here to read after I finish my daily training session. It helps me calm down."))
+    closemessage
+    release
+    end
+}
+
+script AsfalHills_House2_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+    msgbox(format("Books about Pokémon types, evolution methods, and movesets... but not much on their ecology. There are still so many gaps in our knowledge."))
+    closemessage
+    release
+    end
+}
+
+script AsfalHills_House2_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    if(flag(FLAG_GOT_YELLOW_NECTAR_ASFAL_HOUSE))
+    {
+        msgbox(format("I think that Yellow Nectar is special somehow. It made my hair stand up from static electricity!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("We just got back from a picnic date! I found this while we were out. I got a bunch of it, so here's a bit for you!"))
+        closemessage
+        giveitem(ITEM_YELLOW_NECTAR)
+        setflag(FLAG_GOT_YELLOW_NECTAR_ASFAL_HOUSE)
+    }
+    applymovement(3, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script AsfalHills_House2_Boy
+{
+    lock
+    faceplayer
+    speakername("Boy")
+    if(flag(FLAG_GOT_PINK_NECTAR_ASFAL_HOUSE))
+    {
+        msgbox(format("I swear, that Pink Nectar is something special! It had a weird aura around it... or maybe I just have allergies, ehehe."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("It's so nice having a public library open for everyone like this. My girlfriend found some of this nectar while we were out, so we're reading about what it might be. Maybe you can figure it out!"))
+        closemessage
+        giveitem(ITEM_PINK_NECTAR)
+        setflag(FLAG_GOT_PINK_NECTAR_ASFAL_HOUSE)
+    }
+    applymovement(4, Common_Movement_FaceLeft)
+    waitmovement(0)
+    release
+    end
+}

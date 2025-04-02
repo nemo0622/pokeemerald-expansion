@@ -828,7 +828,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Energy Powder"),
         .pluralName = _("Energy Powder"),
-        .price = 500,
+        .price = 350,
         .description = COMPOUND_STRING(
             "A bitter powder\n"
             "that restores HP\n"
@@ -850,7 +850,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ENERGY_ROOT] =
     {
         .name = _("Energy Root"),
-        .price = (I_PRICE >= GEN_7) ? 1200 : 800,
+        .price = 800,
         .description = COMPOUND_STRING(
             "A bitter root\n"
             "that restores HP\n"
@@ -891,7 +891,7 @@ const struct Item gItemsInfo[] =
     [ITEM_REVIVAL_HERB] =
     {
         .name = _("Revival Herb"),
-        .price = 2800,
+        .price = 1400,
         .description = COMPOUND_STRING(
             "A very bitter herb\n"
             "that revives a\n"
@@ -8994,7 +8994,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TERRAIN_EXTENDER] =
     {
         .name = HANDLE_EXPANDED_ITEM_NAME("TerainExtendr", "Terrain Extender"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : 4000,
+        .price = 8000,
         .holdEffect = HOLD_EFFECT_TERRAIN_EXTENDER,
         .description = COMPOUND_STRING(
             "Extends the length\n"
@@ -12799,9 +12799,9 @@ const struct Item gItemsInfo[] =
         .name = _("Parcel"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A parcel for the\n"
-            "University. Holds\n"
-            "something important!"),
+            "A parcel for\n"
+            "someone. It holds\n"
+            "something special!"),
         .importance = 2,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

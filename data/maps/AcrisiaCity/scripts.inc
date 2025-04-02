@@ -88,173 +88,144 @@ AcrisiaCity_DemoWarning::
 	end
 
 
-AcrisiaCity_EventScript_PlayerExitsTruck::
+AcrisiaCity_EventScript_DirectionSign::
 # 68 "data/maps/AcrisiaCity/scripts.pory"
-	setvar VAR_INTRO_STATE, 1
+	lock
 # 69 "data/maps/AcrisiaCity/scripts.pory"
-	setflag FLAG_HIDE_SECOND_PROFESSOR_SPRITE
+	msgbox AcrisiaCity_EventScript_DirectionSign_Text_0
 # 70 "data/maps/AcrisiaCity/scripts.pory"
-	lockall
-# 71 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerOffTruck
-# 72 "data/maps/AcrisiaCity/scripts.pory"
-	waitmovement 0
-# 75 "data/maps/AcrisiaCity/scripts.pory"
-	playse SE_PIN
-# 76 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement 12, Common_Movement_ExclamationMark
-# 77 "data/maps/AcrisiaCity/scripts.pory"
-	waitmovement 0
-# 78 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_PlayerExitsTruck_Text_0
-# 79 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_PlayerExitsTruck_Text_1
-# 80 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 83 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 71 "data/maps/AcrisiaCity/scripts.pory"
+	release
+	end
+
+
+AcrisiaCity_EventScript_PlayerExitsTruck::
+# 77 "data/maps/AcrisiaCity/scripts.pory"
+	setvar VAR_INTRO_STATE, 1
+# 78 "data/maps/AcrisiaCity/scripts.pory"
+	setflag FLAG_HIDE_SECOND_PROFESSOR_SPRITE
+# 79 "data/maps/AcrisiaCity/scripts.pory"
+	lockall
+# 80 "data/maps/AcrisiaCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerOffTruck
+# 81 "data/maps/AcrisiaCity/scripts.pory"
+	waitmovement 0
 # 84 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement 12, AcrisiaCity_Movement_ProfGetsAbovePlayer
+	playse SE_PIN
 # 85 "data/maps/AcrisiaCity/scripts.pory"
-	waitmovement 0
+	applymovement 12, Common_Movement_ExclamationMark
 # 86 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement 12, AcrisiaCity_Movement_ProfWalksPlayerToUniversity_1
-# 87 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerFollowsProfToUniversity_1
-# 88 "data/maps/AcrisiaCity/scripts.pory"
 	waitmovement 0
-# 89 "data/maps/AcrisiaCity/scripts.pory"
+# 87 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_PlayerExitsTruck_Text_0
-# 90 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_PlayerExitsTruck_Text_2
-# 91 "data/maps/AcrisiaCity/scripts.pory"
+# 88 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox AcrisiaCity_EventScript_PlayerExitsTruck_Text_1
+# 89 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
 # 92 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement 12, AcrisiaCity_Movement_ProfWalksPlayerToUniversity_2
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 # 93 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerFollowsProfToUniversity_2
+	applymovement 12, AcrisiaCity_Movement_ProfGetsAbovePlayer
 # 94 "data/maps/AcrisiaCity/scripts.pory"
 	waitmovement 0
+# 95 "data/maps/AcrisiaCity/scripts.pory"
+	applymovement 12, AcrisiaCity_Movement_ProfWalksPlayerToUniversity_1
 # 96 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement 12, Common_Movement_ExclamationMark
+	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerFollowsProfToUniversity_1
 # 97 "data/maps/AcrisiaCity/scripts.pory"
 	waitmovement 0
 # 98 "data/maps/AcrisiaCity/scripts.pory"
-	delay 15
+	speakername AcrisiaCity_EventScript_PlayerExitsTruck_Text_0
 # 99 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement 18, AcrisiaCity_Movement_ShroomishRunFromProf
+	msgbox AcrisiaCity_EventScript_PlayerExitsTruck_Text_2
 # 100 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement 29, AcrisiaCity_Movement_DucklettRunFromProf
+	closemessage
 # 101 "data/maps/AcrisiaCity/scripts.pory"
-	waitmovement 0
+	applymovement 12, AcrisiaCity_Movement_ProfWalksPlayerToUniversity_2
+# 102 "data/maps/AcrisiaCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerFollowsProfToUniversity_2
 # 103 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement 12, Common_Movement_FaceLeft
-# 104 "data/maps/AcrisiaCity/scripts.pory"
 	waitmovement 0
 # 105 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_PlayerExitsTruck_Text_0
+	applymovement 12, Common_Movement_ExclamationMark
 # 106 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_PlayerExitsTruck_Text_3
+	waitmovement 0
 # 107 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
+	delay 15
 # 108 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement 12, AcrisiaCity_Movement_ProfWalksPlayerToUniversity_3
+	applymovement 18, AcrisiaCity_Movement_ShroomishRunFromProf
 # 109 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerFollowsProfToUniversity_3
+	applymovement 29, AcrisiaCity_Movement_DucklettRunFromProf
 # 110 "data/maps/AcrisiaCity/scripts.pory"
 	waitmovement 0
 # 112 "data/maps/AcrisiaCity/scripts.pory"
-	hideobjectat 12, MAP_ACRISIA_CITY
-# 114 "data/maps/AcrisiaCity/scripts.pory"
-	setflag FLAG_HIDE_INTRO_TRUCK
-# 115 "data/maps/AcrisiaCity/scripts.pory"
-	setflag FLAG_HIDE_STARTING_POKEMON
-# 117 "data/maps/AcrisiaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
-# 118 "data/maps/AcrisiaCity/scripts.pory"
+	applymovement 12, Common_Movement_FaceLeft
+# 113 "data/maps/AcrisiaCity/scripts.pory"
 	waitmovement 0
+# 114 "data/maps/AcrisiaCity/scripts.pory"
+	speakername AcrisiaCity_EventScript_PlayerExitsTruck_Text_0
+# 115 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox AcrisiaCity_EventScript_PlayerExitsTruck_Text_3
+# 116 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 117 "data/maps/AcrisiaCity/scripts.pory"
+	applymovement 12, AcrisiaCity_Movement_ProfWalksPlayerToUniversity_3
+# 118 "data/maps/AcrisiaCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_Movement_PlayerFollowsProfToUniversity_3
 # 119 "data/maps/AcrisiaCity/scripts.pory"
-	setflag FLAG_HIDE_MAP_NAME_POPUP
-# 120 "data/maps/AcrisiaCity/scripts.pory"
-	warpsilent MAP_ACRISIA_CITY_UNIVERSITY, 10, 19
+	waitmovement 0
 # 121 "data/maps/AcrisiaCity/scripts.pory"
-	waitstate
+	hideobjectat 12, MAP_ACRISIA_CITY
 # 123 "data/maps/AcrisiaCity/scripts.pory"
+	setflag FLAG_HIDE_INTRO_TRUCK
+# 124 "data/maps/AcrisiaCity/scripts.pory"
+	setflag FLAG_HIDE_STARTING_POKEMON
+# 126 "data/maps/AcrisiaCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+# 127 "data/maps/AcrisiaCity/scripts.pory"
+	waitmovement 0
+# 128 "data/maps/AcrisiaCity/scripts.pory"
+	setflag FLAG_HIDE_MAP_NAME_POPUP
+# 129 "data/maps/AcrisiaCity/scripts.pory"
+	warpsilent MAP_ACRISIA_CITY_UNIVERSITY, 10, 19
+# 130 "data/maps/AcrisiaCity/scripts.pory"
+	waitstate
+# 132 "data/maps/AcrisiaCity/scripts.pory"
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
-# 125 "data/maps/AcrisiaCity/scripts.pory"
+# 134 "data/maps/AcrisiaCity/scripts.pory"
 	releaseall
 	end
 
 
-# 129 "data/maps/AcrisiaCity/scripts.pory"
+# 138 "data/maps/AcrisiaCity/scripts.pory"
 AcrisiaCity_Movement_PlayerOffTruck:
-# 131 "data/maps/AcrisiaCity/scripts.pory"
-	jump_right
-# 132 "data/maps/AcrisiaCity/scripts.pory"
-	delay_16
-# 133 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 134 "data/maps/AcrisiaCity/scripts.pory"
-	step_end
-
-# 137 "data/maps/AcrisiaCity/scripts.pory"
-AcrisiaCity_Movement_ProfGetsAbovePlayer:
-# 139 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
 # 140 "data/maps/AcrisiaCity/scripts.pory"
-	walk_left
+	jump_right
 # 141 "data/maps/AcrisiaCity/scripts.pory"
-	face_down
-# 142 "data/maps/AcrisiaCity/scripts.pory"
 	delay_16
 # 142 "data/maps/AcrisiaCity/scripts.pory"
-	delay_16
+	walk_right
 # 143 "data/maps/AcrisiaCity/scripts.pory"
 	step_end
 
 # 146 "data/maps/AcrisiaCity/scripts.pory"
-AcrisiaCity_Movement_ProfWalksPlayerToUniversity_1:
-# 148 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 148 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 148 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 148 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 148 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
+AcrisiaCity_Movement_ProfGetsAbovePlayer:
 # 148 "data/maps/AcrisiaCity/scripts.pory"
 	walk_up
 # 149 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 149 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 149 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 149 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 149 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
+	walk_left
 # 150 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 150 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 150 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 150 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 150 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 151 "data/maps/AcrisiaCity/scripts.pory"
 	face_down
+# 151 "data/maps/AcrisiaCity/scripts.pory"
+	delay_16
+# 151 "data/maps/AcrisiaCity/scripts.pory"
+	delay_16
 # 152 "data/maps/AcrisiaCity/scripts.pory"
 	step_end
 
 # 155 "data/maps/AcrisiaCity/scripts.pory"
-AcrisiaCity_Movement_PlayerFollowsProfToUniversity_1:
-# 157 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
+AcrisiaCity_Movement_ProfWalksPlayerToUniversity_1:
 # 157 "data/maps/AcrisiaCity/scripts.pory"
 	walk_up
 # 157 "data/maps/AcrisiaCity/scripts.pory"
@@ -277,6 +248,8 @@ AcrisiaCity_Movement_PlayerFollowsProfToUniversity_1:
 	walk_right
 # 158 "data/maps/AcrisiaCity/scripts.pory"
 	walk_right
+# 159 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
 # 159 "data/maps/AcrisiaCity/scripts.pory"
 	walk_up
 # 159 "data/maps/AcrisiaCity/scripts.pory"
@@ -286,12 +259,12 @@ AcrisiaCity_Movement_PlayerFollowsProfToUniversity_1:
 # 159 "data/maps/AcrisiaCity/scripts.pory"
 	walk_up
 # 160 "data/maps/AcrisiaCity/scripts.pory"
-	face_up
+	face_down
 # 161 "data/maps/AcrisiaCity/scripts.pory"
 	step_end
 
 # 164 "data/maps/AcrisiaCity/scripts.pory"
-AcrisiaCity_Movement_ProfWalksPlayerToUniversity_2:
+AcrisiaCity_Movement_PlayerFollowsProfToUniversity_1:
 # 166 "data/maps/AcrisiaCity/scripts.pory"
 	walk_up
 # 166 "data/maps/AcrisiaCity/scripts.pory"
@@ -306,32 +279,6 @@ AcrisiaCity_Movement_ProfWalksPlayerToUniversity_2:
 	walk_up
 # 166 "data/maps/AcrisiaCity/scripts.pory"
 	walk_up
-# 166 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 166 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 167 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
 # 167 "data/maps/AcrisiaCity/scripts.pory"
 	walk_right
 # 167 "data/maps/AcrisiaCity/scripts.pory"
@@ -343,413 +290,478 @@ AcrisiaCity_Movement_ProfWalksPlayerToUniversity_2:
 # 167 "data/maps/AcrisiaCity/scripts.pory"
 	walk_right
 # 168 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 168 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 168 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 168 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 169 "data/maps/AcrisiaCity/scripts.pory"
+	face_up
+# 170 "data/maps/AcrisiaCity/scripts.pory"
 	step_end
 
-# 171 "data/maps/AcrisiaCity/scripts.pory"
-AcrisiaCity_Movement_PlayerFollowsProfToUniversity_2:
 # 173 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 173 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 173 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 173 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 173 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 173 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 173 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 173 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 173 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 173 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 174 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
+AcrisiaCity_Movement_ProfWalksPlayerToUniversity_2:
 # 175 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 175 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 175 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 175 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 175 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 175 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 175 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 175 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 175 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 176 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 177 "data/maps/AcrisiaCity/scripts.pory"
 	step_end
 
-# 178 "data/maps/AcrisiaCity/scripts.pory"
-AcrisiaCity_Movement_ShroomishRunFromProf:
 # 180 "data/maps/AcrisiaCity/scripts.pory"
-	emote_exclamation_mark
-# 181 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
+AcrisiaCity_Movement_PlayerFollowsProfToUniversity_2:
 # 182 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 182 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 182 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 182 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 182 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 182 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 182 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 182 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 182 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 182 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 183 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 184 "data/maps/AcrisiaCity/scripts.pory"
 	step_end
 
-# 185 "data/maps/AcrisiaCity/scripts.pory"
-AcrisiaCity_Movement_DucklettRunFromProf:
 # 187 "data/maps/AcrisiaCity/scripts.pory"
+AcrisiaCity_Movement_ShroomishRunFromProf:
+# 189 "data/maps/AcrisiaCity/scripts.pory"
 	emote_exclamation_mark
-# 188 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_up
-# 188 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_up
-# 189 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_right
-# 189 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_right
+# 190 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
+# 190 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
+# 190 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
+# 190 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
+# 190 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
 # 190 "data/maps/AcrisiaCity/scripts.pory"
 	walk_fast_down
 # 190 "data/maps/AcrisiaCity/scripts.pory"
 	walk_fast_down
 # 191 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_left
-# 192 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 192 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 192 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 192 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 192 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 192 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 192 "data/maps/AcrisiaCity/scripts.pory"
-	walk_fast_down
-# 193 "data/maps/AcrisiaCity/scripts.pory"
 	step_end
 
+# 194 "data/maps/AcrisiaCity/scripts.pory"
+AcrisiaCity_Movement_DucklettRunFromProf:
 # 196 "data/maps/AcrisiaCity/scripts.pory"
-AcrisiaCity_Movement_ProfWalksPlayerToUniversity_3:
+	emote_exclamation_mark
+# 197 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_up
+# 197 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_up
 # 198 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
+	walk_fast_right
 # 198 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 198 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
+	walk_fast_right
 # 199 "data/maps/AcrisiaCity/scripts.pory"
-	face_left
+	walk_fast_down
+# 199 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
 # 200 "data/maps/AcrisiaCity/scripts.pory"
-	delay_16
-# 200 "data/maps/AcrisiaCity/scripts.pory"
-	delay_16
-# 200 "data/maps/AcrisiaCity/scripts.pory"
-	delay_16
+	walk_fast_left
 # 201 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
+	walk_fast_down
+# 201 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
+# 201 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
+# 201 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
+# 201 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
+# 201 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
+# 201 "data/maps/AcrisiaCity/scripts.pory"
+	walk_fast_down
 # 202 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 202 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 202 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 202 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 202 "data/maps/AcrisiaCity/scripts.pory"
-	walk_up
-# 203 "data/maps/AcrisiaCity/scripts.pory"
 	step_end
 
-# 206 "data/maps/AcrisiaCity/scripts.pory"
-AcrisiaCity_Movement_PlayerFollowsProfToUniversity_3:
-# 208 "data/maps/AcrisiaCity/scripts.pory"
+# 205 "data/maps/AcrisiaCity/scripts.pory"
+AcrisiaCity_Movement_ProfWalksPlayerToUniversity_3:
+# 207 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 207 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 207 "data/maps/AcrisiaCity/scripts.pory"
 	walk_right
 # 208 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
-# 208 "data/maps/AcrisiaCity/scripts.pory"
-	walk_right
+	face_left
 # 209 "data/maps/AcrisiaCity/scripts.pory"
-	face_down
+	delay_16
+# 209 "data/maps/AcrisiaCity/scripts.pory"
+	delay_16
+# 209 "data/maps/AcrisiaCity/scripts.pory"
+	delay_16
 # 210 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 211 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 211 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 211 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 211 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 211 "data/maps/AcrisiaCity/scripts.pory"
+	walk_up
+# 212 "data/maps/AcrisiaCity/scripts.pory"
+	step_end
+
+# 215 "data/maps/AcrisiaCity/scripts.pory"
+AcrisiaCity_Movement_PlayerFollowsProfToUniversity_3:
+# 217 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 217 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 217 "data/maps/AcrisiaCity/scripts.pory"
+	walk_right
+# 218 "data/maps/AcrisiaCity/scripts.pory"
+	face_down
+# 219 "data/maps/AcrisiaCity/scripts.pory"
 	emote_heart
-# 211 "data/maps/AcrisiaCity/scripts.pory"
+# 220 "data/maps/AcrisiaCity/scripts.pory"
 	delay_16
-# 211 "data/maps/AcrisiaCity/scripts.pory"
+# 220 "data/maps/AcrisiaCity/scripts.pory"
 	delay_16
-# 211 "data/maps/AcrisiaCity/scripts.pory"
+# 220 "data/maps/AcrisiaCity/scripts.pory"
 	delay_16
-# 212 "data/maps/AcrisiaCity/scripts.pory"
+# 221 "data/maps/AcrisiaCity/scripts.pory"
 	walk_right
-# 212 "data/maps/AcrisiaCity/scripts.pory"
+# 221 "data/maps/AcrisiaCity/scripts.pory"
 	walk_right
-# 213 "data/maps/AcrisiaCity/scripts.pory"
+# 222 "data/maps/AcrisiaCity/scripts.pory"
 	walk_up
-# 213 "data/maps/AcrisiaCity/scripts.pory"
+# 222 "data/maps/AcrisiaCity/scripts.pory"
 	walk_up
-# 213 "data/maps/AcrisiaCity/scripts.pory"
+# 222 "data/maps/AcrisiaCity/scripts.pory"
 	walk_up
-# 213 "data/maps/AcrisiaCity/scripts.pory"
+# 222 "data/maps/AcrisiaCity/scripts.pory"
 	walk_up
-# 214 "data/maps/AcrisiaCity/scripts.pory"
+# 223 "data/maps/AcrisiaCity/scripts.pory"
 	step_end
 
 AcrisiaCity_EventScript_LadyByWater::
-# 222 "data/maps/AcrisiaCity/scripts.pory"
+# 231 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 223 "data/maps/AcrisiaCity/scripts.pory"
+# 232 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 224 "data/maps/AcrisiaCity/scripts.pory"
+# 233 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
-# 225 "data/maps/AcrisiaCity/scripts.pory"
+# 234 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_LadyByWater_Text_1
-# 226 "data/maps/AcrisiaCity/scripts.pory"
+# 235 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 228 "data/maps/AcrisiaCity/scripts.pory"
+# 237 "data/maps/AcrisiaCity/scripts.pory"
 	goto_if_unset FLAG_GOT_EVIOLITE_ACRISIA_CITY, AcrisiaCity_EventScript_LadyByWater_2
-# 265 "data/maps/AcrisiaCity/scripts.pory"
+# 274 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
-# 266 "data/maps/AcrisiaCity/scripts.pory"
+# 275 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_LadyByWater_Text_6
-# 267 "data/maps/AcrisiaCity/scripts.pory"
+# 276 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
 AcrisiaCity_EventScript_LadyByWater_1:
-# 270 "data/maps/AcrisiaCity/scripts.pory"
+# 279 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 AcrisiaCity_EventScript_LadyByWater_2:
-# 230 "data/maps/AcrisiaCity/scripts.pory"
+# 239 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
-# 231 "data/maps/AcrisiaCity/scripts.pory"
+# 240 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_LadyByWater_Text_2
-# 233 "data/maps/AcrisiaCity/scripts.pory"
+# 242 "data/maps/AcrisiaCity/scripts.pory"
 	getcaughtmon SPECIES_TOGEPI
-# 234 "data/maps/AcrisiaCity/scripts.pory"
+# 243 "data/maps/AcrisiaCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AcrisiaCity_EventScript_LadyByWater_5
-# 249 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
-# 250 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_LadyByWater_Text_4
-# 251 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
-# 252 "data/maps/AcrisiaCity/scripts.pory"
-	giveitem ITEM_EVIOLITE
-# 253 "data/maps/AcrisiaCity/scripts.pory"
-	setflag FLAG_GOT_EVIOLITE_ACRISIA_CITY
-# 254 "data/maps/AcrisiaCity/scripts.pory"
-	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
-# 255 "data/maps/AcrisiaCity/scripts.pory"
-	msgbox AcrisiaCity_EventScript_LadyByWater_Text_5
-# 256 "data/maps/AcrisiaCity/scripts.pory"
-	closemessage
 # 258 "data/maps/AcrisiaCity/scripts.pory"
-	delay 20
+	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
 # 259 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox AcrisiaCity_EventScript_LadyByWater_Text_4
+# 260 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 261 "data/maps/AcrisiaCity/scripts.pory"
+	giveitem ITEM_EVIOLITE
+# 262 "data/maps/AcrisiaCity/scripts.pory"
+	setflag FLAG_GOT_EVIOLITE_ACRISIA_CITY
+# 263 "data/maps/AcrisiaCity/scripts.pory"
+	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
+# 264 "data/maps/AcrisiaCity/scripts.pory"
+	msgbox AcrisiaCity_EventScript_LadyByWater_Text_5
+# 265 "data/maps/AcrisiaCity/scripts.pory"
+	closemessage
+# 267 "data/maps/AcrisiaCity/scripts.pory"
+	delay 20
+# 268 "data/maps/AcrisiaCity/scripts.pory"
 	completequest QUEST_TOGEPI_EVIOLITE
 	goto AcrisiaCity_EventScript_LadyByWater_1
 
 AcrisiaCity_EventScript_LadyByWater_5:
-# 236 "data/maps/AcrisiaCity/scripts.pory"
+# 245 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_LadyByWater_Text_0
-# 237 "data/maps/AcrisiaCity/scripts.pory"
+# 246 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_LadyByWater_Text_3
-# 238 "data/maps/AcrisiaCity/scripts.pory"
+# 247 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 240 "data/maps/AcrisiaCity/scripts.pory"
+# 249 "data/maps/AcrisiaCity/scripts.pory"
 	delay 20
-# 241 "data/maps/AcrisiaCity/scripts.pory"
+# 250 "data/maps/AcrisiaCity/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_TOGEPI_EVIOLITE
-# 242 "data/maps/AcrisiaCity/scripts.pory"
+# 251 "data/maps/AcrisiaCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AcrisiaCity_EventScript_LadyByWater_8
 	goto AcrisiaCity_EventScript_LadyByWater_1
 
 AcrisiaCity_EventScript_LadyByWater_8:
-# 244 "data/maps/AcrisiaCity/scripts.pory"
+# 253 "data/maps/AcrisiaCity/scripts.pory"
 	startquest QUEST_TOGEPI_EVIOLITE
 	goto AcrisiaCity_EventScript_LadyByWater_1
 
 
 AcrisiaCity_EventScript_Woman2::
-# 276 "data/maps/AcrisiaCity/scripts.pory"
+# 285 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 277 "data/maps/AcrisiaCity/scripts.pory"
+# 286 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 278 "data/maps/AcrisiaCity/scripts.pory"
+# 287 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_Woman2_Text_0
-# 279 "data/maps/AcrisiaCity/scripts.pory"
+# 288 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_Woman2_Text_1
-# 280 "data/maps/AcrisiaCity/scripts.pory"
+# 289 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 281 "data/maps/AcrisiaCity/scripts.pory"
+# 290 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_Camper::
-# 287 "data/maps/AcrisiaCity/scripts.pory"
+# 296 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 288 "data/maps/AcrisiaCity/scripts.pory"
+# 297 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 289 "data/maps/AcrisiaCity/scripts.pory"
+# 298 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_Camper_Text_0
-# 290 "data/maps/AcrisiaCity/scripts.pory"
+# 299 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_Camper_Text_1
-# 291 "data/maps/AcrisiaCity/scripts.pory"
+# 300 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 292 "data/maps/AcrisiaCity/scripts.pory"
+# 301 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_NinjaBoy::
-# 298 "data/maps/AcrisiaCity/scripts.pory"
+# 307 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 299 "data/maps/AcrisiaCity/scripts.pory"
+# 308 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 300 "data/maps/AcrisiaCity/scripts.pory"
+# 309 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_NinjaBoy_Text_0
-# 301 "data/maps/AcrisiaCity/scripts.pory"
+# 310 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_NinjaBoy_Text_1
-# 302 "data/maps/AcrisiaCity/scripts.pory"
+# 311 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 303 "data/maps/AcrisiaCity/scripts.pory"
+# 312 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_RailMan::
-# 309 "data/maps/AcrisiaCity/scripts.pory"
+# 318 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 310 "data/maps/AcrisiaCity/scripts.pory"
+# 319 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 311 "data/maps/AcrisiaCity/scripts.pory"
+# 320 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_RailMan_Text_0
-# 312 "data/maps/AcrisiaCity/scripts.pory"
+# 321 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_RailMan_Text_1
-# 313 "data/maps/AcrisiaCity/scripts.pory"
+# 322 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 314 "data/maps/AcrisiaCity/scripts.pory"
+# 323 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_Growlithe::
-# 320 "data/maps/AcrisiaCity/scripts.pory"
+# 329 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 321 "data/maps/AcrisiaCity/scripts.pory"
+# 330 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 322 "data/maps/AcrisiaCity/scripts.pory"
+# 331 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_Growlithe_Text_0
-# 323 "data/maps/AcrisiaCity/scripts.pory"
+# 332 "data/maps/AcrisiaCity/scripts.pory"
 	playmoncry SPECIES_GROWLITHE_HISUI, CRY_MODE_NORMAL
-# 324 "data/maps/AcrisiaCity/scripts.pory"
+# 333 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_Growlithe_Text_1
-# 325 "data/maps/AcrisiaCity/scripts.pory"
+# 334 "data/maps/AcrisiaCity/scripts.pory"
 	waitmoncry
-# 326 "data/maps/AcrisiaCity/scripts.pory"
+# 335 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 327 "data/maps/AcrisiaCity/scripts.pory"
+# 336 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_Phanpy::
-# 333 "data/maps/AcrisiaCity/scripts.pory"
+# 342 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 334 "data/maps/AcrisiaCity/scripts.pory"
+# 343 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 335 "data/maps/AcrisiaCity/scripts.pory"
+# 344 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_Phanpy_Text_0
-# 336 "data/maps/AcrisiaCity/scripts.pory"
+# 345 "data/maps/AcrisiaCity/scripts.pory"
 	playmoncry SPECIES_PHANPY, CRY_MODE_NORMAL
-# 337 "data/maps/AcrisiaCity/scripts.pory"
+# 346 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_Phanpy_Text_1
-# 338 "data/maps/AcrisiaCity/scripts.pory"
+# 347 "data/maps/AcrisiaCity/scripts.pory"
 	waitmoncry
-# 339 "data/maps/AcrisiaCity/scripts.pory"
+# 348 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 340 "data/maps/AcrisiaCity/scripts.pory"
+# 349 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_OldMan::
-# 346 "data/maps/AcrisiaCity/scripts.pory"
+# 355 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 347 "data/maps/AcrisiaCity/scripts.pory"
+# 356 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 348 "data/maps/AcrisiaCity/scripts.pory"
+# 357 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_OldMan_Text_0
-# 349 "data/maps/AcrisiaCity/scripts.pory"
+# 358 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_OldMan_Text_1
-# 350 "data/maps/AcrisiaCity/scripts.pory"
+# 359 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 351 "data/maps/AcrisiaCity/scripts.pory"
+# 360 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_Gentleman::
-# 357 "data/maps/AcrisiaCity/scripts.pory"
+# 366 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 358 "data/maps/AcrisiaCity/scripts.pory"
+# 367 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 359 "data/maps/AcrisiaCity/scripts.pory"
+# 368 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_Gentleman_Text_0
-# 360 "data/maps/AcrisiaCity/scripts.pory"
+# 369 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_Gentleman_Text_1
-# 361 "data/maps/AcrisiaCity/scripts.pory"
+# 370 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 362 "data/maps/AcrisiaCity/scripts.pory"
+# 371 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
 
 AcrisiaCity_EventScript_FatMan::
-# 368 "data/maps/AcrisiaCity/scripts.pory"
+# 377 "data/maps/AcrisiaCity/scripts.pory"
 	lock
-# 369 "data/maps/AcrisiaCity/scripts.pory"
+# 378 "data/maps/AcrisiaCity/scripts.pory"
 	faceplayer
-# 370 "data/maps/AcrisiaCity/scripts.pory"
+# 379 "data/maps/AcrisiaCity/scripts.pory"
 	speakername AcrisiaCity_EventScript_FatMan_Text_0
-# 371 "data/maps/AcrisiaCity/scripts.pory"
+# 380 "data/maps/AcrisiaCity/scripts.pory"
 	msgbox AcrisiaCity_EventScript_FatMan_Text_1
-# 372 "data/maps/AcrisiaCity/scripts.pory"
+# 381 "data/maps/AcrisiaCity/scripts.pory"
 	closemessage
-# 373 "data/maps/AcrisiaCity/scripts.pory"
+# 382 "data/maps/AcrisiaCity/scripts.pory"
 	applymovement 23, Common_Movement_FaceUp
-# 374 "data/maps/AcrisiaCity/scripts.pory"
+# 383 "data/maps/AcrisiaCity/scripts.pory"
 	waitmovement 0
-# 375 "data/maps/AcrisiaCity/scripts.pory"
+# 384 "data/maps/AcrisiaCity/scripts.pory"
 	release
 	end
 
@@ -774,12 +786,20 @@ AcrisiaCity_DemoWarning_Text_1:
 	.string "With that said, have fun exploring the\n"
 	.string "first portion of the Ilios Region! -Nemo$"
 
+AcrisiaCity_EventScript_DirectionSign_Text_0:
+# 69 "data/maps/AcrisiaCity/scripts.pory"
+	.string "Acrisia City\n"
+	.string "The Heart of Ilian Learning\p"
+	.string "{LEFT_ARROW} Acrisia Mountains\n"
+	.string "Riverwalk Trail {RIGHT_ARROW}\n"
+	.string "{DOWN_ARROW} Bronze Fields - North$"
+
 AcrisiaCity_EventScript_PlayerExitsTruck_Text_0:
-# 78 "data/maps/AcrisiaCity/scripts.pory"
+# 87 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Prof. Elia$"
 
 AcrisiaCity_EventScript_PlayerExitsTruck_Text_1:
-# 79 "data/maps/AcrisiaCity/scripts.pory"
+# 88 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Looks like you made it, {PLAYER}!\n"
 	.string "Sorry about the rough ride, but there's\l"
 	.string "no public transport up here. It's a bit...\l"
@@ -788,7 +808,7 @@ AcrisiaCity_EventScript_PlayerExitsTruck_Text_1:
 	.string "University building!$"
 
 AcrisiaCity_EventScript_PlayerExitsTruck_Text_2:
-# 90 "data/maps/AcrisiaCity/scripts.pory"
+# 99 "data/maps/AcrisiaCity/scripts.pory"
 	.string "As you can see, Acrisia City used to be\n"
 	.string "a mining town. It's a bit past its prime\l"
 	.string "now, but the folks here are still willing\l"
@@ -796,7 +816,7 @@ AcrisiaCity_EventScript_PlayerExitsTruck_Text_2:
 	.string "continued our research out of here!$"
 
 AcrisiaCity_EventScript_PlayerExitsTruck_Text_3:
-# 106 "data/maps/AcrisiaCity/scripts.pory"
+# 115 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Oho! Looks like a few Pokémon are out\n"
 	.string "and about this morning!\p"
 	.string "As you explore the region, you may find\n"
@@ -805,16 +825,16 @@ AcrisiaCity_EventScript_PlayerExitsTruck_Text_3:
 	.string "Come, let's get inside.$"
 
 AcrisiaCity_EventScript_LadyByWater_Text_0:
-# 224 "data/maps/AcrisiaCity/scripts.pory"
+# 233 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Performer$"
 
 AcrisiaCity_EventScript_LadyByWater_Text_1:
-# 225 "data/maps/AcrisiaCity/scripts.pory"
+# 234 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Baby Pokémon are the cutest, don't you\n"
 	.string "think?$"
 
 AcrisiaCity_EventScript_LadyByWater_Text_2:
-# 231 "data/maps/AcrisiaCity/scripts.pory"
+# 240 "data/maps/AcrisiaCity/scripts.pory"
 	.string "I've always wanted to learn more about\n"
 	.string "Togepi... hey! You're a researcher with\l"
 	.string "the University! Come to me when you\l"
@@ -822,34 +842,34 @@ AcrisiaCity_EventScript_LadyByWater_Text_2:
 	.string "Togepi.$"
 
 AcrisiaCity_EventScript_LadyByWater_Text_3:
-# 237 "data/maps/AcrisiaCity/scripts.pory"
+# 246 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Hurry up now, I'll have a {COLOR GREEN}prize{COLOR DARK_GRAY} for you!$"
 
 AcrisiaCity_EventScript_LadyByWater_Text_4:
-# 250 "data/maps/AcrisiaCity/scripts.pory"
+# 259 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Goodness, you've caught a Togepi! That\n"
 	.string "makes me so happy!\p"
 	.string "Here, let me give you a little something.$"
 
 AcrisiaCity_EventScript_LadyByWater_Text_5:
-# 255 "data/maps/AcrisiaCity/scripts.pory"
+# 264 "data/maps/AcrisiaCity/scripts.pory"
 	.string "The {COLOR GREEN}Eviolite{COLOR DARK_GRAY} stops Pokémon from\n"
 	.string "evolving and boosts their stats.\p"
 	.string "It's great if you want to keep your\n"
 	.string "cute baby Pokémon strong!$"
 
 AcrisiaCity_EventScript_LadyByWater_Text_6:
-# 266 "data/maps/AcrisiaCity/scripts.pory"
+# 275 "data/maps/AcrisiaCity/scripts.pory"
 	.string "I hope that {COLOR GREEN}Eviolite{COLOR DARK_GRAY} has been helpful\n"
 	.string "for you! It'll make your cute little\l"
 	.string "Pokémon a bit stronger!$"
 
 AcrisiaCity_EventScript_Woman2_Text_0:
-# 278 "data/maps/AcrisiaCity/scripts.pory"
+# 287 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Woman$"
 
 AcrisiaCity_EventScript_Woman2_Text_1:
-# 279 "data/maps/AcrisiaCity/scripts.pory"
+# 288 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Even though not much mining happens\n"
 	.string "here anymore, plenty of Trainers still\l"
 	.string "come through Acrisia City. People are\l"
@@ -857,78 +877,78 @@ AcrisiaCity_EventScript_Woman2_Text_1:
 	.string "in the mountains.$"
 
 AcrisiaCity_EventScript_Camper_Text_0:
-# 289 "data/maps/AcrisiaCity/scripts.pory"
+# 298 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Camper$"
 
 AcrisiaCity_EventScript_Camper_Text_1:
-# 290 "data/maps/AcrisiaCity/scripts.pory"
+# 299 "data/maps/AcrisiaCity/scripts.pory"
 	.string "My family is camping in the Acrisia\n"
 	.string "Mountains! I came down to check out\l"
 	.string "the University and wild Pokémon.$"
 
 AcrisiaCity_EventScript_NinjaBoy_Text_0:
-# 300 "data/maps/AcrisiaCity/scripts.pory"
+# 309 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Excited Boy$"
 
 AcrisiaCity_EventScript_NinjaBoy_Text_1:
-# 301 "data/maps/AcrisiaCity/scripts.pory"
+# 310 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Some Pokémon are brave enough to walk\n"
 	.string "around openly in the grass! It's so\l"
 	.string "cool!$"
 
 AcrisiaCity_EventScript_RailMan_Text_0:
-# 311 "data/maps/AcrisiaCity/scripts.pory"
+# 320 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Nervous Man$"
 
 AcrisiaCity_EventScript_RailMan_Text_1:
-# 312 "data/maps/AcrisiaCity/scripts.pory"
+# 321 "data/maps/AcrisiaCity/scripts.pory"
 	.string "I want to hop down and check this area\n"
 	.string "out, but I'm too scared to jump... I\l"
 	.string "should just get the Rock Smash HM.$"
 
 AcrisiaCity_EventScript_Growlithe_Text_0:
-# 322 "data/maps/AcrisiaCity/scripts.pory"
+# 331 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Growlithe$"
 
 AcrisiaCity_EventScript_Growlithe_Text_1:
-# 324 "data/maps/AcrisiaCity/scripts.pory"
+# 333 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Bwark bwark!$"
 
 AcrisiaCity_EventScript_Phanpy_Text_0:
-# 335 "data/maps/AcrisiaCity/scripts.pory"
+# 344 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Phanpy$"
 
 AcrisiaCity_EventScript_Phanpy_Text_1:
-# 337 "data/maps/AcrisiaCity/scripts.pory"
+# 346 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Toooot!$"
 
 AcrisiaCity_EventScript_OldMan_Text_0:
-# 348 "data/maps/AcrisiaCity/scripts.pory"
+# 357 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Old Man$"
 
 AcrisiaCity_EventScript_OldMan_Text_1:
-# 349 "data/maps/AcrisiaCity/scripts.pory"
+# 358 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Heavens, look at this harvest! Food\n"
 	.string "comes up from Jusmail Town and feeds\l"
 	.string "the folks up here.$"
 
 AcrisiaCity_EventScript_Gentleman_Text_0:
-# 359 "data/maps/AcrisiaCity/scripts.pory"
+# 368 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Gentleman$"
 
 AcrisiaCity_EventScript_Gentleman_Text_1:
-# 360 "data/maps/AcrisiaCity/scripts.pory"
+# 369 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Now that I'm retired, I like to sit here\n"
 	.string "and watch the time pass. I can't help\l"
 	.string "but smile seeing the lights come on in\l"
 	.string "the evening!$"
 
 AcrisiaCity_EventScript_FatMan_Text_0:
-# 370 "data/maps/AcrisiaCity/scripts.pory"
+# 379 "data/maps/AcrisiaCity/scripts.pory"
 	.string "Man$"
 
 AcrisiaCity_EventScript_FatMan_Text_1:
-# 371 "data/maps/AcrisiaCity/scripts.pory"
+# 380 "data/maps/AcrisiaCity/scripts.pory"
 	.string "I'm looking for some food for my Phanpy.\n"
 	.string "Towns in the Ilios Region tend to have\l"
 	.string "little farmers' markets like this.$"

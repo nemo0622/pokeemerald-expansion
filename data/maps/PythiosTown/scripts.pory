@@ -24,6 +24,15 @@ mapscripts PythiosTown_MapScripts {
     }
 }
 
+script PythiosTown_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Pythios Town\n Where the Future can be Seen\p {UP_ARROW} Wanderers' Woods\n Erinys Path - West {RIGHT_ARROW}\n {LEFT_ARROW} Pythios Cemetery"))
+    closemessage
+    release
+    end
+}
+
 script PythiosTown_Sign_GymSign
 {
     lock

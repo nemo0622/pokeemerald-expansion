@@ -2930,6 +2930,9 @@ extern const u8 gText_FollowerFainted[];
 extern const u8 gText_FollowerReturnedToBall[];
 extern const u8 gText_DoWhatWithFollower[];
 
+extern const u8 gText_NikoDialogue_Tera[];
+extern const u8 gText_NikoDialogue_Conversation[];
+
 extern const u8 gText_SmallDot[];
 extern const u8 gText_LargeDot[];
 extern const u8 gText_PageNav[];
@@ -2988,6 +2991,8 @@ extern const u8 gText_SideQuestName_27[];
 extern const u8 gText_SideQuestName_28[];
 extern const u8 gText_SideQuestName_29[];
 extern const u8 gText_SideQuestName_30[];
+extern const u8 gText_SideQuestName_31[];
+extern const u8 gText_SideQuestName_32[];
 
 //descriptions
 extern const u8 gText_SideQuestDesc_1[];
@@ -3020,6 +3025,8 @@ extern const u8 gText_SideQuestDesc_27[];
 extern const u8 gText_SideQuestDesc_28[];
 extern const u8 gText_SideQuestDesc_29[];
 extern const u8 gText_SideQuestDesc_30[];
+extern const u8 gText_SideQuestDesc_31[];
+extern const u8 gText_SideQuestDesc_32[];
 
 //completed quest description
 extern const u8 gText_SideQuestDoneDesc_1[];
@@ -3084,6 +3091,8 @@ extern const u8 gText_SideQuestMap27[];
 extern const u8 gText_SideQuestMap28[];
 extern const u8 gText_SideQuestMap29[];
 extern const u8 gText_SideQuestMap30[];
+extern const u8 gText_SideQuestMap31[];
+extern const u8 gText_SideQuestMap32[];
 
 //subquests
 extern const u8 gText_SubQuest1_Name1[];

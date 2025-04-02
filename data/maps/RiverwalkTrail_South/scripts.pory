@@ -21,6 +21,15 @@ mapscripts RiverwalkTrail_South_MapScripts {
     }
 }
 
+script RiverwalkTrail_South_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Riverwalk Trail - South\n The Reed Road\p {UP_ARROW} Riverwalk Trail - West\n Kalami City {DOWN_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley
 {
     trainerbattle_single(TRAINER_RIVERWALK_TRAIL_S_BERKLEY, RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyIntro, RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyDefeat)

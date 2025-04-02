@@ -287,6 +287,14 @@
       "elevation": 0,
       "item": "ITEM_MIRACLE_SEED",
       "flag": "FLAG_HIDDEN_ITEM_RIVERWALK_WEST_MIRACLE_SEED"
+    },
+    {
+      "type": "sign",
+      "x": 33,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RiverwalkTrail_West_EventScript_DirectionSign"
     }
   ]
 }

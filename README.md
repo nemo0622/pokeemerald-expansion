@@ -54,16 +54,19 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
+- ADD "Demo Compatability Update" FUNCTION
+    - Runs EventScript_ResetAllBerries (warn user first!)
+    - Set flags like FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA
+- REPLACE "Triathlete" with "Competitor" or something close to "Olympic Player"
 - Continue Mapping and NPC development
     - Next: Erinys Path, Froslass Cavern, and onwards towards Sofos City
         - Add Tyrantrum Exhibit tiles to a town square area in Sofos City!
+        - CHANGE SOFOS CITY BUILDINGS to Gray Brick building by TrainerDX
     - ADD NIKO TERASTALLIZATION QUEST TO ASFAL HILLS
         - Quest: bring Niko the Tera Orb (obtained from a Team Chimera Admin hiding in Sofos City). He will examine it and see how it reacts with Tera Shards and the player's Pokémon. He lets the player keep the Tera Orb, and offers to change a Pokémon's Tera Type at the Acrisia University
             - Team Chimera Admin could be hiding in an old, "abandoned" cave in the northern portion of Sofos City
     - Also rework existing areas based on Demo feedback
         - Add more quests! Requests for items, Pokédex entries, Pokémon, and more extensive ones like the Sandslash unbound quest!
-        - Add DIRECTIONAL SIGNS (good 2-tile-tall ones from Yanako I think?) with town information and directions!
-            - Important in this region because it's new for people
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
@@ -149,8 +152,7 @@ GREEK PHRASES AND STUFF:
         - Eternal Flower Floette gift event
             - Reward for something (lol) in Péntepetal City
         - Cabin (secret base) decor shops!
-            - Decor merchants in EVERY POKEMART selling some area-themed stuff (ex: decor merchant in Pythios Town selling candle decor from Zaebucca's Decoration & Furniture tileset)
-            - Large shop in Sofos City or another city dedicated to decorations?
+            - Large shop in Péntepetal City, along with smaller market spot in Sofos City
             - Replace dolls of Pokémon not in Ilios region: marked in include/constants/decorations.h with "// Needs Replacement" comment
             - Can also add more decorations: see include/constants/decorations.h for list
             - Make Silver Shield, Gold Shield, and Glass Ornament decorations into rewards fit to Ilios Region! (idea: replace Shields with Opal Fossil and Shocking Relic, based on Opalized fossils and the Antikythera Mechanism. Replace Glass Ornament with a statue sprite)
@@ -159,6 +161,7 @@ GREEK PHRASES AND STUFF:
 - DexNav chain count and directional arrow not shown when hunting
 - When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
+- CABIN DECORATION: holding the decoration sometimes breaks the graphics (ex: holding Pretty Flowers messes it up bad)
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
@@ -283,7 +286,7 @@ REGION PLAN:
         - Froslass Cavern Floor 3: Contains Froslass overworld event on other side of water, gotta set it up
     - Reach Sofos City, based on Athens 
         - Sprawling metropolis city with "department store", a contest hall, and more
-        - Gym 4: Minerva, a Tactical gym leader (multi-type, all about stat boosts and baton pass)
+        - Gym 4: Meneswo (proto-italic root of name Minerva), a Tactical gym leader (multi-type, all about stat boosts and baton pass)
             - Based on Athena, calm + collected, all about law and order
             - Team: Ninjask, Riolu, Mienfoo, and Whimsicott (double battle) (level 24-27)
                 - Ninjask has Speed Boost + baton pass, Whimsicott sets up tailwinds, Riolu + Mienfoo are offense

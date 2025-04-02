@@ -49,9 +49,9 @@ PetalburgCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_ERINYSPATH_W_TISIAS
 	settrainerflag TRAINER_FROSLASSCAVERN_F1_ROBIN
 	settrainerflag TRAINER_FROSLASSCAVERN_F1_CARMIN
-	settrainerflag TRAINER_MARY
-	settrainerflag TRAINER_ALEXIA
-	settrainerflag TRAINER_JODY
+	settrainerflag TRAINER_ASFALHILLS_PROTHOE
+	settrainerflag TRAINER_ASFALHILLS_BATTO
+	settrainerflag TRAINER_SOFOS_CITY_CHIMERA_GRUNT
 	return
 
 FortreeCity_Gym_SetGymTrainers::

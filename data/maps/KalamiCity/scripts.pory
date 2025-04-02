@@ -181,6 +181,15 @@ script Common_EventScript_Piraeus
 // ---------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------
 
+script KalamiCity_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Kalami City\n Reeds, Vines, and Industry\p {UP_ARROW} Riverwalk Trail - South"))
+    closemessage
+    release
+    end
+}
+
 script KalamiCity_Sign_GymSign
 {
     lock

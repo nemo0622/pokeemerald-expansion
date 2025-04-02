@@ -230,15 +230,17 @@ PythiosTown_Gym_EventScript_Sabella_DefeatedScript::
 	msgbox PythiosTown_Gym_EventScript_Sabella_DefeatedScript_Text_2
 # 218 "data/maps/PythiosTown_Gym/scripts.pory"
 	closemessage
-# 220 "data/maps/PythiosTown_Gym/scripts.pory"
-	delay 20
 # 221 "data/maps/PythiosTown_Gym/scripts.pory"
-	completequest QUEST_GYM_3
-# 222 "data/maps/PythiosTown_Gym/scripts.pory"
 	delay 20
+# 222 "data/maps/PythiosTown_Gym/scripts.pory"
+	completequest QUEST_GYM_3
 # 223 "data/maps/PythiosTown_Gym/scripts.pory"
+	delay 20
+# 224 "data/maps/PythiosTown_Gym/scripts.pory"
 	startquest QUEST_GYM_4
-# 225 "data/maps/PythiosTown_Gym/scripts.pory"
+# 227 "data/maps/PythiosTown_Gym/scripts.pory"
+	setvar VAR_NIKO_STATE, 6
+# 229 "data/maps/PythiosTown_Gym/scripts.pory"
 	release
 	end
 

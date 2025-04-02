@@ -793,6 +793,13 @@ static const struct MenuAction MultichoiceList_ChooseInnTime[] =
     {gText_Cancel},
 };
 
+static const struct MenuAction MultichoiceList_ChooseNikoDialogue[] =
+{
+    {gText_NikoDialogue_Tera},
+    {gText_NikoDialogue_Conversation},
+    {gText_Cancel},
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -923,6 +930,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
     [MULTI_NIKO_OR_RANIA]              = MULTICHOICE(MultichoiceList_NikoOrRania),
     [MULTI_CHOOSE_INN_TIME]            = MULTICHOICE(MultichoiceList_ChooseInnTime),
+    [MULTI_CHOOSE_NIKO_DIALOGUE]       = MULTICHOICE(MultichoiceList_ChooseNikoDialogue),
 };
 
 const u8 *const gStdStrings[] =

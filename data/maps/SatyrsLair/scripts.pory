@@ -1,0 +1,181 @@
+mapscripts SatyrsLair_MapScripts {}
+
+script SatyrsLair_EventScript_ChimeraEvent
+{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_QuestionMark)
+    waitmovement(0)
+    delay(25)
+    applymovement(OBJ_EVENT_ID_PLAYER, SatyrsLair_Movement_PlayerApproachGrunts)
+    waitmovement(0)
+    delay(20)
+    applymovement(5, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(5, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
+    speakername("???")
+    msgbox(format("Aha! Just as I said, you foul Chimera thug, help has arrived!"))
+    closemessage
+    delay(10)
+    applymovement(5, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Meneswo")
+    msgbox(format("You! Young Trainer, you'll be my assistant! I am Meneswo, the {COLOR GREEN}Gym Leader of Sofos City{COLOR DARK_GRAY}. I've been holding off all these Team Chimera members, but now's the time for STRATEGY! You take the two Grunts, and I'll wipe out this Admin!"))
+    closemessage
+    applymovement(5, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(15)
+    applymovement(1, Common_Movement_FaceRight)
+    applymovement(2, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Chimera Grunts")
+    msgbox(format("You think you're better than us? Heh, our Admin just found a {COLOR GREEN}Tera Orb{COLOR DARK_GRAY}! You have no chance of winning now!"))
+    closemessage
+
+    trainerbattle_two_trainers(TRAINER_SATYRSLAIR_CHIMERA_GRUNT_1, SatyrsLair_Text_ChimeraGruntLoseText1, TRAINER_SATYRSLAIR_CHIMERA_GRUNT_2, SatyrsLair_Text_ChimeraGruntLoseText2)
+
+    delay(20)
+    speakername("Chimera Grunts")
+    msgbox(format("We'd better get out of here!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    applymovement(1, SatyrsLair_Movement_GruntEscape1)
+    applymovement(2, SatyrsLair_Movement_GruntEscape2)
+    waitmovement(0)
+    delay(20)
+
+    applymovement(3, Common_Movement_ExclamationMark)
+    applymovement(4, SatyrsLair_Movement_ArcanineEscapes)
+    waitmovement(0)
+
+    delay(10)
+    speakername("Chimera Admin")
+    msgbox(format("Arcanine, no! Get back here!"))
+    closemessage
+    applymovement(5, SatyrsLair_Movement_MeneswoBlocksEscape)
+    applymovement(3, SatyrsLair_Movement_AdminEscapes1)
+    waitmovement(0)
+    speakername("Meneswo")
+    msgbox(format("Hold on there, bud. Give me that {COLOR GREEN}Tera Orb{COLOR DARK_GRAY} back, and I'll let you catch up to your cronies."))
+    closemessage
+    delay(5)
+    applymovement(3, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+    delay(5)
+    speakername("Chimera Admin")
+    msgbox(format("Argh, FINE! It's worthless anyway! The Boss and the other Admin have already nabbed a few from across Ilios, you'll never stop us!\p Grr... just you wait, we'll come back in force someday and bring everyone to their knees!"))
+    closemessage
+    delay(10)
+
+    applymovement(5, Common_Movement_WalkUp)
+    waitmovement(0)
+    applymovement(5, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(3, SatyrsLair_Movement_AdminEscapes2)
+    waitmovement(0)
+    delay(20)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(5, SatyrsLair_Movement_MeneswoApproachesPlayer)
+    waitmovement(0)
+    speakername("Meneswo")
+    msgbox(format("What a thrilling battle! Your strategy, the moves you used, the timing of your attacks... what's your name?\p {PLAYER}! Please, come challenge me {COLOR GREEN}at my Gym{COLOR DARK_GRAY}! Oh, as for the Tera Orb... I already have my own, as a Gym Leader. What should I do with it?"))
+    closemessage
+    delay(15)
+    applymovement(5, Common_Movement_QuestionMark)
+    waitmovement(0)
+    speakername("Meneswo")
+    msgbox(format("Hm? Your friend {COLOR GREEN}Niko{COLOR DARK_GRAY} was looking for it? Here, {COLOR GREEN}bring it to him{COLOR DARK_GRAY}. If you trust him, so shall I!"))
+    closemessage
+
+    giveitem(ITEM_TERA_ORB)
+    closemessage
+
+    delay(5)
+    speakername("Meneswo")
+    msgbox(format("I'll be returning to my Gym. I hope to see you there soon! Our match will be legendary!"))
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    delay(20)
+    setflag(FLAG_HIDE_BLOCKING_SOFOS_GYM)
+    setflag(FLAG_HIDE_MENESWO_SATYRS_LAIR)
+    clearflag(FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    removeobject(4)
+    removeobject(5)
+    delay(20)
+    fadescreen(FADE_FROM_BLACK)
+    delay(20)
+
+    release
+    end
+}
+movement SatyrsLair_Movement_PlayerApproachGrunts
+{
+    walk_up * 2
+    emote_exclamation_mark
+    delay_16
+    walk_fast_up
+    walk_fast_right
+    walk_fast_up
+    step_end
+}
+text SatyrsLair_Text_ChimeraGruntLoseText1
+{
+    format("How could this happen?")
+}
+text SatyrsLair_Text_ChimeraGruntLoseText2
+{
+    format("I thought we had the advantage...!")
+}
+movement SatyrsLair_Movement_GruntEscape1
+{
+    walk_fast_down * 6
+    step_end
+}
+movement SatyrsLair_Movement_GruntEscape2
+{
+    walk_fast_right
+    walk_fast_down * 2
+    walk_fast_left * 2
+    walk_fast_down * 5
+    step_end
+}
+movement SatyrsLair_Movement_ArcanineEscapes
+{
+    walk_fast_down * 4
+    walk_fast_right
+    walk_fast_down * 4
+    step_end
+}
+movement SatyrsLair_Movement_AdminEscapes1
+{
+    walk_fast_left
+    walk_fast_down * 5
+    face_right
+    emote_exclamation_mark
+    delay_16
+    step_end
+}
+movement SatyrsLair_Movement_MeneswoBlocksEscape
+{
+    emote_exclamation_mark
+    walk_fast_down * 4
+    face_left
+    step_end
+}
+movement SatyrsLair_Movement_AdminEscapes2
+{
+    walk_fast_right
+    walk_fast_down * 4
+    step_end
+}
+movement SatyrsLair_Movement_MeneswoApproachesPlayer
+{
+    walk_up * 2
+    face_right
+    step_end
+}

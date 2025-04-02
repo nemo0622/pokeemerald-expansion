@@ -21,6 +21,15 @@ mapscripts PythiosCemetery_MapScripts {
     }
 }
 
+script PythiosCemetery_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Pythios Cemetery\n The Resting Place of the West\p Pythios Town {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script PythiosCemetery_EventScript_Linoone
 {
     lock

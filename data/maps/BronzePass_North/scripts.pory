@@ -20,6 +20,15 @@ mapscripts BronzePass_North_MapScripts {
     }
 }
 
+script BronzePass_North_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Bronze Fields - North\n A Path of Winding Rocks\p {UP_ARROW} Acrisia City\n Bronze Fields - South {DOWN_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script BronzePass_North_EventScript_ChimeraThug
 {
     lock

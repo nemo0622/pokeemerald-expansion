@@ -1711,6 +1711,9 @@ const u8 gText_InnTime_Night[] = _("Night");
 
 const u8 gText_ShinyIndicator[] = _(" {EMOJI_HEART}");
 
+const u8 gText_NikoDialogue_Tera[] = _("Tera");
+const u8 gText_NikoDialogue_Conversation[] = _("Talk");
+
 const u8 gText_SmallDot[] = _("·");
 const u8 gText_LargeDot[] = _("{EMOJI_CIRCLE}");
 const u8 gText_PageNav[] = _("{L_BUTTON}{R_BUTTON} PAGE");
@@ -1762,13 +1765,15 @@ const u8 gText_SideQuestName_20[] = _("Save our Sails!");
 const u8 gText_SideQuestName_21[] = _("Snom Infestation");
 const u8 gText_SideQuestName_22[] = _("Cold Medicine");
 const u8 gText_SideQuestName_23[] = _("Keeper of the Cave");
-const u8 gText_SideQuestName_24[] = _("Side Quest 24");
-const u8 gText_SideQuestName_25[] = _("Side Quest 25");
-const u8 gText_SideQuestName_26[] = _("Side Quest 26");
-const u8 gText_SideQuestName_27[] = _("Side Quest 27");
-const u8 gText_SideQuestName_28[] = _("Side Quest 28");
-const u8 gText_SideQuestName_29[] = _("Side Quest 29");
-const u8 gText_SideQuestName_30[] = _("Side Quest 30");
+const u8 gText_SideQuestName_24[] = _("Side Quest 24"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestName_25[] = _("Side Quest 25"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestName_26[] = _("Side Quest 26"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestName_27[] = _("Side Quest 27"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestName_28[] = _("Side Quest 28"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestName_29[] = _("Chimera's Tera Plan");
+const u8 gText_SideQuestName_30[] = _("A Tall Order");
+const u8 gText_SideQuestName_31[] = _("Master of Terrain");
+const u8 gText_SideQuestName_32[] = _("First Battle Pavilion");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Look for the deliveryman\nwith a flipped cart.");
@@ -1794,13 +1799,15 @@ const u8 gText_SideQuestDesc_20[] = _("Defeat the Team Chimera Admin waiting\nto
 const u8 gText_SideQuestDesc_21[] = _("Help the Old Woman in Pythios\nCemetery with her Snom\nproblem by catching one.");
 const u8 gText_SideQuestDesc_22[] = _("Show the Berry Enthusiast\na hybrid Yache Berry.\n(Aspear Berry + Persim Berry hybrid!)");
 const u8 gText_SideQuestDesc_23[] = _("Find and catch the Froslass\nin Froslass Cavern, and\nshow the Little Girl.");
-const u8 gText_SideQuestDesc_24[] = _("Description 24");
-const u8 gText_SideQuestDesc_25[] = _("Description 25");
-const u8 gText_SideQuestDesc_26[] = _("Description 26");
-const u8 gText_SideQuestDesc_27[] = _("Description 27");
-const u8 gText_SideQuestDesc_28[] = _("Description 28");
-const u8 gText_SideQuestDesc_29[] = _("Description 29");
-const u8 gText_SideQuestDesc_30[] = _("Description 30");
+const u8 gText_SideQuestDesc_24[] = _("Description 24"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestDesc_25[] = _("Description 25"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestDesc_26[] = _("Description 26"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestDesc_27[] = _("Description 27"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestDesc_28[] = _("Description 28"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestDesc_29[] = _("Defeat Team Chimera in their\nSofos City hideout and bring\nNiko the Tera Orb.");
+const u8 gText_SideQuestDesc_30[] = _("Show a short boy a\ncomplete Pokédex entry of Girafarig\nto inspire his growth.");
+const u8 gText_SideQuestDesc_31[] = _("Show a strategy-loving\nCamper a complete Pokédex\nentry of Alolan Raichu.");
+const u8 gText_SideQuestDesc_32[] = _("Participate in the Sofos\nCity Battle Pavilion and\nreturn to the excited man.");
 
 //completed quest description
 // NOTE: Probably never seen now that I only make Active quests seen lol!
@@ -1859,13 +1866,15 @@ const u8 gText_SideQuestMap20[] = _("Erinys Path"); // QUEST_HELP_PIRAEUS
 const u8 gText_SideQuestMap21[] = _("Pythios Cemetery"); // QUEST_SNOM_ICE_STONE
 const u8 gText_SideQuestMap22[] = _("Erinys Path"); // QUEST_YACHE_BERRY_FROST_BREATH
 const u8 gText_SideQuestMap23[] = _("Froslass Cavern"); // QUEST_BEAT_FROSLASS
-const u8 gText_SideQuestMap24[] = _("Map 24");
-const u8 gText_SideQuestMap25[] = _("Map 25");
-const u8 gText_SideQuestMap26[] = _("Map 26");
-const u8 gText_SideQuestMap27[] = _("Map 27");
-const u8 gText_SideQuestMap28[] = _("Map 28");
-const u8 gText_SideQuestMap29[] = _("Map 29");
-const u8 gText_SideQuestMap30[] = _("Map 30");
+const u8 gText_SideQuestMap24[] = _("Map 24"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestMap25[] = _("Map 25"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestMap26[] = _("Map 26"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestMap27[] = _("Map 27"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestMap28[] = _("Map 28"); // FILL WITH EARLIER GAME QUEST
+const u8 gText_SideQuestMap29[] = _("Sofos City & Asfal Hills"); // QUEST_BEAT_CHIMERA_SOFOS_CITY
+const u8 gText_SideQuestMap30[] = _("Asfal Hills (House)"); // QUEST_SHOW_BOY_GIRAFARIG
+const u8 gText_SideQuestMap31[] = _("Sofos City"); // QUEST_SHOW_CAMPER_ALOLAN_RAICHU
+const u8 gText_SideQuestMap32[] = _("Sofos City"); // QUEST_TRY_SOFOS_BATTLE_PAVILION
 
 //subquests
 // erm unused now oopsies

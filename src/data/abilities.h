@@ -1585,7 +1585,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SURGE_SURFER] =
     {
         .name = _("Surge Surfer"),
-        .description = COMPOUND_STRING("Faster on electricity."),
+        .description = COMPOUND_STRING("Set Elec. Terrain & boost Speed."),
         .aiRating = 4,
     },
 

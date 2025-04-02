@@ -11,6 +11,15 @@ mapscripts JusmailTown_MapScripts {
     }
 }
 
+script JusmailTown_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Jusmail Town\n The Breadbasket of Ilios\p {UP_ARROW} Bronze Fields\n Wanderers' Woods {DOWN_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script JusmailTown_EventScript_TriggerWindmillSpawn
 {
     setflag(FLAG_TRIGGERED_WINDMILL_SPAWN) // marks that the player has taken >1 step into the route, avoiding interference with event object spawning

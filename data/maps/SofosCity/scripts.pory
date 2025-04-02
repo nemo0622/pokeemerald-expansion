@@ -1,14 +1,588 @@
 mapscripts SofosCity_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_SOFOS_CITY)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(49, ENCOUNTER_LAND)
+        setobjectaswildencounter(50, ENCOUNTER_LAND)
+        setobjectaswildencounter(51, ENCOUNTER_LAND)
+        setobjectaswildencounter(52, ENCOUNTER_LAND)
+        setobjectaswildencounter(53, ENCOUNTER_LAND)
+        setobjectaswildencounter(54, ENCOUNTER_LAND)
+        setobjectaswildencounter(55, ENCOUNTER_LAND)
+        setobjectaswildencounter(56, ENCOUNTER_SURF)
     }
 }
 
 script SofosCity_EventScript_GameCornerSign
 {
     lock
-    msgbox(format("Sofos City Game Corner\p Play Pinball, Get Prizes!"))
+    msgbox(format("Sofos City Game Corner\n Play Pinball, Get Prizes!"))
     closemessage
     release
     end
+}
+
+script SofosCity_EventScript_BattlePavilionSign
+{
+    lock
+    msgbox(format("Sofos City Battle Pavilion\n Learn, Adapt, and Win!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_GymSign
+{
+    lock
+    msgbox(format("Gym Leader: Meneswo\n The Strategist of the City"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_ChimeraGruntAtGym1
+{
+    lock
+    speakername("Chimera Grunt")
+    msgbox(format("Come on, let us in! We know the {COLOR GREEN}Gym Leader isn't here{COLOR DARK_GRAY}! We're gonna take all the Pokémon whether you like it or not!"))
+    closemessage
+    release
+    end
+}
+script SofosCity_EventScript_ChimeraGruntAtGym2
+{
+    lock
+    speakername("Chimera Grunt")
+    msgbox(format("Get out of the way, you old geezer! We've got even more {COLOR GREEN}Team Chimera Grunts{COLOR DARK_GRAY} in {COLOR GREEN}Satyr's Lair, the cave north of Sofos City{COLOR DARK_GRAY}! We'll come down in force and break the walls down!"))
+    closemessage
+    release
+    end
+}
+script SofosCity_EventScript_ChimeraGruntAtGym3
+{
+    lock
+    speakername("Chimera Grunt")
+    msgbox(format("Bwahaha, the Gym is just about defenseless now that the Gym Leader is {COLOR GREEN}distracted by the Grunts in Satyr's Lair{COLOR DARK_GRAY}! Let us in!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_ItemStreetVendor
+{
+    lock
+    faceplayer
+    speakername("Street Vendor")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(SofosCity_ItemStreetVendorShop)
+    closemessage
+    delay(1)
+    speakername("Street Vendor")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+mart SofosCity_ItemStreetVendorShop
+{
+    ITEM_ENERGY_POWDER
+    ITEM_ENERGY_ROOT
+    ITEM_HEAL_POWDER
+    ITEM_REVIVAL_HERB
+    ITEM_SWEET_APPLE
+    ITEM_TART_APPLE
+    ITEM_SYRUPY_APPLE
+}
+
+script SofosCity_EventScript_DecorStreetVendor
+{
+    lock
+    faceplayer
+    speakername("Street Vendor")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemartdecoration(SofosCity_DecorShop)
+    closemessage
+    delay(1)
+    speakername("Street Vendor")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+raw `
+    .align 2
+SofosCity_DecorShop:
+	.2byte DECOR_SUNSET_POSTER
+	.2byte DECOR_PIKACHU_DOLL
+	.2byte DECOR_FENCE_LENGTH
+	.2byte DECOR_FENCE_WIDTH
+	.2byte DECOR_PRETTY_DESK
+	.2byte DECOR_PRETTY_CHAIR
+	.2byte DECOR_PRETTY_FLOWERS
+	.2byte DECOR_NONE
+	release
+	end
+`
+
+script SofosCity_EventScript_GirlNearVendors
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("Everything sold by these Street Vendors are made or grown right around Sofos City! It helps keep locals in business."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_BoyNearFarmersGoods
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    msgbox(format("Mmm, locally-grown food is the best! My workouts go 10x better when I buy my snacks from here."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_ManWithMurkrow
+{
+    lock
+    faceplayer
+    speakername("Angry Man")
+    if(!flag(FLAG_GOT_TM_TORMENT))
+    {
+        msgbox(format("Murkrow... Murkrow! Come on, work with me!\p Argh, I can't do it anymore! I was going to teach Murkrow this move, but it looks like it has it mastered. Take it and scram!"))
+        closemessage
+        giveitem(ITEM_TM_TORMENT)
+        setflag(FLAG_GOT_TM_TORMENT)
+    }
+    else
+    {
+        msgbox(format("Grr, this darn Murkrow is gonna make me lose it! Why, why does it enjoy making me angry?!"))
+        closemessage
+    }
+    release
+    end
+}
+script SofosCity_EventScript_Murkrow
+{
+    lock
+    faceplayer
+    speakername("Murkrow")
+    playmoncry(SPECIES_MURKROW, CRY_MODE_NORMAL)
+    msgbox("Kekekehehe!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_LostConstructionWorker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("Erm... hmm... I was called to Sofos City for a maintenance job, but I'm already lost! This must be the biggest city in the whole region!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_StrategicCamper
+{
+    lock
+    faceplayer
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_CAMPER_ALOLAN_RAICHU)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        speakername("Camper")
+        msgbox(format("Alolan Raichu is the master of battle terrain. It's signature ability, Surge Surfer, summons and electric terrain and increases it's speed. Strategy is all about changing the battlefield to your advantage!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_CAMPER_ALOLAN_RAICHU)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        speakername("Camper")
+        msgbox(format("I love trying to understand Pokémon battle strategies! Hazards, chip damage, abilities, and of course, battle terrain - they can all be the key to victory!\p There's one Pokémon in particular who excels at managing battle terrain. {COLOR GREEN}Alolan Raichu{COLOR DARK_GRAY}'s ability, Surge Surfer, summons electric terrain while boosting it's speed.\p Show me a {COLOR GREEN}complete Pokédex entry of Alolan Raichu{COLOR DARK_GRAY} so I can learn more about it. I'll give you a reward!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_SHOW_CAMPER_ALOLAN_RAICHU)
+    }
+    else // else, the quest is active, so ask the player about it
+    {
+        speakername("Camper")
+        msgbox(format("What's up? Did you find an {COLOR GREEN}Alolan Raichu{COLOR DARK_GRAY} and study the ability Surge Surfer for me?"))
+        closemessage
+
+        getcaughtmon(SPECIES_RAICHU_ALOLAN)
+        delay(30)
+
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Camper")
+            msgbox(format("Not yet, huh? It's okay, finding a Raichu in the Alolan form isn't common in the Ilios Region. I've only ever seen one once!\p Come back when you have a {COLOR GREEN}complete Pokédex entry for Alolan Raichu{COLOR DARK_GRAY}. I'll give you something to improve your strategy even more!"))
+            closemessage
+        }
+        else
+        {
+            applymovement(26, Common_Movement_Heart)
+            waitmovement(0)
+            delay(10)
+            speakername("Camper")
+            msgbox(format("Ahaha, I love it! This data is even more impressive than I expected!\p Alolan Raichu really is the master of controlling battle terrain, huh? Oh, right, here's your reward!"))
+            closemessage
+            giveitem(ITEM_TERRAIN_EXTENDER)
+            delay(5)
+            speakername("Camper")
+            msgbox(format("The Terrain Extender makes terrain stay longer when set in battle. Using this with Alolan Raichu can make it stay faster for longer!"))
+            closemessage
+
+            delay(20)
+            completequest(QUEST_SHOW_CAMPER_ALOLAN_RAICHU)
+        }
+    }
+    release
+    end
+}
+
+script SofosCity_EventScript_BeautyNearPokecenter
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("Sofos City is well-known for using turquoise-blue roofs on most buildings. It gives the city it's own identity.\p Of course, those are only on the modern buildings. The ruins of the Old City to the north were made of shining marble!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_ArtistPlayingChess
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("Ehehe, I know! I'll drive my Chesnaught forward and take their best pieces!"))
+    closemessage
+    applymovement(28, Common_Movement_FaceLeft)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_EventScript_OldWomanPlayingChess
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("Hah! He'll use his Chesnaught piece next. That'll put it right in the path of my Mudsdale!"))
+    closemessage
+    applymovement(29, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_EventScript_PicnickerRunning
+{
+    lock
+    faceplayer
+    speakername("Tourist")
+    msgbox(format("Wow wow WOW! This city is so big! I could run around forever to see it all!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_OfficerAtCityEdge
+{
+    lock
+    faceplayer
+    speakername("Officer")
+    msgbox(format("This is the edge of the modern Sofos City. Further north is what remains of the Old City, which is just a cave and a few ruins outside of the {COLOR GREEN}Acropolis{COLOR DARK_GRAY}."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_FarmerOnSidewalk
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("I'd run a farm near the ruins of the Old City if I could, but the land is riddled with stone and marble structures. It's okay, though. I suppose it's important to preserve and understand our history."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_Rockruff
+{
+    lock
+    faceplayer
+    speakername("Rockruff")
+    playmoncry(SPECIES_ROCKRUFF, CRY_MODE_NORMAL)
+    msgbox("Bwuff wuff!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_WomanWithRockruff
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("I'm taking my Rockruff on a walk. She likes to stop and take a break after visiting the Pokémon Center."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_FishermanPlayingChess
+{
+    lock
+    faceplayer
+    speakername("Fisherman")
+    msgbox(format("I formed a wall with my Zigzagoon pieces, so that'll protect my Celebi. If they take the Celebi piece, I lose the game!"))
+    closemessage
+    applymovement(35, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_EventScript_GirlPlayingChess
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("Each piece can move in different ways. Chesnaught moves in straight lines, Mudsdale moves in L-shapes, and Xatu can only move diagonally. The endless strategies make this the most popular game in the city!"))
+    closemessage
+    applymovement(36, Common_Movement_FaceLeft)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_EventScript_HexManiacSeeingLights
+{
+    lock
+    faceplayer
+    speakername("Hex Maniac")
+    msgbox(format("The lights all around the city keep wild Pokémon at bay. But once you're outside the walls, you're in their territory."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_CooltrainerThinkingStrategy
+{
+    lock
+    faceplayer
+    speakername("Cooltrainer")
+    msgbox(format("Sofos City is famous for innovating on Pokémon battle strategy. The Gym Leader chooses to use strategic Pokémon, instead of being restricted to a single type."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_OldManAtCliff
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("This used to be a bustling beach, but rising seas and erosion have reduced it to this. Bleached shells and receding sands... these changes aren't natural."))
+    closemessage
+    release
+    end
+}
+script SofosCity_EventScript_Clauncher
+{
+    lock
+    faceplayer
+    speakername("Clauncher")
+    playmoncry(SPECIES_CLAUNCHER, CRY_MODE_NORMAL)
+    msgbox("Kss kss!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_ManOutsideBattlePavilion
+{
+    lock
+    faceplayer
+    speakername("Man")
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_TRY_SOFOS_BATTLE_PAVILION)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("There are a few other Battle Pavilions scattered around the Ilios Region. Each has different rules and strategies to win!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_TRY_SOFOS_BATTLE_PAVILION)
+    if(var(VAR_RESULT) == 0) // activate quest
+    {
+        msgbox(format("See that building with the green roof topped with Poké balls? That's the {COLOR GREEN}Sofos City Battle Pavilion{COLOR DARK_GRAY}. It's a popular destination for Trainers obsessed with strategy.\p Hey, you're new here, right? Go {COLOR GREEN}try the Battle Pavilion{COLOR DARK_GRAY} and let me know how it went!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_TRY_SOFOS_BATTLE_PAVILION)
+    }
+    else // try to complete quest
+    {
+        msgbox(format("Chaire! Have you tried participating in the {COLOR GREEN}Sofos City Battle Pavilion{COLOR DARK_GRAY} yet?"))
+        closemessage
+
+        delay(30)
+
+        if(flag(FLAG_PLAYED_IN_SOFOS_BATTLE_PAVILION)) // did it!
+        {
+            speakername("Man")
+            msgbox(format("Opa! You did it! Did you have fun?\n Right, right, your reward. I hope you continue to participate in Battle Pavilions across Ilios!"))
+            closemessage
+            delay(5)
+            giveitem(ITEM_EXP_CANDY_M, 2)
+
+            delay(20)
+            completequest(QUEST_TRY_SOFOS_BATTLE_PAVILION)
+        }
+    }
+    
+}
+
+script SofosCity_EventScript_ManAdmiringTowerRuin
+{
+    lock
+    faceplayer
+    speakername("Curious Man")
+    msgbox(format("There are ruins all over the Ilios Region, but those around Sofos City are unique. In the {COLOR GREEN}Acropolis{COLOR DARK_GRAY} here, people still pay respect to the {COLOR GREEN}Elemental Beasts Trio{COLOR DARK_GRAY}. Most other ancient sites are pretty much abandoned!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_TogaGirlsAtAcropolis
+{
+    lock
+    faceplayer
+    speakername("Toga Woman")
+    msgbox(format("Welcome to the Sofos City {COLOR GREEN}Acropolis{COLOR DARK_GRAY}. Feel free to pay your respects here."))
+    closemessage
+    release
+    end
+}
+
+script SofosCIty_EventScript_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("I live in the center of Sofos City, but I walk out here every day to look for Pokémon! I love being so close to the forest."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_LassInTropics
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("Not too many people come so far from the city walls. Lots of wild Pokémon are out here, and plenty of city people aren't a fan of that."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_ManByShallows
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    msgbox(format("I come down here to cool off and watch Pokémon swim around. Sometimes, brave Pokémon come up into the shallows to say hello!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_FatManByCave
+{
+    lock
+    faceplayer
+    speakername("Fat Man")
+    msgbox(format("When I was a kid, everyone said to stay away from the Satyr's Lair, that small cave in the cliffside. I don't believe the stories anymore, but... well, I just don't want to go in!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_GoodRodFishingGuru
+{
+    lock
+    faceplayer
+    speakername("Fishing Guru")
+    if(!flag(FLAG_RECEIVED_GOOD_ROD))
+    {
+        msgbox(format("Hey! Is that a Pokédex from the Acrisia University? I used to visit all the time!\p You've come quite a long way. Here, maybe this'll help on your journey."))
+        closemessage
+        giveitem(ITEM_GOOD_ROD)
+        setflag(FLAG_RECEIVED_GOOD_ROD)
+        speakername("Fishing Guru")
+        msgbox(format("The {COLOR GREEN}Good Rod{COLOR DARK_GRAY} can give you access to a wide array of Water-dwelling Pokémon. Maybe they can help you handle the next Gym Leader!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("The {COLOR GREEN}Good Rod{COLOR DARK_GRAY} allows you to fish up a wide arrow of Water-dwelling Pokémon. Hey, you might even find some treasure in the water!"))
+        closemessage
+    }
+    release
+    end
+}
+
+script SofosCity_EventScript_Trainer_SofosCity_Grunt
+{
+    trainerbattle_single(TRAINER_SOFOS_CITY_CHIMERA_GRUNT, SofosCity_Text_Trainer_SofosCity_GruntIntro, SofosCity_Text_Trainer_SofosCity_GruntDefeat)
+    speakername("Grunt")
+    msgbox(format("Well, I guess I'm not the WORST Grunt ever. There was that one guy who messed up stealing a Pokédex. He lost to some new, weak Trainer!"))
+    closemessage
+    release
+    end
+}
+text SofosCity_Text_Trainer_SofosCity_GruntIntro
+{
+    format("Hold up! I was told to stop anyone from getting into {COLOR GREEN}Satyr's Lair{COLOR DARK_GRAY}!")
+}
+text SofosCity_Text_Trainer_SofosCity_GruntDefeat
+{
+    format("Darn. I must be the worst Grunt in the history of Team Chimera!")
 }

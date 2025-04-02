@@ -334,6 +334,14 @@
       "elevation": 3,
       "item": "ITEM_EXP_CANDY_S",
       "flag": "FLAG_HIDDEN_ITEM_ACRISIA_MOUNTAINS_EXP_CANDY"
+    },
+    {
+      "type": "sign",
+      "x": 33,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AcrisiaMountains_EventScript_DirectionSign"
     }
   ]
 }

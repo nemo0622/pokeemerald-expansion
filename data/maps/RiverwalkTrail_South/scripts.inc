@@ -43,167 +43,186 @@ RiverwalkTrail_South_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 
-RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley::
+RiverwalkTrail_South_EventScript_DirectionSign::
 # 26 "data/maps/RiverwalkTrail_South/scripts.pory"
-	trainerbattle_single TRAINER_RIVERWALK_TRAIL_S_BERKLEY, RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyIntro, RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyDefeat
+	lock
 # 27 "data/maps/RiverwalkTrail_South/scripts.pory"
-	speakername RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley_Text_0
+	msgbox RiverwalkTrail_South_EventScript_DirectionSign_Text_0
 # 28 "data/maps/RiverwalkTrail_South/scripts.pory"
-	msgbox RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley_Text_1
-# 29 "data/maps/RiverwalkTrail_South/scripts.pory"
 	closemessage
-# 30 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 29 "data/maps/RiverwalkTrail_South/scripts.pory"
+	release
+	end
+
+
+RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley::
+# 35 "data/maps/RiverwalkTrail_South/scripts.pory"
+	trainerbattle_single TRAINER_RIVERWALK_TRAIL_S_BERKLEY, RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyIntro, RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyDefeat
+# 36 "data/maps/RiverwalkTrail_South/scripts.pory"
+	speakername RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley_Text_0
+# 37 "data/maps/RiverwalkTrail_South/scripts.pory"
+	msgbox RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley_Text_1
+# 38 "data/maps/RiverwalkTrail_South/scripts.pory"
+	closemessage
+# 39 "data/maps/RiverwalkTrail_South/scripts.pory"
 	release
 	end
 
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Markus::
-# 44 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 53 "data/maps/RiverwalkTrail_South/scripts.pory"
 	trainerbattle_single TRAINER_RIVERWALK_TRAIL_S_MARKUS, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_MarkusIntro, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_MarkusDefeat
-# 45 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 54 "data/maps/RiverwalkTrail_South/scripts.pory"
 	speakername RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Markus_Text_0
-# 46 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 55 "data/maps/RiverwalkTrail_South/scripts.pory"
 	msgbox RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Markus_Text_1
-# 47 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 56 "data/maps/RiverwalkTrail_South/scripts.pory"
 	closemessage
-# 48 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 57 "data/maps/RiverwalkTrail_South/scripts.pory"
 	release
 	end
 
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Tina::
-# 62 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 71 "data/maps/RiverwalkTrail_South/scripts.pory"
 	trainerbattle_single TRAINER_RIVERWALK_TRAIL_S_TINA, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_TinaIntro, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_TinasDefeat
-# 63 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 72 "data/maps/RiverwalkTrail_South/scripts.pory"
 	speakername RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Tina_Text_0
-# 64 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 73 "data/maps/RiverwalkTrail_South/scripts.pory"
 	msgbox RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Tina_Text_1
-# 65 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 74 "data/maps/RiverwalkTrail_South/scripts.pory"
 	closemessage
-# 66 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 75 "data/maps/RiverwalkTrail_South/scripts.pory"
 	release
 	end
 
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Gianna::
-# 80 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 89 "data/maps/RiverwalkTrail_South/scripts.pory"
 	trainerbattle_single TRAINER_RIVERWALK_TRAIL_S_GIANNA, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_GiannaIntro, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_GiannasDefeat
-# 81 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 90 "data/maps/RiverwalkTrail_South/scripts.pory"
 	speakername RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Gianna_Text_0
-# 82 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 91 "data/maps/RiverwalkTrail_South/scripts.pory"
 	msgbox RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Gianna_Text_1
-# 83 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 92 "data/maps/RiverwalkTrail_South/scripts.pory"
 	closemessage
-# 84 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 93 "data/maps/RiverwalkTrail_South/scripts.pory"
 	release
 	end
 
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Barnett::
-# 98 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 107 "data/maps/RiverwalkTrail_South/scripts.pory"
 	trainerbattle_single TRAINER_RIVERWALK_TRAIL_S_BARNETT, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_BarnettIntro, RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_BarnettsDefeat
-# 99 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 108 "data/maps/RiverwalkTrail_South/scripts.pory"
 	speakername RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Barnett_Text_0
-# 100 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 109 "data/maps/RiverwalkTrail_South/scripts.pory"
 	msgbox RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Barnett_Text_1
-# 101 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 110 "data/maps/RiverwalkTrail_South/scripts.pory"
 	closemessage
-# 102 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 111 "data/maps/RiverwalkTrail_South/scripts.pory"
 	release
 	end
 
 
-RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley_Text_0:
+RiverwalkTrail_South_EventScript_DirectionSign_Text_0:
 # 27 "data/maps/RiverwalkTrail_South/scripts.pory"
+	.string "Riverwalk Trail - South\n"
+	.string "The Reed Road\p"
+	.string "{UP_ARROW} Riverwalk Trail - West\n"
+	.string "Kalami City {DOWN_ARROW}$"
+
+RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley_Text_0:
+# 36 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Berkley$"
 
 RiverwalkTrail_SOUTH_EventScript_Trainer_RiverwalkTrail_SOUTH_Berkley_Text_1:
-# 28 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 37 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "I can see myself in the puddles! My\n"
 	.string "muscles look good, right?$"
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Markus_Text_0:
-# 45 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 54 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Markus$"
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Markus_Text_1:
-# 46 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 55 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Some Pokémon you can only find by\n"
 	.string "Surfing can come up into the shallow\l"
 	.string "water to fight. Keep an eye out!$"
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Tina_Text_0:
-# 63 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 72 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Tina$"
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Tina_Text_1:
-# 64 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 73 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "I hear that a small population of\n"
 	.string "Tropius can be found here. Maybe one of\l"
 	.string "them would help me get stronger!$"
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Gianna_Text_0:
-# 81 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 90 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Gianna$"
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Gianna_Text_1:
-# 82 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 91 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Pokémon that come out of the grass and\n"
 	.string "show themselves can be Shiny. Make sure\l"
 	.string "to check whenever you see them!$"
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Barnett_Text_0:
-# 99 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 108 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Barnett$"
 
 RiverwalkTrail_South_EventScript_Trainer_Riverwalk_Trail_S_Barnett_Text_1:
-# 100 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 109 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "I'm on the lookout for Team Chimera\n"
 	.string "grunts. They're on the rise!$"
 
 RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyIntro::
-# 33 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 42 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "I could splash through these puddles\n"
 	.string "all day! Huh? A battle?$"
 
 RiverwalkTrail_SOUTH_Text_Trainer_RiverwalkTrail_SOUTH_BerkleyDefeat::
-# 37 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 46 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "My head wasn't in the game!$"
 
 RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_MarkusIntro::
-# 51 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 60 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Some water-dwelling Pokémon come out\n"
 	.string "of the water into the shallows for a\l"
 	.string "fight!$"
 
 RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_MarkusDefeat::
-# 55 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 64 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Wow, I'd better crawl back into the\n"
 	.string "water.$"
 
 RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_TinaIntro::
-# 69 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 78 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "My Pokémon will rule the swamp!$"
 
 RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_TinasDefeat::
-# 73 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 82 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Well, we COULD rule the swamp someday!$"
 
 RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_GiannaIntro::
-# 87 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 96 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "I'm studying Pokémon wetland\n"
 	.string "environments! Help me learn more!$"
 
 RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_GiannasDefeat::
-# 91 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 100 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "I guess strong Trainers are found in\n"
 	.string "wetlands, too.$"
 
 RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_BarnettIntro::
-# 105 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 114 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Hey, you! No Team Chimera members can\n"
 	.string "get past me!$"
 
 RiverwalkTrail_South_Text_Trainer_Riverwalk_Trail_S_BarnettsDefeat::
-# 109 "data/maps/RiverwalkTrail_South/scripts.pory"
+# 118 "data/maps/RiverwalkTrail_South/scripts.pory"
 	.string "Oh, you're not with Team Chimera? ...Hm.$"
