@@ -1,0 +1,89 @@
+mapscripts SofosCity_House5_MapScripts {}
+
+script SofosCity_House5_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Bird Lady")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_XATU_AND_NOCTOWL)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Now I know so much more about Xatu and Noctowl. I feel a much deeper connection to the history of the city, and to my Pokémon!"))
+        closemessage
+        release
+        end
+    }
+    
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_XATU_AND_NOCTOWL)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Sofos City was the center of philosophy and culture in the ancient world. Even though the Acropolis on the northeastern cliffs lay in ruins, modern-day Sofos City still pays homage to Xatu and Noctowl. They represent the concepts of knowledge and wisdom.\p I'm raising my own Natu and Hoothoot, but I want to know more about their evolutions. Can you show me {COLOR GREEN}complete Pokédex entries of Xatu and Noctowl{COLOR DARK_GRAY}?"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_XATU_AND_NOCTOWL)
+    }
+    else
+    {
+        msgbox(format("Chaire, hello! Did you go learn more about Xatu and Noctowl for me?"))
+        closemessage
+
+        getcaughtmon(SPECIES_XATU)
+        if(var(VAR_RESULT) == 1) // caught a Xatu! now check for Noctowl
+        {
+            getcaughtmon(SPECIES_NOCTOWL)
+        }
+        delay(30)
+
+        // VAR_RESULT should only be true if caught both Xatu and Noctowl
+        if(var(VAR_RESULT) == 0)
+        {
+            msgbox(format("It looks like your Pokédex doesn't have all their data yet.\p Let me know when you have {COLOR GREEN}completed Pokédex pages for Xatu and Noctowl{COLOR DARK_GRAY}! I'd love to learn more about the Pokémon I'm raising and the history of the city."))
+            closemessage
+        }
+        else
+        {
+            applymovement(1, Common_Movement_Heart)
+            waitmovement(0)
+            delay(15)
+            speakername("Bird Lady")
+            msgbox(format("Wow, their Pokédex pages have so much information, this is incredible! Xatu, a Pokémon burdened with infinite knowledge, and Noctowl, a Pokémon with endless wisdom...\p I'll stop gushing about them now, sorry. Point is, these Pokémon are super important to me, so thank you for showing me the Pokédex pages! Here, I want you to have this."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_WISE_GLASSES)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_XATU_AND_NOCTOWL)
+        }
+    }
+}
+
+script SofosCity_House5_EventScript_Natu
+{
+    lock
+    faceplayer
+    speakername("Natu")
+    playmoncry(SPECIES_NATU, CRY_MODE_NORMAL)
+    msgbox("Chee...")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script SofosCity_House5_EventScript_Hoothoot
+{
+    lock
+    faceplayer
+    speakername("Hoothoot")
+    playmoncry(SPECIES_HOOTHOOT, CRY_MODE_NORMAL)
+    msgbox("Hoo! Ooo!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

@@ -240,3 +240,9 @@ const u16 gMetatileAttributes_JusmailGym[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_Riverwalk[] = INCBIN_U16("data/tilesets/secondary/riverwalk/metatiles.bin");
 const u16 gMetatileAttributes_Riverwalk[] = INCBIN_U16("data/tilesets/secondary/riverwalk/metatile_attributes.bin");
+
+const u16 gMetatiles_SofosGym[] = INCBIN_U16("data/tilesets/secondary/sofos_gym/metatiles.bin");
+const u16 gMetatileAttributes_SofosGym[] = INCBIN_U16("data/tilesets/secondary/sofos_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_Acropolis[] = INCBIN_U16("data/tilesets/secondary/acropolis/metatiles.bin");
+const u16 gMetatileAttributes_Acropolis[] = INCBIN_U16("data/tilesets/secondary/acropolis/metatile_attributes.bin");

@@ -5150,6 +5150,126 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/SofosCity_Mart/border.bin",
       "blockdata_filepath": "data/layouts/SofosCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_GYM",
+      "name": "SofosCity_Gym_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SofosGym",
+      "border_filepath": "data/layouts/SofosCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_HOUSE1",
+      "name": "SofosCity_House1_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/SofosCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_HOUSE2",
+      "name": "SofosCity_House2_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/SofosCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_HOUSE3",
+      "name": "SofosCity_House3_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/SofosCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_HOUSE4",
+      "name": "SofosCity_House4_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/SofosCity_House4/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_House4/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_HOUSE5",
+      "name": "SofosCity_House5_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/SofosCity_House5/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_House5/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_HOUSE6",
+      "name": "SofosCity_House6_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/SofosCity_House6/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_House6/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_HOUSE7",
+      "name": "SofosCity_House7_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/SofosCity_House7/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_House7/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_HOUSE8",
+      "name": "SofosCity_House8_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/SofosCity_House8/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_House8/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_HOUSE9",
+      "name": "SofosCity_House9_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/SofosCity_House9/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_House9/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_ACROPOLIS",
+      "name": "SofosCity_Acropolis_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Acropolis",
+      "border_filepath": "data/layouts/SofosCity_Acropolis/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_Acropolis/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOFOS_CITY_SHARD_EXCHANGE_HOUSE",
+      "name": "SofosCity_ShardExchangeHouse_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/SofosCity_ShardExchangeHouse/border.bin",
+      "blockdata_filepath": "data/layouts/SofosCity_ShardExchangeHouse/map.bin"
     }
   ]
 }

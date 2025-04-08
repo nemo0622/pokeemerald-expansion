@@ -97,12 +97,12 @@
 #define TRAINER_SOFOS_CITY_CHIMERA_GRUNT                         91
 #define TRAINER_SATYRSLAIR_CHIMERA_GRUNT_1                        92
 #define TRAINER_SATYRSLAIR_CHIMERA_GRUNT_2                        93
-#define TRAINER_BROOKE_1                     94
-#define TRAINER_JENNIFER                     95
-#define TRAINER_HOPE                         96
-#define TRAINER_SHANNON                      97
-#define TRAINER_MICHELLE                     98
-#define TRAINER_CAROLINE                     99
+#define TRAINER_SOFOSGYM_BROOKE                     94 // 0x55E i think
+#define TRAINER_SOFOSGYM_TYRIEN                     95
+#define TRAINER_SOFOSGYM_SAPPHA                         96
+#define TRAINER_SOFOSGYM_ARISTO                      97
+#define TRAINER_LEADER_MENESWO                     98
+#define TRAINER_LEADER_MENESWO_HARD                     99
 #define TRAINER_JULIE                       100
 #define TRAINER_BROOKE_2                    101
 #define TRAINER_BROOKE_3                    102

@@ -389,6 +389,136 @@ JusmailTown_EventScript_WishingWellSign::
 	end
 
 
+JusmailTown_EventScript_CyclingMan::
+# 471 "data/maps/JusmailTown/scripts.pory"
+	lock
+# 472 "data/maps/JusmailTown/scripts.pory"
+	faceplayer
+# 473 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CyclingMan_Text_0
+# 476 "data/maps/JusmailTown/scripts.pory"
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_LOVESTRUCK_BIKER
+# 477 "data/maps/JusmailTown/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq JusmailTown_EventScript_CyclingMan_2
+# 486 "data/maps/JusmailTown/scripts.pory"
+	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_LOVESTRUCK_BIKER
+# 487 "data/maps/JusmailTown/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq JusmailTown_EventScript_CyclingMan_4
+# 497 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingMan_Text_3
+# 498 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 500 "data/maps/JusmailTown/scripts.pory"
+	checkitem ITEM_HEART_SCALE
+# 501 "data/maps/JusmailTown/scripts.pory"
+	delay 30
+# 503 "data/maps/JusmailTown/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq JusmailTown_EventScript_CyclingMan_7
+# 511 "data/maps/JusmailTown/scripts.pory"
+	applymovement 16, Common_Movement_ExclamationMark
+# 512 "data/maps/JusmailTown/scripts.pory"
+	waitmovement 0
+# 513 "data/maps/JusmailTown/scripts.pory"
+	delay 15
+# 514 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CyclingMan_Text_0
+# 515 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingMan_Text_5
+# 516 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 518 "data/maps/JusmailTown/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 519 "data/maps/JusmailTown/scripts.pory"
+	delay 30
+# 520 "data/maps/JusmailTown/scripts.pory"
+	clearflag FLAG_HIDE_CYCLING_WOMAN_JUSMAIL
+# 521 "data/maps/JusmailTown/scripts.pory"
+	addobject 17
+# 522 "data/maps/JusmailTown/scripts.pory"
+	delay 30
+# 523 "data/maps/JusmailTown/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 524 "data/maps/JusmailTown/scripts.pory"
+	delay 20
+# 526 "data/maps/JusmailTown/scripts.pory"
+	applymovement 16, Common_Movement_Heart
+# 527 "data/maps/JusmailTown/scripts.pory"
+	waitmovement 0
+# 528 "data/maps/JusmailTown/scripts.pory"
+	delay 15
+# 529 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CyclingMan_Text_0
+# 530 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingMan_Text_6
+# 531 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 532 "data/maps/JusmailTown/scripts.pory"
+	giveitem ITEM_LOVE_BALL, 5
+# 533 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 534 "data/maps/JusmailTown/scripts.pory"
+	delay 5
+# 535 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CyclingMan_Text_0
+# 536 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingMan_Text_7
+# 537 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 539 "data/maps/JusmailTown/scripts.pory"
+	delay 20
+# 540 "data/maps/JusmailTown/scripts.pory"
+	completequest QUEST_LOVESTRUCK_BIKER
+	return
+
+JusmailTown_EventScript_CyclingMan_2:
+# 479 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingMan_Text_1
+# 480 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 481 "data/maps/JusmailTown/scripts.pory"
+	release
+	end
+
+JusmailTown_EventScript_CyclingMan_4:
+# 489 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingMan_Text_2
+# 490 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 492 "data/maps/JusmailTown/scripts.pory"
+	delay 20
+# 493 "data/maps/JusmailTown/scripts.pory"
+	startquest QUEST_LOVESTRUCK_BIKER
+	return
+
+JusmailTown_EventScript_CyclingMan_7:
+# 505 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CyclingMan_Text_0
+# 506 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingMan_Text_4
+# 507 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+	return
+
+
+JusmailTown_EventScript_CyclingWoman::
+# 547 "data/maps/JusmailTown/scripts.pory"
+	lock
+# 548 "data/maps/JusmailTown/scripts.pory"
+	faceplayer
+# 549 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CyclingWoman_Text_0
+# 550 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingWoman_Text_1
+# 551 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 552 "data/maps/JusmailTown/scripts.pory"
+	release
+	end
+
+
 JusmailTown_EventScript_DirectionSign_Text_0:
 # 17 "data/maps/JusmailTown/scripts.pory"
 	.string "Jusmail Town\n"
@@ -561,6 +691,74 @@ JusmailTown_EventScript_WishingWellSign_Text_1:
 	.string "Use Wishing Stars at the Wishing Well!\n"
 	.string "POKéMON are granted to those who seek\l"
 	.string "them!$"
+
+JusmailTown_EventScript_CyclingMan_Text_0:
+# 473 "data/maps/JusmailTown/scripts.pory"
+	.string "Cycling Man$"
+
+JusmailTown_EventScript_CyclingMan_Text_1:
+# 479 "data/maps/JusmailTown/scripts.pory"
+	.string "Thanks again for helping us get\n"
+	.string "together! Now we can go cycling\l"
+	.string "together every day!$"
+
+JusmailTown_EventScript_CyclingMan_Text_2:
+# 489 "data/maps/JusmailTown/scripts.pory"
+	.string "Sigh... SIGHHH...\p"
+	.string "Oh? Sorry, I've just been so down in the\n"
+	.string "dumps. I saw online that girls only like\l"
+	.string "you if you give them a Heart Scale, but\l"
+	.string "I can't find one...\p"
+	.string "I know! You seem nice, help a guy out! If\n"
+	.string "you could find a {COLOR GREEN}Heart Scale{COLOR DARK_GRAY} for me, I'll\l"
+	.string "be in your debt!$"
+
+JusmailTown_EventScript_CyclingMan_Text_3:
+# 497 "data/maps/JusmailTown/scripts.pory"
+	.string "Hm? Oh, I remember you! Did you find a\n"
+	.string "{COLOR GREEN}Heart Scale{COLOR DARK_GRAY} for me?$"
+
+JusmailTown_EventScript_CyclingMan_Text_4:
+# 506 "data/maps/JusmailTown/scripts.pory"
+	.string "No? That's alright, I've been trying to\n"
+	.string "find one, but it takes forever.\p"
+	.string "I heard that wild Finneon can be found\n"
+	.string "carrying them, and that sometimes they\l"
+	.string "show up as Hidden Items around the\l"
+	.string "region. Please, help me find a {COLOR GREEN}Heart\l"
+	.string "Scale{COLOR DARK_GRAY}!$"
+
+JusmailTown_EventScript_CyclingMan_Text_5:
+# 515 "data/maps/JusmailTown/scripts.pory"
+	.string "A Heart Scale! It's even more beautiful\n"
+	.string "than I imagined... she'll definitely like\l"
+	.string "this!\p"
+	.string "I'll ride to her house and give it to her\n"
+	.string "right now! Stay right there!$"
+
+JusmailTown_EventScript_CyclingMan_Text_6:
+# 530 "data/maps/JusmailTown/scripts.pory"
+	.string "It totally worked, she loved it! Look\n"
+	.string "who's got a girlfriend now!\p"
+	.string "I'm so happy right now! Here, take this -\n"
+	.string "it's all thanks to you!$"
+
+JusmailTown_EventScript_CyclingMan_Text_7:
+# 536 "data/maps/JusmailTown/scripts.pory"
+	.string "Those are {COLOR GREEN}5 Love Balls{COLOR DARK_GRAY}. I'm so in love, I\n"
+	.string "ended up buying a bunch while I was out\l"
+	.string "shopping, ehehe!$"
+
+JusmailTown_EventScript_CyclingWoman_Text_0:
+# 549 "data/maps/JusmailTown/scripts.pory"
+	.string "Cycling Woman$"
+
+JusmailTown_EventScript_CyclingWoman_Text_1:
+# 550 "data/maps/JusmailTown/scripts.pory"
+	.string "Ahaha, he's so funny! Why'd he think he\n"
+	.string "needed a Heart Scale to ask me out? We\l"
+	.string "literally ride our bikes together every\l"
+	.string "day, of course I liked him back!$"
 
 JusmailTown_Text_RaniaDefeated::
 # 191 "data/maps/JusmailTown/scripts.pory"

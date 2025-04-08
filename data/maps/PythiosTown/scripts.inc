@@ -722,114 +722,190 @@ PythiosTown_EventScripts_NPC_ManBlockingGym::
 	end
 
 
-PythiosTown_EventScripts_PIRAEUS::
+PythiosTown_EventScript_Athlete::
 # 417 "data/maps/PythiosTown/scripts.pory"
 	lock
 # 418 "data/maps/PythiosTown/scripts.pory"
 	faceplayer
 # 419 "data/maps/PythiosTown/scripts.pory"
+	speakername PythiosTown_EventScript_Athlete_Text_0
+# 422 "data/maps/PythiosTown/scripts.pory"
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_PYTHIOS_REQUEST_QUICK_BALL
+# 423 "data/maps/PythiosTown/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq PythiosTown_EventScript_Athlete_2
+# 432 "data/maps/PythiosTown/scripts.pory"
+	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_PYTHIOS_REQUEST_QUICK_BALL
+# 433 "data/maps/PythiosTown/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PythiosTown_EventScript_Athlete_4
+# 443 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_Athlete_Text_3
+# 444 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 446 "data/maps/PythiosTown/scripts.pory"
+	checkitem ITEM_QUICK_BALL, 3
+# 447 "data/maps/PythiosTown/scripts.pory"
+	delay 30
+# 449 "data/maps/PythiosTown/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PythiosTown_EventScript_Athlete_7
+# 457 "data/maps/PythiosTown/scripts.pory"
+	speakername PythiosTown_EventScript_Athlete_Text_0
+# 458 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_Athlete_Text_5
+# 459 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 460 "data/maps/PythiosTown/scripts.pory"
+	removeitem ITEM_QUICK_BALL, 3
+# 461 "data/maps/PythiosTown/scripts.pory"
+	giveitem ITEM_ULTRA_BALL, 3
+# 462 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 464 "data/maps/PythiosTown/scripts.pory"
+	delay 20
+# 465 "data/maps/PythiosTown/scripts.pory"
+	completequest QUEST_PYTHIOS_REQUEST_QUICK_BALL
+	return
+
+PythiosTown_EventScript_Athlete_2:
+# 425 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_Athlete_Text_1
+# 426 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 427 "data/maps/PythiosTown/scripts.pory"
+	release
+	end
+
+PythiosTown_EventScript_Athlete_4:
+# 435 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_Athlete_Text_2
+# 436 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 438 "data/maps/PythiosTown/scripts.pory"
+	delay 20
+# 439 "data/maps/PythiosTown/scripts.pory"
+	startquest QUEST_PYTHIOS_REQUEST_QUICK_BALL
+	return
+
+PythiosTown_EventScript_Athlete_7:
+# 451 "data/maps/PythiosTown/scripts.pory"
+	speakername PythiosTown_EventScript_Athlete_Text_0
+# 452 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_Athlete_Text_4
+# 453 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+	return
+
+
+PythiosTown_EventScripts_PIRAEUS::
+# 472 "data/maps/PythiosTown/scripts.pory"
+	lock
+# 473 "data/maps/PythiosTown/scripts.pory"
+	faceplayer
+# 474 "data/maps/PythiosTown/scripts.pory"
 	goto_if_unset FLAG_MET_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_2
-# 428 "data/maps/PythiosTown/scripts.pory"
+# 483 "data/maps/PythiosTown/scripts.pory"
 	goto_if_set FLAG_MET_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_10
 PythiosTown_EventScripts_PIRAEUS_8:
-# 463 "data/maps/PythiosTown/scripts.pory"
+# 518 "data/maps/PythiosTown/scripts.pory"
 	goto_if_set FLAG_GOT_BADGE_FOR_PIRAEUS, PythiosTown_EventScripts_PIRAEUS_7
 PythiosTown_EventScripts_PIRAEUS_6:
-# 471 "data/maps/PythiosTown/scripts.pory"
+# 526 "data/maps/PythiosTown/scripts.pory"
 	goto_if_set FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_5
 PythiosTown_EventScripts_PIRAEUS_1:
-# 475 "data/maps/PythiosTown/scripts.pory"
+# 530 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
 PythiosTown_EventScripts_PIRAEUS_2:
-# 421 "data/maps/PythiosTown/scripts.pory"
+# 476 "data/maps/PythiosTown/scripts.pory"
 	speakername PythiosTown_EventScripts_PIRAEUS_Text_0
-# 422 "data/maps/PythiosTown/scripts.pory"
+# 477 "data/maps/PythiosTown/scripts.pory"
 	msgbox PythiosTown_EventScripts_PIRAEUS_Text_1
-# 423 "data/maps/PythiosTown/scripts.pory"
+# 478 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-# 424 "data/maps/PythiosTown/scripts.pory"
+# 479 "data/maps/PythiosTown/scripts.pory"
 	setflag FLAG_MET_PIRAEUS_PYTHIOS_TOWN
-# 425 "data/maps/PythiosTown/scripts.pory"
+# 480 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
 PythiosTown_EventScripts_PIRAEUS_3:
-# 430 "data/maps/PythiosTown/scripts.pory"
+# 485 "data/maps/PythiosTown/scripts.pory"
 	speakername PythiosTown_EventScripts_PIRAEUS_Text_0
-# 431 "data/maps/PythiosTown/scripts.pory"
+# 486 "data/maps/PythiosTown/scripts.pory"
 	msgbox PythiosTown_EventScripts_PIRAEUS_Text_2
-# 432 "data/maps/PythiosTown/scripts.pory"
+# 487 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-# 433 "data/maps/PythiosTown/scripts.pory"
+# 488 "data/maps/PythiosTown/scripts.pory"
 	delay 60
-# 434 "data/maps/PythiosTown/scripts.pory"
+# 489 "data/maps/PythiosTown/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, PythiosTown_EventScripts_PIRAEUS_14
-# 444 "data/maps/PythiosTown/scripts.pory"
+# 499 "data/maps/PythiosTown/scripts.pory"
 	speakername PythiosTown_EventScripts_PIRAEUS_Text_0
-# 445 "data/maps/PythiosTown/scripts.pory"
+# 500 "data/maps/PythiosTown/scripts.pory"
 	msgbox PythiosTown_EventScripts_PIRAEUS_Text_4
-# 446 "data/maps/PythiosTown/scripts.pory"
+# 501 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-# 447 "data/maps/PythiosTown/scripts.pory"
+# 502 "data/maps/PythiosTown/scripts.pory"
 	setflag FLAG_GOT_BADGE_FOR_PIRAEUS
-# 448 "data/maps/PythiosTown/scripts.pory"
+# 503 "data/maps/PythiosTown/scripts.pory"
 	delay 30
-# 449 "data/maps/PythiosTown/scripts.pory"
+# 504 "data/maps/PythiosTown/scripts.pory"
 	applymovement 17, Common_Movement_ExclamationMark
-# 450 "data/maps/PythiosTown/scripts.pory"
+# 505 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
-# 451 "data/maps/PythiosTown/scripts.pory"
+# 506 "data/maps/PythiosTown/scripts.pory"
 	delay 20
-# 452 "data/maps/PythiosTown/scripts.pory"
+# 507 "data/maps/PythiosTown/scripts.pory"
 	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
-# 453 "data/maps/PythiosTown/scripts.pory"
+# 508 "data/maps/PythiosTown/scripts.pory"
 	msgbox PythiosTown_EventScripts_PIRAEUS_Text_6
-# 454 "data/maps/PythiosTown/scripts.pory"
+# 509 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-# 456 "data/maps/PythiosTown/scripts.pory"
+# 511 "data/maps/PythiosTown/scripts.pory"
 	delay 20
-# 457 "data/maps/PythiosTown/scripts.pory"
+# 512 "data/maps/PythiosTown/scripts.pory"
 	startquest QUEST_HELP_PIRAEUS
-# 459 "data/maps/PythiosTown/scripts.pory"
+# 514 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
 PythiosTown_EventScripts_PIRAEUS_4:
-# 465 "data/maps/PythiosTown/scripts.pory"
+# 520 "data/maps/PythiosTown/scripts.pory"
 	speakername PythiosTown_EventScripts_PIRAEUS_Text_5
-# 466 "data/maps/PythiosTown/scripts.pory"
+# 521 "data/maps/PythiosTown/scripts.pory"
 	msgbox PythiosTown_EventScripts_PIRAEUS_Text_7
-# 467 "data/maps/PythiosTown/scripts.pory"
+# 522 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-# 468 "data/maps/PythiosTown/scripts.pory"
+# 523 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
 PythiosTown_EventScripts_PIRAEUS_5:
-# 473 "data/maps/PythiosTown/scripts.pory"
+# 528 "data/maps/PythiosTown/scripts.pory"
 	goto Common_EventScript_Piraeus
 	goto PythiosTown_EventScripts_PIRAEUS_1
 
 PythiosTown_EventScripts_PIRAEUS_7:
-# 463 "data/maps/PythiosTown/scripts.pory"
+# 518 "data/maps/PythiosTown/scripts.pory"
 	goto_if_unset FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN, PythiosTown_EventScripts_PIRAEUS_4
 	goto PythiosTown_EventScripts_PIRAEUS_6
 
 PythiosTown_EventScripts_PIRAEUS_10:
-# 428 "data/maps/PythiosTown/scripts.pory"
+# 483 "data/maps/PythiosTown/scripts.pory"
 	goto_if_unset FLAG_GOT_BADGE_FOR_PIRAEUS, PythiosTown_EventScripts_PIRAEUS_3
 	goto PythiosTown_EventScripts_PIRAEUS_8
 
 PythiosTown_EventScripts_PIRAEUS_14:
-# 436 "data/maps/PythiosTown/scripts.pory"
+# 491 "data/maps/PythiosTown/scripts.pory"
 	speakername PythiosTown_EventScripts_PIRAEUS_Text_0
-# 437 "data/maps/PythiosTown/scripts.pory"
+# 492 "data/maps/PythiosTown/scripts.pory"
 	msgbox PythiosTown_EventScripts_PIRAEUS_Text_3
-# 438 "data/maps/PythiosTown/scripts.pory"
+# 493 "data/maps/PythiosTown/scripts.pory"
 	closemessage
-# 439 "data/maps/PythiosTown/scripts.pory"
+# 494 "data/maps/PythiosTown/scripts.pory"
 	release
 	end
 
@@ -1115,25 +1191,63 @@ PythiosTown_EventScripts_NPC_ManBlockingGym_Text_1:
 	.string "probably meeting with people in the\l"
 	.string "{COLOR GREEN}east of town{COLOR DARK_GRAY}.$"
 
+PythiosTown_EventScript_Athlete_Text_0:
+# 419 "data/maps/PythiosTown/scripts.pory"
+	.string "Athlete$"
+
+PythiosTown_EventScript_Athlete_Text_1:
+# 425 "data/maps/PythiosTown/scripts.pory"
+	.string "Thanks to those Quick Balls, I'll be able\n"
+	.string "to catch Pokémon while I run!$"
+
+PythiosTown_EventScript_Athlete_Text_2:
+# 435 "data/maps/PythiosTown/scripts.pory"
+	.string "I'm not having any luck catching\n"
+	.string "Pokémon on my daily runs. I only have\l"
+	.string "time to throw a single Poké ball, but\l"
+	.string "they never stay in!\p"
+	.string "{COLOR GREEN}Quick Balls{COLOR DARK_GRAY} would be perfect for me! If\n"
+	.string "you could bring me {COLOR GREEN}3 Quick Balls{COLOR DARK_GRAY}, that\l"
+	.string "would be great!$"
+
+PythiosTown_EventScript_Athlete_Text_3:
+# 443 "data/maps/PythiosTown/scripts.pory"
+	.string "Did you bring me those {COLOR GREEN}3 Quick Balls{COLOR DARK_GRAY}?$"
+
+PythiosTown_EventScript_Athlete_Text_4:
+# 452 "data/maps/PythiosTown/scripts.pory"
+	.string "Doesn't look like it, that's a shame.\p"
+	.string "Let me know if you have {COLOR GREEN}3 Quick Balls{COLOR DARK_GRAY}. I\n"
+	.string "want to catch Pokémon faster while I\l"
+	.string "run!$"
+
+PythiosTown_EventScript_Athlete_Text_5:
+# 458 "data/maps/PythiosTown/scripts.pory"
+	.string "Oh, great! I'll take those... thanks!\p"
+	.string "Hm? Ah, right, I'll give you a little\n"
+	.string "something. These are some of the Ultra\l"
+	.string "Balls I was trying to use before. Maybe\l"
+	.string "they'll work for you!$"
+
 PythiosTown_EventScripts_PIRAEUS_Text_0:
-# 421 "data/maps/PythiosTown/scripts.pory"
+# 476 "data/maps/PythiosTown/scripts.pory"
 	.string "Strange Sailor$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_1:
-# 422 "data/maps/PythiosTown/scripts.pory"
+# 477 "data/maps/PythiosTown/scripts.pory"
 	.string "Chaire! Hey! I need a strong Trainer to\n"
 	.string "help me out of a bind.\p"
 	.string "Come to me when you have the {COLOR GREEN}Pythios\n"
 	.string "Town Gym Badge{COLOR DARK_GRAY}... please!$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_2:
-# 431 "data/maps/PythiosTown/scripts.pory"
+# 486 "data/maps/PythiosTown/scripts.pory"
 	.string "Thanks for coming back, I thought you\n"
 	.string "might've left for good! Lemme check\l"
 	.string "your {COLOR GREEN}Badges{COLOR DARK_GRAY}...$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_3:
-# 437 "data/maps/PythiosTown/scripts.pory"
+# 492 "data/maps/PythiosTown/scripts.pory"
 	.string "Nope, only 2 Gym Badges. That might not\n"
 	.string "be enough.\p"
 	.string "Come back when you have the {COLOR GREEN}Pythios\n"
@@ -1141,7 +1255,7 @@ PythiosTown_EventScripts_PIRAEUS_Text_3:
 	.string "you're a strong Trainer.$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_4:
-# 445 "data/maps/PythiosTown/scripts.pory"
+# 500 "data/maps/PythiosTown/scripts.pory"
 	.string "Hey, you got the Gym Badge! You must be\n"
 	.string "pretty strong.\p"
 	.string "So look, here's my situation. Some Team\n"
@@ -1156,18 +1270,18 @@ PythiosTown_EventScripts_PIRAEUS_Text_4:
 	.string "Pythios Town{COLOR DARK_GRAY}. Please, help me out here!$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_5:
-# 452 "data/maps/PythiosTown/scripts.pory"
+# 507 "data/maps/PythiosTown/scripts.pory"
 	.string "Piraeus$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_6:
-# 453 "data/maps/PythiosTown/scripts.pory"
+# 508 "data/maps/PythiosTown/scripts.pory"
 	.string "Oh, and tell 'em {COLOR GREEN}Piraeus{COLOR DARK_GRAY} sent you!\n"
 	.string "Piraeus the Strong! No, Piraeus the\l"
 	.string "Wise... maybe even Piraeus the Great!\l"
 	.string "Fwahaha!$"
 
 PythiosTown_EventScripts_PIRAEUS_Text_7:
-# 466 "data/maps/PythiosTown/scripts.pory"
+# 521 "data/maps/PythiosTown/scripts.pory"
 	.string "The Team Chimera Admin is {COLOR GREEN}east of\n"
 	.string "Pythios Town{COLOR DARK_GRAY}, last I saw. Let me know\l"
 	.string "when you've taken care of them!$"

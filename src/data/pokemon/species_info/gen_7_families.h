@@ -1254,7 +1254,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     },
 #endif //P_FAMILY_GRUBBIN
 
-#if P_FAMILY_CRABRAWLER
+#if P_FAMILY_CRABRAWLE
     [SPECIES_CRABRAWLER] =
     {
         .baseHP        = 47,
@@ -1267,7 +1267,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = 225,
         .expYield = 68,
         .evYield_Attack = 1,
-        .itemRare = ITEM_ASPEAR_BERRY,
+        .itemCommon = ITEM_ORAN_BERRY,
+        .itemRare = ITEM_SITRUS_BERRY,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -1331,7 +1332,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = 60,
         .expYield = 167,
         .evYield_Attack = 2,
-        .itemRare = ITEM_CHERI_BERRY,
+        .itemCommon = ITEM_ORAN_BERRY,
+        .itemRare = ITEM_SITRUS_BERRY,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -3578,7 +3580,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .speciesName = _("Oranguru"),
         .cryId = CRY_ORANGURU,
         .natDexNum = NATIONAL_DEX_ORANGURU,
-        .categoryName = _("Sage"),
+        .categoryName = _("Wild Sage"),
         .height = 15,
         .weight = 760,
         .description = COMPOUND_STRING(
@@ -3603,7 +3605,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_Oranguru,
         .iconSprite = gMonIcon_Oranguru,
         .iconPalIndex = 0,
-        SHADOW(-1, 6, SHADOW_SIZE_L)
+        SHADOW(-1, 4, SHADOW_SIZE_L)
         FOOTPRINT(Oranguru)
         OVERWORLD(
             sPicTable_Oranguru,
@@ -3667,7 +3669,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_Passimian,
         .iconSprite = gMonIcon_Passimian,
         .iconPalIndex = 1,
-        SHADOW(-2, 18, SHADOW_SIZE_L)
+        SHADOW(-2, 8, SHADOW_SIZE_L)
         FOOTPRINT(Passimian)
         OVERWORLD(
             sPicTable_Passimian,
@@ -4277,7 +4279,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .speciesName = _("Komala"),
         .cryId = CRY_KOMALA,
         .natDexNum = NATIONAL_DEX_KOMALA,
-        .categoryName = _("Drowsing"),
+        .categoryName = _("SleepyBear"),
         .height = 4,
         .weight = 199,
         .description = COMPOUND_STRING(

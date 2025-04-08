@@ -412,6 +412,61 @@ script PythiosTown_EventScripts_NPC_ManBlockingGym
     end
 }
 
+script PythiosTown_EventScript_Athlete
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_PYTHIOS_REQUEST_QUICK_BALL)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Thanks to those Quick Balls, I'll be able to catch Pokémon while I run!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_PYTHIOS_REQUEST_QUICK_BALL)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("I'm not having any luck catching Pokémon on my daily runs. I only have time to throw a single Poké ball, but they never stay in!\p {COLOR GREEN}Quick Balls{COLOR DARK_GRAY} would be perfect for me! If you could bring me {COLOR GREEN}3 Quick Balls{COLOR DARK_GRAY}, that would be great!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_PYTHIOS_REQUEST_QUICK_BALL)
+    }
+    else
+    {
+        msgbox(format("Did you bring me those {COLOR GREEN}3 Quick Balls{COLOR DARK_GRAY}?"))
+        closemessage
+
+        checkitem(ITEM_QUICK_BALL, 3)
+        delay(30)
+
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Athlete")
+            msgbox(format("Doesn't look like it, that's a shame.\p Let me know if you have {COLOR GREEN}3 Quick Balls{COLOR DARK_GRAY}. I want to catch Pokémon faster while I run!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Athlete")
+            msgbox(format("Oh, great! I'll take those... thanks!\p Hm? Ah, right, I'll give you a little something. These are some of the Ultra Balls I was trying to use before. Maybe they'll work for you!"))
+            closemessage
+            removeitem(ITEM_QUICK_BALL, 3)
+            giveitem(ITEM_ULTRA_BALL, 3)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_PYTHIOS_REQUEST_QUICK_BALL)
+        }
+    }
+}
+
 script PythiosTown_EventScripts_PIRAEUS
 {
     lock

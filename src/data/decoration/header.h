@@ -852,15 +852,15 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_CUTE_POSTER,
     },
 
-    [DECOR_PIKA_POSTER] =
+    [DECOR_OPAL_FISH_POSTER] =
     {
-        .id = DECOR_PIKA_POSTER,
-        .name = _("Pika Poster"),
+        .id = DECOR_OPAL_FISH_POSTER,
+        .name = _("OpalFish Poster"),
         .permission = DECORPERM_NA_WALL,
         .shape = DECORSHAPE_2x1,
         .category = DECORCAT_POSTER,
         .price = 1500,
-        .description = DecorDesc_PIKA_POSTER,
+        .description = DecorDesc_OPAL_FISH_POSTER,
         .tiles = DecorGfx_PIKA_POSTER,
     },
 

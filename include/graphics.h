@@ -3407,5 +3407,7 @@ extern const u32 gTrainerFrontPic_Worker[];
 extern const u32 gTrainerPalette_Worker[];
 extern const u32 gTrainerFrontPic_Diver[];
 extern const u32 gTrainerPalette_Diver[];
+extern const u32 gTrainerFrontPic_Artist[];
+extern const u32 gTrainerPalette_Artist[];
 
 #endif //GUARD_GRAPHICS_H

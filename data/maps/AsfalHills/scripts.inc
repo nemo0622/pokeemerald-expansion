@@ -567,16 +567,18 @@ AsfalHills_EventScript_NikoWaitingForPlayer::
 # 437 "data/maps/AsfalHills/scripts.pory"
 	setflag FLAG_HIDE_BLOCKING_SOFOS_GYM
 # 438 "data/maps/AsfalHills/scripts.pory"
-	delay 20
+	setflag FLAG_UNLOCKED_TERASTALLIZATION
 # 439 "data/maps/AsfalHills/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
-# 440 "data/maps/AsfalHills/scripts.pory"
-	delay 10
-# 442 "data/maps/AsfalHills/scripts.pory"
 	delay 20
+# 440 "data/maps/AsfalHills/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 441 "data/maps/AsfalHills/scripts.pory"
+	delay 10
 # 443 "data/maps/AsfalHills/scripts.pory"
+	delay 20
+# 444 "data/maps/AsfalHills/scripts.pory"
 	completequest QUEST_BEAT_CHIMERA_SOFOS_CITY
-# 445 "data/maps/AsfalHills/scripts.pory"
+# 446 "data/maps/AsfalHills/scripts.pory"
 	releaseall
 	end
 

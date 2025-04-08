@@ -1,0 +1,78 @@
+mapscripts SofosCity_House2_MapScripts {}
+
+script SofosCity_House2_LittleBoyOnPiano
+{
+    lock
+    faceplayer
+    speakername("Musical Boy")
+    msgbox(format("Ehehe, I don't know what keys I'm pressing, but my grandma thinks I'm great!"))
+    closemessage
+    applymovement(1, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_House2_GrandmaFallingAsleep
+{
+    lock
+    faceplayer
+    speakername("Sleepy Lady")
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_BRING_GRANDMA_AWAKENING)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Now I can listen to my grandson's musical performance! He's having fun, and that's what matters."))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_BRING_GRANDMA_AWAKENING)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Zzz... zzz...\p Oh! Gosh, how disrespectful of me. I'm finding it hard to stay awake while my grandson plays piano, but I don't want him to see me fall asleep during his performance.\p If I had an {COLOR GREEN}Awakening{COLOR DARK_GRAY}, maybe that would help me stay alert!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_BRING_GRANDMA_AWAKENING)
+    }
+    else
+    {
+        msgbox(format("Snooze... zzz...\p Hm? Oh, welcome back! Are you here to listen to my grandson's performance?"))
+        closemessage
+
+        checkitem(ITEM_AWAKENING)
+        delay(30)
+
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Sleepy Lady")
+            msgbox(format("Ah, I wish I had an {COLOR GREEN}Awakening{COLOR DARK_GRAY} to help me stay up."))
+            closemessage
+        }
+        else
+        {
+            applymovement(2, Common_Movement_Heart)
+            waitmovement(0)
+            delay(10)
+            speakername("Sleepy Lady")
+            msgbox(format("What's that? An {COLOR GREEN}Awakening{COLOR DARK_GRAY}, for me? I'll give it a try..."))
+            closemessage
+            removeitem(ITEM_AWAKENING)
+            delay(40)
+            speakername("Sleepy Lady")
+            msgbox(format("Wow, I feel 20 years younger! I'll have no problem staying awake now!\p You deserve a treat, sweetie. Take it!"))
+            closemessage
+            giveitem(ITEM_RARE_CANDY)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_BRING_GRANDMA_AWAKENING)
+        }
+    }
+    release
+    end
+}

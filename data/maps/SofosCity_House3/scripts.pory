@@ -1,0 +1,23 @@
+mapscripts SofosCity_House3_MapScripts {}
+
+script SofosCity_House3_EventScript_FatMan
+{
+    lock
+    faceplayer
+    speakername("Fat Man")
+    msgbox(format("The food here is delicious! I'm so glad we moved to the city. The only problem is, our neighbors upstairs can get pretty loud."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_House3_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("We moved here from a place way out in the countryside. The hustle-and-bustle of the city can be a lot to handle, but it was worth it for us. There's so much to see, so much to do!"))
+    closemessage
+    release
+    end
+}

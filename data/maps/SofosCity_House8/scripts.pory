@@ -1,0 +1,23 @@
+mapscripts SofosCity_House8_MapScripts {}
+
+script SofosCity_House8_EventScript_Man
+{
+    lock
+    faceplayer
+    speakername("Boy")
+    msgbox(format("In our school, we all have to try to learn music and theatre arts. Apparently, Sofos City was a center of culture a long time ago."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_House8_EventScript_HexManiac
+{
+    lock
+    faceplayer
+    speakername("Hex Lady")
+    msgbox(format("I should visit the {COLOR GREEN}Acropolis Temple{COLOR DARK_GRAY} to pay homage to the {COLOR GREEN}Elemental Beast Trio{COLOR DARK_GRAY}. They're originally from a faraway land to the east, but they've played a role in our history, too."))
+    closemessage
+    release
+    end
+}

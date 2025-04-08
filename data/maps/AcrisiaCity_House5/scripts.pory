@@ -10,3 +10,58 @@ script AcrisiaCity_House5_EventScript_Boy
     release
     end
 }
+
+script AcrisiaCity_House5_EventScript_PunkRocker
+{
+    lock
+    faceplayer
+    speakername("Punk Rocker")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_CATCH_BLITZLE)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("That Blitzle was really rockin'! I think I'll go catch one for myself!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_CATCH_BLITZLE)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Everyone around here is so obsessed with Pokémon, but I'm more into my electric guitar. I just don't see the appeal of being a Trainer.\p Maybe I haven't met the right Pokémon yet. My brother's talked about {COLOR GREEN}Blitzle{COLOR DARK_GRAY}, an Electric-type Pokémon with awesome stripes... Maybe if I {COLOR GREEN}see a Blitzle in-person{COLOR DARK_GRAY}, I'll understand what all the talk is about!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_CATCH_BLITZLE)
+    }
+    else
+    {
+        msgbox(format("Chaire! By any chance, do you have a {COLOR GREEN}Blitzle{COLOR DARK_GRAY} in your party that you could show me?"))
+        closemessage
+        checkforspecies(SPECIES_BLITZLE, OPEN_PARTY_SCREEN, AcrisiaCity_House5_EventScript_PunkRocker_ReactToBlitzle) // if has blitzle, go to script ReactToBlitzle
+        // if no blitzle, continue below
+        speakername("Punk Rocker")
+        msgbox(format("No Blitzle to show, huh? I still don't get why people put so much effort into Pokémon training.\p Come show me a {COLOR GREEN}Blitzle to see in-person{COLOR DARK_GRAY}. I think that might change my mind."))
+        closemessage
+    }
+    release
+    end
+}
+
+script AcrisiaCity_House5_EventScript_PunkRocker_ReactToBlitzle
+{
+    delay(20)
+    applymovement(2, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    speakername("Punk Rocker")
+    msgbox(format("Woah, a real Blitzle! It's so much cooler than I thought!\p I think I understand why people train Pokémon now. They're true partners, and it must be rewarding to see them grow for yourself.\p Speaking of rewards, I want you to have this!"))
+    closemessage
+    delay(5)
+    giveitem(ITEM_RARE_CANDY)
+
+    delay(20)
+    completequest(QUEST_CATCH_BLITZLE)
+}

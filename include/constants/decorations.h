@@ -72,9 +72,9 @@
 #define DECOR_RED_POSTER       68
 #define DECOR_BLUE_POSTER      69
 #define DECOR_DRAGON_POSTER    70 // replaces CUTE_POSTER, has Dragonair icon
-#define DECOR_PIKA_POSTER      71
+#define DECOR_OPAL_FISH_POSTER 71 // replaces PIKA_POSTER, has palette swapped relicanth
 #define DECOR_PUPPY_POSTER     72 // replaces LONG_POSTER; shows Hisuian and Kantonian Growlithe
-#define DECOR_SEA_POSTER       73
+#define DECOR_SEA_POSTER       73 // has a lil relicanth on it
 #define DECOR_SKY_POSTER       74
 #define DECOR_SUNSET_POSTER    75 // replaces KISS_POSTER; shows version of title screen sunset and ruins
 #define DECOR_PICHU_DOLL       76

@@ -1,0 +1,23 @@
+mapscripts SofosCity_House7_MapScripts {}
+
+script SofosCity_House7_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("I don't leave the city limits very often. I can get everything I need right here, and the wild Pokémon in the grass outside scare me!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_House7_EventScript_Twin
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    msgbox(format("We moved here from Kalami City! It was nice there, but now I get to play with my friends at the arcade!"))
+    closemessage
+    release
+    end
+}

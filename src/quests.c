@@ -803,52 +803,52 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_24, // FILL WITH EARLIER GAME QUEST
+	      gText_SideQuestName_24, // QUEST_CATCH_BLITZLE
 	      gText_SideQuestDesc_24,
 	      gText_SideQuestDoneDesc_24,
 	      gText_SideQuestMap24,
-	      OBJ_EVENT_GFX_RANIA,
+	      OBJ_EVENT_GFX_PUNK_ROCKER,
 	      OBJECT,
 	      NULL,
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_25, // FILL WITH EARLIER GAME QUEST
+	      gText_SideQuestName_25, // QUEST_LOVESTRUCK_BIKER
 	      gText_SideQuestDesc_25,
 	      gText_SideQuestDoneDesc_25,
 	      gText_SideQuestMap25,
-	      OBJ_EVENT_GFX_RANIA,
-	      OBJECT,
+	      ITEM_HEART_SCALE,
+	      ITEM,
 	      NULL,
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_26, // FILL WITH EARLIER GAME QUEST
+	      gText_SideQuestName_26, // QUEST_KALAMI_HEART_SCALE
 	      gText_SideQuestDesc_26,
 	      gText_SideQuestDoneDesc_26,
 	      gText_SideQuestMap26,
-	      OBJ_EVENT_GFX_RANIA,
-	      OBJECT,
+	      ITEM_HEART_SCALE,
+	      ITEM,
 	      NULL,
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_27, // FILL WITH EARLIER GAME QUEST
+	      gText_SideQuestName_27, // QUEST_KALAMI_EEVEE_POKEDEX
 	      gText_SideQuestDesc_27,
 	      gText_SideQuestDoneDesc_27,
 	      gText_SideQuestMap27,
-	      OBJ_EVENT_GFX_RANIA,
-	      OBJECT,
+	      SPECIES_EEVEE,
+	      PKMN,
 	      NULL,
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_28, // FILL WITH EARLIER GAME QUEST
+	      gText_SideQuestName_28, // QUEST_PYTHIOS_REQUEST_QUICK_BALL
 	      gText_SideQuestDesc_28,
 	      gText_SideQuestDoneDesc_28,
 	      gText_SideQuestMap28,
-	      OBJ_EVENT_GFX_RANIA,
-	      OBJECT,
+	      ITEM_QUICK_BALL,
+	      ITEM,
 	      NULL,
 	      0
 	),
@@ -888,6 +888,36 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	gText_SideQuestDesc_32,
 	gText_SideQuestMap32,
 	OBJ_EVENT_GFX_MAN_2,
+	OBJECT,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_33, // QUEST_BRING_GRANDMA_AWAKENING
+	gText_SideQuestDesc_33,
+	gText_SideQuestDesc_33,
+	gText_SideQuestMap33,
+	OBJ_EVENT_GFX_OLD_WOMAN,
+	OBJECT,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_34, // QUEST_5_PINBALL_POINTS
+	gText_SideQuestDesc_34,
+	gText_SideQuestDesc_34,
+	gText_SideQuestMap34,
+	OBJ_EVENT_GFX_SCIENTIST_2,
+	OBJECT,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_35, // QUEST_XATU_AND_NOCTOWL
+	gText_SideQuestDesc_35,
+	gText_SideQuestDesc_35,
+	gText_SideQuestMap35,
+	OBJ_EVENT_GFX_WOMAN_3,
 	OBJECT,
 	NULL,
 	0

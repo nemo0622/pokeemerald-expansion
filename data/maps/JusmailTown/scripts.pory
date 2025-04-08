@@ -465,3 +465,90 @@ script JusmailTown_EventScript_WishingWellSign
 	end
 
 }
+
+script JusmailTown_EventScript_CyclingMan
+{
+    lock
+    faceplayer
+    speakername("Cycling Man")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_LOVESTRUCK_BIKER)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Thanks again for helping us get together! Now we can go cycling together every day!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_LOVESTRUCK_BIKER)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Sigh... SIGHHH...\p Oh? Sorry, I've just been so down in the dumps. I saw online that girls only like you if you give them a Heart Scale, but I can't find one...\p I know! You seem nice, help a guy out! If you could find a {COLOR GREEN}Heart Scale{COLOR DARK_GRAY} for me, I'll be in your debt!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_LOVESTRUCK_BIKER)
+    }
+    else
+    {
+        msgbox(format("Hm? Oh, I remember you! Did you find a {COLOR GREEN}Heart Scale{COLOR DARK_GRAY} for me?"))
+        closemessage
+
+        checkitem(ITEM_HEART_SCALE)
+        delay(30)
+
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Cycling Man")
+            msgbox(format("No? That's alright, I've been trying to find one, but it takes forever.\p I heard that wild Finneon can be found carrying them, and that sometimes they show up as Hidden Items around the region. Please, help me find a {COLOR GREEN}Heart Scale{COLOR DARK_GRAY}!"))
+            closemessage
+        }
+        else
+        {
+            applymovement(16, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(15)
+            speakername("Cycling Man")
+            msgbox(format("A Heart Scale! It's even more beautiful than I imagined... she'll definitely like this!\p I'll ride to her house and give it to her right now! Stay right there!"))
+            closemessage
+
+            fadescreenswapbuffers(FADE_TO_BLACK)
+            delay(30)
+            clearflag(FLAG_HIDE_CYCLING_WOMAN_JUSMAIL)
+            addobject(17)
+            delay(30)
+            fadescreenswapbuffers(FADE_FROM_BLACK)
+            delay(20)
+
+            applymovement(16, Common_Movement_Heart)
+            waitmovement(0)
+            delay(15)
+            speakername("Cycling Man")
+            msgbox(format("It totally worked, she loved it! Look who's got a girlfriend now!\p I'm so happy right now! Here, take this - it's all thanks to you!"))
+            closemessage
+            giveitem(ITEM_LOVE_BALL, 5)
+            closemessage
+            delay(5)
+            speakername("Cycling Man")
+            msgbox(format("Those are {COLOR GREEN}5 Love Balls{COLOR DARK_GRAY}. I'm so in love, I ended up buying a bunch while I was out shopping, ehehe!"))
+            closemessage
+
+            delay(20)
+            completequest(QUEST_LOVESTRUCK_BIKER)
+        }
+    }
+}
+
+script JusmailTown_EventScript_CyclingWoman
+{
+    lock
+    faceplayer
+    speakername("Cycling Woman")
+    msgbox(format("Ahaha, he's so funny! Why'd he think he needed a Heart Scale to ask me out? We literally ride our bikes together every day, of course I liked him back!"))
+    closemessage
+    release
+    end
+}

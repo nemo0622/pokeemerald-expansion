@@ -278,5 +278,6 @@ EventScript_ResetAllMapFlags::
 	clearflag FLAG_INVISIBLE_DAY_NIGHT_CYCLE
 	setflag FLAG_SYS_QUEST_MENU_GET
 	setflag FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA
+	setflag FLAG_HIDE_CYCLING_WOMAN_JUSMAIL
 	call EventScript_ResetAllBerries
 	end

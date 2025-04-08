@@ -57,14 +57,14 @@ MAJOR TODOS:
 - ADD "Demo Compatability Update" FUNCTION
     - Runs EventScript_ResetAllBerries (warn user first!)
     - Set flags like FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA
+- GIVE WILD POKéMON BETTER HELD ITEMS
+    - Add Quest(s) of people requesting Heart Scales! Gives them an optional use
+    - Add Heart Scale hidden items around maps
 - REPLACE "Triathlete" with "Competitor" or something close to "Olympic Player"
 - Continue Mapping and NPC development
-    - Next: Erinys Path, Froslass Cavern, and onwards towards Sofos City
+    - Next: Complete Sofos City
         - Add Tyrantrum Exhibit tiles to a town square area in Sofos City!
         - CHANGE SOFOS CITY BUILDINGS to Gray Brick building by TrainerDX
-    - ADD NIKO TERASTALLIZATION QUEST TO ASFAL HILLS
-        - Quest: bring Niko the Tera Orb (obtained from a Team Chimera Admin hiding in Sofos City). He will examine it and see how it reacts with Tera Shards and the player's Pokémon. He lets the player keep the Tera Orb, and offers to change a Pokémon's Tera Type at the Acrisia University
-            - Team Chimera Admin could be hiding in an old, "abandoned" cave in the northern portion of Sofos City
     - Also rework existing areas based on Demo feedback
         - Add more quests! Requests for items, Pokédex entries, Pokémon, and more extensive ones like the Sandslash unbound quest!
 - Work on ideas from note on phone

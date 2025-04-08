@@ -5,7 +5,7 @@ script KalamiCity_House1_EventScript_Artist
     lock
     faceplayer
     speakername("Artist")
-    msgbox(format("I'm a digital artist of Pokémon environments. In fact, I make a lot of the Pokémon art for Pokédex entries!"))
+    msgbox(format("I'm a digital artist of Pokémon environments. In fact, I make a lot of the Pokémon art for Pokédex entries! My boyfriend helps me gather data and reference images."))
     closemessage
     release
     end
@@ -20,6 +20,62 @@ script KalamiCity_House1_EventScript_Trapinch
     msgbox("K-k-k-k.")
     waitmoncry
     closemessage
+    release
+    end
+}
+
+script KalamiCity_House1_EventScript_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_KALAMI_EEVEE_POKEDEX)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("I learned a lot from your Eevee Pokédex entry! We'll definitely be able to make some good artwork now."))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_KALAMI_EEVEE_POKEDEX)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("My boyfriend and I do freelance work for Acrisia University, making art for the Pokédex and other services. We're making good progress, but we need more information about {COLOR GREEN}Eevee{COLOR DARK_GRAY} and their evolutions.\p Hey, you're with the University! Can you show me the {COLOR GREEN}complete Pokédex page of Eevee{COLOR DARK_GRAY}? We'll learn a lot more about it like that!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_KALAMI_EEVEE_POKEDEX)
+    }
+    else
+    {
+        msgbox(format("Chaire, University Researcher! Have you learned more about Eevee yet?"))
+        closemessage
+
+        getcaughtmon(SPECIES_EEVEE)
+        delay(30)
+
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Scientist")
+            msgbox(format("Looks like you're still missing information on Eevee's Pokédex page.\p Show me the {COLOR GREEN}completed Pokédex page of Eevee{COLOR DARK_GRAY} if you get a chance, it'll help our University projects!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Scientist")
+            msgbox(format("Oh! Look at that, it's the complete Pokédex page of Eevee! It can evolve into so many forms... this is all great information!\p Thank you for showing me this! Here, we got you a little something for your help."))
+            closemessage
+            giveitem(ITEM_EXP_CANDY_S, 3)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_KALAMI_EEVEE_POKEDEX)
+        }
+    }
     release
     end
 }

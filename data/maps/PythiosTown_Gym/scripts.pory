@@ -225,6 +225,7 @@ script PythiosTown_Gym_EventScript_Sabella_DefeatedScript
 
     // set Niko and Rania state variables if necessary
     setvar(VAR_NIKO_STATE, 6)
+    setvar(VAR_RANIA_STATE, 5)
 
     release
     end

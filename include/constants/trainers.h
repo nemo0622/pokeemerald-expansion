@@ -115,7 +115,8 @@
 #define TRAINER_PIC_OFFICER               97
 #define TRAINER_PIC_WORKER                98
 #define TRAINER_PIC_DIVER                 99
-#define TRAINER_PIC_COUNT                 100
+#define TRAINER_PIC_ARTIST                100
+#define TRAINER_PIC_COUNT                 101
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -365,7 +366,8 @@
 #define TRAINER_CLASS_OFFICER        0x46
 #define TRAINER_CLASS_WORKER         0x47
 #define TRAINER_CLASS_DIVER          0x48
-#define TRAINER_CLASS_COUNT          0x49
+#define TRAINER_CLASS_ARTIST         0x49
+#define TRAINER_CLASS_COUNT          0x4A
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

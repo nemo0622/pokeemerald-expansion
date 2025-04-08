@@ -240,7 +240,9 @@ PythiosTown_Gym_EventScript_Sabella_DefeatedScript::
 	startquest QUEST_GYM_4
 # 227 "data/maps/PythiosTown_Gym/scripts.pory"
 	setvar VAR_NIKO_STATE, 6
-# 229 "data/maps/PythiosTown_Gym/scripts.pory"
+# 228 "data/maps/PythiosTown_Gym/scripts.pory"
+	setvar VAR_RANIA_STATE, 5
+# 230 "data/maps/PythiosTown_Gym/scripts.pory"
 	release
 	end
 

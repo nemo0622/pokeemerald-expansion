@@ -1,0 +1,25 @@
+mapscripts SofosCity_House1_MapScripts {}
+
+script SofosCity_House1_EventScript_Charcadet
+{
+    lock
+    faceplayer
+    speakername("Charcadet")
+    playmoncry(SPECIES_CHARCADET, CRY_MODE_NORMAL)
+    msgbox("Ka! Chyeah!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script SofosCity_House1_EventScript_Lass
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("Almost all buildings in Sofos City are actually huge apartment complexes! That's how so many people can live on this small cliffside."))
+    closemessage
+    release
+    end
+}

@@ -1,0 +1,319 @@
+mapscripts SofosCity_Gym_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_SOFOS_GYM_GAUNTLET_ACTIVE)
+    }
+}
+
+script SofosCity_Gym_EventScript_GymStatue
+{
+    lock
+    if(flag(FLAG_BADGE04_GET))
+    {
+        msgbox(format("Sofos City Pokémon Gym\p Recent Victors: Rania, {PLAYER}"))
+    }
+    else
+    {
+        msgbox(format("Sofos City Pokémon Gym\p Recent Victors: Rania"))
+    }
+    closemessage
+    release
+    end
+}
+
+script SofosCity_Gym_EventScript_GymMan
+{
+    lock
+    faceplayer
+    speakername("Gym Guide")
+    if(flag(FLAG_BADGE04_GET))
+    {
+        msgbox(format("Incredible! You're a rising star! Keep it up, future Champ!"))
+    }
+    else
+    {
+        msgbox(format("Welcome to the Sofos City Gym!\p Meneswo, the Gym Leader, fuses the raw power of Fighting-type Pokémon and the intelligence of Psychic-type Pokémon. To win, you'll need a master strategy!"))
+    }
+    closemessage
+    release
+    end
+}
+
+script SofosCity_Gym_Trigger_GauntletWarning
+{
+    lockall
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(15)
+    applymovement(1, Common_Movement_FaceLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+
+    // if currently in gauntlet, ask if they want to leave
+    if(flag(FLAG_SOFOS_GYM_GAUNTLET_ACTIVE))
+    {
+        speakername("Gym Guide")
+        msgbox(format("Wait there, challenger! If you leave before completing the Trainer Gauntlet, {COLOR RED}all Trainer progress will reset{COLOR DARK_GRAY}. Do you still want to leave?"), MSGBOX_YESNO)
+        closemessage
+        delay(5)
+        if(var(VAR_RESULT) == 0) // stay
+        {
+            speakername("Gym Guide")
+            msgbox(format("Phew! Please step up and continue the challenge."))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+            waitmovement(0)
+            delay(10)
+            setflag(FLAG_SOFOS_GYM_GAUNTLET_ACTIVE)
+            releaseall
+            end
+        }
+        else // leave
+        {
+            speakername("Gym Guide")
+            msgbox(format("That's too bad. Please come back soon, with a new strategy to win!"))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+            waitmovement(0)
+            delay(10)
+            clearflag(FLAG_SOFOS_GYM_GAUNTLET_ACTIVE)
+            releaseall
+            end
+        }
+    }
+
+    // by getting here, the Gym Gauntlet must be INACTIVE. Introduce it and ask to let the player enter!
+    speakername("Gym Guide")
+    msgbox(format("Hold your Ponytas! Before you enter the Gym, I have to let you know the rules.\p This Gym is unique, as it is a {COLOR RED}Trainer Gauntlet{COLOR DARK_GRAY}. Once you enter, you {COLOR RED}cannot leave until all Trainers and the Gym Leader are defeated{COLOR DARK_GRAY}. If you try to leave, {COLOR RED}all Trainers will reset{COLOR DARK_GRAY}.\p Are you prepared for the challenge?"), MSGBOX_YESNO)
+    closemessage
+    delay(5)
+    if(var(VAR_RESULT) == 0) // said no to gauntlet
+    {
+        speakername("Gym Guide")
+        msgbox(format("That's alright, it's certainly an intimidating challenge. {COLOR GREEN}Meneswo{COLOR DARK_GRAY} says it's the ultimate test of strategy!\p Come back when you're ready to face this {COLOR RED}Trainer Gauntlet{COLOR DARK_GRAY}."))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+        waitmovement(0)
+        delay(10)
+        clearflag(FLAG_SOFOS_GYM_GAUNTLET_ACTIVE)
+        releaseall
+        end
+    }
+    else // ready for trainer gauntlet!
+    {
+        speakername("Gym Guide")
+        msgbox(format("Great! Good luck, and remember to heal up with Potions and strategize your moves!"))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+        waitmovement(0)
+        delay(10)
+        setflag(FLAG_SOFOS_GYM_GAUNTLET_ACTIVE)
+
+        // RESET ALL TRAINER FLAGS HERE
+        cleartrainerflag(TRAINER_SOFOSGYM_BROOKE)
+        cleartrainerflag(TRAINER_SOFOSGYM_TYRIEN)
+        cleartrainerflag(TRAINER_SOFOSGYM_SAPPHA)
+        cleartrainerflag(TRAINER_SOFOSGYM_ARISTO)
+
+        releaseall
+        end
+    }
+    releaseall
+    end
+}
+
+script SofosCity_Gym_EventScript_PokemonBusyTraining
+{
+    lock
+    msgbox(format("The Pokémon is too busy training to notice you!"))
+    closemessage
+    release
+    end
+}
+script SofosCity_Gym_EventScript_PokemonBusyLearning
+{
+    lock
+    msgbox(format("The Pokémon is too deep in thought to notice you."))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_Gym_EventScript_Mienfoo
+{
+    lock
+    faceplayer
+    speakername("Mienfoo")
+    playmoncry(SPECIES_MIENFOO, CRY_MODE_NORMAL)
+    msgbox("Hiaah!")
+    waitmoncry
+    closemessage
+    msgbox(format("Mienfoo is perfectly balanced on one foot!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_Gym_EventScript_Trainer_SofosGym_Brooke
+{
+    trainerbattle_single(TRAINER_SOFOSGYM_BROOKE, SofosCity_Gym_Text_Trainer_SofosGym_BrookeIntro, SofosCity_Gym_Text_Trainer_SofosGym_BrookeDefeat)
+    speakername("Brooke")
+    msgbox(format("The left half of this Gym is for physical training, and the right half is for mental training. It's perfectly balanced."))
+    closemessage
+    release
+    end
+}
+text SofosCity_Gym_Text_Trainer_SofosGym_BrookeIntro
+{
+    format("Come on! We're about to hit our personal lift record!")
+}
+text SofosCity_Gym_Text_Trainer_SofosGym_BrookeDefeat
+{
+    format("So close!")
+}
+
+script SofosCity_Gym_EventScript_Trainer_SofosGym_Tyrien
+{
+    trainerbattle_single(TRAINER_SOFOSGYM_TYRIEN, SofosCity_Gym_Text_Trainer_SofosGym_TyrienIntro, SofosCity_Gym_Text_Trainer_SofosGym_TyrienDefeat)
+    speakername("Tyrien")
+    msgbox(format("This side of the Gym is for raw power! It's perfect for me and my Gurdurr!"))
+    closemessage
+    release
+    end
+}
+text SofosCity_Gym_Text_Trainer_SofosGym_TyrienIntro
+{
+    format("Let's go! We're unstoppable!")
+}
+text SofosCity_Gym_Text_Trainer_SofosGym_TyrienDefeat
+{
+    format("How'd you do that?!")
+}
+
+script SofosCity_Gym_EventScript_Trainer_SofosGym_Sappha
+{
+    trainerbattle_single(TRAINER_SOFOSGYM_SAPPHA, SofosCity_Gym_Text_Trainer_SofosGym_SapphaIntro, SofosCity_Gym_Text_Trainer_SofosGym_SapphaDefeat)
+    speakername("Sappha")
+    msgbox(format("I'm studying the movement of celestial bodies. We can see through the telescopes thanks to gaps in the ceiling!"))
+    closemessage
+    release
+    end
+}
+text SofosCity_Gym_Text_Trainer_SofosGym_SapphaIntro
+{
+    format("Hm, listen to them brawling and shouting over there. This side of the Gym is for those of us with... sharper minds.")
+}
+text SofosCity_Gym_Text_Trainer_SofosGym_SapphaDefeat
+{
+    format("I need to read more!")
+}
+
+script SofosCity_Gym_EventScript_Trainer_SofosGym_Aristo
+{
+    trainerbattle_single(TRAINER_SOFOSGYM_ARISTO, SofosCity_Gym_Text_Trainer_SofosGym_AristoIntro, SofosCity_Gym_Text_Trainer_SofosGym_AristoDefeat)
+    speakername("Aristo")
+    msgbox(format("My Oranguru is able to read books written in Ancient Ilian script. It's helping me translate lost texts."))
+    closemessage
+    release
+    end
+}
+text SofosCity_Gym_Text_Trainer_SofosGym_AristoIntro
+{
+    format("...oh? I didn't hear you approach. You want a battle, huh? I suppose my Oranguru and I could use a break from our books!")
+}
+text SofosCity_Gym_Text_Trainer_SofosGym_AristoDefeat
+{
+    format("Such magnificent moves!")
+}
+
+script SofosCity_Gym_EventScript_Meneswo
+{
+    lock
+    faceplayer
+
+    // first, check if gauntlet is completed
+    if(!flag(0x55E) || !flag(0x55F) || !flag(0x560) || !flag(0x561))
+    {
+        speakername("Meneswo")
+        msgbox(format("I've been watching, you know! You still have some Trainers left to battle before me.\p After beating the {COLOR GREEN}4 Gym Trainers{COLOR DARK_GRAY}, come here and face me. Your strategy must be perfect!"))
+        closemessage
+        release
+        end
+    }
+
+    if(!flag(FLAG_HARD_MODE))
+    {
+        goto(SofosCity_Gym_EventScript_Meneswo_NormalDifficulty)
+    }
+    else
+    {
+        goto(SofosCity_Gym_EventScript_Meneswo_HardDifficulty)
+    }
+    release
+    end
+}
+
+script SofosCity_Gym_EventScript_Meneswo_NormalDifficulty // called when on normal difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_MENESWO, SofosCity_Gym_Text_MeneswoIntro, SofosCity_Gym_Text_MeneswoDefeat, SofosCity_Gym_EventScript_Meneswo_DefeatedScript, NO_MUSIC)
+    speakername("Meneswo")
+    msgbox(format("Your strategic prowess in battle is unmatched! I know you'll go far."))
+    closemessage
+    release
+    end
+}
+script SofosCity_Gym_EventScript_Meneswo_HardDifficulty // called when on hard difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_MENESWO_HARD, SofosCity_Gym_Text_MeneswoIntro, SofosCity_Gym_Text_MeneswoDefeat, SofosCity_Gym_EventScript_Meneswo_DefeatedScript, NO_MUSIC)
+    speakername("Meneswo")
+    msgbox(format("Your strategic prowess in battle is unmatched! I know you'll go far."))
+    closemessage
+    release
+    end
+}
+text SofosCity_Gym_Text_MeneswoIntro
+{
+    format("Oh, it looks like you've completed my Trainer Gauntlet! Only truly impressive Trainers are able to do that and still approach me.\p After seeing your moves in Satyr's Lair, I've been wanting to face you in battle. Let's see if you're all you're cracked up to be!")
+}
+text SofosCity_Gym_Text_MeneswoDefeat
+{
+    format("Incredible! Your strategy, your combination of power and mind... it's fantastic!")
+}
+// Script called when you defeat the gym leader!
+script SofosCity_Gym_EventScript_Meneswo_DefeatedScript
+{
+    setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
+    message(format("{PLAYER} received the Wisdom Badge from Meneswo."))
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+
+    // Set gym completion flags
+    setflag(FLAG_BADGE04_GET)
+    // Set all trainers in Gym as defeated
+    settrainerflag(TRAINER_SOFOSGYM_BROOKE)
+    settrainerflag(TRAINER_SOFOSGYM_TYRIEN)
+    settrainerflag(TRAINER_SOFOSGYM_SAPPHA)
+    settrainerflag(TRAINER_SOFOSGYM_ARISTO)
+
+    // Explain badge
+    speakername("Meneswo")
+    msgbox(format("The Widsom Badge represents your ability to create plans in battle, rather than rushing head-first into danger. It also allows you to use the {COLOR GREEN}HM Surf{COLOR DARK_GRAY} outside of battle.\p Right, take this with you!"))
+    closemessage
+
+    // Give TM reward and explain, plus end dialogue
+    giveitem(ITEM_TM53)
+    speakername("Meneswo")
+    msgbox(format("That TM contains the move {COLOR GREEN}Power-Up Punch{COLOR DARK_GRAY}, which boosts the Attack stat while dealing damage. Talk about strategy!\p You should be able to handle the {COLOR GREEN}Seas of Ilios{COLOR DARK_GRAY} with your Pokémon. Your next badge is {COLOR GREEN}east{COLOR DARK_GRAY}, past Marmaro Island to the sister {COLOR GREEN}island of Myrrini{COLOR DARK_GRAY}."))
+    closemessage
+
+    // complete gym quest and begin next one
+    delay(20)
+    completequest(QUEST_GYM_4)
+    delay(20)
+    startquest(QUEST_GYM_5)
+
+    // set Niko and Rania state variables if necessary
+    setvar(VAR_RANIA_STATE, 7)
+
+    release
+    end
+}

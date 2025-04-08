@@ -1843,3 +1843,41 @@ const u16 gTilesetPalettes_Riverwalk[][16] =
 };
 
 const u32 gTilesetTiles_Riverwalk[] = INCBIN_U32("data/tilesets/secondary/riverwalk/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_SofosGym[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sofos_gym/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_SofosGym[] = INCBIN_U32("data/tilesets/secondary/sofos_gym/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Acropolis[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/acropolis/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Acropolis[] = INCBIN_U32("data/tilesets/secondary/acropolis/tiles.4bpp.lz");

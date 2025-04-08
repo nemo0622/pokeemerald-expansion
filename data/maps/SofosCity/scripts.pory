@@ -272,7 +272,7 @@ script SofosCity_EventScript_BeautyNearPokecenter
     lock
     faceplayer
     speakername("Beauty")
-    msgbox(format("Sofos City is well-known for using turquoise-blue roofs on most buildings. It gives the city it's own identity.\p Of course, those are only on the modern buildings. The ruins of the Old City to the north were made of shining marble!"))
+    msgbox(format("Sofos City is well-known for using turquoise-blue roofs on most buildings. It gives the city it's own identity.\p Of course, those are only on the modern buildings. The ruins of the Acropolis Temple to the north were made of shining marble!"))
     closemessage
     release
     end
@@ -320,7 +320,7 @@ script SofosCity_EventScript_OfficerAtCityEdge
     lock
     faceplayer
     speakername("Officer")
-    msgbox(format("This is the edge of the modern Sofos City. Further north is what remains of the Old City, which is just a cave and a few ruins outside of the {COLOR GREEN}Acropolis{COLOR DARK_GRAY}."))
+    msgbox(format("This is the edge of the modern Sofos City. Further north is what remains of the Acropolis atop the cliffside, which is just a cave and a few ruins outside of the {COLOR GREEN}Acropolis Temple{COLOR DARK_GRAY}."))
     closemessage
     release
     end
@@ -331,7 +331,7 @@ script SofosCity_EventScript_FarmerOnSidewalk
     lock
     faceplayer
     speakername("Farmer")
-    msgbox(format("I'd run a farm near the ruins of the Old City if I could, but the land is riddled with stone and marble structures. It's okay, though. I suppose it's important to preserve and understand our history."))
+    msgbox(format("I'd run a farm near the ruins up on the Acropolis if I could, but the land is riddled with stone and marble structures. It's okay, though. I suppose it's important to preserve and understand our history."))
     closemessage
     release
     end
@@ -484,7 +484,7 @@ script SofosCity_EventScript_ManAdmiringTowerRuin
     lock
     faceplayer
     speakername("Curious Man")
-    msgbox(format("There are ruins all over the Ilios Region, but those around Sofos City are unique. In the {COLOR GREEN}Acropolis{COLOR DARK_GRAY} here, people still pay respect to the {COLOR GREEN}Elemental Beasts Trio{COLOR DARK_GRAY}. Most other ancient sites are pretty much abandoned!"))
+    msgbox(format("There are ruins all over the Ilios Region, but those around Sofos City are unique. In the {COLOR GREEN}Acropolis Temple{COLOR DARK_GRAY} here, people still pay respect to the {COLOR GREEN}Elemental Beasts Trio{COLOR DARK_GRAY}. Most other ancient sites are pretty much abandoned!"))
     closemessage
     release
     end
@@ -495,7 +495,7 @@ script SofosCity_EventScript_TogaGirlsAtAcropolis
     lock
     faceplayer
     speakername("Toga Woman")
-    msgbox(format("Welcome to the Sofos City {COLOR GREEN}Acropolis{COLOR DARK_GRAY}. Feel free to pay your respects here."))
+    msgbox(format("Welcome to the Sofos City {COLOR GREEN}Acropolis Temple{COLOR DARK_GRAY}. Feel free to pay your respects here."))
     closemessage
     release
     end
@@ -585,4 +585,15 @@ text SofosCity_Text_Trainer_SofosCity_GruntIntro
 text SofosCity_Text_Trainer_SofosCity_GruntDefeat
 {
     format("Darn. I must be the worst Grunt in the history of Team Chimera!")
+}
+
+script SofosCity_EventScript_SwimmerF
+{
+    lock
+    faceplayer
+    speakername("Swimmer")
+    msgbox(format("The area around Sofos City is littered with rocks in the shallowest parts. Most swimmers choose to go further out to the east, where the water is deeper but relatively safe."))
+    closemessage
+    release
+    end
 }

@@ -567,6 +567,38 @@ script AcrisiaCity_University_EventScript_Rania
         msgbox(format("Come back to cool off too, {PLAYER}? That fight with Team Chimera sure was something. I wonder why they're collecting Pokémon..."))
         closemessage
     }
+    elif(var(VAR_RANIA_STATE) == 5) // Gym 3 complete
+    {
+        speakername("Rania")
+        msgbox(format("{PLAYER}! I hear you made it to Pythios Town alright, and you even got the Gym Badge! You're not such a new Trainer anymore, huh?\p Right, I have something for you!"))
+        closemessage
+        giveitem(ITEM_ROCKY_HELMET)
+        closemessage
+        delay(5)
+        speakername("Rania")
+        msgbox(format("If a Pokémon holds the {COLOR GREEN}Rocky Helmet{COLOR DARK_GRAY}, if an opponent makes contact with them, they take a bit of damage! Dealing chip damage like that can be the key to winning."))
+        closemessage
+        setvar(VAR_RANIA_STATE, 6)
+    }
+    elif(var(VAR_RANIA_STATE) == 6) // Gym 3 complete, gift received
+    {
+        speakername("Rania")
+        msgbox(format("I've been working through all the data coming in from your Pokédex! From what I can tell, you're the first person to record and identify some of these species in their ecosystems.\p By learning more about Pokémon, we can find new ways to protect them!"))
+        closemessage
+    }
+    elif(var(VAR_RANIA_STATE) == 7) // Gym 4 complete
+    {
+        speakername("Rania")
+        msgbox(format("{PLAYER}! Thank goodness you're okay! Niko told Prof. Elia and I about what happened in Sofos City.\p Team Chimera must be up to something big. Normally, they lurked in the shadows, but their attacks on Sofos City and attempted theft of a Tera Orb set a new bar."))
+        closemessage
+        setvar(VAR_RANIA_STATE, 8)
+    }
+    elif(var(VAR_RANIA_STATE) == 8) // Gym 4 complete, return dialogue read
+    {
+        speakername("Rania")
+        msgbox(format("Oh, I've been working on a training manual with some helpful information - that might help with the fight against Team Chimera!\p I need a bit more time, I'm just so excited I had to tell someone!"))
+        closemessage
+    }
     release
     end
 }

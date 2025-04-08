@@ -44,39 +44,41 @@ PythiosTown_Mart_Shop:
 # 26 "data/maps/PythiosTown_Mart/scripts.pory"
 	.2byte ITEM_PARALYZE_HEAL
 # 27 "data/maps/PythiosTown_Mart/scripts.pory"
-	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_AWAKENING
 # 28 "data/maps/PythiosTown_Mart/scripts.pory"
+	.2byte ITEM_ESCAPE_ROPE
+# 29 "data/maps/PythiosTown_Mart/scripts.pory"
 	.2byte ITEM_REPEL
 	.2byte ITEM_NONE
 
 PythiosTown_Mart_EventScript_Picnicker::
-# 33 "data/maps/PythiosTown_Mart/scripts.pory"
-	lock
 # 34 "data/maps/PythiosTown_Mart/scripts.pory"
-	faceplayer
+	lock
 # 35 "data/maps/PythiosTown_Mart/scripts.pory"
-	speakername PythiosTown_Mart_EventScript_Picnicker_Text_0
+	faceplayer
 # 36 "data/maps/PythiosTown_Mart/scripts.pory"
-	msgbox PythiosTown_Mart_EventScript_Picnicker_Text_1
+	speakername PythiosTown_Mart_EventScript_Picnicker_Text_0
 # 37 "data/maps/PythiosTown_Mart/scripts.pory"
-	closemessage
+	msgbox PythiosTown_Mart_EventScript_Picnicker_Text_1
 # 38 "data/maps/PythiosTown_Mart/scripts.pory"
+	closemessage
+# 39 "data/maps/PythiosTown_Mart/scripts.pory"
 	release
 	end
 
 
 PythiosTown_Mart_EventScript_Youngster::
-# 44 "data/maps/PythiosTown_Mart/scripts.pory"
-	lock
 # 45 "data/maps/PythiosTown_Mart/scripts.pory"
-	faceplayer
+	lock
 # 46 "data/maps/PythiosTown_Mart/scripts.pory"
-	speakername PythiosTown_Mart_EventScript_Youngster_Text_0
+	faceplayer
 # 47 "data/maps/PythiosTown_Mart/scripts.pory"
-	msgbox PythiosTown_Mart_EventScript_Youngster_Text_1
+	speakername PythiosTown_Mart_EventScript_Youngster_Text_0
 # 48 "data/maps/PythiosTown_Mart/scripts.pory"
-	closemessage
+	msgbox PythiosTown_Mart_EventScript_Youngster_Text_1
 # 49 "data/maps/PythiosTown_Mart/scripts.pory"
+	closemessage
+# 50 "data/maps/PythiosTown_Mart/scripts.pory"
 	release
 	end
 
@@ -86,20 +88,20 @@ PythiosTown_Mart_EventScript_MartEmployee_Text_0:
 	.string "Mart Employee$"
 
 PythiosTown_Mart_EventScript_Picnicker_Text_0:
-# 35 "data/maps/PythiosTown_Mart/scripts.pory"
+# 36 "data/maps/PythiosTown_Mart/scripts.pory"
 	.string "Picnicker$"
 
 PythiosTown_Mart_EventScript_Picnicker_Text_1:
-# 36 "data/maps/PythiosTown_Mart/scripts.pory"
+# 37 "data/maps/PythiosTown_Mart/scripts.pory"
 	.string "Any good Pokémon Trainer knows to stay\n"
 	.string "stocked up on Great Balls!$"
 
 PythiosTown_Mart_EventScript_Youngster_Text_0:
-# 46 "data/maps/PythiosTown_Mart/scripts.pory"
+# 47 "data/maps/PythiosTown_Mart/scripts.pory"
 	.string "Youngster$"
 
 PythiosTown_Mart_EventScript_Youngster_Text_1:
-# 47 "data/maps/PythiosTown_Mart/scripts.pory"
+# 48 "data/maps/PythiosTown_Mart/scripts.pory"
 	.string "I love learning about the old Heroes of\n"
 	.string "Ilios! They were the best Pokémon\l"
 	.string "Trainers of all time!$"

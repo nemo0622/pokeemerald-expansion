@@ -970,3 +970,25 @@ const struct Tileset gTileset_Riverwalk =
     .metatileAttributes = gMetatileAttributes_Riverwalk,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_SofosGym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SofosGym,
+    .palettes = gTilesetPalettes_SofosGym,
+    .metatiles = gMetatiles_SofosGym,
+    .metatileAttributes = gMetatileAttributes_SofosGym,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Acropolis =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Acropolis,
+    .palettes = gTilesetPalettes_Acropolis,
+    .metatiles = gMetatiles_Acropolis,
+    .metatileAttributes = gMetatileAttributes_Acropolis,
+    .callback = NULL,
+};

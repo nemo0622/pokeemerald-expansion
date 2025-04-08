@@ -215,10 +215,74 @@ script KalamiCity_EventScript_Artist
     lock
     faceplayer
     speakername("Artist")
-    msgbox(format("Kalami City, the city of reeds and rivers...\p We coexist with nature here. We're treated to the natural beauty of the land, and in return, we've thrown crates in the water, cut some trees, and built an industrial sector in the heart of the swamp.\p Just something to reflect on."))
-    closemessage
-    release
-    end
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_KALAMI_HEART_SCALE)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("I've been inspired by your Heart Scale! I feel my creative juices flowing, I must make more shining, opal art!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_KALAMI_HEART_SCALE)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Hm? Oh, hi. Sorry, I'm hoping the ocean gives me inspiration. I've been struggling with artist's block for months, and there's no end in sight.\p I'm looking for something so beautiful, so sparkly, that it inspires me. A {COLOR GREEN}Heart Scale{COLOR DARK_GRAY} would be just perfect!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_KALAMI_HEART_SCALE)
+    }
+    else
+    {
+        msgbox(format("Welcome back. I still can't seem to find inspiration... did you happen to bring a {COLOR GREEN}Heart Scale{COLOR DARK_GRAY}?"))
+        closemessage
+
+        checkitem(ITEM_HEART_SCALE)
+        delay(30)
+
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Artist")
+            msgbox(format("Aw, looks like my artist's block will continue.\p If you happen to find an extra {COLOR GREEN}Heart Scale{COLOR DARK_GRAY}, please let me know!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Artist")
+            msgbox(format("Incredible! The ripples of color, the sparkle in the light... it's unlike anything I've ever seen! Please, let me keep this and use it for inspiration!"))
+            closemessage
+            removeitem(ITEM_HEART_SCALE)
+            delay(20)
+            speakername("Artist")
+            msgbox(format("I'm so inspired, I could paint something right now! Wait there!"))
+            closemessage
+
+            fadescreenswapbuffers(FADE_TO_BLACK)
+            delay(60)
+            fadescreenswapbuffers(FADE_FROM_BLACK)
+            delay(20)
+
+            speakername("Artist")
+            msgbox(format("My first masterpiece is complete! I want you to have it, as a symbol of our artistic partnership!"))
+            closemessage
+            delay(5)
+            adddecoration(DECOR_OPAL_FISH_POSTER)
+            msgbox(format("{PLAYER} was given an Opal Fish Poster!"))
+            delay(20)
+            closemessage
+            delay(5)
+            speakername("Artist")
+            msgbox(format("That's a Poster of an extinct Pokémon, Relicanth, with hardened scales made of opal Heart Scales. I wanted it to symbolize the beauty and tragedy in lost species.\p If you don't have anywhere to put that Poster yet, maybe you {COLOR GREEN}will in the future{COLOR DARK_GRAY}. Hold onto it for me!"))
+            closemessage
+
+            delay(20)
+            completequest(QUEST_KALAMI_HEART_SCALE)
+        }
+    }
 }
 
 script KalamiCity_EventScript_Sailor

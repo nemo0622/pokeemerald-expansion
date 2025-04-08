@@ -243,7 +243,19 @@
     "AsfalHills_House2",
     "AsfalHills_House3",
     "SofosCity_PokemonCenter",
-    "SofosCity_Mart"
+    "SofosCity_Mart",
+    "SofosCity_Gym",
+    "SofosCity_House1",
+    "SofosCity_House2",
+    "SofosCity_House3",
+    "SofosCity_House4",
+    "SofosCity_House5",
+    "SofosCity_House6",
+    "SofosCity_House7",
+    "SofosCity_House8",
+    "SofosCity_House9",
+    "SofosCity_Acropolis",
+    "SofosCity_ShardExchangeHouse"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",

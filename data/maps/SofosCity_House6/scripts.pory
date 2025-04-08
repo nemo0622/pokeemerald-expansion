@@ -1,0 +1,25 @@
+mapscripts SofosCity_House6_MapScripts {}
+
+script SofosCity_House6_EventScript_LittleGirl
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    msgbox(format("I'm playing Psyduck Life! Raising a digital Pokémon and playing racing games with it is so much fun!"))
+    closemessage
+    applymovement(1, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+script SofosCity_House6_EventScript_Officer
+{
+    lock
+    faceplayer
+    speakername("Officer")
+    msgbox(format("All of her Pokémon and friends are online. Call me old-fashioned, but I just don't get it..."))
+    closemessage
+    release
+    end
+}

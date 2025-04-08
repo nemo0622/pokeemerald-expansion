@@ -875,6 +875,22 @@ SofosCity_EventScript_Trainer_SofosCity_Grunt::
 	end
 
 
+SofosCity_EventScript_SwimmerF::
+# 592 "data/maps/SofosCity/scripts.pory"
+	lock
+# 593 "data/maps/SofosCity/scripts.pory"
+	faceplayer
+# 594 "data/maps/SofosCity/scripts.pory"
+	speakername SofosCity_EventScript_SwimmerF_Text_0
+# 595 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_SwimmerF_Text_1
+# 596 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 597 "data/maps/SofosCity/scripts.pory"
+	release
+	end
+
+
 SofosCity_EventScript_GameCornerSign_Text_0:
 # 31 "data/maps/SofosCity/scripts.pory"
 	.string "Sofos City Game Corner\n"
@@ -1049,8 +1065,9 @@ SofosCity_EventScript_BeautyNearPokecenter_Text_1:
 	.string "turquoise-blue roofs on most buildings.\l"
 	.string "It gives the city it's own identity.\p"
 	.string "Of course, those are only on the modern\n"
-	.string "buildings. The ruins of the Old City to\l"
-	.string "the north were made of shining marble!$"
+	.string "buildings. The ruins of the Acropolis\l"
+	.string "Temple to the north were made of\l"
+	.string "shining marble!$"
 
 SofosCity_EventScript_ArtistPlayingChess_Text_0:
 # 285 "data/maps/SofosCity/scripts.pory"
@@ -1088,8 +1105,9 @@ SofosCity_EventScript_OfficerAtCityEdge_Text_1:
 # 323 "data/maps/SofosCity/scripts.pory"
 	.string "This is the edge of the modern Sofos\n"
 	.string "City. Further north is what remains of\l"
-	.string "the Old City, which is just a cave and a\l"
-	.string "few ruins outside of the {COLOR GREEN}Acropolis{COLOR DARK_GRAY}.$"
+	.string "the Acropolis atop the cliffside, which\l"
+	.string "is just a cave and a few ruins outside\l"
+	.string "of the {COLOR GREEN}Acropolis Temple{COLOR DARK_GRAY}.$"
 
 SofosCity_EventScript_FarmerOnSidewalk_Text_0:
 # 333 "data/maps/SofosCity/scripts.pory"
@@ -1097,12 +1115,12 @@ SofosCity_EventScript_FarmerOnSidewalk_Text_0:
 
 SofosCity_EventScript_FarmerOnSidewalk_Text_1:
 # 334 "data/maps/SofosCity/scripts.pory"
-	.string "I'd run a farm near the ruins of the Old\n"
-	.string "City if I could, but the land is riddled\l"
-	.string "with stone and marble structures. It's\l"
-	.string "okay, though. I suppose it's important\l"
-	.string "to preserve and understand our\l"
-	.string "history.$"
+	.string "I'd run a farm near the ruins up on the\n"
+	.string "Acropolis if I could, but the land is\l"
+	.string "riddled with stone and marble\l"
+	.string "structures. It's okay, though. I\l"
+	.string "suppose it's important to preserve and\l"
+	.string "understand our history.$"
 
 SofosCity_EventScript_Rockruff_Text_0:
 # 344 "data/maps/SofosCity/scripts.pory"
@@ -1225,10 +1243,11 @@ SofosCity_EventScript_ManAdmiringTowerRuin_Text_1:
 # 487 "data/maps/SofosCity/scripts.pory"
 	.string "There are ruins all over the Ilios\n"
 	.string "Region, but those around Sofos City are\l"
-	.string "unique. In the {COLOR GREEN}Acropolis{COLOR DARK_GRAY} here, people\l"
-	.string "still pay respect to the {COLOR GREEN}Elemental\l"
-	.string "Beasts Trio{COLOR DARK_GRAY}. Most other ancient sites\l"
-	.string "are pretty much abandoned!$"
+	.string "unique. In the {COLOR GREEN}Acropolis Temple{COLOR DARK_GRAY} here,\l"
+	.string "people still pay respect to the\l"
+	.string "{COLOR GREEN}Elemental Beasts Trio{COLOR DARK_GRAY}. Most other\l"
+	.string "ancient sites are pretty much\l"
+	.string "abandoned!$"
 
 SofosCity_EventScript_TogaGirlsAtAcropolis_Text_0:
 # 497 "data/maps/SofosCity/scripts.pory"
@@ -1236,8 +1255,9 @@ SofosCity_EventScript_TogaGirlsAtAcropolis_Text_0:
 
 SofosCity_EventScript_TogaGirlsAtAcropolis_Text_1:
 # 498 "data/maps/SofosCity/scripts.pory"
-	.string "Welcome to the Sofos City {COLOR GREEN}Acropolis{COLOR DARK_GRAY}.\n"
-	.string "Feel free to pay your respects here.$"
+	.string "Welcome to the Sofos City {COLOR GREEN}Acropolis\n"
+	.string "Temple{COLOR DARK_GRAY}. Feel free to pay your respects\l"
+	.string "here.$"
 
 SofosCIty_EventScript_BugCatcher_Text_0:
 # 508 "data/maps/SofosCity/scripts.pory"
@@ -1315,6 +1335,18 @@ SofosCity_EventScript_Trainer_SofosCity_Grunt_Text_1:
 	.string "ever. There was that one guy who messed\l"
 	.string "up stealing a Pokédex. He lost to some\l"
 	.string "new, weak Trainer!$"
+
+SofosCity_EventScript_SwimmerF_Text_0:
+# 594 "data/maps/SofosCity/scripts.pory"
+	.string "Swimmer$"
+
+SofosCity_EventScript_SwimmerF_Text_1:
+# 595 "data/maps/SofosCity/scripts.pory"
+	.string "The area around Sofos City is littered\n"
+	.string "with rocks in the shallowest parts.\l"
+	.string "Most swimmers choose to go further out\l"
+	.string "to the east, where the water is deeper\l"
+	.string "but relatively safe.$"
 
 SofosCity_Text_Trainer_SofosCity_GruntIntro::
 # 581 "data/maps/SofosCity/scripts.pory"

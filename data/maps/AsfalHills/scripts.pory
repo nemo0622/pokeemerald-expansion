@@ -435,6 +435,7 @@ script AsfalHills_EventScript_NikoWaitingForPlayer
         removeobject(7)
         removeobject(8)
         setflag(FLAG_HIDE_BLOCKING_SOFOS_GYM)
+        setflag(FLAG_UNLOCKED_TERASTALLIZATION)
         delay(20)
         fadescreenswapbuffers(FADE_FROM_BLACK)
         delay(10)

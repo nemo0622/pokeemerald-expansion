@@ -44,104 +44,106 @@ KalamiCity_Mart_Shop:
 # 26 "data/maps/KalamiCity_Mart/scripts.pory"
 	.2byte ITEM_PARALYZE_HEAL
 # 27 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_AWAKENING
 # 28 "data/maps/KalamiCity_Mart/scripts.pory"
+	.2byte ITEM_ESCAPE_ROPE
+# 29 "data/maps/KalamiCity_Mart/scripts.pory"
 	.2byte ITEM_REPEL
 	.2byte ITEM_NONE
 
 KalamiCity_Mart_EventScript_BallMartEmployee::
-# 33 "data/maps/KalamiCity_Mart/scripts.pory"
-	lock
 # 34 "data/maps/KalamiCity_Mart/scripts.pory"
-	faceplayer
+	lock
 # 35 "data/maps/KalamiCity_Mart/scripts.pory"
-	speakername KalamiCity_Mart_EventScript_MartEmployee_Text_0
+	faceplayer
 # 36 "data/maps/KalamiCity_Mart/scripts.pory"
-	message gText_HowMayIServeYou
-# 37 "data/maps/KalamiCity_Mart/scripts.pory"
-	waitmessage
-# 38 "data/maps/KalamiCity_Mart/scripts.pory"
-	pokemart KalamiCity_Mart_BallShop
-# 39 "data/maps/KalamiCity_Mart/scripts.pory"
-	closemessage
-# 40 "data/maps/KalamiCity_Mart/scripts.pory"
-	delay 1
-# 41 "data/maps/KalamiCity_Mart/scripts.pory"
 	speakername KalamiCity_Mart_EventScript_MartEmployee_Text_0
+# 37 "data/maps/KalamiCity_Mart/scripts.pory"
+	message gText_HowMayIServeYou
+# 38 "data/maps/KalamiCity_Mart/scripts.pory"
+	waitmessage
+# 39 "data/maps/KalamiCity_Mart/scripts.pory"
+	pokemart KalamiCity_Mart_BallShop
+# 40 "data/maps/KalamiCity_Mart/scripts.pory"
+	closemessage
+# 41 "data/maps/KalamiCity_Mart/scripts.pory"
+	delay 1
 # 42 "data/maps/KalamiCity_Mart/scripts.pory"
-	msgbox gText_PleaseComeAgain
+	speakername KalamiCity_Mart_EventScript_MartEmployee_Text_0
 # 43 "data/maps/KalamiCity_Mart/scripts.pory"
+	msgbox gText_PleaseComeAgain
+# 44 "data/maps/KalamiCity_Mart/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 47 "data/maps/KalamiCity_Mart/scripts.pory"
+# 48 "data/maps/KalamiCity_Mart/scripts.pory"
 KalamiCity_Mart_BallShop:
-# 49 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_HEAL_BALL
 # 50 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_NET_BALL
+	.2byte ITEM_HEAL_BALL
 # 51 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_NEST_BALL
+	.2byte ITEM_NET_BALL
 # 52 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_DIVE_BALL
+	.2byte ITEM_NEST_BALL
 # 53 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_DUSK_BALL
+	.2byte ITEM_DIVE_BALL
 # 54 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_TIMER_BALL
+	.2byte ITEM_DUSK_BALL
 # 55 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_TIMER_BALL
 # 56 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_REPEAT_BALL
+	.2byte ITEM_QUICK_BALL
 # 57 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_LUXURY_BALL
+	.2byte ITEM_REPEAT_BALL
 # 58 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_LEVEL_BALL
+	.2byte ITEM_LUXURY_BALL
 # 59 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_LURE_BALL
+	.2byte ITEM_LEVEL_BALL
 # 60 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_MOON_BALL
+	.2byte ITEM_LURE_BALL
 # 61 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_FRIEND_BALL
+	.2byte ITEM_MOON_BALL
 # 62 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_LOVE_BALL
+	.2byte ITEM_FRIEND_BALL
 # 63 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_FAST_BALL
+	.2byte ITEM_LOVE_BALL
 # 64 "data/maps/KalamiCity_Mart/scripts.pory"
-	.2byte ITEM_HEAVY_BALL
+	.2byte ITEM_FAST_BALL
 # 65 "data/maps/KalamiCity_Mart/scripts.pory"
+	.2byte ITEM_HEAVY_BALL
+# 66 "data/maps/KalamiCity_Mart/scripts.pory"
 	.2byte ITEM_DREAM_BALL
 	.2byte ITEM_NONE
 
 KalamiCity_Mart_EventScript_HexManiac::
-# 70 "data/maps/KalamiCity_Mart/scripts.pory"
-	lock
 # 71 "data/maps/KalamiCity_Mart/scripts.pory"
-	faceplayer
+	lock
 # 72 "data/maps/KalamiCity_Mart/scripts.pory"
-	speakername KalamiCity_Mart_EventScript_HexManiac_Text_0
+	faceplayer
 # 73 "data/maps/KalamiCity_Mart/scripts.pory"
-	msgbox KalamiCity_Mart_EventScript_HexManiac_Text_1
+	speakername KalamiCity_Mart_EventScript_HexManiac_Text_0
 # 74 "data/maps/KalamiCity_Mart/scripts.pory"
-	closemessage
+	msgbox KalamiCity_Mart_EventScript_HexManiac_Text_1
 # 75 "data/maps/KalamiCity_Mart/scripts.pory"
+	closemessage
+# 76 "data/maps/KalamiCity_Mart/scripts.pory"
 	release
 	end
 
 
 KalamiCity_Mart_EventScript_Girl::
-# 81 "data/maps/KalamiCity_Mart/scripts.pory"
-	lock
 # 82 "data/maps/KalamiCity_Mart/scripts.pory"
-	faceplayer
+	lock
 # 83 "data/maps/KalamiCity_Mart/scripts.pory"
-	speakername KalamiCity_Mart_EventScript_Girl_Text_0
+	faceplayer
 # 84 "data/maps/KalamiCity_Mart/scripts.pory"
-	msgbox KalamiCity_Mart_EventScript_Girl_Text_1
+	speakername KalamiCity_Mart_EventScript_Girl_Text_0
 # 85 "data/maps/KalamiCity_Mart/scripts.pory"
-	closemessage
+	msgbox KalamiCity_Mart_EventScript_Girl_Text_1
 # 86 "data/maps/KalamiCity_Mart/scripts.pory"
+	closemessage
+# 87 "data/maps/KalamiCity_Mart/scripts.pory"
 	release
 	end
 
@@ -151,21 +153,21 @@ KalamiCity_Mart_EventScript_MartEmployee_Text_0:
 	.string "Mart Employee$"
 
 KalamiCity_Mart_EventScript_HexManiac_Text_0:
-# 72 "data/maps/KalamiCity_Mart/scripts.pory"
+# 73 "data/maps/KalamiCity_Mart/scripts.pory"
 	.string "Hex Maniac$"
 
 KalamiCity_Mart_EventScript_HexManiac_Text_1:
-# 73 "data/maps/KalamiCity_Mart/scripts.pory"
+# 74 "data/maps/KalamiCity_Mart/scripts.pory"
 	.string "Mattaios and his Gym helps produce a\n"
 	.string "ton of new Poké ball types! We have a\l"
 	.string "shopkeeper dedicated to some of them\l"
 	.string "here.$"
 
 KalamiCity_Mart_EventScript_Girl_Text_0:
-# 83 "data/maps/KalamiCity_Mart/scripts.pory"
+# 84 "data/maps/KalamiCity_Mart/scripts.pory"
 	.string "Lass$"
 
 KalamiCity_Mart_EventScript_Girl_Text_1:
-# 84 "data/maps/KalamiCity_Mart/scripts.pory"
+# 85 "data/maps/KalamiCity_Mart/scripts.pory"
 	.string "Ehh, do I really need a sweet treat?\p"
 	.string "...Of course I do!$"

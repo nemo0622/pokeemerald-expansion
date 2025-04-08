@@ -1770,3 +1770,27 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/SofosCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/SofosCity_Mart/scripts.inc"
+
+	.include "data/maps/SofosCity_Gym/scripts.inc"
+
+	.include "data/maps/SofosCity_House1/scripts.inc"
+
+	.include "data/maps/SofosCity_House2/scripts.inc"
+
+	.include "data/maps/SofosCity_House3/scripts.inc"
+
+	.include "data/maps/SofosCity_House4/scripts.inc"
+
+	.include "data/maps/SofosCity_House5/scripts.inc"
+
+	.include "data/maps/SofosCity_House6/scripts.inc"
+
+	.include "data/maps/SofosCity_House7/scripts.inc"
+
+	.include "data/maps/SofosCity_House8/scripts.inc"
+
+	.include "data/maps/SofosCity_House9/scripts.inc"
+
+	.include "data/maps/SofosCity_Acropolis/scripts.inc"
+
+	.include "data/maps/SofosCity_ShardExchangeHouse/scripts.inc"

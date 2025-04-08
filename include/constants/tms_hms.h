@@ -51,7 +51,12 @@
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(WILL_O_WISP) \
+    F(FROST_BREATH) \
+    F(POWER_UP_PUNCH) \
+    F(DAZZLING_GLEAM) \
+    F(TERA_BLAST)
 
 #define FOREACH_HM(F) \
     F(CUT) \

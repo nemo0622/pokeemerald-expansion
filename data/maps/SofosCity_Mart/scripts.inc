@@ -46,43 +46,45 @@ SofosCity_Mart_Shop:
 # 27 "data/maps/SofosCity_Mart/scripts.pory"
 	.2byte ITEM_PARALYZE_HEAL
 # 28 "data/maps/SofosCity_Mart/scripts.pory"
-	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_AWAKENING
 # 29 "data/maps/SofosCity_Mart/scripts.pory"
-	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_BURN_HEAL
 # 30 "data/maps/SofosCity_Mart/scripts.pory"
-	.2byte ITEM_REPEL
+	.2byte ITEM_ESCAPE_ROPE
 # 31 "data/maps/SofosCity_Mart/scripts.pory"
+	.2byte ITEM_REPEL
+# 32 "data/maps/SofosCity_Mart/scripts.pory"
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_NONE
 
 SofosCity_Mart_EventScript_ShoppingMan::
-# 36 "data/maps/SofosCity_Mart/scripts.pory"
-	lock
 # 37 "data/maps/SofosCity_Mart/scripts.pory"
-	faceplayer
+	lock
 # 38 "data/maps/SofosCity_Mart/scripts.pory"
-	speakername SofosCity_Mart_EventScript_ShoppingMan_Text_0
+	faceplayer
 # 39 "data/maps/SofosCity_Mart/scripts.pory"
-	msgbox SofosCity_Mart_EventScript_ShoppingMan_Text_1
+	speakername SofosCity_Mart_EventScript_ShoppingMan_Text_0
 # 40 "data/maps/SofosCity_Mart/scripts.pory"
-	closemessage
+	msgbox SofosCity_Mart_EventScript_ShoppingMan_Text_1
 # 41 "data/maps/SofosCity_Mart/scripts.pory"
+	closemessage
+# 42 "data/maps/SofosCity_Mart/scripts.pory"
 	release
 	end
 
 
 SofosCity_Mart_EventScript_WorkerMan::
-# 47 "data/maps/SofosCity_Mart/scripts.pory"
-	lock
 # 48 "data/maps/SofosCity_Mart/scripts.pory"
-	faceplayer
+	lock
 # 49 "data/maps/SofosCity_Mart/scripts.pory"
-	speakername SofosCity_Mart_EventScript_WorkerMan_Text_0
+	faceplayer
 # 50 "data/maps/SofosCity_Mart/scripts.pory"
-	msgbox SofosCity_Mart_EventScript_WorkerMan_Text_1
+	speakername SofosCity_Mart_EventScript_WorkerMan_Text_0
 # 51 "data/maps/SofosCity_Mart/scripts.pory"
-	closemessage
+	msgbox SofosCity_Mart_EventScript_WorkerMan_Text_1
 # 52 "data/maps/SofosCity_Mart/scripts.pory"
+	closemessage
+# 53 "data/maps/SofosCity_Mart/scripts.pory"
 	release
 	end
 
@@ -92,22 +94,22 @@ SofosCity_Mart_EventScript_MartEmployee_Text_0:
 	.string "Mart Employee$"
 
 SofosCity_Mart_EventScript_ShoppingMan_Text_0:
-# 38 "data/maps/SofosCity_Mart/scripts.pory"
+# 39 "data/maps/SofosCity_Mart/scripts.pory"
 	.string "Young Man$"
 
 SofosCity_Mart_EventScript_ShoppingMan_Text_1:
-# 39 "data/maps/SofosCity_Mart/scripts.pory"
+# 40 "data/maps/SofosCity_Mart/scripts.pory"
 	.string "There are some things that only\n"
 	.string "official Marts have, but when I can, I\l"
 	.string "like to stop by the Street Vendors of\l"
 	.string "the city to see what they have.$"
 
 SofosCity_Mart_EventScript_WorkerMan_Text_0:
-# 49 "data/maps/SofosCity_Mart/scripts.pory"
+# 50 "data/maps/SofosCity_Mart/scripts.pory"
 	.string "Worker$"
 
 SofosCity_Mart_EventScript_WorkerMan_Text_1:
-# 50 "data/maps/SofosCity_Mart/scripts.pory"
+# 51 "data/maps/SofosCity_Mart/scripts.pory"
 	.string "Goods from all around the Ilios Region\n"
 	.string "make their way to Sofos City. The only\l"
 	.string "places that rival it in trade are\l"

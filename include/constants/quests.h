@@ -36,18 +36,22 @@
 #define QUEST_PLANT_200_BERRIES     18 // plant 200 berry trees for the Jusmail Town Berry Club
 #define QUEST_HELP_PIRAEUS          19 // defeat team chimera admin east of Pythios Town for Piraeus
 #define QUEST_SNOM_ICE_STONE        20 // showed Old Lady a Snom in Pythios Cemetery for an Ice Stone
-#define QUEST_YACHE_BERRY_FROST_BREATH 21 // show Yache Berry to Fat Man in Erinys Path to earn TM52 Frost Breath
-#define QUEST_BEAT_FROSLASS         22 // beat Froslass in Froslass Cavern and tell little girl
-#define QUEST_24        23 // FILL WITH EARLIER GAME QUEST
-#define QUEST_25        24 // FILL WITH EARLIER GAME QUEST
-#define QUEST_26        25 // FILL WITH EARLIER GAME QUEST
-#define QUEST_27        26 // FILL WITH EARLIER GAME QUEST
-#define QUEST_28        27 // FILL WITH EARLIER GAME QUEST
-#define QUEST_BEAT_CHIMERA_SOFOS_CITY 28 // quest to beat Team Chimera in Sofos City and bring Niko the Tera Orb in Asfal Hills
-#define QUEST_SHOW_BOY_GIRAFARIG    29 // show little boy in Asfal Hills House 1 a Girafarig dex entry
-#define QUEST_SHOW_CAMPER_ALOLAN_RAICHU    30 // show camper in Sofos City Alolan Raichu dex entry for Terrain Extender
-#define QUEST_TRY_SOFOS_BATTLE_PAVILION    31 // participate in Sofos City Battle Pavilion
-#define QUEST_COUNT     (QUEST_TRY_SOFOS_BATTLE_PAVILION + 1)
+#define QUEST_YACHE_BERRY_FROST_BREATH          21 // show Yache Berry to Fat Man in Erinys Path to earn TM52 Frost Breath
+#define QUEST_BEAT_FROSLASS                     22 // beat Froslass in Froslass Cavern and tell little girl
+#define QUEST_CATCH_BLITZLE                     23 // catch a blitzle and show it to a punk rocker in acrisia city house 5
+#define QUEST_LOVESTRUCK_BIKER                  24 // give Cycling Man a Heart Scale in Jusmail Town
+#define QUEST_KALAMI_HEART_SCALE                25 // give Artist a Heart Scale in Kalami City
+#define QUEST_KALAMI_EEVEE_POKEDEX              26 // show Eevee dex entry to Scientist in Kalami city house 1
+#define QUEST_PYTHIOS_REQUEST_QUICK_BALL        27 // bring a quick ball to an athlete in pythios town
+#define QUEST_BEAT_CHIMERA_SOFOS_CITY           28 // quest to beat Team Chimera in Sofos City and bring Niko the Tera Orb in Asfal Hills
+#define QUEST_SHOW_BOY_GIRAFARIG                29 // show little boy in Asfal Hills House 1 a Girafarig dex entry
+#define QUEST_SHOW_CAMPER_ALOLAN_RAICHU         30 // show camper in Sofos City Alolan Raichu dex entry for Terrain Extender
+#define QUEST_TRY_SOFOS_BATTLE_PAVILION         31 // participate in Sofos City Battle Pavilion
+#define QUEST_BRING_GRANDMA_AWAKENING           32 // bring grandma an awakening in sofos city house 2
+#define QUEST_5_PINBALL_POINTS                  33 // bring computer guy 5 pinball points in sofos city house 4
+#define QUEST_XATU_AND_NOCTOWL                  34 // Show Xatu and Noctowl dex pages to lady in sofos city house 5
+#define QUEST_NEMOS_QUEST                       34 // bring Nemo dex pages of Komala (SleepyBear), Spheal (Spherical), Archen (First Bird), and Oranguru (Wild Sage)
+#define QUEST_COUNT     (QUEST_XATU_AND_NOCTOWL + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

@@ -214,6 +214,18 @@
 #define MAP_ASFAL_HILLS_HOUSE3                     (16 | (9 << 8))
 #define MAP_SOFOS_CITY_POKEMON_CENTER              (17 | (9 << 8))
 #define MAP_SOFOS_CITY_MART                        (18 | (9 << 8))
+#define MAP_SOFOS_CITY_GYM                         (19 | (9 << 8))
+#define MAP_SOFOS_CITY_HOUSE1                      (20 | (9 << 8))
+#define MAP_SOFOS_CITY_HOUSE2                      (21 | (9 << 8))
+#define MAP_SOFOS_CITY_HOUSE3                      (22 | (9 << 8))
+#define MAP_SOFOS_CITY_HOUSE4                      (23 | (9 << 8))
+#define MAP_SOFOS_CITY_HOUSE5                      (24 | (9 << 8))
+#define MAP_SOFOS_CITY_HOUSE6                      (25 | (9 << 8))
+#define MAP_SOFOS_CITY_HOUSE7                      (26 | (9 << 8))
+#define MAP_SOFOS_CITY_HOUSE8                      (27 | (9 << 8))
+#define MAP_SOFOS_CITY_HOUSE9                      (28 | (9 << 8))
+#define MAP_SOFOS_CITY_ACROPOLIS                   (29 | (9 << 8))
+#define MAP_SOFOS_CITY_SHARD_EXCHANGE_HOUSE        (30 | (9 << 8))
 
 // gMapGroup_IndoorMauville
 #define MAP_MAUVILLE_CITY_GYM               (0 | (10 << 8))

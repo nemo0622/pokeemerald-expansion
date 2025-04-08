@@ -1,0 +1,123 @@
+mapscripts SofosCity_House9_MapScripts {}
+
+script SofosCity_House9_EventScript_Nemo
+{
+    lock
+    faceplayer
+    speakername("Nemo")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_NEMOS_QUEST)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("I hope you're enjoying your time in the Ilios Region!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_NEMOS_QUEST)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Chaire! I'm Nemo, the developer of Pokémon Lazarus. I hope you're enjoying the Ilios Region - a lot of love and time has gone into it!\p I suppose I should give you a Quest, huh? Hmm... how about you try to go find some of {COLOR GREEN}my favorite Pokémon{COLOR DARK_GRAY}?\p Let me know when you've caught the {COLOR GREEN}Sleepy Bear, Spherical, First Bird, and Wild Sage Pokémon{COLOR DARK_GRAY}. Those are their Pokédex classifications - you'll have to figure out which Pokémon they are!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_NEMOS_QUEST)
+    }
+    else
+    {
+        msgbox(format("Hey there! You having fun filling up the Pokédex? I hope it's making you think about Biology and conservation. That's the whole motivation behind making this game, you know!\p Right, the Quest I gave you. Let's see if you've caught the Pokémon I requested!"))
+        closemessage
+
+        getcaughtmon(SPECIES_KOMALA)
+        if(var(VAR_RESULT) == 1)
+        {
+            getcaughtmon(SPECIES_SPHEAL)
+            if(var(VAR_RESULT) == 1)
+            {
+                getcaughtmon(SPECIES_ARCHEN)
+                if(var(VAR_RESULT) == 1)
+                {
+                    getcaughtmon(SPECIES_ORANGURU)
+                }
+            }
+        }
+        delay(30)
+
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Nemo")
+            msgbox(format("Looks like you've still got some Pokémon catching to do!\p Remember, I'm looking for the {COLOR GREEN}Sleepy Bear, Spherical, First Bird, and Wild Sage Pokémon{COLOR DARK_GRAY}. Come visit me when you've caught all 4 Pokémon!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Nemo")
+            msgbox(format("Komala... Spheal... Archen... and Oranguru! Hey, you've caught them all! Those are some of my favorite little fellas.\p Here's something to help you on your journey."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_GLIMMERING_CHARM)
+            closemessage
+            delay(5)
+            speakername("Nemo")
+            msgbox(format("The {COLOR GREEN}Glimmering Charm{COLOR DARK_GRAY} boosts the odds of finding wild Pokémon {COLOR GREEN}holding an item{COLOR DARK_GRAY}! That should be helpful if you're looking for a specific item.\p I hope you continue to enjoy your time in the Ilios Region! Working on the game while finishing college and starting a Master's program in Biology has been a lot to handle, but I hope the love and care I feel for wildlife and Pokémon shows in the final product."))
+            closemessage
+
+            delay(20)
+            completequest(QUEST_NEMOS_QUEST)
+        }
+    }
+    release
+    end
+}
+
+script SofosCity_House9_EventScript_Tyrunt
+{
+    lock
+    faceplayer
+    speakername("Tyrunt")
+    playmoncry(SPECIES_TYRUNT, CRY_MODE_NORMAL)
+    msgbox("Wroooar!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+script SofosCity_House9_EventScript_Amaura
+{
+    lock
+    faceplayer
+    speakername("Amaura")
+    playmoncry(SPECIES_AMAURA, CRY_MODE_NORMAL)
+    msgbox("Breee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+script SofosCity_House9_EventScript_Archen
+{
+    lock
+    faceplayer
+    speakername("Archen")
+    playmoncry(SPECIES_ARCHEN, CRY_MODE_NORMAL)
+    msgbox("Caww!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+script SofosCity_House9_EventScript_Spheal
+{
+    lock
+    faceplayer
+    speakername("Spheal")
+    playmoncry(SPECIES_SPHEAL, CRY_MODE_NORMAL)
+    msgbox("Clap clap!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

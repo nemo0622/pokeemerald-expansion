@@ -2732,109 +2732,237 @@ Gligar
 Level: 25
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_BROOKE_1 ===
-Name: BROOKE
-Class: Cooltrainer
-Pic: Cooltrainer F
+=== TRAINER_SOFOSGYM_BROOKE ===
+Name: Brooke
+Class: Battle Girl
+Pic: Battle Girl
 Gender: Female
+Music: Intense
+Double Battle: No
+AI: Check Bad Move / Check Viability
+
+Passimian @ Sitrus Berry
+Level: 25
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Headbutt
+- Rock Smash
+- Focus Energy
+- Scary Face
+
+=== TRAINER_SOFOSGYM_TYRIEN ===
+Name: Tyrien
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 2
+Pool Rules: Basic
+
+Pancham
+Level: 24
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Karate Chop
+- Feint Attack
+- Work Up
+- Mega Punch
+
+Pawmo
+Level: 24
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Nuzzle
+- Arm Thrust
+- Spark
+- Dig
+
+Gurdurr
+Level: 25
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Tags: Ace
+- Low Kick
+- Rock Throw
+- Focus Energy
+- Chip Away
+
+=== TRAINER_SOFOSGYM_SAPPHA ===
+Name: Sappha
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 2
+Pool Rules: Basic
+
+Flittle
+Level: 24
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Psybeam
+- Pluck
+- Disarming Voice
+- Baby Doll Eyes
+
+Ponyta Galarian
+Level: 24
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Psybeam
+- Fairy Wind
+- Agility
+- Stomp
+
+Duosion
+Level: 25
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Tags: Ace
+- Psyshock
+- Recover
+- Light Screen
+- Charm
+
+=== TRAINER_SOFOSGYM_ARISTO ===
+Name: Aristo
+Class: Artist
+Pic: Artist
+Gender: Male
 Music: Cool
+Double Battle: No
+AI: Check Bad Move / Check Viability
+
+Oranguru @ Lum Berry
+Level: 25
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Feint Attack
+- Nasty Plot
+- Stored Power
+- Psych Up
+
+=== TRAINER_LEADER_MENESWO ===
+Name: Meneswo
+Class: Leader
+Pic: Leader Flannery
+Gender: Female
+Music: Female
 Items: Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 4
+Pool Rules: Basic
 
-Wingull
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Pawmo
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Nuzzle
+- Arm Thrust
+- Spark
+- Dig
 
-Numel
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Gothorita
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Feint Attack
+- Psybeam
+- Psyshock
+- Embargo
 
-Roselia
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Meditite
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Force Palm
+- Calm Mind
+- Confusion
+- Detect
 
-=== TRAINER_JENNIFER ===
-Name: JENNIFER
-Class: Cooltrainer
-Pic: Cooltrainer F
+Unown
+Level: 26
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Hidden Power
+- Freezing Glare
+
+Sneasel Hisuian
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Metal Claw
+- Hone Claws
+- Ice Shard
+- Rock Smash
+
+Mienfoo
+Level: 27
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Force Palm
+- Fake Out
+- Detect
+- Meditate
+
+=== TRAINER_LEADER_MENESWO_HARD ===
+Name: Meneswo
+Class: Leader
+Pic: Leader Flannery
 Gender: Female
-Music: Cool
-Items: Full Restore
+Music: Female
+Items: Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
 
-Sableye
-Level: 30
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Pawmo
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nuzzle
+- Arm Thrust
+- Spark
+- Slam
 
-=== TRAINER_HOPE ===
-Name: HOPE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+Gothorita
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Feint Attack
+- Psybeam
+- Future Sight
+- Embargo
 
-Roselia
-Level: 45
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Meditite
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Force Palm
+- Calm Mind
+- Confusion
+- Detect
 
-=== TRAINER_SHANNON ===
-Name: SHANNON
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+Unown
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hidden Power
+- Freezing Glare
 
-Claydol
-Level: 45
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Sneasel Hisuian
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Metal Claw
+- Hone Claws
+- Ice Shard
+- Rock Smash
 
-=== TRAINER_MICHELLE ===
-Name: MICHELLE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+Stantler
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psyshield Bash
+- Confuse Ray
+- Take Down
+- Stomp
 
-Torkoal
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Medicham
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Ludicolo
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_CAROLINE ===
-Name: CAROLINE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Skarmory
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Sableye
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Mienfoo
+Level: 27
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Force Palm
+- Fake Out
+- Detect
+- Meditate
 
 === TRAINER_JULIE ===
 Name: JULIE

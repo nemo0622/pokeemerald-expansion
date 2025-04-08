@@ -306,6 +306,8 @@ const u32 gTrainerFrontPic_Worker[] = INCBIN_U32("graphics/trainers/front_pics/w
 const u32 gTrainerPalette_Worker[] = INCBIN_U32("graphics/trainers/palettes/worker.gbapal.lz");
 const u32 gTrainerFrontPic_Diver[] = INCBIN_U32("graphics/trainers/front_pics/diver.4bpp.lz");
 const u32 gTrainerPalette_Diver[] = INCBIN_U32("graphics/trainers/palettes/diver.gbapal.lz");
+const u32 gTrainerFrontPic_Artist[] = INCBIN_U32("graphics/trainers/front_pics/artist.4bpp.lz");
+const u32 gTrainerPalette_Artist[] = INCBIN_U32("graphics/trainers/palettes/artist.gbapal.lz");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
@@ -423,6 +425,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(OFFICER, Officer),
     TRAINER_SPRITE(WORKER, Worker),
     TRAINER_SPRITE(DIVER, Diver),
+    TRAINER_SPRITE(ARTIST, Artist),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

@@ -549,8 +549,8 @@
 #define FLAG_HIDDEN_ITEM_PYTHIOS_CEMETERY_PURPLE_NECTAR      (FLAG_HIDDEN_ITEMS_START + 0x06)
 #define FLAG_HIDDEN_ITEM_FROSLASS_CAVERN_ICE_TERA_SHARD_1    (FLAG_HIDDEN_ITEMS_START + 0x07)
 #define FLAG_HIDDEN_ITEM_FROSLASS_CAVERN_ICE_TERA_SHARD_2    (FLAG_HIDDEN_ITEMS_START + 0x08)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD          (FLAG_HIDDEN_ITEMS_START + 0x09)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x0A)
+#define FLAG_HIDDEN_ITEM_RIVERWALK_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x09)
+#define FLAG_HIDDEN_ITEM_KALAMI_HEART_SCALE                  (FLAG_HIDDEN_ITEMS_START + 0x0A)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x0B)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD           (FLAG_HIDDEN_ITEMS_START + 0x0C)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1        (FLAG_HIDDEN_ITEMS_START + 0x0D)
@@ -1288,12 +1288,12 @@
 #define FLAG_PLAYED_IN_SOFOS_BATTLE_PAVILION                        0x4D5 // Set after playing the battle pavilion (battle tent) in sofos city, used for a quest
 #define FLAG_HIDE_MENESWO_SATYRS_LAIR                               0x4D6 // Separate flag hiding Meneswo in Satyrs Lair
 #define FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY                           0x4D7 // temporarily hide Niko in the University
-#define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
-#define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
-#define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
-#define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
-#define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
-#define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
+#define FLAG_SOFOS_GYM_GAUNTLET_ACTIVE                              0x4D8 // flag determining activity of gym gauntlet
+#define FLAG_SPOKE_TO_RED_SHARD_MAN                                 0x4D9 // if been introduced to shard brother
+#define FLAG_SPOKE_TO_GREEN_SHARD_MAN                               0x4DA 
+#define FLAG_SPOKE_TO_BLUE_SHARD_MAN                                0x4DB 
+#define FLAG_SPOKE_TO_YELLOW_SHARD_MAN                              0x4DC 
+#define FLAG_HIDE_CYCLING_WOMAN_JUSMAIL                             0x4DD // hides woman until after quest in jusmail
 #define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
 #define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
 #define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag

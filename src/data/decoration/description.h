@@ -326,10 +326,10 @@ const u8 DecorDesc_DRAGON_POSTER[] = _(
     "A small poster with\n"
         "a Dragonair print.");
 
-const u8 DecorDesc_PIKA_POSTER[] = _(
+const u8 DecorDesc_OPAL_FISH_POSTER[] = _(
     "A large poster with\n"
-        "a Pikachu and\n"
-        "Mimikyu print.");
+        "a Heart Scale color\n"
+        "Relicanth print.");
 
 const u8 DecorDesc_PUPPY_POSTER[] = _(
     "A large poster with\n"

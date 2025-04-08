@@ -1,0 +1,173 @@
+mapscripts SofosCity_ShardExchangeHouse_MapScripts {}
+
+script SofosCity_ShardExchangeHouse_EventScript_RedShardMan
+{
+    lock
+    faceplayer
+    speakername("Red Shard Man")
+    if(!flag(FLAG_SPOKE_TO_RED_SHARD_MAN))
+    {
+        msgbox(format("You've got a good eye, talking to me instead of my foolish brothers!\p We're all obsessed with collecting different types of {COLOR GREEN}Shards{COLOR DARK_GRAY}. Of course, I collect {COLOR GREEN}Red Shards{COLOR DARK_GRAY}, the coolest of them all! In exchange for shards, I'll give you a random {COLOR GREEN}Evolutionary Item{COLOR DARK_GRAY}.\p For a Red Shard, I'll give you a Fire Stone, a Sun Stone, or a Metal Coat at random."))
+        closemessage
+        setflag(FLAG_SPOKE_TO_RED_SHARD_MAN)
+        delay(10)
+    }
+    msgbox(format("Have you brought me a Red Shard? I'll give you an Evolutionary Item for it! It'll be a Fire Stone, a Sun Stone, or a Metal Coat, chosen at random."), MSGBOX_YESNO)
+    closemessage
+    delay(5)
+    if(var(VAR_RESULT) == 0) // no
+    {
+        speakername("Red Shard Man")
+        msgbox(format("Ah, off to collect more Shards? Be sure to bring me whatever you find, as long as they're Red Shards!"))
+        closemessage
+    }
+    else
+    {
+        checkitem(ITEM_RED_SHARD)
+        if(var(VAR_RESULT) == 0) // no red shards
+        {
+            speakername("Red Shard Man")
+            msgbox(format("Hey, you can't trick me! You don't have any Red Shards!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Red Shard Man")
+            msgbox(format("Great! I'll just take a Red Shard off your hands...\p As promised, here's your Evolutionary Item!"))
+            closemessage
+            removeitem(ITEM_RED_SHARD)
+            delay(10)
+            randomelement(ITEM_FIRE_STONE, ITEM_SUN_STONE, ITEM_METAL_COAT)
+            giveitem(VAR_RESULT)
+        }
+    }
+}
+
+script SofosCity_ShardExchangeHouse_EventScript_GreenShardMan
+{
+    lock
+    faceplayer
+    speakername("Green Shard Man")
+    if(!flag(FLAG_SPOKE_TO_GREEN_SHARD_MAN))
+    {
+        msgbox(format("You've got a good eye, talking to me instead of my foolish brothers!\p We're all obsessed with collecting different types of {COLOR GREEN}Shards{COLOR DARK_GRAY}. Of course, I collect {COLOR GREEN}Green Shards{COLOR DARK_GRAY}, the cleanest of them all! In exchange for shards, I'll give you a random {COLOR GREEN}Evolutionary Item{COLOR DARK_GRAY}.\p For a Green Shard, I'll give you a Leaf Stone, a Dusk Stone, or a Linking Cord at random."))
+        closemessage
+        setflag(FLAG_SPOKE_TO_GREEN_SHARD_MAN)
+        delay(10)
+    }
+    msgbox(format("Have you brought me a Green Shard? I'll give you an Evolutionary Item for it! It'll be a Leaf Stone, a Dusk Stone, or a Linking Cord, chosen at random."), MSGBOX_YESNO)
+    closemessage
+    delay(5)
+    if(var(VAR_RESULT) == 0) // no
+    {
+        speakername("Green Shard Man")
+        msgbox(format("Ah, off to collect more Shards? Be sure to bring me whatever you find, as long as they're Green Shards!"))
+        closemessage
+    }
+    else
+    {
+        checkitem(ITEM_GREEN_SHARD)
+        if(var(VAR_RESULT) == 0) // no green shards
+        {
+            speakername("Green Shard Man")
+            msgbox(format("Hey, you can't trick me! You don't have any Green Shards!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Green Shard Man")
+            msgbox(format("Great! I'll just take a Green Shard off your hands...\p As promised, here's your Evolutionary Item!"))
+            closemessage
+            removeitem(ITEM_GREEN_SHARD)
+            delay(10)
+            randomelement(ITEM_LEAF_STONE, ITEM_DUSK_STONE, ITEM_LINKING_CORD)
+            giveitem(VAR_RESULT)
+        }
+    }
+}
+
+script SofosCity_ShardExchangeHouse_EventScript_BlueShardMan
+{
+    lock
+    faceplayer
+    speakername("Blue Shard Man")
+    if(!flag(FLAG_SPOKE_TO_BLUE_SHARD_MAN))
+    {
+        msgbox(format("You've got a good eye, talking to me instead of my foolish brothers!\p We're all obsessed with collecting different types of {COLOR GREEN}Shards{COLOR DARK_GRAY}. Of course, I collect {COLOR GREEN}Blue Shards{COLOR DARK_GRAY}, the most beautiful of them all! In exchange for shards, I'll give you a random {COLOR GREEN}Evolutionary Item{COLOR DARK_GRAY}.\p For a Blue Shard, I'll give you a Water Stone, an Ice Stone, or a Moon Stone at random."))
+        closemessage
+        setflag(FLAG_SPOKE_TO_BLUE_SHARD_MAN)
+        delay(10)
+    }
+    msgbox(format("Have you brought me a Blue Shard? I'll give you an Evolutionary Item for it! It'll be a Water Stone, an Ice Stone, or a Moon Stone, chosen at random."), MSGBOX_YESNO)
+    closemessage
+    delay(5)
+    if(var(VAR_RESULT) == 0) // no
+    {
+        speakername("Blue Shard Man")
+        msgbox(format("Ah, off to collect more Shards? Be sure to bring me whatever you find, as long as they're Blue Shards!"))
+        closemessage
+    }
+    else
+    {
+        checkitem(ITEM_BLUE_SHARD)
+        if(var(VAR_RESULT) == 0) // no blue shards
+        {
+            speakername("Blue Shard Man")
+            msgbox(format("Hey, you can't trick me! You don't have any Blue Shards!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Blue Shard Man")
+            msgbox(format("Great! I'll just take a Blue Shard off your hands...\p As promised, here's your Evolutionary Item!"))
+            closemessage
+            removeitem(ITEM_BLUE_SHARD)
+            delay(10)
+            randomelement(ITEM_WATER_STONE, ITEM_ICE_STONE, ITEM_MOON_STONE)
+            giveitem(VAR_RESULT)
+        }
+    }
+}
+
+script SofosCity_ShardExchangeHouse_EventScript_YellowShardMan
+{
+    lock
+    faceplayer
+    speakername("Yellow Shard Man")
+    if(!flag(FLAG_SPOKE_TO_YELLOW_SHARD_MAN))
+    {
+        msgbox(format("You've got a good eye, talking to me instead of my foolish brothers!\p We're all obsessed with collecting different types of {COLOR GREEN}Shards{COLOR DARK_GRAY}. Of course, I collect {COLOR GREEN}Yellow Shards{COLOR DARK_GRAY}, the shiniest of them all! In exchange for shards, I'll give you a random {COLOR GREEN}Evolutionary Item{COLOR DARK_GRAY}.\p For a Yellow Shard, I'll give you a Thunder Stone, a Shiny Stone, or a Dawn Stone at random."))
+        closemessage
+        setflag(FLAG_SPOKE_TO_YELLOW_SHARD_MAN)
+        delay(10)
+    }
+    msgbox(format("Have you brought me a Yellow Shard? I'll give you an Evolutionary Item for it! It'll be a Thunder Stone, a Shiny Stone, or a Dawn Stone, chosen at random."), MSGBOX_YESNO)
+    closemessage
+    delay(5)
+    if(var(VAR_RESULT) == 0) // no
+    {
+        speakername("Yellow Shard Man")
+        msgbox(format("Ah, off to collect more Shards? Be sure to bring me whatever you find, as long as they're Yellow Shards!"))
+        closemessage
+    }
+    else
+    {
+        checkitem(ITEM_YELLOW_SHARD)
+        if(var(VAR_RESULT) == 0) // no yellow shards
+        {
+            speakername("Yellow Shard Man")
+            msgbox(format("Hey, you can't trick me! You don't have any Yellow Shards!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Yellow Shard Man")
+            msgbox(format("Great! I'll just take a Yellow Shard off your hands...\p As promised, here's your Evolutionary Item!"))
+            closemessage
+            removeitem(ITEM_YELLOW_SHARD)
+            delay(10)
+            randomelement(ITEM_THUNDER_STONE, ITEM_SHINY_STONE, ITEM_DAWN_STONE)
+            giveitem(VAR_RESULT)
+        }
+    }
+}
