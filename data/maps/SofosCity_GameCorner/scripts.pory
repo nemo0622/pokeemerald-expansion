@@ -97,8 +97,10 @@ script SofosCity_GameCorner_ItemShop
             closemessage
 
             subvar(VAR_PINBALL_POINTS, 1)
-            randomelement(ITEM_WISHING_STAR, ITEM_EVIOLITE)
+            randomelement(ITEM_WISHING_STAR, ITEM_WISHING_STAR, ITEM_EVIOLITE, ITEM_SILK_SCARF, ITEM_CHARCOAL, ITEM_MYSTIC_WATER, ITEM_MAGNET, ITEM_MIRACLE_SEED, ITEM_NEVER_MELT_ICE, ITEM_BLACK_BELT, ITEM_POISON_BARB, ITEM_SOFT_SAND, ITEM_SHARP_BEAK, ITEM_TWISTED_SPOON, ITEM_SILVER_POWDER, ITEM_HARD_STONE, ITEM_SPELL_TAG, ITEM_DRAGON_FANG, ITEM_BLACK_GLASSES, ITEM_METAL_COAT, ITEM_FAIRY_FEATHER, ITEM_WISHING_STAR, ITEM_EXPERT_BELT, ITEM_LIFE_ORB, ITEM_ASSAULT_VEST, ITEM_WISE_GLASSES, ITEM_MUSCLE_BAND, ITEM_WISHING_STAR)
             giveitem(VAR_RESULT)
+            closemessage
+            delay(5)
 
             speakername("Pinball Man")
             msgbox(format("Hope you like what you got! Come on back if you want more."))
@@ -109,7 +111,7 @@ script SofosCity_GameCorner_ItemShop
     end
 }
 
-script SofosCity_GameCorner_EggShop
+script SofosCity_GameCorner_TeraShardExchange
 {
     lock
     faceplayer
@@ -127,7 +129,7 @@ script SofosCity_GameCorner_EggShop
         msgbox(format("Looks like you've got {COLOR GREEN}{STR_VAR_1} Pinball Points{COLOR DARK_GRAY} to spend!"))
         closemessage
         speakername("Pinball Lady")
-        msgbox(format("I'll give a random {COLOR GREEN}Pokémon Egg{COLOR DARK_GRAY} in exchange for {COLOR GREEN}1 Pinball Point{COLOR DARK_GRAY}. Interested?"), MSGBOX_YESNO)
+        msgbox(format("I'll give a random {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} in exchange for {COLOR GREEN}1 Pinball Point{COLOR DARK_GRAY}. Interested?"), MSGBOX_YESNO)
         if(var(VAR_RESULT) == 0) // no
         {
             speakername("Pinball Lady")
@@ -137,20 +139,17 @@ script SofosCity_GameCorner_EggShop
         else
         {
             speakername("Pinball Lady")
-            msgbox(format("Alright, get ready for your new Pokémon Egg! Let's see here..."))
+            msgbox(format("Alright, I'll pick out a random Tera Shard! Let's see here..."))
             closemessage
 
             subvar(VAR_PINBALL_POINTS, 1)
-            randomelement(SPECIES_PIKACHU, SPECIES_VULPIX)
-            giveegg(VAR_RESULT)
-            
-            bufferspeciesname(STR_VAR_1, VAR_RESULT)
-            msgbox(format("{PLAYER} was given a Pokémon Egg!"))
-            delay(60)
+            randomelement(ITEM_BUG_TERA_SHARD, ITEM_DARK_TERA_SHARD, ITEM_DRAGON_TERA_SHARD, ITEM_ELECTRIC_TERA_SHARD, ITEM_FAIRY_TERA_SHARD, ITEM_FIGHTING_TERA_SHARD, ITEM_FIRE_TERA_SHARD, ITEM_FLYING_TERA_SHARD, ITEM_GHOST_TERA_SHARD, ITEM_GRASS_TERA_SHARD, ITEM_GROUND_TERA_SHARD, ITEM_ICE_TERA_SHARD, ITEM_NORMAL_TERA_SHARD, ITEM_POISON_TERA_SHARD, ITEM_PSYCHIC_TERA_SHARD, ITEM_ROCK_TERA_SHARD, ITEM_STEEL_TERA_SHARD, ITEM_WATER_TERA_SHARD)
+            giveitem(VAR_RESULT)
             closemessage
+            delay(5)
             
             speakername("Pinball Lady")
-            msgbox(format("Hope you like what you got! Come on back if you want more."))
+            msgbox(format("Hope you like what you got! Remember, your Tera Shard can be used to {COLOR GREEN}change a Pokémon's Tera Type at the Acrisia University{COLOR DARK_GRAY} if you have a Tera Orb! Come on back if you want more."))
             closemessage
         }
     }

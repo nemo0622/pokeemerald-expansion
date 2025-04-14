@@ -33,6 +33,11 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 - Difficulty Modes!
     - Normal Mode: Soft Level Caps, Standard Gym Leader teams. Can likely beat the game with most Pokémon teams, with a few battles requiring extra planning.
     - Hard Mode: Hard Level Caps, Modified Gym Leaders to be more difficult fights. Opponents gain extra levels as the game progresses, ending in a +5 level bonus to opponents. Planning before Gym battles is key, as their Pokémon have stronger moves and more coverage.
+- Minigames and Side Content scattered across the Ilios Region, adding more to do:
+    - Pinball in Sofos City, earning Pinball Points to exchange for items
+    - Battle Pavilions in multiple areas, replicating Battle Tents of Pokémon Emerald with new Pokémon and balancing
+    - Pokémon Contests, with slight stat bonuses given to Pokémon with Ribbons
+    - Dozens of optional sidequests for a variety of fun rewards and events!
 - Various QOL Changes, such as:
     - A dedicated Quest Menu to keep track of story objectives
     - Expanded Bag space to 50 Items
@@ -57,16 +62,10 @@ MAJOR TODOS:
 - ADD "Demo Compatability Update" FUNCTION
     - Runs EventScript_ResetAllBerries (warn user first!)
     - Set flags like FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA
-- GIVE WILD POKéMON BETTER HELD ITEMS
-    - Add Quest(s) of people requesting Heart Scales! Gives them an optional use
-    - Add Heart Scale hidden items around maps
 - REPLACE "Triathlete" with "Competitor" or something close to "Olympic Player"
 - Continue Mapping and NPC development
-    - Next: Complete Sofos City
-        - Add Tyrantrum Exhibit tiles to a town square area in Sofos City!
-        - CHANGE SOFOS CITY BUILDINGS to Gray Brick building by TrainerDX
-    - Also rework existing areas based on Demo feedback
-        - Add more quests! Requests for items, Pokédex entries, Pokémon, and more extensive ones like the Sandslash unbound quest!
+    - Next: Kipos Town, west of Port Pello, only accessible via Piraeus
+    - MARMARO ISLAND: ADD TYRANTRUM EXHIBIT TILES!!!
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
@@ -84,8 +83,8 @@ MAJOR TODOS:
         - Péntepetal City ("Five-petal City") - name inspired by the Wild Pansy / Violet, which is a major lesbian/queer symbol with 5 petals. City obviously on island inspired by Lesbos
             - Questline unlocking Eternal Flower Floette
             - Major Cabin Decor shops! Ways here to unlock many poké dolls?
-            - Wishing Star mart location could be here too! Makes sense to make it late-ish in game
-                - Make sure to add some wishing stars on the ground across the region before here though
+            - Wishing Star mart location could be here too! Makes sense to make it late-ish in game (~after Gym 5/6)
+            - POKéMON CONTEST HALL could be located here! (Implement Pokémon with Ribbons get slight stat boost)
         - The Pollen Road - route east of Péntepetal City, home to many Tropius, Roselia, and Lileep
         - Davosian Strait - ocean route heading north of the Pollen Road (name inspired by Ser Davos Seaworth)
             - Only place where Dhelmise can be fished up!

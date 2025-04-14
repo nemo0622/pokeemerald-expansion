@@ -153,7 +153,7 @@
 #define OBJ_EVENT_GFX_JIGGLYPUFF_DOLL            149
 #define OBJ_EVENT_GFX_MEOWTH_DOLL                150
 #define OBJ_EVENT_GFX_CLEFAIRY_DOLL              151
-#define OBJ_EVENT_GFX_DITTO_DOLL                 152
+#define OBJ_EVENT_GFX_EGG_DOLL                 152
 #define OBJ_EVENT_GFX_SMOOCHUM_DOLL              153
 #define OBJ_EVENT_GFX_TREECKO_DOLL               154
 #define OBJ_EVENT_GFX_TORCHIC_DOLL               155

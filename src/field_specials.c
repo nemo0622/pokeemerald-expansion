@@ -46,6 +46,7 @@
 #include "task.h"
 #include "text.h"
 #include "tilesets.h"
+#include "trainer_pokemon_sprites.h"
 #include "tv.h"
 #include "wallclock.h"
 #include "window.h"
@@ -151,6 +152,8 @@ static void BufferFanClubTrainerName_(struct LinkBattleRecords *, u8, u8);
 #else
 static void BufferFanClubTrainerName_(u8 whichLinkTrainer, u8 whichNPCTrainer);
 #endif //FREE_LINK_BATTLE_RECORDS
+
+u8 CheckZooDonationValidity(u16);
 
 void Special_ShowDiploma(void)
 {
@@ -4482,5 +4485,2639 @@ void ChooseItemFromBag(void)
         GoToBagMenu(ITEMMENULOCATION_CHOOSE_ITEM, VarGet(VAR_TEMP_1), CB2_ReturnToFieldContinueScript);
     default:
         break;
+    }
+}
+
+// -------------------------------------------------------------------------------------------
+//                                     KIPOS TOWN ZOO SPECIALS
+// -------------------------------------------------------------------------------------------
+
+void DonateMonToZoo(void)
+{
+    u16 item = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_HELD_ITEM); // used to preserve held item and return it to bag
+    if (gSaveBlock3Ptr->followerIndex == gSpecialVar_0x8004)
+    {
+        gSaveBlock3Ptr->followerIndex = OW_FOLLOWER_NOT_SET;
+        gFollowerSteps = 0;
+    }
+
+    u8 exhibitCompatibility = CheckZooDonationValidity(GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES));
+
+    // one last failsafe - cannot donate last Pokémon in party!
+    if(CountPartyAliveNonEggMonsExcept(gSpecialVar_0x8004) == 0 || exhibitCompatibility == 0)
+    {
+        VarSet(VAR_0x8004, PARTY_SIZE); // will check in donation code to see if this happened
+        // If VAR_0x8004 is set to PARTY_SIZE, the donation will not be able to go through
+    }
+    else
+    {
+        // "Releases" the Pokémon by zeroing all the data associated with it
+        ZeroMonData(&gPlayerParty[gSpecialVar_0x8004]);
+        CompactPartySlots();
+        CalculatePlayerPartyCount();
+        UpdateFollowingPokemon();
+
+        // adds old held item to bag
+        if (item != ITEM_NONE)
+            AddBagItem(item, 1);
+    }
+}
+
+EWRAM_DATA static u8 sDexHeaderBoxWindowId = 0;
+EWRAM_DATA static u8 monSpriteId;
+
+void ShowSpeciesZooInfoWindow(void)
+{
+
+    // define bits of strings to add
+    static const u8 sTextTheBlank[] = _("The ");
+    static const u8 sTextBlankPokemon[] = _(" Pokémon");
+    StringCopy(gStringVar2, sTextTheBlank);
+
+    u16 species = VarGet(VAR_0x8003);
+
+    // eff it i wanna draw the pokemon sprite too
+    // u8 monSpriteId = 0;
+    u8 monSpriteXPosition = 52;
+    u8 monSpriteYPosition = 45;
+    monSpriteId = CreateMonPicSprite(species, FALSE, 0xFF, TRUE, monSpriteXPosition, monSpriteYPosition, 0, TAG_NONE);
+    gSprites[monSpriteId].oam.priority = 0;
+    gSprites[monSpriteId].invisible = FALSE;
+
+    // Load information into STR_VAR_1 through 3
+    StringCopy(gStringVar1, GetSpeciesName(species));
+    StringAppend(gStringVar2, GetSpeciesCategory(species));
+    StringAppend(gStringVar2, sTextBlankPokemon);
+    StringCopy(gStringVar3, GetSpeciesPokedexDescription(species));
+
+    // Draw window
+    struct WindowTemplate template;
+    SetWindowTemplateFields(&template, 0, 1, 2, 28, 16, 15, 8);
+    sDexHeaderBoxWindowId = AddWindow(&template);
+    FillWindowPixelBuffer(sDexHeaderBoxWindowId, PIXEL_FILL(0));
+    PutWindowTilemap(sDexHeaderBoxWindowId);
+    CopyWindowToVram(sDexHeaderBoxWindowId, 3);
+    SetStandardWindowBorderStyle(sDexHeaderBoxWindowId, FALSE);
+    DrawStdFrameWithCustomTileAndPalette(sDexHeaderBoxWindowId, FALSE, 0x214, 14);
+
+    // Add text to the window!
+    int xPos;
+    // Add Species Name
+    xPos = GetStringCenterAlignXOffset(FONT_NORMAL, gStringVar1, 290);
+    AddTextPrinterParameterized(sDexHeaderBoxWindowId, FONT_NORMAL, gStringVar1, xPos, 12, 0, NULL); // writes species name
+    // Add species category
+    xPos = GetStringCenterAlignXOffset(FONT_SHORT_NARROW, gStringVar2, 290);
+    AddTextPrinterParameterized(sDexHeaderBoxWindowId, FONT_SHORT_NARROW, gStringVar2, xPos, 30, 0, NULL); // writes species category
+    // Add species description
+    xPos = GetStringCenterAlignXOffsetWithLetterSpacing(FONT_SHORT_NARROW, gStringVar3, 220, 2);
+    AddTextPrinterParameterized(sDexHeaderBoxWindowId, FONT_SHORT_NARROW, gStringVar3, xPos, 64, 0, NULL); // writes species pokedex description
+}
+void CloseSpeciesZooInfoWindow(void)
+{
+    FreeAndDestroyMonPicSprite(monSpriteId);
+
+    ClearStdWindowAndFrameToTransparent(sDexHeaderBoxWindowId, FALSE);
+    CopyWindowToVram(sDexHeaderBoxWindowId, 3);
+    RemoveWindow(sDexHeaderBoxWindowId);
+}
+
+void GetZooDonationValidity(void)
+{
+    u8 exhibitCompatibility = CheckZooDonationValidity(GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES));
+    VarSet(VAR_0x8002, exhibitCompatibility);
+}
+
+u8 CheckZooDonationValidity(u16 species)
+{
+    // Remember, VAR_TEMP_0 is dynamically set in the sign scripts to align with which var should be
+    // set (ex: when setting VAR_ZOO_POKEMON_ENCLOSURE_01_1, VAR_TEMP_0 is equal to 1. Based on this,
+    // we know that the enclosure is the Forest exhibit, so check if that species works.)
+
+    u16 donationSlotId = VarGet(VAR_TEMP_0);
+
+    u16 sanitizedSpeciesId = SanitizeSpeciesId(species);
+
+    switch(sanitizedSpeciesId)
+    {
+        case SPECIES_ROWLET:
+        case SPECIES_DARTRIX:
+        case SPECIES_DECIDUEYE:
+        case SPECIES_DECIDUEYE_HISUIAN:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_LITTEN:
+        case SPECIES_TORRACAT:
+        case SPECIES_INCINEROAR:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_POPPLIO:
+        case SPECIES_BRIONNE:
+        case SPECIES_PRIMARINA:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CHESPIN:
+        case SPECIES_QUILLADIN:
+        case SPECIES_CHESNAUGHT:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FENNEKIN:
+        case SPECIES_BRAIXEN:
+        case SPECIES_DELPHOX:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FROAKIE:
+        case SPECIES_FROGADIER:
+        case SPECIES_GRENINJA:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SPRIGATITO:
+        case SPECIES_FLORAGATO:
+        case SPECIES_MEOWSCARADA:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FUECOCO:
+        case SPECIES_CROCALOR:
+        case SPECIES_SKELEDIRGE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_QUAXLY:
+        case SPECIES_QUAXWELL:
+        case SPECIES_QUAQUAVAL:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PANSAGE:
+        case SPECIES_SIMISAGE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PANSEAR:
+        case SPECIES_SIMISEAR:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PANPOUR:
+        case SPECIES_SIMIPOUR:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_LILLIPUP:
+        case SPECIES_HERDIER:
+        case SPECIES_STOUTLAND:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PIKIPEK:
+        case SPECIES_TRUMBEAK:
+        case SPECIES_TOUCANNON:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_DUCKLETT:
+        case SPECIES_SWANNA:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_HOPPIP:
+        case SPECIES_SKIPLOOM:
+        case SPECIES_JUMPLUFF:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_NINCADA:
+        case SPECIES_NINJASK:
+        case SPECIES_SHEDINJA:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_GRUBBIN:
+        case SPECIES_CHARJABUG:
+        case SPECIES_VIKAVOLT:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PARAS:
+        case SPECIES_PARASECT:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PHANPY:
+        case SPECIES_DONPHAN:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SNOM:
+        case SPECIES_FROSMOTH:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CUBONE:
+        case SPECIES_MAROWAK:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MAROWAK_ALOLAN:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MUDBRAY:
+        case SPECIES_MUDSDALE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MAREEP:
+        case SPECIES_FLAAFFY:
+        case SPECIES_AMPHAROS:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_APPLIN:
+        case SPECIES_FLAPPLE:
+        case SPECIES_APPLETUN:
+        case SPECIES_DIPPLIN:
+        case SPECIES_HYDRAPPLE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CUTIEFLY:
+        case SPECIES_RIBOMBEE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_GRIMER:
+        case SPECIES_GRIMER_ALOLAN:
+        case SPECIES_MUK:
+        case SPECIES_MUK_ALOLAN:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_WURMPLE:
+        case SPECIES_SILCOON:
+        case SPECIES_BEAUTIFLY:
+        case SPECIES_CASCOON:
+        case SPECIES_DUSTOX:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TROPIUS:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_RALTS:
+        case SPECIES_KIRLIA:
+        case SPECIES_GARDEVOIR:
+        case SPECIES_GALLADE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_EEVEE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_VAPOREON:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_JOLTEON:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FLAREON:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ESPEON:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_UMBREON:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_LEAFEON:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_GLACEON:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SYLVEON:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SKIDDO:
+        case SPECIES_GOGOAT:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MURKROW:
+        case SPECIES_HONCHKROW:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ORICORIO:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ORICORIO_POM_POM:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ORICORIO_PAU:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ORICORIO_SENSU:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SANDSHREW:
+        case SPECIES_SANDSLASH:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SANDSHREW_ALOLAN:
+        case SPECIES_SANDSLASH_ALOLAN:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SANDILE:
+        case SPECIES_KROKOROK:
+        case SPECIES_KROOKODILE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_NOSEPASS:
+        case SPECIES_PROBOPASS:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MAWILE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ROCKRUFF:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_LYCANROC:
+        case SPECIES_LYCANROC_MIDNIGHT:
+        case SPECIES_LYCANROC_DUSK:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_VULLABY:
+        case SPECIES_MANDIBUZZ:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_WOOBAT:
+        case SPECIES_SWOOBAT:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ARON:
+        case SPECIES_LAIRON:
+        case SPECIES_AGGRON:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TIMBURR:
+        case SPECIES_GURDURR:
+        case SPECIES_CONKELDURR:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_KLAWF:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_POLIWAG:
+        case SPECIES_POLIWHIRL:
+        case SPECIES_POLIWRATH:
+        case SPECIES_POLITOED:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PUMPKABOO:
+        case SPECIES_PUMPKABOO_SMALL:
+        case SPECIES_PUMPKABOO_LARGE:
+        case SPECIES_PUMPKABOO_SUPER:
+        case SPECIES_GOURGEIST:
+        case SPECIES_GOURGEIST_SMALL:
+        case SPECIES_GOURGEIST_LARGE:
+        case SPECIES_GOURGEIST_SUPER:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SHROOMISH:
+        case SPECIES_BRELOOM:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_HERACROSS:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SHUPPET:
+        case SPECIES_BANETTE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_AIPOM:
+        case SPECIES_AMBIPOM:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_BOUNSWEET:
+        case SPECIES_STEENEE:
+        case SPECIES_TSAREENA:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_WOOPER:
+        case SPECIES_QUAGSIRE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_WOOPER_PALDEAN:
+        case SPECIES_CLODSIRE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TOEDSCOOL:
+        case SPECIES_TOEDSCRUEL:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_BLITZLE:
+        case SPECIES_ZEBSTRIKA:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_HOOTHOOT:
+        case SPECIES_NOCTOWL:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MIENFOO:
+        case SPECIES_MIENSHAO:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FLITTLE:
+        case SPECIES_ESPATHRA:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_VULPIX:
+        case SPECIES_NINETALES:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_VULPIX_ALOLAN:
+        case SPECIES_NINETALES_ALOLAN:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_HONEDGE:
+        case SPECIES_DOUBLADE:
+        case SPECIES_AEGISLASH:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_DWEBBLE:
+        case SPECIES_CRUSTLE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MINIOR_ORANGE:
+        case SPECIES_MINIOR_YELLOW:
+        case SPECIES_MINIOR_GREEN:
+        case SPECIES_MINIOR_BLUE:
+        case SPECIES_MINIOR_INDIGO:
+        case SPECIES_MINIOR_VIOLET:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_GASTLY:
+        case SPECIES_HAUNTER:
+        case SPECIES_GENGAR:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_BALTOY:
+        case SPECIES_CLAYDOL:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SALANDIT:
+        case SPECIES_SALAZZLE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FINIZEN:
+        case SPECIES_PALAFIN:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TOGEPI:
+        case SPECIES_TOGETIC:
+        case SPECIES_TOGEKISS:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CHERUBI:
+        case SPECIES_CHERRIM:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_HOUNDOUR:
+        case SPECIES_HOUNDOOM:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_OMANYTE:
+        case SPECIES_OMASTAR:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_KABUTO:
+        case SPECIES_KABUTOPS:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SKORUPI:
+        case SPECIES_DRAPION:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SPINARAK:
+        case SPECIES_ARIADOS:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ONIX:
+        case SPECIES_STEELIX:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_KOMALA:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_WINGULL:
+        case SPECIES_PELIPPER:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_STANTLER:
+        case SPECIES_WYRDEER:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SNORUNT:
+        case SPECIES_GLALIE:
+        case SPECIES_FROSLASS:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SPHEAL:
+        case SPECIES_SEALEO:
+        case SPECIES_WALREIN:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SEEL:
+        case SPECIES_DEWGONG:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_BRONZOR:
+        case SPECIES_BRONZONG:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CUFANT:
+        case SPECIES_COPPERAJAH:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ZORUA:
+        case SPECIES_ZOROARK:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ZORUA_HISUIAN:
+        case SPECIES_ZOROARK_HISUIAN:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SNEASEL:
+        case SPECIES_WEAVILE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SNEASEL_HISUIAN:
+        case SPECIES_SNEASLER:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TYRUNT:
+        case SPECIES_TYRANTRUM:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_AMAURA:
+        case SPECIES_AURORUS:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MEOWTH:
+        case SPECIES_PERSIAN:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MEOWTH_ALOLAN:
+        case SPECIES_PERSIAN_ALOLAN:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MEOWTH_GALARIAN:
+        case SPECIES_PERRSERKER:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PACHIRISU:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ELECTRIKE:
+        case SPECIES_MANECTRIC:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PAWMI:
+        case SPECIES_PAWMO:
+        case SPECIES_PAWMOT:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SHROODLE:
+        case SPECIES_GRAFAIAI:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_BUIZEL:
+        case SPECIES_FLOATZEL:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_STUNKY:
+        case SPECIES_SKUNTANK:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CORSOLA:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CORSOLA_GALARIAN:
+        case SPECIES_CURSOLA:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FINNEON:
+        case SPECIES_LUMINEON:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_WAILMER:
+        case SPECIES_WAILORD:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_WATTREL:
+        case SPECIES_KILOWATTREL:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TAUROS:
+        case SPECIES_TAUROS_PALDEA_AQUA:
+        case SPECIES_TAUROS_PALDEA_BLAZE:
+        case SPECIES_TAUROS_PALDEA_COMBAT:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CYCLIZAR:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_WIMPOD:
+        case SPECIES_GOLISOPOD:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PICHU:
+        case SPECIES_PIKACHU:
+        case SPECIES_RAICHU:
+        case SPECIES_RAICHU_ALOLAN:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MIMIKYU:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PONYTA:
+        case SPECIES_RAPIDASH:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PONYTA_GALARIAN:
+        case SPECIES_RAPIDASH_GALARIAN:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TENTACOOL:
+        case SPECIES_TENTACRUEL:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CLAUNCHER:
+        case SPECIES_CLAWITZER:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SCYTHER:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SCIZOR:
+        case SPECIES_KLEAVOR:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_STUFFUL:
+        case SPECIES_BEWEAR:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_BAGON:
+        case SPECIES_SHELGON:
+        case SPECIES_SALAMENCE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TOGEDEMARU:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CRABRAWLER:
+        case SPECIES_CRABOMINABLE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_LILEEP:
+        case SPECIES_CRADILY:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ANORITH:
+        case SPECIES_ARMALDO:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_DEDENNE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CHATOT:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MEDITITE:
+        case SPECIES_MEDICHAM:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_DROWZEE:
+        case SPECIES_HYPNO:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_EKANS:
+        case SPECIES_ARBOK:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_BASCULIN:
+        case SPECIES_BASCULIN_BLUE_STRIPED:
+        case SPECIES_BASCULIN_WHITE_STRIPED:
+        case SPECIES_BASCULEGION:
+        case SPECIES_BASCULEGION_FEMALE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PANCHAM:
+        case SPECIES_PANGORO:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_GOTHITA:
+        case SPECIES_GOTHORITA:
+        case SPECIES_GOTHITELLE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SOLOSIS:
+        case SPECIES_DUOSION:
+        case SPECIES_REUNICLUS:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_LITWICK:
+        case SPECIES_LAMPENT:
+        case SPECIES_CHANDELURE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CHARCADET:
+        case SPECIES_ARMAROUGE:
+        case SPECIES_CERULEDGE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SKRELP:
+        case SPECIES_DRAGALGE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CHINCHOU:
+        case SPECIES_LANTURN:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SHELLDER:
+        case SPECIES_CLOYSTER:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CLAMPERL:
+        case SPECIES_HUNTAIL:
+        case SPECIES_GOREBYSS:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FLABEBE:
+        case SPECIES_FLABEBE_YELLOW_FLOWER:
+        case SPECIES_FLABEBE_ORANGE_FLOWER:
+        case SPECIES_FLABEBE_BLUE_FLOWER:
+        case SPECIES_FLABEBE_WHITE_FLOWER:
+        case SPECIES_FLOETTE:
+        case SPECIES_FLOETTE_YELLOW_FLOWER:
+        case SPECIES_FLOETTE_ORANGE_FLOWER:
+        case SPECIES_FLOETTE_BLUE_FLOWER:
+        case SPECIES_FLOETTE_WHITE_FLOWER:
+        case SPECIES_FLORGES:
+        case SPECIES_FLORGES_YELLOW_FLOWER:
+        case SPECIES_FLORGES_ORANGE_FLOWER:
+        case SPECIES_FLORGES_BLUE_FLOWER:
+        case SPECIES_FLORGES_WHITE_FLOWER:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_IGGLYBUFF:
+        case SPECIES_JIGGLYPUFF:
+        case SPECIES_WIGGLYTUFF:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_HELIOPTILE:
+        case SPECIES_HELIOLISK:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FALINKS:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TRAPINCH:
+        case SPECIES_VIBRAVA:
+        case SPECIES_FLYGON:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_DODUO:
+        case SPECIES_DODRIO:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TINKATINK:
+        case SPECIES_TINKATUFF:
+        case SPECIES_TINKATON:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SCRAGGY:
+        case SPECIES_SCRAFTY:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_GLIGAR:
+        case SPECIES_GLISCOR:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TORKOAL:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_NUMEL:
+        case SPECIES_CAMERUPT:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_RELICANTH:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_BARBOACH:
+        case SPECIES_WHISCASH:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MUNNA:
+        case SPECIES_MUSHARNA:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_KECLEON:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MAGIKARP:
+        case SPECIES_GYARADOS:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FOMANTIS:
+        case SPECIES_LURANTIS:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ORANGURU:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PASSIMIAN:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ZIGZAGOON:
+        case SPECIES_LINOONE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ZIGZAGOON_GALARIAN:
+        case SPECIES_LINOONE_GALARIAN:
+        case SPECIES_OBSTAGOON:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_GOOMY:
+        case SPECIES_SLIGGOO:
+        case SPECIES_GOODRA:
+        case SPECIES_SLIGGOO_HISUIAN:
+        case SPECIES_GOODRA_HISUIAN:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_BRUXISH:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_IMPIDIMP:
+        case SPECIES_MORGREM:
+        case SPECIES_GRIMMSNARL:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SWABLU:
+        case SPECIES_ALTARIA:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MANKEY:
+        case SPECIES_PRIMEAPE:
+        case SPECIES_ANNIHILAPE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_VOLTORB:
+        case SPECIES_ELECTRODE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_VOLTORB_HISUIAN:
+        case SPECIES_ELECTRODE_HISUIAN:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_LAPRAS:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_GIRAFARIG:
+        case SPECIES_FARIGIRAF:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_BUDEW:
+        case SPECIES_ROSELIA:
+        case SPECIES_ROSERADE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_MAGNEMITE:
+        case SPECIES_MAGNETON:
+        case SPECIES_MAGNEZONE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CUBCHOO:
+        case SPECIES_BEARTIC:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_GROWLITHE:
+        case SPECIES_ARCANINE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_GROWLITHE_HISUIAN:
+        case SPECIES_ARCANINE_HISUIAN:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_PSYDUCK:
+        case SPECIES_GOLDUCK:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_YANMA:
+        case SPECIES_YANMEGA:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_AERODACTYL:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_REMORAID:
+        case SPECIES_OCTILLERY:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_RUFFLET:
+        case SPECIES_BRAVIARY:
+        case SPECIES_BRAVIARY_HISUIAN:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_NATU:
+        case SPECIES_XATU:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SNOVER:
+        case SPECIES_ABOMASNOW:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_DUSKULL:
+        case SPECIES_DUSCLOPS:
+        case SPECIES_DUSKNOIR:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SWINUB:
+        case SPECIES_PILOSWINE:
+        case SPECIES_MAMOSWINE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CORPHISH:
+        case SPECIES_CRAWDAUNT:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_UNOWN:
+        case SPECIES_UNOWN_B:
+        case SPECIES_UNOWN_C:
+        case SPECIES_UNOWN_D:
+        case SPECIES_UNOWN_E:
+        case SPECIES_UNOWN_F:
+        case SPECIES_UNOWN_G:
+        case SPECIES_UNOWN_H:
+        case SPECIES_UNOWN_I:
+        case SPECIES_UNOWN_J:
+        case SPECIES_UNOWN_K:
+        case SPECIES_UNOWN_L:
+        case SPECIES_UNOWN_M:
+        case SPECIES_UNOWN_N:
+        case SPECIES_UNOWN_O:
+        case SPECIES_UNOWN_P:
+        case SPECIES_UNOWN_Q:
+        case SPECIES_UNOWN_R:
+        case SPECIES_UNOWN_S:
+        case SPECIES_UNOWN_T:
+        case SPECIES_UNOWN_U:
+        case SPECIES_UNOWN_V:
+        case SPECIES_UNOWN_W:
+        case SPECIES_UNOWN_X:
+        case SPECIES_UNOWN_Y:
+        case SPECIES_UNOWN_Z:
+        case SPECIES_UNOWN_EMARK:
+        case SPECIES_UNOWN_QMARK:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TIRTOUGA:
+        case SPECIES_CARRACOSTA:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ARCHEN:
+        case SPECIES_ARCHEOPS:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_LARVITAR:
+        case SPECIES_PUPITAR:
+        case SPECIES_TYRANITAR:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_DHELMISE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_DRATINI:
+        case SPECIES_DRAGONAIR:
+        case SPECIES_DRAGONITE:
+            switch(donationSlotId)
+            {
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        default:
+            return 0; // failsafe: couldn't find info on species, so reject donation
+            break;
+    }
+    return 0;
+}
+
+// -------------------------------------------------------------------------------------------
+//                                   KIPOS ZOO - UPDATE GRAPHICS
+// -------------------------------------------------------------------------------------------
+
+void UpdateZooGraphics_South(void) // updates pokemon gfx in KiposTown_Zoo (south portion of zoo)
+{
+    u16 speciesGraphics;
+
+    // Species 1 - Pokémon #1 in Enclosure #1 (Forest)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_01);
+        // VarSet(VAR_OBJ_GFX_ID_0, VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_1) + OBJ_EVENT_GFX_SPECIES(NONE)/* + shinyTag*/);
+
+        // // oricorio form check
+        // if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_1) >= 1169 && VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_1) <= 1171)
+        //     speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_1));
+        // else
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+
+        VarSet(VAR_OBJ_GFX_ID_0, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_01);
+    }
+
+    // Species 2 - Pokémon #2 in Enclosure #1 (Forest)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_02);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_1, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_02);
+    }
+
+    // Species 3 - Pokémon #3 in Enclosure #1 (Forest)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_3) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_03);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_3)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_2, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_03);
+    }
+
+    // Species 4 - Pokémon #4 in Enclosure #1 (Forest)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_4) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_04);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_01_4)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_3, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_04);
     }
 }

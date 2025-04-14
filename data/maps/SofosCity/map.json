@@ -941,7 +941,51 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 61,
+      "elevation": 0,
+      "var": "FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT",
+      "var_value": "0",
+      "script": "SofosCity_Trigger_PiraeusKiposTownTrigger0"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 61,
+      "elevation": 0,
+      "var": "FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT",
+      "var_value": "0",
+      "script": "SofosCity_Trigger_PiraeusKiposTownTrigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 61,
+      "elevation": 0,
+      "var": "FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT",
+      "var_value": "0",
+      "script": "SofosCity_Trigger_PiraeusKiposTownTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 61,
+      "elevation": 0,
+      "var": "FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT",
+      "var_value": "0",
+      "script": "SofosCity_Trigger_PiraeusKiposTownTrigger3"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 61,
+      "elevation": 0,
+      "var": "FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT",
+      "var_value": "0",
+      "script": "SofosCity_Trigger_PiraeusKiposTownTrigger4"
+    }
   ],
   "bg_events": [
     {

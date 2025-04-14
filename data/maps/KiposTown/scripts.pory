@@ -1,0 +1,104 @@
+mapscripts KiposTown_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: KiposTown_EventScript_CheckEventStatus
+    ]
+}
+
+script KiposTown_EventScript_CheckEventStatus
+{
+    setvar(VAR_TEMP_1, 1)
+
+    if(!flag(FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT)) // gotta do event!
+    {
+        goto(KiposTown_EventScript_LeadPlayerToConservationCenter)
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_EventScript_LeadPlayerToConservationCenter
+{
+    lockall
+
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    applymovement(3, KiposTown_Movement_RusselApproachPlayer)
+    waitmovement(0)
+
+    speakername("Mr. Russel")
+    msgbox(format("Ah, looks like Piraeus came through. You must be the Acrisia University researcher he knows! {PLAYER}, right?\p My name is Mr. Russel. I run the {COLOR GREEN}Sunset Wildlife Conservation Center{COLOR DARK_GRAY} here in Kipos Town, which provides a refuge for Pokémon from across the region. We run a conservation-focused {COLOR GREEN}Pokémon Zoo{COLOR DARK_GRAY}, which helps us gather money to fund our work.\p We've run into trouble recently, as Team Chimera led a raid and {COLOR RED}took all our Pokémon{COLOR DARK_GRAY} from our facility to use in their schemes. Come, I'll show you the result."))
+    closemessage
+
+    applymovement(3, KiposTown_Movement_RusselWalksToConservationCenter_1)
+    applymovement(OBJ_EVENT_ID_PLAYER, KiposTown_Movement_PlayerFollowsToConservationCenter_1)
+    waitmovement(0)
+    delay(10)
+
+    speakername("Mr. Russel")
+    msgbox(format("You've never visited this part of the Ilios Region before, have you? This is {COLOR GREEN}Kipos Town{COLOR DARK_GRAY}. It's a quiet town outside the Conservation Center, but the tourism the Zoo brings helps keep the town afloat. That makes this catastrophe even more, well, catastrophic...\p Follow along now, we aren't far."))
+    closemessage
+
+    applymovement(3, KiposTown_Movement_RusselWalksToConservationCenter_2)
+    applymovement(OBJ_EVENT_ID_PLAYER, KiposTown_Movement_PlayerFollowsToConservationCenter_2)
+    waitmovement(0)
+    delay(10)
+
+    speakername("Mr. Russel")
+    msgbox(format("Here's our main building. Team Chimera didn't do much physical damage, managing to slip in over the border fences and stone walls during the night and capturing the Pokémon by force.\p I suppose I can't delay it any longer. Come, let's go inside."))
+    closemessage
+
+    applymovement(3, Common_Movement_WalkUp)
+    waitmovement(0)
+    hideobjectat(3, MAP_KIPOS_TOWN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    waitmovement(0)
+    warpsilent(MAP_KIPOS_TOWN_CONSERVATION_CENTER, 9, 11)
+
+    waitstate
+    releaseall
+    end
+}
+
+movement KiposTown_Movement_RusselApproachPlayer
+{
+    emote_exclamation_mark
+    delay_16
+    walk_right * 4
+    face_down
+    step_end
+}
+movement KiposTown_Movement_RusselWalksToConservationCenter_1
+{
+    walk_left * 5
+    walk_up * 2
+    walk_left * 7
+    walk_down * 16
+    face_up
+    step_end
+}
+movement KiposTown_Movement_PlayerFollowsToConservationCenter_1
+{
+    walk_up
+    walk_left * 5
+    walk_up * 2
+    walk_left * 7
+    walk_down * 15
+    face_down
+    step_end
+}
+movement KiposTown_Movement_RusselWalksToConservationCenter_2
+{
+    walk_right * 28
+    walk_up * 3
+    face_down
+    step_end
+}
+movement KiposTown_Movement_PlayerFollowsToConservationCenter_2
+{
+    walk_down
+    walk_right * 28
+    walk_up * 2
+    face_up
+    step_end
+}

@@ -1,0 +1,109 @@
+mapscripts KiposTown_ConservationCenter_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: KiposTown_ConservationCenter_EventScript_CheckEventStatus
+    ]
+}
+
+script KiposTown_ConservationCenter_EventScript_CheckEventStatus
+{
+    setvar(VAR_TEMP_1, 1)
+
+    if(!flag(FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT)) // gotta do event!
+    {
+        goto(KiposTown_ConservationCenter_EventScript_PlayerShownAround)
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_ConservationCenter_EventScript_PlayerShownAround
+{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(10)
+
+    applymovement(11, KiposTown_ConservationCenter_Movement_RusselEnterBuilding)
+    applymovement(OBJ_EVENT_ID_PLAYER, KiposTown_ConservationCenter_Movement_PlayerEnterBuilding)
+    waitmovement(0)
+    delay(10)
+
+    speakername("Mr. Russel")
+    msgbox(format("Welcome to the {COLOR GREEN}Sunset Wildlife Conservation Center{COLOR DARK_GRAY}! Luckily, Team Chimera didn't show much interest in our tools or research papers, so everything in here is intact.\p In your own time, please be sure to introduce yourself to everyone here. We're all looking forward to working with you!\p Oh, I'm getting ahead of myself. Come, let's see the {COLOR GREEN}Pokémon Zoo{COLOR DARK_GRAY} hosted by the Conservation Center... what remains of it, anyway."))
+    closemessage
+
+    applymovement(11, KiposTown_ConservationCenter_Movement_RusselExitBuilding)
+    waitmovement(0)
+    hideobjectat(11, MAP_KIPOS_TOWN_CONSERVATION_CENTER)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, KiposTown_ConservationCenter_Movement_PlayerExitBuilding)
+    waitmovement(0)
+    warpsilent(MAP_KIPOS_TOWN_ZOO, 24, 41)
+
+    waitstate
+    releaseall
+    end
+}
+
+movement KiposTown_ConservationCenter_Movement_RusselEnterBuilding
+{
+    walk_up * 6
+    face_down
+    step_end
+}
+movement KiposTown_ConservationCenter_Movement_PlayerEnterBuilding
+{
+    walk_up * 6
+    face_up
+    step_end
+}
+movement KiposTown_ConservationCenter_Movement_RusselExitBuilding
+{
+    walk_up * 3
+    step_end
+}
+movement KiposTown_ConservationCenter_Movement_PlayerExitBuilding
+{
+    walk_up * 4
+    step_end
+}
+
+
+// --------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------
+
+
+script KiposTown_ConservationCenter_Trigger_EnterZoo_Left
+{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    goto(KiposTown_ConservationCenter_EventScript_EnterZoo)
+    release
+    end
+}
+script KiposTown_ConservationCenter_Trigger_EnterZoo_Right
+{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    goto(KiposTown_ConservationCenter_EventScript_EnterZoo)
+    release
+    end
+}
+script KiposTown_ConservationCenter_EventScript_EnterZoo
+{
+    speakername("Desk Attendant")
+    msgbox(format("Welcome to the Sunset Pokémon Conservation Center! As a Pokémon donor, you are permitted to enter for free.\p We hope you enjoy your time in the Sunset Pokémon Zoo!"))
+    closemessage
+    delay(10)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    warp(MAP_KIPOS_TOWN_ZOO, 24, 41)
+    waitstate
+    release
+    end
+}

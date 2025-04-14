@@ -246,3 +246,9 @@ const u16 gMetatileAttributes_SofosGym[] = INCBIN_U16("data/tilesets/secondary/s
 
 const u16 gMetatiles_Acropolis[] = INCBIN_U16("data/tilesets/secondary/acropolis/metatiles.bin");
 const u16 gMetatileAttributes_Acropolis[] = INCBIN_U16("data/tilesets/secondary/acropolis/metatile_attributes.bin");
+
+const u16 gMetatiles_Kipos[] = INCBIN_U16("data/tilesets/secondary/kipos/metatiles.bin");
+const u16 gMetatileAttributes_Kipos[] = INCBIN_U16("data/tilesets/secondary/kipos/metatile_attributes.bin");
+
+const u16 gMetatiles_KiposZoo[] = INCBIN_U16("data/tilesets/secondary/kipos_zoo/metatiles.bin");
+const u16 gMetatileAttributes_KiposZoo[] = INCBIN_U16("data/tilesets/secondary/kipos_zoo/metatile_attributes.bin");

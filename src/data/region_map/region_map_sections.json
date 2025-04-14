@@ -105,10 +105,10 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_SAFFRON_CITY",
-      "name": "SAFFRON CITY",
-      "x": 0,
-      "y": 0,
+      "map_section": "MAPSEC_KIPOS_TOWN",
+      "name": "Kipos Town",
+      "x": 5,
+      "y": 11,
       "width": 1,
       "height": 1
     },

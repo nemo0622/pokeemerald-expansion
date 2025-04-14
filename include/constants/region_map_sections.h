@@ -99,7 +99,7 @@
 #define MAPSEC_AREIOS_HIDEOUT               0x5F // City after Nyx Trails, based on Sparta, hideout of evil team
 #define MAPSEC_CHAMPIONS_PEAK               0x60 // Elite Four location
 #define MAPSEC_KALAMI_CITY                  0x61 // east of Acrisia City, new location
-#define MAPSEC_SAFFRON_CITY                 0x62
+#define MAPSEC_KIPOS_TOWN                 0x62
 #define MAPSEC_ROUTE_4_POKECENTER           0x63
 #define MAPSEC_ROUTE_10_POKECENTER          0x64
 #define MAPSEC_BRONZE_PASS                  0x65 // Route connecting Acrisia City to Jusmail Town

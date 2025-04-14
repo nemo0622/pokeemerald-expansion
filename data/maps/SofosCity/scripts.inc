@@ -891,6 +891,218 @@ SofosCity_EventScript_SwimmerF::
 	end
 
 
+SofosCity_Trigger_PiraeusKiposTownTrigger0::
+# 603 "data/maps/SofosCity/scripts.pory"
+	setvar VAR_TEMP_0, 0
+# 604 "data/maps/SofosCity/scripts.pory"
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
+# 605 "data/maps/SofosCity/scripts.pory"
+	release
+	end
+
+
+SofosCity_Trigger_PiraeusKiposTownTrigger1::
+# 610 "data/maps/SofosCity/scripts.pory"
+	setvar VAR_TEMP_0, 1
+# 611 "data/maps/SofosCity/scripts.pory"
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
+# 612 "data/maps/SofosCity/scripts.pory"
+	release
+	end
+
+
+SofosCity_Trigger_PiraeusKiposTownTrigger2::
+# 617 "data/maps/SofosCity/scripts.pory"
+	setvar VAR_TEMP_0, 2
+# 618 "data/maps/SofosCity/scripts.pory"
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
+# 619 "data/maps/SofosCity/scripts.pory"
+	release
+	end
+
+
+SofosCity_Trigger_PiraeusKiposTownTrigger3::
+# 624 "data/maps/SofosCity/scripts.pory"
+	setvar VAR_TEMP_0, 3
+# 625 "data/maps/SofosCity/scripts.pory"
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
+# 626 "data/maps/SofosCity/scripts.pory"
+	release
+	end
+
+
+SofosCity_Trigger_PiraeusKiposTownTrigger4::
+# 631 "data/maps/SofosCity/scripts.pory"
+	setvar VAR_TEMP_0, 4
+# 632 "data/maps/SofosCity/scripts.pory"
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
+# 633 "data/maps/SofosCity/scripts.pory"
+	release
+	end
+
+
+SofosCity_EventScript_TryPiraeusKiposTownEvent::
+# 639 "data/maps/SofosCity/scripts.pory"
+	goto_if_set FLAG_BADGE04_GET, SofosCity_EventScript_TryPiraeusKiposTownEvent_2
+SofosCity_EventScript_TryPiraeusKiposTownEvent_1:
+# 684 "data/maps/SofosCity/scripts.pory"
+	release
+	end
+
+SofosCity_EventScript_TryPiraeusKiposTownEvent_2:
+# 641 "data/maps/SofosCity/scripts.pory"
+	lockall
+# 643 "data/maps/SofosCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 644 "data/maps/SofosCity/scripts.pory"
+	waitmovement 0
+# 645 "data/maps/SofosCity/scripts.pory"
+	speakername SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_0
+# 646 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_1
+# 647 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 649 "data/maps/SofosCity/scripts.pory"
+	applymovement 60, Common_Movement_FaceUp
+# 650 "data/maps/SofosCity/scripts.pory"
+	compare VAR_TEMP_0, 0
+	goto_if_eq SofosCity_EventScript_TryPiraeusKiposTownEvent_5
+# 654 "data/maps/SofosCity/scripts.pory"
+	compare VAR_TEMP_0, 1
+	goto_if_eq SofosCity_EventScript_TryPiraeusKiposTownEvent_6
+# 658 "data/maps/SofosCity/scripts.pory"
+	compare VAR_TEMP_0, 2
+	goto_if_eq SofosCity_EventScript_TryPiraeusKiposTownEvent_7
+# 662 "data/maps/SofosCity/scripts.pory"
+	compare VAR_TEMP_0, 3
+	goto_if_eq SofosCity_EventScript_TryPiraeusKiposTownEvent_8
+# 668 "data/maps/SofosCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SofosCity_Movement_ApproachPiraeus4
+SofosCity_EventScript_TryPiraeusKiposTownEvent_4:
+# 670 "data/maps/SofosCity/scripts.pory"
+	waitmovement 0
+# 671 "data/maps/SofosCity/scripts.pory"
+	delay 10
+# 673 "data/maps/SofosCity/scripts.pory"
+	speakername SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_0
+# 674 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_2
+# 675 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 676 "data/maps/SofosCity/scripts.pory"
+	delay 20
+# 677 "data/maps/SofosCity/scripts.pory"
+	warp MAP_KIPOS_TOWN, 18, 22
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_1
+
+SofosCity_EventScript_TryPiraeusKiposTownEvent_5:
+# 652 "data/maps/SofosCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SofosCity_Movement_ApproachPiraeus0
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_4
+
+SofosCity_EventScript_TryPiraeusKiposTownEvent_6:
+# 656 "data/maps/SofosCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SofosCity_Movement_ApproachPiraeus1
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_4
+
+SofosCity_EventScript_TryPiraeusKiposTownEvent_7:
+# 660 "data/maps/SofosCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SofosCity_Movement_ApproachPiraeus2
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_4
+
+SofosCity_EventScript_TryPiraeusKiposTownEvent_8:
+# 664 "data/maps/SofosCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SofosCity_Movement_ApproachPiraeus3
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_4
+
+
+# 688 "data/maps/SofosCity/scripts.pory"
+SofosCity_Movement_ApproachPiraeus0:
+# 690 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 691 "data/maps/SofosCity/scripts.pory"
+	walk_right
+# 691 "data/maps/SofosCity/scripts.pory"
+	walk_right
+# 692 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 692 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 692 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 692 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 693 "data/maps/SofosCity/scripts.pory"
+	step_end
+
+# 695 "data/maps/SofosCity/scripts.pory"
+SofosCity_Movement_ApproachPiraeus1:
+# 697 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 698 "data/maps/SofosCity/scripts.pory"
+	walk_right
+# 699 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 699 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 699 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 699 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 700 "data/maps/SofosCity/scripts.pory"
+	step_end
+
+# 702 "data/maps/SofosCity/scripts.pory"
+SofosCity_Movement_ApproachPiraeus2:
+# 704 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 704 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 704 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 704 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 704 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 705 "data/maps/SofosCity/scripts.pory"
+	step_end
+
+# 707 "data/maps/SofosCity/scripts.pory"
+SofosCity_Movement_ApproachPiraeus3:
+# 709 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 710 "data/maps/SofosCity/scripts.pory"
+	walk_left
+# 711 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 711 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 711 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 711 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 712 "data/maps/SofosCity/scripts.pory"
+	step_end
+
+# 714 "data/maps/SofosCity/scripts.pory"
+SofosCity_Movement_ApproachPiraeus4:
+# 716 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 717 "data/maps/SofosCity/scripts.pory"
+	walk_left
+# 717 "data/maps/SofosCity/scripts.pory"
+	walk_left
+# 718 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 718 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 718 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 718 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 719 "data/maps/SofosCity/scripts.pory"
+	step_end
+
 SofosCity_EventScript_GameCornerSign_Text_0:
 # 31 "data/maps/SofosCity/scripts.pory"
 	.string "Sofos City Game Corner\n"
@@ -1347,6 +1559,28 @@ SofosCity_EventScript_SwimmerF_Text_1:
 	.string "Most swimmers choose to go further out\l"
 	.string "to the east, where the water is deeper\l"
 	.string "but relatively safe.$"
+
+SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_0:
+# 645 "data/maps/SofosCity/scripts.pory"
+	.string "Piraeus$"
+
+SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_1:
+# 646 "data/maps/SofosCity/scripts.pory"
+	.string "{PLAYER}!! Come on over here!$"
+
+SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_2:
+# 674 "data/maps/SofosCity/scripts.pory"
+	.string "My crew and I just got a letter from a\n"
+	.string "Murkrow. The people of {COLOR GREEN}Kipos Town{COLOR DARK_GRAY} are\l"
+	.string "looking for a strong Trainer who's\l"
+	.string "{COLOR GREEN}knowledgeable about Pokémon{COLOR DARK_GRAY}, and as an\l"
+	.string "Acrisia University researcher, who\l"
+	.string "could be better but you?\p"
+	.string "Hm? Oh, you've never been to Kipos Town,\n"
+	.string "have you? It's {COLOR GREEN}only accessible by boat{COLOR DARK_GRAY},\l"
+	.string "so I'll add it to the list of locations we\l"
+	.string "can sail to. Now, time for a detour -\l"
+	.string "let's go!$"
 
 SofosCity_Text_Trainer_SofosCity_GruntIntro::
 # 581 "data/maps/SofosCity/scripts.pory"

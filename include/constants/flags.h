@@ -53,21 +53,23 @@
 #define FLAG_UNIVERSITY_REWARD_ELIA_08    0x27
 #define FLAG_UNIVERSITY_REWARD_ELIA_09    0x28
 #define FLAG_UNIVERSITY_REWARD_ELIA_10    0x29
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
+
+// Kipos Town Zoo flags
+#define FLAG_HIDE_ZOO_POKEMON_01    0x2A
+#define FLAG_HIDE_ZOO_POKEMON_02    0x2B
+#define FLAG_HIDE_ZOO_POKEMON_03    0x2C
+#define FLAG_HIDE_ZOO_POKEMON_04    0x2D
+#define FLAG_HIDE_ZOO_POKEMON_05    0x2E
+#define FLAG_HIDE_ZOO_POKEMON_06    0x2F
+#define FLAG_HIDE_ZOO_POKEMON_07    0x30
+#define FLAG_HIDE_ZOO_POKEMON_08    0x31
+#define FLAG_HIDE_ZOO_POKEMON_09    0x32
+#define FLAG_HIDE_ZOO_POKEMON_10    0x33
+#define FLAG_HIDE_ZOO_POKEMON_11    0x34
+#define FLAG_HIDE_ZOO_POKEMON_12    0x35
+#define FLAG_HIDE_ZOO_POKEMON_13    0x36
+#define FLAG_HIDE_ZOO_POKEMON_14    0x37
+#define FLAG_HIDE_ZOO_POKEMON_15    0x38
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
@@ -1294,8 +1296,8 @@
 #define FLAG_SPOKE_TO_BLUE_SHARD_MAN                                0x4DB 
 #define FLAG_SPOKE_TO_YELLOW_SHARD_MAN                              0x4DC 
 #define FLAG_HIDE_CYCLING_WOMAN_JUSMAIL                             0x4DD // hides woman until after quest in jusmail
-#define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
-#define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
+#define FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT                   0x4DE // did event in Sofos City where Piraeus sails to Kipos Town with Player. ALSO hides the zoo manager and stuff
+#define FLAG_HIDE_RUSSEL_DURING_ZOO_CUTSCENE                        0x4DF // hides second russel sprite in conservation center
 #define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
 #define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
 #define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag

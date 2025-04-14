@@ -99,7 +99,7 @@ void static (*const sSlateportTentFuncs[])(void) =
     [SLATEPORT_TENT_FUNC_GENERATE_RENTAL_MONS]   = GenerateInitialRentalMons
 };
 
-static const u16 sSlateportTentRewards[] = {ITEM_FULL_HEAL, ITEM_EXP_CANDY_S, ITEM_EXP_CANDY_M, ITEM_HYPER_POTION, ITEM_REVIVE, ITEM_PEARL};
+static const u16 sSlateportTentRewards[] = {ITEM_NUGGET, ITEM_EXP_CANDY_S, ITEM_EXP_CANDY_M, ITEM_HYPER_POTION, ITEM_REVIVE, ITEM_PEARL, ITEM_WISHING_STAR, ITEM_ABILITY_CAPSULE, ITEM_ABILITY_PATCH};
 
 // code
 void CallVerdanturfTentFunction(void)

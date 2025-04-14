@@ -9,10 +9,10 @@ u32 GetCurrentLevelCap(void)
 {
     static const u32 sLevelCapFlagMap[][2] =
     {
-        {FLAG_BADGE01_GET, 12},
-        {FLAG_BADGE02_GET, 19},
-        {FLAG_BADGE03_GET, 22},
-        {FLAG_BADGE04_GET, 29},
+        {FLAG_BADGE01_GET, 12}, // up to Jusmail Town
+        {FLAG_BADGE02_GET, 19}, // up to Kalami City
+        {FLAG_BADGE03_GET, 22}, // up to Pythios Town
+        {FLAG_BADGE04_GET, 27}, // up to Sofos City
         {FLAG_BADGE05_GET, 31},
         {FLAG_BADGE06_GET, 33},
         {FLAG_BADGE07_GET, 42},

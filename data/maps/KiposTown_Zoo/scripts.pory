@@ -1,0 +1,327 @@
+mapscripts KiposTown_Zoo_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: KiposTown_Zoo_EventScript_CheckEventStatus
+    ]
+
+    MAP_SCRIPT_ON_TRANSITION {
+        special(UpdateZooGraphics_South)
+    }
+}
+
+script KiposTown_Zoo_EventScript_CheckEventStatus
+{
+    setvar(VAR_TEMP_1, 1)
+
+    if(!flag(FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT)) // gotta do event!
+    {
+        goto(KiposTown_Zoo_EventScript_PlayerShownAround)
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EventScript_PlayerShownAround
+{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(10)
+
+    applymovement(2, KiposTown_Zoo_Movement_RusselWalkToGirafarig)
+    applymovement(OBJ_EVENT_ID_PLAYER, KiposTown_Zoo_Movement_PlayerWalkToGirafarig)
+    waitmovement(0)
+    delay(10)
+
+    speakername("Mr. Russel")
+    msgbox(format("This Girafarig was just about the only Pokémon not taken by Team Chimera. We lost over two dozen Pokémon in a single night...\p Girafarig was only saved by the Pokémon {COLOR GREEN}dwelling in the small cave{COLOR DARK_GRAY}, which has refused to come out since. Maybe it's waiting for a strong Trainer such as yourself.\p Come, let's look at some of the empty exhibits."))
+    closemessage
+
+    applymovement(2, KiposTown_Zoo_Movement_RusselWalkToSwampExhibit)
+    applymovement(OBJ_EVENT_ID_PLAYER, KiposTown_Zoo_Movement_PlayerWalkToSwampExhibit)
+    waitmovement(0)
+    delay(10)
+
+    speakername("Mr. Russel")
+    msgbox(format("Our Zoo has a {COLOR GREEN}wide variety of Pokémon habitats{COLOR DARK_GRAY}, but unfortunately, they have been left barren.\p Team Chimera is long gone, with the stolen Pokémon scattered to the wind. We need your help to {COLOR GREEN}repopulate these Pokémon enclosures{COLOR DARK_GRAY}.\p Each enclosure has two informational signposts. The {COLOR GREEN}brown signs{COLOR DARK_GRAY} have information about the Pokémon in the exhibits. If there is an open space, you can {COLOR GREEN}deposit a Pokémon{COLOR DARK_GRAY} fitting the enclosure. But remember, {COLOR RED}any donated Pokémon will permanently be in the exhibit{COLOR DARK_GRAY}!\p The {COLOR GREEN}green signs{COLOR DARK_GRAY} provide extra information about an exhibit, which can clue you in on what Pokémon fit best."))
+    closemessage
+    delay(20)
+    applymovement(2, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    speakername("Mr. Russel")
+    msgbox(format("Fates, look at the time! I apologize for talking your ear off. Here's a small gift from me, which should help you catch more Pokémon."))
+    closemessage
+    giveitem(ITEM_ULTRA_BALL, 10)
+    closemessage
+    delay(5)
+    speakername("Mr. Russel")
+    msgbox(format("Make sure to come donate extra Pokémon you capture on your journey to {COLOR GREEN}help reinvigorate the Conservation Center{COLOR DARK_GRAY}. Thank you for your help in advance!"))
+    closemessage
+
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(30)
+    hideobjectat(2, MAP_KIPOS_TOWN_ZOO)
+    removeobject(2)
+    setflag(FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT)
+    clearflag(FLAG_HIDE_RUSSEL_DURING_ZOO_CUTSCENE)
+    delay(30)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    delay(20)
+    startquest(QUEST_ZOOKEEPER)
+
+    releaseall
+    end
+}
+
+movement KiposTown_Zoo_Movement_RusselWalkToGirafarig
+{
+    walk_up * 2
+    walk_right * 4
+    face_up
+    step_end
+}
+movement KiposTown_Zoo_Movement_PlayerWalkToGirafarig
+{
+    walk_up * 3
+    walk_right * 3
+    face_up
+    step_end
+}
+movement KiposTown_Zoo_Movement_RusselWalkToSwampExhibit
+{
+    walk_down
+    walk_right * 6
+    walk_up * 6
+    walk_right * 3
+    walk_up
+    face_left
+    step_end
+}
+movement KiposTown_Zoo_Movement_PlayerWalkToSwampExhibit
+{
+    walk_right
+    walk_down
+    walk_right * 6
+    walk_up * 6
+    walk_right * 2
+    walk_up
+    face_right
+    step_end
+}
+
+// -------------------------------------------------------------------------------------------------------
+//                                      POKEMON DONATION SCRIPTS
+// -------------------------------------------------------------------------------------------------------
+
+script KiposTown_Zoo_PokemonSign_End
+{
+    closemessage
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_PokemonSign_DonationScript
+{
+    special(ChoosePartyMon) // stores party slot in VAR_0x8004
+    waitstate
+
+    goto_if_ge(VAR_0x8004, PARTY_SIZE, KiposTown_Zoo_PokemonSign_End) // if no Pokémon chosen, end early
+
+    specialvar(VAR_RESULT, ScriptGetPartyMonSpecies) // stores Pokémon species in VAR_RESULT
+    copyvar(VAR_0x8003, VAR_RESULT) // stores species in VAR_0x8003
+
+    if(var(VAR_0x8003) == SPECIES_EGG) // cannot donate an egg!
+    {
+        msgbox(format("Eggs cannot be donated to this exhibit."))
+        goto(KiposTown_Zoo_PokemonSign_End)
+    }
+
+    // check compatibility with chosen species & exhibit
+    special(GetZooDonationValidity)
+    if(var(VAR_0x8002) == 0) // 0 = invalid
+    {
+        msgbox(format("Unfortunately, this Pokémon is incompatible with this exhibit.\p Would you like to choose another Pokémon for this enclosure?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 0)
+        {
+            goto(KiposTown_Zoo_PokemonSign_End)
+        }
+        else
+        {
+            goto(KiposTown_Zoo_PokemonSign_DonationScript)
+        }
+        releaseall
+        end
+    }
+
+    // NOTES:
+    // VAR_0x8002 is Donation Validity, VAR_0x8003 is the Pokémon species, VAR_0x8004 is the party slot
+    // By reaching this point, the Pokémon is considered real and compatible with the exhibit, and should now be confirmed
+
+    // Confirm they want to donate
+    bufferspeciesname(STR_VAR_1, VAR_0x8003)
+    msgbox(format("Are you sure you want to donate {STR_VAR_1}? Remember, contributions to the Sunset Wildlife Conservation Center Zoo are {COLOR RED}permanent{COLOR DARK_GRAY}! The Pokémon will be cared for with love, but cannot be withdrawn."), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0) // said no
+    {
+        goto(KiposTown_Zoo_PokemonSign_End)
+    }
+    else // said yes!
+    {
+        special(DonateMonToZoo) // donates Pokémon in slot VAR_0x8004 to zoo
+
+        // make sure the donation went through
+        if(var(VAR_0x8004) == PARTY_SIZE) // this means something went wrong - likely tried donating last Pokémon in party
+        {
+            msgbox(format("The donation could not be accepted at this time. Please come back with more Pokémon in your party."))
+            goto(KiposTown_Zoo_PokemonSign_End)
+        }
+
+        // Check which Zoo Pokémon variable to set
+        switch(var(VAR_TEMP_0))
+        {
+            case 1: // Enclosure #1 (Forest), Pokémon #1
+                copyvar(VAR_ZOO_POKEMON_ENCLOSURE_01_1, VAR_0x8003)
+            case 2: // Enclosure #1 (Forest), Pokémon #2
+                copyvar(VAR_ZOO_POKEMON_ENCLOSURE_01_2, VAR_0x8003)
+            case 3: // Enclosure #1 (Forest), Pokémon #3
+                copyvar(VAR_ZOO_POKEMON_ENCLOSURE_01_3, VAR_0x8003)
+            case 4: // Enclosure #1 (Forest), Pokémon #4
+                copyvar(VAR_ZOO_POKEMON_ENCLOSURE_01_4, VAR_0x8003)
+        }
+        
+        playfanfare(FANFARE_LEVEL_UP)
+        msgbox(format("Donated {STR_VAR_1} to the Exhibit! Return soon to view the Pokémon in it's new home!"))
+        waitfanfare
+        goto(KiposTown_Zoo_PokemonSign_End)
+    }
+}
+
+// -------------------------------------------------------------------------------------------------------
+//                                      POKEMON INFO SIGN SCRIPTS
+// -------------------------------------------------------------------------------------------------------
+
+script KiposTown_Zoo_PokemonSign_Forest
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_01_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_01_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    // msgbox(format("Enclosure No. 1: Forest\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    // closemessage
+    // gotta be extra cause there's four pokemon here instead of two. lol
+    // just use commented msgbox above instead for future enclosures
+    msgbox(format("Enclosure No. 1: Forest"))
+    closemessage
+    msgbox(format("Pokémon in Enclosure (South):\n {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_01_3)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_01_4)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_3) == 0) // no Pokémon in slot 3
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_4) == 0) // no Pokémon in slot 4
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+    msgbox(format("Pokémon in Enclosure (North):\n {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Finally, offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_3) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_3) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_4) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_4) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 1) // Enclosure #01, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_01_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_01_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 2) // Enclosure #01, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_01_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_01_3) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 3) // Enclosure #01, Pokémon 3 - VAR_ZOO_POKEMON_ENCLOSURE_01_3
+
+        msgbox(format("There is room for a third Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_01_4) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 4) // Enclosure #01, Pokémon 4 - VAR_ZOO_POKEMON_ENCLOSURE_01_4
+
+        msgbox(format("There is room for a fourth Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}

@@ -992,3 +992,25 @@ const struct Tileset gTileset_Acropolis =
     .metatileAttributes = gMetatileAttributes_Acropolis,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Kipos =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Kipos,
+    .palettes = gTilesetPalettes_Kipos,
+    .metatiles = gMetatiles_Kipos,
+    .metatileAttributes = gMetatileAttributes_Kipos,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_KiposZoo =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_KiposZoo,
+    .palettes = gTilesetPalettes_KiposZoo,
+    .metatiles = gMetatiles_KiposZoo,
+    .metatileAttributes = gMetatileAttributes_KiposZoo,
+    .callback = NULL,
+};

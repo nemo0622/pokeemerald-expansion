@@ -135,7 +135,10 @@
     "RiverwalkTrail_South",
     "KalamiCity",
     "AcrisiaMountain_Peak",
-    "WanderersWoods_South"
+    "WanderersWoods_South",
+    "KiposTown",
+    "KiposTown_Zoo",
+    "KiposTown_ZooNorth"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -204,7 +207,8 @@
     "VerdanturfTown_PokemonCenter_2F",
     "VerdanturfTown_WandasHouse",
     "VerdanturfTown_FriendshipRatersHouse",
-    "VerdanturfTown_House"
+    "VerdanturfTown_House",
+    "KiposTown_ConservationCenter"
   ],
   "gMapGroup_IndoorPacifidlog": [
     "PacifidlogTown_PokemonCenter_1F",

@@ -922,6 +922,26 @@ side_quest(
 	NULL,
 	0
 ),
+side_quest(
+	gText_SideQuestName_36, // QUEST_NEMOS_QUEST
+	gText_SideQuestDesc_36,
+	gText_SideQuestDesc_36,
+	gText_SideQuestMap36,
+	OBJ_EVENT_GFX_PERFORMER_M,
+	OBJECT,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_37, // QUEST_ZOOKEEPER
+	gText_SideQuestDesc_37,
+	gText_SideQuestDesc_37,
+	gText_SideQuestMap37,
+	ITEM_POKE_BALL,
+	ITEM,
+	NULL,
+	0
+),
 };
 ////////////////////////END QUEST CUSTOMIZATION////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////

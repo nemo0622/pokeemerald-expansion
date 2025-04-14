@@ -1794,3 +1794,11 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/SofosCity_Acropolis/scripts.inc"
 
 	.include "data/maps/SofosCity_ShardExchangeHouse/scripts.inc"
+
+	.include "data/maps/KiposTown/scripts.inc"
+
+	.include "data/maps/KiposTown_ConservationCenter/scripts.inc"
+
+	.include "data/maps/KiposTown_Zoo/scripts.inc"
+
+	.include "data/maps/KiposTown_ZooNorth/scripts.inc"

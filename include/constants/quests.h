@@ -50,8 +50,9 @@
 #define QUEST_BRING_GRANDMA_AWAKENING           32 // bring grandma an awakening in sofos city house 2
 #define QUEST_5_PINBALL_POINTS                  33 // bring computer guy 5 pinball points in sofos city house 4
 #define QUEST_XATU_AND_NOCTOWL                  34 // Show Xatu and Noctowl dex pages to lady in sofos city house 5
-#define QUEST_NEMOS_QUEST                       34 // bring Nemo dex pages of Komala (SleepyBear), Spheal (Spherical), Archen (First Bird), and Oranguru (Wild Sage)
-#define QUEST_COUNT     (QUEST_XATU_AND_NOCTOWL + 1)
+#define QUEST_NEMOS_QUEST                       35 // bring Nemo dex pages of Komala (SleepyBear), Spheal (Spherical), Archen (First Bird), and Oranguru (Wild Sage)
+#define QUEST_ZOOKEEPER                         36 // fill out the Kipos Town zoo
+#define QUEST_COUNT     (QUEST_ZOOKEEPER + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

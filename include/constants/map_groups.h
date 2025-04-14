@@ -106,6 +106,9 @@
 #define MAP_KALAMI_CITY                (97 | (0 << 8))
 #define MAP_ACRISIA_MOUNTAIN_PEAK      (98 | (0 << 8))
 #define MAP_WANDERERS_WOODS_SOUTH      (99 | (0 << 8))
+#define MAP_KIPOS_TOWN                 (100 | (0 << 8))
+#define MAP_KIPOS_TOWN_ZOO             (101 | (0 << 8))
+#define MAP_KIPOS_TOWN_ZOO_NORTH       (102 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -175,6 +178,7 @@
 #define MAP_VERDANTURF_TOWN_WANDAS_HOUSE            (6 | (6 << 8))
 #define MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE (7 | (6 << 8))
 #define MAP_VERDANTURF_TOWN_HOUSE                   (8 | (6 << 8))
+#define MAP_KIPOS_TOWN_CONSERVATION_CENTER          (9 | (6 << 8))
 
 // gMapGroup_IndoorPacifidlog
 #define MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F (0 | (7 << 8))

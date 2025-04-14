@@ -279,5 +279,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_SYS_QUEST_MENU_GET
 	setflag FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA
 	setflag FLAG_HIDE_CYCLING_WOMAN_JUSMAIL
+	setflag FLAG_HIDE_RUSSEL_DURING_ZOO_CUTSCENE
 	call EventScript_ResetAllBerries
 	end

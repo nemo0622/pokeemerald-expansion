@@ -1881,3 +1881,41 @@ const u16 gTilesetPalettes_Acropolis[][16] =
 };
 
 const u32 gTilesetTiles_Acropolis[] = INCBIN_U32("data/tilesets/secondary/acropolis/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Kipos[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Kipos[] = INCBIN_U32("data/tilesets/secondary/kipos/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_KiposZoo[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/kipos_zoo/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_KiposZoo[] = INCBIN_U32("data/tilesets/secondary/kipos_zoo/tiles.4bpp.lz");

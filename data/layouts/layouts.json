@@ -5270,6 +5270,46 @@
       "secondary_tileset": "gTileset_Ilios_GenericBuilding",
       "border_filepath": "data/layouts/SofosCity_ShardExchangeHouse/border.bin",
       "blockdata_filepath": "data/layouts/SofosCity_ShardExchangeHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN",
+      "name": "KiposTown_Layout",
+      "width": 44,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Kipos",
+      "border_filepath": "data/layouts/KiposTown/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN_CONSERVATION_CENTER",
+      "name": "KiposTown_ConservationCenter_Layout",
+      "width": 20,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/KiposTown_ConservationCenter/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown_ConservationCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN_ZOO",
+      "name": "KiposTown_Zoo_Layout",
+      "width": 52,
+      "height": 52,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_KiposZoo",
+      "border_filepath": "data/layouts/KiposTown_Zoo/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown_Zoo/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN_ZOO_NORTH",
+      "name": "KiposTown_ZooNorth_Layout",
+      "width": 45,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_KiposZoo",
+      "border_filepath": "data/layouts/KiposTown_ZooNorth/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown_ZooNorth/map.bin"
     }
   ]
 }
