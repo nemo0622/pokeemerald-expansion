@@ -1,1 +1,648 @@
-mapscripts KiposTown_ZooNorth_MapScripts {}
+mapscripts KiposTown_ZooNorth_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        special(UpdateZooGraphics_North)
+    }
+}
+
+// -------------------------------------------------------------------------------------------------------
+//                                      POKEMON INFO SIGN SCRIPTS
+// -------------------------------------------------------------------------------------------------------
+
+// -------------------------------------- ENCLOSURE 07: Beach ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Beach
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_07_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_07_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_07_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_07_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Enclosure No. 7: Beach\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_07_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_07_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_07_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_07_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_07_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 16) // Enclosure #07, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_07_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_07_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 17) // Enclosure #07, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_07_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Beach
+{
+    lock
+    msgbox(format("Enclosure No. 7: {COLOR GREEN}Beach{COLOR DARK_GRAY}\p Both terrestrial and water-dwelling Pokémon make their homes on beaches, where water meets the land. From burrowing in the sand to splashing in the waves, a variety of lifestyles are supported by this environment.\p A range of {COLOR GREEN}Water and Flying-type{COLOR DARK_GRAY} Pokémon make their homes here, often being {COLOR GREEN}semi-aquatic{COLOR DARK_GRAY} in nature."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- ENCLOSURE 08: Desert ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Desert
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_08_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_08_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_08_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_08_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Enclosure No. 8: Desert\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_08_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_08_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_08_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_08_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_08_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 18) // Enclosure #08, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_08_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_08_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 19) // Enclosure #08, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_08_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Desert
+{
+    lock
+    msgbox(format("Enclosure No. 8: {COLOR GREEN}Desert{COLOR DARK_GRAY}\p Arid and dotted with rocks, desert environments provide difficult ways of life for Pokémon species living there. Despite the lack of water and little plant growth besides shrubs, vibrant ecosystems can still develop in the harsh conditions.\p Naturally, {COLOR GREEN}Ground and Rock-type{COLOR DARK_GRAY} Pokémon thrive in the dry, stony conditions. Species which prefer {COLOR GREEN}wide, open ranges{COLOR DARK_GRAY} or {COLOR GREEN}direct sunlight{COLOR DARK_GRAY} may also be found in desert habitats."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- ENCLOSURE 09: Lazarus Taxa ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_LazarusTaxa
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_09_1)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_09_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Enclosure No. 9: Lazarus Taxa\n Pokémon in Exhibit: {STR_VAR_1}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_09_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about the Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_09_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_09_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 20) // Enclosure #08, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_09_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_LazarusTaxa
+{
+    lock
+    msgbox(format("Enclosure No. 9: {COLOR GREEN}Lazarus Taxa{COLOR DARK_GRAY}\p This exhibit has been created to house species which have been recently rediscovered, as a part of the {COLOR GREEN}Lazarus Taxa phenomenon{COLOR DARK_GRAY} sweeping across the Ilios Region. These Pokémon are extremely rare, being thought long-extinct.\p Lazarus Taxa include Pokémon once known from {COLOR GREEN}fossils{COLOR DARK_GRAY}, which have been discovered living in many environments around Ilios."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- ENCLOSURE 10: Mountains ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Mountains
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_10_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_10_2)
+    bufferspeciesname(STR_VAR_3, VAR_ZOO_POKEMON_ENCLOSURE_10_3)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_10_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_10_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_10_3) == 0) // no Pokémon in slot 3
+    {
+        bufferstring(STR_VAR_3, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Enclosure No. 10: Mountains\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}, {STR_VAR_3}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_10_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_10_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_10_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_10_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_10_3) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_10_3) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_10_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 21) // Enclosure #10, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_10_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_10_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 22) // Enclosure #10, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_10_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_10_3) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 23) // Enclosure #10, Pokémon 3 - VAR_ZOO_POKEMON_ENCLOSURE_10_3
+
+        msgbox(format("There is room for a third Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Mountains
+{
+    lock
+    msgbox(format("Enclosure No. 10: {COLOR GREEN}Mountains{COLOR DARK_GRAY}\p Mountains are often remote, rocky, and rugged, pushing Pokémon to adapt if they're going to survive. Sadly, these once-peaceful landscapes are threatened by mining and resource extraction, tearing up the mountain homes of countless Pokémon species.\p {COLOR GREEN}Rock, Steel, and Fighting-type{COLOR DARK_GRAY} Pokémon seek out mountainous locations. In general, Pokémon with {COLOR GREEN}rugged natures{COLOR DARK_GRAY} can also be found in these spaces."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- ENCLOSURE 11: Volcano ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Volcano
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_11_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_11_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_11_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_11_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Enclosure No. 11: Volcano\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_11_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_11_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_11_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_11_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_11_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 24) // Enclosure #11, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_11_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_11_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 25) // Enclosure #11, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_11_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Volcano
+{
+    lock
+    msgbox(format("Enclosure No. 11: {COLOR GREEN}Volcano{COLOR DARK_GRAY}\p Combining the rugged terrain of traditional mountain ecosystems with the scorching heat of lava, volcanoes are only for the toughest of Pokémon. Although they are associated with destruction, volcanoes are just as important in creation. For example, many islands in the Ilios Region were first formed by volcanoes!\p Most Pokémon species found here are {COLOR GREEN}Fire-type{COLOR DARK_GRAY}, helping them withstand the intense heat. Some {COLOR GREEN}Poison and Rock-type{COLOR DARK_GRAY} Pokémon can also survive here."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- ENCLOSURE 12: Tundra ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Tundra
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_12_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_12_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_12_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_12_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Enclosure No. 12: Tundra\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_12_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_12_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_12_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_12_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_12_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 26) // Enclosure #12, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_12_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_12_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 27) // Enclosure #12, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_12_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Tundra
+{
+    lock
+    msgbox(format("Enclosure No. 12: {COLOR GREEN}Tundra{COLOR DARK_GRAY}\p Tundras are blanketed in snow, creating a vast winter wonderland for Pokémon to inhabit. These icy areas range from boreal forests to ice-tipped mountain peaks, so elements of each have been incorporated into this exhibit.\n Unfortunately, as climate change continues to worsen, these ice-covered ecosystems are becoming seriously threatened. Major changes must be made to prevent the total loss of these environments.\p Many {COLOR GREEN}Ice-type{COLOR DARK_GRAY} Pokémon can only be found in these chilly locations. Some {COLOR GREEN}high mountain{COLOR DARK_GRAY} species and Pokémon with {COLOR GREEN}thick fur{COLOR DARK_GRAY} also call these ecosystems home."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- ENCLOSURE 13: Ruins ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Ruins
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_13_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_13_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_13_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_13_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Enclosure No. 13: Ruins\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_13_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_13_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_13_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_13_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_13_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 28) // Enclosure #13, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_13_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_13_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 29) // Enclosure #13, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_13_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Ruins
+{
+    lock
+    msgbox(format("Enclosure No. 13: {COLOR GREEN}Ruins{COLOR DARK_GRAY}\p Ruins and cemeteries are often left behind long after the creators leave an area, developing a unique ecosystem of Pokémon around them. For one reason or another, certain species of Pokémon are drawn to these locations, haunting the remains of graves or crumbling towers.\p Pokémon with {COLOR GREEN}spiritual energy{COLOR DARK_GRAY} tend to be found near old graves, such as {COLOR GREEN}Ghost, Dark, and Psychic-type{COLOR DARK_GRAY} species."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- ENCLOSURE 14: Shallows ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Shallows
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_14_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_14_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_14_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_14_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Enclosure No. 14: Shallows\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_14_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_14_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_14_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_14_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_14_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 30) // Enclosure #13, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_14_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_14_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 31) // Enclosure #13, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_14_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Shallows
+{
+    lock
+    msgbox(format("Enclosure No. 14: {COLOR GREEN}Shallows{COLOR DARK_GRAY}\p Thanks to easy access to sunlight, coastal shallows are blooming with plant and Pokémon life alike. Coral reefs supporting countless species further enhance the local diversity, despite being threatened globally by water pollution and warming seas.\p {COLOR GREEN}Water-type{COLOR DARK_GRAY} Pokémon, true to their name, are most commonly found here. Furthermore, many Pokémon associated with {COLOR GREEN}semi-aquatic lifestyles{COLOR DARK_GRAY} can be seen splashing through the waves."))
+    closemessage
+    release
+    end
+}

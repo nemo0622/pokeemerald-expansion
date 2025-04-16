@@ -1,0 +1,318 @@
+mapscripts KiposTown_Zoo_SpecialtyBuilding_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        special(UpdateZooGraphics_SpecialtyBuilding)
+    }
+}
+
+// -------------------------------------- INDOOR ENCLOSURE 01: Warm Water ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Indoor_WarmWater
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_IN_01_2)
+    bufferspeciesname(STR_VAR_3, VAR_ZOO_POKEMON_ENCLOSURE_IN_01_3)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_3) == 0) // no Pokémon in slot 3
+    {
+        bufferstring(STR_VAR_3, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Indoors Enclosure No. 1: Warm Water\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}, {STR_VAR_3}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_IN_01_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_3) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_IN_01_3) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 32) // Indoor Enclosure #1, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 33) // Indoor Enclosure #1, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_IN_01_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_3) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 34) // Indoor Enclosure #1, Pokémon 3 - VAR_ZOO_POKEMON_ENCLOSURE_IN_01_3
+
+        msgbox(format("There is room for a third Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Indoors_WarmWater
+{
+    lock
+    msgbox(format("Indoors Enclosure No. 1: {COLOR GREEN}Warm Water{COLOR DARK_GRAY}\p Due to the sheer abundance of Pokémon species living in water biomes, the Conservation Center has reserved an extra area to be a home for these amazing Pokémon! Preserving these habitats is a key component of our mission, saving threatened ecosystems and species alike from complete extinction.\p {COLOR GREEN}Water-type{COLOR DARK_GRAY} Pokémon, true to their name, are most commonly found here. Furthermore, many Pokémon associated with {COLOR GREEN}semi-aquatic lifestyles{COLOR DARK_GRAY} can be seen splashing through the waves."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- INDOOR ENCLOSURE 02: Gymnasium ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Indoor_Gymnasium
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Indoors Enclosure No. 2: Gymnasium\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 35) // Indoor Enclosure #2, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 36) // Indoor Enclosure #2, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Indoors_Gymnasium
+{
+    lock
+    msgbox(format("Indoors Enclosure No. 2: {COLOR GREEN}Gymnasium{COLOR DARK_GRAY}\p Although they are human-constructed environments, Gymnasiums provide important training locations for a wide range of physically active Pokémon. To further enrich their activity, please feel free to engage with these Pokémon during their training, while staying respectful of their boundaries!\p Traditionally, most Pokémon that take extra time to physically train are {COLOR GREEN}Fighting-type{COLOR DARK_GRAY} species. Certain other {COLOR GREEN}physically fit{COLOR DARK_GRAY} Pokémon also enjoy training in this enclosure."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- INDOOR ENCLOSURE 03: Spirit Center ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Indoor_SpiritCenter
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Indoors Enclosure No. 3: Spirit Center\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 37) // Indoor Enclosure #3, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 38) // Indoor Enclosure #3, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Indoors_SpiritCenter
+{
+    lock
+    msgbox(format("Indoors Enclosure No. 3: {COLOR GREEN}Spirit Center{COLOR DARK_GRAY}\p Many Pokémon have deep connections to powers beyond our understanding. This enclosure allows for human-Pokémon contact in their preferred habitat, around decaying logs and replicas of old ruins. Contact with humans has been deemed safe for these tamed individuals, but please be respectful of their space and intelligence.\p {COLOR GREEN}Psychic and Ghost-type{COLOR DARK_GRAY} Pokémon love this area, alongside other Pokémon with {COLOR GREEN}strong spiritual powes{COLOR DARK_GRAY}."))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_EventScript_FightingPokemonInteraction_1
+{
+    lock
+    faceplayer
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1)
+    playmoncry(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("The {STR_VAR_1} huffed out a greeting!"))
+    closemessage
+    release
+    end
+}
+script KiposTown_Zoo_EventScript_FightingPokemonInteraction_2
+{
+    lock
+    faceplayer
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2)
+    playmoncry(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("The {STR_VAR_1} huffed out a greeting!"))
+    closemessage
+    release
+    end
+}
+script KiposTown_Zoo_EventScript_SpiritPokemonInteraction_1
+{
+    lock
+    faceplayer
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1)
+    playmoncry(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("The {STR_VAR_1} huffed out a greeting!"))
+    closemessage
+    release
+    end
+}
+script KiposTown_Zoo_EventScript_SpiritPokemonInteraction_2
+{
+    lock
+    faceplayer
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2)
+    playmoncry(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("The {STR_VAR_1} huffed out a greeting!"))
+    closemessage
+    release
+    end
+}

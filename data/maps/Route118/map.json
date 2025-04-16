@@ -326,7 +326,7 @@
       "x": 43,
       "y": 11,
       "elevation": 3,
-      "var": "VAR_ROUTE118_STATE",
+      "var": "VAR_ZOO_POKEMON_ENCLOSURE_08_1",
       "var_value": "0",
       "script": "Route118_EventScript_StevenTrigger0"
     },
@@ -335,7 +335,7 @@
       "x": 44,
       "y": 11,
       "elevation": 3,
-      "var": "VAR_ROUTE118_STATE",
+      "var": "VAR_ZOO_POKEMON_ENCLOSURE_08_1",
       "var_value": "0",
       "script": "Route118_EventScript_StevenTrigger1"
     },
@@ -344,7 +344,7 @@
       "x": 45,
       "y": 11,
       "elevation": 3,
-      "var": "VAR_ROUTE118_STATE",
+      "var": "VAR_ZOO_POKEMON_ENCLOSURE_08_1",
       "var_value": "0",
       "script": "Route118_EventScript_StevenTrigger2"
     }

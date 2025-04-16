@@ -1802,3 +1802,7 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/KiposTown_Zoo/scripts.inc"
 
 	.include "data/maps/KiposTown_ZooNorth/scripts.inc"
+
+	.include "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.inc"
+
+	.include "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.inc"

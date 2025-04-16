@@ -564,6 +564,9 @@ gSpecials::
 	def_special ChooseItemFromBag
 	def_special DonateMonToZoo
 	def_special UpdateZooGraphics_South
+	def_special UpdateZooGraphics_North
+	def_special UpdateZooGraphics_SpecialtyBuilding
+	def_special UpdateZooGraphics_HerpetofaunaBuilding
 	def_special GetZooDonationValidity
 	def_special ShowSpeciesZooInfoWindow
 	def_special CloseSpeciesZooInfoWindow

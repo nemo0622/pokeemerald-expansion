@@ -70,7 +70,7 @@
 #define FLAG_HIDE_ZOO_POKEMON_13    0x36
 #define FLAG_HIDE_ZOO_POKEMON_14    0x37
 #define FLAG_HIDE_ZOO_POKEMON_15    0x38
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
+#define FLAG_HIDE_ZOO_POKEMON_16    0x39
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag

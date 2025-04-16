@@ -5310,6 +5310,26 @@
       "secondary_tileset": "gTileset_KiposZoo",
       "border_filepath": "data/layouts/KiposTown_ZooNorth/border.bin",
       "blockdata_filepath": "data/layouts/KiposTown_ZooNorth/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN_ZOO_SPECIALTY_BUILDING",
+      "name": "KiposTown_Zoo_SpecialtyBuilding_Layout",
+      "width": 20,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_KiposZoo",
+      "border_filepath": "data/layouts/KiposTown_Zoo_SpecialtyBuilding/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown_Zoo_SpecialtyBuilding/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN_ZOO_HERPETOFAUNA_BUILDING",
+      "name": "KiposTown_Zoo_HerpetofaunaBuilding_Layout",
+      "width": 20,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_KiposZoo",
+      "border_filepath": "data/layouts/KiposTown_Zoo_HerpetofaunaBuilding/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown_Zoo_HerpetofaunaBuilding/map.bin"
     }
   ]
 }

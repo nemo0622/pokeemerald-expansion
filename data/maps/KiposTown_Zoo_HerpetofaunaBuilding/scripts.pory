@@ -1,0 +1,350 @@
+mapscripts KiposTown_Zoo_HerpetofaunaBuilding_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        special(UpdateZooGraphics_HerpetofaunaBuilding)
+    }
+}
+
+// -------------------------------------- HERP. ENCLOSURE 01: Badlands ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Herp_Badlands
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Herpetofauna Enclosure No. 1: Badlands\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 39) // Herp. Enclosure #1, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 40) // Indoor Enclosure #3, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Herp_Badlands
+{
+    lock
+    msgbox(format("Herpetofauna Enclosure No. 1: {COLOR GREEN}Badlands{COLOR DARK_GRAY}\p Badlands are defined by their lack of water or plant growth, making for a difficult environment to survive in. Some reptilian Pokémon species have defied the odds to thrive here, absorbing sunlight on the rocks and burrowing through the sands.\p Only {COLOR GREEN}Herpetofauna (Reptiles and Amphibians){COLOR DARK_GRAY} are housed in this building. {COLOR GREEN}Ground and Fire-type{COLOR DARK_GRAY} Pokémon most commonly thrive in these conditions."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- HERP. ENCLOSURE 02: Jungle ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Herp_Jungle
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Herpetofauna Enclosure No. 2: Jungle\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 41) // Herp. Enclosure #2, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 42) // Herp. Enclosure #2, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Herp_Jungle
+{
+    lock
+    msgbox(format("Herpetofauna Enclosure No. 2: {COLOR GREEN}Jungle{COLOR DARK_GRAY}\p The complex layers of canopy hanging over jungles allows for a complex ecosystem to form. Many reptiles make their homes here, ranging from small species hiding between leaves to massive, gentle giants.\p Only {COLOR GREEN}Herpetofauna (Reptiles and Amphibians){COLOR DARK_GRAY} are housed in this building. {COLOR GREEN}Grass and Normal-type{COLOR DARK_GRAY} Pokémon are most commonly found in these environments."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- HERP. ENCLOSURE 03: Swamp ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Herp_Swamp
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Herpetofauna Enclosure No. 3: Mangrove Swamp\p Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 43) // Herp. Enclosure #3, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 44) // Herp. Enclosure #3, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Herp_Swamp
+{
+    lock
+    msgbox(format("Herpetofauna Enclosure No. 3: {COLOR GREEN}Mangrove Swamp{COLOR DARK_GRAY}\p A huge range of reptiles can be found in damp, semi-flooded areas. Pokémon found here vary from passing individuals looking for a drink to species which rely entirely on water. Amphibians, which rely largely on water, can also be found here.\p {COLOR GREEN}Water-type{COLOR DARK_GRAY} Pokémon and species which {COLOR GREEN}swim{COLOR DARK_GRAY} thrive in these ecosystems."))
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- HERP. ENCLOSURE 04: Birds ---------------------------------------------------
+script KiposTown_Zoo_PokemonSign_Herp_Birds
+{
+    lock
+
+    // buffer species names for initial sign info
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1)
+    bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2)
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1) == 0) // no Pokémon in slot 1
+    {
+        bufferstring(STR_VAR_1, "---")
+    }
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2) == 0) // no Pokémon in slot 2
+    {
+        bufferstring(STR_VAR_2, "---")
+    }
+
+    // ------------ BASIC ENCLOSURE INFO CODE ------------
+    msgbox(format("Special Enclosure: Avian Encounter!\n Pokémon in Exhibit: {STR_VAR_1}, {STR_VAR_2}"))
+    closemessage
+
+    // ------------ DISPLAY MORE INFO CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1) > 0) // AT LEAST ONE Pokémon in enclosure
+    {
+        // Offer reading Pokédex entries
+        msgbox(format("There's information about each Pokémon listed. Read it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == 1) // said yes to more information
+        {
+            copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1) // loads species into VAR_0x8003
+            special(ShowSpeciesZooInfoWindow)
+            delay(30)
+            waitbuttonpress
+            special(CloseSpeciesZooInfoWindow)
+
+            if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2) > 0)
+            {
+                delay(20)
+                copyvar(VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2) // loads species into VAR_0x8003
+                special(ShowSpeciesZooInfoWindow)
+                delay(30)
+                waitbuttonpress
+                special(CloseSpeciesZooInfoWindow)
+            }
+        }
+    }
+
+    // ------------ OFFER DONATIONS CODE ------------
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 45) // Herp. Enclosure #4, Pokémon 1 - VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1
+
+        msgbox(format("There are no Pokémon in the exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+    elif(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2) == 0)
+    {
+        // Set which zoo pokemon variable is being interacted with
+        setvar(VAR_TEMP_0, 46) // Herp. Enclosure #4, Pokémon 2 - VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2
+
+        msgbox(format("There is room for a second Pokémon in this exhibit. Would you like to {COLOR GREEN}donate a Pokémon to the exhibit{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        goto_if_eq(VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript) // if yes, donate!
+    }
+
+    releaseall
+    end
+}
+
+script KiposTown_Zoo_EnvironmentSign_Herp_Birds
+{
+    lock
+    msgbox(format("Special Enclosure: {COLOR GREEN}Avian Encounter!{COLOR DARK_GRAY}\p Although traditionally kept separate from the category of Herpetofauna, birds are actually an evolutionary branch of reptiles! Here at the Conservation Center, we are allowing close contact with these species to help visitors form a connection with wildlife.\p {COLOR GREEN}Bird{COLOR DARK_GRAY} Pokémon can be found roaming inside. Take a seat and feel connected with nature!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_EventScript_BirdPokemonInteraction_1
+{
+    lock
+    faceplayer
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1)
+    playmoncry(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("The {STR_VAR_1} huffed out a greeting!"))
+    closemessage
+    release
+    end
+}
+script KiposTown_Zoo_EventScript_BirdPokemonInteraction_2
+{
+    lock
+    faceplayer
+    bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2)
+    playmoncry(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("The {STR_VAR_1} huffed out a greeting!"))
+    closemessage
+    release
+    end
+}

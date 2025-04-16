@@ -4595,6 +4595,29 @@ u8 CheckZooDonationValidity(u16 species)
 
     u16 donationSlotId = VarGet(VAR_TEMP_0);
 
+    // donationSlotId Definitions:
+    // 1, 2, 3, 4: Exhibit #1 - Forest
+    // 5: Exhibit #2 - Nest
+    // 6, 7, 8: Exhibit #3 - Rainforest
+    // 9, 10, 11: Exhibit #4 - Suburbs
+    // 12, 13: Exhibit #5 - Fungal Swamp
+    // 14, 15: Exhibit #6 - Wetlands
+    // 16, 17: Exhibit #7 - Beach
+    // 18, 19: Exhibit #8 - Desert
+    // 20: Exhibit #9 - Lazarus Taxa
+    // 21, 22, 23: Exhibit #10 - Mountains
+    // 24, 25: Exhibit #11 - Volcano
+    // 26, 27: Exhibit #12 - Tundra
+    // 28, 29: Exhibit #13 - Ruins
+    // 30, 31: Exhibit #14 - Shallows
+    // 32, 33, 34: Indoors Exhibit #1 - Warm Water
+    // 35, 36: Indoors Exhibit #2 - Gymnasium
+    // 37, 38: Indoors Exhibit #3 - Spirit Center
+    // 39, 40: Herp. Exhibit #1 - Badlands
+    // 41, 42: Herp. Exhibit #2 - Jungle
+    // 43, 44: Herp. Exhibit #3 - Mangrove Swamp
+    // 45, 46: Herp. Exhibit #4 - Special Bird Encounter!
+
     u16 sanitizedSpeciesId = SanitizeSpeciesId(species);
 
     switch(sanitizedSpeciesId)
@@ -4602,6 +4625,28 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_ROWLET:
         case SPECIES_DARTRIX:
         case SPECIES_DECIDUEYE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                case 45:
+                case 46:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
         case SPECIES_DECIDUEYE_HISUIAN:
             switch(donationSlotId)
             {
@@ -4609,6 +4654,15 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 26:
+                case 27:
+                case 35:
+                case 36:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -4625,6 +4679,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 24:
+                case 25:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -4637,6 +4698,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_PRIMARINA:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -4651,6 +4721,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -4667,6 +4742,14 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 18:
+                case 19:
+                case 24:
+                case 25:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -4679,6 +4762,19 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GRENINJA:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 43:
+                case 44:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -4693,6 +4789,9 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
                     return 1;
                     break;
                 default:
@@ -4709,6 +4808,19 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                case 39:
+                case 40:
                     return 1;
                     break;
                 default:
@@ -4725,6 +4837,19 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 35:
+                case 36:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -4740,6 +4865,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -4755,6 +4885,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 18:
+                case 19:
+                case 24:
+                case 25:
                     return 1;
                     break;
                 default:
@@ -4770,6 +4907,16 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 14:
+                case 15:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
                     return 1;
                     break;
                 default:
@@ -4778,6 +4925,22 @@ u8 CheckZooDonationValidity(u16 species)
             }
             break;
         case SPECIES_LILLIPUP:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 9:
+                case 10:
+                case 11:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
         case SPECIES_HERDIER:
         case SPECIES_STOUTLAND:
             switch(donationSlotId)
@@ -4786,6 +4949,15 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 9:
+                case 10:
+                case 11:
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
                     return 1;
                     break;
                 default:
@@ -4802,6 +4974,17 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 16:
+                case 17:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -4813,6 +4996,22 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_SWANNA:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 45:
+                case 46:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -4827,6 +5026,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 21:
+                case 22:
+                case 23:
                     return 1;
                     break;
                 default:
@@ -4843,6 +5048,10 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 12:
+                case 13:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -4859,6 +5068,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
                     return 1;
                     break;
                 default:
@@ -4874,6 +5088,15 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -4889,6 +5112,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
                     return 1;
                     break;
                 default:
@@ -4900,6 +5128,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_FROSMOTH:
             switch(donationSlotId)
             {
+                case 12:
+                case 13:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
                 default:
                     return 0;
                     break;
@@ -4909,6 +5146,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MAROWAK:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -4917,6 +5165,22 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MAROWAK_ALOLAN:
             switch(donationSlotId)
             {
+                case 6:
+                case 7:
+                case 8:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -4930,6 +5194,14 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
                     return 1;
                     break;
                 default:
@@ -4946,6 +5218,10 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 9:
+                case 10:
+                case 11:
                     return 1;
                     break;
                 default:
@@ -4964,6 +5240,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 41:
+                case 42:
+                case 43:
+                case 44:
                     return 1;
                     break;
                 default:
@@ -4979,6 +5262,8 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 12:
+                case 13:
                     return 1;
                     break;
                 default:
@@ -4992,6 +5277,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MUK_ALOLAN:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 24:
+                case 25:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5008,6 +5302,14 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
                     return 1;
                     break;
                 default:
@@ -5022,6 +5324,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 41:
+                case 42:
                     return 1;
                     break;
                 default:
@@ -5032,13 +5340,19 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_RALTS:
         case SPECIES_KIRLIA:
         case SPECIES_GARDEVOIR:
-        case SPECIES_GALLADE:
             switch(donationSlotId)
             {
                 case 1:
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -5046,6 +5360,24 @@ u8 CheckZooDonationValidity(u16 species)
                     break;
             }
             break;
+        case SPECIES_GALLADE:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 35:
+                case 36:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
         case SPECIES_EEVEE:
             switch(donationSlotId)
             {
@@ -5053,6 +5385,9 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
                     return 1;
                     break;
                 default:
@@ -5063,6 +5398,20 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_VAPOREON:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5075,6 +5424,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 18:
+                case 19:
                     return 1;
                     break;
                 default:
@@ -5089,6 +5443,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 9:
+                case 10:
+                case 11:
+                case 24:
+                case 25:
                     return 1;
                     break;
                 default:
@@ -5103,6 +5463,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -5117,6 +5484,15 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -5131,6 +5507,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
                     return 1;
                     break;
                 default:
@@ -5141,6 +5523,13 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GLACEON:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 26:
+                case 27:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5153,6 +5542,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -5168,6 +5564,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 21:
+                case 22:
+                case 23:
                     return 1;
                     break;
                 default:
@@ -5183,6 +5585,17 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -5197,6 +5610,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 16:
+                case 17:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -5211,6 +5631,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 16:
+                case 17:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -5225,6 +5652,17 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 16:
+                case 17:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -5239,6 +5677,17 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 16:
+                case 17:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -5254,6 +5703,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -5265,6 +5721,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_SANDSLASH_ALOLAN:
             switch(donationSlotId)
             {
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
+                case 35:
+                case 36:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5275,6 +5740,19 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_KROOKODILE:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 35:
+                case 36:
+                case 39:
+                case 40:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5284,6 +5762,13 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_PROBOPASS:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5292,6 +5777,13 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MAWILE:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5304,6 +5796,14 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
                     return 1;
                     break;
                 default:
@@ -5316,6 +5816,21 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_LYCANROC_DUSK:
             switch(donationSlotId)
             {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5325,6 +5840,22 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MANDIBUZZ:
             switch(donationSlotId)
             {
+                case 5:
+                case 12:
+                case 13:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                case 45:
+                case 46:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5334,6 +5865,16 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_SWOOBAT:
             switch(donationSlotId)
             {
+                case 12:
+                case 13:
+                case 21:
+                case 22:
+                case 23:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
                 default:
                     return 0;
                     break;
@@ -5344,6 +5885,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_AGGRON:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5354,6 +5904,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CONKELDURR:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
+                case 35:
+                case 36:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5362,6 +5924,13 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_KLAWF:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5373,6 +5942,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_POLITOED:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 43:
+                case 44:
+                    return 1;
                 default:
                     return 0;
                     break;
@@ -5392,6 +5973,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 12:
+                case 13:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -5407,6 +5994,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -5421,6 +6015,14 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -5432,6 +6034,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_BANETTE:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5445,6 +6058,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -5461,6 +6079,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -5472,6 +6095,19 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_QUAGSIRE:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 43:
+                case 44:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5481,6 +6117,16 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CLODSIRE:
             switch(donationSlotId)
             {
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 43:
+                case 44:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5494,6 +6140,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
                     return 1;
                     break;
                 default:
@@ -5509,6 +6162,8 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 18:
+                case 19:
                     return 1;
                     break;
                 default:
@@ -5524,6 +6179,17 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -5535,6 +6201,16 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MIENSHAO:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5548,6 +6224,17 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 18:
+                case 19:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -5563,6 +6250,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 24:
+                case 25:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -5574,6 +6268,11 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_NINETALES_ALOLAN:
             switch(donationSlotId)
             {
+                case 5:
+                case 26:
+                case 27:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5584,6 +6283,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_AEGISLASH:
             switch(donationSlotId)
             {
+                case 21:
+                case 22:
+                case 23:
+                case 28:
+                case 29:
+                case 35:
+                case 36:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5593,6 +6303,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CRUSTLE:
             switch(donationSlotId)
             {
+                case 12:
+                case 13:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5606,6 +6327,13 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MINIOR_VIOLET:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5616,6 +6344,16 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GENGAR:
             switch(donationSlotId)
             {
+                case 12:
+                case 13:
+                case 24:
+                case 25:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5625,6 +6363,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CLAYDOL:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5634,6 +6383,14 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_SALAZZLE:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 24:
+                case 25:
+                case 39:
+                case 40:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5643,6 +6400,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_PALAFIN:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5657,6 +6425,10 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 9:
+                case 10:
+                case 11:
                     return 1;
                     break;
                 default:
@@ -5672,6 +6444,9 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
                     return 1;
                     break;
                 default:
@@ -5683,6 +6458,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_HOUNDOOM:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 18:
+                case 19:
+                case 24:
+                case 25:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5692,6 +6476,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_OMASTAR:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 20:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5701,6 +6497,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_KABUTOPS:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 20:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5714,6 +6522,10 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
                     return 1;
                     break;
                 default:
@@ -5729,6 +6541,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 12:
+                case 13:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -5740,6 +6558,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_STEELIX:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 39:
+                case 40:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5752,6 +6581,9 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
                     return 1;
                     break;
                 default:
@@ -5763,6 +6595,22 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_PELIPPER:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 45:
+                case 46:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5776,6 +6624,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
                     return 1;
                     break;
                 default:
@@ -5788,6 +6642,14 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_FROSLASS:
             switch(donationSlotId)
             {
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5798,6 +6660,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_WALREIN:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 26:
+                case 27:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5807,6 +6680,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_DEWGONG:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 26:
+                case 27:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5816,6 +6700,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_BRONZONG:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5829,6 +6724,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 21:
+                case 22:
+                case 23:
                     return 1;
                     break;
                 default:
@@ -5840,6 +6742,14 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_ZOROARK:
             switch(donationSlotId)
             {
+                case 12:
+                case 13:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5849,6 +6759,16 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_ZOROARK_HISUIAN:
             switch(donationSlotId)
             {
+                case 12:
+                case 13:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5858,6 +6778,16 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_WEAVILE:
             switch(donationSlotId)
             {
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 35:
+                case 36:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5867,6 +6797,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_SNEASLER:
             switch(donationSlotId)
             {
+                case 12:
+                case 13:
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
+                case 35:
+                case 36:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5876,6 +6817,16 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_TYRANTRUM:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 39:
+                case 40:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5885,6 +6836,11 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_AURORUS:
             switch(donationSlotId)
             {
+                case 20:
+                case 26:
+                case 27:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5898,6 +6854,10 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 9:
+                case 10:
+                case 11:
                     return 1;
                     break;
                 default:
@@ -5913,6 +6873,14 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 9:
+                case 10:
+                case 11:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -5928,6 +6896,15 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
+                case 30:
+                case 31:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -5942,6 +6919,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 26:
+                case 27:
                     return 1;
                     break;
                 default:
@@ -5957,6 +6939,10 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 9:
+                case 10:
+                case 11:
                     return 1;
                     break;
                 default:
@@ -5973,6 +6959,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -5984,6 +6976,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GRAFAIAI:
             switch(donationSlotId)
             {
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -5993,6 +6997,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_FLOATZEL:
             switch(donationSlotId)
             {
+                case 5:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6006,6 +7022,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 12:
+                case 13:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -6016,6 +7038,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CORSOLA:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6025,6 +7056,19 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CURSOLA:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6034,6 +7078,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_LUMINEON:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6043,6 +7098,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_WAILORD:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6052,6 +7116,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_KILOWATTREL:
             switch(donationSlotId)
             {
+                case 5:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 45:
+                case 46:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6067,6 +7143,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -6081,6 +7162,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 41:
+                case 42:
+                case 43:
+                case 44:
                     return 1;
                     break;
                 default:
@@ -6092,6 +7180,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GOLISOPOD:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6100,13 +7199,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_PICHU:
         case SPECIES_PIKACHU:
         case SPECIES_RAICHU:
-        case SPECIES_RAICHU_ALOLAN:
             switch(donationSlotId)
             {
                 case 1:
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
                     return 1;
                     break;
                 default:
@@ -6114,9 +7215,34 @@ u8 CheckZooDonationValidity(u16 species)
                     break;
             }
             break;
+        case SPECIES_RAICHU_ALOLAN:
+            switch(donationSlotId)
+            {
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
         case SPECIES_MIMIKYU:
             switch(donationSlotId)
             {
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6130,6 +7256,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 24:
+                case 25:
                     return 1;
                     break;
                 default:
@@ -6145,6 +7276,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -6156,6 +7294,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_TENTACRUEL:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6165,6 +7312,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CLAWITZER:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6177,6 +7335,16 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -6188,6 +7356,20 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_KLEAVOR:
             switch(donationSlotId)
             {
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6201,6 +7383,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -6213,6 +7401,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_SALAMENCE:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 39:
+                case 40:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6225,6 +7424,9 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 21:
+                case 22:
+                case 23:
                     return 1;
                     break;
                 default:
@@ -6233,9 +7435,38 @@ u8 CheckZooDonationValidity(u16 species)
             }
             break;
         case SPECIES_CRABRAWLER:
+            switch(donationSlotId)
+            {
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 35:
+                case 36:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
         case SPECIES_CRABOMINABLE:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
+                case 35:
+                case 36:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6245,6 +7476,21 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CRADILY:
             switch(donationSlotId)
             {
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 20:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6254,6 +7500,21 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_ARMALDO:
             switch(donationSlotId)
             {
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 20:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6266,6 +7527,9 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
                     return 1;
                     break;
                 default:
@@ -6280,6 +7544,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 16:
+                case 17:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -6291,6 +7562,23 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MEDICHAM:
             switch(donationSlotId)
             {
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 21:
+                case 22:
+                case 23:
+                case 28:
+                case 29:
+                case 35:
+                case 36:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6304,6 +7592,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -6319,6 +7614,15 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 41:
+                case 42:
+                case 43:
+                case 44:
                     return 1;
                     break;
                 default:
@@ -6333,6 +7637,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_BASCULEGION_FEMALE:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6346,6 +7661,14 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -6358,6 +7681,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GOTHITELLE:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6368,6 +7702,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_REUNICLUS:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6378,6 +7721,14 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CHANDELURE:
             switch(donationSlotId)
             {
+                case 24:
+                case 25:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6388,6 +7739,21 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CERULEDGE:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 28:
+                case 29:
+                case 35:
+                case 36:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6397,6 +7763,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_DRAGALGE:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6406,6 +7783,13 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_LANTURN:
             switch(donationSlotId)
             {
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6415,6 +7799,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CLOYSTER:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 26:
+                case 27:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6425,6 +7820,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GOREBYSS:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6451,6 +7855,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -6467,6 +7878,7 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
                     return 1;
                     break;
                 default:
@@ -6478,6 +7890,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_HELIOLISK:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 39:
+                case 40:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6490,6 +7911,14 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -6502,6 +7931,13 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_FLYGON:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6511,6 +7947,16 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_DODRIO:
             switch(donationSlotId)
             {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6521,6 +7967,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_TINKATON:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6530,6 +7988,20 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_SCRAFTY:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
+                case 39:
+                case 40:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6539,6 +8011,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GLISCOR:
             switch(donationSlotId)
             {
+                case 12:
+                case 13:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6547,6 +8028,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_TORKOAL:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 39:
+                case 40:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6556,6 +8048,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CAMERUPT:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6564,6 +8065,14 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_RELICANTH:
             switch(donationSlotId)
             {
+                case 20:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6573,6 +8082,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_WHISCASH:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6582,6 +8102,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MUSHARNA:
             switch(donationSlotId)
             {
+                case 9:
+                case 10:
+                case 11:
+                case 21:
+                case 22:
+                case 23:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6594,6 +8126,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 41:
+                case 42:
+                case 43:
+                case 44:
                     return 1;
                     break;
                 default:
@@ -6605,6 +8144,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GYARADOS:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6618,6 +8168,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 14:
+                case 15:
                     return 1;
                     break;
                 default:
@@ -6632,6 +8187,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
                     return 1;
                     break;
                 default:
@@ -6646,6 +8208,11 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -6661,6 +8228,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 9:
+                case 10:
+                case 11:
+                case 21:
+                case 22:
+                case 23:
                     return 1;
                     break;
                 default:
@@ -6677,6 +8250,15 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 12:
+                case 13:
+                case 21:
+                case 22:
+                case 23:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -6691,6 +8273,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GOODRA_HISUIAN:
             switch(donationSlotId)
             {
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6699,6 +8290,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_BRUXISH:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6713,6 +8313,14 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 12:
+                case 13:
+                case 28:
+                case 29:
+                case 35:
+                case 36:
+                case 37:
+                case 38:
                     return 1;
                     break;
                 default:
@@ -6724,6 +8332,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_ALTARIA:
             switch(donationSlotId)
             {
+                case 5:
+                case 9:
+                case 10:
+                case 11:
+                case 21:
+                case 22:
+                case 23:
+                case 45:
+                case 46:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6738,6 +8357,15 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
                     return 1;
                     break;
                 default:
@@ -6749,6 +8377,13 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_ELECTRODE:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6762,6 +8397,9 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 21:
+                case 22:
+                case 23:
                     return 1;
                     break;
                 default:
@@ -6772,6 +8410,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_LAPRAS:
             switch(donationSlotId)
             {
+                case 26:
+                case 27:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6785,6 +8432,10 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 21:
+                case 22:
+                case 23:
                     return 1;
                     break;
                 default:
@@ -6801,6 +8452,8 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 12:
+                case 13:
                     return 1;
                     break;
                 default:
@@ -6813,6 +8466,10 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MAGNEZONE:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6822,6 +8479,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_BEARTIC:
             switch(donationSlotId)
             {
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
+                case 35:
+                case 36:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6835,6 +8501,12 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 9:
+                case 10:
+                case 11:
+                case 24:
+                case 25:
                     return 1;
                     break;
                 default:
@@ -6846,6 +8518,19 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_ARCANINE_HISUIAN:
             switch(donationSlotId)
             {
+                case 5:
+                case 9:
+                case 10:
+                case 11:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6855,6 +8540,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_GOLDUCK:
             switch(donationSlotId)
             {
+                case 5:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6868,6 +8565,13 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
                     return 1;
                     break;
                 default:
@@ -6878,6 +8582,18 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_AERODACTYL:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 39:
+                case 40:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6887,6 +8603,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_OCTILLERY:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6901,6 +8628,16 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 14:
+                case 15:
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -6916,6 +8653,17 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 18:
+                case 19:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -6927,6 +8675,14 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_ABOMASNOW:
             switch(donationSlotId)
             {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 26:
+                case 27:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6937,6 +8693,14 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_DUSKNOIR:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6947,6 +8711,14 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_MAMOSWINE:
             switch(donationSlotId)
             {
+                case 5:
+                case 21:
+                case 22:
+                case 23:
+                case 26:
+                case 27:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6956,6 +8728,17 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CRAWDAUNT:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -6991,6 +8774,14 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_UNOWN_QMARK:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -7000,6 +8791,20 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_CARRACOSTA:
             switch(donationSlotId)
             {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 20:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 43:
+                case 44:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -7013,6 +8818,15 @@ u8 CheckZooDonationValidity(u16 species)
                 case 2:
                 case 3:
                 case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 20:
+                case 41:
+                case 42:
+                case 45:
+                case 46:
                     return 1;
                     break;
                 default:
@@ -7025,6 +8839,15 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_TYRANITAR:
             switch(donationSlotId)
             {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 39:
+                case 40:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -7033,6 +8856,19 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_DHELMISE:
             switch(donationSlotId)
             {
+                case 16:
+                case 17:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -7043,6 +8879,21 @@ u8 CheckZooDonationValidity(u16 species)
         case SPECIES_DRAGONITE:
             switch(donationSlotId)
             {
+                case 5:
+                case 14:
+                case 15:
+                case 21:
+                case 22:
+                case 23:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 43:
+                case 44:
+                    return 1;
+                    break;
                 default:
                     return 0;
                     break;
@@ -7119,5 +8970,566 @@ void UpdateZooGraphics_South(void) // updates pokemon gfx in KiposTown_Zoo (sout
     else
     {
         FlagSet(FLAG_HIDE_ZOO_POKEMON_04);
+    }
+
+    // Species 5 - Pokémon #1 in Enclosure #2 (Nest)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_02_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_05);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_02_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_4, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_05);
+    }
+
+    // Species 6 - Pokémon #1 in Enclosure #3 (Rainforest)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_03_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_06);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_03_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_5, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_06);
+    }
+
+    // Species 7 - Pokémon #2 in Enclosure #3 (Rainforest)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_03_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_07);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_03_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_6, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_07);
+    }
+
+    // Species 8 - Pokémon #3 in Enclosure #3 (Rainforest)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_03_3) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_08);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_03_3)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_7, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_08);
+    }
+
+    // Species 9 - Pokémon #1 in Enclosure #4 (Suburbs)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_04_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_09);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_04_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_8, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_09);
+    }
+
+    // Species 10 - Pokémon #2 in Enclosure #4 (Suburbs)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_04_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_10);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_04_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_9, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_10);
+    }
+
+    // Species 11 - Pokémon #3 in Enclosure #4 (Suburbs)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_04_3) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_11);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_04_3)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_A, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_11);
+    }
+
+    // Species 12 - Pokémon #1 in Enclosure #5 (Fungal Swamp)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_05_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_12);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_05_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_B, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_12);
+    }
+
+    // Species 13 - Pokémon #2 in Enclosure #5 (Fungal Swamp)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_05_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_13);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_05_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_C, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_13);
+    }
+
+    // Species 14 - Pokémon #1 in Enclosure #6 (Wetlands)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_06_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_14);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_06_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_D, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_14);
+    }
+
+    // Species 15 - Pokémon #2 in Enclosure #6 (Wetlands)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_06_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_15);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_06_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_E, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_15);
+    }
+}
+
+void UpdateZooGraphics_North(void)
+{
+    u16 speciesGraphics;
+
+    // Species 1 - Pokémon #1 in Enclosure #7 (Beach)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_07_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_01);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_07_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_0, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_01);
+    }
+
+    // Species 2 - Pokémon #2 in Enclosure #7 (Beach)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_07_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_02);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_07_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_1, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_02);
+    }
+
+    // Species 3 - Pokémon #1 in Enclosure #8 (Desert)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_08_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_03);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_08_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_2, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_03);
+    }
+
+    // Species 4 - Pokémon #2 in Enclosure #8 (Desert)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_08_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_04);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_08_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_3, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_04);
+    }
+
+    // Species 5 - Pokémon #1 in Enclosure #9 (Lazarus Taxa)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_09_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_05);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_09_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_4, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_05);
+    }
+
+    // Species 6 - Pokémon #1 in Enclosure #10 (Mountains)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_10_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_06);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_10_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_5, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_06);
+    }
+
+    // Species 7 - Pokémon #2 in Enclosure #10 (Mountains)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_10_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_07);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_10_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_6, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_07);
+    }
+
+    // Species 8 - Pokémon #3 in Enclosure #10 (Mountains)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_10_3) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_08);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_10_3)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_7, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_08);
+    }
+
+    // Species 9 - Pokémon #1 in Enclosure #11 (Volcano)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_11_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_09);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_11_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_8, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_09);
+    }
+
+    // Species 10 - Pokémon #2 in Enclosure #11 (Volcano)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_11_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_10);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_11_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_9, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_10);
+    }
+
+    // Species 11 - Pokémon #1 in Enclosure #12 (Tundra)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_12_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_11);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_12_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_A, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_11);
+    }
+
+    // Species 12 - Pokémon #2 in Enclosure #12 (Tundra)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_12_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_12);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_12_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_B, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_12);
+    }
+
+    // Species 13 - Pokémon #1 in Enclosure #13 (Ruins)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_13_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_13);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_13_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_C, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_13);
+    }
+
+    // Species 14 - Pokémon #2 in Enclosure #13 (Ruins)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_13_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_14);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_13_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_D, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_14);
+    }
+
+    // Species 15 - Pokémon #1 in Enclosure #14 (Shallows)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_14_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_15);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_14_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_E, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_15);
+    }
+
+    // Species 16 - Pokémon #2 in Enclosure #14 (Shallows)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_14_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_16);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_14_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_F, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_16);
+    }
+}
+
+void UpdateZooGraphics_SpecialtyBuilding(void)
+{
+    u16 speciesGraphics;
+
+    // Species 1 - Pokémon #1 in Indoor Enclosure #1 (Warm Water)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_01);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_0, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_01);
+    }
+
+    // Species 2 - Pokémon #2 in Indoor Enclosure #1 (Warm Water)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_02);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_1, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_02);
+    }
+
+    // Species 3 - Pokémon #3 in Indoor Enclosure #1 (Warm Water)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_3) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_03);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_3)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_2, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_03);
+    }
+
+    // Species 4 - Pokémon #1 in Indoor Enclosure #2 (Gymnasium)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_04);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_3, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_04);
+    }
+
+    // Species 5 - Pokémon #2 in Indoor Enclosure #2 (Gymnasium)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_05);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_4, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_05);
+    }
+
+    // Species 6 - Pokémon #1 in Indoor Enclosure #3 (Spirit Center)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_06);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_5, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_06);
+    }
+
+    // Species 7 - Pokémon #2 in Indoor Enclosure #3 (Spirit Center)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_07);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_6, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_07);
+    }
+}
+
+void UpdateZooGraphics_HerpetofaunaBuilding(void)
+{
+    u16 speciesGraphics;
+
+    // Species 1 - Pokémon #1 in Herp Enclosure #1 (Badlands)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_01);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_0, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_01);
+    }
+
+    // Species 2 - Pokémon #2 in Herp Enclosure #1 (Badlands)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_02);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_1, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_02);
+    }
+
+    // Species 3 - Pokémon #1 in Herp Enclosure #2 (Jungle)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_03);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_2, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_03);
+    }
+
+    // Species 4 - Pokémon #2 in Herp Enclosure #2 (Jungle)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_04);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_3, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_04);
+    }
+
+    // Species 5 - Pokémon #1 in Herp Enclosure #3 (Swamp)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_05);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_4, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_05);
+    }
+
+    // Species 6 - Pokémon #2 in Herp Enclosure #3 (Swamp)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_06);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_5, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_06);
+    }
+
+    // Species 7 - Pokémon #1 in Herp Enclosure #4 (Birds)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_07);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_6, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_07);
+    }
+
+    // Species 8 - Pokémon #2 in Herp Enclosure #4 (Birds)
+    if(VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2) > 0)
+    {
+        FlagClear(FLAG_HIDE_ZOO_POKEMON_08);
+
+        speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + VarGet(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2)) & OBJ_EVENT_GFX_SPECIES_MASK;
+        VarSet(VAR_OBJ_GFX_ID_7, speciesGraphics);
+    }
+    else
+    {
+        FlagSet(FLAG_HIDE_ZOO_POKEMON_08);
     }
 }

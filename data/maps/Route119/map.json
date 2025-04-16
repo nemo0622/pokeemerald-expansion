@@ -607,7 +607,7 @@
       "x": 25,
       "y": 31,
       "elevation": 0,
-      "var": "VAR_ROUTE119_STATE",
+      "var": "VAR_ZOO_POKEMON_ENCLOSURE_08_2",
       "var_value": "0",
       "script": "Route119_EventScript_RivalTrigger1"
     },
@@ -616,7 +616,7 @@
       "x": 26,
       "y": 31,
       "elevation": 0,
-      "var": "VAR_ROUTE119_STATE",
+      "var": "VAR_ZOO_POKEMON_ENCLOSURE_08_2",
       "var_value": "0",
       "script": "Route119_EventScript_RivalTrigger2"
     },

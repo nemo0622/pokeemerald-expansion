@@ -167,6 +167,8 @@
 #define MAP_KALAMI_CITY_POKEMON_CENTER             (12 | (5 << 8))
 #define MAP_KALAMI_CITY_MART                       (13 | (5 << 8))
 #define MAP_KALAMI_CITY_GYM                        (14 | (5 << 8))
+#define MAP_KIPOS_TOWN_ZOO_SPECIALTY_BUILDING      (15 | (5 << 8))
+#define MAP_KIPOS_TOWN_ZOO_HERPETOFAUNA_BUILDING   (16 | (5 << 8))
 
 // gMapGroup_IndoorVerdanturf
 #define MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       (0 | (6 << 8))

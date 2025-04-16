@@ -122,7 +122,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	applymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieExit
 	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_MaxieComeOnPlayer, MSGBOX_DEFAULT
-	setvar VAR_ROUTE128_STATE, 1
+	setvar VAR_ZOO_POKEMON_ENCLOSURE_13_1, 1
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 1
 	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
 	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE

@@ -117,38 +117,38 @@
 #define VAR_ZOO_POKEMON_ENCLOSURE_01_2                   0x4061 // Pokémon #2 in zoo Enclosure #1 (Forest)
 #define VAR_ZOO_POKEMON_ENCLOSURE_01_3                   0x4062 // Pokémon #3 in zoo Enclosure #1 (Forest)
 #define VAR_ZOO_POKEMON_ENCLOSURE_01_4                   0x4063 // Pokémon #4 in zoo Enclosure #1 (Forest)
-#define VAR_ROUTE105_STATE                               0x4064 // Unused Var
-#define VAR_ROUTE106_STATE                               0x4065 // Unused Var
-#define VAR_ROUTE107_STATE                               0x4066 // Unused Var
-#define VAR_ROUTE108_STATE                               0x4067 // Unused Var
-#define VAR_ROUTE109_STATE                               0x4068 // Unused Var
-#define VAR_ROUTE110_STATE                               0x4069
-#define VAR_ROUTE111_STATE                               0x406A // Unused Var
-#define VAR_ROUTE112_STATE                               0x406B // Unused Var
-#define VAR_ROUTE113_STATE                               0x406C // Unused Var
-#define VAR_ROUTE114_STATE                               0x406D // Unused Var
-#define VAR_ROUTE115_STATE                               0x406E // Unused Var
-#define VAR_ROUTE116_STATE                               0x406F
-#define VAR_ROUTE117_STATE                               0x4070 // Unused Var
-#define VAR_ROUTE118_STATE                               0x4071
-#define VAR_ROUTE119_STATE                               0x4072
-#define VAR_ROUTE120_STATE                               0x4073 // Unused Var
-#define VAR_ROUTE121_STATE                               0x4074
-#define VAR_ROUTE122_STATE                               0x4075 // Unused Var
-#define VAR_ROUTE123_STATE                               0x4076 // Unused Var
-#define VAR_ROUTE124_STATE                               0x4077 // Unused Var
-#define VAR_ROUTE125_STATE                               0x4078 // Unused Var
-#define VAR_ROUTE126_STATE                               0x4079 // Unused Var
-#define VAR_ROUTE127_STATE                               0x407A // Unused Var
-#define VAR_ROUTE128_STATE                               0x407B
-#define VAR_ROUTE129_STATE                               0x407C // Unused Var
-#define VAR_ROUTE130_STATE                               0x407D // Unused Var
-#define VAR_ROUTE131_STATE                               0x407E // Unused Var
-#define VAR_ROUTE132_STATE                               0x407F // Unused Var
-#define VAR_ROUTE133_STATE                               0x4080 // Unused Var
-#define VAR_ROUTE134_STATE                               0x4081 // Unused Var
+#define VAR_ZOO_POKEMON_ENCLOSURE_02_1                   0x4064 // Pokémon #1 in zoo Enclosure #2 (Nest)
+#define VAR_ZOO_POKEMON_ENCLOSURE_03_1                   0x4065 // Pokémon #1 in zoo Enclosure #3 (Rainforest)
+#define VAR_ZOO_POKEMON_ENCLOSURE_03_2                   0x4066 // Pokémon #2 in zoo Enclosure #3 (Rainforest)
+#define VAR_ZOO_POKEMON_ENCLOSURE_03_3                   0x4067 // Pokémon #3 in zoo Enclosure #3 (Rainforest)
+#define VAR_ZOO_POKEMON_ENCLOSURE_04_1                   0x4068 // Pokémon #1 in zoo Enclosure #4 (Suburbs)
+#define VAR_ZOO_POKEMON_ENCLOSURE_04_2                   0x4069 // Pokémon #2 in zoo Enclosure #4 (Suburbs)
+#define VAR_ZOO_POKEMON_ENCLOSURE_04_3                   0x406A // Pokémon #3 in zoo Enclosure #4 (Suburbs)
+#define VAR_ZOO_POKEMON_ENCLOSURE_05_1                   0x406B // Pokémon #1 in zoo Enclosure #5 (Fungal Swamp)
+#define VAR_ZOO_POKEMON_ENCLOSURE_05_2                   0x406C // Pokémon #2 in zoo Enclosure #5 (Fungal Swamp)
+#define VAR_ZOO_POKEMON_ENCLOSURE_06_1                   0x406D // Pokémon #1 in zoo Enclosure #6 (Wetlands)
+#define VAR_ZOO_POKEMON_ENCLOSURE_06_2                   0x406E // Pokémon #2 in zoo Enclosure #6 (Wetlands)
+#define VAR_ZOO_POKEMON_ENCLOSURE_07_1                   0x406F // Pokémon #1 in zoo Enclosure #7 (Beach)
+#define VAR_ZOO_POKEMON_ENCLOSURE_07_2                   0x4070 // Pokémon #2 in zoo Enclosure #7 (Beach)
+#define VAR_ZOO_POKEMON_ENCLOSURE_08_1                   0x4071 // Pokémon #1 in zoo Enclosure #8 (Desert)
+#define VAR_ZOO_POKEMON_ENCLOSURE_08_2                   0x4072 // Pokémon #2 in zoo Enclosure #8 (Desert)
+#define VAR_ZOO_POKEMON_ENCLOSURE_09_1                   0x4073 // Pokémon #1 in zoo Enclosure #9 (Lazarus Taxa)
+#define VAR_ZOO_POKEMON_ENCLOSURE_10_1                   0x4074 // Pokémon #1 in zoo Enclosure #10 (Mountains)
+#define VAR_ZOO_POKEMON_ENCLOSURE_10_2                   0x4075 // Pokémon #2 in zoo Enclosure #10 (Mountains)
+#define VAR_ZOO_POKEMON_ENCLOSURE_10_3                   0x4076 // Pokémon #3 in zoo Enclosure #10 (Mountains)
+#define VAR_ZOO_POKEMON_ENCLOSURE_11_1                   0x4077 // Pokémon #1 in zoo Enclosure #11 (Volcano)
+#define VAR_ZOO_POKEMON_ENCLOSURE_11_2                   0x4078 // Pokémon #2 in zoo Enclosure #11 (Volcano)
+#define VAR_ZOO_POKEMON_ENCLOSURE_12_1                   0x4079 // Pokémon #1 in zoo Enclosure #12 (Tundra)
+#define VAR_ZOO_POKEMON_ENCLOSURE_12_2                   0x407A // Pokémon #2 in zoo Enclosure #12 (Tundra)
+#define VAR_ZOO_POKEMON_ENCLOSURE_13_1                   0x407B // Pokémon #1 in zoo Enclosure #13 (Ruins)
+#define VAR_ZOO_POKEMON_ENCLOSURE_13_2                   0x407C // Pokémon #2 in zoo Enclosure #13 (Ruins)
+#define VAR_ZOO_POKEMON_ENCLOSURE_14_1                   0x407D // Pokémon #1 in zoo Enclosure #14 (Shallows)
+#define VAR_ZOO_POKEMON_ENCLOSURE_14_2                   0x407E // Pokémon #2 in zoo Enclosure #14 (Shallows)
+#define VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1                0x407F // Pokémon #1 in zoo Indoor Enclosure #1 (Warm Water)
+#define VAR_ZOO_POKEMON_ENCLOSURE_IN_01_2                0x4080 // Pokémon #2 in zoo Indoor Enclosure #1 (Warm Water)
+#define VAR_ZOO_POKEMON_ENCLOSURE_IN_01_3                0x4081 // Pokémon #3 in zoo Indoor Enclosure #1 (Warm Water)
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
-#define VAR_UNUSED_0x4083                                0x4083 // Unused Var
+#define VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1                0x4083 // Pokémon #1 in zoo Indoor Enclosure #2 (Gymnasium)
 #define VAR_BIRCH_LAB_STATE                              0x4084
 #define VAR_PETALBURG_GYM_STATE                          0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
 #define VAR_CONTEST_HALL_STATE                           0x4086
@@ -156,13 +156,13 @@
 #define VAR_CONTEST_TYPE                                 0x4088
 #define VAR_SECRET_BASE_INITIALIZED                      0x4089
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
-#define VAR_UNUSED_0x408B                                0x408B // Unused Var
+#define VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2                0x408B // Pokémon #2 in zoo Indoor Enclosure #2 (Gymnasium)
 #define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN              0x408C
 #define VAR_LITTLEROOT_RIVAL_STATE                       0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E
 #define VAR_DEVON_CORP_3F_STATE                          0x408F
 #define VAR_BRINEY_HOUSE_STATE                           0x4090
-#define VAR_UNUSED_0x4091                                0x4091 // Unused Var
+#define VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1                0x4091 // Pokémon #1 in zoo Indoor Enclosure #3 (Spirit Center)
 #define VAR_LITTLEROOT_INTRO_STATE                       0x4092
 #define VAR_MAUVILLE_GYM_STATE                           0x4093
 #define VAR_LILYCOVE_MUSEUM_2F_STATE                     0x4094
@@ -172,20 +172,20 @@
 #define VAR_PETALBURG_WOODS_STATE                        0x4098
 #define VAR_LILYCOVE_CONTEST_LOBBY_STATE                 0x4099
 #define VAR_RUSTURF_TUNNEL_STATE                         0x409A
-#define VAR_UNUSED_0x409B                                0x409B // Unused Var
+#define VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2                0x409B // Pokémon #2 in zoo Indoor Enclosure #3 (Spirit Center)
 #define VAR_ELITE_4_STATE                                0x409C
-#define VAR_UNUSED_0x409D                                0x409D // Unused Var
+#define VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_1               0x409D // Pokémon #1 in zoo Herp. Enclosure #1 (Badlands)
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
 #define VAR_MOSSDEEP_SPACE_CENTER_STATE                  0x409F
 #define VAR_SLATEPORT_HARBOR_STATE                       0x40A0
-#define VAR_UNUSED_0x40A1                                0x40A1 // Unused var
+#define VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_2               0x40A1 // Pokémon #2 in zoo Herp. Enclosure #1 (Badlands)
 #define VAR_SEAFLOOR_CAVERN_STATE                        0x40A2
 #define VAR_CABLE_CAR_STATION_STATE                      0x40A3
 #define VAR_SAFARI_ZONE_STATE                            0x40A4  // 0: In or out of SZ, 1: Player exiting SZ, 2: Player entering SZ
 #define VAR_TRICK_HOUSE_BEING_WATCHED_STATE              0x40A5
 #define VAR_TRICK_HOUSE_FOUND_TRICK_MASTER               0x40A6
 #define VAR_TRICK_HOUSE_ENTRANCE_STATE                   0x40A7
-#define VAR_UNUSED_0x40A8                                0x40A8 // Unused Var
+#define VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_1               0x40A8 // Pokémon #1 in zoo Herp. Enclosure #2 (Jungle)
 #define VAR_CYCLING_CHALLENGE_STATE                      0x40A9
 #define VAR_SLATEPORT_MUSEUM_1F_STATE                    0x40AA
 #define VAR_TRICK_HOUSE_PUZZLE_1_STATE                   0x40AB
@@ -201,7 +201,7 @@
 #define VAR_TRICK_HOUSE_ENTER_FROM_CORRIDOR              0x40B5
 #define VAR_TRICK_HOUSE_PUZZLE_7_STATE_2                 0x40B6 // Leftover from RS, never set
 #define VAR_SLATEPORT_FAN_CLUB_STATE                     0x40B7
-#define VAR_UNUSED_0x40B8                                0x40B8 // Unused Var
+#define VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_2               0x40B8 // Pokémon #2 in zoo Herp. Enclosure #2 (Jungle)
 #define VAR_MT_PYRE_STATE                                0x40B9
 #define VAR_NEW_MAUVILLE_STATE                           0x40BA
 #define VAR_PINBALL_POINTS                               0x40BB // Pinball Points
@@ -236,8 +236,8 @@
 #define VAR_SOOTOPOLIS_WALLACE_STATE                     0x40D8
 #define VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT 0x40D9
 #define VAR_REGISTER_BIRCH_STATE                         0x40DA
-#define VAR_UNUSED_0x40DB                                0x40DB // Unused Var
-#define VAR_UNUSED_0x40DC                                0x40DC // Unused Var
+#define VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_1               0x40DB // Pokémon #1 in zoo Herp. Enclosure #3 (Swamp)
+#define VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_2               0x40DC // Pokémon #2 in zoo Herp. Enclosure #3 (Swamp)
 #define VAR_GIFT_PICHU_SLOT                              0x40DD
 #define VAR_GIFT_UNUSED_1                                0x40DE // Var is written to, but never read
 #define VAR_GIFT_UNUSED_2                                0x40DF // Var is written to, but never read
@@ -266,8 +266,8 @@
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
 #define VAR_DEXNAV_SPECIES                               0x40F7 // Registered dexnav species
 #define VAR_DEXNAV_STEP_COUNTER                          0x40F8 // steps for finding hidden pokemon
-#define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
-#define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
+#define VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1               0x40F9 // Pokémon #1 in zoo Herp. Enclosure #4 (Birds)
+#define VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2               0x40FA // Pokémon #2 in zoo Herp. Enclosure #4 (Birds)
 #define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
