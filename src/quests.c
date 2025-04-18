@@ -942,6 +942,46 @@ side_quest(
 	NULL,
 	0
 ),
+side_quest(
+	gText_SideQuestName_38, // QUEST_FILL_SUBURBS_ZOO
+	gText_SideQuestDesc_38,
+	gText_SideQuestDesc_38,
+	gText_SideQuestMap38,
+	SPECIES_LILLIPUP,
+	PKMN,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_39, // QUEST_FILL_LAZARUS_ZOO
+	gText_SideQuestDesc_39,
+	gText_SideQuestDesc_39,
+	gText_SideQuestMap39,
+	SPECIES_ARCHEN,
+	PKMN,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_40, // QUEST_SHOW_BRAVIARY_AT_ZOO
+	gText_SideQuestDesc_40,
+	gText_SideQuestDesc_40,
+	gText_SideQuestMap40,
+	SPECIES_BRAVIARY,
+	PKMN,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_41, // QUEST_SHOW_TYRUNT_KIPOS_TOWN
+	gText_SideQuestDesc_41,
+	gText_SideQuestDesc_41,
+	gText_SideQuestMap41,
+	SPECIES_TYRUNT,
+	PKMN,
+	NULL,
+	0
+),
 };
 ////////////////////////END QUEST CUSTOMIZATION////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////

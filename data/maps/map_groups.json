@@ -198,7 +198,12 @@
     "KalamiCity_Mart",
     "KalamiCity_Gym",
     "KiposTown_Zoo_SpecialtyBuilding",
-    "KiposTown_Zoo_HerpetofaunaBuilding"
+    "KiposTown_Zoo_HerpetofaunaBuilding",
+    "KiposTown_PokemonCenter",
+    "KiposTown_house1",
+    "KiposTown_House2",
+    "KiposTown_House3",
+    "KiposTown_Mart"
   ],
   "gMapGroup_IndoorVerdanturf": [
     "VerdanturfTown_BattleTentLobby",

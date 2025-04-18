@@ -52,7 +52,11 @@
 #define QUEST_XATU_AND_NOCTOWL                  34 // Show Xatu and Noctowl dex pages to lady in sofos city house 5
 #define QUEST_NEMOS_QUEST                       35 // bring Nemo dex pages of Komala (SleepyBear), Spheal (Spherical), Archen (First Bird), and Oranguru (Wild Sage)
 #define QUEST_ZOOKEEPER                         36 // fill out the Kipos Town zoo
-#define QUEST_COUNT     (QUEST_ZOOKEEPER + 1)
+#define QUEST_FILL_SUBURBS_ZOO                  37 // fill out the hands on / suburbs area of the zoo
+#define QUEST_FILL_LAZARUS_ZOO                  38 // fill out the lazarus taxa area of the zoo
+#define QUEST_SHOW_BRAVIARY_AT_ZOO              39 // show scientist braviary dex entry at conservation center
+#define QUEST_SHOW_TYRUNT_KIPOS_TOWN            40 // show scientist a tyrunt from party in kipos town at tyrantrum statue
+#define QUEST_COUNT     (QUEST_SHOW_TYRUNT_KIPOS_TOWN + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

@@ -529,6 +529,65 @@ KiposTown_Zoo_EventScript_BirdPokemonInteraction_2::
 	end
 
 
+KiposTown_Zoo_Building_NPC_BugCatcher::
+# 358 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	lock
+# 359 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	faceplayer
+# 360 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	speakername KiposTown_Zoo_Building_NPC_BugCatcher_Text_0
+# 361 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	msgbox KiposTown_Zoo_Building_NPC_BugCatcher_Text_1
+# 362 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	closemessage
+# 363 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	release
+	end
+
+
+KiposTown_Zoo_Building_NPC_SchoolKid::
+# 369 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	lock
+# 370 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	faceplayer
+# 371 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	speakername KiposTown_Zoo_Building_NPC_SchoolKid_Text_0
+# 372 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	msgbox KiposTown_Zoo_Building_NPC_SchoolKid_Text_1
+# 373 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	closemessage
+# 374 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	release
+	end
+
+
+KiposTown_Zoo_Building_NPC_BirdGirl::
+# 380 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	lock
+# 381 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	faceplayer
+# 382 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	speakername KiposTown_Zoo_Building_NPC_BirdGirl_Text_0
+# 383 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	compare VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1, 0
+	goto_if_gt KiposTown_Zoo_Building_NPC_BirdGirl_2
+# 390 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	msgbox KiposTown_Zoo_Building_NPC_BirdGirl_Text_2
+# 391 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	closemessage
+KiposTown_Zoo_Building_NPC_BirdGirl_1:
+# 393 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	release
+	end
+
+KiposTown_Zoo_Building_NPC_BirdGirl_2:
+# 385 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	msgbox KiposTown_Zoo_Building_NPC_BirdGirl_Text_1
+# 386 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	closemessage
+	goto KiposTown_Zoo_Building_NPC_BirdGirl_1
+
+
 KiposTown_Zoo_PokemonSign_Herp_Badlands_Text_0:
 # 17 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
 	.string "---$"
@@ -637,3 +696,43 @@ KiposTown_Zoo_EventScript_BirdPokemonInteraction_1_Text_0:
 # 334 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
 	.string "The {STR_VAR_1} huffed out a\n"
 	.string "greeting!$"
+
+KiposTown_Zoo_Building_NPC_BugCatcher_Text_0:
+# 360 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	.string "Bug Catcher$"
+
+KiposTown_Zoo_Building_NPC_BugCatcher_Text_1:
+# 361 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	.string "Herpet- uhhh... Um, Herpayto- no, that's\n"
+	.string "not right...\p"
+	.string "Her-pet-o-fau-na... Hey, I did it! It's a\n"
+	.string "weird name, but it's a grouping of\l"
+	.string "{COLOR GREEN}reptiles and amphibians{COLOR DARK_GRAY}. Pretty cool!$"
+
+KiposTown_Zoo_Building_NPC_SchoolKid_Text_0:
+# 371 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	.string "School Kid$"
+
+KiposTown_Zoo_Building_NPC_SchoolKid_Text_1:
+# 372 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	.string "We came on a school trip here a few\n"
+	.string "weeks ago, right before Team Chimera\l"
+	.string "came in and took all the Pokémon. Now, I\l"
+	.string "keep tagging along with my parents to\l"
+	.string "check up on the Zoo!$"
+
+KiposTown_Zoo_Building_NPC_BirdGirl_Text_0:
+# 382 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	.string "Bird Lady$"
+
+KiposTown_Zoo_Building_NPC_BirdGirl_Text_1:
+# 385 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	.string "If I stay still enough, the birds are\n"
+	.string "sure to come to me. I've always wanted\l"
+	.string "one to land on me!$"
+
+KiposTown_Zoo_Building_NPC_BirdGirl_Text_2:
+# 390 "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.pory"
+	.string "I came in here to see the new bird\n"
+	.string "exhibit, but the Pokémon are all gone!\l"
+	.string "How am I gonna bond with the birds now?$"

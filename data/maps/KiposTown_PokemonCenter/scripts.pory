@@ -1,0 +1,72 @@
+mapscripts KiposTown_PokemonCenter_MapScripts {}
+
+script KiposTown_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Kipos Town Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_KIPOS_TOWN)
+    }
+    release
+    end
+}
+
+script KiposTown_PokemonCenter_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("I was on the paleontology team that helped excavate the Tyrantrum bones we have in town. It took a dozen people to get the skull out alone!\p Now, just a few years later, I have a pet Tyrunt which lives with me. The world sure changes fast."))
+    closemessage
+    release
+    end
+}
+script KiposTown_PokemonCenter_EventScript_Tyrunt
+{
+    lock
+    faceplayer
+    speakername("Tyrunt")
+    playmoncry(SPECIES_TYRUNT, CRY_MODE_NORMAL)
+    msgbox("Rrr... RAH!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script KiposTown_PokemonCenter_EventScript_PerformerF
+{
+    lock
+    faceplayer
+    speakername("Performer")
+    msgbox(format("The Conservation Center, the Tyrantrum fossils... Kipos Town really is the center of ecology in Ilios. Maybe I'll write a song about it!"))
+    closemessage
+    release
+    end
+}

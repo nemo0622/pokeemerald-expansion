@@ -1,0 +1,57 @@
+mapscripts KiposTown_Mart_MapScripts {}
+
+script KiposTown_Mart_EventScript_MartEmployee
+{
+    lock
+    faceplayer
+    speakername("Mart Employee")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(KiposTown_Mart_Shop)
+    closemessage
+    delay(1)
+    speakername("Mart Employee")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+mart KiposTown_Mart_Shop
+{
+    ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+    ITEM_REPEAT_BALL
+	ITEM_POTION
+	ITEM_SUPER_POTION
+    ITEM_HYPER_POTION
+    ITEM_REVIVE
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+	ITEM_ESCAPE_ROPE
+	ITEM_REPEL
+    ITEM_SUPER_REPEL
+}
+
+script KiposTown_Mart_EventScript_OldMan
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("They stock Repeat Balls at this Mart to encourage Trainers to catch multiples of the same Pokémon. Those could be donated to the Conservation Center if the Pokémon are in need."))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Mart_EventScript_Psychic
+{
+    lock
+    faceplayer
+    speakername("Psychic")
+    msgbox(format("Certain Pokémon can control spiritual energy that science can't explain! My Drowzee can put people to sleep with a wag of a finger!"))
+    closemessage
+    release
+    end
+}

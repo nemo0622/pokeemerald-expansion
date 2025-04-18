@@ -65,6 +65,7 @@ script KiposTown_Zoo_EventScript_PlayerShownAround
     removeobject(2)
     setflag(FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT)
     clearflag(FLAG_HIDE_RUSSEL_DURING_ZOO_CUTSCENE)
+    setvar(VAR_TOTAL_NUM_ZOO_DONATIONS, 0)
     delay(30)
     fadescreenswapbuffers(FADE_FROM_BLACK)
 
@@ -92,9 +93,9 @@ movement KiposTown_Zoo_Movement_PlayerWalkToGirafarig
 movement KiposTown_Zoo_Movement_RusselWalkToSwampExhibit
 {
     walk_down
-    walk_right * 6
+    walk_right * 5
     walk_up * 6
-    walk_right * 3
+    walk_right * 4
     walk_up
     face_left
     step_end
@@ -103,12 +104,48 @@ movement KiposTown_Zoo_Movement_PlayerWalkToSwampExhibit
 {
     walk_right
     walk_down
-    walk_right * 6
+    walk_right * 5
     walk_up * 6
-    walk_right * 2
+    walk_right * 3
     walk_up
     face_right
     step_end
+}
+
+script KiposTown_Zoo_DirectionSign_South_1
+{
+    lock
+    msgbox(format("{LEFT_ARROW} Forest Exhibit\n {UP_ARROW} Rainforest & Hands-On Exhibit\p Fungal Swamp Exhibit {RIGHT_ARROW}\n Exit {DOWN_ARROW}"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_DirectionSign_South_2
+{
+    lock
+    msgbox(format("{LEFT_ARROW} Specialty Indoor Exhibits\n {UP_ARROW} 'Exotic Locale' Zoo Exhibits\p Herpetofauna Exhibits {RIGHT_ARROW}\n 'Backyard Friends' Zoo Exhibits {DOWN_ARROW}"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_BuildingSign_SpecialtyBuilding
+{
+    lock
+    msgbox(format("Indoor Exhibits - West Building\n Specialty Exhibits"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_BuildingSign_HerpetofaunaBuilding
+{
+    lock
+    msgbox(format("Indoor Exhibits - East Building\n Herpetofauna: Reptiles and Amphibians"))
+    closemessage
+    release
+    end
 }
 
 // -------------------------------------------------------------------------------------------------------
@@ -274,6 +311,8 @@ script KiposTown_Zoo_PokemonSign_DonationScript
             case 46: // Herp. Enclosure #4 (Birds), Pokémon #2
                 copyvar(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2, VAR_0x8003)
         }
+
+        addvar(VAR_TOTAL_NUM_ZOO_DONATIONS, 1)
         
         playfanfare(FANFARE_LEVEL_UP)
         msgbox(format("Donated {STR_VAR_1} to the Exhibit! Return soon to view the Pokémon in it's new home!"))
@@ -900,6 +939,262 @@ script KiposTown_Zoo_EnvironmentSign_Wetlands
     lock
     msgbox(format("Enclosure No. 6: {COLOR GREEN}Wetlands{COLOR DARK_GRAY}\p Although most people steer clear of marshes and bogs, these habitats are key to the survival of many species. They also help prevent soil erosion and lessen the impact of floods, directly providing benefits to humans and Pokémon alike!\p {COLOR GREEN}Water, Poison, and Grass-type{COLOR DARK_GRAY} Pokémon thrive here, alongside various {COLOR GREEN}slimy{COLOR DARK_GRAY} Pokémon."))
     closemessage
+    release
+    end
+}
+
+// -------------------------------------------------------------------------------------------------------
+//                                           NPC SCRIPTS
+// -------------------------------------------------------------------------------------------------------
+
+script KiposTown_Zoo_South_NPC_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("The first Pokémon donated to the Conservation Center... now it became the last one left after Team Chimera's visit. I'm glad the Girafarig somehow stayed, though. I always came and visited it when I was a kid!"))
+    closemessage
+    applymovement(30, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_1) > 0)
+    {
+        msgbox(format("Hey, there's a Pokémon in the exhibit again! I'm so glad!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Sniff... I wanted to see the Pokémon, where'd they go?"))
+        closemessage
+    }
+    applymovement(31, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_01_1) > 0)
+    {
+        msgbox(format("It looks like the Pokémon are coming back to the Zoo! Someone is donating them!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("My poor son is so disappointed about the Pokémon being stolen."))
+        closemessage
+    }
+    applymovement(32, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_RichBoy
+{
+    lock
+    faceplayer
+    speakername("Rich Boy")
+    msgbox(format("I hear that Zoos and Pokémon conservation programs are always a bit short on money. Maybe I could donate a few bucks!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_Youngster
+{
+    lock
+    faceplayer
+    speakername("Youngster")
+    msgbox(format("We're learning about different Pokémon species in school. Some are always safe to be around, but others can be real scary!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_Worker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_04_1) > 0)
+    {
+        msgbox(format("After a wild shift at the factory, there's nothing better than coming here and running around with Pokémon. It makes me feel like a kid again!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Before all the Pokémon were taken, I used to come here to run around with the Pokémon. Now I just do it by myself... I must look so goofy!"))
+        closemessage
+    }
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_OldWomanInHandsOn
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_FILL_SUBURBS_ZOO)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Oh, it makes me so happy to see all the Pokémon back in this area! Kind-hearted people like you make the world a better place."))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_FILL_SUBURBS_ZOO)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("It's been so sad in the Zoo since Team Chimera came and stole almost all the Pokémon...\p Hm? You're leading the effort to repopulate the Zoo, right? If you could spare the time, please, try to donate {COLOR GREEN}3 Pokémon{COLOR DARK_GRAY} to this exhibit. I miss sitting with the little Pokémon!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_FILL_SUBURBS_ZOO)
+    }
+    else
+    {
+        msgbox(format("Chaire, little one... how has donating Pokémon been going?"))
+        closemessage
+
+        delay(30)
+        if(var(VAR_ZOO_POKEMON_ENCLOSURE_04_1) > 0 && var(VAR_ZOO_POKEMON_ENCLOSURE_04_2) > 0 && var(VAR_ZOO_POKEMON_ENCLOSURE_04_3) > 0)
+        {
+            applymovement(36, Common_Movement_Heart)
+            waitmovement(0)
+            delay(10)
+            speakername("Old Woman")
+            msgbox(format("Ohoho, I knew you could do it! These old eyes can barely see, but I can feel all the Pokémon around me.\p Here, I want you to have this. I've held onto it for years, but it's time to pass it on."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_TM_WISH)
+            closemessage
+            
+            delay(20)
+            completequest(QUEST_FILL_SUBURBS_ZOO)
+        }
+        else
+        {
+            speakername("Old Woman")
+            msgbox(format("It's okay, I know this whole Zoo project is a massive task for a single person. But if anyone can do it, I'm sure it's you, honey!"))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_Maniac
+{
+    lock
+    faceplayer
+    speakername("Bug Maniac")
+    msgbox(format("Lots of people overlook insects, but they're actually way more diverse than most other groups of wildlife! Just think about how many Bug-type and other bug-like Pokémon there are!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_Fisherman
+{
+    lock
+    faceplayer
+    speakername("Fisherman")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_06_2) > 0)
+    {
+        msgbox(format("It's nice to see Pokémon splashing around in the Wetlands Enclosure again. Sure, I go fishing, but I always release them back into the water!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("I miss seeing Pokémon in this Enclosure... Maybe I could bring some fish in to help repopulate it."))
+        closemessage
+    }
+    applymovement(38, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("I'm learning so much about the environment here! Like, did you know that wetlands can prevent flooding? Oh, and I found out that all Pokémon that have been recorded reproducing lay Pokémon Eggs! There's so much to learn!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_CyclingTriathleteF
+{
+    lock
+    faceplayer
+    speakername("Cycling Girl")
+    msgbox(format("Woah... This Zoo is so huge, I'm starting to get lost! I think the exit is south, but how do I get to the Mountains exhibit?"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_FatMan
+{
+    lock
+    faceplayer
+    speakername("Fat Man")
+    msgbox(format("The Zoo expanded a bunch over the past couple years. The buildings to the left and right of the main path have special exhibits!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_HexManiac
+{
+    lock
+    faceplayer
+    speakername("Hex Maniac")
+    msgbox(format("Sometimes, Zoo employees open these gates and drive through on carts full of Pokémon feed. I wonder what it looks like back there."))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_South_NPC_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_02_1) > 0)
+    {
+        bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_02_1)
+        msgbox(format("That {STR_VAR_1} seems to be doing a great job taking care of the Pokémon Eggs! Despite being from different species, it still warms them and shows them affection. Pokémon behavior is fascinating!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("I hope those Pokémon Eggs are doing alright in there. Researchers from the Conservation Center have routinely checked up on them, but they'd probably do better with a Pokémon in there caring for them."))
+        closemessage
+    }
+    applymovement(44, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
     release
     end
 }

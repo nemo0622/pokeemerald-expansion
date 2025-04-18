@@ -1,4 +1,29 @@
 mapscripts KiposTown_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if(flag(FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT))
+        {
+            setvar(VAR_TEMP_1, 1)
+        }
+
+        setflag(FLAG_VISITED_KIPOS_TOWN)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(22, ENCOUNTER_LAND)
+        setobjectaswildencounter(23, ENCOUNTER_LAND)
+        setobjectaswildencounter(24, ENCOUNTER_LAND)
+    }
+
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_TEMP_1, 0: KiposTown_EventScript_CheckEventStatus
     ]
@@ -101,4 +126,213 @@ movement KiposTown_Movement_PlayerFollowsToConservationCenter_2
     walk_up * 2
     face_up
     step_end
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------
+
+script KiposTown_EventScript_Sailor
+{
+    lock
+    faceplayer
+    speakername("Sailor")
+    msgbox(format("Kipos Town has a naturally shallow harbor area. It's also surrounded by land on both sides, so not many ships come here. Piraeus is always a welcome sight!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_EventScript_Lass
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("My brother told me there's, like, 400 types of Pokémon in the Ilios Region! That's way too many to remember!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_EventScript_ConstructionWorker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("A bunch of businesses around town struggled after Team Chimera stole the Pokémon from the Conservation Center. Tourism dropped, and a bunch of jobs dried up. But I hear someone is donating Pokémon to bring the Conservation Center Zoo back!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_EventScript_ShoppingLady
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("Lots of fresh fruits and vegetables can be grown in the hills and valleys around here! There's nothing better than farmer's market food."))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_EventScript_Swinub
+{
+    lock
+    faceplayer
+    speakername("Swinub")
+    playmoncry(SPECIES_SWINUB, CRY_MODE_NORMAL)
+    msgbox("Wee-snaw!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script KiposTown_EventScript_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_TYRUNT_KIPOS_TOWN)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Thank you for showing me a Tyrunt, mon amie. There are fossils of the species in Kalos, but seeing it living and walking around has completely changed my perspective."))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_TYRUNT_KIPOS_TOWN)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("I came all the way from Kalos to see this... and wow, it was totally worth it!\p People have reported finding {COLOR GREEN}Tyrunt, Tyrantrum's pre-evolution{COLOR DARK_GRAY}, in the wild recently. Honestly, I've always wondered what a baby version of this ferocious beast would look like. If you find a Tyrunt, come back and {COLOR GREEN}show it to me{COLOR DARK_GRAY}!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_SHOW_TYRUNT_KIPOS_TOWN)
+    }
+    else
+    {
+        msgbox(format("Bonjour, my friend of Ilios! Have you brought me a {COLOR GREEN}Tyrunt{COLOR DARK_GRAY} to make my trip from Kalos complete?"))
+        closemessage
+
+        checkforspecies(SPECIES_TYRUNT, OPEN_PARTY_SCREEN, KiposTown_EventScript_Scientist_ReactToTyrunt)
+
+        // by getting here, must not have chosen tyrunt from party
+        speakername("Scientist")
+        msgbox(format("No Tyrunt, eh? Don't keep me waiting much longer, my friend. Vacations only last so long, and I'd love to {COLOR GREEN}see a Tyrunt{COLOR DARK_GRAY} before I return to Kalos!"))
+        closemessage
+    }
+    release
+    end
+}
+script KiposTown_EventScript_Scientist_ReactToTyrunt
+{
+    delay(20)
+    applymovement(14, Common_Movement_Heart)
+    waitmovement(0)
+    delay(10)
+    speakername("Scientist")
+    msgbox(format("Bravo! It's the perfect mix of cute and cool, just as I'd hoped.\p Thank you, mon amie. Take this as a token of appreciation."))
+    closemessage
+    delay(5)
+    giveitem(ITEM_PROTEIN)
+    closemessage
+
+    delay(20)
+    completequest(QUEST_SHOW_TYRUNT_KIPOS_TOWN)
+
+    release
+    end
+}
+
+script KiposTown_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("Most people who live here grow up raising Pokémon. I was given a Shellder when I was a kid, and now it's a super-strong Cloyster!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_EventScript_NinjaBoy
+{
+    lock
+    faceplayer
+    speakername("Boy")
+    msgbox(format("My dad caught this Psyduck in a Repeat Ball! He already had one, so he gave it to me. Now we're best friends!"))
+    closemessage
+    release
+    end
+}
+script KiposTown_EventScript_Psyduck
+{
+    lock
+    faceplayer
+    speakername("Psyduck")
+    playmoncry(SPECIES_PSYDUCK, CRY_MODE_NORMAL)
+    msgbox("Wak qwak.")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script KiposTown_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("People come a long way to visit the Conservation Center. They take in sick or abandoned Pokémon, and they run programs to support endangered species."))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_EventScript_Athlete
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    msgbox(format("I have to do more cardio training! The next time Team Chimera steps foot into Kipos Town, I'll be here to chase them off!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("I found someone's Stantler left abandoned with it's Poké ball. I took it to the Conservation Center, and they told me how to care for it. Now, it's my closest companion!"))
+    closemessage
+    release
+    end
+}
+script KiposTown_EventScript_Stantler
+{
+    lock
+    faceplayer
+    speakername("Stantler")
+    playmoncry(SPECIES_STANTLER, CRY_MODE_NORMAL)
+    msgbox("Hruff...")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script KiposTown_EventScript_TyrantrumSign
+{
+    lock
+    msgbox(format("Tyrantrum Complete Fossil Skeleton\n Estimated Age: 72 Million Years Ago\p Tyrantrum lived during the Late Cretaceous Period, ending 66 million years ago with a mass extinction event. This specimen was excavated in the Unova Region, but specimens of similar species have been found from Galar to Kalos."))
+    closemessage
+    release
+    end
 }

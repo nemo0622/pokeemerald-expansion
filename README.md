@@ -63,9 +63,9 @@ MAJOR TODOS:
     - Runs EventScript_ResetAllBerries (warn user first!)
     - Set flags like FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA
 - REPLACE "Triathlete" with "Competitor" or something close to "Olympic Player"
+- Add "Zookeeper" NPC and trainer class (Harper's outfit will become her Zookeeper outfit!)
 - Continue Mapping and NPC development
     - Next: Kipos Town, west of Port Pello, only accessible via Piraeus
-    - MARMARO ISLAND: ADD TYRANTRUM EXHIBIT TILES!!!
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas: 
@@ -75,7 +75,7 @@ MAJOR TODOS:
                 - Rewards: Ogerpon masks and eventually Ogerpon itself
             - Can be sailed to with Piraeus, unlocked after Gym 3 (shows player than some locations can be unlocked only via Piraeus! #gamedesign)
         - Lastlight Road - Route leading south of Kipos Town, going up and then down mountains, some snowy Pokémon
-        - Rainbow Tower - small settlement south of Kipos Town, with a large tower and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
+        - Rainbow Tower - small settlement south of Kipos Town, with a large tower (TrainerDX tiles) and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
             - Rumored to be the home of a great, godlike Pokémon with the power to restore life (Ho-oh!)
             - This will be where Ho-oh can be caught later in the game, probably after the Chimera story
             - MANY BERRY TREES HERE!
@@ -88,7 +88,7 @@ MAJOR TODOS:
         - The Pollen Road - route east of Péntepetal City, home to many Tropius, Roselia, and Lileep
         - Davosian Strait - ocean route heading north of the Pollen Road (name inspired by Ser Davos Seaworth)
             - Only place where Dhelmise can be fished up!
-        - Tricker's Coast - small area where ocean turns east towards land (name inspired by Trojan Horse)
+        - Trickster Coast - small area where ocean turns east towards land (name inspired by Trojan Horse)
             - Include rocky, sandy coastal area with broken ship tiles and ruins
         - Ruins of Ahiyawa (name based on Ahhiyawa, the term for Achean Greeks by the Hittites) - based on the ruins of Troy, covered in broken walls and stones with only a few standing buildings
             - Basically a jumping off point for the player to get to Champion's Peak

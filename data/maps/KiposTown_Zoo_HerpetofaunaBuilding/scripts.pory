@@ -348,3 +348,48 @@ script KiposTown_Zoo_EventScript_BirdPokemonInteraction_2
     release
     end
 }
+
+// -------------------------------------------------------------------------------------------------------
+//                                           NPC SCRIPTS
+// -------------------------------------------------------------------------------------------------------
+
+script KiposTown_Zoo_Building_NPC_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("Herpet- uhhh... Um, Herpayto- no, that's not right...\p Her-pet-o-fau-na... Hey, I did it! It's a weird name, but it's a grouping of {COLOR GREEN}reptiles and amphibians{COLOR DARK_GRAY}. Pretty cool!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_Building_NPC_SchoolKid
+{
+    lock
+    faceplayer
+    speakername("School Kid")
+    msgbox(format("We came on a school trip here a few weeks ago, right before Team Chimera came in and took all the Pokémon. Now, I keep tagging along with my parents to check up on the Zoo!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_Building_NPC_BirdGirl
+{
+    lock
+    faceplayer
+    speakername("Bird Lady")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1) > 0)
+    {
+        msgbox(format("If I stay still enough, the birds are sure to come to me. I've always wanted one to land on me!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("I came in here to see the new bird exhibit, but the Pokémon are all gone! How am I gonna bond with the birds now?"))
+        closemessage
+    }
+    release
+    end
+}

@@ -5330,6 +5330,56 @@
       "secondary_tileset": "gTileset_KiposZoo",
       "border_filepath": "data/layouts/KiposTown_Zoo_HerpetofaunaBuilding/border.bin",
       "blockdata_filepath": "data/layouts/KiposTown_Zoo_HerpetofaunaBuilding/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN_POKEMON_CENTER",
+      "name": "KiposTown_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/KiposTown_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN_HOUSE1",
+      "name": "KiposTown_house1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/KiposTown_house1/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown_house1/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN_HOUSE2",
+      "name": "KiposTown_House2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/KiposTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN_HOUSE3",
+      "name": "KiposTown_House3_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/KiposTown_House3/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIPOS_TOWN_MART",
+      "name": "KiposTown_Mart_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/KiposTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/KiposTown_Mart/map.bin"
     }
   ]
 }

@@ -4,6 +4,23 @@ mapscripts KiposTown_ZooNorth_MapScripts {
     }
 }
 
+script KiposTown_Zoo_DirectionSign_North_1
+{
+    lock
+    msgbox(format("{LEFT_ARROW} Beach Exhibit\n {UP_ARROW} Lazarus Taxa & Desert Exhibit\p Volcano & Tundra Exhibits {RIGHT_ARROW}\n 'Backyard Friends' Zoo Exhibits {DOWN_ARROW}"))
+    closemessage
+    release
+    end
+}
+script KiposTown_Zoo_DirectionSign_North_2
+{
+    lock
+    msgbox(format("{LEFT_ARROW} Desert & Mountain Exhibits\n {UP_ARROW} Ruins Exhibit\p Tundra Exhibit {RIGHT_ARROW}\n Lazarus Taxa & Volcano Exhibits {DOWN_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 // -------------------------------------------------------------------------------------------------------
 //                                      POKEMON INFO SIGN SCRIPTS
 // -------------------------------------------------------------------------------------------------------
@@ -643,6 +660,277 @@ script KiposTown_Zoo_EnvironmentSign_Shallows
     lock
     msgbox(format("Enclosure No. 14: {COLOR GREEN}Shallows{COLOR DARK_GRAY}\p Thanks to easy access to sunlight, coastal shallows are blooming with plant and Pokémon life alike. Coral reefs supporting countless species further enhance the local diversity, despite being threatened globally by water pollution and warming seas.\p {COLOR GREEN}Water-type{COLOR DARK_GRAY} Pokémon, true to their name, are most commonly found here. Furthermore, many Pokémon associated with {COLOR GREEN}semi-aquatic lifestyles{COLOR DARK_GRAY} can be seen splashing through the waves."))
     closemessage
+    release
+    end
+}
+
+// -------------------------------------------------------------------------------------------------------
+//                                           NPC SCRIPTS
+// -------------------------------------------------------------------------------------------------------
+
+script KiposTown_Zoo_North_NPC_Officer
+{
+    lock
+    faceplayer
+    speakername("Officer")
+    msgbox(format("After Team Chimera's crimes here, I'm on watch to keep them out. But I keep getting distracted by Pokémon!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_Tuber
+{
+    lock
+    faceplayer
+    speakername("Tuber")
+    msgbox(format("Aw... I brought my swimming tube and floaties, but we can't even swim with the Pokémon!"))
+    closemessage
+    applymovement(22, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("Woah, I've hiked through some harsh areas, but nothing as rough as this Enclosure. How do Pokémon live in there?"))
+    closemessage
+    applymovement(23, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_PaleoGirl
+{
+    lock
+    faceplayer
+    speakername("Battle Girl")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_FILL_LAZARUS_ZOO)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_09_1)
+        msgbox(format("I'm so obsessed with the {STR_VAR_1} you donated! It's a real living fossil!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_FILL_LAZARUS_ZOO)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("I can't believe Team Chimera even stole the Lazarus Taxa Pokémon. They're already so new and rare... how could they do something so cold?\p Oh, I recognize you. You're donating Pokémon to the Zoo, right? If you can, you should get a {COLOR GREEN}Lazarus Taxa Pokémon{COLOR DARK_GRAY} back into this enclosure! I'd love to see a real {COLOR GREEN}living fossil{COLOR DARK_GRAY}!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_FILL_LAZARUS_ZOO)
+    }
+    else
+    {
+        msgbox(format("Hiya! Oh, did you donate a Lazarus Taxa Pokémon?"))
+        closemessage
+        applymovement(24, Common_Movement_FaceLeft)
+        waitmovement(0)
+
+        delay(30)
+        if(var(VAR_ZOO_POKEMON_ENCLOSURE_09_1) > 0)
+        {
+            applymovement(24, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(10)
+            bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_09_1)
+            speakername("Battle Girl")
+            msgbox(format("Woah, no way! It's a real {STR_VAR_1}! I never thought I'd actually get to see one!"))
+            closemessage
+            applymovement(24, Common_Movement_FacePlayer)
+            waitmovement(0)
+            speakername("Battle Girl")
+            msgbox(format("Think of all the battles it could win, all the new strategies around it... I'm totally blown away!\p Here, take this as my thanks."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_EXP_CANDY_L)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_FILL_LAZARUS_ZOO)
+        }
+        else
+        {
+            applymovement(24, Common_Movement_FacePlayer)
+            waitmovement(0)
+            speakername("Battle Girl")
+            msgbox(format("No, I still don't see anything. Let me know when you donate a {COLOR GREEN}Lazarus Taxa{COLOR DARK_GRAY} Pokémon to this area. Remember, those are {COLOR GREEN}living fossil{COLOR DARK_GRAY} Pokémon!"))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_Athlete
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_11_1) > 0 && var(VAR_ZOO_POKEMON_ENCLOSURE_11_2) > 0)
+    {
+        msgbox(format("Pokémon are incredible! I get too warm to do anything after a quick workout, but these Pokémon are always scorching. I guess life really does find a way!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Hmm... I feel like there used to be more Pokémon in this exhibit. Now it's just boiling lava and some dead trees."))
+        closemessage
+    }
+    applymovement(25, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_Lass
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("I wonder how they keep this area cold enough for snow? It's super cool... ehehe, no pun intended!"))
+    closemessage
+    applymovement(27, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_Dad
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("My daughter keeps asking questions about the enclosures. I tell her what I can, but I don't really know the answers either!"))
+    closemessage
+    applymovement(26, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("I'm making sketches of all the Pokémon I see. Drawing different species is a great way to understand them better."))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_Camper
+{
+    lock
+    faceplayer
+    speakername("Camper")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_14_1) > 0)
+    {
+        msgbox(format("Seeing Pokémon splash around in the shallow water is so awesome! I just wanna join them!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("What? I thought there were supposed to be Pokémon here, what happened to them?"))
+        closemessage
+    }
+    applymovement(29, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_Psychic
+{
+    lock
+    faceplayer
+    speakername("Psychic")
+    msgbox(format("I'm here with my partner for a date. We're both pretty into spiritual stuff, so I figured this would be a good spot to chill."))
+    closemessage
+    applymovement(30, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_HexManiac
+{
+    lock
+    faceplayer
+    speakername("Hex Maniac")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_13_1) > 0)
+    {
+        bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_13_1)
+        msgbox(format("I can feel the energy given off by the {STR_VAR_1}... I should've brought my crystals!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("My boyfriend took me here for the spiritual energy of this area. I can definitely feel it, but where's the Pokémon?"))
+        closemessage
+    }
+    applymovement(31, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_PerformerM
+{
+    lock
+    faceplayer
+    speakername("Performer")
+    msgbox(format("I'm supposed to play the role of a Pokémon in an upcoming musical. Believe it or not, I'm learning a lot here!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_Boy
+{
+    lock
+    faceplayer
+    speakername("Little Boy")
+    msgbox(format("I wanna play in there! I'd climb to the highest rock and let out a huge ROOOAR!"))
+    closemessage
+    applymovement(33, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_North_NPC_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_10_1) > 0 && var(VAR_ZOO_POKEMON_ENCLOSURE_10_2) > 0 && var(VAR_ZOO_POKEMON_ENCLOSURE_10_3) > 0)
+    {
+        bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_10_2)
+        bufferspeciesname(STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_10_3)
+        msgbox(format("Amazing! That {STR_VAR_1} is playing with the {STR_VAR_2}! I should record it and tell the people at the Conservation Center, that might be a new discovery!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("I hope this Enclosure can be filled soon. I hear that Pokémon by themselves can get pretty lonely, even with the Zookeepers there to keep them company."))
+        closemessage
+    }
+    applymovement(34, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
     release
     end
 }

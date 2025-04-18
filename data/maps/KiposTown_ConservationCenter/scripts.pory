@@ -76,34 +76,282 @@ movement KiposTown_ConservationCenter_Movement_PlayerExitBuilding
 // --------------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------------------
 
-
-script KiposTown_ConservationCenter_Trigger_EnterZoo_Left
+script KiposTown_ConservationCenter_DeskAttendant
 {
     lock
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
-    waitmovement(0)
-    goto(KiposTown_ConservationCenter_EventScript_EnterZoo)
-    release
-    end
-}
-script KiposTown_ConservationCenter_Trigger_EnterZoo_Right
-{
-    lock
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
-    waitmovement(0)
-    goto(KiposTown_ConservationCenter_EventScript_EnterZoo)
-    release
-    end
-}
-script KiposTown_ConservationCenter_EventScript_EnterZoo
-{
+    faceplayer
     speakername("Desk Attendant")
-    msgbox(format("Welcome to the Sunset Pokémon Conservation Center! As a Pokémon donor, you are permitted to enter for free.\p We hope you enjoy your time in the Sunset Pokémon Zoo!"))
+    msgbox(format("Welcome to the Sunset Wildlife Conservation Center! The Zoo is just through these doors. As a key member of the Conservation Center, you can enter free of charge!"))
     closemessage
-    delay(10)
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
-    warp(MAP_KIPOS_TOWN_ZOO, 24, 41)
-    waitstate
+    release
+    end
+}
+
+script KiposTown_ConservationCenter_MrRussel
+{
+    lock
+    faceplayer
+    speakername("Mr. Russel")
+    if(!flag(FLAG_COMPLETED_ZOO_DONATIONS))
+    {
+        msgbox(format("{PLAYER}, chaire! How's the Zoo donation project coming along?"))
+        closemessage
+
+        delay(20)
+        if(var(VAR_TOTAL_NUM_ZOO_DONATIONS) >= 5 && !flag(FLAG_DONATED_5_ZOO_POKEMON))
+        {
+            applymovement(10, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(10)
+            speakername("Mr. Russel")
+            msgbox(format("It looks like you've donated at least {COLOR GREEN}5 Pokémon{COLOR DARK_GRAY} to the Sunset Wildlife Zoo!\p Hey, this is a great start to bringing the Zoo back to it's former glory! Here, I want you to have these."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_AMAZE_MULCH, 5)
+            closemessage
+            delay(5)
+            speakername("Mr. Russel")
+            msgbox(format("We had some nutrient-rich Berry soil left over, and who better to take it than you?\p Thank you so much for your help so far, {PLAYER}. When youn can, keep stopping by and donating more Pokémon!"))
+            closemessage
+            setflag(FLAG_DONATED_5_ZOO_POKEMON)
+        }
+        elif(var(VAR_TOTAL_NUM_ZOO_DONATIONS) >= 10 && !flag(FLAG_DONATED_10_ZOO_POKEMON))
+        {
+            applymovement(10, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(10)
+            speakername("Mr. Russel")
+            msgbox(format("It looks like you've donated at least {COLOR GREEN}10 Pokémon{COLOR DARK_GRAY} to the Sunset Wildlife Zoo!\p Wow, you're on a roll! Here, I have more gifts for you."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_NEST_BALL, 5)
+            closemessage
+            delay(5)
+            giveitem(ITEM_REPEAT_BALL, 5)
+            closemessage
+            delay(5)
+            speakername("Mr. Russel")
+            msgbox(format("Those Poké ball varieties work best on low-leveled or previously caught Pokémon. Perfect for helping fill out the Zoo!\p Thank you so much for your help so far, {PLAYER}. When youn can, keep stopping by and donating more Pokémon!"))
+            closemessage
+            setflag(FLAG_DONATED_10_ZOO_POKEMON)
+        }
+        elif(var(VAR_TOTAL_NUM_ZOO_DONATIONS) >= 20 && !flag(FLAG_DONATED_20_ZOO_POKEMON))
+        {
+            applymovement(10, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(10)
+            speakername("Mr. Russel")
+            msgbox(format("It looks like you've donated at least {COLOR GREEN}20 Pokémon{COLOR DARK_GRAY} to the Sunset Wildlife Zoo!\p The Zoo is really picking up again, thanks to you! Take this as a token of our appreciation."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_MASTER_BALL, 1)
+            closemessage
+            delay(5)
+            speakername("Mr. Russel")
+            msgbox(format("That's a very special Poké ball, designed to capture any Pokémon without fail. Only use it when it's absolutely necessary!\p Thank you so much for your help so far, {PLAYER}. When youn can, keep stopping by and donating more Pokémon!"))
+            closemessage
+            setflag(FLAG_DONATED_20_ZOO_POKEMON)
+        }
+        elif(var(VAR_TOTAL_NUM_ZOO_DONATIONS) >= 30 && !flag(FLAG_DONATED_30_ZOO_POKEMON))
+        {
+            applymovement(10, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(10)
+            speakername("Mr. Russel")
+            msgbox(format("It looks like you've donated at least {COLOR GREEN}30 Pokémon{COLOR DARK_GRAY} to the Sunset Wildlife Zoo!\p Amazing, the Zoo is filling right back up! You've been such a massive help, the Conservation Center team and I have decided to entrust you with a secret.\p Do you remember the Girafarig in the first Zoo exhibit, which was saved from Team Chimera by {COLOR GREEN}a Pokémon in the cave{COLOR DARK_GRAY} nearby? Well, we've found items that might be {COLOR GREEN}connected to it{COLOR DARK_GRAY}. Check these out."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_CORNERSTONE_MASK, 1)
+            closemessage
+            delay(5)
+            giveitem(ITEM_WELLSPRING_MASK, 1)
+            closemessage
+            delay(5)
+            giveitem(ITEM_HEARTHFLAME_MASK, 1)
+            closemessage
+            delay(5)
+            speakername("Mr. Russel")
+            msgbox(format("Those {COLOR GREEN}Masks{COLOR DARK_GRAY} were found by a Zookeeper by the mouth of the cave. For now, you can hold onto them until we learn more.\p Thank you so much for your help so far, {PLAYER}. When youn can, keep stopping by and donating more Pokémon!"))
+            closemessage
+            setflag(FLAG_DONATED_30_ZOO_POKEMON)
+        }
+        elif(var(VAR_TOTAL_NUM_ZOO_DONATIONS) >= 46 && !flag(FLAG_COMPLETED_ZOO_DONATIONS))
+        {
+            applymovement(10, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(10)
+            speakername("Mr. Russel")
+            msgbox(format("{PLAYER}! You... you've done it! All {COLOR GREEN}46 Pokémon{COLOR DARK_GRAY} spots at the Sunset Wildlife Zoo have been filled, thanks to you!\p Do you remember those Masks I gave you? Well, they're connected to a Pokémon called {COLOR GREEN}Ogerpon{COLOR DARK_GRAY}, which has been living in the Zoo cave right under our noses! As you've donated Pokémon, it has become less hostile and started {COLOR GREEN}trusting humans{COLOR DARK_GRAY} again. We think it knows that humans stole the last Pokémon, but your donations have shown it that there are good people too.\p Just a bit ago, it came to the door holding it's own Poké ball. Our best guess is, {COLOR GREEN}it wants to travel with you{COLOR DARK_GRAY}, the Trainer who restored the Zoo! Here, we want you to have it."))
+            closemessage
+            delay(5)
+
+            setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_OGERPON)
+            givemon(SPECIES_OGERPON, 30)
+            playfanfare(MUS_OBTAIN_ITEM)
+	        msgbox(format("{PLAYER} received the Ogerpon!"))
+	        waitfanfare
+	        closemessage
+            delay(5)
+
+            speakername("Mr. Russel")
+            msgbox(format("Make sure to show Ogerpon your love and respect, just as you have with all the Pokémon you've sent our way.\p We'll always be in debt to you, {PLAYER}. Remember to stop by, say hi, and visit your Pokémon here whenever you're in town!"))
+            closemessage
+
+            setflag(FLAG_COMPLETED_ZOO_DONATIONS)
+            delay(20)
+            completequest(QUEST_ZOOKEEPER)
+        }
+        else
+        {
+            buffernumberstring(STR_VAR_1, VAR_TOTAL_NUM_ZOO_DONATIONS)
+            if(var(VAR_TOTAL_NUM_ZOO_DONATIONS) == 0)
+            {
+                bufferstring(STR_VAR_1, "0")
+            }
+            speakername("Mr. Russel")
+            msgbox(format("You've donated {STR_VAR_1} Pokémon to the Sunset Wildlife Zoo so far.\p I know it's a lot to put onto one young Trainer, so I'd like to thank you for your help so far! Please continue to stop by and donate Pokémon when you can. The Conservation Center team and I have {COLOR GREEN}rewards{COLOR DARK_GRAY} to give!"))
+            closemessage
+        }
+    }
+    else
+    {
+        applymovement(10, Common_Movement_Heart)
+        waitmovement(0)
+        delay(10)
+        speakername("Mr. Russel")
+        msgbox(format("{PLAYER}! Welcome back! More visitors are coming to the Sunset Wildlife Zoo than ever, all thanks to your efforts. Make sure to visit your Pokémon in their Enclosures!"))
+        closemessage
+    }
+    release
+    end
+}
+
+script KiposTown_ConservationCenter_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("I make promotional art for the Conservation Center. Making people aware of conservation issues is half the battle, and eye-catching artwork is a great way to make people care!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_ConservationCenter_EventScript_Handywoman
+{
+    lock
+    faceplayer
+    speakername("Handywoman")
+    msgbox(format("Phew, working with wildlife is hard! I spend part of my day making enrichment toys for Pokémon, and the rest of the day shoveling Pokémon... leavings. It's worth it, though. I'm really making a difference here!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_ConservationCenter_EventScript_ComputerGuy
+{
+    lock
+    faceplayer
+    speakername("Computer Guy")
+    msgbox(format("Everybody knows you need a good Computer Guy! Running websites, doing social media outreach, and writing up press releases are all necessary for the Zoo to thrive. We need people to know about conservation, and online communication is one of the best ways to make that happen!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_ConservationCenter_EventScript_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_BRAVIARY_AT_ZOO)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Mandibuzz and Vullaby are such curious Pokémon. Thanks to your help, we know that Mandibuzz likely produced her Eggs with a Braviary!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_BRAVIARY_AT_ZOO)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Our research has only found female Mandibuzz, but this individual produced Eggs. Obviously, this has left us more than a little confused.\p The leading theory is that it bred with a male Braviary, but it's impossible to confirm without more information. Could you show me the {COLOR GREEN}completed Pokédex entry of Braviary{COLOR DARK_GRAY}? With more knowledge about the species, we could support our hypothesis!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_SHOW_BRAVIARY_AT_ZOO)
+    }
+    else
+    {
+        msgbox(format("{PLAYER}, welcome back! We're still investigating Mandibuzz and her Egg. All Mandibuzz we've recorded are female, but they still reproduce and provide excellent parental care.\p Have you caught a Braviary yet? That could help us a lot!"))
+        closemessage
+
+        getcaughtmon(SPECIES_BRAVIARY)
+        delay(30)
+
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Scientist")
+            msgbox(format("No Pokédex entry, huh? It's alright, work on this at your own pace!\p Wild Braviary are only males, so we think they may be the natural counterpart to the all-female Mandibuzz. Bring in a {COLOR GREEN}complete Pokédex entry of Braviary{COLOR DARK_GRAY} whenever you can!"))
+            closemessage
+        }
+        else
+        {
+            applymovement(3, Common_Movement_Heart)
+            waitmovement(0)
+            delay(10)
+            speakername("Scientist")
+            msgbox(format("Hey, check it out! You've got a full Braviary Pokédex entry!\p Hmm... yes, this information lines up perfectly. I bet Braviary and Mandibuzz can create viable offspring despite being different species!\p Thanks for helping, {PLAYER}. From the Conservation Center staff to you, take this!"))
+            closemessage
+            delay(5)
+            giveitem(ITEM_THICK_CLUB)
+            closemessage
+            delay(5)
+            speakername("Scientist")
+            msgbox(format("The Thick Club is an item sometimes held by wild Cubone and Marowak, drastically increasing their strength. Surprisingly, this item has the same effect when held by Mandibuzz! The mysteries of Pokémon will always fascinate me."))
+            closemessage
+
+            delay(20)
+            completequest(QUEST_SHOW_BRAVIARY_AT_ZOO)
+        }
+    }
+    release
+    end
+}
+
+script KiposTown_ConservationCenter_EventScript_Vullaby
+{
+    lock
+    faceplayer
+    speakername("Vullaby")
+    playmoncry(SPECIES_VULLABY, CRY_MODE_NORMAL)
+    msgbox("Cheep keep!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+script KiposTown_ConservationCenter_EventScript_Mandibuzz
+{
+    lock
+    faceplayer
+    speakername("Mandibuzz")
+    playmoncry(SPECIES_MANDIBUZZ, CRY_MODE_NORMAL)
+    msgbox("Kraaww!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+script KiposTown_ConservationCenter_EventScript_Egg
+{
+    lock
+    msgbox(format("This is the Egg the Mandibuzz laid. Sometimes, Mandibuzz sits on it to keep it warm!"))
+    closemessage
     release
     end
 }

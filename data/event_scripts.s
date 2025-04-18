@@ -1806,3 +1806,13 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.inc"
 
 	.include "data/maps/KiposTown_Zoo_HerpetofaunaBuilding/scripts.inc"
+
+	.include "data/maps/KiposTown_PokemonCenter/scripts.inc"
+
+	.include "data/maps/KiposTown_house1/scripts.inc"
+
+	.include "data/maps/KiposTown_House2/scripts.inc"
+
+	.include "data/maps/KiposTown_House3/scripts.inc"
+
+	.include "data/maps/KiposTown_Mart/scripts.inc"

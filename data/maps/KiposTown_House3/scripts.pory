@@ -1,0 +1,23 @@
+mapscripts KiposTown_House3_MapScripts {}
+
+script KiposTown_House3_EventScript_Boy
+{
+    lock
+    faceplayer
+    speakername("Boy")
+    msgbox(format("My mom is pretty upset about the Conservation Center, because tourism to Kipos Town dried up quick. No tourists means no selling things to them!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_House3_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Lady")
+    msgbox(format("I brought in some bonus money by renting the extra bedroom to tourists, but a lot of the business has left. My son's pretty excited about getting an extra room now, though!"))
+    closemessage
+    release
+    end
+}

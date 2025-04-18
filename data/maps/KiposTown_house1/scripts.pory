@@ -1,0 +1,20 @@
+mapscripts KiposTown_house1_MapScripts {}
+
+script KiposTown_House1_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("Most of the buildings around here are made of local limestone. It gives the town a beige-yellow tint."))
+    closemessage
+    if(!flag(FLAG_GIVEN_TERA_SHARD_KIPOS))
+    {
+        speakername("Woman")
+        msgbox(format("A few of these weird shards were found with the limestone, actually. Here, maybe it can be used for something."))
+        closemessage
+        giveitem(ITEM_ELECTRIC_TERA_SHARD)
+        setflag(FLAG_GIVEN_TERA_SHARD_KIPOS)
+    }
+    release
+    end
+}

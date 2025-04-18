@@ -316,3 +316,63 @@ script KiposTown_Zoo_EventScript_SpiritPokemonInteraction_2
     release
     end
 }
+
+// -------------------------------------------------------------------------------------------------------
+//                                           NPC SCRIPTS
+// -------------------------------------------------------------------------------------------------------
+
+script KiposTown_Zoo_Building_NPC_Sailor
+{
+    lock
+    faceplayer
+    speakername("Sailor")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1) > 0)
+    {
+        msgbox(format("Seeing Pokémon and learning more about them here makes me appreciate them more outside. I see a ton of Pokémon when I'm sailing, now I know more about them!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("I came here to learn more about Pokémon I see when I'm sailing, but it looks like all the Pokémon are gone..."))
+        closemessage
+    }
+    applymovement(8, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_Building_NPC_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("The red leaves of this area reminds me of my childhood in Pythios Town. Maybe I should pay it a visit."))
+    closemessage
+    applymovement(9, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script KiposTown_Zoo_Building_NPC_BlackBelt
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    if(var(VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1) > 0)
+    {
+        bufferspeciesname(STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1)
+        msgbox(format("{STR_VAR_1} is pretty strong, so it's making a great training buddy! Hyah!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("A Pokémon here to train with would be nice. For now, this boxing dummy will have to be enough!"))
+        closemessage
+    }
+    applymovement(10, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}

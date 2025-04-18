@@ -224,7 +224,7 @@ script SofosCity_EventScript_StrategicCamper
     if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
     {
         speakername("Camper")
-        msgbox(format("I love trying to understand Pokémon battle strategies! Hazards, chip damage, abilities, and of course, battle terrain - they can all be the key to victory!\p There's one Pokémon in particular who excels at managing battle terrain. {COLOR GREEN}Alolan Raichu{COLOR DARK_GRAY}'s ability, Surge Surfer, summons electric terrain while boosting it's speed.\p Show me a {COLOR GREEN}complete Pokédex entry of Alolan Raichu{COLOR DARK_GRAY} so I can learn more about it. I'll give you a reward!"))
+        msgbox(format("I love trying to understand Pokémon battle strategies! Hazards, chip damage, abilities, and of course, battle terrain - they can all be the key to victory!\p There's one Pokémon in particular who excels at managing battle terrain. {COLOR GREEN}Alolan Raichu{COLOR DARK_GRAY}'s ability, Surge Surfer, summons electric terrain while boosting it's speed.\p Show me an {COLOR GREEN}Alolan Raichu{COLOR DARK_GRAY} so I can learn more about it. I'll give you a reward!"))
         closemessage
 
         delay(20)
@@ -236,33 +236,36 @@ script SofosCity_EventScript_StrategicCamper
         msgbox(format("What's up? Did you find an {COLOR GREEN}Alolan Raichu{COLOR DARK_GRAY} and study the ability Surge Surfer for me?"))
         closemessage
 
-        getcaughtmon(SPECIES_RAICHU_ALOLAN)
-        delay(30)
+        checkforspecies(SPECIES_RAICHU_ALOLAN, OPEN_PARTY_SCREEN, SofosCity_EventScript_StrategicCamper_ReactToRaichu) // goto that script if have alolan raichu in party
 
-        if(var(VAR_RESULT) == 0)
-        {
-            speakername("Camper")
-            msgbox(format("Not yet, huh? It's okay, finding a Raichu in the Alolan form isn't common in the Ilios Region. I've only ever seen one once!\p Come back when you have a {COLOR GREEN}complete Pokédex entry for Alolan Raichu{COLOR DARK_GRAY}. I'll give you something to improve your strategy even more!"))
-            closemessage
-        }
-        else
-        {
-            applymovement(26, Common_Movement_Heart)
-            waitmovement(0)
-            delay(10)
-            speakername("Camper")
-            msgbox(format("Ahaha, I love it! This data is even more impressive than I expected!\p Alolan Raichu really is the master of controlling battle terrain, huh? Oh, right, here's your reward!"))
-            closemessage
-            giveitem(ITEM_TERRAIN_EXTENDER)
-            delay(5)
-            speakername("Camper")
-            msgbox(format("The Terrain Extender makes terrain stay longer when set in battle. Using this with Alolan Raichu can make it stay faster for longer!"))
-            closemessage
-
-            delay(20)
-            completequest(QUEST_SHOW_CAMPER_ALOLAN_RAICHU)
-        }
+        // by getting here, you don't have an alolan raichu
+        speakername("Camper")
+        msgbox(format("Not yet, huh? It's okay, finding a Raichu in the Alolan form isn't common in the Ilios Region. I've only ever seen one once!\p Come back when you have a {COLOR GREEN}complete Pokédex entry for Alolan Raichu{COLOR DARK_GRAY}. I'll give you something to improve your strategy even more!"))
+        closemessage
     }
+    release
+    end
+}
+script SofosCity_EventScript_StrategicCamper_ReactToRaichu
+{
+    lock
+    delay(20)
+    applymovement(26, Common_Movement_Heart)
+    waitmovement(0)
+    delay(10)
+    speakername("Camper")
+    msgbox(format("Ahaha, I love it! This data is even more impressive than I expected!\p Alolan Raichu really is the master of controlling battle terrain, huh? Oh, right, here's your reward!"))
+    closemessage
+    giveitem(ITEM_TERRAIN_EXTENDER)
+    delay(5)
+    speakername("Camper")
+    msgbox(format("The Terrain Extender makes terrain stay longer when set in battle. Using this with Alolan Raichu can make it stay faster for longer!"))
+    closemessage
+
+    delay(20)
+    completequest(QUEST_SHOW_CAMPER_ALOLAN_RAICHU)
+
+    closemessage
     release
     end
 }

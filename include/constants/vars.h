@@ -268,7 +268,7 @@
 #define VAR_DEXNAV_STEP_COUNTER                          0x40F8 // steps for finding hidden pokemon
 #define VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1               0x40F9 // Pokémon #1 in zoo Herp. Enclosure #4 (Birds)
 #define VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2               0x40FA // Pokémon #2 in zoo Herp. Enclosure #4 (Birds)
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
+#define VAR_TOTAL_NUM_ZOO_DONATIONS                      0x40FB // Total number of Pokémon donated to the zoo
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
 #define VAR_NIKO_STATE                                   0x40FE // Tracks Player's relationship with Niko

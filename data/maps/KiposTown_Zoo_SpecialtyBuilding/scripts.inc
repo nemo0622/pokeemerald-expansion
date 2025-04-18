@@ -493,6 +493,90 @@ KiposTown_Zoo_EventScript_SpiritPokemonInteraction_2::
 	end
 
 
+KiposTown_Zoo_Building_NPC_Sailor::
+# 326 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	lock
+# 327 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	faceplayer
+# 328 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	speakername KiposTown_Zoo_Building_NPC_Sailor_Text_0
+# 329 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	compare VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1, 0
+	goto_if_gt KiposTown_Zoo_Building_NPC_Sailor_2
+# 336 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	msgbox KiposTown_Zoo_Building_NPC_Sailor_Text_2
+# 337 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	closemessage
+KiposTown_Zoo_Building_NPC_Sailor_1:
+# 339 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	applymovement 8, Common_Movement_FaceOriginalDirection
+# 340 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	waitmovement 0
+# 341 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	release
+	end
+
+KiposTown_Zoo_Building_NPC_Sailor_2:
+# 331 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	msgbox KiposTown_Zoo_Building_NPC_Sailor_Text_1
+# 332 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	closemessage
+	goto KiposTown_Zoo_Building_NPC_Sailor_1
+
+
+KiposTown_Zoo_Building_NPC_Beauty::
+# 347 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	lock
+# 348 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	faceplayer
+# 349 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	speakername KiposTown_Zoo_Building_NPC_Beauty_Text_0
+# 350 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	msgbox KiposTown_Zoo_Building_NPC_Beauty_Text_1
+# 351 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	closemessage
+# 352 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	applymovement 9, Common_Movement_FaceOriginalDirection
+# 353 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	waitmovement 0
+# 354 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	release
+	end
+
+
+KiposTown_Zoo_Building_NPC_BlackBelt::
+# 360 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	lock
+# 361 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	faceplayer
+# 362 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	speakername KiposTown_Zoo_Building_NPC_BlackBelt_Text_0
+# 363 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	compare VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1, 0
+	goto_if_gt KiposTown_Zoo_Building_NPC_BlackBelt_2
+# 371 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	msgbox KiposTown_Zoo_Building_NPC_BlackBelt_Text_2
+# 372 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	closemessage
+KiposTown_Zoo_Building_NPC_BlackBelt_1:
+# 374 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	applymovement 10, Common_Movement_FaceOriginalDirection
+# 375 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	waitmovement 0
+# 376 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	release
+	end
+
+KiposTown_Zoo_Building_NPC_BlackBelt_2:
+# 365 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1
+# 366 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	msgbox KiposTown_Zoo_Building_NPC_BlackBelt_Text_1
+# 367 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	closemessage
+	goto KiposTown_Zoo_Building_NPC_BlackBelt_1
+
+
 KiposTown_Zoo_PokemonSign_Indoor_WarmWater_Text_0:
 # 18 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
 	.string "---$"
@@ -593,3 +677,47 @@ KiposTown_Zoo_EventScript_FightingPokemonInteraction_1_Text_0:
 # 278 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
 	.string "The {STR_VAR_1} huffed out a\n"
 	.string "greeting!$"
+
+KiposTown_Zoo_Building_NPC_Sailor_Text_0:
+# 328 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	.string "Sailor$"
+
+KiposTown_Zoo_Building_NPC_Sailor_Text_1:
+# 331 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	.string "Seeing Pokémon and learning more about\n"
+	.string "them here makes me appreciate them\l"
+	.string "more outside. I see a ton of Pokémon\l"
+	.string "when I'm sailing, now I know more about\l"
+	.string "them!$"
+
+KiposTown_Zoo_Building_NPC_Sailor_Text_2:
+# 336 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	.string "I came here to learn more about Pokémon\n"
+	.string "I see when I'm sailing, but it looks like\l"
+	.string "all the Pokémon are gone...$"
+
+KiposTown_Zoo_Building_NPC_Beauty_Text_0:
+# 349 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	.string "Beauty$"
+
+KiposTown_Zoo_Building_NPC_Beauty_Text_1:
+# 350 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	.string "The red leaves of this area reminds me\n"
+	.string "of my childhood in Pythios Town. Maybe I\l"
+	.string "should pay it a visit.$"
+
+KiposTown_Zoo_Building_NPC_BlackBelt_Text_0:
+# 362 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	.string "Black Belt$"
+
+KiposTown_Zoo_Building_NPC_BlackBelt_Text_1:
+# 366 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	.string "{STR_VAR_1} is pretty strong, so\n"
+	.string "it's making a great training buddy!\l"
+	.string "Hyah!$"
+
+KiposTown_Zoo_Building_NPC_BlackBelt_Text_2:
+# 371 "data/maps/KiposTown_Zoo_SpecialtyBuilding/scripts.pory"
+	.string "A Pokémon here to train with would be\n"
+	.string "nice. For now, this boxing dummy will\l"
+	.string "have to be enough!$"

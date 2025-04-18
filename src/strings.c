@@ -1779,6 +1779,10 @@ const u8 gText_SideQuestName_34[] = _("Arcade Escapade");
 const u8 gText_SideQuestName_35[] = _("Bird-Brained");
 const u8 gText_SideQuestName_36[] = _("Nemo's Favorites");
 const u8 gText_SideQuestName_37[] = _("Zookeeper");
+const u8 gText_SideQuestName_38[] = _("Domestic Pokémon");
+const u8 gText_SideQuestName_39[] = _("A Paleo Nerd's Dream");
+const u8 gText_SideQuestName_40[] = _("Cross-Species Crossing");
+const u8 gText_SideQuestName_41[] = _("Kalos Curiosity");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Look for the deliveryman\nwith a flipped cart.");
@@ -1811,13 +1815,17 @@ const u8 gText_SideQuestDesc_27[] = _("Show a Scientist a complete\nPokédex ent
 const u8 gText_SideQuestDesc_28[] = _("Bring an Athlete a Quick\nBall to speed up their wild\nPokémon captures.");
 const u8 gText_SideQuestDesc_29[] = _("Defeat Team Chimera in their\nSofos City hideout and bring\nNiko the Tera Orb.");
 const u8 gText_SideQuestDesc_30[] = _("Show a short boy a\ncomplete Pokédex entry of Girafarig\nto inspire his growth.");
-const u8 gText_SideQuestDesc_31[] = _("Show a strategy-loving\nCamper a complete Pokédex\nentry of Alolan Raichu.");
+const u8 gText_SideQuestDesc_31[] = _("Show a strategy-loving\nCamper an Alolan Raichu\nin your party.");
 const u8 gText_SideQuestDesc_32[] = _("Participate in the Sofos\nCity Battle Pavilion and\nreturn to the excited man.");
 const u8 gText_SideQuestDesc_33[] = _("Bring a Sleepy Lady an\nAwakening to help her stay\nup.");
 const u8 gText_SideQuestDesc_34[] = _("Bring 5 Pinball Points to\nthe Computer Guy to show\nyour Pinball skills.");
 const u8 gText_SideQuestDesc_35[] = _("Show the Bird Lady the\ncompleted Pokédex entries\nof Xatu and Noctowl.");
 const u8 gText_SideQuestDesc_36[] = _("Find and capture the Sleepy\nBear, Spherical, First Bird,\nand Wild Sage Pokémon.");
 const u8 gText_SideQuestDesc_37[] = _("Fill all exhibits with\nPokémon based on their\nnatural habitats.");
+const u8 gText_SideQuestDesc_38[] = _("Donate 3 Pokémon to the\nSuburbs Enclosure of the\nSunset Wildlife Zoo.");
+const u8 gText_SideQuestDesc_39[] = _("Donate a Lazarus Taxa\nPokémon to the corresponding\nZoo enclosure.");
+const u8 gText_SideQuestDesc_40[] = _("Show a complete Braviary\nPokédex entry to the\nConservation Center scientist.");
+const u8 gText_SideQuestDesc_41[] = _("Show a captured Tyrunt\nto the Kalosian Scientist\nat the Tyrantrum skeleton.");
 
 //completed quest description
 // NOTE: Probably never seen now that I only make Active quests seen lol!
@@ -1890,6 +1898,10 @@ const u8 gText_SideQuestMap34[] = _("Sofos City (House)"); // QUEST_5_PINBALL_PO
 const u8 gText_SideQuestMap35[] = _("Sofos City (House)"); // QUEST_XATU_AND_NOCTOWL
 const u8 gText_SideQuestMap36[] = _("Sofos City (House)"); // QUEST_NEMOS_QUEST
 const u8 gText_SideQuestMap37[] = _("Sunset Wildlife Conservation Center"); // QUEST_ZOOKEEPER
+const u8 gText_SideQuestMap38[] = _("Sunset Wildlife Zoo, Kipos Town"); // QUEST_FILL_SUBURBS_ZOO
+const u8 gText_SideQuestMap39[] = _("Sunset Wildlife Zoo, Kipos Town"); // QUEST_FILL_LAZARUS_ZOO
+const u8 gText_SideQuestMap40[] = _("Conservation Center, Kipos Town"); // QUEST_SHOW_BRAVIARY_AT_ZOO
+const u8 gText_SideQuestMap41[] = _("Kipos Town"); // QUEST_SHOW_TYRUNT_KIPOS_TOWN
 
 //subquests
 // erm unused now oopsies

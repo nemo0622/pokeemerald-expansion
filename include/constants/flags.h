@@ -1073,10 +1073,10 @@
 #define FLAG_ITEM_WANDERERS_WOODS_S_REVIVE                          0x3FD
 #define FLAG_ITEM_SOFOS_CITY_HYPER_POTION                           0x3FE
 #define FLAG_ITEM_SOFOS_CITY_MAX_REVIVE                             0x3FF
-#define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
-#define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
-#define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
-#define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
+#define FLAG_ITEM_KIPOS_ZOO_PP_MAX                                  0x400
+#define FLAG_ITEM_KIPOS_ZOO_FIRE_STONE                              0x401
+#define FLAG_ITEM_KIPOS_ZOO_NUGGET                                  0x402
+#define FLAG_ITEM_TM_WATER_PULSE                                    0x403
 #define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
 #define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405
 #define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
@@ -1298,12 +1298,12 @@
 #define FLAG_HIDE_CYCLING_WOMAN_JUSMAIL                             0x4DD // hides woman until after quest in jusmail
 #define FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT                   0x4DE // did event in Sofos City where Piraeus sails to Kipos Town with Player. ALSO hides the zoo manager and stuff
 #define FLAG_HIDE_RUSSEL_DURING_ZOO_CUTSCENE                        0x4DF // hides second russel sprite in conservation center
-#define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
-#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
-#define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
-#define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
-#define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
-#define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
+#define FLAG_COMPLETED_ZOO_DONATIONS                                0x4E0 // If donated all 46 possible slots in zoo
+#define FLAG_DONATED_5_ZOO_POKEMON                                  0x4E1 // Event flag for donating 5 pokemon to the zoo
+#define FLAG_DONATED_10_ZOO_POKEMON                                 0x4E2 // Event flag for donating 10 pokemon to the zoo
+#define FLAG_DONATED_20_ZOO_POKEMON                                 0x4E3 // Event flag for donating 20 pokemon to the zoo
+#define FLAG_DONATED_30_ZOO_POKEMON                                 0x4E4 // Event flag for donating 30 pokemon to the zoo
+#define FLAG_GIVEN_TERA_SHARD_KIPOS                                 0x4E5 // Given Electric Tera Shard by woman in kipos town
 #define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
 #define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
 #define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
@@ -1378,7 +1378,7 @@
 #define FLAG_VISITED_AREIOS_HIDEOUT                 (SYSTEM_FLAGS + 0x18) // replaced mauville
 #define FLAG_VISITED_CHAMPIONS_PEAK                 (SYSTEM_FLAGS + 0x19) // replaced rustboro city
 #define FLAG_VISITED_KALAMI_CITY                    (SYSTEM_FLAGS + 0x1A) // replaced fortree city
-#define FLAG_VISITED_LILYCOVE_CITY                  (SYSTEM_FLAGS + 0x1B)
+#define FLAG_VISITED_KIPOS_TOWN                     (SYSTEM_FLAGS + 0x1B) // replaced lilycove city
 #define FLAG_VISITED_MOSSDEEP_CITY                  (SYSTEM_FLAGS + 0x1C)
 #define FLAG_VISITED_SOOTOPOLIS_CITY                (SYSTEM_FLAGS + 0x1D)
 #define FLAG_VISITED_EVER_GRANDE_CITY               (SYSTEM_FLAGS + 0x1E)

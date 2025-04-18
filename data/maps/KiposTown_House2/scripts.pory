@@ -1,0 +1,30 @@
+mapscripts KiposTown_House2_MapScripts {}
+
+script KiposTown_House2_EventScript_Man
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("My husband volunteers at the Sunset Wildlife Conservation Center. He was attached to a lot of the Pokémon, so Team Chimera's attack hit us extra hard..."))
+    closemessage
+    delay(30)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    speakername("Man")
+    msgbox(format("But hey, it's not all doom-and-gloom! I hear someone's been working with the Conservation Center to fill the Zoo again!"))
+    closemessage
+    release
+    end
+}
+
+script KiposTown_House2_EventScript_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+    msgbox(format("After Team Chimera stole almost all the Pokémon from the Conservation Center, there was chaos for a few days. It took Mr. Russel a long time to get any officers to investigate, and by the time they tried, Team Chimera was long gone."))
+    closemessage
+    release
+    end
+}

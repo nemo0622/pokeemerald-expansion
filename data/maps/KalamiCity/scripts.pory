@@ -64,20 +64,23 @@ script Common_EventScript_Piraeus
     if(flag(FLAG_VISITED_SOFOS_CITY)) {
         dynmultipush("Sofos City", 3)
     }
+    if(flag(FLAG_VISITED_KIPOS_TOWN)) {
+        dynmultipush("Kipos Town", 4)
+    }
     if(flag(FLAG_VISITED_MARMARO_ISLAND)) {
-        dynmultipush("Marmaro Island", 4)
+        dynmultipush("Marmaro Island", 5)
     }
     if(flag(FLAG_VISITED_MYRRINI_ISLAND)) {
-        dynmultipush("Myrrini Island", 5)
+        dynmultipush("Myrrini Island", 6)
     }
     if(flag(FLAG_VISITED_FRESCO_ISLAND)) {
-        dynmultipush("Fresco Isles", 6)
+        dynmultipush("Fresco Isles", 7)
     }
     if(flag(FLAG_VISITED_PALATI_CITY)) {
-        dynmultipush("Palati City", 7)
+        dynmultipush("Palati City", 8)
     }
     if(flag(FLAG_VISITED_PORT_PELLO)) {
-        dynmultipush("Port Pello", 8)
+        dynmultipush("Port Pello", 9)
     }
     dynmultistack(100, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
 
@@ -128,45 +131,54 @@ script Common_EventScript_Piraeus
             warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
             waitstate
         }
-        elif(var(VAR_RESULT) == 4) // Marmaro Island
+        elif(var(VAR_RESULT) == 4) // Kipos Town
         {
             setvar(VAR_CHOSEN_SAIL_LOCATION, 4)
+            speakername("Piraeus")
+            msgbox(format("That's one of my favorite little spots in Ilios! Maybe you could swing by the Sunset Wildlife Conservation Center while you're there. Come on, let's take off!"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+        elif(var(VAR_RESULT) == 5) // Marmaro Island
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 5)
             speakername("Piraeus")
             msgbox(format("Marmaro Island! A beautiful little spot. Their marble helped build structures across the ancient Ilios Region. Let's check it out!"))
             closemessage
             warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
             waitstate
         }
-        elif(var(VAR_RESULT) == 5) // Myrrini Island
+        elif(var(VAR_RESULT) == 6) // Myrrini Island
         {
-            setvar(VAR_CHOSEN_SAIL_LOCATION, 5)
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 6)
             speakername("Piraeus")
             msgbox(format("Hey, I love Myrrini Island! Maybe I'll do some walking around while I'm there! You know what they say, Myrrini parties are the best parties!"))
             closemessage
             warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
             waitstate
         }
-        elif(var(VAR_RESULT) == 6) // Fresco Isles
+        elif(var(VAR_RESULT) == 7) // Fresco Isles
         {
-            setvar(VAR_CHOSEN_SAIL_LOCATION, 6)
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 7)
             speakername("Piraeus")
             msgbox(format("The Fresco Isles, eh? For a group of islands, it gets awful dry there. Maybe you'll find some unique Pokémon there!"))
             closemessage
             warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
             waitstate
         }
-        elif(var(VAR_RESULT) == 7) // Palati City
+        elif(var(VAR_RESULT) == 8) // Palati City
         {
-            setvar(VAR_CHOSEN_SAIL_LOCATION, 7)
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 8)
             speakername("Piraeus")
             msgbox(format("Palati City! That's on Kaptara Island, right? That place is covered with gorgeous ruins... maybe I'll do a little exploring when we get there!"))
             closemessage
             warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
             waitstate
         }
-        elif(var(VAR_RESULT) == 8) // Port Pello
+        elif(var(VAR_RESULT) == 9) // Port Pello
         {
-            setvar(VAR_CHOSEN_SAIL_LOCATION, 8)
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 9)
             speakername("Piraeus")
             msgbox(format("Port Pello! Their cherry trees are world-famous! They say the gods blessed the lands. How about we see it for ourselves?"))
             closemessage
