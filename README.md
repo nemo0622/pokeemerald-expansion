@@ -75,7 +75,8 @@ MAJOR TODOS:
                 - Rewards: Ogerpon masks and eventually Ogerpon itself
             - Can be sailed to with Piraeus, unlocked after Gym 3 (shows player than some locations can be unlocked only via Piraeus! #gamedesign)
         - Lastlight Road - Route leading south of Kipos Town, going up and then down mountains, some snowy Pokémon
-        - Rainbow Tower - small settlement south of Kipos Town, with a large tower (TrainerDX tiles) and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
+        - Tower of Dioxippus - small settlement south of Kipos Town, with a large tower (TrainerDX tiles) and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
+            - Named after Dioxippus, the Olympic champion who won combat because nobody was willing to challenge them
             - Rumored to be the home of a great, godlike Pokémon with the power to restore life (Ho-oh!)
             - This will be where Ho-oh can be caught later in the game, probably after the Chimera story
             - MANY BERRY TREES HERE!

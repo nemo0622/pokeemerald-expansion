@@ -726,6 +726,18 @@ KiposTown_EventScript_TyrantrumSign::
 	end
 
 
+KiposTown_EventScript_DirectionSign::
+# 342 "data/maps/KiposTown/scripts.pory"
+	lock
+# 343 "data/maps/KiposTown/scripts.pory"
+	msgbox KiposTown_EventScript_DirectionSign_Text_0
+# 344 "data/maps/KiposTown/scripts.pory"
+	closemessage
+# 345 "data/maps/KiposTown/scripts.pory"
+	release
+	end
+
+
 KiposTown_EventScript_LeadPlayerToConservationCenter_Text_0:
 # 54 "data/maps/KiposTown/scripts.pory"
 	.string "Mr. Russel$"
@@ -952,3 +964,11 @@ KiposTown_EventScript_TyrantrumSign_Text_0:
 	.string "Unova Region, but specimens of similar\l"
 	.string "species have been found from Galar to\l"
 	.string "Kalos.$"
+
+KiposTown_EventScript_DirectionSign_Text_0:
+# 343 "data/maps/KiposTown/scripts.pory"
+	.string "Kipos Town\n"
+	.string "For Nature, For People, Forever\p"
+	.string "{UP_ARROW} Pythios Town\n"
+	.string "Lastlight Road {DOWN_ARROW}\p"
+	.string "Sunset Wildlife Conservation Center {RIGHT_ARROW}$"

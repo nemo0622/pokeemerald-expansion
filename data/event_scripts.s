@@ -1816,3 +1816,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/KiposTown_House3/scripts.inc"
 
 	.include "data/maps/KiposTown_Mart/scripts.inc"
+
+	.include "data/maps/LastlightRoad/scripts.inc"

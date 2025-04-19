@@ -241,16 +241,16 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_15",
-      "name": "ROUTE 15",
+      "map_section": "MAPSEC_LASTLIGHT_ROAD",
+      "name": "Lastlight Road",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_16",
-      "name": "ROUTE 16",
+      "map_section": "MAPSEC_TOWER_OF_DIOXIPPUS",
+      "name": "Tower of Dioxippus",
       "x": 0,
       "y": 0,
       "width": 1,

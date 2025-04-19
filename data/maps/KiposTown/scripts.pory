@@ -336,3 +336,12 @@ script KiposTown_EventScript_TyrantrumSign
     release
     end
 }
+
+script KiposTown_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Kipos Town\n For Nature, For People, Forever\p {UP_ARROW} Pythios Town\n Lastlight Road {DOWN_ARROW}\p Sunset Wildlife Conservation Center {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}

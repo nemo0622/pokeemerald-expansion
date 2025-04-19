@@ -116,8 +116,8 @@
 #define MAPSEC_CORRIN_CROSSING              0x70 // South of Asfal Hills
 #define MAPSEC_THE_STYGIAN_CAVES            0x71 // North of Acrisia Mountains, leading up to Champion's Peak (E4)
 #define MAPSEC_RIVERWALK_TRAIL              0x72 // Route east of Acrisia City to Kalami City
-#define MAPSEC_ROUTE_15                     0x73
-#define MAPSEC_ROUTE_16                     0x74
+#define MAPSEC_LASTLIGHT_ROAD               0x73 // Road south of Kipos Town
+#define MAPSEC_TOWER_OF_DIOXIPPUS           0x74 // South of Kipos Town & Lastlight Road, has tower for Ho-oh
 #define MAPSEC_ROUTE_17                     0x75
 #define MAPSEC_ROUTE_18                     0x76
 #define MAPSEC_ROUTE_19                     0x77

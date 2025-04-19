@@ -1,0 +1,88 @@
+mapscripts LastlightRoad_MapScripts {}
+
+script LastlightRoad_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Battle Girl")
+    msgbox(format("In ancient times, people from all over the Ilios Region used to travel down this road. The Tower at the end of the path was a sacred site, where rituals and competitions took place under the eyes of the gods.\p Not many people walk this way now, though. I would've loved to compete in an ancient battle there!"))
+    closemessage
+    release
+    end
+}
+
+script LastlightRoad_EventScript_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("I sure am sorry about my Scyther acting up. It's too high leveled for me to control it!"))
+    closemessage
+    applymovement(2, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script LastlightRoad_EventScript_Scyther
+{
+    lock
+    faceplayer
+    speakername("Scyther")
+    playmoncry(SPECIES_SCYTHER, CRY_MODE_NORMAL)
+    msgbox("Rakakaka!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script LastlightRoad_Trigger_ScytherGoesWild
+{
+    lockall
+    ballfollowingmon
+    applymovement(3, Common_Movement_JumpInPlaceUp)
+    waitmovement(0)
+    delay(10)
+    applymovement(2, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    speakername("Bug Catcher")
+    msgbox(format("Come on, Scyther! Get back in the Poké ball, please!"))
+    closemessage
+    delay(10)
+    applymovement(3, LastlightRoad_Movement_ScytherRunsAround)
+    waitmovement(0)
+    speakername("Bug Catcher")
+    msgbox(format("...Unbelieveable! You're taking up the whole path!"))
+    closemessage
+    applymovement(2, Common_Movement_FacePlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Bug Catcher")
+    msgbox(format("I'm so sorry, but my Scyther won't listen to me. Some Pokémon are just so strong-willed..."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    releaseall
+    end
+}
+movement LastlightRoad_Movement_ScytherRunsAround
+{
+    walk_right
+    walk_down
+    jump_in_place_down * 2
+    walk_left
+    jump_in_place_up * 2
+    walk_left
+    walk_up
+    walk_right * 2
+    walk_down
+    walk_left * 2
+    walk_up
+    walk_right
+    jump_in_place_up * 2
+    face_up
+    step_end
+}
