@@ -235,6 +235,10 @@ gScriptCmdTable::
 	.4byte ScrCmd_questmenu                   	    @ 0xe8
     .4byte ScrCmd_subquestmenu                 	    @ 0xe9
     .4byte ScrCmd_returnqueststate             	    @ 0xea
+	.4byte ScrCmd_toggleoutfit                      @ 0xeb
+ 	.4byte ScrCmd_getoutfitstatus                   @ 0xec
+ 	.4byte ScrCmd_bufferoutfitstr                   @ 0xed
+	.4byte ScrCmd_pokemartoutfit                    @ 0xee
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

@@ -35,6 +35,7 @@
 #include "tv.h"
 #include "grid_menu.h"
 #include "event_data.h"
+#include "outfit_menu.h"
 #include "constants/decorations.h"
 #include "constants/items.h"
 #include "constants/metatile_behaviors.h"
@@ -1656,7 +1657,7 @@ void NewShop_CreateDecorationShop2Menu(const u16 *itemsForSale)
 #ifdef MUDSKIP_OUTFIT_SYSTEM
 void NewShop_CreateOutfitShopMenu(const u16 *itemsForSale)
 {
-    CreateNewShopMenu(MART_TYPE_OUTFIT);
+    CreateShopMenu(MART_TYPE_OUTFIT);
     SetShopItemsForSale(itemsForSale);
     SetShopMenuCallback(ScriptContext_Enable);
 }
