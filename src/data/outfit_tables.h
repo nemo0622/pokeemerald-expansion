@@ -1,27 +1,30 @@
 #include "constants/global.h"
 #include "constants/event_objects.h"
 
-static const u8 sText_OutfitName_UsualGreen[] = _("Usual Green");
-static const u8 sText_OutfitDesc_UsualGreen[] = _(
-    "The usual, but basic outfit.");
+// OUTFIT NAMES AND DESCRIPTIONS
+static const u8 sText_OutfitName_UniversityGreen[] = _("University Green");
+static const u8 sText_OutfitDesc_UniversityGreen[] = _(
+    "Worn on your first day at the \nUniversity.");
 
-static const u8 sText_OutfitName_UnusualRed[] = _("Unusual Red");
-static const u8 sText_OutfitDesc_UnusualRed[] = _(
-    "Rather unusual, but still basic \noutfit.");
+static const u8 sText_OutfitName_Zookeeper[] = _("Zookeeper");
+static const u8 sText_OutfitDesc_Zookeeper[] = _(
+    "Worn by staff at the Sunset \nWildlife Conservation Center.");
 
+static const u8 sText_OutfitName_KalosFashion[] = _("Kalos Fashion");
+static const u8 sText_OutfitDesc_KalosFashion[] = _(
+    "Resembles the hero who \nsaved the Kalos Region.");
+
+// Male outfit Region Map Icons
 static const u16 sRegionMapPlayerIcon_BrendanGfx[] = INCBIN_U16("graphics/pokenav/region_map/brendan_icon.4bpp");
-
 static const u16 sRegionMapPlayerIcon_RSBrendanGfx[] = INCBIN_U16("graphics/pokenav/region_map/rs_brendan_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_Calem[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_calem_icon.4bpp");
 
+// Female outfit Region Map Icons
 static const u16 sRegionMapPlayerIcon_MayGfx[] = INCBIN_U16("graphics/pokenav/region_map/may_icon.4bpp");
-
 static const u16 sRegionMapPlayerIcon_RSMayGfx[] = INCBIN_U16("graphics/pokenav/region_map/rs_may_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_Serena[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_serena_icon.4bpp");
 
-//! TODO: Should the gfx here be seperated?
-
-static const u8 sFrontierPassPlayerIcons_BrendanMay_Gfx[] = INCBIN_U8("graphics/frontier_pass/map_heads.4bpp");
-
-static const u8 sFrontierPassPlayerIcons_RSBrendanMay_Gfx[] = INCBIN_U8("graphics/frontier_pass/rs_map_heads.4bpp");
+static const u8 sFrontierPassPlayerIcons_XMarks[] = INCBIN_U8("graphics/frontier_pass/map_heads.4bpp");
 
 #define REGION_MAP_GFX(m, f) { sRegionMapPlayerIcon_ ## m ## Gfx, sRegionMapPlayerIcon_ ## f ## Gfx }
 
@@ -53,18 +56,18 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
     [OUTFIT_NONE] = {
         .isHidden = TRUE
     },
-    [OUTFIT_USUAL_GREEN] = {
+    [OUTFIT_UNIVERSITY_GREEN] = {
         //! DESC: if sets to TRUE, it will not be shown in the OUTFIT menu if it's locked.
         .isHidden = FALSE,
 
-        //! DESC: prices for purchasing them.
+        //! DESC: prices for purchasing them (male, female).
         .prices = { 0, 0 },
 
         //! DESC: outfit's name
-        .name = sText_OutfitName_UsualGreen,
+        .name = sText_OutfitName_UniversityGreen,
 
         //! DESC: outfit's description
-        .desc = sText_OutfitDesc_UsualGreen,
+        .desc = sText_OutfitDesc_UniversityGreen,
 
         //! DESC: trainer front & back pic index
         //! (see include/constants/trainers.h)
@@ -115,13 +118,13 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! DESC: head icons gfx&pal for frontier pass
         //! note that frontier pass needs to be in one sprite instead of two,
         //! unlike region map. (probably should split them tbh)
-        .iconsFP = sFrontierPassPlayerIcons_BrendanMay_Gfx,
+        .iconsFP = sFrontierPassPlayerIcons_XMarks,
     },
-    [OUTFIT_UNUSUAL_RED] = {
+    [OUTFIT_ZOOKEEPER] = {
         .isHidden = FALSE,
-        .prices = { 200, 500 },
-        .name = sText_OutfitName_UnusualRed,
-        .desc = sText_OutfitDesc_UnusualRed,
+        .prices = { 4000, 4000 },
+        .name = sText_OutfitName_Zookeeper,
+        .desc = sText_OutfitDesc_Zookeeper,
         .trainerPics = {
             [MALE]   = {TRAINER_PIC_RS_BRENDAN, TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN},
             [FEMALE] = {TRAINER_PIC_RS_MAY, TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY}
@@ -157,6 +160,48 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
             },
         },
         .iconsRM = { sRegionMapPlayerIcon_RSBrendanGfx, sRegionMapPlayerIcon_RSMayGfx },
-        .iconsFP = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
+        .iconsFP = sFrontierPassPlayerIcons_XMarks,
+    },
+    [OUTFIT_KALOS_FASHION] = {
+        .isHidden = FALSE,
+        .prices = { 4000, 4000 },
+        .name = sText_OutfitName_KalosFashion,
+        .desc = sText_OutfitDesc_KalosFashion,
+        .trainerPics = {
+            [MALE]   = {TRAINER_PIC_OUTFIT_CALEM, TRAINER_BACK_PIC_OUTFIT_CALEM},
+            [FEMALE] = {TRAINER_PIC_OUTFIT_SERENA, TRAINER_BACK_PIC_OUTFIT_SERENA}
+        },
+        .avatarGfxIds = {
+           [MALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_OUTFIT_CALEM_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_OUTFIT_CALEM_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_OUTFIT_CALEM_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_OUTFIT_CALEM_UNDERWATER
+           },
+           [FEMALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_OUTFIT_SERENA_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_OUTFIT_SERENA_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_OUTFIT_SERENA_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_OUTFIT_SERENA_UNDERWATER
+           },
+        },
+        .animGfxIds = {
+            [MALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_OUTFIT_CALEM_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_OUTFIT_CALEM_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_OUTFIT_CALEM_WATERING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_OUTFIT_CALEM_DECORATING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_OUTFIT_CALEM_FIELD_MOVE
+            },
+            [FEMALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_OUTFIT_SERENA_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_OUTFIT_SERENA_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_OUTFIT_SERENA_WATERING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_OUTFIT_SERENA_DECORATING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_OUTFIT_SERENA_FIELD_MOVE
+            },
+        },
+        .iconsRM = { sRegionMapPlayerIcon_Calem, sRegionMapPlayerIcon_Serena },
+        .iconsFP = sFrontierPassPlayerIcons_XMarks, 
     },
 };

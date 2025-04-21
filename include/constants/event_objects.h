@@ -255,10 +255,30 @@
 #define OBJ_EVENT_GFX_WINDMILL_BL                250
 #define OBJ_EVENT_GFX_WINDMILL_BR                251
 
+// Outfit: Kalos Outfit (Calem & Serena)
+#define OBJ_EVENT_GFX_OUTFIT_CALEM_NORMAL        252
+#define OBJ_EVENT_GFX_OUTFIT_CALEM_MACH_BIKE     253
+#define OBJ_EVENT_GFX_OUTFIT_CALEM_SURFING       254
+#define OBJ_EVENT_GFX_OUTFIT_CALEM_FIELD_MOVE    255
+#define OBJ_EVENT_GFX_OUTFIT_CALEM_ACRO_BIKE     256
+#define OBJ_EVENT_GFX_OUTFIT_CALEM_UNDERWATER    257
+#define OBJ_EVENT_GFX_OUTFIT_CALEM_FISHING       258
+#define OBJ_EVENT_GFX_OUTFIT_CALEM_WATERING      259
+#define OBJ_EVENT_GFX_OUTFIT_CALEM_DECORATING    260
+#define OBJ_EVENT_GFX_OUTFIT_SERENA_NORMAL       261
+#define OBJ_EVENT_GFX_OUTFIT_SERENA_MACH_BIKE    262
+#define OBJ_EVENT_GFX_OUTFIT_SERENA_SURFING      263
+#define OBJ_EVENT_GFX_OUTFIT_SERENA_FIELD_MOVE   264
+#define OBJ_EVENT_GFX_OUTFIT_SERENA_ACRO_BIKE    265
+#define OBJ_EVENT_GFX_OUTFIT_SERENA_UNDERWATER   266
+#define OBJ_EVENT_GFX_OUTFIT_SERENA_FISHING      267
+#define OBJ_EVENT_GFX_OUTFIT_SERENA_WATERING     268
+#define OBJ_EVENT_GFX_OUTFIT_SERENA_DECORATING   269
+
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        252
+#define NUM_OBJ_EVENT_GFX                        270
 
 
 // These are dynamic object gfx ids.
@@ -400,6 +420,7 @@
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
 #define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124
+#define OBJ_EVENT_PAL_TAG_OUTFIT_KALOS            0x1125 // palette for Calem and Serena
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

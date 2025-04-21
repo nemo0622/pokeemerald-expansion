@@ -411,7 +411,7 @@ static const struct SpriteFrameImage sPicTable_Artist[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_MayNormal[] = {
-    overworld_ascending_frames(gObjectEventPic_MayNormalRunning, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_MayNormalRunning, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_MayMachBike[] = {
@@ -1400,4 +1400,116 @@ const struct SpriteFrameImage gObjectEventPicTable_Windmill_BL[] = {
 
 const struct SpriteFrameImage gObjectEventPicTable_Windmill_BR[] = {
     overworld_ascending_frames(gObjectEventPic_Windmill_BR, 8, 8),
+};
+
+// OUTFIT: Calem
+static const struct SpriteFrameImage sPicTable_Outfit_CalemNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_CalemNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_CalemMachBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_CalemMachBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_CalemAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_CalemAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_CalemSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_CalemSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_CalemUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_CalemUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_CalemUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_CalemUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_CalemUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_CalemUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_CalemUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_CalemUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_CalemUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_CalemUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_CalemFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_CalemFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_CalemFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_CalemFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_CalemWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_CalemWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_CalemWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_CalemWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_CalemWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_CalemWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_CalemWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_CalemWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_CalemWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_CalemWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_CalemDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_CalemDecorating),
+};
+
+// OUTFIT: Serena
+static const struct SpriteFrameImage sPicTable_Outfit_SerenaNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_SerenaNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_SerenaMachBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_SerenaMachBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_SerenaAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_SerenaAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_SerenaSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_SerenaSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_SerenaUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_SerenaUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_SerenaUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_SerenaUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_SerenaUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_SerenaUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_SerenaUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_SerenaUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_SerenaUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_SerenaUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_SerenaFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_SerenaFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_SerenaFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_SerenaFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_SerenaWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_SerenaWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_SerenaWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_SerenaWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_SerenaWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_SerenaWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_SerenaWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_SerenaWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_SerenaWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_SerenaWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_SerenaDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_SerenaDecorating),
 };

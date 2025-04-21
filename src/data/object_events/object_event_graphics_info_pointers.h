@@ -261,6 +261,25 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Windmill_TR
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Windmill_BL;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Windmill_BR;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_CalemNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_CalemMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_CalemSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_CalemFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_CalemAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_CalemUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_CalemFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_CalemWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_CalemDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_SerenaNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_SerenaMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_SerenaSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_SerenaFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_SerenaAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_SerenaUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_SerenaFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_SerenaWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_SerenaDecorating;
+
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -515,6 +534,24 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WINDMILL_TR] =  &gObjectEventGraphicsInfo_Windmill_TR,
     [OBJ_EVENT_GFX_WINDMILL_BL] =  &gObjectEventGraphicsInfo_Windmill_BL,
     [OBJ_EVENT_GFX_WINDMILL_BR] =  &gObjectEventGraphicsInfo_Windmill_BR,
+    [OBJ_EVENT_GFX_OUTFIT_CALEM_NORMAL] = &gObjectEventGraphicsInfo_Outfit_CalemNormal,
+    [OBJ_EVENT_GFX_OUTFIT_CALEM_MACH_BIKE] = &gObjectEventGraphicsInfo_Outfit_CalemMachBike,
+    [OBJ_EVENT_GFX_OUTFIT_CALEM_SURFING] = &gObjectEventGraphicsInfo_Outfit_CalemSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_CALEM_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_CalemFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_CALEM_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_CalemAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_CALEM_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_CalemUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_CALEM_FISHING] = &gObjectEventGraphicsInfo_Outfit_CalemFishing,
+    [OBJ_EVENT_GFX_OUTFIT_CALEM_WATERING] = &gObjectEventGraphicsInfo_Outfit_CalemWatering,
+    [OBJ_EVENT_GFX_OUTFIT_CALEM_DECORATING] = &gObjectEventGraphicsInfo_Outfit_CalemDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_SERENA_NORMAL] = &gObjectEventGraphicsInfo_Outfit_SerenaNormal,
+    [OBJ_EVENT_GFX_OUTFIT_SERENA_MACH_BIKE] = &gObjectEventGraphicsInfo_Outfit_SerenaMachBike,
+    [OBJ_EVENT_GFX_OUTFIT_SERENA_SURFING] = &gObjectEventGraphicsInfo_Outfit_SerenaSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_SERENA_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_SerenaFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_SERENA_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_SerenaAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_SERENA_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_SerenaUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_SERENA_FISHING] = &gObjectEventGraphicsInfo_Outfit_SerenaFishing,
+    [OBJ_EVENT_GFX_OUTFIT_SERENA_WATERING] = &gObjectEventGraphicsInfo_Outfit_SerenaWatering,
+    [OBJ_EVENT_GFX_OUTFIT_SERENA_DECORATING] = &gObjectEventGraphicsInfo_Outfit_SerenaDecorating,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

@@ -502,3 +502,24 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 
 const u32 gFieldEffectObjectPic_CaveDust[] = INCBIN_U32("graphics/field_effects/pics/cave_dust.4bpp");
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effects/palettes/cave_dust.gbapal");
+
+// Outfits
+const u16 gObjectEventPal_Outfit_KalosFashion[] = INCBIN_U16("graphics/object_events/palettes/outfit_kalos_fashion.gbapal");
+const u32 gObjectEventPic_Outfit_CalemNormalRunning[] = INCBIN_U32("graphics/object_events/pics/people/brendan/outfit_calem/walking.4bpp", "graphics/object_events/pics/people/brendan/outfit_calem/running.4bpp");
+const u32 gObjectEventPic_Outfit_CalemFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/brendan/outfit_calem/field_move.4bpp");
+const u32 gObjectEventPic_Outfit_CalemSurfing[] = INCBIN_U32("graphics/object_events/pics/people/brendan/outfit_calem/surfing.4bpp");
+const u32 gObjectEventPic_Outfit_CalemMachBike[] = INCBIN_U32("graphics/object_events/pics/people/brendan/outfit_calem/acro_bike.4bpp"); // uses acro bike sheet, should prolly remove eventually
+const u32 gObjectEventPic_Outfit_CalemAcroBike[] = INCBIN_U32("graphics/object_events/pics/people/brendan/outfit_calem/acro_bike.4bpp");
+const u32 gObjectEventPic_Outfit_CalemFishing[] = INCBIN_U32("graphics/object_events/pics/people/brendan/outfit_calem/fishing.4bpp");
+const u32 gObjectEventPic_Outfit_CalemWatering[] = INCBIN_U32("graphics/object_events/pics/people/brendan/outfit_calem/watering.4bpp");
+const u32 gObjectEventPic_Outfit_CalemDecorating[] = INCBIN_U32("graphics/object_events/pics/people/brendan/outfit_calem/decorating.4bpp");
+const u32 gObjectEventPic_Outfit_CalemUnderwater[] = INCBIN_U32("graphics/object_events/pics/people/brendan/outfit_calem/underwater.4bpp");
+const u32 gObjectEventPic_Outfit_SerenaNormalRunning[] = INCBIN_U32("graphics/object_events/pics/people/may/outfit_serena/walking.4bpp", "graphics/object_events/pics/people/may/outfit_serena/running.4bpp");
+const u32 gObjectEventPic_Outfit_SerenaFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/may/outfit_serena/field_move.4bpp");
+const u32 gObjectEventPic_Outfit_SerenaSurfing[] = INCBIN_U32("graphics/object_events/pics/people/may/outfit_serena/surfing.4bpp");
+const u32 gObjectEventPic_Outfit_SerenaMachBike[] = INCBIN_U32("graphics/object_events/pics/people/may/outfit_serena/acro_bike.4bpp"); // uses acro bike sheet, should prolly remove eventually
+const u32 gObjectEventPic_Outfit_SerenaAcroBike[] = INCBIN_U32("graphics/object_events/pics/people/may/outfit_serena/acro_bike.4bpp");
+const u32 gObjectEventPic_Outfit_SerenaFishing[] = INCBIN_U32("graphics/object_events/pics/people/may/outfit_serena/fishing.4bpp");
+const u32 gObjectEventPic_Outfit_SerenaWatering[] = INCBIN_U32("graphics/object_events/pics/people/may/outfit_serena/watering.4bpp");
+const u32 gObjectEventPic_Outfit_SerenaDecorating[] = INCBIN_U32("graphics/object_events/pics/people/may/outfit_serena/decorating.4bpp");
+const u32 gObjectEventPic_Outfit_SerenaUnderwater[] = INCBIN_U32("graphics/object_events/pics/people/may/outfit_serena/underwater.4bpp");

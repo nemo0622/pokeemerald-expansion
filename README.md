@@ -171,7 +171,7 @@ Many, many talented developers and artists are responsible for making this proje
 - DexNav feature branch by ghoulslash
 - Name Box branch by Tustin2121
 - Different Wild Encounter Tables by Bivurnum
-- New Shop UI and GSC White Battle Background by mudskip
+- Outfit System, New Shop UI, and GSC White Battle Background by mudskip
 - New Continue Menu UI and Party Menu by Archie
 - Overworld Encounters by [HashtagMarky](https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters)
 - GSC/HGSS Ruins of Alph Sliding Puzzles by [Spherical Ice](https://www.pokecommunity.com/threads/ruins-of-alph-sliding-puzzles-pokefirered.463032/)
@@ -220,7 +220,8 @@ Many, many talented developers and artists are responsible for making this proje
     - Many NPC sprites adapted from Pokémon Crystal
     - Some NPC sprites by Anima_nel on itch.io
     - Some NPC sprites by kesterhenrickpixels on DeviantArt
-    - Player sprites by me!
+    - Amali and Harper (default Player) sprites by me!
+    - Calem and Serena outfits by com3tiin, Poketto, and Solo993 on DeviantArt
 - Overworld Pokémon Sprites:
     - Many Gen 1 and 2 overworld sprites by Anima_nel on itch.io
     - Eeveeee: Spoink, Kleavor

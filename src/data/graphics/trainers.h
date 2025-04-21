@@ -309,6 +309,14 @@ const u32 gTrainerPalette_Diver[] = INCBIN_U32("graphics/trainers/palettes/diver
 const u32 gTrainerFrontPic_Artist[] = INCBIN_U32("graphics/trainers/front_pics/artist.4bpp.lz");
 const u32 gTrainerPalette_Artist[] = INCBIN_U32("graphics/trainers/palettes/artist.gbapal.lz");
 
+// Outfit trainer pics
+const u32 gTrainerFrontPic_Outfit_Calem[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_calem.4bpp.lz");
+const u32 gTrainerFrontPic_Outfit_Serena[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_serena.4bpp.lz");
+const u32 gTrainerPalette_Outfit_Calem[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_calem.gbapal.lz");
+const u32 gTrainerPalette_Outfit_Serena[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_serena.gbapal.lz");
+const u8 gTrainerBackPic_Outfit_Calem[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_calem.4bpp");
+const u8 gTrainerBackPic_Outfit_Serena[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_serena.4bpp");
+
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
 // gTrainerFrontPic/gTrainerPalette pointers, (e.g "gTrainerFrontPic_Hiker" and "gTrainerPalette_Hiker").
@@ -426,6 +434,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(WORKER, Worker),
     TRAINER_SPRITE(DIVER, Diver),
     TRAINER_SPRITE(ARTIST, Artist),
+    TRAINER_SPRITE(OUTFIT_CALEM, Outfit_Calem),
+    TRAINER_SPRITE(OUTFIT_SERENA, Outfit_Serena),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
@@ -548,6 +558,22 @@ const struct SpriteFrameImage gTrainerBackPicTable_Steven[] =
     {gTrainerBackPic_Steven + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
 };
 
+// Outfit back pics
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Calem[] =
+{
+    {gTrainerBackPic_Outfit_Calem + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Calem + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Calem + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Calem + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Serena[] =
+{
+    {gTrainerBackPic_Outfit_Serena + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Serena + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Serena + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Serena + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+
 // .backPic goes functionally unused, since none of these pics are compressed
 // and the place they would get extracted to gets overwritten later anyway
 // the casts are so they'll play nice with the strict struct definition
@@ -570,4 +596,6 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(RUBY_SAPPHIRE_MAY, 4, RubySapphireMay, Palette_RubySapphireMay, Hoenn),
     TRAINER_BACK_SPRITE(WALLY, 4, Wally, Palette_Wally, Hoenn),
     TRAINER_BACK_SPRITE(STEVEN, 4, Steven, Palette_Steven, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_CALEM, 4, Outfit_Calem, Palette_Outfit_Calem, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_SERENA, 4, Outfit_Serena, Palette_Outfit_Serena, Hoenn),
 };

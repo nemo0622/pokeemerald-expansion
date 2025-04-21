@@ -15,14 +15,15 @@
 
 //! outfits
 #define OUTFIT_NONE 0
-#define OUTFIT_USUAL_GREEN 1
-#define OUTFIT_UNUSUAL_RED 2
-#define OUTFIT_COUNT 3
+#define OUTFIT_UNIVERSITY_GREEN 1 // default outfits
+#define OUTFIT_ZOOKEEPER 2 // outfits unlocked at Sunset Wildlife Conservation Center
+#define OUTFIT_KALOS_FASHION 3 // Calem (male) and Serena (female)
+#define OUTFIT_COUNT 4
 
 // inclusive
-#define OUTFIT_BEGIN OUTFIT_USUAL_GREEN
-#define OUTFIT_END   OUTFIT_UNUSUAL_RED
+#define OUTFIT_BEGIN OUTFIT_UNIVERSITY_GREEN
+#define OUTFIT_END   OUTFIT_KALOS_FASHION
 
-#define DEFAULT_OUTFIT OUTFIT_USUAL_GREEN
+#define DEFAULT_OUTFIT OUTFIT_UNIVERSITY_GREEN
 
 #endif //! GUARD_CONSTANTS_OUTFITS_H

@@ -139,7 +139,8 @@ Debug_EventScript_Text_DefensiveIVs:
 
 Debug_EventScript_Script_1::
 	lock
-	toggleoutfit OUTFIT_UNUSUAL_RED, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_ZOOKEEPER, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_KALOS_FASHION, OUTFIT_TOGGLE_UNLOCK
 	release
 	end
 

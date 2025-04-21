@@ -3350,6 +3350,15 @@ extern const u16 gObjectEventPal_May[];
 extern const u16 gObjectEventPal_RubySapphireBrendan[];
 extern const u16 gObjectEventPal_RubySapphireMay[];
 
+// Outfit overworld palettes
+extern const u16 gObjectEventPal_Outfit_KalosFashion[];
+
+// Outfit trainer sprite palettes
+extern const u32 gTrainerFrontPic_Outfit_Calem[];
+extern const u32 gTrainerPalette_Outfit_Calem[];
+extern const u32 gTrainerFrontPic_Outfit_Serena[];
+extern const u32 gTrainerPalette_Outfit_Serena[];
+
 // Mail
 extern const u16 gMailPalette_Orange[];
 extern const u16 gMailPalette_Harbor[];

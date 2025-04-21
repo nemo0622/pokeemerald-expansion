@@ -116,7 +116,9 @@
 #define TRAINER_PIC_WORKER                98
 #define TRAINER_PIC_DIVER                 99
 #define TRAINER_PIC_ARTIST                100
-#define TRAINER_PIC_COUNT                 101
+#define TRAINER_PIC_OUTFIT_CALEM          101
+#define TRAINER_PIC_OUTFIT_SERENA         102
+#define TRAINER_PIC_COUNT                 103
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -127,6 +129,8 @@
 #define TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY      5
 #define TRAINER_BACK_PIC_WALLY                  6
 #define TRAINER_BACK_PIC_STEVEN                 7
+#define TRAINER_BACK_PIC_OUTFIT_CALEM           8
+#define TRAINER_BACK_PIC_OUTFIT_SERENA          9
 
 #define FACILITY_CLASS_HIKER                 0x0
 #define FACILITY_CLASS_AQUA_GRUNT_M          0x1
