@@ -16,9 +16,14 @@
 //! outfits
 #define OUTFIT_NONE 0
 #define OUTFIT_UNIVERSITY_GREEN 1 // default outfits
-#define OUTFIT_ZOOKEEPER 2 // outfits unlocked at Sunset Wildlife Conservation Center
-#define OUTFIT_KALOS_FASHION 3 // Calem (male) and Serena (female)
-#define OUTFIT_COUNT 4
+#define OUTFIT_CORAL 2 // pink (coral. yay) outfits
+#define OUTFIT_EAST_BLUE 3 // turquoise-blue outfits
+#define OUTFIT_TROPICS 4 // yellow, tank top outfits
+#define OUTFIT_TRADITIONAL 5 // traditional greek outfits
+#define OUTFIT_OLD_SOFOS 6 // blue (male) / green (female) togas with gold trim
+#define OUTFIT_ZOOKEEPER 7 // outfits unlocked at Sunset Wildlife Conservation Center
+#define OUTFIT_KALOS_FASHION 8 // Calem (male) and Serena (female)
+#define OUTFIT_COUNT 9
 
 // inclusive
 #define OUTFIT_BEGIN OUTFIT_UNIVERSITY_GREEN

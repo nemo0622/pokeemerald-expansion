@@ -316,6 +316,42 @@ const u32 gTrainerPalette_Outfit_Calem[] = INCBIN_U32("graphics/trainers/palette
 const u32 gTrainerPalette_Outfit_Serena[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_serena.gbapal.lz");
 const u8 gTrainerBackPic_Outfit_Calem[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_calem.4bpp");
 const u8 gTrainerBackPic_Outfit_Serena[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_serena.4bpp");
+const u32 gTrainerFrontPic_Outfit_Zookeeper_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_zookeeper_m.4bpp.lz");
+const u32 gTrainerFrontPic_Outfit_Zookeeper_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_zookeeper_f.4bpp.lz");
+const u32 gTrainerPalette_Outfit_Zookeeper_M[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_zookeeper_m.gbapal.lz");
+const u32 gTrainerPalette_Outfit_Zookeeper_F[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_zookeeper_f.gbapal.lz");
+const u8 gTrainerBackPic_Outfit_Zookeeper_M[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_zookeeper_m.4bpp");
+const u8 gTrainerBackPic_Outfit_Zookeeper_F[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_zookeeper_f.4bpp");
+const u32 gTrainerFrontPic_Outfit_Traditional_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_traditional_m.4bpp.lz");
+const u32 gTrainerFrontPic_Outfit_Traditional_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_traditional_f.4bpp.lz");
+const u32 gTrainerPalette_Outfit_Traditional_M[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_traditional_m.gbapal.lz");
+const u32 gTrainerPalette_Outfit_Traditional_F[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_traditional_f.gbapal.lz");
+const u8 gTrainerBackPic_Outfit_Traditional_M[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_traditional_m.4bpp");
+const u8 gTrainerBackPic_Outfit_Traditional_F[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_traditional_f.4bpp");
+const u32 gTrainerFrontPic_Outfit_East_Blue_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_east_blue_m.4bpp.lz");
+const u32 gTrainerFrontPic_Outfit_East_Blue_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_east_blue_f.4bpp.lz");
+const u32 gTrainerPalette_Outfit_East_Blue_M[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_east_blue_m.gbapal.lz");
+const u32 gTrainerPalette_Outfit_East_Blue_F[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_east_blue_f.gbapal.lz");
+const u8 gTrainerBackPic_Outfit_East_Blue_M[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_east_blue_m.4bpp");
+const u8 gTrainerBackPic_Outfit_East_Blue_F[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_east_blue_f.4bpp");
+const u32 gTrainerFrontPic_Outfit_Coral_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_coral_m.4bpp.lz");
+const u32 gTrainerFrontPic_Outfit_Coral_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_coral_f.4bpp.lz");
+const u32 gTrainerPalette_Outfit_Coral_M[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_coral_m.gbapal.lz");
+const u32 gTrainerPalette_Outfit_Coral_F[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_coral_f.gbapal.lz");
+const u8 gTrainerBackPic_Outfit_Coral_M[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_coral_m.4bpp");
+const u8 gTrainerBackPic_Outfit_Coral_F[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_coral_f.4bpp");
+const u32 gTrainerFrontPic_Outfit_Tropics_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_tropics_m.4bpp.lz");
+const u32 gTrainerFrontPic_Outfit_Tropics_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_tropics_f.4bpp.lz");
+const u32 gTrainerPalette_Outfit_Tropics_M[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_tropics_m.gbapal.lz");
+const u32 gTrainerPalette_Outfit_Tropics_F[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_tropics_f.gbapal.lz");
+const u8 gTrainerBackPic_Outfit_Tropics_M[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_tropics_m.4bpp");
+const u8 gTrainerBackPic_Outfit_Tropics_F[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_tropics_f.4bpp");
+const u32 gTrainerFrontPic_Outfit_Old_Sofos_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_old_sofos_m.4bpp.lz");
+const u32 gTrainerFrontPic_Outfit_Old_Sofos_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_old_sofos_f.4bpp.lz");
+const u32 gTrainerPalette_Outfit_Old_Sofos_M[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_old_sofos_m.gbapal.lz");
+const u32 gTrainerPalette_Outfit_Old_Sofos_F[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_old_sofos_f.gbapal.lz");
+const u8 gTrainerBackPic_Outfit_Old_Sofos_M[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_old_sofos_m.4bpp");
+const u8 gTrainerBackPic_Outfit_Old_Sofos_F[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_old_sofos_f.4bpp");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
@@ -436,6 +472,18 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(ARTIST, Artist),
     TRAINER_SPRITE(OUTFIT_CALEM, Outfit_Calem),
     TRAINER_SPRITE(OUTFIT_SERENA, Outfit_Serena),
+    TRAINER_SPRITE(OUTFIT_ZOOKEEPER_M, Outfit_Zookeeper_M),
+    TRAINER_SPRITE(OUTFIT_ZOOKEEPER_F, Outfit_Zookeeper_F),
+    TRAINER_SPRITE(OUTFIT_TRADITIONAL_M, Outfit_Traditional_M),
+    TRAINER_SPRITE(OUTFIT_TRADITIONAL_F, Outfit_Traditional_F),
+    TRAINER_SPRITE(OUTFIT_EAST_BLUE_M, Outfit_East_Blue_M),
+    TRAINER_SPRITE(OUTFIT_EAST_BLUE_F, Outfit_East_Blue_F),
+    TRAINER_SPRITE(OUTFIT_CORAL_M, Outfit_Coral_M),
+    TRAINER_SPRITE(OUTFIT_CORAL_F, Outfit_Coral_F),
+    TRAINER_SPRITE(OUTFIT_TROPICS_M, Outfit_Tropics_M),
+    TRAINER_SPRITE(OUTFIT_TROPICS_F, Outfit_Tropics_F),
+    TRAINER_SPRITE(OUTFIT_OLD_SOFOS_M, Outfit_Old_Sofos_M),
+    TRAINER_SPRITE(OUTFIT_OLD_SOFOS_F, Outfit_Old_Sofos_F),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
@@ -573,6 +621,90 @@ const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Serena[] =
     {gTrainerBackPic_Outfit_Serena + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
     {gTrainerBackPic_Outfit_Serena + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
 };
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Zookeeper_M[] =
+{
+    {gTrainerBackPic_Outfit_Zookeeper_M + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Zookeeper_M + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Zookeeper_M + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Zookeeper_M + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Zookeeper_F[] =
+{
+    {gTrainerBackPic_Outfit_Zookeeper_F + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Zookeeper_F + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Zookeeper_F + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Zookeeper_F + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Traditional_M[] =
+{
+    {gTrainerBackPic_Outfit_Traditional_M + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Traditional_M + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Traditional_M + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Traditional_M + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Traditional_F[] =
+{
+    {gTrainerBackPic_Outfit_Traditional_F + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Traditional_F + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Traditional_F + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Traditional_F + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_East_Blue_M[] =
+{
+    {gTrainerBackPic_Outfit_East_Blue_M + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_East_Blue_M + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_East_Blue_M + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_East_Blue_M + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_East_Blue_F[] =
+{
+    {gTrainerBackPic_Outfit_East_Blue_F + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_East_Blue_F + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_East_Blue_F + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_East_Blue_F + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Coral_M[] =
+{
+    {gTrainerBackPic_Outfit_Coral_M + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Coral_M + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Coral_M + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Coral_M + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Coral_F[] =
+{
+    {gTrainerBackPic_Outfit_Coral_F + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Coral_F + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Coral_F + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Coral_F + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Tropics_M[] =
+{
+    {gTrainerBackPic_Outfit_Tropics_M + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Tropics_M + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Tropics_M + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Tropics_M + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Tropics_F[] =
+{
+    {gTrainerBackPic_Outfit_Tropics_F + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Tropics_F + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Tropics_F + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Tropics_F + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Old_Sofos_M[] =
+{
+    {gTrainerBackPic_Outfit_Old_Sofos_M + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Old_Sofos_M + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Old_Sofos_M + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Old_Sofos_M + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Old_Sofos_F[] =
+{
+    {gTrainerBackPic_Outfit_Old_Sofos_F + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Old_Sofos_F + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Old_Sofos_F + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Old_Sofos_F + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
 
 // .backPic goes functionally unused, since none of these pics are compressed
 // and the place they would get extracted to gets overwritten later anyway
@@ -598,4 +730,16 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(STEVEN, 4, Steven, Palette_Steven, Hoenn),
     TRAINER_BACK_SPRITE(OUTFIT_CALEM, 4, Outfit_Calem, Palette_Outfit_Calem, Hoenn),
     TRAINER_BACK_SPRITE(OUTFIT_SERENA, 4, Outfit_Serena, Palette_Outfit_Serena, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_ZOOKEEPER_M, 4, Outfit_Zookeeper_M, Palette_Outfit_Zookeeper_M, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_ZOOKEEPER_F, 4, Outfit_Zookeeper_F, Palette_Outfit_Zookeeper_F, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_TRADITIONAL_M, 4, Outfit_Traditional_M, Palette_Outfit_Traditional_M, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_TRADITIONAL_F, 4, Outfit_Traditional_F, Palette_Outfit_Traditional_F, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_EAST_BLUE_M, 4, Outfit_East_Blue_M, Palette_Outfit_East_Blue_M, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_EAST_BLUE_F, 4, Outfit_East_Blue_F, Palette_Outfit_East_Blue_F, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_CORAL_M, 4, Outfit_Coral_M, Palette_Outfit_Coral_M, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_CORAL_F, 4, Outfit_Coral_F, Palette_Outfit_Coral_F, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_TROPICS_M, 4, Outfit_Tropics_M, Palette_Outfit_Tropics_M, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_TROPICS_F, 4, Outfit_Tropics_F, Palette_Outfit_Tropics_F, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_OLD_SOFOS_M, 4, Outfit_Old_Sofos_M, Palette_Outfit_Old_Sofos_M, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_OLD_SOFOS_F, 4, Outfit_Old_Sofos_F, Palette_Outfit_Old_Sofos_F, Hoenn),
 };

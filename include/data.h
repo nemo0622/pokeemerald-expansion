@@ -158,6 +158,18 @@ extern const struct SpriteFrameImage gTrainerBackPicTable_Wally[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Steven[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Calem[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Serena[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Zookeeper_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Zookeeper_F[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Traditional_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Traditional_F[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_East_Blue_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_East_Blue_F[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Coral_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Coral_F[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Tropics_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Tropics_F[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Old_Sofos_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Old_Sofos_F[];
 
 extern const union AffineAnimCmd *const gAffineAnims_BattleSpritePlayerSide[];
 extern const union AffineAnimCmd *const gAffineAnims_BattleSpriteOpponentSide[];

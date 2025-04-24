@@ -28,6 +28,7 @@
 #include "match_call.h"
 #include "menu.h"
 #include "naming_screen.h"
+#include "outfit_menu.h"
 #include "overworld.h"
 #include "party_menu.h"
 #include "pokeblock.h"

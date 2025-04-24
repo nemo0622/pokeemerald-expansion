@@ -423,8 +423,8 @@ static void VBlankCB_OutfitMenu(void)
     LoadOam();
     ProcessSpriteCopyRequests();
     TransferPlttBuffer();
-    ChangeBgX(BG_SCROLL, 96, BG_COORD_SUB);
-    ChangeBgY(BG_SCROLL, 96, BG_COORD_SUB);
+    // ChangeBgX(BG_SCROLL, 96, BG_COORD_SUB);
+    // ChangeBgY(BG_SCROLL, 96, BG_COORD_SUB);
 }
 
 static void SetupOutfitMenu_BGs(void)
@@ -434,14 +434,14 @@ static void SetupOutfitMenu_BGs(void)
     ResetAllBgsCoordinates();
     InitBgsFromTemplates(0, sBGTemplates, ARRAY_COUNT(sBGTemplates));
     SetBgTilemapBuffer(BG_MAIN, sOutfitMenu->tilemapBuffers[0]);
-    SetBgTilemapBuffer(BG_SCROLL, sOutfitMenu->tilemapBuffers[1]);
+    // SetBgTilemapBuffer(BG_SCROLL, sOutfitMenu->tilemapBuffers[1]);
     ScheduleBgCopyTilemapToVram(BG_MAIN);
-    ScheduleBgCopyTilemapToVram(BG_SCROLL);
+    // ScheduleBgCopyTilemapToVram(BG_SCROLL);
     SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
     ShowBg(BG_MSGBOX);
     ShowBg(BG_TXT);
     ShowBg(BG_MAIN);
-    ShowBg(BG_SCROLL);
+    // ShowBg(BG_SCROLL);
     SetGpuReg(REG_OFFSET_BLDCNT, 0);
     SetGpuReg(REG_OFFSET_BLDALPHA, 0);
     SetGpuReg(REG_OFFSET_BLDY, 0);
@@ -462,7 +462,7 @@ static bool32 SetupOutfitMenu_Graphics(void)
         if (FreeTempTileDataBuffersIfPossible() != TRUE)
         {
             LZDecompressWram(sTilemap, sOutfitMenu->tilemapBuffers[0]);
-            LZDecompressWram(sScrollingBG_Tilemap, sOutfitMenu->tilemapBuffers[1]);
+            // LZDecompressWram(sScrollingBG_Tilemap, sOutfitMenu->tilemapBuffers[1]);
             sOutfitMenu->gfxState++;
         }
         break;
@@ -845,6 +845,22 @@ static void Task_OutfitMenuHandleInput(u8 taskId)
     GridMenu_HandleInput(sOutfitMenu->grid);
     if (JOY_NEW(CLOSE_BUTTONS))
         CloseOutfitMenu(taskId);
+
+    if(JOY_NEW(SELECT_BUTTON))
+    {
+        if (gSaveBlock2Ptr->playerGender == MALE)
+            gSaveBlock2Ptr->playerGender = FEMALE;
+        else
+            gSaveBlock2Ptr->playerGender = MALE;
+
+        CloseOutfitMenu(taskId);
+
+        FreezeObjectEvents();
+        PlayerFreeze();
+        StopPlayerAvatar();
+        FadeScreen(FADE_TO_BLACK, 0);
+        CreateTask(Task_OpenOutfitMenu, 0x20);
+    }
 
     if (JOY_NEW(A_BUTTON))
     {

@@ -23,6 +23,10 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 - Overworld Encounters with Wild Pokémon
     - Most routes have a few randomized locations for Pokémon to spawn
     - Shiny Pokémon are visible in the overworld!
+- Outfit System allowing for Character Customization!
+    - Multiple variants of new protagonists (Amali and Harper)
+    - Options to play as protagonists from other Regions (ex: "Kalos Fashion" to play as Calem or Serena)
+    - Press Select in Outfit Box to swap gender
 - DexNav functionality unlocked after Gym 2, allowing for targeted Pokémon hunting
     - Including Cheat Code to show all DexNav Pokémon from the start: "JUSTSHOWME"
 - Cheat Code system, with many helpful cheats and ways to shake up repeat playthroughs!
@@ -63,7 +67,6 @@ MAJOR TODOS:
     - Runs EventScript_ResetAllBerries (warn user first!)
     - Set flags like FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA
 - REPLACE "Triathlete" with "Competitor" or something close to "Olympic Player"
-- Add "Zookeeper" NPC and trainer class (Harper's outfit will become her Zookeeper outfit!)
 - Continue Mapping and NPC development
     - Next: Kipos Town, west of Port Pello, only accessible via Piraeus
 - Work on ideas from note on phone
