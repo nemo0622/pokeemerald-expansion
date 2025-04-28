@@ -2155,3 +2155,321 @@ static const struct SpriteFrameImage sPicTable_Outfit_Old_Sofos_FWatering[] = {
 static const struct SpriteFrameImage sPicTable_Outfit_Old_Sofos_FDecorating[] = {
     obj_frame_tiles(gObjectEventPic_Outfit_Old_Sofos_FDecorating),
 };
+
+// OUTFIT: Petal M
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_MNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Petal_MNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_MAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Petal_MAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_MSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_MUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Petal_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_MFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Petal_MFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_MFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Petal_MFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_MWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Petal_MWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Petal_MWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_MDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Petal_MDecorating),
+};
+
+// OUTFIT: Petal F
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_FNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Petal_FNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_FAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Petal_FAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_FSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_FUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Petal_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_FFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Petal_FFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_FFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Petal_FFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_FWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Petal_FWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Petal_FWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Petal_FDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Petal_FDecorating),
+};
+
+// OUTFIT: Palati M
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_MNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Palati_MNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_MAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Palati_MAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_MSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_MUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Palati_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_MFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Palati_MFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_MFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Palati_MFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_MWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Palati_MWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Palati_MWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_MDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Palati_MDecorating),
+};
+
+// OUTFIT: Palati F
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_FNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Palati_FNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_FAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Palati_FAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_FSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_FUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Palati_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_FFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Palati_FFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_FFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Palati_FFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_FWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Palati_FWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Palati_FWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Palati_FDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Palati_FDecorating),
+};
+
+// OUTFIT: Ancient M
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_MNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Ancient_MNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_MAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Ancient_MAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_MSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_MUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_MFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Ancient_MFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_MFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Ancient_MFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_MWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_MWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_MDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Ancient_MDecorating),
+};
+
+// OUTFIT: Ancient F
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_FNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Ancient_FNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_FAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Ancient_FAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_FSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_FUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_FFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Ancient_FFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_FFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Ancient_FFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_FWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Ancient_FWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Ancient_FDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Ancient_FDecorating),
+};

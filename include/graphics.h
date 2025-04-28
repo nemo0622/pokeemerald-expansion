@@ -3358,6 +3358,9 @@ extern const u16 gObjectEventPal_Outfit_East_Blue[];
 extern const u16 gObjectEventPal_Outfit_Coral[];
 extern const u16 gObjectEventPal_Outfit_Tropics[];
 extern const u16 gObjectEventPal_Outfit_Old_Sofos[];
+extern const u16 gObjectEventPal_Outfit_Petal[];
+extern const u16 gObjectEventPal_Outfit_Palati[];
+extern const u16 gObjectEventPal_Outfit_Ancient[];
 
 // Outfit trainer sprite palettes
 extern const u32 gTrainerFrontPic_Outfit_Calem[];
@@ -3384,6 +3387,18 @@ extern const u32 gTrainerFrontPic_Outfit_Old_Sofos_M[];
 extern const u32 gTrainerPalette_Outfit_Old_Sofos_M[];
 extern const u32 gTrainerFrontPic_Outfit_Old_Sofos_F[];
 extern const u32 gTrainerPalette_Outfit_Old_Sofos_F[];
+extern const u32 gTrainerFrontPic_Outfit_Petal_M[];
+extern const u32 gTrainerPalette_Outfit_Petal_M[];
+extern const u32 gTrainerFrontPic_Outfit_Petal_F[];
+extern const u32 gTrainerPalette_Outfit_Petal_F[];
+extern const u32 gTrainerFrontPic_Outfit_Palati_M[];
+extern const u32 gTrainerPalette_Outfit_Palati_M[];
+extern const u32 gTrainerFrontPic_Outfit_Palati_F[];
+extern const u32 gTrainerPalette_Outfit_Palati_F[];
+extern const u32 gTrainerFrontPic_Outfit_Ancient_M[];
+extern const u32 gTrainerPalette_Outfit_Ancient_M[];
+extern const u32 gTrainerFrontPic_Outfit_Ancient_F[];
+extern const u32 gTrainerPalette_Outfit_Ancient_F[];
 
 // Mail
 extern const u16 gMailPalette_Orange[];

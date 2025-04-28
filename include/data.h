@@ -170,6 +170,12 @@ extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Tropics_M[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Tropics_F[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Old_Sofos_M[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Old_Sofos_F[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Petal_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Petal_F[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Palati_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Palati_F[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Ancient_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Ancient_F[];
 
 extern const union AffineAnimCmd *const gAffineAnims_BattleSpritePlayerSide[];
 extern const union AffineAnimCmd *const gAffineAnims_BattleSpriteOpponentSide[];

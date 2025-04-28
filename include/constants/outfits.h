@@ -22,8 +22,11 @@
 #define OUTFIT_TRADITIONAL 5 // traditional greek outfits
 #define OUTFIT_OLD_SOFOS 6 // blue (male) / green (female) togas with gold trim
 #define OUTFIT_ZOOKEEPER 7 // outfits unlocked at Sunset Wildlife Conservation Center
-#define OUTFIT_KALOS_FASHION 8 // Calem (male) and Serena (female)
-#define OUTFIT_COUNT 9
+#define OUTFIT_PETAL 8 // Purple outfits with green (m)/gold (f) accessories
+#define OUTFIT_PALATI 9 // blue-white outfits with red accents. Minoan inspired outfits
+#define OUTFIT_ANCIENT 10 // blue-white outfits with red accents. Minoan inspired outfits
+#define OUTFIT_KALOS_FASHION 11 // Calem (male) and Serena (female)
+#define OUTFIT_COUNT 12
 
 // inclusive
 #define OUTFIT_BEGIN OUTFIT_UNIVERSITY_GREEN

@@ -63,20 +63,16 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- ADD "Demo Compatability Update" FUNCTION
-    - Runs EventScript_ResetAllBerries (warn user first!)
-    - Set flags like FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA
+- OUTFIT SYSTEM
+    - Add unlock locations/quests for early-game outfits, up to Zookeeper
+        - Replace 5 mulch with the Zookeeper outfit as reward for Sunset Wildlife Conservation Center 5 donations
+    - After completion, make an announcement with a few of the best outfits!
 - REPLACE "Triathlete" with "Competitor" or something close to "Olympic Player"
 - Continue Mapping and NPC development
     - Next: Kipos Town, west of Port Pello, only accessible via Piraeus
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
-    - New areas: 
-        - Kipos Town ("Garden Town") - port town on the north coast of the southern peninsula of Ilios, west of Port Pello. Covered in flowers and palm trees
-            - Home to the Sunset Wildlife Reserve, a zoo-like area for Pokémon that can be filled by the Player by donating Pokémon, money, and other resources!
-                - Another progression system and maybe another gold star location?
-                - Rewards: Ogerpon masks and eventually Ogerpon itself
-            - Can be sailed to with Piraeus, unlocked after Gym 3 (shows player than some locations can be unlocked only via Piraeus! #gamedesign)
+    - New areas:
         - Lastlight Road - Route leading south of Kipos Town, going up and then down mountains, some snowy Pokémon
         - Tower of Dioxippus - small settlement south of Kipos Town, with a large tower (TrainerDX tiles) and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
             - Named after Dioxippus, the Olympic champion who won combat because nobody was willing to challenge them
@@ -104,12 +100,14 @@ MAJOR TODOS:
     - Rewards with level 10 Johto starters
     - Can be rebattled after the Elite Four (when flag FLAG_SYS_GAME_CLEAR set) to give Johto starter cabin dolls!
 - Implement Biv's Fishing Minigame
-    - Maybe also that upgrade-able fishing rod thing?
-    - Wait until treasure catching is implemented because that's so cool!
-- Mudskip's Outfit system: https://github.com/mudskipper13/pokeemerald/tree/feature/outfits-system-rhh?tab=readme-ov-file
-    - Outfits: Default (Amali & Harper), Calem & Serena (unlocked on catching/choosing a Gen 6 starter), USUM Protagonists (unlocked w/ Gen 7 starter), Arven & Nemona (unlocked w/ Gen 9 starter), Yellow (unlocked w/ catching a Pikachu). Plus a few basic variant customizations for Amali and Harper which can be earned or bought from vendors.
-- Implement Vol's Mining Minigame? https://github.com/volromhacking/pokeemerald-expansion/tree/mining_minigame
+    - Also create options menu toggle for it
+- Implement Vol's Mining Minigame https://github.com/volromhacking/pokeemerald-expansion/tree/mining_minigame
     - Keep up with thread in RHH about it
+- Implement Chris Piché's Game Corner Expansion minigames
+    - Blackjack, Ponyta Racing, and Voltorb Flip are the big ones I care about
+    - Also, remove Pinball Points and integrate Coins into Pinball games!
+        - Pinball games: Cost few coins, give smaller reward
+        - "Luck-based" games: Cost slightly more coins, give larger reward
 
 
 GREEK PHRASES AND STUFF:

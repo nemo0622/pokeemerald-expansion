@@ -670,6 +670,9 @@ static void ForAllCB_FreeOutfitOverworlds(u32 idx, u32 col, u32 row)
 
     if (gSprites[sOutfitMenu->grid->iconSpriteIds[idx]].inUse)
     {
+        // these two palTag lines are new! after a certain amount of outfits, the palettes start to bug. this frees up palettes as you scroll through the menu
+        u16 palTag = GetSpritePaletteTagByPaletteNum(gSprites[sOutfitMenu->grid->iconSpriteIds[idx]].oam.paletteNum);
+        FreeSpritePaletteByTag(palTag);
         DestroySprite(&gSprites[sOutfitMenu->grid->iconSpriteIds[idx]]);
     }
 

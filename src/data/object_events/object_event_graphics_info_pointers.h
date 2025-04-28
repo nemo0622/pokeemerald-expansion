@@ -384,6 +384,57 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Old_
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Old_Sofos_FWatering;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Old_Sofos_FDecorating;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_MNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_MSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_MFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_MAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_MUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_MFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_MWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_MDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_FNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_FSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_FFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_FAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_FUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_FFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_FWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Petal_FDecorating;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_MNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_MSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_MFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_MAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_MUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_MFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_MWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_MDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_FNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_FSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_FFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_FAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_FUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_FFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_FWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Palati_FDecorating;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_MNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_MSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_MFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_MAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_MUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_MFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_MWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_MDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_FNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_FSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_FFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_FAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_FUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_FFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_FWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_FDecorating;
+
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -754,6 +805,54 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_OUTFIT_OLD_SOFOS_F_FISHING] = &gObjectEventGraphicsInfo_Outfit_Old_Sofos_FFishing,
     [OBJ_EVENT_GFX_OUTFIT_OLD_SOFOS_F_WATERING] = &gObjectEventGraphicsInfo_Outfit_Old_Sofos_FWatering,
     [OBJ_EVENT_GFX_OUTFIT_OLD_SOFOS_F_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Old_Sofos_FDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_M_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Petal_MNormal,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_M_SURFING] = &gObjectEventGraphicsInfo_Outfit_Petal_MSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_M_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Petal_MFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_M_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Petal_MAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_M_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Petal_MUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_M_FISHING] = &gObjectEventGraphicsInfo_Outfit_Petal_MFishing,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_M_WATERING] = &gObjectEventGraphicsInfo_Outfit_Petal_MWatering,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_M_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Petal_MDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_F_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Petal_FNormal,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_F_SURFING] = &gObjectEventGraphicsInfo_Outfit_Petal_FSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_F_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Petal_FFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_F_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Petal_FAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_F_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Petal_FUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_F_FISHING] = &gObjectEventGraphicsInfo_Outfit_Petal_FFishing,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_F_WATERING] = &gObjectEventGraphicsInfo_Outfit_Petal_FWatering,
+    [OBJ_EVENT_GFX_OUTFIT_PETAL_F_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Petal_FDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_M_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Palati_MNormal,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_M_SURFING] = &gObjectEventGraphicsInfo_Outfit_Palati_MSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_M_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Palati_MFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_M_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Palati_MAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_M_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Palati_MUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_M_FISHING] = &gObjectEventGraphicsInfo_Outfit_Palati_MFishing,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_M_WATERING] = &gObjectEventGraphicsInfo_Outfit_Palati_MWatering,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_M_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Palati_MDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_F_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Palati_FNormal,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_F_SURFING] = &gObjectEventGraphicsInfo_Outfit_Palati_FSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_F_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Palati_FFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_F_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Palati_FAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_F_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Palati_FUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_F_FISHING] = &gObjectEventGraphicsInfo_Outfit_Palati_FFishing,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_F_WATERING] = &gObjectEventGraphicsInfo_Outfit_Palati_FWatering,
+    [OBJ_EVENT_GFX_OUTFIT_PALATI_F_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Palati_FDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_M_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Ancient_MNormal,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_M_SURFING] = &gObjectEventGraphicsInfo_Outfit_Ancient_MSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_M_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Ancient_MFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_M_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Ancient_MAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_M_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Ancient_MUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_M_FISHING] = &gObjectEventGraphicsInfo_Outfit_Ancient_MFishing,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_M_WATERING] = &gObjectEventGraphicsInfo_Outfit_Ancient_MWatering,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_M_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Ancient_MDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Ancient_FNormal,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_SURFING] = &gObjectEventGraphicsInfo_Outfit_Ancient_FSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Ancient_FFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Ancient_FAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Ancient_FUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_FISHING] = &gObjectEventGraphicsInfo_Outfit_Ancient_FFishing,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_WATERING] = &gObjectEventGraphicsInfo_Outfit_Ancient_FWatering,
+    [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Ancient_FDecorating,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
