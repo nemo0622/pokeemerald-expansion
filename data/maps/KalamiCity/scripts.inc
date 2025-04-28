@@ -777,6 +777,123 @@ KalamiCity_EventScript_Athlete::
 	end
 
 
+KalamiCity_EventScript_Amaura::
+# 481 "data/maps/KalamiCity/scripts.pory"
+	lock
+# 482 "data/maps/KalamiCity/scripts.pory"
+	faceplayer
+# 483 "data/maps/KalamiCity/scripts.pory"
+	speakername KalamiCity_EventScript_Amaura_Text_0
+# 484 "data/maps/KalamiCity/scripts.pory"
+	playmoncry SPECIES_AMAURA, CRY_MODE_NORMAL
+# 485 "data/maps/KalamiCity/scripts.pory"
+	msgbox KalamiCity_EventScript_Amaura_Text_1
+# 486 "data/maps/KalamiCity/scripts.pory"
+	waitmoncry
+# 487 "data/maps/KalamiCity/scripts.pory"
+	closemessage
+# 488 "data/maps/KalamiCity/scripts.pory"
+	release
+	end
+
+
+KalamiCity_EventScript_EastBlueOutfitBeauty::
+# 494 "data/maps/KalamiCity/scripts.pory"
+	lock
+# 495 "data/maps/KalamiCity/scripts.pory"
+	faceplayer
+# 496 "data/maps/KalamiCity/scripts.pory"
+	speakername KalamiCity_EventScript_EastBlueOutfitBeauty_Text_0
+# 497 "data/maps/KalamiCity/scripts.pory"
+	checkoutfitflag OUTFIT_EAST_BLUE
+# 499 "data/maps/KalamiCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq KalamiCity_EventScript_EastBlueOutfitBeauty_2
+# 549 "data/maps/KalamiCity/scripts.pory"
+	msgbox KalamiCity_EventScript_EastBlueOutfitBeauty_Text_7
+# 550 "data/maps/KalamiCity/scripts.pory"
+	closemessage
+KalamiCity_EventScript_EastBlueOutfitBeauty_1:
+# 552 "data/maps/KalamiCity/scripts.pory"
+	release
+	end
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_2:
+# 501 "data/maps/KalamiCity/scripts.pory"
+	msgbox KalamiCity_EventScript_EastBlueOutfitBeauty_Text_1
+# 502 "data/maps/KalamiCity/scripts.pory"
+	closemessage
+# 503 "data/maps/KalamiCity/scripts.pory"
+	delay 5
+# 504 "data/maps/KalamiCity/scripts.pory"
+	showmoneybox 0, 0
+# 505 "data/maps/KalamiCity/scripts.pory"
+	speakername KalamiCity_EventScript_EastBlueOutfitBeauty_Text_0
+# 506 "data/maps/KalamiCity/scripts.pory"
+	msgbox KalamiCity_EventScript_EastBlueOutfitBeauty_Text_2, MSGBOX_YESNO
+# 507 "data/maps/KalamiCity/scripts.pory"
+	closemessage
+# 508 "data/maps/KalamiCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq KalamiCity_EventScript_EastBlueOutfitBeauty_5
+# 520 "data/maps/KalamiCity/scripts.pory"
+	checkmoney 6000
+# 521 "data/maps/KalamiCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq KalamiCity_EventScript_EastBlueOutfitBeauty_8
+# 532 "data/maps/KalamiCity/scripts.pory"
+	removemoney 6000
+# 533 "data/maps/KalamiCity/scripts.pory"
+	updatemoneybox
+# 534 "data/maps/KalamiCity/scripts.pory"
+	delay 5
+# 535 "data/maps/KalamiCity/scripts.pory"
+	unlockoutfit OUTFIT_EAST_BLUE
+# 536 "data/maps/KalamiCity/scripts.pory"
+	msgbox KalamiCity_EventScript_EastBlueOutfitBeauty_Text_5
+# 537 "data/maps/KalamiCity/scripts.pory"
+	delay 20
+# 538 "data/maps/KalamiCity/scripts.pory"
+	closemessage
+# 539 "data/maps/KalamiCity/scripts.pory"
+	hidemoneybox
+# 540 "data/maps/KalamiCity/scripts.pory"
+	delay 5
+# 541 "data/maps/KalamiCity/scripts.pory"
+	speakername KalamiCity_EventScript_EastBlueOutfitBeauty_Text_0
+# 542 "data/maps/KalamiCity/scripts.pory"
+	msgbox KalamiCity_EventScript_EastBlueOutfitBeauty_Text_6
+# 543 "data/maps/KalamiCity/scripts.pory"
+	closemessage
+	goto KalamiCity_EventScript_EastBlueOutfitBeauty_1
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_5:
+# 510 "data/maps/KalamiCity/scripts.pory"
+	hidemoneybox
+# 511 "data/maps/KalamiCity/scripts.pory"
+	speakername KalamiCity_EventScript_EastBlueOutfitBeauty_Text_0
+# 512 "data/maps/KalamiCity/scripts.pory"
+	msgbox KalamiCity_EventScript_EastBlueOutfitBeauty_Text_3
+# 513 "data/maps/KalamiCity/scripts.pory"
+	closemessage
+# 514 "data/maps/KalamiCity/scripts.pory"
+	release
+	end
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_8:
+# 523 "data/maps/KalamiCity/scripts.pory"
+	hidemoneybox
+# 524 "data/maps/KalamiCity/scripts.pory"
+	speakername KalamiCity_EventScript_EastBlueOutfitBeauty_Text_0
+# 525 "data/maps/KalamiCity/scripts.pory"
+	msgbox KalamiCity_EventScript_EastBlueOutfitBeauty_Text_4
+# 526 "data/maps/KalamiCity/scripts.pory"
+	closemessage
+# 527 "data/maps/KalamiCity/scripts.pory"
+	release
+	end
+
+
 KalamiCity_EventScript_Piraeus_Text_0:
 # 32 "data/maps/KalamiCity/scripts.pory"
 	.string "Strange Sailor$"
@@ -1165,3 +1282,54 @@ KalamiCity_EventScript_Athlete_Text_1:
 	.string "I'm training in the shallow water to\n"
 	.string "make my legs stronger! At this rate, I'll\l"
 	.string "be the fastest guy in Ilios!$"
+
+KalamiCity_EventScript_Amaura_Text_0:
+# 483 "data/maps/KalamiCity/scripts.pory"
+	.string "Amaura$"
+
+KalamiCity_EventScript_Amaura_Text_1:
+# 485 "data/maps/KalamiCity/scripts.pory"
+	.string "Hraaah...!$"
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_Text_0:
+# 496 "data/maps/KalamiCity/scripts.pory"
+	.string "Fashionista$"
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_Text_1:
+# 501 "data/maps/KalamiCity/scripts.pory"
+	.string "My sweet, colorful Amaura has inspired\n"
+	.string "me to put together a new outfit!$"
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_Text_2:
+# 506 "data/maps/KalamiCity/scripts.pory"
+	.string "I can tell you have a sharp eye for\n"
+	.string "fashion! I'll give you this {COLOR GREEN}East Ilios\l"
+	.string "Blue Outfit{COLOR DARK_GRAY} for just ¥6000. How about\l"
+	.string "it?$"
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_Text_3:
+# 512 "data/maps/KalamiCity/scripts.pory"
+	.string "No? But I thought you were into\n"
+	.string "fashion!$"
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_Text_4:
+# 525 "data/maps/KalamiCity/scripts.pory"
+	.string "Hey, you don't have the money for that!$"
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_Text_5:
+# 536 "data/maps/KalamiCity/scripts.pory"
+	.string "The East Ilios Blue Outfit has been\n"
+	.string "added to the Outfit Box!$"
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_Text_6:
+# 542 "data/maps/KalamiCity/scripts.pory"
+	.string "Sweet! The East Ilios Blue Outfit\n"
+	.string "incorporates the most recent fashion\l"
+	.string "trends from the coastal areas of the\l"
+	.string "region.$"
+
+KalamiCity_EventScript_EastBlueOutfitBeauty_Text_7:
+# 549 "data/maps/KalamiCity/scripts.pory"
+	.string "Have you tried on the East Ilios Blue\n"
+	.string "Outfit? It sticks to the coolest, most\l"
+	.string "recent fashion trends!$"

@@ -154,20 +154,20 @@ KiposTown_ConservationCenter_MrRussel::
 	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
 # 95 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	goto_if_unset FLAG_COMPLETED_ZOO_DONATIONS, KiposTown_ConservationCenter_MrRussel_2
-# 218 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	applymovement 10, Common_Movement_Heart
 # 219 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	waitmovement 0
+	applymovement 10, Common_Movement_Heart
 # 220 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 10
+	waitmovement 0
 # 221 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
+	delay 10
 # 222 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_MrRussel_Text_14
+	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
 # 223 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_MrRussel_Text_15
+# 224 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
 KiposTown_ConservationCenter_MrRussel_1:
-# 225 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 226 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	release
 	end
 
@@ -182,33 +182,33 @@ KiposTown_ConservationCenter_MrRussel_2:
 	compare VAR_TOTAL_NUM_ZOO_DONATIONS, 5
 	goto_if_ge KiposTown_ConservationCenter_MrRussel_23
 KiposTown_ConservationCenter_MrRussel_21:
-# 118 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 119 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	compare VAR_TOTAL_NUM_ZOO_DONATIONS, 10
 	goto_if_ge KiposTown_ConservationCenter_MrRussel_20
 KiposTown_ConservationCenter_MrRussel_18:
-# 138 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 139 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	compare VAR_TOTAL_NUM_ZOO_DONATIONS, 20
 	goto_if_ge KiposTown_ConservationCenter_MrRussel_17
 KiposTown_ConservationCenter_MrRussel_15:
-# 155 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 156 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	compare VAR_TOTAL_NUM_ZOO_DONATIONS, 30
 	goto_if_ge KiposTown_ConservationCenter_MrRussel_14
 KiposTown_ConservationCenter_MrRussel_12:
-# 178 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 179 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	compare VAR_TOTAL_NUM_ZOO_DONATIONS, 46
 	goto_if_ge KiposTown_ConservationCenter_MrRussel_11
 KiposTown_ConservationCenter_MrRussel_10:
-# 206 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_TOTAL_NUM_ZOO_DONATIONS
 # 207 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_TOTAL_NUM_ZOO_DONATIONS
+# 208 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	compare VAR_TOTAL_NUM_ZOO_DONATIONS, 0
 	goto_if_eq KiposTown_ConservationCenter_MrRussel_27
 KiposTown_ConservationCenter_MrRussel_26:
-# 211 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
 # 212 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_MrRussel_Text_13
+	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
 # 213 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_MrRussel_Text_14
+# 214 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
 	goto KiposTown_ConservationCenter_MrRussel_1
 
@@ -228,192 +228,194 @@ KiposTown_ConservationCenter_MrRussel_5:
 # 109 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	delay 5
 # 110 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	giveitem ITEM_AMAZE_MULCH, 5
+	unlockoutfit OUTFIT_ZOOKEEPER
 # 111 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 112 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 113 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
-# 114 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	msgbox KiposTown_ConservationCenter_MrRussel_Text_2
-# 115 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 112 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
+# 113 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 114 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
+# 115 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_MrRussel_Text_3
 # 116 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 117 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	setflag FLAG_DONATED_5_ZOO_POKEMON
 	goto KiposTown_ConservationCenter_MrRussel_1
 
 KiposTown_ConservationCenter_MrRussel_6:
-# 120 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	applymovement 10, Common_Movement_ExclamationMark
 # 121 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	waitmovement 0
+	applymovement 10, Common_Movement_ExclamationMark
 # 122 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 10
+	waitmovement 0
 # 123 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
+	delay 10
 # 124 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_MrRussel_Text_3
-# 125 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 126 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 127 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	giveitem ITEM_NEST_BALL, 5
-# 128 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 129 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 130 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	giveitem ITEM_REPEAT_BALL, 5
-# 131 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 132 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 133 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
-# 134 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 125 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	msgbox KiposTown_ConservationCenter_MrRussel_Text_4
-# 135 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 126 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
+# 127 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 128 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	giveitem ITEM_NEST_BALL, 5
+# 129 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 130 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 131 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	giveitem ITEM_REPEAT_BALL, 5
+# 132 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 133 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 134 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
+# 135 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_MrRussel_Text_5
 # 136 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 137 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	setflag FLAG_DONATED_10_ZOO_POKEMON
 	goto KiposTown_ConservationCenter_MrRussel_1
 
 KiposTown_ConservationCenter_MrRussel_7:
-# 140 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	applymovement 10, Common_Movement_ExclamationMark
 # 141 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	waitmovement 0
+	applymovement 10, Common_Movement_ExclamationMark
 # 142 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 10
+	waitmovement 0
 # 143 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
+	delay 10
 # 144 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_MrRussel_Text_5
-# 145 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 146 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 147 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	giveitem ITEM_MASTER_BALL, 1
-# 148 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 149 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 150 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
-# 151 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 145 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	msgbox KiposTown_ConservationCenter_MrRussel_Text_6
-# 152 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 146 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
+# 147 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 148 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	giveitem ITEM_MASTER_BALL, 1
+# 149 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 150 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 151 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
+# 152 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_MrRussel_Text_7
 # 153 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 154 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	setflag FLAG_DONATED_20_ZOO_POKEMON
 	goto KiposTown_ConservationCenter_MrRussel_1
 
 KiposTown_ConservationCenter_MrRussel_8:
-# 157 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	applymovement 10, Common_Movement_ExclamationMark
 # 158 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	waitmovement 0
+	applymovement 10, Common_Movement_ExclamationMark
 # 159 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 10
+	waitmovement 0
 # 160 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
+	delay 10
 # 161 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_MrRussel_Text_7
-# 162 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 163 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 164 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	giveitem ITEM_CORNERSTONE_MASK, 1
-# 165 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 166 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 167 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	giveitem ITEM_WELLSPRING_MASK, 1
-# 168 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 169 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 170 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	giveitem ITEM_HEARTHFLAME_MASK, 1
-# 171 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 172 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 173 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
-# 174 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 162 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	msgbox KiposTown_ConservationCenter_MrRussel_Text_8
-# 175 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 163 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
+# 164 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 165 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	giveitem ITEM_CORNERSTONE_MASK, 1
+# 166 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 167 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 168 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	giveitem ITEM_WELLSPRING_MASK, 1
+# 169 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 170 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 171 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	giveitem ITEM_HEARTHFLAME_MASK, 1
+# 172 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 173 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 174 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
+# 175 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_MrRussel_Text_9
 # 176 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 177 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	setflag FLAG_DONATED_30_ZOO_POKEMON
 	goto KiposTown_ConservationCenter_MrRussel_1
 
 KiposTown_ConservationCenter_MrRussel_9:
-# 180 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	applymovement 10, Common_Movement_ExclamationMark
 # 181 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	waitmovement 0
+	applymovement 10, Common_Movement_ExclamationMark
 # 182 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 10
+	waitmovement 0
 # 183 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
+	delay 10
 # 184 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_MrRussel_Text_9
-# 185 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 186 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 188 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_OGERPON
-# 189 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	givemon SPECIES_OGERPON, 30
-# 190 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 191 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_MrRussel_Text_10
-# 192 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	waitfanfare
-# 193 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 194 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 196 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
-# 197 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_MrRussel_Text_11
-# 198 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 185 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_MrRussel_Text_10
+# 186 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
-# 200 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	setflag FLAG_COMPLETED_ZOO_DONATIONS
+# 187 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 189 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_OGERPON
+# 190 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	givemon SPECIES_OGERPON, 30
+# 191 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 192 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_MrRussel_Text_11
+# 193 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	waitfanfare
+# 194 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 195 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 197 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	speakername KiposTown_ConservationCenter_EventScript_PlayerShownAround_Text_0
+# 198 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_MrRussel_Text_12
+# 199 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
 # 201 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 20
+	setflag FLAG_COMPLETED_ZOO_DONATIONS
 # 202 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 20
+# 203 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	completequest QUEST_ZOOKEEPER
 	goto KiposTown_ConservationCenter_MrRussel_1
 
 KiposTown_ConservationCenter_MrRussel_11:
-# 178 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 179 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	goto_if_unset FLAG_COMPLETED_ZOO_DONATIONS, KiposTown_ConservationCenter_MrRussel_9
 	goto KiposTown_ConservationCenter_MrRussel_10
 
 KiposTown_ConservationCenter_MrRussel_14:
-# 155 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 156 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	goto_if_unset FLAG_DONATED_30_ZOO_POKEMON, KiposTown_ConservationCenter_MrRussel_8
 	goto KiposTown_ConservationCenter_MrRussel_12
 
 KiposTown_ConservationCenter_MrRussel_17:
-# 138 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 139 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	goto_if_unset FLAG_DONATED_20_ZOO_POKEMON, KiposTown_ConservationCenter_MrRussel_7
 	goto KiposTown_ConservationCenter_MrRussel_15
 
 KiposTown_ConservationCenter_MrRussel_20:
-# 118 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 119 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	goto_if_unset FLAG_DONATED_10_ZOO_POKEMON, KiposTown_ConservationCenter_MrRussel_6
 	goto KiposTown_ConservationCenter_MrRussel_18
 
@@ -423,200 +425,200 @@ KiposTown_ConservationCenter_MrRussel_23:
 	goto KiposTown_ConservationCenter_MrRussel_21
 
 KiposTown_ConservationCenter_MrRussel_27:
-# 209 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	bufferstring STR_VAR_1, KiposTown_ConservationCenter_MrRussel_Text_12
+# 210 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	bufferstring STR_VAR_1, KiposTown_ConservationCenter_MrRussel_Text_13
 	goto KiposTown_ConservationCenter_MrRussel_26
 
 
 KiposTown_ConservationCenter_EventScript_Artist::
-# 231 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	lock
 # 232 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	faceplayer
+	lock
 # 233 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_Artist_Text_0
+	faceplayer
 # 234 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Artist_Text_1
+	speakername KiposTown_ConservationCenter_EventScript_Artist_Text_0
 # 235 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
+	msgbox KiposTown_ConservationCenter_EventScript_Artist_Text_1
 # 236 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 237 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	release
 	end
 
 
 KiposTown_ConservationCenter_EventScript_Handywoman::
-# 242 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	lock
 # 243 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	faceplayer
+	lock
 # 244 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_Handywoman_Text_0
+	faceplayer
 # 245 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Handywoman_Text_1
+	speakername KiposTown_ConservationCenter_EventScript_Handywoman_Text_0
 # 246 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
+	msgbox KiposTown_ConservationCenter_EventScript_Handywoman_Text_1
 # 247 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 248 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	release
 	end
 
 
 KiposTown_ConservationCenter_EventScript_ComputerGuy::
-# 253 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	lock
 # 254 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	faceplayer
+	lock
 # 255 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_ComputerGuy_Text_0
+	faceplayer
 # 256 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_ComputerGuy_Text_1
+	speakername KiposTown_ConservationCenter_EventScript_ComputerGuy_Text_0
 # 257 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
+	msgbox KiposTown_ConservationCenter_EventScript_ComputerGuy_Text_1
 # 258 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 259 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	release
 	end
 
 
 KiposTown_ConservationCenter_EventScript_Scientist::
-# 264 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	lock
 # 265 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	faceplayer
+	lock
 # 266 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	faceplayer
+# 267 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	speakername KiposTown_ConservationCenter_EventScript_Scientist_Text_0
-# 269 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_BRAVIARY_AT_ZOO
 # 270 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_BRAVIARY_AT_ZOO
+# 271 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq KiposTown_ConservationCenter_EventScript_Scientist_2
-# 279 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_BRAVIARY_AT_ZOO
 # 280 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_BRAVIARY_AT_ZOO
+# 281 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq KiposTown_ConservationCenter_EventScript_Scientist_5
-# 290 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_3
 # 291 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_3
+# 292 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
-# 293 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	getcaughtmon SPECIES_BRAVIARY
 # 294 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	getcaughtmon SPECIES_BRAVIARY
+# 295 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	delay 30
-# 296 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 297 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq KiposTown_ConservationCenter_EventScript_Scientist_8
-# 304 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	applymovement 3, Common_Movement_Heart
 # 305 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	waitmovement 0
+	applymovement 3, Common_Movement_Heart
 # 306 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 10
+	waitmovement 0
 # 307 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_Scientist_Text_0
+	delay 10
 # 308 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_5
-# 309 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 310 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 311 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	giveitem ITEM_THICK_CLUB
-# 312 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
-# 313 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 5
-# 314 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	speakername KiposTown_ConservationCenter_EventScript_Scientist_Text_0
-# 315 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_6
-# 316 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 309 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_5
+# 310 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
-# 318 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 20
+# 311 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 312 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	giveitem ITEM_THICK_CLUB
+# 313 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 314 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 5
+# 315 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	speakername KiposTown_ConservationCenter_EventScript_Scientist_Text_0
+# 316 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_6
+# 317 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
 # 319 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 20
+# 320 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	completequest QUEST_SHOW_BRAVIARY_AT_ZOO
 KiposTown_ConservationCenter_EventScript_Scientist_4:
-# 322 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 323 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	release
 	end
 
 KiposTown_ConservationCenter_EventScript_Scientist_2:
-# 272 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_1
 # 273 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
+	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_1
 # 274 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 275 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	release
 	end
 
 KiposTown_ConservationCenter_EventScript_Scientist_5:
-# 282 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_2
 # 283 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_2
+# 284 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
-# 285 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	delay 20
 # 286 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	delay 20
+# 287 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	startquest QUEST_SHOW_BRAVIARY_AT_ZOO
 	goto KiposTown_ConservationCenter_EventScript_Scientist_4
 
 KiposTown_ConservationCenter_EventScript_Scientist_8:
-# 298 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_Scientist_Text_0
 # 299 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_4
+	speakername KiposTown_ConservationCenter_EventScript_Scientist_Text_0
 # 300 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	msgbox KiposTown_ConservationCenter_EventScript_Scientist_Text_4
+# 301 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	closemessage
 	goto KiposTown_ConservationCenter_EventScript_Scientist_4
 
 
 KiposTown_ConservationCenter_EventScript_Vullaby::
-# 328 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	lock
 # 329 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	faceplayer
+	lock
 # 330 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_Vullaby_Text_0
+	faceplayer
 # 331 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	playmoncry SPECIES_VULLABY, CRY_MODE_NORMAL
+	speakername KiposTown_ConservationCenter_EventScript_Vullaby_Text_0
 # 332 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Vullaby_Text_1
+	playmoncry SPECIES_VULLABY, CRY_MODE_NORMAL
 # 333 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	waitmoncry
+	msgbox KiposTown_ConservationCenter_EventScript_Vullaby_Text_1
 # 334 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
+	waitmoncry
 # 335 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 336 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	release
 	end
 
 
 KiposTown_ConservationCenter_EventScript_Mandibuzz::
-# 340 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	lock
 # 341 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	faceplayer
+	lock
 # 342 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	speakername KiposTown_ConservationCenter_EventScript_Mandibuzz_Text_0
+	faceplayer
 # 343 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	playmoncry SPECIES_MANDIBUZZ, CRY_MODE_NORMAL
+	speakername KiposTown_ConservationCenter_EventScript_Mandibuzz_Text_0
 # 344 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Mandibuzz_Text_1
+	playmoncry SPECIES_MANDIBUZZ, CRY_MODE_NORMAL
 # 345 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	waitmoncry
+	msgbox KiposTown_ConservationCenter_EventScript_Mandibuzz_Text_1
 # 346 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
+	waitmoncry
 # 347 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 348 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	release
 	end
 
 
 KiposTown_ConservationCenter_EventScript_Egg::
-# 352 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	lock
 # 353 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	msgbox KiposTown_ConservationCenter_EventScript_Egg_Text_0
+	lock
 # 354 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	closemessage
+	msgbox KiposTown_ConservationCenter_EventScript_Egg_Text_0
 # 355 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	closemessage
+# 356 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	release
 	end
 
@@ -664,26 +666,31 @@ KiposTown_ConservationCenter_MrRussel_Text_1:
 	.string "Pokémon{COLOR DARK_GRAY} to the Sunset Wildlife Zoo!\p"
 	.string "Hey, this is a great start to bringing\n"
 	.string "the Zoo back to it's former glory! Here,\l"
-	.string "I want you to have these.$"
+	.string "I want you to have this.$"
 
 KiposTown_ConservationCenter_MrRussel_Text_2:
-# 114 "data/maps/KiposTown_ConservationCenter/scripts.pory"
-	.string "We had some nutrient-rich Berry soil\n"
-	.string "left over, and who better to take it\l"
-	.string "than you?\p"
+# 111 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	.string "The Zookeeper Outfit has been added to\n"
+	.string "the Outfit Box!$"
+
+KiposTown_ConservationCenter_MrRussel_Text_3:
+# 115 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+	.string "Our loyal Zookeepers wear outfits like\n"
+	.string "that. By donating Pokémon, you're sort\l"
+	.string "of a Zookeeper yourself!\p"
 	.string "Thank you so much for your help so far,\n"
 	.string "{PLAYER}. When youn can, keep\l"
 	.string "stopping by and donating more Pokémon!$"
 
-KiposTown_ConservationCenter_MrRussel_Text_3:
-# 124 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_4:
+# 125 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "It looks like you've donated at least {COLOR GREEN}10\n"
 	.string "Pokémon{COLOR DARK_GRAY} to the Sunset Wildlife Zoo!\p"
 	.string "Wow, you're on a roll! Here, I have more\n"
 	.string "gifts for you.$"
 
-KiposTown_ConservationCenter_MrRussel_Text_4:
-# 134 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_5:
+# 135 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Those Poké ball varieties work best on\n"
 	.string "low-leveled or previously caught\l"
 	.string "Pokémon. Perfect for helping fill out\l"
@@ -692,16 +699,16 @@ KiposTown_ConservationCenter_MrRussel_Text_4:
 	.string "{PLAYER}. When youn can, keep\l"
 	.string "stopping by and donating more Pokémon!$"
 
-KiposTown_ConservationCenter_MrRussel_Text_5:
-# 144 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_6:
+# 145 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "It looks like you've donated at least {COLOR GREEN}20\n"
 	.string "Pokémon{COLOR DARK_GRAY} to the Sunset Wildlife Zoo!\p"
 	.string "The Zoo is really picking up again,\n"
 	.string "thanks to you! Take this as a token of\l"
 	.string "our appreciation.$"
 
-KiposTown_ConservationCenter_MrRussel_Text_6:
-# 151 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_7:
+# 152 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "That's a very special Poké ball,\n"
 	.string "designed to capture any Pokémon\l"
 	.string "without fail. Only use it when it's\l"
@@ -710,8 +717,8 @@ KiposTown_ConservationCenter_MrRussel_Text_6:
 	.string "{PLAYER}. When youn can, keep\l"
 	.string "stopping by and donating more Pokémon!$"
 
-KiposTown_ConservationCenter_MrRussel_Text_7:
-# 161 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_8:
+# 162 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "It looks like you've donated at least {COLOR GREEN}30\n"
 	.string "Pokémon{COLOR DARK_GRAY} to the Sunset Wildlife Zoo!\p"
 	.string "Amazing, the Zoo is filling right back\n"
@@ -725,8 +732,8 @@ KiposTown_ConservationCenter_MrRussel_Text_7:
 	.string "might be {COLOR GREEN}connected to it{COLOR DARK_GRAY}. Check these\l"
 	.string "out.$"
 
-KiposTown_ConservationCenter_MrRussel_Text_8:
-# 174 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_9:
+# 175 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Those {COLOR GREEN}Masks{COLOR DARK_GRAY} were found by a Zookeeper\n"
 	.string "by the mouth of the cave. For now, you\l"
 	.string "can hold onto them until we learn more.\p"
@@ -734,8 +741,8 @@ KiposTown_ConservationCenter_MrRussel_Text_8:
 	.string "{PLAYER}. When youn can, keep\l"
 	.string "stopping by and donating more Pokémon!$"
 
-KiposTown_ConservationCenter_MrRussel_Text_9:
-# 184 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_10:
+# 185 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "{PLAYER}! You... you've done it! All {COLOR GREEN}46\n"
 	.string "Pokémon{COLOR DARK_GRAY} spots at the Sunset Wildlife\l"
 	.string "Zoo have been filled, thanks to you!\p"
@@ -755,12 +762,12 @@ KiposTown_ConservationCenter_MrRussel_Text_9:
 	.string "the Trainer who restored the Zoo! Here,\l"
 	.string "we want you to have it.$"
 
-KiposTown_ConservationCenter_MrRussel_Text_10:
-# 191 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_11:
+# 192 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "{PLAYER} received the Ogerpon!$"
 
-KiposTown_ConservationCenter_MrRussel_Text_11:
-# 197 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_12:
+# 198 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Make sure to show Ogerpon your love and\n"
 	.string "respect, just as you have with all the\l"
 	.string "Pokémon you've sent our way.\p"
@@ -769,12 +776,12 @@ KiposTown_ConservationCenter_MrRussel_Text_11:
 	.string "and visit your Pokémon here whenever\l"
 	.string "you're in town!$"
 
-KiposTown_ConservationCenter_MrRussel_Text_12:
-# 209 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_13:
+# 210 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "0$"
 
-KiposTown_ConservationCenter_MrRussel_Text_13:
-# 212 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_14:
+# 213 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "You've donated {STR_VAR_1} Pokémon\n"
 	.string "to the Sunset Wildlife Zoo so far.\p"
 	.string "I know it's a lot to put onto one young\n"
@@ -784,8 +791,8 @@ KiposTown_ConservationCenter_MrRussel_Text_13:
 	.string "can. The Conservation Center team and\l"
 	.string "I have {COLOR GREEN}rewards{COLOR DARK_GRAY} to give!$"
 
-KiposTown_ConservationCenter_MrRussel_Text_14:
-# 222 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+KiposTown_ConservationCenter_MrRussel_Text_15:
+# 223 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "{PLAYER}! Welcome back! More visitors\n"
 	.string "are coming to the Sunset Wildlife Zoo\l"
 	.string "than ever, all thanks to your efforts.\l"
@@ -793,11 +800,11 @@ KiposTown_ConservationCenter_MrRussel_Text_14:
 	.string "Enclosures!$"
 
 KiposTown_ConservationCenter_EventScript_Artist_Text_0:
-# 233 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 234 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Artist$"
 
 KiposTown_ConservationCenter_EventScript_Artist_Text_1:
-# 234 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 235 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "I make promotional art for the\n"
 	.string "Conservation Center. Making people\l"
 	.string "aware of conservation issues is half\l"
@@ -805,11 +812,11 @@ KiposTown_ConservationCenter_EventScript_Artist_Text_1:
 	.string "a great way to make people care!$"
 
 KiposTown_ConservationCenter_EventScript_Handywoman_Text_0:
-# 244 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 245 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Handywoman$"
 
 KiposTown_ConservationCenter_EventScript_Handywoman_Text_1:
-# 245 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 246 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Phew, working with wildlife is hard! I\n"
 	.string "spend part of my day making enrichment\l"
 	.string "toys for Pokémon, and the rest of the\l"
@@ -818,11 +825,11 @@ KiposTown_ConservationCenter_EventScript_Handywoman_Text_1:
 	.string "difference here!$"
 
 KiposTown_ConservationCenter_EventScript_ComputerGuy_Text_0:
-# 255 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 256 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Computer Guy$"
 
 KiposTown_ConservationCenter_EventScript_ComputerGuy_Text_1:
-# 256 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 257 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Everybody knows you need a good\n"
 	.string "Computer Guy! Running websites, doing\l"
 	.string "social media outreach, and writing up\l"
@@ -833,18 +840,18 @@ KiposTown_ConservationCenter_EventScript_ComputerGuy_Text_1:
 	.string "to make that happen!$"
 
 KiposTown_ConservationCenter_EventScript_Scientist_Text_0:
-# 266 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 267 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Scientist$"
 
 KiposTown_ConservationCenter_EventScript_Scientist_Text_1:
-# 272 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 273 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Mandibuzz and Vullaby are such curious\n"
 	.string "Pokémon. Thanks to your help, we know\l"
 	.string "that Mandibuzz likely produced her\l"
 	.string "Eggs with a Braviary!$"
 
 KiposTown_ConservationCenter_EventScript_Scientist_Text_2:
-# 282 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 283 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Our research has only found female\n"
 	.string "Mandibuzz, but this individual produced\l"
 	.string "Eggs. Obviously, this has left us more\l"
@@ -858,7 +865,7 @@ KiposTown_ConservationCenter_EventScript_Scientist_Text_2:
 	.string "hypothesis!$"
 
 KiposTown_ConservationCenter_EventScript_Scientist_Text_3:
-# 290 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 291 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "{PLAYER}, welcome back! We're still\n"
 	.string "investigating Mandibuzz and her Egg.\l"
 	.string "All Mandibuzz we've recorded are female,\l"
@@ -868,7 +875,7 @@ KiposTown_ConservationCenter_EventScript_Scientist_Text_3:
 	.string "could help us a lot!$"
 
 KiposTown_ConservationCenter_EventScript_Scientist_Text_4:
-# 299 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 300 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "No Pokédex entry, huh? It's alright,\n"
 	.string "work on this at your own pace!\p"
 	.string "Wild Braviary are only males, so we think\n"
@@ -878,7 +885,7 @@ KiposTown_ConservationCenter_EventScript_Scientist_Text_4:
 	.string "whenever you can!$"
 
 KiposTown_ConservationCenter_EventScript_Scientist_Text_5:
-# 308 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 309 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Hey, check it out! You've got a full\n"
 	.string "Braviary Pokédex entry!\p"
 	.string "Hmm... yes, this information lines up\n"
@@ -890,7 +897,7 @@ KiposTown_ConservationCenter_EventScript_Scientist_Text_5:
 	.string "take this!$"
 
 KiposTown_ConservationCenter_EventScript_Scientist_Text_6:
-# 315 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 316 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "The Thick Club is an item sometimes held\n"
 	.string "by wild Cubone and Marowak, drastically\l"
 	.string "increasing their strength. Surprisingly,\l"
@@ -899,23 +906,23 @@ KiposTown_ConservationCenter_EventScript_Scientist_Text_6:
 	.string "will always fascinate me.$"
 
 KiposTown_ConservationCenter_EventScript_Vullaby_Text_0:
-# 330 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 331 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Vullaby$"
 
 KiposTown_ConservationCenter_EventScript_Vullaby_Text_1:
-# 332 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 333 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Cheep keep!$"
 
 KiposTown_ConservationCenter_EventScript_Mandibuzz_Text_0:
-# 342 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 343 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Mandibuzz$"
 
 KiposTown_ConservationCenter_EventScript_Mandibuzz_Text_1:
-# 344 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 345 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "Kraaww!$"
 
 KiposTown_ConservationCenter_EventScript_Egg_Text_0:
-# 353 "data/maps/KiposTown_ConservationCenter/scripts.pory"
+# 354 "data/maps/KiposTown_ConservationCenter/scripts.pory"
 	.string "This is the Egg the Mandibuzz laid.\n"
 	.string "Sometimes, Mandibuzz sits on it to keep\l"
 	.string "it warm!$"

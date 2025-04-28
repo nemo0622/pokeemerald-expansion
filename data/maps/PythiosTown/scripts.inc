@@ -910,6 +910,123 @@ PythiosTown_EventScripts_PIRAEUS_14:
 	end
 
 
+PythiosTown_EventScript_Ariados::
+# 536 "data/maps/PythiosTown/scripts.pory"
+	lock
+# 537 "data/maps/PythiosTown/scripts.pory"
+	faceplayer
+# 538 "data/maps/PythiosTown/scripts.pory"
+	speakername PythiosTown_EventScript_Ariados_Text_0
+# 539 "data/maps/PythiosTown/scripts.pory"
+	playmoncry SPECIES_ARIADOS, CRY_MODE_NORMAL
+# 540 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_Ariados_Text_1
+# 541 "data/maps/PythiosTown/scripts.pory"
+	waitmoncry
+# 542 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 543 "data/maps/PythiosTown/scripts.pory"
+	release
+	end
+
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress::
+# 549 "data/maps/PythiosTown/scripts.pory"
+	lock
+# 550 "data/maps/PythiosTown/scripts.pory"
+	faceplayer
+# 551 "data/maps/PythiosTown/scripts.pory"
+	speakername PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_0
+# 552 "data/maps/PythiosTown/scripts.pory"
+	checkoutfitflag OUTFIT_TRADITIONAL
+# 554 "data/maps/PythiosTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq PythiosTown_EventScript_TraditionalOutfitSeamstress_2
+# 604 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_7
+# 605 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+PythiosTown_EventScript_TraditionalOutfitSeamstress_1:
+# 607 "data/maps/PythiosTown/scripts.pory"
+	release
+	end
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_2:
+# 556 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_1
+# 557 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 558 "data/maps/PythiosTown/scripts.pory"
+	delay 5
+# 559 "data/maps/PythiosTown/scripts.pory"
+	showmoneybox 0, 0
+# 560 "data/maps/PythiosTown/scripts.pory"
+	speakername PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_0
+# 561 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_2, MSGBOX_YESNO
+# 562 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 563 "data/maps/PythiosTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq PythiosTown_EventScript_TraditionalOutfitSeamstress_5
+# 575 "data/maps/PythiosTown/scripts.pory"
+	checkmoney 9800
+# 576 "data/maps/PythiosTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq PythiosTown_EventScript_TraditionalOutfitSeamstress_8
+# 587 "data/maps/PythiosTown/scripts.pory"
+	removemoney 9800
+# 588 "data/maps/PythiosTown/scripts.pory"
+	updatemoneybox
+# 589 "data/maps/PythiosTown/scripts.pory"
+	delay 5
+# 590 "data/maps/PythiosTown/scripts.pory"
+	unlockoutfit OUTFIT_TRADITIONAL
+# 591 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_5
+# 592 "data/maps/PythiosTown/scripts.pory"
+	delay 20
+# 593 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 594 "data/maps/PythiosTown/scripts.pory"
+	hidemoneybox
+# 595 "data/maps/PythiosTown/scripts.pory"
+	delay 5
+# 596 "data/maps/PythiosTown/scripts.pory"
+	speakername PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_0
+# 597 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_6
+# 598 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+	goto PythiosTown_EventScript_TraditionalOutfitSeamstress_1
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_5:
+# 565 "data/maps/PythiosTown/scripts.pory"
+	hidemoneybox
+# 566 "data/maps/PythiosTown/scripts.pory"
+	speakername PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_0
+# 567 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_3
+# 568 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 569 "data/maps/PythiosTown/scripts.pory"
+	release
+	end
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_8:
+# 578 "data/maps/PythiosTown/scripts.pory"
+	hidemoneybox
+# 579 "data/maps/PythiosTown/scripts.pory"
+	speakername PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_0
+# 580 "data/maps/PythiosTown/scripts.pory"
+	msgbox PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_4
+# 581 "data/maps/PythiosTown/scripts.pory"
+	closemessage
+# 582 "data/maps/PythiosTown/scripts.pory"
+	release
+	end
+
+
 PythiosTown_EventScript_DirectionSign_Text_0:
 # 30 "data/maps/PythiosTown/scripts.pory"
 	.string "Pythios Town\n"
@@ -1285,3 +1402,55 @@ PythiosTown_EventScripts_PIRAEUS_Text_7:
 	.string "The Team Chimera Admin is {COLOR GREEN}east of\n"
 	.string "Pythios Town{COLOR DARK_GRAY}, last I saw. Let me know\l"
 	.string "when you've taken care of them!$"
+
+PythiosTown_EventScript_Ariados_Text_0:
+# 538 "data/maps/PythiosTown/scripts.pory"
+	.string "Ariados$"
+
+PythiosTown_EventScript_Ariados_Text_1:
+# 540 "data/maps/PythiosTown/scripts.pory"
+	.string "Ktch ktch ktch!$"
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_0:
+# 551 "data/maps/PythiosTown/scripts.pory"
+	.string "Seamstress$"
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_1:
+# 556 "data/maps/PythiosTown/scripts.pory"
+	.string "My Ariados can spin beautiful webs,\n"
+	.string "helping me sew clothes.$"
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_2:
+# 561 "data/maps/PythiosTown/scripts.pory"
+	.string "I just finished a new Outfit, and it\n"
+	.string "looks like your size. I'll give you this\l"
+	.string "{COLOR GREEN}Traditional Outfit{COLOR DARK_GRAY} for just ¥9800. How\l"
+	.string "about it?$"
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_3:
+# 567 "data/maps/PythiosTown/scripts.pory"
+	.string "No? Kids these days have no\n"
+	.string "appreciation for traditional clothes!$"
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_4:
+# 580 "data/maps/PythiosTown/scripts.pory"
+	.string "Come back with a bit more money.$"
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_5:
+# 591 "data/maps/PythiosTown/scripts.pory"
+	.string "The Traditional Outfit has been added\n"
+	.string "to the Outfit Box!$"
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_6:
+# 597 "data/maps/PythiosTown/scripts.pory"
+	.string "Thank you, child! The Traditional Outfit\n"
+	.string "is in the style of clothes worn during\l"
+	.string "the Medieval Age.$"
+
+PythiosTown_EventScript_TraditionalOutfitSeamstress_Text_7:
+# 604 "data/maps/PythiosTown/scripts.pory"
+	.string "The Traditional Outfit I created is a\n"
+	.string "replica of old Ilian clothing. It was\l"
+	.string "common during the Medieval Age, but\l"
+	.string "plenty of folks still wear these\l"
+	.string "clothes today!$"

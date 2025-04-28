@@ -552,3 +552,80 @@ script JusmailTown_EventScript_CyclingWoman
     release
     end
 }
+
+script JusmailTown_EventScript_Bounsweet
+{
+    lock
+    faceplayer
+    speakername("Bounsweet")
+    playmoncry(SPECIES_BOUNSWEET, CRY_MODE_NORMAL)
+    msgbox("Ee-hee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script JusmailTown_EventScript_CoralOutfitBeauty
+{
+    lock
+    faceplayer
+    speakername("Fashionista")
+    checkoutfitflag(OUTFIT_CORAL)
+
+    if(var(VAR_RESULT) == FALSE) // no coral outfit
+    {
+        msgbox(format("My cute, pink Bounsweet has inspired me to put together a new outfit!"))
+        closemessage
+        delay(5)
+        showmoneybox(0, 0)
+        speakername("Fashionista")
+        msgbox(format("You're a new Trainer, right? I'll cut you a deal! I'll give you this {COLOR GREEN}Casual Coral Outfit{COLOR DARK_GRAY} for just ¥1900. How about it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == FALSE) // said no
+        {
+            hidemoneybox
+            speakername("Fashionista")
+            msgbox(format("No? Your loss!"))
+            closemessage
+            release
+            end
+        }
+        else // said yes
+        {
+            // check money before purchasing
+            checkmoney(1900)
+            if(var(VAR_RESULT) == FALSE)
+            {
+                hidemoneybox
+                speakername("Fashionista")
+                msgbox(format("Hey, you don't have the money for that!"))
+                closemessage
+                release
+                end
+            }
+            else
+            {
+                removemoney(1900)
+                updatemoneybox
+                delay(5)
+                unlockoutfit(OUTFIT_CORAL)
+                msgbox(format("The Casual Coral Outfit has been added to the Outfit Box!"))
+                delay(20)
+                closemessage
+                hidemoneybox
+                delay(5)
+                speakername("Fashionista")
+                msgbox(format("Thanks! I tried my best to make the Casual Coral Outfit as comfortable as possible."))
+                closemessage
+            }
+        }
+    }
+    else
+    {
+        msgbox(format("I hope you like the Casual Coral Outfit! I tried to make it as cute and comfortable as possible, perfect for the Ilios Region heat!"))
+        closemessage
+    }
+    release
+    end
+}

@@ -63,10 +63,6 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- OUTFIT SYSTEM
-    - Add unlock locations/quests for early-game outfits, up to Zookeeper
-        - Replace 5 mulch with the Zookeeper outfit as reward for Sunset Wildlife Conservation Center 5 donations
-    - After completion, make an announcement with a few of the best outfits!
 - REPLACE "Triathlete" with "Competitor" or something close to "Olympic Player"
 - Continue Mapping and NPC development
     - Next: Kipos Town, west of Port Pello, only accessible via Piraeus

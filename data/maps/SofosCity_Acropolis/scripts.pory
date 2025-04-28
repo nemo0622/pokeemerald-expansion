@@ -59,3 +59,80 @@ script SofosCity_Acropolis_EventScript_TogaGirl
     release
     end
 }
+
+script SofosCity_Acropolis_EventScript_Sylveon
+{
+    lock
+    faceplayer
+    speakername("Sylveon")
+    playmoncry(SPECIES_SYLVEON, CRY_MODE_NORMAL)
+    msgbox("Breow!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_OldSofosOutfitBeauty
+{
+    lock
+    faceplayer
+    speakername("Fashionista")
+    checkoutfitflag(OUTFIT_OLD_SOFOS)
+
+    if(var(VAR_RESULT) == FALSE) // no coral outfit
+    {
+        msgbox(format("Wow, the ancient history of the Ilios Region is amazing!"))
+        closemessage
+        delay(5)
+        showmoneybox(0, 0)
+        speakername("Fashionista")
+        msgbox(format("I've actually made an Outfit in the ancient Sofos City style! I'll give you this {COLOR GREEN}Old Sofos Toga Outfit{COLOR DARK_GRAY} for ¥16900. How about it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == FALSE) // said no
+        {
+            hidemoneybox
+            speakername("Fashionista")
+            msgbox(format("No? Aren't you interested in the history of the Ilios Region?"))
+            closemessage
+            release
+            end
+        }
+        else // said yes
+        {
+            // check money before purchasing
+            checkmoney(16900)
+            if(var(VAR_RESULT) == FALSE)
+            {
+                hidemoneybox
+                speakername("Fashionista")
+                msgbox(format("Hey, you don't have the money for that!"))
+                closemessage
+                release
+                end
+            }
+            else
+            {
+                removemoney(16900)
+                updatemoneybox
+                delay(5)
+                unlockoutfit(OUTFIT_OLD_SOFOS)
+                msgbox(format("The Old Sofos Toga Outfit has been added to the Outfit Box!"))
+                delay(20)
+                closemessage
+                hidemoneybox
+                delay(5)
+                speakername("Fashionista")
+                msgbox(format("Thanks for your support! I hope you have fun trying out the ancient look!"))
+                closemessage
+            }
+        }
+    }
+    else
+    {
+        msgbox(format("The Old Sofos Toga Outfit is a modern replica of an ancient style. Philosophers wore fashionable togas to important discussions."))
+        closemessage
+    }
+    release
+    end
+}

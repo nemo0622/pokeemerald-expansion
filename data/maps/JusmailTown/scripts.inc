@@ -519,6 +519,123 @@ JusmailTown_EventScript_CyclingWoman::
 	end
 
 
+JusmailTown_EventScript_Bounsweet::
+# 558 "data/maps/JusmailTown/scripts.pory"
+	lock
+# 559 "data/maps/JusmailTown/scripts.pory"
+	faceplayer
+# 560 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_Bounsweet_Text_0
+# 561 "data/maps/JusmailTown/scripts.pory"
+	playmoncry SPECIES_BOUNSWEET, CRY_MODE_NORMAL
+# 562 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_Bounsweet_Text_1
+# 563 "data/maps/JusmailTown/scripts.pory"
+	waitmoncry
+# 564 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 565 "data/maps/JusmailTown/scripts.pory"
+	release
+	end
+
+
+JusmailTown_EventScript_CoralOutfitBeauty::
+# 571 "data/maps/JusmailTown/scripts.pory"
+	lock
+# 572 "data/maps/JusmailTown/scripts.pory"
+	faceplayer
+# 573 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
+# 574 "data/maps/JusmailTown/scripts.pory"
+	checkoutfitflag OUTFIT_CORAL
+# 576 "data/maps/JusmailTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq JusmailTown_EventScript_CoralOutfitBeauty_2
+# 626 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_7
+# 627 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+JusmailTown_EventScript_CoralOutfitBeauty_1:
+# 629 "data/maps/JusmailTown/scripts.pory"
+	release
+	end
+
+JusmailTown_EventScript_CoralOutfitBeauty_2:
+# 578 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_1
+# 579 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 580 "data/maps/JusmailTown/scripts.pory"
+	delay 5
+# 581 "data/maps/JusmailTown/scripts.pory"
+	showmoneybox 0, 0
+# 582 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
+# 583 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_2, MSGBOX_YESNO
+# 584 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 585 "data/maps/JusmailTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq JusmailTown_EventScript_CoralOutfitBeauty_5
+# 597 "data/maps/JusmailTown/scripts.pory"
+	checkmoney 1900
+# 598 "data/maps/JusmailTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq JusmailTown_EventScript_CoralOutfitBeauty_8
+# 609 "data/maps/JusmailTown/scripts.pory"
+	removemoney 1900
+# 610 "data/maps/JusmailTown/scripts.pory"
+	updatemoneybox
+# 611 "data/maps/JusmailTown/scripts.pory"
+	delay 5
+# 612 "data/maps/JusmailTown/scripts.pory"
+	unlockoutfit OUTFIT_CORAL
+# 613 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_5
+# 614 "data/maps/JusmailTown/scripts.pory"
+	delay 20
+# 615 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 616 "data/maps/JusmailTown/scripts.pory"
+	hidemoneybox
+# 617 "data/maps/JusmailTown/scripts.pory"
+	delay 5
+# 618 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
+# 619 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_6
+# 620 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+	goto JusmailTown_EventScript_CoralOutfitBeauty_1
+
+JusmailTown_EventScript_CoralOutfitBeauty_5:
+# 587 "data/maps/JusmailTown/scripts.pory"
+	hidemoneybox
+# 588 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
+# 589 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_3
+# 590 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 591 "data/maps/JusmailTown/scripts.pory"
+	release
+	end
+
+JusmailTown_EventScript_CoralOutfitBeauty_8:
+# 600 "data/maps/JusmailTown/scripts.pory"
+	hidemoneybox
+# 601 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
+# 602 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_4
+# 603 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 604 "data/maps/JusmailTown/scripts.pory"
+	release
+	end
+
+
 JusmailTown_EventScript_DirectionSign_Text_0:
 # 17 "data/maps/JusmailTown/scripts.pory"
 	.string "Jusmail Town\n"
@@ -759,6 +876,55 @@ JusmailTown_EventScript_CyclingWoman_Text_1:
 	.string "needed a Heart Scale to ask me out? We\l"
 	.string "literally ride our bikes together every\l"
 	.string "day, of course I liked him back!$"
+
+JusmailTown_EventScript_Bounsweet_Text_0:
+# 560 "data/maps/JusmailTown/scripts.pory"
+	.string "Bounsweet$"
+
+JusmailTown_EventScript_Bounsweet_Text_1:
+# 562 "data/maps/JusmailTown/scripts.pory"
+	.string "Ee-hee!$"
+
+JusmailTown_EventScript_CoralOutfitBeauty_Text_0:
+# 573 "data/maps/JusmailTown/scripts.pory"
+	.string "Fashionista$"
+
+JusmailTown_EventScript_CoralOutfitBeauty_Text_1:
+# 578 "data/maps/JusmailTown/scripts.pory"
+	.string "My cute, pink Bounsweet has inspired me\n"
+	.string "to put together a new outfit!$"
+
+JusmailTown_EventScript_CoralOutfitBeauty_Text_2:
+# 583 "data/maps/JusmailTown/scripts.pory"
+	.string "You're a new Trainer, right? I'll cut you\n"
+	.string "a deal! I'll give you this {COLOR GREEN}Casual Coral\l"
+	.string "Outfit{COLOR DARK_GRAY} for just ¥1900. How about it?$"
+
+JusmailTown_EventScript_CoralOutfitBeauty_Text_3:
+# 589 "data/maps/JusmailTown/scripts.pory"
+	.string "No? Your loss!$"
+
+JusmailTown_EventScript_CoralOutfitBeauty_Text_4:
+# 602 "data/maps/JusmailTown/scripts.pory"
+	.string "Hey, you don't have the money for that!$"
+
+JusmailTown_EventScript_CoralOutfitBeauty_Text_5:
+# 613 "data/maps/JusmailTown/scripts.pory"
+	.string "The Casual Coral Outfit has been added\n"
+	.string "to the Outfit Box!$"
+
+JusmailTown_EventScript_CoralOutfitBeauty_Text_6:
+# 619 "data/maps/JusmailTown/scripts.pory"
+	.string "Thanks! I tried my best to make the\n"
+	.string "Casual Coral Outfit as comfortable as\l"
+	.string "possible.$"
+
+JusmailTown_EventScript_CoralOutfitBeauty_Text_7:
+# 626 "data/maps/JusmailTown/scripts.pory"
+	.string "I hope you like the Casual Coral Outfit!\n"
+	.string "I tried to make it as cute and\l"
+	.string "comfortable as possible, perfect for\l"
+	.string "the Ilios Region heat!$"
 
 JusmailTown_Text_RaniaDefeated::
 # 191 "data/maps/JusmailTown/scripts.pory"

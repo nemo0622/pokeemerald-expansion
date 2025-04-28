@@ -104,14 +104,15 @@ script KiposTown_ConservationCenter_MrRussel
             waitmovement(0)
             delay(10)
             speakername("Mr. Russel")
-            msgbox(format("It looks like you've donated at least {COLOR GREEN}5 Pokémon{COLOR DARK_GRAY} to the Sunset Wildlife Zoo!\p Hey, this is a great start to bringing the Zoo back to it's former glory! Here, I want you to have these."))
+            msgbox(format("It looks like you've donated at least {COLOR GREEN}5 Pokémon{COLOR DARK_GRAY} to the Sunset Wildlife Zoo!\p Hey, this is a great start to bringing the Zoo back to it's former glory! Here, I want you to have this."))
             closemessage
             delay(5)
-            giveitem(ITEM_AMAZE_MULCH, 5)
+            unlockoutfit(OUTFIT_ZOOKEEPER)
+            msgbox(format("The Zookeeper Outfit has been added to the Outfit Box!"))
             closemessage
             delay(5)
             speakername("Mr. Russel")
-            msgbox(format("We had some nutrient-rich Berry soil left over, and who better to take it than you?\p Thank you so much for your help so far, {PLAYER}. When youn can, keep stopping by and donating more Pokémon!"))
+            msgbox(format("Our loyal Zookeepers wear outfits like that. By donating Pokémon, you're sort of a Zookeeper yourself!\p Thank you so much for your help so far, {PLAYER}. When youn can, keep stopping by and donating more Pokémon!"))
             closemessage
             setflag(FLAG_DONATED_5_ZOO_POKEMON)
         }

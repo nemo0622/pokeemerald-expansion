@@ -530,3 +530,80 @@ script PythiosTown_EventScripts_PIRAEUS
     release
     end
 }
+
+script PythiosTown_EventScript_Ariados
+{
+    lock
+    faceplayer
+    speakername("Ariados")
+    playmoncry(SPECIES_ARIADOS, CRY_MODE_NORMAL)
+    msgbox("Ktch ktch ktch!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PythiosTown_EventScript_TraditionalOutfitSeamstress
+{
+    lock
+    faceplayer
+    speakername("Seamstress")
+    checkoutfitflag(OUTFIT_TRADITIONAL)
+
+    if(var(VAR_RESULT) == FALSE) // no coral outfit
+    {
+        msgbox(format("My Ariados can spin beautiful webs, helping me sew clothes."))
+        closemessage
+        delay(5)
+        showmoneybox(0, 0)
+        speakername("Seamstress")
+        msgbox(format("I just finished a new Outfit, and it looks like your size. I'll give you this {COLOR GREEN}Traditional Outfit{COLOR DARK_GRAY} for just ¥9800. How about it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == FALSE) // said no
+        {
+            hidemoneybox
+            speakername("Seamstress")
+            msgbox(format("No? Kids these days have no appreciation for traditional clothes!"))
+            closemessage
+            release
+            end
+        }
+        else // said yes
+        {
+            // check money before purchasing
+            checkmoney(9800)
+            if(var(VAR_RESULT) == FALSE)
+            {
+                hidemoneybox
+                speakername("Seamstress")
+                msgbox(format("Come back with a bit more money."))
+                closemessage
+                release
+                end
+            }
+            else
+            {
+                removemoney(9800)
+                updatemoneybox
+                delay(5)
+                unlockoutfit(OUTFIT_TRADITIONAL)
+                msgbox(format("The Traditional Outfit has been added to the Outfit Box!"))
+                delay(20)
+                closemessage
+                hidemoneybox
+                delay(5)
+                speakername("Seamstress")
+                msgbox(format("Thank you, child! The Traditional Outfit is in the style of clothes worn during the Medieval Age."))
+                closemessage
+            }
+        }
+    }
+    else
+    {
+        msgbox(format("The Traditional Outfit I created is a replica of old Ilian clothing. It was common during the Medieval Age, but plenty of folks still wear these clothes today!"))
+        closemessage
+    }
+    release
+    end
+}
