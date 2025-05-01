@@ -1,1 +1,278 @@
-mapscripts SeaOfAsteri_West_MapScripts {}
+mapscripts SeaOfAsteri_West_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(13, ENCOUNTER_LAND)
+        setobjectaswildencounter(14, ENCOUNTER_LAND)
+        setobjectaswildencounter(15, ENCOUNTER_LAND)
+        setobjectaswildencounter(16, ENCOUNTER_SURF)
+        setobjectaswildencounter(17, ENCOUNTER_SURF)
+        setobjectaswildencounter(18, ENCOUNTER_SURF)
+    }
+}
+
+script AsteriSea_EventScript_Trainer_AsteriSea_Aeson
+{
+    trainerbattle_single(TRAINER_ASTERISEA_AESON, AsteriSea_Text_Trainer_AsteriSea_AesonIntro, AsteriSea_Text_Trainer_AsteriSea_AesonDefeat)
+    speakername("Aeson")
+    msgbox(format("The water gets warmer as you swim further south."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Text_Trainer_AsteriSea_AesonIntro
+{
+    format("There are so many tiny islands and atolls in this part of the sea!")
+}
+text AsteriSea_Text_Trainer_AsteriSea_AesonDefeat
+{
+    format("I better swim to an island to rest!")
+}
+
+script AsteriSea_EventScript_Trainer_AsteriSea_Taleia
+{
+    trainerbattle_single(TRAINER_ASTERISEA_TALEIA, AsteriSea_Text_Trainer_AsteriSea_TaleiaIntro, AsteriSea_Text_Trainer_AsteriSea_TaleiaDefeat)
+    speakername("Taleia")
+    msgbox(format("With all these rocks and islands around, I guess it's not completely open ocean."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Text_Trainer_AsteriSea_TaleiaIntro
+{
+    format("I made it, it's the open sea! Let's battle to celebrate!")
+}
+text AsteriSea_Text_Trainer_AsteriSea_TaleiaDefeat
+{
+    format("Back to shore I go...")
+}
+
+script AsteriSea_EventScript_Trainer_AsteriSea_Hamon
+{
+    trainerbattle_single(TRAINER_ASTERISEA_HAMON, AsteriSea_Text_Trainer_AsteriSea_HamonIntro, AsteriSea_Text_Trainer_AsteriSea_HamonDefeat)
+    speakername("Hamon")
+    msgbox(format("Sliggoo can live on land and in the sea. It's the perfect combination!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Text_Trainer_AsteriSea_HamonIntro
+{
+    format("Look at this Pokémon I found!")
+}
+text AsteriSea_Text_Trainer_AsteriSea_HamonDefeat
+{
+    format("No! My Sliggoo!")
+}
+
+script AsteriSea_EventScript_Trainer_AsteriSea_Georgia
+{
+    trainerbattle_single(TRAINER_ASTERISEA_GEORGIA, AsteriSea_Text_Trainer_AsteriSea_GeorgiaIntro, AsteriSea_Text_Trainer_AsteriSea_GeorgiaDefeat)
+    speakername("Georgia")
+    msgbox(format("Some parts of the ocean are deep but safe enough to Dive in. I wish my Pokémon knew how to help me do that."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Text_Trainer_AsteriSea_GeorgiaIntro
+{
+    format("The water gets way deeper over here!")
+}
+text AsteriSea_Text_Trainer_AsteriSea_GeorgiaDefeat
+{
+    format("Aw, I've been sunk!")
+}
+
+script AsteriSea_EventScript_NPC_Picnicker
+{
+    lock
+    faceplayer
+    speakername("Picnicker")
+    msgbox(format("Little islands like this are scattered all over the sea. I wonder what Pokémon can be found here!"))
+    closemessage
+    release
+    end
+}
+
+script AsteriSea_EventScript_Trainer_AsteriSea_Tryfon
+{
+    trainerbattle_single(TRAINER_ASTERISEA_TRYFON, AsteriSea_Text_Trainer_AsteriSea_TryfonIntro, AsteriSea_Text_Trainer_AsteriSea_TryfonDefeat)
+    speakername("Tryfon")
+    msgbox(format("Some areas are too dangerous for people to Surf or swim through, because of bad currents or whirlpools. Everyone needs to take boats between islands in those places."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Text_Trainer_AsteriSea_TryfonIntro
+{
+    format("I've battled a ton of Pokémon just by swimming around!")
+}
+text AsteriSea_Text_Trainer_AsteriSea_TryfonDefeat
+{
+    format("Looks like I need more training.")
+}
+
+script AsteriSea_EventScript_Trainer_AsteriSea_Willy
+{
+    trainerbattle_single(TRAINER_ASTERISEA_WILLY, AsteriSea_Text_Trainer_AsteriSea_WillyIntro, AsteriSea_Text_Trainer_AsteriSea_WillyDefeat)
+    speakername("Willy")
+    msgbox(format("Sometimes I see people Dive into the Crescent Trench. I wanna try it someday!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Text_Trainer_AsteriSea_WillyIntro
+{
+    format("Ehehe, look how close I can get to the Crescent Trench!")
+}
+text AsteriSea_Text_Trainer_AsteriSea_WillyDefeat
+{
+    format("Eek! Swim away!")
+}
+
+script AsteriSea_EventScript_Trainer_AsteriSea_Celina
+{
+    trainerbattle_single(TRAINER_ASTERISEA_CELINA, AsteriSea_Text_Trainer_AsteriSea_CelinaIntro, AsteriSea_Text_Trainer_AsteriSea_CelinaDefeat)
+    speakername("Celina")
+    msgbox(format("These little sandbars and atolls are perfect for some peaceful time alone."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Text_Trainer_AsteriSea_CelinaIntro
+{
+    format("I swam here for time alone. Find another island!")
+}
+text AsteriSea_Text_Trainer_AsteriSea_CelinaDefeat
+{
+    format("Fine, I guess you can stay.")
+}
+
+script AsteriSea_EventScript_NPC_ExpertM
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_ASTERI_SEA_PEARL_STRING)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Thanks to you, my wife will have her Pearl String necklace back! Once I'm all rested up, I'll take a nice swim back to Marmaro Island."))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_ASTERI_SEA_PEARL_STRING)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Perfect, a young Trainer is just who I needed! I'm in quite a pickle here...\p I bought a {COLOR GREEN}Pearl String{COLOR DARK_GRAY} necklace for my wife when we were married, and she's worn it every day since. When I was young, I made it out of Pearls I found here, so I bring it back every few months to wash it in the sea. But my old hands aren't what they used to be, so I dropped it into the Crescent Trench!\p Please, if you could {COLOR GREEN}Dive{COLOR DARK_GRAY} into the water and {COLOR GREEN}bring the Pearl String{COLOR DARK_GRAY}, it would mean the world!"))
+        closemessage
+        applymovement(9, Common_Movement_FaceLeft)
+        waitmovement(0)
+
+        delay(20)
+        startquest(QUEST_ASTERI_SEA_PEARL_STRING)
+    }
+    else
+    {
+        msgbox(format("Oh, hi there. Did you happen to find the {COLOR GREEN}Pearl String{COLOR DARK_GRAY} I lost?"))
+        closemessage
+
+        checkitem(ITEM_PEARL_STRING)
+        delay(30)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Old Man")
+            msgbox(format("Nothing, huh? It's alright, I knew it was a long shot, anyway...\p If you happen to find a {COLOR GREEN}Pearl String{COLOR DARK_GRAY}, please bring it back to me!"))
+            closemessage
+            applymovement(9, Common_Movement_FaceLeft)
+            waitmovement(0)
+            release
+            end
+        }
+        else
+        {
+            applymovement(9, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(10)
+            speakername("Old Man")
+            msgbox(format("That's it! A {COLOR GREEN}Pearl String{COLOR DARK_GRAY} necklace! It must be the one I dropped!\p This was an important keepsake for us. Please, take this as my thanks."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_EXP_CANDY_L)
+            closemessage
+            
+            delay(20)
+            completequest(QUEST_ASTERI_SEA_PEARL_STRING)
+        }
+    }
+    release
+    end
+}
+
+script AsteriSea_EventScript_Trainer_AsteriSea_Kida
+{
+    trainerbattle_single(TRAINER_ASTERISEA_KIDA, AsteriSea_Text_Trainer_AsteriSea_KidaIntro, AsteriSea_Text_Trainer_AsteriSea_KidaDefeat)
+    speakername("Kida")
+    msgbox(format("You're a pretty strong Trainer. We can share the island!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Text_Trainer_AsteriSea_KidaIntro
+{
+    format("Bwahaha, finally! An island to claim as my own!\p Huh? There's someone else here?")
+}
+text AsteriSea_Text_Trainer_AsteriSea_KidaDefeat
+{
+    format("Hey, it's still my island!")
+}
+
+script AsteriSea_EventScript_Trainer_AsteriSea_Sikar
+{
+    trainerbattle_single(TRAINER_ASTERISEA_SIKAR, AsteriSea_Text_Trainer_AsteriSea_SikarIntro, AsteriSea_Text_Trainer_AsteriSea_SikarDefeat)
+    speakername("Sikar")
+    msgbox(format("I guess I'm a little jumpy after sitting here fishing all day."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Text_Trainer_AsteriSea_SikarIntro
+{
+    format("AIE!! Hey, don't scare me like that!")
+}
+text AsteriSea_Text_Trainer_AsteriSea_SikarDefeat
+{
+    format("You only won because I was surprised!")
+}
+
+script AsteriSea_EventScript_Trainer_AsteriSea_Hammon
+{
+    trainerbattle_single(TRAINER_ASTERISEA_HAMMON, AsteriSea_Text_Trainer_AsteriSea_HammonIntro, AsteriSea_Text_Trainer_AsteriSea_HammonDefeat)
+    speakername("Hammon")
+    msgbox(format("Ancient athletes used to train in harsh conditions like this."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Text_Trainer_AsteriSea_HammonIntro
+{
+    format("I heard that intense training leads to intense muscles. I hope that's true!")
+}
+text AsteriSea_Text_Trainer_AsteriSea_HammonDefeat
+{
+    format("Huff... puff...")
+}

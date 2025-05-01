@@ -1785,6 +1785,10 @@ const u8 gText_SideQuestName_38[] = _("Domestic Pokémon");
 const u8 gText_SideQuestName_39[] = _("A Paleo Nerd's Dream");
 const u8 gText_SideQuestName_40[] = _("Cross-Species Crossing");
 const u8 gText_SideQuestName_41[] = _("Kalos Curiosity");
+const u8 gText_SideQuestName_42[] = _("Lost at Sea");
+const u8 gText_SideQuestName_43[] = _("Journey's End");
+const u8 gText_SideQuestName_44[] = _("Egg Envy");
+const u8 gText_SideQuestName_45[] = _("Allergies");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Look for the deliveryman\nwith a flipped cart.");
@@ -1828,6 +1832,10 @@ const u8 gText_SideQuestDesc_38[] = _("Donate 3 Pokémon to the\nSuburbs Enclosu
 const u8 gText_SideQuestDesc_39[] = _("Donate a Lazarus Taxa\nPokémon to the corresponding\nZoo enclosure.");
 const u8 gText_SideQuestDesc_40[] = _("Show a complete Braviary\nPokédex entry to the\nConservation Center scientist.");
 const u8 gText_SideQuestDesc_41[] = _("Show a captured Tyrunt\nto the Kalosian Scientist\nat the Tyrantrum skeleton.");
+const u8 gText_SideQuestDesc_42[] = _("Bring the Old Man his\nwife's lost Pearl String\nfrom underwater.");
+const u8 gText_SideQuestDesc_43[] = _("Give the Pokéfan a Timer\nBall to catch the Pokémon\nshe's chasing.");
+const u8 gText_SideQuestDesc_44[] = _("Show the Beauty a\nPokémon Egg she can\nhold.");
+const u8 gText_SideQuestDesc_45[] = _("Bring a Full Heal to\nthe Camper. It might\nhelp his allergies.");
 
 //completed quest description
 // NOTE: Probably never seen now that I only make Active quests seen lol!
@@ -1904,6 +1912,10 @@ const u8 gText_SideQuestMap38[] = _("Sunset Wildlife Zoo, Kipos Town"); // QUEST
 const u8 gText_SideQuestMap39[] = _("Sunset Wildlife Zoo, Kipos Town"); // QUEST_FILL_LAZARUS_ZOO
 const u8 gText_SideQuestMap40[] = _("Conservation Center, Kipos Town"); // QUEST_SHOW_BRAVIARY_AT_ZOO
 const u8 gText_SideQuestMap41[] = _("Kipos Town"); // QUEST_SHOW_TYRUNT_KIPOS_TOWN
+const u8 gText_SideQuestMap42[] = _("Asteri Sea (West)"); // QUEST_ASTERI_SEA_PEARL_STRING
+const u8 gText_SideQuestMap43[] = _("Marmaro Island"); // QUEST_MARMARO_TIMER_BALL
+const u8 gText_SideQuestMap44[] = _("Marmaro Island"); // QUEST_MARMARO_EGG_QUEST
+const u8 gText_SideQuestMap45[] = _("Myrrini Island"); // QUEST_MYRRINI_ALLERGIES
 
 //subquests
 // erm unused now oopsies

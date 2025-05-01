@@ -38,7 +38,7 @@ SofosCity_House4_EventScript_ComputerGuy::
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_5_PINBALL_POINTS
 # 36 "data/maps/SofosCity_House4/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq SofosCity_House4_EventScript_ComputerGuy_4
+	goto_if_eq SofosCity_House4_EventScript_ComputerGuy_5
 # 48 "data/maps/SofosCity_House4/scripts.pory"
 	msgbox SofosCity_House4_EventScript_ComputerGuy_Text_3
 # 49 "data/maps/SofosCity_House4/scripts.pory"
@@ -47,7 +47,7 @@ SofosCity_House4_EventScript_ComputerGuy::
 	delay 30
 # 52 "data/maps/SofosCity_House4/scripts.pory"
 	compare VAR_PINBALL_POINTS, 5
-	goto_if_lt SofosCity_House4_EventScript_ComputerGuy_7
+	goto_if_lt SofosCity_House4_EventScript_ComputerGuy_8
 # 59 "data/maps/SofosCity_House4/scripts.pory"
 	applymovement 1, Common_Movement_ExclamationMark
 # 60 "data/maps/SofosCity_House4/scripts.pory"
@@ -84,7 +84,10 @@ SofosCity_House4_EventScript_ComputerGuy::
 	delay 20
 # 77 "data/maps/SofosCity_House4/scripts.pory"
 	completequest QUEST_5_PINBALL_POINTS
-	return
+SofosCity_House4_EventScript_ComputerGuy_4:
+# 80 "data/maps/SofosCity_House4/scripts.pory"
+	release
+	end
 
 SofosCity_House4_EventScript_ComputerGuy_2:
 # 26 "data/maps/SofosCity_House4/scripts.pory"
@@ -99,7 +102,7 @@ SofosCity_House4_EventScript_ComputerGuy_2:
 	release
 	end
 
-SofosCity_House4_EventScript_ComputerGuy_4:
+SofosCity_House4_EventScript_ComputerGuy_5:
 # 38 "data/maps/SofosCity_House4/scripts.pory"
 	msgbox SofosCity_House4_EventScript_ComputerGuy_Text_2
 # 39 "data/maps/SofosCity_House4/scripts.pory"
@@ -112,14 +115,14 @@ SofosCity_House4_EventScript_ComputerGuy_4:
 	delay 20
 # 44 "data/maps/SofosCity_House4/scripts.pory"
 	startquest QUEST_5_PINBALL_POINTS
-	return
+	goto SofosCity_House4_EventScript_ComputerGuy_4
 
-SofosCity_House4_EventScript_ComputerGuy_7:
+SofosCity_House4_EventScript_ComputerGuy_8:
 # 54 "data/maps/SofosCity_House4/scripts.pory"
 	msgbox SofosCity_House4_EventScript_ComputerGuy_Text_4
 # 55 "data/maps/SofosCity_House4/scripts.pory"
 	closemessage
-	return
+	goto SofosCity_House4_EventScript_ComputerGuy_4
 
 
 SofosCity_House4_EventScript_Pawmo_Text_0:

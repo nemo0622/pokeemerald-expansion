@@ -1,0 +1,36 @@
+mapscripts MarmaroIsland_House3_MapScripts {}
+
+script MarmaroIsland_House3_EventScript_PunkRocker
+{
+    lock
+    faceplayer
+    speakername("Punk Rocker")
+    msgbox(format("We used to live in Sofos City, but we moved here to be closer to the Lazarus Taxa around the island. Apparently, it's a hot-spot for Fossil Pokémon being rediscovered!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_House3_EventScript_PerformerF
+{
+    lock
+    faceplayer
+    speakername("Performer")
+    msgbox(format("I'm totally obsessed with the Lazarus Pokémon species around here! When I was young, I grew up here and collected fossils for fun. Now, I can finally see the Fossil Pokémon come to life!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_House3_EventScript_Lileep
+{
+    lock
+    faceplayer
+    speakername("Lileep")
+    playmoncry(SPECIES_LILEEP, CRY_MODE_NORMAL)
+    msgbox("Wiggle wig!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

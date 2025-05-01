@@ -1,1 +1,194 @@
-mapscripts SeaOfAsteri_Central_MapScripts {}
+mapscripts SeaOfAsteri_Central_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(12, ENCOUNTER_LAND)
+        setobjectaswildencounter(13, ENCOUNTER_LAND)
+        setobjectaswildencounter(14, ENCOUNTER_LAND)
+        setobjectaswildencounter(15, ENCOUNTER_SURF)
+        setobjectaswildencounter(16, ENCOUNTER_SURF)
+    }
+}
+
+script AsteriSea_Central_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    speakername("Gentleman")
+    msgbox(format("Sometimes, it's important to take a step back from the real world and connect with nature. That's why I come out here."))
+    closemessage
+    release
+    end
+}
+
+script AsteriSea_Central_EventScript_Trainer_AsteriSea_Matilda
+{
+    trainerbattle_single(TRAINER_ASTERISEA_MATILDA, AsteriSea_Central_Text_Trainer_AsteriSea_MatildaIntro, AsteriSea_Central_Text_Trainer_AsteriSea_MatildaDefeat)
+    speakername("Matilda")
+    msgbox(format("I was chasing down a wild Pokémon, but it escaped into the trees. I think a lot of these Pokémon are pretty rare."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_MatildaIntro
+{
+    format("Aha! Caught ya!")
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_MatildaDefeat
+{
+    format("Wait, you're not what I was looking for!")
+}
+
+script AsteriSea_Central_EventScript_Trainer_AsteriSea_Harvey
+{
+    trainerbattle_single(TRAINER_ASTERISEA_HARVEY, AsteriSea_Central_Text_Trainer_AsteriSea_HarveyIntro, AsteriSea_Central_Text_Trainer_AsteriSea_HarveyDefeat)
+    speakername("Harvey")
+    msgbox(format("I mean, you could say I'm patrolling the bridge. That's technically work!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_HarveyIntro
+{
+    format("What? Hey! I'm, uh, on patrol! Hard at work!")
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_HarveyDefeat
+{
+    format("Alright, fine... I was just sitting here.")
+}
+
+script AsteriSea_Central_EventScript_Trainer_AsteriSea_Joseph
+{
+    trainerbattle_single(TRAINER_ASTERISEA_JOSEPH, AsteriSea_Central_Text_Trainer_AsteriSea_JosephIntro, AsteriSea_Central_Text_Trainer_AsteriSea_JosephDefeat)
+    speakername("Joseph")
+    msgbox(format("You never know what you'll find when you explore areas like this."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_JosephIntro
+{
+    format("This is far off the beaten path. I wonder what could be out here.")
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_JosephDefeat
+{
+    format("I'd better get back on the path home.")
+}
+
+script AsteriSea_Central_EventScript_Trainer_AsteriSea_Leon
+{
+    trainerbattle_single(TRAINER_ASTERISEA_LEON, AsteriSea_Central_Text_Trainer_AsteriSea_LeonIntro, AsteriSea_Central_Text_Trainer_AsteriSea_LeonDefeat)
+    speakername("Leon")
+    msgbox(format("Psychic-type Pokémon have all sorts of cool powers!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_LeonIntro
+{
+    format("My Pokémon can use their Psychic powers to levitate on water!")
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_LeonDefeat
+{
+    format("I wish I could levitate, too.")
+}
+
+script AsteriSea_Central_EventScript_Trainer_AsteriSea_Maurie
+{
+    trainerbattle_single(TRAINER_ASTERISEA_MAURIE, AsteriSea_Central_Text_Trainer_AsteriSea_MaurieIntro, AsteriSea_Central_Text_Trainer_AsteriSea_MaurieDefeat)
+    speakername("Maurie")
+    msgbox(format("Islands are really diverse areas! I think the shallow waters are perfect for Pokémon."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_MaurieIntro
+{
+    format("There are so many Pokémon in the water!")
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_MaurieDefeat
+{
+    format("Drat!")
+}
+
+script AsteriSea_Central_EventScript_Trainer_AsteriSea_Sergius
+{
+    trainerbattle_single(TRAINER_ASTERISEA_SERGIUS, AsteriSea_Central_Text_Trainer_AsteriSea_SergiusIntro, AsteriSea_Central_Text_Trainer_AsteriSea_SergiusDefeat)
+    speakername("Sergius")
+    msgbox(format("Marmaro Island has a bit of a harsh vibe... Maybe I'll like Myrrini Island better."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_SergiusIntro
+{
+    format("Different Pokémon are found in different parts of the ocean!")
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_SergiusDefeat
+{
+    format("I'd better swim to another part of the sea.")
+}
+
+script AsteriSea_Central_EventScript_Trainer_AsteriSea_Silvia
+{
+    trainerbattle_single(TRAINER_ASTERISEA_SILVIA, AsteriSea_Central_Text_Trainer_AsteriSea_SilviaIntro, AsteriSea_Central_Text_Trainer_AsteriSea_SilviaDefeat)
+    speakername("Silvia")
+    msgbox(format("Between the land, the shallows, and the underwater depths, there are plenty of Pokémon to find around here!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_SilviaIntro
+{
+    format("Come on! I bet I'm faster than you!")
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_SilviaDefeat
+{
+    format("Aww, I guess not...")
+}
+
+script AsteriSea_Central_EventScript_Trainer_AsteriSea_Irene
+{
+    trainerbattle_single(TRAINER_ASTERISEA_IRENE, AsteriSea_Central_Text_Trainer_AsteriSea_IreneIntro, AsteriSea_Central_Text_Trainer_AsteriSea_IreneDefeat)
+    speakername("Irene")
+    msgbox(format("The fruits from Myrrini Island sometimes drop into the water. I've found a few floating this way!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_IreneIntro
+{
+    format("Almost to Myrrini Island!")
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_IreneDefeat
+{
+    format("So close but so far!")
+}
+
+script AsteriSea_Central_EventScript_Trainer_AsteriSea_Honoria
+{
+    trainerbattle_single(TRAINER_ASTERISEA_HONORIA, AsteriSea_Central_Text_Trainer_AsteriSea_HonoriaIntro, AsteriSea_Central_Text_Trainer_AsteriSea_HonoriaDefeat)
+    speakername("Honoria")
+    msgbox(format("I'm looking for plants around here, but Pokémon keep jumping me!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_HonoriaIntro
+{
+    format("I'm here for the unique plants that grow in shallow water. Have you found any?")
+}
+text AsteriSea_Central_Text_Trainer_AsteriSea_HonoriaDefeat
+{
+    format("Time to keep looking!")
+}

@@ -14228,63 +14228,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_STUFFUL"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_FOMANTIS"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_ROSELIA"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_CHATOT"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_CRABRAWLER"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_WATTREL"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_CRABRAWLER"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_WATTREL"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_SCYTHER"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_SCYTHER"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_BAGON"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_BAGON"
               }
             ]
@@ -14382,63 +14382,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_EKANS"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_FOMANTIS"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_ROSELIA"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_LINOONE_GALARIAN"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_CUFANT"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_WATTREL"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_CUFANT"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_WATTREL"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_SCYTHER"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_HERACROSS"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_BAGON"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_BAGON"
               }
             ]

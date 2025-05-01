@@ -1,0 +1,25 @@
+mapscripts MarmaroIsland_House1_MapScripts {}
+
+script MarmaroIsland_House1_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("It's a popular vacation spot, but not many people actually live on Marmaro Island. People don't like the idea of minecarts whizzing over their heads every day."))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_House1_EventScript_Duosion
+{
+    lock
+    faceplayer
+    speakername("Duosion")
+    playmoncry(SPECIES_DUOSION, CRY_MODE_NORMAL)
+    msgbox("Hreee...!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

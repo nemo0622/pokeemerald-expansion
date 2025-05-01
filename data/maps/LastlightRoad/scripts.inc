@@ -108,55 +108,59 @@ LastlightRoad_Trigger_ScytherGoesWild::
 # 65 "data/maps/LastlightRoad/scripts.pory"
 	closemessage
 # 66 "data/maps/LastlightRoad/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	applymovement 2, Common_Movement_FaceDown
 # 67 "data/maps/LastlightRoad/scripts.pory"
 	waitmovement 0
 # 68 "data/maps/LastlightRoad/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+# 69 "data/maps/LastlightRoad/scripts.pory"
+	waitmovement 0
+# 70 "data/maps/LastlightRoad/scripts.pory"
 	releaseall
 	end
 
 
-# 71 "data/maps/LastlightRoad/scripts.pory"
-LastlightRoad_Movement_ScytherRunsAround:
 # 73 "data/maps/LastlightRoad/scripts.pory"
+LastlightRoad_Movement_ScytherRunsAround:
+# 75 "data/maps/LastlightRoad/scripts.pory"
 	walk_right
-# 74 "data/maps/LastlightRoad/scripts.pory"
-	walk_down
-# 75 "data/maps/LastlightRoad/scripts.pory"
-	jump_in_place_down
-# 75 "data/maps/LastlightRoad/scripts.pory"
-	jump_in_place_down
 # 76 "data/maps/LastlightRoad/scripts.pory"
-	walk_left
+	walk_down
 # 77 "data/maps/LastlightRoad/scripts.pory"
-	jump_in_place_up
+	jump_in_place_down
 # 77 "data/maps/LastlightRoad/scripts.pory"
-	jump_in_place_up
+	jump_in_place_down
 # 78 "data/maps/LastlightRoad/scripts.pory"
 	walk_left
 # 79 "data/maps/LastlightRoad/scripts.pory"
-	walk_up
+	jump_in_place_up
+# 79 "data/maps/LastlightRoad/scripts.pory"
+	jump_in_place_up
 # 80 "data/maps/LastlightRoad/scripts.pory"
-	walk_right
-# 80 "data/maps/LastlightRoad/scripts.pory"
-	walk_right
+	walk_left
 # 81 "data/maps/LastlightRoad/scripts.pory"
-	walk_down
-# 82 "data/maps/LastlightRoad/scripts.pory"
-	walk_left
-# 82 "data/maps/LastlightRoad/scripts.pory"
-	walk_left
-# 83 "data/maps/LastlightRoad/scripts.pory"
 	walk_up
-# 84 "data/maps/LastlightRoad/scripts.pory"
+# 82 "data/maps/LastlightRoad/scripts.pory"
 	walk_right
+# 82 "data/maps/LastlightRoad/scripts.pory"
+	walk_right
+# 83 "data/maps/LastlightRoad/scripts.pory"
+	walk_down
+# 84 "data/maps/LastlightRoad/scripts.pory"
+	walk_left
+# 84 "data/maps/LastlightRoad/scripts.pory"
+	walk_left
 # 85 "data/maps/LastlightRoad/scripts.pory"
-	jump_in_place_up
-# 85 "data/maps/LastlightRoad/scripts.pory"
-	jump_in_place_up
+	walk_up
 # 86 "data/maps/LastlightRoad/scripts.pory"
-	face_up
+	walk_right
 # 87 "data/maps/LastlightRoad/scripts.pory"
+	jump_in_place_up
+# 87 "data/maps/LastlightRoad/scripts.pory"
+	jump_in_place_up
+# 88 "data/maps/LastlightRoad/scripts.pory"
+	face_up
+# 89 "data/maps/LastlightRoad/scripts.pory"
 	step_end
 
 LastlightRoad_EventScript_Girl_Text_0:

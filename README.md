@@ -65,7 +65,8 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 MAJOR TODOS:
 - REPLACE "Triathlete" with "Competitor" or something close to "Olympic Player"
 - Continue Mapping and NPC development
-    - Next: Kipos Town, west of Port Pello, only accessible via Piraeus
+    - Next: Sea of Asteri (West) to Marmaro Island
+    - DIVE MAP! Add a Pearl String item underwater for quest
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas:
@@ -97,8 +98,12 @@ MAJOR TODOS:
     - Can be rebattled after the Elite Four (when flag FLAG_SYS_GAME_CLEAR set) to give Johto starter cabin dolls!
 - Implement Biv's Fishing Minigame
     - Also create options menu toggle for it
+    - TREASURE IDEAS:
+        - Pearl, Big Pearl, and Pearl String (for that one quest in Asteri Sea West!)
 - Implement Vol's Mining Minigame https://github.com/volromhacking/pokeemerald-expansion/tree/mining_minigame
     - Keep up with thread in RHH about it
+    - ADD WISHING STARS AS COMMON FIND!!
+    - Could be done in cave on Marmaro Island!
 - Implement Chris Piché's Game Corner Expansion minigames
     - Blackjack, Ponyta Racing, and Voltorb Flip are the big ones I care about
     - Also, remove Pinball Points and integrate Coins into Pinball games!
@@ -115,25 +120,24 @@ GREEK PHRASES AND STUFF:
 
 - EVENTS AND STUFF:
     - Use in-game day count tracker to have events in different parts of the region every X number of days
-        - Have PokéNav call from representatives from different towns you've visited announcing festivals
+        - Receive "buzz" on Pokédex alerting to event somewhere in the region
+        - "Flower Festival" in Péntepetal, "Sunlight Party" in Fresco Isles, "Walk of Spirits" in Pythios, and
+        "Year's End Celebration" in Acrisia City
+            - idk how any of this would work I just think it's a fun idea to kick around
     - Finish implementing Prof. Elia, Rania, and Niko's gifting / interactions based on Pokédex progress
         - Prof. Elia gifts a few helpful items and starter Pokémon with special good stats + Oval Charm
         - Rania provides Tera Shards and other battle items (Rocky Helmet, etc) + Exp Charm
         - Niko provides unique Pokéballs + Catching Charm, also becomes the Tera Type changer
             - After unlocking Terastallization, increase Niko's State variable. When the state is greater than or equal to that value, have Niko ask if you're looking for Tera Type Change or Conversation (rewards, etc)
     - MISSING IMPORTANT BUILDINGS / LOCATIONS / UNLOCKS
-        - Daycare for Pokémon Breeding (Erynis Path? could be cute)
-        - Contest Hall (Sofos City?) (+ unique Contest competitors)
-        - Battle Factory (+ unique Battle Factory teams)
-        - Tera Orb unlock (optional quest after 3rd gym)
-            - Remember to use FLAG_UNLOCKED_TERASTALLIZATION
-            - Unlocked by doing a quest for Niko in Asfal Hills
-            - If flag FLAG_UNLOCKED_TERASTALLIZATION set, allow Gym Leaders to terastallize? Seems fair
-            - ALSO: change Pinball egg shop in Sofos City to a Tera Shard distributor (1 random shard per point)
+        - Daycare for Pokémon Breeding
+            - Myrrini Island!
+        - Contest Hall (Péntepetal City!) (+ unique Contest competitors)
+        - Battle Pavilions
+            - 1 in Sofos City, already added
+            - #2 could go in Myrrini Island, and #3 could be in Port Pello?
         - Berry plant locations
-        - Hidden & Ball items across maps
-            - ex: add item ball in acrisia city rock smash area!
-        - Fishing Rod locations (Good/Super rods still need places)
+        - Fishing Rod locations (Super rod still need place)
         - Safari Zone?
         - Dive locations
             - SIDE QUEST IDEA: Have a sidequest centered around the rediscovery of Relicanth, a new Lazarus Taxa rumored to be living deep underwater!
@@ -144,8 +148,6 @@ GREEK PHRASES AND STUFF:
             - Unlocked by Rania quest line?
         - Spiky Ear Pichu gift
         - Wishing Star mart location
-        - Ogerpon gift event
-            - Reward for helping Daycare / zoo area in Kipos Town
         - Eternal Flower Floette gift event
             - Reward for something (lol) in Péntepetal City
         - Cabin (secret base) decor shops!

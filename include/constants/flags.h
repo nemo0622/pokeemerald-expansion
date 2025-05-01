@@ -553,7 +553,7 @@
 #define FLAG_HIDDEN_ITEM_FROSLASS_CAVERN_ICE_TERA_SHARD_2    (FLAG_HIDDEN_ITEMS_START + 0x08)
 #define FLAG_HIDDEN_ITEM_RIVERWALK_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x09)
 #define FLAG_HIDDEN_ITEM_KALAMI_HEART_SCALE                  (FLAG_HIDDEN_ITEMS_START + 0x0A)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x0B)
+#define FLAG_HIDDEN_ITEM_MARMARO_NUGGET                      (FLAG_HIDDEN_ITEMS_START + 0x0B)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD           (FLAG_HIDDEN_ITEMS_START + 0x0C)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1        (FLAG_HIDDEN_ITEMS_START + 0x0D)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x0E)
@@ -1077,13 +1077,13 @@
 #define FLAG_ITEM_KIPOS_ZOO_FIRE_STONE                              0x401
 #define FLAG_ITEM_KIPOS_ZOO_NUGGET                                  0x402
 #define FLAG_ITEM_TM_WATER_PULSE                                    0x403
-#define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
-#define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405
-#define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
-#define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
-#define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
-#define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
-#define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
+#define FLAG_ITEM_ASTERI_SEA_CALCIUM                                0x404
+#define FLAG_ITEM_ASTERI_SEA_ZINC                                   0x405
+#define FLAG_ITEM_ASTERI_SEA_KINGS_ROCK                             0x406
+#define FLAG_ITEM_ASTERI_SEA_STAR_PIECE                             0x407
+#define FLAG_ITEM_MARMARO_REVIVE                                    0x408
+#define FLAG_ITEM_MARMARO_EXP_CANDY_M                               0x409
+#define FLAG_ITEM_MARMARO_PEARL                                     0x40A
 #define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D

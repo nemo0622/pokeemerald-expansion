@@ -1,0 +1,23 @@
+mapscripts MarmaroIsland_House2_MapScripts {}
+
+script MarmaroIsland_House2_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("Apparently, Marmaro Island used to be a lot larger in Ancient Ilios. Over time, people mined too much from the outside of the island, so it started to shrink."))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_House2_EventScript_Boy
+{
+    lock
+    faceplayer
+    speakername("Boy")
+    msgbox(format("Pokémon everyone thought were extinct have been showing up a lot around here! Maybe it's because of all the fossils in the stone?"))
+    closemessage
+    release
+    end
+}

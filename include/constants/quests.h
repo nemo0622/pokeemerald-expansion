@@ -56,7 +56,11 @@
 #define QUEST_FILL_LAZARUS_ZOO                  38 // fill out the lazarus taxa area of the zoo
 #define QUEST_SHOW_BRAVIARY_AT_ZOO              39 // show scientist braviary dex entry at conservation center
 #define QUEST_SHOW_TYRUNT_KIPOS_TOWN            40 // show scientist a tyrunt from party in kipos town at tyrantrum statue
-#define QUEST_COUNT     (QUEST_SHOW_TYRUNT_KIPOS_TOWN + 1)
+#define QUEST_ASTERI_SEA_PEARL_STRING           41 // bring pearl string item to old man in Asteri Sea west
+#define QUEST_MARMARO_TIMER_BALL                42 // give timer ball to pokéfan on marmaro island
+#define QUEST_MARMARO_EGG_QUEST                 43 // show an Egg to a beauty on marmaro island
+#define QUEST_MYRRINI_ALLERGIES                 44 // give a Full Heal to a camper on myrrini island
+#define QUEST_COUNT     (QUEST_MYRRINI_ALLERGIES + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

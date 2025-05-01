@@ -127,7 +127,7 @@ script TheDelphis_EventScript_LeaveShipTrigger
         }
         elif(var(VAR_CHOSEN_SAIL_LOCATION) == 5) // marmaro island
         {
-            warp(MAP_MARMARO_ISLAND, 19, 32) // currently set to Pokémon center entrance, no dock yet
+            warp(MAP_MARMARO_ISLAND, 25, 47)
             waitstate
         }
         elif(var(VAR_CHOSEN_SAIL_LOCATION) == 6) // myrrini island

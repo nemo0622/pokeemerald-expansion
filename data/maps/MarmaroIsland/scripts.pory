@@ -1,5 +1,357 @@
 mapscripts MarmaroIsland_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_MARMARO_ISLAND)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(17, ENCOUNTER_LAND)
+        setobjectaswildencounter(18, ENCOUNTER_LAND)
+        setobjectaswildencounter(19, ENCOUNTER_LAND)
+        setobjectaswildencounter(20, ENCOUNTER_LAND)
     }
+}
+
+script MarmaroIsland_EventScript_PiraeusVaporeon
+{
+    lock
+    faceplayer
+    speakername("Vaporeon")
+    playmoncry(SPECIES_VAPOREON, CRY_MODE_NORMAL)
+    msgbox("Bwark!")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Piraeus's Vaporeon looks happy to see you!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_FatMan
+{
+    lock
+    faceplayer
+    speakername("Fat Man")
+    msgbox(format("My family expects me to go into the mining business, but that's just not where my heart is. I want to run a hotel here!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_LittleGirl
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    msgbox(format("I'm here on vacation with my mom! I've never felt weather this warm!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_Mother
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("My child and I are visiting from the Galar Region. The climate here is so much nicer... maybe we should look into moving! Of course, that's what everyone says on vacation, ehehe."))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_RichBoy
+{
+    lock
+    faceplayer
+    speakername("Rich Boy")
+    msgbox(format("Apparently, this island made a ton of money by selling marble to the rest of the Region. Maybe I could do something like that!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_Lass
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("The pine trees on Marmaro Island are so different than the palms of other islands. I wonder why it's so different."))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_Scraggy
+{
+    lock
+    faceplayer
+    speakername("Scraggy")
+    playmoncry(SPECIES_SCRAGGY, CRY_MODE_NORMAL)
+    msgbox("Hka ka ka!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_BlackBelt
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    msgbox(format("My Pokémon can break right through the rocks around here! I wonder if we'll find anything cool!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_PsychicM
+{
+    lock
+    faceplayer
+    speakername("Psychic")
+    msgbox(format("The white stone of Marmaro Island has special properties! In Ancient Ilios, people used to build temples with it to honor the gods."))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_ConstructionWorker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("Our minecarts move the stone we extract across the island. Big boats come by every so often to ship it across the Ilios Region!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_Worker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("It's hard work to keep the minecart rails clear! There's always loose stone falling on the tracks."))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_ConstructionWorker2
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("We move full minecarts off the tracks to prepare for shipping. Before sending it off, we sort through it all to make sure there aren't any valuables. People have found gold Nuggets hidden in the piles!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_PokefanF
+{
+    lock
+    faceplayer
+    speakername("Pokéfan")
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_MARMARO_TIMER_BALL)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("The Timer Ball is gonna work perfectly, I know it!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_MARMARO_TIMER_BALL)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("My Wurmple and I have been chasing down a Growlithe for hours, hitting it with String Shot to slow it down. After all that effort, I'm out of Poké balls!\p Please, {COLOR GREEN}bring me a Timer Ball{COLOR DARK_GRAY} so I can finally catch the Growlithe!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_MARMARO_TIMER_BALL)
+    }
+    else
+    {
+        msgbox(format("Hiya! Did you bring that Timer Ball you asked for?"))
+        closemessage
+
+        checkitem(ITEM_TIMER_BALL)
+        delay(30)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Pokéfan")
+            msgbox(format("I guess I'm still out of luck...\p When you can, {COLOR GREEN}bring me a Timer Ball{COLOR DARK_GRAY} so I can catch this Growlithe I've been following around the Island!"))
+            closemessage
+            release
+            end
+        }
+        else
+        {
+            speakername("Pokéfan")
+            msgbox(format("Cheers, you brought a Timer Ball! I'll take that off your hands...\p Here, take these Quick Balls. I was gonna use them on the wild Growlithe, but the battle took too long!"))
+            closemessage
+            removeitem(ITEM_TIMER_BALL)
+            delay(5)
+            giveitem(ITEM_QUICK_BALL, 3)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_MARMARO_TIMER_BALL)
+        }
+    }
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_Wurmple
+{
+    lock
+    faceplayer
+    speakername("Wurmple")
+    playmoncry(SPECIES_WURMPLE, CRY_MODE_NORMAL)
+    msgbox("St-st-st.")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("The marble quarry of Marmaro Island is famous in the Ilios Region. Everything from treasure to precious stones can be found in the rock here!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_MARMARO_EGG_QUEST)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Holding your Pokémon Egg has convinced me. I'm gonna head to the Sunset Wildlife Conservation Center in Kipos Town and volunteer to help out!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_MARMARO_EGG_QUEST)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("See up there? That Altaria laid an Egg! I'd give anything to hold a Pokémon Egg, they're just so cool!\p Oh, you're a Trainer, right? Could you {COLOR GREEN}bring me a Pokémon Egg to see{COLOR DARK_GRAY} and hold? I've always wanted to hold one, but taking wild Pokémon Eggs from their parents is unethical."))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_MARMARO_EGG_QUEST)
+    }
+    else
+    {
+        msgbox(format("Chaire! Are you here to check out the Altaria nest?\p Oh, right! Do you have a {COLOR GREEN}Pokémon Egg in your Party{COLOR DARK_GRAY} that I could hold? I've always wanted to!"))
+        closemessage
+
+        checkforspecies(SPECIES_EGG, OPEN_PARTY_SCREEN, MarmaroIsland_EventScript_Beauty_ReactToEgg) // goto that script if have egg in party
+
+        // by getting here, you didn't choose an egg from party menu
+        speakername("Beauty")
+        msgbox(format("Aw, I suppose Pokémon Eggs aren't all that common.\p Bring me a {COLOR GREEN}Pokémon Egg to hold{COLOR DARK_GRAY} if you can! I've always wanted to see and hold one myself."))
+        closemessage
+    }
+    release
+    end
+}
+script MarmaroIsland_EventScript_Beauty_ReactToEgg
+{
+    lock
+    delay(20)
+    applymovement(22, Common_Movement_Heart)
+    waitmovement(0)
+    delay(10)
+    speakername("Beauty")
+    msgbox(format("Amazing! Almost all Pokémon species lay Eggs, and each is slightly different. I'd love to learn even more about them..."))
+    closemessage
+    delay(10)
+    applymovement(22, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    speakername("Beauty")
+    msgbox(format("That's right! In Kipos Town, the Sunset Wildlife Conservation Center helps Pokémon with Eggs. Maybe I'll go ahead and volunteer there!\p I'm sure this wasn't easy for you. I want you to have this!"))
+    closemessage
+    delay(5)
+    giveitem(ITEM_ABILITY_PATCH)
+    closemessage
+
+    delay(20)
+    completequest(QUEST_MARMARO_EGG_QUEST)
+
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_SwimmerM
+{
+    lock
+    faceplayer
+    speakername("Swimmer")
+    msgbox(format("I was on such a roll swimming, I almost went right past Marmaro Island!"))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    speakername("Gentleman")
+    msgbox(format("The way south around Marmaro Island is blocked by that old fellow with the boat. The best way to pass is just to cross the island on foot."))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_SwimmerF
+{
+    lock
+    faceplayer
+    speakername("Swimmer")
+    msgbox(format("To get to Myrrini Island, I have to keep swimming east! I just stopped here for a quick rest."))
+    closemessage
+    release
+    end
+}
+
+script MarmaroIsland_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("Not everyone is a skilled enough Trainer to use Surf between islands. That's why there are bridges connecting some areas, and boat services are common."))
+    closemessage
+    release
+    end
 }

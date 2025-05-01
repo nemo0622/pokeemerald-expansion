@@ -196,6 +196,10 @@
 #define MAP_PACIFIDLOG_TOWN_HOUSE3            (4 | (7 << 8))
 #define MAP_PACIFIDLOG_TOWN_HOUSE4            (5 | (7 << 8))
 #define MAP_PACIFIDLOG_TOWN_HOUSE5            (6 | (7 << 8))
+#define MAP_MARMARO_ISLAND_POKEMON_CENTER     (7 | (7 << 8))
+#define MAP_MARMARO_ISLAND_HOUSE1             (8 | (7 << 8))
+#define MAP_MARMARO_ISLAND_HOUSE2             (9 | (7 << 8))
+#define MAP_MARMARO_ISLAND_HOUSE3             (10 | (7 << 8))
 
 // gMapGroup_IndoorPetalburg
 #define MAP_PETALBURG_CITY_WALLYS_HOUSE      (0 | (8 << 8))

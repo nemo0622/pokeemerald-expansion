@@ -4634,7 +4634,7 @@
     {
       "id": "LAYOUT_MARMARO_ISLAND",
       "name": "MarmaroIsland_Layout",
-      "width": 60,
+      "width": 54,
       "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_AsteriSea",
@@ -4644,7 +4644,7 @@
     {
       "id": "LAYOUT_SEA_OF_ASTERI_CENTRAL",
       "name": "SeaOfAsteri_Central_Layout",
-      "width": 40,
+      "width": 56,
       "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_AsteriSea",
@@ -5390,6 +5390,46 @@
       "secondary_tileset": "gTileset_Kipos",
       "border_filepath": "data/layouts/LastlightRoad/border.bin",
       "blockdata_filepath": "data/layouts/LastlightRoad/map.bin"
+    },
+    {
+      "id": "LAYOUT_MARMARO_ISLAND_POKEMON_CENTER",
+      "name": "MarmaroIsland_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/MarmaroIsland_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/MarmaroIsland_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_MARMARO_ISLAND_HOUSE1",
+      "name": "MarmaroIsland_House1_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/MarmaroIsland_House1/border.bin",
+      "blockdata_filepath": "data/layouts/MarmaroIsland_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MARMARO_ISLAND_HOUSE2",
+      "name": "MarmaroIsland_House2_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/MarmaroIsland_House2/border.bin",
+      "blockdata_filepath": "data/layouts/MarmaroIsland_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MARMARO_ISLAND_HOUSE3",
+      "name": "MarmaroIsland_House3_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/MarmaroIsland_House3/border.bin",
+      "blockdata_filepath": "data/layouts/MarmaroIsland_House3/map.bin"
     }
   ]
 }

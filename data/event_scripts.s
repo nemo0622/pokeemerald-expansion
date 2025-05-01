@@ -1819,3 +1819,11 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/KiposTown_Mart/scripts.inc"
 
 	.include "data/maps/LastlightRoad/scripts.inc"
+
+	.include "data/maps/MarmaroIsland_PokemonCenter/scripts.inc"
+
+	.include "data/maps/MarmaroIsland_House1/scripts.inc"
+
+	.include "data/maps/MarmaroIsland_House2/scripts.inc"
+
+	.include "data/maps/MarmaroIsland_House3/scripts.inc"

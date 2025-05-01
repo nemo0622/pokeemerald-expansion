@@ -1,0 +1,62 @@
+mapscripts MarmaroIsland_PokemonCenter_MapScripts {}
+
+script MarmaroIsland_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Marmaro Island Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_MARMARO_ISLAND)
+    }
+    release
+    end
+}
+
+script MarmaroIsland_PokemonCenter_EventScript_GameboyKid
+{
+    lock
+    faceplayer
+    speakername("Gameboy Kid")
+    msgbox(format("Mudbray Kong is super hard! I can't jump over the barrels it kicks down at me!"))
+    closemessage
+    applymovement(5, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script MarmaroIsland_PokemonCenter_EventScript_Farmer
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("I'll admit it, I spend most money I make selling crops on buying Pokémon Dolls. What can I say, they're just so cute!"))
+    closemessage
+    release
+    end
+}

@@ -982,6 +982,46 @@ side_quest(
 	NULL,
 	0
 ),
+side_quest(
+	gText_SideQuestName_42, // QUEST_ASTERI_SEA_PEARL_STRING
+	gText_SideQuestDesc_42,
+	gText_SideQuestDesc_42,
+	gText_SideQuestMap42,
+	ITEM_PEARL_STRING,
+	ITEM,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_43, // QUEST_MARMARO_TIMER_BALL
+	gText_SideQuestDesc_43,
+	gText_SideQuestDesc_43,
+	gText_SideQuestMap43,
+	ITEM_TIMER_BALL,
+	ITEM,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_44, // QUEST_MARMARO_EGG_QUEST
+	gText_SideQuestDesc_44,
+	gText_SideQuestDesc_44,
+	gText_SideQuestMap44,
+	SPECIES_EGG,
+	PKMN,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_45, // QUEST_MYRRINI_ALLERGIES
+	gText_SideQuestDesc_45,
+	gText_SideQuestDesc_45,
+	gText_SideQuestMap45,
+	ITEM_FULL_HEAL,
+	ITEM,
+	NULL,
+	0
+),
 };
 ////////////////////////END QUEST CUSTOMIZATION////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////

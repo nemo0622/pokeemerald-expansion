@@ -3,3 +3,179 @@ mapscripts MyrriniIsland_MapScripts {
         setflag(FLAG_VISITED_MYRRINI_ISLAND)
     }
 }
+
+script MyrriniIsland_EventScript_BlackBelt
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    msgbox("Sometimes, you have to kick back and relax. Myrrini Island is perfect for that!")
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_PsychicM
+{
+    lock
+    faceplayer
+    speakername("Psychic")
+    msgbox(format("This island has lots of grape vines, purple fruited trees, and purple buildings. Purple is my favorite color, so I love it!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("Migratory Pokémon stop on Myrrini Island while they fly, like that Swanna on the roof! They join up with the native Oricorio found here to dance and sing."))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("Ahh, this is the life... I knew moving to Myrrini Island was the right choice. The folks here are nice, and that old sailor over there is nice on the eyes... ehehe!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    message(format("The wildflowers growing on this island make it a dream! My Ribombee is having the time of her life gathering nectar and pollen from them all.\p Are you interested in buying any of the Nectar? Oricorio seem to love it!"))
+    waitmessage
+    pokemart(NectarMart)
+    closemessage
+    delay(5)
+    speakername("Beauty")
+    msgbox(format("Come again! I'll still be here with my sweet Ribombee."))
+    closemessage
+    release
+    end
+}
+
+mart NectarMart 
+{
+    ITEM_RED_NECTAR
+    ITEM_YELLOW_NECTAR
+    ITEM_PINK_NECTAR
+    ITEM_PURPLE_NECTAR
+}
+
+script MyrriniIsland_EventScript_Ribombee
+{
+    lock
+    faceplayer
+    speakername("Ribombee")
+    playmoncry(SPECIES_RIBOMBEE, CRY_MODE_NORMAL)
+    msgbox("Zee-ee-ee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Camper
+{
+    lock
+    faceplayer
+    speakername("Camper")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_MYRRINI_ALLERGIES)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("My allergies are all cleared up! Now I can fully enjoy Myrrini Island!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_MYRRINI_ALLERGIES)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("The outdoors are great and all, but... ACHOO! SHNIFF! My allergies are acting up...\p You seem like you're doing alright, could you bring me a {COLOR GREEN}Full Heal{COLOR DARK_GRAY}? Maybe that'll help my allergies."))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_MYRRINI_ALLERGIES)
+    }
+    else
+    {
+        msgbox(format("ACHOO! H-hey... SHNIFFLE! Did you happen to bring a Full Heal...?"))
+        closemessage
+
+        checkitem(ITEM_FULL_HEAL)
+        delay(30)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Camper")
+            msgbox(format("Aww, but my nose is totally clogged.\p Bring me a {COLOR GREEN}Full Heal{COLOR DARK_GRAY} for my pollen allergy, please!"))
+            closemessage
+            release
+            end
+        }
+        else
+        {
+            speakername("Camper")
+            msgbox(format("Oh, you've got it! Let me just use this quick..."))
+            closemessage
+            removeitem(ITEM_FULL_HEAL)
+            delay(30)
+            applymovement(23, Common_Movement_Heart)
+            waitmovement(0)
+            delay(10)
+            speakername("Camper")
+            msgbox(format("Woah, what a difference that made! I can totally breathe now!\p Now I can have fun outside with the flowers. Thank you! Take this!"))
+            closemessage
+            delay(5)
+            giveitem(ITEM_SILK_SCARF)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_MYRRINI_ALLERGIES)
+        }
+    }
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Girl2
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("The crops and fruits grown on Myrrini Island are the best in Ilios! I think it's the sunlight and the warm weather."))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Panpour
+{
+    lock
+    faceplayer
+    speakername("Panpour")
+    playmoncry(SPECIES_PANPOUR, CRY_MODE_NORMAL)
+    msgbox("Hia hee ee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+// NOTE TO FUTURE JACK
+// Turn the Nemo's Favorites quest into an Oricorio collecting quest!
+// Explain the capstone on Hawaiian Honeycreepers, which inspired Oricorio

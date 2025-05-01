@@ -236,7 +236,7 @@ TheDelphis_EventScript_LeaveShipTrigger_8:
 
 TheDelphis_EventScript_LeaveShipTrigger_9:
 # 130 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_MARMARO_ISLAND, 19, 32
+	warp MAP_MARMARO_ISLAND, 25, 47
 # 131 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1

@@ -77,4 +77,6 @@ script SofosCity_House4_EventScript_ComputerGuy
             completequest(QUEST_5_PINBALL_POINTS)
         }
     }
+    release
+    end
 }
