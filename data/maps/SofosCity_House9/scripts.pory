@@ -10,7 +10,7 @@ script SofosCity_House9_EventScript_Nemo
     questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_NEMOS_QUEST)
     if(var(VAR_RESULT) == 1) // quest is complete already
     {
-        msgbox(format("I hope you're enjoying your time in the Ilios Region!"))
+        msgbox(format("I hope you're enjoying your time in the Ilios Region! I should get back to my University work, ehehe."))
         closemessage
         release
         end
@@ -20,7 +20,7 @@ script SofosCity_House9_EventScript_Nemo
     questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_NEMOS_QUEST)
     if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
     {
-        msgbox(format("Chaire! I'm Nemo, the developer of Pokémon Lazarus. I hope you're enjoying the Ilios Region - a lot of love and time has gone into it!\p I suppose I should give you a Quest, huh? Hmm... how about you try to go find some of {COLOR GREEN}my favorite Pokémon{COLOR DARK_GRAY}?\p Let me know when you've caught the {COLOR GREEN}Sleepy Bear, Spherical, First Bird, and Wild Sage Pokémon{COLOR DARK_GRAY}. Those are their Pokédex classifications - you'll have to figure out which Pokémon they are!"))
+        msgbox(format("Chaire! I'm Nemo, the developer of Pokémon Lazarus. I hope you're enjoying the Ilios Region - a lot of love and time has gone into it!\p My University Capstone paper was on Hawaiian Honeycreepers, a group of birds endemic to Hawaii. Oricorio was inspired by these incredible birds, so it has become one of my favorites.\p Show me {COLOR GREEN}all four Oricorio Forms{COLOR DARK_GRAY} in your party, and I'll give you something special!"))
         closemessage
 
         delay(20)
@@ -28,19 +28,28 @@ script SofosCity_House9_EventScript_Nemo
     }
     else
     {
-        msgbox(format("Hey there! You having fun filling up the Pokédex? I hope it's making you think about Biology and conservation. That's the whole motivation behind making this game, you know!\p Right, the Quest I gave you. Let's see if you've caught the Pokémon I requested!"))
+        msgbox(format("Hey there! You having fun filling up the Pokédex? I hope it's making you think about Biology and conservation. That's the whole motivation behind making this game, you know!\p Right, the Quest I gave you. Show me your {COLOR GREEN}Oricorio Forms{COLOR DARK_GRAY}! First, your {COLOR GREEN}Baile Form{COLOR DARK_GRAY} Oricorio..."))
         closemessage
 
-        getcaughtmon(SPECIES_KOMALA)
-        if(var(VAR_RESULT) == 1)
+        checkforspecieslocal(SPECIES_ORICORIO_BAILE, OPEN_PARTY_SCREEN)
+        if(var(VAR_RESULT) == TRUE)
         {
-            getcaughtmon(SPECIES_SPHEAL)
-            if(var(VAR_RESULT) == 1)
+            speakername("Nemo")
+            msgbox(format("Oricorio's {COLOR GREEN}Baile Form{COLOR DARK_GRAY}! Look at that amazing dancing! Now, how about Oricorio {COLOR GREEN}Pom Pom Form{COLOR DARK_GRAY}?"))
+            closemessage
+            checkforspecieslocal(SPECIES_ORICORIO_POM_POM, OPEN_PARTY_SCREEN)
+            if(var(VAR_RESULT) == TRUE)
             {
-                getcaughtmon(SPECIES_ARCHEN)
-                if(var(VAR_RESULT) == 1)
+                speakername("Nemo")
+                msgbox(format("Oricorio's {COLOR GREEN}Pom Pom Form{COLOR DARK_GRAY}! I love their energy. Now, how about Oricorio {COLOR GREEN}Pau Form{COLOR DARK_GRAY}?"))
+                closemessage
+                checkforspecieslocal(SPECIES_ORICORIO_PAU, OPEN_PARTY_SCREEN)
+                if(var(VAR_RESULT) == TRUE)
                 {
-                    getcaughtmon(SPECIES_ORANGURU)
+                    speakername("Nemo")
+                    msgbox(format("Oricorio's {COLOR GREEN}Pau Form{COLOR DARK_GRAY}! Swaying like that makes me want to dance, too. Lastly, how about Oricorio {COLOR GREEN}Sensu Form{COLOR DARK_GRAY}?"))
+                    closemessage
+                    checkforspecieslocal(SPECIES_ORICORIO_SENSU, OPEN_PARTY_SCREEN)
                 }
             }
         }
@@ -49,13 +58,13 @@ script SofosCity_House9_EventScript_Nemo
         if(var(VAR_RESULT) == 0)
         {
             speakername("Nemo")
-            msgbox(format("Looks like you've still got some Pokémon catching to do!\p Remember, I'm looking for the {COLOR GREEN}Sleepy Bear, Spherical, First Bird, and Wild Sage Pokémon{COLOR DARK_GRAY}. Come visit me when you've caught all 4 Pokémon!"))
+            msgbox(format("Looks like you've still got some Oricorio catching to do!\p Remember, I want you to show me {COLOR GREEN}all four Oricorio Forms{COLOR DARK_GRAY}. Come visit me when you've caught them!"))
             closemessage
         }
         else
         {
             speakername("Nemo")
-            msgbox(format("Komala... Spheal... Archen... and Oranguru! Hey, you've caught them all! Those are some of my favorite little fellas.\p Here's something to help you on your journey."))
+            msgbox(format("Fire, Electric, Psychic, and Ghost! Hey, you've caught them all! My University Capstone was on Hawaiian Honeycreepers, so Oricorio will always be special to me.\p I'm sure that was a lot of work, ehehe. Here's something to help you on your journey."))
             closemessage
             delay(5)
             giveitem(ITEM_GLIMMERING_CHARM)

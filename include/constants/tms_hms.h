@@ -44,7 +44,7 @@
     F(AERIAL_ACE) \
     F(TORMENT) \
     F(FACADE) \
-    F(SECRET_POWER) \
+    F(POISON_FANG) \
     F(REST) \
     F(ATTRACT) \
     F(THIEF) \

@@ -1304,7 +1304,7 @@
 #define FLAG_DONATED_20_ZOO_POKEMON                                 0x4E3 // Event flag for donating 20 pokemon to the zoo
 #define FLAG_DONATED_30_ZOO_POKEMON                                 0x4E4 // Event flag for donating 30 pokemon to the zoo
 #define FLAG_GIVEN_TERA_SHARD_KIPOS                                 0x4E5 // Given Electric Tera Shard by woman in kipos town
-#define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
+#define FLAG_GOT_TM_POISON_FANG                                     0x4E6 // Got TM Poison Fang from Artist in Myrrini Island
 #define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
 #define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
 #define FLAG_UNUSED_0x4E9                                           0x4E9 // Unused Flag

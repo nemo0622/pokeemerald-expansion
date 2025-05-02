@@ -2446,6 +2446,19 @@
     .endif
     .endm
 
+	@ Check if the Player has \speciesId in their party.
+	@ Clone of "checkforspecies", but doesn't goto any function. Just sets VAR_RESULT!
+    .macro checkforspecieslocal speciesId:req, silent:req
+    .if \silent == OPEN_PARTY_SCREEN
+        special ChoosePartyMon
+        waitstate
+        specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+    .else
+        setvar VAR_TEMP_1, \speciesId
+        specialvar VAR_RESULT, CheckPartyForMon
+    .endif
+    .endm
+
 	@ Begins a wild battle against an overworld mon object event with a DEFINED level.
 	.macro startoverworldencounter level=req
 	callnative GetOverworldMonSpecies

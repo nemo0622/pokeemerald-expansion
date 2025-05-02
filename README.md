@@ -78,6 +78,7 @@ MAJOR TODOS:
             - MANY BERRY TREES HERE!
             - Use hanging light graphics from Yanako's tilesets (plus other buildings from that sheet too tbh)
         - Péntepetal City ("Five-petal City") - name inspired by the Wild Pansy / Violet, which is a major lesbian/queer symbol with 5 petals. City obviously on island inspired by Lesbos
+            - Split between a small outer island and a mainland section, connected with TWO LARGE MARBLE BRIDGES (inspired by Ancient Mytilene, the capital of the island!)
             - Questline unlocking Eternal Flower Floette
             - Major Cabin Decor shops! Ways here to unlock many poké dolls?
             - Wishing Star mart location could be here too! Makes sense to make it late-ish in game (~after Gym 5/6)

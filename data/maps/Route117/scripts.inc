@@ -1,6 +1,6 @@
-.set LOCALID_DAYCARE_MAN, 3
-.set LOCALID_DAYCARE_MON_0, 25
-.set LOCALID_DAYCARE_MON_1, 26
+.set LOCALID_DAYCARE_MAN, 29
+.set LOCALID_DAYCARE_MON_0, 30
+.set LOCALID_DAYCARE_MON_1, 31
 
 Route117_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route117_OnTransition
@@ -46,7 +46,7 @@ Route117_EventScript_DaycareMonMaxCompatibility: @ facing; walk in place
 
 Route117_EventScript_TryMoveDayCareMan::
 	goto_if_unset FLAG_PENDING_DAYCARE_EGG, Route117_EventScript_StopMoveDayCareMan
-	setobjectxyperm LOCALID_DAYCARE_MAN, 47, 6
+	setobjectxyperm LOCALID_DAYCARE_MAN, 67, 53
 Route117_EventScript_StopMoveDayCareMan::
 	return
 
@@ -239,5 +239,11 @@ Route117_Text_RouteSignMauville:
 	.string "{RIGHT_ARROW} MAUVILLE CITY$"
 
 Route117_Text_DayCareSign:
-	.string "POKéMON DAY CARE\n"
-	.string "“Let us raise your POKéMON.”$"
+	.string "Pokémon Daycare\n"
+	.string "“Let us raise your Pokémon.”$"
+
+Route117_Name_DayCareMan:
+	.string "Daycare Man$"
+
+Route117_Name_DayCareLady:
+	.string "Daycare Lady$"

@@ -1,6 +1,8 @@
 mapscripts MyrriniIsland_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_MYRRINI_ISLAND)
+
+        call(Route117_OnTransition)
     }
 }
 
@@ -176,6 +178,58 @@ script MyrriniIsland_EventScript_Panpour
     end
 }
 
-// NOTE TO FUTURE JACK
-// Turn the Nemo's Favorites quest into an Oricorio collecting quest!
-// Explain the capstone on Hawaiian Honeycreepers, which inspired Oricorio
+script MyrriniIsland_EventScript_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("These markets always attract a bunch of Pokémon. I'm looking for any Bug-type Pokémon that show up!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Performer")
+    msgbox(format("Can you smell it? The pollen in the air, the fruits, and the salt sea spray... I'm so glad I moved here!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    if(flag(FLAG_GOT_TM_POISON_FANG))
+    {
+        msgbox(format("Inflicting opposing Pokémon with status effects is a sure way to win Pokémon battles!"))
+        closemessage
+    }
+    else
+    {
+        setflag(FLAG_GOT_TM_POISON_FANG)
+        msgbox(format("The Gym Leader on Myrrini Island specializes in Poison-type moves, which can tear through teams by inflicting the Poison effect on your Pokémon. I created this TM based on those techniques!"))
+        closemessage
+        delay(5)
+        giveitem(ITEM_TM_POISON_FANG)
+        closemessage
+    }
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Farmer1
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("These fruit trees are blooming all across the island! We're gonna make a fortune selling all this!"))
+    closemessage
+    release
+    end
+}
