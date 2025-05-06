@@ -1,0 +1,23 @@
+mapscripts MyrriniIsland_House1_MapScripts {}
+
+script MyrriniIsland_House1_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    speakername("Gentleman")
+    msgbox(format("Some of the sweetest, most flavorful wine in the world comes from Myrrini Island. Wine tasting festivals are held here all the time!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_House1_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("The architecture on Myrrini Island uses styles from ancient times. Most houses are made of intricately carved wood."))
+    closemessage
+    release
+    end
+}

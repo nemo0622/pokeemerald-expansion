@@ -243,7 +243,7 @@ TheDelphis_EventScript_LeaveShipTrigger_9:
 
 TheDelphis_EventScript_LeaveShipTrigger_10:
 # 135 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_MYRRINI_ISLAND, 23, 38
+	warp MAP_MYRRINI_ISLAND, 20, 47
 # 136 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1

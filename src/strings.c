@@ -1789,6 +1789,10 @@ const u8 gText_SideQuestName_42[] = _("Lost at Sea");
 const u8 gText_SideQuestName_43[] = _("Journey's End");
 const u8 gText_SideQuestName_44[] = _("Egg Envy");
 const u8 gText_SideQuestName_45[] = _("Allergies");
+const u8 gText_SideQuestName_46[] = _("Second Battle Pavilion");
+const u8 gText_SideQuestName_47[] = _("Rift in the Heart");
+const u8 gText_SideQuestName_48[] = _("Mischief on Marmaro");
+const u8 gText_SideQuestName_49[] = _("5-Star Recovery");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Look for the deliveryman\nwith a flipped cart.");
@@ -1836,6 +1840,10 @@ const u8 gText_SideQuestDesc_42[] = _("Bring the Old Man his\nwife's lost Pearl 
 const u8 gText_SideQuestDesc_43[] = _("Give the Pokéfan a Timer\nBall to catch the Pokémon\nshe's chasing.");
 const u8 gText_SideQuestDesc_44[] = _("Show the Beauty a\nPokémon Egg she can\nhold.");
 const u8 gText_SideQuestDesc_45[] = _("Bring a Full Heal to\nthe Camper. It might\nhelp his allergies.");
+const u8 gText_SideQuestDesc_46[] = _("Participate in the Myrrini\nIsland Battle Pavilion and\ntell the Crystal Girl.");
+const u8 gText_SideQuestDesc_47[] = _("Give a Heart Scale to\nthe Punk Rocker to help\nher relationship.");
+const u8 gText_SideQuestDesc_48[] = _("Chase Team Chimera out\nof the Mine on Marmaro\nIsland.");
+const u8 gText_SideQuestDesc_49[] = _("Visit Rania in Péntepetal\nCity after her nasty\nrun-in with Team Chimera.");
 
 //completed quest description
 // NOTE: Probably never seen now that I only make Active quests seen lol!
@@ -1916,6 +1924,10 @@ const u8 gText_SideQuestMap42[] = _("Asteri Sea (West)"); // QUEST_ASTERI_SEA_PE
 const u8 gText_SideQuestMap43[] = _("Marmaro Island"); // QUEST_MARMARO_TIMER_BALL
 const u8 gText_SideQuestMap44[] = _("Marmaro Island"); // QUEST_MARMARO_EGG_QUEST
 const u8 gText_SideQuestMap45[] = _("Myrrini Island"); // QUEST_MYRRINI_ALLERGIES
+const u8 gText_SideQuestMap46[] = _("Myrrini Island"); // QUEST_TRY_MYRRINI_BATTLE_PAVILION
+const u8 gText_SideQuestMap47[] = _("Myrrini Island (House)"); // QUEST_MYRRINI_HEART_SCALE
+const u8 gText_SideQuestMap48[] = _("Marmaro Island Mine"); // QUEST_FREE_MARMARO_MINES
+const u8 gText_SideQuestMap49[] = _("Péntepetal City"); // QUEST_VISIT_RANIA_PENTEPETAL
 
 //subquests
 // erm unused now oopsies

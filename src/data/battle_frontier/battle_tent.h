@@ -1248,21 +1248,21 @@ const struct TrainerMon gSlateportBattleTentMons[NUM_SLATEPORT_TENT_MONS] =
 // Verdanturf Battle Tent.
 const u16 gVerdanturfBattleTentTrainerMons_Brenna[] =
 {
-    VERDANTURF_TENT_MON_SHROOMISH,
-    VERDANTURF_TENT_MON_SWALOT,
+    VERDANTURF_TENT_MON_FOMANTIS,
+    VERDANTURF_TENT_MON_SALANDIT,
     VERDANTURF_TENT_MON_BALTOY,
-    VERDANTURF_TENT_MON_LOTAD,
-    VERDANTURF_TENT_MON_NUZLEAF,
+    VERDANTURF_TENT_MON_CRABRAWLER,
+    VERDANTURF_TENT_MON_LILEEP,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Dilan[] =
 {
-    VERDANTURF_TENT_MON_GRAVELER,
-    VERDANTURF_TENT_MON_TRAPINCH,
+    VERDANTURF_TENT_MON_LYCANROC,
+    VERDANTURF_TENT_MON_VIBRAVA,
     VERDANTURF_TENT_MON_BALTOY,
-    VERDANTURF_TENT_MON_SOLROCK,
-    VERDANTURF_TENT_MON_MACHOKE,
+    VERDANTURF_TENT_MON_KLEAVOR,
+    VERDANTURF_TENT_MON_FALINKS,
     -1
 };
 
@@ -1270,8 +1270,8 @@ const u16 gVerdanturfBattleTentTrainerMons_Eliana[] =
 {
     VERDANTURF_TENT_MON_MAGIKARP,
     VERDANTURF_TENT_MON_BARBOACH,
-    VERDANTURF_TENT_MON_GOLDEEN_1,
-    VERDANTURF_TENT_MON_LOTAD,
+    VERDANTURF_TENT_MON_SEALEO,
+    VERDANTURF_TENT_MON_CRABRAWLER,
     VERDANTURF_TENT_MON_WAILMER,
     -1
 };
@@ -1280,20 +1280,20 @@ const u16 gVerdanturfBattleTentTrainerMons_Markus[] =
 {
     VERDANTURF_TENT_MON_MAGIKARP,
     VERDANTURF_TENT_MON_BARBOACH,
-    VERDANTURF_TENT_MON_LOTAD,
-    VERDANTURF_TENT_MON_GOLDEEN_2,
+    VERDANTURF_TENT_MON_CRABRAWLER,
+    VERDANTURF_TENT_MON_LANTURN,
     VERDANTURF_TENT_MON_TENTACOOL,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Caitlyn[] =
 {
-    VERDANTURF_TENT_MON_POOCHYENA,
+    VERDANTURF_TENT_MON_MORGREM,
     VERDANTURF_TENT_MON_KECLEON,
     VERDANTURF_TENT_MON_ELECTRIKE,
-    VERDANTURF_TENT_MON_MIGHTYENA,
-    VERDANTURF_TENT_MON_SKARMORY,
-    VERDANTURF_TENT_MON_CACNEA,
+    VERDANTURF_TENT_MON_HOUNDOOM,
+    VERDANTURF_TENT_MON_TINKATUFF,
+    VERDANTURF_TENT_MON_GOGOAT,
     -1
 };
 
@@ -1301,9 +1301,9 @@ const u16 gVerdanturfBattleTentTrainerMons_Desiree[] =
 {
     VERDANTURF_TENT_MON_WINGULL,
     VERDANTURF_TENT_MON_KECLEON,
-    VERDANTURF_TENT_MON_SEVIPER,
-    VERDANTURF_TENT_MON_SKARMORY,
-    VERDANTURF_TENT_MON_KADABRA,
+    VERDANTURF_TENT_MON_ARBOK,
+    VERDANTURF_TENT_MON_TINKATUFF,
+    VERDANTURF_TENT_MON_DUOSION,
     -1
 };
 
@@ -1311,7 +1311,7 @@ const u16 gVerdanturfBattleTentTrainerMons_Ronald[] =
 {
     VERDANTURF_TENT_MON_ZIGZAGOON,
     VERDANTURF_TENT_MON_LINOONE,
-    VERDANTURF_TENT_MON_SWELLOW,
+    VERDANTURF_TENT_MON_TRUMBEAK,
     VERDANTURF_TENT_MON_ELECTRIKE,
     VERDANTURF_TENT_MON_VOLTORB,
     -1
@@ -1321,15 +1321,15 @@ const u16 gVerdanturfBattleTentTrainerMons_Ashten[] =
 {
     VERDANTURF_TENT_MON_ARON_1,
     VERDANTURF_TENT_MON_KECLEON,
-    VERDANTURF_TENT_MON_ARON_2,
-    VERDANTURF_TENT_MON_TRAPINCH,
-    VERDANTURF_TENT_MON_WHISMUR,
+    VERDANTURF_TENT_MON_MINIOR,
+    VERDANTURF_TENT_MON_VIBRAVA,
+    VERDANTURF_TENT_MON_STUFFUL,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Gerard[] =
 {
-    VERDANTURF_TENT_MON_MARILL,
+    VERDANTURF_TENT_MON_SNOVER,
     VERDANTURF_TENT_MON_BARBOACH,
     VERDANTURF_TENT_MON_PELIPPER,
     VERDANTURF_TENT_MON_MAGIKARP,
@@ -1339,33 +1339,33 @@ const u16 gVerdanturfBattleTentTrainerMons_Gerard[] =
 
 const u16 gVerdanturfBattleTentTrainerMons_Bradly[] =
 {
-    VERDANTURF_TENT_MON_NUZLEAF,
-    VERDANTURF_TENT_MON_TAILLOW,
-    VERDANTURF_TENT_MON_POOCHYENA,
+    VERDANTURF_TENT_MON_LILEEP,
+    VERDANTURF_TENT_MON_WATTREL,
+    VERDANTURF_TENT_MON_MORGREM,
     VERDANTURF_TENT_MON_DUSTOX,
-    VERDANTURF_TENT_MON_GOLDEEN_1,
+    VERDANTURF_TENT_MON_SEALEO,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Dennis[] =
 {
     VERDANTURF_TENT_MON_NINJASK,
-    VERDANTURF_TENT_MON_TRAPINCH,
+    VERDANTURF_TENT_MON_VIBRAVA,
     VERDANTURF_TENT_MON_DUSTOX,
     VERDANTURF_TENT_MON_TENTACOOL,
-    VERDANTURF_TENT_MON_ARON_2,
+    VERDANTURF_TENT_MON_MINIOR,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Prestin[] =
 {
-    VERDANTURF_TENT_MON_KADABRA,
-    VERDANTURF_TENT_MON_MIGHTYENA,
-    VERDANTURF_TENT_MON_SKARMORY,
+    VERDANTURF_TENT_MON_DUOSION,
+    VERDANTURF_TENT_MON_HOUNDOOM,
+    VERDANTURF_TENT_MON_TINKATUFF,
     VERDANTURF_TENT_MON_ELECTRIKE,
-    VERDANTURF_TENT_MON_CACNEA,
-    VERDANTURF_TENT_MON_WHISMUR,
-    VERDANTURF_TENT_MON_ILLUMISE,
+    VERDANTURF_TENT_MON_GOGOAT,
+    VERDANTURF_TENT_MON_STUFFUL,
+    VERDANTURF_TENT_MON_YANMA,
     -1
 };
 
@@ -1374,7 +1374,7 @@ const u16 gVerdanturfBattleTentTrainerMons_Ernesto[] =
     VERDANTURF_TENT_MON_MAGNEMITE,
     VERDANTURF_TENT_MON_VOLTORB,
     VERDANTURF_TENT_MON_ELECTRIKE,
-    VERDANTURF_TENT_MON_LOUDRED,
+    VERDANTURF_TENT_MON_HERDIER,
     VERDANTURF_TENT_MON_PELIPPER,
     -1
 };
@@ -1382,10 +1382,10 @@ const u16 gVerdanturfBattleTentTrainerMons_Ernesto[] =
 const u16 gVerdanturfBattleTentTrainerMons_Nala[] =
 {
     VERDANTURF_TENT_MON_ZIGZAGOON,
-    VERDANTURF_TENT_MON_SHROOMISH,
+    VERDANTURF_TENT_MON_FOMANTIS,
     VERDANTURF_TENT_MON_WINGULL,
-    VERDANTURF_TENT_MON_SWALOT,
-    VERDANTURF_TENT_MON_GOLDEEN_1,
+    VERDANTURF_TENT_MON_SALANDIT,
+    VERDANTURF_TENT_MON_SEALEO,
     VERDANTURF_TENT_MON_WAILMER,
     VERDANTURF_TENT_MON_PELIPPER,
     -1
@@ -1393,77 +1393,77 @@ const u16 gVerdanturfBattleTentTrainerMons_Nala[] =
 
 const u16 gVerdanturfBattleTentTrainerMons_Darnell[] =
 {
-    VERDANTURF_TENT_MON_POOCHYENA,
-    VERDANTURF_TENT_MON_SOLROCK,
-    VERDANTURF_TENT_MON_LOUDRED,
-    VERDANTURF_TENT_MON_TRAPINCH,
-    VERDANTURF_TENT_MON_VIGOROTH,
-    VERDANTURF_TENT_MON_WHISMUR,
+    VERDANTURF_TENT_MON_MORGREM,
+    VERDANTURF_TENT_MON_KLEAVOR,
+    VERDANTURF_TENT_MON_HERDIER,
+    VERDANTURF_TENT_MON_VIBRAVA,
+    VERDANTURF_TENT_MON_CUFANT,
+    VERDANTURF_TENT_MON_STUFFUL,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Ashlyn[] =
 {
-    VERDANTURF_TENT_MON_SOLROCK,
-    VERDANTURF_TENT_MON_MARILL,
+    VERDANTURF_TENT_MON_KLEAVOR,
+    VERDANTURF_TENT_MON_SNOVER,
     VERDANTURF_TENT_MON_VOLTORB,
-    VERDANTURF_TENT_MON_GRAVELER,
-    VERDANTURF_TENT_MON_GOLDEEN_1,
+    VERDANTURF_TENT_MON_LYCANROC,
+    VERDANTURF_TENT_MON_SEALEO,
     VERDANTURF_TENT_MON_MAGIKARP,
-    VERDANTURF_TENT_MON_CACNEA,
+    VERDANTURF_TENT_MON_GOGOAT,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Addison[] =
 {
-    VERDANTURF_TENT_MON_POOCHYENA,
+    VERDANTURF_TENT_MON_MORGREM,
     VERDANTURF_TENT_MON_ZIGZAGOON,
     VERDANTURF_TENT_MON_SWABLU,
-    VERDANTURF_TENT_MON_KADABRA,
+    VERDANTURF_TENT_MON_DUOSION,
     VERDANTURF_TENT_MON_MAGIKARP,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Justine[] =
 {
-    VERDANTURF_TENT_MON_POOCHYENA,
+    VERDANTURF_TENT_MON_MORGREM,
     VERDANTURF_TENT_MON_ZIGZAGOON,
     VERDANTURF_TENT_MON_SWABLU,
-    VERDANTURF_TENT_MON_MARILL,
-    VERDANTURF_TENT_MON_LOTAD,
+    VERDANTURF_TENT_MON_SNOVER,
+    VERDANTURF_TENT_MON_CRABRAWLER,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Tyson[] =
 {
-    VERDANTURF_TENT_MON_MACHOP,
-    VERDANTURF_TENT_MON_MAKUHITA,
-    VERDANTURF_TENT_MON_SKARMORY,
-    VERDANTURF_TENT_MON_GRAVELER,
+    VERDANTURF_TENT_MON_PASSIMIAN,
+    VERDANTURF_TENT_MON_MANKEY,
+    VERDANTURF_TENT_MON_TINKATUFF,
+    VERDANTURF_TENT_MON_LYCANROC,
     VERDANTURF_TENT_MON_SWABLU,
-    VERDANTURF_TENT_MON_VIGOROTH,
-    VERDANTURF_TENT_MON_WHISMUR,
+    VERDANTURF_TENT_MON_CUFANT,
+    VERDANTURF_TENT_MON_STUFFUL,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Laila[] =
 {
-    VERDANTURF_TENT_MON_MACHOP,
-    VERDANTURF_TENT_MON_MAKUHITA,
-    VERDANTURF_TENT_MON_NUMEL_2,
-    VERDANTURF_TENT_MON_GOLDEEN_2,
-    VERDANTURF_TENT_MON_ILLUMISE,
-    VERDANTURF_TENT_MON_WHISMUR,
+    VERDANTURF_TENT_MON_PASSIMIAN,
+    VERDANTURF_TENT_MON_MANKEY,
+    VERDANTURF_TENT_MON_KROKOROK,
+    VERDANTURF_TENT_MON_LANTURN,
+    VERDANTURF_TENT_MON_YANMA,
+    VERDANTURF_TENT_MON_STUFFUL,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Waren[] =
 {
-    VERDANTURF_TENT_MON_POOCHYENA,
+    VERDANTURF_TENT_MON_MORGREM,
     VERDANTURF_TENT_MON_ARON_1,
     VERDANTURF_TENT_MON_NUMEL_1,
-    VERDANTURF_TENT_MON_SWALOT,
-    VERDANTURF_TENT_MON_SWELLOW,
+    VERDANTURF_TENT_MON_SALANDIT,
+    VERDANTURF_TENT_MON_TRUMBEAK,
     -1
 };
 
@@ -1471,7 +1471,7 @@ const u16 gVerdanturfBattleTentTrainerMons_Tobias[] =
 {
     VERDANTURF_TENT_MON_MAGIKARP,
     VERDANTURF_TENT_MON_BARBOACH,
-    VERDANTURF_TENT_MON_GOLDEEN_2,
+    VERDANTURF_TENT_MON_LANTURN,
     VERDANTURF_TENT_MON_TENTACOOL,
     VERDANTURF_TENT_MON_WAILMER,
     -1
@@ -1481,9 +1481,9 @@ const u16 gVerdanturfBattleTentTrainerMons_Josiah[] =
 {
     VERDANTURF_TENT_MON_WINGULL,
     VERDANTURF_TENT_MON_SWABLU,
-    VERDANTURF_TENT_MON_SWELLOW,
+    VERDANTURF_TENT_MON_TRUMBEAK,
     VERDANTURF_TENT_MON_PELIPPER,
-    VERDANTURF_TENT_MON_TAILLOW,
+    VERDANTURF_TENT_MON_WATTREL,
     -1
 };
 
@@ -1491,39 +1491,39 @@ const u16 gVerdanturfBattleTentTrainerMons_Dion[] =
 {
     VERDANTURF_TENT_MON_NINJASK,
     VERDANTURF_TENT_MON_DUSTOX,
-    VERDANTURF_TENT_MON_SWALOT,
-    VERDANTURF_TENT_MON_VIGOROTH,
-    VERDANTURF_TENT_MON_SEVIPER,
+    VERDANTURF_TENT_MON_SALANDIT,
+    VERDANTURF_TENT_MON_CUFANT,
+    VERDANTURF_TENT_MON_ARBOK,
     VERDANTURF_TENT_MON_TENTACOOL,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Kenzie[] =
 {
-    VERDANTURF_TENT_MON_LOTAD,
+    VERDANTURF_TENT_MON_CRABRAWLER,
     VERDANTURF_TENT_MON_NUMEL_1,
     VERDANTURF_TENT_MON_SWABLU,
-    VERDANTURF_TENT_MON_NUZLEAF,
+    VERDANTURF_TENT_MON_LILEEP,
     VERDANTURF_TENT_MON_ELECTRIKE,
-    VERDANTURF_TENT_MON_ARON_2,
+    VERDANTURF_TENT_MON_MINIOR,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Lillian[] =
 {
-    VERDANTURF_TENT_MON_GOLDEEN_2,
+    VERDANTURF_TENT_MON_LANTURN,
     VERDANTURF_TENT_MON_PELIPPER,
-    VERDANTURF_TENT_MON_MARILL,
+    VERDANTURF_TENT_MON_SNOVER,
     VERDANTURF_TENT_MON_TENTACOOL,
-    VERDANTURF_TENT_MON_MACHOP,
+    VERDANTURF_TENT_MON_PASSIMIAN,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Lesley[] =
 {
-    VERDANTURF_TENT_MON_NUZLEAF,
-    VERDANTURF_TENT_MON_POOCHYENA,
-    VERDANTURF_TENT_MON_LOTAD,
+    VERDANTURF_TENT_MON_LILEEP,
+    VERDANTURF_TENT_MON_MORGREM,
+    VERDANTURF_TENT_MON_CRABRAWLER,
     VERDANTURF_TENT_MON_BALTOY,
     VERDANTURF_TENT_MON_ELECTRIKE,
     -1
@@ -1531,32 +1531,32 @@ const u16 gVerdanturfBattleTentTrainerMons_Lesley[] =
 
 const u16 gVerdanturfBattleTentTrainerMons_Marquis[] =
 {
-    VERDANTURF_TENT_MON_GOLDEEN_2,
+    VERDANTURF_TENT_MON_LANTURN,
     VERDANTURF_TENT_MON_PELIPPER,
-    VERDANTURF_TENT_MON_MACHOP,
-    VERDANTURF_TENT_MON_MAKUHITA,
+    VERDANTURF_TENT_MON_PASSIMIAN,
+    VERDANTURF_TENT_MON_MANKEY,
     VERDANTURF_TENT_MON_BARBOACH,
-    VERDANTURF_TENT_MON_MACHOKE,
+    VERDANTURF_TENT_MON_FALINKS,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Freddy[] =
 {
-    VERDANTURF_TENT_MON_LOTAD,
-    VERDANTURF_TENT_MON_SEVIPER,
-    VERDANTURF_TENT_MON_NUZLEAF,
-    VERDANTURF_TENT_MON_SOLROCK,
-    VERDANTURF_TENT_MON_ILLUMISE,
+    VERDANTURF_TENT_MON_CRABRAWLER,
+    VERDANTURF_TENT_MON_ARBOK,
+    VERDANTURF_TENT_MON_LILEEP,
+    VERDANTURF_TENT_MON_KLEAVOR,
+    VERDANTURF_TENT_MON_YANMA,
     -1
 };
 
 const u16 gVerdanturfBattleTentTrainerMons_Cecilia[] =
 {
-    VERDANTURF_TENT_MON_SWELLOW,
-    VERDANTURF_TENT_MON_NUZLEAF,
-    VERDANTURF_TENT_MON_ARON_2,
-    VERDANTURF_TENT_MON_MIGHTYENA,
-    VERDANTURF_TENT_MON_KADABRA,
+    VERDANTURF_TENT_MON_TRUMBEAK,
+    VERDANTURF_TENT_MON_LILEEP,
+    VERDANTURF_TENT_MON_MINIOR,
+    VERDANTURF_TENT_MON_HOUNDOOM,
+    VERDANTURF_TENT_MON_DUOSION,
     -1
 };
 
@@ -1564,7 +1564,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
 {
     [VERDANTURF_TENT_TRAINER_BRENNA] = {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
-        .trainerName = _("BRENNA"),
+        .trainerName = _("Brenna"),
         .speechBefore = {EC_WORD_NO, EC_WORD_DAYS, EC_WORD_GO, EC_WORD_WITHOUT, EC_WORD_MY, EC_MOVE(FAKE_TEARS)},
         .speechWin = {EC_WORD_OH, EC_WORD_THAT_WAS, EC_WORD_SO, EC_WORD_REFRESHING, EC_WORD_EXCL, -1},
         .speechLose = {EC_WORD_ALL, EC_WORD_I, EC_WORD_EVER, EC_WORD_GET, EC_WORD_IS, EC_MOVE(TORMENT)},
@@ -1572,7 +1572,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DILAN] = {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("DILAN"),
+        .trainerName = _("Dilan"),
         .speechBefore = {EC_WORD_YOU, EC_WORD_DON_T, EC_WORD_KNOW, EC_WORD_HOW, EC_WORD_BORED, EC_WORD_I_AM},
         .speechWin = {EC_WORD_LOSING, EC_WORD_ISN_T, EC_WORD_EXCITING, EC_WORD_AT, EC_WORD_ALL, EC_WORD_ELLIPSIS},
         .speechLose = {EC_WORD_EXCITING, EC_WORD_EXCL_EXCL, EC_WORD_BYE_BYE, EC_WORD_TO, EC_WORD_BEING, EC_WORD_BORED},
@@ -1580,7 +1580,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_ELIANA] = {
         .facilityClass = FACILITY_CLASS_TUBER_F,
-        .trainerName = _("ELIANA"),
+        .trainerName = _("Eliana"),
         .speechBefore = {EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_ON, EC_WORD_A, EC_WORD_VACATION, EC_WORD_SOON},
         .speechWin = {EC_WORD_I, EC_WORD_NEED, EC_WORD_TO, EC_WORD_GET, EC_WORD_SOME, EC_WORD_MONEY},
         .speechLose = {EC_WORD_NO, EC_WORD_SLEEP, EC_WORD_UNTIL, EC_WORD_I, EC_WORD_GET, EC_WORD_HOME},
@@ -1588,7 +1588,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_MARKUS] = {
         .facilityClass = FACILITY_CLASS_TUBER_M,
-        .trainerName = _("MARKUS"),
+        .trainerName = _("Markus"),
         .speechBefore = {EC_WORD_I_AM, EC_WORD_SMART, EC_WORD_EXCL, EC_WORD_IF_I_LOSE, EC_WORD_I, EC_MOVE(SELF_DESTRUCT)},
         .speechWin = {EC_WORD_IT_S, EC_WORD_A, EC_WORD_NON_STOP, EC_MOVE2(EXPLOSION), EC_WORD_OF, EC_WORD_JOY},
         .speechLose = {EC_WORD_I_VE, EC_WORD_LOST, EC_WORD_ELLIPSIS, EC_WORD_TIME, EC_WORD_TO, EC_MOVE(SELF_DESTRUCT)},
@@ -1596,7 +1596,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_CAITLYN] = {
         .facilityClass = FACILITY_CLASS_LADY,
-        .trainerName = _("CAITLYN"),
+        .trainerName = _("Caitlyn"),
         .speechBefore = {EC_WORD_I_AM, EC_WORD_BORED, EC_WORD_OF, EC_WORD_BEING, EC_WORD_AN, EC_WORD_IDOL},
         .speechWin = {EC_WORD_A, EC_WORD_BATTLE, EC_WORD_IS, EC_WORD_BEST, EC_WORD_FOR, EC_WORD_HAPPINESS},
         .speechLose = {EC_WORD_LOSING, EC_WORD_DOESN_T, EC_WORD_BUG, EC_WORD_ME, EC_WORD_AT, EC_WORD_ALL},
@@ -1604,7 +1604,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DESIREE] = {
         .facilityClass = FACILITY_CLASS_BEAUTY,
-        .trainerName = _("DESIREE"),
+        .trainerName = _("Desiree"),
         .speechBefore = {EC_WORD_DOESN_T, EC_WORD_MY, EC_WORD_BEAUTY, EC_MOVE(ASTONISH), EC_WORD_YOU, EC_WORD_QUES},
         .speechWin = {EC_WORD_DID, EC_WORD_I, EC_WORD_INTIMIDATE, EC_WORD_YOU, EC_WORD_QUES, -1},
         .speechLose = {EC_WORD_MY, EC_WORD_BEAUTY, EC_WORD_DID, EC_WORD_NOTHING, EC_WORD_FOR, EC_WORD_YOU},
@@ -1612,7 +1612,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_RONALD] = {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
-        .trainerName = _("RONALD"),
+        .trainerName = _("Ronald"),
         .speechBefore = {EC_WORD_COME_ON, EC_WORD_I, EC_WORD_WILL, EC_WORD_BATTLE, EC_WORD_SERIOUSLY, -1},
         .speechWin = {EC_WORD_GIVE_UP, EC_WORD_QUES, -1, EC_WORD_THAT_S, EC_WORD_REALLY, EC_WORD_WEAK},
         .speechLose = {EC_WORD_I, EC_WORD_NEED, EC_WORD_TO, EC_WORD_DO, EC_WORD_A, EC_MOVE2(BATON_PASS)},
@@ -1620,7 +1620,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_ASHTEN] = {
         .facilityClass = FACILITY_CLASS_PERFORMER_M,
-        .trainerName = _("ASHTEN"),
+        .trainerName = _("Ashten"),
         .speechBefore = {EC_WORD_OH_YEAH, EC_WORD_ANOTHER, EC_WORD_EXCITING, EC_WORD_BATTLE, EC_WORD_EXCL, -1},
         .speechWin = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_WIMPY, EC_WORD_AND, EC_WORD_BORING},
         .speechLose = {EC_WORD_THAT_WAS, EC_WORD_AN, EC_WORD_EXCITING, EC_WORD_LOSS, EC_WORD_WOW, EC_WORD_EXCL},
@@ -1628,7 +1628,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_GERARD] = {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
-        .trainerName = _("GERARD"),
+        .trainerName = _("Gerard"),
         .speechBefore = {EC_WORD_LOOK, EC_WORD_AT, EC_WORD_MY, EC_WORD_SUPER, EC_MOVE2(TEETER_DANCE), EC_WORD_EXCL},
         .speechWin = {EC_WORD_THAT_WAS, EC_WORD_HARD, EC_WORD_ELLIPSIS, EC_WORD_AM, EC_WORD_I, EC_WORD_OK_QUES},
         .speechLose = {EC_WORD_I, EC_WORD_WON_T, EC_WORD_FORGIVE, EC_WORD_YOU, EC_WORD_FOR, EC_WORD_THAT},
@@ -1636,7 +1636,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_BRADLY] = {
         .facilityClass = FACILITY_CLASS_CAMPER,
-        .trainerName = _("BRADLY"),
+        .trainerName = _("Bradly"),
         .speechBefore = {EC_WORD_IT_S, EC_WORD_LONESOME, EC_WORD_BUT, EC_WORD_I, EC_WORD_VACATION, EC_WORD_ALONE},
         .speechWin = {EC_WORD_I, EC_WORD_WILL, EC_MOVE(WITHDRAW), EC_WORD_INSIDE, EC_WORD_MY, EC_WORD_SHELL_ARMOR},
         .speechLose = {EC_WORD_OH, EC_WORD_ELLIPSIS, -1, EC_WORD_ALONE, EC_WORD_AS, EC_WORD_ALWAYS},
@@ -1644,7 +1644,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DENNIS] = {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("DENNIS"),
+        .trainerName = _("Dennis"),
         .speechBefore = {EC_WORD_ARE, EC_WORD_YOU, EC_WORD_REALLY, EC_WORD_STRONG, EC_WORD_QUES, -1},
         .speechWin = {EC_WORD_WAHAHAHA, EC_WORD_EXCL, -1, EC_WORD_WAHAHAHA, EC_WORD_EXCL_EXCL, -1},
         .speechLose = {EC_WORD_NICE, EC_WORD_GOING, EC_WORD_EXCL, EC_WORD_I, EC_WORD_WAS, EC_WORD_CHILD_S_PLAY},
@@ -1652,7 +1652,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_PRESTIN] = {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("PRESTIN"),
+        .trainerName = _("Prestin"),
         .speechBefore = {EC_WORD_THIS, EC_WORD_IS, EC_WORD_A, EC_MOVE(NIGHTMARE), EC_WORD_FOR, EC_WORD_YOU},
         .speechWin = {EC_WORD_FORGIVE, EC_WORD_ME, EC_WORD_ELLIPSIS, EC_WORD_IT_S, EC_WORD_A, EC_WORD_DREAM},
         .speechLose = {EC_WORD_I, EC_WORD_WANT, EC_WORD_TO, EC_WORD_WAKE_UP, EC_WORD_FROM, EC_WORD_THIS},
@@ -1660,7 +1660,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_ERNESTO] = {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("ERNESTO"),
+        .trainerName = _("Ernesto"),
         .speechBefore = {EC_WORD_THIS, EC_WORD_PARTY, EC_WORD_GOES, EC_WORD_ON, EC_WORD_FOREVER, EC_WORD_EXCL},
         .speechWin = {EC_WORD_THE, EC_WORD_MUSIC, EC_WORD_PLAYS, EC_WORD_ON, EC_WORD_WITHOUT, EC_WORD_END},
         .speechLose = {EC_WORD_NO, EC_WORD_EXCL, EC_WORD_THE, EC_WORD_MUSIC, EC_WORD_CAN_T, EC_WORD_STOP},
@@ -1668,7 +1668,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_NALA] = {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .trainerName = _("NALA"),
+        .trainerName = _("Nala"),
         .speechBefore = {EC_WORD_I, EC_WORD_WANT, EC_WORD_THE, EC_WORD_WORLD, EC_WORD_MOVIE, EC_WORD_COLLECTION},
         .speechWin = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_LIKE, EC_WORD_RADIO, EC_WORD_VERY, EC_WORD_MUCH},
         .speechLose = {EC_WORD_I, EC_WORD_REFUSE, EC_WORD_TO, EC_WORD_BELIEVE, EC_WORD_THIS, EC_WORD_EXCL},
@@ -1676,7 +1676,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DARNELL] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("DARNELL"),
+        .trainerName = _("Darnell"),
         .speechBefore = {EC_WORD_I, EC_WORD_WILL, EC_WORD_GO_EASY, EC_WORD_ON, EC_WORD_YOU, -1},
         .speechWin = {EC_WORD_YOUR, EC_MOVE2(FRUSTRATION), EC_WORD_SHOULD, EC_WORD_BE, EC_WORD_HIDDEN, EC_WORD_AWAY},
         .speechLose = {EC_WORD_YOU_RE, EC_WORD_TOO, EC_WORD_MUCH, EC_WORD_TO, EC_WORD_TAKE, EC_WORD_ELLIPSIS},
@@ -1684,7 +1684,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_ASHLYN] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("ASHLYN"),
+        .trainerName = _("Ashlyn"),
         .speechBefore = {EC_WORD_I, EC_WORD_LOOK, EC_WORD_TOUGH, EC_WORD_DO, EC_WORD_I, EC_WORD_QUES},
         .speechWin = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_OVER, EC_WORD_YOUR, EC_MOVE2(TAUNT), EC_WORD_YET},
         .speechLose = {EC_WORD_YOU_RE, EC_WORD_MEAN, EC_WORD_EXCL_EXCL, -1, -1, -1},
@@ -1692,7 +1692,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_ADDISON] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
-        .trainerName = _("ADDISON"),
+        .trainerName = _("Addison"),
         .speechBefore = {EC_WORD_YES, EC_WORD_EXCL, -1, EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_EXCL},
         .speechWin = {EC_WORD_WELL, EC_WORD_WASN_T, EC_WORD_THAT, EC_WORD_EASY, EC_WORD_QUES, -1},
         .speechLose = {EC_WORD_WAAAH, EC_WORD_EXCL, -1, EC_WORD_BUT, EC_WORD_WHY, EC_WORD_QUES},
@@ -1700,7 +1700,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_JUSTINE] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
-        .trainerName = _("JUSTINE"),
+        .trainerName = _("Justine"),
         .speechBefore = {EC_WORD_YES, EC_WORD_EXCL, -1, EC_WORD_COME_ON, EC_WORD_I_AM, EC_WORD_READY},
         .speechWin = {EC_WORD_YOU_RE, EC_WORD_JUST, EC_WORD_NOT, EC_WORD_GOOD, EC_WORD_ENOUGH, EC_WORD_EXCL},
         .speechLose = {EC_WORD_WOWEE, EC_WORD_EXCL_EXCL, -1, -1, -1, -1},
@@ -1708,7 +1708,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_TYSON] = {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
-        .trainerName = _("TYSON"),
+        .trainerName = _("Tyson"),
         .speechBefore = {EC_WORD_YOU_RE, EC_WORD_GOING, EC_WORD_TO, EC_WORD_PRESSURE, EC_WORD_ME, EC_WORD_QUES},
         .speechWin = {EC_WORD_WHAT, EC_WORD_QUES, EC_WORD_YOU_RE, EC_WORD_MUCH, EC_WORD_TOO_WEAK, EC_WORD_EXCL},
         .speechLose = {EC_WORD_THIS, EC_WORD_DOESN_T, EC_WORD_MAKE, EC_WORD_ME, EC_WORD_HAPPY, EC_WORD_EXCL},
@@ -1716,7 +1716,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_LAILA] = {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
-        .trainerName = _("LAILA"),
+        .trainerName = _("Laila"),
         .speechBefore = {EC_WORD_A, EC_MOVE2(STRUGGLE), EC_WORD_ISN_T, EC_WORD_VERY, EC_WORD_COOL, -1},
         .speechWin = {EC_WORD_NOPE, EC_WORD_NOT_VERY, EC_WORD_COOL, EC_WORD_AT, EC_WORD_ALL, EC_WORD_EXCL},
         .speechLose = {EC_WORD_YOU_RE, EC_WORD_NOT, EC_WORD_COOL, EC_WORD_BUT, EC_WORD_YOU, EC_WORD_WON},
@@ -1724,7 +1724,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_WAREN] = {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("WAREN"),
+        .trainerName = _("Waren"),
         .speechBefore = {EC_WORD_DANGER, EC_WORD_EXCL, -1, EC_WORD_I, EC_WORD_SENSE, EC_WORD_DANGER},
         .speechWin = {EC_WORD_DID, EC_WORD_YOU, EC_WORD_BELIEVE, EC_WORD_MY, EC_WORD_LIE, EC_WORD_QUES_EXCL},
         .speechLose = {EC_WORD_I, EC_WORD_REALLY, EC_WORD_DID, EC_WORD_SENSE, EC_WORD_DANGER, EC_WORD_ELLIPSIS},
@@ -1732,7 +1732,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_TOBIAS] = {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("TOBIAS"),
+        .trainerName = _("Tobias"),
         .speechBefore = {EC_MOVE2(BARRIER), EC_WORD_EXCL_EXCL, -1, EC_WORD_NOW, EC_WORD_COME_ON, EC_WORD_EXCL},
         .speechWin = {EC_WORD_HUH_QUES, EC_WORD_YOU, EC_WORD_MEAN, EC_WORD_I, EC_WORD_WON, EC_WORD_QUES},
         .speechLose = {EC_WORD_I, EC_WORD_SHOULD, EC_WORD_KNOW, EC_WORD_THAT, EC_WORD_IT_S, EC_WORD_HOPELESS},
@@ -1740,7 +1740,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_JOSIAH] = {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("JOSIAH"),
+        .trainerName = _("Josiah"),
         .speechBefore = {EC_WORD_I, EC_WORD_PROMISE, EC_WORD_TO, EC_MOVE(FLY), EC_WORD_IF_I_LOSE, -1},
         .speechWin = {EC_WORD_TOO_WEAK, EC_WORD_ELLIPSIS, -1, EC_WORD_YOU, EC_MOVE(FLY), EC_WORD_INSTEAD},
         .speechLose = {EC_WORD_I, EC_WORD_PROMISE, EC_WORD_TO, EC_MOVE(FLY), EC_WORD_SOMETIME, EC_WORD_SOON},
@@ -1748,7 +1748,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DION] = {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
-        .trainerName = _("DION"),
+        .trainerName = _("Dion"),
         .speechBefore = {EC_WORD_IT_S, EC_WORD_TRENDY, EC_WORD_UM, EC_WORD_BATTLE, EC_WORD_SOMETHING, -1},
         .speechWin = {EC_WORD_WAS, EC_WORD_IT, EC_WORD_ELLIPSIS, EC_WORD_BATTLE, EC_WORD_DATE, EC_WORD_QUES},
         .speechLose = {EC_WORD_WAS, EC_WORD_IT, EC_WORD_ELLIPSIS, EC_WORD_BATTLE, EC_WORD_GOURMET, EC_WORD_QUES},
@@ -1756,7 +1756,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_KENZIE] = {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-        .trainerName = _("KENZIE"),
+        .trainerName = _("Kenzie"),
         .speechBefore = {EC_WORD_THE, EC_MOVE(MORNING_SUN), EC_WORD_GIVES, EC_WORD_ME, EC_MOVE(STRENGTH), -1},
         .speechWin = {EC_WORD_BUT, EC_WORD_I, EC_WORD_LIKE, EC_MOVE2(MOONLIGHT), EC_WORD_TOO, -1},
         .speechLose = {EC_WORD_YOU_RE, EC_WORD_LIKE, EC_WORD_A, EC_WORD_TERRIBLE, EC_MOVE(SANDSTORM), EC_WORD_ELLIPSIS},
@@ -1764,7 +1764,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_LILLIAN] = {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
-        .trainerName = _("LILLIAN"),
+        .trainerName = _("Lillian"),
         .speechBefore = {EC_WORD_I, EC_WORD_DO, EC_WORD_THINGS, EC_WORD_AT, EC_WORD_MY, EC_WORD_OWN_TEMPO},
         .speechWin = {EC_WORD_I, EC_WORD_WON, EC_WORD_QUES, EC_WORD_WHAT, EC_WORD_A, EC_WORD_SURPRISE},
         .speechLose = {EC_WORD_AWW, EC_WORD_ELLIPSIS, EC_WORD_I, EC_WORD_NEED, EC_WORD_A, EC_WORD_NAP},
@@ -1772,7 +1772,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_LESLEY] = {
         .facilityClass = FACILITY_CLASS_PICNICKER,
-        .trainerName = _("LESLEY"),
+        .trainerName = _("Lesley"),
         .speechBefore = {EC_WORD_YOU, EC_WORD_SHOULD, EC_WORD_NOT, EC_WORD_BE, EC_WORD_LOLLING, EC_WORD_ABOUT},
         .speechWin = {EC_WORD_YOU, EC_WORD_SHOULD, EC_WORD_GET, EC_WORD_UP, EC_WORD_EARLIER, -1},
         .speechLose = {EC_WORD_THIS, EC_WORD_SHOULD, EC_WORD_NOT, EC_WORD_BE, EC_WORD_HAPPENING, EC_WORD_EXCL},
@@ -1780,7 +1780,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_MARQUIS] = {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("MARQUIS"),
+        .trainerName = _("Marquis"),
         .speechBefore = {EC_WORD_NONE, EC_WORD_OF, EC_WORD_THIS, EC_WORD_IS, EC_WORD_MAKING, EC_WORD_SENSE},
         .speechWin = {EC_WORD_SEE, EC_WORD_QUES, EC_WORD_THIS, EC_WORD_JUST, EC_WORD_ISN_T, EC_WORD_NORMAL},
         .speechLose = {EC_WORD_SHOULD, EC_WORD_I, EC_WORD_CAUSE, EC_WORD_AN, EC_MOVE(UPROAR), EC_WORD_QUES},
@@ -1788,7 +1788,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_FREDDY] = {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("FREDDY"),
+        .trainerName = _("Freddy"),
         .speechBefore = {EC_WORD_I, EC_WORD_ADORE, EC_WORD_THIS, EC_WORD_CUTE, EC_WORD_TELEVISION, EC_WORD_IDOL},
         .speechWin = {EC_WORD_YOU_RE, EC_WORD_SO, EC_WORD_FUNNY, EC_WORD_WHEN, EC_WORD_YOU_RE, EC_WORD_ANGRY},
         .speechLose = {EC_WORD_LATE, EC_WORD_NIGHT, EC_WORD_TELEVISION, EC_WORD_IS, EC_WORD_MY, EC_WORD_LIFE},
@@ -1796,7 +1796,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_CECILIA] = {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("CECILIA"),
+        .trainerName = _("Cecilia"),
         .speechBefore = {EC_WORD_MY, EC_WORD_FABULOUS, EC_WORD_CUTENESS, EC_WORD_IS, EC_WORD_IN, EC_WORD_FASHION},
         .speechWin = {EC_WORD_YOU_RE, EC_WORD_NO, EC_WORD_MATCH, EC_WORD_FOR, EC_WORD_MY, EC_WORD_CUTE_CHARM},
         .speechLose = {EC_WORD_DON_T, EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_FASHION, EC_WORD_SENSE, EC_WORD_QUES},
@@ -1806,9 +1806,9 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
 
 const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
 {
-    [VERDANTURF_TENT_MON_POOCHYENA] = {
-        .species = SPECIES_POOCHYENA,
-        .moves = {MOVE_ROAR, MOVE_THIEF, MOVE_BITE, MOVE_HOWL},
+    [VERDANTURF_TENT_MON_MORGREM] = {
+        .species = SPECIES_MORGREM,
+        .moves = {MOVE_BITE, MOVE_FAKE_OUT, MOVE_TORMENT, MOVE_COVET},
         .heldItem = ITEM_BLACK_GLASSES,
         .ev = TRAINER_PARTY_EVS(102, 102, 102, 102, 0, 102),
         .nature = NATURE_NAUGHTY
@@ -1827,26 +1827,26 @@ const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
         .ev = TRAINER_PARTY_EVS(0, 0, 170, 170, 170, 0),
         .nature = NATURE_MODEST
     },
-    [VERDANTURF_TENT_MON_TAILLOW] = {
-        .species = SPECIES_TAILLOW,
-        .moves = {MOVE_AGILITY, MOVE_DOUBLE_TEAM, MOVE_WING_ATTACK, MOVE_GROWL},
+    [VERDANTURF_TENT_MON_WATTREL] = {
+        .species = SPECIES_WATTREL,
+        .moves = {MOVE_AGILITY, MOVE_DOUBLE_TEAM, MOVE_PLUCK, MOVE_THUNDER_SHOCK},
         .heldItem = ITEM_ORAN_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_RELAXED
     },
-    [VERDANTURF_TENT_MON_SHROOMISH] = {
-        .species = SPECIES_SHROOMISH,
-        .moves = {MOVE_HEADBUTT, MOVE_STUN_SPORE, MOVE_LEECH_SEED, MOVE_FLASH},
+    [VERDANTURF_TENT_MON_FOMANTIS] = {
+        .species = SPECIES_FOMANTIS,
+        .moves = {MOVE_LEAF_BLADE, MOVE_SYNTHESIS, MOVE_SLASH, MOVE_INGRAIN},
         .heldItem = ITEM_LUM_BERRY,
-        .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
+        .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_RASH
     },
-    [VERDANTURF_TENT_MON_MACHOP] = {
-        .species = SPECIES_MACHOP,
-        .moves = {MOVE_LOW_KICK, MOVE_LEER, MOVE_FOCUS_ENERGY, MOVE_ENCORE},
+    [VERDANTURF_TENT_MON_PASSIMIAN] = {
+        .species = SPECIES_PASSIMIAN,
+        .moves = {MOVE_ROCK_SMASH, MOVE_HEADBUTT, MOVE_LEER, MOVE_FOCUS_ENERGY},
         .heldItem = ITEM_PERSIM_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 170, 170, 170, 0, 0),
-        .nature = NATURE_LONELY
+        .nature = NATURE_DOCILE
     },
     [VERDANTURF_TENT_MON_MAGIKARP] = {
         .species = SPECIES_MAGIKARP,
@@ -1883,9 +1883,9 @@ const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 252, 0),
         .nature = NATURE_SASSY
     },
-    [VERDANTURF_TENT_MON_SWALOT] = {
-        .species = SPECIES_SWALOT,
-        .moves = {MOVE_YAWN, MOVE_SLUDGE, MOVE_ACID_ARMOR, MOVE_AMNESIA},
+    [VERDANTURF_TENT_MON_SALANDIT] = {
+        .species = SPECIES_SALANDIT,
+        .moves = {MOVE_FLAME_BURST, MOVE_SLUDGE, MOVE_DRAGON_RAGE, MOVE_POISON_GAS},
         .heldItem = ITEM_POISON_BARB,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_BOLD
@@ -1907,14 +1907,14 @@ const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
     [VERDANTURF_TENT_MON_NINJASK] = {
         .species = SPECIES_NINJASK,
         .moves = {MOVE_DIG, MOVE_SCREECH, MOVE_SWORDS_DANCE, MOVE_LEECH_LIFE},
-        .heldItem = ITEM_PETAYA_BERRY,
+        .heldItem = ITEM_NONE,
         .ev = TRAINER_PARTY_EVS(102, 0, 102, 102, 102, 102),
         .nature = NATURE_SASSY
     },
-    [VERDANTURF_TENT_MON_MAKUHITA] = {
-        .species = SPECIES_MAKUHITA,
-        .moves = {MOVE_BULK_UP, MOVE_ARM_THRUST, MOVE_SMELLING_SALTS, MOVE_SAND_ATTACK},
-        .heldItem = ITEM_SALAC_BERRY,
+    [VERDANTURF_TENT_MON_MANKEY] = {
+        .species = SPECIES_MANKEY,
+        .moves = {MOVE_CROSS_CHOP, MOVE_LOW_KICK, MOVE_LEER, MOVE_FOCUS_ENERGY},
+        .heldItem = ITEM_ORAN_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 0, 0),
         .nature = NATURE_NAUGHTY
     },
@@ -1925,59 +1925,59 @@ const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MILD
     },
-    [VERDANTURF_TENT_MON_GOLDEEN_1] = {
-        .species = SPECIES_GOLDEEN,
-        .moves = {MOVE_WATERFALL, MOVE_MUD_SPORT, MOVE_SUPERSONIC, MOVE_DOUBLE_TEAM},
-        .heldItem = ITEM_MYSTIC_WATER,
-        .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
+    [VERDANTURF_TENT_MON_SEALEO] = {
+        .species = SPECIES_SEALEO,
+        .moves = {MOVE_ICE_FANG, MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_ENCORE},
+        .heldItem = ITEM_NONE,
+        .ev = TRAINER_PARTY_EVS(0, 0, 252, 252, 0, 0),
         .nature = NATURE_GENTLE
     },
-    [VERDANTURF_TENT_MON_LOTAD] = {
-        .species = SPECIES_LOTAD,
-        .moves = {MOVE_GROWL, MOVE_WATER_GUN, MOVE_MEGA_DRAIN, MOVE_PROTECT},
-        .heldItem = ITEM_IAPAPA_BERRY,
+    [VERDANTURF_TENT_MON_CRABRAWLER] = {
+        .species = SPECIES_CRABRAWLER,
+        .moves = {MOVE_JET_PUNCH, MOVE_ROCK_SMASH, MOVE_LEER, MOVE_PURSUIT},
+        .heldItem = ITEM_PECHA_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_QUIRKY
     },
-    [VERDANTURF_TENT_MON_NUMEL_2] = {
-        .species = SPECIES_NUMEL,
-        .moves = {MOVE_MAGNITUDE, MOVE_EMBER, MOVE_GROWL, MOVE_DEFENSE_CURL},
-        .heldItem = ITEM_CHARCOAL,
+    [VERDANTURF_TENT_MON_KROKOROK] = {
+        .species = SPECIES_KROKOROK,
+        .moves = {MOVE_BULLDOZE, MOVE_BITE, MOVE_LEER, MOVE_TORMENT},
+        .heldItem = ITEM_NONE,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 252, 0),
         .nature = NATURE_RELAXED
     },
     [VERDANTURF_TENT_MON_LINOONE] = {
-        .species = SPECIES_LINOONE,
+        .species = SPECIES_LINOONE_GALARIAN,
         .moves = {MOVE_HEADBUTT, MOVE_TICKLE, MOVE_PROTECT, MOVE_REST},
         .heldItem = ITEM_QUICK_CLAW,
         .ev = TRAINER_PARTY_EVS(128, 128, 128, 0, 0, 128),
         .nature = NATURE_IMPISH
     },
-    [VERDANTURF_TENT_MON_SEVIPER] = {
-        .species = SPECIES_SEVIPER,
-        .moves = {MOVE_WRAP, MOVE_GLARE, MOVE_POISON_FANG, MOVE_SWAGGER},
+    [VERDANTURF_TENT_MON_ARBOK] = {
+        .species = SPECIES_ARBOK,
+        .moves = {MOVE_BITE, MOVE_GLARE, MOVE_POISON_FANG, MOVE_SCREECH},
         .heldItem = ITEM_ASPEAR_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 0, 170, 170),
-        .nature = NATURE_LONELY
+        .nature = NATURE_BRAVE
     },
-    [VERDANTURF_TENT_MON_SKARMORY] = {
-        .species = SPECIES_SKARMORY,
-        .moves = {MOVE_AIR_CUTTER, MOVE_SANDSTORM, MOVE_LEER, MOVE_AGILITY},
+    [VERDANTURF_TENT_MON_TINKATUFF] = {
+        .species = SPECIES_TINKATUFF,
+        .moves = {MOVE_DRAINING_KISS, MOVE_BRUTAL_SWING, MOVE_METAL_CLAW, MOVE_BABY_DOLL_EYES},
         .heldItem = ITEM_MACHO_BRACE,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 0, 252),
         .nature = NATURE_BASHFUL
     },
-    [VERDANTURF_TENT_MON_SWELLOW] = {
-        .species = SPECIES_SWELLOW,
-        .moves = {MOVE_AGILITY, MOVE_WING_ATTACK, MOVE_DOUBLE_TEAM, MOVE_SUPERSONIC},
+    [VERDANTURF_TENT_MON_TRUMBEAK] = {
+        .species = SPECIES_TRUMBEAK,
+        .moves = {MOVE_SCREECH, MOVE_FEATHER_DANCE, MOVE_FURY_ATTACK, MOVE_PLUCK},
         .heldItem = ITEM_SHARP_BEAK,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_NAUGHTY
     },
-    [VERDANTURF_TENT_MON_GOLDEEN_2] = {
-        .species = SPECIES_GOLDEEN,
-        .moves = {MOVE_PECK, MOVE_SUPERSONIC, MOVE_PSYBEAM, MOVE_RAIN_DANCE},
-        .heldItem = ITEM_KINGS_ROCK,
+    [VERDANTURF_TENT_MON_LANTURN] = {
+        .species = SPECIES_LANTURN,
+        .moves = {MOVE_STOCKPILE, MOVE_SWALLOW, MOVE_SPIT_UP, MOVE_BUBBLE_BEAM},
+        .heldItem = ITEM_NONE,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 170, 0),
         .nature = NATURE_GENTLE
     },
@@ -1988,51 +1988,51 @@ const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_MILD
     },
-    [VERDANTURF_TENT_MON_NUZLEAF] = {
-        .species = SPECIES_NUZLEAF,
-        .moves = {MOVE_SUNNY_DAY, MOVE_TORMENT, MOVE_FAKE_OUT, MOVE_THIEF},
-        .heldItem = ITEM_BLACK_GLASSES,
+    [VERDANTURF_TENT_MON_LILEEP] = {
+        .species = SPECIES_LILEEP,
+        .moves = {MOVE_ACID, MOVE_INGRAIN, MOVE_CONFUSE_RAY, MOVE_GIGA_DRAIN},
+        .heldItem = ITEM_BIG_ROOT,
         .ev = TRAINER_PARTY_EVS(128, 0, 128, 0, 128, 128),
         .nature = NATURE_BOLD
     },
-    [VERDANTURF_TENT_MON_ARON_2] = {
-        .species = SPECIES_ARON,
-        .moves = {MOVE_TAKE_DOWN, MOVE_METAL_CLAW, MOVE_IRON_DEFENSE, MOVE_ATTRACT},
+    [VERDANTURF_TENT_MON_MINIOR] = {
+        .species = SPECIES_MINIOR,
+        .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_ANCIENT_POWER, MOVE_CONFUSE_RAY},
         .heldItem = ITEM_QUICK_CLAW,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_MODEST
     },
-    [VERDANTURF_TENT_MON_MIGHTYENA] = {
-        .species = SPECIES_MIGHTYENA,
-        .moves = {MOVE_HOWL, MOVE_TAKE_DOWN, MOVE_ODOR_SLEUTH, MOVE_SAND_ATTACK},
-        .heldItem = ITEM_KINGS_ROCK,
+    [VERDANTURF_TENT_MON_HOUNDOOM] = {
+        .species = SPECIES_HOUNDOOM,
+        .moves = {MOVE_FIRE_FANG, MOVE_WORK_UP, MOVE_EMBARGO, MOVE_BEAT_UP},
+        .heldItem = ITEM_NONE,
         .ev = TRAINER_PARTY_EVS(170, 170, 170, 0, 0, 0),
         .nature = NATURE_QUIRKY
     },
-    [VERDANTURF_TENT_MON_SOLROCK] = {
-        .species = SPECIES_SOLROCK,
-        .moves = {MOVE_HARDEN, MOVE_FIRE_SPIN, MOVE_MIMIC, MOVE_PSYWAVE},
-        .heldItem = ITEM_TWISTED_SPOON,
+    [VERDANTURF_TENT_MON_KLEAVOR] = {
+        .species = SPECIES_KLEAVOR,
+        .moves = {MOVE_AERIAL_ACE, MOVE_ROCK_TOMB, MOVE_FOCUS_ENERGY, MOVE_LEER},
+        .heldItem = ITEM_NONE,
         .ev = TRAINER_PARTY_EVS(0, 128, 128, 0, 128, 128),
-        .nature = NATURE_ADAMANT
-    },
-    [VERDANTURF_TENT_MON_GRAVELER] = {
-        .species = SPECIES_GRAVELER,
-        .moves = {MOVE_ROLLOUT, MOVE_ROCK_SMASH, MOVE_SANDSTORM, MOVE_BLOCK},
-        .heldItem = ITEM_FOCUS_BAND,
-        .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 0, 0),
         .nature = NATURE_IMPISH
     },
-    [VERDANTURF_TENT_MON_KADABRA] = {
-        .species = SPECIES_KADABRA,
-        .moves = {MOVE_ENCORE, MOVE_PSYBEAM, MOVE_DISABLE, MOVE_KINESIS},
+    [VERDANTURF_TENT_MON_LYCANROC] = {
+        .species = SPECIES_LYCANROC,
+        .moves = {MOVE_ACCELEROCK, MOVE_HOWL, MOVE_BITE, MOVE_ROAR},
         .heldItem = ITEM_FOCUS_BAND,
+        .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 0, 0),
+        .nature = NATURE_NAIVE
+    },
+    [VERDANTURF_TENT_MON_DUOSION] = {
+        .species = SPECIES_DUOSION,
+        .moves = {MOVE_PSYSHOCK, MOVE_ENDEAVOR, MOVE_REFLECT, MOVE_CHARM},
+        .heldItem = ITEM_TWISTED_SPOON,
         .ev = TRAINER_PARTY_EVS(170, 0, 0, 170, 170, 0),
         .nature = NATURE_QUIET
     },
     [VERDANTURF_TENT_MON_VOLTORB] = {
-        .species = SPECIES_VOLTORB,
-        .moves = {MOVE_PROTECT, MOVE_SELF_DESTRUCT, MOVE_SPARK, MOVE_SCREECH},
+        .species = SPECIES_VOLTORB_HISUIAN,
+        .moves = {MOVE_PROTECT, MOVE_BULLET_SEED, MOVE_SPARK, MOVE_SCREECH},
         .heldItem = ITEM_SCOPE_LENS,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_BASHFUL
@@ -2047,27 +2047,27 @@ const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
     [VERDANTURF_TENT_MON_PELIPPER] = {
         .species = SPECIES_PELIPPER,
         .moves = {MOVE_WING_ATTACK, MOVE_MIST, MOVE_AGILITY, MOVE_PROTECT},
-        .heldItem = ITEM_FIGY_BERRY,
+        .heldItem = ITEM_NONE,
         .ev = NULL,
         .nature = NATURE_BRAVE
     },
-    [VERDANTURF_TENT_MON_LOUDRED] = {
-        .species = SPECIES_LOUDRED,
-        .moves = {MOVE_HOWL, MOVE_UPROAR, MOVE_REST, MOVE_SCREECH},
+    [VERDANTURF_TENT_MON_HERDIER] = {
+        .species = SPECIES_HERDIER,
+        .moves = {MOVE_TAKE_DOWN, MOVE_WORK_UP, MOVE_ROAR, MOVE_BITE},
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_CALM
     },
-    [VERDANTURF_TENT_MON_MARILL] = {
-        .species = SPECIES_MARILL,
-        .moves = {MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_TAIL_WHIP, MOVE_BUBBLE_BEAM},
+    [VERDANTURF_TENT_MON_SNOVER] = {
+        .species = SPECIES_SNOVER,
+        .moves = {MOVE_AVALANCHE, MOVE_GRASS_WHISTLE, MOVE_MIST, MOVE_POWDER_SNOW},
         .heldItem = ITEM_RAWST_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_JOLLY
     },
-    [VERDANTURF_TENT_MON_TRAPINCH] = {
+    [VERDANTURF_TENT_MON_VIBRAVA] = {
         .species = SPECIES_TRAPINCH,
-        .moves = {MOVE_DIG, MOVE_ROCK_TOMB, MOVE_SANDSTORM, MOVE_FEINT_ATTACK},
+        .moves = {MOVE_DIG, MOVE_ROCK_TOMB, MOVE_SANDSTORM, MOVE_LEECH_LIFE},
         .heldItem = ITEM_NONE,
         .ev = TRAINER_PARTY_EVS(170, 170, 0, 170, 0, 0),
         .nature = NATURE_NAUGHTY
@@ -2079,10 +2079,10 @@ const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
         .nature = NATURE_RELAXED
     },
-    [VERDANTURF_TENT_MON_VIGOROTH] = {
-        .species = SPECIES_VIGOROTH,
-        .moves = {MOVE_ENCORE, MOVE_SLACK_OFF, MOVE_YAWN, MOVE_SECRET_POWER},
-        .heldItem = ITEM_MENTAL_HERB,
+    [VERDANTURF_TENT_MON_CUFANT] = {
+        .species = SPECIES_CUFANT,
+        .moves = {MOVE_BULLDOZE, MOVE_STOMP, MOVE_IRON_DEFENSE, MOVE_GROWL},
+        .heldItem = ITEM_SITRUS_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 170, 170, 0, 0, 170),
         .nature = NATURE_QUIRKY
     },
@@ -2093,33 +2093,33 @@ const struct TrainerMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 0),
         .nature = NATURE_RELAXED
     },
-    [VERDANTURF_TENT_MON_ILLUMISE] = {
-        .species = SPECIES_ILLUMISE,
-        .moves = {MOVE_TACKLE, MOVE_SWEET_SCENT, MOVE_WISH, MOVE_ENCORE},
+    [VERDANTURF_TENT_MON_YANMA] = {
+        .species = SPECIES_YANMA,
+        .moves = {MOVE_ANCIENT_POWER, MOVE_BUG_BITE, MOVE_DOUBLE_TEAM, MOVE_DETECT},
         .heldItem = ITEM_BRIGHT_POWDER,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_QUIRKY
     },
-    [VERDANTURF_TENT_MON_MACHOKE] = {
-        .species = SPECIES_MACHOKE,
-        .moves = {MOVE_LEER, MOVE_KARATE_CHOP, MOVE_BULK_UP, MOVE_REST},
+    [VERDANTURF_TENT_MON_FALINKS] = {
+        .species = SPECIES_FALINKS,
+        .moves = {MOVE_BUG_BITE, MOVE_IRON_DEFENSE, MOVE_SPIKY_SHIELD, MOVE_ROCK_SMASH},
         .heldItem = ITEM_CHESTO_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_CALM
     },
-    [VERDANTURF_TENT_MON_WHISMUR] = {
-        .species = SPECIES_WHISMUR,
-        .moves = {MOVE_SECRET_POWER, MOVE_SUPERSONIC, MOVE_STOMP, MOVE_ROAR},
+    [VERDANTURF_TENT_MON_STUFFUL] = {
+        .species = SPECIES_STUFFUL,
+        .moves = {MOVE_BRUTAL_SWING, MOVE_BIND, MOVE_BABY_DOLL_EYES, MOVE_SLACK_OFF},
         .heldItem = ITEM_RAWST_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_QUIRKY
     },
-    [VERDANTURF_TENT_MON_CACNEA] = {
-        .species = SPECIES_CACNEA,
-        .moves = {MOVE_INGRAIN, MOVE_LEECH_SEED, MOVE_NEEDLE_ARM, MOVE_GROWTH},
+    [VERDANTURF_TENT_MON_GOGOAT] = {
+        .species = SPECIES_GOGOAT,
+        .moves = {MOVE_AERIAL_ACE, MOVE_WORRY_SEED, MOVE_GROWTH, MOVE_RAZOR_LEAF},
         .heldItem = ITEM_SCOPE_LENS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
-        .nature = NATURE_SERIOUS
+        .nature = NATURE_HASTY
     }
 };
 

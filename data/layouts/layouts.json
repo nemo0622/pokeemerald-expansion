@@ -5430,6 +5430,86 @@
       "secondary_tileset": "gTileset_Ilios_GenericBuilding",
       "border_filepath": "data/layouts/MarmaroIsland_House3/border.bin",
       "blockdata_filepath": "data/layouts/MarmaroIsland_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRRINI_ISLAND_POKEMON_CENTER",
+      "name": "MyrriniIsland_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/MyrriniIsland_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/MyrriniIsland_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRRINI_ISLAND_HOUSE1",
+      "name": "MyrriniIsland_House1_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/MyrriniIsland_House1/border.bin",
+      "blockdata_filepath": "data/layouts/MyrriniIsland_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRRINI_ISLAND_HOUSE2",
+      "name": "MyrriniIsland_House2_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/MyrriniIsland_House2/border.bin",
+      "blockdata_filepath": "data/layouts/MyrriniIsland_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRRINI_ISLAND_HOUSE3",
+      "name": "MyrriniIsland_House3_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/MyrriniIsland_House3/border.bin",
+      "blockdata_filepath": "data/layouts/MyrriniIsland_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRRINI_ISLAND_HOUSE4",
+      "name": "MyrriniIsland_House4_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/MyrriniIsland_House4/border.bin",
+      "blockdata_filepath": "data/layouts/MyrriniIsland_House4/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRRINI_ISLAND_HOUSE5",
+      "name": "MyrriniIsland_House5_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/MyrriniIsland_House5/border.bin",
+      "blockdata_filepath": "data/layouts/MyrriniIsland_House5/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRRINI_ISLAND_MART",
+      "name": "MyrriniIsland_Mart_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/MyrriniIsland_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/MyrriniIsland_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRRINI_ISLAND_GYM",
+      "name": "MyrriniIsland_Gym_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SofosGym",
+      "border_filepath": "data/layouts/MyrriniIsland_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/MyrriniIsland_Gym/map.bin"
     }
   ]
 }

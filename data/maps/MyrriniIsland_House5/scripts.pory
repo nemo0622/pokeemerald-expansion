@@ -1,0 +1,23 @@
+mapscripts MyrriniIsland_House5_MapScripts {}
+
+script MyrriniIsland_House5_EventScript_Maniac
+{
+    lock
+    faceplayer
+    speakername("Computer Maniac")
+    msgbox(format("We keep track of all ships coming in and out of Myrrini Island's port. It's hard, but it's honest work."))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_House5_EventScript_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+    msgbox(format("Nobody thinks of all the moving parts behind-the-scenes of shipping. People as far as Hoenn have easy access to Myrrini wine and fruit. That takes so many people to operate!"))
+    closemessage
+    release
+    end
+}

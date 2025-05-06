@@ -2,8 +2,53 @@ mapscripts MyrriniIsland_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_MYRRINI_ISLAND)
 
+        if(flag(FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND)) // skips running script in ON_FRAME_TABLE, so the map label will show normally!
+        {
+            setvar(VAR_TEMP_1, 1)
+        }
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(46, ENCOUNTER_LAND)
+        setobjectaswildencounter(47, ENCOUNTER_LAND)
+        setobjectaswildencounter(48, ENCOUNTER_LAND)
+
         call(Route117_OnTransition)
     }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: MyrriniIsland_EventScript_TryChimeraEvent
+    ]
+}
+
+script MyrriniIsland_EventScript_TryChimeraEvent
+{
+    setvar(VAR_TEMP_1, 1)
+    if(flag(FLAG_BADGE05_GET) && !flag(FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND))
+    {
+        goto(MyrriniIsland_EventScript_ChimeraEvent)
+    }
+    releaseall
+    end
+}
+
+script MyrriniIsland_Sign_GymSign
+{
+    lock
+    msgbox(format("Gym Leader: Thyrsus\n King of Parties and Poisons"))
+    closemessage
+    release
+    end
 }
 
 script MyrriniIsland_EventScript_BlackBelt
@@ -232,4 +277,424 @@ script MyrriniIsland_EventScript_Farmer1
     closemessage
     release
     end
+}
+
+script MyrriniIsland_EventScript_Farmer2
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("Lot'sa Pokémon come around to snack on the fruits growing here. We gather and sell the ones which native Pokémon don't get to first."))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_LittleGirl
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    msgbox(format("Sometimes, the nice people who run the Daycare let me play with the Pokémon! When I grow up, I wanna work there with them!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_BattleGirl
+{
+    lock
+    faceplayer
+    speakername("Battle Girl")
+    msgbox(format("Phew, I just got totally wiped out at the Battle Pavilion! It's just up the road to the north.\p In the Myrrini Battle Pavilion, Pokémon choose their own actions in battle. It's a whole other level of strategy!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_HexManiac
+{
+    lock
+    speakername("Crystal Girl")
+    msgbox(format("Huff, huff... Come on, Zorua! We have to keep training!"))
+    closemessage
+    delay(20)
+    applymovement(36, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    faceplayer
+    speakername("Crystal Girl")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_TRY_MYRRINI_BATTLE_PAVILION)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("If you can do well in the Battle Pavilion, so can Zorua and I! We're gonna be the best!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_TRY_MYRRINI_BATTLE_PAVILION)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Oh! Sorry, we were in an intense training match. Zorua tried their best, but the Battle Pavilion proved to be too much for it.\p Honestly, I'm not convinced the Battle Pavilion is even possible! If you {COLOR GREEN}participate in the Myrrini Battle Pavilion{COLOR DARK_GRAY}, let me know what you think."))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_TRY_MYRRINI_BATTLE_PAVILION)
+    }
+    else
+    {
+        msgbox(format("Hey, you're back! Have you tried the Battle Pavilion on Myrrini Island yet?"))
+        closemessage
+
+        delay(30)
+        if(flag(FLAG_PLAYED_IN_MYRRINI_BATTLE_PAVILION))
+        {
+            speakername("Crystal Girl")
+            msgbox(format("Oh, you actually did! And your Pokémon did alright?\p Okay, I'm convinced now! Zorua and I just need more training! Thanks for inspiring me. Take this!"))
+            closemessage
+            delay(5)
+            giveitem(ITEM_REAPER_CLOTH)
+            closemessage
+            
+            delay(20)
+            completequest(QUEST_TRY_MYRRINI_BATTLE_PAVILION)
+        }
+        else
+        {
+            speakername("Crystal Girl")
+            msgbox(format("Not yet, huh? I know, it's super intimidating!\p Come back once you've tried the {COLOR GREEN}Myrrini Battle Pavilion{COLOR DARK_GRAY}. Anyway, back to training!"))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Zorua
+{
+    lock
+    faceplayer
+    speakername("Zorua")
+    playmoncry(SPECIES_ZORUA_HISUIAN, CRY_MODE_NORMAL)
+    msgbox("Huaaa...")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+    msgbox(format("I hear the Gym Leader on this island specializes in Poison-types and pulling tricks, like confusing opposing Pokémon. This is gonna be a hard battle to win, that's for sure..."))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Toucannon
+{
+    lock
+    faceplayer
+    speakername("Toucannon")
+    playmoncry(SPECIES_TOUCANNON, CRY_MODE_NORMAL)
+    msgbox("Caww-aww!")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Woah, it's a Toucannon! It must have been flying by and stopped for fruit!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Kilowattrel
+{
+    lock
+    faceplayer
+    speakername("Kilowattrel")
+    playmoncry(SPECIES_KILOWATTREL, CRY_MODE_NORMAL)
+    msgbox("Eee! Kreee!")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Woah, it's a Kilowattrel! It must have been flying by and stopped for fruit!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_Sailor
+{
+    lock
+    faceplayer
+    speakername("Sailor")
+    msgbox(format("Ships from all over the Ilios Region stop here to trade. We're expecting a big shipment soon!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_OldMan
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("Fwahaha, I love seeing Trainers come and go from the Battle Pavilion! I give them words of encouragement on the way in, and I console them if they lost when they leave."))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_BattlePavilionSign
+{
+    lock
+    msgbox(format("Myrrini Island Battle Pavilion\n Try a New Type of Battle!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_EventScript_ChimeraEvent
+{
+    setvar(VAR_TEMP_1, 1)
+
+    lockall
+    delay(20)
+    speakername("???")
+    msgbox(format("Hey, get away from me!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_QuestionMark)
+    waitmovement(0)
+    delay(10)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    clearflag(FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND)
+    addobject(55)
+    showobjectat(55, MAP_MYRRINI_ISLAND)
+    applymovement(55, Common_Movement_WalkDown)
+    speakername("Thyrsus")
+    msgbox(format("{PLAYER}, did you hear that? Sounds like someone's in trouble. No disruptions to the party on my Island!"))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerWalkDownToEvent)
+    applymovement(55, MyrriniIsland_Movement_ThyrsusApproach)
+    waitmovement(0)
+    delay(10)
+    applymovement(52, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("{PLAYER}, thank the Fates! I'm being swarmed with Team Chimera Admins! Please, give me some help here!"))
+    closemessage
+    delay(10)
+
+    speakername("Thyrsus")
+    msgbox(format("HOLD IT!"))
+    closemessage
+    waitmovement(0)
+    applymovement(55, MyrriniIsland_Movement_PlayerAndThyrsusReposition)
+    waitmovement(0)
+    applymovement(53, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Thyrsus")
+    msgbox(format("Team Chimera? On MY island?! No no no, this is all wrong! I don't appreciate party crashers here!\p Will you leave on your own? Or do I need my Hypno to throw you into the sea?"))
+    closemessage
+    applymovement(53, Common_Movement_JumpInPlaceUp)
+    waitmovement(0)
+    speakername("Chimera Admin 1")
+    msgbox(format("Kekeke, you think you can take us on? You're fools, all of you! Get ready to-"))
+    closemessage
+    applymovement(54, MyrriniIsland_Movement_AdminNoticesMara)
+    waitmovement(0)
+    applymovement(53, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    speakername("Chimera Admin 2")
+    msgbox(format("Hey, the Boss is coming! Get out of the way!"))
+    closemessage
+    applymovement(53, MyrriniIsland_Movement_AdminsMoveForBoss)
+    applymovement(54, MyrriniIsland_Movement_AdminsMoveForBoss)
+    waitmovement(0)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerAndThyrsusReposition)
+    applymovement(55, MyrriniIsland_Movement_PlayerAndThyrsusReposition)
+    applymovement(52, Common_Movement_FaceDown)
+    waitmovement(0)
+
+    applymovement(56, MyrriniIsland_Movement_MaraApproaches)
+    waitmovement(0)
+    speakername("Chimera Boss")
+    msgbox(format("Hm. Quite the party we have going on here, eh? A great, big circus, and all I see are clowns."))
+    closemessage
+    applymovement(56, Common_Movement_WalkRight)
+    waitmovement(0)
+    speakername("Chimera Boss")
+    msgbox(format("You two. The tip specifically told us MARMARO Island, not MYRRINI Island. But when I got to the mines, imagine my surprise to see you weren't there.\p Grr...! {COLOR RED}You FOOLS! This artifact is KEY to reawakening the Ancient Pokémon, but here you are on the WRONG ISLAND!{COLOR DARK_GRAY}"))
+    closemessage
+    speakername("Chimera Admins")
+    msgbox(format("W-we-we're sorry, {COLOR GREEN}Miss Mara{COLOR DARK_GRAY}! We'll get to the {COLOR GREEN}Marmaro Mines{COLOR DARK_GRAY} right away!"))
+    closemessage
+    applymovement(53, MyrriniIsland_Movement_AdminsFlee)
+    applymovement(54, MyrriniIsland_Movement_AdminsFlee)
+    waitmovement(0)
+    delay(10)
+    applymovement(56, Common_Movement_WalkLeft)
+    waitmovement(0)
+    applymovement(56, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    speakername("Miss Mara")
+    msgbox(format("Sigh... I apologize for losing my temper. Their repeated failures to fight you have brought shame to Team Chimera. In fact, if you fought again now, you'd likely win.\p My name is Mara. I am the {COLOR GREEN}leader of Team Chimera{COLOR DARK_GRAY}. Just listen to what I have to say, then I will leave Myrrini Island in peace.\p I have always focused on the financial side of the world. The value of raw materials, services, even Pokémon... everything can be bought and sold for the right price.\p {COLOR GREEN}Lazarus Taxa{COLOR DARK_GRAY}, the rare Pokémon once thought extinct, are the ultimate financial opportunity. Can't you see? If we simply rounded them all up and sold them to the highest bidder, we could have more money than all other Regions combined! Furthermore, some ancient Pokémon are on {COLOR GREEN}another level of power{COLOR DARK_GRAY}, able to {COLOR GREEN}control the Earth, the Sea, and the Sky{COLOR DARK_GRAY}. We could drill and mine for fuel while crushing all opposition. This is my ultimate dream."))
+    closemessage
+    delay(10)
+    applymovement(52, Common_Movement_JumpInPlaceDown)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("But why?! Trafficking Pokémon and using the strongest to destroy the environment... how could that POSSIBLY be a good thing?"))
+    closemessage
+    applymovement(56, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Miss Mara")
+    msgbox(format("Money makes the world go 'round, you naive child. When I look at a forest filled with wildlife, all I see are dollar signs. The Pokémon, the lumber, and the fossil fuels in the ground below - all can be sold, so they must all be mine."))
+    closemessage
+    applymovement(56, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Miss Mara")
+    msgbox(format("{PLAYER}, right? My Admins, as simple as they can be, have told me about you. You've given us more trouble than just about anyone else, but your defeat will come.\p Our plans are nearing fruition. Soon, we will {COLOR GREEN}awaken ancient Pokémon to shake the Earth{COLOR DARK_GRAY} and claim what is ours! I can assure you, you won't want to miss the show!"))
+    closemessage
+    applymovement(56, MyrriniIsland_Movement_MaraLeaves)
+    waitmovement(0)
+    delay(10)
+
+    applymovement(52, Common_Movement_FaceRight)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    applymovement(55, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Thyrsus")
+    msgbox(format("There's been chatter between Gym Leaders about Team Chimera, but as far as I know, this is the first time the Boss herself has shown up. I'm just glad they're gone from Myrrini Island.\p The Boss, Mara, mentioned something about the {COLOR GREEN}Marmaro Island Mines{COLOR DARK_GRAY} to the Chimera Admins. If you're on the tail of Team Chimera, I'd go there. For now, I'll stay here and keep Myrrini Island safe."))
+    closemessage
+    applymovement(55, MyrriniIsland_Movement_ThyrsusLeaves)
+    waitmovement(0)
+
+    // Start Quest to visit Marmaro Island Mines
+    // Quest will require beating a Team Chimera Admin at the Marmaro Island cave area
+    // This unlocks the Mining minigame, and the main Miner will also give the Dive HM
+    // in gratitude.
+    // Also, edit the sea east of Marmaro Island to require Dive to get south to
+    // the Fresco Isles, making another HM roadblock!
+    delay(20)
+    startquest(QUEST_FREE_MARMARO_MINES)
+    closemessage
+    delay(10)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Ugh, Team Chimera is going way too far! I knew they were collecting Pokémon and looking for ways to gain power, but trafficking Pokémon and using them for profit is just evil!\p I know I acted all tough, but my Pokémon were beaten pretty badly by that first Admin. I think I'll take them to {COLOR GREEN}Péntepetal City{COLOR DARK_GRAY} for a rest. If you want to join later, just {COLOR GREEN}ask Piraeus to bring you{COLOR DARK_GRAY}. See you soon!"))
+    closemessage
+    applymovement(52, MyrriniIsland_Movement_RaniaLeaves)
+    waitmovement(0)
+
+    removeobject(52)
+    removeobject(53)
+    removeobject(54)
+    removeobject(55)
+    removeobject(56)
+    setflag(FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND)
+    setflag(FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND)
+
+    // Start Quest to visit Péntepetal City and meet Rania there
+    // She will ask for a few things in return, and give you the ability to see
+    // Pokémon natures when encountered in the wild! :)
+    setflag(FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY)
+    delay(20)
+    startquest(QUEST_VISIT_RANIA_PENTEPETAL)
+    closemessage
+    delay(10)
+
+    releaseall
+    end
+}
+
+movement MyrriniIsland_Movement_PlayerWalkDownToEvent
+{
+    walk_down * 4
+    emote_exclamation_mark
+    delay_16
+    walk_fast_down * 6
+    jump_in_place_down * 2
+    face_down
+    step_end
+}
+movement MyrriniIsland_Movement_ThyrsusApproach
+{
+    walk_down * 4
+    delay_16
+    walk_fast_down * 6
+    face_down
+    step_end
+}
+movement MyrriniIsland_Movement_AdminNoticesMara
+{
+    face_down
+    delay_16
+    emote_exclamation_mark
+    delay_16
+    walk_fast_right
+    face_up
+    jump_in_place_up
+    face_up
+    step_end
+}
+movement MyrriniIsland_Movement_AdminsMoveForBoss
+{
+    walk_fast_right * 2
+    face_left
+    step_end
+}
+movement MyrriniIsland_Movement_PlayerAndThyrsusReposition
+{
+    walk_right
+    walk_down
+    face_down
+    step_end
+}
+movement MyrriniIsland_Movement_MaraApproaches
+{
+    walk_up * 5
+    walk_right
+    walk_up
+    face_up
+    step_end
+}
+movement MyrriniIsland_Movement_AdminsFlee
+{
+    walk_fast_right * 9
+    step_end
+}
+movement MyrriniIsland_Movement_MaraLeaves
+{
+    walk_down
+    walk_left
+    walk_down * 7
+    step_end
+}
+movement MyrriniIsland_Movement_ThyrsusLeaves
+{
+    walk_up
+    walk_left * 2
+    walk_up * 6
+    step_end
+}
+movement MyrriniIsland_Movement_RaniaLeaves
+{
+    walk_up * 7
+    step_end
 }

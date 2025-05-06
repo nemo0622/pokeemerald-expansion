@@ -2976,11 +2976,11 @@ Party Size: 2
 Pool Rules: Basic
 
 Finizen
-Level: 24
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Clamperl
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Buizel
@@ -2999,15 +2999,15 @@ Party Size: 3
 Pool Rules: Basic
 
 Dratini
-Level: 24
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Psyduck
-Level: 24
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Remoraid
-Level: 24
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Chinchou
@@ -3045,15 +3045,15 @@ Party Size: 2
 Pool Rules: Basic
 
 Wailmer
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Finneon
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Seel
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ASTERISEA_TRYFON ===
@@ -3072,7 +3072,7 @@ Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Poliwhirl
-Level: 24
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Simipour
@@ -3088,7 +3088,7 @@ Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Crabrawler
-Level: 24
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ASTERISEA_WILLY ===
@@ -3107,11 +3107,11 @@ Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Tentacool
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Clauncher
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ASTERISEA_CELINA ===
@@ -3126,11 +3126,11 @@ Party Size: 3
 Pool Rules: Basic
 
 Ponyta
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Pachirisu
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Komala
@@ -3153,7 +3153,7 @@ Party Size: 2
 Pool Rules: Basic
 
 Murkrow
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Ninjask
@@ -3161,7 +3161,7 @@ Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Aipom
-Level: 25
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ASTERISEA_SIKAR ===
@@ -3176,15 +3176,15 @@ Party Size: 3
 Pool Rules: Basic
 
 Tentacool
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Brionne
-Level: 24
+Level: 25
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Clamperl
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ASTERISEA_HAMMON ===
@@ -3203,11 +3203,11 @@ Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Corsola Galarian
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Gurdurr
-Level: 25
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ASTERISEA_MATILDA ===
@@ -3230,7 +3230,7 @@ Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Rufflet
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Duosion
@@ -3250,11 +3250,11 @@ Party Size: 3
 Pool Rules: Basic
 
 Charcadet
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Stantler
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Heracross
@@ -3278,7 +3278,7 @@ Party Size: 2
 Pool Rules: Basic
 
 Haunter
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Dwebble
@@ -3286,7 +3286,7 @@ Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Mienfoo
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ASTERISEA_LEON ===
@@ -3301,11 +3301,11 @@ Party Size: 2
 Pool Rules: Basic
 
 Meditite
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Gothorita
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Bruxish
@@ -3324,7 +3324,7 @@ Party Size: 2
 Pool Rules: Basic
 
 Poliwhirl
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Wailmer
@@ -3332,7 +3332,7 @@ Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Spheal
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ASTERISEA_SERGIUS ===
@@ -3345,11 +3345,11 @@ Double Battle: No
 AI: Check Bad Move / Check Viability
 
 Barboach
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Seel
-Level: 26
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Omanyte
@@ -3366,11 +3366,11 @@ Double Battle: No
 AI: Check Bad Move / Check Viability
 
 Finneon
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Spheal
-Level: 26
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Kabuto
@@ -3393,7 +3393,7 @@ Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sealeo
-Level: 27
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Quaxwell
@@ -3416,99 +3416,252 @@ Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Kirlia
-Level: 27
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Skiploom
-Level: 27
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_NAOMI ===
-Name: NAOMI
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move
-
-Roselia @ Nugget
-Level: 45
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_CINDY_3 ===
-Name: CINDY
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move
-
-Linoone @ Nugget
-Level: 27
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_CINDY_4 ===
-Name: CINDY
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move
-
-Linoone @ Nugget
-Level: 30
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_CINDY_5 ===
-Name: CINDY
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move
-
-Linoone @ Nugget
-Level: 33
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_CINDY_6 ===
-Name: CINDY
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move
-
-Linoone @ Nugget
-Level: 36
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Fury Swipes
-- Mud Sport
-- Odor Sleuth
-- Sand Attack
-
-=== TRAINER_MELISSA ===
-Name: MELISSA
+=== TRAINER_MYRRINIGYM_HAILEY ===
+Name: Hailey
 Class: Beauty
 Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 3
+Pool Rules: Basic
 
-Marill
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Morgrem
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Gligar
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Grimer Alolan
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Haunter
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tags: Ace
+
+=== TRAINER_MYRRINIGYM_TASOS ===
+Name: Aristo
+Class: Artist
+Pic: Artist
+Gender: Male
+Music: Cool
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Dustox
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Krokorok
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Sliggoo
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Acid Spray
+- Mega Drain
+- Protect
+- Flail
+
+Ariados
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_MYRRINIGYM_REMIGIO ===
+Name: Remigio
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Ariados
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Shroodle
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Sneasel Hisuian
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_MYRRINIGYM_ALMA ===
+Name: Alma
+Class: Performer F
+Pic: Performer F
+Gender: Female
+Music: Girl
+Items: Full Heal / Super Potion
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 2
+Pool Rules: Basic
+
+Salandit
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Toedscool
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Persian Alolan
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tags: Ace
+
+=== TRAINER_LEADER_THYRSUS ===
+Name: Thyrsus
+Class: Leader
+Pic: Leader Norman
+Gender: Male
+Music: Male
+Items: Full Heal / Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 4
+Pool Rules: Basic
+
+Salazzle
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flame Burst
+- Toxic
+- Smog
+- Dragon Rage
+
+Lycanroc Midnight
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Night Slash
+- Rock Tomb
+- Stealth Rock
+- Howl
+
+Sneasel Hisuian
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Poison Jab
+- Ice Shard
+- Knock Off
+- Slash
+
+Grafaiai
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Poison Jab
+- Acid Spray
+- Pounce
+- U Turn
+
+Hypno
+Level: 31
+Ability: ABILITY_POISON_PUPPETEER
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Psybeam
+- Poison Gas
+- Knock Off
+- Disable
+
+=== TRAINER_LEADER_THYRSUS_HARD ===
+Name: Thyrsus
+Class: Leader
+Pic: Leader Norman
+Gender: Male
+Music: Male
+Items: Full Heal / Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Salazzle
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flame Burst
+- Toxic
+- Sludge
+- Dragon Rage
+
+Shedinja
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Sneak
+- Confuse Ray
+- Sand Attack
+- Fell Stinger
+
+Lycanroc Midnight
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Night Slash
+- Rock Tomb
+- Stealth Rock
+- Howl
+
+Sneasel Hisuian
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Jab
+- Ice Shard
+- Knock Off
+- Slash
+
+Grafaiai
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Jab
+- Flower Trick
+- Pounce
+- U Turn
+
+Dustox
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Venoshock
+- Light Screen
+- Whirlwind
+
+Haunter
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sludge
+- Mean Look
+- Shadow Ball
+- Confuse Ray
+
+Hypno
+Level: 31
+Ability: ABILITY_POISON_PUPPETEER
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Psybeam
+- Toxic
+- Knock Off
+- Poison Jab
 
 === TRAINER_SHEILA ===
 Name: SHEILA

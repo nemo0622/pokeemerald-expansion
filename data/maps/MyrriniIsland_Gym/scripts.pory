@@ -1,0 +1,208 @@
+mapscripts MyrriniIsland_Gym_MapScripts {}
+
+script MyrriniIsland_Gym_EventScript_GymStatue
+{
+    lock
+    if(flag(FLAG_BADGE05_GET))
+    {
+        msgbox(format("Myrrini Island Pokémon Gym\p Recent Victors: Rania, {PLAYER}"))
+    }
+    else
+    {
+        msgbox(format("Myrrini Island Pokémon Gym\p Recent Victors: Rania"))
+    }
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_Gym_EventScript_GymMan
+{
+    lock
+    faceplayer
+    speakername("Gym Guide")
+    if(flag(FLAG_BADGE05_GET))
+    {
+        msgbox(format("Incredible! You're a rising star! Keep it up, future Champ!"))
+    }
+    else
+    {
+        msgbox(format("Welcome to the Myrrini Island Gym!\p The Gym Leader you'll be facing is Thyrsus, the so-called King of Parties and Poisons. Naturally, he uses {COLOR GREEN}Poison-type{COLOR DARK_GRAY} Pokémon and {COLOR GREEN}Status conditions{COLOR DARK_GRAY} to his advantage. Make sure to stock up on status-healing items!"))
+    }
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_Gym_EventScript_Hypno
+{
+    lock
+    faceplayer
+    speakername("Hypno")
+    playmoncry(SPECIES_HYPNO, CRY_MODE_NORMAL)
+    msgbox("Snuffle!")
+    waitmoncry
+    closemessage
+    msgbox(format("Hypno shares a wide grin with Thyrsus. They must have been partners for years."))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Hailey
+{
+    trainerbattle_single(TRAINER_MYRRINIGYM_HAILEY, MyrriniIsland_Gym_Text_Trainer_MyrriniGym_HaileyIntro, MyrriniIsland_Gym_Text_Trainer_MyrriniGym_HaileyDefeat)
+    speakername("Hailey")
+    msgbox(format("There's enough food, wine, and juice in here to last a lifetime. Of course, with how Thyrsus parties, it might only last a week!"))
+    closemessage
+    release
+    end
+}
+text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_HaileyIntro
+{
+    format("Ehehe, welcome to the party-prep hall! We've got food and drinks to share!")
+}
+text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_HaileyDefeat
+{
+    format("Aren't you interested?")
+}
+
+script MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Tasos
+{
+    trainerbattle_single(TRAINER_MYRRINIGYM_TASOS, MyrriniIsland_Gym_Text_Trainer_MyrriniGym_TasosIntro, MyrriniIsland_Gym_Text_Trainer_MyrriniGym_TasosDefeat)
+    speakername("Tasos")
+    msgbox(format("Even though my party spirit is up, I can't help but admit... it's so messy in this building!"))
+    closemessage
+    release
+    end
+}
+text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_TasosIntro
+{
+    format("I've been working hard for months on art projects. It's time to let loose for a change!")
+}
+text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_TasosDefeat
+{
+    format("Losing can't bring me down!")
+}
+
+script MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Remigio
+{
+    trainerbattle_single(TRAINER_MYRRINIGYM_REMIGIO, MyrriniIsland_Gym_Text_Trainer_MyrriniGym_RemigioIntro, MyrriniIsland_Gym_Text_Trainer_MyrriniGym_RemigioDefeat)
+    speakername("Remigio")
+    msgbox(format("I help ship barrels of Myrrini wine across the world. If I take a sample here and there, who can blame me?"))
+    closemessage
+    release
+    end
+}
+text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_RemigioIntro
+{
+    format("I've traveled around the world. I can say that Myrrini Island has the best parties!")
+}
+text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_RemigioDefeat
+{
+    format("Now the party's starting!")
+}
+
+script MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Alma
+{
+    trainerbattle_single(TRAINER_MYRRINIGYM_ALMA, MyrriniIsland_Gym_Text_Trainer_MyrriniGym_AlmaIntro, MyrriniIsland_Gym_Text_Trainer_MyrriniGym_AlmaDefeat)
+    speakername("Alma")
+    msgbox(format("Honestly, I've always been a better singer than a Trainer."))
+    closemessage
+    release
+    end
+}
+text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_AlmaIntro
+{
+    format("Thyrsus hired me to perform. Get ready for this!")
+}
+text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_AlmaDefeat
+{
+    format("It's already over?!")
+}
+
+// -----------------------------------------------------------------------------------------------------
+
+script MyrriniIsland_Gym_EventScript_Thyrsus
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_HARD_MODE))
+    {
+        goto(MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty)
+    }
+    else
+    {
+        goto(MyrriniIsland_Gym_EventScript_Thyrsus_HardDifficulty)
+    }
+    release
+    end
+}
+
+script MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty // called when on normal difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_THYRSUS, MyrriniIsland_Gym_Text_ThyrsusIntro, MyrriniIsland_Gym_Text_ThyrsusDefeat, MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript, NO_MUSIC)
+    speakername("Thyrsus")
+    msgbox(format("Looks like I have some competition as King of Parties, {PLAYER}!"))
+    closemessage
+    release
+    end
+}
+script MyrriniIsland_Gym_EventScript_Thyrsus_HardDifficulty // called when on hard difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_THYRSUS_HARD, MyrriniIsland_Gym_Text_ThyrsusIntro, MyrriniIsland_Gym_Text_ThyrsusDefeat, MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript, NO_MUSIC)
+    speakername("Thyrsus")
+    msgbox(format("Looks like I have some competition as King of Parties, {PLAYER}!"))
+    closemessage
+    release
+    end
+}
+text MyrriniIsland_Gym_Text_ThyrsusIntro
+{
+    format("Opa, opa! A Trainer's finally reached me!\p I'm Thyrsus, King of Parties, Poisons, and this Gym. It's been so long since a worthy Trainer has battled me, I've started to get bored. Come on, show me how you party!")
+}
+text MyrriniIsland_Gym_Text_ThyrsusDefeat
+{
+    format("Ahaha, perfect! Your moves were on point!")
+}
+// Script called when you defeat the gym leader!
+script MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript
+{
+    setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
+    message(format("{PLAYER} received the Festival Badge from Thyrsus."))
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+
+    // Set gym completion flags
+    setflag(FLAG_BADGE05_GET)
+    // Set all trainers in Gym as defeated
+    settrainerflag(TRAINER_MYRRINIGYM_HAILEY)
+    settrainerflag(TRAINER_MYRRINIGYM_TASOS)
+    settrainerflag(TRAINER_MYRRINIGYM_REMIGIO)
+    settrainerflag(TRAINER_MYRRINIGYM_ALMA)
+
+    // Explain badge
+    speakername("Thyrsus")
+    msgbox(format("The Festival Badge looks great on you! People around Ilios will recognize it as a symbol of strength and skill. You'll also be able to use the {COLOR GREEN}HM Dive{COLOR DARK_GRAY} outside of battle.\p Woah, hey, I almost forgot in the excitement - take this!"))
+    closemessage
+
+    // Give TM reward and explain, plus end dialogue
+    giveitem(ITEM_TM_ACID_SPRAY)
+    speakername("Thyrsus")
+    msgbox(format("That TM contains the move {COLOR GREEN}Acid Spray{COLOR DARK_GRAY}. It's a bit weak by itself, but combined with the Special Defense drops it causes, it can get painful fast!\p You've got a few options ahead of you. You could sail north to {COLOR GREEN}Péntepetal City{COLOR DARK_GRAY} and try out Pokémon Contests, or you can head southeast to the {COLOR GREEN}Fresco Isles{COLOR DARK_GRAY} for the next Gym. Either way, remember to have fun!"))
+    closemessage
+
+    // complete gym quest and begin next one
+    delay(20)
+    completequest(QUEST_GYM_5)
+    delay(20)
+    startquest(QUEST_GYM_6)
+
+    // set Niko and Rania state variables if necessary
+    setvar(VAR_NIKO_STATE, 9)
+    setvar(VAR_RANIA_STATE, 9)
+    clearflag(FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND)
+
+    release
+    end
+}

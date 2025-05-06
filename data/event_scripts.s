@@ -1827,3 +1827,19 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/MarmaroIsland_House2/scripts.inc"
 
 	.include "data/maps/MarmaroIsland_House3/scripts.inc"
+
+	.include "data/maps/MyrriniIsland_PokemonCenter/scripts.inc"
+
+	.include "data/maps/MyrriniIsland_House1/scripts.inc"
+
+	.include "data/maps/MyrriniIsland_House2/scripts.inc"
+
+	.include "data/maps/MyrriniIsland_House3/scripts.inc"
+
+	.include "data/maps/MyrriniIsland_House4/scripts.inc"
+
+	.include "data/maps/MyrriniIsland_House5/scripts.inc"
+
+	.include "data/maps/MyrriniIsland_Mart/scripts.inc"
+
+	.include "data/maps/MyrriniIsland_Gym/scripts.inc"

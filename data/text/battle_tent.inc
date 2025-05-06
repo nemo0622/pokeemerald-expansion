@@ -119,28 +119,28 @@ FallarborTown_BattleTentLobby_Text_LookingForwardToArrival:
 
 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "I welcome you to the Battle Pavilion\n"
-	.string "VERDANTURF SITE!\p"
-	.string "Here, the TRAINER's trust toward\n"
+	.string "of Myrrini Island!\p"
+	.string "Here, the Trainer's trust toward\n"
 	.string "Pokémon is tested.$"
 
 VerdanturfTown_BattleTentLobby_Text_TakeChallenge:
-	.string "Do you wish to take the VERDANTURF\n"
+	.string "Do you wish to take the Myrrini\n"
 	.string "Battle Pavilion challenge?$"
 
 VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent:
-	.string "In the VERDANTURF Battle Pavilion,\n"
+	.string "In the Myrrini Battle Pavilion,\n"
 	.string "there is one crucial rule that must\l"
 	.string "be obeyed.\p"
-	.string "TRAINERS are permitted only to switch\n"
+	.string "Trainers are permitted only to switch\n"
 	.string "their Pokémon in and out.\p"
-	.string "TRAINERS are otherwise forbidden to\n"
+	.string "Trainers are otherwise forbidden to\n"
 	.string "command their Pokémon.\p"
 	.string "The Pokémon are to behave according\n"
 	.string "to their nature and battle on their own.\p"
 	.string "You must put your trust in your\n"
 	.string "Pokémon and watch over them.\p"
 	.string "If you achieve the honor of beating\n"
-	.string "three TRAINERS in succession,\l"
+	.string "three Trainers in succession,\l"
 	.string "we will present you with a prize.\p"
 	.string "If you want to interrupt your\n"
 	.string "challenge, please save the game.\p"
@@ -165,7 +165,7 @@ VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
 	.string "different kinds of Pokémon.\p"
 	.string "They also must not be holding\n"
 	.string "the same kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
+	.string "Eggs{STR_VAR_1} ineligible.\p"
 	.string "Come back when you have made\n"
 	.string "your preparations.$"
 
@@ -177,7 +177,7 @@ VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "different kinds of Pokémon.\p"
 	.string "They also must not be holding\n"
 	.string "the same kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
+	.string "Eggs{STR_VAR_1} ineligible.\p"
 	.string "Come back when you have made\n"
 	.string "your preparations.$"
 
@@ -358,7 +358,7 @@ SlateportCity_BattleTentLobby_Text_ExplainMonRules:
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2:
-	.string "The VERDANTURF Battle Pavilion\n"
+	.string "The Myrrini Battle Pavilion\n"
 	.string "rules are listed.$"
 
 @ Unused
@@ -367,7 +367,7 @@ VerdanturfTown_BattleTentLobby_Text_ReadWhichHeading:
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules:
-	.string "Here at the VERDANTURF Battle Pavilion,\n"
+	.string "Here at the Myrrini Battle Pavilion,\n"
 	.string "Pokémon are required to think and\l"
 	.string "battle by themselves.\p"
 	.string "Unlike in the wild, Pokémon that live\n"
@@ -404,7 +404,7 @@ VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules:
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules:
-	.string "When not under command by its TRAINER,\n"
+	.string "When not under command by its Trainer,\n"
 	.string "a Pokémon may be unable to effectively\l"
 	.string "use certain moves.\p"
 	.string "A Pokémon is not good at using any\n"
@@ -425,9 +425,9 @@ BattleTentLobby_Text_ExplainLevelRules:
 	.string "At this Battle Pavilion, the levels of\n"
 	.string "your opponents will be adjusted to\l"
 	.string "match the levels of your Pokémon.\p"
-	.string "However, no TRAINER you face will\n"
+	.string "However, no Trainer you face will\n"
 	.string "have any Pokémon below Level 30.$"
 
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed:
-	.string "The VERDANTURF Battle Pavilion\n"
+	.string "The Myrrini Battle Pavilion\n"
 	.string "rules are listed.$"

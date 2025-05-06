@@ -1009,10 +1009,9 @@ Common_EventScript_Piraeus_Text_18:
 
 Common_EventScript_Piraeus_Text_19:
 # 156 "data/maps/KalamiCity/scripts.pory"
-	.string "Hey, I love Myrrini Island! Maybe I'll do\n"
-	.string "some walking around while I'm there! You\l"
-	.string "know what they say, Myrrini parties are\l"
-	.string "the best parties!$"
+	.string "Hey, I love Myrrini Island! Their wine\n"
+	.string "and fruit are famous around the world. I\l"
+	.string "hope there's a festival going on!$"
 
 Common_EventScript_Piraeus_Text_20:
 # 165 "data/maps/KalamiCity/scripts.pory"

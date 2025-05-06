@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "AcrisiaCity_University_EventScript_Rania",
-      "flag": "0"
+      "flag": "FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_ELIA",

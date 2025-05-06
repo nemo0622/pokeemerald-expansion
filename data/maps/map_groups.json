@@ -229,7 +229,15 @@
     "MarmaroIsland_PokemonCenter",
     "MarmaroIsland_House1",
     "MarmaroIsland_House2",
-    "MarmaroIsland_House3"
+    "MarmaroIsland_House3",
+    "MyrriniIsland_PokemonCenter",
+    "MyrriniIsland_House1",
+    "MyrriniIsland_House2",
+    "MyrriniIsland_House3",
+    "MyrriniIsland_House4",
+    "MyrriniIsland_House5",
+    "MyrriniIsland_Mart",
+    "MyrriniIsland_Gym"
   ],
   "gMapGroup_IndoorPetalburg": [
     "PetalburgCity_WallysHouse",

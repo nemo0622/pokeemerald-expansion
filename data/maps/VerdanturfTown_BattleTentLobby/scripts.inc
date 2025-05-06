@@ -153,6 +153,7 @@ VerdanturfTown_BattleTentLobby_EventScript_SaveBeforeChallenge::
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	goto_if_eq VAR_RESULT, 0, VerdanturfTown_BattleTentLobby_EventScript_CancelChallengeSaveFailed
 VerdanturfTown_BattleTentLobby_EventScript_EnterChallenge::
+	setflag FLAG_PLAYED_IN_MYRRINI_BATTLE_PAVILION
 	special SavePlayerParty
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
 	msgbox VerdanturfTown_BattleTentLobby_Text_NowFollowMe, MSGBOX_DEFAULT
@@ -329,10 +330,10 @@ VerdanturfTown_BattleTentLobby_EventScript_ExitRules::
 
 VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves:
 	.string "If it doesn't like a certain move,\n"
-	.string "a POKéMON will be reluctant to use it.\p"
+	.string "a Pokémon will be reluctant to use it.\p"
 	.string "It doesn't matter how strong it is,\n"
 	.string "either.\p"
-	.string "For example, a POKéMON with a GENTLE\n"
+	.string "For example, a Pokémon with a Gentle\n"
 	.string "nature probably won't enjoy hurting\l"
 	.string "its opponents.\p"
 	.string "If it can't seem to live up to its\n"
@@ -343,32 +344,28 @@ VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry:
 	.string "My big sister is gentle usually.\n"
 	.string "But when she gets angry,\l"
 	.string "she's really, really scary!\p"
-	.string "I bet a gentle POKéMON will be scary\n"
+	.string "I bet a gentle Pokémon will be scary\n"
 	.string "if it gets angry!$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
-	.string "My feelings toward my POKéMON…\n"
-	.string "The attraction runs deep…\p"
-	.string "Oh, hi, you didn't see that, did you?\n"
-	.string "Well, it doesn't matter.\p"
-	.string "How would you like this TM for\n"
-	.string "your POKéMON?$"
+	.string "My strategy is to give Pokémon\n"
+	.string "moves to trick the opponent.\p"
+	.string "Here's a TM for a move that works\n"
+	.string "perfectly for that!$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionMutual:
-	.string "My feelings toward my POKéMON…\n"
-	.string "I'm sure the attraction is mutual!\p"
-	.string "They battle exactly the way I want\n"
-	.string "them to!$"
+	.string "My Pokémon battle exactly the\n"
+	.string "way I want them to!$"
 
 VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves:
 	.string "What kind of moves have you taught\n"
-	.string "your POKéMON?\p"
+	.string "your Pokémon?\p"
 	.string "I think you would give yourself\n"
 	.string "an advantage if they knew how to\l"
 	.string "heal or protect themselves.$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers:
-	.string "SCOTT: Hey there, {PLAYER}{KUN}!\n"
+	.string "Scott: Hey there, {PLAYER}{KUN}!\n"
 	.string "I thought I might see you here.\p"
 	.string "A BATTLE TENT's a place where\n"
 	.string "you can meet tough TRAINERS.\p"

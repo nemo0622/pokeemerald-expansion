@@ -1,0 +1,60 @@
+mapscripts MyrriniIsland_PokemonCenter_MapScripts {}
+
+script MyrriniIsland_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Myrrini Island Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_MYRRINI_ISLAND)
+    }
+    release
+    end
+}
+
+script MyrriniIsland_PokemonCenter_EventScript_FatMan
+{
+    lock
+    faceplayer
+    speakername("Fat Man")
+    msgbox(format("Oughh... I think I had a little too much fun last night... Myrrini parties are the best parties, but woah, sometimes you hit your limit."))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_PokemonCenter_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("Pokémon Centers aren't just places to heal your Pokémon! They also have big collections of books, the Inn service, and even a helpful Region Map!"))
+    closemessage
+    release
+    end
+}

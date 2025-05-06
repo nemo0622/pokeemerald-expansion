@@ -32,6 +32,7 @@ script JusmailTown_SpawnWindmillVirtualObjects
     // windmill tiles
     if(flag(FLAG_TRIGGERED_WINDMILL_SPAWN)) // if >1 step has been taken into the route and the mills have not been spawned yet, spawn them!
     {
+        special(DestroyVirtualObjects) // destroy any existing windmill blade sprites
         createvobject(OBJ_EVENT_GFX_WINDMILL_TL, 16, 20, 19, 4, DIR_SOUTH)
         createvobject(OBJ_EVENT_GFX_WINDMILL_TR, 17, 24, 19, 4, DIR_SOUTH)
         createvobject(OBJ_EVENT_GFX_WINDMILL_BL, 18, 20, 23, 4, DIR_SOUTH)

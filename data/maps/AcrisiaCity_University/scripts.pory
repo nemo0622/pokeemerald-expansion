@@ -512,6 +512,14 @@ script AcrisiaCity_University_EventScript_Niko
                 release
                 end
             }
+            elif(var(VAR_NIKO_STATE) == 9)
+            {
+                speakername("Niko")
+                msgbox(format("I hear you and Rania had a run-in with Team Chimera on Myrrini Island. What could they have possibly meant by 'reawakening ancient Pokémon'? We all know Lazarus Taxa are being rediscovered left and right, but what are Team Chimera's plans with them?"))
+                closemessage
+                release
+                end
+            }
         }
         else // chose cancel probably
         {
@@ -597,6 +605,12 @@ script AcrisiaCity_University_EventScript_Rania
     {
         speakername("Rania")
         msgbox(format("Oh, I've been working on a training manual with some helpful information - that might help with the fight against Team Chimera!\p I need a bit more time, I'm just so excited I had to tell someone!"))
+        closemessage
+    }
+    elif(var(VAR_RANIA_STATE) == 9) // Gym 5 complete, havent completed her quest on Myrrini
+    {
+        speakername("Rania")
+        msgbox(format("Looks like you've beaten the Gym on Myrrini Island, too!"))
         closemessage
     }
     release

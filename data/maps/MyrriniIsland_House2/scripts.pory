@@ -1,0 +1,25 @@
+mapscripts MyrriniIsland_House2_MapScripts {}
+
+script MyrriniIsland_House2_EventScript_Man
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("I actually really don't like grapes, but you can't tell anyone I said that."))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_House2_EventScript_Numel
+{
+    lock
+    faceplayer
+    speakername("Numel")
+    playmoncry(SPECIES_NUMEL, CRY_MODE_NORMAL)
+    msgbox("Guhhh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

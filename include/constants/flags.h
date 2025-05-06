@@ -1084,7 +1084,7 @@
 #define FLAG_ITEM_MARMARO_REVIVE                                    0x408
 #define FLAG_ITEM_MARMARO_EXP_CANDY_M                               0x409
 #define FLAG_ITEM_MARMARO_PEARL                                     0x40A
-#define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
+#define FLAG_ITEM_MYRRINI_CARBOS                                    0x40B
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
 #define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E
@@ -1305,10 +1305,10 @@
 #define FLAG_DONATED_30_ZOO_POKEMON                                 0x4E4 // Event flag for donating 30 pokemon to the zoo
 #define FLAG_GIVEN_TERA_SHARD_KIPOS                                 0x4E5 // Given Electric Tera Shard by woman in kipos town
 #define FLAG_GOT_TM_POISON_FANG                                     0x4E6 // Got TM Poison Fang from Artist in Myrrini Island
-#define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
-#define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
-#define FLAG_UNUSED_0x4E9                                           0x4E9 // Unused Flag
-#define FLAG_UNUSED_0x4EA                                           0x4EA // Unused Flag
+#define FLAG_PLAYED_IN_MYRRINI_BATTLE_PAVILION                      0x4E7 // Sets flag that battle pavilion on Myrrini was used
+#define FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY                          0x4E8 // Hides Rania in Acrisia University if she's supposed to be elsewhere
+#define FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND                      0x4E9 // Hides Chimera Event objects (Rania, Chimera admins, Mara) on Myrrini Island - shown during fight with Team Chimera
+#define FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND       0x4EA // Separate flag to hide Thyrsus during event above
 #define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
 #define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
 #define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag

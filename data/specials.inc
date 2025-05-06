@@ -570,3 +570,4 @@ gSpecials::
 	def_special GetZooDonationValidity
 	def_special ShowSpeciesZooInfoWindow
 	def_special CloseSpeciesZooInfoWindow
+	def_special DestroyVirtualObjects

@@ -1022,6 +1022,46 @@ side_quest(
 	NULL,
 	0
 ),
+side_quest(
+	gText_SideQuestName_46, // QUEST_TRY_MYRRINI_BATTLE_PAVILION
+	gText_SideQuestDesc_46,
+	gText_SideQuestDesc_46,
+	gText_SideQuestMap46,
+	OBJ_EVENT_GFX_HEX_MANIAC,
+	OBJECT,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_47, // QUEST_MYRRINI_HEART_SCALE
+	gText_SideQuestDesc_47,
+	gText_SideQuestDesc_47,
+	gText_SideQuestMap47,
+	ITEM_HEART_SCALE,
+	ITEM,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_48, // QUEST_FREE_MARMARO_MINES
+	gText_SideQuestDesc_48,
+	gText_SideQuestDesc_48,
+	gText_SideQuestMap48,
+	OBJ_EVENT_GFX_CHIMERA_ADMIN_M,
+	OBJECT,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_49, // QUEST_VISIT_RANIA_PENTEPETAL
+	gText_SideQuestDesc_49,
+	gText_SideQuestDesc_49,
+	gText_SideQuestMap49,
+	OBJ_EVENT_GFX_RANIA,
+	OBJECT,
+	NULL,
+	0
+),
 };
 ////////////////////////END QUEST CUSTOMIZATION////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////

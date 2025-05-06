@@ -6,7 +6,7 @@
     F(DRAGON_CLAW) \
     F(WATER_PULSE) \
     F(CALM_MIND) \
-    F(ROAR) \
+    F(PSYSHOCK) \
     F(TOXIC) \
     F(HAIL) \
     F(BULK_UP) \
@@ -22,7 +22,7 @@
     F(RAIN_DANCE) \
     F(GIGA_DRAIN) \
     F(SAFEGUARD) \
-    F(FRUSTRATION) \
+    F(ACID_SPRAY) \
     F(SOLAR_BEAM) \
     F(IRON_TAIL) \
     F(THUNDERBOLT) \

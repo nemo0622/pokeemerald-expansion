@@ -494,7 +494,7 @@ MtChimney_EventScript_RematchShelby::
 	end
 
 MtChimney_EventScript_Melissa::
-	trainerbattle_single TRAINER_MELISSA, MtChimney_Text_MelissaIntro, MtChimney_Text_MelissaDefeat
+	trainerbattle_single TRAINER_LEADER_THYRSUS_HARD, MtChimney_Text_MelissaIntro, MtChimney_Text_MelissaDefeat
 	msgbox MtChimney_Text_MelissaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

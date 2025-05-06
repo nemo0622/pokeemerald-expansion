@@ -200,6 +200,14 @@
 #define MAP_MARMARO_ISLAND_HOUSE1             (8 | (7 << 8))
 #define MAP_MARMARO_ISLAND_HOUSE2             (9 | (7 << 8))
 #define MAP_MARMARO_ISLAND_HOUSE3             (10 | (7 << 8))
+#define MAP_MYRRINI_ISLAND_POKEMON_CENTER     (11 | (7 << 8))
+#define MAP_MYRRINI_ISLAND_HOUSE1             (12 | (7 << 8))
+#define MAP_MYRRINI_ISLAND_HOUSE2             (13 | (7 << 8))
+#define MAP_MYRRINI_ISLAND_HOUSE3             (14 | (7 << 8))
+#define MAP_MYRRINI_ISLAND_HOUSE4             (15 | (7 << 8))
+#define MAP_MYRRINI_ISLAND_HOUSE5             (16 | (7 << 8))
+#define MAP_MYRRINI_ISLAND_MART               (17 | (7 << 8))
+#define MAP_MYRRINI_ISLAND_GYM                (18 | (7 << 8))
 
 // gMapGroup_IndoorPetalburg
 #define MAP_PETALBURG_CITY_WALLYS_HOUSE      (0 | (8 << 8))

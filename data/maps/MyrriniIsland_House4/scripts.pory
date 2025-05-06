@@ -1,0 +1,23 @@
+mapscripts MyrriniIsland_House4_MapScripts {}
+
+script MyrriniIsland_House4_EventScript_CyclingTriathleteF
+{
+    lock
+    faceplayer
+    speakername("Biker")
+    msgbox(format("Ha! Who says you can't ride bikes indoors? Now that we have our own house, I can do what I want!"))
+    closemessage
+    release
+    end
+}
+
+script MyrriniIsland_House4_EventScript_Man
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("Jeez, she really, really likes that bike. I knew she was an athlete before I asked her to get a place with me, but this is a new level!"))
+    closemessage
+    release
+    end
+}

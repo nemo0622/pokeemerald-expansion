@@ -60,7 +60,11 @@
 #define QUEST_MARMARO_TIMER_BALL                42 // give timer ball to pokéfan on marmaro island
 #define QUEST_MARMARO_EGG_QUEST                 43 // show an Egg to a beauty on marmaro island
 #define QUEST_MYRRINI_ALLERGIES                 44 // give a Full Heal to a camper on myrrini island
-#define QUEST_COUNT     (QUEST_MYRRINI_ALLERGIES + 1)
+#define QUEST_TRY_MYRRINI_BATTLE_PAVILION       45 // participate in Myrrini Island Battle Pavilion
+#define QUEST_MYRRINI_HEART_SCALE               46 // bring punk rocker a heart scale in myrrini island house 3
+#define QUEST_FREE_MARMARO_MINES                47 // chase Team Chimera out of Marmaro Island Mine
+#define QUEST_VISIT_RANIA_PENTEPETAL            48 // talk to Rania in Péntepetal City
+#define QUEST_COUNT     (QUEST_VISIT_RANIA_PENTEPETAL + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

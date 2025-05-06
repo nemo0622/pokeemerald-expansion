@@ -65,8 +65,16 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 MAJOR TODOS:
 - REPLACE "Triathlete" with "Competitor" or something close to "Olympic Player"
 - Continue Mapping and NPC development
-    - Next: Sea of Asteri (West) to Marmaro Island
-    - DIVE MAP! Add a Pearl String item underwater for quest
+    - Myrrini Island interiors
+        - Gym: "Wine Festival" themed ?
+    - DIVE MAPS! Add a Pearl String item underwater for quest
+- EXPAND POKéDEX
+    - Up to 450 total species! Add the following:
+    - Jangmo'o line (commission? probably commission lol)
+    - Johto starters
+    - Flamigo (SageDeoxys sprites)
+    - Sizzlipede (SageDeoxys sprites)
+    - Drampa
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas:
@@ -79,6 +87,7 @@ MAJOR TODOS:
             - Use hanging light graphics from Yanako's tilesets (plus other buildings from that sheet too tbh)
         - Péntepetal City ("Five-petal City") - name inspired by the Wild Pansy / Violet, which is a major lesbian/queer symbol with 5 petals. City obviously on island inspired by Lesbos
             - Split between a small outer island and a mainland section, connected with TWO LARGE MARBLE BRIDGES (inspired by Ancient Mytilene, the capital of the island!)
+            - Tan brick buildings with orange roofs, like [this picture](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theotheraegean.com%2F2021%2F02%2Farchitecture-in-lesvos%2F&psig=AOvVaw3olmDfEWQHULi5WEdmzN8T&ust=1746277667381000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCOCGiLLthI0DFQAAAAAdAAAAABAR) of Molyvos, Lesbos
             - Questline unlocking Eternal Flower Floette
             - Major Cabin Decor shops! Ways here to unlock many poké dolls?
             - Wishing Star mart location could be here too! Makes sense to make it late-ish in game (~after Gym 5/6)
@@ -162,6 +171,8 @@ GREEK PHRASES AND STUFF:
 - When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
 - CABIN DECORATION: holding the decoration sometimes breaks the graphics (ex: holding Pretty Flowers messes it up bad)
+- BATTLE PAVILION: Player sprites are garbled
+    - Most likely because my Outfit implementation skipped over all the player link graphical stuff. oops
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
