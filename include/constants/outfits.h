@@ -28,11 +28,13 @@
 #define OUTFIT_JOHTO_FASHION 11 // Ethan (male) and Lyra (female)
 #define OUTFIT_KALOS_FASHION 12 // Calem (male) and Serena (female)
 #define OUTFIT_ALOLA_FASHION 13 // Elio (male) and Selene (female)
-#define OUTFIT_COUNT 14
+#define OUTFIT_PALDEA_FASHION 14 // Arven (male) and Nemona (female)
+#define OUTFIT_HYLIAN_FASHION 15 // Link (male) and Zelda (female)
+#define OUTFIT_COUNT 16
 
 // inclusive
 #define OUTFIT_BEGIN OUTFIT_UNIVERSITY_GREEN
-#define OUTFIT_END   OUTFIT_ALOLA_FASHION
+#define OUTFIT_END   OUTFIT_HYLIAN_FASHION
 
 #define DEFAULT_OUTFIT OUTFIT_UNIVERSITY_GREEN
 

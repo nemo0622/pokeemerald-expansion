@@ -469,6 +469,40 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alol
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_FWatering;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_FDecorating;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_MNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_MSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_MFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_MAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_MUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_MFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_MWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_MDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_FNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_FSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_FFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_FAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_FUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_FFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_FWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Paldea_FDecorating;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_MNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_MSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_MFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_MAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_MUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_MFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_MWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_MDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_FNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_FSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_FFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_FAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_FUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_FFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_FWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Hylian_FDecorating;
+
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -919,6 +953,38 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_FISHING] = &gObjectEventGraphicsInfo_Outfit_Alola_FFishing,
     [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_WATERING] = &gObjectEventGraphicsInfo_Outfit_Alola_FWatering,
     [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Alola_FDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_M_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Paldea_MNormal,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_M_SURFING] = &gObjectEventGraphicsInfo_Outfit_Paldea_MSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_M_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Paldea_MFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_M_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Paldea_MAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_M_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Paldea_MUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_M_FISHING] = &gObjectEventGraphicsInfo_Outfit_Paldea_MFishing,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_M_WATERING] = &gObjectEventGraphicsInfo_Outfit_Paldea_MWatering,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_M_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Paldea_MDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_F_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Paldea_FNormal,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_F_SURFING] = &gObjectEventGraphicsInfo_Outfit_Paldea_FSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_F_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Paldea_FFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_F_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Paldea_FAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_F_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Paldea_FUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_F_FISHING] = &gObjectEventGraphicsInfo_Outfit_Paldea_FFishing,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_F_WATERING] = &gObjectEventGraphicsInfo_Outfit_Paldea_FWatering,
+    [OBJ_EVENT_GFX_OUTFIT_PALDEA_F_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Paldea_FDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Hylian_MNormal,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_SURFING] = &gObjectEventGraphicsInfo_Outfit_Hylian_MSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Hylian_MFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Hylian_MAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Hylian_MUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_FISHING] = &gObjectEventGraphicsInfo_Outfit_Hylian_MFishing,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_WATERING] = &gObjectEventGraphicsInfo_Outfit_Hylian_MWatering,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Hylian_MDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Hylian_FNormal,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_SURFING] = &gObjectEventGraphicsInfo_Outfit_Hylian_FSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Hylian_FFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Hylian_FAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Hylian_FUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_FISHING] = &gObjectEventGraphicsInfo_Outfit_Hylian_FFishing,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_WATERING] = &gObjectEventGraphicsInfo_Outfit_Hylian_FWatering,
+    [OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Hylian_FDecorating,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

@@ -579,6 +579,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Outfit_Ancient,        OBJ_EVENT_PAL_TAG_OUTFIT_ANCIENT}, 
     {gObjectEventPal_Outfit_Johto,          OBJ_EVENT_PAL_TAG_OUTFIT_JOHTO},
     {gObjectEventPal_Outfit_Alola,          OBJ_EVENT_PAL_TAG_OUTFIT_ALOLA},
+    {gObjectEventPal_Outfit_Paldea,         OBJ_EVENT_PAL_TAG_OUTFIT_PALDEA},
+    {gObjectEventPal_Outfit_Hylian,         OBJ_EVENT_PAL_TAG_OUTFIT_HYLIAN},
     {gObjectEventPal_Substitute,            OBJ_EVENT_PAL_TAG_SUBSTITUTE},
     {gObjectEventPaletteEmotes,             OBJ_EVENT_PAL_TAG_EMOTES},
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},

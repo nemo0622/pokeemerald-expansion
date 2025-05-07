@@ -382,6 +382,18 @@ const u32 gTrainerPalette_Outfit_Alola_M[] = INCBIN_U32("graphics/trainers/palet
 const u32 gTrainerPalette_Outfit_Alola_F[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_alola_f.gbapal.lz");
 const u8 gTrainerBackPic_Outfit_Alola_M[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_alola_m.4bpp");
 const u8 gTrainerBackPic_Outfit_Alola_F[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_alola_f.4bpp");
+const u32 gTrainerFrontPic_Outfit_Paldea_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_paldea_m.4bpp.lz");
+const u32 gTrainerFrontPic_Outfit_Paldea_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_paldea_f.4bpp.lz");
+const u32 gTrainerPalette_Outfit_Paldea_M[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_paldea_m.gbapal.lz");
+const u32 gTrainerPalette_Outfit_Paldea_F[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_paldea_f.gbapal.lz");
+const u8 gTrainerBackPic_Outfit_Paldea_M[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_paldea_m.4bpp");
+const u8 gTrainerBackPic_Outfit_Paldea_F[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_paldea_f.4bpp");
+const u32 gTrainerFrontPic_Outfit_Hylian_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_hylian_m.4bpp.lz");
+const u32 gTrainerFrontPic_Outfit_Hylian_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_hylian_f.4bpp.lz");
+const u32 gTrainerPalette_Outfit_Hylian_M[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_hylian_m.gbapal.lz");
+const u32 gTrainerPalette_Outfit_Hylian_F[] = INCBIN_U32("graphics/trainers/palettes/outfits/outfit_hylian_f.gbapal.lz");
+const u8 gTrainerBackPic_Outfit_Hylian_M[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_hylian_m.4bpp");
+const u8 gTrainerBackPic_Outfit_Hylian_F[] = INCBIN_U8("graphics/trainers/back_pics/outfits/outfit_hylian_f.4bpp");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
@@ -524,6 +536,10 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(OUTFIT_JOHTO_F, Outfit_Johto_F),
     TRAINER_SPRITE(OUTFIT_ALOLA_M, Outfit_Alola_M),
     TRAINER_SPRITE(OUTFIT_ALOLA_F, Outfit_Alola_F),
+    TRAINER_SPRITE(OUTFIT_PALDEA_M, Outfit_Paldea_M),
+    TRAINER_SPRITE(OUTFIT_PALDEA_F, Outfit_Paldea_F),
+    TRAINER_SPRITE(OUTFIT_HYLIAN_M, Outfit_Hylian_M),
+    TRAINER_SPRITE(OUTFIT_HYLIAN_F, Outfit_Hylian_F),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
@@ -815,6 +831,34 @@ const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Alola_F[] =
     {gTrainerBackPic_Outfit_Alola_F + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
     {gTrainerBackPic_Outfit_Alola_F + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
 };
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Paldea_M[] =
+{
+    {gTrainerBackPic_Outfit_Paldea_M + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Paldea_M + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Paldea_M + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Paldea_M + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Paldea_F[] =
+{
+    {gTrainerBackPic_Outfit_Paldea_F + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Paldea_F + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Paldea_F + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Paldea_F + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Hylian_M[] =
+{
+    {gTrainerBackPic_Outfit_Hylian_M + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Hylian_M + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Hylian_M + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Hylian_M + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Hylian_F[] =
+{
+    {gTrainerBackPic_Outfit_Hylian_F + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Hylian_F + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Hylian_F + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Outfit_Hylian_F + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
 
 // .backPic goes functionally unused, since none of these pics are compressed
 // and the place they would get extracted to gets overwritten later anyway
@@ -862,4 +906,8 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(OUTFIT_JOHTO_F, 4, Outfit_Johto_F, Palette_Outfit_Johto_F, Hoenn),
     TRAINER_BACK_SPRITE(OUTFIT_ALOLA_M, 4, Outfit_Alola_M, Palette_Outfit_Alola_M, Hoenn),
     TRAINER_BACK_SPRITE(OUTFIT_ALOLA_F, 4, Outfit_Alola_F, Palette_Outfit_Alola_F, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_PALDEA_M, 4, Outfit_Paldea_M, Palette_Outfit_Paldea_M, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_PALDEA_F, 4, Outfit_Paldea_F, Palette_Outfit_Paldea_F, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_HYLIAN_M, 4, Outfit_Hylian_M, Palette_Outfit_Hylian_M, Hoenn),
+    TRAINER_BACK_SPRITE(OUTFIT_HYLIAN_F, 4, Outfit_Hylian_F, Palette_Outfit_Hylian_F, Hoenn),
 };

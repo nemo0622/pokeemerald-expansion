@@ -475,10 +475,46 @@
 #define OBJ_EVENT_GFX_OUTFIT_ALOLA_F_WATERING      446
 #define OBJ_EVENT_GFX_OUTFIT_ALOLA_F_DECORATING    447
 
+// Outfit: Paldea M and F
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_M_NORMAL        448
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_M_SURFING       449
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_M_FIELD_MOVE    450
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_M_ACRO_BIKE     451
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_M_UNDERWATER    452
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_M_FISHING       453
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_M_WATERING      454
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_M_DECORATING    455
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_F_NORMAL        456
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_F_SURFING       457
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_F_FIELD_MOVE    458
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_F_ACRO_BIKE     459
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_F_UNDERWATER    460
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_F_FISHING       461
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_F_WATERING      462
+#define OBJ_EVENT_GFX_OUTFIT_PALDEA_F_DECORATING    463
+
+// Outfit: Hylian M and F
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_NORMAL        464
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_SURFING       465
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_FIELD_MOVE    466
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_ACRO_BIKE     467
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_UNDERWATER    468
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_FISHING       469
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_WATERING      470
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_DECORATING    471
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_NORMAL        472
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_SURFING       473
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_FIELD_MOVE    474
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_ACRO_BIKE     475
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_UNDERWATER    476
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_FISHING       477
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_WATERING      478
+#define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_DECORATING    479
+
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        448
+#define NUM_OBJ_EVENT_GFX                        480
 
 
 // These are dynamic object gfx ids.
@@ -632,6 +668,8 @@
 #define OBJ_EVENT_PAL_TAG_OUTFIT_ANCIENT          0x1134 // palette for ancient outfits
 #define OBJ_EVENT_PAL_TAG_OUTFIT_JOHTO            0x1135 // palette for johto outfits
 #define OBJ_EVENT_PAL_TAG_OUTFIT_ALOLA            0x1136 // palette for alola outfits
+#define OBJ_EVENT_PAL_TAG_OUTFIT_PALDEA           0x1137 // palette for paldea outfits
+#define OBJ_EVENT_PAL_TAG_OUTFIT_HYLIAN           0x1138 // palette for hylian outfits
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

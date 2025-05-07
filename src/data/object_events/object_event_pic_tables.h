@@ -2685,3 +2685,215 @@ static const struct SpriteFrameImage sPicTable_Outfit_Alola_FWatering[] = {
 static const struct SpriteFrameImage sPicTable_Outfit_Alola_FDecorating[] = {
     obj_frame_tiles(gObjectEventPic_Outfit_Alola_FDecorating),
 };
+
+// OUTFIT: Paldea M
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_MNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Paldea_MNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_MAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Paldea_MAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_MSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_MUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_MFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Paldea_MFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_MFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Paldea_MFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_MWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_MWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_MDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Paldea_MDecorating),
+};
+
+// OUTFIT: Paldea F
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_FNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Paldea_FNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_FAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Paldea_FAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_FSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_FUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_FFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Paldea_FFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_FFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Paldea_FFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_FWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Paldea_FWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Paldea_FDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Paldea_FDecorating),
+};
+
+// OUTFIT: Hylian M
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_MNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Hylian_MNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_MAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Hylian_MAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_MSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_MUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_MFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Hylian_MFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_MFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Hylian_MFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_MWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_MWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_MDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Hylian_MDecorating),
+};
+
+// OUTFIT: Hylian F
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_FNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Hylian_FNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_FAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Hylian_FAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_FSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_FUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_FFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Hylian_FFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_FFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Hylian_FFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_FWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Hylian_FWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Hylian_FDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Hylian_FDecorating),
+};

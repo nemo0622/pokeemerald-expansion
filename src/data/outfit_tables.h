@@ -54,6 +54,14 @@ static const u8 sText_OutfitName_AlolaFashion[] = _("Alolan Fashion");
 static const u8 sText_OutfitDesc_AlolaFashion[] = _(
     "Resembles the hero who \nsaved the Alola Region.");
 
+static const u8 sText_OutfitName_PaldeaFashion[] = _("Paldean Fashion");
+static const u8 sText_OutfitDesc_PaldeaFashion[] = _(
+    "Resembles the students who \nexplored the Paldea Region.");
+
+static const u8 sText_OutfitName_HylianFashion[] = _("Hylian Heroes");
+static const u8 sText_OutfitDesc_HylianFashion[] = _(
+    "The Princess of Hyrule and \nher sworn Knight.");
+
 // Male outfit Region Map Icons
 static const u16 sRegionMapPlayerIcon_BrendanGfx[] = INCBIN_U16("graphics/pokenav/region_map/brendan_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Coral_M[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_coral_m_icon.4bpp");
@@ -68,6 +76,8 @@ static const u16 sRegionMapPlayerIcon_Ancient_M[] = INCBIN_U16("graphics/pokenav
 static const u16 sRegionMapPlayerIcon_Johto_M[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_johto_m_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Calem[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_calem_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Alola_M[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_alola_m_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_Paldea_M[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_paldea_m_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_Hylian_M[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_hylian_m_icon.4bpp");
 
 // Female outfit Region Map Icons
 static const u16 sRegionMapPlayerIcon_MayGfx[] = INCBIN_U16("graphics/pokenav/region_map/may_icon.4bpp");
@@ -83,6 +93,8 @@ static const u16 sRegionMapPlayerIcon_Ancient_F[] = INCBIN_U16("graphics/pokenav
 static const u16 sRegionMapPlayerIcon_Johto_F[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_johto_f_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Serena[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_serena_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Alola_F[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_alola_f_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_Paldea_F[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_paldea_f_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_Hylian_F[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_hylian_f_icon.4bpp");
 
 static const u8 sFrontierPassPlayerIcons_XMarks[] = INCBIN_U8("graphics/frontier_pass/map_heads.4bpp");
 
@@ -659,6 +671,90 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
             },
         },
         .iconsRM = { sRegionMapPlayerIcon_Alola_M, sRegionMapPlayerIcon_Alola_F },
+        .iconsFP = sFrontierPassPlayerIcons_XMarks,
+    },
+    [OUTFIT_PALDEA_FASHION] = {
+        .isHidden = TRUE,
+        .prices = { 0, 0 },
+        .name = sText_OutfitName_PaldeaFashion,
+        .desc = sText_OutfitDesc_PaldeaFashion,
+        .trainerPics = {
+            [MALE]   = {TRAINER_PIC_OUTFIT_PALDEA_M, TRAINER_BACK_PIC_OUTFIT_PALDEA_M},
+            [FEMALE] = {TRAINER_PIC_OUTFIT_PALDEA_F, TRAINER_BACK_PIC_OUTFIT_PALDEA_F}
+        },
+        .avatarGfxIds = {
+           [MALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_OUTFIT_PALDEA_M_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_OUTFIT_PALDEA_M_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_OUTFIT_PALDEA_M_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_OUTFIT_PALDEA_M_UNDERWATER
+           },
+           [FEMALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_OUTFIT_PALDEA_F_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_OUTFIT_PALDEA_F_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_OUTFIT_PALDEA_F_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_OUTFIT_PALDEA_F_UNDERWATER
+           },
+        },
+        .animGfxIds = {
+            [MALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_OUTFIT_PALDEA_M_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_OUTFIT_PALDEA_M_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_OUTFIT_PALDEA_M_WATERING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_OUTFIT_PALDEA_M_DECORATING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_OUTFIT_PALDEA_M_FIELD_MOVE
+            },
+            [FEMALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_OUTFIT_PALDEA_F_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_OUTFIT_PALDEA_F_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_OUTFIT_PALDEA_F_WATERING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_OUTFIT_PALDEA_F_DECORATING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_OUTFIT_PALDEA_F_FIELD_MOVE
+            },
+        },
+        .iconsRM = { sRegionMapPlayerIcon_Paldea_M, sRegionMapPlayerIcon_Paldea_F },
+        .iconsFP = sFrontierPassPlayerIcons_XMarks,
+    },
+    [OUTFIT_HYLIAN_FASHION] = {
+        .isHidden = TRUE,
+        .prices = { 0, 0 },
+        .name = sText_OutfitName_HylianFashion,
+        .desc = sText_OutfitDesc_HylianFashion,
+        .trainerPics = {
+            [MALE]   = {TRAINER_PIC_OUTFIT_HYLIAN_M, TRAINER_BACK_PIC_OUTFIT_HYLIAN_M},
+            [FEMALE] = {TRAINER_PIC_OUTFIT_HYLIAN_F, TRAINER_BACK_PIC_OUTFIT_HYLIAN_F}
+        },
+        .avatarGfxIds = {
+           [MALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_UNDERWATER
+           },
+           [FEMALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_UNDERWATER
+           },
+        },
+        .animGfxIds = {
+            [MALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_WATERING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_DECORATING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_OUTFIT_HYLIAN_M_FIELD_MOVE
+            },
+            [FEMALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_WATERING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_DECORATING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_FIELD_MOVE
+            },
+        },
+        .iconsRM = { sRegionMapPlayerIcon_Hylian_M, sRegionMapPlayerIcon_Hylian_F },
         .iconsFP = sFrontierPassPlayerIcons_XMarks,
     },
 };
