@@ -82,7 +82,7 @@ SootopolisCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_ANDREA
 	settrainerflag TRAINER_CRISSY
 	settrainerflag TRAINER_ASTERISEA_HONORIA
-	settrainerflag TRAINER_CONNIE
+	settrainerflag TRAINER_MARMAROMINES_CHIMERA_ADMIN_HARD
 	settrainerflag TRAINER_BRIDGET
 	settrainerflag TRAINER_OLIVIA
 	settrainerflag TRAINER_TIFFANY

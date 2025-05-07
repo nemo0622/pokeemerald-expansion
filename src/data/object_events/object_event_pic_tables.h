@@ -2473,3 +2473,215 @@ static const struct SpriteFrameImage sPicTable_Outfit_Ancient_FWatering[] = {
 static const struct SpriteFrameImage sPicTable_Outfit_Ancient_FDecorating[] = {
     obj_frame_tiles(gObjectEventPic_Outfit_Ancient_FDecorating),
 };
+
+// OUTFIT: Johto M
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_MNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Johto_MNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_MAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Johto_MAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_MSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_MUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Johto_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_MFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Johto_MFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_MFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Johto_MFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_MWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Johto_MWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Johto_MWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_MDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Johto_MDecorating),
+};
+
+// OUTFIT: Johto F
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_FNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Johto_FNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_FAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Johto_FAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_FSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_FUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Johto_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_FFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Johto_FFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_FFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Johto_FFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_FWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Johto_FWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Johto_FWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Johto_FDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Johto_FDecorating),
+};
+
+// OUTFIT: Alola M
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_MNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Alola_MNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_MAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Alola_MAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_MSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_MUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Alola_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_MFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Alola_MFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_MFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Alola_MFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_MWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Alola_MWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Alola_MWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_MDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Alola_MDecorating),
+};
+
+// OUTFIT: Alola F
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_FNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Alola_FNormalRunning, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_FAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Alola_FAcroBike, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_FSurfing[] = {
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FSurfing, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_FUnderwater[] = {
+    overworld_frame(gObjectEventPic_Outfit_Alola_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FUnderwater, 4, 4, 2),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_FFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Alola_FFieldMove, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_FFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_Outfit_Alola_FFishing, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_FWatering[] = {
+    overworld_frame(gObjectEventPic_Outfit_Alola_FWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Outfit_Alola_FWatering, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Outfit_Alola_FDecorating[] = {
+    obj_frame_tiles(gObjectEventPic_Outfit_Alola_FDecorating),
+};

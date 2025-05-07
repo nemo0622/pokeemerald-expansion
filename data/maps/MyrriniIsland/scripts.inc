@@ -960,235 +960,237 @@ MyrriniIsland_EventScript_ChimeraEvent::
 	setflag FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND
 # 611 "data/maps/MyrriniIsland/scripts.pory"
 	setflag FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND
-# 616 "data/maps/MyrriniIsland/scripts.pory"
-	setflag FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY
+# 612 "data/maps/MyrriniIsland/scripts.pory"
+	setflag FLAG_HIDE_GRUNT_BLOCKING_MARMARO_MINES
 # 617 "data/maps/MyrriniIsland/scripts.pory"
-	delay 20
+	setflag FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY
 # 618 "data/maps/MyrriniIsland/scripts.pory"
-	startquest QUEST_VISIT_RANIA_PENTEPETAL
+	delay 20
 # 619 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	startquest QUEST_VISIT_RANIA_PENTEPETAL
 # 620 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 621 "data/maps/MyrriniIsland/scripts.pory"
 	delay 10
-# 622 "data/maps/MyrriniIsland/scripts.pory"
+# 623 "data/maps/MyrriniIsland/scripts.pory"
 	releaseall
 	end
 
 
-# 626 "data/maps/MyrriniIsland/scripts.pory"
+# 627 "data/maps/MyrriniIsland/scripts.pory"
 MyrriniIsland_Movement_PlayerWalkDownToEvent:
-# 628 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 628 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 628 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 628 "data/maps/MyrriniIsland/scripts.pory"
+# 629 "data/maps/MyrriniIsland/scripts.pory"
 	walk_down
 # 629 "data/maps/MyrriniIsland/scripts.pory"
-	emote_exclamation_mark
+	walk_down
+# 629 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 629 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
 # 630 "data/maps/MyrriniIsland/scripts.pory"
+	emote_exclamation_mark
+# 631 "data/maps/MyrriniIsland/scripts.pory"
 	delay_16
-# 631 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 631 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 631 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 631 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 631 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 631 "data/maps/MyrriniIsland/scripts.pory"
+# 632 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_down
 # 632 "data/maps/MyrriniIsland/scripts.pory"
-	jump_in_place_down
+	walk_fast_down
 # 632 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 632 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 632 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 632 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 633 "data/maps/MyrriniIsland/scripts.pory"
 	jump_in_place_down
 # 633 "data/maps/MyrriniIsland/scripts.pory"
-	face_down
+	jump_in_place_down
 # 634 "data/maps/MyrriniIsland/scripts.pory"
+	face_down
+# 635 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
-# 636 "data/maps/MyrriniIsland/scripts.pory"
+# 637 "data/maps/MyrriniIsland/scripts.pory"
 MyrriniIsland_Movement_ThyrsusApproach:
-# 638 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 638 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 638 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 638 "data/maps/MyrriniIsland/scripts.pory"
+# 639 "data/maps/MyrriniIsland/scripts.pory"
 	walk_down
 # 639 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 639 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 639 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 640 "data/maps/MyrriniIsland/scripts.pory"
 	delay_16
-# 640 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 640 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 640 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 640 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 640 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 640 "data/maps/MyrriniIsland/scripts.pory"
+# 641 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_down
 # 641 "data/maps/MyrriniIsland/scripts.pory"
-	face_down
+	walk_fast_down
+# 641 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 641 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 641 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 641 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
 # 642 "data/maps/MyrriniIsland/scripts.pory"
-	step_end
-
-# 644 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_AdminNoticesMara:
-# 646 "data/maps/MyrriniIsland/scripts.pory"
 	face_down
-# 647 "data/maps/MyrriniIsland/scripts.pory"
-	delay_16
-# 648 "data/maps/MyrriniIsland/scripts.pory"
-	emote_exclamation_mark
-# 649 "data/maps/MyrriniIsland/scripts.pory"
-	delay_16
-# 650 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 651 "data/maps/MyrriniIsland/scripts.pory"
-	face_up
-# 652 "data/maps/MyrriniIsland/scripts.pory"
-	jump_in_place_up
-# 653 "data/maps/MyrriniIsland/scripts.pory"
-	face_up
-# 654 "data/maps/MyrriniIsland/scripts.pory"
+# 643 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
-# 656 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_AdminsMoveForBoss:
-# 658 "data/maps/MyrriniIsland/scripts.pory"
+# 645 "data/maps/MyrriniIsland/scripts.pory"
+MyrriniIsland_Movement_AdminNoticesMara:
+# 647 "data/maps/MyrriniIsland/scripts.pory"
+	face_down
+# 648 "data/maps/MyrriniIsland/scripts.pory"
+	delay_16
+# 649 "data/maps/MyrriniIsland/scripts.pory"
+	emote_exclamation_mark
+# 650 "data/maps/MyrriniIsland/scripts.pory"
+	delay_16
+# 651 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_right
-# 658 "data/maps/MyrriniIsland/scripts.pory"
+# 652 "data/maps/MyrriniIsland/scripts.pory"
+	face_up
+# 653 "data/maps/MyrriniIsland/scripts.pory"
+	jump_in_place_up
+# 654 "data/maps/MyrriniIsland/scripts.pory"
+	face_up
+# 655 "data/maps/MyrriniIsland/scripts.pory"
+	step_end
+
+# 657 "data/maps/MyrriniIsland/scripts.pory"
+MyrriniIsland_Movement_AdminsMoveForBoss:
+# 659 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_right
 # 659 "data/maps/MyrriniIsland/scripts.pory"
-	face_left
+	walk_fast_right
 # 660 "data/maps/MyrriniIsland/scripts.pory"
+	face_left
+# 661 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
-# 662 "data/maps/MyrriniIsland/scripts.pory"
+# 663 "data/maps/MyrriniIsland/scripts.pory"
 MyrriniIsland_Movement_PlayerAndThyrsusReposition:
-# 664 "data/maps/MyrriniIsland/scripts.pory"
-	walk_right
 # 665 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
+	walk_right
 # 666 "data/maps/MyrriniIsland/scripts.pory"
-	face_down
+	walk_down
 # 667 "data/maps/MyrriniIsland/scripts.pory"
+	face_down
+# 668 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
-# 669 "data/maps/MyrriniIsland/scripts.pory"
+# 670 "data/maps/MyrriniIsland/scripts.pory"
 MyrriniIsland_Movement_MaraApproaches:
-# 671 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 671 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 671 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 671 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 671 "data/maps/MyrriniIsland/scripts.pory"
+# 672 "data/maps/MyrriniIsland/scripts.pory"
 	walk_up
 # 672 "data/maps/MyrriniIsland/scripts.pory"
-	walk_right
-# 673 "data/maps/MyrriniIsland/scripts.pory"
 	walk_up
+# 672 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 672 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 672 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 673 "data/maps/MyrriniIsland/scripts.pory"
+	walk_right
 # 674 "data/maps/MyrriniIsland/scripts.pory"
-	face_up
+	walk_up
 # 675 "data/maps/MyrriniIsland/scripts.pory"
+	face_up
+# 676 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
-# 677 "data/maps/MyrriniIsland/scripts.pory"
+# 678 "data/maps/MyrriniIsland/scripts.pory"
 MyrriniIsland_Movement_AdminsFlee:
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 679 "data/maps/MyrriniIsland/scripts.pory"
+# 680 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_right
 # 680 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 680 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 680 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 680 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 680 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 680 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 680 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 680 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 681 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
-# 682 "data/maps/MyrriniIsland/scripts.pory"
+# 683 "data/maps/MyrriniIsland/scripts.pory"
 MyrriniIsland_Movement_MaraLeaves:
-# 684 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
 # 685 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 686 "data/maps/MyrriniIsland/scripts.pory"
 	walk_left
-# 686 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 686 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 686 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 686 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 686 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 686 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 686 "data/maps/MyrriniIsland/scripts.pory"
+# 687 "data/maps/MyrriniIsland/scripts.pory"
 	walk_down
 # 687 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 687 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 687 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 687 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 687 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 687 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 688 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
-# 689 "data/maps/MyrriniIsland/scripts.pory"
+# 690 "data/maps/MyrriniIsland/scripts.pory"
 MyrriniIsland_Movement_ThyrsusLeaves:
-# 691 "data/maps/MyrriniIsland/scripts.pory"
+# 692 "data/maps/MyrriniIsland/scripts.pory"
 	walk_up
-# 692 "data/maps/MyrriniIsland/scripts.pory"
-	walk_left
-# 692 "data/maps/MyrriniIsland/scripts.pory"
+# 693 "data/maps/MyrriniIsland/scripts.pory"
 	walk_left
 # 693 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 693 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 693 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 693 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 693 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 693 "data/maps/MyrriniIsland/scripts.pory"
+	walk_left
+# 694 "data/maps/MyrriniIsland/scripts.pory"
 	walk_up
 # 694 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 694 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 694 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 694 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 694 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 695 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
-# 696 "data/maps/MyrriniIsland/scripts.pory"
+# 697 "data/maps/MyrriniIsland/scripts.pory"
 MyrriniIsland_Movement_RaniaLeaves:
-# 698 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 698 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 698 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 698 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 698 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 698 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 698 "data/maps/MyrriniIsland/scripts.pory"
+# 699 "data/maps/MyrriniIsland/scripts.pory"
 	walk_up
 # 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 700 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
 MyrriniIsland_Sign_GymSign_Text_0:

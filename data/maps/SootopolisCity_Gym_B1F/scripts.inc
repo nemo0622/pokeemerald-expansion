@@ -17,7 +17,7 @@ SootopolisCity_Gym_B1F_EventScript_Brianna::
 	end
 
 SootopolisCity_Gym_B1F_EventScript_Connie::
-	trainerbattle_single TRAINER_CONNIE, SootopolisCity_Gym_B1F_Text_ConnieIntro, SootopolisCity_Gym_B1F_Text_ConnieDefeat
+	trainerbattle_single TRAINER_MARMAROMINES_CHIMERA_ADMIN_HARD, SootopolisCity_Gym_B1F_Text_ConnieIntro, SootopolisCity_Gym_B1F_Text_ConnieDefeat
 	msgbox SootopolisCity_Gym_B1F_Text_ConniePostBattle, MSGBOX_AUTOCLOSE
 	end
 

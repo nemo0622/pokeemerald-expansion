@@ -607,10 +607,10 @@ script AcrisiaCity_University_EventScript_Rania
         msgbox(format("Oh, I've been working on a training manual with some helpful information - that might help with the fight against Team Chimera!\p I need a bit more time, I'm just so excited I had to tell someone!"))
         closemessage
     }
-    elif(var(VAR_RANIA_STATE) == 9) // Gym 5 complete, havent completed her quest on Myrrini
+    elif(var(VAR_RANIA_STATE) == 9) // Gym 5 complete, completed Péntepetal questline
     {
         speakername("Rania")
-        msgbox(format("Looks like you've beaten the Gym on Myrrini Island, too!"))
+        msgbox(format("Chaire, {PLAYER}! I hope my training is helping you find the right Pokémon easier.\p Recovering in Péntepetal City was nice, but it's good to be back. I've got plenty of Pokédex data from you to sort through, ehehe!"))
         closemessage
     }
     release

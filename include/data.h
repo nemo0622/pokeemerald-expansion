@@ -176,6 +176,10 @@ extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Palati_M[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Palati_F[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Ancient_M[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Ancient_F[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Johto_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Johto_F[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Alola_M[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Outfit_Alola_F[];
 
 extern const union AffineAnimCmd *const gAffineAnims_BattleSpritePlayerSide[];
 extern const union AffineAnimCmd *const gAffineAnims_BattleSpriteOpponentSide[];

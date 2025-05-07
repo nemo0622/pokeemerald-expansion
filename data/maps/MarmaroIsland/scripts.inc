@@ -531,6 +531,22 @@ MarmaroIsland_EventScript_OldWoman::
 	end
 
 
+MarmaroIsland_EventScript_ChimeraGruntBlockingMine::
+# 361 "data/maps/MarmaroIsland/scripts.pory"
+	lock
+# 362 "data/maps/MarmaroIsland/scripts.pory"
+	faceplayer
+# 363 "data/maps/MarmaroIsland/scripts.pory"
+	speakername MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_0
+# 364 "data/maps/MarmaroIsland/scripts.pory"
+	msgbox MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_1
+# 365 "data/maps/MarmaroIsland/scripts.pory"
+	closemessage
+# 366 "data/maps/MarmaroIsland/scripts.pory"
+	release
+	end
+
+
 MarmaroIsland_EventScript_PiraeusVaporeon_Text_0:
 # 28 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Vaporeon$"
@@ -799,3 +815,14 @@ MarmaroIsland_EventScript_OldWoman_Text_1:
 	.string "That's why there are bridges\l"
 	.string "connecting some areas, and boat\l"
 	.string "services are common.$"
+
+MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_0:
+# 363 "data/maps/MarmaroIsland/scripts.pory"
+	.string "Chimera Grunt$"
+
+MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_1:
+# 364 "data/maps/MarmaroIsland/scripts.pory"
+	.string "Uhh, hey there, bud! There's been\n"
+	.string "reports of... big, scary monsters in the\l"
+	.string "Marmaro Mines! Yeah, you don't want to\l"
+	.string "go in here! Now, move along.$"

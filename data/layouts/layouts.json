@@ -5510,6 +5510,16 @@
       "secondary_tileset": "gTileset_SofosGym",
       "border_filepath": "data/layouts/MyrriniIsland_Gym/border.bin",
       "blockdata_filepath": "data/layouts/MyrriniIsland_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_MARMARO_MINES",
+      "name": "MarmaroMines_Layout",
+      "width": 19,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MarmaroMines/border.bin",
+      "blockdata_filepath": "data/layouts/MarmaroMines/map.bin"
     }
   ]
 }

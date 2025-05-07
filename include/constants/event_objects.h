@@ -439,10 +439,46 @@
 #define OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_WATERING      414
 #define OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_DECORATING    415
 
+// Outfit: Johto M and F
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_M_NORMAL        416
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_M_SURFING       417
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_M_FIELD_MOVE    418
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_M_ACRO_BIKE     419
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_M_UNDERWATER    420
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_M_FISHING       421
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_M_WATERING      422
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_M_DECORATING    423
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_F_NORMAL        424
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_F_SURFING       425
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_F_FIELD_MOVE    426
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_F_ACRO_BIKE     427
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_F_UNDERWATER    428
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_F_FISHING       429
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_F_WATERING      430
+#define OBJ_EVENT_GFX_OUTFIT_JOHTO_F_DECORATING    431
+
+// Outfit: Alola M and F
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_M_NORMAL        432
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_M_SURFING       433
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_M_FIELD_MOVE    434
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_M_ACRO_BIKE     435
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_M_UNDERWATER    436
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_M_FISHING       437
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_M_WATERING      438
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_M_DECORATING    439
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_F_NORMAL        440
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_F_SURFING       441
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_F_FIELD_MOVE    442
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_F_ACRO_BIKE     443
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_F_UNDERWATER    444
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_F_FISHING       445
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_F_WATERING      446
+#define OBJ_EVENT_GFX_OUTFIT_ALOLA_F_DECORATING    447
+
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        416
+#define NUM_OBJ_EVENT_GFX                        448
 
 
 // These are dynamic object gfx ids.
@@ -594,6 +630,8 @@
 #define OBJ_EVENT_PAL_TAG_OUTFIT_PETAL            0x1132 // palette for petal outfits
 #define OBJ_EVENT_PAL_TAG_OUTFIT_PALATI           0x1133 // palette for palati outfits
 #define OBJ_EVENT_PAL_TAG_OUTFIT_ANCIENT          0x1134 // palette for ancient outfits
+#define OBJ_EVENT_PAL_TAG_OUTFIT_JOHTO            0x1135 // palette for johto outfits
+#define OBJ_EVENT_PAL_TAG_OUTFIT_ALOLA            0x1136 // palette for alola outfits
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

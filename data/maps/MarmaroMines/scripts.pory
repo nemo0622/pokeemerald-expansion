@@ -1,0 +1,222 @@
+mapscripts MarmaroMines_MapScripts {}
+
+script MarmaroMines_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    if(!flag(FLAG_HIDE_CHIMERA_GRUNTS_MARMARO_MINES)) // chimera in the mines!
+    {
+        msgbox(format("These Team Chimera thugs are gettin' in the way of our work! I'd fight 'em, but they're just too strong."))
+    }
+    else
+    {
+        msgbox(format("Now that Team Chimera is finally gone, we can get back to mining!"))
+    }
+    closemessage
+    release
+    end
+}
+
+script MarmaroMines_EventScript_Triathlete
+{
+    lock
+    faceplayer
+    speakername("Triathlete")
+    if(!flag(FLAG_HIDE_CHIMERA_GRUNTS_MARMARO_MINES)) // chimera in the mines!
+    {
+        msgbox(format("I came here to train, but these Team Chimera guys are awfully scary... Their Pokémon caused this rockslide blocking the path!"))
+    }
+    else
+    {
+        msgbox(format("I'm back to training! Moving and pushing heavy rocks is a great way to build muscle!"))
+    }
+    closemessage
+    release
+    end
+}
+
+script MarmaroMines_EventScript_Trainer_MarmaroMines_Grunt_1
+{
+    trainerbattle_single(TRAINER_MARMAROMINES_GRUNT_1, MarmaroMines_Text_Trainer_MarmaroMines_Grunt_1Intro, MarmaroMines_Text_Trainer_MarmaroMines_Grunt_1Defeat)
+    speakername("Chimera Grunt")
+    msgbox(format("Most of the mine fell in during the Admin's battle with Petros, the owner of the mine. Still, we're getting what we came here for!"))
+    closemessage
+    release
+    end
+}
+text MarmaroMines_Text_Trainer_MarmaroMines_Grunt_1Intro
+{
+    format("We were warned about you! You're going down!")
+}
+text MarmaroMines_Text_Trainer_MarmaroMines_Grunt_1Defeat
+{
+    format("Woah, you're serious...")
+}
+
+script MarmaroMines_EventScript_Trainer_MarmaroMines_Grunt_2
+{
+    trainerbattle_single(TRAINER_MARMAROMINES_GRUNT_2, MarmaroMines_Text_Trainer_MarmaroMines_Grunt_2Intro, MarmaroMines_Text_Trainer_MarmaroMines_Grunt_2Defeat)
+    speakername("Chimera Grunt")
+    msgbox(format("The Ancient Mechanism was made of two pieces. Part was found off the coast of Kaptara Island, which we've already acquired. Now, with the other half... kahaha!"))
+    closemessage
+    release
+    end
+}
+text MarmaroMines_Text_Trainer_MarmaroMines_Grunt_2Intro
+{
+    format("Fwahaha, you're too late! One of our Admins took the Ancient Mechanism fragment away already!")
+}
+text MarmaroMines_Text_Trainer_MarmaroMines_Grunt_2Defeat
+{
+    format("Still, we were told to fight you off!")
+}
+
+script MarmaroMines_EventScript_ChimeraAdminEvent
+{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    applymovement(6, Common_Movement_JumpInPlaceUp)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("Heh, you really thought you could hide the Ancient Mechanism fragment from us? Petros, I know you're a miner, but you really have rocks for brains.\p Let's end this. Arcanine, use-"))
+    closemessage
+    applymovement(6, Common_Movement_QuestionMark)
+    waitmovement(0)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(6, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("Fwahaha, unbelievable! {PLAYER}, of course you'd be here... but you're too late! The other Admin has already {COLOR GREEN}escaped{COLOR DARK_GRAY} on her Mamoswine with the {COLOR GREEN}Ancient Mechanism fragment{COLOR DARK_GRAY} that was buried here.\p Hm? You want to know more about that? Heh, I wouldn't worry about it. This battle will bring the mines down on you!"))
+    closemessage
+
+    if(!flag(FLAG_HARD_MODE))
+    {
+        trainerbattle_no_intro(TRAINER_MARMAROMINES_CHIMERA_ADMIN, MarmaroMines_Text_ChimeraAdminDefeated)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_MARMAROMINES_CHIMERA_ADMIN_HARD, MarmaroMines_Text_ChimeraAdminDefeated)
+    }
+
+    delay(10)
+    speakername("Chimera Admin")
+    msgbox(format("The other Admin has surely made it off the island with the Ancient Mechanism fragment by now. I just needed to hold you off for a bit!\p The Ancient Mechanism was divided into two parts, being lost thousands of years ago. The first piece was found underwater near Kaptara Island, which we quietly picked up a few years ago. Now, with both pieces, we can finally use the Mechanism!\p Heh, why am I wasting my time explaining our plans to the likes of you? I'm out of here!"))
+    closemessage
+    applymovement(6, MarmaroMines_Movement_AdminLeaves)
+    applymovement(7, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(7, MarmaroMines_Movement_AdminLeaves)
+    waitmovement(0)
+    delay(10)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    delay(10)
+    speakername("Petros")
+    msgbox(format("Phew, that was a close call. All my Pokémon are on the brink of fainting, so a few more minutes with that Admin and his Arcanine would've left me defenseless.\p Right, I'm {COLOR GREEN}Petros{COLOR DARK_GRAY}, the manager of the Marmaro Mines. I'm worried about what Team Chimera is planning with that Ancient Mechanism, but right now, I have a more pressing matter here - that Admin ended up {COLOR GREEN}collapsing most of the mines{COLOR DARK_GRAY} during our battles!\p You're already helped us so much, so I hesitate to ask... but if you want to {COLOR GREEN}help us continue mining{COLOR DARK_GRAY}, we'd be more than happy to have you! You can {COLOR GREEN}keep any treasures dug up{COLOR DARK_GRAY}, too!\p Just {COLOR GREEN}speak to me{COLOR DARK_GRAY} if you're interested."))
+    closemessage
+
+    removeobject(2)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    setflag(FLAG_HIDE_CHIMERA_GRUNTS_MARMARO_MINES)
+
+    delay(10)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    applymovement(4, MarmaroMines_Movement_TriathleteGivesDive)
+    waitmovement(0)
+    speakername("Triathlete")
+    msgbox(format("Hey, so like, thanks for saving us! If you're a strong Trainer, you probably want to head south towards the {COLOR GREEN}Fresco Isles{COLOR DARK_GRAY} for the sixth Gym, right? You'll probably need this, then."))
+    closemessage
+    delay(5)
+    giveitem(ITEM_HM_DIVE)
+    closemessage
+    delay(5)
+    speakername("Triathlete")
+    msgbox(format("With {COLOR GREEN}Dive{COLOR DARK_GRAY}, you can explore underwater areas. For people who swim or Surf, the {COLOR GREEN}only way south to the Fresco Isles is by Diving{COLOR DARK_GRAY}. I don't need the HM anymore, because I've already mastered swimming!"))
+    closemessage
+    applymovement(4, MarmaroMines_Movement_TriathleteReturns)
+    waitmovement(0)
+
+    delay(20)
+    completequest(QUEST_FREE_MARMARO_MINES)
+    delay(20)
+    msgbox(format("The {COLOR GREEN}Marmaro Mines Minigame{COLOR DARK_GRAY} has been unlocked! Speak to {COLOR GREEN}Petros{COLOR DARK_GRAY} to participate."))
+    closemessage
+    releaseall
+    end
+}
+text MarmaroMines_Text_ChimeraAdminDefeated
+{
+    format("ARGH! HOW - hrmph, it doesn't matter, anyway.")
+}
+movement MarmaroMines_Movement_AdminLeaves
+{
+    walk_down
+    walk_right
+    walk_down * 7
+    step_end
+}
+movement MarmaroMines_Movement_TriathleteGivesDive
+{
+    walk_left * 2
+    walk_up * 2
+    walk_left
+    walk_up
+    step_end
+}
+movement MarmaroMines_Movement_TriathleteReturns
+{
+    walk_down
+    walk_right
+    walk_down * 2
+    walk_right * 2
+    face_down
+    step_end
+}
+
+// ------------------------------------- MINING MINIGAME ----------------------------------------
+
+script MarmaroMines_EventScript_Petros
+{
+    lock
+    faceplayer
+    speakername("Petros")
+    msgbox(format("Chaire, {PLAYER}! Good to see your face around here. Are you interested in a {COLOR GREEN}mining expedition{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+    closemessage
+    delay(5)
+    if(var(VAR_RESULT) == FALSE)
+    {
+        speakername("Petros")
+        msgbox(format("Alright. Come on back when you want to go mining."))
+        closemessage
+        release
+        end
+    }
+    else
+    {
+        speakername("Petros")
+        msgbox(format("Great! There's a nice spot just nearby. Follow me!"))
+        closemessage
+
+        // START MINING MINIGAME!
+    }
+    release
+    end
+}
+
+script MarmaroMines_EventScript_MinigameRulesSign
+{
+    lock
+    msgbox(format("Marmaro Mining Expedition Rules\p Use the Hammer and Pick tools to break through the layers of stone. A wide variety of treasures and minerals can be found. {PLAYER} is permitted to keep these treasures on account of their bravery during the raid by Team Chimera.\p Mining spots are fragile, breaking down with every swing of a tool. After enough hits, the wall will collapse, and all treasures that were not excavated will be lost. Please, be careful and enjoy!"))
+    closemessage
+    release
+    end
+}

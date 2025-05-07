@@ -355,3 +355,14 @@ script MarmaroIsland_EventScript_OldWoman
     release
     end
 }
+
+script MarmaroIsland_EventScript_ChimeraGruntBlockingMine
+{
+    lock
+    faceplayer
+    speakername("Chimera Grunt")
+    msgbox(format("Uhh, hey there, bud! There's been reports of... big, scary monsters in the Marmaro Mines! Yeah, you don't want to go in here! Now, move along."))
+    closemessage
+    release
+    end
+}

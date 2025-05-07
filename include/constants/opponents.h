@@ -128,10 +128,10 @@
 #define TRAINER_MYRRINIGYM_ALMA                     122
 #define TRAINER_LEADER_THYRSUS                     123
 #define TRAINER_LEADER_THYRSUS_HARD                     124
-#define TRAINER_SHEILA                      125
-#define TRAINER_SHIRLEY                     126
-#define TRAINER_JESSICA_1                   127
-#define TRAINER_CONNIE                      128
+#define TRAINER_MARMAROMINES_GRUNT_1                      125
+#define TRAINER_MARMAROMINES_GRUNT_2                     126
+#define TRAINER_MARMAROMINES_CHIMERA_ADMIN                   127
+#define TRAINER_MARMAROMINES_CHIMERA_ADMIN_HARD                      128
 #define TRAINER_BRIDGET                     129
 #define TRAINER_OLIVIA                      130
 #define TRAINER_TIFFANY                     131

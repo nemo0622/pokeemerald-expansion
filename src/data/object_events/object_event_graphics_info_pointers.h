@@ -435,6 +435,40 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Anci
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_FWatering;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Ancient_FDecorating;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_MNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_MSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_MFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_MAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_MUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_MFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_MWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_MDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_FNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_FSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_FFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_FAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_FUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_FFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_FWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Johto_FDecorating;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_MNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_MSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_MFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_MAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_MUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_MFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_MWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_MDecorating;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_FNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_FSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_FFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_FAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_FUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_FFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_FWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Outfit_Alola_FDecorating;
+
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -853,6 +887,38 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_FISHING] = &gObjectEventGraphicsInfo_Outfit_Ancient_FFishing,
     [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_WATERING] = &gObjectEventGraphicsInfo_Outfit_Ancient_FWatering,
     [OBJ_EVENT_GFX_OUTFIT_ANCIENT_F_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Ancient_FDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_M_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Johto_MNormal,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_M_SURFING] = &gObjectEventGraphicsInfo_Outfit_Johto_MSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_M_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Johto_MFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_M_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Johto_MAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_M_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Johto_MUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_M_FISHING] = &gObjectEventGraphicsInfo_Outfit_Johto_MFishing,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_M_WATERING] = &gObjectEventGraphicsInfo_Outfit_Johto_MWatering,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_M_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Johto_MDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_F_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Johto_FNormal,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_F_SURFING] = &gObjectEventGraphicsInfo_Outfit_Johto_FSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_F_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Johto_FFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_F_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Johto_FAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_F_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Johto_FUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_F_FISHING] = &gObjectEventGraphicsInfo_Outfit_Johto_FFishing,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_F_WATERING] = &gObjectEventGraphicsInfo_Outfit_Johto_FWatering,
+    [OBJ_EVENT_GFX_OUTFIT_JOHTO_F_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Johto_FDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_M_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Alola_MNormal,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_M_SURFING] = &gObjectEventGraphicsInfo_Outfit_Alola_MSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_M_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Alola_MFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_M_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Alola_MAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_M_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Alola_MUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_M_FISHING] = &gObjectEventGraphicsInfo_Outfit_Alola_MFishing,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_M_WATERING] = &gObjectEventGraphicsInfo_Outfit_Alola_MWatering,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_M_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Alola_MDecorating,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_NORMAL] = &gObjectEventGraphicsInfo_Outfit_Alola_FNormal,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_SURFING] = &gObjectEventGraphicsInfo_Outfit_Alola_FSurfing,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_FIELD_MOVE] = &gObjectEventGraphicsInfo_Outfit_Alola_FFieldMove,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_ACRO_BIKE] = &gObjectEventGraphicsInfo_Outfit_Alola_FAcroBike,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_UNDERWATER] = &gObjectEventGraphicsInfo_Outfit_Alola_FUnderwater,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_FISHING] = &gObjectEventGraphicsInfo_Outfit_Alola_FFishing,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_WATERING] = &gObjectEventGraphicsInfo_Outfit_Alola_FWatering,
+    [OBJ_EVENT_GFX_OUTFIT_ALOLA_F_DECORATING] = &gObjectEventGraphicsInfo_Outfit_Alola_FDecorating,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

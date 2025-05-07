@@ -42,9 +42,17 @@ static const u8 sText_OutfitName_Ancient[] = _("Ancient War Armor");
 static const u8 sText_OutfitDesc_Ancient[] = _(
     "Armor worn by legendary warriors \nfrom Ancient Ilios.");
 
+static const u8 sText_OutfitName_JohtoFashion[] = _("Johto Fashion");
+static const u8 sText_OutfitDesc_JohtoFashion[] = _(
+    "Resembles the hero who \ntraveled the Johto Region.");
+
 static const u8 sText_OutfitName_KalosFashion[] = _("Kalos Fashion");
 static const u8 sText_OutfitDesc_KalosFashion[] = _(
     "Resembles the hero who \nsaved the Kalos Region.");
+
+static const u8 sText_OutfitName_AlolaFashion[] = _("Alolan Fashion");
+static const u8 sText_OutfitDesc_AlolaFashion[] = _(
+    "Resembles the hero who \nsaved the Alola Region.");
 
 // Male outfit Region Map Icons
 static const u16 sRegionMapPlayerIcon_BrendanGfx[] = INCBIN_U16("graphics/pokenav/region_map/brendan_icon.4bpp");
@@ -57,7 +65,9 @@ static const u16 sRegionMapPlayerIcon_Zookeeper_M[] = INCBIN_U16("graphics/poken
 static const u16 sRegionMapPlayerIcon_Petal_M[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_petal_m_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Palati_M[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_palati_m_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Ancient_M[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_ancient_m_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_Johto_M[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_johto_m_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Calem[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_calem_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_Alola_M[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_alola_m_icon.4bpp");
 
 // Female outfit Region Map Icons
 static const u16 sRegionMapPlayerIcon_MayGfx[] = INCBIN_U16("graphics/pokenav/region_map/may_icon.4bpp");
@@ -70,7 +80,9 @@ static const u16 sRegionMapPlayerIcon_Zookeeper_F[] = INCBIN_U16("graphics/poken
 static const u16 sRegionMapPlayerIcon_Petal_F[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_petal_f_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Palati_F[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_palati_f_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Ancient_F[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_ancient_f_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_Johto_F[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_johto_f_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_Serena[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_serena_icon.4bpp");
+static const u16 sRegionMapPlayerIcon_Alola_F[] = INCBIN_U16("graphics/pokenav/region_map/outfit_icons/outfit_alola_f_icon.4bpp");
 
 static const u8 sFrontierPassPlayerIcons_XMarks[] = INCBIN_U8("graphics/frontier_pass/map_heads.4bpp");
 
@@ -523,6 +535,48 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .iconsRM = { sRegionMapPlayerIcon_Ancient_M, sRegionMapPlayerIcon_Ancient_F },
         .iconsFP = sFrontierPassPlayerIcons_XMarks,
     },
+    [OUTFIT_JOHTO_FASHION] = {
+        .isHidden = TRUE,
+        .prices = { 0, 0 },
+        .name = sText_OutfitName_JohtoFashion,
+        .desc = sText_OutfitDesc_JohtoFashion,
+        .trainerPics = {
+            [MALE]   = {TRAINER_PIC_OUTFIT_JOHTO_M, TRAINER_BACK_PIC_OUTFIT_JOHTO_M},
+            [FEMALE] = {TRAINER_PIC_OUTFIT_JOHTO_F, TRAINER_BACK_PIC_OUTFIT_JOHTO_F}
+        },
+        .avatarGfxIds = {
+           [MALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_OUTFIT_JOHTO_M_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_OUTFIT_JOHTO_M_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_OUTFIT_JOHTO_M_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_OUTFIT_JOHTO_M_UNDERWATER
+           },
+           [FEMALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_OUTFIT_JOHTO_F_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_OUTFIT_JOHTO_F_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_OUTFIT_JOHTO_F_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_OUTFIT_JOHTO_F_UNDERWATER
+           },
+        },
+        .animGfxIds = {
+            [MALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_OUTFIT_JOHTO_M_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_OUTFIT_JOHTO_M_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_OUTFIT_JOHTO_M_WATERING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_OUTFIT_JOHTO_M_DECORATING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_OUTFIT_JOHTO_M_FIELD_MOVE
+            },
+            [FEMALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_OUTFIT_JOHTO_F_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_OUTFIT_JOHTO_F_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_OUTFIT_JOHTO_F_WATERING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_OUTFIT_JOHTO_F_DECORATING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_OUTFIT_JOHTO_F_FIELD_MOVE
+            },
+        },
+        .iconsRM = { sRegionMapPlayerIcon_Johto_M, sRegionMapPlayerIcon_Johto_F },
+        .iconsFP = sFrontierPassPlayerIcons_XMarks,
+    },
     [OUTFIT_KALOS_FASHION] = {
         .isHidden = TRUE,
         .prices = { 0, 0 },
@@ -564,5 +618,47 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         },
         .iconsRM = { sRegionMapPlayerIcon_Calem, sRegionMapPlayerIcon_Serena },
         .iconsFP = sFrontierPassPlayerIcons_XMarks, 
+    },
+    [OUTFIT_ALOLA_FASHION] = {
+        .isHidden = TRUE,
+        .prices = { 0, 0 },
+        .name = sText_OutfitName_AlolaFashion,
+        .desc = sText_OutfitDesc_AlolaFashion,
+        .trainerPics = {
+            [MALE]   = {TRAINER_PIC_OUTFIT_ALOLA_M, TRAINER_BACK_PIC_OUTFIT_ALOLA_M},
+            [FEMALE] = {TRAINER_PIC_OUTFIT_ALOLA_F, TRAINER_BACK_PIC_OUTFIT_ALOLA_F}
+        },
+        .avatarGfxIds = {
+           [MALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_OUTFIT_ALOLA_M_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_OUTFIT_ALOLA_M_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_OUTFIT_ALOLA_M_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_OUTFIT_ALOLA_M_UNDERWATER
+           },
+           [FEMALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_OUTFIT_ALOLA_F_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_OUTFIT_ALOLA_F_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_OUTFIT_ALOLA_F_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_OUTFIT_ALOLA_F_UNDERWATER
+           },
+        },
+        .animGfxIds = {
+            [MALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_OUTFIT_ALOLA_M_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_OUTFIT_ALOLA_M_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_OUTFIT_ALOLA_M_WATERING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_OUTFIT_ALOLA_M_DECORATING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_OUTFIT_ALOLA_M_FIELD_MOVE
+            },
+            [FEMALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_OUTFIT_ALOLA_F_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_OUTFIT_ALOLA_F_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_OUTFIT_ALOLA_F_WATERING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_OUTFIT_ALOLA_F_DECORATING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_OUTFIT_ALOLA_F_FIELD_MOVE
+            },
+        },
+        .iconsRM = { sRegionMapPlayerIcon_Alola_M, sRegionMapPlayerIcon_Alola_F },
+        .iconsFP = sFrontierPassPlayerIcons_XMarks,
     },
 };

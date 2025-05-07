@@ -2487,8 +2487,13 @@ AcrisiaCity_University_EventScript_Rania_Text_10:
 
 AcrisiaCity_University_EventScript_Rania_Text_11:
 # 613 "data/maps/AcrisiaCity_University/scripts.pory"
-	.string "Looks like you've beaten the Gym on\n"
-	.string "Myrrini Island, too!$"
+	.string "Chaire, {PLAYER}! I hope my training\n"
+	.string "is helping you find the right Pokémon\l"
+	.string "easier.\p"
+	.string "Recovering in Péntepetal City was nice,\n"
+	.string "but it's good to be back. I've got\l"
+	.string "plenty of Pokédex data from you to\l"
+	.string "sort through, ehehe!$"
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_0:
 # 655 "data/maps/AcrisiaCity_University/scripts.pory"

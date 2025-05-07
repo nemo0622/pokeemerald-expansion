@@ -1710,6 +1710,7 @@ static const struct LevelUpMove sGrowlitheHisuianLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sArcanineHisuianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_ACCELEROCK),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_ROAR),
     LEVEL_UP_MOVE( 6, MOVE_EMBER),

@@ -208,6 +208,7 @@
 #define MAP_MYRRINI_ISLAND_HOUSE5             (16 | (7 << 8))
 #define MAP_MYRRINI_ISLAND_MART               (17 | (7 << 8))
 #define MAP_MYRRINI_ISLAND_GYM                (18 | (7 << 8))
+#define MAP_MARMARO_MINES                     (19 | (7 << 8))
 
 // gMapGroup_IndoorPetalburg
 #define MAP_PETALBURG_CITY_WALLYS_HOUSE      (0 | (8 << 8))

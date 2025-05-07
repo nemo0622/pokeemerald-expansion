@@ -1309,8 +1309,8 @@
 #define FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY                          0x4E8 // Hides Rania in Acrisia University if she's supposed to be elsewhere
 #define FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND                      0x4E9 // Hides Chimera Event objects (Rania, Chimera admins, Mara) on Myrrini Island - shown during fight with Team Chimera
 #define FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND       0x4EA // Separate flag to hide Thyrsus during event above
-#define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
-#define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
+#define FLAG_HIDE_CHIMERA_GRUNTS_MARMARO_MINES                      0x4EB // Hides the Chimera Grunts in the Marmaro Mines after they are defeated
+#define FLAG_HIDE_GRUNT_BLOCKING_MARMARO_MINES                      0x4EC // Specifically hides the chimera grunt blocking the Marmaro Mines
 #define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
 #define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
 #define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag

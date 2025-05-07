@@ -136,7 +136,11 @@
 #define TRAINER_PIC_OUTFIT_PALATI_F       118
 #define TRAINER_PIC_OUTFIT_ANCIENT_M      119
 #define TRAINER_PIC_OUTFIT_ANCIENT_F      120
-#define TRAINER_PIC_COUNT                 121
+#define TRAINER_PIC_OUTFIT_JOHTO_M        121
+#define TRAINER_PIC_OUTFIT_JOHTO_F        122
+#define TRAINER_PIC_OUTFIT_ALOLA_M        123
+#define TRAINER_PIC_OUTFIT_ALOLA_F        124
+#define TRAINER_PIC_COUNT                 125
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -167,6 +171,10 @@
 #define TRAINER_BACK_PIC_OUTFIT_PALATI_F        25
 #define TRAINER_BACK_PIC_OUTFIT_ANCIENT_M       26
 #define TRAINER_BACK_PIC_OUTFIT_ANCIENT_F       27
+#define TRAINER_BACK_PIC_OUTFIT_JOHTO_M         28
+#define TRAINER_BACK_PIC_OUTFIT_JOHTO_F         29
+#define TRAINER_BACK_PIC_OUTFIT_ALOLA_M         30
+#define TRAINER_BACK_PIC_OUTFIT_ALOLA_F         31
 
 #define FACILITY_CLASS_HIKER                 0x0
 #define FACILITY_CLASS_AQUA_GRUNT_M          0x1

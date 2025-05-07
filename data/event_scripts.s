@@ -1843,3 +1843,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/MyrriniIsland_Mart/scripts.inc"
 
 	.include "data/maps/MyrriniIsland_Gym/scripts.inc"
+
+	.include "data/maps/MarmaroMines/scripts.inc"
