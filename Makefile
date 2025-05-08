@@ -480,9 +480,16 @@ $(OBJ_DIR)/sym_common.ld: sym_common.txt $(C_OBJS) $(wildcard common_syms/*.txt)
 $(OBJ_DIR)/sym_ewram.ld: sym_ewram.txt
 	$(RAMSCRGEN) ewram_data $< ENGLISH > $@
 
+MINING_DEPS := $(shell find graphics/mining_minigame/items/ -type f -name '*.4bpp') \
+               $(shell find graphics/mining_minigame/stones/ -type f -name '*.4bpp') \
+			   tools/mining_minigame/table.json
+
 # NOTE: Depending on event_scripts.o is hacky, but we want to depend on everything event_scripts.s depends on without having to alter scaninc
 $(DATA_SRC_SUBDIR)/pokemon/teachable_learnsets.h: $(DATA_ASM_BUILDDIR)/event_scripts.o
 	python3 tools/learnset_helpers/teachable.py
+
+$(DATA_SRC_SUBDIR)/mining_minigame.h: $(MINING_DEPS)
+	python3 tools/mining_minigame/analyze_sprites.py
 
 # NOTE: Based on C_DEP above, but without NODEP and KEEP_TEMPS handling.
 define TEST_DEP

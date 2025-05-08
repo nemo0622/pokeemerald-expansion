@@ -63,10 +63,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- REPLACE "Triathlete" with "Competitor" or something close to "Olympic Player"
-- Continue Mapping and NPC development
-    - Myrrini Island interiors
-        - Gym: "Wine Festival" themed ?
+- Continue Mapping and NPC development\
     - DIVE MAPS! Add a Pearl String item underwater for quest
 - EXPAND POKéDEX
     - Up to 450 total species! Add the following:
@@ -75,6 +72,15 @@ MAJOR TODOS:
     - Flamigo (SageDeoxys sprites)
     - Sizzlipede (SageDeoxys sprites)
     - Drampa
+    - Shieldon and Cranidos (Rock/Fighting type!) lines!! Only obtainable via Mining Minigame ooo!
+        - Also add a Fossil Restoration building somewhere, maybe in the Fresco Isles?
+        - Revived Fossil Pokémon have a chance to have special moves, either from Egg moves or manually determined
+        (ex: revived Archen could have Roost, which it doesn't learn in the wild)
+            - Provides incentive to revive fossil Pokémon in addition/alternatively to finding them in the wild
+    - Spiritomb (Odd Keystone from Mining Minigame)
+- MINING MINIGAME ITEM REPLACEMENTS
+    - Replace Damp Rock, Heat Rock, Icy Rock, and Smooth Rock with the Gen 5 and Gen 6 fossils
+    - Replace Oval Stone with Black Augarite
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas:

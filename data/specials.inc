@@ -571,3 +571,4 @@ gSpecials::
 	def_special ShowSpeciesZooInfoWindow
 	def_special CloseSpeciesZooInfoWindow
 	def_special DestroyVirtualObjects
+	def_special StartMining
