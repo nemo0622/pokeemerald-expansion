@@ -5,6 +5,9 @@ static const int SpriteTileTable[][16] = {
     [MININGID_OVAL_STONE] = {
       1,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,
     },
+    [MININGID_JAW_FOSSIL] = {
+      1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+    },
     [MININGID_HEART_SCALE] = {
       1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
     },
@@ -19,6 +22,15 @@ static const int SpriteTileTable[][16] = {
     },
     [MININGID_LEAF_STONE] = {
       0,1,0,0,1,1,1,0,1,1,1,0,0,1,0,0,
+    },
+    [MININGID_COVER_FOSSIL] = {
+      1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,
+    },
+    [MININGID_PLUME_FOSSIL] = {
+      1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,
+    },
+    [MININGID_SAIL_FOSSIL] = {
+      1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
     },
     [MININGID_ARMOR_FOSSIL] = {
       1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -35,14 +47,8 @@ static const int SpriteTileTable[][16] = {
     [MININGID_SUN_STONE] = {
       0,1,0,0,1,1,1,0,1,1,1,0,0,0,0,0,
     },
-    [MININGID_DAMP_ROCK] = {
-      1,1,1,0,1,1,1,0,1,0,1,0,0,0,0,0,
-    },
     [MININGID_REVIVE] = {
       0,1,0,0,1,1,1,0,0,1,0,0,0,0,0,0,
-    },
-    [MININGID_ICY_ROCK] = {
-      0,1,1,0,1,1,1,1,1,1,1,1,1,0,0,1,
     },
     [MININGID_BLUE_SHARD] = {
       1,1,1,0,1,1,1,0,1,1,0,0,0,0,0,0,
@@ -56,14 +62,8 @@ static const int SpriteTileTable[][16] = {
     [MININGID_SKULL_FOSSIL] = {
       1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,
     },
-    [MININGID_HEAT_ROCK] = {
-      1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,0,
-    },
     [MININGID_HARD_STONE] = {
       1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
-    },
-    [MININGID_SMOOTH_ROCK] = {
-      0,0,1,0,1,1,1,0,0,1,1,1,0,1,0,0,
     },
     [MININGID_STAR_PIECE] = {
       0,1,0,0,1,1,1,0,0,1,0,0,0,0,0,0,

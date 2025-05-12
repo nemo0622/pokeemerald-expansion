@@ -547,6 +547,18 @@ MarmaroIsland_EventScript_ChimeraGruntBlockingMine::
 	end
 
 
+MarmaroIsland_EventScript_FossilHouseSign::
+# 372 "data/maps/MarmaroIsland/scripts.pory"
+	lock
+# 373 "data/maps/MarmaroIsland/scripts.pory"
+	msgbox MarmaroIsland_EventScript_FossilHouseSign_Text_0
+# 374 "data/maps/MarmaroIsland/scripts.pory"
+	closemessage
+# 375 "data/maps/MarmaroIsland/scripts.pory"
+	release
+	end
+
+
 MarmaroIsland_EventScript_PiraeusVaporeon_Text_0:
 # 28 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Vaporeon$"
@@ -826,3 +838,10 @@ MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_1:
 	.string "reports of... big, scary monsters in the\l"
 	.string "Marmaro Mines! Yeah, you don't want to\l"
 	.string "go in here! Now, move along.$"
+
+MarmaroIsland_EventScript_FossilHouseSign_Text_0:
+# 373 "data/maps/MarmaroIsland/scripts.pory"
+	.string "There's a message freshly painted on\n"
+	.string "the sign...\p"
+	.string "Marmaro Paleo-Fossil Services!\n"
+	.string "For all your Fossil and Spirit needs.$"

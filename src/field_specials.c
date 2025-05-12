@@ -6935,6 +6935,220 @@ u8 CheckZooDonationValidity(u16 species)
                     break;
             }
             break;
+        case SPECIES_CHIKORITA:
+        case SPECIES_BAYLEEF:
+        case SPECIES_MEGANIUM:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 41:
+                case 42:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CYNDAQUIL:
+        case SPECIES_QUILAVA:
+        case SPECIES_TYPHLOSION:
+            switch(donationSlotId)
+            {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TYPHLOSION_HISUIAN:
+            switch(donationSlotId)
+            {
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_TOTODILE:
+        case SPECIES_CROCONAW:
+        case SPECIES_FERALIGATR:
+            switch(donationSlotId)
+            {
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 43:
+                case 44:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_JANGMO_O:
+        case SPECIES_HAKAMO_O:
+        case SPECIES_KOMMO_O:
+            switch(donationSlotId)
+            {
+                case 6:
+                case 7:
+                case 8:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 35:
+                case 36:
+                case 39:
+                case 40:
+                case 41:
+                case 42:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_FLAMIGO:
+            switch(donationSlotId)
+            {
+                case 5:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 35:
+                case 36:
+                case 45:
+                case 46:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SIZZLIPEDE:
+        case SPECIES_CENTISKORCH:
+            switch(donationSlotId)
+            {
+                case 12:
+                case 13:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_CRANIDOS:
+        case SPECIES_RAMPARDOS:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 6:
+                case 7:
+                case 8:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 41:
+                case 42:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SHIELDON:
+        case SPECIES_BASTIODON:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 41:
+                case 42:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_SPIRITOMB:
+            switch(donationSlotId)
+            {
+                case 28:
+                case 29:
+                case 37:
+                case 38:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
         case SPECIES_ELECTRIKE:
         case SPECIES_MANECTRIC:
             switch(donationSlotId)

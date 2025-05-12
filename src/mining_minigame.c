@@ -622,8 +622,7 @@ static const u16 gItemRevivePal[] = INCBIN_U16("graphics/mining_minigame/items/r
 static const u32 gItemStarPieceGfx[] = INCBIN_U32("graphics/mining_minigame/items/star_piece.4bpp.lz");
 static const u16 gItemStarPiecePal[] = INCBIN_U16("graphics/mining_minigame/items/star_piece.gbapal");
 
-static const u32 gItemDampRockGfx[] = INCBIN_U32("graphics/mining_minigame/items/damp_rock.4bpp.lz");
-static const u16 gItemDampRockPal[] = INCBIN_U16("graphics/mining_minigame/items/damp_rock.gbapal");
+static const u32 gItemCoverFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/cover_fossil.4bpp.lz"); // replaces DampRock
 
 static const u32 gItemRedShardGfx[] = INCBIN_U32("graphics/mining_minigame/items/red_shard.4bpp.lz");
 static const u16 gItemRedShardPal[] = INCBIN_U16("graphics/mining_minigame/items/red_shard.gbapal");
@@ -652,14 +651,11 @@ static const u16 gItemOvalStonePal[] = INCBIN_U16("graphics/mining_minigame/item
 static const u32 gItemLightClayGfx[] = INCBIN_U32("graphics/mining_minigame/items/light_clay.4bpp.lz");
 static const u16 gItemLightClayPal[] = INCBIN_U16("graphics/mining_minigame/items/light_clay.gbapal");
 
-static const u32 gItemHeatRockGfx[] = INCBIN_U32("graphics/mining_minigame/items/heat_rock.4bpp.lz");
-static const u16 gItemHeatRockPal[] = INCBIN_U16("graphics/mining_minigame/items/heat_rock.gbapal");
+static const u32 gItemPlumeFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/plume_fossil.4bpp.lz"); // replaces HeatRock
 
-static const u32 gItemIcyRockGfx[] = INCBIN_U32("graphics/mining_minigame/items/icy_rock.4bpp.lz");
-static const u16 gItemIcyRockPal[] = INCBIN_U16("graphics/mining_minigame/items/icy_rock.gbapal");
+static const u32 gItemJawFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/jaw_fossil.4bpp.lz"); // replaces IcyRock
 
-static const u32 gItemSmoothRockGfx[] = INCBIN_U32("graphics/mining_minigame/items/smooth_rock.4bpp.lz");
-static const u16 gItemSmoothRockPal[] = INCBIN_U16("graphics/mining_minigame/items/smooth_rock.gbapal");
+static const u32 gItemSailFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/sail_fossil.4bpp.lz"); // replaces SmoothRock
 
 static const u32 gItemLeafStoneGfx[] = INCBIN_U32("graphics/mining_minigame/items/leaf_stone.4bpp.lz");
 static const u16 gItemLeafStonePal[] = INCBIN_U16("graphics/mining_minigame/items/leaf_stone.gbapal");
@@ -835,11 +831,11 @@ static const struct CompressedSpriteSheet sSpriteSheet_ItemStarPiece =
     MINING_TAG_ITEM_STAR_PIECE,
 };
 
-static const struct CompressedSpriteSheet sSpriteSheet_ItemDampRock =
+static const struct CompressedSpriteSheet sSpriteSheet_ItemCoverFossil = // replaces DampRock
 {
-    gItemDampRockGfx,
+    gItemCoverFossilGfx,
     64 * 64 / 2,
-    MINING_TAG_ITEM_DAMP_ROCK,
+    MINING_TAG_ITEM_COVER_FOSSIL,
 };
 
 static const struct CompressedSpriteSheet sSpriteSheet_ItemRedShard =
@@ -905,25 +901,25 @@ static const struct CompressedSpriteSheet sSpriteSheet_ItemLightClay =
     MINING_TAG_ITEM_LIGHT_CLAY
 };
 
-static const struct CompressedSpriteSheet sSpriteSheet_ItemHeatRock =
+static const struct CompressedSpriteSheet sSpriteSheet_ItemPlumeFossil = // replaces HeatRock
 {
-    gItemHeatRockGfx,
+    gItemPlumeFossilGfx,
     64 * 64 / 2,
-    MINING_TAG_ITEM_HEAT_ROCK,
+    MINING_TAG_ITEM_PLUME_FOSSIL,
 };
 
-static const struct CompressedSpriteSheet sSpriteSheet_ItemIcyRock =
+static const struct CompressedSpriteSheet sSpriteSheet_ItemJawFossil = // replaces IcyRock
 {
-    gItemIcyRockGfx,
+    gItemJawFossilGfx,
     64 * 64 / 2,
-    MINING_TAG_ITEM_ICY_ROCK,
+    MINING_TAG_ITEM_JAW_FOSSIL,
 };
 
-static const struct CompressedSpriteSheet sSpriteSheet_ItemSmoothRock =
+static const struct CompressedSpriteSheet sSpriteSheet_ItemSailFossil = // replaces SmoothRock
 {
-    gItemSmoothRockGfx,
+    gItemSailFossilGfx,
     64 * 64 / 2,
-    MINING_TAG_ITEM_SMOOTH_ROCK,
+    MINING_TAG_ITEM_SAIL_FOSSIL,
 };
 
 static const struct CompressedSpriteSheet sSpriteSheet_ItemLeafStone =
@@ -1166,16 +1162,16 @@ static const struct MiningItem MiningItemList[] =
         .sheet = &sSpriteSheet_ItemStarPiece,
         .paldata = gItemStarPiecePal,
     },
-    [MININGID_DAMP_ROCK] =
+    [MININGID_COVER_FOSSIL] = // replaces DAMP_ROCK
     {
-        .miningItemId = MININGID_DAMP_ROCK,
-        .bagItemId = ITEM_DAMP_ROCK,
-        .top = 2,
-        .left = 2,
-        .totalTiles = 7,
-        .tag = MINING_TAG_ITEM_DAMP_ROCK,
-        .sheet = &sSpriteSheet_ItemDampRock,
-        .paldata = gItemDampRockPal,
+        .miningItemId = MININGID_COVER_FOSSIL,
+        .bagItemId = ITEM_COVER_FOSSIL,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 13,
+        .tag = MINING_TAG_ITEM_COVER_FOSSIL,
+        .sheet = &sSpriteSheet_ItemCoverFossil,
+        .paldata = gItemFossilPal,
     },
     [MININGID_RED_SHARD] =
     {
@@ -1287,38 +1283,38 @@ static const struct MiningItem MiningItemList[] =
         .sheet = &sSpriteSheet_ItemLightClay,
         .paldata = gItemLightClayPal,
     },
-    [MININGID_HEAT_ROCK] =
+    [MININGID_PLUME_FOSSIL] = // replaces HEAT_ROCK
     {
-        .miningItemId = MININGID_HEAT_ROCK,
-        .bagItemId = ITEM_HEAT_ROCK,
-        .top = 2,
-        .left = 3,
-        .totalTiles = 9,
-        .tag = MINING_TAG_ITEM_HEAT_ROCK,
-        .sheet = &sSpriteSheet_ItemHeatRock,
-        .paldata = gItemHeatRockPal,
-    },
-    [MININGID_ICY_ROCK] =
-    {
-        .miningItemId = MININGID_ICY_ROCK,
-        .bagItemId = ITEM_ICY_ROCK,
+        .miningItemId = MININGID_PLUME_FOSSIL,
+        .bagItemId = ITEM_PLUME_FOSSIL,
         .top = 3,
         .left = 3,
-        .totalTiles = 11,
-        .tag = MINING_TAG_ITEM_ICY_ROCK,
-        .sheet = &sSpriteSheet_ItemIcyRock,
-        .paldata = gItemIcyRockPal,
+        .totalTiles = 13,
+        .tag = MINING_TAG_ITEM_PLUME_FOSSIL,
+        .sheet = &sSpriteSheet_ItemPlumeFossil,
+        .paldata = gItemFossilPal,
     },
-    [MININGID_SMOOTH_ROCK] =
+    [MININGID_JAW_FOSSIL] = // replaces ICY_ROCK
     {
-        .miningItemId = MININGID_SMOOTH_ROCK,
-        .bagItemId = ITEM_SMOOTH_ROCK,
+        .miningItemId = MININGID_JAW_FOSSIL,
+        .bagItemId = ITEM_JAW_FOSSIL,
         .top = 3,
         .left = 3,
-        .totalTiles = 7,
-        .tag = MINING_TAG_ITEM_SMOOTH_ROCK,
-        .sheet = &sSpriteSheet_ItemSmoothRock,
-        .paldata = gItemSmoothRockPal,
+        .totalTiles = 15,
+        .tag = MINING_TAG_ITEM_JAW_FOSSIL,
+        .sheet = &sSpriteSheet_ItemJawFossil,
+        .paldata = gItemFossilPal,
+    },
+    [MININGID_SAIL_FOSSIL] = // replaces SMOOTH_ROCK
+    {
+        .miningItemId = MININGID_SAIL_FOSSIL,
+        .bagItemId = ITEM_SAIL_FOSSIL,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 15,
+        .tag = MINING_TAG_ITEM_SAIL_FOSSIL,
+        .sheet = &sSpriteSheet_ItemSailFossil,
+        .paldata = gItemFossilPal,
     },
     [MININGID_LEAF_STONE] =
     {
@@ -1960,13 +1956,13 @@ static const u32 ItemRarityTable_Uncommon[] =
 static const u32 ItemRarityTable_Rare[] =
 {
     MININGID_STAR_PIECE,
-    MININGID_DAMP_ROCK,
-    MININGID_HEAT_ROCK,
+    MININGID_COVER_FOSSIL, // replaces DAMP_ROCK
+    MININGID_PLUME_FOSSIL, // replaces HEAT_ROCK
     MININGID_REVIVE_MAX,
     MININGID_OVAL_STONE,
     MININGID_LIGHT_CLAY,
-    MININGID_ICY_ROCK,
-    MININGID_SMOOTH_ROCK,
+    MININGID_JAW_FOSSIL, // replaces ICY_ROCK
+    MININGID_SAIL_FOSSIL, // replaces SMOOTH_ROCK
     MININGID_LEAF_STONE,
     MININGID_FIRE_STONE,
     MININGID_WATER_STONE,
@@ -1983,13 +1979,13 @@ static u8 GetRandomItemId()
     u32 rarity;
     u32 index;
     u32 itemId;
-    u32 rnd = random(7);
+    u32 rnd = random(100);
 
-    if (rnd < 4)
+    if (rnd < 55) // 0-54 (55%)
         rarity = RARITY_COMMON;
-    else if (rnd < 6)
+    else if (rnd < 80) // 55-79 (25%)
         rarity = RARITY_UNCOMMON;
-    else
+    else // 80-99 (20%)
         rarity = RARITY_RARE;
 
     switch (rarity)
@@ -3148,6 +3144,9 @@ static void GetItemOrPrintError(u8 taskId, u32 itemIndex, u32 itemId)
     if (itemId == ITEM_NONE)
         return;
 
+    if (!GetBuriedItemStatus(itemIndex))
+        return;
+    
     if (AddBagItem(itemId,1))
         return;
 

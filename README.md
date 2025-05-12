@@ -63,24 +63,21 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- Continue Mapping and NPC development\
+- Continue Mapping and NPC development
     - DIVE MAPS! Add a Pearl String item underwater for quest
-- EXPAND POKéDEX
-    - Up to 450 total species! Add the following:
-    - Jangmo'o line (commission? probably commission lol)
-    - Johto starters
-    - Flamigo (SageDeoxys sprites)
-    - Sizzlipede (SageDeoxys sprites)
-    - Drampa
-    - Shieldon and Cranidos (Rock/Fighting type!) lines!! Only obtainable via Mining Minigame ooo!
-        - Also add a Fossil Restoration building somewhere, maybe in the Fresco Isles?
-        - Revived Fossil Pokémon have a chance to have special moves, either from Egg moves or manually determined
-        (ex: revived Archen could have Roost, which it doesn't learn in the wild)
-            - Provides incentive to revive fossil Pokémon in addition/alternatively to finding them in the wild
-    - Spiritomb (Odd Keystone from Mining Minigame)
+    - Péntepetal City!
+        - Rania's quest - meet up with Rania on Péntepetal City following the events of Myrrini Island. She'll tell you
+        that even Péntepetal isn't safe from Team Chimera, as they've rounded up ALL Cranidos and Shieldon on the island
+        to be sold! Your job is to fight off Team Chimera so that Officers, Scientists, and Zookeepers can get to the
+        endangered Lazarus Taxa before they're shipped off.
+            - Explains why there are no Cranidos/Shieldon in the wild - all rounded up, and come under the care of
+            Scientists and Zookeepers afterwards
+            - Reward: A Cranidos or Shieldon, at random?
 - MINING MINIGAME ITEM REPLACEMENTS
     - Replace Damp Rock, Heat Rock, Icy Rock, and Smooth Rock with the Gen 5 and Gen 6 fossils
     - Replace Oval Stone with Black Augarite
+    - Add missing Gen 1 and Gen 3 fossils (sprites from Bulbapedia!)
+    - ADD WISHING STARS as a common find! Just resprited Max Revives with gray-blue stone
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas:
@@ -116,10 +113,6 @@ MAJOR TODOS:
     - Also create options menu toggle for it
     - TREASURE IDEAS:
         - Pearl, Big Pearl, and Pearl String (for that one quest in Asteri Sea West!)
-- Implement Vol's Mining Minigame https://github.com/volromhacking/pokeemerald-expansion/tree/mining_minigame
-    - Keep up with thread in RHH about it
-    - ADD WISHING STARS AS COMMON FIND!!
-    - Could be done in cave on Marmaro Island!
 - Implement Chris Piché's Game Corner Expansion minigames
     - Blackjack, Ponyta Racing, and Voltorb Flip are the big ones I care about
     - Also, remove Pinball Points and integrate Coins into Pinball games!
@@ -176,6 +169,8 @@ GREEK PHRASES AND STUFF:
 - DexNav chain count and directional arrow not shown when hunting
 - When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
+- FOLLOWERS: Ho-oh loads broken! At least in Zoo donation, I think
+    - Something to do with 64x64 followers, of course
 - CABIN DECORATION: holding the decoration sometimes breaks the graphics (ex: holding Pretty Flowers messes it up bad)
 - BATTLE PAVILION: Player sprites are garbled
     - Most likely because my Outfit implementation skipped over all the player link graphical stuff. oops
@@ -192,7 +187,7 @@ Many, many talented developers and artists are responsible for making this proje
 - New Continue Menu UI and Party Menu by Archie
 - Overworld Encounters by [HashtagMarky](https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters)
 - GSC/HGSS Ruins of Alph Sliding Puzzles by [Spherical Ice](https://www.pokecommunity.com/threads/ruins-of-alph-sliding-puzzles-pokefirered.463032/)
-- Town Map feature port by Vol
+- Mining Minigame and Town Map feature port by Vol
 - Pokémon Color Variation by Jaizu
 - Quest System by [PokémonSanFran](https://github.com/PokemonSanFran/pokeemerald/wiki/Unbound-Quest-Menu)
 - Set Preferred Follower from Party Menu by Kasen
@@ -227,7 +222,12 @@ Many, many talented developers and artists are responsible for making this proje
     20. By wittycrow
     21. By Coffee in the Pokémon Emerald Seaglass Discord Server (thank you!)
     22. By lakeofdance, from Substitube public resource
+    23. By Koolboyman, from Substitube public resource
 - Trainer Sprites:
+    - Amali and Harper sprited by me, based on TrainerDX GBC Trainer template sprites
+    - Johto (Ethan/Lyra) outfits by Solo993
+    - Kalos (Calem/Serena) outfits by com3tiin, Poketto, and Solo993 on DeviantArt
+    - Alolan (Elio/Selene), Paldean (Nemona/Arven), and Hylian (Link/Zelda) outfits commissioned from [TortleDove on Twitter](https://x.com/dovetortle?lang=en)
     - Many Sapphire-based GBC sprite devamps by leesongjae620 on DeviantArt
     - Some GBC style Trainer sprites from Pokémon Crystal
     - Scientist F, Punk Rocker, Hiker, and a few other sprites from Solo993's Unova sprite devamps
@@ -238,7 +238,9 @@ Many, many talented developers and artists are responsible for making this proje
     - Some NPC sprites by Anima_nel on itch.io
     - Some NPC sprites by kesterhenrickpixels on DeviantArt
     - Amali and Harper (default Player) sprites by me!
-    - Calem and Serena outfits by com3tiin, Poketto, and Solo993 on DeviantArt
+    - Johto (Ethan/Lyra) outfits by Solo993
+    - Kalos (Calem/Serena) outfits by com3tiin, Poketto, and Solo993 on DeviantArt
+    - Alolan (Elio/Selene), Paldean (Nemona/Arven), and Hylian (Link/Zelda) outfits commissioned from [TortleDove on Twitter](https://x.com/dovetortle?lang=en)
 - Overworld Pokémon Sprites:
     - Many Gen 1 and 2 overworld sprites by Anima_nel on itch.io
     - Eeveeee: Spoink, Kleavor

@@ -30,10 +30,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 9,
         .weight = 64,
         .description = COMPOUND_STRING(
-            "It waves its leaf around to keep foes\n"
-            "at bay. However, a sweet fragrance also\n"
-            "wafts from the leaf, creating a friendly\n"
-            "atmosphere that becalms the battlers."),
+            "Its leaves produce a fresh fragrance\n" // custom entry 5/11/25
+            "to soothe nearby Pokémon. Because of\n"
+            "this, small, weaker Pokémon flock to\n"
+            "Chikorita in the wild."),
         .pokemonScale = 512,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -51,7 +51,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Chikorita,
         .iconSprite = gMonIcon_Chikorita,
         .iconPalIndex = 1,
-        SHADOW(-1, 7, SHADOW_SIZE_M)
+        SHADOW(-1, 6, SHADOW_SIZE_M)
         FOOTPRINT(Chikorita)
         OVERWORLD(
             sPicTable_Chikorita,
@@ -94,10 +94,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 12,
         .weight = 158,
         .description = COMPOUND_STRING(
-            "A Bayleef's neck is ringed by curled-up\n"
-            "leaves. Inside each leaf is a small tree\n"
-            "shoot. The fragrance of this shoot\n"
-            "makes people peppy."),
+            "Bayleef are extremely energetic, bounding\n" // custom entry 5/11/25
+            "across grasslands and darting between\n"
+            "trees. Scientists believe this is caused\n"
+            "by the fragrance they release."),
         .pokemonScale = 296,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -163,10 +163,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 18,
         .weight = 1005,
         .description = COMPOUND_STRING(
-            "The fragrance of a Meganium's flower\n"
-            "soothes and calms emotions. In battle,\n"
-            "it gives off more of its becalming scent\n"
-            "to blunt the foe's fighting spirit."),
+            "Flowers are said to bloom where Meganium\n" // custom entry 5/11/25
+            "walks. They show their affection by\n"
+            "releasing calming scents and softly\n"
+            "grunting, bringing smiles to all."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 277,
@@ -188,7 +188,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Meganium,
         .iconSprite = gMonIcon_Meganium,
         .iconPalIndex = 1,
-        SHADOW(0, 14, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(4, 11, SHADOW_SIZE_L)
         FOOTPRINT(Meganium)
         OVERWORLD(
             sPicTable_Meganium,
@@ -230,10 +230,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 5,
         .weight = 79,
         .description = COMPOUND_STRING(
-            "It flares flames from its back to protect\n"
-            "itself. The fire burns vigorously if the\n"
-            "Pokémon is angry. When it is tired,\n"
-            "it sputters with incomplete combustion."),
+            "It is believed that the flames on a\n" // customy entry 5/11/25
+            "Cyndaquil's back evolved as a defense\n"
+            "mechanism. Trainers must be careful\n"
+            "to avoid being burned at first."),
         .pokemonScale = 539,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -251,7 +251,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Cyndaquil,
         .iconSprite = gMonIcon_Cyndaquil,
         .iconPalIndex = 3,
-        SHADOW(4, 1, SHADOW_SIZE_S)
+        SHADOW(3, 0, SHADOW_SIZE_S)
         FOOTPRINT(Cyndaquil)
         OVERWORLD(
             sPicTable_Cyndaquil,
@@ -294,10 +294,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 9,
         .weight = 190,
         .description = COMPOUND_STRING(
-            "It intimidates foes with intense gusts of\n"
-            "flames and superheated air. Its quick\n"
-            "nimbleness lets it dodge attacks even\n"
-            "while scorching an enemy."),
+            "Quilava fur is famed for its toughness\n" // custom entry 5/11/25
+            "and resistance to fire. They move with\n"
+            "caution, but when pushed to fight, they\n"
+            "can shrug off many attacks with ease."),
         .pokemonScale = 329,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -315,7 +315,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Quilava,
         .iconSprite = gMonIcon_Quilava,
         .iconPalIndex = 3,
-        SHADOW(-1, 6, SHADOW_SIZE_L)
+        SHADOW(0, 5, SHADOW_SIZE_M)
         FOOTPRINT(Quilava)
         OVERWORLD(
             sPicTable_Quilava,
@@ -365,10 +365,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 17,
         .weight = 795,
         .description = COMPOUND_STRING(
-            "It can hide behind a shimmering heat haze\n"
-            "that it creates using its intense flames.\n"
-            "Typhlosion create blazing explosive\n"
-            "blasts that burn everything to cinders."),
+            "Like flipping a switch, Typhlosion are the\n" // custom entry 5/11/25
+            "opposites of Quilava. Instead of being\n"
+            "cautious, they are extremely territorial,\n"
+            "torching anything that gets too close."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,
@@ -387,7 +387,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Typhlosion,
         .iconSprite = gMonIcon_Typhlosion,
         .iconPalIndex = 3,
-        SHADOW(3, 14, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(3, 14, SHADOW_SIZE_L)
         FOOTPRINT(Typhlosion)
         OVERWORLD(
             sPicTable_Typhlosion,
@@ -429,10 +429,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 16,
         .weight = 698,
         .description = COMPOUND_STRING(
-            "Said to purify lost, forsaken souls with\n"
-            "its flames and guide them to the afterlife.\n"
-            "It's believed its form was influenced by\n"
-            "the energy of Mt. Coronet in ancient times."),
+            "This subspecies of Typhlosion is much more\n" // custom entry 5/11/25
+            "laid back than their common counterpart.\n"
+            "Ancient stories speak of their ability to\n"
+            "guide souls to the afterlife."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,
@@ -450,7 +450,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_TyphlosionHisuian,
         .iconSprite = gMonIcon_TyphlosionHisuian,
         .iconPalIndex = 1,
-        SHADOW(-2, 13, SHADOW_SIZE_L)
+        SHADOW(-3, 12, SHADOW_SIZE_M)
         FOOTPRINT(Typhlosion)
         OVERWORLD(
             sPicTable_TyphlosionHisuian,
@@ -495,10 +495,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Despite its small body, Totodile's jaws\n"
-            "are very powerful. While it may think it is\n"
-            "just playfully nipping, its bite has enough\n"
-            "strength to cause serious injury."),
+            "Totodile are capable of crunching through\n" // custom entry 5/11/25
+            "most common objects, to the dismay of new\n"
+            "Trainers. They dive and roll in shallow\n"
+            "water while playing."),
         .pokemonScale = 487,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -516,7 +516,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Totodile,
         .iconSprite = gMonIcon_Totodile,
         .iconPalIndex = 0,
-        SHADOW(3, 4, SHADOW_SIZE_M)
+        SHADOW(2, 2, SHADOW_SIZE_S)
         FOOTPRINT(Totodile)
         OVERWORLD(
             sPicTable_Totodile,
@@ -560,10 +560,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 11,
         .weight = 250,
         .description = COMPOUND_STRING(
-            "Once its jaws clamp down on its foe, it will\n"
-            "absolutely not let go. Because the tips of\n"
-            "its fangs are forked back like fishhooks,\n"
-            "they become irremovably embedded."),
+            "Its jaws are extremely powerful, crushing\n" // custom entry 5/12/25
+            "through flesh and bone alike. Croconaw\n"
+            "teeth are curved, making them even harder\n"
+            "to remove. They can also grow back quickly."),
         .pokemonScale = 378,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -581,7 +581,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Croconaw,
         .iconSprite = gMonIcon_Croconaw,
         .iconPalIndex = 0,
-        SHADOW(5, 10, SHADOW_SIZE_L)
+        SHADOW(5, 9, SHADOW_SIZE_M)
         FOOTPRINT(Croconaw)
         OVERWORLD(
             sPicTable_Croconaw,
@@ -629,17 +629,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 23,
         .weight = 888,
         .description = COMPOUND_STRING(
-            "It opens its huge mouth to intimidate\n"
-            "enemies. In battle, it runs using its thick\n"
-            "and powerful hind legs to charge the\n"
-            "foe with incredible speed."),
+            "It swims with its nose and crest peeking\n" // custom entry 5/12/25
+            "above the water, disguising its true size.\n"
+            "Interestingly, it shows a soft side to wild\n"
+            "Pikipek, who pluck food out of its teeth."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 342,
         .trainerOffset = 7,
         .frontPic = gMonFrontPic_Feraligatr,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 1,
+        .frontPicYOffset = 6,
         .frontAnimFrames = sAnims_Feraligatr,
         .frontAnimId = ANIM_H_SHAKE,
         .frontAnimDelay = 5,
@@ -651,7 +651,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Feraligatr,
         .iconSprite = gMonIcon_Feraligatr,
         .iconPalIndex = 0,
-        SHADOW(3, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(0, 7, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Feraligatr)
         OVERWORLD(
             sPicTable_Feraligatr,

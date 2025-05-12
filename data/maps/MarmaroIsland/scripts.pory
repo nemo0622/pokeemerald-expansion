@@ -366,3 +366,12 @@ script MarmaroIsland_EventScript_ChimeraGruntBlockingMine
     release
     end
 }
+
+script MarmaroIsland_EventScript_FossilHouseSign
+{
+    lock
+    msgbox(format("There's a message freshly painted on the sign...\p Marmaro Paleo-Fossil Services!\n For all your Fossil and Spirit needs."))
+    closemessage
+    release
+    end
+}

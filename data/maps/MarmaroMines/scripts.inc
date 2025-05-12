@@ -301,7 +301,11 @@ MarmaroMines_EventScript_Petros::
 	msgbox MarmaroMines_EventScript_Petros_Text_2
 # 207 "data/maps/MarmaroMines/scripts.pory"
 	closemessage
+# 210 "data/maps/MarmaroMines/scripts.pory"
+	fadescreen FADE_TO_BLACK
 # 211 "data/maps/MarmaroMines/scripts.pory"
+	special StartMining
+# 213 "data/maps/MarmaroMines/scripts.pory"
 	release
 	end
 
@@ -318,13 +322,13 @@ MarmaroMines_EventScript_Petros_2:
 
 
 MarmaroMines_EventScript_MinigameRulesSign::
-# 217 "data/maps/MarmaroMines/scripts.pory"
-	lock
-# 218 "data/maps/MarmaroMines/scripts.pory"
-	msgbox MarmaroMines_EventScript_MinigameRulesSign_Text_0
 # 219 "data/maps/MarmaroMines/scripts.pory"
-	closemessage
+	lock
 # 220 "data/maps/MarmaroMines/scripts.pory"
+	msgbox MarmaroMines_EventScript_MinigameRulesSign_Text_0
+# 221 "data/maps/MarmaroMines/scripts.pory"
+	closemessage
+# 222 "data/maps/MarmaroMines/scripts.pory"
 	release
 	end
 
@@ -486,7 +490,7 @@ MarmaroMines_EventScript_Petros_Text_2:
 	.string "Follow me!$"
 
 MarmaroMines_EventScript_MinigameRulesSign_Text_0:
-# 218 "data/maps/MarmaroMines/scripts.pory"
+# 220 "data/maps/MarmaroMines/scripts.pory"
 	.string "Marmaro Mining Expedition Rules\p"
 	.string "Use the Hammer and Pick tools to break\n"
 	.string "through the layers of stone. A wide\l"

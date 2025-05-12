@@ -207,6 +207,8 @@ script MarmaroMines_EventScript_Petros
         closemessage
 
         // START MINING MINIGAME!
+        fadescreen(FADE_TO_BLACK)
+        special(StartMining)
     }
     release
     end

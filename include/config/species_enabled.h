@@ -266,8 +266,8 @@
 #define P_FAMILY_BIDOOF                  FALSE
 #define P_FAMILY_KRICKETOT               FALSE
 #define P_FAMILY_SHINX                   FALSE
-#define P_FAMILY_CRANIDOS                FALSE
-#define P_FAMILY_SHIELDON                FALSE
+#define P_FAMILY_CRANIDOS                P_GEN_4_POKEMON
+#define P_FAMILY_SHIELDON                P_GEN_4_POKEMON
 #define P_FAMILY_BURMY                   FALSE
 #define P_FAMILY_COMBEE                  FALSE
 #define P_FAMILY_PACHIRISU               P_GEN_4_POKEMON
@@ -280,7 +280,7 @@
 #define P_FAMILY_STUNKY                  P_GEN_4_POKEMON
 #define P_FAMILY_BRONZOR                 P_GEN_4_POKEMON
 #define P_FAMILY_CHATOT                  P_GEN_4_POKEMON
-#define P_FAMILY_SPIRITOMB               FALSE
+#define P_FAMILY_SPIRITOMB               P_GEN_4_POKEMON
 #define P_FAMILY_GIBLE                   FALSE
 #define P_FAMILY_RIOLU                   FALSE
 #define P_FAMILY_HIPPOPOTAS              FALSE
@@ -459,7 +459,7 @@
 #define P_FAMILY_BRUXISH                 P_GEN_7_POKEMON
 #define P_FAMILY_DRAMPA                  FALSE
 #define P_FAMILY_DHELMISE                P_GEN_7_POKEMON
-#define P_FAMILY_JANGMO_O                FALSE
+#define P_FAMILY_JANGMO_O                P_GEN_7_POKEMON
 #define P_FAMILY_TAPU_KOKO               FALSE
 #define P_FAMILY_TAPU_LELE               FALSE
 #define P_FAMILY_TAPU_BULU               FALSE
@@ -498,7 +498,7 @@
 #define P_FAMILY_CRAMORANT               FALSE
 #define P_FAMILY_ARROKUDA                FALSE
 #define P_FAMILY_TOXEL                   FALSE
-#define P_FAMILY_SIZZLIPEDE              FALSE
+#define P_FAMILY_SIZZLIPEDE              P_GEN_8_POKEMON
 #define P_FAMILY_CLOBBOPUS               FALSE
 #define P_FAMILY_SINISTEA                FALSE
 #define P_FAMILY_HATENNA                 FALSE
@@ -562,7 +562,7 @@
 #define P_FAMILY_ORTHWORM                FALSE
 #define P_FAMILY_GLIMMET                 FALSE
 #define P_FAMILY_GREAVARD                FALSE
-#define P_FAMILY_FLAMIGO                 FALSE
+#define P_FAMILY_FLAMIGO                 P_GEN_9_POKEMON
 #define P_FAMILY_CETODDLE                FALSE
 #define P_FAMILY_VELUZA                  FALSE
 #define P_FAMILY_DONDOZO                 FALSE

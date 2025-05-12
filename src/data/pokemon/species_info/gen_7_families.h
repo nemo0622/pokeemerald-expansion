@@ -1254,7 +1254,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     },
 #endif //P_FAMILY_GRUBBIN
 
-#if P_FAMILY_CRABRAWLE
+#if P_FAMILY_CRABRAWLER
     [SPECIES_CRABRAWLER] =
     {
         .baseHP        = 47,
@@ -1304,7 +1304,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_Crabrawler,
         .iconSprite = gMonIcon_Crabrawler,
         .iconPalIndex = 2,
-        SHADOW(2, 6, SHADOW_SIZE_M)
+        SHADOW(6, 5, SHADOW_SIZE_M)
         FOOTPRINT(Crabrawler)
         OVERWORLD(
             sPicTable_Crabrawler,
@@ -1341,7 +1341,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_IRON_FIST, ABILITY_ANGER_POINT },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = HANDLE_EXPANDED_SPECIES_NAME("Crabminabl", "Crabominable"),
+        .speciesName = _("Crabominable"),
         .cryId = CRY_CRABOMINABLE,
         .natDexNum = NATIONAL_DEX_CRABOMINABLE,
         .categoryName = _("Woolly Crab"),
@@ -1369,7 +1369,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_Crabominable,
         .iconSprite = gMonIcon_Crabominable,
         .iconPalIndex = 2,
-        SHADOW(0, 13, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(Crabominable)
         OVERWORLD(
             sPicTable_Crabominable,
@@ -4954,7 +4954,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseDefense   = 65,
         .baseSpeed     = 45,
         .baseSpAttack  = 45,
-        .baseSpDefense = 45,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 60,
@@ -4965,7 +4965,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_BULLETPROOF, ABILITY_SOUNDPROOF, ABILITY_OVERCOAT },
+        .abilities = { ABILITY_BULLETPROOF, ABILITY_OVERCOAT, ABILITY_ROUGH_SKIN },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Jangmo-o"),
         .cryId = CRY_JANGMO_O,
@@ -4974,10 +4974,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 6,
         .weight = 297,
         .description = COMPOUND_STRING(
-            "It expresses its feelings by smacking its\n"
-            "scales. Metallic sounds echo through the\n"
-            "tall mountains where Jangmo-o live. They\n"
-            "grow little by little battling one another."),
+            "They crash their scales into each other\n" // custom entry 5/11/25
+            "to communicate and get stronger. Ancient\n"
+            "warriors collected their shed scales to\n"
+            "forge shields and weapons."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -4995,6 +4995,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_JangmoO,
         .iconSprite = gMonIcon_JangmoO,
         .iconPalIndex = 2,
+        SHADOW(0, 5, SHADOW_SIZE_S)
         FOOTPRINT(JangmoO)
         OVERWORLD(
             sPicTable_JangmoO,
@@ -5007,12 +5008,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sJangmoOLevelUpLearnset,
         .teachableLearnset = sJangmoOTeachableLearnset,
         .eggMoveLearnset = sJangmoOEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_HAKAMO_O}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_HAKAMO_O}),
     },
 
     [SPECIES_HAKAMO_O] =
     {
-        .baseHP        = 55,
+        .baseHP        = 65,
         .baseAttack    = 75,
         .baseDefense   = 90,
         .baseSpeed     = 65,
@@ -5028,7 +5029,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_BULLETPROOF, ABILITY_SOUNDPROOF, ABILITY_OVERCOAT },
+        .abilities = { ABILITY_BULLETPROOF, ABILITY_OVERCOAT, ABILITY_ROUGH_SKIN },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Hakamo-o"),
         .cryId = CRY_HAKAMO_O,
@@ -5037,10 +5038,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 12,
         .weight = 470,
         .description = COMPOUND_STRING(
-            "It sheds and regrows its scales on a\n"
-            "continuous basis. The scales become\n"
-            "harder each time they're regrown. Its\n"
-            "scaly punches tear its foes to shreds."),
+            "Jangmo-o clans separate after evolving.\n" // custom entry 5/11/25
+            "They have been known to claim entire\n"
+            "mountains as their territory. Hakamo-o\n"
+            "are famed for their punches."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -5058,6 +5059,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_HakamoO,
         .iconSprite = gMonIcon_HakamoO,
         .iconPalIndex = 2,
+        SHADOW(0, 12, SHADOW_SIZE_M)
         FOOTPRINT(HakamoO)
         OVERWORLD(
             sPicTable_HakamoO,
@@ -5069,13 +5071,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sHakamoOLevelUpLearnset,
         .teachableLearnset = sHakamoOTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_KOMMO_O},
-                                {EVO_NONE, 0, SPECIES_KOMMO_O_TOTEM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_KOMMO_O}),
     },
 
     [SPECIES_KOMMO_O] =
     {
-        .baseHP        = 75,
+        .baseHP        = 85,
         .baseAttack    = 110,
         .baseDefense   = 125,
         .baseSpeed     = 85,
@@ -5091,7 +5092,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_BULLETPROOF, ABILITY_SOUNDPROOF, ABILITY_OVERCOAT },
+        .abilities = { ABILITY_BULLETPROOF, ABILITY_OVERCOAT, ABILITY_ROUGH_SKIN },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Kommo-o"),
         .cryId = CRY_KOMMO_O,
@@ -5099,7 +5100,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Scaly"),
         .height = 16,
         .weight = 782,
-        .description = gKommoOPokedexText,
+        .description = gKommoOPokedexText, // custom entry 5/11/25
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -5117,6 +5118,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_KommoO,
         .iconSprite = gMonIcon_KommoO,
         .iconPalIndex = 2,
+        SHADOW(-1, 14, SHADOW_SIZE_L)
         FOOTPRINT(KommoO)
         OVERWORLD(
             sPicTable_KommoO,

@@ -5,7 +5,7 @@ script MarmaroIsland_House2_EventScript_Girl
     lock
     faceplayer
     speakername("Girl")
-    msgbox(format("Apparently, Marmaro Island used to be a lot larger in Ancient Ilios. Over time, people mined too much from the outside of the island, so it started to shrink."))
+    msgbox(format("Dad says that Marmaro Island used to be a lot bigger, but stone mining made it shrink. That must've been a lot of stone!"))
     closemessage
     release
     end
@@ -18,6 +18,378 @@ script MarmaroIsland_House2_EventScript_Boy
     speakername("Boy")
     msgbox(format("Pokémon everyone thought were extinct have been showing up a lot around here! Maybe it's because of all the fossils in the stone?"))
     closemessage
+    release
+    end
+}
+
+script MarmaroIsland_House2_EventScript_FossilReviveMan
+{
+    lock
+    faceplayer
+    speakername("Paleontologist")
+    msgbox(format("Chaire! If you've spent time in the Mines, there's a good chance you've found a {COLOR GREEN}Pokémon Fossil{COLOR DARK_GRAY}.\p Through my experiments, I've found a way to {COLOR GREEN}restore Pokémon from Fossils{COLOR DARK_GRAY} back to life! Are you interested?"), MSGBOX_YESNO)
+    closemessage
+    if(var(VAR_RESULT) == FALSE) // not interested
+    {
+        speakername("Paleontologist")
+        msgbox(format("Still looking for Fossils? If you find any, bring them to me!"))
+        closemessage
+        release
+        end
+    }
+    else
+    {
+        speakername("Paleontologist")
+        msgbox(format("Great! Go ahead and choose the Fossil you want me to restore."))
+        closemessage
+        delay(5)
+
+        // choose fossil (stored in VAR_ITEM_ID)
+        chooseitem(ITEMS_POCKET)
+        delay(5)
+        
+        // Set variable storing fossil choice
+        if(var(VAR_ITEM_ID) == ITEM_HELIX_FOSSIL)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_OMANYTE)
+        }
+        elif(var(VAR_ITEM_ID) == ITEM_DOME_FOSSIL)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_KABUTO)
+        }
+        elif(var(VAR_ITEM_ID) == ITEM_OLD_AMBER)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_AERODACTYL)
+        }
+        elif(var(VAR_ITEM_ID) == ITEM_ROOT_FOSSIL)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_LILEEP)
+        }
+        elif(var(VAR_ITEM_ID) == ITEM_CLAW_FOSSIL)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_ANORITH)
+        }
+        elif(var(VAR_ITEM_ID) == ITEM_SKULL_FOSSIL)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_CRANIDOS)
+        }
+        elif(var(VAR_ITEM_ID) == ITEM_ARMOR_FOSSIL)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_SHIELDON)
+        }
+        elif(var(VAR_ITEM_ID) == ITEM_COVER_FOSSIL)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_TIRTOUGA)
+        }
+        elif(var(VAR_ITEM_ID) == ITEM_PLUME_FOSSIL)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_ARCHEN)
+        }
+        elif(var(VAR_ITEM_ID) == ITEM_JAW_FOSSIL)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_TYRUNT)
+        }
+        elif(var(VAR_ITEM_ID) == ITEM_SAIL_FOSSIL)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_AMAURA)
+        }
+        else
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, 0) // NO FOSSIL CHOSEN
+        }
+
+        // return dialogue based on choice, remove item from bag, and start restoring fossil
+        if(var(VAR_WHICH_FOSSIL_REVIVED) == 0) // if no fossil chosen
+        {
+            speakername("Paleontologist")
+            msgbox(format("Hmm... I hate to break it to you, but that just isn't a Fossil.\p Bring me a Pokémon Fossil, and I'll be able to restore it for you."))
+            closemessage
+            release
+            end
+        }
+        else
+        {
+
+            showmoneybox(0, 0)
+
+            bufferitemname(STR_VAR_1, VAR_ITEM_ID)
+            bufferspeciesname(STR_VAR_2, VAR_WHICH_FOSSIL_REVIVED)
+            speakername("Paleontologist")
+            msgbox(format("Ah, this is certainly a {STR_VAR_1}! From my research, I believe a Pokémon known as {STR_VAR_2} will be restored from this.\p This process will be pretty resource-intensive. Including labor and time, it should cost around ¥2000. Are you interested?"), MSGBOX_YESNO)
+            closemessage
+            delay(5)
+
+            if(var(VAR_RESULT) == 0) // not interested cause money
+            {
+                hidemoneybox
+                speakername("Paleontologist")
+                msgbox(format("No? Well, come on back with other Fossils anytime."))
+                closemessage
+                release
+                end
+            }
+            else
+            {
+                checkmoney(2000)
+                if(var(VAR_RESULT) == FALSE) // dont have 2000 dollars
+                {
+                    hidemoneybox
+                    speakername("Paleontologist")
+                    msgbox(format("Hmm... It doesn't look like you've got the funds right now. Come back with a Fossil and ¥2000, and I'll restore it for you!"))
+                    closemessage
+                    release
+                    end
+                }
+                else
+                {
+                    removeitem(VAR_ITEM_ID)
+                    removemoney(2000)
+                    updatemoneybox
+                    delay(10)
+                    speakername("Paleontologist")
+                    msgbox(format("Alright, thanks! I'll just take that Fossil from you, then we'll get started!"))
+                    closemessage
+                    hidemoneybox
+                }
+            }
+
+            fadescreen(FADE_TO_BLACK)
+            delay(60)
+            fadescreen(FADE_FROM_BLACK)
+            delay(20)
+
+            speakername("Paleontologist")
+            msgbox(format("Thanks for waiting. It was a complete success! The {STR_VAR_2} has imprinted on you, so it is ready to follow you wherever you go. Meet your new {STR_VAR_2}!"))
+            closemessage
+            delay(5)
+
+            // 1% chance that restored Pokémon is shiny!
+            randompercentage(1)
+            if(var(VAR_RESULT) == TRUE)
+            {
+                setflag(FLAG_FORCE_SHINY)
+            }
+
+            // random number generate nature number and gender
+            random(3) // 0-2, for nature number
+            copyvar(VAR_TEMP_0, VAR_RESULT)
+            random(2) // 0-1, for gender
+            copyvar(VAR_TEMP_1, VAR_RESULT)
+
+            random(3) // generates number 0-2 and stores in VAR_RESULT, used in switches below
+
+            // give species revived! add chance of special moves
+            if(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_OMANYTE)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_OMANYTE, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_CONSTRICT, MOVE_WITHDRAW, MOVE_BITE, MOVE_WATER_GUN)
+                    case 1: givemon(SPECIES_OMANYTE, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_AQUA_JET, MOVE_WITHDRAW, MOVE_BITE, MOVE_WATER_GUN)
+                    case 2: givemon(SPECIES_OMANYTE, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_CONSTRICT, MOVE_IRON_DEFENSE, MOVE_BITE, MOVE_WATER_GUN)
+                }
+            }
+            elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_KABUTO)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_KABUTO, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SCRATCH, MOVE_HARDEN, MOVE_ABSORB, MOVE_LEER)
+                    case 1: givemon(SPECIES_KABUTO, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SCRATCH, MOVE_HARDEN, MOVE_ABSORB, MOVE_METAL_CLAW)
+                    case 2: givemon(SPECIES_KABUTO, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SCRATCH, MOVE_HARDEN, MOVE_ABSORB, MOVE_ANCHOR_SHOT)
+                }
+            }
+            elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_AERODACTYL)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_AERODACTYL, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_WING_ATTACK, MOVE_SUPERSONIC, MOVE_BITE, MOVE_SCARY_FACE)
+                    case 1: givemon(SPECIES_AERODACTYL, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_WING_ATTACK, MOVE_SUPERSONIC, MOVE_BITE, MOVE_SUPER_FANG)
+                    case 2: givemon(SPECIES_AERODACTYL, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_WING_ATTACK, MOVE_SUPERSONIC, MOVE_BITE, MOVE_METEOR_MASH)
+                }
+            }
+            elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_LILEEP)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_LILEEP, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_ASTONISH, MOVE_CONSTRICT, MOVE_ACID, MOVE_INGRAIN)
+                    case 1: givemon(SPECIES_LILEEP, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_ASTONISH, MOVE_SCALD, MOVE_ACID, MOVE_INGRAIN)
+                    case 2: givemon(SPECIES_LILEEP, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_ASTONISH, MOVE_SYNTHESIS, MOVE_ACID, MOVE_INGRAIN)
+                }
+            }
+            elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_ANORITH)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_ANORITH, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SCRATCH, MOVE_HARDEN, MOVE_MUD_SPORT, MOVE_BUBBLE)
+                    case 1: givemon(SPECIES_ANORITH, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SCRATCH, MOVE_SPIKY_SHIELD, MOVE_MUD_SPORT, MOVE_BUBBLE)
+                    case 2: givemon(SPECIES_ANORITH, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SCRATCH, MOVE_SHORE_UP, MOVE_MUD_SPORT, MOVE_BUBBLE)
+                }
+            }
+            elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_CRANIDOS)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_CRANIDOS, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_HEADBUTT, MOVE_LEER, MOVE_FOCUS_ENERGY, MOVE_PURSUIT)
+                    case 1: givemon(SPECIES_CRANIDOS, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_HEADBUTT, MOVE_SEISMIC_TOSS, MOVE_FOCUS_ENERGY, MOVE_PURSUIT)
+                    case 2: givemon(SPECIES_CRANIDOS, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_HEADBUTT, MOVE_GLARE, MOVE_FOCUS_ENERGY, MOVE_PURSUIT)
+                }
+            }
+            elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_SHIELDON)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_SHIELDON, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_PROTECT, MOVE_TAUNT, MOVE_METAL_SOUND)
+                    case 1: givemon(SPECIES_SHIELDON, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_PROTECT, MOVE_PSYSHIELD_BASH, MOVE_METAL_SOUND)
+                    case 2: givemon(SPECIES_SHIELDON, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_PROTECT, MOVE_AVALANCHE, MOVE_METAL_SOUND)
+                }
+            }
+            elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_TIRTOUGA)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_TIRTOUGA, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BITE, MOVE_WITHDRAW, MOVE_WATER_GUN, MOVE_ROLLOUT)
+                    case 1: givemon(SPECIES_TIRTOUGA, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BITE, MOVE_ICE_FANG, MOVE_WATER_GUN, MOVE_ROLLOUT)
+                    case 2: givemon(SPECIES_TIRTOUGA, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BITE, MOVE_SHORE_UP, MOVE_WATER_GUN, MOVE_ROLLOUT)
+                }
+            }
+            elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_ARCHEN)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_ARCHEN, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM, MOVE_WING_ATTACK, MOVE_ROCK_THROW)
+                    case 1: givemon(SPECIES_ARCHEN, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_QUICK_ATTACK, MOVE_BONEMERANG, MOVE_WING_ATTACK, MOVE_ROCK_THROW)
+                    case 2: givemon(SPECIES_ARCHEN, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_QUICK_ATTACK, MOVE_JUMP_KICK, MOVE_WING_ATTACK, MOVE_ROCK_THROW)
+                }
+            }
+            elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_TYRUNT)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_TYRUNT, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_ROAR, MOVE_STOMP)
+                    case 1: givemon(SPECIES_TYRUNT, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_ICE_FANG, MOVE_ROAR, MOVE_STOMP)
+                    case 2: givemon(SPECIES_TYRUNT, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_PLAY_ROUGH, MOVE_ROAR, MOVE_STOMP)
+                }
+            }
+            elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_AMAURA)
+            {
+                switch(var(VAR_RESULT)) {
+                    case 0: givemon(SPECIES_AMAURA, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_POWDER_SNOW, MOVE_GROWL, MOVE_THUNDER_WAVE, MOVE_ROCK_THROW)
+                    case 1: givemon(SPECIES_AMAURA, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_POWDER_SNOW, MOVE_DAZZLING_GLEAM, MOVE_THUNDER_WAVE, MOVE_ROCK_THROW)
+                    case 2: givemon(SPECIES_AMAURA, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_POWDER_SNOW, MOVE_CHILLING_WATER, MOVE_THUNDER_WAVE, MOVE_ROCK_THROW)
+                }
+            }
+            closemessage
+
+            clearflag(FLAG_FORCE_SHINY)
+        }
+
+    }
+    release
+    end
+}
+
+script MarmaroIsland_House2_EventScript_OddKeystoneWoman
+{
+    lock
+    faceplayer
+    speakername("Spiritual Woman")
+    msgbox(format("Hello... by chance, have you found an {COLOR GREEN}Odd Keystone{COLOR DARK_GRAY} in the Mines?\p In my studies of the occult, I've found that a Pokémon called {COLOR GREEN}Spiritomb{COLOR DARK_GRAY} may live inside them, as they were once used in burial traditions of ancient Ilios. Have you found an Odd Keystone?"), MSGBOX_YESNO)
+    closemessage
+    if(var(VAR_RESULT) == FALSE) // no odd keystone
+    {
+        speakername("Spiritual Woman")
+        msgbox(format("No, I suppose most people wouldn't have one, as they are exceedingly rare. According to legend, over 100 souls are contained in each Odd Keystone, found near burial sites or ancient battlefields.\p If you happen to find an Odd Keystone, please let me know."))
+        closemessage
+        release
+        end
+    }
+    else
+    {
+        speakername("Spiritual Woman")
+        msgbox(format("Really? What incredible luck. Please, show me..."))
+        closemessage
+        delay(5)
+
+        // choose fossil (stored in VAR_ITEM_ID)
+        chooseitem(ITEMS_POCKET)
+        delay(5)
+        
+        // Set variable storing item choice
+        if(var(VAR_ITEM_ID) == ITEM_ODD_KEYSTONE)
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_SPIRITOMB) // yeah im reusing the variable, what about it
+        }
+        else
+        {
+            setvar(VAR_WHICH_FOSSIL_REVIVED, 0) // NOTHING CHOSEN
+        }
+
+        // return dialogue based on choice, remove item from bag, and give spiritomb
+        if(var(VAR_WHICH_FOSSIL_REVIVED) == 0) // if no odd keystone chosen
+        {
+            speakername("Spiritual Woman")
+            msgbox(format("Oh, my sweet summer child, this is not an Odd Keystone at all."))
+            closemessage
+            release
+            end
+        }
+        else
+        {
+
+            showmoneybox(0, 0)
+
+            speakername("Spiritual Woman")
+            msgbox(format("Yes, I can feel the spirits swirling inside... this is most certainly an Odd Keystone!\p Awakening Spiritomb from the Odd Keystone is very spiritually intensive. Including labor and time, it should cost around ¥2000. Shall we begin?"), MSGBOX_YESNO)
+            closemessage
+            delay(5)
+
+            if(var(VAR_RESULT) == 0) // not interested cause money
+            {
+                hidemoneybox
+                speakername("Spiritual Woman")
+                msgbox(format("No? Hm. Well please, come back with the Odd Keystone when you can."))
+                closemessage
+                release
+                end
+            }
+            else
+            {
+                checkmoney(2000)
+                if(var(VAR_RESULT) == FALSE) // dont have 2000 dollars
+                {
+                    hidemoneybox
+                    speakername("Spiritual Woman")
+                    msgbox(format("Hmm... I'm sorry, but you're lacking the funds right now. Come back with an Odd Keystone and ¥2000, and I'll awaken the Spiritomb inside."))
+                    closemessage
+                    release
+                    end
+                }
+                else
+                {
+                    removeitem(VAR_ITEM_ID)
+                    removemoney(2000)
+                    updatemoneybox
+                    delay(10)
+                    speakername("Spiritual Woman")
+                    msgbox(format("Okay, I'll place the Odd Keystone in the center of my crystal circle, and we shall begin the ritual. Please, wait there."))
+                    closemessage
+                    hidemoneybox
+                }
+            }
+
+            fadescreen(FADE_TO_BLACK)
+            delay(60)
+            fadescreen(FADE_FROM_BLACK)
+            delay(20)
+
+            speakername("Spiritual Woman")
+            msgbox(format("The spirits have been stirred by your energy, and Spiritomb has awakened. Take it, and treat it with respect."))
+            closemessage
+            delay(5)
+
+            // 1% chance that restored Pokémon is shiny!
+            randompercentage(1)
+            if(var(VAR_RESULT) == TRUE)
+            {
+                setflag(FLAG_FORCE_SHINY)
+            }
+
+            givemon(VAR_WHICH_FOSSIL_REVIVED, 20)
+            closemessage
+
+            clearflag(FLAG_FORCE_SHINY)
+        }
+
+    }
     release
     end
 }

@@ -4587,7 +4587,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_SCRAPPY, ABILITY_TANGLED_FEET, ABILITY_COSTAR },
+        .abilities = { ABILITY_SCRAPPY, ABILITY_COSTAR, ABILITY_STRONG_LEGS },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Flamigo"),
         .cryId = CRY_FLAMIGO,
@@ -4596,10 +4596,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 16,
         .weight = 370,
         .description = COMPOUND_STRING(
-            "Thanks to a behavior of theirs\n"
-            "known as “synchronizing,” an entire\n"
-            "flock of these Pokémon can attack\n"
-            "simultaneously in perfect harmony."),
+            "Flocks of Flamigo stay perfectly in-sync,\n" // custom entry 5/12/25
+            "even when hundreds are moving at once.\n"
+            "Their bright colors come from eating pink\n"
+            "prey, such as wild Wurmple."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4617,6 +4617,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .shinyPalette = gMonShinyPalette_Flamigo,
         .iconSprite = gMonIcon_Flamigo,
         .iconPalIndex = 1,
+        SHADOW(6, 11, SHADOW_SIZE_S)
         FOOTPRINT(Flamigo)
         OVERWORLD(
             sPicTable_Flamigo,

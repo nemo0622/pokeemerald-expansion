@@ -199,10 +199,10 @@ const u8 gMimikyuBustedPokedexText[] = _(
     "unharmed, but it's still feeling sad.");
 
 const u8 gKommoOPokedexText[] = _(
-    "Its rigid scales function as offense and\n"
-    "defense. In the past, its scales were\n"
-    "processed and used to make weapons\n"
-    "and other valuable commodities.");
+    "Kommo-o's scales echo at a piercing\n" // custom entry 5/11/25
+    "volume. They protect clans of Jangmo-o\n"
+    "while they play and grow, chasing away\n"
+    "predators or nefarious people.");
 
 // Gen 8 families
 const u8 gAlcremieVanillaCreamPokedexText[] = _(

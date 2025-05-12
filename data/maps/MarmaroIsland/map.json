@@ -594,6 +594,14 @@
       "elevation": 0,
       "item": "ITEM_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_MARMARO_NUGGET"
+    },
+    {
+      "type": "sign",
+      "x": 26,
+      "y": 34,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MarmaroIsland_EventScript_FossilHouseSign"
     }
   ]
 }

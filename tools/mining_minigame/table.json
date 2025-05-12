@@ -21,12 +21,12 @@
             "path": "./graphics/mining_minigame/items/light_clay.4bpp"
         },
         {
-            "id": "MININGID_HEAT_ROCK",
-            "path": "./graphics/mining_minigame/items/heat_rock.4bpp"
+            "id": "MININGID_PLUME_FOSSIL",
+            "path": "./graphics/mining_minigame/items/plume_fossil.4bpp"
         },
         {
-            "id": "MININGID_DAMP_ROCK",
-            "path": "./graphics/mining_minigame/items/damp_rock.4bpp"
+            "id": "MININGID_COVER_FOSSIL",
+            "path": "./graphics/mining_minigame/items/cover_fossil.4bpp"
         },
         {
             "id": "MININGID_BLUE_SHARD",
@@ -53,12 +53,12 @@
             "path": "./graphics/mining_minigame/items/iron_ball.4bpp"
         },
         {
-            "id": "MININGID_ICY_ROCK",
-            "path": "./graphics/mining_minigame/items/icy_rock.4bpp"
+            "id": "MININGID_JAW_FOSSIL",
+            "path": "./graphics/mining_minigame/items/jaw_fossil.4bpp"
         },
         {
-            "id": "MININGID_SMOOTH_ROCK",
-            "path": "./graphics/mining_minigame/items/smooth_rock.4bpp"
+            "id": "MININGID_SAIL_FOSSIL",
+            "path": "./graphics/mining_minigame/items/sail_fossil.4bpp"
         },
         {
             "id": "MININGID_YELLOW_SHARD",
