@@ -17,8 +17,8 @@
             "path": "./graphics/mining_minigame/items/revive.4bpp"
         },
         {
-            "id": "MININGID_LIGHT_CLAY",
-            "path": "./graphics/mining_minigame/items/light_clay.4bpp"
+            "id": "MININGID_WISHING_STAR",
+            "path": "./graphics/mining_minigame/items/wishing_star.4bpp"
         },
         {
             "id": "MININGID_PLUME_FOSSIL",
@@ -33,8 +33,8 @@
             "path": "./graphics/mining_minigame/items/blue_shard.4bpp"
         },
         {
-            "id": "MININGID_OVAL_STONE",
-            "path": "./graphics/mining_minigame/items/oval_stone.4bpp"
+            "id": "MININGID_BLACK_AUGURITE",
+            "path": "./graphics/mining_minigame/items/black_augurite.4bpp"
         },
         {
             "id": "MININGID_EVER_STONE",
@@ -103,6 +103,26 @@
         {
             "id": "MININGID_ARMOR_FOSSIL",
             "path": "./graphics/mining_minigame/items/armor_fossil.4bpp"
+        },
+        {
+            "id": "MININGID_CLAW_FOSSIL",
+            "path": "./graphics/mining_minigame/items/claw_fossil.4bpp"
+        },
+        {
+            "id": "MININGID_DOME_FOSSIL",
+            "path": "./graphics/mining_minigame/items/dome_fossil.4bpp"
+        },
+        {
+            "id": "MININGID_HELIX_FOSSIL",
+            "path": "./graphics/mining_minigame/items/helix_fossil.4bpp"
+        },
+        {
+            "id": "MININGID_OLD_AMBER",
+            "path": "./graphics/mining_minigame/items/old_amber.4bpp"
+        },
+        {
+            "id": "MININGID_ROOT_FOSSIL",
+            "path": "./graphics/mining_minigame/items/root_fossil.4bpp"
         }
     ],
     "stones": [

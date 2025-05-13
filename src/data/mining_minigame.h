@@ -2,9 +2,6 @@
 #include "constants/mining_minigame.h"
 
 static const int SpriteTileTable[][16] = {
-    [MININGID_OVAL_STONE] = {
-      1,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,
-    },
     [MININGID_JAW_FOSSIL] = {
       1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
     },
@@ -22,6 +19,9 @@ static const int SpriteTileTable[][16] = {
     },
     [MININGID_LEAF_STONE] = {
       0,1,0,0,1,1,1,0,1,1,1,0,0,1,0,0,
+    },
+    [MININGID_DOME_FOSSIL] = {
+      1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,
     },
     [MININGID_COVER_FOSSIL] = {
       1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,
@@ -47,6 +47,9 @@ static const int SpriteTileTable[][16] = {
     [MININGID_SUN_STONE] = {
       0,1,0,0,1,1,1,0,1,1,1,0,0,0,0,0,
     },
+    [MININGID_HELIX_FOSSIL] = {
+      0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,
+    },
     [MININGID_REVIVE] = {
       0,1,0,0,1,1,1,0,0,1,0,0,0,0,0,0,
     },
@@ -59,22 +62,34 @@ static const int SpriteTileTable[][16] = {
     [MININGID_YELLOW_SHARD] = {
       1,0,1,0,1,1,1,0,1,1,1,1,0,0,0,0,
     },
+    [MININGID_ROOT_FOSSIL] = {
+      1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+    },
     [MININGID_SKULL_FOSSIL] = {
       1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,
     },
     [MININGID_HARD_STONE] = {
       1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
     },
+    [MININGID_CLAW_FOSSIL] = {
+      1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+    },
     [MININGID_STAR_PIECE] = {
       0,1,0,0,1,1,1,0,0,1,0,0,0,0,0,0,
     },
-    [MININGID_LIGHT_CLAY] = {
-      1,0,1,0,1,1,1,0,1,1,1,1,0,1,0,1,
+    [MININGID_OLD_AMBER] = {
+      0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,
+    },
+    [MININGID_BLACK_AUGURITE] = {
+      0,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,
     },
     [MININGID_WATER_STONE] = {
       1,1,1,0,1,1,1,0,1,1,0,0,0,0,0,0,
     },
     [MININGID_FIRE_STONE] = {
+      1,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,
+    },
+    [MININGID_WISHING_STAR] = {
       1,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,
     },
     [MININGID_EVER_STONE] = {

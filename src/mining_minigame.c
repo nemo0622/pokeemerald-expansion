@@ -97,10 +97,10 @@ static void Debug_RaiseSpritePriority(u32 spriteId);
 static u32 Debug_CreateRandomItem(u32 random, u32 itemId);
 
 #define DEBUG_DESIRED_NUMBER_OF_ITEMS   4
-#define DEBUG_MININGID_ITEM1            MININGID_THUNDER_STONE
-#define DEBUG_MININGID_ITEM2            MININGID_THUNDER_STONE
-#define DEBUG_MININGID_ITEM3            MININGID_THUNDER_STONE
-#define DEBUG_MININGID_ITEM4            MININGID_THUNDER_STONE
+#define DEBUG_MININGID_ITEM1            MININGID_CLAW_FOSSIL
+#define DEBUG_MININGID_ITEM2            MININGID_CLAW_FOSSIL
+#define DEBUG_MININGID_ITEM3            MININGID_CLAW_FOSSIL
+#define DEBUG_MININGID_ITEM4            MININGID_CLAW_FOSSIL
 #define DEBUG_MININGID_STONE1           MININGID_STONE_MUSHROOM1
 #define DEBUG_MININGID_STONE2           MININGID_STONE_MUSHROOM2
 
@@ -645,11 +645,11 @@ static const u16 gItemReviveMaxPal[] = INCBIN_U16("graphics/mining_minigame/item
 static const u32 gItemEverStoneGfx[] = INCBIN_U32("graphics/mining_minigame/items/ever_stone.4bpp.lz");
 static const u16 gItemEverStonePal[] = INCBIN_U16("graphics/mining_minigame/items/ever_stone.gbapal");
 
-static const u32 gItemOvalStoneGfx[] = INCBIN_U32("graphics/mining_minigame/items/oval_stone.4bpp.lz");
-static const u16 gItemOvalStonePal[] = INCBIN_U16("graphics/mining_minigame/items/oval_stone.gbapal");
+static const u32 gItemBlackAuguriteGfx[] = INCBIN_U32("graphics/mining_minigame/items/black_augurite.4bpp.lz"); // replaces OvalStone
+static const u16 gItemBlackAuguritePal[] = INCBIN_U16("graphics/mining_minigame/items/black_augurite.gbapal");
 
-static const u32 gItemLightClayGfx[] = INCBIN_U32("graphics/mining_minigame/items/light_clay.4bpp.lz");
-static const u16 gItemLightClayPal[] = INCBIN_U16("graphics/mining_minigame/items/light_clay.gbapal");
+static const u32 gItemWishingStarGfx[] = INCBIN_U32("graphics/mining_minigame/items/wishing_star.4bpp.lz"); // replaces LIGHT_CLAY
+static const u16 gItemWishingStarPal[] = INCBIN_U16("graphics/mining_minigame/items/wishing_star.gbapal");
 
 static const u32 gItemPlumeFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/plume_fossil.4bpp.lz"); // replaces HeatRock
 
@@ -678,8 +678,15 @@ static const u16 gItemSunStonePal[] = INCBIN_U16("graphics/mining_minigame/items
 static const u32 gItemOddKeyStoneGfx[] = INCBIN_U32("graphics/mining_minigame/items/odd_key_stone.4bpp.lz");
 static const u16 gItemOddKeyStonePal[] = INCBIN_U16("graphics/mining_minigame/items/odd_key_stone.gbapal");
 
+static const u32 gItemOldAmberGfx[] = INCBIN_U32("graphics/mining_minigame/items/old_amber.4bpp.lz");
+static const u16 gItemOldAmberPal[] = INCBIN_U16("graphics/mining_minigame/items/old_amber.gbapal");
+
 static const u32 gItemSkullFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/skull_fossil.4bpp.lz");
 static const u32 gItemArmorFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/armor_fossil.4bpp.lz");
+static const u32 gItemClawFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/claw_fossil.4bpp.lz");
+static const u32 gItemDomeFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/dome_fossil.4bpp.lz");
+static const u32 gItemHelixFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/helix_fossil.4bpp.lz");
+static const u32 gItemRootFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/root_fossil.4bpp.lz");
 static const u16 gItemFossilPal[] = INCBIN_U16("graphics/mining_minigame/items/fossil.gbapal");
 
 // Stone SpriteSheets and SpritePalettes
@@ -887,18 +894,18 @@ static const struct CompressedSpriteSheet sSpriteSheet_ItemEverStone =
     MINING_TAG_ITEM_EVER_STONE
 };
 
-static const struct CompressedSpriteSheet sSpriteSheet_ItemOvalStone =
+static const struct CompressedSpriteSheet sSpriteSheet_ItemBlackAugurite = // replaces OvalStone
 {
-    gItemOvalStoneGfx,
+    gItemBlackAuguriteGfx,
     64 * 64 / 2,
-    MINING_TAG_ITEM_OVAL_STONE
+    MINING_TAG_ITEM_BLACK_AUGURITE
 };
 
-static const struct CompressedSpriteSheet sSpriteSheet_ItemLightClay =
+static const struct CompressedSpriteSheet sSpriteSheet_ItemWishingStar = // replaces LightClay
 {
-    gItemLightClayGfx,
+    gItemWishingStarGfx,
     64 * 64 / 2,
-    MINING_TAG_ITEM_LIGHT_CLAY
+    MINING_TAG_ITEM_WISHING_STAR
 };
 
 static const struct CompressedSpriteSheet sSpriteSheet_ItemPlumeFossil = // replaces HeatRock
@@ -983,6 +990,41 @@ static const struct CompressedSpriteSheet sSpriteSheet_ItemArmorFossil =
     gItemArmorFossilGfx,
     64 * 64 / 2,
     MINING_TAG_ITEM_ARMOR_FOSSIL,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_ItemClawFossil =
+{
+    gItemClawFossilGfx,
+    64 * 64 / 2,
+    MINING_TAG_ITEM_CLAW_FOSSIL,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_ItemDomeFossil =
+{
+    gItemDomeFossilGfx,
+    64 * 64 / 2,
+    MINING_TAG_ITEM_DOME_FOSSIL,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_ItemHelixFossil =
+{
+    gItemHelixFossilGfx,
+    64 * 64 / 2,
+    MINING_TAG_ITEM_HELIX_FOSSIL,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_ItemOldAmber =
+{
+    gItemOldAmberGfx,
+    64 * 64 / 2,
+    MINING_TAG_ITEM_OLD_AMBER,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_ItemRootFossil =
+{
+    gItemRootFossilGfx,
+    64 * 64 / 2,
+    MINING_TAG_ITEM_ROOT_FOSSIL,
 };
 
 static const struct SpriteTemplate gSpriteStone1x4 =
@@ -1261,27 +1303,27 @@ static const struct MiningItem MiningItemList[] =
         .sheet = &sSpriteSheet_ItemHeartScale,
         .paldata = gItemHeartScalePal,
     },
-    [MININGID_OVAL_STONE] =
+    [MININGID_BLACK_AUGURITE] = // replaces OVAL_STONE
     {
-        .miningItemId = MININGID_OVAL_STONE,
-        .bagItemId = ITEM_OVAL_STONE,
+        .miningItemId = MININGID_BLACK_AUGURITE,
+        .bagItemId = ITEM_BLACK_AUGURITE,
+        .top = 2,
+        .left = 2,
+        .totalTiles = 6,
+        .tag = MINING_TAG_ITEM_BLACK_AUGURITE,
+        .sheet = &sSpriteSheet_ItemBlackAugurite,
+        .paldata = gItemBlackAuguritePal,
+    },
+    [MININGID_WISHING_STAR] = // replaces LIGHT_CLAY
+    {
+        .miningItemId = MININGID_WISHING_STAR,
+        .bagItemId = ITEM_WISHING_STAR,
         .top = 2,
         .left = 2,
         .totalTiles = 8,
-        .tag = MINING_TAG_ITEM_OVAL_STONE,
-        .sheet = &sSpriteSheet_ItemOvalStone,
-        .paldata = gItemOvalStonePal,
-    },
-    [MININGID_LIGHT_CLAY] =
-    {
-        .miningItemId = MININGID_LIGHT_CLAY,
-        .bagItemId = ITEM_LIGHT_CLAY,
-        .top = 3,
-        .left = 3,
-        .totalTiles = 10,
-        .tag = MINING_TAG_ITEM_LIGHT_CLAY,
-        .sheet = &sSpriteSheet_ItemLightClay,
-        .paldata = gItemLightClayPal,
+        .tag = MINING_TAG_ITEM_WISHING_STAR,
+        .sheet = &sSpriteSheet_ItemWishingStar,
+        .paldata = gItemWishingStarPal,
     },
     [MININGID_PLUME_FOSSIL] = // replaces HEAT_ROCK
     {
@@ -1413,6 +1455,61 @@ static const struct MiningItem MiningItemList[] =
         .totalTiles = 15,
         .tag = MINING_TAG_ITEM_ARMOR_FOSSIL,
         .sheet = &sSpriteSheet_ItemArmorFossil,
+        .paldata = gItemFossilPal,
+    },
+    [MININGID_CLAW_FOSSIL] =
+    {
+        .miningItemId = MININGID_CLAW_FOSSIL,
+        .bagItemId = ITEM_CLAW_FOSSIL,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 15,
+        .tag = MINING_TAG_ITEM_CLAW_FOSSIL,
+        .sheet = &sSpriteSheet_ItemClawFossil,
+        .paldata = gItemFossilPal,
+    },
+    [MININGID_DOME_FOSSIL] =
+    {
+        .miningItemId = MININGID_DOME_FOSSIL,
+        .bagItemId = ITEM_DOME_FOSSIL,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 13,
+        .tag = MINING_TAG_ITEM_DOME_FOSSIL,
+        .sheet = &sSpriteSheet_ItemDomeFossil,
+        .paldata = gItemFossilPal,
+    },
+    [MININGID_HELIX_FOSSIL] =
+    {
+        .miningItemId = MININGID_HELIX_FOSSIL,
+        .bagItemId = ITEM_HELIX_FOSSIL,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 13,
+        .tag = MINING_TAG_ITEM_HELIX_FOSSIL,
+        .sheet = &sSpriteSheet_ItemHelixFossil,
+        .paldata = gItemFossilPal,
+    },
+    [MININGID_OLD_AMBER] =
+    {
+        .miningItemId = MININGID_OLD_AMBER,
+        .bagItemId = ITEM_OLD_AMBER,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 13,
+        .tag = MINING_TAG_ITEM_OLD_AMBER,
+        .sheet = &sSpriteSheet_ItemOldAmber,
+        .paldata = gItemOldAmberPal,
+    },
+    [MININGID_ROOT_FOSSIL] =
+    {
+        .miningItemId = MININGID_ROOT_FOSSIL,
+        .bagItemId = ITEM_ROOT_FOSSIL,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 15,
+        .tag = MINING_TAG_ITEM_ROOT_FOSSIL,
+        .sheet = &sSpriteSheet_ItemRootFossil,
         .paldata = gItemFossilPal,
     },
 };
@@ -1943,24 +2040,24 @@ static const u32 ItemRarityTable_Common[] =
     MININGID_BLUE_SHARD,
     MININGID_YELLOW_SHARD,
     MININGID_GREEN_SHARD,
+    MININGID_WISHING_STAR,
 };
 
 static const u32 ItemRarityTable_Uncommon[] =
 {
     MININGID_IRON_BALL,
     MININGID_HARD_STONE,
-    MININGID_REVIVE,
     MININGID_EVER_STONE,
+    MININGID_STAR_PIECE,
+    MININGID_REVIVE,
+    MININGID_REVIVE_MAX,
 };
 
 static const u32 ItemRarityTable_Rare[] =
 {
-    MININGID_STAR_PIECE,
     MININGID_COVER_FOSSIL, // replaces DAMP_ROCK
     MININGID_PLUME_FOSSIL, // replaces HEAT_ROCK
-    MININGID_REVIVE_MAX,
-    MININGID_OVAL_STONE,
-    MININGID_LIGHT_CLAY,
+    MININGID_BLACK_AUGURITE, // replaces OVAL_STONE
     MININGID_JAW_FOSSIL, // replaces ICY_ROCK
     MININGID_SAIL_FOSSIL, // replaces SMOOTH_ROCK
     MININGID_LEAF_STONE,
@@ -1972,6 +2069,11 @@ static const u32 ItemRarityTable_Rare[] =
     MININGID_ODD_KEY_STONE,
     MININGID_SKULL_FOSSIL,
     MININGID_ARMOR_FOSSIL,
+    MININGID_CLAW_FOSSIL,
+    MININGID_DOME_FOSSIL,
+    MININGID_HELIX_FOSSIL,
+    MININGID_OLD_AMBER,
+    MININGID_ROOT_FOSSIL,
 };
 
 static u8 GetRandomItemId()
@@ -1981,11 +2083,11 @@ static u8 GetRandomItemId()
     u32 itemId;
     u32 rnd = random(100);
 
-    if (rnd < 55) // 0-54 (55%)
+    if (rnd < 60) // 0-59 (60%)
         rarity = RARITY_COMMON;
-    else if (rnd < 80) // 55-79 (25%)
+    else if (rnd < 85) // 60-84 (25%)
         rarity = RARITY_UNCOMMON;
-    else // 80-99 (20%)
+    else // 85-99 (15%)
         rarity = RARITY_RARE;
 
     switch (rarity)

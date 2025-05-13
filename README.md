@@ -74,10 +74,7 @@ MAJOR TODOS:
             Scientists and Zookeepers afterwards
             - Reward: A Cranidos or Shieldon, at random?
 - MINING MINIGAME ITEM REPLACEMENTS
-    - Replace Damp Rock, Heat Rock, Icy Rock, and Smooth Rock with the Gen 5 and Gen 6 fossils
-    - Replace Oval Stone with Black Augarite
-    - Add missing Gen 1 and Gen 3 fossils (sprites from Bulbapedia!)
-    - ADD WISHING STARS as a common find! Just resprited Max Revives with gray-blue stone
+    - Make sure all bag Item sprites for all possible mining rewards are in GBC style! it's the little things :)
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas:
