@@ -108,7 +108,7 @@
       "x": 9,
       "y": 14,
       "elevation": 0,
-      "var": "FLAG_BADGE06_GET",
+      "var": "FLAG_BADGE07_GET",
       "var_value": "0",
       "script": "LastlightRoad_Trigger_ScytherGoesWild"
     }

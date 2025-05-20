@@ -512,10 +512,18 @@ script AcrisiaCity_University_EventScript_Niko
                 release
                 end
             }
-            elif(var(VAR_NIKO_STATE) == 9)
+            elif(var(VAR_NIKO_STATE) == 9) // after Myrrini Island event (Rania + Player run into Chimera)
             {
                 speakername("Niko")
                 msgbox(format("I hear you and Rania had a run-in with Team Chimera on Myrrini Island. What could they have possibly meant by 'reawakening ancient Pokémon'? We all know Lazarus Taxa are being rediscovered left and right, but what are Team Chimera's plans with them?"))
+                closemessage
+                release
+                end
+            }
+            elif(var(VAR_NIKO_STATE) == 10) // after Péntepetal City (Chimera takes all Cranidos and Shieldon)
+            {
+                speakername("Niko")
+                msgbox(format("The Cranidos and Shieldon you saved in Péntepetal City are doing well in captivity! Thanks to them, we've learned a lot more about how those species live.\p I've been thinking about Team Chimera's plans. There must be some connection between the Ancient Mechanism parts they collected on Marmaro Island and their obsession with Lazarus Taxa. Maybe the Ancient Mechanism has something to do with them?"))
                 closemessage
                 release
                 end
@@ -610,7 +618,7 @@ script AcrisiaCity_University_EventScript_Rania
     elif(var(VAR_RANIA_STATE) == 9) // Gym 5 complete, completed Péntepetal questline
     {
         speakername("Rania")
-        msgbox(format("Chaire, {PLAYER}! I hope my training is helping you find the right Pokémon easier.\p Recovering in Péntepetal City was nice, but it's good to be back. I've got plenty of Pokédex data from you to sort through, ehehe!"))
+        msgbox(format("Welcome back, {PLAYER}. Cranidos and Shieldon are thriving, thanks to Niko's help!\p Oh, have you been practicing identifying wild Pokémon Natures? Pretty convenient, huh?"))
         closemessage
     }
     release

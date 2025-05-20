@@ -1,0 +1,296 @@
+mapscripts PentepetalCity_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_PENTEPETAL_CITY)
+    }
+}
+
+script PentepetalCity_Trigger_RaniaChimeraEvent
+{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("{PLAYER}! Over here, come quick!"))
+    closemessage
+    delay(10)
+    fadescreen(FADE_TO_BLACK)
+
+    setflag(FLAG_HIDE_NIKO_PENTEPETAL_CITY)
+    setflag(FLAG_HIDE_MAP_NAME_POPUP)
+    removeobject(20)
+    warpcontinuescript(MAP_PENTEPETAL_CITY, 20, 26, PentepetalCity_EventScript_RaniaChimeraEvent)
+    end
+}
+
+script PentepetalCity_EventScript_RaniaChimeraEvent
+{
+    delay(10)
+    clearflag(FLAG_HIDE_MAP_NAME_POPUP)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(9, Common_Movement_FaceRight)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, PentepetalCity_Movement_PlayerApproachesRania)
+    fadescreen(FADE_FROM_BLACK)
+    delay(30)
+
+    speakername("Rania")
+    msgbox(format("So, like, remember how I came to Péntepetal City just to rest and get away from Team Chimera? Well, I can say goodbye to those plans.\p Two new {COLOR GREEN}Lazarus Taxa{COLOR DARK_GRAY}, Cranidos and Shieldon, were just found in the woods nearby. The second the news got out, Team Chimera swept in and started to steal them all! I found a clearing where they're hiding, come help me fight them! I'll heal your Pokémon before we go."))
+    closemessage
+    special(HealPlayerParty)
+    delay(10)
+    applymovement(9, PentepetalCity_Movement_RaniaGoesToClearing)
+    applymovement(OBJ_EVENT_ID_PLAYER, PentepetalCity_Movement_PlayerFollowsToClearing)
+    waitmovement(0)
+    delay(10)
+    speakername("Rania")
+    msgbox(format("Oh no, the rumors were true!"))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, PentepetalCity_Movement_PlayerApproachesChimeraGrunt)
+    applymovement(9, PentepetalCity_Movement_RaniaRunsToCranidos)
+    waitmovement(0)
+    delay(10)
+    speakername("Rania")
+    msgbox(format("It's just like they were saying in town! Cranidos and Shieldon live here, but they're being rounded up by Team Chimera!"))
+    closemessage
+
+    applymovement(19, PentepetalCity_Movement_GruntApproachesRania)
+    waitmovement(0)
+    applymovement(9, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Chimera Grunt")
+    msgbox(format("Fwahaha, you're too late! These are the last living Cranidos and Shieldon anywhere on the island. We've rounded up all the rest to be sold to the highest bidder!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(19, Common_Movement_FaceRight)
+    applymovement(18, PentepetalCity_Movement_SpiritombApproachesPlayer)
+    waitmovement(0)
+    speakername("Chimera Grunt")
+    msgbox(format("What, are you gonna try to stop me? A couple of lame, weak activists? Heh, do your worst!"))
+    closemessage
+
+    // battle grunt
+    trainerbattle_no_intro(TRAINER_PENTEPETAL_CHIMERA_GRUNT, PentepetalCity_Text_GruntLose)
+
+    delay(10)
+    speakername("Chimera Grunt")
+    msgbox(format("Well... I suppose Team Chimera will be fine without one or two extra Pokémon. But don't be surprised when we show up with teams of Rampardos and Bastiodon! Fwahaha!\p Time to make our escape! Spiritomb, let's get outta here!"))
+    closemessage
+    applymovement(19, PentepetalCity_Movement_GruntFlees)
+    applymovement(18, PentepetalCity_Movement_SpiritombFlees)
+    waitmovement(0)
+    delay(10)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(9, Common_Movement_WalkRight)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Thanks for saving me again, {PLAYER}... I just can't believe Team Chimera would do this. Almost all living Cranidos and Shieldon, rounded up and sold? How awful...\p While you took care of that Grunt, I called Niko for help. He's the expert in Pokémon care, after all. He should be here any mi-"))
+    closemessage
+
+    clearflag(FLAG_HIDE_NIKO_PENTEPETAL_CITY)
+    addobject(20)
+    applymovement(20, PentepetalCity_Movement_NikoApproaches)
+    waitmovement(0)
+    applymovement(9, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("RANIA! RANIA! Huff, huff... I flew here on my Braviary as fast as I could! Is everyone okay?!"))
+    closemessage
+    speakername("Rania")
+    msgbox(format("We're okay, Niko, but these Pokémon look hurt. Please, make sure they're alright... they might be the last of their kind in the wild!"))
+    closemessage
+    applymovement(20, PentepetalCity_Movement_NikoChecksPokemon)
+    waitmovement(0)
+
+    speakername("Niko")
+    msgbox(format("Cranidos and Shieldon, huh? This must be another case of Lazarus Taxa being rediscovered. Looks like Team Chimera got to them before conservationists could, though...\p I'll take them back to the University with me. We'll reach out to the Sunset Wildlife Conservation Center in Kipos Town for advice on how to care for them. It's too dangerous to release them while Team Chimera is hunting them down."))
+    closemessage
+    applymovement(20, Common_Movement_WalkRight)
+    waitmovement(0)
+    applymovement(20, Common_Movement_FaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("{PLAYER}, thanks to you, we might be able to save these species and learn more about them.\p Team Chimera has been rounding up Pokémon across the Ilios Region, doing whatever they can to gain power and money. Clearly, they're {COLOR GREEN}planning something big with Lazarus Taxa{COLOR DARK_GRAY} and other Pokémon they're stolen. If you want to be strong enough to stop them, you should head down the {COLOR GREEN}Sea of Vulcai{COLOR DARK_GRAY} to the {COLOR GREEN}Fresco Isles{COLOR DARK_GRAY}. You'll need the {COLOR GREEN}HM Dive{COLOR DARK_GRAY} to get south, but that's where the sixth Pokémon Gym is located.\p I'm off to the University with Cranidos and Shieldon. Take care, and thanks again for your help!"))
+    closemessage
+    delay(10)
+
+    fadescreen(FADE_TO_BLACK)
+    delay(30)
+    removeobject(20)
+    removeobject(16)
+    removeobject(17)
+    removeobject(18)
+    removeobject(19)
+    setflag(FLAG_HIDE_NIKO_PENTEPETAL_CITY)
+    setflag(FLAG_HIDE_CHIMERA_PENTEPETAL_CITY)
+    delay(30)
+    fadescreen(FADE_FROM_BLACK)
+    delay(20)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(9, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Jeez, I hope those poor Pokémon will be okay... I can't imagine how it must feel to be one of the last living members of a species."))
+    closemessage
+    delay(20)
+    applymovement(9, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    delay(10)
+    speakername("Rania")
+    msgbox(format("Oh, while I've got you here, I actually have something for you! I made a Training Guide to teach you how to {COLOR GREEN}identify Wild Pokémon Natures{COLOR DARK_GRAY} when you encounter them. Check this out!"))
+    closemessage
+    delay(5)
+    playfanfare(MUS_OBTAIN_ITEM)
+    message(format("You learned how to identify Wild Pokémon Natures!"))
+    waitmessage
+    waitfanfare
+    closemessage
+    delay(5)
+    speakername("Rania")
+    msgbox(format("I hope that serves as a thank-you for helping me save those Pokémon.\p If I thought I was exhausted on Myrrini Island, now I'm REALLY wiped out! I'm gonna head back to the University with Niko. Stay safe, {PLAYER}!"))
+    closemessage
+
+    applymovement(9, PentepetalCity_Movement_RaniaLeaves)
+    waitmovement(0)
+    setflag(FLAG_HIDE_RANIA_PENTEPETAL_CITY)
+    removeobject(9)
+
+    // ENABLE SEEING WILD POKEMON NATURES
+    setflag(FLAG_UNLOCKED_WILD_NATURE_VIEW)
+
+    setvar(VAR_NIKO_STATE, 10)
+    setvar(VAR_RANIA_STATE, 9)
+    clearflag(FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY)
+
+    delay(20)
+    completequest(QUEST_VISIT_RANIA_PENTEPETAL)
+
+    releaseall
+    end
+}
+
+movement PentepetalCity_Movement_PlayerApproachesRania
+{
+    walk_left * 3
+    face_left
+    step_end
+}
+movement PentepetalCity_Movement_RaniaGoesToClearing
+{
+    walk_left * 2
+    walk_up * 5
+    walk_left * 7
+    walk_up
+    walk_left
+    walk_up * 3
+    walk_left * 2
+    walk_up * 3
+    emote_exclamation_mark
+    face_up
+    step_end
+}
+movement PentepetalCity_Movement_PlayerFollowsToClearing
+{
+    walk_left * 3
+    walk_up * 5
+    walk_left * 7
+    walk_up
+    walk_left
+    walk_up * 3
+    walk_left * 2
+    walk_up * 2
+    face_up
+    delay_16
+    step_end
+}
+movement PentepetalCity_Movement_RaniaRunsToCranidos
+{
+    walk_fast_up * 2
+    walk_fast_left * 2
+    jump_in_place_up * 2
+    face_up
+    step_end
+}
+movement PentepetalCity_Movement_PlayerApproachesChimeraGrunt
+{
+    walk_up * 3
+    face_up
+    step_end
+}
+movement PentepetalCity_Movement_GruntApproachesRania
+{
+    walk_left
+    walk_down
+    face_left
+    step_end
+}
+movement PentepetalCity_Movement_SpiritombApproachesPlayer
+{
+    walk_right
+    walk_down * 2
+    face_down
+    step_end
+}
+movement PentepetalCity_Movement_GruntFlees
+{
+    walk_fast_down * 3
+    walk_fast_right
+    walk_fast_down * 3
+    walk_fast_right
+    walk_fast_down * 3
+    step_end
+}
+movement PentepetalCity_Movement_SpiritombFlees
+{
+    walk_left
+    walk_down * 4
+    walk_right
+    walk_down * 3
+    walk_right
+    walk_down * 2
+    step_end
+}
+movement PentepetalCity_Movement_NikoApproaches
+{
+    walk_fast_up
+    walk_fast_left * 2
+    walk_fast_up * 4
+    walk_fast_left
+    jump_in_place_up * 2
+    face_up
+    step_end
+}
+movement PentepetalCity_Movement_NikoChecksPokemon
+{
+    walk_left
+    walk_up
+    delay_16 * 2
+    walk_down
+    walk_right * 3
+    walk_up * 3
+    walk_left
+    face_left
+    delay_16 * 2
+    walk_right
+    walk_down * 3
+    walk_left * 2
+    face_up
+    step_end
+}
+movement PentepetalCity_Movement_RaniaLeaves
+{
+    walk_down
+    walk_right
+    walk_down * 4
+    walk_right
+    walk_down * 2
+    step_end
+}
+text PentepetalCity_Text_GruntLose
+{
+    format("No! How can we keep losing to the likes of you?!")
+}

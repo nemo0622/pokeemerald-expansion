@@ -554,11 +554,11 @@
 #define FLAG_HIDDEN_ITEM_RIVERWALK_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x09)
 #define FLAG_HIDDEN_ITEM_KALAMI_HEART_SCALE                  (FLAG_HIDDEN_ITEMS_START + 0x0A)
 #define FLAG_HIDDEN_ITEM_MARMARO_NUGGET                      (FLAG_HIDDEN_ITEMS_START + 0x0B)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD           (FLAG_HIDDEN_ITEMS_START + 0x0C)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1        (FLAG_HIDDEN_ITEMS_START + 0x0D)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x0E)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL           (FLAG_HIDDEN_ITEMS_START + 0x0F)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST             (FLAG_HIDDEN_ITEMS_START + 0x10)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_ASTERI_PEARL_STRING      (FLAG_HIDDEN_ITEMS_START + 0x0C)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_ASTERI_PEARL             (FLAG_HIDDEN_ITEMS_START + 0x0D)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_ASTERI_HEART_SCALE       (FLAG_HIDDEN_ITEMS_START + 0x0E)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_VULCAI_WATER_STONE       (FLAG_HIDDEN_ITEMS_START + 0x0F)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_VULCAI_EVIOLITE          (FLAG_HIDDEN_ITEMS_START + 0x10)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x11)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD         (FLAG_HIDDEN_ITEMS_START + 0x12)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13)
@@ -655,7 +655,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
+#define FLAG_UNLOCKED_WILD_NATURE_VIEW          0x264 // Marked when Rania Chimera event completed in Péntepetal City
 #define FLAG_UNUSED_0x265  0x265 // Unused Flag
 #define FLAG_UNUSED_0x266  0x266 // Unused Flag
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
@@ -1085,14 +1085,14 @@
 #define FLAG_ITEM_MARMARO_EXP_CANDY_M                               0x409
 #define FLAG_ITEM_MARMARO_PEARL                                     0x40A
 #define FLAG_ITEM_MYRRINI_CARBOS                                    0x40B
-#define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
-#define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
-#define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E
-#define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F
-#define FLAG_ITEM_PETALBURG_CITY_ETHER                              0x410
-#define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
-#define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
-#define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413
+#define FLAG_ITEM_UNDERWATER_ASTERI_EXP_CANDY_M                     0x40C
+#define FLAG_ITEM_UNDERWATER_ASTERI_DIVE_BALL                       0x40D
+#define FLAG_ITEM_UNDERWATER_ASTERI_DEEP_SEA_SCALE                  0x40E
+#define FLAG_ITEM_UNDERWATER_VULCAI_DEEP_SEA_TOOTH                  0x40F
+#define FLAG_ITEM_UNDERWATER_VULCAI_DIVE_BALL                       0x410
+#define FLAG_ITEM_UNDERWATER_ASTERI_HP_UP                           0x411
+#define FLAG_ITEM_UNDERWATER_ASTERI_NUGGET                          0x412
+#define FLAG_ITEM_UNDERWATER_ASTERI_WISHING_STAR                    0x413
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
@@ -1311,9 +1311,9 @@
 #define FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND       0x4EA // Separate flag to hide Thyrsus during event above
 #define FLAG_HIDE_CHIMERA_GRUNTS_MARMARO_MINES                      0x4EB // Hides the Chimera Grunts in the Marmaro Mines after they are defeated
 #define FLAG_HIDE_GRUNT_BLOCKING_MARMARO_MINES                      0x4EC // Specifically hides the chimera grunt blocking the Marmaro Mines
-#define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
-#define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
-#define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
+#define FLAG_HIDE_NIKO_PENTEPETAL_CITY                              0x4ED // hides Niko in Pentepetal for event
+#define FLAG_HIDE_CHIMERA_PENTEPETAL_CITY                           0x4EE // hides team chimera, cranidos, and shieldon after pentepetal event
+#define FLAG_HIDE_RANIA_PENTEPETAL_CITY                             0x4EF // hides rania in pentepetal after event
 
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1
@@ -1379,7 +1379,7 @@
 #define FLAG_VISITED_CHAMPIONS_PEAK                 (SYSTEM_FLAGS + 0x19) // replaced rustboro city
 #define FLAG_VISITED_KALAMI_CITY                    (SYSTEM_FLAGS + 0x1A) // replaced fortree city
 #define FLAG_VISITED_KIPOS_TOWN                     (SYSTEM_FLAGS + 0x1B) // replaced lilycove city
-#define FLAG_VISITED_MOSSDEEP_CITY                  (SYSTEM_FLAGS + 0x1C)
+#define FLAG_VISITED_PENTEPETAL_CITY                (SYSTEM_FLAGS + 0x1C) // replaced mossdeep city
 #define FLAG_VISITED_SOOTOPOLIS_CITY                (SYSTEM_FLAGS + 0x1D)
 #define FLAG_VISITED_EVER_GRANDE_CITY               (SYSTEM_FLAGS + 0x1E)
 

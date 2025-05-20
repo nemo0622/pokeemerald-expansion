@@ -427,6 +427,12 @@ $(OBJEVENTGFXDIR)/people/team_chimera/chimera_admin_m.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/team_chimera/chimera_admin_f.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/misc/item_ball.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+
+$(OBJEVENTGFXDIR)/misc/item_ball_underwater.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+
 $(OBJEVENTGFXDIR)/misc/windmill/top_left.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
@@ -4491,9 +4497,6 @@ $(OBJEVENTGFXDIR)/people/diving_triathlete_m.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/people/diving_youngster.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
-
-$(OBJEVENTGFXDIR)/misc/item_ball_underwater.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(SLIDINGPUZZLESDIR)/kabuto/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4

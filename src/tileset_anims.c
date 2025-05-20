@@ -68,6 +68,7 @@ static void QueueAnimTiles_Pacifidlog_LogBridges(u8);
 static void QueueAnimTiles_Pacifidlog_WaterCurrents(u8);
 static void QueueAnimTiles_Sootopolis_StormyWater(u16);
 static void QueueAnimTiles_Underwater_Seaweed(u8);
+static void QueueAnimTiles_Underwater_Kelp(u8);
 static void QueueAnimTiles_Cave_Lava(u16);
 static void QueueAnimTiles_BattleFrontierOutsideWest_Flag(u16);
 static void QueueAnimTiles_BattleFrontierOutsideEast_Flag(u16);
@@ -184,6 +185,18 @@ const u16 *const gTilesetAnims_Underwater_Seaweed[] = {
     gTilesetAnims_Underwater_Seaweed_Frame1,
     gTilesetAnims_Underwater_Seaweed_Frame2,
     gTilesetAnims_Underwater_Seaweed_Frame3
+};
+
+const u16 gTilesetAnims_Underwater_Kelp_Frame0[] = INCBIN_U16("data/tilesets/secondary/underwater/anim/kelp/0.4bpp");
+const u16 gTilesetAnims_Underwater_Kelp_Frame1[] = INCBIN_U16("data/tilesets/secondary/underwater/anim/kelp/1.4bpp");
+const u16 gTilesetAnims_Underwater_Kelp_Frame2[] = INCBIN_U16("data/tilesets/secondary/underwater/anim/kelp/2.4bpp");
+const u16 gTilesetAnims_Underwater_Kelp_Frame3[] = INCBIN_U16("data/tilesets/secondary/underwater/anim/kelp/3.4bpp");
+
+const u16 *const gTilesetAnims_Underwater_Kelp[] = {
+    gTilesetAnims_Underwater_Kelp_Frame0,
+    gTilesetAnims_Underwater_Kelp_Frame1,
+    gTilesetAnims_Underwater_Kelp_Frame2,
+    gTilesetAnims_Underwater_Kelp_Frame3
 };
 
 const u16 gTilesetAnims_Pacifidlog_WaterCurrents_Frame0[] = INCBIN_U16("data/tilesets/secondary/pacifidlog/anim/water_currents/0.4bpp");
@@ -1000,6 +1013,8 @@ static void TilesetAnim_Underwater(u16 timer)
 {
     if (timer % 16 == 0)
         QueueAnimTiles_Underwater_Seaweed(timer / 16);
+    if (timer % 16 == 1)
+        QueueAnimTiles_Underwater_Kelp(timer / 16);
 }
 
 static void TilesetAnim_Cave(u16 timer)
@@ -1045,6 +1060,12 @@ static void QueueAnimTiles_Underwater_Seaweed(u8 timer)
 {
     u8 i = timer % ARRAY_COUNT(gTilesetAnims_Underwater_Seaweed);
     AppendTilesetAnimToBuffer(gTilesetAnims_Underwater_Seaweed[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 496)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Underwater_Kelp(u8 timer)
+{
+    u8 i = timer % ARRAY_COUNT(gTilesetAnims_Underwater_Kelp);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Underwater_Kelp[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(0x3A0)), 8 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_Pacifidlog_WaterCurrents(u8 timer)

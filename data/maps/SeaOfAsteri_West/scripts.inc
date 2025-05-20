@@ -294,6 +294,22 @@ AsteriSea_EventScript_Trainer_AsteriSea_Hammon::
 	end
 
 
+AsteriSea_EventScript_NPC_ManExplainingDive::
+# 282 "data/maps/SeaOfAsteri_West/scripts.pory"
+	lock
+# 283 "data/maps/SeaOfAsteri_West/scripts.pory"
+	faceplayer
+# 284 "data/maps/SeaOfAsteri_West/scripts.pory"
+	speakername AsteriSea_EventScript_NPC_ManExplainingDive_Text_0
+# 285 "data/maps/SeaOfAsteri_West/scripts.pory"
+	msgbox AsteriSea_EventScript_NPC_ManExplainingDive_Text_1
+# 286 "data/maps/SeaOfAsteri_West/scripts.pory"
+	closemessage
+# 287 "data/maps/SeaOfAsteri_West/scripts.pory"
+	release
+	end
+
+
 AsteriSea_EventScript_Trainer_AsteriSea_Aeson_Text_0:
 # 27 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Aeson$"
@@ -359,9 +375,9 @@ AsteriSea_EventScript_Trainer_AsteriSea_Willy_Text_0:
 
 AsteriSea_EventScript_Trainer_AsteriSea_Willy_Text_1:
 # 129 "data/maps/SeaOfAsteri_West/scripts.pory"
-	.string "Sometimes I see people Dive into the\n"
-	.string "Crescent Trench. I wanna try it\l"
-	.string "someday!$"
+	.string "Sometimes I see people {COLOR GREEN}Dive into the\n"
+	.string "Crescent Trench{COLOR DARK_GRAY}. That's the only way to\l"
+	.string "swim {COLOR GREEN}south{COLOR DARK_GRAY}. I wanna try it someday!$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Celina_Text_0:
 # 146 "data/maps/SeaOfAsteri_West/scripts.pory"
@@ -445,6 +461,18 @@ AsteriSea_EventScript_Trainer_AsteriSea_Hammon_Text_1:
 	.string "Ancient athletes used to train in harsh\n"
 	.string "conditions like this.$"
 
+AsteriSea_EventScript_NPC_ManExplainingDive_Text_0:
+# 284 "data/maps/SeaOfAsteri_West/scripts.pory"
+	.string "Man$"
+
+AsteriSea_EventScript_NPC_ManExplainingDive_Text_1:
+# 285 "data/maps/SeaOfAsteri_West/scripts.pory"
+	.string "Hmm, what to do...\p"
+	.string "The only way to head {COLOR GREEN}south to the\n"
+	.string "Fresco Isles{COLOR DARK_GRAY} is by {COLOR GREEN}Diving in the\l"
+	.string "Crescent Trench{COLOR DARK_GRAY}. Problem is, I don't\l"
+	.string "know how to Dive yet!$"
+
 AsteriSea_Text_Trainer_AsteriSea_AesonIntro::
 # 33 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "There are so many tiny islands and\n"
@@ -491,7 +519,8 @@ AsteriSea_Text_Trainer_AsteriSea_TryfonDefeat::
 AsteriSea_Text_Trainer_AsteriSea_WillyIntro::
 # 134 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Ehehe, look how close I can get to the\n"
-	.string "Crescent Trench!$"
+	.string "{COLOR GREEN}Crescent Trench{COLOR DARK_GRAY}! Maybe I'll Dive down\l"
+	.string "and swim to the {COLOR GREEN}Sea of Vulcai{COLOR DARK_GRAY}!$"
 
 AsteriSea_Text_Trainer_AsteriSea_WillyDefeat::
 # 138 "data/maps/SeaOfAsteri_West/scripts.pory"

@@ -83,9 +83,9 @@ SootopolisCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_CRISSY
 	settrainerflag TRAINER_ASTERISEA_HONORIA
 	settrainerflag TRAINER_MARMAROMINES_CHIMERA_ADMIN_HARD
-	settrainerflag TRAINER_BRIDGET
-	settrainerflag TRAINER_OLIVIA
-	settrainerflag TRAINER_TIFFANY
+	settrainerflag TRAINER_UNDERWATER_JAN
+	settrainerflag TRAINER_UNDERWATER_PANAU
+	settrainerflag TRAINER_UNDERWATER_YARIKH
 	settrainerflag TRAINER_BETHANY
 	settrainerflag TRAINER_ANNIKA
 	settrainerflag TRAINER_ASTERISEA_SERGIUS

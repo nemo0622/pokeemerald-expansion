@@ -22,6 +22,11 @@
       "map": "MAP_SEA_OF_VULCAI_SOUTHWEST",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_SEA_OF_VULCAI_UNDERWATER",
+      "offset": 0,
+      "direction": "dive"
     }
   ],
   "object_events": [

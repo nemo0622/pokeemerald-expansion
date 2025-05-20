@@ -64,7 +64,8 @@
 #define QUEST_MYRRINI_HEART_SCALE               46 // bring punk rocker a heart scale in myrrini island house 3
 #define QUEST_FREE_MARMARO_MINES                47 // chase Team Chimera out of Marmaro Island Mine
 #define QUEST_VISIT_RANIA_PENTEPETAL            48 // talk to Rania in Péntepetal City
-#define QUEST_COUNT     (QUEST_VISIT_RANIA_PENTEPETAL + 1)
+#define QUEST_GIVE_REVIVE_UNDERWATER            49 // bring diver a Revive in Sea of Asteri underwater east
+#define QUEST_COUNT     (QUEST_GIVE_REVIVE_UNDERWATER + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

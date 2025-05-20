@@ -586,9 +586,7 @@ script MyrriniIsland_EventScript_ChimeraEvent
     // Start Quest to visit Marmaro Island Mines
     // Quest will require beating a Team Chimera Admin at the Marmaro Island cave area
     // This unlocks the Mining minigame, and the main Miner will also give the Dive HM
-    // in gratitude.
-    // Also, edit the sea east of Marmaro Island to require Dive to get south to
-    // the Fresco Isles, making another HM roadblock!
+    // in gratitude. Diving in the Crescent Trench allows swimming down to the Sea of Vulcai!
     delay(20)
     startquest(QUEST_FREE_MARMARO_MINES)
     closemessage

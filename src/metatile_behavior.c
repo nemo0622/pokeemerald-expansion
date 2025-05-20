@@ -821,6 +821,8 @@ bool8 MetatileBehavior_IsLandWildEncounter(u8 metatileBehavior)
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
      && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
         return TRUE;
+    else if(metatileBehavior == MB_SEAWEED_NO_SURFACING || metatileBehavior == MB_SEAWEED) // is seaweed tile, load land encounter table (allows for more variety)
+        return TRUE;
     else
         return FALSE;
 }

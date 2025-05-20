@@ -4,9 +4,9 @@ A Pokémon ROM Hack based on the [pokeemerald-expansion](https://github.com/rh-h
 
 ## What is Pokémon Lazarus?
 
-This ROM Hack takes place in a brand new region, with a whole new adventure ahead of you! By helping people and making an impact on this living, active region, you can rise through the ranks and become a great Pokémon Trainer.
+This ROM Hack takes place in a brand new region, with a whole new adventure ahead of you! Your goal is to complete the Pokédex and assist the Acrisia University in their quest to understand the Pokémon of the Ilios Region. On this quest, you will grow as a Pokémon Trainer, challenging Gyms and stopping the evil Team Chimera.
 
-Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animals and ecosystems. After creating Pokémon Emerald Seaglass, I really wanted to continue my ROM Hacking journey, but I wanted to get more experimental and tie in my real world interests. As a Biology student in college, I have been constantly inspired by classes and what I've learned, and now I hope to apply this passion in a Pokémon game. I hope this experience helps people to think more about the environment around them! :)
+Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animals and ecosystems. After creating Pokémon Emerald Seaglass, I really wanted to continue my ROM Hacking journey, but I wanted to get more experimental and tie in my real world interests. As a recent Biology student graduate headed for grad school, I have been constantly inspired by classes and what I've learned. I hope this shines through in the Ilios Region, as I am striving to make it feel alive!
 
 ## Feature List
 - Graphics in a GBC-like style, mixing Generation II graphics with GBA capabilities to form "Generation 2.5 style"
@@ -14,9 +14,9 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 - A completely new region, the Ilios Region, based on the geographical region of Greece
     - Various references to Greek history and culture
     - All routes & locations have unique names, looks, and ecosystems!
-- Carefully curated Pokédex of 400 Pokémon from Generations 1-9 in a beautiful GBC style!
+- Carefully curated Pokédex of over 400 Pokémon from Generations 1-9 in a beautiful GBC style!
     - Many Pokémon have undergone rebalancing, with new moves, abilities, and slight stat changes!
-    - Including regional (Alolan/Galarian/Hisuian) forms, total count is around 430 unique Pokémon
+    - Including regional (Alolan/Galarian/Hisuian) forms, total count is around 450 unique Pokémon (Pokédex count of 420)
 - Day/Night System with FakeRTC
     - Every second in real time is 30 seconds in game (2 real minutes = 1 in-game hour)
     - Comes with Day/Night Encounter Differences! All found in Documentation
@@ -41,6 +41,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
     - Pinball in Sofos City, earning Pinball Points to exchange for items
     - Battle Pavilions in multiple areas, replicating Battle Tents of Pokémon Emerald with new Pokémon and balancing
     - Pokémon Contests, with slight stat bonuses given to Pokémon with Ribbons
+    - Mining Expeditions on Marmaro Island, providing shards, fossils, and more!
     - Dozens of optional sidequests for a variety of fun rewards and events!
 - Various QOL Changes, such as:
     - A dedicated Quest Menu to keep track of story objectives
@@ -63,8 +64,9 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
+- Expand Wolfey code to give Poliwag w/ Kings Rock & Perish Song and Gothita w/ Shadow Tag ability
+    - Wolfey con perish nod emoji
 - Continue Mapping and NPC development
-    - DIVE MAPS! Add a Pearl String item underwater for quest
     - Péntepetal City!
         - Rania's quest - meet up with Rania on Péntepetal City following the events of Myrrini Island. She'll tell you
         that even Péntepetal isn't safe from Team Chimera, as they've rounded up ALL Cranidos and Shieldon on the island
@@ -73,8 +75,7 @@ MAJOR TODOS:
             - Explains why there are no Cranidos/Shieldon in the wild - all rounded up, and come under the care of
             Scientists and Zookeepers afterwards
             - Reward: A Cranidos or Shieldon, at random?
-- MINING MINIGAME ITEM REPLACEMENTS
-    - Make sure all bag Item sprites for all possible mining rewards are in GBC style! it's the little things :)
+- Add Signposts to every new route and town
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas:
@@ -90,7 +91,6 @@ MAJOR TODOS:
             - Tan brick buildings with orange roofs, like [this picture](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theotheraegean.com%2F2021%2F02%2Farchitecture-in-lesvos%2F&psig=AOvVaw3olmDfEWQHULi5WEdmzN8T&ust=1746277667381000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCOCGiLLthI0DFQAAAAAdAAAAABAR) of Molyvos, Lesbos
             - Questline unlocking Eternal Flower Floette
             - Major Cabin Decor shops! Ways here to unlock many poké dolls?
-            - Wishing Star mart location could be here too! Makes sense to make it late-ish in game (~after Gym 5/6)
             - POKéMON CONTEST HALL could be located here! (Implement Pokémon with Ribbons get slight stat boost)
         - The Pollen Road - route east of Péntepetal City, home to many Tropius, Roselia, and Lileep
         - Davosian Strait - ocean route heading north of the Pollen Road (name inspired by Ser Davos Seaworth)
@@ -104,12 +104,12 @@ MAJOR TODOS:
 - Give all Pokémon unique Pokédex entries
 - Add Cecilily as a trainer
     - "PkMn Trainer" class, comissioned sprite or she can choose one?
-    - Rewards with level 10 Johto starters
-    - Can be rebattled after the Elite Four (when flag FLAG_SYS_GAME_CLEAR set) to give Johto starter cabin dolls!
+    - Rewarded with Johto starter cabin dolls
 - Implement Biv's Fishing Minigame
     - Also create options menu toggle for it
     - TREASURE IDEAS:
         - Pearl, Big Pearl, and Pearl String (for that one quest in Asteri Sea West!)
+        - Wishing Stars of course
 - Implement Chris Piché's Game Corner Expansion minigames
     - Blackjack, Ponyta Racing, and Voltorb Flip are the big ones I care about
     - Also, remove Pinball Points and integrate Coins into Pinball games!
@@ -136,12 +136,10 @@ GREEK PHRASES AND STUFF:
         - Niko provides unique Pokéballs + Catching Charm, also becomes the Tera Type changer
             - After unlocking Terastallization, increase Niko's State variable. When the state is greater than or equal to that value, have Niko ask if you're looking for Tera Type Change or Conversation (rewards, etc)
     - MISSING IMPORTANT BUILDINGS / LOCATIONS / UNLOCKS
-        - Daycare for Pokémon Breeding
-            - Myrrini Island!
         - Contest Hall (Péntepetal City!) (+ unique Contest competitors)
         - Battle Pavilions
-            - 1 in Sofos City, already added
-            - #2 could go in Myrrini Island, and #3 could be in Port Pello?
+            - 1(Sofos City) and 2 (Myrrini Island) already added
+            - #3 could be in Port Pello?
         - Berry plant locations
         - Fishing Rod locations (Super rod still need place)
         - Safari Zone?
@@ -154,6 +152,7 @@ GREEK PHRASES AND STUFF:
             - Unlocked by Rania quest line?
         - Spiky Ear Pichu gift
         - Wishing Star mart location
+            - Port Pello! Late game, encourages Mining Expeditions instead
         - Eternal Flower Floette gift event
             - Reward for something (lol) in Péntepetal City
         - Cabin (secret base) decor shops!
@@ -195,6 +194,7 @@ Many, many talented developers and artists are responsible for making this proje
     - Pokémon Center, Mart, and Gym Buildings by TrainerDX
     - Some GBC-style default houses by TrainerDX
     - Broken pillar tiles by Hek-el-Grande on DeviantArt
+    - Coral tiles by Ekat99 on DeviantArt
 - Pokémon Sprites:
     Numbers below match sprites on the official Pokémon Lazarus Ilios Pokédex Image:
     1. Sprite created/edited by Nemo622 (edits based on pokeemerald-expansion sprites)
@@ -256,6 +256,7 @@ Many, many talented developers and artists are responsible for making this proje
         - A few Gen 6 icon sprites by  dragonball253 (some Kalos starter icons)
     - Battle Backgrounds based on work by PurrfectDoodle, RavePossum, and Ruki; some slight edits by me
     - HGSS-style map icon kit by NikNaks93 on DeviantArt
+    - Many, many item Bag icons by glados11388
 
 
 

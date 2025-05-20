@@ -14300,7 +14300,7 @@
               {
                 "min_level": 18,
                 "max_level": 26,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_WINGULL"
               },
               {
                 "min_level": 18,
@@ -14454,7 +14454,7 @@
               {
                 "min_level": 18,
                 "max_level": 26,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_WINGULL"
               },
               {
                 "min_level": 18,
@@ -14916,7 +14916,7 @@
               {
                 "min_level": 20,
                 "max_level": 26,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_WATTREL"
               },
               {
                 "min_level": 20,
@@ -15070,7 +15070,7 @@
               {
                 "min_level": 20,
                 "max_level": 26,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_WATTREL"
               },
               {
                 "min_level": 20,
@@ -18091,12 +18091,12 @@
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_JANGMO_O"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_JANGMO_O"
               }
             ]
           },
@@ -19536,6 +19536,213 @@
                 "min_level": 20,
                 "max_level": 30,
                 "species": "SPECIES_CORSOLA_GALARIAN"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SEA_OF_ASTERI_UNDERWATER",
+          "base_label": "gSeaOfAsteri_Underwater0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_FINNEON"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_TENTACOOL"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_WAILMER"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_WAILMER"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_CLAUNCHER"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_SKRELP"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_GYARADOS"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SEA_OF_VULCAI_UNDERWATER",
+          "base_label": "gSeaOfVulcai_Underwater0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_FINNEON"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_REMORAID"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_WAILMER"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_WAILMER"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_SKRELP"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_OCTILLERY"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_CORSOLA_GALARIAN"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_CORSOLA_GALARIAN"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_GYARADOS"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SEA_OF_ASTERI_UNDERWATER_EAST",
+          "base_label": "gSeaOfAsteri_Underwater_East0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_FINNEON"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_TENTACOOL"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_WAILMER"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_WAILMER"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_CORPHISH"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_FINIZEN"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_REMORAID"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_REMORAID"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_FLOATZEL"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_FLOATZEL"
               }
             ]
           }

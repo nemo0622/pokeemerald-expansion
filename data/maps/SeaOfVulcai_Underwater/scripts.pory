@@ -1,0 +1,55 @@
+mapscripts SeaOfVulcai_Underwater_MapScripts {}
+
+script VulcaiSea_Underwater_EventScript_Trainer_Underwater_Mauricius
+{
+    trainerbattle_single(TRAINER_UNDERWATER_MAURICIUS, VulcaiSea_Underwater_Text_Trainer_Underwater_MauriciusIntro, VulcaiSea_Underwater_Text_Trainer_Underwater_MauriciusDefeat)
+    speakername("Mauricius")
+    msgbox(format("Most Trainers can't use Dive to get into these waters. It's hard for most people to get south to the Fresco Isles now."))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Underwater_Text_Trainer_Underwater_MauriciusIntro
+{
+    format("See that? We're swimming under the blockage between the Sea of Asteri and Sea of Vulcai!")
+}
+text VulcaiSea_Underwater_Text_Trainer_Underwater_MauriciusDefeat
+{
+    format("I'll keep swimming, then.")
+}
+
+script VulcaiSea_Underwater_EventScript_Trainer_Underwater_Quintus
+{
+    trainerbattle_single(TRAINER_UNDERWATER_QUINTUS, VulcaiSea_Underwater_Text_Trainer_Underwater_QuintusIntro, VulcaiSea_Underwater_Text_Trainer_Underwater_QuintusDefeat)
+    speakername("Quintus")
+    msgbox(format("Lots of things are lost at sea and preserved. In fact, some areas further south have entire ancient buildings underwater!"))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Underwater_Text_Trainer_Underwater_QuintusIntro
+{
+    format("Check out all these sunken ships... I wonder how old they are.")
+}
+text VulcaiSea_Underwater_Text_Trainer_Underwater_QuintusDefeat
+{
+    format("We'd better steer clear of them.")
+}
+
+script VulcaiSea_Underwater_EventScript_Trainer_Underwater_Arik
+{
+    trainerbattle_single(TRAINER_UNDERWATER_ARIK, VulcaiSea_Underwater_Text_Trainer_Underwater_ArikIntro, VulcaiSea_Underwater_Text_Trainer_Underwater_ArikDefeat)
+    speakername("Arik")
+    msgbox(format("The items needed to evolve Clamperl can be found down here. Apparently, they're super rare."))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Underwater_Text_Trainer_Underwater_ArikIntro
+{
+    format("There's so much hidden treasure down here!")
+}
+text VulcaiSea_Underwater_Text_Trainer_Underwater_ArikDefeat
+{
+    format("Hey, the treasure is mine!")
+}

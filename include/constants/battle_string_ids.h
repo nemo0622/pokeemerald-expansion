@@ -713,7 +713,33 @@
 #define STRINGID_PKMNMADESHELLGLEAM                   711
 #define STRINGID_FICKLEBEAMDOUBLED                    712
 
-#define BATTLESTRINGS_COUNT                           713
+#define STRINGID_HARDY 713
+#define STRINGID_LONELY 714
+#define STRINGID_BRAVE 715
+#define STRINGID_ADAMANT 716
+#define STRINGID_NAUGHTY 717
+#define STRINGID_BOLD 718
+#define STRINGID_DOCILE 719
+#define STRINGID_RELAXED 720
+#define STRINGID_IMPISH 721
+#define STRINGID_LAX 722
+#define STRINGID_TIMID 723
+#define STRINGID_HASTY 724
+#define STRINGID_SERIOUS 725
+#define STRINGID_JOLLY 726
+#define STRINGID_NAIVE 727
+#define STRINGID_MODEST 728
+#define STRINGID_MILD 729
+#define STRINGID_QUIET 730
+#define STRINGID_BASHFUL 731
+#define STRINGID_RASH 732
+#define STRINGID_CALM 733
+#define STRINGID_GENTLE 734
+#define STRINGID_SASSY 735
+#define STRINGID_CAREFUL 736
+#define STRINGID_QUIRKY 737
+
+#define BATTLESTRINGS_COUNT                           738
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

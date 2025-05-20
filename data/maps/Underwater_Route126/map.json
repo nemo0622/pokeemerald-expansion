@@ -47,7 +47,7 @@
       "y": 17,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE"
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_ASTERI_HEART_SCALE"
     },
     {
       "type": "hidden_item",
@@ -55,7 +55,7 @@
       "y": 19,
       "elevation": 3,
       "item": "ITEM_ULTRA_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL"
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_VULCAI_WATER_STONE"
     },
     {
       "type": "hidden_item",
@@ -63,7 +63,7 @@
       "y": 19,
       "elevation": 3,
       "item": "ITEM_STARDUST",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST"
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_VULCAI_EVIOLITE"
     },
     {
       "type": "hidden_item",
@@ -103,7 +103,7 @@
       "y": 77,
       "elevation": 3,
       "item": "ITEM_BLUE_SHARD",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD"
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_ASTERI_PEARL_STRING"
     }
   ]
 }

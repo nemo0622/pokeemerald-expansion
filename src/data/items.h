@@ -10664,8 +10664,8 @@ const struct Item gItemsInfo[] =
         .name = _("TM18"),
         .price = 2000,
         .description = COMPOUND_STRING(
-            "Raises the power of\n"
-            "Water-type moves\n"
+            "Move: Rain Dance\n"
+            "Summons rainclouds\n"
             "for 5 turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,

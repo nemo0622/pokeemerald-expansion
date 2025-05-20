@@ -5520,6 +5520,46 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MarmaroMines/border.bin",
       "blockdata_filepath": "data/layouts/MarmaroMines/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEA_OF_ASTERI_UNDERWATER",
+      "name": "SeaOfAsteri_Underwater_Layout",
+      "width": 90,
+      "height": 70,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/SeaOfAsteri_Underwater/border.bin",
+      "blockdata_filepath": "data/layouts/SeaOfAsteri_Underwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEA_OF_VULCAI_UNDERWATER",
+      "name": "SeaOfVulcai_Underwater_Layout",
+      "width": 90,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/SeaOfVulcai_Underwater/border.bin",
+      "blockdata_filepath": "data/layouts/SeaOfVulcai_Underwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEA_OF_ASTERI_UNDERWATER_EAST",
+      "name": "SeaOfAsteri_Underwater_East_Layout",
+      "width": 56,
+      "height": 64,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/SeaOfAsteri_Underwater_East/border.bin",
+      "blockdata_filepath": "data/layouts/SeaOfAsteri_Underwater_East/map.bin"
+    },
+    {
+      "id": "LAYOUT_PENTEPETAL_CITY",
+      "name": "PentepetalCity_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pentepetal",
+      "border_filepath": "data/layouts/PentepetalCity/border.bin",
+      "blockdata_filepath": "data/layouts/PentepetalCity/map.bin"
     }
   ]
 }

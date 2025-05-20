@@ -256,6 +256,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diver;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PIRAEUS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Admin_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chimera_Admin_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ItemBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ItemBall_Underwater;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Windmill_TL;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Windmill_TR;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Windmill_BL;
@@ -563,7 +565,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M] =     &gObjectEventGraphicsInfo_CyclingTriathleteM,
     [OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F] =     &gObjectEventGraphicsInfo_CyclingTriathleteF,
     [OBJ_EVENT_GFX_NURSE] =                    &gObjectEventGraphicsInfo_Nurse,
-    [OBJ_EVENT_GFX_ITEM_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_BERRY_TREE] =               &gObjectEventGraphicsInfo_BerryTree,
     [OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES] =  &gObjectEventGraphicsInfo_BerryTreeEarlyStages,
     [OBJ_EVENT_GFX_BERRY_TREE_LATE_STAGES] =   &gObjectEventGraphicsInfo_BerryTreeLateStages,
@@ -753,6 +754,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PIRAEUS] =                   &gObjectEventGraphicsInfo_PIRAEUS,
     [OBJ_EVENT_GFX_CHIMERA_ADMIN_M] =  &gObjectEventGraphicsInfo_Chimera_Admin_M,
     [OBJ_EVENT_GFX_CHIMERA_ADMIN_F] =  &gObjectEventGraphicsInfo_Chimera_Admin_F,
+    [OBJ_EVENT_GFX_ITEM_BALL] =  &gObjectEventGraphicsInfo_ItemBall,
+    [OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER] =  &gObjectEventGraphicsInfo_ItemBall_Underwater,
     [OBJ_EVENT_GFX_WINDMILL_TL] =  &gObjectEventGraphicsInfo_Windmill_TL,
     [OBJ_EVENT_GFX_WINDMILL_TR] =  &gObjectEventGraphicsInfo_Windmill_TR,
     [OBJ_EVENT_GFX_WINDMILL_BL] =  &gObjectEventGraphicsInfo_Windmill_BL,

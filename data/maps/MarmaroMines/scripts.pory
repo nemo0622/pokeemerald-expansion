@@ -189,7 +189,7 @@ script MarmaroMines_EventScript_Petros
     lock
     faceplayer
     speakername("Petros")
-    msgbox(format("Chaire, {PLAYER}! Good to see your face around here. Are you interested in a {COLOR GREEN}mining expedition{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+    msgbox(format("Chaire, {PLAYER}! Good to see your face around here. Are you interested in a {COLOR GREEN}Mining Expedition{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
     closemessage
     delay(5)
     if(var(VAR_RESULT) == FALSE)

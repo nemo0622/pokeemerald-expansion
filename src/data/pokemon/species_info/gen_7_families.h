@@ -1304,7 +1304,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_Crabrawler,
         .iconSprite = gMonIcon_Crabrawler,
         .iconPalIndex = 2,
-        SHADOW(6, 5, SHADOW_SIZE_M)
+        SHADOW(2, 5, SHADOW_SIZE_M)
         FOOTPRINT(Crabrawler)
         OVERWORLD(
             sPicTable_Crabrawler,

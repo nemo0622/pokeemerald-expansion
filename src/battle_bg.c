@@ -841,6 +841,13 @@ void DrawMainBattleBackground(void)
             LoadCompressedPalette(gBattleTerrainPalette_PondWater, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             return;
         }
+        else if(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_UNDERWATER) // if player is underwater
+        {
+            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_UNDERWATER].tileset, (void *)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_UNDERWATER].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(gBattleTerrainPalette_Underwater, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            return;
+        }
 
         // Map-specific failsafes to try and avoid "Plain" battle background
         // Sometimes it's fine, but something is better than the nothing plain background lol

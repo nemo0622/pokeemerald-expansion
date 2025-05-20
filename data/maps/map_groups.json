@@ -139,7 +139,11 @@
     "KiposTown",
     "KiposTown_Zoo",
     "KiposTown_ZooNorth",
-    "LastlightRoad"
+    "LastlightRoad",
+    "SeaOfAsteri_Underwater",
+    "SeaOfVulcai_Underwater",
+    "SeaOfAsteri_Underwater_East",
+    "PentepetalCity"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

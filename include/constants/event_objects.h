@@ -511,10 +511,12 @@
 #define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_WATERING      478
 #define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_DECORATING    479
 
+#define OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER    480
+
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        480
+#define NUM_OBJ_EVENT_GFX                        481
 
 
 // These are dynamic object gfx ids.

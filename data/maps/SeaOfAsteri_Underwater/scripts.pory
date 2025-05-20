@@ -1,0 +1,73 @@
+mapscripts SeaOfAsteri_Underwater_MapScripts {}
+
+script AsteriSea_Underwater_EventScript_Trainer_Underwater_Jan
+{
+    trainerbattle_single(TRAINER_UNDERWATER_JAN, AsteriSea_Underwater_Text_Trainer_Underwater_JanIntro, AsteriSea_Underwater_Text_Trainer_Underwater_JanDefeat)
+    speakername("Jan")
+    msgbox(format("Pokémon can be found in the seaweed and kelp down here. They're all so amazing!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Underwater_Text_Trainer_Underwater_JanIntro
+{
+    format("Everything has a blue tint down here. It's beautiful!")
+}
+text AsteriSea_Underwater_Text_Trainer_Underwater_JanDefeat
+{
+    format("Oh no! The beauty is ruined!")
+}
+
+script AsteriSea_Underwater_EventScript_Trainer_Underwater_Panau
+{
+    trainerbattle_single(TRAINER_UNDERWATER_PANAU, AsteriSea_Underwater_Text_Trainer_Underwater_PanauIntro, AsteriSea_Underwater_Text_Trainer_Underwater_PanauDefeat)
+    speakername("Panau")
+    msgbox(format("You can only get back to the surface where the light reaches. Otherwise, you don't know what you'd be swimming up into."))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Underwater_Text_Trainer_Underwater_PanauIntro
+{
+    format("We're beneath floating islands down here. It wouldn't be safe to surface.")
+}
+text AsteriSea_Underwater_Text_Trainer_Underwater_PanauDefeat
+{
+    format("Let's get out of here!")
+}
+
+script AsteriSea_Underwater_EventScript_Trainer_Underwater_Yarikh
+{
+    trainerbattle_single(TRAINER_UNDERWATER_YARIKH, AsteriSea_Underwater_Text_Trainer_Underwater_YarikhIntro, AsteriSea_Underwater_Text_Trainer_Underwater_YarikhDefeat)
+    speakername("Yarikh")
+    msgbox(format("There are reports of Gyarados swimming in the depths here. That would be perfect for my team!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Underwater_Text_Trainer_Underwater_YarikhIntro
+{
+    format("I know there's a sea serpent down here!")
+}
+text AsteriSea_Underwater_Text_Trainer_Underwater_YarikhDefeat
+{
+    format("I have to keep looking!")
+}
+
+script AsteriSea_Underwater_EventScript_Trainer_Underwater_Weston
+{
+    trainerbattle_single(TRAINER_UNDERWATER_WESTON, AsteriSea_Underwater_Text_Trainer_Underwater_WestonIntro, AsteriSea_Underwater_Text_Trainer_Underwater_WestonDefeat)
+    speakername("Weston")
+    msgbox(format("Some parts of the ocean get super deep. This area is relatively shallow, but I can't see the bottom of the Crescent Trench!"))
+    closemessage
+    release
+    end
+}
+text AsteriSea_Underwater_Text_Trainer_Underwater_WestonIntro
+{
+    format("The best part about living on the coast is going diving!")
+}
+text AsteriSea_Underwater_Text_Trainer_Underwater_WestonDefeat
+{
+    format("Maybe I'm not as good as I thought.")
+}

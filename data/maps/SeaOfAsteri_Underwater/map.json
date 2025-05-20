@@ -1,0 +1,157 @@
+{
+  "id": "MAP_SEA_OF_ASTERI_UNDERWATER",
+  "name": "SeaOfAsteri_Underwater",
+  "layout": "LAYOUT_SEA_OF_ASTERI_UNDERWATER",
+  "music": "MUS_UNDERWATER",
+  "region_map_section": "MAPSEC_SEA_OF_ASTERI",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERWATER",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SEA_OF_ASTERI_WEST",
+      "offset": 0,
+      "direction": "emerge"
+    },
+    {
+      "map": "MAP_SEA_OF_VULCAI_UNDERWATER",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER",
+      "x": 10,
+      "y": 39,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_EXP_CANDY_M",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_UNDERWATER_ASTERI_EXP_CANDY_M"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER",
+      "x": 85,
+      "y": 50,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_DEEP_SEA_SCALE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_UNDERWATER_ASTERI_DEEP_SEA_SCALE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER",
+      "x": 24,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 3,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_DIVE_BALL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_UNDERWATER_ASTERI_DIVE_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIVER",
+      "x": 42,
+      "y": 38,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "AsteriSea_Underwater_EventScript_Trainer_Underwater_Jan",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIVER",
+      "x": 15,
+      "y": 36,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "AsteriSea_Underwater_EventScript_Trainer_Underwater_Panau",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIVER",
+      "x": 45,
+      "y": 62,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_range_x": 4,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "AsteriSea_Underwater_EventScript_Trainer_Underwater_Yarikh",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER",
+      "x": 32,
+      "y": 60,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_PEARL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_ASTERI_PEARL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIVER",
+      "x": 78,
+      "y": 55,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "AsteriSea_Underwater_EventScript_Trainer_Underwater_Weston",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 56,
+      "y": 41,
+      "elevation": 0,
+      "item": "ITEM_PEARL_STRING",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_ASTERI_PEARL_STRING"
+    },
+    {
+      "type": "hidden_item",
+      "x": 84,
+      "y": 59,
+      "elevation": 0,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_ASTERI_HEART_SCALE"
+    }
+  ]
+}

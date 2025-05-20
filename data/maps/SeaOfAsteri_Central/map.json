@@ -22,6 +22,11 @@
       "map": "MAP_MYRRINI_ISLAND",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_SEA_OF_ASTERI_UNDERWATER_EAST",
+      "offset": 0,
+      "direction": "dive"
     }
   ],
   "object_events": [
@@ -145,7 +150,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
       "x": 46,
-      "y": 40,
+      "y": 41,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,

@@ -390,7 +390,7 @@ void UniquePalette(u16 palOffset, u16 species, u32 personality, bool8 isShiny)
 	u32 value;
 	s32 shift;
 	// s8 limitMode = sHueShiftSpeciesLimit[species];
-	s8 limitMode = 3; // what type of limit there is. they all mean something idk. "2" seems to be relatively slight
+	s8 limitMode = 2; // what type of limit there is. they all mean something idk. "2" seems to be relatively slight
 
 	value = (personality >> 8) & 0xFFFF;
 

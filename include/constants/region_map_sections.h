@@ -99,7 +99,7 @@
 #define MAPSEC_AREIOS_HIDEOUT               0x5F // City after Nyx Trails, based on Sparta, hideout of evil team
 #define MAPSEC_CHAMPIONS_PEAK               0x60 // Elite Four location
 #define MAPSEC_KALAMI_CITY                  0x61 // east of Acrisia City, new location
-#define MAPSEC_KIPOS_TOWN                 0x62
+#define MAPSEC_KIPOS_TOWN                   0x62 // south of Pythios Town, reached via Piraeus after Gym 4 (Sofos City)
 #define MAPSEC_ROUTE_4_POKECENTER           0x63
 #define MAPSEC_ROUTE_10_POKECENTER          0x64
 #define MAPSEC_BRONZE_PASS                  0x65 // Route connecting Acrisia City to Jusmail Town
@@ -118,7 +118,7 @@
 #define MAPSEC_RIVERWALK_TRAIL              0x72 // Route east of Acrisia City to Kalami City
 #define MAPSEC_LASTLIGHT_ROAD               0x73 // Road south of Kipos Town
 #define MAPSEC_TOWER_OF_DIOXIPPUS           0x74 // South of Kipos Town & Lastlight Road, has tower for Ho-oh
-#define MAPSEC_ROUTE_17                     0x75
+#define MAPSEC_PENTEPETAL_CITY              0x75 // North of Myrrini Island, reached via Piraeus after Gym 5 (Myrrini Island)
 #define MAPSEC_ROUTE_18                     0x76
 #define MAPSEC_ROUTE_19                     0x77
 #define MAPSEC_ROUTE_20                     0x78

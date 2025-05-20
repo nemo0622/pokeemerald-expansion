@@ -126,14 +126,14 @@ script AsteriSea_EventScript_Trainer_AsteriSea_Willy
 {
     trainerbattle_single(TRAINER_ASTERISEA_WILLY, AsteriSea_Text_Trainer_AsteriSea_WillyIntro, AsteriSea_Text_Trainer_AsteriSea_WillyDefeat)
     speakername("Willy")
-    msgbox(format("Sometimes I see people Dive into the Crescent Trench. I wanna try it someday!"))
+    msgbox(format("Sometimes I see people {COLOR GREEN}Dive into the Crescent Trench{COLOR DARK_GRAY}. That's the only way to swim {COLOR GREEN}south{COLOR DARK_GRAY}. I wanna try it someday!"))
     closemessage
     release
     end
 }
 text AsteriSea_Text_Trainer_AsteriSea_WillyIntro
 {
-    format("Ehehe, look how close I can get to the Crescent Trench!")
+    format("Ehehe, look how close I can get to the {COLOR GREEN}Crescent Trench{COLOR DARK_GRAY}! Maybe I'll Dive down and swim to the {COLOR GREEN}Sea of Vulcai{COLOR DARK_GRAY}!")
 }
 text AsteriSea_Text_Trainer_AsteriSea_WillyDefeat
 {
@@ -275,4 +275,15 @@ text AsteriSea_Text_Trainer_AsteriSea_HammonIntro
 text AsteriSea_Text_Trainer_AsteriSea_HammonDefeat
 {
     format("Huff... puff...")
+}
+
+script AsteriSea_EventScript_NPC_ManExplainingDive
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("Hmm, what to do...\p The only way to head {COLOR GREEN}south to the Fresco Isles{COLOR DARK_GRAY} is by {COLOR GREEN}Diving in the Crescent Trench{COLOR DARK_GRAY}. Problem is, I don't know how to Dive yet!"))
+    closemessage
+    release
+    end
 }

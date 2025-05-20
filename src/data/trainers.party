@@ -3720,7 +3720,7 @@ Pic: Chimera Admin M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Check Viability  / AI_FLAG_ACE_POKEMON
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
 Party Size: 4
 Pool Rules: Basic
 
@@ -3841,181 +3841,217 @@ Tags: Ace
 - Accelerock
 - Fire Fang
 
-=== TRAINER_BRIDGET ===
-Name: BRIDGET
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
+=== TRAINER_UNDERWATER_JAN ===
+Name: Jan
+Class: Diver
+Pic: Diver
+Gender: Male
+Music: Cool
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
-Azumarill
-Level: 40
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-=== TRAINER_OLIVIA ===
-Name: OLIVIA
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move
-
-Clamperl
-Level: 35
+Crabrawler
+Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Iron Defense
-- Whirlpool
-- Rain Dance
-- Water Pulse
+
+Croconaw
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Finizen
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_UNDERWATER_PANAU ===
+Name: Panau
+Class: Diver
+Pic: Diver
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
 
 Corphish
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Taunt
-- Crabhammer
-- Water Pulse
-
-Lombre
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Uproar
-- Fury Swipes
-- Fake Out
-- Water Pulse
-
-=== TRAINER_TIFFANY ===
-Name: TIFFANY
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move
-
-Carvanha
-Level: 39
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Sharpedo
-Level: 39
+Frogadier
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_JESSICA_2 ===
-Name: JESSICA
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move
+Quagsire
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Kecleon
-Level: 35
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
+Whiscash
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Seviper
-Level: 35
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Poison Tail
-- Screech
-- Glare
-- Crunch
-
-=== TRAINER_JESSICA_3 ===
-Name: JESSICA
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move
-
-Kecleon
-Level: 38
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
-
-Seviper
-Level: 38
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Poison Tail
-- Screech
-- Glare
-- Crunch
-
-=== TRAINER_JESSICA_4 ===
-Name: JESSICA
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move
-
-Kecleon
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
-
-Seviper
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Poison Tail
-- Screech
-- Glare
-- Crunch
-
-=== TRAINER_JESSICA_5 ===
-Name: JESSICA
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move
-
-Kecleon
-Level: 44
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
-
-Seviper
-Level: 44
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Poison Tail
-- Screech
-- Glare
-- Crunch
-
-=== TRAINER_WINSTON_1 ===
-Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
+=== TRAINER_UNDERWATER_YARIKH ===
+Name: Yarikh
+Class: Diver
+Pic: Diver
 Gender: Male
-Music: Rich
-Items: Full Restore
+Music: Cool
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vaporeon
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Water Pulse
+- Aurora Beam
+- Aqua Ring
+
+Dragonair
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Water Pulse
+- Dragon Rage
+- Twister
+
+=== TRAINER_UNDERWATER_WESTON ===
+Name: Weston
+Class: Diver
+Pic: Diver
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Corphish
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Poliwhirl
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Dewgong
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_UNDERWATER_MAURICIUS ===
+Name: Mauricius
+Class: Diver
+Pic: Diver
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Lanturn
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Sealeo
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Brionne
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_UNDERWATER_QUINTUS ===
+Name: Quintus
+Class: Diver
+Pic: Diver
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Corsola Galarian
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Basculin White Striped
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Lileep
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_UNDERWATER_ARIK ===
+Name: Arik
+Class: Diver
+Pic: Diver
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Clauncher
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Crabhammer
+- Swords Dance
+- Bug Bite
+
+Gorebyss
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Huntail
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Wailmer
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_PENTEPETAL_CHIMERA_GRUNT ===
+Name: Grunt
+Class: Team Chimera
+Pic: Chimera Grunt F
+Gender: Female
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+
+Cranidos
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Headbutt
+- Rock Smash
+- Submission
+
+Shieldon
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Magnet Bomb
+- Protect
+- Rock Throw
+
+Girafarig
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Stomp
+- Psybeam
+- Nasty Plot
+- Agility
+
+Spiritomb
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tags: Ace
+- Sucker Punch
+- Feint Attack
+- Ominous Wind
+- Confuse Ray
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE

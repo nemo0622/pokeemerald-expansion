@@ -1845,3 +1845,11 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/MyrriniIsland_Gym/scripts.inc"
 
 	.include "data/maps/MarmaroMines/scripts.inc"
+
+	.include "data/maps/SeaOfAsteri_Underwater/scripts.inc"
+
+	.include "data/maps/SeaOfVulcai_Underwater/scripts.inc"
+
+	.include "data/maps/SeaOfAsteri_Underwater_East/scripts.inc"
+
+	.include "data/maps/PentepetalCity/scripts.inc"

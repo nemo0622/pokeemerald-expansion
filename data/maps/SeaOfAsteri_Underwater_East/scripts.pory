@@ -1,0 +1,65 @@
+mapscripts SeaOfAsteri_Underwater_East_MapScripts {}
+
+script SeaOfAsteri_Underwater_East_EventScript_Diver
+{
+    lock
+    faceplayer
+    speakername("Diver")
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_GIVE_REVIVE_UNDERWATER)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Thanks to that Revive, my Pokémon is feeling strong again! Now we can keep swimming safely."))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_GIVE_REVIVE_UNDERWATER)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Hm? Oh, another Diver! Perfect!\p Here's my situation: my sweet little Tentacool got roughed up pretty bad down here, and now it's too dangerous for me to swim back to an island by myself. I need someone to {COLOR GREEN}bring me a Revive{COLOR DARK_GRAY} to help my Tentacool feel better. Please, if you have a {COLOR GREEN}Revive{COLOR DARK_GRAY}, help a guy out!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_GIVE_REVIVE_UNDERWATER)
+    }
+    else
+    {
+        msgbox(format("Oh, you're back, thank the Fates! Do you have a Revive, by any chance?"))
+        closemessage
+
+        checkitem(ITEM_REVIVE)
+        delay(30)
+
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Diver")
+            msgbox(format("Darn, looks like I'm still stranded.\p If you get a {COLOR GREEN}Revive{COLOR DARK_GRAY}, please let me know! I need my Tentacool to feel better ASAP!"))
+            closemessage
+        }
+        else
+        {
+            speakername("Diver")
+            msgbox(format("Hey, I knew you'd have one! I'll just use that on my Tentacool real quick..."))
+            closemessage
+            delay(50)
+            applymovement(4, Common_Movement_Heart)
+            delay(10)
+            speakername("Diver")
+            msgbox(format("Wow, Tentacool is full of energy again! This Revive must have really helped.\p You're a lifesaver, buddy. Take this TM as my thanks."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_TM_RAIN_DANCE)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_GIVE_REVIVE_UNDERWATER)
+        }
+    }
+
+    release
+    end
+}

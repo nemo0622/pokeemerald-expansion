@@ -477,7 +477,7 @@ MarmaroMines_EventScript_Petros_Text_0:
 # 192 "data/maps/MarmaroMines/scripts.pory"
 	.string "Chaire, {PLAYER}! Good to see your\n"
 	.string "face around here. Are you interested in\l"
-	.string "a {COLOR GREEN}mining expedition{COLOR DARK_GRAY}?$"
+	.string "a {COLOR GREEN}Mining Expedition{COLOR DARK_GRAY}?$"
 
 MarmaroMines_EventScript_Petros_Text_1:
 # 198 "data/maps/MarmaroMines/scripts.pory"

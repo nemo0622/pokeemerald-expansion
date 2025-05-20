@@ -1386,6 +1386,14 @@ static const struct SpriteFrameImage sPicTable_Chimera_Admin_F[] = {
     overworld_ascending_frames(gObjectEventPic_Chimera_Admin_F, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_ItemBall[] = {
+    overworld_frame(gObjectEventPic_ItemBall, 2, 2, 0),
+};
+
+static const struct SpriteFrameImage sPicTable_ItemBall_Underwater[] = {
+    overworld_frame(gObjectEventPic_ItemBall_Underwater, 2, 2, 0),
+};
+
 const struct SpriteFrameImage gObjectEventPicTable_Windmill_TL[] = {
     overworld_ascending_frames(gObjectEventPic_Windmill_TL, 8, 8),
 };

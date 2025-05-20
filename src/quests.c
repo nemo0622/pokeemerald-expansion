@@ -1062,6 +1062,16 @@ side_quest(
 	NULL,
 	0
 ),
+side_quest(
+	gText_SideQuestName_50, // QUEST_GIVE_REVIVE_UNDERWATER
+	gText_SideQuestDesc_50,
+	gText_SideQuestDesc_50,
+	gText_SideQuestMap50,
+	OBJ_EVENT_GFX_DIVER,
+	OBJECT,
+	NULL,
+	0
+),
 };
 ////////////////////////END QUEST CUSTOMIZATION////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
