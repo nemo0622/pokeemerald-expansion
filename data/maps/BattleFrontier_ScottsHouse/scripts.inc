@@ -98,7 +98,7 @@ BattleFrontier_ScottsHouse_EventScript_CheckGiveSilverShield::
 
 BattleFrontier_ScottsHouse_EventScript_GiveSilverShield::
 	msgbox BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow, MSGBOX_DEFAULT
-	givedecoration DECOR_SILVER_SHIELD
+	givedecoration DECOR_POTTED_BERRY
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_NoRoomForShield
 	setflag FLAG_RECEIVED_SILVER_SHIELD
 	setflag FLAG_TEMP_3
@@ -128,7 +128,7 @@ BattleFrontier_ScottsHouse_EventScript_CheckGiveGoldShield::
 
 BattleFrontier_ScottsHouse_EventScript_GiveGoldShield::
 	msgbox BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow, MSGBOX_DEFAULT
-	givedecoration DECOR_GOLD_SHIELD
+	givedecoration DECOR_SHOCKING_RELIC
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_NoRoomForShield
 	setflag FLAG_RECEIVED_GOLD_SHIELD
 	setflag FLAG_TEMP_3

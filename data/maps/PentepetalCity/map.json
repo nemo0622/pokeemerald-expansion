@@ -154,7 +154,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "PentepetalCity_EventScript_DollStreetVendor",
       "flag": "0"
     },
     {
@@ -171,7 +171,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SWABLU_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_TOTODILE_DOLL",
       "x": 24,
       "y": 36,
       "elevation": 0,
@@ -180,11 +180,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "PentepetalCity_DollDecorScript",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MEOWTH_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_STUFFUL_DOLL",
       "x": 20,
       "y": 36,
       "elevation": 0,
@@ -193,7 +193,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "PentepetalCity_DollDecorScript",
       "flag": "0"
     },
     {

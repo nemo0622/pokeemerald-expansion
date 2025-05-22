@@ -143,31 +143,31 @@
 #define OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN      139
 #define OBJ_EVENT_GFX_THE_DELPHIS                   140
 #define OBJ_EVENT_GFX_SUBMARINE_SHADOW           141
-#define OBJ_EVENT_GFX_PICHU_DOLL                 142
+#define OBJ_EVENT_GFX_MIMIKYU_DOLL               142
 #define OBJ_EVENT_GFX_PIKACHU_DOLL               143
-#define OBJ_EVENT_GFX_MARILL_DOLL                144
+#define OBJ_EVENT_GFX_CRABRAWLER_DOLL            144
 #define OBJ_EVENT_GFX_TOGEPI_DOLL                145
 #define OBJ_EVENT_GFX_CYNDAQUIL_DOLL             146
 #define OBJ_EVENT_GFX_CHIKORITA_DOLL             147
 #define OBJ_EVENT_GFX_TOTODILE_DOLL              148
 #define OBJ_EVENT_GFX_JIGGLYPUFF_DOLL            149
 #define OBJ_EVENT_GFX_MEOWTH_DOLL                150
-#define OBJ_EVENT_GFX_CLEFAIRY_DOLL              151
-#define OBJ_EVENT_GFX_EGG_DOLL                 152
-#define OBJ_EVENT_GFX_SMOOCHUM_DOLL              153
-#define OBJ_EVENT_GFX_TREECKO_DOLL               154
-#define OBJ_EVENT_GFX_TORCHIC_DOLL               155
-#define OBJ_EVENT_GFX_MUDKIP_DOLL                156
+#define OBJ_EVENT_GFX_IMPIDIMP_DOLL              151
+#define OBJ_EVENT_GFX_EGG_DOLL                   152
+#define OBJ_EVENT_GFX_ARCHEN_DOLL                153
+#define OBJ_EVENT_GFX_CHESPIN_DOLL               154
+#define OBJ_EVENT_GFX_FENNEKIN_DOLL              155
+#define OBJ_EVENT_GFX_FROAKIE_DOLL               156
 #define OBJ_EVENT_GFX_DUSKULL_DOLL               157
-#define OBJ_EVENT_GFX_WYNAUT_DOLL                158
+#define OBJ_EVENT_GFX_TIRTOUGA_DOLL              158
 #define OBJ_EVENT_GFX_BALTOY_DOLL                159
 #define OBJ_EVENT_GFX_KECLEON_DOLL               160
-#define OBJ_EVENT_GFX_AZURILL_DOLL               161
-#define OBJ_EVENT_GFX_SKITTY_DOLL                162
+#define OBJ_EVENT_GFX_STUFFUL_DOLL               161
+#define OBJ_EVENT_GFX_APPLIN_DOLL                162
 #define OBJ_EVENT_GFX_SWABLU_DOLL                163
-#define OBJ_EVENT_GFX_GULPIN_DOLL                164
-#define OBJ_EVENT_GFX_LOTAD_DOLL                 165
-#define OBJ_EVENT_GFX_SEEDOT_DOLL                166
+#define OBJ_EVENT_GFX_BOUNSWEET_DOLL             164
+#define OBJ_EVENT_GFX_SKIDDO_DOLL                165
+#define OBJ_EVENT_GFX_ROCKRUFF_DOLL              166
 #define OBJ_EVENT_GFX_PIKA_CUSHION               167
 #define OBJ_EVENT_GFX_ROUND_CUSHION              168
 #define OBJ_EVENT_GFX_KISS_CUSHION               169
@@ -178,16 +178,16 @@
 #define OBJ_EVENT_GFX_GRASS_CUSHION              174
 #define OBJ_EVENT_GFX_FIRE_CUSHION               175
 #define OBJ_EVENT_GFX_WATER_CUSHION              176
-#define OBJ_EVENT_GFX_BIG_SNORLAX_DOLL           177
-#define OBJ_EVENT_GFX_BIG_RHYDON_DOLL            178
+#define OBJ_EVENT_GFX_BIG_ARCANINE_DOLL          177
+#define OBJ_EVENT_GFX_BIG_KOMMO_O_DOLL           178
 #define OBJ_EVENT_GFX_BIG_LAPRAS_DOLL            179
-#define OBJ_EVENT_GFX_BIG_VENUSAUR_DOLL          180
-#define OBJ_EVENT_GFX_BIG_CHARIZARD_DOLL         181
-#define OBJ_EVENT_GFX_BIG_BLASTOISE_DOLL         182
-#define OBJ_EVENT_GFX_BIG_WAILMER_DOLL           183
-#define OBJ_EVENT_GFX_BIG_REGIROCK_DOLL          184
-#define OBJ_EVENT_GFX_BIG_REGICE_DOLL            185
-#define OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL         186
+#define OBJ_EVENT_GFX_BIG_RAIKOU_DOLL            180
+#define OBJ_EVENT_GFX_BIG_ENTEI_DOLL             181
+#define OBJ_EVENT_GFX_BIG_SUICUNE_DOLL           182
+#define OBJ_EVENT_GFX_BIG_GYARADOS_DOLL          183
+#define OBJ_EVENT_GFX_BIG_HO_OH_DOLL             184
+#define OBJ_EVENT_GFX_BIG_LUGIA_DOLL             185
+#define OBJ_EVENT_GFX_BIG_RAICHU_DOLL            186
 #define OBJ_EVENT_GFX_LATIAS                     187
 #define OBJ_EVENT_GFX_LATIOS                     188
 #define OBJ_EVENT_GFX_GAMEBOY_KID                189
@@ -511,12 +511,15 @@
 #define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_WATERING      478
 #define OBJ_EVENT_GFX_OUTFIT_HYLIAN_F_DECORATING    479
 
-#define OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER    480
+#define OBJ_EVENT_GFX_ITEM_BALL_UNDERWATER          480
+
+#define OBJ_EVENT_GFX_TOUCANNON_DOLL                481
+#define OBJ_EVENT_GFX_ORICORIO_DOLL                 482
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        481
+#define NUM_OBJ_EVENT_GFX                        483
 
 
 // These are dynamic object gfx ids.
@@ -572,7 +575,7 @@
 #define TRACKS_SPOT       4
 #define TRACKS_BUG        5
 
-#define FIRST_DECORATION_SPRITE_GFX OBJ_EVENT_GFX_PICHU_DOLL
+#define FIRST_DECORATION_SPRITE_GFX OBJ_EVENT_GFX_MIMIKYU_DOLL
 
 #define OBJ_KIND_NORMAL 0
 #define OBJ_KIND_CLONE  255 // Exclusive to FRLG

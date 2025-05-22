@@ -637,6 +637,119 @@ PentepetalCity_Movement_RaniaLeaves:
 # 291 "data/maps/PentepetalCity/scripts.pory"
 	step_end
 
+PentepetalCity_DollDecorScript::
+# 303 "data/maps/PentepetalCity/scripts.pory"
+	lock
+# 304 "data/maps/PentepetalCity/scripts.pory"
+	msgbox PentepetalCity_DollDecorScript_Text_0
+# 305 "data/maps/PentepetalCity/scripts.pory"
+	closemessage
+# 306 "data/maps/PentepetalCity/scripts.pory"
+	release
+	end
+
+
+PentepetalCity_EventScript_DollStreetVendor::
+# 312 "data/maps/PentepetalCity/scripts.pory"
+	lock
+# 313 "data/maps/PentepetalCity/scripts.pory"
+	faceplayer
+# 314 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
+# 315 "data/maps/PentepetalCity/scripts.pory"
+	message PentepetalCity_EventScript_DollStreetVendor_Text_1
+# 316 "data/maps/PentepetalCity/scripts.pory"
+	waitmessage
+# 317 "data/maps/PentepetalCity/scripts.pory"
+	pokemartdecoration PentepetalCity_DollDecorShop
+# 318 "data/maps/PentepetalCity/scripts.pory"
+	closemessage
+# 319 "data/maps/PentepetalCity/scripts.pory"
+	delay 5
+# 320 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
+# 321 "data/maps/PentepetalCity/scripts.pory"
+	msgbox gText_PleaseComeAgain
+# 322 "data/maps/PentepetalCity/scripts.pory"
+	release
+	end
+
+
+# 326 "data/maps/PentepetalCity/scripts.pory"
+
+# 327 "data/maps/PentepetalCity/scripts.pory"
+    .align 2
+# 328 "data/maps/PentepetalCity/scripts.pory"
+PentepetalCity_DollDecorShop:
+# 329 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_MIMIKYU_DOLL
+# 330 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_CRABRAWLER_DOLL
+# 331 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_IMPIDIMP_DOLL
+# 332 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_ARCHEN_DOLL
+# 333 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_TIRTOUGA_DOLL
+# 334 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_CHESPIN_DOLL
+# 335 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_FENNEKIN_DOLL
+# 336 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_FROAKIE_DOLL
+# 337 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_STUFFUL_DOLL
+# 338 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_APPLIN_DOLL
+# 339 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_BOUNSWEET_DOLL
+# 340 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_SKIDDO_DOLL
+# 341 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_ROCKRUFF_DOLL
+# 342 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_RAIKOU_DOLL
+# 343 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_ENTEI_DOLL
+# 344 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_SUICUNE_DOLL
+# 345 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_ARCANINE_DOLL
+# 346 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_KOMMO_O_DOLL
+# 347 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_GYARADOS_DOLL
+# 348 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_FOSSIL_DISPLAY
+# 349 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_HO_OH_DOLL
+# 350 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_LUGIA_DOLL
+# 351 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_RAICHU_DOLL
+# 352 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_POTTED_BERRY
+# 353 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_SHOCKING_RELIC
+# 354 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_MARBLE_STATUE
+# 355 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_BOOK_AND_QUILL
+# 356 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_TOUCANNON_DOLL
+# 357 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_ORICORIO_DOLL
+# 358 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_WOOD_MAT
+# 359 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_DOLL_SQUARE
+# 360 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_NONE
+# 361 "data/maps/PentepetalCity/scripts.pory"
+	release
+# 362 "data/maps/PentepetalCity/scripts.pory"
+	end
+
 PentepetalCity_Trigger_RaniaChimeraEvent_Text_0:
 # 13 "data/maps/PentepetalCity/scripts.pory"
 	.string "Rania$"
@@ -789,6 +902,20 @@ PentepetalCity_EventScript_RaniaChimeraEvent_Text_16:
 	.string "Island, now I'm REALLY wiped out! I'm\l"
 	.string "gonna head back to the University with\l"
 	.string "Niko. Stay safe, {PLAYER}!$"
+
+PentepetalCity_DollDecorScript_Text_0:
+# 304 "data/maps/PentepetalCity/scripts.pory"
+	.string "It's a cute Pokémon Doll! This would be\n"
+	.string "perfect for the Cabin on The Delphis!$"
+
+PentepetalCity_EventScript_DollStreetVendor_Text_0:
+# 314 "data/maps/PentepetalCity/scripts.pory"
+	.string "Street Vendor$"
+
+PentepetalCity_EventScript_DollStreetVendor_Text_1:
+# 315 "data/maps/PentepetalCity/scripts.pory"
+	.string "Welcome! I sell Pokémon Doll\n"
+	.string "Decorations. How can I help you?$"
 
 PentepetalCity_Text_GruntLose::
 # 293 "data/maps/PentepetalCity/scripts.pory"

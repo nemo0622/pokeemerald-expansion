@@ -31,7 +31,7 @@ LilycoveCity_DepartmentStoreRooftop_PokemartDecor_ClearOutSale:
 	.2byte DECOR_MINOTAUROS_PLAQUE
 	.2byte DECOR_FENCE_LENGTH
 	.2byte DECOR_FENCE_WIDTH
-	.2byte DECOR_TIRE
+	.2byte DECOR_FOSSIL_DISPLAY
 	.2byte DECOR_BREAKABLE_DOOR
 	.2byte DECOR_SHRINE
 	.2byte DECOR_SAND_ORNAMENT
@@ -40,8 +40,8 @@ LilycoveCity_DepartmentStoreRooftop_PokemartDecor_ClearOutSale:
 	.2byte DECOR_TV
 	.2byte DECOR_ROUND_TV
 	.2byte DECOR_CUTE_TV
-	.2byte DECOR_WAILMER_DOLL
-	.2byte DECOR_RHYDON_DOLL
+	.2byte DECOR_GYARADOS_DOLL
+	.2byte DECOR_KOMMO_O_DOLL
 	.2byte 0
 	release
 	end

@@ -27,7 +27,7 @@ static const u8 sDefaultTraderDecorations[NUM_TRADER_ITEMS] =
 {
     DECOR_DUSKULL_DOLL,
     DECOR_BALL_CUSHION,
-    DECOR_TIRE,
+    DECOR_FOSSIL_DISPLAY,
     DECOR_PRETTY_FLOWERS,
 };
 

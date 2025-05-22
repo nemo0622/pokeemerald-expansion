@@ -58,8 +58,8 @@ const u32 gDecorIconPalette_Shrine[] = INCBIN_U32("graphics/decorations/shrine.g
 const u32 gDecorIcon_Slide[] = INCBIN_U32("graphics/decorations/slide.4bpp.lz");
 const u32 gDecorIconPalette_Slide[] = INCBIN_U32("graphics/decorations/slide.gbapal.lz");
 
-const u32 gDecorIcon_Tire[] = INCBIN_U32("graphics/decorations/tire.4bpp.lz");
-const u32 gDecorIconPalette_Tire[] = INCBIN_U32("graphics/decorations/tire.gbapal.lz");
+const u32 gDecorIcon_Fossil_Display[] = INCBIN_U32("graphics/decorations/fossil_display.4bpp.lz");
+const u32 gDecorIconPalette_Fossil_Display[] = INCBIN_U32("graphics/decorations/fossil_display.gbapal.lz");
 
 const u32 gDecorIcon_Stand[] = INCBIN_U32("graphics/decorations/stand.4bpp.lz");
 const u32 gDecorIconPalette_Stand[] = INCBIN_U32("graphics/decorations/stand.gbapal.lz");
@@ -135,3 +135,6 @@ const u32 gDecorIconPalette_PatternedBed[] = INCBIN_U32("graphics/decorations/pa
 
 const u32 gDecorIcon_BookAndQuill[] = INCBIN_U32("graphics/decorations/book_and_quill.4bpp.lz");
 const u32 gDecorIconPalette_BookAndQuill[] = INCBIN_U32("graphics/decorations/book_and_quill.gbapal.lz");
+
+const u32 gDecorIcon_DollSquare[] = INCBIN_U32("graphics/decorations/doll_square.4bpp.lz");
+const u32 gDecorIconPalette_DollSquare[] = INCBIN_U32("graphics/decorations/doll_square.gbapal.lz");

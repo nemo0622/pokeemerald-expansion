@@ -530,15 +530,11 @@
 #define METATILE_SecretBase_FissureMat_TopLeft          0x306
 #define METATILE_SecretBase_FissureMat_TopMid           0x307
 #define METATILE_SecretBase_FissureMat_TopRight         0x318
-#define METATILE_SecretBase_GlassOrnament_Base1         0x28A
-#define METATILE_SecretBase_GlassOrnament_Base2         0x28B
-#define METATILE_SecretBase_GlassOrnament_Top           0x282
-#define METATILE_SecretBase_GlassOrnament_TopWall       0x283
+#define METATILE_SecretBase_Fossil_Display_BottomLeft   0x288
+#define METATILE_SecretBase_Fossil_Display_BottomRight  0x289
+#define METATILE_SecretBase_Fossil_Display_TopLeft      0x280
+#define METATILE_SecretBase_Fossil_Display_TopRight     0x281
 #define METATILE_SecretBase_GlitterMat                  0x260
-#define METATILE_SecretBase_GoldShield_Base1            0x336
-#define METATILE_SecretBase_GoldShield_Base2            0x337
-#define METATILE_SecretBase_GoldShield_Top              0x32E
-#define METATILE_SecretBase_GoldShield_TopWall          0x32F
 #define METATILE_SecretBase_GorgeousPlant_BaseLeft1     0x2F8
 #define METATILE_SecretBase_GorgeousPlant_BaseLeft2     0x2FA
 #define METATILE_SecretBase_GorgeousPlant_BaseRight1    0x2F9
@@ -571,6 +567,10 @@
 #define METATILE_SecretBase_KissPoster_Right            0x32D
 #define METATILE_SecretBase_LongPoster_Left             0x31E
 #define METATILE_SecretBase_LongPoster_Right            0x31F
+#define METATILE_SecretBase_MarbleStatue_Base1          0x28A
+#define METATILE_SecretBase_MarbleStatue_Base2          0x28B
+#define METATILE_SecretBase_MarbleStatue_Top            0x282
+#define METATILE_SecretBase_MarbleStatue_TopWall        0x283
 #define METATILE_SecretBase_MudBall                     0x228
 #define METATILE_SecretBase_NoteMat_A                   0x27D
 #define METATILE_SecretBase_NoteMat_B                   0x27E
@@ -586,6 +586,10 @@
 #define METATILE_SecretBase_PikaPoster_Right            0x31D
 #define METATILE_SecretBase_PokemonChair                0x2B9
 #define METATILE_SecretBase_PokemonDesk                 0x28F
+#define METATILE_SecretBase_PottedBerry_Base1           0x2DE
+#define METATILE_SecretBase_PottedBerry_Base2           0x2DF
+#define METATILE_SecretBase_PottedBerry_Top             0x2D6
+#define METATILE_SecretBase_PottedBerry_TopWall         0x2D7
 #define METATILE_SecretBase_PowderSnowMat_BottomLeft    0x310
 #define METATILE_SecretBase_PowderSnowMat_BottomMid     0x311
 #define METATILE_SecretBase_PowderSnowMat_BottomRight   0x312
@@ -643,10 +647,10 @@
 #define METATILE_SecretBase_SandOrnament_TopWall        0x286
 #define METATILE_SecretBase_SeaPoster_Left              0x324
 #define METATILE_SecretBase_SeaPoster_Right             0x325
-#define METATILE_SecretBase_SilverShield_Base1          0x2DE
-#define METATILE_SecretBase_SilverShield_Base2          0x2DF
-#define METATILE_SecretBase_SilverShield_Top            0x2D6
-#define METATILE_SecretBase_SilverShield_TopWall        0x2D7
+#define METATILE_SecretBase_ShockingRelic_Base1         0x336
+#define METATILE_SecretBase_ShockingRelic_Base2         0x337
+#define METATILE_SecretBase_ShockingRelic_Top           0x32E
+#define METATILE_SecretBase_ShockingRelic_TopWall       0x32F
 #define METATILE_SecretBase_SkyPoster_Left              0x326
 #define METATILE_SecretBase_SkyPoster_Right             0x327
 #define METATILE_SecretBase_Slide_MatLeft               0x26F
@@ -698,10 +702,6 @@
 #define METATILE_SecretBase_ThunderMat_TopLeft          0x245
 #define METATILE_SecretBase_ThunderMat_TopMid           0x246
 #define METATILE_SecretBase_ThunderMat_TopRight         0x247
-#define METATILE_SecretBase_Tire_BottomLeft             0x288
-#define METATILE_SecretBase_Tire_BottomRight            0x289
-#define METATILE_SecretBase_Tire_TopLeft                0x280
-#define METATILE_SecretBase_Tire_TopRight               0x281
 #define METATILE_SecretBase_TropicalPlant_Base1         0x2DA
 #define METATILE_SecretBase_TropicalPlant_Base2         0x2DB
 #define METATILE_SecretBase_TropicalPlant_Top           0x2D2
@@ -712,7 +712,11 @@
 #define METATILE_SecretBase_YellowBrick_Top             0x226
 
 // gTileset_SecretBaseRedCave
-#define METATILE_SecretBaseRedCave_BookAndQuill                     0x349
+#define METATILE_SecretBaseRedCave_BookAndQuill_Base1               0x362
+#define METATILE_SecretBaseRedCave_BookAndQuill_Base2               0x363
+#define METATILE_SecretBaseRedCave_BookAndQuill_Top                 0x35A
+#define METATILE_SecretBaseRedCave_BookAndQuill_TopWall             0x35B
+#define METATILE_SecretBaseRedCave_DollSquare                       0x361
 #define METATILE_SecretBaseRedCave_EntertainmentCenter_BottomLeft   0x356
 #define METATILE_SecretBaseRedCave_EntertainmentCenter_BottomMid    0x357
 #define METATILE_SecretBaseRedCave_EntertainmentCenter_BottomRight  0x358
@@ -745,6 +749,15 @@
 #define METATILE_SecretBaseRedCave_Shrine_Top                       0x34A
 #define METATILE_SecretBaseRedCave_Shrine_TopWall                   0x34B
 #define METATILE_SecretBaseRedCave_SmallFlowerBox                   0x2F7
+#define METATILE_SecretBaseRedCave_WoodMat_BottomLeft               0x379
+#define METATILE_SecretBaseRedCave_WoodMat_BottomMid                0x37A
+#define METATILE_SecretBaseRedCave_WoodMat_BottomRight              0x37B
+#define METATILE_SecretBaseRedCave_WoodMat_Center                   0x372
+#define METATILE_SecretBaseRedCave_WoodMat_MidLeft                  0x371
+#define METATILE_SecretBaseRedCave_WoodMat_MidRight                 0x373
+#define METATILE_SecretBaseRedCave_WoodMat_TopLeft                  0x369
+#define METATILE_SecretBaseRedCave_WoodMat_TopMid                   0x36A
+#define METATILE_SecretBaseRedCave_WoodMat_TopRight                 0x36B
 
 // gTileset_Shop
 #define METATILE_Shop_Door_Elevator   0x285

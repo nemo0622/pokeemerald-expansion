@@ -34,18 +34,18 @@
 #define DECOR_YELLOW_BALLOON   30
 #define DECOR_ENTERTAINMENT_CENTER        31 // replaces RED_TENT
 #define DECOR_POKEBALL_STATION 32 // replaces BLUE_TENT
-#define DECOR_SHRINE           33 // replaces SOLID_BOARD. DO NOT GIVE TO PLAYER IT'S BROKEN FOR SOME REASON SIGH
+#define DECOR_SHRINE           33 // replaces SOLID_BOARD
 #define DECOR_SLIDE            34
 #define DECOR_FENCE_LENGTH     35
 #define DECOR_FENCE_WIDTH      36
-#define DECOR_TIRE             37
+#define DECOR_FOSSIL_DISPLAY   37 // replaces TIRE - reward for catching all Lazarus Taxa
 #define DECOR_STAND            38
 #define DECOR_MINOTAUROS_PLAQUE  39 // replaces MUD_BALL, reward for something on Kaptara Island probably
 #define DECOR_BREAKABLE_DOOR   40
 #define DECOR_SAND_ORNAMENT    41
-#define DECOR_SILVER_SHIELD    42
-#define DECOR_GOLD_SHIELD      43
-#define DECOR_GLASS_ORNAMENT   44
+#define DECOR_POTTED_BERRY     42 // replaces SILVER_SHIELD reward for planting 200 Berry Trees (replace Archen reward lol)
+#define DECOR_SHOCKING_RELIC   43 // replaces GOLD_SHIELD (Antikythera Mechanism!) - reward for stopping Team Chimera (player told best to keep it for now - "best with strong trainer")
+#define DECOR_MARBLE_STATUE    44 // replaces GLASS_ORNAMENT or whatever (statue sprite) - reward for playing Mining Minigame 50 times
 #define DECOR_TV               45
 #define DECOR_ROUND_TV         46
 #define DECOR_CUTE_TV          47
@@ -77,31 +77,31 @@
 #define DECOR_SEA_POSTER       73 // has a lil relicanth on it
 #define DECOR_SKY_POSTER       74
 #define DECOR_SUNSET_POSTER    75 // replaces KISS_POSTER; shows version of title screen sunset and ruins
-#define DECOR_PICHU_DOLL       76
+#define DECOR_MIMIKYU_DOLL     76 // replaces PICHU_DOLL
 #define DECOR_PIKACHU_DOLL     77
-#define DECOR_MARILL_DOLL      78 // NEEDS REPLACEMENT
+#define DECOR_CRABRAWLER_DOLL  78 // replaces MARRIL_DOLL
 #define DECOR_TOGEPI_DOLL      79
 #define DECOR_CYNDAQUIL_DOLL   80
 #define DECOR_CHIKORITA_DOLL   81
 #define DECOR_TOTODILE_DOLL    82
 #define DECOR_JIGGLYPUFF_DOLL  83
 #define DECOR_MEOWTH_DOLL      84
-#define DECOR_CLEFAIRY_DOLL    85 // NEEDS REPLACEMENT
+#define DECOR_IMPIDIMP_DOLL    85 // replaces CLEFAIRY_DOLL
 #define DECOR_EGG_DOLL         86 // replaces DITTO_DOLL
-#define DECOR_SMOOCHUM_DOLL    87 // NEEDS REPLACEMENT
-#define DECOR_TREECKO_DOLL     88 // NEEDS REPLACEMENT
-#define DECOR_TORCHIC_DOLL     89 // NEEDS REPLACEMENT
-#define DECOR_MUDKIP_DOLL      90 // NEEDS REPLACEMENT
+#define DECOR_ARCHEN_DOLL      87 // replaces SMOOCHUM_DOLL
+#define DECOR_CHESPIN_DOLL     88 // replaces TREECKO_DOLL
+#define DECOR_FENNEKIN_DOLL    89 // replaces TORCHIC_DOLL
+#define DECOR_FROAKIE_DOLL     90 // replaces MUDKIP_DOLL
 #define DECOR_DUSKULL_DOLL     91
-#define DECOR_WYNAUT_DOLL      92 // NEEDS REPLACEMENT
+#define DECOR_TIRTOUGA_DOLL    92 // replaces WYNAUT_DOLL
 #define DECOR_BALTOY_DOLL      93
 #define DECOR_KECLEON_DOLL     94
-#define DECOR_AZURILL_DOLL     95 // NEEDS REPLACEMENT
-#define DECOR_SKITTY_DOLL      96 // NEEDS REPLACEMENT
+#define DECOR_STUFFUL_DOLL     95 // replaces AZURILL_DOLL
+#define DECOR_APPLIN_DOLL      96 // replaces SKITTY_DOLL
 #define DECOR_SWABLU_DOLL      97
-#define DECOR_GULPIN_DOLL      98 // NEEDS REPLACEMENT
-#define DECOR_LOTAD_DOLL       99 // NEEDS REPLACEMENT
-#define DECOR_SEEDOT_DOLL      100 // NEEDS REPLACEMENT
+#define DECOR_BOUNSWEET_DOLL   98 // replaces GULPIN_DOLL
+#define DECOR_SKIDDO_DOLL      99 // replaces LOTAD_DOLL
+#define DECOR_ROCKRUFF_DOLL    100 // replaces SEEDOT_DOLL
 #define DECOR_PIKA_CUSHION     101
 #define DECOR_ROUND_CUSHION    102
 #define DECOR_KISS_CUSHION     103
@@ -112,20 +112,25 @@
 #define DECOR_GRASS_CUSHION    108
 #define DECOR_FIRE_CUSHION     109
 #define DECOR_WATER_CUSHION    110
-#define DECOR_SNORLAX_DOLL     111 // NEEDS REPLACEMENT
-#define DECOR_RHYDON_DOLL      112 // NEEDS REPLACEMENT
+#define DECOR_ARCANINE_DOLL    111 // replaces SNORLAX_DOLL
+#define DECOR_KOMMO_O_DOLL     112 // replaces RHYDON_DOLL
 #define DECOR_LAPRAS_DOLL      113
-#define DECOR_VENUSAUR_DOLL    114 // NEEDS REPLACEMENT
-#define DECOR_CHARIZARD_DOLL   115 // NEEDS REPLACEMENT
-#define DECOR_BLASTOISE_DOLL   116 // NEEDS REPLACEMENT
-#define DECOR_WAILMER_DOLL     117
-#define DECOR_REGIROCK_DOLL    118 // NEEDS REPLACEMENT
-#define DECOR_REGICE_DOLL      119 // NEEDS REPLACEMENT
-#define DECOR_REGISTEEL_DOLL   120 // NEEDS REPLACEMENT
+#define DECOR_RAIKOU_DOLL      114 // replaces VENUSAUR_DOLL
+#define DECOR_ENTEI_DOLL       115 // replaces CHARIZARD_DOLL
+#define DECOR_SUICUNE_DOLL     116 // replaces SUICUNE_DOLL
+#define DECOR_GYARADOS_DOLL    117 // replaces WAILMER_DOLL
+#define DECOR_HO_OH_DOLL       118 // replaces REGIROCK_DOLL
+#define DECOR_LUGIA_DOLL       119 // replaces REGICE_DOLL
+#define DECOR_RAICHU_DOLL      120 // replaces REGISTEEL_DOLL - reward for Raichu quest in Sofos City
 #define DECOR_SMALL_FLOWER_BOX 121
 #define DECOR_LARGE_BED        122
 #define DECOR_PATTERNED_BED    123
 #define DECOR_BOOK_AND_QUILL   124
-#define NUM_DECORATIONS DECOR_BOOK_AND_QUILL
+#define DECOR_TOUCANNON_DOLL   125
+#define DECOR_ORICORIO_DOLL    126
+#define DECOR_WOOD_MAT         127
+#define DECOR_DOLL_SQUARE      128
+
+#define NUM_DECORATIONS DECOR_DOLL_SQUARE
 
 #endif  // GUARD_CONSTANTS_DECORATIONS_H

@@ -3512,10 +3512,10 @@ void GetOverworldMonSpecies(void)
     // case OBJ_EVENT_GFX_ZIGZAGOON_2:
     //     gSpecialVar_0x8004 = SPECIES_ZIGZAGOON;
     //     break;
-    // case OBJ_EVENT_GFX_PICHU_DOLL:
+    // case OBJ_EVENT_GFX_MIMIKYU_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_PICHU;
     //     break;
-    // case OBJ_EVENT_GFX_MARILL_DOLL:
+    // case OBJ_EVENT_GFX_CRABRAWLER_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_MARILL;
     //     break;
     // case OBJ_EVENT_GFX_TOGEPI_DOLL:
@@ -3536,28 +3536,28 @@ void GetOverworldMonSpecies(void)
     // case OBJ_EVENT_GFX_MEOWTH_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_MEOWTH;
     //     break;
-    // case OBJ_EVENT_GFX_CLEFAIRY_DOLL:
+    // case OBJ_EVENT_GFX_IMPIDIMP_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_CLEFAIRY;
     //     break;
     // case OBJ_EVENT_GFX_EGG_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_DITTO;
     //     break;
-    // case OBJ_EVENT_GFX_SMOOCHUM_DOLL:
+    // case OBJ_EVENT_GFX_ARCHEN_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_SMOOCHUM;
     //     break;
-    // case OBJ_EVENT_GFX_TREECKO_DOLL:
+    // case OBJ_EVENT_GFX_CHESPIN_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_TREECKO;
     //     break;
-    // case OBJ_EVENT_GFX_TORCHIC_DOLL:
+    // case OBJ_EVENT_GFX_FENNEKIN_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_TORCHIC;
     //     break;
-    // case OBJ_EVENT_GFX_MUDKIP_DOLL:
+    // case OBJ_EVENT_GFX_FROAKIE_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_MUDKIP;
     //     break;
     // case OBJ_EVENT_GFX_DUSKULL_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_DUSKULL;
     //     break;
-    // case OBJ_EVENT_GFX_WYNAUT_DOLL:
+    // case OBJ_EVENT_GFX_TIRTOUGA_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_WYNAUT;
     //     break;
     // case OBJ_EVENT_GFX_BALTOY_DOLL:
@@ -3568,55 +3568,55 @@ void GetOverworldMonSpecies(void)
     // case OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW:
     //     gSpecialVar_0x8004 = SPECIES_KECLEON;
     //     break;
-    // case OBJ_EVENT_GFX_AZURILL_DOLL:
+    // case OBJ_EVENT_GFX_STUFFUL_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_AZURILL;
     //     break;
-    // case OBJ_EVENT_GFX_SKITTY_DOLL:
+    // case OBJ_EVENT_GFX_APPLIN_DOLL:
     // case OBJ_EVENT_GFX_SKITTY:
     //     gSpecialVar_0x8004 = SPECIES_SKITTY;
     //     break;
     // case OBJ_EVENT_GFX_SWABLU_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_SWABLU;
     //     break;
-    // case OBJ_EVENT_GFX_GULPIN_DOLL:
+    // case OBJ_EVENT_GFX_BOUNSWEET_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_GULPIN;
     //     break;
-    // case OBJ_EVENT_GFX_LOTAD_DOLL:
+    // case OBJ_EVENT_GFX_SKIDDO_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_LOTAD;
     //     break;
-    // case OBJ_EVENT_GFX_SEEDOT_DOLL:
+    // case OBJ_EVENT_GFX_ROCKRUFF_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_SEEDOT;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_SNORLAX_DOLL:
+    // case OBJ_EVENT_GFX_BIG_ARCANINE_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_SNORLAX;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_RHYDON_DOLL:
+    // case OBJ_EVENT_GFX_BIG_KOMMO_O_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_RHYDON;
     //     break;
     // case OBJ_EVENT_GFX_BIG_LAPRAS_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_LAPRAS;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_VENUSAUR_DOLL:
+    // case OBJ_EVENT_GFX_BIG_RAIKOU_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_VENUSAUR;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_CHARIZARD_DOLL:
+    // case OBJ_EVENT_GFX_BIG_ENTEI_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_CHARIZARD;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_BLASTOISE_DOLL:
+    // case OBJ_EVENT_GFX_BIG_SUICUNE_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_BLASTOISE;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_WAILMER_DOLL:
+    // case OBJ_EVENT_GFX_BIG_GYARADOS_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_WAILMER;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_REGIROCK_DOLL:
+    // case OBJ_EVENT_GFX_BIG_HO_OH_DOLL:
     // case OBJ_EVENT_GFX_REGIROCK:
     //     gSpecialVar_0x8004 = SPECIES_REGIROCK;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_REGICE_DOLL:
+    // case OBJ_EVENT_GFX_BIG_LUGIA_DOLL:
     // case OBJ_EVENT_GFX_REGICE:
     //     gSpecialVar_0x8004 = SPECIES_REGICE;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL:
+    // case OBJ_EVENT_GFX_BIG_RAICHU_DOLL:
     // case OBJ_EVENT_GFX_REGISTEEL:
     //     gSpecialVar_0x8004 = SPECIES_REGISTEEL;
     //     break;

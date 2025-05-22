@@ -1995,7 +1995,31 @@ static void SetDecorSelectionBoxTiles(struct PlaceDecorationGraphicsDataBuffer *
 {
     u16 i;
     for (i = 0; i < 64; i++)
-        CopyTile(&data->image[i * TILE_SIZE_4BPP], data->tiles[i]);
+    {
+        // THIS IS ALL CUSTOM, AWFUL, CLASSIC NEMO622 ORIGINAL CODE LOL
+        // So basically, in the CopyTile function below, the "11" is tile sprite 0x00B (the small while box in the tileset)
+        // being drawn on every 8x8 tile the decoration beind moved will take up.
+        // It's important to skip certain sections of this filling function because when placing 3x3 decorations
+        // like Mats, the 8x8 white squares would overlap with the player and look nasty.
+        // Tbh, I barely get this stuff, but it seems to work. thumbs up emoji
+
+        if(data->decoration->shape == DECORSHAPE_3x3)
+        {
+            if(i == 6) // skip 6 and 7
+                i = 8;
+            if(i == 14) // skip 14 and 15
+                i = 16;
+            if(i == 22) // skip 22 and 23
+                i = 24;
+            if(i == 30) // skip 30 and 31
+                i = 32;
+            if(i == 38) // skip 38 and 39
+                i = 40;
+            if(i == 46) // skip 46 and 47, and doesn't draw 48-64 (would be a line of squares below player sprite, which is wrong)
+                break;
+        }
+        CopyTile(&data->image[i * TILE_SIZE_4BPP], 11);
+    }
 }
 
 static u16 GetMetatile(u16 tile)
@@ -2071,7 +2095,7 @@ static u8 gpu_pal_decompress_alloc_tag_and_upload(struct PlaceDecorationGraphics
     SetDecorSelectionMetatiles(data);
     SetDecorSelectionBoxOamAttributes(data->decoration->shape);
     SetDecorSelectionBoxTiles(data);
-    CopyPalette(data->palette, ((u16 *)gTilesetPointer_SecretBaseRedCave->metatiles)[(data->decoration->tiles[0] * NUM_TILES_PER_METATILE) + 7] >> 12);
+    CopyPalette(data->palette, gTilesetPointer_SecretBaseRedCave->metatiles[(data->decoration->tiles[0] * NUM_TILES_PER_METATILE) + 7] >> 12);
     LoadSpritePalette(&sSpritePal_PlaceDecoration);
     return CreateSprite(&sDecorationSelectorSpriteTemplate, 0, 0, 0);
 }
@@ -2169,7 +2193,7 @@ u8 AddDecorationIconObject(u8 decor, s16 x, s16 y, u8 priority, u16 tilesTag, u1
             return MAX_SPRITES;
 
         gSprites[spriteId].x2 = x;
-        if (decor == DECOR_SILVER_SHIELD || decor == DECOR_GOLD_SHIELD)
+        if (decor == DECOR_POTTED_BERRY || decor == DECOR_SHOCKING_RELIC)
             gSprites[spriteId].y2 = y - 4;
         else
             gSprites[spriteId].y2 = y;
