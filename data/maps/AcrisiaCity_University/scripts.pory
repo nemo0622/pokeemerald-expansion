@@ -1014,13 +1014,15 @@ script AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
             setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
             closemessage
             speakername("Prof. Elia")
-            msgbox(format("Ah, speaking of electronics, here's an {COLOR GREEN}EXP. Share{COLOR DARK_GRAY} to help raise your Pokémon faster. I'll give you a Town Map, too."))
+            msgbox(format("Ah, speaking of electronics, here's an {COLOR GREEN}EXP. Share{COLOR DARK_GRAY} to help raise your Pokémon faster. I'll give you a Town Map and Outfit Box, too."))
             closemessage
             giveitem(ITEM_EXP_SHARE)
             closemessage
             delay(5)
             setflag(FLAG_EXP_SHARE_ENABLED)
-            giveitem(ITEM_TOWN_MAP)
+            additem(ITEM_TOWN_MAP)
+            additem(ITEM_OUTFIT_BOX)
+            msgbox(format("The Town Map and Outfit Box were added to the Bag!"))
             closemessage
             delay(5)
             speakername("Prof. Elia")

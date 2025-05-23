@@ -23,8 +23,8 @@ const u8 DecorDesc_COMFORT_DESK[] = _(
         "decorations on it.");
 
 const u8 DecorDesc_PRETTY_DESK[] = _(
-    "A huge desk made\n"
-        "of glass. Holds lots\n"
+    "A huge desk with\n"
+        "a sheet. Holds lots\n"
         "of decorations.");
 
 const u8 DecorDesc_BRICK_DESK[] = _(

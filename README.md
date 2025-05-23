@@ -66,8 +66,6 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 MAJOR TODOS:
 - Expand Wolfey code to give Poliwag w/ Kings Rock & Perish Song and Gothita w/ Shadow Tag ability
     - Wolfey con perish nod emoji
-- ADD OUTFITS CHEAT CODE
-    - Toggles all outfits on (only way to get Hylian Fashion!)
 - Continue Mapping and NPC development
     - Péntepetal City!
         - Rania's quest - meet up with Rania on Péntepetal City following the events of Myrrini Island. She'll tell you

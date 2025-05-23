@@ -4336,6 +4336,9 @@ void GetMysteryGiftFeedback(void)
     static const u8 sText_CodeFloette[] = _("LEGENDS ZA");
     static const u8 sText_CodeRockruff[] = _("HOUSESTARK");
 
+    static const u8 sText_CodeOutfits[] = _("DRESS UP");
+    static const u8 sText_CodeHylianOutfit[] = _("HYLIAN FIT");
+
     // Code 1
     if (!StringCompare(gStringVar2, sText_CodeRareCandies))
         gSpecialVar_Result = 1;
@@ -4439,6 +4442,12 @@ void GetMysteryGiftFeedback(void)
     // Code 34
     else if (!StringCompare(gStringVar2, sText_CodeRockruff))
         gSpecialVar_Result = 34;
+    // Code 35
+    else if (!StringCompare(gStringVar2, sText_CodeOutfits))
+        gSpecialVar_Result = 35;
+    // Code 36
+    else if (!StringCompare(gStringVar2, sText_CodeHylianOutfit))
+        gSpecialVar_Result = 36;
 
     // Invalid cheat code
     else

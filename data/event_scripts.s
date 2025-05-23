@@ -1144,6 +1144,8 @@ MysteryGift_EventScript_DoMysteryGift::
 	goto_if_eq VAR_RESULT, 32, MysteryGift_EventScript_Ogerpon
 	goto_if_eq VAR_RESULT, 33, MysteryGift_EventScript_Floette
 	goto_if_eq VAR_RESULT, 34, MysteryGift_EventScript_Rockruff
+	goto_if_eq VAR_RESULT, 35, MysteryGift_EventScript_Outfits
+	goto_if_eq VAR_RESULT, 36, MysteryGift_EventScript_HyruleOutfit
 	end
 
 MysteryGift_Failed::
@@ -1522,6 +1524,40 @@ MysteryGift_EventScript_Rockruff::
 	call MysteryGift_EventScript_ReceivedMon
 	releaseall
 	end
+
+MysteryGift_EventScript_Outfits::
+	additem ITEM_OUTFIT_BOX
+	toggleoutfit OUTFIT_CORAL, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_EAST_BLUE, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_TROPICS, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_TRADITIONAL, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_OLD_SOFOS, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_ZOOKEEPER, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_PETAL, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_PALATI, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_ANCIENT, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_JOHTO_FASHION, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_KALOS_FASHION, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_ALOLA_FASHION, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_PALDEA_FASHION, OUTFIT_TOGGLE_UNLOCK
+	toggleoutfit OUTFIT_HYLIAN_FASHION, OUTFIT_TOGGLE_UNLOCK
+	msgbox MysteryGift_Text_UnlockedOutfits
+	closemessage
+	releaseall
+	end
+
+MysteryGift_Text_UnlockedOutfits:
+	.string "All Outfits have been unlocked!$"
+
+MysteryGift_EventScript_HyruleOutfit::
+	toggleoutfit OUTFIT_HYLIAN_FASHION, OUTFIT_TOGGLE_UNLOCK
+	msgbox MysteryGift_Text_UnlockedHylianOutfit
+	closemessage
+	releaseall
+	end
+
+MysteryGift_Text_UnlockedHylianOutfit:
+	.string "Hylian Outfit has been unlocked!$"
 
 
 MysteryGift_Text_WelcomeToMysteryGiftSystem:
