@@ -923,87 +923,81 @@ JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward::
 # 530 "data/maps/JusmailTown_House1/scripts.pory"
 	setflag FLAG_GOT_BERRY_CLUB_REWARD_200
 # 531 "data/maps/JusmailTown_House1/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ARCHEN
+	givedecoration DECOR_POTTED_BERRY
 # 532 "data/maps/JusmailTown_House1/scripts.pory"
-	givemon SPECIES_ARCHEN, 50, ITEM_YACHE_BERRY, ITEM_POKE_BALL, NATURE_ADAMANT, 2, MON_FEMALE, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_DUAL_WINGBEAT, MOVE_U_TURN, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE
-# 534 "data/maps/JusmailTown_House1/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	closemessage
+# 533 "data/maps/JusmailTown_House1/scripts.pory"
+	delay 5
 # 535 "data/maps/JusmailTown_House1/scripts.pory"
-	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_4
+	speakername JusmailTown_House1_EventScript_EnterBuildingForFirstTime_Text_4
 # 536 "data/maps/JusmailTown_House1/scripts.pory"
-	waitfanfare
+	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_4
 # 537 "data/maps/JusmailTown_House1/scripts.pory"
 	closemessage
-# 539 "data/maps/JusmailTown_House1/scripts.pory"
-	speakername JusmailTown_House1_EventScript_EnterBuildingForFirstTime_Text_4
-# 540 "data/maps/JusmailTown_House1/scripts.pory"
-	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_5
-# 541 "data/maps/JusmailTown_House1/scripts.pory"
-	closemessage
-# 542 "data/maps/JusmailTown_House1/scripts.pory"
+# 538 "data/maps/JusmailTown_House1/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
-# 543 "data/maps/JusmailTown_House1/scripts.pory"
+# 539 "data/maps/JusmailTown_House1/scripts.pory"
 	waitmovement 0
+# 540 "data/maps/JusmailTown_House1/scripts.pory"
+	speakername JusmailTown_House1_EventScript_EnterBuildingForFirstTime_Text_2
+# 541 "data/maps/JusmailTown_House1/scripts.pory"
+	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_5
+# 542 "data/maps/JusmailTown_House1/scripts.pory"
+	closemessage
 # 544 "data/maps/JusmailTown_House1/scripts.pory"
-	speakername JusmailTown_House1_EventScript_EnterBuildingForFirstTime_Text_2
+	delay 30
 # 545 "data/maps/JusmailTown_House1/scripts.pory"
-	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_6
-# 546 "data/maps/JusmailTown_House1/scripts.pory"
-	closemessage
-# 548 "data/maps/JusmailTown_House1/scripts.pory"
-	delay 30
-# 549 "data/maps/JusmailTown_House1/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 550 "data/maps/JusmailTown_House1/scripts.pory"
-	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_7
-# 551 "data/maps/JusmailTown_House1/scripts.pory"
+# 546 "data/maps/JusmailTown_House1/scripts.pory"
+	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_6
+# 547 "data/maps/JusmailTown_House1/scripts.pory"
 	waitfanfare
-# 552 "data/maps/JusmailTown_House1/scripts.pory"
+# 548 "data/maps/JusmailTown_House1/scripts.pory"
 	closemessage
-# 553 "data/maps/JusmailTown_House1/scripts.pory"
+# 549 "data/maps/JusmailTown_House1/scripts.pory"
 	delay 30
-# 555 "data/maps/JusmailTown_House1/scripts.pory"
+# 551 "data/maps/JusmailTown_House1/scripts.pory"
 	speakername JusmailTown_House1_EventScript_EnterBuildingForFirstTime_Text_2
-# 556 "data/maps/JusmailTown_House1/scripts.pory"
-	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_8
-# 557 "data/maps/JusmailTown_House1/scripts.pory"
+# 552 "data/maps/JusmailTown_House1/scripts.pory"
+	msgbox JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_7
+# 553 "data/maps/JusmailTown_House1/scripts.pory"
 	closemessage
-# 559 "data/maps/JusmailTown_House1/scripts.pory"
+# 555 "data/maps/JusmailTown_House1/scripts.pory"
 	delay 20
-# 560 "data/maps/JusmailTown_House1/scripts.pory"
+# 556 "data/maps/JusmailTown_House1/scripts.pory"
 	special DoDomeConfetti
-# 561 "data/maps/JusmailTown_House1/scripts.pory"
+# 557 "data/maps/JusmailTown_House1/scripts.pory"
 	completequest QUEST_PLANT_200_BERRIES
-# 563 "data/maps/JusmailTown_House1/scripts.pory"
+# 559 "data/maps/JusmailTown_House1/scripts.pory"
 	warpsilent MAP_JUSMAIL_TOWN_HOUSE1, 6, 9
-# 564 "data/maps/JusmailTown_House1/scripts.pory"
+# 560 "data/maps/JusmailTown_House1/scripts.pory"
 	waitstate
-# 565 "data/maps/JusmailTown_House1/scripts.pory"
+# 561 "data/maps/JusmailTown_House1/scripts.pory"
 	goto JusmailTown_House1_EventScript_EndScript
-# 566 "data/maps/JusmailTown_House1/scripts.pory"
+# 562 "data/maps/JusmailTown_House1/scripts.pory"
 	releaseall
 	end
 
 
 JusmailTown_House1_EventScript_CheckBerryTreeRecord::
-# 574 "data/maps/JusmailTown_House1/scripts.pory"
+# 570 "data/maps/JusmailTown_House1/scripts.pory"
 	lock
-# 575 "data/maps/JusmailTown_House1/scripts.pory"
+# 571 "data/maps/JusmailTown_House1/scripts.pory"
 	compare VAR_BERRY_TREES_PLANTED, 0
 	goto_if_eq JusmailTown_House1_EventScript_CheckBerryTreeRecord_2
-# 581 "data/maps/JusmailTown_House1/scripts.pory"
+# 577 "data/maps/JusmailTown_House1/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_BERRY_TREES_PLANTED
 JusmailTown_House1_EventScript_CheckBerryTreeRecord_1:
-# 583 "data/maps/JusmailTown_House1/scripts.pory"
+# 579 "data/maps/JusmailTown_House1/scripts.pory"
 	msgbox JusmailTown_House1_EventScript_CheckBerryTreeRecord_Text_1
-# 584 "data/maps/JusmailTown_House1/scripts.pory"
+# 580 "data/maps/JusmailTown_House1/scripts.pory"
 	closemessage
-# 585 "data/maps/JusmailTown_House1/scripts.pory"
+# 581 "data/maps/JusmailTown_House1/scripts.pory"
 	release
 	end
 
 JusmailTown_House1_EventScript_CheckBerryTreeRecord_2:
-# 577 "data/maps/JusmailTown_House1/scripts.pory"
+# 573 "data/maps/JusmailTown_House1/scripts.pory"
 	bufferstring STR_VAR_1, JusmailTown_House1_EventScript_CheckBerryTreeRecord_Text_0
 	goto JusmailTown_House1_EventScript_CheckBerryTreeRecord_1
 
@@ -1276,7 +1270,7 @@ JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_1:
 JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_2:
 # 522 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "People are coming to Jusmail Town just\n"
-	.string "to visit the Berru Club! We've started\l"
+	.string "to visit the Berry Club! We've started\l"
 	.string "more research and even gotten into\l"
 	.string "public education. People are really\l"
 	.string "starting to take Berries seriously!$"
@@ -1284,33 +1278,28 @@ JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_2:
 JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_3:
 # 527 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "Nothing we give could repay what you've\n"
-	.string "done for us. We've been raising a\l"
-	.string "special Pokémon here, so maybe this can\l"
-	.string "be a start!$"
+	.string "done for us, but maybe this Decoration\l"
+	.string "can be a start!$"
 
 JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_4:
-# 535 "data/maps/JusmailTown_House1/scripts.pory"
-	.string "{PLAYER} received the fruit-eating\n"
-	.string "Archen!$"
+# 536 "data/maps/JusmailTown_House1/scripts.pory"
+	.string "That Potted Berry Decoration is a\n"
+	.string "decorative tree for any private room\l"
+	.string "you own! I hope it will remind you of\l"
+	.string "your status in the Berry Club.$"
 
 JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_5:
-# 540 "data/maps/JusmailTown_House1/scripts.pory"
-	.string "That Archen has {COLOR GREEN}special moves{COLOR DARK_GRAY} learned\n"
-	.string "from growing up around all these\l"
-	.string "Berries. Make sure to take care of it!$"
-
-JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_6:
-# 545 "data/maps/JusmailTown_House1/scripts.pory"
+# 541 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "{PLAYER}, I've had an idea! Here\n"
 	.string "darling, hand me your Trainer Card.$"
 
-JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_7:
-# 550 "data/maps/JusmailTown_House1/scripts.pory"
+JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_6:
+# 546 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "{PLAYER} received a Trainer Card Gold\n"
 	.string "Star!$"
 
-JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_8:
-# 556 "data/maps/JusmailTown_House1/scripts.pory"
+JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_7:
+# 552 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "There, you've {COLOR GREEN}earned a star{COLOR DARK_GRAY} for your\n"
 	.string "Trainer Card. That represents your\l"
 	.string "status as an elite Berry grower!\p"
@@ -1320,11 +1309,11 @@ JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward_Text_8:
 	.string "course, keep coming to visit us, darling!$"
 
 JusmailTown_House1_EventScript_CheckBerryTreeRecord_Text_0:
-# 577 "data/maps/JusmailTown_House1/scripts.pory"
+# 573 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "0$"
 
 JusmailTown_House1_EventScript_CheckBerryTreeRecord_Text_1:
-# 583 "data/maps/JusmailTown_House1/scripts.pory"
+# 579 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "Jusmail Town Berry Club - Berry Tree\n"
 	.string "Records\p"
 	.string "{PLAYER}'s Trees: {STR_VAR_1}\n"

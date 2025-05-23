@@ -74,6 +74,13 @@ script SofosCity_House9_EventScript_Nemo
             msgbox(format("The {COLOR GREEN}Glimmering Charm{COLOR DARK_GRAY} boosts the odds of finding wild Pokémon {COLOR GREEN}holding an item{COLOR DARK_GRAY}! That should be helpful if you're looking for a specific item.\p I hope you continue to enjoy your time in the Ilios Region! Working on the game while finishing college and starting a Master's program in Biology has been a lot to handle, but I hope the love and care I feel for wildlife and Pokémon shows in the final product."))
             closemessage
 
+            speakername("Nemo")
+            msgbox(format("Oh wait, one more thing! Here's a Cabin Decoration from me!"))
+            closemessage
+            delay(5)
+            givedecoration(DECOR_ORICORIO_DOLL)
+            closemessage
+
             delay(20)
             completequest(QUEST_NEMOS_QUEST)
         }

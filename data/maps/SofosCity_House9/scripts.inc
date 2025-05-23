@@ -55,11 +55,23 @@ SofosCity_House9_EventScript_Nemo_8:
 # 75 "data/maps/SofosCity_House9/scripts.pory"
 	closemessage
 # 77 "data/maps/SofosCity_House9/scripts.pory"
-	delay 20
+	speakername SofosCity_House9_EventScript_Nemo_Text_0
 # 78 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Nemo_Text_10
+# 79 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
+# 80 "data/maps/SofosCity_House9/scripts.pory"
+	delay 5
+# 81 "data/maps/SofosCity_House9/scripts.pory"
+	givedecoration DECOR_ORICORIO_DOLL
+# 82 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
+# 84 "data/maps/SofosCity_House9/scripts.pory"
+	delay 20
+# 85 "data/maps/SofosCity_House9/scripts.pory"
 	completequest QUEST_NEMOS_QUEST
 SofosCity_House9_EventScript_Nemo_4:
-# 81 "data/maps/SofosCity_House9/scripts.pory"
+# 88 "data/maps/SofosCity_House9/scripts.pory"
 	release
 	end
 
@@ -133,81 +145,81 @@ SofosCity_House9_EventScript_Nemo_16:
 
 
 SofosCity_House9_EventScript_Tyrunt::
-# 87 "data/maps/SofosCity_House9/scripts.pory"
-	lock
-# 88 "data/maps/SofosCity_House9/scripts.pory"
-	faceplayer
-# 89 "data/maps/SofosCity_House9/scripts.pory"
-	speakername SofosCity_House9_EventScript_Tyrunt_Text_0
-# 90 "data/maps/SofosCity_House9/scripts.pory"
-	playmoncry SPECIES_TYRUNT, CRY_MODE_NORMAL
-# 91 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Tyrunt_Text_1
-# 92 "data/maps/SofosCity_House9/scripts.pory"
-	waitmoncry
-# 93 "data/maps/SofosCity_House9/scripts.pory"
-	closemessage
 # 94 "data/maps/SofosCity_House9/scripts.pory"
+	lock
+# 95 "data/maps/SofosCity_House9/scripts.pory"
+	faceplayer
+# 96 "data/maps/SofosCity_House9/scripts.pory"
+	speakername SofosCity_House9_EventScript_Tyrunt_Text_0
+# 97 "data/maps/SofosCity_House9/scripts.pory"
+	playmoncry SPECIES_TYRUNT, CRY_MODE_NORMAL
+# 98 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Tyrunt_Text_1
+# 99 "data/maps/SofosCity_House9/scripts.pory"
+	waitmoncry
+# 100 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
+# 101 "data/maps/SofosCity_House9/scripts.pory"
 	release
 	end
 
 
 SofosCity_House9_EventScript_Amaura::
-# 99 "data/maps/SofosCity_House9/scripts.pory"
-	lock
-# 100 "data/maps/SofosCity_House9/scripts.pory"
-	faceplayer
-# 101 "data/maps/SofosCity_House9/scripts.pory"
-	speakername SofosCity_House9_EventScript_Amaura_Text_0
-# 102 "data/maps/SofosCity_House9/scripts.pory"
-	playmoncry SPECIES_AMAURA, CRY_MODE_NORMAL
-# 103 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Amaura_Text_1
-# 104 "data/maps/SofosCity_House9/scripts.pory"
-	waitmoncry
-# 105 "data/maps/SofosCity_House9/scripts.pory"
-	closemessage
 # 106 "data/maps/SofosCity_House9/scripts.pory"
+	lock
+# 107 "data/maps/SofosCity_House9/scripts.pory"
+	faceplayer
+# 108 "data/maps/SofosCity_House9/scripts.pory"
+	speakername SofosCity_House9_EventScript_Amaura_Text_0
+# 109 "data/maps/SofosCity_House9/scripts.pory"
+	playmoncry SPECIES_AMAURA, CRY_MODE_NORMAL
+# 110 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Amaura_Text_1
+# 111 "data/maps/SofosCity_House9/scripts.pory"
+	waitmoncry
+# 112 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
+# 113 "data/maps/SofosCity_House9/scripts.pory"
 	release
 	end
 
 
 SofosCity_House9_EventScript_Archen::
-# 111 "data/maps/SofosCity_House9/scripts.pory"
-	lock
-# 112 "data/maps/SofosCity_House9/scripts.pory"
-	faceplayer
-# 113 "data/maps/SofosCity_House9/scripts.pory"
-	speakername SofosCity_House9_EventScript_Archen_Text_0
-# 114 "data/maps/SofosCity_House9/scripts.pory"
-	playmoncry SPECIES_ARCHEN, CRY_MODE_NORMAL
-# 115 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Archen_Text_1
-# 116 "data/maps/SofosCity_House9/scripts.pory"
-	waitmoncry
-# 117 "data/maps/SofosCity_House9/scripts.pory"
-	closemessage
 # 118 "data/maps/SofosCity_House9/scripts.pory"
+	lock
+# 119 "data/maps/SofosCity_House9/scripts.pory"
+	faceplayer
+# 120 "data/maps/SofosCity_House9/scripts.pory"
+	speakername SofosCity_House9_EventScript_Archen_Text_0
+# 121 "data/maps/SofosCity_House9/scripts.pory"
+	playmoncry SPECIES_ARCHEN, CRY_MODE_NORMAL
+# 122 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Archen_Text_1
+# 123 "data/maps/SofosCity_House9/scripts.pory"
+	waitmoncry
+# 124 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
+# 125 "data/maps/SofosCity_House9/scripts.pory"
 	release
 	end
 
 
 SofosCity_House9_EventScript_Spheal::
-# 123 "data/maps/SofosCity_House9/scripts.pory"
-	lock
-# 124 "data/maps/SofosCity_House9/scripts.pory"
-	faceplayer
-# 125 "data/maps/SofosCity_House9/scripts.pory"
-	speakername SofosCity_House9_EventScript_Spheal_Text_0
-# 126 "data/maps/SofosCity_House9/scripts.pory"
-	playmoncry SPECIES_SPHEAL, CRY_MODE_NORMAL
-# 127 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Spheal_Text_1
-# 128 "data/maps/SofosCity_House9/scripts.pory"
-	waitmoncry
-# 129 "data/maps/SofosCity_House9/scripts.pory"
-	closemessage
 # 130 "data/maps/SofosCity_House9/scripts.pory"
+	lock
+# 131 "data/maps/SofosCity_House9/scripts.pory"
+	faceplayer
+# 132 "data/maps/SofosCity_House9/scripts.pory"
+	speakername SofosCity_House9_EventScript_Spheal_Text_0
+# 133 "data/maps/SofosCity_House9/scripts.pory"
+	playmoncry SPECIES_SPHEAL, CRY_MODE_NORMAL
+# 134 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Spheal_Text_1
+# 135 "data/maps/SofosCity_House9/scripts.pory"
+	waitmoncry
+# 136 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
+# 137 "data/maps/SofosCity_House9/scripts.pory"
 	release
 	end
 
@@ -299,34 +311,39 @@ SofosCity_House9_EventScript_Nemo_Text_9:
 	.string "care I feel for wildlife and Pokémon\l"
 	.string "shows in the final product.$"
 
+SofosCity_House9_EventScript_Nemo_Text_10:
+# 78 "data/maps/SofosCity_House9/scripts.pory"
+	.string "Oh wait, one more thing! Here's a Cabin\n"
+	.string "Decoration from me!$"
+
 SofosCity_House9_EventScript_Tyrunt_Text_0:
-# 89 "data/maps/SofosCity_House9/scripts.pory"
+# 96 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Tyrunt$"
 
 SofosCity_House9_EventScript_Tyrunt_Text_1:
-# 91 "data/maps/SofosCity_House9/scripts.pory"
+# 98 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Wroooar!$"
 
 SofosCity_House9_EventScript_Amaura_Text_0:
-# 101 "data/maps/SofosCity_House9/scripts.pory"
+# 108 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Amaura$"
 
 SofosCity_House9_EventScript_Amaura_Text_1:
-# 103 "data/maps/SofosCity_House9/scripts.pory"
+# 110 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Breee!$"
 
 SofosCity_House9_EventScript_Archen_Text_0:
-# 113 "data/maps/SofosCity_House9/scripts.pory"
+# 120 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Archen$"
 
 SofosCity_House9_EventScript_Archen_Text_1:
-# 115 "data/maps/SofosCity_House9/scripts.pory"
+# 122 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Caww!$"
 
 SofosCity_House9_EventScript_Spheal_Text_0:
-# 125 "data/maps/SofosCity_House9/scripts.pory"
+# 132 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Spheal$"
 
 SofosCity_House9_EventScript_Spheal_Text_1:
-# 127 "data/maps/SofosCity_House9/scripts.pory"
+# 134 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Clap clap!$"

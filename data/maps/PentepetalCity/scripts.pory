@@ -327,36 +327,136 @@ raw `
     .align 2
 PentepetalCity_DollDecorShop:
 	.2byte DECOR_MIMIKYU_DOLL
-	.2byte DECOR_CRABRAWLER_DOLL
+	.2byte DECOR_JIGGLYPUFF_DOLL
 	.2byte DECOR_IMPIDIMP_DOLL
+	.2byte DECOR_DUSKULL_DOLL
 	.2byte DECOR_ARCHEN_DOLL
 	.2byte DECOR_TIRTOUGA_DOLL
-	.2byte DECOR_CHESPIN_DOLL
-	.2byte DECOR_FENNEKIN_DOLL
-	.2byte DECOR_FROAKIE_DOLL
-	.2byte DECOR_STUFFUL_DOLL
-	.2byte DECOR_APPLIN_DOLL
-	.2byte DECOR_BOUNSWEET_DOLL
 	.2byte DECOR_SKIDDO_DOLL
+	.2byte DECOR_BALTOY_DOLL
+	.2byte DECOR_KECLEON_DOLL
+	.2byte DECOR_APPLIN_DOLL
+	.2byte DECOR_SWABLU_DOLL
 	.2byte DECOR_ROCKRUFF_DOLL
-	.2byte DECOR_RAIKOU_DOLL
-	.2byte DECOR_ENTEI_DOLL
-	.2byte DECOR_SUICUNE_DOLL
+	.2byte DECOR_TOUCANNON_DOLL
 	.2byte DECOR_ARCANINE_DOLL
 	.2byte DECOR_KOMMO_O_DOLL
-	.2byte DECOR_GYARADOS_DOLL
-	.2byte DECOR_FOSSIL_DISPLAY
-	.2byte DECOR_HO_OH_DOLL
-	.2byte DECOR_LUGIA_DOLL
-	.2byte DECOR_RAICHU_DOLL
-	.2byte DECOR_POTTED_BERRY
-	.2byte DECOR_SHOCKING_RELIC
-	.2byte DECOR_MARBLE_STATUE
+	.2byte DECOR_NONE
+	release
+	end
+`
+
+script PentepetalCity_EventScript_OrnamentalDecorStreetVendor
+{
+    lock
+    faceplayer
+    speakername("Street Vendor")
+    message(format("Welcome! I sell Desks and Ornamental Room Decorations. How can I help you?"))
+    waitmessage
+    pokemartdecoration(PentepetalCity_OrnamentDecorShop)
+    closemessage
+    delay(5)
+    speakername("Street Vendor")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+raw `
+    .align 2
+PentepetalCity_OrnamentDecorShop:
+	.2byte DECOR_HEAVY_DESK
+	.2byte DECOR_RAGGED_DESK
+	.2byte DECOR_COMFORT_DESK
 	.2byte DECOR_BOOK_AND_QUILL
-	.2byte DECOR_TOUCANNON_DOLL
-	.2byte DECOR_ORICORIO_DOLL
-	.2byte DECOR_WOOD_MAT
+	.2byte DECOR_HEAVY_CHAIR
+	.2byte DECOR_RAGGED_CHAIR
+	.2byte DECOR_COMFORT_CHAIR
+	.2byte DECOR_RED_PLANT
+	.2byte DECOR_TROPICAL_PLANT
+	.2byte DECOR_COLORFUL_PLANT
+	.2byte DECOR_SHRINE
+	.2byte DECOR_SLIDE
+	.2byte DECOR_STAND
+	.2byte DECOR_BREAKABLE_DOOR
+	.2byte DECOR_TV
+	.2byte DECOR_PATTERNED_BED
+	.2byte DECOR_NONE
+	release
+	end
+`
+
+script PentepetalCity_EventScript_FloorDecorStreetVendor
+{
+    lock
+    faceplayer
+    speakername("Street Vendor")
+    message(format("Welcome! I sell Floor and Wall Decorations. How can I help you?"))
+    waitmessage
+    pokemartdecoration(PentepetalCity_FloorDecorShop)
+    closemessage
+    delay(5)
+    speakername("Street Vendor")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+raw `
+    .align 2
+PentepetalCity_FloorDecorShop:
 	.2byte DECOR_DOLL_SQUARE
+	.2byte DECOR_WOOD_MAT
+	.2byte DECOR_GLITTER_MAT
+	.2byte DECOR_JUMP_MAT
+	.2byte DECOR_SPIN_MAT
+	.2byte DECOR_FIRE_BLAST_MAT
+	.2byte DECOR_POWDER_SNOW_MAT
+	.2byte DECOR_ATTRACT_MAT
+	.2byte DECOR_FISSURE_MAT
+	.2byte DECOR_SPIKES_MAT
+	.2byte DECOR_PUPPY_POSTER
+	.2byte DECOR_SEA_POSTER
+	.2byte DECOR_SKY_POSTER
+	.2byte DECOR_PIKA_CUSHION
+	.2byte DECOR_ROUND_CUSHION
+	.2byte DECOR_KISS_CUSHION
+	.2byte DECOR_ZIGZAG_CUSHION
+	.2byte DECOR_SPIN_CUSHION
+	.2byte DECOR_DIAMOND_CUSHION
+	.2byte DECOR_BALL_CUSHION
+	.2byte DECOR_NONE
+	release
+	end
+`
+
+script PentepetalCity_EventScript_MusicDecorStreetVendor
+{
+    lock
+    faceplayer
+    speakername("Street Vendor")
+    message(format("Hey! I'm selling Note Mats for private Rooms. How can I help you?"))
+    waitmessage
+    pokemartdecoration(PentepetalCity_MusicDecorShop)
+    closemessage
+    delay(5)
+    speakername("Street Vendor")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+raw `
+    .align 2
+PentepetalCity_MusicDecorShop:
+	.2byte DECOR_C_LOW_NOTE_MAT
+	.2byte DECOR_D_NOTE_MAT
+	.2byte DECOR_E_NOTE_MAT
+	.2byte DECOR_F_NOTE_MAT
+	.2byte DECOR_G_NOTE_MAT
+	.2byte DECOR_A_NOTE_MAT
+	.2byte DECOR_B_NOTE_MAT
+	.2byte DECOR_C_HIGH_NOTE_MAT
 	.2byte DECOR_NONE
 	release
 	end

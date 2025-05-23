@@ -125,19 +125,29 @@ script SofosCity_EventScript_DecorStreetVendor
 raw `
     .align 2
 SofosCity_DecorShop:
+    .2byte DECOR_SMALL_DESK
+	.2byte DECOR_PRETTY_DESK
+    .2byte DECOR_SMALL_CHAIR
+	.2byte DECOR_PRETTY_CHAIR
+    .2byte DECOR_SMALL_FLOWER_BOX
+    .2byte DECOR_PRETTY_FLOWERS
+    .2byte DECOR_FENCE_LENGTH
+	.2byte DECOR_FENCE_WIDTH
+    .2byte DECOR_LARGE_BED
+	.2byte DECOR_DOLL_SQUARE
+	.2byte DECOR_GLITTER_MAT
 	.2byte DECOR_SURF_MAT
 	.2byte DECOR_THUNDER_MAT
+	.2byte DECOR_GREEN_POSTER
+	.2byte DECOR_RED_POSTER
+	.2byte DECOR_BLUE_POSTER
 	.2byte DECOR_SUNSET_POSTER
 	.2byte DECOR_PIKACHU_DOLL
-	.2byte DECOR_FENCE_LENGTH
-	.2byte DECOR_FENCE_WIDTH
-	.2byte DECOR_SMALL_DESK
-	.2byte DECOR_PRETTY_DESK
-	.2byte DECOR_SMALL_CHAIR
-	.2byte DECOR_PRETTY_CHAIR
-	.2byte DECOR_SMALL_FLOWER_BOX
-	.2byte DECOR_PRETTY_FLOWERS
-	.2byte DECOR_LARGE_BED
+	.2byte DECOR_CRABRAWLER_DOLL
+	.2byte DECOR_TOGEPI_DOLL
+	.2byte DECOR_MEOWTH_DOLL
+	.2byte DECOR_STUFFUL_DOLL
+	.2byte DECOR_BOUNSWEET_DOLL
 	.2byte DECOR_GRASS_CUSHION
 	.2byte DECOR_FIRE_CUSHION
 	.2byte DECOR_WATER_CUSHION
@@ -263,12 +273,12 @@ script SofosCity_EventScript_StrategicCamper_ReactToRaichu
     waitmovement(0)
     delay(10)
     speakername("Camper")
-    msgbox(format("Ahaha, I love it! This data is even more impressive than I expected!\p Alolan Raichu really is the master of controlling battle terrain, huh? Oh, right, here's your reward!"))
+    msgbox(format("Ahaha, I love it! This data is even more impressive than I expected!\p I just won two of these Alolan Raichu Dolls in a contest. Here, I want you to take one!"))
     closemessage
-    giveitem(ITEM_TERRAIN_EXTENDER)
+    givedecoration(DECOR_RAICHU_DOLL)
     delay(5)
     speakername("Camper")
-    msgbox(format("The Terrain Extender makes terrain stay longer when set in battle. Using this with Alolan Raichu can make it stay faster for longer!"))
+    msgbox(format("It's a pretty large Doll, so make sure to display it on a large Mat with plenty of space!"))
     closemessage
 
     delay(20)

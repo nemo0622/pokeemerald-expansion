@@ -519,25 +519,21 @@ script JusmailTown_House1_EventScript_EnterBuilding_200BerryTreeReward
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
     speakername("Psychic")
-    msgbox(format("People are coming to Jusmail Town just to visit the Berru Club! We've started more research and even gotten into public education. People are really starting to take Berries seriously!"))
+    msgbox(format("People are coming to Jusmail Town just to visit the Berry Club! We've started more research and even gotten into public education. People are really starting to take Berries seriously!"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
     speakername("Beauty")
-    msgbox(format("Nothing we give could repay what you've done for us. We've been raising a special Pokémon here, so maybe this can be a start!"))
+    msgbox(format("Nothing we give could repay what you've done for us, but maybe this Decoration can be a start!"))
     closemessage
 
     setflag(FLAG_GOT_BERRY_CLUB_REWARD_200)
-    setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ARCHEN)
-	givemon(SPECIES_ARCHEN, 50, ITEM_YACHE_BERRY, ITEM_POKE_BALL, NATURE_ADAMANT, 2, MON_FEMALE, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_DUAL_WINGBEAT, MOVE_U_TURN, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE)
-
-	playfanfare(MUS_OBTAIN_ITEM)
-	msgbox(format("{PLAYER} received the fruit-eating Archen!"))
-	waitfanfare
+    givedecoration(DECOR_POTTED_BERRY)
 	closemessage
+    delay(5)
 
     speakername("Beauty")
-    msgbox(format("That Archen has {COLOR GREEN}special moves{COLOR DARK_GRAY} learned from growing up around all these Berries. Make sure to take care of it!"))
+    msgbox(format("That Potted Berry Decoration is a decorative tree for any private room you own! I hope it will remind you of your status in the Berry Club."))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)

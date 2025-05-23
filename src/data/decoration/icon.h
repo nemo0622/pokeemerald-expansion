@@ -127,6 +127,6 @@ const u32 *const gDecorIconTable[][2] =
     [DECOR_BOOK_AND_QUILL]  = {gDecorIcon_BookAndQuill, gDecorIconPalette_BookAndQuill},
     [DECOR_TOUCANNON_DOLL]  = {NULL, NULL},
     [DECOR_ORICORIO_DOLL]  = {NULL, NULL},
-    [DECOR_WOOD_MAT]      = {NULL, NULL},
+    [DECOR_WOOD_MAT]      = {gDecorIcon_DollSquare, gDecorIconPalette_DollSquare},
     [DECOR_DOLL_SQUARE]      = {gDecorIcon_DollSquare, gDecorIconPalette_DollSquare}
 };

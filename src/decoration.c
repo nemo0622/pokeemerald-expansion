@@ -1991,34 +1991,43 @@ static void CopyTile(u8 *dest, u16 tile)
     }
 }
 
-static void SetDecorSelectionBoxTiles(struct PlaceDecorationGraphicsDataBuffer *data)
+static void SetDecorSelectionBoxTiles(struct PlaceDecorationGraphicsDataBuffer *data, bool8 isShopMenu)
 {
-    u16 i;
-    for (i = 0; i < 64; i++)
+    if(isShopMenu)
     {
-        // THIS IS ALL CUSTOM, AWFUL, CLASSIC NEMO622 ORIGINAL CODE LOL
-        // So basically, in the CopyTile function below, the "11" is tile sprite 0x00B (the small while box in the tileset)
-        // being drawn on every 8x8 tile the decoration beind moved will take up.
-        // It's important to skip certain sections of this filling function because when placing 3x3 decorations
-        // like Mats, the 8x8 white squares would overlap with the player and look nasty.
-        // Tbh, I barely get this stuff, but it seems to work. thumbs up emoji
-
-        if(data->decoration->shape == DECORSHAPE_3x3)
+        u16 i;
+        for (i = 0; i < 64; i++)
+            CopyTile(&data->image[i * TILE_SIZE_4BPP], data->tiles[i]);
+    }
+    else
+    {
+        u16 i;
+        for (i = 0; i < 64; i++)
         {
-            if(i == 6) // skip 6 and 7
-                i = 8;
-            if(i == 14) // skip 14 and 15
-                i = 16;
-            if(i == 22) // skip 22 and 23
-                i = 24;
-            if(i == 30) // skip 30 and 31
-                i = 32;
-            if(i == 38) // skip 38 and 39
-                i = 40;
-            if(i == 46) // skip 46 and 47, and doesn't draw 48-64 (would be a line of squares below player sprite, which is wrong)
-                break;
+            // THIS IS ALL CUSTOM, AWFUL, CLASSIC NEMO622 ORIGINAL CODE LOL
+            // So basically, in the CopyTile function below, the "11" is tile sprite 0x00B (the small while box in the tileset)
+            // being drawn on every 8x8 tile the decoration beind moved will take up.
+            // It's important to skip certain sections of this filling function because when placing 3x3 decorations
+            // like Mats, the 8x8 white squares would overlap with the player and look nasty.
+            // Tbh, I barely get this stuff, but it seems to work. thumbs up emoji
+
+            if(data->decoration->shape == DECORSHAPE_3x3)
+            {
+                if(i == 6) // skip 6 and 7
+                    i = 8;
+                if(i == 14) // skip 14 and 15
+                    i = 16;
+                if(i == 22) // skip 22 and 23
+                    i = 24;
+                if(i == 30) // skip 30 and 31
+                    i = 32;
+                if(i == 38) // skip 38 and 39
+                    i = 40;
+                if(i == 46) // skip 46 and 47, and doesn't draw 48-64 (would be a line of squares below player sprite, which is wrong)
+                    break;
+            }
+            CopyTile(&data->image[i * TILE_SIZE_4BPP], 11);
         }
-        CopyTile(&data->image[i * TILE_SIZE_4BPP], 11);
     }
 }
 
@@ -2094,7 +2103,7 @@ static u8 gpu_pal_decompress_alloc_tag_and_upload(struct PlaceDecorationGraphics
     FreeSpritePaletteByTag(PLACE_DECORATION_SELECTOR_TAG);
     SetDecorSelectionMetatiles(data);
     SetDecorSelectionBoxOamAttributes(data->decoration->shape);
-    SetDecorSelectionBoxTiles(data);
+    SetDecorSelectionBoxTiles(data, FALSE);
     CopyPalette(data->palette, gTilesetPointer_SecretBaseRedCave->metatiles[(data->decoration->tiles[0] * NUM_TILES_PER_METATILE) + 7] >> 12);
     LoadSpritePalette(&sSpritePal_PlaceDecoration);
     return CreateSprite(&sDecorationSelectorSpriteTemplate, 0, 0, 0);
@@ -2150,7 +2159,7 @@ static u8 AddDecorationIconObjectFromObjectEvent(u16 tilesTag, u16 paletteTag, u
     {
         SetDecorSelectionMetatiles(&sPlaceDecorationGraphicsDataBuffer);
         SetDecorSelectionBoxOamAttributes(sPlaceDecorationGraphicsDataBuffer.decoration->shape);
-        SetDecorSelectionBoxTiles(&sPlaceDecorationGraphicsDataBuffer);
+        SetDecorSelectionBoxTiles(&sPlaceDecorationGraphicsDataBuffer, TRUE);
         CopyPalette(sPlaceDecorationGraphicsDataBuffer.palette, ((u16 *)gTilesetPointer_SecretBaseRedCave->metatiles)[(sPlaceDecorationGraphicsDataBuffer.decoration->tiles[0] * NUM_TILES_PER_METATILE) + 7] >> 12);
         sheet.data = sPlaceDecorationGraphicsDataBuffer.image;
         sheet.size = sDecorShapeSizes[sPlaceDecorationGraphicsDataBuffer.decoration->shape] * TILE_SIZE_4BPP;
