@@ -1,0 +1,23 @@
+mapscripts PentepetalCity_House3_MapScripts {}
+
+script PentepetalCity_House3_EventScript_Athlete
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    msgbox(format("No matter how much you love something, it's important to take a break sometimes. I'm giving my legs a break after my daily exercise!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_House3_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("Things have changed an awful lot since I was young. I don't think that's a bad thing, though."))
+    closemessage
+    release
+    end
+}

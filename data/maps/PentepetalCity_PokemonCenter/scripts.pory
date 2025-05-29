@@ -1,0 +1,60 @@
+mapscripts PentepetalCity_PokemonCenter_MapScripts {}
+
+script PentepetalCity_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Péntepetal City Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_PENTEPETAL_CITY)
+    }
+    release
+    end
+}
+
+script PentepetalCity_PokemonCenter_EventScript_BlackBelt
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    msgbox(format("Heh, check out this Crabrawler Doll I bought recently! This will be perfect for my training room."))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_PokemonCenter_EventScript_PunkRocker
+{
+    lock
+    faceplayer
+    speakername("Punk Rocker")
+    msgbox(format("These Pokémon Dolls are so rad! I should buy some for my house, too."))
+    closemessage
+    release
+    end
+}

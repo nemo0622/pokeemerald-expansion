@@ -4501,6 +4501,40 @@ void ChooseItemFromBag(void)
     }
 }
 
+void CheckIfAnyMonsHaveRibbons(void) // used for Quests to reward player for earning any ribbons
+{
+    int i, j;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i],  MON_DATA_SANITY_HAS_SPECIES)
+            && !GetMonData(&gPlayerParty[i], MON_DATA_SANITY_IS_EGG)
+            && GetMonData(&gPlayerParty[i], MON_DATA_RIBBON_COUNT) != 0)
+        {
+            gSpecialVar_0x8004 = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES);
+            gSpecialVar_Result = TRUE;
+            return;
+        }
+    }
+
+    for (j = 0; j < TOTAL_BOXES_COUNT; j++)
+    {
+        for (i = 0; i < IN_BOX_COUNT; i++)
+        {
+            if (CheckBoxMonSanityAt(j, i)
+                && GetBoxMonDataAt(j, i, MON_DATA_RIBBON_COUNT) != 0)
+            {
+                gSpecialVar_0x8004 = GetBoxMonDataAt(j, i, MON_DATA_SPECIES);
+                gSpecialVar_Result = TRUE;
+                return;
+            }
+        }
+    }
+
+    gSpecialVar_Result = FALSE;
+    return;
+}
+
 // -------------------------------------------------------------------------------------------
 //                                     KIPOS TOWN ZOO SPECIALS
 // -------------------------------------------------------------------------------------------

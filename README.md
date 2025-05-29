@@ -64,8 +64,9 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- Expand Wolfey code to give Poliwag w/ Kings Rock & Perish Song and Gothita w/ Shadow Tag ability
-    - Wolfey con perish nod emoji
+- Make Ribbons influence Pokémon stats
+    - Toughness ribbons boost attack, Smartness ribbons boost Sp. Atk, Beauty ribbons boost Sp. Def, etc.
+    - ALSO! Work the link outfit gfx from mudskip's commits into the game and see if that fixes the contest and battle pavilion graphical glitches!
 - Continue Mapping and NPC development
     - Péntepetal City!
         - Rania's quest - meet up with Rania on Péntepetal City following the events of Myrrini Island. She'll tell you
@@ -170,6 +171,8 @@ GREEK PHRASES AND STUFF:
 - CABIN DECORATION: holding the decoration sometimes breaks the graphics (ex: holding Pretty Flowers messes it up bad)
 - BATTLE PAVILION: Player sprites are garbled
     - Most likely because my Outfit implementation skipped over all the player link graphical stuff. oops
+    - Also happens in Contests!
+    - POSSIBLE SOLUTION: Load default costumes for that stuff? or go through and integrate link graphics. prolly do that stuff
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)

@@ -1,0 +1,36 @@
+mapscripts PentepetalCity_House1_MapScripts {}
+
+script PentepetalCity_House1_EventScript_Farmer
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("Some Pokémon can be found all over the Ilios Region, while others are only found on specific islands. For example, my Jangmo-o is pretty darn rare outside of the Sea of Asteri!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_House1_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("My husband is just obsessed with that Jangmo-o he caught on a trip out west. Ehehe, it's sweet!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_House1_EventScript_Jangmo_O
+{
+    lock
+    faceplayer
+    speakername("Jangmo-o")
+    playmoncry(SPECIES_JANGMO_O, CRY_MODE_NORMAL)
+    msgbox("Khraah!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

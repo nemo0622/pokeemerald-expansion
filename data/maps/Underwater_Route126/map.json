@@ -71,7 +71,7 @@
       "y": 36,
       "elevation": 3,
       "item": "ITEM_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL"
+      "flag": "FLAG_HIDDEN_ITEM_PENTEPETAL_FOSSIL"
     },
     {
       "type": "hidden_item",

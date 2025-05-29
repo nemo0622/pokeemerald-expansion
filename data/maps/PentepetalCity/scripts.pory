@@ -1,6 +1,26 @@
 mapscripts PentepetalCity_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_PENTEPETAL_CITY)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(40, ENCOUNTER_LAND)
+        setobjectaswildencounter(41, ENCOUNTER_LAND)
+        setobjectaswildencounter(42, ENCOUNTER_LAND)
+        setobjectaswildencounter(43, ENCOUNTER_LAND)
+        setobjectaswildencounter(44, ENCOUNTER_LAND)
+        setobjectaswildencounter(45, ENCOUNTER_SURF)
+        setobjectaswildencounter(46, ENCOUNTER_SURF)
     }
 }
 
@@ -461,3 +481,278 @@ PentepetalCity_MusicDecorShop:
 	release
 	end
 `
+
+script PentepetalCity_EventScript_NinjaBoy
+{
+    lock
+    faceplayer
+    speakername("Ninja Boy")
+    msgbox(format("I wonder what cool decorations I can get for my room here! Maybe I can fight some of them!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_DecorShopSign
+{
+    lock
+    msgbox(format("Péntepetal City Decorations\n The Best Decor in Ilios!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("Empires and Kingdoms used to battle over this island. Now that the Ilios Region is united, it's a lot more peaceful."))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    speakername("Gentleman")
+    msgbox(format("I'm on vacation here with my daughter. She's obsessed with Pokémon Contests... I don't really get it, but they make her happy!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Man
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("Péntepetal City is known for a long history of poetry. Maybe writers of the past will inspire me!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("When Pokémon compete in Contests, they can earn Ribbons! They can slightly raise certain battle stats. For example, Ribbons from Toughness Contests make Pokémon a bit physically stronger!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_BlackBelt
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    msgbox(format("Heh, my Breloom is getting faster and stronger! There's not a Gym to fight in Péntepetal City, but it's worth coming by to train!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Breloom
+{
+    lock
+    faceplayer
+    speakername("Breloom")
+    playmoncry(SPECIES_BRELOOM, CRY_MODE_NORMAL)
+    msgbox("Hek keh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Lass
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("The water gets rocky and shallow nearby, which makes swimming hard. Sometimes ocean Pokémon come up and play on the beach!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_TuberM
+{
+    lock
+    faceplayer
+    speakername("Tuber")
+    msgbox(format("Look at this awesome Pokémon I just caught! It must be one of the strongest out there, just look at how it bounces!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Magikarp
+{
+    lock
+    faceplayer
+    speakername("Magikarp")
+    playmoncry(SPECIES_MAGIKARP, CRY_MODE_NORMAL)
+    msgbox("Plep?")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("I hear they found wild Cranidos and Shieldon here. I found some a few months ago, but I haven't seen any recently... I hope they're okay."))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_RIBBON_TO_ARTIST)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Your Pokémon has inspired me with their talents! I can see why it wins Ribbons."))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_RIBBON_TO_ARTIST)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("I'm looking for the perfect Pokémon to paint... I want a winning art piece, so I need to see a Contest-winning Pokémon!\p Talk to me when you have a {COLOR GREEN}Pokémon with a Ribbon{COLOR DARK_GRAY} to inspire my art."))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_SHOW_RIBBON_TO_ARTIST)
+    }
+    else
+    {
+        msgbox(format("Chaire! Have you won any Pokémon Contests yet? I'd like to see a {COLOR GREEN}Pokémon with a Ribbon{COLOR DARK_GRAY}."))
+        closemessage
+
+        special(CheckIfAnyMonsHaveRibbons)
+        delay(30)
+
+        if(var(VAR_RESULT) == TRUE)
+        {
+            applymovement(32, Common_Movement_Heart)
+            waitmovement(0)
+            delay(10)
+            bufferspeciesname(STR_VAR_1, VAR_0x8004)
+            speakername("Artist")
+            msgbox(format("Your {STR_VAR_1} has a stunning Ribbon! It must be a Pokémon Contest winner, this will make for a perfect painting!\p You have my inspiration flowing. Please, take this!"))
+            closemessage
+
+            delay(5)
+            giveitem(ITEM_TM_DRAINING_KISS)
+            closemessage
+            delay(20)
+            completequest(QUEST_SHOW_RIBBON_TO_ARTIST)
+        }
+        else
+        {
+            speakername("Artist")
+            msgbox(format("Hm, still working on the Pokémon Contests, huh? That's okay, I haven't won any either.\p Come to me when you have a {COLOR GREEN}Pokémon with a Contest Ribbon{COLOR DARK_GRAY}. I'll give you a reward for your effort!"))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("My Gothitelle is almost ready to compete in a Contest! Nobody can beat her in a Beauty competition!"))
+    closemessage
+    applymovement(35, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Gothitelle
+{
+    lock
+    faceplayer
+    speakername("Gothitelle")
+    playmoncry(SPECIES_GOTHITELLE, CRY_MODE_NORMAL)
+    msgbox("Bree-ei!")
+    waitmoncry
+    closemessage
+    applymovement(36, Common_Movement_FaceLeft)
+    waitmovement(0)
+    release
+    end
+}
+
+script PentepetalCity_EventScript_FatMan
+{
+    lock
+    faceplayer
+    speakername("Fat Man")
+    msgbox(format("Ehehe, look at my Shiny Appletun! I found a bright green Applin when I was young, and I'v been riding that excitement high ever since!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Appletun
+{
+    lock
+    faceplayer
+    speakername("Appletun")
+    playmoncry(SPECIES_APPLETUN, CRY_MODE_NORMAL)
+    msgbox("Huu-ahh.")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("I came by to see the wild Cranidos and Shieldon folks have been talking about. Now that I'm here, it seems like they're all gone..."))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_EventScript_PickUpRandomFossil
+{
+    if(!flag(FLAG_HIDDEN_ITEM_PENTEPETAL_FOSSIL))
+    {
+        lock
+        msgbox(format("Hm? There's a strange-looking rock in this bag abandoned by Team Chimera!"))
+        closemessage
+        delay(5)
+        randomelement(ITEM_SKULL_FOSSIL, ITEM_ARMOR_FOSSIL)
+        giveitem(VAR_RESULT)
+        closemessage
+        setflag(FLAG_HIDDEN_ITEM_PENTEPETAL_FOSSIL)
+    }
+    release
+    end
+}

@@ -470,11 +470,11 @@ const u8 gText_RibbonsVar1[] = _("RIBBONS: {STR_VAR_1}");
 const u8 gText_EmptyString5[] = _("");
 const u8 gText_Events[] = _("EVENTS"); // Unused
 const u8 gText_Switch[] = _("SWITCH");
-const u8 gText_PkmnInfo[] = _("Pokémon INFO");
-const u8 gText_PkmnSkills[] = _("Pokémon SKILLS");
-const u8 gText_BattleMoves[] = _("BATTLE MOVES");
-const u8 gText_ContestMoves[] = _("CONTEST MOVES");
-const u8 gText_Info[] = _("INFO");
+const u8 gText_PkmnInfo[] = _("Pokémon Info");
+const u8 gText_PkmnSkills[] = _("Pokémon Skills");
+const u8 gText_BattleMoves[] = _("Battle Moves");
+const u8 gText_ContestMoves[] = _("Contest Moves");
+const u8 gText_Info[] = _("Info");
 const u8 gText_EggWillTakeALongTime[] = _("It looks like this EGG will\ntake a long time to hatch.");
 const u8 gText_EggWillTakeSomeTime[] = _("What will hatch from this?\nIt will take some time.");
 const u8 gText_EggWillHatchSoon[] = _("It moves occasionally.\nIt should hatch soon.");
@@ -1794,6 +1794,9 @@ const u8 gText_SideQuestName_47[] = _("Rift in the Heart");
 const u8 gText_SideQuestName_48[] = _("Mischief on Marmaro");
 const u8 gText_SideQuestName_49[] = _("5-Star Recovery");
 const u8 gText_SideQuestName_50[] = _("Another Chance");
+const u8 gText_SideQuestName_51[] = _("A Winning Painting");
+const u8 gText_SideQuestName_52[] = _("The Big Ask");
+const u8 gText_SideQuestName_53[] = _("The Long-Lost Friend");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Look for the deliveryman\nwith a flipped cart.");
@@ -1846,6 +1849,9 @@ const u8 gText_SideQuestDesc_47[] = _("Give a Heart Scale to\nthe Punk Rocker to
 const u8 gText_SideQuestDesc_48[] = _("Chase Team Chimera out\nof the Mine on Marmaro\nIsland.");
 const u8 gText_SideQuestDesc_49[] = _("Visit Rania in Péntepetal\nCity after her nasty\nrun-in with Team Chimera.");
 const u8 gText_SideQuestDesc_50[] = _("Bring the Diver a Revive\nto heal his diving Pokémon.");
+const u8 gText_SideQuestDesc_51[] = _("Show the Artist that your\nPokémon won a Contest Ribbon\nto inspire his art.");
+const u8 gText_SideQuestDesc_52[] = _("Bring a Hisuian Arcanine\nDoll to help a woman\nsurprise her girlfriend.");
+const u8 gText_SideQuestDesc_53[] = _("Give 10 Wishing Stars to the\nKalosian family to help\nbring back a lost Pokémon.");
 
 //completed quest description
 // NOTE: Probably never seen now that I only make Active quests seen lol!
@@ -1931,6 +1937,9 @@ const u8 gText_SideQuestMap47[] = _("Myrrini Island (House)"); // QUEST_MYRRINI_
 const u8 gText_SideQuestMap48[] = _("Marmaro Island Mine"); // QUEST_FREE_MARMARO_MINES
 const u8 gText_SideQuestMap49[] = _("Péntepetal City"); // QUEST_VISIT_RANIA_PENTEPETAL
 const u8 gText_SideQuestMap50[] = _("Sea of Asteri (Underwater)"); // QUEST_GIVE_REVIVE_UNDERWATER
+const u8 gText_SideQuestMap51[] = _("Péntepetal City"); // QUEST_SHOW_RIBBON_TO_ARTIST
+const u8 gText_SideQuestMap52[] = _("Péntepetal City (House)"); // QUEST_SHOW_RIBBON_TO_ARTIST
+const u8 gText_SideQuestMap53[] = _("Péntepetal City (House)"); // QUEST_ETERNAL_FLOETTE_PLOT
 
 //subquests
 // erm unused now oopsies

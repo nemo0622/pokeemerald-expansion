@@ -135,17 +135,22 @@ script TheDelphis_EventScript_LeaveShipTrigger
             warp(MAP_MYRRINI_ISLAND, 20, 47)
             waitstate
         }
-        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 7) // fresco isles
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 7) // péntepetal city
+        {
+            warp(MAP_PENTEPETAL_CITY, 49, 42) // currently set to Pokémon center entrance, no dock yet
+            waitstate
+        }
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 8) // fresco isles
         {
             warp(MAP_FRESCO_ISLAND, 65, 27) // currently set to Pokémon center entrance, no dock yet
             waitstate
         }
-        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 8) // palati city
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 9) // palati city
         {
             warp(MAP_PALATI_CITY, 39, 19) // currently set to Pokémon center entrance, no dock yet
             waitstate
         }
-        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 9) // port pello
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 10) // port pello
         {
             warp(MAP_PORT_PELLO, 22, 19) // currently set to Pokémon center entrance, no dock yet
             waitstate

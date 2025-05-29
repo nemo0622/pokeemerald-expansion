@@ -1072,6 +1072,36 @@ side_quest(
 	NULL,
 	0
 ),
+side_quest(
+	gText_SideQuestName_51, // QUEST_SHOW_RIBBON_TO_ARTIST
+	gText_SideQuestDesc_51,
+	gText_SideQuestDesc_51,
+	gText_SideQuestMap51,
+	OBJ_EVENT_GFX_ARTIST,
+	OBJECT,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_52, // QUEST_BRING_ARCANINE_DOLL_TO_WOMAN
+	gText_SideQuestDesc_52,
+	gText_SideQuestDesc_52,
+	gText_SideQuestMap52,
+	OBJ_EVENT_GFX_BIG_ARCANINE_DOLL,
+	OBJECT,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_53, // QUEST_BRING_ARCANINE_DOLL_TO_WOMAN
+	gText_SideQuestDesc_53,
+	gText_SideQuestDesc_53,
+	gText_SideQuestMap53,
+	ITEM_WISHING_STAR,
+	ITEM,
+	NULL,
+	0
+),
 };
 ////////////////////////END QUEST CUSTOMIZATION////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////

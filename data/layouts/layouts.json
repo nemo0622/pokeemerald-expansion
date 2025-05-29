@@ -5560,6 +5560,76 @@
       "secondary_tileset": "gTileset_Pentepetal",
       "border_filepath": "data/layouts/PentepetalCity/border.bin",
       "blockdata_filepath": "data/layouts/PentepetalCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_PENTEPETAL_CITY_POKEMON_CENTER",
+      "name": "PentepetalCity_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PentepetalCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/PentepetalCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_PENTEPETAL_CITY_MART",
+      "name": "PentepetalCity_Mart_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PentepetalCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/PentepetalCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_PENTEPETAL_CITY_HOUSE1",
+      "name": "PentepetalCity_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PentepetalCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/PentepetalCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_PENTEPETAL_CITY_HOUSE2",
+      "name": "PentepetalCity_House2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PentepetalCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/PentepetalCity_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_PENTEPETAL_CITY_HOUSE3",
+      "name": "PentepetalCity_House3_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PentepetalCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/PentepetalCity_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_PENTEPETAL_CITY_HOUSE4",
+      "name": "PentepetalCity_House4_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PentepetalCity_House4/border.bin",
+      "blockdata_filepath": "data/layouts/PentepetalCity_House4/map.bin"
+    },
+    {
+      "id": "LAYOUT_PENTEPETAL_CITY_HOUSE5",
+      "name": "PentepetalCity_House5_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PentepetalCity_House5/border.bin",
+      "blockdata_filepath": "data/layouts/PentepetalCity_House5/map.bin"
     }
   ]
 }

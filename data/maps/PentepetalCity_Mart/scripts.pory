@@ -1,0 +1,61 @@
+mapscripts PentepetalCity_Mart_MapScripts {}
+
+script PentepetalCity_Mart_EventScript_MartEmployee
+{
+    lock
+    faceplayer
+    speakername("Mart Employee")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(PentepetalCity_Mart_Shop)
+    closemessage
+    delay(1)
+    speakername("Mart Employee")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+mart PentepetalCity_Mart_Shop
+{
+    ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+    ITEM_LOVE_BALL
+    ITEM_LUXURY_BALL
+    ITEM_REPEAT_BALL
+	ITEM_POTION
+	ITEM_SUPER_POTION
+    ITEM_HYPER_POTION
+    ITEM_REVIVE
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_FULL_HEAL
+	ITEM_ESCAPE_ROPE
+	ITEM_REPEL
+    ITEM_SUPER_REPEL
+    ITEM_MAX_REPEL
+}
+
+script PentepetalCity_Mart_EventScript_Man
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("These standard Marts have basic things like Poké balls and Repels. Specialty goods, like Decorations, are mostly sold at roadside stands."))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_Mart_EventScript_Performer
+{
+    lock
+    faceplayer
+    speakername("Performer")
+    msgbox(format("I have an outdoor performance at an upcoming festival. I'm stocking up on Repels before then!"))
+    closemessage
+    release
+    end
+}

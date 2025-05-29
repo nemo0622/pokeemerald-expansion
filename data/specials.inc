@@ -572,3 +572,4 @@ gSpecials::
 	def_special CloseSpeciesZooInfoWindow
 	def_special DestroyVirtualObjects
 	def_special StartMining
+	def_special CheckIfAnyMonsHaveRibbons

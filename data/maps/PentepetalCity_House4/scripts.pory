@@ -1,0 +1,25 @@
+mapscripts PentepetalCity_House4_MapScripts {}
+
+script PentepetalCity_House4_EventScript_Picnicker
+{
+    lock
+    faceplayer
+    speakername("Picnicker")
+    msgbox(format("Flowers have special significance in Péntepetal City. Specific flowers used to have different meanings in Ancient Ilios, signaling safe spaces and romantic attractions. How poetic, how sweet!"))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_House4_EventScript_Roselia
+{
+    lock
+    faceplayer
+    speakername("Roselia")
+    playmoncry(SPECIES_ROSELIA, CRY_MODE_NORMAL)
+    msgbox("Chk chkee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

@@ -1,0 +1,68 @@
+mapscripts PentepetalCity_House2_MapScripts {}
+
+script PentepetalCity_House2_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_BRING_ARCANINE_DOLL_TO_WOMAN)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Ehehe, my girlfriend will love the Hisuian Arcanine Doll when she gets home! It'll be the peak of her collection."))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_BRING_ARCANINE_DOLL_TO_WOMAN)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("My girlfriend's birthday is coming soon, but I haven't been able to get her the gift she really wants...\p Maybe you can help me! She loves Hisuian Arcanine, so I want to get her the {COLOR GREEN}Hisuian Arcanine Doll{COLOR DARK_GRAY} from the Decor shop nearby. If you get one, please bring it to me!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_BRING_ARCANINE_DOLL_TO_WOMAN)
+    }
+    else
+    {
+        msgbox(format("Hiya! Perfect timing, my girlfriend is out of town right now. Do you have the gift I want for her birthday?"))
+        closemessage
+
+        checkdecor(DECOR_ARCANINE_DOLL)
+        delay(30)
+
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Woman")
+            msgbox(format("Aw, looks like you don't have a {COLOR GREEN}Hisuian Arcanine Doll{COLOR DARK_GRAY}. If you get one, let me know - my girlfriend would love one for her birthday!"))
+            closemessage
+        }
+        else
+        {
+            removedecoration(DECOR_ARCANINE_DOLL)
+
+            speakername("Woman")
+            msgbox(format("Wow, you actually got the {COLOR GREEN}Hisuian Arcanine Doll{COLOR DARK_GRAY}! This will go great with the rest of her collection.\p Wait, you should get something for this! I just finished painting this {COLOR GREEN}Dragon Poster Decoration{COLOR DARK_GRAY}, it's all yours!"))
+            closemessage
+            givedecoration(DECOR_DRAGON_POSTER)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_BRING_ARCANINE_DOLL_TO_WOMAN)
+        }
+    }
+    release
+    end
+}
+
+script PentepetalCity_House2_EventScript_Doll
+{
+    lock
+    msgbox(format("It's a cute Pokémon Doll! It's so cozy!"))
+    closemessage
+    release
+    end
+}

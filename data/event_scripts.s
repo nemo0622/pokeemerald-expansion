@@ -1215,7 +1215,12 @@ MysteryGift_EventScript_WorldChamp::
 	bufferspeciesname STR_VAR_1, SPECIES_LITTEN
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_LITTEN
 	givemon SPECIES_LITTEN, 5, ITEM_SAFETY_GOGGLES, ITEM_PREMIER_BALL, NATURE_ADAMANT, 2, MON_MALE, 6, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_KNOCK_OFF, MOVE_FIRE_FANG, MOVE_PARTING_SHOT, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
-	call MysteryGift_EventScript_ReceivedMon
+	bufferspeciesname STR_VAR_1, SPECIES_POLIWAG
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_POLIWAG
+	givemon SPECIES_POLIWAG, 5, ITEM_LEFTOVERS, ITEM_PREMIER_BALL, NATURE_MODEST, 2, MON_MALE, 252, 0, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_WEATHER_BALL, MOVE_PROTECT, MOVE_PERISH_SONG, MOVE_ENCORE, FALSE, FALSE, TYPE_GRASS
+	bufferspeciesname STR_VAR_1, SPECIES_GOTHITA
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_GOTHITA
+	givemon SPECIES_GOTHITA, 5, ITEM_SITRUS_BERRY, ITEM_PREMIER_BALL, NATURE_CALM, 2, MON_FEMALE, 128, 0, 0, 252, 128, 0, 31, 31, 31, 31, 31, 31, MOVE_PSYCHIC, MOVE_FAKE_OUT, MOVE_PROTECT, MOVE_TRICK_ROOM, FALSE, FALSE, TYPE_DARK
 	releaseall
 	end
 
@@ -1889,3 +1894,17 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/SeaOfAsteri_Underwater_East/scripts.inc"
 
 	.include "data/maps/PentepetalCity/scripts.inc"
+
+	.include "data/maps/PentepetalCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/PentepetalCity_Mart/scripts.inc"
+
+	.include "data/maps/PentepetalCity_House1/scripts.inc"
+
+	.include "data/maps/PentepetalCity_House2/scripts.inc"
+
+	.include "data/maps/PentepetalCity_House3/scripts.inc"
+
+	.include "data/maps/PentepetalCity_House4/scripts.inc"
+
+	.include "data/maps/PentepetalCity_House5/scripts.inc"

@@ -65,7 +65,10 @@
 #define QUEST_FREE_MARMARO_MINES                47 // chase Team Chimera out of Marmaro Island Mine
 #define QUEST_VISIT_RANIA_PENTEPETAL            48 // talk to Rania in Péntepetal City
 #define QUEST_GIVE_REVIVE_UNDERWATER            49 // bring diver a Revive in Sea of Asteri underwater east
-#define QUEST_COUNT     (QUEST_GIVE_REVIVE_UNDERWATER + 1)
+#define QUEST_SHOW_RIBBON_TO_ARTIST             50 // win contest ribbon and show Artist in Péntepetal City
+#define QUEST_BRING_ARCANINE_DOLL_TO_WOMAN      51 // buy Hisuian Arcanine decoration and give to woman in Péntepetal city
+#define QUEST_ETERNAL_FLOETTE_PLOT              52 // bring 10 Wishing Stars to a family in Péntepetal City to wish for a lost Floette to return
+#define QUEST_COUNT     (QUEST_ETERNAL_FLOETTE_PLOT + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

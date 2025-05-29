@@ -1,0 +1,162 @@
+mapscripts PentepetalCity_House5_MapScripts {}
+
+script PentepetalCity_House5_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("My grandpa told me about the magic weapon in Kalos! I'm looking for more stories online."))
+    closemessage
+    applymovement(1, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+script PentepetalCity_House5_EventScript_OldMan
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("Our family is from the Kalos Region. When I was young, my grandfather told me about the great war of Kalos, the Ultimate Weapon, and all those stories. I'm not sure how much I believe them, but I've passed the stories on to my daughter and granddaughter."))
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_House5_EventScript_Florges
+{
+    lock
+    faceplayer
+    speakername("Florges")
+    playmoncry(SPECIES_FLORGES, CRY_MODE_NORMAL)
+    msgbox("Twee-lee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PentepetalCity_House5_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_ETERNAL_FLOETTE_PLOT)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("It's still hard for me to wrap my head around everything. The Ultimate Weapon, the immortal Floette... all those stories my father told me were true!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_ETERNAL_FLOETTE_PLOT)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("I've heard so many stories about our family and ancient Kalos growing up, I'm starting to wonder if they're actually true. My father says we are descended from the old King of Kalos, who vanished after an ancient war 3,000 years ago. He even says the King's Pokémon, a Floette, is still alive somewhere.\p The Wishing Stars found around the Ilios Region have special properties connected to summoning Pokémon. I won't pretend to understand them, but if anything will work, they will. Please, bring me {COLOR GREEN}a dozen Wishing Stars{COLOR DARK_GRAY} to call for the long-lost Floette!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_ETERNAL_FLOETTE_PLOT)
+    }
+    else
+    {
+        msgbox(format("It's you! I'm still working towards my goal of finding the long-lost Floette from ancient Kalos. I've been collecting flowers and old artifacts for months now, but I'm still short on Wishing Stars. Do you have those 12 Wishing Stars, by any chance?"))
+        closemessage
+
+        checkitem(ITEM_WISHING_STAR, 12)
+        delay(30)
+        if(var(VAR_RESULT) == FALSE) // not enough
+        {
+            speakername("Woman")
+            msgbox(format("Looks like you need to collect a few more. Remember, I need {COLOR GREEN}a dozen Wishing Stars{COLOR DARK_GRAY} to complete the ritual for Floette!"))
+            closemessage
+        }
+        else // enough!
+        {
+            removeitem(ITEM_WISHING_STAR, 12)
+            emote(2, EMOTE_EXCLAM)
+            speakername("Woman")
+            msgbox(format("Wow, you actually have 12 Wishing Stars! I can feel energy radiating from them...\p Alright, everything is set up. I have flowers and Wishing Stars surrounding a Poké ball. Let's see if anything hap-"))
+            closemessage
+
+            emote(2, EMOTE_EXCLAM)
+            emote(OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM)
+            fadescreenspeed(FADE_TO_WHITE, 2)
+            delay(15)
+            clearflag(FLAG_HIDE_FLOETTE_ETERNAL_PENTEPETAL)
+            addobject(5)
+            delay(15)
+            fadescreen(FADE_FROM_WHITE)
+            delay(10)
+
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+            applymovement(5, PentepetalCity_House5_Movement_FloetteApproaches)
+            waitmovement(0)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+            applymovement(2, Common_Movement_FaceRight)
+            waitmovement(0)
+            speakername("Woman")
+            msgbox(format("I-I can't... I can't believe it! Floette, you really heard our call? I have so many questions!"))
+            closemessage
+            applymovement(2, Common_Movement_FaceDown)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+            applymovement(5, PentepetalCity_House5_Movement_FloetteGoesToPlayer)
+            waitmovement(0)
+            delay(15)
+            speakername("Woman")
+            msgbox(format("Oh? You seem so full of energy, even after all these years! Are you trying to say you want to adventure Ilios with this Trainer?"))
+            closemessage
+            delay(10)
+            applymovement(5, Common_Movement_JumpInPlaceLeft)
+            waitmovement(0)
+            delay(10)
+
+            applymovement(2, Common_Movement_FaceDown)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+            waitmovement(0)
+            speakername("Woman")
+            msgbox(format("Wow, it's all fired up! I heard there's a new Acrisia University researcher traveling the Ilios Region, so that must be you! Floette wants to join you on your adventure!"))
+            closemessage
+            delay(5)
+            
+            givemon(SPECIES_FLOETTE_ETERNAL_FLOWER, 25)
+            setflag(FLAG_HIDE_FLOETTE_ETERNAL_PENTEPETAL)
+            removeobject(5)
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("Floette Eternal Flower joined you on your journey!"))
+            waitfanfare
+            closemessage
+            delay(5)
+            speakername("Woman")
+            msgbox(format("I can't believe the stories were real... that Floette must be thousands of years old! Please, take good care of it!"))
+            closemessage
+
+            delay(20)
+            completequest(QUEST_ETERNAL_FLOETTE_PLOT)
+        }
+    }
+    releaseall
+    end
+}
+
+movement PentepetalCity_House5_Movement_FloetteApproaches
+{
+    walk_up * 2
+    walk_right
+    walk_up * 3
+    jump_up * 2
+    face_left
+    step_end
+}
+movement PentepetalCity_House5_Movement_FloetteGoesToPlayer
+{
+    walk_down
+    jump_in_place_left
+    face_left
+    step_end
+}

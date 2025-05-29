@@ -10614,19 +10614,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_BLIZZARD,
     },
 
-    [ITEM_TM_HYPER_BEAM] =
+    [ITEM_TM_DRAINING_KISS] =
     {
         .name = _("TM15"),
         .price = 5000,
         .description = COMPOUND_STRING(
-            "Powerful, but needs\n"
-            "recharging the\n"
-            "next turn."),
+            "Move: Draining Kiss\n"
+            "Absorbs 75 percent\n"
+            "of damage dealt."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_HYPER_BEAM,
+        .secondaryId = MOVE_DRAINING_KISS,
     },
 
     [ITEM_TM_LIGHT_SCREEN] =

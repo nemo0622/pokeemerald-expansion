@@ -322,6 +322,13 @@
 #define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP  (21 | (13 << 8))
 #define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR (22 | (13 << 8))
 #define MAP_THE_DELPHIS_PLAYER_CABIN                (23 | (13 << 8))
+#define MAP_PENTEPETAL_CITY_POKEMON_CENTER          (24 | (13 << 8))
+#define MAP_PENTEPETAL_CITY_MART                    (25 | (13 << 8))
+#define MAP_PENTEPETAL_CITY_HOUSE1                  (26 | (13 << 8))
+#define MAP_PENTEPETAL_CITY_HOUSE2                  (27 | (13 << 8))
+#define MAP_PENTEPETAL_CITY_HOUSE3                  (28 | (13 << 8))
+#define MAP_PENTEPETAL_CITY_HOUSE4                  (29 | (13 << 8))
+#define MAP_PENTEPETAL_CITY_HOUSE5                  (30 | (13 << 8))
 
 // gMapGroup_IndoorMossdeep
 #define MAP_MOSSDEEP_CITY_GYM               (0 | (14 << 8))

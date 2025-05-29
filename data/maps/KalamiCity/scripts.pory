@@ -73,14 +73,17 @@ script Common_EventScript_Piraeus
     if(flag(FLAG_VISITED_MYRRINI_ISLAND)) {
         dynmultipush("Myrrini Island", 6)
     }
+    if(flag(FLAG_VISITED_PENTEPETAL_CITY)) {
+        dynmultipush("Péntepetal City", 7)
+    }
     if(flag(FLAG_VISITED_FRESCO_ISLAND)) {
-        dynmultipush("Fresco Isles", 7)
+        dynmultipush("Fresco Isles", 8)
     }
     if(flag(FLAG_VISITED_PALATI_CITY)) {
-        dynmultipush("Palati City", 8)
+        dynmultipush("Palati City", 9)
     }
     if(flag(FLAG_VISITED_PORT_PELLO)) {
-        dynmultipush("Port Pello", 9)
+        dynmultipush("Port Pello", 10)
     }
     dynmultistack(100, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
 
@@ -158,27 +161,36 @@ script Common_EventScript_Piraeus
             warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
             waitstate
         }
-        elif(var(VAR_RESULT) == 7) // Fresco Isles
+        elif(var(VAR_RESULT) == 7) // Péntepetal City
         {
             setvar(VAR_CHOSEN_SAIL_LOCATION, 7)
+            speakername("Piraeus")
+            msgbox(format("Oho, what are the odds? I was about to sail there for a Pokémon Contest myself! Let's get going!"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+        elif(var(VAR_RESULT) == 8) // Fresco Isles
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 8)
             speakername("Piraeus")
             msgbox(format("The Fresco Isles, eh? For a group of islands, it gets awful dry there. Maybe you'll find some unique Pokémon there!"))
             closemessage
             warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
             waitstate
         }
-        elif(var(VAR_RESULT) == 8) // Palati City
+        elif(var(VAR_RESULT) == 9) // Palati City
         {
-            setvar(VAR_CHOSEN_SAIL_LOCATION, 8)
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 9)
             speakername("Piraeus")
             msgbox(format("Palati City! That's on Kaptara Island, right? That place is covered with gorgeous ruins... maybe I'll do a little exploring when we get there!"))
             closemessage
             warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
             waitstate
         }
-        elif(var(VAR_RESULT) == 9) // Port Pello
+        elif(var(VAR_RESULT) == 10) // Port Pello
         {
-            setvar(VAR_CHOSEN_SAIL_LOCATION, 9)
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 10)
             speakername("Piraeus")
             msgbox(format("Port Pello! Their cherry trees are world-famous! They say the gods blessed the lands. How about we see it for ourselves?"))
             closemessage
