@@ -24,7 +24,7 @@
     F(SAFEGUARD) \
     F(ACID_SPRAY) \
     F(SOLAR_BEAM) \
-    F(IRON_TAIL) \
+    F(HEX) \
     F(THUNDERBOLT) \
     F(THUNDER) \
     F(EARTHQUAKE) \

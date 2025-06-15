@@ -81,7 +81,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 25,
+      "x": 26,
       "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -133,7 +133,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
-      "x": 23,
+      "x": 24,
       "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -146,7 +146,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
-      "x": 21,
+      "x": 22,
       "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -172,7 +172,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TOUCANNON_DOLL",
-      "x": 24,
+      "x": 25,
       "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -185,7 +185,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_APPLIN_DOLL",
-      "x": 20,
+      "x": 21,
       "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",

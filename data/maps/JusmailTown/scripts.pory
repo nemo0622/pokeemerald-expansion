@@ -20,6 +20,15 @@ script JusmailTown_EventScript_DirectionSign
     end
 }
 
+script JusmailTown_Sign_MartSign
+{
+    lock
+    msgbox(format("Jusmail Town Roadside Market"))
+    closemessage
+    release
+    end
+}
+
 script JusmailTown_EventScript_TriggerWindmillSpawn
 {
     setflag(FLAG_TRIGGERED_WINDMILL_SPAWN) // marks that the player has taken >1 step into the route, avoiding interference with event object spawning

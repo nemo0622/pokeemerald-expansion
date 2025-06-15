@@ -1,1 +1,37 @@
 mapscripts SeaOfVulcai_West_MapScripts {}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Freddy
+{
+    trainerbattle_single(TRAINER_VULCAISEA_FREDDY, VulcaiSea_Text_Trainer_VulcaiSea_FreddyIntro, VulcaiSea_Text_Trainer_VulcaiSea_FreddyDefeat)
+    speakername("Freddy")
+    msgbox(format("Looks like only reeds and small plants will grow around here. No room for a good farm."))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_FreddyIntro
+{
+    format("Hmm... nope, no farms here!")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_FreddyDefeat
+{
+    format("So why am I out here again?")
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Sabrina
+{
+    trainerbattle_single(TRAINER_VULCAISEA_SABRINA, VulcaiSea_Text_Trainer_VulcaiSea_SabrinaIntro, VulcaiSea_Text_Trainer_VulcaiSea_SabrinaDefeat)
+    speakername("Sabrina")
+    msgbox(format("My Pokémon all have super strong fighting spirits! Don't you forget that!"))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_SabrinaIntro
+{
+    format("Whoo-hoo! I'm all fired up for a fight!")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_SabrinaDefeat
+{
+    format("It's over already?!")
+}

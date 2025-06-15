@@ -1227,7 +1227,7 @@
       "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonDayCare",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
       "border_filepath": "data/layouts/Route117_PokemonDayCare/border.bin",
       "blockdata_filepath": "data/layouts/Route117_PokemonDayCare/map.bin"
     },
@@ -4484,7 +4484,7 @@
     {
       "id": "LAYOUT_JUSMAIL_TOWN",
       "name": "JusmailTown_Layout",
-      "width": 30,
+      "width": 34,
       "height": 32,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Jusmail",
@@ -4857,7 +4857,7 @@
       "width": 10,
       "height": 10,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
+      "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/JusmailTown_House1/border.bin",
       "blockdata_filepath": "data/layouts/JusmailTown_House1/map.bin"
     },

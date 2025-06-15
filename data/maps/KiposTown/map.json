@@ -178,8 +178,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SWINUB)",
-      "x": 5,
-      "y": 31,
+      "x": 2,
+      "y": 32,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 0,
@@ -204,11 +204,11 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
-      "x": 14,
-      "y": 37,
+      "x": 13,
+      "y": 38,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 1,
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_range_x": 0,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
@@ -384,7 +384,7 @@
     },
     {
       "x": 15,
-      "y": 43,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_KIPOS_TOWN_MART",
       "dest_warp_id": "0"
@@ -412,8 +412,8 @@
     },
     {
       "type": "sign",
-      "x": 12,
-      "y": 42,
+      "x": 14,
+      "y": 33,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "KiposTown_EventScript_DirectionSign"

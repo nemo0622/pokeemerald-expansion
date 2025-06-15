@@ -64,18 +64,31 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
+- MASSIVE GRAPHICS REWORK
+    - Replacing / reworking tiles to be more in line with GBC style
+- OUTFIT SYSTEM IMPROVEMENTS
+    - Work the link battle whatever outfit gfx from mudskip's commits into the game to see if that fixes broken contest and battle pavilion outfit gfx
+    - Make Intro screen show the player's outfit
+    - Make Outfit Box UI black and white
 - Make Ribbons influence Pokémon stats
     - Toughness ribbons boost attack, Smartness ribbons boost Sp. Atk, Beauty ribbons boost Sp. Def, etc.
-    - ALSO! Work the link outfit gfx from mudskip's commits into the game and see if that fixes the contest and battle pavilion graphical glitches!
+- Add new Emotes using Reakain's Emote spritesheet (so cute!)
+    - Go through major story events and add relevant emotes
+    - Also try to add them to other things (ex: crying Emote when DexNav Pokémon disappears)
+- POKéDEX CHANGES:
+    - Replace Bagon, Shelgon, and Salamance with Dreepy, Drakloak, and Dragapult (Nuukiie's sprites, so fucking CUTE!)
+    - Replace Electrike and Manectric with Yamper and Boltund
+    - TWO PATHS TO 450 TOTAL:
+        - Add Type:Null, Silvally, and Talonflame line (SageDeoxys has good sprites for most of these!)
+        - Add Galar Fossils (4 Pokémon, must commission!) plus Carbink to get to 450
+    - REMEMBER: use LuigiTKO's Party Icon sprites! Super cute and impressive :)
+- Implement Biv's Fishing Minigame
+    - Also create options menu toggle for it
+    - TREASURE IDEAS:
+        - Pearl, Big Pearl, and Pearl String (for that one quest in Asteri Sea West!)
+        - Wishing Stars of course
 - Continue Mapping and NPC development
-    - Péntepetal City!
-        - Rania's quest - meet up with Rania on Péntepetal City following the events of Myrrini Island. She'll tell you
-        that even Péntepetal isn't safe from Team Chimera, as they've rounded up ALL Cranidos and Shieldon on the island
-        to be sold! Your job is to fight off Team Chimera so that Officers, Scientists, and Zookeepers can get to the
-        endangered Lazarus Taxa before they're shipped off.
-            - Explains why there are no Cranidos/Shieldon in the wild - all rounded up, and come under the care of
-            Scientists and Zookeepers afterwards
-            - Reward: A Cranidos or Shieldon, at random?
+    - Sea of Vulcai, and on to the Fresco Isles
 - Add Signposts to every new route and town
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
@@ -103,14 +116,9 @@ MAJOR TODOS:
         - The Stygian Caves - moved east of Ruins of Ahiyawa, caves leading north to Champion's Peak
         - Champion's Peak - moved northeast of Ruins of Ahiyawa, location of Elite Four obviously
 - Give all Pokémon unique Pokédex entries
-- Add Cecilily as a trainer
-    - "PkMn Trainer" class, comissioned sprite or she can choose one?
-    - Rewarded with Johto starter cabin dolls
-- Implement Biv's Fishing Minigame
-    - Also create options menu toggle for it
-    - TREASURE IDEAS:
-        - Pearl, Big Pearl, and Pearl String (for that one quest in Asteri Sea West!)
-        - Wishing Stars of course
+- CUSTOM MUSIC! Just experiment at first!
+    - Use [Online Signal MIDI editor](https://signal.vercel.app/?lang=en), which supports Sound Fonts! Maybe find the Emerald or Pokémon Crystal soundfont?
+    - Follow existing Pokecommunity music editing tutorial
 - Implement Chris Piché's Game Corner Expansion minigames
     - Blackjack, Ponyta Racing, and Voltorb Flip are the big ones I care about
     - Also, remove Pinball Points and integrate Coins into Pinball games!
@@ -250,13 +258,14 @@ Many, many talented developers and artists are responsible for making this proje
     - Jaquelion: Dipplin, Hydrapple
     - DarkusShadow: base Tinkaton line sprites (GBA style)
     - Many others from Generations 3-4 by resource from Mano_Emet on Discord (Created by Megaman-Omega)
-    - Many Generation 5-7 overworlds based on icon sprites by Eeveee1999 on DeviantArt, made by me
+    - Many Generation 5-7 overworlds based on icon sprites by EeVeeEe1999 on DeviantArt, made by me
 - User Interface:
     - Title Screen: Pixel art done by me over original image [here](https://www.athens-private-tours.com/wp-content/uploads/2015/05/Acropolis-Sunset-15891085.jpg)
     - New Continue menu UI and Shop UI by mudskip (Continue menu code by Archie)
     - Many Pokémon Party Icons based on following sprites (credited above), others by Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
         - EeVeeEe1999: created many small sprites, especially for Gen 3, 5, 6, and 7 Pokémon
         - A few Gen 6 icon sprites by  dragonball253 (some Kalos starter icons)
+        - Many later-gen icon sprites by LuigiTKO
     - Battle Backgrounds based on work by PurrfectDoodle, RavePossum, and Ruki; some slight edits by me
     - HGSS-style map icon kit by NikNaks93 on DeviantArt
     - Many, many item Bag icons by glados11388

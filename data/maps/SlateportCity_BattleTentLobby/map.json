@@ -87,13 +87,6 @@
       "elevation": 0,
       "dest_map": "MAP_SOFOS_CITY",
       "dest_warp_id": "1"
-    },
-    {
-      "x": 7,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_SOFOS_CITY",
-      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
@@ -103,7 +96,7 @@
     {
       "type": "sign",
       "x": 4,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SlateportCity_BattleTentLobby_EventScript_RulesBoard"

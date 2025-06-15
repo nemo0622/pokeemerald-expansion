@@ -140,8 +140,8 @@
 #define TRAINER_UNDERWATER_QUINTUS                   134
 #define TRAINER_UNDERWATER_ARIK                   135
 #define TRAINER_PENTEPETAL_CHIMERA_GRUNT                   136
-#define TRAINER_MOLLIE                      137
-#define TRAINER_GARRET                      138
+#define TRAINER_VULCAISEA_FREDDY                      137
+#define TRAINER_VULCAISEA_SABRINA                      138
 #define TRAINER_WINSTON_2                   139
 #define TRAINER_WINSTON_3                   140
 #define TRAINER_WINSTON_4                   141
