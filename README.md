@@ -64,12 +64,6 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- MASSIVE GRAPHICS REWORK
-    - Replacing / reworking tiles to be more in line with GBC style
-- OUTFIT SYSTEM IMPROVEMENTS
-    - Work the link battle whatever outfit gfx from mudskip's commits into the game to see if that fixes broken contest and battle pavilion outfit gfx
-    - Make Intro screen show the player's outfit
-    - Make Outfit Box UI black and white
 - Make Ribbons influence Pokémon stats
     - Toughness ribbons boost attack, Smartness ribbons boost Sp. Atk, Beauty ribbons boost Sp. Def, etc.
 - Add new Emotes using Reakain's Emote spritesheet (so cute!)
@@ -87,6 +81,7 @@ MAJOR TODOS:
     - TREASURE IDEAS:
         - Pearl, Big Pearl, and Pearl String (for that one quest in Asteri Sea West!)
         - Wishing Stars of course
+- Implement new Region Map by Zezitra on Discord
 - Continue Mapping and NPC development
     - Sea of Vulcai, and on to the Fresco Isles
 - Add Signposts to every new route and town

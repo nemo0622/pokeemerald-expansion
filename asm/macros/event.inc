@@ -2715,6 +2715,12 @@
  	call_if FALSE, \dest
  	.endm
 
+	@! Goto \dest if the specified outfit is currently wear
+ 	.macro goto_if_wearoutfit outfit:req, dest:req
+ 	iswearingoutfit \outfit
+ 	goto_if TRUE, \dest
+ 	.endm
+
 	@ Warps to a map, and plays the script passed to it
 	.macro warpcontinuescript map:req, X:req, Y:req, script:req, startBlack=TRUE
 	.byte 0xc7

@@ -43,6 +43,8 @@
 #include "mystery_event_menu.h"
 #include "mystery_gift_menu.h"
 #include "link.h"
+#include "trainer_pokemon_sprites.h"
+#include "outfit_menu.h"
 
 /*
  * 
@@ -221,6 +223,64 @@ static const u16 sBrendanMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/brend
 static const u32 sBrendanMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/brendan_mugshot.4bpp.lz");
 static const u16 sMayMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/may_mugshot.gbapal");
 static const u32 sMayMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/may_mugshot.4bpp.lz");
+
+// Outfit trainer pics
+const u32 gTrainerFrontPicLocal_Outfit_Calem[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_calem.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Serena[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_serena.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Calem[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_calem.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Serena[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_serena.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Zookeeper_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_zookeeper_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Zookeeper_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_zookeeper_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Zookeeper_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_zookeeper_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Zookeeper_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_zookeeper_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Traditional_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_traditional_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Traditional_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_traditional_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Traditional_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_traditional_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Traditional_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_traditional_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_East_Blue_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_east_blue_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_East_Blue_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_east_blue_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_East_Blue_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_east_blue_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_East_Blue_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_east_blue_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Coral_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_coral_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Coral_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_coral_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Coral_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_coral_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Coral_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_coral_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Tropics_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_tropics_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Tropics_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_tropics_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Tropics_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_tropics_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Tropics_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_tropics_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Old_Sofos_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_old_sofos_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Old_Sofos_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_old_sofos_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Old_Sofos_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_old_sofos_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Old_Sofos_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_old_sofos_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Petal_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_petal_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Petal_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_petal_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Petal_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_petal_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Petal_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_petal_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Palati_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_palati_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Palati_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_palati_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Palati_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_palati_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Palati_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_palati_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Ancient_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_ancient_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Ancient_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_ancient_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Ancient_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_ancient_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Ancient_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_ancient_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Johto_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_johto_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Johto_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_johto_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Johto_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_johto_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Johto_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_johto_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Alola_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_alola_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Alola_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_alola_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Alola_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_alola_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Alola_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_alola_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Paldea_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_paldea_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Paldea_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_paldea_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Paldea_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_paldea_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Paldea_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_paldea_f.gbapal.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Hylian_M[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_hylian_m.4bpp.lz");
+const u32 gTrainerFrontPicLocal_Outfit_Hylian_F[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_hylian_f.4bpp.lz");
+const u16 gTrainerPaletteLocal_Outfit_Hylian_M[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_hylian_m.gbapal.lz");
+const u16 gTrainerPaletteLocal_Outfit_Hylian_F[] = INCBIN_U16("graphics/trainers/palettes/outfits/outfit_hylian_f.gbapal.lz");
 
 
 //
@@ -529,7 +589,7 @@ static bool8 MainMenu_DoGfxSetup(void)
         PrintToWindow(WINDOW_HEADER, FONT_WHITE);
         CreateIconShadow();
         CreatePartyMonIcons();
-        CreateMugshot();
+        // CreateMugshot();
         CreateTask(Task_MainMenuWaitFadeIn, 0);
         BlendPalettes(0xFFFFFFFF, 16, RGB_BLACK);
         gMain.state++;
@@ -649,16 +709,20 @@ static bool8 MainMenu_LoadGraphics(void) // Load all the tilesets, tilemaps, spr
         {
             LoadCompressedSpriteSheet(&sSpriteSheet_IconBox);
             LoadSpritePalette(&sSpritePal_IconBox);
-            LoadCompressedSpriteSheet(&sSpriteSheet_BrendanMugshot);
-            LoadSpritePalette(&sSpritePal_BrendanMugshot);
+
+            u16 picId = GetPlayerTrainerPicIdByOutfitGenderType(gSaveBlock2Ptr->currOutfitId, gSaveBlock2Ptr->playerGender, 0);
+            u16 placeholder = CreateTrainerPicSprite(picId, TRUE, 48, 56, 12, TAG_NONE);
+
             LoadPalette(sMainBgPalette, 0, 32);
         }
         else
         {
             LoadCompressedSpriteSheet(&sSpriteSheet_IconBoxFem);
             LoadSpritePalette(&sSpritePal_IconBoxFem);
-            LoadCompressedSpriteSheet(&sSpriteSheet_MayMugshot);
-            LoadSpritePalette(&sSpritePal_MayMugshot);
+
+            u16 picId = GetPlayerTrainerPicIdByOutfitGenderType(gSaveBlock2Ptr->currOutfitId, gSaveBlock2Ptr->playerGender, 0);
+            u16 placeholder = CreateTrainerPicSprite(picId, TRUE, 48, 56, 12, TAG_NONE);
+            
             LoadPalette(sMainBgPaletteFem, 0, 32);
         }
         LoadPalette(sScrollBgPalette, 16, 32);
