@@ -89,14 +89,6 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_CHAMPIONS_PEAK",
-      "name": "Champion's Peak",
-      "x": 3,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
       "map_section": "MAPSEC_KALAMI_CITY",
       "name": "Kalami City",
       "x": 6,
@@ -223,14 +215,6 @@
       "y": 8,
       "width": 1,
       "height": 2
-    },
-    {
-      "map_section": "MAPSEC_THE_STYGIAN_CAVES",
-      "name": "The Stygian Caves",
-      "x": 3,
-      "y": 1,
-      "width": 1,
-      "height": 1
     },
     {
       "map_section": "MAPSEC_RIVERWALK_TRAIL",

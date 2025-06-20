@@ -64,6 +64,8 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
+- Integrate RavePossum's HGSS Battle UI and make it GBC style (all black & white)
+    - Doesn't use any white text, so white backgrounds with stark black borders should work okay!
 - Add new Emotes using Reakain's Emote spritesheet (so cute!)
     - Go through major story events and add relevant emotes
     - Also try to add them to other things (ex: crying Emote when DexNav Pokémon disappears)
@@ -260,7 +262,7 @@ Many, many talented developers and artists are responsible for making this proje
         - A few Gen 6 icon sprites by  dragonball253 (some Kalos starter icons)
         - Many later-gen icon sprites by LuigiTKO
     - Battle Backgrounds based on work by PurrfectDoodle, RavePossum, and Ruki; some slight edits by me
-    - HGSS-style map icon kit by NikNaks93 on DeviantArt
+    - Ilios Region Map by Zezitra
     - Many, many item Bag icons by glados11388
 
 
