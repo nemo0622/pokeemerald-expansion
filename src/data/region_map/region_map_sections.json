@@ -43,7 +43,7 @@
     {
       "map_section": "MAPSEC_ACRISIA_CITY",
       "name": "Acrisia City",
-      "x": 4,
+      "x": 3,
       "y": 2,
       "width": 1,
       "height": 1
@@ -51,7 +51,7 @@
     {
       "map_section": "MAPSEC_JUSMAIL_TOWN",
       "name": "Jusmail Town",
-      "x": 4,
+      "x": 3,
       "y": 5,
       "width": 1,
       "height": 1
@@ -59,7 +59,7 @@
     {
       "map_section": "MAPSEC_PYTHIOS_TOWN",
       "name": "Pythios Town",
-      "x": 4,
+      "x": 3,
       "y": 7,
       "width": 1,
       "height": 1
@@ -131,7 +131,7 @@
     {
       "map_section": "MAPSEC_BRONZE_PASS",
       "name": "Bronze Fields",
-      "x": 4,
+      "x": 3,
       "y": 3,
       "width": 1,
       "height": 2
@@ -141,15 +141,15 @@
       "name": "Acrisia Mountains",
       "x": 1,
       "y": 2,
-      "width": 3,
+      "width": 2,
       "height": 1
     },
     {
       "map_section": "MAPSEC_ERINYS_PATH",
       "name": "Erinys Path",
-      "x": 5,
+      "x": 4,
       "y": 7,
-      "width": 2,
+      "width": 3,
       "height": 1
     },
     {
@@ -235,9 +235,9 @@
     {
       "map_section": "MAPSEC_RIVERWALK_TRAIL",
       "name": "Riverwalk Trail",
-      "x": 5,
+      "x": 4,
       "y": 2,
-      "width": 2,
+      "width": 3,
       "height": 1
     },
     {
@@ -331,7 +331,7 @@
     {
       "map_section": "MAPSEC_WANDERERS_WOODS",
       "name": "Wanderer's Woods",
-      "x": 4,
+      "x": 3,
       "y": 6,
       "width": 1,
       "height": 1

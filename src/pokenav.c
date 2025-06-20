@@ -53,7 +53,7 @@ const struct PokenavCallbacks PokenavMenuCallbacks[15] =
 {
     [POKENAV_MAIN_MENU - POKENAV_MENU_IDS_START] =
     {
-        .init = PokenavCallback_Init_MainMenuCursorOnMap,
+        .init = PokenavCallback_Init_MainMenuCursorOnPokedex,
         .callback = GetMenuHandlerCallback,
         .open = OpenPokenavMenuInitial,
         .createLoopTask = CreateMenuHandlerLoopedTask,
@@ -93,7 +93,7 @@ const struct PokenavCallbacks PokenavMenuCallbacks[15] =
     },
     [POKENAV_MAIN_MENU_CURSOR_ON_MATCH_CALL - POKENAV_MENU_IDS_START] =
     {
-        .init = PokenavCallback_Init_MainMenuCursorOnMatchCall,
+        .init = PokenavCallback_Init_MainMenuCursorOnPokedex,
         .callback = GetMenuHandlerCallback,
         .open = OpenPokenavMenuNotInitial,
         .createLoopTask = CreateMenuHandlerLoopedTask,

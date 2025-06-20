@@ -33,7 +33,7 @@ script BronzePass_North_EventScript_ChimeraThug
 {
     lock
     speakername("Thug")
-    msgbox(format("Gahaha, gimme your stuff! I know you've got a Pokédex in here somewhere!"))
+    msgbox(format("Gahaha, gimme your stuff! I know you've got a Rotom Phone in here somewhere!"))
     closemessage
     delay(30)
     emote(2, EMOTE_EXCLAM) // emotes exclamation mark
@@ -57,7 +57,7 @@ script BronzePass_North_EventScript_Deliveryman
     // Already did the lost Pokédex delivery event
     if(flag(FLAG_FOUND_LOST_DELIVERY))
     {
-        msgbox(format("Phew, that was a close call. That thug got away with a few trinkets, but nothing too valuable.\p Now I just have to... clean all this up... hm."))
+        msgbox(format("Phew, that was a close call. That thug got away with a few trinkets, but nothing too valuable.\p That Rotom Phone in the shipment was unharmed, right? Remember, you can use it to check your {COLOR GREEN}Pokédex, ongoing Quests, and the Region Map{COLOR DARK_GRAY}!"))
         closemessage
         release
         end

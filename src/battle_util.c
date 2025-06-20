@@ -9967,6 +9967,26 @@ static inline uq4_12_t GetMinimizeModifier(u32 move, u32 battlerDef)
     return UQ_4_12(1.0);
 }
 
+// NOTE TO SELF: This shit would just not work for some reason idk
+// static inline uq4_12_t GetRibbonsModifier(u32 move, u32 battlerAtk, u32 battlerDef)
+// {
+//     if (gMovesInfo[move].contestCategory == CONTEST_CATEGORY_COOL) // Cool category moves boost Attack when attacker has Cool Ribbon
+//     {
+//         if(GetMonData(GetSideParty(GetBattlerSide(battlerAtk)), MON_DATA_COOL_RIBBON)) // has cool ribbon, so boost power of Cool moves
+//             return UQ_4_12(1.0);
+//         else
+//             return UQ_4_12(0.1);
+//     }
+//     else if (gMovesInfo[move].contestCategory == CONTEST_CATEGORY_BEAUTY) // Beauty category moves boost Special Attack when attacker has Cool Ribbon
+//     {
+//         if(GetMonData(GetSideParty(GetBattlerSide(battlerAtk)), MON_DATA_BEAUTY_RIBBON)) // has beauty ribbon, so boost power of Beauty moves
+//             return UQ_4_12(1.0);
+//         else
+//             return UQ_4_12(0.1);
+//     }
+//     return UQ_4_12(1.0); // default: just return 1.0 modifier
+// }
+
 static inline uq4_12_t GetUndergroundModifier(u32 move, u32 battlerDef)
 {
     if (gMovesInfo[move].damagesUnderground && gStatuses3[battlerDef] & STATUS3_UNDERGROUND)
@@ -10158,6 +10178,9 @@ static inline uq4_12_t GetOtherModifiers(u32 move, u32 moveType, u32 battlerAtk,
         DAMAGE_MULTIPLY_MODIFIER(GetDefenderItemsModifier(moveType, battlerDef, typeEffectivenessModifier, updateFlags, abilityDef, holdEffectDef));
         DAMAGE_MULTIPLY_MODIFIER(GetAttackerItemsModifier(battlerAtk, typeEffectivenessModifier, holdEffectAtk));
     }
+
+    // DAMAGE_MULTIPLY_MODIFIER(GetRibbonsModifier(move, battlerAtk, battlerDef));
+
     return finalModifier;
 }
 

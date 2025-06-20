@@ -101,6 +101,7 @@ enum
     POKENAV_GFX_MATCH_CALL_MENU,
     POKENAV_GFX_MAP_MENU_ZOOMED_OUT,
     POKENAV_GFX_MAP_MENU_ZOOMED_IN,
+    POKENAV_GFX_QUESTS,
     POKENAV_GFX_PARTY_MENU,
     POKENAV_GFX_SEARCH_MENU,
     POKENAV_GFX_COOL_MENU,
@@ -111,7 +112,7 @@ enum
     POKENAV_GFX_MENUS_END,
 };
 
-#define POKENAV_GFX_SUBMENUS_START POKENAV_GFX_PARTY_MENU
+#define POKENAV_GFX_SUBMENUS_START POKENAV_GFX_QUESTS
 
 #define POKENAV_MENU_IDS_START 100000
 enum
@@ -147,11 +148,12 @@ enum
 // As opposed to the cursor position, which is only relative to the number of options for the current menu
 enum
 {
-    POKENAV_MENUITEM_MAP,
+    POKENAV_MENUITEM_POKEDEX,
     POKENAV_MENUITEM_CONDITION,
-    POKENAV_MENUITEM_MATCH_CALL,
+    POKENAV_MENUITEM_MAP,
     POKENAV_MENUITEM_RIBBONS,
     POKENAV_MENUITEM_SWITCH_OFF,
+    POKENAV_MENUITEM_CONDITION_QUESTS,
     POKENAV_MENUITEM_CONDITION_PARTY,
     POKENAV_MENUITEM_CONDITION_SEARCH,
     POKENAV_MENUITEM_CONDITION_CANCEL,
@@ -384,7 +386,7 @@ void ShutdownPokenav(void);
 
 // pokenav_menu_handler.c
 bool32 PokenavCallback_Init_MainMenuCursorOnMap(void);
-bool32 PokenavCallback_Init_MainMenuCursorOnMatchCall(void);
+bool32 PokenavCallback_Init_MainMenuCursorOnPokedex(void);
 bool32 PokenavCallback_Init_MainMenuCursorOnRibbons(void);
 bool32 PokenavCallback_Init_ConditionMenu(void);
 bool32 PokenavCallback_Init_ConditionSearchMenu(void);

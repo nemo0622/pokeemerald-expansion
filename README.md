@@ -64,11 +64,10 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- Make Ribbons influence Pokémon stats
-    - Toughness ribbons boost attack, Smartness ribbons boost Sp. Atk, Beauty ribbons boost Sp. Def, etc.
 - Add new Emotes using Reakain's Emote spritesheet (so cute!)
     - Go through major story events and add relevant emotes
     - Also try to add them to other things (ex: crying Emote when DexNav Pokémon disappears)
+
 - POKéDEX CHANGES:
     - Replace Bagon, Shelgon, and Salamance with Dreepy, Drakloak, and Dragapult (Nuukiie's sprites, so fucking CUTE!)
     - Replace Electrike and Manectric with Yamper and Boltund
@@ -81,7 +80,6 @@ MAJOR TODOS:
     - TREASURE IDEAS:
         - Pearl, Big Pearl, and Pearl String (for that one quest in Asteri Sea West!)
         - Wishing Stars of course
-- Implement new Region Map by Zezitra on Discord
 - Continue Mapping and NPC development
     - Sea of Vulcai, and on to the Fresco Isles
 - Add Signposts to every new route and town

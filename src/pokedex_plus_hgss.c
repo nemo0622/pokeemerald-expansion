@@ -46,6 +46,7 @@
 #include "constants/party_menu.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "pokenav.h"
 
 
 enum
@@ -2368,7 +2369,8 @@ static void Task_ClosePokedex(u8 taskId)
         ClearMonSprites();
         FreeWindowAndBgBuffers();
         DestroyTask(taskId);
-        SetMainCallback2(CB2_ReturnToFieldWithOpenMenu);
+        // SetMainCallback2(CB2_ReturnToFieldWithOpenMenu);
+        SetMainCallback2(CB2_InitPokeNav);  // Display PokéNav
         m4aMPlayVolumeControl(&gMPlayInfo_BGM, TRACKS_ALL, 0x100);
         Free(sPokedexView);
     }

@@ -1348,7 +1348,7 @@
 
 #define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0x860
 #define FLAG_SYS_POKEDEX_GET                         (SYSTEM_FLAGS + 0x1)
-#define FLAG_SYS_POKENAV_GET                         (SYSTEM_FLAGS + 0x2)
+#define FLAG_SYS_ROTOM_PHONE_GET                     (SYSTEM_FLAGS + 0x2)
 #define FLAG_PERFECT_CATCH_RATE                      (SYSTEM_FLAGS + 0x3) // cheat code, makes balls 100% catch
 #define FLAG_SYS_GAME_CLEAR                          (SYSTEM_FLAGS + 0x4)
 #define FLAG_SYS_CHAT_USED                           (SYSTEM_FLAGS + 0x5)
@@ -1421,7 +1421,7 @@
 #define FLAG_LANDMARK_MR_BRINEY_HOUSE               (SYSTEM_FLAGS + 0x3D)
 #define FLAG_LANDMARK_ABANDONED_SHIP                (SYSTEM_FLAGS + 0x3E)
 #define FLAG_LANDMARK_SEASHORE_HOUSE                (SYSTEM_FLAGS + 0x3F)
-#define FLAG_LANDMARK_NEW_MAUVILLE                  (SYSTEM_FLAGS + 0x40) // 0x900
+#define FLAG_LANDMARK_NEW_MAUVILLE                  (SYSTEM_FLAGS + 0x40) // 0x8A0
 #define FLAG_LANDMARK_OLD_LADY_REST_SHOP            (SYSTEM_FLAGS + 0x41)
 #define FLAG_LANDMARK_TRICK_HOUSE                   (SYSTEM_FLAGS + 0x42)
 #define FLAG_LANDMARK_WINSTRATE_FAMILY              (SYSTEM_FLAGS + 0x43)

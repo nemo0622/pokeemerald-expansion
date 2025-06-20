@@ -166,6 +166,10 @@ static const struct CompressedSpriteSheet sMenuLeftHeaderSpriteSheets[] =
 
 static const struct CompressedSpriteSheetNoSize sPokenavSubMenuLeftHeaderSpriteSheets[] =
 {
+    [POKENAV_GFX_QUESTS - POKENAV_GFX_SUBMENUS_START] = {
+        .data = gPokenavLeftHeaderParty_Gfx, // dummy
+        .tag = 1
+    },
     [POKENAV_GFX_PARTY_MENU - POKENAV_GFX_SUBMENUS_START] = {
         .data = gPokenavLeftHeaderParty_Gfx,
         .tag = 1
@@ -549,32 +553,33 @@ void InitBgTemplates(const struct BgTemplate *templates, int count)
 
 static void InitHelpBar(void)
 {
-    struct Pokenav_MainMenu *menu = GetSubstructPtr(POKENAV_SUBSTRUCT_MAIN_MENU);
+    // struct Pokenav_MainMenu *menu = GetSubstructPtr(POKENAV_SUBSTRUCT_MAIN_MENU);
 
-    InitWindows(&sHelpBarWindowTemplate[0]);
-    menu->helpBarWindowId = 0;
-    DrawHelpBar(menu->helpBarWindowId);
-    PutWindowTilemap(menu->helpBarWindowId);
-    CopyWindowToVram(menu->helpBarWindowId, COPYWIN_FULL);
+    // InitWindows(&sHelpBarWindowTemplate[0]);
+    // menu->helpBarWindowId = 0;
+    // DrawHelpBar(menu->helpBarWindowId);
+    // PutWindowTilemap(menu->helpBarWindowId);
+    // CopyWindowToVram(menu->helpBarWindowId, COPYWIN_FULL);
 }
 
 void PrintHelpBarText(u32 textId)
 {
-    struct Pokenav_MainMenu *menu = GetSubstructPtr(POKENAV_SUBSTRUCT_MAIN_MENU);
+    // struct Pokenav_MainMenu *menu = GetSubstructPtr(POKENAV_SUBSTRUCT_MAIN_MENU);
 
-    DrawHelpBar(menu->helpBarWindowId);
-    AddTextPrinterParameterized3(menu->helpBarWindowId, FONT_NORMAL, 0, 1, sHelpBarTextColors, 0, sHelpBarTexts[textId]);
+    // DrawHelpBar(menu->helpBarWindowId);
+    // AddTextPrinterParameterized3(menu->helpBarWindowId, FONT_NORMAL, 0, 1, sHelpBarTextColors, 0, sHelpBarTexts[textId]);
 }
 
 bool32 WaitForHelpBar(void)
 {
-    return IsDma3ManagerBusyWithBgCopy();
+    // return IsDma3ManagerBusyWithBgCopy();
+    return FALSE;
 }
 
 static void DrawHelpBar(u32 windowId)
 {
-    FillWindowPixelBuffer(windowId, PIXEL_FILL(4));
-    FillWindowPixelRect(windowId, PIXEL_FILL(5), 0, 0, 0x80, 1);
+    // FillWindowPixelBuffer(windowId, PIXEL_FILL(4));
+    // FillWindowPixelRect(windowId, PIXEL_FILL(5), 0, 0, 0x80, 1);
 }
 
 static void InitPokenavMainMenuResources(void)

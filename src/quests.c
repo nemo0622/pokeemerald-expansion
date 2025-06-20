@@ -17,6 +17,7 @@
 #include "menu_helpers.h"
 #include "palette.h"
 #include "party_menu.h"
+#include "pokenav.h"
 #include "scanline_effect.h"
 #include "sound.h"
 #include "string_util.h"
@@ -3018,6 +3019,8 @@ static void Task_QuestMenuTurnOff2(u8 taskId)
 		QuestMenu_RemoveScrollIndicatorArrowPair();
 		FreeResources();
 		DestroyTask(taskId);
+
+		SetMainCallback2(CB2_InitPokeNav);  // Display PokéNav
 	}
 }
 

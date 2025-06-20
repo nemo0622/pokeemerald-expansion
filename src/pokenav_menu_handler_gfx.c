@@ -155,7 +155,7 @@ static const struct CompressedSpriteSheet sPokenavOptionsSpriteSheets[] =
 {
     {
         .data = gPokenavOptions_Gfx,
-        .size = 0x3400,
+        .size = 0x3800,
         .tag = GFXTAG_OPTIONS
     },
     {
@@ -179,17 +179,18 @@ static const struct SpritePalette sPokenavOptionsSpritePalettes[] =
 // Tile number, palette tag offset
 static const u16 sOptionsLabelGfx_RegionMap[] = {0x000, PALTAG_OPTIONS_DEFAULT - PALTAG_OPTIONS_START};
 static const u16 sOptionsLabelGfx_Condition[] = {0x020, PALTAG_OPTIONS_BLUE - PALTAG_OPTIONS_START};
-static const u16 sOptionsLabelGfx_MatchCall[] = {0x040, PALTAG_OPTIONS_RED - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Pokedex[]   = {0x040, PALTAG_OPTIONS_RED - PALTAG_OPTIONS_START}; // replaces MatchCall
 static const u16 sOptionsLabelGfx_Ribbons[]   = {0x060, PALTAG_OPTIONS_PINK - PALTAG_OPTIONS_START};
 static const u16 sOptionsLabelGfx_SwitchOff[] = {0x080, PALTAG_OPTIONS_BEIGE - PALTAG_OPTIONS_START};
-static const u16 sOptionsLabelGfx_Party[]     = {0x0A0, PALTAG_OPTIONS_BLUE - PALTAG_OPTIONS_START};
-static const u16 sOptionsLabelGfx_Search[]    = {0x0C0, PALTAG_OPTIONS_BLUE - PALTAG_OPTIONS_START};
-static const u16 sOptionsLabelGfx_Cool[]      = {0x0E0, PALTAG_OPTIONS_RED - PALTAG_OPTIONS_START};
-static const u16 sOptionsLabelGfx_Beauty[]    = {0x100, PALTAG_OPTIONS_BLUE - PALTAG_OPTIONS_START};
-static const u16 sOptionsLabelGfx_Cute[]      = {0x120, PALTAG_OPTIONS_PINK - PALTAG_OPTIONS_START};
-static const u16 sOptionsLabelGfx_Smart[]     = {0x140, PALTAG_OPTIONS_DEFAULT - PALTAG_OPTIONS_START};
-static const u16 sOptionsLabelGfx_Tough[]     = {0x160, PALTAG_OPTIONS_DEFAULT - PALTAG_OPTIONS_START};
-static const u16 sOptionsLabelGfx_Cancel[]    = {0x180, PALTAG_OPTIONS_BEIGE - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Quests[]    = {0x0A0, PALTAG_OPTIONS_BLUE - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Party[]     = {0x0C0, PALTAG_OPTIONS_BLUE - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Search[]    = {0x0E0, PALTAG_OPTIONS_BLUE - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Cool[]      = {0x100, PALTAG_OPTIONS_RED - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Beauty[]    = {0x120, PALTAG_OPTIONS_BLUE - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Cute[]      = {0x140, PALTAG_OPTIONS_PINK - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Smart[]     = {0x160, PALTAG_OPTIONS_DEFAULT - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Tough[]     = {0x180, PALTAG_OPTIONS_DEFAULT - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Cancel[]    = {0x1A0, PALTAG_OPTIONS_BEIGE - PALTAG_OPTIONS_START};
 
 struct
 {
@@ -203,8 +204,8 @@ struct
         .yStart = 42,
         .deltaY = 20,
         .gfx = {
-            sOptionsLabelGfx_RegionMap,
             sOptionsLabelGfx_Condition,
+            sOptionsLabelGfx_RegionMap,
             sOptionsLabelGfx_SwitchOff
         }
     },
@@ -213,9 +214,9 @@ struct
         .yStart = 42,
         .deltaY = 20,
         .gfx = {
-            sOptionsLabelGfx_RegionMap,
+            sOptionsLabelGfx_Pokedex,
             sOptionsLabelGfx_Condition,
-            sOptionsLabelGfx_MatchCall,
+            sOptionsLabelGfx_RegionMap,
             sOptionsLabelGfx_SwitchOff
         }
     },
@@ -224,18 +225,19 @@ struct
         .yStart = 42,
         .deltaY = 20,
         .gfx = {
-            sOptionsLabelGfx_RegionMap,
+            sOptionsLabelGfx_Pokedex,
             sOptionsLabelGfx_Condition,
-            sOptionsLabelGfx_MatchCall,
+            sOptionsLabelGfx_RegionMap,
             sOptionsLabelGfx_Ribbons,
             sOptionsLabelGfx_SwitchOff
         }
     },
     [POKENAV_MENU_TYPE_CONDITION] =
     {
-        .yStart = 56,
+        .yStart = 49,
         .deltaY = 20,
         .gfx = {
+            sOptionsLabelGfx_Quests,
             sOptionsLabelGfx_Party,
             sOptionsLabelGfx_Search,
             sOptionsLabelGfx_Cancel
@@ -269,20 +271,21 @@ static const struct WindowTemplate sOptionDescWindowTemplate =
 
 static const u8 *const sPageDescriptions[] =
 {
-    [POKENAV_MENUITEM_MAP]                     = COMPOUND_STRING("Check the map of the HOENN region"),
-    [POKENAV_MENUITEM_CONDITION]               = COMPOUND_STRING("Check POKéMON in detail."),
-    [POKENAV_MENUITEM_MATCH_CALL]              = COMPOUND_STRING("Call a registered TRAINER."),
-    [POKENAV_MENUITEM_RIBBONS]                 = COMPOUND_STRING("Check obtained RIBBONS."),
-    [POKENAV_MENUITEM_SWITCH_OFF]              = COMPOUND_STRING("Put away the POKéNAV."),
-    [POKENAV_MENUITEM_CONDITION_PARTY]         = COMPOUND_STRING("Check party POKéMON in detail."),
-    [POKENAV_MENUITEM_CONDITION_SEARCH]        = COMPOUND_STRING("Check all POKéMON in detail."),
-    [POKENAV_MENUITEM_CONDITION_CANCEL]        = COMPOUND_STRING("Return to the POKéNAV menu."),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_COOL]   = COMPOUND_STRING("Find cool POKéMON."),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_BEAUTY] = COMPOUND_STRING("Find beautiful POKéMON."),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_CUTE]   = COMPOUND_STRING("Find cute POKéMON."),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_SMART]  = COMPOUND_STRING("Find smart POKéMON."),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_TOUGH]  = COMPOUND_STRING("Find tough POKéMON."),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_CANCEL] = COMPOUND_STRING("Return to the CONDITION menu.")
+    [POKENAV_MENUITEM_POKEDEX]                 = COMPOUND_STRING("Open the Pokédex."),
+    [POKENAV_MENUITEM_CONDITION]               = COMPOUND_STRING("View Quests or Pokémon details."),
+    [POKENAV_MENUITEM_MAP]                     = COMPOUND_STRING("Check a map of the Ilios Region."),
+    [POKENAV_MENUITEM_RIBBONS]                 = COMPOUND_STRING("Check obtained Ribbons."),
+    [POKENAV_MENUITEM_SWITCH_OFF]              = COMPOUND_STRING("Put away the Rotom Phone."),
+    [POKENAV_MENUITEM_CONDITION_QUESTS]        = COMPOUND_STRING("View details of ongoing Quests."),
+    [POKENAV_MENUITEM_CONDITION_PARTY]         = COMPOUND_STRING("Check party Pokémon in detail."),
+    [POKENAV_MENUITEM_CONDITION_SEARCH]        = COMPOUND_STRING("Check all Pokémon in detail."),
+    [POKENAV_MENUITEM_CONDITION_CANCEL]        = COMPOUND_STRING("Return to the Rotom Phone menu."),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_COOL]   = COMPOUND_STRING("Find cool Pokémon."),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_BEAUTY] = COMPOUND_STRING("Find beautiful Pokémon."),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_CUTE]   = COMPOUND_STRING("Find cute Pokémon."),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_SMART]  = COMPOUND_STRING("Find smart Pokémon."),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_TOUGH]  = COMPOUND_STRING("Find tough Pokémon."),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_CANCEL] = COMPOUND_STRING("Return to the Condition menu.")
 };
 
 static const u8 sOptionDescTextColors[]  = {TEXT_COLOR_GREEN, TEXT_COLOR_BLUE, TEXT_COLOR_LIGHT_GREEN};
@@ -482,8 +485,8 @@ static u32 LoopedTask_OpenMenu(s32 state)
         DecompressAndCopyTileDataToVram(3, sPokenavBgDotsTiles, 0, 0, 0);
         DecompressAndCopyTileDataToVram(3, sPokenavBgDotsTilemap, 0, 0, 1);
         CopyPaletteIntoBufferUnfaded(sPokenavBgDotsPal, BG_PLTT_ID(3), sizeof(sPokenavBgDotsPal));
-        if (GetPokenavMenuType() == POKENAV_MENU_TYPE_CONDITION || GetPokenavMenuType() == POKENAV_MENU_TYPE_CONDITION_SEARCH)
-            ChangeBgDotsColorToPurple();
+        // if (GetPokenavMenuType() == POKENAV_MENU_TYPE_CONDITION || GetPokenavMenuType() == POKENAV_MENU_TYPE_CONDITION_SEARCH)
+        //     ChangeBgDotsColorToPurple();
         return LT_INC_AND_PAUSE;
     case 3:
         if (FreeTempTileDataBuffersIfPossible())
@@ -597,7 +600,7 @@ static u32 LoopedTask_OpenConditionMenu(s32 state)
     case 2:
         StartOptionAnimations_Enter();
         ShowLeftHeaderGfx(1, FALSE, FALSE);
-        CreateBgDotPurplePalTask();
+        // CreateBgDotPurplePalTask();
         PrintCurrentOptionDescription();
         return LT_INC_AND_PAUSE;
     case 3:
@@ -1339,34 +1342,34 @@ static void ResetBldCnt(void)
     SetGpuReg(REG_OFFSET_BLDCNT, 0);
 }
 
-static void InitMenuOptionGlow(void)
+static void InitMenuOptionGlow(void) // commented out to remove slightly broken pulsing glow effect
 {
-    SetMenuOptionGlow();
-    SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT1_OBJ | BLDCNT_EFFECT_LIGHTEN);
+    // SetMenuOptionGlow();
+    // SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT1_OBJ | BLDCNT_EFFECT_LIGHTEN);
 }
 
-static void Task_CurrentMenuOptionGlow(u8 taskId)
+static void Task_CurrentMenuOptionGlow(u8 taskId) // commented out to remove slightly broken pulsing glow effect
 {
-    s16 * data = gTasks[taskId].data;
-    data[0]++;
-    if (data[0] > 0)
-    {
-        data[0] = 0;
-        data[1] += 3;
-        data[1] &= 0x7F;
-        SetGpuReg(REG_OFFSET_BLDY, gSineTable[data[1]] >> 5);
-    }
+    // s16 * data = gTasks[taskId].data;
+    // data[0]++;
+    // if (data[0] > 0)
+    // {
+    //     data[0] = 0;
+    //     data[1] += 3;
+    //     data[1] &= 0x7F;
+    //     SetGpuReg(REG_OFFSET_BLDY, gSineTable[data[1]] >> 5);
+    // }
 }
 
-static void SetMenuOptionGlow(void)
+static void SetMenuOptionGlow(void) // commented out to remove slightly broken pulsing glow effect
 {
-    int menuType = GetPokenavMenuType();
-    int cursorPos = GetPokenavCursorPos();
-    int r4 = sPokenavMenuOptionLabelGfx[menuType].deltaY * cursorPos + sPokenavMenuOptionLabelGfx[menuType].yStart - 8;
-    CpuFill16(0, gScanlineEffectRegBuffers[0], DISPLAY_HEIGHT * 2);
-    CpuFill16(0, gScanlineEffectRegBuffers[1], DISPLAY_HEIGHT * 2);
-    CpuFill16(RGB(16, 23, 28), &gScanlineEffectRegBuffers[0][r4], 0x20);
-    CpuFill16(RGB(16, 23, 28), &gScanlineEffectRegBuffers[1][r4], 0x20);
+    // int menuType = GetPokenavMenuType();
+    // int cursorPos = GetPokenavCursorPos();
+    // int r4 = sPokenavMenuOptionLabelGfx[menuType].deltaY * cursorPos + sPokenavMenuOptionLabelGfx[menuType].yStart - 8;
+    // CpuFill16(0, gScanlineEffectRegBuffers[0], DISPLAY_HEIGHT * 2);
+    // CpuFill16(0, gScanlineEffectRegBuffers[1], DISPLAY_HEIGHT * 2);
+    // CpuFill16(RGB(16, 23, 28), &gScanlineEffectRegBuffers[0][r4], 0x20);
+    // CpuFill16(RGB(16, 23, 28), &gScanlineEffectRegBuffers[1][r4], 0x20);
 }
 
 void ResetBldCnt_(void)

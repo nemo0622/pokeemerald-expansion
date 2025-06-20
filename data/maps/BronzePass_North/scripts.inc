@@ -356,7 +356,7 @@ BronzePass_North_EventScript_ChimeraThug_Text_0:
 BronzePass_North_EventScript_ChimeraThug_Text_1:
 # 36 "data/maps/BronzePass_North/scripts.pory"
 	.string "Gahaha, gimme your stuff! I know you've\n"
-	.string "got a Pokédex in here somewhere!$"
+	.string "got a Rotom Phone in here somewhere!$"
 
 BronzePass_North_EventScript_ChimeraThug_Text_2:
 # 43 "data/maps/BronzePass_North/scripts.pory"
@@ -372,8 +372,10 @@ BronzePass_North_EventScript_Deliveryman_Text_1:
 	.string "Phew, that was a close call. That thug\n"
 	.string "got away with a few trinkets, but\l"
 	.string "nothing too valuable.\p"
-	.string "Now I just have to... clean all this up...\n"
-	.string "hm.$"
+	.string "That Rotom Phone in the shipment was\n"
+	.string "unharmed, right? Remember, you can use\l"
+	.string "it to check your {COLOR GREEN}Pokédex, ongoing\l"
+	.string "Quests, and the Region Map{COLOR DARK_GRAY}!$"
 
 BronzePass_North_EventScript_Deliveryman_Text_2:
 # 68 "data/maps/BronzePass_North/scripts.pory"

@@ -2,8 +2,15 @@
 #include "pokenav.h"
 #include "event_data.h"
 #include "main.h"
+#include "quests.h"
 #include "sound.h"
-#include "constants/songs.h"
+#include "task.h"
+#include "palette.h"
+ #include "constants/songs.h"
+#include "script.h"
+#include "overworld.h"
+#include "event_scripts.h"
+#include "pokedex_plus_hgss.h"
 
 struct Pokenav_Menu
 {
@@ -37,7 +44,7 @@ static const u8 sLastCursorPositions[] =
     [POKENAV_MENU_TYPE_DEFAULT]           = 2,
     [POKENAV_MENU_TYPE_UNLOCK_MC]         = 3,
     [POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS] = 4,
-    [POKENAV_MENU_TYPE_CONDITION]         = 2,
+    [POKENAV_MENU_TYPE_CONDITION]         = 3,
     [POKENAV_MENU_TYPE_CONDITION_SEARCH]  = 5
 };
 
@@ -45,31 +52,32 @@ static const u8 sMenuItems[][MAX_POKENAV_MENUITEMS] =
 {
     [POKENAV_MENU_TYPE_DEFAULT] =
     {
-        POKENAV_MENUITEM_MAP,
         POKENAV_MENUITEM_CONDITION,
+        POKENAV_MENUITEM_MAP,
         [2 ... MAX_POKENAV_MENUITEMS - 1] = POKENAV_MENUITEM_SWITCH_OFF
     },
     [POKENAV_MENU_TYPE_UNLOCK_MC] =
     {
-        POKENAV_MENUITEM_MAP,
+        POKENAV_MENUITEM_POKEDEX,
         POKENAV_MENUITEM_CONDITION,
-        POKENAV_MENUITEM_MATCH_CALL,
+        POKENAV_MENUITEM_MAP,
         [3 ... MAX_POKENAV_MENUITEMS - 1] = POKENAV_MENUITEM_SWITCH_OFF
     },
     [POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS] =
     {
-        POKENAV_MENUITEM_MAP,
+        POKENAV_MENUITEM_POKEDEX,
         POKENAV_MENUITEM_CONDITION,
-        POKENAV_MENUITEM_MATCH_CALL,
+        POKENAV_MENUITEM_MAP,
         POKENAV_MENUITEM_RIBBONS,
         [4 ... MAX_POKENAV_MENUITEMS - 1] = POKENAV_MENUITEM_SWITCH_OFF
     },
     [POKENAV_MENU_TYPE_CONDITION] =
     {
+        POKENAV_MENUITEM_CONDITION_QUESTS,
         POKENAV_MENUITEM_CONDITION_PARTY,
         POKENAV_MENUITEM_CONDITION_SEARCH,
         POKENAV_MENUITEM_CONDITION_CANCEL,
-        [3 ... MAX_POKENAV_MENUITEMS - 1] = POKENAV_MENUITEM_SWITCH_OFF
+        [4 ... MAX_POKENAV_MENUITEMS - 1] = POKENAV_MENUITEM_SWITCH_OFF
     },
     [POKENAV_MENU_TYPE_CONDITION_SEARCH] =
     {
@@ -86,7 +94,8 @@ static u8 GetPokenavMainMenuType(void)
 {
     u8 menuType = POKENAV_MENU_TYPE_DEFAULT;
 
-    if (FlagGet(FLAG_ADDED_MATCH_CALL_TO_POKENAV))
+    // if (FlagGet(FLAG_ADDED_MATCH_CALL_TO_POKENAV))
+    if (FlagGet(FLAG_SYS_POKEDEX_GET)) // im replaing Match Call with the Pokédex
     {
         menuType = POKENAV_MENU_TYPE_UNLOCK_MC;
 
@@ -111,15 +120,15 @@ bool32 PokenavCallback_Init_MainMenuCursorOnMap(void)
     return TRUE;
 }
 
-bool32 PokenavCallback_Init_MainMenuCursorOnMatchCall(void)
+bool32 PokenavCallback_Init_MainMenuCursorOnPokedex(void)
 {
     struct Pokenav_Menu *menu = AllocSubstruct(POKENAV_SUBSTRUCT_MAIN_MENU_HANDLER, sizeof(struct Pokenav_Menu));
     if (!menu)
         return FALSE;
 
     menu->menuType = GetPokenavMainMenuType();
-    menu->cursorPos = POKENAV_MENUITEM_MATCH_CALL;
-    menu->currMenuItem = POKENAV_MENUITEM_MATCH_CALL;
+    menu->cursorPos = POKENAV_MENUITEM_POKEDEX; // renamed match call to pokedex, so now this is this lol
+    menu->currMenuItem = POKENAV_MENUITEM_POKEDEX;
     menu->helpBarIndex = HELPBAR_NONE;
     SetMenuInputHandler(menu);
     return TRUE;
@@ -146,7 +155,7 @@ bool32 PokenavCallback_Init_ConditionMenu(void)
 
     menu->menuType = POKENAV_MENU_TYPE_CONDITION;
     menu->cursorPos = 0;   //party
-    menu->currMenuItem = POKENAV_MENUITEM_CONDITION_PARTY;
+    menu->currMenuItem = POKENAV_MENUITEM_CONDITION_QUESTS;
     menu->helpBarIndex = HELPBAR_NONE;
     SetMenuInputHandler(menu);
     return TRUE;
@@ -220,9 +229,10 @@ static u32 HandleMainMenuInput(struct Pokenav_Menu *menu)
     {
         switch (sMenuItems[menu->menuType][menu->cursorPos])
         {
-        case POKENAV_MENUITEM_MAP:
-            menu->helpBarIndex = gSaveBlock2Ptr->regionMapZoom ? HELPBAR_MAP_ZOOMED_IN : HELPBAR_MAP_ZOOMED_OUT;
-            SetMenuIdAndCB(menu, POKENAV_REGION_MAP);
+        case POKENAV_MENUITEM_POKEDEX:
+            IncrementGameStat(GAME_STAT_CHECKED_POKEDEX);
+            CleanupOverworldWindowsAndTilemaps();
+            SetMainCallback2(CB2_OpenPokedexPlusHGSS);
             return POKENAV_MENU_FUNC_OPEN_FEATURE;
         case POKENAV_MENUITEM_CONDITION:
             menu->menuType = POKENAV_MENU_TYPE_CONDITION;
@@ -230,9 +240,9 @@ static u32 HandleMainMenuInput(struct Pokenav_Menu *menu)
             menu->currMenuItem = sMenuItems[POKENAV_MENU_TYPE_CONDITION][0];
             menu->callback = HandleConditionMenuInput;
             return POKENAV_MENU_FUNC_OPEN_CONDITION;
-        case POKENAV_MENUITEM_MATCH_CALL:
-            menu->helpBarIndex = HELPBAR_MC_TRAINER_LIST;
-            SetMenuIdAndCB(menu, POKENAV_MATCH_CALL);
+        case POKENAV_MENUITEM_MAP:
+            menu->helpBarIndex = gSaveBlock2Ptr->regionMapZoom ? HELPBAR_MAP_ZOOMED_IN : HELPBAR_MAP_ZOOMED_OUT;
+            SetMenuIdAndCB(menu, POKENAV_REGION_MAP);
             return POKENAV_MENU_FUNC_OPEN_FEATURE;
         case POKENAV_MENUITEM_RIBBONS:
             if (CanViewRibbonsMenu())
@@ -265,7 +275,7 @@ static u32 HandleMainMenuInputTutorial(struct Pokenav_Menu *menu)
 
     if (JOY_NEW(A_BUTTON))
     {
-        if (sMenuItems[menu->menuType][menu->cursorPos] == POKENAV_MENUITEM_MATCH_CALL)
+        if (sMenuItems[menu->menuType][menu->cursorPos] == POKENAV_MENUITEM_POKEDEX)
         {
             menu->helpBarIndex = HELPBAR_MC_TRAINER_LIST;
             SetMenuIdAndCB(menu, POKENAV_MATCH_CALL);
@@ -296,12 +306,12 @@ static u32 HandleMainMenuInputEndTutorial(struct Pokenav_Menu *menu)
     if (JOY_NEW(A_BUTTON))
     {
         u32 menuItem = sMenuItems[menu->menuType][menu->cursorPos];
-        if (menuItem != POKENAV_MENUITEM_MATCH_CALL && menuItem != POKENAV_MENUITEM_SWITCH_OFF)
+        if (menuItem != POKENAV_MENUITEM_POKEDEX && menuItem != POKENAV_MENUITEM_SWITCH_OFF)
         {
             PlaySE(SE_FAILURE);
             return POKENAV_MENU_FUNC_NONE;
         }
-        else if (menuItem == POKENAV_MENUITEM_MATCH_CALL)
+        else if (menuItem == POKENAV_MENUITEM_POKEDEX)
         {
             menu->helpBarIndex = HELPBAR_MC_TRAINER_LIST;
             SetMenuIdAndCB(menu, POKENAV_MATCH_CALL);
@@ -353,6 +363,9 @@ static u32 HandleConditionMenuInput(struct Pokenav_Menu *menu)
             menu->currMenuItem = sMenuItems[POKENAV_MENU_TYPE_CONDITION_SEARCH][0];
             menu->callback = HandleConditionSearchMenuInput;
             return POKENAV_MENU_FUNC_OPEN_CONDITION_SEARCH;
+        case POKENAV_MENUITEM_CONDITION_QUESTS:
+            CreateTask(Task_QuestMenu_OpenFromStartMenu, 0);
+            return POKENAV_MENU_FUNC_EXIT; 
         case POKENAV_MENUITEM_CONDITION_PARTY:
             menu->helpBarIndex = 0;
             SetMenuIdAndCB(menu, POKENAV_CONDITION_GRAPH_PARTY);
