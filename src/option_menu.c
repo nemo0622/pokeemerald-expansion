@@ -586,6 +586,7 @@ static void Task_OptionMenuSave(u8 taskId)
     // add custom page2 settings here
     gTasks[taskId].TDifficulty == 0 ? FlagClear(FLAG_HARD_MODE) : FlagSet(FLAG_HARD_MODE);
     gTasks[taskId].TBattleBgOff == 0 ? FlagClear(FLAG_SYS_DISABLE_BATTLE_BG) : FlagSet(FLAG_SYS_DISABLE_BATTLE_BG);
+    gTasks[taskId].TBattleBgOff == 0 ? FlagClear(FLAG_HIDE_BATTLE_SHADOWS) : FlagSet(FLAG_HIDE_BATTLE_SHADOWS); // also disables shadows on white GSC battle backgrounds
     gTasks[taskId].TShadowsOff == 0 ? FlagClear(FLAG_HIDE_BATTLE_SHADOWS) : FlagSet(FLAG_HIDE_BATTLE_SHADOWS);
     gTasks[taskId].TNightCycle == 0 ? FlagClear(FLAG_INVISIBLE_DAY_NIGHT_CYCLE) : FlagSet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE);
     gTasks[taskId].TColorTint == 0 ? FlagClear(FLAG_HIDE_POKEMON_COLOR_TINT) : FlagSet(FLAG_HIDE_POKEMON_COLOR_TINT);

@@ -33,6 +33,7 @@
 #include "constants/trainers.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_partner.h"
+#include "rtc.h"
 
 // .rodata
 
@@ -624,7 +625,7 @@ const struct BattleBackground sBattleTerrainTable[] =
         .tilemap = gBattleTerrainTilemap_TallGrass,
         .entryTileset = gBattleTerrainAnimTiles_TallGrass,
         .entryTilemap = gBattleTerrainAnimTilemap_TallGrass,
-        .palette = gBattleTerrainPalette_TallGrass,
+        .palette = {gBattleTerrainPalette_Twilight_TallGrass, gBattleTerrainPalette_TallGrass, gBattleTerrainPalette_Twilight_TallGrass, gBattleTerrainPalette_Night_TallGrass},
     },
 
     [BATTLE_TERRAIN_LONG_GRASS] =
@@ -633,7 +634,7 @@ const struct BattleBackground sBattleTerrainTable[] =
         .tilemap = gBattleTerrainTilemap_LongGrass,
         .entryTileset = gBattleTerrainAnimTiles_LongGrass,
         .entryTilemap = gBattleTerrainAnimTilemap_LongGrass,
-        .palette = gBattleTerrainPalette_LongGrass,
+        .palette = {gBattleTerrainPalette_Twilight_LongGrass, gBattleTerrainPalette_LongGrass, gBattleTerrainPalette_Twilight_LongGrass, gBattleTerrainPalette_Night_LongGrass},
     },
 
     [BATTLE_TERRAIN_SAND] =
@@ -642,7 +643,7 @@ const struct BattleBackground sBattleTerrainTable[] =
         .tilemap = gBattleTerrainTilemap_Sand,
         .entryTileset = gBattleTerrainAnimTiles_Sand,
         .entryTilemap = gBattleTerrainAnimTilemap_Sand,
-        .palette = gBattleTerrainPalette_Sand,
+        .palette = {gBattleTerrainPalette_Twilight_Sand, gBattleTerrainPalette_Sand, gBattleTerrainPalette_Twilight_Sand, gBattleTerrainPalette_Night_Sand},
     },
 
     [BATTLE_TERRAIN_UNDERWATER] =
@@ -651,7 +652,7 @@ const struct BattleBackground sBattleTerrainTable[] =
         .tilemap = gBattleTerrainTilemap_Underwater,
         .entryTileset = gBattleTerrainAnimTiles_Underwater,
         .entryTilemap = gBattleTerrainAnimTilemap_Underwater,
-        .palette = gBattleTerrainPalette_Underwater,
+        .palette = {gBattleTerrainPalette_Underwater, gBattleTerrainPalette_Underwater, gBattleTerrainPalette_Underwater, gBattleTerrainPalette_Underwater},
     },
 
     [BATTLE_TERRAIN_WATER] =
@@ -660,7 +661,7 @@ const struct BattleBackground sBattleTerrainTable[] =
         .tilemap = gBattleTerrainTilemap_Water,
         .entryTileset = gBattleTerrainAnimTiles_Water,
         .entryTilemap = gBattleTerrainAnimTilemap_Water,
-        .palette = gBattleTerrainPalette_Water,
+        .palette = {gBattleTerrainPalette_Twilight_Water, gBattleTerrainPalette_Water, gBattleTerrainPalette_Twilight_Water, gBattleTerrainPalette_Night_Water},
     },
 
     [BATTLE_TERRAIN_POND] =
@@ -669,7 +670,7 @@ const struct BattleBackground sBattleTerrainTable[] =
         .tilemap = gBattleTerrainTilemap_PondWater,
         .entryTileset = gBattleTerrainAnimTiles_PondWater,
         .entryTilemap = gBattleTerrainAnimTilemap_PondWater,
-        .palette = gBattleTerrainPalette_PondWater,
+        .palette = {gBattleTerrainPalette_Twilight_PondWater, gBattleTerrainPalette_PondWater, gBattleTerrainPalette_Twilight_PondWater, gBattleTerrainPalette_Night_PondWater},
     },
 
     [BATTLE_TERRAIN_MOUNTAIN] =
@@ -678,7 +679,7 @@ const struct BattleBackground sBattleTerrainTable[] =
         .tilemap = gBattleTerrainTilemap_Rock,
         .entryTileset = gBattleTerrainAnimTiles_Rock,
         .entryTilemap = gBattleTerrainAnimTilemap_Rock,
-        .palette = gBattleTerrainPalette_Rock,
+        .palette = {gBattleTerrainPalette_Twilight_Rock, gBattleTerrainPalette_Rock, gBattleTerrainPalette_Twilight_Rock, gBattleTerrainPalette_Night_Rock},
     },
 
     [BATTLE_TERRAIN_CAVE] =
@@ -687,7 +688,7 @@ const struct BattleBackground sBattleTerrainTable[] =
         .tilemap = gBattleTerrainTilemap_Cave,
         .entryTileset = gBattleTerrainAnimTiles_Cave,
         .entryTilemap = gBattleTerrainAnimTilemap_Cave,
-        .palette = gBattleTerrainPalette_Cave,
+        .palette = {gBattleTerrainPalette_Cave, gBattleTerrainPalette_Cave, gBattleTerrainPalette_Cave, gBattleTerrainPalette_Cave},
     },
 
     [BATTLE_TERRAIN_BUILDING] =
@@ -696,7 +697,7 @@ const struct BattleBackground sBattleTerrainTable[] =
         .tilemap = gBattleTerrainTilemap_Building,
         .entryTileset = gBattleTerrainAnimTiles_Building,
         .entryTilemap = gBattleTerrainAnimTilemap_Building,
-        .palette = gBattleTerrainPalette_Building,
+        .palette = {gBattleTerrainPalette_Building, gBattleTerrainPalette_Building, gBattleTerrainPalette_Building, gBattleTerrainPalette_Building},
     },
 
     [BATTLE_TERRAIN_PLAIN] =
@@ -705,7 +706,7 @@ const struct BattleBackground sBattleTerrainTable[] =
         .tilemap = gBattleTerrainTilemap_Building,
         .entryTileset = gBattleTerrainAnimTiles_Building,
         .entryTilemap = gBattleTerrainAnimTilemap_Building,
-        .palette = gBattleTerrainPalette_Plain,
+        .palette = {gBattleTerrainPalette_Plain, gBattleTerrainPalette_Plain, gBattleTerrainPalette_Plain, gBattleTerrainPalette_Plain},
     },
 };
 
@@ -813,15 +814,14 @@ void DrawMainBattleBackground(void)
         default:
             LZDecompressVram(sBattleTerrainTable[gBattleTerrain].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleTerrainTable[gBattleTerrain].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(sBattleTerrainTable[gBattleTerrain].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(sBattleTerrainTable[gBattleTerrain].palette[GetTimeOfDay()], BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
         }
     }
     else
     {
 
-        // NOTE: Commented largely unnecessary bits out because of improvements with the simpler battle backgrounds
-        // MapSec-specific battle background force loading
+        // Force load background BASED ON METATILE INFORMATION
         u8 mapId;
         mapId = GetCurrentRegionMapSectionId(); // gets current mapSec
         u16 currMetatile = GetPlayerCurMetatileBehavior(0); // gets current metatile behavior
@@ -831,14 +831,27 @@ void DrawMainBattleBackground(void)
         {
             LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            switch(GetTimeOfDay()) // had to use a separate switch here cause i am reusing the tilemap of a separate background (normal TallGrass) and a separate palette, so
+            {
+                default:
+                case TIME_DAY:
+                    LoadCompressedPalette(gBattleTerrainPalette_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    break;
+                case TIME_MORNING:
+                case TIME_EVENING:
+                    LoadCompressedPalette(gBattleTerrainPalette_Twilight_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    break;
+                case TIME_NIGHT:
+                    LoadCompressedPalette(gBattleTerrainPalette_Night_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    break;
+            }
             return;
         }
-        else if(MetatileBehavior_IsShallowFlowingWater(currMetatile)) // loads pond water for shallows encounters
+        else if(MetatileBehavior_IsShallowFlowingWater(currMetatile) || MapGridGetMetatileIdAt(x, y) == METATILE_General_ShallowsGrass) // loads pond water for shallows encounters
         {
             LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_POND].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_POND].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_PondWater, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_POND].palette[GetTimeOfDay()], BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             return;
         }
         else if(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_UNDERWATER) // if player is underwater
@@ -848,10 +861,27 @@ void DrawMainBattleBackground(void)
             LoadCompressedPalette(gBattleTerrainPalette_Underwater, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             return;
         }
+        else if(MapGridGetMetatileIdAt(x, y) == METATILE_General_SandGrass) // load sand tile for grass on sand
+        {
+            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_SAND].tileset, (void *)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_SAND].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_SAND].palette[GetTimeOfDay()], BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            return;
+        }
+
+        // Force battle backgrounds on specific maps
+        // Really only for Kalami City lol, other map stuff is in the next If statement
+        if(mapId == MAPSEC_KALAMI_CITY && GetCurrentMapBattleScene() == MAP_BATTLE_SCENE_NORMAL) // outside of Kalami City gym, always use pond background
+        {
+            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_POND].tileset, (void *)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_POND].tilemap, (void *)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_POND].palette[GetTimeOfDay()], BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            return;
+        }
 
         // Map-specific failsafes to try and avoid "Plain" battle background
         // Sometimes it's fine, but something is better than the nothing plain background lol
-        if(BattleSetup_GetTerrainId() == BATTLE_TERRAIN_PLAIN || MetatileBehavior_IsNormal(currMetatile))
+        if((BattleSetup_GetTerrainId() == BATTLE_TERRAIN_PLAIN || MetatileBehavior_IsNormal(currMetatile)) && GetCurrentMapBattleScene() == MAP_BATTLE_SCENE_NORMAL)
         {
             switch (mapId)
             {
@@ -859,24 +889,37 @@ void DrawMainBattleBackground(void)
             case MAPSEC_ACRISIA_CITY:
                 LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tileset, (void *)(BG_CHAR_ADDR(2)));
                 LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-                LoadCompressedPalette(gBattleTerrainPalette_TallGrass, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].palette[GetTimeOfDay()], BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 break;
             case MAPSEC_KALAMI_CITY:
             case MAPSEC_RIVERWALK_TRAIL:
                 LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_POND].tileset, (void *)(BG_CHAR_ADDR(2)));
                 LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_POND].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-                LoadCompressedPalette(gBattleTerrainPalette_PondWater, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_POND].palette[GetTimeOfDay()], BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 break;
             case MAPSEC_PYTHIOS_TOWN:
             case MAPSEC_ERINYS_PATH:
                 LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tileset, (void *)(BG_CHAR_ADDR(2)));
                 LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_GRASS].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-                LoadCompressedPalette(gBattleTerrainPalette_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                switch(GetTimeOfDay()) // had to use a separate switch here cause i am reusing the tilemap of a separate background (normal TallGrass) and a separate palette, so
+                {
+                    default:
+                    case TIME_DAY:
+                        LoadCompressedPalette(gBattleTerrainPalette_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                        break;
+                    case TIME_MORNING:
+                    case TIME_EVENING:
+                        LoadCompressedPalette(gBattleTerrainPalette_Twilight_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                        break;
+                    case TIME_NIGHT:
+                        LoadCompressedPalette(gBattleTerrainPalette_Night_TallGrass_Orange, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                        break;
+                }
                 break;
             case MAPSEC_ACRISIA_MOUNTAINS:
                 LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_MOUNTAIN].tileset, (void *)(BG_CHAR_ADDR(2)));
                 LZDecompressVram(sBattleTerrainTable[BATTLE_TERRAIN_MOUNTAIN].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-                LoadCompressedPalette(gBattleTerrainPalette_Rock, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                LoadCompressedPalette(sBattleTerrainTable[BATTLE_TERRAIN_MOUNTAIN].palette[GetTimeOfDay()], BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 break;
             }
             return;
@@ -907,7 +950,7 @@ void DrawMainBattleBackground(void)
         case MAP_BATTLE_SCENE_NORMAL:
             LZDecompressVram(sBattleTerrainTable[gBattleTerrain].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleTerrainTable[gBattleTerrain].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(sBattleTerrainTable[gBattleTerrain].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(sBattleTerrainTable[gBattleTerrain].palette[GetTimeOfDay()], BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
         case MAP_BATTLE_SCENE_GYM:
             LZDecompressVram(gBattleTerrainTiles_Building, (void *)(BG_CHAR_ADDR(2)));
@@ -1512,7 +1555,7 @@ bool8 LoadChosenBattleElement(u8 caseId)
             {
             default:
             case MAP_BATTLE_SCENE_NORMAL:
-                LoadCompressedPalette(sBattleTerrainTable[gBattleTerrain].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                LoadCompressedPalette(sBattleTerrainTable[gBattleTerrain].palette[GetTimeOfDay()], BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 break;
             case MAP_BATTLE_SCENE_GYM:
                 LoadCompressedPalette(gBattleTerrainPalette_BuildingGym, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);

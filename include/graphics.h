@@ -227,50 +227,64 @@ extern const u32 gBattleTerrainTiles_TallGrass[];
 extern const u32 gBattleTerrainTilemap_TallGrass[];
 extern const u32 gBattleTerrainAnimTiles_TallGrass[];
 extern const u32 gBattleTerrainAnimTilemap_TallGrass[];
-extern const u32 gBattleTerrainPalette_TallGrass[];
+extern const u32 gBattleTerrainPalette_TallGrass[]; // day palette
+extern const u32 gBattleTerrainPalette_Twilight_TallGrass[]; // morning/evening palette
+extern const u32 gBattleTerrainPalette_Night_TallGrass[]; // night palette
 extern const u32 gBattleTerrainPalette_TallGrass_Orange[];
+extern const u32 gBattleTerrainPalette_Twilight_TallGrass_Orange[];
+extern const u32 gBattleTerrainPalette_Night_TallGrass_Orange[];
 extern const u32 gBattleTerrainTiles_LongGrass[];
 extern const u32 gBattleTerrainTilemap_LongGrass[];
 extern const u32 gBattleTerrainAnimTiles_LongGrass[];
 extern const u32 gBattleTerrainAnimTilemap_LongGrass[];
 extern const u32 gBattleTerrainPalette_LongGrass[];
+extern const u32 gBattleTerrainPalette_Twilight_LongGrass[];
+extern const u32 gBattleTerrainPalette_Night_LongGrass[];
 extern const u32 gBattleTerrainTiles_Sand[];
 extern const u32 gBattleTerrainTilemap_Sand[];
 extern const u32 gBattleTerrainAnimTiles_Sand[];
 extern const u32 gBattleTerrainAnimTilemap_Sand[];
 extern const u32 gBattleTerrainPalette_Sand[];
+extern const u32 gBattleTerrainPalette_Twilight_Sand[];
+extern const u32 gBattleTerrainPalette_Night_Sand[];
 extern const u32 gBattleTerrainTiles_Underwater[];
 extern const u32 gBattleTerrainTilemap_Underwater[];
 extern const u32 gBattleTerrainAnimTiles_Underwater[];
 extern const u32 gBattleTerrainAnimTilemap_Underwater[];
-extern const u32 gBattleTerrainPalette_Underwater[];
+extern const u32 gBattleTerrainPalette_Underwater[]; // no time of day differences
 extern const u32 gBattleTerrainTiles_Water[];
 extern const u32 gBattleTerrainTilemap_Water[];
 extern const u32 gBattleTerrainAnimTiles_Water[];
 extern const u32 gBattleTerrainAnimTilemap_Water[];
 extern const u32 gBattleTerrainPalette_Water[];
+extern const u32 gBattleTerrainPalette_Twilight_Water[];
+extern const u32 gBattleTerrainPalette_Night_Water[];
 extern const u32 gBattleTerrainTiles_PondWater[];
 extern const u32 gBattleTerrainTilemap_PondWater[];
 extern const u32 gBattleTerrainAnimTiles_PondWater[];
 extern const u32 gBattleTerrainAnimTilemap_PondWater[];
 extern const u32 gBattleTerrainPalette_PondWater[];
+extern const u32 gBattleTerrainPalette_Twilight_PondWater[];
+extern const u32 gBattleTerrainPalette_Night_PondWater[];
 extern const u32 gBattleTerrainTiles_Rock[];
 extern const u32 gBattleTerrainTilemap_Rock[];
 extern const u32 gBattleTerrainAnimTiles_Rock[];
 extern const u32 gBattleTerrainAnimTilemap_Rock[];
 extern const u32 gBattleTerrainPalette_Rock[];
+extern const u32 gBattleTerrainPalette_Twilight_Rock[];
+extern const u32 gBattleTerrainPalette_Night_Rock[];
 extern const u32 gBattleTerrainTiles_Cave[];
 extern const u32 gBattleTerrainTilemap_Cave[];
 extern const u32 gBattleTerrainAnimTiles_Cave[];
 extern const u32 gBattleTerrainAnimTilemap_Cave[];
-extern const u32 gBattleTerrainPalette_Cave[];
+extern const u32 gBattleTerrainPalette_Cave[]; // no time of day difference
 extern const u32 gBattleTerrainTiles_Building[];
 extern const u32 gBattleTerrainTilemap_Building[];
 extern const u32 gBattleTerrainAnimTiles_Building[];
 extern const u32 gBattleTerrainAnimTilemap_Building[];
-extern const u32 gBattleTerrainPalette_Building[];
-extern const u32 gBattleTerrainPalette_Plain[];
-extern const u32 gBattleTerrainPalette_Frontier[];
+extern const u32 gBattleTerrainPalette_Building[]; // no time of day difference
+extern const u32 gBattleTerrainPalette_Plain[]; // no time of day difference
+extern const u32 gBattleTerrainPalette_Frontier[]; // no time of day difference
 extern const u32 gBattleTerrainTiles_Stadium[];
 extern const u32 gBattleTerrainTilemap_Stadium[];
 extern const u32 gBattleTerrainTiles_Rayquaza[];
@@ -280,8 +294,8 @@ extern const u32 gBattleTerrainAnimTilemap_Rayquaza[];
 extern const u32 gBattleTerrainPalette_Rayquaza[];
 extern const u32 gBattleTerrainPalette_Kyogre[];
 extern const u32 gBattleTerrainPalette_Groudon[];
-extern const u32 gBattleTerrainPalette_BuildingGym[];
-extern const u32 gBattleTerrainPalette_BuildingLeader[];
+extern const u32 gBattleTerrainPalette_BuildingGym[]; // no time of day difference
+extern const u32 gBattleTerrainPalette_BuildingLeader[]; // no time of day difference
 extern const u32 gBattleTerrainPalette_StadiumAqua[];
 extern const u32 gBattleTerrainPalette_StadiumMagma[];
 extern const u32 gBattleTerrainPalette_StadiumSidney[];

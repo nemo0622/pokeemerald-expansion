@@ -37,6 +37,7 @@
 #include "task.h"
 #include "text_window.h"
 #include "trainer_pokemon_sprites.h"
+#include "rtc.h"
 
 #include "constants/global.h"
 #include "constants/items.h"
@@ -932,7 +933,7 @@ static void LoadBattleBg(u8 battleBgType, u8 battleTerrain)
     case MAP_BATTLE_SCENE_NORMAL:
         LZDecompressVram(sBattleTerrainTable[battleTerrain].tileset, (void*)(BG_CHAR_ADDR(2)));
         LZDecompressVram(sBattleTerrainTable[battleTerrain].tilemap, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(sBattleTerrainTable[battleTerrain].palette, 0x20, 0x60);
+        LoadCompressedPalette(sBattleTerrainTable[battleTerrain].palette[GetTimeOfDay()], 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_GYM:
         LZDecompressVram(gBattleTerrainTiles_Building, (void*)(BG_CHAR_ADDR(2)));

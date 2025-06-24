@@ -20,6 +20,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 - Day/Night System with FakeRTC
     - Every second in real time is 30 seconds in game (2 real minutes = 1 in-game hour)
     - Comes with Day/Night Encounter Differences! All found in Documentation
+    - Outdoors Battle Backgrounds change with time of day!
 - Overworld Encounters with Wild Pokémon
     - Most routes have a few randomized locations for Pokémon to spawn
     - Shiny Pokémon are visible in the overworld!
@@ -64,24 +65,22 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- Integrate RavePossum's HGSS Battle UI and make it GBC style (all black & white)
-    - Doesn't use any white text, so white backgrounds with stark black borders should work okay!
-- Add new Emotes using Reakain's Emote spritesheet (so cute!)
-    - Go through major story events and add relevant emotes
-    - Also try to add them to other things (ex: crying Emote when DexNav Pokémon disappears)
-
 - POKéDEX CHANGES:
     - Replace Bagon, Shelgon, and Salamance with Dreepy, Drakloak, and Dragapult (Nuukiie's sprites, so fucking CUTE!)
-    - Replace Electrike and Manectric with Yamper and Boltund
+    - Replace Electrike and Manectric with Yamper and Boltund (commissions)
     - TWO PATHS TO 450 TOTAL:
         - Add Type:Null, Silvally, and Talonflame line (SageDeoxys has good sprites for most of these!)
         - Add Galar Fossils (4 Pokémon, must commission!) plus Carbink to get to 450
     - REMEMBER: use LuigiTKO's Party Icon sprites! Super cute and impressive :)
+
 - Implement Biv's Fishing Minigame
     - Also create options menu toggle for it
     - TREASURE IDEAS:
         - Pearl, Big Pearl, and Pearl String (for that one quest in Asteri Sea West!)
         - Wishing Stars of course
+- Add new Emotes using Reakain's Emote spritesheet (so cute!)
+    - Go through major story events and add relevant emotes
+    - Also try to add them to other things (ex: crying Emote when DexNav Pokémon disappears)
 - Continue Mapping and NPC development
     - Sea of Vulcai, and on to the Fresco Isles
 - Add Signposts to every new route and town
@@ -261,7 +260,10 @@ Many, many talented developers and artists are responsible for making this proje
         - EeVeeEe1999: created many small sprites, especially for Gen 3, 5, 6, and 7 Pokémon
         - A few Gen 6 icon sprites by  dragonball253 (some Kalos starter icons)
         - Many later-gen icon sprites by LuigiTKO
-    - Battle Backgrounds based on work by PurrfectDoodle, RavePossum, and Ruki; some slight edits by me
+    - Battle Backgrounds:
+        - Majority created by me, based on assets from Pokémon Crystal and colors / decorative assets by Zaebucca
+        - Sand and Arena backgrounds by AveonTrainer, edited by me
+        - Water background by kWharever on DeviantArt, edited by me
     - Ilios Region Map by Zezitra
     - Many, many item Bag icons by glados11388
 

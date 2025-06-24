@@ -1,13 +1,15 @@
 #ifndef GUARD_BATTLE_BG_H
 #define GUARD_BATTLE_BG_H
 
+#include "rtc.h"
+
 struct BattleBackground
 {
     const void *tileset;
     const void *tilemap;
     const void *entryTileset;
     const void *entryTilemap;
-    const void *palette;
+    const void *palette[4]; // Morning, Day, Evening, and Night palettes (Morning and Evening will probably just be repeated palettes lol but still)
 };
 
 void BattleInitBgsAndWindows(void);
