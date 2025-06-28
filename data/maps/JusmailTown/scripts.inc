@@ -301,7 +301,7 @@ JusmailTown_EventScript_WishingWell::
 	compare VAR_RESULT, 1
 	goto_if_eq JusmailTown_EventScript_WishingWell_2
 JusmailTown_EventScript_WishingWell_1:
-# 444 "data/maps/JusmailTown/scripts.pory"
+# 450 "data/maps/JusmailTown/scripts.pory"
 	releaseall
 	end
 
@@ -325,327 +325,327 @@ JusmailTown_EventScript_WishingWell_4:
 # 231 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 # 234 "data/maps/JusmailTown/scripts.pory"
-	randomelement SPECIES_ROWLET, SPECIES_LITTEN, SPECIES_POPPLIO, SPECIES_CHESPIN, SPECIES_FENNEKIN, SPECIES_FROAKIE, SPECIES_SPRIGATITO, SPECIES_FUECOCO, SPECIES_QUAXLY, SPECIES_PANSAGE, SPECIES_PANSEAR, SPECIES_PANPOUR, SPECIES_LILLIPUP, SPECIES_PIKIPEK, SPECIES_DUCKLETT, SPECIES_HOPPIP, SPECIES_NINCADA, SPECIES_GRUBBIN, SPECIES_PARAS, SPECIES_PHANPY, SPECIES_SNOM, SPECIES_CUBONE, SPECIES_MUDBRAY, SPECIES_MAREEP, SPECIES_CUTIEFLY, SPECIES_GRIMER, SPECIES_GRIMER_ALOLAN, SPECIES_WURMPLE, SPECIES_TROPIUS, SPECIES_RALTS, SPECIES_EEVEE, SPECIES_SKIDDO, SPECIES_MURKROW, SPECIES_ORICORIO_BAILE, SPECIES_ORICORIO_POM_POM, SPECIES_ORICORIO_PAU, SPECIES_ORICORIO_SENSU, SPECIES_SANDSHREW, SPECIES_SANDSHREW_ALOLAN, SPECIES_NOSEPASS, SPECIES_MAWILE, SPECIES_ROCKRUFF, SPECIES_VULLABY, SPECIES_WOOBAT, SPECIES_ARON, SPECIES_TIMBURR, SPECIES_KLAWF, SPECIES_POLIWAG, SPECIES_PUMPKABOO, SPECIES_SHROOMISH, SPECIES_HERACROSS, SPECIES_SHUPPET, SPECIES_AIPOM, SPECIES_WOOPER, SPECIES_WOOPER_PALDEAN, SPECIES_TOEDSCOOL, SPECIES_BLITZLE, SPECIES_HOOTHOOT, SPECIES_MIENFOO, SPECIES_FLITTLE, SPECIES_VULPIX, SPECIES_VULPIX_ALOLAN, SPECIES_HONEDGE, SPECIES_DWEBBLE, SPECIES_MINIOR, SPECIES_GASTLY, SPECIES_BALTOY, SPECIES_SALANDIT, SPECIES_TOGEPI, SPECIES_CHERUBI, SPECIES_HOUNDOUR, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_SKORUPI, SPECIES_SPINARAK, SPECIES_ONIX, SPECIES_KOMALA, SPECIES_WINGULL, SPECIES_STANTLER, SPECIES_SNORUNT, SPECIES_SPHEAL, SPECIES_SEEL, SPECIES_BRONZOR, SPECIES_ZORUA, SPECIES_ZORUA_HISUI, SPECIES_SNEASEL, SPECIES_SNEASEL_HISUI, SPECIES_MEOWTH, SPECIES_MEOWTH_ALOLAN, SPECIES_MEOWTH_GALAR, SPECIES_PACHIRISU, SPECIES_CHIKORITA, SPECIES_CYNDAQUIL, SPECIES_TOTODILE, SPECIES_JANGMO_O, SPECIES_FLAMIGO, SPECIES_SIZZLIPEDE, SPECIES_CRANIDOS, SPECIES_SHIELDON, SPECIES_SPIRITOMB, SPECIES_TYRUNT, SPECIES_AMAURA, SPECIES_ELECTRIKE, SPECIES_PAWMI, SPECIES_SHROODLE, SPECIES_BUIZEL, SPECIES_STUNKY, SPECIES_CORSOLA, SPECIES_CORSOLA_GALAR, SPECIES_FINNEON, SPECIES_WAILMER, SPECIES_TENTACOOL, SPECIES_CLAUNCHER, SPECIES_SCYTHER, SPECIES_STUFFUL, SPECIES_BAGON, SPECIES_TOGEDEMARU, SPECIES_CRABRAWLER, SPECIES_LILEEP, SPECIES_ANORITH, SPECIES_DEDENNE, SPECIES_CHATOT, SPECIES_MEDITITE, SPECIES_DROWZEE, SPECIES_EKANS, SPECIES_BASCULIN_WHITE_STRIPED, SPECIES_PANCHAM, SPECIES_SKRELP, SPECIES_GOTHITA, SPECIES_SOLOSIS, SPECIES_LITWICK, SPECIES_CHARCADET, SPECIES_CHINCHOU, SPECIES_SHELLDER, SPECIES_CLAMPERL, SPECIES_FLABEBE, SPECIES_IGGLYBUFF, SPECIES_HELIOPTILE, SPECIES_TRAPINCH, SPECIES_DODUO, SPECIES_TINKATINK, SPECIES_SCRAGGY, SPECIES_GLIGAR, SPECIES_TORKOAL, SPECIES_NUMEL, SPECIES_RELICANTH, SPECIES_BARBOACH, SPECIES_MUNNA, SPECIES_KECLEON, SPECIES_MAGIKARP, SPECIES_FOMANTIS, SPECIES_ORANGURU, SPECIES_PASSIMIAN, SPECIES_ZIGZAGOON, SPECIES_ZIGZAGOON_GALAR, SPECIES_GOOMY, SPECIES_BRUXISH, SPECIES_IMPIDIMP, SPECIES_SWABLU, SPECIES_MANKEY, SPECIES_VOLTORB, SPECIES_VOLTORB_HISUI, SPECIES_LAPRAS, SPECIES_GIRAFARIG, SPECIES_BUDEW, SPECIES_MAGNEMITE, SPECIES_CUBCHOO, SPECIES_GROWLITHE, SPECIES_GROWLITHE_HISUI, SPECIES_PSYDUCK, SPECIES_YANMA, SPECIES_AERODACTYL, SPECIES_REMORAID, SPECIES_RUFFLET, SPECIES_NATU, SPECIES_SNOVER, SPECIES_DUSKULL, SPECIES_SWINUB, SPECIES_CORPHISH, SPECIES_UNOWN, SPECIES_TIRTOUGA, SPECIES_ARCHEN, SPECIES_LARVITAR, SPECIES_DHELMISE, SPECIES_DRATINI, SPECIES_BOUNSWEET, SPECIES_CUFANT, SPECIES_FINIZEN, SPECIES_APPLIN, SPECIES_SANDILE, SPECIES_FALINKS
-# 426 "data/maps/JusmailTown/scripts.pory"
+	randomelement SPECIES_ROWLET, SPECIES_LITTEN, SPECIES_POPPLIO, SPECIES_CHESPIN, SPECIES_FENNEKIN, SPECIES_FROAKIE, SPECIES_SPRIGATITO, SPECIES_FUECOCO, SPECIES_QUAXLY, SPECIES_PANSAGE, SPECIES_PANSEAR, SPECIES_PANPOUR, SPECIES_LILLIPUP, SPECIES_PIKIPEK, SPECIES_DUCKLETT, SPECIES_HOPPIP, SPECIES_NINCADA, SPECIES_GRUBBIN, SPECIES_PARAS, SPECIES_PHANPY, SPECIES_SNOM, SPECIES_CUBONE, SPECIES_MUDBRAY, SPECIES_MAREEP, SPECIES_CUTIEFLY, SPECIES_GRIMER, SPECIES_GRIMER_ALOLAN, SPECIES_WURMPLE, SPECIES_TROPIUS, SPECIES_RALTS, SPECIES_EEVEE, SPECIES_SKIDDO, SPECIES_MURKROW, SPECIES_ORICORIO_BAILE, SPECIES_ORICORIO_POM_POM, SPECIES_ORICORIO_PAU, SPECIES_ORICORIO_SENSU, SPECIES_SANDSHREW, SPECIES_SANDSHREW_ALOLAN, SPECIES_NOSEPASS, SPECIES_MAWILE, SPECIES_ROCKRUFF, SPECIES_VULLABY, SPECIES_WOOBAT, SPECIES_ARON, SPECIES_TIMBURR, SPECIES_KLAWF, SPECIES_POLIWAG, SPECIES_PUMPKABOO, SPECIES_SHROOMISH, SPECIES_HERACROSS, SPECIES_SHUPPET, SPECIES_AIPOM, SPECIES_WOOPER, SPECIES_WOOPER_PALDEAN, SPECIES_TOEDSCOOL, SPECIES_BLITZLE, SPECIES_HOOTHOOT, SPECIES_MIENFOO, SPECIES_FLITTLE, SPECIES_VULPIX, SPECIES_VULPIX_ALOLAN, SPECIES_HONEDGE, SPECIES_DWEBBLE, SPECIES_MINIOR, SPECIES_GASTLY, SPECIES_BALTOY, SPECIES_SALANDIT, SPECIES_TOGEPI, SPECIES_CHERUBI, SPECIES_HOUNDOUR, SPECIES_OMANYTE, SPECIES_KABUTO, SPECIES_SKORUPI, SPECIES_SPINARAK, SPECIES_ONIX, SPECIES_KOMALA, SPECIES_WINGULL, SPECIES_STANTLER, SPECIES_SNORUNT, SPECIES_SPHEAL, SPECIES_SEEL, SPECIES_BRONZOR, SPECIES_ZORUA, SPECIES_ZORUA_HISUI, SPECIES_SNEASEL, SPECIES_SNEASEL_HISUI, SPECIES_MEOWTH, SPECIES_MEOWTH_ALOLAN, SPECIES_MEOWTH_GALAR, SPECIES_PACHIRISU, SPECIES_CHIKORITA, SPECIES_CYNDAQUIL, SPECIES_TOTODILE, SPECIES_JANGMO_O, SPECIES_FLAMIGO, SPECIES_SIZZLIPEDE, SPECIES_CRANIDOS, SPECIES_SHIELDON, SPECIES_SPIRITOMB, SPECIES_TYRUNT, SPECIES_AMAURA, SPECIES_YAMPER, SPECIES_PAWMI, SPECIES_SHROODLE, SPECIES_BUIZEL, SPECIES_STUNKY, SPECIES_CORSOLA, SPECIES_CORSOLA_GALAR, SPECIES_FINNEON, SPECIES_WAILMER, SPECIES_TENTACOOL, SPECIES_CLAUNCHER, SPECIES_SCYTHER, SPECIES_STUFFUL, SPECIES_DREEPY, SPECIES_TOGEDEMARU, SPECIES_CRABRAWLER, SPECIES_LILEEP, SPECIES_ANORITH, SPECIES_DEDENNE, SPECIES_CHATOT, SPECIES_MEDITITE, SPECIES_DROWZEE, SPECIES_EKANS, SPECIES_BASCULIN_WHITE_STRIPED, SPECIES_PANCHAM, SPECIES_SKRELP, SPECIES_GOTHITA, SPECIES_SOLOSIS, SPECIES_LITWICK, SPECIES_CHARCADET, SPECIES_CHINCHOU, SPECIES_SHELLDER, SPECIES_CLAMPERL, SPECIES_FLABEBE, SPECIES_IGGLYBUFF, SPECIES_HELIOPTILE, SPECIES_TRAPINCH, SPECIES_DODUO, SPECIES_TINKATINK, SPECIES_SCRAGGY, SPECIES_GLIGAR, SPECIES_TORKOAL, SPECIES_NUMEL, SPECIES_RELICANTH, SPECIES_BARBOACH, SPECIES_MUNNA, SPECIES_KECLEON, SPECIES_MAGIKARP, SPECIES_FOMANTIS, SPECIES_ORANGURU, SPECIES_PASSIMIAN, SPECIES_ZIGZAGOON, SPECIES_ZIGZAGOON_GALAR, SPECIES_GOOMY, SPECIES_BRUXISH, SPECIES_IMPIDIMP, SPECIES_SWABLU, SPECIES_MANKEY, SPECIES_VOLTORB, SPECIES_VOLTORB_HISUI, SPECIES_LAPRAS, SPECIES_GIRAFARIG, SPECIES_BUDEW, SPECIES_MAGNEMITE, SPECIES_CUBCHOO, SPECIES_GROWLITHE, SPECIES_GROWLITHE_HISUI, SPECIES_PSYDUCK, SPECIES_YANMA, SPECIES_AERODACTYL, SPECIES_REMORAID, SPECIES_RUFFLET, SPECIES_NATU, SPECIES_SNOVER, SPECIES_DUSKULL, SPECIES_SWINUB, SPECIES_CORPHISH, SPECIES_COMFEY, SPECIES_UNOWN, SPECIES_TIRTOUGA, SPECIES_ARCHEN, SPECIES_DRACOZOLT, SPECIES_ARCTOZOLT, SPECIES_DRACOVISH, SPECIES_ARCTOVISH, SPECIES_TYPE_NULL, SPECIES_LARVITAR, SPECIES_DHELMISE, SPECIES_DRATINI, SPECIES_BOUNSWEET, SPECIES_CUFANT, SPECIES_FINIZEN, SPECIES_APPLIN, SPECIES_SANDILE, SPECIES_FALINKS
+# 432 "data/maps/JusmailTown/scripts.pory"
 	givemon VAR_RESULT, 1
-# 427 "data/maps/JusmailTown/scripts.pory"
+# 433 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWell_Text_4
-# 428 "data/maps/JusmailTown/scripts.pory"
+# 434 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 429 "data/maps/JusmailTown/scripts.pory"
+# 435 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq JusmailTown_EventScript_WishingWell_6
-# 436 "data/maps/JusmailTown/scripts.pory"
+# 442 "data/maps/JusmailTown/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
-# 437 "data/maps/JusmailTown/scripts.pory"
+# 443 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWell_Text_5
-# 438 "data/maps/JusmailTown/scripts.pory"
+# 444 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 	goto JusmailTown_EventScript_WishingWell_1
 
 JusmailTown_EventScript_WishingWell_6:
-# 431 "data/maps/JusmailTown/scripts.pory"
+# 437 "data/maps/JusmailTown/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 432 "data/maps/JusmailTown/scripts.pory"
+# 438 "data/maps/JusmailTown/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto JusmailTown_EventScript_WishingWell_1
 
 
 JusmailTown_EventScript_LittleGirlWithWishingStar::
-# 452 "data/maps/JusmailTown/scripts.pory"
+# 458 "data/maps/JusmailTown/scripts.pory"
 	lock
-# 453 "data/maps/JusmailTown/scripts.pory"
+# 459 "data/maps/JusmailTown/scripts.pory"
 	faceplayer
-# 454 "data/maps/JusmailTown/scripts.pory"
+# 460 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_LittleGirlWithWishingStar_Text_0
-# 455 "data/maps/JusmailTown/scripts.pory"
+# 461 "data/maps/JusmailTown/scripts.pory"
 	goto_if_unset FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL, JusmailTown_EventScript_LittleGirlWithWishingStar_2
-# 467 "data/maps/JusmailTown/scripts.pory"
+# 473 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_3
-# 468 "data/maps/JusmailTown/scripts.pory"
+# 474 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 JusmailTown_EventScript_LittleGirlWithWishingStar_1:
-# 470 "data/maps/JusmailTown/scripts.pory"
+# 476 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_2:
-# 457 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_1
-# 458 "data/maps/JusmailTown/scripts.pory"
-	closemessage
-# 459 "data/maps/JusmailTown/scripts.pory"
-	speakername JusmailTown_EventScript_LittleGirlWithWishingStar_Text_0
-# 460 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_2
-# 461 "data/maps/JusmailTown/scripts.pory"
-	closemessage
-# 462 "data/maps/JusmailTown/scripts.pory"
-	giveitem ITEM_WISHING_STAR, 3
 # 463 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_1
+# 464 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 465 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_LittleGirlWithWishingStar_Text_0
+# 466 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_LittleGirlWithWishingStar_Text_2
+# 467 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 468 "data/maps/JusmailTown/scripts.pory"
+	giveitem ITEM_WISHING_STAR, 3
+# 469 "data/maps/JusmailTown/scripts.pory"
 	setflag FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL
 	goto JusmailTown_EventScript_LittleGirlWithWishingStar_1
 
 
 JusmailTown_EventScript_WishingWellSign::
-# 478 "data/maps/JusmailTown/scripts.pory"
+# 484 "data/maps/JusmailTown/scripts.pory"
 	lock
-# 479 "data/maps/JusmailTown/scripts.pory"
+# 485 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWellSign_Text_0
-# 480 "data/maps/JusmailTown/scripts.pory"
+# 486 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 481 "data/maps/JusmailTown/scripts.pory"
+# 487 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_WishingWellSign_Text_1
-# 482 "data/maps/JusmailTown/scripts.pory"
+# 488 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 483 "data/maps/JusmailTown/scripts.pory"
+# 489 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
 
 JusmailTown_EventScript_CyclingMan::
-# 490 "data/maps/JusmailTown/scripts.pory"
-	lock
-# 491 "data/maps/JusmailTown/scripts.pory"
-	faceplayer
-# 492 "data/maps/JusmailTown/scripts.pory"
-	speakername JusmailTown_EventScript_CyclingMan_Text_0
-# 495 "data/maps/JusmailTown/scripts.pory"
-	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_LOVESTRUCK_BIKER
 # 496 "data/maps/JusmailTown/scripts.pory"
+	lock
+# 497 "data/maps/JusmailTown/scripts.pory"
+	faceplayer
+# 498 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CyclingMan_Text_0
+# 501 "data/maps/JusmailTown/scripts.pory"
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_LOVESTRUCK_BIKER
+# 502 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq JusmailTown_EventScript_CyclingMan_2
-# 505 "data/maps/JusmailTown/scripts.pory"
+# 511 "data/maps/JusmailTown/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_LOVESTRUCK_BIKER
-# 506 "data/maps/JusmailTown/scripts.pory"
+# 512 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq JusmailTown_EventScript_CyclingMan_4
-# 516 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_CyclingMan_Text_3
-# 517 "data/maps/JusmailTown/scripts.pory"
-	closemessage
-# 519 "data/maps/JusmailTown/scripts.pory"
-	checkitem ITEM_HEART_SCALE
-# 520 "data/maps/JusmailTown/scripts.pory"
-	delay 30
 # 522 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingMan_Text_3
+# 523 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 525 "data/maps/JusmailTown/scripts.pory"
+	checkitem ITEM_HEART_SCALE
+# 526 "data/maps/JusmailTown/scripts.pory"
+	delay 30
+# 528 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq JusmailTown_EventScript_CyclingMan_7
-# 530 "data/maps/JusmailTown/scripts.pory"
+# 536 "data/maps/JusmailTown/scripts.pory"
 	applymovement 16, Common_Movement_ExclamationMark
-# 531 "data/maps/JusmailTown/scripts.pory"
-	waitmovement 0
-# 532 "data/maps/JusmailTown/scripts.pory"
-	delay 15
-# 533 "data/maps/JusmailTown/scripts.pory"
-	speakername JusmailTown_EventScript_CyclingMan_Text_0
-# 534 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_CyclingMan_Text_5
-# 535 "data/maps/JusmailTown/scripts.pory"
-	closemessage
 # 537 "data/maps/JusmailTown/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 538 "data/maps/JusmailTown/scripts.pory"
-	delay 30
-# 539 "data/maps/JusmailTown/scripts.pory"
-	clearflag FLAG_HIDE_CYCLING_WOMAN_JUSMAIL
-# 540 "data/maps/JusmailTown/scripts.pory"
-	addobject 17
-# 541 "data/maps/JusmailTown/scripts.pory"
-	delay 30
-# 542 "data/maps/JusmailTown/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
-# 543 "data/maps/JusmailTown/scripts.pory"
-	delay 20
-# 545 "data/maps/JusmailTown/scripts.pory"
-	applymovement 16, Common_Movement_Heart
-# 546 "data/maps/JusmailTown/scripts.pory"
 	waitmovement 0
-# 547 "data/maps/JusmailTown/scripts.pory"
+# 538 "data/maps/JusmailTown/scripts.pory"
 	delay 15
-# 548 "data/maps/JusmailTown/scripts.pory"
+# 539 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_CyclingMan_Text_0
+# 540 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingMan_Text_5
+# 541 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 543 "data/maps/JusmailTown/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 544 "data/maps/JusmailTown/scripts.pory"
+	delay 30
+# 545 "data/maps/JusmailTown/scripts.pory"
+	clearflag FLAG_HIDE_CYCLING_WOMAN_JUSMAIL
+# 546 "data/maps/JusmailTown/scripts.pory"
+	addobject 17
+# 547 "data/maps/JusmailTown/scripts.pory"
+	delay 30
+# 548 "data/maps/JusmailTown/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 549 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_CyclingMan_Text_6
-# 550 "data/maps/JusmailTown/scripts.pory"
-	closemessage
+	delay 20
 # 551 "data/maps/JusmailTown/scripts.pory"
-	giveitem ITEM_LOVE_BALL, 5
+	applymovement 16, Common_Movement_Heart
 # 552 "data/maps/JusmailTown/scripts.pory"
-	closemessage
+	waitmovement 0
 # 553 "data/maps/JusmailTown/scripts.pory"
-	delay 5
+	delay 15
 # 554 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_CyclingMan_Text_0
 # 555 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_CyclingMan_Text_7
+	msgbox JusmailTown_EventScript_CyclingMan_Text_6
 # 556 "data/maps/JusmailTown/scripts.pory"
 	closemessage
+# 557 "data/maps/JusmailTown/scripts.pory"
+	giveitem ITEM_LOVE_BALL, 5
 # 558 "data/maps/JusmailTown/scripts.pory"
-	delay 20
+	closemessage
 # 559 "data/maps/JusmailTown/scripts.pory"
+	delay 5
+# 560 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CyclingMan_Text_0
+# 561 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CyclingMan_Text_7
+# 562 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 564 "data/maps/JusmailTown/scripts.pory"
+	delay 20
+# 565 "data/maps/JusmailTown/scripts.pory"
 	completequest QUEST_LOVESTRUCK_BIKER
 	return
 
 JusmailTown_EventScript_CyclingMan_2:
-# 498 "data/maps/JusmailTown/scripts.pory"
+# 504 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_CyclingMan_Text_1
-# 499 "data/maps/JusmailTown/scripts.pory"
+# 505 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 500 "data/maps/JusmailTown/scripts.pory"
+# 506 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
 JusmailTown_EventScript_CyclingMan_4:
-# 508 "data/maps/JusmailTown/scripts.pory"
+# 514 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_CyclingMan_Text_2
-# 509 "data/maps/JusmailTown/scripts.pory"
+# 515 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 511 "data/maps/JusmailTown/scripts.pory"
+# 517 "data/maps/JusmailTown/scripts.pory"
 	delay 20
-# 512 "data/maps/JusmailTown/scripts.pory"
+# 518 "data/maps/JusmailTown/scripts.pory"
 	startquest QUEST_LOVESTRUCK_BIKER
 	return
 
 JusmailTown_EventScript_CyclingMan_7:
-# 524 "data/maps/JusmailTown/scripts.pory"
+# 530 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_CyclingMan_Text_0
-# 525 "data/maps/JusmailTown/scripts.pory"
+# 531 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_CyclingMan_Text_4
-# 526 "data/maps/JusmailTown/scripts.pory"
+# 532 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 	return
 
 
 JusmailTown_EventScript_CyclingWoman::
-# 566 "data/maps/JusmailTown/scripts.pory"
+# 572 "data/maps/JusmailTown/scripts.pory"
 	lock
-# 567 "data/maps/JusmailTown/scripts.pory"
+# 573 "data/maps/JusmailTown/scripts.pory"
 	faceplayer
-# 568 "data/maps/JusmailTown/scripts.pory"
+# 574 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_CyclingWoman_Text_0
-# 569 "data/maps/JusmailTown/scripts.pory"
+# 575 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_CyclingWoman_Text_1
-# 570 "data/maps/JusmailTown/scripts.pory"
+# 576 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 571 "data/maps/JusmailTown/scripts.pory"
+# 577 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
 
 JusmailTown_EventScript_Bounsweet::
-# 577 "data/maps/JusmailTown/scripts.pory"
-	lock
-# 578 "data/maps/JusmailTown/scripts.pory"
-	faceplayer
-# 579 "data/maps/JusmailTown/scripts.pory"
-	speakername JusmailTown_EventScript_Bounsweet_Text_0
-# 580 "data/maps/JusmailTown/scripts.pory"
-	playmoncry SPECIES_BOUNSWEET, CRY_MODE_NORMAL
-# 581 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_Bounsweet_Text_1
-# 582 "data/maps/JusmailTown/scripts.pory"
-	waitmoncry
 # 583 "data/maps/JusmailTown/scripts.pory"
-	closemessage
+	lock
 # 584 "data/maps/JusmailTown/scripts.pory"
+	faceplayer
+# 585 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_Bounsweet_Text_0
+# 586 "data/maps/JusmailTown/scripts.pory"
+	playmoncry SPECIES_BOUNSWEET, CRY_MODE_NORMAL
+# 587 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_Bounsweet_Text_1
+# 588 "data/maps/JusmailTown/scripts.pory"
+	waitmoncry
+# 589 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 590 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
 
 JusmailTown_EventScript_CoralOutfitBeauty::
-# 590 "data/maps/JusmailTown/scripts.pory"
+# 596 "data/maps/JusmailTown/scripts.pory"
 	lock
-# 591 "data/maps/JusmailTown/scripts.pory"
+# 597 "data/maps/JusmailTown/scripts.pory"
 	faceplayer
-# 592 "data/maps/JusmailTown/scripts.pory"
+# 598 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
-# 593 "data/maps/JusmailTown/scripts.pory"
+# 599 "data/maps/JusmailTown/scripts.pory"
 	checkoutfitflag OUTFIT_CORAL
-# 595 "data/maps/JusmailTown/scripts.pory"
+# 601 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq JusmailTown_EventScript_CoralOutfitBeauty_2
-# 645 "data/maps/JusmailTown/scripts.pory"
+# 651 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_7
-# 646 "data/maps/JusmailTown/scripts.pory"
+# 652 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 JusmailTown_EventScript_CoralOutfitBeauty_1:
-# 648 "data/maps/JusmailTown/scripts.pory"
+# 654 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
 JusmailTown_EventScript_CoralOutfitBeauty_2:
-# 597 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_1
-# 598 "data/maps/JusmailTown/scripts.pory"
-	closemessage
-# 599 "data/maps/JusmailTown/scripts.pory"
-	delay 5
-# 600 "data/maps/JusmailTown/scripts.pory"
-	showmoneybox 0, 0
-# 601 "data/maps/JusmailTown/scripts.pory"
-	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
-# 602 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_2, MSGBOX_YESNO
 # 603 "data/maps/JusmailTown/scripts.pory"
-	closemessage
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_1
 # 604 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 605 "data/maps/JusmailTown/scripts.pory"
+	delay 5
+# 606 "data/maps/JusmailTown/scripts.pory"
+	showmoneybox 0, 0
+# 607 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
+# 608 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_2, MSGBOX_YESNO
+# 609 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 610 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq JusmailTown_EventScript_CoralOutfitBeauty_5
-# 616 "data/maps/JusmailTown/scripts.pory"
+# 622 "data/maps/JusmailTown/scripts.pory"
 	checkmoney 1900
-# 617 "data/maps/JusmailTown/scripts.pory"
+# 623 "data/maps/JusmailTown/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq JusmailTown_EventScript_CoralOutfitBeauty_8
-# 628 "data/maps/JusmailTown/scripts.pory"
-	removemoney 1900
-# 629 "data/maps/JusmailTown/scripts.pory"
-	updatemoneybox
-# 630 "data/maps/JusmailTown/scripts.pory"
-	delay 5
-# 631 "data/maps/JusmailTown/scripts.pory"
-	unlockoutfit OUTFIT_CORAL
-# 632 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_5
-# 633 "data/maps/JusmailTown/scripts.pory"
-	delay 20
 # 634 "data/maps/JusmailTown/scripts.pory"
-	closemessage
+	removemoney 1900
 # 635 "data/maps/JusmailTown/scripts.pory"
-	hidemoneybox
+	updatemoneybox
 # 636 "data/maps/JusmailTown/scripts.pory"
 	delay 5
 # 637 "data/maps/JusmailTown/scripts.pory"
-	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
+	unlockoutfit OUTFIT_CORAL
 # 638 "data/maps/JusmailTown/scripts.pory"
-	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_6
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_5
 # 639 "data/maps/JusmailTown/scripts.pory"
+	delay 20
+# 640 "data/maps/JusmailTown/scripts.pory"
+	closemessage
+# 641 "data/maps/JusmailTown/scripts.pory"
+	hidemoneybox
+# 642 "data/maps/JusmailTown/scripts.pory"
+	delay 5
+# 643 "data/maps/JusmailTown/scripts.pory"
+	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
+# 644 "data/maps/JusmailTown/scripts.pory"
+	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_6
+# 645 "data/maps/JusmailTown/scripts.pory"
 	closemessage
 	goto JusmailTown_EventScript_CoralOutfitBeauty_1
 
 JusmailTown_EventScript_CoralOutfitBeauty_5:
-# 606 "data/maps/JusmailTown/scripts.pory"
+# 612 "data/maps/JusmailTown/scripts.pory"
 	hidemoneybox
-# 607 "data/maps/JusmailTown/scripts.pory"
+# 613 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
-# 608 "data/maps/JusmailTown/scripts.pory"
+# 614 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_3
-# 609 "data/maps/JusmailTown/scripts.pory"
+# 615 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 610 "data/maps/JusmailTown/scripts.pory"
+# 616 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
 JusmailTown_EventScript_CoralOutfitBeauty_8:
-# 619 "data/maps/JusmailTown/scripts.pory"
+# 625 "data/maps/JusmailTown/scripts.pory"
 	hidemoneybox
-# 620 "data/maps/JusmailTown/scripts.pory"
+# 626 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_CoralOutfitBeauty_Text_0
-# 621 "data/maps/JusmailTown/scripts.pory"
+# 627 "data/maps/JusmailTown/scripts.pory"
 	msgbox JusmailTown_EventScript_CoralOutfitBeauty_Text_4
-# 622 "data/maps/JusmailTown/scripts.pory"
+# 628 "data/maps/JusmailTown/scripts.pory"
 	closemessage
-# 623 "data/maps/JusmailTown/scripts.pory"
+# 629 "data/maps/JusmailTown/scripts.pory"
 	release
 	end
 
@@ -786,59 +786,59 @@ JusmailTown_EventScript_WishingWell_Text_3:
 	.string "...  ...  ...  ...!$"
 
 JusmailTown_EventScript_WishingWell_Text_4:
-# 427 "data/maps/JusmailTown/scripts.pory"
+# 433 "data/maps/JusmailTown/scripts.pory"
 	.string "A Poké ball appeared... containing a\n"
 	.string "Pokémon!$"
 
 JusmailTown_EventScript_WishingWell_Text_5:
-# 437 "data/maps/JusmailTown/scripts.pory"
+# 443 "data/maps/JusmailTown/scripts.pory"
 	.string "The Pokémon was sent to the PC.$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_0:
-# 454 "data/maps/JusmailTown/scripts.pory"
+# 460 "data/maps/JusmailTown/scripts.pory"
 	.string "Little Girl$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_1:
-# 457 "data/maps/JusmailTown/scripts.pory"
+# 463 "data/maps/JusmailTown/scripts.pory"
 	.string "See that broken well?\n"
 	.string "It's actually a Wishing Well, and it\l"
 	.string "grants wishes! Really!$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_2:
-# 460 "data/maps/JusmailTown/scripts.pory"
+# 466 "data/maps/JusmailTown/scripts.pory"
 	.string "Sometimes, my friends and me throw\n"
 	.string "Wishing Stars down the Wishing Well!\l"
 	.string "Here's a few for you!$"
 
 JusmailTown_EventScript_LittleGirlWithWishingStar_Text_3:
-# 467 "data/maps/JusmailTown/scripts.pory"
+# 473 "data/maps/JusmailTown/scripts.pory"
 	.string "Did you get anything cool from the\n"
 	.string "Wishing Well?$"
 
 JusmailTown_EventScript_WishingWellSign_Text_0:
-# 479 "data/maps/JusmailTown/scripts.pory"
+# 485 "data/maps/JusmailTown/scripts.pory"
 	.string "JUSMAIL TOWN WELL\n"
 	.string "More than meets the eye.$"
 
 JusmailTown_EventScript_WishingWellSign_Text_1:
-# 481 "data/maps/JusmailTown/scripts.pory"
+# 487 "data/maps/JusmailTown/scripts.pory"
 	.string "There's more scribbled on here...\p"
 	.string "Use Wishing Stars at the Wishing Well!\n"
 	.string "POKéMON are granted to those who seek\l"
 	.string "them!$"
 
 JusmailTown_EventScript_CyclingMan_Text_0:
-# 492 "data/maps/JusmailTown/scripts.pory"
+# 498 "data/maps/JusmailTown/scripts.pory"
 	.string "Cycling Man$"
 
 JusmailTown_EventScript_CyclingMan_Text_1:
-# 498 "data/maps/JusmailTown/scripts.pory"
+# 504 "data/maps/JusmailTown/scripts.pory"
 	.string "Thanks again for helping us get\n"
 	.string "together! Now we can go cycling\l"
 	.string "together every day!$"
 
 JusmailTown_EventScript_CyclingMan_Text_2:
-# 508 "data/maps/JusmailTown/scripts.pory"
+# 514 "data/maps/JusmailTown/scripts.pory"
 	.string "Sigh... SIGHHH...\p"
 	.string "Oh? Sorry, I've just been so down in the\n"
 	.string "dumps. I saw online that girls only like\l"
@@ -849,12 +849,12 @@ JusmailTown_EventScript_CyclingMan_Text_2:
 	.string "be in your debt!$"
 
 JusmailTown_EventScript_CyclingMan_Text_3:
-# 516 "data/maps/JusmailTown/scripts.pory"
+# 522 "data/maps/JusmailTown/scripts.pory"
 	.string "Hm? Oh, I remember you! Did you find a\n"
 	.string "{COLOR GREEN}Heart Scale{COLOR DARK_GRAY} for me?$"
 
 JusmailTown_EventScript_CyclingMan_Text_4:
-# 525 "data/maps/JusmailTown/scripts.pory"
+# 531 "data/maps/JusmailTown/scripts.pory"
 	.string "No? That's alright, I've been trying to\n"
 	.string "find one, but it takes forever.\p"
 	.string "I heard that wild Finneon can be found\n"
@@ -864,7 +864,7 @@ JusmailTown_EventScript_CyclingMan_Text_4:
 	.string "Scale{COLOR DARK_GRAY}!$"
 
 JusmailTown_EventScript_CyclingMan_Text_5:
-# 534 "data/maps/JusmailTown/scripts.pory"
+# 540 "data/maps/JusmailTown/scripts.pory"
 	.string "A Heart Scale! It's even more beautiful\n"
 	.string "than I imagined... she'll definitely like\l"
 	.string "this!\p"
@@ -872,73 +872,73 @@ JusmailTown_EventScript_CyclingMan_Text_5:
 	.string "right now! Stay right there!$"
 
 JusmailTown_EventScript_CyclingMan_Text_6:
-# 549 "data/maps/JusmailTown/scripts.pory"
+# 555 "data/maps/JusmailTown/scripts.pory"
 	.string "It totally worked, she loved it! Look\n"
 	.string "who's got a girlfriend now!\p"
 	.string "I'm so happy right now! Here, take this -\n"
 	.string "it's all thanks to you!$"
 
 JusmailTown_EventScript_CyclingMan_Text_7:
-# 555 "data/maps/JusmailTown/scripts.pory"
+# 561 "data/maps/JusmailTown/scripts.pory"
 	.string "Those are {COLOR GREEN}5 Love Balls{COLOR DARK_GRAY}. I'm so in love, I\n"
 	.string "ended up buying a bunch while I was out\l"
 	.string "shopping, ehehe!$"
 
 JusmailTown_EventScript_CyclingWoman_Text_0:
-# 568 "data/maps/JusmailTown/scripts.pory"
+# 574 "data/maps/JusmailTown/scripts.pory"
 	.string "Cycling Woman$"
 
 JusmailTown_EventScript_CyclingWoman_Text_1:
-# 569 "data/maps/JusmailTown/scripts.pory"
+# 575 "data/maps/JusmailTown/scripts.pory"
 	.string "Ahaha, he's so funny! Why'd he think he\n"
 	.string "needed a Heart Scale to ask me out? We\l"
 	.string "literally ride our bikes together every\l"
 	.string "day, of course I liked him back!$"
 
 JusmailTown_EventScript_Bounsweet_Text_0:
-# 579 "data/maps/JusmailTown/scripts.pory"
+# 585 "data/maps/JusmailTown/scripts.pory"
 	.string "Bounsweet$"
 
 JusmailTown_EventScript_Bounsweet_Text_1:
-# 581 "data/maps/JusmailTown/scripts.pory"
+# 587 "data/maps/JusmailTown/scripts.pory"
 	.string "Ee-hee!$"
 
 JusmailTown_EventScript_CoralOutfitBeauty_Text_0:
-# 592 "data/maps/JusmailTown/scripts.pory"
+# 598 "data/maps/JusmailTown/scripts.pory"
 	.string "Fashionista$"
 
 JusmailTown_EventScript_CoralOutfitBeauty_Text_1:
-# 597 "data/maps/JusmailTown/scripts.pory"
+# 603 "data/maps/JusmailTown/scripts.pory"
 	.string "My cute, pink Bounsweet has inspired me\n"
 	.string "to put together a new outfit!$"
 
 JusmailTown_EventScript_CoralOutfitBeauty_Text_2:
-# 602 "data/maps/JusmailTown/scripts.pory"
+# 608 "data/maps/JusmailTown/scripts.pory"
 	.string "You're a new Trainer, right? I'll cut you\n"
 	.string "a deal! I'll give you this {COLOR GREEN}Casual Coral\l"
 	.string "Outfit{COLOR DARK_GRAY} for just ¥1900. How about it?$"
 
 JusmailTown_EventScript_CoralOutfitBeauty_Text_3:
-# 608 "data/maps/JusmailTown/scripts.pory"
+# 614 "data/maps/JusmailTown/scripts.pory"
 	.string "No? Your loss!$"
 
 JusmailTown_EventScript_CoralOutfitBeauty_Text_4:
-# 621 "data/maps/JusmailTown/scripts.pory"
+# 627 "data/maps/JusmailTown/scripts.pory"
 	.string "Hey, you don't have the money for that!$"
 
 JusmailTown_EventScript_CoralOutfitBeauty_Text_5:
-# 632 "data/maps/JusmailTown/scripts.pory"
+# 638 "data/maps/JusmailTown/scripts.pory"
 	.string "The Casual Coral Outfit has been added\n"
 	.string "to the Outfit Box!$"
 
 JusmailTown_EventScript_CoralOutfitBeauty_Text_6:
-# 638 "data/maps/JusmailTown/scripts.pory"
+# 644 "data/maps/JusmailTown/scripts.pory"
 	.string "Thanks! I tried my best to make the\n"
 	.string "Casual Coral Outfit as comfortable as\l"
 	.string "possible.$"
 
 JusmailTown_EventScript_CoralOutfitBeauty_Text_7:
-# 645 "data/maps/JusmailTown/scripts.pory"
+# 651 "data/maps/JusmailTown/scripts.pory"
 	.string "I hope you like the Casual Coral Outfit!\n"
 	.string "I tried to make it as cute and\l"
 	.string "comfortable as possible, perfect for\l"

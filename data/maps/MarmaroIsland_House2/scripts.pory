@@ -93,6 +93,11 @@ script MarmaroIsland_House2_EventScript_FossilReviveMan
         {
             setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_AMAURA)
         }
+        elif(var(VAR_ITEM_ID) == ITEM_FOSSILIZED_BIRD || var(VAR_ITEM_ID) == ITEM_FOSSILIZED_DINO || var(VAR_ITEM_ID) == ITEM_FOSSILIZED_DRAKE || var(VAR_ITEM_ID) == ITEM_FOSSILIZED_FISH)
+        {
+            // these guys are an exception, just set to SPECIES_DRACOZOLT which will be detected later in the code and changed
+            setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_DRACOZOLT)
+        }
         else
         {
             setvar(VAR_WHICH_FOSSIL_REVIVED, 0) // NO FOSSIL CHOSEN
@@ -106,6 +111,207 @@ script MarmaroIsland_House2_EventScript_FossilReviveMan
             closemessage
             release
             end
+        }
+        elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_DRACOZOLT) // Galarian fossils, sigh
+        {
+            // Galarian fossils work weirdly!
+            // Bird + Drake = Dracozolt
+            // Bird + Dino = Arctozolt
+            // Fish + Drake = Dracovish
+            // Fish + Dino = Arctovish
+            // Paleontologist will request a second fossil. If this creates a working match, the corresponding
+            // fossil Pokémon will be restored!
+
+            copyvar(VAR_TEMP_B, VAR_ITEM_ID) // stores initially chosen "Fossilized ____" part in VAR_TEMP_B
+
+            bufferitemname(STR_VAR_1, VAR_ITEM_ID)
+            speakername("Paleontologist")
+            msgbox(format("Hmm... this seems to be an incomplete {STR_VAR_1}. I've read studies from the Galar Region on how to assemble these with other fossil fragments.\p Do you happen to have any {COLOR GREEN}Fossilized Parts{COLOR DARK_GRAY}?"))
+            closemessage
+
+            // choose matching "Fossilized ____" part (stored in VAR_ITEM_ID)
+            chooseitem(ITEMS_POCKET)
+            delay(5)
+
+            switch(var(VAR_ITEM_ID))
+            {
+                case 176: // chose fossilized bird item
+                    if(var(VAR_TEMP_B) == 178) // initially chose fossilized drake item
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_DRACOZOLT)
+                    }
+                    elif(var(VAR_TEMP_B) == 179) // initially chose fossilized dino item
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_ARCTOZOLT)
+                    }
+                    else
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, 0) // marks an incompatible fossil combination
+                    }
+                    break
+                case 177: // chose fossilized fish item
+                    if(var(VAR_TEMP_B) == 178) // initially chose fossilized drake item
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_DRACOVISH)
+                    }
+                    elif(var(VAR_TEMP_B) == 179) // initially chose fossilized dino item
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_ARCTOVISH)
+                    }
+                    else
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, 0) // marks an incompatible fossil combination
+                    }
+                    break
+                case 178: // chose fossilized drake item
+                    if(var(VAR_TEMP_B) == 176) // initially chose fossilized bird item
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_DRACOZOLT)
+                    }
+                    elif(var(VAR_TEMP_B) == 177) // initially chose fossilized fish item
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_DRACOVISH)
+                    }
+                    else
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, 0) // marks an incompatible fossil combination
+                    }
+                    break
+                case 179: // chose fossilized dino item
+                    if(var(VAR_TEMP_B) == 176) // initially chose fossilized bird item
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_ARCTOZOLT)
+                    }
+                    elif(var(VAR_TEMP_B) == 177) // initially chose fossilized fish item
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, SPECIES_ARCTOVISH)
+                    }
+                    else
+                    {
+                        setvar(VAR_WHICH_FOSSIL_REVIVED, 0) // marks an incompatible fossil combination
+                    }
+                    break
+                default:
+                    setvar(VAR_WHICH_FOSSIL_REVIVED, 0) // marks an incompatible fossil combination
+            }
+
+            if(var(VAR_WHICH_FOSSIL_REVIVED) == 0) // incompatible!
+            {
+                bufferitemname(STR_VAR_1, VAR_TEMP_B) // buffers name of initial chosen fossil
+                speakername("Paleontologist")
+                msgbox(format("Well, I'm not seeing any compatibility, and I can't revive this {STR_VAR_1} by itself.\p Bring me back a working combination of Fossilized Parts, or separate, complete Fossils."))
+                closemessage
+                release
+                end
+            }
+            else // working combination found!
+            {
+                showmoneybox(0, 0)
+
+                bufferspeciesname(STR_VAR_1, VAR_WHICH_FOSSIL_REVIVED)
+                speakername("Paleontologist")
+                msgbox(format("According to that research, this combination will produce a living {STR_VAR_1} specimen! It seems strange, but it's backed up by Galarian experts, so... let's give it a shot!\p This process will be pretty resource-intensive. Including labor and time, it should cost around ¥2000. Are you interested?"), MSGBOX_YESNO)
+                closemessage
+                delay(5)
+
+                // copying fossil revive code from below
+                if(var(VAR_RESULT) == 0) // not interested cause money
+                {
+                    hidemoneybox
+                    speakername("Paleontologist")
+                    msgbox(format("No? Well, come on back with other Fossils anytime."))
+                    closemessage
+                    release
+                    end
+                }
+                else
+                {
+                    checkmoney(2000)
+                    if(var(VAR_RESULT) == FALSE) // dont have 2000 dollars
+                    {
+                        hidemoneybox
+                        speakername("Paleontologist")
+                        msgbox(format("Hmm... It doesn't look like you've got the funds right now. Come back with a Fossil and ¥2000, and I'll restore it for you!"))
+                        closemessage
+                        release
+                        end
+                    }
+                    else
+                    {
+                        removeitem(VAR_TEMP_B) // removes initially chosen fossilized part
+                        removeitem(VAR_ITEM_ID) // removes second chosen fossilized part
+                        removemoney(2000)
+                        updatemoneybox
+                        delay(10)
+                        speakername("Paleontologist")
+                        msgbox(format("Alright, thanks! I'll just take those Fossilized Parts from you, then we'll get started!"))
+                        closemessage
+                        hidemoneybox
+                    }
+                }
+
+                fadescreen(FADE_TO_BLACK)
+                delay(60)
+                fadescreen(FADE_FROM_BLACK)
+                delay(20)
+
+                speakername("Paleontologist")
+                msgbox(format("Thanks for waiting. It was a complete success! Meet your new Pokémon!"))
+                closemessage
+                delay(5)
+
+                // 1% chance that restored Pokémon is shiny!
+                randompercentage(1)
+                if(var(VAR_RESULT) == TRUE)
+                {
+                    setflag(FLAG_FORCE_SHINY)
+                }
+
+                // random number generate nature number and gender
+                random(3) // 0-2, for nature number
+                copyvar(VAR_TEMP_0, VAR_RESULT)
+                random(2) // 0-1, for gender
+                copyvar(VAR_TEMP_1, VAR_RESULT)
+
+                random(3) // generates number 0-2 and stores in VAR_RESULT, used in switches below
+
+                // give species revived! add chance of special moves
+                if(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_DRACOZOLT)
+                {
+                    switch(var(VAR_RESULT)) {
+                        case 0: givemon(SPECIES_DRACOZOLT, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_THUNDER_SHOCK, MOVE_CHARGE, MOVE_AERIAL_ACE)
+                        case 1: givemon(SPECIES_DRACOZOLT, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_QUICK_ATTACK, MOVE_THUNDER_SHOCK, MOVE_CHARGE, MOVE_AERIAL_ACE)
+                        case 2: givemon(SPECIES_DRACOZOLT, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_AERIAL_ACE)
+                    }
+                }
+                elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_ARCTOZOLT)
+                {
+                    switch(var(VAR_RESULT)) {
+                        case 0: givemon(SPECIES_ARCTOZOLT, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_POWDER_SNOW, MOVE_THUNDER_SHOCK, MOVE_CHARGE, MOVE_ECHOED_VOICE)
+                        case 1: givemon(SPECIES_ARCTOZOLT, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_ICE_SHARD, MOVE_THUNDER_SHOCK, MOVE_CHARGE, MOVE_ECHOED_VOICE)
+                        case 2: givemon(SPECIES_ARCTOZOLT, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_POWDER_SNOW, MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_ECHOED_VOICE)
+                    }
+                }
+                elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_DRACOVISH)
+                {
+                    switch(var(VAR_RESULT)) {
+                        case 0: givemon(SPECIES_DRACOVISH, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_WATER_GUN, MOVE_PROTECT, MOVE_BRUTAL_SWING)
+                        case 1: givemon(SPECIES_DRACOVISH, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_LOW_KICK, MOVE_WATER_GUN, MOVE_PROTECT, MOVE_BRUTAL_SWING)
+                        case 2: givemon(SPECIES_DRACOVISH, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_TACKLE, MOVE_WATER_GUN, MOVE_SCARY_FACE, MOVE_BRUTAL_SWING)
+                    }
+                }
+                elif(var(VAR_WHICH_FOSSIL_REVIVED) == SPECIES_ARCTOVISH)
+                {
+                    switch(var(VAR_RESULT)) {
+                        case 0: givemon(SPECIES_ARCTOVISH, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_POWDER_SNOW, MOVE_WATER_GUN, MOVE_PROTECT, MOVE_ICY_WIND)
+                        case 1: givemon(SPECIES_ARCTOVISH, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_POWDER_SNOW, MOVE_CLAMP, MOVE_PROTECT, MOVE_ICY_WIND)
+                        case 2: givemon(SPECIES_ARCTOVISH, 10, ITEM_NONE, ITEM_POKE_BALL, NUM_NATURES, VAR_TEMP_0, VAR_TEMP_1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_POWDER_SNOW, MOVE_WATER_GUN, MOVE_SCARY_FACE, MOVE_ICY_WIND)
+                    }
+                }
+                closemessage
+
+                clearflag(FLAG_FORCE_SHINY)
+            }
         }
         else
         {

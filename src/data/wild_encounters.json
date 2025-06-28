@@ -11733,7 +11733,7 @@
               {
                 "min_level": 4,
                 "max_level": 7,
-                "species": "SPECIES_MAREEP"
+                "species": "SPECIES_NINCADA"
               },
               {
                 "min_level": 4,
@@ -11743,7 +11743,7 @@
               {
                 "min_level": 4,
                 "max_level": 7,
-                "species": "SPECIES_NINCADA"
+                "species": "SPECIES_COMFEY"
               },
               {
                 "min_level": 4,
@@ -11802,7 +11802,7 @@
               {
                 "min_level": 4,
                 "max_level": 7,
-                "species": "SPECIES_MAREEP"
+                "species": "SPECIES_NINCADA"
               },
               {
                 "min_level": 4,
@@ -11812,7 +11812,7 @@
               {
                 "min_level": 4,
                 "max_level": 7,
-                "species": "SPECIES_NINCADA"
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 4,
@@ -13804,7 +13804,7 @@
               {
                 "min_level": 21,
                 "max_level": 23,
-                "species": "SPECIES_ELECTRIKE"
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 21,
@@ -13873,7 +13873,7 @@
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_ELECTRIKE"
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 22,
@@ -13942,7 +13942,7 @@
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_KIRLIA"
+                "species": "SPECIES_COMFEY"
               },
               {
                 "min_level": 21,
@@ -14280,12 +14280,12 @@
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_DREEPY"
               },
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_DREEPY"
               }
             ]
           },
@@ -14434,12 +14434,12 @@
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_DREEPY"
               },
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_DREEPY"
               }
             ]
           },
@@ -17275,7 +17275,7 @@
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_MANECTRIC"
+                "species": "SPECIES_BOLTUND"
               },
               {
                 "min_level": 35,
@@ -17344,7 +17344,7 @@
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_MANECTRIC"
+                "species": "SPECIES_BOLTUND"
               },
               {
                 "min_level": 35,
@@ -18081,12 +18081,12 @@
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_ELECTRIKE"
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_ELECTRIKE"
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 10,
@@ -18245,12 +18245,12 @@
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_JANGMO_O"
               },
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_JANGMO_O"
               }
             ]
           },
@@ -18553,12 +18553,12 @@
               {
                 "min_level": 11,
                 "max_level": 13,
-                "species": "SPECIES_TROPIUS"
+                "species": "SPECIES_DREEPY"
               },
               {
                 "min_level": 11,
                 "max_level": 13,
-                "species": "SPECIES_TROPIUS"
+                "species": "SPECIES_DREEPY"
               }
             ]
           },
@@ -19771,7 +19771,7 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_PAWMO"
+                "species": "SPECIES_COMFEY"
               },
               {
                 "min_level": 25,

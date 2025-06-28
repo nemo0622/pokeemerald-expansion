@@ -2356,6 +2356,7 @@ u8 DoBattlerEndTurnEffects(void)
                   && ability != ABILITY_SAND_FORCE
                   && ability != ABILITY_SAND_RUSH
                   && ability != ABILITY_OVERCOAT
+                  && ability != ABILITY_SAND_STREAM
                   && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ROCK)
                   && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GROUND)
                   && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_STEEL)
@@ -2385,6 +2386,7 @@ u8 DoBattlerEndTurnEffects(void)
                   && ability != ABILITY_SNOW_CLOAK
                   && ability != ABILITY_OVERCOAT
                   && ability != ABILITY_ICE_BODY
+                  && ability != ABILITY_SNOW_WARNING
                   && !(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
                   && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES)
             {

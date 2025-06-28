@@ -687,6 +687,10 @@ static const u32 gItemClawFossilGfx[] = INCBIN_U32("graphics/mining_minigame/ite
 static const u32 gItemDomeFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/dome_fossil.4bpp.lz");
 static const u32 gItemHelixFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/helix_fossil.4bpp.lz");
 static const u32 gItemRootFossilGfx[] = INCBIN_U32("graphics/mining_minigame/items/root_fossil.4bpp.lz");
+static const u32 gItemFossilizedBirdGfx[] = INCBIN_U32("graphics/mining_minigame/items/fossilized_bird.4bpp.lz");
+static const u32 gItemFossilizedDinoGfx[] = INCBIN_U32("graphics/mining_minigame/items/fossilized_dino.4bpp.lz");
+static const u32 gItemFossilizedDrakeGfx[] = INCBIN_U32("graphics/mining_minigame/items/fossilized_drake.4bpp.lz");
+static const u32 gItemFossilizedFishGfx[] = INCBIN_U32("graphics/mining_minigame/items/fossilized_fish.4bpp.lz");
 static const u16 gItemFossilPal[] = INCBIN_U16("graphics/mining_minigame/items/fossil.gbapal");
 
 // Stone SpriteSheets and SpritePalettes
@@ -1025,6 +1029,34 @@ static const struct CompressedSpriteSheet sSpriteSheet_ItemRootFossil =
     gItemRootFossilGfx,
     64 * 64 / 2,
     MINING_TAG_ITEM_ROOT_FOSSIL,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_ItemFossilizedBird =
+{
+    gItemFossilizedBirdGfx,
+    64 * 64 / 2,
+    MINING_TAG_ITEM_FOSSILIZED_BIRD,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_ItemFossilizedDino =
+{
+    gItemFossilizedBirdGfx,
+    64 * 64 / 2,
+    MINING_TAG_ITEM_FOSSILIZED_DINO,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_ItemFossilizedDrake =
+{
+    gItemFossilizedBirdGfx,
+    64 * 64 / 2,
+    MINING_TAG_ITEM_FOSSILIZED_DRAKE,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_ItemFossilizedFish =
+{
+    gItemFossilizedBirdGfx,
+    64 * 64 / 2,
+    MINING_TAG_ITEM_FOSSILIZED_FISH,
 };
 
 static const struct SpriteTemplate gSpriteStone1x4 =
@@ -1510,6 +1542,50 @@ static const struct MiningItem MiningItemList[] =
         .totalTiles = 15,
         .tag = MINING_TAG_ITEM_ROOT_FOSSIL,
         .sheet = &sSpriteSheet_ItemRootFossil,
+        .paldata = gItemFossilPal,
+    },
+    [MININGID_FOSSILIZED_BIRD] =
+    {
+        .miningItemId = MININGID_FOSSILIZED_BIRD,
+        .bagItemId = ITEM_FOSSILIZED_BIRD,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 13,
+        .tag = MINING_TAG_ITEM_FOSSILIZED_BIRD,
+        .sheet = &sSpriteSheet_ItemFossilizedBird,
+        .paldata = gItemFossilPal,
+    },
+    [MININGID_FOSSILIZED_DINO] =
+    {
+        .miningItemId = MININGID_FOSSILIZED_DINO,
+        .bagItemId = ITEM_FOSSILIZED_DINO,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 13,
+        .tag = MINING_TAG_ITEM_FOSSILIZED_DINO,
+        .sheet = &sSpriteSheet_ItemFossilizedDino,
+        .paldata = gItemFossilPal,
+    },
+    [MININGID_FOSSILIZED_DRAKE] =
+    {
+        .miningItemId = MININGID_FOSSILIZED_DRAKE,
+        .bagItemId = ITEM_FOSSILIZED_DRAKE,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 13,
+        .tag = MINING_TAG_ITEM_FOSSILIZED_DRAKE,
+        .sheet = &sSpriteSheet_ItemFossilizedDrake,
+        .paldata = gItemFossilPal,
+    },
+    [MININGID_FOSSILIZED_FISH] =
+    {
+        .miningItemId = MININGID_FOSSILIZED_FISH,
+        .bagItemId = ITEM_FOSSILIZED_FISH,
+        .top = 3,
+        .left = 3,
+        .totalTiles = 13,
+        .tag = MINING_TAG_ITEM_FOSSILIZED_FISH,
+        .sheet = &sSpriteSheet_ItemFossilizedFish,
         .paldata = gItemFossilPal,
     },
 };
@@ -2051,6 +2127,12 @@ static const u32 ItemRarityTable_Uncommon[] =
     MININGID_STAR_PIECE,
     MININGID_REVIVE,
     MININGID_REVIVE_MAX,
+    MININGID_WISHING_STAR,
+    MININGID_STAR_PIECE,
+    MININGID_FOSSILIZED_BIRD,
+    MININGID_FOSSILIZED_DINO,
+    MININGID_FOSSILIZED_DRAKE,
+    MININGID_FOSSILIZED_FISH,
 };
 
 static const u32 ItemRarityTable_Rare[] =

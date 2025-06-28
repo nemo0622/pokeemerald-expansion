@@ -3524,7 +3524,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 100,
         .baseSpAttack  = 82,
         .baseSpDefense = 110,
-        .types = MON_TYPES(TYPE_FAIRY),
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_GRASS),
         .catchRate = 60,
         .expYield = 170,
         .evYield_SpDefense = 2,
@@ -3544,10 +3544,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 1,
         .weight = 3,
         .description = COMPOUND_STRING(
-            "It attaches flowers to its nutritious\n"
-            "vine. Baths prepared with the flowers\n"
-            "from its vine have a relaxing effect, so\n"
-            "this Pokémon is a hit with many people."),
+            "Thin, nutritious vines grow from its body.\n" // new desc 6/27/25
+            "It picks flowers and attaches them to its\n"
+            "body, amplifying their sweet, soothing\n"
+            "aroma. They excel in healthcare settings."),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,
@@ -4027,12 +4027,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_TYPE_NULL
     [SPECIES_TYPE_NULL] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 95,
-        .baseDefense   = 95,
-        .baseSpeed     = 59,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 95,
+        .baseHP        = 85,
+        .baseAttack    = 85,
+        .baseDefense   = 85,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 3,
         .expYield = 107,
@@ -4051,10 +4051,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 19,
         .weight = 1205,
         .description = COMPOUND_STRING(
-            "Due to the danger that this synthetic\n"
-            "Pokémon may go on a rampage, it wears a\n"
-            "control mask to restrain its capabilities.\n"
-            "It has some hidden special power."),
+            "It was created in an unethical lab by\n" // new desc 6/26/25
+            "Alolan researchers. Some have been imported\n"
+            "to Ilios by Team Chimera, forcing them to\n"
+            "battle to help their nefarious plans."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 326,

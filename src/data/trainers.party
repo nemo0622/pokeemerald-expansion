@@ -651,7 +651,7 @@ AI: Check Bad Move / Check Viability
 Party Size: 2
 Pool Rules: Basic
 
-Electrike
+Yamper
 Level: 13
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -2324,7 +2324,7 @@ Finizen
 Level: 22
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-Bagon
+Dreepy
 Level: 22
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
@@ -4900,7 +4900,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Electrike
+Yamper
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Quick Attack
@@ -4971,7 +4971,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Electrike
+Yamper
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5992,7 +5992,7 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
+Boltund
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6005,11 +6005,11 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
+Boltund
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Manectric
+Boltund
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6035,7 +6035,7 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
+Boltund
 Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -6056,7 +6056,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Odor Sleuth
 - Fury Swipes
 
-Manectric
+Boltund
 Level: 36
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Quick Attack
@@ -6081,7 +6081,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Odor Sleuth
 - Fury Swipes
 
-Manectric
+Boltund
 Level: 39
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Quick Attack
@@ -6113,7 +6113,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Confusion
 - Psych Up
 
-Manectric
+Boltund
 Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Quick Attack
@@ -6411,7 +6411,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Self Destruct
 - Shock Wave
 
-Electrike
+Yamper
 Level: 20
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Shock Wave
@@ -6427,7 +6427,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Thunder Wave
 - Sonic Boom
 
-Manectric @ Sitrus Berry
+Boltund @ Sitrus Berry
 Level: 24
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Quick Attack
@@ -7773,7 +7773,7 @@ Aron
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Electrike
+Yamper
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8496,7 +8496,7 @@ Zigzagoon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Electrike
+Yamper
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10775,7 +10775,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
+Boltund
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10810,7 +10810,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Manectric
+Boltund
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
@@ -12180,7 +12180,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Manectric
+Boltund
 Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunder
@@ -13277,7 +13277,7 @@ Delcatty
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Manectric
+Boltund
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14573,7 +14573,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Electrike
+Yamper
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14800,7 +14800,7 @@ Aron
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Electrike
+Yamper
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -15188,7 +15188,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Manectric
+Boltund
 Level: 24
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -15196,7 +15196,7 @@ Swellow
 Level: 24
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Manectric
+Boltund
 Level: 24
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -15487,7 +15487,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
+Boltund
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -15531,7 +15531,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Manectric
+Boltund
 Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunder
@@ -15597,7 +15597,7 @@ Zigzagoon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Electrike
+Yamper
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -15622,7 +15622,7 @@ Shroomish
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Electrike
+Yamper
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -16116,7 +16116,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Rain Dance
 
-Manectric @ Sitrus Berry
+Boltund @ Sitrus Berry
 Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
@@ -16166,7 +16166,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Rain Dance
 
-Manectric @ Sitrus Berry
+Boltund @ Sitrus Berry
 Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
@@ -16216,7 +16216,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Rain Dance
 
-Manectric @ Sitrus Berry
+Boltund @ Sitrus Berry
 Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
@@ -16274,7 +16274,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Rain Dance
 
-Manectric @ Sitrus Berry
+Boltund @ Sitrus Berry
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
@@ -17956,11 +17956,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Electrike
+Yamper
 Level: 35
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Electrike
+Yamper
 Level: 35
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -17977,11 +17977,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Electrike
+Yamper
 Level: 37
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Manectric
+Boltund
 Level: 37
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -17998,11 +17998,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
+Boltund
 Level: 39
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Manectric
+Boltund
 Level: 39
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -18019,11 +18019,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
+Boltund
 Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Manectric
+Boltund
 Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 

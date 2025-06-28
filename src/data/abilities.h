@@ -355,7 +355,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SAND_STREAM] =
     {
         .name = _("Sand Stream"),
-        .description = COMPOUND_STRING("Summons a sandstorm."),
+        .description = COMPOUND_STRING("Summons a sandstorm. Immune."),
         .aiRating = 9,
     },
 
@@ -882,9 +882,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Snow Warning"),
     #if B_SNOW_WARNING >= GEN_9
-        .description = COMPOUND_STRING("Summons snow in battle."),
+        .description = COMPOUND_STRING("Summons snow in battle. Immune."),
     #else
-        .description = COMPOUND_STRING("Summons hail in battle."),
+        .description = COMPOUND_STRING("Summons hail in battle. Immune."),
     #endif
         .aiRating = 8,
     },

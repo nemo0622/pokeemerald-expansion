@@ -157,16 +157,16 @@ const u8 gSalazzlePokedexText[] = _(
     "gas is filled with pheromones.");
 
 const u8 gSilvallyNormalPokedexText[] = _(
-    "Its trust in its partner awakens it.\n"
-    "This Pokémon is capable of changing its\n"
-    "type by equipping special memories, a\n"
-    "trait that is well displayed in battle.");
+    "Love and trust in its Trainer allows\n"
+    "it to shed their heavy helmet. A power\n"
+    "called the RKS System allows it to\n"
+    "change types, defending its Trainer.");
 
 const u8 gSilvallyMemoryPokedexText[] = _(
-    "Upon awakening, its RKS System is\n"
-    "activated. By employing specific\n"
-    "memories, this Pokémon can adapt its\n"
-    "type to confound its enemies.");
+    "Silvally's RKS System enables it to\n"
+    "change types based on a corresponding\n"
+    "Memory item. It is fiercely loyal to\n"
+    "the Trainer who raised it.");
 
 const u8 gMiniorMeteorPokedexText[] = _(
     "Originally making its home in the ozone\n"

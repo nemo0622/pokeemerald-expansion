@@ -66,13 +66,31 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - POKéDEX CHANGES:
-    - Replace Bagon, Shelgon, and Salamance with Dreepy, Drakloak, and Dragapult (Nuukiie's sprites, so fucking CUTE!)
-    - Replace Electrike and Manectric with Yamper and Boltund (commissions)
-    - TWO PATHS TO 450 TOTAL:
-        - Add Type:Null, Silvally, and Talonflame line (SageDeoxys has good sprites for most of these!)
-        - Add Galar Fossils (4 Pokémon, must commission!) plus Carbink to get to 450
-    - REMEMBER: use LuigiTKO's Party Icon sprites! Super cute and impressive :)
+    - :check: Replace Electrike line with Yamper line
+    - :check: Add Galarian Fossils + revival method
+    - :check" Add Type: Null and Silvally (SageDeoxys sprites)
+    - :check: Add Comfey (nuuk's sprite) to get to 427 Pokémon total (found in Péntepetal prolly)
+    - :check: Replace Bagon, Shelgon, and Salamance with Dreepy, Drakloak, and Dragapult (Nuukiie's sprites, so fucking CUTE!)
+- :check: Use LuigiTKO's Party Icons to make new follower sprites for Quaxly and the other Paldean starters
+    - off the top of my head, quaxly and sprigatito are in most dire need for improvement
+    - Ogerpon too omfg! LMFAO
 
+- Continue Mapping and NPC development
+    - Sea of Vulcai, and on to the Fresco Isles
+    - FRESCO ISLES: Leave Gym Leader unfinished until after Muses gym leaders rework!
+    - ALSO: Add Sofos City quest of escaped Chimera scientist to earn a Type: Null, and an abandoned Team Chimera lab in the Fresco Isles where they used to work containing Silvally's Memory items
+- Add Signposts to every new route and town
+- MUSES GYM LEADER REWORK
+    - Gym 1: Polyhymnia, Muse of Hymns and Agriculture (replaces Deo - logic: agriculture. lol)
+    - Gym 2: Urania, Muse of Stone and Sky (replaces Mattaios - logic: most "worldly/practical" of the muses)
+    - Gym 3: Cleo, Muse of the Ancient Past (replaces Sabella - logic: sees into past, talks to spirits)
+    - Gym 4: Terpsichore, Muse of Dance (replaces Meneswo - logic: dance is highly synchronized)
+    - Gym 5: Euterpe, Muse of Entertainment (replaces Thyrsus - logic: party animal! lol)
+    - Gym 6: Thalia and Melpomene, Twin Muses of Comedy and Tragedy (Fresco Isles leaders; twins who always fight and hate each other, claiming opposite islands of the Fresco Isles. Player must reconcile them via Thalia's quest to unlock the Gym)
+    - Gym 7: Erato, Muse of Poetry (Palati City leader; "silver fox" older lady)
+    - Gym 8: Kalliope, Muse of Beauty (Areios Hideout leader; also the LEADER OF TEAM CHIMERA! Seems innocent and beautiful, but is actually evil and selfish and stuff)
+        - After defeating Gym 8, Kalliope abandons the Region, and Team Chimera is left without a leader
+        - Remember to rework Team Chimera's dialogue to indicate this! Especially the dialogue of Myrrini Island's event!
 - Implement Biv's Fishing Minigame
     - Also create options menu toggle for it
     - TREASURE IDEAS:
@@ -81,9 +99,6 @@ MAJOR TODOS:
 - Add new Emotes using Reakain's Emote spritesheet (so cute!)
     - Go through major story events and add relevant emotes
     - Also try to add them to other things (ex: crying Emote when DexNav Pokémon disappears)
-- Continue Mapping and NPC development
-    - Sea of Vulcai, and on to the Fresco Isles
-- Add Signposts to every new route and town
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas:

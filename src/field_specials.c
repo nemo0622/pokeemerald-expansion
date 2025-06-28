@@ -7192,8 +7192,8 @@ u8 CheckZooDonationValidity(u16 species)
                     break;
             }
             break;
-        case SPECIES_ELECTRIKE:
-        case SPECIES_MANECTRIC:
+        case SPECIES_YAMPER:
+        case SPECIES_BOLTUND:
             switch(donationSlotId)
             {
                 case 1:
@@ -7657,20 +7657,29 @@ u8 CheckZooDonationValidity(u16 species)
                     break;
             }
             break;
-        case SPECIES_BAGON:
-        case SPECIES_SHELGON:
-        case SPECIES_SALAMENCE:
+        case SPECIES_DREEPY:
+        case SPECIES_DRAKLOAK:
+        case SPECIES_DRAGAPULT:
             switch(donationSlotId)
             {
-                case 18:
-                case 19:
-                case 21:
-                case 22:
-                case 23:
-                case 24:
-                case 25:
-                case 39:
-                case 40:
+                case 5:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 37:
+                case 38:
+                case 43:
+                case 44:
                     return 1;
                     break;
                 default:
@@ -9005,6 +9014,26 @@ u8 CheckZooDonationValidity(u16 species)
                     break;
             }
             break;
+        case SPECIES_COMFEY:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 16:
+                case 17:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
         case SPECIES_UNOWN:
         case SPECIES_UNOWN_B:
         case SPECIES_UNOWN_C:
@@ -9088,6 +9117,77 @@ u8 CheckZooDonationValidity(u16 species)
                 case 42:
                 case 45:
                 case 46:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_DRACOZOLT:
+            switch(donationSlotId)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 20:
+                case 41:
+                case 42:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ARCTOZOLT:
+            switch(donationSlotId)
+            {
+                case 20:
+                case 26:
+                case 27:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_DRACOVISH:
+            switch(donationSlotId)
+            {
+                case 14:
+                case 15:
+                case 20:
+                case 30:
+                case 31:
+                case 32:
+                case 33:
+                case 34:
+                case 43:
+                case 44:
+                    return 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+            break;
+        case SPECIES_ARCTOVISH:
+            switch(donationSlotId)
+            {
+                case 14:
+                case 15:
+                case 20:
+                case 30:
+                case 31:
+                case 43:
+                case 44:
                     return 1;
                     break;
                 default:

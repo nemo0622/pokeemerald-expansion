@@ -1920,7 +1920,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BALL_FETCH, ABILITY_NONE, ABILITY_RATTLED },
+        .abilities = { ABILITY_BALL_FETCH, ABILITY_COMPETITIVE, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Yamper"),
         .cryId = CRY_YAMPER,
@@ -1967,8 +1967,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_BOLTUND] =
     {
-        .baseHP        = 69,
-        .baseAttack    = 90,
+        .baseHP        = 74,
+        .baseAttack    = 95,
         .baseDefense   = 60,
         .baseSpeed     = 121,
         .baseSpAttack  = 90,
@@ -1982,7 +1982,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STRONG_JAW, ABILITY_NONE, ABILITY_COMPETITIVE },
+        .abilities = { ABILITY_STRONG_JAW, ABILITY_COMPETITIVE, ABILITY_TOUGH_CLAWS },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Boltund"),
         .cryId = CRY_BOLTUND,
@@ -5653,19 +5653,19 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_HUSTLE, ABILITY_SAND_RUSH },
+        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_STRONG_JAW, ABILITY_SAND_STREAM },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Dracozolt"),
         .cryId = CRY_DRACOZOLT,
         .natDexNum = NATIONAL_DEX_DRACOZOLT,
-        .categoryName = _("Fossil"),
+        .categoryName = _("Anomaly"),
         .height = 18,
         .weight = 1900,
-        .description = COMPOUND_STRING(
-            "In ancient times, it was unbeatable thanks\n"
-            "to its powerful lower body, but it went\n"
-            "extinct anyway after it depleted all its\n"
-            "plant-based food sources."),
+        .description = COMPOUND_STRING( // new desc 6/26/25
+            "Revived based on incorrect studies from\n"
+            "the Galar Region. Their thick legs keep\n"
+            "its mismatched body stable, allowing it to\n"
+            "roam between plants and bark to eat."),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,
@@ -5715,18 +5715,19 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_STATIC, ABILITY_SLUSH_RUSH },
+        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_STRONG_JAW, ABILITY_SNOW_WARNING },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Arctozolt"),
         .cryId = CRY_ARCTOZOLT,
         .natDexNum = NATIONAL_DEX_ARCTOZOLT,
-        .categoryName = _("Fossil"),
+        .categoryName = _("Anomaly"),
         .height = 23,
         .weight = 1500,
-        .description = COMPOUND_STRING(
-            "The shaking of its freezing upper half is\n"
-            "what generates its electricity. It has a\n"
-            "hard time walking around."),
+        .description = COMPOUND_STRING( // new desc 6/26/25
+            "Its ends are mismatched due to an incorrect\n"
+            "guess by Galarin paleontologists. Its top\n"
+            "half is always shaking, generating an\n"
+            "electric charge."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 342,
@@ -5776,19 +5777,19 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_WATER_ABSORB, ABILITY_STRONG_JAW, ABILITY_SAND_RUSH },
+        .abilities = { ABILITY_WATER_ABSORB, ABILITY_STRONG_JAW, ABILITY_DRIZZLE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Dracovish"),
         .cryId = CRY_DRACOVISH,
         .natDexNum = NATIONAL_DEX_DRACOVISH,
-        .categoryName = _("Fossil"),
+        .categoryName = _("Anomaly"),
         .height = 23,
         .weight = 2150,
-        .description = COMPOUND_STRING(
-            "Powerful legs and jaws made it the apex\n"
-            "predator of its time. Its own overhunting\n"
-            "of its prey was what drove it to\n"
-            "extinction."),
+        .description = COMPOUND_STRING( // new desc 6/26/25
+            "Revived based on incorrect studies from\n"
+            "the Galar Region. It rarely leaves the\n"
+            "water due to its gills, simply using its\n"
+            "legs to wander the ocean floor."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 342,
@@ -5838,19 +5839,19 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_WATER_ABSORB, ABILITY_ICE_BODY, ABILITY_SLUSH_RUSH },
+        .abilities = { ABILITY_WATER_ABSORB, ABILITY_STRONG_JAW, ABILITY_SNOW_WARNING },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Arctovish"),
         .cryId = CRY_ARCTOVISH,
         .natDexNum = NATIONAL_DEX_ARCTOVISH,
-        .categoryName = _("Fossil"),
+        .categoryName = _("Anomaly"),
         .height = 20,
         .weight = 1750,
         .description = COMPOUND_STRING(
-            "Though it's able to capture prey by\n"
-            "freezing its surroundings, it has trouble\n"
-            "eating the prey afterward because its\n"
-            "mouth is on top of its head."),
+            "The Galarian researchers who proposed this\n" // new desc 6/26/25
+            "fossil assembly had its head upside-down.\n"
+            "Trainers must feed it by hand, as it\n"
+            "struggles to eat on its own."),
         .pokemonScale = 261,
         .pokemonOffset = 1,
         .trainerScale = 334,
@@ -6094,10 +6095,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 5,
         .weight = 20,
         .description = COMPOUND_STRING(
-            "After being reborn as a ghost Pokémon,\n"
-            "Dreepy wanders the areas it used to\n"
-            "inhabit back when it was alive in\n"
-            "prehistoric seas."),
+            "Dreepy are spirits of ancient Pokémon\n" // new desc 6/27/25
+            "who hunted along the water's edge.\n"
+            "They tend to live in colonies with\n"
+            "protective Drakloak and Dragapult."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -6128,13 +6129,13 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sDreepyLevelUpLearnset,
         .teachableLearnset = sDreepyTeachableLearnset,
         .eggMoveLearnset = sDreepyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_DRAKLOAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_DRAKLOAK}),
     },
 
     [SPECIES_DRAKLOAK] =
     {
         .baseHP        = 68,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 50,
         .baseSpeed     = 102,
         .baseSpAttack  = 60,
@@ -6157,9 +6158,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 14,
         .weight = 110,
         .description = COMPOUND_STRING(
-            "It's capable of flying faster than 120 mph.\n"
-            "It battles alongside Dreepy and dotes\n"
-            "on them until they successfully evolve."),
+            "It can fly over 120 mph, outpacing far\n" // new desc 6/27/25
+            "stronger opponents. Drakloak have close\n"
+            "relationships with their Dreepy, which\n"
+            "they play with and help care for."),
         .pokemonScale = 265,
         .pokemonOffset = 2,
         .trainerScale = 262,
@@ -6218,10 +6220,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 30,
         .weight = 500,
         .description = COMPOUND_STRING(
-            "When it isn't battling, it keeps Dreepy\n"
-            "in the holes on its horns. Once a fight\n"
-            "starts, it launches the Dreepy like\n"
-            "supersonic missiles."),
+            "They silently soar through the sky,\n" // new desc 6/27/25
+            "crossing their native lakes in mere\n"
+            "seconds. They reside at the head of\n"
+            "Dreepy colonies, protecting them fiercely."),
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,

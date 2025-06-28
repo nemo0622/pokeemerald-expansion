@@ -1434,7 +1434,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 654
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 656
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -5596,7 +5596,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 2327
-            .species = SPECIES_BAGON,
+            .species = SPECIES_DREEPY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2329
             .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
@@ -12006,7 +12006,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4903
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4905
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -12182,7 +12182,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4974
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4976
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14781,7 +14781,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5995
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5997
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14813,7 +14813,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6008
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6010
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14824,7 +14824,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6012
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6014
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14888,7 +14888,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6038
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6040
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -14938,7 +14938,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6059
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6061
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -14995,7 +14995,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6084
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6086
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -15069,7 +15069,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6116
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6118
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -15764,7 +15764,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6414
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6416
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -15800,7 +15800,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6430
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6430
             .heldItem = ITEM_SITRUS_BERRY,
@@ -19163,7 +19163,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7776
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7778
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20997,7 +20997,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8499
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8501
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -26782,7 +26782,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10778
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10780
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -26872,7 +26872,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10813
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10815
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -30392,7 +30392,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12183
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12185
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -33204,7 +33204,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 13280
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13282
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -36383,7 +36383,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14576
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14578
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -36963,7 +36963,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14803
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14805
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -37943,7 +37943,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 15191
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15193
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -37965,7 +37965,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15199
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15201
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -38717,7 +38717,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 15490
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15492
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -38828,7 +38828,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 15534
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15536
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -38998,7 +38998,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15600
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15602
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -39065,7 +39065,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15625
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15627
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -40251,7 +40251,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16119
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16119
             .heldItem = ITEM_SITRUS_BERRY,
@@ -40368,7 +40368,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16169
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16169
             .heldItem = ITEM_SITRUS_BERRY,
@@ -40485,7 +40485,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16219
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16219
             .heldItem = ITEM_SITRUS_BERRY,
@@ -40620,7 +40620,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16277
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16277
             .heldItem = ITEM_SITRUS_BERRY,
@@ -44697,7 +44697,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 17959
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17961
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -44708,7 +44708,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 17963
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17965
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -44751,7 +44751,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 17980
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17982
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -44762,7 +44762,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 17984
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17986
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -44805,7 +44805,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 18001
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 18003
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -44816,7 +44816,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 18005
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 18007
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -44859,7 +44859,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 18022
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 18024
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -44870,7 +44870,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 18026
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 18028
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
