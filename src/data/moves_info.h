@@ -20720,6 +20720,29 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_REVELATION_STEP,
     },
 
+    [MOVE_DEEPWATER_CURSE] =
+    {
+        .name = COMPOUND_STRING("Deepwater Curse"),
+        .description = COMPOUND_STRING(
+            "Inflicts frostbite on foe\n"
+            "with cold hatred."),
+        .effect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+        .power = 0,
+        .type = TYPE_ICE,
+        .accuracy = 85,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_ATK_UP_1 },
+        .magicCoatAffected = TRUE,
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
+        .battleAnimScript = Move_DEEPWATER_CURSE,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

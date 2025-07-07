@@ -31,7 +31,7 @@ script SofosCity_Gym_EventScript_GymMan
     }
     else
     {
-        msgbox(format("Welcome to the Sofos City Gym!\p Meneswo, the Gym Leader, fuses the raw power of Fighting-type Pokémon and the intelligence of Psychic-type Pokémon. To win, you'll need a master strategy!"))
+        msgbox(format("Welcome to the Sofos City Gym!\p Terpsikore, the Gym Leader, is the Muse of Dance and Chorus. She loves all things related to order and harmony, including organized battle and science. Of course, this means she specializes in both Psychic and Fighting-type Pokémon."))
     }
     closemessage
     release
@@ -89,7 +89,7 @@ script SofosCity_Gym_Trigger_GauntletWarning
     if(var(VAR_RESULT) == 0) // said no to gauntlet
     {
         speakername("Gym Guide")
-        msgbox(format("That's alright, it's certainly an intimidating challenge. {COLOR GREEN}Meneswo{COLOR DARK_GRAY} says it's the ultimate test of strategy!\p Come back when you're ready to face this {COLOR RED}Trainer Gauntlet{COLOR DARK_GRAY}."))
+        msgbox(format("That's alright, it's certainly an intimidating challenge. {COLOR GREEN}Terpsikore{COLOR DARK_GRAY} says it's the ultimate test of harmony with one's Pokémon!\p Come back when you're ready to face this {COLOR RED}Trainer Gauntlet{COLOR DARK_GRAY}."))
         closemessage
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
         waitmovement(0)
@@ -225,7 +225,7 @@ text SofosCity_Gym_Text_Trainer_SofosGym_AristoDefeat
     format("Such magnificent moves!")
 }
 
-script SofosCity_Gym_EventScript_Meneswo
+script SofosCity_Gym_EventScript_Terpsikore
 {
     lock
     faceplayer
@@ -233,8 +233,8 @@ script SofosCity_Gym_EventScript_Meneswo
     // first, check if gauntlet is completed
     if(!flag(0x55E) || !flag(0x55F) || !flag(0x560) || !flag(0x561))
     {
-        speakername("Meneswo")
-        msgbox(format("I've been watching, you know! You still have some Trainers left to battle before me.\p After beating the {COLOR GREEN}4 Gym Trainers{COLOR DARK_GRAY}, come here and face me. Your strategy must be perfect!"))
+        speakername("Terpsikore")
+        msgbox(format("I've been watching, you know! You still have some Trainers left to battle before me.\p After beating the {COLOR GREEN}4 Gym Trainers{COLOR DARK_GRAY}, come here and face me. Your harmony with your Pokémon must be perfect!"))
         closemessage
         release
         end
@@ -242,47 +242,47 @@ script SofosCity_Gym_EventScript_Meneswo
 
     if(!flag(FLAG_HARD_MODE))
     {
-        goto(SofosCity_Gym_EventScript_Meneswo_NormalDifficulty)
+        goto(SofosCity_Gym_EventScript_Terpsikore_NormalDifficulty)
     }
     else
     {
-        goto(SofosCity_Gym_EventScript_Meneswo_HardDifficulty)
+        goto(SofosCity_Gym_EventScript_Terpsikore_HardDifficulty)
     }
     release
     end
 }
 
-script SofosCity_Gym_EventScript_Meneswo_NormalDifficulty // called when on normal difficulty
+script SofosCity_Gym_EventScript_Terpsikore_NormalDifficulty // called when on normal difficulty
 {
-    trainerbattle_single(TRAINER_LEADER_MENESWO, SofosCity_Gym_Text_MeneswoIntro, SofosCity_Gym_Text_MeneswoDefeat, SofosCity_Gym_EventScript_Meneswo_DefeatedScript, NO_MUSIC)
-    speakername("Meneswo")
-    msgbox(format("Your strategic prowess in battle is unmatched! I know you'll go far."))
+    trainerbattle_single(TRAINER_LEADER_TERPSIKORE, SofosCity_Gym_Text_TerpsikoreIntro, SofosCity_Gym_Text_TerpsikoreDefeat, SofosCity_Gym_EventScript_Terpsikore_DefeatedScript, NO_MUSIC)
+    speakername("Terpsikore")
+    msgbox(format("Your harmony with your Pokémon in battle is unmatched! I know you'll go far."))
     closemessage
     release
     end
 }
-script SofosCity_Gym_EventScript_Meneswo_HardDifficulty // called when on hard difficulty
+script SofosCity_Gym_EventScript_Terpsikore_HardDifficulty // called when on hard difficulty
 {
-    trainerbattle_single(TRAINER_LEADER_MENESWO_HARD, SofosCity_Gym_Text_MeneswoIntro, SofosCity_Gym_Text_MeneswoDefeat, SofosCity_Gym_EventScript_Meneswo_DefeatedScript, NO_MUSIC)
-    speakername("Meneswo")
-    msgbox(format("Your strategic prowess in battle is unmatched! I know you'll go far."))
+    trainerbattle_single(TRAINER_LEADER_TERPSIKORE_HARD, SofosCity_Gym_Text_TerpsikoreIntro, SofosCity_Gym_Text_TerpsikoreDefeat, SofosCity_Gym_EventScript_Terpsikore_DefeatedScript, NO_MUSIC)
+    speakername("Terpsikore")
+    msgbox(format("Your harmony with your Pokémon in battle is unmatched! I know you'll go far."))
     closemessage
     release
     end
 }
-text SofosCity_Gym_Text_MeneswoIntro
+text SofosCity_Gym_Text_TerpsikoreIntro
 {
     format("Oh, it looks like you've completed my Trainer Gauntlet! Only truly impressive Trainers are able to do that and still approach me.\p After seeing your moves in Satyr's Lair, I've been wanting to face you in battle. Let's see if you're all you're cracked up to be!")
 }
-text SofosCity_Gym_Text_MeneswoDefeat
+text SofosCity_Gym_Text_TerpsikoreDefeat
 {
-    format("Incredible! Your strategy, your combination of power and mind... it's fantastic!")
+    format("Incredible! Your Pokémon danced in perfect sync!")
 }
 // Script called when you defeat the gym leader!
-script SofosCity_Gym_EventScript_Meneswo_DefeatedScript
+script SofosCity_Gym_EventScript_Terpsikore_DefeatedScript
 {
     setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
-    message(format("{PLAYER} received the Wisdom Badge from Meneswo."))
+    message(format("{PLAYER} received the Wisdom Badge from Terpsikore."))
 	waitmessage
 	call(Common_EventScript_PlayGymBadgeFanfare)
 
@@ -295,14 +295,14 @@ script SofosCity_Gym_EventScript_Meneswo_DefeatedScript
     settrainerflag(TRAINER_SOFOSGYM_ARISTO)
 
     // Explain badge
-    speakername("Meneswo")
-    msgbox(format("The Widsom Badge represents your ability to create plans in battle, rather than rushing head-first into danger. It also allows you to use the {COLOR GREEN}HM Surf{COLOR DARK_GRAY} outside of battle.\p Right, take this with you!"))
+    speakername("Terpsikore")
+    msgbox(format("The Widsom Badge represents your ability to coordinate perfectly with your Pokémon, helping them reach their maximum potential in battle. It also allows you to use the {COLOR GREEN}HM Surf{COLOR DARK_GRAY} outside of battle.\p Right, take this with you!"))
     closemessage
 
     // Give TM reward and explain, plus end dialogue
     giveitem(ITEM_TM53)
-    speakername("Meneswo")
-    msgbox(format("That TM contains the move {COLOR GREEN}Power-Up Punch{COLOR DARK_GRAY}, which boosts the Attack stat while dealing damage. Talk about strategy!\p You should be able to handle the {COLOR GREEN}Seas of Ilios{COLOR DARK_GRAY} with your Pokémon. Your next badge is {COLOR GREEN}east{COLOR DARK_GRAY}, past Marmaro Island to the sister {COLOR GREEN}island of Myrrini{COLOR DARK_GRAY}."))
+    speakername("Terpsikore")
+    msgbox(format("That TM contains the move {COLOR GREEN}Power-Up Punch{COLOR DARK_GRAY}, which boosts the Attack stat while dealing damage. With every attack, your Pokémon will grow louder and stronger!\p You should be able to handle the {COLOR GREEN}Seas of Ilios{COLOR DARK_GRAY} with your Pokémon. Your next badge is {COLOR GREEN}east{COLOR DARK_GRAY}, past Marmaro Island to the sister {COLOR GREEN}island of Myrrini{COLOR DARK_GRAY}."))
     closemessage
 
     // complete gym quest and begin next one

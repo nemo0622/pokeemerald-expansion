@@ -126,14 +126,14 @@
 #define OBJ_EVENT_GFX_PHOEBE                     122
 #define OBJ_EVENT_GFX_GLACIA                     123
 #define OBJ_EVENT_GFX_DRAKE                      124
-#define OBJ_EVENT_GFX_SABELLA                    125 // Gym Leader 3, in Pythios Town (replaces Roxanne gfx)
-#define OBJ_EVENT_GFX_DEO                        126 // Gym Leader 1, in Jusmail Town (replacess Brawly gfx)
-#define OBJ_EVENT_GFX_MATTAIOS                   127 // Gym Leader 2, in Acrisia Mountains / Discus Forge (replaces Wattson gfx)
-#define OBJ_EVENT_GFX_MENESWO                   128 // Gym Leader 4, in Sofos City (replaces Flannery)
-#define OBJ_EVENT_GFX_THYRSUS                    129 // Gym Leader 5, in Myrrini Island (replaces Norman)
-#define OBJ_EVENT_GFX_WINONA                     130
-#define OBJ_EVENT_GFX_LIZA                       131
-#define OBJ_EVENT_GFX_TATE                       132
+#define OBJ_EVENT_GFX_MUSE_KLEIO                 125 // Gym Leader 3, in Pythios Town (replaces Roxanne gfx)
+#define OBJ_EVENT_GFX_MUSE_POLYMNIA              126 // Gym Leader 1, in Jusmail Town (replacess Brawly gfx)
+#define OBJ_EVENT_GFX_MUSE_OURANI              127 // Gym Leader 2, in Acrisia Mountains / Discus Forge (replaces Wattson gfx)
+#define OBJ_EVENT_GFX_MUSE_TERPSIKORE           128 // Gym Leader 4, in Sofos City (replaces Flannery)
+#define OBJ_EVENT_GFX_MUSE_EUTERPE               129 // Gym Leader 5, in Myrrini Island (replaces Norman)
+#define OBJ_EVENT_GFX_MUSE_RHADINE               130 // Gym Leader 7, in Palati City (replaces Winona gfx)
+#define OBJ_EVENT_GFX_MUSE_THALIA                131 // Gym Leader 6 (twin 1), in Fresco Isles (replaces Liza)
+#define OBJ_EVENT_GFX_MUSE_MELPOMENE             132 // Gym Leader 6 (twin 2), in Fresco Isles (replaces Tate)
 #define OBJ_EVENT_GFX_WALLACE                    133
 #define OBJ_EVENT_GFX_RANIA                      134 // replaces GFX_STEVEN
 #define OBJ_EVENT_GFX_NIKO                       135 // replaces GFX_WALLY
@@ -196,7 +196,7 @@
 #define OBJ_EVENT_GFX_MAY_WATERING               192
 #define OBJ_EVENT_GFX_BRENDAN_DECORATING         193
 #define OBJ_EVENT_GFX_MAY_DECORATING             194
-#define OBJ_EVENT_GFX_MARA                       195 // 8th gym leader, leader of Team Chimera, Ares' Daughter
+#define OBJ_EVENT_GFX_MUSE_KALLIOPE              195 // 8th gym leader & leader of Team Chimera (replaces GFX_ARCHIE)
 #define OBJ_EVENT_GFX_MAXIE                      196
 #define OBJ_EVENT_GFX_KYOGRE_FRONT               197
 #define OBJ_EVENT_GFX_GROUDON_FRONT              198
@@ -233,8 +233,8 @@
 #define OBJ_EVENT_GFX_MEW                        229
 #define OBJ_EVENT_GFX_RED                        230
 #define OBJ_EVENT_GFX_LEAF                       231
-#define OBJ_EVENT_GFX_DEOXYS                     232
-#define OBJ_EVENT_GFX_DEOXYS_TRIANGLE            233
+#define OBJ_EVENT_GFX_MUSE_POLYMNIAXYS                     232
+#define OBJ_EVENT_GFX_MUSE_POLYMNIAXYS_TRIANGLE            233
 #define OBJ_EVENT_GFX_BRANDON                    234
 #define OBJ_EVENT_GFX_LINK_RS_BRENDAN            235
 #define OBJ_EVENT_GFX_LINK_RS_MAY                236

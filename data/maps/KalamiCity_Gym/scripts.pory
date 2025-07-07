@@ -27,61 +27,61 @@ script KalamiCity_Gym_EventScript_GymMan
     }
     else
     {
-        msgbox(format("Welcome to the Kalami City Gym!\p The Gym Leader, Mattaios, oversees production of industrial goods here. Expect plenty of tough Pokémon, with Rock, Steel, or Electric types!"))
+        msgbox(format("Welcome to the Kalami City Gym!\p The Gym Leader, Ourani, oversees production of industrial goods here. Expect plenty of tough Pokémon, with Rock, Steel, or Electric types!"))
     }
     closemessage
     release
     end
 }
 
-script KalamiCity_Gym_EventScript_Mattaios
+script KalamiCity_Gym_EventScript_Ourani
 {
     lock
     faceplayer
     if(!flag(FLAG_HARD_MODE))
     {
-        goto(KalamiCity_Gym_EventScript_MattaiosNormal)
+        goto(KalamiCity_Gym_EventScript_OuraniNormal)
     }
     else
     {
-        goto(KalamiCity_Gym_EventScript_MattaiosHard)
+        goto(KalamiCity_Gym_EventScript_OuraniHard)
     }
     release
     end
 }
 
-script KalamiCity_Gym_EventScript_MattaiosNormal
+script KalamiCity_Gym_EventScript_OuraniNormal
 {
-    trainerbattle_single(TRAINER_LEADER_MATTAIOS, KalamiCity_Gym_Text_MattaiosIntro, KalamiCity_Gym_Text_MattaiosDefeat, KalamiCity_Gym_EventScript_MattaiosDefeatScript, NO_MUSIC)
-    speakername("Mattaios")
+    trainerbattle_single(TRAINER_LEADER_OURANI, KalamiCity_Gym_Text_OuraniIntro, KalamiCity_Gym_Text_OuraniDefeat, KalamiCity_Gym_EventScript_OuraniDefeatScript, NO_MUSIC)
+    speakername("Ourani")
     msgbox(format("Now that our battle's over, I should get back to work. Bendin' steel and making Poké balls never stops!"))
     closemessage
     release
     end
 }
-script KalamiCity_Gym_EventScript_MattaiosHard
+script KalamiCity_Gym_EventScript_OuraniHard
 {
-    trainerbattle_single(TRAINER_LEADER_MATTAIOS_HARD, KalamiCity_Gym_Text_MattaiosIntro, KalamiCity_Gym_Text_MattaiosDefeat, KalamiCity_Gym_EventScript_MattaiosDefeatScript, NO_MUSIC)
-    speakername("Mattaios")
+    trainerbattle_single(TRAINER_LEADER_OURANI_HARD, KalamiCity_Gym_Text_OuraniIntro, KalamiCity_Gym_Text_OuraniDefeat, KalamiCity_Gym_EventScript_OuraniDefeatScript, NO_MUSIC)
+    speakername("Ourani")
     msgbox(format("Now that our battle's over, I should get back to work. Bendin' steel and making Poké balls never stops!"))
     closemessage
     release
     end
 }
 
-text KalamiCity_Gym_Text_MattaiosIntro
+text KalamiCity_Gym_Text_OuraniIntro
 {
-    format("Got past my workers, eh? Welcome to my humble factory-turned-Gym!\p My Larvitar and I train hard every day. We're so strong, we can bend metal all by 'rselves. Now, help us get stronger!")
+    format("Got past my workers, eh? Welcome to my humble factory-turned-Gym!\p I'm Ourani, Muse of Stone and Sky. My Larvitar and I manufacture parts for machinery around the Ilios Region. Let's not beat around the bush - fight me!")
 }
-text KalamiCity_Gym_Text_MattaiosDefeat
+text KalamiCity_Gym_Text_OuraniDefeat
 {
-    format("Woah, you darn-near broke my flashlight!")
+    format("Woah, you're tougher than the steel we smelt!")
 }
 
-script KalamiCity_Gym_EventScript_MattaiosDefeatScript
+script KalamiCity_Gym_EventScript_OuraniDefeatScript
 {
     setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug
-    message(format("{PLAYER} received the Gemstone Badge from Mattaios."))
+    message(format("{PLAYER} received the Gemstone Badge from Ourani."))
 	waitmessage
 	call(Common_EventScript_PlayGymBadgeFanfare)
 
@@ -96,13 +96,13 @@ script KalamiCity_Gym_EventScript_MattaiosDefeatScript
     setvar(VAR_NIKO_STATE, 3)
 
     // Explain badge
-    speakername("Mattaios")
+    speakername("Ourani")
     msgbox(format("The Gemstone Badge marks yer second completed Gym, eh? After two Badges, most trainers are fit to explore more of Ilios. Yer certainly strong enough! You'll also be able to use the {COLOR GREEN}HM Rock Smash{COLOR DARK_GRAY} outside battle.\p Fwahaha, there's more fer ya!"))
     closemessage
 
     // Give TM, explain, end dialogue
     giveitem(ITEM_TM_ROCK_TOMB)
-    speakername("Mattaios")
+    speakername("Ourani")
     msgbox(format("That's the TM fer {COLOR GREEN}Rock Tomb{COLOR DARK_GRAY}! My Larvitar here learned this from digging around for metals.\p Y'know, another Acrisia University student just passed through here. If I were you, I'd hightail it {COLOR GREEN}back to the University{COLOR DARK_GRAY} to see what's what!"))
     closemessage
 

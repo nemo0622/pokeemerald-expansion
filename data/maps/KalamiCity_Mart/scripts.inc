@@ -158,8 +158,8 @@ KalamiCity_Mart_EventScript_HexManiac_Text_0:
 
 KalamiCity_Mart_EventScript_HexManiac_Text_1:
 # 74 "data/maps/KalamiCity_Mart/scripts.pory"
-	.string "Mattaios and his Gym helps produce a\n"
-	.string "ton of new Poké ball types! We have a\l"
+	.string "Ourani and her Gym helps produce a ton\n"
+	.string "of new Poké ball types! We have a\l"
 	.string "shopkeeper dedicated to some of them\l"
 	.string "here.$"
 

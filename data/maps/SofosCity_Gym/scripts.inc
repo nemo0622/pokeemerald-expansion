@@ -284,52 +284,52 @@ SofosCity_Gym_EventScript_Trainer_SofosGym_Aristo::
 	end
 
 
-SofosCity_Gym_EventScript_Meneswo::
+SofosCity_Gym_EventScript_Terpsikore::
 # 230 "data/maps/SofosCity_Gym/scripts.pory"
 	lock
 # 231 "data/maps/SofosCity_Gym/scripts.pory"
 	faceplayer
 # 234 "data/maps/SofosCity_Gym/scripts.pory"
-	goto_if_unset 0x55E, SofosCity_Gym_EventScript_Meneswo_2
+	goto_if_unset 0x55E, SofosCity_Gym_EventScript_Terpsikore_2
 # 234 "data/maps/SofosCity_Gym/scripts.pory"
-	goto_if_unset 0x55F, SofosCity_Gym_EventScript_Meneswo_2
+	goto_if_unset 0x55F, SofosCity_Gym_EventScript_Terpsikore_2
 # 234 "data/maps/SofosCity_Gym/scripts.pory"
-	goto_if_unset 0x560, SofosCity_Gym_EventScript_Meneswo_2
+	goto_if_unset 0x560, SofosCity_Gym_EventScript_Terpsikore_2
 # 234 "data/maps/SofosCity_Gym/scripts.pory"
-	goto_if_unset 0x561, SofosCity_Gym_EventScript_Meneswo_2
+	goto_if_unset 0x561, SofosCity_Gym_EventScript_Terpsikore_2
 # 243 "data/maps/SofosCity_Gym/scripts.pory"
-	goto_if_unset FLAG_HARD_MODE, SofosCity_Gym_EventScript_Meneswo_11
+	goto_if_unset FLAG_HARD_MODE, SofosCity_Gym_EventScript_Terpsikore_11
 # 249 "data/maps/SofosCity_Gym/scripts.pory"
-	goto SofosCity_Gym_EventScript_Meneswo_HardDifficulty
-SofosCity_Gym_EventScript_Meneswo_10:
+	goto SofosCity_Gym_EventScript_Terpsikore_HardDifficulty
+SofosCity_Gym_EventScript_Terpsikore_10:
 # 251 "data/maps/SofosCity_Gym/scripts.pory"
 	release
 	end
 
-SofosCity_Gym_EventScript_Meneswo_2:
+SofosCity_Gym_EventScript_Terpsikore_2:
 # 236 "data/maps/SofosCity_Gym/scripts.pory"
-	speakername SofosCity_Gym_EventScript_Meneswo_Text_0
+	speakername SofosCity_Gym_EventScript_Terpsikore_Text_0
 # 237 "data/maps/SofosCity_Gym/scripts.pory"
-	msgbox SofosCity_Gym_EventScript_Meneswo_Text_1
+	msgbox SofosCity_Gym_EventScript_Terpsikore_Text_1
 # 238 "data/maps/SofosCity_Gym/scripts.pory"
 	closemessage
 # 239 "data/maps/SofosCity_Gym/scripts.pory"
 	release
 	end
 
-SofosCity_Gym_EventScript_Meneswo_11:
+SofosCity_Gym_EventScript_Terpsikore_11:
 # 245 "data/maps/SofosCity_Gym/scripts.pory"
-	goto SofosCity_Gym_EventScript_Meneswo_NormalDifficulty
-	goto SofosCity_Gym_EventScript_Meneswo_10
+	goto SofosCity_Gym_EventScript_Terpsikore_NormalDifficulty
+	goto SofosCity_Gym_EventScript_Terpsikore_10
 
 
-SofosCity_Gym_EventScript_Meneswo_NormalDifficulty::
+SofosCity_Gym_EventScript_Terpsikore_NormalDifficulty::
 # 257 "data/maps/SofosCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_MENESWO, SofosCity_Gym_Text_MeneswoIntro, SofosCity_Gym_Text_MeneswoDefeat, SofosCity_Gym_EventScript_Meneswo_DefeatedScript, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_TERPSIKORE, SofosCity_Gym_Text_TerpsikoreIntro, SofosCity_Gym_Text_TerpsikoreDefeat, SofosCity_Gym_EventScript_Terpsikore_DefeatedScript, NO_MUSIC
 # 258 "data/maps/SofosCity_Gym/scripts.pory"
-	speakername SofosCity_Gym_EventScript_Meneswo_Text_0
+	speakername SofosCity_Gym_EventScript_Terpsikore_Text_0
 # 259 "data/maps/SofosCity_Gym/scripts.pory"
-	msgbox SofosCity_Gym_EventScript_Meneswo_NormalDifficulty_Text_0
+	msgbox SofosCity_Gym_EventScript_Terpsikore_NormalDifficulty_Text_0
 # 260 "data/maps/SofosCity_Gym/scripts.pory"
 	closemessage
 # 261 "data/maps/SofosCity_Gym/scripts.pory"
@@ -337,13 +337,13 @@ SofosCity_Gym_EventScript_Meneswo_NormalDifficulty::
 	end
 
 
-SofosCity_Gym_EventScript_Meneswo_HardDifficulty::
+SofosCity_Gym_EventScript_Terpsikore_HardDifficulty::
 # 266 "data/maps/SofosCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_MENESWO_HARD, SofosCity_Gym_Text_MeneswoIntro, SofosCity_Gym_Text_MeneswoDefeat, SofosCity_Gym_EventScript_Meneswo_DefeatedScript, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_TERPSIKORE_HARD, SofosCity_Gym_Text_TerpsikoreIntro, SofosCity_Gym_Text_TerpsikoreDefeat, SofosCity_Gym_EventScript_Terpsikore_DefeatedScript, NO_MUSIC
 # 267 "data/maps/SofosCity_Gym/scripts.pory"
-	speakername SofosCity_Gym_EventScript_Meneswo_Text_0
+	speakername SofosCity_Gym_EventScript_Terpsikore_Text_0
 # 268 "data/maps/SofosCity_Gym/scripts.pory"
-	msgbox SofosCity_Gym_EventScript_Meneswo_NormalDifficulty_Text_0
+	msgbox SofosCity_Gym_EventScript_Terpsikore_NormalDifficulty_Text_0
 # 269 "data/maps/SofosCity_Gym/scripts.pory"
 	closemessage
 # 270 "data/maps/SofosCity_Gym/scripts.pory"
@@ -351,11 +351,11 @@ SofosCity_Gym_EventScript_Meneswo_HardDifficulty::
 	end
 
 
-SofosCity_Gym_EventScript_Meneswo_DefeatedScript::
+SofosCity_Gym_EventScript_Terpsikore_DefeatedScript::
 # 284 "data/maps/SofosCity_Gym/scripts.pory"
 	setflag FLAG_SUPPRESS_SPEAKER_NAME
 # 285 "data/maps/SofosCity_Gym/scripts.pory"
-	message SofosCity_Gym_EventScript_Meneswo_DefeatedScript_Text_0
+	message SofosCity_Gym_EventScript_Terpsikore_DefeatedScript_Text_0
 # 286 "data/maps/SofosCity_Gym/scripts.pory"
 	waitmessage
 # 287 "data/maps/SofosCity_Gym/scripts.pory"
@@ -371,17 +371,17 @@ SofosCity_Gym_EventScript_Meneswo_DefeatedScript::
 # 295 "data/maps/SofosCity_Gym/scripts.pory"
 	settrainerflag TRAINER_SOFOSGYM_ARISTO
 # 298 "data/maps/SofosCity_Gym/scripts.pory"
-	speakername SofosCity_Gym_EventScript_Meneswo_Text_0
+	speakername SofosCity_Gym_EventScript_Terpsikore_Text_0
 # 299 "data/maps/SofosCity_Gym/scripts.pory"
-	msgbox SofosCity_Gym_EventScript_Meneswo_DefeatedScript_Text_1
+	msgbox SofosCity_Gym_EventScript_Terpsikore_DefeatedScript_Text_1
 # 300 "data/maps/SofosCity_Gym/scripts.pory"
 	closemessage
 # 303 "data/maps/SofosCity_Gym/scripts.pory"
 	giveitem ITEM_TM53
 # 304 "data/maps/SofosCity_Gym/scripts.pory"
-	speakername SofosCity_Gym_EventScript_Meneswo_Text_0
+	speakername SofosCity_Gym_EventScript_Terpsikore_Text_0
 # 305 "data/maps/SofosCity_Gym/scripts.pory"
-	msgbox SofosCity_Gym_EventScript_Meneswo_DefeatedScript_Text_2
+	msgbox SofosCity_Gym_EventScript_Terpsikore_DefeatedScript_Text_2
 # 306 "data/maps/SofosCity_Gym/scripts.pory"
 	closemessage
 # 309 "data/maps/SofosCity_Gym/scripts.pory"
@@ -421,10 +421,13 @@ SofosCity_Gym_EventScript_GymMan_Text_1:
 SofosCity_Gym_EventScript_GymMan_Text_2:
 # 34 "data/maps/SofosCity_Gym/scripts.pory"
 	.string "Welcome to the Sofos City Gym!\p"
-	.string "Meneswo, the Gym Leader, fuses the raw\n"
-	.string "power of Fighting-type Pokémon and the\l"
-	.string "intelligence of Psychic-type Pokémon.\l"
-	.string "To win, you'll need a master strategy!$"
+	.string "Terpsikore, the Gym Leader, is the Muse\n"
+	.string "of Dance and Chorus. She loves all\l"
+	.string "things related to order and harmony,\l"
+	.string "including organized battle and science.\l"
+	.string "Of course, this means she specializes in\l"
+	.string "both Psychic and Fighting-type\l"
+	.string "Pokémon.$"
 
 SofosCity_Gym_Trigger_GauntletWarning_Text_0:
 # 55 "data/maps/SofosCity_Gym/scripts.pory"
@@ -458,8 +461,9 @@ SofosCity_Gym_Trigger_GauntletWarning_Text_3:
 SofosCity_Gym_Trigger_GauntletWarning_Text_4:
 # 92 "data/maps/SofosCity_Gym/scripts.pory"
 	.string "That's alright, it's certainly an\n"
-	.string "intimidating challenge. {COLOR GREEN}Meneswo{COLOR DARK_GRAY} says\l"
-	.string "it's the ultimate test of strategy!\p"
+	.string "intimidating challenge. {COLOR GREEN}Terpsikore{COLOR DARK_GRAY} says\l"
+	.string "it's the ultimate test of harmony with\l"
+	.string "one's Pokémon!\p"
 	.string "Come back when you're ready to face\n"
 	.string "this {COLOR RED}Trainer Gauntlet{COLOR DARK_GRAY}.$"
 
@@ -533,44 +537,47 @@ SofosCity_Gym_EventScript_Trainer_SofosGym_Aristo_Text_1:
 	.string "written in Ancient Ilian script. It's\l"
 	.string "helping me translate lost texts.$"
 
-SofosCity_Gym_EventScript_Meneswo_Text_0:
+SofosCity_Gym_EventScript_Terpsikore_Text_0:
 # 236 "data/maps/SofosCity_Gym/scripts.pory"
-	.string "Meneswo$"
+	.string "Terpsikore$"
 
-SofosCity_Gym_EventScript_Meneswo_Text_1:
+SofosCity_Gym_EventScript_Terpsikore_Text_1:
 # 237 "data/maps/SofosCity_Gym/scripts.pory"
 	.string "I've been watching, you know! You still\n"
 	.string "have some Trainers left to battle\l"
 	.string "before me.\p"
 	.string "After beating the {COLOR GREEN}4 Gym Trainers{COLOR DARK_GRAY}, come\n"
-	.string "here and face me. Your strategy must be\l"
-	.string "perfect!$"
+	.string "here and face me. Your harmony with\l"
+	.string "your Pokémon must be perfect!$"
 
-SofosCity_Gym_EventScript_Meneswo_NormalDifficulty_Text_0:
+SofosCity_Gym_EventScript_Terpsikore_NormalDifficulty_Text_0:
 # 259 "data/maps/SofosCity_Gym/scripts.pory"
-	.string "Your strategic prowess in battle is\n"
-	.string "unmatched! I know you'll go far.$"
+	.string "Your harmony with your Pokémon in\n"
+	.string "battle is unmatched! I know you'll go\l"
+	.string "far.$"
 
-SofosCity_Gym_EventScript_Meneswo_DefeatedScript_Text_0:
+SofosCity_Gym_EventScript_Terpsikore_DefeatedScript_Text_0:
 # 285 "data/maps/SofosCity_Gym/scripts.pory"
 	.string "{PLAYER} received the Wisdom Badge\n"
-	.string "from Meneswo.$"
+	.string "from Terpsikore.$"
 
-SofosCity_Gym_EventScript_Meneswo_DefeatedScript_Text_1:
+SofosCity_Gym_EventScript_Terpsikore_DefeatedScript_Text_1:
 # 299 "data/maps/SofosCity_Gym/scripts.pory"
 	.string "The Widsom Badge represents your\n"
-	.string "ability to create plans in battle,\l"
-	.string "rather than rushing head-first into\l"
-	.string "danger. It also allows you to use the {COLOR GREEN}HM\l"
-	.string "Surf{COLOR DARK_GRAY} outside of battle.\p"
+	.string "ability to coordinate perfectly with\l"
+	.string "your Pokémon, helping them reach their\l"
+	.string "maximum potential in battle. It also\l"
+	.string "allows you to use the {COLOR GREEN}HM Surf{COLOR DARK_GRAY} outside\l"
+	.string "of battle.\p"
 	.string "Right, take this with you!$"
 
-SofosCity_Gym_EventScript_Meneswo_DefeatedScript_Text_2:
+SofosCity_Gym_EventScript_Terpsikore_DefeatedScript_Text_2:
 # 305 "data/maps/SofosCity_Gym/scripts.pory"
 	.string "That TM contains the move {COLOR GREEN}Power-Up\n"
 	.string "Punch{COLOR DARK_GRAY}, which boosts the Attack stat\l"
-	.string "while dealing damage. Talk about\l"
-	.string "strategy!\p"
+	.string "while dealing damage. With every attack,\l"
+	.string "your Pokémon will grow louder and\l"
+	.string "stronger!\p"
 	.string "You should be able to handle the {COLOR GREEN}Seas\n"
 	.string "of Ilios{COLOR DARK_GRAY} with your Pokémon. Your next\l"
 	.string "badge is {COLOR GREEN}east{COLOR DARK_GRAY}, past Marmaro Island to\l"
@@ -614,7 +621,7 @@ SofosCity_Gym_Text_Trainer_SofosGym_AristoDefeat::
 # 223 "data/maps/SofosCity_Gym/scripts.pory"
 	.string "Such magnificent moves!$"
 
-SofosCity_Gym_Text_MeneswoIntro::
+SofosCity_Gym_Text_TerpsikoreIntro::
 # 273 "data/maps/SofosCity_Gym/scripts.pory"
 	.string "Oh, it looks like you've completed my\n"
 	.string "Trainer Gauntlet! Only truly impressive\l"
@@ -625,8 +632,7 @@ SofosCity_Gym_Text_MeneswoIntro::
 	.string "Let's see if you're all you're cracked up\l"
 	.string "to be!$"
 
-SofosCity_Gym_Text_MeneswoDefeat::
+SofosCity_Gym_Text_TerpsikoreDefeat::
 # 277 "data/maps/SofosCity_Gym/scripts.pory"
-	.string "Incredible! Your strategy, your\n"
-	.string "combination of power and mind... it's\l"
-	.string "fantastic!$"
+	.string "Incredible! Your Pokémon danced in\n"
+	.string "perfect sync!$"

@@ -1146,6 +1146,7 @@ MysteryGift_EventScript_DoMysteryGift::
 	goto_if_eq VAR_RESULT, 34, MysteryGift_EventScript_Rockruff
 	goto_if_eq VAR_RESULT, 35, MysteryGift_EventScript_Outfits
 	goto_if_eq VAR_RESULT, 36, MysteryGift_EventScript_HyruleOutfit
+	goto_if_eq VAR_RESULT, 37, MysteryGift_EventScript_ShowWildNatures
 	end
 
 MysteryGift_Failed::
@@ -1198,6 +1199,11 @@ MysteryGift_EventScript_NicknamePCMon::
 MysteryGift_EventScript_TransferredToPC::
 	msgbox gText_TransferredToPC
 	goto MysteryGift_EventScript_Exit
+	end
+
+MysteryGift_EventScript_ShowWildNatures::
+	setflag FLAG_UNLOCKED_WILD_NATURE_VIEW
+	releaseall
 	end
 
 MysteryGift_EventScript_RareCandies::
@@ -1908,3 +1914,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/PentepetalCity_House4/scripts.inc"
 
 	.include "data/maps/PentepetalCity_House5/scripts.inc"
+
+	.include "data/maps/SunkenTemple/scripts.inc"

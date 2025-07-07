@@ -65,32 +65,24 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- POKéDEX CHANGES:
-    - :check: Replace Electrike line with Yamper line
-    - :check: Add Galarian Fossils + revival method
-    - :check" Add Type: Null and Silvally (SageDeoxys sprites)
-    - :check: Add Comfey (nuuk's sprite) to get to 427 Pokémon total (found in Péntepetal prolly)
-    - :check: Replace Bagon, Shelgon, and Salamance with Dreepy, Drakloak, and Dragapult (Nuukiie's sprites, so fucking CUTE!)
-- :check: Use LuigiTKO's Party Icons to make new follower sprites for Quaxly and the other Paldean starters
-    - off the top of my head, quaxly and sprigatito are in most dire need for improvement
-    - Ogerpon too omfg! LMFAO
-
 - Continue Mapping and NPC development
     - Sea of Vulcai, and on to the Fresco Isles
     - FRESCO ISLES: Leave Gym Leader unfinished until after Muses gym leaders rework!
-    - ALSO: Add Sofos City quest of escaped Chimera scientist to earn a Type: Null, and an abandoned Team Chimera lab in the Fresco Isles where they used to work containing Silvally's Memory items
-- Add Signposts to every new route and town
-- MUSES GYM LEADER REWORK
-    - Gym 1: Polyhymnia, Muse of Hymns and Agriculture (replaces Deo - logic: agriculture. lol)
-    - Gym 2: Urania, Muse of Stone and Sky (replaces Mattaios - logic: most "worldly/practical" of the muses)
-    - Gym 3: Cleo, Muse of the Ancient Past (replaces Sabella - logic: sees into past, talks to spirits)
-    - Gym 4: Terpsichore, Muse of Dance (replaces Meneswo - logic: dance is highly synchronized)
-    - Gym 5: Euterpe, Muse of Entertainment (replaces Thyrsus - logic: party animal! lol)
-    - Gym 6: Thalia and Melpomene, Twin Muses of Comedy and Tragedy (Fresco Isles leaders; twins who always fight and hate each other, claiming opposite islands of the Fresco Isles. Player must reconcile them via Thalia's quest to unlock the Gym)
-    - Gym 7: Erato, Muse of Poetry (Palati City leader; "silver fox" older lady)
-    - Gym 8: Kalliope, Muse of Beauty (Areios Hideout leader; also the LEADER OF TEAM CHIMERA! Seems innocent and beautiful, but is actually evil and selfish and stuff)
-        - After defeating Gym 8, Kalliope abandons the Region, and Team Chimera is left without a leader
-        - Remember to rework Team Chimera's dialogue to indicate this! Especially the dialogue of Myrrini Island's event!
+        - ADD THEATRE STAGE LOCATION TO FRESCO ISLES! This can be where Thalia and Melpomene will be found, and convinced to go back to the Gym
+    - Abandoned Lab in Fresco Isles has one remaining Scientist, who used to work for Team Chimera. He keeps watch over the last remaining Type: Null, continuing to feed it and care for it until he finds a Trainer worthy of taking it. Plus, have Silvally's RKS Memory items accessible there!
+- All Routes / Towns tasks:
+    - Add Signposts to all places (I think I stopped after Pythios Town? oops)
+    - Add "University Students" to every Route or Town with wild Pokémon encounters, who will ask for Pokédex data for All Wild Pokémon in their given area
+        - Motivates Players to complete the Pokédex, or to at least capture more Pokémon than necessary sometimes
+        - Rewards: x15 Poké balls, EXP Candies, Held Items (Quick Claw, Brightpowder, White Herb, Focus Band, etc.), Evolutionary Items, TMs (Deepwater Curse, other new ones, etc.), and maybe even Outfits!
+
+- NEW TRAINER SPRITES:
+    - Rania and Niko
+        - Rania: modified Scientist F sprite by Solo993 (holding Egg like Substitube trainer sprite?)
+        - Niko: modified Cheren sprite by Solo993 (new hair + glasses)
+    - Janitor (sprite by Solo993)
+    - New Prof. Elia sprite for the intro (Solo993's Hiker)
+
 - Implement Biv's Fishing Minigame
     - Also create options menu toggle for it
     - TREASURE IDEAS:
@@ -99,6 +91,18 @@ MAJOR TODOS:
 - Add new Emotes using Reakain's Emote spritesheet (so cute!)
     - Go through major story events and add relevant emotes
     - Also try to add them to other things (ex: crying Emote when DexNav Pokémon disappears)
+
+- Continue Mapping and Scripting through Palati City
+- After beating Palati City Gym, have Niko and Rania run up to you in a panic as a thunderstorm starts. Say thatNiko got a call from a friend in Sofos City that Team Chimera took over their Acropolis temple, and warp theretogether immediately!
+    - This will be the legendary Pokémon / Team Chimera takeover arc! The boss, Kalliope, uses the reassembled Ancient Mechanism to summon Celebi and the Legendary Dogs to the temple. She bends Celebi to her will, using its power to convert the legendaries into their ancient forms - Walking Wake, Raging Bolt, and Gouging Fire. Kalliope and Team Chimera vanish, and extreme weather starts all over the region
+        - Extreme weather: set a flag that is checked on every outdoors map. Like how Pythios does it, when the flag is set, set the weather of the map to a random extreme weather (WEATHER_FOG_HORIZONTAL, WEATHER_DOWNPOUR, or WEATHER_DROUGHT)
+    - Niko tells player of ancient mythology of Ho-oh and Lugia, found at a Fiery Tower (Tower of Dioxippus) and a Watery Temple (the Sunken Temple in the Sea of Vulcai)
+        - Recommends capturing them, as they may be the only thing strong enough to settle them
+        - At each location, the Player will find a TEAM CHIMERA ADMIN (fire and water, respectively) waiting for them! Ho-oh and Lugia will bear witness to your battle, as you catch the Admins in the process of catching them
+            - The admins use powerful teams, plus Walking Wake and Gouging Fire respectively! Raging Bolt will be reserved for the final battle with Kalliope, with the signature move Thunderclap being a whole other level of threatening lol
+    - Rania tells player that Team Chimera grunts have been spotted in an abandoned town south of Port Pello, speculating that that's where they went
+        - Also happens to be the old location for the 8th gym, hOw aBoUt tHaT! Player encouraged to head south of Port Pello and strike at the heart of Team Chimera
+
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas:
@@ -171,13 +175,6 @@ GREEK PHRASES AND STUFF:
         - Spiky Ear Pichu gift
         - Wishing Star mart location
             - Port Pello! Late game, encourages Mining Expeditions instead
-        - Eternal Flower Floette gift event
-            - Reward for something (lol) in Péntepetal City
-        - Cabin (secret base) decor shops!
-            - Large shop in Péntepetal City, along with smaller market spot in Sofos City
-            - Replace dolls of Pokémon not in Ilios region: marked in include/constants/decorations.h with "// Needs Replacement" comment
-            - Can also add more decorations: see include/constants/decorations.h for list
-            - Make Silver Shield, Gold Shield, and Glass Ornament decorations into rewards fit to Ilios Region! (idea: replace Shields with Opal Fossil and Shocking Relic, based on Opalized fossils and the Antikythera Mechanism. Replace Glass Ornament with a statue sprite)
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown when hunting
@@ -186,10 +183,8 @@ GREEK PHRASES AND STUFF:
 - FOLLOWERS: Ho-oh loads broken! At least in Zoo donation, I think
     - Something to do with 64x64 followers, of course
 - CABIN DECORATION: holding the decoration sometimes breaks the graphics (ex: holding Pretty Flowers messes it up bad)
-- BATTLE PAVILION: Player sprites are garbled
-    - Most likely because my Outfit implementation skipped over all the player link graphical stuff. oops
-    - Also happens in Contests!
-    - POSSIBLE SOLUTION: Load default costumes for that stuff? or go through and integrate link graphics. prolly do that stuff
+- Pretty sure Nemo622 Oricorio quest is fucked skull emoji
+- Sometimes, encountered Overworld pokemon are level 2, even with a team with Pokémon up to level 100. somewhere, the calculation is getting messed up
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
@@ -245,6 +240,7 @@ Many, many talented developers and artists are responsible for making this proje
     - Johto (Ethan/Lyra) outfits by Solo993
     - Kalos (Calem/Serena) outfits by com3tiin, Poketto, and Solo993 on DeviantArt
     - Alolan (Elio/Selene), Paldean (Nemona/Arven), and Hylian (Link/Zelda) outfits commissioned from [TortleDove on Twitter](https://x.com/dovetortle?lang=en)
+    - Gym Leaders sprited by me, based on TrainerDX Trainer templates and parts of Substitube and Solo993 sprites
     - Many Sapphire-based GBC sprite devamps by leesongjae620 on DeviantArt
     - Some GBC style Trainer sprites from Pokémon Crystal
     - Scientist F, Punk Rocker, Hiker, and a few other sprites from Solo993's Unova sprite devamps
@@ -306,7 +302,7 @@ REGION PLAN:
     - South path blocked by Rock Smash - told to head back North to Acrisia City
     - West of Acrisia is the Acrisia Mountains, leading up to Acrisia Caves
         - Acrisia Caves is a system of caves, leading down to a dark cavern area
-        - Gym 2: Mattaios, the Rock type gym leader
+        - Gym 2: Ourani, the Rock type gym leader
             - Based on Sisyphus, a hermit who is the last worker at this once prolific mine
             - Team: Level 17-19
             - Reward: Gemstone Badge, unlocks Rock Smash outside battle, TM Rock Tomb
@@ -315,7 +311,7 @@ REGION PLAN:
         - Many grass, bug, and dark/ghost types (murkrow, drowzee, capsakid, etc)
     - Reach Pythios Town, based on Delphi
         - Town is very "autumn-themed", with orange-red color palette alternatives compatible with tree sprites
-        - Gym 3: Sabella, the Ghost/Psychic Gym Leader
+        - Gym 3: Kleio, the Ghost/Psychic Gym Leader
             - Based on the Oracle of Delphi, and Enoch from Over the Garden Wall (wears pumpkin mask)
             - Gym centered around mysterious spirits in fields of crops
             - Team: Misdreavus, Spoink, and Pumpkaboo (level 17-20)
@@ -328,7 +324,7 @@ REGION PLAN:
         - Froslass Cavern Floor 3: Contains Froslass overworld event on other side of water, gotta set it up
     - Reach Sofos City, based on Athens 
         - Sprawling metropolis city with "department store", a contest hall, and more
-        - Gym 4: Meneswo (proto-italic root of name Minerva), a Tactical gym leader (multi-type, all about stat boosts and baton pass)
+        - Gym 4: Terpsikore (proto-italic root of name Minerva), a Tactical gym leader (multi-type, all about stat boosts and baton pass)
             - Based on Athena, calm + collected, all about law and order
             - Team: Ninjask, Riolu, Mienfoo, and Whimsicott (double battle) (level 24-27)
                 - Ninjask has Speed Boost + baton pass, Whimsicott sets up tailwinds, Riolu + Mienfoo are offense
@@ -339,7 +335,7 @@ REGION PLAN:
         - MapSec: Named the Asteri Sea, the "northern" section of the Sea of Ilios
         - Marmaro is an island with Marble quarries, many rock and fairy types
         - Myrrini is an island with a large, busy port and is covered in grape vines
-            - Gym 5: Thyrsus, a Poison/Confusion themed gym leader
+            - Gym 5: Euterpe, a Poison/Confusion themed gym leader
                 - Based on Dionysus, always talking about festivals and parties
                 - Team: Ludicolo (party!), Grafaiai, Seviper, Gligar, and Hypno (level 30-32)
                 - Unlocks Dive outside of battle

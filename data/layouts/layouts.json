@@ -4667,7 +4667,7 @@
       "width": 90,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_FrescoIsles",
       "border_filepath": "data/layouts/SeaOfVulcai_West/border.bin",
       "blockdata_filepath": "data/layouts/SeaOfVulcai_West/map.bin"
     },
@@ -4677,7 +4677,7 @@
       "width": 90,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_FrescoIsles",
       "border_filepath": "data/layouts/SeaOfVulcai_Southwest/border.bin",
       "blockdata_filepath": "data/layouts/SeaOfVulcai_Southwest/map.bin"
     },
@@ -4687,7 +4687,7 @@
       "width": 80,
       "height": 50,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_FrescoIsles",
       "border_filepath": "data/layouts/FrescoIsland/border.bin",
       "blockdata_filepath": "data/layouts/FrescoIsland/map.bin"
     },
@@ -5630,6 +5630,16 @@
       "secondary_tileset": "gTileset_Ilios_GenericBuilding",
       "border_filepath": "data/layouts/PentepetalCity_House5/border.bin",
       "blockdata_filepath": "data/layouts/PentepetalCity_House5/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNKEN_TEMPLE",
+      "name": "SunkenTemple_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SunkenTemple/border.bin",
+      "blockdata_filepath": "data/layouts/SunkenTemple/map.bin"
     }
   ]
 }

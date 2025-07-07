@@ -260,7 +260,7 @@ TheDelphis_EventScript_LeaveShipTrigger_11:
 
 TheDelphis_EventScript_LeaveShipTrigger_12:
 # 145 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_FRESCO_ISLAND, 65, 27
+	warp MAP_FRESCO_ISLAND, 10, 25
 # 146 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1

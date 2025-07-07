@@ -147,33 +147,33 @@ PythiosTown_Gym_EventScript_Trainer_PythiosGym_Yanna::
 	end
 
 
-PythiosTown_Gym_EventScript_Sabella::
+PythiosTown_Gym_EventScript_Kleio::
 # 150 "data/maps/PythiosTown_Gym/scripts.pory"
 	lock
 # 151 "data/maps/PythiosTown_Gym/scripts.pory"
 	faceplayer
 # 152 "data/maps/PythiosTown_Gym/scripts.pory"
-	goto_if_unset FLAG_HARD_MODE, PythiosTown_Gym_EventScript_Sabella_2
+	goto_if_unset FLAG_HARD_MODE, PythiosTown_Gym_EventScript_Kleio_2
 # 158 "data/maps/PythiosTown_Gym/scripts.pory"
-	goto PythiosTown_Gym_EventScript_Sabella_HardDifficulty
-PythiosTown_Gym_EventScript_Sabella_1:
+	goto PythiosTown_Gym_EventScript_Kleio_HardDifficulty
+PythiosTown_Gym_EventScript_Kleio_1:
 # 160 "data/maps/PythiosTown_Gym/scripts.pory"
 	release
 	end
 
-PythiosTown_Gym_EventScript_Sabella_2:
+PythiosTown_Gym_EventScript_Kleio_2:
 # 154 "data/maps/PythiosTown_Gym/scripts.pory"
-	goto PythiosTown_Gym_EventScript_Sabella_NormalDifficulty
-	goto PythiosTown_Gym_EventScript_Sabella_1
+	goto PythiosTown_Gym_EventScript_Kleio_NormalDifficulty
+	goto PythiosTown_Gym_EventScript_Kleio_1
 
 
-PythiosTown_Gym_EventScript_Sabella_NormalDifficulty::
+PythiosTown_Gym_EventScript_Kleio_NormalDifficulty::
 # 166 "data/maps/PythiosTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_SABELLA, PythiosTown_Gym_Text_SabellaIntro, PythiosTown_Gym_Text_SabellaDefeat, PythiosTown_Gym_EventScript_Sabella_DefeatedScript, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_KLEIO, PythiosTown_Gym_Text_KleioIntro, PythiosTown_Gym_Text_KleioDefeat, PythiosTown_Gym_EventScript_Kleio_DefeatedScript, NO_MUSIC
 # 167 "data/maps/PythiosTown_Gym/scripts.pory"
-	speakername PythiosTown_Gym_EventScript_Sabella_NormalDifficulty_Text_0
+	speakername PythiosTown_Gym_EventScript_Kleio_NormalDifficulty_Text_0
 # 168 "data/maps/PythiosTown_Gym/scripts.pory"
-	msgbox PythiosTown_Gym_EventScript_Sabella_NormalDifficulty_Text_1
+	msgbox PythiosTown_Gym_EventScript_Kleio_NormalDifficulty_Text_1
 # 169 "data/maps/PythiosTown_Gym/scripts.pory"
 	closemessage
 # 170 "data/maps/PythiosTown_Gym/scripts.pory"
@@ -181,13 +181,13 @@ PythiosTown_Gym_EventScript_Sabella_NormalDifficulty::
 	end
 
 
-PythiosTown_Gym_EventScript_Sabella_HardDifficulty::
+PythiosTown_Gym_EventScript_Kleio_HardDifficulty::
 # 175 "data/maps/PythiosTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_SABELLA_HARD, PythiosTown_Gym_Text_SabellaIntro, PythiosTown_Gym_Text_SabellaDefeat, PythiosTown_Gym_EventScript_Sabella_DefeatedScript, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_KLEIO_HARD, PythiosTown_Gym_Text_KleioIntro, PythiosTown_Gym_Text_KleioDefeat, PythiosTown_Gym_EventScript_Kleio_DefeatedScript, NO_MUSIC
 # 176 "data/maps/PythiosTown_Gym/scripts.pory"
-	speakername PythiosTown_Gym_EventScript_Sabella_NormalDifficulty_Text_0
+	speakername PythiosTown_Gym_EventScript_Kleio_NormalDifficulty_Text_0
 # 177 "data/maps/PythiosTown_Gym/scripts.pory"
-	msgbox PythiosTown_Gym_EventScript_Sabella_NormalDifficulty_Text_1
+	msgbox PythiosTown_Gym_EventScript_Kleio_NormalDifficulty_Text_1
 # 178 "data/maps/PythiosTown_Gym/scripts.pory"
 	closemessage
 # 179 "data/maps/PythiosTown_Gym/scripts.pory"
@@ -195,11 +195,11 @@ PythiosTown_Gym_EventScript_Sabella_HardDifficulty::
 	end
 
 
-PythiosTown_Gym_EventScript_Sabella_DefeatedScript::
+PythiosTown_Gym_EventScript_Kleio_DefeatedScript::
 # 193 "data/maps/PythiosTown_Gym/scripts.pory"
 	setflag FLAG_SUPPRESS_SPEAKER_NAME
 # 194 "data/maps/PythiosTown_Gym/scripts.pory"
-	message PythiosTown_Gym_EventScript_Sabella_DefeatedScript_Text_0
+	message PythiosTown_Gym_EventScript_Kleio_DefeatedScript_Text_0
 # 195 "data/maps/PythiosTown_Gym/scripts.pory"
 	waitmessage
 # 196 "data/maps/PythiosTown_Gym/scripts.pory"
@@ -217,17 +217,17 @@ PythiosTown_Gym_EventScript_Sabella_DefeatedScript::
 # 205 "data/maps/PythiosTown_Gym/scripts.pory"
 	settrainerflag TRAINER_PYTHIOSGYM_YANNA
 # 210 "data/maps/PythiosTown_Gym/scripts.pory"
-	speakername PythiosTown_Gym_EventScript_Sabella_NormalDifficulty_Text_0
+	speakername PythiosTown_Gym_EventScript_Kleio_NormalDifficulty_Text_0
 # 211 "data/maps/PythiosTown_Gym/scripts.pory"
-	msgbox PythiosTown_Gym_EventScript_Sabella_DefeatedScript_Text_1
+	msgbox PythiosTown_Gym_EventScript_Kleio_DefeatedScript_Text_1
 # 212 "data/maps/PythiosTown_Gym/scripts.pory"
 	closemessage
 # 215 "data/maps/PythiosTown_Gym/scripts.pory"
 	giveitem ITEM_TM_CALM_MIND
 # 216 "data/maps/PythiosTown_Gym/scripts.pory"
-	speakername PythiosTown_Gym_EventScript_Sabella_NormalDifficulty_Text_0
+	speakername PythiosTown_Gym_EventScript_Kleio_NormalDifficulty_Text_0
 # 217 "data/maps/PythiosTown_Gym/scripts.pory"
-	msgbox PythiosTown_Gym_EventScript_Sabella_DefeatedScript_Text_2
+	msgbox PythiosTown_Gym_EventScript_Kleio_DefeatedScript_Text_2
 # 218 "data/maps/PythiosTown_Gym/scripts.pory"
 	closemessage
 # 221 "data/maps/PythiosTown_Gym/scripts.pory"
@@ -269,11 +269,10 @@ PythiosTown_Gym_EventScript_GymMan_Text_1:
 PythiosTown_Gym_EventScript_GymMan_Text_2:
 # 34 "data/maps/PythiosTown_Gym/scripts.pory"
 	.string "Welcome to the Pythios Town Gym!\p"
-	.string "The Gym Leader, Sabella, has designed\n"
-	.string "this building as a paradise for\l"
-	.string "Ghost-type and other\l"
-	.string "spiritually-inclined Pokémon. Of\l"
-	.string "course, that makes it seem pretty\l"
+	.string "The Gym Leader, Kleio, has designed this\n"
+	.string "building as a paradise for Ghost-type\l"
+	.string "and other spiritually-inclined Pokémon.\l"
+	.string "Of course, that makes it seem pretty\l"
 	.string "creepy to me...$"
 
 PythiosTown_Gym_EventScript_Mimikyu_Text_0:
@@ -303,8 +302,8 @@ PythiosTown_Gym_EventScript_Trainer_PythiosGym_Tafos_Text_0:
 
 PythiosTown_Gym_EventScript_Trainer_PythiosGym_Tafos_Text_1:
 # 78 "data/maps/PythiosTown_Gym/scripts.pory"
-	.string "Sabella is guarded by two older folks\n"
-	.string "who will try to start a Double Battle. Be\l"
+	.string "Kleio is guarded by two older folks who\n"
+	.string "will try to start a Double Battle. Be\l"
 	.string "ready for that!$"
 
 PythiosTown_Gym_EventScript_Trainer_PythiosGym_Addonis_Text_0:
@@ -324,7 +323,7 @@ PythiosTown_Gym_EventScript_Trainer_PythiosGym_Geroni_Text_1:
 # 114 "data/maps/PythiosTown_Gym/scripts.pory"
 	.string "We make sure only the strongest,\n"
 	.string "smartest Pokémon Trainers make it to\l"
-	.string "Sabella.$"
+	.string "Kleio.$"
 
 PythiosTown_Gym_EventScript_Trainer_PythiosGym_Yanna_Text_0:
 # 131 "data/maps/PythiosTown_Gym/scripts.pory"
@@ -332,25 +331,25 @@ PythiosTown_Gym_EventScript_Trainer_PythiosGym_Yanna_Text_0:
 
 PythiosTown_Gym_EventScript_Trainer_PythiosGym_Yanna_Text_1:
 # 132 "data/maps/PythiosTown_Gym/scripts.pory"
-	.string "Many Pokémon Trainers come to Sabella,\n"
+	.string "Many Pokémon Trainers come to Kleio,\n"
 	.string "but very few are worthy.$"
 
-PythiosTown_Gym_EventScript_Sabella_NormalDifficulty_Text_0:
+PythiosTown_Gym_EventScript_Kleio_NormalDifficulty_Text_0:
 # 167 "data/maps/PythiosTown_Gym/scripts.pory"
-	.string "Sabella$"
+	.string "Kleio$"
 
-PythiosTown_Gym_EventScript_Sabella_NormalDifficulty_Text_1:
+PythiosTown_Gym_EventScript_Kleio_NormalDifficulty_Text_1:
 # 168 "data/maps/PythiosTown_Gym/scripts.pory"
 	.string "As I saw in my visions, you were a worthy\n"
-	.string "challenger. I hope we meet again one\l"
-	.string "day, {PLAYER}.$"
+	.string "challenger. One day, we shall meet again,\l"
+	.string "{PLAYER}.$"
 
-PythiosTown_Gym_EventScript_Sabella_DefeatedScript_Text_0:
+PythiosTown_Gym_EventScript_Kleio_DefeatedScript_Text_0:
 # 194 "data/maps/PythiosTown_Gym/scripts.pory"
 	.string "{PLAYER} received the Grave Badge\n"
-	.string "from Sabella.$"
+	.string "from Kleio.$"
 
-PythiosTown_Gym_EventScript_Sabella_DefeatedScript_Text_1:
+PythiosTown_Gym_EventScript_Kleio_DefeatedScript_Text_1:
 # 211 "data/maps/PythiosTown_Gym/scripts.pory"
 	.string "The Grave Badge proves your skills of\n"
 	.string "connecting to the hearts and souls of\l"
@@ -358,7 +357,7 @@ PythiosTown_Gym_EventScript_Sabella_DefeatedScript_Text_1:
 	.string "the {COLOR GREEN}HM Flash{COLOR DARK_GRAY} outside of battle.\p"
 	.string "Please, take this before you leave.$"
 
-PythiosTown_Gym_EventScript_Sabella_DefeatedScript_Text_2:
+PythiosTown_Gym_EventScript_Kleio_DefeatedScript_Text_2:
 # 217 "data/maps/PythiosTown_Gym/scripts.pory"
 	.string "That TM contains the move {COLOR GREEN}Calm Mind{COLOR DARK_GRAY},\n"
 	.string "which will boost your Pokémon's stats.\p"
@@ -366,8 +365,7 @@ PythiosTown_Gym_EventScript_Sabella_DefeatedScript_Text_2:
 	.string "make sure you speak with a {COLOR GREEN}strange\l"
 	.string "sailor{COLOR DARK_GRAY} on the beach. Then you'll be\l"
 	.string "ready to head east, through the caves\l"
-	.string "to {COLOR GREEN}Sofos City{COLOR DARK_GRAY}. I see greatness in your\l"
-	.string "future.$"
+	.string "to {COLOR GREEN}Sofos City{COLOR DARK_GRAY}. We will meet again.$"
 
 PythiosTown_Gym_Text_Trainer_PythiosGym_RosaraIntro::
 # 65 "data/maps/PythiosTown_Gym/scripts.pory"
@@ -386,8 +384,7 @@ PythiosTown_Gym_Text_Trainer_PythiosGym_TafosIntro::
 
 PythiosTown_Gym_Text_Trainer_PythiosGym_TafosDefeat::
 # 87 "data/maps/PythiosTown_Gym/scripts.pory"
-	.string "You might have a shot at beating\n"
-	.string "Sabella!$"
+	.string "You might have a shot at beating Kleio!$"
 
 PythiosTown_Gym_Text_Trainer_PythiosGym_AddonisIntro::
 # 101 "data/maps/PythiosTown_Gym/scripts.pory"
@@ -413,19 +410,20 @@ PythiosTown_Gym_Text_Trainer_PythiosGym_YannaIntro::
 
 PythiosTown_Gym_Text_Trainer_PythiosGym_YannaDefeat::
 # 141 "data/maps/PythiosTown_Gym/scripts.pory"
-	.string "It seems you are worthy of Sabella.$"
+	.string "It seems you are worthy of Kleio.$"
 
-PythiosTown_Gym_Text_SabellaIntro::
+PythiosTown_Gym_Text_KleioIntro::
 # 182 "data/maps/PythiosTown_Gym/scripts.pory"
 	.string "Chaire. I knew you were coming,\n"
-	.string "{PLAYER}. I've seen your journey in my\l"
-	.string "visions, and I believe you are ready to\l"
-	.string "challenge me.\p"
+	.string "{PLAYER}. I am the Muse of the Past,\l"
+	.string "the Present, and the Future, so I knew\l"
+	.string "of your coming long before you arrived\l"
+	.string "in Ilios.\p"
 	.string "The Fates have led us here for a great\n"
 	.string "battle. Let us follow our destiny, here\l"
 	.string "and now!$"
 
-PythiosTown_Gym_Text_SabellaDefeat::
+PythiosTown_Gym_Text_KleioDefeat::
 # 186 "data/maps/PythiosTown_Gym/scripts.pory"
-	.string "Amazing... You've earned your third Gym\n"
-	.string "Badge, as predicted.$"
+	.string "You will surely be spoken of in the\n"
+	.string "histories of our region.$"

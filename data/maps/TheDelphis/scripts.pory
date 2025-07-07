@@ -142,7 +142,7 @@ script TheDelphis_EventScript_LeaveShipTrigger
         }
         elif(var(VAR_CHOSEN_SAIL_LOCATION) == 8) // fresco isles
         {
-            warp(MAP_FRESCO_ISLAND, 65, 27) // currently set to Pokémon center entrance, no dock yet
+            warp(MAP_FRESCO_ISLAND, 10, 25) // currently set to Pokémon center entrance, no dock yet
             waitstate
         }
         elif(var(VAR_CHOSEN_SAIL_LOCATION) == 9) // palati city

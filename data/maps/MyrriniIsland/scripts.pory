@@ -45,7 +45,7 @@ script MyrriniIsland_EventScript_TryChimeraEvent
 script MyrriniIsland_Sign_GymSign
 {
     lock
-    msgbox(format("Gym Leader: Thyrsus\n King of Parties and Poisons"))
+    msgbox(format("Gym Leader: Euterpe\n Muse of Parties and Poisons"))
     closemessage
     release
     end
@@ -477,16 +477,16 @@ script MyrriniIsland_EventScript_ChimeraEvent
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
-    clearflag(FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND)
+    clearflag(FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND)
     addobject(55)
     showobjectat(55, MAP_MYRRINI_ISLAND)
     applymovement(55, Common_Movement_WalkDown)
-    speakername("Thyrsus")
+    speakername("Euterpe")
     msgbox(format("{PLAYER}, did you hear that? Sounds like someone's in trouble. No disruptions to the party on my Island!"))
     closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerWalkDownToEvent)
-    applymovement(55, MyrriniIsland_Movement_ThyrsusApproach)
+    applymovement(55, MyrriniIsland_Movement_EuterpeApproach)
     waitmovement(0)
     delay(10)
     applymovement(52, Common_Movement_FaceUp)
@@ -496,15 +496,15 @@ script MyrriniIsland_EventScript_ChimeraEvent
     closemessage
     delay(10)
 
-    speakername("Thyrsus")
+    speakername("Euterpe")
     msgbox(format("HOLD IT!"))
     closemessage
     waitmovement(0)
-    applymovement(55, MyrriniIsland_Movement_PlayerAndThyrsusReposition)
+    applymovement(55, MyrriniIsland_Movement_PlayerAndEuterpeReposition)
     waitmovement(0)
     applymovement(53, Common_Movement_FaceUp)
     waitmovement(0)
-    speakername("Thyrsus")
+    speakername("Euterpe")
     msgbox(format("Team Chimera? On MY island?! No no no, this is all wrong! I don't appreciate party crashers here!\p Will you leave on your own? Or do I need my Hypno to throw you into the sea?"))
     closemessage
     applymovement(53, Common_Movement_JumpInPlaceUp)
@@ -512,7 +512,7 @@ script MyrriniIsland_EventScript_ChimeraEvent
     speakername("Chimera Admin 1")
     msgbox(format("Kekeke, you think you can take us on? You're fools, all of you! Get ready to-"))
     closemessage
-    applymovement(54, MyrriniIsland_Movement_AdminNoticesMara)
+    applymovement(54, MyrriniIsland_Movement_AdminNoticesKalliope)
     waitmovement(0)
     applymovement(53, Common_Movement_ExclamationMark)
     waitmovement(0)
@@ -523,12 +523,12 @@ script MyrriniIsland_EventScript_ChimeraEvent
     applymovement(54, MyrriniIsland_Movement_AdminsMoveForBoss)
     waitmovement(0)
 
-    applymovement(OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerAndThyrsusReposition)
-    applymovement(55, MyrriniIsland_Movement_PlayerAndThyrsusReposition)
+    applymovement(OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerAndEuterpeReposition)
+    applymovement(55, MyrriniIsland_Movement_PlayerAndEuterpeReposition)
     applymovement(52, Common_Movement_FaceDown)
     waitmovement(0)
 
-    applymovement(56, MyrriniIsland_Movement_MaraApproaches)
+    applymovement(56, MyrriniIsland_Movement_KalliopeApproaches)
     waitmovement(0)
     speakername("Chimera Boss")
     msgbox(format("Hm. Quite the party we have going on here, eh? A great, big circus, and all I see are clowns."))
@@ -539,7 +539,7 @@ script MyrriniIsland_EventScript_ChimeraEvent
     msgbox(format("You two. The tip specifically told us MARMARO Island, not MYRRINI Island. But when I got to the mines, imagine my surprise to see you weren't there.\p Grr...! {COLOR RED}You FOOLS! This artifact is KEY to reawakening the Ancient Pokémon, but here you are on the WRONG ISLAND!{COLOR DARK_GRAY}"))
     closemessage
     speakername("Chimera Admins")
-    msgbox(format("W-we-we're sorry, {COLOR GREEN}Miss Mara{COLOR DARK_GRAY}! We'll get to the {COLOR GREEN}Marmaro Mines{COLOR DARK_GRAY} right away!"))
+    msgbox(format("W-we-we're sorry, {COLOR RED}Miss Kalliope{COLOR DARK_GRAY}! We'll get to the {COLOR GREEN}Marmaro Mines{COLOR DARK_GRAY} right away!"))
     closemessage
     applymovement(53, MyrriniIsland_Movement_AdminsFlee)
     applymovement(54, MyrriniIsland_Movement_AdminsFlee)
@@ -550,8 +550,8 @@ script MyrriniIsland_EventScript_ChimeraEvent
     applymovement(56, Common_Movement_FaceUp)
     waitmovement(0)
 
-    speakername("Miss Mara")
-    msgbox(format("Sigh... I apologize for losing my temper. Their repeated failures to fight you have brought shame to Team Chimera. In fact, if you fought again now, you'd likely win.\p My name is Mara. I am the {COLOR GREEN}leader of Team Chimera{COLOR DARK_GRAY}. Just listen to what I have to say, then I will leave Myrrini Island in peace.\p I have always focused on the financial side of the world. The value of raw materials, services, even Pokémon... everything can be bought and sold for the right price.\p {COLOR GREEN}Lazarus Taxa{COLOR DARK_GRAY}, the rare Pokémon once thought extinct, are the ultimate financial opportunity. Can't you see? If we simply rounded them all up and sold them to the highest bidder, we could have more money than all other Regions combined! Furthermore, some ancient Pokémon are on {COLOR GREEN}another level of power{COLOR DARK_GRAY}, able to {COLOR GREEN}control the Earth, the Sea, and the Sky{COLOR DARK_GRAY}. We could drill and mine for fuel while crushing all opposition. This is my ultimate dream."))
+    speakername("Kalliope")
+    msgbox(format("Sigh... I apologize for losing my temper. Their repeated failures to fight you have brought shame to Team Chimera. In fact, if you fought again now, you'd likely win.\p My name is Kalliope. I am the {COLOR GREEN}leader of Team Chimera{COLOR DARK_GRAY}. Just listen to what I have to say, then I will leave Myrrini Island in peace.\p I have always focused on the financial side of the world. The value of raw materials, services, even Pokémon... everything can be bought and sold for the right price.\p {COLOR GREEN}Lazarus Taxa{COLOR DARK_GRAY}, the rare Pokémon once thought extinct, are the ultimate financial opportunity. Can't you see? If we simply rounded them all up and sold them to the highest bidder, we could have more money than all other Regions combined! Furthermore, some ancient Pokémon are on {COLOR GREEN}another level of power{COLOR DARK_GRAY}, able to {COLOR GREEN}control the Earth, the Sea, and the Sky{COLOR DARK_GRAY}. We could drill and mine for fuel while crushing all opposition. This is my ultimate dream."))
     closemessage
     delay(10)
     applymovement(52, Common_Movement_JumpInPlaceDown)
@@ -561,15 +561,15 @@ script MyrriniIsland_EventScript_ChimeraEvent
     closemessage
     applymovement(56, Common_Movement_FaceLeft)
     waitmovement(0)
-    speakername("Miss Mara")
+    speakername("Kalliope")
     msgbox(format("Money makes the world go 'round, you naive child. When I look at a forest filled with wildlife, all I see are dollar signs. The Pokémon, the lumber, and the fossil fuels in the ground below - all can be sold, so they must all be mine."))
     closemessage
     applymovement(56, Common_Movement_FaceUp)
     waitmovement(0)
-    speakername("Miss Mara")
+    speakername("Kalliope")
     msgbox(format("{PLAYER}, right? My Admins, as simple as they can be, have told me about you. You've given us more trouble than just about anyone else, but your defeat will come.\p Our plans are nearing fruition. Soon, we will {COLOR GREEN}awaken ancient Pokémon to shake the Earth{COLOR DARK_GRAY} and claim what is ours! I can assure you, you won't want to miss the show!"))
     closemessage
-    applymovement(56, MyrriniIsland_Movement_MaraLeaves)
+    applymovement(56, MyrriniIsland_Movement_KalliopeLeaves)
     waitmovement(0)
     delay(10)
 
@@ -577,10 +577,10 @@ script MyrriniIsland_EventScript_ChimeraEvent
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     applymovement(55, Common_Movement_FaceLeft)
     waitmovement(0)
-    speakername("Thyrsus")
-    msgbox(format("There's been chatter between Gym Leaders about Team Chimera, but as far as I know, this is the first time the Boss herself has shown up. I'm just glad they're gone from Myrrini Island.\p The Boss, Mara, mentioned something about the {COLOR GREEN}Marmaro Island Mines{COLOR DARK_GRAY} to the Chimera Admins. If you're on the tail of Team Chimera, I'd go there. For now, I'll stay here and keep Myrrini Island safe."))
+    speakername("Euterpe")
+    msgbox(format("Kalliope... I... I can't believe it. She was the {COLOR GREEN}8th Gym Leader{COLOR DARK_GRAY}, living in a southern village called Areios Town. Team Chimera raided it and made it their Hideout a few months ago, and Kalliope went missing. All of us Gym Leaders thought she was captured, but... She's the {COLOR RED}Leader of Team Chimera{COLOR DARK_GRAY}?!\p In any case, she mentioned something about the {COLOR GREEN}Marmaro Island Mines{COLOR DARK_GRAY} to the Chimera Admins. If you're on the tail of Team Chimera, I'd go there. For now, I'll stay here and keep Myrrini Island safe."))
     closemessage
-    applymovement(55, MyrriniIsland_Movement_ThyrsusLeaves)
+    applymovement(55, MyrriniIsland_Movement_EuterpeLeaves)
     waitmovement(0)
 
     // Start Quest to visit Marmaro Island Mines
@@ -606,7 +606,7 @@ script MyrriniIsland_EventScript_ChimeraEvent
     removeobject(55)
     removeobject(56)
     setflag(FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND)
-    setflag(FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND)
+    setflag(FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND)
     setflag(FLAG_HIDE_GRUNT_BLOCKING_MARMARO_MINES) // opens access to mines
 
     // Start Quest to visit Péntepetal City and meet Rania there
@@ -632,7 +632,7 @@ movement MyrriniIsland_Movement_PlayerWalkDownToEvent
     face_down
     step_end
 }
-movement MyrriniIsland_Movement_ThyrsusApproach
+movement MyrriniIsland_Movement_EuterpeApproach
 {
     walk_down * 4
     delay_16
@@ -640,7 +640,7 @@ movement MyrriniIsland_Movement_ThyrsusApproach
     face_down
     step_end
 }
-movement MyrriniIsland_Movement_AdminNoticesMara
+movement MyrriniIsland_Movement_AdminNoticesKalliope
 {
     face_down
     delay_16
@@ -658,14 +658,14 @@ movement MyrriniIsland_Movement_AdminsMoveForBoss
     face_left
     step_end
 }
-movement MyrriniIsland_Movement_PlayerAndThyrsusReposition
+movement MyrriniIsland_Movement_PlayerAndEuterpeReposition
 {
     walk_right
     walk_down
     face_down
     step_end
 }
-movement MyrriniIsland_Movement_MaraApproaches
+movement MyrriniIsland_Movement_KalliopeApproaches
 {
     walk_up * 5
     walk_right
@@ -678,14 +678,14 @@ movement MyrriniIsland_Movement_AdminsFlee
     walk_fast_right * 9
     step_end
 }
-movement MyrriniIsland_Movement_MaraLeaves
+movement MyrriniIsland_Movement_KalliopeLeaves
 {
     walk_down
     walk_left
     walk_down * 7
     step_end
 }
-movement MyrriniIsland_Movement_ThyrsusLeaves
+movement MyrriniIsland_Movement_EuterpeLeaves
 {
     walk_up
     walk_left * 2

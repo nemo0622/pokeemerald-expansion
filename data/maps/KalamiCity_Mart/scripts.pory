@@ -71,7 +71,7 @@ script KalamiCity_Mart_EventScript_HexManiac
     lock
     faceplayer
     speakername("Hex Maniac")
-    msgbox(format("Mattaios and his Gym helps produce a ton of new Poké ball types! We have a shopkeeper dedicated to some of them here."))
+    msgbox(format("Ourani and her Gym helps produce a ton of new Poké ball types! We have a shopkeeper dedicated to some of them here."))
     closemessage
     release
     end

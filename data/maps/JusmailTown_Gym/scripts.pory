@@ -27,7 +27,7 @@ script JusmailTown_Gym_EventScript_GymMan
     }
     else
     {
-        msgbox(format("Welcome to the Jusmail Town Gym!\p The Gym Leader, Deo, designed this building to be a home for her Grass and Bug-type Pokémon. It's becoming a bit of a maze!"))
+        msgbox(format("Welcome to the Jusmail Town Gym!\p The Gym Leader, Polymnia, designed this building to be a home for her Grass and Bug-type Pokémon. It's becoming a bit of a maze!"))
     }
     closemessage
     release
@@ -49,53 +49,53 @@ script JusmailTown_Gym_EventScript_Skiddo
     end
 }
 
-script JusmailTown_Gym_EventScript_Deo
+script JusmailTown_Gym_EventScript_Polymnia
 {
     lock
     faceplayer
     if(!flag(FLAG_HARD_MODE))
     {
-        goto(JusmailTown_Gym_EventScript_Deo_NormalDifficulty)
+        goto(JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty)
     }
     else
     {
-        goto(JusmailTown_Gym_EventScript_Deo_HardDifficulty)
+        goto(JusmailTown_Gym_EventScript_Polymnia_HardDifficulty)
     }
     release
     end
 }
 
-script JusmailTown_Gym_EventScript_Deo_NormalDifficulty // called when on normal difficulty
+script JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty // called when on normal difficulty
 {
-    trainerbattle_single(TRAINER_LEADER_DEO, JusmailTown_Gym_Text_DeoIntro, JusmailTown_Gym_Text_DeoDefeat, JusmailTown_Gym_EventScript_Deo_DefeatedScript, NO_MUSIC)
-    speakername("Deo")
+    trainerbattle_single(TRAINER_LEADER_POLYMNIA, JusmailTown_Gym_Text_PolymniaIntro, JusmailTown_Gym_Text_PolymniaDefeat, JusmailTown_Gym_EventScript_Polymnia_DefeatedScript, NO_MUSIC)
+    speakername("Polymnia")
     msgbox(format("Skiddo and I are most comfortable here in Jusmail Town. The world can be scary, so it's best to find somewhere you love and put down your roots."))
     closemessage
     release
     end
 }
-script JusmailTown_Gym_EventScript_Deo_HardDifficulty // called when on hard difficulty
+script JusmailTown_Gym_EventScript_Polymnia_HardDifficulty // called when on hard difficulty
 {
-    trainerbattle_single(TRAINER_LEADER_DEO_HARD, JusmailTown_Gym_Text_DeoIntro, JusmailTown_Gym_Text_DeoDefeat, JusmailTown_Gym_EventScript_Deo_DefeatedScript, NO_MUSIC)
-    speakername("Deo")
+    trainerbattle_single(TRAINER_LEADER_POLYMNIA_HARD, JusmailTown_Gym_Text_PolymniaIntro, JusmailTown_Gym_Text_PolymniaDefeat, JusmailTown_Gym_EventScript_Polymnia_DefeatedScript, NO_MUSIC)
+    speakername("Polymnia")
     msgbox(format("Skiddo and I are most comfortable here in Jusmail Town. The world can be scary, so it's best to find somewhere you love and put down your roots."))
     closemessage
     release
     end
 }
-text JusmailTown_Gym_Text_DeoIntro
+text JusmailTown_Gym_Text_PolymniaIntro
 {
-    format("Welcome, welcome! I'm Deo. I see this is your first Gym Battle, hm? Wonderful!\p My Pokémon are all caught and raised on farms around the Ilios Region. Think you can beat them?")
+    format("Welcome, welcome! I'm Polymnia, Muse of Hymns and Agriculture. I see this is your first Gym Battle, hm? Wonderful!\p My Pokémon are all caught and raised on farms around the Ilios Region. Think you can beat them?")
 }
-text JusmailTown_Gym_Text_DeoDefeat
+text JusmailTown_Gym_Text_PolymniaDefeat
 {
-    format("Ah, that natural talent! You've earned your first Gym Badge!")
+    format("Your battling is as moving as a hymn. You've earned your first Badge!")
 }
 // Script called when you defeat the gym leader!
-script JusmailTown_Gym_EventScript_Deo_DefeatedScript
+script JusmailTown_Gym_EventScript_Polymnia_DefeatedScript
 {
     setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
-    message(format("{PLAYER} received the Harvest Badge from Deo."))
+    message(format("{PLAYER} received the Harvest Badge from Polymnia."))
 	waitmessage
 	call(Common_EventScript_PlayGymBadgeFanfare)
 
@@ -110,13 +110,13 @@ script JusmailTown_Gym_EventScript_Deo_DefeatedScript
     clearflag(FLAG_HIDE_RANIA_JUSMAIL)
 
     // Explain badge
-    speakername("Deo")
+    speakername("Polymnia")
     msgbox(format("The Harvest Badge is a sign of an up-and-coming trainer. You've proven that you can form a close bond with your Pokémon. You'll also be able to use the {COLOR GREEN}HM Cut{COLOR DARK_GRAY} outside of battle.\p Ah, how forgetful of me! Take this before you go!"))
     closemessage
 
     // Give TM reward and explain, plus end dialogue
     giveitem(ITEM_TM_BULLET_SEED)
-    speakername("Deo")
+    speakername("Polymnia")
     msgbox(format("That TM contains the move {COLOR GREEN}Bullet Seed{COLOR DARK_GRAY}! That's a move my Pokémon practiced by shooting seeds from the farms around here.\p You're an Acrisia University researcher, yes? You should {COLOR GREEN}return to the University{COLOR DARK_GRAY} and {COLOR GREEN}speak to the Professor{COLOR DARK_GRAY} about what to do next."))
     closemessage
 
@@ -164,7 +164,7 @@ text JusmailTown_Gym_Text_Trainer_JusmailGym_IasonIntro
 }
 text JusmailTown_Gym_Text_Trainer_JusmailGym_IasonDefeat
 {
-    format("You might be able to beat Deo!")
+    format("You might be able to beat Polymnia!")
 }
 
 script JusmailTown_Gym_EventScript_Trainer_JusmailGym_Bryce

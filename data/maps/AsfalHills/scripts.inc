@@ -226,7 +226,7 @@ AsfalHills_EventScript_ManTryingToGetSouth::
 # 208 "data/maps/AsfalHills/scripts.pory"
 	lock
 # 209 "data/maps/AsfalHills/scripts.pory"
-	applymovement 15, Common_Movement_ExclamationMark
+	emote 15, EMOTE_EXCLAM
 # 210 "data/maps/AsfalHills/scripts.pory"
 	waitmovement 0
 # 211 "data/maps/AsfalHills/scripts.pory"
@@ -728,10 +728,12 @@ AsfalHills_EventScript_WomanTryingToGetSouth_Text_0:
 
 AsfalHills_EventScript_WomanTryingToGetSouth_Text_1:
 # 230 "data/maps/AsfalHills/scripts.pory"
-	.string "Stopping people from getting to Port\n"
-	.string "Pello... this is unbelieveable! There's no\l"
-	.string "way this is just about sinkholes like\l"
-	.string "they say.$"
+	.string "Areios Town, the hamlet south of Port\n"
+	.string "Pello, was taken over by Team Chimera a\l"
+	.string "few months ago. Now, we're even being\l"
+	.string "blocked from Port Pello. Someone needs\l"
+	.string "to stop Team Chimera before the whole\l"
+	.string "region falls apart!$"
 
 AsfalHills_EventScript_Trainer_AsfalHills_Prothoe_Text_0:
 # 239 "data/maps/AsfalHills/scripts.pory"

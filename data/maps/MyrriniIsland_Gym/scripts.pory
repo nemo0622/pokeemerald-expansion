@@ -27,7 +27,7 @@ script MyrriniIsland_Gym_EventScript_GymMan
     }
     else
     {
-        msgbox(format("Welcome to the Myrrini Island Gym!\p The Gym Leader you'll be facing is Thyrsus, the so-called King of Parties and Poisons. Naturally, he uses {COLOR GREEN}Poison-type{COLOR DARK_GRAY} Pokémon and {COLOR GREEN}Status conditions{COLOR DARK_GRAY} to his advantage. Make sure to stock up on status-healing items!"))
+        msgbox(format("Welcome to the Myrrini Island Gym!\p The Gym Leader you'll be facing is Euterpe, the Muse of Parties and Poisons. Naturally, she uses {COLOR GREEN}Poison-type{COLOR DARK_GRAY} Pokémon and {COLOR GREEN}Status conditions{COLOR DARK_GRAY} to her advantage. Make sure to stock up on status-healing items!"))
     }
     closemessage
     release
@@ -43,7 +43,7 @@ script MyrriniIsland_Gym_EventScript_Hypno
     msgbox("Snuffle!")
     waitmoncry
     closemessage
-    msgbox(format("Hypno shares a wide grin with Thyrsus. They must have been partners for years."))
+    msgbox(format("Hypno shares a wide grin with Euterpe. They must have been partners for years."))
     closemessage
     release
     end
@@ -53,7 +53,7 @@ script MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Hailey
 {
     trainerbattle_single(TRAINER_MYRRINIGYM_HAILEY, MyrriniIsland_Gym_Text_Trainer_MyrriniGym_HaileyIntro, MyrriniIsland_Gym_Text_Trainer_MyrriniGym_HaileyDefeat)
     speakername("Hailey")
-    msgbox(format("There's enough food, wine, and juice in here to last a lifetime. Of course, with how Thyrsus parties, it might only last a week!"))
+    msgbox(format("There's enough food, wine, and juice in here to last a lifetime. Of course, with the parties Euterpe throws, it might only last a week!"))
     closemessage
     release
     end
@@ -114,7 +114,7 @@ script MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Alma
 }
 text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_AlmaIntro
 {
-    format("Thyrsus hired me to perform. Get ready for this!")
+    format("Euterpe hired me to perform. Get ready for this!")
 }
 text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_AlmaDefeat
 {
@@ -123,53 +123,53 @@ text MyrriniIsland_Gym_Text_Trainer_MyrriniGym_AlmaDefeat
 
 // -----------------------------------------------------------------------------------------------------
 
-script MyrriniIsland_Gym_EventScript_Thyrsus
+script MyrriniIsland_Gym_EventScript_Euterpe
 {
     lock
     faceplayer
     if(!flag(FLAG_HARD_MODE))
     {
-        goto(MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty)
+        goto(MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty)
     }
     else
     {
-        goto(MyrriniIsland_Gym_EventScript_Thyrsus_HardDifficulty)
+        goto(MyrriniIsland_Gym_EventScript_Euterpe_HardDifficulty)
     }
     release
     end
 }
 
-script MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty // called when on normal difficulty
+script MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty // called when on normal difficulty
 {
-    trainerbattle_single(TRAINER_LEADER_THYRSUS, MyrriniIsland_Gym_Text_ThyrsusIntro, MyrriniIsland_Gym_Text_ThyrsusDefeat, MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript, NO_MUSIC)
-    speakername("Thyrsus")
-    msgbox(format("Looks like I have some competition as King of Parties, {PLAYER}!"))
+    trainerbattle_single(TRAINER_LEADER_EUTERPE, MyrriniIsland_Gym_Text_EuterpeIntro, MyrriniIsland_Gym_Text_EuterpeDefeat, MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript, NO_MUSIC)
+    speakername("Euterpe")
+    msgbox(format("Looks like I have some competition as Muse of Parties, {PLAYER}!"))
     closemessage
     release
     end
 }
-script MyrriniIsland_Gym_EventScript_Thyrsus_HardDifficulty // called when on hard difficulty
+script MyrriniIsland_Gym_EventScript_Euterpe_HardDifficulty // called when on hard difficulty
 {
-    trainerbattle_single(TRAINER_LEADER_THYRSUS_HARD, MyrriniIsland_Gym_Text_ThyrsusIntro, MyrriniIsland_Gym_Text_ThyrsusDefeat, MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript, NO_MUSIC)
-    speakername("Thyrsus")
-    msgbox(format("Looks like I have some competition as King of Parties, {PLAYER}!"))
+    trainerbattle_single(TRAINER_LEADER_EUTERPE_HARD, MyrriniIsland_Gym_Text_EuterpeIntro, MyrriniIsland_Gym_Text_EuterpeDefeat, MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript, NO_MUSIC)
+    speakername("Euterpe")
+    msgbox(format("Looks like I have some competition as Muse of Parties, {PLAYER}!"))
     closemessage
     release
     end
 }
-text MyrriniIsland_Gym_Text_ThyrsusIntro
+text MyrriniIsland_Gym_Text_EuterpeIntro
 {
-    format("Opa, opa! A Trainer's finally reached me!\p I'm Thyrsus, King of Parties, Poisons, and this Gym. It's been so long since a worthy Trainer has battled me, I've started to get bored. Come on, show me how you party!")
+    format("Opa, opa! A Trainer's finally reached me!\p I'm Euterpe, Muse of Parties, Poisons, and this Gym. It's been so long since a worthy Trainer has battled me, I've started to get bored. Come on, show me how you party!")
 }
-text MyrriniIsland_Gym_Text_ThyrsusDefeat
+text MyrriniIsland_Gym_Text_EuterpeDefeat
 {
-    format("Ahaha, perfect! Your moves were on point!")
+    format("Ahaha, perfect! I'm truly entertained!")
 }
 // Script called when you defeat the gym leader!
-script MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript
+script MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript
 {
     setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
-    message(format("{PLAYER} received the Festival Badge from Thyrsus."))
+    message(format("{PLAYER} received the Festival Badge from Euterpe."))
 	waitmessage
 	call(Common_EventScript_PlayGymBadgeFanfare)
 
@@ -182,13 +182,13 @@ script MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript
     settrainerflag(TRAINER_MYRRINIGYM_ALMA)
 
     // Explain badge
-    speakername("Thyrsus")
+    speakername("Euterpe")
     msgbox(format("The Festival Badge looks great on you! People around Ilios will recognize it as a symbol of strength and skill. You'll also be able to use the {COLOR GREEN}HM Dive{COLOR DARK_GRAY} outside of battle.\p Woah, hey, I almost forgot in the excitement - take this!"))
     closemessage
 
     // Give TM reward and explain, plus end dialogue
     giveitem(ITEM_TM_ACID_SPRAY)
-    speakername("Thyrsus")
+    speakername("Euterpe")
     msgbox(format("That TM contains the move {COLOR GREEN}Acid Spray{COLOR DARK_GRAY}. It's a bit weak by itself, but combined with the Special Defense drops it causes, it can get painful fast!\p You've got a few options ahead of you. You could sail north to {COLOR GREEN}Péntepetal City{COLOR DARK_GRAY} and try out Pokémon Contests, or you can head southeast to the {COLOR GREEN}Fresco Isles{COLOR DARK_GRAY} for the next Gym. Either way, remember to have fun!"))
     closemessage
 

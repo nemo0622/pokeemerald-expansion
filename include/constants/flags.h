@@ -1100,13 +1100,13 @@
 #define FLAG_ITEM_WANDERERS_WOODS_PROTEIN                           0x418
 #define FLAG_ITEM_WANDERERS_WOODS_TM_HEX                            0x419
 #define FLAG_ITEM_ACRISIA_MOUNTAINS_SHINY_STONE                     0x41A
-#define FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL                        0x41B
-#define FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE                            0x41C
-#define FLAG_ITEM_GRANITE_CAVE_B2F_REPEL                            0x41D
-#define FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY                       0x41E
-#define FLAG_ITEM_PETALBURG_WOODS_X_ATTACK                          0x41F
-#define FLAG_ITEM_PETALBURG_WOODS_GREAT_BALL                        0x420
-#define FLAG_ITEM_ROUTE_104_POKE_BALL                               0x421
+#define FLAG_ITEM_VULCAI_SEA_DIVE_BALL                              0x41B
+#define FLAG_ITEM_VULCAI_SEA_PEARL                                  0x41C
+#define FLAG_ITEM_VULCAI_SEA_HYPER_POTION                           0x41D
+#define FLAG_ITEM_VULCAI_SEA_FIRE_STONE                             0x41E
+#define FLAG_ITEM_VULCAI_SEA_RED_SHARD                              0x41F
+#define FLAG_ITEM_VULCAI_SEA_TM_SUNNY_DAY                           0x420
+#define FLAG_ITEM_VULCAI_SEA_RAZOR_CLAW                             0x421
 #define FLAG_ITEM_PETALBURG_WOODS_ETHER                             0x422
 #define FLAG_ITEM_MAGMA_HIDEOUT_3F_3R_ECAPE_ROPE                    0x423
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_1_ORANGE_MAIL                  0x424
@@ -1245,7 +1245,7 @@
 #define FLAG_GOT_WILL_O_WISP                                        0x4A8 // Got Will O Wisp TM from Gentleman in Pythios Town
 #define FLAG_SPOKE_TO_MOVE_RELEARNER                                0x4A9 // spoke to artist (move relearner) in Pythios Town
 #define FLAG_UNLOCKED_MOVE_RELEARNER                                0x4AA // showed artist (move relearner) 20 Pokémon in dex
-#define FLAG_MET_SABELLA_PYTHIOS_TOWN                               0x4AB // did Sabella meet event
+#define FLAG_MET_KLEIO_PYTHIOS_TOWN                               0x4AB // did Kleio meet event
 #define FLAG_MET_PIRAEUS_PYTHIOS_TOWN                                0x4AC // spoke to piraeus before
 #define FLAG_HELPED_PIRAEUS_PYTHIOS_TOWN                             0x4AD // did the help task for piraeus after 3rd gym badge
 #define FLAG_GOT_BADGE_FOR_PIRAEUS                                   0x4AE // flag used in piraeus pythios town event
@@ -1288,7 +1288,7 @@
 #define FLAG_GOT_TM_TORMENT                                         0x4D3 // from Angry Man with Murkrow in Sofos City
 #define FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA                 0x4D4 // Hides certain NPCs while Team Chimera is present in the city (near Gym and near hideout)
 #define FLAG_PLAYED_IN_SOFOS_BATTLE_PAVILION                        0x4D5 // Set after playing the battle pavilion (battle tent) in sofos city, used for a quest
-#define FLAG_HIDE_MENESWO_SATYRS_LAIR                               0x4D6 // Separate flag hiding Meneswo in Satyrs Lair
+#define FLAG_HIDE_TERPSIKORE_SATYRS_LAIR                               0x4D6 // Separate flag hiding Terpsikore in Satyrs Lair
 #define FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY                           0x4D7 // temporarily hide Niko in the University
 #define FLAG_SOFOS_GYM_GAUNTLET_ACTIVE                              0x4D8 // flag determining activity of gym gauntlet
 #define FLAG_SPOKE_TO_RED_SHARD_MAN                                 0x4D9 // if been introduced to shard brother
@@ -1308,7 +1308,7 @@
 #define FLAG_PLAYED_IN_MYRRINI_BATTLE_PAVILION                      0x4E7 // Sets flag that battle pavilion on Myrrini was used
 #define FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY                          0x4E8 // Hides Rania in Acrisia University if she's supposed to be elsewhere
 #define FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND                      0x4E9 // Hides Chimera Event objects (Rania, Chimera admins, Mara) on Myrrini Island - shown during fight with Team Chimera
-#define FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND       0x4EA // Separate flag to hide Thyrsus during event above
+#define FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND       0x4EA // Separate flag to hide Euterpe during event above
 #define FLAG_HIDE_CHIMERA_GRUNTS_MARMARO_MINES                      0x4EB // Hides the Chimera Grunts in the Marmaro Mines after they are defeated
 #define FLAG_HIDE_GRUNT_BLOCKING_MARMARO_MINES                      0x4EC // Specifically hides the chimera grunt blocking the Marmaro Mines
 #define FLAG_HIDE_NIKO_PENTEPETAL_CITY                              0x4ED // hides Niko in Pentepetal for event

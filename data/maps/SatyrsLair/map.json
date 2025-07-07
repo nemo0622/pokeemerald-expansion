@@ -67,7 +67,7 @@
       "flag": "FLAG_HIDE_BLOCKING_SOFOS_GYM"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MENESWO",
+      "graphics_id": "OBJ_EVENT_GFX_MUSE_TERPSIKORE",
       "x": 8,
       "y": 7,
       "elevation": 0,
@@ -77,7 +77,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_MENESWO_SATYRS_LAIR"
+      "flag": "FLAG_HIDE_TERPSIKORE_SATYRS_LAIR"
     }
   ],
   "warp_events": [
@@ -95,7 +95,7 @@
       "x": 8,
       "y": 12,
       "elevation": 0,
-      "var": "FLAG_HIDE_MENESWO_SATYRS_LAIR",
+      "var": "FLAG_HIDE_TERPSIKORE_SATYRS_LAIR",
       "var_value": "0",
       "script": "SatyrsLair_EventScript_ChimeraEvent"
     }

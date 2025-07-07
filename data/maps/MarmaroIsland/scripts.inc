@@ -639,9 +639,12 @@ MarmaroIsland_EventScript_BlackBelt_Text_0:
 
 MarmaroIsland_EventScript_BlackBelt_Text_1:
 # 113 "data/maps/MarmaroIsland/scripts.pory"
-	.string "My Pokémon can break right through the\n"
-	.string "rocks around here! I wonder if we'll find\l"
-	.string "anything cool!$"
+	.string "I'm training my Pokémon to protect\n"
+	.string "everyone. {COLOR GREEN}Areios Town{COLOR DARK_GRAY}, a little hamlet\l"
+	.string "on the southwest mainland, was taken\l"
+	.string "over by Team Chimera. Their Gym Leader\l"
+	.string "was supposed to be the strongest in\l"
+	.string "the region, but she's gone missing.$"
 
 MarmaroIsland_EventScript_PsychicM_Text_0:
 # 123 "data/maps/MarmaroIsland/scripts.pory"

@@ -3657,7 +3657,7 @@ void GetOverworldMonSpecies(void)
     // case OBJ_EVENT_GFX_MEW:
     //     gSpecialVar_0x8004 = SPECIES_MEW;
     //     break;
-    // case OBJ_EVENT_GFX_DEOXYS:
+    // case OBJ_EVENT_GFX_MUSE_POLYMNIAXYS:
     //     gSpecialVar_0x8004 = SPECIES_DEOXYS;
     //     break;
     // case OBJ_EVENT_GFX_LUGIA:

@@ -727,7 +727,7 @@ MyrriniIsland_EventScript_ChimeraEvent::
 # 479 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 480 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND
+	clearflag FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND
 # 481 "data/maps/MyrriniIsland/scripts.pory"
 	addobject 55
 # 482 "data/maps/MyrriniIsland/scripts.pory"
@@ -743,7 +743,7 @@ MyrriniIsland_EventScript_ChimeraEvent::
 # 488 "data/maps/MyrriniIsland/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerWalkDownToEvent
 # 489 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 55, MyrriniIsland_Movement_ThyrsusApproach
+	applymovement 55, MyrriniIsland_Movement_EuterpeApproach
 # 490 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 491 "data/maps/MyrriniIsland/scripts.pory"
@@ -769,7 +769,7 @@ MyrriniIsland_EventScript_ChimeraEvent::
 # 502 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 503 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 55, MyrriniIsland_Movement_PlayerAndThyrsusReposition
+	applymovement 55, MyrriniIsland_Movement_PlayerAndEuterpeReposition
 # 504 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 505 "data/maps/MyrriniIsland/scripts.pory"
@@ -793,7 +793,7 @@ MyrriniIsland_EventScript_ChimeraEvent::
 # 514 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 # 515 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 54, MyrriniIsland_Movement_AdminNoticesMara
+	applymovement 54, MyrriniIsland_Movement_AdminNoticesKalliope
 # 516 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 517 "data/maps/MyrriniIsland/scripts.pory"
@@ -813,15 +813,15 @@ MyrriniIsland_EventScript_ChimeraEvent::
 # 524 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 526 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerAndThyrsusReposition
+	applymovement OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerAndEuterpeReposition
 # 527 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 55, MyrriniIsland_Movement_PlayerAndThyrsusReposition
+	applymovement 55, MyrriniIsland_Movement_PlayerAndEuterpeReposition
 # 528 "data/maps/MyrriniIsland/scripts.pory"
 	applymovement 52, Common_Movement_FaceDown
 # 529 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 531 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 56, MyrriniIsland_Movement_MaraApproaches
+	applymovement 56, MyrriniIsland_Movement_KalliopeApproaches
 # 532 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 533 "data/maps/MyrriniIsland/scripts.pory"
@@ -901,7 +901,7 @@ MyrriniIsland_EventScript_ChimeraEvent::
 # 571 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 # 572 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 56, MyrriniIsland_Movement_MaraLeaves
+	applymovement 56, MyrriniIsland_Movement_KalliopeLeaves
 # 573 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 574 "data/maps/MyrriniIsland/scripts.pory"
@@ -921,7 +921,7 @@ MyrriniIsland_EventScript_ChimeraEvent::
 # 582 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 # 583 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 55, MyrriniIsland_Movement_ThyrsusLeaves
+	applymovement 55, MyrriniIsland_Movement_EuterpeLeaves
 # 584 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 590 "data/maps/MyrriniIsland/scripts.pory"
@@ -959,7 +959,7 @@ MyrriniIsland_EventScript_ChimeraEvent::
 # 608 "data/maps/MyrriniIsland/scripts.pory"
 	setflag FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND
 # 609 "data/maps/MyrriniIsland/scripts.pory"
-	setflag FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND
+	setflag FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND
 # 610 "data/maps/MyrriniIsland/scripts.pory"
 	setflag FLAG_HIDE_GRUNT_BLOCKING_MARMARO_MINES
 # 615 "data/maps/MyrriniIsland/scripts.pory"
@@ -1013,7 +1013,7 @@ MyrriniIsland_Movement_PlayerWalkDownToEvent:
 	step_end
 
 # 635 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_ThyrsusApproach:
+MyrriniIsland_Movement_EuterpeApproach:
 # 637 "data/maps/MyrriniIsland/scripts.pory"
 	walk_down
 # 637 "data/maps/MyrriniIsland/scripts.pory"
@@ -1042,7 +1042,7 @@ MyrriniIsland_Movement_ThyrsusApproach:
 	step_end
 
 # 643 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_AdminNoticesMara:
+MyrriniIsland_Movement_AdminNoticesKalliope:
 # 645 "data/maps/MyrriniIsland/scripts.pory"
 	face_down
 # 646 "data/maps/MyrriniIsland/scripts.pory"
@@ -1074,7 +1074,7 @@ MyrriniIsland_Movement_AdminsMoveForBoss:
 	step_end
 
 # 661 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_PlayerAndThyrsusReposition:
+MyrriniIsland_Movement_PlayerAndEuterpeReposition:
 # 663 "data/maps/MyrriniIsland/scripts.pory"
 	walk_right
 # 664 "data/maps/MyrriniIsland/scripts.pory"
@@ -1085,7 +1085,7 @@ MyrriniIsland_Movement_PlayerAndThyrsusReposition:
 	step_end
 
 # 668 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_MaraApproaches:
+MyrriniIsland_Movement_KalliopeApproaches:
 # 670 "data/maps/MyrriniIsland/scripts.pory"
 	walk_up
 # 670 "data/maps/MyrriniIsland/scripts.pory"
@@ -1129,7 +1129,7 @@ MyrriniIsland_Movement_AdminsFlee:
 	step_end
 
 # 681 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_MaraLeaves:
+MyrriniIsland_Movement_KalliopeLeaves:
 # 683 "data/maps/MyrriniIsland/scripts.pory"
 	walk_down
 # 684 "data/maps/MyrriniIsland/scripts.pory"
@@ -1152,7 +1152,7 @@ MyrriniIsland_Movement_MaraLeaves:
 	step_end
 
 # 688 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_ThyrsusLeaves:
+MyrriniIsland_Movement_EuterpeLeaves:
 # 690 "data/maps/MyrriniIsland/scripts.pory"
 	walk_up
 # 691 "data/maps/MyrriniIsland/scripts.pory"
@@ -1195,8 +1195,8 @@ MyrriniIsland_Movement_RaniaLeaves:
 
 MyrriniIsland_Sign_GymSign_Text_0:
 # 48 "data/maps/MyrriniIsland/scripts.pory"
-	.string "Gym Leader: Thyrsus\n"
-	.string "King of Parties and Poisons$"
+	.string "Gym Leader: Euterpe\n"
+	.string "Muse of Parties and Poisons$"
 
 MyrriniIsland_EventScript_BlackBelt_Text_0:
 # 58 "data/maps/MyrriniIsland/scripts.pory"
@@ -1531,7 +1531,7 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_1:
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_2:
 # 484 "data/maps/MyrriniIsland/scripts.pory"
-	.string "Thyrsus$"
+	.string "Euterpe$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_3:
 # 485 "data/maps/MyrriniIsland/scripts.pory"
@@ -1605,12 +1605,12 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_15:
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_16:
 # 542 "data/maps/MyrriniIsland/scripts.pory"
-	.string "W-we-we're sorry, {COLOR GREEN}Miss Mara{COLOR DARK_GRAY}! We'll get to\n"
-	.string "the {COLOR GREEN}Marmaro Mines{COLOR DARK_GRAY} right away!$"
+	.string "W-we-we're sorry, {COLOR RED}Miss Kalliope{COLOR DARK_GRAY}! We'll\n"
+	.string "get to the {COLOR GREEN}Marmaro Mines{COLOR DARK_GRAY} right away!$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_17:
 # 553 "data/maps/MyrriniIsland/scripts.pory"
-	.string "Miss Mara$"
+	.string "Kalliope$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_18:
 # 554 "data/maps/MyrriniIsland/scripts.pory"
@@ -1619,10 +1619,10 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_18:
 	.string "have brought shame to Team Chimera. In\l"
 	.string "fact, if you fought again now, you'd\l"
 	.string "likely win.\p"
-	.string "My name is Mara. I am the {COLOR GREEN}leader of Team\n"
-	.string "Chimera{COLOR DARK_GRAY}. Just listen to what I have to\l"
-	.string "say, then I will leave Myrrini Island in\l"
-	.string "peace.\p"
+	.string "My name is Kalliope. I am the {COLOR GREEN}leader of\n"
+	.string "Team Chimera{COLOR DARK_GRAY}. Just listen to what I\l"
+	.string "have to say, then I will leave Myrrini\l"
+	.string "Island in peace.\p"
 	.string "I have always focused on the financial\n"
 	.string "side of the world. The value of raw\l"
 	.string "materials, services, even Pokémon...\l"
@@ -1672,12 +1672,15 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_21:
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_22:
 # 581 "data/maps/MyrriniIsland/scripts.pory"
-	.string "There's been chatter between Gym\n"
-	.string "Leaders about Team Chimera, but as far\l"
-	.string "as I know, this is the first time the\l"
-	.string "Boss herself has shown up. I'm just glad\l"
-	.string "they're gone from Myrrini Island.\p"
-	.string "The Boss, Mara, mentioned something\n"
+	.string "Kalliope... I... I can't believe it. She was\n"
+	.string "the {COLOR GREEN}8th Gym Leader{COLOR DARK_GRAY}, living in a southern\l"
+	.string "village called Areios Town. Team Chimera\l"
+	.string "raided it and made it their Hideout a\l"
+	.string "few months ago, and Kalliope went\l"
+	.string "missing. All of us Gym Leaders thought\l"
+	.string "she was captured, but... She's the\l"
+	.string "{COLOR RED}Leader of Team Chimera{COLOR DARK_GRAY}?!\p"
+	.string "In any case, she mentioned something\n"
 	.string "about the {COLOR GREEN}Marmaro Island Mines{COLOR DARK_GRAY} to the\l"
 	.string "Chimera Admins. If you're on the tail of\l"
 	.string "Team Chimera, I'd go there. For now, I'll\l"

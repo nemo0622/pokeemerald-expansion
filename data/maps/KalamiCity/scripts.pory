@@ -217,7 +217,7 @@ script KalamiCity_EventScript_DirectionSign
 script KalamiCity_Sign_GymSign
 {
     lock
-    msgbox(format("Gym Leader: Mattaios\n The Hard-Working Engineer"))
+    msgbox(format("Gym Leader: Ourani\n The Muse of Sky-bound Industry"))
     closemessage
     release
     end
@@ -346,7 +346,7 @@ script KalamiCity_EventScript_Fisherman
     lock
     faceplayer
     speakername("Fishing Guru")
-    msgbox(format("I've lived here since before Mattaios and the industrial center was settled here. I fished here when I was a kid, and I'll keep fishing here until I'm old!"))
+    msgbox(format("I've lived here since before Ourani and the industrial center was settled here. I fished here when I was a kid, and I'll keep fishing here until I'm old!"))
     closemessage
     if(!flag(FLAG_RECEIVED_OLD_ROD))
     {

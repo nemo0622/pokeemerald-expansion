@@ -114,6 +114,7 @@
 #define MAP_SEA_OF_VULCAI_UNDERWATER      (105 | (0 << 8))
 #define MAP_SEA_OF_ASTERI_UNDERWATER_EAST (106 | (0 << 8))
 #define MAP_PENTEPETAL_CITY               (107 | (0 << 8))
+#define MAP_SUNKEN_TEMPLE                 (108 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

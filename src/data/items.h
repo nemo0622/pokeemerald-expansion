@@ -10534,9 +10534,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM10"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "The attack power\n"
-            "varies among\n"
-            "different Pokémon."),
+            "Move: Hidden Power\n"
+            "Power and Type vary\n"
+            "between Pokémon."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10974,7 +10974,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_FIRE_BLAST,
     },
 
-    // Obtained from Mattaios (Gym 2)
+    // Obtained from Ourani (Gym 2)
     [ITEM_TM_ROCK_TOMB] =
     {
         .name = _("TM39"),
@@ -11140,14 +11140,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_SNATCH,
     },
 
-    [ITEM_TM_OVERHEAT] =
+    [ITEM_TM50] =
     {
         .name = _("TM50"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Enables full-power\n"
-            "attack, but sharply\n"
-            "lowers Sp. Atk."),
+            "Move: Deepwater Curse\n"
+            "Inflicts Frostbite\n"
+            "on the opponent."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

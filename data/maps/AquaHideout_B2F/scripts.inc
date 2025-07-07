@@ -26,7 +26,7 @@ AquaHideout_B2F_EventScript_MattNoticePlayer::
 	end
 
 AquaHideout_B2F_EventScript_Matt::
-	trainerbattle_single TRAINER_LEADER_MATTAIOS_HARD, AquaHideout_B2F_Text_MattIntro, AquaHideout_B2F_Text_MattDefeat, AquaHideout_B2F_EventScript_SubmarineEscape
+	trainerbattle_single TRAINER_LEADER_OURANI_HARD, AquaHideout_B2F_Text_MattIntro, AquaHideout_B2F_Text_MattDefeat, AquaHideout_B2F_EventScript_SubmarineEscape
 	msgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT
 	release
 	end

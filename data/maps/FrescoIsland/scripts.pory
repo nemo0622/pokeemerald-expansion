@@ -1,5 +1,424 @@
 mapscripts FrescoIsland_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_FRESCO_ISLAND)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(26, ENCOUNTER_LAND)
+        setobjectaswildencounter(27, ENCOUNTER_LAND)
+        setobjectaswildencounter(28, ENCOUNTER_LAND)
+        setobjectaswildencounter(29, ENCOUNTER_LAND)
+        setobjectaswildencounter(30, ENCOUNTER_LAND)
+        setobjectaswildencounter(31, ENCOUNTER_LAND)
+        setobjectaswildencounter(32, ENCOUNTER_LAND)
     }
+}
+
+script FrescoIsles_EventScript_ClosedSign
+{
+    lock
+    msgbox(format("Building Closure Notice\n Fresco Isles Research Lab has been closed due to Team Chimera activity. Entering the building is strictly prohibited."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_TuberSwimming
+{
+    lock
+    faceplayer
+    speakername("Tuber")
+    msgbox(format("The water is so warm here! Best vacation ever!!"))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_WomanOnBeachChair
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("I brought my son here for some time to relax. The world is crazy, so it's important to take a moment and sit back."))
+    closemessage
+    applymovement(4, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script FrescoIsles_EventScript_HexManiacWithHiddenPower
+{
+    lock
+    faceplayer
+    speakername("Crystal Girl")
+    if(flag(FLAG_RECEIVED_TM_HIDDEN_POWER)) // reusing existing emerald flag
+    {
+        msgbox(format("Have you unlocked your Pokémon's Hidden Power yet?"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Just like crystals, Pokémon have special powers unique to them. I've found a way to tap into that potential. Check it out!"))
+        closemessage
+        delay(5)
+        setflag(FLAG_RECEIVED_TM_HIDDEN_POWER)
+        giveitem(ITEM_TM_HIDDEN_POWER)
+        closemessage
+        delay(5)
+        speakername("Crystal Girl")
+        msgbox(format("Hidden Power is a move that changes type based on the individual Pokémon. You'd be surprised at what secrets your Pokémon might hold."))
+        closemessage
+    }
+    release
+    end
+}
+
+script FrescoIsles_EventScript_Farmer
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("Most of the Fresco Isles are totally covered in sand. Only shrubs and a few hardy trees can grow there. To keep this island grassy, it takes a lot of extra work."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_SailorWithQuaxly
+{
+    lock
+    faceplayer
+    speakername("Sailor")
+    msgbox(format("My boat got whipped into a rock in the Sea of Vulcai. It's not all bad, though - I found this rare Pokémon right on the beach!"))
+    closemessage
+    applymovement(7, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script FrescoIsles_EventScript_Quaxly
+{
+    lock
+    faceplayer
+    speakername("Quaxly")
+    playmoncry(SPECIES_QUAXLY, CRY_MODE_NORMAL)
+    msgbox("Kwak wak wak!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_LittleGirl
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    msgbox(format("Hiya! You're an adult, right? Do you know why all the rocks around here are black?"), MSGBOX_YESNO)
+    closemessage
+    delay(5)
+    if(var(VAR_RESULT) == TRUE)
+    {
+        speakername("Little Girl")
+        msgbox(format("Yeah! It's volcanic rock!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Little Girl")
+        msgbox(format("Really? Ehehe, even I know why! It's all made of dried lava!"))
+        closemessage
+    }
+    release
+    end
+}
+
+script FrescoIsles_EventScript_ArtistNeedsPaintMaterials
+{
+    lock
+    faceplayer
+    speakername("Artist")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_SHARDS_FOR_ARTIST)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("These shard-based paints are so bright, they'll be perfect for my masterpiece!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_SHARDS_FOR_ARTIST)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Chaire. By any chance, are you a treasure hunter?\p The Fresco Isles have inspired me to paint my masterpiece, but no paint I find will be good enough. I've heard that special paint can be made from crushed-up {COLOR GREEN}colored Shards{COLOR DARK_GRAY}. Please, bring me {COLOR GREEN}one of each colored Shard{COLOR DARK_GRAY}. I promise to pay you back in kind."))
+        closemessage
+        delay(20)
+        startquest(QUEST_SHARDS_FOR_ARTIST)
+    }
+    else
+    {
+        msgbox(format("Hey there. I'm still short on materials to make my special paints. Would you happen to have the colored Shards I requested?"))
+        closemessage
+
+        checkitem(ITEM_RED_SHARD)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            checkitem(ITEM_BLUE_SHARD)
+            if(var(VAR_RESULT) == TRUE)
+            {
+                checkitem(ITEM_GREEN_SHARD)
+                if(var(VAR_RESULT) == TRUE)
+                {
+                    checkitem(ITEM_YELLOW_SHARD)
+                }
+            }
+        }
+
+        if(var(VAR_RESULT) == TRUE) // should only be if they have all 4 shards
+        {
+            emote(10, EMOTE_EXCLAM)
+            speakername("Artist")
+            msgbox(format("Woah, you have Red, Blue, Green, and Yellow Shards! I'll crush them up into stunning pigments.\p While you were off collecting Shards, I completed another project: a {COLOR GREEN}Clear Amulet{COLOR DARK_GRAY} for your Pokémon to hold."))
+            closemessage
+            delay(5)
+            removeitem(ITEM_RED_SHARD)
+            removeitem(ITEM_BLUE_SHARD)
+            removeitem(ITEM_GREEN_SHARD)
+            removeitem(ITEM_YELLOW_SHARD)
+            giveitem(ITEM_CLEAR_AMULET)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_SHARDS_FOR_ARTIST)
+        }
+        else
+        {
+            speakername("Artist")
+            msgbox(format("Hm, not yet, huh? I know they're rare.\p Some Pokémon hold colored Shards, and they can be found underground too. Please, bring me {COLOR GREEN}one of every colored Shard type{COLOR DARK_GRAY} once you have them!"))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+script FrescoIsles_EventScript_Dreepy
+{
+    lock
+    faceplayer
+    speakername("Dreepy")
+    playmoncry(SPECIES_DREEPY, CRY_MODE_NORMAL)
+    msgbox("Ee-auhhh...")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_GirlWithDreepy
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("This Dreepy was left behind by its colony. They're so small, sometimes they get left behind by the Drakloak and Dragapult at the head of their colonies... Maybe I'll be able to reunite it with its friends one day."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_LittleBoyBuildingSandCastle
+{
+    lock
+    faceplayer
+    speakername("Little Boy")
+    msgbox(format("I found my Trapinch along the beach! Now I'm making it a sand castle to live in!"))
+    closemessage
+    applymovement(13, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script FrescoIsles_EventScript_Trapinch
+{
+    lock
+    faceplayer
+    speakername("Trapinch")
+    playmoncry(SPECIES_TRAPINCH, CRY_MODE_NORMAL)
+    msgbox("Chomp chomp!")
+    waitmoncry
+    closemessage
+    applymovement(14, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script FrescoIsles_EventScript_GymSign
+{
+    lock
+    msgbox(format("Gym Leaders: Thalia and Melpomene\n The Theatrical Twins"))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("Only the hardiest Pokémon can survive around here. The lava doesn't leak out anymore, but the heat and dry weather is still really hard for some Pokémon to stand."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_Athlete
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    msgbox(format("Phew! Gotta keep getting stronger to keep up with all the other Trainers."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_BeautyRunning
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("Ponyta, come back! She's been riled up ever since we got here. I think she likes the heat."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_Ponyta
+{
+    lock
+    faceplayer
+    speakername("Ponyta")
+    playmoncry(SPECIES_PONYTA, CRY_MODE_NORMAL)
+    msgbox("Breighh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_CyclingAthlete
+{
+    lock
+    faceplayer
+    speakername("Cycling Athlete")
+    msgbox(format("This whole place is just sand and water... This wasn't the best place for biking, huh?"))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_HikerViewingPot
+{
+    lock
+    faceplayer
+    speakername("Ruin Maniac")
+    msgbox(format("Based on the ruins around here, these islands used to be much more populated. It seems that a volcanic explosion centuries ago changed the ecosystem and cut the population."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("Not many people visit the outlying islands. It's just a few visitors, the Pokémon, and me."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_Camper
+{
+    lock
+    faceplayer
+    speakername("Camper")
+    msgbox(format("The Gym Leaders of the Fresco Isles are twins. Thalia loves jokes and fun, while Melpomene is always moping around and watching tragedies. The only thing they have in common is a love for theatre."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_ManOnChair
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("Ahh, this is the life. A cool breeze, warm sand, and a drink in my hand."))
+    closemessage
+    applymovement(23, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script FrescoIsles_EventScript_TuberBuildingSandCastle
+{
+    lock
+    faceplayer
+    speakername("Tuber")
+    msgbox(format("My dad told me not to peek into the abandoned lab up the hill. But I swear I saw someone sneaking in earlier!"))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    speakername("Gentleman")
+    msgbox(format("I came all the way here from Kalami City to get a new suit made. But the Tailor is sending me on a wild Swanna chase... Literally! He wants me to catch a Swanna for some reason!"))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_TailorSign
+{
+    lock
+    msgbox(format("Fresco Isles Tailor\n Specialty Outfits for All!"))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_HikerOnVolcano
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("Woah, it's getting hot up here. Any closer and it'll start to hurt..."))
+    closemessage
+    release
+    end
 }

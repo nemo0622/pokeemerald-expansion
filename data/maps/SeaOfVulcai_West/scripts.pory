@@ -35,3 +35,57 @@ text VulcaiSea_Text_Trainer_VulcaiSea_SabrinaDefeat
 {
     format("It's over already?!")
 }
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Sherry
+{
+    trainerbattle_single(TRAINER_VULCAISEA_SHERRY, VulcaiSea_Text_Trainer_VulcaiSea_SherryIntro, VulcaiSea_Text_Trainer_VulcaiSea_SherryDefeat)
+    speakername("Sherry")
+    msgbox(format("My Pokémon are super cute, even as they start to grow up!"))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_SherryIntro
+{
+    format("Ooo-hoho, I see an item over there!")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_SherryDefeat
+{
+    format("To the victor goes the spoils...")
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Lusio
+{
+    trainerbattle_single(TRAINER_VULCAISEA_LUSIO, VulcaiSea_Text_Trainer_VulcaiSea_LusioIntro, VulcaiSea_Text_Trainer_VulcaiSea_LusioDefeat)
+    speakername("Lusio")
+    msgbox(format("The volcanic activity around here heats up the water. It feels more like a warm bathtub than an ocean!"))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_LusioIntro
+{
+    format("The water here is actually warm!")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_LusioDefeat
+{
+    format("Even in warm water, I can't win.")
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Mahya
+{
+    trainerbattle_single(TRAINER_VULCAISEA_MAHYA, VulcaiSea_Text_Trainer_VulcaiSea_MahyaIntro, VulcaiSea_Text_Trainer_VulcaiSea_MahyaDefeat)
+    speakername("Mahya")
+    msgbox(format("Lots of Pokémon only known from fossils are becoming Lazarus Taxa, coming back from the dead. They still haven't found some in nature, though."))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_MahyaIntro
+{
+    format("Look at this Pokémon I revived from fossils!")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_MahyaDefeat
+{
+    format("No, my special Pokémon!")
+}

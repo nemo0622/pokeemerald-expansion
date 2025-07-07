@@ -723,7 +723,7 @@
       "flag": "FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_THYRSUS",
+      "graphics_id": "OBJ_EVENT_GFX_MUSE_EUTERPE",
       "x": 34,
       "y": 27,
       "elevation": 0,
@@ -733,10 +733,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_THYRSUS_DURING_CHIMERA_EVENT_MYRRINI_ISLAND"
+      "flag": "FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MARA",
+      "graphics_id": "OBJ_EVENT_GFX_MUSE_KALLIOPE",
       "x": 34,
       "y": 47,
       "elevation": 0,

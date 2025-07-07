@@ -480,7 +480,7 @@ PythiosTown_EventScript_Dwebble::
 	end
 
 
-PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
+PythiosTown_EventScript_Trigger_KleioIntroductionEvent::
 # 291 "data/maps/PythiosTown/scripts.pory"
 	lockall
 # 292 "data/maps/PythiosTown/scripts.pory"
@@ -490,7 +490,7 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 294 "data/maps/PythiosTown/scripts.pory"
 	delay 30
 # 295 "data/maps/PythiosTown/scripts.pory"
-	applymovement 13, PythiosTown_Movement_FirstSabellaFanWalksToPlayer
+	applymovement 13, PythiosTown_Movement_FirstKleioFanWalksToPlayer
 # 296 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 297 "data/maps/PythiosTown/scripts.pory"
@@ -498,9 +498,9 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 298 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 299 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_0
+	speakername PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_0
 # 300 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_1
+	msgbox PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_1
 # 301 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 302 "data/maps/PythiosTown/scripts.pory"
@@ -512,7 +512,7 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 305 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 306 "data/maps/PythiosTown/scripts.pory"
-	applymovement 13, PythiosTown_Movement_FirstSabellaFanWalksAway
+	applymovement 13, PythiosTown_Movement_FirstKleioFanWalksAway
 # 307 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 308 "data/maps/PythiosTown/scripts.pory"
@@ -534,13 +534,13 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 317 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 318 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_2
+	speakername PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_2
 # 319 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_3
+	msgbox PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_3
 # 320 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 321 "data/maps/PythiosTown/scripts.pory"
-	applymovement 14, PythiosTown_Movement_SecondSabellaFanWalksAway
+	applymovement 14, PythiosTown_Movement_SecondKleioFanWalksAway
 # 322 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 323 "data/maps/PythiosTown/scripts.pory"
@@ -550,9 +550,9 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 325 "data/maps/PythiosTown/scripts.pory"
 	waitmovement 0
 # 328 "data/maps/PythiosTown/scripts.pory"
-	speakername PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_4
+	speakername PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_4
 # 329 "data/maps/PythiosTown/scripts.pory"
-	msgbox PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_5
+	msgbox PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_5
 # 330 "data/maps/PythiosTown/scripts.pory"
 	closemessage
 # 332 "data/maps/PythiosTown/scripts.pory"
@@ -570,7 +570,7 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 # 338 "data/maps/PythiosTown/scripts.pory"
 	removeobject 16
 # 339 "data/maps/PythiosTown/scripts.pory"
-	setflag FLAG_MET_SABELLA_PYTHIOS_TOWN
+	setflag FLAG_MET_KLEIO_PYTHIOS_TOWN
 # 340 "data/maps/PythiosTown/scripts.pory"
 	delay 30
 # 341 "data/maps/PythiosTown/scripts.pory"
@@ -583,7 +583,7 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent::
 
 
 # 348 "data/maps/PythiosTown/scripts.pory"
-PythiosTown_Movement_FirstSabellaFanWalksToPlayer:
+PythiosTown_Movement_FirstKleioFanWalksToPlayer:
 # 350 "data/maps/PythiosTown/scripts.pory"
 	walk_fast_left
 # 351 "data/maps/PythiosTown/scripts.pory"
@@ -594,7 +594,7 @@ PythiosTown_Movement_FirstSabellaFanWalksToPlayer:
 	step_end
 
 # 355 "data/maps/PythiosTown/scripts.pory"
-PythiosTown_Movement_FirstSabellaFanWalksAway:
+PythiosTown_Movement_FirstKleioFanWalksAway:
 # 357 "data/maps/PythiosTown/scripts.pory"
 	walk_fast_down
 # 357 "data/maps/PythiosTown/scripts.pory"
@@ -642,7 +642,7 @@ PythiosTown_Movement_PlayerApproachesLine:
 	step_end
 
 # 371 "data/maps/PythiosTown/scripts.pory"
-PythiosTown_Movement_SecondSabellaFanWalksAway:
+PythiosTown_Movement_SecondKleioFanWalksAway:
 # 373 "data/maps/PythiosTown/scripts.pory"
 	walk_fast_left
 # 374 "data/maps/PythiosTown/scripts.pory"
@@ -1037,8 +1037,8 @@ PythiosTown_EventScript_DirectionSign_Text_0:
 
 PythiosTown_Sign_GymSign_Text_0:
 # 39 "data/maps/PythiosTown/scripts.pory"
-	.string "Gym Leader: Sabella\n"
-	.string "The Oracle of Ilios$"
+	.string "Gym Leader: Kleio\n"
+	.string "The Muse of Past, Present, and Future$"
 
 PythiosTown_EventScripts_NPC_Gentleman_Text_0:
 # 49 "data/maps/PythiosTown/scripts.pory"
@@ -1053,9 +1053,9 @@ PythiosTown_EventScripts_NPC_Gentleman_Text_1:
 	.string "Folktales say that the spirits have\n"
 	.string "turned the plants orange, putting the\l"
 	.string "area into a permanent Autumn.\p"
-	.string "People flock from all over to hear\n"
-	.string "Sabella, the Gym Leader, predict the\l"
-	.string "future. Some say she has a magic gift...$"
+	.string "People flock from all over to hear Kleio,\n"
+	.string "the Gym Leader, predict the future.\l"
+	.string "Some say she has a magic gift...$"
 
 PythiosTown_EventScripts_NPC_Gentleman_Text_2:
 # 55 "data/maps/PythiosTown/scripts.pory"
@@ -1083,7 +1083,7 @@ PythiosTown_EventScripts_NPC_OldWoman_Text_0:
 PythiosTown_EventScripts_NPC_OldWoman_Text_1:
 # 80 "data/maps/PythiosTown/scripts.pory"
 	.string "People come from all over to hear from\n"
-	.string "Sabella, the Gym Leader and spiritual\l"
+	.string "Kleio, the Gym Leader and spiritual\l"
 	.string "guide of Pythios Town.\p"
 	.string "Me? I moved here with my husband to\n"
 	.string "watch the water and feel the energy.$"
@@ -1241,37 +1241,37 @@ PythiosTown_EventScript_Dwebble_Text_1:
 # 282 "data/maps/PythiosTown/scripts.pory"
 	.string "Chk chk chk.$"
 
-PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_0:
+PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_0:
 # 299 "data/maps/PythiosTown/scripts.pory"
 	.string "Mystical Woman$"
 
-PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_1:
+PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_1:
 # 300 "data/maps/PythiosTown/scripts.pory"
-	.string "YES!! Sabella said I'm guarenteed to win\n"
+	.string "YES!! Kleio said I'm guarenteed to win\n"
 	.string "my next Pokémon battle! She's never\l"
 	.string "wrong!$"
 
-PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_2:
+PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_2:
 # 318 "data/maps/PythiosTown/scripts.pory"
 	.string "Worker$"
 
-PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_3:
+PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_3:
 # 319 "data/maps/PythiosTown/scripts.pory"
-	.string "Sabella just read my future! She told me\n"
-	.string "'a big shake-up at work is coming'...\l"
-	.string "that probably means a raise!\p"
+	.string "Kleio just read my future! She told me 'a\n"
+	.string "big shake-up at work is coming'... that\l"
+	.string "probably means a raise!\p"
 	.string "...Probably!$"
 
-PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_4:
+PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_4:
 # 328 "data/maps/PythiosTown/scripts.pory"
-	.string "Sabella$"
+	.string "Kleio$"
 
-PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_5:
+PythiosTown_EventScript_Trigger_KleioIntroductionEvent_Text_5:
 # 329 "data/maps/PythiosTown/scripts.pory"
 	.string "Ah... {PLAYER}, yes?\p"
 	.string "How do I know your name? I know much\n"
 	.string "and more, young trainer. My name is\l"
-	.string "Sabella, the spiritual guide and {COLOR GREEN}Gym\l"
+	.string "Kleio, the Muse of History and {COLOR GREEN}Gym\l"
 	.string "Leader of Pythios Town{COLOR DARK_GRAY}.\p"
 	.string "You're here for your third Gym\n"
 	.string "Challenge. I sense a great battle on\l"
@@ -1280,9 +1280,9 @@ PythiosTown_EventScript_Trigger_SabellaIntroductionEvent_Text_5:
 
 PythiosTown_EventScripts_NPC_OldMan2_Text_0:
 # 383 "data/maps/PythiosTown/scripts.pory"
-	.string "Everyone seems to believe in Sabella\n"
-	.string "and her visions. I'm not so sure, but my\l"
-	.string "wife comes around to talk to her all the\l"
+	.string "Everyone seems to believe in Kleio and\n"
+	.string "her visions. I'm not so sure, but my wife\l"
+	.string "comes around to talk to her all the\l"
 	.string "time. I'm waiting for her here.$"
 
 PythiosTown_EventScripts_NPC_PsychicM_Text_0:
@@ -1291,7 +1291,7 @@ PythiosTown_EventScripts_NPC_PsychicM_Text_0:
 
 PythiosTown_EventScripts_NPC_PsychicM_Text_1:
 # 396 "data/maps/PythiosTown/scripts.pory"
-	.string "I promise, Sabella's powers are real! She\n"
+	.string "I promise, Kleio's powers are real! She\n"
 	.string "has the same powers as her\l"
 	.string "Psychic-type and Ghost-type Pokémon!$"
 
@@ -1304,7 +1304,7 @@ PythiosTown_EventScripts_NPC_ManBlockingGym_Text_1:
 	.string "Welcome to the Pythios Town Pokémon\n"
 	.string "Gym!\p"
 	.string "Well... that's what I would say, if the\n"
-	.string "{COLOR GREEN}Gym Leader, Sabella{COLOR DARK_GRAY}, was here. She's\l"
+	.string "{COLOR GREEN}Gym Leader, Kleio{COLOR DARK_GRAY}, was here. She's\l"
 	.string "probably meeting with people in the\l"
 	.string "{COLOR GREEN}east of town{COLOR DARK_GRAY}.$"
 

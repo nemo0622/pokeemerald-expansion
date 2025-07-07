@@ -1025,3 +1025,14 @@ const struct Tileset gTileset_Pentepetal =
     .metatileAttributes = gMetatileAttributes_Pentepetal,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_FrescoIsles =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_FrescoIsles,
+    .palettes = gTilesetPalettes_FrescoIsles,
+    .metatiles = gMetatiles_FrescoIsles,
+    .metatileAttributes = gMetatileAttributes_FrescoIsles,
+    .callback = NULL,
+};

@@ -349,7 +349,7 @@ script WanderersWoods_EventScript_ChimeraEvent
     applymovement(10, Common_Movement_FaceUp)
     waitmovement(0)
     speakername("Chimera Admin")
-    msgbox(format("Grr... you're lucky my Arcanine was knocked out while we caught those Pokémon.\p You learn so much about Pokémon, but you do nothing with it! Pokémon, nature, everything around us - you need to use them for everything they're worth!\p The Pokémon we rounded up were to be trained, bringing out their full potential. Of course, some Pokémon can't handle the pressure, so we sell them for a little extra cash. What's the harm in that?\p You won't stop Team Chimera. Next time, my Arcanine will knock you back to your precious University!"))
+    msgbox(format("Grr... you're lucky my Arcanine was knocked out while we caught those Pokémon.\p You learn so much about Pokémon, but you do nothing with it! Pokémon, nature, everything around us - you need to use them for everything they're worth!\p The Pokémon we rounded up were to be trained, bringing out their full potential. Of course, some Pokémon can't handle the pressure, so we sell them for a little extra cash. What's the harm in that?\p You won't stop Team Chimera. We've got {COLOR GREEN}friends in high places{COLOR DARK_GRAY}. Next time, my Arcanine will knock you back to whatever region you came from!"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
     applymovement(10, WanderersWoods_Movement_AdminEscapes)

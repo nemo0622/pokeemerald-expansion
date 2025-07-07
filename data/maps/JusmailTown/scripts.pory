@@ -55,7 +55,7 @@ script JusmailTown_SpawnWindmillVirtualObjects
 script JusmailTown_Sign_GymSign
 {
     lock
-    msgbox(format("Gym Leader: Deo\n The Plant-Friendly Farmer"))
+    msgbox(format("Gym Leader: Polymnia\n Muse of Nature's Hymns"))
     closemessage
     release
     end
@@ -77,7 +77,7 @@ script JusmailTown_EventScript_NPC_Boy
     lock
     faceplayer
     speakername("Boy")
-    msgbox(format("Flying-type Pokémon are good against Deo's Pokémon, Bug and Grass-type Pokémon.\p I hear most Gym Leaders have a Pokémon that is strong against whatever the Leader is weak against. Sounds like they're tough fights!"))
+    msgbox(format("Flying-type Pokémon are good against Polymnia's Pokémon, Bug and Grass-type Pokémon.\p I hear most Gym Leaders have a Pokémon that is strong against whatever the Leader is weak against. Sounds like they're tough fights!"))
     closemessage
     release
     end
@@ -135,6 +135,22 @@ script JusmailTown_EventScript_RockSmashHiker
         msgbox(format("Woah, thanks for clearing the path! Now I can finally head south!"))
         closemessage
     }
+    release
+    end
+}
+
+script JusmailTown_EventScript_PsychicM
+{
+    lock
+    faceplayer
+    speakername("Psychic")
+    msgbox(format("I believe in the old rumors about the Wishing Well. Maybe I'll get a Pokémon strong enough to defend the town..."))
+    closemessage
+    delay(20)
+    emote(20, EMOTE_QUESTION)
+    speakername("Psychic")
+    msgbox(format("Hm? Haven't you heard? Team Chimera raided Areios Town, and their Gym Leader has gone missing. That was supposed to be the strongest Gym Leader in the Ilios Region, but Team Chimera still overran it!"))
+    closemessage
     release
     end
 }

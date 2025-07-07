@@ -38,7 +38,7 @@ script KalamiCity_House3_EventScript_ScientistF
     lock
     faceplayer
     speakername("Scientist")
-    msgbox(format("I help manage the data processing center. Mattaios, the Gym Leader of Kalami City, also likes to stay involved in the running of the city."))
+    msgbox(format("I help manage the data processing center. Ourani, the Gym Leader of Kalami City, also likes to stay involved in the running of the city."))
     closemessage
     release
     end

@@ -1077,8 +1077,8 @@ KalamiCity_EventScript_DirectionSign_Text_0:
 
 KalamiCity_Sign_GymSign_Text_0:
 # 220 "data/maps/KalamiCity/scripts.pory"
-	.string "Gym Leader: Mattaios\n"
-	.string "The Hard-Working Engineer$"
+	.string "Gym Leader: Ourani\n"
+	.string "The Muse of Sky-bound Industry$"
 
 KalamiCity_EventScript_Camper_Text_0:
 # 230 "data/maps/KalamiCity/scripts.pory"
@@ -1186,10 +1186,10 @@ KalamiCity_EventScript_Fisherman_Text_0:
 
 KalamiCity_EventScript_Fisherman_Text_1:
 # 349 "data/maps/KalamiCity/scripts.pory"
-	.string "I've lived here since before Mattaios\n"
-	.string "and the industrial center was settled\l"
-	.string "here. I fished here when I was a kid, and\l"
-	.string "I'll keep fishing here until I'm old!$"
+	.string "I've lived here since before Ourani and\n"
+	.string "the industrial center was settled here.\l"
+	.string "I fished here when I was a kid, and I'll\l"
+	.string "keep fishing here until I'm old!$"
 
 KalamiCity_EventScript_Fisherman_Text_2:
 # 354 "data/maps/KalamiCity/scripts.pory"

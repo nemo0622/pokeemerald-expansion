@@ -126,33 +126,33 @@ MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Alma::
 	end
 
 
-MyrriniIsland_Gym_EventScript_Thyrsus::
+MyrriniIsland_Gym_EventScript_Euterpe::
 # 128 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	lock
 # 129 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	faceplayer
 # 130 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	goto_if_unset FLAG_HARD_MODE, MyrriniIsland_Gym_EventScript_Thyrsus_2
+	goto_if_unset FLAG_HARD_MODE, MyrriniIsland_Gym_EventScript_Euterpe_2
 # 136 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	goto MyrriniIsland_Gym_EventScript_Thyrsus_HardDifficulty
-MyrriniIsland_Gym_EventScript_Thyrsus_1:
+	goto MyrriniIsland_Gym_EventScript_Euterpe_HardDifficulty
+MyrriniIsland_Gym_EventScript_Euterpe_1:
 # 138 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	release
 	end
 
-MyrriniIsland_Gym_EventScript_Thyrsus_2:
+MyrriniIsland_Gym_EventScript_Euterpe_2:
 # 132 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	goto MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty
-	goto MyrriniIsland_Gym_EventScript_Thyrsus_1
+	goto MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty
+	goto MyrriniIsland_Gym_EventScript_Euterpe_1
 
 
-MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty::
+MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty::
 # 144 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_THYRSUS, MyrriniIsland_Gym_Text_ThyrsusIntro, MyrriniIsland_Gym_Text_ThyrsusDefeat, MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_EUTERPE, MyrriniIsland_Gym_Text_EuterpeIntro, MyrriniIsland_Gym_Text_EuterpeDefeat, MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript, NO_MUSIC
 # 145 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	speakername MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty_Text_0
+	speakername MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty_Text_0
 # 146 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	msgbox MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty_Text_1
+	msgbox MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty_Text_1
 # 147 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	closemessage
 # 148 "data/maps/MyrriniIsland_Gym/scripts.pory"
@@ -160,13 +160,13 @@ MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty::
 	end
 
 
-MyrriniIsland_Gym_EventScript_Thyrsus_HardDifficulty::
+MyrriniIsland_Gym_EventScript_Euterpe_HardDifficulty::
 # 153 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_THYRSUS_HARD, MyrriniIsland_Gym_Text_ThyrsusIntro, MyrriniIsland_Gym_Text_ThyrsusDefeat, MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_EUTERPE_HARD, MyrriniIsland_Gym_Text_EuterpeIntro, MyrriniIsland_Gym_Text_EuterpeDefeat, MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript, NO_MUSIC
 # 154 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	speakername MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty_Text_0
+	speakername MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty_Text_0
 # 155 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	msgbox MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty_Text_1
+	msgbox MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty_Text_1
 # 156 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	closemessage
 # 157 "data/maps/MyrriniIsland_Gym/scripts.pory"
@@ -174,11 +174,11 @@ MyrriniIsland_Gym_EventScript_Thyrsus_HardDifficulty::
 	end
 
 
-MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript::
+MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript::
 # 171 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	setflag FLAG_SUPPRESS_SPEAKER_NAME
 # 172 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	message MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript_Text_0
+	message MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript_Text_0
 # 173 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	waitmessage
 # 174 "data/maps/MyrriniIsland_Gym/scripts.pory"
@@ -194,17 +194,17 @@ MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript::
 # 182 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	settrainerflag TRAINER_MYRRINIGYM_ALMA
 # 185 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	speakername MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty_Text_0
+	speakername MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty_Text_0
 # 186 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	msgbox MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript_Text_1
+	msgbox MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript_Text_1
 # 187 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	closemessage
 # 190 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	giveitem ITEM_TM_ACID_SPRAY
 # 191 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	speakername MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty_Text_0
+	speakername MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty_Text_0
 # 192 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	msgbox MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript_Text_2
+	msgbox MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript_Text_2
 # 193 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	closemessage
 # 196 "data/maps/MyrriniIsland_Gym/scripts.pory"
@@ -249,10 +249,10 @@ MyrriniIsland_Gym_EventScript_GymMan_Text_2:
 # 30 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	.string "Welcome to the Myrrini Island Gym!\p"
 	.string "The Gym Leader you'll be facing is\n"
-	.string "Thyrsus, the so-called King of Parties\l"
-	.string "and Poisons. Naturally, he uses\l"
+	.string "Euterpe, the Muse of Parties and\l"
+	.string "Poisons. Naturally, she uses\l"
 	.string "{COLOR GREEN}Poison-type{COLOR DARK_GRAY} Pokémon and {COLOR GREEN}Status\l"
-	.string "conditions{COLOR DARK_GRAY} to his advantage. Make sure\l"
+	.string "conditions{COLOR DARK_GRAY} to her advantage. Make sure\l"
 	.string "to stock up on status-healing items!$"
 
 MyrriniIsland_Gym_EventScript_Hypno_Text_0:
@@ -265,7 +265,7 @@ MyrriniIsland_Gym_EventScript_Hypno_Text_1:
 
 MyrriniIsland_Gym_EventScript_Hypno_Text_2:
 # 46 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	.string "Hypno shares a wide grin with Thyrsus.\n"
+	.string "Hypno shares a wide grin with Euterpe.\n"
 	.string "They must have been partners for\l"
 	.string "years.$"
 
@@ -277,8 +277,8 @@ MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Hailey_Text_1:
 # 56 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	.string "There's enough food, wine, and juice in\n"
 	.string "here to last a lifetime. Of course, with\l"
-	.string "how Thyrsus parties, it might only last\l"
-	.string "a week!$"
+	.string "the parties Euterpe throws, it might\l"
+	.string "only last a week!$"
 
 MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Tasos_Text_0:
 # 73 "data/maps/MyrriniIsland_Gym/scripts.pory"
@@ -309,21 +309,21 @@ MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Alma_Text_1:
 	.string "Honestly, I've always been a better\n"
 	.string "singer than a Trainer.$"
 
-MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty_Text_0:
+MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty_Text_0:
 # 145 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	.string "Thyrsus$"
+	.string "Euterpe$"
 
-MyrriniIsland_Gym_EventScript_Thyrsus_NormalDifficulty_Text_1:
+MyrriniIsland_Gym_EventScript_Euterpe_NormalDifficulty_Text_1:
 # 146 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	.string "Looks like I have some competition as\n"
-	.string "King of Parties, {PLAYER}!$"
+	.string "Muse of Parties, {PLAYER}!$"
 
-MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript_Text_0:
+MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript_Text_0:
 # 172 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	.string "{PLAYER} received the Festival Badge\n"
-	.string "from Thyrsus.$"
+	.string "from Euterpe.$"
 
-MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript_Text_1:
+MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript_Text_1:
 # 186 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	.string "The Festival Badge looks great on you!\n"
 	.string "People around Ilios will recognize it as\l"
@@ -333,7 +333,7 @@ MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript_Text_1:
 	.string "Woah, hey, I almost forgot in the\n"
 	.string "excitement - take this!$"
 
-MyrriniIsland_Gym_EventScript_Thyrsus_DefeatedScript_Text_2:
+MyrriniIsland_Gym_EventScript_Euterpe_DefeatedScript_Text_2:
 # 192 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	.string "That TM contains the move {COLOR GREEN}Acid Spray{COLOR DARK_GRAY}.\n"
 	.string "It's a bit weak by itself, but combined\l"
@@ -377,23 +377,22 @@ MyrriniIsland_Gym_Text_Trainer_MyrriniGym_RemigioDefeat::
 
 MyrriniIsland_Gym_Text_Trainer_MyrriniGym_AlmaIntro::
 # 115 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	.string "Thyrsus hired me to perform. Get ready\n"
+	.string "Euterpe hired me to perform. Get ready\n"
 	.string "for this!$"
 
 MyrriniIsland_Gym_Text_Trainer_MyrriniGym_AlmaDefeat::
 # 119 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	.string "It's already over?!$"
 
-MyrriniIsland_Gym_Text_ThyrsusIntro::
+MyrriniIsland_Gym_Text_EuterpeIntro::
 # 160 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	.string "Opa, opa! A Trainer's finally reached me!\p"
-	.string "I'm Thyrsus, King of Parties, Poisons,\n"
+	.string "I'm Euterpe, Muse of Parties, Poisons,\n"
 	.string "and this Gym. It's been so long since a\l"
 	.string "worthy Trainer has battled me, I've\l"
 	.string "started to get bored. Come on, show me\l"
 	.string "how you party!$"
 
-MyrriniIsland_Gym_Text_ThyrsusDefeat::
+MyrriniIsland_Gym_Text_EuterpeDefeat::
 # 164 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	.string "Ahaha, perfect! Your moves were on\n"
-	.string "point!$"
+	.string "Ahaha, perfect! I'm truly entertained!$"

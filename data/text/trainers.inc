@@ -3769,15 +3769,15 @@ Route124_Text_DeclanPostBattle:
 	.string "I should chat up lady SWIMMERS\n"
 	.string "and invite them on a long swim.$"
 
-Route124_Text_IsabellaIntro:
+Route124_Text_IkleioIntro:
 	.string "I'm not going to lose to some\n"
 	.string "surfer TRAINER.$"
 
-Route124_Text_IsabellaDefeat:
+Route124_Text_IkleioDefeat:
 	.string "I've only got sweat in my eyes!\n"
 	.string "I am not crying!$"
 
-Route124_Text_IsabellaPostBattle:
+Route124_Text_IkleioPostBattle:
 	.string "You can find pretty colored shards\n"
 	.string "of things around here.$"
 

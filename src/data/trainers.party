@@ -249,8 +249,8 @@ SPECIES_PONYTA_GALARIAN
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LEADER_DEO === /* Gym Leader 1: Deo (replaces Brawly) */
-Name: Deo
+=== TRAINER_LEADER_POLYMNIA === /* Gym Leader 1: Polymnia (replaces Brawly) */
+Name: Polymnia
 Class: Leader
 Pic: Leader Brawly
 Gender: Female
@@ -467,8 +467,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Growth
 - Stun Spore
 
-=== TRAINER_LEADER_DEO_HARD === /* Gym Leader 1: Deo (Hard Mode) */
-Name: Deo
+=== TRAINER_LEADER_POLYMNIA_HARD === /* Gym Leader 1: Polymnia (Hard Mode) */
+Name: Polymnia
 Class: Leader
 Pic: Leader Brawly
 Gender: Female
@@ -847,12 +847,12 @@ SPECIES_CORSOLA_GALAR
 Level: 16
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_LEADER_MATTAIOS === /* Gym Leader #2: Mattaios (Normal Difficulty) */
-Name: Mattaios
+=== TRAINER_LEADER_OURANI === /* Gym Leader #2: Ourani (Normal Difficulty) */
+Name: Ourani
 Class: Leader
 Pic: Leader Wattson
-Gender: Male
-Music: Male
+Gender: Female
+Music: Female
 Items: Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
@@ -901,12 +901,12 @@ Tags: Ace
 - Bite
 - Payback
 
-=== TRAINER_LEADER_MATTAIOS_HARD === /* Hard version of Mattaios */
-Name: Mattaios
+=== TRAINER_LEADER_OURANI_HARD === /* Hard version of Ourani */
+Name: Ourani
 Class: Leader
 Pic: Leader Wattson
-Gender: Male
-Music: Male
+Gender: Female
+Music: Female
 Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
@@ -1438,8 +1438,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Helping Hand
 - Feather Dance
 
-=== TRAINER_LEADER_SABELLA ===
-Name: Sabella
+=== TRAINER_LEADER_KLEIO ===
+Name: Kleio
 Class: Leader
 Pic: Leader Roxanne
 Gender: Female
@@ -1499,8 +1499,8 @@ Tags: Ace
 - Charm
 - Pain Split
 
-=== TRAINER_LEADER_SABELLA_HARD ===
-Name: Sabella
+=== TRAINER_LEADER_KLEIO_HARD ===
+Name: Kleio
 Class: Leader
 Pic: Leader Roxanne
 Gender: Female
@@ -2838,8 +2838,8 @@ IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Stored Power
 - Psych Up
 
-=== TRAINER_LEADER_MENESWO ===
-Name: Meneswo
+=== TRAINER_LEADER_TERPSIKORE ===
+Name: Terpsikore
 Class: Leader
 Pic: Leader Flannery
 Gender: Female
@@ -2897,8 +2897,8 @@ Tags: Ace
 - Detect
 - Meditate
 
-=== TRAINER_LEADER_MENESWO_HARD ===
-Name: Meneswo
+=== TRAINER_LEADER_TERPSIKORE_HARD ===
+Name: Terpsikore
 Class: Leader
 Pic: Leader Flannery
 Gender: Female
@@ -3531,33 +3531,35 @@ Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Tags: Ace
 
-=== TRAINER_LEADER_THYRSUS ===
-Name: Thyrsus
+=== TRAINER_LEADER_EUTERPE ===
+Name: Euterpe
 Class: Leader
 Pic: Leader Norman
-Gender: Male
-Music: Male
+Gender: Female
+Music: Female
 Items: Full Heal / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
 Party Size: 4
 Pool Rules: Basic
 
-Salazzle
+Hypno
 Level: 29
+Ability: Insomnia
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flame Burst
-- Toxic
-- Smog
-- Dragon Rage
+- Psybeam
+- Poison Gas
+- Knock Off
+- Headbutt
 
-Lycanroc Midnight
+Gyarados
 Level: 29
+Ability: Intimidate
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Night Slash
-- Rock Tomb
-- Stealth Rock
-- Howl
+- Ice Fang
+- Poison Fang
+- Bite
+- Aqua Tail
 
 Sneasel Hisuian
 Level: 30
@@ -3575,35 +3577,45 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Pounce
 - U Turn
 
-Hypno
+Tentacruel
 Level: 31
-Ability: ABILITY_POISON_PUPPETEER
+Ability: Clear Body
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Tags: Ace
-- Psybeam
-- Poison Gas
-- Knock Off
-- Disable
+- Water Pulse
+- Acid Spray
+- Deepwater Curse
+- Poison Jab
 
-=== TRAINER_LEADER_THYRSUS_HARD ===
-Name: Thyrsus
+=== TRAINER_LEADER_EUTERPE_HARD ===
+Name: Euterpe
 Class: Leader
 Pic: Leader Norman
-Gender: Male
-Music: Male
+Gender: Female
+Music: Female
 Items: Full Heal / Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
 Party Size: 6
 Pool Rules: Basic
 
-Salazzle
+Hypno
 Level: 29
+Ability: Poison Puppeteer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flame Burst
-- Toxic
-- Sludge
-- Dragon Rage
+- Psybeam
+- Poison Gas
+- Knock Off
+- Disable
+
+Gyarados
+Level: 29
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ice Fang
+- Poison Fang
+- Bite
+- Aqua Tail
 
 Shedinja
 Level: 29
@@ -3612,14 +3624,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 - Sand Attack
 - Fell Stinger
-
-Lycanroc Midnight
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Night Slash
-- Rock Tomb
-- Stealth Rock
-- Howl
 
 Sneasel Hisuian
 Level: 30
@@ -3637,13 +3641,13 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Pounce
 - U Turn
 
-Dustox
+Dragalge
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Toxic
+- Water Pulse
+- Feint Attack
 - Venoshock
-- Light Screen
-- Whirlwind
 
 Haunter
 Level: 30
@@ -3653,14 +3657,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Ball
 - Confuse Ray
 
-Hypno
+Tentacruel
 Level: 31
-Ability: ABILITY_POISON_PUPPETEER
+Ability: Clear Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Tags: Ace
-- Psybeam
-- Toxic
-- Knock Off
+- Water Pulse
+- Acid Spray
+- Deepwater Curse
 - Poison Jab
 
 === TRAINER_MARMAROMINES_GRUNT_1 ===
@@ -4099,168 +4103,276 @@ Kleavor
 Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_WINSTON_2 ===
-Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
-Gender: Male
-Music: Rich
-Items: Full Restore
+=== TRAINER_VULCAISEA_SHERRY ===
+Name: Sherry
+Class: Pokefan
+Pic: Pokefan F
+Gender: Female
+Music: Twins
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
 
-Linoone @ Nugget
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Boltund
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_WINSTON_3 ===
-Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
+Scraggy
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Tinkatuff
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Cherrim
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_VULCAISEA_LUSIO ===
+Name: Lusio
+Class: Swimmer M
+Pic: Swimmer M
 Gender: Male
-Music: Rich
-Items: Full Restore
+Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 2
+Pool Rules: Basic
 
-Linoone @ Nugget
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Croconaw
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_WINSTON_4 ===
-Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
-Gender: Male
-Music: Rich
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move
+Flamigo
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Linoone @ Nugget
+Octillery
 Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tags: Ace
 
-=== TRAINER_WINSTON_5 ===
-Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
-Gender: Male
-Music: Rich
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move
-
-Linoone @ Nugget
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Fury Swipes
-- Mud Sport
-- Odor Sleuth
-- Sand Attack
-
-=== TRAINER_STEVE_1 ===
-Name: STEVE
-Class: Performer_M
-Pic: Performer_M
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Aron
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_THALIA_1 ===
-Name: THALIA
-Class: Beauty
-Pic: Beauty
+=== TRAINER_VULCAISEA_MAHYA ===
+Name: Mahya
+Class: Swimmer F
+Pic: Swimmer F
 Gender: Female
-Music: Female
+Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 1
+Pool Rules: Basic
 
-Wailmer
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Arctovish
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Horsea
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dracovish
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MARK ===
-Name: MARK
-Class: Performer_M
-Pic: Performer_M
-Gender: Male
-Music: Suspicious
+=== TRAINER_VULCAISEA_LEYLI ===
+Name: Leyli
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
-Rhyhorn
+Drakloak
 Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_GRUNT_MT_CHIMNEY_1 ===
-Name: GRUNT
-Class: Team Magma
-Pic: Magma Grunt F
+Pachirisu
+Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Ribombee
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_VULCAISEA_ZISSIS ===
+Name: Zissis
+Class: Tuber M
+Pic: Tuber M
+Gender: Male
+Music: Girl
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Herdier
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Boltund
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Lycanroc
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_VULCAISEA_PELAGIA ===
+Name: Pelagia
+Class: Swimmer F
+Pic: Swimmer F
 Gender: Female
-Music: Magma
+Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
 
-Numel
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_STEVE_2 ===
-Name: STEVE
-Class: Performer_M
-Pic: Performer_M
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Lairon
-Level: 27
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_STEVE_3 ===
-Name: STEVE
-Class: Performer_M
-Pic: Performer_M
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Lairon
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Rhyhorn
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_STEVE_4 ===
-Name: STEVE
-Class: Performer_M
-Pic: Performer_M
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Lairon
+Steenee
 Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Rhyhorn
+Persian
 Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Floragato
+Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Xatu
+Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Kecleon
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_VULCAISEA_JAXON ===
+Name: Jaxon
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Vibrava
+Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Flapple
+Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Marowak Alolan
+Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_VULCAISEA_VICTORIA ===
+Name: Victoria
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Swimmer
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Klawf
+Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Pelipper
+Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Hakamo_o
+Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_VULCAISEA_JULIEN ===
+Name: Julien
+Class: Tuber M
+Pic: Tuber M
+Gender: Male
+Music: Girl
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Cufant
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Tauros Paldean Aqua Breed
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Piloswine
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_VULCAISEA_TABATA ===
+Name: Tabata
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+Party Size: 3
+Pool Rules: Basic
+
+Dewgong
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Poliwhirl
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Clodsire
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_VULCAISEA_SEBASTIAN ===
+Name: Sebastian
+Class: Artist
+Pic: Artist
+Gender: Male
+Music: Cool
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Glaceon
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Doublade
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Onix
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Grafaiai
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Duosion
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_STEVE_5 ===
 Name: STEVE
@@ -12430,8 +12542,8 @@ Breloom
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ISABELLA ===
-Name: ISABELLA
+=== TRAINER_IKLEIO ===
+Name: IKLEIO
 Class: Triathlete
 Pic: Swimming Triathlete F
 Gender: Female

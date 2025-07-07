@@ -96,7 +96,7 @@ SatyrsLair_EventScript_ChimeraEvent::
 # 54 "data/maps/SatyrsLair/scripts.pory"
 	closemessage
 # 55 "data/maps/SatyrsLair/scripts.pory"
-	applymovement 5, SatyrsLair_Movement_MeneswoBlocksEscape
+	applymovement 5, SatyrsLair_Movement_TerpsikoreBlocksEscape
 # 56 "data/maps/SatyrsLair/scripts.pory"
 	applymovement 3, SatyrsLair_Movement_AdminEscapes1
 # 57 "data/maps/SatyrsLair/scripts.pory"
@@ -140,7 +140,7 @@ SatyrsLair_EventScript_ChimeraEvent::
 # 78 "data/maps/SatyrsLair/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 # 79 "data/maps/SatyrsLair/scripts.pory"
-	applymovement 5, SatyrsLair_Movement_MeneswoApproachesPlayer
+	applymovement 5, SatyrsLair_Movement_TerpsikoreApproachesPlayer
 # 80 "data/maps/SatyrsLair/scripts.pory"
 	waitmovement 0
 # 81 "data/maps/SatyrsLair/scripts.pory"
@@ -152,206 +152,204 @@ SatyrsLair_EventScript_ChimeraEvent::
 # 84 "data/maps/SatyrsLair/scripts.pory"
 	delay 15
 # 85 "data/maps/SatyrsLair/scripts.pory"
-	applymovement 5, Common_Movement_QuestionMark
+	emote 5, EMOTE_QUESTION
 # 86 "data/maps/SatyrsLair/scripts.pory"
-	waitmovement 0
+	speakername SatyrsLair_EventScript_ChimeraEvent_Text_2
 # 87 "data/maps/SatyrsLair/scripts.pory"
-	speakername SatyrsLair_EventScript_ChimeraEvent_Text_2
-# 88 "data/maps/SatyrsLair/scripts.pory"
 	msgbox SatyrsLair_EventScript_ChimeraEvent_Text_12
-# 89 "data/maps/SatyrsLair/scripts.pory"
+# 88 "data/maps/SatyrsLair/scripts.pory"
 	closemessage
-# 91 "data/maps/SatyrsLair/scripts.pory"
+# 90 "data/maps/SatyrsLair/scripts.pory"
 	giveitem ITEM_TERA_ORB
-# 92 "data/maps/SatyrsLair/scripts.pory"
+# 91 "data/maps/SatyrsLair/scripts.pory"
 	closemessage
-# 94 "data/maps/SatyrsLair/scripts.pory"
+# 93 "data/maps/SatyrsLair/scripts.pory"
 	delay 5
-# 95 "data/maps/SatyrsLair/scripts.pory"
+# 94 "data/maps/SatyrsLair/scripts.pory"
 	speakername SatyrsLair_EventScript_ChimeraEvent_Text_2
-# 96 "data/maps/SatyrsLair/scripts.pory"
+# 95 "data/maps/SatyrsLair/scripts.pory"
 	msgbox SatyrsLair_EventScript_ChimeraEvent_Text_13
-# 97 "data/maps/SatyrsLair/scripts.pory"
+# 96 "data/maps/SatyrsLair/scripts.pory"
 	closemessage
-# 99 "data/maps/SatyrsLair/scripts.pory"
+# 98 "data/maps/SatyrsLair/scripts.pory"
 	fadescreen FADE_TO_BLACK
+# 99 "data/maps/SatyrsLair/scripts.pory"
+	delay 20
 # 100 "data/maps/SatyrsLair/scripts.pory"
-	delay 20
-# 101 "data/maps/SatyrsLair/scripts.pory"
 	setflag FLAG_HIDE_BLOCKING_SOFOS_GYM
+# 101 "data/maps/SatyrsLair/scripts.pory"
+	setflag FLAG_HIDE_TERPSIKORE_SATYRS_LAIR
 # 102 "data/maps/SatyrsLair/scripts.pory"
-	setflag FLAG_HIDE_MENESWO_SATYRS_LAIR
-# 103 "data/maps/SatyrsLair/scripts.pory"
 	clearflag FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA
-# 104 "data/maps/SatyrsLair/scripts.pory"
+# 103 "data/maps/SatyrsLair/scripts.pory"
 	removeobject 1
-# 105 "data/maps/SatyrsLair/scripts.pory"
+# 104 "data/maps/SatyrsLair/scripts.pory"
 	removeobject 2
-# 106 "data/maps/SatyrsLair/scripts.pory"
+# 105 "data/maps/SatyrsLair/scripts.pory"
 	removeobject 3
-# 107 "data/maps/SatyrsLair/scripts.pory"
+# 106 "data/maps/SatyrsLair/scripts.pory"
 	removeobject 4
-# 108 "data/maps/SatyrsLair/scripts.pory"
+# 107 "data/maps/SatyrsLair/scripts.pory"
 	removeobject 5
+# 108 "data/maps/SatyrsLair/scripts.pory"
+	delay 20
 # 109 "data/maps/SatyrsLair/scripts.pory"
-	delay 20
-# 110 "data/maps/SatyrsLair/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 111 "data/maps/SatyrsLair/scripts.pory"
+# 110 "data/maps/SatyrsLair/scripts.pory"
 	delay 20
-# 113 "data/maps/SatyrsLair/scripts.pory"
+# 112 "data/maps/SatyrsLair/scripts.pory"
 	release
 	end
 
 
-# 116 "data/maps/SatyrsLair/scripts.pory"
+# 115 "data/maps/SatyrsLair/scripts.pory"
 SatyrsLair_Movement_PlayerApproachGrunts:
-# 118 "data/maps/SatyrsLair/scripts.pory"
+# 117 "data/maps/SatyrsLair/scripts.pory"
+	walk_up
+# 117 "data/maps/SatyrsLair/scripts.pory"
 	walk_up
 # 118 "data/maps/SatyrsLair/scripts.pory"
-	walk_up
-# 119 "data/maps/SatyrsLair/scripts.pory"
 	emote_exclamation_mark
-# 120 "data/maps/SatyrsLair/scripts.pory"
+# 119 "data/maps/SatyrsLair/scripts.pory"
 	delay_16
+# 120 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_up
 # 121 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_up
+	walk_fast_right
 # 122 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_right
-# 123 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_up
-# 124 "data/maps/SatyrsLair/scripts.pory"
+# 123 "data/maps/SatyrsLair/scripts.pory"
 	step_end
 
-# 134 "data/maps/SatyrsLair/scripts.pory"
+# 133 "data/maps/SatyrsLair/scripts.pory"
 SatyrsLair_Movement_GruntEscape1:
-# 136 "data/maps/SatyrsLair/scripts.pory"
+# 135 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 135 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 135 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 135 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 135 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 135 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_down
 # 136 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 136 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 136 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 136 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 136 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 137 "data/maps/SatyrsLair/scripts.pory"
 	step_end
 
-# 139 "data/maps/SatyrsLair/scripts.pory"
+# 138 "data/maps/SatyrsLair/scripts.pory"
 SatyrsLair_Movement_GruntEscape2:
-# 141 "data/maps/SatyrsLair/scripts.pory"
+# 140 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_right
-# 142 "data/maps/SatyrsLair/scripts.pory"
+# 141 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 141 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_down
 # 142 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 143 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_left
+# 142 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_left
 # 143 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_left
-# 144 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 143 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 143 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 143 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 143 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_down
 # 144 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 144 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 144 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 144 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 145 "data/maps/SatyrsLair/scripts.pory"
 	step_end
 
-# 147 "data/maps/SatyrsLair/scripts.pory"
+# 146 "data/maps/SatyrsLair/scripts.pory"
 SatyrsLair_Movement_ArcanineEscapes:
-# 149 "data/maps/SatyrsLair/scripts.pory"
+# 148 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 148 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 148 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 148 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_down
 # 149 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 149 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 149 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_right
+# 150 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_down
 # 150 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_right
-# 151 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 150 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 150 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_down
 # 151 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 151 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 151 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 152 "data/maps/SatyrsLair/scripts.pory"
 	step_end
 
-# 154 "data/maps/SatyrsLair/scripts.pory"
+# 153 "data/maps/SatyrsLair/scripts.pory"
 SatyrsLair_Movement_AdminEscapes1:
-# 156 "data/maps/SatyrsLair/scripts.pory"
+# 155 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_left
-# 157 "data/maps/SatyrsLair/scripts.pory"
+# 156 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 156 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 156 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 156 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 156 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_down
 # 157 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 157 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 157 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 157 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
+	face_right
 # 158 "data/maps/SatyrsLair/scripts.pory"
-	face_right
+	emote_exclamation_mark
 # 159 "data/maps/SatyrsLair/scripts.pory"
-	emote_exclamation_mark
-# 160 "data/maps/SatyrsLair/scripts.pory"
 	delay_16
-# 161 "data/maps/SatyrsLair/scripts.pory"
+# 160 "data/maps/SatyrsLair/scripts.pory"
 	step_end
 
-# 163 "data/maps/SatyrsLair/scripts.pory"
-SatyrsLair_Movement_MeneswoBlocksEscape:
-# 165 "data/maps/SatyrsLair/scripts.pory"
+# 162 "data/maps/SatyrsLair/scripts.pory"
+SatyrsLair_Movement_TerpsikoreBlocksEscape:
+# 164 "data/maps/SatyrsLair/scripts.pory"
 	emote_exclamation_mark
-# 166 "data/maps/SatyrsLair/scripts.pory"
+# 165 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 165 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 165 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 165 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_down
 # 166 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 166 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 166 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 167 "data/maps/SatyrsLair/scripts.pory"
 	face_left
-# 168 "data/maps/SatyrsLair/scripts.pory"
+# 167 "data/maps/SatyrsLair/scripts.pory"
 	step_end
 
-# 170 "data/maps/SatyrsLair/scripts.pory"
+# 169 "data/maps/SatyrsLair/scripts.pory"
 SatyrsLair_Movement_AdminEscapes2:
-# 172 "data/maps/SatyrsLair/scripts.pory"
+# 171 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_right
-# 173 "data/maps/SatyrsLair/scripts.pory"
+# 172 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 172 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 172 "data/maps/SatyrsLair/scripts.pory"
+	walk_fast_down
+# 172 "data/maps/SatyrsLair/scripts.pory"
 	walk_fast_down
 # 173 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 173 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 173 "data/maps/SatyrsLair/scripts.pory"
-	walk_fast_down
-# 174 "data/maps/SatyrsLair/scripts.pory"
 	step_end
 
-# 176 "data/maps/SatyrsLair/scripts.pory"
-SatyrsLair_Movement_MeneswoApproachesPlayer:
-# 178 "data/maps/SatyrsLair/scripts.pory"
+# 175 "data/maps/SatyrsLair/scripts.pory"
+SatyrsLair_Movement_TerpsikoreApproachesPlayer:
+# 177 "data/maps/SatyrsLair/scripts.pory"
+	walk_up
+# 177 "data/maps/SatyrsLair/scripts.pory"
 	walk_up
 # 178 "data/maps/SatyrsLair/scripts.pory"
-	walk_up
-# 179 "data/maps/SatyrsLair/scripts.pory"
 	face_right
-# 180 "data/maps/SatyrsLair/scripts.pory"
+# 179 "data/maps/SatyrsLair/scripts.pory"
 	step_end
 
 SatyrsLair_EventScript_ChimeraEvent_Text_0:
@@ -365,16 +363,18 @@ SatyrsLair_EventScript_ChimeraEvent_Text_1:
 
 SatyrsLair_EventScript_ChimeraEvent_Text_2:
 # 22 "data/maps/SatyrsLair/scripts.pory"
-	.string "Meneswo$"
+	.string "Terpsikore$"
 
 SatyrsLair_EventScript_ChimeraEvent_Text_3:
 # 23 "data/maps/SatyrsLair/scripts.pory"
 	.string "You! Young Trainer, you'll be my\n"
-	.string "assistant! I am Meneswo, the {COLOR GREEN}Gym Leader\l"
-	.string "of Sofos City{COLOR DARK_GRAY}. I've been holding off all\l"
-	.string "these Team Chimera members, but now's\l"
-	.string "the time for STRATEGY! You take the two\l"
-	.string "Grunts, and I'll wipe out this Admin!$"
+	.string "assistant! I am Terpsikore, Muse of\l"
+	.string "Dance and the {COLOR GREEN}Gym Leader of Sofos City{COLOR DARK_GRAY}.\l"
+	.string "I've been holding off all these Team\l"
+	.string "Chimera members, but now we must\l"
+	.string "harmonize and work together! You take\l"
+	.string "the two Grunts, and I'll wipe out this\l"
+	.string "Admin!$"
 
 SatyrsLair_EventScript_ChimeraEvent_Text_4:
 # 31 "data/maps/SatyrsLair/scripts.pory"
@@ -418,28 +418,29 @@ SatyrsLair_EventScript_ChimeraEvent_Text_11:
 # 82 "data/maps/SatyrsLair/scripts.pory"
 	.string "What a thrilling battle! Your strategy,\n"
 	.string "the moves you used, the timing of your\l"
-	.string "attacks... what's your name?\p"
+	.string "attacks... You move in perfect harmony\l"
+	.string "with your team. What's your name?\p"
 	.string "{PLAYER}! Please, come challenge me\n"
 	.string "{COLOR GREEN}at my Gym{COLOR DARK_GRAY}! Oh, as for the Tera Orb... I\l"
 	.string "already have my own, as a Gym Leader.\l"
 	.string "What should I do with it?$"
 
 SatyrsLair_EventScript_ChimeraEvent_Text_12:
-# 88 "data/maps/SatyrsLair/scripts.pory"
+# 87 "data/maps/SatyrsLair/scripts.pory"
 	.string "Hm? Your friend {COLOR GREEN}Niko{COLOR DARK_GRAY} was looking for it?\n"
 	.string "Here, {COLOR GREEN}bring it to him{COLOR DARK_GRAY}. If you trust him,\l"
 	.string "so shall I!$"
 
 SatyrsLair_EventScript_ChimeraEvent_Text_13:
-# 96 "data/maps/SatyrsLair/scripts.pory"
+# 95 "data/maps/SatyrsLair/scripts.pory"
 	.string "I'll be returning to my Gym. I hope to\n"
 	.string "see you there soon! Our match will be\l"
 	.string "legendary!$"
 
 SatyrsLair_Text_ChimeraGruntLoseText1::
-# 126 "data/maps/SatyrsLair/scripts.pory"
+# 125 "data/maps/SatyrsLair/scripts.pory"
 	.string "How could this happen?$"
 
 SatyrsLair_Text_ChimeraGruntLoseText2::
-# 130 "data/maps/SatyrsLair/scripts.pory"
+# 129 "data/maps/SatyrsLair/scripts.pory"
 	.string "I thought we had the advantage...!$"

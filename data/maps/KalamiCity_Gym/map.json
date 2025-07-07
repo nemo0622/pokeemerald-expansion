@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MATTAIOS",
+      "graphics_id": "OBJ_EVENT_GFX_MUSE_OURANI",
       "x": 6,
       "y": 3,
       "elevation": 0,
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "KalamiCity_Gym_EventScript_Mattaios",
+      "script": "KalamiCity_Gym_EventScript_Ourani",
       "flag": "0"
     },
     {

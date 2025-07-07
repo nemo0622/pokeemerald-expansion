@@ -255,3 +255,6 @@ const u16 gMetatileAttributes_KiposZoo[] = INCBIN_U16("data/tilesets/secondary/k
 
 const u16 gMetatiles_Pentepetal[] = INCBIN_U16("data/tilesets/secondary/pentepetal/metatiles.bin");
 const u16 gMetatileAttributes_Pentepetal[] = INCBIN_U16("data/tilesets/secondary/pentepetal/metatile_attributes.bin");
+
+const u16 gMetatiles_FrescoIsles[] = INCBIN_U16("data/tilesets/secondary/fresco_isles/metatiles.bin");
+const u16 gMetatileAttributes_FrescoIsles[] = INCBIN_U16("data/tilesets/secondary/fresco_isles/metatile_attributes.bin");

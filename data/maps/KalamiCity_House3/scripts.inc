@@ -101,6 +101,6 @@ KalamiCity_House3_EventScript_Reporter_Text_1:
 KalamiCity_House3_EventScript_ScientistF_Text_0:
 # 41 "data/maps/KalamiCity_House3/scripts.pory"
 	.string "I help manage the data processing\n"
-	.string "center. Mattaios, the Gym Leader of\l"
-	.string "Kalami City, also likes to stay involved\l"
-	.string "in the running of the city.$"
+	.string "center. Ourani, the Gym Leader of Kalami\l"
+	.string "City, also likes to stay involved in the\l"
+	.string "running of the city.$"

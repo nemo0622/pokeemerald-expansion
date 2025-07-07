@@ -19,8 +19,8 @@ script SatyrsLair_EventScript_ChimeraEvent
     delay(10)
     applymovement(5, Common_Movement_FaceRight)
     waitmovement(0)
-    speakername("Meneswo")
-    msgbox(format("You! Young Trainer, you'll be my assistant! I am Meneswo, the {COLOR GREEN}Gym Leader of Sofos City{COLOR DARK_GRAY}. I've been holding off all these Team Chimera members, but now's the time for STRATEGY! You take the two Grunts, and I'll wipe out this Admin!"))
+    speakername("Terpsikore")
+    msgbox(format("You! Young Trainer, you'll be my assistant! I am Terpsikore, Muse of Dance and the {COLOR GREEN}Gym Leader of Sofos City{COLOR DARK_GRAY}. I've been holding off all these Team Chimera members, but now we must harmonize and work together! You take the two Grunts, and I'll wipe out this Admin!"))
     closemessage
     applymovement(5, Common_Movement_FaceUp)
     waitmovement(0)
@@ -52,10 +52,10 @@ script SatyrsLair_EventScript_ChimeraEvent
     speakername("Chimera Admin")
     msgbox(format("Arcanine, no! Get back here!"))
     closemessage
-    applymovement(5, SatyrsLair_Movement_MeneswoBlocksEscape)
+    applymovement(5, SatyrsLair_Movement_TerpsikoreBlocksEscape)
     applymovement(3, SatyrsLair_Movement_AdminEscapes1)
     waitmovement(0)
-    speakername("Meneswo")
+    speakername("Terpsikore")
     msgbox(format("Hold on there, bud. Give me that {COLOR GREEN}Tera Orb{COLOR DARK_GRAY} back, and I'll let you catch up to your cronies."))
     closemessage
     delay(5)
@@ -76,15 +76,14 @@ script SatyrsLair_EventScript_ChimeraEvent
     delay(20)
 
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
-    applymovement(5, SatyrsLair_Movement_MeneswoApproachesPlayer)
+    applymovement(5, SatyrsLair_Movement_TerpsikoreApproachesPlayer)
     waitmovement(0)
-    speakername("Meneswo")
-    msgbox(format("What a thrilling battle! Your strategy, the moves you used, the timing of your attacks... what's your name?\p {PLAYER}! Please, come challenge me {COLOR GREEN}at my Gym{COLOR DARK_GRAY}! Oh, as for the Tera Orb... I already have my own, as a Gym Leader. What should I do with it?"))
+    speakername("Terpsikore")
+    msgbox(format("What a thrilling battle! Your strategy, the moves you used, the timing of your attacks... You move in perfect harmony with your team. What's your name?\p {PLAYER}! Please, come challenge me {COLOR GREEN}at my Gym{COLOR DARK_GRAY}! Oh, as for the Tera Orb... I already have my own, as a Gym Leader. What should I do with it?"))
     closemessage
     delay(15)
-    applymovement(5, Common_Movement_QuestionMark)
-    waitmovement(0)
-    speakername("Meneswo")
+    emote(5, EMOTE_QUESTION)
+    speakername("Terpsikore")
     msgbox(format("Hm? Your friend {COLOR GREEN}Niko{COLOR DARK_GRAY} was looking for it? Here, {COLOR GREEN}bring it to him{COLOR DARK_GRAY}. If you trust him, so shall I!"))
     closemessage
 
@@ -92,14 +91,14 @@ script SatyrsLair_EventScript_ChimeraEvent
     closemessage
 
     delay(5)
-    speakername("Meneswo")
+    speakername("Terpsikore")
     msgbox(format("I'll be returning to my Gym. I hope to see you there soon! Our match will be legendary!"))
     closemessage
 
     fadescreen(FADE_TO_BLACK)
     delay(20)
     setflag(FLAG_HIDE_BLOCKING_SOFOS_GYM)
-    setflag(FLAG_HIDE_MENESWO_SATYRS_LAIR)
+    setflag(FLAG_HIDE_TERPSIKORE_SATYRS_LAIR)
     clearflag(FLAG_HIDE_SOFOS_CITY_CIVILIANS_FROM_CHIMERA)
     removeobject(1)
     removeobject(2)
@@ -160,7 +159,7 @@ movement SatyrsLair_Movement_AdminEscapes1
     delay_16
     step_end
 }
-movement SatyrsLair_Movement_MeneswoBlocksEscape
+movement SatyrsLair_Movement_TerpsikoreBlocksEscape
 {
     emote_exclamation_mark
     walk_fast_down * 4
@@ -173,7 +172,7 @@ movement SatyrsLair_Movement_AdminEscapes2
     walk_fast_down * 4
     step_end
 }
-movement SatyrsLair_Movement_MeneswoApproachesPlayer
+movement SatyrsLair_Movement_TerpsikoreApproachesPlayer
 {
     walk_up * 2
     face_right

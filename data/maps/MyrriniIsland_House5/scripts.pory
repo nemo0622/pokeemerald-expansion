@@ -21,3 +21,14 @@ script MyrriniIsland_House5_EventScript_Scientist
     release
     end
 }
+
+script MyrriniIsland_House5_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("Our business has taken a negative turn, thanks to Team Chimera. They took over Areios Town and made it their Hideout. People are saying they even kidnapped the Gym Leader, but nobody knows for sure..."))
+    closemessage
+    release
+    end
+}

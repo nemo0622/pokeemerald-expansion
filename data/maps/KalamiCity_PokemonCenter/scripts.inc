@@ -171,9 +171,9 @@ KalamiCity_PokemonCenter_EventScript_FatMan_Text_0:
 
 KalamiCity_PokemonCenter_EventScript_FatMan_Text_1:
 # 58 "data/maps/KalamiCity_PokemonCenter/scripts.pory"
-	.string "Mattaios, the Gym Leader that lives\n"
-	.string "here, is constantly working. Does he\l"
-	.string "ever take a break?$"
+	.string "Ourani, the Gym Leader that lives here,\n"
+	.string "is constantly working. Does she ever\l"
+	.string "take a break?$"
 
 KalamiCity_PokemonCenter_EventScript_PokefanF_Text_0:
 # 68 "data/maps/KalamiCity_PokemonCenter/scripts.pory"

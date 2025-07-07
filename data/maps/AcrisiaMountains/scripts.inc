@@ -69,13 +69,13 @@ AcrisiaMountains_EventScript_RockExploringHiker::
 	end
 
 
-AcrisiaMountains_EventScript_MattaiosTraining::
+AcrisiaMountains_EventScript_OuraniTraining::
 # 45 "data/maps/AcrisiaMountains/scripts.pory"
 	lock
 # 46 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_MattaiosTraining_Text_0
+	speakername AcrisiaMountains_EventScript_OuraniTraining_Text_0
 # 47 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_MattaiosTraining_Text_1
+	msgbox AcrisiaMountains_EventScript_OuraniTraining_Text_1
 # 48 "data/maps/AcrisiaMountains/scripts.pory"
 	closemessage
 # 49 "data/maps/AcrisiaMountains/scripts.pory"
@@ -338,11 +338,11 @@ AcrisiaMountains_EventScript_RockExploringHiker_Text_1:
 	.string "thousands of years old. You never know\l"
 	.string "what you'll find hiding under a rock!$"
 
-AcrisiaMountains_EventScript_MattaiosTraining_Text_0:
+AcrisiaMountains_EventScript_OuraniTraining_Text_0:
 # 46 "data/maps/AcrisiaMountains/scripts.pory"
-	.string "Mattaios$"
+	.string "Ourani$"
 
-AcrisiaMountains_EventScript_MattaiosTraining_Text_1:
+AcrisiaMountains_EventScript_OuraniTraining_Text_1:
 # 47 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Huff huff huff...\p"
 	.string "Always training, always working... Come\n"

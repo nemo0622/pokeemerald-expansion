@@ -1035,8 +1035,8 @@ JusmailTown_House1_EventScript_EnterBuildingForFirstTime_Text_3:
 # 90 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "What's this? I can't smell the scent of\n"
 	.string "fresh grass and fruits on you... you\l"
-	.string "must not have fought Deo yet! Oh no no\l"
-	.string "NO, this won't do!\p"
+	.string "must not have fought Polymnia yet! Oh\l"
+	.string "no no NO, this won't do!\p"
 	.string "Come back when you've {COLOR GREEN}beaten the\n"
 	.string "Jusmail Town Gym Leader{COLOR DARK_GRAY}, darling.$"
 
@@ -1053,8 +1053,8 @@ JusmailTown_House1_EventScript_EnterBuildingForFirstTime_Text_5:
 JusmailTown_House1_EventScript_EnterBuildingForFirstTime_Text_6:
 # 104 "data/maps/JusmailTown_House1/scripts.pory"
 	.string "Mmmm, that smell... grass, fruit, a hint\n"
-	.string "of honey... you must have beaten Deo!\l"
-	.string "Congratulations!$"
+	.string "of honey... you must have beaten\l"
+	.string "Polymnia! Congratulations!$"
 
 JusmailTown_House1_EventScript_EnterBuildingForFirstTime_Text_7:
 # 108 "data/maps/JusmailTown_House1/scripts.pory"

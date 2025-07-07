@@ -55,7 +55,7 @@ script KalamiCity_PokemonCenter_EventScript_FatMan
     lock
     faceplayer
     speakername("Man")
-    msgbox(format("Mattaios, the Gym Leader that lives here, is constantly working. Does he ever take a break?"))
+    msgbox(format("Ourani, the Gym Leader that lives here, is constantly working. Does she ever take a break?"))
     closemessage
     release
     end

@@ -70,33 +70,33 @@ JusmailTown_Gym_EventScript_Skiddo::
 	end
 
 
-JusmailTown_Gym_EventScript_Deo::
+JusmailTown_Gym_EventScript_Polymnia::
 # 54 "data/maps/JusmailTown_Gym/scripts.pory"
 	lock
 # 55 "data/maps/JusmailTown_Gym/scripts.pory"
 	faceplayer
 # 56 "data/maps/JusmailTown_Gym/scripts.pory"
-	goto_if_unset FLAG_HARD_MODE, JusmailTown_Gym_EventScript_Deo_2
+	goto_if_unset FLAG_HARD_MODE, JusmailTown_Gym_EventScript_Polymnia_2
 # 62 "data/maps/JusmailTown_Gym/scripts.pory"
-	goto JusmailTown_Gym_EventScript_Deo_HardDifficulty
-JusmailTown_Gym_EventScript_Deo_1:
+	goto JusmailTown_Gym_EventScript_Polymnia_HardDifficulty
+JusmailTown_Gym_EventScript_Polymnia_1:
 # 64 "data/maps/JusmailTown_Gym/scripts.pory"
 	release
 	end
 
-JusmailTown_Gym_EventScript_Deo_2:
+JusmailTown_Gym_EventScript_Polymnia_2:
 # 58 "data/maps/JusmailTown_Gym/scripts.pory"
-	goto JusmailTown_Gym_EventScript_Deo_NormalDifficulty
-	goto JusmailTown_Gym_EventScript_Deo_1
+	goto JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty
+	goto JusmailTown_Gym_EventScript_Polymnia_1
 
 
-JusmailTown_Gym_EventScript_Deo_NormalDifficulty::
+JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty::
 # 70 "data/maps/JusmailTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_DEO, JusmailTown_Gym_Text_DeoIntro, JusmailTown_Gym_Text_DeoDefeat, JusmailTown_Gym_EventScript_Deo_DefeatedScript, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_POLYMNIA, JusmailTown_Gym_Text_PolymniaIntro, JusmailTown_Gym_Text_PolymniaDefeat, JusmailTown_Gym_EventScript_Polymnia_DefeatedScript, NO_MUSIC
 # 71 "data/maps/JusmailTown_Gym/scripts.pory"
-	speakername JusmailTown_Gym_EventScript_Deo_NormalDifficulty_Text_0
+	speakername JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_0
 # 72 "data/maps/JusmailTown_Gym/scripts.pory"
-	msgbox JusmailTown_Gym_EventScript_Deo_NormalDifficulty_Text_1
+	msgbox JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_1
 # 73 "data/maps/JusmailTown_Gym/scripts.pory"
 	closemessage
 # 74 "data/maps/JusmailTown_Gym/scripts.pory"
@@ -104,13 +104,13 @@ JusmailTown_Gym_EventScript_Deo_NormalDifficulty::
 	end
 
 
-JusmailTown_Gym_EventScript_Deo_HardDifficulty::
+JusmailTown_Gym_EventScript_Polymnia_HardDifficulty::
 # 79 "data/maps/JusmailTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_DEO_HARD, JusmailTown_Gym_Text_DeoIntro, JusmailTown_Gym_Text_DeoDefeat, JusmailTown_Gym_EventScript_Deo_DefeatedScript, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_POLYMNIA_HARD, JusmailTown_Gym_Text_PolymniaIntro, JusmailTown_Gym_Text_PolymniaDefeat, JusmailTown_Gym_EventScript_Polymnia_DefeatedScript, NO_MUSIC
 # 80 "data/maps/JusmailTown_Gym/scripts.pory"
-	speakername JusmailTown_Gym_EventScript_Deo_NormalDifficulty_Text_0
+	speakername JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_0
 # 81 "data/maps/JusmailTown_Gym/scripts.pory"
-	msgbox JusmailTown_Gym_EventScript_Deo_NormalDifficulty_Text_1
+	msgbox JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_1
 # 82 "data/maps/JusmailTown_Gym/scripts.pory"
 	closemessage
 # 83 "data/maps/JusmailTown_Gym/scripts.pory"
@@ -118,11 +118,11 @@ JusmailTown_Gym_EventScript_Deo_HardDifficulty::
 	end
 
 
-JusmailTown_Gym_EventScript_Deo_DefeatedScript::
+JusmailTown_Gym_EventScript_Polymnia_DefeatedScript::
 # 97 "data/maps/JusmailTown_Gym/scripts.pory"
 	setflag FLAG_SUPPRESS_SPEAKER_NAME
 # 98 "data/maps/JusmailTown_Gym/scripts.pory"
-	message JusmailTown_Gym_EventScript_Deo_DefeatedScript_Text_0
+	message JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_0
 # 99 "data/maps/JusmailTown_Gym/scripts.pory"
 	waitmessage
 # 100 "data/maps/JusmailTown_Gym/scripts.pory"
@@ -140,17 +140,17 @@ JusmailTown_Gym_EventScript_Deo_DefeatedScript::
 # 110 "data/maps/JusmailTown_Gym/scripts.pory"
 	clearflag FLAG_HIDE_RANIA_JUSMAIL
 # 113 "data/maps/JusmailTown_Gym/scripts.pory"
-	speakername JusmailTown_Gym_EventScript_Deo_NormalDifficulty_Text_0
+	speakername JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_0
 # 114 "data/maps/JusmailTown_Gym/scripts.pory"
-	msgbox JusmailTown_Gym_EventScript_Deo_DefeatedScript_Text_1
+	msgbox JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_1
 # 115 "data/maps/JusmailTown_Gym/scripts.pory"
 	closemessage
 # 118 "data/maps/JusmailTown_Gym/scripts.pory"
 	giveitem ITEM_TM_BULLET_SEED
 # 119 "data/maps/JusmailTown_Gym/scripts.pory"
-	speakername JusmailTown_Gym_EventScript_Deo_NormalDifficulty_Text_0
+	speakername JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_0
 # 120 "data/maps/JusmailTown_Gym/scripts.pory"
-	msgbox JusmailTown_Gym_EventScript_Deo_DefeatedScript_Text_2
+	msgbox JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_2
 # 121 "data/maps/JusmailTown_Gym/scripts.pory"
 	closemessage
 # 123 "data/maps/JusmailTown_Gym/scripts.pory"
@@ -243,7 +243,7 @@ JusmailTown_Gym_EventScript_GymMan_Text_1:
 JusmailTown_Gym_EventScript_GymMan_Text_2:
 # 30 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "Welcome to the Jusmail Town Gym!\p"
-	.string "The Gym Leader, Deo, designed this\n"
+	.string "The Gym Leader, Polymnia, designed this\n"
 	.string "building to be a home for her Grass and\l"
 	.string "Bug-type Pokémon. It's becoming a bit\l"
 	.string "of a maze!$"
@@ -260,23 +260,23 @@ JusmailTown_Gym_EventScript_Skiddo_Text_2:
 # 46 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "Skiddo is excited to be challenged!$"
 
-JusmailTown_Gym_EventScript_Deo_NormalDifficulty_Text_0:
+JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_0:
 # 71 "data/maps/JusmailTown_Gym/scripts.pory"
-	.string "Deo$"
+	.string "Polymnia$"
 
-JusmailTown_Gym_EventScript_Deo_NormalDifficulty_Text_1:
+JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_1:
 # 72 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "Skiddo and I are most comfortable here\n"
 	.string "in Jusmail Town. The world can be scary,\l"
 	.string "so it's best to find somewhere you love\l"
 	.string "and put down your roots.$"
 
-JusmailTown_Gym_EventScript_Deo_DefeatedScript_Text_0:
+JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_0:
 # 98 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "{PLAYER} received the Harvest Badge\n"
-	.string "from Deo.$"
+	.string "from Polymnia.$"
 
-JusmailTown_Gym_EventScript_Deo_DefeatedScript_Text_1:
+JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_1:
 # 114 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "The Harvest Badge is a sign of an\n"
 	.string "up-and-coming trainer. You've proven\l"
@@ -286,7 +286,7 @@ JusmailTown_Gym_EventScript_Deo_DefeatedScript_Text_1:
 	.string "Ah, how forgetful of me! Take this\n"
 	.string "before you go!$"
 
-JusmailTown_Gym_EventScript_Deo_DefeatedScript_Text_2:
+JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_2:
 # 120 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "That TM contains the move {COLOR GREEN}Bullet Seed{COLOR DARK_GRAY}!\n"
 	.string "That's a move my Pokémon practiced by\l"
@@ -332,18 +332,19 @@ JusmailTown_Gym_EventScript_Trainer_JusmailGym_Adel_Text_1:
 	.string "the Grass-type Gym made me a little\l"
 	.string "predictable.$"
 
-JusmailTown_Gym_Text_DeoIntro::
+JusmailTown_Gym_Text_PolymniaIntro::
 # 86 "data/maps/JusmailTown_Gym/scripts.pory"
-	.string "Welcome, welcome! I'm Deo. I see this is\n"
+	.string "Welcome, welcome! I'm Polymnia, Muse of\n"
+	.string "Hymns and Agriculture. I see this is\l"
 	.string "your first Gym Battle, hm? Wonderful!\p"
 	.string "My Pokémon are all caught and raised on\n"
 	.string "farms around the Ilios Region. Think\l"
 	.string "you can beat them?$"
 
-JusmailTown_Gym_Text_DeoDefeat::
+JusmailTown_Gym_Text_PolymniaDefeat::
 # 90 "data/maps/JusmailTown_Gym/scripts.pory"
-	.string "Ah, that natural talent! You've earned\n"
-	.string "your first Gym Badge!$"
+	.string "Your battling is as moving as a hymn.\n"
+	.string "You've earned your first Badge!$"
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_KariIntro::
 # 143 "data/maps/JusmailTown_Gym/scripts.pory"
@@ -362,7 +363,7 @@ JusmailTown_Gym_Text_Trainer_JusmailGym_IasonIntro::
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_IasonDefeat::
 # 165 "data/maps/JusmailTown_Gym/scripts.pory"
-	.string "You might be able to beat Deo!$"
+	.string "You might be able to beat Polymnia!$"
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_BryceIntro::
 # 179 "data/maps/JusmailTown_Gym/scripts.pory"

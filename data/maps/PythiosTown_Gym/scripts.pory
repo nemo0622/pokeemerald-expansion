@@ -31,7 +31,7 @@ script PythiosTown_Gym_EventScript_GymMan
     }
     else
     {
-        msgbox(format("Welcome to the Pythios Town Gym!\p The Gym Leader, Sabella, has designed this building as a paradise for Ghost-type and other spiritually-inclined Pokémon. Of course, that makes it seem pretty creepy to me..."))
+        msgbox(format("Welcome to the Pythios Town Gym!\p The Gym Leader, Kleio, has designed this building as a paradise for Ghost-type and other spiritually-inclined Pokémon. Of course, that makes it seem pretty creepy to me..."))
     }
     closemessage
     release
@@ -75,7 +75,7 @@ script PythiosTown_Gym_EventScript_Trainer_PythiosGym_Tafos
 {
     trainerbattle_single(TRAINER_PYTHIOSGYM_TAFOS, PythiosTown_Gym_Text_Trainer_PythiosGym_TafosIntro, PythiosTown_Gym_Text_Trainer_PythiosGym_TafosDefeat)
     speakername("Tafos")
-    msgbox(format("Sabella is guarded by two older folks who will try to start a Double Battle. Be ready for that!"))
+    msgbox(format("Kleio is guarded by two older folks who will try to start a Double Battle. Be ready for that!"))
     closemessage
     release
     end
@@ -86,7 +86,7 @@ text PythiosTown_Gym_Text_Trainer_PythiosGym_TafosIntro
 }
 text PythiosTown_Gym_Text_Trainer_PythiosGym_TafosDefeat
 {
-    format("You might have a shot at beating Sabella!")
+    format("You might have a shot at beating Kleio!")
 }
 
 script PythiosTown_Gym_EventScript_Trainer_PythiosGym_Addonis
@@ -111,7 +111,7 @@ script PythiosTown_Gym_EventScript_Trainer_PythiosGym_Geroni
 {
     trainerbattle_single(TRAINER_PYTHIOSGYM_GERONI, PythiosTown_Gym_Text_Trainer_PythiosGym_GeroniIntro, PythiosTown_Gym_Text_Trainer_PythiosGym_GeroniDefeat)
     speakername("Geroni")
-    msgbox(format("We make sure only the strongest, smartest Pokémon Trainers make it to Sabella."))
+    msgbox(format("We make sure only the strongest, smartest Pokémon Trainers make it to Kleio."))
     closemessage
     release
     end
@@ -129,7 +129,7 @@ script PythiosTown_Gym_EventScript_Trainer_PythiosGym_Yanna
 {
     trainerbattle_single(TRAINER_PYTHIOSGYM_YANNA, PythiosTown_Gym_Text_Trainer_PythiosGym_YannaIntro, PythiosTown_Gym_Text_Trainer_PythiosGym_YannaDefeat)
     speakername("Yanna")
-    msgbox(format("Many Pokémon Trainers come to Sabella, but very few are worthy."))
+    msgbox(format("Many Pokémon Trainers come to Kleio, but very few are worthy."))
     closemessage
     release
     end
@@ -140,58 +140,58 @@ text PythiosTown_Gym_Text_Trainer_PythiosGym_YannaIntro
 }
 text PythiosTown_Gym_Text_Trainer_PythiosGym_YannaDefeat
 {
-    format("It seems you are worthy of Sabella.")
+    format("It seems you are worthy of Kleio.")
 }
 
 // ----------------------------------------------------------------------------------------------
 
-script PythiosTown_Gym_EventScript_Sabella
+script PythiosTown_Gym_EventScript_Kleio
 {
     lock
     faceplayer
     if(!flag(FLAG_HARD_MODE))
     {
-        goto(PythiosTown_Gym_EventScript_Sabella_NormalDifficulty)
+        goto(PythiosTown_Gym_EventScript_Kleio_NormalDifficulty)
     }
     else
     {
-        goto(PythiosTown_Gym_EventScript_Sabella_HardDifficulty)
+        goto(PythiosTown_Gym_EventScript_Kleio_HardDifficulty)
     }
     release
     end
 }
 
-script PythiosTown_Gym_EventScript_Sabella_NormalDifficulty // called when on normal difficulty
+script PythiosTown_Gym_EventScript_Kleio_NormalDifficulty // called when on normal difficulty
 {
-    trainerbattle_single(TRAINER_LEADER_SABELLA, PythiosTown_Gym_Text_SabellaIntro, PythiosTown_Gym_Text_SabellaDefeat, PythiosTown_Gym_EventScript_Sabella_DefeatedScript, NO_MUSIC)
-    speakername("Sabella")
-    msgbox(format("As I saw in my visions, you were a worthy challenger. I hope we meet again one day, {PLAYER}."))
+    trainerbattle_single(TRAINER_LEADER_KLEIO, PythiosTown_Gym_Text_KleioIntro, PythiosTown_Gym_Text_KleioDefeat, PythiosTown_Gym_EventScript_Kleio_DefeatedScript, NO_MUSIC)
+    speakername("Kleio")
+    msgbox(format("As I saw in my visions, you were a worthy challenger. One day, we shall meet again, {PLAYER}."))
     closemessage
     release
     end
 }
-script PythiosTown_Gym_EventScript_Sabella_HardDifficulty // called when on hard difficulty
+script PythiosTown_Gym_EventScript_Kleio_HardDifficulty // called when on hard difficulty
 {
-    trainerbattle_single(TRAINER_LEADER_SABELLA_HARD, PythiosTown_Gym_Text_SabellaIntro, PythiosTown_Gym_Text_SabellaDefeat, PythiosTown_Gym_EventScript_Sabella_DefeatedScript, NO_MUSIC)
-    speakername("Sabella")
-    msgbox(format("As I saw in my visions, you were a worthy challenger. I hope we meet again one day, {PLAYER}."))
+    trainerbattle_single(TRAINER_LEADER_KLEIO_HARD, PythiosTown_Gym_Text_KleioIntro, PythiosTown_Gym_Text_KleioDefeat, PythiosTown_Gym_EventScript_Kleio_DefeatedScript, NO_MUSIC)
+    speakername("Kleio")
+    msgbox(format("As I saw in my visions, you were a worthy challenger. One day, we shall meet again, {PLAYER}."))
     closemessage
     release
     end
 }
-text PythiosTown_Gym_Text_SabellaIntro
+text PythiosTown_Gym_Text_KleioIntro
 {
-    format("Chaire. I knew you were coming, {PLAYER}. I've seen your journey in my visions, and I believe you are ready to challenge me.\p The Fates have led us here for a great battle. Let us follow our destiny, here and now!")
+    format("Chaire. I knew you were coming, {PLAYER}. I am the Muse of the Past, the Present, and the Future, so I knew of your coming long before you arrived in Ilios.\p The Fates have led us here for a great battle. Let us follow our destiny, here and now!")
 }
-text PythiosTown_Gym_Text_SabellaDefeat
+text PythiosTown_Gym_Text_KleioDefeat
 {
-    format("Amazing... You've earned your third Gym Badge, as predicted.")
+    format("You will surely be spoken of in the histories of our region.")
 }
 // Script called when you defeat the gym leader!
-script PythiosTown_Gym_EventScript_Sabella_DefeatedScript
+script PythiosTown_Gym_EventScript_Kleio_DefeatedScript
 {
     setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
-    message(format("{PLAYER} received the Grave Badge from Sabella."))
+    message(format("{PLAYER} received the Grave Badge from Kleio."))
 	waitmessage
 	call(Common_EventScript_PlayGymBadgeFanfare)
 
@@ -207,14 +207,14 @@ script PythiosTown_Gym_EventScript_Sabella_DefeatedScript
     // clearflag(FLAG_HIDE_RANIA_JUSMAIL)
 
     // Explain badge
-    speakername("Sabella")
+    speakername("Kleio")
     msgbox(format("The Grave Badge proves your skills of connecting to the hearts and souls of your Pokémon. You'll also be able to use the {COLOR GREEN}HM Flash{COLOR DARK_GRAY} outside of battle.\p Please, take this before you leave."))
     closemessage
 
     // Give TM reward and explain, plus end dialogue
     giveitem(ITEM_TM_CALM_MIND)
-    speakername("Sabella")
-    msgbox(format("That TM contains the move {COLOR GREEN}Calm Mind{COLOR DARK_GRAY}, which will boost your Pokémon's stats.\p I see the open ocean in your future... make sure you speak with a {COLOR GREEN}strange sailor{COLOR DARK_GRAY} on the beach. Then you'll be ready to head east, through the caves to {COLOR GREEN}Sofos City{COLOR DARK_GRAY}. I see greatness in your future."))
+    speakername("Kleio")
+    msgbox(format("That TM contains the move {COLOR GREEN}Calm Mind{COLOR DARK_GRAY}, which will boost your Pokémon's stats.\p I see the open ocean in your future... make sure you speak with a {COLOR GREEN}strange sailor{COLOR DARK_GRAY} on the beach. Then you'll be ready to head east, through the caves to {COLOR GREEN}Sofos City{COLOR DARK_GRAY}. We will meet again."))
     closemessage
 
     // complete gym quest and begin next one

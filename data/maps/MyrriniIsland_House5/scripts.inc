@@ -34,6 +34,22 @@ MyrriniIsland_House5_EventScript_Scientist::
 	end
 
 
+MyrriniIsland_House5_EventScript_Woman::
+# 27 "data/maps/MyrriniIsland_House5/scripts.pory"
+	lock
+# 28 "data/maps/MyrriniIsland_House5/scripts.pory"
+	faceplayer
+# 29 "data/maps/MyrriniIsland_House5/scripts.pory"
+	speakername MyrriniIsland_House5_EventScript_Woman_Text_0
+# 30 "data/maps/MyrriniIsland_House5/scripts.pory"
+	msgbox MyrriniIsland_House5_EventScript_Woman_Text_1
+# 31 "data/maps/MyrriniIsland_House5/scripts.pory"
+	closemessage
+# 32 "data/maps/MyrriniIsland_House5/scripts.pory"
+	release
+	end
+
+
 MyrriniIsland_House5_EventScript_Maniac_Text_0:
 # 7 "data/maps/MyrriniIsland_House5/scripts.pory"
 	.string "Computer Maniac$"
@@ -55,3 +71,16 @@ MyrriniIsland_House5_EventScript_Scientist_Text_1:
 	.string "as far as Hoenn have easy access to\l"
 	.string "Myrrini wine and fruit. That takes so\l"
 	.string "many people to operate!$"
+
+MyrriniIsland_House5_EventScript_Woman_Text_0:
+# 29 "data/maps/MyrriniIsland_House5/scripts.pory"
+	.string "Woman$"
+
+MyrriniIsland_House5_EventScript_Woman_Text_1:
+# 30 "data/maps/MyrriniIsland_House5/scripts.pory"
+	.string "Our business has taken a negative turn,\n"
+	.string "thanks to Team Chimera. They took over\l"
+	.string "Areios Town and made it their Hideout.\l"
+	.string "People are saying they even kidnapped\l"
+	.string "the Gym Leader, but nobody knows for\l"
+	.string "sure...$"

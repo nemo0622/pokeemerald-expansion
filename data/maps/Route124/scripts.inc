@@ -90,13 +90,13 @@ Route124_EventScript_RematchRoy::
 	end
 
 Route124_EventScript_Declan::
-	trainerbattle_single TRAINER_LEADER_DEO_HARD, Route124_Text_DeclanIntro, Route124_Text_DeclanDefeat
+	trainerbattle_single TRAINER_LEADER_POLYMNIA_HARD, Route124_Text_DeclanIntro, Route124_Text_DeclanDefeat
 	msgbox Route124_Text_DeclanPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route124_EventScript_Isabella::
-	trainerbattle_single TRAINER_ISABELLA, Route124_Text_IsabellaIntro, Route124_Text_IsabellaDefeat
-	msgbox Route124_Text_IsabellaPostBattle, MSGBOX_AUTOCLOSE
+Route124_EventScript_Ikleio::
+	trainerbattle_single TRAINER_IKLEIO, Route124_Text_IkleioIntro, Route124_Text_IkleioDefeat
+	msgbox Route124_Text_IkleioPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route124_Text_HuntersHouse:

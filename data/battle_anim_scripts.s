@@ -5650,6 +5650,7 @@ Move_BULLDOZE::
 	delay 0x8
 	goto Move_EARTHQUAKE
 
+Move_DEEPWATER_CURSE::
 Move_FROST_BREATH::
 	loadspritegfx ANIM_TAG_ICE_CHUNK
 	loadspritegfx ANIM_TAG_SMALL_EMBER

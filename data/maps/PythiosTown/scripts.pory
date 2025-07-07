@@ -36,7 +36,7 @@ script PythiosTown_EventScript_DirectionSign
 script PythiosTown_Sign_GymSign
 {
     lock
-    msgbox(format("Gym Leader: Sabella\n The Oracle of Ilios"))
+    msgbox(format("Gym Leader: Kleio\n The Muse of Past, Present, and Future"))
     closemessage
     release
     end
@@ -47,7 +47,7 @@ script PythiosTown_EventScripts_NPC_Gentleman
     lock
     faceplayer
     speakername("Gentleman")
-    msgbox(format("Pythios Town is famous for the concentration of spiritual energy here. It attracts Ghost-type and Psychic-type Pokémon.\p Folktales say that the spirits have turned the plants orange, putting the area into a permanent Autumn.\p People flock from all over to hear Sabella, the Gym Leader, predict the future. Some say she has a magic gift..."))
+    msgbox(format("Pythios Town is famous for the concentration of spiritual energy here. It attracts Ghost-type and Psychic-type Pokémon.\p Folktales say that the spirits have turned the plants orange, putting the area into a permanent Autumn.\p People flock from all over to hear Kleio, the Gym Leader, predict the future. Some say she has a magic gift..."))
     closemessage
     if(!flag(FLAG_GOT_WILL_O_WISP))
     {
@@ -77,7 +77,7 @@ script PythiosTown_EventScripts_NPC_OldWoman
     lock
     faceplayer
     speakername("Old Woman")
-    msgbox(format("People come from all over to hear from Sabella, the Gym Leader and spiritual guide of Pythios Town.\p Me? I moved here with my husband to watch the water and feel the energy."))
+    msgbox(format("People come from all over to hear from Kleio, the Gym Leader and spiritual guide of Pythios Town.\p Me? I moved here with my husband to watch the water and feel the energy."))
     closemessage
     applymovement(6, Common_Movement_FaceDown)
     waitmovement(0)
@@ -286,24 +286,24 @@ script PythiosTown_EventScript_Dwebble
     end
 }
 
-script PythiosTown_EventScript_Trigger_SabellaIntroductionEvent
+script PythiosTown_EventScript_Trigger_KleioIntroductionEvent
 {
     lockall
     applymovement(13, Common_Movement_ExclamationMark)
     waitmovement(0)
     delay(30)
-    applymovement(13, PythiosTown_Movement_FirstSabellaFanWalksToPlayer)
+    applymovement(13, PythiosTown_Movement_FirstKleioFanWalksToPlayer)
     waitmovement(0)
     applymovement(14, Common_Movement_WalkUp)
     waitmovement(0)
     speakername("Mystical Woman")
-    msgbox(format("YES!! Sabella said I'm guarenteed to win my next Pokémon battle! She's never wrong!"))
+    msgbox(format("YES!! Kleio said I'm guarenteed to win my next Pokémon battle! She's never wrong!"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
-    applymovement(13, PythiosTown_Movement_FirstSabellaFanWalksAway)
+    applymovement(13, PythiosTown_Movement_FirstKleioFanWalksAway)
     waitmovement(0)
     delay(60)
 
@@ -316,27 +316,27 @@ script PythiosTown_EventScript_Trigger_SabellaIntroductionEvent
     applymovement(14, Common_Movement_FaceDown)
     waitmovement(0)
     speakername("Worker")
-    msgbox(format("Sabella just read my future! She told me 'a big shake-up at work is coming'... that probably means a raise!\p ...Probably!"))
+    msgbox(format("Kleio just read my future! She told me 'a big shake-up at work is coming'... that probably means a raise!\p ...Probably!"))
     closemessage
-    applymovement(14, PythiosTown_Movement_SecondSabellaFanWalksAway)
+    applymovement(14, PythiosTown_Movement_SecondKleioFanWalksAway)
     waitmovement(0)
     delay(30)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
     waitmovement(0)
 
-    // finally talk to sabella
-    speakername("Sabella")
-    msgbox(format("Ah... {PLAYER}, yes?\p How do I know your name? I know much and more, young trainer. My name is Sabella, the spiritual guide and {COLOR GREEN}Gym Leader of Pythios Town{COLOR DARK_GRAY}.\p You're here for your third Gym Challenge. I sense a great battle on the horizon... I shall be {COLOR GREEN}in my Gym{COLOR DARK_GRAY}. I await your challenge."))
+    // finally talk to kleio
+    speakername("Kleio")
+    msgbox(format("Ah... {PLAYER}, yes?\p How do I know your name? I know much and more, young trainer. My name is Kleio, the Muse of History and {COLOR GREEN}Gym Leader of Pythios Town{COLOR DARK_GRAY}.\p You're here for your third Gym Challenge. I sense a great battle on the horizon... I shall be {COLOR GREEN}in my Gym{COLOR DARK_GRAY}. I await your challenge."))
     closemessage
 
     fadescreenswapbuffers(FADE_TO_BLACK)
     delay(30)
-    removeobject(13) // sabellas fans
+    removeobject(13) // kleios fans
     removeobject(14)
-    removeobject(3) // sabella
-    removeobject(15) // sabella's pokémon
+    removeobject(3) // kleio
+    removeobject(15) // kleio's pokémon
     removeobject(16) // man blocking gym
-    setflag(FLAG_MET_SABELLA_PYTHIOS_TOWN)
+    setflag(FLAG_MET_KLEIO_PYTHIOS_TOWN)
     delay(30)
     fadescreenswapbuffers(FADE_FROM_BLACK)
     delay(20)
@@ -345,14 +345,14 @@ script PythiosTown_EventScript_Trigger_SabellaIntroductionEvent
     end
 }
 
-movement PythiosTown_Movement_FirstSabellaFanWalksToPlayer
+movement PythiosTown_Movement_FirstKleioFanWalksToPlayer
 {
     walk_fast_left
     walk_fast_down * 2
     step_end
 }
 
-movement PythiosTown_Movement_FirstSabellaFanWalksAway
+movement PythiosTown_Movement_FirstKleioFanWalksAway
 {
     walk_fast_down * 6
     walk_fast_right * 8
@@ -368,7 +368,7 @@ movement PythiosTown_Movement_PlayerApproachesLine
     step_end
 }
 
-movement PythiosTown_Movement_SecondSabellaFanWalksAway
+movement PythiosTown_Movement_SecondKleioFanWalksAway
 {
     walk_fast_left
     walk_fast_down * 9
@@ -380,7 +380,7 @@ script PythiosTown_EventScripts_NPC_OldMan2
     lock
     faceplayer
     speakername("Old Man")
-    msgbox(format("Everyone seems to believe in Sabella and her visions. I'm not so sure, but my wife comes around to talk to her all the time. I'm waiting for her here."))
+    msgbox(format("Everyone seems to believe in Kleio and her visions. I'm not so sure, but my wife comes around to talk to her all the time. I'm waiting for her here."))
     closemessage
     applymovement(11, Common_Movement_FaceLeft)
     waitmovement(0)
@@ -393,7 +393,7 @@ script PythiosTown_EventScripts_NPC_PsychicM
     lock
     faceplayer
     speakername("Psychic")
-    msgbox(format("I promise, Sabella's powers are real! She has the same powers as her Psychic-type and Ghost-type Pokémon!"))
+    msgbox(format("I promise, Kleio's powers are real! She has the same powers as her Psychic-type and Ghost-type Pokémon!"))
     closemessage
     applymovement(12, Common_Movement_FaceRight)
     waitmovement(0)
@@ -406,7 +406,7 @@ script PythiosTown_EventScripts_NPC_ManBlockingGym
     lock
     faceplayer
     speakername("Gym Guide")
-    msgbox(format("Welcome to the Pythios Town Pokémon Gym!\p Well... that's what I would say, if the {COLOR GREEN}Gym Leader, Sabella{COLOR DARK_GRAY}, was here. She's probably meeting with people in the {COLOR GREEN}east of town{COLOR DARK_GRAY}."))
+    msgbox(format("Welcome to the Pythios Town Pokémon Gym!\p Well... that's what I would say, if the {COLOR GREEN}Gym Leader, Kleio{COLOR DARK_GRAY}, was here. She's probably meeting with people in the {COLOR GREEN}east of town{COLOR DARK_GRAY}."))
     closemessage
     release
     end

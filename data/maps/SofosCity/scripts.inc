@@ -1157,8 +1157,8 @@ SofosCity_EventScript_BattlePavilionSign_Text_0:
 
 SofosCity_EventScript_GymSign_Text_0:
 # 49 "data/maps/SofosCity/scripts.pory"
-	.string "Gym Leader: Meneswo\n"
-	.string "The Strategist of the City$"
+	.string "Gym Leader: Terpsikore\n"
+	.string "The Harmonious Muse of Voice and Dance$"
 
 SofosCity_EventScript_ChimeraGruntAtGym1_Text_0:
 # 58 "data/maps/SofosCity/scripts.pory"

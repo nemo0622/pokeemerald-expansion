@@ -1797,6 +1797,7 @@ const u8 gText_SideQuestName_50[] = _("Another Chance");
 const u8 gText_SideQuestName_51[] = _("A Winning Painting");
 const u8 gText_SideQuestName_52[] = _("The Big Ask");
 const u8 gText_SideQuestName_53[] = _("The Long-Lost Friend");
+const u8 gText_SideQuestName_54[] = _("Perfect Paint");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Look for the deliveryman\nwith a flipped cart.");
@@ -1852,6 +1853,7 @@ const u8 gText_SideQuestDesc_50[] = _("Bring the Diver a Revive\nto heal his div
 const u8 gText_SideQuestDesc_51[] = _("Show the Artist that your\nPokémon won a Contest Ribbon\nto inspire his art.");
 const u8 gText_SideQuestDesc_52[] = _("Bring a Hisuian Arcanine\nDoll to help a woman\nsurprise her girlfriend.");
 const u8 gText_SideQuestDesc_53[] = _("Give 10 Wishing Stars to the\nKalosian family to help\nbring back a lost Pokémon.");
+const u8 gText_SideQuestDesc_54[] = _("Bring 1 of each colored\nShard to the Artist\nto make his paint.");
 
 //completed quest description
 // NOTE: Probably never seen now that I only make Active quests seen lol!
@@ -1940,6 +1942,7 @@ const u8 gText_SideQuestMap50[] = _("Sea of Asteri (Underwater)"); // QUEST_GIVE
 const u8 gText_SideQuestMap51[] = _("Péntepetal City"); // QUEST_SHOW_RIBBON_TO_ARTIST
 const u8 gText_SideQuestMap52[] = _("Péntepetal City (House)"); // QUEST_SHOW_RIBBON_TO_ARTIST
 const u8 gText_SideQuestMap53[] = _("Péntepetal City (House)"); // QUEST_ETERNAL_FLOETTE_PLOT
+const u8 gText_SideQuestMap54[] = _("Fresco Isles"); // QUEST_SHARDS_FOR_ARTIST
 
 //subquests
 // erm unused now oopsies

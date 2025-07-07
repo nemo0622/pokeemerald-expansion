@@ -1102,9 +1102,10 @@ WanderersWoods_EventScript_ChimeraEvent_Text_10:
 	.string "can't handle the pressure, so we sell\l"
 	.string "them for a little extra cash. What's the\l"
 	.string "harm in that?\p"
-	.string "You won't stop Team Chimera. Next time,\n"
-	.string "my Arcanine will knock you back to your\l"
-	.string "precious University!$"
+	.string "You won't stop Team Chimera. We've got\n"
+	.string "{COLOR GREEN}friends in high places{COLOR DARK_GRAY}. Next time, my\l"
+	.string "Arcanine will knock you back to\l"
+	.string "whatever region you came from!$"
 
 WanderersWoods_EventScript_ChimeraEvent_Text_11:
 # 362 "data/maps/WanderersWoods/scripts.pory"

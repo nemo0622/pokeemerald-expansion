@@ -40,10 +40,10 @@ script AcrisiaMountains_EventScript_RockExploringHiker
     end
 }
 
-script AcrisiaMountains_EventScript_MattaiosTraining
+script AcrisiaMountains_EventScript_OuraniTraining
 {
     lock
-    speakername("Mattaios")
+    speakername("Ourani")
     msgbox(format("Huff huff huff...\p Always training, always working... Come on Larvitar, help me get stronger!"))
     closemessage
     release

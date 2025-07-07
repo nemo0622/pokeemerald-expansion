@@ -1,1 +1,187 @@
-mapscripts SeaOfVulcai_Southwest_MapScripts {}
+mapscripts SeaOfVulcai_Southwest_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(11, ENCOUNTER_LAND)
+        setobjectaswildencounter(12, ENCOUNTER_LAND)
+        setobjectaswildencounter(13, ENCOUNTER_LAND)
+        setobjectaswildencounter(14, ENCOUNTER_LAND)
+        setobjectaswildencounter(15, ENCOUNTER_SURF)
+    }
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli
+{
+    trainerbattle_single(TRAINER_VULCAISEA_LEYLI, VulcaiSea_Text_Trainer_VulcaiSea_LeyliIntro, VulcaiSea_Text_Trainer_VulcaiSea_LeyliDefeat)
+    speakername("Leyli")
+    msgbox(format("Head southeast of here to get to the Fresco Isles. If you pass the volcanic rock and reach Palati City, you've gone too far south!"))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_LeyliIntro
+{
+    format("The Fresco Isles are just southeast of here!")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_LeyliDefeat
+{
+    format("I should swim to the Fresco Isles Pokémon Center.")
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Zissis
+{
+    trainerbattle_single(TRAINER_VULCAISEA_ZISSIS, VulcaiSea_Text_Trainer_VulcaiSea_ZissisIntro, VulcaiSea_Text_Trainer_VulcaiSea_ZissisDefeat)
+    speakername("Zissis")
+    msgbox(format("My dog Pokémon all live with my family in the Fresco Isles!"))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_ZissisIntro
+{
+    format("Ehehe, my dog Pokémon all paddle so cute!")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_ZissisDefeat
+{
+    format("My dogs!")
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Pelagia
+{
+    trainerbattle_single(TRAINER_VULCAISEA_PELAGIA, VulcaiSea_Text_Trainer_VulcaiSea_PelagiaIntro, VulcaiSea_Text_Trainer_VulcaiSea_PelagiaDefeat)
+    speakername("Pelagia")
+    msgbox(format("I'm keeping watch of Zissis while he plays in the water. Our parents get worried when he's alone."))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_PelagiaIntro
+{
+    format("My brother is obsessed with swimming with his Pokémon. He needs to come home for a meal!")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_PelagiaDefeat
+{
+    format("Him and his dogs...")
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Jaxon
+{
+    trainerbattle_single(TRAINER_VULCAISEA_JAXON, VulcaiSea_Text_Trainer_VulcaiSea_JaxonIntro, VulcaiSea_Text_Trainer_VulcaiSea_JaxonDefeat)
+    speakername("Jaxon")
+    msgbox(format("More volcanoes are east, making up the Fresco Isles. Maybe I'll check those out too!"))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_JaxonIntro
+{
+    format("Woah, I can feel the heat of the lava from here...")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_JaxonDefeat
+{
+    format("The heat was throwing me off!")
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Victoria
+{
+    trainerbattle_single(TRAINER_VULCAISEA_VICTORIA, VulcaiSea_Text_Trainer_VulcaiSea_VictoriaIntro, VulcaiSea_Text_Trainer_VulcaiSea_VictoriaDefeat)
+    speakername("Victoria")
+    msgbox(format("If you're on a Trainer journey, you should head east to the Fresco Isles before going to Palati City."))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_VictoriaIntro
+{
+    format("I'm headed south to Palati City! I'm gonna beat the seventh Gym Leader, easy!")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_VictoriaDefeat
+{
+    format("Maybe I should try the sixth Gym Leader in the Fresco Isles instead...")
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Julien
+{
+    trainerbattle_single(TRAINER_VULCAISEA_JULIEN, VulcaiSea_Text_Trainer_VulcaiSea_JulienIntro, VulcaiSea_Text_Trainer_VulcaiSea_JulienDefeat)
+    speakername("Julien")
+    msgbox(format("There are a lot of sunken ruins around here. I wanna explore them all!"))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_JulienIntro
+{
+    format("My friends told me about a sunken temple around here! Where could it be?")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_JulienDefeat
+{
+    format("I have to keep looking.")
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Tabata
+{
+    trainerbattle_single(TRAINER_VULCAISEA_TABATA, VulcaiSea_Text_Trainer_VulcaiSea_TabataIntro, VulcaiSea_Text_Trainer_VulcaiSea_TabataDefeat)
+    speakername("Tabata")
+    msgbox(format("It's hard for ships to get through all the volcanic rock in the Sea of Vulcai."))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_TabataIntro
+{
+    format("So many rocks around here... my fishing line is getting tangled!")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_TabataDefeat
+{
+    format("All tangled up.")
+}
+
+script VulcaiSea_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("Lots of rare Pokémon live around here. Folks say that ships carrying them crashed against these rocks, and the Pokémon escaped onto the islands.\p Some of them were {COLOR GREEN}starter Pokémon{COLOR DARK_GRAY}. Now, this is one of the only places in the world where they can be found!"))
+    closemessage
+    release
+    end
+}
+
+script VulcaiSea_EventScript_Trainer_VulcaiSea_Sebastian
+{
+    trainerbattle_single(TRAINER_VULCAISEA_SEBASTIAN, VulcaiSea_Text_Trainer_VulcaiSea_SebastianIntro, VulcaiSea_Text_Trainer_VulcaiSea_SebastianDefeat)
+    speakername("Sebastian")
+    msgbox(format("An active volcano... it's a scary thought. The only thing protecting us right now is a layer of rock."))
+    closemessage
+    release
+    end
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_SebastianIntro
+{
+    format("I come here every day to paint the environment.")
+}
+text VulcaiSea_Text_Trainer_VulcaiSea_SebastianDefeat
+{
+    format("I need more paint!")
+}
+
+script VulcaiSea_EventScript_AceTrainer
+{
+    lock
+    faceplayer
+    speakername("Ace Trainer")
+    msgbox(format("The Fresco Isles are just east of here. I hear the Gym Leaders are twins that are always fighting... that should make them easier to beat! The sixth Gym Badge is as good as mine!"))
+    closemessage
+    release
+    end
+}

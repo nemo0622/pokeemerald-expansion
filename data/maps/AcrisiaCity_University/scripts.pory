@@ -294,7 +294,7 @@ script AcrisiaCity_University_EventScript_Niko
     elif(var(VAR_NIKO_STATE) == 3) // Got Gym Badge 2
     {
         speakername("Niko")
-        msgbox(format("Ehehe, looks like I beat you to Mattaios! We're all starting to be pretty strong trainers, huh?\p Ah, I worked on a new Poké Ball type. Give it a test for me!"))
+        msgbox(format("Ehehe, looks like I beat you to Ourani! We're all starting to be pretty strong trainers, huh?\p Ah, I worked on a new Poké Ball type. Give it a test for me!"))
         closemessage
         giveitem(ITEM_TIMER_BALL, 3)
         closemessage

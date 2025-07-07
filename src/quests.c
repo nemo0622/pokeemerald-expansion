@@ -1094,12 +1094,22 @@ side_quest(
 	0
 ),
 side_quest(
-	gText_SideQuestName_53, // QUEST_BRING_ARCANINE_DOLL_TO_WOMAN
+	gText_SideQuestName_53, // QUEST_ETERNAL_FLOETTE_PLOT
 	gText_SideQuestDesc_53,
 	gText_SideQuestDesc_53,
 	gText_SideQuestMap53,
 	ITEM_WISHING_STAR,
 	ITEM,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_54, // QUEST_SHARDS_FOR_ARTIST
+	gText_SideQuestDesc_54,
+	gText_SideQuestDesc_54,
+	gText_SideQuestMap54,
+	OBJ_EVENT_GFX_ARTIST,
+	OBJECT,
 	NULL,
 	0
 ),

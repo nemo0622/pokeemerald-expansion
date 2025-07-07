@@ -87,7 +87,7 @@ script JusmailTown_House1_EventScript_EnterBuildingForFirstTime
     if(!flag(FLAG_BADGE01_GET)) // dont have badge 1 yet
     {
         speakername("Artist")
-        msgbox(format("What's this? I can't smell the scent of fresh grass and fruits on you... you must not have fought Deo yet! Oh no no NO, this won't do!\p Come back when you've {COLOR GREEN}beaten the Jusmail Town Gym Leader{COLOR DARK_GRAY}, darling."))
+        msgbox(format("What's this? I can't smell the scent of fresh grass and fruits on you... you must not have fought Polymnia yet! Oh no no NO, this won't do!\p Come back when you've {COLOR GREEN}beaten the Jusmail Town Gym Leader{COLOR DARK_GRAY}, darling."))
         closemessage
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
         waitmovement(0)
@@ -101,7 +101,7 @@ script JusmailTown_House1_EventScript_EnterBuildingForFirstTime
     else // ready!
     {
         speakername("Artist")
-        msgbox(format("Mmmm, that smell... grass, fruit, a hint of honey... you must have beaten Deo! Congratulations!"))
+        msgbox(format("Mmmm, that smell... grass, fruit, a hint of honey... you must have beaten Polymnia! Congratulations!"))
         closemessage
         applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
         waitmovement(0)

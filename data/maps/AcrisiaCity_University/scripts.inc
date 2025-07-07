@@ -2266,9 +2266,9 @@ AcrisiaCity_University_EventScript_Niko_Text_3:
 
 AcrisiaCity_University_EventScript_Niko_Text_4:
 # 297 "data/maps/AcrisiaCity_University/scripts.pory"
-	.string "Ehehe, looks like I beat you to\n"
-	.string "Mattaios! We're all starting to be\l"
-	.string "pretty strong trainers, huh?\p"
+	.string "Ehehe, looks like I beat you to Ourani!\n"
+	.string "We're all starting to be pretty strong\l"
+	.string "trainers, huh?\p"
 	.string "Ah, I worked on a new Poké Ball type.\n"
 	.string "Give it a test for me!$"
 

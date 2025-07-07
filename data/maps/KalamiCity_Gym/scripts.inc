@@ -46,33 +46,33 @@ KalamiCity_Gym_EventScript_GymMan_2:
 	goto KalamiCity_Gym_EventScript_GymMan_1
 
 
-KalamiCity_Gym_EventScript_Mattaios::
+KalamiCity_Gym_EventScript_Ourani::
 # 39 "data/maps/KalamiCity_Gym/scripts.pory"
 	lock
 # 40 "data/maps/KalamiCity_Gym/scripts.pory"
 	faceplayer
 # 41 "data/maps/KalamiCity_Gym/scripts.pory"
-	goto_if_unset FLAG_HARD_MODE, KalamiCity_Gym_EventScript_Mattaios_2
+	goto_if_unset FLAG_HARD_MODE, KalamiCity_Gym_EventScript_Ourani_2
 # 47 "data/maps/KalamiCity_Gym/scripts.pory"
-	goto KalamiCity_Gym_EventScript_MattaiosHard
-KalamiCity_Gym_EventScript_Mattaios_1:
+	goto KalamiCity_Gym_EventScript_OuraniHard
+KalamiCity_Gym_EventScript_Ourani_1:
 # 49 "data/maps/KalamiCity_Gym/scripts.pory"
 	release
 	end
 
-KalamiCity_Gym_EventScript_Mattaios_2:
+KalamiCity_Gym_EventScript_Ourani_2:
 # 43 "data/maps/KalamiCity_Gym/scripts.pory"
-	goto KalamiCity_Gym_EventScript_MattaiosNormal
-	goto KalamiCity_Gym_EventScript_Mattaios_1
+	goto KalamiCity_Gym_EventScript_OuraniNormal
+	goto KalamiCity_Gym_EventScript_Ourani_1
 
 
-KalamiCity_Gym_EventScript_MattaiosNormal::
+KalamiCity_Gym_EventScript_OuraniNormal::
 # 55 "data/maps/KalamiCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_MATTAIOS, KalamiCity_Gym_Text_MattaiosIntro, KalamiCity_Gym_Text_MattaiosDefeat, KalamiCity_Gym_EventScript_MattaiosDefeatScript, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_OURANI, KalamiCity_Gym_Text_OuraniIntro, KalamiCity_Gym_Text_OuraniDefeat, KalamiCity_Gym_EventScript_OuraniDefeatScript, NO_MUSIC
 # 56 "data/maps/KalamiCity_Gym/scripts.pory"
-	speakername KalamiCity_Gym_EventScript_MattaiosNormal_Text_0
+	speakername KalamiCity_Gym_EventScript_OuraniNormal_Text_0
 # 57 "data/maps/KalamiCity_Gym/scripts.pory"
-	msgbox KalamiCity_Gym_EventScript_MattaiosNormal_Text_1
+	msgbox KalamiCity_Gym_EventScript_OuraniNormal_Text_1
 # 58 "data/maps/KalamiCity_Gym/scripts.pory"
 	closemessage
 # 59 "data/maps/KalamiCity_Gym/scripts.pory"
@@ -80,13 +80,13 @@ KalamiCity_Gym_EventScript_MattaiosNormal::
 	end
 
 
-KalamiCity_Gym_EventScript_MattaiosHard::
+KalamiCity_Gym_EventScript_OuraniHard::
 # 64 "data/maps/KalamiCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_MATTAIOS_HARD, KalamiCity_Gym_Text_MattaiosIntro, KalamiCity_Gym_Text_MattaiosDefeat, KalamiCity_Gym_EventScript_MattaiosDefeatScript, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_OURANI_HARD, KalamiCity_Gym_Text_OuraniIntro, KalamiCity_Gym_Text_OuraniDefeat, KalamiCity_Gym_EventScript_OuraniDefeatScript, NO_MUSIC
 # 65 "data/maps/KalamiCity_Gym/scripts.pory"
-	speakername KalamiCity_Gym_EventScript_MattaiosNormal_Text_0
+	speakername KalamiCity_Gym_EventScript_OuraniNormal_Text_0
 # 66 "data/maps/KalamiCity_Gym/scripts.pory"
-	msgbox KalamiCity_Gym_EventScript_MattaiosNormal_Text_1
+	msgbox KalamiCity_Gym_EventScript_OuraniNormal_Text_1
 # 67 "data/maps/KalamiCity_Gym/scripts.pory"
 	closemessage
 # 68 "data/maps/KalamiCity_Gym/scripts.pory"
@@ -94,11 +94,11 @@ KalamiCity_Gym_EventScript_MattaiosHard::
 	end
 
 
-KalamiCity_Gym_EventScript_MattaiosDefeatScript::
+KalamiCity_Gym_EventScript_OuraniDefeatScript::
 # 83 "data/maps/KalamiCity_Gym/scripts.pory"
 	setflag FLAG_SUPPRESS_SPEAKER_NAME
 # 84 "data/maps/KalamiCity_Gym/scripts.pory"
-	message KalamiCity_Gym_EventScript_MattaiosDefeatScript_Text_0
+	message KalamiCity_Gym_EventScript_OuraniDefeatScript_Text_0
 # 85 "data/maps/KalamiCity_Gym/scripts.pory"
 	waitmessage
 # 86 "data/maps/KalamiCity_Gym/scripts.pory"
@@ -116,17 +116,17 @@ KalamiCity_Gym_EventScript_MattaiosDefeatScript::
 # 96 "data/maps/KalamiCity_Gym/scripts.pory"
 	setvar VAR_NIKO_STATE, 3
 # 99 "data/maps/KalamiCity_Gym/scripts.pory"
-	speakername KalamiCity_Gym_EventScript_MattaiosNormal_Text_0
+	speakername KalamiCity_Gym_EventScript_OuraniNormal_Text_0
 # 100 "data/maps/KalamiCity_Gym/scripts.pory"
-	msgbox KalamiCity_Gym_EventScript_MattaiosDefeatScript_Text_1
+	msgbox KalamiCity_Gym_EventScript_OuraniDefeatScript_Text_1
 # 101 "data/maps/KalamiCity_Gym/scripts.pory"
 	closemessage
 # 104 "data/maps/KalamiCity_Gym/scripts.pory"
 	giveitem ITEM_TM_ROCK_TOMB
 # 105 "data/maps/KalamiCity_Gym/scripts.pory"
-	speakername KalamiCity_Gym_EventScript_MattaiosNormal_Text_0
+	speakername KalamiCity_Gym_EventScript_OuraniNormal_Text_0
 # 106 "data/maps/KalamiCity_Gym/scripts.pory"
-	msgbox KalamiCity_Gym_EventScript_MattaiosDefeatScript_Text_2
+	msgbox KalamiCity_Gym_EventScript_OuraniDefeatScript_Text_2
 # 107 "data/maps/KalamiCity_Gym/scripts.pory"
 	closemessage
 # 109 "data/maps/KalamiCity_Gym/scripts.pory"
@@ -230,27 +230,27 @@ KalamiCity_Gym_EventScript_GymMan_Text_1:
 KalamiCity_Gym_EventScript_GymMan_Text_2:
 # 30 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Welcome to the Kalami City Gym!\p"
-	.string "The Gym Leader, Mattaios, oversees\n"
+	.string "The Gym Leader, Ourani, oversees\n"
 	.string "production of industrial goods here.\l"
 	.string "Expect plenty of tough Pokémon, with\l"
 	.string "Rock, Steel, or Electric types!$"
 
-KalamiCity_Gym_EventScript_MattaiosNormal_Text_0:
+KalamiCity_Gym_EventScript_OuraniNormal_Text_0:
 # 56 "data/maps/KalamiCity_Gym/scripts.pory"
-	.string "Mattaios$"
+	.string "Ourani$"
 
-KalamiCity_Gym_EventScript_MattaiosNormal_Text_1:
+KalamiCity_Gym_EventScript_OuraniNormal_Text_1:
 # 57 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Now that our battle's over, I should get\n"
 	.string "back to work. Bendin' steel and making\l"
 	.string "Poké balls never stops!$"
 
-KalamiCity_Gym_EventScript_MattaiosDefeatScript_Text_0:
+KalamiCity_Gym_EventScript_OuraniDefeatScript_Text_0:
 # 84 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "{PLAYER} received the Gemstone\n"
-	.string "Badge from Mattaios.$"
+	.string "Badge from Ourani.$"
 
-KalamiCity_Gym_EventScript_MattaiosDefeatScript_Text_1:
+KalamiCity_Gym_EventScript_OuraniDefeatScript_Text_1:
 # 100 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "The Gemstone Badge marks yer second\n"
 	.string "completed Gym, eh? After two Badges,\l"
@@ -260,7 +260,7 @@ KalamiCity_Gym_EventScript_MattaiosDefeatScript_Text_1:
 	.string "Smash{COLOR DARK_GRAY} outside battle.\p"
 	.string "Fwahaha, there's more fer ya!$"
 
-KalamiCity_Gym_EventScript_MattaiosDefeatScript_Text_2:
+KalamiCity_Gym_EventScript_OuraniDefeatScript_Text_2:
 # 106 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "That's the TM fer {COLOR GREEN}Rock Tomb{COLOR DARK_GRAY}! My\n"
 	.string "Larvitar here learned this from digging\l"
@@ -308,18 +308,20 @@ KalamiCity_Gym_EventScript_Trainer_Kalami_Gym_Tasoula_Text_0:
 # 175 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Tasoula$"
 
-KalamiCity_Gym_Text_MattaiosIntro::
+KalamiCity_Gym_Text_OuraniIntro::
 # 72 "data/maps/KalamiCity_Gym/scripts.pory"
 	.string "Got past my workers, eh? Welcome to my\n"
 	.string "humble factory-turned-Gym!\p"
-	.string "My Larvitar and I train hard every day.\n"
-	.string "We're so strong, we can bend metal all by\l"
-	.string "'rselves. Now, help us get stronger!$"
+	.string "I'm Ourani, Muse of Stone and Sky. My\n"
+	.string "Larvitar and I manufacture parts for\l"
+	.string "machinery around the Ilios Region.\l"
+	.string "Let's not beat around the bush - fight\l"
+	.string "me!$"
 
-KalamiCity_Gym_Text_MattaiosDefeat::
+KalamiCity_Gym_Text_OuraniDefeat::
 # 76 "data/maps/KalamiCity_Gym/scripts.pory"
-	.string "Woah, you darn-near broke my\n"
-	.string "flashlight!$"
+	.string "Woah, you're tougher than the steel we\n"
+	.string "smelt!$"
 
 KalamiCity_Gym_Text_Trainer_Kalami_Gym_RexIntro::
 # 145 "data/maps/KalamiCity_Gym/scripts.pory"

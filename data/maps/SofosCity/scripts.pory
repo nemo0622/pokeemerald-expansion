@@ -46,7 +46,7 @@ script SofosCity_EventScript_BattlePavilionSign
 script SofosCity_EventScript_GymSign
 {
     lock
-    msgbox(format("Gym Leader: Meneswo\n The Strategist of the City"))
+    msgbox(format("Gym Leader: Terpsikore\n The Harmonious Muse of Voice and Dance"))
     closemessage
     release
     end
