@@ -67,7 +67,7 @@ $(OBJEVENTGFXDIR)/people/frontier_brains/tucker.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 
-$(OBJEVENTGFXDIR)/people/gym_leaders/deo.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/gym_leaders/polymnia.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/gym_leaders/terpsikore.4bpp: %.4bpp: %.png
@@ -76,7 +76,7 @@ $(OBJEVENTGFXDIR)/people/gym_leaders/terpsikore.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/gym_leaders/juan.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/gym_leaders/liza.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/gym_leaders/thalia.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/gym_leaders/euterpe.4bpp: %.4bpp: %.png
@@ -85,13 +85,13 @@ $(OBJEVENTGFXDIR)/people/gym_leaders/euterpe.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/gym_leaders/kleio.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/gym_leaders/tate.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/gym_leaders/melpomene.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/gym_leaders/ourani.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/gym_leaders/winona.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/gym_leaders/rhadine.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 

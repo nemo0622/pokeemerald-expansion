@@ -916,7 +916,7 @@ F_TRAINER_FEMALE |
 #line 439
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 440
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerPic = TRAINER_PIC_RANIA,
         .encounterMusic_gender = 
 #line 441
 F_TRAINER_FEMALE | 

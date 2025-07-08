@@ -76,13 +76,6 @@ MAJOR TODOS:
         - Motivates Players to complete the Pokédex, or to at least capture more Pokémon than necessary sometimes
         - Rewards: x15 Poké balls, EXP Candies, Held Items (Quick Claw, Brightpowder, White Herb, Focus Band, etc.), Evolutionary Items, TMs (Deepwater Curse, other new ones, etc.), and maybe even Outfits!
 
-- NEW TRAINER SPRITES:
-    - Rania and Niko
-        - Rania: modified Scientist F sprite by Solo993 (holding Egg like Substitube trainer sprite?)
-        - Niko: modified Cheren sprite by Solo993 (new hair + glasses)
-    - Janitor (sprite by Solo993)
-    - New Prof. Elia sprite for the intro (Solo993's Hiker)
-
 - Implement Biv's Fishing Minigame
     - Also create options menu toggle for it
     - TREASURE IDEAS:

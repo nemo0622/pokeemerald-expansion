@@ -309,6 +309,11 @@ const u32 gTrainerPalette_Diver[] = INCBIN_U32("graphics/trainers/palettes/diver
 const u32 gTrainerFrontPic_Artist[] = INCBIN_U32("graphics/trainers/front_pics/artist.4bpp.lz");
 const u32 gTrainerPalette_Artist[] = INCBIN_U32("graphics/trainers/palettes/artist.gbapal.lz");
 
+const u32 gTrainerFrontPic_Rania[] = INCBIN_U32("graphics/trainers/front_pics/rania.4bpp.lz");
+const u32 gTrainerPalette_Rania[] = INCBIN_U32("graphics/trainers/front_pics/rania.gbapal.lz");
+const u32 gTrainerFrontPic_Niko[] = INCBIN_U32("graphics/trainers/front_pics/niko.4bpp.lz");
+const u32 gTrainerPalette_Niko[] = INCBIN_U32("graphics/trainers/front_pics/niko.gbapal.lz");
+
 // Outfit trainer pics
 const u32 gTrainerFrontPic_Outfit_Calem[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_calem.4bpp.lz");
 const u32 gTrainerFrontPic_Outfit_Serena[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_serena.4bpp.lz");
@@ -540,6 +545,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(OUTFIT_PALDEA_F, Outfit_Paldea_F),
     TRAINER_SPRITE(OUTFIT_HYLIAN_M, Outfit_Hylian_M),
     TRAINER_SPRITE(OUTFIT_HYLIAN_F, Outfit_Hylian_F),
+    TRAINER_SPRITE(RANIA, Rania),
+    TRAINER_SPRITE(NIKO, Niko),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
