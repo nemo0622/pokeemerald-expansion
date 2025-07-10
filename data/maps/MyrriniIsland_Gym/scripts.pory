@@ -34,16 +34,16 @@ script MyrriniIsland_Gym_EventScript_GymMan
     end
 }
 
-script MyrriniIsland_Gym_EventScript_Hypno
+script MyrriniIsland_Gym_EventScript_Tentacruel
 {
     lock
     faceplayer
-    speakername("Hypno")
-    playmoncry(SPECIES_HYPNO, CRY_MODE_NORMAL)
-    msgbox("Snuffle!")
+    speakername("Tentacruel")
+    playmoncry(SPECIES_TENTACRUEL, CRY_MODE_NORMAL)
+    msgbox("Blurble!")
     waitmoncry
     closemessage
-    msgbox(format("Hypno shares a wide grin with Euterpe. They must have been partners for years."))
+    msgbox(format("Tentacruel looks intimidating, but you can tell it's actually playful. Euterpe even has toys for it to play with!"))
     closemessage
     release
     end

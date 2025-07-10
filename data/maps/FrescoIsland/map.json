@@ -516,7 +516,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 9,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_FRESCO_ISLES_POKEMON_CENTER",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 
@@ -545,6 +551,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FrescoIsles_EventScript_TailorSign"
+    },
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FrescoIsles_EventScript_DirectionSign"
     }
   ]
 }

@@ -46,23 +46,23 @@ MyrriniIsland_Gym_EventScript_GymMan_2:
 	goto MyrriniIsland_Gym_EventScript_GymMan_1
 
 
-MyrriniIsland_Gym_EventScript_Hypno::
+MyrriniIsland_Gym_EventScript_Tentacruel::
 # 39 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	lock
 # 40 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	faceplayer
 # 41 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	speakername MyrriniIsland_Gym_EventScript_Hypno_Text_0
+	speakername MyrriniIsland_Gym_EventScript_Tentacruel_Text_0
 # 42 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	playmoncry SPECIES_HYPNO, CRY_MODE_NORMAL
+	playmoncry SPECIES_TENTACRUEL, CRY_MODE_NORMAL
 # 43 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	msgbox MyrriniIsland_Gym_EventScript_Hypno_Text_1
+	msgbox MyrriniIsland_Gym_EventScript_Tentacruel_Text_1
 # 44 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	waitmoncry
 # 45 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	closemessage
 # 46 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	msgbox MyrriniIsland_Gym_EventScript_Hypno_Text_2
+	msgbox MyrriniIsland_Gym_EventScript_Tentacruel_Text_2
 # 47 "data/maps/MyrriniIsland_Gym/scripts.pory"
 	closemessage
 # 48 "data/maps/MyrriniIsland_Gym/scripts.pory"
@@ -255,19 +255,19 @@ MyrriniIsland_Gym_EventScript_GymMan_Text_2:
 	.string "conditions{COLOR DARK_GRAY} to her advantage. Make sure\l"
 	.string "to stock up on status-healing items!$"
 
-MyrriniIsland_Gym_EventScript_Hypno_Text_0:
+MyrriniIsland_Gym_EventScript_Tentacruel_Text_0:
 # 41 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	.string "Hypno$"
+	.string "Tentacruel$"
 
-MyrriniIsland_Gym_EventScript_Hypno_Text_1:
+MyrriniIsland_Gym_EventScript_Tentacruel_Text_1:
 # 43 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	.string "Snuffle!$"
+	.string "Blurble!$"
 
-MyrriniIsland_Gym_EventScript_Hypno_Text_2:
+MyrriniIsland_Gym_EventScript_Tentacruel_Text_2:
 # 46 "data/maps/MyrriniIsland_Gym/scripts.pory"
-	.string "Hypno shares a wide grin with Euterpe.\n"
-	.string "They must have been partners for\l"
-	.string "years.$"
+	.string "Tentacruel looks intimidating, but you\n"
+	.string "can tell it's actually playful. Euterpe\l"
+	.string "even has toys for it to play with!$"
 
 MyrriniIsland_Gym_EventScript_Trainer_MyrriniGym_Hailey_Text_0:
 # 55 "data/maps/MyrriniIsland_Gym/scripts.pory"

@@ -24,6 +24,15 @@ mapscripts FrescoIsland_MapScripts {
     }
 }
 
+script FrescoIsles_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("The Fresco Isles\n History, Awash in Magma\p {LEFT_ARROW} Sea of Vulcai"))
+    closemessage
+    release
+    end
+}
+
 script FrescoIsles_EventScript_ClosedSign
 {
     lock

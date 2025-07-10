@@ -147,7 +147,7 @@ script JusmailTown_EventScript_PsychicM
     msgbox(format("I believe in the old rumors about the Wishing Well. Maybe I'll get a Pokémon strong enough to defend the town..."))
     closemessage
     delay(20)
-    emote(20, EMOTE_QUESTION)
+    emote(18, EMOTE_QUESTION)
     speakername("Psychic")
     msgbox(format("Hm? Haven't you heard? Team Chimera raided Areios Town, and their Gym Leader has gone missing. That was supposed to be the strongest Gym Leader in the Ilios Region, but Team Chimera still overran it!"))
     closemessage

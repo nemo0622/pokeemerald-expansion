@@ -1,11 +1,11 @@
-mapscripts MarmaroIsland_PokemonCenter_MapScripts {}
+mapscripts FrescoIsles_PokemonCenter_MapScripts {}
 
-script MarmaroIsland_PokemonCenter_EventScript_PkmnCenterNurse
+script FrescoIsles_PokemonCenter_EventScript_PkmnCenterNurse
 {
     lock
     faceplayer
     speakername("Nurse")
-    msgbox(format("Welcome to the Marmaro Island Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    msgbox(format("Welcome to the Fresco Isles Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
     if(var(VAR_RESULT) == 0)
     {
         speakername("Nurse")
@@ -31,50 +31,26 @@ script MarmaroIsland_PokemonCenter_EventScript_PkmnCenterNurse
         closemessage
 
         // SET HEAL LOCATION TO THIS TOWN
-        setrespawn(HEAL_LOCATION_MARMARO_ISLAND)
+        setrespawn(HEAL_LOCATION_FRESCO_ISLAND)
     }
     release
     end
 }
 
-script MarmaroIsland_PokemonCenter_EventScript_GameboyKid
-{
-    lock
-    faceplayer
-    speakername("Gameboy Kid")
-    msgbox(format("Mudbray Kong is super hard! I can't jump over the barrels it kicks down at me!"))
-    closemessage
-    applymovement(5, Common_Movement_FaceDown)
-    waitmovement(0)
-    release
-    end
-}
-
-script MarmaroIsland_PokemonCenter_EventScript_Farmer
-{
-    lock
-    faceplayer
-    speakername("Farmer")
-    msgbox(format("I'll admit it, I spend most money I make selling crops on buying Pokémon Dolls. What can I say, they're just so cute!"))
-    closemessage
-    release
-    end
-}
-
-script MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck
+script FrescoIsles_PokemonCenter_EventScript_UniversityStudentRouteCheck
 {
     lock
     faceplayer
     speakername("Uni. Student")
 
-    if(flag(FLAG_CAUGHT_ALL_MONS_MARMARO_ISLAND))
+    if(flag(FLAG_CAUGHT_ALL_MONS_FRESCO_ISLES))
     {
         msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
         closemessage
     }
     else
     {
-        msgbox(format("Chaire! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land Pokémon{COLOR DARK_GRAY} found on Marmaro Island. If you've caught all the Pokémon here, please let me know."))
+        msgbox(format("Chaire! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land Pokémon{COLOR DARK_GRAY} found on the Fresco Isles. If you've caught all the Pokémon here, please let me know."))
         closemessage
         special(CheckRouteCaptureProgress)
         if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
@@ -87,13 +63,35 @@ script MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck
             delay(5)
 
             // give reward!
-            giveitem(ITEM_DIVE_BALL, 20)
+            giveitem(ITEM_SAFETY_GOGGLES)
             closemessage
 
-            setflag(FLAG_CAUGHT_ALL_MONS_MARMARO_ISLAND)
+            setflag(FLAG_CAUGHT_ALL_MONS_FRESCO_ISLES)
         }
     }
 
+    release
+    end
+}
+
+script FrescoIsles_PokemonCenter_EventScript_Sailor
+{
+    lock
+    faceplayer
+    speakername("Sailor")
+    msgbox(format("I've been running into University Students all over Ilios. Seems like everyone is working on gathering Pokédex data."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_PokemonCenter_EventScript_LittleGirl
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    msgbox(format("When I grow up, I'm gonna sail all around the world! I wonder what's at Port Pello... Oh, but Sofos City is where all the celebrities live!"))
+    closemessage
     release
     end
 }

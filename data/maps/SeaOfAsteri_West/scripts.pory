@@ -21,6 +21,52 @@ mapscripts SeaOfAsteri_West_MapScripts {
     }
 }
 
+script AsteriSea_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Sea of Asteri - West\n A Diver's Delight\p {LEFT_ARROW} Sofos City\n Marmaro Island {RIGHT_ARROW}\n {DOWN_ARROW} Sea of Vulcai"))
+    closemessage
+    release
+    end
+}
+
+script AsteriSea_EventScript_UniversityStudentRouteCheck
+{
+    lock
+    faceplayer
+    speakername("Uni. Student")
+
+    if(flag(FLAG_CAUGHT_ALL_MONS_ASTERI_SEA))
+    {
+        msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Chaire! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land Pokémon{COLOR DARK_GRAY} found in the Sea of Asteri, both West and East sections. If you've caught all the Pokémon here, please let me know."))
+        closemessage
+        special(CheckRouteCaptureProgress)
+        if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
+        {
+            delay(20)
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Uni. Student")
+            msgbox(format("Incredible! You've caught all the Pokémon that I requested in the area!\p Here's a reward from the University. Keep up your hard work!"))
+            closemessage
+            delay(5)
+
+            // give reward!
+            giveitem(ITEM_LIFE_ORB, 2)
+            closemessage
+
+            setflag(FLAG_CAUGHT_ALL_MONS_ASTERI_SEA)
+        }
+    }
+
+    release
+    end
+}
+
 script AsteriSea_EventScript_Trainer_AsteriSea_Aeson
 {
     trainerbattle_single(TRAINER_ASTERISEA_AESON, AsteriSea_Text_Trainer_AsteriSea_AesonIntro, AsteriSea_Text_Trainer_AsteriSea_AesonDefeat)

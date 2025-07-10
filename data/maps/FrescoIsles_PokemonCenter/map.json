@@ -1,9 +1,9 @@
 {
-  "id": "MAP_KALAMI_CITY_POKEMON_CENTER",
-  "name": "KalamiCity_PokemonCenter",
-  "layout": "LAYOUT_KALAMI_CITY_POKEMON_CENTER",
+  "id": "MAP_FRESCO_ISLES_POKEMON_CENTER",
+  "name": "FrescoIsles_PokemonCenter",
+  "layout": "LAYOUT_FRESCO_ISLES_POKEMON_CENTER",
   "music": "MUS_POKE_CENTER",
-  "region_map_section": "MAPSEC_KALAMI_CITY",
+  "region_map_section": "MAPSEC_FRESCO_ISLAND",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "KalamiCity_PokemonCenter_EventScript_PkmnCenterNurse",
+      "script": "FrescoIsles_PokemonCenter_EventScript_PkmnCenterNurse",
       "flag": "0"
     },
     {
@@ -38,45 +38,6 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "KalamiCity_PokemonCenter_EventScript_Togetic",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 10,
-      "y": 5,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "KalamiCity_PokemonCenter_EventScript_FatMan",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
-      "x": 1,
-      "y": 3,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "KalamiCity_PokemonCenter_EventScript_PokefanF",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TRUMBEAK)",
-      "x": 2,
-      "y": 3,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "KalamiCity_PokemonCenter_EventScript_Trumbeak",
       "flag": "0"
     },
     {
@@ -107,15 +68,41 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
-      "x": 12,
-      "y": 4,
+      "x": 2,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "KalamiCity_EventScript_UniversityStudentRouteCheck",
+      "script": "FrescoIsles_PokemonCenter_EventScript_UniversityStudentRouteCheck",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 10,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FrescoIsles_PokemonCenter_EventScript_Sailor",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "x": 12,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FrescoIsles_PokemonCenter_EventScript_LittleGirl",
       "flag": "0"
     }
   ],
@@ -124,15 +111,15 @@
       "x": 6,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_KALAMI_CITY",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_FRESCO_ISLAND",
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_KALAMI_CITY",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_FRESCO_ISLAND",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

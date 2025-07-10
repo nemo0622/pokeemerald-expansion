@@ -21,6 +21,15 @@ mapscripts MarmaroIsland_MapScripts {
     }
 }
 
+script MarmaroIsland_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Marmaro Island\n Isle of Marble and Minecarts\p {LEFT_ARROW} Sea of Asteri - West\n Sea of Asteri - East {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script MarmaroIsland_EventScript_PiraeusVaporeon
 {
     lock

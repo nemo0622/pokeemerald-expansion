@@ -29,6 +29,52 @@ script AcrisiaMountains_EventScript_DirectionSign
     end
 }
 
+script AcrisiaMountains_EventScript_UniversityStudentRouteCheck
+{
+    lock
+    faceplayer
+    speakername("Uni. Student")
+
+    if(flag(FLAG_CAUGHT_ALL_MONS_ACRISIA_MTNS))
+    {
+        msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Chaire (Hyeh-rei)! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land Pokémon{COLOR DARK_GRAY} found in the Acrisia Mountains. If you've caught all the Pokémon here, please let me know."))
+        closemessage
+        special(CheckRouteCaptureProgress)
+        if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
+        {
+            delay(20)
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Uni. Student")
+            msgbox(format("Incredible! You've caught all the Pokémon that I requested in the area!\p Here's a reward from the University. Keep up your hard work!"))
+            closemessage
+            delay(5)
+
+            // give reward!
+            giveitem(ITEM_MOON_BALL, 15)
+            closemessage
+
+            setflag(FLAG_CAUGHT_ALL_MONS_ACRISIA_MTNS)
+        }
+    }
+
+    release
+    end
+}
+
+script AcrisiaMountains_EventScript_RailCrossingSign
+{
+    lock
+    msgbox(format("A Note for Passing Trainers\n The Minecart Railway is now open for pedestrians! Walk along the historic tracks to {COLOR GREEN}cross over Acrisia City{COLOR DARK_GRAY}, towards Riverwalk Trail and {COLOR GREEN}Kalami City{COLOR DARK_GRAY} to the east."))
+    closemessage
+    release
+    end
+}
+
 script AcrisiaMountains_EventScript_RockExploringHiker
 {
     lock

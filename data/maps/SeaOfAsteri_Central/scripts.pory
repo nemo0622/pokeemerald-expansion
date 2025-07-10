@@ -20,6 +20,15 @@ mapscripts SeaOfAsteri_Central_MapScripts {
     }
 }
 
+script AsteriSea_Central_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Asteri Sea - East\n The Sea of Grapes\p {LEFT_ARROW} Marmaro Island\n Myrrini Island {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script AsteriSea_Central_EventScript_Gentleman
 {
     lock

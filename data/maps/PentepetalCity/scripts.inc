@@ -675,11 +675,11 @@ PentepetalCity_Movement_RaniaLeaves:
 # 311 "data/maps/PentepetalCity/scripts.pory"
 	step_end
 
-PentepetalCity_DollDecorScript::
+PentepetalCity_EventScript_DirectionSign::
 # 323 "data/maps/PentepetalCity/scripts.pory"
 	lock
 # 324 "data/maps/PentepetalCity/scripts.pory"
-	msgbox PentepetalCity_DollDecorScript_Text_0
+	msgbox PentepetalCity_EventScript_DirectionSign_Text_0
 # 325 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
 # 326 "data/maps/PentepetalCity/scripts.pory"
@@ -687,301 +687,301 @@ PentepetalCity_DollDecorScript::
 	end
 
 
-PentepetalCity_EventScript_DollStreetVendor::
+PentepetalCity_DollDecorScript::
 # 332 "data/maps/PentepetalCity/scripts.pory"
 	lock
 # 333 "data/maps/PentepetalCity/scripts.pory"
-	faceplayer
+	msgbox PentepetalCity_DollDecorScript_Text_0
 # 334 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
-# 335 "data/maps/PentepetalCity/scripts.pory"
-	message PentepetalCity_EventScript_DollStreetVendor_Text_1
-# 336 "data/maps/PentepetalCity/scripts.pory"
-	waitmessage
-# 337 "data/maps/PentepetalCity/scripts.pory"
-	pokemartdecoration PentepetalCity_DollDecorShop
-# 338 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 339 "data/maps/PentepetalCity/scripts.pory"
-	delay 5
-# 340 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
-# 341 "data/maps/PentepetalCity/scripts.pory"
-	msgbox gText_PleaseComeAgain
-# 342 "data/maps/PentepetalCity/scripts.pory"
+# 335 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
+PentepetalCity_EventScript_DollStreetVendor::
+# 341 "data/maps/PentepetalCity/scripts.pory"
+	lock
+# 342 "data/maps/PentepetalCity/scripts.pory"
+	faceplayer
+# 343 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
+# 344 "data/maps/PentepetalCity/scripts.pory"
+	message PentepetalCity_EventScript_DollStreetVendor_Text_1
+# 345 "data/maps/PentepetalCity/scripts.pory"
+	waitmessage
 # 346 "data/maps/PentepetalCity/scripts.pory"
-
+	pokemartdecoration PentepetalCity_DollDecorShop
 # 347 "data/maps/PentepetalCity/scripts.pory"
-    .align 2
+	closemessage
 # 348 "data/maps/PentepetalCity/scripts.pory"
-PentepetalCity_DollDecorShop:
+	delay 5
 # 349 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_MIMIKYU_DOLL
+	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
 # 350 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_JIGGLYPUFF_DOLL
+	msgbox gText_PleaseComeAgain
 # 351 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_IMPIDIMP_DOLL
-# 352 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_DUSKULL_DOLL
-# 353 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_ARCHEN_DOLL
-# 354 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_TIRTOUGA_DOLL
-# 355 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_SKIDDO_DOLL
-# 356 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_BALTOY_DOLL
-# 357 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_KECLEON_DOLL
-# 358 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_APPLIN_DOLL
-# 359 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_SWABLU_DOLL
-# 360 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_ROCKRUFF_DOLL
-# 361 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_TOUCANNON_DOLL
-# 362 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_ARCANINE_DOLL
-# 363 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_KOMMO_O_DOLL
-# 364 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_NONE
-# 365 "data/maps/PentepetalCity/scripts.pory"
 	release
+	end
+
+
+# 355 "data/maps/PentepetalCity/scripts.pory"
+
+# 356 "data/maps/PentepetalCity/scripts.pory"
+    .align 2
+# 357 "data/maps/PentepetalCity/scripts.pory"
+PentepetalCity_DollDecorShop:
+# 358 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_MIMIKYU_DOLL
+# 359 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_JIGGLYPUFF_DOLL
+# 360 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_IMPIDIMP_DOLL
+# 361 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_DUSKULL_DOLL
+# 362 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_ARCHEN_DOLL
+# 363 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_TIRTOUGA_DOLL
+# 364 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_SKIDDO_DOLL
+# 365 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_BALTOY_DOLL
 # 366 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_KECLEON_DOLL
+# 367 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_APPLIN_DOLL
+# 368 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_SWABLU_DOLL
+# 369 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_ROCKRUFF_DOLL
+# 370 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_TOUCANNON_DOLL
+# 371 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_ARCANINE_DOLL
+# 372 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_KOMMO_O_DOLL
+# 373 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_NONE
+# 374 "data/maps/PentepetalCity/scripts.pory"
+	release
+# 375 "data/maps/PentepetalCity/scripts.pory"
 	end
 
 PentepetalCity_EventScript_OrnamentalDecorStreetVendor::
-# 371 "data/maps/PentepetalCity/scripts.pory"
-	lock
-# 372 "data/maps/PentepetalCity/scripts.pory"
-	faceplayer
-# 373 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
-# 374 "data/maps/PentepetalCity/scripts.pory"
-	message PentepetalCity_EventScript_OrnamentalDecorStreetVendor_Text_0
-# 375 "data/maps/PentepetalCity/scripts.pory"
-	waitmessage
-# 376 "data/maps/PentepetalCity/scripts.pory"
-	pokemartdecoration PentepetalCity_OrnamentDecorShop
-# 377 "data/maps/PentepetalCity/scripts.pory"
-	closemessage
-# 378 "data/maps/PentepetalCity/scripts.pory"
-	delay 5
-# 379 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
 # 380 "data/maps/PentepetalCity/scripts.pory"
-	msgbox gText_PleaseComeAgain
+	lock
 # 381 "data/maps/PentepetalCity/scripts.pory"
+	faceplayer
+# 382 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
+# 383 "data/maps/PentepetalCity/scripts.pory"
+	message PentepetalCity_EventScript_OrnamentalDecorStreetVendor_Text_0
+# 384 "data/maps/PentepetalCity/scripts.pory"
+	waitmessage
+# 385 "data/maps/PentepetalCity/scripts.pory"
+	pokemartdecoration PentepetalCity_OrnamentDecorShop
+# 386 "data/maps/PentepetalCity/scripts.pory"
+	closemessage
+# 387 "data/maps/PentepetalCity/scripts.pory"
+	delay 5
+# 388 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
+# 389 "data/maps/PentepetalCity/scripts.pory"
+	msgbox gText_PleaseComeAgain
+# 390 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
-# 385 "data/maps/PentepetalCity/scripts.pory"
-
-# 386 "data/maps/PentepetalCity/scripts.pory"
-    .align 2
-# 387 "data/maps/PentepetalCity/scripts.pory"
-PentepetalCity_OrnamentDecorShop:
-# 388 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_HEAVY_DESK
-# 389 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_RAGGED_DESK
-# 390 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_COMFORT_DESK
-# 391 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_BOOK_AND_QUILL
-# 392 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_HEAVY_CHAIR
-# 393 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_RAGGED_CHAIR
 # 394 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_COMFORT_CHAIR
+
 # 395 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_RED_PLANT
+    .align 2
 # 396 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_TROPICAL_PLANT
+PentepetalCity_OrnamentDecorShop:
 # 397 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_COLORFUL_PLANT
+	.2byte DECOR_HEAVY_DESK
 # 398 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_SHRINE
+	.2byte DECOR_RAGGED_DESK
 # 399 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_SLIDE
+	.2byte DECOR_COMFORT_DESK
 # 400 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_STAND
+	.2byte DECOR_BOOK_AND_QUILL
 # 401 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_BREAKABLE_DOOR
+	.2byte DECOR_HEAVY_CHAIR
 # 402 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_TV
+	.2byte DECOR_RAGGED_CHAIR
 # 403 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_PATTERNED_BED
+	.2byte DECOR_COMFORT_CHAIR
 # 404 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_NONE
+	.2byte DECOR_RED_PLANT
 # 405 "data/maps/PentepetalCity/scripts.pory"
-	release
+	.2byte DECOR_TROPICAL_PLANT
 # 406 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_COLORFUL_PLANT
+# 407 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_SHRINE
+# 408 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_SLIDE
+# 409 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_STAND
+# 410 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_BREAKABLE_DOOR
+# 411 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_TV
+# 412 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_PATTERNED_BED
+# 413 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_NONE
+# 414 "data/maps/PentepetalCity/scripts.pory"
+	release
+# 415 "data/maps/PentepetalCity/scripts.pory"
 	end
 
 PentepetalCity_EventScript_FloorDecorStreetVendor::
-# 411 "data/maps/PentepetalCity/scripts.pory"
-	lock
-# 412 "data/maps/PentepetalCity/scripts.pory"
-	faceplayer
-# 413 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
-# 414 "data/maps/PentepetalCity/scripts.pory"
-	message PentepetalCity_EventScript_FloorDecorStreetVendor_Text_0
-# 415 "data/maps/PentepetalCity/scripts.pory"
-	waitmessage
-# 416 "data/maps/PentepetalCity/scripts.pory"
-	pokemartdecoration PentepetalCity_FloorDecorShop
-# 417 "data/maps/PentepetalCity/scripts.pory"
-	closemessage
-# 418 "data/maps/PentepetalCity/scripts.pory"
-	delay 5
-# 419 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
 # 420 "data/maps/PentepetalCity/scripts.pory"
-	msgbox gText_PleaseComeAgain
+	lock
 # 421 "data/maps/PentepetalCity/scripts.pory"
+	faceplayer
+# 422 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
+# 423 "data/maps/PentepetalCity/scripts.pory"
+	message PentepetalCity_EventScript_FloorDecorStreetVendor_Text_0
+# 424 "data/maps/PentepetalCity/scripts.pory"
+	waitmessage
+# 425 "data/maps/PentepetalCity/scripts.pory"
+	pokemartdecoration PentepetalCity_FloorDecorShop
+# 426 "data/maps/PentepetalCity/scripts.pory"
+	closemessage
+# 427 "data/maps/PentepetalCity/scripts.pory"
+	delay 5
+# 428 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
+# 429 "data/maps/PentepetalCity/scripts.pory"
+	msgbox gText_PleaseComeAgain
+# 430 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
-# 425 "data/maps/PentepetalCity/scripts.pory"
-
-# 426 "data/maps/PentepetalCity/scripts.pory"
-    .align 2
-# 427 "data/maps/PentepetalCity/scripts.pory"
-PentepetalCity_FloorDecorShop:
-# 428 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_DOLL_SQUARE
-# 429 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_WOOD_MAT
-# 430 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_GLITTER_MAT
-# 431 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_JUMP_MAT
-# 432 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_SPIN_MAT
-# 433 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_FIRE_BLAST_MAT
 # 434 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_POWDER_SNOW_MAT
+
 # 435 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_ATTRACT_MAT
+    .align 2
 # 436 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_FISSURE_MAT
+PentepetalCity_FloorDecorShop:
 # 437 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_SPIKES_MAT
+	.2byte DECOR_DOLL_SQUARE
 # 438 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_PUPPY_POSTER
+	.2byte DECOR_WOOD_MAT
 # 439 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_SEA_POSTER
+	.2byte DECOR_GLITTER_MAT
 # 440 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_SKY_POSTER
+	.2byte DECOR_JUMP_MAT
 # 441 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_PIKA_CUSHION
+	.2byte DECOR_SPIN_MAT
 # 442 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_ROUND_CUSHION
+	.2byte DECOR_FIRE_BLAST_MAT
 # 443 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_KISS_CUSHION
+	.2byte DECOR_POWDER_SNOW_MAT
 # 444 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_ZIGZAG_CUSHION
+	.2byte DECOR_ATTRACT_MAT
 # 445 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_SPIN_CUSHION
+	.2byte DECOR_FISSURE_MAT
 # 446 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_DIAMOND_CUSHION
+	.2byte DECOR_SPIKES_MAT
 # 447 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_BALL_CUSHION
+	.2byte DECOR_PUPPY_POSTER
 # 448 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_NONE
+	.2byte DECOR_SEA_POSTER
 # 449 "data/maps/PentepetalCity/scripts.pory"
-	release
+	.2byte DECOR_SKY_POSTER
 # 450 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_PIKA_CUSHION
+# 451 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_ROUND_CUSHION
+# 452 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_KISS_CUSHION
+# 453 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_ZIGZAG_CUSHION
+# 454 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_SPIN_CUSHION
+# 455 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_DIAMOND_CUSHION
+# 456 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_BALL_CUSHION
+# 457 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_NONE
+# 458 "data/maps/PentepetalCity/scripts.pory"
+	release
+# 459 "data/maps/PentepetalCity/scripts.pory"
 	end
 
 PentepetalCity_EventScript_MusicDecorStreetVendor::
-# 455 "data/maps/PentepetalCity/scripts.pory"
-	lock
-# 456 "data/maps/PentepetalCity/scripts.pory"
-	faceplayer
-# 457 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
-# 458 "data/maps/PentepetalCity/scripts.pory"
-	message PentepetalCity_EventScript_MusicDecorStreetVendor_Text_0
-# 459 "data/maps/PentepetalCity/scripts.pory"
-	waitmessage
-# 460 "data/maps/PentepetalCity/scripts.pory"
-	pokemartdecoration PentepetalCity_MusicDecorShop
-# 461 "data/maps/PentepetalCity/scripts.pory"
-	closemessage
-# 462 "data/maps/PentepetalCity/scripts.pory"
-	delay 5
-# 463 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
 # 464 "data/maps/PentepetalCity/scripts.pory"
-	msgbox gText_PleaseComeAgain
+	lock
 # 465 "data/maps/PentepetalCity/scripts.pory"
+	faceplayer
+# 466 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
+# 467 "data/maps/PentepetalCity/scripts.pory"
+	message PentepetalCity_EventScript_MusicDecorStreetVendor_Text_0
+# 468 "data/maps/PentepetalCity/scripts.pory"
+	waitmessage
+# 469 "data/maps/PentepetalCity/scripts.pory"
+	pokemartdecoration PentepetalCity_MusicDecorShop
+# 470 "data/maps/PentepetalCity/scripts.pory"
+	closemessage
+# 471 "data/maps/PentepetalCity/scripts.pory"
+	delay 5
+# 472 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_DollStreetVendor_Text_0
+# 473 "data/maps/PentepetalCity/scripts.pory"
+	msgbox gText_PleaseComeAgain
+# 474 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
-# 469 "data/maps/PentepetalCity/scripts.pory"
-
-# 470 "data/maps/PentepetalCity/scripts.pory"
-    .align 2
-# 471 "data/maps/PentepetalCity/scripts.pory"
-PentepetalCity_MusicDecorShop:
-# 472 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_C_LOW_NOTE_MAT
-# 473 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_D_NOTE_MAT
-# 474 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_E_NOTE_MAT
-# 475 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_F_NOTE_MAT
-# 476 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_G_NOTE_MAT
-# 477 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_A_NOTE_MAT
 # 478 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_B_NOTE_MAT
+
 # 479 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_C_HIGH_NOTE_MAT
+    .align 2
 # 480 "data/maps/PentepetalCity/scripts.pory"
-	.2byte DECOR_NONE
+PentepetalCity_MusicDecorShop:
 # 481 "data/maps/PentepetalCity/scripts.pory"
-	release
+	.2byte DECOR_C_LOW_NOTE_MAT
 # 482 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_D_NOTE_MAT
+# 483 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_E_NOTE_MAT
+# 484 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_F_NOTE_MAT
+# 485 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_G_NOTE_MAT
+# 486 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_A_NOTE_MAT
+# 487 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_B_NOTE_MAT
+# 488 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_C_HIGH_NOTE_MAT
+# 489 "data/maps/PentepetalCity/scripts.pory"
+	.2byte DECOR_NONE
+# 490 "data/maps/PentepetalCity/scripts.pory"
+	release
+# 491 "data/maps/PentepetalCity/scripts.pory"
 	end
 
 PentepetalCity_EventScript_NinjaBoy::
-# 487 "data/maps/PentepetalCity/scripts.pory"
+# 496 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 488 "data/maps/PentepetalCity/scripts.pory"
+# 497 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 489 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_NinjaBoy_Text_0
-# 490 "data/maps/PentepetalCity/scripts.pory"
-	msgbox PentepetalCity_EventScript_NinjaBoy_Text_1
-# 491 "data/maps/PentepetalCity/scripts.pory"
-	closemessage
-# 492 "data/maps/PentepetalCity/scripts.pory"
-	release
-	end
-
-
-PentepetalCity_EventScript_DecorShopSign::
 # 498 "data/maps/PentepetalCity/scripts.pory"
-	lock
+	speakername PentepetalCity_EventScript_NinjaBoy_Text_0
 # 499 "data/maps/PentepetalCity/scripts.pory"
-	msgbox PentepetalCity_EventScript_DecorShopSign_Text_0
+	msgbox PentepetalCity_EventScript_NinjaBoy_Text_1
 # 500 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
 # 501 "data/maps/PentepetalCity/scripts.pory"
@@ -989,381 +989,393 @@ PentepetalCity_EventScript_DecorShopSign::
 	end
 
 
-PentepetalCity_EventScript_Beauty::
+PentepetalCity_EventScript_DecorShopSign::
 # 507 "data/maps/PentepetalCity/scripts.pory"
 	lock
 # 508 "data/maps/PentepetalCity/scripts.pory"
-	faceplayer
+	msgbox PentepetalCity_EventScript_DecorShopSign_Text_0
 # 509 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_Beauty_Text_0
-# 510 "data/maps/PentepetalCity/scripts.pory"
-	msgbox PentepetalCity_EventScript_Beauty_Text_1
-# 511 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 512 "data/maps/PentepetalCity/scripts.pory"
+# 510 "data/maps/PentepetalCity/scripts.pory"
+	release
+	end
+
+
+PentepetalCity_EventScript_Beauty::
+# 516 "data/maps/PentepetalCity/scripts.pory"
+	lock
+# 517 "data/maps/PentepetalCity/scripts.pory"
+	faceplayer
+# 518 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_Beauty_Text_0
+# 519 "data/maps/PentepetalCity/scripts.pory"
+	msgbox PentepetalCity_EventScript_Beauty_Text_1
+# 520 "data/maps/PentepetalCity/scripts.pory"
+	closemessage
+# 521 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_Gentleman::
-# 518 "data/maps/PentepetalCity/scripts.pory"
+# 527 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 519 "data/maps/PentepetalCity/scripts.pory"
+# 528 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 520 "data/maps/PentepetalCity/scripts.pory"
+# 529 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Gentleman_Text_0
-# 521 "data/maps/PentepetalCity/scripts.pory"
+# 530 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Gentleman_Text_1
-# 522 "data/maps/PentepetalCity/scripts.pory"
+# 531 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 523 "data/maps/PentepetalCity/scripts.pory"
+# 532 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_Man::
-# 529 "data/maps/PentepetalCity/scripts.pory"
+# 538 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 530 "data/maps/PentepetalCity/scripts.pory"
+# 539 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 531 "data/maps/PentepetalCity/scripts.pory"
+# 540 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Man_Text_0
-# 532 "data/maps/PentepetalCity/scripts.pory"
+# 541 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Man_Text_1
-# 533 "data/maps/PentepetalCity/scripts.pory"
+# 542 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 534 "data/maps/PentepetalCity/scripts.pory"
+# 543 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_Woman::
-# 540 "data/maps/PentepetalCity/scripts.pory"
+# 549 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 541 "data/maps/PentepetalCity/scripts.pory"
+# 550 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 542 "data/maps/PentepetalCity/scripts.pory"
+# 551 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Woman_Text_0
-# 543 "data/maps/PentepetalCity/scripts.pory"
+# 552 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Woman_Text_1
-# 544 "data/maps/PentepetalCity/scripts.pory"
+# 553 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 545 "data/maps/PentepetalCity/scripts.pory"
+# 554 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_BlackBelt::
-# 551 "data/maps/PentepetalCity/scripts.pory"
+# 560 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 552 "data/maps/PentepetalCity/scripts.pory"
+# 561 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 553 "data/maps/PentepetalCity/scripts.pory"
+# 562 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_BlackBelt_Text_0
-# 554 "data/maps/PentepetalCity/scripts.pory"
+# 563 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_BlackBelt_Text_1
-# 555 "data/maps/PentepetalCity/scripts.pory"
+# 564 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 556 "data/maps/PentepetalCity/scripts.pory"
+# 565 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_Breloom::
-# 562 "data/maps/PentepetalCity/scripts.pory"
+# 571 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 563 "data/maps/PentepetalCity/scripts.pory"
+# 572 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 564 "data/maps/PentepetalCity/scripts.pory"
+# 573 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Breloom_Text_0
-# 565 "data/maps/PentepetalCity/scripts.pory"
+# 574 "data/maps/PentepetalCity/scripts.pory"
 	playmoncry SPECIES_BRELOOM, CRY_MODE_NORMAL
-# 566 "data/maps/PentepetalCity/scripts.pory"
+# 575 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Breloom_Text_1
-# 567 "data/maps/PentepetalCity/scripts.pory"
+# 576 "data/maps/PentepetalCity/scripts.pory"
 	waitmoncry
-# 568 "data/maps/PentepetalCity/scripts.pory"
+# 577 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 569 "data/maps/PentepetalCity/scripts.pory"
+# 578 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_Lass::
-# 575 "data/maps/PentepetalCity/scripts.pory"
+# 584 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 576 "data/maps/PentepetalCity/scripts.pory"
+# 585 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 577 "data/maps/PentepetalCity/scripts.pory"
+# 586 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Lass_Text_0
-# 578 "data/maps/PentepetalCity/scripts.pory"
+# 587 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Lass_Text_1
-# 579 "data/maps/PentepetalCity/scripts.pory"
+# 588 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 580 "data/maps/PentepetalCity/scripts.pory"
+# 589 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_TuberM::
-# 586 "data/maps/PentepetalCity/scripts.pory"
+# 595 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 587 "data/maps/PentepetalCity/scripts.pory"
+# 596 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 588 "data/maps/PentepetalCity/scripts.pory"
+# 597 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_TuberM_Text_0
-# 589 "data/maps/PentepetalCity/scripts.pory"
+# 598 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_TuberM_Text_1
-# 590 "data/maps/PentepetalCity/scripts.pory"
+# 599 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 591 "data/maps/PentepetalCity/scripts.pory"
+# 600 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_Magikarp::
-# 597 "data/maps/PentepetalCity/scripts.pory"
+# 606 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 598 "data/maps/PentepetalCity/scripts.pory"
+# 607 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 599 "data/maps/PentepetalCity/scripts.pory"
+# 608 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Magikarp_Text_0
-# 600 "data/maps/PentepetalCity/scripts.pory"
+# 609 "data/maps/PentepetalCity/scripts.pory"
 	playmoncry SPECIES_MAGIKARP, CRY_MODE_NORMAL
-# 601 "data/maps/PentepetalCity/scripts.pory"
+# 610 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Magikarp_Text_1
-# 602 "data/maps/PentepetalCity/scripts.pory"
+# 611 "data/maps/PentepetalCity/scripts.pory"
 	waitmoncry
-# 603 "data/maps/PentepetalCity/scripts.pory"
+# 612 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 604 "data/maps/PentepetalCity/scripts.pory"
+# 613 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_OldWoman::
-# 610 "data/maps/PentepetalCity/scripts.pory"
+# 619 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 611 "data/maps/PentepetalCity/scripts.pory"
+# 620 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 612 "data/maps/PentepetalCity/scripts.pory"
+# 621 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_OldWoman_Text_0
-# 613 "data/maps/PentepetalCity/scripts.pory"
+# 622 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_OldWoman_Text_1
-# 614 "data/maps/PentepetalCity/scripts.pory"
+# 623 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 615 "data/maps/PentepetalCity/scripts.pory"
+# 624 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_Artist::
-# 621 "data/maps/PentepetalCity/scripts.pory"
+# 630 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 622 "data/maps/PentepetalCity/scripts.pory"
+# 631 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 623 "data/maps/PentepetalCity/scripts.pory"
+# 632 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Artist_Text_0
-# 626 "data/maps/PentepetalCity/scripts.pory"
+# 635 "data/maps/PentepetalCity/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_RIBBON_TO_ARTIST
-# 627 "data/maps/PentepetalCity/scripts.pory"
+# 636 "data/maps/PentepetalCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PentepetalCity_EventScript_Artist_2
-# 636 "data/maps/PentepetalCity/scripts.pory"
+# 645 "data/maps/PentepetalCity/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_RIBBON_TO_ARTIST
-# 637 "data/maps/PentepetalCity/scripts.pory"
+# 646 "data/maps/PentepetalCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PentepetalCity_EventScript_Artist_5
-# 647 "data/maps/PentepetalCity/scripts.pory"
+# 656 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Artist_Text_3
-# 648 "data/maps/PentepetalCity/scripts.pory"
+# 657 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 650 "data/maps/PentepetalCity/scripts.pory"
+# 659 "data/maps/PentepetalCity/scripts.pory"
 	special CheckIfAnyMonsHaveRibbons
-# 651 "data/maps/PentepetalCity/scripts.pory"
+# 660 "data/maps/PentepetalCity/scripts.pory"
 	delay 30
-# 653 "data/maps/PentepetalCity/scripts.pory"
+# 662 "data/maps/PentepetalCity/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq PentepetalCity_EventScript_Artist_8
-# 671 "data/maps/PentepetalCity/scripts.pory"
+# 680 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Artist_Text_0
-# 672 "data/maps/PentepetalCity/scripts.pory"
+# 681 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Artist_Text_5
-# 673 "data/maps/PentepetalCity/scripts.pory"
+# 682 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
 PentepetalCity_EventScript_Artist_4:
-# 676 "data/maps/PentepetalCity/scripts.pory"
+# 685 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 PentepetalCity_EventScript_Artist_2:
-# 629 "data/maps/PentepetalCity/scripts.pory"
+# 638 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Artist_Text_1
-# 630 "data/maps/PentepetalCity/scripts.pory"
+# 639 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 631 "data/maps/PentepetalCity/scripts.pory"
+# 640 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 PentepetalCity_EventScript_Artist_5:
-# 639 "data/maps/PentepetalCity/scripts.pory"
+# 648 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Artist_Text_2
-# 640 "data/maps/PentepetalCity/scripts.pory"
+# 649 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 642 "data/maps/PentepetalCity/scripts.pory"
+# 651 "data/maps/PentepetalCity/scripts.pory"
 	delay 20
-# 643 "data/maps/PentepetalCity/scripts.pory"
+# 652 "data/maps/PentepetalCity/scripts.pory"
 	startquest QUEST_SHOW_RIBBON_TO_ARTIST
 	goto PentepetalCity_EventScript_Artist_4
 
 PentepetalCity_EventScript_Artist_8:
-# 655 "data/maps/PentepetalCity/scripts.pory"
-	applymovement 32, Common_Movement_Heart
-# 656 "data/maps/PentepetalCity/scripts.pory"
-	waitmovement 0
-# 657 "data/maps/PentepetalCity/scripts.pory"
-	delay 10
-# 658 "data/maps/PentepetalCity/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_0x8004
-# 659 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_Artist_Text_0
-# 660 "data/maps/PentepetalCity/scripts.pory"
-	msgbox PentepetalCity_EventScript_Artist_Text_4
-# 661 "data/maps/PentepetalCity/scripts.pory"
-	closemessage
-# 663 "data/maps/PentepetalCity/scripts.pory"
-	delay 5
 # 664 "data/maps/PentepetalCity/scripts.pory"
-	giveitem ITEM_TM_DRAINING_KISS
+	applymovement 32, Common_Movement_Heart
 # 665 "data/maps/PentepetalCity/scripts.pory"
-	closemessage
+	waitmovement 0
 # 666 "data/maps/PentepetalCity/scripts.pory"
-	delay 20
+	delay 10
 # 667 "data/maps/PentepetalCity/scripts.pory"
+	bufferspeciesname STR_VAR_1, VAR_0x8004
+# 668 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_Artist_Text_0
+# 669 "data/maps/PentepetalCity/scripts.pory"
+	msgbox PentepetalCity_EventScript_Artist_Text_4
+# 670 "data/maps/PentepetalCity/scripts.pory"
+	closemessage
+# 672 "data/maps/PentepetalCity/scripts.pory"
+	delay 5
+# 673 "data/maps/PentepetalCity/scripts.pory"
+	giveitem ITEM_TM_DRAINING_KISS
+# 674 "data/maps/PentepetalCity/scripts.pory"
+	closemessage
+# 675 "data/maps/PentepetalCity/scripts.pory"
+	delay 20
+# 676 "data/maps/PentepetalCity/scripts.pory"
 	completequest QUEST_SHOW_RIBBON_TO_ARTIST
 	goto PentepetalCity_EventScript_Artist_4
 
 
 PentepetalCity_EventScript_Girl::
-# 682 "data/maps/PentepetalCity/scripts.pory"
+# 691 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 683 "data/maps/PentepetalCity/scripts.pory"
+# 692 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 684 "data/maps/PentepetalCity/scripts.pory"
+# 693 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Girl_Text_0
-# 685 "data/maps/PentepetalCity/scripts.pory"
+# 694 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Girl_Text_1
-# 686 "data/maps/PentepetalCity/scripts.pory"
+# 695 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 687 "data/maps/PentepetalCity/scripts.pory"
+# 696 "data/maps/PentepetalCity/scripts.pory"
 	applymovement 35, Common_Movement_FaceRight
-# 688 "data/maps/PentepetalCity/scripts.pory"
+# 697 "data/maps/PentepetalCity/scripts.pory"
 	waitmovement 0
-# 689 "data/maps/PentepetalCity/scripts.pory"
+# 698 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_Gothitelle::
-# 695 "data/maps/PentepetalCity/scripts.pory"
-	lock
-# 696 "data/maps/PentepetalCity/scripts.pory"
-	faceplayer
-# 697 "data/maps/PentepetalCity/scripts.pory"
-	speakername PentepetalCity_EventScript_Gothitelle_Text_0
-# 698 "data/maps/PentepetalCity/scripts.pory"
-	playmoncry SPECIES_GOTHITELLE, CRY_MODE_NORMAL
-# 699 "data/maps/PentepetalCity/scripts.pory"
-	msgbox PentepetalCity_EventScript_Gothitelle_Text_1
-# 700 "data/maps/PentepetalCity/scripts.pory"
-	waitmoncry
-# 701 "data/maps/PentepetalCity/scripts.pory"
-	closemessage
-# 702 "data/maps/PentepetalCity/scripts.pory"
-	applymovement 36, Common_Movement_FaceLeft
-# 703 "data/maps/PentepetalCity/scripts.pory"
-	waitmovement 0
 # 704 "data/maps/PentepetalCity/scripts.pory"
+	lock
+# 705 "data/maps/PentepetalCity/scripts.pory"
+	faceplayer
+# 706 "data/maps/PentepetalCity/scripts.pory"
+	speakername PentepetalCity_EventScript_Gothitelle_Text_0
+# 707 "data/maps/PentepetalCity/scripts.pory"
+	playmoncry SPECIES_GOTHITELLE, CRY_MODE_NORMAL
+# 708 "data/maps/PentepetalCity/scripts.pory"
+	msgbox PentepetalCity_EventScript_Gothitelle_Text_1
+# 709 "data/maps/PentepetalCity/scripts.pory"
+	waitmoncry
+# 710 "data/maps/PentepetalCity/scripts.pory"
+	closemessage
+# 711 "data/maps/PentepetalCity/scripts.pory"
+	applymovement 36, Common_Movement_FaceLeft
+# 712 "data/maps/PentepetalCity/scripts.pory"
+	waitmovement 0
+# 713 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_FatMan::
-# 710 "data/maps/PentepetalCity/scripts.pory"
+# 719 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 711 "data/maps/PentepetalCity/scripts.pory"
+# 720 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 712 "data/maps/PentepetalCity/scripts.pory"
+# 721 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_FatMan_Text_0
-# 713 "data/maps/PentepetalCity/scripts.pory"
+# 722 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_FatMan_Text_1
-# 714 "data/maps/PentepetalCity/scripts.pory"
+# 723 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 715 "data/maps/PentepetalCity/scripts.pory"
+# 724 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_Appletun::
-# 721 "data/maps/PentepetalCity/scripts.pory"
+# 730 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 722 "data/maps/PentepetalCity/scripts.pory"
+# 731 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 723 "data/maps/PentepetalCity/scripts.pory"
+# 732 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Appletun_Text_0
-# 724 "data/maps/PentepetalCity/scripts.pory"
+# 733 "data/maps/PentepetalCity/scripts.pory"
 	playmoncry SPECIES_APPLETUN, CRY_MODE_NORMAL
-# 725 "data/maps/PentepetalCity/scripts.pory"
+# 734 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Appletun_Text_1
-# 726 "data/maps/PentepetalCity/scripts.pory"
+# 735 "data/maps/PentepetalCity/scripts.pory"
 	waitmoncry
-# 727 "data/maps/PentepetalCity/scripts.pory"
+# 736 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 728 "data/maps/PentepetalCity/scripts.pory"
+# 737 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_Hiker::
-# 734 "data/maps/PentepetalCity/scripts.pory"
+# 743 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 735 "data/maps/PentepetalCity/scripts.pory"
+# 744 "data/maps/PentepetalCity/scripts.pory"
 	faceplayer
-# 736 "data/maps/PentepetalCity/scripts.pory"
+# 745 "data/maps/PentepetalCity/scripts.pory"
 	speakername PentepetalCity_EventScript_Hiker_Text_0
-# 737 "data/maps/PentepetalCity/scripts.pory"
+# 746 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_Hiker_Text_1
-# 738 "data/maps/PentepetalCity/scripts.pory"
+# 747 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 739 "data/maps/PentepetalCity/scripts.pory"
+# 748 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 
 PentepetalCity_EventScript_PickUpRandomFossil::
-# 745 "data/maps/PentepetalCity/scripts.pory"
+# 754 "data/maps/PentepetalCity/scripts.pory"
 	goto_if_unset FLAG_HIDDEN_ITEM_PENTEPETAL_FOSSIL, PentepetalCity_EventScript_PickUpRandomFossil_2
 PentepetalCity_EventScript_PickUpRandomFossil_1:
-# 756 "data/maps/PentepetalCity/scripts.pory"
+# 765 "data/maps/PentepetalCity/scripts.pory"
 	release
 	end
 
 PentepetalCity_EventScript_PickUpRandomFossil_2:
-# 747 "data/maps/PentepetalCity/scripts.pory"
+# 756 "data/maps/PentepetalCity/scripts.pory"
 	lock
-# 748 "data/maps/PentepetalCity/scripts.pory"
+# 757 "data/maps/PentepetalCity/scripts.pory"
 	msgbox PentepetalCity_EventScript_PickUpRandomFossil_Text_0
-# 749 "data/maps/PentepetalCity/scripts.pory"
+# 758 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 750 "data/maps/PentepetalCity/scripts.pory"
+# 759 "data/maps/PentepetalCity/scripts.pory"
 	delay 5
-# 751 "data/maps/PentepetalCity/scripts.pory"
+# 760 "data/maps/PentepetalCity/scripts.pory"
 	randomelement ITEM_SKULL_FOSSIL, ITEM_ARMOR_FOSSIL
-# 752 "data/maps/PentepetalCity/scripts.pory"
+# 761 "data/maps/PentepetalCity/scripts.pory"
 	giveitem VAR_RESULT
-# 753 "data/maps/PentepetalCity/scripts.pory"
+# 762 "data/maps/PentepetalCity/scripts.pory"
 	closemessage
-# 754 "data/maps/PentepetalCity/scripts.pory"
+# 763 "data/maps/PentepetalCity/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_PENTEPETAL_FOSSIL
 	goto PentepetalCity_EventScript_PickUpRandomFossil_1
 
@@ -1521,88 +1533,94 @@ PentepetalCity_EventScript_RaniaChimeraEvent_Text_16:
 	.string "gonna head back to the University with\l"
 	.string "Niko. Stay safe, {PLAYER}!$"
 
-PentepetalCity_DollDecorScript_Text_0:
+PentepetalCity_EventScript_DirectionSign_Text_0:
 # 324 "data/maps/PentepetalCity/scripts.pory"
+	.string "Péntepetal City\n"
+	.string "The City of Beauty\p"
+	.string "Pollen Road {RIGHT_ARROW}$"
+
+PentepetalCity_DollDecorScript_Text_0:
+# 333 "data/maps/PentepetalCity/scripts.pory"
 	.string "It's a cute Pokémon Doll! This would be\n"
 	.string "perfect for the Cabin on The Delphis!$"
 
 PentepetalCity_EventScript_DollStreetVendor_Text_0:
-# 334 "data/maps/PentepetalCity/scripts.pory"
+# 343 "data/maps/PentepetalCity/scripts.pory"
 	.string "Street Vendor$"
 
 PentepetalCity_EventScript_DollStreetVendor_Text_1:
-# 335 "data/maps/PentepetalCity/scripts.pory"
+# 344 "data/maps/PentepetalCity/scripts.pory"
 	.string "Welcome! I sell Pokémon Doll\n"
 	.string "Decorations. How can I help you?$"
 
 PentepetalCity_EventScript_OrnamentalDecorStreetVendor_Text_0:
-# 374 "data/maps/PentepetalCity/scripts.pory"
+# 383 "data/maps/PentepetalCity/scripts.pory"
 	.string "Welcome! I sell Desks and Ornamental\n"
 	.string "Room Decorations. How can I help you?$"
 
 PentepetalCity_EventScript_FloorDecorStreetVendor_Text_0:
-# 414 "data/maps/PentepetalCity/scripts.pory"
+# 423 "data/maps/PentepetalCity/scripts.pory"
 	.string "Welcome! I sell Floor and Wall\n"
 	.string "Decorations. How can I help you?$"
 
 PentepetalCity_EventScript_MusicDecorStreetVendor_Text_0:
-# 458 "data/maps/PentepetalCity/scripts.pory"
+# 467 "data/maps/PentepetalCity/scripts.pory"
 	.string "Hey! I'm selling Note Mats for private\n"
 	.string "Rooms. How can I help you?$"
 
 PentepetalCity_EventScript_NinjaBoy_Text_0:
-# 489 "data/maps/PentepetalCity/scripts.pory"
+# 498 "data/maps/PentepetalCity/scripts.pory"
 	.string "Ninja Boy$"
 
 PentepetalCity_EventScript_NinjaBoy_Text_1:
-# 490 "data/maps/PentepetalCity/scripts.pory"
+# 499 "data/maps/PentepetalCity/scripts.pory"
 	.string "I wonder what cool decorations I can\n"
 	.string "get for my room here! Maybe I can fight\l"
 	.string "some of them!$"
 
 PentepetalCity_EventScript_DecorShopSign_Text_0:
-# 499 "data/maps/PentepetalCity/scripts.pory"
+# 508 "data/maps/PentepetalCity/scripts.pory"
 	.string "Péntepetal City Decorations\n"
 	.string "The Best Decor in Ilios!$"
 
 PentepetalCity_EventScript_Beauty_Text_0:
-# 509 "data/maps/PentepetalCity/scripts.pory"
+# 518 "data/maps/PentepetalCity/scripts.pory"
 	.string "Beauty$"
 
 PentepetalCity_EventScript_Beauty_Text_1:
-# 510 "data/maps/PentepetalCity/scripts.pory"
+# 519 "data/maps/PentepetalCity/scripts.pory"
 	.string "Empires and Kingdoms used to battle\n"
 	.string "over this island. Now that the Ilios\l"
 	.string "Region is united, it's a lot more\l"
 	.string "peaceful.$"
 
 PentepetalCity_EventScript_Gentleman_Text_0:
-# 520 "data/maps/PentepetalCity/scripts.pory"
+# 529 "data/maps/PentepetalCity/scripts.pory"
 	.string "Gentleman$"
 
 PentepetalCity_EventScript_Gentleman_Text_1:
-# 521 "data/maps/PentepetalCity/scripts.pory"
+# 530 "data/maps/PentepetalCity/scripts.pory"
 	.string "I'm on vacation here with my daughter.\n"
 	.string "She's obsessed with Pokémon Contests...\l"
 	.string "I don't really get it, but they make her\l"
 	.string "happy!$"
 
 PentepetalCity_EventScript_Man_Text_0:
-# 531 "data/maps/PentepetalCity/scripts.pory"
+# 540 "data/maps/PentepetalCity/scripts.pory"
 	.string "Man$"
 
 PentepetalCity_EventScript_Man_Text_1:
-# 532 "data/maps/PentepetalCity/scripts.pory"
+# 541 "data/maps/PentepetalCity/scripts.pory"
 	.string "Péntepetal City is known for a long\n"
 	.string "history of poetry. Maybe writers of the\l"
 	.string "past will inspire me!$"
 
 PentepetalCity_EventScript_Woman_Text_0:
-# 542 "data/maps/PentepetalCity/scripts.pory"
+# 551 "data/maps/PentepetalCity/scripts.pory"
 	.string "Woman$"
 
 PentepetalCity_EventScript_Woman_Text_1:
-# 543 "data/maps/PentepetalCity/scripts.pory"
+# 552 "data/maps/PentepetalCity/scripts.pory"
 	.string "When Pokémon compete in Contests, they\n"
 	.string "can earn Ribbons! They can slightly\l"
 	.string "raise certain battle stats. For example,\l"
@@ -1610,76 +1628,76 @@ PentepetalCity_EventScript_Woman_Text_1:
 	.string "Pokémon a bit physically stronger!$"
 
 PentepetalCity_EventScript_BlackBelt_Text_0:
-# 553 "data/maps/PentepetalCity/scripts.pory"
+# 562 "data/maps/PentepetalCity/scripts.pory"
 	.string "Black Belt$"
 
 PentepetalCity_EventScript_BlackBelt_Text_1:
-# 554 "data/maps/PentepetalCity/scripts.pory"
+# 563 "data/maps/PentepetalCity/scripts.pory"
 	.string "Heh, my Breloom is getting faster and\n"
 	.string "stronger! There's not a Gym to fight in\l"
 	.string "Péntepetal City, but it's worth coming\l"
 	.string "by to train!$"
 
 PentepetalCity_EventScript_Breloom_Text_0:
-# 564 "data/maps/PentepetalCity/scripts.pory"
+# 573 "data/maps/PentepetalCity/scripts.pory"
 	.string "Breloom$"
 
 PentepetalCity_EventScript_Breloom_Text_1:
-# 566 "data/maps/PentepetalCity/scripts.pory"
+# 575 "data/maps/PentepetalCity/scripts.pory"
 	.string "Hek keh!$"
 
 PentepetalCity_EventScript_Lass_Text_0:
-# 577 "data/maps/PentepetalCity/scripts.pory"
+# 586 "data/maps/PentepetalCity/scripts.pory"
 	.string "Lass$"
 
 PentepetalCity_EventScript_Lass_Text_1:
-# 578 "data/maps/PentepetalCity/scripts.pory"
+# 587 "data/maps/PentepetalCity/scripts.pory"
 	.string "The water gets rocky and shallow\n"
 	.string "nearby, which makes swimming hard.\l"
 	.string "Sometimes ocean Pokémon come up and\l"
 	.string "play on the beach!$"
 
 PentepetalCity_EventScript_TuberM_Text_0:
-# 588 "data/maps/PentepetalCity/scripts.pory"
+# 597 "data/maps/PentepetalCity/scripts.pory"
 	.string "Tuber$"
 
 PentepetalCity_EventScript_TuberM_Text_1:
-# 589 "data/maps/PentepetalCity/scripts.pory"
+# 598 "data/maps/PentepetalCity/scripts.pory"
 	.string "Look at this awesome Pokémon I just\n"
 	.string "caught! It must be one of the\l"
 	.string "strongest out there, just look at how\l"
 	.string "it bounces!$"
 
 PentepetalCity_EventScript_Magikarp_Text_0:
-# 599 "data/maps/PentepetalCity/scripts.pory"
+# 608 "data/maps/PentepetalCity/scripts.pory"
 	.string "Magikarp$"
 
 PentepetalCity_EventScript_Magikarp_Text_1:
-# 601 "data/maps/PentepetalCity/scripts.pory"
+# 610 "data/maps/PentepetalCity/scripts.pory"
 	.string "Plep?$"
 
 PentepetalCity_EventScript_OldWoman_Text_0:
-# 612 "data/maps/PentepetalCity/scripts.pory"
+# 621 "data/maps/PentepetalCity/scripts.pory"
 	.string "Old Woman$"
 
 PentepetalCity_EventScript_OldWoman_Text_1:
-# 613 "data/maps/PentepetalCity/scripts.pory"
+# 622 "data/maps/PentepetalCity/scripts.pory"
 	.string "I hear they found wild Cranidos and\n"
 	.string "Shieldon here. I found some a few\l"
 	.string "months ago, but I haven't seen any\l"
 	.string "recently... I hope they're okay.$"
 
 PentepetalCity_EventScript_Artist_Text_0:
-# 623 "data/maps/PentepetalCity/scripts.pory"
+# 632 "data/maps/PentepetalCity/scripts.pory"
 	.string "Artist$"
 
 PentepetalCity_EventScript_Artist_Text_1:
-# 629 "data/maps/PentepetalCity/scripts.pory"
+# 638 "data/maps/PentepetalCity/scripts.pory"
 	.string "Your Pokémon has inspired me with their\n"
 	.string "talents! I can see why it wins Ribbons.$"
 
 PentepetalCity_EventScript_Artist_Text_2:
-# 639 "data/maps/PentepetalCity/scripts.pory"
+# 648 "data/maps/PentepetalCity/scripts.pory"
 	.string "I'm looking for the perfect Pokémon to\n"
 	.string "paint... I want a winning art piece, so I\l"
 	.string "need to see a Contest-winning Pokémon!\p"
@@ -1687,13 +1705,13 @@ PentepetalCity_EventScript_Artist_Text_2:
 	.string "a Ribbon{COLOR DARK_GRAY} to inspire my art.$"
 
 PentepetalCity_EventScript_Artist_Text_3:
-# 647 "data/maps/PentepetalCity/scripts.pory"
+# 656 "data/maps/PentepetalCity/scripts.pory"
 	.string "Chaire! Have you won any Pokémon\n"
 	.string "Contests yet? I'd like to see a {COLOR GREEN}Pokémon\l"
 	.string "with a Ribbon{COLOR DARK_GRAY}.$"
 
 PentepetalCity_EventScript_Artist_Text_4:
-# 660 "data/maps/PentepetalCity/scripts.pory"
+# 669 "data/maps/PentepetalCity/scripts.pory"
 	.string "Your {STR_VAR_1} has a stunning\n"
 	.string "Ribbon! It must be a Pokémon Contest\l"
 	.string "winner, this will make for a perfect\l"
@@ -1702,7 +1720,7 @@ PentepetalCity_EventScript_Artist_Text_4:
 	.string "take this!$"
 
 PentepetalCity_EventScript_Artist_Text_5:
-# 672 "data/maps/PentepetalCity/scripts.pory"
+# 681 "data/maps/PentepetalCity/scripts.pory"
 	.string "Hm, still working on the Pokémon\n"
 	.string "Contests, huh? That's okay, I haven't\l"
 	.string "won any either.\p"
@@ -1711,55 +1729,55 @@ PentepetalCity_EventScript_Artist_Text_5:
 	.string "for your effort!$"
 
 PentepetalCity_EventScript_Girl_Text_0:
-# 684 "data/maps/PentepetalCity/scripts.pory"
+# 693 "data/maps/PentepetalCity/scripts.pory"
 	.string "Girl$"
 
 PentepetalCity_EventScript_Girl_Text_1:
-# 685 "data/maps/PentepetalCity/scripts.pory"
+# 694 "data/maps/PentepetalCity/scripts.pory"
 	.string "My Gothitelle is almost ready to\n"
 	.string "compete in a Contest! Nobody can beat\l"
 	.string "her in a Beauty competition!$"
 
 PentepetalCity_EventScript_Gothitelle_Text_0:
-# 697 "data/maps/PentepetalCity/scripts.pory"
+# 706 "data/maps/PentepetalCity/scripts.pory"
 	.string "Gothitelle$"
 
 PentepetalCity_EventScript_Gothitelle_Text_1:
-# 699 "data/maps/PentepetalCity/scripts.pory"
+# 708 "data/maps/PentepetalCity/scripts.pory"
 	.string "Bree-ei!$"
 
 PentepetalCity_EventScript_FatMan_Text_0:
-# 712 "data/maps/PentepetalCity/scripts.pory"
+# 721 "data/maps/PentepetalCity/scripts.pory"
 	.string "Fat Man$"
 
 PentepetalCity_EventScript_FatMan_Text_1:
-# 713 "data/maps/PentepetalCity/scripts.pory"
+# 722 "data/maps/PentepetalCity/scripts.pory"
 	.string "Ehehe, look at my Shiny Appletun! I\n"
 	.string "found a bright green Applin when I was\l"
 	.string "young, and I'v been riding that\l"
 	.string "excitement high ever since!$"
 
 PentepetalCity_EventScript_Appletun_Text_0:
-# 723 "data/maps/PentepetalCity/scripts.pory"
+# 732 "data/maps/PentepetalCity/scripts.pory"
 	.string "Appletun$"
 
 PentepetalCity_EventScript_Appletun_Text_1:
-# 725 "data/maps/PentepetalCity/scripts.pory"
+# 734 "data/maps/PentepetalCity/scripts.pory"
 	.string "Huu-ahh.$"
 
 PentepetalCity_EventScript_Hiker_Text_0:
-# 736 "data/maps/PentepetalCity/scripts.pory"
+# 745 "data/maps/PentepetalCity/scripts.pory"
 	.string "Hiker$"
 
 PentepetalCity_EventScript_Hiker_Text_1:
-# 737 "data/maps/PentepetalCity/scripts.pory"
+# 746 "data/maps/PentepetalCity/scripts.pory"
 	.string "I came by to see the wild Cranidos and\n"
 	.string "Shieldon folks have been talking about.\l"
 	.string "Now that I'm here, it seems like they're\l"
 	.string "all gone...$"
 
 PentepetalCity_EventScript_PickUpRandomFossil_Text_0:
-# 748 "data/maps/PentepetalCity/scripts.pory"
+# 757 "data/maps/PentepetalCity/scripts.pory"
 	.string "Hm? There's a strange-looking rock in\n"
 	.string "this bag abandoned by Team Chimera!$"
 

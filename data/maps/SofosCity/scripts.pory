@@ -52,6 +52,15 @@ script SofosCity_EventScript_GymSign
     end
 }
 
+script SofosCity_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Sofos City\n A Home For All\p {LEFT_ARROW} Asfal Hills\n Sea of Asteri {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script SofosCity_EventScript_ChimeraGruntAtGym1
 {
     lock

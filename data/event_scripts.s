@@ -1916,3 +1916,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/PentepetalCity_House5/scripts.inc"
 
 	.include "data/maps/SunkenTemple/scripts.inc"
+
+	.include "data/maps/FrescoIsles_PokemonCenter/scripts.inc"

@@ -215,7 +215,7 @@ JusmailTown_EventScript_PsychicM::
 # 149 "data/maps/JusmailTown/scripts.pory"
 	delay 20
 # 150 "data/maps/JusmailTown/scripts.pory"
-	emote 20, EMOTE_QUESTION
+	emote 18, EMOTE_QUESTION
 # 151 "data/maps/JusmailTown/scripts.pory"
 	speakername JusmailTown_EventScript_PsychicM_Text_0
 # 152 "data/maps/JusmailTown/scripts.pory"

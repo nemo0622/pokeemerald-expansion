@@ -773,6 +773,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "PentepetalCity_EventScript_PickUpRandomFossil"
+    },
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
     }
   ]
 }

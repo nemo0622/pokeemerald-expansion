@@ -5640,6 +5640,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SunkenTemple/border.bin",
       "blockdata_filepath": "data/layouts/SunkenTemple/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRESCO_ISLES_POKEMON_CENTER",
+      "name": "FrescoIsles_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/FrescoIsles_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/FrescoIsles_PokemonCenter/map.bin"
     }
   ]
 }

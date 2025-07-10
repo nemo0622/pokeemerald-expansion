@@ -8,7 +8,7 @@
     F(CALM_MIND) \
     F(PSYSHOCK) \
     F(TOXIC) \
-    F(HAIL) \
+    F(WHIRLPOOL) \
     F(BULK_UP) \
     F(BULLET_SEED) \
     F(HIDDEN_POWER) \
@@ -21,7 +21,7 @@
     F(PROTECT) \
     F(RAIN_DANCE) \
     F(GIGA_DRAIN) \
-    F(SAFEGUARD) \
+    F(POISON_JAB) \
     F(ACID_SPRAY) \
     F(SOLAR_BEAM) \
     F(HEX) \

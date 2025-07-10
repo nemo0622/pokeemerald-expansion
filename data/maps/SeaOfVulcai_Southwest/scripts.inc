@@ -41,224 +41,244 @@ SeaOfVulcai_Southwest_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 
-VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli::
+VulcaiSea_EventScript_DirectionSign::
 # 25 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
-	trainerbattle_single TRAINER_VULCAISEA_LEYLI, VulcaiSea_Text_Trainer_VulcaiSea_LeyliIntro, VulcaiSea_Text_Trainer_VulcaiSea_LeyliDefeat
+	lock
 # 26 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
-	speakername VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli_Text_0
+	msgbox VulcaiSea_EventScript_DirectionSign_Text_0
 # 27 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
-	msgbox VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli_Text_1
-# 28 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	closemessage
-# 29 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 28 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+	release
+	end
+
+
+VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli::
+# 34 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+	trainerbattle_single TRAINER_VULCAISEA_LEYLI, VulcaiSea_Text_Trainer_VulcaiSea_LeyliIntro, VulcaiSea_Text_Trainer_VulcaiSea_LeyliDefeat
+# 35 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+	speakername VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli_Text_0
+# 36 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+	msgbox VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli_Text_1
+# 37 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+	closemessage
+# 38 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	release
 	end
 
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Zissis::
-# 43 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 52 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	trainerbattle_single TRAINER_VULCAISEA_ZISSIS, VulcaiSea_Text_Trainer_VulcaiSea_ZissisIntro, VulcaiSea_Text_Trainer_VulcaiSea_ZissisDefeat
-# 44 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 53 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	speakername VulcaiSea_EventScript_Trainer_VulcaiSea_Zissis_Text_0
-# 45 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 54 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	msgbox VulcaiSea_EventScript_Trainer_VulcaiSea_Zissis_Text_1
-# 46 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 55 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	closemessage
-# 47 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 56 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	release
 	end
 
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Pelagia::
-# 61 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 70 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	trainerbattle_single TRAINER_VULCAISEA_PELAGIA, VulcaiSea_Text_Trainer_VulcaiSea_PelagiaIntro, VulcaiSea_Text_Trainer_VulcaiSea_PelagiaDefeat
-# 62 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 71 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	speakername VulcaiSea_EventScript_Trainer_VulcaiSea_Pelagia_Text_0
-# 63 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 72 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	msgbox VulcaiSea_EventScript_Trainer_VulcaiSea_Pelagia_Text_1
-# 64 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 73 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	closemessage
-# 65 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 74 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	release
 	end
 
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Jaxon::
-# 79 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 88 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	trainerbattle_single TRAINER_VULCAISEA_JAXON, VulcaiSea_Text_Trainer_VulcaiSea_JaxonIntro, VulcaiSea_Text_Trainer_VulcaiSea_JaxonDefeat
-# 80 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 89 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	speakername VulcaiSea_EventScript_Trainer_VulcaiSea_Jaxon_Text_0
-# 81 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 90 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	msgbox VulcaiSea_EventScript_Trainer_VulcaiSea_Jaxon_Text_1
-# 82 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 91 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	closemessage
-# 83 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 92 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	release
 	end
 
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Victoria::
-# 97 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 106 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	trainerbattle_single TRAINER_VULCAISEA_VICTORIA, VulcaiSea_Text_Trainer_VulcaiSea_VictoriaIntro, VulcaiSea_Text_Trainer_VulcaiSea_VictoriaDefeat
-# 98 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 107 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	speakername VulcaiSea_EventScript_Trainer_VulcaiSea_Victoria_Text_0
-# 99 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 108 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	msgbox VulcaiSea_EventScript_Trainer_VulcaiSea_Victoria_Text_1
-# 100 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 109 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	closemessage
-# 101 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 110 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	release
 	end
 
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Julien::
-# 115 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 124 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	trainerbattle_single TRAINER_VULCAISEA_JULIEN, VulcaiSea_Text_Trainer_VulcaiSea_JulienIntro, VulcaiSea_Text_Trainer_VulcaiSea_JulienDefeat
-# 116 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 125 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	speakername VulcaiSea_EventScript_Trainer_VulcaiSea_Julien_Text_0
-# 117 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 126 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	msgbox VulcaiSea_EventScript_Trainer_VulcaiSea_Julien_Text_1
-# 118 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 127 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	closemessage
-# 119 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 128 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	release
 	end
 
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Tabata::
-# 133 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 142 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	trainerbattle_single TRAINER_VULCAISEA_TABATA, VulcaiSea_Text_Trainer_VulcaiSea_TabataIntro, VulcaiSea_Text_Trainer_VulcaiSea_TabataDefeat
-# 134 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 143 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	speakername VulcaiSea_EventScript_Trainer_VulcaiSea_Tabata_Text_0
-# 135 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 144 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	msgbox VulcaiSea_EventScript_Trainer_VulcaiSea_Tabata_Text_1
-# 136 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 145 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	closemessage
-# 137 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 146 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	release
 	end
 
 
 VulcaiSea_EventScript_Hiker::
-# 151 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 160 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	lock
-# 152 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 161 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	faceplayer
-# 153 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 162 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	speakername VulcaiSea_EventScript_Hiker_Text_0
-# 154 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 163 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	msgbox VulcaiSea_EventScript_Hiker_Text_1
-# 155 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 164 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	closemessage
-# 156 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 165 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	release
 	end
 
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Sebastian::
-# 162 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 171 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	trainerbattle_single TRAINER_VULCAISEA_SEBASTIAN, VulcaiSea_Text_Trainer_VulcaiSea_SebastianIntro, VulcaiSea_Text_Trainer_VulcaiSea_SebastianDefeat
-# 163 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 172 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	speakername VulcaiSea_EventScript_Trainer_VulcaiSea_Sebastian_Text_0
-# 164 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 173 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	msgbox VulcaiSea_EventScript_Trainer_VulcaiSea_Sebastian_Text_1
-# 165 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 174 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	closemessage
-# 166 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 175 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	release
 	end
 
 
 VulcaiSea_EventScript_AceTrainer::
-# 180 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 189 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	lock
-# 181 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 190 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	faceplayer
-# 182 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 191 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	speakername VulcaiSea_EventScript_AceTrainer_Text_0
-# 183 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 192 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	msgbox VulcaiSea_EventScript_AceTrainer_Text_1
-# 184 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 193 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	closemessage
-# 185 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 194 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	release
 	end
 
 
-VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli_Text_0:
+VulcaiSea_EventScript_DirectionSign_Text_0:
 # 26 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+	.string "Sea of Vulcai\n"
+	.string "The Molten Sea\p"
+	.string "{UP_ARROW} Sea of Asteri\n"
+	.string "Fresco Isles {RIGHT_ARROW}\n"
+	.string "{DOWN_ARROW} Palati City$"
+
+VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli_Text_0:
+# 35 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Leyli$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli_Text_1:
-# 27 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 36 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Head southeast of here to get to the\n"
 	.string "Fresco Isles. If you pass the volcanic\l"
 	.string "rock and reach Palati City, you've gone\l"
 	.string "too far south!$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Zissis_Text_0:
-# 44 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 53 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Zissis$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Zissis_Text_1:
-# 45 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 54 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "My dog Pokémon all live with my family in\n"
 	.string "the Fresco Isles!$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Pelagia_Text_0:
-# 62 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 71 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Pelagia$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Pelagia_Text_1:
-# 63 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 72 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "I'm keeping watch of Zissis while he\n"
 	.string "plays in the water. Our parents get\l"
 	.string "worried when he's alone.$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Jaxon_Text_0:
-# 80 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 89 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Jaxon$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Jaxon_Text_1:
-# 81 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 90 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "More volcanoes are east, making up the\n"
 	.string "Fresco Isles. Maybe I'll check those\l"
 	.string "out too!$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Victoria_Text_0:
-# 98 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 107 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Victoria$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Victoria_Text_1:
-# 99 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 108 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "If you're on a Trainer journey, you\n"
 	.string "should head east to the Fresco Isles\l"
 	.string "before going to Palati City.$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Julien_Text_0:
-# 116 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 125 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Julien$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Julien_Text_1:
-# 117 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 126 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "There are a lot of sunken ruins around\n"
 	.string "here. I wanna explore them all!$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Tabata_Text_0:
-# 134 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 143 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Tabata$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Tabata_Text_1:
-# 135 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 144 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "It's hard for ships to get through all\n"
 	.string "the volcanic rock in the Sea of Vulcai.$"
 
 VulcaiSea_EventScript_Hiker_Text_0:
-# 153 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 162 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Hiker$"
 
 VulcaiSea_EventScript_Hiker_Text_1:
-# 154 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 163 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Lots of rare Pokémon live around here.\n"
 	.string "Folks say that ships carrying them\l"
 	.string "crashed against these rocks, and the\l"
@@ -268,21 +288,21 @@ VulcaiSea_EventScript_Hiker_Text_1:
 	.string "world where they can be found!$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Sebastian_Text_0:
-# 163 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 172 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Sebastian$"
 
 VulcaiSea_EventScript_Trainer_VulcaiSea_Sebastian_Text_1:
-# 164 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 173 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "An active volcano... it's a scary\n"
 	.string "thought. The only thing protecting us\l"
 	.string "right now is a layer of rock.$"
 
 VulcaiSea_EventScript_AceTrainer_Text_0:
-# 182 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 191 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Ace Trainer$"
 
 VulcaiSea_EventScript_AceTrainer_Text_1:
-# 183 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 192 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "The Fresco Isles are just east of here.\n"
 	.string "I hear the Gym Leaders are twins that\l"
 	.string "are always fighting... that should make\l"
@@ -290,77 +310,77 @@ VulcaiSea_EventScript_AceTrainer_Text_1:
 	.string "Badge is as good as mine!$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_LeyliIntro::
-# 32 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 41 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "The Fresco Isles are just southeast of\n"
 	.string "here!$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_LeyliDefeat::
-# 36 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 45 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "I should swim to the Fresco Isles\n"
 	.string "Pokémon Center.$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_ZissisIntro::
-# 50 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 59 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Ehehe, my dog Pokémon all paddle so\n"
 	.string "cute!$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_ZissisDefeat::
-# 54 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 63 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "My dogs!$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_PelagiaIntro::
-# 68 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 77 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "My brother is obsessed with swimming\n"
 	.string "with his Pokémon. He needs to come home\l"
 	.string "for a meal!$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_PelagiaDefeat::
-# 72 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 81 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Him and his dogs...$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_JaxonIntro::
-# 86 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 95 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Woah, I can feel the heat of the lava\n"
 	.string "from here...$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_JaxonDefeat::
-# 90 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 99 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "The heat was throwing me off!$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_VictoriaIntro::
-# 104 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 113 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "I'm headed south to Palati City! I'm\n"
 	.string "gonna beat the seventh Gym Leader,\l"
 	.string "easy!$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_VictoriaDefeat::
-# 108 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 117 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "Maybe I should try the sixth Gym Leader\n"
 	.string "in the Fresco Isles instead...$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_JulienIntro::
-# 122 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 131 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "My friends told me about a sunken\n"
 	.string "temple around here! Where could it be?$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_JulienDefeat::
-# 126 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 135 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "I have to keep looking.$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_TabataIntro::
-# 140 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 149 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "So many rocks around here... my fishing\n"
 	.string "line is getting tangled!$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_TabataDefeat::
-# 144 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 153 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "All tangled up.$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_SebastianIntro::
-# 169 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 178 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "I come here every day to paint the\n"
 	.string "environment.$"
 
 VulcaiSea_Text_Trainer_VulcaiSea_SebastianDefeat::
-# 173 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
+# 182 "data/maps/SeaOfVulcai_Southwest/scripts.pory"
 	.string "I need more paint!$"

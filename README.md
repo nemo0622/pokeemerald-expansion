@@ -43,6 +43,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
     - Battle Pavilions in multiple areas, replicating Battle Tents of Pokémon Emerald with new Pokémon and balancing
     - Pokémon Contests, with slight stat bonuses given to Pokémon with Ribbons
     - Mining Expeditions on Marmaro Island, providing shards, fossils, and more!
+    - University Students in most Routes and Towns, seeking help filling their Pokédex
     - Dozens of optional sidequests for a variety of fun rewards and events!
 - Various QOL Changes, such as:
     - A dedicated Quest Menu to keep track of story objectives
@@ -70,11 +71,7 @@ MAJOR TODOS:
     - FRESCO ISLES: Leave Gym Leader unfinished until after Muses gym leaders rework!
         - ADD THEATRE STAGE LOCATION TO FRESCO ISLES! This can be where Thalia and Melpomene will be found, and convinced to go back to the Gym
     - Abandoned Lab in Fresco Isles has one remaining Scientist, who used to work for Team Chimera. He keeps watch over the last remaining Type: Null, continuing to feed it and care for it until he finds a Trainer worthy of taking it. Plus, have Silvally's RKS Memory items accessible there!
-- All Routes / Towns tasks:
-    - Add Signposts to all places (I think I stopped after Pythios Town? oops)
-    - Add "University Students" to every Route or Town with wild Pokémon encounters, who will ask for Pokédex data for All Wild Pokémon in their given area
-        - Motivates Players to complete the Pokédex, or to at least capture more Pokémon than necessary sometimes
-        - Rewards: x15 Poké balls, EXP Candies, Held Items (Quick Claw, Brightpowder, White Herb, Focus Band, etc.), Evolutionary Items, TMs (Deepwater Curse, other new ones, etc.), and maybe even Outfits!
+    - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
 
 - Implement Biv's Fishing Minigame
     - Also create options menu toggle for it
@@ -106,14 +103,8 @@ MAJOR TODOS:
             - This will be where Ho-oh can be caught later in the game, probably after the Chimera story
             - MANY BERRY TREES HERE!
             - Use hanging light graphics from Yanako's tilesets (plus other buildings from that sheet too tbh)
-        - Péntepetal City ("Five-petal City") - name inspired by the Wild Pansy / Violet, which is a major lesbian/queer symbol with 5 petals. City obviously on island inspired by Lesbos
-            - Split between a small outer island and a mainland section, connected with TWO LARGE MARBLE BRIDGES (inspired by Ancient Mytilene, the capital of the island!)
-            - Tan brick buildings with orange roofs, like [this picture](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theotheraegean.com%2F2021%2F02%2Farchitecture-in-lesvos%2F&psig=AOvVaw3olmDfEWQHULi5WEdmzN8T&ust=1746277667381000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCOCGiLLthI0DFQAAAAAdAAAAABAR) of Molyvos, Lesbos
-            - Questline unlocking Eternal Flower Floette
-            - Major Cabin Decor shops! Ways here to unlock many poké dolls?
-            - POKéMON CONTEST HALL could be located here! (Implement Pokémon with Ribbons get slight stat boost)
         - The Pollen Road - route east of Péntepetal City, home to many Tropius, Roselia, and Lileep
-        - Davosian Strait - ocean route heading north of the Pollen Road (name inspired by Ser Davos Seaworth)
+        - Davosi Strait - ocean route heading north of the Pollen Road (name inspired by Ser Davos Seaworth)
             - Only place where Dhelmise can be fished up!
         - Trickster Coast - small area where ocean turns east towards land (name inspired by Trojan Horse)
             - Include rocky, sandy coastal area with broken ship tiles and ruins
@@ -178,6 +169,7 @@ GREEK PHRASES AND STUFF:
 - CABIN DECORATION: holding the decoration sometimes breaks the graphics (ex: holding Pretty Flowers messes it up bad)
 - Pretty sure Nemo622 Oricorio quest is fucked skull emoji
 - Sometimes, encountered Overworld pokemon are level 2, even with a team with Pokémon up to level 100. somewhere, the calculation is getting messed up
+    - Lowkey this might be save corruption maybe? test it on a fresh save to be sure
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)

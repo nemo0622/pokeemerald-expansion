@@ -20,6 +20,15 @@ mapscripts SeaOfVulcai_Southwest_MapScripts {
     }
 }
 
+script VulcaiSea_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Sea of Vulcai\n The Molten Sea\p {UP_ARROW} Sea of Asteri\n Fresco Isles {RIGHT_ARROW}\n {DOWN_ARROW} Palati City"))
+    closemessage
+    release
+    end
+}
+
 script VulcaiSea_EventScript_Trainer_VulcaiSea_Leyli
 {
     trainerbattle_single(TRAINER_VULCAISEA_LEYLI, VulcaiSea_Text_Trainer_VulcaiSea_LeyliIntro, VulcaiSea_Text_Trainer_VulcaiSea_LeyliDefeat)

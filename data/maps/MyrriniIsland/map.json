@@ -848,6 +848,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MyrriniIsland_Sign_GymSign"
+    },
+    {
+      "type": "sign",
+      "x": 26,
+      "y": 31,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MyrriniIsland_EventScript_DirectionSign"
     }
   ]
 }

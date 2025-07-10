@@ -42,6 +42,15 @@ script MyrriniIsland_EventScript_TryChimeraEvent
     end
 }
 
+script MyrriniIsland_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Myrrini Island\n The Island of Festivals\p {LEFT_ARROW} Sea of Asteri - East"))
+    closemessage
+    release
+    end
+}
+
 script MyrriniIsland_Sign_GymSign
 {
     lock

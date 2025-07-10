@@ -71,23 +71,23 @@
 #define FLAG_HIDE_ZOO_POKEMON_14    0x37
 #define FLAG_HIDE_ZOO_POKEMON_15    0x38
 #define FLAG_HIDE_ZOO_POKEMON_16    0x39
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
+#define FLAG_CAUGHT_ALL_MONS_ACRISIA_CITY       0x3A // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_BRONZE_FIELDS      0x3B // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_JUSMAIL_TOWN       0x3C // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_ACRISIA_MTNS       0x3D // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_RIVERWALK          0x3E // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_KALAMI_CITY        0x3F // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_WANDERERS_WOODS    0x40 // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_PYTHIOS_TOWN       0x41 // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_ERINYS_PATH        0x42 // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_ASFAL_HILLS        0x43 // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_SOFOS_CITY         0x44 // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_KIPOS_TOWN         0x45 // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_ASTERI_SEA         0x46 // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_MARMARO_ISLAND     0x47 // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_MYRRINI_ISLAND     0x48 // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_SEA_OF_VULCAI      0x49 // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_FRESCO_ISLES       0x4A // University Student Route Check flag
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag

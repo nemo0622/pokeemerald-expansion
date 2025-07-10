@@ -1,5 +1,42 @@
 mapscripts SeaOfVulcai_West_MapScripts {}
 
+script SeaOfVulcai_West_EventScript_UniversityStudentRouteCheck
+{
+    lock
+    faceplayer
+    speakername("Uni. Student")
+
+    if(flag(FLAG_CAUGHT_ALL_MONS_SEA_OF_VULCAI))
+    {
+        msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Chaire! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Underwater Pokémon{COLOR DARK_GRAY} found in the Sea of Vulcai. If you've caught all the Pokémon here, please let me know."))
+        closemessage
+        special(CheckRouteCaptureProgress)
+        if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
+        {
+            delay(20)
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Uni. Student")
+            msgbox(format("Incredible! You've caught all the Pokémon that I requested in the area!\p Here's a reward from the University. Keep up your hard work!"))
+            closemessage
+            delay(5)
+
+            // give reward!
+            giveitem(ITEM_ASSAULT_VEST)
+            closemessage
+
+            setflag(FLAG_CAUGHT_ALL_MONS_SEA_OF_VULCAI)
+        }
+    }
+
+    release
+    end
+}
+
 script VulcaiSea_EventScript_Trainer_VulcaiSea_Freddy
 {
     trainerbattle_single(TRAINER_VULCAISEA_FREDDY, VulcaiSea_Text_Trainer_VulcaiSea_FreddyIntro, VulcaiSea_Text_Trainer_VulcaiSea_FreddyDefeat)

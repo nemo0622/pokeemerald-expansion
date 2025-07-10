@@ -318,6 +318,15 @@ text PentepetalCity_Text_GruntLose
 // ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
 
+script PentepetalCity_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Péntepetal City\n The City of Beauty\p Pollen Road {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
 script PentepetalCity_DollDecorScript
 {
     lock

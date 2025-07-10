@@ -81,50 +81,106 @@ PythiosTown_PokemonCenter_EventScript_Togetic::
 	end
 
 
-PythiosTown_PokemonCenter_Camper::
+PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck::
 # 55 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	lock
 # 56 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	faceplayer
 # 57 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
-	speakername PythiosTown_PokemonCenter_Camper_Text_0
-# 58 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
-	msgbox PythiosTown_PokemonCenter_Camper_Text_1
+	speakername PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
 # 59 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	goto_if_set FLAG_CAUGHT_ALL_MONS_PYTHIOS_TOWN, PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_2
+# 66 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	msgbox PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2
+# 67 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	closemessage
-# 60 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 68 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	special CheckRouteCaptureProgress
+# 69 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_5
+PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_1:
+# 90 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	release
+	end
+
+PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_2:
+# 61 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	msgbox PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1
+# 62 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	closemessage
+	goto PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_5:
+# 71 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	delay 20
+# 72 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	emote VAR_LAST_TALKED, EMOTE_EXCLAM
+# 73 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	speakername PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 74 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	msgbox PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3
+# 75 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	closemessage
+# 76 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	delay 5
+# 81 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	unlockoutfit OUTFIT_TRADITIONAL
+# 82 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	msgbox PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_4
+# 83 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	delay 20
+# 84 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	closemessage
+# 86 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	setflag FLAG_CAUGHT_ALL_MONS_PYTHIOS_TOWN
+	goto PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+
+PythiosTown_PokemonCenter_Camper::
+# 96 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	lock
+# 97 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	faceplayer
+# 98 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	speakername PythiosTown_PokemonCenter_Camper_Text_0
+# 99 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	msgbox PythiosTown_PokemonCenter_Camper_Text_1
+# 100 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	closemessage
+# 101 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	release
 	end
 
 
 PythiosTown_PokemonCenter_Lass::
-# 66 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 107 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	lock
-# 67 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 108 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	faceplayer
-# 68 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 109 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	speakername PythiosTown_PokemonCenter_Lass_Text_0
-# 69 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 110 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	msgbox PythiosTown_PokemonCenter_Lass_Text_1
-# 70 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 111 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	closemessage
-# 71 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 112 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	release
 	end
 
 
 PythiosTown_PokemonCenter_NinjaBoy::
-# 77 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 118 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	lock
-# 78 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 119 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	faceplayer
-# 79 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 120 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	speakername PythiosTown_PokemonCenter_NinjaBoy_Text_0
-# 80 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 121 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	msgbox PythiosTown_PokemonCenter_NinjaBoy_Text_1
-# 81 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 122 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	closemessage
-# 82 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 123 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	release
 	end
 
@@ -161,31 +217,62 @@ PythiosTown_PokemonCenter_EventScript_Togetic_Text_1:
 # 46 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	.string "Bee-eh!$"
 
-PythiosTown_PokemonCenter_Camper_Text_0:
+PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0:
 # 57 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	.string "Uni. Student$"
+
+PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1:
+# 61 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	.string "Your Pokédex data is amazing! Now we\n"
+	.string "know more about the local ecosystem,\l"
+	.string "thanks to you.$"
+
+PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2:
+# 66 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	.string "Chaire! I'm a student from the Acrisia\n"
+	.string "University.\p"
+	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
+	.string "Pokémon{COLOR DARK_GRAY} found in Pythios Town. If\l"
+	.string "you've caught all the Pokémon here,\l"
+	.string "please let me know.$"
+
+PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3:
+# 74 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	.string "Incredible! You've caught all the\n"
+	.string "Pokémon that I requested in the area!\p"
+	.string "Here's a reward from the University.\n"
+	.string "Keep up your hard work!$"
+
+PythiosTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_4:
+# 82 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+	.string "The Traditional Outfit has been added\n"
+	.string "to the Outfit Box!$"
+
+PythiosTown_PokemonCenter_Camper_Text_0:
+# 98 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	.string "Camper$"
 
 PythiosTown_PokemonCenter_Camper_Text_1:
-# 58 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 99 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	.string "The western half of Ilios is perfect for\n"
 	.string "camping! The further east you go, the\l"
 	.string "more development there is.$"
 
 PythiosTown_PokemonCenter_Lass_Text_0:
-# 68 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 109 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	.string "Lass$"
 
 PythiosTown_PokemonCenter_Lass_Text_1:
-# 69 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 110 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	.string "Ghost-type Pokémon are a little scary,\n"
 	.string "but they're so cute at the same time!$"
 
 PythiosTown_PokemonCenter_NinjaBoy_Text_0:
-# 79 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 120 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	.string "Little Boy$"
 
 PythiosTown_PokemonCenter_NinjaBoy_Text_1:
-# 80 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
+# 121 "data/maps/PythiosTown_PokemonCenter/scripts.pory"
 	.string "Hey, hey! I wanna battle the Gym here!\p"
 	.string "...I need to beat two other Gyms first!?\n"
 	.string "How am I supposed to do that?$"

@@ -291,6 +291,58 @@ Common_PokemonCenter_EventScript_CandleSign::
 	end
 
 
+AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck::
+# 191 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	lock
+# 192 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	faceplayer
+# 193 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	speakername AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 195 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	goto_if_set FLAG_CAUGHT_ALL_MONS_ACRISIA_CITY, AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_2
+# 202 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2
+# 203 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 204 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	special CheckRouteCaptureProgress
+# 205 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_5
+AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_1:
+# 222 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	release
+	end
+
+AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_2:
+# 197 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1
+# 198 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+	goto AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_5:
+# 207 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 20
+# 208 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	emote VAR_LAST_TALKED, EMOTE_EXCLAM
+# 209 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	speakername AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 210 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	msgbox AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3
+# 211 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 212 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	delay 5
+# 215 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	giveitem ITEM_NEST_BALL, 15
+# 216 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	closemessage
+# 218 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	setflag FLAG_CAUGHT_ALL_MONS_ACRISIA_CITY
+	goto AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+
 AcrisiaCity_PokemonCenter_EventScript_PkmnCenterNurse_Text_0:
 # 7 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
 	.string "Nurse$"
@@ -409,3 +461,29 @@ Common_PokemonCenter_EventScript_CandleSign_Text_0:
 	.string "almost smells like a Flabébé flower!\p"
 	.string "The sign above is advertising the\n"
 	.string "Pokémon Center Inn services.$"
+
+AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0:
+# 193 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	.string "Uni. Student$"
+
+AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1:
+# 197 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	.string "Your Pokédex data is amazing! Now we\n"
+	.string "know more about the local ecosystem,\l"
+	.string "thanks to you.$"
+
+AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2:
+# 202 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	.string "Chaire (Hyeh-rei)! I'm a student from\n"
+	.string "the Acrisia University.\p"
+	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
+	.string "Pokémon{COLOR DARK_GRAY} found in Acrisia City. If you've\l"
+	.string "caught all the Pokémon here, please let\l"
+	.string "me know.$"
+
+AcrisiaCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3:
+# 210 "data/maps/AcrisiaCity_PokemonCenter/scripts.pory"
+	.string "Incredible! You've caught all the\n"
+	.string "Pokémon that I requested in the area!\p"
+	.string "Here's a reward from the University.\n"
+	.string "Keep up your hard work!$"
