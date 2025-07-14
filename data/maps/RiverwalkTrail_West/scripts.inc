@@ -29,15 +29,15 @@ RiverwalkTrail_West_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 14 "data/maps/RiverwalkTrail_West/scripts.pory"
 	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12
 # 15 "data/maps/RiverwalkTrail_West/scripts.pory"
-	setobjectaswildencounter 10, ENCOUNTER_LAND
+	setobjectaswildencounter 8, ENCOUNTER_LAND
 # 16 "data/maps/RiverwalkTrail_West/scripts.pory"
-	setobjectaswildencounter 11, ENCOUNTER_LAND
+	setobjectaswildencounter 9, ENCOUNTER_LAND
 # 17 "data/maps/RiverwalkTrail_West/scripts.pory"
-	setobjectaswildencounter 12, ENCOUNTER_LAND
+	setobjectaswildencounter 10, ENCOUNTER_LAND
 # 18 "data/maps/RiverwalkTrail_West/scripts.pory"
-	setobjectaswildencounter 13, ENCOUNTER_LAND
+	setobjectaswildencounter 11, ENCOUNTER_LAND
 # 19 "data/maps/RiverwalkTrail_West/scripts.pory"
-	setobjectaswildencounter 14, ENCOUNTER_LAND
+	setobjectaswildencounter 12, ENCOUNTER_LAND
 	return
 
 

@@ -298,9 +298,9 @@
       "x": 69,
       "y": 22,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 2,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "FrescoIsles_EventScript_Camper",
@@ -411,32 +411,6 @@
       "flag": "FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_VAR_5",
-      "x": 72,
-      "y": 24,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_IN_GRASS",
-      "movement_range_x": 2,
-      "movement_range_y": 2,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Overworld_EventScript_WildPokemon",
-      "flag": "FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_VAR_6",
-      "x": 76,
-      "y": 25,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_IN_GRASS",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Overworld_EventScript_WildPokemon",
-      "flag": "FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
       "x": 15,
       "y": 24,
@@ -513,6 +487,149 @@
       "trainer_sight_or_berry_tree_id": "ITEM_RAZOR_CLAW",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_VULCAI_SEA_RAZOR_CLAW"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 71,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 75,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 78,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 68,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ARTIST",
+      "x": 71,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FrescoIsles_EventScript_TheatreSpectator_Artist",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+      "x": 76,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FrescoIsles_EventScript_TheatreSpectator_Performer",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MUSE_THALIA",
+      "x": 71,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAICHU_ALOLAN)",
+      "x": 72,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MUSE_MELPOMENE",
+      "x": 75,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STEELIX)",
+      "x": 74,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+      "x": 39,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FrescoIsles_EventScript_ManBlockingGym",
+      "flag": "FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES"
     }
   ],
   "warp_events": [
@@ -522,10 +639,85 @@
       "elevation": 0,
       "dest_map": "MAP_FRESCO_ISLES_POKEMON_CENTER",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_FRESCO_ISLES_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_FRESCO_ISLES_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_FRESCO_ISLES_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_FRESCO_ISLES_HOUSE3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 61,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_FRESCO_ISLES_TAILOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 75,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_FRESCO_ISLES_ABANDONED_LAB",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_FRESCO_ISLES_GYM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 72,
+      "y": 20,
+      "elevation": 0,
+      "var": "FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES",
+      "var_value": "0",
+      "script": "FrescoIsles_EventScript_TwinMusesAtTheatreEvent"
+    },
+    {
+      "type": "trigger",
+      "x": 73,
+      "y": 20,
+      "elevation": 0,
+      "var": "FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES",
+      "var_value": "0",
+      "script": "FrescoIsles_EventScript_TwinMusesAtTheatreEvent"
+    },
+    {
+      "type": "trigger",
+      "x": 74,
+      "y": 20,
+      "elevation": 0,
+      "var": "FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES",
+      "var_value": "0",
+      "script": "FrescoIsles_EventScript_TwinMusesAtTheatreEvent"
+    }
   ],
   "bg_events": [
     {
@@ -559,6 +751,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FrescoIsles_EventScript_DirectionSign"
+    },
+    {
+      "type": "sign",
+      "x": 68,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FrescoIsles_EventScript_TheatreSign"
+    },
+    {
+      "type": "sign",
+      "x": 78,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FrescoIsles_EventScript_TheatreSign"
     }
   ]
 }

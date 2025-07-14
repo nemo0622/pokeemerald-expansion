@@ -70,7 +70,7 @@
 #define ITEM_MAX_ELIXER ITEM_MAX_ELIXIR // Pre-Gen III name
 #define ITEM_BERRY_JUICE 53
 #define ITEM_SACRED_ASH 54
-#define ITEM_SWEET_HEART 55
+#define ITEM_BOX_OF_CHOCOLATE 55
 #define ITEM_MAX_HONEY 56
 
 // Regional Specialties

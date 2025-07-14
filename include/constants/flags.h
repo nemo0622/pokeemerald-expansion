@@ -657,10 +657,10 @@
 
 #define FLAG_UNLOCKED_WILD_NATURE_VIEW          0x264 // Marked when Rania Chimera event completed in Péntepetal City
 #define FLAG_HIDE_FLOETTE_ETERNAL_PENTEPETAL    0x265 // hides floette eternal form in pentepetal house 5
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
+#define FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES       0x266 // Hides NPC blocking Gym and the Twin Muses battling on the Theatre in the Fresco Isles
+#define FLAG_BEAT_TRAINER_WITH_CHOCOLATES       0x267 // Used during Box of Chocolates quest in Fresco Isles
+#define FLAG_SPOKE_TO_FRESCO_ISLES_TAILOR       0x268 // Used by F.I. Tailor's explanation
+#define FLAG_GOT_STEEL_WING_FROM_RANIA          0x269 // Set after getting Steel Wing TM
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag

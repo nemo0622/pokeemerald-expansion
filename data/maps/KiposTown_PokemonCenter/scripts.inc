@@ -113,6 +113,58 @@ KiposTown_PokemonCenter_EventScript_PerformerF::
 	end
 
 
+KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck::
+# 76 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	lock
+# 77 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	faceplayer
+# 78 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	speakername KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 80 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	goto_if_set FLAG_CAUGHT_ALL_MONS_KIPOS_TOWN, KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_2
+# 87 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	msgbox KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2
+# 88 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	closemessage
+# 89 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	special CheckRouteCaptureProgress
+# 90 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_5
+KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_1:
+# 107 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	release
+	end
+
+KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_2:
+# 82 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	msgbox KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1
+# 83 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	closemessage
+	goto KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_5:
+# 92 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	delay 20
+# 93 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	emote VAR_LAST_TALKED, EMOTE_EXCLAM
+# 94 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	speakername KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 95 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	msgbox KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3
+# 96 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	closemessage
+# 97 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	delay 5
+# 100 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	giveitem ITEM_LEFTOVERS
+# 101 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	closemessage
+# 103 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	setflag FLAG_CAUGHT_ALL_MONS_KIPOS_TOWN
+	goto KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+
 KiposTown_PokemonCenter_EventScript_PkmnCenterNurse_Text_0:
 # 7 "data/maps/KiposTown_PokemonCenter/scripts.pory"
 	.string "Nurse$"
@@ -169,3 +221,29 @@ KiposTown_PokemonCenter_EventScript_PerformerF_Text_1:
 	.string "fossils... Kipos Town really is the\l"
 	.string "center of ecology in Ilios. Maybe I'll\l"
 	.string "write a song about it!$"
+
+KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0:
+# 78 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	.string "Uni. Student$"
+
+KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1:
+# 82 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	.string "Your Pokédex data is amazing! Now we\n"
+	.string "know more about the local ecosystem,\l"
+	.string "thanks to you.$"
+
+KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2:
+# 87 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	.string "Chaire! I'm a student from the Acrisia\n"
+	.string "University.\p"
+	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
+	.string "Pokémon{COLOR DARK_GRAY} found in Kipos Town. If you've\l"
+	.string "caught all the Pokémon here, please let\l"
+	.string "me know.$"
+
+KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3:
+# 95 "data/maps/KiposTown_PokemonCenter/scripts.pory"
+	.string "Incredible! You've caught all the\n"
+	.string "Pokémon that I requested in the area!\p"
+	.string "Here's a reward from the University.\n"
+	.string "Keep up your hard work!$"

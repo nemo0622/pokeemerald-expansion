@@ -50,8 +50,8 @@
     F(THIEF) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
-    F(SNATCH) \
-    F(OVERHEAT) \
+    F(BULLDOZE) \
+    F(DEEPWATER_CURSE) \
     F(WILL_O_WISP) \
     F(FROST_BREATH) \
     F(POWER_UP_PUNCH) \

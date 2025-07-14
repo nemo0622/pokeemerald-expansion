@@ -1,0 +1,25 @@
+mapscripts FrescoIsles_House1_MapScripts {}
+
+script FrescoIsles_House1_EventScript_RunningTriathlete
+{
+    lock
+    faceplayer
+    speakername("Triathlete")
+    msgbox(format("It gets sweltering hot here. My Alolan-breed Sandslash helps keep the house cool."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_House1_EventScript_Sandslash
+{
+    lock
+    faceplayer
+    speakername("Sandslash")
+    playmoncry(SPECIES_SANDSLASH_ALOLAN, CRY_MODE_NORMAL)
+    msgbox("Creeh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

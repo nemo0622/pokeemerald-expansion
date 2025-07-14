@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Items can restore a battler's HP by a fixed amount")
     PARAMETRIZE { item = ITEM_MOOMOO_MILK; hp = 100; }
     PARAMETRIZE { item = ITEM_ENERGY_POWDER; hp = I_HEALTH_RECOVERY >= GEN_7 ? 60 : 50; }
     PARAMETRIZE { item = ITEM_ENERGY_ROOT; hp = I_HEALTH_RECOVERY >= GEN_7 ? 120 : 200; }
-    PARAMETRIZE { item = ITEM_SWEET_HEART; hp = 20; }
+    PARAMETRIZE { item = ITEM_BOX_OF_CHOCOLATE; hp = 20; }
     PARAMETRIZE { item = ITEM_ORAN_BERRY; hp = 10; }
 #if I_SITRUS_BERRY_HEAL < GEN_4
     PARAMETRIZE { item = ITEM_SITRUS_BERRY; hp = 30; }

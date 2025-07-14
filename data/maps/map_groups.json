@@ -327,7 +327,14 @@
     "FortreeCity_House4",
     "FortreeCity_House5",
     "FortreeCity_DecorationShop",
-    "FrescoIsles_PokemonCenter"
+    "FrescoIsles_PokemonCenter",
+    "FrescoIsles_Mart",
+    "FrescoIsles_House1",
+    "FrescoIsles_House2",
+    "FrescoIsles_House3",
+    "FrescoIsles_Tailor",
+    "FrescoIsles_AbandonedLab",
+    "FrescoIsles_Gym"
   ],
   "gMapGroup_IndoorLilycove": [
     "LilycoveCity_CoveLilyMotel_1F",

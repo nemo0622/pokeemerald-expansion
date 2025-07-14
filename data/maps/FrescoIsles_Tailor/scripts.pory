@@ -1,0 +1,176 @@
+mapscripts FrescoIsles_Tailor_MapScripts {}
+
+script FrescoIsles_Tailor_EventScript_Tailor
+{
+    lock
+    faceplayer
+    speakername("Tailor")
+
+    if(!flag(FLAG_SPOKE_TO_FRESCO_ISLES_TAILOR))
+    {
+        msgbox(format("Welcome, welcome. I can tell by your clothes... You're a Trainer, yes? I make {COLOR GREEN}special Outfits{COLOR DARK_GRAY} based on the {COLOR GREEN}fashion of other Regions{COLOR DARK_GRAY}, for those willing to meet my conditions.\p To unlock the Outfit of another Region, you must {COLOR GREEN}catch the Starter Pokémon{COLOR DARK_GRAY} native to those areas. Come back to me as you fill your Pokédex, and I will decide if you're worthy for my Outfits."))
+        closemessage
+        setflag(FLAG_SPOKE_TO_FRESCO_ISLES_TAILOR)
+        release
+        end
+    }
+
+    // Normal speaking to her - check through each Regional outfit she can unlock. If it's unlocked, pass by it.
+    // If not, check the Pokédex to see if the corresponding starters have been caught. If they've been caught,
+    // then unlock that Outfit and continue on.
+
+    msgbox(format("Welcome back, Trainer. Have you been {COLOR GREEN}collecting Starter Pokémon Trios{COLOR DARK_GRAY}? Let me appraise your collection..."))
+    closemessage
+    delay(30)
+
+    // Johto Fashion check
+    speakername("Tailor")
+    getcaughtmon(SPECIES_CHIKORITA)
+    copyvar(VAR_TEMP_A, VAR_RESULT)
+    getcaughtmon(SPECIES_TOTODILE)
+    copyvar(VAR_TEMP_B, VAR_RESULT)
+    getcaughtmon(SPECIES_CYNDAQUIL)
+    copyvar(VAR_TEMP_C, VAR_RESULT)
+    if(var(VAR_TEMP_A) == FALSE || var(VAR_TEMP_B) == FALSE || var(VAR_TEMP_C) == FALSE)
+    {
+        msgbox(format("You're missing part of the {COLOR GREEN}Johto Region{COLOR DARK_GRAY} Starter Trio."))
+        closemessage
+        delay(30)
+    }
+    else
+    {
+        checkoutfitflag(OUTFIT_JOHTO_FASHION)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            msgbox(format("It seems that you've caught {COLOR GREEN}all Johto Starter Pokémon{COLOR DARK_GRAY}! Here, I've assembled this Special Outfit for you."))
+            closemessage
+            delay(5)
+            unlockoutfit(OUTFIT_JOHTO_FASHION)
+            delay(30)
+        }
+        else
+        {
+            msgbox(format("You've already unlocked the {COLOR GREEN}Johto Outfit{COLOR DARK_GRAY}. Next on the list is..."))
+            closemessage
+            delay(30)
+        }
+    }
+
+    // Kalos Fashion check
+    speakername("Tailor")
+    getcaughtmon(SPECIES_CHESPIN)
+    copyvar(VAR_TEMP_A, VAR_RESULT)
+    getcaughtmon(SPECIES_FROAKIE)
+    copyvar(VAR_TEMP_B, VAR_RESULT)
+    getcaughtmon(SPECIES_CYNDAQUIL)
+    copyvar(VAR_TEMP_C, VAR_RESULT)
+    if(var(VAR_TEMP_A) == FALSE || var(VAR_TEMP_B) == FALSE || var(VAR_TEMP_C) == FALSE)
+    {
+        msgbox(format("You're missing part of the {COLOR GREEN}Kalos Region{COLOR DARK_GRAY} Starter Trio."))
+        closemessage
+        delay(30)
+    }
+    else
+    {
+        checkoutfitflag(OUTFIT_KALOS_FASHION)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            msgbox(format("It seems that you've caught {COLOR GREEN}all Kalos Starter Pokémon{COLOR DARK_GRAY}! Here, I've assembled this Special Outfit for you."))
+            closemessage
+            delay(5)
+            unlockoutfit(OUTFIT_KALOS_FASHION)
+            delay(30)
+        }
+        else
+        {
+            msgbox(format("You've already unlocked the {COLOR GREEN}Kalos Outfit{COLOR DARK_GRAY}. Next on the list is..."))
+            closemessage
+            delay(30)
+        }
+    }
+
+    // Alolan Fashion check
+    speakername("Tailor")
+    getcaughtmon(SPECIES_ROWLET)
+    copyvar(VAR_TEMP_A, VAR_RESULT)
+    getcaughtmon(SPECIES_POPPLIO)
+    copyvar(VAR_TEMP_B, VAR_RESULT)
+    getcaughtmon(SPECIES_LITTEN)
+    copyvar(VAR_TEMP_C, VAR_RESULT)
+    if(var(VAR_TEMP_A) == FALSE || var(VAR_TEMP_B) == FALSE || var(VAR_TEMP_C) == FALSE)
+    {
+        msgbox(format("You're missing part of the {COLOR GREEN}Alola Region{COLOR DARK_GRAY} Starter Trio."))
+        closemessage
+        delay(30)
+    }
+    else
+    {
+        checkoutfitflag(OUTFIT_ALOLA_FASHION)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            msgbox(format("It seems that you've caught {COLOR GREEN}all Alolan Starter Pokémon{COLOR DARK_GRAY}! Here, I've assembled this Special Outfit for you."))
+            closemessage
+            delay(5)
+            unlockoutfit(OUTFIT_ALOLA_FASHION)
+            delay(30)
+        }
+        else
+        {
+            msgbox(format("You've already unlocked the {COLOR GREEN}Alolan Outfit{COLOR DARK_GRAY}. Next on the list is..."))
+            closemessage
+            delay(30)
+        }
+    }
+
+    // Paldean Fashion check
+    speakername("Tailor")
+    getcaughtmon(SPECIES_SPRIGATITO)
+    copyvar(VAR_TEMP_A, VAR_RESULT)
+    getcaughtmon(SPECIES_QUAXLY)
+    copyvar(VAR_TEMP_B, VAR_RESULT)
+    getcaughtmon(SPECIES_FUECOCO)
+    copyvar(VAR_TEMP_C, VAR_RESULT)
+    if(var(VAR_TEMP_A) == FALSE || var(VAR_TEMP_B) == FALSE || var(VAR_TEMP_C) == FALSE)
+    {
+        msgbox(format("You're missing part of the {COLOR GREEN}Paldea Region{COLOR DARK_GRAY} Starter Trio."))
+        closemessage
+        delay(30)
+    }
+    else
+    {
+        checkoutfitflag(OUTFIT_PALDEA_FASHION)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            msgbox(format("It seems that you've caught {COLOR GREEN}all Paldean Starter Pokémon{COLOR DARK_GRAY}! Here, I've assembled this Special Outfit for you."))
+            closemessage
+            delay(5)
+            unlockoutfit(OUTFIT_PALDEA_FASHION)
+            delay(30)
+        }
+        else
+        {
+            msgbox(format("You've already unlocked the {COLOR GREEN}Paldean Outfit{COLOR DARK_GRAY}."))
+            closemessage
+            delay(30)
+        }
+    }
+
+    speakername("Tailor")
+    msgbox(format("That's my full list of Special Outfits that would fit you. Come again soon."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_Tailor_EventScript_Yamper
+{
+    lock
+    faceplayer
+    speakername("Yamper")
+    playmoncry(SPECIES_YAMPER, CRY_MODE_NORMAL)
+    msgbox("Arf arf!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

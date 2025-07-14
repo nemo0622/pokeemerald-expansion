@@ -1798,6 +1798,9 @@ const u8 gText_SideQuestName_51[] = _("A Winning Painting");
 const u8 gText_SideQuestName_52[] = _("The Big Ask");
 const u8 gText_SideQuestName_53[] = _("The Long-Lost Friend");
 const u8 gText_SideQuestName_54[] = _("Perfect Paint");
+const u8 gText_SideQuestName_55[] = _("A Family Peace Offering");
+const u8 gText_SideQuestName_56[] = _("The First Lazarus Taxon");
+const u8 gText_SideQuestName_57[] = _("Team Chimera's Beast");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Look for the deliveryman\nwith a flipped cart.");
@@ -1854,6 +1857,9 @@ const u8 gText_SideQuestDesc_51[] = _("Show the Artist that your\nPokémon won a
 const u8 gText_SideQuestDesc_52[] = _("Bring a Hisuian Arcanine\nDoll to help a woman\nsurprise her girlfriend.");
 const u8 gText_SideQuestDesc_53[] = _("Give 10 Wishing Stars to the\nKalosian family to help\nbring back a lost Pokémon.");
 const u8 gText_SideQuestDesc_54[] = _("Bring 1 of each colored\nShard to the Artist\nto make his paint.");
+const u8 gText_SideQuestDesc_55[] = _("Buy a Box of Chocolate from\nthe Poké Mart to calm the\nbattling Gym Leaders.");
+const u8 gText_SideQuestDesc_56[] = _("Show the Pokédex Entry of\nRelicanth, a rare Lazarus Taxon,\nto a Battle Girl.");
+const u8 gText_SideQuestDesc_57[] = _("Bring a dozen Sitrus Berries\nto the Ex-Scientist to\nfeed a Type: Null.");
 
 //completed quest description
 // NOTE: Probably never seen now that I only make Active quests seen lol!
@@ -1943,6 +1949,9 @@ const u8 gText_SideQuestMap51[] = _("Péntepetal City"); // QUEST_SHOW_RIBBON_TO
 const u8 gText_SideQuestMap52[] = _("Péntepetal City (House)"); // QUEST_SHOW_RIBBON_TO_ARTIST
 const u8 gText_SideQuestMap53[] = _("Péntepetal City (House)"); // QUEST_ETERNAL_FLOETTE_PLOT
 const u8 gText_SideQuestMap54[] = _("Fresco Isles"); // QUEST_SHARDS_FOR_ARTIST
+const u8 gText_SideQuestMap55[] = _("Fresco Isles"); // QUEST_CALM_TWIN_MUSES
+const u8 gText_SideQuestMap56[] = _("Fresco Isles (House)"); // QUEST_FIND_RELICANTH
+const u8 gText_SideQuestMap57[] = _("Fresco Isles (Abandoned Lab)"); // QUEST_BRING_BERRIES_TO_TYPE_NULL
 
 //subquests
 // erm unused now oopsies

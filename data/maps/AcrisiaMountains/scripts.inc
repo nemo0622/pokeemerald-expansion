@@ -143,244 +143,250 @@ AcrisiaMountains_EventScript_OuraniTraining::
 # 94 "data/maps/AcrisiaMountains/scripts.pory"
 	closemessage
 # 95 "data/maps/AcrisiaMountains/scripts.pory"
+	delay 5
+# 96 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_OuraniTraining_Text_2
+# 97 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 98 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 
 AcrisiaMountains_EventScript_Larvitar::
-# 101 "data/maps/AcrisiaMountains/scripts.pory"
-	lock
-# 102 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_Larvitar_Text_0
-# 103 "data/maps/AcrisiaMountains/scripts.pory"
-	playmoncry SPECIES_LARVITAR, CRY_MODE_NORMAL
 # 104 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_Larvitar_Text_1
+	lock
 # 105 "data/maps/AcrisiaMountains/scripts.pory"
-	waitmoncry
+	speakername AcrisiaMountains_EventScript_Larvitar_Text_0
 # 106 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
+	playmoncry SPECIES_LARVITAR, CRY_MODE_NORMAL
 # 107 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_Larvitar_Text_1
+# 108 "data/maps/AcrisiaMountains/scripts.pory"
+	waitmoncry
+# 109 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 110 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 
 AcrisiaMountains_EventScript_Boy3::
-# 113 "data/maps/AcrisiaMountains/scripts.pory"
-	lock
-# 114 "data/maps/AcrisiaMountains/scripts.pory"
-	faceplayer
-# 115 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_Boy3_Text_0
 # 116 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_Boy3_Text_1
+	lock
 # 117 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
+	faceplayer
 # 118 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_Boy3_Text_0
+# 119 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_Boy3_Text_1
+# 120 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 121 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 
 AcrisiaMountains_EventScript_MachoBraceMan::
-# 124 "data/maps/AcrisiaMountains/scripts.pory"
-	lock
-# 125 "data/maps/AcrisiaMountains/scripts.pory"
-	faceplayer
-# 126 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_MachoBraceMan_Text_0
 # 127 "data/maps/AcrisiaMountains/scripts.pory"
-	goto_if_set FLAG_GOT_MACHO_BRACE, AcrisiaMountains_EventScript_MachoBraceMan_2
-# 134 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_MachoBraceMan_Text_2
-# 135 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
-# 136 "data/maps/AcrisiaMountains/scripts.pory"
-	giveitem ITEM_MACHO_BRACE
-# 137 "data/maps/AcrisiaMountains/scripts.pory"
+	lock
+# 128 "data/maps/AcrisiaMountains/scripts.pory"
+	faceplayer
+# 129 "data/maps/AcrisiaMountains/scripts.pory"
 	speakername AcrisiaMountains_EventScript_MachoBraceMan_Text_0
+# 130 "data/maps/AcrisiaMountains/scripts.pory"
+	goto_if_set FLAG_GOT_MACHO_BRACE, AcrisiaMountains_EventScript_MachoBraceMan_2
+# 137 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_MachoBraceMan_Text_2
 # 138 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_MachoBraceMan_Text_3
-# 139 "data/maps/AcrisiaMountains/scripts.pory"
 	closemessage
+# 139 "data/maps/AcrisiaMountains/scripts.pory"
+	giveitem ITEM_MACHO_BRACE
 # 140 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_MachoBraceMan_Text_0
+# 141 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_MachoBraceMan_Text_3
+# 142 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 143 "data/maps/AcrisiaMountains/scripts.pory"
 	setflag FLAG_GOT_MACHO_BRACE
 AcrisiaMountains_EventScript_MachoBraceMan_1:
-# 142 "data/maps/AcrisiaMountains/scripts.pory"
+# 145 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 AcrisiaMountains_EventScript_MachoBraceMan_2:
-# 129 "data/maps/AcrisiaMountains/scripts.pory"
+# 132 "data/maps/AcrisiaMountains/scripts.pory"
 	msgbox AcrisiaMountains_EventScript_MachoBraceMan_Text_1
-# 130 "data/maps/AcrisiaMountains/scripts.pory"
+# 133 "data/maps/AcrisiaMountains/scripts.pory"
 	closemessage
 	goto AcrisiaMountains_EventScript_MachoBraceMan_1
 
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Tyre::
-# 148 "data/maps/AcrisiaMountains/scripts.pory"
-	trainerbattle_single TRAINER_ACRISIAMTNS_TYRE, AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreDefeat
-# 149 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Tyre_Text_0
-# 150 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Tyre_Text_1
 # 151 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
+	trainerbattle_single TRAINER_ACRISIAMTNS_TYRE, AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreDefeat
 # 152 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Tyre_Text_0
+# 153 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Tyre_Text_1
+# 154 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 155 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Elissa::
-# 166 "data/maps/AcrisiaMountains/scripts.pory"
-	trainerbattle_single TRAINER_ACRISIAMTNS_ELISSA, AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaDefeat
-# 167 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Elissa_Text_0
-# 168 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Elissa_Text_1
 # 169 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
+	trainerbattle_single TRAINER_ACRISIAMTNS_ELISSA, AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaDefeat
 # 170 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Elissa_Text_0
+# 171 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Elissa_Text_1
+# 172 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 173 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Ulf::
-# 184 "data/maps/AcrisiaMountains/scripts.pory"
-	trainerbattle_single TRAINER_ACRISIAMTNS_ULF, AcrisiaMountains_Text_Trainer_AcrisiaMtns_UlfIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_UlfDefeat
-# 185 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Ulf_Text_0
-# 186 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Ulf_Text_1
 # 187 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
+	trainerbattle_single TRAINER_ACRISIAMTNS_ULF, AcrisiaMountains_Text_Trainer_AcrisiaMtns_UlfIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_UlfDefeat
 # 188 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Ulf_Text_0
+# 189 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Ulf_Text_1
+# 190 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 191 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Jamma::
-# 202 "data/maps/AcrisiaMountains/scripts.pory"
-	trainerbattle_single TRAINER_ACRISIAMTNS_JAMMA, AcrisiaMountains_Text_Trainer_AcrisiaMtns_JammaIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_JammaDefeat
-# 203 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Jamma_Text_0
-# 204 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Jamma_Text_1
 # 205 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
+	trainerbattle_single TRAINER_ACRISIAMTNS_JAMMA, AcrisiaMountains_Text_Trainer_AcrisiaMtns_JammaIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_JammaDefeat
 # 206 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Jamma_Text_0
+# 207 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Jamma_Text_1
+# 208 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 209 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Greg::
-# 220 "data/maps/AcrisiaMountains/scripts.pory"
-	trainerbattle_single TRAINER_ACRISIAMTNS_GREG, AcrisiaMountains_Text_Trainer_AcrisiaMtns_GregIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_GregDefeat
-# 221 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Greg_Text_0
-# 222 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Greg_Text_1
 # 223 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
+	trainerbattle_single TRAINER_ACRISIAMTNS_GREG, AcrisiaMountains_Text_Trainer_AcrisiaMtns_GregIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_GregDefeat
 # 224 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Greg_Text_0
+# 225 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Greg_Text_1
+# 226 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 227 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 
 AcrisiaMountains_EventScript_BugCatcherBoy::
-# 238 "data/maps/AcrisiaMountains/scripts.pory"
-	lock
-# 239 "data/maps/AcrisiaMountains/scripts.pory"
-	faceplayer
-# 240 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_BugCatcherBoy_Text_0
 # 241 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_BugCatcherBoy_Text_1
+	lock
 # 242 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
+	faceplayer
 # 243 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_BugCatcherBoy_Text_0
+# 244 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_BugCatcherBoy_Text_1
+# 245 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 246 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Hugh::
-# 249 "data/maps/AcrisiaMountains/scripts.pory"
-	trainerbattle_single TRAINER_ACRISIAMTNS_HUGH, AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughDefeat
-# 250 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Hugh_Text_0
-# 251 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Hugh_Text_1
 # 252 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
+	trainerbattle_single TRAINER_ACRISIAMTNS_HUGH, AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughIntro, AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughDefeat
 # 253 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Hugh_Text_0
+# 254 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Hugh_Text_1
+# 255 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 256 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 
 AcrisiaMountains_EventScript_LassExploringRuins::
-# 267 "data/maps/AcrisiaMountains/scripts.pory"
-	lock
-# 268 "data/maps/AcrisiaMountains/scripts.pory"
-	faceplayer
-# 269 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_LassExploringRuins_Text_0
 # 270 "data/maps/AcrisiaMountains/scripts.pory"
+	lock
+# 271 "data/maps/AcrisiaMountains/scripts.pory"
+	faceplayer
+# 272 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_LassExploringRuins_Text_0
+# 273 "data/maps/AcrisiaMountains/scripts.pory"
 	goto_if_unset FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS, AcrisiaMountains_EventScript_LassExploringRuins_2
-# 303 "data/maps/AcrisiaMountains/scripts.pory"
+# 306 "data/maps/AcrisiaMountains/scripts.pory"
 	msgbox AcrisiaMountains_EventScript_LassExploringRuins_Text_3
-# 304 "data/maps/AcrisiaMountains/scripts.pory"
+# 307 "data/maps/AcrisiaMountains/scripts.pory"
 	closemessage
 AcrisiaMountains_EventScript_LassExploringRuins_1:
-# 306 "data/maps/AcrisiaMountains/scripts.pory"
+# 309 "data/maps/AcrisiaMountains/scripts.pory"
 	release
 	end
 
 AcrisiaMountains_EventScript_LassExploringRuins_2:
-# 272 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_LassExploringRuins_Text_1
-# 273 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
 # 275 "data/maps/AcrisiaMountains/scripts.pory"
-	getcaughtmon SPECIES_BALTOY
+	msgbox AcrisiaMountains_EventScript_LassExploringRuins_Text_1
 # 276 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 278 "data/maps/AcrisiaMountains/scripts.pory"
+	getcaughtmon SPECIES_BALTOY
+# 279 "data/maps/AcrisiaMountains/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq AcrisiaMountains_EventScript_LassExploringRuins_5
-# 293 "data/maps/AcrisiaMountains/scripts.pory"
+# 296 "data/maps/AcrisiaMountains/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_BALTOY_DUSK_STONE
-# 294 "data/maps/AcrisiaMountains/scripts.pory"
+# 297 "data/maps/AcrisiaMountains/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AcrisiaMountains_EventScript_LassExploringRuins_8
 	goto AcrisiaMountains_EventScript_LassExploringRuins_1
 
 AcrisiaMountains_EventScript_LassExploringRuins_5:
-# 278 "data/maps/AcrisiaMountains/scripts.pory"
-	delay 30
-# 279 "data/maps/AcrisiaMountains/scripts.pory"
-	applymovement 20, Common_Movement_ExclamationMark
-# 280 "data/maps/AcrisiaMountains/scripts.pory"
-	waitmovement 0
 # 281 "data/maps/AcrisiaMountains/scripts.pory"
-	delay 20
+	delay 30
 # 282 "data/maps/AcrisiaMountains/scripts.pory"
-	speakername AcrisiaMountains_EventScript_LassExploringRuins_Text_0
+	applymovement 20, Common_Movement_ExclamationMark
 # 283 "data/maps/AcrisiaMountains/scripts.pory"
-	msgbox AcrisiaMountains_EventScript_LassExploringRuins_Text_2
+	waitmovement 0
 # 284 "data/maps/AcrisiaMountains/scripts.pory"
-	closemessage
-# 285 "data/maps/AcrisiaMountains/scripts.pory"
-	giveitem ITEM_DUSK_STONE
-# 286 "data/maps/AcrisiaMountains/scripts.pory"
-	setflag FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS
-# 288 "data/maps/AcrisiaMountains/scripts.pory"
 	delay 20
+# 285 "data/maps/AcrisiaMountains/scripts.pory"
+	speakername AcrisiaMountains_EventScript_LassExploringRuins_Text_0
+# 286 "data/maps/AcrisiaMountains/scripts.pory"
+	msgbox AcrisiaMountains_EventScript_LassExploringRuins_Text_2
+# 287 "data/maps/AcrisiaMountains/scripts.pory"
+	closemessage
+# 288 "data/maps/AcrisiaMountains/scripts.pory"
+	giveitem ITEM_DUSK_STONE
 # 289 "data/maps/AcrisiaMountains/scripts.pory"
+	setflag FLAG_SHOWED_LASS_BALTOY_IN_MOUNTAINS
+# 291 "data/maps/AcrisiaMountains/scripts.pory"
+	delay 20
+# 292 "data/maps/AcrisiaMountains/scripts.pory"
 	completequest QUEST_BALTOY_DUSK_STONE
 	goto AcrisiaMountains_EventScript_LassExploringRuins_1
 
 AcrisiaMountains_EventScript_LassExploringRuins_8:
-# 296 "data/maps/AcrisiaMountains/scripts.pory"
+# 299 "data/maps/AcrisiaMountains/scripts.pory"
 	delay 20
-# 297 "data/maps/AcrisiaMountains/scripts.pory"
+# 300 "data/maps/AcrisiaMountains/scripts.pory"
 	startquest QUEST_BALTOY_DUSK_STONE
 	goto AcrisiaMountains_EventScript_LassExploringRuins_1
 
@@ -443,40 +449,46 @@ AcrisiaMountains_EventScript_OuraniTraining_Text_0:
 
 AcrisiaMountains_EventScript_OuraniTraining_Text_1:
 # 93 "data/maps/AcrisiaMountains/scripts.pory"
-	.string "Huff huff huff...\p"
-	.string "Always training, always working... Come\n"
-	.string "on Larvitar, help me get stronger!$"
+	.string "C'mon, Larvitar! There's a whole new\n"
+	.string "batch of University Students coming\l"
+	.string "through the Gym Challenge. We need to\l"
+	.string "be strong enough to give 'em a real\l"
+	.string "battle!$"
+
+AcrisiaMountains_EventScript_OuraniTraining_Text_2:
+# 96 "data/maps/AcrisiaMountains/scripts.pory"
+	.string "She's too focused on training to move...$"
 
 AcrisiaMountains_EventScript_Larvitar_Text_0:
-# 102 "data/maps/AcrisiaMountains/scripts.pory"
+# 105 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Larvitar$"
 
 AcrisiaMountains_EventScript_Larvitar_Text_1:
-# 104 "data/maps/AcrisiaMountains/scripts.pory"
+# 107 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Graahhh!$"
 
 AcrisiaMountains_EventScript_Boy3_Text_0:
-# 115 "data/maps/AcrisiaMountains/scripts.pory"
+# 118 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Fit Man$"
 
 AcrisiaMountains_EventScript_Boy3_Text_1:
-# 116 "data/maps/AcrisiaMountains/scripts.pory"
+# 119 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Climbing this mountain is good exercise!\n"
 	.string "But wow, there are so many trainers\l"
 	.string "further on. I hear shouts and battles\l"
 	.string "from up in the caves!$"
 
 AcrisiaMountains_EventScript_MachoBraceMan_Text_0:
-# 126 "data/maps/AcrisiaMountains/scripts.pory"
+# 129 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Muscleman$"
 
 AcrisiaMountains_EventScript_MachoBraceMan_Text_1:
-# 129 "data/maps/AcrisiaMountains/scripts.pory"
+# 132 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Use that Macho Brace ta get yer\n"
 	.string "Pokémon nice 'n strong!$"
 
 AcrisiaMountains_EventScript_MachoBraceMan_Text_2:
-# 134 "data/maps/AcrisiaMountains/scripts.pory"
+# 137 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Chaire, little buddy! Ya think ya can\n"
 	.string "swim up that waterfall? I've been tryin'\l"
 	.string "every day.\p"
@@ -485,87 +497,87 @@ AcrisiaMountains_EventScript_MachoBraceMan_Text_2:
 	.string "with somethin'.$"
 
 AcrisiaMountains_EventScript_MachoBraceMan_Text_3:
-# 138 "data/maps/AcrisiaMountains/scripts.pory"
+# 141 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Pokémon holding that Macho Brace get\n"
 	.string "nice 'n strong! I guess it doesn't work\l"
 	.string "on people, though.$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Tyre_Text_0:
-# 149 "data/maps/AcrisiaMountains/scripts.pory"
+# 152 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Tyre$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Tyre_Text_1:
-# 150 "data/maps/AcrisiaMountains/scripts.pory"
+# 153 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Pokémon have plenty of skills outside\n"
 	.string "of battle. For example, to reach this\l"
 	.string "area your Pokémon had to be able to cut\l"
 	.string "through those shrubs.$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Elissa_Text_0:
-# 167 "data/maps/AcrisiaMountains/scripts.pory"
+# 170 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Elissa$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Elissa_Text_1:
-# 168 "data/maps/AcrisiaMountains/scripts.pory"
+# 171 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "I've got to replace Hypnosis in\n"
 	.string "Drowzee's moveset.$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Ulf_Text_0:
-# 185 "data/maps/AcrisiaMountains/scripts.pory"
+# 188 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Ulf$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Ulf_Text_1:
-# 186 "data/maps/AcrisiaMountains/scripts.pory"
+# 189 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Look kid, I'm not gonna be the one to\n"
 	.string "fix up the rails. I just mean that\l"
 	.string "someone should... someone else, that is!$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Jamma_Text_0:
-# 203 "data/maps/AcrisiaMountains/scripts.pory"
+# 206 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Jamma$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Jamma_Text_1:
-# 204 "data/maps/AcrisiaMountains/scripts.pory"
+# 207 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "I'm always up for a battle, but my\n"
 	.string "Pokémon aren't. They just need more\l"
 	.string "training!$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Greg_Text_0:
-# 221 "data/maps/AcrisiaMountains/scripts.pory"
+# 224 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Greg$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Greg_Text_1:
-# 222 "data/maps/AcrisiaMountains/scripts.pory"
+# 225 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "I'm hoping to find more rare Pokémon up\n"
 	.string "here. Have you seen any?$"
 
 AcrisiaMountains_EventScript_BugCatcherBoy_Text_0:
-# 240 "data/maps/AcrisiaMountains/scripts.pory"
+# 243 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Bug Catcher$"
 
 AcrisiaMountains_EventScript_BugCatcherBoy_Text_1:
-# 241 "data/maps/AcrisiaMountains/scripts.pory"
+# 244 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "So... like, where are all the bugs?\p"
 	.string "I found a Klawf earlier, but I'm not sure\n"
 	.string "if that's a bug. I guess it has\l"
 	.string "'bug-eyes' though, ehehe!$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Hugh_Text_0:
-# 250 "data/maps/AcrisiaMountains/scripts.pory"
+# 253 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Hugh$"
 
 AcrisiaMountains_EventScript_Trainer_AcrisiaMtns_Hugh_Text_1:
-# 251 "data/maps/AcrisiaMountains/scripts.pory"
+# 254 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Good luck in the Acrisia Caves. You've\n"
 	.string "certainly got potential, based on our\l"
 	.string "battle!$"
 
 AcrisiaMountains_EventScript_LassExploringRuins_Text_0:
-# 269 "data/maps/AcrisiaMountains/scripts.pory"
+# 272 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Lass$"
 
 AcrisiaMountains_EventScript_LassExploringRuins_Text_1:
-# 272 "data/maps/AcrisiaMountains/scripts.pory"
+# 275 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "There are lots of ancient ruins this far\n"
 	.string "up the mountains. I wish we knew more\l"
 	.string "about what came before us...\p"
@@ -574,7 +586,7 @@ AcrisiaMountains_EventScript_LassExploringRuins_Text_1:
 	.string "to see one!$"
 
 AcrisiaMountains_EventScript_LassExploringRuins_Text_2:
-# 283 "data/maps/AcrisiaMountains/scripts.pory"
+# 286 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Hey! That's the Pokédex entry for\n"
 	.string "Baltoy!\p"
 	.string "Thanks for showing me. Maybe I'll check\n"
@@ -583,63 +595,63 @@ AcrisiaMountains_EventScript_LassExploringRuins_Text_2:
 	.string "I found around the Mountains.$"
 
 AcrisiaMountains_EventScript_LassExploringRuins_Text_3:
-# 303 "data/maps/AcrisiaMountains/scripts.pory"
+# 306 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "I can't wait to check out the\n"
 	.string "University and learn more about Baltoy!\l"
 	.string "I want to figure out everything about\l"
 	.string "the past.$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreIntro::
-# 155 "data/maps/AcrisiaMountains/scripts.pory"
+# 158 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "My Pokémon are training to throw rocks\n"
 	.string "using their Psychic powers!$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_TyreDefeat::
-# 159 "data/maps/AcrisiaMountains/scripts.pory"
+# 162 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Looks like they need more work.$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaIntro::
-# 173 "data/maps/AcrisiaMountains/scripts.pory"
+# 176 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Zzz... augh, my Pokémon keeps putting me\n"
 	.string "to sleep...$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_ElissaDefeat::
-# 177 "data/maps/AcrisiaMountains/scripts.pory"
+# 180 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "...zzz...$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_UlfIntro::
-# 191 "data/maps/AcrisiaMountains/scripts.pory"
+# 194 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Someone should really clean up these\n"
 	.string "old rails.$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_UlfDefeat::
-# 195 "data/maps/AcrisiaMountains/scripts.pory"
+# 198 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Nothing to be done, then.$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_JammaIntro::
-# 209 "data/maps/AcrisiaMountains/scripts.pory"
+# 212 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Hyah! Hrah! Come on, fight me!$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_JammaDefeat::
-# 213 "data/maps/AcrisiaMountains/scripts.pory"
+# 216 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Uh oh! Looks like I'd better hike back\n"
 	.string "to a Pokémon Center.$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_GregIntro::
-# 227 "data/maps/AcrisiaMountains/scripts.pory"
+# 230 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Ehehe, I bet you've never seen THESE\n"
 	.string "Pokémon!$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_GregDefeat::
-# 231 "data/maps/AcrisiaMountains/scripts.pory"
+# 234 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Well, I guess I stand corrected.$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughIntro::
-# 256 "data/maps/AcrisiaMountains/scripts.pory"
+# 259 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "I make sure no weak trainers get into\n"
 	.string "the Acrisia Caves. Let's see if you're\l"
 	.string "strong enough!$"
 
 AcrisiaMountains_Text_Trainer_AcrisiaMtns_HughDefeat::
-# 260 "data/maps/AcrisiaMountains/scripts.pory"
+# 263 "data/maps/AcrisiaMountains/scripts.pory"
 	.string "Wow, you're ready!$"

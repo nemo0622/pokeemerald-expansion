@@ -250,10 +250,11 @@ MyrriniIsland_Gym_EventScript_GymMan_Text_2:
 	.string "Welcome to the Myrrini Island Gym!\p"
 	.string "The Gym Leader you'll be facing is\n"
 	.string "Euterpe, the Muse of Parties and\l"
-	.string "Poisons. Naturally, she uses\l"
-	.string "{COLOR GREEN}Poison-type{COLOR DARK_GRAY} Pokémon and {COLOR GREEN}Status\l"
-	.string "conditions{COLOR DARK_GRAY} to her advantage. Make sure\l"
-	.string "to stock up on status-healing items!$"
+	.string "Poisons. Naturally, she uses {COLOR GREEN}Poison and\l"
+	.string "Water-type{COLOR DARK_GRAY} Pokémon, in addition to\l"
+	.string "difficult {COLOR GREEN}Status conditions{COLOR DARK_GRAY}, to her\l"
+	.string "advantage. Make sure to stock up on\l"
+	.string "status-healing items!$"
 
 MyrriniIsland_Gym_EventScript_Tentacruel_Text_0:
 # 41 "data/maps/MyrriniIsland_Gym/scripts.pory"

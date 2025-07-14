@@ -1034,5 +1034,5 @@ const struct Tileset gTileset_FrescoIsles =
     .palettes = gTilesetPalettes_FrescoIsles,
     .metatiles = gMetatiles_FrescoIsles,
     .metatileAttributes = gMetatileAttributes_FrescoIsles,
-    .callback = NULL,
+    .callback = InitTilesetAnim_FrescoIsles,
 };

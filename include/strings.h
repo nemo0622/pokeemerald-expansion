@@ -3017,6 +3017,9 @@ extern const u8 gText_SideQuestName_51[];
 extern const u8 gText_SideQuestName_52[];
 extern const u8 gText_SideQuestName_53[];
 extern const u8 gText_SideQuestName_54[];
+extern const u8 gText_SideQuestName_55[];
+extern const u8 gText_SideQuestName_56[];
+extern const u8 gText_SideQuestName_57[];
 
 //descriptions
 extern const u8 gText_SideQuestDesc_1[];
@@ -3073,6 +3076,9 @@ extern const u8 gText_SideQuestDesc_51[];
 extern const u8 gText_SideQuestDesc_52[];
 extern const u8 gText_SideQuestDesc_53[];
 extern const u8 gText_SideQuestDesc_54[];
+extern const u8 gText_SideQuestDesc_55[];
+extern const u8 gText_SideQuestDesc_56[];
+extern const u8 gText_SideQuestDesc_57[];
 
 //completed quest description
 extern const u8 gText_SideQuestDoneDesc_1[];
@@ -3161,6 +3167,9 @@ extern const u8 gText_SideQuestMap51[];
 extern const u8 gText_SideQuestMap52[];
 extern const u8 gText_SideQuestMap53[];
 extern const u8 gText_SideQuestMap54[];
+extern const u8 gText_SideQuestMap55[];
+extern const u8 gText_SideQuestMap56[];
+extern const u8 gText_SideQuestMap57[];
 
 //subquests
 extern const u8 gText_SubQuest1_Name1[];

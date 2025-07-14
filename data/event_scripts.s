@@ -1918,3 +1918,17 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/SunkenTemple/scripts.inc"
 
 	.include "data/maps/FrescoIsles_PokemonCenter/scripts.inc"
+
+	.include "data/maps/FrescoIsles_Mart/scripts.inc"
+
+	.include "data/maps/FrescoIsles_House1/scripts.inc"
+
+	.include "data/maps/FrescoIsles_House2/scripts.inc"
+
+	.include "data/maps/FrescoIsles_House3/scripts.inc"
+
+	.include "data/maps/FrescoIsles_Tailor/scripts.inc"
+
+	.include "data/maps/FrescoIsles_AbandonedLab/scripts.inc"
+
+	.include "data/maps/FrescoIsles_Gym/scripts.inc"

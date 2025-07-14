@@ -298,6 +298,13 @@
 #define MAP_FORTREE_CITY_HOUSE5            (8 | (12 << 8))
 #define MAP_FORTREE_CITY_DECORATION_SHOP   (9 | (12 << 8))
 #define MAP_FRESCO_ISLES_POKEMON_CENTER    (10 | (12 << 8))
+#define MAP_FRESCO_ISLES_MART              (11 | (12 << 8))
+#define MAP_FRESCO_ISLES_HOUSE1            (12 | (12 << 8))
+#define MAP_FRESCO_ISLES_HOUSE2            (13 | (12 << 8))
+#define MAP_FRESCO_ISLES_HOUSE3            (14 | (12 << 8))
+#define MAP_FRESCO_ISLES_TAILOR            (15 | (12 << 8))
+#define MAP_FRESCO_ISLES_ABANDONED_LAB     (16 | (12 << 8))
+#define MAP_FRESCO_ISLES_GYM               (17 | (12 << 8))
 
 // gMapGroup_IndoorLilycove
 #define MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F        (0 | (13 << 8))

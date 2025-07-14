@@ -1,0 +1,290 @@
+mapscripts FrescoIsles_Gym_MapScripts {}
+
+script FrescoIsles_Gym_EventScript_GymStatue
+{
+    lock
+    if(flag(FLAG_BADGE06_GET))
+    {
+        msgbox(format("Fresco Isles Pokémon Gym\p Recent Victors: Rania, {PLAYER}"))
+    }
+    else
+    {
+        msgbox(format("Fresco Isles Pokémon Gym\p Recent Victors: Rania"))
+    }
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_Gym_EventScript_GymMan
+{
+    lock
+    faceplayer
+    speakername("Gym Guide")
+    if(flag(FLAG_BADGE06_GET))
+    {
+        msgbox(format("Incredible! You're a rising star! Keep it up, future Champ!"))
+    }
+    else
+    {
+        msgbox(format("Welcome to the Fresco Isles Gym!\p Thalia and Melpomene are the Twin Muses of Comedy and Tragedy who run this Gym. They are opposites in many ways, including which Pokémon they use. Thalia uses energetic {COLOR GREEN}Electric-type{COLOR DARK_GRAY} Pokémon, while Melpomene uses slow, somber {COLOR GREEN}Ground-type{COLOR DARK_GRAY} Pokémon. Although their Pokémon are opposites, they make quite the duo!"))
+    }
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_Gym_EventScript_Raichu
+{
+    lock
+    faceplayer
+    speakername("Raichu")
+    playmoncry(SPECIES_RAICHU_ALOLAN, CRY_MODE_NORMAL)
+    msgbox("Squee!")
+    waitmoncry
+    closemessage
+    msgbox(format("Raichu is hovering around Thalia, sparking with energy!"))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_Gym_EventScript_Steelix
+{
+    lock
+    faceplayer
+    speakername("Steelix")
+    playmoncry(SPECIES_STEELIX, CRY_MODE_NORMAL)
+    msgbox("Kruuuaaah...!")
+    waitmoncry
+    closemessage
+    msgbox(format("Steelix looks serious... That might just be how a Steelix looks, though."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_Gym_EventScript_Trainer_FrescoGym_Gideon
+{
+    trainerbattle_single(TRAINER_FRESCOGYM_GIDEON, FrescoIsles_Gym_Text_Trainer_FrescoGym_GideonIntro, FrescoIsles_Gym_Text_Trainer_FrescoGym_GideonDefeat)
+    speakername("Gideon")
+    msgbox(format("Thalia and Melpomene keep me on my toes, that's for sure."))
+    closemessage
+    release
+    end
+}
+text FrescoIsles_Gym_Text_Trainer_FrescoGym_GideonIntro
+{
+    format("Ack! The Gym Leaders turned on their Sandstorm Machine!")
+}
+text FrescoIsles_Gym_Text_Trainer_FrescoGym_GideonDefeat
+{
+    format("It's way harder to battle in this storm...")
+}
+
+script FrescoIsles_Gym_EventScript_Trainer_FrescoGym_Melody
+{
+    trainerbattle_single(TRAINER_FRESCOGYM_MELODY, FrescoIsles_Gym_Text_Trainer_FrescoGym_MelodyIntro, FrescoIsles_Gym_Text_Trainer_FrescoGym_MelodyDefeat)
+    speakername("Melody")
+    msgbox(format("Some of us Gym Trainers specialize in Ground-types, while others have more Electric-type Pokémon. All of us reflect the division of Thalia and Melpomene."))
+    closemessage
+    release
+    end
+}
+text FrescoIsles_Gym_Text_Trainer_FrescoGym_MelodyIntro
+{
+    format("My Pokémon are inspired by Melpomene, grounded and true.")
+}
+text FrescoIsles_Gym_Text_Trainer_FrescoGym_MelodyDefeat
+{
+    format("...Get it? Grounded?")
+}
+
+script FrescoIsles_Gym_EventScript_Trainer_FrescoGym_Maisie
+{
+    trainerbattle_single(TRAINER_FRESCOGYM_MAISIE, FrescoIsles_Gym_Text_Trainer_FrescoGym_MaisieIntro, FrescoIsles_Gym_Text_Trainer_FrescoGym_MaisieDefeat)
+    speakername("Maisie")
+    msgbox(format("Thalia is my type of gal! She loves high-energy fun, just like me."))
+    closemessage
+    release
+    end
+}
+text FrescoIsles_Gym_Text_Trainer_FrescoGym_MaisieIntro
+{
+    format("Ahaha, it's time to get wild!")
+}
+text FrescoIsles_Gym_Text_Trainer_FrescoGym_MaisieDefeat
+{
+    format("Too wild for me!")
+}
+
+script FrescoIsles_Gym_EventScript_Trainer_FrescoGym_Aziz
+{
+    trainerbattle_single(TRAINER_FRESCOGYM_AZIZ, FrescoIsles_Gym_Text_Trainer_FrescoGym_AzizIntro, FrescoIsles_Gym_Text_Trainer_FrescoGym_AzizDefeat)
+    speakername("Aziz")
+    msgbox(format("Heh, this Gym is a real challenge for some Trainers. How is one person supposed to beat two opposite types at once?"))
+    closemessage
+    release
+    end
+}
+text FrescoIsles_Gym_Text_Trainer_FrescoGym_AzizIntro
+{
+    format("Let's have an honorable battle.")
+}
+text FrescoIsles_Gym_Text_Trainer_FrescoGym_AzizDefeat
+{
+    format("Amazing...")
+}
+
+script FrescoIsles_Gym_EventScript_Trainer_FrescoGym_Frida
+{
+    trainerbattle_single(TRAINER_FRESCOGYM_FRIDA, FrescoIsles_Gym_Text_Trainer_FrescoGym_FridaIntro, FrescoIsles_Gym_Text_Trainer_FrescoGym_FridaDefeat)
+    speakername("Frida")
+    msgbox(format("Sometimes, it's important to try new Pokémon in battle, especially if your current team isn't quite working out."))
+    closemessage
+    release
+    end
+}
+text FrescoIsles_Gym_Text_Trainer_FrescoGym_FridaIntro
+{
+    format("My Pokémon are raring to go!")
+}
+text FrescoIsles_Gym_Text_Trainer_FrescoGym_FridaDefeat
+{
+    format("Back to the teambuilding data sheets.")
+}
+
+// -----------------------------------------------------------------------------------------------------
+
+script FrescoIsles_Gym_EventScript_ThaliaAndMelpomene
+{
+    lock
+    faceplayer
+
+    // THALIA AND MELPOMENE ONLY - have player start interaction at Thalia always!
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    if(var(VAR_TEMP_1) == 9)
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+        waitmovement(0)
+    }
+
+    if(!flag(FLAG_HARD_MODE))
+    {
+        goto(FrescoIsles_Gym_EventScript_ThaliaAndMelpomene_NormalDifficulty)
+    }
+    else
+    {
+        goto(FrescoIsles_Gym_EventScript_ThaliaAndMelpomene_HardDifficulty)
+    }
+    release
+    end
+}
+
+script FrescoIsles_Gym_EventScript_ThaliaAndMelpomene_NormalDifficulty // called when on normal difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_THALIAANDMELPOMENE, FrescoIsles_Gym_Text_ThaliaAndMelpomeneIntro, FrescoIsles_Gym_Text_ThaliaAndMelpomeneDefeat, FrescoIsles_Gym_EventScript_ThaliaAndMelpomene_DefeatedScript, NO_MUSIC)
+    speakername("Thalia")
+    msgbox(format("Ohoho, you turned my team into a comedy!"))
+    closemessage
+    applymovement(2, FrescoIsles_Gym_Movement_MelpomeneTalkToPlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Melpomene")
+    msgbox(format("Yeah, you taught our Pokémon a new level of strength. I solemnly swear that one day, we will reach this level."))
+    closemessage
+    applymovement(2, FrescoIsles_Gym_Movement_MelpomeneBackToSpot)
+    waitmovement(0)
+    release
+    end
+}
+script FrescoIsles_Gym_EventScript_ThaliaAndMelpomene_HardDifficulty // called when on hard difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_THALIAANDMELPOMENE_HARD, FrescoIsles_Gym_Text_ThaliaAndMelpomeneIntro, FrescoIsles_Gym_Text_ThaliaAndMelpomeneDefeat, FrescoIsles_Gym_EventScript_ThaliaAndMelpomene_DefeatedScript, NO_MUSIC)
+    speakername("Thalia")
+    msgbox(format("Ohoho, you turned my team into a comedy!"))
+    closemessage
+    applymovement(2, FrescoIsles_Gym_Movement_MelpomeneTalkToPlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Melpomene")
+    msgbox(format("Yeah, you taught our Pokémon a new level of strength. I solemnly swear that one day, we will reach this level."))
+    closemessage
+    applymovement(2, FrescoIsles_Gym_Movement_MelpomeneBackToSpot)
+    waitmovement(0)
+    release
+    end
+}
+text FrescoIsles_Gym_Text_ThaliaAndMelpomeneIntro
+{
+    format("Hey, it's {PLAYER}! Thanks again for the Chocolates. There's nothing like a good snack to bring people together.\p You're not here to talk feelings though, are you? Come on, show us your moves! Let's make this a world-class show!")
+}
+text FrescoIsles_Gym_Text_ThaliaAndMelpomeneDefeat
+{
+    format("Woah! Have you ever thought about joining the Theatre?")
+}
+// Script called when you defeat the gym leader!
+script FrescoIsles_Gym_EventScript_ThaliaAndMelpomene_DefeatedScript
+{
+    setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
+    message(format("{PLAYER} received the Theatrical Badge from Thalia and Melpomene."))
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+
+    // Set gym completion flags
+    setflag(FLAG_BADGE05_GET)
+    // Set all trainers in Gym as defeated
+    settrainerflag(TRAINER_FRESCOGYM_GIDEON)
+    settrainerflag(TRAINER_FRESCOGYM_MELODY)
+    settrainerflag(TRAINER_FRESCOGYM_MAISIE)
+    settrainerflag(TRAINER_FRESCOGYM_AZIZ)
+    settrainerflag(TRAINER_FRESCOGYM_FRIDA)
+
+    // Explain badge
+    speakername("Thalia")
+    msgbox(format("The Theatrical Badge shows that you're able to dance with some of the best Trainers in Ilios. With it, you should be able to use the {COLOR GREEN}HM Strength{COLOR DARK_GRAY} outside of battle.\p Mel and I have been talking, and we want to give you this!"))
+    closemessage
+
+    // Give TM reward and explain, plus end dialogue
+    giveitem(ITEM_TM_BULLDOZE)
+    closemessage
+    applymovement(2, FrescoIsles_Gym_Movement_MelpomeneTalkToPlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Melpomene")
+    msgbox(format("That TM contains the move {COLOR GREEN}Bulldoze{COLOR DARK_GRAY}. It's a great utility move, striking all opponents and slowing them down.\p The 7th Gym Challenge is located {COLOR GREEN}southwest{COLOR DARK_GRAY} of here, in {COLOR GREEN}Palati City{COLOR DARK_GRAY}. They say the first civilization of Ilios was born there, so maybe you'll find something interesting among the ruins."))
+    closemessage
+    applymovement(2, FrescoIsles_Gym_Movement_MelpomeneBackToSpot)
+    waitmovement(0)
+
+    // complete gym quest and begin next one
+    delay(20)
+    completequest(QUEST_GYM_6)
+    delay(20)
+    startquest(QUEST_GYM_7)
+
+    // set Niko and Rania state variables if necessary
+    setvar(VAR_NIKO_STATE, 11)
+    setvar(VAR_RANIA_STATE, 10)
+
+    release
+    end
+}
+
+movement FrescoIsles_Gym_Movement_MelpomeneTalkToPlayer
+{
+    walk_down
+    face_left
+    step_end
+}
+movement FrescoIsles_Gym_Movement_MelpomeneBackToSpot
+{
+    walk_up
+    face_down
+    step_end
+}

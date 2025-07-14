@@ -67,11 +67,12 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - Continue Mapping and NPC development
-    - Sea of Vulcai, and on to the Fresco Isles
-    - FRESCO ISLES: Leave Gym Leader unfinished until after Muses gym leaders rework!
-        - ADD THEATRE STAGE LOCATION TO FRESCO ISLES! This can be where Thalia and Melpomene will be found, and convinced to go back to the Gym
-    - Abandoned Lab in Fresco Isles has one remaining Scientist, who used to work for Team Chimera. He keeps watch over the last remaining Type: Null, continuing to feed it and care for it until he finds a Trainer worthy of taking it. Plus, have Silvally's RKS Memory items accessible there!
+    - FRESCO ISLES:
+        - Gym: Has Sandstorm weather, with team members working in synergy with it! (Maybe Thalia's Alolan Raichu ace could be carrying Safety Goggles?)
     - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
+
+- Fix shadows for all Pokémon! Some are still wonky after removing white outlines
+    - Plus new pokemon like Arctozolt are just totally messed up
 
 - Implement Biv's Fishing Minigame
     - Also create options menu toggle for it
@@ -152,10 +153,6 @@ GREEK PHRASES AND STUFF:
         - Dive locations
             - SIDE QUEST IDEA: Have a sidequest centered around the rediscovery of Relicanth, a new Lazarus Taxa rumored to be living deep underwater!
                 - This will make Relicanth feel more special, as it's the poster child for Lazarus Taxa
-        - Unlock seeing wild Pokémon natures and Abilities
-            - Tutorial: https://www.pokecommunity.com/threads/simple-modifications-directory.416647/post-10893555
-            - Implement above feature using flag in "if" statements. Unlock flag via sidequest
-            - Unlocked by Rania quest line?
         - Spiky Ear Pichu gift
         - Wishing Star mart location
             - Port Pello! Late game, encourages Mining Expeditions instead

@@ -69,7 +69,10 @@
 #define QUEST_BRING_ARCANINE_DOLL_TO_WOMAN      51 // buy Hisuian Arcanine decoration and give to woman in Péntepetal city
 #define QUEST_ETERNAL_FLOETTE_PLOT              52 // bring 10 Wishing Stars to a family in Péntepetal City to wish for a lost Floette to return
 #define QUEST_SHARDS_FOR_ARTIST                 53 // bring 1 of each colored shard to an artist
-#define QUEST_COUNT     (QUEST_SHARDS_FOR_ARTIST + 1)
+#define QUEST_CALM_TWIN_MUSES                   54 // bring Box of Chocolate item to Twin Muses of Fresco Isles to calm them down
+#define QUEST_FIND_RELICANTH                    55 // Catch a Relicanth and show Pokédex entry to Battle Girl in Fresco Isles
+#define QUEST_BRING_BERRIES_TO_TYPE_NULL        56 // Bring 12 Sitrus Berries to Ex-Scientist in Fresco Isles to get Type: Null
+#define QUEST_COUNT     (QUEST_BRING_BERRIES_TO_TYPE_NULL + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

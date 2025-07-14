@@ -1,0 +1,23 @@
+mapscripts FrescoIsles_House2_MapScripts {}
+
+script FrescoIsles_House2_EventScript_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("They say that the Fresco Isles used to be one big landmass, but a volcanic eruption made most of the land sink. I can't imagine how scary that must've been."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_House2_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("The Fresco Isles volcano blew up over 3,000 years ago. Legend says that a civilization was thriving on nearby islands, but the explosion led to their downfall."))
+    closemessage
+    release
+    end
+}

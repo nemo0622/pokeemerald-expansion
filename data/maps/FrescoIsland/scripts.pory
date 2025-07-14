@@ -19,8 +19,6 @@ mapscripts FrescoIsland_MapScripts {
         setobjectaswildencounter(28, ENCOUNTER_LAND)
         setobjectaswildencounter(29, ENCOUNTER_LAND)
         setobjectaswildencounter(30, ENCOUNTER_LAND)
-        setobjectaswildencounter(31, ENCOUNTER_LAND)
-        setobjectaswildencounter(32, ENCOUNTER_LAND)
     }
 }
 
@@ -373,6 +371,20 @@ script FrescoIsles_EventScript_Camper
     speakername("Camper")
     msgbox(format("The Gym Leaders of the Fresco Isles are twins. Thalia loves jokes and fun, while Melpomene is always moping around and watching tragedies. The only thing they have in common is a love for theatre."))
     closemessage
+    if(!flag(FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES))
+    {
+        speakername("Camper")
+        msgbox(format("They're up on stage right now, having another fight. When will they learn to get along..."))
+        closemessage
+    }
+    else
+    {
+        speakername("Camper")
+        msgbox(format("It seems like they've gone back to their Gym Leader duties. Hopefully that lasts..."))
+        closemessage
+    }
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceUp)
+    waitmovement(0)
     release
     end
 }
@@ -427,6 +439,255 @@ script FrescoIsles_EventScript_HikerOnVolcano
     faceplayer
     speakername("Hiker")
     msgbox(format("Woah, it's getting hot up here. Any closer and it'll start to hurt..."))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_TheatreSign
+{
+    lock
+    msgbox(format("Fresco Isles Outdoor Theatre\n Perfect for All Performing Arts!"))
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_EventScript_TheatreSpectator_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+
+    if(!flag(FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES))
+    {
+        msgbox(format("I came to support the arts, but it's just Thalia and Melpomene fighting each other. This isn't what I wanted!"))
+    }
+    else
+    {
+        msgbox(format("Thalia and Melpomene have gone back to the Gym together. Now the Theatre can get back to business!"))
+    }
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    release
+    end
+}
+
+script FrescoIsles_EventScript_TheatreSpectator_Performer
+{
+    lock
+    faceplayer
+    speakername("Performer")
+
+    if(!flag(FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES))
+    {
+        msgbox(format("I was about to perform, but Thalia and Melpomene showed up and threw everything off. Thalia requested a pop song, but Melpomene wanted a sad song... And now, here we are..."))
+    }
+    else
+    {
+        msgbox(format("I'm glad that Thalia and Melpomene put aside their differences for now. I'll resume my performance soon!"))
+    }
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    release
+    end
+}
+
+script FrescoIsles_EventScript_TwinMusesAtTheatreEvent
+{
+    lockall
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    if(var(VAR_TEMP_1) == 72) // on left stair
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+        waitmovement(0)
+    }
+    elif(var(VAR_TEMP_1) == 74) // on right stair
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+        waitmovement(0)
+    }
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(5)
+
+    // Thalia and Melpomene yell at each other
+    applymovement(43, Common_Movement_JumpInPlaceRight)
+    waitmovement(0)
+    speakername("Thalia")
+    msgbox(format("ALL YOU EVER THINK ABOUT IS SADNESS! WHAT'S WRONG WITH A LITTLE FUN AND LAUGHTER?!"))
+    closemessage
+    delay(10)
+    applymovement(45, Common_Movement_JumpInPlaceLeft)
+    waitmovement(0)
+    speakername("Melpomene")
+    msgbox(format("You and your pop music... More like SLOP MUSIC! EMOTION MAKES US THINK, UNLIKE YOUR BRAINLESS SONGS!!"))
+    closemessage
+    emote(43, EMOTE_EXCLAM)
+    speakername("Thalia")
+    msgbox(format("That DOES IT! Raichu, knock this sad sack into the sea!"))
+    closemessage
+    delay(10)
+
+    // Twin's Pokémon attack each other
+    applymovement(44, Common_Movement_JumpRight)
+    waitmovement(0)
+    applymovement(44, Common_Movement_JumpLeft)
+    applymovement(46, Common_Movement_JumpLeft)
+    waitmovement(0)
+    applymovement(46, Common_Movement_JumpRight)
+    waitmovement(0)
+    applymovement(44, Common_Movement_FaceRight)
+    applymovement(46, Common_Movement_FaceLeft)
+    waitmovement(0)
+
+    delay(10)
+    speakername("Melpomene")
+    msgbox(format("Heh, it won't be that easy, Thalia! I've always been the stronger twin!"))
+    closemessage
+
+    delay(20)
+    emote(42, EMOTE_EXCLAM)
+    applymovement(42, FrescoIsles_Movement_PerformerApproach)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Performer")
+    msgbox(format("They've been at this for hours... Thalia and Melpomene may be twin Gym Leaders, but they clash over every disagreement.\p The only thing that can calm them down is a {COLOR GREEN}Box of Chocolate{COLOR DARK_GRAY} sold in the {COLOR GREEN}Poké Mart{COLOR DARK_GRAY} nearby. If you want to speak with them, I'd hurry over with your peace offering before the fight gets uglier!"))
+    closemessage
+
+    // Check for Box of Chocolate item!
+    checkitem(ITEM_BOX_OF_CHOCOLATE)
+    if(var(VAR_RESULT) == FALSE) // no Box of Chocolate
+    {
+        applymovement(42, FrescoIsles_Movement_PerformerBackToBench)
+        waitmovement(0)
+
+        questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_CALM_TWIN_MUSES) // starts quest if not started already
+        if(var(VAR_RESULT) == FALSE)
+        {
+            delay(20)
+            startquest(QUEST_CALM_TWIN_MUSES)
+        }
+
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+        waitmovement(0)
+        release
+        end
+    }
+
+    // By reaching this point, you must have the Box of Chocolates!
+    emote(42, EMOTE_HEART)
+    speakername("Performer")
+    msgbox(format("Hey, you've got the Box of Chocolate! Quick, give it to the twins!"))
+    closemessage
+    applymovement(42, FrescoIsles_Movement_PerformerBackToBench)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_JumpInPlaceUp)
+    waitmovement(0)
+    delay(20)
+
+    applymovement(43, FrescoIsles_Movement_ThaliaApproach)
+    applymovement(45, FrescoIsles_Movement_MelpomeneApproach)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Thalia")
+    msgbox(format("Ugh, I can't stand needing to be serious when we're fighting...\p Sniff sniff... HEY! You've got chocolates! Can we have some? Pretty pleeease?"))
+    closemessage
+    delay(5)
+    removeitem(ITEM_BOX_OF_CHOCOLATE)
+    msgbox(format("You gave the Box of Chocolates to Thalia and Melpomene."))
+    closemessage
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Melpomene")
+    msgbox(format("Look, Thal... I'm sorry I tried to fight you over a show. I just feel so strongly about it, that sometimes I lose my senses."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Thalia")
+    msgbox(format("No, Mel, I'M sorry. I get so involved in my music, I forget that other people might want different things.\p Ehehe, at least we can agree on food, right, sis?"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Melpomene")
+    msgbox(format("I suppose so. Come now, let us return to our duties at the Gym."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Thalia")
+    msgbox(format("Alright straight to the point, hm? Heh, I guess you're right, though.\p You! You must be looking to beat the Fresco Isles Gym, right? Thanks to you, we'll be back on Gym duty. See ya soon!"))
+    closemessage
+    delay(10)
+
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(30)
+    setflag(FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES)
+    removeobject(43)
+    removeobject(44)
+    removeobject(45)
+    removeobject(46)
+    delay(30)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    delay(20)
+    completequest(QUEST_CALM_TWIN_MUSES)
+
+    // TODO:
+    // From here, have the Performer (42) emote a heart & be happy you got the Chocolate for the Gym Leaders
+    // Player steps up, Thalia and Melpomene share the chocolates and apologize, then go back to the Gym
+    // Complete QUEST_CALM_TWIN_MUSES and set flag to hide them
+    // REMEMBER 1: Add Box of Chocolate item to the Poké Mart!
+    // REMEMBER 2: Add NPC blocking the Gym, telling the player that Thalia and Melpomene were at the Theatre
+
+}
+
+movement FrescoIsles_Movement_PerformerApproach
+{
+    walk_left * 3
+    walk_up
+    face_up
+    step_end
+}
+movement FrescoIsles_Movement_PerformerBackToBench
+{
+    walk_down
+    walk_right * 3
+    face_up
+    step_end
+}
+movement FrescoIsles_Movement_ThaliaApproach
+{
+    walk_down
+    walk_right
+    step_end
+}
+movement FrescoIsles_Movement_MelpomeneApproach
+{
+    walk_down
+    walk_left
+    step_end
+}
+
+script FrescoIsles_EventScript_ManBlockingGym
+{
+    lock
+    faceplayer
+    speakername("Gym Guide")
+    msgbox(format("You must be looking for the Gym Leaders, huh? {COLOR GREEN}Thalia and Melpomene{COLOR DARK_GRAY}, the Gym Leaders, are always fighting. Last I saw them, Thalia was skipping off to the {COLOR GREEN}Theatre{COLOR DARK_GRAY}, and Melpomene was racing after her."))
     closemessage
     release
     end

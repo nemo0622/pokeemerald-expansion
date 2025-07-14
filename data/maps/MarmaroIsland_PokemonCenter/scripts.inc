@@ -97,6 +97,58 @@ MarmaroIsland_PokemonCenter_EventScript_Farmer::
 	end
 
 
+MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck::
+# 66 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	lock
+# 67 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	faceplayer
+# 68 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	speakername MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 70 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	goto_if_set FLAG_CAUGHT_ALL_MONS_MARMARO_ISLAND, MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_2
+# 77 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	msgbox MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2
+# 78 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	closemessage
+# 79 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	special CheckRouteCaptureProgress
+# 80 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_5
+MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_1:
+# 97 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	release
+	end
+
+MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_2:
+# 72 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	msgbox MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1
+# 73 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	closemessage
+	goto MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_5:
+# 82 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	delay 20
+# 83 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	emote VAR_LAST_TALKED, EMOTE_EXCLAM
+# 84 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	speakername MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 85 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	msgbox MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3
+# 86 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	closemessage
+# 87 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	delay 5
+# 90 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	giveitem ITEM_DIVE_BALL, 20
+# 91 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	closemessage
+# 93 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	setflag FLAG_CAUGHT_ALL_MONS_MARMARO_ISLAND
+	goto MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+
 MarmaroIsland_PokemonCenter_EventScript_PkmnCenterNurse_Text_0:
 # 7 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
 	.string "Nurse$"
@@ -139,3 +191,29 @@ MarmaroIsland_PokemonCenter_EventScript_Farmer_Text_1:
 	.string "I'll admit it, I spend most money I make\n"
 	.string "selling crops on buying Pokémon Dolls.\l"
 	.string "What can I say, they're just so cute!$"
+
+MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0:
+# 68 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	.string "Uni. Student$"
+
+MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1:
+# 72 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	.string "Your Pokédex data is amazing! Now we\n"
+	.string "know more about the local ecosystem,\l"
+	.string "thanks to you.$"
+
+MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2:
+# 77 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	.string "Chaire! I'm a student from the Acrisia\n"
+	.string "University.\p"
+	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
+	.string "Pokémon{COLOR DARK_GRAY} found on Marmaro Island. If\l"
+	.string "you've caught all the Pokémon here,\l"
+	.string "please let me know.$"
+
+MarmaroIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3:
+# 85 "data/maps/MarmaroIsland_PokemonCenter/scripts.pory"
+	.string "Incredible! You've caught all the\n"
+	.string "Pokémon that I requested in the area!\p"
+	.string "Here's a reward from the University.\n"
+	.string "Keep up your hard work!$"

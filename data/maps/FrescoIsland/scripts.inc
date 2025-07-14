@@ -40,632 +40,1048 @@ FrescoIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setobjectaswildencounter 29, ENCOUNTER_LAND
 # 21 "data/maps/FrescoIsland/scripts.pory"
 	setobjectaswildencounter 30, ENCOUNTER_LAND
-# 22 "data/maps/FrescoIsland/scripts.pory"
-	setobjectaswildencounter 31, ENCOUNTER_LAND
-# 23 "data/maps/FrescoIsland/scripts.pory"
-	setobjectaswildencounter 32, ENCOUNTER_LAND
 	return
 
 
 FrescoIsles_EventScript_DirectionSign::
-# 29 "data/maps/FrescoIsland/scripts.pory"
+# 27 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 30 "data/maps/FrescoIsland/scripts.pory"
+# 28 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_DirectionSign_Text_0
-# 31 "data/maps/FrescoIsland/scripts.pory"
+# 29 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 32 "data/maps/FrescoIsland/scripts.pory"
+# 30 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_ClosedSign::
-# 38 "data/maps/FrescoIsland/scripts.pory"
+# 36 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 39 "data/maps/FrescoIsland/scripts.pory"
+# 37 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_ClosedSign_Text_0
-# 40 "data/maps/FrescoIsland/scripts.pory"
+# 38 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 41 "data/maps/FrescoIsland/scripts.pory"
+# 39 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_TuberSwimming::
-# 47 "data/maps/FrescoIsland/scripts.pory"
+# 45 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 48 "data/maps/FrescoIsland/scripts.pory"
+# 46 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 49 "data/maps/FrescoIsland/scripts.pory"
+# 47 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_TuberSwimming_Text_0
-# 50 "data/maps/FrescoIsland/scripts.pory"
+# 48 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_TuberSwimming_Text_1
-# 51 "data/maps/FrescoIsland/scripts.pory"
+# 49 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 52 "data/maps/FrescoIsland/scripts.pory"
+# 50 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_WomanOnBeachChair::
-# 58 "data/maps/FrescoIsland/scripts.pory"
+# 56 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 59 "data/maps/FrescoIsland/scripts.pory"
+# 57 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 60 "data/maps/FrescoIsland/scripts.pory"
+# 58 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_WomanOnBeachChair_Text_0
-# 61 "data/maps/FrescoIsland/scripts.pory"
+# 59 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_WomanOnBeachChair_Text_1
-# 62 "data/maps/FrescoIsland/scripts.pory"
+# 60 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 63 "data/maps/FrescoIsland/scripts.pory"
+# 61 "data/maps/FrescoIsland/scripts.pory"
 	applymovement 4, Common_Movement_FaceDown
-# 64 "data/maps/FrescoIsland/scripts.pory"
+# 62 "data/maps/FrescoIsland/scripts.pory"
 	waitmovement 0
-# 65 "data/maps/FrescoIsland/scripts.pory"
+# 63 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_HexManiacWithHiddenPower::
-# 71 "data/maps/FrescoIsland/scripts.pory"
+# 69 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 72 "data/maps/FrescoIsland/scripts.pory"
+# 70 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 73 "data/maps/FrescoIsland/scripts.pory"
+# 71 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_HexManiacWithHiddenPower_Text_0
-# 74 "data/maps/FrescoIsland/scripts.pory"
+# 72 "data/maps/FrescoIsland/scripts.pory"
 	goto_if_set FLAG_RECEIVED_TM_HIDDEN_POWER, FrescoIsles_EventScript_HexManiacWithHiddenPower_2
-# 81 "data/maps/FrescoIsland/scripts.pory"
+# 79 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_HexManiacWithHiddenPower_Text_2
+# 80 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 81 "data/maps/FrescoIsland/scripts.pory"
+	delay 5
 # 82 "data/maps/FrescoIsland/scripts.pory"
-	closemessage
-# 83 "data/maps/FrescoIsland/scripts.pory"
-	delay 5
-# 84 "data/maps/FrescoIsland/scripts.pory"
 	setflag FLAG_RECEIVED_TM_HIDDEN_POWER
-# 85 "data/maps/FrescoIsland/scripts.pory"
+# 83 "data/maps/FrescoIsland/scripts.pory"
 	giveitem ITEM_TM_HIDDEN_POWER
-# 86 "data/maps/FrescoIsland/scripts.pory"
+# 84 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 87 "data/maps/FrescoIsland/scripts.pory"
+# 85 "data/maps/FrescoIsland/scripts.pory"
 	delay 5
-# 88 "data/maps/FrescoIsland/scripts.pory"
+# 86 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_HexManiacWithHiddenPower_Text_0
-# 89 "data/maps/FrescoIsland/scripts.pory"
+# 87 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_HexManiacWithHiddenPower_Text_3
-# 90 "data/maps/FrescoIsland/scripts.pory"
+# 88 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
 FrescoIsles_EventScript_HexManiacWithHiddenPower_1:
-# 92 "data/maps/FrescoIsland/scripts.pory"
+# 90 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 FrescoIsles_EventScript_HexManiacWithHiddenPower_2:
-# 76 "data/maps/FrescoIsland/scripts.pory"
+# 74 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_HexManiacWithHiddenPower_Text_1
-# 77 "data/maps/FrescoIsland/scripts.pory"
+# 75 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
 	goto FrescoIsles_EventScript_HexManiacWithHiddenPower_1
 
 
 FrescoIsles_EventScript_Farmer::
-# 98 "data/maps/FrescoIsland/scripts.pory"
+# 96 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 99 "data/maps/FrescoIsland/scripts.pory"
+# 97 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 100 "data/maps/FrescoIsland/scripts.pory"
+# 98 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_Farmer_Text_0
-# 101 "data/maps/FrescoIsland/scripts.pory"
+# 99 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_Farmer_Text_1
-# 102 "data/maps/FrescoIsland/scripts.pory"
+# 100 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 103 "data/maps/FrescoIsland/scripts.pory"
+# 101 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_SailorWithQuaxly::
-# 109 "data/maps/FrescoIsland/scripts.pory"
+# 107 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 110 "data/maps/FrescoIsland/scripts.pory"
+# 108 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 111 "data/maps/FrescoIsland/scripts.pory"
+# 109 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_SailorWithQuaxly_Text_0
-# 112 "data/maps/FrescoIsland/scripts.pory"
+# 110 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_SailorWithQuaxly_Text_1
-# 113 "data/maps/FrescoIsland/scripts.pory"
+# 111 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 114 "data/maps/FrescoIsland/scripts.pory"
+# 112 "data/maps/FrescoIsland/scripts.pory"
 	applymovement 7, Common_Movement_FaceDown
-# 115 "data/maps/FrescoIsland/scripts.pory"
+# 113 "data/maps/FrescoIsland/scripts.pory"
 	waitmovement 0
-# 116 "data/maps/FrescoIsland/scripts.pory"
+# 114 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_Quaxly::
-# 122 "data/maps/FrescoIsland/scripts.pory"
+# 120 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 123 "data/maps/FrescoIsland/scripts.pory"
+# 121 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 124 "data/maps/FrescoIsland/scripts.pory"
+# 122 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_Quaxly_Text_0
-# 125 "data/maps/FrescoIsland/scripts.pory"
+# 123 "data/maps/FrescoIsland/scripts.pory"
 	playmoncry SPECIES_QUAXLY, CRY_MODE_NORMAL
-# 126 "data/maps/FrescoIsland/scripts.pory"
+# 124 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_Quaxly_Text_1
-# 127 "data/maps/FrescoIsland/scripts.pory"
+# 125 "data/maps/FrescoIsland/scripts.pory"
 	waitmoncry
-# 128 "data/maps/FrescoIsland/scripts.pory"
+# 126 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 129 "data/maps/FrescoIsland/scripts.pory"
+# 127 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_LittleGirl::
-# 135 "data/maps/FrescoIsland/scripts.pory"
+# 133 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 136 "data/maps/FrescoIsland/scripts.pory"
+# 134 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 137 "data/maps/FrescoIsland/scripts.pory"
+# 135 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_LittleGirl_Text_0
-# 138 "data/maps/FrescoIsland/scripts.pory"
+# 136 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_LittleGirl_Text_1, MSGBOX_YESNO
-# 139 "data/maps/FrescoIsland/scripts.pory"
+# 137 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 140 "data/maps/FrescoIsland/scripts.pory"
+# 138 "data/maps/FrescoIsland/scripts.pory"
 	delay 5
-# 141 "data/maps/FrescoIsland/scripts.pory"
+# 139 "data/maps/FrescoIsland/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FrescoIsles_EventScript_LittleGirl_2
-# 149 "data/maps/FrescoIsland/scripts.pory"
+# 147 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_LittleGirl_Text_0
-# 150 "data/maps/FrescoIsland/scripts.pory"
+# 148 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_LittleGirl_Text_3
-# 151 "data/maps/FrescoIsland/scripts.pory"
+# 149 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
 FrescoIsles_EventScript_LittleGirl_1:
-# 153 "data/maps/FrescoIsland/scripts.pory"
+# 151 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 FrescoIsles_EventScript_LittleGirl_2:
-# 143 "data/maps/FrescoIsland/scripts.pory"
+# 141 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_LittleGirl_Text_0
-# 144 "data/maps/FrescoIsland/scripts.pory"
+# 142 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_LittleGirl_Text_2
-# 145 "data/maps/FrescoIsland/scripts.pory"
+# 143 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
 	goto FrescoIsles_EventScript_LittleGirl_1
 
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials::
-# 159 "data/maps/FrescoIsland/scripts.pory"
+# 157 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 160 "data/maps/FrescoIsland/scripts.pory"
+# 158 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 161 "data/maps/FrescoIsland/scripts.pory"
+# 159 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_0
-# 164 "data/maps/FrescoIsland/scripts.pory"
+# 162 "data/maps/FrescoIsland/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_SHARDS_FOR_ARTIST
-# 165 "data/maps/FrescoIsland/scripts.pory"
+# 163 "data/maps/FrescoIsland/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FrescoIsles_EventScript_ArtistNeedsPaintMaterials_2
-# 174 "data/maps/FrescoIsland/scripts.pory"
+# 172 "data/maps/FrescoIsland/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_SHARDS_FOR_ARTIST
-# 175 "data/maps/FrescoIsland/scripts.pory"
+# 173 "data/maps/FrescoIsland/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq FrescoIsles_EventScript_ArtistNeedsPaintMaterials_5
-# 184 "data/maps/FrescoIsland/scripts.pory"
+# 182 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_3
-# 185 "data/maps/FrescoIsland/scripts.pory"
+# 183 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 187 "data/maps/FrescoIsland/scripts.pory"
+# 185 "data/maps/FrescoIsland/scripts.pory"
 	checkitem ITEM_RED_SHARD
-# 188 "data/maps/FrescoIsland/scripts.pory"
+# 186 "data/maps/FrescoIsland/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FrescoIsles_EventScript_ArtistNeedsPaintMaterials_9
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_8:
-# 201 "data/maps/FrescoIsland/scripts.pory"
+# 199 "data/maps/FrescoIsland/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FrescoIsles_EventScript_ArtistNeedsPaintMaterials_11
-# 220 "data/maps/FrescoIsland/scripts.pory"
+# 218 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_0
-# 221 "data/maps/FrescoIsland/scripts.pory"
+# 219 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_5
-# 222 "data/maps/FrescoIsland/scripts.pory"
+# 220 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_4:
-# 225 "data/maps/FrescoIsland/scripts.pory"
+# 223 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_2:
-# 167 "data/maps/FrescoIsland/scripts.pory"
+# 165 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_1
-# 168 "data/maps/FrescoIsland/scripts.pory"
+# 166 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 169 "data/maps/FrescoIsland/scripts.pory"
+# 167 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_5:
-# 177 "data/maps/FrescoIsland/scripts.pory"
+# 175 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_2
-# 178 "data/maps/FrescoIsland/scripts.pory"
+# 176 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 179 "data/maps/FrescoIsland/scripts.pory"
+# 177 "data/maps/FrescoIsland/scripts.pory"
 	delay 20
-# 180 "data/maps/FrescoIsland/scripts.pory"
+# 178 "data/maps/FrescoIsland/scripts.pory"
 	startquest QUEST_SHARDS_FOR_ARTIST
 	goto FrescoIsles_EventScript_ArtistNeedsPaintMaterials_4
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_9:
-# 190 "data/maps/FrescoIsland/scripts.pory"
+# 188 "data/maps/FrescoIsland/scripts.pory"
 	checkitem ITEM_BLUE_SHARD
-# 191 "data/maps/FrescoIsland/scripts.pory"
+# 189 "data/maps/FrescoIsland/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FrescoIsles_EventScript_ArtistNeedsPaintMaterials_14
 	goto FrescoIsles_EventScript_ArtistNeedsPaintMaterials_8
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_11:
-# 203 "data/maps/FrescoIsland/scripts.pory"
+# 201 "data/maps/FrescoIsland/scripts.pory"
 	emote 10, EMOTE_EXCLAM
-# 204 "data/maps/FrescoIsland/scripts.pory"
+# 202 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_0
-# 205 "data/maps/FrescoIsland/scripts.pory"
+# 203 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_4
-# 206 "data/maps/FrescoIsland/scripts.pory"
+# 204 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 207 "data/maps/FrescoIsland/scripts.pory"
+# 205 "data/maps/FrescoIsland/scripts.pory"
 	delay 5
-# 208 "data/maps/FrescoIsland/scripts.pory"
+# 206 "data/maps/FrescoIsland/scripts.pory"
 	removeitem ITEM_RED_SHARD
-# 209 "data/maps/FrescoIsland/scripts.pory"
+# 207 "data/maps/FrescoIsland/scripts.pory"
 	removeitem ITEM_BLUE_SHARD
-# 210 "data/maps/FrescoIsland/scripts.pory"
+# 208 "data/maps/FrescoIsland/scripts.pory"
 	removeitem ITEM_GREEN_SHARD
-# 211 "data/maps/FrescoIsland/scripts.pory"
+# 209 "data/maps/FrescoIsland/scripts.pory"
 	removeitem ITEM_YELLOW_SHARD
-# 212 "data/maps/FrescoIsland/scripts.pory"
+# 210 "data/maps/FrescoIsland/scripts.pory"
 	giveitem ITEM_CLEAR_AMULET
-# 213 "data/maps/FrescoIsland/scripts.pory"
+# 211 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 215 "data/maps/FrescoIsland/scripts.pory"
+# 213 "data/maps/FrescoIsland/scripts.pory"
 	delay 20
-# 216 "data/maps/FrescoIsland/scripts.pory"
+# 214 "data/maps/FrescoIsland/scripts.pory"
 	completequest QUEST_SHARDS_FOR_ARTIST
 	goto FrescoIsles_EventScript_ArtistNeedsPaintMaterials_4
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_14:
-# 193 "data/maps/FrescoIsland/scripts.pory"
+# 191 "data/maps/FrescoIsland/scripts.pory"
 	checkitem ITEM_GREEN_SHARD
-# 194 "data/maps/FrescoIsland/scripts.pory"
+# 192 "data/maps/FrescoIsland/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FrescoIsles_EventScript_ArtistNeedsPaintMaterials_16
 	goto FrescoIsles_EventScript_ArtistNeedsPaintMaterials_8
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_16:
-# 196 "data/maps/FrescoIsland/scripts.pory"
+# 194 "data/maps/FrescoIsland/scripts.pory"
 	checkitem ITEM_YELLOW_SHARD
 	goto FrescoIsles_EventScript_ArtistNeedsPaintMaterials_8
 
 
 FrescoIsles_EventScript_Dreepy::
-# 231 "data/maps/FrescoIsland/scripts.pory"
+# 229 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 232 "data/maps/FrescoIsland/scripts.pory"
+# 230 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 233 "data/maps/FrescoIsland/scripts.pory"
+# 231 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_Dreepy_Text_0
-# 234 "data/maps/FrescoIsland/scripts.pory"
+# 232 "data/maps/FrescoIsland/scripts.pory"
 	playmoncry SPECIES_DREEPY, CRY_MODE_NORMAL
-# 235 "data/maps/FrescoIsland/scripts.pory"
+# 233 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_Dreepy_Text_1
-# 236 "data/maps/FrescoIsland/scripts.pory"
+# 234 "data/maps/FrescoIsland/scripts.pory"
 	waitmoncry
-# 237 "data/maps/FrescoIsland/scripts.pory"
+# 235 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 238 "data/maps/FrescoIsland/scripts.pory"
+# 236 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_GirlWithDreepy::
-# 244 "data/maps/FrescoIsland/scripts.pory"
+# 242 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 245 "data/maps/FrescoIsland/scripts.pory"
+# 243 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 246 "data/maps/FrescoIsland/scripts.pory"
+# 244 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_GirlWithDreepy_Text_0
-# 247 "data/maps/FrescoIsland/scripts.pory"
+# 245 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_GirlWithDreepy_Text_1
-# 248 "data/maps/FrescoIsland/scripts.pory"
+# 246 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 249 "data/maps/FrescoIsland/scripts.pory"
+# 247 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_LittleBoyBuildingSandCastle::
-# 255 "data/maps/FrescoIsland/scripts.pory"
+# 253 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 256 "data/maps/FrescoIsland/scripts.pory"
+# 254 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 257 "data/maps/FrescoIsland/scripts.pory"
+# 255 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_LittleBoyBuildingSandCastle_Text_0
-# 258 "data/maps/FrescoIsland/scripts.pory"
+# 256 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_LittleBoyBuildingSandCastle_Text_1
-# 259 "data/maps/FrescoIsland/scripts.pory"
+# 257 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 260 "data/maps/FrescoIsland/scripts.pory"
+# 258 "data/maps/FrescoIsland/scripts.pory"
 	applymovement 13, Common_Movement_FaceOriginalDirection
-# 261 "data/maps/FrescoIsland/scripts.pory"
+# 259 "data/maps/FrescoIsland/scripts.pory"
 	waitmovement 0
-# 262 "data/maps/FrescoIsland/scripts.pory"
+# 260 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_Trapinch::
-# 268 "data/maps/FrescoIsland/scripts.pory"
+# 266 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 269 "data/maps/FrescoIsland/scripts.pory"
+# 267 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 270 "data/maps/FrescoIsland/scripts.pory"
+# 268 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_Trapinch_Text_0
-# 271 "data/maps/FrescoIsland/scripts.pory"
+# 269 "data/maps/FrescoIsland/scripts.pory"
 	playmoncry SPECIES_TRAPINCH, CRY_MODE_NORMAL
-# 272 "data/maps/FrescoIsland/scripts.pory"
+# 270 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_Trapinch_Text_1
-# 273 "data/maps/FrescoIsland/scripts.pory"
+# 271 "data/maps/FrescoIsland/scripts.pory"
 	waitmoncry
-# 274 "data/maps/FrescoIsland/scripts.pory"
+# 272 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 275 "data/maps/FrescoIsland/scripts.pory"
+# 273 "data/maps/FrescoIsland/scripts.pory"
 	applymovement 14, Common_Movement_FaceOriginalDirection
-# 276 "data/maps/FrescoIsland/scripts.pory"
+# 274 "data/maps/FrescoIsland/scripts.pory"
 	waitmovement 0
-# 277 "data/maps/FrescoIsland/scripts.pory"
+# 275 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_GymSign::
-# 283 "data/maps/FrescoIsland/scripts.pory"
+# 281 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 284 "data/maps/FrescoIsland/scripts.pory"
+# 282 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_GymSign_Text_0
-# 285 "data/maps/FrescoIsland/scripts.pory"
+# 283 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 286 "data/maps/FrescoIsland/scripts.pory"
+# 284 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_BugCatcher::
-# 292 "data/maps/FrescoIsland/scripts.pory"
+# 290 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 293 "data/maps/FrescoIsland/scripts.pory"
+# 291 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 294 "data/maps/FrescoIsland/scripts.pory"
+# 292 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_BugCatcher_Text_0
-# 295 "data/maps/FrescoIsland/scripts.pory"
+# 293 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_BugCatcher_Text_1
-# 296 "data/maps/FrescoIsland/scripts.pory"
+# 294 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 297 "data/maps/FrescoIsland/scripts.pory"
+# 295 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_Athlete::
-# 303 "data/maps/FrescoIsland/scripts.pory"
+# 301 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 304 "data/maps/FrescoIsland/scripts.pory"
+# 302 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 305 "data/maps/FrescoIsland/scripts.pory"
+# 303 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_Athlete_Text_0
-# 306 "data/maps/FrescoIsland/scripts.pory"
+# 304 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_Athlete_Text_1
-# 307 "data/maps/FrescoIsland/scripts.pory"
+# 305 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 308 "data/maps/FrescoIsland/scripts.pory"
+# 306 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_BeautyRunning::
-# 314 "data/maps/FrescoIsland/scripts.pory"
+# 312 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 315 "data/maps/FrescoIsland/scripts.pory"
+# 313 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 316 "data/maps/FrescoIsland/scripts.pory"
+# 314 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_BeautyRunning_Text_0
-# 317 "data/maps/FrescoIsland/scripts.pory"
+# 315 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_BeautyRunning_Text_1
-# 318 "data/maps/FrescoIsland/scripts.pory"
+# 316 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 319 "data/maps/FrescoIsland/scripts.pory"
+# 317 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_Ponyta::
-# 325 "data/maps/FrescoIsland/scripts.pory"
+# 323 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 326 "data/maps/FrescoIsland/scripts.pory"
+# 324 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 327 "data/maps/FrescoIsland/scripts.pory"
+# 325 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_Ponyta_Text_0
-# 328 "data/maps/FrescoIsland/scripts.pory"
+# 326 "data/maps/FrescoIsland/scripts.pory"
 	playmoncry SPECIES_PONYTA, CRY_MODE_NORMAL
-# 329 "data/maps/FrescoIsland/scripts.pory"
+# 327 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_Ponyta_Text_1
-# 330 "data/maps/FrescoIsland/scripts.pory"
+# 328 "data/maps/FrescoIsland/scripts.pory"
 	waitmoncry
-# 331 "data/maps/FrescoIsland/scripts.pory"
+# 329 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 332 "data/maps/FrescoIsland/scripts.pory"
+# 330 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_CyclingAthlete::
-# 338 "data/maps/FrescoIsland/scripts.pory"
+# 336 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 339 "data/maps/FrescoIsland/scripts.pory"
+# 337 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 340 "data/maps/FrescoIsland/scripts.pory"
+# 338 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_CyclingAthlete_Text_0
-# 341 "data/maps/FrescoIsland/scripts.pory"
+# 339 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_CyclingAthlete_Text_1
-# 342 "data/maps/FrescoIsland/scripts.pory"
+# 340 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 343 "data/maps/FrescoIsland/scripts.pory"
+# 341 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_HikerViewingPot::
-# 349 "data/maps/FrescoIsland/scripts.pory"
+# 347 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 350 "data/maps/FrescoIsland/scripts.pory"
+# 348 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 351 "data/maps/FrescoIsland/scripts.pory"
+# 349 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_HikerViewingPot_Text_0
-# 352 "data/maps/FrescoIsland/scripts.pory"
+# 350 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_HikerViewingPot_Text_1
-# 353 "data/maps/FrescoIsland/scripts.pory"
+# 351 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 354 "data/maps/FrescoIsland/scripts.pory"
+# 352 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_OldWoman::
-# 360 "data/maps/FrescoIsland/scripts.pory"
+# 358 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 361 "data/maps/FrescoIsland/scripts.pory"
+# 359 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 362 "data/maps/FrescoIsland/scripts.pory"
+# 360 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_OldWoman_Text_0
-# 363 "data/maps/FrescoIsland/scripts.pory"
+# 361 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_OldWoman_Text_1
-# 364 "data/maps/FrescoIsland/scripts.pory"
+# 362 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 365 "data/maps/FrescoIsland/scripts.pory"
+# 363 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_Camper::
-# 371 "data/maps/FrescoIsland/scripts.pory"
+# 369 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 372 "data/maps/FrescoIsland/scripts.pory"
+# 370 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 373 "data/maps/FrescoIsland/scripts.pory"
+# 371 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_Camper_Text_0
-# 374 "data/maps/FrescoIsland/scripts.pory"
+# 372 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_Camper_Text_1
-# 375 "data/maps/FrescoIsland/scripts.pory"
+# 373 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 376 "data/maps/FrescoIsland/scripts.pory"
+# 374 "data/maps/FrescoIsland/scripts.pory"
+	goto_if_unset FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES, FrescoIsles_EventScript_Camper_2
+# 382 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_Camper_Text_0
+# 383 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_Camper_Text_3
+# 384 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+FrescoIsles_EventScript_Camper_1:
+# 386 "data/maps/FrescoIsland/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceUp
+# 387 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 388 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
+FrescoIsles_EventScript_Camper_2:
+# 376 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_Camper_Text_0
+# 377 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_Camper_Text_2
+# 378 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+	goto FrescoIsles_EventScript_Camper_1
+
 
 FrescoIsles_EventScript_ManOnChair::
-# 382 "data/maps/FrescoIsland/scripts.pory"
+# 394 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 383 "data/maps/FrescoIsland/scripts.pory"
+# 395 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 384 "data/maps/FrescoIsland/scripts.pory"
+# 396 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_ManOnChair_Text_0
-# 385 "data/maps/FrescoIsland/scripts.pory"
+# 397 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_ManOnChair_Text_1
-# 386 "data/maps/FrescoIsland/scripts.pory"
+# 398 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 387 "data/maps/FrescoIsland/scripts.pory"
+# 399 "data/maps/FrescoIsland/scripts.pory"
 	applymovement 23, Common_Movement_FaceDown
-# 388 "data/maps/FrescoIsland/scripts.pory"
+# 400 "data/maps/FrescoIsland/scripts.pory"
 	waitmovement 0
-# 389 "data/maps/FrescoIsland/scripts.pory"
+# 401 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_TuberBuildingSandCastle::
-# 395 "data/maps/FrescoIsland/scripts.pory"
+# 407 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 396 "data/maps/FrescoIsland/scripts.pory"
+# 408 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 397 "data/maps/FrescoIsland/scripts.pory"
+# 409 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_TuberSwimming_Text_0
-# 398 "data/maps/FrescoIsland/scripts.pory"
+# 410 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_TuberBuildingSandCastle_Text_0
-# 399 "data/maps/FrescoIsland/scripts.pory"
+# 411 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 400 "data/maps/FrescoIsland/scripts.pory"
+# 412 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_Gentleman::
-# 406 "data/maps/FrescoIsland/scripts.pory"
+# 418 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 407 "data/maps/FrescoIsland/scripts.pory"
+# 419 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 408 "data/maps/FrescoIsland/scripts.pory"
+# 420 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_Gentleman_Text_0
-# 409 "data/maps/FrescoIsland/scripts.pory"
+# 421 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_Gentleman_Text_1
-# 410 "data/maps/FrescoIsland/scripts.pory"
+# 422 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 411 "data/maps/FrescoIsland/scripts.pory"
+# 423 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_TailorSign::
-# 417 "data/maps/FrescoIsland/scripts.pory"
+# 429 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 418 "data/maps/FrescoIsland/scripts.pory"
+# 430 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_TailorSign_Text_0
-# 419 "data/maps/FrescoIsland/scripts.pory"
+# 431 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 420 "data/maps/FrescoIsland/scripts.pory"
+# 432 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_HikerOnVolcano::
-# 426 "data/maps/FrescoIsland/scripts.pory"
+# 438 "data/maps/FrescoIsland/scripts.pory"
 	lock
-# 427 "data/maps/FrescoIsland/scripts.pory"
+# 439 "data/maps/FrescoIsland/scripts.pory"
 	faceplayer
-# 428 "data/maps/FrescoIsland/scripts.pory"
+# 440 "data/maps/FrescoIsland/scripts.pory"
 	speakername FrescoIsles_EventScript_HikerOnVolcano_Text_0
-# 429 "data/maps/FrescoIsland/scripts.pory"
+# 441 "data/maps/FrescoIsland/scripts.pory"
 	msgbox FrescoIsles_EventScript_HikerOnVolcano_Text_1
-# 430 "data/maps/FrescoIsland/scripts.pory"
+# 442 "data/maps/FrescoIsland/scripts.pory"
 	closemessage
-# 431 "data/maps/FrescoIsland/scripts.pory"
+# 443 "data/maps/FrescoIsland/scripts.pory"
+	release
+	end
+
+
+FrescoIsles_EventScript_TheatreSign::
+# 449 "data/maps/FrescoIsland/scripts.pory"
+	lock
+# 450 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TheatreSign_Text_0
+# 451 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 452 "data/maps/FrescoIsland/scripts.pory"
+	release
+	end
+
+
+FrescoIsles_EventScript_TheatreSpectator_Artist::
+# 458 "data/maps/FrescoIsland/scripts.pory"
+	lock
+# 459 "data/maps/FrescoIsland/scripts.pory"
+	faceplayer
+# 460 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_0
+# 462 "data/maps/FrescoIsland/scripts.pory"
+	goto_if_unset FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES, FrescoIsles_EventScript_TheatreSpectator_Artist_2
+# 468 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TheatreSpectator_Artist_Text_1
+FrescoIsles_EventScript_TheatreSpectator_Artist_1:
+# 470 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 471 "data/maps/FrescoIsland/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceUp
+# 472 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 474 "data/maps/FrescoIsland/scripts.pory"
+	release
+	end
+
+FrescoIsles_EventScript_TheatreSpectator_Artist_2:
+# 464 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TheatreSpectator_Artist_Text_0
+	goto FrescoIsles_EventScript_TheatreSpectator_Artist_1
+
+
+FrescoIsles_EventScript_TheatreSpectator_Performer::
+# 480 "data/maps/FrescoIsland/scripts.pory"
+	lock
+# 481 "data/maps/FrescoIsland/scripts.pory"
+	faceplayer
+# 482 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TheatreSpectator_Performer_Text_0
+# 484 "data/maps/FrescoIsland/scripts.pory"
+	goto_if_unset FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES, FrescoIsles_EventScript_TheatreSpectator_Performer_2
+# 490 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TheatreSpectator_Performer_Text_2
+FrescoIsles_EventScript_TheatreSpectator_Performer_1:
+# 492 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 493 "data/maps/FrescoIsland/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceUp
+# 494 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 496 "data/maps/FrescoIsland/scripts.pory"
+	release
+	end
+
+FrescoIsles_EventScript_TheatreSpectator_Performer_2:
+# 486 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TheatreSpectator_Performer_Text_1
+	goto FrescoIsles_EventScript_TheatreSpectator_Performer_1
+
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent::
+# 502 "data/maps/FrescoIsland/scripts.pory"
+	lockall
+# 503 "data/maps/FrescoIsland/scripts.pory"
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+# 504 "data/maps/FrescoIsland/scripts.pory"
+	compare VAR_TEMP_1, 72
+	goto_if_eq FrescoIsles_EventScript_TwinMusesAtTheatreEvent_2
+# 509 "data/maps/FrescoIsland/scripts.pory"
+	compare VAR_TEMP_1, 74
+	goto_if_eq FrescoIsles_EventScript_TwinMusesAtTheatreEvent_3
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_1:
+# 514 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 515 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 516 "data/maps/FrescoIsland/scripts.pory"
+	delay 5
+# 519 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 43, Common_Movement_JumpInPlaceRight
+# 520 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 521 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_0
+# 522 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_1
+# 523 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 524 "data/maps/FrescoIsland/scripts.pory"
+	delay 10
+# 525 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 45, Common_Movement_JumpInPlaceLeft
+# 526 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 527 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_2
+# 528 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_3
+# 529 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 530 "data/maps/FrescoIsland/scripts.pory"
+	emote 43, EMOTE_EXCLAM
+# 531 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_0
+# 532 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_4
+# 533 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 534 "data/maps/FrescoIsland/scripts.pory"
+	delay 10
+# 537 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 44, Common_Movement_JumpRight
+# 538 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 539 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 44, Common_Movement_JumpLeft
+# 540 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 46, Common_Movement_JumpLeft
+# 541 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 542 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 46, Common_Movement_JumpRight
+# 543 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 544 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 44, Common_Movement_FaceRight
+# 545 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 46, Common_Movement_FaceLeft
+# 546 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 548 "data/maps/FrescoIsland/scripts.pory"
+	delay 10
+# 549 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_2
+# 550 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_5
+# 551 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 553 "data/maps/FrescoIsland/scripts.pory"
+	delay 20
+# 554 "data/maps/FrescoIsland/scripts.pory"
+	emote 42, EMOTE_EXCLAM
+# 555 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 42, FrescoIsles_Movement_PerformerApproach
+# 556 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 557 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+# 558 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 559 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TheatreSpectator_Performer_Text_0
+# 560 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_6
+# 561 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 564 "data/maps/FrescoIsland/scripts.pory"
+	checkitem ITEM_BOX_OF_CHOCOLATE
+# 565 "data/maps/FrescoIsland/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq FrescoIsles_EventScript_TwinMusesAtTheatreEvent_7
+# 584 "data/maps/FrescoIsland/scripts.pory"
+	emote 42, EMOTE_HEART
+# 585 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TheatreSpectator_Performer_Text_0
+# 586 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_7
+# 587 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 588 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 42, FrescoIsles_Movement_PerformerBackToBench
+# 589 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 590 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+# 591 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 592 "data/maps/FrescoIsland/scripts.pory"
+	delay 20
+# 593 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 594 "data/maps/FrescoIsland/scripts.pory"
+	delay 20
+# 595 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 596 "data/maps/FrescoIsland/scripts.pory"
+	delay 20
+# 597 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_JumpInPlaceUp
+# 598 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 599 "data/maps/FrescoIsland/scripts.pory"
+	delay 20
+# 601 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 43, FrescoIsles_Movement_ThaliaApproach
+# 602 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 45, FrescoIsles_Movement_MelpomeneApproach
+# 603 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 604 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 605 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 606 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_0
+# 607 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_8
+# 608 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 609 "data/maps/FrescoIsland/scripts.pory"
+	delay 5
+# 610 "data/maps/FrescoIsland/scripts.pory"
+	removeitem ITEM_BOX_OF_CHOCOLATE
+# 611 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_9
+# 612 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 613 "data/maps/FrescoIsland/scripts.pory"
+	delay 20
+# 614 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 615 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 616 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_2
+# 617 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_10
+# 618 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 619 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 620 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 621 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_0
+# 622 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_11
+# 623 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 624 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+# 625 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 626 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_2
+# 627 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_12
+# 628 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 629 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 630 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 631 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_0
+# 632 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_13
+# 633 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 634 "data/maps/FrescoIsland/scripts.pory"
+	delay 10
+# 636 "data/maps/FrescoIsland/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 637 "data/maps/FrescoIsland/scripts.pory"
+	delay 30
+# 638 "data/maps/FrescoIsland/scripts.pory"
+	setflag FLAG_HIDE_TWIN_MUSES_FRESCO_ISLES
+# 639 "data/maps/FrescoIsland/scripts.pory"
+	removeobject 43
+# 640 "data/maps/FrescoIsland/scripts.pory"
+	removeobject 44
+# 641 "data/maps/FrescoIsland/scripts.pory"
+	removeobject 45
+# 642 "data/maps/FrescoIsland/scripts.pory"
+	removeobject 46
+# 643 "data/maps/FrescoIsland/scripts.pory"
+	delay 30
+# 644 "data/maps/FrescoIsland/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 646 "data/maps/FrescoIsland/scripts.pory"
+	delay 20
+# 647 "data/maps/FrescoIsland/scripts.pory"
+	completequest QUEST_CALM_TWIN_MUSES
+	return
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_2:
+# 506 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight
+# 507 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+	goto FrescoIsles_EventScript_TwinMusesAtTheatreEvent_1
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_3:
+# 511 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft
+# 512 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+	goto FrescoIsles_EventScript_TwinMusesAtTheatreEvent_1
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_7:
+# 567 "data/maps/FrescoIsland/scripts.pory"
+	applymovement 42, FrescoIsles_Movement_PerformerBackToBench
+# 568 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 570 "data/maps/FrescoIsland/scripts.pory"
+	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_CALM_TWIN_MUSES
+# 571 "data/maps/FrescoIsland/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq FrescoIsles_EventScript_TwinMusesAtTheatreEvent_10
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_9:
+# 577 "data/maps/FrescoIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+# 578 "data/maps/FrescoIsland/scripts.pory"
+	waitmovement 0
+# 579 "data/maps/FrescoIsland/scripts.pory"
+	release
+	end
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_10:
+# 573 "data/maps/FrescoIsland/scripts.pory"
+	delay 20
+# 574 "data/maps/FrescoIsland/scripts.pory"
+	startquest QUEST_CALM_TWIN_MUSES
+	goto FrescoIsles_EventScript_TwinMusesAtTheatreEvent_9
+
+
+# 658 "data/maps/FrescoIsland/scripts.pory"
+FrescoIsles_Movement_PerformerApproach:
+# 660 "data/maps/FrescoIsland/scripts.pory"
+	walk_left
+# 660 "data/maps/FrescoIsland/scripts.pory"
+	walk_left
+# 660 "data/maps/FrescoIsland/scripts.pory"
+	walk_left
+# 661 "data/maps/FrescoIsland/scripts.pory"
+	walk_up
+# 662 "data/maps/FrescoIsland/scripts.pory"
+	face_up
+# 663 "data/maps/FrescoIsland/scripts.pory"
+	step_end
+
+# 665 "data/maps/FrescoIsland/scripts.pory"
+FrescoIsles_Movement_PerformerBackToBench:
+# 667 "data/maps/FrescoIsland/scripts.pory"
+	walk_down
+# 668 "data/maps/FrescoIsland/scripts.pory"
+	walk_right
+# 668 "data/maps/FrescoIsland/scripts.pory"
+	walk_right
+# 668 "data/maps/FrescoIsland/scripts.pory"
+	walk_right
+# 669 "data/maps/FrescoIsland/scripts.pory"
+	face_up
+# 670 "data/maps/FrescoIsland/scripts.pory"
+	step_end
+
+# 672 "data/maps/FrescoIsland/scripts.pory"
+FrescoIsles_Movement_ThaliaApproach:
+# 674 "data/maps/FrescoIsland/scripts.pory"
+	walk_down
+# 675 "data/maps/FrescoIsland/scripts.pory"
+	walk_right
+# 676 "data/maps/FrescoIsland/scripts.pory"
+	step_end
+
+# 678 "data/maps/FrescoIsland/scripts.pory"
+FrescoIsles_Movement_MelpomeneApproach:
+# 680 "data/maps/FrescoIsland/scripts.pory"
+	walk_down
+# 681 "data/maps/FrescoIsland/scripts.pory"
+	walk_left
+# 682 "data/maps/FrescoIsland/scripts.pory"
+	step_end
+
+FrescoIsles_EventScript_ManBlockingGym::
+# 687 "data/maps/FrescoIsland/scripts.pory"
+	lock
+# 688 "data/maps/FrescoIsland/scripts.pory"
+	faceplayer
+# 689 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_ManBlockingGym_Text_0
+# 690 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_ManBlockingGym_Text_1
+# 691 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 692 "data/maps/FrescoIsland/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_EventScript_DirectionSign_Text_0:
-# 30 "data/maps/FrescoIsland/scripts.pory"
+# 28 "data/maps/FrescoIsland/scripts.pory"
 	.string "The Fresco Isles\n"
 	.string "History, Awash in Magma\p"
 	.string "{LEFT_ARROW} Sea of Vulcai$"
 
 FrescoIsles_EventScript_ClosedSign_Text_0:
-# 39 "data/maps/FrescoIsland/scripts.pory"
+# 37 "data/maps/FrescoIsland/scripts.pory"
 	.string "Building Closure Notice\n"
 	.string "Fresco Isles Research Lab has been\l"
 	.string "closed due to Team Chimera activity.\l"
@@ -673,54 +1089,54 @@ FrescoIsles_EventScript_ClosedSign_Text_0:
 	.string "prohibited.$"
 
 FrescoIsles_EventScript_TuberSwimming_Text_0:
-# 49 "data/maps/FrescoIsland/scripts.pory"
+# 47 "data/maps/FrescoIsland/scripts.pory"
 	.string "Tuber$"
 
 FrescoIsles_EventScript_TuberSwimming_Text_1:
-# 50 "data/maps/FrescoIsland/scripts.pory"
+# 48 "data/maps/FrescoIsland/scripts.pory"
 	.string "The water is so warm here! Best\n"
 	.string "vacation ever!!$"
 
 FrescoIsles_EventScript_WomanOnBeachChair_Text_0:
-# 60 "data/maps/FrescoIsland/scripts.pory"
+# 58 "data/maps/FrescoIsland/scripts.pory"
 	.string "Woman$"
 
 FrescoIsles_EventScript_WomanOnBeachChair_Text_1:
-# 61 "data/maps/FrescoIsland/scripts.pory"
+# 59 "data/maps/FrescoIsland/scripts.pory"
 	.string "I brought my son here for some time to\n"
 	.string "relax. The world is crazy, so it's\l"
 	.string "important to take a moment and sit\l"
 	.string "back.$"
 
 FrescoIsles_EventScript_HexManiacWithHiddenPower_Text_0:
-# 73 "data/maps/FrescoIsland/scripts.pory"
+# 71 "data/maps/FrescoIsland/scripts.pory"
 	.string "Crystal Girl$"
 
 FrescoIsles_EventScript_HexManiacWithHiddenPower_Text_1:
-# 76 "data/maps/FrescoIsland/scripts.pory"
+# 74 "data/maps/FrescoIsland/scripts.pory"
 	.string "Have you unlocked your Pokémon's\n"
 	.string "Hidden Power yet?$"
 
 FrescoIsles_EventScript_HexManiacWithHiddenPower_Text_2:
-# 81 "data/maps/FrescoIsland/scripts.pory"
+# 79 "data/maps/FrescoIsland/scripts.pory"
 	.string "Just like crystals, Pokémon have\n"
 	.string "special powers unique to them. I've\l"
 	.string "found a way to tap into that potential.\l"
 	.string "Check it out!$"
 
 FrescoIsles_EventScript_HexManiacWithHiddenPower_Text_3:
-# 89 "data/maps/FrescoIsland/scripts.pory"
+# 87 "data/maps/FrescoIsland/scripts.pory"
 	.string "Hidden Power is a move that changes\n"
 	.string "type based on the individual Pokémon.\l"
 	.string "You'd be surprised at what secrets your\l"
 	.string "Pokémon might hold.$"
 
 FrescoIsles_EventScript_Farmer_Text_0:
-# 100 "data/maps/FrescoIsland/scripts.pory"
+# 98 "data/maps/FrescoIsland/scripts.pory"
 	.string "Farmer$"
 
 FrescoIsles_EventScript_Farmer_Text_1:
-# 101 "data/maps/FrescoIsland/scripts.pory"
+# 99 "data/maps/FrescoIsland/scripts.pory"
 	.string "Most of the Fresco Isles are totally\n"
 	.string "covered in sand. Only shrubs and a few\l"
 	.string "hardy trees can grow there. To keep\l"
@@ -728,55 +1144,55 @@ FrescoIsles_EventScript_Farmer_Text_1:
 	.string "extra work.$"
 
 FrescoIsles_EventScript_SailorWithQuaxly_Text_0:
-# 111 "data/maps/FrescoIsland/scripts.pory"
+# 109 "data/maps/FrescoIsland/scripts.pory"
 	.string "Sailor$"
 
 FrescoIsles_EventScript_SailorWithQuaxly_Text_1:
-# 112 "data/maps/FrescoIsland/scripts.pory"
+# 110 "data/maps/FrescoIsland/scripts.pory"
 	.string "My boat got whipped into a rock in the\n"
 	.string "Sea of Vulcai. It's not all bad, though -\l"
 	.string "I found this rare Pokémon right on the\l"
 	.string "beach!$"
 
 FrescoIsles_EventScript_Quaxly_Text_0:
-# 124 "data/maps/FrescoIsland/scripts.pory"
+# 122 "data/maps/FrescoIsland/scripts.pory"
 	.string "Quaxly$"
 
 FrescoIsles_EventScript_Quaxly_Text_1:
-# 126 "data/maps/FrescoIsland/scripts.pory"
+# 124 "data/maps/FrescoIsland/scripts.pory"
 	.string "Kwak wak wak!$"
 
 FrescoIsles_EventScript_LittleGirl_Text_0:
-# 137 "data/maps/FrescoIsland/scripts.pory"
+# 135 "data/maps/FrescoIsland/scripts.pory"
 	.string "Little Girl$"
 
 FrescoIsles_EventScript_LittleGirl_Text_1:
-# 138 "data/maps/FrescoIsland/scripts.pory"
+# 136 "data/maps/FrescoIsland/scripts.pory"
 	.string "Hiya! You're an adult, right? Do you\n"
 	.string "know why all the rocks around here are\l"
 	.string "black?$"
 
 FrescoIsles_EventScript_LittleGirl_Text_2:
-# 144 "data/maps/FrescoIsland/scripts.pory"
+# 142 "data/maps/FrescoIsland/scripts.pory"
 	.string "Yeah! It's volcanic rock!$"
 
 FrescoIsles_EventScript_LittleGirl_Text_3:
-# 150 "data/maps/FrescoIsland/scripts.pory"
+# 148 "data/maps/FrescoIsland/scripts.pory"
 	.string "Really? Ehehe, even I know why! It's all\n"
 	.string "made of dried lava!$"
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_0:
-# 161 "data/maps/FrescoIsland/scripts.pory"
+# 159 "data/maps/FrescoIsland/scripts.pory"
 	.string "Artist$"
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_1:
-# 167 "data/maps/FrescoIsland/scripts.pory"
+# 165 "data/maps/FrescoIsland/scripts.pory"
 	.string "These shard-based paints are so\n"
 	.string "bright, they'll be perfect for my\l"
 	.string "masterpiece!$"
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_2:
-# 177 "data/maps/FrescoIsland/scripts.pory"
+# 175 "data/maps/FrescoIsland/scripts.pory"
 	.string "Chaire. By any chance, are you a\n"
 	.string "treasure hunter?\p"
 	.string "The Fresco Isles have inspired me to\n"
@@ -788,14 +1204,14 @@ FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_2:
 	.string "promise to pay you back in kind.$"
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_3:
-# 184 "data/maps/FrescoIsland/scripts.pory"
+# 182 "data/maps/FrescoIsland/scripts.pory"
 	.string "Hey there. I'm still short on materials\n"
 	.string "to make my special paints. Would you\l"
 	.string "happen to have the colored Shards I\l"
 	.string "requested?$"
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_4:
-# 205 "data/maps/FrescoIsland/scripts.pory"
+# 203 "data/maps/FrescoIsland/scripts.pory"
 	.string "Woah, you have Red, Blue, Green, and\n"
 	.string "Yellow Shards! I'll crush them up into\l"
 	.string "stunning pigments.\p"
@@ -804,7 +1220,7 @@ FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_4:
 	.string "Amulet{COLOR DARK_GRAY} for your Pokémon to hold.$"
 
 FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_5:
-# 221 "data/maps/FrescoIsland/scripts.pory"
+# 219 "data/maps/FrescoIsland/scripts.pory"
 	.string "Hm, not yet, huh? I know they're rare.\p"
 	.string "Some Pokémon hold colored Shards, and\n"
 	.string "they can be found underground too.\l"
@@ -812,19 +1228,19 @@ FrescoIsles_EventScript_ArtistNeedsPaintMaterials_Text_5:
 	.string "Shard type{COLOR DARK_GRAY} once you have them!$"
 
 FrescoIsles_EventScript_Dreepy_Text_0:
-# 233 "data/maps/FrescoIsland/scripts.pory"
+# 231 "data/maps/FrescoIsland/scripts.pory"
 	.string "Dreepy$"
 
 FrescoIsles_EventScript_Dreepy_Text_1:
-# 235 "data/maps/FrescoIsland/scripts.pory"
+# 233 "data/maps/FrescoIsland/scripts.pory"
 	.string "Ee-auhhh...$"
 
 FrescoIsles_EventScript_GirlWithDreepy_Text_0:
-# 246 "data/maps/FrescoIsland/scripts.pory"
+# 244 "data/maps/FrescoIsland/scripts.pory"
 	.string "Girl$"
 
 FrescoIsles_EventScript_GirlWithDreepy_Text_1:
-# 247 "data/maps/FrescoIsland/scripts.pory"
+# 245 "data/maps/FrescoIsland/scripts.pory"
 	.string "This Dreepy was left behind by its\n"
 	.string "colony. They're so small, sometimes they\l"
 	.string "get left behind by the Drakloak and\l"
@@ -833,34 +1249,34 @@ FrescoIsles_EventScript_GirlWithDreepy_Text_1:
 	.string "it with its friends one day.$"
 
 FrescoIsles_EventScript_LittleBoyBuildingSandCastle_Text_0:
-# 257 "data/maps/FrescoIsland/scripts.pory"
+# 255 "data/maps/FrescoIsland/scripts.pory"
 	.string "Little Boy$"
 
 FrescoIsles_EventScript_LittleBoyBuildingSandCastle_Text_1:
-# 258 "data/maps/FrescoIsland/scripts.pory"
+# 256 "data/maps/FrescoIsland/scripts.pory"
 	.string "I found my Trapinch along the beach!\n"
 	.string "Now I'm making it a sand castle to live\l"
 	.string "in!$"
 
 FrescoIsles_EventScript_Trapinch_Text_0:
-# 270 "data/maps/FrescoIsland/scripts.pory"
+# 268 "data/maps/FrescoIsland/scripts.pory"
 	.string "Trapinch$"
 
 FrescoIsles_EventScript_Trapinch_Text_1:
-# 272 "data/maps/FrescoIsland/scripts.pory"
+# 270 "data/maps/FrescoIsland/scripts.pory"
 	.string "Chomp chomp!$"
 
 FrescoIsles_EventScript_GymSign_Text_0:
-# 284 "data/maps/FrescoIsland/scripts.pory"
+# 282 "data/maps/FrescoIsland/scripts.pory"
 	.string "Gym Leaders: Thalia and Melpomene\n"
 	.string "The Theatrical Twins$"
 
 FrescoIsles_EventScript_BugCatcher_Text_0:
-# 294 "data/maps/FrescoIsland/scripts.pory"
+# 292 "data/maps/FrescoIsland/scripts.pory"
 	.string "Bug Catcher$"
 
 FrescoIsles_EventScript_BugCatcher_Text_1:
-# 295 "data/maps/FrescoIsland/scripts.pory"
+# 293 "data/maps/FrescoIsland/scripts.pory"
 	.string "Only the hardiest Pokémon can survive\n"
 	.string "around here. The lava doesn't leak out\l"
 	.string "anymore, but the heat and dry weather\l"
@@ -868,48 +1284,48 @@ FrescoIsles_EventScript_BugCatcher_Text_1:
 	.string "stand.$"
 
 FrescoIsles_EventScript_Athlete_Text_0:
-# 305 "data/maps/FrescoIsland/scripts.pory"
+# 303 "data/maps/FrescoIsland/scripts.pory"
 	.string "Athlete$"
 
 FrescoIsles_EventScript_Athlete_Text_1:
-# 306 "data/maps/FrescoIsland/scripts.pory"
+# 304 "data/maps/FrescoIsland/scripts.pory"
 	.string "Phew! Gotta keep getting stronger to\n"
 	.string "keep up with all the other Trainers.$"
 
 FrescoIsles_EventScript_BeautyRunning_Text_0:
-# 316 "data/maps/FrescoIsland/scripts.pory"
+# 314 "data/maps/FrescoIsland/scripts.pory"
 	.string "Beauty$"
 
 FrescoIsles_EventScript_BeautyRunning_Text_1:
-# 317 "data/maps/FrescoIsland/scripts.pory"
+# 315 "data/maps/FrescoIsland/scripts.pory"
 	.string "Ponyta, come back! She's been riled up\n"
 	.string "ever since we got here. I think she\l"
 	.string "likes the heat.$"
 
 FrescoIsles_EventScript_Ponyta_Text_0:
-# 327 "data/maps/FrescoIsland/scripts.pory"
+# 325 "data/maps/FrescoIsland/scripts.pory"
 	.string "Ponyta$"
 
 FrescoIsles_EventScript_Ponyta_Text_1:
-# 329 "data/maps/FrescoIsland/scripts.pory"
+# 327 "data/maps/FrescoIsland/scripts.pory"
 	.string "Breighh!$"
 
 FrescoIsles_EventScript_CyclingAthlete_Text_0:
-# 340 "data/maps/FrescoIsland/scripts.pory"
+# 338 "data/maps/FrescoIsland/scripts.pory"
 	.string "Cycling Athlete$"
 
 FrescoIsles_EventScript_CyclingAthlete_Text_1:
-# 341 "data/maps/FrescoIsland/scripts.pory"
+# 339 "data/maps/FrescoIsland/scripts.pory"
 	.string "This whole place is just sand and\n"
 	.string "water... This wasn't the best place for\l"
 	.string "biking, huh?$"
 
 FrescoIsles_EventScript_HikerViewingPot_Text_0:
-# 351 "data/maps/FrescoIsland/scripts.pory"
+# 349 "data/maps/FrescoIsland/scripts.pory"
 	.string "Ruin Maniac$"
 
 FrescoIsles_EventScript_HikerViewingPot_Text_1:
-# 352 "data/maps/FrescoIsland/scripts.pory"
+# 350 "data/maps/FrescoIsland/scripts.pory"
 	.string "Based on the ruins around here, these\n"
 	.string "islands used to be much more populated.\l"
 	.string "It seems that a volcanic explosion\l"
@@ -917,48 +1333,60 @@ FrescoIsles_EventScript_HikerViewingPot_Text_1:
 	.string "and cut the population.$"
 
 FrescoIsles_EventScript_OldWoman_Text_0:
-# 362 "data/maps/FrescoIsland/scripts.pory"
+# 360 "data/maps/FrescoIsland/scripts.pory"
 	.string "Old Woman$"
 
 FrescoIsles_EventScript_OldWoman_Text_1:
-# 363 "data/maps/FrescoIsland/scripts.pory"
+# 361 "data/maps/FrescoIsland/scripts.pory"
 	.string "Not many people visit the outlying\n"
 	.string "islands. It's just a few visitors, the\l"
 	.string "Pokémon, and me.$"
 
 FrescoIsles_EventScript_Camper_Text_0:
-# 373 "data/maps/FrescoIsland/scripts.pory"
+# 371 "data/maps/FrescoIsland/scripts.pory"
 	.string "Camper$"
 
 FrescoIsles_EventScript_Camper_Text_1:
-# 374 "data/maps/FrescoIsland/scripts.pory"
+# 372 "data/maps/FrescoIsland/scripts.pory"
 	.string "The Gym Leaders of the Fresco Isles are\n"
 	.string "twins. Thalia loves jokes and fun, while\l"
 	.string "Melpomene is always moping around and\l"
 	.string "watching tragedies. The only thing they\l"
 	.string "have in common is a love for theatre.$"
 
+FrescoIsles_EventScript_Camper_Text_2:
+# 377 "data/maps/FrescoIsland/scripts.pory"
+	.string "They're up on stage right now, having\n"
+	.string "another fight. When will they learn to\l"
+	.string "get along...$"
+
+FrescoIsles_EventScript_Camper_Text_3:
+# 383 "data/maps/FrescoIsland/scripts.pory"
+	.string "It seems like they've gone back to\n"
+	.string "their Gym Leader duties. Hopefully that\l"
+	.string "lasts...$"
+
 FrescoIsles_EventScript_ManOnChair_Text_0:
-# 384 "data/maps/FrescoIsland/scripts.pory"
+# 396 "data/maps/FrescoIsland/scripts.pory"
 	.string "Man$"
 
 FrescoIsles_EventScript_ManOnChair_Text_1:
-# 385 "data/maps/FrescoIsland/scripts.pory"
+# 397 "data/maps/FrescoIsland/scripts.pory"
 	.string "Ahh, this is the life. A cool breeze, warm\n"
 	.string "sand, and a drink in my hand.$"
 
 FrescoIsles_EventScript_TuberBuildingSandCastle_Text_0:
-# 398 "data/maps/FrescoIsland/scripts.pory"
+# 410 "data/maps/FrescoIsland/scripts.pory"
 	.string "My dad told me not to peek into the\n"
 	.string "abandoned lab up the hill. But I swear I\l"
 	.string "saw someone sneaking in earlier!$"
 
 FrescoIsles_EventScript_Gentleman_Text_0:
-# 408 "data/maps/FrescoIsland/scripts.pory"
+# 420 "data/maps/FrescoIsland/scripts.pory"
 	.string "Gentleman$"
 
 FrescoIsles_EventScript_Gentleman_Text_1:
-# 409 "data/maps/FrescoIsland/scripts.pory"
+# 421 "data/maps/FrescoIsland/scripts.pory"
 	.string "I came all the way here from Kalami City\n"
 	.string "to get a new suit made. But the Tailor is\l"
 	.string "sending me on a wild Swanna chase...\l"
@@ -966,15 +1394,151 @@ FrescoIsles_EventScript_Gentleman_Text_1:
 	.string "Swanna for some reason!$"
 
 FrescoIsles_EventScript_TailorSign_Text_0:
-# 418 "data/maps/FrescoIsland/scripts.pory"
+# 430 "data/maps/FrescoIsland/scripts.pory"
 	.string "Fresco Isles Tailor\n"
 	.string "Specialty Outfits for All!$"
 
 FrescoIsles_EventScript_HikerOnVolcano_Text_0:
-# 428 "data/maps/FrescoIsland/scripts.pory"
+# 440 "data/maps/FrescoIsland/scripts.pory"
 	.string "Hiker$"
 
 FrescoIsles_EventScript_HikerOnVolcano_Text_1:
-# 429 "data/maps/FrescoIsland/scripts.pory"
+# 441 "data/maps/FrescoIsland/scripts.pory"
 	.string "Woah, it's getting hot up here. Any\n"
 	.string "closer and it'll start to hurt...$"
+
+FrescoIsles_EventScript_TheatreSign_Text_0:
+# 450 "data/maps/FrescoIsland/scripts.pory"
+	.string "Fresco Isles Outdoor Theatre\n"
+	.string "Perfect for All Performing Arts!$"
+
+FrescoIsles_EventScript_TheatreSpectator_Artist_Text_0:
+# 464 "data/maps/FrescoIsland/scripts.pory"
+	.string "I came to support the arts, but it's\n"
+	.string "just Thalia and Melpomene fighting each\l"
+	.string "other. This isn't what I wanted!$"
+
+FrescoIsles_EventScript_TheatreSpectator_Artist_Text_1:
+# 468 "data/maps/FrescoIsland/scripts.pory"
+	.string "Thalia and Melpomene have gone back to\n"
+	.string "the Gym together. Now the Theatre can\l"
+	.string "get back to business!$"
+
+FrescoIsles_EventScript_TheatreSpectator_Performer_Text_0:
+# 482 "data/maps/FrescoIsland/scripts.pory"
+	.string "Performer$"
+
+FrescoIsles_EventScript_TheatreSpectator_Performer_Text_1:
+# 486 "data/maps/FrescoIsland/scripts.pory"
+	.string "I was about to perform, but Thalia and\n"
+	.string "Melpomene showed up and threw\l"
+	.string "everything off. Thalia requested a pop\l"
+	.string "song, but Melpomene wanted a sad song...\l"
+	.string "And now, here we are...$"
+
+FrescoIsles_EventScript_TheatreSpectator_Performer_Text_2:
+# 490 "data/maps/FrescoIsland/scripts.pory"
+	.string "I'm glad that Thalia and Melpomene put\n"
+	.string "aside their differences for now. I'll\l"
+	.string "resume my performance soon!$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_0:
+# 521 "data/maps/FrescoIsland/scripts.pory"
+	.string "Thalia$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_1:
+# 522 "data/maps/FrescoIsland/scripts.pory"
+	.string "ALL YOU EVER THINK ABOUT IS SADNESS!\n"
+	.string "WHAT'S WRONG WITH A LITTLE FUN AND\l"
+	.string "LAUGHTER?!$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_2:
+# 527 "data/maps/FrescoIsland/scripts.pory"
+	.string "Melpomene$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_3:
+# 528 "data/maps/FrescoIsland/scripts.pory"
+	.string "You and your pop music... More like SLOP\n"
+	.string "MUSIC! EMOTION MAKES US THINK, UNLIKE\l"
+	.string "YOUR BRAINLESS SONGS!!$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_4:
+# 532 "data/maps/FrescoIsland/scripts.pory"
+	.string "That DOES IT! Raichu, knock this sad\n"
+	.string "sack into the sea!$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_5:
+# 550 "data/maps/FrescoIsland/scripts.pory"
+	.string "Heh, it won't be that easy, Thalia! I've\n"
+	.string "always been the stronger twin!$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_6:
+# 560 "data/maps/FrescoIsland/scripts.pory"
+	.string "They've been at this for hours... Thalia\n"
+	.string "and Melpomene may be twin Gym Leaders,\l"
+	.string "but they clash over every\l"
+	.string "disagreement.\p"
+	.string "The only thing that can calm them down\n"
+	.string "is a {COLOR GREEN}Box of Chocolate{COLOR DARK_GRAY} sold in the {COLOR GREEN}Poké\l"
+	.string "Mart{COLOR DARK_GRAY} nearby. If you want to speak with\l"
+	.string "them, I'd hurry over with your peace\l"
+	.string "offering before the fight gets uglier!$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_7:
+# 586 "data/maps/FrescoIsland/scripts.pory"
+	.string "Hey, you've got the Box of Chocolate!\n"
+	.string "Quick, give it to the twins!$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_8:
+# 607 "data/maps/FrescoIsland/scripts.pory"
+	.string "Ugh, I can't stand needing to be serious\n"
+	.string "when we're fighting...\p"
+	.string "Sniff sniff... HEY! You've got\n"
+	.string "chocolates! Can we have some? Pretty\l"
+	.string "pleeease?$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_9:
+# 611 "data/maps/FrescoIsland/scripts.pory"
+	.string "You gave the Box of Chocolates to\n"
+	.string "Thalia and Melpomene.$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_10:
+# 617 "data/maps/FrescoIsland/scripts.pory"
+	.string "Look, Thal... I'm sorry I tried to fight\n"
+	.string "you over a show. I just feel so strongly\l"
+	.string "about it, that sometimes I lose my\l"
+	.string "senses.$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_11:
+# 622 "data/maps/FrescoIsland/scripts.pory"
+	.string "No, Mel, I'M sorry. I get so involved in\n"
+	.string "my music, I forget that other people\l"
+	.string "might want different things.\p"
+	.string "Ehehe, at least we can agree on food,\n"
+	.string "right, sis?$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_12:
+# 627 "data/maps/FrescoIsland/scripts.pory"
+	.string "I suppose so. Come now, let us return to\n"
+	.string "our duties at the Gym.$"
+
+FrescoIsles_EventScript_TwinMusesAtTheatreEvent_Text_13:
+# 632 "data/maps/FrescoIsland/scripts.pory"
+	.string "Alright straight to the point, hm? Heh,\n"
+	.string "I guess you're right, though.\p"
+	.string "You! You must be looking to beat the\n"
+	.string "Fresco Isles Gym, right? Thanks to you,\l"
+	.string "we'll be back on Gym duty. See ya soon!$"
+
+FrescoIsles_EventScript_ManBlockingGym_Text_0:
+# 689 "data/maps/FrescoIsland/scripts.pory"
+	.string "Gym Guide$"
+
+FrescoIsles_EventScript_ManBlockingGym_Text_1:
+# 690 "data/maps/FrescoIsland/scripts.pory"
+	.string "You must be looking for the Gym\n"
+	.string "Leaders, huh? {COLOR GREEN}Thalia and Melpomene{COLOR DARK_GRAY}, the\l"
+	.string "Gym Leaders, are always fighting. Last I\l"
+	.string "saw them, Thalia was skipping off to the\l"
+	.string "{COLOR GREEN}Theatre{COLOR DARK_GRAY}, and Melpomene was racing\l"
+	.string "after her.$"

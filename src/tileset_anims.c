@@ -44,6 +44,7 @@ static void TilesetAnim_BikeShop(u16);
 static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
 static void TilesetAnim_Jusmail(u16);
+static void TilesetAnim_FrescoIsles(u16);
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
@@ -59,6 +60,7 @@ static void QueueAnimTiles_BikeShop_BlinkingLights(u16);
 static void QueueAnimTiles_BattlePyramid_Torch(u16);
 static void QueueAnimTiles_BattlePyramid_StatueShadow(u16);
 static void QueueAnimTiles_Jusmail_Windmill_Row01(u16);
+static void QueueAnimTiles_FrescoIsles_Lava(u16);
 static void BlendAnimPalette_BattleDome_FloorLights(u16);
 static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16);
 static void QueueAnimTiles_Lavaridge_Steam(u8);
@@ -593,6 +595,18 @@ static const u16 *const gTilesetAnims_Jusmail_Windmill_Row01[] = {
     gTilesetAnims_Jusmail_Windmill_Row01_Frame14
 };
 
+const u16 gTilesetAnims_FrescoIsles_Lava_Frame0[] = INCBIN_U16("data/tilesets/secondary/fresco_isles/anim/lava/lava_0.4bpp");
+const u16 gTilesetAnims_FrescoIsles_Lava_Frame1[] = INCBIN_U16("data/tilesets/secondary/fresco_isles/anim/lava/lava_1.4bpp");
+const u16 gTilesetAnims_FrescoIsles_Lava_Frame2[] = INCBIN_U16("data/tilesets/secondary/fresco_isles/anim/lava/lava_2.4bpp");
+const u16 gTilesetAnims_FrescoIsles_Lava_Frame3[] = INCBIN_U16("data/tilesets/secondary/fresco_isles/anim/lava/lava_3.4bpp");
+
+static const u16 *const gTilesetAnims_FrescoIsles_Lava[] = {
+    gTilesetAnims_FrescoIsles_Lava_Frame0,
+    gTilesetAnims_FrescoIsles_Lava_Frame1,
+    gTilesetAnims_FrescoIsles_Lava_Frame2,
+    gTilesetAnims_FrescoIsles_Lava_Frame3
+};
+
 static void ResetTilesetAnimBuffer(void)
 {
     sTilesetDMA3TransferBufferSize = 0;
@@ -685,6 +699,13 @@ void InitTilesetAnim_Jusmail(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_Jusmail;
 }
 
+void InitTilesetAnim_FrescoIsles(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_FrescoIsles;
+}
+
 static void TilesetAnim_General(u16 timer)
 {
     if (timer % 16 == 0)
@@ -741,6 +762,32 @@ static void QueueAnimTiles_Jusmail_Windmill_Row01(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_Jusmail_Windmill_Row01);
     AppendTilesetAnimToBuffer(gTilesetAnims_Jusmail_Windmill_Row01[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(0x344)), 0x180);
+}
+
+static void TilesetAnim_FrescoIsles(u16 timer)
+{
+    if (timer % 16 == 0)
+    {
+        QueueAnimTiles_FrescoIsles_Lava(timer >> 4);
+    }
+
+    // adding the TilesetAnim_General shtuff here lol
+    if (timer % 16 == 0)
+        QueueAnimTiles_General_Flower(timer / 16);
+    if (timer % 16 == 1)
+        QueueAnimTiles_General_Water(timer / 16);
+    if (timer % 16 == 2)
+        QueueAnimTiles_General_SandWaterEdge(timer / 16);
+    if (timer % 16 == 3)
+        QueueAnimTiles_General_Waterfall(timer / 16);
+    if (timer % 16 == 4)
+        QueueAnimTiles_General_LandWaterEdge(timer / 16);
+}
+
+static void QueueAnimTiles_FrescoIsles_Lava(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_FrescoIsles_Lava);
+    AppendTilesetAnimToBuffer(gTilesetAnims_FrescoIsles_Lava[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(0x2A0)), 4 * TILE_SIZE_4BPP);
 }
 
 // NOTE TO SELF:

@@ -528,6 +528,14 @@ script AcrisiaCity_University_EventScript_Niko
                 release
                 end
             }
+            elif(var(VAR_NIKO_STATE) == 11) // after Gym 6
+            {
+                speakername("Niko")
+                msgbox(format("I've been looking into Team Chimera's plans. That Ancient Mechanism they've been working to assemble is referred to in centuries-old texts. It seems to have a {COLOR GREEN}connection to the flow of time{COLOR DARK_GRAY}, but the specifics aren't clear to me."))
+                closemessage
+                release
+                end
+            }
         }
         else // chose cancel probably
         {
@@ -619,6 +627,20 @@ script AcrisiaCity_University_EventScript_Rania
     {
         speakername("Rania")
         msgbox(format("Welcome back, {PLAYER}. Cranidos and Shieldon are thriving, thanks to Niko's help!\p Oh, have you been practicing identifying wild Pokémon Natures? Pretty convenient, huh?"))
+        closemessage
+    }
+    elif(var(VAR_RANIA_STATE) >= 10 && !flag(FLAG_GOT_STEEL_WING_FROM_RANIA)) // Gym 6 complete & need Steel Wing TM
+    {
+        speakername("Rania")
+        msgbox(format("I see you've earned the {COLOR GREEN}Theatrical Badge{COLOR DARK_GRAY} from Thalia and Melpomene! Here, have this TM I found recently. I've already registered the data in the University system, so I don't need it anymore."))
+        closemessage
+        giveitem(ITEM_TM_STEEL_WING)
+        setflag(FLAG_GOT_STEEL_WING_FROM_RANIA)
+    }
+    elif(var(VAR_RANIA_STATE) == 10 && flag(FLAG_GOT_STEEL_WING_FROM_RANIA)) // Gym 6 complete & got Steel Wing TM
+    {
+        speakername("Rania")
+        msgbox(format("That TM contains the move Steel Wing. It's a great offensive option for many bird Pokémon!"))
         closemessage
     }
     release

@@ -93,6 +93,58 @@ MyrriniIsland_PokemonCenter_EventScript_Woman::
 	end
 
 
+MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck::
+# 64 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	lock
+# 65 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	faceplayer
+# 66 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	speakername MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 68 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	goto_if_set FLAG_CAUGHT_ALL_MONS_MYRRINI_ISLAND, MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_2
+# 75 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	msgbox MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2
+# 76 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	closemessage
+# 77 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	special CheckRouteCaptureProgress
+# 78 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_5
+MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_1:
+# 95 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	release
+	end
+
+MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_2:
+# 70 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	msgbox MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1
+# 71 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	closemessage
+	goto MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_5:
+# 80 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	delay 20
+# 81 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	emote VAR_LAST_TALKED, EMOTE_EXCLAM
+# 82 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	speakername MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 83 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	msgbox MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3
+# 84 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	closemessage
+# 85 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	delay 5
+# 88 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	giveitem ITEM_TM_POISON_JAB
+# 89 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	closemessage
+# 91 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	setflag FLAG_CAUGHT_ALL_MONS_MYRRINI_ISLAND
+	goto MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+
 MyrriniIsland_PokemonCenter_EventScript_PkmnCenterNurse_Text_0:
 # 7 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
 	.string "Nurse$"
@@ -138,3 +190,29 @@ MyrriniIsland_PokemonCenter_EventScript_Woman_Text_1:
 	.string "heal your Pokémon! They also have big\l"
 	.string "collections of books, the Inn service,\l"
 	.string "and even a helpful Region Map!$"
+
+MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0:
+# 66 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	.string "Uni. Student$"
+
+MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1:
+# 70 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	.string "Your Pokédex data is amazing! Now we\n"
+	.string "know more about the local ecosystem,\l"
+	.string "thanks to you.$"
+
+MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2:
+# 75 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	.string "Chaire! I'm a student from the Acrisia\n"
+	.string "University.\p"
+	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
+	.string "Pokémon{COLOR DARK_GRAY} found on Myrrini Island. If\l"
+	.string "you've caught all the Pokémon here,\l"
+	.string "please let me know.$"
+
+MyrriniIsland_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3:
+# 83 "data/maps/MyrriniIsland_PokemonCenter/scripts.pory"
+	.string "Incredible! You've caught all the\n"
+	.string "Pokémon that I requested in the area!\p"
+	.string "Here's a reward from the University.\n"
+	.string "Keep up your hard work!$"

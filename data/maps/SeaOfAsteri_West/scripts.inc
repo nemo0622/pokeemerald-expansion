@@ -55,71 +55,93 @@ AsteriSea_EventScript_DirectionSign::
 	end
 
 
-AsteriSea_EventScript_Trainer_AsteriSea_Aeson::
+AsteriSea_EventScript_UniversityStudentRouteCheck::
 # 35 "data/maps/SeaOfAsteri_West/scripts.pory"
-	trainerbattle_single TRAINER_ASTERISEA_AESON, AsteriSea_Text_Trainer_AsteriSea_AesonIntro, AsteriSea_Text_Trainer_AsteriSea_AesonDefeat
+	lock
 # 36 "data/maps/SeaOfAsteri_West/scripts.pory"
-	speakername AsteriSea_EventScript_Trainer_AsteriSea_Aeson_Text_0
+	faceplayer
 # 37 "data/maps/SeaOfAsteri_West/scripts.pory"
-	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Aeson_Text_1
-# 38 "data/maps/SeaOfAsteri_West/scripts.pory"
-	closemessage
+	speakername AsteriSea_EventScript_UniversityStudentRouteCheck_Text_0
 # 39 "data/maps/SeaOfAsteri_West/scripts.pory"
+	goto_if_set FLAG_CAUGHT_ALL_MONS_ASTERI_SEA, AsteriSea_EventScript_UniversityStudentRouteCheck_2
+# 46 "data/maps/SeaOfAsteri_West/scripts.pory"
+	msgbox AsteriSea_EventScript_UniversityStudentRouteCheck_Text_2
+# 47 "data/maps/SeaOfAsteri_West/scripts.pory"
+	closemessage
+# 48 "data/maps/SeaOfAsteri_West/scripts.pory"
+	special CheckRouteCaptureProgress
+# 49 "data/maps/SeaOfAsteri_West/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq AsteriSea_EventScript_UniversityStudentRouteCheck_5
+AsteriSea_EventScript_UniversityStudentRouteCheck_1:
+# 66 "data/maps/SeaOfAsteri_West/scripts.pory"
+	release
+	end
+
+AsteriSea_EventScript_UniversityStudentRouteCheck_2:
+# 41 "data/maps/SeaOfAsteri_West/scripts.pory"
+	msgbox AsteriSea_EventScript_UniversityStudentRouteCheck_Text_1
+# 42 "data/maps/SeaOfAsteri_West/scripts.pory"
+	closemessage
+	goto AsteriSea_EventScript_UniversityStudentRouteCheck_1
+
+AsteriSea_EventScript_UniversityStudentRouteCheck_5:
+# 51 "data/maps/SeaOfAsteri_West/scripts.pory"
+	delay 20
+# 52 "data/maps/SeaOfAsteri_West/scripts.pory"
+	emote VAR_LAST_TALKED, EMOTE_EXCLAM
+# 53 "data/maps/SeaOfAsteri_West/scripts.pory"
+	speakername AsteriSea_EventScript_UniversityStudentRouteCheck_Text_0
+# 54 "data/maps/SeaOfAsteri_West/scripts.pory"
+	msgbox AsteriSea_EventScript_UniversityStudentRouteCheck_Text_3
+# 55 "data/maps/SeaOfAsteri_West/scripts.pory"
+	closemessage
+# 56 "data/maps/SeaOfAsteri_West/scripts.pory"
+	delay 5
+# 59 "data/maps/SeaOfAsteri_West/scripts.pory"
+	giveitem ITEM_LIFE_ORB, 2
+# 60 "data/maps/SeaOfAsteri_West/scripts.pory"
+	closemessage
+# 62 "data/maps/SeaOfAsteri_West/scripts.pory"
+	setflag FLAG_CAUGHT_ALL_MONS_ASTERI_SEA
+	goto AsteriSea_EventScript_UniversityStudentRouteCheck_1
+
+
+AsteriSea_EventScript_Trainer_AsteriSea_Aeson::
+# 72 "data/maps/SeaOfAsteri_West/scripts.pory"
+	trainerbattle_single TRAINER_ASTERISEA_AESON, AsteriSea_Text_Trainer_AsteriSea_AesonIntro, AsteriSea_Text_Trainer_AsteriSea_AesonDefeat
+# 73 "data/maps/SeaOfAsteri_West/scripts.pory"
+	speakername AsteriSea_EventScript_Trainer_AsteriSea_Aeson_Text_0
+# 74 "data/maps/SeaOfAsteri_West/scripts.pory"
+	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Aeson_Text_1
+# 75 "data/maps/SeaOfAsteri_West/scripts.pory"
+	closemessage
+# 76 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 
 AsteriSea_EventScript_Trainer_AsteriSea_Taleia::
-# 53 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 90 "data/maps/SeaOfAsteri_West/scripts.pory"
 	trainerbattle_single TRAINER_ASTERISEA_TALEIA, AsteriSea_Text_Trainer_AsteriSea_TaleiaIntro, AsteriSea_Text_Trainer_AsteriSea_TaleiaDefeat
-# 54 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 91 "data/maps/SeaOfAsteri_West/scripts.pory"
 	speakername AsteriSea_EventScript_Trainer_AsteriSea_Taleia_Text_0
-# 55 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 92 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Taleia_Text_1
-# 56 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 93 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 57 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 94 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 
 AsteriSea_EventScript_Trainer_AsteriSea_Hamon::
-# 71 "data/maps/SeaOfAsteri_West/scripts.pory"
-	trainerbattle_single TRAINER_ASTERISEA_HAMON, AsteriSea_Text_Trainer_AsteriSea_HamonIntro, AsteriSea_Text_Trainer_AsteriSea_HamonDefeat
-# 72 "data/maps/SeaOfAsteri_West/scripts.pory"
-	speakername AsteriSea_EventScript_Trainer_AsteriSea_Hamon_Text_0
-# 73 "data/maps/SeaOfAsteri_West/scripts.pory"
-	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Hamon_Text_1
-# 74 "data/maps/SeaOfAsteri_West/scripts.pory"
-	closemessage
-# 75 "data/maps/SeaOfAsteri_West/scripts.pory"
-	release
-	end
-
-
-AsteriSea_EventScript_Trainer_AsteriSea_Georgia::
-# 89 "data/maps/SeaOfAsteri_West/scripts.pory"
-	trainerbattle_single TRAINER_ASTERISEA_GEORGIA, AsteriSea_Text_Trainer_AsteriSea_GeorgiaIntro, AsteriSea_Text_Trainer_AsteriSea_GeorgiaDefeat
-# 90 "data/maps/SeaOfAsteri_West/scripts.pory"
-	speakername AsteriSea_EventScript_Trainer_AsteriSea_Georgia_Text_0
-# 91 "data/maps/SeaOfAsteri_West/scripts.pory"
-	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Georgia_Text_1
-# 92 "data/maps/SeaOfAsteri_West/scripts.pory"
-	closemessage
-# 93 "data/maps/SeaOfAsteri_West/scripts.pory"
-	release
-	end
-
-
-AsteriSea_EventScript_NPC_Picnicker::
-# 107 "data/maps/SeaOfAsteri_West/scripts.pory"
-	lock
 # 108 "data/maps/SeaOfAsteri_West/scripts.pory"
-	faceplayer
+	trainerbattle_single TRAINER_ASTERISEA_HAMON, AsteriSea_Text_Trainer_AsteriSea_HamonIntro, AsteriSea_Text_Trainer_AsteriSea_HamonDefeat
 # 109 "data/maps/SeaOfAsteri_West/scripts.pory"
-	speakername AsteriSea_EventScript_NPC_Picnicker_Text_0
+	speakername AsteriSea_EventScript_Trainer_AsteriSea_Hamon_Text_0
 # 110 "data/maps/SeaOfAsteri_West/scripts.pory"
-	msgbox AsteriSea_EventScript_NPC_Picnicker_Text_1
+	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Hamon_Text_1
 # 111 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
 # 112 "data/maps/SeaOfAsteri_West/scripts.pory"
@@ -127,197 +149,227 @@ AsteriSea_EventScript_NPC_Picnicker::
 	end
 
 
-AsteriSea_EventScript_Trainer_AsteriSea_Tryfon::
-# 118 "data/maps/SeaOfAsteri_West/scripts.pory"
-	trainerbattle_single TRAINER_ASTERISEA_TRYFON, AsteriSea_Text_Trainer_AsteriSea_TryfonIntro, AsteriSea_Text_Trainer_AsteriSea_TryfonDefeat
-# 119 "data/maps/SeaOfAsteri_West/scripts.pory"
-	speakername AsteriSea_EventScript_Trainer_AsteriSea_Tryfon_Text_0
-# 120 "data/maps/SeaOfAsteri_West/scripts.pory"
-	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Tryfon_Text_1
-# 121 "data/maps/SeaOfAsteri_West/scripts.pory"
+AsteriSea_EventScript_Trainer_AsteriSea_Georgia::
+# 126 "data/maps/SeaOfAsteri_West/scripts.pory"
+	trainerbattle_single TRAINER_ASTERISEA_GEORGIA, AsteriSea_Text_Trainer_AsteriSea_GeorgiaIntro, AsteriSea_Text_Trainer_AsteriSea_GeorgiaDefeat
+# 127 "data/maps/SeaOfAsteri_West/scripts.pory"
+	speakername AsteriSea_EventScript_Trainer_AsteriSea_Georgia_Text_0
+# 128 "data/maps/SeaOfAsteri_West/scripts.pory"
+	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Georgia_Text_1
+# 129 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 122 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 130 "data/maps/SeaOfAsteri_West/scripts.pory"
+	release
+	end
+
+
+AsteriSea_EventScript_NPC_Picnicker::
+# 144 "data/maps/SeaOfAsteri_West/scripts.pory"
+	lock
+# 145 "data/maps/SeaOfAsteri_West/scripts.pory"
+	faceplayer
+# 146 "data/maps/SeaOfAsteri_West/scripts.pory"
+	speakername AsteriSea_EventScript_NPC_Picnicker_Text_0
+# 147 "data/maps/SeaOfAsteri_West/scripts.pory"
+	msgbox AsteriSea_EventScript_NPC_Picnicker_Text_1
+# 148 "data/maps/SeaOfAsteri_West/scripts.pory"
+	closemessage
+# 149 "data/maps/SeaOfAsteri_West/scripts.pory"
+	release
+	end
+
+
+AsteriSea_EventScript_Trainer_AsteriSea_Tryfon::
+# 155 "data/maps/SeaOfAsteri_West/scripts.pory"
+	trainerbattle_single TRAINER_ASTERISEA_TRYFON, AsteriSea_Text_Trainer_AsteriSea_TryfonIntro, AsteriSea_Text_Trainer_AsteriSea_TryfonDefeat
+# 156 "data/maps/SeaOfAsteri_West/scripts.pory"
+	speakername AsteriSea_EventScript_Trainer_AsteriSea_Tryfon_Text_0
+# 157 "data/maps/SeaOfAsteri_West/scripts.pory"
+	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Tryfon_Text_1
+# 158 "data/maps/SeaOfAsteri_West/scripts.pory"
+	closemessage
+# 159 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 
 AsteriSea_EventScript_Trainer_AsteriSea_Willy::
-# 136 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 173 "data/maps/SeaOfAsteri_West/scripts.pory"
 	trainerbattle_single TRAINER_ASTERISEA_WILLY, AsteriSea_Text_Trainer_AsteriSea_WillyIntro, AsteriSea_Text_Trainer_AsteriSea_WillyDefeat
-# 137 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 174 "data/maps/SeaOfAsteri_West/scripts.pory"
 	speakername AsteriSea_EventScript_Trainer_AsteriSea_Willy_Text_0
-# 138 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 175 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Willy_Text_1
-# 139 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 176 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 140 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 177 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 
 AsteriSea_EventScript_Trainer_AsteriSea_Celina::
-# 154 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 191 "data/maps/SeaOfAsteri_West/scripts.pory"
 	trainerbattle_single TRAINER_ASTERISEA_CELINA, AsteriSea_Text_Trainer_AsteriSea_CelinaIntro, AsteriSea_Text_Trainer_AsteriSea_CelinaDefeat
-# 155 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 192 "data/maps/SeaOfAsteri_West/scripts.pory"
 	speakername AsteriSea_EventScript_Trainer_AsteriSea_Celina_Text_0
-# 156 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 193 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Celina_Text_1
-# 157 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 194 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 158 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 195 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 
 AsteriSea_EventScript_NPC_ExpertM::
-# 172 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 209 "data/maps/SeaOfAsteri_West/scripts.pory"
 	lock
-# 173 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 210 "data/maps/SeaOfAsteri_West/scripts.pory"
 	faceplayer
-# 174 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 211 "data/maps/SeaOfAsteri_West/scripts.pory"
 	speakername AsteriSea_EventScript_NPC_ExpertM_Text_0
-# 177 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 214 "data/maps/SeaOfAsteri_West/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_ASTERI_SEA_PEARL_STRING
-# 178 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 215 "data/maps/SeaOfAsteri_West/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq AsteriSea_EventScript_NPC_ExpertM_2
-# 187 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 224 "data/maps/SeaOfAsteri_West/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_ASTERI_SEA_PEARL_STRING
-# 188 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 225 "data/maps/SeaOfAsteri_West/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AsteriSea_EventScript_NPC_ExpertM_5
-# 200 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 237 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_NPC_ExpertM_Text_3
-# 201 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 238 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 203 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 240 "data/maps/SeaOfAsteri_West/scripts.pory"
 	checkitem ITEM_PEARL_STRING
-# 204 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 241 "data/maps/SeaOfAsteri_West/scripts.pory"
 	delay 30
-# 205 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 242 "data/maps/SeaOfAsteri_West/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq AsteriSea_EventScript_NPC_ExpertM_8
-# 217 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 254 "data/maps/SeaOfAsteri_West/scripts.pory"
 	applymovement 9, Common_Movement_ExclamationMark
-# 218 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 255 "data/maps/SeaOfAsteri_West/scripts.pory"
 	waitmovement 0
-# 219 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 256 "data/maps/SeaOfAsteri_West/scripts.pory"
 	delay 10
-# 220 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 257 "data/maps/SeaOfAsteri_West/scripts.pory"
 	speakername AsteriSea_EventScript_NPC_ExpertM_Text_0
-# 221 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 258 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_NPC_ExpertM_Text_5
-# 222 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 259 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 223 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 260 "data/maps/SeaOfAsteri_West/scripts.pory"
 	delay 5
-# 224 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 261 "data/maps/SeaOfAsteri_West/scripts.pory"
 	giveitem ITEM_EXP_CANDY_L
-# 225 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 262 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 227 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 264 "data/maps/SeaOfAsteri_West/scripts.pory"
 	delay 20
-# 228 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 265 "data/maps/SeaOfAsteri_West/scripts.pory"
 	completequest QUEST_ASTERI_SEA_PEARL_STRING
 AsteriSea_EventScript_NPC_ExpertM_4:
-# 231 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 268 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 AsteriSea_EventScript_NPC_ExpertM_2:
-# 180 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 217 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_NPC_ExpertM_Text_1
-# 181 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 218 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 182 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 219 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 AsteriSea_EventScript_NPC_ExpertM_5:
-# 190 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 227 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_NPC_ExpertM_Text_2
-# 191 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 228 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 192 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 229 "data/maps/SeaOfAsteri_West/scripts.pory"
 	applymovement 9, Common_Movement_FaceLeft
-# 193 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 230 "data/maps/SeaOfAsteri_West/scripts.pory"
 	waitmovement 0
-# 195 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 232 "data/maps/SeaOfAsteri_West/scripts.pory"
 	delay 20
-# 196 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 233 "data/maps/SeaOfAsteri_West/scripts.pory"
 	startquest QUEST_ASTERI_SEA_PEARL_STRING
 	goto AsteriSea_EventScript_NPC_ExpertM_4
 
 AsteriSea_EventScript_NPC_ExpertM_8:
-# 207 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 244 "data/maps/SeaOfAsteri_West/scripts.pory"
 	speakername AsteriSea_EventScript_NPC_ExpertM_Text_0
-# 208 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 245 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_NPC_ExpertM_Text_4
-# 209 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 246 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 210 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 247 "data/maps/SeaOfAsteri_West/scripts.pory"
 	applymovement 9, Common_Movement_FaceLeft
-# 211 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 248 "data/maps/SeaOfAsteri_West/scripts.pory"
 	waitmovement 0
-# 212 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 249 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 
 AsteriSea_EventScript_Trainer_AsteriSea_Kida::
-# 237 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 274 "data/maps/SeaOfAsteri_West/scripts.pory"
 	trainerbattle_single TRAINER_ASTERISEA_KIDA, AsteriSea_Text_Trainer_AsteriSea_KidaIntro, AsteriSea_Text_Trainer_AsteriSea_KidaDefeat
-# 238 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 275 "data/maps/SeaOfAsteri_West/scripts.pory"
 	speakername AsteriSea_EventScript_Trainer_AsteriSea_Kida_Text_0
-# 239 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 276 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Kida_Text_1
-# 240 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 277 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 241 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 278 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 
 AsteriSea_EventScript_Trainer_AsteriSea_Sikar::
-# 255 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 292 "data/maps/SeaOfAsteri_West/scripts.pory"
 	trainerbattle_single TRAINER_ASTERISEA_SIKAR, AsteriSea_Text_Trainer_AsteriSea_SikarIntro, AsteriSea_Text_Trainer_AsteriSea_SikarDefeat
-# 256 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 293 "data/maps/SeaOfAsteri_West/scripts.pory"
 	speakername AsteriSea_EventScript_Trainer_AsteriSea_Sikar_Text_0
-# 257 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 294 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Sikar_Text_1
-# 258 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 295 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 259 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 296 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 
 AsteriSea_EventScript_Trainer_AsteriSea_Hammon::
-# 273 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 310 "data/maps/SeaOfAsteri_West/scripts.pory"
 	trainerbattle_single TRAINER_ASTERISEA_HAMMON, AsteriSea_Text_Trainer_AsteriSea_HammonIntro, AsteriSea_Text_Trainer_AsteriSea_HammonDefeat
-# 274 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 311 "data/maps/SeaOfAsteri_West/scripts.pory"
 	speakername AsteriSea_EventScript_Trainer_AsteriSea_Hammon_Text_0
-# 275 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 312 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_Trainer_AsteriSea_Hammon_Text_1
-# 276 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 313 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 277 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 314 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
 
 AsteriSea_EventScript_NPC_ManExplainingDive::
-# 291 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 328 "data/maps/SeaOfAsteri_West/scripts.pory"
 	lock
-# 292 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 329 "data/maps/SeaOfAsteri_West/scripts.pory"
 	faceplayer
-# 293 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 330 "data/maps/SeaOfAsteri_West/scripts.pory"
 	speakername AsteriSea_EventScript_NPC_ManExplainingDive_Text_0
-# 294 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 331 "data/maps/SeaOfAsteri_West/scripts.pory"
 	msgbox AsteriSea_EventScript_NPC_ManExplainingDive_Text_1
-# 295 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 332 "data/maps/SeaOfAsteri_West/scripts.pory"
 	closemessage
-# 296 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 333 "data/maps/SeaOfAsteri_West/scripts.pory"
 	release
 	end
 
@@ -330,59 +382,86 @@ AsteriSea_EventScript_DirectionSign_Text_0:
 	.string "Marmaro Island {RIGHT_ARROW}\n"
 	.string "{DOWN_ARROW} Sea of Vulcai$"
 
+AsteriSea_EventScript_UniversityStudentRouteCheck_Text_0:
+# 37 "data/maps/SeaOfAsteri_West/scripts.pory"
+	.string "Uni. Student$"
+
+AsteriSea_EventScript_UniversityStudentRouteCheck_Text_1:
+# 41 "data/maps/SeaOfAsteri_West/scripts.pory"
+	.string "Your Pokédex data is amazing! Now we\n"
+	.string "know more about the local ecosystem,\l"
+	.string "thanks to you.$"
+
+AsteriSea_EventScript_UniversityStudentRouteCheck_Text_2:
+# 46 "data/maps/SeaOfAsteri_West/scripts.pory"
+	.string "Chaire! I'm a student from the Acrisia\n"
+	.string "University.\p"
+	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
+	.string "Pokémon{COLOR DARK_GRAY} found in the Sea of Asteri,\l"
+	.string "both West and East sections. If you've\l"
+	.string "caught all the Pokémon here, please let\l"
+	.string "me know.$"
+
+AsteriSea_EventScript_UniversityStudentRouteCheck_Text_3:
+# 54 "data/maps/SeaOfAsteri_West/scripts.pory"
+	.string "Incredible! You've caught all the\n"
+	.string "Pokémon that I requested in the area!\p"
+	.string "Here's a reward from the University.\n"
+	.string "Keep up your hard work!$"
+
 AsteriSea_EventScript_Trainer_AsteriSea_Aeson_Text_0:
-# 36 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 73 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Aeson$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Aeson_Text_1:
-# 37 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 74 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "The water gets warmer as you swim\n"
 	.string "further south.$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Taleia_Text_0:
-# 54 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 91 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Taleia$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Taleia_Text_1:
-# 55 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 92 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "With all these rocks and islands around,\n"
 	.string "I guess it's not completely open ocean.$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Hamon_Text_0:
-# 72 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 109 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Hamon$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Hamon_Text_1:
-# 73 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 110 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Sliggoo can live on land and in the sea.\n"
 	.string "It's the perfect combination!$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Georgia_Text_0:
-# 90 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 127 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Georgia$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Georgia_Text_1:
-# 91 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 128 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Some parts of the ocean are deep but\n"
 	.string "safe enough to Dive in. I wish my\l"
 	.string "Pokémon knew how to help me do that.$"
 
 AsteriSea_EventScript_NPC_Picnicker_Text_0:
-# 109 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 146 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Picnicker$"
 
 AsteriSea_EventScript_NPC_Picnicker_Text_1:
-# 110 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 147 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Little islands like this are scattered\n"
 	.string "all over the sea. I wonder what Pokémon\l"
 	.string "can be found here!$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Tryfon_Text_0:
-# 119 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 156 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Tryfon$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Tryfon_Text_1:
-# 120 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 157 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Some areas are too dangerous for\n"
 	.string "people to Surf or swim through, because\l"
 	.string "of bad currents or whirlpools. Everyone\l"
@@ -390,37 +469,37 @@ AsteriSea_EventScript_Trainer_AsteriSea_Tryfon_Text_1:
 	.string "those places.$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Willy_Text_0:
-# 137 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 174 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Willy$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Willy_Text_1:
-# 138 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 175 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Sometimes I see people {COLOR GREEN}Dive into the\n"
 	.string "Crescent Trench{COLOR DARK_GRAY}. That's the only way to\l"
 	.string "swim {COLOR GREEN}south{COLOR DARK_GRAY}. I wanna try it someday!$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Celina_Text_0:
-# 155 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 192 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Celina$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Celina_Text_1:
-# 156 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 193 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "These little sandbars and atolls are\n"
 	.string "perfect for some peaceful time alone.$"
 
 AsteriSea_EventScript_NPC_ExpertM_Text_0:
-# 174 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 211 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Old Man$"
 
 AsteriSea_EventScript_NPC_ExpertM_Text_1:
-# 180 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 217 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Thanks to you, my wife will have her\n"
 	.string "Pearl String necklace back! Once I'm all\l"
 	.string "rested up, I'll take a nice swim back to\l"
 	.string "Marmaro Island.$"
 
 AsteriSea_EventScript_NPC_ExpertM_Text_2:
-# 190 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 227 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Perfect, a young Trainer is just who I\n"
 	.string "needed! I'm in quite a pickle here...\p"
 	.string "I bought a {COLOR GREEN}Pearl String{COLOR DARK_GRAY} necklace for my\n"
@@ -436,57 +515,57 @@ AsteriSea_EventScript_NPC_ExpertM_Text_2:
 	.string "mean the world!$"
 
 AsteriSea_EventScript_NPC_ExpertM_Text_3:
-# 200 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 237 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Oh, hi there. Did you happen to find the\n"
 	.string "{COLOR GREEN}Pearl String{COLOR DARK_GRAY} I lost?$"
 
 AsteriSea_EventScript_NPC_ExpertM_Text_4:
-# 208 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 245 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Nothing, huh? It's alright, I knew it was\n"
 	.string "a long shot, anyway...\p"
 	.string "If you happen to find a {COLOR GREEN}Pearl String{COLOR DARK_GRAY},\n"
 	.string "please bring it back to me!$"
 
 AsteriSea_EventScript_NPC_ExpertM_Text_5:
-# 221 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 258 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "That's it! A {COLOR GREEN}Pearl String{COLOR DARK_GRAY} necklace! It\n"
 	.string "must be the one I dropped!\p"
 	.string "This was an important keepsake for us.\n"
 	.string "Please, take this as my thanks.$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Kida_Text_0:
-# 238 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 275 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Kida$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Kida_Text_1:
-# 239 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 276 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "You're a pretty strong Trainer. We can\n"
 	.string "share the island!$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Sikar_Text_0:
-# 256 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 293 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Sikar$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Sikar_Text_1:
-# 257 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 294 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "I guess I'm a little jumpy after sitting\n"
 	.string "here fishing all day.$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Hammon_Text_0:
-# 274 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 311 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Hammon$"
 
 AsteriSea_EventScript_Trainer_AsteriSea_Hammon_Text_1:
-# 275 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 312 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Ancient athletes used to train in harsh\n"
 	.string "conditions like this.$"
 
 AsteriSea_EventScript_NPC_ManExplainingDive_Text_0:
-# 293 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 330 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Man$"
 
 AsteriSea_EventScript_NPC_ManExplainingDive_Text_1:
-# 294 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 331 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Hmm, what to do...\p"
 	.string "The only way to head {COLOR GREEN}south to the\n"
 	.string "Fresco Isles{COLOR DARK_GRAY} is by {COLOR GREEN}Diving in the\l"
@@ -494,90 +573,90 @@ AsteriSea_EventScript_NPC_ManExplainingDive_Text_1:
 	.string "know how to Dive yet!$"
 
 AsteriSea_Text_Trainer_AsteriSea_AesonIntro::
-# 42 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 79 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "There are so many tiny islands and\n"
 	.string "atolls in this part of the sea!$"
 
 AsteriSea_Text_Trainer_AsteriSea_AesonDefeat::
-# 46 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 83 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "I better swim to an island to rest!$"
 
 AsteriSea_Text_Trainer_AsteriSea_TaleiaIntro::
-# 60 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 97 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "I made it, it's the open sea! Let's\n"
 	.string "battle to celebrate!$"
 
 AsteriSea_Text_Trainer_AsteriSea_TaleiaDefeat::
-# 64 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 101 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Back to shore I go...$"
 
 AsteriSea_Text_Trainer_AsteriSea_HamonIntro::
-# 78 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 115 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Look at this Pokémon I found!$"
 
 AsteriSea_Text_Trainer_AsteriSea_HamonDefeat::
-# 82 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 119 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "No! My Sliggoo!$"
 
 AsteriSea_Text_Trainer_AsteriSea_GeorgiaIntro::
-# 96 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 133 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "The water gets way deeper over here!$"
 
 AsteriSea_Text_Trainer_AsteriSea_GeorgiaDefeat::
-# 100 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 137 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Aw, I've been sunk!$"
 
 AsteriSea_Text_Trainer_AsteriSea_TryfonIntro::
-# 125 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 162 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "I've battled a ton of Pokémon just by\n"
 	.string "swimming around!$"
 
 AsteriSea_Text_Trainer_AsteriSea_TryfonDefeat::
-# 129 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 166 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Looks like I need more training.$"
 
 AsteriSea_Text_Trainer_AsteriSea_WillyIntro::
-# 143 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 180 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Ehehe, look how close I can get to the\n"
 	.string "{COLOR GREEN}Crescent Trench{COLOR DARK_GRAY}! Maybe I'll Dive down\l"
 	.string "and swim to the {COLOR GREEN}Sea of Vulcai{COLOR DARK_GRAY}!$"
 
 AsteriSea_Text_Trainer_AsteriSea_WillyDefeat::
-# 147 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 184 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Eek! Swim away!$"
 
 AsteriSea_Text_Trainer_AsteriSea_CelinaIntro::
-# 161 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 198 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "I swam here for time alone. Find another\n"
 	.string "island!$"
 
 AsteriSea_Text_Trainer_AsteriSea_CelinaDefeat::
-# 165 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 202 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Fine, I guess you can stay.$"
 
 AsteriSea_Text_Trainer_AsteriSea_KidaIntro::
-# 244 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 281 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Bwahaha, finally! An island to claim as\n"
 	.string "my own!\p"
 	.string "Huh? There's someone else here?$"
 
 AsteriSea_Text_Trainer_AsteriSea_KidaDefeat::
-# 248 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 285 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Hey, it's still my island!$"
 
 AsteriSea_Text_Trainer_AsteriSea_SikarIntro::
-# 262 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 299 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "AIE!! Hey, don't scare me like that!$"
 
 AsteriSea_Text_Trainer_AsteriSea_SikarDefeat::
-# 266 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 303 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "You only won because I was surprised!$"
 
 AsteriSea_Text_Trainer_AsteriSea_HammonIntro::
-# 280 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 317 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "I heard that intense training leads to\n"
 	.string "intense muscles. I hope that's true!$"
 
 AsteriSea_Text_Trainer_AsteriSea_HammonDefeat::
-# 284 "data/maps/SeaOfAsteri_West/scripts.pory"
+# 321 "data/maps/SeaOfAsteri_West/scripts.pory"
 	.string "Huff... puff...$"

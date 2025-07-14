@@ -90,7 +90,7 @@ ErinysPath_East_EventScript_UniversityStudentRouteCheck_5:
 # 51 "data/maps/ErinysPath_East/scripts.pory"
 	delay 5
 # 54 "data/maps/ErinysPath_East/scripts.pory"
-	giveitem ITEM_FOCUS_BAND, 2
+	giveitem ITEM_FOCUS_SASH, 2
 # 55 "data/maps/ErinysPath_East/scripts.pory"
 	closemessage
 # 57 "data/maps/ErinysPath_East/scripts.pory"

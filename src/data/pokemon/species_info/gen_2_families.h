@@ -7304,7 +7304,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Lugia)
         OVERWORLD(
             sPicTable_Lugia,
-            SIZE_64x64,
+            SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_NONE,
             gOverworldPalette_Lugia,
@@ -7378,7 +7378,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(HoOh)
         OVERWORLD(
             sPicTable_HoOh,
-            SIZE_64x64,
+            SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_NONE,
             gOverworldPalette_HoOh,

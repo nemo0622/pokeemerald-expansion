@@ -1113,6 +1113,36 @@ side_quest(
 	NULL,
 	0
 ),
+side_quest(
+	gText_SideQuestName_55, // QUEST_CALM_TWIN_MUSES
+	gText_SideQuestDesc_55,
+	gText_SideQuestDesc_55,
+	gText_SideQuestMap55,
+	ITEM_BOX_OF_CHOCOLATE,
+	ITEM,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_56, // QUEST_FIND_RELICANTH
+	gText_SideQuestDesc_56,
+	gText_SideQuestDesc_56,
+	gText_SideQuestMap56,
+	SPECIES_RELICANTH,
+	PKMN,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_57, // QUEST_BRING_BERRIES_TO_TYPE_NULL
+	gText_SideQuestDesc_57,
+	gText_SideQuestDesc_57,
+	gText_SideQuestMap57,
+	ITEM_SITRUS_BERRY,
+	ITEM,
+	NULL,
+	0
+),
 };
 ////////////////////////END QUEST CUSTOMIZATION////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////

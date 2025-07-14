@@ -7472,7 +7472,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         OVERWORLD(
             sPicTable_RagingBolt,
             SIZE_64x64,
-            SHADOW_SIZE_M,
+            SHADOW_SIZE_L,
             TRACKS_FOOT,
             gOverworldPalette_RagingBolt,
             gShinyOverworldPalette_RagingBolt

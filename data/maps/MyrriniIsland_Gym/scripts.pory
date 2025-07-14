@@ -27,7 +27,7 @@ script MyrriniIsland_Gym_EventScript_GymMan
     }
     else
     {
-        msgbox(format("Welcome to the Myrrini Island Gym!\p The Gym Leader you'll be facing is Euterpe, the Muse of Parties and Poisons. Naturally, she uses {COLOR GREEN}Poison-type{COLOR DARK_GRAY} Pokémon and {COLOR GREEN}Status conditions{COLOR DARK_GRAY} to her advantage. Make sure to stock up on status-healing items!"))
+        msgbox(format("Welcome to the Myrrini Island Gym!\p The Gym Leader you'll be facing is Euterpe, the Muse of Parties and Poisons. Naturally, she uses {COLOR GREEN}Poison and Water-type{COLOR DARK_GRAY} Pokémon, in addition to difficult {COLOR GREEN}Status conditions{COLOR DARK_GRAY}, to her advantage. Make sure to stock up on status-healing items!"))
     }
     closemessage
     release

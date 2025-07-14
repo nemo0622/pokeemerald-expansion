@@ -90,7 +90,10 @@ script AcrisiaMountains_EventScript_OuraniTraining
 {
     lock
     speakername("Ourani")
-    msgbox(format("Huff huff huff...\p Always training, always working... Come on Larvitar, help me get stronger!"))
+    msgbox(format("C'mon, Larvitar! There's a whole new batch of University Students coming through the Gym Challenge. We need to be strong enough to give 'em a real battle!"))
+    closemessage
+    delay(5)
+    msgbox(format("She's too focused on training to move..."))
     closemessage
     release
     end

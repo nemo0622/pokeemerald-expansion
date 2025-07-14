@@ -1,0 +1,137 @@
+mapscripts FrescoIsles_AbandonedLab_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflashlevel(4)
+    }
+}
+
+script FrescoIsles_AbandonedLab_Scientist
+{
+    lock
+    faceplayer
+    speakername("Ex-Scientist")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_BRING_BERRIES_TO_TYPE_NULL)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+        msgbox(format("WOAH! Oh, it's just you!"))
+        closemessage
+        delay(5)
+        speakername("Ex-Scientist")
+        message(format("Here for one of Silvally's Memories? I'll produce whatever you need."))
+        waitmessage
+        pokemart(FrescoIsles_AbandonedLab_SilvallyMemoryMart)
+        closemessage
+        delay(1)
+        speakername("Ex-Scientist")
+        msgbox(format("Take care of the Pokémon I gave you... It's special to me."))
+        closemessage
+        applymovement(VAR_LAST_TALKED, Common_Movement_FaceLeft)
+        waitmovement(0)
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_BRING_BERRIES_TO_TYPE_NULL)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Hm? H-hey! Nobody's supposed to come in here! I could've sworn I locked the door..."))
+        closemessage
+        delay(60)
+        emote(VAR_LAST_TALKED, EMOTE_QUESTION)
+        speakername("Ex-Scientist")
+        msgbox(format("Oh, you want to know what I'M doing here? Well now that you're in here, I suppose I can't hide my secrets any longer.\p I was once a Scientist with Team Chimera. They stole valuable research papers from the Alola Region, and in my haste for scientific glory, I joined them. This Lab was my base of operations, and after years of work, I finally succeeded in using the stolen information... To create a new Pokémon. {COLOR GREEN}Type: Null{COLOR DARK_GRAY}, a weapon of control, and the perfect Pokémon for high-ranking Team Chimera members.\p After bringing Type: Null to life, I... I realized the evil of my ways. I couldn't hand it over and let Team Chimera use it to harm innocent people. When the Chimera Admins attacked, Type: Null pushed them back, forcing them to flee and saving my life."))
+        closemessage
+        delay(60)
+        emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+        speakername("Ex-Scientist")
+        msgbox(format("Y-you're still here? Most people would run off and report me...\p I just want to protect Type: Null, however I can. I almost never leave this building, but we're running low on food. If you could {COLOR GREEN}bring a dozen Sitrus Berries{COLOR DARK_GRAY}, Type: Null's favorite food, I'd be eternally grateful."))
+        closemessage
+        applymovement(VAR_LAST_TALKED, Common_Movement_FaceLeft)
+        waitmovement(0)
+
+        delay(20)
+        startquest(QUEST_BRING_BERRIES_TO_TYPE_NULL)
+    }
+    else
+    {
+        emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+        msgbox(format("WOAH! Oh, it's just you!"))
+        closemessage
+        delay(5)
+        speakername("Ex-Scientist")
+        msgbox(format("Have you gotten the {COLOR GREEN}Sitrus Berries{COLOR DARK_GRAY} for Type: Null and I?"))
+        closemessage
+
+        delay(30)
+        checkitem(ITEM_SITRUS_BERRY, 12)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Ex-Scientist")
+            msgbox(format("No? Please, hurry... I rarely leave the building, as Type: Null shouldn't be left alone for long.\p Type: Null's favorite food is {COLOR GREEN}Sitrus Berries{COLOR DARK_GRAY}. Please, bring {COLOR GREEN}a dozen{COLOR DARK_GRAY} for us!"))
+            closemessage
+        }
+        else
+        {
+            emote(VAR_LAST_TALKED, EMOTE_HEART)
+            speakername("Ex-Scientist")
+            msgbox(format("You have them! Please, hand them over. I'll feed them to Type: Null immediately."))
+            closemessage
+            removeitem(ITEM_SITRUS_BERRY, 12)
+            applymovement(1, FrescoIsles_AbandonedLab_Movement_ScientistFeedsTypeNull)
+            waitmovement(0)
+            speakername("Ex-Scientist")
+            msgbox(format("Type: Null ate its fill! Thank you, young Trainer.\p I've noticed your Gym Badges, and the Poké Balls at your side. You seem to be quite the Trainer... Even fighting back against Team Chimera, from what my remaining contacts have told me.\p Type: Null cannot stay here forever. An abandoned lab is no place for a Pokémon to live, but I'm not a skilled enough Trainer to help it in battle. Please, I want you to {COLOR GREEN}take Type: Null{COLOR DARK_GRAY} on your journey."))
+            closemessage
+            delay(5)
+            givemon(SPECIES_TYPE_NULL, 30)
+            closemessage
+            delay(5)
+            speakername("Ex-Scientist")
+            msgbox(format("You must do what I was never strong enough to: defeat Team Chimera once and for all. Type: Null is itching to see the world and fight loyally by a Trainer's side.\p One last thing... The stolen papers from Alola mentioned a Type: Null {COLOR GREEN}breaking free from their helmet{COLOR DARK_GRAY}, gaining full control over their {COLOR GREEN}type-changing RKS System{COLOR DARK_GRAY}. Return to me if this ever happens, and I will produce the necessary {COLOR GREEN}Memory items{COLOR DARK_GRAY} to change the Pokémon's type."))
+            closemessage
+
+            delay(20)
+            completequest(QUEST_BRING_BERRIES_TO_TYPE_NULL)
+        }
+    }
+    release
+    end
+}
+
+mart FrescoIsles_AbandonedLab_SilvallyMemoryMart
+{
+    ITEM_SOOTHE_BELL
+    ITEM_FIRE_MEMORY
+    ITEM_WATER_MEMORY
+    ITEM_ELECTRIC_MEMORY
+    ITEM_GRASS_MEMORY
+    ITEM_ICE_MEMORY
+    ITEM_FIGHTING_MEMORY
+    ITEM_POISON_MEMORY
+    ITEM_GROUND_MEMORY
+    ITEM_FLYING_MEMORY
+    ITEM_PSYCHIC_MEMORY
+    ITEM_BUG_MEMORY
+    ITEM_ROCK_MEMORY
+    ITEM_GHOST_MEMORY
+    ITEM_DRAGON_MEMORY
+    ITEM_DARK_MEMORY
+    ITEM_STEEL_MEMORY
+    ITEM_FAIRY_MEMORY
+}
+
+movement FrescoIsles_AbandonedLab_Movement_ScientistFeedsTypeNull
+{
+    walk_down
+    walk_left * 3
+    walk_up * 3
+    delay_16 * 2
+    walk_down * 3
+    walk_right * 3
+    walk_up
+    face_right
+    step_end
+}

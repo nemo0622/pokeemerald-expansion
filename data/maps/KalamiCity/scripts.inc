@@ -1161,9 +1161,9 @@ KalamiCity_EventScript_UniversityStudentRouteCheck_Text_2:
 	.string "Chaire (Hyeh-rei)! I'm a student from\n"
 	.string "the Acrisia University.\p"
 	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
-	.string "and Water Pokémon{COLOR DARK_GRAY} found in Acrisia\l"
-	.string "City. If you've caught all the Pokémon\l"
-	.string "here, please let me know.$"
+	.string "and Water Pokémon{COLOR DARK_GRAY} found in Kalami City.\l"
+	.string "If you've caught all the Pokémon here,\l"
+	.string "please let me know.$"
 
 KalamiCity_EventScript_UniversityStudentRouteCheck_Text_3:
 # 238 "data/maps/KalamiCity/scripts.pory"

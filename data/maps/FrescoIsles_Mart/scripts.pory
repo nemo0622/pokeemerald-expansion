@@ -1,0 +1,139 @@
+mapscripts FrescoIsles_Mart_MapScripts {}
+
+script FrescoIsles_Mart_EventScript_MartEmployee
+{
+    lock
+    faceplayer
+    speakername("Mart Employee")
+
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_CALM_TWIN_MUSES)
+    if(var(VAR_RESULT) == TRUE) // Box of Chocolate quest is active
+    {
+        msgbox(format("Welcome to the Fresco Isles Mart! How can I help you?"))
+        closemessage
+        delay(20)
+        emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+        speakername("Mart Employee")
+        msgbox(format("The Gym Leaders are fighting again? Normally, I'd give you their favorite food, a Box of Chocolate. I'm sorry, but I just sold our last boxes to {COLOR GREEN}that Trainer by the shelf{COLOR DARK_GRAY}. Maybe you could ask her for some?"))
+        closemessage
+    }
+    else
+    {
+        message(gText_HowMayIServeYou)
+        waitmessage
+        pokemart(FrescoIsles_Mart_Shop)
+        closemessage
+        delay(1)
+        speakername("Mart Employee")
+        msgbox(gText_PleaseComeAgain)
+    }
+    release
+    end
+
+}
+
+mart FrescoIsles_Mart_Shop
+{
+    ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+    ITEM_ULTRA_BALL
+	ITEM_POTION
+	ITEM_SUPER_POTION
+    ITEM_HYPER_POTION
+    ITEM_REVIVE
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_FULL_HEAL
+	ITEM_ESCAPE_ROPE
+	ITEM_REPEL
+    ITEM_SUPER_REPEL
+    ITEM_MAX_REPEL
+}
+
+script FrescoIsles_Mart_EventScript_CooltrainerWithChocolates
+{
+    lock
+    faceplayer
+    speakername("Cooltrainer")
+
+    if(flag(FLAG_BEAT_TRAINER_WITH_CHOCOLATES))
+    {
+        msgbox(format("Did you get the {COLOR GREEN}Box of Chocolate{COLOR DARK_GRAY} to the Gym Leaders? That should get them to stop fighting and head back to the Gym."))
+        closemessage
+    }
+    else
+    {
+        questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_CALM_TWIN_MUSES)
+        if(var(VAR_RESULT) == FALSE) // Box of Chocolate quest is not active
+        {
+            msgbox(format("Ehehe, I just bought a few delicious Boxes of Chocolate! I don't really need them all, but I figured I might as well get some extra."))
+            closemessage
+            release
+            end
+        }
+
+        // if quest is active, do the box of chocolate event
+        msgbox(format("Hm? Are you here for one of the {COLOR GREEN}Boxes of Chocolate{COLOR DARK_GRAY} I bought? I suppose I could spare one... If you're willing to battle me for it!"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Cooltrainer")
+            msgbox(format("Come back and give me a good battle, and I'll let you have a {COLOR GREEN}Box of Chocolate{COLOR DARK_GRAY}."))
+            closemessage
+            release
+            end
+        }
+        else
+        {
+            // Said yes to battle!
+            speakername("Cooltrainer")
+            msgbox(format("Bwahaha, yes! I've been itching for battle!"))
+            closemessage
+
+            trainerbattle_no_intro(TRAINER_FRESCOISLES_STELLA, FrescoIsles_Mart_Text_StellaDefeat)
+
+            delay(5)
+            setflag(FLAG_BEAT_TRAINER_WITH_CHOCOLATES)
+            giveitem(ITEM_BOX_OF_CHOCOLATE)
+            closemessage
+            delay(5)
+            speakername("Cooltrainer")
+            msgbox(format("You're definitely ready for the Gym! Just bring that {COLOR GREEN}Box of Chocolate{COLOR DARK_GRAY} to the {COLOR GREEN}Gym Leaders{COLOR DARK_GRAY}. They'll share it and calm down, like always."))
+            closemessage
+        }
+    }
+
+    release
+    end
+}
+
+text FrescoIsles_Mart_Text_StellaDefeat
+{
+    format("Heh, what an amazing battle! You've earned this.")
+}
+
+script FrescoIsles_Mart_EventScript_Meganium
+{
+    lock
+    faceplayer
+    speakername("Meganium")
+    playmoncry(SPECIES_MEGANIUM, CRY_MODE_NORMAL)
+    msgbox("Hwaaaahh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script FrescoIsles_Mart_EventScript_Officer
+{
+    lock
+    faceplayer
+    speakername("Officer")
+    msgbox(format("Life's pretty slow on the Fresco Isles. I mostly run security for shows at the Theatre, as crime's rare here.\p Actually, there used to be concerns over Team Chimera nearby, but they've abandoned their place here."))
+    closemessage
+    release
+    end
+}
