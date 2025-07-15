@@ -1950,6 +1950,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Yamper,
         .iconSprite = gMonIcon_Yamper,
         .iconPalIndex = 1,
+        SHADOW(-1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Yamper)
         OVERWORLD(
             sPicTable_Yamper,
@@ -2012,6 +2013,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Boltund,
         .iconSprite = gMonIcon_Boltund,
         .iconPalIndex = 1,
+        SHADOW(0, 6, SHADOW_SIZE_M)
         FOOTPRINT(Boltund)
         OVERWORLD(
             sPicTable_Boltund,
@@ -2503,7 +2505,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Appletun,
         .iconSprite = gMonIcon_Appletun,
         .iconPalIndex = 1,
-        SHADOW(2, 8, SHADOW_SIZE_L)
+        SHADOW(3, 7, SHADOW_SIZE_M)
         FOOTPRINT(Appletun)
         OVERWORLD(
             sPicTable_Appletun,
@@ -2623,7 +2625,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Dipplin,
         .iconSprite = gMonIcon_Dipplin,
         .iconPalIndex = 1,
-        SHADOW(-2, 8, SHADOW_SIZE_M)
+        SHADOW(-2, 7, SHADOW_SIZE_M)
         FOOTPRINT(Dipplin)
         OVERWORLD(
             sPicTable_Dipplin,
@@ -2685,7 +2687,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Hydrapple,
         .iconSprite = gMonIcon_Hydrapple,
         .iconPalIndex = 5,
-        SHADOW(1, 14, SHADOW_SIZE_L)
+        SHADOW(1, 13, SHADOW_SIZE_M)
         FOOTPRINT(Hydrapple)
         OVERWORLD(
             sPicTable_Hydrapple,
@@ -3531,7 +3533,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Sizzlipede,
         .iconSprite = gMonIcon_Sizzlipede,
         .iconPalIndex = 0,
-        SHADOW(3, -4, SHADOW_SIZE_M)
+        SHADOW(5, -5, SHADOW_SIZE_S)
         FOOTPRINT(Sizzlipede)
         OVERWORLD(
             sPicTable_Sizzlipede,
@@ -3594,7 +3596,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Centiskorch,
         .iconSprite = gMonIcon_Centiskorch,
         .iconPalIndex = 0,
-        SHADOW(4, 7, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(6, 7, SHADOW_SIZE_L)
         FOOTPRINT(Centiskorch)
         OVERWORLD(
             sPicTable_Centiskorch,
@@ -4331,7 +4333,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Impidimp,
         .iconSprite = gMonIcon_Impidimp,
         .iconPalIndex = 0,
-        SHADOW(0, 2, SHADOW_SIZE_S)
+        SHADOW(0, 1, SHADOW_SIZE_S)
         FOOTPRINT(Impidimp)
         OVERWORLD(
             sPicTable_Impidimp,
@@ -4393,7 +4395,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Morgrem,
         .iconSprite = gMonIcon_Morgrem,
         .iconPalIndex = 0,
-        SHADOW(3, 6, SHADOW_SIZE_L)
+        SHADOW(2, 4, SHADOW_SIZE_S)
         FOOTPRINT(Morgrem)
         OVERWORLD(
             sPicTable_Morgrem,
@@ -4455,7 +4457,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Grimmsnarl,
         .iconSprite = gMonIcon_Grimmsnarl,
         .iconPalIndex = 0,
-        SHADOW(1, 11, SHADOW_SIZE_L)
+        SHADOW(1, 10, SHADOW_SIZE_M)
         FOOTPRINT(Grimmsnarl)
         OVERWORLD(
             sPicTable_Grimmsnarl,
@@ -4815,7 +4817,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Falinks,
         .iconSprite = gMonIcon_Falinks,
         .iconPalIndex = 0,
-        SHADOW(-2, 2, SHADOW_SIZE_L)
+        SHADOW(0, 2, SHADOW_SIZE_M)
         FOOTPRINT(Falinks)
         OVERWORLD(
             sPicTable_Falinks,
@@ -5005,7 +5007,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Frosmoth,
         .iconSprite = gMonIcon_Frosmoth,
         .iconPalIndex = 0,
-        SHADOW(0, 15, SHADOW_SIZE_M)
+        SHADOW(0, 15, SHADOW_SIZE_S)
         FOOTPRINT(Frosmoth)
         OVERWORLD(
             sPicTable_Frosmoth,
@@ -5497,7 +5499,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Cufant,
         .iconSprite = gMonIcon_Cufant,
         .iconPalIndex = 0,
-        SHADOW(6, 3, SHADOW_SIZE_L)
+        SHADOW(6, 2, SHADOW_SIZE_M)
         FOOTPRINT(Cufant)
         OVERWORLD(
             sPicTable_Cufant,
@@ -5560,7 +5562,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Copperajah,
         .iconSprite = gMonIcon_Copperajah,
         .iconPalIndex = 0,
-        SHADOW(2, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(2, 7, SHADOW_SIZE_L)
         FOOTPRINT(Copperajah)
         OVERWORLD(
             sPicTable_Copperajah,
@@ -5683,6 +5685,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Dracozolt,
         .iconSprite = gMonIcon_Dracozolt,
         .iconPalIndex = 1,
+        SHADOW(-4, 11, SHADOW_SIZE_M)
         FOOTPRINT(Dracozolt)
         OVERWORLD(
             sPicTable_Dracozolt,
@@ -5745,6 +5748,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Arctozolt,
         .iconSprite = gMonIcon_Arctozolt,
         .iconPalIndex = 0,
+        SHADOW(-1, 11, SHADOW_SIZE_M)
         FOOTPRINT(Arctozolt)
         OVERWORLD(
             sPicTable_Arctozolt,
@@ -5807,6 +5811,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Dracovish,
         .iconSprite = gMonIcon_Dracovish,
         .iconPalIndex = 0,
+        SHADOW(2, 12, SHADOW_SIZE_S)
         FOOTPRINT(Dracovish)
         OVERWORLD(
             sPicTable_Dracovish,
@@ -5869,6 +5874,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Arctovish,
         .iconSprite = gMonIcon_Arctovish,
         .iconPalIndex = 0,
+        SHADOW(0, 13, SHADOW_SIZE_S)
         FOOTPRINT(Arctovish)
         OVERWORLD(
             sPicTable_Arctovish,
@@ -6105,7 +6111,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Dreepy,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
-        .frontPicYOffset = 14,
+        .frontPicYOffset = 11,
         .frontAnimFrames = sAnims_Dreepy,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 5,
@@ -6117,6 +6123,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Dreepy,
         .iconSprite = gMonIcon_Dreepy,
         .iconPalIndex = 0,
+        SHADOW(0, 6, SHADOW_SIZE_S)
         FOOTPRINT(Dreepy)
         OVERWORLD(
             sPicTable_Dreepy,
@@ -6180,6 +6187,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Drakloak,
         .iconSprite = gMonIcon_Drakloak,
         .iconPalIndex = 0,
+        SHADOW(0, 12, SHADOW_SIZE_S)
         FOOTPRINT(Drakloak)
         OVERWORLD(
             sPicTable_Drakloak,
@@ -6230,7 +6238,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Dragapult,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 2,
+        .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Dragapult,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 3,
@@ -6242,6 +6250,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Dragapult,
         .iconSprite = gMonIcon_Dragapult,
         .iconPalIndex = 0,
+        SHADOW(3, 19, SHADOW_SIZE_M)
         FOOTPRINT(Dragapult)
         OVERWORLD(
             sPicTable_Dragapult,

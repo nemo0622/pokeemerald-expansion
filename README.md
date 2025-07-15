@@ -67,12 +67,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 MAJOR TODOS:
 - Continue Mapping and NPC development
-    - FRESCO ISLES:
-        - Gym: Has Sandstorm weather, with team members working in synergy with it! (Maybe Thalia's Alolan Raichu ace could be carrying Safety Goggles?)
     - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
-
-- Fix shadows for all Pokémon! Some are still wonky after removing white outlines
-    - Plus new pokemon like Arctozolt are just totally messed up
 
 - Implement Biv's Fishing Minigame
     - Also create options menu toggle for it
@@ -122,6 +117,10 @@ MAJOR TODOS:
     - Also, remove Pinball Points and integrate Coins into Pinball games!
         - Pinball games: Cost few coins, give smaller reward
         - "Luck-based" games: Cost slightly more coins, give larger reward
+
+- AFTER INITIAL RELEASE:
+    - [Remove Affine Animations](https://github.com/pret/pokeemerald/wiki/Removing-the-Animation-Affines) and give all Pokémon multi-frame, Crystal-style animations!
+        - Even just a few frames of blinking would be huge, I don't like the affines I don't think
 
 
 GREEK PHRASES AND STUFF:
