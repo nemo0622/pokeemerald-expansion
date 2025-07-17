@@ -3451,34 +3451,17 @@ static void SpriteCB_LinkPlayer(struct Sprite *sprite)
 }
 
 void GetOverworldMonSpecies(void)
-{
-    // calc average level and set as gSpecialVar_0x8006
-    u8 partyMon = 0;
-    u8 currentLevel = 0;
-    u8 totalLevel = 0;
-    u8 numOfPokemon = 0; // # of pokemon in party
-    u8 finalLevel = 0; // level passed to variable to be used
-    for (partyMon = 0; partyMon < PARTY_SIZE; partyMon++)
+{   
+    // NEW WAY TO LEVEL SET: Something like GetMaxLevelOfSpeciesInWildTable from wild_encounter.c
+    // Get a list of all WildPokemon data and cycle through them, finding the min and max levels
+    u16 headerId = GetCurrentMapWildMonHeaderId();
+    u8 i, maxLevel = 0, numMon = 12;
+    for (i = 0; i < numMon; i++)
     {
-        if ((GetMonData(&gPlayerParty[partyMon], MON_DATA_SPECIES, NULL) != SPECIES_NONE) && 
-            !(GetMonData(&gPlayerParty[partyMon], MON_DATA_IS_EGG, NULL) || GetMonData(&gPlayerParty[partyMon], MON_DATA_SANITY_IS_BAD_EGG, NULL))) 
-        {
-            currentLevel = GetMonData(&gPlayerParty[partyMon], MON_DATA_LEVEL, NULL);
-            totalLevel += currentLevel;
-            numOfPokemon++;
-        }
+        if (gWildMonHeaders[headerId].landMonsInfo->wildPokemon[i].species > maxLevel)
+            maxLevel = gWildMonHeaders[headerId].landMonsInfo->wildPokemon[i].maxLevel;
     }
-    finalLevel = ((totalLevel / numOfPokemon) - (Random() % 5) - 1); // calculates average minus random number 0-4 minus 1
-    if(finalLevel <= 2 || finalLevel >= 90)
-    {
-        finalLevel = (totalLevel / numOfPokemon); // regenerates the raw average
-        if(finalLevel <= 1)
-            finalLevel = (Random() % 3) + 2; // random level between 2 and like 4
-        else if(finalLevel > 90)
-            finalLevel = 90;
-    }
-    gSpecialVar_0x8006 = finalLevel;
-    
+    gSpecialVar_0x8006 = maxLevel;
 
     gSpecialVar_0x8005 = gObjectEvents[gSelectedObjectEvent].shiny;
     switch (gObjectEvents[gSelectedObjectEvent].graphicsId)

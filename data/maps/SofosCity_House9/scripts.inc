@@ -24,54 +24,88 @@ SofosCity_House9_EventScript_Nemo::
 # 32 "data/maps/SofosCity_House9/scripts.pory"
 	closemessage
 # 34 "data/maps/SofosCity_House9/scripts.pory"
-	checkforspecieslocal SPECIES_ORICORIO_BAILE, OPEN_PARTY_SCREEN
+	checkforspecieslocal SPECIES_ORICORIO_BAILE, NO_PARTY_SCREEN
 # 35 "data/maps/SofosCity_House9/scripts.pory"
-	compare VAR_RESULT, TRUE
-	goto_if_eq SofosCity_House9_EventScript_Nemo_9
-SofosCity_House9_EventScript_Nemo_8:
+	delay 30
+# 36 "data/maps/SofosCity_House9/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SofosCity_House9_EventScript_NemoMissingBirds
+# 38 "data/maps/SofosCity_House9/scripts.pory"
+	speakername SofosCity_House9_EventScript_Nemo_Text_0
+# 39 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Nemo_Text_4
+# 40 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
+# 41 "data/maps/SofosCity_House9/scripts.pory"
+	checkforspecieslocal SPECIES_ORICORIO_POM_POM, NO_PARTY_SCREEN
+# 42 "data/maps/SofosCity_House9/scripts.pory"
+	delay 30
+# 43 "data/maps/SofosCity_House9/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SofosCity_House9_EventScript_NemoMissingBirds
+# 45 "data/maps/SofosCity_House9/scripts.pory"
+	speakername SofosCity_House9_EventScript_Nemo_Text_0
+# 46 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Nemo_Text_5
+# 47 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
+# 48 "data/maps/SofosCity_House9/scripts.pory"
+	checkforspecieslocal SPECIES_ORICORIO_PAU, NO_PARTY_SCREEN
+# 49 "data/maps/SofosCity_House9/scripts.pory"
+	delay 30
+# 50 "data/maps/SofosCity_House9/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SofosCity_House9_EventScript_NemoMissingBirds
+# 52 "data/maps/SofosCity_House9/scripts.pory"
+	speakername SofosCity_House9_EventScript_Nemo_Text_0
+# 53 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Nemo_Text_6
+# 54 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
+# 55 "data/maps/SofosCity_House9/scripts.pory"
+	checkforspecieslocal SPECIES_ORICORIO_SENSU, NO_PARTY_SCREEN
 # 56 "data/maps/SofosCity_House9/scripts.pory"
 	delay 30
-# 58 "data/maps/SofosCity_House9/scripts.pory"
+# 57 "data/maps/SofosCity_House9/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, SofosCity_House9_EventScript_NemoMissingBirds
+# 59 "data/maps/SofosCity_House9/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq SofosCity_House9_EventScript_Nemo_11
-# 66 "data/maps/SofosCity_House9/scripts.pory"
-	speakername SofosCity_House9_EventScript_Nemo_Text_0
+	goto_if_eq SofosCity_House9_EventScript_Nemo_8
 # 67 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Nemo_Text_8
+	speakername SofosCity_House9_EventScript_Nemo_Text_0
 # 68 "data/maps/SofosCity_House9/scripts.pory"
-	closemessage
+	msgbox SofosCity_House9_EventScript_Nemo_Text_8
 # 69 "data/maps/SofosCity_House9/scripts.pory"
-	delay 5
+	closemessage
 # 70 "data/maps/SofosCity_House9/scripts.pory"
-	giveitem ITEM_GLIMMERING_CHARM
+	delay 5
 # 71 "data/maps/SofosCity_House9/scripts.pory"
-	closemessage
+	giveitem ITEM_GLIMMERING_CHARM
 # 72 "data/maps/SofosCity_House9/scripts.pory"
-	delay 5
+	closemessage
 # 73 "data/maps/SofosCity_House9/scripts.pory"
-	speakername SofosCity_House9_EventScript_Nemo_Text_0
-# 74 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Nemo_Text_9
-# 75 "data/maps/SofosCity_House9/scripts.pory"
-	closemessage
-# 77 "data/maps/SofosCity_House9/scripts.pory"
-	speakername SofosCity_House9_EventScript_Nemo_Text_0
-# 78 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Nemo_Text_10
-# 79 "data/maps/SofosCity_House9/scripts.pory"
-	closemessage
-# 80 "data/maps/SofosCity_House9/scripts.pory"
 	delay 5
-# 81 "data/maps/SofosCity_House9/scripts.pory"
-	givedecoration DECOR_ORICORIO_DOLL
-# 82 "data/maps/SofosCity_House9/scripts.pory"
+# 74 "data/maps/SofosCity_House9/scripts.pory"
+	speakername SofosCity_House9_EventScript_Nemo_Text_0
+# 75 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Nemo_Text_9
+# 76 "data/maps/SofosCity_House9/scripts.pory"
 	closemessage
-# 84 "data/maps/SofosCity_House9/scripts.pory"
-	delay 20
+# 78 "data/maps/SofosCity_House9/scripts.pory"
+	speakername SofosCity_House9_EventScript_Nemo_Text_0
+# 79 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Nemo_Text_10
+# 80 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
+# 81 "data/maps/SofosCity_House9/scripts.pory"
+	delay 5
+# 82 "data/maps/SofosCity_House9/scripts.pory"
+	givedecoration DECOR_ORICORIO_DOLL
+# 83 "data/maps/SofosCity_House9/scripts.pory"
+	closemessage
 # 85 "data/maps/SofosCity_House9/scripts.pory"
+	delay 20
+# 86 "data/maps/SofosCity_House9/scripts.pory"
 	completequest QUEST_NEMOS_QUEST
 SofosCity_House9_EventScript_Nemo_4:
-# 88 "data/maps/SofosCity_House9/scripts.pory"
+# 89 "data/maps/SofosCity_House9/scripts.pory"
 	release
 	end
 
@@ -95,131 +129,104 @@ SofosCity_House9_EventScript_Nemo_5:
 	startquest QUEST_NEMOS_QUEST
 	goto SofosCity_House9_EventScript_Nemo_4
 
-SofosCity_House9_EventScript_Nemo_9:
-# 37 "data/maps/SofosCity_House9/scripts.pory"
-	speakername SofosCity_House9_EventScript_Nemo_Text_0
-# 38 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Nemo_Text_4
-# 39 "data/maps/SofosCity_House9/scripts.pory"
-	closemessage
-# 40 "data/maps/SofosCity_House9/scripts.pory"
-	checkforspecieslocal SPECIES_ORICORIO_POM_POM, OPEN_PARTY_SCREEN
-# 41 "data/maps/SofosCity_House9/scripts.pory"
-	compare VAR_RESULT, TRUE
-	goto_if_eq SofosCity_House9_EventScript_Nemo_14
-	goto SofosCity_House9_EventScript_Nemo_8
-
-SofosCity_House9_EventScript_Nemo_11:
-# 60 "data/maps/SofosCity_House9/scripts.pory"
-	speakername SofosCity_House9_EventScript_Nemo_Text_0
+SofosCity_House9_EventScript_Nemo_8:
 # 61 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Nemo_Text_7
+	speakername SofosCity_House9_EventScript_Nemo_Text_0
 # 62 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_Nemo_Text_7
+# 63 "data/maps/SofosCity_House9/scripts.pory"
 	closemessage
 	goto SofosCity_House9_EventScript_Nemo_4
 
-SofosCity_House9_EventScript_Nemo_14:
-# 43 "data/maps/SofosCity_House9/scripts.pory"
-	speakername SofosCity_House9_EventScript_Nemo_Text_0
-# 44 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Nemo_Text_5
-# 45 "data/maps/SofosCity_House9/scripts.pory"
-	closemessage
-# 46 "data/maps/SofosCity_House9/scripts.pory"
-	checkforspecieslocal SPECIES_ORICORIO_PAU, OPEN_PARTY_SCREEN
-# 47 "data/maps/SofosCity_House9/scripts.pory"
-	compare VAR_RESULT, TRUE
-	goto_if_eq SofosCity_House9_EventScript_Nemo_16
-	goto SofosCity_House9_EventScript_Nemo_8
 
-SofosCity_House9_EventScript_Nemo_16:
-# 49 "data/maps/SofosCity_House9/scripts.pory"
+SofosCity_House9_EventScript_NemoMissingBirds::
+# 95 "data/maps/SofosCity_House9/scripts.pory"
 	speakername SofosCity_House9_EventScript_Nemo_Text_0
-# 50 "data/maps/SofosCity_House9/scripts.pory"
-	msgbox SofosCity_House9_EventScript_Nemo_Text_6
-# 51 "data/maps/SofosCity_House9/scripts.pory"
+# 96 "data/maps/SofosCity_House9/scripts.pory"
+	msgbox SofosCity_House9_EventScript_NemoMissingBirds_Text_0
+# 97 "data/maps/SofosCity_House9/scripts.pory"
 	closemessage
-# 52 "data/maps/SofosCity_House9/scripts.pory"
-	checkforspecieslocal SPECIES_ORICORIO_SENSU, OPEN_PARTY_SCREEN
-	goto SofosCity_House9_EventScript_Nemo_8
+# 98 "data/maps/SofosCity_House9/scripts.pory"
+	release
+	end
 
 
 SofosCity_House9_EventScript_Tyrunt::
-# 94 "data/maps/SofosCity_House9/scripts.pory"
+# 104 "data/maps/SofosCity_House9/scripts.pory"
 	lock
-# 95 "data/maps/SofosCity_House9/scripts.pory"
+# 105 "data/maps/SofosCity_House9/scripts.pory"
 	faceplayer
-# 96 "data/maps/SofosCity_House9/scripts.pory"
+# 106 "data/maps/SofosCity_House9/scripts.pory"
 	speakername SofosCity_House9_EventScript_Tyrunt_Text_0
-# 97 "data/maps/SofosCity_House9/scripts.pory"
+# 107 "data/maps/SofosCity_House9/scripts.pory"
 	playmoncry SPECIES_TYRUNT, CRY_MODE_NORMAL
-# 98 "data/maps/SofosCity_House9/scripts.pory"
+# 108 "data/maps/SofosCity_House9/scripts.pory"
 	msgbox SofosCity_House9_EventScript_Tyrunt_Text_1
-# 99 "data/maps/SofosCity_House9/scripts.pory"
+# 109 "data/maps/SofosCity_House9/scripts.pory"
 	waitmoncry
-# 100 "data/maps/SofosCity_House9/scripts.pory"
+# 110 "data/maps/SofosCity_House9/scripts.pory"
 	closemessage
-# 101 "data/maps/SofosCity_House9/scripts.pory"
+# 111 "data/maps/SofosCity_House9/scripts.pory"
 	release
 	end
 
 
 SofosCity_House9_EventScript_Amaura::
-# 106 "data/maps/SofosCity_House9/scripts.pory"
+# 116 "data/maps/SofosCity_House9/scripts.pory"
 	lock
-# 107 "data/maps/SofosCity_House9/scripts.pory"
+# 117 "data/maps/SofosCity_House9/scripts.pory"
 	faceplayer
-# 108 "data/maps/SofosCity_House9/scripts.pory"
+# 118 "data/maps/SofosCity_House9/scripts.pory"
 	speakername SofosCity_House9_EventScript_Amaura_Text_0
-# 109 "data/maps/SofosCity_House9/scripts.pory"
+# 119 "data/maps/SofosCity_House9/scripts.pory"
 	playmoncry SPECIES_AMAURA, CRY_MODE_NORMAL
-# 110 "data/maps/SofosCity_House9/scripts.pory"
+# 120 "data/maps/SofosCity_House9/scripts.pory"
 	msgbox SofosCity_House9_EventScript_Amaura_Text_1
-# 111 "data/maps/SofosCity_House9/scripts.pory"
+# 121 "data/maps/SofosCity_House9/scripts.pory"
 	waitmoncry
-# 112 "data/maps/SofosCity_House9/scripts.pory"
+# 122 "data/maps/SofosCity_House9/scripts.pory"
 	closemessage
-# 113 "data/maps/SofosCity_House9/scripts.pory"
+# 123 "data/maps/SofosCity_House9/scripts.pory"
 	release
 	end
 
 
 SofosCity_House9_EventScript_Archen::
-# 118 "data/maps/SofosCity_House9/scripts.pory"
+# 128 "data/maps/SofosCity_House9/scripts.pory"
 	lock
-# 119 "data/maps/SofosCity_House9/scripts.pory"
+# 129 "data/maps/SofosCity_House9/scripts.pory"
 	faceplayer
-# 120 "data/maps/SofosCity_House9/scripts.pory"
+# 130 "data/maps/SofosCity_House9/scripts.pory"
 	speakername SofosCity_House9_EventScript_Archen_Text_0
-# 121 "data/maps/SofosCity_House9/scripts.pory"
+# 131 "data/maps/SofosCity_House9/scripts.pory"
 	playmoncry SPECIES_ARCHEN, CRY_MODE_NORMAL
-# 122 "data/maps/SofosCity_House9/scripts.pory"
+# 132 "data/maps/SofosCity_House9/scripts.pory"
 	msgbox SofosCity_House9_EventScript_Archen_Text_1
-# 123 "data/maps/SofosCity_House9/scripts.pory"
+# 133 "data/maps/SofosCity_House9/scripts.pory"
 	waitmoncry
-# 124 "data/maps/SofosCity_House9/scripts.pory"
+# 134 "data/maps/SofosCity_House9/scripts.pory"
 	closemessage
-# 125 "data/maps/SofosCity_House9/scripts.pory"
+# 135 "data/maps/SofosCity_House9/scripts.pory"
 	release
 	end
 
 
 SofosCity_House9_EventScript_Spheal::
-# 130 "data/maps/SofosCity_House9/scripts.pory"
+# 140 "data/maps/SofosCity_House9/scripts.pory"
 	lock
-# 131 "data/maps/SofosCity_House9/scripts.pory"
+# 141 "data/maps/SofosCity_House9/scripts.pory"
 	faceplayer
-# 132 "data/maps/SofosCity_House9/scripts.pory"
+# 142 "data/maps/SofosCity_House9/scripts.pory"
 	speakername SofosCity_House9_EventScript_Spheal_Text_0
-# 133 "data/maps/SofosCity_House9/scripts.pory"
+# 143 "data/maps/SofosCity_House9/scripts.pory"
 	playmoncry SPECIES_SPHEAL, CRY_MODE_NORMAL
-# 134 "data/maps/SofosCity_House9/scripts.pory"
+# 144 "data/maps/SofosCity_House9/scripts.pory"
 	msgbox SofosCity_House9_EventScript_Spheal_Text_1
-# 135 "data/maps/SofosCity_House9/scripts.pory"
+# 145 "data/maps/SofosCity_House9/scripts.pory"
 	waitmoncry
-# 136 "data/maps/SofosCity_House9/scripts.pory"
+# 146 "data/maps/SofosCity_House9/scripts.pory"
 	closemessage
-# 137 "data/maps/SofosCity_House9/scripts.pory"
+# 147 "data/maps/SofosCity_House9/scripts.pory"
 	release
 	end
 
@@ -261,25 +268,25 @@ SofosCity_House9_EventScript_Nemo_Text_3:
 	.string "Form{COLOR DARK_GRAY} Oricorio...$"
 
 SofosCity_House9_EventScript_Nemo_Text_4:
-# 38 "data/maps/SofosCity_House9/scripts.pory"
+# 39 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Oricorio's {COLOR GREEN}Baile Form{COLOR DARK_GRAY}! Look at that\n"
 	.string "amazing dancing! Now, how about\l"
 	.string "Oricorio {COLOR GREEN}Pom Pom Form{COLOR DARK_GRAY}?$"
 
 SofosCity_House9_EventScript_Nemo_Text_5:
-# 44 "data/maps/SofosCity_House9/scripts.pory"
+# 46 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Oricorio's {COLOR GREEN}Pom Pom Form{COLOR DARK_GRAY}! I love their\n"
 	.string "energy. Now, how about Oricorio {COLOR GREEN}Pau\l"
 	.string "Form{COLOR DARK_GRAY}?$"
 
 SofosCity_House9_EventScript_Nemo_Text_6:
-# 50 "data/maps/SofosCity_House9/scripts.pory"
+# 53 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Oricorio's {COLOR GREEN}Pau Form{COLOR DARK_GRAY}! Swaying like that\n"
 	.string "makes me want to dance, too. Lastly, how\l"
 	.string "about Oricorio {COLOR GREEN}Sensu Form{COLOR DARK_GRAY}?$"
 
 SofosCity_House9_EventScript_Nemo_Text_7:
-# 61 "data/maps/SofosCity_House9/scripts.pory"
+# 62 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Looks like you've still got some\n"
 	.string "Oricorio catching to do!\p"
 	.string "Remember, I want you to show me {COLOR GREEN}all four\n"
@@ -287,7 +294,7 @@ SofosCity_House9_EventScript_Nemo_Text_7:
 	.string "you've caught them!$"
 
 SofosCity_House9_EventScript_Nemo_Text_8:
-# 67 "data/maps/SofosCity_House9/scripts.pory"
+# 68 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Fire, Electric, Psychic, and Ghost! Hey,\n"
 	.string "you've caught them all! My University\l"
 	.string "Capstone was on Hawaiian\l"
@@ -298,7 +305,7 @@ SofosCity_House9_EventScript_Nemo_Text_8:
 	.string "journey.$"
 
 SofosCity_House9_EventScript_Nemo_Text_9:
-# 74 "data/maps/SofosCity_House9/scripts.pory"
+# 75 "data/maps/SofosCity_House9/scripts.pory"
 	.string "The {COLOR GREEN}Glimmering Charm{COLOR DARK_GRAY} boosts the odds of\n"
 	.string "finding wild Pokémon {COLOR GREEN}holding an item{COLOR DARK_GRAY}!\l"
 	.string "That should be helpful if you're looking\l"
@@ -312,38 +319,46 @@ SofosCity_House9_EventScript_Nemo_Text_9:
 	.string "shows in the final product.$"
 
 SofosCity_House9_EventScript_Nemo_Text_10:
-# 78 "data/maps/SofosCity_House9/scripts.pory"
+# 79 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Oh wait, one more thing! Here's a Cabin\n"
 	.string "Decoration from me!$"
 
-SofosCity_House9_EventScript_Tyrunt_Text_0:
+SofosCity_House9_EventScript_NemoMissingBirds_Text_0:
 # 96 "data/maps/SofosCity_House9/scripts.pory"
+	.string "Hm, looks like you're missing that\n"
+	.string "Oricorio form.\p"
+	.string "Remember, I want you to show me {COLOR GREEN}all four\n"
+	.string "Oricorio Forms in your party{COLOR DARK_GRAY}. Come visit\l"
+	.string "me when you've caught them!$"
+
+SofosCity_House9_EventScript_Tyrunt_Text_0:
+# 106 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Tyrunt$"
 
 SofosCity_House9_EventScript_Tyrunt_Text_1:
-# 98 "data/maps/SofosCity_House9/scripts.pory"
+# 108 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Wroooar!$"
 
 SofosCity_House9_EventScript_Amaura_Text_0:
-# 108 "data/maps/SofosCity_House9/scripts.pory"
+# 118 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Amaura$"
 
 SofosCity_House9_EventScript_Amaura_Text_1:
-# 110 "data/maps/SofosCity_House9/scripts.pory"
+# 120 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Breee!$"
 
 SofosCity_House9_EventScript_Archen_Text_0:
-# 120 "data/maps/SofosCity_House9/scripts.pory"
+# 130 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Archen$"
 
 SofosCity_House9_EventScript_Archen_Text_1:
-# 122 "data/maps/SofosCity_House9/scripts.pory"
+# 132 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Caww!$"
 
 SofosCity_House9_EventScript_Spheal_Text_0:
-# 132 "data/maps/SofosCity_House9/scripts.pory"
+# 142 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Spheal$"
 
 SofosCity_House9_EventScript_Spheal_Text_1:
-# 134 "data/maps/SofosCity_House9/scripts.pory"
+# 144 "data/maps/SofosCity_House9/scripts.pory"
 	.string "Clap clap!$"

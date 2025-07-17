@@ -4915,6 +4915,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_WHIRLPOOL",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_MUDDY_WATER"
     ],
     "EggMoves": [
@@ -5019,6 +5020,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_WHIRLPOOL",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_MUDDY_WATER"
     ],
     "EggMoves": [
@@ -5160,6 +5162,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_COACHING",
       "MOVE_THROAT_CHOP",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_UPPER_HAND"
     ],
     "EggMoves": [
@@ -5636,6 +5639,7 @@
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER",
       "MOVE_SLUDGE_WAVE",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
@@ -5759,6 +5763,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_SLUDGE_WAVE",
       "MOVE_SKITTER_SMACK",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [],
@@ -6959,6 +6964,7 @@
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER",
       "MOVE_TRIPLE_AXEL",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -7092,6 +7098,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_TRIPLE_AXEL",
       "MOVE_CURSE",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [],
@@ -10565,6 +10572,7 @@
       "MOVE_TEMPER_FLARE",
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_DRAGON_CHEER"
     ],
     "EggMoves": [],
@@ -10686,6 +10694,7 @@
       "MOVE_CURSE",
       "MOVE_DRAGON_CHEER",
       "MOVE_ALLURING_VOICE",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -16187,6 +16196,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_WHIRLPOOL",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_MUDDY_WATER"
     ],
     "EggMoves": [
@@ -32365,6 +32375,7 @@
       "MOVE_SPITE",
       "MOVE_GYRO_BALL",
       "MOVE_ICICLE_SPEAR",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_WEATHER_BALL"
     ],
     "EggMoves": [
@@ -32379,21 +32390,24 @@
   "SPHEAL": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_DEEPWATER_CURSE"],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SEALEO": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_DEEPWATER_CURSE"],
     "EggMoves": [],
     "TutorMoves": []
   },
   "WALREIN": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_DEEPWATER_CURSE"],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -42010,6 +42024,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_TRIPLE_AXEL",
       "MOVE_CURSE",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
@@ -43093,6 +43108,7 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_PSYCH_UP",
       "MOVE_TRIPLE_AXEL",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -59038,14 +59054,16 @@
   "AMAURA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_DEEPWATER_CURSE"],
     "EggMoves": [],
     "TutorMoves": []
   },
   "AURORUS": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_DEEPWATER_CURSE"],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -63284,6 +63302,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_COACHING",
       "MOVE_HARD_PRESS",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_UPPER_HAND"
     ],
     "EggMoves": [
@@ -81669,6 +81688,7 @@
       "MOVE_BLIZZARD",
       "MOVE_TERA_BLAST",
       "MOVE_HAZE",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_PSYCH_UP"
     ],
     "EggMoves": [
@@ -81803,6 +81823,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_WHIRLPOOL",
       "MOVE_THROAT_CHOP",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_HARD_PRESS"
     ],
     "EggMoves": [
@@ -89384,6 +89405,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_TRIPLE_AXEL",
       "MOVE_THROAT_CHOP",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -89554,6 +89576,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_TRIPLE_AXEL",
       "MOVE_THROAT_CHOP",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -89675,6 +89698,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_PAIN_SPLIT",
       "MOVE_PSYCH_UP",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_DOUBLE_EDGE"
     ],
     "EggMoves": [
@@ -89821,6 +89845,7 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
+      "MOVE_DEEPWATER_CURSE",
       "MOVE_TRIPLE_AXEL"
     ],
     "EggMoves": [

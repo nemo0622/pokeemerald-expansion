@@ -31,29 +31,30 @@ script SofosCity_House9_EventScript_Nemo
         msgbox(format("Hey there! You having fun filling up the Pokédex? I hope it's making you think about Biology and conservation. That's the whole motivation behind making this game, you know!\p Right, the Quest I gave you. Show me your {COLOR GREEN}Oricorio Forms{COLOR DARK_GRAY}! First, your {COLOR GREEN}Baile Form{COLOR DARK_GRAY} Oricorio..."))
         closemessage
 
-        checkforspecieslocal(SPECIES_ORICORIO_BAILE, OPEN_PARTY_SCREEN)
-        if(var(VAR_RESULT) == TRUE)
-        {
-            speakername("Nemo")
-            msgbox(format("Oricorio's {COLOR GREEN}Baile Form{COLOR DARK_GRAY}! Look at that amazing dancing! Now, how about Oricorio {COLOR GREEN}Pom Pom Form{COLOR DARK_GRAY}?"))
-            closemessage
-            checkforspecieslocal(SPECIES_ORICORIO_POM_POM, OPEN_PARTY_SCREEN)
-            if(var(VAR_RESULT) == TRUE)
-            {
-                speakername("Nemo")
-                msgbox(format("Oricorio's {COLOR GREEN}Pom Pom Form{COLOR DARK_GRAY}! I love their energy. Now, how about Oricorio {COLOR GREEN}Pau Form{COLOR DARK_GRAY}?"))
-                closemessage
-                checkforspecieslocal(SPECIES_ORICORIO_PAU, OPEN_PARTY_SCREEN)
-                if(var(VAR_RESULT) == TRUE)
-                {
-                    speakername("Nemo")
-                    msgbox(format("Oricorio's {COLOR GREEN}Pau Form{COLOR DARK_GRAY}! Swaying like that makes me want to dance, too. Lastly, how about Oricorio {COLOR GREEN}Sensu Form{COLOR DARK_GRAY}?"))
-                    closemessage
-                    checkforspecieslocal(SPECIES_ORICORIO_SENSU, OPEN_PARTY_SCREEN)
-                }
-            }
-        }
+        checkforspecieslocal(SPECIES_ORICORIO_BAILE, NO_PARTY_SCREEN)
         delay(30)
+        goto_if_eq(VAR_RESULT, 0, SofosCity_House9_EventScript_NemoMissingBirds)
+
+        speakername("Nemo")
+        msgbox(format("Oricorio's {COLOR GREEN}Baile Form{COLOR DARK_GRAY}! Look at that amazing dancing! Now, how about Oricorio {COLOR GREEN}Pom Pom Form{COLOR DARK_GRAY}?"))
+        closemessage
+        checkforspecieslocal(SPECIES_ORICORIO_POM_POM, NO_PARTY_SCREEN)
+        delay(30)
+        goto_if_eq(VAR_RESULT, 0, SofosCity_House9_EventScript_NemoMissingBirds)
+
+        speakername("Nemo")
+        msgbox(format("Oricorio's {COLOR GREEN}Pom Pom Form{COLOR DARK_GRAY}! I love their energy. Now, how about Oricorio {COLOR GREEN}Pau Form{COLOR DARK_GRAY}?"))
+        closemessage
+        checkforspecieslocal(SPECIES_ORICORIO_PAU, NO_PARTY_SCREEN)
+        delay(30)
+        goto_if_eq(VAR_RESULT, 0, SofosCity_House9_EventScript_NemoMissingBirds)
+        
+        speakername("Nemo")
+        msgbox(format("Oricorio's {COLOR GREEN}Pau Form{COLOR DARK_GRAY}! Swaying like that makes me want to dance, too. Lastly, how about Oricorio {COLOR GREEN}Sensu Form{COLOR DARK_GRAY}?"))
+        closemessage
+        checkforspecieslocal(SPECIES_ORICORIO_SENSU, NO_PARTY_SCREEN)
+        delay(30)
+        goto_if_eq(VAR_RESULT, 0, SofosCity_House9_EventScript_NemoMissingBirds)
 
         if(var(VAR_RESULT) == 0)
         {
@@ -85,6 +86,15 @@ script SofosCity_House9_EventScript_Nemo
             completequest(QUEST_NEMOS_QUEST)
         }
     }
+    release
+    end
+}
+
+script SofosCity_House9_EventScript_NemoMissingBirds
+{
+    speakername("Nemo")
+    msgbox(format("Hm, looks like you're missing that Oricorio form.\p Remember, I want you to show me {COLOR GREEN}all four Oricorio Forms in your party{COLOR DARK_GRAY}. Come visit me when you've caught them!"))
+    closemessage
     release
     end
 }

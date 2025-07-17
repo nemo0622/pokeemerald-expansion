@@ -160,12 +160,6 @@ GREEK PHRASES AND STUFF:
 - DexNav chain count and directional arrow not shown when hunting
 - When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
-- FOLLOWERS: Ho-oh loads broken! At least in Zoo donation, I think
-    - Something to do with 64x64 followers, of course
-- CABIN DECORATION: holding the decoration sometimes breaks the graphics (ex: holding Pretty Flowers messes it up bad)
-- Pretty sure Nemo622 Oricorio quest is fucked skull emoji
-- Sometimes, encountered Overworld pokemon are level 2, even with a team with Pokémon up to level 100. somewhere, the calculation is getting messed up
-    - Lowkey this might be save corruption maybe? test it on a fresh save to be sure
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)

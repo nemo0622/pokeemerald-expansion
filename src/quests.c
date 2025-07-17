@@ -928,7 +928,7 @@ side_quest(
 	gText_SideQuestDesc_36,
 	gText_SideQuestDesc_36,
 	gText_SideQuestMap36,
-	OBJ_EVENT_GFX_PERFORMER_M,
+	OBJ_EVENT_GFX_ORICORIO_DOLL,
 	OBJECT,
 	NULL,
 	0
