@@ -225,7 +225,7 @@ TheDelphis_EventScript_LeaveShipTrigger_6:
 
 TheDelphis_EventScript_LeaveShipTrigger_7:
 # 120 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_SOFOS_CITY, 26, 66
+	warp MAP_SOFOS_CITY, 27, 67
 # 121 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1

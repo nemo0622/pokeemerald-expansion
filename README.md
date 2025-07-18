@@ -113,6 +113,7 @@ MAJOR TODOS:
     - Use [Online Signal MIDI editor](https://signal.vercel.app/?lang=en), which supports Sound Fonts! Maybe find the Emerald or Pokémon Crystal soundfont?
     - Follow existing Pokecommunity music editing tutorial
 - Implement Chris Piché's Game Corner Expansion minigames
+    - https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches#Expansion-Compatible_Game_Corner_Expansion
     - Blackjack, Ponyta Racing, and Voltorb Flip are the big ones I care about
     - Also, remove Pinball Points and integrate Coins into Pinball games!
         - Pinball games: Cost few coins, give smaller reward
@@ -180,7 +181,7 @@ Many, many talented developers and artists are responsible for making this proje
 
 ### Graphics
 - Tilesets:
-    - Most basic overworld sprites purchased from Zaebucca and Arex on itch.io
+    - Most basic overworld sprites purchased from Anima_nel and Zaebucca on itch.io
     - Pokémon Center, Mart, and Gym Buildings by TrainerDX
     - Some GBC-style default houses by TrainerDX
     - Broken pillar tiles by Hek-el-Grande on DeviantArt

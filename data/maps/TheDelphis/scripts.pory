@@ -117,7 +117,7 @@ script TheDelphis_EventScript_LeaveShipTrigger
         }
         elif(var(VAR_CHOSEN_SAIL_LOCATION) == 3) // sofos city
         {
-            warp(MAP_SOFOS_CITY, 26, 66)
+            warp(MAP_SOFOS_CITY, 27, 67)
             waitstate
         }
         elif(var(VAR_CHOSEN_SAIL_LOCATION) == 4) // kipos town

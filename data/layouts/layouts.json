@@ -4505,7 +4505,7 @@
       "id": "LAYOUT_ACRISIA_MOUNTAINS",
       "name": "AcrisiaMountains_Layout",
       "width": 44,
-      "height": 46,
+      "height": 47,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Acrisia",
       "border_filepath": "data/layouts/AcrisiaMountains/border.bin",
@@ -4614,8 +4614,8 @@
     {
       "id": "LAYOUT_SOFOS_CITY",
       "name": "SofosCity_Layout",
-      "width": 60,
-      "height": 90,
+      "width": 61,
+      "height": 91,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Sofos",
       "border_filepath": "data/layouts/SofosCity/border.bin",
@@ -5274,7 +5274,7 @@
     {
       "id": "LAYOUT_KIPOS_TOWN",
       "name": "KiposTown_Layout",
-      "width": 44,
+      "width": 46,
       "height": 46,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Kipos",
