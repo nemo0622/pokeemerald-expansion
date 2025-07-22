@@ -2642,7 +2642,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PEARL_STRING] =
     {
         .name = _("Pearl String"),
-        .price = (I_PRICE >= GEN_8) ? 15000 * TREASURE_FACTOR: ((I_PRICE == GEN_7) ? 30000 : 15000),
+        .price = 25000,
         .description = COMPOUND_STRING(
             "Very large pearls\n"
             "that would sell at a\n"
@@ -2985,7 +2985,7 @@ const struct Item gItemsInfo[] =
     [ITEM_STRANGE_SOUVENIR] =
     {
         .name = HANDLE_EXPANDED_ITEM_NAME("StrngeSouvnr", "Strange Souvenir"),
-        .price = (I_PRICE >= GEN_7) ? 3000 : 10,
+        .price = 30000,
         .description = COMPOUND_STRING(
             "An ornament that\n"
             "depicts a Pokémon\n"
@@ -11231,12 +11231,15 @@ const struct Item gItemsInfo[] =
     {
         .name = _("TM56"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Move: Scald\n"
+            "Shoots steaming\n"
+            "water at opponent."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_SCALD,
     },
 
     [ITEM_TM57] =

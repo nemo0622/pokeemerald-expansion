@@ -7720,6 +7720,7 @@ BattleScript_AbilityHpHeal:
 	datahpupdate BS_ATTACKER
 	return
 
+BattleScript_PiscivoreActivates::
 BattleScript_RainDishActivates::
 	call BattleScript_AbilityHpHeal
 	end3

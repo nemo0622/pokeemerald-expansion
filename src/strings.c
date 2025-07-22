@@ -1710,6 +1710,20 @@ const u8 gText_InnTime_Morning[] = _("Morning");
 const u8 gText_InnTime_Noon[] = _("Noon");
 const u8 gText_InnTime_Evening[] = _("Evening");
 const u8 gText_InnTime_Night[] = _("Night");
+const u8 gText_ReelItIn[] = _("Hold and release A to keep the\nPokémon inside the fishing bar!");
+const u8 gText_HelpfulTextHigher0[] = _("Whew!\nThat was close!");
+const u8 gText_HelpfulTextHigher1[] = _("That's it!\nKeep it up!");
+const u8 gText_HelpfulTextHigher2[] = _("Just a little bit more!");
+const u8 gText_HelpfulTextLower0[] = _("Uh oh!\nIt's about to escape!");
+const u8 gText_HelpfulTextLower1[] = _("It sure is a fighter!");
+const u8 gText_HelpfulTextLower2[] = _("Aw!\nYou almost had it.");
+const u8 gText_FishingWantToQuit[] = _("Do you want to let this one go?");
+const u8 gText_ReeledInAPokemon[] = _("{PLAYER} reeled in a Pokémon!{PAUSE_UNTIL_PRESS}");
+const u8 gText_PokemonGotAway[] = _("Oh, no!\nThe Pokémon got away…{PAUSE_UNTIL_PRESS}");
+const u8 gText_ReeledInTreasure[] = _("{PLAYER} reeled in a Treasure!");
+const u8 gText_FoundATreasureItem[] = _("{PLAYER} found one\n{STR_VAR_2}!");
+const u8 gText_PutTreasureInPocket[] = _("{PLAYER} put away the {STR_VAR_2}\nin the {STR_VAR_3} Pocket.");
+const u8 gText_NoRoomForTreasure[] = _("Too bad!\nThe Bag is full…");
 
 const u8 gText_ShinyIndicator[] = _(" {EMOJI_HEART}");
 

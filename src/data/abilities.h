@@ -278,8 +278,8 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ILLUMINATE] =
     {
         .name = _("Illuminate"),
-        .description = COMPOUND_STRING("Boosts accuracy greatly."),
-        .aiRating = 0,
+        .description = COMPOUND_STRING("Boosts accuracy & prevents sleep."),
+        .aiRating = 4,
         .breakable = TRUE,
     },
 
@@ -2636,5 +2636,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Absorb Flying + Water moves."),
         .aiRating = 8,
         .breakable = TRUE,
+    },
+
+    [ABILITY_PISCIVORE] =
+    {
+        .name = _("Piscivore"),
+        .description = COMPOUND_STRING("Sets Aqua Ring on entry."),
+        .aiRating = 6,
     },
 };

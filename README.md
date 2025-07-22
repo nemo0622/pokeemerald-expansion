@@ -43,6 +43,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
     - Battle Pavilions in multiple areas, replicating Battle Tents of Pokémon Emerald with new Pokémon and balancing
     - Pokémon Contests, with slight stat bonuses given to Pokémon with Ribbons
     - Mining Expeditions on Marmaro Island, providing shards, fossils, and more!
+    - Stardew Valley-like Fishing Minigame, including random Treasures and Pokémon Ability effects!
     - University Students in most Routes and Towns, seeking help filling their Pokédex
     - Dozens of optional sidequests for a variety of fun rewards and events!
 - Various QOL Changes, such as:
@@ -69,11 +70,6 @@ MAJOR TODOS:
 - Continue Mapping and NPC development
     - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
 
-- Implement Biv's Fishing Minigame
-    - Also create options menu toggle for it
-    - TREASURE IDEAS:
-        - Pearl, Big Pearl, and Pearl String (for that one quest in Asteri Sea West!)
-        - Wishing Stars of course
 - Add new Emotes using Reakain's Emote spritesheet (so cute!)
     - Go through major story events and add relevant emotes
     - Also try to add them to other things (ex: crying Emote when DexNav Pokémon disappears)
@@ -174,14 +170,15 @@ Many, many talented developers and artists are responsible for making this proje
 - New Continue Menu UI and Party Menu by Archie
 - Overworld Encounters by [HashtagMarky](https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters)
 - GSC/HGSS Ruins of Alph Sliding Puzzles by [Spherical Ice](https://www.pokecommunity.com/threads/ruins-of-alph-sliding-puzzles-pokefirered.463032/)
-- Mining Minigame and Town Map feature port by Vol
+- Mining Minigame by Vol
+- Fishing Minigame by Bivurnum
 - Pokémon Color Variation by Jaizu
 - Quest System by [PokémonSanFran](https://github.com/PokemonSanFran/pokeemerald/wiki/Unbound-Quest-Menu)
 - Set Preferred Follower from Party Menu by Kasen
 
 ### Graphics
 - Tilesets:
-    - Most basic overworld sprites purchased from Anima_nel and Zaebucca on itch.io
+    - Most basic overworld sprites purchased from Anima_nel, Zaebucca, and Arex on itch.io
     - Pokémon Center, Mart, and Gym Buildings by TrainerDX
     - Some GBC-style default houses by TrainerDX
     - Broken pillar tiles by Hek-el-Grande on DeviantArt

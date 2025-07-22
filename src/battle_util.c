@@ -2780,7 +2780,7 @@ u8 DoBattlerEndTurnEffects(void)
                 u16 battlerAbility = GetBattlerAbility(battler);
                 gStatuses3[battler] -= STATUS3_YAWN_TURN(1);
                 if (!(gStatuses3[battler] & STATUS3_YAWN) && !(gBattleMons[battler].status1 & STATUS1_ANY)
-                 && battlerAbility != ABILITY_VITAL_SPIRIT
+                 && battlerAbility != ABILITY_VITAL_SPIRIT && battlerAbility != ABILITY_ILLUMINATE
                  && battlerAbility != ABILITY_INSOMNIA && !UproarWakeUpCheck(battler)
                  && !IsLeafGuardProtected(battler))
                 {
@@ -4997,6 +4997,17 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     effect++;
                 }
                 break;
+            case ABILITY_PISCIVORE:
+                if (!BATTLER_MAX_HP(battler)
+                 && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+                {
+                    gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) / 8);
+                    if (gBattleMoveDamage == 0)
+                        gBattleMoveDamage = 1;
+                    BattleScriptPushCursorAndCallback(BattleScript_PiscivoreActivates);
+                    effect++;
+                }
+                break;
             case ABILITY_DRY_SKIN:
                 if (IsBattlerWeatherAffected(battler, B_WEATHER_SUN))
                     goto SOLAR_POWER_HP_DROP;
@@ -6137,6 +6148,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     effect = 1;
                 }
                 break;
+            case ABILITY_ILLUMINATE:
             case ABILITY_INSOMNIA:
             case ABILITY_VITAL_SPIRIT:
                 if (gBattleMons[battler].status1 & STATUS1_SLEEP)
@@ -6574,6 +6586,7 @@ bool32 CanBeSlept(u32 battler, u32 ability)
 {
     if (ability == ABILITY_INSOMNIA
      || ability == ABILITY_VITAL_SPIRIT
+     || ability == ABILITY_ILLUMINATE
      || ability == ABILITY_COMATOSE
      || ability == ABILITY_PURIFYING_SALT
      || gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_SAFEGUARD

@@ -661,7 +661,7 @@
 #define FLAG_BEAT_TRAINER_WITH_CHOCOLATES       0x267 // Used during Box of Chocolates quest in Fresco Isles
 #define FLAG_SPOKE_TO_FRESCO_ISLES_TAILOR       0x268 // Used by F.I. Tailor's explanation
 #define FLAG_GOT_STEEL_WING_FROM_RANIA          0x269 // Set after getting Steel Wing TM
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
+#define FLAG_GOT_SCALD_TM_FISHING_REWARD        0x26A // Makes Scald TM only obtainable once
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag

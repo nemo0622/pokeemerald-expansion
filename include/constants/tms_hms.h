@@ -56,7 +56,8 @@
     F(FROST_BREATH) \
     F(POWER_UP_PUNCH) \
     F(DAZZLING_GLEAM) \
-    F(TERA_BLAST)
+    F(TERA_BLAST) \
+    F(SCALD)
 
 #define FOREACH_HM(F) \
     F(CUT) \
