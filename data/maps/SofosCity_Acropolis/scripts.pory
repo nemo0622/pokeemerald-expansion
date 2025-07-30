@@ -4,7 +4,7 @@ script SofosCity_Acropolis_EventScript_Sign1
 {
     lock
     speakername("Information Sign")
-    msgbox(format("Welcome to the Sofos City Acropolis Temple, the oldest and best maintained Acropolis Temple still standing in the Ilios Region.\p Various statues of Pokémon with mythical origins are kept in this temple. It has become a common spot for Trainers and other tourists to come and pay respects, hoping for a blessing from these incredibly powerful Pokémon.\p To the left and right are statues of Archen, the First Bird Pokémon. It is thought to be the shared ancestor of all bird Pokémon, including Ho-oh and Lugia."))
+    msgbox(format("Welcome to the Sofos City Acropolis Temple, the oldest and best maintained Acropolis Temple still standing in the Ilios Region.\p Various statues of Pokémon with mythical origins are kept in this temple. It has become a common spot for Trainers and other tourists to come and pay respects, hoping for a blessing from these incredibly powerful Pokémon.\p To the left and right are statues of Archen, the First Bird Pokémon. It is thought to be the shared ancestor of all bird Pokémon."))
     closemessage
     release
     end
@@ -13,7 +13,7 @@ script SofosCity_Acropolis_EventScript_Sign2
 {
     lock
     speakername("Information Sign")
-    msgbox(format("These Pokémon are foundational to the mythology of the Ilios Region. Left is Ho-oh, lord of the sun and fire. Right is Lugia, lord of the moon and water.\p According to the ancient myths of Ilios, the unending battle between these two spirits led to the manifestation of their power in the form of a Legendary Trio. Although they were once thought to be more powerful and ferocious, as the centuries passed, they transformed into more worldly forms. These modern forms are Raikou, Entei, and Suicune. More research needs to be done to find the connection to the trio's more ancient forms."))
+    msgbox(format("These Pokémon are foundational to the mythology of the Ilios Region. {COLOR GREEN}Raikou{COLOR DARK_GRAY} channels the power of the sky, creating roaring thunderbolts that shake the world. {COLOR GREEN}Suicune{COLOR DARK_GRAY} embodies the power of the sea, controlling strong wakes of water. {COLOR GREEN}Entei{COLOR DARK_GRAY} holds the power of the land, blasting fire and lava to expand its territory.\p It is said that these three Pokémon roam the world to this day. Despite their immense power, they do not truly rule their domains. Ancient myths speak of {COLOR GREEN}godlike Pokémon{COLOR DARK_GRAY} lost to time, which are the true kings of land, sea, and sky."))
     closemessage
     release
     end
@@ -34,7 +34,7 @@ script SofosCity_Acropolis_EventScript_Camper
     lock
     faceplayer
     speakername("Camper")
-    msgbox(format("Those Pokémon from the old myths... I wonder if they're real. There are lots of parallels with stories from Johto and Kanto. I wonder if most regions have elemental Pokémon myths."))
+    msgbox(format("Those Pokémon from the old myths... I wonder if they're real. There are lots of parallels with stories from Johto and Hoenn. I wonder if most regions have elemental Pokémon myths."))
     closemessage
     release
     end

@@ -651,7 +651,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Feraligatr,
         .iconSprite = gMonIcon_Feraligatr,
         .iconPalIndex = 0,
-        SHADOW(0, 2, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(2, 6, SHADOW_SIZE_L)
         FOOTPRINT(Feraligatr)
         OVERWORLD(
             sPicTable_Feraligatr,
@@ -864,20 +864,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 101,
         .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
         .catchRate = 90,
-    #if P_UPDATED_EXP_YIELDS >= GEN_7
         .expYield = 158,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 155,
-    #else
-        .expYield = 162,
-    #endif
         .evYield_HP = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_ANALYTIC, ABILITY_KEEN_EYE, ABILITY_TINTED_LENS },
+        .abilities = { ABILITY_SHADOW_TAG, ABILITY_KEEN_EYE, ABILITY_TINTED_LENS },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Noctowl"),
         .cryId = CRY_NOCTOWL,
@@ -919,7 +913,67 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sNoctowlLevelUpLearnset,
         .teachableLearnset = sNoctowlTeachableLearnset,
+        .formSpeciesIdTable = sNoctowlFormSpeciesIdTable,
+        .formChangeTable = sNoctowlFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_NOCTOWL_MEGA] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 121,
+        .baseSpDefense = 141,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
+        .catchRate = 90,
+        .expYield = 158,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_ANALYTIC, ABILITY_ANALYTIC, ABILITY_ANALYTIC },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Noctowl"),
+        .cryId = CRY_NOCTOWL,
+        .natDexNum = NATIONAL_DEX_NOCTOWL,
+        .categoryName = _("Owl"),
+        .height = 16,
+        .weight = 408,
+        .description = COMPOUND_STRING(
+            "Mega Noctowl is an ambush predator,\n"
+            "preferring to stay perfectly still and\n"
+            "observe opponents before striking. It is\n"
+            "thought to be highly intelligent."), // new desc
+        .pokemonScale = 278,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_NoctowlMega,
+        .frontPicSize = MON_COORDS_SIZE(40, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_NoctowlMega,
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_NoctowlMega,
+        .backPicSize = MON_COORDS_SIZE(48, 64),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_NoctowlMega,
+        .shinyPalette = gMonShinyPalette_NoctowlMega,
+        .iconSprite = gMonIcon_NoctowlMega,
+        .iconPalIndex = 2,
+        SHADOW(1, 10, SHADOW_SIZE_M)
+        FOOTPRINT(Noctowl)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sNoctowlLevelUpLearnset,
+        .teachableLearnset = sNoctowlTeachableLearnset,
+        .formSpeciesIdTable = sNoctowlFormSpeciesIdTable,
+        .formChangeTable = sNoctowlFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HOOTHOOT
 
 #if P_FAMILY_LEDYBA
@@ -4661,10 +4715,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         .baseHP        = 80,
         .baseAttack    = 185,
-        .baseDefense   = 115,
+        .baseDefense   = 125,
         .baseSpeed     = 75,
         .baseSpAttack  = 40,
-        .baseSpDefense = 105,
+        .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
         .catchRate = 45,
         .expYield = 210,
@@ -6311,7 +6365,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_HOUNDOOM_MEGA] =
     {
         .baseHP        = 75,
-        .baseAttack    = 90,
+        .baseAttack    = 95,
         .baseDefense   = 90,
         .baseSpeed     = 115,
         .baseSpAttack  = 140,
@@ -6523,10 +6577,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 14,
         .weight = 712,
         .description = COMPOUND_STRING(
-            "Stantler's magnificent antlers were\n"
-            "once traded at high prices as works of art.\n"
-            "As a result, this Pokémon was hunted\n"
-            "close to extinction."),
+            "Stantler is prone to running off at the\n" // new desc
+            "slightest sound. Trainers trying to catch\n"
+            "them must be silent. If they don't run,\n"
+            "they put you to sleep with their powers."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6579,7 +6633,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_SAP_SIPPER, ABILITY_FUR_COAT },
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_SAP_SIPPER, ABILITY_ANALYTIC },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Wyrdeer"),
         .cryId = CRY_WYRDEER,
@@ -6588,10 +6642,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 18,
         .weight = 951,
         .description = COMPOUND_STRING(
-            "The black orbs shine with an uncanny light\n"
-            "when it is erecting invisible barriers.\n"
-            "The fur shed from its beard retains heat\n"
-            "and is useful for winter clothing."),
+            "Wyrdeer are specially adapted to colder\n" // new desc
+            "termperatures and high altitudes. In\n"
+            "exchange for slower movement, Wyrdeer is\n"
+            "very bulky and has strong psychic powers."),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,
@@ -6622,6 +6676,65 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sWyrdeerLevelUpLearnset,
         .teachableLearnset = sWyrdeerTeachableLearnset,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_WYRDEER_MEGA] =
+    {
+        .baseHP        = 103,
+        .baseAttack    = 120,
+        .baseDefense   = 97,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 140,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_PSYCHIC),
+        .catchRate = 45,
+        .expYield = 263,
+        .evYield_Attack = 1,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_FUR_COAT, ABILITY_FUR_COAT, ABILITY_FUR_COAT },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Wyrdeer"),
+        .cryId = CRY_WYRDEER,
+        .natDexNum = NATIONAL_DEX_WYRDEER,
+        .categoryName = _("Big Horn"),
+        .height = 18,
+        .weight = 951,
+        .description = COMPOUND_STRING(
+            "Mega Wyrdeer is the head of their family,\n" // new desc
+            "showing their dominance with a massive\n"
+            "beard. They rarely move, using telekinesis\n"
+            "to bring food to themselves."),
+        .pokemonScale = 267,
+        .pokemonOffset = 2,
+        .trainerScale = 286,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_WyrdeerMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_WyrdeerMega,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_WyrdeerMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_WyrdeerMega,
+        .shinyPalette = gMonShinyPalette_WyrdeerMega,
+        .iconSprite = gMonIcon_WyrdeerMega,
+        .iconPalIndex = 2,
+        SHADOW(-4, 10, SHADOW_SIZE_M)
+        FOOTPRINT(Wyrdeer)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sWyrdeerLevelUpLearnset,
+        .teachableLearnset = sWyrdeerTeachableLearnset,
+        .formSpeciesIdTable = sWyrdeerFormSpeciesIdTable,
+        .formChangeTable = sWyrdeerFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_STANTLER
 

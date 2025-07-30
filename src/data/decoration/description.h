@@ -557,12 +557,12 @@ const u8 DecorDesc_GYARADOS_DOLL[] = _(
         "Place it on a mat\n"
         "or a desk.");
 
-const u8 DecorDesc_HO_OH_DOLL[] = _(
+const u8 DecorDesc_HYDRAPPLE_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
 
-const u8 DecorDesc_LUGIA_DOLL[] = _(
+const u8 DecorDesc_DRAGONITE_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");

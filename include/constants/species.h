@@ -1601,7 +1601,7 @@
 #define SPECIES_MACHAMP_GIGANTAMAX                      1495
 #define SPECIES_GENGAR_GIGANTAMAX                       1496
 #define SPECIES_KINGLER_GIGANTAMAX                      1497
-#define SPECIES_LAPRAS_GIGANTAMAX                       1498
+#define SPECIES_LAPRAS_MEGA                             1498
 #define SPECIES_EEVEE_GIGANTAMAX                        1499
 #define SPECIES_SNORLAX_GIGANTAMAX                      1500
 #define SPECIES_GARBODOR_GIGANTAMAX                     1501
@@ -1618,19 +1618,33 @@
 #define SPECIES_SANDACONDA_GIGANTAMAX                   1512
 #define SPECIES_TOXTRICITY_AMPED_GIGANTAMAX             1513
 #define SPECIES_TOXTRICITY_LOW_KEY_GIGANTAMAX           1514
-#define SPECIES_CENTISKORCH_GIGANTAMAX                  1515
+#define SPECIES_CENTISKORCH_MEGA                        1515
 #define SPECIES_HATTERENE_GIGANTAMAX                    1516
-#define SPECIES_GRIMMSNARL_GIGANTAMAX                   1517
+#define SPECIES_GRIMMSNARL_MEGA                         1517
 #define SPECIES_ALCREMIE_GIGANTAMAX                     1518
-#define SPECIES_COPPERAJAH_GIGANTAMAX                   1519
+#define SPECIES_COPPERAJAH_MEGA                         1519
 #define SPECIES_DURALUDON_GIGANTAMAX                    1520
 #define SPECIES_URSHIFU_SINGLE_STRIKE_STYLE_GIGANTAMAX  1521
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GIGANTAMAX   1522
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    1523
 #define SPECIES_ZYGARDE_CELL                            1524
 #define SPECIES_ZYGARDE_10                              1525
+#define SPECIES_DRAGONITE_MEGA                          1526
+#define SPECIES_NOCTOWL_MEGA                            1527
+#define SPECIES_FLYGON_MEGA                             1528
+#define SPECIES_ARCHEOPS_MEGA                           1529
+#define SPECIES_MANDIBUZZ_MEGA                          1530
+#define SPECIES_GOGOAT_MEGA                             1531
+#define SPECIES_PANGORO_MEGA                            1532
+#define SPECIES_HELIOLISK_MEGA                          1533
+#define SPECIES_TOUCANNON_MEGA                          1534
+#define SPECIES_RIBOMBEE_MEGA                           1535
+#define SPECIES_WYRDEER_MEGA                            1536
+#define SPECIES_TINKATON_MEGA                           1537
+#define SPECIES_CYCLIZAR_MEGA_S                         1538
+#define SPECIES_CYCLIZAR_MEGA_V                         1539
 
-#define SPECIES_EGG (SPECIES_ZYGARDE_10 + 1)
+#define SPECIES_EGG (SPECIES_CYCLIZAR_MEGA_V + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 
@@ -1649,11 +1663,11 @@
 #define SPECIES_BUTTERFREE_GMAX                         SPECIES_BUTTERFREE_GIGANTAMAX
 #define SPECIES_CALYREX_ICE                             SPECIES_CALYREX_ICE_RIDER
 #define SPECIES_CALYREX_SHADOW                          SPECIES_CALYREX_AUTUMN_RIDER
-#define SPECIES_CENTISKORCH_GMAX                        SPECIES_CENTISKORCH_GIGANTAMAX
+#define SPECIES_CENTISKORCH_GMAX                        SPECIES_CENTISKORCH_MEGA
 #define SPECIES_CHARIZARD_GMAX                          SPECIES_CHARIZARD_GIGANTAMAX
 #define SPECIES_CINDERACE_GMAX                          SPECIES_CINDERACE_GIGANTAMAX
 #define SPECIES_COALOSSAL_GMAX                          SPECIES_COALOSSAL_GIGANTAMAX
-#define SPECIES_COPPERAJAH_GMAX                         SPECIES_COPPERAJAH_GIGANTAMAX
+#define SPECIES_COPPERAJAH_GMAX                         SPECIES_COPPERAJAH_MEGA
 #define SPECIES_CORSOLA_GALAR                           SPECIES_CORSOLA_GALARIAN
 #define SPECIES_CORVIKNIGHT_GMAX                        SPECIES_CORVIKNIGHT_GIGANTAMAX
 #define SPECIES_DARMANITAN_GALAR                        SPECIES_DARMANITAN_GALARIAN_STANDARD_MODE
@@ -1686,12 +1700,12 @@
 #define SPECIES_GRAVELER_ALOLA                          SPECIES_GRAVELER_ALOLAN
 #define SPECIES_GRENINJA_BOND                           SPECIES_GRENINJA_BATTLE_BOND
 #define SPECIES_GRIMER_ALOLA                            SPECIES_GRIMER_ALOLAN
-#define SPECIES_GRIMMSNARL_GMAX                         SPECIES_GRIMMSNARL_GIGANTAMAX
+#define SPECIES_GRIMMSNARL_GMAX                         SPECIES_GRIMMSNARL_MEGA
 #define SPECIES_GROWLITHE_HISUI                         SPECIES_GROWLITHE_HISUIAN
 #define SPECIES_HATTERENE_GMAX                          SPECIES_HATTERENE_GIGANTAMAX
 #define SPECIES_INTELEON_GMAX                           SPECIES_INTELEON_GIGANTAMAX
 #define SPECIES_KINGLER_GMAX                            SPECIES_KINGLER_GIGANTAMAX
-#define SPECIES_LAPRAS_GMAX                             SPECIES_LAPRAS_GIGANTAMAX
+#define SPECIES_LAPRAS_GMAX                             SPECIES_LAPRAS_MEGA
 #define SPECIES_LILLIGANT_HISUI                         SPECIES_LILLIGANT_HISUIAN
 #define SPECIES_LINOONE_GALAR                           SPECIES_LINOONE_GALARIAN
 #define SPECIES_MACHAMP_GMAX                            SPECIES_MACHAMP_GIGANTAMAX

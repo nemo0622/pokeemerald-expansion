@@ -397,7 +397,7 @@ script SofosCity_EventScript_FishermanPlayingChess
     lock
     faceplayer
     speakername("Fisherman")
-    msgbox(format("I formed a wall with my Zigzagoon pieces, so that'll protect my Celebi. If they take the Celebi piece, I lose the game!"))
+    msgbox(format("I formed a wall with my Zigzagoon pieces, so that'll protect my Gallade. If they take the Gallade piece, I lose the game!"))
     closemessage
     applymovement(35, Common_Movement_FaceRight)
     waitmovement(0)
@@ -410,7 +410,7 @@ script SofosCity_EventScript_GirlPlayingChess
     lock
     faceplayer
     speakername("Girl")
-    msgbox(format("Each piece can move in different ways. Chesnaught moves in straight lines, Mudsdale moves in L-shapes, and Xatu can only move diagonally. The endless strategies make this the most popular game in the city!"))
+    msgbox(format("Each piece can move in different ways. Chesnaught moves in straight lines, Mudsdale moves in L-shapes, and Xatu can only move diagonally. Each side only gets one Gardevoir, which can move in any direction. The endless strategies make this the most popular game in the city!"))
     closemessage
     applymovement(36, Common_Movement_FaceLeft)
     waitmovement(0)

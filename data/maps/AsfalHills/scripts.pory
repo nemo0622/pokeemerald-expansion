@@ -358,7 +358,7 @@ script AsfalHills_EventScript_NikoMeetPlayerEvent
     applymovement(8, AsfalHills_Movement_DuskullReturnsToNiko)
     waitmovement(0)
 
-    // cutscene explaining the statues and connecting to Tera
+    // cutscene explaining the statues and connecting to Mega Evolution
     delay(5)
     speakername("Niko")
     msgbox(format("These were two brothers who lived back when the Ilios Region was young. On the left was a mighty king, while to the right was a humble poet.\p Both pursued happiness in different ways. The king, obsessed with worldly possessions, strove to become the richest man in the region. The poet remained humble, choosing to help others and follow his heart.\p Now, thousands of years later, you can see which was better for everyone. The king's statue remains overgrown and weathered, while the statue of the poet is cleaned and cared for."))
@@ -368,7 +368,7 @@ script AsfalHills_EventScript_NikoMeetPlayerEvent
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)
     speakername("Niko")
-    msgbox(format("Ahem, sorry for the info dump. The point is, there are more important things in the world than money and power.\p You've had encounters with {COLOR GREEN}Team Chimera{COLOR DARK_GRAY}, as I'm sure you remember. I believe they share a goal with this ancient king. I heard rumors that they've set up camp {COLOR GREEN}in Sofos City{COLOR DARK_GRAY} and stole an important artifact - a {COLOR GREEN}Terastallization Orb{COLOR DARK_GRAY}. My bet is, they want to sell it or use it to control people even more.\p Head into Sofos City, {COLOR GREEN}root out Team Chimera{COLOR DARK_GRAY}, and {COLOR GREEN}bring me back that Tera Orb{COLOR DARK_GRAY}. We can't let them keep their hands on it!"))
+    msgbox(format("Ahem, sorry for the info dump. The point is, there are more important things in the world than money and power.\p You've had encounters with {COLOR GREEN}Team Chimera{COLOR DARK_GRAY}, as I'm sure you remember. I believe they share a goal with this ancient king. I heard rumors that they've set up camp {COLOR GREEN}somewhere around Sofos City{COLOR DARK_GRAY} to find a hidden treasure: a {COLOR GREEN}Key Stone{COLOR DARK_GRAY}. My bet is, they want to control Mega Evolution and squeeze even more money out of the Ilios Region.\p Head into Sofos City, {COLOR GREEN}root out Team Chimera{COLOR DARK_GRAY}, and {COLOR GREEN}bring me back that Key Stone{COLOR DARK_GRAY}. We can't let them keep their hands on it!"))
     closemessage
     delay(10)
     applymovement(8, AsfalHills_Movement_DuskullReturnsToStatue)
@@ -377,8 +377,8 @@ script AsfalHills_EventScript_NikoMeetPlayerEvent
     waitmovement(0)
 
     delay(20)
-    startquest(QUEST_BEAT_CHIMERA_SOFOS_CITY) // START TERA ORB QUEST
-    // QUEST REWARD: Niko gives you the Tera Orb to keep, along with the HM Surf. This ensures that the
+    startquest(QUEST_BEAT_CHIMERA_SOFOS_CITY) // START MEGA STONE QUEST
+    // QUEST REWARD: Niko gives you the Key Stone (Mega Ring) to keep, along with the HM Surf. This ensures that the
     // player will absolutely have to do this quest no matter what lol, even following the Team Chimera root-out
     // battles and the return of the Gym Leader to the Gym.
 
@@ -439,22 +439,22 @@ script AsfalHills_EventScript_NikoWaitingForPlayer
     closemessage
 
     delay(20)
-    checkitem(ITEM_TERA_ORB)
-    if(var(VAR_RESULT) == 0) // no tera orb yet
+    checkitem(ITEM_KEY_STONE)
+    if(var(VAR_RESULT) == 0) // no key stone yet
     {
         speakername("Niko")
-        msgbox(format("Hmm, I don't see the {COLOR GREEN}Tera Orb{COLOR DARK_GRAY} with you. Please, we can't let Team Chimera keep that, it's a precious artifact that may hold more power than we know.\p Please, find {COLOR GREEN}Team Chimera's Hideout{COLOR DARK_GRAY} around Sofos City and {COLOR GREEN}bring back the Tera Orb{COLOR DARK_GRAY}!"))
+        msgbox(format("Hmm, I don't see the {COLOR GREEN}Key Stone{COLOR DARK_GRAY} with you. Please, we can't let Team Chimera keep that, it's a precious artifact that may hold more power than we know.\p Please, find {COLOR GREEN}Team Chimera's Hideout{COLOR DARK_GRAY} around Sofos City and {COLOR GREEN}bring back the Key Stone{COLOR DARK_GRAY}!"))
         closemessage
         release
         end
     }
-    else // brought the tera orb!
+    else // brought the key stone!
     {
         applymovement(7, Common_Movement_ExclamationMark)
         waitmovement(0)
         delay(5)
         speakername("Niko")
-        msgbox(format("Woah, you got it! The aura radiating around it... it can only mean one thing, my hunch was correct.\p The Tera Orb allows skilled Trainers to unlock the powers of {COLOR GREEN}Terastallization{COLOR DARK_GRAY}, temporarily changing a Pokémon's type and giving them an edge in battle. There are only a few of these outside of the Paldea Region... I thought only Gym Leaders and a few other powerful Trainers could have them.\p {PLAYER}, I want you to keep the Tera Orb. Team Chimera is clearly trying to grow in power, so the safest place for it would be with a skilled Trainer like you. The Tera Orb can be recharged at most Pokémon Centers after being used."))
+        msgbox(format("Woah, you got it! The aura radiating around it... it can only mean one thing, my hunch was correct.\p The Key Stone allows skilled Trainers to unlock the powers of {COLOR GREEN}Mega Evolution{COLOR DARK_GRAY}, temporarily changing a Pokémon into an incredibly powerful form. There are only a few of these in the Ilios Region. Most Key Stones have already been claimed by Gym Leaders and a few powerful Trainer families... I suppose it makes sense that one was hidden in the Satyr's Lair from ancient times, though.\p {PLAYER}, I want you to keep the Key Stone. Team Chimera is clearly trying to grow in power, so the safest place for it would be with a skilled Trainer like you."))
         closemessage
         delay(10)
         speakername("Niko")
@@ -464,7 +464,7 @@ script AsfalHills_EventScript_NikoWaitingForPlayer
         closemessage
         delay(5)
         speakername("Niko")
-        msgbox(format("The HM Surf will allow you to cross the waters of Ilios. Of course, you need the Gym Badge from Sofos City to use it!\p Alright, Duskull and I are getting out of here before any Team Chimera members pay us a visit. Come to Acrisia University if you have any {COLOR GREEN}Terastallization questions{COLOR DARK_GRAY}!"))
+        msgbox(format("The HM Surf will allow you to cross the waters of Ilios. Of course, you need the Gym Badge from Sofos City to use it!\p Alright, Duskull and I are getting out of here before any Team Chimera members pay us a visit. Come to Acrisia University soon, as I'll be collecting {COLOR GREEN}Mega Stones{COLOR DARK_GRAY} for you!"))
         closemessage
         fadescreenswapbuffers(FADE_TO_BLACK)
         delay(20)
@@ -472,7 +472,8 @@ script AsfalHills_EventScript_NikoWaitingForPlayer
         removeobject(7)
         removeobject(8)
         setflag(FLAG_HIDE_BLOCKING_SOFOS_GYM)
-        setflag(FLAG_UNLOCKED_TERASTALLIZATION)
+        setflag(FLAG_UNLOCKED_MEGA_EVOLUTION)
+        clearflag(FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY)
         delay(20)
         fadescreenswapbuffers(FADE_FROM_BLACK)
         delay(10)

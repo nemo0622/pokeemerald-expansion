@@ -181,8 +181,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigRaikouDo
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigEnteiDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigSuicuneDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigGyaradosDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigHo_ohDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigLugiaDoll;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigHydrappleDoll;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigDragoniteDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigRaichuDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Latias;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Latios;
@@ -692,8 +692,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BIG_ENTEI_DOLL] =           &gObjectEventGraphicsInfo_BigEnteiDoll,
     [OBJ_EVENT_GFX_BIG_SUICUNE_DOLL] =       &gObjectEventGraphicsInfo_BigSuicuneDoll,
     [OBJ_EVENT_GFX_BIG_GYARADOS_DOLL] =         &gObjectEventGraphicsInfo_BigGyaradosDoll,
-    [OBJ_EVENT_GFX_BIG_HO_OH_DOLL] =        &gObjectEventGraphicsInfo_BigHo_ohDoll,
-    [OBJ_EVENT_GFX_BIG_LUGIA_DOLL] =          &gObjectEventGraphicsInfo_BigLugiaDoll,
+    [OBJ_EVENT_GFX_BIG_HYDRAPPLE_DOLL] =        &gObjectEventGraphicsInfo_BigHydrappleDoll,
+    [OBJ_EVENT_GFX_BIG_DRAGONITE_DOLL] =          &gObjectEventGraphicsInfo_BigDragoniteDoll,
     [OBJ_EVENT_GFX_BIG_RAICHU_DOLL] =       &gObjectEventGraphicsInfo_BigRaichuDoll,
     [OBJ_EVENT_GFX_LATIAS] =                   &gObjectEventGraphicsInfo_Latias,
     [OBJ_EVENT_GFX_LATIOS] =                   &gObjectEventGraphicsInfo_Latios,

@@ -23,10 +23,10 @@
 #define P_NEW_EVOS_IN_REGIONAL_DEX       TRUE
 
 // Battle gimmick specific Forms.
-#define P_MEGA_EVOLUTIONS                FALSE
-#define P_PRIMAL_REVERSIONS              FALSE // Groudon and Kyogre only.
+#define P_MEGA_EVOLUTIONS                TRUE 
+#define P_PRIMAL_REVERSIONS              TRUE // Groudon and Kyogre only.
 #define P_ULTRA_BURST_FORMS              FALSE // Ultra Necrozma only.
-#define P_GIGANTAMAX_FORMS               FALSE
+#define P_GIGANTAMAX_FORMS               TRUE
 #define P_TERA_FORMS                     FALSE
 
 // Fusion forms
@@ -246,16 +246,16 @@
 #define P_FAMILY_CLAMPERL                P_GEN_3_POKEMON
 #define P_FAMILY_RELICANTH               P_GEN_3_POKEMON
 #define P_FAMILY_LUVDISC                 FALSE
-#define P_FAMILY_BAGON                   P_GEN_3_POKEMON
+#define P_FAMILY_BAGON                   FALSE
 #define P_FAMILY_BELDUM                  FALSE
 #define P_FAMILY_REGIROCK                FALSE
 #define P_FAMILY_REGICE                  FALSE
 #define P_FAMILY_REGISTEEL               FALSE
 #define P_FAMILY_LATIAS                  FALSE
 #define P_FAMILY_LATIOS                  FALSE
-#define P_FAMILY_KYOGRE                  FALSE
-#define P_FAMILY_GROUDON                 FALSE
-#define P_FAMILY_RAYQUAZA                FALSE
+#define P_FAMILY_KYOGRE                  P_GEN_3_POKEMON
+#define P_FAMILY_GROUDON                 P_GEN_3_POKEMON
+#define P_FAMILY_RAYQUAZA                P_GEN_3_POKEMON
 #define P_FAMILY_JIRACHI                 FALSE
 #define P_FAMILY_DEOXYS                  FALSE
 

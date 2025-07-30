@@ -29,7 +29,7 @@ script SatyrsLair_EventScript_ChimeraEvent
     applymovement(2, Common_Movement_FaceDown)
     waitmovement(0)
     speakername("Chimera Grunts")
-    msgbox(format("You think you're better than us? Heh, our Admin just found a {COLOR GREEN}Tera Orb{COLOR DARK_GRAY}! You have no chance of winning now!"))
+    msgbox(format("You think you're better than us? Heh, our Admin just found the {COLOR GREEN}Key Stone{COLOR DARK_GRAY} left here by ancient Ilians! You have no chance of winning now!"))
     closemessage
 
     trainerbattle_two_trainers(TRAINER_SATYRSLAIR_CHIMERA_GRUNT_1, SatyrsLair_Text_ChimeraGruntLoseText1, TRAINER_SATYRSLAIR_CHIMERA_GRUNT_2, SatyrsLair_Text_ChimeraGruntLoseText2)
@@ -56,7 +56,7 @@ script SatyrsLair_EventScript_ChimeraEvent
     applymovement(3, SatyrsLair_Movement_AdminEscapes1)
     waitmovement(0)
     speakername("Terpsikore")
-    msgbox(format("Hold on there, bud. Give me that {COLOR GREEN}Tera Orb{COLOR DARK_GRAY} back, and I'll let you catch up to your cronies."))
+    msgbox(format("Hold on there, bud. Give me that {COLOR GREEN}Key Stone{COLOR DARK_GRAY} back, and I'll let you catch up to your cronies."))
     closemessage
     delay(5)
     applymovement(3, Common_Movement_WalkInPlaceFasterRight)
@@ -79,7 +79,7 @@ script SatyrsLair_EventScript_ChimeraEvent
     applymovement(5, SatyrsLair_Movement_TerpsikoreApproachesPlayer)
     waitmovement(0)
     speakername("Terpsikore")
-    msgbox(format("What a thrilling battle! Your strategy, the moves you used, the timing of your attacks... You move in perfect harmony with your team. What's your name?\p {PLAYER}! Please, come challenge me {COLOR GREEN}at my Gym{COLOR DARK_GRAY}! Oh, as for the Tera Orb... I already have my own, as a Gym Leader. What should I do with it?"))
+    msgbox(format("What a thrilling battle! Your strategy, the moves you used, the timing of your attacks... You move in perfect harmony with your team. What's your name?\p {PLAYER}! Please, come challenge me {COLOR GREEN}at my Gym{COLOR DARK_GRAY}! Oh, as for the Key Stone... I already have my own, as a Gym Leader. What should I do with it?"))
     closemessage
     delay(15)
     emote(5, EMOTE_QUESTION)
@@ -87,7 +87,7 @@ script SatyrsLair_EventScript_ChimeraEvent
     msgbox(format("Hm? Your friend {COLOR GREEN}Niko{COLOR DARK_GRAY} was looking for it? Here, {COLOR GREEN}bring it to him{COLOR DARK_GRAY}. If you trust him, so shall I!"))
     closemessage
 
-    giveitem(ITEM_TERA_ORB)
+    giveitem(ITEM_KEY_STONE)
     closemessage
 
     delay(5)

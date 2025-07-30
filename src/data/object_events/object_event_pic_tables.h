@@ -789,12 +789,12 @@ static const struct SpriteFrameImage sPicTable_BigGyaradosDoll[] = {
     obj_frame_tiles(gObjectEventPic_BigGyaradosDoll),
 };
 
-static const struct SpriteFrameImage sPicTable_BigHo_ohDoll[] = {
-    obj_frame_tiles(gObjectEventPic_BigHo_ohDoll),
+static const struct SpriteFrameImage sPicTable_BigHydrappleDoll[] = {
+    obj_frame_tiles(gObjectEventPic_BigHydrappleDoll),
 };
 
-static const struct SpriteFrameImage sPicTable_BigLugiaDoll[] = {
-    obj_frame_tiles(gObjectEventPic_BigLugiaDoll),
+static const struct SpriteFrameImage sPicTable_BigDragoniteDoll[] = {
+    obj_frame_tiles(gObjectEventPic_BigDragoniteDoll),
 };
 
 static const struct SpriteFrameImage sPicTable_BigRaichuDoll[] = {

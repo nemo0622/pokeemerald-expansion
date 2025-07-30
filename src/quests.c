@@ -858,7 +858,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_29,
 	      gText_SideQuestDoneDesc_29,
 	      gText_SideQuestMap29,
-	      ITEM_TERA_ORB,
+	      ITEM_KEY_STONE,
 	      ITEM,
 	      NULL,
 	      0

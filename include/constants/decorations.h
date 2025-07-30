@@ -119,8 +119,8 @@
 #define DECOR_ENTEI_DOLL       115 // replaces CHARIZARD_DOLL
 #define DECOR_SUICUNE_DOLL     116 // replaces SUICUNE_DOLL
 #define DECOR_GYARADOS_DOLL    117 // replaces WAILMER_DOLL
-#define DECOR_HO_OH_DOLL       118 // replaces REGIROCK_DOLL
-#define DECOR_LUGIA_DOLL       119 // replaces REGICE_DOLL
+#define DECOR_HYDRAPPLE_DOLL   118 // replaces REGIROCK_DOLL
+#define DECOR_DRAGONITE_DOLL   119 // replaces REGICE_DOLL
 #define DECOR_RAICHU_DOLL      120 // replaces REGISTEEL_DOLL - reward for Raichu quest in Sofos City
 #define DECOR_SMALL_FLOWER_BOX 121
 #define DECOR_LARGE_BED        122

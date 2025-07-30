@@ -1983,7 +1983,67 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sGogoatLevelUpLearnset,
         .teachableLearnset = sGogoatTeachableLearnset,
+        .formSpeciesIdTable = sGogoatFormSpeciesIdTable,
+        .formChangeTable = sGogoatFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_GOGOAT_MEGA] =
+    {
+        .baseHP        = 133,
+        .baseAttack    = 104,
+        .baseDefense   = 67,
+        .baseSpeed     = 64,
+        .baseSpAttack  = 97,
+        .baseSpDefense = 81,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
+        .catchRate = 45,
+        .expYield = 186,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_SAP_SIPPER, ABILITY_GRASS_PELT, ABILITY_SEED_SOWER },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Gogoat"),
+        .cryId = CRY_GOGOAT,
+        .natDexNum = NATIONAL_DEX_GOGOAT,
+        .categoryName = _("Mount"),
+        .height = 17,
+        .weight = 910,
+        .description = COMPOUND_STRING(
+            "It can tell how its trainer is feeling by\n"
+            "subtle shifts in the grip on its horns. This\n"
+            "empathetic sense lets them run as if one\n"
+            "being. They inhabit mountainous regions."),
+        .pokemonScale = 259,
+        .pokemonOffset = 0,
+        .trainerScale = 290,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_GogoatMega,
+        .frontPicSize = MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_GogoatMega,
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_GogoatMega,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 9,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_GogoatMega,
+        .shinyPalette = gMonShinyPalette_GogoatMega,
+        .iconSprite = gMonIcon_GogoatMega,
+        .iconPalIndex = 1,
+        SHADOW(2, 8, SHADOW_SIZE_L)
+        FOOTPRINT(Gogoat)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sGogoatLevelUpLearnset,
+        .teachableLearnset = sGogoatTeachableLearnset,
+        .formSpeciesIdTable = sGogoatFormSpeciesIdTable,
+        .formChangeTable = sGogoatFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SKIDDO
 
 #if P_FAMILY_PANCHAM
@@ -2014,10 +2074,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 6,
         .weight = 80,
         .description = COMPOUND_STRING(
-            "There's no point to the leaf in its mouth,\n"
-            "aside from an effort to look cool. It's\n"
-            "mischievous, so it's not well suited to\n"
-            "inexperienced Trainers."),
+            "Pancham collects leaves as it travels,\n" // new desc
+            "keeping them in its mouth as decoration.\n"
+            "Pancham kept indoors must have access to\n"
+            "bamboo plants in order to thrive."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -2078,10 +2138,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 21,
         .weight = 1360,
         .description = COMPOUND_STRING(
-            "It boasts superb physical strength.\n"
-            "Those who wish to become Pangoro's\n"
-            "Trainer have no choice but to converse\n"
-            "with their fists."),
+            "It is much stronger than most other\n" // new desc
+            "Pokémon in its natural habitat. It uses\n"
+            "its strength to protect weaker Pokémon,\n"
+            "but they almost always live in solitude."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 365,
@@ -2111,7 +2171,68 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sPangoroLevelUpLearnset,
         .teachableLearnset = sPangoroTeachableLearnset,
+        .formSpeciesIdTable = sPangoroFormSpeciesIdTable,
+        .formChangeTable = sPangoroFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_PANGORO_MEGA] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 144,
+        .baseDefense   = 98,
+        .baseSpeed     = 88,
+        .baseSpAttack  = 79,
+        .baseSpDefense = 91,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_DARK),
+        .catchRate = 65,
+        .expYield = 173,
+        .evYield_Attack = 2,
+        .itemRare = ITEM_MENTAL_HERB,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_NATURES_TOOLS, ABILITY_NATURES_TOOLS, ABILITY_NATURES_TOOLS },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Pangoro"),
+        .cryId = CRY_PANGORO,
+        .natDexNum = NATIONAL_DEX_PANGORO,
+        .categoryName = _("Daunting"),
+        .height = 21,
+        .weight = 1360,
+        .description = COMPOUND_STRING(
+            "Mega Pangoro has begun to collaborate\n" // new desc
+            "with others, developing advanced skills\n"
+            "of crafting and using tools. They are\n"
+            "strongest when they work together."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 365,
+        .trainerOffset = 7,
+        .frontPic = gMonFrontPic_PangoroMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_PangoroMega,
+        .frontAnimId = ANIM_BACK_AND_LUNGE,
+        .backPic = gMonBackPic_PangoroMega,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 4,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .palette = gMonPalette_PangoroMega,
+        .shinyPalette = gMonShinyPalette_PangoroMega,
+        .iconSprite = gMonIcon_PangoroMega,
+        .iconPalIndex = 1,
+        SHADOW(0, 9, SHADOW_SIZE_M)
+        FOOTPRINT(Pangoro)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sPangoroLevelUpLearnset,
+        .teachableLearnset = sPangoroTeachableLearnset,
+        .formSpeciesIdTable = sPangoroFormSpeciesIdTable,
+        .formChangeTable = sPangoroFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_PANCHAM
 
 #if P_FAMILY_FURFROU
@@ -3511,7 +3632,68 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sHelioliskLevelUpLearnset,
         .teachableLearnset = sHelioliskTeachableLearnset,
+        .formSpeciesIdTable = sHelioliskFormSpeciesIdTable,
+        .formChangeTable = sHelioliskFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_HELIOLISK_MEGA] =
+    {
+        .baseHP        = 62,
+        .baseAttack    = 55,
+        .baseDefense   = 52,
+        .baseSpeed     = 109,
+        .baseSpAttack  = 119,
+        .baseSpDefense = 94,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_NORMAL),
+        .catchRate = 75,
+        .expYield = 168,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_DRY_SKIN, ABILITY_SAND_VEIL, ABILITY_SOLAR_POWER },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Heliolisk"),
+        .cryId = CRY_HELIOLISK,
+        .natDexNum = NATIONAL_DEX_HELIOLISK,
+        .categoryName = _("Generator"),
+        .height = 10,
+        .weight = 210,
+        .description = COMPOUND_STRING(
+            "A single Heliolisk can generate sufficient\n"
+            "electricity to power a skyscraper. It can\n"
+            "stimulate its muscles with electricity,\n"
+            "boosting the strength in its legs."),
+        .pokemonScale = 305,
+        .pokemonOffset = 7,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_HelioliskMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = sAnims_HelioliskMega,
+        .frontAnimId = ANIM_RAPID_H_HOPS,
+        .backPic = gMonBackPic_HelioliskMega,
+        .backPicSize = MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 2,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+        .palette = gMonPalette_HelioliskMega,
+        .shinyPalette = gMonShinyPalette_HelioliskMega,
+        .iconSprite = gMonIcon_HelioliskMega,
+        .iconPalIndex = 2,
+        SHADOW(1, 10, SHADOW_SIZE_S)
+        FOOTPRINT(Heliolisk)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sHelioliskLevelUpLearnset,
+        .teachableLearnset = sHelioliskTeachableLearnset,
+        .formSpeciesIdTable = sHelioliskFormSpeciesIdTable,
+        .formChangeTable = sHelioliskFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HELIOPTILE
 
 #if P_FAMILY_TYRUNT

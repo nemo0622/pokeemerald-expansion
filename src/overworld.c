@@ -3591,11 +3591,11 @@ void GetOverworldMonSpecies(void)
     // case OBJ_EVENT_GFX_BIG_GYARADOS_DOLL:
     //     gSpecialVar_0x8004 = SPECIES_WAILMER;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_HO_OH_DOLL:
+    // case OBJ_EVENT_GFX_BIG_HYDRAPPLE_DOLL:
     // case OBJ_EVENT_GFX_REGIROCK:
     //     gSpecialVar_0x8004 = SPECIES_REGIROCK;
     //     break;
-    // case OBJ_EVENT_GFX_BIG_LUGIA_DOLL:
+    // case OBJ_EVENT_GFX_BIG_DRAGONITE_DOLL:
     // case OBJ_EVENT_GFX_REGICE:
     //     gSpecialVar_0x8004 = SPECIES_REGICE;
     //     break;

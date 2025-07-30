@@ -14227,6 +14227,8 @@
       "MOVE_UPROAR",
       "MOVE_DUAL_WINGBEAT",
       "MOVE_PSYCH_UP",
+      "MOVE_DEEPWATER_CURSE",
+      "MOVE_WILL_O_WISP",
       "MOVE_FEATHER_DANCE"
     ],
     "EggMoves": [
@@ -14356,6 +14358,8 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_FUTURE_SIGHT",
       "MOVE_CURSE",
+      "MOVE_DEEPWATER_CURSE",
+      "MOVE_WILL_O_WISP",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [

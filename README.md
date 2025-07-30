@@ -70,18 +70,54 @@ MAJOR TODOS:
 - Continue Mapping and NPC development
     - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
 
-- Add new Emotes using Reakain's Emote spritesheet (so cute!)
-    - Go through major story events and add relevant emotes
-    - Also try to add them to other things (ex: crying Emote when DexNav Pokémon disappears)
+- Add Litleo and Pyroar (shh i like em...)
+- Implement MEGA EVOLUTION
+    - :check: Replace Terastallization with Mega Evolution in the Sofos City event and stuff
+    - :check: Replace Tera Shard shop in Game Corner with EV Feathers?
+    - :check: Niko can be a Mega Stone shop, which expands more as you play the game
+        - :cehck: Different shops after quest, after 5th gym, and after 6th gym
+        - :check: All unlocked after 6th gym! BUT all should be SUPER EXPENSIVE too
+    - :check: Make sure all Mega Evo stats and abilities line up with changes from base form
+    - :check: All Gym 4 and 5 hard modes have Mega Evolutions as leads or aces
+    - :check: All Gym Leaders 6 and above have Megas in their teams as well
+    - :check: REPLACE HO-OH, LUGIA, AND CELEBI WITH GROUDON, KYOGRE, AND RAYQUAZA
+        - These Pokémon can undergo Primal Reversion (basically Mega Evolution), so they'll match the game gimmick
+        - In the story climax, the Ancient Machine being put together by Team Chimera could actually be something to FORCE PERMANENT MEGA EVOLUTION on the Legendary Dog trio!
+        - :check: Make Kyogre, Groudon, and Rayquaza overworlds 32x32 lol
+        - :check: Replace dialogue region-wide and tiles in Sofos Acropolis Temple to reflect these changes!
+    - Convert G-Max forms to Mega Forms in code
+        - Update stats as well! +100 for each!
+        - CHECK SHADOWS IN BATTLE
+- CUSTOM MEGA EVOLUTION CONCEPTS:
+    - Mega Lapras (G-max Design): Gains large boost of defenses and special attack, with slight speed decrease
+    - Mega Noctowl: Uniform stat boosts prolly, Ghost/Flying
+    - Mega Flygon: Special Attack and Speed boosts!
+    - Mega Archeops: Dragon/Flying type, strong and fast sweeper. Design: Long-legged bird, like Shoebill Storks, Secretary Birds, or Roadrunners. Huge Shoebill beak instead of jaws?
+    - Mega Mandibuzz: Dark/Flying type, highly defensive Pokémon. Design: Based on Bearded Vulture with red-tinted feathers. Skull places over face / head like Cubone?
+    - Mega Gogoat: Grass/Ground type, major buff to physical stats at cost of speed. Design: Body similar to normal Gogoat, but with massive antler-horns like the Irish Elk
+    - Mega Pangoro: Fighting/Dark type, uniform stat buffs across the board. Design: Pangoro gains a sharp leaf spear, drastically increasing combat abilities! Moss also begins to grow on it as it becomes one with nature
+        - Ability: Nature's Tools - boosts Grass-type moves by 50% + Sap Sipper
+        - Give Pancham Leafage and Pangoro moves like Leaf Blade!
+    - Mega Heliolisk: Electric/Normal type, with iradescent shining frills like the Fan-Throated Lizard
+    - Mega Toucannon: Fire/Flying type, with a uniform stat increase across the board. Design: mostly same body but with redder beak and some red feather accents. A flock of a few Pikipek flying around it. This will give it an ability like Parental Bond!!
+        - Add some Fire moves to their moveset! Make sure moves like Beat Blast are Fire, and have it learn Flame Charge and a few others
+    - Mega Ribombee: Bug/Fairy type, with special attack & speed boosts and minor defensive buffs. Design: "scarf" extends into trailing bows, carrying a flower kind of like Floette
+    - Mega Wyrdeer: Normal/Psychic type, becoming extremely defensively bulky. Design: Wyrdeer's beard becomes massive, and it becomes an "elder" with closed eyes and a heavier body.
+    - Mega Centiskorch (G-Max Design): Boosts Attack, Special Attack, and Special Defense
+    - Mega Grimmsnarl (G-Max Design): Boosts physical Attack, Defense, and a bit of Speed
+    - Mega Copperajah (G-Max Design): Complete tank of course
+    - Mega Tinkaton: Attack and Defense boosts, uniformly across the board. Design: even larger hammer, and possibly wearing safety goggles or something?
+    - Mega Cyclizar S and V: Huge boost to Attack, Special Attack, and Speed. Design: For the S form, incorporate aspects of Koraidon, such as the feathers and rusty orange color, into the Mega. For the V form, incorporate parts of Miraidon, such as the purple coloration and electricity around the eyes.
 
 - Continue Mapping and Scripting through Palati City
 - After beating Palati City Gym, have Niko and Rania run up to you in a panic as a thunderstorm starts. Say thatNiko got a call from a friend in Sofos City that Team Chimera took over their Acropolis temple, and warp theretogether immediately!
     - This will be the legendary Pokémon / Team Chimera takeover arc! The boss, Kalliope, uses the reassembled Ancient Mechanism to summon Celebi and the Legendary Dogs to the temple. She bends Celebi to her will, using its power to convert the legendaries into their ancient forms - Walking Wake, Raging Bolt, and Gouging Fire. Kalliope and Team Chimera vanish, and extreme weather starts all over the region
         - Extreme weather: set a flag that is checked on every outdoors map. Like how Pythios does it, when the flag is set, set the weather of the map to a random extreme weather (WEATHER_FOG_HORIZONTAL, WEATHER_DOWNPOUR, or WEATHER_DROUGHT)
-    - Niko tells player of ancient mythology of Ho-oh and Lugia, found at a Fiery Tower (Tower of Dioxippus) and a Watery Temple (the Sunken Temple in the Sea of Vulcai)
+    - Niko tells player of ancient mythology of Groudon, Kyogre, and Rayquaza, the Gods of the three domains. Say that surviving art and literature mention Groudon in the Satyr's Lair, Kyogre in a Sunken Temple, and Rayquaza atop the tallest tower in the region (the Tower of Dioxippus)
         - Recommends capturing them, as they may be the only thing strong enough to settle them
-        - At each location, the Player will find a TEAM CHIMERA ADMIN (fire and water, respectively) waiting for them! Ho-oh and Lugia will bear witness to your battle, as you catch the Admins in the process of catching them
+        - At Kyogre and Groudon's locations, you'll find the TEAM CHIMERA ADMINS (Ice and Fire ones respectively) attempting to use Walking Wake / Gouging Fire to subdue the legendaries! Battle the Admins to make them run away, then capture Kyogre and Groudon
             - The admins use powerful teams, plus Walking Wake and Gouging Fire respectively! Raging Bolt will be reserved for the final battle with Kalliope, with the signature move Thunderclap being a whole other level of threatening lol
+            - At the top of the Tower of Dioxippus, where Rayquaza is, you'll have to battle Kalliope. THE TOWER CAN ONLY BE ACCESSED AFTER FIGHTING KYOGRE AND GROUDON! Kalliope will use Raging Bolt, and after her defeat, she will be chased off by Rayquaza and return to Aerios Hideout (to her Gym!).
     - Rania tells player that Team Chimera grunts have been spotted in an abandoned town south of Port Pello, speculating that that's where they went
         - Also happens to be the old location for the 8th gym, hOw aBoUt tHaT! Player encouraged to head south of Port Pello and strike at the heart of Team Chimera
 
@@ -91,8 +127,8 @@ MAJOR TODOS:
         - Lastlight Road - Route leading south of Kipos Town, going up and then down mountains, some snowy Pokémon
         - Tower of Dioxippus - small settlement south of Kipos Town, with a large tower (TrainerDX tiles) and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
             - Named after Dioxippus, the Olympic champion who won combat because nobody was willing to challenge them
-            - Rumored to be the home of a great, godlike Pokémon with the power to restore life (Ho-oh!)
-            - This will be where Ho-oh can be caught later in the game, probably after the Chimera story
+            - Rumored to be the home of a great, godlike Pokémon (Rayquaza)
+            - This will be where Rayquaza can be caught later in the game, after finding Kyogre and Groudon and saving them from Chimera Admins later in the story.
             - MANY BERRY TREES HERE!
             - Use hanging light graphics from Yanako's tilesets (plus other buildings from that sheet too tbh)
         - The Pollen Road - route east of Péntepetal City, home to many Tropius, Roselia, and Lileep
@@ -139,7 +175,6 @@ GREEK PHRASES AND STUFF:
         - Niko provides unique Pokéballs + Catching Charm, also becomes the Tera Type changer
             - After unlocking Terastallization, increase Niko's State variable. When the state is greater than or equal to that value, have Niko ask if you're looking for Tera Type Change or Conversation (rewards, etc)
     - MISSING IMPORTANT BUILDINGS / LOCATIONS / UNLOCKS
-        - Contest Hall (Péntepetal City!) (+ unique Contest competitors)
         - Battle Pavilions
             - 1(Sofos City) and 2 (Myrrini Island) already added
             - #3 could be in Port Pello?
@@ -157,6 +192,8 @@ GREEK PHRASES AND STUFF:
 - DexNav chain count and directional arrow not shown when hunting
 - When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
+- In-battle types just aren't showing up a lot of the time
+- Terpsikore's black colors look light gray during Satyr's Lair event
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
@@ -185,7 +222,7 @@ Many, many talented developers and artists are responsible for making this proje
     - Coral tiles by Ekat99 on DeviantArt
 - Pokémon Sprites:
     Numbers below match sprites on the official Pokémon Lazarus Ilios Pokédex Image:
-    1. Sprite created/edited by Nemo622 (edits based on pokeemerald-expansion sprites)
+    1. Sprite created/edited by Nemo622 (edits based on pokeemerald-expansion or official Pokémon GBC sprites)
     2. By Matdemo159
     3. By Supahsanti, from Substitube public resource
     4. By MonsterHam
@@ -208,6 +245,9 @@ Many, many talented developers and artists are responsible for making this proje
     21. By Coffee in the Pokémon Emerald Seaglass Discord Server (thank you!)
     22. By lakeofdance, from Substitube public resource
     23. By Koolboyman, from Substitube public resource
+    24. By N-Kin, from Substitube public resource
+    25. By SuicidalSushi, recolored
+    "XX, 1". Parts of sprite by Artist "XX" (from above list), edited by Nemo622
 - Trainer Sprites:
     - Amali and Harper sprited by me, based on TrainerDX GBC Trainer template sprites
     - Johto (Ethan/Lyra) outfits by Solo993
@@ -257,7 +297,7 @@ Many, many talented developers and artists are responsible for making this proje
 
 STORY PLAN:
 - TEAM CHIMERA: Plans to gather Pokémon through any means necessary to traffic for profit and use to control sections of the region, like the Areios Hideout
-    - BIG BAD PLAN: Preparing to summon Ho-oh, Celebi, and the Legendary Dogs, using powers to convert the dogs to Gouging Fire, Raging Bolt, and Walking Wake
+    - BIG BAD PLAN: Preparing to use Ancient Mechanism's Mega Powers to convert the dogs to Gouging Fire, Raging Bolt, and Walking Wake (functionally permanent Mega Evolutions)
         - Use Gouging Fire to mine for coal on land, Walking Wake to drill at sea for oil, and Raging Bolt to blast open shale (fracking) and summon storms to protect Team Chimera operations
         - Basically, they only see the monetary value of nature, the past, and Pokémon, and this ultimate goal is the synthesis of all these ideas
     - They see the emergence of LAZARUS TAXA as evidence for the "return of the past", seeing an opportunity for profit

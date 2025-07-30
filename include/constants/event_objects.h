@@ -185,8 +185,8 @@
 #define OBJ_EVENT_GFX_BIG_ENTEI_DOLL             181
 #define OBJ_EVENT_GFX_BIG_SUICUNE_DOLL           182
 #define OBJ_EVENT_GFX_BIG_GYARADOS_DOLL          183
-#define OBJ_EVENT_GFX_BIG_HO_OH_DOLL             184
-#define OBJ_EVENT_GFX_BIG_LUGIA_DOLL             185
+#define OBJ_EVENT_GFX_BIG_HYDRAPPLE_DOLL         184
+#define OBJ_EVENT_GFX_BIG_DRAGONITE_DOLL         185
 #define OBJ_EVENT_GFX_BIG_RAICHU_DOLL            186
 #define OBJ_EVENT_GFX_LATIAS                     187
 #define OBJ_EVENT_GFX_LATIOS                     188

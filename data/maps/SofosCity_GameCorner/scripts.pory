@@ -111,7 +111,7 @@ script SofosCity_GameCorner_ItemShop
     end
 }
 
-script SofosCity_GameCorner_TeraShardExchange
+script SofosCity_GameCorner_EVFeatherExchange
 {
     lock
     faceplayer
@@ -129,7 +129,7 @@ script SofosCity_GameCorner_TeraShardExchange
         msgbox(format("Looks like you've got {COLOR GREEN}{STR_VAR_1} Pinball Points{COLOR DARK_GRAY} to spend!"))
         closemessage
         speakername("Pinball Lady")
-        msgbox(format("I'll give a random {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} in exchange for {COLOR GREEN}1 Pinball Point{COLOR DARK_GRAY}. Interested?"), MSGBOX_YESNO)
+        msgbox(format("I'll give a random set of {COLOR GREEN}EV-modifying Items{COLOR DARK_GRAY} in exchange for {COLOR GREEN}1 Pinball Point{COLOR DARK_GRAY}. Interested?"), MSGBOX_YESNO)
         if(var(VAR_RESULT) == 0) // no
         {
             speakername("Pinball Lady")
@@ -139,17 +139,17 @@ script SofosCity_GameCorner_TeraShardExchange
         else
         {
             speakername("Pinball Lady")
-            msgbox(format("Alright, I'll pick out a random Tera Shard! Let's see here..."))
+            msgbox(format("Alright, I'll pick out a set of EV Items for you! Let's see here..."))
             closemessage
 
             subvar(VAR_PINBALL_POINTS, 1)
-            randomelement(ITEM_BUG_TERA_SHARD, ITEM_DARK_TERA_SHARD, ITEM_DRAGON_TERA_SHARD, ITEM_ELECTRIC_TERA_SHARD, ITEM_FAIRY_TERA_SHARD, ITEM_FIGHTING_TERA_SHARD, ITEM_FIRE_TERA_SHARD, ITEM_FLYING_TERA_SHARD, ITEM_GHOST_TERA_SHARD, ITEM_GRASS_TERA_SHARD, ITEM_GROUND_TERA_SHARD, ITEM_ICE_TERA_SHARD, ITEM_NORMAL_TERA_SHARD, ITEM_POISON_TERA_SHARD, ITEM_PSYCHIC_TERA_SHARD, ITEM_ROCK_TERA_SHARD, ITEM_STEEL_TERA_SHARD, ITEM_WATER_TERA_SHARD)
-            giveitem(VAR_RESULT)
+            randomelement(ITEM_HEALTH_FEATHER, ITEM_MUSCLE_FEATHER, ITEM_RESIST_FEATHER, ITEM_GENIUS_FEATHER, ITEM_CLEVER_FEATHER, ITEM_SWIFT_FEATHER, ITEM_FRESH_START_MOCHI)
+            giveitem(VAR_RESULT, 10)
             closemessage
             delay(5)
             
             speakername("Pinball Lady")
-            msgbox(format("Hope you like what you got! Remember, your Tera Shard can be used to {COLOR GREEN}change a Pokémon's Tera Type at the Acrisia University{COLOR DARK_GRAY} if you have a Tera Orb! Come on back if you want more."))
+            msgbox(format("Hope you like what you got! Remember, those items can be used to {COLOR GREEN}alter a Pokémon's EV points{COLOR DARK_GRAY} in certain stats! Come on back if you want more."))
             closemessage
         }
     }

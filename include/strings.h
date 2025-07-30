@@ -2948,7 +2948,7 @@ extern const u8 gText_FollowerFainted[];
 extern const u8 gText_FollowerReturnedToBall[];
 extern const u8 gText_DoWhatWithFollower[];
 
-extern const u8 gText_NikoDialogue_Tera[];
+extern const u8 gText_NikoDialogue_Mega[];
 extern const u8 gText_NikoDialogue_Conversation[];
 
 extern const u8 gText_SmallDot[];

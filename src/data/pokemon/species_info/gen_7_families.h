@@ -663,10 +663,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 3,
         .weight = 12,
         .description = COMPOUND_STRING(
-            "This Pokémon feeds on berries, whose\n"
-            "leftover seeds become the ammunition for\n"
-            "the attacks it fires off from its mouth.\n"
-            "It uses holes in trees for nesting."),
+            "This Pokémon drills deep into trees,\n" // new desc
+            "gathering seeds and nutrients. The force\n"
+            "of the drilling can shake the entire\n"
+            "tree."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -727,10 +727,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 6,
         .weight = 148,
         .description = COMPOUND_STRING(
-            "By bending its beak, it can produce a\n"
-            "variety of calls and brand itself a noisy\n"
-            "nuisance for its neighbors. It eats\n"
-            "berries and stores their seeds in its beak."),
+            "Trumbeak produce loud, screeching calls\n" // new desc
+            "and hammer wood in patterns to\n"
+            "communicate. Naturally, this irritates\n"
+            "those who live near Trumbeak nests."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -760,7 +760,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sTrumbeakLevelUpLearnset,
         .teachableLearnset = sTrumbeakTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_TOUCANNON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_TOUCANNON}),
     },
 
     [SPECIES_TOUCANNON] =
@@ -790,10 +790,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 11,
         .weight = 260,
         .description = COMPOUND_STRING(
-            "When it battles, within its beak, its\n"
-            "internal gases ignite, explosively\n"
-            "launching seeds with enough power to\n"
-            "pulverize boulders."),
+            "Toucannon mates for life, making it a\n" // new desc
+            "symbol of love and fertility for couples.\n"
+            "Their beaks become superheated and glow\n"
+            "red when threatened."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -823,7 +823,68 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sToucannonLevelUpLearnset,
         .teachableLearnset = sToucannonTeachableLearnset,
+        .formSpeciesIdTable = sToucannonFormSpeciesIdTable,
+        .formChangeTable = sToucannonFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_TOUCANNON_MEGA] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 140,
+        .baseDefense   = 95,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 243 : 218,
+        .evYield_Attack = 3,
+        .itemRare = ITEM_RAWST_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_PARENTAL_BOND, ABILITY_PARENTAL_BOND, ABILITY_PARENTAL_BOND },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Toucannon"),
+        .cryId = CRY_TOUCANNON,
+        .natDexNum = NATIONAL_DEX_TOUCANNON,
+        .categoryName = _("Cannon"),
+        .height = 11,
+        .weight = 260,
+        .description = COMPOUND_STRING(
+            "Mega Toucannon brings its Pikipek chicks\n" // new desc
+            "to battle, much to their excitement. The\n"
+            "red crest it develops signals to their\n"
+            "young and concentrates fire power."),
+        .pokemonScale = 320,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ToucannonMega,
+        .frontPicSize = MON_COORDS_SIZE(59, 59),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_ToucannonMega,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED_SLOW,
+        .backPic = gMonBackPic_ToucannonMega,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .palette = gMonPalette_ToucannonMega,
+        .shinyPalette = gMonShinyPalette_ToucannonMega,
+        .iconSprite = gMonIcon_ToucannonMega,
+        .iconPalIndex = 0,
+        SHADOW(8, 10, SHADOW_SIZE_M)
+        FOOTPRINT(Toucannon)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sToucannonLevelUpLearnset,
+        .teachableLearnset = sToucannonTeachableLearnset,
+        .formSpeciesIdTable = sToucannonFormSpeciesIdTable,
+        .formChangeTable = sToucannonFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_PIKIPEK
 
 #if P_FAMILY_YUNGOOS
@@ -1831,6 +1892,62 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sRibombeeTeachableLearnset,
         .formSpeciesIdTable = sRibombeeFormSpeciesIdTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_RIBOMBEE_MEGA] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 55,
+        .baseDefense   = 60,
+        .baseSpeed     = 124,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FAIRY),
+        .catchRate = 75,
+        .expYield = 162,
+        .evYield_Speed = 2,
+        .itemRare = ITEM_HONEY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_HONEY_GATHER, ABILITY_SHIELD_DUST, ABILITY_SWEET_VEIL },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Ribombee"),
+        .cryId = CRY_RIBOMBEE,
+        .natDexNum = NATIONAL_DEX_RIBOMBEE,
+        .categoryName = _("Bee Fly"),
+        .height = 2,
+        .weight = 5,
+        .description = gRibombeePokedexText,
+        .pokemonScale = 682,
+        .pokemonOffset = 24,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_RibombeeMega,
+        .frontPicSize = MON_COORDS_SIZE(32, 47),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_RibombeeMega,
+        .frontAnimId = ANIM_CONVEX_DOUBLE_ARC_TWICE,
+        .enemyMonElevation = 6,
+        .backPic = gMonBackPic_RibombeeMega,
+        .backPicSize = MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = gMonPalette_RibombeeMega,
+        .shinyPalette = gMonShinyPalette_RibombeeMega,
+        .iconSprite = gMonIcon_RibombeeMega,
+        .iconPalIndex = 2,
+        SHADOW(-1, 14, SHADOW_SIZE_S)
+        FOOTPRINT(Ribombee)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sRibombeeLevelUpLearnset,
+        .teachableLearnset = sRibombeeTeachableLearnset,
+        .formSpeciesIdTable = sRibombeeFormSpeciesIdTable,
+        .formChangeTable = sRibombeeFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CUTIEFLY
 
 #if P_FAMILY_ROCKRUFF

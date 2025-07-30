@@ -2644,4 +2644,22 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Sets Aqua Ring on entry."),
         .aiRating = 6,
     },
+
+    [ABILITY_BURROWER] =
+    {
+        .name = _("Burrower"),
+        .description = COMPOUND_STRING("Boosts Ground-type moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_NATURES_TOOLS] =
+    {
+        #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Nature's Tools"),
+    #else
+        .name = _("NaturTools"),
+    #endif
+        .description = COMPOUND_STRING("Long Reach & Boost contact damage."),
+        .aiRating = 8,
+    },
 };

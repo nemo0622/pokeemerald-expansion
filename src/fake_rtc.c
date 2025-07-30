@@ -3,6 +3,7 @@
 #include "strings.h"
 #include "text.h"
 #include "rtc.h"
+#include "script.h"
 #include "fake_rtc.h"
 #include "event_data.h"
 
@@ -29,7 +30,7 @@ void FakeRtc_TickTimeForward(void)
     if (!OW_USE_FAKE_RTC)
         return;
 
-    if (FlagGet(OW_FLAG_PAUSE_TIME))
+    if (FlagGet(OW_FLAG_PAUSE_TIME) || ArePlayerFieldControlsLocked())
         return;
 
     FakeRtc_AdvanceTimeBy(0, 0, FakeRtc_GetSecondsRatio());

@@ -841,10 +841,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 4,
         .weight = 41,
         .description = COMPOUND_STRING(
-            "It faces strong opponents with great\n"
-            "courage. Because it doesn't yelp, it's\n"
-            "extremely popular with Trainers who live\n"
-            "in apartment buildings."),
+            "Lillipup are often kept as pets in urban\n" // new desc
+            "areas. They are loyal, but docile enough\n"
+            "to handle the stresses of city living.\n"
+            "Young Trainers can easily tame them."),
         .pokemonScale = 491,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -904,10 +904,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 9,
         .weight = 147,
         .description = COMPOUND_STRING(
-            "Its dense black fur grows continuously.\n"
-            "The high cost of keeping its hard fur\n"
-            "properly groomed makes this a\n"
-            "troublesome Pokémon to train."),
+            "The thick fur on its back shrugs off\n" // new desc
+            "some weak attacks. Herdier bones have\n"
+            "been found with human remains from old\n"
+            "times, suggesting an ancient connection."),
         .pokemonScale = 338,
         .pokemonOffset = 9,
         .trainerScale = 256,
@@ -972,10 +972,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 12,
         .weight = 610,
         .description = COMPOUND_STRING(
-            "Intelligent, good-natured, and valiant,\n"
-            "there could be no concern that it would\n"
-            "ever attack people. Some parents even\n"
-            "trust it to babysit."),
+            "Stoutland are native to the highest\n" // new desc
+            "mountains of the world, keeping people\n"
+            "and Pokémon wrapped in their warm fur.\n"
+            "They love their fellow party Pokémon."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -1159,10 +1159,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 6,
         .weight = 105,
         .description = COMPOUND_STRING(
-            "This Pokémon dwells deep in the forest.\n"
-            "It's good at finding berries and gathers\n"
-            "them from all over. It's kind enough to\n"
-            "share them with friends."),
+            "Pansage hides deep in the forest, leaping\n" // new desc 7/22/25
+            "between trees. It loves to eat wild\n"
+            "Berries, bringing extras back to their\n"
+            "family and friends."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -1222,10 +1222,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 11,
         .weight = 305,
         .description = COMPOUND_STRING(
-            "Ill tempered, it attacks enemies by\n"
-            "swinging its barbed tail around wildly.\n"
-            "The leaf growing on its head is\n"
-            "very bitter."),
+            "Simisage is extremely smug, flashing\n" // new desc 7/22/25
+            "a grin while it disobeys Trainers.\n"
+            "Given time, however, they can learn\n"
+            "to put trust in people."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -1286,10 +1286,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 6,
         .weight = 110,
         .description = COMPOUND_STRING(
-            "The fire within the tuft on its head can\n"
-            "reach up to 600ºF. Very intelligent,\n"
-            "it roasts berries before eating them.\n"
-            "It likes to help people."),
+            "It produces strong, short bursts of\n" // new desc 7/22/25
+            "flame to roast Berries. Some locals\n"
+            "believe they are evil, but they are\n"
+            "actually very relaxed and happy."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -1350,10 +1350,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 10,
         .weight = 280,
         .description = COMPOUND_STRING(
-            "It loves sweets because they become\n"
-            "energy for the fire burning inside its\n"
-            "body. It scatters embers from its head\n"
-            "and tail to sear its opponents."),
+            "It is quite clumsy for a primate\n" // new desc 7/22/25
+            "Pokémon, often falling from trees or\n"
+            "stumbling over rocks. Despite this,\n"
+            "they are almost always laughing."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -1413,10 +1413,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 6,
         .weight = 135,
         .description = COMPOUND_STRING(
-            "The water stored inside the tuft of its\n"
-            "head is rich in nutrients. It waters\n"
-            "plants using its tail, plants that\n"
-            "receive its water grow large."),
+            "Panpour stores nutrient-rich water\n" // new desc
+            "in pouches, using it to help local\n"
+            "plants grow. They later return to these\n"
+            "plants, harvesting their Berries."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -1476,10 +1476,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 10,
         .weight = 290,
         .description = COMPOUND_STRING(
-            "It can shoot highly-pressurised water\n"
-            "from its tail with enough power to\n"
-            "break through a solid concrete wall.\n"
-            "It prefers places with clean water."),
+            "Simipour can be found lounging along\n" // new desc
+            "the banks of rivers, basking in the sun\n"
+            "while washing itself. Unlike its Grass\n"
+            "and Fire-type cousins, it loves to swim."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -5569,7 +5569,68 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sArcheopsLevelUpLearnset,
         .teachableLearnset = sArcheopsTeachableLearnset,
+        .formSpeciesIdTable = sArcheopsFormSpeciesIdTable,
+        .formChangeTable = sArcheopsFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_ARCHEOPS_MEGA] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 130,
+        .baseDefense   = 80,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 102,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),
+        .catchRate = 45,
+        .expYield = 177,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_DEFEATIST, ABILITY_KLUTZ, ABILITY_FLUFFY },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Archeops"),
+        .cryId = CRY_ARCHEOPS,
+        .natDexNum = NATIONAL_DEX_ARCHEOPS,
+        .categoryName = _("First Bird"),
+        .height = 14,
+        .weight = 320,
+        .description = COMPOUND_STRING(
+            "They are intelligent and will cooperate\n"
+            "to catch prey. When one Archeops\n"
+            "had the prey cornered, another would\n"
+            "swoop on it."),
+        .pokemonScale = 265,
+        .pokemonOffset = 2,
+        .trainerScale = 262,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ArcheopsMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = sAnims_ArcheopsMega,
+        .frontAnimId = ANIM_RISING_WOBBLE,
+        .enemyMonElevation = 11,
+        .backPic = gMonBackPic_ArcheopsMega,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_V_STRETCH,
+        .palette = gMonPalette_ArcheopsMega,
+        .shinyPalette = gMonShinyPalette_ArcheopsMega,
+        .iconSprite = gMonIcon_ArcheopsMega,
+        .iconPalIndex = 0,
+        SHADOW(0, 18, SHADOW_SIZE_M)
+        FOOTPRINT(Archeops)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sArcheopsLevelUpLearnset,
+        .teachableLearnset = sArcheopsTeachableLearnset,
+        .formSpeciesIdTable = sArcheopsFormSpeciesIdTable,
+        .formChangeTable = sArcheopsFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ARCHEN
 
 #if P_FAMILY_TRUBBISH
@@ -10362,7 +10423,67 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sMandibuzzLevelUpLearnset,
         .teachableLearnset = sMandibuzzTeachableLearnset,
+        .formSpeciesIdTable = sMandibuzzFormSpeciesIdTable,
+        .formChangeTable = sMandibuzzFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_MANDIBUZZ_MEGA] =
+    {
+        .baseHP        = 115,
+        .baseAttack    = 85,
+        .baseDefense   = 110,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),
+        .catchRate = 60,
+        .expYield = 179,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = 35,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_REGENERATOR, ABILITY_OVERCOAT, ABILITY_WEAK_ARMOR },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Mandibuzz"),
+        .cryId = CRY_MANDIBUZZ,
+        .natDexNum = NATIONAL_DEX_MANDIBUZZ,
+        .categoryName = _("Bone Vulture"),
+        .height = 12,
+        .weight = 395,
+        .description = COMPOUND_STRING(
+            "They adorn themselves beautifully with\n"
+            "bones. This is supposedly an effort to\n"
+            "attract males, but no male Mandibuzz\n"
+            "have ever been found."),
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MandibuzzMega,
+        .frontPicSize = MON_COORDS_SIZE(48, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_MandibuzzMega,
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_MandibuzzMega,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_MandibuzzMega,
+        .shinyPalette = gMonShinyPalette_MandibuzzMega,
+        .iconSprite = gMonIcon_MandibuzzMega,
+        .iconPalIndex = 1,
+        SHADOW(0, 11, SHADOW_SIZE_M)
+        FOOTPRINT(Mandibuzz)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sMandibuzzLevelUpLearnset,
+        .teachableLearnset = sMandibuzzTeachableLearnset,
+        .formSpeciesIdTable = sMandibuzzFormSpeciesIdTable,
+        .formChangeTable = sMandibuzzFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTION
 #endif //P_FAMILY_VULLABY
 
 #if P_FAMILY_HEATMOR

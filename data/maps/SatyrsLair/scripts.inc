@@ -160,7 +160,7 @@ SatyrsLair_EventScript_ChimeraEvent::
 # 88 "data/maps/SatyrsLair/scripts.pory"
 	closemessage
 # 90 "data/maps/SatyrsLair/scripts.pory"
-	giveitem ITEM_TERA_ORB
+	giveitem ITEM_KEY_STONE
 # 91 "data/maps/SatyrsLair/scripts.pory"
 	closemessage
 # 93 "data/maps/SatyrsLair/scripts.pory"
@@ -383,8 +383,9 @@ SatyrsLair_EventScript_ChimeraEvent_Text_4:
 SatyrsLair_EventScript_ChimeraEvent_Text_5:
 # 32 "data/maps/SatyrsLair/scripts.pory"
 	.string "You think you're better than us? Heh,\n"
-	.string "our Admin just found a {COLOR GREEN}Tera Orb{COLOR DARK_GRAY}! You\l"
-	.string "have no chance of winning now!$"
+	.string "our Admin just found the {COLOR GREEN}Key Stone{COLOR DARK_GRAY} left\l"
+	.string "here by ancient Ilians! You have no\l"
+	.string "chance of winning now!$"
 
 SatyrsLair_EventScript_ChimeraEvent_Text_6:
 # 39 "data/maps/SatyrsLair/scripts.pory"
@@ -400,8 +401,8 @@ SatyrsLair_EventScript_ChimeraEvent_Text_8:
 
 SatyrsLair_EventScript_ChimeraEvent_Text_9:
 # 59 "data/maps/SatyrsLair/scripts.pory"
-	.string "Hold on there, bud. Give me that {COLOR GREEN}Tera\n"
-	.string "Orb{COLOR DARK_GRAY} back, and I'll let you catch up to\l"
+	.string "Hold on there, bud. Give me that {COLOR GREEN}Key\n"
+	.string "Stone{COLOR DARK_GRAY} back, and I'll let you catch up to\l"
 	.string "your cronies.$"
 
 SatyrsLair_EventScript_ChimeraEvent_Text_10:
@@ -421,7 +422,7 @@ SatyrsLair_EventScript_ChimeraEvent_Text_11:
 	.string "attacks... You move in perfect harmony\l"
 	.string "with your team. What's your name?\p"
 	.string "{PLAYER}! Please, come challenge me\n"
-	.string "{COLOR GREEN}at my Gym{COLOR DARK_GRAY}! Oh, as for the Tera Orb... I\l"
+	.string "{COLOR GREEN}at my Gym{COLOR DARK_GRAY}! Oh, as for the Key Stone... I\l"
 	.string "already have my own, as a Gym Leader.\l"
 	.string "What should I do with it?$"
 

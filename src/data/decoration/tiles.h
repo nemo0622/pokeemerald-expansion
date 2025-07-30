@@ -630,12 +630,12 @@ const u16 DecorGfx_GYARADOS_DOLL[] = {
     OBJ_EVENT_GFX_BIG_GYARADOS_DOLL
 };
 
-const u16 DecorGfx_HO_OH_DOLL[] = {
-    OBJ_EVENT_GFX_BIG_HO_OH_DOLL
+const u16 DecorGfx_HYDRAPPLE_DOLL[] = {
+    OBJ_EVENT_GFX_BIG_HYDRAPPLE_DOLL
 };
 
-const u16 DecorGfx_LUGIA_DOLL[] = {
-    OBJ_EVENT_GFX_BIG_LUGIA_DOLL
+const u16 DecorGfx_DRAGONITE_DOLL[] = {
+    OBJ_EVENT_GFX_BIG_DRAGONITE_DOLL
 };
 
 const u16 DecorGfx_RAICHU_DOLL[] = {

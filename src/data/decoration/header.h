@@ -1416,28 +1416,28 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_GYARADOS_DOLL,
     },
 
-    [DECOR_HO_OH_DOLL] =
+    [DECOR_HYDRAPPLE_DOLL] =
     {
-        .id = DECOR_HO_OH_DOLL,
-        .name = _("Ho-oh Doll"),
+        .id = DECOR_HYDRAPPLE_DOLL,
+        .name = _("Hydrapple Doll"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 0,
-        .description = DecorDesc_HO_OH_DOLL,
-        .tiles = DecorGfx_HO_OH_DOLL,
+        .description = DecorDesc_HYDRAPPLE_DOLL,
+        .tiles = DecorGfx_HYDRAPPLE_DOLL,
     },
 
-    [DECOR_LUGIA_DOLL] =
+    [DECOR_DRAGONITE_DOLL] =
     {
-        .id = DECOR_LUGIA_DOLL,
-        .name = _("Lugia Doll"),
+        .id = DECOR_DRAGONITE_DOLL,
+        .name = _("Dragonite Doll"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 0,
-        .description = DecorDesc_LUGIA_DOLL,
-        .tiles = DecorGfx_LUGIA_DOLL,
+        .description = DecorDesc_DRAGONITE_DOLL,
+        .tiles = DecorGfx_DRAGONITE_DOLL,
     },
 
     [DECOR_RAICHU_DOLL] =

@@ -1418,8 +1418,8 @@ SofosCity_EventScript_FishermanPlayingChess_Text_0:
 SofosCity_EventScript_FishermanPlayingChess_Text_1:
 # 400 "data/maps/SofosCity/scripts.pory"
 	.string "I formed a wall with my Zigzagoon\n"
-	.string "pieces, so that'll protect my Celebi. If\l"
-	.string "they take the Celebi piece, I lose the\l"
+	.string "pieces, so that'll protect my Gallade. If\l"
+	.string "they take the Gallade piece, I lose the\l"
 	.string "game!$"
 
 SofosCity_EventScript_GirlPlayingChess_Text_0:
@@ -1427,9 +1427,11 @@ SofosCity_EventScript_GirlPlayingChess_Text_0:
 	.string "Each piece can move in different ways.\n"
 	.string "Chesnaught moves in straight lines,\l"
 	.string "Mudsdale moves in L-shapes, and Xatu\l"
-	.string "can only move diagonally. The endless\l"
-	.string "strategies make this the most popular\l"
-	.string "game in the city!$"
+	.string "can only move diagonally. Each side only\l"
+	.string "gets one Gardevoir, which can move in\l"
+	.string "any direction. The endless strategies\l"
+	.string "make this the most popular game in the\l"
+	.string "city!$"
 
 SofosCity_EventScript_HexManiacSeeingLights_Text_0:
 # 425 "data/maps/SofosCity/scripts.pory"

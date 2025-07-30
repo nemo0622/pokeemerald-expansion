@@ -1233,7 +1233,7 @@
 #define FLAG_SPOKE_TO_WISHING_STAR_LITTLE_GIRL                      0x49C // Got wishing stars from girl in Jusmail
 #define FLAG_GOT_EVIOLITE_ACRISIA_CITY                              0x49D // Got Eviolite from Pokéfan Lady in Acrisia
 #define FLAG_SHOWN_ACRISIA_HEALSPOT                                 0x49E // Shown healing by Rania
-#define FLAG_UNLOCKED_TERASTALLIZATION                              0x49F // Used to indicate to certain menus that tera is unlocked, and to signal that tera unlock event happened
+#define FLAG_UNLOCKED_MEGA_EVOLUTION                              0x49F // Used to indicate to certain menus that tera is unlocked, and to signal that tera unlock event happened
 #define FLAG_GOT_WAILMER_PAIL                                       0x4A0 // Set when entered Berry Store in Jusmail Town
 #define FLAG_HIDE_RANIA_JUSMAIL                                     0x4A1 // Enabled by default, shows Rania for event in Jusmail when cleared
 #define FLAG_GOT_MACHO_BRACE                                        0x4A2 // Got Macho Brace from fat man in Acrisia Mountains

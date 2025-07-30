@@ -795,7 +795,7 @@ static const struct MenuAction MultichoiceList_ChooseInnTime[] =
 
 static const struct MenuAction MultichoiceList_ChooseNikoDialogue[] =
 {
-    {gText_NikoDialogue_Tera},
+    {gText_NikoDialogue_Mega},
     {gText_NikoDialogue_Conversation},
     {gText_Cancel},
 };

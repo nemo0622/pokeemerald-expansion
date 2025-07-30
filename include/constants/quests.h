@@ -43,7 +43,7 @@
 #define QUEST_KALAMI_HEART_SCALE                25 // give Artist a Heart Scale in Kalami City
 #define QUEST_KALAMI_EEVEE_POKEDEX              26 // show Eevee dex entry to Scientist in Kalami city house 1
 #define QUEST_PYTHIOS_REQUEST_QUICK_BALL        27 // bring a quick ball to an athlete in pythios town
-#define QUEST_BEAT_CHIMERA_SOFOS_CITY           28 // quest to beat Team Chimera in Sofos City and bring Niko the Tera Orb in Asfal Hills
+#define QUEST_BEAT_CHIMERA_SOFOS_CITY           28 // quest to beat Team Chimera in Sofos City and bring Niko the Key Stone in Asfal Hills
 #define QUEST_SHOW_BOY_GIRAFARIG                29 // show little boy in Asfal Hills House 1 a Girafarig dex entry
 #define QUEST_SHOW_CAMPER_ALOLAN_RAICHU         30 // show camper in Sofos City Alolan Raichu dex entry for Terrain Extender
 #define QUEST_TRY_SOFOS_BATTLE_PAVILION         31 // participate in Sofos City Battle Pavilion

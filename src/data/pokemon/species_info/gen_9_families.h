@@ -3689,7 +3689,67 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sTinkatonLevelUpLearnset,
         .teachableLearnset = sTinkatonTeachableLearnset,
+        .formSpeciesIdTable = sTinkatonFormSpeciesIdTable,
+        .formChangeTable = sTinkatonFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTION
+    [SPECIES_TINKATON_MEGA] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 75,
+        .baseDefense   = 82,
+        .baseSpeed     = 94,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 105,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_STEEL),
+        .catchRate = 45,
+        .expYield = 253,
+        .evYield_SpDefense = 3,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_HUGE_POWER },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Tinkaton"),
+        .cryId = CRY_TINKATON,
+        .natDexNum = NATIONAL_DEX_TINKATON,
+        .categoryName = _("Hammer"),
+        .height = 7,
+        .weight = 1128,
+        .description = COMPOUND_STRING(
+            "The hammer tops 220 pounds, yet it\n"
+            "gets swung around easily by\n"
+            "Tinkaton as it steals whatever it pleases\n"
+            "and carries its plunder back home."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_TinkatonMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_TinkatonMega,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_TinkatonMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_TinkatonMega,
+        .shinyPalette = gMonShinyPalette_TinkatonMega,
+        .iconSprite = gMonIcon_TinkatonMega,
+        .iconPalIndex = 1,
+        SHADOW(-3, 12, SHADOW_SIZE_S)
+        FOOTPRINT(Tinkaton)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sTinkatonLevelUpLearnset,
+        .teachableLearnset = sTinkatonTeachableLearnset,
+        .formSpeciesIdTable = sTinkatonFormSpeciesIdTable,
+        .formChangeTable = sTinkatonFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTION
 #endif //P_FAMILY_TINKATINK
 
 #if P_FAMILY_WIGLETT
@@ -4253,7 +4313,125 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sCyclizarLevelUpLearnset,
         .teachableLearnset = sCyclizarTeachableLearnset,
         .eggMoveLearnset = sCyclizarEggMoveLearnset,
+        .formSpeciesIdTable = sCyclizarFormSpeciesIdTable,
+        .formChangeTable = sCyclizarFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_CYCLIZAR_MEGA_S] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 95,
+        .baseDefense   = 70,
+        .baseSpeed     = 121,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_NORMAL),
+        .catchRate = 190,
+        .expYield = 175,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_REGENERATOR },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Cyclizar"),
+        .cryId = CRY_CYCLIZAR,
+        .natDexNum = NATIONAL_DEX_CYCLIZAR,
+        .categoryName = _("Mount"),
+        .height = 16,
+        .weight = 630,
+        .description = COMPOUND_STRING(
+            "It can sprint at over 70 mph while\n"
+            "carrying a human. The rider's body\n"
+            "heat warms Cyclizar's back and lifts\n"
+            "the Pokémon's spirit."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CyclizarMega_S,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_CyclizarMega_S,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CyclizarMega_S,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 9,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CyclizarMega_S,
+        .shinyPalette = gMonShinyPalette_CyclizarMega_S,
+        .iconSprite = gMonIcon_CyclizarMega_S,
+        .iconPalIndex = 1,
+        SHADOW(4, 6, SHADOW_SIZE_M)
+        FOOTPRINT(Cyclizar)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sCyclizarLevelUpLearnset,
+        .teachableLearnset = sCyclizarTeachableLearnset,
+        .eggMoveLearnset = sCyclizarEggMoveLearnset,
+        .formSpeciesIdTable = sCyclizarFormSpeciesIdTable,
+        .formChangeTable = sCyclizarFormChangeTable,
+    },
+
+    [SPECIES_CYCLIZAR_MEGA_V] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 95,
+        .baseDefense   = 70,
+        .baseSpeed     = 121,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_NORMAL),
+        .catchRate = 190,
+        .expYield = 175,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_REGENERATOR },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Cyclizar"),
+        .cryId = CRY_CYCLIZAR,
+        .natDexNum = NATIONAL_DEX_CYCLIZAR,
+        .categoryName = _("Mount"),
+        .height = 16,
+        .weight = 630,
+        .description = COMPOUND_STRING(
+            "It can sprint at over 70 mph while\n"
+            "carrying a human. The rider's body\n"
+            "heat warms Cyclizar's back and lifts\n"
+            "the Pokémon's spirit."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CyclizarMega_V,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_CyclizarMega_V,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CyclizarMega_V,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 9,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CyclizarMega_V,
+        .shinyPalette = gMonShinyPalette_CyclizarMega_V,
+        .iconSprite = gMonIcon_CyclizarMega_V,
+        .iconPalIndex = 1,
+        SHADOW(4, 6, SHADOW_SIZE_M)
+        FOOTPRINT(Cyclizar)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sCyclizarLevelUpLearnset,
+        .teachableLearnset = sCyclizarTeachableLearnset,
+        .eggMoveLearnset = sCyclizarEggMoveLearnset,
+        .formSpeciesIdTable = sCyclizarFormSpeciesIdTable,
+        .formChangeTable = sCyclizarFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CYCLIZAR
 
 #if P_FAMILY_ORTHWORM

@@ -321,21 +321,21 @@ script AcrisiaCity_University_EventScript_Niko
         speakername("Niko")
         msgbox(format("Oh, I see you've got the Gym Badge from Pythios Town! Was it worth visiting, even after all the commotion in Wanderer's Woods?\p Ah, yes, while I've got you here - I have a gift!"))
         closemessage
-        giveitem(ITEM_WATER_TERA_SHARD)
+        giveitem(ITEM_AMPHAROSITE)
         closemessage
         delay(5)
         speakername("Niko")
-        msgbox(format("That's something called a {COLOR GREEN}Tera Shard{COLOR DARK_GRAY}. In the Paldea Region, where Terastallization comes from, these Tera Shards can be used to change a Pokémon's Tera Type.\p I took it from one of the Team Chimera Grunts in Wanderer's Woods while they ran. I wonder why they'd be collecting them..."))
+        msgbox(format("That's something called a {COLOR GREEN}Mega Stone{COLOR DARK_GRAY}. These mysterious objects are found in a few other regions, such as Kalos and Alola, but I didn't know there were actually any in Ilios.\p I took it from one of the Team Chimera Grunts in Wanderer's Woods while they ran. I wonder where they got it..."))
         closemessage
         setvar(VAR_NIKO_STATE, 7)
     }
     elif(var(VAR_NIKO_STATE) == 7) // got gym badge 3, got gift
     {
         speakername("Niko")
-        msgbox(format("I'm still thinking about that {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} I gave you. Why would Team Chimera be collecting them?"))
+        msgbox(format("I'm still thinking about that {COLOR GREEN}Mega Stone{COLOR DARK_GRAY} I gave you. If used correctly, they could crush most Pokémon Trainers easily... It's a scary thought."))
         closemessage
     }
-    elif(var(VAR_NIKO_STATE) >= 8) // did Tera Orb quest
+    elif(var(VAR_NIKO_STATE) >= 8) // did Mega Ring quest
     {
         speakername("Niko")
         message(format("Chaire, {PLAYER}! What brings you to my corner of the University?"))
@@ -344,158 +344,38 @@ script AcrisiaCity_University_EventScript_Niko
         closemessage
         delay(5)
 
-        if(var(VAR_RESULT) == 0) // chose Tera
+        if(var(VAR_RESULT) == 0) // chose Mega Evolution option
         {
             speakername("Niko")
-            msgbox(format("Right, Terastallization! I've been doing more research on those {COLOR GREEN}Tera Shards{COLOR DARK_GRAY}, and I believe they allow Trainers to {COLOR GREEN}change a Pokémon's Tera type{COLOR DARK_GRAY}!\p Do you want me to change your Pokémon's Tera type?"), MSGBOX_YESNO)
+            msgbox(format("Right, Mega Evolution! I've been doing more research on various {COLOR GREEN}mysterious Stones{COLOR DARK_GRAY}, and I believe they allow Trainers to {COLOR GREEN}Mega Evolve{COLOR DARK_GRAY} Pokémon in battle!\p I'm slowly gathering a collection. It's expensive, but totally worth it for research! Do you want to shop my selection of {COLOR GREEN}Mega Stones{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
             closemessage
             delay(5)
             if(var(VAR_RESULT) == 0) // say no
             {
                 speakername("Niko")
-                msgbox(format("Ehehe, no worries! Sometimes, a Pokémon's natural Tera type works best for it.\p In the future, bring me a {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} to change a Pokémon's Tera type!"))
+                msgbox(format("Ehehe, no worries! Mega Stones are extremely rare, so the University's collection is slow-growing.\p If you're ready to Mega Evolve a Pokémon, stop by and see if we have any to spare! Our {COLOR GREEN}collection will grow over time{COLOR DARK_GRAY}, so make sure to come back regularly."))
                 closemessage
                 release
                 end
             }
             else // say yes
             {
-                speakername("Niko")
-                msgbox(format("Yesss, alright, let's do this! First, what Pokémon do you want to use?"))
+                if(!flag(FLAG_BADGE05_GET))
+                {
+                    pokemart(AcrisiaCity_University_Mart_MegaStones_Shop1)
+                }
+                elif(!flag(FLAG_BADGE06_GET))
+                {
+                    pokemart(AcrisiaCity_University_Mart_MegaStones_Shop2)
+                }
+                else
+                {
+                    pokemart(AcrisiaCity_University_Mart_MegaStones_CompleteShop)
+                }
                 closemessage
                 delay(5)
-                special(ChoosePartyMon)
-                waitstate
-                copyvar(VAR_0x800A, VAR_0x8004) // stores chosen Pokémon in VAR_0x8004 i think
-                if(var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) // if didn't choose anything, end early
-                {
-                    speakername("Niko")
-                    msgbox(format("Changed your mind, eh? That's fine.\p In the future, bring me a {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} to change a Pokémon's Tera type!"))
-                    closemessage
-                    release
-                    end
-                }
                 speakername("Niko")
-                msgbox(format("Great! Now, what Tera Shard do you want to use? This will {COLOR GREEN}determine the Tera type of your Pokémon{COLOR DARK_GRAY}."))
-                closemessage
-                delay(5)
-                chooseitem(ITEMS_POCKET)
-                delay(5)
-
-                if(var(VAR_ITEM_ID) < ITEM_BUG_TERA_SHARD || var(VAR_ITEM_ID) > ITEM_WATER_TERA_SHARD) // if not a tera shard, end early
-                {
-                    speakername("Niko")
-                    msgbox(format("Umm... {PLAYER}, I hate to break it to you, but that's not a Tera Shard.\p Bring me a {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} if you want to change a Pokémon's Tera Type!"))
-                    closemessage
-                    release
-                    end
-                }
-
-                speakername("Niko")
-                msgbox(format("Okay, let's get started. Stand back, {PLAYER}!"))
-                closemessage
-                fadescreen(FADE_TO_BLACK)
-                delay(30)
-                playfanfare(MUS_LEVEL_UP)
-                waitfanfare
-                // change Tera type based on item chosen
-                // note: this is genuinely the least efficient way to code this. i dont care though im doing it at work
-                if(var(VAR_ITEM_ID) == ITEM_BUG_TERA_SHARD)
-                {
-                    setteratype(TYPE_BUG, VAR_0x8004)
-                    removeitem(ITEM_BUG_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_DARK_TERA_SHARD)
-                {
-                    setteratype(TYPE_DARK, VAR_0x8004)
-                    removeitem(ITEM_DARK_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_DRAGON_TERA_SHARD)
-                {
-                    setteratype(TYPE_DRAGON, VAR_0x8004)
-                    removeitem(ITEM_DRAGON_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_ELECTRIC_TERA_SHARD)
-                {
-                    setteratype(TYPE_ELECTRIC, VAR_0x8004)
-                    removeitem(ITEM_ELECTRIC_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_FAIRY_TERA_SHARD)
-                {
-                    setteratype(TYPE_FAIRY, VAR_0x8004)
-                    removeitem(ITEM_FAIRY_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_FIGHTING_TERA_SHARD)
-                {
-                    setteratype(TYPE_FIGHTING, VAR_0x8004)
-                    removeitem(ITEM_FIGHTING_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_FIRE_TERA_SHARD)
-                {
-                    setteratype(TYPE_FIRE, VAR_0x8004)
-                    removeitem(ITEM_FIRE_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_FLYING_TERA_SHARD)
-                {
-                    setteratype(TYPE_FLYING, VAR_0x8004)
-                    removeitem(ITEM_FLYING_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_GHOST_TERA_SHARD)
-                {
-                    setteratype(TYPE_GHOST, VAR_0x8004)
-                    removeitem(ITEM_GHOST_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_GRASS_TERA_SHARD)
-                {
-                    setteratype(TYPE_GRASS, VAR_0x8004)
-                    removeitem(ITEM_GRASS_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_GROUND_TERA_SHARD)
-                {
-                    setteratype(TYPE_GROUND, VAR_0x8004)
-                    removeitem(ITEM_GROUND_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_ICE_TERA_SHARD)
-                {
-                    setteratype(TYPE_ICE, VAR_0x8004)
-                    removeitem(ITEM_ICE_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_NORMAL_TERA_SHARD)
-                {
-                    setteratype(TYPE_NORMAL, VAR_0x8004)
-                    removeitem(ITEM_NORMAL_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_POISON_TERA_SHARD)
-                {
-                    setteratype(TYPE_POISON, VAR_0x8004)
-                    removeitem(ITEM_POISON_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_PSYCHIC_TERA_SHARD)
-                {
-                    setteratype(TYPE_PSYCHIC, VAR_0x8004)
-                    removeitem(ITEM_PSYCHIC_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_ROCK_TERA_SHARD)
-                {
-                    setteratype(TYPE_ROCK, VAR_0x8004)
-                    removeitem(ITEM_ROCK_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_STEEL_TERA_SHARD)
-                {
-                    setteratype(TYPE_STEEL, VAR_0x8004)
-                    removeitem(ITEM_STEEL_TERA_SHARD)
-                }
-                elif(var(VAR_ITEM_ID) == ITEM_WATER_TERA_SHARD)
-                {
-                    setteratype(TYPE_WATER, VAR_0x8004)
-                    removeitem(ITEM_WATER_TERA_SHARD)
-                }
-
-                delay(30)
-                fadescreen(FADE_FROM_BLACK)
-                delay(20)
-                speakername("Niko")
-                msgbox(format("Look at that, it was a complete success! You can check the Tera type of your Pokémon in their Summary Screen.\p Come back for more Tera type changes. Andio! See ya!"))
+                msgbox(format("Thanks, stop by again! Our {COLOR GREEN}collection will grow over time{COLOR DARK_GRAY}, so make sure to come back regularly."))
                 closemessage
                 release
                 end
@@ -507,7 +387,7 @@ script AcrisiaCity_University_EventScript_Niko
             if(var(VAR_NIKO_STATE) == 8)
             {
                 speakername("Niko")
-                msgbox(format("Team Chimera chasing down Tera Orbs and Tera Shards is making me worried. There are already reports of Team Chimera stealing Pokémon, so if they're able to Terastallize, they could become even more threatening."))
+                msgbox(format("Team Chimera collecting Mega Stones is extremely concerning. They already run rampant, stealing Pokémon and taking over whole towns. If they got their hands on Mega Evolution... No. They have to be stopped."))
                 closemessage
                 release
                 end
@@ -523,7 +403,7 @@ script AcrisiaCity_University_EventScript_Niko
             elif(var(VAR_NIKO_STATE) == 10) // after Péntepetal City (Chimera takes all Cranidos and Shieldon)
             {
                 speakername("Niko")
-                msgbox(format("The Cranidos and Shieldon you saved in Péntepetal City are doing well in captivity! Thanks to them, we've learned a lot more about how those species live.\p I've been thinking about Team Chimera's plans. There must be some connection between the Ancient Mechanism parts they collected on Marmaro Island and their obsession with Lazarus Taxa. Maybe the Ancient Mechanism has something to do with them?"))
+                msgbox(format("The Cranidos and Shieldon you saved in Péntepetal City are doing well in captivity! Thanks to them, we've learned a lot more about how those species live.\p I've been thinking about Team Chimera's plans. There must be some connection between the Ancient Mechanism parts they collected on Marmaro Island and their obsession with Mega Evolution. In fact, Lazarus Taxa might be connected too. Mark my words, they're planning something big."))
                 closemessage
                 release
                 end
@@ -531,7 +411,7 @@ script AcrisiaCity_University_EventScript_Niko
             elif(var(VAR_NIKO_STATE) == 11) // after Gym 6
             {
                 speakername("Niko")
-                msgbox(format("I've been looking into Team Chimera's plans. That Ancient Mechanism they've been working to assemble is referred to in centuries-old texts. It seems to have a {COLOR GREEN}connection to the flow of time{COLOR DARK_GRAY}, but the specifics aren't clear to me."))
+                msgbox(format("I've been looking into Team Chimera's plans. That Ancient Mechanism they've been working to assemble is referred to in centuries-old texts. It seems to have a {COLOR GREEN}connection to Mega Evolution{COLOR DARK_GRAY}, but the specifics aren't clear to me.\p Old carvings and fragments of text state that the Ancient Mechanism can cause a Pokémon to experience a burst of energy, but I need more time to research it."))
                 closemessage
                 release
                 end
@@ -540,7 +420,7 @@ script AcrisiaCity_University_EventScript_Niko
         else // chose cancel probably
         {
             speakername("Niko")
-            msgbox(format("Come back with {COLOR GREEN}Tera Shards{COLOR DARK_GRAY} to change a Pokémon's Tera type. And hey, I've still got rewards and fun things to talk about, too!"))
+            msgbox(format("Come back is you want to {COLOR GREEN}check our Mega Stone collection{COLOR DARK_GRAY}. And hey, I've still got rewards and fun things to talk about, too!"))
             closemessage
             release
             end
@@ -548,6 +428,62 @@ script AcrisiaCity_University_EventScript_Niko
     }
     release
     end
+}
+
+mart AcrisiaCity_University_Mart_MegaStones_Shop1
+{
+    ITEM_GYARADOSITE
+    ITEM_AMPHAROSITE
+    ITEM_SCIZORITE
+    ITEM_HERACRONITE
+    ITEM_HOUNDOOMINITE
+    ITEM_MAWILITE
+    ITEM_AGGRONITE
+    ITEM_CAMERUPTITE
+    ITEM_ALTARIANITE
+    ITEM_BANETTITE
+}
+
+mart AcrisiaCity_University_Mart_MegaStones_Shop2
+{
+    ITEM_GENGARITE
+    ITEM_GYARADOSITE
+    ITEM_AMPHAROSITE
+    ITEM_STEELIXITE
+    ITEM_SCIZORITE
+    ITEM_HERACRONITE
+    ITEM_HOUNDOOMINITE
+    ITEM_GARDEVOIRITE
+    ITEM_MAWILITE
+    ITEM_AGGRONITE
+    ITEM_MEDICHAMITE
+    ITEM_CAMERUPTITE
+    ITEM_ALTARIANITE
+    ITEM_BANETTITE
+    ITEM_GALLADITE
+}
+
+mart AcrisiaCity_University_Mart_MegaStones_CompleteShop
+{
+    ITEM_GENGARITE
+    ITEM_GYARADOSITE
+    ITEM_AERODACTYLITE
+    ITEM_AMPHAROSITE
+    ITEM_STEELIXITE
+    ITEM_SCIZORITE
+    ITEM_HERACRONITE
+    ITEM_HOUNDOOMINITE
+    ITEM_TYRANITARITE
+    ITEM_GARDEVOIRITE
+    ITEM_MAWILITE
+    ITEM_AGGRONITE
+    ITEM_MEDICHAMITE
+    ITEM_CAMERUPTITE
+    ITEM_ALTARIANITE
+    ITEM_BANETTITE
+    ITEM_GLALITITE
+    ITEM_ABOMASITE
+    ITEM_GALLADITE
 }
 
 script AcrisiaCity_University_EventScript_Rania
@@ -613,7 +549,7 @@ script AcrisiaCity_University_EventScript_Rania
     elif(var(VAR_RANIA_STATE) == 7) // Gym 4 complete
     {
         speakername("Rania")
-        msgbox(format("{PLAYER}! Thank goodness you're okay! Niko told Prof. Elia and I about what happened in Sofos City.\p Team Chimera must be up to something big. Normally, they lurked in the shadows, but their attacks on Sofos City and attempted theft of a Tera Orb set a new bar."))
+        msgbox(format("{PLAYER}! Thank goodness you're okay! Niko told Prof. Elia and I about what happened in Sofos City.\p Team Chimera must be up to something big. Normally, they lurked in the shadows, but their attacks on Sofos City and theft of Mega Stones set a new bar."))
         closemessage
         setvar(VAR_RANIA_STATE, 8)
     }

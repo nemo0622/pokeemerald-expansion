@@ -8537,7 +8537,7 @@ bool32 IsMoveMakingContact(u32 move, u32 battlerAtk)
             return FALSE;
     }
     else if ((atkHoldEffect == HOLD_EFFECT_PUNCHING_GLOVE && gMovesInfo[move].punchingMove)
-           || GetBattlerAbility(battlerAtk) == ABILITY_LONG_REACH)
+           || GetBattlerAbility(battlerAtk) == ABILITY_LONG_REACH || GetBattlerAbility(battlerAtk) == ABILITY_NATURES_TOOLS)
     {
         return FALSE;
     }
@@ -9233,6 +9233,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (GetBattlerTurnOrderNum(battlerAtk) == gBattlersCount - 1 && move != MOVE_FUTURE_SIGHT && move != MOVE_DOOM_DESIRE)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
+    case ABILITY_NATURES_TOOLS:
     case ABILITY_TOUGH_CLAWS:
         if (IsMoveMakingContact(move, battlerAtk))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
@@ -9607,6 +9608,10 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
         break;
     case ABILITY_SWARM:
         if (moveType == TYPE_BUG && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_BURROWER:
+        if (moveType == TYPE_GROUND)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_TORRENT:
@@ -10703,11 +10708,11 @@ bool32 CanMegaEvolve(u32 battler)
     // Check if Player has a Mega Ring.
     if (!TESTING
         && (GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT))
-        && !CheckBagHasItem(ITEM_MEGA_RING, 1))
+        && !CheckBagHasItem(ITEM_KEY_STONE, 1))
         return FALSE;
 
-    // Check if Trainer has already Mega Evolved.
-    if (HasTrainerUsedGimmick(battler, GIMMICK_MEGA))
+    // Check if Trainer has already Mega Evolved OR if mega evolution is locked by story
+    if (HasTrainerUsedGimmick(battler, GIMMICK_MEGA)|| !FlagGet(FLAG_UNLOCKED_MEGA_EVOLUTION))
         return FALSE;
 
     // Check if battler has another gimmick active.

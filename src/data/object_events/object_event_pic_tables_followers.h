@@ -1041,8 +1041,8 @@ static const struct SpriteFrameImage sPicTable_Lapras[] = {
     overworld_ascending_frames(gObjectEventPic_Lapras, 4, 4),
 };
 #if P_GIGANTAMAX_FORMS
-/*static const struct SpriteFrameImage sPicTable_LaprasGigantamax[] = {
-    overworld_ascending_frames(gObjectEventPic_LaprasGigantamax, 4, 4),
+/*static const struct SpriteFrameImage sPicTable_LaprasMega[] = {
+    overworld_ascending_frames(gObjectEventPic_LaprasMega, 4, 4),
 };*/
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_LAPRAS
@@ -5275,8 +5275,8 @@ static const struct SpriteFrameImage sPicTable_Centiskorch[] = {
     overworld_ascending_frames(gObjectEventPic_Centiskorch, 4, 4),
 };
 #if P_GIGANTAMAX_FORMS
-/*static const struct SpriteFrameImage sPicTable_CentiskorchGigantamax[] = {
-    overworld_ascending_frames(gObjectEventPic_CentiskorchGigantamax, 4, 4),
+/*static const struct SpriteFrameImage sPicTable_CentiskorchMega[] = {
+    overworld_ascending_frames(gObjectEventPic_CentiskorchMega, 4, 4),
 };*/
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_SIZZLIPEDE
@@ -5327,8 +5327,8 @@ static const struct SpriteFrameImage sPicTable_Grimmsnarl[] = {
     overworld_ascending_frames(gObjectEventPic_Grimmsnarl, 4, 4),
 };
 #if P_GIGANTAMAX_FORMS
-/*static const struct SpriteFrameImage sPicTable_GrimmsnarlGigantamax[] = {
-    overworld_ascending_frames(gObjectEventPic_GrimmsnarlGigantamax, 4, 4),
+/*static const struct SpriteFrameImage sPicTable_GrimmsnarlMega[] = {
+    overworld_ascending_frames(gObjectEventPic_GrimmsnarlMega, 4, 4),
 };*/
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_IMPIDIMP
@@ -5410,8 +5410,8 @@ static const struct SpriteFrameImage sPicTable_Copperajah[] = {
     overworld_ascending_frames(gObjectEventPic_Copperajah, 4, 4),
 };
 #if P_GIGANTAMAX_FORMS
-/*static const struct SpriteFrameImage sPicTable_CopperajahGigantamax[] = {
-    overworld_ascending_frames(gObjectEventPic_CopperajahGigantamax, 4, 4),
+/*static const struct SpriteFrameImage sPicTable_CopperajahMega[] = {
+    overworld_ascending_frames(gObjectEventPic_CopperajahMega, 4, 4),
 };*/
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CUFANT

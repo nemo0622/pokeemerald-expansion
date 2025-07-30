@@ -173,7 +173,7 @@ SofosCity_GameCorner_ItemShop_5:
 	goto SofosCity_GameCorner_ItemShop_1
 
 
-SofosCity_GameCorner_TeraShardExchange::
+SofosCity_GameCorner_EVFeatherExchange::
 # 116 "data/maps/SofosCity_GameCorner/scripts.pory"
 	lock
 # 117 "data/maps/SofosCity_GameCorner/scripts.pory"
@@ -182,66 +182,66 @@ SofosCity_GameCorner_TeraShardExchange::
 	buffernumberstring STR_VAR_1, VAR_PINBALL_POINTS
 # 119 "data/maps/SofosCity_GameCorner/scripts.pory"
 	compare VAR_PINBALL_POINTS, 0
-	goto_if_eq SofosCity_GameCorner_TeraShardExchange_2
+	goto_if_eq SofosCity_GameCorner_EVFeatherExchange_2
 # 128 "data/maps/SofosCity_GameCorner/scripts.pory"
-	speakername SofosCity_GameCorner_TeraShardExchange_Text_0
+	speakername SofosCity_GameCorner_EVFeatherExchange_Text_0
 # 129 "data/maps/SofosCity_GameCorner/scripts.pory"
 	msgbox SofosCity_GameCorner_ItemShop_Text_3
 # 130 "data/maps/SofosCity_GameCorner/scripts.pory"
 	closemessage
 # 131 "data/maps/SofosCity_GameCorner/scripts.pory"
-	speakername SofosCity_GameCorner_TeraShardExchange_Text_0
+	speakername SofosCity_GameCorner_EVFeatherExchange_Text_0
 # 132 "data/maps/SofosCity_GameCorner/scripts.pory"
-	msgbox SofosCity_GameCorner_TeraShardExchange_Text_1, MSGBOX_YESNO
+	msgbox SofosCity_GameCorner_EVFeatherExchange_Text_1, MSGBOX_YESNO
 # 133 "data/maps/SofosCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq SofosCity_GameCorner_TeraShardExchange_5
+	goto_if_eq SofosCity_GameCorner_EVFeatherExchange_5
 # 141 "data/maps/SofosCity_GameCorner/scripts.pory"
-	speakername SofosCity_GameCorner_TeraShardExchange_Text_0
+	speakername SofosCity_GameCorner_EVFeatherExchange_Text_0
 # 142 "data/maps/SofosCity_GameCorner/scripts.pory"
-	msgbox SofosCity_GameCorner_TeraShardExchange_Text_2
+	msgbox SofosCity_GameCorner_EVFeatherExchange_Text_2
 # 143 "data/maps/SofosCity_GameCorner/scripts.pory"
 	closemessage
 # 145 "data/maps/SofosCity_GameCorner/scripts.pory"
 	subvar VAR_PINBALL_POINTS, 1
 # 146 "data/maps/SofosCity_GameCorner/scripts.pory"
-	randomelement ITEM_BUG_TERA_SHARD, ITEM_DARK_TERA_SHARD, ITEM_DRAGON_TERA_SHARD, ITEM_ELECTRIC_TERA_SHARD, ITEM_FAIRY_TERA_SHARD, ITEM_FIGHTING_TERA_SHARD, ITEM_FIRE_TERA_SHARD, ITEM_FLYING_TERA_SHARD, ITEM_GHOST_TERA_SHARD, ITEM_GRASS_TERA_SHARD, ITEM_GROUND_TERA_SHARD, ITEM_ICE_TERA_SHARD, ITEM_NORMAL_TERA_SHARD, ITEM_POISON_TERA_SHARD, ITEM_PSYCHIC_TERA_SHARD, ITEM_ROCK_TERA_SHARD, ITEM_STEEL_TERA_SHARD, ITEM_WATER_TERA_SHARD
+	randomelement ITEM_HEALTH_FEATHER, ITEM_MUSCLE_FEATHER, ITEM_RESIST_FEATHER, ITEM_GENIUS_FEATHER, ITEM_CLEVER_FEATHER, ITEM_SWIFT_FEATHER, ITEM_FRESH_START_MOCHI
 # 147 "data/maps/SofosCity_GameCorner/scripts.pory"
-	giveitem VAR_RESULT
+	giveitem VAR_RESULT, 10
 # 148 "data/maps/SofosCity_GameCorner/scripts.pory"
 	closemessage
 # 149 "data/maps/SofosCity_GameCorner/scripts.pory"
 	delay 5
 # 151 "data/maps/SofosCity_GameCorner/scripts.pory"
-	speakername SofosCity_GameCorner_TeraShardExchange_Text_0
+	speakername SofosCity_GameCorner_EVFeatherExchange_Text_0
 # 152 "data/maps/SofosCity_GameCorner/scripts.pory"
-	msgbox SofosCity_GameCorner_TeraShardExchange_Text_3
+	msgbox SofosCity_GameCorner_EVFeatherExchange_Text_3
 # 153 "data/maps/SofosCity_GameCorner/scripts.pory"
 	closemessage
-SofosCity_GameCorner_TeraShardExchange_1:
+SofosCity_GameCorner_EVFeatherExchange_1:
 # 156 "data/maps/SofosCity_GameCorner/scripts.pory"
 	release
 	end
 
-SofosCity_GameCorner_TeraShardExchange_2:
+SofosCity_GameCorner_EVFeatherExchange_2:
 # 121 "data/maps/SofosCity_GameCorner/scripts.pory"
 	bufferstring STR_VAR_1, SofosCity_GameCorner_ItemShop_Text_0
 # 122 "data/maps/SofosCity_GameCorner/scripts.pory"
-	speakername SofosCity_GameCorner_TeraShardExchange_Text_0
+	speakername SofosCity_GameCorner_EVFeatherExchange_Text_0
 # 123 "data/maps/SofosCity_GameCorner/scripts.pory"
 	msgbox SofosCity_GameCorner_ItemShop_Text_2
 # 124 "data/maps/SofosCity_GameCorner/scripts.pory"
 	closemessage
-	goto SofosCity_GameCorner_TeraShardExchange_1
+	goto SofosCity_GameCorner_EVFeatherExchange_1
 
-SofosCity_GameCorner_TeraShardExchange_5:
+SofosCity_GameCorner_EVFeatherExchange_5:
 # 135 "data/maps/SofosCity_GameCorner/scripts.pory"
-	speakername SofosCity_GameCorner_TeraShardExchange_Text_0
+	speakername SofosCity_GameCorner_EVFeatherExchange_Text_0
 # 136 "data/maps/SofosCity_GameCorner/scripts.pory"
 	msgbox SofosCity_GameCorner_ItemShop_Text_5
 # 137 "data/maps/SofosCity_GameCorner/scripts.pory"
 	closemessage
-	goto SofosCity_GameCorner_TeraShardExchange_1
+	goto SofosCity_GameCorner_EVFeatherExchange_1
 
 
 Minigame_TryMeowthPinballGame::
@@ -485,28 +485,27 @@ SofosCity_GameCorner_ItemShop_Text_7:
 	.string "Hope you like what you got! Come on\n"
 	.string "back if you want more.$"
 
-SofosCity_GameCorner_TeraShardExchange_Text_0:
+SofosCity_GameCorner_EVFeatherExchange_Text_0:
 # 122 "data/maps/SofosCity_GameCorner/scripts.pory"
 	.string "Pinball Lady$"
 
-SofosCity_GameCorner_TeraShardExchange_Text_1:
+SofosCity_GameCorner_EVFeatherExchange_Text_1:
 # 132 "data/maps/SofosCity_GameCorner/scripts.pory"
-	.string "I'll give a random {COLOR GREEN}Tera Shard{COLOR DARK_GRAY} in\n"
-	.string "exchange for {COLOR GREEN}1 Pinball Point{COLOR DARK_GRAY}.\l"
+	.string "I'll give a random set of {COLOR GREEN}EV-modifying\n"
+	.string "Items{COLOR DARK_GRAY} in exchange for {COLOR GREEN}1 Pinball Point{COLOR DARK_GRAY}.\l"
 	.string "Interested?$"
 
-SofosCity_GameCorner_TeraShardExchange_Text_2:
+SofosCity_GameCorner_EVFeatherExchange_Text_2:
 # 142 "data/maps/SofosCity_GameCorner/scripts.pory"
-	.string "Alright, I'll pick out a random Tera\n"
-	.string "Shard! Let's see here...$"
+	.string "Alright, I'll pick out a set of EV Items\n"
+	.string "for you! Let's see here...$"
 
-SofosCity_GameCorner_TeraShardExchange_Text_3:
+SofosCity_GameCorner_EVFeatherExchange_Text_3:
 # 152 "data/maps/SofosCity_GameCorner/scripts.pory"
 	.string "Hope you like what you got! Remember,\n"
-	.string "your Tera Shard can be used to {COLOR GREEN}change a\l"
-	.string "Pokémon's Tera Type at the Acrisia\l"
-	.string "University{COLOR DARK_GRAY} if you have a Tera Orb! Come\l"
-	.string "on back if you want more.$"
+	.string "those items can be used to {COLOR GREEN}alter a\l"
+	.string "Pokémon's EV points{COLOR DARK_GRAY} in certain stats!\l"
+	.string "Come on back if you want more.$"
 
 Minigame_TryMeowthPinballGame_Text_0:
 # 165 "data/maps/SofosCity_GameCorner/scripts.pory"

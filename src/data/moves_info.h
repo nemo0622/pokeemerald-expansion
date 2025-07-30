@@ -16253,7 +16253,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Burns foe on contact."),
         .effect = EFFECT_BEAK_BLAST,
         .power = 100,
-        .type = TYPE_FLYING,
+        .type = TYPE_FIRE,
         .accuracy = 100,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,

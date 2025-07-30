@@ -570,7 +570,7 @@ AsfalHills_EventScript_NikoWaitingForPlayer::
 # 441 "data/maps/AsfalHills/scripts.pory"
 	delay 20
 # 442 "data/maps/AsfalHills/scripts.pory"
-	checkitem ITEM_TERA_ORB
+	checkitem ITEM_KEY_STONE
 # 443 "data/maps/AsfalHills/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AsfalHills_EventScript_NikoWaitingForPlayer_2
@@ -619,18 +619,20 @@ AsfalHills_EventScript_NikoWaitingForPlayer::
 # 474 "data/maps/AsfalHills/scripts.pory"
 	setflag FLAG_HIDE_BLOCKING_SOFOS_GYM
 # 475 "data/maps/AsfalHills/scripts.pory"
-	setflag FLAG_UNLOCKED_TERASTALLIZATION
+	setflag FLAG_UNLOCKED_MEGA_EVOLUTION
 # 476 "data/maps/AsfalHills/scripts.pory"
-	delay 20
+	clearflag FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY
 # 477 "data/maps/AsfalHills/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
-# 478 "data/maps/AsfalHills/scripts.pory"
-	delay 10
-# 480 "data/maps/AsfalHills/scripts.pory"
 	delay 20
+# 478 "data/maps/AsfalHills/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 479 "data/maps/AsfalHills/scripts.pory"
+	delay 10
 # 481 "data/maps/AsfalHills/scripts.pory"
+	delay 20
+# 482 "data/maps/AsfalHills/scripts.pory"
 	completequest QUEST_BEAT_CHIMERA_SOFOS_CITY
-# 483 "data/maps/AsfalHills/scripts.pory"
+# 484 "data/maps/AsfalHills/scripts.pory"
 	releaseall
 	end
 
@@ -895,15 +897,16 @@ AsfalHills_EventScript_NikoMeetPlayerEvent_Text_4:
 	.string "Chimera{COLOR DARK_GRAY}, as I'm sure you remember. I\l"
 	.string "believe they share a goal with this\l"
 	.string "ancient king. I heard rumors that\l"
-	.string "they've set up camp {COLOR GREEN}in Sofos City{COLOR DARK_GRAY} and\l"
-	.string "stole an important artifact - a\l"
-	.string "{COLOR GREEN}Terastallization Orb{COLOR DARK_GRAY}. My bet is, they\l"
-	.string "want to sell it or use it to control\l"
-	.string "people even more.\p"
+	.string "they've set up camp {COLOR GREEN}somewhere around\l"
+	.string "Sofos City{COLOR DARK_GRAY} to find a hidden treasure: a\l"
+	.string "{COLOR GREEN}Key Stone{COLOR DARK_GRAY}. My bet is, they want to\l"
+	.string "control Mega Evolution and squeeze\l"
+	.string "even more money out of the Ilios\l"
+	.string "Region.\p"
 	.string "Head into Sofos City, {COLOR GREEN}root out Team\n"
-	.string "Chimera{COLOR DARK_GRAY}, and {COLOR GREEN}bring me back that Tera\l"
-	.string "Orb{COLOR DARK_GRAY}. We can't let them keep their hands\l"
-	.string "on it!$"
+	.string "Chimera{COLOR DARK_GRAY}, and {COLOR GREEN}bring me back that Key\l"
+	.string "Stone{COLOR DARK_GRAY}. We can't let them keep their\l"
+	.string "hands on it!$"
 
 AsfalHills_EventScript_Duskull_Text_0:
 # 421 "data/maps/AsfalHills/scripts.pory"
@@ -928,33 +931,34 @@ AsfalHills_EventScript_NikoWaitingForPlayer_Text_0:
 
 AsfalHills_EventScript_NikoWaitingForPlayer_Text_1:
 # 446 "data/maps/AsfalHills/scripts.pory"
-	.string "Hmm, I don't see the {COLOR GREEN}Tera Orb{COLOR DARK_GRAY} with you.\n"
+	.string "Hmm, I don't see the {COLOR GREEN}Key Stone{COLOR DARK_GRAY} with you.\n"
 	.string "Please, we can't let Team Chimera keep\l"
 	.string "that, it's a precious artifact that may\l"
 	.string "hold more power than we know.\p"
 	.string "Please, find {COLOR GREEN}Team Chimera's Hideout{COLOR DARK_GRAY}\n"
 	.string "around Sofos City and {COLOR GREEN}bring back the\l"
-	.string "Tera Orb{COLOR DARK_GRAY}!$"
+	.string "Key Stone{COLOR DARK_GRAY}!$"
 
 AsfalHills_EventScript_NikoWaitingForPlayer_Text_2:
 # 457 "data/maps/AsfalHills/scripts.pory"
 	.string "Woah, you got it! The aura radiating\n"
 	.string "around it... it can only mean one thing,\l"
 	.string "my hunch was correct.\p"
-	.string "The Tera Orb allows skilled Trainers to\n"
-	.string "unlock the powers of {COLOR GREEN}Terastallization{COLOR DARK_GRAY},\l"
-	.string "temporarily changing a Pokémon's type\l"
-	.string "and giving them an edge in battle. There\l"
-	.string "are only a few of these outside of the\l"
-	.string "Paldea Region... I thought only Gym\l"
-	.string "Leaders and a few other powerful\l"
-	.string "Trainers could have them.\p"
-	.string "{PLAYER}, I want you to keep the Tera\n"
-	.string "Orb. Team Chimera is clearly trying to\l"
+	.string "The Key Stone allows skilled Trainers to\n"
+	.string "unlock the powers of {COLOR GREEN}Mega Evolution{COLOR DARK_GRAY},\l"
+	.string "temporarily changing a Pokémon into an\l"
+	.string "incredibly powerful form. There are only\l"
+	.string "a few of these in the Ilios Region. Most\l"
+	.string "Key Stones have already been claimed\l"
+	.string "by Gym Leaders and a few powerful\l"
+	.string "Trainer families... I suppose it makes\l"
+	.string "sense that one was hidden in the\l"
+	.string "Satyr's Lair from ancient times, though.\p"
+	.string "{PLAYER}, I want you to keep the Key\n"
+	.string "Stone. Team Chimera is clearly trying to\l"
 	.string "grow in power, so the safest place for\l"
 	.string "it would be with a skilled Trainer like\l"
-	.string "you. The Tera Orb can be recharged at\l"
-	.string "most Pokémon Centers after being used.$"
+	.string "you.$"
 
 AsfalHills_EventScript_NikoWaitingForPlayer_Text_3:
 # 461 "data/maps/AsfalHills/scripts.pory"
@@ -974,8 +978,8 @@ AsfalHills_EventScript_NikoWaitingForPlayer_Text_4:
 	.string "Alright, Duskull and I are getting out\n"
 	.string "of here before any Team Chimera\l"
 	.string "members pay us a visit. Come to Acrisia\l"
-	.string "University if you have any\l"
-	.string "{COLOR GREEN}Terastallization questions{COLOR DARK_GRAY}!$"
+	.string "University soon, as I'll be collecting\l"
+	.string "{COLOR GREEN}Mega Stones{COLOR DARK_GRAY} for you!$"
 
 AsfalHills_Text_Trainer_AsfalHills_SalmaiIntro::
 # 113 "data/maps/AsfalHills/scripts.pory"

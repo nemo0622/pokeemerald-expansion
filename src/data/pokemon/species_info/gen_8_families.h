@@ -2398,8 +2398,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sFlappleLevelUpLearnset,
         .teachableLearnset = sFlappleTeachableLearnset,
-        .formSpeciesIdTable = sFlappleFormSpeciesIdTable,
-        .formChangeTable = sFlappleFormChangeTable,
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -2454,8 +2452,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .isGigantamax = TRUE,
         .levelUpLearnset = sFlappleLevelUpLearnset,
         .teachableLearnset = sFlappleTeachableLearnset,
-        .formSpeciesIdTable = sFlappleFormSpeciesIdTable,
-        .formChangeTable = sFlappleFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
 
@@ -2517,8 +2513,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sAppletunLevelUpLearnset,
         .teachableLearnset = sAppletunTeachableLearnset,
-        .formSpeciesIdTable = sAppletunFormSpeciesIdTable,
-        .formChangeTable = sAppletunFormChangeTable,
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -2573,8 +2567,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .isGigantamax = TRUE,
         .levelUpLearnset = sAppletunLevelUpLearnset,
         .teachableLearnset = sAppletunTeachableLearnset,
-        .formSpeciesIdTable = sAppletunFormSpeciesIdTable,
-        .formChangeTable = sAppletunFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
 
@@ -3612,15 +3604,14 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sCentiskorchFormChangeTable,
     },
 
-#if P_GIGANTAMAX_FORMS
-    [SPECIES_CENTISKORCH_GIGANTAMAX] =
+    [SPECIES_CENTISKORCH_MEGA] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 115,
-        .baseDefense   = 65,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 90,
+        .baseHP        = 105,
+        .baseAttack    = 145,
+        .baseDefense   = 85,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_FIRE, TYPE_BUG),
         .catchRate = 75,
         .expYield = 184,
@@ -3630,7 +3621,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_WHITE_SMOKE, ABILITY_FLAME_BODY },
+        .abilities = { ABILITY_ARMOR_TAIL, ABILITY_ARMOR_TAIL, ABILITY_ARMOR_TAIL },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = HANDLE_EXPANDED_SPECIES_NAME("Centiskorc", "Centiskorch"),
         .cryId = CRY_CENTISKORCH,
@@ -3639,35 +3630,35 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 750,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The heat that comes off a\n"
-            "Gigantamax Centiskorch may destabilize air\n"
-            "currents. Sometimes it can even\n"
-            "cause storms."),
+            "Mega Centiskorch is impossibly hot,\n" // new desc
+            "warping the air around it as it moves.\n"
+            "It can wrap itself around entire battle\n"
+            "arenas to trap its opponent."),
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CentiskorchGigantamax,
+        .frontPic = gMonFrontPic_CentiskorchMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_CentiskorchGigantamax,
+        .frontAnimFrames = sAnims_CentiskorchMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CentiskorchGigantamax,
+        .backPic = gMonBackPic_CentiskorchMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CentiskorchGigantamax,
-        .shinyPalette = gMonShinyPalette_CentiskorchGigantamax,
-        .iconSprite = gMonIcon_CentiskorchGigantamax,
+        .palette = gMonPalette_CentiskorchMega,
+        .shinyPalette = gMonShinyPalette_CentiskorchMega,
+        .iconSprite = gMonIcon_CentiskorchMega,
         .iconPalIndex = 0,
+        SHADOW(6, 8, SHADOW_SIZE_L)
         FOOTPRINT(Centiskorch)
-        .isGigantamax = TRUE,
+        .isMegaEvolution = TRUE,
         .levelUpLearnset = sCentiskorchLevelUpLearnset,
         .teachableLearnset = sCentiskorchTeachableLearnset,
         .formSpeciesIdTable = sCentiskorchFormSpeciesIdTable,
         .formChangeTable = sCentiskorchFormChangeTable,
     },
-#endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_SIZZLIPEDE
 
 #if P_FAMILY_CLOBBOPUS
@@ -4473,15 +4464,14 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sGrimmsnarlFormChangeTable,
     },
 
-#if P_GIGANTAMAX_FORMS
-    [SPECIES_GRIMMSNARL_GIGANTAMAX] =
+    [SPECIES_GRIMMSNARL_MEGA] =
     {
         .baseHP        = 95,
-        .baseAttack    = 120,
-        .baseDefense   = 65,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 75,
+        .baseAttack    = 160,
+        .baseDefense   = 105,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_DARK, TYPE_FAIRY),
         .catchRate = 45,
         .expYield = 255,
@@ -4491,7 +4481,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_PRANKSTER, ABILITY_FRISK, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_UNSEEN_FIST, ABILITY_UNSEEN_FIST, ABILITY_UNSEEN_FIST },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Grimmsnarl"),
         .cryId = CRY_GRIMMSNARL,
@@ -4500,35 +4490,35 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 320,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Gigantamax energy has caused more\n"
-            "hair to sprout all over its body.\n"
-            "With the added strength, it can jump\n"
-            "over the world's tallest building."),
+            "Grimmsnarl's Mega form is a true titan,\n" // new desc
+            "looming large over almost any opponent.\n"
+            "It can control every individual hair on\n"
+            "its body to maximize attack and defense."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_GrimmsnarlGigantamax,
+        .frontPic = gMonFrontPic_GrimmsnarlMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_GrimmsnarlGigantamax,
+        .frontAnimFrames = sAnims_GrimmsnarlMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GrimmsnarlGigantamax,
+        .backPic = gMonBackPic_GrimmsnarlMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 10,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_GrimmsnarlGigantamax,
-        .shinyPalette = gMonShinyPalette_GrimmsnarlGigantamax,
-        .iconSprite = gMonIcon_GrimmsnarlGigantamax,
+        .palette = gMonPalette_GrimmsnarlMega,
+        .shinyPalette = gMonShinyPalette_GrimmsnarlMega,
+        .iconSprite = gMonIcon_GrimmsnarlMega,
         .iconPalIndex = 0,
+        SHADOW(-1, 14, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Grimmsnarl)
-        .isGigantamax = TRUE,
+        .isMegaEvolution = TRUE,
         .levelUpLearnset = sGrimmsnarlLevelUpLearnset,
         .teachableLearnset = sGrimmsnarlTeachableLearnset,
         .formSpeciesIdTable = sGrimmsnarlFormSpeciesIdTable,
         .formChangeTable = sGrimmsnarlFormChangeTable,
     },
-#endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_IMPIDIMP
 
 #if P_FAMILY_MILCERY
@@ -5578,16 +5568,15 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sCopperajahFormChangeTable,
     },
 
-#if P_GIGANTAMAX_FORMS
-    [SPECIES_COPPERAJAH_GIGANTAMAX] =
+    [SPECIES_COPPERAJAH_MEGA] =
     {
         .baseHP        = 122,
-        .baseAttack    = 130,
-        .baseDefense   = 69,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 69,
-        .types = MON_TYPES(TYPE_STEEL),
+        .baseAttack    = 150,
+        .baseDefense   = 109,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 89,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_NORMAL),
         .catchRate = 90,
         .expYield = 175,
         .evYield_Attack = 2,
@@ -5597,7 +5586,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_SHEER_FORCE, ABILITY_NONE, ABILITY_HEAVY_METAL },
+        .abilities = { ABILITY_SUPER_LUCK, ABILITY_SUPER_LUCK, ABILITY_SUPER_LUCK },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Copperajah"),
         .cryId = CRY_COPPERAJAH,
@@ -5606,35 +5595,35 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 230,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "After this Pokémon has\n"
-            "Gigantamaxed, its massive nose can utterly\n"
-            "demolish large structures with a single\n"
-            "smashing blow."),
+            "For some reason, Mega Copperajah is more\n" // new desc
+            "comfortable standing on its hind legs. It\n"
+            "becomes an unstoppable wall, threatening\n"
+            "all nearby Pokémon with its giant trunk."),
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CopperajahGigantamax,
+        .frontPic = gMonFrontPic_CopperajahMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_CopperajahGigantamax,
+        .frontAnimFrames = sAnims_CopperajahMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CopperajahGigantamax,
+        .backPic = gMonBackPic_CopperajahMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CopperajahGigantamax,
-        .shinyPalette = gMonShinyPalette_CopperajahGigantamax,
-        .iconSprite = gMonIcon_CopperajahGigantamax,
+        .palette = gMonPalette_CopperajahMega,
+        .shinyPalette = gMonShinyPalette_CopperajahMega,
+        .iconSprite = gMonIcon_CopperajahMega,
         .iconPalIndex = 0,
+        SHADOW(2, 11, SHADOW_SIZE_M)
         FOOTPRINT(Copperajah)
-        .isGigantamax = TRUE,
+        .isMegaEvolution = TRUE,
         .levelUpLearnset = sCopperajahLevelUpLearnset,
         .teachableLearnset = sCopperajahTeachableLearnset,
         .formSpeciesIdTable = sCopperajahFormSpeciesIdTable,
         .formChangeTable = sCopperajahFormChangeTable,
     },
-#endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CUFANT
 
 #if P_FAMILY_DRACOZOLT

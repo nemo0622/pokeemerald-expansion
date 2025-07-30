@@ -1727,7 +1727,7 @@ const u8 gText_NoRoomForTreasure[] = _("Too bad!\nThe Bag is full…");
 
 const u8 gText_ShinyIndicator[] = _(" {EMOJI_HEART}");
 
-const u8 gText_NikoDialogue_Tera[] = _("Tera");
+const u8 gText_NikoDialogue_Mega[] = _("Mega Evo.");
 const u8 gText_NikoDialogue_Conversation[] = _("Talk");
 
 const u8 gText_SmallDot[] = _("·");
@@ -1786,7 +1786,7 @@ const u8 gText_SideQuestName_25[] = _("Lovestruck Biker");
 const u8 gText_SideQuestName_26[] = _("Eye of the Beholder");
 const u8 gText_SideQuestName_27[] = _("Understanding Eeveelution");
 const u8 gText_SideQuestName_28[] = _("Impatience is a Virtue");
-const u8 gText_SideQuestName_29[] = _("Chimera's Tera Plan");
+const u8 gText_SideQuestName_29[] = _("Chimera's Mega Plan");
 const u8 gText_SideQuestName_30[] = _("A Tall Order");
 const u8 gText_SideQuestName_31[] = _("Master of Terrain");
 const u8 gText_SideQuestName_32[] = _("First Battle Pavilion");
@@ -1845,7 +1845,7 @@ const u8 gText_SideQuestDesc_25[] = _("Give the Cycling Man a Heart\nScale to he
 const u8 gText_SideQuestDesc_26[] = _("Bring the Artist a Heart\nScale to inspire new art.");
 const u8 gText_SideQuestDesc_27[] = _("Show a Scientist a complete\nPokédex entry of Eevee to\nlearn about Evolution.");
 const u8 gText_SideQuestDesc_28[] = _("Bring an Athlete a Quick\nBall to speed up their wild\nPokémon captures.");
-const u8 gText_SideQuestDesc_29[] = _("Defeat Team Chimera in their\nSofos City hideout and bring\nNiko the Tera Orb.");
+const u8 gText_SideQuestDesc_29[] = _("Defeat Team Chimera in their\nSofos City hideout and bring\nNiko the Key Stone.");
 const u8 gText_SideQuestDesc_30[] = _("Show a short boy a\ncomplete Pokédex entry of Girafarig\nto inspire his growth.");
 const u8 gText_SideQuestDesc_31[] = _("Show a strategy-loving\nCamper an Alolan Raichu\nin your party.");
 const u8 gText_SideQuestDesc_32[] = _("Participate in the Sofos\nCity Battle Pavilion and\nreturn to the excited man.");
