@@ -1643,8 +1643,9 @@
 #define SPECIES_TINKATON_MEGA                           1537
 #define SPECIES_CYCLIZAR_MEGA_S                         1538
 #define SPECIES_CYCLIZAR_MEGA_V                         1539
+#define SPECIES_PYROAR_F                                1540
 
-#define SPECIES_EGG (SPECIES_CYCLIZAR_MEGA_V + 1)
+#define SPECIES_EGG (SPECIES_PYROAR_F + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -1395,7 +1395,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_LITLEO] =
     {
         .baseHP        = 62,
-        .baseAttack    = 50,
+        .baseAttack    = 60,
         .baseDefense   = 58,
         .baseSpeed     = 72,
         .baseSpAttack  = 73,
@@ -1409,7 +1409,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_RIVALRY, ABILITY_UNNERVE, ABILITY_MOXIE },
+        .abilities = { ABILITY_MOXIE, ABILITY_UNNERVE, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Litleo"),
         .cryId = CRY_LITLEO,
@@ -1418,10 +1418,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 6,
         .weight = 135,
         .description = COMPOUND_STRING(
-            "They set off on their own from their pride\n"
-            "and live by themselves to become stronger.\n"
-            "These hot-blooded Pokémon are quick\n"
-            "to start a fight."),
+            "Litleo cubs live in prides, learning to\n" // new desc
+            "hunt and survive with their relatives.\n"
+            "They love nothing more than play-fighting\n"
+            "until a female Pyroar separates them."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -1451,62 +1451,57 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sLitleoLevelUpLearnset,
         .teachableLearnset = sLitleoTeachableLearnset,
         .eggMoveLearnset = sLitleoEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_PYROAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL_MALE, 31, SPECIES_PYROAR},
+                                {EVO_LEVEL_FEMALE, 31, SPECIES_PYROAR_F}),
     },
 
     [SPECIES_PYROAR] =
     {
-        .baseHP        = 86,
-        .baseAttack    = 68,
-        .baseDefense   = 72,
+        .baseHP        = 96,
+        .baseAttack    = 109,
+        .baseDefense   = 82,
         .baseSpeed     = 106,
-        .baseSpAttack  = 109,
+        .baseSpAttack  = 68,
         .baseSpDefense = 66,
         .types = MON_TYPES(TYPE_FIRE, TYPE_NORMAL),
         .catchRate = 65,
         .expYield = 177,
         .evYield_SpAttack = 2,
-        .genderRatio = PERCENT_FEMALE(87.5),
+        .genderRatio = MON_MALE,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_RIVALRY, ABILITY_UNNERVE, ABILITY_MOXIE },
+        .abilities = { ABILITY_MOXIE, ABILITY_UNNERVE, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Pyroar"),
+        .speciesName = _("Pyroar♂"),
         .cryId = CRY_PYROAR,
         .natDexNum = NATIONAL_DEX_PYROAR,
         .categoryName = _("Royal"),
         .height = 15,
         .weight = 815,
         .description = COMPOUND_STRING(
-            "The male with the largest mane of fire\n"
-            "is the leader of the pride. The females\n"
-            "protect the pride's cubs. They viciously\n"
-            "threaten any challenger."),
+            "Male Pyroar begin their adult lives as\n" // new desc
+            "solitary nomads. If it has a large mane,\n"
+            "female Pyroar will join it, forming a new\n"
+            "pride. The males rest for most of the day."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Pyroar,
-        .frontPicFemale = gMonFrontPic_PyroarF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Pyroar,
         .frontAnimId = ANIM_V_SHAKE,
         .backPic = gMonBackPic_Pyroar,
-        .backPicFemale = gMonBackPic_PyroarF,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_H_STRETCH,
         .palette = gMonPalette_Pyroar,
         .shinyPalette = gMonShinyPalette_Pyroar,
         .iconSprite = gMonIcon_Pyroar,
-        .iconSpriteFemale = gMonIcon_PyroarF,
         .iconPalIndex = 2,
-        .iconPalIndexFemale = 2,
         FOOTPRINT(Pyroar)
         OVERWORLD(
             sPicTable_Pyroar,
@@ -1517,6 +1512,66 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             gShinyOverworldPalette_Pyroar
         )
         .levelUpLearnset = sPyroarLevelUpLearnset,
+        .teachableLearnset = sPyroarTeachableLearnset,
+    },
+
+    [SPECIES_PYROAR_F] =
+    {
+        .baseHP        = 86,
+        .baseAttack    = 68,
+        .baseDefense   = 72,
+        .baseSpeed     = 116,
+        .baseSpAttack  = 109,
+        .baseSpDefense = 76,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_NORMAL),
+        .catchRate = 65,
+        .expYield = 177,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_MOXIE, ABILITY_UNNERVE, ABILITY_ADAPTABILITY },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Pyroar♀"),
+        .cryId = CRY_PYROAR,
+        .natDexNum = NATIONAL_DEX_PYROAR_F,
+        .categoryName = _("Royal"),
+        .height = 15,
+        .weight = 815,
+        .description = COMPOUND_STRING(
+            "Female Pyroar join strong males and form\n" // new desc
+            "new prides. They conduct most of the\n"
+            "hunting and Litleo-raising, making them\n"
+            "the most valuable pride members."),
+        .pokemonScale = 268,
+        .pokemonOffset = 2,
+        .trainerScale = 271,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_PyroarF,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Pyroar,
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_PyroarF,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_H_STRETCH,
+        .palette = gMonPalette_PyroarF,
+        .shinyPalette = gMonShinyPalette_PyroarF,
+        .iconSprite = gMonIcon_PyroarF,
+        .iconPalIndex = 2,
+        FOOTPRINT(Pyroar)
+        OVERWORLD(
+            sPicTable_PyroarF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_PyroarF,
+            gShinyOverworldPalette_PyroarF
+        )
+        .levelUpLearnset = sPyroarFLevelUpLearnset,
         .teachableLearnset = sPyroarTeachableLearnset,
     },
 #endif //P_FAMILY_LITLEO

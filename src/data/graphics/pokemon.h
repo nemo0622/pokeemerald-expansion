@@ -14887,14 +14887,16 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/backf.4bpp.lz");
-    const u8 gMonIcon_PyroarF[] = INCBIN_U8("graphics/pokemon/pyroar/iconf.4bpp");
+    const u32 gMonFrontPic_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/female/anim_front.4bpp.lz");
+    const u32 gMonPalette_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/female/normal.gbapal.lz");
+    const u32 gMonBackPic_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/female/back.4bpp.lz");
+    const u32 gMonShinyPalette_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/female/shiny.gbapal.lz");
+    const u8 gMonIcon_PyroarF[] = INCBIN_U8("graphics/pokemon/pyroar/female/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_PyroarF[] = INCBIN_COMP("graphics/pokemon/pyroar/followerf.4bpp");
+    const u32 gObjectEventPic_PyroarF[] = INCBIN_COMP("graphics/pokemon/pyroar/female/follower.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    // const u32 gOverworldPalette_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/overworld_normalf.gbapal.lz");
-    // const u32 gShinyOverworldPalette_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/overworld_shinyf.gbapal.lz");
+    const u32 gOverworldPalette_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/female/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/female/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_LITLEO
