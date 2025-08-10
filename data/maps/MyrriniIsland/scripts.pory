@@ -7,6 +7,11 @@ mapscripts MyrriniIsland_MapScripts {
             setvar(VAR_TEMP_1, 1)
         }
 
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
+
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)

@@ -1,1 +1,348 @@
-mapscripts KaptaraIsland_East_MapScripts {}
+mapscripts KaptaraIsland_East_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
+        else
+        {
+            random(2)
+            switch (var(VAR_RESULT)) {
+                case 0: setweather(WEATHER_RAIN)
+                case 1: setweather(WEATHER_SUNNY)
+            }
+        }
+        
+    }
+}
+
+script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui
+{
+    trainerbattle_single(TRAINER_KAPTARAISLAND_YESUI, KaptaraIsland_Text_Trainer_KaptaraIsland_YesuiIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_YesuiDefeat)
+    speakername("Yesui")
+    msgbox(format("There used to be wild Litleo and Pyroar all over the Ilios Region, but most were hunted down centuries ago. There are only a few pockets of them left in the wild."))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_YesuiIntro
+{
+    format("Go, my shining lions!")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_YesuiDefeat
+{
+    format("How could they lose?!")
+}
+
+script KaptaraIsland_EventScript_RuinManiac
+{
+    lock
+    faceplayer
+    speakername("Ruin Maniac")
+    msgbox(format("There are broken fragments of an ancient civilization's buildings all over this side of the island. It seems like the whole island was once covered in palaces, like those remaining in Palati City. I wonder what happened to them..."))
+    closemessage
+    release
+    end
+}
+
+script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa
+{
+    trainerbattle_single(TRAINER_KAPTARAISLAND_ISSA, KaptaraIsland_Text_Trainer_KaptaraIsland_IssaIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_IssaDefeat)
+    speakername("Issa")
+    msgbox(format("Some people say that the winding trails of this forest look like the tentacles of an Octillery. I guess Octillery was painted on a lot of ancient walls here, too."))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_IssaIntro
+{
+    format("This rough terrain is perfect for training!")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_IssaDefeat
+{
+    format("Aw... It was because of the terrain!")
+}
+
+script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Grigor
+{
+    trainerbattle_single(TRAINER_KAPTARAISLAND_GRIGOR, KaptaraIsland_Text_Trainer_KaptaraIsland_GrigorIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_GrigorDefeat)
+    speakername("Grigor")
+    msgbox(format("Art has been practiced on this island for thousands of years. I am simply continuing this tradition!"))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_GrigorIntro
+{
+    format("I'm painting the natural beauty of this island.")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_GrigorDefeat
+{
+    format("I'll have to paint your Pokémon, too.")
+}
+
+script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Manto
+{
+    trainerbattle_single(TRAINER_KAPTARAISLAND_MANTO, KaptaraIsland_Text_Trainer_KaptaraIsland_MantoIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_MantoDefeat)
+    speakername("Manto")
+    msgbox(format("It's easy to lose your way in these twisting paths. Make sure to remember your way back to Palati City."))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_MantoIntro
+{
+    format("Uh oh, I think I'm lost!")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_MantoDefeat
+{
+    format("My poor Pokémon are lost, too!")
+}
+
+script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Stan
+{
+    trainerbattle_single(TRAINER_KAPTARAISLAND_STAN, KaptaraIsland_Text_Trainer_KaptaraIsland_StanIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_StanDefeat)
+    speakername("Stan")
+    msgbox(format("I'm growing my collection of Pokémon. I hear this island holds some secrets..."))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_StanIntro
+{
+    format("Ooo, a fresh team of Pokémon! Let's see what you've got!")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_StanDefeat
+{
+    format("What a collection!")
+}
+
+script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Horatio
+{
+    trainerbattle_single(TRAINER_KAPTARAISLAND_HORATIO, KaptaraIsland_Text_Trainer_KaptaraIsland_HoratioIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_HoratioDefeat)
+    speakername("Horatio")
+    msgbox(format("I took the day off work to come out here and explore. There's value in touching grass."))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_HoratioIntro
+{
+    format("I haven't spent time in nature in years. Come, help me have fun!")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_HoratioDefeat
+{
+    format("Battles are quite the thrill!")
+}
+
+script KaptaraIsland_EventScript_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("The weather is always crazy here! It's either pouring rain or bright and sunny!"))
+    closemessage
+    release
+    end
+}
+
+script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Edith
+{
+    trainerbattle_single(TRAINER_KAPTARAISLAND_EDITH, KaptaraIsland_Text_Trainer_KaptaraIsland_EdithIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_EdithDefeat)
+    speakername("Edith")
+    msgbox(format("They say the person deep in the woods is looking for a challenge. Maybe you could be that challenge!"))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_EdithIntro
+{
+    format("There's someone who stays deep in these woods for days on end. I wonder if I can find them.")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_EdithDefeat
+{
+    format("I'll need to heal my Pokémon first.")
+}
+
+script KaptaraIsland_EventScript_YoungsterNeedsMoonStone
+{
+    lock
+    faceplayer
+    speakername("Youngster")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_MOON_STONE_YOUNGSTER)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Wigglytuff might not look that strong, but it can pack a serious punch. My friends will be so jealous!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_MOON_STONE_YOUNGSTER)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("I'm digging around here for a Moon Stone. My only Pokémon is a Jigglypuff, and all my friends say it looks weak... I thought its evolution might look stronger!\p Hey, you're a traveler, right? Could you bring me a {COLOR GREEN}Moon Stone{COLOR DARK_GRAY}?"))
+        closemessage
+        delay(20)
+        startquest(QUEST_MOON_STONE_YOUNGSTER)
+    }
+    else
+    {
+        msgbox(format("It's you! Did you find a Moon Stone?"))
+        closemessage
+
+        checkitem(ITEM_MOON_STONE)
+        delay(30)
+
+        if(var(VAR_RESULT) == TRUE)
+        {
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Youngster")
+            msgbox(format("Hey, that's it! Let me give it to Jigglypuff... aaaand..."))
+            closemessage
+            delay(30)
+            emote(VAR_LAST_TALKED, EMOTE_QUESTION)
+            speakername("Youngster")
+            msgbox(format("What? A Wigglytuff? It's just a Jigglypuff but taller!\p Well, maybe my friends will stop making fun of me, now that my Pokémon is taller than them. Here, take this!"))
+            closemessage
+            delay(5)
+            giveitem(ITEM_EXP_CANDY_L)
+            closemessage
+            delay(20)
+            completequest(QUEST_MOON_STONE_YOUNGSTER)
+        }
+        else
+        {
+            speakername("Youngster")
+            msgbox(format("Aw, you don't have a Moon Stone. Please, I need to evolve my Jigglypuff!\p Bring me a {COLOR GREEN}Moon Stone{COLOR DARK_GRAY}, and I'll give you something I found in these ruins!"))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+script KaptaraIsland_EventScript_BraviaryHisui
+{
+    lock
+    faceplayer
+    speakername("Braviary")
+    playmoncry(SPECIES_BRAVIARY_HISUIAN, CRY_MODE_NORMAL)
+    msgbox("Kraww!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script KaptaraIsland_EventScript_BirdKeeperWithFly
+{
+    lock
+    faceplayer
+    speakername("Fly Guy")
+    
+    if(flag(FLAG_RECEIVED_HM_FLY)) // already got Fly
+    {
+        msgbox(format("Are you enjoying Flying around the region? Of course, you'll need the 7th Gym Badge to use it, but it's one of the most helpful tools I've got!"))
+        closemessage
+        release
+        end
+    }
+    else
+    {
+        emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+        msgbox(format("Hey, someone found me! I'm the {COLOR GREEN}Fly Guy{COLOR DARK_GRAY} of Ilios - I give people the {COLOR GREEN}Fly HM{COLOR DARK_GRAY}!\p Oh, but first, you'll have to earn it. Are you ready for a battle?"), MSGBOX_YESNO)
+        closemessage
+        delay(5)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Fly Guy")
+            msgbox(format("Ehehe, need some time first, hm? Come back when you're ready for a fight. I'll give you the {COLOR GREEN}Fly HM{COLOR DARK_GRAY} as a reward!"))
+            closemessage
+            release
+            end
+        }
+        else
+        {
+            trainerbattle_no_intro(TRAINER_KAPTARAISLAND_FLYGUY, KaptaraIsland_Text_FlyGuyDefeat)
+
+            delay(5)
+            speakername("Fly Guy")
+            msgbox(format("Ehehe, you clipped my wings and brought me down! You've earned this."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_HM_FLY)
+            setflag(FLAG_RECEIVED_HM_FLY)
+            closemessage
+            delay(5)
+            speakername("Fly Guy")
+            msgbox(format("After you've earned the {COLOR GREEN}Palati City Gym Badge{COLOR DARK_GRAY}, you can use Fly to travel around the Ilios Region. Neat, huh?"))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+text KaptaraIsland_Text_FlyGuyDefeat
+{
+    format("Woah, you blew me away!")
+}
+
+script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Rose
+{
+    trainerbattle_double(TRAINER_KAPTARAISLAND_JON_AND_ROSE, KaptaraIsland_Text_Trainer_KaptaraIsland_RoseIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_RoseDefeat, KaptaraIsland_Text_Trainer_KaptaraIsland_RoseNotEnoughMons)
+    speakername("Rose")
+    msgbox(format("I wonder what's deeper in the woods."))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_RoseIntro
+{
+    format("My husband says there's something past this rock, but I'm not sure I believe him.")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_RoseDefeat
+{
+    format("We better heal out Pokémon before we move on.")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_RoseNotEnoughMons
+{
+    format("It doesn't look like you have enough Pokémon for a double battle.")
+}
+
+script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Jon
+{
+    trainerbattle_double(TRAINER_KAPTARAISLAND_JON_AND_ROSE, KaptaraIsland_Text_Trainer_KaptaraIsland_JonIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_JonDefeat, KaptaraIsland_Text_Trainer_KaptaraIsland_JonNotEnoughMons)
+    speakername("Jon")
+    msgbox(format("I hear there's a sunken ruin deep in the woods. Maybe it's past this rock?"))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_JonIntro
+{
+    format("Come on honey, we need to get past this rock! Huh? A Trainer?")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_JonDefeat
+{
+    format("Just a little further!")
+}
+text KaptaraIsland_Text_Trainer_KaptaraIsland_JonNotEnoughMons
+{
+    format("It doesn't look like you have enough Pokémon for a double battle.")
+}
+
+script KaptaraIsland_EventScript_LassWanderingAround
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("Have you heard about the Pokémon coming back from extinction? I wonder if the ancient people of this island lived alongside them before they went extinct."))
+    closemessage
+    release
+    end
+}

@@ -45,6 +45,7 @@ static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
 static void TilesetAnim_Jusmail(u16);
 static void TilesetAnim_FrescoIsles(u16);
+static void TilesetAnim_PalatiGym(u16);
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
@@ -61,6 +62,7 @@ static void QueueAnimTiles_BattlePyramid_Torch(u16);
 static void QueueAnimTiles_BattlePyramid_StatueShadow(u16);
 static void QueueAnimTiles_Jusmail_Windmill_Row01(u16);
 static void QueueAnimTiles_FrescoIsles_Lava(u16);
+static void QueueAnimTiles_PalatiGym_Torch(u16);
 static void BlendAnimPalette_BattleDome_FloorLights(u16);
 static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16);
 static void QueueAnimTiles_Lavaridge_Steam(u8);
@@ -607,6 +609,18 @@ static const u16 *const gTilesetAnims_FrescoIsles_Lava[] = {
     gTilesetAnims_FrescoIsles_Lava_Frame3
 };
 
+const u16 gTilesetAnims_PalatiGym_Torch_Frame0[] = INCBIN_U16("data/tilesets/secondary/palati_gym/anim/torch/frame0.4bpp");
+const u16 gTilesetAnims_PalatiGym_Torch_Frame1[] = INCBIN_U16("data/tilesets/secondary/palati_gym/anim/torch/frame1.4bpp");
+const u16 gTilesetAnims_PalatiGym_Torch_Frame2[] = INCBIN_U16("data/tilesets/secondary/palati_gym/anim/torch/frame2.4bpp");
+const u16 gTilesetAnims_PalatiGym_Torch_Frame3[] = INCBIN_U16("data/tilesets/secondary/palati_gym/anim/torch/frame3.4bpp");
+
+static const u16 *const gTilesetAnims_PalatiGym_Torch[] = {
+    gTilesetAnims_PalatiGym_Torch_Frame0,
+    gTilesetAnims_PalatiGym_Torch_Frame1,
+    gTilesetAnims_PalatiGym_Torch_Frame2,
+    gTilesetAnims_PalatiGym_Torch_Frame3
+};
+
 static void ResetTilesetAnimBuffer(void)
 {
     sTilesetDMA3TransferBufferSize = 0;
@@ -706,6 +720,13 @@ void InitTilesetAnim_FrescoIsles(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_FrescoIsles;
 }
 
+void InitTilesetAnim_PalatiGym(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_PalatiGym;
+}
+
 static void TilesetAnim_General(u16 timer)
 {
     if (timer % 16 == 0)
@@ -790,13 +811,19 @@ static void QueueAnimTiles_FrescoIsles_Lava(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_FrescoIsles_Lava[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(0x2A0)), 4 * TILE_SIZE_4BPP);
 }
 
-// NOTE TO SELF:
-// If this doesn't work (which is likely lol), split these animations into 12 separate animations, one for each 8x8 horizontal row making up the windmill frames
-// This is to satisfy the "The animated tiles need to be right next to each other, not above or below" requirement -
-// by doing this, each row's animations are already going to be aligned!
+static void TilesetAnim_PalatiGym(u16 timer)
+{
+    if (timer % 16 == 0)
+    {
+        QueueAnimTiles_PalatiGym_Torch(timer >> 4);
+    }
+}
 
-// ALSO: if there are still problems, it looks like the "maximum 16 pixel width" requirement is actually real
-// This means each windmill frame must be organized vertically, with each 16x16 box below the next
+static void QueueAnimTiles_PalatiGym_Torch(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_PalatiGym_Torch);
+    AppendTilesetAnimToBuffer(gTilesetAnims_PalatiGym_Torch[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(0x240)), 4 * TILE_SIZE_4BPP);
+}
 
 void InitTilesetAnim_Petalburg(void)
 {

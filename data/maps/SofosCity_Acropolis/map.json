@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SofosCity_Acropolis_EventScript_Man",
-      "flag": "0"
+      "flag": "FLAG_HIDE_SOFOS_ACROPOLIS_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SofosCity_Acropolis_EventScript_Camper",
-      "flag": "0"
+      "flag": "FLAG_HIDE_SOFOS_ACROPOLIS_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SofosCity_Acropolis_EventScript_Lass",
-      "flag": "0"
+      "flag": "FLAG_HIDE_SOFOS_ACROPOLIS_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TOGA_GIRL",
@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SofosCity_Acropolis_EventScript_TogaGirl",
-      "flag": "0"
+      "flag": "FLAG_HIDE_SOFOS_ACROPOLIS_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TOGA_GIRL",
@@ -77,7 +77,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SofosCity_Acropolis_EventScript_TogaGirl",
-      "flag": "0"
+      "flag": "FLAG_HIDE_SOFOS_ACROPOLIS_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
@@ -90,7 +90,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SofosCity_EventScript_OldSofosOutfitBeauty",
-      "flag": "0"
+      "flag": "FLAG_HIDE_SOFOS_ACROPOLIS_NPCS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SYLVEON)",
@@ -103,7 +103,189 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SofosCity_Acropolis_EventScript_Sylveon",
-      "flag": "0"
+      "flag": "FLAG_HIDE_SOFOS_ACROPOLIS_NPCS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RANIA",
+      "x": 5,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_RHADINE_PALATI_CITY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MUSE_RHADINE",
+      "x": 6,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_RHADINE_PALATI_CITY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_NIKO",
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_RHADINE_PALATI_CITY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARCANINE_HISUIAN)",
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_CHIMERA_MEMBERS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MUSE_KALLIOPE",
+      "x": 6,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_CHIMERA_MEMBERS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAIKOU)",
+      "x": 4,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_LEGENDARY_DOGS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SUICUNE)",
+      "x": 5,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_LEGENDARY_DOGS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ENTEI)",
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_LEGENDARY_DOGS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CHIMERA_ADMIN_M",
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_CHIMERA_MEMBERS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CHIMERA_MEMBER_F",
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_CHIMERA_MEMBERS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAMOSWINE)",
+      "x": 9,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_CHIMERA_MEMBERS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAGING_BOLT)",
+      "x": 4,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_LEGENDARY_BEASTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WALKING_WAKE)",
+      "x": 5,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_LEGENDARY_BEASTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GOUGING_FIRE)",
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ACROPOLIS_LEGENDARY_BEASTS"
     }
   ],
   "warp_events": [

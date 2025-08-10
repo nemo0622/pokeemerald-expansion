@@ -1,4 +1,253 @@
-mapscripts SofosCity_Acropolis_MapScripts {}
+mapscripts SofosCity_Acropolis_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if(!flag(FLAG_HIDE_SOFOS_ACROPOLIS_NPCS)) // skips running script in ON_FRAME_TABLE, so the map label will show normally!
+        {
+            setvar(VAR_TEMP_1, 1)
+        }
+    }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: SofosCity_Acropolis_EventScript_TryChimeraEvent
+    ]
+}
+
+script SofosCity_Acropolis_EventScript_TryChimeraEvent
+{
+    setvar(VAR_TEMP_1, 1)
+    if(flag(FLAG_BADGE07_GET) && !flag(FLAG_DID_CHIMERA_EVENT_PALATI_CITY))
+    {
+        goto(SofosCity_Acropolis_EventScript_ChimeraEvent)
+    }
+    releaseall
+    end
+}
+
+script SofosCity_Acropolis_EventScript_ChimeraEvent
+{
+    setvar(VAR_TEMP_1, 1)
+
+    // Enter building, Niko and Admin M react
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    applymovement(8, Common_Movement_WalkUp2) // Rania
+    applymovement(9, Common_Movement_WalkUp2) // Rhadine
+    waitmovement(0)
+    delay(20)
+    applymovement(10, Common_Movement_JumpInPlaceDown) // Niko
+    waitmovement(0)
+    emote(10, EMOTE_EXCLAM)
+    speakername("Niko")
+    msgbox(format("Rania! {PLAYER}! I knew you'd save me!"))
+    closemessage
+    applymovement(16, Common_Movement_JumpInPlaceUp) // Chimera Admin M
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("Shut it, nerd! Or does my Arcanine need to keep you quiet for good?"))
+    closemessage
+    speakername("Niko")
+    msgbox(format("Urk..."))
+    closemessage
+    
+    // Rania goes to confront the Chimera Admin M
+    emote(8, EMOTE_EXCLAM)
+    applymovement(8, Common_Movement_WalkLeft)
+    waitmovement(0)
+    applymovement(8, Common_Movement_FaceUp)
+    waitmovement(0)
+    applymovement(16, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("HEY! You think you're so tough, but one good Water-type attack will stomp you! Too bad for you, my Floatzel is itching for a fight!"))
+    closemessage
+    delay(10)
+
+    // Player and Rhadine approach Kalliope
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    applymovement(9, Common_Movement_WalkUp2)
+    waitmovement(0)
+    applymovement(17, Common_Movement_JumpInPlaceLeft) // Chimera Admin F
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("Get back! You stand before Kalliope, Queen of Ilios, Caller of Legends, Greatest Muse in-"))
+    closemessage
+    applymovement(12, Common_Movement_WalkDown) // Kalliope
+    waitmovement(0)
+    applymovement(12, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("Quiet. Can't you recognize Rhadine, a Muse, just like me? Not to mention {PLAYER}, the Trainer causing us trouble at every turn?"))
+    closemessage
+    applymovement(12, Common_Movement_FaceDown)
+    waitmovement(0)
+
+    speakername("Kalliope")
+    msgbox(format("Rhadine, the sweet lady of Palati City. How long has it been?"))
+    closemessage
+    speakername("Rhadine")
+    msgbox(format("The last time I saw you, Team Chimera was making their way to Areios Town... Though I suppose I should call it {COLOR RED}Areios Hideout{COLOR DARK_GRAY} now.\p Kalliope, why? Why turn your back on us all, just for Team Chimera? Is this 'power' really worth it?"))
+    closemessage
+    speakername("Kalliope")
+    msgbox(format("Power is EVERYTHING, Rhadine. Gym Leaders should know that, of all people. Calling these {COLOR GREEN}Legendary Pokémon{COLOR DARK_GRAY} was just a matter of interrogating the Temple priests until they did their mumbo-jumbo ritual. Now, they're all mine.\p My Admins here have been just about worthless this whole time, but they've at least managed to assemble this {COLOR GREEN}Ancient Machine{COLOR DARK_GRAY}. According to old manuscripts, it can unlock powers hidden deep in their DNA, lost to time."))
+    closemessage
+    applymovement(12, Common_Movement_WalkLeft)
+    waitmovement(0)
+    applymovement(12, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("{PLAYER}... You've been a thorn in our side since the beginning. Do you want to see REAL power, for the first time in your life? Feast your eyes... {COLOR RED}ON THIS{COLOR DARK_GRAY}!"))
+    closemessage
+
+    // Screen flashes! Remove the old Legendary Dogs and replace them with the Ancient Legendary dogs!
+    fadescreenspeed(FADE_TO_WHITE, 2)
+    delay(15)
+    clearflag(FLAG_HIDE_ACROPOLIS_LEGENDARY_BEASTS)
+    addobject(19)
+    addobject(20)
+    addobject(21)
+    removeobject(13)
+    removeobject(14)
+    removeobject(15)
+    setflag(FLAG_HIDE_ACROPOLIS_LEGENDARY_DOGS)
+    delay(15)
+    fadescreen(FADE_FROM_WHITE)
+    delay(30)
+
+    // Beasts are explained to the player
+    emote(9, EMOTE_EXCLAM)
+    speakername("Rhadine")
+    msgbox(format("No... NO! What ARE these... These BEASTS?!"))
+    closemessage
+    speakername("Kalliope")
+    msgbox(format("Mhmhmhm... FWAHAHA! Whaddya know, this rotten old machine actually worked!\p This is the ultimate form of {COLOR GREEN}Mega Evolution{COLOR DARK_GRAY} - the {COLOR RED}permanent awakening of ancient genes{COLOR DARK_GRAY}! With {COLOR RED}Gouging Fire{COLOR DARK_GRAY}, I shall rule the earth, filling our engines with coal! With {COLOR RED}Walking Wake{COLOR DARK_GRAY}, the seas will be mine to drill for oil! And with {COLOR RED}Raging Bolt{COLOR DARK_GRAY}, nobody will be able to stop us!"))
+    closemessage
+    applymovement(12, Common_Movement_WalkLeft)
+    waitmovement(0)
+    applymovement(12, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(16, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("You! My Admin of Fire! You will take Gouging Fire and wrestle control of the land for Team Chimera."))
+    closemessage
+    applymovement(12, Common_Movement_WalkRight2)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("My Admin of Ice, you will take Walking Wake! With this beast by your side, you shall dominate the seas!"))
+    closemessage
+    applymovement(12, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("Naturally, I will keep Raging Bolt to control everything the sky touches!\p Of course, our work is not yet done. We will destroy {COLOR RED}any challengers{COLOR DARK_GRAY} that dare to fight back. Team Chimera, move out!"))
+    closemessage
+
+    // Kalliope and the Admins disappear
+    fadescreen(FADE_TO_BLACK)
+    delay(20)
+    setflag(FLAG_HIDE_ACROPOLIS_LEGENDARY_BEASTS)
+    removeobject(19)
+    removeobject(20)
+    removeobject(21)
+    setflag(FLAG_HIDE_ACROPOLIS_CHIMERA_MEMBERS)
+    removeobject(11)
+    removeobject(12)
+    removeobject(16)
+    removeobject(17)
+    removeobject(18)
+    delay(20)
+    fadescreen(FADE_FROM_BLACK)
+    delay(10)
+
+    // Plans are made to take Chimera down
+    applymovement(9, Common_Movement_FaceLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Rhadine")
+    msgbox(format("{PLAYER}... We were too late. With those Legendary Beasts by their side, I can't see how we could win."))
+    closemessage
+    emote(8, EMOTE_EXCLAM)
+    applymovement(8, Common_Movement_WalkRight)
+    waitmovement(0)
+    applymovement(8, Common_Movement_WalkUp)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("No, we can't give up hope. There must be something we can do!"))
+    closemessage
+    applymovement(10, Common_Movement_JumpInPlaceRight)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("I think there is! While I was being held here by that Admin, I heard Kalliope mention {COLOR GREEN}other, godlike Pokémon of Land, Sea, and Sky{COLOR DARK_GRAY} said to be dormant in the Ilios Region.\p I think that Kalliope's mention of challengers had real meaning. Maybe she's planning on {COLOR GREEN}confronting those Pokémon{COLOR DARK_GRAY} to make sure her reign is unchallenged!"))
+    closemessage
+    delay(5)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("That sounds familiar! There's a book about Ilian Mythology that mentions them: {COLOR GREEN}Kyogre, Groudon, and Rayquaza{COLOR DARK_GRAY}. I figured they were just old stories, but... If anything can help us beat Team Chimera, it's them.\p Niko and I were in Sofos City to follow up on reports of {COLOR GREEN}heat radiating from Satyr's Lair{COLOR DARK_GRAY}. I wonder if {COLOR GREEN}Groudon{COLOR DARK_GRAY} is under there?"))
+    closemessage
+    delay(5)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Rhadine")
+    msgbox(format("Ancient legends from {COLOR GREEN}Kaptara Island{COLOR DARK_GRAY} say that {COLOR GREEN}Kyogre{COLOR DARK_GRAY} lives somewhere nearby, remaining dormant for thousands of years. Maybe you could investigate there?"))
+    closemessage
+    delay(5)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("The Legendary of the Sky, {COLOR GREEN}Rayquaza{COLOR DARK_GRAY}, is worshipped at the {COLOR GREEN}Tower of Dioxippus{COLOR DARK_GRAY} south of Kipos Town. That's where you should go {COLOR GREEN}after finding Kyogre and Groudon{COLOR DARK_GRAY}."))
+    closemessage
+    delay(5)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Niko and I are going to return to Acrisia City. Professor Elia needs to know what's happening, and knowing Team Chimera, they'll be coming for the University next. Anyone who lusts for power believes that education is a threat to them.\p Before we go, please, take this."))
+    closemessage
+    delay(5)
+    giveitem(ITEM_HM_STRENGTH)
+    closemessage
+    delay(5)
+    speakername("Rania")
+    msgbox(format("With the {COLOR GREEN}HM Strength{COLOR DARK_GRAY}, you'll be able to reach deeper into caves to find these Legendary Pokémon."))
+    closemessage
+    delay(5)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Rhadine")
+    msgbox(format("I'm sorry {PLAYER}, but I have to protect Palati City and my people. You'll be finding these Legendary Pokémon on your own. Good luck, and please, be safe!"))
+    closemessage
+
+    // Everyone leaves
+    fadescreen(FADE_TO_BLACK)
+    delay(15)
+    setflag(FLAG_DID_CHIMERA_EVENT_PALATI_CITY)
+    setflag(FLAG_HIDE_RHADINE_PALATI_CITY)
+    removeobject(8)
+    removeobject(9)
+    removeobject(10)
+    clearflag(FLAG_HIDE_MAP_NAME_POPUP)
+    delay(15)
+    fadescreen(FADE_FROM_BLACK)
+    delay(10)
+
+    // Set Niko and Rania State variables
+    setvar(VAR_RANIA_STATE, 11)
+    setvar(VAR_NIKO_STATE, 12)
+
+    // Start quests to Find Kyogre, Find Groudon, and Find Rayquaza!
+    startquest(QUEST_LEGEND_OF_KYOGRE)
+    closemessage
+    delay(20)
+    startquest(QUEST_LEGEND_OF_GROUDON)
+    closemessage
+    delay(20)
+    startquest(QUEST_LEGEND_OF_RAYQUAZA)
+    closemessage
+    releaseall
+    end
+}
 
 script SofosCity_Acropolis_EventScript_Sign1
 {

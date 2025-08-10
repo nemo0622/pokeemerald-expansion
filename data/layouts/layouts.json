@@ -4695,7 +4695,7 @@
       "id": "LAYOUT_PALATI_CITY",
       "name": "PalatiCity_Layout",
       "width": 50,
-      "height": 50,
+      "height": 56,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_KaptaraIsland",
       "border_filepath": "data/layouts/PalatiCity/border.bin",
@@ -4707,7 +4707,7 @@
       "width": 70,
       "height": 50,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_KaptaraIsland",
       "border_filepath": "data/layouts/KaptaraIsland_East/border.bin",
       "blockdata_filepath": "data/layouts/KaptaraIsland_East/map.bin"
     },
@@ -4717,7 +4717,7 @@
       "width": 70,
       "height": 50,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_KaptaraIsland",
       "border_filepath": "data/layouts/KaptaraIsland_West/border.bin",
       "blockdata_filepath": "data/layouts/KaptaraIsland_West/map.bin"
     },
@@ -5720,6 +5720,36 @@
       "secondary_tileset": "gTileset_SofosGym",
       "border_filepath": "data/layouts/FrescoIsles_Gym/border.bin",
       "blockdata_filepath": "data/layouts/FrescoIsles_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_POKEMON_CENTER",
+      "name": "PalatiCity_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PalatiCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_MART",
+      "name": "PalatiCity_Mart_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PalatiCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_GYM",
+      "name": "PalatiCity_Gym_Layout",
+      "width": 27,
+      "height": 26,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PalatiGym",
+      "border_filepath": "data/layouts/PalatiCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_Gym/map.bin"
     }
   ]
 }

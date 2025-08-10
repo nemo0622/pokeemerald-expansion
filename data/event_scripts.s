@@ -1932,3 +1932,9 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/FrescoIsles_AbandonedLab/scripts.inc"
 
 	.include "data/maps/FrescoIsles_Gym/scripts.inc"
+
+	.include "data/maps/PalatiCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/PalatiCity_Mart/scripts.inc"
+
+	.include "data/maps/PalatiCity_Gym/scripts.inc"

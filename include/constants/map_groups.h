@@ -353,6 +353,9 @@
 #define MAP_MOSSDEEP_CITY_SPACE_CENTER_2F   (10 | (14 << 8))
 #define MAP_MOSSDEEP_CITY_GAME_CORNER_1F    (11 | (14 << 8))
 #define MAP_MOSSDEEP_CITY_GAME_CORNER_B1F   (12 | (14 << 8))
+#define MAP_PALATI_CITY_POKEMON_CENTER      (13 | (14 << 8))
+#define MAP_PALATI_CITY_MART                (14 | (14 << 8))
+#define MAP_PALATI_CITY_GYM                 (15 | (14 << 8))
 
 // gMapGroup_IndoorSootopolis
 #define MAP_SOOTOPOLIS_CITY_GYM_1F                   (0 | (15 << 8))

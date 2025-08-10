@@ -1,4 +1,11 @@
-mapscripts SeaOfVulcai_West_MapScripts {}
+mapscripts SeaOfVulcai_West_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
+    }
+}
 
 script SeaOfVulcai_West_EventScript_UniversityStudentRouteCheck
 {

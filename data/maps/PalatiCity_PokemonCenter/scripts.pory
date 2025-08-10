@@ -1,0 +1,97 @@
+mapscripts PalatiCity_PokemonCenter_MapScripts {}
+
+script PalatiCity_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Palati City Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_PALATI_CITY)
+    }
+    release
+    end
+}
+
+script PalatiCity_PokemonCenter_EventScript_UniversityStudentRouteCheck
+{
+    lock
+    faceplayer
+    speakername("Uni. Student")
+
+    if(flag(FLAG_CAUGHT_ALL_MONS_PALATI_CITY))
+    {
+        msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Chaire! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Pokémon{COLOR DARK_GRAY} found in Palati City. If you've caught all the Pokémon here, please let me know."))
+        closemessage
+        special(CheckRouteCaptureProgress)
+        if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
+        {
+            delay(20)
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Uni. Student")
+            msgbox(format("Incredible! You've caught all the Pokémon that I requested in the area!\p Here's a reward from the University. Keep up your hard work!"))
+            closemessage
+            delay(5)
+
+            // give reward!
+            giveitem(ITEM_TM57)
+            closemessage
+
+            setflag(FLAG_CAUGHT_ALL_MONS_PALATI_CITY)
+        }
+    }
+
+    release
+    end
+}
+
+script PalatiCity_PokemonCenter_EventScript_LittleBoy
+{
+    lock
+    faceplayer
+    speakername("Little Boy")
+    msgbox(format("I was playing with my Pokémon, but I scraped my knee. The Pokémon Center gave me a cool bandage though!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_PokemonCenter_EventScript_PunkRocker
+{
+    lock
+    faceplayer
+    speakername("Punk Rocker")
+    msgbox(format("I think reading and learning about the world is pretty punk rock, myself \p What? Hey, it is!"))
+    closemessage
+    release
+    end
+}

@@ -166,38 +166,44 @@ FrescoIsles_Mart_EventScript_CooltrainerWithChocolates_8:
 	end
 
 
-FrescoIsles_Mart_EventScript_Meganium::
+FrescoIsles_Mart_EventScript_Noctowl::
 # 119 "data/maps/FrescoIsles_Mart/scripts.pory"
 	lock
 # 120 "data/maps/FrescoIsles_Mart/scripts.pory"
 	faceplayer
 # 121 "data/maps/FrescoIsles_Mart/scripts.pory"
-	speakername FrescoIsles_Mart_EventScript_Meganium_Text_0
+	speakername FrescoIsles_Mart_EventScript_Noctowl_Text_0
 # 122 "data/maps/FrescoIsles_Mart/scripts.pory"
-	playmoncry SPECIES_MEGANIUM, CRY_MODE_NORMAL
+	playmoncry SPECIES_NOCTOWL, CRY_MODE_NORMAL
 # 123 "data/maps/FrescoIsles_Mart/scripts.pory"
-	msgbox FrescoIsles_Mart_EventScript_Meganium_Text_1
+	msgbox FrescoIsles_Mart_EventScript_Noctowl_Text_1
 # 124 "data/maps/FrescoIsles_Mart/scripts.pory"
 	waitmoncry
 # 125 "data/maps/FrescoIsles_Mart/scripts.pory"
 	closemessage
 # 126 "data/maps/FrescoIsles_Mart/scripts.pory"
+	delay 5
+# 127 "data/maps/FrescoIsles_Mart/scripts.pory"
+	msgbox FrescoIsles_Mart_EventScript_Noctowl_Text_2
+# 128 "data/maps/FrescoIsles_Mart/scripts.pory"
+	closemessage
+# 129 "data/maps/FrescoIsles_Mart/scripts.pory"
 	release
 	end
 
 
 FrescoIsles_Mart_EventScript_Officer::
-# 132 "data/maps/FrescoIsles_Mart/scripts.pory"
-	lock
-# 133 "data/maps/FrescoIsles_Mart/scripts.pory"
-	faceplayer
-# 134 "data/maps/FrescoIsles_Mart/scripts.pory"
-	speakername FrescoIsles_Mart_EventScript_Officer_Text_0
 # 135 "data/maps/FrescoIsles_Mart/scripts.pory"
-	msgbox FrescoIsles_Mart_EventScript_Officer_Text_1
+	lock
 # 136 "data/maps/FrescoIsles_Mart/scripts.pory"
-	closemessage
+	faceplayer
 # 137 "data/maps/FrescoIsles_Mart/scripts.pory"
+	speakername FrescoIsles_Mart_EventScript_Officer_Text_0
+# 138 "data/maps/FrescoIsles_Mart/scripts.pory"
+	msgbox FrescoIsles_Mart_EventScript_Officer_Text_1
+# 139 "data/maps/FrescoIsles_Mart/scripts.pory"
+	closemessage
+# 140 "data/maps/FrescoIsles_Mart/scripts.pory"
 	release
 	end
 
@@ -261,20 +267,25 @@ FrescoIsles_Mart_EventScript_CooltrainerWithChocolates_Text_6:
 	.string "{COLOR GREEN}Gym Leaders{COLOR DARK_GRAY}. They'll share it and calm\l"
 	.string "down, like always.$"
 
-FrescoIsles_Mart_EventScript_Meganium_Text_0:
+FrescoIsles_Mart_EventScript_Noctowl_Text_0:
 # 121 "data/maps/FrescoIsles_Mart/scripts.pory"
-	.string "Meganium$"
+	.string "Noctowl$"
 
-FrescoIsles_Mart_EventScript_Meganium_Text_1:
+FrescoIsles_Mart_EventScript_Noctowl_Text_1:
 # 123 "data/maps/FrescoIsles_Mart/scripts.pory"
-	.string "Hwaaaahh!$"
+	.string "Whoo-ooo!$"
+
+FrescoIsles_Mart_EventScript_Noctowl_Text_2:
+# 127 "data/maps/FrescoIsles_Mart/scripts.pory"
+	.string "Hm? This Noctowl is holding a\n"
+	.string "{COLOR GREEN}Noctowlite{COLOR DARK_GRAY}... it can {COLOR GREEN}Mega Evolve{COLOR DARK_GRAY}!$"
 
 FrescoIsles_Mart_EventScript_Officer_Text_0:
-# 134 "data/maps/FrescoIsles_Mart/scripts.pory"
+# 137 "data/maps/FrescoIsles_Mart/scripts.pory"
 	.string "Officer$"
 
 FrescoIsles_Mart_EventScript_Officer_Text_1:
-# 135 "data/maps/FrescoIsles_Mart/scripts.pory"
+# 138 "data/maps/FrescoIsles_Mart/scripts.pory"
 	.string "Life's pretty slow on the Fresco Isles.\n"
 	.string "I mostly run security for shows at the\l"
 	.string "Theatre, as crime's rare here.\p"

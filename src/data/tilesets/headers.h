@@ -1036,3 +1036,14 @@ const struct Tileset gTileset_FrescoIsles =
     .metatileAttributes = gMetatileAttributes_FrescoIsles,
     .callback = InitTilesetAnim_FrescoIsles,
 };
+
+const struct Tileset gTileset_PalatiGym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PalatiGym,
+    .palettes = gTilesetPalettes_PalatiGym,
+    .metatiles = gMetatiles_PalatiGym,
+    .metatileAttributes = gMetatileAttributes_PalatiGym,
+    .callback = InitTilesetAnim_PalatiGym,
+};

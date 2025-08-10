@@ -416,6 +416,14 @@ script AcrisiaCity_University_EventScript_Niko
                 release
                 end
             }
+            elif(var(VAR_NIKO_STATE) == 12) // After Gym 7 & Chimera Event
+            {
+                speakername("Niko")
+                msgbox(format("Team Chimera hasn't attacked the University yet. They must still be struggling to wrestle control of the region from Kyogre, Groudon, and Rayquaza.\p Speaking of which, have you found them yet? Those Legendary Pokémon might be our only shot at defeating Team Chimera."))
+                closemessage
+                release
+                end
+            }
         }
         else // chose cancel probably
         {
@@ -613,6 +621,12 @@ script AcrisiaCity_University_EventScript_Rania
     {
         speakername("Rania")
         msgbox(format("That TM contains the move Steel Wing. It's a great offensive option for many bird Pokémon!"))
+        closemessage
+    }
+    elif(var(VAR_RANIA_STATE) == 11) // After Gym 7 & Chimera Event
+    {
+        speakername("Rania")
+        msgbox(format("Team Chimera hasn't made it to Acrisia City yet, thankfully. For now, I'll keep processing Pokédex information. Maybe that'll help you fight Team Chimera somehow!"))
         closemessage
     }
     release

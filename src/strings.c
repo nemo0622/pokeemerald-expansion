@@ -1815,6 +1815,11 @@ const u8 gText_SideQuestName_54[] = _("Perfect Paint");
 const u8 gText_SideQuestName_55[] = _("A Family Peace Offering");
 const u8 gText_SideQuestName_56[] = _("The First Lazarus Taxon");
 const u8 gText_SideQuestName_57[] = _("Team Chimera's Beast");
+const u8 gText_SideQuestName_58[] = _("Big Strong Pokémon");
+const u8 gText_SideQuestName_59[] = _("Chasing Down Archen");
+const u8 gText_SideQuestName_60[] = _("The Legend of Kyogre");
+const u8 gText_SideQuestName_61[] = _("The Legend of Groudon");
+const u8 gText_SideQuestName_62[] = _("The Legend of Rayquaza");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Look for the deliveryman\nwith a flipped cart.");
@@ -1874,6 +1879,11 @@ const u8 gText_SideQuestDesc_54[] = _("Bring 1 of each colored\nShard to the Art
 const u8 gText_SideQuestDesc_55[] = _("Buy a Box of Chocolate from\nthe Poké Mart to calm the\nbattling Gym Leaders.");
 const u8 gText_SideQuestDesc_56[] = _("Show the Pokédex Entry of\nRelicanth, a rare Lazarus Taxon,\nto a Battle Girl.");
 const u8 gText_SideQuestDesc_57[] = _("Bring a dozen Sitrus Berries\nto the Ex-Scientist to\nfeed a Type: Null.");
+const u8 gText_SideQuestDesc_58[] = _("Give a Moon Stone to\na Youngster to evolve\nhis Jigglypuff.");
+const u8 gText_SideQuestDesc_59[] = _("Show an Archen in your\nparty to the Man by\nthe Gym.");
+const u8 gText_SideQuestDesc_60[] = _("To defeat Walking Wake,\nfind Kyogre and show\nit your strength.");
+const u8 gText_SideQuestDesc_61[] = _("To defeat Gouging Fire,\nfind Groudon and show\nit your strength.");
+const u8 gText_SideQuestDesc_62[] = _("To defeat Raging Bolt,\nfind Rayquaza and show\nit your strength.");
 
 //completed quest description
 // NOTE: Probably never seen now that I only make Active quests seen lol!
@@ -1966,6 +1976,11 @@ const u8 gText_SideQuestMap54[] = _("Fresco Isles"); // QUEST_SHARDS_FOR_ARTIST
 const u8 gText_SideQuestMap55[] = _("Fresco Isles"); // QUEST_CALM_TWIN_MUSES
 const u8 gText_SideQuestMap56[] = _("Fresco Isles (House)"); // QUEST_FIND_RELICANTH
 const u8 gText_SideQuestMap57[] = _("Fresco Isles (Abandoned Lab)"); // QUEST_BRING_BERRIES_TO_TYPE_NULL
+const u8 gText_SideQuestMap58[] = _("Kaptara Island - Octillery Forest"); // QUEST_MOON_STONE_YOUNGSTER
+const u8 gText_SideQuestMap59[] = _("Palati City"); // QUEST_SHOW_MAN_ARCHEN_FROM_PARTY
+const u8 gText_SideQuestMap60[] = _("Kaptara Island (Sunken Temple)"); // QUEST_LEGEND_OF_KYOGRE
+const u8 gText_SideQuestMap61[] = _("Sofos City (Satyr's Lair)"); // QUEST_LEGEND_OF_GROUDON
+const u8 gText_SideQuestMap62[] = _("Tower of Dioxippus"); // QUEST_LEGEND_OF_RAYQUAZA
 
 //subquests
 // erm unused now oopsies

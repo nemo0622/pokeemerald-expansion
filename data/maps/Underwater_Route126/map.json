@@ -79,7 +79,7 @@
       "y": 39,
       "elevation": 3,
       "item": "ITEM_IRON",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON"
+      "flag": "FLAG_HIDDEN_ITEM_KAPTARA_MOON_STONE"
     },
     {
       "type": "hidden_item",
@@ -87,7 +87,7 @@
       "y": 35,
       "elevation": 3,
       "item": "ITEM_YELLOW_SHARD",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD"
+      "flag": "FLAG_HIDDEN_ITEM_KAPTARA_NUGGET"
     },
     {
       "type": "hidden_item",

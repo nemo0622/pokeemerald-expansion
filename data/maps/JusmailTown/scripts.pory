@@ -2,6 +2,11 @@ mapscripts JusmailTown_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_JUSMAIL_TOWN)
 
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
+
         // windmill management sigh
         clearflag(FLAG_TRIGGERED_WINDMILL_SPAWN)
     }

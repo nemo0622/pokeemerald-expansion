@@ -1,5 +1,10 @@
 mapscripts SeaOfVulcai_Southwest_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
+        
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
@@ -123,7 +128,7 @@ script VulcaiSea_EventScript_Trainer_VulcaiSea_Julien
 {
     trainerbattle_single(TRAINER_VULCAISEA_JULIEN, VulcaiSea_Text_Trainer_VulcaiSea_JulienIntro, VulcaiSea_Text_Trainer_VulcaiSea_JulienDefeat)
     speakername("Julien")
-    msgbox(format("There are a lot of sunken ruins around here. I wanna explore them all!"))
+    msgbox(format("There are some sunken ruins around here. I wanna explore them all!"))
     closemessage
     release
     end

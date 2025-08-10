@@ -114,14 +114,17 @@ text FrescoIsles_Mart_Text_StellaDefeat
     format("Heh, what an amazing battle! You've earned this.")
 }
 
-script FrescoIsles_Mart_EventScript_Meganium
+script FrescoIsles_Mart_EventScript_Noctowl
 {
     lock
     faceplayer
-    speakername("Meganium")
-    playmoncry(SPECIES_MEGANIUM, CRY_MODE_NORMAL)
-    msgbox("Hwaaaahh!")
+    speakername("Noctowl")
+    playmoncry(SPECIES_NOCTOWL, CRY_MODE_NORMAL)
+    msgbox("Whoo-ooo!")
     waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Hm? This Noctowl is holding a {COLOR GREEN}Noctowlite{COLOR DARK_GRAY}... it can {COLOR GREEN}Mega Evolve{COLOR DARK_GRAY}!"))
     closemessage
     release
     end

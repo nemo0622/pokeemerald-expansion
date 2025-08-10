@@ -390,6 +390,12 @@
 #define METATILE_Pacifidlog_SubmergedLogs_VerticalBottom       0x262
 #define METATILE_Pacifidlog_SubmergedLogs_VerticalTop          0x25A
 
+// gTileset_PalatiGym
+#define METATILE_PalatiGym_PalatiGym_TorchOff_1  0x223
+#define METATILE_PalatiGym_PalatiGym_TorchOff_2  0x224
+#define METATILE_PalatiGym_PalatiGym_TorchOn_1   0x221
+#define METATILE_PalatiGym_PalatiGym_TorchOn_2   0x222
+
 // gTileset_Petalburg
 #define METATILE_Petalburg_Door_BirchsLab   0x249
 #define METATILE_Petalburg_Door_Littleroot  0x248

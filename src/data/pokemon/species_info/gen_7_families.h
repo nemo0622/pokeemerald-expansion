@@ -1096,10 +1096,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 4,
         .weight = 44,
         .description = COMPOUND_STRING(
-            "They often gather near places frequented\n"
-            "by electric Pokémon in order to avoid being\n"
-            "attacked by bird Pokémon, though it\n"
-            "normally lives underground."),
+            "Grubbin's mandibles are quite powerful for\n" // new desc
+            "their size. They are used to burrow through\n"
+            "soft mud and cut into trees, allowing them\n"
+            "to feed on sap."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -1160,10 +1160,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 5,
         .weight = 105,
         .description = COMPOUND_STRING(
-            "From the food it digests, it generates\n"
-            "electricity, and it stores this energy in\n"
-            "its electric sac. On camping trips, people\n"
-            "are grateful to have one around."),
+            "It eats decaying plant matter and converts\n" // new desc
+            "it into electricity via complex chemical\n"
+            "processes. Some Trainers use Charjabug\n"
+            "to charge their phones on long hikes."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -1221,7 +1221,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Stag Beetle"),
         .height = 15,
         .weight = 450,
-        .description = gVikavoltPokedexText,
+        .description = gVikavoltPokedexText, // new desc
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,

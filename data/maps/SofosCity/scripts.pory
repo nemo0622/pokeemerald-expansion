@@ -1,6 +1,12 @@
 mapscripts SofosCity_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_SOFOS_CITY)
+        clearflag(FLAG_HIDE_SOFOS_ACROPOLIS_NPCS)
+
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
 
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)

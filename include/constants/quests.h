@@ -72,7 +72,12 @@
 #define QUEST_CALM_TWIN_MUSES                   54 // bring Box of Chocolate item to Twin Muses of Fresco Isles to calm them down
 #define QUEST_FIND_RELICANTH                    55 // Catch a Relicanth and show Pokédex entry to Battle Girl in Fresco Isles
 #define QUEST_BRING_BERRIES_TO_TYPE_NULL        56 // Bring 12 Sitrus Berries to Ex-Scientist in Fresco Isles to get Type: Null
-#define QUEST_COUNT     (QUEST_BRING_BERRIES_TO_TYPE_NULL + 1)
+#define QUEST_MOON_STONE_YOUNGSTER              57 // Give a Moon Stone to a Youngster in Kaptara Island East
+#define QUEST_SHOW_MAN_ARCHEN_FROM_PARTY        58 // Show Man in Palati City an Archen in your party
+#define QUEST_LEGEND_OF_KYOGRE                  59 // Find Kyogre & Beat Ice Admin
+#define QUEST_LEGEND_OF_GROUDON                 60 // Find Groudon & Beat Fire Admin
+#define QUEST_LEGEND_OF_RAYQUAZA                61 // Find Rayquaza & Beat Kalliope
+#define QUEST_COUNT     (QUEST_LEGEND_OF_RAYQUAZA + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

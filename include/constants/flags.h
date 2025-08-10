@@ -88,7 +88,7 @@
 #define FLAG_CAUGHT_ALL_MONS_MYRRINI_ISLAND     0x48 // University Student Route Check flag
 #define FLAG_CAUGHT_ALL_MONS_SEA_OF_VULCAI      0x49 // University Student Route Check flag
 #define FLAG_CAUGHT_ALL_MONS_FRESCO_ISLES       0x4A // University Student Route Check flag
-#define FLAG_UNUSED_0x04B    0x4B // Unused Flag
+#define FLAG_CAUGHT_ALL_MONS_PALATI_CITY        0x4B // University Student Route Check flag
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
@@ -560,8 +560,8 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_VULCAI_WATER_STONE       (FLAG_HIDDEN_ITEMS_START + 0x0F)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_VULCAI_EVIOLITE          (FLAG_HIDDEN_ITEMS_START + 0x10)
 #define FLAG_HIDDEN_ITEM_PENTEPETAL_FOSSIL                   (FLAG_HIDDEN_ITEMS_START + 0x11)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD         (FLAG_HIDDEN_ITEMS_START + 0x12)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13)
+#define FLAG_HIDDEN_ITEM_KAPTARA_NUGGET                      (FLAG_HIDDEN_ITEMS_START + 0x12)
+#define FLAG_HIDDEN_ITEM_KAPTARA_MOON_STONE                  (FLAG_HIDDEN_ITEMS_START + 0x13)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x14)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE           (FLAG_HIDDEN_ITEMS_START + 0x15)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP                (FLAG_HIDDEN_ITEMS_START + 0x16)
@@ -662,14 +662,14 @@
 #define FLAG_SPOKE_TO_FRESCO_ISLES_TAILOR       0x268 // Used by F.I. Tailor's explanation
 #define FLAG_GOT_STEEL_WING_FROM_RANIA          0x269 // Set after getting Steel Wing TM
 #define FLAG_GOT_SCALD_TM_FISHING_REWARD        0x26A // Makes Scald TM only obtainable once
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
+#define FLAG_PALATI_GYM_INTRODUCED              0x26B // Used in Palati Gym puzzle
+#define FLAG_CHIMERA_WEATHER_ACTIVE             0x26C // Set while Team Chimera controls the Legendary Dogs, triggering strong weather everywhere and stuff
+#define FLAG_DID_CHIMERA_EVENT_PALATI_CITY      0x26D // If the cutscene in Palati City / Sofos City's Temple has happened yet
+#define FLAG_HIDE_RHADINE_PALATI_CITY           0x26E // Hides before and after the Chimera event
+#define FLAG_HIDE_SOFOS_ACROPOLIS_NPCS          0x26F // Hide NPCs in the Sofos Acropolis during the Chimera cutscene
+#define FLAG_HIDE_ACROPOLIS_LEGENDARY_DOGS      0x270 // Hides Raikou, Entei, and Suicune in Acropolis Temple
+#define FLAG_HIDE_ACROPOLIS_LEGENDARY_BEASTS    0x271 // Hides Raging Bolt, Gouging Fire, and Walking Wake in Acropolis Temple
+#define FLAG_HIDE_ACROPOLIS_CHIMERA_MEMBERS     0x272 // Hides Kalliope and her Admins in Acropolis Temple
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
@@ -1107,9 +1107,9 @@
 #define FLAG_ITEM_VULCAI_SEA_RED_SHARD                              0x41F
 #define FLAG_ITEM_VULCAI_SEA_TM_SUNNY_DAY                           0x420
 #define FLAG_ITEM_VULCAI_SEA_RAZOR_CLAW                             0x421
-#define FLAG_ITEM_PETALBURG_WOODS_ETHER                             0x422
-#define FLAG_ITEM_MAGMA_HIDEOUT_3F_3R_ECAPE_ROPE                    0x423
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_1_ORANGE_MAIL                  0x424
+#define FLAG_ITEM_KAPTARA_ISLAND_AUSPICIOUS_ARMOR                   0x422
+#define FLAG_ITEM_KAPTARA_ISLAND_TM_SOLAR_BEAM                      0x423
+#define FLAG_ITEM_KAPTARA_ISLAND_MAX_REVIVE                         0x424
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL                  0x425
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0x426
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL                  0x427

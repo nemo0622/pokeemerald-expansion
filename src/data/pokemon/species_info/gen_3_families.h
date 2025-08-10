@@ -3161,10 +3161,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 5,
         .weight = 55,
         .description = COMPOUND_STRING(
-            "It makes its nest at the roots of a mighty\n"
-            "tree. Using its whiskerlike antennae, it\n"
-            "probes its surroundings in the\n"
-            "pitch-black darkness of soil."),
+            "Nincada are highly sensitive to sunlight.\n" // new desc
+            "They live most of their lives beneath\n"
+            "tree roots and underground. As they age,\n"
+            "they molt their exoskeleton and grow."),
         .pokemonScale = 405,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -3225,10 +3225,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 8,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "Because it darts about vigorously at high\n"
-            "speed, it is very difficult to see. Hearing\n"
-            "its distinctive cries for too long induces\n"
-            "a headache."),
+            "Philosophers and Naturalists in Ancient\n" // new desc
+            "Ilios wondered if Ninjask could turn\n"
+            "invisible. We now know that Ninjask can\n"
+            "fly faster than the naked eye can see."),
         .pokemonScale = 383,
         .pokemonOffset = -9,
         .trainerScale = 256,
@@ -3287,10 +3287,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 8,
         .weight = 12,
         .description = COMPOUND_STRING(
-            "A peculiar Pokémon that floats in air even\n"
-            "though its wings remain completely still.\n"
-            "The inside of its body is hollow and\n"
-            "utterly dark."),
+            "The inside of Shedinja is pitch black.\n" // new desc
+            "This Pokémon is poorly understood by\n"
+            "researchers, as it only materializes\n"
+            "following the evolution of Nincada."),
         .pokemonScale = 372,
         .pokemonOffset = -8,
         .trainerScale = 256,

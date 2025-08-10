@@ -5425,10 +5425,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 3,
         .weight = 54,
         .description = COMPOUND_STRING(
-            "A Paras has parasitic tochukaso\n"
-            "mushrooms growing on its back. They grow\n"
-            "by drawing nutrients from the host. They\n"
-            "are valued as a medicine for long life."),
+            "The mushrooms growing on Paras's back are\n" // new desc
+            "a rare variety, growing nowhere else in\n"
+            "nature. They are thought to have medicinal\n"
+            "value, but more research is needed."),
         .pokemonScale = 593,
         .pokemonOffset = 22,
         .trainerScale = 256,
@@ -5492,10 +5492,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 10,
         .weight = 295,
         .description = COMPOUND_STRING(
-            "Parasect are known to infest the roots of\n"
-            "large trees en masse and drain nutrients.\n"
-            "When an infested tree dies, they move\n"
-            "onto another tree all at once."),
+            "Parasect has a codependent relationship\n" // new desc
+            "with its mushroom, exchanging nutrients\n"
+            "and energy from the body to the shroom.\n"
+            "The body is thought to be a mere husk."),
         .pokemonScale = 307,
         .pokemonOffset = 8,
         .trainerScale = 256,

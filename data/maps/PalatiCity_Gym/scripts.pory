@@ -1,0 +1,314 @@
+mapscripts PalatiCity_Gym_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflashlevel(1)
+    }
+}
+
+script PalatiGym_EventScript_Torch1
+{
+    lock
+    if(flag(FLAG_TEMP_5)) // if torch is on
+    {
+        msgbox(format("The torch is glowing brightly, pulsing with heat."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("It's one of Rhadine's Torches!\p You took an Ember from the torch. To face Rhadine, Embers from {COLOR GREEN}all 3 torches{COLOR DARK_GRAY} must be taken."))
+        closemessage
+        setflag(FLAG_TEMP_5)
+    }
+    release
+    end
+}
+
+script PalatiGym_EventScript_Torch2
+{
+    lock
+    if(flag(FLAG_TEMP_6)) // if torch is on
+    {
+        msgbox(format("The torch is glowing brightly, pulsing with heat."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("It's one of Rhadine's Torches!\p You took an Ember from the torch. To face Rhadine, Embers from {COLOR GREEN}all 3 torches{COLOR DARK_GRAY} must be taken."))
+        closemessage
+        setflag(FLAG_TEMP_6)
+    }
+    release
+    end
+}
+
+script PalatiGym_EventScript_Torch3
+{
+    lock
+    if(flag(FLAG_TEMP_7)) // if torch is on
+    {
+        msgbox(format("The torch is glowing brightly, pulsing with heat."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("It's one of Rhadine's Torches!\p You took an Ember from the torch. To face Rhadine, Embers from {COLOR GREEN}all 3 torches{COLOR DARK_GRAY} must be taken."))
+        closemessage
+        setflag(FLAG_TEMP_7)
+    }
+    release
+    end
+}
+
+script PalatiGym_EventScript_GymMan
+{
+    lock
+    faceplayer
+    speakername("Gym Guide")
+    if(flag(FLAG_BADGE07_GET))
+    {
+        msgbox(format("Incredible! You're a rising star! Keep it up, future Champ!"))
+    }
+    else
+    {
+        msgbox(format("Welcome to the Palati City Gym!\p Rhadine, the Gym Leader, uses {COLOR GREEN}Fire and Flying-type{COLOR DARK_GRAY} Pokémon. She only accepts challengers who bring her {COLOR GREEN}fresh Embers from all 3 torches around the Gym{COLOR DARK_GRAY}. If you leave the Gym, the Embers will {COLOR RED}burn out{COLOR DARK_GRAY}, and you'll have to collect them again."))
+    }
+    closemessage
+    release
+    end
+}
+
+script PalatiGym_EventScript_GymManWarnsPlayer
+{
+    lock
+    faceplayer
+    emote(1, EMOTE_EXCLAM)
+    applymovement(1, Common_Movement_FaceLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Gym Guide")
+    msgbox(format("Hold up! You need to know how this Gym works first!\p {COLOR GREEN}Rhadine{COLOR DARK_GRAY} only accepts Trainers who can follow their hearts through the maze. To challenge her, you must find {COLOR GREEN}3 torches{COLOR DARK_GRAY} around the Gym and {COLOR GREEN}collect Embers{COLOR DARK_GRAY} from them.\p Be careful though! If you leave the Gym, your Embers will {COLOR RED}burn out{COLOR DARK_GRAY}, and you'll have to collect them all again. Good luck!"))
+    closemessage
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(0)
+    setflag(FLAG_PALATI_GYM_INTRODUCED)
+    releaseall
+    end
+}
+
+script PalatiCity_Gym_EventScript_Trainer_PalatiGym_Mukhin
+{
+    trainerbattle_single(TRAINER_PALATIGYM_MUKHIN, PalatiCity_Gym_Text_Trainer_PalatiGym_MukhinIntro, PalatiCity_Gym_Text_Trainer_PalatiGym_MukhinDefeat)
+    speakername("Mukhin")
+    msgbox(format("Supposedly, there was once a labrynth on Kaptara Island which was home to a horrifying, mutated Tauros. But that's all a myth."))
+    closemessage
+    release
+    end
+}
+text PalatiCity_Gym_Text_Trainer_PalatiGym_MukhinIntro
+{
+    format("They say this Gym is based on a legendary labrynth. I'm legendarily lost!")
+}
+text PalatiCity_Gym_Text_Trainer_PalatiGym_MukhinDefeat
+{
+    format("Uh oh!")
+}
+
+script PalatiCity_Gym_EventScript_Trainer_PalatiGym_Raimund
+{
+    trainerbattle_single(TRAINER_PALATIGYM_RAIMUND, PalatiCity_Gym_Text_Trainer_PalatiGym_RaimundIntro, PalatiCity_Gym_Text_Trainer_PalatiGym_RaimundDefeat)
+    speakername("Raimund")
+    msgbox(format("There are arrows on the ground to mark passage entrances and exits. That helps me get around!"))
+    closemessage
+    release
+    end
+}
+text PalatiCity_Gym_Text_Trainer_PalatiGym_RaimundIntro
+{
+    format("I found this nice little corner to sit in. I'll wait here until someone shows me the way out!")
+}
+text PalatiCity_Gym_Text_Trainer_PalatiGym_RaimundDefeat
+{
+    format("Ah, I remember now!")
+}
+
+script PalatiCity_Gym_EventScript_Trainer_PalatiGym_Melina
+{
+    trainerbattle_single(TRAINER_PALATIGYM_MELINA, PalatiCity_Gym_Text_Trainer_PalatiGym_MelinaIntro, PalatiCity_Gym_Text_Trainer_PalatiGym_MelinaDefeat)
+    speakername("Melina")
+    msgbox(format("If you leave the Gym, you'll need to revisit each of Rhadine's Torches and collect Embers again."))
+    closemessage
+    release
+    end
+}
+text PalatiCity_Gym_Text_Trainer_PalatiGym_MelinaIntro
+{
+    format("Oh, you found one of Rhadine's Torches, too!")
+}
+text PalatiCity_Gym_Text_Trainer_PalatiGym_MelinaDefeat
+{
+    format("My Ember! It burnt out!")
+}
+
+script PalatiCity_Gym_EventScript_Trainer_PalatiGym_Julie
+{
+    trainerbattle_single(TRAINER_PALATIGYM_JULIE, PalatiCity_Gym_Text_Trainer_PalatiGym_JulieIntro, PalatiCity_Gym_Text_Trainer_PalatiGym_JulieDefeat)
+    speakername("Julie")
+    msgbox(format("Rhadine only challenges Trainers who can collect Embers from all around the Gym. It can be quite the challenge!"))
+    closemessage
+    release
+    end
+}
+text PalatiCity_Gym_Text_Trainer_PalatiGym_JulieIntro
+{
+    format("This is the end of this side of the maze. At least another torch is here!")
+}
+text PalatiCity_Gym_Text_Trainer_PalatiGym_JulieDefeat
+{
+    format("Where do I go from here?")
+}
+
+script PalatiCity_Gym_EventScript_Trainer_PalatiGym_Colette
+{
+    trainerbattle_single(TRAINER_PALATIGYM_COLETTE, PalatiCity_Gym_Text_Trainer_PalatiGym_ColetteIntro, PalatiCity_Gym_Text_Trainer_PalatiGym_ColetteDefeat)
+    speakername("Colette")
+    msgbox(format("Rhadine waits for Trainers at the deepest part of the maze. She's super tough, so you'd better be ready!"))
+    closemessage
+    release
+    end
+}
+text PalatiCity_Gym_Text_Trainer_PalatiGym_ColetteIntro
+{
+    format("You'll need this torch to battle Rhadine. Show me you deserve it!")
+}
+text PalatiCity_Gym_Text_Trainer_PalatiGym_ColetteDefeat
+{
+    format("Fine, fine, you can take an Ember.")
+}
+
+// -----------------------------------------------------------------------------------------------------
+
+script PalatiCity_Gym_EventScript_Toucannon
+{
+    lock
+    faceplayer
+    speakername("Toucannon")
+    playmoncry(SPECIES_TOUCANNON, CRY_MODE_NORMAL)
+    msgbox("Kyaah!")
+    waitmoncry
+    closemessage
+    msgbox(format("Rhadine's Toucannon is resting on a nest, and Pikipek chirps are coming from behind it. Is a whole family of birds living here?"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_Gym_EventScript_Rhadine
+{
+    lock
+    faceplayer
+
+    if(!flag(FLAG_TEMP_5) || !flag(FLAG_TEMP_6) || !flag(FLAG_TEMP_7))
+    {
+        speakername("Rhadine")
+        msgbox(format("Welcome to the Palati City Gym! I'm Rhadine, the Gym Leader.\p Before you challenge me, you must collect {COLOR GREEN}Embers from the 3 torches around the Gym{COLOR DARK_GRAY}. That'll prove your resolve!"))
+        closemessage
+        release
+        end
+    }
+
+    if(!flag(FLAG_HARD_MODE))
+    {
+        goto(PalatiCity_Gym_EventScript_Rhadine_NormalDifficulty)
+    }
+    else
+    {
+        goto(PalatiCity_Gym_EventScript_Rhadine_HardDifficulty)
+    }
+    release
+    end
+}
+
+script PalatiCity_Gym_EventScript_Rhadine_NormalDifficulty // called when on normal difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_RHADINE, PalatiCity_Gym_Text_RhadineIntro, PalatiCity_Gym_Text_RhadineDefeat, PalatiCity_Gym_EventScript_Rhadine_DefeatedScript, NO_MUSIC)
+    speakername("Rhadine")
+    msgbox(format("Kehehe, your flames burn just as hot as mine!"))
+    closemessage
+    release
+    end
+}
+script PalatiCity_Gym_EventScript_Rhadine_HardDifficulty // called when on hard difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_RHADINE_HARD, PalatiCity_Gym_Text_RhadineIntro, PalatiCity_Gym_Text_RhadineDefeat, PalatiCity_Gym_EventScript_Rhadine_DefeatedScript, NO_MUSIC)
+    speakername("Rhadine")
+    msgbox(format("Kehehe, your flames burn just as hot as mine!"))
+    closemessage
+    release
+    end
+}
+text PalatiCity_Gym_Text_RhadineIntro
+{
+    format("Yes, I can feel the heat radiating from you. You've collected Embers from all 3 torches and completed the labrynth!\p I'm Rhadine, Muse of Passion and Freedom. I only accept challenges from the most driven Trainers, and here you are, shining before me! Show me the love you share with your Pokémon!")
+}
+text PalatiCity_Gym_Text_RhadineDefeat
+{
+    format("Beautiful! I'd expect nothing less from you!")
+}
+// Script called when you defeat the gym leader!
+script PalatiCity_Gym_EventScript_Rhadine_DefeatedScript
+{
+    setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
+    message(format("{PLAYER} received the Passion Badge from Rhadine."))
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+
+    // Set gym completion flags
+    setflag(FLAG_BADGE07_GET)
+    // Set all trainers in Gym as defeated
+    settrainerflag(TRAINER_PALATIGYM_MUKHIN)
+    settrainerflag(TRAINER_PALATIGYM_RAIMUND)
+    settrainerflag(TRAINER_PALATIGYM_MELINA)
+    settrainerflag(TRAINER_PALATIGYM_JULIE)
+    settrainerflag(TRAINER_PALATIGYM_COLETTE)
+
+    // Explain badge
+    speakername("Rhadine")
+    msgbox(format("Kehehe, even in here, the Passion Badge shines like the sun! With this achievement, you'll be able to use the {COLOR GREEN}HM Fly{COLOR DARK_GRAY} to cross the region in an instant.\p Before you go, please, take this!"))
+    closemessage
+
+    // Give TM reward and explain, plus end dialogue
+    giveitem(ITEM_TM_FLAMETHROWER)
+    speakername("Rhadine")
+    msgbox(format("That TM contains the move {COLOR GREEN}Flamethrower{COLOR DARK_GRAY}! It's one of the most reliable, powerful Fire-type moves a Pokémon can learn.\p Normally, I'd send Trainers on their way to the 8th Gym, but the Gym Leader has gone missing. No, that's not quite right. Euterpe told me what happened on {COLOR GREEN}Myrrini Island{COLOR DARK_GRAY}. {COLOR RED}Kalliope{COLOR DARK_GRAY}, the 8th Gym Leader, is the {COLOR RED}leader of Team Chimera{COLOR DARK_GRAY}.\p To tell the truth, I've been hearing about you from the other Gym Leaders, {PLAYER}."))
+    closemessage
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM)
+    speakername("Rhadine")
+    msgbox(format("Ehehe, come now, it's not that surprising! You've been sweeping through the Gyms and teaching Team Chimera lessons as you go. How could I NOT hear about you?\p Us Gym Leaders have been planning a way to {COLOR GREEN}strike back against Team Chimera{COLOR DARK_GRAY}. We have to stop them before their plans come to fruition, and we could use your help! We'll surround them at Areios Hideo-"))
+    closemessage
+    delay(5)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    applymovement(3, Common_Movement_ExclamationMark)
+    msgbox(format("BA-BOOOM!!!"))
+    waitmovement(0)
+    closemessage
+    delay(5)
+    speakername("Rhadine")
+    msgbox(format("Was that... {PLAYER}, that was a thunderclap! But that can only mean...\p Quick! Come with me!"))
+    closemessage
+
+    // complete gym quest and begin next one
+    delay(20)
+    completequest(QUEST_GYM_7)
+    setflag(FLAG_CHIMERA_WEATHER_ACTIVE)
+    clearflag(FLAG_HIDE_RHADINE_PALATI_CITY)
+    clearflag(FLAG_HIDE_ACROPOLIS_LEGENDARY_DOGS)
+    setflag(FLAG_HIDE_SOFOS_ACROPOLIS_NPCS)
+    setflag(FLAG_HIDE_ACROPOLIS_LEGENDARY_BEASTS)
+    clearflag(FLAG_HIDE_ACROPOLIS_CHIMERA_MEMBERS)
+    setflag(FLAG_HIDE_MAP_NAME_POPUP)
+
+    warp(MAP_PALATI_CITY, 41, 37)
+    waitstate
+
+    release
+    end
+}

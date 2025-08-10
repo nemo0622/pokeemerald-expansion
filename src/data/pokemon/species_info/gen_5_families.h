@@ -6624,10 +6624,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 5,
         .weight = 55,
         .description = COMPOUND_STRING(
-            "These bird Pokémon are excellent divers.\n"
-            "They are better at swimming than flying,\n"
-            "and they happily eat their favorite food,\n"
-            "peat moss, as they dive underwater."),
+            "It can float for almost its entire life\n" // new desc
+            "on water, bobbing up and down with the\n"
+            "waves. It plucks bits of vegetation while\n"
+            "diving."),
         .pokemonScale = 432,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -6687,10 +6687,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 13,
         .weight = 242,
         .description = COMPOUND_STRING(
-            "Despite their elegant appearance, they\n"
-            "can flap their wings strongly and fly for\n"
-            "thousands of miles. The one in the middle\n"
-            "is the leader of the flock."),
+            "Their powerful wings carry them across\n" // new desc
+            "oceans with ease. Swanna are common sights\n"
+            "in ponds across the Ilios Region, where\n"
+            "young Trainers feed them food morsels."),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,

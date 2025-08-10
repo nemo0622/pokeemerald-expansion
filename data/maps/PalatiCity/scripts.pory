@@ -1,5 +1,437 @@
 mapscripts PalatiCity_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_PALATI_CITY)
+
+        if(!flag(FLAG_CHIMERA_WEATHER_ACTIVE)) // skips running script in ON_FRAME_TABLE, so the map label will show normally!
+        {
+            setvar(VAR_TEMP_1, 1)
+        }
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(31, ENCOUNTER_LAND)
+        setobjectaswildencounter(32, ENCOUNTER_LAND)
+        setobjectaswildencounter(33, ENCOUNTER_LAND)
+        setobjectaswildencounter(34, ENCOUNTER_LAND)
     }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: PalatiCity_EventScript_TryChimeraEvent
+    ]
+}
+
+script PalatiCity_EventScript_TryChimeraEvent
+{
+    setvar(VAR_TEMP_1, 1)
+    setweather(WEATHER_RAIN_THUNDERSTORM) // no matter what, by getting here, Chimera weather is active! uh oh!
+    doweather
+    if(flag(FLAG_BADGE07_GET) && !flag(FLAG_DID_CHIMERA_EVENT_PALATI_CITY))
+    {
+        goto(PalatiCity_EventScript_ChimeraEvent)
+    }
+    releaseall
+    end
+}
+
+script PalatiCity_EventScript_ChimeraEvent
+{
+    setvar(VAR_TEMP_1, 1)
+
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    delay(10)
+    applymovement(40, Common_Movement_WalkDown)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(10)
+    speakername("Rhadine")
+    msgbox(format("It hasn't stormed this badly in generations. Did Team Chimera finally do it?\p {PLAYER}, you've been fighting Team Chimera across the region, right? Then you know better than anyone how desperately they want control over land, sea, and sky. Us Gym Leaders discovered their plan to summon a trio of Legendary Pokémon: {COLOR GREEN}Raikou, Entei, and Suicune{COLOR DARK_GRAY}. These would give Team Chimera absolute control of the region, to do with as they please."))
+    closemessage
+    delay(10)
+
+    // rania comes up
+    speakername("???")
+    msgbox(format("{PLAYER}! Thank the Fates, you're here!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_QUESTION)
+    applymovement(41, PalatiCity_Movement_RaniaApproachesPlayer)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Piraeus said you'd be here! I sailed with him from Sofos City as fast as I could, but it looks like the weather beat me.\p Niko and I were in Sofos City to study the Acropolis Temple, when Team Chimera burst in and took over! I managed to slip out, but {COLOR RED}one of the Admins captured him{COLOR DARK_GRAY}... If we're going to fight back, I need your help. Please, come to Sofos City with me!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Rhadine")
+    msgbox(format("I'll come too! If the rumors are true, then Team Chimera might have already awakened Legendary Pokémon. Come on!"))
+    closemessage
+    
+    warp(MAP_SOFOS_CITY_ACROPOLIS, 5, 10)
+    waitstate
+    release
+    end
+
+    // Then warp to the Sofos City Acropolis Temple, where all NPCs will be hidden and Kalliope will be standing
+    // with her Admins and the Legendary Beasts. Niko will also be there, held captive by the Admins.
+    // Using the Ancient Machine, Kalliope will transform them into
+    // Gouging Fire, Raging Bolt, and Walking Wake. She will then send the Admins across the Region to find Kyogre (Sunken Temple)
+    // and Groudon (Satyr's Lair), while she goes to the Tower of Dioxippus to conquer Rayquaza.
+    // Her goal is stated to be complete control over the Land, the Sea, and the Sky, so to do that, she needs
+    // to destroy any competition (the Weather Trio).
+    // Team Chimera defeats Rhadine in a flash and escapes, leaving the Player with Rania, Niko, and Rhadine.
+    // Rhadine returns to Palati City to protect her island, and Rania and Niko return to Acrisia City to keep
+    // the University safe, expecting it to be a target for Team Chimera (ooo anti-education-conservative subtext here!)
+    // This leaves the Player to find and fight the Admins before unlocking the Tower of Dioxippus, where a battle with
+    // Kalliope takes place.
+}
+
+movement PalatiCity_Movement_RaniaApproachesPlayer
+{
+    walk_right * 8
+    walk_up
+    face_up
+    step_end
+}
+
+script PalatiCity_EventScript_ArtistPlayingChess
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("I'm studying the game board to think of strategies. It's really an art form!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_CyclingTriathleteF
+{
+    lock
+    faceplayer
+    speakername("Cyclist")
+    msgbox(format("Palati City has some of the smoothest roads in the region! That's why I come here to ride."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_BlackBeltNearStatue
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    msgbox(format("These statues have been standing for thousands of years. I think they were great warriors from their time... I wonder if there will be statues made of me!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_OfficerRunningAround
+{
+    lock
+    faceplayer
+    speakername("Officer")
+    msgbox(format("My Boltund is too fast for me! I shouldn't have had that extra donut this morning... Urrp!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_Boltund
+{
+    lock
+    faceplayer
+    speakername("Boltund")
+    playmoncry(SPECIES_BOLTUND, CRY_MODE_NORMAL)
+    msgbox("Bwuf bwuf!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_ManLookingAtArchen
+{
+    lock
+    faceplayer
+    speakername("Archen Fan")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_MAN_ARCHEN_FROM_PARTY)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("I'm a lot happier now that I've seen your Archen up close. I'd love to catch that one on top of the Gym someday, though."))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_MAN_ARCHEN_FROM_PARTY)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Hey! Do you see that Archen up there? I'd love to learn more about it, but I can't chase any down..."))
+        closemessage
+        delay(30)
+        emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+        speakername("Archen Fan")
+        msgbox(format("Wait, that's a Rotom Phone! And those are Poké balls on your belt! I bet you can help me.\p {COLOR GREEN}Catch an Archen{COLOR DARK_GRAY} and show me from your {COLOR GREEN}Party{COLOR DARK_GRAY} so I can see one up-close. I'll give you a little something as thanks!"))
+        closemessage
+        delay(20)
+        startquest(QUEST_SHOW_MAN_ARCHEN_FROM_PARTY)
+    }
+    else
+    {
+        msgbox(format("I'm still chasing down Archens in the wild, but it's not going well. Do you happen to have one?"))
+        closemessage
+
+        checkforspecieslocal(SPECIES_ARCHEN, OPEN_PARTY_SCREEN)
+        delay(30)
+        if(var(VAR_RESULT) != SPECIES_ARCHEN)
+        {
+            speakername("Archen Fan")
+            msgbox(format("Doesn't look like you've had any luck catching an Archen, either.\p Show me an {COLOR GREEN}Archen from your Party{COLOR DARK_GRAY} if you can catch one. I'd love to see one up-close."))
+            closemessage
+        }
+        else
+        {
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Archen Fan")
+            msgbox(format("Ehehe, look at that! Wow, it's so cool...\p Thanks for showing me. One day, I know I'll catch one for myself! Here's something for your help."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_NEST_BALL, 10)
+            closemessage
+            delay(20)
+            completequest(QUEST_SHOW_MAN_ARCHEN_FROM_PARTY)
+        }
+    }
+    release
+    end
+}
+
+script PalatiCity_EventScript_GirlLosingChess
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("This is unreal! My Oranguru is kicking my butt! I knew they were smart, but this is wild..."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_Oranguru
+{
+    lock
+    faceplayer
+    speakername("Oranguru")
+    playmoncry(SPECIES_ORANGURU, CRY_MODE_NORMAL)
+    msgbox("Mmm... Mhmhm!")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Oranguru has a grin on its face... It knows it's winning!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_LittleGirl
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    msgbox(format("Palati City is all covered in stone, but look! Just outside the city, all these plants are growing, and Pokémon are playing!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_Camper
+{
+    lock
+    faceplayer
+    speakername("Camper")
+    msgbox(format("All Pokémon have different strengths and weaknesses. I heard the Gym Leader that lives here uses Fire and Flying-type Pokémon. I bet Rock-type Pokémon would totally win against that!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_CollectorWithArmorouge
+{
+    lock
+    faceplayer
+    speakername("Collector")
+    msgbox(format("I found some ancient armor pieces in the areas around Palati City, and they made my Charcadet evolve. How fascinating!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_Armorouge
+{
+    lock
+    faceplayer
+    speakername("Armarouge")
+    playmoncry(SPECIES_ARMAROUGE, CRY_MODE_NORMAL)
+    msgbox("Hyeh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_BeautyInRoad
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("Every area in the Ilios Region has its own fashion. Personally, I think Palati City fashion is the best of all!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_PsychicM
+{
+    lock
+    faceplayer
+    speakername("Psychic")
+    msgbox(format("My Pokémon help me see visions of the past. Palati City has the longest history of any city in the Ilios Region."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_PokeFan
+{
+    lock
+    faceplayer
+    speakername("Pokéfan")
+    msgbox(format("I ride around on the back of my Cyclizar! It can't evolve, but I've heard it can change form somehow..."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_Cyclizar
+{
+    lock
+    faceplayer
+    speakername("Cyclizar")
+    playmoncry(SPECIES_CYCLIZAR, CRY_MODE_NORMAL)
+    msgbox("Kroom room!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_OldMan
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("There are lots of foodstuffs free for the taking around the city. We have plenty of food to go around here, so it's a good use of resources."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_Youngster
+{
+    lock
+    faceplayer
+    speakername("Youngster")
+    msgbox(format("I hear there are strong Trainers on Kaptara Island. If you're going to challenge the Gym, you should make sure you can beat them."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_WorkerMan
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("The palace-like buildings of Palati City have stood for thousands of years. When we make repairs, we have to be careful to preserve the original architecture."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("I used to play this game when I was a girl. Now, most people go to Sofos City's Arcade to play modern games."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_PunkRocker
+{
+    lock
+    faceplayer
+    speakername("Punk Rocker")
+    msgbox(format("The wild Timburr and Gurdurr found around the city are descended from the first Pokémon, who helped build the palaces thousands of years ago. I'm more of a music girl, but I can appreciate history!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_NinjaBoy
+{
+    lock
+    faceplayer
+    speakername("Ninja Boy")
+    msgbox(format("That old sailor lets me play with his Vaporeon when he sails here!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_WomanOnBeach
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("Palati City doesn't have much of a beach to speak of. Over the centuries, the beaches eroded away to almost nothing.\p The island still stands, though. My professor said it was the first place in Ilios to develop civilization!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_Sign_GymSign
+{
+    lock
+    msgbox(format("Gym Leader: Rhadine\n Muse of Fiery Love and Beauty"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Palati City\n The Birthplace of Ilian Civilization\p {LEFT_ARROW} Kaptara Island - Krikri Gorge\n Kaptara Island - Octillery Forest {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
 }

@@ -143,7 +143,7 @@ $(OBJEVENTGFXDIR)/people/team_chimera/chimera_member_f.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/team_chimera/chimera_member_m.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/team_chimera/mara.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/team_chimera/kalliope.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 

@@ -121,10 +121,10 @@ const u8 gGumshoosPokedexText[] = _(
     "by nightfall.");
 
 const u8 gVikavoltPokedexText[] = _(
-    "It concentrates electrical energy within\n"
-    "its large jaws and uses it to zap its foes.\n"
-    "It overwhelms bird Pokémon with shocking\n"
-    "beams of electrical energy.");
+    "In order to defend against bird Pokémon,\n"
+    "Vikavolt has learned to harness the power\n"
+    "of electricity. Only the most brave, or\n"
+    "most foolish, Pokémon dare to attack.");
 
 const u8 gRibombeePokedexText[] = _(
     "Ribombee rolls up pollen into puffs.\n"

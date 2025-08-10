@@ -1,7 +1,7 @@
 MyrriniIsland_MapScripts::
 # 2 "data/maps/MyrriniIsland/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, MyrriniIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION
-# 29 "data/maps/MyrriniIsland/scripts.pory"
+# 34 "data/maps/MyrriniIsland/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, MyrriniIsland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
@@ -12,36 +12,39 @@ MyrriniIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	goto_if_set FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND, MyrriniIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 MyrriniIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 10 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1
-# 11 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2
-# 12 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3
-# 13 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4
-# 14 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5
+	goto_if_set FLAG_CHIMERA_WEATHER_ACTIVE, MyrriniIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+MyrriniIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 # 15 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1
 # 16 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2
 # 17 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3
 # 18 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4
 # 19 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5
 # 20 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6
 # 21 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7
 # 22 "data/maps/MyrriniIsland/scripts.pory"
-	setobjectaswildencounter 46, ENCOUNTER_LAND
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8
 # 23 "data/maps/MyrriniIsland/scripts.pory"
-	setobjectaswildencounter 47, ENCOUNTER_LAND
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9
 # 24 "data/maps/MyrriniIsland/scripts.pory"
-	setobjectaswildencounter 48, ENCOUNTER_LAND
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10
+# 25 "data/maps/MyrriniIsland/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11
 # 26 "data/maps/MyrriniIsland/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12
+# 27 "data/maps/MyrriniIsland/scripts.pory"
+	setobjectaswildencounter 46, ENCOUNTER_LAND
+# 28 "data/maps/MyrriniIsland/scripts.pory"
+	setobjectaswildencounter 47, ENCOUNTER_LAND
+# 29 "data/maps/MyrriniIsland/scripts.pory"
+	setobjectaswildencounter 48, ENCOUNTER_LAND
+# 31 "data/maps/MyrriniIsland/scripts.pory"
 	call Route117_OnTransition
 	return
 
@@ -50,1146 +53,1132 @@ MyrriniIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 	setvar VAR_TEMP_1, 1
 	goto MyrriniIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
+MyrriniIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
+# 12 "data/maps/MyrriniIsland/scripts.pory"
+	setweather WEATHER_ABNORMAL
+	goto MyrriniIsland_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
+
 MyrriniIsland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 30 "data/maps/MyrriniIsland/scripts.pory"
+# 35 "data/maps/MyrriniIsland/scripts.pory"
 	map_script_2 VAR_TEMP_1, 0, MyrriniIsland_EventScript_TryChimeraEvent
 	.2byte 0
 
 
 MyrriniIsland_EventScript_TryChimeraEvent::
-# 36 "data/maps/MyrriniIsland/scripts.pory"
+# 41 "data/maps/MyrriniIsland/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 37 "data/maps/MyrriniIsland/scripts.pory"
+# 42 "data/maps/MyrriniIsland/scripts.pory"
 	goto_if_set FLAG_BADGE05_GET, MyrriniIsland_EventScript_TryChimeraEvent_3
 MyrriniIsland_EventScript_TryChimeraEvent_1:
-# 41 "data/maps/MyrriniIsland/scripts.pory"
+# 46 "data/maps/MyrriniIsland/scripts.pory"
 	releaseall
 	end
 
 MyrriniIsland_EventScript_TryChimeraEvent_2:
-# 39 "data/maps/MyrriniIsland/scripts.pory"
+# 44 "data/maps/MyrriniIsland/scripts.pory"
 	goto MyrriniIsland_EventScript_ChimeraEvent
 	goto MyrriniIsland_EventScript_TryChimeraEvent_1
 
 MyrriniIsland_EventScript_TryChimeraEvent_3:
-# 37 "data/maps/MyrriniIsland/scripts.pory"
+# 42 "data/maps/MyrriniIsland/scripts.pory"
 	goto_if_unset FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND, MyrriniIsland_EventScript_TryChimeraEvent_2
 	goto MyrriniIsland_EventScript_TryChimeraEvent_1
 
 
 MyrriniIsland_EventScript_DirectionSign::
-# 47 "data/maps/MyrriniIsland/scripts.pory"
+# 52 "data/maps/MyrriniIsland/scripts.pory"
 	lock
-# 48 "data/maps/MyrriniIsland/scripts.pory"
+# 53 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_EventScript_DirectionSign_Text_0
-# 49 "data/maps/MyrriniIsland/scripts.pory"
+# 54 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 50 "data/maps/MyrriniIsland/scripts.pory"
+# 55 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_Sign_GymSign::
-# 56 "data/maps/MyrriniIsland/scripts.pory"
+# 61 "data/maps/MyrriniIsland/scripts.pory"
 	lock
-# 57 "data/maps/MyrriniIsland/scripts.pory"
+# 62 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_Sign_GymSign_Text_0
-# 58 "data/maps/MyrriniIsland/scripts.pory"
+# 63 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 59 "data/maps/MyrriniIsland/scripts.pory"
+# 64 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_BlackBelt::
-# 65 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 66 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 67 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_BlackBelt_Text_0
-# 68 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_BlackBelt_Text_1
-# 69 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 70 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 71 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 72 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_BlackBelt_Text_0
+# 73 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_BlackBelt_Text_1
+# 74 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 75 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_PsychicM::
-# 76 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 77 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 78 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_PsychicM_Text_0
-# 79 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_PsychicM_Text_1
-# 80 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 81 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 82 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 83 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_PsychicM_Text_0
+# 84 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_PsychicM_Text_1
+# 85 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 86 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Girl::
-# 87 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 88 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 89 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Girl_Text_0
-# 90 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Girl_Text_1
-# 91 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 92 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 93 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 94 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Girl_Text_0
+# 95 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Girl_Text_1
+# 96 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 97 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_OldWoman::
-# 98 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 99 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 100 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_OldWoman_Text_0
-# 101 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_OldWoman_Text_1
-# 102 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 103 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 104 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 105 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_OldWoman_Text_0
+# 106 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_OldWoman_Text_1
+# 107 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 108 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Beauty::
-# 109 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 110 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 111 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Beauty_Text_0
-# 112 "data/maps/MyrriniIsland/scripts.pory"
-	message MyrriniIsland_EventScript_Beauty_Text_1
-# 113 "data/maps/MyrriniIsland/scripts.pory"
-	waitmessage
 # 114 "data/maps/MyrriniIsland/scripts.pory"
-	pokemart NectarMart
+	lock
 # 115 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	faceplayer
 # 116 "data/maps/MyrriniIsland/scripts.pory"
-	delay 5
-# 117 "data/maps/MyrriniIsland/scripts.pory"
 	speakername MyrriniIsland_EventScript_Beauty_Text_0
+# 117 "data/maps/MyrriniIsland/scripts.pory"
+	message MyrriniIsland_EventScript_Beauty_Text_1
 # 118 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Beauty_Text_2
+	waitmessage
 # 119 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	pokemart NectarMart
 # 120 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 121 "data/maps/MyrriniIsland/scripts.pory"
+	delay 5
+# 122 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Beauty_Text_0
+# 123 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Beauty_Text_2
+# 124 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 125 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 124 "data/maps/MyrriniIsland/scripts.pory"
-NectarMart:
-# 126 "data/maps/MyrriniIsland/scripts.pory"
-	.2byte ITEM_RED_NECTAR
-# 127 "data/maps/MyrriniIsland/scripts.pory"
-	.2byte ITEM_YELLOW_NECTAR
-# 128 "data/maps/MyrriniIsland/scripts.pory"
-	.2byte ITEM_PINK_NECTAR
 # 129 "data/maps/MyrriniIsland/scripts.pory"
+NectarMart:
+# 131 "data/maps/MyrriniIsland/scripts.pory"
+	.2byte ITEM_RED_NECTAR
+# 132 "data/maps/MyrriniIsland/scripts.pory"
+	.2byte ITEM_YELLOW_NECTAR
+# 133 "data/maps/MyrriniIsland/scripts.pory"
+	.2byte ITEM_PINK_NECTAR
+# 134 "data/maps/MyrriniIsland/scripts.pory"
 	.2byte ITEM_PURPLE_NECTAR
 	.2byte ITEM_NONE
 
 MyrriniIsland_EventScript_Ribombee::
-# 134 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 135 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 136 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Ribombee_Text_0
-# 137 "data/maps/MyrriniIsland/scripts.pory"
-	playmoncry SPECIES_RIBOMBEE, CRY_MODE_NORMAL
-# 138 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Ribombee_Text_1
 # 139 "data/maps/MyrriniIsland/scripts.pory"
-	waitmoncry
+	lock
 # 140 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	faceplayer
 # 141 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Ribombee_Text_0
+# 142 "data/maps/MyrriniIsland/scripts.pory"
+	playmoncry SPECIES_RIBOMBEE, CRY_MODE_NORMAL
+# 143 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Ribombee_Text_1
+# 144 "data/maps/MyrriniIsland/scripts.pory"
+	waitmoncry
+# 145 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 146 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Camper::
-# 147 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 148 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 149 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Camper_Text_0
 # 152 "data/maps/MyrriniIsland/scripts.pory"
-	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_MYRRINI_ALLERGIES
+	lock
 # 153 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 154 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Camper_Text_0
+# 157 "data/maps/MyrriniIsland/scripts.pory"
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_MYRRINI_ALLERGIES
+# 158 "data/maps/MyrriniIsland/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MyrriniIsland_EventScript_Camper_2
-# 162 "data/maps/MyrriniIsland/scripts.pory"
+# 167 "data/maps/MyrriniIsland/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_MYRRINI_ALLERGIES
-# 163 "data/maps/MyrriniIsland/scripts.pory"
+# 168 "data/maps/MyrriniIsland/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MyrriniIsland_EventScript_Camper_5
-# 173 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Camper_Text_3
-# 174 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
-# 176 "data/maps/MyrriniIsland/scripts.pory"
-	checkitem ITEM_FULL_HEAL
-# 177 "data/maps/MyrriniIsland/scripts.pory"
-	delay 30
 # 178 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Camper_Text_3
+# 179 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 181 "data/maps/MyrriniIsland/scripts.pory"
+	checkitem ITEM_FULL_HEAL
+# 182 "data/maps/MyrriniIsland/scripts.pory"
+	delay 30
+# 183 "data/maps/MyrriniIsland/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq MyrriniIsland_EventScript_Camper_8
-# 188 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Camper_Text_0
-# 189 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Camper_Text_5
-# 190 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
-# 191 "data/maps/MyrriniIsland/scripts.pory"
-	removeitem ITEM_FULL_HEAL
-# 192 "data/maps/MyrriniIsland/scripts.pory"
-	delay 30
 # 193 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 23, Common_Movement_Heart
-# 194 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
-# 195 "data/maps/MyrriniIsland/scripts.pory"
-	delay 10
-# 196 "data/maps/MyrriniIsland/scripts.pory"
 	speakername MyrriniIsland_EventScript_Camper_Text_0
+# 194 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Camper_Text_5
+# 195 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 196 "data/maps/MyrriniIsland/scripts.pory"
+	removeitem ITEM_FULL_HEAL
 # 197 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Camper_Text_6
+	delay 30
 # 198 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	applymovement 23, Common_Movement_Heart
 # 199 "data/maps/MyrriniIsland/scripts.pory"
-	delay 5
+	waitmovement 0
 # 200 "data/maps/MyrriniIsland/scripts.pory"
-	giveitem ITEM_SILK_SCARF
+	delay 10
 # 201 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	speakername MyrriniIsland_EventScript_Camper_Text_0
+# 202 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Camper_Text_6
 # 203 "data/maps/MyrriniIsland/scripts.pory"
-	delay 20
+	closemessage
 # 204 "data/maps/MyrriniIsland/scripts.pory"
+	delay 5
+# 205 "data/maps/MyrriniIsland/scripts.pory"
+	giveitem ITEM_SILK_SCARF
+# 206 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 208 "data/maps/MyrriniIsland/scripts.pory"
+	delay 20
+# 209 "data/maps/MyrriniIsland/scripts.pory"
 	completequest QUEST_MYRRINI_ALLERGIES
 MyrriniIsland_EventScript_Camper_4:
-# 207 "data/maps/MyrriniIsland/scripts.pory"
+# 212 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 MyrriniIsland_EventScript_Camper_2:
-# 155 "data/maps/MyrriniIsland/scripts.pory"
+# 160 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_EventScript_Camper_Text_1
-# 156 "data/maps/MyrriniIsland/scripts.pory"
+# 161 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 157 "data/maps/MyrriniIsland/scripts.pory"
+# 162 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 MyrriniIsland_EventScript_Camper_5:
-# 165 "data/maps/MyrriniIsland/scripts.pory"
+# 170 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_EventScript_Camper_Text_2
-# 166 "data/maps/MyrriniIsland/scripts.pory"
+# 171 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 168 "data/maps/MyrriniIsland/scripts.pory"
+# 173 "data/maps/MyrriniIsland/scripts.pory"
 	delay 20
-# 169 "data/maps/MyrriniIsland/scripts.pory"
+# 174 "data/maps/MyrriniIsland/scripts.pory"
 	startquest QUEST_MYRRINI_ALLERGIES
 	goto MyrriniIsland_EventScript_Camper_4
 
 MyrriniIsland_EventScript_Camper_8:
-# 180 "data/maps/MyrriniIsland/scripts.pory"
+# 185 "data/maps/MyrriniIsland/scripts.pory"
 	speakername MyrriniIsland_EventScript_Camper_Text_0
-# 181 "data/maps/MyrriniIsland/scripts.pory"
+# 186 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_EventScript_Camper_Text_4
-# 182 "data/maps/MyrriniIsland/scripts.pory"
+# 187 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 183 "data/maps/MyrriniIsland/scripts.pory"
+# 188 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Girl2::
-# 213 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 214 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 215 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Girl_Text_0
-# 216 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Girl2_Text_0
-# 217 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 218 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 219 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 220 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Girl_Text_0
+# 221 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Girl2_Text_0
+# 222 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 223 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Panpour::
-# 224 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 225 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 226 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Panpour_Text_0
-# 227 "data/maps/MyrriniIsland/scripts.pory"
-	playmoncry SPECIES_PANPOUR, CRY_MODE_NORMAL
-# 228 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Panpour_Text_1
 # 229 "data/maps/MyrriniIsland/scripts.pory"
-	waitmoncry
+	lock
 # 230 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	faceplayer
 # 231 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Panpour_Text_0
+# 232 "data/maps/MyrriniIsland/scripts.pory"
+	playmoncry SPECIES_PANPOUR, CRY_MODE_NORMAL
+# 233 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Panpour_Text_1
+# 234 "data/maps/MyrriniIsland/scripts.pory"
+	waitmoncry
+# 235 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 236 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_BugCatcher::
-# 237 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 238 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 239 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_BugCatcher_Text_0
-# 240 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_BugCatcher_Text_1
-# 241 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 242 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 243 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 244 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_BugCatcher_Text_0
+# 245 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_BugCatcher_Text_1
+# 246 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 247 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Woman::
-# 248 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 249 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 250 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Woman_Text_0
-# 251 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Woman_Text_1
-# 252 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 253 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 254 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 255 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Woman_Text_0
+# 256 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Woman_Text_1
+# 257 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 258 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Artist::
-# 259 "data/maps/MyrriniIsland/scripts.pory"
+# 264 "data/maps/MyrriniIsland/scripts.pory"
 	lock
-# 260 "data/maps/MyrriniIsland/scripts.pory"
+# 265 "data/maps/MyrriniIsland/scripts.pory"
 	faceplayer
-# 261 "data/maps/MyrriniIsland/scripts.pory"
+# 266 "data/maps/MyrriniIsland/scripts.pory"
 	speakername MyrriniIsland_EventScript_Artist_Text_0
-# 262 "data/maps/MyrriniIsland/scripts.pory"
+# 267 "data/maps/MyrriniIsland/scripts.pory"
 	goto_if_set FLAG_GOT_TM_POISON_FANG, MyrriniIsland_EventScript_Artist_2
-# 269 "data/maps/MyrriniIsland/scripts.pory"
-	setflag FLAG_GOT_TM_POISON_FANG
-# 270 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Artist_Text_2
-# 271 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
-# 272 "data/maps/MyrriniIsland/scripts.pory"
-	delay 5
-# 273 "data/maps/MyrriniIsland/scripts.pory"
-	giveitem ITEM_TM_POISON_FANG
 # 274 "data/maps/MyrriniIsland/scripts.pory"
+	setflag FLAG_GOT_TM_POISON_FANG
+# 275 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Artist_Text_2
+# 276 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 277 "data/maps/MyrriniIsland/scripts.pory"
+	delay 5
+# 278 "data/maps/MyrriniIsland/scripts.pory"
+	giveitem ITEM_TM_POISON_FANG
+# 279 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 MyrriniIsland_EventScript_Artist_1:
-# 276 "data/maps/MyrriniIsland/scripts.pory"
+# 281 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 MyrriniIsland_EventScript_Artist_2:
-# 264 "data/maps/MyrriniIsland/scripts.pory"
+# 269 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_EventScript_Artist_Text_1
-# 265 "data/maps/MyrriniIsland/scripts.pory"
+# 270 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 	goto MyrriniIsland_EventScript_Artist_1
 
 
 MyrriniIsland_EventScript_Farmer1::
-# 282 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 283 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 284 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Farmer1_Text_0
-# 285 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Farmer1_Text_1
-# 286 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 287 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 288 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 289 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Farmer1_Text_0
+# 290 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Farmer1_Text_1
+# 291 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 292 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Farmer2::
-# 293 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 294 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 295 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Farmer1_Text_0
-# 296 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Farmer2_Text_0
-# 297 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 298 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 299 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 300 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Farmer1_Text_0
+# 301 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Farmer2_Text_0
+# 302 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 303 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_LittleGirl::
-# 304 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 305 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 306 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_LittleGirl_Text_0
-# 307 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_LittleGirl_Text_1
-# 308 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 309 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 310 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 311 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_LittleGirl_Text_0
+# 312 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_LittleGirl_Text_1
+# 313 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 314 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_BattleGirl::
-# 315 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 316 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 317 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_BattleGirl_Text_0
-# 318 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_BattleGirl_Text_1
-# 319 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 320 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 321 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 322 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_BattleGirl_Text_0
+# 323 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_BattleGirl_Text_1
+# 324 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 325 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_HexManiac::
-# 326 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 327 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_HexManiac_Text_0
-# 328 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_HexManiac_Text_1
-# 329 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
-# 330 "data/maps/MyrriniIsland/scripts.pory"
-	delay 20
 # 331 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 36, Common_Movement_ExclamationMark
+	lock
 # 332 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
-# 333 "data/maps/MyrriniIsland/scripts.pory"
-	delay 10
-# 334 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 335 "data/maps/MyrriniIsland/scripts.pory"
 	speakername MyrriniIsland_EventScript_HexManiac_Text_0
+# 333 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_HexManiac_Text_1
+# 334 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 335 "data/maps/MyrriniIsland/scripts.pory"
+	delay 20
+# 336 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 36, Common_Movement_ExclamationMark
+# 337 "data/maps/MyrriniIsland/scripts.pory"
+	waitmovement 0
 # 338 "data/maps/MyrriniIsland/scripts.pory"
-	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_TRY_MYRRINI_BATTLE_PAVILION
+	delay 10
 # 339 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 340 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_HexManiac_Text_0
+# 343 "data/maps/MyrriniIsland/scripts.pory"
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_TRY_MYRRINI_BATTLE_PAVILION
+# 344 "data/maps/MyrriniIsland/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MyrriniIsland_EventScript_HexManiac_2
-# 348 "data/maps/MyrriniIsland/scripts.pory"
+# 353 "data/maps/MyrriniIsland/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_TRY_MYRRINI_BATTLE_PAVILION
-# 349 "data/maps/MyrriniIsland/scripts.pory"
+# 354 "data/maps/MyrriniIsland/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MyrriniIsland_EventScript_HexManiac_5
-# 359 "data/maps/MyrriniIsland/scripts.pory"
+# 364 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_EventScript_HexManiac_Text_4
-# 360 "data/maps/MyrriniIsland/scripts.pory"
+# 365 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 362 "data/maps/MyrriniIsland/scripts.pory"
+# 367 "data/maps/MyrriniIsland/scripts.pory"
 	delay 30
-# 363 "data/maps/MyrriniIsland/scripts.pory"
+# 368 "data/maps/MyrriniIsland/scripts.pory"
 	goto_if_set FLAG_PLAYED_IN_MYRRINI_BATTLE_PAVILION, MyrriniIsland_EventScript_HexManiac_8
-# 377 "data/maps/MyrriniIsland/scripts.pory"
+# 382 "data/maps/MyrriniIsland/scripts.pory"
 	speakername MyrriniIsland_EventScript_HexManiac_Text_0
-# 378 "data/maps/MyrriniIsland/scripts.pory"
+# 383 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_EventScript_HexManiac_Text_6
-# 379 "data/maps/MyrriniIsland/scripts.pory"
+# 384 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 MyrriniIsland_EventScript_HexManiac_4:
-# 382 "data/maps/MyrriniIsland/scripts.pory"
+# 387 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 MyrriniIsland_EventScript_HexManiac_2:
-# 341 "data/maps/MyrriniIsland/scripts.pory"
+# 346 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_EventScript_HexManiac_Text_2
-# 342 "data/maps/MyrriniIsland/scripts.pory"
+# 347 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 343 "data/maps/MyrriniIsland/scripts.pory"
+# 348 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 MyrriniIsland_EventScript_HexManiac_5:
-# 351 "data/maps/MyrriniIsland/scripts.pory"
+# 356 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_EventScript_HexManiac_Text_3
-# 352 "data/maps/MyrriniIsland/scripts.pory"
+# 357 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 354 "data/maps/MyrriniIsland/scripts.pory"
+# 359 "data/maps/MyrriniIsland/scripts.pory"
 	delay 20
-# 355 "data/maps/MyrriniIsland/scripts.pory"
+# 360 "data/maps/MyrriniIsland/scripts.pory"
 	startquest QUEST_TRY_MYRRINI_BATTLE_PAVILION
 	goto MyrriniIsland_EventScript_HexManiac_4
 
 MyrriniIsland_EventScript_HexManiac_8:
-# 365 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_HexManiac_Text_0
-# 366 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_HexManiac_Text_5
-# 367 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
-# 368 "data/maps/MyrriniIsland/scripts.pory"
-	delay 5
-# 369 "data/maps/MyrriniIsland/scripts.pory"
-	giveitem ITEM_REAPER_CLOTH
 # 370 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	speakername MyrriniIsland_EventScript_HexManiac_Text_0
+# 371 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_HexManiac_Text_5
 # 372 "data/maps/MyrriniIsland/scripts.pory"
-	delay 20
+	closemessage
 # 373 "data/maps/MyrriniIsland/scripts.pory"
+	delay 5
+# 374 "data/maps/MyrriniIsland/scripts.pory"
+	giveitem ITEM_REAPER_CLOTH
+# 375 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 377 "data/maps/MyrriniIsland/scripts.pory"
+	delay 20
+# 378 "data/maps/MyrriniIsland/scripts.pory"
 	completequest QUEST_TRY_MYRRINI_BATTLE_PAVILION
 	goto MyrriniIsland_EventScript_HexManiac_4
 
 
 MyrriniIsland_EventScript_Zorua::
-# 388 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 389 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 390 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Zorua_Text_0
-# 391 "data/maps/MyrriniIsland/scripts.pory"
-	playmoncry SPECIES_ZORUA_HISUIAN, CRY_MODE_NORMAL
-# 392 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Zorua_Text_1
 # 393 "data/maps/MyrriniIsland/scripts.pory"
-	waitmoncry
+	lock
 # 394 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	faceplayer
 # 395 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Zorua_Text_0
+# 396 "data/maps/MyrriniIsland/scripts.pory"
+	playmoncry SPECIES_ZORUA_HISUIAN, CRY_MODE_NORMAL
+# 397 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Zorua_Text_1
+# 398 "data/maps/MyrriniIsland/scripts.pory"
+	waitmoncry
+# 399 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 400 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Scientist::
-# 401 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 402 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 403 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Scientist_Text_0
-# 404 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Scientist_Text_1
-# 405 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 406 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 407 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 408 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Scientist_Text_0
+# 409 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Scientist_Text_1
+# 410 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 411 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Toucannon::
-# 412 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 413 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 414 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Toucannon_Text_0
-# 415 "data/maps/MyrriniIsland/scripts.pory"
-	playmoncry SPECIES_TOUCANNON, CRY_MODE_NORMAL
-# 416 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Toucannon_Text_1
 # 417 "data/maps/MyrriniIsland/scripts.pory"
-	waitmoncry
+	lock
 # 418 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	faceplayer
 # 419 "data/maps/MyrriniIsland/scripts.pory"
-	delay 5
+	speakername MyrriniIsland_EventScript_Toucannon_Text_0
 # 420 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Toucannon_Text_2
+	playmoncry SPECIES_TOUCANNON, CRY_MODE_NORMAL
 # 421 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	msgbox MyrriniIsland_EventScript_Toucannon_Text_1
 # 422 "data/maps/MyrriniIsland/scripts.pory"
+	waitmoncry
+# 423 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 424 "data/maps/MyrriniIsland/scripts.pory"
+	delay 5
+# 425 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Toucannon_Text_2
+# 426 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 427 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Kilowattrel::
-# 428 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 429 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 430 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Kilowattrel_Text_0
-# 431 "data/maps/MyrriniIsland/scripts.pory"
-	playmoncry SPECIES_KILOWATTREL, CRY_MODE_NORMAL
-# 432 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Kilowattrel_Text_1
 # 433 "data/maps/MyrriniIsland/scripts.pory"
-	waitmoncry
+	lock
 # 434 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	faceplayer
 # 435 "data/maps/MyrriniIsland/scripts.pory"
-	delay 5
+	speakername MyrriniIsland_EventScript_Kilowattrel_Text_0
 # 436 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Kilowattrel_Text_2
+	playmoncry SPECIES_KILOWATTREL, CRY_MODE_NORMAL
 # 437 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	msgbox MyrriniIsland_EventScript_Kilowattrel_Text_1
 # 438 "data/maps/MyrriniIsland/scripts.pory"
+	waitmoncry
+# 439 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 440 "data/maps/MyrriniIsland/scripts.pory"
+	delay 5
+# 441 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Kilowattrel_Text_2
+# 442 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 443 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_Sailor::
-# 444 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 445 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 446 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_Sailor_Text_0
-# 447 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_Sailor_Text_1
-# 448 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 449 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 450 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 451 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_Sailor_Text_0
+# 452 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_Sailor_Text_1
+# 453 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 454 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_OldMan::
-# 455 "data/maps/MyrriniIsland/scripts.pory"
-	lock
-# 456 "data/maps/MyrriniIsland/scripts.pory"
-	faceplayer
-# 457 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_OldMan_Text_0
-# 458 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_OldMan_Text_1
-# 459 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
 # 460 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 461 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 462 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_OldMan_Text_0
+# 463 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_OldMan_Text_1
+# 464 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 465 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_BattlePavilionSign::
-# 466 "data/maps/MyrriniIsland/scripts.pory"
+# 471 "data/maps/MyrriniIsland/scripts.pory"
 	lock
-# 467 "data/maps/MyrriniIsland/scripts.pory"
+# 472 "data/maps/MyrriniIsland/scripts.pory"
 	msgbox MyrriniIsland_EventScript_BattlePavilionSign_Text_0
-# 468 "data/maps/MyrriniIsland/scripts.pory"
+# 473 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 469 "data/maps/MyrriniIsland/scripts.pory"
+# 474 "data/maps/MyrriniIsland/scripts.pory"
 	release
 	end
 
 
 MyrriniIsland_EventScript_ChimeraEvent::
-# 475 "data/maps/MyrriniIsland/scripts.pory"
-	setvar VAR_TEMP_1, 1
-# 477 "data/maps/MyrriniIsland/scripts.pory"
-	lockall
-# 478 "data/maps/MyrriniIsland/scripts.pory"
-	delay 20
-# 479 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_0
 # 480 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_1
-# 481 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	setvar VAR_TEMP_1, 1
 # 482 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_QuestionMark
+	lockall
 # 483 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
+	delay 20
 # 484 "data/maps/MyrriniIsland/scripts.pory"
-	delay 10
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_0
 # 485 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_1
 # 486 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
+	closemessage
 # 487 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_QuestionMark
 # 488 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 489 "data/maps/MyrriniIsland/scripts.pory"
-	clearflag FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND
+	delay 10
 # 490 "data/maps/MyrriniIsland/scripts.pory"
-	addobject 55
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 # 491 "data/maps/MyrriniIsland/scripts.pory"
-	showobjectat 55, MAP_MYRRINI_ISLAND
+	waitmovement 0
 # 492 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 55, Common_Movement_WalkDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 # 493 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_2
+	waitmovement 0
 # 494 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_3
+	clearflag FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND
 # 495 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	addobject 55
+# 496 "data/maps/MyrriniIsland/scripts.pory"
+	showobjectat 55, MAP_MYRRINI_ISLAND
 # 497 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerWalkDownToEvent
+	applymovement 55, Common_Movement_WalkDown
 # 498 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 55, MyrriniIsland_Movement_EuterpeApproach
-# 499 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
-# 500 "data/maps/MyrriniIsland/scripts.pory"
-	delay 10
-# 501 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 52, Common_Movement_FaceUp
-# 502 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
-# 503 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_4
-# 504 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_5
-# 505 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
-# 506 "data/maps/MyrriniIsland/scripts.pory"
-	delay 10
-# 508 "data/maps/MyrriniIsland/scripts.pory"
 	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_2
+# 499 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_3
+# 500 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 502 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerWalkDownToEvent
+# 503 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 55, MyrriniIsland_Movement_EuterpeApproach
+# 504 "data/maps/MyrriniIsland/scripts.pory"
+	waitmovement 0
+# 505 "data/maps/MyrriniIsland/scripts.pory"
+	delay 10
+# 506 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 52, Common_Movement_FaceUp
+# 507 "data/maps/MyrriniIsland/scripts.pory"
+	waitmovement 0
+# 508 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_4
 # 509 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_6
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_5
 # 510 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 # 511 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
-# 512 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 55, MyrriniIsland_Movement_PlayerAndEuterpeReposition
+	delay 10
 # 513 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
-# 514 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 53, Common_Movement_FaceUp
-# 515 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
-# 516 "data/maps/MyrriniIsland/scripts.pory"
 	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_2
-# 517 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_7
-# 518 "data/maps/MyrriniIsland/scripts.pory"
+# 514 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_6
+# 515 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
+# 516 "data/maps/MyrriniIsland/scripts.pory"
+	waitmovement 0
+# 517 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 55, MyrriniIsland_Movement_PlayerAndEuterpeReposition
+# 518 "data/maps/MyrriniIsland/scripts.pory"
+	waitmovement 0
 # 519 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 53, Common_Movement_JumpInPlaceUp
+	applymovement 53, Common_Movement_FaceUp
 # 520 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 521 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_8
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_2
 # 522 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_9
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_7
 # 523 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 # 524 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 54, MyrriniIsland_Movement_AdminNoticesKalliope
+	applymovement 53, Common_Movement_JumpInPlaceUp
 # 525 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 526 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 53, Common_Movement_ExclamationMark
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_8
 # 527 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_9
 # 528 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_10
-# 529 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_11
-# 530 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 531 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 53, MyrriniIsland_Movement_AdminsMoveForBoss
-# 532 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 54, MyrriniIsland_Movement_AdminsMoveForBoss
-# 533 "data/maps/MyrriniIsland/scripts.pory"
+# 529 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 54, MyrriniIsland_Movement_AdminNoticesKalliope
+# 530 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
+# 531 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 53, Common_Movement_ExclamationMark
+# 532 "data/maps/MyrriniIsland/scripts.pory"
+	waitmovement 0
+# 533 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_10
+# 534 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_11
 # 535 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerAndEuterpeReposition
+	closemessage
 # 536 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 55, MyrriniIsland_Movement_PlayerAndEuterpeReposition
+	applymovement 53, MyrriniIsland_Movement_AdminsMoveForBoss
 # 537 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 52, Common_Movement_FaceDown
+	applymovement 54, MyrriniIsland_Movement_AdminsMoveForBoss
 # 538 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 540 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 56, MyrriniIsland_Movement_KalliopeApproaches
+	applymovement OBJ_EVENT_ID_PLAYER, MyrriniIsland_Movement_PlayerAndEuterpeReposition
 # 541 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
+	applymovement 55, MyrriniIsland_Movement_PlayerAndEuterpeReposition
 # 542 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_12
+	applymovement 52, Common_Movement_FaceDown
 # 543 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_13
-# 544 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	waitmovement 0
 # 545 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 56, Common_Movement_WalkRight
+	applymovement 56, MyrriniIsland_Movement_KalliopeApproaches
 # 546 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 547 "data/maps/MyrriniIsland/scripts.pory"
 	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_12
 # 548 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_14
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_13
 # 549 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 # 550 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_15
+	applymovement 56, Common_Movement_WalkRight
 # 551 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_16
+	waitmovement 0
 # 552 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_12
 # 553 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 53, MyrriniIsland_Movement_AdminsFlee
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_14
 # 554 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 54, MyrriniIsland_Movement_AdminsFlee
+	closemessage
 # 555 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_15
 # 556 "data/maps/MyrriniIsland/scripts.pory"
-	delay 10
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_16
 # 557 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 56, Common_Movement_WalkLeft
+	closemessage
 # 558 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
+	applymovement 53, MyrriniIsland_Movement_AdminsFlee
 # 559 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 56, Common_Movement_FaceUp
+	applymovement 54, MyrriniIsland_Movement_AdminsFlee
 # 560 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
-# 562 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_17
-# 563 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_18
-# 564 "data/maps/MyrriniIsland/scripts.pory"
-	closemessage
-# 565 "data/maps/MyrriniIsland/scripts.pory"
+# 561 "data/maps/MyrriniIsland/scripts.pory"
 	delay 10
-# 566 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 52, Common_Movement_JumpInPlaceDown
-# 567 "data/maps/MyrriniIsland/scripts.pory"
+# 562 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 56, Common_Movement_WalkLeft
+# 563 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
+# 564 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 56, Common_Movement_FaceUp
+# 565 "data/maps/MyrriniIsland/scripts.pory"
+	waitmovement 0
+# 567 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_17
 # 568 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_4
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_18
 # 569 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_19
-# 570 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
+# 570 "data/maps/MyrriniIsland/scripts.pory"
+	delay 10
 # 571 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 56, Common_Movement_FaceLeft
+	applymovement 52, Common_Movement_JumpInPlaceDown
 # 572 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 573 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_17
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_4
 # 574 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_20
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_19
 # 575 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 # 576 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 56, Common_Movement_FaceUp
+	applymovement 56, Common_Movement_FaceLeft
 # 577 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 578 "data/maps/MyrriniIsland/scripts.pory"
 	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_17
 # 579 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_21
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_20
 # 580 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
 # 581 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 56, MyrriniIsland_Movement_KalliopeLeaves
+	applymovement 56, Common_Movement_FaceUp
 # 582 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
 # 583 "data/maps/MyrriniIsland/scripts.pory"
-	delay 10
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_17
+# 584 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_21
 # 585 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 52, Common_Movement_FaceRight
-# 586 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
-# 587 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 55, Common_Movement_FaceLeft
-# 588 "data/maps/MyrriniIsland/scripts.pory"
-	waitmovement 0
-# 589 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_2
-# 590 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_22
-# 591 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
+# 586 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 56, MyrriniIsland_Movement_KalliopeLeaves
+# 587 "data/maps/MyrriniIsland/scripts.pory"
+	waitmovement 0
+# 588 "data/maps/MyrriniIsland/scripts.pory"
+	delay 10
+# 590 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 52, Common_Movement_FaceRight
+# 591 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 # 592 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 55, MyrriniIsland_Movement_EuterpeLeaves
+	applymovement 55, Common_Movement_FaceLeft
 # 593 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
-# 599 "data/maps/MyrriniIsland/scripts.pory"
-	delay 20
-# 600 "data/maps/MyrriniIsland/scripts.pory"
-	startquest QUEST_FREE_MARMARO_MINES
-# 601 "data/maps/MyrriniIsland/scripts.pory"
+# 594 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_2
+# 595 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_22
+# 596 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 602 "data/maps/MyrriniIsland/scripts.pory"
-	delay 10
-# 604 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
-# 605 "data/maps/MyrriniIsland/scripts.pory"
+# 597 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 55, MyrriniIsland_Movement_EuterpeLeaves
+# 598 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
+# 604 "data/maps/MyrriniIsland/scripts.pory"
+	delay 20
+# 605 "data/maps/MyrriniIsland/scripts.pory"
+	startquest QUEST_FREE_MARMARO_MINES
 # 606 "data/maps/MyrriniIsland/scripts.pory"
-	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_4
-# 607 "data/maps/MyrriniIsland/scripts.pory"
-	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_23
-# 608 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
+# 607 "data/maps/MyrriniIsland/scripts.pory"
+	delay 10
 # 609 "data/maps/MyrriniIsland/scripts.pory"
-	applymovement 52, MyrriniIsland_Movement_RaniaLeaves
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 # 610 "data/maps/MyrriniIsland/scripts.pory"
 	waitmovement 0
+# 611 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_ChimeraEvent_Text_4
 # 612 "data/maps/MyrriniIsland/scripts.pory"
-	removeobject 52
+	msgbox MyrriniIsland_EventScript_ChimeraEvent_Text_23
 # 613 "data/maps/MyrriniIsland/scripts.pory"
-	removeobject 53
-# 614 "data/maps/MyrriniIsland/scripts.pory"
-	removeobject 54
-# 615 "data/maps/MyrriniIsland/scripts.pory"
-	removeobject 55
-# 616 "data/maps/MyrriniIsland/scripts.pory"
-	removeobject 56
-# 617 "data/maps/MyrriniIsland/scripts.pory"
-	setflag FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND
-# 618 "data/maps/MyrriniIsland/scripts.pory"
-	setflag FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND
-# 619 "data/maps/MyrriniIsland/scripts.pory"
-	setflag FLAG_HIDE_GRUNT_BLOCKING_MARMARO_MINES
-# 624 "data/maps/MyrriniIsland/scripts.pory"
-	setflag FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY
-# 625 "data/maps/MyrriniIsland/scripts.pory"
-	delay 20
-# 626 "data/maps/MyrriniIsland/scripts.pory"
-	startquest QUEST_VISIT_RANIA_PENTEPETAL
-# 627 "data/maps/MyrriniIsland/scripts.pory"
 	closemessage
-# 628 "data/maps/MyrriniIsland/scripts.pory"
-	delay 10
+# 614 "data/maps/MyrriniIsland/scripts.pory"
+	applymovement 52, MyrriniIsland_Movement_RaniaLeaves
+# 615 "data/maps/MyrriniIsland/scripts.pory"
+	waitmovement 0
+# 617 "data/maps/MyrriniIsland/scripts.pory"
+	removeobject 52
+# 618 "data/maps/MyrriniIsland/scripts.pory"
+	removeobject 53
+# 619 "data/maps/MyrriniIsland/scripts.pory"
+	removeobject 54
+# 620 "data/maps/MyrriniIsland/scripts.pory"
+	removeobject 55
+# 621 "data/maps/MyrriniIsland/scripts.pory"
+	removeobject 56
+# 622 "data/maps/MyrriniIsland/scripts.pory"
+	setflag FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND
+# 623 "data/maps/MyrriniIsland/scripts.pory"
+	setflag FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND
+# 624 "data/maps/MyrriniIsland/scripts.pory"
+	setflag FLAG_HIDE_GRUNT_BLOCKING_MARMARO_MINES
+# 629 "data/maps/MyrriniIsland/scripts.pory"
+	setflag FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY
 # 630 "data/maps/MyrriniIsland/scripts.pory"
+	delay 20
+# 631 "data/maps/MyrriniIsland/scripts.pory"
+	startquest QUEST_VISIT_RANIA_PENTEPETAL
+# 632 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 633 "data/maps/MyrriniIsland/scripts.pory"
+	delay 10
+# 635 "data/maps/MyrriniIsland/scripts.pory"
 	releaseall
 	end
 
 
-# 634 "data/maps/MyrriniIsland/scripts.pory"
+# 639 "data/maps/MyrriniIsland/scripts.pory"
 MyrriniIsland_Movement_PlayerWalkDownToEvent:
-# 636 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 636 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 636 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 636 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 637 "data/maps/MyrriniIsland/scripts.pory"
-	emote_exclamation_mark
-# 638 "data/maps/MyrriniIsland/scripts.pory"
-	delay_16
-# 639 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 639 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 639 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 639 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 639 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 639 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_down
-# 640 "data/maps/MyrriniIsland/scripts.pory"
-	jump_in_place_down
-# 640 "data/maps/MyrriniIsland/scripts.pory"
-	jump_in_place_down
 # 641 "data/maps/MyrriniIsland/scripts.pory"
-	face_down
+	walk_down
+# 641 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 641 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 641 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
 # 642 "data/maps/MyrriniIsland/scripts.pory"
-	step_end
-
-# 644 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_EuterpeApproach:
-# 646 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 646 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 646 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 646 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 647 "data/maps/MyrriniIsland/scripts.pory"
+	emote_exclamation_mark
+# 643 "data/maps/MyrriniIsland/scripts.pory"
 	delay_16
-# 648 "data/maps/MyrriniIsland/scripts.pory"
+# 644 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_down
-# 648 "data/maps/MyrriniIsland/scripts.pory"
+# 644 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_down
-# 648 "data/maps/MyrriniIsland/scripts.pory"
+# 644 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_down
-# 648 "data/maps/MyrriniIsland/scripts.pory"
+# 644 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_down
-# 648 "data/maps/MyrriniIsland/scripts.pory"
+# 644 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_down
-# 648 "data/maps/MyrriniIsland/scripts.pory"
+# 644 "data/maps/MyrriniIsland/scripts.pory"
 	walk_fast_down
-# 649 "data/maps/MyrriniIsland/scripts.pory"
+# 645 "data/maps/MyrriniIsland/scripts.pory"
+	jump_in_place_down
+# 645 "data/maps/MyrriniIsland/scripts.pory"
+	jump_in_place_down
+# 646 "data/maps/MyrriniIsland/scripts.pory"
 	face_down
-# 650 "data/maps/MyrriniIsland/scripts.pory"
+# 647 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
+# 649 "data/maps/MyrriniIsland/scripts.pory"
+MyrriniIsland_Movement_EuterpeApproach:
+# 651 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 651 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 651 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 651 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
 # 652 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_AdminNoticesKalliope:
+	delay_16
+# 653 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 653 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 653 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 653 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 653 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
+# 653 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_down
 # 654 "data/maps/MyrriniIsland/scripts.pory"
 	face_down
 # 655 "data/maps/MyrriniIsland/scripts.pory"
-	delay_16
-# 656 "data/maps/MyrriniIsland/scripts.pory"
-	emote_exclamation_mark
+	step_end
+
 # 657 "data/maps/MyrriniIsland/scripts.pory"
-	delay_16
-# 658 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
+MyrriniIsland_Movement_AdminNoticesKalliope:
 # 659 "data/maps/MyrriniIsland/scripts.pory"
-	face_up
-# 660 "data/maps/MyrriniIsland/scripts.pory"
-	jump_in_place_up
-# 661 "data/maps/MyrriniIsland/scripts.pory"
-	face_up
-# 662 "data/maps/MyrriniIsland/scripts.pory"
-	step_end
-
-# 664 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_AdminsMoveForBoss:
-# 666 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 666 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 667 "data/maps/MyrriniIsland/scripts.pory"
-	face_left
-# 668 "data/maps/MyrriniIsland/scripts.pory"
-	step_end
-
-# 670 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_PlayerAndEuterpeReposition:
-# 672 "data/maps/MyrriniIsland/scripts.pory"
-	walk_right
-# 673 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 674 "data/maps/MyrriniIsland/scripts.pory"
 	face_down
-# 675 "data/maps/MyrriniIsland/scripts.pory"
-	step_end
-
-# 677 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_KalliopeApproaches:
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 679 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 680 "data/maps/MyrriniIsland/scripts.pory"
-	walk_right
-# 681 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 682 "data/maps/MyrriniIsland/scripts.pory"
+# 660 "data/maps/MyrriniIsland/scripts.pory"
+	delay_16
+# 661 "data/maps/MyrriniIsland/scripts.pory"
+	emote_exclamation_mark
+# 662 "data/maps/MyrriniIsland/scripts.pory"
+	delay_16
+# 663 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 664 "data/maps/MyrriniIsland/scripts.pory"
 	face_up
-# 683 "data/maps/MyrriniIsland/scripts.pory"
+# 665 "data/maps/MyrriniIsland/scripts.pory"
+	jump_in_place_up
+# 666 "data/maps/MyrriniIsland/scripts.pory"
+	face_up
+# 667 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
+# 669 "data/maps/MyrriniIsland/scripts.pory"
+MyrriniIsland_Movement_AdminsMoveForBoss:
+# 671 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 671 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 672 "data/maps/MyrriniIsland/scripts.pory"
+	face_left
+# 673 "data/maps/MyrriniIsland/scripts.pory"
+	step_end
+
+# 675 "data/maps/MyrriniIsland/scripts.pory"
+MyrriniIsland_Movement_PlayerAndEuterpeReposition:
+# 677 "data/maps/MyrriniIsland/scripts.pory"
+	walk_right
+# 678 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 679 "data/maps/MyrriniIsland/scripts.pory"
+	face_down
+# 680 "data/maps/MyrriniIsland/scripts.pory"
+	step_end
+
+# 682 "data/maps/MyrriniIsland/scripts.pory"
+MyrriniIsland_Movement_KalliopeApproaches:
+# 684 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 684 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 684 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 684 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 684 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
 # 685 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_AdminsFlee:
+	walk_right
+# 686 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
 # 687 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 687 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 687 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 687 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 687 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 687 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 687 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 687 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
-# 687 "data/maps/MyrriniIsland/scripts.pory"
-	walk_fast_right
+	face_up
 # 688 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
 # 690 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_KalliopeLeaves:
+MyrriniIsland_Movement_AdminsFlee:
 # 692 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
+	walk_fast_right
+# 692 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 692 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 692 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 692 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 692 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 692 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 692 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
+# 692 "data/maps/MyrriniIsland/scripts.pory"
+	walk_fast_right
 # 693 "data/maps/MyrriniIsland/scripts.pory"
-	walk_left
-# 694 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 694 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 694 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 694 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 694 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 694 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
-# 694 "data/maps/MyrriniIsland/scripts.pory"
-	walk_down
+	step_end
+
 # 695 "data/maps/MyrriniIsland/scripts.pory"
-	step_end
-
+MyrriniIsland_Movement_KalliopeLeaves:
 # 697 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_EuterpeLeaves:
+	walk_down
+# 698 "data/maps/MyrriniIsland/scripts.pory"
+	walk_left
 # 699 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
+	walk_down
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
+# 699 "data/maps/MyrriniIsland/scripts.pory"
+	walk_down
 # 700 "data/maps/MyrriniIsland/scripts.pory"
-	walk_left
-# 700 "data/maps/MyrriniIsland/scripts.pory"
-	walk_left
-# 701 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 701 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 701 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 701 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 701 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 701 "data/maps/MyrriniIsland/scripts.pory"
-	walk_up
-# 702 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
+# 702 "data/maps/MyrriniIsland/scripts.pory"
+MyrriniIsland_Movement_EuterpeLeaves:
 # 704 "data/maps/MyrriniIsland/scripts.pory"
-MyrriniIsland_Movement_RaniaLeaves:
-# 706 "data/maps/MyrriniIsland/scripts.pory"
 	walk_up
+# 705 "data/maps/MyrriniIsland/scripts.pory"
+	walk_left
+# 705 "data/maps/MyrriniIsland/scripts.pory"
+	walk_left
 # 706 "data/maps/MyrriniIsland/scripts.pory"
 	walk_up
 # 706 "data/maps/MyrriniIsland/scripts.pory"
@@ -1205,42 +1194,61 @@ MyrriniIsland_Movement_RaniaLeaves:
 # 707 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
+# 709 "data/maps/MyrriniIsland/scripts.pory"
+MyrriniIsland_Movement_RaniaLeaves:
+# 711 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 711 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 711 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 711 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 711 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 711 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 711 "data/maps/MyrriniIsland/scripts.pory"
+	walk_up
+# 712 "data/maps/MyrriniIsland/scripts.pory"
+	step_end
+
 MyrriniIsland_EventScript_DirectionSign_Text_0:
-# 48 "data/maps/MyrriniIsland/scripts.pory"
+# 53 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Myrrini Island\n"
 	.string "The Island of Festivals\p"
 	.string "{LEFT_ARROW} Sea of Asteri - East$"
 
 MyrriniIsland_Sign_GymSign_Text_0:
-# 57 "data/maps/MyrriniIsland/scripts.pory"
+# 62 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Gym Leader: Euterpe\n"
 	.string "Muse of Parties and Poisons$"
 
 MyrriniIsland_EventScript_BlackBelt_Text_0:
-# 67 "data/maps/MyrriniIsland/scripts.pory"
+# 72 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Black Belt$"
 
 MyrriniIsland_EventScript_BlackBelt_Text_1:
-# 68 "data/maps/MyrriniIsland/scripts.pory"
+# 73 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Sometimes, you have to kick back and relax. Myrrini Island is perfect for that!$"
 
 MyrriniIsland_EventScript_PsychicM_Text_0:
-# 78 "data/maps/MyrriniIsland/scripts.pory"
+# 83 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Psychic$"
 
 MyrriniIsland_EventScript_PsychicM_Text_1:
-# 79 "data/maps/MyrriniIsland/scripts.pory"
+# 84 "data/maps/MyrriniIsland/scripts.pory"
 	.string "This island has lots of grape vines,\n"
 	.string "purple fruited trees, and purple\l"
 	.string "buildings. Purple is my favorite color,\l"
 	.string "so I love it!$"
 
 MyrriniIsland_EventScript_Girl_Text_0:
-# 89 "data/maps/MyrriniIsland/scripts.pory"
+# 94 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Girl$"
 
 MyrriniIsland_EventScript_Girl_Text_1:
-# 90 "data/maps/MyrriniIsland/scripts.pory"
+# 95 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Migratory Pokémon stop on Myrrini\n"
 	.string "Island while they fly, like that Swanna\l"
 	.string "on the roof! They join up with the\l"
@@ -1248,22 +1256,22 @@ MyrriniIsland_EventScript_Girl_Text_1:
 	.string "sing.$"
 
 MyrriniIsland_EventScript_OldWoman_Text_0:
-# 100 "data/maps/MyrriniIsland/scripts.pory"
+# 105 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Old Woman$"
 
 MyrriniIsland_EventScript_OldWoman_Text_1:
-# 101 "data/maps/MyrriniIsland/scripts.pory"
+# 106 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Ahh, this is the life... I knew moving to\n"
 	.string "Myrrini Island was the right choice. The\l"
 	.string "folks here are nice, and that old sailor\l"
 	.string "over there is nice on the eyes... ehehe!$"
 
 MyrriniIsland_EventScript_Beauty_Text_0:
-# 111 "data/maps/MyrriniIsland/scripts.pory"
+# 116 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Beauty$"
 
 MyrriniIsland_EventScript_Beauty_Text_1:
-# 112 "data/maps/MyrriniIsland/scripts.pory"
+# 117 "data/maps/MyrriniIsland/scripts.pory"
 	.string "The wildflowers growing on this island\n"
 	.string "make it a dream! My Ribombee is having\l"
 	.string "the time of her life gathering nectar\l"
@@ -1272,29 +1280,29 @@ MyrriniIsland_EventScript_Beauty_Text_1:
 	.string "Nectar? Oricorio seem to love it!$"
 
 MyrriniIsland_EventScript_Beauty_Text_2:
-# 118 "data/maps/MyrriniIsland/scripts.pory"
+# 123 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Come again! I'll still be here with my\n"
 	.string "sweet Ribombee.$"
 
 MyrriniIsland_EventScript_Ribombee_Text_0:
-# 136 "data/maps/MyrriniIsland/scripts.pory"
+# 141 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Ribombee$"
 
 MyrriniIsland_EventScript_Ribombee_Text_1:
-# 138 "data/maps/MyrriniIsland/scripts.pory"
+# 143 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Zee-ee-ee!$"
 
 MyrriniIsland_EventScript_Camper_Text_0:
-# 149 "data/maps/MyrriniIsland/scripts.pory"
+# 154 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Camper$"
 
 MyrriniIsland_EventScript_Camper_Text_1:
-# 155 "data/maps/MyrriniIsland/scripts.pory"
+# 160 "data/maps/MyrriniIsland/scripts.pory"
 	.string "My allergies are all cleared up! Now I\n"
 	.string "can fully enjoy Myrrini Island!$"
 
 MyrriniIsland_EventScript_Camper_Text_2:
-# 165 "data/maps/MyrriniIsland/scripts.pory"
+# 170 "data/maps/MyrriniIsland/scripts.pory"
 	.string "The outdoors are great and all, but...\n"
 	.string "ACHOO! SHNIFF! My allergies are acting\l"
 	.string "up...\p"
@@ -1303,74 +1311,74 @@ MyrriniIsland_EventScript_Camper_Text_2:
 	.string "help my allergies.$"
 
 MyrriniIsland_EventScript_Camper_Text_3:
-# 173 "data/maps/MyrriniIsland/scripts.pory"
+# 178 "data/maps/MyrriniIsland/scripts.pory"
 	.string "ACHOO! H-hey... SHNIFFLE! Did you\n"
 	.string "happen to bring a Full Heal...?$"
 
 MyrriniIsland_EventScript_Camper_Text_4:
-# 181 "data/maps/MyrriniIsland/scripts.pory"
+# 186 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Aww, but my nose is totally clogged.\p"
 	.string "Bring me a {COLOR GREEN}Full Heal{COLOR DARK_GRAY} for my pollen\n"
 	.string "allergy, please!$"
 
 MyrriniIsland_EventScript_Camper_Text_5:
-# 189 "data/maps/MyrriniIsland/scripts.pory"
+# 194 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Oh, you've got it! Let me just use this\n"
 	.string "quick...$"
 
 MyrriniIsland_EventScript_Camper_Text_6:
-# 197 "data/maps/MyrriniIsland/scripts.pory"
+# 202 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Woah, what a difference that made! I\n"
 	.string "can totally breathe now!\p"
 	.string "Now I can have fun outside with the\n"
 	.string "flowers. Thank you! Take this!$"
 
 MyrriniIsland_EventScript_Girl2_Text_0:
-# 216 "data/maps/MyrriniIsland/scripts.pory"
+# 221 "data/maps/MyrriniIsland/scripts.pory"
 	.string "The crops and fruits grown on Myrrini\n"
 	.string "Island are the best in Ilios! I think\l"
 	.string "it's the sunlight and the warm weather.$"
 
 MyrriniIsland_EventScript_Panpour_Text_0:
-# 226 "data/maps/MyrriniIsland/scripts.pory"
+# 231 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Panpour$"
 
 MyrriniIsland_EventScript_Panpour_Text_1:
-# 228 "data/maps/MyrriniIsland/scripts.pory"
+# 233 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Hia hee ee!$"
 
 MyrriniIsland_EventScript_BugCatcher_Text_0:
-# 239 "data/maps/MyrriniIsland/scripts.pory"
+# 244 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Bug Catcher$"
 
 MyrriniIsland_EventScript_BugCatcher_Text_1:
-# 240 "data/maps/MyrriniIsland/scripts.pory"
+# 245 "data/maps/MyrriniIsland/scripts.pory"
 	.string "These markets always attract a bunch\n"
 	.string "of Pokémon. I'm looking for any\l"
 	.string "Bug-type Pokémon that show up!$"
 
 MyrriniIsland_EventScript_Woman_Text_0:
-# 250 "data/maps/MyrriniIsland/scripts.pory"
+# 255 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Performer$"
 
 MyrriniIsland_EventScript_Woman_Text_1:
-# 251 "data/maps/MyrriniIsland/scripts.pory"
+# 256 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Can you smell it? The pollen in the air,\n"
 	.string "the fruits, and the salt sea spray... I'm\l"
 	.string "so glad I moved here!$"
 
 MyrriniIsland_EventScript_Artist_Text_0:
-# 261 "data/maps/MyrriniIsland/scripts.pory"
+# 266 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Artist$"
 
 MyrriniIsland_EventScript_Artist_Text_1:
-# 264 "data/maps/MyrriniIsland/scripts.pory"
+# 269 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Inflicting opposing Pokémon with\n"
 	.string "status effects is a sure way to win\l"
 	.string "Pokémon battles!$"
 
 MyrriniIsland_EventScript_Artist_Text_2:
-# 270 "data/maps/MyrriniIsland/scripts.pory"
+# 275 "data/maps/MyrriniIsland/scripts.pory"
 	.string "The Gym Leader on Myrrini Island\n"
 	.string "specializes in Poison-type moves, which\l"
 	.string "can tear through teams by inflicting\l"
@@ -1379,39 +1387,39 @@ MyrriniIsland_EventScript_Artist_Text_2:
 	.string "techniques!$"
 
 MyrriniIsland_EventScript_Farmer1_Text_0:
-# 284 "data/maps/MyrriniIsland/scripts.pory"
+# 289 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Farmer$"
 
 MyrriniIsland_EventScript_Farmer1_Text_1:
-# 285 "data/maps/MyrriniIsland/scripts.pory"
+# 290 "data/maps/MyrriniIsland/scripts.pory"
 	.string "These fruit trees are blooming all\n"
 	.string "across the island! We're gonna make a\l"
 	.string "fortune selling all this!$"
 
 MyrriniIsland_EventScript_Farmer2_Text_0:
-# 296 "data/maps/MyrriniIsland/scripts.pory"
+# 301 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Lot'sa Pokémon come around to snack on\n"
 	.string "the fruits growing here. We gather and\l"
 	.string "sell the ones which native Pokémon\l"
 	.string "don't get to first.$"
 
 MyrriniIsland_EventScript_LittleGirl_Text_0:
-# 306 "data/maps/MyrriniIsland/scripts.pory"
+# 311 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Little Girl$"
 
 MyrriniIsland_EventScript_LittleGirl_Text_1:
-# 307 "data/maps/MyrriniIsland/scripts.pory"
+# 312 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Sometimes, the nice people who run the\n"
 	.string "Daycare let me play with the Pokémon!\l"
 	.string "When I grow up, I wanna work there with\l"
 	.string "them!$"
 
 MyrriniIsland_EventScript_BattleGirl_Text_0:
-# 317 "data/maps/MyrriniIsland/scripts.pory"
+# 322 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Battle Girl$"
 
 MyrriniIsland_EventScript_BattleGirl_Text_1:
-# 318 "data/maps/MyrriniIsland/scripts.pory"
+# 323 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Phew, I just got totally wiped out at\n"
 	.string "the Battle Pavilion! It's just up the\l"
 	.string "road to the north.\p"
@@ -1420,22 +1428,22 @@ MyrriniIsland_EventScript_BattleGirl_Text_1:
 	.string "a whole other level of strategy!$"
 
 MyrriniIsland_EventScript_HexManiac_Text_0:
-# 327 "data/maps/MyrriniIsland/scripts.pory"
+# 332 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Crystal Girl$"
 
 MyrriniIsland_EventScript_HexManiac_Text_1:
-# 328 "data/maps/MyrriniIsland/scripts.pory"
+# 333 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Huff, huff... Come on, Zorua! We have to\n"
 	.string "keep training!$"
 
 MyrriniIsland_EventScript_HexManiac_Text_2:
-# 341 "data/maps/MyrriniIsland/scripts.pory"
+# 346 "data/maps/MyrriniIsland/scripts.pory"
 	.string "If you can do well in the Battle\n"
 	.string "Pavilion, so can Zorua and I! We're\l"
 	.string "gonna be the best!$"
 
 MyrriniIsland_EventScript_HexManiac_Text_3:
-# 351 "data/maps/MyrriniIsland/scripts.pory"
+# 356 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Oh! Sorry, we were in an intense training\n"
 	.string "match. Zorua tried their best, but the\l"
 	.string "Battle Pavilion proved to be too much\l"
@@ -1446,12 +1454,12 @@ MyrriniIsland_EventScript_HexManiac_Text_3:
 	.string "Pavilion{COLOR DARK_GRAY}, let me know what you think.$"
 
 MyrriniIsland_EventScript_HexManiac_Text_4:
-# 359 "data/maps/MyrriniIsland/scripts.pory"
+# 364 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Hey, you're back! Have you tried the\n"
 	.string "Battle Pavilion on Myrrini Island yet?$"
 
 MyrriniIsland_EventScript_HexManiac_Text_5:
-# 366 "data/maps/MyrriniIsland/scripts.pory"
+# 371 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Oh, you actually did! And your Pokémon\n"
 	.string "did alright?\p"
 	.string "Okay, I'm convinced now! Zorua and I\n"
@@ -1459,7 +1467,7 @@ MyrriniIsland_EventScript_HexManiac_Text_5:
 	.string "inspiring me. Take this!$"
 
 MyrriniIsland_EventScript_HexManiac_Text_6:
-# 378 "data/maps/MyrriniIsland/scripts.pory"
+# 383 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Not yet, huh? I know, it's super\n"
 	.string "intimidating!\p"
 	.string "Come back once you've tried the {COLOR GREEN}Myrrini\n"
@@ -1467,19 +1475,19 @@ MyrriniIsland_EventScript_HexManiac_Text_6:
 	.string "training!$"
 
 MyrriniIsland_EventScript_Zorua_Text_0:
-# 390 "data/maps/MyrriniIsland/scripts.pory"
+# 395 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Zorua$"
 
 MyrriniIsland_EventScript_Zorua_Text_1:
-# 392 "data/maps/MyrriniIsland/scripts.pory"
+# 397 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Huaaa...$"
 
 MyrriniIsland_EventScript_Scientist_Text_0:
-# 403 "data/maps/MyrriniIsland/scripts.pory"
+# 408 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Scientist$"
 
 MyrriniIsland_EventScript_Scientist_Text_1:
-# 404 "data/maps/MyrriniIsland/scripts.pory"
+# 409 "data/maps/MyrriniIsland/scripts.pory"
 	.string "I hear the Gym Leader on this island\n"
 	.string "specializes in Poison-types and pulling\l"
 	.string "tricks, like confusing opposing\l"
@@ -1487,47 +1495,47 @@ MyrriniIsland_EventScript_Scientist_Text_1:
 	.string "to win, that's for sure...$"
 
 MyrriniIsland_EventScript_Toucannon_Text_0:
-# 414 "data/maps/MyrriniIsland/scripts.pory"
+# 419 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Toucannon$"
 
 MyrriniIsland_EventScript_Toucannon_Text_1:
-# 416 "data/maps/MyrriniIsland/scripts.pory"
+# 421 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Caww-aww!$"
 
 MyrriniIsland_EventScript_Toucannon_Text_2:
-# 420 "data/maps/MyrriniIsland/scripts.pory"
+# 425 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Woah, it's a Toucannon! It must have\n"
 	.string "been flying by and stopped for fruit!$"
 
 MyrriniIsland_EventScript_Kilowattrel_Text_0:
-# 430 "data/maps/MyrriniIsland/scripts.pory"
+# 435 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Kilowattrel$"
 
 MyrriniIsland_EventScript_Kilowattrel_Text_1:
-# 432 "data/maps/MyrriniIsland/scripts.pory"
+# 437 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Eee! Kreee!$"
 
 MyrriniIsland_EventScript_Kilowattrel_Text_2:
-# 436 "data/maps/MyrriniIsland/scripts.pory"
+# 441 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Woah, it's a Kilowattrel! It must have\n"
 	.string "been flying by and stopped for fruit!$"
 
 MyrriniIsland_EventScript_Sailor_Text_0:
-# 446 "data/maps/MyrriniIsland/scripts.pory"
+# 451 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Sailor$"
 
 MyrriniIsland_EventScript_Sailor_Text_1:
-# 447 "data/maps/MyrriniIsland/scripts.pory"
+# 452 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Ships from all over the Ilios Region\n"
 	.string "stop here to trade. We're expecting a\l"
 	.string "big shipment soon!$"
 
 MyrriniIsland_EventScript_OldMan_Text_0:
-# 457 "data/maps/MyrriniIsland/scripts.pory"
+# 462 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Old Man$"
 
 MyrriniIsland_EventScript_OldMan_Text_1:
-# 458 "data/maps/MyrriniIsland/scripts.pory"
+# 463 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Fwahaha, I love seeing Trainers come\n"
 	.string "and go from the Battle Pavilion! I give\l"
 	.string "them words of encouragement on the way\l"
@@ -1535,44 +1543,44 @@ MyrriniIsland_EventScript_OldMan_Text_1:
 	.string "they leave.$"
 
 MyrriniIsland_EventScript_BattlePavilionSign_Text_0:
-# 467 "data/maps/MyrriniIsland/scripts.pory"
+# 472 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Myrrini Island Battle Pavilion\n"
 	.string "Try a New Type of Battle!$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_0:
-# 479 "data/maps/MyrriniIsland/scripts.pory"
+# 484 "data/maps/MyrriniIsland/scripts.pory"
 	.string "???$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_1:
-# 480 "data/maps/MyrriniIsland/scripts.pory"
+# 485 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Hey, get away from me!$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_2:
-# 493 "data/maps/MyrriniIsland/scripts.pory"
+# 498 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Euterpe$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_3:
-# 494 "data/maps/MyrriniIsland/scripts.pory"
+# 499 "data/maps/MyrriniIsland/scripts.pory"
 	.string "{PLAYER}, did you hear that? Sounds\n"
 	.string "like someone's in trouble. No\l"
 	.string "disruptions to the party on my Island!$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_4:
-# 503 "data/maps/MyrriniIsland/scripts.pory"
+# 508 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Rania$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_5:
-# 504 "data/maps/MyrriniIsland/scripts.pory"
+# 509 "data/maps/MyrriniIsland/scripts.pory"
 	.string "{PLAYER}, thank the Fates! I'm being\n"
 	.string "swarmed with Team Chimera Admins!\l"
 	.string "Please, give me some help here!$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_6:
-# 509 "data/maps/MyrriniIsland/scripts.pory"
+# 514 "data/maps/MyrriniIsland/scripts.pory"
 	.string "HOLD IT!$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_7:
-# 517 "data/maps/MyrriniIsland/scripts.pory"
+# 522 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Team Chimera? On MY island?! No no no,\n"
 	.string "this is all wrong! I don't appreciate\l"
 	.string "party crashers here!\p"
@@ -1580,35 +1588,35 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_7:
 	.string "my Hypno to throw you into the sea?$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_8:
-# 521 "data/maps/MyrriniIsland/scripts.pory"
+# 526 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Chimera Admin 1$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_9:
-# 522 "data/maps/MyrriniIsland/scripts.pory"
+# 527 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Kekeke, you think you can take us on?\n"
 	.string "You're fools, all of you! Get ready to-$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_10:
-# 528 "data/maps/MyrriniIsland/scripts.pory"
+# 533 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Chimera Admin 2$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_11:
-# 529 "data/maps/MyrriniIsland/scripts.pory"
+# 534 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Hey, the Boss is coming! Get out of the\n"
 	.string "way!$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_12:
-# 542 "data/maps/MyrriniIsland/scripts.pory"
+# 547 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Chimera Boss$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_13:
-# 543 "data/maps/MyrriniIsland/scripts.pory"
+# 548 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Hm. Quite the party we have going on\n"
 	.string "here, eh? A great, big circus, and all I\l"
 	.string "see are clowns.$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_14:
-# 548 "data/maps/MyrriniIsland/scripts.pory"
+# 553 "data/maps/MyrriniIsland/scripts.pory"
 	.string "You two. The tip specifically told us\n"
 	.string "MARMARO Island, not MYRRINI Island.\l"
 	.string "But when I got to the mines, imagine my\l"
@@ -1618,20 +1626,20 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_14:
 	.string "but here you are on the WRONG ISLAND!{COLOR DARK_GRAY}$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_15:
-# 550 "data/maps/MyrriniIsland/scripts.pory"
+# 555 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Chimera Admins$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_16:
-# 551 "data/maps/MyrriniIsland/scripts.pory"
+# 556 "data/maps/MyrriniIsland/scripts.pory"
 	.string "W-we-we're sorry, {COLOR RED}Miss Kalliope{COLOR DARK_GRAY}! We'll\n"
 	.string "get to the {COLOR GREEN}Marmaro Mines{COLOR DARK_GRAY} right away!$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_17:
-# 562 "data/maps/MyrriniIsland/scripts.pory"
+# 567 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Kalliope$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_18:
-# 563 "data/maps/MyrriniIsland/scripts.pory"
+# 568 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Sigh... I apologize for losing my temper.\n"
 	.string "Their repeated failures to fight you\l"
 	.string "have brought shame to Team Chimera. In\l"
@@ -1660,14 +1668,14 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_18:
 	.string "This is my ultimate dream.$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_19:
-# 569 "data/maps/MyrriniIsland/scripts.pory"
+# 574 "data/maps/MyrriniIsland/scripts.pory"
 	.string "But why?! Trafficking Pokémon and\n"
 	.string "using the strongest to destroy the\l"
 	.string "environment... how could that POSSIBLY\l"
 	.string "be a good thing?$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_20:
-# 574 "data/maps/MyrriniIsland/scripts.pory"
+# 579 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Money makes the world go 'round, you\n"
 	.string "naive child. When I look at a forest\l"
 	.string "filled with wildlife, all I see are dollar\l"
@@ -1676,7 +1684,7 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_20:
 	.string "can be sold, so they must all be mine.$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_21:
-# 579 "data/maps/MyrriniIsland/scripts.pory"
+# 584 "data/maps/MyrriniIsland/scripts.pory"
 	.string "{PLAYER}, right? My Admins, as simple\n"
 	.string "as they can be, have told me about you.\l"
 	.string "You've given us more trouble than just\l"
@@ -1689,7 +1697,7 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_21:
 	.string "show!$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_22:
-# 590 "data/maps/MyrriniIsland/scripts.pory"
+# 595 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Kalliope... I... I can't believe it. She was\n"
 	.string "the {COLOR GREEN}8th Gym Leader{COLOR DARK_GRAY}, living in a southern\l"
 	.string "village called Areios Town. Team Chimera\l"
@@ -1705,7 +1713,7 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_22:
 	.string "stay here and keep Myrrini Island safe.$"
 
 MyrriniIsland_EventScript_ChimeraEvent_Text_23:
-# 607 "data/maps/MyrriniIsland/scripts.pory"
+# 612 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Ugh, Team Chimera is going way too far!\n"
 	.string "I knew they were collecting Pokémon\l"
 	.string "and looking for ways to gain power, but\l"

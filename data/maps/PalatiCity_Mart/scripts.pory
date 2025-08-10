@@ -1,0 +1,60 @@
+mapscripts PalatiCity_Mart_MapScripts {}
+
+script PalatiCity_Mart_EventScript_MartEmployee
+{
+    lock
+    faceplayer
+    speakername("Mart Employee")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(PalatiCity_Mart_Shop)
+    closemessage
+    delay(1)
+    speakername("Mart Employee")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+
+}
+
+mart PalatiCity_Mart_Shop
+{
+    ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+    ITEM_ULTRA_BALL
+	ITEM_POTION
+	ITEM_SUPER_POTION
+    ITEM_HYPER_POTION
+    ITEM_REVIVE
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_FULL_HEAL
+	ITEM_ESCAPE_ROPE
+	ITEM_REPEL
+    ITEM_SUPER_REPEL
+    ITEM_MAX_REPEL
+}
+
+script PalatiCity_Mart_Athlete
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    msgbox(format("The Poké Mart and Pokémon Center are some of the only recently-made buildings in the city. All the other buildings are hundreds of years old."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_Mart_PerformerM
+{
+    lock
+    faceplayer
+    speakername("Performer")
+    msgbox(format("Litleo can evolve into two different forms of Pyroar depending on its gender. Male Pyroar have higher physical Attack, while Female Pyroar have higher Special Attack."))
+    closemessage
+    release
+    end
+}

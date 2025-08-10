@@ -520,7 +520,7 @@ AcrisiaCity_University_EventScript_Niko::
 	compare VAR_NIKO_STATE, 8
 	goto_if_ge AcrisiaCity_University_EventScript_Niko_10
 AcrisiaCity_University_EventScript_Niko_1:
-# 429 "data/maps/AcrisiaCity_University/scripts.pory"
+# 437 "data/maps/AcrisiaCity_University/scripts.pory"
 	release
 	end
 
@@ -657,13 +657,13 @@ AcrisiaCity_University_EventScript_Niko_10:
 # 384 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq AcrisiaCity_University_EventScript_Niko_21
-# 422 "data/maps/AcrisiaCity_University/scripts.pory"
+# 430 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_8
-# 423 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_Niko_Text_19
-# 424 "data/maps/AcrisiaCity_University/scripts.pory"
+# 431 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_Niko_Text_20
+# 432 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 425 "data/maps/AcrisiaCity_University/scripts.pory"
+# 433 "data/maps/AcrisiaCity_University/scripts.pory"
 	release
 	end
 
@@ -680,12 +680,12 @@ AcrisiaCity_University_EventScript_Niko_20:
 	compare VAR_RESULT, 0
 	goto_if_eq AcrisiaCity_University_EventScript_Niko_25
 # 363 "data/maps/AcrisiaCity_University/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, AcrisiaCity_University_EventScript_Niko_37
+	goto_if_unset FLAG_BADGE05_GET, AcrisiaCity_University_EventScript_Niko_39
 # 367 "data/maps/AcrisiaCity_University/scripts.pory"
-	goto_if_unset FLAG_BADGE06_GET, AcrisiaCity_University_EventScript_Niko_38
+	goto_if_unset FLAG_BADGE06_GET, AcrisiaCity_University_EventScript_Niko_40
 # 373 "data/maps/AcrisiaCity_University/scripts.pory"
 	pokemart AcrisiaCity_University_Mart_MegaStones_CompleteShop
-AcrisiaCity_University_EventScript_Niko_36:
+AcrisiaCity_University_EventScript_Niko_38:
 # 375 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 # 376 "data/maps/AcrisiaCity_University/scripts.pory"
@@ -713,6 +713,9 @@ AcrisiaCity_University_EventScript_Niko_21:
 # 411 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_NIKO_STATE, 11
 	goto_if_eq AcrisiaCity_University_EventScript_Niko_31
+# 419 "data/maps/AcrisiaCity_University/scripts.pory"
+	compare VAR_NIKO_STATE, 12
+	goto_if_eq AcrisiaCity_University_EventScript_Niko_32
 	goto AcrisiaCity_University_EventScript_Niko_1
 
 AcrisiaCity_University_EventScript_Niko_25:
@@ -770,1322 +773,1346 @@ AcrisiaCity_University_EventScript_Niko_31:
 	release
 	end
 
-AcrisiaCity_University_EventScript_Niko_37:
+AcrisiaCity_University_EventScript_Niko_32:
+# 421 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_8
+# 422 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_Niko_Text_19
+# 423 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 424 "data/maps/AcrisiaCity_University/scripts.pory"
+	release
+	end
+
+AcrisiaCity_University_EventScript_Niko_39:
 # 365 "data/maps/AcrisiaCity_University/scripts.pory"
 	pokemart AcrisiaCity_University_Mart_MegaStones_Shop1
-	goto AcrisiaCity_University_EventScript_Niko_36
+	goto AcrisiaCity_University_EventScript_Niko_38
 
-AcrisiaCity_University_EventScript_Niko_38:
+AcrisiaCity_University_EventScript_Niko_40:
 # 369 "data/maps/AcrisiaCity_University/scripts.pory"
 	pokemart AcrisiaCity_University_Mart_MegaStones_Shop2
-	goto AcrisiaCity_University_EventScript_Niko_36
+	goto AcrisiaCity_University_EventScript_Niko_38
 
 
 	.align 2
-# 433 "data/maps/AcrisiaCity_University/scripts.pory"
-AcrisiaCity_University_Mart_MegaStones_Shop1:
-# 435 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_GYARADOSITE
-# 436 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_NOCTOWLITE
-# 437 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_AMPHAROSITE
-# 438 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_SCIZORITE
-# 439 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_HERACRONITE
-# 440 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_HOUNDOOMINITE
 # 441 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_MAWILITE
-# 442 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_AGGRONITE
+AcrisiaCity_University_Mart_MegaStones_Shop1:
 # 443 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_CAMERUPTITE
+	.2byte ITEM_GYARADOSITE
 # 444 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_ALTARIANITE
+	.2byte ITEM_NOCTOWLITE
 # 445 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_BANETTITE
+	.2byte ITEM_AMPHAROSITE
 # 446 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_MANDIBITE
+	.2byte ITEM_SCIZORITE
 # 447 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_HELIOLITE
+	.2byte ITEM_HERACRONITE
 # 448 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_RIBOMBITE
+	.2byte ITEM_HOUNDOOMINITE
 # 449 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_WYRDEERITE
+	.2byte ITEM_MAWILITE
 # 450 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_TINKATITE
-	.2byte ITEM_NONE
-
-	.align 2
+	.2byte ITEM_AGGRONITE
+# 451 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_CAMERUPTITE
+# 452 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_ALTARIANITE
 # 453 "data/maps/AcrisiaCity_University/scripts.pory"
-AcrisiaCity_University_Mart_MegaStones_Shop2:
-# 455 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_GENGARITE
-# 456 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_GYARADOSITE
-# 457 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_LAPRASITE
-# 458 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_AERODACTYLITE
-# 459 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_NOCTOWLITE
-# 460 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_AMPHAROSITE
-# 461 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_STEELIXITE
-# 462 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_SCIZORITE
-# 463 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_HERACRONITE
-# 464 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_HOUNDOOMINITE
-# 465 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_GARDEVOIRITE
-# 466 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_MAWILITE
-# 467 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_AGGRONITE
-# 468 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_MEDICHAMITE
-# 469 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_CAMERUPTITE
-# 470 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_FLYGONITE
-# 471 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_ALTARIANITE
-# 472 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_BANETTITE
-# 473 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_GALLADITE
-# 474 "data/maps/AcrisiaCity_University/scripts.pory"
+# 454 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_MANDIBITE
-# 475 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_PANGORITE
-# 476 "data/maps/AcrisiaCity_University/scripts.pory"
+# 455 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_HELIOLITE
-# 477 "data/maps/AcrisiaCity_University/scripts.pory"
+# 456 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_RIBOMBITE
-# 478 "data/maps/AcrisiaCity_University/scripts.pory"
+# 457 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_WYRDEERITE
-# 479 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_CENTISKITE
-# 480 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_COPPERAJITE
-# 481 "data/maps/AcrisiaCity_University/scripts.pory"
+# 458 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_TINKATITE
 	.2byte ITEM_NONE
 
 	.align 2
-# 484 "data/maps/AcrisiaCity_University/scripts.pory"
-AcrisiaCity_University_Mart_MegaStones_CompleteShop:
-# 486 "data/maps/AcrisiaCity_University/scripts.pory"
+# 461 "data/maps/AcrisiaCity_University/scripts.pory"
+AcrisiaCity_University_Mart_MegaStones_Shop2:
+# 463 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_GENGARITE
-# 487 "data/maps/AcrisiaCity_University/scripts.pory"
+# 464 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_GYARADOSITE
-# 488 "data/maps/AcrisiaCity_University/scripts.pory"
+# 465 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_LAPRASITE
-# 489 "data/maps/AcrisiaCity_University/scripts.pory"
+# 466 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_AERODACTYLITE
-# 490 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_DRAGONITEITE
-# 491 "data/maps/AcrisiaCity_University/scripts.pory"
+# 467 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_NOCTOWLITE
-# 492 "data/maps/AcrisiaCity_University/scripts.pory"
+# 468 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_AMPHAROSITE
-# 493 "data/maps/AcrisiaCity_University/scripts.pory"
+# 469 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_STEELIXITE
-# 494 "data/maps/AcrisiaCity_University/scripts.pory"
+# 470 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_SCIZORITE
-# 495 "data/maps/AcrisiaCity_University/scripts.pory"
+# 471 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_HERACRONITE
-# 496 "data/maps/AcrisiaCity_University/scripts.pory"
+# 472 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_HOUNDOOMINITE
-# 497 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_TYRANITARITE
-# 498 "data/maps/AcrisiaCity_University/scripts.pory"
+# 473 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_GARDEVOIRITE
-# 499 "data/maps/AcrisiaCity_University/scripts.pory"
+# 474 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_MAWILITE
-# 500 "data/maps/AcrisiaCity_University/scripts.pory"
+# 475 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_AGGRONITE
-# 501 "data/maps/AcrisiaCity_University/scripts.pory"
+# 476 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_MEDICHAMITE
-# 502 "data/maps/AcrisiaCity_University/scripts.pory"
+# 477 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_CAMERUPTITE
-# 503 "data/maps/AcrisiaCity_University/scripts.pory"
+# 478 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_FLYGONITE
-# 504 "data/maps/AcrisiaCity_University/scripts.pory"
+# 479 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_ALTARIANITE
-# 505 "data/maps/AcrisiaCity_University/scripts.pory"
+# 480 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_BANETTITE
-# 506 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_GLALITITE
-# 507 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_ABOMASITE
-# 508 "data/maps/AcrisiaCity_University/scripts.pory"
+# 481 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_GALLADITE
-# 509 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_ARCHEOPSITE
-# 510 "data/maps/AcrisiaCity_University/scripts.pory"
+# 482 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_MANDIBITE
-# 511 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_GOGOATITE
-# 512 "data/maps/AcrisiaCity_University/scripts.pory"
+# 483 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_PANGORITE
-# 513 "data/maps/AcrisiaCity_University/scripts.pory"
+# 484 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_HELIOLITE
-# 514 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_TOUCANNONITE
-# 515 "data/maps/AcrisiaCity_University/scripts.pory"
+# 485 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_RIBOMBITE
-# 516 "data/maps/AcrisiaCity_University/scripts.pory"
+# 486 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_WYRDEERITE
-# 517 "data/maps/AcrisiaCity_University/scripts.pory"
+# 487 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_CENTISKITE
-# 518 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_GRIMMSNARLITE
-# 519 "data/maps/AcrisiaCity_University/scripts.pory"
+# 488 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_COPPERAJITE
-# 520 "data/maps/AcrisiaCity_University/scripts.pory"
+# 489 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_TINKATITE
+	.2byte ITEM_NONE
+
+	.align 2
+# 492 "data/maps/AcrisiaCity_University/scripts.pory"
+AcrisiaCity_University_Mart_MegaStones_CompleteShop:
+# 494 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_GENGARITE
+# 495 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_GYARADOSITE
+# 496 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_LAPRASITE
+# 497 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_AERODACTYLITE
+# 498 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_DRAGONITEITE
+# 499 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_NOCTOWLITE
+# 500 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_AMPHAROSITE
+# 501 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_STEELIXITE
+# 502 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_SCIZORITE
+# 503 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_HERACRONITE
+# 504 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_HOUNDOOMINITE
+# 505 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_TYRANITARITE
+# 506 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_GARDEVOIRITE
+# 507 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_MAWILITE
+# 508 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_AGGRONITE
+# 509 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_MEDICHAMITE
+# 510 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_CAMERUPTITE
+# 511 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_FLYGONITE
+# 512 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_ALTARIANITE
+# 513 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_BANETTITE
+# 514 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_GLALITITE
+# 515 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_ABOMASITE
+# 516 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_GALLADITE
+# 517 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_ARCHEOPSITE
+# 518 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_MANDIBITE
+# 519 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_GOGOATITE
+# 520 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_PANGORITE
 # 521 "data/maps/AcrisiaCity_University/scripts.pory"
-	.2byte ITEM_CYCLIZITE_S
+	.2byte ITEM_HELIOLITE
 # 522 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_TOUCANNONITE
+# 523 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_RIBOMBITE
+# 524 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_WYRDEERITE
+# 525 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_CENTISKITE
+# 526 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_GRIMMSNARLITE
+# 527 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_COPPERAJITE
+# 528 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_TINKATITE
+# 529 "data/maps/AcrisiaCity_University/scripts.pory"
+	.2byte ITEM_CYCLIZITE_S
+# 530 "data/maps/AcrisiaCity_University/scripts.pory"
 	.2byte ITEM_CYCLIZITE_V
 	.2byte ITEM_NONE
 
 AcrisiaCity_University_EventScript_Rania::
-# 527 "data/maps/AcrisiaCity_University/scripts.pory"
+# 535 "data/maps/AcrisiaCity_University/scripts.pory"
 	lock
-# 528 "data/maps/AcrisiaCity_University/scripts.pory"
+# 536 "data/maps/AcrisiaCity_University/scripts.pory"
 	faceplayer
-# 529 "data/maps/AcrisiaCity_University/scripts.pory"
+# 537 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 0
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_2
-# 535 "data/maps/AcrisiaCity_University/scripts.pory"
+# 543 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 1
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_3
-# 541 "data/maps/AcrisiaCity_University/scripts.pory"
+# 549 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 2
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_4
-# 554 "data/maps/AcrisiaCity_University/scripts.pory"
+# 562 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 3
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_5
-# 560 "data/maps/AcrisiaCity_University/scripts.pory"
+# 568 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 4
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_6
-# 566 "data/maps/AcrisiaCity_University/scripts.pory"
+# 574 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 5
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_7
-# 579 "data/maps/AcrisiaCity_University/scripts.pory"
+# 587 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 6
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_8
-# 585 "data/maps/AcrisiaCity_University/scripts.pory"
+# 593 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 7
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_9
-# 592 "data/maps/AcrisiaCity_University/scripts.pory"
+# 600 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 8
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_10
-# 598 "data/maps/AcrisiaCity_University/scripts.pory"
+# 606 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 9
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_11
-# 604 "data/maps/AcrisiaCity_University/scripts.pory"
-	compare VAR_RANIA_STATE, 10
-	goto_if_ge AcrisiaCity_University_EventScript_Rania_17
-AcrisiaCity_University_EventScript_Rania_15:
 # 612 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RANIA_STATE, 10
+	goto_if_ge AcrisiaCity_University_EventScript_Rania_19
+AcrisiaCity_University_EventScript_Rania_17:
+# 620 "data/maps/AcrisiaCity_University/scripts.pory"
+	compare VAR_RANIA_STATE, 10
+	goto_if_eq AcrisiaCity_University_EventScript_Rania_16
+AcrisiaCity_University_EventScript_Rania_15:
+# 626 "data/maps/AcrisiaCity_University/scripts.pory"
+	compare VAR_RANIA_STATE, 11
 	goto_if_eq AcrisiaCity_University_EventScript_Rania_14
 AcrisiaCity_University_EventScript_Rania_1:
-# 618 "data/maps/AcrisiaCity_University/scripts.pory"
+# 632 "data/maps/AcrisiaCity_University/scripts.pory"
 	release
 	end
 
 AcrisiaCity_University_EventScript_Rania_2:
-# 531 "data/maps/AcrisiaCity_University/scripts.pory"
+# 539 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 532 "data/maps/AcrisiaCity_University/scripts.pory"
+# 540 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_Rania_Text_0
-# 533 "data/maps/AcrisiaCity_University/scripts.pory"
+# 541 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_3:
-# 537 "data/maps/AcrisiaCity_University/scripts.pory"
+# 545 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 538 "data/maps/AcrisiaCity_University/scripts.pory"
+# 546 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_Rania_Text_1
-# 539 "data/maps/AcrisiaCity_University/scripts.pory"
+# 547 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_4:
-# 543 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 544 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_Rania_Text_2
-# 545 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 546 "data/maps/AcrisiaCity_University/scripts.pory"
-	giveitem ITEM_WISHING_STAR, 2
-# 547 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 548 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 5
-# 549 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 550 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_Rania_Text_3
 # 551 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
 # 552 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_Rania_Text_2
+# 553 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 554 "data/maps/AcrisiaCity_University/scripts.pory"
+	giveitem ITEM_WISHING_STAR, 2
+# 555 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 556 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 5
+# 557 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
+# 558 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_Rania_Text_3
+# 559 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 560 "data/maps/AcrisiaCity_University/scripts.pory"
 	setvar VAR_RANIA_STATE, 3
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_5:
-# 556 "data/maps/AcrisiaCity_University/scripts.pory"
+# 564 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 557 "data/maps/AcrisiaCity_University/scripts.pory"
+# 565 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_Rania_Text_4
-# 558 "data/maps/AcrisiaCity_University/scripts.pory"
+# 566 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_6:
-# 562 "data/maps/AcrisiaCity_University/scripts.pory"
+# 570 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 563 "data/maps/AcrisiaCity_University/scripts.pory"
+# 571 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_Rania_Text_5
-# 564 "data/maps/AcrisiaCity_University/scripts.pory"
+# 572 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_7:
-# 568 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 569 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_Rania_Text_6
-# 570 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 571 "data/maps/AcrisiaCity_University/scripts.pory"
-	giveitem ITEM_ROCKY_HELMET
-# 572 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 573 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 5
-# 574 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 575 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_Rania_Text_7
 # 576 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
 # 577 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_Rania_Text_6
+# 578 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 579 "data/maps/AcrisiaCity_University/scripts.pory"
+	giveitem ITEM_ROCKY_HELMET
+# 580 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 581 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 5
+# 582 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
+# 583 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_Rania_Text_7
+# 584 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 585 "data/maps/AcrisiaCity_University/scripts.pory"
 	setvar VAR_RANIA_STATE, 6
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_8:
-# 581 "data/maps/AcrisiaCity_University/scripts.pory"
+# 589 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 582 "data/maps/AcrisiaCity_University/scripts.pory"
+# 590 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_Rania_Text_8
-# 583 "data/maps/AcrisiaCity_University/scripts.pory"
+# 591 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_9:
-# 587 "data/maps/AcrisiaCity_University/scripts.pory"
+# 595 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 588 "data/maps/AcrisiaCity_University/scripts.pory"
+# 596 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_Rania_Text_9
-# 589 "data/maps/AcrisiaCity_University/scripts.pory"
+# 597 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 590 "data/maps/AcrisiaCity_University/scripts.pory"
+# 598 "data/maps/AcrisiaCity_University/scripts.pory"
 	setvar VAR_RANIA_STATE, 8
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_10:
-# 594 "data/maps/AcrisiaCity_University/scripts.pory"
+# 602 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 595 "data/maps/AcrisiaCity_University/scripts.pory"
+# 603 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_Rania_Text_10
-# 596 "data/maps/AcrisiaCity_University/scripts.pory"
+# 604 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_11:
-# 600 "data/maps/AcrisiaCity_University/scripts.pory"
+# 608 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 601 "data/maps/AcrisiaCity_University/scripts.pory"
+# 609 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_Rania_Text_11
-# 602 "data/maps/AcrisiaCity_University/scripts.pory"
+# 610 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_12:
-# 606 "data/maps/AcrisiaCity_University/scripts.pory"
+# 614 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 607 "data/maps/AcrisiaCity_University/scripts.pory"
+# 615 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_Rania_Text_12
-# 608 "data/maps/AcrisiaCity_University/scripts.pory"
+# 616 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 609 "data/maps/AcrisiaCity_University/scripts.pory"
+# 617 "data/maps/AcrisiaCity_University/scripts.pory"
 	giveitem ITEM_TM_STEEL_WING
-# 610 "data/maps/AcrisiaCity_University/scripts.pory"
+# 618 "data/maps/AcrisiaCity_University/scripts.pory"
 	setflag FLAG_GOT_STEEL_WING_FROM_RANIA
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_13:
-# 614 "data/maps/AcrisiaCity_University/scripts.pory"
+# 622 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
-# 615 "data/maps/AcrisiaCity_University/scripts.pory"
+# 623 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_Rania_Text_13
-# 616 "data/maps/AcrisiaCity_University/scripts.pory"
+# 624 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_Rania_1
 
 AcrisiaCity_University_EventScript_Rania_14:
-# 612 "data/maps/AcrisiaCity_University/scripts.pory"
-	goto_if_set FLAG_GOT_STEEL_WING_FROM_RANIA, AcrisiaCity_University_EventScript_Rania_13
+# 628 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_11
+# 629 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_Rania_Text_14
+# 630 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
 	goto AcrisiaCity_University_EventScript_Rania_1
 
-AcrisiaCity_University_EventScript_Rania_17:
-# 604 "data/maps/AcrisiaCity_University/scripts.pory"
-	goto_if_unset FLAG_GOT_STEEL_WING_FROM_RANIA, AcrisiaCity_University_EventScript_Rania_12
+AcrisiaCity_University_EventScript_Rania_16:
+# 620 "data/maps/AcrisiaCity_University/scripts.pory"
+	goto_if_set FLAG_GOT_STEEL_WING_FROM_RANIA, AcrisiaCity_University_EventScript_Rania_13
 	goto AcrisiaCity_University_EventScript_Rania_15
+
+AcrisiaCity_University_EventScript_Rania_19:
+# 612 "data/maps/AcrisiaCity_University/scripts.pory"
+	goto_if_unset FLAG_GOT_STEEL_WING_FROM_RANIA, AcrisiaCity_University_EventScript_Rania_12
+	goto AcrisiaCity_University_EventScript_Rania_17
 
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger1::
-# 630 "data/maps/AcrisiaCity_University/scripts.pory"
+# 644 "data/maps/AcrisiaCity_University/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 631 "data/maps/AcrisiaCity_University/scripts.pory"
+# 645 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs
 	return
 
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger2::
-# 635 "data/maps/AcrisiaCity_University/scripts.pory"
+# 649 "data/maps/AcrisiaCity_University/scripts.pory"
 	setvar VAR_TEMP_1, 2
-# 636 "data/maps/AcrisiaCity_University/scripts.pory"
+# 650 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs
 	return
 
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger3::
-# 640 "data/maps/AcrisiaCity_University/scripts.pory"
+# 654 "data/maps/AcrisiaCity_University/scripts.pory"
 	setvar VAR_TEMP_1, 3
-# 641 "data/maps/AcrisiaCity_University/scripts.pory"
+# 655 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs
 	return
 
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Trigger4::
-# 645 "data/maps/AcrisiaCity_University/scripts.pory"
+# 659 "data/maps/AcrisiaCity_University/scripts.pory"
 	setvar VAR_TEMP_1, 4
-# 646 "data/maps/AcrisiaCity_University/scripts.pory"
+# 660 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs
 	return
 
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs::
-# 652 "data/maps/AcrisiaCity_University/scripts.pory"
+# 666 "data/maps/AcrisiaCity_University/scripts.pory"
 	lock
-# 653 "data/maps/AcrisiaCity_University/scripts.pory"
+# 667 "data/maps/AcrisiaCity_University/scripts.pory"
 	emote 3, EMOTE_EXCLAM
-# 654 "data/maps/AcrisiaCity_University/scripts.pory"
+# 668 "data/maps/AcrisiaCity_University/scripts.pory"
 	applymovement 3, Common_Movement_FaceLeft
-# 655 "data/maps/AcrisiaCity_University/scripts.pory"
+# 669 "data/maps/AcrisiaCity_University/scripts.pory"
 	waitmovement 0
-# 656 "data/maps/AcrisiaCity_University/scripts.pory"
+# 670 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_8
-# 657 "data/maps/AcrisiaCity_University/scripts.pory"
+# 671 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_0
-# 658 "data/maps/AcrisiaCity_University/scripts.pory"
+# 672 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 659 "data/maps/AcrisiaCity_University/scripts.pory"
+# 673 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_TEMP_1, 1
 	goto_if_eq AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_2
-# 663 "data/maps/AcrisiaCity_University/scripts.pory"
+# 677 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_TEMP_1, 2
 	goto_if_eq AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_3
-# 667 "data/maps/AcrisiaCity_University/scripts.pory"
+# 681 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_TEMP_1, 3
 	goto_if_eq AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_4
-# 671 "data/maps/AcrisiaCity_University/scripts.pory"
+# 685 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_TEMP_1, 4
 	goto_if_eq AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_5
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_1:
-# 675 "data/maps/AcrisiaCity_University/scripts.pory"
+# 689 "data/maps/AcrisiaCity_University/scripts.pory"
 	waitmovement 0
-# 677 "data/maps/AcrisiaCity_University/scripts.pory"
+# 691 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_8
-# 678 "data/maps/AcrisiaCity_University/scripts.pory"
+# 692 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_1, MSGBOX_YESNO
-# 679 "data/maps/AcrisiaCity_University/scripts.pory"
+# 693 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_11
-# 693 "data/maps/AcrisiaCity_University/scripts.pory"
+# 707 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_8
-# 694 "data/maps/AcrisiaCity_University/scripts.pory"
+# 708 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_4
-# 695 "data/maps/AcrisiaCity_University/scripts.pory"
+# 709 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 696 "data/maps/AcrisiaCity_University/scripts.pory"
+# 710 "data/maps/AcrisiaCity_University/scripts.pory"
 	giveitem ITEM_POKE_BALL, 10
-# 697 "data/maps/AcrisiaCity_University/scripts.pory"
+# 711 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 698 "data/maps/AcrisiaCity_University/scripts.pory"
+# 712 "data/maps/AcrisiaCity_University/scripts.pory"
 	delay 30
-# 699 "data/maps/AcrisiaCity_University/scripts.pory"
+# 713 "data/maps/AcrisiaCity_University/scripts.pory"
 	giveitem ITEM_GREAT_BALL, 3
-# 700 "data/maps/AcrisiaCity_University/scripts.pory"
+# 714 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 701 "data/maps/AcrisiaCity_University/scripts.pory"
+# 715 "data/maps/AcrisiaCity_University/scripts.pory"
 	delay 5
-# 702 "data/maps/AcrisiaCity_University/scripts.pory"
+# 716 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_8
-# 703 "data/maps/AcrisiaCity_University/scripts.pory"
+# 717 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_5
-# 704 "data/maps/AcrisiaCity_University/scripts.pory"
+# 718 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_10:
-# 706 "data/maps/AcrisiaCity_University/scripts.pory"
+# 720 "data/maps/AcrisiaCity_University/scripts.pory"
 	applymovement 3, Common_Movement_FaceUp
-# 707 "data/maps/AcrisiaCity_University/scripts.pory"
+# 721 "data/maps/AcrisiaCity_University/scripts.pory"
 	waitmovement 0
-# 708 "data/maps/AcrisiaCity_University/scripts.pory"
+# 722 "data/maps/AcrisiaCity_University/scripts.pory"
 	setvar VAR_INTRO_STATE, 4
-# 709 "data/maps/AcrisiaCity_University/scripts.pory"
+# 723 "data/maps/AcrisiaCity_University/scripts.pory"
 	release
 	end
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_2:
-# 661 "data/maps/AcrisiaCity_University/scripts.pory"
+# 675 "data/maps/AcrisiaCity_University/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_University_Movement_PlayerGoesToNiko_1
 	goto AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_1
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_3:
-# 665 "data/maps/AcrisiaCity_University/scripts.pory"
+# 679 "data/maps/AcrisiaCity_University/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_University_Movement_PlayerGoesToNiko_2
 	goto AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_1
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_4:
-# 669 "data/maps/AcrisiaCity_University/scripts.pory"
+# 683 "data/maps/AcrisiaCity_University/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_University_Movement_PlayerGoesToNiko_3
 	goto AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_1
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_5:
-# 673 "data/maps/AcrisiaCity_University/scripts.pory"
+# 687 "data/maps/AcrisiaCity_University/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, AcrisiaCity_University_Movement_PlayerGoesToNiko_4
 	goto AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_1
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_11:
-# 681 "data/maps/AcrisiaCity_University/scripts.pory"
+# 695 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_8
-# 682 "data/maps/AcrisiaCity_University/scripts.pory"
+# 696 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_2
-# 683 "data/maps/AcrisiaCity_University/scripts.pory"
+# 697 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 684 "data/maps/AcrisiaCity_University/scripts.pory"
+# 698 "data/maps/AcrisiaCity_University/scripts.pory"
 	giveitem ITEM_POKE_BALL, 3
-# 685 "data/maps/AcrisiaCity_University/scripts.pory"
+# 699 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 686 "data/maps/AcrisiaCity_University/scripts.pory"
+# 700 "data/maps/AcrisiaCity_University/scripts.pory"
 	delay 5
-# 687 "data/maps/AcrisiaCity_University/scripts.pory"
+# 701 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_8
-# 688 "data/maps/AcrisiaCity_University/scripts.pory"
+# 702 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_3
-# 689 "data/maps/AcrisiaCity_University/scripts.pory"
+# 703 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_10
 
 
-# 713 "data/maps/AcrisiaCity_University/scripts.pory"
+# 727 "data/maps/AcrisiaCity_University/scripts.pory"
 AcrisiaCity_University_Movement_PlayerGoesToNiko_1:
-# 715 "data/maps/AcrisiaCity_University/scripts.pory"
+# 729 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_down
-# 715 "data/maps/AcrisiaCity_University/scripts.pory"
+# 729 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_down
-# 716 "data/maps/AcrisiaCity_University/scripts.pory"
+# 730 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_right
-# 716 "data/maps/AcrisiaCity_University/scripts.pory"
+# 730 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_right
-# 716 "data/maps/AcrisiaCity_University/scripts.pory"
+# 730 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_right
-# 716 "data/maps/AcrisiaCity_University/scripts.pory"
+# 730 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_right
 	step_end
 
-# 718 "data/maps/AcrisiaCity_University/scripts.pory"
+# 732 "data/maps/AcrisiaCity_University/scripts.pory"
 AcrisiaCity_University_Movement_PlayerGoesToNiko_2:
-# 720 "data/maps/AcrisiaCity_University/scripts.pory"
+# 734 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_down
-# 720 "data/maps/AcrisiaCity_University/scripts.pory"
+# 734 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_down
-# 721 "data/maps/AcrisiaCity_University/scripts.pory"
+# 735 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_right
-# 721 "data/maps/AcrisiaCity_University/scripts.pory"
+# 735 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_right
-# 721 "data/maps/AcrisiaCity_University/scripts.pory"
+# 735 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_right
 	step_end
 
-# 723 "data/maps/AcrisiaCity_University/scripts.pory"
+# 737 "data/maps/AcrisiaCity_University/scripts.pory"
 AcrisiaCity_University_Movement_PlayerGoesToNiko_3:
-# 725 "data/maps/AcrisiaCity_University/scripts.pory"
+# 739 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_down
-# 725 "data/maps/AcrisiaCity_University/scripts.pory"
+# 739 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_down
-# 726 "data/maps/AcrisiaCity_University/scripts.pory"
+# 740 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_right
-# 726 "data/maps/AcrisiaCity_University/scripts.pory"
+# 740 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_right
 	step_end
 
-# 728 "data/maps/AcrisiaCity_University/scripts.pory"
+# 742 "data/maps/AcrisiaCity_University/scripts.pory"
 AcrisiaCity_University_Movement_PlayerGoesToNiko_4:
-# 730 "data/maps/AcrisiaCity_University/scripts.pory"
+# 744 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_down
-# 730 "data/maps/AcrisiaCity_University/scripts.pory"
+# 744 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_down
-# 731 "data/maps/AcrisiaCity_University/scripts.pory"
+# 745 "data/maps/AcrisiaCity_University/scripts.pory"
 	walk_right
 	step_end
 
 AcrisiaCity_EventScript_ProfessorElia::
-# 740 "data/maps/AcrisiaCity_University/scripts.pory"
+# 754 "data/maps/AcrisiaCity_University/scripts.pory"
 	lock
-# 741 "data/maps/AcrisiaCity_University/scripts.pory"
+# 755 "data/maps/AcrisiaCity_University/scripts.pory"
 	faceplayer
-# 743 "data/maps/AcrisiaCity_University/scripts.pory"
+# 757 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_INTRO_STATE, 2
 	goto_if_eq AcrisiaCity_EventScript_ProfessorElia_2
-# 747 "data/maps/AcrisiaCity_University/scripts.pory"
+# 761 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_INTRO_STATE, 3
 	goto_if_eq AcrisiaCity_EventScript_ProfessorElia_3
-# 747 "data/maps/AcrisiaCity_University/scripts.pory"
+# 761 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_INTRO_STATE, 4
 	goto_if_eq AcrisiaCity_EventScript_ProfessorElia_3
-# 751 "data/maps/AcrisiaCity_University/scripts.pory"
+# 765 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_INTRO_STATE, 5
 	goto_if_eq AcrisiaCity_EventScript_ProfessorElia_4
-# 760 "data/maps/AcrisiaCity_University/scripts.pory"
+# 774 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex
 AcrisiaCity_EventScript_ProfessorElia_1:
-# 763 "data/maps/AcrisiaCity_University/scripts.pory"
+# 777 "data/maps/AcrisiaCity_University/scripts.pory"
 	release
 	end
 
 AcrisiaCity_EventScript_ProfessorElia_2:
-# 745 "data/maps/AcrisiaCity_University/scripts.pory"
+# 759 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck
 	goto AcrisiaCity_EventScript_ProfessorElia_1
 
 AcrisiaCity_EventScript_ProfessorElia_3:
-# 749 "data/maps/AcrisiaCity_University/scripts.pory"
+# 763 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto AcrisiaCity_University_EventScript_EliaCheckBadgeOne
 	goto AcrisiaCity_EventScript_ProfessorElia_1
 
 AcrisiaCity_EventScript_ProfessorElia_4:
-# 753 "data/maps/AcrisiaCity_University/scripts.pory"
+# 767 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto AcrisiaCity_University_EventScript_EliaCheckBadgeTwo
 	goto AcrisiaCity_EventScript_ProfessorElia_1
 
 
 AcrisiaCity_University_EventScript_EliaRatePokedex::
-# 775 "data/maps/AcrisiaCity_University/scripts.pory"
+# 789 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 776 "data/maps/AcrisiaCity_University/scripts.pory"
+# 790 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_0, MSGBOX_YESNO
-# 777 "data/maps/AcrisiaCity_University/scripts.pory"
+# 791 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AcrisiaCity_University_EventScript_EliaRatePokedex_2
-# 786 "data/maps/AcrisiaCity_University/scripts.pory"
+# 800 "data/maps/AcrisiaCity_University/scripts.pory"
 	setvar VAR_0x8004, 0
-# 787 "data/maps/AcrisiaCity_University/scripts.pory"
+# 801 "data/maps/AcrisiaCity_University/scripts.pory"
 	specialvar VAR_RESULT, ScriptGetPokedexInfo
-# 788 "data/maps/AcrisiaCity_University/scripts.pory"
+# 802 "data/maps/AcrisiaCity_University/scripts.pory"
 	copyvar VAR_0x8008, VAR_0x8005
-# 789 "data/maps/AcrisiaCity_University/scripts.pory"
+# 803 "data/maps/AcrisiaCity_University/scripts.pory"
 	copyvar VAR_0x8009, VAR_0x8006
-# 790 "data/maps/AcrisiaCity_University/scripts.pory"
+# 804 "data/maps/AcrisiaCity_University/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_0x8008
-# 791 "data/maps/AcrisiaCity_University/scripts.pory"
+# 805 "data/maps/AcrisiaCity_University/scripts.pory"
 	buffernumberstring STR_VAR_2, VAR_0x8009
-# 792 "data/maps/AcrisiaCity_University/scripts.pory"
+# 806 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 793 "data/maps/AcrisiaCity_University/scripts.pory"
+# 807 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_2
-# 796 "data/maps/AcrisiaCity_University/scripts.pory"
+# 810 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_0x8009, 10
 	goto_if_ge AcrisiaCity_University_EventScript_EliaRatePokedex_6
 AcrisiaCity_University_EventScript_EliaRatePokedex_4:
-# 809 "data/maps/AcrisiaCity_University/scripts.pory"
+# 823 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_0x8009, 25
 	goto_if_ge AcrisiaCity_University_EventScript_EliaRatePokedex_11
 AcrisiaCity_University_EventScript_EliaRatePokedex_9:
-# 822 "data/maps/AcrisiaCity_University/scripts.pory"
+# 836 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_0x8009, 50
 	goto_if_ge AcrisiaCity_University_EventScript_EliaRatePokedex_16
 AcrisiaCity_University_EventScript_EliaRatePokedex_14:
-# 835 "data/maps/AcrisiaCity_University/scripts.pory"
+# 849 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_0x8009, 100
 	goto_if_ge AcrisiaCity_University_EventScript_EliaRatePokedex_21
 AcrisiaCity_University_EventScript_EliaRatePokedex_19:
-# 856 "data/maps/AcrisiaCity_University/scripts.pory"
+# 870 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_0x8009, 135
 	goto_if_ge AcrisiaCity_University_EventScript_EliaRatePokedex_26
 AcrisiaCity_University_EventScript_EliaRatePokedex_24:
-# 877 "data/maps/AcrisiaCity_University/scripts.pory"
+# 891 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_0x8009, 170
 	goto_if_ge AcrisiaCity_University_EventScript_EliaRatePokedex_31
 AcrisiaCity_University_EventScript_EliaRatePokedex_29:
-# 898 "data/maps/AcrisiaCity_University/scripts.pory"
+# 912 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_0x8009, 200
 	goto_if_ge AcrisiaCity_University_EventScript_EliaRatePokedex_36
 AcrisiaCity_University_EventScript_EliaRatePokedex_34:
-# 911 "data/maps/AcrisiaCity_University/scripts.pory"
+# 925 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_0x8009, 250
 	goto_if_ge AcrisiaCity_University_EventScript_EliaRatePokedex_41
 AcrisiaCity_University_EventScript_EliaRatePokedex_39:
-# 924 "data/maps/AcrisiaCity_University/scripts.pory"
+# 938 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_0x8009, 300
 	goto_if_ge AcrisiaCity_University_EventScript_EliaRatePokedex_46
 AcrisiaCity_University_EventScript_EliaRatePokedex_44:
-# 937 "data/maps/AcrisiaCity_University/scripts.pory"
+# 951 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_0x8009, 400
 	goto_if_ge AcrisiaCity_University_EventScript_EliaRatePokedex_50
-# 969 "data/maps/AcrisiaCity_University/scripts.pory"
+# 983 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 970 "data/maps/AcrisiaCity_University/scripts.pory"
+# 984 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_27
-# 971 "data/maps/AcrisiaCity_University/scripts.pory"
+# 985 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 AcrisiaCity_University_EventScript_EliaRatePokedex_49:
-# 974 "data/maps/AcrisiaCity_University/scripts.pory"
+# 988 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 975 "data/maps/AcrisiaCity_University/scripts.pory"
+# 989 "data/maps/AcrisiaCity_University/scripts.pory"
 	release
 	end
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_2:
-# 779 "data/maps/AcrisiaCity_University/scripts.pory"
+# 793 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 780 "data/maps/AcrisiaCity_University/scripts.pory"
+# 794 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_1
-# 781 "data/maps/AcrisiaCity_University/scripts.pory"
+# 795 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 782 "data/maps/AcrisiaCity_University/scripts.pory"
+# 796 "data/maps/AcrisiaCity_University/scripts.pory"
 	release
 	end
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_5:
-# 798 "data/maps/AcrisiaCity_University/scripts.pory"
+# 812 "data/maps/AcrisiaCity_University/scripts.pory"
 	setflag FLAG_UNIVERSITY_REWARD_ELIA_01
-# 799 "data/maps/AcrisiaCity_University/scripts.pory"
+# 813 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 800 "data/maps/AcrisiaCity_University/scripts.pory"
+# 814 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_3
-# 801 "data/maps/AcrisiaCity_University/scripts.pory"
+# 815 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 802 "data/maps/AcrisiaCity_University/scripts.pory"
+# 816 "data/maps/AcrisiaCity_University/scripts.pory"
 	giveitem ITEM_NUGGET
-# 803 "data/maps/AcrisiaCity_University/scripts.pory"
+# 817 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 804 "data/maps/AcrisiaCity_University/scripts.pory"
+# 818 "data/maps/AcrisiaCity_University/scripts.pory"
 	delay 5
-# 805 "data/maps/AcrisiaCity_University/scripts.pory"
+# 819 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 806 "data/maps/AcrisiaCity_University/scripts.pory"
+# 820 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_4
-# 807 "data/maps/AcrisiaCity_University/scripts.pory"
+# 821 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_4
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_6:
-# 796 "data/maps/AcrisiaCity_University/scripts.pory"
+# 810 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_unset FLAG_UNIVERSITY_REWARD_ELIA_01, AcrisiaCity_University_EventScript_EliaRatePokedex_5
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_4
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_10:
-# 811 "data/maps/AcrisiaCity_University/scripts.pory"
+# 825 "data/maps/AcrisiaCity_University/scripts.pory"
 	setflag FLAG_UNIVERSITY_REWARD_ELIA_02
-# 812 "data/maps/AcrisiaCity_University/scripts.pory"
+# 826 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 813 "data/maps/AcrisiaCity_University/scripts.pory"
+# 827 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_5
-# 814 "data/maps/AcrisiaCity_University/scripts.pory"
+# 828 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 815 "data/maps/AcrisiaCity_University/scripts.pory"
+# 829 "data/maps/AcrisiaCity_University/scripts.pory"
 	giveitem ITEM_LOADED_DICE
-# 816 "data/maps/AcrisiaCity_University/scripts.pory"
+# 830 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 817 "data/maps/AcrisiaCity_University/scripts.pory"
+# 831 "data/maps/AcrisiaCity_University/scripts.pory"
 	delay 5
-# 818 "data/maps/AcrisiaCity_University/scripts.pory"
+# 832 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 819 "data/maps/AcrisiaCity_University/scripts.pory"
+# 833 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_6
-# 820 "data/maps/AcrisiaCity_University/scripts.pory"
+# 834 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_9
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_11:
-# 809 "data/maps/AcrisiaCity_University/scripts.pory"
+# 823 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_unset FLAG_UNIVERSITY_REWARD_ELIA_02, AcrisiaCity_University_EventScript_EliaRatePokedex_10
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_9
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_15:
-# 824 "data/maps/AcrisiaCity_University/scripts.pory"
+# 838 "data/maps/AcrisiaCity_University/scripts.pory"
 	setflag FLAG_UNIVERSITY_REWARD_ELIA_03
-# 825 "data/maps/AcrisiaCity_University/scripts.pory"
+# 839 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 826 "data/maps/AcrisiaCity_University/scripts.pory"
+# 840 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_7
-# 827 "data/maps/AcrisiaCity_University/scripts.pory"
+# 841 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 828 "data/maps/AcrisiaCity_University/scripts.pory"
+# 842 "data/maps/AcrisiaCity_University/scripts.pory"
 	giveitem ITEM_TM_RETURN
-# 829 "data/maps/AcrisiaCity_University/scripts.pory"
+# 843 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 830 "data/maps/AcrisiaCity_University/scripts.pory"
+# 844 "data/maps/AcrisiaCity_University/scripts.pory"
 	delay 5
-# 831 "data/maps/AcrisiaCity_University/scripts.pory"
+# 845 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 832 "data/maps/AcrisiaCity_University/scripts.pory"
+# 846 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_8
-# 833 "data/maps/AcrisiaCity_University/scripts.pory"
+# 847 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_14
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_16:
-# 822 "data/maps/AcrisiaCity_University/scripts.pory"
+# 836 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_unset FLAG_UNIVERSITY_REWARD_ELIA_03, AcrisiaCity_University_EventScript_EliaRatePokedex_15
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_14
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_20:
-# 837 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_UNIVERSITY_REWARD_ELIA_04
-# 838 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 839 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_9
-# 840 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 841 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ROWLET
-# 842 "data/maps/AcrisiaCity_University/scripts.pory"
-	givemon SPECIES_ROWLET, 10
-# 843 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_LITTEN
-# 844 "data/maps/AcrisiaCity_University/scripts.pory"
-	givemon SPECIES_LITTEN, 10
-# 845 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_POPPLIO
-# 846 "data/maps/AcrisiaCity_University/scripts.pory"
-	givemon SPECIES_POPPLIO, 10
-# 847 "data/maps/AcrisiaCity_University/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 848 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_10
-# 849 "data/maps/AcrisiaCity_University/scripts.pory"
-	waitfanfare
-# 850 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
 # 851 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 10
+	setflag FLAG_UNIVERSITY_REWARD_ELIA_04
 # 852 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
 # 853 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_11
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_9
 # 854 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 855 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ROWLET
+# 856 "data/maps/AcrisiaCity_University/scripts.pory"
+	givemon SPECIES_ROWLET, 10
+# 857 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_LITTEN
+# 858 "data/maps/AcrisiaCity_University/scripts.pory"
+	givemon SPECIES_LITTEN, 10
+# 859 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_POPPLIO
+# 860 "data/maps/AcrisiaCity_University/scripts.pory"
+	givemon SPECIES_POPPLIO, 10
+# 861 "data/maps/AcrisiaCity_University/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 862 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_10
+# 863 "data/maps/AcrisiaCity_University/scripts.pory"
+	waitfanfare
+# 864 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 865 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 10
+# 866 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+# 867 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_11
+# 868 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_19
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_21:
-# 835 "data/maps/AcrisiaCity_University/scripts.pory"
+# 849 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_unset FLAG_UNIVERSITY_REWARD_ELIA_04, AcrisiaCity_University_EventScript_EliaRatePokedex_20
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_19
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_25:
-# 858 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_UNIVERSITY_REWARD_ELIA_05
-# 859 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 860 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_12
-# 861 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 862 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHESPIN
-# 863 "data/maps/AcrisiaCity_University/scripts.pory"
-	givemon SPECIES_CHESPIN, 10
-# 864 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FENNEKIN
-# 865 "data/maps/AcrisiaCity_University/scripts.pory"
-	givemon SPECIES_FENNEKIN, 10
-# 866 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FROAKIE
-# 867 "data/maps/AcrisiaCity_University/scripts.pory"
-	givemon SPECIES_FROAKIE, 10
-# 868 "data/maps/AcrisiaCity_University/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 869 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_13
-# 870 "data/maps/AcrisiaCity_University/scripts.pory"
-	waitfanfare
-# 871 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
 # 872 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 10
+	setflag FLAG_UNIVERSITY_REWARD_ELIA_05
 # 873 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
 # 874 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_11
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_12
 # 875 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 876 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHESPIN
+# 877 "data/maps/AcrisiaCity_University/scripts.pory"
+	givemon SPECIES_CHESPIN, 10
+# 878 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FENNEKIN
+# 879 "data/maps/AcrisiaCity_University/scripts.pory"
+	givemon SPECIES_FENNEKIN, 10
+# 880 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FROAKIE
+# 881 "data/maps/AcrisiaCity_University/scripts.pory"
+	givemon SPECIES_FROAKIE, 10
+# 882 "data/maps/AcrisiaCity_University/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 883 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_13
+# 884 "data/maps/AcrisiaCity_University/scripts.pory"
+	waitfanfare
+# 885 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 886 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 10
+# 887 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+# 888 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_11
+# 889 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_24
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_26:
-# 856 "data/maps/AcrisiaCity_University/scripts.pory"
+# 870 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_unset FLAG_UNIVERSITY_REWARD_ELIA_05, AcrisiaCity_University_EventScript_EliaRatePokedex_25
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_24
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_30:
-# 879 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_UNIVERSITY_REWARD_ELIA_06
-# 880 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 881 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_14
-# 882 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 883 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SPRIGATITO
-# 884 "data/maps/AcrisiaCity_University/scripts.pory"
-	givemon SPECIES_SPRIGATITO, 10
-# 885 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FUECOCO
-# 886 "data/maps/AcrisiaCity_University/scripts.pory"
-	givemon SPECIES_FUECOCO, 10
-# 887 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_QUAXLY
-# 888 "data/maps/AcrisiaCity_University/scripts.pory"
-	givemon SPECIES_QUAXLY, 10
-# 889 "data/maps/AcrisiaCity_University/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 890 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_15
-# 891 "data/maps/AcrisiaCity_University/scripts.pory"
-	waitfanfare
-# 892 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
 # 893 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 10
+	setflag FLAG_UNIVERSITY_REWARD_ELIA_06
 # 894 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
 # 895 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_16
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_14
 # 896 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 897 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SPRIGATITO
+# 898 "data/maps/AcrisiaCity_University/scripts.pory"
+	givemon SPECIES_SPRIGATITO, 10
+# 899 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_FUECOCO
+# 900 "data/maps/AcrisiaCity_University/scripts.pory"
+	givemon SPECIES_FUECOCO, 10
+# 901 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_QUAXLY
+# 902 "data/maps/AcrisiaCity_University/scripts.pory"
+	givemon SPECIES_QUAXLY, 10
+# 903 "data/maps/AcrisiaCity_University/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 904 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_15
+# 905 "data/maps/AcrisiaCity_University/scripts.pory"
+	waitfanfare
+# 906 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 907 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 10
+# 908 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+# 909 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_16
+# 910 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_29
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_31:
-# 877 "data/maps/AcrisiaCity_University/scripts.pory"
+# 891 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_unset FLAG_UNIVERSITY_REWARD_ELIA_06, AcrisiaCity_University_EventScript_EliaRatePokedex_30
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_29
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_35:
-# 900 "data/maps/AcrisiaCity_University/scripts.pory"
+# 914 "data/maps/AcrisiaCity_University/scripts.pory"
 	setflag FLAG_UNIVERSITY_REWARD_ELIA_07
-# 901 "data/maps/AcrisiaCity_University/scripts.pory"
+# 915 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 902 "data/maps/AcrisiaCity_University/scripts.pory"
+# 916 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_17
-# 903 "data/maps/AcrisiaCity_University/scripts.pory"
+# 917 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 904 "data/maps/AcrisiaCity_University/scripts.pory"
+# 918 "data/maps/AcrisiaCity_University/scripts.pory"
 	giveitem ITEM_OVAL_CHARM
-# 905 "data/maps/AcrisiaCity_University/scripts.pory"
+# 919 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 906 "data/maps/AcrisiaCity_University/scripts.pory"
+# 920 "data/maps/AcrisiaCity_University/scripts.pory"
 	delay 5
-# 907 "data/maps/AcrisiaCity_University/scripts.pory"
+# 921 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 908 "data/maps/AcrisiaCity_University/scripts.pory"
+# 922 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_18
-# 909 "data/maps/AcrisiaCity_University/scripts.pory"
+# 923 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_34
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_36:
-# 898 "data/maps/AcrisiaCity_University/scripts.pory"
+# 912 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_unset FLAG_UNIVERSITY_REWARD_ELIA_07, AcrisiaCity_University_EventScript_EliaRatePokedex_35
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_34
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_40:
-# 913 "data/maps/AcrisiaCity_University/scripts.pory"
+# 927 "data/maps/AcrisiaCity_University/scripts.pory"
 	setflag FLAG_UNIVERSITY_REWARD_ELIA_08
-# 914 "data/maps/AcrisiaCity_University/scripts.pory"
+# 928 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 915 "data/maps/AcrisiaCity_University/scripts.pory"
+# 929 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_19
-# 916 "data/maps/AcrisiaCity_University/scripts.pory"
+# 930 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 917 "data/maps/AcrisiaCity_University/scripts.pory"
+# 931 "data/maps/AcrisiaCity_University/scripts.pory"
 	giveitem ITEM_LEFTOVERS, 3
-# 918 "data/maps/AcrisiaCity_University/scripts.pory"
+# 932 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 919 "data/maps/AcrisiaCity_University/scripts.pory"
+# 933 "data/maps/AcrisiaCity_University/scripts.pory"
 	delay 5
-# 920 "data/maps/AcrisiaCity_University/scripts.pory"
+# 934 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 921 "data/maps/AcrisiaCity_University/scripts.pory"
+# 935 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_20
-# 922 "data/maps/AcrisiaCity_University/scripts.pory"
+# 936 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_39
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_41:
-# 911 "data/maps/AcrisiaCity_University/scripts.pory"
+# 925 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_unset FLAG_UNIVERSITY_REWARD_ELIA_08, AcrisiaCity_University_EventScript_EliaRatePokedex_40
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_39
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_45:
-# 926 "data/maps/AcrisiaCity_University/scripts.pory"
+# 940 "data/maps/AcrisiaCity_University/scripts.pory"
 	setflag FLAG_UNIVERSITY_REWARD_ELIA_09
-# 927 "data/maps/AcrisiaCity_University/scripts.pory"
+# 941 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 928 "data/maps/AcrisiaCity_University/scripts.pory"
+# 942 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_21
-# 929 "data/maps/AcrisiaCity_University/scripts.pory"
+# 943 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 930 "data/maps/AcrisiaCity_University/scripts.pory"
+# 944 "data/maps/AcrisiaCity_University/scripts.pory"
 	giveitem ITEM_SHINY_CHARM
-# 931 "data/maps/AcrisiaCity_University/scripts.pory"
+# 945 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 932 "data/maps/AcrisiaCity_University/scripts.pory"
+# 946 "data/maps/AcrisiaCity_University/scripts.pory"
 	delay 5
-# 933 "data/maps/AcrisiaCity_University/scripts.pory"
+# 947 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 934 "data/maps/AcrisiaCity_University/scripts.pory"
+# 948 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_22
-# 935 "data/maps/AcrisiaCity_University/scripts.pory"
+# 949 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_44
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_46:
-# 924 "data/maps/AcrisiaCity_University/scripts.pory"
+# 938 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_unset FLAG_UNIVERSITY_REWARD_ELIA_09, AcrisiaCity_University_EventScript_EliaRatePokedex_45
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_44
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_50:
-# 939 "data/maps/AcrisiaCity_University/scripts.pory"
+# 953 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_unset FLAG_UNIVERSITY_REWARD_ELIA_10, AcrisiaCity_University_EventScript_EliaRatePokedex_53
-# 961 "data/maps/AcrisiaCity_University/scripts.pory"
+# 975 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 962 "data/maps/AcrisiaCity_University/scripts.pory"
+# 976 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_26
-# 963 "data/maps/AcrisiaCity_University/scripts.pory"
+# 977 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_49
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_53:
-# 941 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_UNIVERSITY_REWARD_ELIA_10
-# 942 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 943 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_23
-# 944 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 945 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 30
-# 946 "data/maps/AcrisiaCity_University/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 947 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_24
-# 948 "data/maps/AcrisiaCity_University/scripts.pory"
-	waitfanfare
-# 949 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 950 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 30
-# 951 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 952 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_25
-# 953 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
 # 955 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 20
+	setflag FLAG_UNIVERSITY_REWARD_ELIA_10
 # 956 "data/maps/AcrisiaCity_University/scripts.pory"
-	special DoDomeConfetti
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
 # 957 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_23
+# 958 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 959 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 30
+# 960 "data/maps/AcrisiaCity_University/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 961 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_24
+# 962 "data/maps/AcrisiaCity_University/scripts.pory"
+	waitfanfare
+# 963 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 964 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 30
+# 965 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+# 966 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaRatePokedex_Text_25
+# 967 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 969 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 20
+# 970 "data/maps/AcrisiaCity_University/scripts.pory"
+	special DoDomeConfetti
+# 971 "data/maps/AcrisiaCity_University/scripts.pory"
 	completequest QUEST_COMPLETE_DEX
 	goto AcrisiaCity_University_EventScript_EliaRatePokedex_49
 
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck::
-# 981 "data/maps/AcrisiaCity_University/scripts.pory"
+# 995 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 982 "data/maps/AcrisiaCity_University/scripts.pory"
+# 996 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_0, MSGBOX_YESNO
-# 983 "data/maps/AcrisiaCity_University/scripts.pory"
+# 997 "data/maps/AcrisiaCity_University/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_2
-# 990 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1004 "data/maps/AcrisiaCity_University/scripts.pory"
 	goto_if_set FLAG_FOUND_LOST_DELIVERY, AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_5
-# 1039 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1053 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_8
-# 1040 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1054 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_1:
-# 1043 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1057 "data/maps/AcrisiaCity_University/scripts.pory"
 	release
 	end
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_2:
-# 985 "data/maps/AcrisiaCity_University/scripts.pory"
+# 999 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_1
-# 986 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1000 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_1
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_5:
-# 992 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_2
-# 993 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 994 "data/maps/AcrisiaCity_University/scripts.pory"
-	removeitem ITEM_PARCEL
-# 995 "data/maps/AcrisiaCity_University/scripts.pory"
-	playse SE_CLICK
-# 996 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 10
-# 997 "data/maps/AcrisiaCity_University/scripts.pory"
-	playse SE_CLICK
-# 998 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 10
-# 999 "data/maps/AcrisiaCity_University/scripts.pory"
-	playse SE_CLICK
-# 1000 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 10
-# 1001 "data/maps/AcrisiaCity_University/scripts.pory"
-	playse SE_CLICK
-# 1002 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 20
-# 1003 "data/maps/AcrisiaCity_University/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 1004 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_3
-# 1005 "data/maps/AcrisiaCity_University/scripts.pory"
-	waitfanfare
 # 1006 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_SYS_ROTOM_PHONE_GET
+	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_2
 # 1007 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_SYS_POKEDEX_GET
+	closemessage
 # 1008 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_ADVENTURE_STARTED
+	removeitem ITEM_PARCEL
 # 1009 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	playse SE_CLICK
 # 1010 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
+	delay 10
 # 1011 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+	playse SE_CLICK
 # 1012 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_4
+	delay 10
 # 1013 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
+	playse SE_CLICK
 # 1014 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 5
+	delay 10
 # 1015 "data/maps/AcrisiaCity_University/scripts.pory"
-	additem ITEM_EXP_SHARE
+	playse SE_CLICK
 # 1016 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_EXP_SHARE_ENABLED
+	delay 20
 # 1017 "data/maps/AcrisiaCity_University/scripts.pory"
-	additem ITEM_OUTFIT_BOX
+	playfanfare MUS_OBTAIN_ITEM
 # 1018 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_5
+	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_3
 # 1019 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
+	waitfanfare
 # 1020 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 5
+	setflag FLAG_SYS_ROTOM_PHONE_GET
 # 1021 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+	setflag FLAG_SYS_POKEDEX_GET
 # 1022 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_6
+	setflag FLAG_ADVENTURE_STARTED
 # 1023 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
+	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
 # 1024 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+	closemessage
 # 1025 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_7
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
 # 1026 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_4
+# 1027 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 # 1028 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 20
+	delay 5
 # 1029 "data/maps/AcrisiaCity_University/scripts.pory"
-	completequest QUEST_FIND_POKEDEX
+	additem ITEM_EXP_SHARE
 # 1030 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 20
+	setflag FLAG_EXP_SHARE_ENABLED
 # 1031 "data/maps/AcrisiaCity_University/scripts.pory"
-	startquest QUEST_GYM_1
+	additem ITEM_OUTFIT_BOX
+# 1032 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_5
+# 1033 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
 # 1034 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_INTRO_STATE, 3
+	delay 5
 # 1035 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+# 1036 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_6
+# 1037 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 1038 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+# 1039 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_7
+# 1040 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 1042 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 20
+# 1043 "data/maps/AcrisiaCity_University/scripts.pory"
+	completequest QUEST_FIND_POKEDEX
+# 1044 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 20
+# 1045 "data/maps/AcrisiaCity_University/scripts.pory"
+	startquest QUEST_GYM_1
+# 1048 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_INTRO_STATE, 3
+# 1049 "data/maps/AcrisiaCity_University/scripts.pory"
 	setflag FLAG_HIDE_RANIA_JUSMAIL
 	goto AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_1
 
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeOne::
-# 1049 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 1050 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_0
-# 1051 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 1052 "data/maps/AcrisiaCity_University/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, AcrisiaCity_University_EventScript_EliaCheckBadgeOne_2
-# 1060 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 1061 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_2
-# 1062 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
 # 1063 "data/maps/AcrisiaCity_University/scripts.pory"
-	giveitem ITEM_ABILITY_CAPSULE
-# 1064 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 1065 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 5
-# 1066 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 1067 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_3
-# 1068 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1064 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_0
+# 1065 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
-# 1069 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_INTRO_STATE, 5
-# 1070 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_HIDE_RANIA_JUSMAIL
-# 1071 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_UNLOCKED_ACRISIA_MTNS
-# 1073 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 20
+# 1066 "data/maps/AcrisiaCity_University/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, AcrisiaCity_University_EventScript_EliaCheckBadgeOne_2
 # 1074 "data/maps/AcrisiaCity_University/scripts.pory"
-	completequest QUEST_CHECK_AFTER_GYM_1
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
 # 1075 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 20
+	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_2
 # 1076 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 1077 "data/maps/AcrisiaCity_University/scripts.pory"
+	giveitem ITEM_ABILITY_CAPSULE
+# 1078 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 1079 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 5
+# 1080 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+# 1081 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_3
+# 1082 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 1083 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_INTRO_STATE, 5
+# 1084 "data/maps/AcrisiaCity_University/scripts.pory"
+	setflag FLAG_HIDE_RANIA_JUSMAIL
+# 1085 "data/maps/AcrisiaCity_University/scripts.pory"
+	setflag FLAG_UNLOCKED_ACRISIA_MTNS
+# 1087 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 20
+# 1088 "data/maps/AcrisiaCity_University/scripts.pory"
+	completequest QUEST_CHECK_AFTER_GYM_1
+# 1089 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 20
+# 1090 "data/maps/AcrisiaCity_University/scripts.pory"
 	startquest QUEST_GYM_2
 AcrisiaCity_University_EventScript_EliaCheckBadgeOne_1:
-# 1078 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1092 "data/maps/AcrisiaCity_University/scripts.pory"
 	release
 	end
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeOne_2:
-# 1054 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1068 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 1055 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1069 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_1
-# 1056 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1070 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaCheckBadgeOne_1
 
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeTwo::
-# 1084 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1098 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 1085 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_0
-# 1086 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 1087 "data/maps/AcrisiaCity_University/scripts.pory"
-	goto_if_unset FLAG_BADGE02_GET, AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_2
 # 1099 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_0
 # 1100 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_2
+	closemessage
 # 1101 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 1102 "data/maps/AcrisiaCity_University/scripts.pory"
-	giveitem ITEM_HM_ROCK_SMASH
-# 1103 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 1104 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 5
-# 1105 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 1106 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_3
-# 1107 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
-# 1108 "data/maps/AcrisiaCity_University/scripts.pory"
-	playse SE_CLICK
-# 1109 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 10
-# 1110 "data/maps/AcrisiaCity_University/scripts.pory"
-	playse SE_CLICK
-# 1111 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 10
-# 1112 "data/maps/AcrisiaCity_University/scripts.pory"
-	playse SE_CLICK
+	goto_if_unset FLAG_BADGE02_GET, AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_2
 # 1113 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 10
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
 # 1114 "data/maps/AcrisiaCity_University/scripts.pory"
-	playse SE_CLICK
+	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_2
 # 1115 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 20
+	closemessage
 # 1116 "data/maps/AcrisiaCity_University/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	giveitem ITEM_HM_ROCK_SMASH
 # 1117 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_4
+	closemessage
 # 1118 "data/maps/AcrisiaCity_University/scripts.pory"
-	waitfanfare
+	delay 5
 # 1119 "data/maps/AcrisiaCity_University/scripts.pory"
-	setflag FLAG_SYS_DEXNAV_GET
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
 # 1120 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
+	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_3
 # 1121 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+	closemessage
 # 1122 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_5
+	playse SE_CLICK
 # 1123 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
+	delay 10
 # 1124 "data/maps/AcrisiaCity_University/scripts.pory"
-	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+	playse SE_CLICK
 # 1125 "data/maps/AcrisiaCity_University/scripts.pory"
-	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_6
+	delay 10
 # 1126 "data/maps/AcrisiaCity_University/scripts.pory"
-	closemessage
+	playse SE_CLICK
+# 1127 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 10
 # 1128 "data/maps/AcrisiaCity_University/scripts.pory"
-	setvar VAR_INTRO_STATE, 6
+	playse SE_CLICK
+# 1129 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 20
 # 1130 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 20
+	playfanfare MUS_OBTAIN_ITEM
 # 1131 "data/maps/AcrisiaCity_University/scripts.pory"
-	completequest QUEST_CHECK_AFTER_GYM_2
+	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_4
 # 1132 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 20
+	waitfanfare
 # 1133 "data/maps/AcrisiaCity_University/scripts.pory"
-	startquest QUEST_GYM_3
+	setflag FLAG_SYS_DEXNAV_GET
 # 1134 "data/maps/AcrisiaCity_University/scripts.pory"
-	delay 20
+	closemessage
 # 1135 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+# 1136 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_5
+# 1137 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 1138 "data/maps/AcrisiaCity_University/scripts.pory"
+	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
+# 1139 "data/maps/AcrisiaCity_University/scripts.pory"
+	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_6
+# 1140 "data/maps/AcrisiaCity_University/scripts.pory"
+	closemessage
+# 1142 "data/maps/AcrisiaCity_University/scripts.pory"
+	setvar VAR_INTRO_STATE, 6
+# 1144 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 20
+# 1145 "data/maps/AcrisiaCity_University/scripts.pory"
+	completequest QUEST_CHECK_AFTER_GYM_2
+# 1146 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 20
+# 1147 "data/maps/AcrisiaCity_University/scripts.pory"
+	startquest QUEST_GYM_3
+# 1148 "data/maps/AcrisiaCity_University/scripts.pory"
+	delay 20
+# 1149 "data/maps/AcrisiaCity_University/scripts.pory"
 	startquest QUEST_COMPLETE_DEX
 AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_1:
-# 1137 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1151 "data/maps/AcrisiaCity_University/scripts.pory"
 	release
 	end
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_2:
-# 1089 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1103 "data/maps/AcrisiaCity_University/scripts.pory"
 	speakername AcrisiaCity_University_EventScript_PlayerIntro_Text_0
-# 1090 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1104 "data/maps/AcrisiaCity_University/scripts.pory"
 	msgbox AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_1
-# 1091 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1105 "data/maps/AcrisiaCity_University/scripts.pory"
 	closemessage
 	goto AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_1
 
@@ -2397,14 +2424,26 @@ AcrisiaCity_University_EventScript_Niko_Text_18:
 	.string "research it.$"
 
 AcrisiaCity_University_EventScript_Niko_Text_19:
-# 423 "data/maps/AcrisiaCity_University/scripts.pory"
+# 422 "data/maps/AcrisiaCity_University/scripts.pory"
+	.string "Team Chimera hasn't attacked the\n"
+	.string "University yet. They must still be\l"
+	.string "struggling to wrestle control of the\l"
+	.string "region from Kyogre, Groudon, and\l"
+	.string "Rayquaza.\p"
+	.string "Speaking of which, have you found them\n"
+	.string "yet? Those Legendary Pokémon might be\l"
+	.string "our only shot at defeating Team\l"
+	.string "Chimera.$"
+
+AcrisiaCity_University_EventScript_Niko_Text_20:
+# 431 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Come back is you want to {COLOR GREEN}check our Mega\n"
 	.string "Stone collection{COLOR DARK_GRAY}. And hey, I've still got\l"
 	.string "rewards and fun things to talk about,\l"
 	.string "too!$"
 
 AcrisiaCity_University_EventScript_Rania_Text_0:
-# 532 "data/maps/AcrisiaCity_University/scripts.pory"
+# 540 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Chaire, {PLAYER}! You doin' well?\p"
 	.string "I help out with Pokédex data analysis.\n"
 	.string "Now that you're here, there's gonna be a\l"
@@ -2413,14 +2452,14 @@ AcrisiaCity_University_EventScript_Rania_Text_0:
 	.string "helpful tips and items!$"
 
 AcrisiaCity_University_EventScript_Rania_Text_1:
-# 538 "data/maps/AcrisiaCity_University/scripts.pory"
+# 546 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Here comes {PLAYER}, the new Champ!\n"
 	.string "...Ehehe, just kidding! My Pokémon are\l"
 	.string "still calming down from that battle in\l"
 	.string "Jusmail Town, what a fight!$"
 
 AcrisiaCity_University_EventScript_Rania_Text_2:
-# 544 "data/maps/AcrisiaCity_University/scripts.pory"
+# 552 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "No way, you got the Gemstone Badge?! I\n"
 	.string "haven't even gotten to the Acrisia\l"
 	.string "Caverns yet!\p"
@@ -2429,7 +2468,7 @@ AcrisiaCity_University_EventScript_Rania_Text_2:
 	.string "this, as a start.$"
 
 AcrisiaCity_University_EventScript_Rania_Text_3:
-# 550 "data/maps/AcrisiaCity_University/scripts.pory"
+# 558 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Those Wishing Stars can be used at the\n"
 	.string "Wishing Well in Jusmail Town. Old myths\l"
 	.string "say that worthy trainers may earn\l"
@@ -2440,7 +2479,7 @@ AcrisiaCity_University_EventScript_Rania_Text_3:
 	.string "there, {PLAYER}!$"
 
 AcrisiaCity_University_EventScript_Rania_Text_4:
-# 557 "data/maps/AcrisiaCity_University/scripts.pory"
+# 565 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Chaire! I come back here to heal my\n"
 	.string "Pokémon and put my new Pokédex data\l"
 	.string "into the computers. Don't you worry, I'll\l"
@@ -2448,14 +2487,14 @@ AcrisiaCity_University_EventScript_Rania_Text_4:
 	.string "battles!$"
 
 AcrisiaCity_University_EventScript_Rania_Text_5:
-# 563 "data/maps/AcrisiaCity_University/scripts.pory"
+# 571 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Come back to cool off too, {PLAYER}?\n"
 	.string "That fight with Team Chimera sure was\l"
 	.string "something. I wonder why they're\l"
 	.string "collecting Pokémon...$"
 
 AcrisiaCity_University_EventScript_Rania_Text_6:
-# 569 "data/maps/AcrisiaCity_University/scripts.pory"
+# 577 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "{PLAYER}! I hear you made it to\n"
 	.string "Pythios Town alright, and you even got\l"
 	.string "the Gym Badge! You're not such a new\l"
@@ -2463,7 +2502,7 @@ AcrisiaCity_University_EventScript_Rania_Text_6:
 	.string "Right, I have something for you!$"
 
 AcrisiaCity_University_EventScript_Rania_Text_7:
-# 575 "data/maps/AcrisiaCity_University/scripts.pory"
+# 583 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "If a Pokémon holds the {COLOR GREEN}Rocky Helmet{COLOR DARK_GRAY}, if\n"
 	.string "an opponent makes contact with them,\l"
 	.string "they take a bit of damage! Dealing chip\l"
@@ -2471,7 +2510,7 @@ AcrisiaCity_University_EventScript_Rania_Text_7:
 	.string "winning.$"
 
 AcrisiaCity_University_EventScript_Rania_Text_8:
-# 582 "data/maps/AcrisiaCity_University/scripts.pory"
+# 590 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "I've been working through all the data\n"
 	.string "coming in from your Rotom Phone! From\l"
 	.string "what I can tell, you're the first person\l"
@@ -2481,7 +2520,7 @@ AcrisiaCity_University_EventScript_Rania_Text_8:
 	.string "find new ways to protect them!$"
 
 AcrisiaCity_University_EventScript_Rania_Text_9:
-# 588 "data/maps/AcrisiaCity_University/scripts.pory"
+# 596 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "{PLAYER}! Thank goodness you're\n"
 	.string "okay! Niko told Prof. Elia and I about\l"
 	.string "what happened in Sofos City.\p"
@@ -2492,7 +2531,7 @@ AcrisiaCity_University_EventScript_Rania_Text_9:
 	.string "bar.$"
 
 AcrisiaCity_University_EventScript_Rania_Text_10:
-# 595 "data/maps/AcrisiaCity_University/scripts.pory"
+# 603 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Oh, I've been working on a training\n"
 	.string "manual with some helpful information -\l"
 	.string "that might help with the fight against\l"
@@ -2501,7 +2540,7 @@ AcrisiaCity_University_EventScript_Rania_Text_10:
 	.string "excited I had to tell someone!$"
 
 AcrisiaCity_University_EventScript_Rania_Text_11:
-# 601 "data/maps/AcrisiaCity_University/scripts.pory"
+# 609 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Welcome back, {PLAYER}. Cranidos and\n"
 	.string "Shieldon are thriving, thanks to Niko's\l"
 	.string "help!\p"
@@ -2510,7 +2549,7 @@ AcrisiaCity_University_EventScript_Rania_Text_11:
 	.string "Pretty convenient, huh?$"
 
 AcrisiaCity_University_EventScript_Rania_Text_12:
-# 607 "data/maps/AcrisiaCity_University/scripts.pory"
+# 615 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "I see you've earned the {COLOR GREEN}Theatrical\n"
 	.string "Badge{COLOR DARK_GRAY} from Thalia and Melpomene! Here,\l"
 	.string "have this TM I found recently. I've\l"
@@ -2519,29 +2558,37 @@ AcrisiaCity_University_EventScript_Rania_Text_12:
 	.string "anymore.$"
 
 AcrisiaCity_University_EventScript_Rania_Text_13:
-# 615 "data/maps/AcrisiaCity_University/scripts.pory"
+# 623 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "That TM contains the move Steel Wing.\n"
 	.string "It's a great offensive option for many\l"
 	.string "bird Pokémon!$"
 
+AcrisiaCity_University_EventScript_Rania_Text_14:
+# 629 "data/maps/AcrisiaCity_University/scripts.pory"
+	.string "Team Chimera hasn't made it to Acrisia\n"
+	.string "City yet, thankfully. For now, I'll keep\l"
+	.string "processing Pokédex information. Maybe\l"
+	.string "that'll help you fight Team Chimera\l"
+	.string "somehow!$"
+
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_0:
-# 657 "data/maps/AcrisiaCity_University/scripts.pory"
+# 671 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Hold up, come here {PLAYER}!$"
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_1:
-# 678 "data/maps/AcrisiaCity_University/scripts.pory"
+# 692 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You remember me, right? R-right? I'm the\n"
 	.string "one who works with captive Pokémon!$"
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_2:
-# 682 "data/maps/AcrisiaCity_University/scripts.pory"
+# 696 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "No? Some research partner you are.\p"
 	.string "I was gonna give you some good Poké\n"
 	.string "balls, but now you're just getting\l"
 	.string "these.$"
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_3:
-# 688 "data/maps/AcrisiaCity_University/scripts.pory"
+# 702 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "A little disappointing, huh? Just like\n"
 	.string "being forgotten about! Well, now we're\l"
 	.string "even.\p"
@@ -2551,14 +2598,14 @@ AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_3:
 	.string "me, that is.$"
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_4:
-# 694 "data/maps/AcrisiaCity_University/scripts.pory"
+# 708 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Ehehe, I knew you were a real friend!\p"
 	.string "I'm only supposed to give you a few\n"
 	.string "Poké balls, but you made my day, so I'll\l"
 	.string "make yours!$"
 
 AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_5:
-# 703 "data/maps/AcrisiaCity_University/scripts.pory"
+# 717 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Use those Great Balls on Pokémon giving\n"
 	.string "you a hard time! They work like a charm.\p"
 	.string "Come back to the University as you fill\n"
@@ -2566,64 +2613,64 @@ AcrisiaCity_University_EventScript_NikoGivesFirstPokeballs_Text_5:
 	.string "some new gear for you to try out.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_0:
-# 776 "data/maps/AcrisiaCity_University/scripts.pory"
+# 790 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Chaire, {PLAYER}! How's your research\n"
 	.string "going? I can check your Rotom Phone\l"
 	.string "Pokédex progress!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_1:
-# 780 "data/maps/AcrisiaCity_University/scripts.pory"
+# 794 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "No? That's okay, go out there and\n"
 	.string "gather some more data! I may have\l"
 	.string "{COLOR GREEN}rewards{COLOR DARK_GRAY} for you next time.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_2:
-# 793 "data/maps/AcrisiaCity_University/scripts.pory"
+# 807 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You've seen {STR_VAR_1} Pokémon,\n"
 	.string "and caught {STR_VAR_2} Pokémon!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_3:
-# 800 "data/maps/AcrisiaCity_University/scripts.pory"
+# 814 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You've captured at least 10 unique\n"
 	.string "Pokémon! You're certainly capable,\l"
 	.string "{PLAYER}. Here's your first progress\l"
 	.string "reward!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_4:
-# 806 "data/maps/AcrisiaCity_University/scripts.pory"
+# 820 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "That Nugget can be sold for a pretty\n"
 	.string "penny! It should help fund your\l"
 	.string "studies. As you catch more Pokémon, I'll\l"
 	.string "have more for you.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_5:
-# 813 "data/maps/AcrisiaCity_University/scripts.pory"
+# 827 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You've captured at least 25 unique\n"
 	.string "Pokémon! Great job, {PLAYER}! Here's a\l"
 	.string "nice new item.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_6:
-# 819 "data/maps/AcrisiaCity_University/scripts.pory"
+# 833 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Pokémon holding the Loaded Dice will be\n"
 	.string "able to land multi-hit attacks more\l"
 	.string "times in a row! As you catch more\l"
 	.string "Pokémon, I'll have more for you.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_7:
-# 826 "data/maps/AcrisiaCity_University/scripts.pory"
+# 840 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You've captured at least 50 unique\n"
 	.string "Pokémon! Great job, {PLAYER}! Here's a\l"
 	.string "nice new item.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_8:
-# 832 "data/maps/AcrisiaCity_University/scripts.pory"
+# 846 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "That move, Return, gets more powerful\n"
 	.string "the more your Pokémon like you! As you\l"
 	.string "catch more Pokémon, I'll have more for\l"
 	.string "you.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_9:
-# 839 "data/maps/AcrisiaCity_University/scripts.pory"
+# 853 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You've captured at least 100 unique\n"
 	.string "Pokémon! Great job, {PLAYER}!\p"
 	.string "We've come across more specimens of\n"
@@ -2632,18 +2679,18 @@ AcrisiaCity_University_EventScript_EliaRatePokedex_Text_9:
 	.string "your first trio!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_10:
-# 848 "data/maps/AcrisiaCity_University/scripts.pory"
+# 862 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "{PLAYER} received a Rowlet, Litten,\n"
 	.string "and Popplio!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_11:
-# 853 "data/maps/AcrisiaCity_University/scripts.pory"
+# 867 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "As you catch more Pokémon, I'll have\n"
 	.string "more Starter Pokémon and other rewards\l"
 	.string "for you.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_12:
-# 860 "data/maps/AcrisiaCity_University/scripts.pory"
+# 874 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You've captured at least 135 unique\n"
 	.string "Pokémon! Great job, {PLAYER}!\p"
 	.string "We've come across more specimens of\n"
@@ -2652,12 +2699,12 @@ AcrisiaCity_University_EventScript_EliaRatePokedex_Text_12:
 	.string "your first trio!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_13:
-# 869 "data/maps/AcrisiaCity_University/scripts.pory"
+# 883 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "{PLAYER} received a Chespin,\n"
 	.string "Fennekin, and Froakie!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_14:
-# 881 "data/maps/AcrisiaCity_University/scripts.pory"
+# 895 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You've captured at least 170 unique\n"
 	.string "Pokémon! Great job, {PLAYER}!\p"
 	.string "We've come across more specimens of\n"
@@ -2666,25 +2713,25 @@ AcrisiaCity_University_EventScript_EliaRatePokedex_Text_14:
 	.string "your first trio!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_15:
-# 890 "data/maps/AcrisiaCity_University/scripts.pory"
+# 904 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "{PLAYER} received a Sprigatito,\n"
 	.string "Fuecoco, and Quaxly!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_16:
-# 895 "data/maps/AcrisiaCity_University/scripts.pory"
+# 909 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Looks like you've gotten all 9 Starter\n"
 	.string "Pokémon!\p"
 	.string "As you catch more Pokémon, I'll have\n"
 	.string "other rewards for you.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_17:
-# 902 "data/maps/AcrisiaCity_University/scripts.pory"
+# 916 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You've captured at least 200 unique\n"
 	.string "Pokémon! Great job, {PLAYER}! Here's a\l"
 	.string "nice new item.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_18:
-# 908 "data/maps/AcrisiaCity_University/scripts.pory"
+# 922 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "The Oval Charm increases the odds of\n"
 	.string "Pokémon laying Eggs, which is key to our\l"
 	.string "research!\p"
@@ -2694,13 +2741,13 @@ AcrisiaCity_University_EventScript_EliaRatePokedex_Text_18:
 	.string "have more for you.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_19:
-# 915 "data/maps/AcrisiaCity_University/scripts.pory"
+# 929 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You've captured at least 250 unique\n"
 	.string "Pokémon! Great job, {PLAYER}! Here's a\l"
 	.string "nice new item.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_20:
-# 921 "data/maps/AcrisiaCity_University/scripts.pory"
+# 935 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Those are 3 Leftovers items, which let\n"
 	.string "your Pokémon regain health every turn\l"
 	.string "during battle.\p"
@@ -2708,13 +2755,13 @@ AcrisiaCity_University_EventScript_EliaRatePokedex_Text_20:
 	.string "more for you.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_21:
-# 928 "data/maps/AcrisiaCity_University/scripts.pory"
+# 942 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You've captured at least 300 unique\n"
 	.string "Pokémon! Great job, {PLAYER}! Here's a\l"
 	.string "nice new item.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_22:
-# 934 "data/maps/AcrisiaCity_University/scripts.pory"
+# 948 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "The Shiny Charm drastically increases\n"
 	.string "the chances of finding wild Shiny\l"
 	.string "Pokémon. While you continue to complete\l"
@@ -2724,7 +2771,7 @@ AcrisiaCity_University_EventScript_EliaRatePokedex_Text_22:
 	.string "more for you. You're almost done!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_23:
-# 943 "data/maps/AcrisiaCity_University/scripts.pory"
+# 957 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "I-i-incredible! You've actually done it!\n"
 	.string "Your Rotom Phone Pokédex contains\l"
 	.string "data for all 400 known Pokémon species\l"
@@ -2734,12 +2781,12 @@ AcrisiaCity_University_EventScript_EliaRatePokedex_Text_23:
 	.string "Trainer Card.$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_24:
-# 947 "data/maps/AcrisiaCity_University/scripts.pory"
+# 961 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "{PLAYER} received a Trainer Card Gold\n"
 	.string "Star!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_25:
-# 952 "data/maps/AcrisiaCity_University/scripts.pory"
+# 966 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Earning a Gold Star on your Trainer Card\n"
 	.string "is no easy feat. This shows you have\l"
 	.string "done something truly remarkable. Your\l"
@@ -2747,7 +2794,7 @@ AcrisiaCity_University_EventScript_EliaRatePokedex_Text_25:
 	.string "years to come!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_26:
-# 962 "data/maps/AcrisiaCity_University/scripts.pory"
+# 976 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Chaire, {PLAYER}! It's nice to see you\n"
 	.string "around the lab.\p"
 	.string "Although you've recorded all the native\n"
@@ -2755,18 +2802,18 @@ AcrisiaCity_University_EventScript_EliaRatePokedex_Text_26:
 	.string "continue to enjoy your time here!$"
 
 AcrisiaCity_University_EventScript_EliaRatePokedex_Text_27:
-# 970 "data/maps/AcrisiaCity_University/scripts.pory"
+# 984 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Hmm, it doesn't look like I have any more\n"
 	.string "rewards for you at the moment. Get back\l"
 	.string "out there and find some new Pokémon!$"
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_0:
-# 982 "data/maps/AcrisiaCity_University/scripts.pory"
+# 996 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Welcome back, {PLAYER}! Did you find\n"
 	.string "that {COLOR GREEN}lost delivery{COLOR DARK_GRAY} yet?$"
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_1:
-# 985 "data/maps/AcrisiaCity_University/scripts.pory"
+# 999 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Hmm, that's concerning... local crime\n"
 	.string "groups have been active lately, I'm\l"
 	.string "nervous that the delivery cart was\l"
@@ -2774,18 +2821,18 @@ AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_1:
 	.string "situation.$"
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_2:
-# 992 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1006 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Aie! The delivery cart was attacked!?\n"
 	.string "Well I'm glad everyone is okay...\p"
 	.string "Here, I'll enable your {COLOR GREEN}Rotom Phone's\n"
 	.string "Pokédex function{COLOR DARK_GRAY}.$"
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_3:
-# 1004 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1018 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "{PLAYER}'s {COLOR GREEN}Rotom Phone{COLOR DARK_GRAY} was enabled!$"
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_4:
-# 1012 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1026 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "The {COLOR GREEN}Rotom Phone{COLOR DARK_GRAY} also has various other\n"
 	.string "functions. Besides the Pokédex, it can\l"
 	.string "also be used to {COLOR GREEN}view your ongoing\l"
@@ -2794,12 +2841,12 @@ AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_4:
 	.string "here's an EXP Share and an Outfit Box!$"
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_5:
-# 1018 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1032 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "The EXP Share and Outfit Box were\n"
 	.string "added to the Bag!$"
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_6:
-# 1022 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1036 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "I think it's a good idea to train your\n"
 	.string "Pokémon for battle, in case more\l"
 	.string "troublemakers come around. Why don't\l"
@@ -2808,41 +2855,41 @@ AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_6:
 	.string "That'll get your Pokémon raring to go!$"
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_7:
-# 1025 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1039 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "The {COLOR GREEN}first Gym{COLOR DARK_GRAY} is south of here, in\n"
 	.string "{COLOR GREEN}Jusmail Town{COLOR DARK_GRAY}. Come back to me with the\l"
 	.string "{COLOR GREEN}first Gym Badge{COLOR DARK_GRAY} to show me your skill as\l"
 	.string "a trainer!$"
 
 AcrisiaCity_University_EventScript_EliaLostPokedexDeliveryCheck_Text_8:
-# 1039 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1053 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "You did? Well, where's the Rotom Phone?\p"
 	.string "...Come on {PLAYER}, we need to make\n"
 	.string "sure the delivery folks are alright! Go\l"
 	.string "look again!$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_0:
-# 1050 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1064 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Chaire, welcome back {PLAYER}! Have\n"
 	.string "you made it to the {COLOR GREEN}Jusmail Town Gym{COLOR DARK_GRAY}\l"
 	.string "yet?$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_1:
-# 1055 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1069 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Still training, eh? No rush, no rush!\p"
 	.string "Come back to the University and check\n"
 	.string "in with me when you have your first Gym\l"
 	.string "Badge.$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_2:
-# 1061 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1075 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Well done! You're well on your way to\n"
 	.string "being a great trainer.\p"
 	.string "Here, I wanted to give you something to\n"
 	.string "celebrate!$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_3:
-# 1067 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1081 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "That's an Ability Capsule. It can change\n"
 	.string "the Ability of a Pokémon, which can make\l"
 	.string "it totally different in battle!\p"
@@ -2859,14 +2906,14 @@ AcrisiaCity_University_EventScript_EliaCheckBadgeOne_Text_3:
 	.string "City after your fight!$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_0:
-# 1085 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1099 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "{PLAYER}, welcome, welcome! Have you\n"
 	.string "crossed the rail bridge and explored\l"
 	.string "east to {COLOR GREEN}Kalami City{COLOR DARK_GRAY} yet? Your next Gym\l"
 	.string "Badge is there!$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_1:
-# 1090 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1104 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Not yet, hm? That's fine, the swamps to\n"
 	.string "the east are a tough area. Remember,\l"
 	.string "you can always do some extra training\l"
@@ -2876,24 +2923,24 @@ AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_1:
 	.string "another gift for you!$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_2:
-# 1100 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1114 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Incredible! You're becoming a great\n"
 	.string "Pokémon trainer. As promised, here's\l"
 	.string "something exciting for you!$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_3:
-# 1106 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1120 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "Oh right, another thing! I ordered a new\n"
 	.string "piece of tech from the Hoenn Region\l"
 	.string "which might help you out. Here, look at\l"
 	.string "this!$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_4:
-# 1117 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1131 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "{PLAYER} can use the {COLOR GREEN}DexNav{COLOR DARK_GRAY}!$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_5:
-# 1122 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1136 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "It came with directions! It says to\n"
 	.string "select a Pokémon from the {COLOR GREEN}DexNav menu{COLOR DARK_GRAY}\l"
 	.string "to try and find it, then {COLOR GREEN}hold the A\l"
@@ -2902,7 +2949,7 @@ AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_5:
 	.string "away{COLOR DARK_GRAY}. Seems useful!$"
 
 AcrisiaCity_University_EventScript_EliaCheckBadgeTwo_Text_6:
-# 1125 "data/maps/AcrisiaCity_University/scripts.pory"
+# 1139 "data/maps/AcrisiaCity_University/scripts.pory"
 	.string "As you grow stronger, you'll be able to\n"
 	.string "adventure further to find new Pokémon.\l"
 	.string "This'll be great for our studies!\p"

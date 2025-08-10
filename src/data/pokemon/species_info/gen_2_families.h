@@ -2328,10 +2328,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 4,
         .weight = 5,
         .description = COMPOUND_STRING(
-            "This Pokémon drifts and floats with the\n"
-            "wind. If it senses the approach of strong\n"
-            "winds, a Hoppip links leaves with others\n"
-            "to prepare against being blown away."),
+            "Hoppip are commonly seen drifting on the\n" // new desc
+            "breeze. They thrive in warm sunlight.\n"
+            "Trainers who choose to raise them must\n"
+            "make sure they don't blow away!"),
         .pokemonScale = 562,
         .pokemonOffset = -7,
         .trainerScale = 256,
@@ -2392,10 +2392,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 10,
         .description = COMPOUND_STRING(
-            "It blossoms when the temperature rises\n"
-            "above 64 degrees F. Because its flower's\n"
-            "blooming changes with the temperature,\n"
-            "it is sometimes used as a thermometer."),
+            "Their flower spins as it flies across the\n" // new desc
+            "sky, riding the wind wherever it pleases.\n"
+            "Gardeners sometimes keep Skiploom as pets\n"
+            "that help spread seeds."),
         .pokemonScale = 387,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2463,10 +2463,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 8,
         .weight = 30,
         .description = COMPOUND_STRING(
-            "Jumpluff ride warm southern winds to\n"
-            "cross the sea and fly to foreign lands.\n"
-            "This Pokémon lands when it encounters\n"
-            "cold air while it is floating."),
+            "Unlike their pre-evolutions, Jumpluff\n" // new desc
+            "controls its flight, gliding towards\n"
+            "warmer climates during the winter.\n"
+            "It is always releasing spores."),
         .pokemonScale = 418,
         .pokemonOffset = -4,
         .trainerScale = 256,

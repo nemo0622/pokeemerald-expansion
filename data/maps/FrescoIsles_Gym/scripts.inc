@@ -275,7 +275,7 @@ FrescoIsles_Gym_EventScript_ThaliaAndMelpomene_DefeatedScript::
 # 236 "data/maps/FrescoIsles_Gym/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
 # 239 "data/maps/FrescoIsles_Gym/scripts.pory"
-	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
 # 241 "data/maps/FrescoIsles_Gym/scripts.pory"
 	settrainerflag TRAINER_FRESCOGYM_GIDEON
 # 242 "data/maps/FrescoIsles_Gym/scripts.pory"

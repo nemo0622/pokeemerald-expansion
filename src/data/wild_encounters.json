@@ -16375,7 +16375,7 @@
               {
                 "min_level": 24,
                 "max_level": 32,
-                "species": "SPECIES_RELICANTH"
+                "species": "SPECIES_WAILMER"
               },
               {
                 "min_level": 24,
@@ -16529,7 +16529,7 @@
               {
                 "min_level": 24,
                 "max_level": 32,
-                "species": "SPECIES_RELICANTH"
+                "species": "SPECIES_WAILMER"
               },
               {
                 "min_level": 24,
@@ -19668,12 +19668,12 @@
               {
                 "min_level": 26,
                 "max_level": 28,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_RELICANTH"
               },
               {
                 "min_level": 26,
                 "max_level": 28,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_RELICANTH"
               }
             ]
           }

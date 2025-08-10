@@ -258,3 +258,6 @@ const u16 gMetatileAttributes_Pentepetal[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_FrescoIsles[] = INCBIN_U16("data/tilesets/secondary/fresco_isles/metatiles.bin");
 const u16 gMetatileAttributes_FrescoIsles[] = INCBIN_U16("data/tilesets/secondary/fresco_isles/metatile_attributes.bin");
+
+const u16 gMetatiles_PalatiGym[] = INCBIN_U16("data/tilesets/secondary/palati_gym/metatiles.bin");
+const u16 gMetatileAttributes_PalatiGym[] = INCBIN_U16("data/tilesets/secondary/palati_gym/metatile_attributes.bin");

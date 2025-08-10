@@ -10721,9 +10721,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM22"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Absorbs sunlight in\n"
-            "the 1st turn, then\n"
-            "attacks next turn."),
+            "Move: Solar Beam\n"
+            "2-turn attack that\n"
+            "uses the sunlight."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10781,9 +10781,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM26"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Causes a quake\n"
-            "that has no effect\n"
-            "on flying foes."),
+            "Move: Earthquake\n"
+            "Shakes the earth to\n"
+            "damage all foes."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10916,9 +10916,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM35"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Looses a stream of\n"
-            "fire that may burn\n"
-            "the foe."),
+            "Move: Flamethrower\n"
+            "Stream of hot fire\n"
+            "that may burn foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11217,14 +11217,14 @@ const struct Item gItemsInfo[] =
         .name = _("TM55"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Move: Tera Blast\n"
-            "Hurl burst of Tera\n"
-            "energy at foe."),
+            "Move: Snarl\n"
+            "Yells at the foe\n"
+            "to drop Sp. Atk."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_TERA_BLAST,
+        .secondaryId = MOVE_SNARL,
     },
 
     [ITEM_TM56] =
@@ -11246,12 +11246,15 @@ const struct Item gItemsInfo[] =
     {
         .name = _("TM57"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Move: Roost\n"
+            "Recovers 1/2 of\n"
+            "health."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_ROOST,
     },
 
     [ITEM_TM58] =

@@ -236,7 +236,7 @@ script FrescoIsles_Gym_EventScript_ThaliaAndMelpomene_DefeatedScript
 	call(Common_EventScript_PlayGymBadgeFanfare)
 
     // Set gym completion flags
-    setflag(FLAG_BADGE05_GET)
+    setflag(FLAG_BADGE06_GET)
     // Set all trainers in Gym as defeated
     settrainerflag(TRAINER_FRESCOGYM_GIDEON)
     settrainerflag(TRAINER_FRESCOGYM_MELODY)

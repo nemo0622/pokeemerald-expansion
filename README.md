@@ -69,6 +69,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 MAJOR TODOS:
 - Continue Mapping and NPC development
     - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
+- Fix Pyroar shadow sprites
 
 - CUSTOM MEGA EVOLUTION CONCEPTS:
     - Mega Lapras (G-max Design): Gains large boost of defenses and special attack, with slight speed decrease
@@ -102,6 +103,7 @@ MAJOR TODOS:
             - At the top of the Tower of Dioxippus, where Rayquaza is, you'll have to battle Kalliope. THE TOWER CAN ONLY BE ACCESSED AFTER FIGHTING KYOGRE AND GROUDON! Kalliope will use Raging Bolt, and after her defeat, she will be chased off by Rayquaza and return to Aerios Hideout (to her Gym!).
     - Rania tells player that Team Chimera grunts have been spotted in an abandoned town south of Port Pello, speculating that that's where they went
         - Also happens to be the old location for the 8th gym, hOw aBoUt tHaT! Player encouraged to head south of Port Pello and strike at the heart of Team Chimera
+        - Rania will give the Player the HM Strength, which is required to access the resting places of Groudon, Kyogre, and Rayquaza!
 
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves

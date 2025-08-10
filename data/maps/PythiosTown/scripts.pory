@@ -1,11 +1,19 @@
 mapscripts PythiosTown_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_PYTHIOS_TOWN)
-        random(3)
-        switch (var(VAR_RESULT)) {
-            case 0: setweather(WEATHER_NONE)
-            case 1: setweather(WEATHER_NONE)
-            case 2: setweather(WEATHER_RAIN)
+
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
+        else
+        {
+            random(3)
+            switch (var(VAR_RESULT)) {
+                case 0: setweather(WEATHER_NONE)
+                case 1: setweather(WEATHER_NONE)
+                case 2: setweather(WEATHER_RAIN)
+            }
         }
 
         clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)

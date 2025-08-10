@@ -1143,6 +1143,56 @@ side_quest(
 	NULL,
 	0
 ),
+side_quest(
+	gText_SideQuestName_58, // QUEST_MOON_STONE_YOUNGSTER
+	gText_SideQuestDesc_58,
+	gText_SideQuestDesc_58,
+	gText_SideQuestMap58,
+	ITEM_MOON_STONE,
+	ITEM,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_59, // QUEST_SHOW_MAN_ARCHEN_FROM_PARTY
+	gText_SideQuestDesc_59,
+	gText_SideQuestDesc_59,
+	gText_SideQuestMap59,
+	SPECIES_ARCHEN,
+	PKMN,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_60, // QUEST_LEGEND_OF_KYOGRE
+	gText_SideQuestDesc_60,
+	gText_SideQuestDesc_60,
+	gText_SideQuestMap60,
+	SPECIES_KYOGRE,
+	PKMN,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_61, // QUEST_LEGEND_OF_GROUDON
+	gText_SideQuestDesc_61,
+	gText_SideQuestDesc_61,
+	gText_SideQuestMap61,
+	SPECIES_GROUDON,
+	PKMN,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_62, // QUEST_LEGEND_OF_RAYQUAZA
+	gText_SideQuestDesc_62,
+	gText_SideQuestDesc_62,
+	gText_SideQuestMap62,
+	SPECIES_RAYQUAZA,
+	PKMN,
+	NULL,
+	0
+),
 };
 ////////////////////////END QUEST CUSTOMIZATION////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////

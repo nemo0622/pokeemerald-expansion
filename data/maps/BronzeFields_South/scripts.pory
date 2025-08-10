@@ -3,6 +3,11 @@ mapscripts BronzeFields_South_MapScripts {
         // NOTE: NO OVERWORLD ENCOUNTERS ON THIS MAP!
         // the windmills fuck with them badly like 1 in 20 times it's weird. whatever
 
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
+
         // windmill management sigh
         clearflag(FLAG_TRIGGERED_WINDMILL_SPAWN)
     }

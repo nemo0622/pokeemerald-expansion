@@ -574,3 +574,6 @@ gSpecials::
 	def_special StartMining
 	def_special CheckIfAnyMonsHaveRibbons
 	def_special CheckRouteCaptureProgress
+	def_special SetPalatiGymTorch1
+	def_special SetPalatiGymTorch2
+	def_special SetPalatiGymTorch3
