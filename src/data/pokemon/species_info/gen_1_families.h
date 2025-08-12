@@ -6477,7 +6477,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_DAMP, ABILITY_CLOUD_NINE, ABILITY_PUNK_ROCK },
+        .abilities = { ABILITY_DAMP, ABILITY_CLOUD_NINE, ABILITY_VOCALIST },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Golduck"),
         .cryId = CRY_GOLDUCK,
@@ -10346,10 +10346,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 13,
         .weight = 1,
         .description = COMPOUND_STRING(
-            "When exposed to a strong wind, a Gastly's\n"
-            "gaseous body quickly dwindles away.\n"
-            "They cluster under the eaves of houses\n"
-            "to escape the ravages of wind."),
+            "Gastly may appear menacing, but it prefers\n" // new desc
+            "harmless pranks and jokes over doing\n"
+            "real harm. Strong winds can blow them\n"
+            "away, so they hide when storms come."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10410,10 +10410,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 16,
         .weight = 1,
         .description = COMPOUND_STRING(
-            "If a Haunter beckons you while it is\n"
-            "floating in darkness, don't approach it.\n"
-            "This Pokémon will try to lick you with its\n"
-            "tongue and steal your life away."),
+            "Haunter dislikes bright lights, so wary\n" // new desc
+            "Trainers carry flashlights to deter them.\n"
+            "They can phase through walls and can\n"
+            "paralyze foes with their tongues."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 293,
@@ -10445,8 +10445,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sHaunterLevelUpLearnset,
         .teachableLearnset = sHaunterTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GENGAR},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GENGAR}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GENGAR}),
     },
 
     [SPECIES_GENGAR] =
@@ -10481,10 +10480,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 15,
         .weight = 405,
         .description = COMPOUND_STRING(
-            "Deep in the night, your shadow cast by\n"
-            "a streetlight may suddenly overtake you.\n"
-            "It is actually a Gengar running past\n"
-            "you, pretending to be your shadow."),
+            "This Pokémon loves full moons, when\n" // new desc
+            "nighttime shadows stretch longest. It\n"
+            "jumps between the shadows of people\n"
+            "walking at night to feed on their fear."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 302,
@@ -10545,10 +10544,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 14,
         .weight = 405,
         .description = COMPOUND_STRING(
-            "Gengar's relationships are warped. It\n"
-            "tries to take the lives of anyone and\n"
-            "everyone. It will even try to curse the\n"
-            "Trainer who is its master!"),
+            "Mega Gengar lets out chilling laughter\n" // new desc
+            "while it chases down victims. During\n"
+            "battle, it can melt into the shadows of\n"
+            "the foe, waiting for the perfect strike."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 302,
@@ -10566,6 +10565,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_GengarMega,
         .iconSprite = gMonIcon_GengarMega,
         .iconPalIndex = 2,
+        SHADOW(0, 6, SHADOW_SIZE_L)
         FOOTPRINT(Gengar)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sGengarLevelUpLearnset,
@@ -10660,10 +10660,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 88,
         .weight = 2100,
         .description = COMPOUND_STRING(
-            "There is a magnet in its brain that\n"
-            "prevents an Onix from losing direction\n"
-            "while tunneling. As it grows older, its body\n"
-            "becomes steadily rounder and smoother."),
+            "Onix burrows through the earth at up to\n" // new desc
+            "50 mph, breaching the surface in a manner\n"
+            "similar to Wailord and other ocean Pokémon.\n"
+            "Many myths condemn Onix as malicious."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 515,
@@ -10716,7 +10716,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_STRONG_JAW },
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_STRONG_JAW, ABILITY_SAND_STREAM },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Steelix"),
         .cryId = CRY_STEELIX,
@@ -10725,10 +10725,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 92,
         .weight = 4000,
         .description = COMPOUND_STRING(
-            "Steelix live even further underground\n"
-            "than Onix. This Pokémon is known to dig\n"
-            "toward the earth's core, reaching a depth\n"
-            "of over six-tenths of a mile underground."),
+            "The ancient people of Ilios's fear of\n" // new desc
+            "Onix likely stems from its evolution.\n"
+            "Evidence suggests that Onix and Steelix\n"
+            "were used in war my opposing armies."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 516,
@@ -10795,10 +10795,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 105,
         .weight = 7400,
         .description = COMPOUND_STRING(
-            "The cells within its body, crystallized by\n"
-            "the energy produced from Mega Evolution,\n"
-            "are stronger than any mineral and able\n"
-            "to withstand any temperature."),
+            "Crystals hover around Mega Steelix as\n" // new desc
+            "proof of their control over minerals.\n"
+            "If an ancient army was able to use this\n"
+            "Pokémon, it would have been unstoppable."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 516,
@@ -10816,7 +10816,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_SteelixMega,
         .iconSprite = gMonIcon_SteelixMega,
         .iconPalIndex = 0,
-        SHADOW(1, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(-2, 12, SHADOW_SIZE_L)
         FOOTPRINT(Steelix)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sSteelixLevelUpLearnset,
@@ -13864,10 +13864,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 15,
         .weight = 560,
         .description = COMPOUND_STRING(
-            "Its blindingly fast speed adds to the\n"
-            "sharpness of its twin forearm scythes.\n"
-            "The scythes can slice through thick logs\n"
-            "in one wicked stroke."),
+            "Packs of Scyther train vigorously in\n"
+            "forests and mountains, leaving entire\n"
+            "sections of woodlands bare of trees.\n"
+            "Very few prey escape with their lives."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 293,
@@ -13936,10 +13936,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 18,
         .weight = 1180,
         .description = COMPOUND_STRING(
-            "A Scizor has a body with the hardness of\n"
-            "steel. It is not easily fazed by ordinary\n"
-            "sorts of attacks. It flaps its wings to\n"
-            "regulate its body temperature."),
+            "Scizor are highly territorial, developing\n" // new desc
+            "hard exoskeletons and crushing pincers to\n"
+            "compete with others for land. They are\n"
+            "considered to be great hunters."),
         .pokemonScale = 278,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -14003,10 +14003,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 20,
         .weight = 1250,
         .description = COMPOUND_STRING(
-            "The excess energy that bathes this\n"
-            "Pokémon keeps it in constant danger of\n"
-            "overflow. It can't sustain a battle over\n"
-            "long periods of time."),
+            "Mega Evolution provides Scizor with even\n" // new desc
+            "stronger pincers, equipped with sharp,\n"
+            "tooth-like structures. Its wings beat to\n"
+            "keep its body cool while fighting."),
         .pokemonScale = 278,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -14024,7 +14024,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_ScizorMega,
         .iconSprite = gMonIcon_ScizorMega,
         .iconPalIndex = 0,
-        SHADOW(5, 15, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(1, 13, SHADOW_SIZE_M)
         FOOTPRINT(Scizor)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sScizorLevelUpLearnset,
@@ -14062,10 +14062,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 18,
         .weight = 890,
         .description = COMPOUND_STRING(
-            "A violent creature that fells trees with\n"
-            "its crude axes and shields itself with hard\n"
-            "stone. Should one encounter this Pokémon\n"
-            "in the wild, one's only recourse is to flee."),
+            "Kleavor's exoskeleton is constructed from\n" // new desc
+            "Black Augurite, making it tough to crack.\n"
+            "The stone axes on its arms allow it to\n"
+            "slash through boulders in a flash."),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,
@@ -15053,10 +15053,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 9,
         .weight = 100,
         .description = COMPOUND_STRING(
-            "Its swimming muscles are weak, so it is\n"
-            "easily washed away by currents. In places\n"
-            "where water pools, you can see many\n"
-            "Magikarp deposited there by the flow."),
+            "It can do little more than float in the\n" // new desc
+            "current, as its fins are too small and\n"
+            "weak to swim against it. Old legends tell\n"
+            "of Magikarp jumping to impossible heights."),
         .pokemonScale = 310,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -15120,10 +15120,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 65,
         .weight = 2350,
         .description = COMPOUND_STRING(
-            "It is an extremely vicious and violent\n"
-            "Pokémon. When humans begin to fight,\n"
-            "it will appear and burn everything to the\n"
-            "ground with intensely hot flames."),
+            "Gyarados is widely feared in the Ilios\n" // new desc
+            "Region, as a number of them are known to\n"
+            "stalk coastal areas. They are unpredictable\n"
+            "and prone to uncontrollable rampages."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 481,
@@ -15188,10 +15188,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 65,
         .weight = 3050,
         .description = COMPOUND_STRING(
-            "Although it obeys its instinctive drive to\n"
-            "destroy everything within its reach, it\n"
-            "will respond to orders from a Trainer it\n"
-            "truly trusts."),
+            "Mega Gyarados is driven by the need to\n" // new desc
+            "destroy. Only a few, highly skilled\n"
+            "Trainers can master this Pokémon, becoming\n"
+            "a fierce opponent in battle."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 481,
@@ -16606,10 +16606,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 18,
         .weight = 590,
         .description = COMPOUND_STRING(
-            "Aerodactyl is a Pokémon from the age\n"
-            "of dinosaurs. It was regenerated from DNA\n"
-            "extracted from amber. It is imagined to\n"
-            "have been the king of the skies."),
+            "Once thought extinct, Aerodactyl can once\n" // new desc
+            "again be seen in the skies of Ilios.\n"
+            "They are omnivorous, but their sharp\n"
+            "teeth are best at tearing meat."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 302,
@@ -16628,7 +16628,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_Aerodactyl,
         .iconSprite = gMonIcon_Aerodactyl,
         .iconPalIndex = 2,
-        SHADOW(-2, 16, SHADOW_SIZE_S)
+        SHADOW(3, 16, SHADOW_SIZE_S)
         FOOTPRINT(Aerodactyl)
         OVERWORLD(
             sPicTable_Aerodactyl,
@@ -16672,9 +16672,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 21,
         .weight = 790,
         .description = COMPOUND_STRING(
-            "The power of Mega Evolution has\n"
-            "completely restored its genes. The rocks\n"
-            "on its body are harder than diamond."),
+            "Mega Aerodactyl resembles a subspecies\n" // new desc
+            "seen in rare fossils. They become much\n"
+            "stronger, developing sharp, carbon-based\n"
+            "protrusions all over its body."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 302,
@@ -17337,10 +17338,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 18,
         .weight = 33,
         .description = COMPOUND_STRING(
-            "A Dratini continually molts and sloughs\n"
-            "off its old skin. It does so because the\n"
-            "life energy within its body steadily builds\n"
-            "to reach uncontrollable levels."),
+            "Dratini was thought to be a simply myth\n" // new desc
+            "until being fished up in Kanto around a\n"
+            "century ago. Now, small populations have\n"
+            "been reported in waters worldwide."),
         .pokemonScale = 256,
         .pokemonOffset = 8,
         .trainerScale = 386,
@@ -17401,10 +17402,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 40,
         .weight = 165,
         .description = COMPOUND_STRING(
-            "Dragonair roaming the waters of Ilios have\n"
+            "Dragonair roaming the waters of Ilios have\n" // new desc
             "a unique typing. Crystals embedded in its\n"
             "neck and tail store energy, allowing it to\n"
-            "control weather and the elements."), // new desc
+            "control weather and the elements."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 411,
@@ -17470,17 +17471,17 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 22,
         .weight = 2100,
         .description = COMPOUND_STRING(
-            "It can circle the globe in just 16 hours.\n"
-            "It is a kindhearted Pokémon that leads\n"
-            "lost and foundering ships in a storm\n"
-            "to the safety of land."),
+            "Dragonite is extremely kindhearted. They\n" // new desc
+            "soar across the sea, finding lost sailors\n"
+            "or struggling Pokémon and rescuing them.\n"
+            "Some even deliver mail! They love to help."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 4,
         .frontPic = gMonFrontPic_Dragonite,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 3,
+        .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Dragonite,
         .frontAnimId = ANIM_V_SHAKE,
         .backPic = gMonBackPic_Dragonite,
@@ -17545,7 +17546,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerOffset = 4,
         .frontPic = gMonFrontPic_DragoniteMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 3,
+        .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_DragoniteMega,
         .frontAnimId = ANIM_V_SHAKE,
         .backPic = gMonBackPic_DragoniteMega,
@@ -17556,7 +17557,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_DragoniteMega,
         .iconSprite = gMonIcon_DragoniteMega,
         .iconPalIndex = 2,
-        SHADOW(2, 15, SHADOW_SIZE_M)
+        SHADOW(-5, 17, SHADOW_SIZE_M)
         FOOTPRINT(Dragonite)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sDragoniteLevelUpLearnset,

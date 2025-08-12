@@ -34761,6 +34761,7 @@ static const u16 sCyclizarTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_DRAGON_CLAW,
     MOVE_FACADE,
+    MOVE_FLAMETHROWER,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,

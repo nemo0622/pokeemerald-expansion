@@ -3447,7 +3447,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_BIG_PECKS, ABILITY_PUNK_ROCK },
+        .abilities = { ABILITY_KEEN_EYE, ABILITY_BIG_PECKS, ABILITY_VOCALIST },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Chatot"),
         .cryId = CRY_CHATOT,
@@ -4631,10 +4631,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 10,
         .weight = 505,
         .description = COMPOUND_STRING(
-            "During cold seasons, it migrates to the\n"
-            "mountain's lower reaches. Seemingly\n"
-            "curious about people, they gather around\n"
-            "footsteps they find on snowy mountains."),
+            "Snover is a highly inquisitive Pokémon.\n" // new desc
+            "If it finds footprints, it will try to\n"
+            "follow their path and find whatever made\n"
+            "them. They love to play in the snow."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -4669,7 +4669,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sSnoverLevelUpLearnset,
         .teachableLearnset = sSnoverTeachableLearnset,
         .eggMoveLearnset = sSnoverEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ABOMASNOW}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_ABOMASNOW}),
     },
 
     [SPECIES_ABOMASNOW] =
@@ -4700,10 +4700,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 22,
         .weight = 1355,
         .description = COMPOUND_STRING(
-            "It lives a quiet life on mountains that\n"
-            "are perpetually covered in snow. It hides\n"
-            "itself by whipping up blizzards.\n"
-            "It is also known as “The Ice Monster.”"),
+            "Abomasnow springs to life during harsh\n" // new desc
+            "snowstorms, giving them a poor reputation.\n"
+            "We now know that stories of the abominable\n"
+            "snowman are from run-ins with Abomasnow."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 348,
@@ -4768,10 +4768,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 27,
         .weight = 1850,
         .description = COMPOUND_STRING(
-            "The sprouts on Abomasnow's back grow into\n"
-            "great shafts of ice when it Mega Evolves.\n"
-            "Dislikes associating with others and\n"
-            "chooses to live quietly deep in mountains."),
+            "Mega Abomasnow grows huge spikes of ice\n" // new desc
+            "upon changing form. The weight of these\n"
+            "growths can be difficult to manage, but\n"
+            "they make Abomasnow even more formidable."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 348,
@@ -4789,7 +4789,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_AbomasnowMega,
         .iconSprite = gMonIcon_AbomasnowMega,
         .iconPalIndex = 1,
-        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(-2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Abomasnow)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sAbomasnowLevelUpLearnset,

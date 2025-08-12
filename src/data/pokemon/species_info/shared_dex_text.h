@@ -121,16 +121,16 @@ const u8 gGumshoosPokedexText[] = _(
     "by nightfall.");
 
 const u8 gVikavoltPokedexText[] = _(
-    "In order to defend against bird Pokémon,\n"
+    "In order to defend against bird Pokémon,\n" // new desc
     "Vikavolt has learned to harness the power\n"
     "of electricity. Only the most brave, or\n"
     "most foolish, Pokémon dare to attack.");
 
 const u8 gRibombeePokedexText[] = _(
-    "Ribombee rolls up pollen into puffs.\n"
-    "It makes many different varieties, some\n"
-    "used as food and others used in battle.\n"
-    "They are sometimes sold as supplements.");
+    "Ribombee create a variety of puffs made\n" // new desc
+    "of pollen and plant extracts, each with\n"
+    "different effects. They are attracted to\n"
+    "people with positive, loving auras.");
 
 const u8 gRockruffPokedexText[] = _(
     "This Pokémon has lived with people since\n"

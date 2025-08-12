@@ -817,10 +817,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 7,
         .weight = 212,
         .description = COMPOUND_STRING(
-            "It has an internal organ that senses\n"
-            "the earth's rotation. Using this special\n"
-            "organ, a Hoothoot begins hooting at\n"
-            "precisely the same time every day."),
+            "Hoothoot can sense the earth's magnetic\n" // new desc
+            "field and rotation with eerie accuracy.\n"
+            "Some families keep Hoothoot as a night\n"
+            "clock, as they call at the same time daily."),
         .pokemonScale = 380,
         .pokemonOffset = -2,
         .trainerScale = 256,
@@ -965,7 +965,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_NoctowlMega,
         .iconSprite = gMonIcon_NoctowlMega,
         .iconPalIndex = 2,
-        SHADOW(1, 10, SHADOW_SIZE_M)
+        SHADOW(3, 13, SHADOW_SIZE_M)
         FOOTPRINT(Noctowl)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sNoctowlLevelUpLearnset,
@@ -1729,10 +1729,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 78,
         .description = COMPOUND_STRING(
-            "Its fluffy wool rubs together and builds\n"
-            "a static charge. The more energy is\n"
-            "charged, the more brightly the lightbulb\n"
-            "at the tip of its tail glows."),
+            "Mareep are among the most common farm\n" // new desc
+            "animals worldwide. They are passive, calm,\n"
+            "and grow thick, fluffy wool. This wool is\n"
+            "used in many common clothing items."),
         .pokemonScale = 379,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -1793,10 +1793,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 8,
         .weight = 133,
         .description = COMPOUND_STRING(
-            "Its fleece quality changes to generate\n"
-            "strong static electricity with a small\n"
-            "amount of wool. The bare, slick parts of its\n"
-            "hide are shielded against electricity."),
+            "Its wool is higher quality than Mareep's.\n" // new desc
+            "Flaaffy builds up electric charge as it\n"
+            "walks, displaying their power by making\n"
+            "the end of its tail glow."),
         .pokemonScale = 372,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -1865,10 +1865,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 14,
         .weight = 615,
         .description = COMPOUND_STRING(
-            "It gives off so much light that it can be\n"
-            "seen even from space. People in the old\n"
-            "days used its light to send signals back\n"
-            "and forth with others far away."),
+            "Ampharos produces light bright enough to\n" // new desc
+            "be visible from miles away. The Johto\n"
+            "Region has a rich history of keeping\n"
+            "them in coastal lighthouses."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -1930,10 +1930,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 14,
         .weight = 615,
         .description = COMPOUND_STRING(
-            "Massive amounts of energy intensely\n"
-            "stimulated Ampharos's cells, apparently\n"
-            "awakening its long-sleeping dragon's\n"
-            "blood."),
+            "Mega Evolution stimulates wool growth\n" // new desc
+            "to give it an impressive mane. Strangely,\n"
+            "Mega Ampharos gains the Dragon typing,\n"
+            "possibly due to the burst of Mega power."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -1951,7 +1951,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_AmpharosMega,
         .iconSprite = gMonIcon_AmpharosMega,
         .iconPalIndex = 0,
-        SHADOW(-7, 13, SHADOW_SIZE_L)
+        SHADOW(6, 13, SHADOW_SIZE_M)
         FOOTPRINT(Ampharos)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sAmpharosLevelUpLearnset,
@@ -4668,10 +4668,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 15,
         .weight = 540,
         .description = COMPOUND_STRING(
-            "They gather in forests seeking the sweet\n"
-            "sap of trees. It is completely clad in a\n"
-            "steel-hard shell. It is proud of its horn,\n"
-            "which it uses to fling foes."),
+            "It uses its horn to fling opponents away\n" // new desc
+            "during dramatic battles over tree sap.\n"
+            "These fights inspire artists all over\n"
+            "the world."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4737,10 +4737,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 17,
         .weight = 625,
         .description = COMPOUND_STRING(
-            "A tremendous influx of energy builds it up,\n"
-            "but when Mega Evolution ends, Heracross\n"
-            "is bothered by terrible soreness in its\n"
-            "muscles."),
+            "Mega Heracross has a comically large horn\n" // new desc
+            "and an even thicker exoskeleton. It may\n"
+            "look funny, but it is incredible in a\n"
+            "fight, taking out many foes at once."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4758,7 +4758,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_HeracrossMega,
         .iconSprite = gMonIcon_HeracrossMega,
         .iconPalIndex = 0,
-        SHADOW(2, 13, SHADOW_SIZE_L)
+        SHADOW(7, 14, SHADOW_SIZE_L)
         FOOTPRINT(Heracross)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sHeracrossLevelUpLearnset,
@@ -6257,10 +6257,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 108,
         .description = COMPOUND_STRING(
-            "Houndour communicate with each other\n"
-            "using a variety of cries to corner their\n"
-            "prey. This Pokémon's remarkable teamwork\n"
-            "is simply unparalleled."),
+            "Wild Houndour live in close-knit packs\n" // new desc
+            "consisting of multiple families. Over time,\n"
+            "these packs start to use different calls\n"
+            "to communicate, developing unique dialects."),
         .pokemonScale = 393,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -6320,10 +6320,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 14,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "In a Houndoom pack, the one with its horns\n"
-            "raked sharply back serves a leadership\n"
-            "role. They choose their leader by fighting\n"
-            "among themselves."),
+            "The howl of a Houndoom is chilling to\n" // new desc
+            "the bone. Early depictions of the Grim\n"
+            "Reaper were likely based on rare Houndoom\n"
+            "encounters. Their fires can burn for days."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -6388,9 +6388,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 19,
         .weight = 495,
         .description = COMPOUND_STRING(
-            "Its red claws and the tips of its tail are\n"
-            "melting from high internal temperatures\n"
-            "that are painful to Houndoom itself.\n"),
+            "In addition to terrifying howls, Mega\n" // new desc
+            "Houndoom are infamous for their unsettling\n"
+            "laughter, cackling as they burn down\n"
+            "entire battle fields."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -6408,7 +6409,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_HoundoomMega,
         .iconSprite = gMonIcon_HoundoomMega,
         .iconPalIndex = 0,
-        SHADOW(-5, 13, SHADOW_SIZE_L)
+        SHADOW(2, 10, SHADOW_SIZE_M)
         FOOTPRINT(Houndoom)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sHoundoomLevelUpLearnset,
@@ -6675,6 +6676,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sWyrdeerLevelUpLearnset,
         .teachableLearnset = sWyrdeerTeachableLearnset,
+        .formSpeciesIdTable = sWyrdeerFormSpeciesIdTable,
+        .formChangeTable = sWyrdeerFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -6715,7 +6718,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 1,
         .frontPic = gMonFrontPic_WyrdeerMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 3,
         .frontAnimFrames = sAnims_WyrdeerMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_WyrdeerMega,
@@ -6726,7 +6729,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_WyrdeerMega,
         .iconSprite = gMonIcon_WyrdeerMega,
         .iconPalIndex = 2,
-        SHADOW(-4, 10, SHADOW_SIZE_M)
+        SHADOW(0, 9, SHADOW_SIZE_L)
         FOOTPRINT(Wyrdeer)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sWyrdeerLevelUpLearnset,
@@ -7129,10 +7132,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 720,
         .description = COMPOUND_STRING(
-            "A Larvitar is born deep under the ground.\n"
-            "It must eat its way through the soil above\n"
-            "and reach the surface for it to see its\n"
-            "parents' faces."),
+            "Larvitar in the wild begin their lives\n" // new desc
+            "deep below the surface, doing almost\n"
+            "nothing except eating dirt and stone until\n"
+            "evolving."),
         .pokemonScale = 472,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -7192,10 +7195,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 12,
         .weight = 1520,
         .description = COMPOUND_STRING(
-            "A Pupitar creates a gas inside its body\n"
-            "that it ejects under compression to propel\n"
-            "itself like a jet. Its body can withstand\n"
-            "a collision with solid steel."),
+            "When threatened, Pupitar can thrash its\n" // new desc
+            "body about like a weapon, cracking stone\n"
+            "and keeping predators away. Folktales call\n"
+            "it impatient, desperate for evolution."),
         .pokemonScale = 292,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -7260,10 +7263,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 20,
         .weight = 2020,
         .description = COMPOUND_STRING(
-            "A Tyranitar is so overwhelmingly powerful,\n"
-            "it can bring down a whole mountain to make\n"
-            "its nest. It roams in mountains seeking\n"
-            "new opponents to fight."),
+            "Rampaging Tyranitar are commonly depicted\n" // new desc
+            "in action movies, and their real life\n"
+            "inspiration is just as captivating. They\n"
+            "can gouge new valleys as they battle."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 345,
@@ -7325,10 +7328,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 25,
         .weight = 2550,
         .description = COMPOUND_STRING(
-            "Due to the colossal power poured into it,\n"
-            "this Pokémon's back split right open. Its\n"
-            "destructive instincts are the only thing\n"
-            "keeping it moving."),
+            "Mega Tyranitar develop giant stone growths\n" // new desc
+            "along their bodies. These give them an\n"
+            "edge in battle, going on rampages that\n"
+            "seem almost impossible to stop."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 345,
@@ -7346,7 +7349,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_TyranitarMega,
         .iconSprite = gMonIcon_TyranitarMega,
         .iconPalIndex = 1,
-        SHADOW(0, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(Tyranitar)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sTyranitarLevelUpLearnset,

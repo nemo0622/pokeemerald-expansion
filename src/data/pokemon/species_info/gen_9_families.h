@@ -3519,7 +3519,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_HUGE_POWER },
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Tinkatink"),
         .cryId = CRY_TINKATINK,
@@ -3528,10 +3528,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 4,
         .weight = 89,
         .description = COMPOUND_STRING(
-            "This Pokémon pounds iron scraps\n"
-            "together to make a hammer. It will\n"
-            "remake the hammer again and again until\n"
-            "it's satisfied with the result."),
+            "Tinkatink resembles a baby with a rattle,\n" // new desc
+            "but it should not be underestimated. They\n"
+            "gather scrap metal from all around to make\n"
+            "small hammers, which slowly grow with time."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3563,7 +3563,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sTinkatinkLevelUpLearnset,
         .teachableLearnset = sTinkatinkTeachableLearnset,
         .eggMoveLearnset = sTinkatinkEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_TINKATUFF}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_TINKATUFF}),
     },
 
     [SPECIES_TINKATUFF] =
@@ -3583,7 +3583,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_HUGE_POWER },
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Tinkatuff"),
         .cryId = CRY_TINKATUFF,
@@ -3592,10 +3592,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 7,
         .weight = 591,
         .description = COMPOUND_STRING(
-            "These Pokémon make their homes in\n"
-            "piles of scrap metal. They test the\n"
-            "strength of each other's hammers by\n"
-            "smashing them together."),
+            "Tinkatink evolve into Tinkatuff after\n" // new desc
+            "enough experience with using its hammer.\n"
+            "They are often kept by blacksmiths and\n"
+            "craftspeople for their hammering ability."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3646,7 +3646,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_HUGE_POWER },
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Tinkaton"),
         .cryId = CRY_TINKATON,
@@ -3655,10 +3655,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 7,
         .weight = 1128,
         .description = COMPOUND_STRING(
-            "The hammer tops 220 pounds, yet it\n"
-            "gets swung around easily by\n"
-            "Tinkaton as it steals whatever it pleases\n"
-            "and carries its plunder back home."),
+            "Although their hammers are extremely\n" // new desc
+            "heavy, Tinkaton can swing it with ease.\n"
+            "Corviknight, their nemesis, is not found\n"
+            "in Ilios, so Tinkaton live quieter lives."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3693,15 +3693,15 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .formChangeTable = sTinkatonFormChangeTable,
     },
 
-#if P_MEGA_EVOLUTION
+#if P_MEGA_EVOLUTIONS
     [SPECIES_TINKATON_MEGA] =
     {
         .baseHP        = 90,
-        .baseAttack    = 75,
-        .baseDefense   = 82,
-        .baseSpeed     = 94,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 105,
+        .baseAttack    = 85,
+        .baseDefense   = 112,
+        .baseSpeed     = 114,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 135,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_STEEL),
         .catchRate = 45,
         .expYield = 253,
@@ -3711,7 +3711,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_UNAWARE, ABILITY_HUGE_POWER },
+        .abilities = { ABILITY_HUGE_POWER, ABILITY_HUGE_POWER, ABILITY_HUGE_POWER },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Tinkaton"),
         .cryId = CRY_TINKATON,
@@ -3720,10 +3720,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 7,
         .weight = 1128,
         .description = COMPOUND_STRING(
-            "The hammer tops 220 pounds, yet it\n"
-            "gets swung around easily by\n"
-            "Tinkaton as it steals whatever it pleases\n"
-            "and carries its plunder back home."),
+            "By Mega Evolving, Tinkaton's hammer\n" // new desc
+            "transforms into a powered jackhammer.\n"
+            "Mega Tinkaton rides around on it at high\n"
+            "speeds to spread destruction and chaos."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3741,7 +3741,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .shinyPalette = gMonShinyPalette_TinkatonMega,
         .iconSprite = gMonIcon_TinkatonMega,
         .iconPalIndex = 1,
-        SHADOW(-3, 12, SHADOW_SIZE_S)
+        SHADOW(-2, 14, SHADOW_SIZE_L)
         FOOTPRINT(Tinkaton)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sTinkatonLevelUpLearnset,
@@ -3749,7 +3749,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .formSpeciesIdTable = sTinkatonFormSpeciesIdTable,
         .formChangeTable = sTinkatonFormChangeTable,
     },
-#endif // P_MEGA_EVOLUTION
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TINKATINK
 
 #if P_FAMILY_WIGLETT
@@ -4279,10 +4279,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 16,
         .weight = 630,
         .description = COMPOUND_STRING(
-            "It can sprint at over 70 mph while\n"
-            "carrying a human. The rider's body\n"
-            "heat warms Cyclizar's back and lifts\n"
-            "the Pokémon's spirit."),
+            "Humans have been riding on Cyclizar for\n" // new desc
+            "centuries, inspiring the designs of the\n"
+            "first motorcycles. They seem to hold more\n"
+            "powers deep in their DNA."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4321,12 +4321,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_CYCLIZAR_MEGA_S] =
     {
         .baseHP        = 70,
-        .baseAttack    = 95,
-        .baseDefense   = 70,
-        .baseSpeed     = 121,
+        .baseAttack    = 145,
+        .baseDefense   = 100,
+        .baseSpeed     = 131,
         .baseSpAttack  = 85,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_NORMAL),
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_FIGHTING),
         .catchRate = 190,
         .expYield = 175,
         .evYield_Speed = 2,
@@ -4335,7 +4335,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_REGENERATOR },
+        .abilities = { ABILITY_MOXIE, ABILITY_MOXIE, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Cyclizar"),
         .cryId = CRY_CYCLIZAR,
@@ -4344,10 +4344,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 16,
         .weight = 630,
         .description = COMPOUND_STRING(
-            "It can sprint at over 70 mph while\n"
-            "carrying a human. The rider's body\n"
-            "heat warms Cyclizar's back and lifts\n"
-            "the Pokémon's spirit."),
+            "The Scarlet variant of Mega Cyclizar\n" // new desc
+            "unlocks ancient genes, resembling an\n"
+            "extinct Pokémon from Paldea. Its feathers\n"
+            "can shrug off blows from nearly any foe."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4365,7 +4365,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .shinyPalette = gMonShinyPalette_CyclizarMega_S,
         .iconSprite = gMonIcon_CyclizarMega_S,
         .iconPalIndex = 1,
-        SHADOW(4, 6, SHADOW_SIZE_M)
+        SHADOW(2, 10, SHADOW_SIZE_L)
         FOOTPRINT(Cyclizar)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sCyclizarLevelUpLearnset,
@@ -4378,12 +4378,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_CYCLIZAR_MEGA_V] =
     {
         .baseHP        = 70,
-        .baseAttack    = 95,
-        .baseDefense   = 70,
-        .baseSpeed     = 121,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_NORMAL),
+        .baseAttack    = 85,
+        .baseDefense   = 80,
+        .baseSpeed     = 136,
+        .baseSpAttack  = 145,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_ELECTRIC),
         .catchRate = 190,
         .expYield = 175,
         .evYield_Speed = 2,
@@ -4392,7 +4392,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_REGENERATOR },
+        .abilities = { ABILITY_ELECTRIC_SURGE, ABILITY_ELECTRIC_SURGE, ABILITY_ELECTRIC_SURGE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Cyclizar"),
         .cryId = CRY_CYCLIZAR,
@@ -4401,10 +4401,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 16,
         .weight = 630,
         .description = COMPOUND_STRING(
-            "It can sprint at over 70 mph while\n"
-            "carrying a human. The rider's body\n"
-            "heat warms Cyclizar's back and lifts\n"
-            "the Pokémon's spirit."),
+            "The Violet variant of Mega Cyclizar\n" // new desc
+            "resembles a futuristic Pokémon of Paldea.\n"
+            "It can flood the area with an electric\n"
+            "charge at will, giving it an upper hand."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4421,8 +4421,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .palette = gMonPalette_CyclizarMega_V,
         .shinyPalette = gMonShinyPalette_CyclizarMega_V,
         .iconSprite = gMonIcon_CyclizarMega_V,
-        .iconPalIndex = 1,
-        SHADOW(4, 6, SHADOW_SIZE_M)
+        .iconPalIndex = 0,
+        SHADOW(1, 11, SHADOW_SIZE_M)
         FOOTPRINT(Cyclizar)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sCyclizarLevelUpLearnset,

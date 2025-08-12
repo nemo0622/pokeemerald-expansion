@@ -2869,6 +2869,9 @@ $(POKEMONGFXDIR)/litleo/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/pyroar/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(POKEMONGFXDIR)/pyroar/female/follower.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 $(POKEMONGFXDIR)/flabebe/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 

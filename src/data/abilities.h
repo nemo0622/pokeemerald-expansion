@@ -355,7 +355,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SAND_STREAM] =
     {
         .name = _("Sand Stream"),
-        .description = COMPOUND_STRING("Summons a sandstorm. Immune."),
+        .description = COMPOUND_STRING("Summons a sandstorm. Immune to sandstorm damage."),
         .aiRating = 9,
     },
 
@@ -906,7 +906,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_RECKLESS] =
     {
         .name = _("Reckless"),
-        .description = COMPOUND_STRING("Boosts moves with recoil."),
+        .description = COMPOUND_STRING("Boosts moves with recoil. Immune to recoil damage."),
         .aiRating = 6,
     },
 
@@ -1928,9 +1928,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 3,
     },
 
-    [ABILITY_PUNK_ROCK] =
+    [ABILITY_VOCALIST] = // replaces PUNK_ROCK
     {
-        .name = _("Punk Rock"),
+        .name = _("Vocalist"),
         .description = COMPOUND_STRING("Ups and resists sound."),
         .aiRating = 2,
         .breakable = TRUE,
@@ -2661,5 +2661,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     #endif
         .description = COMPOUND_STRING("Long Reach & Boost contact damage."),
         .aiRating = 8,
+    },
+
+    [ABILITY_SCAVENGER] = 
+    {
+        .name = _("Scavenger"),
+        .description = COMPOUND_STRING("Recover HP every turn."),
+        .aiRating = 10,
     },
 };

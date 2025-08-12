@@ -5463,7 +5463,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_DEFEATIST, ABILITY_KLUTZ, ABILITY_FLUFFY },
+        .abilities = { ABILITY_DEFEATIST, ABILITY_NONE, ABILITY_TANGLED_FEET },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Archen"),
         .cryId = CRY_ARCHEN,
@@ -5472,10 +5472,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 5,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Said to be the ancestor of all bird\n"
-            "Pokémon, Archen itself could not actually\n"
-            "fly but moved by hopping from treetop\n"
-            "to treetop."),
+            "The existence of Archen is said to have\n" // new desc
+            "proved a connection between bird and\n"
+            "reptile Pokémon. It could glide between\n"
+            "trees, but not truly fly."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -5512,11 +5512,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_ARCHEOPS] =
     {
         .baseHP        = 75,
-        .baseAttack    = 130,
-        .baseDefense   = 80,
+        .baseAttack    = 125,
+        .baseDefense   = 75,
         .baseSpeed     = 110,
-        .baseSpAttack  = 102,
-        .baseSpDefense = 70,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 177,
@@ -5526,7 +5526,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_DEFEATIST, ABILITY_KLUTZ, ABILITY_FLUFFY },
+        .abilities = { ABILITY_DEFEATIST, ABILITY_NONE, ABILITY_FLUFFY },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Archeops"),
         .cryId = CRY_ARCHEOPS,
@@ -5535,17 +5535,17 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 14,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "They are intelligent and will cooperate\n"
-            "to catch prey. When one Archeops\n"
-            "had the prey cornered, another would\n"
-            "swoop on it."),
+            "The emergence of living Lazarus Taxa\n" // new desc
+            "has opened the door to understanding\n"
+            "ancient Pokémon. We now know Archeops\n"
+            "always hunt in fast-moving packs."),
         .pokemonScale = 265,
         .pokemonOffset = 2,
         .trainerScale = 262,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Archeops,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 4,
+        .frontPicYOffset = 6,
         .frontAnimFrames = sAnims_Archeops,
         .frontAnimId = ANIM_RISING_WOBBLE,
         .enemyMonElevation = 11,
@@ -5577,11 +5577,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_ARCHEOPS_MEGA] =
     {
         .baseHP        = 75,
-        .baseAttack    = 130,
-        .baseDefense   = 80,
-        .baseSpeed     = 110,
-        .baseSpAttack  = 102,
-        .baseSpDefense = 70,
+        .baseAttack    = 165,
+        .baseDefense   = 85,
+        .baseSpeed     = 140,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 177,
@@ -5591,7 +5591,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_DEFEATIST, ABILITY_KLUTZ, ABILITY_FLUFFY },
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_INTIMIDATE, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Archeops"),
         .cryId = CRY_ARCHEOPS,
@@ -5600,29 +5600,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 14,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "They are intelligent and will cooperate\n"
-            "to catch prey. When one Archeops\n"
-            "had the prey cornered, another would\n"
-            "swoop on it."),
+            "Mega Archeops reawakens inactive genes,\n" // new desc
+            "becoming extremely fast on land and\n"
+            "less clumsy in the sky. It is truly an\n"
+            "apex predator."),
         .pokemonScale = 265,
         .pokemonOffset = 2,
         .trainerScale = 262,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_ArcheopsMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 4,
+        .frontPicYOffset = 10,
         .frontAnimFrames = sAnims_ArcheopsMega,
-        .frontAnimId = ANIM_RISING_WOBBLE,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 11,
         .backPic = gMonBackPic_ArcheopsMega,
         .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = 12,
+        .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_ArcheopsMega,
         .shinyPalette = gMonShinyPalette_ArcheopsMega,
         .iconSprite = gMonIcon_ArcheopsMega,
         .iconPalIndex = 0,
-        SHADOW(0, 18, SHADOW_SIZE_M)
+        SHADOW(-1, 13, SHADOW_SIZE_L)
         FOOTPRINT(Archeops)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sArcheopsLevelUpLearnset,
@@ -10327,10 +10327,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 5,
         .weight = 90,
         .description = COMPOUND_STRING(
-            "It can't fly yet and must wait until its\n"
-            "wings have developed more. They guard\n"
-            "their posteriors with bones that were\n"
-            "gathered by Mandibuzz."),
+            "It wears bones collected by Mandibuzz\n" // new desc
+            "to protect itself. Unfortunately, this\n"
+            "weighs it down and prevents it from\n"
+            "flying. They heavily rely on their mother."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -10390,10 +10390,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 12,
         .weight = 395,
         .description = COMPOUND_STRING(
-            "They adorn themselves beautifully with\n"
-            "bones. This is supposedly an effort to\n"
-            "attract males, but no male Mandibuzz\n"
-            "have ever been found."),
+            "After circling for hours, Mandibuzz will\n" // new desc
+            "dive down and fight to claim carrion. It\n"
+            "collects bones for food, defensive tools,\n"
+            "and to adorn themselves to show status."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -10431,11 +10431,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_MANDIBUZZ_MEGA] =
     {
         .baseHP        = 115,
-        .baseAttack    = 85,
-        .baseDefense   = 110,
-        .baseSpeed     = 70,
+        .baseAttack    = 115,
+        .baseDefense   = 145,
+        .baseSpeed     = 75,
         .baseSpAttack  = 35,
-        .baseSpDefense = 95,
+        .baseSpDefense = 125,
         .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),
         .catchRate = 60,
         .expYield = 179,
@@ -10445,7 +10445,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_REGENERATOR, ABILITY_OVERCOAT, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_SCAVENGER, ABILITY_SCAVENGER, ABILITY_SCAVENGER },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Mandibuzz"),
         .cryId = CRY_MANDIBUZZ,
@@ -10454,10 +10454,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 12,
         .weight = 395,
         .description = COMPOUND_STRING(
-            "They adorn themselves beautifully with\n"
-            "bones. This is supposedly an effort to\n"
-            "attract males, but no male Mandibuzz\n"
-            "have ever been found."),
+            "Mega Mandibuzz are covered in the bones\n" // new desc
+            "they harvest from carrion. Its head is\n"
+            "covered in a skull-like shield. Amazingly,\n"
+            "it can lift an entire Tauros in flight."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -10469,7 +10469,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_MandibuzzMega,
         .backPicSize = MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = 10,
+        .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_MandibuzzMega,
         .shinyPalette = gMonShinyPalette_MandibuzzMega,

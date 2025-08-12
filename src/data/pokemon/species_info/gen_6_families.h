@@ -1439,6 +1439,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_Litleo,
         .iconSprite = gMonIcon_Litleo,
         .iconPalIndex = 2,
+        SHADOW(-1, 1, SHADOW_SIZE_M)
         FOOTPRINT(Litleo)
         OVERWORLD(
             sPicTable_Litleo,
@@ -1502,6 +1503,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_Pyroar,
         .iconSprite = gMonIcon_Pyroar,
         .iconPalIndex = 2,
+        SHADOW(1, 13, SHADOW_SIZE_L)
         FOOTPRINT(Pyroar)
         OVERWORLD(
             sPicTable_Pyroar,
@@ -1562,6 +1564,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_PyroarF,
         .iconSprite = gMonIcon_PyroarF,
         .iconPalIndex = 2,
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(Pyroar)
         OVERWORLD(
             sPicTable_PyroarF,
@@ -1942,10 +1945,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 9,
         .weight = 310,
         .description = COMPOUND_STRING(
-            "If it has sunshine and water, it doesn't\n"
-            "need to eat, because it can generate\n"
-            "energy from the leaves on its back.\n"
-            "It has a placid disposition."),
+            "Archaeological remains show that Skiddo\n" // new desc
+            "was among the first domesticated Pokémon,\n"
+            "raised by herders and primitive farmers.\n"
+            "Children can safely ride on them."),
         .pokemonScale = 338,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -1976,7 +1979,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSkiddoLevelUpLearnset,
         .teachableLearnset = sSkiddoTeachableLearnset,
         .eggMoveLearnset = sSkiddoEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GOGOAT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOGOAT}),
     },
 
     [SPECIES_GOGOAT] =
@@ -2005,10 +2008,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 17,
         .weight = 910,
         .description = COMPOUND_STRING(
-            "It can tell how its trainer is feeling by\n"
-            "subtle shifts in the grip on its horns. This\n"
-            "empathetic sense lets them run as if one\n"
-            "being. They inhabit mountainous regions."),
+            "Wild Gogoat can scale sheer mountainsides\n" // new desc
+            "with ease. Their fur is covered in mud,\n"
+            "topped with a coat of leaves. They have\n"
+            "the ability to feel rider's thoughts."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -2046,11 +2049,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_GOGOAT_MEGA] =
     {
         .baseHP        = 133,
-        .baseAttack    = 104,
-        .baseDefense   = 67,
+        .baseAttack    = 134,
+        .baseDefense   = 97,
         .baseSpeed     = 64,
-        .baseSpAttack  = 97,
-        .baseSpDefense = 81,
+        .baseSpAttack  = 127,
+        .baseSpDefense = 91,
         .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
         .catchRate = 45,
         .expYield = 186,
@@ -2060,7 +2063,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAP_SIPPER, ABILITY_GRASS_PELT, ABILITY_SEED_SOWER },
+        .abilities = { ABILITY_TECHNICIAN, ABILITY_TECHNICIAN, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Gogoat"),
         .cryId = CRY_GOGOAT,
@@ -2069,10 +2072,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 17,
         .weight = 910,
         .description = COMPOUND_STRING(
-            "It can tell how its trainer is feeling by\n"
-            "subtle shifts in the grip on its horns. This\n"
-            "empathetic sense lets them run as if one\n"
-            "being. They inhabit mountainous regions."),
+            "The horns of Mega Gogoat have grown into\n" // new desc
+            "titanic antlers, dealing critical damage\n"
+            "to whatever they come into contact with.\n"
+            "They resemble an extinct elk Pokémon."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -2090,7 +2093,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_GogoatMega,
         .iconSprite = gMonIcon_GogoatMega,
         .iconPalIndex = 1,
-        SHADOW(2, 8, SHADOW_SIZE_L)
+        SHADOW(-2, 12, SHADOW_SIZE_L)
         FOOTPRINT(Gogoat)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sGogoatLevelUpLearnset,
@@ -2203,7 +2206,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .trainerOffset = 7,
         .frontPic = gMonFrontPic_Pangoro,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 3,
         .frontAnimFrames = sAnims_Pangoro,
         .frontAnimId = ANIM_BACK_AND_LUNGE,
         .backPic = gMonBackPic_Pangoro,
@@ -2268,7 +2271,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .trainerOffset = 7,
         .frontPic = gMonFrontPic_PangoroMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 3,
         .frontAnimFrames = sAnims_PangoroMega,
         .frontAnimId = ANIM_BACK_AND_LUNGE,
         .backPic = gMonBackPic_PangoroMega,
@@ -2279,7 +2282,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_PangoroMega,
         .iconSprite = gMonIcon_PangoroMega,
         .iconPalIndex = 1,
-        SHADOW(0, 9, SHADOW_SIZE_M)
+        SHADOW(3, 10, SHADOW_SIZE_L)
         FOOTPRINT(Pangoro)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sPangoroLevelUpLearnset,
@@ -3590,10 +3593,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 5,
         .weight = 60,
         .description = COMPOUND_STRING(
-            "They make their home in deserts.\n"
-            "They can generate their own energy from\n"
-            "basking in the sun, so eating food is not\n"
-            "a requirement."),
+            "Helioptile live in dry regions, digging\n" // new desc
+            "in the sand to create their homes. They\n"
+            "generate enough energy to produce a shock\n"
+            "by absorbing sunlight."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -3654,10 +3657,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 10,
         .weight = 210,
         .description = COMPOUND_STRING(
-            "A single Heliolisk can generate sufficient\n"
-            "electricity to power a skyscraper. It can\n"
-            "stimulate its muscles with electricity,\n"
-            "boosting the strength in its legs."),
+            "Ancient Philosophers in Ilios wondered\n" // new desc
+            "if energy produced by Heliolisk could\n"
+            "be harnessed by humans. Modern technology\n"
+            "has made this a reality."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -3695,11 +3698,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_HELIOLISK_MEGA] =
     {
         .baseHP        = 62,
-        .baseAttack    = 55,
-        .baseDefense   = 52,
-        .baseSpeed     = 109,
-        .baseSpAttack  = 119,
-        .baseSpDefense = 94,
+        .baseAttack    = 75,
+        .baseDefense   = 72,
+        .baseSpeed     = 119,
+        .baseSpAttack  = 159,
+        .baseSpDefense = 104,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_NORMAL),
         .catchRate = 75,
         .expYield = 168,
@@ -3710,7 +3713,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_DRY_SKIN, ABILITY_SAND_VEIL, ABILITY_SOLAR_POWER },
+        .abilities = { ABILITY_DROUGHT, ABILITY_DROUGHT, ABILITY_DROUGHT },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Heliolisk"),
         .cryId = CRY_HELIOLISK,
@@ -3719,10 +3722,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 10,
         .weight = 210,
         .description = COMPOUND_STRING(
-            "A single Heliolisk can generate sufficient\n"
-            "electricity to power a skyscraper. It can\n"
-            "stimulate its muscles with electricity,\n"
-            "boosting the strength in its legs."),
+            "Scientists are stunned by the electrical\n" // new desc
+            "power produced by Mega Heliolisk. It can\n"
+            "harness all the power of the sun and\n"
+            "discharge it in devastating bursts."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -3740,7 +3743,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_HelioliskMega,
         .iconSprite = gMonIcon_HelioliskMega,
         .iconPalIndex = 2,
-        SHADOW(1, 10, SHADOW_SIZE_S)
+        SHADOW(6, 11, SHADOW_SIZE_L)
         FOOTPRINT(Heliolisk)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sHelioliskLevelUpLearnset,

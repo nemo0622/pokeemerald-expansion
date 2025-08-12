@@ -2309,10 +2309,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 4,
         .weight = 66,
         .description = COMPOUND_STRING(
-            "A Ralts has the power to sense the\n"
-            "emotions of people and Pokémon with the\n"
-            "horns on its head. It takes cover if it\n"
-            "senses any hostility."),
+            "Ralts enjoys the presence of others,\n" // new desc
+            "despite having a shy disposition. They\n"
+            "can sense emotions with their horns and\n"
+            "try to make others happy."),
         .pokemonScale = 457,
         .pokemonOffset = -3,
         .trainerScale = 256,
@@ -2372,10 +2372,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 8,
         .weight = 202,
         .description = COMPOUND_STRING(
-            "A Kirlia has the psychic power to create \n"
-            "a rip in the dimensions and see into the\n"
-            "future. It is said to dance with pleasure\n"
-            "on sunny mornings."),
+            "Trainers with positive attitudes and\n" // new desc
+            "outgoing personalities are best suited\n"
+            "to train Kirlia, as they feed off of\n"
+            "positivity and dance around."),
         .pokemonScale = 354,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2441,10 +2441,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 16,
         .weight = 484,
         .description = COMPOUND_STRING(
-            "It apparently does not feel the pull of\n"
-            "gravity because it supports itself with\n"
-            "psychic power. It will give its life to\n"
-            "protect its Trainer."),
+            "To evolve a Kirlia, a Trainer must be\n" // new desc
+            "truly happy and share a deep bond with\n"
+            "the Pokémon. Gardevoir are highly loyal\n"
+            "and gain strength in dire situations."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2505,10 +2505,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 16,
         .weight = 484,
         .description = COMPOUND_STRING(
-            "By opening its heart, Mega Gardevoir\n"
-            "becomes able to use tremendous psychic\n"
-            "power. The red plate in its chest is said to\n"
-            "be a physical manifestation of its heart."),
+            "Gardevoir only Mega Evolves for Trainers\n" // new desc
+            "with open hearts. Their dress and gloves\n"
+            "have become major fashion trends worldwide.\n"
+            "It can reverse gravity at will."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2526,7 +2526,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_GardevoirMega,
         .iconSprite = gMonIcon_GardevoirMega,
         .iconPalIndex = 1,
-        SHADOW(1, 14, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Gardevoir)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sGardevoirLevelUpLearnset,
@@ -2573,10 +2573,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 16,
         .weight = 520,
         .description = COMPOUND_STRING(
-            "A master of courtesy and swordsmanship,\n"
-            "it fights using extending swords on its\n"
-            "elbows when trying to protect someone.\n"
-            "It can sense what its foe is thinking."),
+            "Gallade is the manifestation of chivalry.\n" // new desc
+            "The swords on its arms allow it to block\n"
+            "incoming blows with ease, although it will\n"
+            "never attack an opponent while it's down."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -2637,10 +2637,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 16,
         .weight = 564,
         .description = COMPOUND_STRING(
-            "Mega Gallade has a knightly appearance.\n"
-            "It can use its psychic power to reshape\n"
-            "both arms into blades simultaneously and\n"
-            "fight using a dual-wielding style."),
+            "Mega Gallade's billowing cape serves to\n" // new desc
+            "show status and intimidate foes in a duel.\n"
+            "It fights with its sword-arms and psychic\n"
+            "powers perfectly in-sync."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -4078,10 +4078,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 6,
         .weight = 115,
         .description = COMPOUND_STRING(
-            "Its giant jaws are actually steel horns\n"
-            "that transformed. It fools foes into\n"
-            "complacency with its adorable gestures,\n"
-            "then chomps them with its huge jaws."),
+            "Legends and folktales about women with\n" // new desc
+            "long, dark hair luring people to their\n"
+            "deaths likely originated from Mawile.\n"
+            "Its jaws can crush rock and bone alike."),
         .pokemonScale = 466,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4144,10 +4144,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 10,
         .weight = 235,
         .description = COMPOUND_STRING(
-            "Its two sets of jaws thrash about\n"
-            "violently as if they each had a will of\n"
-            "their own. One gnash from them can turn a\n"
-            "boulder to dust."),
+            "Both jaws on Mega Mawile's head act\n" // new desc
+            "independently, making their behavior hard\n"
+            "to predict. Although strong, they can be\n"
+            "distracted, leaving Mawile's body open."),
         .pokemonScale = 466,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4165,7 +4165,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_MawileMega,
         .iconSprite = gMonIcon_MawileMega,
         .iconPalIndex = 0,
-        SHADOW(0, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(7, 9, SHADOW_SIZE_L)
         FOOTPRINT(Mawile)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sMawileLevelUpLearnset,
@@ -4205,10 +4205,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 4,
         .weight = 600,
         .description = COMPOUND_STRING(
-            "A Pokémon that is clad in steel armor.\n"
-            "A new suit of armor is made when it evolves.\n"
-            "The old, discarded armor is salvaged as\n"
-            "metal for making iron products."),
+            "Aron has developed a shell made of steel.\n" // new desc
+            "If too many Aron live in a single cave,\n"
+            "mineral resources can run dry. The hungry\n"
+            "Pokémon find towns to feed on scrap metal."),
         .pokemonScale = 419,
         .pokemonOffset = 23,
         .trainerScale = 256,
@@ -4239,7 +4239,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sAronLevelUpLearnset,
         .teachableLearnset = sAronTeachableLearnset,
         .eggMoveLearnset = sAronEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_LAIRON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_LAIRON}),
     },
 
     [SPECIES_LAIRON] =
@@ -4269,10 +4269,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 9,
         .weight = 1200,
         .description = COMPOUND_STRING(
-            "When two Lairon meet in the wild, they\n"
-            "fight for territory by bashing into each\n"
-            "other with their steel bodies. The sound\n"
-            "of their collision carries for miles."),
+            "Lairon eat iron, a variety of minerals,\n" // new desc
+            "and any random stones it can find. They\n"
+            "fight others for territory. Lairon were\n"
+            "sometimes used in ancient wars."),
         .pokemonScale = 275,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -4338,10 +4338,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 21,
         .weight = 3600,
         .description = COMPOUND_STRING(
-            "Its iron horns grow longer a little at\n"
-            "a time. They are used to determine the\n"
-            "Aggron's age. The gouges in its armor are\n"
-            "worn with pride as mementos from battles."),
+            "Aggron can live for centuries, slowly\n" // new desc
+            "growing as they continues to eat. Many\n"
+            "legends are based on Aggron in nearby\n"
+            "mountains, inspiring generations of stories."),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 350,
@@ -4403,10 +4403,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 22,
         .weight = 3950,
         .description = COMPOUND_STRING(
-            "When Aggron Mega Evolves into\n"
-            "Mega Aggron, the destructive ability of\n"
-            "its fearsome horns can turn a steel-clad\n"
-            "tank into so much scrap metal."),
+            "Mega Aggron is an unstoppable tank.\n" // new desc
+            "Its body is completely covered in pure,\n"
+            "refined steel, allowing it to charge\n"
+            "into battle without fear."),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 350,
@@ -4424,7 +4424,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_AggronMega,
         .iconSprite = gMonIcon_AggronMega,
         .iconPalIndex = 2,
-        SHADOW(1, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(1, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Aggron)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sAggronLevelUpLearnset,
@@ -4462,10 +4462,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 6,
         .weight = 112,
         .description = COMPOUND_STRING(
-            "It continually meditates for hours every\n"
-            "day. As a result of rigorous and dedicated\n"
-            "yoga training, it has tempered its\n"
-            "spiritual power so much it can fly."),
+            "Meditite is always training its mind,\n" // new desc
+            "striving for enlightened perfection.\n"
+            "They are common sights in temples where\n"
+            "they meditate alongside humans."),
         .pokemonScale = 465,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4500,7 +4500,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sMedititeLevelUpLearnset,
         .teachableLearnset = sMedititeTeachableLearnset,
         .eggMoveLearnset = sMedititeEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MEDICHAM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_MEDICHAM}),
     },
 
     [SPECIES_MEDICHAM] =
@@ -4529,10 +4529,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 13,
         .weight = 315,
         .description = COMPOUND_STRING(
-            "Through crushingly harsh yoga training, it\n"
-            "gained the power to foretell its foe's\n"
-            "actions. It battles with elegant, dance-\n"
-            "like movement."),
+            "After a long stretch of medidation, this\n" // new desc
+            "Pokémon has mastered its body, remaining\n"
+            "perfectly still before striking. Martial\n"
+            "arts specialists train alongside them."),
         .pokemonScale = 298,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -4597,10 +4597,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 13,
         .weight = 315,
         .description = COMPOUND_STRING(
-            "It uses its amped-up willpower to create\n"
-            "additional arms for itself. The more it has\n"
-            "trained its spirit, the more realistic and\n"
-            "dexterous these self-created arms become."),
+            "The extra arms controlled by Mega Medicham\n" // new desc
+            "are made of pure, concentrated spirit\n"
+            "energy. Researchers struggle to understand\n"
+            "exactly how they work."),
         .pokemonScale = 298,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -4618,7 +4618,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_MedichamMega,
         .iconSprite = gMonIcon_MedichamMega,
         .iconPalIndex = 0,
-        SHADOW(-2, 13, SHADOW_SIZE_S)
+        SHADOW(-1, 13, SHADOW_SIZE_S)
         FOOTPRINT(Medicham)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sMedichamLevelUpLearnset,
@@ -5788,10 +5788,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 7,
         .weight = 240,
         .description = COMPOUND_STRING(
-            "A Numel stores boiling magma in the hump\n"
-            "on its back. It is a hardy Pokémon that can\n"
-            "transport a 220-pound load. It has served\n"
-            "humans at work since long ago."),
+            "Numel have been helping humans move heavy\n" // new desc
+            "loads for hundreds of years. They are not\n"
+            "very smart, but they are quite cute, so\n"
+            "people don't mind helping them out too."),
         .pokemonScale = 342,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -5860,10 +5860,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 19,
         .weight = 2200,
         .description = COMPOUND_STRING(
-            "A Pokémon that lives in the crater of\n"
-            "a volcano. Every 10 years, the volcanoes\n"
-            "on its back erupt violently. Research is\n"
-            "under way on the cause of eruption."),
+            "Camerupt is happiest surrounded by magma.\n" // new desc
+            "The humps on their back can erupt at will,\n"
+            "dealing critical damage to nearby foes.\n"
+            "Only skilled Trainers should raise them."),
         .pokemonScale = 256,
         .pokemonOffset = 7,
         .trainerScale = 345,
@@ -5929,10 +5929,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 25,
         .weight = 3205,
         .description = COMPOUND_STRING(
-            "The humps on its back have transformed\n"
-            "into one large and very active volcano. It\n"
-            "has a deep hatred of water or any moisture\n"
-            "and has an explosive personality."),
+            "Mega Camerupt's body functions as one big,\n" // new desc
+            "mobile volcano. The lava bubbling from it\n"
+            "can be enough to deter opponents. It will\n"
+            "only listen to one Trainer in its life."),
         .pokemonScale = 256,
         .pokemonOffset = 7,
         .trainerScale = 345,
@@ -5950,7 +5950,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_CameruptMega,
         .iconSprite = gMonIcon_CameruptMega,
         .iconPalIndex = 0,
-        SHADOW(1, 6, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(1, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Camerupt)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sCameruptLevelUpLearnset,
@@ -6255,10 +6255,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 7,
         .weight = 150,
         .description = COMPOUND_STRING(
-            "Its big jaws crunch through boulders.\n"
-            "Because its head is so big, it has a hard\n"
-            "time getting back upright if it tips over\n"
-            "onto its back."),
+            "Wild Trapinch burrow into the sand\n" // new desc
+            "backwards, with its open mouth sticking\n"
+            "out. Unlucky Bug-type Pokémon that wander\n"
+            "by may fall victim to this trap."),
         .pokemonScale = 298,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -6323,10 +6323,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 11,
         .weight = 153,
         .description = COMPOUND_STRING(
-            "It looses ultrasonic waves by rubbing its\n"
-            "wings together. Since a Vibrava's wings\n"
-            "are still in the process of growing, it can\n"
-            "only fly short distances."),
+            "It loses the characteristic jaws of\n" // new desc
+            "Trapinch, leaving it weaker than before\n"
+            "it evolved. Vibrava slowly learns to fly\n"
+            "as it approaches its next evolution."),
         .pokemonScale = 370,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -6386,10 +6386,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 20,
         .weight = 820,
         .description = COMPOUND_STRING(
-            "The flapping of its wings sounds like\n"
-            "singing. To prevent detection by enemies,\n"
-            "it hides itself by flapping up a cloud of\n"
-            "desert sand."),
+            "The rapid wing beats of wild Flygon can\n" // new desc
+            "whip up ferocious sandstorms. Its wings\n"
+            "create a songlike noise when flapped,\n"
+            "unique to each individual."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,
@@ -6474,7 +6474,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_FlygonMega,
         .iconSprite = gMonIcon_FlygonMega,
         .iconPalIndex = 1,
-        SHADOW(5, 17, SHADOW_SIZE_M)
+        SHADOW(2, 17, SHADOW_SIZE_L)
         FOOTPRINT(Flygon)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sFlygonLevelUpLearnset,
@@ -6641,10 +6641,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 4,
         .weight = 12,
         .description = COMPOUND_STRING(
-            "A Pokémon that has wings like cottony\n"
-            "clouds. After enduring winter, in which\n"
-            "little food is available, Swablu flocks\n"
-            "move closer to towns in the spring."),
+            "The heavy, cloud-like wings of Swablu\n" // new desc
+            "allow it to stay warm during winter.\n"
+            "They are very friendly, even landing on\n"
+            "people's heads to feel their body heat."),
         .pokemonScale = 422,
         .pokemonOffset = -8,
         .trainerScale = 256,
@@ -6695,7 +6695,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_NATURAL_CURE, ABILITY_PIXILATE, ABILITY_FLUFFY },
+        .abilities = { ABILITY_NATURAL_CURE, ABILITY_VOCALIST, ABILITY_FLUFFY },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Altaria"),
         .cryId = CRY_ALTARIA,
@@ -6704,10 +6704,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 11,
         .weight = 206,
         .description = COMPOUND_STRING(
-            "It can be heard singing in the skies from\n"
-            "miles away. They make their nests on high,\n"
-            "solitary rock peaks. They seem to mate for\n"
-            "life."),
+            "Their songs are used as markers by some\n" // new desc
+            "travelers, indicating a nearby nest. Each\n"
+            "individual Altaria has its own song. They\n"
+            "fall in love and mate for life."),
         .pokemonScale = 327,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6745,10 +6745,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_ALTARIA_MEGA] =
     {
         .baseHP        = 105,
-        .baseAttack    = 120,
+        .baseAttack    = 110,
         .baseDefense   = 110,
         .baseSpeed     = 80,
-        .baseSpAttack  = 110,
+        .baseSpAttack  = 120,
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_FAIRY),
         .catchRate = 45,
@@ -6768,10 +6768,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 15,
         .weight = 206,
         .description = COMPOUND_STRING(
-            "It sings with a voice that is even more\n"
-            "beautiful than before it Mega Evolved.\n"
-            "Its feathers became larger for protection\n"
-            "and glimmer with an iridescent sheen."),
+            "Mega Altaria can sing multiple notes at\n" // new desc
+            "once, creating stunning harmonies. Their\n"
+            "shining, iridescent feathers can block\n"
+            "attacks while remaining perfectly clean."),
         .pokemonScale = 327,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6790,7 +6790,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_AltariaMega,
         .iconSprite = gMonIcon_AltariaMega,
         .iconPalIndex = 0,
-        SHADOW(-2, 17, SHADOW_SIZE_L)
+        SHADOW(2, 20, SHADOW_SIZE_L)
         FOOTPRINT(Altaria)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sAltariaLevelUpLearnset,
@@ -8243,10 +8243,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 6,
         .weight = 23,
         .description = COMPOUND_STRING(
-            "This Pokémon roams about deep in the\n"
-            "night seeking such negative emotions as\n"
-            "grudges and envy. It retreats to its nest\n"
-            "when the sun begins to rise."),
+            "Shuppet feeds on negative emotions like\n" // new desc
+            "envy and greed. They are very lonely,\n"
+            "floating through the night and seeking\n"
+            "someone to understand them."),
         .pokemonScale = 440,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -8312,10 +8312,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 11,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "An abandoned plush doll became this\n"
-            "Pokémon. They are said to live in garbage\n"
-            "dumps and wander about in search of the\n"
-            "children that threw them away."),
+            "A classic Ilian tale warns children that\n" // new desc
+            "mistreated dolls may come back as Banette.\n"
+            "People involved with the occult claim\n"
+            "that a vengeful soul is contained within."),
         .pokemonScale = 262,
         .pokemonOffset = 9,
         .trainerScale = 256,
@@ -8377,16 +8377,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 12,
         .weight = 130,
         .description = COMPOUND_STRING(
-            "Extraordinary energy amplifies its\n"
-            "cursing power to such an extent that it\n"
-            "can't help but curse its own Trainer."),
+            "Shockingly, the energy contained in this\n" // new desc
+            "Pokémon has burst out, greatly enhancing\n"
+            "its power. Its sinister smile is too\n"
+            "scary for most Trainers to handle."),
         .pokemonScale = 262,
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_BanetteMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 4,
         .frontAnimFrames = sAnims_BanetteMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 5,
@@ -8398,7 +8399,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_BanetteMega,
         .iconSprite = gMonIcon_BanetteMega,
         .iconPalIndex = 0,
-        SHADOW(0, 16, SHADOW_SIZE_M)
+        SHADOW(1, 13, SHADOW_SIZE_S)
         FOOTPRINT(Banette)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sBanetteLevelUpLearnset,
@@ -8985,10 +8986,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 7,
         .weight = 168,
         .description = COMPOUND_STRING(
-            "They tend to move about in groups of\n"
-            "around five Snorunt. In snowy regions,\n"
-            "it is said that when they are seen late at\n"
-            "night, snowfall will arrive by morning."),
+            "Snorunt are happiest in cold, dark caves.\n" // new desc
+            "Children growing up around Sofos City may\n"
+            "look for Snorunt near the mouth of\n"
+            "Froslass Cavern in winter."),
         .pokemonScale = 380,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -9050,10 +9051,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 15,
         .weight = 2565,
         .description = COMPOUND_STRING(
-            "A Glalie has the power to instantaneously\n"
-            "freeze moisture in the atmosphere.\n"
-            "A dazzling cloud of diamondlike ice\n"
-            "crystals forms around its body."),
+            "Stories are told of Glalie being the\n" // new desc
+            "souls of lost hikers, but in reality, they\n"
+            "are simply evolved Snorunt. They can\n"
+            "freeze the air as they move."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 344,
@@ -9115,9 +9116,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 21,
         .weight = 3502,
         .description = COMPOUND_STRING(
-            "The power of Mega Evolution was so strong\n"
-            "that it smashed Glalie's jaw. Its inability\n"
-            "to eat very well leaves Glalie irritated."),
+            "Mega Glalie develops a jaw much stronger\n" // new desc
+            "and heavier. On their first transformation,\n"
+            "Glalie may lack control over their jaw,\n"
+            "learning to master it over time."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 344,
@@ -9136,7 +9138,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_GlalieMega,
         .iconSprite = gMonIcon_GlalieMega,
         .iconPalIndex = 0,
-        SHADOW(3, 18, SHADOW_SIZE_L)
+        SHADOW(3, 19, SHADOW_SIZE_M)
         FOOTPRINT(Glalie)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sGlalieLevelUpLearnset,
@@ -9173,10 +9175,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 13,
         .weight = 266,
         .description = COMPOUND_STRING(
-            "When it finds people or Pokémon it likes,\n"
-            "it freezes them and takes them to its\n"
-            "chilly den, where they become its\n"
-            "decorations."),
+            "Froslass is highly feared by people in\n" // new desc
+            "Pythios Town and Sofos City. Many\n"
+            "choose to sail south around the peninsula\n"
+            "rather than risk a Froslass encounter."),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -10751,17 +10753,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 45,
         .weight = 3520,
         .description = COMPOUND_STRING(
-            "Kyogre has appeared in mythology as the\n"
-            "creator of the sea. After long years of\n"
-            "feuding with Groudon, it took to sleep at\n"
-            "the bottom of the sea."),
+            "Kyogre has long been written off as a mere\n" // new desc
+            "myth. Ancient Ilians worshipped it as a\n"
+            "god of the sea, although it was slowly\n"
+            "replaced by Suicune as it lay dormant."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 614,
         .trainerOffset = 13,
         .frontPic = gMonFrontPic_Kyogre,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 5,
         .frontAnimFrames = sAnims_Kyogre,
         .frontAnimId = ANIM_SWING_CONCAVE_FAST_SHORT,
         .frontAnimDelay = 60,
@@ -10773,6 +10775,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Kyogre,
         .iconSprite = gMonIcon_Kyogre,
         .iconPalIndex = 2,
+        SHADOW(5, 7, SHADOW_SIZE_M)
         FOOTPRINT(Kyogre)
         OVERWORLD(
             sPicTable_Kyogre,
@@ -10816,17 +10819,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 98,
         .weight = 4300,
         .description = COMPOUND_STRING(
-            "When Kyogre roared, water poured forth\n"
-            "and the seas spread outward.\n"
-            "Dark clouds enshrouded the world,\n"
-            "and the deluge fell upon all…"),
+            "Primal Kyogre is overflowing with ancient\n" // new desc
+            "energy, restoring it to the title of\n"
+            "Lord of the Seas. It may be capable of\n"
+            "altering global weather patterns."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 515,
         .trainerOffset = 14,
         .frontPic = gMonFrontPic_KyogrePrimal,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 2,
         .frontAnimFrames = sAnims_KyogrePrimal,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_KyogrePrimal,
@@ -10837,6 +10840,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_KyogrePrimal,
         .iconSprite = gMonIcon_KyogrePrimal,
         .iconPalIndex = 0,
+        SHADOW(0, 10, SHADOW_SIZE_L)
         FOOTPRINT(Kyogre)
         .isLegendary = TRUE,
         .isPrimalReversion = TRUE,
@@ -10882,10 +10886,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 35,
         .weight = 9500,
         .description = COMPOUND_STRING(
-            "Groudon has appeared in mythology as the\n"
-            "creator of the land. It sleeps in magma\n"
-            "underground and is said to make volcanoes\n"
-            "erupt on awakening."),
+            "In old myths, Groudon was credited as the\n" // new desc
+            "creator of all land. It has laid dormant\n"
+            "for millennia, allowing Entei to take its\n"
+            "place as the ruler of fire and land."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 515,
@@ -10903,6 +10907,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Groudon,
         .iconSprite = gMonIcon_Groudon,
         .iconPalIndex = 0,
+        SHADOW(1, 10, SHADOW_SIZE_L)
         FOOTPRINT(Groudon)
         OVERWORLD(
             sPicTable_Groudon,
@@ -10947,10 +10952,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 50,
         .weight = 9997,
         .description = COMPOUND_STRING(
-            "When Groudon howled, the earth swelled and\n"
-            "the land grew wide. The sun blazed atop\n"
-            "and all the world around the creature\n"
-            "was enveloped in incandescent heat."),
+            "Primal Groudon unleashes earth-shattering\n" // new desc
+            "howls, capable of melting the stone around\n"
+            "it. This Pokémon is the unmistakable Lord\n"
+            "of the Land."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 515,
@@ -10968,6 +10973,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_GroudonPrimal,
         .iconSprite = gMonIcon_GroudonPrimal,
         .iconPalIndex = 0,
+        SHADOW(-1, 11, SHADOW_SIZE_L)
         FOOTPRINT(Groudon)
         .isLegendary = TRUE,
         .isPrimalReversion = TRUE,
@@ -11014,17 +11020,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 70,
         .weight = 2065,
         .description = COMPOUND_STRING(
-            "A Pokémon that flies endlessly in the\n"
-            "ozone layer. It is said it would descend\n"
-            "to the ground if Kyogre and Groudon\n"
-            "were to fight."),
+            "Flying in the upper atmosphere, it is only\n" // new desc
+            "seen by humans once in a generation. Over\n"
+            "the centuries, many people in Ilios lost\n"
+            "belief in it, replacing it with Raikou."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 448,
         .trainerOffset = 12,
         .frontPic = gMonFrontPic_Rayquaza,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 4,
         .frontAnimFrames = sAnims_Rayquaza,
         .frontAnimId = ANIM_H_SHAKE,
         .frontAnimDelay = 60,
@@ -11037,6 +11043,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Rayquaza,
         .iconSprite = gMonIcon_Rayquaza,
         .iconPalIndex = 1,
+        SHADOW(0, 16, SHADOW_SIZE_M)
         FOOTPRINT(Rayquaza)
         OVERWORLD(
             sPicTable_Rayquaza,
@@ -11082,10 +11089,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 108,
         .weight = 3920,
         .description = COMPOUND_STRING(
-            "Particles stream from the filaments that\n"
-            "extend from its jaw. They can control the\n"
-            "density and humidity of the air, allowing\n"
-            "Rayquaza to manipulate the weather."),
+            "Mega Rayquaza is the uncontested Lord of\n" // new desc
+            "the Sky. This is the form it took in the\n"
+            "ancient past, inspiring Rayquaza's worship\n"
+            "at the Tower of Dioxippus in south Ilios."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 448,
@@ -11104,6 +11111,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_RayquazaMega,
         .iconSprite = gMonIcon_RayquazaMega,
         .iconPalIndex = 1,
+        SHADOW(0, 19, SHADOW_SIZE_M)
         FOOTPRINT(Rayquaza)
         .isLegendary = TRUE,
         .isMegaEvolution = TRUE,

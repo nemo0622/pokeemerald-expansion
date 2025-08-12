@@ -876,7 +876,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_ToucannonMega,
         .iconSprite = gMonIcon_ToucannonMega,
         .iconPalIndex = 0,
-        SHADOW(8, 10, SHADOW_SIZE_M)
+        SHADOW(6, 11, SHADOW_SIZE_L)
         FOOTPRINT(Toucannon)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sToucannonLevelUpLearnset,
@@ -1473,10 +1473,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 6,
         .weight = 34,
         .description = COMPOUND_STRING(
-            "It wins the hearts of its enemies\n"
-            "with its passionate dancing and then\n"
-            "uses the opening it creates to\n"
-            "burn them up with blazing flames."),
+            "Oricorio's Baile form is the most iconic,\n" // new desc
+            "creating complex dances on the fly and\n"
+            "stunning audiences. Heat generated while\n"
+            "dancing can create small flames."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -1538,10 +1538,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 6,
         .weight = 34,
         .description = COMPOUND_STRING(
-            "This form of Oricorio has sipped\n"
-            "yellow nectar. It uses nimble steps to\n"
-            "approach opponents, then knocks\n"
-            "them out with electric punches."),
+            "After consuming yellow nectar, Oricorio's\n" // new desc
+            "Pom-pom form becomes highly energetic.\n"
+            "An electric charge flows through its\n"
+            "feathers can fills its pom-poms."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -1603,10 +1603,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 6,
         .weight = 34,
         .description = COMPOUND_STRING(
-            "This form of Oricorio has sipped\n"
-            "pink nectar. It elevates its mind with\n"
-            "the gentle steps of its dance, then\n"
-            "unleashes its psychic energy."),
+            "Oricorio reacts to the pink nectar by\n" // new desc
+            "becoming laid-back. It gently sways back\n"
+            "and forth, lulling people and Pokémon\n"
+            "alike into a peaceful state of mind."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -1668,10 +1668,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 6,
         .weight = 34,
         .description = COMPOUND_STRING(
-            "It charms its opponents with its\n"
-            "refined dancing. When they let their\n"
-            "guard down, it places a curse on\n"
-            "them that will bring on their demise."),
+            "Oricorio's Sensu form is sharp and\n" // new desc
+            "precise in every movement. Its dancing\n"
+            "conjures spirits from beyond the grave\n"
+            "to the shock of all who watch."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -1735,10 +1735,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 1,
         .weight = 2,
         .description = COMPOUND_STRING(
-            "Myriads of Cutiefly flutter above the\n"
-            "heads of people who have auras resembling\n"
-            "those of flowers. It can identify which\n"
-            "flowers are about to bloom."),
+            "Cutiefly feed on the nectar of flowers.\n" // new desc
+            "It's common to be afraid of them, but\n"
+            "they are usually harmless. Seeing a pair\n"
+            "of Cutiefly is considered good luck."),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,
@@ -1897,11 +1897,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_RIBOMBEE_MEGA] =
     {
         .baseHP        = 60,
-        .baseAttack    = 55,
-        .baseDefense   = 60,
-        .baseSpeed     = 124,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 70,
+        .baseAttack    = 60,
+        .baseDefense   = 65,
+        .baseSpeed     = 139,
+        .baseSpAttack  = 145,
+        .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_BUG, TYPE_FAIRY),
         .catchRate = 75,
         .expYield = 162,
@@ -1912,7 +1912,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_HONEY_GATHER, ABILITY_SHIELD_DUST, ABILITY_SWEET_VEIL },
+        .abilities = { ABILITY_FAIRY_AURA, ABILITY_FAIRY_AURA, ABILITY_FAIRY_AURA },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Ribombee"),
         .cryId = CRY_RIBOMBEE,
@@ -1920,7 +1920,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Bee Fly"),
         .height = 2,
         .weight = 5,
-        .description = gRibombeePokedexText,
+        .description = COMPOUND_STRING(
+            "Mega Ribombee was worshipped during the\n" // new desc
+            "earliest eras of Ilian history. The flowers\n"
+            "they hold can restore anyone to health.\n"
+            "They were considered extinct until recently."),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,
@@ -1939,7 +1943,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .shinyPalette = gMonShinyPalette_RibombeeMega,
         .iconSprite = gMonIcon_RibombeeMega,
         .iconPalIndex = 2,
-        SHADOW(-1, 14, SHADOW_SIZE_S)
+        SHADOW(-1, 15, SHADOW_SIZE_M)
         FOOTPRINT(Ribombee)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sRibombeeLevelUpLearnset,

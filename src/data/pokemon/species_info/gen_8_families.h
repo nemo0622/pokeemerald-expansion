@@ -3256,7 +3256,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_PUNK_ROCK, ABILITY_PLUS, ABILITY_TECHNICIAN },
+        .abilities = { ABILITY_VOCALIST, ABILITY_PLUS, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Toxtricity"),
         .cryId = CRY_TOXTRICITY_AMPED,
@@ -3319,7 +3319,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_PUNK_ROCK, ABILITY_PLUS, ABILITY_TECHNICIAN },
+        .abilities = { ABILITY_VOCALIST, ABILITY_PLUS, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Toxtricity"),
         .cryId = CRY_TOXTRICITY_AMPED,
@@ -3371,7 +3371,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_PUNK_ROCK, ABILITY_MINUS, ABILITY_TECHNICIAN },
+        .abilities = { ABILITY_VOCALIST, ABILITY_MINUS, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Toxtricity"),
         .cryId = CRY_TOXTRICITY_LOW_KEY,
@@ -3433,7 +3433,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_PUNK_ROCK, ABILITY_MINUS, ABILITY_TECHNICIAN },
+        .abilities = { ABILITY_VOCALIST, ABILITY_MINUS, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Toxtricity"),
         .cryId = CRY_TOXTRICITY_LOW_KEY,
@@ -4303,10 +4303,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 4,
         .weight = 55,
         .description = COMPOUND_STRING(
-            "Through its nose, it sucks in the\n"
-            "emanations produced by people and Pokémon\n"
-            "when they feel annoyed. It thrives off\n"
-            "this negative energy."),
+            "Impidimp absorbs negative emotion through\n" // new desc
+            "its elongated nose. To keep them away,\n"
+            "people living in rural Ilios hang steel\n"
+            "talismans. It seems to work."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -4365,10 +4365,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 8,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "When it gets down on all fours as if to\n"
-            "beg for forgiveness, it's trying to lure\n"
-            "opponents in so that it can stab them\n"
-            "with its spear-like hair."),
+            "Instead of harmless pranks like Impidimp,\n" // new desc
+            "Morgrem can cause real problems to create\n"
+            "negative emotions. They can change signs,\n"
+            "lure people off paths, and salt fields."),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -4428,9 +4428,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 15,
         .weight = 610,
         .description = COMPOUND_STRING(
-            "With the hair wrapped around its body\n"
-            "helping to enhance its muscles, this\n"
-            "Pokémon can overwhelm even Machamp."),
+            "Grimmsnarl is the inspiration for many\n" // new desc
+            "urban legends and fairy tales. They emerge\n"
+            "from the deep woods at night to visit rural\n"
+            "homes, regardless of any silver by the door."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
@@ -4448,7 +4449,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Grimmsnarl,
         .iconSprite = gMonIcon_Grimmsnarl,
         .iconPalIndex = 0,
-        SHADOW(1, 10, SHADOW_SIZE_M)
+        SHADOW(1, 11, SHADOW_SIZE_L)
         FOOTPRINT(Grimmsnarl)
         OVERWORLD(
             sPicTable_Grimmsnarl,
@@ -4500,7 +4501,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_GrimmsnarlMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 1,
+        .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_GrimmsnarlMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_GrimmsnarlMega,
@@ -5468,10 +5469,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 12,
         .weight = 1000,
         .description = COMPOUND_STRING(
-            "It digs up the ground with its trunk.\n"
-            "It's also very strong, being able to\n"
-            "carry loads of over five tons without any\n"
-            "problem at all."),
+            "Cufant is made of copper, which they dig\n" // new desc
+            "up and eat almost every morning. Although\n"
+            "once found across the world, their range\n"
+            "is becoming increasingly limited."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -5532,9 +5533,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 30,
         .weight = 6500,
         .description = COMPOUND_STRING(
-            "They came over from another region long\n"
-            "ago and worked together with humans.\n"
-            "Their green skin is resistant to water."),
+            "More green, tarnished copper skin gains\n" // new desc
+            "them respect. Researchers believe they are\n"
+            "among the most intelligent living Pokémon,\n"
+            "so poaching them is particularly awful."),
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,

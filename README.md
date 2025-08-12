@@ -69,7 +69,8 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 MAJOR TODOS:
 - Continue Mapping and NPC development
     - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
-- Fix Pyroar shadow sprites
+- Fix Pyroar shadow sprites & Ribombee (cause new sprite lol)
+    - Also fix new Mega Evo sprite positions (front and back) AND shadow positions
 
 - CUSTOM MEGA EVOLUTION CONCEPTS:
     - Mega Lapras (G-max Design): Gains large boost of defenses and special attack, with slight speed decrease
