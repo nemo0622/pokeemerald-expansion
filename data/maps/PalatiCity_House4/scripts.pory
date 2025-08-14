@@ -1,0 +1,25 @@
+mapscripts PalatiCity_House4_MapScripts {}
+
+script PalatiCity_House4_EventScript_Man
+{
+    lock
+    faceplayer
+    speakername("Merchant Man")
+    msgbox(format("I was planning a trade journey to Areios Town, but Team Chimera took it over and made it their hideout. How dispicable."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_House4_EventScript_Mudsdale
+{
+    lock
+    faceplayer
+    speakername("Mudsdale")
+    playmoncry(SPECIES_MUDSDALE, CRY_MODE_NORMAL)
+    msgbox("Brey-hey-hey!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

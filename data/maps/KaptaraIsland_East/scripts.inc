@@ -585,7 +585,7 @@ KaptaraIsland_EventScript_Trainer_KaptaraIsland_Jon_Text_0:
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Jon_Text_1:
 # 321 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "I hear there's a sunken ruin deep in the\n"
-	.string "woods. Maybe it's past this rock?$"
+	.string "woods. Is it around here?$"
 
 KaptaraIsland_EventScript_LassWanderingAround_Text_0:
 # 343 "data/maps/KaptaraIsland_East/scripts.pory"

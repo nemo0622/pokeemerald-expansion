@@ -1,0 +1,44 @@
+mapscripts PalatiCity_House6_MapScripts {}
+
+script PalatiCity_House6_EventScript_ConstructionWorker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("I keep coming back here to do maintenance on this piano. Maybe if she didn't let her Pokémon play, the piano would stop getting damaged..."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_House6_EventScript_Woman
+{
+    lock
+    applymovement(2, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Woman")
+    msgbox(format("Ehehe, come on, Bewear! Let's hear your music!"))
+    closemessage
+    applymovement(2, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+script PalatiCity_House6_EventScript_Bewear
+{
+    lock
+    faceplayer
+    speakername("Bewear")
+    playmoncry(SPECIES_BEWEAR, CRY_MODE_NORMAL)
+    msgbox("Braaur!")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("It definitely can't play the piano, but it looks like it's having fun!"))
+    closemessage
+    applymovement(3, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}

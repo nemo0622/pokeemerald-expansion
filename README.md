@@ -16,7 +16,8 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
     - All routes & locations have unique names, looks, and ecosystems!
 - Carefully curated Pokédex of over 400 Pokémon from Generations 1-9 in a beautiful GBC style!
     - Many Pokémon have undergone rebalancing, with new moves, abilities, and slight stat changes!
-    - Including regional (Alolan/Galarian/Hisuian) forms, total count is around 450 unique Pokémon (Pokédex count of 420)
+    - Including regional (Alolan/Galarian/Hisuian) forms, total count is around 450 unique Pokémon
+    - Mega Evolutions are included, with over a dozen new Mega Evolutions added!
 - Day/Night System with FakeRTC
     - Every second in real time is 30 seconds in game (2 real minutes = 1 in-game hour)
     - Comes with Day/Night Encounter Differences! All found in Documentation
@@ -69,29 +70,6 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 MAJOR TODOS:
 - Continue Mapping and NPC development
     - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
-- Fix Pyroar shadow sprites & Ribombee (cause new sprite lol)
-    - Also fix new Mega Evo sprite positions (front and back) AND shadow positions
-
-- CUSTOM MEGA EVOLUTION CONCEPTS:
-    - Mega Lapras (G-max Design): Gains large boost of defenses and special attack, with slight speed decrease
-    - Mega Noctowl: Uniform stat boosts prolly, Ghost/Flying
-    - Mega Flygon: Special Attack and Speed boosts!
-    - Mega Archeops: Dragon/Flying type, strong and fast sweeper. Design: Long-legged bird, like Shoebill Storks, Secretary Birds, or Roadrunners. Huge Shoebill beak instead of jaws?
-    - Mega Mandibuzz: Dark/Flying type, highly defensive Pokémon. Design: Based on Bearded Vulture with red-tinted feathers. Skull places over face / head like Cubone?
-    - Mega Gogoat: Grass/Ground type, major buff to physical stats at cost of speed. Design: Body similar to normal Gogoat, but with massive antler-horns like the Irish Elk
-    - Mega Pangoro: Fighting/Dark type, uniform stat buffs across the board. Design: Pangoro gains a sharp leaf spear, drastically increasing combat abilities! Moss also begins to grow on it as it becomes one with nature
-        - Ability: Nature's Tools - boosts Grass-type moves by 50% + Sap Sipper
-        - Give Pancham Leafage and Pangoro moves like Leaf Blade!
-    - Mega Heliolisk: Electric/Normal type, with iradescent shining frills like the Fan-Throated Lizard
-    - Mega Toucannon: Fire/Flying type, with a uniform stat increase across the board. Design: mostly same body but with redder beak and some red feather accents. A flock of a few Pikipek flying around it. This will give it an ability like Parental Bond!!
-        - Add some Fire moves to their moveset! Make sure moves like Beat Blast are Fire, and have it learn Flame Charge and a few others
-    - Mega Ribombee: Bug/Fairy type, with special attack & speed boosts and minor defensive buffs. Design: "scarf" extends into trailing bows, carrying a flower kind of like Floette
-    - Mega Wyrdeer: Normal/Psychic type, becoming extremely defensively bulky. Design: Wyrdeer's beard becomes massive, and it becomes an "elder" with closed eyes and a heavier body.
-    - Mega Centiskorch (G-Max Design): Boosts Attack, Special Attack, and Special Defense
-    - Mega Grimmsnarl (G-Max Design): Boosts physical Attack, Defense, and a bit of Speed
-    - Mega Copperajah (G-Max Design): Complete tank of course
-    - Mega Tinkaton: Attack and Defense boosts, uniformly across the board. Design: even larger hammer, and possibly wearing safety goggles or something?
-    - Mega Cyclizar S and V: Huge boost to Attack, Special Attack, and Speed. Design: For the S form, incorporate aspects of Koraidon, such as the feathers and rusty orange color, into the Mega. For the V form, incorporate parts of Miraidon, such as the purple coloration and electricity around the eyes.
 
 - Continue Mapping and Scripting through Palati City
 - After beating Palati City Gym, have Niko and Rania run up to you in a panic as a thunderstorm starts. Say thatNiko got a call from a friend in Sofos City that Team Chimera took over their Acropolis temple, and warp theretogether immediately!

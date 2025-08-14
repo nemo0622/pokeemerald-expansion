@@ -318,7 +318,7 @@ script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Jon
 {
     trainerbattle_double(TRAINER_KAPTARAISLAND_JON_AND_ROSE, KaptaraIsland_Text_Trainer_KaptaraIsland_JonIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_JonDefeat, KaptaraIsland_Text_Trainer_KaptaraIsland_JonNotEnoughMons)
     speakername("Jon")
-    msgbox(format("I hear there's a sunken ruin deep in the woods. Maybe it's past this rock?"))
+    msgbox(format("I hear there's a sunken ruin deep in the woods. Is it around here?"))
     closemessage
     release
     end

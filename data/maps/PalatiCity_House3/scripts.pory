@@ -1,0 +1,23 @@
+mapscripts PalatiCity_House3_MapScripts {}
+
+script PalatiCity_House3_EventScript_Athlete
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    msgbox(format("Huff huff... I just got back from a run around the island."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_House3_EventScript_Man
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("The Gym Leader, Rhadine, is one of the most beautiful women in the region. If I catch a good Rock-type Pokémon, maybe I'll give the Gym a shot."))
+    closemessage
+    release
+    end
+}

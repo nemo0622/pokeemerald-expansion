@@ -1,0 +1,86 @@
+mapscripts PalatiCity_House7_MapScripts {}
+
+script PalatiCity_House7_EventScript_HexManiac
+{
+    lock
+    faceplayer
+    speakername("Hex Maniac")
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_FILL_RUINS_ZOO)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("I'm super excited for my trip to Kipos Zoo, all thanks to you!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_FILL_RUINS_ZOO)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("I'm getting ready for a trip to the Kipos Zoo, but I've heard rumors that a lot of the exhibits are empty. I really want to see the creepy Ghost-type Pokémon, but I won't go if they're not there..."))
+        closemessage
+        delay(20)
+        emote(1, EMOTE_EXCLAM)
+        speakername("Hex Maniac")
+        msgbox(format("Wait, I saw you on the Kipos Zoo newsletter - you're the one donating Pokémon to the zoo!\p Please, donate Pokémon to the {COLOR GREEN}Ruins Exhibit{COLOR DARK_GRAY} at the {COLOR GREEN}Kipos Zoo{COLOR DARK_GRAY}! That would make my trip way better."))
+        closemessage
+        delay(20)
+        startquest(QUEST_FILL_RUINS_ZOO)
+    }
+    else
+    {
+        msgbox(format("I've been busy packing for my trip to the zoo in Kipos Town. Are there Pokémon in the Ruins Exhibit?"))
+        closemessage
+        
+        delay(30)
+        if(var(VAR_ZOO_POKEMON_ENCLOSURE_13_1) > 0 && var(VAR_ZOO_POKEMON_ENCLOSURE_13_2) > 0)
+        {
+            emote(1, EMOTE_HEART)
+            speakername("Hex Maniac")
+            msgbox(format("Yay! I can't wait to see the creepy, crawly, cute Pokémon!\p Before I go, I'll give you something. Thanks for everything you do!"))
+            closemessage
+            delay(5)
+            giveitem(ITEM_TM58)
+            closemessage
+            delay(20)
+            completequest(QUEST_FILL_RUINS_ZOO)
+        }
+        else
+        {
+            speakername("Hex Maniac")
+            msgbox(format("No? Aw...\p Remember, before I go to Kipos Zoo, I want you to fill the {COLOR GREEN}Ruins Exhibit{COLOR DARK_GRAY} with cool Pokémon. I'll give you a TM for it!"))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+script PalatiCity_House7_EventScript_Gastly
+{
+    lock
+    faceplayer
+    speakername("Gastly")
+    playmoncry(SPECIES_GASTLY, CRY_MODE_NORMAL)
+    msgbox("Kehehee...!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_House7_EventScript_ZoruaHisui
+{
+    lock
+    faceplayer
+    speakername("Zorua")
+    playmoncry(SPECIES_ZORUA_HISUI, CRY_MODE_NORMAL)
+    msgbox("Hreeow!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

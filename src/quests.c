@@ -1164,6 +1164,26 @@ side_quest(
 	0
 ),
 side_quest(
+	gText_SideQuestName_63, // QUEST_BLUE_SHARD_FOR_ARCHAEOLOGY
+	gText_SideQuestDesc_63,
+	gText_SideQuestDesc_63,
+	gText_SideQuestMap63,
+	ITEM_BLUE_SHARD,
+	ITEM,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_64, // QUEST_FILL_RUINS_ZOO
+	gText_SideQuestDesc_64,
+	gText_SideQuestDesc_64,
+	gText_SideQuestMap64,
+	SPECIES_DUSKULL,
+	PKMN,
+	NULL,
+	0
+),
+side_quest(
 	gText_SideQuestName_60, // QUEST_LEGEND_OF_KYOGRE
 	gText_SideQuestDesc_60,
 	gText_SideQuestDesc_60,

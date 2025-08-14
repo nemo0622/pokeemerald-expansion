@@ -85,7 +85,7 @@ script PalatiGym_EventScript_GymManWarnsPlayer
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
     waitmovement(0)
     speakername("Gym Guide")
-    msgbox(format("Hold up! You need to know how this Gym works first!\p {COLOR GREEN}Rhadine{COLOR DARK_GRAY} only accepts Trainers who can follow their hearts through the maze. To challenge her, you must find {COLOR GREEN}3 torches{COLOR DARK_GRAY} around the Gym and {COLOR GREEN}collect Embers{COLOR DARK_GRAY} from them.\p Be careful though! If you leave the Gym, your Embers will {COLOR RED}burn out{COLOR DARK_GRAY}, and you'll have to collect them all again. Good luck!"))
+    msgbox(format("Hold up! You need to know how this Gym works first!\p {COLOR GREEN}Rhadine{COLOR DARK_GRAY} only accepts Trainers who can follow their hearts through the maze. To challenge her, you must find {COLOR GREEN}3 torches{COLOR DARK_GRAY} around the Gym and {COLOR GREEN}collect Embers{COLOR DARK_GRAY} from them.\p Be careful though! If you leave the Gym, your Embers will {COLOR RED}burn out{COLOR DARK_GRAY}, and you'll have to collect them all again. If you're not prepared, maybe you could {COLOR GREEN}explore Kaptara Island{COLOR DARK_GRAY} and do some training. Good luck!"))
     closemessage
     applymovement(1, Common_Movement_FaceDown)
     waitmovement(0)

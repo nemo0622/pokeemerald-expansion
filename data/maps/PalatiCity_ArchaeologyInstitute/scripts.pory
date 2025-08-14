@@ -1,0 +1,151 @@
+mapscripts PalatiCity_ArchaeologyInstitute_MapScripts {}
+
+script PalatiCity_ArchInstitute_EventScript_Farmer
+{
+    lock
+    faceplayer
+    speakername("Farmer")
+    msgbox(format("This building houses important archaeological finds from this island. I wonder what else is laying below the ground..."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_ArchInstitute_EventScript_Maniac
+{
+    lock
+    faceplayer
+    speakername("Ruin Maniac")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_BLUE_SHARD_FOR_ARCHAEOLOGY)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("The Blue Shard you brought me matched with local pottery styles! Could early Ilian culture have spread out from Palati City? This is a huge discovery!"))
+        closemessage
+        applymovement(2, Common_Movement_FaceLeft)
+        waitmovement(0)
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_BLUE_SHARD_FOR_ARCHAEOLOGY)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Many households in Ilios have replicas of this pottery piece, but this one is the earliest known! It's incredible that the blue colors have survived all this time... I need to learn more!\p I hypothesize that this pottery design was popular in ancient Ilios, spreading around the region like it has today. Bring me a {COLOR GREEN}Blue Shard{COLOR DARK_GRAY} so I can investigate further!"))
+        closemessage
+        applymovement(2, Common_Movement_FaceLeft)
+        waitmovement(0)
+        delay(20)
+        startquest(QUEST_BLUE_SHARD_FOR_ARCHAEOLOGY)
+    }
+    else
+    {
+        msgbox(format("I just can't take my eyes off this ancient pottery...\p Oh! Did you bring what I asked?"))
+        closemessage
+
+        checkitem(ITEM_BLUE_SHARD)
+        delay(30)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Ruin Maniac")
+            msgbox(format("Hmm, I don't see it in your bag...\p Bring me a {COLOR GREEN}Blue Shard{COLOR DARK_GRAY} so I can investigate my hypothesis about this pottery! I'll give you something for helping me!"))
+            closemessage
+        }
+        else
+        {
+            emote(2, EMOTE_HEART)
+            speakername("Ruin Maniac")
+            msgbox(format("Wait, that's... It can only be one thing! That Blue Shard must have come from an ancient piece of pottery like this!\p I'll take this for further study. Here, take this - I found it while digging for pottery pieces."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_FIRE_STONE)
+            closemessage
+            delay(20)
+            completequest(QUEST_BLUE_SHARD_FOR_ARCHAEOLOGY)
+        }
+    }
+    release
+    end
+}
+
+script PalatiCity_ArchInstitute_EventScript_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("The Archaeological Institute of Palati City could use more space and more exhibits. Unfortunately, when funding is tight, it's hard to make expansions like that. I still appreciate what we have!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_ArchInstitute_EventScript_Camper
+{
+    lock
+    speakername("Camper")
+    msgbox(format("Check out those two old pieces of art... They're sitting so close together..."))
+    closemessage
+    applymovement(4, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Camper")
+    msgbox(format("That's us if we were old pottery, babe."))
+    closemessage
+    delay(20)
+    emote(4, EMOTE_EXCLAM)
+    applymovement(4, Common_Movement_FacePlayer)
+    waitmovement(0)
+    speakername("Camper")
+    msgbox(format("H-hey! I'm trying to be emotional here!"))
+    closemessage
+    applymovement(4, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+script PalatiCity_ArchInstitute_EventScript_Picnicker
+{
+    lock
+    speakername("Picnicker")
+    msgbox(format("Uh oh, here goes my boyfriend, with his crummy pick-up lines..."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_ArchInstitute_EventScript_Lass
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("I'm working on my thesis paper about the history of Ilios. It seems like the people of Kaptara Island were some of the first to develop complex societies."))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_ArchInstitute_EventScript_Scientist
+{
+    lock
+    faceplayer
+    speakername("Scientist")
+    msgbox(format("Check it out! The digital archives show that there were Baltoy in ancient Ilios, just like mine!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_ArchInstitute_EventScript_Baltoy
+{
+    lock
+    faceplayer
+    speakername("Baltoy")
+    playmoncry(SPECIES_BALTOY, CRY_MODE_NORMAL)
+    msgbox("Pewewew!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

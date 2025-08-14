@@ -1,0 +1,41 @@
+mapscripts PalatiCity_House1_MapScripts {}
+
+script PalatiCity_House1_EventScript_PerformerM
+{
+    lock
+    faceplayer
+    speakername("Performer")
+    msgbox(format("My Crabrawler finds the strangest things in the sand. Things from all around the world wash up on our beaches!"))
+    closemessage
+    if(!flag(FLAG_GOT_STRANGE_SOUVENIR_PALATI_CITY))
+    {
+        delay(30)
+        emote(1, EMOTE_EXCLAM)
+        speakername("Performer")
+        msgbox(format("Oh, do you want to see something? Crabrawler found this sticking out of the sand the other day."))
+        closemessage
+        delay(5)
+        giveitem(ITEM_STRANGE_SOUVENIR)
+        setflag(FLAG_GOT_STRANGE_SOUVENIR_PALATI_CITY)
+        closemessage
+        delay(5)
+        speakername("Performer")
+        msgbox(format("I don't exactly know what it is, but it's definitely not from around here. Maybe it came all the way from the {COLOR GREEN}Alola Region{COLOR DARK_GRAY}?"))
+        closemessage
+    }
+    release
+    end
+}
+
+script PalatiCity_House1_EventScript_Crabrawler
+{
+    lock
+    faceplayer
+    speakername("Crabrawler")
+    playmoncry(SPECIES_CRABRAWLER, CRY_MODE_NORMAL)
+    msgbox("Kch kch!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

@@ -385,7 +385,15 @@
     "MossdeepCity_GameCorner_B1F",
     "PalatiCity_PokemonCenter",
     "PalatiCity_Mart",
-    "PalatiCity_Gym"
+    "PalatiCity_Gym",
+    "PalatiCity_House1",
+    "PalatiCity_House2",
+    "PalatiCity_House3",
+    "PalatiCity_ArchaeologyInstitute",
+    "PalatiCity_House4",
+    "PalatiCity_House5",
+    "PalatiCity_House6",
+    "PalatiCity_House7"
   ],
   "gMapGroup_IndoorSootopolis": [
     "SootopolisCity_Gym_1F",

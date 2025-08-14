@@ -1938,3 +1938,19 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/PalatiCity_Mart/scripts.inc"
 
 	.include "data/maps/PalatiCity_Gym/scripts.inc"
+
+	.include "data/maps/PalatiCity_House1/scripts.inc"
+
+	.include "data/maps/PalatiCity_House2/scripts.inc"
+
+	.include "data/maps/PalatiCity_House3/scripts.inc"
+
+	.include "data/maps/PalatiCity_ArchaeologyInstitute/scripts.inc"
+
+	.include "data/maps/PalatiCity_House4/scripts.inc"
+
+	.include "data/maps/PalatiCity_House5/scripts.inc"
+
+	.include "data/maps/PalatiCity_House6/scripts.inc"
+
+	.include "data/maps/PalatiCity_House7/scripts.inc"

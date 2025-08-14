@@ -4714,7 +4714,7 @@
     {
       "id": "LAYOUT_KAPTARA_ISLAND_WEST",
       "name": "KaptaraIsland_West_Layout",
-      "width": 70,
+      "width": 50,
       "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_KaptaraIsland",
@@ -5750,6 +5750,86 @@
       "secondary_tileset": "gTileset_PalatiGym",
       "border_filepath": "data/layouts/PalatiCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/PalatiCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_HOUSE1",
+      "name": "PalatiCity_House1_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PalatiCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_HOUSE2",
+      "name": "PalatiCity_House2_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PalatiCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_HOUSE3",
+      "name": "PalatiCity_House3_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PalatiCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_ARCHAEOLOGY_INSTITUTE",
+      "name": "PalatiCity_ArchaeologyInstitute_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PalatiCity_ArchaeologyInstitute/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_ArchaeologyInstitute/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_HOUSE4",
+      "name": "PalatiCity_House4_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PalatiCity_House4/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_House4/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_HOUSE5",
+      "name": "PalatiCity_House5_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PalatiCity_House5/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_House5/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_HOUSE6",
+      "name": "PalatiCity_House6_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PalatiCity_House6/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_House6/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALATI_CITY_HOUSE7",
+      "name": "PalatiCity_House7_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PalatiCity_House7/border.bin",
+      "blockdata_filepath": "data/layouts/PalatiCity_House7/map.bin"
     }
   ]
 }

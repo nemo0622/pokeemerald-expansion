@@ -670,7 +670,7 @@
 #define FLAG_HIDE_ACROPOLIS_LEGENDARY_DOGS      0x270 // Hides Raikou, Entei, and Suicune in Acropolis Temple
 #define FLAG_HIDE_ACROPOLIS_LEGENDARY_BEASTS    0x271 // Hides Raging Bolt, Gouging Fire, and Walking Wake in Acropolis Temple
 #define FLAG_HIDE_ACROPOLIS_CHIMERA_MEMBERS     0x272 // Hides Kalliope and her Admins in Acropolis Temple
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
+#define FLAG_GOT_STRANGE_SOUVENIR_PALATI_CITY   0x273 // Got Strange Souvenir from Performer in Palati City
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
@@ -1110,7 +1110,7 @@
 #define FLAG_ITEM_KAPTARA_ISLAND_AUSPICIOUS_ARMOR                   0x422
 #define FLAG_ITEM_KAPTARA_ISLAND_TM_SOLAR_BEAM                      0x423
 #define FLAG_ITEM_KAPTARA_ISLAND_MAX_REVIVE                         0x424
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL                  0x425
+#define FLAG_ITEM_KAPTARA_ISLAND_MASTER_BALL                        0x425
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0x426
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL                  0x427
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_WOOD_MAIL                    0x428

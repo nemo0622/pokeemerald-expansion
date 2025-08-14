@@ -427,8 +427,10 @@ PalatiGym_EventScript_GymManWarnsPlayer_Text_0:
 	.string "Embers{COLOR DARK_GRAY} from them.\p"
 	.string "Be careful though! If you leave the\n"
 	.string "Gym, your Embers will {COLOR RED}burn out{COLOR DARK_GRAY}, and\l"
-	.string "you'll have to collect them all again.\l"
-	.string "Good luck!$"
+	.string "you'll have to collect them all again. If\l"
+	.string "you're not prepared, maybe you could\l"
+	.string "{COLOR GREEN}explore Kaptara Island{COLOR DARK_GRAY} and do some\l"
+	.string "training. Good luck!$"
 
 PalatiCity_Gym_EventScript_Trainer_PalatiGym_Mukhin_Text_0:
 # 100 "data/maps/PalatiCity_Gym/scripts.pory"

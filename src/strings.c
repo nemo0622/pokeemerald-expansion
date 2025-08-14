@@ -1820,6 +1820,8 @@ const u8 gText_SideQuestName_59[] = _("Chasing Down Archen");
 const u8 gText_SideQuestName_60[] = _("The Legend of Kyogre");
 const u8 gText_SideQuestName_61[] = _("The Legend of Groudon");
 const u8 gText_SideQuestName_62[] = _("The Legend of Rayquaza");
+const u8 gText_SideQuestName_63[] = _("A Personal Study");
+const u8 gText_SideQuestName_64[] = _("Occult Obsession");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Look for the deliveryman\nwith a flipped cart.");
@@ -1884,6 +1886,8 @@ const u8 gText_SideQuestDesc_59[] = _("Show an Archen in your\nparty to the Man 
 const u8 gText_SideQuestDesc_60[] = _("To defeat Walking Wake,\nfind Kyogre and show\nit your strength.");
 const u8 gText_SideQuestDesc_61[] = _("To defeat Gouging Fire,\nfind Groudon and show\nit your strength.");
 const u8 gText_SideQuestDesc_62[] = _("To defeat Raging Bolt,\nfind Rayquaza and show\nit your strength.");
+const u8 gText_SideQuestDesc_63[] = _("Find a Blue Shard to\nsupport Palati City's\narchaeological studies.");
+const u8 gText_SideQuestDesc_64[] = _("Complete the Ruins area\nof the Kipos Zoo to\nmake someone's trip better.");
 
 //completed quest description
 // NOTE: Probably never seen now that I only make Active quests seen lol!
@@ -1981,6 +1985,8 @@ const u8 gText_SideQuestMap59[] = _("Palati City"); // QUEST_SHOW_MAN_ARCHEN_FRO
 const u8 gText_SideQuestMap60[] = _("Kaptara Island (Sunken Temple)"); // QUEST_LEGEND_OF_KYOGRE
 const u8 gText_SideQuestMap61[] = _("Sofos City (Satyr's Lair)"); // QUEST_LEGEND_OF_GROUDON
 const u8 gText_SideQuestMap62[] = _("Tower of Dioxippus"); // QUEST_LEGEND_OF_RAYQUAZA
+const u8 gText_SideQuestMap63[] = _("Palati City (House)"); // QUEST_BLUE_SHARD_FOR_ARCHAEOLOGY
+const u8 gText_SideQuestMap64[] = _("Palati City (House)"); // QUEST_FILL_RUINS_ZOO
 
 //subquests
 // erm unused now oopsies

@@ -1,0 +1,23 @@
+mapscripts PalatiCity_House2_MapScripts {}
+
+script PalatiCity_House2_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("The buildings in Palati City have stood for over a thousand years, but the interiors are all pretty new!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_House2_EventScript_BlackBelt
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    msgbox(format("Our house interior was recently remodeled! The city looks ancient, but it's perfectly suited for modern living."))
+    closemessage
+    release
+    end
+}

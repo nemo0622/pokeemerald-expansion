@@ -1,0 +1,23 @@
+mapscripts PalatiCity_House5_MapScripts {}
+
+script PalatiCity_House5_EventScript_Performer
+{
+    lock
+    faceplayer
+    speakername("Performer")
+    msgbox(format("I'm reading about the of theatre in Ilios. Maybe I'll visit the theatre in the Fresco Isles!"))
+    closemessage
+    release
+    end
+}
+
+script PalatiCity_House5_EventScript_Youngster
+{
+    lock
+    faceplayer
+    speakername("Youngster")
+    msgbox(format("Fennekin is my favorite Pokémon! Maybe it could be my Starter Pokémon when I'm old enough to be a Trainer!"))
+    closemessage
+    release
+    end
+}

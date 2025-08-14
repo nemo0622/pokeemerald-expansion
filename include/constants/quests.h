@@ -74,9 +74,11 @@
 #define QUEST_BRING_BERRIES_TO_TYPE_NULL        56 // Bring 12 Sitrus Berries to Ex-Scientist in Fresco Isles to get Type: Null
 #define QUEST_MOON_STONE_YOUNGSTER              57 // Give a Moon Stone to a Youngster in Kaptara Island East
 #define QUEST_SHOW_MAN_ARCHEN_FROM_PARTY        58 // Show Man in Palati City an Archen in your party
-#define QUEST_LEGEND_OF_KYOGRE                  59 // Find Kyogre & Beat Ice Admin
-#define QUEST_LEGEND_OF_GROUDON                 60 // Find Groudon & Beat Fire Admin
-#define QUEST_LEGEND_OF_RAYQUAZA                61 // Find Rayquaza & Beat Kalliope
+#define QUEST_BLUE_SHARD_FOR_ARCHAEOLOGY        59 // Give Blue Shard to Ruin Maniac in Palati City
+#define QUEST_FILL_RUINS_ZOO                    60 // Fill Ruins area of the Zoo
+#define QUEST_LEGEND_OF_KYOGRE                  61 // Find Kyogre & Beat Ice Admin
+#define QUEST_LEGEND_OF_GROUDON                 62 // Find Groudon & Beat Fire Admin
+#define QUEST_LEGEND_OF_RAYQUAZA                63 // Find Rayquaza & Beat Kalliope
 #define QUEST_COUNT     (QUEST_LEGEND_OF_RAYQUAZA + 1)
 
 #define SUB_QUEST_1          0
