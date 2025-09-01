@@ -1018,11 +1018,13 @@
 #define ITEM_TINKATITE 844
 #define ITEM_CYCLIZITE_S 845
 #define ITEM_CYCLIZITE_V 846
+#define ITEM_VICTREEBITE 847
+#define ITEM_HAWLUCHITE 848
 
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 847
+#define ITEMS_COUNT 849
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

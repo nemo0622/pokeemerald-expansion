@@ -384,6 +384,26 @@ PalatiCity_Gym_EventScript_Rhadine_DefeatedScript::
 	end
 
 
+PalatiCity_Gym_EventScript_GymStatue::
+# 318 "data/maps/PalatiCity_Gym/scripts.pory"
+	lock
+# 319 "data/maps/PalatiCity_Gym/scripts.pory"
+	goto_if_set FLAG_BADGE07_GET, PalatiCity_Gym_EventScript_GymStatue_2
+# 325 "data/maps/PalatiCity_Gym/scripts.pory"
+	msgbox PalatiCity_Gym_EventScript_GymStatue_Text_1
+PalatiCity_Gym_EventScript_GymStatue_1:
+# 327 "data/maps/PalatiCity_Gym/scripts.pory"
+	closemessage
+# 328 "data/maps/PalatiCity_Gym/scripts.pory"
+	release
+	end
+
+PalatiCity_Gym_EventScript_GymStatue_2:
+# 321 "data/maps/PalatiCity_Gym/scripts.pory"
+	msgbox PalatiCity_Gym_EventScript_GymStatue_Text_0
+	goto PalatiCity_Gym_EventScript_GymStatue_1
+
+
 PalatiGym_EventScript_Torch1_Text_0:
 # 12 "data/maps/PalatiCity_Gym/scripts.pory"
 	.string "The torch is glowing brightly, pulsing\n"
@@ -569,6 +589,16 @@ PalatiCity_Gym_EventScript_Rhadine_DefeatedScript_Text_5:
 	.string "Was that... {PLAYER}, that was a\n"
 	.string "thunderclap! But that can only mean...\p"
 	.string "Quick! Come with me!$"
+
+PalatiCity_Gym_EventScript_GymStatue_Text_0:
+# 321 "data/maps/PalatiCity_Gym/scripts.pory"
+	.string "Palati City Pokémon Gym\p"
+	.string "Recent Victors: Rania, {PLAYER}$"
+
+PalatiCity_Gym_EventScript_GymStatue_Text_1:
+# 325 "data/maps/PalatiCity_Gym/scripts.pory"
+	.string "Palati City Pokémon Gym\p"
+	.string "Recent Victors: Rania$"
 
 PalatiCity_Gym_Text_Trainer_PalatiGym_MukhinIntro::
 # 106 "data/maps/PalatiCity_Gym/scripts.pory"

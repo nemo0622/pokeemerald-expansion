@@ -46,6 +46,7 @@ static void TilesetAnim_BattleDome(u16);
 static void TilesetAnim_Jusmail(u16);
 static void TilesetAnim_FrescoIsles(u16);
 static void TilesetAnim_PalatiGym(u16);
+static void TilesetAnim_TowerOfDioxippus(u16);
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
@@ -63,6 +64,7 @@ static void QueueAnimTiles_BattlePyramid_StatueShadow(u16);
 static void QueueAnimTiles_Jusmail_Windmill_Row01(u16);
 static void QueueAnimTiles_FrescoIsles_Lava(u16);
 static void QueueAnimTiles_PalatiGym_Torch(u16);
+static void QueueAnimTiles_TowerOfDioxippus_Torch(u16);
 static void BlendAnimPalette_BattleDome_FloorLights(u16);
 static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16);
 static void QueueAnimTiles_Lavaridge_Steam(u8);
@@ -621,6 +623,18 @@ static const u16 *const gTilesetAnims_PalatiGym_Torch[] = {
     gTilesetAnims_PalatiGym_Torch_Frame3
 };
 
+const u16 gTilesetAnims_TowerOfDioxippus_Torch_Frame0[] = INCBIN_U16("data/tilesets/secondary/palati_gym/anim/torch/frame0.4bpp");
+const u16 gTilesetAnims_TowerOfDioxippus_Torch_Frame1[] = INCBIN_U16("data/tilesets/secondary/palati_gym/anim/torch/frame1.4bpp");
+const u16 gTilesetAnims_TowerOfDioxippus_Torch_Frame2[] = INCBIN_U16("data/tilesets/secondary/palati_gym/anim/torch/frame2.4bpp");
+const u16 gTilesetAnims_TowerOfDioxippus_Torch_Frame3[] = INCBIN_U16("data/tilesets/secondary/palati_gym/anim/torch/frame3.4bpp");
+
+static const u16 *const gTilesetAnims_TowerOfDioxippus_Torch[] = {
+    gTilesetAnims_TowerOfDioxippus_Torch_Frame0,
+    gTilesetAnims_TowerOfDioxippus_Torch_Frame1,
+    gTilesetAnims_TowerOfDioxippus_Torch_Frame2,
+    gTilesetAnims_TowerOfDioxippus_Torch_Frame3
+};
+
 static void ResetTilesetAnimBuffer(void)
 {
     sTilesetDMA3TransferBufferSize = 0;
@@ -727,6 +741,13 @@ void InitTilesetAnim_PalatiGym(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_PalatiGym;
 }
 
+void InitTilesetAnim_TowerOfDioxippus(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_TowerOfDioxippus;
+}
+
 static void TilesetAnim_General(u16 timer)
 {
     if (timer % 16 == 0)
@@ -823,6 +844,32 @@ static void QueueAnimTiles_PalatiGym_Torch(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_PalatiGym_Torch);
     AppendTilesetAnimToBuffer(gTilesetAnims_PalatiGym_Torch[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(0x240)), 4 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_TowerOfDioxippus(u16 timer)
+{
+    if (timer % 16 == 0)
+    {
+        QueueAnimTiles_TowerOfDioxippus_Torch(timer >> 4);
+    }
+
+    // adding the TilesetAnim_General shtuff here lol
+    if (timer % 16 == 0)
+        QueueAnimTiles_General_Flower(timer / 16);
+    if (timer % 16 == 1)
+        QueueAnimTiles_General_Water(timer / 16);
+    if (timer % 16 == 2)
+        QueueAnimTiles_General_SandWaterEdge(timer / 16);
+    if (timer % 16 == 3)
+        QueueAnimTiles_General_Waterfall(timer / 16);
+    if (timer % 16 == 4)
+        QueueAnimTiles_General_LandWaterEdge(timer / 16);
+}
+
+static void QueueAnimTiles_TowerOfDioxippus_Torch(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_TowerOfDioxippus_Torch);
+    AppendTilesetAnimToBuffer(gTilesetAnims_TowerOfDioxippus_Torch[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(0x202)), 4 * TILE_SIZE_4BPP);
 }
 
 void InitTilesetAnim_Petalburg(void)

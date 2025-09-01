@@ -4755,7 +4755,7 @@
       "id": "LAYOUT_AREIOS_HIDEOUT",
       "name": "AreiosHideout_Layout",
       "width": 50,
-      "height": 50,
+      "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_PortPello",
       "border_filepath": "data/layouts/AreiosHideout/border.bin",
@@ -5275,7 +5275,7 @@
       "id": "LAYOUT_KIPOS_TOWN",
       "name": "KiposTown_Layout",
       "width": 46,
-      "height": 46,
+      "height": 48,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Kipos",
       "border_filepath": "data/layouts/KiposTown/border.bin",
@@ -5387,7 +5387,7 @@
       "width": 20,
       "height": 50,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Kipos",
+      "secondary_tileset": "gTileset_TowerOfDioxippus",
       "border_filepath": "data/layouts/LastlightRoad/border.bin",
       "blockdata_filepath": "data/layouts/LastlightRoad/map.bin"
     },
@@ -5830,6 +5830,146 @@
       "secondary_tileset": "gTileset_Ilios_GenericBuilding",
       "border_filepath": "data/layouts/PalatiCity_House7/border.bin",
       "blockdata_filepath": "data/layouts/PalatiCity_House7/map.bin"
+    },
+    {
+      "id": "LAYOUT_SATYRS_LAIR_DEEP",
+      "name": "SatyrsLair_Deep_Layout",
+      "width": 25,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SatyrsLair_Deep/border.bin",
+      "blockdata_filepath": "data/layouts/SatyrsLair_Deep/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWER_OF_DIOXIPPUS",
+      "name": "TowerOfDioxippus_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_TowerOfDioxippus",
+      "border_filepath": "data/layouts/TowerOfDioxippus/border.bin",
+      "blockdata_filepath": "data/layouts/TowerOfDioxippus/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWER_OF_DIOXIPPUS_POKEMON_CENTER",
+      "name": "TowerOfDioxippus_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/TowerOfDioxippus_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/TowerOfDioxippus_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWER_OF_DIOXIPPUS_HOUSE1",
+      "name": "TowerOfDioxippus_House1_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/TowerOfDioxippus_House1/border.bin",
+      "blockdata_filepath": "data/layouts/TowerOfDioxippus_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWER_OF_DIOXIPPUS_HOUSE2",
+      "name": "TowerOfDioxippus_House2_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/TowerOfDioxippus_House2/border.bin",
+      "blockdata_filepath": "data/layouts/TowerOfDioxippus_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWER_OF_DIOXIPPUS_BUILDING",
+      "name": "TowerOfDioxippus_Building_Layout",
+      "width": 8,
+      "height": 35,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/TowerOfDioxippus_Building/border.bin",
+      "blockdata_filepath": "data/layouts/TowerOfDioxippus_Building/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWER_OF_DIOXIPPUS_TOP",
+      "name": "TowerOfDioxippus_Top_Layout",
+      "width": 12,
+      "height": 16,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/TowerOfDioxippus_Top/border.bin",
+      "blockdata_filepath": "data/layouts/TowerOfDioxippus_Top/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_PELLO_POKEMON_CENTER",
+      "name": "PortPello_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PortPello_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/PortPello_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_PELLO_MART",
+      "name": "PortPello_Mart_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PortPello_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/PortPello_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_PELLO_HOUSE1",
+      "name": "PortPello_House1_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PortPello_House1/border.bin",
+      "blockdata_filepath": "data/layouts/PortPello_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_PELLO_HOUSE2",
+      "name": "PortPello_House2_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PortPello_House2/border.bin",
+      "blockdata_filepath": "data/layouts/PortPello_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_PELLO_HOUSE3",
+      "name": "PortPello_House3_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PortPello_House3/border.bin",
+      "blockdata_filepath": "data/layouts/PortPello_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_PELLO_HOUSE4",
+      "name": "PortPello_House4_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Ilios_GenericBuilding",
+      "border_filepath": "data/layouts/PortPello_House4/border.bin",
+      "blockdata_filepath": "data/layouts/PortPello_House4/map.bin"
+    },
+    {
+      "id": "LAYOUT_AREIOS_HIDEOUT_GYM",
+      "name": "AreiosHideout_Gym_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PalatiGym",
+      "border_filepath": "data/layouts/AreiosHideout_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/AreiosHideout_Gym/map.bin"
     }
   ]
 }

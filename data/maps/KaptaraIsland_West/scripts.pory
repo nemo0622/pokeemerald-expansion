@@ -1,8 +1,347 @@
 mapscripts KaptaraIsland_West_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
-        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE) && !flag(FLAG_HIDE_WEATHER_KAPTARA_ISLAND))
         {
             setweather(WEATHER_ABNORMAL)
         }
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(24, ENCOUNTER_LAND)
+        setobjectaswildencounter(25, ENCOUNTER_LAND)
+        setobjectaswildencounter(26, ENCOUNTER_LAND)
+        setobjectaswildencounter(27, ENCOUNTER_LAND)
+        setobjectaswildencounter(28, ENCOUNTER_LAND)
     }
+
+    MAP_SCRIPT_ON_RESUME {
+        if(flag(FLAG_SYS_CTRL_OBJ_DELETE))
+        {
+            removeobject(1) // removes kyogre
+        }
+    }
+}
+
+script KaptaraIsland_West_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Kaptara Island - Krikri Gorge\n Where Giants Come to Sleep\p Palati City {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
+script KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Dani
+{
+    trainerbattle_single(TRAINER_KAPTARAWEST_DANI, KaptaraIsland_West_Text_Trainer_KaptaraWest_DaniIntro, KaptaraIsland_West_Text_Trainer_KaptaraWest_DaniDefeat)
+    speakername("Dani")
+    msgbox(format("Ah, I can't get past the large rocks further ahead, anyway. Maybe I need a special HM?"))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_West_Text_Trainer_KaptaraWest_DaniIntro
+{
+    format("They say there are sunken ruins deep in these woods. I'll beat you there!")
+}
+text KaptaraIsland_West_Text_Trainer_KaptaraWest_DaniDefeat
+{
+    format("Looks like you'll get ahead of me.")
+}
+
+script KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Barrel
+{
+    trainerbattle_single(TRAINER_KAPTARAWEST_BARREL, KaptaraIsland_West_Text_Trainer_KaptaraWest_BarrelIntro, KaptaraIsland_West_Text_Trainer_KaptaraWest_BarrelDefeat)
+    speakername("Barrel")
+    msgbox(format("My Pokémon can move some of these large rocks, but there are so many... What could be happening further on?"))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_West_Text_Trainer_KaptaraWest_BarrelIntro
+{
+    format("Some mean-looking person in a mask and hood just barged through here. Look at all the rocks they knocked over!")
+}
+text KaptaraIsland_West_Text_Trainer_KaptaraWest_BarrelDefeat
+{
+    format("I'd better get outta here!")
+}
+
+script KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Sallador
+{
+    trainerbattle_single(TRAINER_KAPTARAWEST_SALLADOR, KaptaraIsland_West_Text_Trainer_KaptaraWest_SalladorIntro, KaptaraIsland_West_Text_Trainer_KaptaraWest_SalladorDefeat)
+    speakername("Sallador")
+    msgbox(format("Someone just came by with a giant Pokémon, making a huge ruckus. Now there are rocks falling... What's happening?!"))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_West_Text_Trainer_KaptaraWest_SalladorIntro
+{
+    format("I'm gonna get to those ruins if it's the last thing I do!")
+}
+text KaptaraIsland_West_Text_Trainer_KaptaraWest_SalladorDefeat
+{
+    format("Eh... Maybe I don't need to go further.")
+}
+
+script KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Penny
+{
+    trainerbattle_single(TRAINER_KAPTARAWEST_PENNY, KaptaraIsland_West_Text_Trainer_KaptaraWest_PennyIntro, KaptaraIsland_West_Text_Trainer_KaptaraWest_PennyDefeat)
+    speakername("Penny")
+    msgbox(format("I can see some half-sunken ruins down the cliffside. I wonder what's down there."))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_West_Text_Trainer_KaptaraWest_PennyIntro
+{
+    format("Something strange is going on. Are you involved somehow?")
+}
+text KaptaraIsland_West_Text_Trainer_KaptaraWest_PennyDefeat
+{
+    format("Aha, you must be involved!")
+}
+
+script KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Allan
+{
+    trainerbattle_single(TRAINER_KAPTARAWEST_ALLAN, KaptaraIsland_West_Text_Trainer_KaptaraWest_AllanIntro, KaptaraIsland_West_Text_Trainer_KaptaraWest_AllanDefeat)
+    speakername("Allan")
+    msgbox(format("I came here to paint these ruins, but when I arrived, there was a Team Chimera member with a monstrous Pokémon shouting in front of it. I wouldn't stand a chance against that Pokémon in a fight..."))
+    closemessage
+    release
+    end
+}
+text KaptaraIsland_West_Text_Trainer_KaptaraWest_AllanIntro
+{
+    format("We have to get out of here!")
+}
+text KaptaraIsland_West_Text_Trainer_KaptaraWest_AllanDefeat
+{
+    format("It seems like you can hold your own.")
+}
+
+// -----------------------------------------------------------------------------------------------------
+//                                  CHIMERA KYOGRE EVENT BELOW
+// -----------------------------------------------------------------------------------------------------
+
+script KaptaraIsland_West_EventScript_KyogreEvent
+{
+    lockall
+    ballfollowingmon
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_QUESTION)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+
+    speakername("Chimera Admin")
+    msgbox(format("Come on, wake up, you stupid whale!\p Grr... Fine, we'll do this our way. {COLOR RED}Walking Wake{COLOR DARK_GRAY}! Use Hydro Pump, and blast this ruin to smitheree-"))
+    closemessage
+    emote(22, EMOTE_EXCLAM)
+    applymovement(22, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("Ahaha, {PLAYER}! How nice of you to join our little party. {COLOR GREEN}Kyogre{COLOR DARK_GRAY} is said to lie deep below this ruined temple, but it keep hiding like a coward instead of facing me. I need to capture or defeat Kyogre to fully establish dominance over the sea, but...\p Oh! I'll knock out two Pikipek with one stone! Let's battle, and while I crush you, Kyogre will be drawn to the chaos of our fighting Pokémon."))
+    closemessage
+    applymovement(22, KaptaraIsland_West_Movement_ChimeraAdminGetInBattlePosition)
+    applymovement(23, KaptaraIsland_West_Movement_WalkingWakeGetInBattlePosition)
+    applymovement(OBJ_EVENT_ID_PLAYER, KaptaraIsland_West_Movement_PlayerGetInBattlePosition)
+    waitmovement(0)
+    speakername("Walking Wake")
+    playmoncry(SPECIES_WALKING_WAKE, CRY_MODE_NORMAL)
+    msgbox(format("Gyarooh!!!"))
+    waitmoncry
+    closemessage
+    delay(10)
+    speakername("Chimera Admin")
+    msgbox(format("Kahaha, listen to that roar! It's the end of the line for you, {PLAYER}!"))
+    closemessage
+
+    // START BATTLE
+    if(!flag(FLAG_HARD_MODE))
+    {
+        trainerbattle_no_intro(TRAINER_KAPTARAWEST_CHIMERA_ADMIN, KaptaraIsland_West_Text_ChimeraAdminDefeated)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_KAPTARAWEST_CHIMERA_ADMIN_HARD, KaptaraIsland_West_Text_ChimeraAdminDefeated)
+    }
+
+    delay(30)
+    applymovement(22, Common_Movement_JumpInPlaceRight)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("WHAT?! How could ANYONE stack up against the power of Walking Wake?\p Kalliope told me to bring Kyogre out, and either defeat it or capture it. I've... I've completely failed."))
+    closemessage
+    delay(30)
+    emote(22, EMOTE_EXCLAM)
+    speakername("Chimera Admin")
+    msgbox(format("No... Walking Wake still has the energy to stand, and I have one Full Restore left. I'll get Walking Wake {COLOR RED}back to full strength{COLOR DARK_GRAY} and {COLOR RED}sink this wretched island{COLOR DARK_GRAY}!"))
+    closemessage
+
+    // Kyogre appears!
+    fadescreenspeed(FADE_TO_WHITE, 2)
+    delay(15)
+    applymovement(22, Common_Movement_FaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    // stop extreme weather
+    setflag(FLAG_HIDE_WEATHER_KAPTARA_ISLAND)
+    resetweather
+    doweather
+    clearflag(FLAG_HIDE_KYOGRE_KAPTARA_ISLAND)
+    addobject(1)
+    delay(15)
+    fadescreen(FADE_FROM_WHITE)
+    delay(10)
+    
+    delay(30)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    emote(22, EMOTE_EXCLAM)
+    delay(10)
+    speakername("Chimera Admin")
+    msgbox(format("Kyogre...! It stabilized the weather in an instant?! How can I compete against that power without my full strength?"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(22, Common_Movement_JumpInPlaceRight)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("{PLAYER}, you WORM! All that matters is {COLOR RED}Kalliope winning over Rayquaza{COLOR DARK_GRAY}. Make no mistake, you've won the battle, but Team Chimera will win this war!"))
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    delay(15)
+    setflag(FLAG_HIDE_CHIMERA_AFTER_KYOGRE)
+    removeobject(22)
+    removeobject(23)
+    delay(15)
+    fadescreen(FADE_FROM_BLACK)
+    delay(20)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, KaptaraIsland_West_Movement_PlayerApproachKyogre)
+    waitmovement(0)
+    delay(20)
+    msgbox(format("Kyogre stares at you with curious eyes."))
+    closemessage
+    delay(30)
+
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM)
+    msgbox(format("Kyogre flares with a primal energy! Your team has been miraculously healed."))
+    closemessage
+    special(HealPlayerParty)
+    delay(5)
+    speakername("Kyogre")
+    playmoncry(SPECIES_KYOGRE, CRY_MODE_ENCOUNTER)
+    msgbox(format("Bouuuwwwwahhh!!"))
+    waitmoncry
+    closemessage
+
+    // KYOGRE BATTLE
+    seteventmon(SPECIES_KYOGRE, 45, ITEM_BLUE_ORB)
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE) // gonna remove kyogre
+    setflag(FLAG_HIDE_KYOGRE_KAPTARA_ISLAND)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    switch(var(VAR_RESULT))
+    {
+        case B_OUTCOME_CAUGHT:
+            msgbox(format("Kyogre has deemed you worthy and joined your team! It will help in the battle against Team Chimera."))
+            closemessage
+            setflag(FLAG_CAUGHT_KYOGRE)
+        default:
+            msgbox(format("Kyogre returned to the depths of the ruined temple, impressed with your power.\p Kyogre can be encountered again at the Sunken Temple until it is successfully caught."))
+            closemessage
+    }
+    delay(20)
+    completequest(QUEST_LEGEND_OF_KYOGRE)
+    closemessage
+    call(SatyrsLair_Deep_EventScript_CheckEncounteredBothWeatherMons)
+    release
+    end
+}
+
+movement KaptaraIsland_West_Movement_PlayerGetInBattlePosition
+{
+    walk_up * 3
+    walk_right * 2
+    face_left
+    step_end
+}
+
+movement KaptaraIsland_West_Movement_ChimeraAdminGetInBattlePosition
+{
+    walk_left * 2
+    walk_up
+    face_right
+    step_end
+}
+
+movement KaptaraIsland_West_Movement_WalkingWakeGetInBattlePosition
+{
+    walk_left
+    face_right
+    step_end
+}
+
+text KaptaraIsland_West_Text_ChimeraAdminDefeated
+{
+    format("NOOO! HOW?!")
+}
+
+movement KaptaraIsland_West_Movement_PlayerApproachKyogre
+{
+    walk_left * 2
+    walk_up
+    face_up
+    step_end
+}
+
+script KaptaraIsland_West_EventScript_InteractWithSunkenTemple
+{
+    lock
+    if(flag(FLAG_CAUGHT_KYOGRE))
+    {
+        msgbox(format("It's the Sunken Temple, where {COLOR GREEN}Kyogre{COLOR DARK_GRAY} used to lay dormant. It must have sat untouched for millennia..."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("It's the Sunken Temple, home of {COLOR GREEN}Kyogre{COLOR DARK_GRAY}, Lord of the Sea.\p A primal energy is radiating from below. Do you accept the challenge from {COLOR GREEN}Kyogre{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == FALSE)
+        {
+            release
+            end
+        }
+        else
+        {
+            seteventmon(SPECIES_KYOGRE, 45, ITEM_BLUE_ORB)
+            special(BattleSetup_StartLegendaryBattle)
+            waitstate
+            specialvar(VAR_RESULT, GetBattleOutcome)
+            switch(var(VAR_RESULT))
+            {
+                case B_OUTCOME_CAUGHT:
+                    msgbox(format("Kyogre has deemed you worthy of being its Trainer. The Sunken Temple is at rest."))
+                    closemessage
+                    setflag(FLAG_CAUGHT_KYOGRE)
+                default:
+                    msgbox(format("Kyogre returned to the depths of the ruined temple, impressed with your power.\p Kyogre can be encountered again at the Sunken Temple until it is successfully caught."))
+                    closemessage
+            }
+        }
+    }
+    release
+    end
 }

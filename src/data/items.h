@@ -10410,9 +10410,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM02"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Hooks and slashes\n"
-            "the foe with long,\n"
-            "sharp claws."),
+            "TM: Dragon Claw\n"
+            "Rakes foe with long\n"
+            "and sharp claws."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10961,9 +10961,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM38"),
         .price = 5500,
         .description = COMPOUND_STRING(
-            "A powerful fire\n"
-            "attack that may\n"
-            "burn the foe."),
+            "Move: Fire Blast\n"
+            "Scorching flames\n"
+            "that may burn foes."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11202,7 +11202,7 @@ const struct Item gItemsInfo[] =
         .name = _("TM54"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Move: DazzlingGleam\n"
+            "Move: Dazzling Gleam\n"
             "Blasts foe with a\n"
             "beam of light."),
         .importance = I_REUSABLE_TMS,
@@ -14421,5 +14421,39 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
         .iconPic = gItemIcon_Cyclizite_V,
         .iconPalette = gItemIconPalette_Cyclizite_V,
+    },
+
+    [ITEM_VICTREEBITE] =
+    {
+        .name = _("Victreebite"),
+        .price = 30000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Victreebel to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Victreebite,
+        .iconPalette = gItemIconPalette_Victreebite,
+    },
+
+    [ITEM_HAWLUCHITE] =
+    {
+        .name = _("Hawluchite"),
+        .price = 25000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Hawlucha to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Hawluchite,
+        .iconPalette = gItemIconPalette_Hawluchite,
     },
 };

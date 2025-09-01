@@ -1,0 +1,112 @@
+mapscripts PortPello_PokemonCenter_MapScripts {}
+
+script PortPello_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Port Pello Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_PORT_PELLO)
+    }
+    release
+    end
+}
+
+script PortPello_PokemonCenter_EventScript_UniversityStudentRouteCheck
+{
+    lock
+    faceplayer
+    speakername("Uni. Student")
+
+    if(flag(FLAG_CAUGHT_ALL_MONS_PORT_PELLO))
+    {
+        msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Chaire! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land Pokémon{COLOR DARK_GRAY} found in Port Pello. If you've caught all the Pokémon here, please let me know."))
+        closemessage
+        special(CheckRouteCaptureProgress)
+        if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
+        {
+            delay(20)
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Uni. Student")
+            msgbox(format("Incredible! You've caught all the Pokémon that I requested in the area!\p Here's a reward from the University. Keep up your hard work!"))
+            closemessage
+            delay(5)
+
+            // give reward!
+            unlockoutfit(OUTFIT_ANCIENT)
+            msgbox(format("The Ancient War Armor Outfit has been added to the Outfit Box!"))
+            delay(20)
+            closemessage
+
+            setflag(FLAG_CAUGHT_ALL_MONS_PORT_PELLO)
+        }
+    }
+
+    release
+    end
+}
+
+script PortPello_PokemonCenter_EventScript_Girl
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("Lots of strong Pokémon live around here. I'm glad there's a Pokémon Center nearby!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_PokemonCenter_EventScript_Worker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("My Heliolisk is strong enough to power multiple buildings here. It makes my job a lot easier!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_PokemonCenter_EventScript_Heliolisk
+{
+    lock
+    faceplayer
+    speakername("Heliolisk")
+    playmoncry(SPECIES_HELIOLISK, CRY_MODE_NORMAL)
+    msgbox("Breahh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

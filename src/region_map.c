@@ -350,6 +350,7 @@ static const u8 sMapHealLocations[][3] =
     [MAPSEC_KALAMI_CITY] = {MAP_GROUP(KALAMI_CITY), MAP_NUM(KALAMI_CITY), HEAL_LOCATION_KALAMI_CITY},
     [MAPSEC_KIPOS_TOWN] = {MAP_GROUP(KIPOS_TOWN), MAP_NUM(KIPOS_TOWN), HEAL_LOCATION_KIPOS_TOWN},
     [MAPSEC_PENTEPETAL_CITY] = {MAP_GROUP(PENTEPETAL_CITY), MAP_NUM(PENTEPETAL_CITY), HEAL_LOCATION_PENTEPETAL_CITY},
+    [MAPSEC_TOWER_OF_DIOXIPPUS] = {MAP_GROUP(TOWER_OF_DIOXIPPUS), MAP_NUM(TOWER_OF_DIOXIPPUS), HEAL_LOCATION_TOWER_OF_DIOXIPPUS},
 };
 
 static const u8 *const sEverGrandeCityNames[] =
@@ -1218,8 +1219,8 @@ static u8 GetMapsecType(u16 mapSecId)
         return FlagGet(FLAG_VISITED_KIPOS_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     case MAPSEC_PENTEPETAL_CITY:
         return FlagGet(FLAG_VISITED_PENTEPETAL_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
-    case MAPSEC_SOOTOPOLIS_CITY:
-        return FlagGet(FLAG_VISITED_SOOTOPOLIS_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    case MAPSEC_TOWER_OF_DIOXIPPUS:
+        return FlagGet(FLAG_VISITED_TOWER_OF_DIOXIPPUS) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     case MAPSEC_EVER_GRANDE_CITY:
         return FlagGet(FLAG_VISITED_EVER_GRANDE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     case MAPSEC_BATTLE_FRONTIER:
@@ -1865,14 +1866,15 @@ static void CreateFlyDestIcons(void)
     u16 shape;
     u8 spriteId;
 
-    canFlyFlag = FLAG_VISITED_ACRISIA_CITY;
-    for (mapSecId = MAPSEC_ACRISIA_CITY; mapSecId <= MAPSEC_NYX_TRAILS; mapSecId++)
+    canFlyFlag = FLAG_VISITED_ACRISIA_CITY; // starting area or something? idrk lol i just know it worked
+    for (mapSecId = MAPSEC_ACRISIA_CITY; mapSecId <= MAPSEC_NYX_TRAILS; mapSecId++) // loop through first and last used MAPSECs
     {
+        // list all fly-able MAPSECs here!
         if(mapSecId != MAPSEC_ACRISIA_CITY && mapSecId != MAPSEC_JUSMAIL_TOWN && mapSecId != MAPSEC_PYTHIOS_TOWN 
         && mapSecId != MAPSEC_SOFOS_CITY && mapSecId != MAPSEC_MARMARO_ISLAND && mapSecId != MAPSEC_MYRRINI_ISLAND 
         && mapSecId != MAPSEC_FRESCO_ISLAND && mapSecId != MAPSEC_PALATI_CITY && mapSecId != MAPSEC_PORT_PELLO 
         && mapSecId != MAPSEC_AREIOS_HIDEOUT && mapSecId != MAPSEC_CHAMPIONS_PEAK && mapSecId != MAPSEC_KALAMI_CITY
-        && mapSecId != MAPSEC_KIPOS_TOWN && mapSecId != MAPSEC_PENTEPETAL_CITY)
+        && mapSecId != MAPSEC_KIPOS_TOWN && mapSecId != MAPSEC_PENTEPETAL_CITY  && mapSecId != MAPSEC_TOWER_OF_DIOXIPPUS)
             continue;
 
         GetMapSecDimensions(mapSecId, &x, &y, &width, &height);

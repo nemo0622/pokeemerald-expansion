@@ -115,6 +115,7 @@
 #define MAP_SEA_OF_ASTERI_UNDERWATER_EAST (106 | (0 << 8))
 #define MAP_PENTEPETAL_CITY               (107 | (0 << 8))
 #define MAP_SUNKEN_TEMPLE                 (108 | (0 << 8))
+#define MAP_TOWER_OF_DIOXIPPUS            (109 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -214,6 +215,11 @@
 #define MAP_MYRRINI_ISLAND_MART               (17 | (7 << 8))
 #define MAP_MYRRINI_ISLAND_GYM                (18 | (7 << 8))
 #define MAP_MARMARO_MINES                     (19 | (7 << 8))
+#define MAP_TOWER_OF_DIOXIPPUS_POKEMON_CENTER (20 | (7 << 8))
+#define MAP_TOWER_OF_DIOXIPPUS_HOUSE1         (21 | (7 << 8))
+#define MAP_TOWER_OF_DIOXIPPUS_HOUSE2         (22 | (7 << 8))
+#define MAP_TOWER_OF_DIOXIPPUS_BUILDING       (23 | (7 << 8))
+#define MAP_TOWER_OF_DIOXIPPUS_TOP            (24 | (7 << 8))
 
 // gMapGroup_IndoorPetalburg
 #define MAP_PETALBURG_CITY_WALLYS_HOUSE      (0 | (8 << 8))
@@ -381,6 +387,12 @@
 #define MAP_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE   (12 | (15 << 8))
 #define MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F  (13 | (15 << 8))
 #define MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F (14 | (15 << 8))
+#define MAP_PORT_PELLO_POKEMON_CENTER                (15 | (15 << 8))
+#define MAP_PORT_PELLO_MART                          (16 | (15 << 8))
+#define MAP_PORT_PELLO_HOUSE1                        (17 | (15 << 8))
+#define MAP_PORT_PELLO_HOUSE2                        (18 | (15 << 8))
+#define MAP_PORT_PELLO_HOUSE3                        (19 | (15 << 8))
+#define MAP_PORT_PELLO_HOUSE4                        (20 | (15 << 8))
 
 // gMapGroup_IndoorEverGrande
 #define MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM      (0 | (16 << 8))
@@ -424,6 +436,7 @@
 
 // gMapGroup_IndoorRoute121
 #define MAP_ROUTE121_SAFARI_ZONE_ENTRANCE (0 | (23 << 8))
+#define MAP_AREIOS_HIDEOUT_GYM            (1 | (23 << 8))
 
 // gMapGroup_Dungeons
 #define MAP_METEOR_FALLS_1F_1R                       (0 | (24 << 8))
@@ -540,6 +553,7 @@
 #define MAP_JUSMAIL_TOWN_GYM                         (111 | (24 << 8))
 #define MAP_ACRISIA_CAVES_BF1                        (112 | (24 << 8))
 #define MAP_SATYRS_LAIR                              (113 | (24 << 8))
+#define MAP_SATYRS_LAIR_DEEP                         (114 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1         (0 | (25 << 8))

@@ -1768,7 +1768,7 @@ const u8 gText_SideQuestName_7[] = _("Gym 4");
 const u8 gText_SideQuestName_8[] = _("Gym 5");
 const u8 gText_SideQuestName_9[] = _("Gym 6");
 const u8 gText_SideQuestName_10[] = _("Gym 7");
-const u8 gText_SideQuestName_11[] = _("Gym 8");
+const u8 gText_SideQuestName_11[] = _("Gym 8 - The Final Showdown");
 const u8 gText_SideQuestName_12[] = _("Become Champion");
 const u8 gText_SideQuestName_13[] = _("Complete the Pokédex");
 const u8 gText_SideQuestName_14[] = _("A Girlypop Dream");
@@ -1822,6 +1822,10 @@ const u8 gText_SideQuestName_61[] = _("The Legend of Groudon");
 const u8 gText_SideQuestName_62[] = _("The Legend of Rayquaza");
 const u8 gText_SideQuestName_63[] = _("A Personal Study");
 const u8 gText_SideQuestName_64[] = _("Occult Obsession");
+const u8 gText_SideQuestName_65[] = _("A Berry Lofty Goal");
+const u8 gText_SideQuestName_66[] = _("The Ultimate Bicycle");
+const u8 gText_SideQuestName_67[] = _("An Unusual Pichu");
+const u8 gText_SideQuestName_68[] = _("Rare Inspiration");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Look for the deliveryman\nwith a flipped cart.");
@@ -1834,7 +1838,7 @@ const u8 gText_SideQuestDesc_7[] = _("Defeat Gym 4 in\nSofos City.");
 const u8 gText_SideQuestDesc_8[] = _("Defeat Gym 5 on\nMyrrini Island.");
 const u8 gText_SideQuestDesc_9[] = _("Defeat Gym 6 on\nthe Fresco Isles.");
 const u8 gText_SideQuestDesc_10[] = _("Defeat Gym 7 in\nPalati City.");
-const u8 gText_SideQuestDesc_11[] = _("Defeat Gym 8 in\nAreios Hideout.");
+const u8 gText_SideQuestDesc_11[] = _("Defeat Kalliope, Leader of Team\nChimera, hiding in her old\nGym in Areios Hideout.");
 const u8 gText_SideQuestDesc_12[] = _("Become Champion of\nthe Ilios Region!");
 const u8 gText_SideQuestDesc_13[] = _("Conduct research on Pokémon by\ncatching all Pokémon native\nto the Ilios Region!");
 const u8 gText_SideQuestDesc_14[] = _("Show a completed Pokédex entry\nof Togepi to the Performer\nfor a reward.");
@@ -1888,6 +1892,10 @@ const u8 gText_SideQuestDesc_61[] = _("To defeat Gouging Fire,\nfind Groudon and
 const u8 gText_SideQuestDesc_62[] = _("To defeat Raging Bolt,\nfind Rayquaza and show\nit your strength.");
 const u8 gText_SideQuestDesc_63[] = _("Find a Blue Shard to\nsupport Palati City's\narchaeological studies.");
 const u8 gText_SideQuestDesc_64[] = _("Complete the Ruins area\nof the Kipos Zoo to\nmake someone's trip better.");
+const u8 gText_SideQuestDesc_65[] = _("Give a Worker 5 Lum Berries\nto plant around the\nTower of Dioxippus.");
+const u8 gText_SideQuestDesc_66[] = _("Help a Cyclist catch a Cyclizar\nfor themselves by showing\nhim its complete Pokédex page.");
+const u8 gText_SideQuestDesc_67[] = _("Prove to the Pokéfan that you\ncan care for a Pichu by showing\nher a Pikachu in your party.");
+const u8 gText_SideQuestDesc_68[] = _("Get 3 Strange Souvenir items\nfor the Sailor's friend's\nUniversity paper.");
 
 //completed quest description
 // NOTE: Probably never seen now that I only make Active quests seen lol!
@@ -1934,7 +1942,7 @@ const u8 gText_SideQuestMap8[] = _("Myrrini Island"); // QUEST_GYM_5
 const u8 gText_SideQuestMap9[] = _("Fresco Isles"); // QUEST_GYM_6
 const u8 gText_SideQuestMap10[] = _("Palati City"); // QUEST_GYM_7
 const u8 gText_SideQuestMap11[] = _("Areios Hideout"); // QUEST_GYM_8
-const u8 gText_SideQuestMap12[] = _("Champion's Peak"); // QUEST_CHAMPION
+const u8 gText_SideQuestMap12[] = _("Ruins of Ahiyawa"); // QUEST_CHAMPION
 const u8 gText_SideQuestMap13[] = _("Ilios Region"); // QUEST_COMPLETE_DEX
 const u8 gText_SideQuestMap14[] = _("Acrisia City"); // QUEST_TOGEPI_EVIOLITE
 const u8 gText_SideQuestMap15[] = _("Acrisia Mountains"); // QUEST_BALTOY_DUSK_STONE
@@ -1987,6 +1995,10 @@ const u8 gText_SideQuestMap61[] = _("Sofos City (Satyr's Lair)"); // QUEST_LEGEN
 const u8 gText_SideQuestMap62[] = _("Tower of Dioxippus"); // QUEST_LEGEND_OF_RAYQUAZA
 const u8 gText_SideQuestMap63[] = _("Palati City (House)"); // QUEST_BLUE_SHARD_FOR_ARCHAEOLOGY
 const u8 gText_SideQuestMap64[] = _("Palati City (House)"); // QUEST_FILL_RUINS_ZOO
+const u8 gText_SideQuestMap65[] = _("Tower of Dioxippus (House)"); // QUEST_FILL_RUINS_ZOO
+const u8 gText_SideQuestMap66[] = _("Port Pello"); // QUEST_SHOW_CYCLIZAR_DEX_PORT_PELLO
+const u8 gText_SideQuestMap67[] = _("Port Pello (House)"); // QUEST_SHOW_PIKACHU_FOR_PICHU
+const u8 gText_SideQuestMap68[] = _("Port Pello (House)"); // QUEST_STRANGE_SOUVENIRS_FOR_SAILOR
 
 //subquests
 // erm unused now oopsies

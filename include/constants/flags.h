@@ -89,10 +89,10 @@
 #define FLAG_CAUGHT_ALL_MONS_SEA_OF_VULCAI      0x49 // University Student Route Check flag
 #define FLAG_CAUGHT_ALL_MONS_FRESCO_ISLES       0x4A // University Student Route Check flag
 #define FLAG_CAUGHT_ALL_MONS_PALATI_CITY        0x4B // University Student Route Check flag
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_CAUGHT_ALL_MONS_PENTEPETAL_CITY    0x4C // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_KAPTARA_ISLAND     0x4D // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_TOWER_OF_DIOXIPPUS 0x4E // University Student Route Check flag
+#define FLAG_CAUGHT_ALL_MONS_LASTLIGHT_ROAD     0x4F // University Student Route Check flag
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
@@ -671,32 +671,32 @@
 #define FLAG_HIDE_ACROPOLIS_LEGENDARY_BEASTS    0x271 // Hides Raging Bolt, Gouging Fire, and Walking Wake in Acropolis Temple
 #define FLAG_HIDE_ACROPOLIS_CHIMERA_MEMBERS     0x272 // Hides Kalliope and her Admins in Acropolis Temple
 #define FLAG_GOT_STRANGE_SOUVENIR_PALATI_CITY   0x273 // Got Strange Souvenir from Performer in Palati City
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
-#define FLAG_UNUSED_0x280  0x280 // Unused Flag
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
-#define FLAG_UNUSED_0x282  0x282 // Unused Flag
-#define FLAG_UNUSED_0x283  0x283 // Unused Flag
-#define FLAG_UNUSED_0x284  0x284 // Unused Flag
-#define FLAG_UNUSED_0x285  0x285 // Unused Flag
-#define FLAG_UNUSED_0x286  0x286 // Unused Flag
-#define FLAG_UNUSED_0x287  0x287 // Unused Flag
-#define FLAG_UNUSED_0x288  0x288 // Unused Flag
-#define FLAG_UNUSED_0x289  0x289 // Unused Flag
-#define FLAG_UNUSED_0x28A  0x28A // Unused Flag
-#define FLAG_UNUSED_0x28B  0x28B // Unused Flag
-#define FLAG_UNUSED_0x28C  0x28C // Unused Flag
-#define FLAG_UNUSED_0x28D  0x28D // Unused Flag
+#define FLAG_HIDE_CHIMERA_AFTER_KYOGRE          0x274 // Hides Chimera Admin & Walking Wake after the Kyogre event
+#define FLAG_HIDE_KYOGRE_KAPTARA_ISLAND         0x275 // Hides Kyogre in Kaptara Island (West)
+#define FLAG_HIDE_GROUDON_SATYRS_LAIR           0x276 // Hides Groudon in Satyr's Lair in Sofos City
+#define FLAG_CAUGHT_KYOGRE                      0x277 // marks if kyogre was caught or not
+#define FLAG_CAUGHT_GROUDON                     0x278 // was groudon caught
+#define FLAG_HIDE_WEATHER_KAPTARA_ISLAND        0x279 // Hides extreme weather after battle against Chimera on Kaptara Island
+#define FLAG_HIDE_CHIMERA_AFTER_GROUDON         0x27A // Hides Chimera Admin & Gouging Fire after Groudon event
+#define FLAG_HIDE_WEATHER_SOFOS_CITY            0x27B // Hides extreme weather after battle against Chimera in Satyr's Lair
+#define FLAG_CAUGHT_BOTH_WEATHER_LEGENDS        0x27C // Unlocks access to Lastlight Road and Tower of Dioxippus
+#define FLAG_DEFEATED_KALLIOPE_DIOXIPPUS        0x27D // Set when Kalliope is defeated at the Tower of Dioxippus (also hides her NPC there)
+#define FLAG_HIDE_ADMINS_DIOXIPPUS              0x27E // Reveals the admins during the Tower of Dioxippus event
+#define FLAG_HIDE_RAYQUAZA_DIOXIPPUS            0x27F // Hides Rayquaza at Tower of Dioxippus
+#define FLAG_CAUGHT_RAYQUAZA                    0x280 // Marks if Rayquaza was caught at Tower of Dio.
+#define FLAG_HIDE_RANIA_AND_NIKO_DIOXIPPUS      0x281 // Rania and Niko talk to player after Tower event
+#define FLAG_DID_RANIA_NIKO_POST_DIOXIPPUS_EVENT  0x282 // in the name
+#define FLAG_CAUGHT_ALL_MONS_CORRIN_CROSSING    0x283 // University Student flag
+#define FLAG_CAUGHT_ALL_MONS_PORT_PELLO         0x284 // University Student flag
+#define FLAG_HIDE_SPIKY_EAR_PICHU_BALL          0x285 // Hides Pichu's Poké ball in Port Pello house
+#define FLAG_HIDE_RANIA_PORT_PELLO              0x286 // Set after beating Rania in Port Pello
+#define FLAG_GOT_FIRE_BLAST_FROM_FUNG           0x287 // jesus.
+#define FLAG_DEFEATED_TEAM_CHIMERA_IN_AREIOS    0x288 // Hides Chimera Grunts from Areios Hideout and changes some NPC dialogue
+#define FLAG_HIDE_LEGENDARY_BEASTS_AREIOS_GYM   0x289
+#define FLAG_HIDE_LEGENDARY_DOGS_AREIOS_GYM     0x28A 
+#define FLAG_HIDE_RANIA_AND_LEADERS_AREIOS      0x28B // Set after Areios Chimera end event happens
+#define FLAG_UNLOCKED_RUINS_OF_AHIYAWA          0x28C // Set after Chimera is defeated in Areios Hideout
+#define FLAG_HIDE_RIVAL_RANIA_PALATI            0x28D // Hides Rania in front of Palati Gym
 #define FLAG_UNUSED_0x28E  0x28E // Unused Flag
 #define FLAG_UNUSED_0x28F  0x28F // Unused Flag
 #define FLAG_UNUSED_0x290  0x290 // Unused Flag
@@ -1111,13 +1111,13 @@
 #define FLAG_ITEM_KAPTARA_ISLAND_TM_SOLAR_BEAM                      0x423
 #define FLAG_ITEM_KAPTARA_ISLAND_MAX_REVIVE                         0x424
 #define FLAG_ITEM_KAPTARA_ISLAND_MASTER_BALL                        0x425
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0x426
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL                  0x427
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_WOOD_MAIL                    0x428
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_4_MECH_MAIL                    0x429
-#define FLAG_ITEM_ROUTE_124_YELLOW_SHARD                            0x42A
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_6_GLITTER_MAIL                 0x42B
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_7_TROPIC_MAIL                  0x42C
+#define FLAG_ITEM_KAPTARA_ISLAND_MALICIOUS_ARMOR                    0x426
+#define FLAG_ITEM_LASTLIGHT_ROAD_FULL_RESTORE                       0x427
+#define FLAG_ITEM_NYX_TRAILS_FULL_RESTORE                           0x428
+#define FLAG_ITEM_NYX_TRAILS_BIG_NUGGET                             0x429
+#define FLAG_ITEM_NYX_TRAILS_MAX_REVIVE                             0x42A
+#define FLAG_ITEM_NYX_TRAILS_RAZOR_CLAW                             0x42B
+#define FLAG_ITEM_NYX_TRAILS_LEAF_STONE                             0x42C
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL                    0x42D
 #define FLAG_ITEM_JAGGED_PASS_BURN_HEAL                             0x42E
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MAX_ELIXIR                       0x42F
@@ -1380,7 +1380,7 @@
 #define FLAG_VISITED_KALAMI_CITY                    (SYSTEM_FLAGS + 0x1A) // replaced fortree city
 #define FLAG_VISITED_KIPOS_TOWN                     (SYSTEM_FLAGS + 0x1B) // replaced lilycove city
 #define FLAG_VISITED_PENTEPETAL_CITY                (SYSTEM_FLAGS + 0x1C) // replaced mossdeep city
-#define FLAG_VISITED_SOOTOPOLIS_CITY                (SYSTEM_FLAGS + 0x1D)
+#define FLAG_VISITED_TOWER_OF_DIOXIPPUS             (SYSTEM_FLAGS + 0x1D) // replaces sootopolis city
 #define FLAG_VISITED_EVER_GRANDE_CITY               (SYSTEM_FLAGS + 0x1E)
 
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.

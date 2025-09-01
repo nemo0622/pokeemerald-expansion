@@ -1,0 +1,23 @@
+mapscripts PortPello_House2_MapScripts {}
+
+script PortPello_House2_EventScript_ConstructionWorker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+    msgbox(format("I built a couple of the homes in Port Pello myself! The lumber from these forests is especially well-suited for construction."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_House2_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("Behold, my masterpiece!\p ...Alright, I'll admit that it's not that impressive. I'll always be proud of what I create, though."))
+    closemessage
+    release
+    end
+}

@@ -17,7 +17,7 @@ RustboroCity_Gym_SetGymTrainers::
 	return
 
 DewfordTown_Gym_SetGymTrainers::
-	settrainerflag TRAINER_TAKAO
+	settrainerflag TRAINER_KAPTARAWEST_ALLAN
 	settrainerflag TRAINER_JOCELYN
 	settrainerflag TRAINER_LAURA
 	settrainerflag TRAINER_BRENDEN
@@ -26,21 +26,21 @@ DewfordTown_Gym_SetGymTrainers::
 	return
 
 MauvilleCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_KIRK
-	settrainerflag TRAINER_SHAWN
+	settrainerflag TRAINER_DIOXIPPUS_KALLIOPE_HARD
+	settrainerflag TRAINER_CORRINCROSSING_VASIA
 	settrainerflag TRAINER_BEN
 	settrainerflag TRAINER_VIVIAN
 	settrainerflag TRAINER_ANGELO
 	return
 
 LavaridgeTown_Gym_SetGymTrainers::
-	settrainerflag TRAINER_COLE
-	settrainerflag TRAINER_AXLE
-	settrainerflag TRAINER_KEEGAN
+	settrainerflag TRAINER_NYXTRAILS_HARRY
+	settrainerflag TRAINER_NYXTRAILS_SAMWELL
+	settrainerflag TRAINER_NYXTRAILS_GRUNT1
 	settrainerflag TRAINER_GERALD
 	settrainerflag TRAINER_DANIELLE
-	settrainerflag TRAINER_JACE
-	settrainerflag TRAINER_JEFF
+	settrainerflag TRAINER_NYXTRAILS_ADRIA
+	settrainerflag TRAINER_NYXTRAILS_BRIENNE
 	settrainerflag TRAINER_ELI
 	return
 

@@ -261,3 +261,6 @@ const u16 gMetatileAttributes_FrescoIsles[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_PalatiGym[] = INCBIN_U16("data/tilesets/secondary/palati_gym/metatiles.bin");
 const u16 gMetatileAttributes_PalatiGym[] = INCBIN_U16("data/tilesets/secondary/palati_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_TowerOfDioxippus[] = INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/metatiles.bin");
+const u16 gMetatileAttributes_TowerOfDioxippus[] = INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/metatile_attributes.bin");

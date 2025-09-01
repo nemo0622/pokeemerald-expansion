@@ -435,3 +435,34 @@ script PalatiCity_EventScript_DirectionSign
     release
     end
 }
+
+script PalatiCity_EventScript_RaniaRivalBattle
+{
+    lock
+    faceplayer
+    emote(42, EMOTE_EXCLAM)
+    speakername("Rania")
+    msgbox(format("{PLAYER}! It's been a bit, eh?\p I just beat Rhadine, the Gym Leader of this city! That was a rough one, but I'm more fired up than ever. How about a quick battle before you head into the Gym?"))
+    closemessage
+
+    trainerbattle_no_intro(TRAINER_PALATI_RANIA, PalatiCity_Text_RaniaLose)
+
+    delay(10)
+    speakername("Rania")
+    msgbox(format("Ehehe, I didn't doubt you for a second, {PLAYER}! If you can handle me, you can definitely handle Rhadine.\p I'm planning on meeting with Niko in Sofos City soon on a little research expedition. Maybe we can catch up and chat about it afterwards! For now, good luck with Rhadine!"))
+    closemessage
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(15)
+    setflag(FLAG_HIDE_RIVAL_RANIA_PALATI)
+    removeobject(42)
+    delay(15)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(10)
+    releaseall
+    end
+}
+
+text PalatiCity_Text_RaniaLose
+{
+    format("I can't believe it, you're still stronger than me!")
+}

@@ -663,6 +663,48 @@ PalatiCity_EventScript_DirectionSign::
 	end
 
 
+PalatiCity_EventScript_RaniaRivalBattle::
+# 441 "data/maps/PalatiCity/scripts.pory"
+	lock
+# 442 "data/maps/PalatiCity/scripts.pory"
+	faceplayer
+# 443 "data/maps/PalatiCity/scripts.pory"
+	emote 42, EMOTE_EXCLAM
+# 444 "data/maps/PalatiCity/scripts.pory"
+	speakername PalatiCity_EventScript_ChimeraEvent_Text_4
+# 445 "data/maps/PalatiCity/scripts.pory"
+	msgbox PalatiCity_EventScript_RaniaRivalBattle_Text_0
+# 446 "data/maps/PalatiCity/scripts.pory"
+	closemessage
+# 448 "data/maps/PalatiCity/scripts.pory"
+	trainerbattle_no_intro TRAINER_PALATI_RANIA, PalatiCity_Text_RaniaLose
+# 450 "data/maps/PalatiCity/scripts.pory"
+	delay 10
+# 451 "data/maps/PalatiCity/scripts.pory"
+	speakername PalatiCity_EventScript_ChimeraEvent_Text_4
+# 452 "data/maps/PalatiCity/scripts.pory"
+	msgbox PalatiCity_EventScript_RaniaRivalBattle_Text_1
+# 453 "data/maps/PalatiCity/scripts.pory"
+	closemessage
+# 454 "data/maps/PalatiCity/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 455 "data/maps/PalatiCity/scripts.pory"
+	delay 15
+# 456 "data/maps/PalatiCity/scripts.pory"
+	setflag FLAG_HIDE_RIVAL_RANIA_PALATI
+# 457 "data/maps/PalatiCity/scripts.pory"
+	removeobject 42
+# 458 "data/maps/PalatiCity/scripts.pory"
+	delay 15
+# 459 "data/maps/PalatiCity/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 460 "data/maps/PalatiCity/scripts.pory"
+	delay 10
+# 461 "data/maps/PalatiCity/scripts.pory"
+	releaseall
+	end
+
+
 PalatiCity_EventScript_ChimeraEvent_Text_0:
 # 58 "data/maps/PalatiCity/scripts.pory"
 	.string "Rhadine$"
@@ -1005,3 +1047,28 @@ PalatiCity_EventScript_DirectionSign_Text_0:
 	.string "The Birthplace of Ilian Civilization\p"
 	.string "{LEFT_ARROW} Kaptara Island - Krikri Gorge\n"
 	.string "Kaptara Island - Octillery Forest {RIGHT_ARROW}$"
+
+PalatiCity_EventScript_RaniaRivalBattle_Text_0:
+# 445 "data/maps/PalatiCity/scripts.pory"
+	.string "{PLAYER}! It's been a bit, eh?\p"
+	.string "I just beat Rhadine, the Gym Leader of\n"
+	.string "this city! That was a rough one, but I'm\l"
+	.string "more fired up than ever. How about a\l"
+	.string "quick battle before you head into the\l"
+	.string "Gym?$"
+
+PalatiCity_EventScript_RaniaRivalBattle_Text_1:
+# 452 "data/maps/PalatiCity/scripts.pory"
+	.string "Ehehe, I didn't doubt you for a second,\n"
+	.string "{PLAYER}! If you can handle me, you\l"
+	.string "can definitely handle Rhadine.\p"
+	.string "I'm planning on meeting with Niko in\n"
+	.string "Sofos City soon on a little research\l"
+	.string "expedition. Maybe we can catch up and\l"
+	.string "chat about it afterwards! For now, good\l"
+	.string "luck with Rhadine!$"
+
+PalatiCity_Text_RaniaLose::
+# 465 "data/maps/PalatiCity/scripts.pory"
+	.string "I can't believe it, you're still stronger\n"
+	.string "than me!$"

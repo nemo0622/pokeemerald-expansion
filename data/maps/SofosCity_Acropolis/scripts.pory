@@ -224,6 +224,8 @@ script SofosCity_Acropolis_EventScript_ChimeraEvent
     delay(15)
     setflag(FLAG_DID_CHIMERA_EVENT_PALATI_CITY)
     setflag(FLAG_HIDE_RHADINE_PALATI_CITY)
+    setflag(FLAG_HIDE_KYOGRE_KAPTARA_ISLAND)
+    setflag(FLAG_HIDE_GROUDON_SATYRS_LAIR)
     removeobject(8)
     removeobject(9)
     removeobject(10)

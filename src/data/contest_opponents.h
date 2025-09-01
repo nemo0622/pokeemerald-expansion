@@ -836,8 +836,8 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_LIAM] = {
-        .species = SPECIES_FLAMIGO,
-        .nickname = _("Flameo"),
+        .species = SPECIES_HAWLUCHA,
+        .nickname = _("Hawky"),
         .trainerName = _("Liam"),
         .trainerGfxId = OBJ_EVENT_GFX_MAN_5,
         .aiFlags = CONTEST_AI_SET_8,
@@ -849,10 +849,10 @@ const struct ContestPokemon gContestOpponents[] =
         .aiPool_Tough = TRUE,
         .moves =
         {
-            MOVE_PLUCK,
-            MOVE_LOW_KICK,
-            MOVE_WING_ATTACK,
-            MOVE_FEINT
+            MOVE_AERIAL_ACE,
+            MOVE_KARATE_CHOP,
+            MOVE_TRAILBLAZE,
+            MOVE_FLYING_PRESS
         },
         .cool = 4,
         .beauty = 3,

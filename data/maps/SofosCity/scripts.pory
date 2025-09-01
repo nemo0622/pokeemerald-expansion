@@ -3,7 +3,7 @@ mapscripts SofosCity_MapScripts {
         setflag(FLAG_VISITED_SOFOS_CITY)
         clearflag(FLAG_HIDE_SOFOS_ACROPOLIS_NPCS)
 
-        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE) && !flag(FLAG_HIDE_WEATHER_SOFOS_CITY))
         {
             setweather(WEATHER_ABNORMAL)
         }
@@ -35,6 +35,15 @@ script SofosCity_EventScript_GameCornerSign
 {
     lock
     msgbox(format("Sofos City Game Corner\n Play Pinball, Get Prizes!"))
+    closemessage
+    release
+    end
+}
+
+script SofosCity_EventScript_SatyrsLairSign
+{
+    lock
+    msgbox(format("Satyr's Lair\n The Legendary Cave of Ilios\p According to classical myth, the first Pokémon Trainers of Ilios gathered here to share their power and discover new ways to train their Pokémon. If these stories can be believed, {COLOR GREEN}Mega Evolution{COLOR DARK_GRAY} was first used in Ilios in this cave!"))
     closemessage
     release
     end
@@ -599,7 +608,7 @@ script SofosCity_EventScript_GoodRodFishingGuru
     }
     else
     {
-        msgbox(format("The {COLOR GREEN}Good Rod{COLOR DARK_GRAY} allows you to fish up a wide arrow of Water-dwelling Pokémon. Hey, you might even find some treasure in the water!"))
+        msgbox(format("The {COLOR GREEN}Good Rod{COLOR DARK_GRAY} allows you to fish up a wide array of Water-dwelling Pokémon. Hey, you might even find some treasure in the water!"))
         closemessage
     }
     release

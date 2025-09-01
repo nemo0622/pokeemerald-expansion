@@ -251,6 +251,10 @@
 #define METATILE_GenericBuilding_TrickHouse_Door_Closed  0x21B
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
 
+// gTileset_Ilios_GenericBuilding
+#define METATILE_Ilios_GenericBuilding_DioxippusTowerTop   0x308
+#define METATILE_Ilios_GenericBuilding_DioxippusTowerTop2  0x310
+
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
 #define METATILE_InsideOfTruck_DoorClosedFloor_Mid     0x215

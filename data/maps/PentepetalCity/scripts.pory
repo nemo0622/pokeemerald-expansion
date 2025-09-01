@@ -59,8 +59,18 @@ script PentepetalCity_EventScript_RaniaChimeraEvent
     fadescreen(FADE_FROM_BLACK)
     delay(30)
 
+    // NEW - have Rania battle Player here to make sure they're ready for trouble with Team Chimera!
+    // Heal the Player's party after, then do event as normal
+
     speakername("Rania")
-    msgbox(format("So, like, remember how I came to Péntepetal City just to rest and get away from Team Chimera? Well, I can say goodbye to those plans.\p Two new {COLOR GREEN}Lazarus Taxa{COLOR DARK_GRAY}, Cranidos and Shieldon, were just found in the woods nearby. The second the news got out, Team Chimera swept in and started to steal them all! I found a clearing where they're hiding, come help me fight them! I'll heal your Pokémon before we go."))
+    msgbox(format("So, like, remember how I came to Péntepetal City just to rest and get away from Team Chimera? Well, I can say goodbye to those plans.\p Two new {COLOR GREEN}Lazarus Taxa{COLOR DARK_GRAY}, Cranidos and Shieldon, were just found in the woods nearby. The second the news got out, Team Chimera swept in and started to steal them all! I need your help to save whatever Pokémon we can.\p Before we do that, I need to know that you're capable of this. Let's have a quick Pokémon battle!"))
+    closemessage
+
+    trainerbattle_no_intro(TRAINER_PENTEPETAL_RANIA, PentepetalCity_Text_RaniaLose)
+
+    delay(10)
+    speakername("Rania")
+    msgbox(format("You're an incredible Trainer, {PLAYER}! You'll be able to handle these Team Chimera thugs, no problem.\p Here, let me here your Pokémon. Then follow me to where Team Chimera is hiding!"))
     closemessage
     special(HealPlayerParty)
     delay(10)
@@ -318,6 +328,10 @@ movement PentepetalCity_Movement_RaniaLeaves
 text PentepetalCity_Text_GruntLose
 {
     format("No! How can we keep losing to the likes of you?!")
+}
+text PentepetalCity_Text_RaniaLose
+{
+    format("Woah! You can definitely handle this.")
 }
 
 // ---------------------------------------------------------------------------------------------------
@@ -768,5 +782,16 @@ script PentepetalCity_EventScript_PickUpRandomFossil
         setflag(FLAG_HIDDEN_ITEM_PENTEPETAL_FOSSIL)
     }
     release
+    end
+}
+
+script PentepetalCity_EventScript_BlockPollenPath
+{
+    lockall
+    msgbox(format("This way leads to the {COLOR GREEN}Ruins of Ahiyawa{COLOR DARK_GRAY}, where the {COLOR GREEN}Elite Four{COLOR DARK_GRAY} used to reside. It's been abandoned for years, so it wouldn't be safe to go this way."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+    waitmovement(0)
+    releaseall
     end
 }

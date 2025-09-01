@@ -1,0 +1,61 @@
+mapscripts PortPello_Mart_MapScripts {}
+
+script PortPello_Mart_EventScript_MartEmployee
+{
+    lock
+    faceplayer
+    speakername("Mart Employee")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(PortPello_Mart_Shop)
+    closemessage
+    delay(1)
+    speakername("Mart Employee")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+
+}
+
+mart PortPello_Mart_Shop
+{
+    ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+    ITEM_ULTRA_BALL
+	ITEM_POTION
+	ITEM_SUPER_POTION
+    ITEM_HYPER_POTION
+    ITEM_MAX_POTION
+    ITEM_REVIVE
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_FULL_HEAL
+	ITEM_ESCAPE_ROPE
+	ITEM_REPEL
+    ITEM_SUPER_REPEL
+    ITEM_MAX_REPEL
+}
+
+script PortPello_Mart_EventScript_LittleBoy
+{
+    lock
+    faceplayer
+    speakername("Little Boy")
+    msgbox(format("Why are the best Potions the most expensive? I can't afford them on my allowance!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_Mart_EventScript_Maniac
+{
+    lock
+    faceplayer
+    speakername("Collector")
+    msgbox(format("I'm trying to collect all the Pokémon in the Ilios Region. I don't even have a Rotom Phone, I just sketch all the Pokémon I catch!"))
+    closemessage
+    release
+    end
+}

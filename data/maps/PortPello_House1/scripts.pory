@@ -1,0 +1,34 @@
+mapscripts PortPello_House1_MapScripts {}
+
+script PortPello_House1_EventScript_Lady
+{
+    lock
+    faceplayer
+    speakername("Lady")
+    msgbox(format("All the news coverage is talking about Team Chimera. How scary!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_House1_EventScript_LittleGirl
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    msgbox(format("Hehehe, look at my Impidimp Doll! My friends all think he's scary, but I like him!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_House1_EventScript_BlackBelt
+{
+    lock
+    faceplayer
+    speakername("Black Belt")
+    msgbox(format("If Team Chimera thinks they can get to my family, they can think again!"))
+    closemessage
+    release
+    end
+}

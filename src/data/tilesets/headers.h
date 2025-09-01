@@ -1047,3 +1047,14 @@ const struct Tileset gTileset_PalatiGym =
     .metatileAttributes = gMetatileAttributes_PalatiGym,
     .callback = InitTilesetAnim_PalatiGym,
 };
+
+const struct Tileset gTileset_TowerOfDioxippus =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_TowerOfDioxippus,
+    .palettes = gTilesetPalettes_TowerOfDioxippus,
+    .metatiles = gMetatiles_TowerOfDioxippus,
+    .metatileAttributes = gMetatileAttributes_TowerOfDioxippus,
+    .callback = InitTilesetAnim_TowerOfDioxippus,
+};

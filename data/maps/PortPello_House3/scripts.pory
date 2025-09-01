@@ -1,0 +1,98 @@
+mapscripts PortPello_House3_MapScripts {}
+
+script PortPello_House3_EventScript_PokefanM
+{
+    lock
+    faceplayer
+    speakername("Pokéfan M")
+    msgbox(format("I lo-o-ove Pokémon that remind me of Pikachu! I'm looking at pictures of Electric-type rodent Pokémon from across the world!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_House3_EventScript_Doll
+{
+    lock
+    msgbox(format("It's a Pokémon Doll. These people are really, really into Pikachu-like Pokémon, huh?"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_House3_EventScript_SpikyPichuBall
+{
+    lock
+    msgbox(format("It looks like a Pichu is inside the Poké ball, but something is strange about it."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_House3_EventScript_PokefanF
+{
+    // SPIKY EAR PICHU QUEST
+    lock
+    faceplayer
+    speakername("Pokéfan F")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_PIKACHU_FOR_PICHU)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Oh, how's my little baby Pichu doing? I hope she's happy exploring the world with you!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_PIKACHU_FOR_PICHU)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Hi...\p Sorry, I've been lost in thought lately. I came across an abandoned Pichu and brought it home in this Poké ball, but something is strange about it. You see, this Pichu is {COLOR GREEN}stronger than usual{COLOR DARK_GRAY}... In fact, it's a little too strong for my husband and I!\p I'll tell you what. If you show me that you can raise a Pichu by {COLOR GREEN}showing me a Pikachu in your Party{COLOR DARK_GRAY}, then this Pichu can join you on your adventure."))
+        closemessage
+        delay(20)
+        startquest(QUEST_SHOW_PIKACHU_FOR_PICHU)
+    }
+    else
+    {
+        msgbox(format("So? Can you prove to me that you can raise a Pichu? Please, show me a {COLOR GREEN}Pikachu{COLOR DARK_GRAY} you've raised."))
+        closemessage
+
+        delay(10)
+        checkforspecieslocal(SPECIES_PIKACHU, OPEN_PARTY_SCREEN)
+        delay(10)
+
+        if(var(VAR_RESULT) == 0)
+        {
+            speakername("Pokéfan F")
+            msgbox(format("Hmm... I don't see a Pikachu...\p Show me a {COLOR GREEN}Pikachu from your Party{COLOR DARK_GRAY}, and I'll let this little Pichu go adventuring with you."))
+            closemessage
+        }
+        else
+        {
+            emote(5, EMOTE_EXCLAM)
+            speakername("Pokéfan F")
+            msgbox(format("Oh! That Pikachu is so adorable, and so happy!\p You've convinced me. Please, take this Pichu with you on your adventure. I know it will be happier with you!"))
+            closemessage
+            delay(5)
+
+            setflag(FLAG_HIDE_SPIKY_EAR_PICHU_BALL)
+            removeobject(6)
+
+            givemon(SPECIES_PICHU_SPIKY_EARED, 40, ITEM_NONE, ITEM_POKE_BALL, NATURE_NAUGHTY, 0, FEMALE, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_THUNDERCLAP, MOVE_ANCIENT_POWER, MOVE_DISCHARGE, MOVE_RELIC_SONG)
+            closemessage
+            delay(5)
+
+            speakername("Pokéfan F")
+            msgbox(format("Please, take care of my little Pichu! It's different than all the rest, but that's what makes her so special."))
+            closemessage
+
+            delay(20)
+            completequest(QUEST_SHOW_PIKACHU_FOR_PICHU)
+        }
+    }
+    release
+    end
+}

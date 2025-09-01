@@ -424,6 +424,14 @@ script AcrisiaCity_University_EventScript_Niko
                 release
                 end
             }
+            elif(var(VAR_NIKO_STATE) == 13) // After Tower of Dioxippus
+            {
+                speakername("Niko")
+                msgbox(format("Now that the weather around Ilios has calmed down, everyone feels a lot safer. That's all thanks to you!\p Oh, have you been to {COLOR GREEN}Port Pello{COLOR DARK_GRAY} yet? Rania was looking for you there."))
+                closemessage
+                release
+                end
+            }
         }
         else // chose cancel probably
         {
@@ -440,6 +448,7 @@ script AcrisiaCity_University_EventScript_Niko
 
 mart AcrisiaCity_University_Mart_MegaStones_Shop1
 {
+    ITEM_VICTREEBITE
     ITEM_GYARADOSITE
     ITEM_NOCTOWLITE
     ITEM_AMPHAROSITE
@@ -453,6 +462,7 @@ mart AcrisiaCity_University_Mart_MegaStones_Shop1
     ITEM_BANETTITE
     ITEM_MANDIBITE
     ITEM_HELIOLITE
+    ITEM_HAWLUCHITE
     ITEM_RIBOMBITE
     ITEM_WYRDEERITE
     ITEM_TINKATITE
@@ -460,6 +470,7 @@ mart AcrisiaCity_University_Mart_MegaStones_Shop1
 
 mart AcrisiaCity_University_Mart_MegaStones_Shop2
 {
+    ITEM_VICTREEBITE
     ITEM_GENGARITE
     ITEM_GYARADOSITE
     ITEM_LAPRASITE
@@ -482,6 +493,7 @@ mart AcrisiaCity_University_Mart_MegaStones_Shop2
     ITEM_MANDIBITE
     ITEM_PANGORITE
     ITEM_HELIOLITE
+    ITEM_HAWLUCHITE
     ITEM_RIBOMBITE
     ITEM_WYRDEERITE
     ITEM_CENTISKITE
@@ -491,6 +503,7 @@ mart AcrisiaCity_University_Mart_MegaStones_Shop2
 
 mart AcrisiaCity_University_Mart_MegaStones_CompleteShop
 {
+    ITEM_VICTREEBITE
     ITEM_GENGARITE
     ITEM_GYARADOSITE
     ITEM_LAPRASITE
@@ -519,6 +532,7 @@ mart AcrisiaCity_University_Mart_MegaStones_CompleteShop
     ITEM_GOGOATITE
     ITEM_PANGORITE
     ITEM_HELIOLITE
+    ITEM_HAWLUCHITE
     ITEM_TOUCANNONITE
     ITEM_RIBOMBITE
     ITEM_WYRDEERITE
@@ -629,6 +643,7 @@ script AcrisiaCity_University_EventScript_Rania
         msgbox(format("Team Chimera hasn't made it to Acrisia City yet, thankfully. For now, I'll keep processing Pokédex information. Maybe that'll help you fight Team Chimera somehow!"))
         closemessage
     }
+    // After Tower of Dioxippus, Rania is hidden because she's in Port Pello to fight the Player
     release
     end
 }

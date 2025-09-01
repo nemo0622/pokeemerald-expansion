@@ -1,0 +1,25 @@
+mapscripts TowerOfDioxippus_House2_MapScripts {}
+
+script TowerOfDioxippus_House2_EventScript_FatMan
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("My father used to tell me about Rayquaza, the ultimate Pokémon of the sky, coming down to earth one day. I'd love to see that."))
+    closemessage
+    release
+    end
+}
+
+script TowerOfDioxippus_House2_EventScript_Swoobat
+{
+    lock
+    faceplayer
+    speakername("Swoobat")
+    playmoncry(SPECIES_SWOOBAT, CRY_MODE_NORMAL)
+    msgbox("Whoo-o!")
+    waitmoncry
+    closemessage
+    release
+    end
+}

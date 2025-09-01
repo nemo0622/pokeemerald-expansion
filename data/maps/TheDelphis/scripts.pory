@@ -137,22 +137,22 @@ script TheDelphis_EventScript_LeaveShipTrigger
         }
         elif(var(VAR_CHOSEN_SAIL_LOCATION) == 7) // péntepetal city
         {
-            warp(MAP_PENTEPETAL_CITY, 49, 42) // currently set to Pokémon center entrance, no dock yet
+            warp(MAP_PENTEPETAL_CITY, 49, 42)
             waitstate
         }
         elif(var(VAR_CHOSEN_SAIL_LOCATION) == 8) // fresco isles
         {
-            warp(MAP_FRESCO_ISLAND, 10, 25) // currently set to Pokémon center entrance, no dock yet
+            warp(MAP_FRESCO_ISLAND, 10, 25)
             waitstate
         }
         elif(var(VAR_CHOSEN_SAIL_LOCATION) == 9) // palati city
         {
-            warp(MAP_PALATI_CITY, 39, 19) // currently set to Pokémon center entrance, no dock yet
+            warp(MAP_PALATI_CITY, 26, 10)
             waitstate
         }
         elif(var(VAR_CHOSEN_SAIL_LOCATION) == 10) // port pello
         {
-            warp(MAP_PORT_PELLO, 22, 19) // currently set to Pokémon center entrance, no dock yet
+            warp(MAP_PORT_PELLO, 41, 29)
             waitstate
         }
         else // FAILSAFE: just warp to Pythios Town Pokémon Center

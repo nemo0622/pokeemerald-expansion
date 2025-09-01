@@ -410,249 +410,253 @@ SofosCity_Acropolis_EventScript_ChimeraEvent::
 # 226 "data/maps/SofosCity_Acropolis/scripts.pory"
 	setflag FLAG_HIDE_RHADINE_PALATI_CITY
 # 227 "data/maps/SofosCity_Acropolis/scripts.pory"
-	removeobject 8
+	setflag FLAG_HIDE_KYOGRE_KAPTARA_ISLAND
 # 228 "data/maps/SofosCity_Acropolis/scripts.pory"
-	removeobject 9
+	setflag FLAG_HIDE_GROUDON_SATYRS_LAIR
 # 229 "data/maps/SofosCity_Acropolis/scripts.pory"
-	removeobject 10
+	removeobject 8
 # 230 "data/maps/SofosCity_Acropolis/scripts.pory"
-	clearflag FLAG_HIDE_MAP_NAME_POPUP
+	removeobject 9
 # 231 "data/maps/SofosCity_Acropolis/scripts.pory"
-	delay 15
+	removeobject 10
 # 232 "data/maps/SofosCity_Acropolis/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 # 233 "data/maps/SofosCity_Acropolis/scripts.pory"
+	delay 15
+# 234 "data/maps/SofosCity_Acropolis/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 235 "data/maps/SofosCity_Acropolis/scripts.pory"
 	delay 10
-# 236 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 238 "data/maps/SofosCity_Acropolis/scripts.pory"
 	setvar VAR_RANIA_STATE, 11
-# 237 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 239 "data/maps/SofosCity_Acropolis/scripts.pory"
 	setvar VAR_NIKO_STATE, 12
-# 240 "data/maps/SofosCity_Acropolis/scripts.pory"
-	startquest QUEST_LEGEND_OF_KYOGRE
-# 241 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
 # 242 "data/maps/SofosCity_Acropolis/scripts.pory"
-	delay 20
+	startquest QUEST_LEGEND_OF_KYOGRE
 # 243 "data/maps/SofosCity_Acropolis/scripts.pory"
-	startquest QUEST_LEGEND_OF_GROUDON
+	closemessage
 # 244 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
-# 245 "data/maps/SofosCity_Acropolis/scripts.pory"
 	delay 20
+# 245 "data/maps/SofosCity_Acropolis/scripts.pory"
+	startquest QUEST_LEGEND_OF_GROUDON
 # 246 "data/maps/SofosCity_Acropolis/scripts.pory"
-	startquest QUEST_LEGEND_OF_RAYQUAZA
-# 247 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
+# 247 "data/maps/SofosCity_Acropolis/scripts.pory"
+	delay 20
 # 248 "data/maps/SofosCity_Acropolis/scripts.pory"
+	startquest QUEST_LEGEND_OF_RAYQUAZA
+# 249 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 250 "data/maps/SofosCity_Acropolis/scripts.pory"
 	releaseall
 	end
 
 
 SofosCity_Acropolis_EventScript_Sign1::
-# 254 "data/maps/SofosCity_Acropolis/scripts.pory"
-	lock
-# 255 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_Acropolis_EventScript_Sign1_Text_0
 # 256 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_Sign1_Text_1
+	lock
 # 257 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
+	speakername SofosCity_Acropolis_EventScript_Sign1_Text_0
 # 258 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_Sign1_Text_1
+# 259 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 260 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 
 SofosCity_Acropolis_EventScript_Sign2::
-# 263 "data/maps/SofosCity_Acropolis/scripts.pory"
-	lock
-# 264 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_Acropolis_EventScript_Sign1_Text_0
 # 265 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_Sign2_Text_0
+	lock
 # 266 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
+	speakername SofosCity_Acropolis_EventScript_Sign1_Text_0
 # 267 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_Sign2_Text_0
+# 268 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 269 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 
 SofosCity_Acropolis_EventScript_Man::
-# 273 "data/maps/SofosCity_Acropolis/scripts.pory"
-	lock
-# 274 "data/maps/SofosCity_Acropolis/scripts.pory"
-	faceplayer
 # 275 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_Acropolis_EventScript_Man_Text_0
+	lock
 # 276 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_Man_Text_1
+	faceplayer
 # 277 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
+	speakername SofosCity_Acropolis_EventScript_Man_Text_0
 # 278 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_Man_Text_1
+# 279 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 280 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 
 SofosCity_Acropolis_EventScript_Camper::
-# 283 "data/maps/SofosCity_Acropolis/scripts.pory"
-	lock
-# 284 "data/maps/SofosCity_Acropolis/scripts.pory"
-	faceplayer
 # 285 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_Acropolis_EventScript_Camper_Text_0
+	lock
 # 286 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_Camper_Text_1
+	faceplayer
 # 287 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
+	speakername SofosCity_Acropolis_EventScript_Camper_Text_0
 # 288 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_Camper_Text_1
+# 289 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 290 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 
 SofosCity_Acropolis_EventScript_Lass::
-# 293 "data/maps/SofosCity_Acropolis/scripts.pory"
-	lock
-# 294 "data/maps/SofosCity_Acropolis/scripts.pory"
-	faceplayer
 # 295 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_Acropolis_EventScript_Lass_Text_0
+	lock
 # 296 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_Lass_Text_1
+	faceplayer
 # 297 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
+	speakername SofosCity_Acropolis_EventScript_Lass_Text_0
 # 298 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_Lass_Text_1
+# 299 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 300 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 
 SofosCity_Acropolis_EventScript_TogaGirl::
-# 303 "data/maps/SofosCity_Acropolis/scripts.pory"
-	lock
-# 304 "data/maps/SofosCity_Acropolis/scripts.pory"
-	faceplayer
 # 305 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_Acropolis_EventScript_TogaGirl_Text_0
+	lock
 # 306 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_TogaGirl_Text_1
+	faceplayer
 # 307 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
+	speakername SofosCity_Acropolis_EventScript_TogaGirl_Text_0
 # 308 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_TogaGirl_Text_1
+# 309 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 310 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 
 SofosCity_Acropolis_EventScript_Sylveon::
-# 314 "data/maps/SofosCity_Acropolis/scripts.pory"
-	lock
-# 315 "data/maps/SofosCity_Acropolis/scripts.pory"
-	faceplayer
 # 316 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_Acropolis_EventScript_Sylveon_Text_0
+	lock
 # 317 "data/maps/SofosCity_Acropolis/scripts.pory"
-	playmoncry SPECIES_SYLVEON, CRY_MODE_NORMAL
+	faceplayer
 # 318 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_Sylveon_Text_1
+	speakername SofosCity_Acropolis_EventScript_Sylveon_Text_0
 # 319 "data/maps/SofosCity_Acropolis/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_SYLVEON, CRY_MODE_NORMAL
 # 320 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
+	msgbox SofosCity_Acropolis_EventScript_Sylveon_Text_1
 # 321 "data/maps/SofosCity_Acropolis/scripts.pory"
+	waitmoncry
+# 322 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 323 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_OldSofosOutfitBeauty::
-# 327 "data/maps/SofosCity_Acropolis/scripts.pory"
-	lock
-# 328 "data/maps/SofosCity_Acropolis/scripts.pory"
-	faceplayer
 # 329 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
+	lock
 # 330 "data/maps/SofosCity_Acropolis/scripts.pory"
-	checkoutfitflag OUTFIT_OLD_SOFOS
+	faceplayer
+# 331 "data/maps/SofosCity_Acropolis/scripts.pory"
+	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
 # 332 "data/maps/SofosCity_Acropolis/scripts.pory"
+	checkoutfitflag OUTFIT_OLD_SOFOS
+# 334 "data/maps/SofosCity_Acropolis/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SofosCity_EventScript_OldSofosOutfitBeauty_2
-# 382 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 384 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_7
-# 383 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 385 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
 SofosCity_EventScript_OldSofosOutfitBeauty_1:
-# 385 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 387 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 SofosCity_EventScript_OldSofosOutfitBeauty_2:
-# 334 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_1
-# 335 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
 # 336 "data/maps/SofosCity_Acropolis/scripts.pory"
-	delay 5
+	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_1
 # 337 "data/maps/SofosCity_Acropolis/scripts.pory"
-	showmoneybox 0, 0
-# 338 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
-# 339 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_2, MSGBOX_YESNO
-# 340 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
+# 338 "data/maps/SofosCity_Acropolis/scripts.pory"
+	delay 5
+# 339 "data/maps/SofosCity_Acropolis/scripts.pory"
+	showmoneybox 0, 0
+# 340 "data/maps/SofosCity_Acropolis/scripts.pory"
+	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
 # 341 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_2, MSGBOX_YESNO
+# 342 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 343 "data/maps/SofosCity_Acropolis/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SofosCity_EventScript_OldSofosOutfitBeauty_5
-# 353 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 355 "data/maps/SofosCity_Acropolis/scripts.pory"
 	checkmoney 16900
-# 354 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 356 "data/maps/SofosCity_Acropolis/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SofosCity_EventScript_OldSofosOutfitBeauty_8
-# 365 "data/maps/SofosCity_Acropolis/scripts.pory"
-	removemoney 16900
-# 366 "data/maps/SofosCity_Acropolis/scripts.pory"
-	updatemoneybox
 # 367 "data/maps/SofosCity_Acropolis/scripts.pory"
-	delay 5
+	removemoney 16900
 # 368 "data/maps/SofosCity_Acropolis/scripts.pory"
-	unlockoutfit OUTFIT_OLD_SOFOS
+	updatemoneybox
 # 369 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_5
-# 370 "data/maps/SofosCity_Acropolis/scripts.pory"
-	delay 20
-# 371 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
-# 372 "data/maps/SofosCity_Acropolis/scripts.pory"
-	hidemoneybox
-# 373 "data/maps/SofosCity_Acropolis/scripts.pory"
 	delay 5
+# 370 "data/maps/SofosCity_Acropolis/scripts.pory"
+	unlockoutfit OUTFIT_OLD_SOFOS
+# 371 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_5
+# 372 "data/maps/SofosCity_Acropolis/scripts.pory"
+	delay 20
+# 373 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
 # 374 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
+	hidemoneybox
 # 375 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_6
+	delay 5
 # 376 "data/maps/SofosCity_Acropolis/scripts.pory"
+	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
+# 377 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_6
+# 378 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
 	goto SofosCity_EventScript_OldSofosOutfitBeauty_1
 
 SofosCity_EventScript_OldSofosOutfitBeauty_5:
-# 343 "data/maps/SofosCity_Acropolis/scripts.pory"
-	hidemoneybox
-# 344 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
 # 345 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_3
+	hidemoneybox
 # 346 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
 # 347 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_3
+# 348 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 349 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 SofosCity_EventScript_OldSofosOutfitBeauty_8:
-# 356 "data/maps/SofosCity_Acropolis/scripts.pory"
-	hidemoneybox
-# 357 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
 # 358 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_4
+	hidemoneybox
 # 359 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
 # 360 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_4
+# 361 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 362 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
@@ -865,11 +869,11 @@ SofosCity_Acropolis_EventScript_ChimeraEvent_Text_28:
 	.string "please, be safe!$"
 
 SofosCity_Acropolis_EventScript_Sign1_Text_0:
-# 255 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 257 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Information Sign$"
 
 SofosCity_Acropolis_EventScript_Sign1_Text_1:
-# 256 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 258 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Welcome to the Sofos City Acropolis\n"
 	.string "Temple, the oldest and best maintained\l"
 	.string "Acropolis Temple still standing in the\l"
@@ -886,7 +890,7 @@ SofosCity_Acropolis_EventScript_Sign1_Text_1:
 	.string "all bird Pokémon.$"
 
 SofosCity_Acropolis_EventScript_Sign2_Text_0:
-# 265 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 267 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "These Pokémon are foundational to the\n"
 	.string "mythology of the Ilios Region. {COLOR GREEN}Raikou{COLOR DARK_GRAY}\l"
 	.string "channels the power of the sky, creating\l"
@@ -904,11 +908,11 @@ SofosCity_Acropolis_EventScript_Sign2_Text_0:
 	.string "are the true kings of land, sea, and sky.$"
 
 SofosCity_Acropolis_EventScript_Man_Text_0:
-# 275 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 277 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Tourist$"
 
 SofosCity_Acropolis_EventScript_Man_Text_1:
-# 276 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 278 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Archen, huh? They say it evolved from a\n"
 	.string "branch of reptilian Pokémon, being the\l"
 	.string "first to develop feathers and wings.\p"
@@ -920,11 +924,11 @@ SofosCity_Acropolis_EventScript_Man_Text_1:
 	.string "generations.$"
 
 SofosCity_Acropolis_EventScript_Camper_Text_0:
-# 285 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 287 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Camper$"
 
 SofosCity_Acropolis_EventScript_Camper_Text_1:
-# 286 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 288 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Those Pokémon from the old myths... I\n"
 	.string "wonder if they're real. There are lots of\l"
 	.string "parallels with stories from Johto and\l"
@@ -932,21 +936,21 @@ SofosCity_Acropolis_EventScript_Camper_Text_1:
 	.string "elemental Pokémon myths.$"
 
 SofosCity_Acropolis_EventScript_Lass_Text_0:
-# 295 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 297 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Lass$"
 
 SofosCity_Acropolis_EventScript_Lass_Text_1:
-# 296 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 298 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "My family and I took a boat here from\n"
 	.string "Myrrini Island. I've never seen statues\l"
 	.string "like this before!$"
 
 SofosCity_Acropolis_EventScript_TogaGirl_Text_0:
-# 305 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 307 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Toga Woman$"
 
 SofosCity_Acropolis_EventScript_TogaGirl_Text_1:
-# 306 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 308 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Welcome. We hope you enjoy the Sofos\n"
 	.string "City Acropolis Temple. Please be\l"
 	.string "respectful of the fragile statues and\l"
@@ -954,50 +958,50 @@ SofosCity_Acropolis_EventScript_TogaGirl_Text_1:
 	.string "here!$"
 
 SofosCity_Acropolis_EventScript_Sylveon_Text_0:
-# 316 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 318 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Sylveon$"
 
 SofosCity_Acropolis_EventScript_Sylveon_Text_1:
-# 318 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 320 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Breow!$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_0:
-# 329 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 331 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Fashionista$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_1:
-# 334 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 336 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Wow, the ancient history of the Ilios\n"
 	.string "Region is amazing!$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_2:
-# 339 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 341 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "I've actually made an Outfit in the\n"
 	.string "ancient Sofos City style! I'll give you\l"
 	.string "this {COLOR GREEN}Old Sofos Toga Outfit{COLOR DARK_GRAY} for ¥16900.\l"
 	.string "How about it?$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_3:
-# 345 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 347 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "No? Aren't you interested in the\n"
 	.string "history of the Ilios Region?$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_4:
-# 358 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 360 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Hey, you don't have the money for that!$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_5:
-# 369 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 371 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The Old Sofos Toga Outfit has been\n"
 	.string "added to the Outfit Box!$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_6:
-# 375 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 377 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Thanks for your support! I hope you\n"
 	.string "have fun trying out the ancient look!$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_7:
-# 382 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 384 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The Old Sofos Toga Outfit is a modern\n"
 	.string "replica of an ancient style.\l"
 	.string "Philosophers wore fashionable togas to\l"

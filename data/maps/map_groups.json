@@ -144,7 +144,8 @@
     "SeaOfVulcai_Underwater",
     "SeaOfAsteri_Underwater_East",
     "PentepetalCity",
-    "SunkenTemple"
+    "SunkenTemple",
+    "TowerOfDioxippus"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -243,7 +244,12 @@
     "MyrriniIsland_House5",
     "MyrriniIsland_Mart",
     "MyrriniIsland_Gym",
-    "MarmaroMines"
+    "MarmaroMines",
+    "TowerOfDioxippus_PokemonCenter",
+    "TowerOfDioxippus_House1",
+    "TowerOfDioxippus_House2",
+    "TowerOfDioxippus_Building",
+    "TowerOfDioxippus_Top"
   ],
   "gMapGroup_IndoorPetalburg": [
     "PetalburgCity_WallysHouse",
@@ -410,7 +416,13 @@
     "SootopolisCity_House7",
     "SootopolisCity_LotadAndSeedotHouse",
     "SootopolisCity_MysteryEventsHouse_1F",
-    "SootopolisCity_MysteryEventsHouse_B1F"
+    "SootopolisCity_MysteryEventsHouse_B1F",
+    "PortPello_PokemonCenter",
+    "PortPello_Mart",
+    "PortPello_House1",
+    "PortPello_House2",
+    "PortPello_House3",
+    "PortPello_House4"
   ],
   "gMapGroup_IndoorEverGrande": [
     "EverGrandeCity_SidneysRoom",
@@ -453,7 +465,8 @@
     "Route117_PokemonDayCare"
   ],
   "gMapGroup_IndoorRoute121": [
-    "Route121_SafariZoneEntrance"
+    "Route121_SafariZoneEntrance",
+    "AreiosHideout_Gym"
   ],
   "gMapGroup_Dungeons": [
     "MeteorFalls_1F_1R",
@@ -569,7 +582,8 @@
     "StygianCaves_BF1",
     "JusmailTown_Gym",
     "AcrisiaCaves_BF1",
-    "SatyrsLair"
+    "SatyrsLair",
+    "SatyrsLair_Deep"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

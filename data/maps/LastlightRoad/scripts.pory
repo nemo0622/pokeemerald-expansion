@@ -1,4 +1,38 @@
-mapscripts LastlightRoad_MapScripts {}
+mapscripts LastlightRoad_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(18, ENCOUNTER_LAND)
+        setobjectaswildencounter(19, ENCOUNTER_LAND)
+        setobjectaswildencounter(20, ENCOUNTER_LAND)
+        setobjectaswildencounter(21, ENCOUNTER_LAND)
+        setobjectaswildencounter(22, ENCOUNTER_LAND)
+    }
+}
+
+script LastlightRoad_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Lastlight Road\n Where Torches Burn Forever\p {UP_ARROW} Kipos Town\n {DOWN_ARROW} Tower of Dioxippus"))
+    closemessage
+    release
+    end
+}
 
 script LastlightRoad_EventScript_Girl
 {
@@ -87,4 +121,150 @@ movement LastlightRoad_Movement_ScytherRunsAround
     jump_in_place_up * 2
     face_up
     step_end
+}
+
+script LastlightRoad_EventScript_Trainer_Lastlight_Harley
+{
+    trainerbattle_single(TRAINER_LASTLIGHT_HARLEY, LastlightRoad_Text_Trainer_Lastlight_HarleyIntro, LastlightRoad_Text_Trainer_Lastlight_HarleyDefeat)
+    speakername("Harley")
+    msgbox(format("At least the torches are still lighting the path."))
+    closemessage
+    release
+    end
+}
+text LastlightRoad_Text_Trainer_Lastlight_HarleyIntro
+{
+    format("This weather is terrifying! It's almost too bad to bike through!")
+}
+text LastlightRoad_Text_Trainer_Lastlight_HarleyDefeat
+{
+    format("I'd better get back inside.")
+}
+
+script LastlightRoad_EventScript_Trainer_Lastlight_Billie
+{
+    trainerbattle_single(TRAINER_LASTLIGHT_BILLIE, LastlightRoad_Text_Trainer_Lastlight_BillieIntro, LastlightRoad_Text_Trainer_Lastlight_BillieDefeat)
+    speakername("Billie")
+    msgbox(format("I'm glad Scyther and I are close now! It shouldn't be blocking the path any longer."))
+    closemessage
+    release
+    end
+}
+text LastlightRoad_Text_Trainer_Lastlight_BillieIntro
+{
+    format("I finally got a handle on my Scyther! We're ready for battle!")
+}
+text LastlightRoad_Text_Trainer_Lastlight_BillieDefeat
+{
+    format("It's okay, Scyther...")
+}
+
+script LastlightRoad_EventScript_Trainer_Lastlight_Zoey
+{
+    trainerbattle_single(TRAINER_LASTLIGHT_ZOEY, LastlightRoad_Text_Trainer_Lastlight_ZoeyIntro, LastlightRoad_Text_Trainer_Lastlight_ZoeyDefeat)
+    speakername("Zoey")
+    msgbox(format("Some Team Chimera thugs have passed through recently. They looked like demons in their masks!"))
+    closemessage
+    release
+    end
+}
+text LastlightRoad_Text_Trainer_Lastlight_ZoeyIntro
+{
+    format("I'll show you how it's done-done-done!")
+}
+text LastlightRoad_Text_Trainer_Lastlight_ZoeyDefeat
+{
+    format("Aw, we went down-down-down!")
+}
+
+script LastlightRoad_EventScript_Trainer_Lastlight_Phallon
+{
+    trainerbattle_single(TRAINER_LASTLIGHT_PHALLON, LastlightRoad_Text_Trainer_Lastlight_PhallonIntro, LastlightRoad_Text_Trainer_Lastlight_PhallonDefeat)
+    speakername("Phallon")
+    msgbox(format("Research is key to understanding the world around us. You're a University student, right? You should understand that better than anyone!"))
+    closemessage
+    release
+    end
+}
+text LastlightRoad_Text_Trainer_Lastlight_PhallonIntro
+{
+    format("My project is almost complete!")
+}
+text LastlightRoad_Text_Trainer_Lastlight_PhallonDefeat
+{
+    format("Oh no, my Pokémon!")
+}
+
+script LastlightRoad_EventScript_Trainer_Lastlight_Nikitas
+{
+    trainerbattle_single(TRAINER_LASTLIGHT_NIKITAS, LastlightRoad_Text_Trainer_Lastlight_NikitasIntro, LastlightRoad_Text_Trainer_Lastlight_NikitasDefeat)
+    speakername("Nikitas")
+    msgbox(format("In my youth, I tackled the Gym challenge. I came back home around Gym 3 - I was homesick!"))
+    closemessage
+    release
+    end
+}
+text LastlightRoad_Text_Trainer_Lastlight_NikitasIntro
+{
+    format("I was born and raised right in Kipos Town, just like my Pokémon.")
+}
+text LastlightRoad_Text_Trainer_Lastlight_NikitasDefeat
+{
+    format("Ohoho, we need more training!")
+}
+
+script LastlightRoad_EventScript_Trainer_Lastlight_Loukas
+{
+    trainerbattle_single(TRAINER_LASTLIGHT_LOUKAS, LastlightRoad_Text_Trainer_Lastlight_LoukasIntro, LastlightRoad_Text_Trainer_Lastlight_LoukasDefeat)
+    speakername("Loukas")
+    msgbox(format("The Tower of Dioxippus is such a mouthful. Who names these places, anyway?"))
+    closemessage
+    release
+    end
+}
+text LastlightRoad_Text_Trainer_Lastlight_LoukasIntro
+{
+    format("I'm almost to the Tower of Dio... Dee-oh... Uhh...")
+}
+text LastlightRoad_Text_Trainer_Lastlight_LoukasDefeat
+{
+    format("I got it! It's the Tower of Dee-oh-hip-us!")
+}
+
+script LastlightRoad_EventScript_UniversityStudentRouteCheck
+{
+    lock
+    faceplayer
+    speakername("Uni. Student")
+
+    if(flag(FLAG_CAUGHT_ALL_MONS_LASTLIGHT_ROAD))
+    {
+        msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Chaire (Hyeh-rei)! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land Pokémon{COLOR DARK_GRAY} found in Lastlight Road. If you've caught all the Pokémon here, please let me know."))
+        closemessage
+        special(CheckRouteCaptureProgress)
+        if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
+        {
+            delay(20)
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Uni. Student")
+            msgbox(format("Incredible! You've caught all the Pokémon that I requested in the area!\p Here's a reward from the University. Keep up your hard work!"))
+            closemessage
+            delay(5)
+
+            // give reward!
+            giveitem(ITEM_TIMER_BALL, 20)
+            closemessage
+            delay(5)
+
+            setflag(FLAG_CAUGHT_ALL_MONS_LASTLIGHT_ROAD)
+        }
+    }
+
+    release
+    end
 }

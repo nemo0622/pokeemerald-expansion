@@ -1,0 +1,227 @@
+mapscripts SatyrsLair_Deep_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflashlevel(1)
+    }
+
+    MAP_SCRIPT_ON_RESUME {
+        if(flag(FLAG_SYS_CTRL_OBJ_DELETE))
+        {
+            removeobject(1) // removes kyogre
+        }
+    }
+}
+
+script SatyrsLair_Deep_EventScript_GroudonEvent
+{
+    lockall
+    ballfollowingmon
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_QUESTION)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    speakername("Chimera Admin")
+    msgbox(format("Where are you, Groudon?! Come on out, you dumb lizard!\p Alright, it's time to use our full strength. {COLOR RED}Gouging Fire{COLOR DARK_GRAY}! We'll force Groudon out with a Lava Plume!"))
+    closemessage
+    emote(11, EMOTE_EXCLAM)
+    applymovement(11, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("{PLAYER}? Kalliope warned me that you'd try to stop us, but I didn't imagine you'd find me here, you persistent child. I've been tasked with either capturing or defeating {COLOR GREEN}Groudon{COLOR DARK_GRAY} for dominance over the land, but it's hiding deeper underground - trembling in fear, I'm sure!\p I'll crush you with {COLOR RED}Gouging Fire{COLOR DARK_GRAY}, then drag Groudon out by its stupid tail!"))
+    closemessage
+    applymovement(11, SatyrsLair_Deep_Movement_AdminMoveToBattlePosition)
+    applymovement(12, SatyrsLair_Deep_Movement_GougingFireMoveToBattlePosition)
+    applymovement(OBJ_EVENT_ID_PLAYER, SatyrsLair_Deep_Movement_PlayerMoveToBattlePosition)
+    waitmovement(0)
+    speakername("Gouging Fire")
+    playmoncry(SPECIES_GOUGING_FIRE, CRY_MODE_NORMAL)
+    msgbox(format("Bryaaahh!!!"))
+    waitmoncry
+    closemessage
+    delay(10)
+    speakername("Chimera Admin")
+    msgbox(format("Fwahaha! That roar can make your bones shake! {PLAYER}, this is where you fall!"))
+    closemessage
+
+    // START BATTLE
+    if(!flag(FLAG_HARD_MODE))
+    {
+        trainerbattle_no_intro(TRAINER_SATYRSLAIR_CHIMERA_ADMIN, SatyrsLair_Deep_Text_ChimeraAdminDefeated)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_SATYRSLAIR_CHIMERA_ADMIN_HARD, SatyrsLair_Deep_Text_ChimeraAdminDefeated)
+    }
+
+    delay(30)
+    applymovement(11, Common_Movement_JumpInPlaceRight)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("...No no no NO NO! I thought {COLOR RED}Gouging Fire{COLOR DARK_GRAY} was UNBEATABLE!\p Wait... {COLOR RED}Gouging Fire{COLOR DARK_GRAY}... You're still standing, we can still win! Just one good Lava Plume can {COLOR RED}bring this whole cave down{COLOR DARK_GRAY}!"))
+    closemessage
+
+    // Groudon appears!
+    fadescreenspeed(FADE_TO_WHITE, 2)
+    delay(15)
+    applymovement(11, Common_Movement_FaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    // stop extreme weather
+    setflag(FLAG_HIDE_WEATHER_SOFOS_CITY)
+    resetweather
+    doweather
+    clearflag(FLAG_HIDE_GROUDON_SATYRS_LAIR)
+    addobject(1)
+    delay(15)
+    fadescreen(FADE_FROM_WHITE)
+    delay(10)
+
+    delay(30)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    emote(11, EMOTE_EXCLAM)
+    delay(10)
+    speakername("Chimera Admin")
+    msgbox(format("{COLOR GREEN}Groudon{COLOR DARK_GRAY}! It's REAL?! There's no way {COLOR RED}Gouging Fire{COLOR DARK_GRAY} has the energy to fight a full-powered Legendary Pokémon..."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(11, Common_Movement_JumpInPlaceRight)
+    waitmovement(0)
+    speakername("Chimera Admin")
+    msgbox(format("You just got lucky today, {PLAYER}! Very, VERY lucky! Once we reunite with {COLOR RED}Kalliope and Raging Bolt{COLOR DARK_GRAY}, we'll be unstoppable!"))
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    delay(15)
+    setflag(FLAG_HIDE_CHIMERA_AFTER_GROUDON)
+    removeobject(11)
+    removeobject(12)
+    delay(15)
+    fadescreen(FADE_FROM_BLACK)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, SatyrsLair_Deep_Movement_PlayerApproachGroudon)
+    waitmovement(0)
+    delay(20)
+    msgbox(format("Groudon bows its head, acknowledging your strength and willpower."))
+    closemessage
+    delay(30)
+
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM)
+    msgbox(format("Groudon flares with a primal energy! Your team has been miraculously healed."))
+    closemessage
+    special(HealPlayerParty)
+    delay(5)
+    speakername("Groudon")
+    playmoncry(SPECIES_GROUDON, CRY_MODE_ENCOUNTER)
+    msgbox(format("Graaayyhhh!!"))
+    waitmoncry
+    closemessage
+
+    // GROUDON BATTLE
+    seteventmon(SPECIES_GROUDON, 45, ITEM_RED_ORB)
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE) // gonna remove groudon
+    setflag(FLAG_HIDE_GROUDON_SATYRS_LAIR)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    switch(var(VAR_RESULT))
+    {
+        case B_OUTCOME_CAUGHT:
+            msgbox(format("Groudon has deemed you worthy and joined your team! It will help in the battle against Team Chimera."))
+            closemessage
+            setflag(FLAG_CAUGHT_GROUDON)
+        default:
+            msgbox(format("Groudon returned to the depths of Satyr's Lair, impressed with your power.\p Groudon can be encountered again in Satyr's Lair until it is successfully caught."))
+            closemessage
+    }
+    delay(20)
+    completequest(QUEST_LEGEND_OF_GROUDON)
+    closemessage
+    call(SatyrsLair_Deep_EventScript_CheckEncounteredBothWeatherMons)
+    release
+    end
+}
+
+movement SatyrsLair_Deep_Movement_PlayerMoveToBattlePosition
+{
+    walk_up * 3
+    walk_right
+    face_left
+    step_end
+}
+
+movement SatyrsLair_Deep_Movement_AdminMoveToBattlePosition
+{
+    walk_left * 2
+    walk_up
+    face_right
+    step_end
+}
+
+movement SatyrsLair_Deep_Movement_GougingFireMoveToBattlePosition
+{
+    walk_left
+    face_right
+    step_end
+}
+
+text SatyrsLair_Deep_Text_ChimeraAdminDefeated
+{
+    format("NO WAY!!")
+}
+
+movement SatyrsLair_Deep_Movement_PlayerApproachGroudon
+{
+    walk_left
+    walk_up
+    face_up
+    step_end
+}
+
+script SatyrsLair_Deep_EventScript_InteractWithLava
+{
+    lock
+    if(flag(FLAG_CAUGHT_GROUDON))
+    {
+        msgbox(format("It's the deepest lava pool in Satyr's Lair. People told stories about the dangers down here, so nobody has been here in centuries."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("It's the deepest part of Satyr's Lair, home of {COLOR GREEN}Groudon{COLOR DARK_GRAY}, Lord of the Land.\p A primal energy is radiating from below. Do you accept the challenge from {COLOR GREEN}Groudon{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == FALSE)
+        {
+            release
+            end
+        }
+        else
+        {
+            seteventmon(SPECIES_GROUDON, 45, ITEM_RED_ORB)
+            special(BattleSetup_StartLegendaryBattle)
+            waitstate
+            specialvar(VAR_RESULT, GetBattleOutcome)
+            switch(var(VAR_RESULT))
+            {
+                case B_OUTCOME_CAUGHT:
+                    msgbox(format("Groudon has deemed you worthy of being its Trainer. The lava has settled."))
+                    closemessage
+                    setflag(FLAG_CAUGHT_GROUDON)
+                default:
+                    msgbox(format("Groudon returned to the depths of Satyr's Lair, impressed with your power.\p Groudon can be encountered again in Satyr's Lair until it is successfully caught."))
+                    closemessage
+            }
+        }
+    }
+    release
+    end
+}
+
+script SatyrsLair_Deep_EventScript_CheckEncounteredBothWeatherMons
+{
+    if(flag(FLAG_HIDE_CHIMERA_AFTER_KYOGRE) && flag(FLAG_HIDE_CHIMERA_AFTER_GROUDON)) // caught both!
+    {
+        msgbox(format("Kyogre and Groudon have both been safely kept from Team Chimera! All that remains is {COLOR GREEN}Rayquaza{COLOR DARK_GRAY}, chased down by {COLOR RED}Kalliope{COLOR DARK_GRAY}, at the {COLOR GREEN}Tower of Dioxippus{COLOR DARK_GRAY}."))
+        closemessage
+        setflag(FLAG_CAUGHT_BOTH_WEATHER_LEGENDS)
+    }
+}

@@ -24,7 +24,7 @@
 #define OUTFIT_ZOOKEEPER 7 // outfits unlocked at Sunset Wildlife Conservation Center
 #define OUTFIT_PETAL 8 // Purple outfits with green (m)/gold (f) accessories
 #define OUTFIT_PALATI 9 // blue-white outfits with red accents. Minoan inspired outfits
-#define OUTFIT_ANCIENT 10 // blue-white outfits with red accents. Minoan inspired outfits
+#define OUTFIT_ANCIENT 10 // spartan armor basically
 #define OUTFIT_JOHTO_FASHION 11 // Ethan (male) and Lyra (female)
 #define OUTFIT_KALOS_FASHION 12 // Calem (male) and Serena (female)
 #define OUTFIT_ALOLA_FASHION 13 // Elio (male) and Selene (female)

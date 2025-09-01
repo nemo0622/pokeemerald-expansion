@@ -1,1 +1,241 @@
-mapscripts TheRattway_MapScripts {}
+mapscripts TheRattway_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(15, ENCOUNTER_LAND)
+        setobjectaswildencounter(16, ENCOUNTER_LAND)
+        setobjectaswildencounter(17, ENCOUNTER_LAND)
+        setobjectaswildencounter(18, ENCOUNTER_LAND)
+        setobjectaswildencounter(19, ENCOUNTER_LAND)
+        setobjectaswildencounter(20, ENCOUNTER_LAND)
+        setobjectaswildencounter(21, ENCOUNTER_LAND)
+    }
+}
+
+script CorrinCrossing_EventScript_UniversityStudentRouteCheck
+{
+    lock
+    faceplayer
+    speakername("Uni. Student")
+
+    if(flag(FLAG_CAUGHT_ALL_MONS_CORRIN_CROSSING))
+    {
+        msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Chaire! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land Pokémon{COLOR DARK_GRAY} found in Corrin Crossing. If you've caught all the Pokémon here, please let me know."))
+        closemessage
+        special(CheckRouteCaptureProgress)
+        if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
+        {
+            delay(20)
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Uni. Student")
+            msgbox(format("Incredible! You've caught all the Pokémon that I requested in the area!\p Here's a reward from the University. Keep up your hard work!"))
+            closemessage
+            delay(5)
+
+            // give reward!
+            giveitem(ITEM_TM54)
+            closemessage
+
+            setflag(FLAG_CAUGHT_ALL_MONS_CORRIN_CROSSING)
+        }
+    }
+
+    release
+    end
+}
+
+script CorrinCrossing_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    speakername("Gentleman")
+    msgbox(format("Ohoho, it's nice to be back here!\p I was caught up in Sofos City when this path was closed down due to Team Chimera activity. I missed the soft waves and cherry trees."))
+    closemessage
+    release
+    end
+}
+
+script CorrinCrossing_EventScript_Trainer_CorrinCrossing_Wyatt
+{
+    trainerbattle_single(TRAINER_CORRINCROSSING_WYATT, CorrinCrossing_Text_Trainer_CorrinCrossing_WyattIntro, CorrinCrossing_Text_Trainer_CorrinCrossing_WyattDefeat)
+    speakername("Wyatt")
+    msgbox(format("I'm still on edge because of Team Chimera. I know they're mostly back in their Areios Hideout now, but I'm still jumpy."))
+    closemessage
+    release
+    end
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_WyattIntro
+{
+    format("Hold it right there!")
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_WyattDefeat
+{
+    format("Oops, sorry 'bout that.")
+}
+
+script CorrinCrossing_EventScript_Trainer_CorrinCrossing_Junior
+{
+    trainerbattle_single(TRAINER_CORRINCROSSING_JUNIOR, CorrinCrossing_Text_Trainer_CorrinCrossing_JuniorIntro, CorrinCrossing_Text_Trainer_CorrinCrossing_JuniorDefeat)
+    speakername("Junior")
+    msgbox(format("I'm looking for more Bug-type Pokémon. I'm trying to be the best Trainer in Ilios using only Bug-types!"))
+    closemessage
+    release
+    end
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_JuniorIntro
+{
+    format("A bug!")
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_JuniorDefeat
+{
+    format("Aw, that battle really got away from me!")
+}
+
+script CorrinCrossing_EventScript_CyclingTriathleteF
+{
+    lock
+    faceplayer
+    speakername("Cyclist")
+    msgbox(format("The cherry trees in this area were planted centuries ago by foreign visitors. Now they're a key part of Port Pello's culture!"))
+    closemessage
+    release
+    end
+}
+
+script CorrinCrossing_EventScript_Trainer_CorrinCrossing_Vasia
+{
+    trainerbattle_single(TRAINER_CORRINCROSSING_VASIA, CorrinCrossing_Text_Trainer_CorrinCrossing_VasiaIntro, CorrinCrossing_Text_Trainer_CorrinCrossing_VasiaDefeat)
+    speakername("Vasia")
+    msgbox(format("I'm training my Pokémon, just in case Team Chimera shows up again."))
+    closemessage
+    release
+    end
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_VasiaIntro
+{
+    format("Yay! We can get south to Port Pello again!")
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_VasiaDefeat
+{
+    format("I need their Pokémon Center!")
+}
+
+script CorrinCrossing_EventScript_Trainer_CorrinCrossing_Alfred
+{
+    trainerbattle_single(TRAINER_CORRINCROSSING_ALFRED, CorrinCrossing_Text_Trainer_CorrinCrossing_AlfredIntro, CorrinCrossing_Text_Trainer_CorrinCrossing_AlfredDefeat)
+    speakername("Alfred")
+    msgbox(format("Corrin Crossing used to be a major road, but as more people started to travel on ships, it's fallen into obscurity."))
+    closemessage
+    release
+    end
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_AlfredIntro
+{
+    format("My Pokémon are tough as nails!")
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_AlfredDefeat
+{
+    format("I guess your Pokémon are even tougher.")
+}
+
+script CorrinCrossing_EventScript_SuperRodFishingGuru
+{
+    lock
+    faceplayer
+    speakername("Fishing Guru")
+    if(!flag(FLAG_RECEIVED_SUPER_ROD))
+    {
+        msgbox(format("I was the first on this route when it reopened! I see you have a fisher's heart, like me.\p I'm so excited, I think I'll give you this!"))
+        closemessage
+        giveitem(ITEM_SUPER_ROD)
+        setflag(FLAG_RECEIVED_SUPER_ROD)
+        speakername("Fishing Guru")
+        msgbox(format("The {COLOR GREEN}Super Rod{COLOR DARK_GRAY} can give you access to a wide array of Water-dwelling Pokémon. You're fighting Team Chimera, yes? Maybe those Pokémon can help you!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("The {COLOR GREEN}Super Rod{COLOR DARK_GRAY} can give you access to a wide array of Water-dwelling Pokémon. You're fighting Team Chimera, yes? Maybe those Pokémon can help you!"))
+        closemessage
+    }
+    release
+    end
+}
+
+script CorrinCrossing_EventScript_Trainer_CorrinCrossing_Darcey
+{
+    trainerbattle_single(TRAINER_CORRINCROSSING_DARCEY, CorrinCrossing_Text_Trainer_CorrinCrossing_DarceyIntro, CorrinCrossing_Text_Trainer_CorrinCrossing_DarceyDefeat)
+    speakername("Darcey")
+    msgbox(format("I heard these sinkholes opened up because of Team Chimera's weather anomaly recently. They're scary!"))
+    closemessage
+    release
+    end
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_DarceyIntro
+{
+    format("Check out these sinkholes! I can jump across them!")
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_DarceyDefeat
+{
+    format("I can still jump further than you!")
+}
+
+script CorrinCrossing_EventScript_Trainer_CorrinCrossing_Maxim
+{
+    trainerbattle_single(TRAINER_CORRINCROSSING_MAXIM, CorrinCrossing_Text_Trainer_CorrinCrossing_MaximIntro, CorrinCrossing_Text_Trainer_CorrinCrossing_MaximDefeat)
+    speakername("Maxim")
+    msgbox(format("I try to collect every Item I see. I suppose there's no harm in sharing, though."))
+    closemessage
+    release
+    end
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_MaximIntro
+{
+    format("All the Items have to be mine!")
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_MaximDefeat
+{
+    format("No, my Items!")
+}
+
+script CorrinCrossing_EventScript_Trainer_CorrinCrossing_Oskar
+{
+    trainerbattle_single(TRAINER_CORRINCROSSING_OSKAR, CorrinCrossing_Text_Trainer_CorrinCrossing_OskarIntro, CorrinCrossing_Text_Trainer_CorrinCrossing_OskarDefeat)
+    speakername("Oskar")
+    msgbox(format("Music is my passion! I only raise music-loving Pokémon."))
+    closemessage
+    release
+    end
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_OskarIntro
+{
+    format("Get ready to rock!")
+}
+text CorrinCrossing_Text_Trainer_CorrinCrossing_OskarDefeat
+{
+    format("Wo-oah, you rocked me!")
+}
+
+script CorrinCrossing_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Corrin Crossing\n Connecting All of Ilios\p {UP_ARROW} Asfal Hills\n {DOWN_ARROW} Port Pello"))
+    closemessage
+    release
+    end
+}

@@ -5,56 +5,77 @@ KaptaraIsland_East_MapScripts::
 
 KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 3 "data/maps/KaptaraIsland_East/scripts.pory"
-	goto_if_set FLAG_CHIMERA_WEATHER_ACTIVE, KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_set FLAG_CHIMERA_WEATHER_ACTIVE, KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 # 9 "data/maps/KaptaraIsland_East/scripts.pory"
 	random 2
 # 10 "data/maps/KaptaraIsland_East/scripts.pory"
 	switch VAR_RESULT
 # 11 "data/maps/KaptaraIsland_East/scripts.pory"
-	case 0, KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
+	case 0, KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_6
 # 12 "data/maps/KaptaraIsland_East/scripts.pory"
-	case 1, KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_6
+	case 1, KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_7
+KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+# 16 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1
+# 17 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2
+# 18 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3
+# 19 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4
+# 20 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5
+# 21 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6
+# 22 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7
+# 23 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8
+# 24 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9
+# 25 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10
+# 26 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11
+# 27 "data/maps/KaptaraIsland_East/scripts.pory"
+	clearflag FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12
+# 28 "data/maps/KaptaraIsland_East/scripts.pory"
+	setobjectaswildencounter 21, ENCOUNTER_LAND
+# 29 "data/maps/KaptaraIsland_East/scripts.pory"
+	setobjectaswildencounter 22, ENCOUNTER_LAND
+# 30 "data/maps/KaptaraIsland_East/scripts.pory"
+	setobjectaswildencounter 23, ENCOUNTER_LAND
+# 31 "data/maps/KaptaraIsland_East/scripts.pory"
+	setobjectaswildencounter 24, ENCOUNTER_LAND
+# 32 "data/maps/KaptaraIsland_East/scripts.pory"
+	setobjectaswildencounter 25, ENCOUNTER_LAND
+# 33 "data/maps/KaptaraIsland_East/scripts.pory"
+	setobjectaswildencounter 26, ENCOUNTER_LAND
+# 34 "data/maps/KaptaraIsland_East/scripts.pory"
+	setobjectaswildencounter 27, ENCOUNTER_LAND
 	return
 
-KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 5 "data/maps/KaptaraIsland_East/scripts.pory"
 	setweather WEATHER_ABNORMAL
-	return
-
-KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
-# 11 "data/maps/KaptaraIsland_East/scripts.pory"
-	setweather WEATHER_RAIN
-	return
+	goto KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_6:
+# 11 "data/maps/KaptaraIsland_East/scripts.pory"
+	setweather WEATHER_RAIN
+	goto KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+
+KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_7:
 # 12 "data/maps/KaptaraIsland_East/scripts.pory"
 	setweather WEATHER_SUNNY
-	return
+	goto KaptaraIsland_East_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 
-KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui::
-# 21 "data/maps/KaptaraIsland_East/scripts.pory"
-	trainerbattle_single TRAINER_KAPTARAISLAND_YESUI, KaptaraIsland_Text_Trainer_KaptaraIsland_YesuiIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_YesuiDefeat
-# 22 "data/maps/KaptaraIsland_East/scripts.pory"
-	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui_Text_0
-# 23 "data/maps/KaptaraIsland_East/scripts.pory"
-	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui_Text_1
-# 24 "data/maps/KaptaraIsland_East/scripts.pory"
-	closemessage
-# 25 "data/maps/KaptaraIsland_East/scripts.pory"
-	release
-	end
-
-
-KaptaraIsland_EventScript_RuinManiac::
-# 39 "data/maps/KaptaraIsland_East/scripts.pory"
-	lock
-# 40 "data/maps/KaptaraIsland_East/scripts.pory"
-	faceplayer
+KaptaraIsland_East_EventScript_DirectionSign::
 # 41 "data/maps/KaptaraIsland_East/scripts.pory"
-	speakername KaptaraIsland_EventScript_RuinManiac_Text_0
+	lock
 # 42 "data/maps/KaptaraIsland_East/scripts.pory"
-	msgbox KaptaraIsland_EventScript_RuinManiac_Text_1
+	msgbox KaptaraIsland_East_EventScript_DirectionSign_Text_0
 # 43 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
 # 44 "data/maps/KaptaraIsland_East/scripts.pory"
@@ -62,13 +83,13 @@ KaptaraIsland_EventScript_RuinManiac::
 	end
 
 
-KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa::
+KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui::
 # 50 "data/maps/KaptaraIsland_East/scripts.pory"
-	trainerbattle_single TRAINER_KAPTARAISLAND_ISSA, KaptaraIsland_Text_Trainer_KaptaraIsland_IssaIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_IssaDefeat
+	trainerbattle_single TRAINER_KAPTARAISLAND_YESUI, KaptaraIsland_Text_Trainer_KaptaraIsland_YesuiIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_YesuiDefeat
 # 51 "data/maps/KaptaraIsland_East/scripts.pory"
-	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa_Text_0
+	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui_Text_0
 # 52 "data/maps/KaptaraIsland_East/scripts.pory"
-	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa_Text_1
+	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui_Text_1
 # 53 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
 # 54 "data/maps/KaptaraIsland_East/scripts.pory"
@@ -76,85 +97,85 @@ KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa::
 	end
 
 
-KaptaraIsland_EventScript_Trainer_KaptaraIsland_Grigor::
+KaptaraIsland_EventScript_RuinManiac::
 # 68 "data/maps/KaptaraIsland_East/scripts.pory"
-	trainerbattle_single TRAINER_KAPTARAISLAND_GRIGOR, KaptaraIsland_Text_Trainer_KaptaraIsland_GrigorIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_GrigorDefeat
+	lock
 # 69 "data/maps/KaptaraIsland_East/scripts.pory"
-	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Grigor_Text_0
+	faceplayer
 # 70 "data/maps/KaptaraIsland_East/scripts.pory"
-	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Grigor_Text_1
+	speakername KaptaraIsland_EventScript_RuinManiac_Text_0
 # 71 "data/maps/KaptaraIsland_East/scripts.pory"
-	closemessage
+	msgbox KaptaraIsland_EventScript_RuinManiac_Text_1
 # 72 "data/maps/KaptaraIsland_East/scripts.pory"
+	closemessage
+# 73 "data/maps/KaptaraIsland_East/scripts.pory"
+	release
+	end
+
+
+KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa::
+# 79 "data/maps/KaptaraIsland_East/scripts.pory"
+	trainerbattle_single TRAINER_KAPTARAISLAND_ISSA, KaptaraIsland_Text_Trainer_KaptaraIsland_IssaIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_IssaDefeat
+# 80 "data/maps/KaptaraIsland_East/scripts.pory"
+	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa_Text_0
+# 81 "data/maps/KaptaraIsland_East/scripts.pory"
+	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa_Text_1
+# 82 "data/maps/KaptaraIsland_East/scripts.pory"
+	closemessage
+# 83 "data/maps/KaptaraIsland_East/scripts.pory"
+	release
+	end
+
+
+KaptaraIsland_EventScript_Trainer_KaptaraIsland_Grigor::
+# 97 "data/maps/KaptaraIsland_East/scripts.pory"
+	trainerbattle_single TRAINER_KAPTARAISLAND_GRIGOR, KaptaraIsland_Text_Trainer_KaptaraIsland_GrigorIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_GrigorDefeat
+# 98 "data/maps/KaptaraIsland_East/scripts.pory"
+	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Grigor_Text_0
+# 99 "data/maps/KaptaraIsland_East/scripts.pory"
+	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Grigor_Text_1
+# 100 "data/maps/KaptaraIsland_East/scripts.pory"
+	closemessage
+# 101 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Manto::
-# 86 "data/maps/KaptaraIsland_East/scripts.pory"
+# 115 "data/maps/KaptaraIsland_East/scripts.pory"
 	trainerbattle_single TRAINER_KAPTARAISLAND_MANTO, KaptaraIsland_Text_Trainer_KaptaraIsland_MantoIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_MantoDefeat
-# 87 "data/maps/KaptaraIsland_East/scripts.pory"
+# 116 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Manto_Text_0
-# 88 "data/maps/KaptaraIsland_East/scripts.pory"
+# 117 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Manto_Text_1
-# 89 "data/maps/KaptaraIsland_East/scripts.pory"
+# 118 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 90 "data/maps/KaptaraIsland_East/scripts.pory"
+# 119 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Stan::
-# 104 "data/maps/KaptaraIsland_East/scripts.pory"
+# 133 "data/maps/KaptaraIsland_East/scripts.pory"
 	trainerbattle_single TRAINER_KAPTARAISLAND_STAN, KaptaraIsland_Text_Trainer_KaptaraIsland_StanIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_StanDefeat
-# 105 "data/maps/KaptaraIsland_East/scripts.pory"
+# 134 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Stan_Text_0
-# 106 "data/maps/KaptaraIsland_East/scripts.pory"
+# 135 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Stan_Text_1
-# 107 "data/maps/KaptaraIsland_East/scripts.pory"
+# 136 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 108 "data/maps/KaptaraIsland_East/scripts.pory"
+# 137 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Horatio::
-# 122 "data/maps/KaptaraIsland_East/scripts.pory"
-	trainerbattle_single TRAINER_KAPTARAISLAND_HORATIO, KaptaraIsland_Text_Trainer_KaptaraIsland_HoratioIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_HoratioDefeat
-# 123 "data/maps/KaptaraIsland_East/scripts.pory"
-	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Horatio_Text_0
-# 124 "data/maps/KaptaraIsland_East/scripts.pory"
-	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Horatio_Text_1
-# 125 "data/maps/KaptaraIsland_East/scripts.pory"
-	closemessage
-# 126 "data/maps/KaptaraIsland_East/scripts.pory"
-	release
-	end
-
-
-KaptaraIsland_EventScript_BugCatcher::
-# 140 "data/maps/KaptaraIsland_East/scripts.pory"
-	lock
-# 141 "data/maps/KaptaraIsland_East/scripts.pory"
-	faceplayer
-# 142 "data/maps/KaptaraIsland_East/scripts.pory"
-	speakername KaptaraIsland_EventScript_BugCatcher_Text_0
-# 143 "data/maps/KaptaraIsland_East/scripts.pory"
-	msgbox KaptaraIsland_EventScript_BugCatcher_Text_1
-# 144 "data/maps/KaptaraIsland_East/scripts.pory"
-	closemessage
-# 145 "data/maps/KaptaraIsland_East/scripts.pory"
-	release
-	end
-
-
-KaptaraIsland_EventScript_Trainer_KaptaraIsland_Edith::
 # 151 "data/maps/KaptaraIsland_East/scripts.pory"
-	trainerbattle_single TRAINER_KAPTARAISLAND_EDITH, KaptaraIsland_Text_Trainer_KaptaraIsland_EdithIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_EdithDefeat
+	trainerbattle_single TRAINER_KAPTARAISLAND_HORATIO, KaptaraIsland_Text_Trainer_KaptaraIsland_HoratioIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_HoratioDefeat
 # 152 "data/maps/KaptaraIsland_East/scripts.pory"
-	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Edith_Text_0
+	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Horatio_Text_0
 # 153 "data/maps/KaptaraIsland_East/scripts.pory"
-	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Edith_Text_1
+	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Horatio_Text_1
 # 154 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
 # 155 "data/maps/KaptaraIsland_East/scripts.pory"
@@ -162,238 +183,328 @@ KaptaraIsland_EventScript_Trainer_KaptaraIsland_Edith::
 	end
 
 
-KaptaraIsland_EventScript_YoungsterNeedsMoonStone::
+KaptaraIsland_EventScript_BugCatcher::
 # 169 "data/maps/KaptaraIsland_East/scripts.pory"
 	lock
 # 170 "data/maps/KaptaraIsland_East/scripts.pory"
 	faceplayer
 # 171 "data/maps/KaptaraIsland_East/scripts.pory"
-	speakername KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_0
+	speakername KaptaraIsland_EventScript_BugCatcher_Text_0
+# 172 "data/maps/KaptaraIsland_East/scripts.pory"
+	msgbox KaptaraIsland_EventScript_BugCatcher_Text_1
+# 173 "data/maps/KaptaraIsland_East/scripts.pory"
+	closemessage
 # 174 "data/maps/KaptaraIsland_East/scripts.pory"
+	release
+	end
+
+
+KaptaraIsland_EventScript_Trainer_KaptaraIsland_Edith::
+# 180 "data/maps/KaptaraIsland_East/scripts.pory"
+	trainerbattle_single TRAINER_KAPTARAISLAND_EDITH, KaptaraIsland_Text_Trainer_KaptaraIsland_EdithIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_EdithDefeat
+# 181 "data/maps/KaptaraIsland_East/scripts.pory"
+	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Edith_Text_0
+# 182 "data/maps/KaptaraIsland_East/scripts.pory"
+	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Edith_Text_1
+# 183 "data/maps/KaptaraIsland_East/scripts.pory"
+	closemessage
+# 184 "data/maps/KaptaraIsland_East/scripts.pory"
+	release
+	end
+
+
+KaptaraIsland_EventScript_YoungsterNeedsMoonStone::
+# 198 "data/maps/KaptaraIsland_East/scripts.pory"
+	lock
+# 199 "data/maps/KaptaraIsland_East/scripts.pory"
+	faceplayer
+# 200 "data/maps/KaptaraIsland_East/scripts.pory"
+	speakername KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_0
+# 203 "data/maps/KaptaraIsland_East/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_MOON_STONE_YOUNGSTER
-# 175 "data/maps/KaptaraIsland_East/scripts.pory"
+# 204 "data/maps/KaptaraIsland_East/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq KaptaraIsland_EventScript_YoungsterNeedsMoonStone_2
-# 184 "data/maps/KaptaraIsland_East/scripts.pory"
+# 213 "data/maps/KaptaraIsland_East/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_MOON_STONE_YOUNGSTER
-# 185 "data/maps/KaptaraIsland_East/scripts.pory"
+# 214 "data/maps/KaptaraIsland_East/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq KaptaraIsland_EventScript_YoungsterNeedsMoonStone_5
-# 194 "data/maps/KaptaraIsland_East/scripts.pory"
+# 223 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_3
-# 195 "data/maps/KaptaraIsland_East/scripts.pory"
+# 224 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 197 "data/maps/KaptaraIsland_East/scripts.pory"
+# 226 "data/maps/KaptaraIsland_East/scripts.pory"
 	checkitem ITEM_MOON_STONE
-# 198 "data/maps/KaptaraIsland_East/scripts.pory"
+# 227 "data/maps/KaptaraIsland_East/scripts.pory"
 	delay 30
-# 200 "data/maps/KaptaraIsland_East/scripts.pory"
+# 229 "data/maps/KaptaraIsland_East/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq KaptaraIsland_EventScript_YoungsterNeedsMoonStone_8
-# 219 "data/maps/KaptaraIsland_East/scripts.pory"
+# 248 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_0
-# 220 "data/maps/KaptaraIsland_East/scripts.pory"
+# 249 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_6
-# 221 "data/maps/KaptaraIsland_East/scripts.pory"
+# 250 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_4:
-# 224 "data/maps/KaptaraIsland_East/scripts.pory"
+# 253 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_2:
-# 177 "data/maps/KaptaraIsland_East/scripts.pory"
+# 206 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_1
-# 178 "data/maps/KaptaraIsland_East/scripts.pory"
+# 207 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 179 "data/maps/KaptaraIsland_East/scripts.pory"
+# 208 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_5:
-# 187 "data/maps/KaptaraIsland_East/scripts.pory"
+# 216 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_2
-# 188 "data/maps/KaptaraIsland_East/scripts.pory"
+# 217 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 189 "data/maps/KaptaraIsland_East/scripts.pory"
+# 218 "data/maps/KaptaraIsland_East/scripts.pory"
 	delay 20
-# 190 "data/maps/KaptaraIsland_East/scripts.pory"
+# 219 "data/maps/KaptaraIsland_East/scripts.pory"
 	startquest QUEST_MOON_STONE_YOUNGSTER
 	goto KaptaraIsland_EventScript_YoungsterNeedsMoonStone_4
 
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_8:
-# 202 "data/maps/KaptaraIsland_East/scripts.pory"
+# 231 "data/maps/KaptaraIsland_East/scripts.pory"
 	emote VAR_LAST_TALKED, EMOTE_EXCLAM
-# 203 "data/maps/KaptaraIsland_East/scripts.pory"
+# 232 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_0
-# 204 "data/maps/KaptaraIsland_East/scripts.pory"
+# 233 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_4
-# 205 "data/maps/KaptaraIsland_East/scripts.pory"
+# 234 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 206 "data/maps/KaptaraIsland_East/scripts.pory"
+# 235 "data/maps/KaptaraIsland_East/scripts.pory"
 	delay 30
-# 207 "data/maps/KaptaraIsland_East/scripts.pory"
+# 236 "data/maps/KaptaraIsland_East/scripts.pory"
 	emote VAR_LAST_TALKED, EMOTE_QUESTION
-# 208 "data/maps/KaptaraIsland_East/scripts.pory"
+# 237 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_0
-# 209 "data/maps/KaptaraIsland_East/scripts.pory"
+# 238 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_5
-# 210 "data/maps/KaptaraIsland_East/scripts.pory"
+# 239 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 211 "data/maps/KaptaraIsland_East/scripts.pory"
+# 240 "data/maps/KaptaraIsland_East/scripts.pory"
 	delay 5
-# 212 "data/maps/KaptaraIsland_East/scripts.pory"
+# 241 "data/maps/KaptaraIsland_East/scripts.pory"
 	giveitem ITEM_EXP_CANDY_L
-# 213 "data/maps/KaptaraIsland_East/scripts.pory"
+# 242 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 214 "data/maps/KaptaraIsland_East/scripts.pory"
+# 243 "data/maps/KaptaraIsland_East/scripts.pory"
 	delay 20
-# 215 "data/maps/KaptaraIsland_East/scripts.pory"
+# 244 "data/maps/KaptaraIsland_East/scripts.pory"
 	completequest QUEST_MOON_STONE_YOUNGSTER
 	goto KaptaraIsland_EventScript_YoungsterNeedsMoonStone_4
 
 
 KaptaraIsland_EventScript_BraviaryHisui::
-# 230 "data/maps/KaptaraIsland_East/scripts.pory"
+# 259 "data/maps/KaptaraIsland_East/scripts.pory"
 	lock
-# 231 "data/maps/KaptaraIsland_East/scripts.pory"
+# 260 "data/maps/KaptaraIsland_East/scripts.pory"
 	faceplayer
-# 232 "data/maps/KaptaraIsland_East/scripts.pory"
+# 261 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_BraviaryHisui_Text_0
-# 233 "data/maps/KaptaraIsland_East/scripts.pory"
+# 262 "data/maps/KaptaraIsland_East/scripts.pory"
 	playmoncry SPECIES_BRAVIARY_HISUIAN, CRY_MODE_NORMAL
-# 234 "data/maps/KaptaraIsland_East/scripts.pory"
+# 263 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_BraviaryHisui_Text_1
-# 235 "data/maps/KaptaraIsland_East/scripts.pory"
+# 264 "data/maps/KaptaraIsland_East/scripts.pory"
 	waitmoncry
-# 236 "data/maps/KaptaraIsland_East/scripts.pory"
+# 265 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 237 "data/maps/KaptaraIsland_East/scripts.pory"
+# 266 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_EventScript_BirdKeeperWithFly::
-# 243 "data/maps/KaptaraIsland_East/scripts.pory"
+# 272 "data/maps/KaptaraIsland_East/scripts.pory"
 	lock
-# 244 "data/maps/KaptaraIsland_East/scripts.pory"
+# 273 "data/maps/KaptaraIsland_East/scripts.pory"
 	faceplayer
-# 245 "data/maps/KaptaraIsland_East/scripts.pory"
+# 274 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_BirdKeeperWithFly_Text_0
-# 247 "data/maps/KaptaraIsland_East/scripts.pory"
+# 276 "data/maps/KaptaraIsland_East/scripts.pory"
 	goto_if_set FLAG_RECEIVED_HM_FLY, KaptaraIsland_EventScript_BirdKeeperWithFly_2
-# 256 "data/maps/KaptaraIsland_East/scripts.pory"
+# 285 "data/maps/KaptaraIsland_East/scripts.pory"
 	emote VAR_LAST_TALKED, EMOTE_EXCLAM
-# 257 "data/maps/KaptaraIsland_East/scripts.pory"
+# 286 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_BirdKeeperWithFly_Text_2, MSGBOX_YESNO
-# 258 "data/maps/KaptaraIsland_East/scripts.pory"
+# 287 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 259 "data/maps/KaptaraIsland_East/scripts.pory"
+# 288 "data/maps/KaptaraIsland_East/scripts.pory"
 	delay 5
-# 260 "data/maps/KaptaraIsland_East/scripts.pory"
+# 289 "data/maps/KaptaraIsland_East/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq KaptaraIsland_EventScript_BirdKeeperWithFly_5
-# 270 "data/maps/KaptaraIsland_East/scripts.pory"
+# 299 "data/maps/KaptaraIsland_East/scripts.pory"
 	trainerbattle_no_intro TRAINER_KAPTARAISLAND_FLYGUY, KaptaraIsland_Text_FlyGuyDefeat
-# 272 "data/maps/KaptaraIsland_East/scripts.pory"
+# 301 "data/maps/KaptaraIsland_East/scripts.pory"
 	delay 5
-# 273 "data/maps/KaptaraIsland_East/scripts.pory"
+# 302 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_BirdKeeperWithFly_Text_0
-# 274 "data/maps/KaptaraIsland_East/scripts.pory"
+# 303 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_BirdKeeperWithFly_Text_4
-# 275 "data/maps/KaptaraIsland_East/scripts.pory"
+# 304 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 276 "data/maps/KaptaraIsland_East/scripts.pory"
+# 305 "data/maps/KaptaraIsland_East/scripts.pory"
 	delay 5
-# 277 "data/maps/KaptaraIsland_East/scripts.pory"
+# 306 "data/maps/KaptaraIsland_East/scripts.pory"
 	giveitem ITEM_HM_FLY
-# 278 "data/maps/KaptaraIsland_East/scripts.pory"
+# 307 "data/maps/KaptaraIsland_East/scripts.pory"
 	setflag FLAG_RECEIVED_HM_FLY
-# 279 "data/maps/KaptaraIsland_East/scripts.pory"
+# 308 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 280 "data/maps/KaptaraIsland_East/scripts.pory"
+# 309 "data/maps/KaptaraIsland_East/scripts.pory"
 	delay 5
-# 281 "data/maps/KaptaraIsland_East/scripts.pory"
+# 310 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_BirdKeeperWithFly_Text_0
-# 282 "data/maps/KaptaraIsland_East/scripts.pory"
+# 311 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_BirdKeeperWithFly_Text_5
-# 283 "data/maps/KaptaraIsland_East/scripts.pory"
+# 312 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 286 "data/maps/KaptaraIsland_East/scripts.pory"
+# 315 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 KaptaraIsland_EventScript_BirdKeeperWithFly_2:
-# 249 "data/maps/KaptaraIsland_East/scripts.pory"
+# 278 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_BirdKeeperWithFly_Text_1
-# 250 "data/maps/KaptaraIsland_East/scripts.pory"
+# 279 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 251 "data/maps/KaptaraIsland_East/scripts.pory"
+# 280 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 KaptaraIsland_EventScript_BirdKeeperWithFly_5:
-# 262 "data/maps/KaptaraIsland_East/scripts.pory"
+# 291 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_BirdKeeperWithFly_Text_0
-# 263 "data/maps/KaptaraIsland_East/scripts.pory"
+# 292 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_BirdKeeperWithFly_Text_3
-# 264 "data/maps/KaptaraIsland_East/scripts.pory"
+# 293 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 265 "data/maps/KaptaraIsland_East/scripts.pory"
+# 294 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Rose::
-# 297 "data/maps/KaptaraIsland_East/scripts.pory"
+# 326 "data/maps/KaptaraIsland_East/scripts.pory"
 	trainerbattle_double TRAINER_KAPTARAISLAND_JON_AND_ROSE, KaptaraIsland_Text_Trainer_KaptaraIsland_RoseIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_RoseDefeat, KaptaraIsland_Text_Trainer_KaptaraIsland_RoseNotEnoughMons
-# 298 "data/maps/KaptaraIsland_East/scripts.pory"
+# 327 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Rose_Text_0
-# 299 "data/maps/KaptaraIsland_East/scripts.pory"
+# 328 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Rose_Text_1
-# 300 "data/maps/KaptaraIsland_East/scripts.pory"
+# 329 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 301 "data/maps/KaptaraIsland_East/scripts.pory"
+# 330 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Jon::
-# 319 "data/maps/KaptaraIsland_East/scripts.pory"
+# 348 "data/maps/KaptaraIsland_East/scripts.pory"
 	trainerbattle_double TRAINER_KAPTARAISLAND_JON_AND_ROSE, KaptaraIsland_Text_Trainer_KaptaraIsland_JonIntro, KaptaraIsland_Text_Trainer_KaptaraIsland_JonDefeat, KaptaraIsland_Text_Trainer_KaptaraIsland_JonNotEnoughMons
-# 320 "data/maps/KaptaraIsland_East/scripts.pory"
+# 349 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_Trainer_KaptaraIsland_Jon_Text_0
-# 321 "data/maps/KaptaraIsland_East/scripts.pory"
+# 350 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_Trainer_KaptaraIsland_Jon_Text_1
-# 322 "data/maps/KaptaraIsland_East/scripts.pory"
+# 351 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 323 "data/maps/KaptaraIsland_East/scripts.pory"
+# 352 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_EventScript_LassWanderingAround::
-# 341 "data/maps/KaptaraIsland_East/scripts.pory"
+# 370 "data/maps/KaptaraIsland_East/scripts.pory"
 	lock
-# 342 "data/maps/KaptaraIsland_East/scripts.pory"
+# 371 "data/maps/KaptaraIsland_East/scripts.pory"
 	faceplayer
-# 343 "data/maps/KaptaraIsland_East/scripts.pory"
+# 372 "data/maps/KaptaraIsland_East/scripts.pory"
 	speakername KaptaraIsland_EventScript_LassWanderingAround_Text_0
-# 344 "data/maps/KaptaraIsland_East/scripts.pory"
+# 373 "data/maps/KaptaraIsland_East/scripts.pory"
 	msgbox KaptaraIsland_EventScript_LassWanderingAround_Text_1
-# 345 "data/maps/KaptaraIsland_East/scripts.pory"
+# 374 "data/maps/KaptaraIsland_East/scripts.pory"
 	closemessage
-# 346 "data/maps/KaptaraIsland_East/scripts.pory"
+# 375 "data/maps/KaptaraIsland_East/scripts.pory"
 	release
 	end
 
 
+KaptaraIsland_East_EventScript_UniversityStudentRouteCheck::
+# 381 "data/maps/KaptaraIsland_East/scripts.pory"
+	lock
+# 382 "data/maps/KaptaraIsland_East/scripts.pory"
+	faceplayer
+# 383 "data/maps/KaptaraIsland_East/scripts.pory"
+	speakername KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_Text_0
+# 385 "data/maps/KaptaraIsland_East/scripts.pory"
+	goto_if_set FLAG_CAUGHT_ALL_MONS_KAPTARA_ISLAND, KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_2
+# 392 "data/maps/KaptaraIsland_East/scripts.pory"
+	msgbox KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_Text_2
+# 393 "data/maps/KaptaraIsland_East/scripts.pory"
+	closemessage
+# 394 "data/maps/KaptaraIsland_East/scripts.pory"
+	special CheckRouteCaptureProgress
+# 395 "data/maps/KaptaraIsland_East/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_5
+KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_1:
+# 413 "data/maps/KaptaraIsland_East/scripts.pory"
+	release
+	end
+
+KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_2:
+# 387 "data/maps/KaptaraIsland_East/scripts.pory"
+	msgbox KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_Text_1
+# 388 "data/maps/KaptaraIsland_East/scripts.pory"
+	closemessage
+	goto KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_1
+
+KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_5:
+# 397 "data/maps/KaptaraIsland_East/scripts.pory"
+	delay 20
+# 398 "data/maps/KaptaraIsland_East/scripts.pory"
+	emote VAR_LAST_TALKED, EMOTE_EXCLAM
+# 399 "data/maps/KaptaraIsland_East/scripts.pory"
+	speakername KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_Text_0
+# 400 "data/maps/KaptaraIsland_East/scripts.pory"
+	msgbox KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_Text_3
+# 401 "data/maps/KaptaraIsland_East/scripts.pory"
+	closemessage
+# 402 "data/maps/KaptaraIsland_East/scripts.pory"
+	delay 5
+# 405 "data/maps/KaptaraIsland_East/scripts.pory"
+	giveitem ITEM_TM_EARTHQUAKE
+# 406 "data/maps/KaptaraIsland_East/scripts.pory"
+	closemessage
+# 407 "data/maps/KaptaraIsland_East/scripts.pory"
+	delay 5
+# 409 "data/maps/KaptaraIsland_East/scripts.pory"
+	setflag FLAG_CAUGHT_ALL_MONS_KAPTARA_ISLAND
+	goto KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_1
+
+
+KaptaraIsland_East_EventScript_DirectionSign_Text_0:
+# 42 "data/maps/KaptaraIsland_East/scripts.pory"
+	.string "Kaptara Island - Octillery Forest\n"
+	.string "A Ruinous, Twisting Woodland\p"
+	.string "{LEFT_ARROW} Palati City$"
+
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui_Text_0:
-# 22 "data/maps/KaptaraIsland_East/scripts.pory"
+# 51 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Yesui$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui_Text_1:
-# 23 "data/maps/KaptaraIsland_East/scripts.pory"
+# 52 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "There used to be wild Litleo and Pyroar\n"
 	.string "all over the Ilios Region, but most were\l"
 	.string "hunted down centuries ago. There are\l"
@@ -401,11 +512,11 @@ KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui_Text_1:
 	.string "wild.$"
 
 KaptaraIsland_EventScript_RuinManiac_Text_0:
-# 41 "data/maps/KaptaraIsland_East/scripts.pory"
+# 70 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Ruin Maniac$"
 
 KaptaraIsland_EventScript_RuinManiac_Text_1:
-# 42 "data/maps/KaptaraIsland_East/scripts.pory"
+# 71 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "There are broken fragments of an\n"
 	.string "ancient civilization's buildings all over\l"
 	.string "this side of the island. It seems like\l"
@@ -414,11 +525,11 @@ KaptaraIsland_EventScript_RuinManiac_Text_1:
 	.string "City. I wonder what happened to them...$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa_Text_0:
-# 51 "data/maps/KaptaraIsland_East/scripts.pory"
+# 80 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Issa$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa_Text_1:
-# 52 "data/maps/KaptaraIsland_East/scripts.pory"
+# 81 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Some people say that the winding trails\n"
 	.string "of this forest look like the tentacles\l"
 	.string "of an Octillery. I guess Octillery was\l"
@@ -426,75 +537,75 @@ KaptaraIsland_EventScript_Trainer_KaptaraIsland_Issa_Text_1:
 	.string "too.$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Grigor_Text_0:
-# 69 "data/maps/KaptaraIsland_East/scripts.pory"
+# 98 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Grigor$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Grigor_Text_1:
-# 70 "data/maps/KaptaraIsland_East/scripts.pory"
+# 99 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Art has been practiced on this island\n"
 	.string "for thousands of years. I am simply\l"
 	.string "continuing this tradition!$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Manto_Text_0:
-# 87 "data/maps/KaptaraIsland_East/scripts.pory"
+# 116 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Manto$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Manto_Text_1:
-# 88 "data/maps/KaptaraIsland_East/scripts.pory"
+# 117 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "It's easy to lose your way in these\n"
 	.string "twisting paths. Make sure to remember\l"
 	.string "your way back to Palati City.$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Stan_Text_0:
-# 105 "data/maps/KaptaraIsland_East/scripts.pory"
+# 134 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Stan$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Stan_Text_1:
-# 106 "data/maps/KaptaraIsland_East/scripts.pory"
+# 135 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "I'm growing my collection of Pokémon. I\n"
 	.string "hear this island holds some secrets...$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Horatio_Text_0:
-# 123 "data/maps/KaptaraIsland_East/scripts.pory"
+# 152 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Horatio$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Horatio_Text_1:
-# 124 "data/maps/KaptaraIsland_East/scripts.pory"
+# 153 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "I took the day off work to come out\n"
 	.string "here and explore. There's value in\l"
 	.string "touching grass.$"
 
 KaptaraIsland_EventScript_BugCatcher_Text_0:
-# 142 "data/maps/KaptaraIsland_East/scripts.pory"
+# 171 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Bug Catcher$"
 
 KaptaraIsland_EventScript_BugCatcher_Text_1:
-# 143 "data/maps/KaptaraIsland_East/scripts.pory"
+# 172 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "The weather is always crazy here! It's\n"
 	.string "either pouring rain or bright and sunny!$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Edith_Text_0:
-# 152 "data/maps/KaptaraIsland_East/scripts.pory"
+# 181 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Edith$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Edith_Text_1:
-# 153 "data/maps/KaptaraIsland_East/scripts.pory"
+# 182 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "They say the person deep in the woods\n"
 	.string "is looking for a challenge. Maybe you\l"
 	.string "could be that challenge!$"
 
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_0:
-# 171 "data/maps/KaptaraIsland_East/scripts.pory"
+# 200 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Youngster$"
 
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_1:
-# 177 "data/maps/KaptaraIsland_East/scripts.pory"
+# 206 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Wigglytuff might not look that strong,\n"
 	.string "but it can pack a serious punch. My\l"
 	.string "friends will be so jealous!$"
 
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_2:
-# 187 "data/maps/KaptaraIsland_East/scripts.pory"
+# 216 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "I'm digging around here for a Moon\n"
 	.string "Stone. My only Pokémon is a Jigglypuff,\l"
 	.string "and all my friends say it looks weak... I\l"
@@ -504,16 +615,16 @@ KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_2:
 	.string "bring me a {COLOR GREEN}Moon Stone{COLOR DARK_GRAY}?$"
 
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_3:
-# 194 "data/maps/KaptaraIsland_East/scripts.pory"
+# 223 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "It's you! Did you find a Moon Stone?$"
 
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_4:
-# 204 "data/maps/KaptaraIsland_East/scripts.pory"
+# 233 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Hey, that's it! Let me give it to\n"
 	.string "Jigglypuff... aaaand...$"
 
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_5:
-# 209 "data/maps/KaptaraIsland_East/scripts.pory"
+# 238 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "What? A Wigglytuff? It's just a\n"
 	.string "Jigglypuff but taller!\p"
 	.string "Well, maybe my friends will stop making\n"
@@ -521,176 +632,202 @@ KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_5:
 	.string "than them. Here, take this!$"
 
 KaptaraIsland_EventScript_YoungsterNeedsMoonStone_Text_6:
-# 220 "data/maps/KaptaraIsland_East/scripts.pory"
+# 249 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Aw, you don't have a Moon Stone. Please,\n"
 	.string "I need to evolve my Jigglypuff!\p"
 	.string "Bring me a {COLOR GREEN}Moon Stone{COLOR DARK_GRAY}, and I'll give you\n"
 	.string "something I found in these ruins!$"
 
 KaptaraIsland_EventScript_BraviaryHisui_Text_0:
-# 232 "data/maps/KaptaraIsland_East/scripts.pory"
+# 261 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Braviary$"
 
 KaptaraIsland_EventScript_BraviaryHisui_Text_1:
-# 234 "data/maps/KaptaraIsland_East/scripts.pory"
+# 263 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Kraww!$"
 
 KaptaraIsland_EventScript_BirdKeeperWithFly_Text_0:
-# 245 "data/maps/KaptaraIsland_East/scripts.pory"
+# 274 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Fly Guy$"
 
 KaptaraIsland_EventScript_BirdKeeperWithFly_Text_1:
-# 249 "data/maps/KaptaraIsland_East/scripts.pory"
+# 278 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Are you enjoying Flying around the\n"
 	.string "region? Of course, you'll need the 7th\l"
 	.string "Gym Badge to use it, but it's one of the\l"
 	.string "most helpful tools I've got!$"
 
 KaptaraIsland_EventScript_BirdKeeperWithFly_Text_2:
-# 257 "data/maps/KaptaraIsland_East/scripts.pory"
+# 286 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Hey, someone found me! I'm the {COLOR GREEN}Fly Guy{COLOR DARK_GRAY}\n"
 	.string "of Ilios - I give people the {COLOR GREEN}Fly HM{COLOR DARK_GRAY}!\p"
 	.string "Oh, but first, you'll have to earn it. Are\n"
 	.string "you ready for a battle?$"
 
 KaptaraIsland_EventScript_BirdKeeperWithFly_Text_3:
-# 263 "data/maps/KaptaraIsland_East/scripts.pory"
+# 292 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Ehehe, need some time first, hm? Come\n"
 	.string "back when you're ready for a fight. I'll\l"
 	.string "give you the {COLOR GREEN}Fly HM{COLOR DARK_GRAY} as a reward!$"
 
 KaptaraIsland_EventScript_BirdKeeperWithFly_Text_4:
-# 274 "data/maps/KaptaraIsland_East/scripts.pory"
+# 303 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Ehehe, you clipped my wings and brought\n"
 	.string "me down! You've earned this.$"
 
 KaptaraIsland_EventScript_BirdKeeperWithFly_Text_5:
-# 282 "data/maps/KaptaraIsland_East/scripts.pory"
+# 311 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "After you've earned the {COLOR GREEN}Palati City Gym\n"
 	.string "Badge{COLOR DARK_GRAY}, you can use Fly to travel around\l"
 	.string "the Ilios Region. Neat, huh?$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Rose_Text_0:
-# 298 "data/maps/KaptaraIsland_East/scripts.pory"
+# 327 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Rose$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Rose_Text_1:
-# 299 "data/maps/KaptaraIsland_East/scripts.pory"
+# 328 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "I wonder what's deeper in the woods.$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Jon_Text_0:
-# 320 "data/maps/KaptaraIsland_East/scripts.pory"
+# 349 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Jon$"
 
 KaptaraIsland_EventScript_Trainer_KaptaraIsland_Jon_Text_1:
-# 321 "data/maps/KaptaraIsland_East/scripts.pory"
+# 350 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "I hear there's a sunken ruin deep in the\n"
 	.string "woods. Is it around here?$"
 
 KaptaraIsland_EventScript_LassWanderingAround_Text_0:
-# 343 "data/maps/KaptaraIsland_East/scripts.pory"
+# 372 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Lass$"
 
 KaptaraIsland_EventScript_LassWanderingAround_Text_1:
-# 344 "data/maps/KaptaraIsland_East/scripts.pory"
+# 373 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Have you heard about the Pokémon\n"
 	.string "coming back from extinction? I wonder\l"
 	.string "if the ancient people of this island\l"
 	.string "lived alongside them before they went\l"
 	.string "extinct.$"
 
+KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_Text_0:
+# 383 "data/maps/KaptaraIsland_East/scripts.pory"
+	.string "Uni. Student$"
+
+KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_Text_1:
+# 387 "data/maps/KaptaraIsland_East/scripts.pory"
+	.string "Your Pokédex data is amazing! Now we\n"
+	.string "know more about the local ecosystem,\l"
+	.string "thanks to you.$"
+
+KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_Text_2:
+# 392 "data/maps/KaptaraIsland_East/scripts.pory"
+	.string "Chaire (Hyeh-rei)! I'm a student from\n"
+	.string "the Acrisia University.\p"
+	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
+	.string "Pokémon{COLOR DARK_GRAY} found in {COLOR GREEN}East and West{COLOR DARK_GRAY} Kaptara\l"
+	.string "Island. If you've caught all the\l"
+	.string "Pokémon here, please let me know.$"
+
+KaptaraIsland_East_EventScript_UniversityStudentRouteCheck_Text_3:
+# 400 "data/maps/KaptaraIsland_East/scripts.pory"
+	.string "Incredible! You've caught all the\n"
+	.string "Pokémon that I requested in the area!\p"
+	.string "Here's a reward from the University.\n"
+	.string "Keep up your hard work!$"
+
 KaptaraIsland_Text_Trainer_KaptaraIsland_YesuiIntro::
-# 28 "data/maps/KaptaraIsland_East/scripts.pory"
+# 57 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Go, my shining lions!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_YesuiDefeat::
-# 32 "data/maps/KaptaraIsland_East/scripts.pory"
+# 61 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "How could they lose?!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_IssaIntro::
-# 57 "data/maps/KaptaraIsland_East/scripts.pory"
+# 86 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "This rough terrain is perfect for\n"
 	.string "training!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_IssaDefeat::
-# 61 "data/maps/KaptaraIsland_East/scripts.pory"
+# 90 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Aw... It was because of the terrain!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_GrigorIntro::
-# 75 "data/maps/KaptaraIsland_East/scripts.pory"
+# 104 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "I'm painting the natural beauty of this\n"
 	.string "island.$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_GrigorDefeat::
-# 79 "data/maps/KaptaraIsland_East/scripts.pory"
+# 108 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "I'll have to paint your Pokémon, too.$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_MantoIntro::
-# 93 "data/maps/KaptaraIsland_East/scripts.pory"
+# 122 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Uh oh, I think I'm lost!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_MantoDefeat::
-# 97 "data/maps/KaptaraIsland_East/scripts.pory"
+# 126 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "My poor Pokémon are lost, too!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_StanIntro::
-# 111 "data/maps/KaptaraIsland_East/scripts.pory"
+# 140 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Ooo, a fresh team of Pokémon! Let's see\n"
 	.string "what you've got!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_StanDefeat::
-# 115 "data/maps/KaptaraIsland_East/scripts.pory"
+# 144 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "What a collection!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_HoratioIntro::
-# 129 "data/maps/KaptaraIsland_East/scripts.pory"
+# 158 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "I haven't spent time in nature in years.\n"
 	.string "Come, help me have fun!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_HoratioDefeat::
-# 133 "data/maps/KaptaraIsland_East/scripts.pory"
+# 162 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Battles are quite the thrill!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_EdithIntro::
-# 158 "data/maps/KaptaraIsland_East/scripts.pory"
+# 187 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "There's someone who stays deep in\n"
 	.string "these woods for days on end. I wonder\l"
 	.string "if I can find them.$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_EdithDefeat::
-# 162 "data/maps/KaptaraIsland_East/scripts.pory"
+# 191 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "I'll need to heal my Pokémon first.$"
 
 KaptaraIsland_Text_FlyGuyDefeat::
-# 290 "data/maps/KaptaraIsland_East/scripts.pory"
+# 319 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Woah, you blew me away!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_RoseIntro::
-# 304 "data/maps/KaptaraIsland_East/scripts.pory"
+# 333 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "My husband says there's something past\n"
 	.string "this rock, but I'm not sure I believe\l"
 	.string "him.$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_RoseDefeat::
-# 308 "data/maps/KaptaraIsland_East/scripts.pory"
+# 337 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "We better heal out Pokémon before we\n"
 	.string "move on.$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_RoseNotEnoughMons::
-# 312 "data/maps/KaptaraIsland_East/scripts.pory"
+# 341 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "It doesn't look like you have enough\n"
 	.string "Pokémon for a double battle.$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_JonIntro::
-# 326 "data/maps/KaptaraIsland_East/scripts.pory"
+# 355 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Come on honey, we need to get past this\n"
 	.string "rock! Huh? A Trainer?$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_JonDefeat::
-# 330 "data/maps/KaptaraIsland_East/scripts.pory"
+# 359 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "Just a little further!$"
 
 KaptaraIsland_Text_Trainer_KaptaraIsland_JonNotEnoughMons::
-# 334 "data/maps/KaptaraIsland_East/scripts.pory"
+# 363 "data/maps/KaptaraIsland_East/scripts.pory"
 	.string "It doesn't look like you have enough\n"
 	.string "Pokémon for a double battle.$"

@@ -1,0 +1,318 @@
+mapscripts TowerOfDioxippus_Top_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
+    }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: TowerOfDioxippus_Top_EventScript_CheckStatus
+    ]
+
+    MAP_SCRIPT_ON_RESUME {
+        if(flag(FLAG_SYS_CTRL_OBJ_DELETE))
+        {
+            removeobject(3) // removes rayquaza
+        }
+    }
+}
+
+script TowerOfDioxippus_Top_EventScript_CheckStatus
+{
+    setvar(VAR_TEMP_1, 1)
+    if(!flag(FLAG_DEFEATED_KALLIOPE_DIOXIPPUS))
+    {
+        goto(TowerOfDioxippus_Top_EventScript_RayquazaEvent)
+    }
+    releaseall
+    end
+}
+
+script TowerOfDioxippus_Top_EventScript_RayquazaEvent
+{
+    lockall
+    ballfollowingmon
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp) // player at x:6, y:7
+    waitmovement(0)
+
+    delay(20)
+    applymovement(1, Common_Movement_JumpInPlaceUp)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("Perfect, we have it right where we want it! One more hit, and I'll force it to submit to us. {COLOR RED}Raging Bolt{COLOR DARK_GRAY}, it's time! Use Thundercla-"))
+    closemessage
+    emote(1, EMOTE_QUESTION)
+    delay(10)
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(0)
+    emote(1, EMOTE_EXCLAM)
+    speakername("Kalliope")
+    msgbox(format("{PLAYER}...? But HOW?! Did BOTH of my Admins fail to take you down?! I'm almost impressed.\p No matter. Just like in the Temple at Sofos City, you're {COLOR RED}too late{COLOR DARK_GRAY}! {COLOR GREEN}Rayquaza{COLOR DARK_GRAY} is on the verge of defeat at my hands; it'll never obey an unproven Trainer like you!"))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    applymovement(1, TowerOfDioxippus_Top_Movement_KalliopeMoveNextToRayquaza) // now at 4, 4
+    applymovement(2, TowerOfDioxippus_Top_Movement_RagingBoltMoveNextToRayquaza) // now at 3, 4
+    waitmovement(0)
+    delay(10)
+    speakername("Kalliope")
+    msgbox(format("{COLOR GREEN}Rayquaza{COLOR DARK_GRAY}! You have seen my power firsthand, and I command you to obey me! Use {COLOR RED}Dragon Ascent{COLOR DARK_GRAY} on this foolish Trainer!"))
+    closemessage
+    delay(30)
+    speakername("Kalliope")
+    msgbox(format("..."))
+    closemessage
+    delay(30)
+    emote(1, EMOTE_QUESTION)
+    applymovement(1, Common_Movement_JumpInPlaceRight)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("{COLOR GREEN}Rayquaza{COLOR DARK_GRAY}, I have given you an order! Or must I make {COLOR RED}Raging Bolt{COLOR DARK_GRAY} bring you down {COLOR RED}permanently{COLOR DARK_GRAY}?"))
+    closemessage
+    delay(10)
+    speakername("Rayquaza")
+    playmoncry(SPECIES_RAYQUAZA, CRY_MODE_NORMAL)
+    msgbox(format("Gkree-aahh!!"))
+    waitmoncry
+    closemessage
+    delay(10)
+    speakername("Kalliope")
+    msgbox(format("Urk... {COLOR GREEN}Rayquaza{COLOR DARK_GRAY}'s strength is still overpowering...\p {PLAYER}, for once, you're here at the perfect moment. You shall be an {COLOR RED}example of my power{COLOR DARK_GRAY} to Rayquaza! Face me, and I will blow you off this wretched tower!"))
+    closemessage
+
+    applymovement(1, TowerOfDioxippus_Top_Movement_KalliopePrepareToFight)
+    applymovement(2, TowerOfDioxippus_Top_Movement_RagingBoltPrepareToFight)
+    applymovement(OBJ_EVENT_ID_PLAYER, TowerOfDioxippus_Top_Movement_PlayerPrepareToFight)
+    waitmovement(0)
+    speakername("Raging Bolt")
+    playmoncry(SPECIES_RAGING_BOLT, CRY_MODE_NORMAL)
+    msgbox(format("GROOOAAARRR!!!"))
+    waitmoncry
+    closemessage
+    delay(10)
+    speakername("Kalliope")
+    msgbox(format("FWAHAHA, listen to that roar! With you gone and {COLOR GREEN}Rayquaza{COLOR DARK_GRAY} subdued, the Ilios Region will be mine for the taking!"))
+    closemessage
+
+    // START BATTLE
+    if(!flag(FLAG_HARD_MODE))
+    {
+        trainerbattle_no_intro(TRAINER_DIOXIPPUS_KALLIOPE, TowerOfDioxippus_Top_Text_KalliopeDefeated)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_DIOXIPPUS_KALLIOPE_HARD, TowerOfDioxippus_Top_Text_KalliopeDefeated)
+    }
+
+    clearflag(FLAG_CHIMERA_WEATHER_ACTIVE)
+    resetweather
+    doweather
+
+    delay(30)
+    applymovement(1, Common_Movement_JumpInPlaceRight)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("This is RIDICULOUS! Being defeated by someone so young, so inexperienced... I am not one to be HUMILIATED like this!!"))
+    closemessage
+    delay(10)
+
+    // Admins appear to tell Kalliope that they lost
+    clearflag(FLAG_HIDE_ADMINS_DIOXIPPUS)
+    addobject(4)
+    addobject(5)
+    applymovement(1, Common_Movement_FaceDown)
+    applymovement(4, TowerOfDioxippus_Top_Movement_AdminFApproachKalliope)
+    applymovement(5, TowerOfDioxippus_Top_Movement_AdminMApproachKalliope)
+    waitmovement(0)
+    emote(1, EMOTE_EXCLAM)
+    speakername("Kalliope")
+    msgbox(format("My Admins? So it's true, you were defeated by {PLAYER} as well...\p Tell me. What has become of our plans?"))
+    closemessage
+    speakername("Chimera Admin F")
+    msgbox(format("W-we're sorry, but the weather across the whole region has stabilized... {COLOR GREEN}Kyogre, Groudon, and now Rayquaza{COLOR DARK_GRAY} must be fighting against our influence! Even worse, people across Ilios are {COLOR GREEN}fighting back{COLOR DARK_GRAY} against Team Chimera! If we don't act soon, all will be lost!"))
+    closemessage
+    delay(10)
+    applymovement(1, Common_Movement_JumpInPlaceDown)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("{COLOR RED}ARGH!{COLOR DARK_GRAY} Nothing has gone right since that BRAT got involved...\p I have new orders, my simple Admins. We still control the {COLOR RED}Legendary Beasts{COLOR DARK_GRAY}, even without the {COLOR GREEN}Weather Trio{COLOR DARK_GRAY}. We must retreat back to {COLOR GREEN}Areios Hideout{COLOR DARK_GRAY} to recover and plan our next strike."))
+    closemessage
+    applymovement(1, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("{PLAYER}! Knowing you, I'm sure you'll follow us right to {COLOR GREEN}our Hideout{COLOR DARK_GRAY}, and I cannot stop you. But if you dare to enter, know that we will do {COLOR RED}everything we can to stop you permanently{COLOR DARK_GRAY}.\p Let's get out of here!"))
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    delay(15)
+    removeobject(1)
+    removeobject(2)
+    removeobject(4)
+    removeobject(5)
+    setflag(FLAG_DEFEATED_KALLIOPE_DIOXIPPUS)
+    setflag(FLAG_HIDE_ADMINS_DIOXIPPUS)
+    delay(15)
+    fadescreen(FADE_FROM_BLACK)
+    delay(20)
+
+    // Battle Rayquaza!
+    applymovement(OBJ_EVENT_ID_PLAYER, TowerOfDioxippus_Top_Movement_PlayerApproachRayquaza)
+    waitmovement(0)
+    delay(20)
+    msgbox(format("Rayquaza looms over you. Its eyes are intimidating, but you can sense that it is grateful for your help, and it respects your skills as a Trainer."))
+    closemessage
+    delay(30)
+
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM)
+    msgbox(format("Rayquaza flares with a primal energy! Your team has been miraculously healed."))
+    closemessage
+    special(HealPlayerParty)
+    delay(5)
+    speakername("Rayquaza")
+    playmoncry(SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER)
+    msgbox(format("Gkree-aahh!!"))
+    waitmoncry
+    closemessage
+    delay(10)
+
+    // RAYQUAZA BATTLE
+    seteventmon(SPECIES_RAYQUAZA, 50)
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE) // gonna remove rayquaza
+    setflag(FLAG_HIDE_RAYQUAZA_DIOXIPPUS)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    switch(var(VAR_RESULT))
+    {
+        case B_OUTCOME_CAUGHT:
+            msgbox(format("Rayquaza has deemed you worthy and joined your team! It will help in the battle against Team Chimera."))
+            closemessage
+            setflag(FLAG_CAUGHT_RAYQUAZA)
+        default:
+            msgbox(format("Rayquaza flew high into the ozone layer, impressed with your power.\p Rayquaza can be encountered again at the Tower of Dioxippus until it is successfully caught."))
+            closemessage
+    }
+    delay(20)
+    completequest(QUEST_LEGEND_OF_RAYQUAZA)
+    closemessage
+    setflag(FLAG_DEFEATED_KALLIOPE_DIOXIPPUS)
+    clearflag(FLAG_HIDE_RANIA_AND_NIKO_DIOXIPPUS)
+    release
+    end
+
+    // After leaving the Tower of Dioxippus, the Player will be confronted by Rania and Niko,
+    // who state that the abnormal weather conditions around Ilios have subsided due to Team Chimera's failures
+    // and the Weather Trio's actions! They warn the Player that Areios Hideout is going right into the "Pyroar's Den",
+    // but if anyone can do it, it's you.
+}
+
+movement TowerOfDioxippus_Top_Movement_KalliopeMoveNextToRayquaza
+{
+    walk_left * 2
+    walk_up * 2
+    face_down
+    step_end
+}
+
+movement TowerOfDioxippus_Top_Movement_RagingBoltMoveNextToRayquaza
+{
+    walk_left * 3
+    walk_up
+    face_down
+    step_end
+}
+
+movement TowerOfDioxippus_Top_Movement_KalliopePrepareToFight
+{
+    walk_down
+    walk_left
+    face_right
+    step_end
+}
+
+movement TowerOfDioxippus_Top_Movement_RagingBoltPrepareToFight
+{
+    walk_right * 2
+    walk_down
+    face_right
+    step_end
+}
+
+movement TowerOfDioxippus_Top_Movement_PlayerPrepareToFight
+{
+    walk_up
+    walk_right * 2
+    face_left
+    step_end
+}
+
+text TowerOfDioxippus_Top_Text_KalliopeDefeated
+{
+    format("My plans... They're all falling apart...")
+}
+
+movement TowerOfDioxippus_Top_Movement_AdminFApproachKalliope
+{
+    walk_fast_left * 3
+    walk_fast_up * 2
+    face_up
+    step_end
+}
+
+movement TowerOfDioxippus_Top_Movement_AdminMApproachKalliope
+{
+    walk_fast_left * 2
+    walk_fast_up * 2
+    face_up
+    step_end
+}
+
+movement TowerOfDioxippus_Top_Movement_PlayerApproachRayquaza
+{
+    walk_left * 2
+    walk_up
+    face_up
+    step_end
+}
+
+script TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly
+{
+    lock
+    if(flag(FLAG_CAUGHT_RAYQUAZA))
+    {
+        msgbox(format("A slight glimmer can be seen in the air nearby. {COLOR GREEN}Rayquaza{COLOR DARK_GRAY}'s presence must have imbued the Tower of Dioxippus with special power."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("A slight glimmer can be seen around the peak of the Tower of Dioxippus, home of {COLOR GREEN}Rayquaza{COLOR DARK_GRAY}, Lord of the Sky.\p A primal energy is radiating from above. Do you accept the challenge from {COLOR GREEN}Rayquaza{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == FALSE)
+        {
+            release
+            end
+        }
+        else
+        {
+            seteventmon(SPECIES_RAYQUAZA, 50)
+            special(BattleSetup_StartLegendaryBattle)
+            waitstate
+            specialvar(VAR_RESULT, GetBattleOutcome)
+            switch(var(VAR_RESULT))
+            {
+                case B_OUTCOME_CAUGHT:
+                    msgbox(format("Rayquaza has deemed you worthy and joined your team! It will help in the battle against Team Chimera."))
+                    closemessage
+                    setflag(FLAG_CAUGHT_RAYQUAZA)
+                default:
+                    msgbox(format("Rayquaza flew high into the ozone layer, impressed with your power.\p Rayquaza can be encountered again at the Tower of Dioxippus until it is successfully caught."))
+                    closemessage
+            }
+        }
+    }
+    release
+    end
+}

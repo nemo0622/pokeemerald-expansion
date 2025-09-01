@@ -1037,6 +1037,12 @@ static const union AnimCmd sAnim_Victreebel_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
+
+static const union AnimCmd sAnim_VictreebelMega_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 #endif //P_FAMILY_BELLSPROUT
 
 #if P_FAMILY_TENTACOOL
@@ -8661,6 +8667,12 @@ static const union AnimCmd sAnim_Hawlucha_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
+
+static const union AnimCmd sAnim_HawluchaMega_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 #endif //P_FAMILY_HAWLUCHA
 
 #if P_FAMILY_DEDENNE
@@ -10453,6 +10465,7 @@ SINGLE_ANIMATION(MachampGigantamax);
 SINGLE_ANIMATION(Bellsprout);
 SINGLE_ANIMATION(Weepinbell);
 SINGLE_ANIMATION(Victreebel);
+SINGLE_ANIMATION(VictreebelMega);
 #endif //P_FAMILY_BELLSPROUT
 #if P_FAMILY_TENTACOOL
 SINGLE_ANIMATION(Tentacool);
@@ -12124,6 +12137,7 @@ SINGLE_ANIMATION(Aurorus);
 #endif //P_FAMILY_AMAURA
 #if P_FAMILY_HAWLUCHA
 SINGLE_ANIMATION(Hawlucha);
+SINGLE_ANIMATION(HawluchaMega);
 #endif //P_FAMILY_HAWLUCHA
 #if P_FAMILY_DEDENNE
 SINGLE_ANIMATION(Dedenne);

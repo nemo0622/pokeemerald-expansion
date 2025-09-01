@@ -1,0 +1,202 @@
+mapscripts TowerOfDioxippus_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if(flag(FLAG_CHIMERA_WEATHER_ACTIVE))
+        {
+            setweather(WEATHER_ABNORMAL)
+        }
+
+        setflag(FLAG_VISITED_TOWER_OF_DIOXIPPUS)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(13, ENCOUNTER_LAND)
+        setobjectaswildencounter(14, ENCOUNTER_LAND)
+        setobjectaswildencounter(15, ENCOUNTER_LAND)
+    }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: TowerOfDioxippus_EventScript_CheckForEvent
+    ]
+}
+
+script TowerOfDioxippus_EventScript_CheckForEvent
+{
+    setvar(VAR_TEMP_1, 1)
+    if(flag(FLAG_DEFEATED_KALLIOPE_DIOXIPPUS) && !flag(FLAG_DID_RANIA_NIKO_POST_DIOXIPPUS_EVENT))
+    {
+        goto(TowerOfDioxippus_EventScript_RaniaAndNikoEvent)
+    }
+    releaseall
+    end
+}
+
+script TowerOfDioxippus_EventScript_RaniaAndNikoEvent
+{
+    lockall
+    delay(20)
+    speakername("???")
+    msgbox(format("It's {PLAYER}! Come on!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    applymovement(17, TowerOfDioxippus_Movement_RaniaApproachPlayer)
+    applymovement(16, TowerOfDioxippus_Movement_NikoApproachPlayer)
+    waitmovement(0)
+    delay(10)
+    speakername("Rania")
+    msgbox(format("The {COLOR GREEN}weather across Ilios is back to normal{COLOR DARK_GRAY}! Did you really save Kyogre and Groudon from Team Chimera?"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("Once the weather started to lighten up, we came here as fast as we could. We saw attacks flying around the Tower of Dioxippus and heard Rayquaza roar... So, are you okay? Tell us everything!"))
+    closemessage
+    delay(30)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    applymovement(17, Common_Movement_JumpInPlaceUp)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("You defeated {COLOR RED}Kalliope{COLOR DARK_GRAY}?! Even as she used {COLOR RED}Raging Bolt{COLOR DARK_GRAY}?! Then it's true, you've saved the Ilios Region!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Niko")
+    msgbox(format("Not so fast, Rania. {PLAYER} said that Team Chimera is going to retreat to {COLOR RED}Areios Hideout{COLOR DARK_GRAY}... That's the Pyroar's Den - the heart of Team Chimera, crawling with Chimera Grunts.\p To {COLOR GREEN}truly defeat Team Chimera{COLOR DARK_GRAY}, {COLOR RED}Areios Hideout{COLOR DARK_GRAY} needs to fall. {PLAYER}, you should be able to follow the road south of Asfal Hills to {COLOR GREEN}Port Pello{COLOR DARK_GRAY}, the closest remaining town to Areios Hideout. From there, you can reach their Hideout and take down Team Chimera for good!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("{COLOR RED}Areios Hideout{COLOR DARK_GRAY} used to be a small town, before Team Chimera took over. In fact, {COLOR RED}Kalliope was the Gym Leader{COLOR DARK_GRAY} there... I'd bet you anything that she's {COLOR GREEN}hiding in the remnants of her Gym{COLOR DARK_GRAY}.\p We need to report back to the University. Good luck!"))
+    closemessage
+    delay(10)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(15)
+    setflag(FLAG_HIDE_RANIA_AND_NIKO_DIOXIPPUS)
+    setflag(FLAG_DID_RANIA_NIKO_POST_DIOXIPPUS_EVENT)
+    removeobject(16)
+    removeobject(17)
+    delay(15)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(20)
+    startquest(QUEST_GYM_8)
+    closemessage
+
+    setflag(FLAG_HIDE_CORRIN_CROSSING_ROADBLOCK) // allows access to Port Pello and south
+    setflag(FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY) // Rania will be in Port Pello waiting to fight the Player!
+    setvar(VAR_NIKO_STATE, 13)
+
+    release
+    end
+}
+
+movement TowerOfDioxippus_Movement_RaniaApproachPlayer
+{
+    walk_fast_up * 4
+    walk_fast_right * 6
+    walk_fast_up
+    face_up
+    step_end
+}
+movement TowerOfDioxippus_Movement_NikoApproachPlayer
+{
+    walk_fast_up * 4
+    walk_fast_right * 6
+    walk_fast_up * 2
+    face_right
+    step_end
+}
+
+script TowerOfDioxippus_EventScript_LittleGirl
+{
+    lock
+    faceplayer
+    speakername("Little Girl")
+    msgbox(format("Not many people live here. Some people visit, but even then, it's a quiet area."))
+    closemessage
+    release
+    end
+}
+
+script TowerOfDioxippus_EventScript_Maniac
+{
+    lock
+    faceplayer
+    speakername("Collector")
+    msgbox(format("My Armaldo is a Lazarus Taxa, which means it was thought to be extinct until recently. That means it's extra-rare!"))
+    closemessage
+    release
+    end
+}
+
+script TowerOfDioxippus_EventScript_Armaldo
+{
+    lock
+    faceplayer
+    speakername("Armaldo")
+    playmoncry(SPECIES_ARMALDO, CRY_MODE_NORMAL)
+    msgbox("Khree-ah-ah!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script TowerOfDioxippus_EventScript_HexManiac
+{
+    lock
+    faceplayer
+    speakername("Hex Maniac")
+    msgbox(format("Dioxippus was a great Trainer from a distant clan who lived in ancient Ilios, if you believe the stories. He tamed Rayquaza and unlocked its Mega Evolution, rising to be so powerful that no Trainers challenged him. The great Tower of Dioxippus was raised in his honor."))
+    closemessage
+    release
+    end
+}
+
+script TowerOfDioxippus_EventScript_OldWoman
+{
+    lock
+    faceplayer
+    speakername("Old Woman")
+    msgbox(format("This is one of the most isolated areas of the Ilios Region. It's perfect for elderly folks like me."))
+    closemessage
+    release
+    end
+}
+
+script TowerOfDioxippus_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("I've come all the way from the Hoenn Region to visit the Tower of Dioxippus!\p In Hoenn, we continue to revere the {COLOR GREEN}Weather Legendary Trio{COLOR DARK_GRAY}, which were largely forgotten in Ilios. Only the Tower of Dioxippus remains as tribute to them, and it looks to be falling into disrepair..."))
+    closemessage
+    release
+    end
+}
+
+script TowerOfDioxippus_EventScript_TowerSign
+{
+    lock
+    msgbox(format("Tower Of Dioxippus\n The Great Tower of Rayquaza"))
+    closemessage
+    release
+    end
+}
+
+script TowerOfDioxippus_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Tower of Dioxippus\n Paying Respects to Rayquaza\p {UP_ARROW} Lastlight Road"))
+    closemessage
+    release
+    end
+}

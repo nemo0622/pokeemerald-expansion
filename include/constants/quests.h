@@ -79,7 +79,11 @@
 #define QUEST_LEGEND_OF_KYOGRE                  61 // Find Kyogre & Beat Ice Admin
 #define QUEST_LEGEND_OF_GROUDON                 62 // Find Groudon & Beat Fire Admin
 #define QUEST_LEGEND_OF_RAYQUAZA                63 // Find Rayquaza & Beat Kalliope
-#define QUEST_COUNT     (QUEST_LEGEND_OF_RAYQUAZA + 1)
+#define QUEST_DIOXIPPUS_BERRIES                 64 // Give 5 Lum Berries to a worker in Tower of Dioxippus House 1
+#define QUEST_SHOW_CYCLIZAR_DEX_PORT_PELLO      65 // Show Cyclizar Dex entry to Cyclist in Port Pello
+#define QUEST_SHOW_PIKACHU_FOR_PICHU            66 // Show Pikachu in party to Pokéfan F in Port Pello for SPiky Ear Pichu
+#define QUEST_STRANGE_SOUVENIRS_FOR_SAILOR      67 // Give Sailor 3 Strange Souvenirs for Alolan Mega stones
+#define QUEST_COUNT     (QUEST_STRANGE_SOUVENIRS_FOR_SAILOR + 1)
 
 #define SUB_QUEST_1          0
 #define SUB_QUEST_2          1

@@ -1976,3 +1976,22 @@ const u16 gTilesetPalettes_PalatiGym[][16] =
 };
 
 const u32 gTilesetTiles_PalatiGym[] = INCBIN_U32("data/tilesets/secondary/palati_gym/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_TowerOfDioxippus[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tower_of_dioxippus/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_TowerOfDioxippus[] = INCBIN_U32("data/tilesets/secondary/tower_of_dioxippus/tiles.4bpp.lz");

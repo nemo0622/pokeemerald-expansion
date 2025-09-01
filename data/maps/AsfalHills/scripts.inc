@@ -322,336 +322,376 @@ AsfalHills_EventScript_WomanTryingToGetSouth::
 # 271 "data/maps/AsfalHills/scripts.pory"
 	speakername AsfalHills_EventScript_WomanTryingToGetSouth_Text_0
 # 272 "data/maps/AsfalHills/scripts.pory"
-	msgbox AsfalHills_EventScript_WomanTryingToGetSouth_Text_1
-# 273 "data/maps/AsfalHills/scripts.pory"
+	goto_if_unset FLAG_HIDE_CORRIN_CROSSING_ROADBLOCK, AsfalHills_EventScript_WomanTryingToGetSouth_2
+# 278 "data/maps/AsfalHills/scripts.pory"
+	msgbox AsfalHills_EventScript_WomanTryingToGetSouth_Text_2
+AsfalHills_EventScript_WomanTryingToGetSouth_1:
+# 280 "data/maps/AsfalHills/scripts.pory"
 	closemessage
-# 274 "data/maps/AsfalHills/scripts.pory"
+# 281 "data/maps/AsfalHills/scripts.pory"
 	release
 	end
 
+AsfalHills_EventScript_WomanTryingToGetSouth_2:
+# 274 "data/maps/AsfalHills/scripts.pory"
+	msgbox AsfalHills_EventScript_WomanTryingToGetSouth_Text_1
+	goto AsfalHills_EventScript_WomanTryingToGetSouth_1
+
 
 AsfalHills_EventScript_Trainer_AsfalHills_Prothoe::
-# 280 "data/maps/AsfalHills/scripts.pory"
+# 287 "data/maps/AsfalHills/scripts.pory"
 	trainerbattle_single TRAINER_ASFALHILLS_PROTHOE, AsfalHills_Text_Trainer_AsfalHills_ProthoeIntro, AsfalHills_Text_Trainer_AsfalHills_ProthoeDefeat
-# 281 "data/maps/AsfalHills/scripts.pory"
+# 288 "data/maps/AsfalHills/scripts.pory"
 	speakername AsfalHills_EventScript_Trainer_AsfalHills_Prothoe_Text_0
-# 282 "data/maps/AsfalHills/scripts.pory"
+# 289 "data/maps/AsfalHills/scripts.pory"
 	msgbox AsfalHills_EventScript_Trainer_AsfalHills_Prothoe_Text_1
-# 283 "data/maps/AsfalHills/scripts.pory"
+# 290 "data/maps/AsfalHills/scripts.pory"
 	closemessage
-# 284 "data/maps/AsfalHills/scripts.pory"
+# 291 "data/maps/AsfalHills/scripts.pory"
 	release
 	end
 
 
 AsfalHills_EventScript_Trainer_AsfalHills_Batto::
-# 298 "data/maps/AsfalHills/scripts.pory"
+# 305 "data/maps/AsfalHills/scripts.pory"
 	trainerbattle_single TRAINER_ASFALHILLS_BATTO, AsfalHills_Text_Trainer_AsfalHills_BattoIntro, AsfalHills_Text_Trainer_AsfalHills_BattoDefeat
-# 299 "data/maps/AsfalHills/scripts.pory"
+# 306 "data/maps/AsfalHills/scripts.pory"
 	speakername AsfalHills_EventScript_Trainer_AsfalHills_Batto_Text_0
-# 300 "data/maps/AsfalHills/scripts.pory"
+# 307 "data/maps/AsfalHills/scripts.pory"
 	msgbox AsfalHills_EventScript_Trainer_AsfalHills_Batto_Text_1
-# 301 "data/maps/AsfalHills/scripts.pory"
+# 308 "data/maps/AsfalHills/scripts.pory"
 	closemessage
-# 302 "data/maps/AsfalHills/scripts.pory"
+# 309 "data/maps/AsfalHills/scripts.pory"
 	release
 	end
 
 
 AsfalHills_EventScript_OldMan::
-# 316 "data/maps/AsfalHills/scripts.pory"
+# 323 "data/maps/AsfalHills/scripts.pory"
 	lock
-# 317 "data/maps/AsfalHills/scripts.pory"
+# 324 "data/maps/AsfalHills/scripts.pory"
 	faceplayer
-# 318 "data/maps/AsfalHills/scripts.pory"
+# 325 "data/maps/AsfalHills/scripts.pory"
 	speakername AsfalHills_EventScript_OldMan_Text_0
-# 319 "data/maps/AsfalHills/scripts.pory"
+# 326 "data/maps/AsfalHills/scripts.pory"
 	msgbox AsfalHills_EventScript_OldMan_Text_1
-# 320 "data/maps/AsfalHills/scripts.pory"
+# 327 "data/maps/AsfalHills/scripts.pory"
 	closemessage
-# 321 "data/maps/AsfalHills/scripts.pory"
+# 328 "data/maps/AsfalHills/scripts.pory"
 	release
 	end
 
 
 AsfalHills_EventScript_Hiker::
-# 327 "data/maps/AsfalHills/scripts.pory"
+# 334 "data/maps/AsfalHills/scripts.pory"
 	lock
-# 328 "data/maps/AsfalHills/scripts.pory"
+# 335 "data/maps/AsfalHills/scripts.pory"
 	faceplayer
-# 329 "data/maps/AsfalHills/scripts.pory"
+# 336 "data/maps/AsfalHills/scripts.pory"
 	speakername AsfalHills_EventScript_Hiker_Text_0
-# 330 "data/maps/AsfalHills/scripts.pory"
+# 337 "data/maps/AsfalHills/scripts.pory"
 	msgbox AsfalHills_EventScript_Hiker_Text_1
-# 331 "data/maps/AsfalHills/scripts.pory"
+# 338 "data/maps/AsfalHills/scripts.pory"
 	closemessage
-# 332 "data/maps/AsfalHills/scripts.pory"
+# 339 "data/maps/AsfalHills/scripts.pory"
 	release
 	end
 
 
 AsfalHills_EventScript_NikoMeetPlayerEvent::
-# 341 "data/maps/AsfalHills/scripts.pory"
-	lockall
-# 342 "data/maps/AsfalHills/scripts.pory"
-	ballfollowingmon
-# 343 "data/maps/AsfalHills/scripts.pory"
-	applymovement 7, Common_Movement_ExclamationMark
-# 344 "data/maps/AsfalHills/scripts.pory"
-	waitmovement 0
-# 345 "data/maps/AsfalHills/scripts.pory"
-	delay 10
-# 346 "data/maps/AsfalHills/scripts.pory"
-	applymovement 7, Common_Movement_FaceDown
-# 347 "data/maps/AsfalHills/scripts.pory"
-	waitmovement 0
 # 348 "data/maps/AsfalHills/scripts.pory"
-	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
+	lockall
 # 349 "data/maps/AsfalHills/scripts.pory"
-	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_1
+	ballfollowingmon
 # 350 "data/maps/AsfalHills/scripts.pory"
-	closemessage
+	applymovement 7, Common_Movement_ExclamationMark
 # 351 "data/maps/AsfalHills/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AsfalHills_Movement_PlayerApproachNiko
+	waitmovement 0
 # 352 "data/maps/AsfalHills/scripts.pory"
-	applymovement 8, AsfalHills_Movement_DuskullApproachPlayer
+	delay 10
 # 353 "data/maps/AsfalHills/scripts.pory"
-	waitmovement 0
+	applymovement 7, Common_Movement_FaceDown
 # 354 "data/maps/AsfalHills/scripts.pory"
-	applymovement 7, Common_Movement_FacePlayer
+	waitmovement 0
 # 355 "data/maps/AsfalHills/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
 # 356 "data/maps/AsfalHills/scripts.pory"
-	waitmovement 0
+	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_1
 # 357 "data/maps/AsfalHills/scripts.pory"
-	delay 10
+	closemessage
 # 358 "data/maps/AsfalHills/scripts.pory"
-	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, AsfalHills_Movement_PlayerApproachNiko
 # 359 "data/maps/AsfalHills/scripts.pory"
-	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_2
+	applymovement 8, AsfalHills_Movement_DuskullApproachPlayer
 # 360 "data/maps/AsfalHills/scripts.pory"
-	closemessage
+	waitmovement 0
 # 361 "data/maps/AsfalHills/scripts.pory"
-	applymovement 7, Common_Movement_FaceUp
+	applymovement 7, Common_Movement_FacePlayer
 # 362 "data/maps/AsfalHills/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
-# 363 "data/maps/AsfalHills/scripts.pory"
-	applymovement 8, AsfalHills_Movement_DuskullReturnsToNiko
-# 364 "data/maps/AsfalHills/scripts.pory"
-	waitmovement 0
-# 367 "data/maps/AsfalHills/scripts.pory"
-	delay 5
-# 368 "data/maps/AsfalHills/scripts.pory"
-	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
-# 369 "data/maps/AsfalHills/scripts.pory"
-	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_3
-# 370 "data/maps/AsfalHills/scripts.pory"
-	closemessage
-# 371 "data/maps/AsfalHills/scripts.pory"
-	delay 10
-# 372 "data/maps/AsfalHills/scripts.pory"
-	applymovement 7, Common_Movement_FaceRight
-# 373 "data/maps/AsfalHills/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
-# 374 "data/maps/AsfalHills/scripts.pory"
+# 363 "data/maps/AsfalHills/scripts.pory"
 	waitmovement 0
+# 364 "data/maps/AsfalHills/scripts.pory"
+	delay 10
+# 365 "data/maps/AsfalHills/scripts.pory"
+	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
+# 366 "data/maps/AsfalHills/scripts.pory"
+	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_2
+# 367 "data/maps/AsfalHills/scripts.pory"
+	closemessage
+# 368 "data/maps/AsfalHills/scripts.pory"
+	applymovement 7, Common_Movement_FaceRight
+# 369 "data/maps/AsfalHills/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 370 "data/maps/AsfalHills/scripts.pory"
+	applymovement 8, AsfalHills_Movement_DuskullReturnsToNiko
+# 371 "data/maps/AsfalHills/scripts.pory"
+	waitmovement 0
+# 374 "data/maps/AsfalHills/scripts.pory"
+	delay 10
 # 375 "data/maps/AsfalHills/scripts.pory"
 	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
 # 376 "data/maps/AsfalHills/scripts.pory"
-	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_4
+	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_3
 # 377 "data/maps/AsfalHills/scripts.pory"
 	closemessage
-# 378 "data/maps/AsfalHills/scripts.pory"
-	delay 10
 # 379 "data/maps/AsfalHills/scripts.pory"
-	applymovement 8, AsfalHills_Movement_DuskullReturnsToStatue
-# 380 "data/maps/AsfalHills/scripts.pory"
-	waitmovement 0
-# 381 "data/maps/AsfalHills/scripts.pory"
-	applymovement 7, Common_Movement_FaceUp
+	trainerbattle_no_intro TRAINER_ASFALHILLS_NIKO, AsfalHills_Text_NikoLose
 # 382 "data/maps/AsfalHills/scripts.pory"
-	waitmovement 0
+	delay 10
+# 383 "data/maps/AsfalHills/scripts.pory"
+	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
 # 384 "data/maps/AsfalHills/scripts.pory"
-	delay 20
+	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_4
 # 385 "data/maps/AsfalHills/scripts.pory"
-	startquest QUEST_BEAT_CHIMERA_SOFOS_CITY
+	closemessage
+# 386 "data/maps/AsfalHills/scripts.pory"
+	delay 30
+# 387 "data/maps/AsfalHills/scripts.pory"
+	emote 7, EMOTE_EXCLAM
+# 388 "data/maps/AsfalHills/scripts.pory"
+	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
+# 389 "data/maps/AsfalHills/scripts.pory"
+	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_5
 # 390 "data/maps/AsfalHills/scripts.pory"
-	setflag FLAG_TRIGGERED_NIKO_EVENT_ASFAL_HILLS
+	closemessage
 # 391 "data/maps/AsfalHills/scripts.pory"
-	clearflag FLAG_HIDE_BLOCKING_SOFOS_GYM
+	applymovement 7, Common_Movement_FaceUp
 # 392 "data/maps/AsfalHills/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 393 "data/maps/AsfalHills/scripts.pory"
+	waitmovement 0
+# 394 "data/maps/AsfalHills/scripts.pory"
+	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
+# 395 "data/maps/AsfalHills/scripts.pory"
+	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_6
+# 396 "data/maps/AsfalHills/scripts.pory"
+	closemessage
+# 397 "data/maps/AsfalHills/scripts.pory"
+	delay 10
+# 398 "data/maps/AsfalHills/scripts.pory"
+	applymovement 7, Common_Movement_FaceRight
+# 399 "data/maps/AsfalHills/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 400 "data/maps/AsfalHills/scripts.pory"
+	waitmovement 0
+# 401 "data/maps/AsfalHills/scripts.pory"
+	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
+# 402 "data/maps/AsfalHills/scripts.pory"
+	msgbox AsfalHills_EventScript_NikoMeetPlayerEvent_Text_7
+# 403 "data/maps/AsfalHills/scripts.pory"
+	closemessage
+# 404 "data/maps/AsfalHills/scripts.pory"
+	delay 10
+# 405 "data/maps/AsfalHills/scripts.pory"
+	applymovement 8, AsfalHills_Movement_DuskullReturnsToStatue
+# 406 "data/maps/AsfalHills/scripts.pory"
+	waitmovement 0
+# 407 "data/maps/AsfalHills/scripts.pory"
+	applymovement 7, Common_Movement_FaceUp
+# 408 "data/maps/AsfalHills/scripts.pory"
+	waitmovement 0
+# 410 "data/maps/AsfalHills/scripts.pory"
+	delay 20
+# 411 "data/maps/AsfalHills/scripts.pory"
+	startquest QUEST_BEAT_CHIMERA_SOFOS_CITY
+# 416 "data/maps/AsfalHills/scripts.pory"
+	setflag FLAG_TRIGGERED_NIKO_EVENT_ASFAL_HILLS
+# 417 "data/maps/AsfalHills/scripts.pory"
+	clearflag FLAG_HIDE_BLOCKING_SOFOS_GYM
+# 418 "data/maps/AsfalHills/scripts.pory"
 	setflag FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY
 	return
 
 
-# 395 "data/maps/AsfalHills/scripts.pory"
+# 421 "data/maps/AsfalHills/scripts.pory"
 AsfalHills_Movement_PlayerApproachNiko:
-# 397 "data/maps/AsfalHills/scripts.pory"
+# 423 "data/maps/AsfalHills/scripts.pory"
 	walk_right
-# 397 "data/maps/AsfalHills/scripts.pory"
+# 423 "data/maps/AsfalHills/scripts.pory"
 	walk_right
-# 397 "data/maps/AsfalHills/scripts.pory"
+# 423 "data/maps/AsfalHills/scripts.pory"
 	walk_right
-# 398 "data/maps/AsfalHills/scripts.pory"
+# 424 "data/maps/AsfalHills/scripts.pory"
 	walk_up
-# 398 "data/maps/AsfalHills/scripts.pory"
+# 424 "data/maps/AsfalHills/scripts.pory"
 	walk_up
-# 399 "data/maps/AsfalHills/scripts.pory"
+# 425 "data/maps/AsfalHills/scripts.pory"
 	step_end
 
-# 401 "data/maps/AsfalHills/scripts.pory"
+# 427 "data/maps/AsfalHills/scripts.pory"
 AsfalHills_Movement_DuskullApproachPlayer:
-# 403 "data/maps/AsfalHills/scripts.pory"
+# 429 "data/maps/AsfalHills/scripts.pory"
 	walk_right
-# 403 "data/maps/AsfalHills/scripts.pory"
+# 429 "data/maps/AsfalHills/scripts.pory"
 	walk_right
-# 404 "data/maps/AsfalHills/scripts.pory"
+# 430 "data/maps/AsfalHills/scripts.pory"
 	walk_down
-# 405 "data/maps/AsfalHills/scripts.pory"
+# 431 "data/maps/AsfalHills/scripts.pory"
 	delay_16
-# 406 "data/maps/AsfalHills/scripts.pory"
+# 432 "data/maps/AsfalHills/scripts.pory"
 	emote_heart
-# 407 "data/maps/AsfalHills/scripts.pory"
+# 433 "data/maps/AsfalHills/scripts.pory"
 	step_end
 
-# 409 "data/maps/AsfalHills/scripts.pory"
+# 435 "data/maps/AsfalHills/scripts.pory"
 AsfalHills_Movement_DuskullReturnsToNiko:
-# 411 "data/maps/AsfalHills/scripts.pory"
+# 437 "data/maps/AsfalHills/scripts.pory"
 	walk_left
-# 411 "data/maps/AsfalHills/scripts.pory"
+# 437 "data/maps/AsfalHills/scripts.pory"
 	walk_left
-# 412 "data/maps/AsfalHills/scripts.pory"
+# 438 "data/maps/AsfalHills/scripts.pory"
 	walk_down
-# 413 "data/maps/AsfalHills/scripts.pory"
+# 439 "data/maps/AsfalHills/scripts.pory"
 	face_up
-# 414 "data/maps/AsfalHills/scripts.pory"
+# 440 "data/maps/AsfalHills/scripts.pory"
 	step_end
 
-# 416 "data/maps/AsfalHills/scripts.pory"
+# 442 "data/maps/AsfalHills/scripts.pory"
 AsfalHills_Movement_DuskullReturnsToStatue:
-# 418 "data/maps/AsfalHills/scripts.pory"
+# 444 "data/maps/AsfalHills/scripts.pory"
 	walk_up
-# 418 "data/maps/AsfalHills/scripts.pory"
+# 444 "data/maps/AsfalHills/scripts.pory"
 	walk_up
-# 419 "data/maps/AsfalHills/scripts.pory"
+# 445 "data/maps/AsfalHills/scripts.pory"
 	face_left
-# 420 "data/maps/AsfalHills/scripts.pory"
+# 446 "data/maps/AsfalHills/scripts.pory"
 	step_end
 
 AsfalHills_EventScript_Duskull::
-# 424 "data/maps/AsfalHills/scripts.pory"
+# 450 "data/maps/AsfalHills/scripts.pory"
 	lock
-# 425 "data/maps/AsfalHills/scripts.pory"
+# 451 "data/maps/AsfalHills/scripts.pory"
 	faceplayer
-# 426 "data/maps/AsfalHills/scripts.pory"
+# 452 "data/maps/AsfalHills/scripts.pory"
 	speakername AsfalHills_EventScript_Duskull_Text_0
-# 427 "data/maps/AsfalHills/scripts.pory"
+# 453 "data/maps/AsfalHills/scripts.pory"
 	playmoncry SPECIES_DUSKULL, CRY_MODE_NORMAL
-# 428 "data/maps/AsfalHills/scripts.pory"
+# 454 "data/maps/AsfalHills/scripts.pory"
 	msgbox AsfalHills_EventScript_Duskull_Text_1
-# 429 "data/maps/AsfalHills/scripts.pory"
+# 455 "data/maps/AsfalHills/scripts.pory"
 	waitmoncry
-# 430 "data/maps/AsfalHills/scripts.pory"
+# 456 "data/maps/AsfalHills/scripts.pory"
 	closemessage
-# 431 "data/maps/AsfalHills/scripts.pory"
+# 457 "data/maps/AsfalHills/scripts.pory"
 	delay 5
-# 432 "data/maps/AsfalHills/scripts.pory"
+# 458 "data/maps/AsfalHills/scripts.pory"
 	msgbox AsfalHills_EventScript_Duskull_Text_2
-# 433 "data/maps/AsfalHills/scripts.pory"
+# 459 "data/maps/AsfalHills/scripts.pory"
 	closemessage
-# 434 "data/maps/AsfalHills/scripts.pory"
+# 460 "data/maps/AsfalHills/scripts.pory"
 	release
 	end
 
 
 AsfalHills_EventScript_NikoWaitingForPlayer::
-# 440 "data/maps/AsfalHills/scripts.pory"
+# 466 "data/maps/AsfalHills/scripts.pory"
 	lock
-# 441 "data/maps/AsfalHills/scripts.pory"
+# 467 "data/maps/AsfalHills/scripts.pory"
 	faceplayer
-# 442 "data/maps/AsfalHills/scripts.pory"
+# 468 "data/maps/AsfalHills/scripts.pory"
 	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
-# 443 "data/maps/AsfalHills/scripts.pory"
+# 469 "data/maps/AsfalHills/scripts.pory"
 	msgbox AsfalHills_EventScript_NikoWaitingForPlayer_Text_0
-# 444 "data/maps/AsfalHills/scripts.pory"
+# 470 "data/maps/AsfalHills/scripts.pory"
 	closemessage
-# 446 "data/maps/AsfalHills/scripts.pory"
+# 472 "data/maps/AsfalHills/scripts.pory"
 	delay 20
-# 447 "data/maps/AsfalHills/scripts.pory"
+# 473 "data/maps/AsfalHills/scripts.pory"
 	checkitem ITEM_KEY_STONE
-# 448 "data/maps/AsfalHills/scripts.pory"
+# 474 "data/maps/AsfalHills/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AsfalHills_EventScript_NikoWaitingForPlayer_2
-# 458 "data/maps/AsfalHills/scripts.pory"
-	applymovement 7, Common_Movement_ExclamationMark
-# 459 "data/maps/AsfalHills/scripts.pory"
-	waitmovement 0
-# 460 "data/maps/AsfalHills/scripts.pory"
-	delay 5
-# 461 "data/maps/AsfalHills/scripts.pory"
-	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
-# 462 "data/maps/AsfalHills/scripts.pory"
-	msgbox AsfalHills_EventScript_NikoWaitingForPlayer_Text_2
-# 463 "data/maps/AsfalHills/scripts.pory"
-	closemessage
-# 464 "data/maps/AsfalHills/scripts.pory"
-	delay 10
-# 465 "data/maps/AsfalHills/scripts.pory"
-	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
-# 466 "data/maps/AsfalHills/scripts.pory"
-	msgbox AsfalHills_EventScript_NikoWaitingForPlayer_Text_3
-# 467 "data/maps/AsfalHills/scripts.pory"
-	closemessage
-# 468 "data/maps/AsfalHills/scripts.pory"
-	giveitem ITEM_HM_SURF
-# 469 "data/maps/AsfalHills/scripts.pory"
-	closemessage
-# 470 "data/maps/AsfalHills/scripts.pory"
-	delay 5
-# 471 "data/maps/AsfalHills/scripts.pory"
-	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
-# 472 "data/maps/AsfalHills/scripts.pory"
-	msgbox AsfalHills_EventScript_NikoWaitingForPlayer_Text_4
-# 473 "data/maps/AsfalHills/scripts.pory"
-	closemessage
-# 474 "data/maps/AsfalHills/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 475 "data/maps/AsfalHills/scripts.pory"
-	delay 20
-# 476 "data/maps/AsfalHills/scripts.pory"
-	setflag FLAG_HIDE_NIKO_ASFAL_HILLS
-# 477 "data/maps/AsfalHills/scripts.pory"
-	removeobject 7
-# 478 "data/maps/AsfalHills/scripts.pory"
-	removeobject 8
-# 479 "data/maps/AsfalHills/scripts.pory"
-	setflag FLAG_HIDE_BLOCKING_SOFOS_GYM
-# 480 "data/maps/AsfalHills/scripts.pory"
-	setflag FLAG_UNLOCKED_MEGA_EVOLUTION
-# 481 "data/maps/AsfalHills/scripts.pory"
-	clearflag FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY
-# 482 "data/maps/AsfalHills/scripts.pory"
-	delay 20
-# 483 "data/maps/AsfalHills/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
 # 484 "data/maps/AsfalHills/scripts.pory"
-	delay 10
+	applymovement 7, Common_Movement_ExclamationMark
+# 485 "data/maps/AsfalHills/scripts.pory"
+	waitmovement 0
 # 486 "data/maps/AsfalHills/scripts.pory"
-	delay 20
+	delay 5
 # 487 "data/maps/AsfalHills/scripts.pory"
-	completequest QUEST_BEAT_CHIMERA_SOFOS_CITY
+	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
+# 488 "data/maps/AsfalHills/scripts.pory"
+	msgbox AsfalHills_EventScript_NikoWaitingForPlayer_Text_2
 # 489 "data/maps/AsfalHills/scripts.pory"
+	closemessage
+# 490 "data/maps/AsfalHills/scripts.pory"
+	delay 10
+# 491 "data/maps/AsfalHills/scripts.pory"
+	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
+# 492 "data/maps/AsfalHills/scripts.pory"
+	msgbox AsfalHills_EventScript_NikoWaitingForPlayer_Text_3
+# 493 "data/maps/AsfalHills/scripts.pory"
+	closemessage
+# 494 "data/maps/AsfalHills/scripts.pory"
+	giveitem ITEM_HM_SURF
+# 495 "data/maps/AsfalHills/scripts.pory"
+	closemessage
+# 496 "data/maps/AsfalHills/scripts.pory"
+	delay 5
+# 497 "data/maps/AsfalHills/scripts.pory"
+	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
+# 498 "data/maps/AsfalHills/scripts.pory"
+	msgbox AsfalHills_EventScript_NikoWaitingForPlayer_Text_4
+# 499 "data/maps/AsfalHills/scripts.pory"
+	closemessage
+# 500 "data/maps/AsfalHills/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 501 "data/maps/AsfalHills/scripts.pory"
+	delay 20
+# 502 "data/maps/AsfalHills/scripts.pory"
+	setflag FLAG_HIDE_NIKO_ASFAL_HILLS
+# 503 "data/maps/AsfalHills/scripts.pory"
+	removeobject 7
+# 504 "data/maps/AsfalHills/scripts.pory"
+	removeobject 8
+# 505 "data/maps/AsfalHills/scripts.pory"
+	setflag FLAG_HIDE_BLOCKING_SOFOS_GYM
+# 506 "data/maps/AsfalHills/scripts.pory"
+	setflag FLAG_UNLOCKED_MEGA_EVOLUTION
+# 507 "data/maps/AsfalHills/scripts.pory"
+	clearflag FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY
+# 508 "data/maps/AsfalHills/scripts.pory"
+	delay 20
+# 509 "data/maps/AsfalHills/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 510 "data/maps/AsfalHills/scripts.pory"
+	delay 10
+# 512 "data/maps/AsfalHills/scripts.pory"
+	delay 20
+# 513 "data/maps/AsfalHills/scripts.pory"
+	completequest QUEST_BEAT_CHIMERA_SOFOS_CITY
+# 515 "data/maps/AsfalHills/scripts.pory"
 	releaseall
 	end
 
 AsfalHills_EventScript_NikoWaitingForPlayer_2:
-# 450 "data/maps/AsfalHills/scripts.pory"
+# 476 "data/maps/AsfalHills/scripts.pory"
 	speakername AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0
-# 451 "data/maps/AsfalHills/scripts.pory"
+# 477 "data/maps/AsfalHills/scripts.pory"
 	msgbox AsfalHills_EventScript_NikoWaitingForPlayer_Text_1
-# 452 "data/maps/AsfalHills/scripts.pory"
+# 478 "data/maps/AsfalHills/scripts.pory"
 	closemessage
-# 453 "data/maps/AsfalHills/scripts.pory"
+# 479 "data/maps/AsfalHills/scripts.pory"
 	release
 	end
 
@@ -789,10 +829,11 @@ AsfalHills_EventScript_OfficerBlockingPath_Text_0:
 
 AsfalHills_EventScript_OfficerBlockingPath_Text_1:
 # 242 "data/maps/AsfalHills/scripts.pory"
-	.string "Corrin Crossing is currently unsafe to\n"
-	.string "travel due to a high number of\l"
-	.string "sinkholes. Come back later, when the\l"
-	.string "situation has stabilized.$"
+	.string "Corrin Crossing is currently blocked\n"
+	.string "off. {COLOR GREEN}Areios Town{COLOR DARK_GRAY} was captured by Team\l"
+	.string "Chimera, so we have {COLOR GREEN}Port Pello{COLOR DARK_GRAY} on\l"
+	.string "lockdown to prevent harm from coming\l"
+	.string "to it. Please come back later.$"
 
 AsfalHills_EventScript_ManTryingToGetSouth_Text_0:
 # 253 "data/maps/AsfalHills/scripts.pory"
@@ -807,15 +848,15 @@ AsfalHills_EventScript_ManTryingToGetSouth_Text_2:
 # 259 "data/maps/AsfalHills/scripts.pory"
 	.string "Can you believe this?! Blocking the\n"
 	.string "path to a major city like it's nothing. I\l"
-	.string "have to wonder why they're really\l"
-	.string "stopping us from going south.$"
+	.string "know Team Chimera is dangerous, but\l"
+	.string "life must go on... Right?$"
 
 AsfalHills_EventScript_WomanTryingToGetSouth_Text_0:
 # 271 "data/maps/AsfalHills/scripts.pory"
 	.string "Beauty$"
 
 AsfalHills_EventScript_WomanTryingToGetSouth_Text_1:
-# 272 "data/maps/AsfalHills/scripts.pory"
+# 274 "data/maps/AsfalHills/scripts.pory"
 	.string "Areios Town, the hamlet south of Port\n"
 	.string "Pello, was taken over by Team Chimera a\l"
 	.string "few months ago. Now, we're even being\l"
@@ -823,63 +864,88 @@ AsfalHills_EventScript_WomanTryingToGetSouth_Text_1:
 	.string "to stop Team Chimera before the whole\l"
 	.string "region falls apart!$"
 
+AsfalHills_EventScript_WomanTryingToGetSouth_Text_2:
+# 278 "data/maps/AsfalHills/scripts.pory"
+	.string "Access to Port Pello has been opened up\n"
+	.string "again! I hear a brave Trainer has been\l"
+	.string "causing problems for Team Chimera,\l"
+	.string "making it safer for everyone to travel\l"
+	.string "again.$"
+
 AsfalHills_EventScript_Trainer_AsfalHills_Prothoe_Text_0:
-# 281 "data/maps/AsfalHills/scripts.pory"
+# 288 "data/maps/AsfalHills/scripts.pory"
 	.string "Prothoe$"
 
 AsfalHills_EventScript_Trainer_AsfalHills_Prothoe_Text_1:
-# 282 "data/maps/AsfalHills/scripts.pory"
+# 289 "data/maps/AsfalHills/scripts.pory"
 	.string "Sofos City is huge! It's certainly\n"
 	.string "pretty, but there's a certain beauty to\l"
 	.string "the wilderness out here, too.$"
 
 AsfalHills_EventScript_Trainer_AsfalHills_Batto_Text_0:
-# 299 "data/maps/AsfalHills/scripts.pory"
+# 306 "data/maps/AsfalHills/scripts.pory"
 	.string "Batto$"
 
 AsfalHills_EventScript_Trainer_AsfalHills_Batto_Text_1:
-# 300 "data/maps/AsfalHills/scripts.pory"
+# 307 "data/maps/AsfalHills/scripts.pory"
 	.string "My favorite part about the city is the\n"
 	.string "Arcade! You can play Pinball to win all\l"
 	.string "these cool prizes, it's the best!$"
 
 AsfalHills_EventScript_OldMan_Text_0:
-# 318 "data/maps/AsfalHills/scripts.pory"
+# 325 "data/maps/AsfalHills/scripts.pory"
 	.string "Old Man$"
 
 AsfalHills_EventScript_OldMan_Text_1:
-# 319 "data/maps/AsfalHills/scripts.pory"
+# 326 "data/maps/AsfalHills/scripts.pory"
 	.string "Back in my day, Sofos City was half the\n"
 	.string "size it is now. I moved out here because\l"
 	.string "the inner city got too busy for an old\l"
 	.string "man like me.$"
 
 AsfalHills_EventScript_Hiker_Text_0:
-# 329 "data/maps/AsfalHills/scripts.pory"
+# 336 "data/maps/AsfalHills/scripts.pory"
 	.string "Hiker$"
 
 AsfalHills_EventScript_Hiker_Text_1:
-# 330 "data/maps/AsfalHills/scripts.pory"
+# 337 "data/maps/AsfalHills/scripts.pory"
 	.string "I hiked all the way down from the\n"
 	.string "mountains in the north. I'm exhausted,\l"
 	.string "but it was totally worth it!$"
 
 AsfalHills_EventScript_NikoMeetPlayerEvent_Text_0:
-# 348 "data/maps/AsfalHills/scripts.pory"
+# 355 "data/maps/AsfalHills/scripts.pory"
 	.string "Niko$"
 
 AsfalHills_EventScript_NikoMeetPlayerEvent_Text_1:
-# 349 "data/maps/AsfalHills/scripts.pory"
+# 356 "data/maps/AsfalHills/scripts.pory"
 	.string "{PLAYER}? Opa! I thought it was you!\n"
 	.string "Here, come look at these statues.$"
 
 AsfalHills_EventScript_NikoMeetPlayerEvent_Text_2:
-# 359 "data/maps/AsfalHills/scripts.pory"
+# 366 "data/maps/AsfalHills/scripts.pory"
 	.string "Ehehe, looks like Duskull remembers you\n"
 	.string "too!$"
 
 AsfalHills_EventScript_NikoMeetPlayerEvent_Text_3:
-# 369 "data/maps/AsfalHills/scripts.pory"
+# 376 "data/maps/AsfalHills/scripts.pory"
+	.string "In fact, Duskull seems like it wants to\n"
+	.string "battle you... I'm not much of a battler,\l"
+	.string "but I'll give it my all!$"
+
+AsfalHills_EventScript_NikoMeetPlayerEvent_Text_4:
+# 384 "data/maps/AsfalHills/scripts.pory"
+	.string "Phew, you might even be a better\n"
+	.string "Trainer than Rania...$"
+
+AsfalHills_EventScript_NikoMeetPlayerEvent_Text_5:
+# 389 "data/maps/AsfalHills/scripts.pory"
+	.string "D-don't tell her I said that!\p"
+	.string "Ahem, right, I called you over for a\n"
+	.string "reason. Here, look at these statues.$"
+
+AsfalHills_EventScript_NikoMeetPlayerEvent_Text_6:
+# 395 "data/maps/AsfalHills/scripts.pory"
 	.string "These were two brothers who lived back\n"
 	.string "when the Ilios Region was young. On the\l"
 	.string "left was a mighty king, while to the\l"
@@ -896,8 +962,8 @@ AsfalHills_EventScript_NikoMeetPlayerEvent_Text_3:
 	.string "weathered, while the statue of the poet\l"
 	.string "is cleaned and cared for.$"
 
-AsfalHills_EventScript_NikoMeetPlayerEvent_Text_4:
-# 376 "data/maps/AsfalHills/scripts.pory"
+AsfalHills_EventScript_NikoMeetPlayerEvent_Text_7:
+# 402 "data/maps/AsfalHills/scripts.pory"
 	.string "Ahem, sorry for the info dump. The point\n"
 	.string "is, there are more important things in\l"
 	.string "the world than money and power.\p"
@@ -917,19 +983,19 @@ AsfalHills_EventScript_NikoMeetPlayerEvent_Text_4:
 	.string "hands on it!$"
 
 AsfalHills_EventScript_Duskull_Text_0:
-# 426 "data/maps/AsfalHills/scripts.pory"
+# 452 "data/maps/AsfalHills/scripts.pory"
 	.string "Duskull$"
 
 AsfalHills_EventScript_Duskull_Text_1:
-# 428 "data/maps/AsfalHills/scripts.pory"
+# 454 "data/maps/AsfalHills/scripts.pory"
 	.string "Kaaahhh...$"
 
 AsfalHills_EventScript_Duskull_Text_2:
-# 432 "data/maps/AsfalHills/scripts.pory"
+# 458 "data/maps/AsfalHills/scripts.pory"
 	.string "Duskull is studying the statue closely.$"
 
 AsfalHills_EventScript_NikoWaitingForPlayer_Text_0:
-# 443 "data/maps/AsfalHills/scripts.pory"
+# 469 "data/maps/AsfalHills/scripts.pory"
 	.string "Chaire, {PLAYER}. I'm sorry for\n"
 	.string "sending you on such a dangerous quest,\l"
 	.string "but I'm afraid I'm not much of a Pokémon\l"
@@ -938,7 +1004,7 @@ AsfalHills_EventScript_NikoWaitingForPlayer_Text_0:
 	.string "around Sofos City?$"
 
 AsfalHills_EventScript_NikoWaitingForPlayer_Text_1:
-# 451 "data/maps/AsfalHills/scripts.pory"
+# 477 "data/maps/AsfalHills/scripts.pory"
 	.string "Hmm, I don't see the {COLOR GREEN}Key Stone{COLOR DARK_GRAY} with you.\n"
 	.string "Please, we can't let Team Chimera keep\l"
 	.string "that, it's a precious artifact that may\l"
@@ -948,7 +1014,7 @@ AsfalHills_EventScript_NikoWaitingForPlayer_Text_1:
 	.string "Key Stone{COLOR DARK_GRAY}!$"
 
 AsfalHills_EventScript_NikoWaitingForPlayer_Text_2:
-# 462 "data/maps/AsfalHills/scripts.pory"
+# 488 "data/maps/AsfalHills/scripts.pory"
 	.string "Woah, you got it! The aura radiating\n"
 	.string "around it... it can only mean one thing,\l"
 	.string "my hunch was correct.\p"
@@ -969,7 +1035,7 @@ AsfalHills_EventScript_NikoWaitingForPlayer_Text_2:
 	.string "you.$"
 
 AsfalHills_EventScript_NikoWaitingForPlayer_Text_3:
-# 466 "data/maps/AsfalHills/scripts.pory"
+# 492 "data/maps/AsfalHills/scripts.pory"
 	.string "What a wreck! I'm glad you were here to\n"
 	.string "help, {PLAYER}. This has been way too\l"
 	.string "much excitement for me, so I'll be\l"
@@ -979,7 +1045,7 @@ AsfalHills_EventScript_NikoWaitingForPlayer_Text_3:
 	.string "Take this!$"
 
 AsfalHills_EventScript_NikoWaitingForPlayer_Text_4:
-# 472 "data/maps/AsfalHills/scripts.pory"
+# 498 "data/maps/AsfalHills/scripts.pory"
 	.string "The HM Surf will allow you to cross the\n"
 	.string "waters of Ilios. Of course, you need the\l"
 	.string "Gym Badge from Sofos City to use it!\p"
@@ -1054,20 +1120,25 @@ AsfalHills_Text_Trainer_AsfalHills_ArisbeDefeat::
 	.string "How could you fight my cuties?!$"
 
 AsfalHills_Text_Trainer_AsfalHills_ProthoeIntro::
-# 287 "data/maps/AsfalHills/scripts.pory"
+# 294 "data/maps/AsfalHills/scripts.pory"
 	.string "We're not far from the suburbs around\n"
 	.string "Sofos City. Battle me before you go!$"
 
 AsfalHills_Text_Trainer_AsfalHills_ProthoeDefeat::
-# 291 "data/maps/AsfalHills/scripts.pory"
+# 298 "data/maps/AsfalHills/scripts.pory"
 	.string "My Pokémon need a rest now!$"
 
 AsfalHills_Text_Trainer_AsfalHills_BattoIntro::
-# 305 "data/maps/AsfalHills/scripts.pory"
+# 312 "data/maps/AsfalHills/scripts.pory"
 	.string "Finally, I can see the walls of the city\n"
 	.string "from here!$"
 
 AsfalHills_Text_Trainer_AsfalHills_BattoDefeat::
-# 309 "data/maps/AsfalHills/scripts.pory"
+# 316 "data/maps/AsfalHills/scripts.pory"
 	.string "I guess my first stop is a Pokémon\n"
 	.string "Center!$"
+
+AsfalHills_Text_NikoLose::
+# 519 "data/maps/AsfalHills/scripts.pory"
+	.string "Urk... Like I said, I've never been much\n"
+	.string "of a battler.$"

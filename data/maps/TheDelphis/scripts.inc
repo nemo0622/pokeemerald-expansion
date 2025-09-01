@@ -267,14 +267,14 @@ TheDelphis_EventScript_LeaveShipTrigger_12:
 
 TheDelphis_EventScript_LeaveShipTrigger_13:
 # 150 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_PALATI_CITY, 39, 19
+	warp MAP_PALATI_CITY, 26, 10
 # 151 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1
 
 TheDelphis_EventScript_LeaveShipTrigger_14:
 # 155 "data/maps/TheDelphis/scripts.pory"
-	warp MAP_PORT_PELLO, 22, 19
+	warp MAP_PORT_PELLO, 41, 29
 # 156 "data/maps/TheDelphis/scripts.pory"
 	waitstate
 	goto TheDelphis_EventScript_LeaveShipTrigger_1

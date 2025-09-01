@@ -499,6 +499,16 @@ static const u16 sGyaradosFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_MAGIKARP
 
+#if P_FAMILY_BELLSPROUT
+static const u16 sVictreebelFormSpeciesIdTable[] = {
+    SPECIES_VICTREEBEL,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_VICTREEBEL_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_BELLSPROUT
+
 #if P_FAMILY_LAPRAS
 static const u16 sLaprasFormSpeciesIdTable[] = {
     SPECIES_LAPRAS,
@@ -1578,6 +1588,16 @@ static const u16 sHelioliskFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_HELIOPTILE
 
+#if P_FAMILY_HAWLUCHA
+static const u16 sHawluchaFormSpeciesIdTable[] = {
+    SPECIES_HAWLUCHA,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_HAWLUCHA_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_HAWLUCHA
+
 #if P_FAMILY_GOOMY
 static const u16 sSliggooFormSpeciesIdTable[] = {
     SPECIES_SLIGGOO,
@@ -1707,9 +1727,7 @@ static const u16 sOricorioFormSpeciesIdTable[] = {
 #if P_FAMILY_CUTIEFLY
 static const u16 sRibombeeFormSpeciesIdTable[] = {
     SPECIES_RIBOMBEE,
-#if P_MEGA_EVOLUTIONS
     SPECIES_RIBOMBEE_MEGA,
-#endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_CUTIEFLY

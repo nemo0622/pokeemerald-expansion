@@ -1806,6 +1806,10 @@ extern const u32 gItemIcon_Cyclizite_S[];
 extern const u32 gItemIconPalette_Cyclizite_S[];
 extern const u32 gItemIcon_Cyclizite_V[];
 extern const u32 gItemIconPalette_Cyclizite_V[];
+extern const u32 gItemIcon_Victreebite[];
+extern const u32 gItemIconPalette_Victreebite[];
+extern const u32 gItemIcon_Hawluchite[];
+extern const u32 gItemIconPalette_Hawluchite[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];

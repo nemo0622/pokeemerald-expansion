@@ -2,7 +2,7 @@
   "id": "MAP_SATYRS_LAIR",
   "name": "SatyrsLair",
   "layout": "LAYOUT_SATYRS_LAIR",
-  "music": "MUS_RG_MT_MOON",
+  "music": "MUS_CAVE_OF_ORIGIN",
   "region_map_section": "MAPSEC_SOFOS_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -87,6 +87,13 @@
       "elevation": 0,
       "dest_map": "MAP_SOFOS_CITY",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_SATYRS_LAIR_DEEP",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -98,6 +105,15 @@
       "var": "FLAG_HIDE_TERPSIKORE_SATYRS_LAIR",
       "var_value": "0",
       "script": "SatyrsLair_EventScript_ChimeraEvent"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SatyrsLair_EventScript_TryToEnterDeep"
     }
   ],
   "bg_events": [

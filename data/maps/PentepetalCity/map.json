@@ -624,6 +624,32 @@
       "trainer_sight_or_berry_tree_id": "ITEM_LOVE_BALL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_PENTEPETAL_LOVE_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 36,
+      "y": 36,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_PENTEPETAL_RAWST",
+      "script": "BerryTreeScript",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 37,
+      "y": 36,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_PENTEPETAL_SITRUS",
+      "script": "BerryTreeScript",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -747,6 +773,51 @@
       "var": "FLAG_HIDE_RANIA_PENTEPETAL_CITY",
       "var_value": "0",
       "script": "PentepetalCity_Trigger_RaniaChimeraEvent"
+    },
+    {
+      "type": "trigger",
+      "x": 50,
+      "y": 9,
+      "elevation": 0,
+      "var": "FLAG_UNLOCKED_RUINS_OF_AHIYAWA",
+      "var_value": "0",
+      "script": "PentepetalCity_EventScript_BlockPollenPath"
+    },
+    {
+      "type": "trigger",
+      "x": 50,
+      "y": 10,
+      "elevation": 0,
+      "var": "FLAG_UNLOCKED_RUINS_OF_AHIYAWA",
+      "var_value": "0",
+      "script": "PentepetalCity_EventScript_BlockPollenPath"
+    },
+    {
+      "type": "trigger",
+      "x": 50,
+      "y": 11,
+      "elevation": 0,
+      "var": "FLAG_UNLOCKED_RUINS_OF_AHIYAWA",
+      "var_value": "0",
+      "script": "PentepetalCity_EventScript_BlockPollenPath"
+    },
+    {
+      "type": "trigger",
+      "x": 50,
+      "y": 12,
+      "elevation": 0,
+      "var": "FLAG_UNLOCKED_RUINS_OF_AHIYAWA",
+      "var_value": "0",
+      "script": "PentepetalCity_EventScript_BlockPollenPath"
+    },
+    {
+      "type": "trigger",
+      "x": 50,
+      "y": 13,
+      "elevation": 0,
+      "var": "FLAG_UNLOCKED_RUINS_OF_AHIYAWA",
+      "var_value": "0",
+      "script": "PentepetalCity_EventScript_BlockPollenPath"
     }
   ],
   "bg_events": [

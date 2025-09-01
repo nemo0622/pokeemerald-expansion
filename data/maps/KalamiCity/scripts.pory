@@ -197,7 +197,7 @@ script Common_EventScript_Piraeus
         {
             setvar(VAR_CHOSEN_SAIL_LOCATION, 10)
             speakername("Piraeus")
-            msgbox(format("Port Pello! Their cherry trees are world-famous! They say the gods blessed the lands. How about we see it for ourselves?"))
+            msgbox(format("Port Pello! Their cherry trees are world-famous! They say a magic Tropius blessed their lands. How about we see it for ourselves?"))
             closemessage
             warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
             waitstate

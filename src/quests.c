@@ -638,7 +638,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_7,
 	      gText_SideQuestDoneDesc_7,
 	      gText_SideQuestMap7,
-	      SPECIES_UNOWN_QMARK,
+	      SPECIES_MIENFOO,
 	      PKMN,
 	      NULL,
 	      0
@@ -648,7 +648,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_8,
 	      gText_SideQuestDoneDesc_8,
 	      gText_SideQuestMap8,
-	      SPECIES_UNOWN_QMARK,
+	      SPECIES_TENTACRUEL,
 	      PKMN,
 	      NULL,
 	      0
@@ -658,7 +658,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_9,
 	      gText_SideQuestDoneDesc_9,
 	      gText_SideQuestMap9,
-	      SPECIES_UNOWN_QMARK,
+	      SPECIES_STEELIX,
 	      PKMN,
 	      NULL,
 	      0
@@ -668,7 +668,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_10,
 	      gText_SideQuestDoneDesc_10,
 	      gText_SideQuestMap10,
-	      SPECIES_UNOWN_QMARK,
+	      SPECIES_TOUCANNON,
 	      PKMN,
 	      NULL,
 	      0
@@ -678,7 +678,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_11,
 	      gText_SideQuestDoneDesc_11,
 	      gText_SideQuestMap11,
-	      SPECIES_UNOWN_QMARK,
+	      SPECIES_HYDRAPPLE,
 	      PKMN,
 	      NULL,
 	      0
@@ -1210,6 +1210,46 @@ side_quest(
 	gText_SideQuestMap62,
 	SPECIES_RAYQUAZA,
 	PKMN,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_65, // QUEST_DIOXIPPUS_BERRIES
+	gText_SideQuestDesc_65,
+	gText_SideQuestDesc_65,
+	gText_SideQuestMap65,
+	ITEM_LUM_BERRY,
+	ITEM,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_66, // QUEST_SHOW_CYCLIZAR_DEX_PORT_PELLO
+	gText_SideQuestDesc_66,
+	gText_SideQuestDesc_66,
+	gText_SideQuestMap66,
+	SPECIES_CYCLIZAR,
+	PKMN,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_67, // QUEST_SHOW_PIKACHU_FOR_PICHU
+	gText_SideQuestDesc_67,
+	gText_SideQuestDesc_67,
+	gText_SideQuestMap67,
+	OBJ_EVENT_GFX_POKEFAN_F,
+	OBJECT,
+	NULL,
+	0
+),
+side_quest(
+	gText_SideQuestName_68, // QUEST_STRANGE_SOUVENIRS_FOR_SAILOR
+	gText_SideQuestDesc_68,
+	gText_SideQuestDesc_68,
+	gText_SideQuestMap68,
+	ITEM_STRANGE_SOUVENIR,
+	ITEM,
 	NULL,
 	0
 ),

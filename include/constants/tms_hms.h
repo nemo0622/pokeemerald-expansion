@@ -57,7 +57,9 @@
     F(POWER_UP_PUNCH) \
     F(DAZZLING_GLEAM) \
     F(SNARL) \
-    F(SCALD)
+    F(SCALD) \
+    F(ROOST) \
+    F(THUNDER_WAVE)
 
 #define FOREACH_HM(F) \
     F(CUT) \

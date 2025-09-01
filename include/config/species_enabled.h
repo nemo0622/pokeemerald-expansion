@@ -83,7 +83,7 @@
 #define P_FAMILY_POLIWAG                 P_GEN_1_POKEMON
 #define P_FAMILY_ABRA                    FALSE
 #define P_FAMILY_MACHOP                  FALSE
-#define P_FAMILY_BELLSPROUT              FALSE
+#define P_FAMILY_BELLSPROUT              P_GEN_1_POKEMON
 #define P_FAMILY_TENTACOOL               P_GEN_1_POKEMON
 #define P_FAMILY_GEODUDE                 FALSE
 #define P_FAMILY_PONYTA                  P_GEN_1_POKEMON
@@ -409,7 +409,7 @@
 #define P_FAMILY_HELIOPTILE              P_GEN_6_POKEMON
 #define P_FAMILY_TYRUNT                  P_GEN_6_POKEMON
 #define P_FAMILY_AMAURA                  P_GEN_6_POKEMON
-#define P_FAMILY_HAWLUCHA                FALSE
+#define P_FAMILY_HAWLUCHA                P_GEN_6_POKEMON
 #define P_FAMILY_DEDENNE                 P_GEN_6_POKEMON
 #define P_FAMILY_CARBINK                 FALSE
 #define P_FAMILY_GOOMY                   P_GEN_6_POKEMON

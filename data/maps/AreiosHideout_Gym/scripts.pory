@@ -1,0 +1,295 @@
+mapscripts AreiosHideout_Gym_MapScripts {}
+
+script AreiosHideout_Gym_EventScript_Mamoswine
+{
+    lock
+    faceplayer
+    speakername("Mamoswine")
+    playmoncry(SPECIES_MAMOSWINE, CRY_MODE_NORMAL)
+    msgbox("Moowrah!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_Gym_EventScript_ArcanineHisuian
+{
+    lock
+    faceplayer
+    speakername("Arcanine")
+    playmoncry(SPECIES_ARCANINE_HISUIAN, CRY_MODE_NORMAL)
+    msgbox("Grrowr!!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_Gym_EventScript_GougingFire
+{
+    lock
+    faceplayer
+    speakername("Gouging Fire")
+    playmoncry(SPECIES_GOUGING_FIRE, CRY_MODE_NORMAL)
+    msgbox("Gyaurr...")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Gouging Fire seems apprehensive. Maybe it doesn't want to fight for Team Chimera..."))
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_Gym_EventScript_RagingBolt
+{
+    lock
+    faceplayer
+    speakername("Raging Bolt")
+    playmoncry(SPECIES_RAGING_BOLT, CRY_MODE_NORMAL)
+    msgbox("Kyraurhh...")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Raging Bolt seems apprehensive. Maybe it doesn't want to fight for Team Chimera..."))
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_Gym_EventScript_WalkingWake
+{
+    lock
+    faceplayer
+    speakername("Walking Wake")
+    playmoncry(SPECIES_WALKING_WAKE, CRY_MODE_NORMAL)
+    msgbox("Grayuu...")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Walking Wake seems apprehensive. Maybe it doesn't want to fight for Team Chimera..."))
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_Gym_EventScript_ChimeraAdminF
+{
+    trainerbattle_single(TRAINER_AREIOS_CHIMERA_ADMIN_F, AreiosHideout_Gym_Text_ChimeraAdminFIntro, AreiosHideout_Gym_Text_ChimeraAdminFDefeat)
+    speakername("Chimera Admin")
+    msgbox(format("These defeats have been humiliating. Maybe... Maybe Team Chimera isn't the future..."))
+    closemessage
+    release
+    end
+}
+
+text AreiosHideout_Gym_Text_ChimeraAdminFIntro
+{
+    format("You...! You followed us all the way here?!\p No matter. We're ready for a final showdown. You'll learn once and for all that Team Chimera is not to be trifled with!")
+}
+
+text AreiosHideout_Gym_Text_ChimeraAdminFDefeat
+{
+    format("I can't believe it... Kalliope better be ready for you.")
+}
+
+script AreiosHideout_Gym_EventScript_ChimeraAdminM
+{
+    trainerbattle_single(TRAINER_AREIOS_CHIMERA_ADMIN_M, AreiosHideout_Gym_Text_ChimeraAdminMIntro, AreiosHideout_Gym_Text_ChimeraAdminMDefeat)
+    speakername("Chimera Admin")
+    msgbox(format("Your victories have been meaningless. Kalliope has all three Legendary Beasts under her control, you'll never win!"))
+    closemessage
+    release
+    end
+}
+
+text AreiosHideout_Gym_Text_ChimeraAdminMIntro
+{
+    format("I cannot BELIEVE that you've tailed us so far. Coming into our Hideout... That's bold.\p With Kalliope watching, I will destroy you and bring pride to Team Chimera!")
+}
+
+text AreiosHideout_Gym_Text_ChimeraAdminMDefeat
+{
+    format("No! Now my socks are wet AND I've lost?!")
+}
+
+// -----------------------------------------------------------------------------------------------------
+
+script AreiosHideout_Gym_EventScript_Kalliope
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_HARD_MODE))
+    {
+        goto(AreiosHideout_Gym_EventScript_Kalliope_NormalDifficulty)
+    }
+    else
+    {
+        goto(AreiosHideout_Gym_EventScript_Kalliope_HardDifficulty)
+    }
+    release
+    end
+}
+
+script AreiosHideout_Gym_EventScript_Kalliope_NormalDifficulty // called when on normal difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_KALLIOPE, AreiosHideout_Gym_Text_KalliopeIntro, AreiosHideout_Gym_Text_KalliopeDefeat, AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript, NO_MUSIC)
+    speakername("Kalliope")
+    msgbox(format("dialogue inaccessible"))
+    closemessage
+    release
+    end
+}
+script AreiosHideout_Gym_EventScript_Kalliope_HardDifficulty // called when on hard difficulty
+{
+    trainerbattle_single(TRAINER_LEADER_KALLIOPE_HARD, AreiosHideout_Gym_Text_KalliopeIntro, AreiosHideout_Gym_Text_KalliopeDefeat, AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript, NO_MUSIC)
+    speakername("Kalliope")
+    msgbox(format("dialogue inaccessible"))
+    closemessage
+    release
+    end
+}
+text AreiosHideout_Gym_Text_KalliopeIntro
+{
+    format("As expected, you can't just let things go, can you {PLAYER}?\p Once, I was the Eighth Muse of the Ilios Region, counted among the most highly-respected Trainers. But even with all that respect, I was so... {COLOR RED}bored{COLOR DARK_GRAY}. I needed {COLOR RED}more{COLOR DARK_GRAY} - more power, more wealth, more everything. That's why I formed Team Chimera and led the destruction of my own town.\p It's all-or-nothing now, {PLAYER}. Let's have one final showdown, here and now!")
+}
+text AreiosHideout_Gym_Text_KalliopeDefeat
+{
+    format("NOOO! How could this HAPPEN?!")
+}
+// Script called when you defeat the gym leader!
+script AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript
+{
+    emote(5, EMOTE_QUESTION)
+
+    fadescreenspeed(FADE_TO_WHITE, 2)
+    delay(15)
+    setflag(FLAG_HIDE_LEGENDARY_BEASTS_AREIOS_GYM)
+    removeobject(6)
+    removeobject(7)
+    removeobject(8)
+    clearflag(FLAG_HIDE_LEGENDARY_DOGS_AREIOS_GYM)
+    addobject(9)
+    addobject(10)
+    addobject(11)
+    delay(15)
+    fadescreen(FADE_FROM_WHITE)
+    delay(20)
+
+    emote(5, EMOTE_EXCLAM)
+    speakername("Kalliope")
+    msgbox(format("{COLOR RED}WHAT?!{COLOR DARK_GRAY} My Legendary Beasts! {COLOR RED}OBEY ME!!{COLOR DARK_GRAY}"))
+    closemessage
+
+    // Entei and Suicune run
+    applymovement(9, AreiosHideout_Gym_Movement_EnteiRunAway)
+    applymovement(11, AreiosHideout_Gym_Movement_SuicuneRunAway)
+    waitmovement(0)
+
+    // Raikou gives Player the badge then leaves
+    applymovement(5, Common_Movement_ExclamationMark)
+    applymovement(10, Common_Movement_JumpInPlaceLeft)
+    waitmovement(0)
+    applymovement(10, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(10, Common_Movement_FaceLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+
+    setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes message bug i think
+    message(format("Raikou snatched the Myth Badge from Kalliope and placed it at your feet!\p {PLAYER} received the Myth Badge!"))
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+    // Set gym completion flags
+    setflag(FLAG_BADGE08_GET)
+    closemessage
+
+    applymovement(10, AreiosHideout_Gym_Movement_RaikouRunAway)
+    waitmovement(0)
+
+    // Kalliope admits defeat
+    delay(10)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Kalliope")
+    msgbox(format("Ehehe... Fwahaha... BWAHAHAHA! Abandoned by my own Pokémon!\p Without Legendary Pokémon behind us, we are lost. I've heard that {COLOR GREEN}Gym Leaders{COLOR DARK_GRAY} from across the region are coming to reclaim Areios Town as well. I fear that... That Team Chimera is finished.\p This can't have been for nothing. I refuse to believe that my life's work, the plans I've considered for decades, and my chances for power have been stopped!\p {COLOR RED}ADMINS{COLOR DARK_GRAY}! Make your Arcanine and Mamoswine use Dig, get us {COLOR RED}out of here{COLOR DARK_GRAY}!"))
+    closemessage
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM)
+
+    // Kalliope, Admins, and all other Team Chimera grunts vanish!
+    fadescreenspeed(FADE_TO_BLACK, 2)
+    delay(15)
+    setflag(FLAG_HIDE_LEGENDARY_DOGS_AREIOS_GYM)
+    removeobject(9)
+    removeobject(10)
+    removeobject(11)
+    setflag(FLAG_DEFEATED_TEAM_CHIMERA_IN_AREIOS)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    removeobject(4)
+    removeobject(5)
+    delay(15)
+    fadescreen(FADE_FROM_BLACK)
+    delay(20)
+
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_QUESTION)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    delay(20)
+
+    msgbox(format("{COLOR RED}Kalliope{COLOR DARK_GRAY} and the {COLOR RED}Chimera Admins{COLOR DARK_GRAY} have completely vanished...\p In the rubble, a TM is sticking out."))
+    closemessage
+    // Give TM reward
+    giveitem(ITEM_TM_DRAGON_CLAW)
+
+    // complete gym quest and begin next one
+    delay(20)
+    completequest(QUEST_GYM_8)
+
+    delay(10)
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM)
+    msgbox(format("There's a huge commotion outside!"))
+    closemessage
+
+    // set Niko and Rania state variables if necessary
+    clearflag(FLAG_HIDE_RANIA_AND_LEADERS_AREIOS)
+
+    setflag(FLAG_HIDE_MAP_NAME_POPUP)
+    warpcontinuescript(MAP_AREIOS_HIDEOUT, 6, 11, AreiosHideout_EventScript_ChimeraLossScript)
+    waitstate
+
+    release
+    end
+}
+
+movement AreiosHideout_Gym_Movement_EnteiRunAway
+{
+    walk_fast_right
+    jump_down
+    jump_right
+    walk_fast_down * 6
+    step_end
+}
+movement AreiosHideout_Gym_Movement_SuicuneRunAway
+{
+    walk_fast_left * 2
+    walk_fast_down * 2
+    jump_down * 2
+    walk_fast_down * 3
+    step_end
+}
+movement AreiosHideout_Gym_Movement_RaikouRunAway
+{
+    walk_fast_down * 2
+    jump_down * 2
+    walk_fast_down * 3
+    step_end
+}

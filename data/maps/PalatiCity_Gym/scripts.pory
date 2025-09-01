@@ -312,3 +312,19 @@ script PalatiCity_Gym_EventScript_Rhadine_DefeatedScript
     release
     end
 }
+
+script PalatiCity_Gym_EventScript_GymStatue
+{
+    lock
+    if(flag(FLAG_BADGE07_GET))
+    {
+        msgbox(format("Palati City Pokémon Gym\p Recent Victors: Rania, {PLAYER}"))
+    }
+    else
+    {
+        msgbox(format("Palati City Pokémon Gym\p Recent Victors: Rania"))
+    }
+    closemessage
+    release
+    end
+}

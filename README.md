@@ -40,7 +40,8 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
     - Normal Mode: Soft Level Caps, Standard Gym Leader teams. Can likely beat the game with most Pokémon teams, with a few battles requiring extra planning.
     - Hard Mode: Hard Level Caps, Modified Gym Leaders to be more difficult fights. Opponents gain extra levels as the game progresses, ending in a +5 level bonus to opponents. Planning before Gym battles is key, as their Pokémon have stronger moves and more coverage.
 - Minigames and Side Content scattered across the Ilios Region, adding more to do:
-    - Pinball in Sofos City, earning Pinball Points to exchange for items
+    - Own a Cabin in a sailor's ship, which can be customized to your liking (essentially a Secret Base!)
+    - Play Pinball in Sofos City, earning Pinball Points to exchange for items
     - Battle Pavilions in multiple areas, replicating Battle Tents of Pokémon Emerald with new Pokémon and balancing
     - Pokémon Contests, with slight stat bonuses given to Pokémon with Ribbons
     - Mining Expeditions on Marmaro Island, providing shards, fossils, and more!
@@ -70,19 +71,12 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 MAJOR TODOS:
 - Continue Mapping and NPC development
     - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
+- After completing above, PUT GAME ON PHONE AND START A TEST RUN!
 
-- Continue Mapping and Scripting through Palati City
-- After beating Palati City Gym, have Niko and Rania run up to you in a panic as a thunderstorm starts. Say thatNiko got a call from a friend in Sofos City that Team Chimera took over their Acropolis temple, and warp theretogether immediately!
-    - This will be the legendary Pokémon / Team Chimera takeover arc! The boss, Kalliope, uses the reassembled Ancient Mechanism to summon Celebi and the Legendary Dogs to the temple. She bends Celebi to her will, using its power to convert the legendaries into their ancient forms - Walking Wake, Raging Bolt, and Gouging Fire. Kalliope and Team Chimera vanish, and extreme weather starts all over the region
-        - Extreme weather: set a flag that is checked on every outdoors map. Like how Pythios does it, when the flag is set, set the weather of the map to a random extreme weather (WEATHER_FOG_HORIZONTAL, WEATHER_DOWNPOUR, or WEATHER_DROUGHT)
-    - Niko tells player of ancient mythology of Groudon, Kyogre, and Rayquaza, the Gods of the three domains. Say that surviving art and literature mention Groudon in the Satyr's Lair, Kyogre in a Sunken Temple, and Rayquaza atop the tallest tower in the region (the Tower of Dioxippus)
-        - Recommends capturing them, as they may be the only thing strong enough to settle them
-        - At Kyogre and Groudon's locations, you'll find the TEAM CHIMERA ADMINS (Ice and Fire ones respectively) attempting to use Walking Wake / Gouging Fire to subdue the legendaries! Battle the Admins to make them run away, then capture Kyogre and Groudon
-            - The admins use powerful teams, plus Walking Wake and Gouging Fire respectively! Raging Bolt will be reserved for the final battle with Kalliope, with the signature move Thunderclap being a whole other level of threatening lol
-            - At the top of the Tower of Dioxippus, where Rayquaza is, you'll have to battle Kalliope. THE TOWER CAN ONLY BE ACCESSED AFTER FIGHTING KYOGRE AND GROUDON! Kalliope will use Raging Bolt, and after her defeat, she will be chased off by Rayquaza and return to Aerios Hideout (to her Gym!).
-    - Rania tells player that Team Chimera grunts have been spotted in an abandoned town south of Port Pello, speculating that that's where they went
-        - Also happens to be the old location for the 8th gym, hOw aBoUt tHaT! Player encouraged to head south of Port Pello and strike at the heart of Team Chimera
-        - Rania will give the Player the HM Strength, which is required to access the resting places of Groudon, Kyogre, and Rayquaza!
+- POST GAME - "Champion Title Defense"
+    - Dozens of Trainers, all with large Party Pools
+    - Every Trainer has multiple possible Aces, giving ways to show off all Mega Evolutions (ex: a Trainer's ace could be chosen from Hawlucha, Cyclizar S, and Heracross at random)
+    - Remember that Piraeus's Vaporeon is nicknamed "Nymeria"!
 
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
@@ -104,9 +98,6 @@ MAJOR TODOS:
         - The Stygian Caves - moved east of Ruins of Ahiyawa, caves leading north to Champion's Peak
         - Champion's Peak - moved northeast of Ruins of Ahiyawa, location of Elite Four obviously
 - Give all Pokémon unique Pokédex entries
-- CUSTOM MUSIC! Just experiment at first!
-    - Use [Online Signal MIDI editor](https://signal.vercel.app/?lang=en), which supports Sound Fonts! Maybe find the Emerald or Pokémon Crystal soundfont?
-    - Follow existing Pokecommunity music editing tutorial
 - Implement Chris Piché's Game Corner Expansion minigames
     - https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches#Expansion-Compatible_Game_Corner_Expansion
     - Blackjack, Ponyta Racing, and Voltorb Flip are the big ones I care about
@@ -133,23 +124,8 @@ GREEK PHRASES AND STUFF:
         "Year's End Celebration" in Acrisia City
             - idk how any of this would work I just think it's a fun idea to kick around
     - Finish implementing Prof. Elia, Rania, and Niko's gifting / interactions based on Pokédex progress
-        - Prof. Elia gifts a few helpful items and starter Pokémon with special good stats + Oval Charm
-        - Rania provides Tera Shards and other battle items (Rocky Helmet, etc) + Exp Charm
-        - Niko provides unique Pokéballs + Catching Charm, also becomes the Tera Type changer
-            - After unlocking Terastallization, increase Niko's State variable. When the state is greater than or equal to that value, have Niko ask if you're looking for Tera Type Change or Conversation (rewards, etc)
     - MISSING IMPORTANT BUILDINGS / LOCATIONS / UNLOCKS
-        - Battle Pavilions
-            - 1(Sofos City) and 2 (Myrrini Island) already added
-            - #3 could be in Port Pello?
         - Berry plant locations
-        - Fishing Rod locations (Super rod still need place)
-        - Safari Zone?
-        - Dive locations
-            - SIDE QUEST IDEA: Have a sidequest centered around the rediscovery of Relicanth, a new Lazarus Taxa rumored to be living deep underwater!
-                - This will make Relicanth feel more special, as it's the poster child for Lazarus Taxa
-        - Spiky Ear Pichu gift
-        - Wishing Star mart location
-            - Port Pello! Late game, encourages Mining Expeditions instead
 
 ## Known Bugs & Problems
 - DexNav chain count and directional arrow not shown when hunting
@@ -210,6 +186,7 @@ Many, many talented developers and artists are responsible for making this proje
     23. By Koolboyman, from Substitube public resource
     24. By N-Kin, from Substitube public resource
     25. By SuicidalSushi, recolored
+    26. By Zaebucca
     "XX, 1". Parts of sprite by Artist "XX" (from above list), edited by Nemo622
 - Trainer Sprites:
     - Amali and Harper sprited by me, based on TrainerDX GBC Trainer template sprites

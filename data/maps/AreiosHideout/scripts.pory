@@ -1,5 +1,213 @@
 mapscripts AreiosHideout_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_AREIOS_HIDEOUT)
+
+        if(flag(FLAG_HIDE_RANIA_AND_LEADERS_AREIOS))
+        {
+            setvar(VAR_TEMP_1, 1)
+        }
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(8, ENCOUNTER_LAND)
+        setobjectaswildencounter(9, ENCOUNTER_LAND)
+        setobjectaswildencounter(10, ENCOUNTER_LAND)
+        setobjectaswildencounter(11, ENCOUNTER_LAND)
     }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: AreiosHideout_EventScript_TryChimeraEvent
+    ]
+}
+
+script AreiosHideout_EventScript_TryChimeraEvent
+{
+    setvar(VAR_TEMP_1, 1)
+    if(flag(FLAG_BADGE08_GET) && !flag(FLAG_HIDE_RANIA_AND_LEADERS_AREIOS))
+    {
+        goto(MyrriniIsland_EventScript_ChimeraEvent)
+    }
+    releaseall
+    end
+}
+
+script AreiosHideout_EventScript_Nurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    if(!flag(FLAG_DEFEATED_TEAM_CHIMERA_IN_AREIOS))
+    {
+        msgbox(format("I'm being held here by Team Chimera... But you don't look like you're in-\p Ahem, I mean..."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("My savior! I'm a bit under-supplied here, but I'll always help you."))
+        closemessage
+    }
+    speakername("Nurse")
+    msgbox(format("Would you like me to heal your Pokémon?"), MSGBOX_YESNO)
+    closemessage
+    if(var(VAR_RESULT) == TRUE)
+    {
+        speakername("Nurse")
+        msgbox(format("Great, just give me a moment here."))
+        closemessage
+        applymovement(1, Common_Movement_FaceUp)
+        waitmovement(0)
+        special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        delay(60)
+        applymovement(1, Common_Movement_FaceDown)
+        waitmovement(0)
+        speakername("Nurse")
+        msgbox(format("Here's your Pokémon. Stay safe out there!"))
+        closemessage
+    }
+    release
+    end
+}
+
+script AreiosHideout_EventScript_GruntByNurse
+{
+    lock
+    faceplayer
+    speakername("Grunt")
+    msgbox(format("I'm keepin' watch on this Nurse. She'll keep our Pokémon healthy and ready for battle.\p Oh, you're missing your mask and hood, by the way."))
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_EventScript_GruntByEntrance
+{
+    lock
+    faceplayer
+    speakername("Grunt")
+    msgbox(format("Hmm... Where's your Chimera mask and cloak? Without those, it would be easy to mistake you for an intruder."))
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_EventScript_GruntByHousesEast
+{
+    lock
+    faceplayer
+    speakername("Grunt")
+    msgbox(format("Fwahaha, Areios Town fell in a single day when we attacked! Some Trainers fought back, but once Kalliope joined in, it was over."))
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_EventScript_GruntByHousesWest
+{
+    lock
+    faceplayer
+    speakername("Grunt")
+    msgbox(format("This Hideout is perfect for Team Chimera. We fished up all the Pokémon in these waters to make some cash!"))
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_EventScript_GruntSeesFlooding
+{
+    lock
+    faceplayer
+    speakername("Grunt")
+    msgbox(format("Areios Town had some small ponds, but they were maintained by the residents. When we chased them out, the ponds flooded, and we had to build log crossings.\p Go put your Chimera mask on and help us fight this flood!"))
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_EventScript_GruntByGym
+{
+    lock
+    faceplayer
+    speakername("Grunt")
+    msgbox(format("{COLOR RED}Kalliope{COLOR DARK_GRAY} and her Admins are in the Gym, working hard on their new plans. Be sure not to interrupt!"))
+    closemessage
+    release
+    end
+}
+
+script AreiosHideout_EventScript_ChimeraLossScript
+{
+    fadescreen(FADE_FROM_BLACK)
+    delay(30)
+    emote(18, EMOTE_EXCLAM) // Rania
+    applymovement(18, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("{PLAYER}! I knew you could do it!"))
+    closemessage
+    applymovement(18, Common_Movement_WalkLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("We saw {COLOR GREEN}Entei, Raikou, and Suicune{COLOR DARK_GRAY} dash out of the Gym! It seems like they've {COLOR GREEN}escaped Team Chimera's control{COLOR DARK_GRAY}. Some Chimera Grunts escaped in the chaos, and from the looks of it, {COLOR RED}Kalliope{COLOR DARK_GRAY} did too... But still, this was a resounding victory!\p While you battled in the Gym, I brought some Gym Leaders to help defeat the other Team Chimera members. {COLOR GREEN}Polymnia{COLOR DARK_GRAY} of Jusmail Town, {COLOR GREEN}Euterpe{COLOR DARK_GRAY} of Myrrini Island, {COLOR GREEN}Terpsikore{COLOR DARK_GRAY} of Sofos City, and {COLOR GREEN}Rhadine{COLOR DARK_GRAY} of Palati City all joined us to take down Team Chimera for good!"))
+    closemessage
+    
+    applymovement(22, Common_Movement_WalkLeft) // Polymnia
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    applymovement(22, Common_Movement_FaceUp)
+    waitmovement(0)
+    speakername("Polymnia")
+    msgbox(format("Chaire, {PLAYER}! Do you remember me from Jusmail Town? I was the {COLOR GREEN}first Gym Leader{COLOR DARK_GRAY} you challenged!\p Now that Team Chimera is being dismantled, we thought it was time to reintroduce the {COLOR GREEN}Elite Four{COLOR DARK_GRAY}, now composed of us Gym Leaders! We'll be assembling at the {COLOR GREEN}Ruins of Ahiyawa{COLOR DARK_GRAY}, the site of an ancient battle, just northeast of Péntepetal City. If you hope to become {COLOR GREEN}Champion{COLOR DARK_GRAY}, come meet us there!"))
+    closemessage
+    delay(15)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    applymovement(18, Common_Movement_JumpInPlaceLeft)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Hear that? We might become {COLOR GREEN}Champions{COLOR DARK_GRAY}, {PLAYER}! All we have to do is go to the {COLOR GREEN}Ruins of Ahiyawa{COLOR DARK_GRAY} and beat some Gym Leaders we've already beaten before. We've SO got this!\p I'm gonna help the Muses take care of these Chimera Grunts. You should head to {COLOR GREEN}Péntepetal City{COLOR DARK_GRAY} and follow the {COLOR GREEN}Pollen Road{COLOR DARK_GRAY} towards the Ruins of Ahiyawa. I'm sure I'll catch up with you there!"))
+    closemessage
+
+    delay(20)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(15)
+    clearflag(FLAG_HIDE_MAP_NAME_POPUP)
+    setflag(FLAG_UNLOCKED_RUINS_OF_AHIYAWA)
+    setflag(FLAG_HIDE_RANIA_AND_LEADERS_AREIOS)
+    removeobject(18)
+    removeobject(19)
+    removeobject(20)
+    removeobject(21)
+    removeobject(22)
+    removeobject(23)
+    removeobject(24)
+    removeobject(25)
+    delay(15)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    delay(20)
+    startquest(QUEST_CHAMPION)
+    releaseall
+    end
+}
+
+script AreiosHideout_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Areios Hideout\n Team Chimera Members ONLY!\p {UP_ARROW} The Nyx Trails\p The word Town is scratched out beneath the word Hideout."))
+    closemessage
+    release
+    end
 }

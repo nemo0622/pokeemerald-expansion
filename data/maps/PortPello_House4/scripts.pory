@@ -1,0 +1,79 @@
+mapscripts PortPello_House4_MapScripts {}
+
+script PortPello_House4_EventScript_Picnicker
+{
+    lock
+    faceplayer
+    speakername("Picnicker")
+    msgbox(format("I'm looking into a cruise to the Alola Region! Now I just have to talk my dad into taking us..."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_House4_EventScript_Sailor
+{
+
+    lock
+    faceplayer
+    speakername("Sailor")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_STRANGE_SOUVENIRS_FOR_SAILOR)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("I bet my buddy in Sofos City will love those Strange Souvenirs. They're really interested in the {COLOR GREEN}Alola Region{COLOR DARK_GRAY}!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_STRANGE_SOUVENIRS_FOR_SAILOR)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Welcome in! You look like you've got some exploring under your belt. Ever come across some rare items, maybe floating in the water?\p I'll cut to the chase. My buddy in Sofos City is working on a University paper, and I think some {COLOR GREEN}Alolan{COLOR DARK_GRAY} items might help. If you bring me {COLOR GREEN}3 Strange Souvenirs{COLOR DARK_GRAY}, which have floated here from Alola, I'll give you a {COLOR GREEN}Pokémon from Alola{COLOR DARK_GRAY}.\p I've heard that some folks can {COLOR GREEN}find great treasures{COLOR DARK_GRAY} while {COLOR GREEN}fishing with a Super Rod{COLOR DARK_GRAY}. Maybe that's how you can collect the Strange Souvenirs?"))
+        closemessage
+        delay(20)
+        startquest(QUEST_STRANGE_SOUVENIRS_FOR_SAILOR)
+    }
+    else
+    {
+        msgbox(format("Oh, hey there! Have you collected those Alolan items yet?"))
+        closemessage
+
+        delay(30)
+        checkitem(ITEM_STRANGE_SOUVENIR)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Sailor")
+            msgbox(format("Nope, doesn't look like it.\p Remember, I'm looking for {COLOR GREEN}3 Strange Souvenirs{COLOR DARK_GRAY}. I've heard that they can be found as {COLOR GREEN}treasures{COLOR DARK_GRAY} while {COLOR GREEN}fishing with a Super Rod{COLOR DARK_GRAY}. I'll give you a Pokémon from Alola if you can help me out!"))
+            closemessage
+        }
+        else
+        {
+            emote(2, EMOTE_EXCLAM)
+            speakername("Sailor")
+            msgbox(format("Incredible! I didn't know if that was even possible!\p These'll help my friend in Sofos City for sure. As promised, here's a Pokémon from the Alola Region!"))
+            closemessage
+            delay(5)
+
+            // NOTE
+            // This was originally going to be where Mega Stones of the Alolan Starters were given out
+            // but I just had to pay for an oil change and groceries, and they get their own Z-move anyway which
+            // will be what they use in Alolan Seaglass, soooo... it's gonna be a Comfey
+
+            givemon(SPECIES_COMFEY, 40, ITEM_POKE_BALL, NATURE_CALM, 1, MON_FEMALE, FEMALE, 0, 0, 0, 100, 152, 252, 31, 31, 31, 31, 31, 31, MOVE_PETAL_DANCE, MOVE_MATCHA_GOTCHA, MOVE_DRAINING_KISS, MOVE_BUZZY_BUZZ, TRUE)
+            closemessage
+            delay(5)
+            speakername("Sailor")
+            msgbox(format("There's something {COLOR GREEN}special{COLOR DARK_GRAY} about that Comfey. Give it a look!"))
+            closemessage
+            delay(20)
+            completequest(QUEST_STRANGE_SOUVENIRS_FOR_SAILOR)
+        }
+    }
+    release
+    end
+
+}

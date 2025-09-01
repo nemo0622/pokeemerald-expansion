@@ -1,5 +1,402 @@
 mapscripts PortPello_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_PORT_PELLO)
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(33, ENCOUNTER_LAND)
+        setobjectaswildencounter(34, ENCOUNTER_LAND)
+        setobjectaswildencounter(35, ENCOUNTER_LAND)
+        setobjectaswildencounter(36, ENCOUNTER_LAND)
     }
+}
+
+script PortPello_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Port Pello\n Where Flowers Bloom\p {UP_ARROW} Corrin Crossing\n {DOWN_ARROW} The Nyx Trails"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_Athlete
+{
+    lock
+    faceplayer
+    speakername("Athlete")
+    msgbox(format("Port Pello has some of the cleanest air in the Ilios Region. It's perfect for intense training!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_LittleGirlWithPyroar
+{
+    lock
+    speakername("Little Girl")
+    msgbox(format("Pye-pye, jump!"))
+    closemessage
+    delay(10)
+    applymovement(14, Common_Movement_JumpInPlaceLeft)
+    waitmovement(0)
+    delay(10)
+    emote(13, EMOTE_HEART)
+    speakername("Little Girl")
+    msgbox(format("Good girl! Here's a Magikarp Biscuit!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("The cherry trees of Port Pello are one-of-a-kind in Ilios.\p The style of buildings here used to be built in Areios Town, but since {COLOR RED}Team Chimera{COLOR DARK_GRAY} made it their {COLOR RED}Hideout{COLOR DARK_GRAY}, Port Pello is the last place where these buildings are still used."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_OldManShopping
+{
+    lock
+    faceplayer
+    speakername("Old Man")
+    msgbox(format("All the ships stopped coming after Team Chimera summoned Gouging Fire, Walking Wake, and Raging Bolt. The news called them the {COLOR RED}Legendary Beasts{COLOR DARK_GRAY}, as they were certainly more than standard Pokémon.\p But now that someone has been putting Team Chimera in their place, the ships have come back! The markets are full again."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_CyclingTriathleteM
+{
+    lock
+    faceplayer
+    speakername("Cyclist")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_CYCLIZAR_DEX_PORT_PELLO)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Someday I'll take a cruise to the Fresco Isles and catch a Cyclizar for myself!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_CYCLIZAR_DEX_PORT_PELLO)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("These roads are old and a little bumpy. Maybe I should be riding on a Cyclizar instead...\p Oh, are those Poké balls on your belt? You must be a Trainer! If you {COLOR GREEN}catch a Cyclizar{COLOR DARK_GRAY}, show me its {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} on your Rotom Phone. I need to know where to catch a Cyclizar!"))
+        closemessage
+        delay(20)
+        startquest(QUEST_SHOW_CYCLIZAR_DEX_PORT_PELLO)
+    }
+    else
+    {
+        msgbox(format("You're back! Got any updates on my ride?"))
+        closemessage
+
+        delay(30)
+        getcaughtmon(SPECIES_CYCLIZAR)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            emote(17, EMOTE_EXCLAM)
+            speakername("Cyclist")
+            msgbox(format("Ah, the {COLOR GREEN}Pokédex page{COLOR DARK_GRAY} of {COLOR GREEN}Cyclizar{COLOR DARK_GRAY}! This is just what I needed!\p Hmm... It looks like I can catch one for myself in the Fresco Isles. I'll have to visit there sometime! Here, I want you to have these."))
+            closemessage
+            delay(5)
+            giveitem(ITEM_RARE_CANDY, 3)
+
+            delay(20)
+            completequest(QUEST_SHOW_CYCLIZAR_DEX_PORT_PELLO)
+        }
+        else
+        {
+            speakername("Cyclist")
+            msgbox(format("Uhh... Nope, doesn't look like it's in your Rotom Phone's Pokédex.\p Show me the {COLOR GREEN}complete Pokédex page{COLOR DARK_GRAY} of {COLOR GREEN}Cyclizar{COLOR DARK_GRAY}, and I'll give you a reward!"))
+            closemessage
+        }
+    }
+    release
+    end
+}
+
+script PortPello_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("My Numel and I came all the way from Péntepetal City to see this town! Port Pello was always said to be among the most stunning views in Ilios."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_Numel
+{
+    lock
+    faceplayer
+    speakername("Numel")
+    playmoncry(SPECIES_NUMEL, CRY_MODE_NORMAL)
+    msgbox("Gwoot...!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_Officer
+{
+    lock
+    faceplayer
+    speakername("Officer")
+    msgbox(format("Just because Port Pello is open again doesn't mean we're safe. Rumor has it that Team Chimera is {COLOR RED}regrouping in Areios Hideout{COLOR DARK_GRAY}, just south of here."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_Lass
+{
+    lock
+    faceplayer
+    speakername("Lass")
+    msgbox(format("Hehehe, this city is so pretty! I'm so glad my family moved here."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_Youngster
+{
+    lock
+    faceplayer
+    speakername("Youngster")
+    msgbox(format("My book said that this city was founded by someone flying on the back of a Tropius. There's more information written on the statue, but I don't wanna read all that!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_TropiusStatue
+{
+    lock
+    msgbox(format("It's a statue of a mighty Tropius. Read about it?"), MSGBOX_YESNO)
+    closemessage
+    if(var(VAR_RESULT) == FALSE)
+    {
+        release
+        end
+    }
+    msgbox(format("In the ancient past, the Ilios Region was divided into warring city-states. After losing their family, a young traveler flew away on their Tropius in hopes of finding a new home.\p They flew around the entire region, unable to find a new home. Suddenly, the Tropius descended onto a barren stretch of land, unwanted by any nearby cities. The traveler chose to trust their partner and set up camp.\p In this exact spot, Tropius let out a mighty roar, transforming the barren lands into blooming forests. To show its love for its Trainer, Tropius created beautiful cherry blossom trees, which still shade the city today."))
+    closemessage
+    delay(30)
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_HEART)
+    msgbox(format("Such a beautiful story about the bonds between Trainers and their Pokémon!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_HexManiac
+{
+    lock
+    faceplayer
+    speakername("Hex Maniac")
+    msgbox(format("I lost most of my money in Trainer battles... I'm glad Pokémon Centers are free!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_FatMan
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("My Scyther found a strange stone in the forest, and suddenly evolved into Kleavor! Isn't that an ancient Pokémon?"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_Fisherman
+{
+    lock
+    faceplayer
+    speakername("Fisherman")
+    msgbox(format("My family has been fishing in these waters for generations! My grandfather told me about some strange, Psychic-type fish Pokémon that lived around here, but I've never seen one myself."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_BoyWithCorphish
+{
+    lock
+    speakername("Boy")
+    msgbox(format("Ahahaha! Come back here, Corphish!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_Corphish
+{
+    lock
+    faceplayer
+    speakername("Corphish")
+    playmoncry(SPECIES_CORPHISH, CRY_MODE_NORMAL)
+    msgbox("Ckh ckh ckh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_AceTrainer
+{
+    lock
+    faceplayer
+    speakername("Ace Trainer")
+    msgbox(format("I came to Port Pello the moment it reopened. With my strong Pokémon, I can fight off Team Chimera grunts easily."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_Sailor
+{
+    lock
+    faceplayer
+    speakername("Sailor")
+    msgbox(format("Slowly but surely, life is coming back to Port Pello! A lot of folks are still scared of Team Chimera, though.\p For life to really come back to normal, Team Chimera needs to be wiped out for good."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("A city as gorgeous as Port Pello is perfect for me!"))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("Achoo! The blooming trees are pretty, but they're not good for my allergies..."))
+    closemessage
+    release
+    end
+}
+
+script PortPello_EventScript_BattlePavilionSign
+{
+    lock
+    msgbox(format("Port Pello Battle Pavilion\n It's All or Nothing!"))
+    closemessage
+    release
+    end
+}
+
+// -----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------
+
+script PortPello_EventScript_RaniaChallengeTrigger
+{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    goto(PortPello_EventScript_RaniaChallengeScript)
+    end
+}
+
+script PortPello_EventScript_RaniaChallengeScript
+{
+    lock
+    applymovement(31, Common_Movement_FacePlayer)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("{PLAYER}, you've made it through Port Pello! I thought I saw you coming through.\p Just south of here are the {COLOR RED}Nyx Trails{COLOR DARK_GRAY}, which wind their way down to {COLOR RED}Areios Hideout{COLOR DARK_GRAY}. Are you sure you're ready for that challenge?"), MSGBOX_YESNO)
+    closemessage
+    delay(5)
+    if(var(VAR_RESULT) == FALSE) // not ready
+    {
+        speakername("Rania")
+        msgbox(format("Right. Like Niko said, it's the Pyroar's Den - the heart of {COLOR RED}Team Chimera{COLOR DARK_GRAY}.\p Come over here when your team is ready for a fight. I want to test you before I let you head south."))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+        waitmovement(0)
+        release
+        end
+    }
+    else
+    {
+        // Ready for battle!
+        speakername("Rania")
+        msgbox(format("You better be ready to back up those words! I challenge you to a battle! Show me just how strong you've gotten!"))
+        closemessage
+
+        // RANIA BATTLE
+        if(!flag(FLAG_HARD_MODE))
+        {
+            trainerbattle_no_intro(TRAINER_PORTPELLO_RANIA, PortPello_Text_RaniaLose)
+        }
+        else
+        {
+            trainerbattle_no_intro(TRAINER_PORTPELLO_RANIA_HARD, PortPello_Text_RaniaLose)
+        }
+
+        delay(10)
+        emote(31, EMOTE_EXCLAM)
+        speakername("Rania")
+        msgbox(format("Ehehe, I'm speechless! {PLAYER}, you're totally ready to kick Team Chimera's butts!\p Oh, while I've got you here, I should tell you about our plans. I've been Flying around the Ilios Region, and it turns out, the {COLOR GREEN}Gym Leaders{COLOR DARK_GRAY} are working on a plan to take down Team Chimera too! A few of the Gym Leaders you've challenged are gathering to {COLOR GREEN}destroy Team Chimera{COLOR DARK_GRAY}.\p The only problem is time... {PLAYER}, they've told me to send you forward without them - we can't afford to wait any longer. I just wanted to let you know that you're not alone in this fight!\p Alright, I'm going to head out and gather more Gym Leaders for the cause. Good luck, {PLAYER}! You can do this!"))
+        closemessage
+
+        // fade screen and remove Rania
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        delay(15)
+        setflag(FLAG_HIDE_RANIA_PORT_PELLO)
+        removeobject(31)
+        delay(15)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        delay(10)
+        release
+        end
+
+        // This will come to a head after you beat Kalliope in the 8th Gym, where Rania will run in and tell her that
+        // Areios Hideout has fallen to the Gym Leaders. The Player will exit the Gym to see Polymnia, Terpsikore,
+        // Euterpe, and Rhadine rounding up a few Team Chimera members, thanking the Player before disappearing along
+        // with Team Chimera. Note that Kalliope and her Admins will make an escape out of the back of the Gym!
+        // (this will allow them to challenge you after the Elite Four in the post game lol, sprites are too good
+        // to leave unused in the postgame)
+    }
+}
+
+text PortPello_Text_RaniaLose
+{
+    format("You're the strongest Trainer I've met so far... You're ready!")
 }

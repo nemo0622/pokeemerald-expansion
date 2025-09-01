@@ -1,1 +1,273 @@
-mapscripts NyxTrails_MapScripts {}
+mapscripts NyxTrails_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(14, ENCOUNTER_LAND)
+        setobjectaswildencounter(15, ENCOUNTER_LAND)
+        setobjectaswildencounter(16, ENCOUNTER_LAND)
+        setobjectaswildencounter(17, ENCOUNTER_LAND)
+        setobjectaswildencounter(18, ENCOUNTER_LAND)
+        setobjectaswildencounter(19, ENCOUNTER_LAND)
+        setobjectaswildencounter(20, ENCOUNTER_LAND)
+        setobjectaswildencounter(21, ENCOUNTER_LAND)
+        setobjectaswildencounter(22, ENCOUNTER_LAND)
+        setobjectaswildencounter(23, ENCOUNTER_LAND)
+        setobjectaswildencounter(24, ENCOUNTER_LAND)
+        setobjectaswildencounter(25, ENCOUNTER_LAND)
+    }
+}
+
+script NyxTrails_EventScript_FatMan
+{
+    lock
+    faceplayer
+    speakername("Scared Man")
+    msgbox(format("Uhm... I think these woods are crawling with Team Chimera grunts. We should probably get out of here..."))
+    closemessage
+    release
+    end
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Harry
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_HARRY, NyxTrails_Text_Trainer_NyxTrails_HarryIntro, NyxTrails_Text_Trainer_NyxTrails_HarryDefeat)
+    speakername("Harry")
+    msgbox(format("I'm supposed to make sure no more Team Chimera members get through to their Hideout."))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_HarryIntro
+{
+    format("Stop right there! No Team Chimera grunts can pass me!")
+}
+text NyxTrails_Text_Trainer_NyxTrails_HarryDefeat
+{
+    format("Oh, you're innocent, sorry 'bout that.")
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Brienne
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_BRIENNE, NyxTrails_Text_Trainer_NyxTrails_BrienneIntro, NyxTrails_Text_Trainer_NyxTrails_BrienneDefeat)
+    speakername("Brienne")
+    msgbox(format("Areios Town was a tiny hamlet, but that doesn't make Team Chimera's actions any less horrible. A lot of good people lost their homes because of them..."))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_BrienneIntro
+{
+    format("I'm gonna reclaim Areios Town! You'll see!")
+}
+text NyxTrails_Text_Trainer_NyxTrails_BrienneDefeat
+{
+    format("I need a Pokémon Center first!")
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Samwell
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_SAMWELL, NyxTrails_Text_Trainer_NyxTrails_SamwellIntro, NyxTrails_Text_Trainer_NyxTrails_SamwellDefeat)
+    speakername("Samwell")
+    msgbox(format("The Nyx Trails have always been an undeveloped, desolate place, but this is worse than I thought. I wonder how many Pokémon Team Chimera displaced as they slashed through the forest."))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_SamwellIntro
+{
+    format("It looks like Team Chimera burned parts of the forest as they passed. How evil!")
+}
+text NyxTrails_Text_Trainer_NyxTrails_SamwellDefeat
+{
+    format("I bet you could stop them!")
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Adria
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_ADRIA, NyxTrails_Text_Trainer_NyxTrails_AdriaIntro, NyxTrails_Text_Trainer_NyxTrails_AdriaDefeat)
+    speakername("Adria")
+    msgbox(format("A lot of Trainers have been shying away from fighting Team Chimera. Not me, though."))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_AdriaIntro
+{
+    format("It's {COLOR RED}Chimera Territory{COLOR DARK_GRAY} from here on out. Are you sure you're ready?")
+}
+text NyxTrails_Text_Trainer_NyxTrails_AdriaDefeat
+{
+    format("Ahaha, oh yeah, you're ready!")
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Grunt1
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_GRUNT1, NyxTrails_Text_Trainer_NyxTrails_Grunt1Intro, NyxTrails_Text_Trainer_NyxTrails_Grunt1Defeat)
+    speakername("Chimera Grunt")
+    msgbox(format("There's a lot of stronger Grunts further ahead. You'd better watch out!"))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt1Intro
+{
+    format("Intruder alert! You're going down, kid!")
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt1Defeat
+{
+    format("Uh oh, you're trouble...")
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Grunt2
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_GRUNT2, NyxTrails_Text_Trainer_NyxTrails_Grunt2Intro, NyxTrails_Text_Trainer_NyxTrails_Grunt2Defeat)
+    speakername("Chimera Grunt")
+    msgbox(format("Whatever, I don't even care anymore."))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt2Intro
+{
+    format("Woah woah woah, this area is mine!")
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt2Defeat
+{
+    format("Urk...")
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Grunt3
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_GRUNT3, NyxTrails_Text_Trainer_NyxTrails_Grunt3Intro, NyxTrails_Text_Trainer_NyxTrails_Grunt3Defeat)
+    speakername("Chimera Grunt")
+    msgbox(format("I'm not even embarrassed anymore... You're clearly out of our league."))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt3Intro
+{
+    format("Hey punk!")
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt3Defeat
+{
+    format("We lost a 2-v-1... That's embarrassing!")
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Grunt4
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_GRUNT4, NyxTrails_Text_Trainer_NyxTrails_Grunt4Intro, NyxTrails_Text_Trainer_NyxTrails_Grunt4Defeat)
+    speakername("Chimera Grunt")
+    msgbox(format("Wait, can we battle again? I wasn't paying attention!"))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt4Intro
+{
+    format("We're totally gonna beat you!")
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt4Defeat
+{
+    format("Wait, can we battle again? I wasn't paying attention!")
+}
+
+script NyxTrails_EventScript_OldManFung
+{
+    lock
+    faceplayer
+    speakername("Old Man Fung")
+    if(flag(FLAG_GOT_FIRE_BLAST_FROM_FUNG))
+    {
+        msgbox(format("Thanks for the help, bud. I'll use that {COLOR GREEN}Fire Blast{COLOR DARK_GRAY} move to defend myself against Team Chimera!"))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Finally, a Trainer who isn't Team Chimera! Are you here to take them down?\p I've been hiding here, working on perfecting a move to protect myself. You've just inspired me to finish it! Here, take this."))
+        closemessage
+        delay(5)
+        giveitem(ITEM_TM_FIRE_BLAST)
+        setflag(FLAG_GOT_FIRE_BLAST_FROM_FUNG)
+        closemessage
+        delay(5)
+        speakername("Old Man Fung")
+        msgbox(format("Only a super-powerful move like {COLOR GREEN}Fire Blast{COLOR DARK_GRAY} could deter these nasty Grunts!"))
+        closemessage
+    }
+    release
+    end
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Grunt5
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_GRUNT5, NyxTrails_Text_Trainer_NyxTrails_Grunt5Intro, NyxTrails_Text_Trainer_NyxTrails_Grunt5Defeat)
+    speakername("Chimera Grunt")
+    msgbox(format("Grr... Once I find that old man, I'll teach him not to mess with us!"))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt5Intro
+{
+    format("Shoot, where'd that old man go?")
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt5Defeat
+{
+    format("I totally lost him!")
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Grunt6
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_GRUNT6, NyxTrails_Text_Trainer_NyxTrails_Grunt6Intro, NyxTrails_Text_Trainer_NyxTrails_Grunt6Defeat)
+    speakername("Chimera Grunt")
+    msgbox(format("Argh, at this rate, you'll reach the {COLOR RED}Hideout{COLOR DARK_GRAY}..."))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt6Intro
+{
+    format("Hold it! You can't go any further!")
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt6Defeat
+{
+    format("Oh no!")
+}
+
+script NyxTrails_EventScript_Trainer_NyxTrails_Grunt7
+{
+    trainerbattle_single(TRAINER_NYXTRAILS_GRUNT7, NyxTrails_Text_Trainer_NyxTrails_Grunt7Intro, NyxTrails_Text_Trainer_NyxTrails_Grunt7Defeat)
+    speakername("Chimera Grunt")
+    msgbox(format("No way... {COLOR RED}Kalliope{COLOR DARK_GRAY} will lock me up for this loss..."))
+    closemessage
+    release
+    end
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt7Intro
+{
+    format("Nobody outside of Team Chimera is permitted into {COLOR RED}Areios Hideout{COLOR DARK_GRAY}!")
+}
+text NyxTrails_Text_Trainer_NyxTrails_Grunt7Defeat
+{
+    format("Urgh, I can't hold you back...")
+}
+
+script NyxTrails_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("The Nyx Trails\n Weak Trainers, Beware!\p {UP_ARROW} Port Pello\n {DOWN_ARROW} Areios Hideout\p Where it says Areios Hideout, the word Town is visibly scratched out underneath."))
+    closemessage
+    release
+    end
+}

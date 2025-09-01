@@ -178,3 +178,39 @@ movement SatyrsLair_Movement_TerpsikoreApproachesPlayer
     face_right
     step_end
 }
+
+script SatyrsLair_EventScript_TryToEnterDeep
+{
+    lock
+    if(flag(FLAG_DID_CHIMERA_EVENT_PALATI_CITY))
+    {
+        msgbox(format("Heat is radiating from deep below. Enter the depths of Satyr's Lair?"), MSGBOX_YESNO)
+        closemessage
+        delay(5)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            msgbox(format("You decide to take a step back."))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+            waitmovement(0)
+            release
+            end
+        }
+        else
+        {
+            warp(MAP_SATYRS_LAIR_DEEP, 10, 16)
+            waitstate
+            release
+            end
+        }
+    }
+    else
+    {
+        msgbox(format("A strange heat is radiating from deep below. It's probably not safe to go any further..."))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+        waitmovement(0)
+    }
+    release
+    end
+}

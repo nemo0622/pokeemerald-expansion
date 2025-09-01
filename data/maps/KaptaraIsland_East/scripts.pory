@@ -12,8 +12,37 @@ mapscripts KaptaraIsland_East_MapScripts {
                 case 1: setweather(WEATHER_SUNNY)
             }
         }
+
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(21, ENCOUNTER_LAND)
+        setobjectaswildencounter(22, ENCOUNTER_LAND)
+        setobjectaswildencounter(23, ENCOUNTER_LAND)
+        setobjectaswildencounter(24, ENCOUNTER_LAND)
+        setobjectaswildencounter(25, ENCOUNTER_LAND)
+        setobjectaswildencounter(26, ENCOUNTER_LAND)
+        setobjectaswildencounter(27, ENCOUNTER_LAND)
         
     }
+}
+
+script KaptaraIsland_East_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Kaptara Island - Octillery Forest\n A Ruinous, Twisting Woodland\p {LEFT_ARROW} Palati City"))
+    closemessage
+    release
+    end
 }
 
 script KaptaraIsland_EventScript_Trainer_KaptaraIsland_Yesui
@@ -343,6 +372,44 @@ script KaptaraIsland_EventScript_LassWanderingAround
     speakername("Lass")
     msgbox(format("Have you heard about the Pokémon coming back from extinction? I wonder if the ancient people of this island lived alongside them before they went extinct."))
     closemessage
+    release
+    end
+}
+
+script KaptaraIsland_East_EventScript_UniversityStudentRouteCheck
+{
+    lock
+    faceplayer
+    speakername("Uni. Student")
+
+    if(flag(FLAG_CAUGHT_ALL_MONS_KAPTARA_ISLAND))
+    {
+        msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Chaire (Hyeh-rei)! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land Pokémon{COLOR DARK_GRAY} found in {COLOR GREEN}East and West{COLOR DARK_GRAY} Kaptara Island. If you've caught all the Pokémon here, please let me know."))
+        closemessage
+        special(CheckRouteCaptureProgress)
+        if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
+        {
+            delay(20)
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Uni. Student")
+            msgbox(format("Incredible! You've caught all the Pokémon that I requested in the area!\p Here's a reward from the University. Keep up your hard work!"))
+            closemessage
+            delay(5)
+
+            // give reward!
+            giveitem(ITEM_TM_EARTHQUAKE)
+            closemessage
+            delay(5)
+
+            setflag(FLAG_CAUGHT_ALL_MONS_KAPTARA_ISLAND)
+        }
+    }
+
     release
     end
 }

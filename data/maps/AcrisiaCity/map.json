@@ -460,33 +460,7 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 32,
-      "y": 10,
-      "elevation": 0,
-      "var": "FLAG_DID_DEMO_WARNING",
-      "var_value": "0",
-      "script": "AcrisiaCity_DemoWarning"
-    },
-    {
-      "type": "trigger",
-      "x": 33,
-      "y": 10,
-      "elevation": 0,
-      "var": "FLAG_DID_DEMO_WARNING",
-      "var_value": "0",
-      "script": "AcrisiaCity_DemoWarning"
-    },
-    {
-      "type": "trigger",
-      "x": 34,
-      "y": 10,
-      "elevation": 0,
-      "var": "FLAG_DID_DEMO_WARNING",
-      "var_value": "0",
-      "script": "AcrisiaCity_DemoWarning"
-    }
+
   ],
   "bg_events": [
     {

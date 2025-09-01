@@ -239,7 +239,7 @@ script AsfalHills_EventScript_OfficerBlockingPath
     lock
     faceplayer
     speakername("Officer")
-    msgbox(format("Corrin Crossing is currently unsafe to travel due to a high number of sinkholes. Come back later, when the situation has stabilized."))
+    msgbox(format("Corrin Crossing is currently blocked off. {COLOR GREEN}Areios Town{COLOR DARK_GRAY} was captured by Team Chimera, so we have {COLOR GREEN}Port Pello{COLOR DARK_GRAY} on lockdown to prevent harm from coming to it. Please come back later."))
     closemessage
     release
     end
@@ -256,7 +256,7 @@ script AsfalHills_EventScript_ManTryingToGetSouth
     applymovement(15, Common_Movement_FacePlayer)
     waitmovement(0)
     speakername("Angry Man")
-    msgbox(format("Can you believe this?! Blocking the path to a major city like it's nothing. I have to wonder why they're really stopping us from going south."))
+    msgbox(format("Can you believe this?! Blocking the path to a major city like it's nothing. I know Team Chimera is dangerous, but life must go on... Right?"))
     closemessage
     applymovement(15, Common_Movement_FaceDown)
     waitmovement(0)
@@ -269,7 +269,14 @@ script AsfalHills_EventScript_WomanTryingToGetSouth
     lock
     faceplayer
     speakername("Beauty")
-    msgbox(format("Areios Town, the hamlet south of Port Pello, was taken over by Team Chimera a few months ago. Now, we're even being blocked from Port Pello. Someone needs to stop Team Chimera before the whole region falls apart!"))
+    if(!flag(FLAG_HIDE_CORRIN_CROSSING_ROADBLOCK)) // roadblock active
+    {
+        msgbox(format("Areios Town, the hamlet south of Port Pello, was taken over by Team Chimera a few months ago. Now, we're even being blocked from Port Pello. Someone needs to stop Team Chimera before the whole region falls apart!"))
+    }
+    else
+    {
+        msgbox(format("Access to Port Pello has been opened up again! I hear a brave Trainer has been causing problems for Team Chimera, making it safer for everyone to travel again."))
+    }
     closemessage
     release
     end
@@ -358,13 +365,32 @@ script AsfalHills_EventScript_NikoMeetPlayerEvent
     speakername("Niko")
     msgbox(format("Ehehe, looks like Duskull remembers you too!"))
     closemessage
-    applymovement(7, Common_Movement_FaceUp)
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    applymovement(7, Common_Movement_FaceRight)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
     applymovement(8, AsfalHills_Movement_DuskullReturnsToNiko)
     waitmovement(0)
 
+    // Niko tests you in battle
+    delay(10)
+    speakername("Niko")
+    msgbox(format("In fact, Duskull seems like it wants to battle you... I'm not much of a battler, but I'll give it my all!"))
+    closemessage
+
+    trainerbattle_no_intro(TRAINER_ASFALHILLS_NIKO, AsfalHills_Text_NikoLose)
+
     // cutscene explaining the statues and connecting to Mega Evolution
-    delay(5)
+    delay(10)
+    speakername("Niko")
+    msgbox(format("Phew, you might even be a better Trainer than Rania..."))
+    closemessage
+    delay(30)
+    emote(7, EMOTE_EXCLAM)
+    speakername("Niko")
+    msgbox(format("D-don't tell her I said that!\p Ahem, right, I called you over for a reason. Here, look at these statues."))
+    closemessage
+    applymovement(7, Common_Movement_FaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
     speakername("Niko")
     msgbox(format("These were two brothers who lived back when the Ilios Region was young. On the left was a mighty king, while to the right was a humble poet.\p Both pursued happiness in different ways. The king, obsessed with worldly possessions, strove to become the richest man in the region. The poet remained humble, choosing to help others and follow his heart.\p Now, thousands of years later, you can see which was better for everyone. The king's statue remains overgrown and weathered, while the statue of the poet is cleaned and cared for."))
     closemessage
@@ -488,4 +514,9 @@ script AsfalHills_EventScript_NikoWaitingForPlayer
     }
     releaseall
     end
+}
+
+text AsfalHills_Text_NikoLose
+{
+    format("Urk... Like I said, I've never been much of a battler.")
 }

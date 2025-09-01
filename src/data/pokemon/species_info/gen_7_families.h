@@ -1831,6 +1831,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sRibombeeLevelUpLearnset,
         .teachableLearnset = sRibombeeTeachableLearnset,
         .formSpeciesIdTable = sRibombeeFormSpeciesIdTable,
+        .formChangeTable = sRibombeeFormChangeTable,
     },
 
     [SPECIES_RIBOMBEE_TOTEM] =
@@ -1891,9 +1892,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sRibombeeLevelUpLearnset,
         .teachableLearnset = sRibombeeTeachableLearnset,
         .formSpeciesIdTable = sRibombeeFormSpeciesIdTable,
+        .formChangeTable = sRibombeeFormChangeTable,
     },
 
-#if P_MEGA_EVOLUTIONS
     [SPECIES_RIBOMBEE_MEGA] =
     {
         .baseHP        = 60,
@@ -1951,7 +1952,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .formSpeciesIdTable = sRibombeeFormSpeciesIdTable,
         .formChangeTable = sRibombeeFormChangeTable,
     },
-#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CUTIEFLY
 
 #if P_FAMILY_ROCKRUFF

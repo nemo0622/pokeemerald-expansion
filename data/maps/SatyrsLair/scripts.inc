@@ -352,6 +352,55 @@ SatyrsLair_Movement_TerpsikoreApproachesPlayer:
 # 179 "data/maps/SatyrsLair/scripts.pory"
 	step_end
 
+SatyrsLair_EventScript_TryToEnterDeep::
+# 184 "data/maps/SatyrsLair/scripts.pory"
+	lock
+# 185 "data/maps/SatyrsLair/scripts.pory"
+	goto_if_set FLAG_DID_CHIMERA_EVENT_PALATI_CITY, SatyrsLair_EventScript_TryToEnterDeep_2
+# 209 "data/maps/SatyrsLair/scripts.pory"
+	msgbox SatyrsLair_EventScript_TryToEnterDeep_Text_2
+# 210 "data/maps/SatyrsLair/scripts.pory"
+	closemessage
+# 211 "data/maps/SatyrsLair/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+# 212 "data/maps/SatyrsLair/scripts.pory"
+	waitmovement 0
+# 214 "data/maps/SatyrsLair/scripts.pory"
+	release
+	end
+
+SatyrsLair_EventScript_TryToEnterDeep_2:
+# 187 "data/maps/SatyrsLair/scripts.pory"
+	msgbox SatyrsLair_EventScript_TryToEnterDeep_Text_0, MSGBOX_YESNO
+# 188 "data/maps/SatyrsLair/scripts.pory"
+	closemessage
+# 189 "data/maps/SatyrsLair/scripts.pory"
+	delay 5
+# 190 "data/maps/SatyrsLair/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq SatyrsLair_EventScript_TryToEnterDeep_5
+# 201 "data/maps/SatyrsLair/scripts.pory"
+	warp MAP_SATYRS_LAIR_DEEP, 10, 16
+# 202 "data/maps/SatyrsLair/scripts.pory"
+	waitstate
+# 203 "data/maps/SatyrsLair/scripts.pory"
+	release
+	end
+
+SatyrsLair_EventScript_TryToEnterDeep_5:
+# 192 "data/maps/SatyrsLair/scripts.pory"
+	msgbox SatyrsLair_EventScript_TryToEnterDeep_Text_1
+# 193 "data/maps/SatyrsLair/scripts.pory"
+	closemessage
+# 194 "data/maps/SatyrsLair/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+# 195 "data/maps/SatyrsLair/scripts.pory"
+	waitmovement 0
+# 196 "data/maps/SatyrsLair/scripts.pory"
+	release
+	end
+
+
 SatyrsLair_EventScript_ChimeraEvent_Text_0:
 # 16 "data/maps/SatyrsLair/scripts.pory"
 	.string "???$"
@@ -437,6 +486,21 @@ SatyrsLair_EventScript_ChimeraEvent_Text_13:
 	.string "I'll be returning to my Gym. I hope to\n"
 	.string "see you there soon! Our match will be\l"
 	.string "legendary!$"
+
+SatyrsLair_EventScript_TryToEnterDeep_Text_0:
+# 187 "data/maps/SatyrsLair/scripts.pory"
+	.string "Heat is radiating from deep below. Enter\n"
+	.string "the depths of Satyr's Lair?$"
+
+SatyrsLair_EventScript_TryToEnterDeep_Text_1:
+# 192 "data/maps/SatyrsLair/scripts.pory"
+	.string "You decide to take a step back.$"
+
+SatyrsLair_EventScript_TryToEnterDeep_Text_2:
+# 209 "data/maps/SatyrsLair/scripts.pory"
+	.string "A strange heat is radiating from deep\n"
+	.string "below. It's probably not safe to go any\l"
+	.string "further...$"
 
 SatyrsLair_Text_ChimeraGruntLoseText1::
 # 125 "data/maps/SatyrsLair/scripts.pory"

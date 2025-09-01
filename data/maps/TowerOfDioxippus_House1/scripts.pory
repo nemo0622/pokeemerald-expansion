@@ -1,0 +1,72 @@
+mapscripts TowerOfDioxippus_House1_MapScripts {}
+
+script TowerOfDioxippus_House1_EventScript_LittleBoy
+{
+    lock
+    faceplayer
+    speakername("Little Boy")
+    msgbox(format("A lot of Dragon-type Pokémon live around here, it's so exciting!"))
+    closemessage
+    release
+    end
+}
+
+script TowerOfDioxippus_House1_EventScript_Worker
+{
+    lock
+    faceplayer
+    speakername("Worker")
+
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_DIOXIPPUS_BERRIES)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("Thanks to you, I can plant Berries all around the Tower of Dioxippus. That'll breathe some fresh air into this little village!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_DIOXIPPUS_BERRIES)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("I'd like to plant some Berries around here to bring some life back to the area. The Tower of Dioxippus isn't the tourist attraction it used to be, so the village is falling into disrepair...\p You seem like an explorer, maybe you can help me! If you bring me {COLOR GREEN}5 Lum Berries{COLOR DARK_GRAY} to plant around town, I'll reward you."))
+        closemessage
+        delay(20)
+        startquest(QUEST_DIOXIPPUS_BERRIES)
+    }
+    else
+    {
+        msgbox(format("I'm getting ready to plant some Berry Trees around town. Did you bring what I asked for?"))
+        closemessage
+
+        delay(30)
+        checkitem(ITEM_LUM_BERRY, 5)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            speakername("Worker")
+            msgbox(format("Not yet? Berries are hard to grow, I know.\p Bring me {COLOR GREEN}5 Lum Berries{COLOR DARK_GRAY}, and I'll give you something cool in return."))
+            closemessage
+        }
+        else
+        {
+            emote(2, EMOTE_EXCLAM)
+            speakername("Worker")
+            msgbox(format("Hey, you have 5 Lum Berries! I'll take those and get ready to plant them.\p You've been real helpful. Take this little something, from me."))
+            closemessage
+            delay(5)
+            givedecoration(DECOR_HYDRAPPLE_DOLL)
+            closemessage
+            delay(5)
+            speakername("Worker")
+            msgbox(format("Dragon-type Pokémon are very important to the people of this village. Take care of that Decoration!"))
+            closemessage
+            delay(20)
+            completequest(QUEST_DIOXIPPUS_BERRIES)
+        }
+    }
+
+    release
+    end
+}

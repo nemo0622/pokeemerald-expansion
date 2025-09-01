@@ -2140,3 +2140,7 @@ const u32 gItemIcon_Cyclizite_S[] = INCBIN_U32("graphics/items/icons/cyclizite_s
 const u32 gItemIconPalette_Cyclizite_S[] = INCBIN_U32("graphics/items/icons/cyclizite_s.gbapal.lz");
 const u32 gItemIcon_Cyclizite_V[] = INCBIN_U32("graphics/items/icons/cyclizite_v.4bpp.lz");
 const u32 gItemIconPalette_Cyclizite_V[] = INCBIN_U32("graphics/items/icons/cyclizite_v.gbapal.lz");
+const u32 gItemIcon_Victreebite[] = INCBIN_U32("graphics/items/icons/victreebite.4bpp.lz");
+const u32 gItemIconPalette_Victreebite[] = INCBIN_U32("graphics/items/icons/victreebite.gbapal.lz");
+const u32 gItemIcon_Hawluchite[] = INCBIN_U32("graphics/items/icons/hawluchite.4bpp.lz");
+const u32 gItemIconPalette_Hawluchite[] = INCBIN_U32("graphics/items/icons/hawluchite.gbapal.lz");

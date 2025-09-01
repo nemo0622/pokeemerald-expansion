@@ -49,43 +49,39 @@ SofosCity_House4_EventScript_ComputerGuy::
 	compare VAR_PINBALL_POINTS, 5
 	goto_if_lt SofosCity_House4_EventScript_ComputerGuy_8
 # 59 "data/maps/SofosCity_House4/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
+	emote 1, EMOTE_EXCLAM
 # 60 "data/maps/SofosCity_House4/scripts.pory"
-	waitmovement 0
-# 61 "data/maps/SofosCity_House4/scripts.pory"
-	delay 15
-# 62 "data/maps/SofosCity_House4/scripts.pory"
 	msgbox SofosCity_House4_EventScript_ComputerGuy_Text_5
+# 61 "data/maps/SofosCity_House4/scripts.pory"
+	closemessage
+# 62 "data/maps/SofosCity_House4/scripts.pory"
+	delay 5
 # 63 "data/maps/SofosCity_House4/scripts.pory"
-	closemessage
-# 64 "data/maps/SofosCity_House4/scripts.pory"
-	delay 5
-# 65 "data/maps/SofosCity_House4/scripts.pory"
 	msgbox SofosCity_House4_EventScript_ComputerGuy_Text_6
-# 66 "data/maps/SofosCity_House4/scripts.pory"
+# 64 "data/maps/SofosCity_House4/scripts.pory"
 	closemessage
-# 67 "data/maps/SofosCity_House4/scripts.pory"
+# 65 "data/maps/SofosCity_House4/scripts.pory"
 	subvar VAR_PINBALL_POINTS, 5
-# 68 "data/maps/SofosCity_House4/scripts.pory"
+# 66 "data/maps/SofosCity_House4/scripts.pory"
 	delay 5
-# 69 "data/maps/SofosCity_House4/scripts.pory"
+# 67 "data/maps/SofosCity_House4/scripts.pory"
 	giveitem ITEM_COVERT_CLOAK
-# 70 "data/maps/SofosCity_House4/scripts.pory"
+# 68 "data/maps/SofosCity_House4/scripts.pory"
 	closemessage
-# 71 "data/maps/SofosCity_House4/scripts.pory"
+# 69 "data/maps/SofosCity_House4/scripts.pory"
 	delay 5
-# 72 "data/maps/SofosCity_House4/scripts.pory"
+# 70 "data/maps/SofosCity_House4/scripts.pory"
 	speakername SofosCity_House4_EventScript_ComputerGuy_Text_0
-# 73 "data/maps/SofosCity_House4/scripts.pory"
+# 71 "data/maps/SofosCity_House4/scripts.pory"
 	msgbox SofosCity_House4_EventScript_ComputerGuy_Text_7
-# 74 "data/maps/SofosCity_House4/scripts.pory"
+# 72 "data/maps/SofosCity_House4/scripts.pory"
 	closemessage
-# 76 "data/maps/SofosCity_House4/scripts.pory"
+# 74 "data/maps/SofosCity_House4/scripts.pory"
 	delay 20
-# 77 "data/maps/SofosCity_House4/scripts.pory"
+# 75 "data/maps/SofosCity_House4/scripts.pory"
 	completequest QUEST_5_PINBALL_POINTS
 SofosCity_House4_EventScript_ComputerGuy_4:
-# 80 "data/maps/SofosCity_House4/scripts.pory"
+# 78 "data/maps/SofosCity_House4/scripts.pory"
 	release
 	end
 
@@ -180,7 +176,7 @@ SofosCity_House4_EventScript_ComputerGuy_Text_4:
 	.string "give you a great reward!$"
 
 SofosCity_House4_EventScript_ComputerGuy_Text_5:
-# 62 "data/maps/SofosCity_House4/scripts.pory"
+# 60 "data/maps/SofosCity_House4/scripts.pory"
 	.string "I knew it! By earning these {COLOR GREEN}Pinball\n"
 	.string "Points{COLOR DARK_GRAY}, you've shown me that you're\l"
 	.string "playing Pinball and becoming great!\p"
@@ -189,11 +185,11 @@ SofosCity_House4_EventScript_ComputerGuy_Text_5:
 	.string "hey, nothing comes for free!$"
 
 SofosCity_House4_EventScript_ComputerGuy_Text_6:
-# 65 "data/maps/SofosCity_House4/scripts.pory"
+# 63 "data/maps/SofosCity_House4/scripts.pory"
 	.string "{PLAYER} gave away {COLOR GREEN}5 Pinball Points{COLOR DARK_GRAY}.$"
 
 SofosCity_House4_EventScript_ComputerGuy_Text_7:
-# 73 "data/maps/SofosCity_House4/scripts.pory"
+# 71 "data/maps/SofosCity_House4/scripts.pory"
 	.string "A Pokémon holding the Covert Cloak\n"
 	.string "becomes immune to secondary effects\l"
 	.string "from opposing attacks. No more\l"

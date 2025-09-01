@@ -34,5 +34,6 @@ void InitTilesetAnim_BattlePyramid(void);
 void InitTilesetAnim_Jusmail(void);
 void InitTilesetAnim_FrescoIsles(void);
 void InitTilesetAnim_PalatiGym(void);
+void InitTilesetAnim_TowerOfDioxippus(void);
 
 #endif // GUARD_TILESET_ANIMS_H

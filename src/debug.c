@@ -1293,7 +1293,7 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_VISITED_KALAMI_CITY) &&
                 FlagGet(FLAG_VISITED_KIPOS_TOWN) &&
                 FlagGet(FLAG_VISITED_PENTEPETAL_CITY) &&
-                FlagGet(FLAG_VISITED_SOOTOPOLIS_CITY) &&
+                FlagGet(FLAG_VISITED_TOWER_OF_DIOXIPPUS) &&
                 FlagGet(FLAG_VISITED_EVER_GRANDE_CITY) &&
                 FlagGet(FLAG_LANDMARK_POKEMON_LEAGUE) &&
                 FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER);
@@ -2805,7 +2805,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_VISITED_KALAMI_CITY);
         FlagClear(FLAG_VISITED_KIPOS_TOWN);
         FlagClear(FLAG_VISITED_PENTEPETAL_CITY);
-        FlagClear(FLAG_VISITED_SOOTOPOLIS_CITY);
+        FlagClear(FLAG_VISITED_TOWER_OF_DIOXIPPUS);
         FlagClear(FLAG_VISITED_EVER_GRANDE_CITY);
         FlagClear(FLAG_LANDMARK_POKEMON_LEAGUE);
         FlagClear(FLAG_LANDMARK_BATTLE_FRONTIER);
@@ -2827,7 +2827,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_VISITED_KALAMI_CITY);
         FlagSet(FLAG_VISITED_KIPOS_TOWN);
         FlagSet(FLAG_VISITED_PENTEPETAL_CITY);
-        FlagSet(FLAG_VISITED_SOOTOPOLIS_CITY);
+        FlagSet(FLAG_VISITED_TOWER_OF_DIOXIPPUS);
         FlagSet(FLAG_VISITED_EVER_GRANDE_CITY);
         FlagSet(FLAG_LANDMARK_POKEMON_LEAGUE);
         FlagSet(FLAG_LANDMARK_BATTLE_FRONTIER);

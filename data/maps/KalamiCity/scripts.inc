@@ -1144,8 +1144,8 @@ Common_EventScript_Piraeus_Text_23:
 Common_EventScript_Piraeus_Text_24:
 # 200 "data/maps/KalamiCity/scripts.pory"
 	.string "Port Pello! Their cherry trees are\n"
-	.string "world-famous! They say the gods\l"
-	.string "blessed the lands. How about we see it\l"
+	.string "world-famous! They say a magic Tropius\l"
+	.string "blessed their lands. How about we see it\l"
 	.string "for ourselves?$"
 
 KalamiCity_EventScript_DirectionSign_Text_0:

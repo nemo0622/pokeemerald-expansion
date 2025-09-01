@@ -56,9 +56,7 @@ script SofosCity_House4_EventScript_ComputerGuy
         }
         else // >= 5 pinball points
         {
-            applymovement(1, Common_Movement_ExclamationMark)
-            waitmovement(0)
-            delay(15)
+            emote(1, EMOTE_EXCLAM)
             msgbox(format("I knew it! By earning these {COLOR GREEN}Pinball Points{COLOR DARK_GRAY}, you've shown me that you're playing Pinball and becoming great!\p I've got a reward for you. I'll just take those {COLOR GREEN}Pinball Points{COLOR DARK_GRAY} off your hands... hey, nothing comes for free!"))
             closemessage
             delay(5)

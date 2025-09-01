@@ -93,6 +93,60 @@ PentepetalCity_PokemonCenter_EventScript_PunkRocker::
 	end
 
 
+PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck::
+# 64 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	lock
+# 65 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	faceplayer
+# 66 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	speakername PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 68 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	goto_if_set FLAG_CAUGHT_ALL_MONS_PENTEPETAL_CITY, PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_2
+# 75 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	msgbox PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2
+# 76 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	closemessage
+# 77 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	special CheckRouteCaptureProgress
+# 78 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_5
+PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_1:
+# 96 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	release
+	end
+
+PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_2:
+# 70 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	msgbox PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1
+# 71 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	closemessage
+	goto PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_5:
+# 80 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	delay 20
+# 81 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	emote VAR_LAST_TALKED, EMOTE_EXCLAM
+# 82 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	speakername PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0
+# 83 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	msgbox PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3
+# 84 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	closemessage
+# 85 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	delay 5
+# 88 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	givedecoration DECOR_LAPRAS_DOLL
+# 89 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	closemessage
+# 90 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	delay 5
+# 92 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	setflag FLAG_CAUGHT_ALL_MONS_PENTEPETAL_CITY
+	goto PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_1
+
+
 PentepetalCity_PokemonCenter_EventScript_PkmnCenterNurse_Text_0:
 # 7 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
 	.string "Nurse$"
@@ -135,3 +189,29 @@ PentepetalCity_PokemonCenter_EventScript_PunkRocker_Text_1:
 # 56 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
 	.string "These Pokémon Dolls are so rad! I\n"
 	.string "should buy some for my house, too.$"
+
+PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_0:
+# 66 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	.string "Uni. Student$"
+
+PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_1:
+# 70 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	.string "Your Pokédex data is amazing! Now we\n"
+	.string "know more about the local ecosystem,\l"
+	.string "thanks to you.$"
+
+PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2:
+# 75 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	.string "Chaire (Hyeh-rei)! I'm a student from\n"
+	.string "the Acrisia University.\p"
+	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
+	.string "Pokémon{COLOR DARK_GRAY} found in Péntepetal City. If\l"
+	.string "you've caught all the Pokémon here,\l"
+	.string "please let me know.$"
+
+PentepetalCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3:
+# 83 "data/maps/PentepetalCity_PokemonCenter/scripts.pory"
+	.string "Incredible! You've caught all the\n"
+	.string "Pokémon that I requested in the area!\p"
+	.string "Here's a reward from the University.\n"
+	.string "Keep up your hard work!$"
