@@ -432,6 +432,14 @@ script AcrisiaCity_University_EventScript_Niko
                 release
                 end
             }
+            elif(var(VAR_NIKO_STATE) == 14) // after Chimera's defeat in Areios!
+            {
+                speakername("Niko")
+                msgbox(format("{PLAYER}, I heard the news! You defeated Kalliope and took down Team Chimera once and for all! You're absolutely the best Trainer from this University... Don't tell Rania I said that, though!"))
+                closemessage
+                release
+                end
+            }
         }
         else // chose cancel probably
         {

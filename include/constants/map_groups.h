@@ -116,6 +116,7 @@
 #define MAP_PENTEPETAL_CITY               (107 | (0 << 8))
 #define MAP_SUNKEN_TEMPLE                 (108 | (0 << 8))
 #define MAP_TOWER_OF_DIOXIPPUS            (109 | (0 << 8))
+#define MAP_POLLEN_ROAD                   (110 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

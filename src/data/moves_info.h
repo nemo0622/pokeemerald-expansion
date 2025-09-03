@@ -18572,7 +18572,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         #else
             "the eyes. May freeze the foe."),
         #endif
-        .power = 90,
+        .power = 80,
         .effect = EFFECT_HIT,
         .type = TYPE_PSYCHIC,
         .accuracy = 100,

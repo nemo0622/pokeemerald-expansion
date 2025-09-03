@@ -249,12 +249,12 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_18",
-      "name": "ROUTE 18",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "map_section": "MAPSEC_POLLEN_ROAD",
+      "name": "Pollen Road",
+      "x": 20,
+      "y": 2,
+      "width": 2,
+      "height": 2
     },
     {
       "map_section": "MAPSEC_ROUTE_19",

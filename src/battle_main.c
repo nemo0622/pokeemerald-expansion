@@ -317,7 +317,7 @@ static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 
 const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
 {
-    TRAINER_CLASS(PKMN_TRAINER_1, "{PKMN} Trainer"),
+    TRAINER_CLASS(PKMN_TRAINER_1, "{PKMN} Trainer", 30),
     TRAINER_CLASS(PKMN_TRAINER_2, "{PKMN} Trainer"),
     TRAINER_CLASS(HIKER, "Hiker", 10),
     TRAINER_CLASS(TEAM_CHIMERA, "Team Chimera"),
@@ -325,12 +325,12 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(COOLTRAINER, "Cooltrainer", 12, ITEM_ULTRA_BALL),
     TRAINER_CLASS(BIRD_KEEPER, "Bird Keeper", 8),
     TRAINER_CLASS(COLLECTOR, "Collector", 15, ITEM_PREMIER_BALL),
-    TRAINER_CLASS(SWIMMER_M, "Swimmer♂", 2, ITEM_DIVE_BALL),
+    TRAINER_CLASS(SWIMMER_M, "Swimmer♂", 5, ITEM_DIVE_BALL),
     TRAINER_CLASS(TEAM_MAGMA, "TEAM MAGMA"),
     TRAINER_CLASS(EXPERT, "Expert", 10),
-    TRAINER_CLASS(CHIMERA_ADMIN, "Team Chimera", 10),
+    TRAINER_CLASS(CHIMERA_ADMIN, "Team Chimera", 20),
     TRAINER_CLASS(BLACK_BELT, "Black Belt", 8, ITEM_ULTRA_BALL),
-    TRAINER_CLASS(CHIMERA_LEADER, "Team Chimera", 20, ITEM_MASTER_BALL),
+    TRAINER_CLASS(CHIMERA_LEADER, "Team Chimera", 50, ITEM_MASTER_BALL),
     TRAINER_CLASS(HEX_MANIAC, "Hex Maniac", 6),
     TRAINER_CLASS(AROMA_LADY, "Aroma Lady", 10),
     TRAINER_CLASS(RUIN_MANIAC, "Ruin Maniac", 15),
@@ -362,7 +362,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(NINJA_BOY, "Ninja Boy", 3),
     TRAINER_CLASS(BATTLE_GIRL, "Battle Girl", 6),
     TRAINER_CLASS(PARASOL_LADY, "Parasol Lady", 10),
-    TRAINER_CLASS(SWIMMER_F, "Swimmer♀", 2, ITEM_DIVE_BALL),
+    TRAINER_CLASS(SWIMMER_F, "Swimmer♀", 5, ITEM_DIVE_BALL),
     TRAINER_CLASS(TWINS, "Twins", 3),
     TRAINER_CLASS(SAILOR, "Sailor", 8),
     TRAINER_CLASS(COOLTRAINER_2, "Cooltrainer", 5, ITEM_ULTRA_BALL),

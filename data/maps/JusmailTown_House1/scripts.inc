@@ -275,7 +275,7 @@ JusmailTown_House1_EventScript_EnterBuildingForFirstTime_2:
 # 96 "data/maps/JusmailTown_House1/scripts.pory"
 	closemessage
 # 98 "data/maps/JusmailTown_House1/scripts.pory"
-	warpsilent MAP_JUSMAIL_TOWN, 10, 14
+	warpsilent MAP_JUSMAIL_TOWN, 9, 14
 # 99 "data/maps/JusmailTown_House1/scripts.pory"
 	waitstate
 	goto JusmailTown_House1_EventScript_EnterBuildingForFirstTime_1

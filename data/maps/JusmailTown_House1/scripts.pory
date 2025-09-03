@@ -95,7 +95,7 @@ script JusmailTown_House1_EventScript_EnterBuildingForFirstTime
         msgbox(format("Don't take it to heart, hon. It's just the rule of the owner, he gets a little, well, intense."))
         closemessage
 
-        warpsilent(MAP_JUSMAIL_TOWN, 10, 14)
+        warpsilent(MAP_JUSMAIL_TOWN, 9, 14)
         waitstate
     }
     else // ready!

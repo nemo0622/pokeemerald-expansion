@@ -5970,6 +5970,16 @@
       "secondary_tileset": "gTileset_PalatiGym",
       "border_filepath": "data/layouts/AreiosHideout_Gym/border.bin",
       "blockdata_filepath": "data/layouts/AreiosHideout_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_POLLEN_ROAD",
+      "name": "PollenRoad_Layout",
+      "width": 70,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pentepetal",
+      "border_filepath": "data/layouts/PollenRoad/border.bin",
+      "blockdata_filepath": "data/layouts/PollenRoad/map.bin"
     }
   ]
 }

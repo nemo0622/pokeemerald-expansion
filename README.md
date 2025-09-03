@@ -71,7 +71,8 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 MAJOR TODOS:
 - Continue Mapping and NPC development
     - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
-- After completing above, PUT GAME ON PHONE AND START A TEST RUN!
+- Add event allowing player to Call Legendary Dogs to Sofos Acropolis Temple
+    - Choose between Raikou, Suicune, and Entei, which resets after every Elite Four run (enabling multiple encounters for living dex purposes)
 
 - POST GAME - "Champion Title Defense"
     - Dozens of Trainers, all with large Party Pools
@@ -81,22 +82,18 @@ MAJOR TODOS:
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas:
-        - Lastlight Road - Route leading south of Kipos Town, going up and then down mountains, some snowy Pokémon
-        - Tower of Dioxippus - small settlement south of Kipos Town, with a large tower (TrainerDX tiles) and a theme of fire. Fire-type encounters here, but it's a verdant valley, so some grass type guys too
-            - Named after Dioxippus, the Olympic champion who won combat because nobody was willing to challenge them
-            - Rumored to be the home of a great, godlike Pokémon (Rayquaza)
-            - This will be where Rayquaza can be caught later in the game, after finding Kyogre and Groudon and saving them from Chimera Admins later in the story.
-            - MANY BERRY TREES HERE!
-            - Use hanging light graphics from Yanako's tilesets (plus other buildings from that sheet too tbh)
-        - The Pollen Road - route east of Péntepetal City, home to many Tropius, Roselia, and Lileep
+        - The Pollen Road - route east of Péntepetal City, home to many Tropius, Weepinbell, and Lileep
         - Davosi Strait - ocean route heading north of the Pollen Road (name inspired by Ser Davos Seaworth)
             - Only place where Dhelmise can be fished up!
         - Trickster Coast - small area where ocean turns east towards land (name inspired by Trojan Horse)
             - Include rocky, sandy coastal area with broken ship tiles and ruins
         - Ruins of Ahiyawa (name based on Ahhiyawa, the term for Achean Greeks by the Hittites) - based on the ruins of Troy, covered in broken walls and stones with only a few standing buildings
-            - Basically a jumping off point for the player to get to Champion's Peak
-        - The Stygian Caves - moved east of Ruins of Ahiyawa, caves leading north to Champion's Peak
-        - Champion's Peak - moved northeast of Ruins of Ahiyawa, location of Elite Four obviously
+            - Where the new Elite Four is hosted!
+            - E4 Member 1: Polymnia (Ace: Mega Ribombee)
+            - E4 Member 2: Terpsikore (Ace: Mega Hawlucha)
+            - E4 Member 3: Euterpe (Ace: Mega Gyarados OR Mega Gengar?)
+            - E4 Member 4: Rhadine (Ace: Mega Toucannon)
+            - E4 Champion: Aegios, based on Zeus (Ace: Mega Heliolisk OR Mega Cyclizar V)
 - Give all Pokémon unique Pokédex entries
 - Implement Chris Piché's Game Corner Expansion minigames
     - https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches#Expansion-Compatible_Game_Corner_Expansion

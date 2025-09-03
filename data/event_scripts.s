@@ -1982,3 +1982,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/PortPello_House4/scripts.inc"
 
 	.include "data/maps/AreiosHideout_Gym/scripts.inc"
+
+	.include "data/maps/PollenRoad/scripts.inc"

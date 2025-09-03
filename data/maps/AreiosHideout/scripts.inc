@@ -334,22 +334,24 @@ AreiosHideout_EventScript_ChimeraLossScript::
 # 198 "data/maps/AreiosHideout/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
 # 200 "data/maps/AreiosHideout/scripts.pory"
+	setvar VAR_NIKO_STATE, 14
+# 203 "data/maps/AreiosHideout/scripts.pory"
 	delay 20
-# 201 "data/maps/AreiosHideout/scripts.pory"
+# 204 "data/maps/AreiosHideout/scripts.pory"
 	startquest QUEST_CHAMPION
-# 202 "data/maps/AreiosHideout/scripts.pory"
+# 205 "data/maps/AreiosHideout/scripts.pory"
 	releaseall
 	end
 
 
 AreiosHideout_EventScript_DirectionSign::
-# 208 "data/maps/AreiosHideout/scripts.pory"
-	lock
-# 209 "data/maps/AreiosHideout/scripts.pory"
-	msgbox AreiosHideout_EventScript_DirectionSign_Text_0
-# 210 "data/maps/AreiosHideout/scripts.pory"
-	closemessage
 # 211 "data/maps/AreiosHideout/scripts.pory"
+	lock
+# 212 "data/maps/AreiosHideout/scripts.pory"
+	msgbox AreiosHideout_EventScript_DirectionSign_Text_0
+# 213 "data/maps/AreiosHideout/scripts.pory"
+	closemessage
+# 214 "data/maps/AreiosHideout/scripts.pory"
 	release
 	end
 
@@ -488,7 +490,7 @@ AreiosHideout_EventScript_ChimeraLossScript_Text_5:
 	.string "there!$"
 
 AreiosHideout_EventScript_DirectionSign_Text_0:
-# 209 "data/maps/AreiosHideout/scripts.pory"
+# 212 "data/maps/AreiosHideout/scripts.pory"
 	.string "Areios Hideout\n"
 	.string "Team Chimera Members ONLY!\p"
 	.string "{UP_ARROW} The Nyx Trails\p"

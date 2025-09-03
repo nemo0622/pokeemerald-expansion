@@ -1073,7 +1073,7 @@ SofosCity_EventScript_TryPiraeusKiposTownEvent_4:
 # 722 "data/maps/SofosCity/scripts.pory"
 	delay 20
 # 723 "data/maps/SofosCity/scripts.pory"
-	warp MAP_KIPOS_TOWN, 18, 22
+	warpcontinuescript MAP_KIPOS_TOWN, 18, 22, KiposTown_EventScript_LeadPlayerToConservationCenter
 	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_1
 
 SofosCity_EventScript_TryPiraeusKiposTownEvent_5:

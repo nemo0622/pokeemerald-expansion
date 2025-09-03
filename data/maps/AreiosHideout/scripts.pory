@@ -197,6 +197,9 @@ script AreiosHideout_EventScript_ChimeraLossScript
     delay(15)
     fadescreenswapbuffers(FADE_FROM_BLACK)
 
+    setvar(VAR_NIKO_STATE, 14)
+    // Note: Rania is still hidden in Acrisia University, as she's now headed to the Ruins of Ahiyawa for one last fight with you!
+
     delay(20)
     startquest(QUEST_CHAMPION)
     releaseall

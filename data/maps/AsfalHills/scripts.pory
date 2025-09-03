@@ -505,6 +505,7 @@ script AsfalHills_EventScript_NikoWaitingForPlayer
         setflag(FLAG_HIDE_BLOCKING_SOFOS_GYM)
         setflag(FLAG_UNLOCKED_MEGA_EVOLUTION)
         clearflag(FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY)
+        setvar(VAR_NIKO_STATE, 8)
         delay(20)
         fadescreenswapbuffers(FADE_FROM_BLACK)
         delay(10)

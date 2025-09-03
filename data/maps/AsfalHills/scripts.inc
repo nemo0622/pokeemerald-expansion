@@ -671,16 +671,18 @@ AsfalHills_EventScript_NikoWaitingForPlayer::
 # 507 "data/maps/AsfalHills/scripts.pory"
 	clearflag FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY
 # 508 "data/maps/AsfalHills/scripts.pory"
-	delay 20
+	setvar VAR_NIKO_STATE, 8
 # 509 "data/maps/AsfalHills/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
-# 510 "data/maps/AsfalHills/scripts.pory"
-	delay 10
-# 512 "data/maps/AsfalHills/scripts.pory"
 	delay 20
+# 510 "data/maps/AsfalHills/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 511 "data/maps/AsfalHills/scripts.pory"
+	delay 10
 # 513 "data/maps/AsfalHills/scripts.pory"
+	delay 20
+# 514 "data/maps/AsfalHills/scripts.pory"
 	completequest QUEST_BEAT_CHIMERA_SOFOS_CITY
-# 515 "data/maps/AsfalHills/scripts.pory"
+# 516 "data/maps/AsfalHills/scripts.pory"
 	releaseall
 	end
 
@@ -1139,6 +1141,6 @@ AsfalHills_Text_Trainer_AsfalHills_BattoDefeat::
 	.string "Center!$"
 
 AsfalHills_Text_NikoLose::
-# 519 "data/maps/AsfalHills/scripts.pory"
+# 520 "data/maps/AsfalHills/scripts.pory"
 	.string "Urk... Like I said, I've never been much\n"
 	.string "of a battler.$"
