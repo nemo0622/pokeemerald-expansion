@@ -5980,6 +5980,76 @@
       "secondary_tileset": "gTileset_Pentepetal",
       "border_filepath": "data/layouts/PollenRoad/border.bin",
       "blockdata_filepath": "data/layouts/PollenRoad/map.bin"
+    },
+    {
+      "id": "LAYOUT_DAVOSI_STRAITS",
+      "name": "DavosiStraits_Layout",
+      "width": 74,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_KaptaraIsland",
+      "border_filepath": "data/layouts/DavosiStraits/border.bin",
+      "blockdata_filepath": "data/layouts/DavosiStraits/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINS_OF_AHIYAWA",
+      "name": "RuinsOfAhiyawa_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_KaptaraIsland",
+      "border_filepath": "data/layouts/RuinsOfAhiyawa/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAhiyawa/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINS_OF_AHIYAWA_LOBBY",
+      "name": "RuinsOfAhiyawa_Lobby_Layout",
+      "width": 21,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/RuinsOfAhiyawa_Lobby/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAhiyawa_Lobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINS_OF_AHIYAWA_E4_ROOM1",
+      "name": "RuinsOfAhiyawa_E4_Room1_Layout",
+      "width": 9,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/RuinsOfAhiyawa_E4_Room1/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAhiyawa_E4_Room1/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINS_OF_AHIYAWA_E4_CHAMPIONS_ROOM",
+      "name": "RuinsOfAhiyawa_E4_ChampionsRoom_Layout",
+      "width": 11,
+      "height": 15,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/RuinsOfAhiyawa_E4_ChampionsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAhiyawa_E4_ChampionsRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_WAKEWATER_ISLE",
+      "name": "WakewaterIsle_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pythios",
+      "border_filepath": "data/layouts/WakewaterIsle/border.bin",
+      "blockdata_filepath": "data/layouts/WakewaterIsle/map.bin"
+    },
+    {
+      "id": "LAYOUT_WAKEWATER_ISLE_POKEMON_CENTER",
+      "name": "WakewaterIsle_PokemonCenter_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/WakewaterIsle_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/WakewaterIsle_PokemonCenter/map.bin"
     }
   ]
 }

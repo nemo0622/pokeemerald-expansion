@@ -19,7 +19,7 @@ EverGrandeCity_EventScript_PokemonLeagueSign::
 	end
 
 EverGrandeCity_EventScript_SetVisitedEverGrande::
-	setflag FLAG_VISITED_EVER_GRANDE_CITY
+	setflag FLAG_VISITED_WAKEWATER_ISLE
 	setvar VAR_TEMP_1, 1
 	end
 

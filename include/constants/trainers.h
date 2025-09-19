@@ -146,7 +146,8 @@
 #define TRAINER_PIC_OUTFIT_HYLIAN_F       128
 #define TRAINER_PIC_RANIA                 129
 #define TRAINER_PIC_NIKO                  130
-#define TRAINER_PIC_COUNT                 131
+#define TRAINER_PIC_PIRAEUS               131
+#define TRAINER_PIC_COUNT                 132
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

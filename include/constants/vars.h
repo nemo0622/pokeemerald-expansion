@@ -112,7 +112,7 @@
 #define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
-#define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Unused Var
+#define VAR_CHOSEN_WAKEWATER_CHALLENGER                  0x405F // ID of trainer chosen for the Wakewater Isle Champion Challenger
 #define VAR_ZOO_POKEMON_ENCLOSURE_01_1                   0x4060 // Pokémon #1 in zoo Enclosure #1 (Forest)
 #define VAR_ZOO_POKEMON_ENCLOSURE_01_2                   0x4061 // Pokémon #2 in zoo Enclosure #1 (Forest)
 #define VAR_ZOO_POKEMON_ENCLOSURE_01_3                   0x4062 // Pokémon #3 in zoo Enclosure #1 (Forest)

@@ -146,7 +146,10 @@
     "PentepetalCity",
     "SunkenTemple",
     "TowerOfDioxippus",
-    "PollenRoad"
+    "PollenRoad",
+    "DavosiStraits",
+    "RuinsOfAhiyawa",
+    "WakewaterIsle"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -440,7 +443,11 @@
     "EverGrandeCity_HallOfFame",
     "EverGrandeCity_PokemonCenter_1F",
     "EverGrandeCity_PokemonCenter_2F",
-    "EverGrandeCity_PokemonLeague_2F"
+    "EverGrandeCity_PokemonLeague_2F",
+    "RuinsOfAhiyawa_Lobby",
+    "RuinsOfAhiyawa_E4_Room1",
+    "RuinsOfAhiyawa_E4_ChampionsRoom",
+    "WakewaterIsle_PokemonCenter"
   ],
   "gMapGroup_IndoorRoute104": [
     "Route104_MrBrineysHouse",

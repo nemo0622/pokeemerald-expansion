@@ -1,0 +1,264 @@
+mapscripts DavosiStraits_MapScripts {}
+
+script DavosiStraits_EventScript_Trainer_DavosiStraits_Newell
+{
+    trainerbattle_single(TRAINER_DAVOSISTRAITS_NEWELL, DavosiStraits_Text_Trainer_DavosiStraits_NewellIntro, DavosiStraits_Text_Trainer_DavosiStraits_NewellDefeat)
+    speakername("Newell")
+    msgbox(format("These waters are shallow and rocky... Definitely not safe for any ships."))
+    closemessage
+    release
+    end
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_NewellIntro
+{
+    format("I found some rare stones in my farm, and they make my Pokémon extremely strong. Take a look!")
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_NewellDefeat
+{
+    format("I battle best with soil under me!")
+}
+
+script DavosiStraits_EventScript_Trainer_DavosiStraits_Leah
+{
+    trainerbattle_single(TRAINER_DAVOSISTRAITS_LEAH, DavosiStraits_Text_Trainer_DavosiStraits_LeahIntro, DavosiStraits_Text_Trainer_DavosiStraits_LeahDefeat)
+    speakername("Leah")
+    msgbox(format("This route is full of tough Trainers and Pokémon!"))
+    closemessage
+    release
+    end
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_LeahIntro
+{
+    format("Come swim with me!")
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_LeahDefeat
+{
+    format("Uh oh, I'm sunk!")
+}
+
+script DavosiStraits_EventScript_Trainer_DavosiStraits_Alkis
+{
+    trainerbattle_single(TRAINER_DAVOSISTRAITS_ALKIS, DavosiStraits_Text_Trainer_DavosiStraits_AlkisIntro, DavosiStraits_Text_Trainer_DavosiStraits_AlkisDefeat)
+    speakername("Alkis")
+    msgbox(format("Maybe my bird Pokémon need some more flight training..."))
+    closemessage
+    release
+    end
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_AlkisIntro
+{
+    format("My birds will Fly me to the Elite Four!")
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_AlkisDefeat
+{
+    format("You knocked me down.")
+}
+
+script DavosiStraits_EventScript_Trainer_DavosiStraits_Leonidas
+{
+    trainerbattle_single(TRAINER_DAVOSISTRAITS_LEONIDAS, DavosiStraits_Text_Trainer_DavosiStraits_LeonidasIntro, DavosiStraits_Text_Trainer_DavosiStraits_LeonidasDefeat)
+    speakername("Leonidas")
+    msgbox(format("Everyone here is way too strong."))
+    closemessage
+    release
+    end
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_LeonidasIntro
+{
+    format("They call me a prodigy Trainer. Heh! I'm the best!")
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_LeonidasDefeat
+{
+    format("I'm... NOT the best?!")
+}
+
+script DavosiStraits_EventScript_Trainer_DavosiStraits_Patelina
+{
+    trainerbattle_single(TRAINER_DAVOSISTRAITS_PATELINA, DavosiStraits_Text_Trainer_DavosiStraits_PatelinaIntro, DavosiStraits_Text_Trainer_DavosiStraits_PatelinaDefeat)
+    speakername("Patelina")
+    msgbox(format("Even in deserts, my Pokémon can bloom!"))
+    closemessage
+    release
+    end
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_PatelinaIntro
+{
+    format("Go, my sweet, powerful Pokémon!")
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_PatelinaDefeat
+{
+    format("Not strong enough...!")
+}
+
+script DavosiStraits_EventScript_Trainer_DavosiStraits_Minas
+{
+    trainerbattle_single(TRAINER_DAVOSISTRAITS_MINAS, DavosiStraits_Text_Trainer_DavosiStraits_MinasIntro, DavosiStraits_Text_Trainer_DavosiStraits_MinasDefeat)
+    speakername("Minas")
+    msgbox(format("My parents told me I needed more training, but I didn't listen. I just want to play in the water!"))
+    closemessage
+    release
+    end
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_MinasIntro
+{
+    format("Ehehe, we're almost to the Elite Four!")
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_MinasDefeat
+{
+    format("Aww...")
+}
+
+script DavosiStraits_EventScript_Trainer_DavosiStraits_Theo
+{
+    trainerbattle_single(TRAINER_DAVOSISTRAITS_THEO, DavosiStraits_Text_Trainer_DavosiStraits_TheoIntro, DavosiStraits_Text_Trainer_DavosiStraits_TheoDefeat)
+    speakername("Theo")
+    msgbox(format("Just a little further... The Elite Four is just ahead!"))
+    closemessage
+    release
+    end
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_TheoIntro
+{
+    format("Yes, we made it to the Ruins of Ahiyawa! Let's battle to celebrate!")
+}
+text DavosiStraits_Text_Trainer_DavosiStraits_TheoDefeat
+{
+    format("I thought I could win.")
+}
+
+script DavosiStraits_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Davosi Straits\n The Ruined Waters\p {LEFT_ARROW} Pollen Road"))
+    closemessage
+    release
+    end
+}
+
+script DavosiStraits_EventScript_Victreebel
+{
+    lock
+    faceplayer
+    speakername("Victreebel")
+    playmoncry(SPECIES_VICTREEBEL, CRY_MODE_NORMAL)
+    msgbox("Bleleh!")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Rania's Victreebel is ready to fight!"))
+    closemessage
+    release
+    end
+}
+
+script DavosiStraits_EventScript_BlockProgress
+{
+    lock
+    msgbox(format("Rania is waiting for a battle!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script DavosiStraits_EventScript_Rania
+{
+    lockall
+    faceplayer
+    speakername("Rania")
+    msgbox(format("Ehehe, you made it, {PLAYER}! The {COLOR GREEN}Ruins of Ahiyawa{COLOR DARK_GRAY}, the new home of the {COLOR GREEN}Elite Four{COLOR DARK_GRAY}, lies just ahead of us.\p We've come so far from Acrisia City... And look how much we've grown! I started out with a Bellsprout I found in my backyard, and now it's a Victreebel, ready to {COLOR GREEN}Mega Evolve{COLOR DARK_GRAY} and demolish your team.\p Whoops, did I say that out loud? Kahaha! Come on, let's battle!"))
+    closemessage
+
+    if(!flag(FLAG_HARD_MODE))
+    {
+        trainerbattle_no_intro(TRAINER_DAVOSISTRAITS_RANIA, DavosiStraits_Text_RaniaLose)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_DAVOSISTRAITS_RANIA_HARD, DavosiStraits_Text_RaniaLose)
+    }
+
+    delay(10)
+    speakername("Rania")
+    msgbox(format("That was an amazing battle! I've never seen Pokémon move like that. You'll crush the Elite Four and become the first Champion of the new League, {PLAYER}!\p Oh, but before that, you'll need a little extra help. Take this!"))
+    closemessage
+    delay(5)
+    giveitem(ITEM_HM_WATERFALL)
+    closemessage
+    delay(5)
+    speakername("Rania")
+    msgbox(format("With the {COLOR GREEN}HM Waterfall{COLOR DARK_GRAY}, you'll be able to scale rushing rapids with ease! You'll need that if you want to reach the {COLOR GREEN}Ruins of Ahiyawa{COLOR DARK_GRAY}."))
+    closemessage
+    delay(10)
+    applymovement(8, Common_Movement_FaceRight)
+    applymovement(9, Common_Movement_FaceLeft)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Whaddya say, Victreebel - ready to face the Elite Four?"))
+    closemessage
+    emote(9, EMOTE_HEART)
+    speakername("Rania")
+    msgbox(format("Ehehe, that sounds like a yes to me!"))
+    closemessage
+    applymovement(8, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Rania")
+    msgbox(format("Well, I'm headed up! See you around!"))
+    closemessage
+    delay(10)
+
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(15)
+    setflag(FLAG_BEAT_RANIA_RUINS_OF_AHIYAWA)
+    removeobject(8)
+    removeobject(9)
+    delay(15)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(10)
+    releaseall
+    end
+}
+
+text DavosiStraits_Text_RaniaLose
+{
+    format("{PLAYER}... You're one-of-a-kind!")
+}
+
+script DavosiStraits_EventScript_UniversityStudentRouteCheck
+{
+    lock
+    faceplayer
+    speakername("Uni. Student")
+
+    if(flag(FLAG_CAUGHT_ALL_MONS_DAVOSI_STRAITS))
+    {
+        msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Chaire! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Water Pokémon{COLOR DARK_GRAY} found in Davosi Straits. If you've caught all the Pokémon here, please let me know."))
+        closemessage
+        special(CheckRouteCaptureProgress)
+        if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
+        {
+            delay(20)
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Uni. Student")
+            msgbox(format("Incredible! You've caught all the Pokémon that I requested in the area!\p Here's a reward from the University. Keep up your hard work!"))
+            closemessage
+            delay(5)
+
+            // give reward!
+            giveitem(ITEM_SACRED_ASH)
+            closemessage
+            delay(5)
+
+            setflag(FLAG_CAUGHT_ALL_MONS_DAVOSI_STRAITS)
+        }
+    }
+
+    release
+    end
+}

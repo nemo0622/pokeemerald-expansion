@@ -155,6 +155,11 @@ script TheDelphis_EventScript_LeaveShipTrigger
             warp(MAP_PORT_PELLO, 41, 29)
             waitstate
         }
+        elif(var(VAR_CHOSEN_SAIL_LOCATION) == 11) // Wakewater Isle
+        {
+            warp(MAP_WAKEWATER_ISLE, 22, 39)
+            waitstate
+        }
         else // FAILSAFE: just warp to Pythios Town Pokémon Center
         {
             warp(MAP_PYTHIOS_TOWN, 9, 7)

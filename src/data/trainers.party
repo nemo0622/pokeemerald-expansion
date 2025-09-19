@@ -6964,7 +6964,7 @@ Gender: Female
 Music: Aqua
 Items: Full Restore / Full Restore / Key Stone
 Double Battle: No
-AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+AI: Check Bad Move / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
 
 Hydrapple
 Level: 48
@@ -7191,1513 +7191,4250 @@ Level: 24
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 Tags: Ace
 
-=== TRAINER_ETHAN_2 ===
-Name: ETHAN
+=== TRAINER_POLLENROAD_RUBEN ===
+Name: Ruben
 Class: Camper
 Pic: Camper
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
-
-Zigzagoon
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Taillow
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_ETHAN_3 ===
-Name: ETHAN
-Class: Camper
-Pic: Camper
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Linoone
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Swellow
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_ETHAN_4 ===
-Name: ETHAN
-Class: Camper
-Pic: Camper
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Sandshrew
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Swellow
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Linoone
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_ETHAN_5 ===
-Name: ETHAN
-Class: Camper
-Pic: Camper
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Swellow
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Sandslash
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Linoone
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-=== TRAINER_BRENT ===
-Name: BRENT
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Surskit
-Level: 26
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_DONALD ===
-Name: DONALD
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Wurmple
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Silcoon
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Beautifly
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_TAYLOR ===
-Name: TAYLOR
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Wurmple
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Cascoon
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Dustox
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_NYXTRAILS_BRIENNEREY_1 ===
-Name: JEFFREY
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Surskit
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Surskit
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Surskit
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_DEREK ===
-Name: DEREK
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Dustox
-Level: 16
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Beautifly
-Level: 16
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-=== TRAINER_NYXTRAILS_BRIENNEREY_2 ===
-Name: JEFFREY
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Surskit
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Surskit
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Surskit
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_NYXTRAILS_BRIENNEREY_3 ===
-Name: JEFFREY
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Surskit
-Level: 34
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Surskit
-Level: 34
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Masquerain
-Level: 34
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_NYXTRAILS_BRIENNEREY_4 ===
-Name: JEFFREY
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Surskit
-Level: 36
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Wurmple
-Level: 36
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Surskit
-Level: 36
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Masquerain
-Level: 36
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_NYXTRAILS_BRIENNEREY_5 ===
-Name: JEFFREY
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Surskit
-Level: 38
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Dustox
-Level: 38
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Surskit
-Level: 38
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Masquerain @ Silver Powder
-Level: 38
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Beautifly
-Level: 38
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-=== TRAINER_EDWARD ===
-Name: EDWARD
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Abra
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hidden Power
-
-=== TRAINER_PRESTON ===
-Name: PRESTON
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kirlia
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_VIRGIL ===
-Name: VIRGIL
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Ralts
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_BLAKE ===
-Name: BLAKE
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Girafarig
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_WILLIAM ===
-Name: WILLIAM
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Ralts
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Ralts
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Kirlia
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_JOSHUA ===
-Name: JOSHUA
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kadabra
-Level: 41
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Solrock
-Level: 41
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_CAMERON_1 ===
-Name: CAMERON
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Solrock
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_CAMERON_2 ===
-Name: CAMERON
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kadabra
-Level: 33
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Solrock
-Level: 33
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_CAMERON_3 ===
-Name: CAMERON
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kadabra
-Level: 38
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Solrock
-Level: 38
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_CAMERON_4 ===
-Name: CAMERON
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kadabra
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Solrock
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_CAMERON_5 ===
-Name: CAMERON
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Solrock
-Level: 45
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Alakazam
-Level: 45
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-=== TRAINER_JACLYN ===
-Name: JACLYN
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Abra
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hidden Power
-
-=== TRAINER_HANNAH ===
-Name: HANNAH
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kirlia
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_SAMANTHA ===
-Name: SAMANTHA
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Xatu
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_MAURA ===
-Name: MAURA
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kadabra
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_KAYLA ===
-Name: KAYLA
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Wobbuffet
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Natu
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Kadabra
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_ALEXIS ===
-Name: ALEXIS
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kirlia
-Level: 41
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Xatu
-Level: 41
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_JACKI_1 ===
-Name: JACKI
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kadabra
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Lunatone
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_JACKI_2 ===
-Name: JACKI
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kadabra
-Level: 34
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Lunatone
-Level: 34
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_JACKI_3 ===
-Name: JACKI
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kadabra
-Level: 37
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Lunatone
-Level: 37
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_JACKI_4 ===
-Name: JACKI
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Kadabra
-Level: 40
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Lunatone
-Level: 40
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_JACKI_5 ===
-Name: JACKI
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Lunatone
-Level: 43
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Alakazam
-Level: 43
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-=== TRAINER_WALTER_1 ===
-Name: WALTER
-Class: Gentleman
-Pic: Gentleman
-Gender: Male
-Music: Rich
-Double Battle: No
-AI: Check Bad Move
-
-Boltund
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_MICAH ===
-Name: MICAH
-Class: Gentleman
-Pic: Gentleman
-Gender: Male
-Music: Rich
-Double Battle: No
-AI: Check Bad Move
-
-Boltund
-Level: 44
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Boltund
-Level: 44
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_THOMAS ===
-Name: THOMAS
-Class: Gentleman
-Pic: Gentleman
-Gender: Male
-Music: Rich
-Double Battle: No
-AI: Check Bad Move
-
-Zangoose
-Level: 45
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_WALTER_2 ===
-Name: WALTER
-Class: Gentleman
-Pic: Gentleman
-Gender: Male
-Music: Rich
-Double Battle: No
-AI: Check Bad Move
-
-Boltund
-Level: 34
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_WALTER_3 ===
-Name: WALTER
-Class: Gentleman
-Pic: Gentleman
-Gender: Male
-Music: Rich
-Double Battle: No
-AI: Check Bad Move
-
-Linoone
-Level: 36
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Headbutt
-- Sand Attack
-- Odor Sleuth
-- Fury Swipes
-
-Boltund
-Level: 36
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Quick Attack
-- Spark
-- Odor Sleuth
-- Roar
-
-=== TRAINER_WALTER_4 ===
-Name: WALTER
-Class: Gentleman
-Pic: Gentleman
-Gender: Male
-Music: Rich
-Double Battle: No
-AI: Check Bad Move
-
-Linoone
-Level: 39
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Headbutt
-- Sand Attack
-- Odor Sleuth
-- Fury Swipes
-
-Boltund
-Level: 39
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Quick Attack
-- Spark
-- Odor Sleuth
-
-=== TRAINER_WALTER_5 ===
-Name: WALTER
-Class: Gentleman
-Pic: Gentleman
-Gender: Male
-Music: Rich
-Double Battle: No
-AI: Check Bad Move
-
-Linoone
-Level: 41
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Headbutt
-- Sand Attack
-- Odor Sleuth
-- Fury Swipes
-
-Golduck
-Level: 41
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Fury Swipes
-- Disable
-- Confusion
-- Psych Up
-
-Boltund
-Level: 41
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Quick Attack
-- Spark
-- Odor Sleuth
-- Roar
-
-=== TRAINER_SIDNEY ===
-Name: SIDNEY
-Class: Elite Four
-Pic: Elite Four Sidney
-Gender: Male
-Music: Elite Four
-Items: Full Restore / Full Restore
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Setup First Turn
-Mugshot: Purple
-
-Mightyena
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Roar
-- Double Edge
-- Sand Attack
-- Crunch
-
-Shiftry
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Magnezone
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Beartic
 Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Cacturne
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
+Sliggoo Hisuian
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Crawdaunt
+Hawlucha
 Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Surf
-- Swords Dance
-- Strength
-- Facade
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Absol @ Sitrus Berry
-Level: 49
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Rock Slide
-- Swords Dance
-- Slash
-
-=== TRAINER_PHOEBE ===
-Name: PHOEBE
-Class: Elite Four
-Pic: Elite Four Phoebe
-Gender: Female
-Music: Elite Four
-Items: Full Restore / Full Restore
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Green
-
-Dusclops
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
-- Protect
-
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Grudge
-- Will O Wisp
-- Feint Attack
-
-Sableye
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Double Team
-- Night Shade
-- Feint Attack
-
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Facade
-
-Dusclops @ Sitrus Berry
-Level: 51
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Ice Beam
-- Rock Slide
-- Earthquake
-
-=== TRAINER_GLACIA ===
-Name: GLACIA
-Class: Elite Four
-Pic: Elite Four Glacia
-Gender: Female
-Music: Elite Four
-Items: Full Restore / Full Restore
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Pink
-
-Sealeo
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Encore
-- Body Slam
-- Hail
-- Ice Ball
-
-Glalie
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Crunch
-- Icy Wind
-- Ice Beam
-
-Sealeo
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Attract
-- Double Edge
-- Hail
-- Blizzard
-
-Glalie
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Explosion
-- Hail
-- Ice Beam
-
-Walrein @ Sitrus Berry
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Body Slam
-- Ice Beam
-- Sheer Cold
-
-=== TRAINER_DRAKE ===
-Name: DRAKE
-Class: Elite Four
-Pic: Elite Four Drake
+=== TRAINER_POLLENROAD_JONAH ===
+Name: Jonah
+Class: Black Belt
+Pic: Black Belt
 Gender: Male
-Music: Elite Four
-Items: Full Restore / Full Restore
+Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-Mugshot: Blue
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
 
-Shelgon
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
+Kabutops
+Level: 48
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Altaria
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+Breloom
+Level: 48
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Kingdra
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
+Conkeldurr
+Level: 48
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Flygon
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Flamethrower
-- Crunch
-- Dragon Breath
-- Earthquake
+Doublade
+Level: 48
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Salamence @ Sitrus Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Dragon Claw
-- Rock Slide
-- Crunch
+Hakamo_o
+Level: 48
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_ROXANNE_1 ===
-Name: ROXANNE
-Class: Leader
-Pic: Leader Roxanne
+=== TRAINER_POLLENROAD_HANNAH ===
+Name: Hannah
+Class: Performer_F
+Pic: Performer_F
 Gender: Female
 Music: Female
-Items: Potion / Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Corsola
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Persian
+Level: 48
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Nosepass @ Oran Berry
-Level: 15
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
-- Rock Tomb
+Ninetales Alolan
+Level: 48
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_BRAWLY_1 ===
-Name: BRAWLY
+Cherrim
+Level: 48
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Beautifly
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_POLLENROAD_ASHARI ===
+Name: Ashari
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Tropius
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Probopass
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mienshao
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Chesnaught
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_POLLENROAD_MARTIN ===
+Name: Martin
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Mudsdale
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lairon
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Clodsire
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_POLLENROAD_VIKTOR ===
+Name: Viktor
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Flapple
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Vikavolt
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Chatot
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Wailord
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Arbok
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_POLLENROAD_ALICIA ===
+Name: Alicia
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Drakloak
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Hypno
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Bruxish
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Farigiraf
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Xatu
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_DAVOSISTRAITS_NEWELL ===
+Name: Newell
+Class: Farmer
+Pic: Farmer
+Gender: Male
+Music: Male
+Items: Key Stone
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 2
+Pool Rules: Basic
+
+Crawdaunt
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Relicanth
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Wyrdeer
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pangoro @ Pangorite
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+
+=== TRAINER_DAVOSISTRAITS_LEAH ===
+Name: Leah
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Swimmer
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Lumineon
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Togekiss
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gorebyss
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Carracosta
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_DAVOSISTRAITS_ALKIS ===
+Name: Alkis
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Quaquaval
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+
+Kilowattrel
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pelipper
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Noctowl
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Oricorio Pau
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_DAVOSISTRAITS_LEONIDAS ===
+Name: Leonidas
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Omastar
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Arctovish
+Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Swanna
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Simipour
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_DAVOSISTRAITS_PATELINA ===
+Name: Patelina
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Items: Key Stone
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
+
+Lurantis
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Meganium
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gogoat @ Gogoatite
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+
+=== TRAINER_DAVOSISTRAITS_MINAS ===
+Name: Minas
+Class: Tuber M
+Pic: Tuber M
+Gender: Male
+Music: Girl
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Lapras
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Oranguru
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Obstagoon
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Falinks
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Boltund
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_DAVOSISTRAITS_RANIA ===
+Name: Rania
+Class: Pkmn Trainer 1
+Pic: Rania
+Gender: Female
+Music: Female
+Items: Max Potion / Key Stone
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
+
+Floatzel
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Aqua Jet
+- Ice Fang
+- Flip Turn
+- Whirlpool
+
+Ninetales
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Flamethrower
+- Extrasensory
+- Dazzling Gleam
+- Will O Wisp
+
+Spiritomb
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fiery Wrath
+- Dark Pulse
+- Psybeam
+- Foul Play
+
+Rampardos
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Headbutt
+- Zen Headbutt
+- Submission
+- Screech
+
+Bewear
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Hammer Arm
+- Slack Off
+- Baby Doll Eyes
+- Thrash
+
+Vikavolt @ Lum Berry
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- U Turn
+- Dig
+- Thunderbolt
+- Acrobatics
+
+Aurorus
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Freeze Dry
+- Ancient Power
+- Thunder Wave
+- Deepwater Curse
+
+Typhlosion Hisuian
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Lava Plume
+- Extrasensory
+- Will O Wisp
+- Infernal Parade
+
+Victreebel @ Victreebite
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Leaf Blade
+- Poison Jab
+- Knock Off
+- Stun Spore
+
+=== TRAINER_DAVOSISTRAITS_RANIA_HARD ===
+Name: Rania
+Class: Pkmn Trainer 1
+Pic: Rania
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Check Viability / Try To Faint / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Floatzel
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
+- Jet Punch
+- Ice Fang
+- Flip Turn
+- Hydro Pump
+
+Ninetales
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
+- Overheat
+- Extrasensory
+- Moonblast
+- Will O Wisp
+
+Spiritomb
+Level: 51
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fiery Wrath
+- Dark Pulse
+- Nasty Plot
+- Foul Play
+
+Rampardos
+Level: 51
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Head Smash
+- Zen Headbutt
+- Submission
+- Screech
+
+Bewear
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hammer Arm
+- Slack Off
+- Baby Doll Eyes
+- Thrash
+
+Vikavolt @ Lum Berry
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- U Turn
+- Dig
+- Supercell Slam
+- Acrobatics
+
+Aurorus
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Freeze Dry
+- Ancient Power
+- Thunder Wave
+- Deepwater Curse
+
+Typhlosion Hisuian
+Level: 51
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Lava Plume
+- Extrasensory
+- Will O Wisp
+- Infernal Parade
+
+Victreebel @ Victreebite
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Leaf Blade
+- Barb Barrage
+- Knock Off
+- Stun Spore
+
+=== TRAINER_ELITEFOUR_POLYMNIA ===
+Name: Polymnia
 Class: Leader
 Pic: Leader Brawly
-Gender: Male
-Music: Male
-Items: Super Potion / Super Potion
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
 
-Machop
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
-- Bulk Up
+Jumpluff @ Sitrus Berry
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Giga Drain
+- U Turn
+- Acrobatics
+- Leech Seed
 
-Meditite
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
+Appletun
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dragon Pulse
+- Energy Ball
+- Slack Off
+- Apple Acid
+
+Leafeon
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Leaf Blade
+- Synthesis
+- Thunderous Kick
+- Grass Whistle
+
+Tsareena
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Trop Kick
+- High Jump Kick
+- Thunderous Kick
+- Stomping Tantrum
+
+Crustle
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Crabhammer
+- Accelerock
+- X Scissor
+- Rock Slide
+
+Meganium
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Petal Dance
 - Light Screen
-- Reflect
-- Bulk Up
+- Body Slam
+- Moonblast
 
-Makuhita @ Sitrus Berry
-Level: 19
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+Abomasnow
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Horn Leech
+- Power Up Punch
+- Wood Hammer
+- Avalanche
 
-=== TRAINER_WATTSON_1 ===
-Name: WATTSON
+Dhelmise
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Phantom Force
+- Energy Ball
+- Anchor Shot
+- Flip Turn
+
+Ribombee @ Ribombite
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Pollen Puff
+- Syrup Bomb
+- Draining Kiss
+- Dazzling Gleam
+
+=== TRAINER_ELITEFOUR_POLYMNIA_HARD ===
+Name: Polymnia
 Class: Leader
-Pic: Leader Wattson
+Pic: Leader Brawly
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Jumpluff
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
+- Giga Drain
+- U Turn
+- Acrobatics
+- Leech Seed
+
+Appletun @ Yache Berry
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Pulse
+- Energy Ball
+- Slack Off
+- Apple Acid
+
+Leafeon @ Quick Claw
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Synthesis
+- Thunderous Kick
+- Swords Dance
+
+Tsareena
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Trop Kick
+- High Jump Kick
+- Thunderous Kick
+- Stomping Tantrum
+
+Crustle
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crabhammer
+- Accelerock
+- X Scissor
+- Rock Slide
+
+Meganium
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Petal Dance
+- Light Screen
+- Body Slam
+- Moonblast
+
+Abomasnow
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Horn Leech
+- Power Up Punch
+- Wood Hammer
+- Avalanche
+
+Dhelmise
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Phantom Force
+- Energy Ball
+- Anchor Shot
+- Flip Turn
+
+Ribombee @ Ribombite
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Pollen Puff
+- Syrup Bomb
+- Draining Kiss
+- Dazzling Gleam
+
+=== TRAINER_DAVOSISTRAITS_THEO === /* forgot this mf lol sigh */
+Name: Theo
+Class: Sailor
+Pic: Sailor
 Gender: Male
 Music: Male
-Items: Super Potion / Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Check Viability
+Party Size: 2
+Pool Rules: Basic
 
-Voltorb
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
-- Spark
-- Self Destruct
-- Shock Wave
+Dusclops
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Yamper
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
-- Quick Attack
-- Howl
+Obstagoon
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Magneton
-Level: 22
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
-- Shock Wave
-- Thunder Wave
-- Sonic Boom
+Crabominable
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Boltund @ Sitrus Berry
-Level: 24
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
+Pawmot
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_FLANNERY_1 ===
-Name: FLANNERY
+=== TRAINER_ELITEFOUR_TERPSIKORE ===
+Name: Terpsikore
 Class: Leader
 Pic: Leader Flannery
 Gender: Female
 Music: Female
-Items: Hyper Potion / Hyper Potion
+Items: Full Restore / Key Stone
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
 
-Numel
-Level: 24
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
+Braviary Hisuian
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Esper Wing
+- Frost Breath
+- Air Slash
+- Slash
+
+Bruxish
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psychic Fangs
+- Poison Fang
+- Aqua Tail
+- Covet
+
+Pangoro
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bullet Punch
+- Crunch
+- Sky Uppercut
+- Parting Shot
+
+Medicham
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Blaze Kick
+- High Jump Kick
+- Psychic
+- Trop Kick
+
+Kommo_o
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dragon Claw
+- Seismic Toss
+- Sky Uppercut
+- Iron Defense
+
+Gallade
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psycho Cut
+- Aerial Ace
+- Leaf Blade
+- Fury Cutter
+
+Wyrdeer
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psyshield Bash
+- Horn Leech
+- Hypnosis
 - Take Down
-- Magnitude
-- Sunny Day
 
-Slugma
-Level: 24
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Smog
-- Light Screen
-- Sunny Day
+Reuniclus
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psychic
+- Giga Drain
+- Vacuum Wave
+- Recover
 
-Camerupt
-Level: 26
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Tackle
-- Sunny Day
-- Attract
+Hawlucha @ Hawluchite
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Flying Press
+- Poison Jab
+- Feather Dance
+- Trailblaze
 
-Torkoal @ White Herb
-Level: 29
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Sunny Day
-- Body Slam
-- Attract
+=== TRAINER_ELITEFOUR_TERPSIKORE_HARD ===
+Name: Terpsikore
+Class: Leader
+Pic: Leader Flannery
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
 
-=== TRAINER_NORMAN_1 ===
-Name: NORMAN
+Braviary Hisuian
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
+- Esper Wing
+- Frost Breath
+- Air Slash
+- Slash
+
+Bruxish
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic Fangs
+- Poison Fang
+- Aqua Tail
+- Covet
+
+Pangoro
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bullet Punch
+- Crunch
+- Sky Uppercut
+- Parting Shot
+
+Medicham
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Blaze Kick
+- High Jump Kick
+- Psychic
+- Trop Kick
+
+Kommo_o
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Claw
+- Seismic Toss
+- Sky Uppercut
+- Iron Defense
+
+Gallade
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psycho Cut
+- Aerial Ace
+- Leaf Blade
+- Fury Cutter
+
+Wyrdeer
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psyshield Bash
+- Horn Leech
+- Hypnosis
+- Take Down
+
+Reuniclus
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic
+- Giga Drain
+- Vacuum Wave
+- Recover
+
+Hawlucha @ Hawluchite
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Flying Press
+- Poison Jab
+- Feather Dance
+- Trailblaze
+
+=== TRAINER_ELITEFOUR_EUTERPE ===
+Name: Euterpe
 Class: Leader
 Pic: Leader Norman
-Gender: Male
-Music: Male
-Items: Hyper Potion / Hyper Potion
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
 
-Spinda
-Level: 27
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Teeter Dance
-- Psybeam
-- Facade
-- Encore
+Tentacruel
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Brine
+- Sludge Wave
+- Deepwater Curse
+- Hex
 
-Vigoroth
-Level: 27
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Facade
-- Encore
-- Feint Attack
+Carracosta
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Rock Slide
+- Shell Smash
+- Crunch
+- Liquidation
 
-Linoone
-Level: 29
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Belly Drum
-- Facade
-- Headbutt
-
-Slaking @ Sitrus Berry
-Level: 31
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Counter
+Lanturn
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Surf
 - Yawn
-- Facade
-- Feint Attack
+- Aqua Ring
+- Discharge
 
-=== TRAINER_WINONA_1 ===
-Name: WINONA
+Gliscor
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Poison Jab
+- Drill Run
+- U Turn
+- Knock Off
+
+Arbok
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Poison Fang
+- Glare
+- Crunch
+- Ice Fang
+
+Sneasler
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Poison Jab
+- Swords Dance
+- Knock Off
+- Slash
+
+Clodsire
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Earthquake
+- Shore Up
+- Toxic
+- Sludge Wave
+
+Kabutops
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Stone Axe
+- Aqua Cutter
+- Cross Poison
+- Aqua Jet
+
+Gyarados @ Gyaradosite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Aqua Tail
+- Ice Fang
+- Crunch
+- Poison Fang
+
+=== TRAINER_ELITEFOUR_EUTERPE_HARD ===
+Name: Euterpe
+Class: Leader
+Pic: Leader Norman
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Tentacruel
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
+- Surf
+- Sludge Wave
+- Deepwater Curse
+- Toxic Spikes
+
+Carracosta
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Slide
+- Shell Smash
+- Crunch
+- Liquidation
+
+Lanturn
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Yawn
+- Aqua Ring
+- Discharge
+
+Gliscor
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Jab
+- Drill Run
+- U Turn
+- Knock Off
+
+Arbok
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Fang
+- Glare
+- Crunch
+- Ice Fang
+
+Sneasler
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Jab
+- Swords Dance
+- Knock Off
+- Dire Claw
+
+Clodsire
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake
+- Shore Up
+- Toxic
+- Sludge Wave
+
+Kabutops
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stone Axe
+- Aqua Cutter
+- Cross Poison
+- Aqua Jet
+
+Gyarados @ Gyaradosite
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Aqua Tail
+- Dragon Dance
+- Crunch
+- Poison Fang
+
+=== TRAINER_ELITEFOUR_RHADINE ===
+Name: Rhadine
 Class: Leader
 Pic: Leader Winona
 Gender: Female
 Music: Female
-Items: Hyper Potion / Hyper Potion
+Items: Full Restore / Full Heal / Key Stone
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Risky
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
 
-Swablu
-Level: 29
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Perish Song
-- Mirror Move
-- Safeguard
-- Aerial Ace
+Oricorio Baile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Revelation Dance
+- Petal Dance
+- Quiver Dance
+- Aqua Step
+
+Toucannon
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Beak Blast
+- Drill Peck
+- Flame Charge
+- Hyper Voice
+
+Simisear
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flamethrower
+- Yawn
+- Snarl
+- Headbutt
+
+Marowak Alolan
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Raging Fury
+- Shadow Bone
+- Bone Rush
+- Rock Blast
+
+Chatot
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Torch Song
+- Uproar
+- Roost
+- Snarl
+
+Pyroar F
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flamethrower
+- Dark Pulse
+- Hyper Voice
+- Alluring Voice
+
+Centiskorch
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fire Lash
+- Lunge
+- Leech Life
+- Fire Spin
+
+Togekiss
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dazzling Gleam
+- Aura Sphere
+- Extrasensory
+- Air Slash
+
+Mandibuzz @ Mandibite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Leech Life
+- Drill Peck
+- False Surrender
+- Bonemerang
+
+=== TRAINER_ELITEFOUR_RHADINE_HARD ===
+Name: Rhadine
+Class: Leader
+Pic: Leader Winona
+Gender: Female
+Music: Female
+Items: Full Restore / Full Heal / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Oricorio Baile @ Focus Sash
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
+- Revelation Dance
+- Petal Dance
+- Quiver Dance
+- Aqua Step
+
+Toucannon
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Beak Blast
+- Drill Peck
+- Flame Charge
+- Hyper Voice
+
+Simisear
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower
+- Yawn
+- Snarl
+- Headbutt
+
+Marowak Alolan
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Raging Fury
+- Shadow Bone
+- Bone Rush
+- Rock Blast
+
+Chatot
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Torch Song
+- Uproar
+- Roost
+- Snarl
+
+Pyroar F
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower
+- Dark Pulse
+- Hyper Voice
+- Alluring Voice
+
+Centiskorch
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fire Lash
+- Lunge
+- Leech Life
+- Scald
+
+Togekiss
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dazzling Gleam
+- Aura Sphere
+- Extrasensory
+- Air Slash
+
+Mandibuzz @ Mandibite
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Leech Life
+- Drill Peck
+- False Surrender
+- Bonemerang
+
+=== TRAINER_ELITEFOUR_ANYALIOS ===
+Name: Anyalios
+Class: Champion
+Pic: Champion Wallace
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Ceruledge
+Level: 56
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Bitter Blade
+- Psycho Cut
+- Shadow Claw
+- Sacred Sword
+
+Spiritomb
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dark Pulse
+- Fiery Wrath
+- Memento
+- Sucker Punch
+
+Tyrantrum
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Rock Slide
+- Earthquake
+- Crunch
+- Dragon Claw
+
+Golisopod
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- First Impression
+- Flip Turn
+- Sucker Punch
+- Liquidation
+
+Scrafty
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Drain Punch
+- Head Smash
+- Stomping Tantrum
+- Crunch
+
+Obstagoon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Take Down
+- Cross Chop
+- Night Slash
+- Obstruct
+
+Aegislash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Iron Head
+- Kings Shield
+- Phantom Force
+- Shadow Sneak
+
+Muk Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Crunch
+- Knock Off
+- Poison Fang
+- Acid Armor
+
+Cyclizar @ Cyclizite S
+Level: 56
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Double Edge
+- Crunch
+- Drain Punch
+- Dragon Rush
+
+Cyclizar @ Cyclizite V
+Level: 56
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Double Edge
+- Crunch
+- Terrain Pulse
+- Dragon Pulse
+
+=== TRAINER_ELITEFOUR_ANYALIOS_HARD ===
+Name: Anyalios
+Class: Champion
+Pic: Champion Wallace
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Ceruledge @ Expert Belt
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Lead
+- Bitter Blade
+- Psycho Cut
+- Shadow Claw
+- Sacred Sword
+
+Spiritomb
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dark Pulse
+- Fiery Wrath
+- Memento
+- Sucker Punch
+
+Tyrantrum
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Slide
+- Earthquake
+- Crunch
+- Dragon Claw
+
+Golisopod
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- First Impression
+- Flip Turn
+- Sucker Punch
+- Liquidation
+
+Scrafty
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drain Punch
+- Head Smash
+- Stomping Tantrum
+- Crunch
+
+Obstagoon
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Double Edge
+- Cross Chop
+- Night Slash
+- Obstruct
+
+Aegislash @ Sitrus Berry
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Head
+- Kings Shield
+- Phantom Force
+- Swords Dance
+
+Muk Alolan
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Knock Off
+- Poison Fang
+- Acid Armor
+
+Cyclizar @ Cyclizite S
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Double Edge
+- Crunch
+- Collision Course
+- Dragon Rush
+
+Cyclizar @ Cyclizite V
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Double Edge
+- Crunch
+- Electro Drift
+- Dragon Pulse
+
+=== TRAINER_WAKEWATER_SAMANTHA ===
+Name: Samantha
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Beartic
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Magnezone
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Victreebel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Comfey
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Meganium
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ariados
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cherrim
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tsareena
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Tropius
-Level: 29
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Synthesis
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Pelipper
-Level: 30
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Water Gun
-- Supersonic
-- Protect
-- Aerial Ace
+Gardevoir
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Skarmory
-Level: 31
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Sand Attack
-- Fury Attack
-- Steel Wing
-- Aerial Ace
+Mawile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Altaria @ Oran Berry
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+Espeon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_TATE_AND_LIZA_1 ===
-Name: TATE&LIZA
-Class: Leader
-Pic: Leader Tate And Liza
-Gender: Male
-Music: Female
-Items: Hyper Potion / Hyper Potion / Hyper Potion / Hyper Potion
-Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability
+=== TRAINER_WAKEWATER_MAURA ===
+Name: Maura
+Class: Psychic
+Pic: Psychic F
+Gender: Female
+Music: Intense
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Oricorio Pau
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Marowak Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dustox
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Swoobat
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Claydol
-Level: 41
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Earthquake
-- Ancient Power
-- Psychic
-- Light Screen
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Xatu
-Level: 41
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Psychic
-- Sunny Day
-- Confuse Ray
-- Calm Mind
+Salazzle
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Lunatone @ Sitrus Berry
-Level: 42
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Psychic
-- Hypnosis
-- Calm Mind
+Typhlosion Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Solrock @ Sitrus Berry
-Level: 42
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
+Rapidash Galarian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_JUAN_1 ===
-Name: JUAN
-Class: Leader
-Pic: Leader Juan
+Gothitelle
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Reuniclus
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Grimmsnarl
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dusknoir
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_PIRAEUS ===
+Name: Piraeus
+Class: Sailor
+Pic: Piraeus
 Gender: Male
-Music: Male
-Items: Hyper Potion / Hyper Potion
+Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
 
-Luvdisc
-Level: 41
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Attract
-- Sweet Kiss
-- Flail
+Gyarados
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Waterfall
+- Ice Fang
+- Dragon Dance
+- Crunch
+
+Dragalge
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Poison Jab
+- Dragon Pulse
+- Toxic
+- Aqua Tail
+
+Relicanth @ Loaded Dice
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Liquidation
+- Flip Turn
+- Rock Blast
+- Yawn
+
+Dhelmise
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Phantom Force
+- Power Whip
+- Anchor Shot
+- Razor Shell
+
+Scrafty
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Drain Punch
+- Facade
+- Poison Jab
+- Crunch
+
+Cursola
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Power Gem
+- Infernal Parade
+- Disable
+- Shadow Ball
+
+Cloyster
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Icicle Crash
+- Shell Smash
+- Spike Cannon
+- Razor Shell
+
+Raichu Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psychic
+- Thunderbolt
+- Aura Sphere
+- Surf
+
+Copperajah
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Liquidation
+- Play Rough
+- Iron Head
+- Superpower
+
+Appletun
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dragon Pulse
+- Energy Ball
+- Slack Off
+- Apple Acid
+
+Probopass
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Rock Blast
+- Discharge
+- Thunder Wave
+- Tri Attack
+
+Frosmoth
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bug Buzz
+- Freeze Dry
+- Quiver Dance
+- Giga Drain
+
+Vaporeon @ Leftovers
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Surf
+- Draining Kiss
+- Calm Mind
+- Ice Beam
+
+=== TRAINER_WAKEWATER_LEXIE ===
+Name: Lexie
+Class: Battle Girl
+Pic: Battle Girl
+Gender: Female
+Music: Intense
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
+
+Sandslash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Jolteon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lycanroc Dusk
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mienshao
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kommo_o
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Rampardos
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kleavor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Bewear
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pancham
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gliscor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tinkaton
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Annihilape
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Rage Fist
+- Close Combat
+- Outrage
+- Thrash
+
+=== TRAINER_WAKEWATER_ALEXANDER ===
+Name: Alexander
+Class: Performer_M
+Pic: Performer_M
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+Party Size: 5
+Pool Rules: Basic
+
+Goodra
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Passimian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Arcanine
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kecleon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lurantis
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Wigglytuff
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Florges
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gorebyss
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gothitelle
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cradily
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Rapidash Galarian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Floatzel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_KASSA ===
+Name: Kassa
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Rich
+Items: Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
+
+Spiritomb
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Altaria @ Altarianite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+
+Aerodactyl @ Aerodactylite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+
+Arctozolt
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Arctovish
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Magnezone
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Whiscash
-Level: 41
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rain Dance
-- Water Pulse
-- Amnesia
-- Earthquake
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Sealeo
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Encore
-- Body Slam
-- Aurora Beam
-- Water Pulse
+Swanna
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Crawdaunt
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Crabhammer
-- Taunt
-- Leer
+Vikavolt
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Kingdra @ Chesto Berry
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Water Pulse
-- Double Team
-- Ice Beam
-- Rest
+Ampharos
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_JERRY_1 ===
-Name: JERRY
-Class: School Kid
-Pic: School Kid M
-Gender: Male
-Music: Male
+Meowscarada
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gallade
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_POLYMNIA ===
+Name: Polymnia
+Class: Leader
+Pic: Leader Brawly
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
 
-Ralts
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Simisage
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_TED ===
-Name: TED
-Class: School Kid
-Pic: School Kid M
-Gender: Male
-Music: Male
+Dustox
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tropius
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Parasect
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tsareena
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Toedscruel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ninetales Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kleavor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Scizor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Armaldo
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Electrode Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Golduck
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ribombee @ Ribombite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Pollen Puff
+- Syrup Bomb
+- Draining Kiss
+- Dazzling Gleam
+
+=== TRAINER_WAKEWATER_OURANI ===
+Name: Ourani
+Class: Leader
+Pic: Leader Wattson
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
 
-Ralts
-Level: 17
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Aerodactyl
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_PAUL ===
-Name: PAUL
-Class: School Kid
-Pic: School Kid M
-Gender: Male
-Music: Male
+Relicanth
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dhelmise
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mamoswine
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Omastar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kabutops
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Carracosta
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Archeops
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Steelix
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Wyrdeer
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Klawf
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tyranitar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Aggron @ Aggronite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Salt Cure
+- Dragon Dance
+- Iron Head
+- Body Press
+
+=== TRAINER_WAKEWATER_KLEIO ===
+Name: Kleio
+Class: Leader
+Pic: Leader Roxanne
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
 
-Numel
-Level: 15
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Dusknoir
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Oddish
-Level: 15
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Braviary Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Wingull
-Level: 15
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_JERRY_2 ===
-Name: JERRY
-Class: School Kid
-Pic: School Kid M
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Ralts
-Level: 26
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Meditite
-Level: 26
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_JERRY_3 ===
-Name: JERRY
-Class: School Kid
-Pic: School Kid M
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Kirlia
-Level: 29
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Meditite
-Level: 29
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_JERRY_4 ===
-Name: JERRY
-Class: School Kid
-Pic: School Kid M
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Kirlia
-Level: 32
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Medicham
-Level: 32
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-=== TRAINER_JERRY_5 ===
-Name: JERRY
-Class: School Kid
-Pic: School Kid M
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Kirlia
-Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Dragapult
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Banette
-Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Florges
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tinkaton
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Chandelure
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Armarouge
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Arbok
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Hypno
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cursola
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Bronzong
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Grimmsnarl @ Grimmsnarlite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Play Rough
+- Power Up Punch
+- Foul Play
+- Shadow Claw
+
+=== TRAINER_WAKEWATER_TERPSIKORE ===
+Name: Terpsikore
+Class: Leader
+Pic: Leader Flannery
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Bewear
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gardevoir
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gallade
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Delphox
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Decidueye Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mudsdale
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Conkeldurr
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Poliwrath
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Claydol
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Sneasler
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tauros Paldean Combat Breed
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ariados
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Hawlucha @ Hawluchite
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Flying Press
+- Poison Jab
+- Swords Dance
+- Trailblaze
+
+=== TRAINER_WAKEWATER_EUTERPE ===
+Name: Euterpe
+Class: Leader
+Pic: Leader Norman
+Gender: Female
+Music: Female
+Items: Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Skuntank
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Drapion
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gengar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Salazzle
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Greninja
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Persian Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Wailord
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Clawitzer
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Huntail
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lapras
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Octillery
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tentacruel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gyarados @ Gyaradosite
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Aqua Tail
+- Dragon Dance
+- Crunch
+- Poison Fang
+
+=== TRAINER_WAKEWATER_THALIA_AND_MELPOMENE ===
+Name: Thal & Mel
+Class: Leader
+Pic: Leader Tate And Liza
+Gender: Female
+Music: Female
+Items: Hyper Potion / Hyper Potion / Key Stone
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Doubles
+
+Pawmot
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Oricorio Pom Pom
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ampharos
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Jolteon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pachirisu
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Helioptile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Flygon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Camerupt
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Torkoal
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Crustle
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Marowak
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Typhlosion
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Raichu Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Psychic
+- Discharge
+- Double Team
+- Dazzling Gleam
+
+Steelix @ Steelixite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Bulldoze
+- Earthquake
+- Iron Head
+- Stone Edge
+
+=== TRAINER_WAKEWATER_RHADINE ===
+Name: Rhadine
+Class: Leader
+Pic: Leader Winona
+Gender: Female
+Music: Female
+Items: Full Restore / Full Heal / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Oricorio Baile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Toucannon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Incineroar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Rapidash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kilowattrel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Braviary
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gliscor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Xatu
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Noctowl
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Weavile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Zoroark Hisuian
+Level: 55
+Ability: Fluffy
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Archeops
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mandibuzz @ Mandibite
+Level: 55
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tags: Ace
+- Leech Life
+- Drill Peck
+- False Surrender
+- Bonemerang
+
+=== TRAINER_WAKEWATER_KALLIOPE ===
+Name: Kalliope
+Class: Chimera Leader
+Pic: Chimera Leader
+Gender: Female
+Music: Aqua
+Items: Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Check Viability / Try To Faint / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Tinkaton @ Tinkatite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Gigaton Hammer
+- Spirit Break
+- Fake Out
+- Iron Head
+
+Dragonite @ Dragoniteite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Dragon Pulse
+- Aqua Tail
+- Dragon Dance
+- Fly
+
+Yanmega
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Goodra Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Grimmsnarl
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Huntail
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ceruledge
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Altaria
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dragapult
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Golisopod
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dragalge
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tauros
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ninetales
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Hydrapple
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Fickle Beam
+- Syrup Bomb
+- Burning Jealousy
+- Snap Trap
+
+=== TRAINER_WAKEWATER_CHIMERA_ADMIN_M ===
+Name: Admin
+Class: Team Chimera
+Pic: Chimera Admin M
+Gender: Male
+Music: Aqua
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Salazzle
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Minior
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Houndoom
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Glalie
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gourgeist
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Flareon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lycanroc Midnight
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Heracross
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Skeledirge
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Krookodile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Stoutland
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Muk Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Arcanine Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Rock Slide
+- Flare Blitz
+- Accelerock
+- Crunch
+
+=== TRAINER_WAKEWATER_CHIMERA_ADMIN_F ===
+Name: Admin
+Class: Team Chimera
+Pic: Chimera Admin F
+Gender: Female
+Items: Full Restore
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Mudsdale
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Marowak
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Klawf
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Clodsire
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Espathra
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kabutops
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Walrein
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dewgong
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Weavile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Floatzel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Clawitzer
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Whiscash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mamoswine
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Earthquake
+- Icicle Crash
+- Slack Off
+- Bulldoze
+
+=== TRAINER_WAKEWATER_ANYALIOS ===
+Name: Anyalios
+Class: Champion
+Pic: Champion Wallace
+Gender: Male
+Music: Male
+Items: Full Restore / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Ceruledge
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bitter Blade
+- Psycho Cut
+- Shadow Claw
+- Sacred Sword
+
+Spiritomb
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dark Pulse
+- Fiery Wrath
+- Memento
+- Sucker Punch
+
+Tyrantrum
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Rock Slide
+- Earthquake
+- Crunch
+- Dragon Claw
+
+Golisopod
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- First Impression
+- Flip Turn
+- Sucker Punch
+- Liquidation
+
+Scrafty
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Drain Punch
+- Head Smash
+- Stomping Tantrum
+- Crunch
+
+Obstagoon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Take Down
+- Cross Chop
+- Night Slash
+- Obstruct
+
+Aegislash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Iron Head
+- Kings Shield
+- Phantom Force
+- Shadow Sneak
+
+Muk Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Crunch
+- Knock Off
+- Poison Fang
+- Acid Armor
+
+Annihilape
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cloyster
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Centiskorch
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Banette
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cyclizar @ Cyclizite S
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Double Edge
+- Crunch
+- Drain Punch
+- Dragon Rush
+
+Cyclizar @ Cyclizite V
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Double Edge
+- Crunch
+- Terrain Pulse
+- Dragon Pulse
+
+=== TRAINER_WAKEWATER_RANIA ===
+Name: Rania
+Class: Pkmn Trainer 1
+Pic: Rania
+Gender: Female
+Music: Female
+Items: Max Potion / Key Stone
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
+
+Floatzel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Aqua Jet
+- Ice Fang
+- Flip Turn
+- Whirlpool
+
+Ninetales
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Flamethrower
+- Extrasensory
+- Dazzling Gleam
+- Will O Wisp
+
+Spiritomb
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fiery Wrath
+- Dark Pulse
+- Psybeam
+- Foul Play
+
+Rampardos
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Headbutt
+- Zen Headbutt
+- Submission
+- Screech
+
+Bewear
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Hammer Arm
+- Slack Off
+- Baby Doll Eyes
+- Thrash
+
+Vikavolt @ Lum Berry
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- U Turn
+- Dig
+- Thunderbolt
+- Acrobatics
+
+Aurorus
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Freeze Dry
+- Ancient Power
+- Thunder Wave
+- Deepwater Curse
+
+Typhlosion Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Lava Plume
+- Extrasensory
+- Will O Wisp
+- Infernal Parade
+
+Mawile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Politoed
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ambipom
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Zebstrika
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lycanroc
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Victreebel @ Victreebite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Leaf Blade
+- Poison Jab
+- Knock Off
+- Stun Spore
+
+=== TRAINER_WAKEWATER_MICHAH ===
+Name: Michah
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Pelipper
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Swanna
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Simipour
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mienshao
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Quagsire
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Skuntank
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cursola
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Conkeldurr
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pangoro
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Obstagoon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lurantis
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Passimian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_DRAKE ===
+Name: Drake
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Lycanroc
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cradily
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Armaldo
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kleavor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Electrode
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Annihilape
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Abomasnow
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Xatu
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mamoswine
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Camerupt
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gliscor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Perrserker
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_SASHA ===
+Name: Sasha
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Pachirisu
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Sneasler
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Froslass
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Togekiss
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ariados
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Espathra
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Politoed
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mandibuzz
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Espeon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Umbreon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Donphan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Toucannon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_CONNIE ===
+Name: Connie
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Rich
+Items: Key Stone
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
+
+Golduck
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gorebyss
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lurantis
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Falinks
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dedenne
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Reuniclus
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lanturn
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Chandelure
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Grafaiai
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Boltund
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Persian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Heliolisk @ Heliolite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+
+Heracross @ Heracronite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+
+=== TRAINER_WAKEWATER_SHIA ===
+Name: Shia
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Wyrdeer
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cherrim
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Crustle
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Typhlosion
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Wailord
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Palafin
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Glaceon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Leafeon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Sylveon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Breloom
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gardevoir
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Flapple
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_OLIVIA ===
+Name: Olivia
+Class: Punk Rocker
+Pic: Punk Rocker
+Gender: Female
+Music: Cool
+Double Battle: Yes
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Sylveon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gardevoir
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ninjask
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Swanna
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Primarina
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Zebstrika
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Boltund
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Vikavolt
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Raichu
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Rapidash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dedenne
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dracozolt
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_KYLE ===
+Name: Kyle
+Class: Farmer
+Pic: Farmer
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Spiritomb
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Armaldo
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Reuniclus
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Huntail
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gyarados
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ampharos
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Flygon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Linoone
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Victreebel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Braviary
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kecleon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Musharna
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_NEMO ===
+Name: Nemo
+Class: Pkmn Trainer 1
+Pic: Outfit Hylian F
+Gender: Female
+Music: Female
+Items: Key Stone
+Double Battle: No
+AI: Check Bad Move / Check Viability / Try To Faint / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
+
+Oricorio Baile @ Focus Sash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Revelation Dance
+- Quiver Dance
+- Petal Dance
+- Aqua Step
+
+Oricorio Pau @ Focus Sash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Revelation Dance
+- Quiver Dance
+- Petal Dance
+- Aqua Step
+
+Oricorio Pom Pom @ Focus Sash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Revelation Dance
+- Quiver Dance
+- Petal Dance
+- Aqua Step
+
+Oricorio Sensu @ Focus Sash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Revelation Dance
+- Quiver Dance
+- Petal Dance
+- Aqua Step
+
+Goodra Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Armaldo
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Arcanine Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dragapult
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Bewear
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kommo_o
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Walrein
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Decidueye
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Primarina
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Incineroar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Sylveon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Archeops @ Archeopsite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Crunch
+- Brave Bird
+- Rock Slide
+- Knock Off
+
+=== TRAINER_WAKEWATER_CASSIE ===
+Name: Cassie
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Items: Key Stone
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Meowscarada
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+
+Stoutland
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+
+Zebstrika
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Farigiraf
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tinkaton
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Goodra
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Florges
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Chandelure
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Meganium
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Glaceon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Comfey
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gardevoir @ Gardevoirite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Moonblast
+- Draining Kiss
+- Calm Mind
+- Psychic
+
+=== TRAINER_WAKEWATER_JARED ===
+Name: Jared
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move / Try To Faint / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
+
+Lapras
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Golduck
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Oranguru
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cloyster
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pangoro
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Annihilape
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Hypno
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Bastiodon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Wailord
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Wyrdeer
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dewgong
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Feraligatr
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Jaw Lock
+- Fishious Rend
+- Poison Fang
+- Ice Fang
+
+=== TRAINER_WAKEWATER_CAIDEN ===
+Name: Caiden
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Check Bad Move / Check Viability / Try To Faint
+Party Size: 5
+Pool Rules: Basic
+
+Palafin
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Flip Turn
+- Jet Punch
+- Ice Hammer
+- Aqua Tail
+
+Tinkaton
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Toedscruel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Glalie
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Golisopod
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Boltund
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Heliolisk
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Magnezone
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Steelix
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dracovish
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Xatu
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Clawitzer
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_SEBASTIAN ===
+Name: Sebastian
+Class: Guitarist
+Pic: Guitarist
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
+
+Reuniclus
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gliscor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Golduck
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kecleon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gyarados
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Wigglytuff
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Raichu
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tauros Paldean Aqua Breed
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Chatot
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Zoroark
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ambipom
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Braviary Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+
+=== TRAINER_WAKEWATER_BRODY ===
+Name: Brody
+Class: Pokefan
+Pic: Pokefan M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
+
+Stoutland
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tyrantrum
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cherrim
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Typhlosion
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Chesnaught
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Aurorus
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Donphan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Honchkrow
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Flapple
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Appletun
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Quagsire
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kommo_o
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+
+=== TRAINER_WAKEWATER_JERRY ===
+Name: JERRY
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Tentacruel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Boltund
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Armarouge
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pawmot
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mimikyu
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Raichu
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Weavile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kabutops
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gourgeist
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gengar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lycanroc
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gallade
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_ERIKOV ===
+Name: Erikov
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Double Battle: No
+AI: Check Bad Move / Check Viability
+Party Size: 3
+Pool Rules: Basic
+
+Honchkrow
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Jumpluff
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tropius
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Klawf
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mawile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Persian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Carracosta
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Rapidash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Chatot
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Scizor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Linoone
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Electrode
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_RAJ ===
+Name: Raj
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Items: Max Potion / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Party Size: 5
+Pool Rules: Basic
+
+Steelix
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Medicham
-Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_KAREN_1 ===
+Dedenne
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Togedemaru
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Torkoal
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Camerupt
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Yanmega
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Grimmsnarl
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Flygon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dodrio
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Arbok
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Copperajah @ Copperajite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Liquidation
+- Play Rough
+- Iron Head
+- Body Press
+
+=== TRAINER_WAKEWATER_BITA ===
+Name: Bita
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Female
+Music: Cool
+Items: Max Potion / Key Stone
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
+
+Banette
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lurantis
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Bewear
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Octillery
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pyroar F
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Medicham
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mienshao
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Crabrawler
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Hypno
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Scizor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dedenne
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Houndoom @ Houndoominite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Dark Pulse
+- Nasty Plot
+- Flamethrower
+- Foul Play
+
+=== TRAINER_WAKEWATER_AMY ===
 Name: KAREN
 Class: School Kid
 Pic: School Kid F
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
 
-Shroomish
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Raichu Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_GEORGIA ===
+Rapidash Galarian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Persian Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gothitelle
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Bronzong
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Sneasler
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Komala
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Ariados
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pachirisu
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Espathra
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tsareena
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Politoed
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_GEORGIA ===
 Name: GEORGIA
-Class: School Kid
-Pic: School Kid F
+Class: Performer_F
+Pic: Performer_F
 Gender: Female
-Music: Girl
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
 
-Shroomish
-Level: 16
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Ambipom
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Beautifly
-Level: 16
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_KAREN_2 ===
-Name: KAREN
-Class: School Kid
-Pic: School Kid F
-Gender: Female
-Music: Girl
+Flareon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Glaceon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Swanna
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Jumpluff
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Delphox
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Probopass
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Togekiss
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Drapion
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Electrode
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pyroar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_NOB ===
+Name: Nob
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
 
-Shroomish
-Level: 26
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Klawf
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Whismur
-Level: 26
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Mawile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_KAREN_3 ===
-Name: KAREN
-Class: School Kid
-Pic: School Kid F
-Gender: Female
-Music: Girl
+Relicanth
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Conkeldurr
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gliscor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kleavor
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Perrserker
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Crustle
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Minior
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Aegislash
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Krookodile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Swoobat
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_DALE ===
+Name: Dale
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
 
-Shroomish
-Level: 29
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Probopass
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Loudred
-Level: 29
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Poliwrath
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_KAREN_4 ===
-Name: KAREN
-Class: School Kid
-Pic: School Kid F
-Gender: Female
-Music: Girl
+Sandslash Alolan
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lycanroc Dusk
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gallade
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Chesnaught
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Aggron
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gengar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Weavile
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tauros
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pangoro
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Aerodactyl
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WAKEWATER_ALLEN ===
+Name: Allen
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: Male
+Music: Intense
+Items: Key Stone
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
+Party Size: 5
+Pool Rules: Basic
 
-Breloom
-Level: 32
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Dracozolt
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Loudred
-Level: 32
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Dracovish
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_KAREN_5 ===
-Name: KAREN
-Class: School Kid
-Pic: School Kid F
+Dragapult
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Tyranitar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Pyroar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Gyarados
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Flapple
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Appletun
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Hydrapple
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Basculegion
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Kommo_o
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Flygon @ Flygonite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Leech Life
+- Attack Order
+- Hyper Voice
+- Earth Power
+
+=== TRAINER_WAKEWATER_NIKITA ===
+Name: Nikita
+Class: Triathlete
+Pic: Cycling Triathlete F
 Gender: Female
-Music: Girl
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
+Party Size: 5
+Pool Rules: Basic
 
-Breloom
-Level: 35
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Tentacruel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Exploud
-Level: 35
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Kilowattrel
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Greninja
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cyclizar
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Wigglytuff
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Musharna
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Crawdaunt
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Beartic
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Carracosta
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Cradily
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Electrode Hisuian
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lumineon
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_KATE_AND_JOY ===
 Name: KATE & JOY
@@ -10749,7 +13486,7 @@ Xatu
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_EDWARDO ===
+=== TRAINER_DAVOSISTRAITS_RANIAO ===
 Name: EDWARDO
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -11245,7 +13982,7 @@ Meditite
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_PAULA ===
+=== TRAINER_WAKEWATER_BRODYA ===
 Name: PAULA
 Class: Battle Girl
 Pic: Battle Girl

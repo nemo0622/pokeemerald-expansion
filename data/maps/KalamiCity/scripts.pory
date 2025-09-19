@@ -90,6 +90,9 @@ script Common_EventScript_Piraeus
     if(flag(FLAG_VISITED_PORT_PELLO)) {
         dynmultipush("Port Pello", 10)
     }
+    if(flag(FLAG_IS_CHAMPION)) {
+        dynmultipush("Wakewater Isle", 11)
+    }
     dynmultistack(100, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
 
     // based on choice, say different things
@@ -198,6 +201,15 @@ script Common_EventScript_Piraeus
             setvar(VAR_CHOSEN_SAIL_LOCATION, 10)
             speakername("Piraeus")
             msgbox(format("Port Pello! Their cherry trees are world-famous! They say a magic Tropius blessed their lands. How about we see it for ourselves?"))
+            closemessage
+            warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
+            waitstate
+        }
+        elif(var(VAR_RESULT) == 11) // Wakewater Isle
+        {
+            setvar(VAR_CHOSEN_SAIL_LOCATION, 11)
+            speakername("Piraeus")
+            msgbox(format("Ohoho, you're looking for a challenge, eh? You'd better get your Pokémon ready on the way there!"))
             closemessage
             warp(MAP_THE_DELPHIS, 9, 2) // Warps to The Delphis ship map
             waitstate

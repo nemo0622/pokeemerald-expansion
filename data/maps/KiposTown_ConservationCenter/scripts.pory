@@ -112,7 +112,7 @@ script KiposTown_ConservationCenter_MrRussel
             closemessage
             delay(5)
             speakername("Mr. Russel")
-            msgbox(format("Our loyal Zookeepers wear outfits like that. By donating Pokémon, you're sort of a Zookeeper yourself!\p Thank you so much for your help so far, {PLAYER}. When youn can, keep stopping by and donating more Pokémon!"))
+            msgbox(format("Our loyal Zookeepers wear outfits like that. By donating Pokémon, you're sort of a Zookeeper yourself!\p Thank you so much for your help so far, {PLAYER}. When you can, keep stopping by and donating more Pokémon!"))
             closemessage
             setflag(FLAG_DONATED_5_ZOO_POKEMON)
         }
@@ -132,7 +132,7 @@ script KiposTown_ConservationCenter_MrRussel
             closemessage
             delay(5)
             speakername("Mr. Russel")
-            msgbox(format("Those Poké ball varieties work best on low-leveled or previously caught Pokémon. Perfect for helping fill out the Zoo!\p Thank you so much for your help so far, {PLAYER}. When youn can, keep stopping by and donating more Pokémon!"))
+            msgbox(format("Those Poké ball varieties work best on low-leveled or previously caught Pokémon. Perfect for helping fill out the Zoo!\p Thank you so much for your help so far, {PLAYER}. When you can, keep stopping by and donating more Pokémon!"))
             closemessage
             setflag(FLAG_DONATED_10_ZOO_POKEMON)
         }
@@ -149,7 +149,7 @@ script KiposTown_ConservationCenter_MrRussel
             closemessage
             delay(5)
             speakername("Mr. Russel")
-            msgbox(format("That's a very special Poké ball, designed to capture any Pokémon without fail. Only use it when it's absolutely necessary!\p Thank you so much for your help so far, {PLAYER}. When youn can, keep stopping by and donating more Pokémon!"))
+            msgbox(format("That's a very special Poké ball, designed to capture any Pokémon without fail. Only use it when it's absolutely necessary!\p Thank you so much for your help so far, {PLAYER}. When you can, keep stopping by and donating more Pokémon!"))
             closemessage
             setflag(FLAG_DONATED_20_ZOO_POKEMON)
         }
@@ -172,7 +172,7 @@ script KiposTown_ConservationCenter_MrRussel
             closemessage
             delay(5)
             speakername("Mr. Russel")
-            msgbox(format("Those {COLOR GREEN}Masks{COLOR DARK_GRAY} were found by a Zookeeper by the mouth of the cave. For now, you can hold onto them until we learn more.\p Thank you so much for your help so far, {PLAYER}. When youn can, keep stopping by and donating more Pokémon!"))
+            msgbox(format("Those {COLOR GREEN}Masks{COLOR DARK_GRAY} were found by a Zookeeper by the mouth of the cave. For now, you can hold onto them until we learn more.\p Thank you so much for your help so far, {PLAYER}. When you can, keep stopping by and donating more Pokémon!"))
             closemessage
             setflag(FLAG_DONATED_30_ZOO_POKEMON)
         }

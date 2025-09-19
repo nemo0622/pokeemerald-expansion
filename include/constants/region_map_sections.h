@@ -120,9 +120,9 @@
 #define MAPSEC_TOWER_OF_DIOXIPPUS           0x74 // South of Kipos Town & Lastlight Road, has tower for Ho-oh
 #define MAPSEC_PENTEPETAL_CITY              0x75 // North of Myrrini Island, reached via Piraeus after Gym 5 (Myrrini Island)
 #define MAPSEC_POLLEN_ROAD                  0x76 // East of Péntepetal City, towards Davosi Straits & Ruins of Ahiyawa
-#define MAPSEC_ROUTE_19                     0x77
-#define MAPSEC_ROUTE_20                     0x78
-#define MAPSEC_ROUTE_21                     0x79
+#define MAPSEC_DAVOSI_STRAITS                     0x77
+#define MAPSEC_RUINS_OF_AHIYAWA                     0x78
+#define MAPSEC_WAKEWATER_ISLE                     0x79
 #define MAPSEC_ROUTE_22                     0x7A
 #define MAPSEC_ROUTE_23                     0x7B
 #define MAPSEC_ROUTE_24                     0x7C

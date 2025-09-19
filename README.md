@@ -69,10 +69,9 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- Continue Mapping and NPC development
-    - Remember, add University Student scripts (& expand the Field Special!) to all new maps!
 - Add event allowing player to Call Legendary Dogs to Sofos Acropolis Temple
     - Choose between Raikou, Suicune, and Entei, which resets after every Elite Four run (enabling multiple encounters for living dex purposes)
+    - ALSO, allow Kyogre and Groudon to be re-encountered after every Elite Four run
 
 - POST GAME - "Champion Title Defense"
     - Dozens of Trainers, all with large Party Pools
@@ -82,18 +81,8 @@ MAJOR TODOS:
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
     - New areas:
-        - The Pollen Road - route east of Péntepetal City, home to many Tropius, Weepinbell, and Lileep
-        - Davosi Strait - ocean route heading north of the Pollen Road (name inspired by Ser Davos Seaworth)
-            - Only place where Dhelmise can be fished up!
-        - Trickster Coast - small area where ocean turns east towards land (name inspired by Trojan Horse)
-            - Include rocky, sandy coastal area with broken ship tiles and ruins
-        - Ruins of Ahiyawa (name based on Ahhiyawa, the term for Achean Greeks by the Hittites) - based on the ruins of Troy, covered in broken walls and stones with only a few standing buildings
-            - Where the new Elite Four is hosted!
-            - E4 Member 1: Polymnia (Ace: Mega Ribombee)
-            - E4 Member 2: Terpsikore (Ace: Mega Hawlucha)
-            - E4 Member 3: Euterpe (Ace: Mega Gyarados OR Mega Gengar?)
-            - E4 Member 4: Rhadine (Ace: Mega Toucannon)
-            - E4 Champion: Aegios, based on Zeus (Ace: Mega Heliolisk OR Mega Cyclizar V)
+        - ADD MORE WATERFALL AREAS TO GAME - mostly with rare items like EXP Candies or Big Nuggets, to give the HM Waterfall more than one or two uses skull emoji
+            - Ex: add Waterfalls to Erinys Path, Asfal Hills, Nyx Trails, and Péntepetal City
 - Give all Pokémon unique Pokédex entries
 - Implement Chris Piché's Game Corner Expansion minigames
     - https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches#Expansion-Compatible_Game_Corner_Expansion
@@ -129,7 +118,9 @@ GREEK PHRASES AND STUFF:
 - When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
 - In-battle types just aren't showing up a lot of the time
-- Terpsikore's black colors look light gray during Satyr's Lair event
+- Opponents Mega Evolving Pokémon seems to make them shiny for some reason
+    - Wakewater Isle's Euterpe Gyarados becomes red
+    - Wakewater's Allen Flygon is blue
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)

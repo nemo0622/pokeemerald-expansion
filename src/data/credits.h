@@ -1,73 +1,35 @@
 enum
 {
     PAGE_TITLE,
-    PAGE_DIRECTOR,
-    PAGE_ART_DIRECTOR,
-    PAGE_WORLD_DIRECTOR,
-    PAGE_LEAD_PROGRAMMER,
-    PAGE_PROGRAMMERS_1,
-    PAGE_PROGRAMMERS_2,
-    PAGE_PROGRAMMERS_3,
-    PAGE_PROGRAMMERS_4,
-    PAGE_GRAPHIC_DESIGNERS_1,
-    PAGE_GRAPHIC_DESIGNERS_2,
-    PAGE_GRAPHIC_DESIGNERS_3,
-    PAGE_MUSIC_COMPOSITION,
-    PAGE_SOUND_EFFECTS,
-    PAGE_GAME_DESIGNERS_1,
-    PAGE_GAME_DESIGNERS_2,
-    PAGE_GAME_DESIGNERS_3,
-    PAGE_SCENARIO_PLOT,
-    PAGE_SCENARIO,
-    PAGE_SCRIPT_DESIGNERS,
-    PAGE_MAP_DESIGNERS,
-    PAGE_BATTLE_FRONTIER_DATA,
-    PAGE_PARAMETRIC_DESIGNERS,
-    PAGE_POKEDEX_TEXT,
-    PAGE_ENVIRONMENT_AND_TOOL_PROGRAMS_1,
-    PAGE_PKMN_DESIGNERS_1,
-    PAGE_PKMN_DESIGNERS_2,
-    PAGE_PKMN_DESIGNERS_3,
-    PAGE_PKMN_DESIGNERS_4,
-    PAGE_SUPPORT_PROGRAMMERS,
-    PAGE_NCL_PRODUCT_TESTING,
-    PAGE_PACKAGE_AND_MANUAL,
+    PAGE_DEVELOPER,
+    PAGE_MY_PARTNER,
+    PAGE_ENGINE,
+    PAGE_DISCORD_MODS,
+    PAGE_FEATURES_1,
+    PAGE_FEATURES_2,
+    PAGE_TILES_1,
+    PAGE_BATTLE_SPRITES_1,
+    PAGE_BATTLE_SPRITES_2,
+    PAGE_TRAINER_SPRITES,
+    PAGE_OVERWORLD_TRAINERS,
+    PAGE_OVERWORLD_POKEMON,
+    PAGE_USER_INTERFACE,
+    PAGE_USER_INTERFACE_2,
     PAGE_SPECIAL_THANKS_1,
     PAGE_SPECIAL_THANKS_2,
     PAGE_SPECIAL_THANKS_3,
     PAGE_SPECIAL_THANKS_4,
-    PAGE_INFORMATION_SUPERVISORS,
-    PAGE_ARTWORK_1,
-    PAGE_ARTWORK_2,
-    PAGE_ARTWORK_3,
-    PAGE_COORDINATORS,
-    PAGE_ENGLISH_VERSION,
-    PAGE_TRANSLATOR,
-    PAGE_TEXT_EDITOR,
-    PAGE_NCL_COORDINATOR,
-    PAGE_PROGRAMMERS_5,
-    PAGE_GRAPHIC_DESIGNER,
-    PAGE_ENVIRONMENT_AND_TOOL_PROGRAMS_2,
-    PAGE_NOA_TESTING,
-    PAGE_BRAILLE_CODE_CHECK_1,
-    PAGE_BRAILLE_CODE_CHECK_2,
-    PAGE_SPECIAL_THANKS_5,
-    PAGE_TASK_MANAGERS,
-    PAGE_PRODUCERS,
-    PAGE_EXECUTIVE_DIRECTOR,
-    PAGE_EXECUTIVE_PRODUCERS_1,
-    PAGE_EXECUTIVE_PRODUCERS_2,
     PAGE_COUNT
 };
 
 #define ENTRIES_PER_PAGE 5
 
 static const u8 sCreditsText_EmptyString[]                    = _("");
-static const u8 sCreditsText_PkmnEmeraldVersion[]             = _("POKéMON EMERALD VERSION");
+static const u8 sCreditsText_PkmnEmeraldVersion[]             = _("Pokémon Lazarus Version");
 static const u8 sCreditsText_Credits[]                        = _("Credits");
 static const u8 sCreditsText_ExecutiveDirector[]              = _("Executive Director");
-static const u8 sCreditsText_Director[]                       = _("Director");
-static const u8 sCreditsText_ArtDirector[]                    = _("Art Director");
+static const u8 sCreditsText_Developer[]                      = _("Developer");
+static const u8 sCreditsText_MyPartner[]                      = _("My Amazing Partner");
 static const u8 sCreditsText_BattleDirector[]                 = _("Battle Director");
 static const u8 sCreditsText_MainProgrammer[]                 = _("Main Programmer");
 static const u8 sCreditsText_BattleSystemPgrms[]              = _("Battle System Programmers");
@@ -76,11 +38,11 @@ static const u8 sCreditsText_Programmers[]                    = _("Programmers")
 static const u8 sCreditsText_MainGraphicDesigner[]            = _("Main Graphic Designer");
 static const u8 sCreditsText_GraphicDesigners[]               = _("Graphic Designers");
 static const u8 sCreditsText_PkmnDesigners[]                  = _("POKéMON Designers");
-static const u8 sCreditsText_MusicComposition[]               = _("Music Composition");
-static const u8 sCreditsText_SoundEffectsAndPkmnVoices[]      = _("Sound Effects & POKéMON Voices");
-static const u8 sCreditsText_GameDesigners[]                  = _("Game Designers");
-static const u8 sCreditsText_ScenarioPlot[]                   = _("Scenario Plot");
-static const u8 sCreditsText_Scenario[]                       = _("Scenario");
+static const u8 sCreditsText_BattleSprites[]                  = _("Pokémon Battle Sprites");
+static const u8 sCreditsText_TrainerSprites[]                 = _("Trainer Battle Sprites");
+static const u8 sCreditsText_OverworldTrainers[]                  = _("NPC Sprites");
+static const u8 sCreditsText_OverworldPokemon[]                   = _("Overworld Pokémon Sprites");
+static const u8 sCreditsText_UserInterface[]                       = _("UI Graphics");
 static const u8 sCreditsText_ScriptDesigners[]                = _("Script Designers");
 static const u8 sCreditsText_MapDesigners[]                   = _("Map Designers");
 static const u8 sCreditsText_MapDataDesigners[]               = _("Map Data Designers");
@@ -89,83 +51,83 @@ static const u8 sCreditsText_PokedexText[]                    = _("POKéDEX Text
 static const u8 sCreditsText_EnvAndToolPgrms[]                = _("Environment & Tool Programmers");
 static const u8 sCreditsText_NCLProductTesting[]              = _("NCL Product Testing");
 static const u8 sCreditsText_SpecialThanks[]                  = _("Special Thanks");
-static const u8 sCreditsText_Coordinators[]                   = _("Coordinators");
+static const u8 sCreditsText_NextUp[]                   = _("Next up...");
 static const u8 sCreditsText_Producers[]                      = _("Producers");
 static const u8 sCreditsText_ExecProducers[]                  = _("Executive Producers");
 static const u8 sCreditsText_InfoSupervisors[]                = _("Information Supervisors");
 static const u8 sCreditsText_TaskManagers[]                   = _("Task Managers");
 static const u8 sCreditsText_BrailleCodeCheck[]               = _("Braille Code Check");
-static const u8 sCreditsText_WorldDirector[]                  = _("World Director");
+static const u8 sCreditsText_Engine[]                         = _("Pokeemerald Engine");
 static const u8 sCreditsText_BattleFrontierData[]             = _("Battle Frontier Data");
 static const u8 sCreditsText_SupportProgrammers[]             = _("Support Programmers");
 static const u8 sCreditsText_Artwork[]                        = _("Artwork");
-static const u8 sCreditsText_LeadProgrammer[]                 = _("Lead Programmer");
+static const u8 sCreditsText_DiscordMods[]                    = _("Discord Mods");
 static const u8 sCreditsText_LeadGraphicArtist[]              = _("Lead Graphic Artist");
 static const u8 sCreditsText_SatoshiTajiri[]                  = _("Satoshi Tajiri");
-static const u8 sCreditsText_JunichiMasuda[]                  = _("Junichi Masuda");
-static const u8 sCreditsText_KenSugimori[]                    = _("Ken Sugimori");
-static const u8 sCreditsText_ShigekiMorimoto[]                = _("Shigeki Morimoto");
-static const u8 sCreditsText_TetsuyaWatanabe[]                = _("Tetsuya Watanabe");
-static const u8 sCreditsText_HisashiSogabe[]                  = _("Hisashi Sogabe");
-static const u8 sCreditsText_SosukeTamada[]                   = _("Sosuke Tamada");
-static const u8 sCreditsText_AkitoMori[]                      = _("Akito Mori");
-static const u8 sCreditsText_KeitaKagaya[]                    = _("Keita Kagaya");
-static const u8 sCreditsText_YoshinoriMatsuda[]               = _("Yoshinori Matsuda");
-static const u8 sCreditsText_HiroyukiNakamura[]               = _("Hiroyuki Nakamura");
-static const u8 sCreditsText_MasaoTaya[]                      = _("Masao Taya");
-static const u8 sCreditsText_SatoshiNohara[]                  = _("Satoshi Nohara");
-static const u8 sCreditsText_TomomichiOhta[]                  = _("Tomomichi Ohta");
-static const u8 sCreditsText_MiyukiIwasawa[]                  = _("Miyuki Iwasawa");
-static const u8 sCreditsText_TakenoriOhta[]                   = _("Takenori Ohta");
-static const u8 sCreditsText_HironobuYoshida[]                = _("Hironobu Yoshida");
-static const u8 sCreditsText_MotofumiFujiwara[]               = _("Motofumi Fujiwara");
-static const u8 sCreditsText_SatoshiOhta[]                    = _("Satoshi Ohta");
-static const u8 sCreditsText_AsukaIwashita[]                  = _("Asuka Iwashita");
-static const u8 sCreditsText_AimiTomita[]                     = _("Aimi Tomita");
-static const u8 sCreditsText_TakaoUnno[]                      = _("Takao Unno");
-static const u8 sCreditsText_KanakoEo[]                       = _("Kanako Eo");
+static const u8 sCreditsText_TheyAreSoCool[]                  = _("(They are cool) (<3)");
+static const u8 sCreditsText_CactusMV[]                    = _("cactusmv");
+static const u8 sCreditsText_Nemo622[]                        = _("Nemo622");
+static const u8 sCreditsText_FishingMinigame[]                = _("Fishing Minigame: Bivurnum");
+static const u8 sCreditsText_PretTeam[]                       = _("Pret Team");
+static const u8 sCreditsText_MiningMinigame[]                 = _("Mining Minigame: Vol");
+static const u8 sCreditsText_OverworldEncounters[]            = _("Overworld Pokémon: HashtagMarky");
+static const u8 sCreditsText_Blizblob[]                       = _("Blizblob");
+static const u8 sCreditsText_Snad[]                           = _("snad");
+static const u8 sCreditsText_QuestSystem[]                    = _("Quest Menu: PokémonSanFran");
+static const u8 sCreditsText_Dexnav[]                         = _("DexNav: ghoulslash");
+static const u8 sCreditsText_Mudskip[]                        = _("mudskip");
+static const u8 sCreditsText_DayNightSystem[]                 = _("Day/Night System: merrp");
+static const u8 sCreditsText_Missingno[]                      = _("MissingNoVGC");
+static const u8 sCreditsText_MoreInDocs[]                     = _("(More info in Documentation!)");
+static const u8 sCreditsText_SageDeoxys[]                = _("SageDeoxys");
+static const u8 sCreditsText_RomHackingHideout[]              = _("ROM Hacking Hideout");
+static const u8 sCreditsText_AnimaNel[]                    = _("Satoshi Ohta");
+static const u8 sCreditsText_TrainerDX[]                  = _("Asuka Iwashita");
+static const u8 sCreditsText_Nuukiie[]                     = _("Nuukiie");
+static const u8 sCreditsText_Egg3ggEgg[]                      = _("Egg3ggEgg");
+static const u8 sCreditsText_SirWhibbles[]                       = _("SirWhibbles");
 static const u8 sCreditsText_JunOkutani[]                     = _("Jun Okutani");
 static const u8 sCreditsText_AtsukoNishida[]                  = _("Atsuko Nishida");
 static const u8 sCreditsText_MuneoSaito[]                     = _("Muneo Saito");
 static const u8 sCreditsText_RenaYoshikawa[]                  = _("Rena Yoshikawa");
-static const u8 sCreditsText_GoIchinose[]                     = _("Go Ichinose");
-static const u8 sCreditsText_MorikazuAoki[]                   = _("Morikazu Aoki");
-static const u8 sCreditsText_KojiNishino[]                    = _("Koji Nishino");
-static const u8 sCreditsText_KenjiMatsushima[]                = _("Kenji Matsushima");
-static const u8 sCreditsText_TetsujiOhta[]                    = _("Tetsuji Ohta");
-static const u8 sCreditsText_HitomiSato[]                     = _("Hitomi Sato");
-static const u8 sCreditsText_TakeshiKawachimaru[]             = _("Takeshi Kawachimaru");
-static const u8 sCreditsText_TeruyukiShimoyamada[]            = _("Teruyuki Shimoyamada");
-static const u8 sCreditsText_ShigeruOhmori[]                  = _("Shigeru Ohmori");
-static const u8 sCreditsText_TadashiTakahashi[]               = _("Tadashi Takahashi");
-static const u8 sCreditsText_ToshinobuMatsumiya[]             = _("Toshinobu Matsumiya");
-static const u8 sCreditsText_AkihitoTomisawa[]                = _("Akihito Tomisawa");
-static const u8 sCreditsText_HirokiEnomoto[]                  = _("Hiroki Enomoto");
+static const u8 sCreditsText_COMBOY[]                     = _("COMBOY");
+static const u8 sCreditsText_SupahSanti[]                   = _("SupahSanti");
+static const u8 sCreditsText_EeVeeEe[]                    = _("EeVeeEe1999");
+static const u8 sCreditsText_LuigiTKO[]                = _("LuigiTKO");
+static const u8 sCreditsText_MegamanOmega[]                    = _("Megaman-Omega");
+static const u8 sCreditsText_Coffee[]                     = _("Coffee (From Nemo622 Discord!)");
+static const u8 sCreditsText_TortleDove[]             = _("TortleDove");
+static const u8 sCreditsText_KesterHendrickPixels[]            = _("kesterhendrickpixels");
+static const u8 sCreditsText_MinidexProject[]                  = _("MINIDEX Project");
+static const u8 sCreditsText_AveonTrainer[]               = _("AveonTrainer");
+static const u8 sCreditsText_Zezitra[]             = _("Zezitra (Ilios Region Map)");
+static const u8 sCreditsText_Solo993[]                = _("Solo993");
+static const u8 sCreditsText_WhoseSupportMadeThisPossible[]                  = _("whose support made this possible :)");
 static const u8 sCreditsText_KazuyukiTerada[]                 = _("Kazuyuki Terada");
 static const u8 sCreditsText_YuriSakurai[]                    = _("Yuri Sakurai");
 static const u8 sCreditsText_HiromiSagawa[]                   = _("Hiromi Sagawa");
-static const u8 sCreditsText_KenjiTominaga[]                  = _("Kenji Tominaga");
+static const u8 sCreditsText_MyDiscordAndKoFiCommunity[]                  = _("My Ko-Fi and Discord Community,");
 static const u8 sCreditsText_YoshioTajiri[]                   = _("Yoshio Tajiri");
 static const u8 sCreditsText_TeikoSasaki[]                    = _("Teiko Sasaki");
 static const u8 sCreditsText_SachikoHamano[]                  = _("Sachiko Hamano");
 static const u8 sCreditsText_ChieMatsumiya[]                  = _("Chie Matsumiya");
 static const u8 sCreditsText_AkikoShinozaki[]                 = _("Akiko Shinozaki");
 static const u8 sCreditsText_AstukoFujii[]                    = _("Astuko Fujii");
-static const u8 sCreditsText_NozomuSaito[]                    = _("Nozomu Saito");
-static const u8 sCreditsText_KenkichiToyama[]                 = _("Kenkichi Toyama");
-static const u8 sCreditsText_SuguruNakatsui[]                 = _("Suguru Nakatsui");
+static const u8 sCreditsText_OutfitSystem[]                   = _("Outfit System & More: mudskip");
+static const u8 sCreditsText_Zaebucca[]                 = _("Kenkichi Toyama");
+static const u8 sCreditsText_PokemonCrystal[]                 = _("Game Freak (Pokémon Crystal)");
 static const u8 sCreditsText_YumiFunasaka[]                   = _("Yumi Funasaka");
 static const u8 sCreditsText_NaokoYanase[]                    = _("Naoko Yanase");
 static const u8 sCreditsText_NCLSuperMarioClub[]              = _("NCL Super Mario Club");
 static const u8 sCreditsText_AtsushiTada[]                    = _("Atsushi Tada");
-static const u8 sCreditsText_TakahiroOhnishi[]                = _("Takahiro Ohnishi");
-static const u8 sCreditsText_NorihideOkamura[]                = _("Norihide Okamura");
+static const u8 sCreditsText_IllBeRemakingThe[]                = _("I'll be remaking the");
+static const u8 sCreditsText_AlolaRegionInMy[]                = _("Alola Region in my classic");
 static const u8 sCreditsText_HiroNakamura[]                   = _("Hiro Nakamura");
 static const u8 sCreditsText_HiroyukiUesugi[]                 = _("Hiroyuki Uesugi");
 static const u8 sCreditsText_TerukiMurakawa[]                 = _("Teruki Murakawa");
 static const u8 sCreditsText_AkiraKinashi[]                   = _("Akira Kinashi");
-static const u8 sCreditsText_MichikoTakizawa[]                = _("Michiko Takizawa");
-static const u8 sCreditsText_MakikoTakada[]                   = _("Makiko Takada");
+static const u8 sCreditsText_TeamAquasHideout[]                = _("Team Aqua's Hideout");
+static const u8 sCreditsText_Pawkkie[]                   = _("Pawkkie & Team Aqua's Asset Repo");
 static const u8 sCreditsText_TakanaoKondo[]                   = _("Takanao Kondo");
 static const u8 sCreditsText_AiMashima[]                      = _("Ai Mashima");
 static const u8 sCreditsText_GakujiNomoto[]                   = _("Gakuji Nomoto");
@@ -177,15 +139,15 @@ static const u8 sCreditsText_HiroyukiJinnai[]                 = _("Hiroyuki Jinn
 static const u8 sCreditsText_HiroakiTsuru[]                   = _("Hiroaki Tsuru");
 static const u8 sCreditsText_TsunekazIshihara[]               = _("Tsunekaz Ishihara");
 static const u8 sCreditsText_SatoruIwata[]                    = _("Satoru Iwata");
-static const u8 sCreditsText_KazuyaSuyama[]                   = _("Kazuya Suyama");
+static const u8 sCreditsText_Cecilily[]                   = _("cecilily");
 static const u8 sCreditsText_SatoshiMitsuhara[]               = _("Satoshi Mitsuhara");
 static const u8 sCreditsText_JapanBrailleLibrary[]            = _("Japan Braille Library");
 static const u8 sCreditsText_TomotakaKomura[]                 = _("Tomotaka Komura");
 static const u8 sCreditsText_MikikoOhhashi[]                  = _("Mikiko Ohhashi");
 static const u8 sCreditsText_DaisukeHoshino[]                 = _("Daisuke Hoshino");
 static const u8 sCreditsText_KenjiroIto[]                     = _("Kenjiro Ito");
-static const u8 sCreditsText_RuiKawaguchi[]                   = _("Rui Kawaguchi");
-static const u8 sCreditsText_ShunsukeKohori[]                 = _("Shunsuke Kohori");
+static const u8 sCreditsText_ThankYouForPlaying[]                   = _("Thank you for playing Pokémon Lazarus! :)");
+static const u8 sCreditsText_SeaglassStyle[]                 = _("Seaglass style! Stay tuned!");
 static const u8 sCreditsText_SachikoNakamichi[]               = _("Sachiko Nakamichi");
 static const u8 sCreditsText_FujikoNomura[]                   = _("Fujiko Nomura");
 static const u8 sCreditsText_KazukiYoshihara[]                = _("Kazuki Yoshihara");
@@ -225,21 +187,21 @@ static const struct CreditsEntry sCreditsEntry_EmptyString                      
 static const struct CreditsEntry sCreditsEntry_PkmnEmeraldVersion               = { 7,  TRUE, sCreditsText_PkmnEmeraldVersion};
 static const struct CreditsEntry sCreditsEntry_Credits                          = {11,  TRUE, sCreditsText_Credits};
 static const struct CreditsEntry sCreditsEntry_ExecutiveDirector                = { 8,  TRUE, sCreditsText_ExecutiveDirector};
-static const struct CreditsEntry sCreditsEntry_Director                         = {12,  TRUE, sCreditsText_Director};
-static const struct CreditsEntry sCreditsEntry_ArtDirector                      = {10,  TRUE, sCreditsText_ArtDirector};
+static const struct CreditsEntry sCreditsEntry_Developer                        = {12,  TRUE, sCreditsText_Developer};
+static const struct CreditsEntry sCreditsEntry_MyPartner                        = {10,  TRUE, sCreditsText_MyPartner};
 static const struct CreditsEntry sCreditsEntry_BattleDirector                   = {10,  TRUE, sCreditsText_BattleDirector};
 static const struct CreditsEntry sCreditsEntry_MainProgrammer                   = {10,  TRUE, sCreditsText_MainProgrammer};
 static const struct CreditsEntry sCreditsEntry_BattleSystemPgrms                = { 8,  TRUE, sCreditsText_BattleSystemPgrms};
 static const struct CreditsEntry sCreditsEntry_FieldSystemPgrms                 = { 7,  TRUE, sCreditsText_FieldSystemPgrms};
-static const struct CreditsEntry sCreditsEntry_Programmers                      = {12,  TRUE, sCreditsText_Programmers};
+static const struct CreditsEntry sCreditsEntry_Features                      = {12,  TRUE, sCreditsText_Programmers};
 static const struct CreditsEntry sCreditsEntry_MainGraphicDesigner              = { 7,  TRUE, sCreditsText_MainGraphicDesigner};
-static const struct CreditsEntry sCreditsEntry_GraphicDesigners                 = { 9,  TRUE, sCreditsText_GraphicDesigners};
+static const struct CreditsEntry sCreditsEntry_Tilesets                 = { 9,  TRUE, sCreditsText_GraphicDesigners};
 static const struct CreditsEntry sCreditsEntry_PkmnDesigners                    = {10,  TRUE, sCreditsText_PkmnDesigners};
-static const struct CreditsEntry sCreditsEntry_MusicComposition                 = {13,  TRUE, sCreditsText_MusicComposition};
-static const struct CreditsEntry sCreditsEntry_SoundEffectsAndPkmnVoices        = { 4,  TRUE, sCreditsText_SoundEffectsAndPkmnVoices};
-static const struct CreditsEntry sCreditsEntry_GameDesigners                    = {11,  TRUE, sCreditsText_GameDesigners};
-static const struct CreditsEntry sCreditsEntry_ScenarioPlot                     = {11,  TRUE, sCreditsText_ScenarioPlot};
-static const struct CreditsEntry sCreditsEntry_Scenario                         = {13,  TRUE, sCreditsText_Scenario};
+static const struct CreditsEntry sCreditsEntry_BattleSprites                 = {13,  TRUE, sCreditsText_BattleSprites};
+static const struct CreditsEntry sCreditsEntry_TrainerSprites        = { 4,  TRUE, sCreditsText_TrainerSprites};
+static const struct CreditsEntry sCreditsEntry_OverworldTrainers                    = {11,  TRUE, sCreditsText_OverworldTrainers};
+static const struct CreditsEntry sCreditsEntry_OverworldPokemon                     = {11,  TRUE, sCreditsText_OverworldPokemon};
+static const struct CreditsEntry sCreditsEntry_UserInterface                         = {13,  TRUE, sCreditsText_UserInterface};
 static const struct CreditsEntry sCreditsEntry_ScriptDesigners                  = {10,  TRUE, sCreditsText_ScriptDesigners};
 static const struct CreditsEntry sCreditsEntry_MapDesigners                     = {11,  TRUE, sCreditsText_MapDesigners};
 static const struct CreditsEntry sCreditsEntry_MapDataDesigners                 = { 9,  TRUE, sCreditsText_MapDataDesigners};
@@ -248,83 +210,83 @@ static const struct CreditsEntry sCreditsEntry_PokedexText                      
 static const struct CreditsEntry sCreditsEntry_EnvAndToolPgrms                  = { 6,  TRUE, sCreditsText_EnvAndToolPgrms};
 static const struct CreditsEntry sCreditsEntry_NCLProductTesting                = {11,  TRUE, sCreditsText_NCLProductTesting};
 static const struct CreditsEntry sCreditsEntry_SpecialThanks                    = {10,  TRUE, sCreditsText_SpecialThanks};
-static const struct CreditsEntry sCreditsEntry_Coordinators                     = {11,  TRUE, sCreditsText_Coordinators};
+static const struct CreditsEntry sCreditsEntry_NextUp                     = {11,  TRUE, sCreditsText_NextUp};
 static const struct CreditsEntry sCreditsEntry_Producers                        = {11,  TRUE, sCreditsText_Producers};
 static const struct CreditsEntry sCreditsEntry_ExecProducers                    = { 7,  TRUE, sCreditsText_ExecProducers};
 static const struct CreditsEntry sCreditsEntry_InfoSupervisors                  = {10,  TRUE, sCreditsText_InfoSupervisors};
 static const struct CreditsEntry sCreditsEntry_TaskManagers                     = { 8,  TRUE, sCreditsText_TaskManagers};
 static const struct CreditsEntry sCreditsEntry_BrailleCodeCheck                 = {10,  TRUE, sCreditsText_BrailleCodeCheck};
-static const struct CreditsEntry sCreditsEntry_WorldDirector                    = {10,  TRUE, sCreditsText_WorldDirector};
+static const struct CreditsEntry sCreditsEntry_Engine                    = {10,  TRUE, sCreditsText_Engine};
 static const struct CreditsEntry sCreditsEntry_BattleFrontierData               = { 8,  TRUE, sCreditsText_BattleFrontierData};
 static const struct CreditsEntry sCreditsEntry_SupportProgrammers               = {10,  TRUE, sCreditsText_SupportProgrammers};
 static const struct CreditsEntry sCreditsEntry_Artwork                          = {12,  TRUE, sCreditsText_Artwork};
-static const struct CreditsEntry sCreditsEntry_LeadProgrammer                   = {10,  TRUE, sCreditsText_LeadProgrammer};
+static const struct CreditsEntry sCreditsEntry_DiscordMods                   = {10,  TRUE, sCreditsText_DiscordMods};
 static const struct CreditsEntry sCreditsEntry_LeadGraphicArtist                = { 9,  TRUE, sCreditsText_LeadGraphicArtist};
 static const struct CreditsEntry sCreditsEntry_SatoshiTajiri                    = {11, FALSE, sCreditsText_SatoshiTajiri};
-static const struct CreditsEntry sCreditsEntry_JunichiMasuda                    = {11, FALSE, sCreditsText_JunichiMasuda};
-static const struct CreditsEntry sCreditsEntry_KenSugimori                      = {11, FALSE, sCreditsText_KenSugimori};
-static const struct CreditsEntry sCreditsEntry_ShigekiMorimoto                  = {11, FALSE, sCreditsText_ShigekiMorimoto};
-static const struct CreditsEntry sCreditsEntry_TetsuyaWatanabe                  = {11, FALSE, sCreditsText_TetsuyaWatanabe};
-static const struct CreditsEntry sCreditsEntry_HisashiSogabe                    = {11, FALSE, sCreditsText_HisashiSogabe};
-static const struct CreditsEntry sCreditsEntry_SosukeTamada                     = {11, FALSE, sCreditsText_SosukeTamada};
-static const struct CreditsEntry sCreditsEntry_AkitoMori                        = {11, FALSE, sCreditsText_AkitoMori};
-static const struct CreditsEntry sCreditsEntry_KeitaKagaya                      = {11, FALSE, sCreditsText_KeitaKagaya};
-static const struct CreditsEntry sCreditsEntry_YoshinoriMatsuda                 = {11, FALSE, sCreditsText_YoshinoriMatsuda};
-static const struct CreditsEntry sCreditsEntry_HiroyukiNakamura                 = {11, FALSE, sCreditsText_HiroyukiNakamura};
-static const struct CreditsEntry sCreditsEntry_MasaoTaya                        = {11, FALSE, sCreditsText_MasaoTaya};
-static const struct CreditsEntry sCreditsEntry_SatoshiNohara                    = {11, FALSE, sCreditsText_SatoshiNohara};
-static const struct CreditsEntry sCreditsEntry_TomomichiOhta                    = {11, FALSE, sCreditsText_TomomichiOhta};
-static const struct CreditsEntry sCreditsEntry_MiyukiIwasawa                    = {11, FALSE, sCreditsText_MiyukiIwasawa};
-static const struct CreditsEntry sCreditsEntry_TakenoriOhta                     = {11, FALSE, sCreditsText_TakenoriOhta};
-static const struct CreditsEntry sCreditsEntry_HironobuYoshida                  = {11, FALSE, sCreditsText_HironobuYoshida};
-static const struct CreditsEntry sCreditsEntry_MotofumiFujiwara                 = {11, FALSE, sCreditsText_MotofumiFujiwara};
-static const struct CreditsEntry sCreditsEntry_SatoshiOhta                      = {11, FALSE, sCreditsText_SatoshiOhta};
-static const struct CreditsEntry sCreditsEntry_AsukaIwashita                    = {11, FALSE, sCreditsText_AsukaIwashita};
-static const struct CreditsEntry sCreditsEntry_AimiTomita                       = {11, FALSE, sCreditsText_AimiTomita};
-static const struct CreditsEntry sCreditsEntry_TakaoUnno                        = {11, FALSE, sCreditsText_TakaoUnno};
-static const struct CreditsEntry sCreditsEntry_KanakoEo                         = {11, FALSE, sCreditsText_KanakoEo};
+static const struct CreditsEntry sCreditsEntry_TheyAreSoCool                    = {11, FALSE, sCreditsText_TheyAreSoCool};
+static const struct CreditsEntry sCreditsEntry_CactusMV                      = {11, FALSE, sCreditsText_CactusMV};
+static const struct CreditsEntry sCreditsEntry_Nemo622                  = {11, FALSE, sCreditsText_Nemo622};
+static const struct CreditsEntry sCreditsEntry_FishingMinigame                  = {11, FALSE, sCreditsText_FishingMinigame};
+static const struct CreditsEntry sCreditsEntry_PretTeam                    = {11, FALSE, sCreditsText_PretTeam};
+static const struct CreditsEntry sCreditsEntry_MiningMinigame                     = {11, FALSE, sCreditsText_MiningMinigame};
+static const struct CreditsEntry sCreditsEntry_OverworldEncounters                        = {11, FALSE, sCreditsText_OverworldEncounters};
+static const struct CreditsEntry sCreditsEntry_Blizblob                      = {11, FALSE, sCreditsText_Blizblob};
+static const struct CreditsEntry sCreditsEntry_Snad                 = {11, FALSE, sCreditsText_Snad};
+static const struct CreditsEntry sCreditsEntry_QuestSystem                 = {11, FALSE, sCreditsText_QuestSystem};
+static const struct CreditsEntry sCreditsEntry_Dexnav                        = {11, FALSE, sCreditsText_Dexnav};
+static const struct CreditsEntry sCreditsEntry_Mudskip                    = {11, FALSE, sCreditsText_Mudskip};
+static const struct CreditsEntry sCreditsEntry_DayNightSystem                    = {11, FALSE, sCreditsText_DayNightSystem};
+static const struct CreditsEntry sCreditsEntry_Missingno                    = {11, FALSE, sCreditsText_Missingno};
+static const struct CreditsEntry sCreditsEntry_MoreInDocs                     = {11, FALSE, sCreditsText_MoreInDocs};
+static const struct CreditsEntry sCreditsEntry_SageDeoxys                  = {11, FALSE, sCreditsText_SageDeoxys};
+static const struct CreditsEntry sCreditsEntry_RomHackingHideout                 = {11, FALSE, sCreditsText_RomHackingHideout};
+static const struct CreditsEntry sCreditsEntry_AnimaNel                      = {11, FALSE, sCreditsText_AnimaNel};
+static const struct CreditsEntry sCreditsEntry_TrainerDX                    = {11, FALSE, sCreditsText_TrainerDX};
+static const struct CreditsEntry sCreditsEntry_Nuukiie                       = {11, FALSE, sCreditsText_Nuukiie};
+static const struct CreditsEntry sCreditsEntry_Egg3ggEgg                        = {11, FALSE, sCreditsText_Egg3ggEgg};
+static const struct CreditsEntry sCreditsEntry_SirWhibbles                         = {11, FALSE, sCreditsText_SirWhibbles};
 static const struct CreditsEntry sCreditsEntry_JunOkutani                       = {11, FALSE, sCreditsText_JunOkutani};
 static const struct CreditsEntry sCreditsEntry_AtsukoNishida                    = {11, FALSE, sCreditsText_AtsukoNishida};
 static const struct CreditsEntry sCreditsEntry_MuneoSaito                       = {11, FALSE, sCreditsText_MuneoSaito};
 static const struct CreditsEntry sCreditsEntry_RenaYoshikawa                    = {11, FALSE, sCreditsText_RenaYoshikawa};
-static const struct CreditsEntry sCreditsEntry_GoIchinose                       = {11, FALSE, sCreditsText_GoIchinose};
-static const struct CreditsEntry sCreditsEntry_MorikazuAoki                     = {11, FALSE, sCreditsText_MorikazuAoki};
-static const struct CreditsEntry sCreditsEntry_KojiNishino                      = {11, FALSE, sCreditsText_KojiNishino};
-static const struct CreditsEntry sCreditsEntry_KenjiMatsushima                  = {11, FALSE, sCreditsText_KenjiMatsushima};
-static const struct CreditsEntry sCreditsEntry_TetsujiOhta                      = {11, FALSE, sCreditsText_TetsujiOhta};
-static const struct CreditsEntry sCreditsEntry_HitomiSato                       = {11, FALSE, sCreditsText_HitomiSato};
-static const struct CreditsEntry sCreditsEntry_TakeshiKawachimaru               = {11, FALSE, sCreditsText_TakeshiKawachimaru};
-static const struct CreditsEntry sCreditsEntry_TeruyukiShimoyamada              = {11, FALSE, sCreditsText_TeruyukiShimoyamada};
-static const struct CreditsEntry sCreditsEntry_ShigeruOhmori                    = {11, FALSE, sCreditsText_ShigeruOhmori};
-static const struct CreditsEntry sCreditsEntry_TadashiTakahashi                 = {11, FALSE, sCreditsText_TadashiTakahashi};
-static const struct CreditsEntry sCreditsEntry_ToshinobuMatsumiya               = {11, FALSE, sCreditsText_ToshinobuMatsumiya};
-static const struct CreditsEntry sCreditsEntry_AkihitoTomisawa                  = {11, FALSE, sCreditsText_AkihitoTomisawa};
-static const struct CreditsEntry sCreditsEntry_HirokiEnomoto                    = {11, FALSE, sCreditsText_HirokiEnomoto};
+static const struct CreditsEntry sCreditsEntry_COMBOY                       = {11, FALSE, sCreditsText_COMBOY};
+static const struct CreditsEntry sCreditsEntry_SupahSanti                     = {11, FALSE, sCreditsText_SupahSanti};
+static const struct CreditsEntry sCreditsEntry_EeVeeEe                      = {11, FALSE, sCreditsText_EeVeeEe};
+static const struct CreditsEntry sCreditsEntry_LuigiTKO                  = {11, FALSE, sCreditsText_LuigiTKO};
+static const struct CreditsEntry sCreditsEntry_MegamanOmega                      = {11, FALSE, sCreditsText_MegamanOmega};
+static const struct CreditsEntry sCreditsEntry_Coffee                       = {11, FALSE, sCreditsText_Coffee};
+static const struct CreditsEntry sCreditsEntry_TortleDove               = {11, FALSE, sCreditsText_TortleDove};
+static const struct CreditsEntry sCreditsEntry_KesterHendrickPixels              = {11, FALSE, sCreditsText_KesterHendrickPixels};
+static const struct CreditsEntry sCreditsEntry_MinidexProject                    = {11, FALSE, sCreditsText_MinidexProject};
+static const struct CreditsEntry sCreditsEntry_AveonTrainer                 = {11, FALSE, sCreditsText_AveonTrainer};
+static const struct CreditsEntry sCreditsEntry_Zezitra               = {11, FALSE, sCreditsText_Zezitra};
+static const struct CreditsEntry sCreditsEntry_Solo993                  = {11, FALSE, sCreditsText_Solo993};
+static const struct CreditsEntry sCreditsEntry_WhoseSupportMadeThisPossible                    = {11, FALSE, sCreditsText_WhoseSupportMadeThisPossible};
 static const struct CreditsEntry sCreditsEntry_KazuyukiTerada                   = {11, FALSE, sCreditsText_KazuyukiTerada};
 static const struct CreditsEntry sCreditsEntry_YuriSakurai                      = {11, FALSE, sCreditsText_YuriSakurai};
 static const struct CreditsEntry sCreditsEntry_HiromiSagawa                     = {11, FALSE, sCreditsText_HiromiSagawa};
-static const struct CreditsEntry sCreditsEntry_KenjiTominaga                    = {11, FALSE, sCreditsText_KenjiTominaga};
+static const struct CreditsEntry sCreditsEntry_MyDiscordAndKoFiCommunity                    = {11, FALSE, sCreditsText_MyDiscordAndKoFiCommunity};
 static const struct CreditsEntry sCreditsEntry_YoshioTajiri                     = {11, FALSE, sCreditsText_YoshioTajiri};
 static const struct CreditsEntry sCreditsEntry_TeikoSasaki                      = {11, FALSE, sCreditsText_TeikoSasaki};
 static const struct CreditsEntry sCreditsEntry_SachikoHamano                    = {11, FALSE, sCreditsText_SachikoHamano};
 static const struct CreditsEntry sCreditsEntry_ChieMatsumiya                    = {11, FALSE, sCreditsText_ChieMatsumiya};
 static const struct CreditsEntry sCreditsEntry_AkikoShinozaki                   = {11, FALSE, sCreditsText_AkikoShinozaki};
 static const struct CreditsEntry sCreditsEntry_AstukoFujii                      = {11, FALSE, sCreditsText_AstukoFujii};
-static const struct CreditsEntry sCreditsEntry_NozomuSaito                      = {11, FALSE, sCreditsText_NozomuSaito};
-static const struct CreditsEntry sCreditsEntry_KenkichiToyama                   = {11, FALSE, sCreditsText_KenkichiToyama};
-static const struct CreditsEntry sCreditsEntry_SuguruNakatsui                   = {11, FALSE, sCreditsText_SuguruNakatsui};
+static const struct CreditsEntry sCreditsEntry_OutfitSystem                      = {11, FALSE, sCreditsText_OutfitSystem};
+static const struct CreditsEntry sCreditsEntry_Zaebucca                   = {11, FALSE, sCreditsText_Zaebucca};
+static const struct CreditsEntry sCreditsEntry_PokemonCrystal                   = {11, FALSE, sCreditsText_PokemonCrystal};
 static const struct CreditsEntry sCreditsEntry_YumiFunasaka                     = {11, FALSE, sCreditsText_YumiFunasaka};
 static const struct CreditsEntry sCreditsEntry_NaokoYanase                      = {11, FALSE, sCreditsText_NaokoYanase};
 static const struct CreditsEntry sCreditsEntry_NCLSuperMarioClub                = {11, FALSE, sCreditsText_NCLSuperMarioClub};
 static const struct CreditsEntry sCreditsEntry_AtsushiTada                      = {11, FALSE, sCreditsText_AtsushiTada};
-static const struct CreditsEntry sCreditsEntry_TakahiroOhnishi                  = {11, FALSE, sCreditsText_TakahiroOhnishi};
-static const struct CreditsEntry sCreditsEntry_NorihideOkamura                  = {11, FALSE, sCreditsText_NorihideOkamura};
+static const struct CreditsEntry sCreditsEntry_IllBeRemakingThe                  = {11, FALSE, sCreditsText_IllBeRemakingThe};
+static const struct CreditsEntry sCreditsEntry_AlolaRegionInMy                  = {11, FALSE, sCreditsText_AlolaRegionInMy};
 static const struct CreditsEntry sCreditsEntry_HiroNakamura                     = {11, FALSE, sCreditsText_HiroNakamura};
 static const struct CreditsEntry sCreditsEntry_HiroyukiUesugi                   = {11, FALSE, sCreditsText_HiroyukiUesugi};
 static const struct CreditsEntry sCreditsEntry_TerukiMurakawa                   = {11, FALSE, sCreditsText_TerukiMurakawa};
 static const struct CreditsEntry sCreditsEntry_AkiraKinashi                     = {11, FALSE, sCreditsText_AkiraKinashi};
-static const struct CreditsEntry sCreditsEntry_MichikoTakizawa                  = {11, FALSE, sCreditsText_MichikoTakizawa};
-static const struct CreditsEntry sCreditsEntry_MakikoTakada                     = {11, FALSE, sCreditsText_MakikoTakada};
+static const struct CreditsEntry sCreditsEntry_TeamAquasHideout                  = {11, FALSE, sCreditsText_TeamAquasHideout};
+static const struct CreditsEntry sCreditsEntry_Pawkkie                     = {11, FALSE, sCreditsText_Pawkkie};
 static const struct CreditsEntry sCreditsEntry_TakanaoKondo                     = {11, FALSE, sCreditsText_TakanaoKondo};
 static const struct CreditsEntry sCreditsEntry_AiMashima                        = {11, FALSE, sCreditsText_AiMashima};
 static const struct CreditsEntry sCreditsEntry_GakujiNomoto                     = {11, FALSE, sCreditsText_GakujiNomoto};
@@ -336,15 +298,15 @@ static const struct CreditsEntry sCreditsEntry_HiroyukiJinnai                   
 static const struct CreditsEntry sCreditsEntry_HiroakiTsuru                     = {11, FALSE, sCreditsText_HiroakiTsuru};
 static const struct CreditsEntry sCreditsEntry_TsunekazIshihara                 = {11, FALSE, sCreditsText_TsunekazIshihara};
 static const struct CreditsEntry sCreditsEntry_SatoruIwata                      = {11, FALSE, sCreditsText_SatoruIwata};
-static const struct CreditsEntry sCreditsEntry_KazuyaSuyama                     = {11, FALSE, sCreditsText_KazuyaSuyama};
+static const struct CreditsEntry sCreditsEntry_Cecilily                     = {11, FALSE, sCreditsText_Cecilily};
 static const struct CreditsEntry sCreditsEntry_SatoshiMitsuhara                 = {11, FALSE, sCreditsText_SatoshiMitsuhara};
 static const struct CreditsEntry sCreditsEntry_JapanBrailleLibrary              = { 9, FALSE, sCreditsText_JapanBrailleLibrary};
 static const struct CreditsEntry sCreditsEntry_TomotakaKomura                   = {11, FALSE, sCreditsText_TomotakaKomura};
 static const struct CreditsEntry sCreditsEntry_MikikoOhhashi                    = {11, FALSE, sCreditsText_MikikoOhhashi};
 static const struct CreditsEntry sCreditsEntry_DaisukeHoshino                   = {11, FALSE, sCreditsText_DaisukeHoshino};
 static const struct CreditsEntry sCreditsEntry_KenjiroIto                       = {11, FALSE, sCreditsText_KenjiroIto};
-static const struct CreditsEntry sCreditsEntry_RuiKawaguchi                     = {11, FALSE, sCreditsText_RuiKawaguchi};
-static const struct CreditsEntry sCreditsEntry_ShunsukeKohori                   = {11, FALSE, sCreditsText_ShunsukeKohori};
+static const struct CreditsEntry sCreditsEntry_ThankYouForPlaying                     = {11, FALSE, sCreditsText_ThankYouForPlaying};
+static const struct CreditsEntry sCreditsEntry_SeaglassStyle                   = {11, FALSE, sCreditsText_SeaglassStyle};
 static const struct CreditsEntry sCreditsEntry_SachikoNakamichi                 = {11, FALSE, sCreditsText_SachikoNakamichi};
 static const struct CreditsEntry sCreditsEntry_FujikoNomura                     = {11, FALSE, sCreditsText_FujikoNomura};
 static const struct CreditsEntry sCreditsEntry_KazukiYoshihara                  = {11, FALSE, sCreditsText_KazukiYoshihara};
@@ -391,397 +353,135 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
         _
     },
-    [PAGE_DIRECTOR] = {
+    [PAGE_DEVELOPER] = {
         _,
-        &sCreditsEntry_Director,
-        &sCreditsEntry_ShigekiMorimoto,
-        _,
-        _,
-    },
-    [PAGE_ART_DIRECTOR] = {
-        _,
-        &sCreditsEntry_ArtDirector,
-        &sCreditsEntry_KenSugimori,
+        &sCreditsEntry_Developer,
+        &sCreditsEntry_Nemo622,
         _,
         _,
     },
-    [PAGE_WORLD_DIRECTOR] = {
+    [PAGE_MY_PARTNER] = {
         _,
-        &sCreditsEntry_WorldDirector,
-        &sCreditsEntry_JunichiMasuda,
-        _,
-        _,
-    },
-    [PAGE_LEAD_PROGRAMMER] = {
-        &sCreditsEntry_LeadProgrammer,
-        &sCreditsEntry_HisashiSogabe,
-        &sCreditsEntry_LeadGraphicArtist,
-        &sCreditsEntry_MotofumiFujiwara,
+        &sCreditsEntry_MyPartner,
+        &sCreditsEntry_CactusMV,
+        &sCreditsEntry_TheyAreSoCool,
         _,
     },
-    [PAGE_PROGRAMMERS_1] = {
-        &sCreditsEntry_Programmers,
-        &sCreditsEntry_HisashiSogabe,
-        &sCreditsEntry_TomomichiOhta,
-        &sCreditsEntry_NozomuSaito,
+    [PAGE_ENGINE] = {
+        _,
+        &sCreditsEntry_Engine,
+        &sCreditsEntry_PretTeam,
+        &sCreditsEntry_RomHackingHideout,
         _,
     },
-    [PAGE_PROGRAMMERS_2] = {
-        &sCreditsEntry_Programmers,
-        &sCreditsEntry_AkitoMori,
-        &sCreditsEntry_HiroyukiNakamura,
-        &sCreditsEntry_MasaoTaya,
-        _,
+    [PAGE_DISCORD_MODS] = {
+        &sCreditsEntry_DiscordMods,
+        &sCreditsEntry_Mudskip,
+        &sCreditsEntry_Missingno,
+        &sCreditsEntry_Snad,
+        &sCreditsEntry_Blizblob,
     },
-    [PAGE_PROGRAMMERS_3] = {
-        &sCreditsEntry_Programmers,
-        &sCreditsEntry_SatoshiNohara,
-        &sCreditsEntry_MiyukiIwasawa,
-        &sCreditsEntry_YoshinoriMatsuda,
-        &sCreditsEntry_KeitaKagaya,
+    [PAGE_FEATURES_1] = {
+        &sCreditsEntry_Features,
+        &sCreditsEntry_DayNightSystem,
+        &sCreditsEntry_OutfitSystem,
+        &sCreditsEntry_OverworldEncounters,
+        &sCreditsEntry_QuestSystem,
     },
-    [PAGE_PROGRAMMERS_4] = {
-        &sCreditsEntry_Programmers,
-        &sCreditsEntry_TetsuyaWatanabe,
-        &sCreditsEntry_SosukeTamada,
-        &sCreditsEntry_TakenoriOhta,
-        _,
+    [PAGE_FEATURES_2] = {
+        &sCreditsEntry_Features,
+        &sCreditsEntry_Dexnav,
+        &sCreditsEntry_FishingMinigame,
+        &sCreditsEntry_MiningMinigame,
+        &sCreditsEntry_MoreInDocs,
     },
-    [PAGE_GRAPHIC_DESIGNERS_1] = {
-        _,
-        &sCreditsEntry_GraphicDesigners,
-        &sCreditsEntry_MotofumiFujiwara,
-        &sCreditsEntry_SatoshiOhta,
-        _,
+    [PAGE_TILES_1] = {
+        &sCreditsEntry_Tilesets,
+        &sCreditsEntry_AnimaNel,
+        &sCreditsEntry_Zaebucca,
+        &sCreditsEntry_TrainerDX,
+        &sCreditsEntry_MoreInDocs,
     },
-    [PAGE_GRAPHIC_DESIGNERS_2] = {
-        &sCreditsEntry_GraphicDesigners,
-        &sCreditsEntry_KenkichiToyama,
-        &sCreditsEntry_AsukaIwashita,
-        &sCreditsEntry_TakaoUnno,
-        _,
+    [PAGE_BATTLE_SPRITES_1] = {
+        &sCreditsEntry_BattleSprites,
+        &sCreditsEntry_Egg3ggEgg,
+        &sCreditsEntry_SageDeoxys,
+        &sCreditsEntry_Nuukiie,
+        &sCreditsEntry_SirWhibbles,
     },
-    [PAGE_GRAPHIC_DESIGNERS_3] = {
-        &sCreditsEntry_GraphicDesigners,
-        &sCreditsEntry_KenSugimori,
-        &sCreditsEntry_HironobuYoshida,
-        &sCreditsEntry_AimiTomita,
-        &sCreditsEntry_KanakoEo,
+    [PAGE_BATTLE_SPRITES_2] = {
+        &sCreditsEntry_BattleSprites,
+        &sCreditsEntry_COMBOY,
+        &sCreditsEntry_Coffee,
+        &sCreditsEntry_KesterHendrickPixels,
+        &sCreditsEntry_MoreInDocs,
     },
-    [PAGE_MUSIC_COMPOSITION] = {
-        &sCreditsEntry_MusicComposition,
-        &sCreditsEntry_GoIchinose,
-        &sCreditsEntry_JunichiMasuda,
-        &sCreditsEntry_MorikazuAoki,
-        &sCreditsEntry_HitomiSato,
+    [PAGE_TRAINER_SPRITES] = {
+        &sCreditsEntry_TrainerSprites,
+        &sCreditsEntry_Nemo622,
+        &sCreditsEntry_TortleDove,
+        &sCreditsEntry_Solo993,
+        &sCreditsEntry_MoreInDocs,
     },
-    [PAGE_SOUND_EFFECTS] = {
-        _,
-        &sCreditsEntry_SoundEffectsAndPkmnVoices,
-        &sCreditsEntry_GoIchinose,
-        &sCreditsEntry_MorikazuAoki,
-        _,
+    [PAGE_OVERWORLD_TRAINERS] = {
+        &sCreditsEntry_OverworldTrainers,
+        &sCreditsEntry_PokemonCrystal,
+        &sCreditsEntry_AnimaNel,
+        &sCreditsEntry_KesterHendrickPixels,
+        &sCreditsEntry_Nemo622,
     },
-    [PAGE_GAME_DESIGNERS_1] = {
-        &sCreditsEntry_GameDesigners,
-        &sCreditsEntry_ShigekiMorimoto,
-        &sCreditsEntry_TeruyukiShimoyamada,
-        &sCreditsEntry_TakeshiKawachimaru,
-        &sCreditsEntry_AkihitoTomisawa,
+    [PAGE_OVERWORLD_POKEMON] = {
+        &sCreditsEntry_OverworldPokemon,
+        &sCreditsEntry_MegamanOmega,
+        &sCreditsEntry_Nemo622,
+        &sCreditsEntry_AnimaNel,
+        &sCreditsEntry_MoreInDocs,
     },
-    [PAGE_GAME_DESIGNERS_2] = {
-        &sCreditsEntry_GameDesigners,
-        &sCreditsEntry_SuguruNakatsui,
-        &sCreditsEntry_TetsujiOhta,
-        &sCreditsEntry_HitomiSato,
-        &sCreditsEntry_KenjiMatsushima,
+    [PAGE_USER_INTERFACE] = {
+        &sCreditsEntry_UserInterface,
+        &sCreditsEntry_EeVeeEe,
+        &sCreditsEntry_LuigiTKO,
+        &sCreditsEntry_MinidexProject,
+        &sCreditsEntry_AveonTrainer,
     },
-    [PAGE_GAME_DESIGNERS_3] = {
-        &sCreditsEntry_GameDesigners,
-        &sCreditsEntry_JunichiMasuda,
-        &sCreditsEntry_KojiNishino,
-        &sCreditsEntry_ShigeruOhmori,
-        &sCreditsEntry_TadashiTakahashi,
+    [PAGE_USER_INTERFACE_2] = {
+        &sCreditsEntry_UserInterface,
+        &sCreditsEntry_Nemo622,
+        &sCreditsEntry_PokemonCrystal,
+        &sCreditsEntry_Mudskip,
+        &sCreditsEntry_Zezitra,
     },
-    [PAGE_SCENARIO_PLOT] = {
-        &sCreditsEntry_ScenarioPlot,
-        &sCreditsEntry_AkihitoTomisawa,
-        &sCreditsEntry_JunichiMasuda,
-        &sCreditsEntry_KojiNishino,
-        _,
-    },
-    [PAGE_SCENARIO] = {
-        &sCreditsEntry_Scenario,
-        &sCreditsEntry_AkihitoTomisawa,
-        &sCreditsEntry_HitomiSato,
-        &sCreditsEntry_ToshinobuMatsumiya,
-        _,
-    },
-    [PAGE_SCRIPT_DESIGNERS] = {
-        &sCreditsEntry_ScriptDesigners,
-        &sCreditsEntry_TomomichiOhta,
-        &sCreditsEntry_SatoshiNohara,
-        _,
-        _,
-    },
-    [PAGE_MAP_DESIGNERS] = {
-        &sCreditsEntry_MapDesigners,
-        &sCreditsEntry_SuguruNakatsui,
-        &sCreditsEntry_TeruyukiShimoyamada,
-        &sCreditsEntry_ShigeruOhmori,
-        &sCreditsEntry_TetsujiOhta,
-    },
-    [PAGE_BATTLE_FRONTIER_DATA] = {
-        _,
-        &sCreditsEntry_BattleFrontierData,
-        &sCreditsEntry_TetsujiOhta,
-        _,
-        _,
-    },
-    [PAGE_PARAMETRIC_DESIGNERS] = {
-        &sCreditsEntry_ParametricDesigners,
-        &sCreditsEntry_TeruyukiShimoyamada,
-        &sCreditsEntry_ShigekiMorimoto,
-        &sCreditsEntry_TetsujiOhta,
-        &sCreditsEntry_KojiNishino,
-    },
-    [PAGE_POKEDEX_TEXT] = {
-        _,
-        &sCreditsEntry_PokedexText,
-        &sCreditsEntry_KenjiMatsushima,
-        _,
-        _,
-    },
-    [PAGE_ENVIRONMENT_AND_TOOL_PROGRAMS_1] = {
-        &sCreditsEntry_EnvAndToolPgrms,
-        &sCreditsEntry_HisashiSogabe,
-        &sCreditsEntry_SosukeTamada,
-        &sCreditsEntry_HiroyukiNakamura,
-        &sCreditsEntry_AkitoMori,
-    },
-    [PAGE_PKMN_DESIGNERS_1] = {
-        &sCreditsEntry_PkmnDesigners,
-        &sCreditsEntry_KenSugimori,
-        &sCreditsEntry_MotofumiFujiwara,
-        &sCreditsEntry_ShigekiMorimoto,
-        _,
-    },
-    [PAGE_PKMN_DESIGNERS_2] = {
-        &sCreditsEntry_PkmnDesigners,
-        &sCreditsEntry_HironobuYoshida,
-        &sCreditsEntry_SatoshiOhta,
-        &sCreditsEntry_AsukaIwashita,
-        _,
-    },
-    [PAGE_PKMN_DESIGNERS_3] = {
-        &sCreditsEntry_PkmnDesigners,
-        &sCreditsEntry_TakaoUnno,
-        &sCreditsEntry_KanakoEo,
-        &sCreditsEntry_AimiTomita,
-        _,
-    },
-    [PAGE_PKMN_DESIGNERS_4] = {
-        &sCreditsEntry_PkmnDesigners,
-        &sCreditsEntry_AtsukoNishida,
-        &sCreditsEntry_MuneoSaito,
-        &sCreditsEntry_RenaYoshikawa,
-        &sCreditsEntry_JunOkutani,
-    },
-    [PAGE_SUPPORT_PROGRAMMERS] = {
-        _,
-        &sCreditsEntry_SupportProgrammers,
-        &sCreditsEntry_SatoshiMitsuhara,
-        &sCreditsEntry_DaisukeHoshino,
-        _,
-    },
-    [PAGE_NCL_PRODUCT_TESTING] = {
-        _,
-        &sCreditsEntry_NCLProductTesting,
-        &sCreditsEntry_NCLSuperMarioClub,
-        _,
-        _,
-    },
-    [PAGE_PACKAGE_AND_MANUAL] = {
-        _,
-        &sCreditsEntry_PackageAndManual,
-        &sCreditsEntry_KenSugimori,
-        _,
-        _,
-    },
+    
     [PAGE_SPECIAL_THANKS_1] = {
         _,
         &sCreditsEntry_SpecialThanks,
-        &sCreditsEntry_KenjiTominaga,
-        &sCreditsEntry_HirokiEnomoto,
+        &sCreditsEntry_MyDiscordAndKoFiCommunity,
+        &sCreditsEntry_WhoseSupportMadeThisPossible,
         _,
     },
     [PAGE_SPECIAL_THANKS_2] = {
         &sCreditsEntry_SpecialThanks,
-        &sCreditsEntry_KazuyaSuyama,
-        &sCreditsEntry_KenjiroIto,
-        &sCreditsEntry_MichikoTakizawa,
-        &sCreditsEntry_MakikoTakada,
+        &sCreditsEntry_RomHackingHideout,
+        &sCreditsEntry_TeamAquasHideout,
+        &sCreditsEntry_Pawkkie,
+        &sCreditsEntry_Cecilily,
     },
     [PAGE_SPECIAL_THANKS_3] = {
-        &sCreditsEntry_SpecialThanks,
-        &sCreditsEntry_MikikoOhhashi,
-        &sCreditsEntry_TakanaoKondo,
-        &sCreditsEntry_RuiKawaguchi,
+        // &sCreditsEntry_SpecialThanks,
+        // &sCreditsEntry_MikikoOhhashi,
+        // &sCreditsEntry_TakanaoKondo,
+        _,
+        _,
+        _,
+        _,
         _,
     },
     [PAGE_SPECIAL_THANKS_4] = {
-        &sCreditsEntry_SpecialThanks,
-        &sCreditsEntry_TakahiroOhnishi,
-        &sCreditsEntry_NorihideOkamura,
-        &sCreditsEntry_ShunsukeKohori,
-        _,
-    },
-    [PAGE_INFORMATION_SUPERVISORS] = {
-        &sCreditsEntry_InfoSupervisors,
-        &sCreditsEntry_KazuyukiTerada,
-        &sCreditsEntry_YuriSakurai,
-        &sCreditsEntry_YumiFunasaka,
-        &sCreditsEntry_NaokoYanase,
-    },
-    [PAGE_ARTWORK_1] = {
-        _,
-        &sCreditsEntry_Artwork,
-        &sCreditsEntry_SachikoNakamichi,
-        &sCreditsEntry_FujikoNomura,
-        _,
-    },
-    [PAGE_ARTWORK_2] = {
-        _,
-        &sCreditsEntry_Artwork,
-        &sCreditsEntry_HideyukiNakajima,
-        &sCreditsEntry_HidenoriSaeki,
-        _,
-    },
-    [PAGE_ARTWORK_3] = {
-        &sCreditsEntry_Artwork,
-        &sCreditsEntry_YokoWatanabe,
-        &sCreditsEntry_SakaeKimura,
-        &sCreditsEntry_ChiakiShinkai,
-        _,
-    },
-    [PAGE_COORDINATORS] = {
-        &sCreditsEntry_Coordinators,
-        &sCreditsEntry_KazukiYoshihara,
-        &sCreditsEntry_AkiraKinashi,
-        &sCreditsEntry_RetsujiNomoto,
-        _,
-    },
-    [PAGE_ENGLISH_VERSION] = {
-        _,
-        &sCreditsEntry_EnglishVersion,
-        &sCreditsEntry_HiroNakamura,
-        &sCreditsEntry_SethMcMahill,
-        _,
-    },
-    [PAGE_TRANSLATOR] = {
-        _,
-        &sCreditsEntry_Translator,
-        &sCreditsEntry_NobOgasawara,
-        _,
-        _,
-    },
-    [PAGE_TEXT_EDITOR] = {
-        _,
-        &sCreditsEntry_TextEditor,
-        &sCreditsEntry_TeresaLillygren,
-        _,
-        _,
-    },
-    [PAGE_NCL_COORDINATOR] = {
-        _,
-        &sCreditsEntry_NCLCoordinator,
-        &sCreditsEntry_KimikoNakamichi,
-        _,
-        _,
-    },
-    [PAGE_PROGRAMMERS_5] = {
-        &sCreditsEntry_Programmers,
-        &sCreditsEntry_TerukiMurakawa,
-        &sCreditsEntry_SouichiYamamoto,
-        &sCreditsEntry_YuichiroIto,
-        &sCreditsEntry_AkiraKinashi,
-    },
-    [PAGE_GRAPHIC_DESIGNER] = {
-        _,
-        &sCreditsEntry_GraphicDesigner,
-        &sCreditsEntry_AkiraKinashi,
-        _,
-        _,
-    },
-    [PAGE_ENVIRONMENT_AND_TOOL_PROGRAMS_2] = {
-        &sCreditsEntry_EnvAndToolPgrms,
-        &sCreditsEntry_TerukiMurakawa,
-        &sCreditsEntry_SouichiYamamoto,
-        &sCreditsEntry_KimikoNakamichi,
-        _,
-    },
-    [PAGE_NOA_TESTING] = {
-        &sCreditsEntry_NOAProductTesting,
-        &sCreditsEntry_ThomasHertzog,
-        &sCreditsEntry_ErikJohnson,
-        &sCreditsEntry_MikaKurosawa,
-        _,
-    },
-    [PAGE_BRAILLE_CODE_CHECK_1] = {
-        &sCreditsEntry_BrailleCodeCheck,
-        &sCreditsEntry_NationalFederationBlind,
-        &sCreditsEntry_PatriciaAMaurer,
-        &sCreditsEntry_JapanBrailleLibrary,
-        &sCreditsEntry_EuropeanBlindUnion,
-    },
-    [PAGE_BRAILLE_CODE_CHECK_2] = {
-        _,
-        &sCreditsEntry_BrailleCodeCheck,
-        &sCreditsEntry_AustralianBrailleAuthority,
-        &sCreditsEntry_RoyalNewZealandFederationBlind,
-        _,
-    },
-    [PAGE_SPECIAL_THANKS_5] = {
-        &sCreditsEntry_SpecialThanks,
-        &sCreditsEntry_HiroyukiUesugi,
-        &sCreditsEntry_MotoyasuTojima,
-        &sCreditsEntry_NicolaPrattBarlow,
-        &sCreditsEntry_ShellieDow,
-    },
-    [PAGE_TASK_MANAGERS] = {
-        _,
-        &sCreditsEntry_TaskManagers,
-        &sCreditsEntry_AzusaTajima,
-        &sCreditsEntry_ShusakuEgami,
-        _,
-    },
-    [PAGE_PRODUCERS] = {
-        &sCreditsEntry_Producers,
-        &sCreditsEntry_HiroyukiJinnai,
-        &sCreditsEntry_HitoshiYamagami,
-        &sCreditsEntry_GakujiNomoto,
-        &sCreditsEntry_HiroakiTsuru,
-    },
-    [PAGE_EXECUTIVE_DIRECTOR] = {
-        _,
-        &sCreditsEntry_ExecutiveDirector,
-        &sCreditsEntry_SatoshiTajiri,
-        _,
-        _,
-    },
-    [PAGE_EXECUTIVE_PRODUCERS_1] = {
-        _,
-        &sCreditsEntry_ExecProducers,
-        &sCreditsEntry_SatoruIwata,
-        _,
-        _,
-    },
-    [PAGE_EXECUTIVE_PRODUCERS_2] = {
-        _,
-        &sCreditsEntry_ExecProducers,
-        &sCreditsEntry_TsunekazIshihara,
-        _,
-        _,
+        &sCreditsEntry_NextUp,
+        &sCreditsEntry_IllBeRemakingThe,
+        &sCreditsEntry_AlolaRegionInMy,
+        &sCreditsEntry_SeaglassStyle,
+        &sCreditsEntry_ThankYouForPlaying,
     },
 };
 #undef _

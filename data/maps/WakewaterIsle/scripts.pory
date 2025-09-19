@@ -1,0 +1,615 @@
+mapscripts WakewaterIsle_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_WAKEWATER_ISLE)
+        special(LoadWakewaterPlayerMonGfx)
+        setflag(FLAG_ITEM_HIDE_OPPONENT_MON_WAKEWATER)
+        setflag(FLAG_ITEM_HIDE_PLAYER_MON_WAKEWATER)
+        call(WakewaterIsle_EventScript_HideAllTrainers)
+    }
+}
+
+script WakewaterIsle_EventScript_Vaporeon
+{
+    lock
+    faceplayer
+    speakername("Vaporeon")
+    playmoncry(SPECIES_VAPOREON, CRY_MODE_NORMAL)
+    msgbox("Blubburr!")
+    waitmoncry
+    closemessage
+    delay(5)
+    msgbox(format("Piraeus' Vaporeon looks excited to be here!"))
+    closemessage
+    release
+    end
+}
+
+script WakewaterIsle_EventScript_ChampionBattleSign
+{
+    lock
+    msgbox(format("Champion's Defense\n Prove that You're the Best!"))
+    closemessage
+    release
+    end
+}
+
+script WakewaterIsle_EventScript_Boy
+{
+    lock
+    faceplayer
+    speakername("Boy")
+    msgbox(format("This is where Champion-ranked Trainers come to hone their skills! It's one of the only places that other Trainers can freely challenge them."))
+    closemessage
+    release
+    end
+}
+
+script WakewaterIsle_EventScript_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("I'm planning to watch all of today's battles. It'll inspire my new artwork!"))
+    closemessage
+    release
+    end
+}
+
+script WakewaterIsle_EventScript_Woman
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("I think I'll try challenging a Champion-ranked Trainer here soon. My Pokémon are ready for a real battle!"))
+    closemessage
+    release
+    end
+}
+
+script WakewaterIsle_EventScript_Sailor
+{
+    lock
+    faceplayer
+    speakername("Sailor")
+    msgbox(format("The waters around Wakewater Isle are so rough, Surfing and Fishing are basically impossible. Only large boats are strong enough to bring people here."))
+    closemessage
+    release
+    end
+}
+
+// ------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------
+
+script WakewaterIsle_EventScript_BeginChampionsDefense
+{
+    lockall
+    setflag(FLAG_HIDE_MAP_NAME_POPUP)
+    msgbox(format("Step up to the {COLOR GREEN}Champion's Defense Challenge{COLOR DARK_GRAY}? You will face {COLOR GREEN}3 Trainers{COLOR DARK_GRAY} back-to-back. Your Pokémon will be healed between each battle."), MSGBOX_YESNO)
+    closemessage
+    if(var(VAR_RESULT) == FALSE)
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+        waitmovement(0)
+        clearflag(FLAG_HIDE_MAP_NAME_POPUP)
+    }
+    else
+    {
+        warpcontinuescript(MAP_WAKEWATER_ISLE, 29, 19, WakewaterIsle_EventScript_ChampionDefenseScript)
+    }
+    releaseall
+    end
+}
+
+script WakewaterIsle_EventScript_ChampionDefenseScript
+{
+    lockall
+    
+    addobject(16)
+    special(LoadWakewaterPlayerMonGfx)
+    addobject(16) // really making sure this is there. lol
+    fadescreen(FADE_FROM_BLACK)
+
+    delay(15)
+    special(HealPlayerParty)
+    call(WakewaterIsle_EventScript_ChooseRandomTrainer) // battle #1
+
+    delay(20)
+    msgbox(format("The first Trainer has been defeated! Your Pokémon will be healed while you wait for the second Trainer."))
+    closemessage
+    delay(20)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(15)
+    call(WakewaterIsle_EventScript_HideAllTrainers)
+    special(HealPlayerParty)
+    delay(15)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(15)
+
+    call(WakewaterIsle_EventScript_ChooseRandomTrainer) // battle #2
+
+    delay(20)
+    msgbox(format("The second Trainer has been defeated! Your Pokémon will be healed while you wait for the third Trainer."))
+    closemessage
+    delay(20)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(15)
+    call(WakewaterIsle_EventScript_HideAllTrainers)
+    special(HealPlayerParty)
+    delay(15)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(15)
+
+    call(WakewaterIsle_EventScript_ChooseRandomTrainer) // battle #3
+
+    delay(20)
+    msgbox(format("All three Trainers have been defeated! Congratulations, Champion!"))
+    closemessage
+
+    // give reward
+    randomelement(ITEM_NUGGET, ITEM_BIG_NUGGET, ITEM_MASTER_BALL, ITEM_PEARL)
+    giveitem(VAR_RESULT)
+    closemessage
+
+    clearflag(FLAG_HIDE_MAP_NAME_POPUP)
+    warp(MAP_WAKEWATER_ISLE, 30, 22)
+    waitstate
+    releaseall
+    end
+}
+
+script WakewaterIsle_EventScript_ChooseRandomTrainer
+{
+    // Add new Trainers to the randomelement command below:
+    randomelement(TRAINER_WAKEWATER_SAMANTHA, TRAINER_WAKEWATER_MAURA, TRAINER_WAKEWATER_PIRAEUS, TRAINER_WAKEWATER_LEXIE, TRAINER_WAKEWATER_ALEXANDER, TRAINER_WAKEWATER_KASSA, TRAINER_WAKEWATER_POLYMNIA, TRAINER_WAKEWATER_OURANI, TRAINER_WAKEWATER_KLEIO, TRAINER_WAKEWATER_TERPSIKORE, TRAINER_WAKEWATER_EUTERPE, TRAINER_WAKEWATER_THALIA_AND_MELPOMENE, TRAINER_WAKEWATER_RHADINE, TRAINER_WAKEWATER_KALLIOPE, TRAINER_WAKEWATER_CHIMERA_ADMIN_M, TRAINER_WAKEWATER_CHIMERA_ADMIN_F, TRAINER_WAKEWATER_ANYALIOS, TRAINER_WAKEWATER_RANIA, TRAINER_WAKEWATER_MICHAH, TRAINER_WAKEWATER_DRAKE, TRAINER_WAKEWATER_SASHA, TRAINER_WAKEWATER_CONNIE, TRAINER_WAKEWATER_SHIA, TRAINER_WAKEWATER_OLIVIA, TRAINER_WAKEWATER_KYLE, TRAINER_WAKEWATER_NEMO, TRAINER_WAKEWATER_CASSIE, TRAINER_WAKEWATER_JARED, TRAINER_WAKEWATER_CAIDEN, TRAINER_WAKEWATER_SEBASTIAN, TRAINER_WAKEWATER_BRODY, TRAINER_WAKEWATER_JERRY, TRAINER_WAKEWATER_ERIKOV, TRAINER_WAKEWATER_RAJ, TRAINER_WAKEWATER_BITA, TRAINER_WAKEWATER_AMY, TRAINER_WAKEWATER_GEORGIA, TRAINER_WAKEWATER_NOB, TRAINER_WAKEWATER_DALE, TRAINER_WAKEWATER_ALLEN)
+    copyvar(VAR_CHOSEN_WAKEWATER_CHALLENGER, VAR_RESULT)
+
+    switch(var(VAR_CHOSEN_WAKEWATER_CHALLENGER))
+    {
+        default: // failsafe
+        case TRAINER_WAKEWATER_SAMANTHA:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_01)
+            addobject(14)
+            applymovement(14, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Samantha")
+            msgbox(format("Everyone underestimates me because I'm cute. I always prove them wrong!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_SAMANTHA, format("No! My sweet, strong Pokémon!"))
+        case TRAINER_WAKEWATER_MAURA:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_02)
+            addobject(15)
+            applymovement(15, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Maura")
+            msgbox(format("My Pokémon and I all have psychic powers."))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_MAURA, format("Our psychic powers... They've failed us!"))
+        case TRAINER_WAKEWATER_PIRAEUS:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_03)
+            addobject(17) // also walks partner Pokémon up!
+            applymovement(17, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            addobject(18)
+            applymovement(18, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Piraeus")
+            msgbox(format("Bwahaha, you're not the only strong Trainer to sail The Delphis! Let's see what you've got!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_PIRAEUS, format("Ohoho, we'd better sail away!"))
+        case TRAINER_WAKEWATER_LEXIE:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_04)
+            addobject(19)
+            applymovement(19, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Lexie")
+            msgbox(format("My Pokémon and I are gonna kick your butt!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_LEXIE, format("No! We got OUR butts kicked!"))
+        case TRAINER_WAKEWATER_ALEXANDER:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_05)
+            addobject(20)
+            applymovement(20, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Alexander")
+            msgbox(format("Get ready for my ultimate performance!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_ALEXANDER, format("Aww, my performace was a failure."))
+        case TRAINER_WAKEWATER_KASSA: // rich boy
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_06)
+            addobject(21)
+            applymovement(21, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Kassa")
+            msgbox(format("Heh, you could never compete against me."))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_ALEXANDER, format("Hey, I still have more money than you!"))
+        case TRAINER_WAKEWATER_POLYMNIA:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_07)
+            addobject(22) // also walks partner Pokémon up!
+            applymovement(22, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            addobject(23)
+            applymovement(23, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Polymnia")
+            msgbox(format("I'm looking to find new farming talent for Jusmail Town, and I thought I'd stop by. Care for a battle?"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_POLYMNIA, format("Ehehe, you're as bold as ever!"))
+        case TRAINER_WAKEWATER_OURANI:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_08)
+            addobject(24) // also walks partner Pokémon up!
+            applymovement(24, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            addobject(25)
+            applymovement(25, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Ourani")
+            msgbox(format("'aven't seen ya in a bit, {PLAYER}! Wanna battle?"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_OURANI, format("As strong as stone, this one!"))
+        case TRAINER_WAKEWATER_KLEIO:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_09)
+            addobject(26) // also walks partner Pokémon up!
+            applymovement(26, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            addobject(27)
+            applymovement(27, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Kleio")
+            msgbox(format("{PLAYER}, I've seen your journey in my visions... Please, let me see your battles for myself!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_KLEIO, format("Stronger than any Trainer before..."))
+        case TRAINER_WAKEWATER_TERPSIKORE:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_10)
+            addobject(28) // also walks partner Pokémon up!
+            applymovement(28, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            addobject(29)
+            applymovement(29, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Terpsikore")
+            msgbox(format("I'm in the mood for a dance! I challenge you!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_TERPSIKORE, format("I always enjoy our dances, {PLAYER}!"))
+        case TRAINER_WAKEWATER_EUTERPE:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_11)
+            addobject(30) // also walks partner Pokémon up!
+            applymovement(30, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            addobject(31)
+            applymovement(31, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Euterpe")
+            msgbox(format("I'm here for a party! Let's give it our all, {PLAYER}!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_EUTERPE, format("Kehehe! Always a pleasure!"))
+        case TRAINER_WAKEWATER_THALIA_AND_MELPOMENE:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_12)
+            addobject(32) // also walks partner Pokémon up!
+            applymovement(32, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            addobject(33)
+            applymovement(33, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Thal & Mel")
+            msgbox(format("We're here to settle another argument by battling it out together. We challenge you!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_THALIA_AND_MELPOMENE, format("Kehehe! Always a pleasure!"))
+        case TRAINER_WAKEWATER_RHADINE:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_13)
+            addobject(34) // also walks partner Pokémon up!
+            applymovement(34, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            addobject(35)
+            applymovement(35, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Rhadine")
+            msgbox(format("Ehehe, you know why I'm here, {PLAYER}! Give it your all!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_RHADINE, format("As fiery as always!"))
+        case TRAINER_WAKEWATER_KALLIOPE:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_14)
+            addobject(36) // also walks partner Pokémon up!
+            applymovement(36, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            addobject(37)
+            applymovement(37, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Kalliope")
+            msgbox(format("{PLAYER}... I'm here to settle a grudge. I'll finally crush you!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_KALLIOPE, format("No... HOW?!"))
+        case TRAINER_WAKEWATER_CHIMERA_ADMIN_M:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_15)
+            addobject(38)
+            applymovement(38, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Chimera Admin")
+            msgbox(format("Grr... I'm back to prove myself! Get ready to fall!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_CHIMERA_ADMIN_M, format("I'm still not strong enough?!"))
+        case TRAINER_WAKEWATER_CHIMERA_ADMIN_F:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_16)
+            addobject(39)
+            applymovement(39, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Chimera Admin")
+            msgbox(format("I've come to challenge you, {PLAYER}. I need to see how strong you've grown."))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_CHIMERA_ADMIN_F, format("Hm... No wonder we failed to stop you."))
+        case TRAINER_WAKEWATER_ANYALIOS:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_17)
+            addobject(40) // also walks partner Pokémon up!
+            applymovement(40, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            addobject(41)
+            applymovement(41, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Anyalios")
+            msgbox(format("Heya, new Champ! I'm here to reclaim my title!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_ANYALIOS, format("Bwahaha! Still too strong!"))
+        case TRAINER_WAKEWATER_RANIA:
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_18)
+            addobject(42)
+            applymovement(42, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Rania")
+            msgbox(format("Chaire! I thought it would be fun to stop by and try to battle you. Let's go!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_RANIA, format("Woah, you're tough, {PLAYER}!"))
+        case TRAINER_WAKEWATER_MICHAH: // sailor
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_19)
+            addobject(43)
+            applymovement(43, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Michah")
+            msgbox(format("Heh, sailing here was no problem for me. I'm ready to fight!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_MICHAH, format("You sunk me!"))
+        case TRAINER_WAKEWATER_DRAKE: // hiker
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_20)
+            addobject(44)
+            applymovement(44, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Drake")
+            msgbox(format("Huh? There aren't any mountains on this island?"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_DRAKE, format("Woah!"))
+        case TRAINER_WAKEWATER_SASHA: // lady
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_21)
+            addobject(45)
+            applymovement(45, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Sasha")
+            msgbox(format("My Pokémon have taken me so far!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_SASHA, format("Looks like we have farther to go..."))
+        case TRAINER_WAKEWATER_CONNIE: // rich boy
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_22)
+            addobject(46)
+            applymovement(46, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Connie")
+            msgbox(format("Wealth can take you anywhere!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_CONNIE, format("Aw, I guess money doesn't get you everything."))
+        case TRAINER_WAKEWATER_SHIA: // breeder M
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_23)
+            addobject(47)
+            applymovement(47, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Shia")
+            msgbox(format("I raised all my Pokémon from Eggs!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_SHIA, format("No, my poor Pokémon!"))
+        case TRAINER_WAKEWATER_OLIVIA: // punk rocker
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_24)
+            addobject(48)
+            applymovement(48, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Olivia")
+            msgbox(format("My Pokémon are just as cool as me!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_OLIVIA, format("Hey, I'm still cooler than you!"))
+        case TRAINER_WAKEWATER_KYLE: // farmer
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_25)
+            addobject(49)
+            applymovement(49, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Kyle")
+            msgbox(format("Nobody's stronger 'an me!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_KYLE, format("Well, I can still eat more than you! Bwahaha!"))
+        case TRAINER_WAKEWATER_NEMO: // zelda
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_26)
+            addobject(50)
+            applymovement(50, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Nemo")
+            msgbox(format("Are you still having fun in Ilios? Lemme see your team!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_NEMO, format("Dang, you're good!"))
+        case TRAINER_WAKEWATER_CASSIE: // aroma lady
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_27)
+            addobject(51)
+            applymovement(51, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Cassie")
+            msgbox(format("My new perfume will help me win!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_CASSIE, format("No!"))
+        case TRAINER_WAKEWATER_JARED: // fisherman
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_28)
+            addobject(52)
+            applymovement(52, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Jared")
+            msgbox(format("I fished up a lot of my best Pokémon."))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_JARED, format("My little guys!"))
+        case TRAINER_WAKEWATER_CAIDEN: // swimmer
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_29)
+            addobject(53)
+            applymovement(53, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Caiden")
+            msgbox(format("Nobody swims faster than me!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_CAIDEN, format("I'm still a faster swimmer...!"))
+        case TRAINER_WAKEWATER_SEBASTIAN: // guitarist
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_30)
+            addobject(54)
+            applymovement(54, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Sebastian")
+            msgbox(format("Bahaha, new album coming out soon!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_SEBASTIAN, format("Stream my new song!"))
+        case TRAINER_WAKEWATER_BRODY: // pokefan
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_31)
+            addobject(55)
+            applymovement(55, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Brody")
+            msgbox(format("Look at my sweet Pokémon team!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_BRODY, format("I have more training to do."))
+        case TRAINER_WAKEWATER_JERRY: // school kid
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_32)
+            addobject(56)
+            applymovement(56, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Jerry")
+            msgbox(format("I'm learning all about Pokémon in school!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_JERRY, format("B-but I've learned so much!"))
+        case TRAINER_WAKEWATER_ERIKOV: // gentleman
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_33)
+            addobject(57)
+            applymovement(57, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Erikov")
+            msgbox(format("I'll show you what high society battling looks like."))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_ERIKOV, format("Remarkable!"))
+        case TRAINER_WAKEWATER_RAJ: // cooltrainer
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_34)
+            addobject(58)
+            applymovement(58, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Raj")
+            msgbox(format("My team is the coolest!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_RAJ, format("Your team is... COOLER than mine?!"))
+        case TRAINER_WAKEWATER_BITA: // cooltrainer f
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_35)
+            addobject(59)
+            applymovement(59, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Bita")
+            msgbox(format("Come on, it's time to battle!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_BITA, format("You're in another league."))
+        case TRAINER_WAKEWATER_AMY: // school kid f
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_36)
+            addobject(60)
+            applymovement(60, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Amy")
+            msgbox(format("My parents loaned me their strongest Pokémon!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_AMY, format("I'd better get back home..."))
+        case TRAINER_WAKEWATER_GEORGIA: // performer f
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_37)
+            addobject(61)
+            applymovement(61, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Georgia")
+            msgbox(format("This'll be the show of a lifetime!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_GEORGIA, format("What a fight!"))
+        case TRAINER_WAKEWATER_NOB: // hiker
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_38)
+            addobject(62)
+            applymovement(62, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Nob")
+            msgbox(format("Huff, huff... I finally made it...!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_NOB, format("Aw, it's over already?"))
+        case TRAINER_WAKEWATER_DALE: // black belt
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_39)
+            addobject(63)
+            applymovement(63, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Dale")
+            msgbox(format("Hup! Hyah! Hiya!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_DALE, format("My awesome karate forms barely helped?!"))
+        case TRAINER_WAKEWATER_ALLEN: // dragon tamer
+            clearflag(FLAG_HIDE_WAKEWATER_TRAINER_40)
+            addobject(64)
+            applymovement(64, WakewaterIsle_Movement_TrainerApproachesPlayer)
+            waitmovement(0)
+            speakername("Allen")
+            msgbox(format("My Dragon Pokémon are the best to ever live!"))
+            trainerbattle_no_intro(TRAINER_WAKEWATER_ALLEN, format("Second best isn't so bad."))
+    }
+
+}
+
+script WakewaterIsle_EventScript_HideAllTrainers
+{
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_01)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_02)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_03)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_04)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_05)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_06)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_07)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_08)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_09)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_10)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_11)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_12)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_13)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_14)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_15)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_16)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_17)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_18)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_19)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_20)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_21)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_22)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_23)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_24)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_25)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_26)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_27)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_28)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_29)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_30)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_31)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_32)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_33)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_34)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_35)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_36)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_37)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_38)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_39)
+    setflag(FLAG_HIDE_WAKEWATER_TRAINER_40)
+
+    removeobject(14)
+    removeobject(15)
+    removeobject(18)
+    removeobject(19)
+    removeobject(20)
+    removeobject(21)
+    removeobject(23)
+    removeobject(25)
+    removeobject(27)
+    removeobject(29)
+    removeobject(31)
+    removeobject(33)
+    removeobject(35)
+    removeobject(37)
+    removeobject(38)
+    removeobject(39)
+    removeobject(41)
+    removeobject(42)
+    removeobject(43)
+    removeobject(44)
+    removeobject(45)
+    removeobject(46)
+    removeobject(47)
+    removeobject(48)
+    removeobject(49)
+    removeobject(50)
+    removeobject(51)
+    removeobject(52)
+    removeobject(53)
+    removeobject(54)
+    removeobject(55)
+    removeobject(56)
+    removeobject(57)
+    removeobject(58)
+    removeobject(59)
+    removeobject(60)
+    removeobject(61)
+    removeobject(62)
+    removeobject(63)
+    removeobject(64)
+
+    removeobject(17)
+    removeobject(22)
+    removeobject(24)
+    removeobject(26)
+    removeobject(28)
+    removeobject(30)
+    removeobject(32)
+    removeobject(34)
+    removeobject(36)
+    removeobject(40)
+    setflag(FLAG_ITEM_HIDE_OPPONENT_MON_WAKEWATER)
+}
+
+movement WakewaterIsle_Movement_TrainerApproachesPlayer
+{
+    walk_up * 4
+    face_up
+    step_end
+}

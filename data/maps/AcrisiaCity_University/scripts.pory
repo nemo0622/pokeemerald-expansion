@@ -440,6 +440,14 @@ script AcrisiaCity_University_EventScript_Niko
                 release
                 end
             }
+            elif(var(VAR_NIKO_STATE) == 15) // after Elite Four
+            {
+                speakername("Niko")
+                msgbox(format("I can't believe you're a Champion now! I hope you continue catching Pokémon and helping us with research. It's been great having you here, {PLAYER}!"))
+                closemessage
+                release
+                end
+            }
         }
         else // chose cancel probably
         {
@@ -652,6 +660,19 @@ script AcrisiaCity_University_EventScript_Rania
         closemessage
     }
     // After Tower of Dioxippus, Rania is hidden because she's in Port Pello to fight the Player
+    elif(var(VAR_RANIA_STATE) == 12) // After beating Elite Four
+    {
+        speakername("Rania")
+        msgbox(format("Chaire, {PLAYER}! How's it feel to be Champion?\p Heh, like I need to ask - I followed right after you, and now I'm a Champion, too! I'm still gonna spend most of my time here at the University, though."))
+        closemessage
+        setvar(VAR_RANIA_STATE, 13)
+    }
+    elif(var(VAR_RANIA_STATE) == 13) // After beating Elite Four & after first dialogue
+    {
+        speakername("Rania")
+        msgbox(format("Welcome back, {PLAYER}! Have you been battling at {COLOR GREEN}Wakewater Isle{COLOR DARK_GRAY} recently? Who knows, maybe you'll see me there soon!"))
+        closemessage
+    }
     release
     end
 }

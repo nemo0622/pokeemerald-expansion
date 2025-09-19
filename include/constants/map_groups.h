@@ -117,6 +117,9 @@
 #define MAP_SUNKEN_TEMPLE                 (108 | (0 << 8))
 #define MAP_TOWER_OF_DIOXIPPUS            (109 | (0 << 8))
 #define MAP_POLLEN_ROAD                   (110 | (0 << 8))
+#define MAP_DAVOSI_STRAITS                (111 | (0 << 8))
+#define MAP_RUINS_OF_AHIYAWA              (112 | (0 << 8))
+#define MAP_WAKEWATER_ISLE                (113 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -411,6 +414,10 @@
 #define MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F (12 | (16 << 8))
 #define MAP_EVER_GRANDE_CITY_POKEMON_CENTER_2F (13 | (16 << 8))
 #define MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_2F (14 | (16 << 8))
+#define MAP_RUINS_OF_AHIYAWA_LOBBY             (15 | (16 << 8))
+#define MAP_RUINS_OF_AHIYAWA_E4_ROOM1          (16 | (16 << 8))
+#define MAP_RUINS_OF_AHIYAWA_E4_CHAMPIONS_ROOM (17 | (16 << 8))
+#define MAP_WAKEWATER_ISLE_POKEMON_CENTER      (18 | (16 << 8))
 
 // gMapGroup_IndoorRoute104
 #define MAP_ROUTE104_MR_BRINEYS_HOUSE         (0 | (17 << 8))

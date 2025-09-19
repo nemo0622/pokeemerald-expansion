@@ -58,7 +58,7 @@ Route123_EventScript_Violet::
 	end
 
 Route123_EventScript_Cameron::
-	trainerbattle_single TRAINER_CAMERON_1, Route123_Text_CameronIntro, Route123_Text_CameronDefeat, Route123_EventScript_RegisterCameron
+	trainerbattle_single TRAINER_ELITEFOUR_TERPSIKORE_HARD, Route123_Text_CameronIntro, Route123_Text_CameronDefeat, Route123_EventScript_RegisterCameron
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchCameron
 	msgbox Route123_Text_CameronPostBattle, MSGBOX_DEFAULT
@@ -69,17 +69,17 @@ Route123_EventScript_RegisterCameron::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route123_Text_CameronRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CAMERON_1
+	register_matchcall TRAINER_ELITEFOUR_TERPSIKORE_HARD
 	release
 	end
 
 Route123_EventScript_RematchCameron::
-	trainerbattle_rematch TRAINER_CAMERON_1, Route123_Text_CameronRematchIntro, Route123_Text_CameronRematchDefeat
+	trainerbattle_rematch TRAINER_ELITEFOUR_TERPSIKORE_HARD, Route123_Text_CameronRematchIntro, Route123_Text_CameronRematchDefeat
 	msgbox Route123_Text_CameronPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route123_EventScript_Jacki::
-	trainerbattle_single TRAINER_JACKI_1, Route123_Text_JackiIntro, Route123_Text_JackiDefeat, Route123_EventScript_RegisterJacki
+	trainerbattle_single TRAINER_WAKEWATER_ALEXANDER, Route123_Text_JackiIntro, Route123_Text_JackiDefeat, Route123_EventScript_RegisterJacki
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchJacki
 	msgbox Route123_Text_JackiPostBattle, MSGBOX_DEFAULT
@@ -90,12 +90,12 @@ Route123_EventScript_RegisterJacki::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route123_Text_JackiRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_JACKI_1
+	register_matchcall TRAINER_WAKEWATER_ALEXANDER
 	release
 	end
 
 Route123_EventScript_RematchJacki::
-	trainerbattle_rematch TRAINER_JACKI_1, Route123_Text_JackiRematchIntro, Route123_Text_JackiRematchDefeat
+	trainerbattle_rematch TRAINER_WAKEWATER_ALEXANDER, Route123_Text_JackiRematchIntro, Route123_Text_JackiRematchDefeat
 	msgbox Route123_Text_JackiPostRematch, MSGBOX_AUTOCLOSE
 	end
 

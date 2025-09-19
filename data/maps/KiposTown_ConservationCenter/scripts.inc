@@ -679,8 +679,8 @@ KiposTown_ConservationCenter_MrRussel_Text_3:
 	.string "that. By donating Pokémon, you're sort\l"
 	.string "of a Zookeeper yourself!\p"
 	.string "Thank you so much for your help so far,\n"
-	.string "{PLAYER}. When youn can, keep\l"
-	.string "stopping by and donating more Pokémon!$"
+	.string "{PLAYER}. When you can, keep stopping\l"
+	.string "by and donating more Pokémon!$"
 
 KiposTown_ConservationCenter_MrRussel_Text_4:
 # 125 "data/maps/KiposTown_ConservationCenter/scripts.pory"
@@ -696,8 +696,8 @@ KiposTown_ConservationCenter_MrRussel_Text_5:
 	.string "Pokémon. Perfect for helping fill out\l"
 	.string "the Zoo!\p"
 	.string "Thank you so much for your help so far,\n"
-	.string "{PLAYER}. When youn can, keep\l"
-	.string "stopping by and donating more Pokémon!$"
+	.string "{PLAYER}. When you can, keep stopping\l"
+	.string "by and donating more Pokémon!$"
 
 KiposTown_ConservationCenter_MrRussel_Text_6:
 # 145 "data/maps/KiposTown_ConservationCenter/scripts.pory"
@@ -714,8 +714,8 @@ KiposTown_ConservationCenter_MrRussel_Text_7:
 	.string "without fail. Only use it when it's\l"
 	.string "absolutely necessary!\p"
 	.string "Thank you so much for your help so far,\n"
-	.string "{PLAYER}. When youn can, keep\l"
-	.string "stopping by and donating more Pokémon!$"
+	.string "{PLAYER}. When you can, keep stopping\l"
+	.string "by and donating more Pokémon!$"
 
 KiposTown_ConservationCenter_MrRussel_Text_8:
 # 162 "data/maps/KiposTown_ConservationCenter/scripts.pory"
@@ -738,8 +738,8 @@ KiposTown_ConservationCenter_MrRussel_Text_9:
 	.string "by the mouth of the cave. For now, you\l"
 	.string "can hold onto them until we learn more.\p"
 	.string "Thank you so much for your help so far,\n"
-	.string "{PLAYER}. When youn can, keep\l"
-	.string "stopping by and donating more Pokémon!$"
+	.string "{PLAYER}. When you can, keep stopping\l"
+	.string "by and donating more Pokémon!$"
 
 KiposTown_ConservationCenter_MrRussel_Text_10:
 # 185 "data/maps/KiposTown_ConservationCenter/scripts.pory"

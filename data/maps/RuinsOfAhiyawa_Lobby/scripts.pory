@@ -1,0 +1,177 @@
+mapscripts RuinsOfAhiyawa_Lobby_MapScripts {}
+
+script RuinsOfAhiyawa_Lobby_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Ahiyawa Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_RUINS_OF_AHIYAWA)
+    }
+    release
+    end
+}
+
+script RuinsOfAhiyawa_Lobby_Rania
+{
+    lock
+    faceplayer
+    speakername("Rania")
+    msgbox(format("Chaire, {PLAYER}! We're finally here!\p I'm healing up my Pokémon and making sure they're ready for battle. Once you're ready, you can {COLOR GREEN}enter the Elite Four Challenge{COLOR DARK_GRAY} through the {COLOR GREEN}central door{COLOR DARK_GRAY}! Remember, once you enter, you {COLOR RED}can't exit{COLOR DARK_GRAY} until the end!"))
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_Lobby_LittleBoy
+{
+    lock
+    faceplayer
+    speakername("Little Boy")
+    msgbox(format("I'm waiting here while my Dad challenges the Elite Four! He bought me this Chespin Doll to keep me entertained!"))
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_Lobby_ManWithChild
+{
+    lock
+    faceplayer
+    speakername("Man")
+    msgbox(format("I gave my kid this Chespin Doll to remember this trip by. While we're here, I'm gonna give the Elite Four a run for their money!"))
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_Lobby_Beauty
+{
+    lock
+    faceplayer
+    speakername("Beauty")
+    msgbox(format("Remember to look your best while you challenge the Elite Four!"))
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_Lobby_Artist
+{
+    lock
+    faceplayer
+    speakername("Artist")
+    msgbox(format("I think I spent too much time making my Pokémon beautiful, and less on actually training it..."))
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_Lobby_EventScript_Chikorita
+{
+    lock
+    faceplayer
+    speakername("Chikorita")
+    playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
+    msgbox("Cheepa!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_Lobby_AceTrainer
+{
+    lock
+    faceplayer
+    speakername("Ace Trainer")
+    msgbox(format("The Elite Four... They recently reformed, composed of {COLOR GREEN}four Muses{COLOR DARK_GRAY} from Gyms around Ilios. I wonder if there's a {COLOR GREEN}Champion Battle{COLOR DARK_GRAY} to prepare for?"))
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_Lobby_EventScript_MartEmployee
+{
+    lock
+    faceplayer
+    speakername("Mart Employee")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(RuinsOfAhiyawa_Lobby_Shop)
+    closemessage
+    delay(1)
+    speakername("Mart Employee")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+
+}
+
+mart RuinsOfAhiyawa_Lobby_Shop
+{
+    ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+    ITEM_ULTRA_BALL
+	ITEM_POTION
+	ITEM_SUPER_POTION
+    ITEM_HYPER_POTION
+    ITEM_MAX_POTION
+    ITEM_FULL_RESTORE
+    ITEM_REVIVE
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_FULL_HEAL
+	ITEM_ESCAPE_ROPE
+	ITEM_REPEL
+    ITEM_SUPER_REPEL
+    ITEM_MAX_REPEL
+}
+
+script RuinsOfAhiyawa_Lobby_EnterEliteFourTrigger
+{
+    lock
+    msgbox(format("Beyond this doorway lies the {COLOR GREEN}Elite Four{COLOR DARK_GRAY}, the greatest challenge for Trainers in the Ilios Region.\p Once you enter, you {COLOR RED}cannot exit{COLOR DARK_GRAY} until you win or lose. Will you enter the Elite Four Challenge?"), MSGBOX_YESNO)
+    closemessage
+    if(var(VAR_RESULT) == FALSE)
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+        waitmovement(0)
+        release
+        end
+    }
+    else
+    {
+        warpcontinuescript(MAP_RUINS_OF_AHIYAWA_E4_ROOM1, 4, 9, RuinsOfAhiyawa_EliteFour_EnterPolymniaRoomScript)
+        waitstate
+    }
+    release
+    end
+}

@@ -1,0 +1,513 @@
+mapscripts RuinsOfAhiyawa_E4_Room1_MapScripts {}
+
+script RuinsOfAhiyawa_EliteFour_TryToLeaveRoom
+{
+    lock
+    if(!flag(FLAG_ELITE_FOUR_HIDE_POLYMNIA)) // Polymnia active
+    {
+        if(!flag(FLAG_ELITE_FOUR_DEFEATED_POLYMNIA))
+        {
+            msgbox(format("Polymnia must be challenged before moving on!"))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+            waitmovement(0)
+        }
+        else
+        {
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+            waitmovement(0)
+            msgbox(format("Continue to the next challenge?"), MSGBOX_YESNO)
+            closemessage
+            if(var(VAR_RESULT) == FALSE)
+            {
+                releaseall
+                end
+            }
+            warpcontinuescript(MAP_RUINS_OF_AHIYAWA_E4_ROOM1, 4, 9, RuinsOfAhiyawa_EliteFour_EnterTerpsikoreRoomScript)
+        }
+    }
+    if(!flag(FLAG_ELITE_FOUR_HIDE_TERPSIKORE)) // Terpsikore active
+    {
+        if(!flag(FLAG_ELITE_FOUR_DEFEATED_TERPSIKORE))
+        {
+            msgbox(format("Terpsikore must be challenged before moving on!"))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+            waitmovement(0)
+        }
+        else
+        {
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+            waitmovement(0)
+            msgbox(format("Continue to the next challenge?"), MSGBOX_YESNO)
+            closemessage
+            if(var(VAR_RESULT) == FALSE)
+            {
+                releaseall
+                end
+            }
+            warpcontinuescript(MAP_RUINS_OF_AHIYAWA_E4_ROOM1, 4, 9, RuinsOfAhiyawa_EliteFour_EnterEuterpeRoomScript)
+        }
+    }
+    if(!flag(FLAG_ELITE_FOUR_HIDE_EUTERPE)) // Euterpe active
+    {
+        if(!flag(FLAG_ELITE_FOUR_DEFEATED_EUTERPE))
+        {
+            msgbox(format("Euterpe must be challenged before moving on!"))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+            waitmovement(0)
+        }
+        else
+        {
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+            waitmovement(0)
+            msgbox(format("Continue to the next challenge?"), MSGBOX_YESNO)
+            closemessage
+            if(var(VAR_RESULT) == FALSE)
+            {
+                releaseall
+                end
+            }
+            warpcontinuescript(MAP_RUINS_OF_AHIYAWA_E4_ROOM1, 4, 9, RuinsOfAhiyawa_EliteFour_EnterRhadineRoomScript)
+        }
+    }
+    if(!flag(FLAG_ELITE_FOUR_HIDE_RHADINE)) // Rhadine active
+    {
+        if(!flag(FLAG_ELITE_FOUR_DEFEATED_RHADINE))
+        {
+            msgbox(format("Rhadine must be challenged before moving on!"))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+            waitmovement(0)
+        }
+        else
+        {
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+            waitmovement(0)
+            msgbox(format("Continue to the next challenge?"), MSGBOX_YESNO)
+            closemessage
+            if(var(VAR_RESULT) == FALSE)
+            {
+                releaseall
+                end
+            }
+            warpcontinuescript(MAP_RUINS_OF_AHIYAWA_E4_CHAMPIONS_ROOM, 5, 14, RuinsOfAhiyawa_E4_ChampionsRoom_EnterRoom) // warp to champions room
+        }
+    }
+    releaseall
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_EnterPolymniaRoomScript
+{
+    lockall
+
+    // set room up
+    // NOTE
+    // Objects 1-3: Polymnia
+    // Objects 4-6: Terpsikore
+    // Objects 7-9: Euterpe
+    // Objects 10-12: Rhadine
+    clearflag(FLAG_ELITE_FOUR_HIDE_POLYMNIA)
+    setflag(FLAG_ELITE_FOUR_HIDE_TERPSIKORE)
+    setflag(FLAG_ELITE_FOUR_HIDE_EUTERPE)
+    setflag(FLAG_ELITE_FOUR_HIDE_RHADINE)
+    addobject(1)
+    addobject(2)
+    addobject(3)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    removeobject(8)
+    removeobject(9)
+    removeobject(10)
+    removeobject(11)
+    removeobject(12)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmovement(0)
+    delay(10)
+    releaseall
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_EventScript_Jumpluff
+{
+    lock
+    faceplayer
+    speakername("Jumpluff")
+    playmoncry(SPECIES_JUMPLUFF, CRY_MODE_NORMAL)
+    msgbox("Chee jee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_EventScript_Ribombee
+{
+    lock
+    faceplayer
+    speakername("Ribombee")
+    playmoncry(SPECIES_RIBOMBEE, CRY_MODE_NORMAL)
+    msgbox("Bzz-tee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_Polymnia
+{
+    lock
+    faceplayer
+    speakername("Polymnia")
+
+    // if already beat battle, be done lol
+    if(flag(FLAG_ELITE_FOUR_DEFEATED_POLYMNIA))
+    {
+        msgbox(format("That was an incredible battle. Please, continue the challenge ahead!"))
+        closemessage
+        release
+        end
+    }
+
+    msgbox(format("{PLAYER}, I'd like to welcome you to the Elite Four! Seeing how far you've come as a Trainer makes me proud... I still remember your first time in my Gym, ehehe!\p Right, I suppose we should get straight to business. As the first member of the newly-formed Elite Four, I challenge you to battle!"))
+    closemessage
+
+    if(!flag(FLAG_HARD_MODE))
+    {
+        trainerbattle_no_intro(TRAINER_ELITEFOUR_POLYMNIA, RuinsOfAhiyawa_EliteFour_PolymniaLoseText)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_ELITEFOUR_POLYMNIA_HARD, RuinsOfAhiyawa_EliteFour_PolymniaLoseText)
+    }
+
+    setflag(FLAG_ELITE_FOUR_DEFEATED_POLYMNIA)
+    delay(10)
+    speakername("Polymnia")
+    msgbox(format("Huff, puff... That was quite the battle, {PLAYER}! I'll allow you to pass to the {COLOR GREEN}next room{COLOR DARK_GRAY}. Good luck with your challenge!"))
+    closemessage
+    release
+    end
+}
+text RuinsOfAhiyawa_EliteFour_PolymniaLoseText
+{
+    format("You've bloomed like a beautiful garden!")
+}
+
+// -----------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+
+script RuinsOfAhiyawa_EliteFour_EnterTerpsikoreRoomScript
+{
+    lockall
+
+    // set room up
+    // NOTE
+    // Objects 1-3: Polymnia
+    // Objects 4-6: Terpsikore
+    // Objects 7-9: Euterpe
+    // Objects 10-12: Rhadine
+    setflag(FLAG_ELITE_FOUR_HIDE_POLYMNIA)
+    clearflag(FLAG_ELITE_FOUR_HIDE_TERPSIKORE)
+    setflag(FLAG_ELITE_FOUR_HIDE_EUTERPE)
+    setflag(FLAG_ELITE_FOUR_HIDE_RHADINE)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    addobject(4)
+    addobject(5)
+    addobject(6)
+    removeobject(7)
+    removeobject(8)
+    removeobject(9)
+    removeobject(10)
+    removeobject(11)
+    removeobject(12)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmovement(0)
+    delay(10)
+    releaseall
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_EventScript_BraviaryHisuian
+{
+    lock
+    faceplayer
+    speakername("Braviary")
+    playmoncry(SPECIES_BRAVIARY, CRY_MODE_NORMAL)
+    msgbox("Kreeaww!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_EventScript_Hawlucha
+{
+    lock
+    faceplayer
+    speakername("Hawlucha")
+    playmoncry(SPECIES_HAWLUCHA, CRY_MODE_NORMAL)
+    msgbox("Hmph umph!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_Terpsikore
+{
+    lock
+    faceplayer
+    speakername("Terpsikore")
+
+    // if already beat battle, be done lol
+    if(flag(FLAG_ELITE_FOUR_DEFEATED_TERPSIKORE))
+    {
+        msgbox(format("That was an incredible battle. Please, continue the challenge ahead!"))
+        closemessage
+        release
+        end
+    }
+
+    msgbox(format("Opa, you made it through Polymnia! Ever since you helped me out in {COLOR GREEN}Satyr's Lair{COLOR DARK_GRAY} back in Sofos City, I knew you were something special.\p As you know, I'm the Muse of Dance, which means that balance is key to me. Show me your most graceful moves!"))
+    closemessage
+
+    if(!flag(FLAG_HARD_MODE))
+    {
+        trainerbattle_no_intro(TRAINER_ELITEFOUR_TERPSIKORE, RuinsOfAhiyawa_EliteFour_TerpsikoreLoseText)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_ELITEFOUR_TERPSIKORE_HARD, RuinsOfAhiyawa_EliteFour_TerpsikoreLoseText)
+    }
+
+    setflag(FLAG_ELITE_FOUR_DEFEATED_TERPSIKORE)
+    delay(10)
+    speakername("Terpsikore")
+    msgbox(format("I'll never forget the way you move with your Pokémon, {PLAYER}. Please, continue through the next door to continue your challenge!"))
+    closemessage
+    release
+    end
+}
+text RuinsOfAhiyawa_EliteFour_TerpsikoreLoseText
+{
+    format("Your Pokémon dance nearly as well as mine!")
+}
+
+// -----------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+
+script RuinsOfAhiyawa_EliteFour_EnterEuterpeRoomScript
+{
+    lockall
+
+    // set room up
+    // NOTE
+    // Objects 1-3: Polymnia
+    // Objects 4-6: Terpsikore
+    // Objects 7-9: Euterpe
+    // Objects 10-12: Rhadine
+    setflag(FLAG_ELITE_FOUR_HIDE_POLYMNIA)
+    setflag(FLAG_ELITE_FOUR_HIDE_TERPSIKORE)
+    clearflag(FLAG_ELITE_FOUR_HIDE_EUTERPE)
+    setflag(FLAG_ELITE_FOUR_HIDE_RHADINE)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    addobject(7)
+    addobject(8)
+    addobject(9)
+    removeobject(10)
+    removeobject(11)
+    removeobject(12)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmovement(0)
+    delay(10)
+    releaseall
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_EventScript_Tentacruel
+{
+    lock
+    faceplayer
+    speakername("Tentacruel")
+    playmoncry(SPECIES_TENTACRUEL, CRY_MODE_NORMAL)
+    msgbox("Blubbluh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_EventScript_Gyarados
+{
+    lock
+    faceplayer
+    speakername("Gyarados")
+    playmoncry(SPECIES_GYARADOS, CRY_MODE_NORMAL)
+    msgbox("Grayaaa!!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_Euterpe
+{
+    lock
+    faceplayer
+    speakername("Euterpe")
+
+    // if already beat battle, be done lol
+    if(flag(FLAG_ELITE_FOUR_DEFEATED_EUTERPE))
+    {
+        msgbox(format("That was an incredible battle. Please, continue the challenge ahead!"))
+        closemessage
+        release
+        end
+    }
+
+    msgbox(format("Making it this far is cause for celebration! But I'm gonna have to end your little challenge here, {PLAYER}.\p Get ready - I'm ending your party and starting my own!"))
+    closemessage
+
+    if(!flag(FLAG_HARD_MODE))
+    {
+        trainerbattle_no_intro(TRAINER_ELITEFOUR_EUTERPE, RuinsOfAhiyawa_EliteFour_EuterpeLoseText)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_ELITEFOUR_EUTERPE_HARD, RuinsOfAhiyawa_EliteFour_EuterpeLoseText)
+    }
+
+    setflag(FLAG_ELITE_FOUR_DEFEATED_EUTERPE)
+    delay(10)
+    speakername("Euterpe")
+    msgbox(format("I'll never forget your moves! You've earned your place as a proper Elite Four challenger, that's for sure. Please, continue through the following door and face the final Elite Four member!"))
+    closemessage
+    release
+    end
+}
+text RuinsOfAhiyawa_EliteFour_EuterpeLoseText
+{
+    format("You're truly entertaining!")
+}
+
+// -----------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+
+script RuinsOfAhiyawa_EliteFour_EnterRhadineRoomScript
+{
+    lockall
+
+    // set room up
+    // NOTE
+    // Objects 1-3: Polymnia
+    // Objects 4-6: Terpsikore
+    // Objects 7-9: Euterpe
+    // Objects 10-12: Rhadine
+    setflag(FLAG_ELITE_FOUR_HIDE_POLYMNIA)
+    setflag(FLAG_ELITE_FOUR_HIDE_TERPSIKORE)
+    setflag(FLAG_ELITE_FOUR_HIDE_EUTERPE)
+    clearflag(FLAG_ELITE_FOUR_HIDE_RHADINE)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    removeobject(8)
+    removeobject(9)
+    addobject(10)
+    addobject(11)
+    addobject(12)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmovement(0)
+    delay(10)
+    releaseall
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_EventScript_OricorioBaile
+{
+    lock
+    faceplayer
+    speakername("Oricorio")
+    playmoncry(SPECIES_ORICORIO, CRY_MODE_NORMAL)
+    msgbox("Tweedeeyee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_EventScript_Mandibuzz
+{
+    lock
+    faceplayer
+    speakername("Mandibuzz")
+    playmoncry(SPECIES_MANDIBUZZ, CRY_MODE_NORMAL)
+    msgbox("Byaaah!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_Rhadine
+{
+    lock
+    faceplayer
+    speakername("Rhadine")
+
+    // if already beat battle, be done lol
+    if(flag(FLAG_ELITE_FOUR_DEFEATED_RHADINE))
+    {
+        msgbox(format("That was an incredible battle. Please, continue the challenge ahead!"))
+        closemessage
+        release
+        end
+    }
+
+    msgbox(format("{PLAYER}... I'm so, so glad you made it this far! It feels like years since we stood in the Sofos Acropolis Temple, gazing up at Team Chimera's Legendary Beasts with clenched fists. Now, they've been defeated, and we stand triumphant.\p Of course, there's still a challenge ahead of you - it's me! Show me your fiery spirit in battle!"))
+    closemessage
+
+    if(!flag(FLAG_HARD_MODE))
+    {
+        trainerbattle_no_intro(TRAINER_ELITEFOUR_RHADINE, RuinsOfAhiyawa_EliteFour_RhadineLoseText)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_ELITEFOUR_RHADINE_HARD, RuinsOfAhiyawa_EliteFour_RhadineLoseText)
+    }
+
+    setflag(FLAG_ELITE_FOUR_DEFEATED_RHADINE)
+    delay(10)
+    speakername("Rhadine")
+    msgbox(format("Kehehe, you've beaten me, and with that, you've won your challenge!\p ...Well, you've ALMOST won. What, did you think we didn't have a Champion? A {COLOR GREEN}powerful Trainer{COLOR DARK_GRAY} from Ilios, exploring other regions for years, has returned to battle you.\p Continue through the door behind me nd face one final battle. Only then can you become the Champion of Ilios!"))
+    closemessage
+    release
+    end
+}
+text RuinsOfAhiyawa_EliteFour_RhadineLoseText
+{
+    format("Your fire grows brighter and brighter!")
+}

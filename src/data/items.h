@@ -10811,9 +10811,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM28"),
         .price = 2000,
         .description = COMPOUND_STRING(
-            "Digs underground\n"
-            "the 1st turn, then\n"
-            "strikes next turn."),
+            "Move: Dig\n"
+            "2-turn move. User\n"
+            "burrows, then hits."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11276,7 +11276,10 @@ const struct Item gItemsInfo[] =
     {
         .name = _("TM59"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Move: Thunder Wave\n"
+            "Weak jolt to para-\n"
+            "lyze opponents."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

@@ -870,14 +870,14 @@ JusmailTown_EventScript_LittleGirlWithWishingStar_Text_3:
 
 JusmailTown_EventScript_WishingWellSign_Text_0:
 # 506 "data/maps/JusmailTown/scripts.pory"
-	.string "JUSMAIL TOWN WELL\n"
+	.string "Jusmail Town Well\n"
 	.string "More than meets the eye.$"
 
 JusmailTown_EventScript_WishingWellSign_Text_1:
 # 508 "data/maps/JusmailTown/scripts.pory"
 	.string "There's more scribbled on here...\p"
 	.string "Use Wishing Stars at the Wishing Well!\n"
-	.string "POKéMON are granted to those who seek\l"
+	.string "Pokémon are granted to those who seek\l"
 	.string "them!$"
 
 JusmailTown_EventScript_CyclingMan_Text_0:

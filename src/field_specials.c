@@ -4718,6 +4718,18 @@ void CheckRouteCaptureProgress(void)
             for(u8 i=0; i<32; i++) { wildSpeciesArray[i] = localArray[i]; }
             break;
         }
+        case MAPSEC_POLLEN_ROAD:
+        {
+            u32 localArray[32] = {SPECIES_FLOETTE, SPECIES_SKIPLOOM, SPECIES_ELECTRODE, SPECIES_COMFEY, SPECIES_PACHIRISU, SPECIES_PIKACHU, SPECIES_HAWLUCHA, SPECIES_BRAVIARY, SPECIES_DODRIO, SPECIES_YANMEGA, SPECIES_CHARJABUG, SPECIES_DEDENNE, SPECIES_TOGEDEMARU, SPECIES_ESPATHRA, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE};
+            for(u8 i=0; i<32; i++) { wildSpeciesArray[i] = localArray[i]; }
+            break;
+        }
+        case MAPSEC_DAVOSI_STRAITS:
+        {
+            u32 localArray[32] = {SPECIES_MAGIKARP, SPECIES_REMORAID, SPECIES_SHELLDER, SPECIES_FINNEON, SPECIES_OCTILLERY, SPECIES_GOLDUCK, SPECIES_CLOYSTER, SPECIES_GOREBYSS, SPECIES_FINIZEN, SPECIES_SWANNA, SPECIES_DRAGONAIR, SPECIES_DHELMISE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE};
+            for(u8 i=0; i<32; i++) { wildSpeciesArray[i] = localArray[i]; }
+            break;
+        }
     }
 
     // Now that the Wild Species Array is filled, we can cycle through it and check if each Pokémon is caught
@@ -10124,4 +10136,15 @@ void UpdateZooGraphics_HerpetofaunaBuilding(void)
     {
         FlagSet(FLAG_HIDE_ZOO_POKEMON_08);
     }
+}
+
+void LoadWakewaterPlayerMonGfx(void)
+{
+    FlagClear(FLAG_ITEM_HIDE_PLAYER_MON_WAKEWATER);
+
+    u16 speciesGraphics;
+
+    // Loads Player's mon
+    speciesGraphics = (OBJ_EVENT_GFX_MON_BASE + GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPECIES)) & OBJ_EVENT_GFX_SPECIES_MASK;
+    VarSet(VAR_OBJ_GFX_ID_4, speciesGraphics);
 }

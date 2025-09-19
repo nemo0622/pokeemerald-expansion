@@ -5,6 +5,6 @@ ChampionsPeak_Outside_MapScripts::
 
 ChampionsPeak_Outside_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 3 "data/maps/ChampionsPeak_Outside/scripts.pory"
-	setflag FLAG_VISITED_CHAMPIONS_PEAK
+	setflag FLAG_VISITED_RUINS_OF_AHIYAWA
 	return
 

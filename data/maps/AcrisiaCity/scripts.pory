@@ -2,6 +2,7 @@ mapscripts AcrisiaCity_MapScripts {
 
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_INTRO_STATE, 0: AcrisiaCity_EventScript_PlayerExitsTruck
+        VAR_INTRO_STATE, 7: AcrisiaCity_EventScript_PiraeusGreetsPlayerAfterEliteFour
     ]
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_ACRISIA_CITY)
@@ -388,5 +389,40 @@ script AcrisiaCity_EventScript_FatMan
     waitmovement(0)
     release
     end
+}
+
+script AcrisiaCity_EventScript_PiraeusGreetsPlayerAfterEliteFour
+{
+    lockall
+    setvar(VAR_INTRO_STATE, 8)
+    clearflag(FLAG_HIDE_PIRAEUS_ACRISIA_CITY)
+    addobject(30)
+    delay(20)
+    speakername("???")
+    msgbox(format("Buongiorno, {PLAYER}!"))
+    closemessage
+    emote(OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM)
+    applymovement(30, AcrisiaCity_Movement_PiraeusApproach)
+    waitmovement(0)
+    speakername("Piraeus")
+    msgbox(format("Surprised to see me so far from my boat, eh? Kahaha! I had to come by and congratulate you for becoming {COLOR GREEN}Champion{COLOR DARK_GRAY}!\p Knowing you, I'm sure you're after some more adventure, yeah? Now that you're Champion, I'll start sailing you to {COLOR GREEN}Wakewater Isle{COLOR DARK_GRAY}, an island where you can battle against {COLOR GREEN}highly-ranked Trainers{COLOR DARK_GRAY} as long as you'd like!\p If you want to sail with me to {COLOR GREEN}Wakewater Isle{COLOR DARK_GRAY}, just talk to me at my boat. See ya around, Champ!"))
+    closemessage
+    delay(10)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(15)
+    setflag(FLAG_HIDE_PIRAEUS_ACRISIA_CITY)
+    removeobject(30)
+    delay(15)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(15)
+    releaseall
+    end
+}
+
+movement AcrisiaCity_Movement_PiraeusApproach
+{
+    walk_up * 5
+    face_up
+    step_end
 }
 

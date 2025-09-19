@@ -140,8 +140,8 @@
 #define OBJ_EVENT_GFX_LITTLE_BOY_3               136
 #define OBJ_EVENT_GFX_BRENDAN_FISHING            137
 #define OBJ_EVENT_GFX_MAY_FISHING                138
-#define OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN      139
-#define OBJ_EVENT_GFX_THE_DELPHIS                   140
+#define OBJ_EVENT_GFX_CHAMPION_ANYALIOS          139
+#define OBJ_EVENT_GFX_THE_DELPHIS                140
 #define OBJ_EVENT_GFX_SUBMARINE_SHADOW           141
 #define OBJ_EVENT_GFX_MIMIKYU_DOLL               142
 #define OBJ_EVENT_GFX_PIKACHU_DOLL               143

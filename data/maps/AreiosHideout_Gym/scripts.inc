@@ -355,80 +355,86 @@ AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript::
 	closemessage
 # 263 "data/maps/AreiosHideout_Gym/scripts.pory"
 	clearflag FLAG_HIDE_RANIA_AND_LEADERS_AREIOS
+# 264 "data/maps/AreiosHideout_Gym/scripts.pory"
+	setflag FLAG_CAN_ENCOUNTER_RAIKOU
 # 265 "data/maps/AreiosHideout_Gym/scripts.pory"
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	setflag FLAG_CAN_ENCOUNTER_SUICUNE
 # 266 "data/maps/AreiosHideout_Gym/scripts.pory"
-	warpcontinuescript MAP_AREIOS_HIDEOUT, 6, 11, AreiosHideout_EventScript_ChimeraLossScript
-# 267 "data/maps/AreiosHideout_Gym/scripts.pory"
-	waitstate
+	setflag FLAG_CAN_ENCOUNTER_ENTEI
+# 268 "data/maps/AreiosHideout_Gym/scripts.pory"
+	setflag FLAG_HIDE_MAP_NAME_POPUP
 # 269 "data/maps/AreiosHideout_Gym/scripts.pory"
+	warpcontinuescript MAP_AREIOS_HIDEOUT, 6, 11, AreiosHideout_EventScript_ChimeraLossScript
+# 270 "data/maps/AreiosHideout_Gym/scripts.pory"
+	waitstate
+# 272 "data/maps/AreiosHideout_Gym/scripts.pory"
 	release
 	end
 
 
-# 273 "data/maps/AreiosHideout_Gym/scripts.pory"
-AreiosHideout_Gym_Movement_EnteiRunAway:
-# 275 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_right
 # 276 "data/maps/AreiosHideout_Gym/scripts.pory"
-	jump_down
-# 277 "data/maps/AreiosHideout_Gym/scripts.pory"
-	jump_right
+AreiosHideout_Gym_Movement_EnteiRunAway:
 # 278 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 278 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 278 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 278 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 278 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 278 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
+	walk_fast_right
 # 279 "data/maps/AreiosHideout_Gym/scripts.pory"
+	jump_down
+# 280 "data/maps/AreiosHideout_Gym/scripts.pory"
+	jump_right
+# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 282 "data/maps/AreiosHideout_Gym/scripts.pory"
 	step_end
 
-# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 284 "data/maps/AreiosHideout_Gym/scripts.pory"
 AreiosHideout_Gym_Movement_SuicuneRunAway:
-# 283 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 286 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_left
-# 283 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 286 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_left
-# 284 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 284 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 285 "data/maps/AreiosHideout_Gym/scripts.pory"
-	jump_down
-# 285 "data/maps/AreiosHideout_Gym/scripts.pory"
-	jump_down
-# 286 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 286 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 286 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 287 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_down
 # 287 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 288 "data/maps/AreiosHideout_Gym/scripts.pory"
+	jump_down
+# 288 "data/maps/AreiosHideout_Gym/scripts.pory"
+	jump_down
+# 289 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 289 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 289 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 290 "data/maps/AreiosHideout_Gym/scripts.pory"
 	step_end
 
-# 289 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 292 "data/maps/AreiosHideout_Gym/scripts.pory"
 AreiosHideout_Gym_Movement_RaikouRunAway:
-# 291 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 291 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 292 "data/maps/AreiosHideout_Gym/scripts.pory"
-	jump_down
-# 292 "data/maps/AreiosHideout_Gym/scripts.pory"
-	jump_down
-# 293 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 293 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 293 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 294 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_down
 # 294 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 295 "data/maps/AreiosHideout_Gym/scripts.pory"
+	jump_down
+# 295 "data/maps/AreiosHideout_Gym/scripts.pory"
+	jump_down
+# 296 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 296 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 296 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 297 "data/maps/AreiosHideout_Gym/scripts.pory"
 	step_end
 
 AreiosHideout_Gym_EventScript_Mamoswine_Text_0:

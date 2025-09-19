@@ -146,8 +146,17 @@ script MarmaroIsland_EventScript_ConstructionWorker
     lock
     faceplayer
     speakername("Worker")
-    msgbox(format("Our minecarts move the stone we extract across the island. Big boats come by every so often to ship it across the Ilios Region!"))
+    msgbox(format("We do our best to balance digging and sustainability."))
     closemessage
+    if(!flag(FLAG_GOT_DIG_TM))
+    {
+        speakername("Worker")
+        msgbox(format("Do you want to do some digging, too? Take this."))
+        closemessage
+        delay(5)
+        giveitem(ITEM_TM_DIG)
+        setflag(FLAG_GOT_DIG_TM)
+    }
     release
     end
 }

@@ -387,3 +387,116 @@ script SofosCity_EventScript_OldSofosOutfitBeauty
     release
     end
 }
+
+// ---------------------------------------------------------------------------------------------------------------
+
+script SofosCity_Acropolis_EventScript_CallRaikou
+{
+    lock
+    msgbox(format("A slight electric current fills the air, raising the hairs on your neck."))
+    closemessage
+    if(flag(FLAG_CAN_ENCOUNTER_RAIKOU))
+    {
+        msgbox(format("Will you summon Raikou?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == TRUE)
+        {
+            speakername("Raikou")
+            playmoncry(SPECIES_RAIKOU, CRY_MODE_ENCOUNTER)
+            msgbox(format("Purrowwwl!!"))
+            waitmoncry
+            closemessage
+
+            seteventmon(SPECIES_RAIKOU, 45)
+            special(BattleSetup_StartLegendaryBattle)
+            waitstate
+            specialvar(VAR_RESULT, GetBattleOutcome)
+            switch(var(VAR_RESULT))
+            {
+                case B_OUTCOME_CAUGHT:
+                    msgbox(format("The electric current around the statue fades. Raikou has joined you on your journey!"))
+                    closemessage
+                    clearflag(FLAG_CAN_ENCOUNTER_RAIKOU)
+                default:
+                    msgbox(format("The electric current fades, but it continues to pulse in the air.\p Raikou can be encountered again until successfully caught."))
+                    closemessage
+            }
+        }
+    }
+    release
+    end
+}
+
+script SofosCity_Acropolis_EventScript_CallSuicune
+{
+    lock
+    msgbox(format("The air around the statue has a slight chilly haze."))
+    closemessage
+    if(flag(FLAG_CAN_ENCOUNTER_SUICUNE))
+    {
+        msgbox(format("Will you summon Suicune?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == TRUE)
+        {
+            speakername("Suicune")
+            playmoncry(SPECIES_SUICUNE, CRY_MODE_ENCOUNTER)
+            msgbox(format("Ahouuu!"))
+            waitmoncry
+            closemessage
+
+            seteventmon(SPECIES_SUICUNE, 45)
+            special(BattleSetup_StartLegendaryBattle)
+            waitstate
+            specialvar(VAR_RESULT, GetBattleOutcome)
+            switch(var(VAR_RESULT))
+            {
+                case B_OUTCOME_CAUGHT:
+                    msgbox(format("The icy haze around the statue fades. Suicune has joined you on your journey!"))
+                    closemessage
+                    clearflag(FLAG_CAN_ENCOUNTER_SUICUNE)
+                default:
+                    msgbox(format("The icy haze fades, but it continues to pulse in the air.\p Suicune can be encountered again until successfully caught."))
+                    closemessage
+            }
+        }
+    }
+    release
+    end
+}
+
+script SofosCity_Acropolis_EventScript_CallEntei
+{
+    lock
+    msgbox(format("The statue is as warm as a shining coal."))
+    closemessage
+    if(flag(FLAG_CAN_ENCOUNTER_ENTEI))
+    {
+        msgbox(format("Will you summon Entei?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == TRUE)
+        {
+            speakername("Entei")
+            playmoncry(SPECIES_ENTEI, CRY_MODE_ENCOUNTER)
+            msgbox(format("Grrryoww!"))
+            waitmoncry
+            closemessage
+
+            seteventmon(SPECIES_ENTEI, 45)
+            special(BattleSetup_StartLegendaryBattle)
+            waitstate
+            specialvar(VAR_RESULT, GetBattleOutcome)
+            switch(var(VAR_RESULT))
+            {
+                case B_OUTCOME_CAUGHT:
+                    msgbox(format("The strong heat around the statue fades. Entei has joined you on your journey!"))
+                    closemessage
+                    clearflag(FLAG_CAN_ENCOUNTER_ENTEI)
+                default:
+                    msgbox(format("The powerful heat fades, but it continues to pulse in the air.\p Entei can be encountered again until successfully caught."))
+                    closemessage
+            }
+        }
+    }
+    release
+    end
+}

@@ -697,23 +697,23 @@
 #define FLAG_HIDE_RANIA_AND_LEADERS_AREIOS      0x28B // Set after Areios Chimera end event happens
 #define FLAG_UNLOCKED_RUINS_OF_AHIYAWA          0x28C // Set after Chimera is defeated in Areios Hideout
 #define FLAG_HIDE_RIVAL_RANIA_PALATI            0x28D // Hides Rania in front of Palati Gym
-#define FLAG_UNUSED_0x28E  0x28E // Unused Flag
-#define FLAG_UNUSED_0x28F  0x28F // Unused Flag
-#define FLAG_UNUSED_0x290  0x290 // Unused Flag
-#define FLAG_UNUSED_0x291  0x291 // Unused Flag
-#define FLAG_UNUSED_0x292  0x292 // Unused Flag
-#define FLAG_UNUSED_0x293  0x293 // Unused Flag
-#define FLAG_UNUSED_0x294  0x294 // Unused Flag
-#define FLAG_UNUSED_0x295  0x295 // Unused Flag
-#define FLAG_UNUSED_0x296  0x296 // Unused Flag
-#define FLAG_UNUSED_0x297  0x297 // Unused Flag
-#define FLAG_UNUSED_0x298  0x298 // Unused Flag
-#define FLAG_UNUSED_0x299  0x299 // Unused Flag
-#define FLAG_UNUSED_0x29A  0x29A // Unused Flag
-#define FLAG_UNUSED_0x29B  0x29B // Unused Flag
-#define FLAG_UNUSED_0x29C  0x29C // Unused Flag
-#define FLAG_UNUSED_0x29D  0x29D // Unused Flag
-#define FLAG_UNUSED_0x29E  0x29E // Unused Flag
+#define FLAG_GOT_DIG_TM                         0x28E // Got TM from Worker in Marmaro Island
+#define FLAG_CAUGHT_ALL_MONS_POLLEN_ROAD        0x28F // Uni student flag
+#define FLAG_CAUGHT_ALL_MONS_DAVOSI_STRAITS     0x290 // Uni student flag
+#define FLAG_BEAT_RANIA_RUINS_OF_AHIYAWA        0x291 // Hides Rania after beating her in final Rival battle
+#define FLAG_ELITE_FOUR_HIDE_POLYMNIA           0x292 // Used in E4 room
+#define FLAG_ELITE_FOUR_HIDE_TERPSIKORE         0x293 // Used in E4 room
+#define FLAG_ELITE_FOUR_HIDE_EUTERPE            0x294 // Used in E4 room
+#define FLAG_ELITE_FOUR_HIDE_RHADINE            0x295 // Used in E4 room
+#define FLAG_ELITE_FOUR_DEFEATED_POLYMNIA       0x296 // Defeated E4 Member
+#define FLAG_ELITE_FOUR_DEFEATED_TERPSIKORE     0x297 // Defeated E4 Member
+#define FLAG_ELITE_FOUR_DEFEATED_EUTERPE        0x298 // Defeated E4 Member
+#define FLAG_ELITE_FOUR_DEFEATED_RHADINE        0x299 // Defeated E4 Member
+#define FLAG_CAN_ENCOUNTER_RAIKOU               0x29A // Reset every Elite Four run
+#define FLAG_CAN_ENCOUNTER_SUICUNE              0x29B // Reset every Elite Four run
+#define FLAG_CAN_ENCOUNTER_ENTEI                0x29C // Reset every Elite Four run
+#define FLAG_HIDE_PIRAEUS_ACRISIA_CITY          0x29D // Piraeus greets Player in Acrisia after becoming Champion
+#define FLAG_HIDE_RANIA_AHIYAWA_INDOOR          0x29E
 #define FLAG_UNUSED_0x29F  0x29F // Unused Flag
 #define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
 #define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
@@ -1133,49 +1133,53 @@
 #define FLAG_ITEM_SHOAL_CAVE_ENTRANCE_BIG_PEARL                     0x439
 #define FLAG_ITEM_SHOAL_CAVE_INNER_ROOM_RARE_CANDY                  0x43A
 #define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_ICE_HEAL                   0x43B
-#define FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR                        0x43C
-#define FLAG_ITEM_VICTORY_ROAD_1F_PP_UP                             0x43D
-#define FLAG_ITEM_VICTORY_ROAD_B1F_TM_PSYCHIC                       0x43E
-#define FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE                     0x43F
-#define FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL                        0x440
-#define FLAG_ITEM_MT_PYRE_6F_TM_SHADOW_BALL                         0x441
-#define FLAG_ITEM_SEAFLOOR_CAVERN_ROOM_9_TM_EARTHQUAKE              0x442
-#define FLAG_ITEM_FIERY_PATH_TM_TOXIC                               0x443
-#define FLAG_ITEM_ROUTE_124_RED_SHARD                               0x444
-#define FLAG_ITEM_ROUTE_124_BLUE_SHARD                              0x445
-#define FLAG_ITEM_SAFARI_ZONE_NORTH_WEST_TM_SOLAR_BEAM              0x446
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_1F_HARBOR_MAIL               0x447
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_ESCAPE_ROPE              0x448
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_B1F_DIVE_BALL              0x449
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_TM_ICE_BEAM              0x44A
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_1F_REVIVE                  0x44B
-#define FLAG_ITEM_ABANDONED_SHIP_CAPTAINS_OFFICE_STORAGE_KEY        0x44C
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_3_WATER_STONE    0x44D
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_1_TM_RAIN_DANCE  0x44E
-#define FLAG_ITEM_ROUTE_121_CARBOS                                  0x44F
-#define FLAG_ITEM_ROUTE_123_ULTRA_BALL                              0x450
-#define FLAG_ITEM_ROUTE_126_GREEN_SHARD                             0x451
-#define FLAG_ITEM_ROUTE_119_HYPER_POTION_2                          0x452
-#define FLAG_ITEM_ROUTE_120_HYPER_POTION                            0x453
-#define FLAG_ITEM_ROUTE_120_NEST_BALL                               0x454
-#define FLAG_ITEM_ROUTE_123_ELIXIR                                  0x455
-#define FLAG_ITEM_NEW_MAUVILLE_THUNDER_STONE                        0x456
-#define FLAG_ITEM_FIERY_PATH_FIRE_STONE                             0x457
-#define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_TM_HAIL                       0x458
-#define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_NEVER_MELT_ICE                0x459
-#define FLAG_ITEM_ROUTE_103_GUARD_SPEC                              0x45A
-#define FLAG_ITEM_ROUTE_104_X_ACCURACY                              0x45B
-#define FLAG_ITEM_MAUVILLE_CITY_X_SPEED                             0x45C
-#define FLAG_ITEM_PETALBURG_WOODS_PARALYZE_HEAL                     0x45D
-#define FLAG_ITEM_ROUTE_115_GREAT_BALL                              0x45E
-#define FLAG_ITEM_SAFARI_ZONE_NORTH_CALCIUM                         0x45F
-#define FLAG_ITEM_MT_PYRE_3F_SUPER_REPEL                            0x460
-#define FLAG_ITEM_ROUTE_118_HYPER_POTION                            0x461
-#define FLAG_ITEM_NEW_MAUVILLE_FULL_HEAL                            0x462
-#define FLAG_ITEM_NEW_MAUVILLE_PARALYZE_HEAL                        0x463
+
+// stealing these 40 flags for the Waterwake Isle trainers teehee
+#define FLAG_HIDE_WAKEWATER_TRAINER_01                              0x43C
+#define FLAG_HIDE_WAKEWATER_TRAINER_02                              0x43D
+#define FLAG_HIDE_WAKEWATER_TRAINER_03                              0x43E
+#define FLAG_HIDE_WAKEWATER_TRAINER_04                     0x43F
+#define FLAG_HIDE_WAKEWATER_TRAINER_05                        0x440
+#define FLAG_HIDE_WAKEWATER_TRAINER_06                         0x441
+#define FLAG_HIDE_WAKEWATER_TRAINER_07              0x442
+#define FLAG_HIDE_WAKEWATER_TRAINER_08                               0x443
+#define FLAG_HIDE_WAKEWATER_TRAINER_09                               0x444
+#define FLAG_HIDE_WAKEWATER_TRAINER_10                              0x445
+#define FLAG_HIDE_WAKEWATER_TRAINER_11              0x446
+#define FLAG_HIDE_WAKEWATER_TRAINER_12               0x447
+#define FLAG_HIDE_WAKEWATER_TRAINER_13              0x448
+#define FLAG_HIDE_WAKEWATER_TRAINER_14              0x449
+#define FLAG_HIDE_WAKEWATER_TRAINER_15              0x44A
+#define FLAG_HIDE_WAKEWATER_TRAINER_16                  0x44B
+#define FLAG_HIDE_WAKEWATER_TRAINER_17        0x44C
+#define FLAG_HIDE_WAKEWATER_TRAINER_18    0x44D
+#define FLAG_HIDE_WAKEWATER_TRAINER_19  0x44E
+#define FLAG_HIDE_WAKEWATER_TRAINER_20                                  0x44F
+#define FLAG_HIDE_WAKEWATER_TRAINER_21                              0x450
+#define FLAG_HIDE_WAKEWATER_TRAINER_22                             0x451
+#define FLAG_HIDE_WAKEWATER_TRAINER_23                          0x452
+#define FLAG_HIDE_WAKEWATER_TRAINER_24                            0x453
+#define FLAG_HIDE_WAKEWATER_TRAINER_25                               0x454
+#define FLAG_HIDE_WAKEWATER_TRAINER_26                                  0x455
+#define FLAG_HIDE_WAKEWATER_TRAINER_27                        0x456
+#define FLAG_HIDE_WAKEWATER_TRAINER_28                             0x457
+#define FLAG_HIDE_WAKEWATER_TRAINER_29                       0x458
+#define FLAG_HIDE_WAKEWATER_TRAINER_30                0x459
+#define FLAG_HIDE_WAKEWATER_TRAINER_31                              0x45A
+#define FLAG_HIDE_WAKEWATER_TRAINER_32                              0x45B
+#define FLAG_HIDE_WAKEWATER_TRAINER_33                             0x45C
+#define FLAG_HIDE_WAKEWATER_TRAINER_34                     0x45D
+#define FLAG_HIDE_WAKEWATER_TRAINER_35                              0x45E
+#define FLAG_HIDE_WAKEWATER_TRAINER_36                         0x45F
+#define FLAG_HIDE_WAKEWATER_TRAINER_37                            0x460
+#define FLAG_HIDE_WAKEWATER_TRAINER_38                            0x461
+#define FLAG_HIDE_WAKEWATER_TRAINER_39                            0x462
+#define FLAG_HIDE_WAKEWATER_TRAINER_40                        0x463
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MASTER_BALL                 0x465 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MAX_ELIXIR                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
+
+#define FLAG_ITEM_HIDE_PLAYER_MON_WAKEWATER                         0x465
+#define FLAG_ITEM_HIDE_OPPONENT_MON_WAKEWATER                       0x466
+
 #define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_UNUSED_0x468                                           0x468 // Unused Flag
 #define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469
@@ -1376,12 +1380,12 @@
 #define FLAG_VISITED_PALATI_CITY                    (SYSTEM_FLAGS + 0x16) // replaced petalburg city
 #define FLAG_VISITED_PORT_PELLO                     (SYSTEM_FLAGS + 0x17) // replaced slateport
 #define FLAG_VISITED_AREIOS_HIDEOUT                 (SYSTEM_FLAGS + 0x18) // replaced mauville
-#define FLAG_VISITED_CHAMPIONS_PEAK                 (SYSTEM_FLAGS + 0x19) // replaced rustboro city
+#define FLAG_VISITED_RUINS_OF_AHIYAWA               (SYSTEM_FLAGS + 0x19) // replaced rustboro city
 #define FLAG_VISITED_KALAMI_CITY                    (SYSTEM_FLAGS + 0x1A) // replaced fortree city
 #define FLAG_VISITED_KIPOS_TOWN                     (SYSTEM_FLAGS + 0x1B) // replaced lilycove city
 #define FLAG_VISITED_PENTEPETAL_CITY                (SYSTEM_FLAGS + 0x1C) // replaced mossdeep city
 #define FLAG_VISITED_TOWER_OF_DIOXIPPUS             (SYSTEM_FLAGS + 0x1D) // replaces sootopolis city
-#define FLAG_VISITED_EVER_GRANDE_CITY               (SYSTEM_FLAGS + 0x1E)
+#define FLAG_VISITED_WAKEWATER_ISLE               (SYSTEM_FLAGS + 0x1E)
 
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20) // 0x880

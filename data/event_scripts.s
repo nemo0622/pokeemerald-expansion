@@ -1984,3 +1984,17 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/AreiosHideout_Gym/scripts.inc"
 
 	.include "data/maps/PollenRoad/scripts.inc"
+
+	.include "data/maps/DavosiStraits/scripts.inc"
+
+	.include "data/maps/RuinsOfAhiyawa/scripts.inc"
+
+	.include "data/maps/RuinsOfAhiyawa_Lobby/scripts.inc"
+
+	.include "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.inc"
+
+	.include "data/maps/RuinsOfAhiyawa_E4_ChampionsRoom/scripts.inc"
+
+	.include "data/maps/WakewaterIsle/scripts.inc"
+
+	.include "data/maps/WakewaterIsle_PokemonCenter/scripts.inc"

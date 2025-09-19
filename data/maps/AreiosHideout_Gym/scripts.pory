@@ -259,8 +259,11 @@ script AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript
     msgbox(format("There's a huge commotion outside!"))
     closemessage
 
-    // set Niko and Rania state variables if necessary
+    // set other flags and shtuff
     clearflag(FLAG_HIDE_RANIA_AND_LEADERS_AREIOS)
+    setflag(FLAG_CAN_ENCOUNTER_RAIKOU)
+    setflag(FLAG_CAN_ENCOUNTER_SUICUNE)
+    setflag(FLAG_CAN_ENCOUNTER_ENTEI)
 
     setflag(FLAG_HIDE_MAP_NAME_POPUP)
     warpcontinuescript(MAP_AREIOS_HIDEOUT, 6, 11, AreiosHideout_EventScript_ChimeraLossScript)

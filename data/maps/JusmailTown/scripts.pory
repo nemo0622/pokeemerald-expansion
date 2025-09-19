@@ -503,9 +503,9 @@ script JusmailTown_EventScript_WishingWellSign
 {
 
 	lock
-	msgbox(format("JUSMAIL TOWN WELL\N More than meets the eye."))
+	msgbox(format("Jusmail Town Well\N More than meets the eye."))
 	closemessage
-	msgbox(format("There's more scribbled on here...\p Use Wishing Stars at the Wishing Well! POKéMON are granted to those who seek them!"))
+	msgbox(format("There's more scribbled on here...\p Use Wishing Stars at the Wishing Well! Pokémon are granted to those who seek them!"))
 	closemessage
 	release
 	end

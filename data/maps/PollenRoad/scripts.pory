@@ -1,1 +1,264 @@
-mapscripts PollenRoad_MapScripts {}
+mapscripts PollenRoad_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_1)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_2)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_3)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_4)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_5)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_6)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_7)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_8)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_9)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_10)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_11)
+        clearflag(FLAG_HIDE_OVERWORLD_ENCOUNTER_FLAG_12)
+        setobjectaswildencounter(14, ENCOUNTER_LAND)
+        setobjectaswildencounter(15, ENCOUNTER_LAND)
+        setobjectaswildencounter(16, ENCOUNTER_LAND)
+        setobjectaswildencounter(17, ENCOUNTER_LAND)
+        setobjectaswildencounter(18, ENCOUNTER_LAND)
+        setobjectaswildencounter(19, ENCOUNTER_LAND)
+        setobjectaswildencounter(20, ENCOUNTER_LAND)
+        setobjectaswildencounter(21, ENCOUNTER_LAND)
+        setobjectaswildencounter(22, ENCOUNTER_LAND)
+        setobjectaswildencounter(23, ENCOUNTER_SURF)
+    }
+}
+
+script PollenRoad_EventScript_DirectionSign
+{
+    lock
+    msgbox(format("Pollen Road\n Péntepetal City's Backyard\p {LEFT_ARROW} Péntepetal City \n Davosi Straits {RIGHT_ARROW}"))
+    closemessage
+    release
+    end
+}
+
+script PollenRoad_EventScript_Trainer_PollenRoad_Ruben
+{
+    trainerbattle_single(TRAINER_POLLENROAD_RUBEN, PollenRoad_Text_Trainer_PollenRoad_RubenIntro, PollenRoad_Text_Trainer_PollenRoad_RubenDefeat)
+    speakername("Ruben")
+    msgbox(format("This road ends at the other side of the island. I wonder where the water leads?"))
+    closemessage
+    release
+    end
+}
+text PollenRoad_Text_Trainer_PollenRoad_RubenIntro
+{
+    format("I finally made it to Pollen Road! You'll be my first challenge!")
+}
+text PollenRoad_Text_Trainer_PollenRoad_RubenDefeat
+{
+    format("Knocked down at my first challenge?!")
+}
+
+script PollenRoad_EventScript_Trainer_PollenRoad_Jonah
+{
+    trainerbattle_single(TRAINER_POLLENROAD_JONAH, PollenRoad_Text_Trainer_PollenRoad_JonahIntro, PollenRoad_Text_Trainer_PollenRoad_JonahDefeat)
+    speakername("Jonah")
+    msgbox(format("The Pollen Road is winding and worn down, but plenty of people travel it."))
+    closemessage
+    release
+    end
+}
+text PollenRoad_Text_Trainer_PollenRoad_JonahIntro
+{
+    format("I'll make you work up a sweat!")
+}
+text PollenRoad_Text_Trainer_PollenRoad_JonahDefeat
+{
+    format("Ouch! I'm outmatched!")
+}
+
+script PollenRoad_EventScript_GirlGatheringFlowers
+{
+    lock
+    faceplayer
+    speakername("Girl")
+    msgbox(format("I'm picking flowers to bring back to Péntepetal City. Giving away flowers is a tradition there!"))
+    closemessage
+    release
+    end
+}
+
+script PollenRoad_EventScript_Trainer_PollenRoad_Hannah
+{
+    trainerbattle_single(TRAINER_POLLENROAD_HANNAH, PollenRoad_Text_Trainer_PollenRoad_HannahIntro, PollenRoad_Text_Trainer_PollenRoad_HannahDefeat)
+    speakername("Hannah")
+    msgbox(format("I think I'd be happier down in Port Pello... Maybe I could even win some battles there."))
+    closemessage
+    release
+    end
+}
+text PollenRoad_Text_Trainer_PollenRoad_HannahIntro
+{
+    format("This'll be my breakout performance!")
+}
+text PollenRoad_Text_Trainer_PollenRoad_HannahDefeat
+{
+    format("No, my performance was ruined!")
+}
+
+script PollenRoad_EventScript_Trainer_PollenRoad_Ashari
+{
+    trainerbattle_single(TRAINER_POLLENROAD_ASHARI, PollenRoad_Text_Trainer_PollenRoad_AshariIntro, PollenRoad_Text_Trainer_PollenRoad_AshariDefeat)
+    speakername("Ashari")
+    msgbox(format("Phew, the battles just get harder and harder as I go..."))
+    closemessage
+    release
+    end
+}
+text PollenRoad_Text_Trainer_PollenRoad_AshariIntro
+{
+    format("If I stop, my wheels will get caught in the grass!")
+}
+text PollenRoad_Text_Trainer_PollenRoad_AshariDefeat
+{
+    format("My wheels are stuck!")
+}
+
+script PollenRoad_EventScript_Trainer_PollenRoad_Martin
+{
+    trainerbattle_single(TRAINER_POLLENROAD_MARTIN, PollenRoad_Text_Trainer_PollenRoad_MartinIntro, PollenRoad_Text_Trainer_PollenRoad_MartinDefeat)
+    speakername("Martin")
+    msgbox(format("I think I'll head home to Péntepetal City soon."))
+    closemessage
+    release
+    end
+}
+text PollenRoad_Text_Trainer_PollenRoad_MartinIntro
+{
+    format("Phew, I'm almost wiped out!")
+}
+text PollenRoad_Text_Trainer_PollenRoad_MartinDefeat
+{
+    format("Uh oh!")
+}
+
+script PollenRoad_EventScript_BugCatcher
+{
+    lock
+    faceplayer
+    speakername("Bug Catcher")
+    msgbox(format("I'm taking a break by these Berry Trees. I hear that Jusmail Town has a whole Berry Club!"))
+    closemessage
+    release
+    end
+}
+
+script PollenRoad_EventScript_Trainer_PollenRoad_Viktor
+{
+    trainerbattle_single(TRAINER_POLLENROAD_VIKTOR, PollenRoad_Text_Trainer_PollenRoad_ViktorIntro, PollenRoad_Text_Trainer_PollenRoad_ViktorDefeat)
+    speakername("Viktor")
+    msgbox(format("Maybe I'll go fishing for some food."))
+    closemessage
+    release
+    end
+}
+text PollenRoad_Text_Trainer_PollenRoad_ViktorIntro
+{
+    format("I'm straving... Got anything to eat?")
+}
+text PollenRoad_Text_Trainer_PollenRoad_ViktorDefeat
+{
+    format("I can't battle on an empty stomach!")
+}
+
+script PollenRoad_EventScript_Trainer_PollenRoad_Alicia
+{
+    trainerbattle_single(TRAINER_POLLENROAD_ALICIA, PollenRoad_Text_Trainer_PollenRoad_AliciaIntro, PollenRoad_Text_Trainer_PollenRoad_AliciaDefeat)
+    speakername("Alicia")
+    msgbox(format("I'm glad there's a Nurse just up ahead, I need to heal my Pokémon."))
+    closemessage
+    release
+    end
+}
+text PollenRoad_Text_Trainer_PollenRoad_AliciaIntro
+{
+    format("HA! Did I get ya?")
+}
+text PollenRoad_Text_Trainer_PollenRoad_AliciaDefeat
+{
+    format("Looks like you got me!")
+}
+
+script PollenRoad_EventScript_Youngster
+{
+    lock
+    faceplayer
+    speakername("Youngster")
+    msgbox(format("Woah... It's the ocean! My parents told me not to swim here because of the rough waters, but I'm a strong swimmer!"))
+    closemessage
+    release
+    end
+}
+
+script PollenRoad_EventScript_Nurse
+{
+    speakername("Nurse")
+    msgbox(format("Are you here to heal your Pokémon? Just hand them over to me."))
+    closemessage
+    applymovement(10, Common_Movement_FaceUp)
+    waitmovement(0)
+    special(HealPlayerParty)
+	callnative(UpdateFollowingPokemon)
+    delay(60)
+    applymovement(10, Common_Movement_FaceDown)
+    waitmovement(0)
+    speakername("Nurse")
+    msgbox(format("Here's your Pokémon. Good luck out there!"))
+    closemessage
+    release
+    end
+}
+
+script PollenRoad_EventScript_Comfey
+{
+    lock
+    faceplayer
+    speakername("Comfey")
+    playmoncry(SPECIES_COMFEY, CRY_MODE_NORMAL)
+    msgbox("Breef!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script PollenRoad_EventScript_UniversityStudentRouteCheck
+{
+    lock
+    faceplayer
+    speakername("Uni. Student")
+
+    if(flag(FLAG_CAUGHT_ALL_MONS_POLLEN_ROAD))
+    {
+        msgbox(format("Your Pokédex data is amazing! Now we know more about the local ecosystem, thanks to you."))
+        closemessage
+    }
+    else
+    {
+        msgbox(format("Chaire! I'm a student from the Acrisia University.\p I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land Pokémon{COLOR DARK_GRAY} found in Pollen Road. If you've caught all the Pokémon here, please let me know."))
+        closemessage
+        special(CheckRouteCaptureProgress)
+        if(var(VAR_RESULT) == TRUE) // caught all mons on the route!
+        {
+            delay(20)
+            emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+            speakername("Uni. Student")
+            msgbox(format("Incredible! You've caught all the Pokémon that I requested in the area!\p Here's a reward from the University. Keep up your hard work!"))
+            closemessage
+            delay(5)
+
+            // give reward!
+            giveitem(ITEM_EXP_CANDY_XL, 3)
+            closemessage
+            delay(5)
+
+            setflag(FLAG_CAUGHT_ALL_MONS_POLLEN_ROAD)
+        }
+    }
+
+    release
+    end
+}

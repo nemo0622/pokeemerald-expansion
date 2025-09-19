@@ -30,6 +30,9 @@ EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries::
 	clearflag FLAG_DEFEATED_DEOXYS
 	clearflag FLAG_DEFEATED_LUGIA
 	clearflag FLAG_DEFEATED_HO_OH
+	setflag FLAG_CAN_ENCOUNTER_RAIKOU
+	setflag FLAG_CAN_ENCOUNTER_SUICUNE
+	setflag FLAG_CAN_ENCOUNTER_ENTEI
 	return
 
 EverGrandeCity_HallOfFame_EventScript_SetDesertUnderpassCommentReady::

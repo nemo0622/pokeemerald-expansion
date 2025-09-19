@@ -1,0 +1,14 @@
+mapscripts RuinsOfAhiyawa_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_RUINS_OF_AHIYAWA)
+    }
+}
+
+script RuinsOfAhiyawa_EventScript_WelcomeSign
+{
+    lock
+    msgbox(format("Ruins of Ahiyawa\n Site of Ancient Glory, Home of the Elite Four"))
+    closemessage
+    release
+    end
+}

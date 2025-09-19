@@ -1,0 +1,99 @@
+mapscripts RuinsOfAhiyawa_E4_ChampionsRoom_MapScripts {}
+
+script RuinsOfAhiyawa_E4_ChampionsRoom_EnterRoom
+{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(OBJ_EVENT_ID_PLAYER, RuinsOfAhiyawa_E4_ChampionsRoom_PlayerWalkUp)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+movement RuinsOfAhiyawa_E4_ChampionsRoom_PlayerWalkUp
+{
+    walk_up * 6
+    face_up
+    step_end
+}
+
+// --------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------
+
+script RuinsOfAhiyawa_EliteFour_EventScript_Ceruledge
+{
+    lock
+    faceplayer
+    speakername("Ceruledge")
+    playmoncry(SPECIES_CERULEDGE, CRY_MODE_NORMAL)
+    msgbox("Hyah yeh!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_EliteFour_EventScript_Cyclizar
+{
+    lock
+    faceplayer
+    speakername("Cyclizar")
+    playmoncry(SPECIES_CYCLIZAR, CRY_MODE_NORMAL)
+    msgbox("Krr-klee!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script RuinsOfAhiyawa_E4_ChampionsRoom_Anyalios
+{
+    lock
+    faceplayer
+    speakername("Anyalios")
+    msgbox(format("BWAHAHA! 'Ey there, uh... {PLAYER}, right? I thought the Trainer sweeping the Ilios Region Gyms would be, well, a little more intimidating. You're just a pipsqueak!\p Look, kid, I beat the last Elite Four so bad, they ended up disbanding! Once I left Ilios, those Team Chimera losers started getting bold. Hah! I had better things to do than fight a bunch of thugs!\p Well, I'm back now to defend my title as the strongest Trainer in Ilios. Let's get this over with!"))
+    closemessage
+
+    if(!flag(FLAG_HARD_MODE))
+    {
+        trainerbattle_no_intro(TRAINER_ELITEFOUR_ANYALIOS, RuinsOfAhiyawa_E4_ChampionsRoom_AnyaliosLoseText)
+    }
+    else
+    {
+        trainerbattle_no_intro(TRAINER_ELITEFOUR_ANYALIOS_HARD, RuinsOfAhiyawa_E4_ChampionsRoom_AnyaliosLoseText)
+    }
+
+    delay(10)
+    speakername("Anyalios")
+    msgbox(format("Gehehe... BAHAHAHA! I can't believe it! {PLAYER}, you're actually stronger than me!\p I guess I have to be all professional now, hm? I officially grant you the {COLOR GREEN}title of Champion{COLOR DARK_GRAY}! Let's get you registered in the {COLOR GREEN}Hall of Fame{COLOR DARK_GRAY}. Congratulations!"))
+    closemessage
+    delay(20)
+
+    // Set champion flags n stuff
+    setflag(FLAG_SUPPRESS_SPEAKER_NAME) // fixes a bug i hope
+    clearflag(FLAG_HIDE_PIRAEUS_ACRISIA_CITY) // for post-champ meet with piraeus
+    setvar(VAR_INTRO_STATE, 7) // makes piraeus approach in acrisia, yadda yadda whatever
+    clearflag(FLAG_HIDE_RANIA_ACRISIA_UNIVERSITY)
+    clearflag(FLAG_HIDE_NIKO_ACRISIA_UNIVERSITY)
+    setflag(FLAG_HIDE_RANIA_AHIYAWA_INDOOR)
+    setvar(VAR_RANIA_STATE, 12)
+    setvar(VAR_NIKO_STATE, 15)
+    setfakertcmorning
+
+    special(DoDomeConfetti)
+    completequest(QUEST_CHAMPION)
+    setrespawn(HEAL_LOCATION_ACRISIA_CITY)
+	fadescreenspeed(FADE_TO_BLACK, 24)
+    call(EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags)
+	special(GameClear)
+    waitstate
+    releaseall
+    end
+}
+
+text RuinsOfAhiyawa_E4_ChampionsRoom_AnyaliosLoseText
+{
+    format("You... I... WHAT?!")
+}

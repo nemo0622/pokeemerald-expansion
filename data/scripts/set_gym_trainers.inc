@@ -58,18 +58,18 @@ FortreeCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_JARED
 	settrainerflag TRAINER_FLINT
 	settrainerflag TRAINER_ASHLEY
-	settrainerflag TRAINER_EDWARDO
+	settrainerflag TRAINER_DAVOSISTRAITS_RANIAO
 	settrainerflag TRAINER_HUMBERTO
 	settrainerflag TRAINER_DARIUS
 	return
 
 MossdeepCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_PRESTON
-	settrainerflag TRAINER_VIRGIL
-	settrainerflag TRAINER_BLAKE
-	settrainerflag TRAINER_HANNAH
-	settrainerflag TRAINER_SAMANTHA
-	settrainerflag TRAINER_MAURA
+	settrainerflag TRAINER_DAVOSISTRAITS_RANIA_HARD
+	settrainerflag TRAINER_ELITEFOUR_POLYMNIA
+	settrainerflag TRAINER_ELITEFOUR_POLYMNIA_HARD
+	settrainerflag TRAINER_ELITEFOUR_ANYALIOS_HARD
+	settrainerflag TRAINER_WAKEWATER_SAMANTHA
+	settrainerflag TRAINER_WAKEWATER_MAURA
 	settrainerflag TRAINER_SYLVIA
 	settrainerflag TRAINER_NATE
 	settrainerflag TRAINER_KATHLEEN

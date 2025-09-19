@@ -577,3 +577,4 @@ gSpecials::
 	def_special SetPalatiGymTorch1
 	def_special SetPalatiGymTorch2
 	def_special SetPalatiGymTorch3
+	def_special LoadWakewaterPlayerMonGfx

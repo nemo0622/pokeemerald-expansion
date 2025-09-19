@@ -1,0 +1,60 @@
+mapscripts WakewaterIsle_PokemonCenter_MapScripts {}
+
+script WakewaterIsle_PokemonCenter_EventScript_PkmnCenterNurse
+{
+    lock
+    faceplayer
+    speakername("Nurse")
+    msgbox(format("Welcome to the Wakewater Isle Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        speakername("Nurse")
+        msgbox(format("We hope to see you again!"))
+        closemessage
+    }
+    else
+    {
+        speakername("Nurse")
+        msgbox(format("Okay, I'll take your Pokémon for a few seconds!"))
+        closemessage
+        ballfollowingmon
+        applymovement(1, Common_Movement_FaceLeft)
+        waitmovement(0)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+	    waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+	    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	    waitmovement(0)
+	    special(HealPlayerParty)
+	    callnative(UpdateFollowingPokemon)
+        speakername("Nurse")
+        msgbox(format("Your Pokémon are happy and healthy! We hope to see you again!"))
+        closemessage
+
+        // SET HEAL LOCATION TO THIS TOWN
+        setrespawn(HEAL_LOCATION_WAKEWATER_ISLE)
+    }
+    release
+    end
+}
+
+script WakewaterIsle_PokemonCenter_EventScript_Hiker
+{
+    lock
+    faceplayer
+    speakername("Hiker")
+    msgbox(format("The journey here is hard for all but the best sailors. Only truly motivated Trainers can visit!"))
+    closemessage
+    release
+    end
+}
+
+script WakewaterIsle_PokemonCenter_EventScript_Youngster
+{
+    lock
+    faceplayer
+    speakername("Youngster")
+    msgbox(format("I finally found a ship headed to Wakewater Isle, but now I'm too scared to compete against other Trainers..."))
+    closemessage
+    release
+    end
+}
