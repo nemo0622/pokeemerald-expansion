@@ -61,7 +61,7 @@ script MyrriniIsland_House3_EventScript_PunkRocker
             msgbox(format("Hey, it's a {COLOR GREEN}Heart Scale{COLOR DARK_GRAY}! My girlfriend will love this!\p Right, I promised you something in return. Here you go!"))
             closemessage
             removeitem(ITEM_HEART_SCALE)
-            giveitem(ITEM_TM_PSYSHOCK)
+            giveitem(ITEM_TM_SLUDGE_BOMB)
             closemessage
 
             delay(20)

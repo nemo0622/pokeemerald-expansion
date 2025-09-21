@@ -301,11 +301,17 @@ MarmaroMines_EventScript_Petros::
 	msgbox MarmaroMines_EventScript_Petros_Text_2
 # 207 "data/maps/MarmaroMines/scripts.pory"
 	closemessage
-# 210 "data/maps/MarmaroMines/scripts.pory"
+# 209 "data/maps/MarmaroMines/scripts.pory"
+	addvar VAR_TIMES_MINED, 1
+# 212 "data/maps/MarmaroMines/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 211 "data/maps/MarmaroMines/scripts.pory"
-	special StartMining
 # 213 "data/maps/MarmaroMines/scripts.pory"
+	special StartMining
+# 215 "data/maps/MarmaroMines/scripts.pory"
+	compare VAR_TIMES_MINED, 10
+	goto_if_ge MarmaroMines_EventScript_Petros_6
+MarmaroMines_EventScript_Petros_1:
+# 226 "data/maps/MarmaroMines/scripts.pory"
 	release
 	end
 
@@ -320,15 +326,37 @@ MarmaroMines_EventScript_Petros_2:
 	release
 	end
 
+MarmaroMines_EventScript_Petros_5:
+# 217 "data/maps/MarmaroMines/scripts.pory"
+	speakername MarmaroMines_EventScript_ChimeraAdminEvent_Text_4
+# 218 "data/maps/MarmaroMines/scripts.pory"
+	msgbox MarmaroMines_EventScript_Petros_Text_3
+# 219 "data/maps/MarmaroMines/scripts.pory"
+	closemessage
+# 220 "data/maps/MarmaroMines/scripts.pory"
+	delay 5
+# 221 "data/maps/MarmaroMines/scripts.pory"
+	givedecoration DECOR_MARBLE_STATUE
+# 222 "data/maps/MarmaroMines/scripts.pory"
+	closemessage
+# 223 "data/maps/MarmaroMines/scripts.pory"
+	setflag FLAG_GOT_MARBLE_STATUE
+	goto MarmaroMines_EventScript_Petros_1
+
+MarmaroMines_EventScript_Petros_6:
+# 215 "data/maps/MarmaroMines/scripts.pory"
+	goto_if_unset FLAG_GOT_MARBLE_STATUE, MarmaroMines_EventScript_Petros_5
+	goto MarmaroMines_EventScript_Petros_1
+
 
 MarmaroMines_EventScript_MinigameRulesSign::
-# 219 "data/maps/MarmaroMines/scripts.pory"
+# 232 "data/maps/MarmaroMines/scripts.pory"
 	lock
-# 220 "data/maps/MarmaroMines/scripts.pory"
+# 233 "data/maps/MarmaroMines/scripts.pory"
 	msgbox MarmaroMines_EventScript_MinigameRulesSign_Text_0
-# 221 "data/maps/MarmaroMines/scripts.pory"
+# 234 "data/maps/MarmaroMines/scripts.pory"
 	closemessage
-# 222 "data/maps/MarmaroMines/scripts.pory"
+# 235 "data/maps/MarmaroMines/scripts.pory"
 	release
 	end
 
@@ -489,8 +517,14 @@ MarmaroMines_EventScript_Petros_Text_2:
 	.string "Great! There's a nice spot just nearby.\n"
 	.string "Follow me!$"
 
+MarmaroMines_EventScript_Petros_Text_3:
+# 218 "data/maps/MarmaroMines/scripts.pory"
+	.string "You've been a big help in our mining\n"
+	.string "operations. I want you to take this\l"
+	.string "Decoration.$"
+
 MarmaroMines_EventScript_MinigameRulesSign_Text_0:
-# 220 "data/maps/MarmaroMines/scripts.pory"
+# 233 "data/maps/MarmaroMines/scripts.pory"
 	.string "Marmaro Mining Expedition Rules\p"
 	.string "Use the Hammer and Pick tools to break\n"
 	.string "through the layers of stone. A wide\l"

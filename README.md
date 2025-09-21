@@ -69,21 +69,13 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- Add event allowing player to Call Legendary Dogs to Sofos Acropolis Temple
-    - Choose between Raikou, Suicune, and Entei, which resets after every Elite Four run (enabling multiple encounters for living dex purposes)
-    - ALSO, allow Kyogre and Groudon to be re-encountered after every Elite Four run
-
-- POST GAME - "Champion Title Defense"
-    - Dozens of Trainers, all with large Party Pools
-    - Every Trainer has multiple possible Aces, giving ways to show off all Mega Evolutions (ex: a Trainer's ace could be chosen from Hawlucha, Cyclizar S, and Heracross at random)
-    - Remember that Piraeus's Vaporeon is nicknamed "Nymeria"!
+- Make sure all Decorations can be obtained
+- After this, UPDATE PHONE BUILD AND PLAY!
 
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
-    - New areas:
-        - ADD MORE WATERFALL AREAS TO GAME - mostly with rare items like EXP Candies or Big Nuggets, to give the HM Waterfall more than one or two uses skull emoji
-            - Ex: add Waterfalls to Erinys Path, Asfal Hills, Nyx Trails, and Péntepetal City
-- Give all Pokémon unique Pokédex entries
+- Give more Pokémon unique Pokédex entries
+    - Just go to random points in the dex and go!
 - Implement Chris Piché's Game Corner Expansion minigames
     - https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches#Expansion-Compatible_Game_Corner_Expansion
     - Blackjack, Ponyta Racing, and Voltorb Flip are the big ones I care about

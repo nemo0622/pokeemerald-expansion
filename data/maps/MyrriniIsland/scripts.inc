@@ -1213,6 +1213,42 @@ MyrriniIsland_Movement_RaniaLeaves:
 # 712 "data/maps/MyrriniIsland/scripts.pory"
 	step_end
 
+MyrriniIsland_EventScript_WomanGivesEggDoll::
+# 717 "data/maps/MyrriniIsland/scripts.pory"
+	lock
+# 718 "data/maps/MyrriniIsland/scripts.pory"
+	faceplayer
+# 719 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_WomanGivesEggDoll_Text_0
+# 720 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_WomanGivesEggDoll_Text_1
+# 721 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 722 "data/maps/MyrriniIsland/scripts.pory"
+	goto_if_unset FLAG_GOT_EGG_DOLL, MyrriniIsland_EventScript_WomanGivesEggDoll_2
+MyrriniIsland_EventScript_WomanGivesEggDoll_1:
+# 732 "data/maps/MyrriniIsland/scripts.pory"
+	release
+	end
+
+MyrriniIsland_EventScript_WomanGivesEggDoll_2:
+# 724 "data/maps/MyrriniIsland/scripts.pory"
+	speakername MyrriniIsland_EventScript_WomanGivesEggDoll_Text_0
+# 725 "data/maps/MyrriniIsland/scripts.pory"
+	msgbox MyrriniIsland_EventScript_WomanGivesEggDoll_Text_2
+# 726 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 727 "data/maps/MyrriniIsland/scripts.pory"
+	delay 5
+# 728 "data/maps/MyrriniIsland/scripts.pory"
+	givedecoration DECOR_EGG_DOLL
+# 729 "data/maps/MyrriniIsland/scripts.pory"
+	closemessage
+# 730 "data/maps/MyrriniIsland/scripts.pory"
+	setflag FLAG_GOT_EGG_DOLL
+	goto MyrriniIsland_EventScript_WomanGivesEggDoll_1
+
+
 MyrriniIsland_EventScript_DirectionSign_Text_0:
 # 53 "data/maps/MyrriniIsland/scripts.pory"
 	.string "Myrrini Island\n"
@@ -1725,3 +1761,20 @@ MyrriniIsland_EventScript_ChimeraEvent_Text_23:
 	.string "to {COLOR GREEN}Péntepetal City{COLOR DARK_GRAY} for a rest. If you\l"
 	.string "want to join later, just {COLOR GREEN}ask Piraeus to\l"
 	.string "bring you{COLOR DARK_GRAY}. See you soon!$"
+
+MyrriniIsland_EventScript_WomanGivesEggDoll_Text_0:
+# 719 "data/maps/MyrriniIsland/scripts.pory"
+	.string "Woman$"
+
+MyrriniIsland_EventScript_WomanGivesEggDoll_Text_1:
+# 720 "data/maps/MyrriniIsland/scripts.pory"
+	.string "People sometimes leave the Eggs their\n"
+	.string "Pokémon lay here. I take those Eggs and\l"
+	.string "care for them... I don't know how anyone\l"
+	.string "could be so heartless!$"
+
+MyrriniIsland_EventScript_WomanGivesEggDoll_Text_2:
+# 725 "data/maps/MyrriniIsland/scripts.pory"
+	.string "While I'm here, I like to crochet\n"
+	.string "Pokémon dolls. Here's one I made to look\l"
+	.string "like an Egg!$"

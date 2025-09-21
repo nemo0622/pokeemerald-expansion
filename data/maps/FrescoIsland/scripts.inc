@@ -1082,6 +1082,69 @@ FrescoIsles_EventScript_ManBlockingGym::
 	end
 
 
+FrescoIsles_EventScript_ManMakingDolls::
+# 703 "data/maps/FrescoIsland/scripts.pory"
+	lock
+# 704 "data/maps/FrescoIsland/scripts.pory"
+	faceplayer
+# 705 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_ManMakingDolls_Text_0
+# 706 "data/maps/FrescoIsland/scripts.pory"
+	message FrescoIsles_EventScript_ManMakingDolls_Text_1
+# 707 "data/maps/FrescoIsland/scripts.pory"
+	waitmessage
+# 708 "data/maps/FrescoIsland/scripts.pory"
+	pokemartdecoration FrescoIsles_DecorShop
+# 709 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 710 "data/maps/FrescoIsland/scripts.pory"
+	delay 1
+# 711 "data/maps/FrescoIsland/scripts.pory"
+	speakername FrescoIsles_EventScript_ManMakingDolls_Text_0
+# 712 "data/maps/FrescoIsland/scripts.pory"
+	msgbox gText_PleaseComeAgain
+# 713 "data/maps/FrescoIsland/scripts.pory"
+	release
+	end
+
+
+# 717 "data/maps/FrescoIsland/scripts.pory"
+
+# 718 "data/maps/FrescoIsland/scripts.pory"
+    .align 2
+# 719 "data/maps/FrescoIsland/scripts.pory"
+FrescoIsles_DecorShop:
+# 720 "data/maps/FrescoIsland/scripts.pory"
+    .2byte DECOR_CYNDAQUIL_DOLL
+# 721 "data/maps/FrescoIsland/scripts.pory"
+    .2byte DECOR_CHIKORITA_DOLL
+# 722 "data/maps/FrescoIsland/scripts.pory"
+    .2byte DECOR_TOTODILE_DOLL
+# 723 "data/maps/FrescoIsland/scripts.pory"
+    .2byte DECOR_CHESPIN_DOLL
+# 724 "data/maps/FrescoIsland/scripts.pory"
+    .2byte DECOR_FENNEKIN_DOLL
+# 725 "data/maps/FrescoIsland/scripts.pory"
+    .2byte DECOR_FROAKIE_DOLL
+# 726 "data/maps/FrescoIsland/scripts.pory"
+	.2byte DECOR_NONE
+# 727 "data/maps/FrescoIsland/scripts.pory"
+	release
+# 728 "data/maps/FrescoIsland/scripts.pory"
+	end
+
+FrescoIsles_EventScript_FennekinDoll::
+# 733 "data/maps/FrescoIsland/scripts.pory"
+	lock
+# 734 "data/maps/FrescoIsland/scripts.pory"
+	msgbox FrescoIsles_EventScript_FennekinDoll_Text_0
+# 735 "data/maps/FrescoIsland/scripts.pory"
+	closemessage
+# 736 "data/maps/FrescoIsland/scripts.pory"
+	release
+	end
+
+
 FrescoIsles_EventScript_DirectionSign_Text_0:
 # 33 "data/maps/FrescoIsland/scripts.pory"
 	.string "The Fresco Isles\n"
@@ -1550,3 +1613,17 @@ FrescoIsles_EventScript_ManBlockingGym_Text_1:
 	.string "saw them, Thalia was skipping off to the\l"
 	.string "{COLOR GREEN}Theatre{COLOR DARK_GRAY}, and Melpomene was racing\l"
 	.string "after her.$"
+
+FrescoIsles_EventScript_ManMakingDolls_Text_0:
+# 705 "data/maps/FrescoIsland/scripts.pory"
+	.string "Doll-Maker$"
+
+FrescoIsles_EventScript_ManMakingDolls_Text_1:
+# 706 "data/maps/FrescoIsland/scripts.pory"
+	.string "Hiya! I make rare Pokémon Dolls. How can\n"
+	.string "I help you?$"
+
+FrescoIsles_EventScript_FennekinDoll_Text_0:
+# 734 "data/maps/FrescoIsland/scripts.pory"
+	.string "It's a cute Fennekin Doll! It looks to\n"
+	.string "be custom-made.$"

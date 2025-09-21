@@ -307,6 +307,18 @@ script SofosCity_Acropolis_EventScript_TogaGirl
     speakername("Toga Woman")
     msgbox(format("Welcome. We hope you enjoy the Sofos City Acropolis Temple. Please be respectful of the fragile statues and other visitors, and enjoy your time here!"))
     closemessage
+    if(!flag(FLAG_GOT_LEGENDARY_DOG_DECOR) && flag(FLAG_DEFEATED_TEAM_CHIMERA_IN_AREIOS))
+    {
+        speakername("Toga Woman")
+        msgbox(format("Oh? You're the Trainer who defeated Team Chimera! Please, take these decorations."))
+        closemessage
+        delay(5)
+        givedecoration(DECOR_RAIKOU_DOLL)
+        givedecoration(DECOR_ENTEI_DOLL)
+        givedecoration(DECOR_SUICUNE_DOLL)
+        setflag(FLAG_GOT_LEGENDARY_DOG_DECOR)
+        closemessage
+    }
     release
     end
 }

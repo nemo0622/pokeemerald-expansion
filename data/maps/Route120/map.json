@@ -309,7 +309,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_FULL_HEAL",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ASTERI_SEA_STAR_PIECE"
+      "flag": "FLAG_ITEM_ASTERI_SEA_TM_LIGHT_SCREEN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",

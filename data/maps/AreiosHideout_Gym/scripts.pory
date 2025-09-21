@@ -249,6 +249,13 @@ script AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript
     closemessage
     // Give TM reward
     giveitem(ITEM_TM_DRAGON_CLAW)
+    closemessage
+    delay(5)
+    msgbox(format("Kalliope also seems to have left the {COLOR GREEN}Ancient Mechanism{COLOR DARK_GRAY} in the stone piles. Maybe it could decorate the Cabin on Piraeus' ship?"))
+    closemessage
+    delay(5)
+    givedecoration(DECOR_ANCIENT_MECHANISM)
+    closemessage
 
     // complete gym quest and begin next one
     delay(20)

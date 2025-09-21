@@ -697,3 +697,42 @@ script FrescoIsles_EventScript_ManBlockingGym
     release
     end
 }
+
+script FrescoIsles_EventScript_ManMakingDolls
+{
+    lock
+    faceplayer
+    speakername("Doll-Maker")
+    message(format("Hiya! I make rare Pokémon Dolls. How can I help you?"))
+    waitmessage
+    pokemartdecoration(FrescoIsles_DecorShop)
+    closemessage
+    delay(1)
+    speakername("Doll-Maker")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+raw `
+    .align 2
+FrescoIsles_DecorShop:
+    .2byte DECOR_CYNDAQUIL_DOLL
+    .2byte DECOR_CHIKORITA_DOLL
+    .2byte DECOR_TOTODILE_DOLL
+    .2byte DECOR_CHESPIN_DOLL
+    .2byte DECOR_FENNEKIN_DOLL
+    .2byte DECOR_FROAKIE_DOLL
+	.2byte DECOR_NONE
+	release
+	end
+`
+
+script FrescoIsles_EventScript_FennekinDoll
+{
+    lock
+    msgbox(format("It's a cute Fennekin Doll! It looks to be custom-made."))
+    closemessage
+    release
+    end
+}

@@ -57,15 +57,23 @@ PalatiCity_ArchInstitute_EventScript_Maniac::
 # 62 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	delay 5
 # 63 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	giveitem ITEM_FIRE_STONE
+	givedecoration DECOR_MINOTAUROS_PLAQUE
 # 64 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	closemessage
 # 65 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	delay 20
+	delay 5
 # 66 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	speakername PalatiCity_ArchInstitute_EventScript_Maniac_Text_0
+# 67 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	msgbox PalatiCity_ArchInstitute_EventScript_Maniac_Text_6
+# 68 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	closemessage
+# 69 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	delay 20
+# 70 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	completequest QUEST_BLUE_SHARD_FOR_ARCHAEOLOGY
 PalatiCity_ArchInstitute_EventScript_Maniac_4:
-# 69 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 73 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	release
 	end
 
@@ -108,125 +116,125 @@ PalatiCity_ArchInstitute_EventScript_Maniac_8:
 
 
 PalatiCity_ArchInstitute_EventScript_Beauty::
-# 75 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	lock
-# 76 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	faceplayer
-# 77 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	speakername PalatiCity_ArchInstitute_EventScript_Beauty_Text_0
-# 78 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	msgbox PalatiCity_ArchInstitute_EventScript_Beauty_Text_1
 # 79 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	closemessage
+	lock
 # 80 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	faceplayer
+# 81 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	speakername PalatiCity_ArchInstitute_EventScript_Beauty_Text_0
+# 82 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	msgbox PalatiCity_ArchInstitute_EventScript_Beauty_Text_1
+# 83 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	closemessage
+# 84 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	release
 	end
 
 
 PalatiCity_ArchInstitute_EventScript_Camper::
-# 86 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	lock
-# 87 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	speakername PalatiCity_ArchInstitute_EventScript_Camper_Text_0
-# 88 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	msgbox PalatiCity_ArchInstitute_EventScript_Camper_Text_1
-# 89 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	closemessage
 # 90 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	applymovement 4, Common_Movement_FaceRight
+	lock
 # 91 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	waitmovement 0
+	speakername PalatiCity_ArchInstitute_EventScript_Camper_Text_0
 # 92 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	speakername PalatiCity_ArchInstitute_EventScript_Camper_Text_0
+	msgbox PalatiCity_ArchInstitute_EventScript_Camper_Text_1
 # 93 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	msgbox PalatiCity_ArchInstitute_EventScript_Camper_Text_2
+	closemessage
 # 94 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	closemessage
+	applymovement 4, Common_Movement_FaceRight
 # 95 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	delay 20
+	waitmovement 0
 # 96 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	emote 4, EMOTE_EXCLAM
-# 97 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	applymovement 4, Common_Movement_FacePlayer
-# 98 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	waitmovement 0
-# 99 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	speakername PalatiCity_ArchInstitute_EventScript_Camper_Text_0
-# 100 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	msgbox PalatiCity_ArchInstitute_EventScript_Camper_Text_3
-# 101 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 97 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	msgbox PalatiCity_ArchInstitute_EventScript_Camper_Text_2
+# 98 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	closemessage
+# 99 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	delay 20
+# 100 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	emote 4, EMOTE_EXCLAM
+# 101 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	applymovement 4, Common_Movement_FacePlayer
 # 102 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	applymovement 4, Common_Movement_FaceUp
-# 103 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	waitmovement 0
+# 103 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	speakername PalatiCity_ArchInstitute_EventScript_Camper_Text_0
 # 104 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	msgbox PalatiCity_ArchInstitute_EventScript_Camper_Text_3
+# 105 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	closemessage
+# 106 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	applymovement 4, Common_Movement_FaceUp
+# 107 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	waitmovement 0
+# 108 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	release
 	end
 
 
 PalatiCity_ArchInstitute_EventScript_Picnicker::
-# 110 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	lock
-# 111 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	speakername PalatiCity_ArchInstitute_EventScript_Picnicker_Text_0
-# 112 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	msgbox PalatiCity_ArchInstitute_EventScript_Picnicker_Text_1
-# 113 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	closemessage
 # 114 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	lock
+# 115 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	speakername PalatiCity_ArchInstitute_EventScript_Picnicker_Text_0
+# 116 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	msgbox PalatiCity_ArchInstitute_EventScript_Picnicker_Text_1
+# 117 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	closemessage
+# 118 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	release
 	end
 
 
 PalatiCity_ArchInstitute_EventScript_Lass::
-# 120 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	lock
-# 121 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	faceplayer
-# 122 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	speakername PalatiCity_ArchInstitute_EventScript_Lass_Text_0
-# 123 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	msgbox PalatiCity_ArchInstitute_EventScript_Lass_Text_1
 # 124 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	closemessage
+	lock
 # 125 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	faceplayer
+# 126 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	speakername PalatiCity_ArchInstitute_EventScript_Lass_Text_0
+# 127 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	msgbox PalatiCity_ArchInstitute_EventScript_Lass_Text_1
+# 128 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	closemessage
+# 129 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	release
 	end
 
 
 PalatiCity_ArchInstitute_EventScript_Scientist::
-# 131 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	lock
-# 132 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	faceplayer
-# 133 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	speakername PalatiCity_ArchInstitute_EventScript_Scientist_Text_0
-# 134 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	msgbox PalatiCity_ArchInstitute_EventScript_Scientist_Text_1
 # 135 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	closemessage
+	lock
 # 136 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	faceplayer
+# 137 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	speakername PalatiCity_ArchInstitute_EventScript_Scientist_Text_0
+# 138 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	msgbox PalatiCity_ArchInstitute_EventScript_Scientist_Text_1
+# 139 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	closemessage
+# 140 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	release
 	end
 
 
 PalatiCity_ArchInstitute_EventScript_Baltoy::
-# 142 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	lock
-# 143 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	faceplayer
-# 144 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	speakername PalatiCity_ArchInstitute_EventScript_Baltoy_Text_0
-# 145 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	playmoncry SPECIES_BALTOY, CRY_MODE_NORMAL
 # 146 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	msgbox PalatiCity_ArchInstitute_EventScript_Baltoy_Text_1
+	lock
 # 147 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	waitmoncry
+	faceplayer
 # 148 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
-	closemessage
+	speakername PalatiCity_ArchInstitute_EventScript_Baltoy_Text_0
 # 149 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	playmoncry SPECIES_BALTOY, CRY_MODE_NORMAL
+# 150 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	msgbox PalatiCity_ArchInstitute_EventScript_Baltoy_Text_1
+# 151 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	waitmoncry
+# 152 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	closemessage
+# 153 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	release
 	end
 
@@ -289,12 +297,18 @@ PalatiCity_ArchInstitute_EventScript_Maniac_Text_5:
 	.string "take this - I found it while digging for\l"
 	.string "pottery pieces.$"
 
+PalatiCity_ArchInstitute_EventScript_Maniac_Text_6:
+# 67 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+	.string "That Decoration was likely connected\n"
+	.string "to ancient Palati culture. Hang it up\l"
+	.string "somewhere nice!$"
+
 PalatiCity_ArchInstitute_EventScript_Beauty_Text_0:
-# 77 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 81 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "Beauty$"
 
 PalatiCity_ArchInstitute_EventScript_Beauty_Text_1:
-# 78 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 82 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "The Archaeological Institute of Palati\n"
 	.string "City could use more space and more\l"
 	.string "exhibits. Unfortunately, when funding\l"
@@ -303,56 +317,56 @@ PalatiCity_ArchInstitute_EventScript_Beauty_Text_1:
 	.string "have!$"
 
 PalatiCity_ArchInstitute_EventScript_Camper_Text_0:
-# 87 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 91 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "Camper$"
 
 PalatiCity_ArchInstitute_EventScript_Camper_Text_1:
-# 88 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 92 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "Check out those two old pieces of art...\n"
 	.string "They're sitting so close together...$"
 
 PalatiCity_ArchInstitute_EventScript_Camper_Text_2:
-# 93 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 97 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "That's us if we were old pottery, babe.$"
 
 PalatiCity_ArchInstitute_EventScript_Camper_Text_3:
-# 100 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 104 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "H-hey! I'm trying to be emotional here!$"
 
 PalatiCity_ArchInstitute_EventScript_Picnicker_Text_0:
-# 111 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 115 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "Picnicker$"
 
 PalatiCity_ArchInstitute_EventScript_Picnicker_Text_1:
-# 112 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 116 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "Uh oh, here goes my boyfriend, with his\n"
 	.string "crummy pick-up lines...$"
 
 PalatiCity_ArchInstitute_EventScript_Lass_Text_0:
-# 122 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 126 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "Lass$"
 
 PalatiCity_ArchInstitute_EventScript_Lass_Text_1:
-# 123 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 127 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "I'm working on my thesis paper about\n"
 	.string "the history of Ilios. It seems like the\l"
 	.string "people of Kaptara Island were some of\l"
 	.string "the first to develop complex societies.$"
 
 PalatiCity_ArchInstitute_EventScript_Scientist_Text_0:
-# 133 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 137 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "Scientist$"
 
 PalatiCity_ArchInstitute_EventScript_Scientist_Text_1:
-# 134 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 138 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "Check it out! The digital archives show\n"
 	.string "that there were Baltoy in ancient Ilios,\l"
 	.string "just like mine!$"
 
 PalatiCity_ArchInstitute_EventScript_Baltoy_Text_0:
-# 144 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 148 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "Baltoy$"
 
 PalatiCity_ArchInstitute_EventScript_Baltoy_Text_1:
-# 146 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
+# 150 "data/maps/PalatiCity_ArchaeologyInstitute/scripts.pory"
 	.string "Pewewew!$"

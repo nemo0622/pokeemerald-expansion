@@ -21596,8 +21596,11 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8870
+            .nickname = COMPOUND_STRING("Nymeria"),
+#line 8870
             .species = SPECIES_VAPOREON,
-            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 8870
+            .gender = TRAINER_MON_FEMALE,
 #line 8870
             .heldItem = ITEM_LEFTOVERS,
 #line 8872

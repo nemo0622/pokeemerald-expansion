@@ -126,6 +126,17 @@ script MarmaroIsland_EventScript_BlackBelt
     speakername("Black Belt")
     msgbox(format("I'm training my Pokémon to protect everyone. {COLOR GREEN}Areios Town{COLOR DARK_GRAY}, a little hamlet on the southwest mainland, was taken over by Team Chimera. Their Gym Leader was supposed to be the strongest in the region, but she's gone missing."))
     closemessage
+    if(!flag(FLAG_RECEIVED_TM_BRICK_BREAK))
+    {
+        delay(5)
+        speakername("Black Belt")
+        msgbox(format("You seem like a strong young Trainer. Take this, and use it to defend others!"))
+        closemessage
+        delay(5)
+        setflag(FLAG_RECEIVED_TM_BRICK_BREAK)
+        giveitem(ITEM_TM_BRICK_BREAK)
+        closemessage
+    }
     release
     end
 }

@@ -128,7 +128,7 @@ BattleFrontier_ScottsHouse_EventScript_CheckGiveGoldShield::
 
 BattleFrontier_ScottsHouse_EventScript_GiveGoldShield::
 	msgbox BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow, MSGBOX_DEFAULT
-	givedecoration DECOR_SHOCKING_RELIC
+	givedecoration DECOR_ANCIENT_MECHANISM
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_NoRoomForShield
 	setflag FLAG_RECEIVED_GOLD_SHIELD
 	setflag FLAG_TEMP_3

@@ -53,3 +53,23 @@ text VulcaiSea_Underwater_Text_Trainer_Underwater_ArikDefeat
 {
     format("Hey, the treasure is mine!")
 }
+
+script VulcaiSea_Underwater_EventScript_DiverWithDoll
+{
+    lock
+    faceplayer
+    speakername("Diver")
+    msgbox(format("I've found some cool things in the wreckage down here. There's a long history of sailing in Ilios, and with that comes sunken treasure!"))
+    closemessage
+    if(!flag(FLAG_GOT_DRAGONITE_DOLL))
+    {
+        speakername("Diver")
+        msgbox(format("Actually, I've found a few of these in sealed crates down here. Why don't you take one?"))
+        closemessage
+        delay(5)
+        givedecoration(DECOR_DRAGONITE_DOLL)
+        closemessage
+    }
+    release
+    end
+}

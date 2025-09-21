@@ -244,30 +244,109 @@ RuinsOfAhiyawa_Lobby_Shop:
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_NONE
 
-RuinsOfAhiyawa_Lobby_EnterEliteFourTrigger::
+RuinsOfAhiyawa_Lobby_EventScript_EvolutionMartEmployee::
 # 160 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
 	lock
 # 161 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
-	msgbox RuinsOfAhiyawa_Lobby_EnterEliteFourTrigger_Text_0, MSGBOX_YESNO
+	faceplayer
 # 162 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
-	closemessage
+	speakername RuinsOfAhiyawa_Lobby_EventScript_MartEmployee_Text_0
 # 163 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	message gText_HowMayIServeYou
+# 164 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	waitmessage
+# 165 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	pokemart RuinsOfAhiyawa_Lobby_EvolutionShop
+# 166 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	closemessage
+# 167 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	delay 1
+# 168 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	speakername RuinsOfAhiyawa_Lobby_EventScript_MartEmployee_Text_0
+# 169 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	msgbox gText_PleaseComeAgain
+# 170 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	release
+	end
+
+
+	.align 2
+# 175 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+RuinsOfAhiyawa_Lobby_EvolutionShop:
+# 177 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_THUNDER_STONE
+# 178 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_FIRE_STONE
+# 179 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_WATER_STONE
+# 180 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_SUN_STONE
+# 181 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_MOON_STONE
+# 182 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_LEAF_STONE
+# 183 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_ICE_STONE
+# 184 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_SHINY_STONE
+# 185 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_DUSK_STONE
+# 186 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_DAWN_STONE
+# 187 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_KINGS_ROCK
+# 188 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_LINKING_CORD
+# 189 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_METAL_COAT
+# 190 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_RAZOR_FANG
+# 191 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_RAZOR_CLAW
+# 192 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_BLACK_AUGURITE
+# 193 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_REAPER_CLOTH
+# 194 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_TART_APPLE
+# 195 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_SWEET_APPLE
+# 196 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_SYRUPY_APPLE
+# 197 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_AUSPICIOUS_ARMOR
+# 198 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_MALICIOUS_ARMOR
+# 199 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_DEEP_SEA_SCALE
+# 200 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	.2byte ITEM_DEEP_SEA_TOOTH
+	.2byte ITEM_NONE
+
+RuinsOfAhiyawa_Lobby_EnterEliteFourTrigger::
+# 205 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	lock
+# 206 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	msgbox RuinsOfAhiyawa_Lobby_EnterEliteFourTrigger_Text_0, MSGBOX_YESNO
+# 207 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+	closemessage
+# 208 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq RuinsOfAhiyawa_Lobby_EnterEliteFourTrigger_2
-# 172 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+# 217 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
 	warpcontinuescript MAP_RUINS_OF_AHIYAWA_E4_ROOM1, 4, 9, RuinsOfAhiyawa_EliteFour_EnterPolymniaRoomScript
-# 173 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+# 218 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
 	waitstate
-# 175 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+# 220 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
 	release
 	end
 
 RuinsOfAhiyawa_Lobby_EnterEliteFourTrigger_2:
-# 165 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+# 210 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
-# 166 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+# 211 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
 	waitmovement 0
-# 167 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+# 212 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
 	release
 	end
 
@@ -373,7 +452,7 @@ RuinsOfAhiyawa_Lobby_EventScript_MartEmployee_Text_0:
 	.string "Mart Employee$"
 
 RuinsOfAhiyawa_Lobby_EnterEliteFourTrigger_Text_0:
-# 161 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
+# 206 "data/maps/RuinsOfAhiyawa_Lobby/scripts.pory"
 	.string "Beyond this doorway lies the {COLOR GREEN}Elite Four{COLOR DARK_GRAY},\n"
 	.string "the greatest challenge for Trainers in\l"
 	.string "the Ilios Region.\p"

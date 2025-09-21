@@ -2202,7 +2202,7 @@ u8 AddDecorationIconObject(u8 decor, s16 x, s16 y, u8 priority, u16 tilesTag, u1
             return MAX_SPRITES;
 
         gSprites[spriteId].x2 = x;
-        if (decor == DECOR_POTTED_BERRY || decor == DECOR_SHOCKING_RELIC)
+        if (decor == DECOR_POTTED_BERRY || decor == DECOR_ANCIENT_MECHANISM)
             gSprites[spriteId].y2 = y - 4;
         else
             gSprites[spriteId].y2 = y;

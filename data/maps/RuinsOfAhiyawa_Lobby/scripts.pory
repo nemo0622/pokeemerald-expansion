@@ -155,6 +155,51 @@ mart RuinsOfAhiyawa_Lobby_Shop
     ITEM_MAX_REPEL
 }
 
+script RuinsOfAhiyawa_Lobby_EventScript_EvolutionMartEmployee
+{
+    lock
+    faceplayer
+    speakername("Mart Employee")
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(RuinsOfAhiyawa_Lobby_EvolutionShop)
+    closemessage
+    delay(1)
+    speakername("Mart Employee")
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+
+}
+
+mart RuinsOfAhiyawa_Lobby_EvolutionShop
+{
+    ITEM_THUNDER_STONE
+    ITEM_FIRE_STONE
+    ITEM_WATER_STONE
+    ITEM_SUN_STONE
+    ITEM_MOON_STONE
+    ITEM_LEAF_STONE
+    ITEM_ICE_STONE
+    ITEM_SHINY_STONE
+    ITEM_DUSK_STONE
+    ITEM_DAWN_STONE
+    ITEM_KINGS_ROCK
+    ITEM_LINKING_CORD
+    ITEM_METAL_COAT
+    ITEM_RAZOR_FANG
+    ITEM_RAZOR_CLAW
+    ITEM_BLACK_AUGURITE
+    ITEM_REAPER_CLOTH
+    ITEM_TART_APPLE
+    ITEM_SWEET_APPLE
+    ITEM_SYRUPY_APPLE
+    ITEM_AUSPICIOUS_ARMOR
+    ITEM_MALICIOUS_ARMOR
+    ITEM_DEEP_SEA_SCALE
+    ITEM_DEEP_SEA_TOOTH
+}
+
 script RuinsOfAhiyawa_Lobby_EnterEliteFourTrigger
 {
     lock

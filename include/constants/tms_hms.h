@@ -59,7 +59,9 @@
     F(SNARL) \
     F(SCALD) \
     F(ROOST) \
-    F(THUNDER_WAVE)
+    F(THUNDER_WAVE) \
+    F(DARK_PULSE) \
+    F(DRAGON_DANCE)
 
 #define FOREACH_HM(F) \
     F(CUT) \

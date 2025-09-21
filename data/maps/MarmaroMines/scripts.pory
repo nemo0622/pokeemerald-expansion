@@ -206,9 +206,22 @@ script MarmaroMines_EventScript_Petros
         msgbox(format("Great! There's a nice spot just nearby. Follow me!"))
         closemessage
 
+        addvar(VAR_TIMES_MINED, 1)
+
         // START MINING MINIGAME!
         fadescreen(FADE_TO_BLACK)
         special(StartMining)
+
+        if(var(VAR_TIMES_MINED) >= 10 && !flag(FLAG_GOT_MARBLE_STATUE))
+        {
+            speakername("Petros")
+            msgbox(format("You've been a big help in our mining operations. I want you to take this Decoration."))
+            closemessage
+            delay(5)
+            givedecoration(DECOR_MARBLE_STATUE)
+            closemessage
+            setflag(FLAG_GOT_MARBLE_STATUE)
+        }
     }
     release
     end

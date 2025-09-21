@@ -230,7 +230,7 @@
 #define FLAG_ENCOUNTERED_LATIAS_OR_LATIOS    0xCE
 #define FLAG_MET_ARCHIE_METEOR_FALLS         0xCF
 #define FLAG_GOT_BASEMENT_KEY_FROM_WATTSON   0xD0
-#define FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON 0xD1
+#define FLAG_GOT_TM_THUNDERBOLT              0xD1
 #define FLAG_FAN_CLUB_STRENGTH_SHARED        0xD2 // Set when you rate the strength of another trainer in Lilycove's Trainer Fan Club.
 #define FLAG_DEFEATED_RIVAL_RUSTBORO         0xD3
 #define FLAG_RECEIVED_RED_OR_BLUE_ORB        0xD4
@@ -1056,7 +1056,7 @@
 #define FLAG_ITEM_ACRISIA_MOUNTAINS_GREAT_BALL                      0x3EC
 #define FLAG_ITEM_RIVERWALK_WEST_GREAT_BALL                         0x3ED
 #define FLAG_ITEM_RIVERWALK_WEST_SUPER_POTION                       0x3EE
-#define FLAG_ITEM_RIVERWALK_WEST_MAX_REVIVE                         0x3EF
+#define FLAG_ITEM_RIVERWALK_WEST_TM_AERIAL_ACE                      0x3EF
 #define FLAG_ITEM_RIVERWALK_SOUTH_WATER_STONE                       0x3F0
 #define FLAG_ITEM_PYTHIOS_CEMETERY_DUSK_BALL                        0x3F1
 #define FLAG_ITEM_PYTHIOS_CEMETERY_MAX_REVIVE                       0x3F2
@@ -1066,7 +1066,7 @@
 #define FLAG_ITEM_ERINYS_PATH_RARE_CANDY                            0x3F6
 #define FLAG_ITEM_ERINYS_PATH_FULL_HEAL                             0x3F7
 #define FLAG_ITEM_FROSLASS_CAVERN_DUSK_BALL                         0x3F8
-#define FLAG_ITEM_FROSLASS_CAVERN_PEARL                             0x3F9
+#define FLAG_ITEM_FROSLASS_CAVERN_TM_ICE_BEAM                       0x3F9
 #define FLAG_ITEM_FROSLASS_CAVERN_NEVER_MELT_ICE                    0x3FA
 #define FLAG_ITEM_FROSLASS_CAVERN_MOON_STONE                        0x3FB
 #define FLAG_ITEM_FROSLASS_CAVERN_TM_THIEF                          0x3FC
@@ -1080,7 +1080,7 @@
 #define FLAG_ITEM_ASTERI_SEA_CALCIUM                                0x404
 #define FLAG_ITEM_ASTERI_SEA_ZINC                                   0x405
 #define FLAG_ITEM_ASTERI_SEA_KINGS_ROCK                             0x406
-#define FLAG_ITEM_ASTERI_SEA_STAR_PIECE                             0x407
+#define FLAG_ITEM_ASTERI_SEA_TM_LIGHT_SCREEN                        0x407
 #define FLAG_ITEM_MARMARO_REVIVE                                    0x408
 #define FLAG_ITEM_MARMARO_EXP_CANDY_M                               0x409
 #define FLAG_ITEM_MARMARO_PEARL                                     0x40A
@@ -1100,7 +1100,7 @@
 #define FLAG_ITEM_WANDERERS_WOODS_PROTEIN                           0x418
 #define FLAG_ITEM_WANDERERS_WOODS_TM_HEX                            0x419
 #define FLAG_ITEM_ACRISIA_MOUNTAINS_SHINY_STONE                     0x41A
-#define FLAG_ITEM_VULCAI_SEA_DIVE_BALL                              0x41B
+#define FLAG_ITEM_VULCAI_SEA_TM_REFLECT                              0x41B
 #define FLAG_ITEM_VULCAI_SEA_PEARL                                  0x41C
 #define FLAG_ITEM_VULCAI_SEA_HYPER_POTION                           0x41D
 #define FLAG_ITEM_VULCAI_SEA_FIRE_STONE                             0x41E
@@ -1118,21 +1118,21 @@
 #define FLAG_ITEM_NYX_TRAILS_MAX_REVIVE                             0x42A
 #define FLAG_ITEM_NYX_TRAILS_RAZOR_CLAW                             0x42B
 #define FLAG_ITEM_NYX_TRAILS_LEAF_STONE                             0x42C
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL                    0x42D
-#define FLAG_ITEM_JAGGED_PASS_BURN_HEAL                             0x42E
-#define FLAG_ITEM_AQUA_HIDEOUT_B1F_MAX_ELIXIR                       0x42F
-#define FLAG_ITEM_AQUA_HIDEOUT_B2F_NEST_BALL                        0x430
-#define FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION                       0x431
-#define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_SKILL_SWAP                    0x432
-#define FLAG_ITEM_NEW_MAUVILLE_ULTRA_BALL                           0x433
-#define FLAG_ITEM_NEW_MAUVILLE_ESCAPE_ROPE                          0x434
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_6_LUXURY_BALL    0x435
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_2_SCANNER        0x436
-#define FLAG_ITEM_SCORCHED_SLAB_TM_SUNNY_DAY                        0x437
-#define FLAG_ITEM_METEOR_FALLS_B1F_2R_TM_DRAGON_CLAW                0x438
-#define FLAG_ITEM_SHOAL_CAVE_ENTRANCE_BIG_PEARL                     0x439
-#define FLAG_ITEM_SHOAL_CAVE_INNER_ROOM_RARE_CANDY                  0x43A
-#define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_ICE_HEAL                   0x43B
+#define FLAG_ITEM_ERINYS_PATH_TM_SNARL                              0x42D
+#define FLAG_ITEM_NYX_PASS_TM_DARK_PULSE                            0x42E
+#define FLAG_ITEM_PENTEPETAL_TM_DRAGON_DANCE                        0x42F
+#define FLAG_ITEM_ERINYS_PATH_TM_BULK_UP                            0x430
+#define FLAG_ITEM_ASFAL_HILLS_TM_TAUNT                              0x431
+#define FLAG_ITEM_AREIOS_HIDEOUT_TM_BLIZZARD                        0x432
+#define FLAG_ITEM_ASTERI_SEA_TM_GIGA_DRAIN                          0x433
+#define FLAG_ITEM_MYRRINI_ISLAND_TM_PROTECT                         0x434
+#define FLAG_ITEM_DIOXIPPUS_TM_THUNDER                              0x435
+#define FLAG_ITEM_FRESCO_ISLES_TM_PSYCHIC                           0x436
+#define FLAG_ITEM_BRONZEPASS_TM_DOUBLE_TEAM                         0x437
+#define FLAG_ITEM_MYRRINI_ISLAND_PSYSHOCK                           0x438
+#define FLAG_ITEM_FRESCO_ISLES_TM_SANDSTORM                         0x439
+#define FLAG_ITEM_KALAMI_TM_FACADE                                  0x43A
+#define FLAG_ITEM_VULCAI_SEA_TM_SKILL_SWAP                          0x43B
 
 // stealing these 40 flags for the Waterwake Isle trainers teehee
 #define FLAG_HIDE_WAKEWATER_TRAINER_01                              0x43C
@@ -1180,10 +1180,10 @@
 #define FLAG_ITEM_HIDE_PLAYER_MON_WAKEWATER                         0x465
 #define FLAG_ITEM_HIDE_OPPONENT_MON_WAKEWATER                       0x466
 
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_UNUSED_0x468                                           0x468 // Unused Flag
-#define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469
-#define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
+#define FLAG_GOT_MARBLE_STATUE                                      0x467 // Got Marble Statue for 50 mining games
+#define FLAG_GOT_EGG_DOLL                                           0x468
+#define FLAG_GOT_LEGENDARY_DOG_DECOR                                0x469
+#define FLAG_GOT_DRAGONITE_DOLL                                     0x46A
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE                 0x46B
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET                           0x46C
 #define FLAG_ITEM_MOSSDEEP_STEVENS_HOUSE_HM08                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald

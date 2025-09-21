@@ -105,7 +105,7 @@ TowerOfDioxippus_PokemonCenter_EventScript_UniversityStudentRouteCheck_5:
 # 63 "data/maps/TowerOfDioxippus_PokemonCenter/scripts.pory"
 	delay 5
 # 66 "data/maps/TowerOfDioxippus_PokemonCenter/scripts.pory"
-	giveitem ITEM_MAX_REVIVE, 10
+	givedecoration DECOR_GYARADOS_DOLL
 # 67 "data/maps/TowerOfDioxippus_PokemonCenter/scripts.pory"
 	closemessage
 # 68 "data/maps/TowerOfDioxippus_PokemonCenter/scripts.pory"

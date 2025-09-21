@@ -220,1029 +220,1029 @@ WakewaterIsle_EventScript_ChampionDefenseScript::
 # 146 "data/maps/WakewaterIsle/scripts.pory"
 	closemessage
 # 149 "data/maps/WakewaterIsle/scripts.pory"
-	randomelement ITEM_NUGGET, ITEM_BIG_NUGGET
+	randomelement ITEM_NUGGET, ITEM_BIG_NUGGET, ITEM_MASTER_BALL, ITEM_PEARL
 # 150 "data/maps/WakewaterIsle/scripts.pory"
 	giveitem VAR_RESULT
 # 151 "data/maps/WakewaterIsle/scripts.pory"
 	closemessage
-# 152 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_MAP_NAME_POPUP
 # 153 "data/maps/WakewaterIsle/scripts.pory"
-	warp MAP_WAKEWATER_ISLE, 30, 22
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 # 154 "data/maps/WakewaterIsle/scripts.pory"
-	waitstate
+	warp MAP_WAKEWATER_ISLE, 30, 22
 # 155 "data/maps/WakewaterIsle/scripts.pory"
+	waitstate
+# 156 "data/maps/WakewaterIsle/scripts.pory"
 	releaseall
 	end
 
 
 WakewaterIsle_EventScript_ChooseRandomTrainer::
-# 162 "data/maps/WakewaterIsle/scripts.pory"
-	randomelement TRAINER_WAKEWATER_SAMANTHA, TRAINER_WAKEWATER_MAURA, TRAINER_WAKEWATER_PIRAEUS, TRAINER_WAKEWATER_LEXIE, TRAINER_WAKEWATER_ALEXANDER, TRAINER_WAKEWATER_KASSA, TRAINER_WAKEWATER_POLYMNIA, TRAINER_WAKEWATER_OURANI, TRAINER_WAKEWATER_KLEIO, TRAINER_WAKEWATER_TERPSIKORE, TRAINER_WAKEWATER_EUTERPE, TRAINER_WAKEWATER_THALIA_AND_MELPOMENE, TRAINER_WAKEWATER_RHADINE, TRAINER_WAKEWATER_KALLIOPE, TRAINER_WAKEWATER_CHIMERA_ADMIN_M, TRAINER_WAKEWATER_CHIMERA_ADMIN_F, TRAINER_WAKEWATER_ANYALIOS, TRAINER_WAKEWATER_RANIA, TRAINER_WAKEWATER_MICHAH, TRAINER_WAKEWATER_DRAKE, TRAINER_WAKEWATER_SASHA, TRAINER_WAKEWATER_CONNIE, TRAINER_WAKEWATER_SHIA, TRAINER_WAKEWATER_OLIVIA, TRAINER_WAKEWATER_KYLE, TRAINER_WAKEWATER_NEMO, TRAINER_WAKEWATER_CASSIE, TRAINER_WAKEWATER_JARED, TRAINER_WAKEWATER_CAIDEN, TRAINER_WAKEWATER_SEBASTIAN, TRAINER_WAKEWATER_BRODY, TRAINER_WAKEWATER_JERRY, TRAINER_WAKEWATER_ERIKOV, TRAINER_WAKEWATER_RAJ, TRAINER_WAKEWATER_BITA, TRAINER_WAKEWATER_AMY, TRAINER_WAKEWATER_GEORGIA, TRAINER_WAKEWATER_NOB, TRAINER_WAKEWATER_DALE, TRAINER_WAKEWATER_ALLEN
 # 163 "data/maps/WakewaterIsle/scripts.pory"
+	randomelement TRAINER_WAKEWATER_SAMANTHA, TRAINER_WAKEWATER_MAURA, TRAINER_WAKEWATER_PIRAEUS, TRAINER_WAKEWATER_LEXIE, TRAINER_WAKEWATER_ALEXANDER, TRAINER_WAKEWATER_KASSA, TRAINER_WAKEWATER_POLYMNIA, TRAINER_WAKEWATER_OURANI, TRAINER_WAKEWATER_KLEIO, TRAINER_WAKEWATER_TERPSIKORE, TRAINER_WAKEWATER_EUTERPE, TRAINER_WAKEWATER_THALIA_AND_MELPOMENE, TRAINER_WAKEWATER_RHADINE, TRAINER_WAKEWATER_KALLIOPE, TRAINER_WAKEWATER_CHIMERA_ADMIN_M, TRAINER_WAKEWATER_CHIMERA_ADMIN_F, TRAINER_WAKEWATER_ANYALIOS, TRAINER_WAKEWATER_RANIA, TRAINER_WAKEWATER_MICHAH, TRAINER_WAKEWATER_DRAKE, TRAINER_WAKEWATER_SASHA, TRAINER_WAKEWATER_CONNIE, TRAINER_WAKEWATER_SHIA, TRAINER_WAKEWATER_OLIVIA, TRAINER_WAKEWATER_KYLE, TRAINER_WAKEWATER_NEMO, TRAINER_WAKEWATER_CASSIE, TRAINER_WAKEWATER_JARED, TRAINER_WAKEWATER_CAIDEN, TRAINER_WAKEWATER_SEBASTIAN, TRAINER_WAKEWATER_BRODY, TRAINER_WAKEWATER_JERRY, TRAINER_WAKEWATER_ERIKOV, TRAINER_WAKEWATER_RAJ, TRAINER_WAKEWATER_BITA, TRAINER_WAKEWATER_AMY, TRAINER_WAKEWATER_GEORGIA, TRAINER_WAKEWATER_NOB, TRAINER_WAKEWATER_DALE, TRAINER_WAKEWATER_ALLEN
+# 164 "data/maps/WakewaterIsle/scripts.pory"
 	copyvar VAR_CHOSEN_WAKEWATER_CHALLENGER, VAR_RESULT
-# 165 "data/maps/WakewaterIsle/scripts.pory"
+# 166 "data/maps/WakewaterIsle/scripts.pory"
 	switch VAR_CHOSEN_WAKEWATER_CHALLENGER
-# 168 "data/maps/WakewaterIsle/scripts.pory"
+# 169 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_SAMANTHA, WakewaterIsle_EventScript_ChooseRandomTrainer_2
-# 176 "data/maps/WakewaterIsle/scripts.pory"
+# 177 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_MAURA, WakewaterIsle_EventScript_ChooseRandomTrainer_3
-# 184 "data/maps/WakewaterIsle/scripts.pory"
+# 185 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_PIRAEUS, WakewaterIsle_EventScript_ChooseRandomTrainer_4
-# 194 "data/maps/WakewaterIsle/scripts.pory"
+# 195 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_LEXIE, WakewaterIsle_EventScript_ChooseRandomTrainer_5
-# 202 "data/maps/WakewaterIsle/scripts.pory"
+# 203 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_ALEXANDER, WakewaterIsle_EventScript_ChooseRandomTrainer_6
-# 210 "data/maps/WakewaterIsle/scripts.pory"
+# 211 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_KASSA, WakewaterIsle_EventScript_ChooseRandomTrainer_7
-# 218 "data/maps/WakewaterIsle/scripts.pory"
+# 219 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_POLYMNIA, WakewaterIsle_EventScript_ChooseRandomTrainer_8
-# 228 "data/maps/WakewaterIsle/scripts.pory"
+# 229 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_OURANI, WakewaterIsle_EventScript_ChooseRandomTrainer_9
-# 238 "data/maps/WakewaterIsle/scripts.pory"
+# 239 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_KLEIO, WakewaterIsle_EventScript_ChooseRandomTrainer_10
-# 248 "data/maps/WakewaterIsle/scripts.pory"
+# 249 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_TERPSIKORE, WakewaterIsle_EventScript_ChooseRandomTrainer_11
-# 258 "data/maps/WakewaterIsle/scripts.pory"
+# 259 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_EUTERPE, WakewaterIsle_EventScript_ChooseRandomTrainer_12
-# 268 "data/maps/WakewaterIsle/scripts.pory"
+# 269 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_THALIA_AND_MELPOMENE, WakewaterIsle_EventScript_ChooseRandomTrainer_13
-# 278 "data/maps/WakewaterIsle/scripts.pory"
+# 279 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_RHADINE, WakewaterIsle_EventScript_ChooseRandomTrainer_14
-# 288 "data/maps/WakewaterIsle/scripts.pory"
+# 289 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_KALLIOPE, WakewaterIsle_EventScript_ChooseRandomTrainer_15
-# 298 "data/maps/WakewaterIsle/scripts.pory"
+# 299 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_CHIMERA_ADMIN_M, WakewaterIsle_EventScript_ChooseRandomTrainer_16
-# 306 "data/maps/WakewaterIsle/scripts.pory"
+# 307 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_CHIMERA_ADMIN_F, WakewaterIsle_EventScript_ChooseRandomTrainer_17
-# 314 "data/maps/WakewaterIsle/scripts.pory"
+# 315 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_ANYALIOS, WakewaterIsle_EventScript_ChooseRandomTrainer_18
-# 324 "data/maps/WakewaterIsle/scripts.pory"
+# 325 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_RANIA, WakewaterIsle_EventScript_ChooseRandomTrainer_19
-# 332 "data/maps/WakewaterIsle/scripts.pory"
+# 333 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_MICHAH, WakewaterIsle_EventScript_ChooseRandomTrainer_20
-# 340 "data/maps/WakewaterIsle/scripts.pory"
+# 341 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_DRAKE, WakewaterIsle_EventScript_ChooseRandomTrainer_21
-# 348 "data/maps/WakewaterIsle/scripts.pory"
+# 349 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_SASHA, WakewaterIsle_EventScript_ChooseRandomTrainer_22
-# 356 "data/maps/WakewaterIsle/scripts.pory"
+# 357 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_CONNIE, WakewaterIsle_EventScript_ChooseRandomTrainer_23
-# 364 "data/maps/WakewaterIsle/scripts.pory"
+# 365 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_SHIA, WakewaterIsle_EventScript_ChooseRandomTrainer_24
-# 372 "data/maps/WakewaterIsle/scripts.pory"
+# 373 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_OLIVIA, WakewaterIsle_EventScript_ChooseRandomTrainer_25
-# 380 "data/maps/WakewaterIsle/scripts.pory"
+# 381 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_KYLE, WakewaterIsle_EventScript_ChooseRandomTrainer_26
-# 388 "data/maps/WakewaterIsle/scripts.pory"
+# 389 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_NEMO, WakewaterIsle_EventScript_ChooseRandomTrainer_27
-# 396 "data/maps/WakewaterIsle/scripts.pory"
+# 397 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_CASSIE, WakewaterIsle_EventScript_ChooseRandomTrainer_28
-# 404 "data/maps/WakewaterIsle/scripts.pory"
+# 405 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_JARED, WakewaterIsle_EventScript_ChooseRandomTrainer_29
-# 412 "data/maps/WakewaterIsle/scripts.pory"
+# 413 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_CAIDEN, WakewaterIsle_EventScript_ChooseRandomTrainer_30
-# 420 "data/maps/WakewaterIsle/scripts.pory"
+# 421 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_SEBASTIAN, WakewaterIsle_EventScript_ChooseRandomTrainer_31
-# 428 "data/maps/WakewaterIsle/scripts.pory"
+# 429 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_BRODY, WakewaterIsle_EventScript_ChooseRandomTrainer_32
-# 436 "data/maps/WakewaterIsle/scripts.pory"
+# 437 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_JERRY, WakewaterIsle_EventScript_ChooseRandomTrainer_33
-# 444 "data/maps/WakewaterIsle/scripts.pory"
+# 445 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_ERIKOV, WakewaterIsle_EventScript_ChooseRandomTrainer_34
-# 452 "data/maps/WakewaterIsle/scripts.pory"
+# 453 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_RAJ, WakewaterIsle_EventScript_ChooseRandomTrainer_35
-# 460 "data/maps/WakewaterIsle/scripts.pory"
+# 461 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_BITA, WakewaterIsle_EventScript_ChooseRandomTrainer_36
-# 468 "data/maps/WakewaterIsle/scripts.pory"
+# 469 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_AMY, WakewaterIsle_EventScript_ChooseRandomTrainer_37
-# 476 "data/maps/WakewaterIsle/scripts.pory"
+# 477 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_GEORGIA, WakewaterIsle_EventScript_ChooseRandomTrainer_38
-# 484 "data/maps/WakewaterIsle/scripts.pory"
+# 485 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_NOB, WakewaterIsle_EventScript_ChooseRandomTrainer_39
-# 492 "data/maps/WakewaterIsle/scripts.pory"
+# 493 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_DALE, WakewaterIsle_EventScript_ChooseRandomTrainer_40
-# 500 "data/maps/WakewaterIsle/scripts.pory"
+# 501 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_ALLEN, WakewaterIsle_EventScript_ChooseRandomTrainer_41
 WakewaterIsle_EventScript_ChooseRandomTrainer_2:
-# 169 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_01
 # 170 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 14
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_01
 # 171 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 14, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 14
 # 172 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 14, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 173 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_0
+	waitmovement 0
 # 174 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_1
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_0
 # 175 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_1
+# 176 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_SAMANTHA, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_2
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_3:
-# 177 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_02
 # 178 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 15
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_02
 # 179 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 15, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 15
 # 180 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 15, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 181 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_3
+	waitmovement 0
 # 182 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_4
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_3
 # 183 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_4
+# 184 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_MAURA, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_5
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_4:
-# 185 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_03
 # 186 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 17
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_03
 # 187 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 17, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 17
 # 188 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 18
+	applymovement 17, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 189 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 18, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 18
 # 190 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 18, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 191 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_6
+	waitmovement 0
 # 192 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_7
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_6
 # 193 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_7
+# 194 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_PIRAEUS, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_8
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_5:
-# 195 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_04
 # 196 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 19
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_04
 # 197 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 19, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 19
 # 198 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 19, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 199 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_9
+	waitmovement 0
 # 200 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_10
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_9
 # 201 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_10
+# 202 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_LEXIE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_11
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_6:
-# 203 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_05
 # 204 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 20
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_05
 # 205 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 20, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 20
 # 206 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 20, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 207 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_12
+	waitmovement 0
 # 208 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_13
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_12
 # 209 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_13
+# 210 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_ALEXANDER, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_14
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_7:
-# 211 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_06
 # 212 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 21
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_06
 # 213 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 21, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 21
 # 214 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 21, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 215 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_15
+	waitmovement 0
 # 216 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_16
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_15
 # 217 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_16
+# 218 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_ALEXANDER, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_17
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_8:
-# 219 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_07
 # 220 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 22
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_07
 # 221 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 22, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 22
 # 222 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 23
+	applymovement 22, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 223 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 23, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 23
 # 224 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 23, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 225 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_18
+	waitmovement 0
 # 226 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_19
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_18
 # 227 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_19
+# 228 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_POLYMNIA, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_20
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_9:
-# 229 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_08
 # 230 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 24
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_08
 # 231 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 24, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 24
 # 232 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 25
+	applymovement 24, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 233 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 25, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 25
 # 234 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 25, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 235 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_21
+	waitmovement 0
 # 236 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_22
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_21
 # 237 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_22
+# 238 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_OURANI, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_23
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_10:
-# 239 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_09
 # 240 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 26
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_09
 # 241 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 26, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 26
 # 242 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 27
+	applymovement 26, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 243 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 27, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 27
 # 244 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 27, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 245 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_24
+	waitmovement 0
 # 246 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_25
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_24
 # 247 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_25
+# 248 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_KLEIO, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_26
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_11:
-# 249 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_10
 # 250 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 28
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_10
 # 251 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 28, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 28
 # 252 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 29
+	applymovement 28, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 253 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 29, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 29
 # 254 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 29, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 255 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_27
+	waitmovement 0
 # 256 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_28
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_27
 # 257 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_28
+# 258 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_TERPSIKORE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_29
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_12:
-# 259 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_11
 # 260 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 30
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_11
 # 261 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 30, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 30
 # 262 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 31
+	applymovement 30, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 263 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 31, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 31
 # 264 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 31, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 265 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_30
+	waitmovement 0
 # 266 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_31
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_30
 # 267 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_31
+# 268 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_EUTERPE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_32
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_13:
-# 269 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_12
 # 270 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 32
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_12
 # 271 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 32, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 32
 # 272 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 33
+	applymovement 32, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 273 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 33, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 33
 # 274 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 33, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 275 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_33
+	waitmovement 0
 # 276 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_34
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_33
 # 277 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_34
+# 278 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_THALIA_AND_MELPOMENE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_32
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_14:
-# 279 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_13
 # 280 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 34
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_13
 # 281 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 34, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 34
 # 282 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 35
+	applymovement 34, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 283 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 35, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 35
 # 284 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 35, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 285 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_35
+	waitmovement 0
 # 286 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_36
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_35
 # 287 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_36
+# 288 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_RHADINE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_37
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_15:
-# 289 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_14
 # 290 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 36
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_14
 # 291 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 36, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 36
 # 292 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 37
+	applymovement 36, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 293 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 37, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 37
 # 294 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 37, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 295 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_38
+	waitmovement 0
 # 296 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_39
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_38
 # 297 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_39
+# 298 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_KALLIOPE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_40
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_16:
-# 299 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_15
 # 300 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 38
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_15
 # 301 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 38, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 38
 # 302 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 38, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 303 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_41
+	waitmovement 0
 # 304 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_42
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_41
 # 305 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_42
+# 306 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_CHIMERA_ADMIN_M, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_43
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_17:
-# 307 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_16
 # 308 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 39
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_16
 # 309 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 39, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 39
 # 310 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 39, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 311 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_41
+	waitmovement 0
 # 312 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_44
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_41
 # 313 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_44
+# 314 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_CHIMERA_ADMIN_F, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_45
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_18:
-# 315 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_17
 # 316 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 40
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_17
 # 317 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 40, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 40
 # 318 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 41
+	applymovement 40, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 319 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 41, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 41
 # 320 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 41, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 321 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_46
+	waitmovement 0
 # 322 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_47
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_46
 # 323 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_47
+# 324 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_ANYALIOS, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_48
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_19:
-# 325 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_18
 # 326 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 42
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_18
 # 327 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 42, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 42
 # 328 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 42, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 329 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_49
+	waitmovement 0
 # 330 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_50
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_49
 # 331 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_50
+# 332 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_RANIA, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_51
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_20:
-# 333 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_19
 # 334 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 43
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_19
 # 335 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 43, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 43
 # 336 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 43, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 337 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_52
+	waitmovement 0
 # 338 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_53
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_52
 # 339 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_53
+# 340 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_MICHAH, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_54
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_21:
-# 341 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_20
 # 342 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 44
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_20
 # 343 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 44, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 44
 # 344 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 44, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 345 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_55
+	waitmovement 0
 # 346 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_56
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_55
 # 347 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_56
+# 348 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_DRAKE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_57
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_22:
-# 349 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_21
 # 350 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 45
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_21
 # 351 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 45, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 45
 # 352 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 45, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 353 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_58
+	waitmovement 0
 # 354 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_59
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_58
 # 355 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_59
+# 356 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_SASHA, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_60
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_23:
-# 357 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_22
 # 358 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 46
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_22
 # 359 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 46, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 46
 # 360 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 46, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 361 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_61
+	waitmovement 0
 # 362 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_62
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_61
 # 363 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_62
+# 364 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_CONNIE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_63
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_24:
-# 365 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_23
 # 366 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 47
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_23
 # 367 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 47, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 47
 # 368 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 47, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 369 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_64
+	waitmovement 0
 # 370 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_65
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_64
 # 371 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_65
+# 372 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_SHIA, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_66
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_25:
-# 373 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_24
 # 374 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 48
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_24
 # 375 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 48, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 48
 # 376 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 48, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 377 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_67
+	waitmovement 0
 # 378 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_68
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_67
 # 379 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_68
+# 380 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_OLIVIA, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_69
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_26:
-# 381 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_25
 # 382 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 49
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_25
 # 383 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 49, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 49
 # 384 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 49, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 385 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_70
+	waitmovement 0
 # 386 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_71
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_70
 # 387 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_71
+# 388 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_KYLE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_72
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_27:
-# 389 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_26
 # 390 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 50
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_26
 # 391 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 50, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 50
 # 392 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 50, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 393 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_73
+	waitmovement 0
 # 394 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_74
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_73
 # 395 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_74
+# 396 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_NEMO, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_75
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_28:
-# 397 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_27
 # 398 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 51
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_27
 # 399 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 51, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 51
 # 400 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 51, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 401 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_76
+	waitmovement 0
 # 402 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_77
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_76
 # 403 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_77
+# 404 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_CASSIE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_78
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_29:
-# 405 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_28
 # 406 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 52
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_28
 # 407 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 52, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 52
 # 408 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 52, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 409 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_79
+	waitmovement 0
 # 410 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_80
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_79
 # 411 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_80
+# 412 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_JARED, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_81
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_30:
-# 413 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_29
 # 414 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 53
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_29
 # 415 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 53, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 53
 # 416 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 53, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 417 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_82
+	waitmovement 0
 # 418 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_83
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_82
 # 419 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_83
+# 420 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_CAIDEN, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_84
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_31:
-# 421 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_30
 # 422 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 54
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_30
 # 423 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 54, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 54
 # 424 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 54, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 425 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_85
+	waitmovement 0
 # 426 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_86
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_85
 # 427 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_86
+# 428 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_SEBASTIAN, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_87
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_32:
-# 429 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_31
 # 430 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 55
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_31
 # 431 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 55, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 55
 # 432 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 55, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 433 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_88
+	waitmovement 0
 # 434 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_89
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_88
 # 435 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_89
+# 436 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_BRODY, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_90
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_33:
-# 437 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_32
 # 438 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 56
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_32
 # 439 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 56, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 56
 # 440 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 56, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 441 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_91
+	waitmovement 0
 # 442 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_92
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_91
 # 443 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_92
+# 444 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_JERRY, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_93
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_34:
-# 445 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_33
 # 446 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 57
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_33
 # 447 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 57, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 57
 # 448 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 57, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 449 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_94
+	waitmovement 0
 # 450 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_95
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_94
 # 451 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_95
+# 452 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_ERIKOV, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_96
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_35:
-# 453 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_34
 # 454 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 58
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_34
 # 455 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 58, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 58
 # 456 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 58, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 457 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_97
+	waitmovement 0
 # 458 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_98
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_97
 # 459 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_98
+# 460 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_RAJ, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_99
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_36:
-# 461 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_35
 # 462 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 59
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_35
 # 463 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 59, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 59
 # 464 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 59, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 465 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_100
+	waitmovement 0
 # 466 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_101
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_100
 # 467 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_101
+# 468 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_BITA, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_102
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_37:
-# 469 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_36
 # 470 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 60
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_36
 # 471 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 60, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 60
 # 472 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 60, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 473 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_103
+	waitmovement 0
 # 474 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_104
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_103
 # 475 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_104
+# 476 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_AMY, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_105
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_38:
-# 477 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_37
 # 478 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 61
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_37
 # 479 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 61, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 61
 # 480 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 61, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 481 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_106
+	waitmovement 0
 # 482 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_107
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_106
 # 483 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_107
+# 484 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_GEORGIA, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_108
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_39:
-# 485 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_38
 # 486 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 62
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_38
 # 487 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 62, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 62
 # 488 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 62, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 489 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_109
+	waitmovement 0
 # 490 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_110
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_109
 # 491 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_110
+# 492 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_NOB, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_111
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_40:
-# 493 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_39
 # 494 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 63
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_39
 # 495 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 63, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 63
 # 496 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 63, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 497 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_112
+	waitmovement 0
 # 498 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_113
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_112
 # 499 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_113
+# 500 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_DALE, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_114
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_41:
-# 501 "data/maps/WakewaterIsle/scripts.pory"
-	clearflag FLAG_HIDE_WAKEWATER_TRAINER_40
 # 502 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 64
+	clearflag FLAG_HIDE_WAKEWATER_TRAINER_40
 # 503 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 64, WakewaterIsle_Movement_TrainerApproachesPlayer
+	addobject 64
 # 504 "data/maps/WakewaterIsle/scripts.pory"
-	waitmovement 0
+	applymovement 64, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 505 "data/maps/WakewaterIsle/scripts.pory"
-	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_115
+	waitmovement 0
 # 506 "data/maps/WakewaterIsle/scripts.pory"
-	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_116
+	speakername WakewaterIsle_EventScript_ChooseRandomTrainer_Text_115
 # 507 "data/maps/WakewaterIsle/scripts.pory"
+	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_116
+# 508 "data/maps/WakewaterIsle/scripts.pory"
 	trainerbattle_no_intro TRAINER_WAKEWATER_ALLEN, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_117
 	return
 
 
 WakewaterIsle_EventScript_HideAllTrainers::
-# 514 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_01
 # 515 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_02
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_01
 # 516 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_03
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_02
 # 517 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_04
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_03
 # 518 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_05
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_04
 # 519 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_06
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_05
 # 520 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_07
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_06
 # 521 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_08
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_07
 # 522 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_09
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_08
 # 523 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_10
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_09
 # 524 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_11
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_10
 # 525 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_12
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_11
 # 526 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_13
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_12
 # 527 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_14
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_13
 # 528 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_15
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_14
 # 529 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_16
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_15
 # 530 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_17
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_16
 # 531 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_18
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_17
 # 532 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_19
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_18
 # 533 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_20
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_19
 # 534 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_21
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_20
 # 535 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_22
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_21
 # 536 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_23
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_22
 # 537 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_24
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_23
 # 538 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_25
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_24
 # 539 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_26
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_25
 # 540 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_27
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_26
 # 541 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_28
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_27
 # 542 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_29
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_28
 # 543 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_30
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_29
 # 544 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_31
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_30
 # 545 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_32
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_31
 # 546 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_33
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_32
 # 547 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_34
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_33
 # 548 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_35
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_34
 # 549 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_36
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_35
 # 550 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_37
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_36
 # 551 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_38
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_37
 # 552 "data/maps/WakewaterIsle/scripts.pory"
-	setflag FLAG_HIDE_WAKEWATER_TRAINER_39
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_38
 # 553 "data/maps/WakewaterIsle/scripts.pory"
+	setflag FLAG_HIDE_WAKEWATER_TRAINER_39
+# 554 "data/maps/WakewaterIsle/scripts.pory"
 	setflag FLAG_HIDE_WAKEWATER_TRAINER_40
-# 555 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 14
 # 556 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 15
+	removeobject 14
 # 557 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 18
+	removeobject 15
 # 558 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 19
+	removeobject 18
 # 559 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 20
+	removeobject 19
 # 560 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 21
+	removeobject 20
 # 561 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 23
+	removeobject 21
 # 562 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 25
+	removeobject 23
 # 563 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 27
+	removeobject 25
 # 564 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 29
+	removeobject 27
 # 565 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 31
+	removeobject 29
 # 566 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 33
+	removeobject 31
 # 567 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 35
+	removeobject 33
 # 568 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 37
+	removeobject 35
 # 569 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 38
+	removeobject 37
 # 570 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 39
+	removeobject 38
 # 571 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 41
+	removeobject 39
 # 572 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 42
+	removeobject 41
 # 573 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 43
+	removeobject 42
 # 574 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 44
+	removeobject 43
 # 575 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 45
+	removeobject 44
 # 576 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 46
+	removeobject 45
 # 577 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 47
+	removeobject 46
 # 578 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 48
+	removeobject 47
 # 579 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 49
+	removeobject 48
 # 580 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 50
+	removeobject 49
 # 581 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 51
+	removeobject 50
 # 582 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 52
+	removeobject 51
 # 583 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 53
+	removeobject 52
 # 584 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 54
+	removeobject 53
 # 585 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 55
+	removeobject 54
 # 586 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 56
+	removeobject 55
 # 587 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 57
+	removeobject 56
 # 588 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 58
+	removeobject 57
 # 589 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 59
+	removeobject 58
 # 590 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 60
+	removeobject 59
 # 591 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 61
+	removeobject 60
 # 592 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 62
+	removeobject 61
 # 593 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 63
+	removeobject 62
 # 594 "data/maps/WakewaterIsle/scripts.pory"
+	removeobject 63
+# 595 "data/maps/WakewaterIsle/scripts.pory"
 	removeobject 64
-# 596 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 17
 # 597 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 22
+	removeobject 17
 # 598 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 24
+	removeobject 22
 # 599 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 26
+	removeobject 24
 # 600 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 28
+	removeobject 26
 # 601 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 30
+	removeobject 28
 # 602 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 32
+	removeobject 30
 # 603 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 34
+	removeobject 32
 # 604 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 36
+	removeobject 34
 # 605 "data/maps/WakewaterIsle/scripts.pory"
-	removeobject 40
+	removeobject 36
 # 606 "data/maps/WakewaterIsle/scripts.pory"
+	removeobject 40
+# 607 "data/maps/WakewaterIsle/scripts.pory"
 	setflag FLAG_ITEM_HIDE_OPPONENT_MON_WAKEWATER
 	return
 
 
-# 609 "data/maps/WakewaterIsle/scripts.pory"
+# 610 "data/maps/WakewaterIsle/scripts.pory"
 WakewaterIsle_Movement_TrainerApproachesPlayer:
-# 611 "data/maps/WakewaterIsle/scripts.pory"
-	walk_up
-# 611 "data/maps/WakewaterIsle/scripts.pory"
-	walk_up
-# 611 "data/maps/WakewaterIsle/scripts.pory"
-	walk_up
-# 611 "data/maps/WakewaterIsle/scripts.pory"
+# 612 "data/maps/WakewaterIsle/scripts.pory"
 	walk_up
 # 612 "data/maps/WakewaterIsle/scripts.pory"
-	face_up
+	walk_up
+# 612 "data/maps/WakewaterIsle/scripts.pory"
+	walk_up
+# 612 "data/maps/WakewaterIsle/scripts.pory"
+	walk_up
 # 613 "data/maps/WakewaterIsle/scripts.pory"
+	face_up
+# 614 "data/maps/WakewaterIsle/scripts.pory"
 	step_end
 
 WakewaterIsle_EventScript_Vaporeon_Text_0:
@@ -1329,504 +1329,504 @@ WakewaterIsle_EventScript_ChampionDefenseScript_Text_2:
 	.string "Congratulations, Champion!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_0:
-# 173 "data/maps/WakewaterIsle/scripts.pory"
+# 174 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Samantha$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_1:
-# 174 "data/maps/WakewaterIsle/scripts.pory"
+# 175 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Everyone underestimates me because\n"
 	.string "I'm cute. I always prove them wrong!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_2:
-# 175 "data/maps/WakewaterIsle/scripts.pory"
+# 176 "data/maps/WakewaterIsle/scripts.pory"
 	.string "No! My sweet, strong Pokémon!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_3:
-# 181 "data/maps/WakewaterIsle/scripts.pory"
+# 182 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Maura$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_4:
-# 182 "data/maps/WakewaterIsle/scripts.pory"
+# 183 "data/maps/WakewaterIsle/scripts.pory"
 	.string "My Pokémon and I all have psychic\n"
 	.string "powers.$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_5:
-# 183 "data/maps/WakewaterIsle/scripts.pory"
+# 184 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Our psychic powers... They've failed us!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_6:
-# 191 "data/maps/WakewaterIsle/scripts.pory"
+# 192 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Piraeus$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_7:
-# 192 "data/maps/WakewaterIsle/scripts.pory"
+# 193 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Bwahaha, you're not the only strong\n"
 	.string "Trainer to sail The Delphis! Let's see\l"
 	.string "what you've got!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_8:
-# 193 "data/maps/WakewaterIsle/scripts.pory"
+# 194 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Ohoho, we'd better sail away!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_9:
-# 199 "data/maps/WakewaterIsle/scripts.pory"
+# 200 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Lexie$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_10:
-# 200 "data/maps/WakewaterIsle/scripts.pory"
+# 201 "data/maps/WakewaterIsle/scripts.pory"
 	.string "My Pokémon and I are gonna kick your\n"
 	.string "butt!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_11:
-# 201 "data/maps/WakewaterIsle/scripts.pory"
+# 202 "data/maps/WakewaterIsle/scripts.pory"
 	.string "No! We got OUR butts kicked!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_12:
-# 207 "data/maps/WakewaterIsle/scripts.pory"
+# 208 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Alexander$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_13:
-# 208 "data/maps/WakewaterIsle/scripts.pory"
+# 209 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Get ready for my ultimate performance!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_14:
-# 209 "data/maps/WakewaterIsle/scripts.pory"
+# 210 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Aww, my performace was a failure.$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_15:
-# 215 "data/maps/WakewaterIsle/scripts.pory"
+# 216 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Kassa$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_16:
-# 216 "data/maps/WakewaterIsle/scripts.pory"
+# 217 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Heh, you could never compete against\n"
 	.string "me.$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_17:
-# 217 "data/maps/WakewaterIsle/scripts.pory"
+# 218 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Hey, I still have more money than you!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_18:
-# 225 "data/maps/WakewaterIsle/scripts.pory"
+# 226 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Polymnia$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_19:
-# 226 "data/maps/WakewaterIsle/scripts.pory"
+# 227 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I'm looking to find new farming talent\n"
 	.string "for Jusmail Town, and I thought I'd stop\l"
 	.string "by. Care for a battle?$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_20:
-# 227 "data/maps/WakewaterIsle/scripts.pory"
+# 228 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Ehehe, you're as bold as ever!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_21:
-# 235 "data/maps/WakewaterIsle/scripts.pory"
+# 236 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Ourani$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_22:
-# 236 "data/maps/WakewaterIsle/scripts.pory"
+# 237 "data/maps/WakewaterIsle/scripts.pory"
 	.string "'aven't seen ya in a bit, {PLAYER}!\n"
 	.string "Wanna battle?$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_23:
-# 237 "data/maps/WakewaterIsle/scripts.pory"
+# 238 "data/maps/WakewaterIsle/scripts.pory"
 	.string "As strong as stone, this one!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_24:
-# 245 "data/maps/WakewaterIsle/scripts.pory"
+# 246 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Kleio$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_25:
-# 246 "data/maps/WakewaterIsle/scripts.pory"
+# 247 "data/maps/WakewaterIsle/scripts.pory"
 	.string "{PLAYER}, I've seen your journey in my\n"
 	.string "visions... Please, let me see your\l"
 	.string "battles for myself!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_26:
-# 247 "data/maps/WakewaterIsle/scripts.pory"
+# 248 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Stronger than any Trainer before...$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_27:
-# 255 "data/maps/WakewaterIsle/scripts.pory"
+# 256 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Terpsikore$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_28:
-# 256 "data/maps/WakewaterIsle/scripts.pory"
+# 257 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I'm in the mood for a dance! I challenge\n"
 	.string "you!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_29:
-# 257 "data/maps/WakewaterIsle/scripts.pory"
+# 258 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I always enjoy our dances, {PLAYER}!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_30:
-# 265 "data/maps/WakewaterIsle/scripts.pory"
+# 266 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Euterpe$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_31:
-# 266 "data/maps/WakewaterIsle/scripts.pory"
+# 267 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I'm here for a party! Let's give it our\n"
 	.string "all, {PLAYER}!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_32:
-# 267 "data/maps/WakewaterIsle/scripts.pory"
+# 268 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Kehehe! Always a pleasure!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_33:
-# 275 "data/maps/WakewaterIsle/scripts.pory"
+# 276 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Thal & Mel$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_34:
-# 276 "data/maps/WakewaterIsle/scripts.pory"
+# 277 "data/maps/WakewaterIsle/scripts.pory"
 	.string "We're here to settle another argument\n"
 	.string "by battling it out together. We\l"
 	.string "challenge you!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_35:
-# 285 "data/maps/WakewaterIsle/scripts.pory"
+# 286 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Rhadine$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_36:
-# 286 "data/maps/WakewaterIsle/scripts.pory"
+# 287 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Ehehe, you know why I'm here,\n"
 	.string "{PLAYER}! Give it your all!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_37:
-# 287 "data/maps/WakewaterIsle/scripts.pory"
+# 288 "data/maps/WakewaterIsle/scripts.pory"
 	.string "As fiery as always!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_38:
-# 295 "data/maps/WakewaterIsle/scripts.pory"
+# 296 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Kalliope$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_39:
-# 296 "data/maps/WakewaterIsle/scripts.pory"
+# 297 "data/maps/WakewaterIsle/scripts.pory"
 	.string "{PLAYER}... I'm here to settle a\n"
 	.string "grudge. I'll finally crush you!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_40:
-# 297 "data/maps/WakewaterIsle/scripts.pory"
+# 298 "data/maps/WakewaterIsle/scripts.pory"
 	.string "No... HOW?!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_41:
-# 303 "data/maps/WakewaterIsle/scripts.pory"
+# 304 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Chimera Admin$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_42:
-# 304 "data/maps/WakewaterIsle/scripts.pory"
+# 305 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Grr... I'm back to prove myself! Get\n"
 	.string "ready to fall!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_43:
-# 305 "data/maps/WakewaterIsle/scripts.pory"
+# 306 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I'm still not strong enough?!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_44:
-# 312 "data/maps/WakewaterIsle/scripts.pory"
+# 313 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I've come to challenge you, {PLAYER}.\n"
 	.string "I need to see how strong you've grown.$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_45:
-# 313 "data/maps/WakewaterIsle/scripts.pory"
+# 314 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Hm... No wonder we failed to stop you.$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_46:
-# 321 "data/maps/WakewaterIsle/scripts.pory"
+# 322 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Anyalios$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_47:
-# 322 "data/maps/WakewaterIsle/scripts.pory"
+# 323 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Heya, new Champ! I'm here to reclaim my\n"
 	.string "title!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_48:
-# 323 "data/maps/WakewaterIsle/scripts.pory"
+# 324 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Bwahaha! Still too strong!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_49:
-# 329 "data/maps/WakewaterIsle/scripts.pory"
+# 330 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Rania$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_50:
-# 330 "data/maps/WakewaterIsle/scripts.pory"
+# 331 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Chaire! I thought it would be fun to\n"
 	.string "stop by and try to battle you. Let's go!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_51:
-# 331 "data/maps/WakewaterIsle/scripts.pory"
+# 332 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Woah, you're tough, {PLAYER}!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_52:
-# 337 "data/maps/WakewaterIsle/scripts.pory"
+# 338 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Michah$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_53:
-# 338 "data/maps/WakewaterIsle/scripts.pory"
+# 339 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Heh, sailing here was no problem for me.\n"
 	.string "I'm ready to fight!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_54:
-# 339 "data/maps/WakewaterIsle/scripts.pory"
+# 340 "data/maps/WakewaterIsle/scripts.pory"
 	.string "You sunk me!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_55:
-# 345 "data/maps/WakewaterIsle/scripts.pory"
+# 346 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Drake$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_56:
-# 346 "data/maps/WakewaterIsle/scripts.pory"
+# 347 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Huh? There aren't any mountains on this\n"
 	.string "island?$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_57:
-# 347 "data/maps/WakewaterIsle/scripts.pory"
+# 348 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Woah!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_58:
-# 353 "data/maps/WakewaterIsle/scripts.pory"
+# 354 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Sasha$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_59:
-# 354 "data/maps/WakewaterIsle/scripts.pory"
+# 355 "data/maps/WakewaterIsle/scripts.pory"
 	.string "My Pokémon have taken me so far!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_60:
-# 355 "data/maps/WakewaterIsle/scripts.pory"
+# 356 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Looks like we have farther to go...$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_61:
-# 361 "data/maps/WakewaterIsle/scripts.pory"
+# 362 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Connie$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_62:
-# 362 "data/maps/WakewaterIsle/scripts.pory"
+# 363 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Wealth can take you anywhere!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_63:
-# 363 "data/maps/WakewaterIsle/scripts.pory"
+# 364 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Aw, I guess money doesn't get you\n"
 	.string "everything.$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_64:
-# 369 "data/maps/WakewaterIsle/scripts.pory"
+# 370 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Shia$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_65:
-# 370 "data/maps/WakewaterIsle/scripts.pory"
+# 371 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I raised all my Pokémon from Eggs!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_66:
-# 371 "data/maps/WakewaterIsle/scripts.pory"
+# 372 "data/maps/WakewaterIsle/scripts.pory"
 	.string "No, my poor Pokémon!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_67:
-# 377 "data/maps/WakewaterIsle/scripts.pory"
+# 378 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Olivia$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_68:
-# 378 "data/maps/WakewaterIsle/scripts.pory"
+# 379 "data/maps/WakewaterIsle/scripts.pory"
 	.string "My Pokémon are just as cool as me!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_69:
-# 379 "data/maps/WakewaterIsle/scripts.pory"
+# 380 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Hey, I'm still cooler than you!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_70:
-# 385 "data/maps/WakewaterIsle/scripts.pory"
+# 386 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Kyle$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_71:
-# 386 "data/maps/WakewaterIsle/scripts.pory"
+# 387 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Nobody's stronger 'an me!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_72:
-# 387 "data/maps/WakewaterIsle/scripts.pory"
+# 388 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Well, I can still eat more than you!\n"
 	.string "Bwahaha!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_73:
-# 393 "data/maps/WakewaterIsle/scripts.pory"
+# 394 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Nemo$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_74:
-# 394 "data/maps/WakewaterIsle/scripts.pory"
+# 395 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Are you still having fun in Ilios? Lemme\n"
 	.string "see your team!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_75:
-# 395 "data/maps/WakewaterIsle/scripts.pory"
+# 396 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Dang, you're good!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_76:
-# 401 "data/maps/WakewaterIsle/scripts.pory"
+# 402 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Cassie$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_77:
-# 402 "data/maps/WakewaterIsle/scripts.pory"
+# 403 "data/maps/WakewaterIsle/scripts.pory"
 	.string "My new perfume will help me win!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_78:
-# 403 "data/maps/WakewaterIsle/scripts.pory"
+# 404 "data/maps/WakewaterIsle/scripts.pory"
 	.string "No!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_79:
-# 409 "data/maps/WakewaterIsle/scripts.pory"
+# 410 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Jared$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_80:
-# 410 "data/maps/WakewaterIsle/scripts.pory"
+# 411 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I fished up a lot of my best Pokémon.$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_81:
-# 411 "data/maps/WakewaterIsle/scripts.pory"
+# 412 "data/maps/WakewaterIsle/scripts.pory"
 	.string "My little guys!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_82:
-# 417 "data/maps/WakewaterIsle/scripts.pory"
+# 418 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Caiden$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_83:
-# 418 "data/maps/WakewaterIsle/scripts.pory"
+# 419 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Nobody swims faster than me!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_84:
-# 419 "data/maps/WakewaterIsle/scripts.pory"
+# 420 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I'm still a faster swimmer...!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_85:
-# 425 "data/maps/WakewaterIsle/scripts.pory"
+# 426 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Sebastian$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_86:
-# 426 "data/maps/WakewaterIsle/scripts.pory"
+# 427 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Bahaha, new album coming out soon!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_87:
-# 427 "data/maps/WakewaterIsle/scripts.pory"
+# 428 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Stream my new song!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_88:
-# 433 "data/maps/WakewaterIsle/scripts.pory"
+# 434 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Brody$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_89:
-# 434 "data/maps/WakewaterIsle/scripts.pory"
+# 435 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Look at my sweet Pokémon team!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_90:
-# 435 "data/maps/WakewaterIsle/scripts.pory"
+# 436 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I have more training to do.$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_91:
-# 441 "data/maps/WakewaterIsle/scripts.pory"
+# 442 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Jerry$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_92:
-# 442 "data/maps/WakewaterIsle/scripts.pory"
+# 443 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I'm learning all about Pokémon in\n"
 	.string "school!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_93:
-# 443 "data/maps/WakewaterIsle/scripts.pory"
+# 444 "data/maps/WakewaterIsle/scripts.pory"
 	.string "B-but I've learned so much!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_94:
-# 449 "data/maps/WakewaterIsle/scripts.pory"
+# 450 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Erikov$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_95:
-# 450 "data/maps/WakewaterIsle/scripts.pory"
+# 451 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I'll show you what high society battling\n"
 	.string "looks like.$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_96:
-# 451 "data/maps/WakewaterIsle/scripts.pory"
+# 452 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Remarkable!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_97:
-# 457 "data/maps/WakewaterIsle/scripts.pory"
+# 458 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Raj$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_98:
-# 458 "data/maps/WakewaterIsle/scripts.pory"
+# 459 "data/maps/WakewaterIsle/scripts.pory"
 	.string "My team is the coolest!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_99:
-# 459 "data/maps/WakewaterIsle/scripts.pory"
+# 460 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Your team is... COOLER than mine?!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_100:
-# 465 "data/maps/WakewaterIsle/scripts.pory"
+# 466 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Bita$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_101:
-# 466 "data/maps/WakewaterIsle/scripts.pory"
+# 467 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Come on, it's time to battle!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_102:
-# 467 "data/maps/WakewaterIsle/scripts.pory"
+# 468 "data/maps/WakewaterIsle/scripts.pory"
 	.string "You're in another league.$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_103:
-# 473 "data/maps/WakewaterIsle/scripts.pory"
+# 474 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Amy$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_104:
-# 474 "data/maps/WakewaterIsle/scripts.pory"
+# 475 "data/maps/WakewaterIsle/scripts.pory"
 	.string "My parents loaned me their strongest\n"
 	.string "Pokémon!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_105:
-# 475 "data/maps/WakewaterIsle/scripts.pory"
+# 476 "data/maps/WakewaterIsle/scripts.pory"
 	.string "I'd better get back home...$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_106:
-# 481 "data/maps/WakewaterIsle/scripts.pory"
+# 482 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Georgia$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_107:
-# 482 "data/maps/WakewaterIsle/scripts.pory"
+# 483 "data/maps/WakewaterIsle/scripts.pory"
 	.string "This'll be the show of a lifetime!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_108:
-# 483 "data/maps/WakewaterIsle/scripts.pory"
+# 484 "data/maps/WakewaterIsle/scripts.pory"
 	.string "What a fight!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_109:
-# 489 "data/maps/WakewaterIsle/scripts.pory"
+# 490 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Nob$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_110:
-# 490 "data/maps/WakewaterIsle/scripts.pory"
+# 491 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Huff, huff... I finally made it...!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_111:
-# 491 "data/maps/WakewaterIsle/scripts.pory"
+# 492 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Aw, it's over already?$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_112:
-# 497 "data/maps/WakewaterIsle/scripts.pory"
+# 498 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Dale$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_113:
-# 498 "data/maps/WakewaterIsle/scripts.pory"
+# 499 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Hup! Hyah! Hiya!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_114:
-# 499 "data/maps/WakewaterIsle/scripts.pory"
+# 500 "data/maps/WakewaterIsle/scripts.pory"
 	.string "My awesome karate forms barely\n"
 	.string "helped?!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_115:
-# 505 "data/maps/WakewaterIsle/scripts.pory"
+# 506 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Allen$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_116:
-# 506 "data/maps/WakewaterIsle/scripts.pory"
+# 507 "data/maps/WakewaterIsle/scripts.pory"
 	.string "My Dragon Pokémon are the best to ever\n"
 	.string "live!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_117:
-# 507 "data/maps/WakewaterIsle/scripts.pory"
+# 508 "data/maps/WakewaterIsle/scripts.pory"
 	.string "Second best isn't so bad.$"

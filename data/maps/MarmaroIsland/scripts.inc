@@ -199,77 +199,83 @@ MarmaroIsland_EventScript_BlackBelt::
 # 128 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
 # 129 "data/maps/MarmaroIsland/scripts.pory"
-	release
-	end
-
-
-MarmaroIsland_EventScript_PsychicM::
-# 135 "data/maps/MarmaroIsland/scripts.pory"
-	lock
-# 136 "data/maps/MarmaroIsland/scripts.pory"
-	faceplayer
-# 137 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_PsychicM_Text_0
-# 138 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_PsychicM_Text_1
-# 139 "data/maps/MarmaroIsland/scripts.pory"
-	closemessage
+	goto_if_unset FLAG_RECEIVED_TM_BRICK_BREAK, MarmaroIsland_EventScript_BlackBelt_2
+MarmaroIsland_EventScript_BlackBelt_1:
 # 140 "data/maps/MarmaroIsland/scripts.pory"
 	release
 	end
 
+MarmaroIsland_EventScript_BlackBelt_2:
+# 131 "data/maps/MarmaroIsland/scripts.pory"
+	delay 5
+# 132 "data/maps/MarmaroIsland/scripts.pory"
+	speakername MarmaroIsland_EventScript_BlackBelt_Text_0
+# 133 "data/maps/MarmaroIsland/scripts.pory"
+	msgbox MarmaroIsland_EventScript_BlackBelt_Text_2
+# 134 "data/maps/MarmaroIsland/scripts.pory"
+	closemessage
+# 135 "data/maps/MarmaroIsland/scripts.pory"
+	delay 5
+# 136 "data/maps/MarmaroIsland/scripts.pory"
+	setflag FLAG_RECEIVED_TM_BRICK_BREAK
+# 137 "data/maps/MarmaroIsland/scripts.pory"
+	giveitem ITEM_TM_BRICK_BREAK
+# 138 "data/maps/MarmaroIsland/scripts.pory"
+	closemessage
+	goto MarmaroIsland_EventScript_BlackBelt_1
 
-MarmaroIsland_EventScript_ConstructionWorker::
+
+MarmaroIsland_EventScript_PsychicM::
 # 146 "data/maps/MarmaroIsland/scripts.pory"
 	lock
 # 147 "data/maps/MarmaroIsland/scripts.pory"
 	faceplayer
 # 148 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_ConstructionWorker_Text_0
+	speakername MarmaroIsland_EventScript_PsychicM_Text_0
 # 149 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_ConstructionWorker_Text_1
+	msgbox MarmaroIsland_EventScript_PsychicM_Text_1
 # 150 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
 # 151 "data/maps/MarmaroIsland/scripts.pory"
+	release
+	end
+
+
+MarmaroIsland_EventScript_ConstructionWorker::
+# 157 "data/maps/MarmaroIsland/scripts.pory"
+	lock
+# 158 "data/maps/MarmaroIsland/scripts.pory"
+	faceplayer
+# 159 "data/maps/MarmaroIsland/scripts.pory"
+	speakername MarmaroIsland_EventScript_ConstructionWorker_Text_0
+# 160 "data/maps/MarmaroIsland/scripts.pory"
+	msgbox MarmaroIsland_EventScript_ConstructionWorker_Text_1
+# 161 "data/maps/MarmaroIsland/scripts.pory"
+	closemessage
+# 162 "data/maps/MarmaroIsland/scripts.pory"
 	goto_if_unset FLAG_GOT_DIG_TM, MarmaroIsland_EventScript_ConstructionWorker_2
 MarmaroIsland_EventScript_ConstructionWorker_1:
-# 160 "data/maps/MarmaroIsland/scripts.pory"
+# 171 "data/maps/MarmaroIsland/scripts.pory"
 	release
 	end
 
 MarmaroIsland_EventScript_ConstructionWorker_2:
-# 153 "data/maps/MarmaroIsland/scripts.pory"
+# 164 "data/maps/MarmaroIsland/scripts.pory"
 	speakername MarmaroIsland_EventScript_ConstructionWorker_Text_0
-# 154 "data/maps/MarmaroIsland/scripts.pory"
+# 165 "data/maps/MarmaroIsland/scripts.pory"
 	msgbox MarmaroIsland_EventScript_ConstructionWorker_Text_2
-# 155 "data/maps/MarmaroIsland/scripts.pory"
+# 166 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
-# 156 "data/maps/MarmaroIsland/scripts.pory"
+# 167 "data/maps/MarmaroIsland/scripts.pory"
 	delay 5
-# 157 "data/maps/MarmaroIsland/scripts.pory"
+# 168 "data/maps/MarmaroIsland/scripts.pory"
 	giveitem ITEM_TM_DIG
-# 158 "data/maps/MarmaroIsland/scripts.pory"
+# 169 "data/maps/MarmaroIsland/scripts.pory"
 	setflag FLAG_GOT_DIG_TM
 	goto MarmaroIsland_EventScript_ConstructionWorker_1
 
 
 MarmaroIsland_EventScript_Worker::
-# 166 "data/maps/MarmaroIsland/scripts.pory"
-	lock
-# 167 "data/maps/MarmaroIsland/scripts.pory"
-	faceplayer
-# 168 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_ConstructionWorker_Text_0
-# 169 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_Worker_Text_0
-# 170 "data/maps/MarmaroIsland/scripts.pory"
-	closemessage
-# 171 "data/maps/MarmaroIsland/scripts.pory"
-	release
-	end
-
-
-MarmaroIsland_EventScript_ConstructionWorker2::
 # 177 "data/maps/MarmaroIsland/scripts.pory"
 	lock
 # 178 "data/maps/MarmaroIsland/scripts.pory"
@@ -277,7 +283,7 @@ MarmaroIsland_EventScript_ConstructionWorker2::
 # 179 "data/maps/MarmaroIsland/scripts.pory"
 	speakername MarmaroIsland_EventScript_ConstructionWorker_Text_0
 # 180 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_ConstructionWorker2_Text_0
+	msgbox MarmaroIsland_EventScript_Worker_Text_0
 # 181 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
 # 182 "data/maps/MarmaroIsland/scripts.pory"
@@ -285,118 +291,118 @@ MarmaroIsland_EventScript_ConstructionWorker2::
 	end
 
 
-MarmaroIsland_EventScript_PokefanF::
+MarmaroIsland_EventScript_ConstructionWorker2::
 # 188 "data/maps/MarmaroIsland/scripts.pory"
 	lock
 # 189 "data/maps/MarmaroIsland/scripts.pory"
 	faceplayer
 # 190 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_PokefanF_Text_0
+	speakername MarmaroIsland_EventScript_ConstructionWorker_Text_0
+# 191 "data/maps/MarmaroIsland/scripts.pory"
+	msgbox MarmaroIsland_EventScript_ConstructionWorker2_Text_0
+# 192 "data/maps/MarmaroIsland/scripts.pory"
+	closemessage
 # 193 "data/maps/MarmaroIsland/scripts.pory"
+	release
+	end
+
+
+MarmaroIsland_EventScript_PokefanF::
+# 199 "data/maps/MarmaroIsland/scripts.pory"
+	lock
+# 200 "data/maps/MarmaroIsland/scripts.pory"
+	faceplayer
+# 201 "data/maps/MarmaroIsland/scripts.pory"
+	speakername MarmaroIsland_EventScript_PokefanF_Text_0
+# 204 "data/maps/MarmaroIsland/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_MARMARO_TIMER_BALL
-# 194 "data/maps/MarmaroIsland/scripts.pory"
+# 205 "data/maps/MarmaroIsland/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MarmaroIsland_EventScript_PokefanF_2
-# 203 "data/maps/MarmaroIsland/scripts.pory"
+# 214 "data/maps/MarmaroIsland/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_MARMARO_TIMER_BALL
-# 204 "data/maps/MarmaroIsland/scripts.pory"
+# 215 "data/maps/MarmaroIsland/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MarmaroIsland_EventScript_PokefanF_5
-# 214 "data/maps/MarmaroIsland/scripts.pory"
+# 225 "data/maps/MarmaroIsland/scripts.pory"
 	msgbox MarmaroIsland_EventScript_PokefanF_Text_3
-# 215 "data/maps/MarmaroIsland/scripts.pory"
+# 226 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
-# 217 "data/maps/MarmaroIsland/scripts.pory"
+# 228 "data/maps/MarmaroIsland/scripts.pory"
 	checkitem ITEM_TIMER_BALL
-# 218 "data/maps/MarmaroIsland/scripts.pory"
+# 229 "data/maps/MarmaroIsland/scripts.pory"
 	delay 30
-# 219 "data/maps/MarmaroIsland/scripts.pory"
+# 230 "data/maps/MarmaroIsland/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq MarmaroIsland_EventScript_PokefanF_8
-# 229 "data/maps/MarmaroIsland/scripts.pory"
+# 240 "data/maps/MarmaroIsland/scripts.pory"
 	speakername MarmaroIsland_EventScript_PokefanF_Text_0
-# 230 "data/maps/MarmaroIsland/scripts.pory"
+# 241 "data/maps/MarmaroIsland/scripts.pory"
 	msgbox MarmaroIsland_EventScript_PokefanF_Text_5
-# 231 "data/maps/MarmaroIsland/scripts.pory"
+# 242 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
-# 232 "data/maps/MarmaroIsland/scripts.pory"
+# 243 "data/maps/MarmaroIsland/scripts.pory"
 	removeitem ITEM_TIMER_BALL
-# 233 "data/maps/MarmaroIsland/scripts.pory"
+# 244 "data/maps/MarmaroIsland/scripts.pory"
 	delay 5
-# 234 "data/maps/MarmaroIsland/scripts.pory"
+# 245 "data/maps/MarmaroIsland/scripts.pory"
 	giveitem ITEM_QUICK_BALL, 3
-# 235 "data/maps/MarmaroIsland/scripts.pory"
+# 246 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
-# 237 "data/maps/MarmaroIsland/scripts.pory"
+# 248 "data/maps/MarmaroIsland/scripts.pory"
 	delay 20
-# 238 "data/maps/MarmaroIsland/scripts.pory"
+# 249 "data/maps/MarmaroIsland/scripts.pory"
 	completequest QUEST_MARMARO_TIMER_BALL
 MarmaroIsland_EventScript_PokefanF_4:
-# 241 "data/maps/MarmaroIsland/scripts.pory"
+# 252 "data/maps/MarmaroIsland/scripts.pory"
 	release
 	end
 
 MarmaroIsland_EventScript_PokefanF_2:
-# 196 "data/maps/MarmaroIsland/scripts.pory"
+# 207 "data/maps/MarmaroIsland/scripts.pory"
 	msgbox MarmaroIsland_EventScript_PokefanF_Text_1
-# 197 "data/maps/MarmaroIsland/scripts.pory"
+# 208 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
-# 198 "data/maps/MarmaroIsland/scripts.pory"
+# 209 "data/maps/MarmaroIsland/scripts.pory"
 	release
 	end
 
 MarmaroIsland_EventScript_PokefanF_5:
-# 206 "data/maps/MarmaroIsland/scripts.pory"
+# 217 "data/maps/MarmaroIsland/scripts.pory"
 	msgbox MarmaroIsland_EventScript_PokefanF_Text_2
-# 207 "data/maps/MarmaroIsland/scripts.pory"
+# 218 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
-# 209 "data/maps/MarmaroIsland/scripts.pory"
+# 220 "data/maps/MarmaroIsland/scripts.pory"
 	delay 20
-# 210 "data/maps/MarmaroIsland/scripts.pory"
+# 221 "data/maps/MarmaroIsland/scripts.pory"
 	startquest QUEST_MARMARO_TIMER_BALL
 	goto MarmaroIsland_EventScript_PokefanF_4
 
 MarmaroIsland_EventScript_PokefanF_8:
-# 221 "data/maps/MarmaroIsland/scripts.pory"
+# 232 "data/maps/MarmaroIsland/scripts.pory"
 	speakername MarmaroIsland_EventScript_PokefanF_Text_0
-# 222 "data/maps/MarmaroIsland/scripts.pory"
+# 233 "data/maps/MarmaroIsland/scripts.pory"
 	msgbox MarmaroIsland_EventScript_PokefanF_Text_4
-# 223 "data/maps/MarmaroIsland/scripts.pory"
+# 234 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
-# 224 "data/maps/MarmaroIsland/scripts.pory"
+# 235 "data/maps/MarmaroIsland/scripts.pory"
 	release
 	end
 
 
 MarmaroIsland_EventScript_Wurmple::
-# 247 "data/maps/MarmaroIsland/scripts.pory"
+# 258 "data/maps/MarmaroIsland/scripts.pory"
 	lock
-# 248 "data/maps/MarmaroIsland/scripts.pory"
+# 259 "data/maps/MarmaroIsland/scripts.pory"
 	faceplayer
-# 249 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_Wurmple_Text_0
-# 250 "data/maps/MarmaroIsland/scripts.pory"
-	playmoncry SPECIES_WURMPLE, CRY_MODE_NORMAL
-# 251 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_Wurmple_Text_1
-# 252 "data/maps/MarmaroIsland/scripts.pory"
-	waitmoncry
-# 253 "data/maps/MarmaroIsland/scripts.pory"
-	closemessage
-# 254 "data/maps/MarmaroIsland/scripts.pory"
-	release
-	end
-
-
-MarmaroIsland_EventScript_Hiker::
 # 260 "data/maps/MarmaroIsland/scripts.pory"
-	lock
+	speakername MarmaroIsland_EventScript_Wurmple_Text_0
 # 261 "data/maps/MarmaroIsland/scripts.pory"
-	faceplayer
+	playmoncry SPECIES_WURMPLE, CRY_MODE_NORMAL
 # 262 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_Hiker_Text_0
+	msgbox MarmaroIsland_EventScript_Wurmple_Text_1
 # 263 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_Hiker_Text_1
+	waitmoncry
 # 264 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
 # 265 "data/maps/MarmaroIsland/scripts.pory"
@@ -404,132 +410,132 @@ MarmaroIsland_EventScript_Hiker::
 	end
 
 
-MarmaroIsland_EventScript_Beauty::
+MarmaroIsland_EventScript_Hiker::
 # 271 "data/maps/MarmaroIsland/scripts.pory"
 	lock
 # 272 "data/maps/MarmaroIsland/scripts.pory"
 	faceplayer
 # 273 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_Beauty_Text_0
+	speakername MarmaroIsland_EventScript_Hiker_Text_0
+# 274 "data/maps/MarmaroIsland/scripts.pory"
+	msgbox MarmaroIsland_EventScript_Hiker_Text_1
+# 275 "data/maps/MarmaroIsland/scripts.pory"
+	closemessage
 # 276 "data/maps/MarmaroIsland/scripts.pory"
+	release
+	end
+
+
+MarmaroIsland_EventScript_Beauty::
+# 282 "data/maps/MarmaroIsland/scripts.pory"
+	lock
+# 283 "data/maps/MarmaroIsland/scripts.pory"
+	faceplayer
+# 284 "data/maps/MarmaroIsland/scripts.pory"
+	speakername MarmaroIsland_EventScript_Beauty_Text_0
+# 287 "data/maps/MarmaroIsland/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_MARMARO_EGG_QUEST
-# 277 "data/maps/MarmaroIsland/scripts.pory"
+# 288 "data/maps/MarmaroIsland/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MarmaroIsland_EventScript_Beauty_2
-# 286 "data/maps/MarmaroIsland/scripts.pory"
+# 297 "data/maps/MarmaroIsland/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_MARMARO_EGG_QUEST
-# 287 "data/maps/MarmaroIsland/scripts.pory"
+# 298 "data/maps/MarmaroIsland/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MarmaroIsland_EventScript_Beauty_5
-# 297 "data/maps/MarmaroIsland/scripts.pory"
+# 308 "data/maps/MarmaroIsland/scripts.pory"
 	msgbox MarmaroIsland_EventScript_Beauty_Text_3
-# 298 "data/maps/MarmaroIsland/scripts.pory"
+# 309 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
-# 300 "data/maps/MarmaroIsland/scripts.pory"
+# 311 "data/maps/MarmaroIsland/scripts.pory"
 	checkforspecies SPECIES_EGG, OPEN_PARTY_SCREEN, MarmaroIsland_EventScript_Beauty_ReactToEgg
-# 303 "data/maps/MarmaroIsland/scripts.pory"
+# 314 "data/maps/MarmaroIsland/scripts.pory"
 	speakername MarmaroIsland_EventScript_Beauty_Text_0
-# 304 "data/maps/MarmaroIsland/scripts.pory"
+# 315 "data/maps/MarmaroIsland/scripts.pory"
 	msgbox MarmaroIsland_EventScript_Beauty_Text_4
-# 305 "data/maps/MarmaroIsland/scripts.pory"
+# 316 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
 MarmaroIsland_EventScript_Beauty_4:
-# 307 "data/maps/MarmaroIsland/scripts.pory"
+# 318 "data/maps/MarmaroIsland/scripts.pory"
 	release
 	end
 
 MarmaroIsland_EventScript_Beauty_2:
-# 279 "data/maps/MarmaroIsland/scripts.pory"
+# 290 "data/maps/MarmaroIsland/scripts.pory"
 	msgbox MarmaroIsland_EventScript_Beauty_Text_1
-# 280 "data/maps/MarmaroIsland/scripts.pory"
+# 291 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
-# 281 "data/maps/MarmaroIsland/scripts.pory"
+# 292 "data/maps/MarmaroIsland/scripts.pory"
 	release
 	end
 
 MarmaroIsland_EventScript_Beauty_5:
-# 289 "data/maps/MarmaroIsland/scripts.pory"
+# 300 "data/maps/MarmaroIsland/scripts.pory"
 	msgbox MarmaroIsland_EventScript_Beauty_Text_2
-# 290 "data/maps/MarmaroIsland/scripts.pory"
+# 301 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
-# 292 "data/maps/MarmaroIsland/scripts.pory"
+# 303 "data/maps/MarmaroIsland/scripts.pory"
 	delay 20
-# 293 "data/maps/MarmaroIsland/scripts.pory"
+# 304 "data/maps/MarmaroIsland/scripts.pory"
 	startquest QUEST_MARMARO_EGG_QUEST
 	goto MarmaroIsland_EventScript_Beauty_4
 
 
 MarmaroIsland_EventScript_Beauty_ReactToEgg::
-# 312 "data/maps/MarmaroIsland/scripts.pory"
-	lock
-# 313 "data/maps/MarmaroIsland/scripts.pory"
-	delay 20
-# 314 "data/maps/MarmaroIsland/scripts.pory"
-	applymovement 22, Common_Movement_Heart
-# 315 "data/maps/MarmaroIsland/scripts.pory"
-	waitmovement 0
-# 316 "data/maps/MarmaroIsland/scripts.pory"
-	delay 10
-# 317 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_Beauty_Text_0
-# 318 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_Beauty_ReactToEgg_Text_0
-# 319 "data/maps/MarmaroIsland/scripts.pory"
-	closemessage
-# 320 "data/maps/MarmaroIsland/scripts.pory"
-	delay 10
-# 321 "data/maps/MarmaroIsland/scripts.pory"
-	applymovement 22, Common_Movement_ExclamationMark
-# 322 "data/maps/MarmaroIsland/scripts.pory"
-	waitmovement 0
 # 323 "data/maps/MarmaroIsland/scripts.pory"
-	delay 10
+	lock
 # 324 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_Beauty_Text_0
+	delay 20
 # 325 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_Beauty_ReactToEgg_Text_1
+	applymovement 22, Common_Movement_Heart
 # 326 "data/maps/MarmaroIsland/scripts.pory"
-	closemessage
+	waitmovement 0
 # 327 "data/maps/MarmaroIsland/scripts.pory"
-	delay 5
+	delay 10
 # 328 "data/maps/MarmaroIsland/scripts.pory"
-	giveitem ITEM_ABILITY_PATCH
+	speakername MarmaroIsland_EventScript_Beauty_Text_0
 # 329 "data/maps/MarmaroIsland/scripts.pory"
+	msgbox MarmaroIsland_EventScript_Beauty_ReactToEgg_Text_0
+# 330 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
 # 331 "data/maps/MarmaroIsland/scripts.pory"
-	delay 20
+	delay 10
 # 332 "data/maps/MarmaroIsland/scripts.pory"
-	completequest QUEST_MARMARO_EGG_QUEST
+	applymovement 22, Common_Movement_ExclamationMark
+# 333 "data/maps/MarmaroIsland/scripts.pory"
+	waitmovement 0
 # 334 "data/maps/MarmaroIsland/scripts.pory"
-	release
-	end
-
-
-MarmaroIsland_EventScript_SwimmerM::
-# 340 "data/maps/MarmaroIsland/scripts.pory"
-	lock
-# 341 "data/maps/MarmaroIsland/scripts.pory"
-	faceplayer
-# 342 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_SwimmerM_Text_0
-# 343 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_SwimmerM_Text_1
-# 344 "data/maps/MarmaroIsland/scripts.pory"
+	delay 10
+# 335 "data/maps/MarmaroIsland/scripts.pory"
+	speakername MarmaroIsland_EventScript_Beauty_Text_0
+# 336 "data/maps/MarmaroIsland/scripts.pory"
+	msgbox MarmaroIsland_EventScript_Beauty_ReactToEgg_Text_1
+# 337 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
+# 338 "data/maps/MarmaroIsland/scripts.pory"
+	delay 5
+# 339 "data/maps/MarmaroIsland/scripts.pory"
+	giveitem ITEM_ABILITY_PATCH
+# 340 "data/maps/MarmaroIsland/scripts.pory"
+	closemessage
+# 342 "data/maps/MarmaroIsland/scripts.pory"
+	delay 20
+# 343 "data/maps/MarmaroIsland/scripts.pory"
+	completequest QUEST_MARMARO_EGG_QUEST
 # 345 "data/maps/MarmaroIsland/scripts.pory"
 	release
 	end
 
 
-MarmaroIsland_EventScript_Gentleman::
+MarmaroIsland_EventScript_SwimmerM::
 # 351 "data/maps/MarmaroIsland/scripts.pory"
 	lock
 # 352 "data/maps/MarmaroIsland/scripts.pory"
 	faceplayer
 # 353 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_Gentleman_Text_0
+	speakername MarmaroIsland_EventScript_SwimmerM_Text_0
 # 354 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_Gentleman_Text_1
+	msgbox MarmaroIsland_EventScript_SwimmerM_Text_1
 # 355 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
 # 356 "data/maps/MarmaroIsland/scripts.pory"
@@ -537,15 +543,15 @@ MarmaroIsland_EventScript_Gentleman::
 	end
 
 
-MarmaroIsland_EventScript_SwimmerF::
+MarmaroIsland_EventScript_Gentleman::
 # 362 "data/maps/MarmaroIsland/scripts.pory"
 	lock
 # 363 "data/maps/MarmaroIsland/scripts.pory"
 	faceplayer
 # 364 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_SwimmerM_Text_0
+	speakername MarmaroIsland_EventScript_Gentleman_Text_0
 # 365 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_SwimmerF_Text_0
+	msgbox MarmaroIsland_EventScript_Gentleman_Text_1
 # 366 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
 # 367 "data/maps/MarmaroIsland/scripts.pory"
@@ -553,15 +559,15 @@ MarmaroIsland_EventScript_SwimmerF::
 	end
 
 
-MarmaroIsland_EventScript_OldWoman::
+MarmaroIsland_EventScript_SwimmerF::
 # 373 "data/maps/MarmaroIsland/scripts.pory"
 	lock
 # 374 "data/maps/MarmaroIsland/scripts.pory"
 	faceplayer
 # 375 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_OldWoman_Text_0
+	speakername MarmaroIsland_EventScript_SwimmerM_Text_0
 # 376 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_OldWoman_Text_1
+	msgbox MarmaroIsland_EventScript_SwimmerF_Text_0
 # 377 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
 # 378 "data/maps/MarmaroIsland/scripts.pory"
@@ -569,15 +575,15 @@ MarmaroIsland_EventScript_OldWoman::
 	end
 
 
-MarmaroIsland_EventScript_ChimeraGruntBlockingMine::
+MarmaroIsland_EventScript_OldWoman::
 # 384 "data/maps/MarmaroIsland/scripts.pory"
 	lock
 # 385 "data/maps/MarmaroIsland/scripts.pory"
 	faceplayer
 # 386 "data/maps/MarmaroIsland/scripts.pory"
-	speakername MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_0
+	speakername MarmaroIsland_EventScript_OldWoman_Text_0
 # 387 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_1
+	msgbox MarmaroIsland_EventScript_OldWoman_Text_1
 # 388 "data/maps/MarmaroIsland/scripts.pory"
 	closemessage
 # 389 "data/maps/MarmaroIsland/scripts.pory"
@@ -585,14 +591,30 @@ MarmaroIsland_EventScript_ChimeraGruntBlockingMine::
 	end
 
 
-MarmaroIsland_EventScript_FossilHouseSign::
+MarmaroIsland_EventScript_ChimeraGruntBlockingMine::
 # 395 "data/maps/MarmaroIsland/scripts.pory"
 	lock
 # 396 "data/maps/MarmaroIsland/scripts.pory"
-	msgbox MarmaroIsland_EventScript_FossilHouseSign_Text_0
+	faceplayer
 # 397 "data/maps/MarmaroIsland/scripts.pory"
-	closemessage
+	speakername MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_0
 # 398 "data/maps/MarmaroIsland/scripts.pory"
+	msgbox MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_1
+# 399 "data/maps/MarmaroIsland/scripts.pory"
+	closemessage
+# 400 "data/maps/MarmaroIsland/scripts.pory"
+	release
+	end
+
+
+MarmaroIsland_EventScript_FossilHouseSign::
+# 406 "data/maps/MarmaroIsland/scripts.pory"
+	lock
+# 407 "data/maps/MarmaroIsland/scripts.pory"
+	msgbox MarmaroIsland_EventScript_FossilHouseSign_Text_0
+# 408 "data/maps/MarmaroIsland/scripts.pory"
+	closemessage
+# 409 "data/maps/MarmaroIsland/scripts.pory"
 	release
 	end
 
@@ -691,39 +713,44 @@ MarmaroIsland_EventScript_BlackBelt_Text_1:
 	.string "was supposed to be the strongest in\l"
 	.string "the region, but she's gone missing.$"
 
+MarmaroIsland_EventScript_BlackBelt_Text_2:
+# 133 "data/maps/MarmaroIsland/scripts.pory"
+	.string "You seem like a strong young Trainer.\n"
+	.string "Take this, and use it to defend others!$"
+
 MarmaroIsland_EventScript_PsychicM_Text_0:
-# 137 "data/maps/MarmaroIsland/scripts.pory"
+# 148 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Psychic$"
 
 MarmaroIsland_EventScript_PsychicM_Text_1:
-# 138 "data/maps/MarmaroIsland/scripts.pory"
+# 149 "data/maps/MarmaroIsland/scripts.pory"
 	.string "The white stone of Marmaro Island has\n"
 	.string "special properties! In Ancient Ilios,\l"
 	.string "people used to build temples with it to\l"
 	.string "honor the gods.$"
 
 MarmaroIsland_EventScript_ConstructionWorker_Text_0:
-# 148 "data/maps/MarmaroIsland/scripts.pory"
+# 159 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Worker$"
 
 MarmaroIsland_EventScript_ConstructionWorker_Text_1:
-# 149 "data/maps/MarmaroIsland/scripts.pory"
+# 160 "data/maps/MarmaroIsland/scripts.pory"
 	.string "We do our best to balance digging and\n"
 	.string "sustainability.$"
 
 MarmaroIsland_EventScript_ConstructionWorker_Text_2:
-# 154 "data/maps/MarmaroIsland/scripts.pory"
+# 165 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Do you want to do some digging, too?\n"
 	.string "Take this.$"
 
 MarmaroIsland_EventScript_Worker_Text_0:
-# 169 "data/maps/MarmaroIsland/scripts.pory"
+# 180 "data/maps/MarmaroIsland/scripts.pory"
 	.string "It's hard work to keep the minecart\n"
 	.string "rails clear! There's always loose stone\l"
 	.string "falling on the tracks.$"
 
 MarmaroIsland_EventScript_ConstructionWorker2_Text_0:
-# 180 "data/maps/MarmaroIsland/scripts.pory"
+# 191 "data/maps/MarmaroIsland/scripts.pory"
 	.string "We move full minecarts off the tracks\n"
 	.string "to prepare for shipping. Before sending\l"
 	.string "it off, we sort through it all to make\l"
@@ -732,16 +759,16 @@ MarmaroIsland_EventScript_ConstructionWorker2_Text_0:
 	.string "piles!$"
 
 MarmaroIsland_EventScript_PokefanF_Text_0:
-# 190 "data/maps/MarmaroIsland/scripts.pory"
+# 201 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Pokéfan$"
 
 MarmaroIsland_EventScript_PokefanF_Text_1:
-# 196 "data/maps/MarmaroIsland/scripts.pory"
+# 207 "data/maps/MarmaroIsland/scripts.pory"
 	.string "The Timer Ball is gonna work perfectly,\n"
 	.string "I know it!$"
 
 MarmaroIsland_EventScript_PokefanF_Text_2:
-# 206 "data/maps/MarmaroIsland/scripts.pory"
+# 217 "data/maps/MarmaroIsland/scripts.pory"
 	.string "My Wurmple and I have been chasing down\n"
 	.string "a Growlithe for hours, hitting it with\l"
 	.string "String Shot to slow it down. After all\l"
@@ -750,19 +777,19 @@ MarmaroIsland_EventScript_PokefanF_Text_2:
 	.string "finally catch the Growlithe!$"
 
 MarmaroIsland_EventScript_PokefanF_Text_3:
-# 214 "data/maps/MarmaroIsland/scripts.pory"
+# 225 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Hiya! Did you bring that Timer Ball you\n"
 	.string "asked for?$"
 
 MarmaroIsland_EventScript_PokefanF_Text_4:
-# 222 "data/maps/MarmaroIsland/scripts.pory"
+# 233 "data/maps/MarmaroIsland/scripts.pory"
 	.string "I guess I'm still out of luck...\p"
 	.string "When you can, {COLOR GREEN}bring me a Timer Ball{COLOR DARK_GRAY} so I\n"
 	.string "can catch this Growlithe I've been\l"
 	.string "following around the Island!$"
 
 MarmaroIsland_EventScript_PokefanF_Text_5:
-# 230 "data/maps/MarmaroIsland/scripts.pory"
+# 241 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Cheers, you brought a Timer Ball! I'll\n"
 	.string "take that off your hands...\p"
 	.string "Here, take these Quick Balls. I was\n"
@@ -770,37 +797,37 @@ MarmaroIsland_EventScript_PokefanF_Text_5:
 	.string "but the battle took too long!$"
 
 MarmaroIsland_EventScript_Wurmple_Text_0:
-# 249 "data/maps/MarmaroIsland/scripts.pory"
+# 260 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Wurmple$"
 
 MarmaroIsland_EventScript_Wurmple_Text_1:
-# 251 "data/maps/MarmaroIsland/scripts.pory"
+# 262 "data/maps/MarmaroIsland/scripts.pory"
 	.string "St-st-st.$"
 
 MarmaroIsland_EventScript_Hiker_Text_0:
-# 262 "data/maps/MarmaroIsland/scripts.pory"
+# 273 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Hiker$"
 
 MarmaroIsland_EventScript_Hiker_Text_1:
-# 263 "data/maps/MarmaroIsland/scripts.pory"
+# 274 "data/maps/MarmaroIsland/scripts.pory"
 	.string "The marble quarry of Marmaro Island is\n"
 	.string "famous in the Ilios Region. Everything\l"
 	.string "from treasure to precious stones can\l"
 	.string "be found in the rock here!$"
 
 MarmaroIsland_EventScript_Beauty_Text_0:
-# 273 "data/maps/MarmaroIsland/scripts.pory"
+# 284 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Beauty$"
 
 MarmaroIsland_EventScript_Beauty_Text_1:
-# 279 "data/maps/MarmaroIsland/scripts.pory"
+# 290 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Holding your Pokémon Egg has convinced\n"
 	.string "me. I'm gonna head to the Sunset\l"
 	.string "Wildlife Conservation Center in Kipos\l"
 	.string "Town and volunteer to help out!$"
 
 MarmaroIsland_EventScript_Beauty_Text_2:
-# 289 "data/maps/MarmaroIsland/scripts.pory"
+# 300 "data/maps/MarmaroIsland/scripts.pory"
 	.string "See up there? That Altaria laid an Egg!\n"
 	.string "I'd give anything to hold a Pokémon Egg,\l"
 	.string "they're just so cool!\p"
@@ -811,7 +838,7 @@ MarmaroIsland_EventScript_Beauty_Text_2:
 	.string "parents is unethical.$"
 
 MarmaroIsland_EventScript_Beauty_Text_3:
-# 297 "data/maps/MarmaroIsland/scripts.pory"
+# 308 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Chaire! Are you here to check out the\n"
 	.string "Altaria nest?\p"
 	.string "Oh, right! Do you have a {COLOR GREEN}Pokémon Egg in\n"
@@ -819,7 +846,7 @@ MarmaroIsland_EventScript_Beauty_Text_3:
 	.string "always wanted to!$"
 
 MarmaroIsland_EventScript_Beauty_Text_4:
-# 304 "data/maps/MarmaroIsland/scripts.pory"
+# 315 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Aw, I suppose Pokémon Eggs aren't all\n"
 	.string "that common.\p"
 	.string "Bring me a {COLOR GREEN}Pokémon Egg to hold{COLOR DARK_GRAY} if you\n"
@@ -827,13 +854,13 @@ MarmaroIsland_EventScript_Beauty_Text_4:
 	.string "one myself.$"
 
 MarmaroIsland_EventScript_Beauty_ReactToEgg_Text_0:
-# 318 "data/maps/MarmaroIsland/scripts.pory"
+# 329 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Amazing! Almost all Pokémon species lay\n"
 	.string "Eggs, and each is slightly different. I'd\l"
 	.string "love to learn even more about them...$"
 
 MarmaroIsland_EventScript_Beauty_ReactToEgg_Text_1:
-# 325 "data/maps/MarmaroIsland/scripts.pory"
+# 336 "data/maps/MarmaroIsland/scripts.pory"
 	.string "That's right! In Kipos Town, the Sunset\n"
 	.string "Wildlife Conservation Center helps\l"
 	.string "Pokémon with Eggs. Maybe I'll go ahead\l"
@@ -842,37 +869,37 @@ MarmaroIsland_EventScript_Beauty_ReactToEgg_Text_1:
 	.string "want you to have this!$"
 
 MarmaroIsland_EventScript_SwimmerM_Text_0:
-# 342 "data/maps/MarmaroIsland/scripts.pory"
+# 353 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Swimmer$"
 
 MarmaroIsland_EventScript_SwimmerM_Text_1:
-# 343 "data/maps/MarmaroIsland/scripts.pory"
+# 354 "data/maps/MarmaroIsland/scripts.pory"
 	.string "I was on such a roll swimming, I almost\n"
 	.string "went right past Marmaro Island!$"
 
 MarmaroIsland_EventScript_Gentleman_Text_0:
-# 353 "data/maps/MarmaroIsland/scripts.pory"
+# 364 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Gentleman$"
 
 MarmaroIsland_EventScript_Gentleman_Text_1:
-# 354 "data/maps/MarmaroIsland/scripts.pory"
+# 365 "data/maps/MarmaroIsland/scripts.pory"
 	.string "The way south around Marmaro Island is\n"
 	.string "blocked by that old fellow with the\l"
 	.string "boat. The best way to pass is just to\l"
 	.string "cross the island on foot.$"
 
 MarmaroIsland_EventScript_SwimmerF_Text_0:
-# 365 "data/maps/MarmaroIsland/scripts.pory"
+# 376 "data/maps/MarmaroIsland/scripts.pory"
 	.string "To get to Myrrini Island, I have to keep\n"
 	.string "swimming east! I just stopped here for\l"
 	.string "a quick rest.$"
 
 MarmaroIsland_EventScript_OldWoman_Text_0:
-# 375 "data/maps/MarmaroIsland/scripts.pory"
+# 386 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Old Woman$"
 
 MarmaroIsland_EventScript_OldWoman_Text_1:
-# 376 "data/maps/MarmaroIsland/scripts.pory"
+# 387 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Not everyone is a skilled enough\n"
 	.string "Trainer to use Surf between islands.\l"
 	.string "That's why there are bridges\l"
@@ -880,18 +907,18 @@ MarmaroIsland_EventScript_OldWoman_Text_1:
 	.string "services are common.$"
 
 MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_0:
-# 386 "data/maps/MarmaroIsland/scripts.pory"
+# 397 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Chimera Grunt$"
 
 MarmaroIsland_EventScript_ChimeraGruntBlockingMine_Text_1:
-# 387 "data/maps/MarmaroIsland/scripts.pory"
+# 398 "data/maps/MarmaroIsland/scripts.pory"
 	.string "Uhh, hey there, bud! There's been\n"
 	.string "reports of... big, scary monsters in the\l"
 	.string "Marmaro Mines! Yeah, you don't want to\l"
 	.string "go in here! Now, move along.$"
 
 MarmaroIsland_EventScript_FossilHouseSign_Text_0:
-# 396 "data/maps/MarmaroIsland/scripts.pory"
+# 407 "data/maps/MarmaroIsland/scripts.pory"
 	.string "There's a message freshly painted on\n"
 	.string "the sign...\p"
 	.string "Marmaro Paleo-Fossil Services!\n"

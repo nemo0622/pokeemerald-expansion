@@ -44,15 +44,14 @@ script AsfalHills_House1_EventScript_LittleBoy
         }
         else
         {
-            applymovement(1, Common_Movement_Heart)
-            waitmovement(0)
+            emote(1, EMOTE_HEART)
             speakername("Short Boy")
             msgbox(format("Wow, it's so cool! It really IS super tall!\p I'm gonna live like a Girafarig to get as tall as I can. My Dad says I should give gifts to people who help me, so here!"))
             closemessage
-            giveitem(ITEM_FRESH_START_MOCHI)
+            giveitem(ITEM_TM_SHOCK_WAVE)
             delay(5)
             speakername("Short Boy")
-            msgbox(format("That Mochi resets Pokémon stats to their basic level. I think it's helpful for some special training, but I just think they're yummy!"))
+            msgbox(format("The move {COLOR GREEN}Shock Wave{COLOR DARK_GRAY} literally never misses! Like, never EVER!"))
             closemessage
 
             delay(20)

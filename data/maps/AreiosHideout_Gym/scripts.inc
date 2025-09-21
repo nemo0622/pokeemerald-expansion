@@ -341,85 +341,80 @@ AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript::
 	closemessage
 # 251 "data/maps/AreiosHideout_Gym/scripts.pory"
 	giveitem ITEM_TM_DRAGON_CLAW
-# 254 "data/maps/AreiosHideout_Gym/scripts.pory"
-	delay 20
-# 255 "data/maps/AreiosHideout_Gym/scripts.pory"
-	completequest QUEST_GYM_8
-# 257 "data/maps/AreiosHideout_Gym/scripts.pory"
-	delay 10
-# 258 "data/maps/AreiosHideout_Gym/scripts.pory"
-	emote OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM
-# 259 "data/maps/AreiosHideout_Gym/scripts.pory"
-	msgbox AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript_Text_4
-# 260 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 252 "data/maps/AreiosHideout_Gym/scripts.pory"
 	closemessage
-# 263 "data/maps/AreiosHideout_Gym/scripts.pory"
-	clearflag FLAG_HIDE_RANIA_AND_LEADERS_AREIOS
+# 253 "data/maps/AreiosHideout_Gym/scripts.pory"
+	delay 5
+# 254 "data/maps/AreiosHideout_Gym/scripts.pory"
+	msgbox AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript_Text_4
+# 255 "data/maps/AreiosHideout_Gym/scripts.pory"
+	closemessage
+# 256 "data/maps/AreiosHideout_Gym/scripts.pory"
+	delay 5
+# 257 "data/maps/AreiosHideout_Gym/scripts.pory"
+	givedecoration DECOR_ANCIENT_MECHANISM
+# 258 "data/maps/AreiosHideout_Gym/scripts.pory"
+	closemessage
+# 261 "data/maps/AreiosHideout_Gym/scripts.pory"
+	delay 20
+# 262 "data/maps/AreiosHideout_Gym/scripts.pory"
+	completequest QUEST_GYM_8
 # 264 "data/maps/AreiosHideout_Gym/scripts.pory"
-	setflag FLAG_CAN_ENCOUNTER_RAIKOU
+	delay 10
 # 265 "data/maps/AreiosHideout_Gym/scripts.pory"
-	setflag FLAG_CAN_ENCOUNTER_SUICUNE
+	emote OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM
 # 266 "data/maps/AreiosHideout_Gym/scripts.pory"
-	setflag FLAG_CAN_ENCOUNTER_ENTEI
-# 268 "data/maps/AreiosHideout_Gym/scripts.pory"
-	setflag FLAG_HIDE_MAP_NAME_POPUP
-# 269 "data/maps/AreiosHideout_Gym/scripts.pory"
-	warpcontinuescript MAP_AREIOS_HIDEOUT, 6, 11, AreiosHideout_EventScript_ChimeraLossScript
+	msgbox AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript_Text_5
+# 267 "data/maps/AreiosHideout_Gym/scripts.pory"
+	closemessage
 # 270 "data/maps/AreiosHideout_Gym/scripts.pory"
-	waitstate
+	clearflag FLAG_HIDE_RANIA_AND_LEADERS_AREIOS
+# 271 "data/maps/AreiosHideout_Gym/scripts.pory"
+	setflag FLAG_CAN_ENCOUNTER_RAIKOU
 # 272 "data/maps/AreiosHideout_Gym/scripts.pory"
+	setflag FLAG_CAN_ENCOUNTER_SUICUNE
+# 273 "data/maps/AreiosHideout_Gym/scripts.pory"
+	setflag FLAG_CAN_ENCOUNTER_ENTEI
+# 275 "data/maps/AreiosHideout_Gym/scripts.pory"
+	setflag FLAG_HIDE_MAP_NAME_POPUP
+# 276 "data/maps/AreiosHideout_Gym/scripts.pory"
+	warpcontinuescript MAP_AREIOS_HIDEOUT, 6, 11, AreiosHideout_EventScript_ChimeraLossScript
+# 277 "data/maps/AreiosHideout_Gym/scripts.pory"
+	waitstate
+# 279 "data/maps/AreiosHideout_Gym/scripts.pory"
 	release
 	end
 
 
-# 276 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 283 "data/maps/AreiosHideout_Gym/scripts.pory"
 AreiosHideout_Gym_Movement_EnteiRunAway:
-# 278 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 285 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_right
-# 279 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 286 "data/maps/AreiosHideout_Gym/scripts.pory"
 	jump_down
-# 280 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 287 "data/maps/AreiosHideout_Gym/scripts.pory"
 	jump_right
-# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 288 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_down
-# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 288 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_down
-# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 288 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_down
-# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 288 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_down
-# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 288 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_down
-# 281 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 288 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_down
-# 282 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 289 "data/maps/AreiosHideout_Gym/scripts.pory"
 	step_end
 
-# 284 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 291 "data/maps/AreiosHideout_Gym/scripts.pory"
 AreiosHideout_Gym_Movement_SuicuneRunAway:
-# 286 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 293 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_left
-# 286 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 293 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_left
-# 287 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 287 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 288 "data/maps/AreiosHideout_Gym/scripts.pory"
-	jump_down
-# 288 "data/maps/AreiosHideout_Gym/scripts.pory"
-	jump_down
-# 289 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 289 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 289 "data/maps/AreiosHideout_Gym/scripts.pory"
-	walk_fast_down
-# 290 "data/maps/AreiosHideout_Gym/scripts.pory"
-	step_end
-
-# 292 "data/maps/AreiosHideout_Gym/scripts.pory"
-AreiosHideout_Gym_Movement_RaikouRunAway:
 # 294 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_down
 # 294 "data/maps/AreiosHideout_Gym/scripts.pory"
@@ -435,6 +430,25 @@ AreiosHideout_Gym_Movement_RaikouRunAway:
 # 296 "data/maps/AreiosHideout_Gym/scripts.pory"
 	walk_fast_down
 # 297 "data/maps/AreiosHideout_Gym/scripts.pory"
+	step_end
+
+# 299 "data/maps/AreiosHideout_Gym/scripts.pory"
+AreiosHideout_Gym_Movement_RaikouRunAway:
+# 301 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 301 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 302 "data/maps/AreiosHideout_Gym/scripts.pory"
+	jump_down
+# 302 "data/maps/AreiosHideout_Gym/scripts.pory"
+	jump_down
+# 303 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 303 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 303 "data/maps/AreiosHideout_Gym/scripts.pory"
+	walk_fast_down
+# 304 "data/maps/AreiosHideout_Gym/scripts.pory"
 	step_end
 
 AreiosHideout_Gym_EventScript_Mamoswine_Text_0:
@@ -553,7 +567,14 @@ AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript_Text_3:
 	.string "In the rubble, a TM is sticking out.$"
 
 AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript_Text_4:
-# 259 "data/maps/AreiosHideout_Gym/scripts.pory"
+# 254 "data/maps/AreiosHideout_Gym/scripts.pory"
+	.string "Kalliope also seems to have left the\n"
+	.string "{COLOR GREEN}Ancient Mechanism{COLOR DARK_GRAY} in the stone piles.\l"
+	.string "Maybe it could decorate the Cabin on\l"
+	.string "Piraeus' ship?$"
+
+AreiosHideout_Gym_EventScript_Kalliope_DefeatedScript_Text_5:
+# 266 "data/maps/AreiosHideout_Gym/scripts.pory"
 	.string "There's a huge commotion outside!$"
 
 AreiosHideout_Gym_Text_ChimeraAdminFIntro::

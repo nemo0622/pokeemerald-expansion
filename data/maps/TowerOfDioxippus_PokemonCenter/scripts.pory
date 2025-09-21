@@ -63,7 +63,7 @@ script TowerOfDioxippus_PokemonCenter_EventScript_UniversityStudentRouteCheck
             delay(5)
 
             // give reward!
-            giveitem(ITEM_MAX_REVIVE, 10)
+            givedecoration(DECOR_GYARADOS_DOLL)
             closemessage
             delay(5)
 

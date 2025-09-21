@@ -4564,7 +4564,7 @@
     {
       "id": "LAYOUT_ERINYS_PATH_WEST",
       "name": "ErinysPath_West_Layout",
-      "width": 50,
+      "width": 64,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Pythios",

@@ -516,10 +516,10 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_POTTED_BERRY,
     },
 
-    [DECOR_SHOCKING_RELIC] =
+    [DECOR_ANCIENT_MECHANISM] =
     {
-        .id = DECOR_SHOCKING_RELIC,
-        .name = _("Shocking Relic"),
+        .id = DECOR_ANCIENT_MECHANISM,
+        .name = _("Ancient Mech."),
         .permission = DECORPERM_BEHIND_FLOOR,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,

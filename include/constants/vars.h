@@ -109,7 +109,7 @@
 #define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var
 #define VAR_RUSTBORO_CITY_STATE                          0x405A
 #define VAR_FORTREE_CITY_STATE                           0x405B // Unused Var
-#define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
+#define VAR_TIMES_MINED                                  0x405C // Times done mining minigame
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
 #define VAR_CHOSEN_WAKEWATER_CHALLENGER                  0x405F // ID of trainer chosen for the Wakewater Isle Champion Challenger

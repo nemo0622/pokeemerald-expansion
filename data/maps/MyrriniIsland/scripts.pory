@@ -711,3 +711,24 @@ movement MyrriniIsland_Movement_RaniaLeaves
     walk_up * 7
     step_end
 }
+
+script MyrriniIsland_EventScript_WomanGivesEggDoll
+{
+    lock
+    faceplayer
+    speakername("Woman")
+    msgbox(format("People sometimes leave the Eggs their Pokémon lay here. I take those Eggs and care for them... I don't know how anyone could be so heartless!"))
+    closemessage
+    if(!flag(FLAG_GOT_EGG_DOLL))
+    {
+        speakername("Woman")
+        msgbox(format("While I'm here, I like to crochet Pokémon dolls. Here's one I made to look like an Egg!"))
+        closemessage
+        delay(5)
+        givedecoration(DECOR_EGG_DOLL)
+        closemessage
+        setflag(FLAG_GOT_EGG_DOLL)
+    }
+    release
+    end
+}

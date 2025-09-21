@@ -44,6 +44,40 @@ VulcaiSea_Underwater_EventScript_Trainer_Underwater_Arik::
 	end
 
 
+VulcaiSea_Underwater_EventScript_DiverWithDoll::
+# 59 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	lock
+# 60 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	faceplayer
+# 61 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	speakername VulcaiSea_Underwater_EventScript_DiverWithDoll_Text_0
+# 62 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	msgbox VulcaiSea_Underwater_EventScript_DiverWithDoll_Text_1
+# 63 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	closemessage
+# 64 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	goto_if_unset FLAG_GOT_DRAGONITE_DOLL, VulcaiSea_Underwater_EventScript_DiverWithDoll_2
+VulcaiSea_Underwater_EventScript_DiverWithDoll_1:
+# 73 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	release
+	end
+
+VulcaiSea_Underwater_EventScript_DiverWithDoll_2:
+# 66 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	speakername VulcaiSea_Underwater_EventScript_DiverWithDoll_Text_0
+# 67 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	msgbox VulcaiSea_Underwater_EventScript_DiverWithDoll_Text_2
+# 68 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	closemessage
+# 69 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	delay 5
+# 70 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	givedecoration DECOR_DRAGONITE_DOLL
+# 71 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	closemessage
+	goto VulcaiSea_Underwater_EventScript_DiverWithDoll_1
+
+
 VulcaiSea_Underwater_EventScript_Trainer_Underwater_Mauricius_Text_0:
 # 6 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
 	.string "Mauricius$"
@@ -74,6 +108,23 @@ VulcaiSea_Underwater_EventScript_Trainer_Underwater_Arik_Text_1:
 	.string "The items needed to evolve Clamperl can\n"
 	.string "be found down here. Apparently, they're\l"
 	.string "super rare.$"
+
+VulcaiSea_Underwater_EventScript_DiverWithDoll_Text_0:
+# 61 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	.string "Diver$"
+
+VulcaiSea_Underwater_EventScript_DiverWithDoll_Text_1:
+# 62 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	.string "I've found some cool things in the\n"
+	.string "wreckage down here. There's a long\l"
+	.string "history of sailing in Ilios, and with\l"
+	.string "that comes sunken treasure!$"
+
+VulcaiSea_Underwater_EventScript_DiverWithDoll_Text_2:
+# 67 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	.string "Actually, I've found a few of these in\n"
+	.string "sealed crates down here. Why don't you\l"
+	.string "take one?$"
 
 VulcaiSea_Underwater_Text_Trainer_Underwater_MauriciusIntro::
 # 12 "data/maps/SeaOfVulcai_Underwater/scripts.pory"

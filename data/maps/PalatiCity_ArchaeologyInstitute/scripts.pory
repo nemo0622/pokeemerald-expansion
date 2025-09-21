@@ -60,7 +60,11 @@ script PalatiCity_ArchInstitute_EventScript_Maniac
             msgbox(format("Wait, that's... It can only be one thing! That Blue Shard must have come from an ancient piece of pottery like this!\p I'll take this for further study. Here, take this - I found it while digging for pottery pieces."))
             closemessage
             delay(5)
-            giveitem(ITEM_FIRE_STONE)
+            givedecoration(DECOR_MINOTAUROS_PLAQUE)
+            closemessage
+            delay(5)
+            speakername("Ruin Maniac")
+            msgbox(format("That Decoration was likely connected to ancient Palati culture. Hang it up somewhere nice!"))
             closemessage
             delay(20)
             completequest(QUEST_BLUE_SHARD_FOR_ARCHAEOLOGY)

@@ -540,312 +540,341 @@ SofosCity_Acropolis_EventScript_TogaGirl::
 # 309 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
 # 310 "data/maps/SofosCity_Acropolis/scripts.pory"
+	goto_if_unset FLAG_GOT_LEGENDARY_DOG_DECOR, SofosCity_Acropolis_EventScript_TogaGirl_3
+SofosCity_Acropolis_EventScript_TogaGirl_1:
+# 322 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
+SofosCity_Acropolis_EventScript_TogaGirl_2:
+# 312 "data/maps/SofosCity_Acropolis/scripts.pory"
+	speakername SofosCity_Acropolis_EventScript_TogaGirl_Text_0
+# 313 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_TogaGirl_Text_2
+# 314 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+# 315 "data/maps/SofosCity_Acropolis/scripts.pory"
+	delay 5
+# 316 "data/maps/SofosCity_Acropolis/scripts.pory"
+	givedecoration DECOR_RAIKOU_DOLL
+# 317 "data/maps/SofosCity_Acropolis/scripts.pory"
+	givedecoration DECOR_ENTEI_DOLL
+# 318 "data/maps/SofosCity_Acropolis/scripts.pory"
+	givedecoration DECOR_SUICUNE_DOLL
+# 319 "data/maps/SofosCity_Acropolis/scripts.pory"
+	setflag FLAG_GOT_LEGENDARY_DOG_DECOR
+# 320 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
+	goto SofosCity_Acropolis_EventScript_TogaGirl_1
+
+SofosCity_Acropolis_EventScript_TogaGirl_3:
+# 310 "data/maps/SofosCity_Acropolis/scripts.pory"
+	goto_if_set FLAG_DEFEATED_TEAM_CHIMERA_IN_AREIOS, SofosCity_Acropolis_EventScript_TogaGirl_2
+	goto SofosCity_Acropolis_EventScript_TogaGirl_1
+
 
 SofosCity_Acropolis_EventScript_Sylveon::
-# 316 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 328 "data/maps/SofosCity_Acropolis/scripts.pory"
 	lock
-# 317 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 329 "data/maps/SofosCity_Acropolis/scripts.pory"
 	faceplayer
-# 318 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 330 "data/maps/SofosCity_Acropolis/scripts.pory"
 	speakername SofosCity_Acropolis_EventScript_Sylveon_Text_0
-# 319 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 331 "data/maps/SofosCity_Acropolis/scripts.pory"
 	playmoncry SPECIES_SYLVEON, CRY_MODE_NORMAL
-# 320 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 332 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_Acropolis_EventScript_Sylveon_Text_1
-# 321 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 333 "data/maps/SofosCity_Acropolis/scripts.pory"
 	waitmoncry
-# 322 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 334 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 323 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 335 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_OldSofosOutfitBeauty::
-# 329 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 341 "data/maps/SofosCity_Acropolis/scripts.pory"
 	lock
-# 330 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 342 "data/maps/SofosCity_Acropolis/scripts.pory"
 	faceplayer
-# 331 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 343 "data/maps/SofosCity_Acropolis/scripts.pory"
 	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
-# 332 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 344 "data/maps/SofosCity_Acropolis/scripts.pory"
 	checkoutfitflag OUTFIT_OLD_SOFOS
-# 334 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 346 "data/maps/SofosCity_Acropolis/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SofosCity_EventScript_OldSofosOutfitBeauty_2
-# 384 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 396 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_7
-# 385 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 397 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
 SofosCity_EventScript_OldSofosOutfitBeauty_1:
-# 387 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 399 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 SofosCity_EventScript_OldSofosOutfitBeauty_2:
-# 336 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 348 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_1
-# 337 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 349 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 338 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 350 "data/maps/SofosCity_Acropolis/scripts.pory"
 	delay 5
-# 339 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 351 "data/maps/SofosCity_Acropolis/scripts.pory"
 	showmoneybox 0, 0
-# 340 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 352 "data/maps/SofosCity_Acropolis/scripts.pory"
 	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
-# 341 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 353 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_2, MSGBOX_YESNO
-# 342 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 354 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 343 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 355 "data/maps/SofosCity_Acropolis/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SofosCity_EventScript_OldSofosOutfitBeauty_5
-# 355 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 367 "data/maps/SofosCity_Acropolis/scripts.pory"
 	checkmoney 16900
-# 356 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 368 "data/maps/SofosCity_Acropolis/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SofosCity_EventScript_OldSofosOutfitBeauty_8
-# 367 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 379 "data/maps/SofosCity_Acropolis/scripts.pory"
 	removemoney 16900
-# 368 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 380 "data/maps/SofosCity_Acropolis/scripts.pory"
 	updatemoneybox
-# 369 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 381 "data/maps/SofosCity_Acropolis/scripts.pory"
 	delay 5
-# 370 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 382 "data/maps/SofosCity_Acropolis/scripts.pory"
 	unlockoutfit OUTFIT_OLD_SOFOS
-# 371 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 383 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_5
-# 372 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 384 "data/maps/SofosCity_Acropolis/scripts.pory"
 	delay 20
-# 373 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 385 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 374 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 386 "data/maps/SofosCity_Acropolis/scripts.pory"
 	hidemoneybox
-# 375 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 387 "data/maps/SofosCity_Acropolis/scripts.pory"
 	delay 5
-# 376 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 388 "data/maps/SofosCity_Acropolis/scripts.pory"
 	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
-# 377 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 389 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_6
-# 378 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 390 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
 	goto SofosCity_EventScript_OldSofosOutfitBeauty_1
 
 SofosCity_EventScript_OldSofosOutfitBeauty_5:
-# 345 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 357 "data/maps/SofosCity_Acropolis/scripts.pory"
 	hidemoneybox
-# 346 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 358 "data/maps/SofosCity_Acropolis/scripts.pory"
 	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
-# 347 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 359 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_3
-# 348 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 360 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 349 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 361 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 SofosCity_EventScript_OldSofosOutfitBeauty_8:
-# 358 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 370 "data/maps/SofosCity_Acropolis/scripts.pory"
 	hidemoneybox
-# 359 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 371 "data/maps/SofosCity_Acropolis/scripts.pory"
 	speakername SofosCity_EventScript_OldSofosOutfitBeauty_Text_0
-# 360 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 372 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_EventScript_OldSofosOutfitBeauty_Text_4
-# 361 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 373 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 362 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 374 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 
 SofosCity_Acropolis_EventScript_CallRaikou::
-# 395 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 407 "data/maps/SofosCity_Acropolis/scripts.pory"
 	lock
-# 396 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 408 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_Acropolis_EventScript_CallRaikou_Text_0
-# 397 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 409 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 398 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 410 "data/maps/SofosCity_Acropolis/scripts.pory"
 	goto_if_set FLAG_CAN_ENCOUNTER_RAIKOU, SofosCity_Acropolis_EventScript_CallRaikou_2
 SofosCity_Acropolis_EventScript_CallRaikou_1:
-# 426 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 438 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 SofosCity_Acropolis_EventScript_CallRaikou_2:
-# 400 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 412 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_Acropolis_EventScript_CallRaikou_Text_1, MSGBOX_YESNO
-# 401 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 413 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 402 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 414 "data/maps/SofosCity_Acropolis/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq SofosCity_Acropolis_EventScript_CallRaikou_4
 	goto SofosCity_Acropolis_EventScript_CallRaikou_1
 
 SofosCity_Acropolis_EventScript_CallRaikou_4:
-# 404 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_Acropolis_EventScript_CallRaikou_Text_2
-# 405 "data/maps/SofosCity_Acropolis/scripts.pory"
-	playmoncry SPECIES_RAIKOU, CRY_MODE_ENCOUNTER
-# 406 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_CallRaikou_Text_3
-# 407 "data/maps/SofosCity_Acropolis/scripts.pory"
-	waitmoncry
-# 408 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
-# 410 "data/maps/SofosCity_Acropolis/scripts.pory"
-	seteventmon SPECIES_RAIKOU, 45
-# 411 "data/maps/SofosCity_Acropolis/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
-# 412 "data/maps/SofosCity_Acropolis/scripts.pory"
-	waitstate
-# 413 "data/maps/SofosCity_Acropolis/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
-# 414 "data/maps/SofosCity_Acropolis/scripts.pory"
-	switch VAR_RESULT
 # 416 "data/maps/SofosCity_Acropolis/scripts.pory"
-	case B_OUTCOME_CAUGHT, SofosCity_Acropolis_EventScript_CallRaikou_7
-# 421 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_CallRaikou_Text_5
+	speakername SofosCity_Acropolis_EventScript_CallRaikou_Text_2
+# 417 "data/maps/SofosCity_Acropolis/scripts.pory"
+	playmoncry SPECIES_RAIKOU, CRY_MODE_ENCOUNTER
+# 418 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_CallRaikou_Text_3
+# 419 "data/maps/SofosCity_Acropolis/scripts.pory"
+	waitmoncry
+# 420 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
 # 422 "data/maps/SofosCity_Acropolis/scripts.pory"
+	seteventmon SPECIES_RAIKOU, 45
+# 423 "data/maps/SofosCity_Acropolis/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 424 "data/maps/SofosCity_Acropolis/scripts.pory"
+	waitstate
+# 425 "data/maps/SofosCity_Acropolis/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 426 "data/maps/SofosCity_Acropolis/scripts.pory"
+	switch VAR_RESULT
+# 428 "data/maps/SofosCity_Acropolis/scripts.pory"
+	case B_OUTCOME_CAUGHT, SofosCity_Acropolis_EventScript_CallRaikou_7
+# 433 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_CallRaikou_Text_5
+# 434 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
 	goto SofosCity_Acropolis_EventScript_CallRaikou_1
 
 SofosCity_Acropolis_EventScript_CallRaikou_7:
-# 417 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 429 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_Acropolis_EventScript_CallRaikou_Text_4
-# 418 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 430 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 419 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 431 "data/maps/SofosCity_Acropolis/scripts.pory"
 	clearflag FLAG_CAN_ENCOUNTER_RAIKOU
 	goto SofosCity_Acropolis_EventScript_CallRaikou_1
 
 
 SofosCity_Acropolis_EventScript_CallSuicune::
-# 432 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 444 "data/maps/SofosCity_Acropolis/scripts.pory"
 	lock
-# 433 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 445 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_Acropolis_EventScript_CallSuicune_Text_0
-# 434 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 446 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 435 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 447 "data/maps/SofosCity_Acropolis/scripts.pory"
 	goto_if_set FLAG_CAN_ENCOUNTER_SUICUNE, SofosCity_Acropolis_EventScript_CallSuicune_2
 SofosCity_Acropolis_EventScript_CallSuicune_1:
-# 463 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 475 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 SofosCity_Acropolis_EventScript_CallSuicune_2:
-# 437 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 449 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_Acropolis_EventScript_CallSuicune_Text_1, MSGBOX_YESNO
-# 438 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 450 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 439 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 451 "data/maps/SofosCity_Acropolis/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq SofosCity_Acropolis_EventScript_CallSuicune_4
 	goto SofosCity_Acropolis_EventScript_CallSuicune_1
 
 SofosCity_Acropolis_EventScript_CallSuicune_4:
-# 441 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_Acropolis_EventScript_CallSuicune_Text_2
-# 442 "data/maps/SofosCity_Acropolis/scripts.pory"
-	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
-# 443 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_CallSuicune_Text_3
-# 444 "data/maps/SofosCity_Acropolis/scripts.pory"
-	waitmoncry
-# 445 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
-# 447 "data/maps/SofosCity_Acropolis/scripts.pory"
-	seteventmon SPECIES_SUICUNE, 45
-# 448 "data/maps/SofosCity_Acropolis/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
-# 449 "data/maps/SofosCity_Acropolis/scripts.pory"
-	waitstate
-# 450 "data/maps/SofosCity_Acropolis/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
-# 451 "data/maps/SofosCity_Acropolis/scripts.pory"
-	switch VAR_RESULT
 # 453 "data/maps/SofosCity_Acropolis/scripts.pory"
-	case B_OUTCOME_CAUGHT, SofosCity_Acropolis_EventScript_CallSuicune_7
-# 458 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_CallSuicune_Text_5
+	speakername SofosCity_Acropolis_EventScript_CallSuicune_Text_2
+# 454 "data/maps/SofosCity_Acropolis/scripts.pory"
+	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
+# 455 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_CallSuicune_Text_3
+# 456 "data/maps/SofosCity_Acropolis/scripts.pory"
+	waitmoncry
+# 457 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
 # 459 "data/maps/SofosCity_Acropolis/scripts.pory"
+	seteventmon SPECIES_SUICUNE, 45
+# 460 "data/maps/SofosCity_Acropolis/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 461 "data/maps/SofosCity_Acropolis/scripts.pory"
+	waitstate
+# 462 "data/maps/SofosCity_Acropolis/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 463 "data/maps/SofosCity_Acropolis/scripts.pory"
+	switch VAR_RESULT
+# 465 "data/maps/SofosCity_Acropolis/scripts.pory"
+	case B_OUTCOME_CAUGHT, SofosCity_Acropolis_EventScript_CallSuicune_7
+# 470 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_CallSuicune_Text_5
+# 471 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
 	goto SofosCity_Acropolis_EventScript_CallSuicune_1
 
 SofosCity_Acropolis_EventScript_CallSuicune_7:
-# 454 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 466 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_Acropolis_EventScript_CallSuicune_Text_4
-# 455 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 467 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 456 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 468 "data/maps/SofosCity_Acropolis/scripts.pory"
 	clearflag FLAG_CAN_ENCOUNTER_SUICUNE
 	goto SofosCity_Acropolis_EventScript_CallSuicune_1
 
 
 SofosCity_Acropolis_EventScript_CallEntei::
-# 469 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 481 "data/maps/SofosCity_Acropolis/scripts.pory"
 	lock
-# 470 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 482 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_Acropolis_EventScript_CallEntei_Text_0
-# 471 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 483 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 472 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 484 "data/maps/SofosCity_Acropolis/scripts.pory"
 	goto_if_set FLAG_CAN_ENCOUNTER_ENTEI, SofosCity_Acropolis_EventScript_CallEntei_2
 SofosCity_Acropolis_EventScript_CallEntei_1:
-# 500 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 512 "data/maps/SofosCity_Acropolis/scripts.pory"
 	release
 	end
 
 SofosCity_Acropolis_EventScript_CallEntei_2:
-# 474 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 486 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_Acropolis_EventScript_CallEntei_Text_1, MSGBOX_YESNO
-# 475 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 487 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 476 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 488 "data/maps/SofosCity_Acropolis/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq SofosCity_Acropolis_EventScript_CallEntei_4
 	goto SofosCity_Acropolis_EventScript_CallEntei_1
 
 SofosCity_Acropolis_EventScript_CallEntei_4:
-# 478 "data/maps/SofosCity_Acropolis/scripts.pory"
-	speakername SofosCity_Acropolis_EventScript_CallEntei_Text_2
-# 479 "data/maps/SofosCity_Acropolis/scripts.pory"
-	playmoncry SPECIES_ENTEI, CRY_MODE_ENCOUNTER
-# 480 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_CallEntei_Text_3
-# 481 "data/maps/SofosCity_Acropolis/scripts.pory"
-	waitmoncry
-# 482 "data/maps/SofosCity_Acropolis/scripts.pory"
-	closemessage
-# 484 "data/maps/SofosCity_Acropolis/scripts.pory"
-	seteventmon SPECIES_ENTEI, 45
-# 485 "data/maps/SofosCity_Acropolis/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
-# 486 "data/maps/SofosCity_Acropolis/scripts.pory"
-	waitstate
-# 487 "data/maps/SofosCity_Acropolis/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
-# 488 "data/maps/SofosCity_Acropolis/scripts.pory"
-	switch VAR_RESULT
 # 490 "data/maps/SofosCity_Acropolis/scripts.pory"
-	case B_OUTCOME_CAUGHT, SofosCity_Acropolis_EventScript_CallEntei_7
-# 495 "data/maps/SofosCity_Acropolis/scripts.pory"
-	msgbox SofosCity_Acropolis_EventScript_CallEntei_Text_5
+	speakername SofosCity_Acropolis_EventScript_CallEntei_Text_2
+# 491 "data/maps/SofosCity_Acropolis/scripts.pory"
+	playmoncry SPECIES_ENTEI, CRY_MODE_ENCOUNTER
+# 492 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_CallEntei_Text_3
+# 493 "data/maps/SofosCity_Acropolis/scripts.pory"
+	waitmoncry
+# 494 "data/maps/SofosCity_Acropolis/scripts.pory"
+	closemessage
 # 496 "data/maps/SofosCity_Acropolis/scripts.pory"
+	seteventmon SPECIES_ENTEI, 45
+# 497 "data/maps/SofosCity_Acropolis/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 498 "data/maps/SofosCity_Acropolis/scripts.pory"
+	waitstate
+# 499 "data/maps/SofosCity_Acropolis/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 500 "data/maps/SofosCity_Acropolis/scripts.pory"
+	switch VAR_RESULT
+# 502 "data/maps/SofosCity_Acropolis/scripts.pory"
+	case B_OUTCOME_CAUGHT, SofosCity_Acropolis_EventScript_CallEntei_7
+# 507 "data/maps/SofosCity_Acropolis/scripts.pory"
+	msgbox SofosCity_Acropolis_EventScript_CallEntei_Text_5
+# 508 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
 	goto SofosCity_Acropolis_EventScript_CallEntei_1
 
 SofosCity_Acropolis_EventScript_CallEntei_7:
-# 491 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 503 "data/maps/SofosCity_Acropolis/scripts.pory"
 	msgbox SofosCity_Acropolis_EventScript_CallEntei_Text_4
-# 492 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 504 "data/maps/SofosCity_Acropolis/scripts.pory"
 	closemessage
-# 493 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 505 "data/maps/SofosCity_Acropolis/scripts.pory"
 	clearflag FLAG_CAN_ENCOUNTER_ENTEI
 	goto SofosCity_Acropolis_EventScript_CallEntei_1
 
@@ -1146,139 +1175,145 @@ SofosCity_Acropolis_EventScript_TogaGirl_Text_1:
 	.string "other visitors, and enjoy your time\l"
 	.string "here!$"
 
+SofosCity_Acropolis_EventScript_TogaGirl_Text_2:
+# 313 "data/maps/SofosCity_Acropolis/scripts.pory"
+	.string "Oh? You're the Trainer who defeated\n"
+	.string "Team Chimera! Please, take these\l"
+	.string "decorations.$"
+
 SofosCity_Acropolis_EventScript_Sylveon_Text_0:
-# 318 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 330 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Sylveon$"
 
 SofosCity_Acropolis_EventScript_Sylveon_Text_1:
-# 320 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 332 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Breow!$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_0:
-# 331 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 343 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Fashionista$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_1:
-# 336 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 348 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Wow, the ancient history of the Ilios\n"
 	.string "Region is amazing!$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_2:
-# 341 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 353 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "I've actually made an Outfit in the\n"
 	.string "ancient Sofos City style! I'll give you\l"
 	.string "this {COLOR GREEN}Old Sofos Toga Outfit{COLOR DARK_GRAY} for ¥16900.\l"
 	.string "How about it?$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_3:
-# 347 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 359 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "No? Aren't you interested in the\n"
 	.string "history of the Ilios Region?$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_4:
-# 360 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 372 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Hey, you don't have the money for that!$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_5:
-# 371 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 383 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The Old Sofos Toga Outfit has been\n"
 	.string "added to the Outfit Box!$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_6:
-# 377 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 389 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Thanks for your support! I hope you\n"
 	.string "have fun trying out the ancient look!$"
 
 SofosCity_EventScript_OldSofosOutfitBeauty_Text_7:
-# 384 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 396 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The Old Sofos Toga Outfit is a modern\n"
 	.string "replica of an ancient style.\l"
 	.string "Philosophers wore fashionable togas to\l"
 	.string "important discussions.$"
 
 SofosCity_Acropolis_EventScript_CallRaikou_Text_0:
-# 396 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 408 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "A slight electric current fills the air,\n"
 	.string "raising the hairs on your neck.$"
 
 SofosCity_Acropolis_EventScript_CallRaikou_Text_1:
-# 400 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 412 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Will you summon Raikou?$"
 
 SofosCity_Acropolis_EventScript_CallRaikou_Text_2:
-# 404 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 416 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Raikou$"
 
 SofosCity_Acropolis_EventScript_CallRaikou_Text_3:
-# 406 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 418 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Purrowwwl!!$"
 
 SofosCity_Acropolis_EventScript_CallRaikou_Text_4:
-# 417 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 429 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The electric current around the statue\n"
 	.string "fades. Raikou has joined you on your\l"
 	.string "journey!$"
 
 SofosCity_Acropolis_EventScript_CallRaikou_Text_5:
-# 421 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 433 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The electric current fades, but it\n"
 	.string "continues to pulse in the air.\p"
 	.string "Raikou can be encountered again until\n"
 	.string "successfully caught.$"
 
 SofosCity_Acropolis_EventScript_CallSuicune_Text_0:
-# 433 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 445 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The air around the statue has a slight\n"
 	.string "chilly haze.$"
 
 SofosCity_Acropolis_EventScript_CallSuicune_Text_1:
-# 437 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 449 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Will you summon Suicune?$"
 
 SofosCity_Acropolis_EventScript_CallSuicune_Text_2:
-# 441 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 453 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Suicune$"
 
 SofosCity_Acropolis_EventScript_CallSuicune_Text_3:
-# 443 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 455 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Ahouuu!$"
 
 SofosCity_Acropolis_EventScript_CallSuicune_Text_4:
-# 454 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 466 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The icy haze around the statue fades.\n"
 	.string "Suicune has joined you on your journey!$"
 
 SofosCity_Acropolis_EventScript_CallSuicune_Text_5:
-# 458 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 470 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The icy haze fades, but it continues to\n"
 	.string "pulse in the air.\p"
 	.string "Suicune can be encountered again until\n"
 	.string "successfully caught.$"
 
 SofosCity_Acropolis_EventScript_CallEntei_Text_0:
-# 470 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 482 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The statue is as warm as a shining coal.$"
 
 SofosCity_Acropolis_EventScript_CallEntei_Text_1:
-# 474 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 486 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Will you summon Entei?$"
 
 SofosCity_Acropolis_EventScript_CallEntei_Text_2:
-# 478 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 490 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Entei$"
 
 SofosCity_Acropolis_EventScript_CallEntei_Text_3:
-# 480 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 492 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "Grrryoww!$"
 
 SofosCity_Acropolis_EventScript_CallEntei_Text_4:
-# 491 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 503 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The strong heat around the statue\n"
 	.string "fades. Entei has joined you on your\l"
 	.string "journey!$"
 
 SofosCity_Acropolis_EventScript_CallEntei_Text_5:
-# 495 "data/maps/SofosCity_Acropolis/scripts.pory"
+# 507 "data/maps/SofosCity_Acropolis/scripts.pory"
 	.string "The powerful heat fades, but it\n"
 	.string "continues to pulse in the air.\p"
 	.string "Entei can be encountered again until\n"

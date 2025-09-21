@@ -296,892 +296,896 @@ SofosCity_DecorShop:
 # 177 "data/maps/SofosCity/scripts.pory"
 	.2byte DECOR_WATER_CUSHION
 # 178 "data/maps/SofosCity/scripts.pory"
-	.2byte DECOR_NONE
+	.2byte DECOR_ENTERTAINMENT_CENTER
 # 179 "data/maps/SofosCity/scripts.pory"
-	release
+	.2byte DECOR_POKEBALL_STATION
 # 180 "data/maps/SofosCity/scripts.pory"
+	.2byte DECOR_NONE
+# 181 "data/maps/SofosCity/scripts.pory"
+	release
+# 182 "data/maps/SofosCity/scripts.pory"
 	end
 
 SofosCity_EventScript_GirlNearVendors::
-# 185 "data/maps/SofosCity/scripts.pory"
-	lock
-# 186 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 187 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_GirlNearVendors_Text_0
+	lock
 # 188 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_GirlNearVendors_Text_1
+	faceplayer
 # 189 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_GirlNearVendors_Text_0
 # 190 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_GirlNearVendors_Text_1
+# 191 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 192 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_BoyNearFarmersGoods::
-# 196 "data/maps/SofosCity/scripts.pory"
-	lock
-# 197 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 198 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_BoyNearFarmersGoods_Text_0
+	lock
 # 199 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_BoyNearFarmersGoods_Text_1
+	faceplayer
 # 200 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_BoyNearFarmersGoods_Text_0
 # 201 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_BoyNearFarmersGoods_Text_1
+# 202 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 203 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_ManWithMurkrow::
-# 207 "data/maps/SofosCity/scripts.pory"
-	lock
-# 208 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 209 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_ManWithMurkrow_Text_0
+	lock
 # 210 "data/maps/SofosCity/scripts.pory"
+	faceplayer
+# 211 "data/maps/SofosCity/scripts.pory"
+	speakername SofosCity_EventScript_ManWithMurkrow_Text_0
+# 212 "data/maps/SofosCity/scripts.pory"
 	goto_if_unset FLAG_GOT_TM_TORMENT, SofosCity_EventScript_ManWithMurkrow_2
-# 219 "data/maps/SofosCity/scripts.pory"
+# 221 "data/maps/SofosCity/scripts.pory"
 	msgbox SofosCity_EventScript_ManWithMurkrow_Text_2
-# 220 "data/maps/SofosCity/scripts.pory"
+# 222 "data/maps/SofosCity/scripts.pory"
 	closemessage
 SofosCity_EventScript_ManWithMurkrow_1:
-# 222 "data/maps/SofosCity/scripts.pory"
+# 224 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 SofosCity_EventScript_ManWithMurkrow_2:
-# 212 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_ManWithMurkrow_Text_1
-# 213 "data/maps/SofosCity/scripts.pory"
-	closemessage
 # 214 "data/maps/SofosCity/scripts.pory"
-	giveitem ITEM_TM_TORMENT
+	msgbox SofosCity_EventScript_ManWithMurkrow_Text_1
 # 215 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 216 "data/maps/SofosCity/scripts.pory"
+	giveitem ITEM_TM_TORMENT
+# 217 "data/maps/SofosCity/scripts.pory"
 	setflag FLAG_GOT_TM_TORMENT
 	goto SofosCity_EventScript_ManWithMurkrow_1
 
 
 SofosCity_EventScript_Murkrow::
-# 227 "data/maps/SofosCity/scripts.pory"
-	lock
-# 228 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 229 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_Murkrow_Text_0
+	lock
 # 230 "data/maps/SofosCity/scripts.pory"
-	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
+	faceplayer
 # 231 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_Murkrow_Text_1
+	speakername SofosCity_EventScript_Murkrow_Text_0
 # 232 "data/maps/SofosCity/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
 # 233 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	msgbox SofosCity_EventScript_Murkrow_Text_1
 # 234 "data/maps/SofosCity/scripts.pory"
+	waitmoncry
+# 235 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 236 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_LostConstructionWorker::
-# 240 "data/maps/SofosCity/scripts.pory"
-	lock
-# 241 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 242 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_LostConstructionWorker_Text_0
+	lock
 # 243 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_LostConstructionWorker_Text_1
+	faceplayer
 # 244 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_LostConstructionWorker_Text_0
 # 245 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_LostConstructionWorker_Text_1
+# 246 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 247 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_StrategicCamper::
-# 251 "data/maps/SofosCity/scripts.pory"
+# 253 "data/maps/SofosCity/scripts.pory"
 	lock
-# 252 "data/maps/SofosCity/scripts.pory"
+# 254 "data/maps/SofosCity/scripts.pory"
 	faceplayer
-# 255 "data/maps/SofosCity/scripts.pory"
+# 257 "data/maps/SofosCity/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_CAMPER_ALOLAN_RAICHU
-# 256 "data/maps/SofosCity/scripts.pory"
+# 258 "data/maps/SofosCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SofosCity_EventScript_StrategicCamper_2
-# 266 "data/maps/SofosCity/scripts.pory"
+# 268 "data/maps/SofosCity/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_CAMPER_ALOLAN_RAICHU
-# 267 "data/maps/SofosCity/scripts.pory"
+# 269 "data/maps/SofosCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SofosCity_EventScript_StrategicCamper_5
-# 278 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_StrategicCamper_Text_0
-# 279 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_StrategicCamper_Text_3
 # 280 "data/maps/SofosCity/scripts.pory"
-	closemessage
-# 282 "data/maps/SofosCity/scripts.pory"
-	checkforspecies SPECIES_RAICHU_ALOLAN, OPEN_PARTY_SCREEN, SofosCity_EventScript_StrategicCamper_ReactToRaichu
-# 285 "data/maps/SofosCity/scripts.pory"
 	speakername SofosCity_EventScript_StrategicCamper_Text_0
-# 286 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_StrategicCamper_Text_4
+# 281 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_StrategicCamper_Text_3
+# 282 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 284 "data/maps/SofosCity/scripts.pory"
+	checkforspecies SPECIES_RAICHU_ALOLAN, OPEN_PARTY_SCREEN, SofosCity_EventScript_StrategicCamper_ReactToRaichu
 # 287 "data/maps/SofosCity/scripts.pory"
+	speakername SofosCity_EventScript_StrategicCamper_Text_0
+# 288 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_StrategicCamper_Text_4
+# 289 "data/maps/SofosCity/scripts.pory"
 	closemessage
 SofosCity_EventScript_StrategicCamper_4:
-# 289 "data/maps/SofosCity/scripts.pory"
+# 291 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 SofosCity_EventScript_StrategicCamper_2:
-# 258 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_StrategicCamper_Text_0
-# 259 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_StrategicCamper_Text_1
 # 260 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_StrategicCamper_Text_0
 # 261 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_StrategicCamper_Text_1
+# 262 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 263 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 SofosCity_EventScript_StrategicCamper_5:
-# 269 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_StrategicCamper_Text_0
-# 270 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_StrategicCamper_Text_2
 # 271 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_StrategicCamper_Text_0
+# 272 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_StrategicCamper_Text_2
 # 273 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 275 "data/maps/SofosCity/scripts.pory"
 	delay 20
-# 274 "data/maps/SofosCity/scripts.pory"
+# 276 "data/maps/SofosCity/scripts.pory"
 	startquest QUEST_SHOW_CAMPER_ALOLAN_RAICHU
 	goto SofosCity_EventScript_StrategicCamper_4
 
 
 SofosCity_EventScript_StrategicCamper_ReactToRaichu::
-# 294 "data/maps/SofosCity/scripts.pory"
-	lock
-# 295 "data/maps/SofosCity/scripts.pory"
-	delay 20
 # 296 "data/maps/SofosCity/scripts.pory"
-	applymovement 26, Common_Movement_Heart
+	lock
 # 297 "data/maps/SofosCity/scripts.pory"
-	waitmovement 0
-# 298 "data/maps/SofosCity/scripts.pory"
-	delay 10
-# 299 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_StrategicCamper_Text_0
-# 300 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_StrategicCamper_ReactToRaichu_Text_0
-# 301 "data/maps/SofosCity/scripts.pory"
-	closemessage
-# 302 "data/maps/SofosCity/scripts.pory"
-	givedecoration DECOR_RAICHU_DOLL
-# 303 "data/maps/SofosCity/scripts.pory"
-	delay 5
-# 304 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_StrategicCamper_Text_0
-# 305 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_StrategicCamper_ReactToRaichu_Text_1
-# 306 "data/maps/SofosCity/scripts.pory"
-	closemessage
-# 308 "data/maps/SofosCity/scripts.pory"
 	delay 20
-# 309 "data/maps/SofosCity/scripts.pory"
-	completequest QUEST_SHOW_CAMPER_ALOLAN_RAICHU
-# 311 "data/maps/SofosCity/scripts.pory"
+# 298 "data/maps/SofosCity/scripts.pory"
+	applymovement 26, Common_Movement_Heart
+# 299 "data/maps/SofosCity/scripts.pory"
+	waitmovement 0
+# 300 "data/maps/SofosCity/scripts.pory"
+	delay 10
+# 301 "data/maps/SofosCity/scripts.pory"
+	speakername SofosCity_EventScript_StrategicCamper_Text_0
+# 302 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_StrategicCamper_ReactToRaichu_Text_0
+# 303 "data/maps/SofosCity/scripts.pory"
 	closemessage
-# 312 "data/maps/SofosCity/scripts.pory"
+# 304 "data/maps/SofosCity/scripts.pory"
+	givedecoration DECOR_RAICHU_DOLL
+# 305 "data/maps/SofosCity/scripts.pory"
+	delay 5
+# 306 "data/maps/SofosCity/scripts.pory"
+	speakername SofosCity_EventScript_StrategicCamper_Text_0
+# 307 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_StrategicCamper_ReactToRaichu_Text_1
+# 308 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 310 "data/maps/SofosCity/scripts.pory"
+	delay 20
+# 311 "data/maps/SofosCity/scripts.pory"
+	completequest QUEST_SHOW_CAMPER_ALOLAN_RAICHU
+# 313 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 314 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_BeautyNearPokecenter::
-# 318 "data/maps/SofosCity/scripts.pory"
-	lock
-# 319 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 320 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_BeautyNearPokecenter_Text_0
+	lock
 # 321 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_BeautyNearPokecenter_Text_1
+	faceplayer
 # 322 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_BeautyNearPokecenter_Text_0
 # 323 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_BeautyNearPokecenter_Text_1
+# 324 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 325 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_ArtistPlayingChess::
-# 329 "data/maps/SofosCity/scripts.pory"
-	lock
-# 330 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 331 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_ArtistPlayingChess_Text_0
+	lock
 # 332 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_ArtistPlayingChess_Text_1
+	faceplayer
 # 333 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_ArtistPlayingChess_Text_0
 # 334 "data/maps/SofosCity/scripts.pory"
-	applymovement 28, Common_Movement_FaceLeft
+	msgbox SofosCity_EventScript_ArtistPlayingChess_Text_1
 # 335 "data/maps/SofosCity/scripts.pory"
-	waitmovement 0
+	closemessage
 # 336 "data/maps/SofosCity/scripts.pory"
+	applymovement 28, Common_Movement_FaceLeft
+# 337 "data/maps/SofosCity/scripts.pory"
+	waitmovement 0
+# 338 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_OldWomanPlayingChess::
-# 342 "data/maps/SofosCity/scripts.pory"
-	lock
-# 343 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 344 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_OldWomanPlayingChess_Text_0
+	lock
 # 345 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_OldWomanPlayingChess_Text_1
+	faceplayer
 # 346 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_OldWomanPlayingChess_Text_0
 # 347 "data/maps/SofosCity/scripts.pory"
-	applymovement 29, Common_Movement_FaceRight
+	msgbox SofosCity_EventScript_OldWomanPlayingChess_Text_1
 # 348 "data/maps/SofosCity/scripts.pory"
-	waitmovement 0
+	closemessage
 # 349 "data/maps/SofosCity/scripts.pory"
+	applymovement 29, Common_Movement_FaceRight
+# 350 "data/maps/SofosCity/scripts.pory"
+	waitmovement 0
+# 351 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_PicnickerRunning::
-# 355 "data/maps/SofosCity/scripts.pory"
-	lock
-# 356 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 357 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_PicnickerRunning_Text_0
+	lock
 # 358 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_PicnickerRunning_Text_1
+	faceplayer
 # 359 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_PicnickerRunning_Text_0
 # 360 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_PicnickerRunning_Text_1
+# 361 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 362 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_OfficerAtCityEdge::
-# 366 "data/maps/SofosCity/scripts.pory"
-	lock
-# 367 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 368 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_OfficerAtCityEdge_Text_0
+	lock
 # 369 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_OfficerAtCityEdge_Text_1
+	faceplayer
 # 370 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_OfficerAtCityEdge_Text_0
 # 371 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_OfficerAtCityEdge_Text_1
+# 372 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 373 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_FarmerOnSidewalk::
-# 377 "data/maps/SofosCity/scripts.pory"
-	lock
-# 378 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 379 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_FarmerOnSidewalk_Text_0
+	lock
 # 380 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_FarmerOnSidewalk_Text_1
+	faceplayer
 # 381 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_FarmerOnSidewalk_Text_0
 # 382 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_FarmerOnSidewalk_Text_1
+# 383 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 384 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_Rockruff::
-# 388 "data/maps/SofosCity/scripts.pory"
-	lock
-# 389 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 390 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_Rockruff_Text_0
+	lock
 # 391 "data/maps/SofosCity/scripts.pory"
-	playmoncry SPECIES_ROCKRUFF, CRY_MODE_NORMAL
+	faceplayer
 # 392 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_Rockruff_Text_1
+	speakername SofosCity_EventScript_Rockruff_Text_0
 # 393 "data/maps/SofosCity/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_ROCKRUFF, CRY_MODE_NORMAL
 # 394 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	msgbox SofosCity_EventScript_Rockruff_Text_1
 # 395 "data/maps/SofosCity/scripts.pory"
+	waitmoncry
+# 396 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 397 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_WomanWithRockruff::
-# 401 "data/maps/SofosCity/scripts.pory"
-	lock
-# 402 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 403 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_WomanWithRockruff_Text_0
+	lock
 # 404 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_WomanWithRockruff_Text_1
+	faceplayer
 # 405 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_WomanWithRockruff_Text_0
 # 406 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_WomanWithRockruff_Text_1
+# 407 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 408 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_FishermanPlayingChess::
-# 412 "data/maps/SofosCity/scripts.pory"
-	lock
-# 413 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 414 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_FishermanPlayingChess_Text_0
+	lock
 # 415 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_FishermanPlayingChess_Text_1
+	faceplayer
 # 416 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_FishermanPlayingChess_Text_0
 # 417 "data/maps/SofosCity/scripts.pory"
-	applymovement 35, Common_Movement_FaceRight
+	msgbox SofosCity_EventScript_FishermanPlayingChess_Text_1
 # 418 "data/maps/SofosCity/scripts.pory"
-	waitmovement 0
+	closemessage
 # 419 "data/maps/SofosCity/scripts.pory"
+	applymovement 35, Common_Movement_FaceRight
+# 420 "data/maps/SofosCity/scripts.pory"
+	waitmovement 0
+# 421 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_GirlPlayingChess::
-# 425 "data/maps/SofosCity/scripts.pory"
-	lock
-# 426 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 427 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_GirlNearVendors_Text_0
+	lock
 # 428 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_GirlPlayingChess_Text_0
+	faceplayer
 # 429 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_GirlNearVendors_Text_0
 # 430 "data/maps/SofosCity/scripts.pory"
-	applymovement 36, Common_Movement_FaceLeft
+	msgbox SofosCity_EventScript_GirlPlayingChess_Text_0
 # 431 "data/maps/SofosCity/scripts.pory"
-	waitmovement 0
+	closemessage
 # 432 "data/maps/SofosCity/scripts.pory"
+	applymovement 36, Common_Movement_FaceLeft
+# 433 "data/maps/SofosCity/scripts.pory"
+	waitmovement 0
+# 434 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_HexManiacSeeingLights::
-# 438 "data/maps/SofosCity/scripts.pory"
-	lock
-# 439 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 440 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_HexManiacSeeingLights_Text_0
+	lock
 # 441 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_HexManiacSeeingLights_Text_1
+	faceplayer
 # 442 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_HexManiacSeeingLights_Text_0
 # 443 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_HexManiacSeeingLights_Text_1
+# 444 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 445 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_CooltrainerThinkingStrategy::
-# 449 "data/maps/SofosCity/scripts.pory"
-	lock
-# 450 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 451 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_CooltrainerThinkingStrategy_Text_0
+	lock
 # 452 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_CooltrainerThinkingStrategy_Text_1
+	faceplayer
 # 453 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_CooltrainerThinkingStrategy_Text_0
 # 454 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_CooltrainerThinkingStrategy_Text_1
+# 455 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 456 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_OldManAtCliff::
-# 460 "data/maps/SofosCity/scripts.pory"
-	lock
-# 461 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 462 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_OldManAtCliff_Text_0
+	lock
 # 463 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_OldManAtCliff_Text_1
+	faceplayer
 # 464 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_OldManAtCliff_Text_0
 # 465 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_OldManAtCliff_Text_1
+# 466 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 467 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_Clauncher::
-# 470 "data/maps/SofosCity/scripts.pory"
-	lock
-# 471 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 472 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_Clauncher_Text_0
+	lock
 # 473 "data/maps/SofosCity/scripts.pory"
-	playmoncry SPECIES_CLAUNCHER, CRY_MODE_NORMAL
+	faceplayer
 # 474 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_Clauncher_Text_1
+	speakername SofosCity_EventScript_Clauncher_Text_0
 # 475 "data/maps/SofosCity/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_CLAUNCHER, CRY_MODE_NORMAL
 # 476 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	msgbox SofosCity_EventScript_Clauncher_Text_1
 # 477 "data/maps/SofosCity/scripts.pory"
+	waitmoncry
+# 478 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 479 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_ManOutsideBattlePavilion::
-# 483 "data/maps/SofosCity/scripts.pory"
-	lock
-# 484 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 485 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_ManOutsideBattlePavilion_Text_0
+	lock
+# 486 "data/maps/SofosCity/scripts.pory"
+	faceplayer
 # 487 "data/maps/SofosCity/scripts.pory"
+	speakername SofosCity_EventScript_ManOutsideBattlePavilion_Text_0
+# 489 "data/maps/SofosCity/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_TRY_SOFOS_BATTLE_PAVILION
-# 488 "data/maps/SofosCity/scripts.pory"
+# 490 "data/maps/SofosCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SofosCity_EventScript_ManOutsideBattlePavilion_2
-# 497 "data/maps/SofosCity/scripts.pory"
+# 499 "data/maps/SofosCity/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_TRY_SOFOS_BATTLE_PAVILION
-# 498 "data/maps/SofosCity/scripts.pory"
+# 500 "data/maps/SofosCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SofosCity_EventScript_ManOutsideBattlePavilion_4
-# 508 "data/maps/SofosCity/scripts.pory"
+# 510 "data/maps/SofosCity/scripts.pory"
 	msgbox SofosCity_EventScript_ManOutsideBattlePavilion_Text_3
-# 509 "data/maps/SofosCity/scripts.pory"
-	closemessage
 # 511 "data/maps/SofosCity/scripts.pory"
-	delay 30
+	closemessage
 # 513 "data/maps/SofosCity/scripts.pory"
+	delay 30
+# 515 "data/maps/SofosCity/scripts.pory"
 	goto_if_set FLAG_PLAYED_IN_SOFOS_BATTLE_PAVILION, SofosCity_EventScript_ManOutsideBattlePavilion_7
 	return
 
 SofosCity_EventScript_ManOutsideBattlePavilion_2:
-# 490 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_ManOutsideBattlePavilion_Text_1
-# 491 "data/maps/SofosCity/scripts.pory"
-	closemessage
 # 492 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_ManOutsideBattlePavilion_Text_1
+# 493 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 494 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 SofosCity_EventScript_ManOutsideBattlePavilion_4:
-# 500 "data/maps/SofosCity/scripts.pory"
+# 502 "data/maps/SofosCity/scripts.pory"
 	msgbox SofosCity_EventScript_ManOutsideBattlePavilion_Text_2
-# 501 "data/maps/SofosCity/scripts.pory"
-	closemessage
 # 503 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 505 "data/maps/SofosCity/scripts.pory"
 	delay 20
-# 504 "data/maps/SofosCity/scripts.pory"
+# 506 "data/maps/SofosCity/scripts.pory"
 	startquest QUEST_TRY_SOFOS_BATTLE_PAVILION
 	return
 
 SofosCity_EventScript_ManOutsideBattlePavilion_7:
-# 515 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_ManOutsideBattlePavilion_Text_0
-# 516 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_ManOutsideBattlePavilion_Text_4
 # 517 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_ManOutsideBattlePavilion_Text_0
 # 518 "data/maps/SofosCity/scripts.pory"
-	delay 5
+	msgbox SofosCity_EventScript_ManOutsideBattlePavilion_Text_4
 # 519 "data/maps/SofosCity/scripts.pory"
-	giveitem ITEM_EXP_CANDY_M, 2
+	closemessage
+# 520 "data/maps/SofosCity/scripts.pory"
+	delay 5
 # 521 "data/maps/SofosCity/scripts.pory"
+	giveitem ITEM_EXP_CANDY_M, 2
+# 523 "data/maps/SofosCity/scripts.pory"
 	delay 20
-# 522 "data/maps/SofosCity/scripts.pory"
+# 524 "data/maps/SofosCity/scripts.pory"
 	completequest QUEST_TRY_SOFOS_BATTLE_PAVILION
 	return
 
 
 SofosCity_EventScript_ManAdmiringTowerRuin::
-# 530 "data/maps/SofosCity/scripts.pory"
-	lock
-# 531 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 532 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_ManAdmiringTowerRuin_Text_0
+	lock
 # 533 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_ManAdmiringTowerRuin_Text_1
+	faceplayer
 # 534 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_ManAdmiringTowerRuin_Text_0
 # 535 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_ManAdmiringTowerRuin_Text_1
+# 536 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 537 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_TogaGirlsAtAcropolis::
-# 541 "data/maps/SofosCity/scripts.pory"
-	lock
-# 542 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 543 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_TogaGirlsAtAcropolis_Text_0
+	lock
 # 544 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_TogaGirlsAtAcropolis_Text_1
+	faceplayer
 # 545 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_TogaGirlsAtAcropolis_Text_0
 # 546 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_TogaGirlsAtAcropolis_Text_1
+# 547 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 548 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCIty_EventScript_BugCatcher::
-# 552 "data/maps/SofosCity/scripts.pory"
-	lock
-# 553 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 554 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCIty_EventScript_BugCatcher_Text_0
+	lock
 # 555 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCIty_EventScript_BugCatcher_Text_1
+	faceplayer
 # 556 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCIty_EventScript_BugCatcher_Text_0
 # 557 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCIty_EventScript_BugCatcher_Text_1
+# 558 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 559 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_LassInTropics::
-# 563 "data/maps/SofosCity/scripts.pory"
-	lock
-# 564 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 565 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_LassInTropics_Text_0
+	lock
 # 566 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_LassInTropics_Text_1
+	faceplayer
 # 567 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_LassInTropics_Text_0
 # 568 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_LassInTropics_Text_1
+# 569 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 570 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_ManByShallows::
-# 574 "data/maps/SofosCity/scripts.pory"
-	lock
-# 575 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 576 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_BoyNearFarmersGoods_Text_0
+	lock
 # 577 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_ManByShallows_Text_0
+	faceplayer
 # 578 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_BoyNearFarmersGoods_Text_0
 # 579 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_ManByShallows_Text_0
+# 580 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 581 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_FatManByCave::
-# 585 "data/maps/SofosCity/scripts.pory"
-	lock
-# 586 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 587 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_FatManByCave_Text_0
+	lock
 # 588 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_FatManByCave_Text_1
+	faceplayer
 # 589 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_FatManByCave_Text_0
 # 590 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_FatManByCave_Text_1
+# 591 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 592 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_GoodRodFishingGuru::
-# 596 "data/maps/SofosCity/scripts.pory"
-	lock
-# 597 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 598 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_GoodRodFishingGuru_Text_0
+	lock
 # 599 "data/maps/SofosCity/scripts.pory"
+	faceplayer
+# 600 "data/maps/SofosCity/scripts.pory"
+	speakername SofosCity_EventScript_GoodRodFishingGuru_Text_0
+# 601 "data/maps/SofosCity/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_GOOD_ROD, SofosCity_EventScript_GoodRodFishingGuru_2
-# 611 "data/maps/SofosCity/scripts.pory"
+# 613 "data/maps/SofosCity/scripts.pory"
 	msgbox SofosCity_EventScript_GoodRodFishingGuru_Text_3
-# 612 "data/maps/SofosCity/scripts.pory"
+# 614 "data/maps/SofosCity/scripts.pory"
 	closemessage
 SofosCity_EventScript_GoodRodFishingGuru_1:
-# 614 "data/maps/SofosCity/scripts.pory"
+# 616 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 SofosCity_EventScript_GoodRodFishingGuru_2:
-# 601 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_GoodRodFishingGuru_Text_1
-# 602 "data/maps/SofosCity/scripts.pory"
-	closemessage
 # 603 "data/maps/SofosCity/scripts.pory"
-	giveitem ITEM_GOOD_ROD
+	msgbox SofosCity_EventScript_GoodRodFishingGuru_Text_1
 # 604 "data/maps/SofosCity/scripts.pory"
-	setflag FLAG_RECEIVED_GOOD_ROD
+	closemessage
 # 605 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_GoodRodFishingGuru_Text_0
+	giveitem ITEM_GOOD_ROD
 # 606 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_GoodRodFishingGuru_Text_2
+	setflag FLAG_RECEIVED_GOOD_ROD
 # 607 "data/maps/SofosCity/scripts.pory"
+	speakername SofosCity_EventScript_GoodRodFishingGuru_Text_0
+# 608 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_GoodRodFishingGuru_Text_2
+# 609 "data/maps/SofosCity/scripts.pory"
 	closemessage
 	goto SofosCity_EventScript_GoodRodFishingGuru_1
 
 
 SofosCity_EventScript_Trainer_SofosCity_Grunt::
-# 620 "data/maps/SofosCity/scripts.pory"
-	trainerbattle_single TRAINER_SOFOS_CITY_CHIMERA_GRUNT, SofosCity_Text_Trainer_SofosCity_GruntIntro, SofosCity_Text_Trainer_SofosCity_GruntDefeat
-# 621 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_Trainer_SofosCity_Grunt_Text_0
 # 622 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_Trainer_SofosCity_Grunt_Text_1
+	trainerbattle_single TRAINER_SOFOS_CITY_CHIMERA_GRUNT, SofosCity_Text_Trainer_SofosCity_GruntIntro, SofosCity_Text_Trainer_SofosCity_GruntDefeat
 # 623 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_Trainer_SofosCity_Grunt_Text_0
 # 624 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_Trainer_SofosCity_Grunt_Text_1
+# 625 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 626 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_SwimmerF::
-# 638 "data/maps/SofosCity/scripts.pory"
-	lock
-# 639 "data/maps/SofosCity/scripts.pory"
-	faceplayer
 # 640 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_SwimmerF_Text_0
+	lock
 # 641 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_SwimmerF_Text_1
+	faceplayer
 # 642 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_SwimmerF_Text_0
 # 643 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_SwimmerF_Text_1
+# 644 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 645 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_Trigger_PiraeusKiposTownTrigger0::
-# 649 "data/maps/SofosCity/scripts.pory"
-	setvar VAR_TEMP_0, 0
-# 650 "data/maps/SofosCity/scripts.pory"
-	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
 # 651 "data/maps/SofosCity/scripts.pory"
+	setvar VAR_TEMP_0, 0
+# 652 "data/maps/SofosCity/scripts.pory"
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
+# 653 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_Trigger_PiraeusKiposTownTrigger1::
-# 656 "data/maps/SofosCity/scripts.pory"
-	setvar VAR_TEMP_0, 1
-# 657 "data/maps/SofosCity/scripts.pory"
-	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
 # 658 "data/maps/SofosCity/scripts.pory"
+	setvar VAR_TEMP_0, 1
+# 659 "data/maps/SofosCity/scripts.pory"
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
+# 660 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_Trigger_PiraeusKiposTownTrigger2::
-# 663 "data/maps/SofosCity/scripts.pory"
-	setvar VAR_TEMP_0, 2
-# 664 "data/maps/SofosCity/scripts.pory"
-	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
 # 665 "data/maps/SofosCity/scripts.pory"
+	setvar VAR_TEMP_0, 2
+# 666 "data/maps/SofosCity/scripts.pory"
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
+# 667 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_Trigger_PiraeusKiposTownTrigger3::
-# 670 "data/maps/SofosCity/scripts.pory"
-	setvar VAR_TEMP_0, 3
-# 671 "data/maps/SofosCity/scripts.pory"
-	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
 # 672 "data/maps/SofosCity/scripts.pory"
+	setvar VAR_TEMP_0, 3
+# 673 "data/maps/SofosCity/scripts.pory"
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
+# 674 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_Trigger_PiraeusKiposTownTrigger4::
-# 677 "data/maps/SofosCity/scripts.pory"
-	setvar VAR_TEMP_0, 4
-# 678 "data/maps/SofosCity/scripts.pory"
-	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
 # 679 "data/maps/SofosCity/scripts.pory"
+	setvar VAR_TEMP_0, 4
+# 680 "data/maps/SofosCity/scripts.pory"
+	goto SofosCity_EventScript_TryPiraeusKiposTownEvent
+# 681 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 
 SofosCity_EventScript_TryPiraeusKiposTownEvent::
-# 685 "data/maps/SofosCity/scripts.pory"
+# 687 "data/maps/SofosCity/scripts.pory"
 	goto_if_set FLAG_BADGE04_GET, SofosCity_EventScript_TryPiraeusKiposTownEvent_2
 SofosCity_EventScript_TryPiraeusKiposTownEvent_1:
-# 730 "data/maps/SofosCity/scripts.pory"
+# 732 "data/maps/SofosCity/scripts.pory"
 	release
 	end
 
 SofosCity_EventScript_TryPiraeusKiposTownEvent_2:
-# 687 "data/maps/SofosCity/scripts.pory"
-	lockall
 # 689 "data/maps/SofosCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
-# 690 "data/maps/SofosCity/scripts.pory"
-	waitmovement 0
+	lockall
 # 691 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 # 692 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_1
+	waitmovement 0
 # 693 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_0
+# 694 "data/maps/SofosCity/scripts.pory"
+	msgbox SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_1
 # 695 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 697 "data/maps/SofosCity/scripts.pory"
 	applymovement 60, Common_Movement_FaceUp
-# 696 "data/maps/SofosCity/scripts.pory"
+# 698 "data/maps/SofosCity/scripts.pory"
 	compare VAR_TEMP_0, 0
 	goto_if_eq SofosCity_EventScript_TryPiraeusKiposTownEvent_5
-# 700 "data/maps/SofosCity/scripts.pory"
+# 702 "data/maps/SofosCity/scripts.pory"
 	compare VAR_TEMP_0, 1
 	goto_if_eq SofosCity_EventScript_TryPiraeusKiposTownEvent_6
-# 704 "data/maps/SofosCity/scripts.pory"
+# 706 "data/maps/SofosCity/scripts.pory"
 	compare VAR_TEMP_0, 2
 	goto_if_eq SofosCity_EventScript_TryPiraeusKiposTownEvent_7
-# 708 "data/maps/SofosCity/scripts.pory"
+# 710 "data/maps/SofosCity/scripts.pory"
 	compare VAR_TEMP_0, 3
 	goto_if_eq SofosCity_EventScript_TryPiraeusKiposTownEvent_8
-# 714 "data/maps/SofosCity/scripts.pory"
+# 716 "data/maps/SofosCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SofosCity_Movement_ApproachPiraeus4
 SofosCity_EventScript_TryPiraeusKiposTownEvent_4:
-# 716 "data/maps/SofosCity/scripts.pory"
+# 718 "data/maps/SofosCity/scripts.pory"
 	waitmovement 0
-# 717 "data/maps/SofosCity/scripts.pory"
-	delay 10
 # 719 "data/maps/SofosCity/scripts.pory"
-	speakername SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_0
-# 720 "data/maps/SofosCity/scripts.pory"
-	msgbox SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_2
+	delay 10
 # 721 "data/maps/SofosCity/scripts.pory"
-	closemessage
+	speakername SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_0
 # 722 "data/maps/SofosCity/scripts.pory"
-	delay 20
+	msgbox SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_2
 # 723 "data/maps/SofosCity/scripts.pory"
+	closemessage
+# 724 "data/maps/SofosCity/scripts.pory"
+	delay 20
+# 725 "data/maps/SofosCity/scripts.pory"
 	warpcontinuescript MAP_KIPOS_TOWN, 18, 22, KiposTown_EventScript_LeadPlayerToConservationCenter
 	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_1
 
 SofosCity_EventScript_TryPiraeusKiposTownEvent_5:
-# 698 "data/maps/SofosCity/scripts.pory"
+# 700 "data/maps/SofosCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SofosCity_Movement_ApproachPiraeus0
 	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_4
 
 SofosCity_EventScript_TryPiraeusKiposTownEvent_6:
-# 702 "data/maps/SofosCity/scripts.pory"
+# 704 "data/maps/SofosCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SofosCity_Movement_ApproachPiraeus1
 	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_4
 
 SofosCity_EventScript_TryPiraeusKiposTownEvent_7:
-# 706 "data/maps/SofosCity/scripts.pory"
+# 708 "data/maps/SofosCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SofosCity_Movement_ApproachPiraeus2
 	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_4
 
 SofosCity_EventScript_TryPiraeusKiposTownEvent_8:
-# 710 "data/maps/SofosCity/scripts.pory"
+# 712 "data/maps/SofosCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SofosCity_Movement_ApproachPiraeus3
 	goto SofosCity_EventScript_TryPiraeusKiposTownEvent_4
 
 
-# 734 "data/maps/SofosCity/scripts.pory"
-SofosCity_Movement_ApproachPiraeus0:
 # 736 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 737 "data/maps/SofosCity/scripts.pory"
-	walk_right
-# 737 "data/maps/SofosCity/scripts.pory"
-	walk_right
-# 738 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 738 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 738 "data/maps/SofosCity/scripts.pory"
-	walk_down
+SofosCity_Movement_ApproachPiraeus0:
 # 738 "data/maps/SofosCity/scripts.pory"
 	walk_down
 # 739 "data/maps/SofosCity/scripts.pory"
+	walk_right
+# 739 "data/maps/SofosCity/scripts.pory"
+	walk_right
+# 740 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 740 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 740 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 740 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 741 "data/maps/SofosCity/scripts.pory"
 	step_end
 
-# 741 "data/maps/SofosCity/scripts.pory"
-SofosCity_Movement_ApproachPiraeus1:
 # 743 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 744 "data/maps/SofosCity/scripts.pory"
-	walk_right
-# 745 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 745 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 745 "data/maps/SofosCity/scripts.pory"
-	walk_down
+SofosCity_Movement_ApproachPiraeus1:
 # 745 "data/maps/SofosCity/scripts.pory"
 	walk_down
 # 746 "data/maps/SofosCity/scripts.pory"
-	step_end
-
+	walk_right
+# 747 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 747 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 747 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 747 "data/maps/SofosCity/scripts.pory"
+	walk_down
 # 748 "data/maps/SofosCity/scripts.pory"
-SofosCity_Movement_ApproachPiraeus2:
-# 750 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 750 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 750 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 750 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 750 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 751 "data/maps/SofosCity/scripts.pory"
 	step_end
 
+# 750 "data/maps/SofosCity/scripts.pory"
+SofosCity_Movement_ApproachPiraeus2:
+# 752 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 752 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 752 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 752 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 752 "data/maps/SofosCity/scripts.pory"
+	walk_down
 # 753 "data/maps/SofosCity/scripts.pory"
-SofosCity_Movement_ApproachPiraeus3:
+	step_end
+
 # 755 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 756 "data/maps/SofosCity/scripts.pory"
-	walk_left
-# 757 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 757 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 757 "data/maps/SofosCity/scripts.pory"
-	walk_down
+SofosCity_Movement_ApproachPiraeus3:
 # 757 "data/maps/SofosCity/scripts.pory"
 	walk_down
 # 758 "data/maps/SofosCity/scripts.pory"
+	walk_left
+# 759 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 759 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 759 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 759 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 760 "data/maps/SofosCity/scripts.pory"
 	step_end
 
-# 760 "data/maps/SofosCity/scripts.pory"
-SofosCity_Movement_ApproachPiraeus4:
 # 762 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 763 "data/maps/SofosCity/scripts.pory"
-	walk_left
-# 763 "data/maps/SofosCity/scripts.pory"
-	walk_left
-# 764 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 764 "data/maps/SofosCity/scripts.pory"
-	walk_down
-# 764 "data/maps/SofosCity/scripts.pory"
-	walk_down
+SofosCity_Movement_ApproachPiraeus4:
 # 764 "data/maps/SofosCity/scripts.pory"
 	walk_down
 # 765 "data/maps/SofosCity/scripts.pory"
+	walk_left
+# 765 "data/maps/SofosCity/scripts.pory"
+	walk_left
+# 766 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 766 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 766 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 766 "data/maps/SofosCity/scripts.pory"
+	walk_down
+# 767 "data/maps/SofosCity/scripts.pory"
 	step_end
 
 SofosCity_EventScript_GameCornerSign_Text_0:
@@ -1248,32 +1252,32 @@ SofosCity_EventScript_ItemStreetVendor_Text_0:
 	.string "Street Vendor$"
 
 SofosCity_EventScript_GirlNearVendors_Text_0:
-# 187 "data/maps/SofosCity/scripts.pory"
+# 189 "data/maps/SofosCity/scripts.pory"
 	.string "Girl$"
 
 SofosCity_EventScript_GirlNearVendors_Text_1:
-# 188 "data/maps/SofosCity/scripts.pory"
+# 190 "data/maps/SofosCity/scripts.pory"
 	.string "Everything sold by these Street\n"
 	.string "Vendors are made or grown right around\l"
 	.string "Sofos City! It helps keep locals in\l"
 	.string "business.$"
 
 SofosCity_EventScript_BoyNearFarmersGoods_Text_0:
-# 198 "data/maps/SofosCity/scripts.pory"
+# 200 "data/maps/SofosCity/scripts.pory"
 	.string "Athlete$"
 
 SofosCity_EventScript_BoyNearFarmersGoods_Text_1:
-# 199 "data/maps/SofosCity/scripts.pory"
+# 201 "data/maps/SofosCity/scripts.pory"
 	.string "Mmm, locally-grown food is the best! My\n"
 	.string "workouts go 10x better when I buy my\l"
 	.string "snacks from here.$"
 
 SofosCity_EventScript_ManWithMurkrow_Text_0:
-# 209 "data/maps/SofosCity/scripts.pory"
+# 211 "data/maps/SofosCity/scripts.pory"
 	.string "Angry Man$"
 
 SofosCity_EventScript_ManWithMurkrow_Text_1:
-# 212 "data/maps/SofosCity/scripts.pory"
+# 214 "data/maps/SofosCity/scripts.pory"
 	.string "Murkrow... Murkrow! Come on, work with\n"
 	.string "me!\p"
 	.string "Argh, I can't do it anymore! I was going\n"
@@ -1282,36 +1286,36 @@ SofosCity_EventScript_ManWithMurkrow_Text_1:
 	.string "scram!$"
 
 SofosCity_EventScript_ManWithMurkrow_Text_2:
-# 219 "data/maps/SofosCity/scripts.pory"
+# 221 "data/maps/SofosCity/scripts.pory"
 	.string "Grr, this darn Murkrow is gonna make me\n"
 	.string "lose it! Why, why does it enjoy making me\l"
 	.string "angry?!$"
 
 SofosCity_EventScript_Murkrow_Text_0:
-# 229 "data/maps/SofosCity/scripts.pory"
+# 231 "data/maps/SofosCity/scripts.pory"
 	.string "Murkrow$"
 
 SofosCity_EventScript_Murkrow_Text_1:
-# 231 "data/maps/SofosCity/scripts.pory"
+# 233 "data/maps/SofosCity/scripts.pory"
 	.string "Kekekehehe!$"
 
 SofosCity_EventScript_LostConstructionWorker_Text_0:
-# 242 "data/maps/SofosCity/scripts.pory"
+# 244 "data/maps/SofosCity/scripts.pory"
 	.string "Worker$"
 
 SofosCity_EventScript_LostConstructionWorker_Text_1:
-# 243 "data/maps/SofosCity/scripts.pory"
+# 245 "data/maps/SofosCity/scripts.pory"
 	.string "Erm... hmm... I was called to Sofos City\n"
 	.string "for a maintenance job, but I'm already\l"
 	.string "lost! This must be the biggest city in\l"
 	.string "the whole region!$"
 
 SofosCity_EventScript_StrategicCamper_Text_0:
-# 258 "data/maps/SofosCity/scripts.pory"
+# 260 "data/maps/SofosCity/scripts.pory"
 	.string "Camper$"
 
 SofosCity_EventScript_StrategicCamper_Text_1:
-# 259 "data/maps/SofosCity/scripts.pory"
+# 261 "data/maps/SofosCity/scripts.pory"
 	.string "Alolan Raichu is the master of battle\n"
 	.string "terrain. It's signature ability, Surge\l"
 	.string "Surfer, summons and electric terrain\l"
@@ -1320,7 +1324,7 @@ SofosCity_EventScript_StrategicCamper_Text_1:
 	.string "your advantage!$"
 
 SofosCity_EventScript_StrategicCamper_Text_2:
-# 270 "data/maps/SofosCity/scripts.pory"
+# 272 "data/maps/SofosCity/scripts.pory"
 	.string "I love trying to understand Pokémon\n"
 	.string "battle strategies! Hazards, chip\l"
 	.string "damage, abilities, and of course, battle\l"
@@ -1335,13 +1339,13 @@ SofosCity_EventScript_StrategicCamper_Text_2:
 	.string "more about it. I'll give you a reward!$"
 
 SofosCity_EventScript_StrategicCamper_Text_3:
-# 279 "data/maps/SofosCity/scripts.pory"
+# 281 "data/maps/SofosCity/scripts.pory"
 	.string "What's up? Did you find an {COLOR GREEN}Alolan Raichu{COLOR DARK_GRAY}\n"
 	.string "and study the ability Surge Surfer for\l"
 	.string "me?$"
 
 SofosCity_EventScript_StrategicCamper_Text_4:
-# 286 "data/maps/SofosCity/scripts.pory"
+# 288 "data/maps/SofosCity/scripts.pory"
 	.string "Not yet, huh? It's okay, finding a\n"
 	.string "Raichu in the Alolan form isn't common\l"
 	.string "in the Ilios Region. I've only ever seen\l"
@@ -1352,7 +1356,7 @@ SofosCity_EventScript_StrategicCamper_Text_4:
 	.string "strategy even more!$"
 
 SofosCity_EventScript_StrategicCamper_ReactToRaichu_Text_0:
-# 300 "data/maps/SofosCity/scripts.pory"
+# 302 "data/maps/SofosCity/scripts.pory"
 	.string "Ahaha, I love it! This data is even more\n"
 	.string "impressive than I expected!\p"
 	.string "I just won two of these Alolan Raichu\n"
@@ -1360,17 +1364,17 @@ SofosCity_EventScript_StrategicCamper_ReactToRaichu_Text_0:
 	.string "take one!$"
 
 SofosCity_EventScript_StrategicCamper_ReactToRaichu_Text_1:
-# 305 "data/maps/SofosCity/scripts.pory"
+# 307 "data/maps/SofosCity/scripts.pory"
 	.string "It's a pretty large Doll, so make sure to\n"
 	.string "display it on a large Mat with plenty of\l"
 	.string "space!$"
 
 SofosCity_EventScript_BeautyNearPokecenter_Text_0:
-# 320 "data/maps/SofosCity/scripts.pory"
+# 322 "data/maps/SofosCity/scripts.pory"
 	.string "Beauty$"
 
 SofosCity_EventScript_BeautyNearPokecenter_Text_1:
-# 321 "data/maps/SofosCity/scripts.pory"
+# 323 "data/maps/SofosCity/scripts.pory"
 	.string "Sofos City is well-known for using\n"
 	.string "turquoise-blue roofs on most buildings.\l"
 	.string "It gives the city it's own identity.\p"
@@ -1380,39 +1384,39 @@ SofosCity_EventScript_BeautyNearPokecenter_Text_1:
 	.string "shining marble!$"
 
 SofosCity_EventScript_ArtistPlayingChess_Text_0:
-# 331 "data/maps/SofosCity/scripts.pory"
+# 333 "data/maps/SofosCity/scripts.pory"
 	.string "Artist$"
 
 SofosCity_EventScript_ArtistPlayingChess_Text_1:
-# 332 "data/maps/SofosCity/scripts.pory"
+# 334 "data/maps/SofosCity/scripts.pory"
 	.string "Ehehe, I know! I'll drive my Chesnaught\n"
 	.string "forward and take their best pieces!$"
 
 SofosCity_EventScript_OldWomanPlayingChess_Text_0:
-# 344 "data/maps/SofosCity/scripts.pory"
+# 346 "data/maps/SofosCity/scripts.pory"
 	.string "Old Woman$"
 
 SofosCity_EventScript_OldWomanPlayingChess_Text_1:
-# 345 "data/maps/SofosCity/scripts.pory"
+# 347 "data/maps/SofosCity/scripts.pory"
 	.string "Hah! He'll use his Chesnaught piece\n"
 	.string "next. That'll put it right in the path of\l"
 	.string "my Mudsdale!$"
 
 SofosCity_EventScript_PicnickerRunning_Text_0:
-# 357 "data/maps/SofosCity/scripts.pory"
+# 359 "data/maps/SofosCity/scripts.pory"
 	.string "Tourist$"
 
 SofosCity_EventScript_PicnickerRunning_Text_1:
-# 358 "data/maps/SofosCity/scripts.pory"
+# 360 "data/maps/SofosCity/scripts.pory"
 	.string "Wow wow WOW! This city is so big! I could\n"
 	.string "run around forever to see it all!$"
 
 SofosCity_EventScript_OfficerAtCityEdge_Text_0:
-# 368 "data/maps/SofosCity/scripts.pory"
+# 370 "data/maps/SofosCity/scripts.pory"
 	.string "Officer$"
 
 SofosCity_EventScript_OfficerAtCityEdge_Text_1:
-# 369 "data/maps/SofosCity/scripts.pory"
+# 371 "data/maps/SofosCity/scripts.pory"
 	.string "This is the edge of the modern Sofos\n"
 	.string "City. Further north is what remains of\l"
 	.string "the Acropolis atop the cliffside, which\l"
@@ -1420,11 +1424,11 @@ SofosCity_EventScript_OfficerAtCityEdge_Text_1:
 	.string "of the {COLOR GREEN}Acropolis Temple{COLOR DARK_GRAY}.$"
 
 SofosCity_EventScript_FarmerOnSidewalk_Text_0:
-# 379 "data/maps/SofosCity/scripts.pory"
+# 381 "data/maps/SofosCity/scripts.pory"
 	.string "Farmer$"
 
 SofosCity_EventScript_FarmerOnSidewalk_Text_1:
-# 380 "data/maps/SofosCity/scripts.pory"
+# 382 "data/maps/SofosCity/scripts.pory"
 	.string "I'd run a farm near the ruins up on the\n"
 	.string "Acropolis if I could, but the land is\l"
 	.string "riddled with stone and marble\l"
@@ -1433,36 +1437,36 @@ SofosCity_EventScript_FarmerOnSidewalk_Text_1:
 	.string "understand our history.$"
 
 SofosCity_EventScript_Rockruff_Text_0:
-# 390 "data/maps/SofosCity/scripts.pory"
+# 392 "data/maps/SofosCity/scripts.pory"
 	.string "Rockruff$"
 
 SofosCity_EventScript_Rockruff_Text_1:
-# 392 "data/maps/SofosCity/scripts.pory"
+# 394 "data/maps/SofosCity/scripts.pory"
 	.string "Bwuff wuff!$"
 
 SofosCity_EventScript_WomanWithRockruff_Text_0:
-# 403 "data/maps/SofosCity/scripts.pory"
+# 405 "data/maps/SofosCity/scripts.pory"
 	.string "Woman$"
 
 SofosCity_EventScript_WomanWithRockruff_Text_1:
-# 404 "data/maps/SofosCity/scripts.pory"
+# 406 "data/maps/SofosCity/scripts.pory"
 	.string "I'm taking my Rockruff on a walk. She\n"
 	.string "likes to stop and take a break after\l"
 	.string "visiting the Pokémon Center.$"
 
 SofosCity_EventScript_FishermanPlayingChess_Text_0:
-# 414 "data/maps/SofosCity/scripts.pory"
+# 416 "data/maps/SofosCity/scripts.pory"
 	.string "Fisherman$"
 
 SofosCity_EventScript_FishermanPlayingChess_Text_1:
-# 415 "data/maps/SofosCity/scripts.pory"
+# 417 "data/maps/SofosCity/scripts.pory"
 	.string "I formed a wall with my Zigzagoon\n"
 	.string "pieces, so that'll protect my Gallade. If\l"
 	.string "they take the Gallade piece, I lose the\l"
 	.string "game!$"
 
 SofosCity_EventScript_GirlPlayingChess_Text_0:
-# 428 "data/maps/SofosCity/scripts.pory"
+# 430 "data/maps/SofosCity/scripts.pory"
 	.string "Each piece can move in different ways.\n"
 	.string "Chesnaught moves in straight lines,\l"
 	.string "Mudsdale moves in L-shapes, and Xatu\l"
@@ -1473,21 +1477,21 @@ SofosCity_EventScript_GirlPlayingChess_Text_0:
 	.string "city!$"
 
 SofosCity_EventScript_HexManiacSeeingLights_Text_0:
-# 440 "data/maps/SofosCity/scripts.pory"
+# 442 "data/maps/SofosCity/scripts.pory"
 	.string "Hex Maniac$"
 
 SofosCity_EventScript_HexManiacSeeingLights_Text_1:
-# 441 "data/maps/SofosCity/scripts.pory"
+# 443 "data/maps/SofosCity/scripts.pory"
 	.string "The lights all around the city keep wild\n"
 	.string "Pokémon at bay. But once you're outside\l"
 	.string "the walls, you're in their territory.$"
 
 SofosCity_EventScript_CooltrainerThinkingStrategy_Text_0:
-# 451 "data/maps/SofosCity/scripts.pory"
+# 453 "data/maps/SofosCity/scripts.pory"
 	.string "Cooltrainer$"
 
 SofosCity_EventScript_CooltrainerThinkingStrategy_Text_1:
-# 452 "data/maps/SofosCity/scripts.pory"
+# 454 "data/maps/SofosCity/scripts.pory"
 	.string "Sofos City is famous for innovating on\n"
 	.string "Pokémon battle strategy. The Gym\l"
 	.string "Leader chooses to use strategic\l"
@@ -1495,37 +1499,37 @@ SofosCity_EventScript_CooltrainerThinkingStrategy_Text_1:
 	.string "a single type.$"
 
 SofosCity_EventScript_OldManAtCliff_Text_0:
-# 462 "data/maps/SofosCity/scripts.pory"
+# 464 "data/maps/SofosCity/scripts.pory"
 	.string "Old Man$"
 
 SofosCity_EventScript_OldManAtCliff_Text_1:
-# 463 "data/maps/SofosCity/scripts.pory"
+# 465 "data/maps/SofosCity/scripts.pory"
 	.string "This used to be a bustling beach, but\n"
 	.string "rising seas and erosion have reduced it\l"
 	.string "to this. Bleached shells and receding\l"
 	.string "sands... these changes aren't natural.$"
 
 SofosCity_EventScript_Clauncher_Text_0:
-# 472 "data/maps/SofosCity/scripts.pory"
+# 474 "data/maps/SofosCity/scripts.pory"
 	.string "Clauncher$"
 
 SofosCity_EventScript_Clauncher_Text_1:
-# 474 "data/maps/SofosCity/scripts.pory"
+# 476 "data/maps/SofosCity/scripts.pory"
 	.string "Kss kss!$"
 
 SofosCity_EventScript_ManOutsideBattlePavilion_Text_0:
-# 485 "data/maps/SofosCity/scripts.pory"
+# 487 "data/maps/SofosCity/scripts.pory"
 	.string "Man$"
 
 SofosCity_EventScript_ManOutsideBattlePavilion_Text_1:
-# 490 "data/maps/SofosCity/scripts.pory"
+# 492 "data/maps/SofosCity/scripts.pory"
 	.string "There are a few other Battle Pavilions\n"
 	.string "scattered around the Ilios Region. Each\l"
 	.string "has different rules and strategies to\l"
 	.string "win!$"
 
 SofosCity_EventScript_ManOutsideBattlePavilion_Text_2:
-# 500 "data/maps/SofosCity/scripts.pory"
+# 502 "data/maps/SofosCity/scripts.pory"
 	.string "See that building with the green roof\n"
 	.string "topped with Poké balls? That's the\l"
 	.string "{COLOR GREEN}Sofos City Battle Pavilion{COLOR DARK_GRAY}. It's a\l"
@@ -1536,23 +1540,23 @@ SofosCity_EventScript_ManOutsideBattlePavilion_Text_2:
 	.string "went!$"
 
 SofosCity_EventScript_ManOutsideBattlePavilion_Text_3:
-# 508 "data/maps/SofosCity/scripts.pory"
+# 510 "data/maps/SofosCity/scripts.pory"
 	.string "Chaire! Have you tried participating in\n"
 	.string "the {COLOR GREEN}Sofos City Battle Pavilion{COLOR DARK_GRAY} yet?$"
 
 SofosCity_EventScript_ManOutsideBattlePavilion_Text_4:
-# 516 "data/maps/SofosCity/scripts.pory"
+# 518 "data/maps/SofosCity/scripts.pory"
 	.string "Opa! You did it! Did you have fun?\n"
 	.string "Right, right, your reward. I hope you\l"
 	.string "continue to participate in Battle\l"
 	.string "Pavilions across Ilios!$"
 
 SofosCity_EventScript_ManAdmiringTowerRuin_Text_0:
-# 532 "data/maps/SofosCity/scripts.pory"
+# 534 "data/maps/SofosCity/scripts.pory"
 	.string "Curious Man$"
 
 SofosCity_EventScript_ManAdmiringTowerRuin_Text_1:
-# 533 "data/maps/SofosCity/scripts.pory"
+# 535 "data/maps/SofosCity/scripts.pory"
 	.string "There are ruins all over the Ilios\n"
 	.string "Region, but those around Sofos City are\l"
 	.string "unique. In the {COLOR GREEN}Acropolis Temple{COLOR DARK_GRAY} here,\l"
@@ -1562,50 +1566,50 @@ SofosCity_EventScript_ManAdmiringTowerRuin_Text_1:
 	.string "abandoned!$"
 
 SofosCity_EventScript_TogaGirlsAtAcropolis_Text_0:
-# 543 "data/maps/SofosCity/scripts.pory"
+# 545 "data/maps/SofosCity/scripts.pory"
 	.string "Toga Woman$"
 
 SofosCity_EventScript_TogaGirlsAtAcropolis_Text_1:
-# 544 "data/maps/SofosCity/scripts.pory"
+# 546 "data/maps/SofosCity/scripts.pory"
 	.string "Welcome to the Sofos City {COLOR GREEN}Acropolis\n"
 	.string "Temple{COLOR DARK_GRAY}. Feel free to pay your respects\l"
 	.string "here.$"
 
 SofosCIty_EventScript_BugCatcher_Text_0:
-# 554 "data/maps/SofosCity/scripts.pory"
+# 556 "data/maps/SofosCity/scripts.pory"
 	.string "Bug Catcher$"
 
 SofosCIty_EventScript_BugCatcher_Text_1:
-# 555 "data/maps/SofosCity/scripts.pory"
+# 557 "data/maps/SofosCity/scripts.pory"
 	.string "I live in the center of Sofos City, but I\n"
 	.string "walk out here every day to look for\l"
 	.string "Pokémon! I love being so close to the\l"
 	.string "forest.$"
 
 SofosCity_EventScript_LassInTropics_Text_0:
-# 565 "data/maps/SofosCity/scripts.pory"
+# 567 "data/maps/SofosCity/scripts.pory"
 	.string "Lass$"
 
 SofosCity_EventScript_LassInTropics_Text_1:
-# 566 "data/maps/SofosCity/scripts.pory"
+# 568 "data/maps/SofosCity/scripts.pory"
 	.string "Not too many people come so far from\n"
 	.string "the city walls. Lots of wild Pokémon are\l"
 	.string "out here, and plenty of city people\l"
 	.string "aren't a fan of that.$"
 
 SofosCity_EventScript_ManByShallows_Text_0:
-# 577 "data/maps/SofosCity/scripts.pory"
+# 579 "data/maps/SofosCity/scripts.pory"
 	.string "I come down here to cool off and watch\n"
 	.string "Pokémon swim around. Sometimes, brave\l"
 	.string "Pokémon come up into the shallows to\l"
 	.string "say hello!$"
 
 SofosCity_EventScript_FatManByCave_Text_0:
-# 587 "data/maps/SofosCity/scripts.pory"
+# 589 "data/maps/SofosCity/scripts.pory"
 	.string "Fat Man$"
 
 SofosCity_EventScript_FatManByCave_Text_1:
-# 588 "data/maps/SofosCity/scripts.pory"
+# 590 "data/maps/SofosCity/scripts.pory"
 	.string "When I was a kid, everyone said to stay\n"
 	.string "away from the Satyr's Lair, that small\l"
 	.string "cave in the cliffside. I don't believe\l"
@@ -1613,47 +1617,47 @@ SofosCity_EventScript_FatManByCave_Text_1:
 	.string "don't want to go in!$"
 
 SofosCity_EventScript_GoodRodFishingGuru_Text_0:
-# 598 "data/maps/SofosCity/scripts.pory"
+# 600 "data/maps/SofosCity/scripts.pory"
 	.string "Fishing Guru$"
 
 SofosCity_EventScript_GoodRodFishingGuru_Text_1:
-# 601 "data/maps/SofosCity/scripts.pory"
+# 603 "data/maps/SofosCity/scripts.pory"
 	.string "Hey! Is that a Pokédex from the Acrisia\n"
 	.string "University? I used to visit all the time!\p"
 	.string "You've come quite a long way. Here,\n"
 	.string "maybe this'll help on your journey.$"
 
 SofosCity_EventScript_GoodRodFishingGuru_Text_2:
-# 606 "data/maps/SofosCity/scripts.pory"
+# 608 "data/maps/SofosCity/scripts.pory"
 	.string "The {COLOR GREEN}Good Rod{COLOR DARK_GRAY} can give you access to a\n"
 	.string "wide array of Water-dwelling Pokémon.\l"
 	.string "Maybe they can help you handle the\l"
 	.string "next Gym Leader!$"
 
 SofosCity_EventScript_GoodRodFishingGuru_Text_3:
-# 611 "data/maps/SofosCity/scripts.pory"
+# 613 "data/maps/SofosCity/scripts.pory"
 	.string "The {COLOR GREEN}Good Rod{COLOR DARK_GRAY} allows you to fish up a\n"
 	.string "wide array of Water-dwelling Pokémon.\l"
 	.string "Hey, you might even find some treasure\l"
 	.string "in the water!$"
 
 SofosCity_EventScript_Trainer_SofosCity_Grunt_Text_0:
-# 621 "data/maps/SofosCity/scripts.pory"
+# 623 "data/maps/SofosCity/scripts.pory"
 	.string "Grunt$"
 
 SofosCity_EventScript_Trainer_SofosCity_Grunt_Text_1:
-# 622 "data/maps/SofosCity/scripts.pory"
+# 624 "data/maps/SofosCity/scripts.pory"
 	.string "Well, I guess I'm not the WORST Grunt\n"
 	.string "ever. There was that one guy who messed\l"
 	.string "up stealing a Pokédex. He lost to some\l"
 	.string "new, weak Trainer!$"
 
 SofosCity_EventScript_SwimmerF_Text_0:
-# 640 "data/maps/SofosCity/scripts.pory"
+# 642 "data/maps/SofosCity/scripts.pory"
 	.string "Swimmer$"
 
 SofosCity_EventScript_SwimmerF_Text_1:
-# 641 "data/maps/SofosCity/scripts.pory"
+# 643 "data/maps/SofosCity/scripts.pory"
 	.string "The area around Sofos City is littered\n"
 	.string "with rocks in the shallowest parts.\l"
 	.string "Most swimmers choose to go further out\l"
@@ -1661,15 +1665,15 @@ SofosCity_EventScript_SwimmerF_Text_1:
 	.string "but relatively safe.$"
 
 SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_0:
-# 691 "data/maps/SofosCity/scripts.pory"
+# 693 "data/maps/SofosCity/scripts.pory"
 	.string "Piraeus$"
 
 SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_1:
-# 692 "data/maps/SofosCity/scripts.pory"
+# 694 "data/maps/SofosCity/scripts.pory"
 	.string "{PLAYER}!! Come on over here!$"
 
 SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_2:
-# 720 "data/maps/SofosCity/scripts.pory"
+# 722 "data/maps/SofosCity/scripts.pory"
 	.string "My crew and I just got a letter from a\n"
 	.string "Murkrow. The people of {COLOR GREEN}Kipos Town{COLOR DARK_GRAY} are\l"
 	.string "looking for a strong Trainer who's\l"
@@ -1683,11 +1687,11 @@ SofosCity_EventScript_TryPiraeusKiposTownEvent_Text_2:
 	.string "let's go!$"
 
 SofosCity_Text_Trainer_SofosCity_GruntIntro::
-# 627 "data/maps/SofosCity/scripts.pory"
+# 629 "data/maps/SofosCity/scripts.pory"
 	.string "Hold up! I was told to stop anyone from\n"
 	.string "getting into {COLOR GREEN}Satyr's Lair{COLOR DARK_GRAY}!$"
 
 SofosCity_Text_Trainer_SofosCity_GruntDefeat::
-# 631 "data/maps/SofosCity/scripts.pory"
+# 633 "data/maps/SofosCity/scripts.pory"
 	.string "Darn. I must be the worst Grunt in the\n"
 	.string "history of Team Chimera!$"

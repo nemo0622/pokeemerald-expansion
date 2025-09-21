@@ -65,7 +65,7 @@ MyrriniIsland_House3_EventScript_PunkRocker::
 # 63 "data/maps/MyrriniIsland_House3/scripts.pory"
 	removeitem ITEM_HEART_SCALE
 # 64 "data/maps/MyrriniIsland_House3/scripts.pory"
-	giveitem ITEM_TM_PSYSHOCK
+	giveitem ITEM_TM_SLUDGE_BOMB
 # 65 "data/maps/MyrriniIsland_House3/scripts.pory"
 	closemessage
 # 67 "data/maps/MyrriniIsland_House3/scripts.pory"

@@ -31,31 +31,29 @@ AsfalHills_House1_EventScript_LittleBoy::
 	compare VAR_RESULT, 0
 	goto_if_eq AsfalHills_House1_EventScript_LittleBoy_8
 # 47 "data/maps/AsfalHills_House1/scripts.pory"
-	applymovement 1, Common_Movement_Heart
+	emote 1, EMOTE_HEART
 # 48 "data/maps/AsfalHills_House1/scripts.pory"
-	waitmovement 0
+	speakername AsfalHills_House1_EventScript_LittleBoy_Text_0
 # 49 "data/maps/AsfalHills_House1/scripts.pory"
-	speakername AsfalHills_House1_EventScript_LittleBoy_Text_0
-# 50 "data/maps/AsfalHills_House1/scripts.pory"
 	msgbox AsfalHills_House1_EventScript_LittleBoy_Text_5
+# 50 "data/maps/AsfalHills_House1/scripts.pory"
+	closemessage
 # 51 "data/maps/AsfalHills_House1/scripts.pory"
-	closemessage
+	giveitem ITEM_TM_SHOCK_WAVE
 # 52 "data/maps/AsfalHills_House1/scripts.pory"
-	giveitem ITEM_FRESH_START_MOCHI
-# 53 "data/maps/AsfalHills_House1/scripts.pory"
 	delay 5
-# 54 "data/maps/AsfalHills_House1/scripts.pory"
+# 53 "data/maps/AsfalHills_House1/scripts.pory"
 	speakername AsfalHills_House1_EventScript_LittleBoy_Text_0
-# 55 "data/maps/AsfalHills_House1/scripts.pory"
+# 54 "data/maps/AsfalHills_House1/scripts.pory"
 	msgbox AsfalHills_House1_EventScript_LittleBoy_Text_6
-# 56 "data/maps/AsfalHills_House1/scripts.pory"
+# 55 "data/maps/AsfalHills_House1/scripts.pory"
 	closemessage
-# 58 "data/maps/AsfalHills_House1/scripts.pory"
+# 57 "data/maps/AsfalHills_House1/scripts.pory"
 	delay 20
-# 59 "data/maps/AsfalHills_House1/scripts.pory"
+# 58 "data/maps/AsfalHills_House1/scripts.pory"
 	completequest QUEST_SHOW_BOY_GIRAFARIG
 AsfalHills_House1_EventScript_LittleBoy_4:
-# 62 "data/maps/AsfalHills_House1/scripts.pory"
+# 61 "data/maps/AsfalHills_House1/scripts.pory"
 	release
 	end
 
@@ -94,17 +92,17 @@ AsfalHills_House1_EventScript_LittleBoy_8:
 
 
 AsfalHills_House1_EventScript_Artist::
-# 68 "data/maps/AsfalHills_House1/scripts.pory"
+# 67 "data/maps/AsfalHills_House1/scripts.pory"
 	lock
-# 69 "data/maps/AsfalHills_House1/scripts.pory"
+# 68 "data/maps/AsfalHills_House1/scripts.pory"
 	faceplayer
-# 70 "data/maps/AsfalHills_House1/scripts.pory"
+# 69 "data/maps/AsfalHills_House1/scripts.pory"
 	speakername AsfalHills_House1_EventScript_Artist_Text_0
-# 71 "data/maps/AsfalHills_House1/scripts.pory"
+# 70 "data/maps/AsfalHills_House1/scripts.pory"
 	msgbox AsfalHills_House1_EventScript_Artist_Text_1
-# 72 "data/maps/AsfalHills_House1/scripts.pory"
+# 71 "data/maps/AsfalHills_House1/scripts.pory"
 	closemessage
-# 73 "data/maps/AsfalHills_House1/scripts.pory"
+# 72 "data/maps/AsfalHills_House1/scripts.pory"
 	release
 	end
 
@@ -141,7 +139,7 @@ AsfalHills_House1_EventScript_LittleBoy_Text_4:
 	.string "catch one!$"
 
 AsfalHills_House1_EventScript_LittleBoy_Text_5:
-# 50 "data/maps/AsfalHills_House1/scripts.pory"
+# 49 "data/maps/AsfalHills_House1/scripts.pory"
 	.string "Wow, it's so cool! It really IS super\n"
 	.string "tall!\p"
 	.string "I'm gonna live like a Girafarig to get as\n"
@@ -149,18 +147,16 @@ AsfalHills_House1_EventScript_LittleBoy_Text_5:
 	.string "gifts to people who help me, so here!$"
 
 AsfalHills_House1_EventScript_LittleBoy_Text_6:
-# 55 "data/maps/AsfalHills_House1/scripts.pory"
-	.string "That Mochi resets Pokémon stats to\n"
-	.string "their basic level. I think it's helpful\l"
-	.string "for some special training, but I just\l"
-	.string "think they're yummy!$"
+# 54 "data/maps/AsfalHills_House1/scripts.pory"
+	.string "The move {COLOR GREEN}Shock Wave{COLOR DARK_GRAY} literally never\n"
+	.string "misses! Like, never EVER!$"
 
 AsfalHills_House1_EventScript_Artist_Text_0:
-# 70 "data/maps/AsfalHills_House1/scripts.pory"
+# 69 "data/maps/AsfalHills_House1/scripts.pory"
 	.string "Artist$"
 
 AsfalHills_House1_EventScript_Artist_Text_1:
-# 71 "data/maps/AsfalHills_House1/scripts.pory"
+# 70 "data/maps/AsfalHills_House1/scripts.pory"
 	.string "My kid is growing up fast. He's so\n"
 	.string "obsessed with getting taller and older,\l"
 	.string "but I wish he'd appreciate how fun it is\l"

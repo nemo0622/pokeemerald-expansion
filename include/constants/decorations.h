@@ -44,8 +44,8 @@
 #define DECOR_BREAKABLE_DOOR   40
 #define DECOR_SAND_ORNAMENT    41
 #define DECOR_POTTED_BERRY     42 // replaces SILVER_SHIELD reward for planting 200 Berry Trees (replace Archen reward lol)
-#define DECOR_SHOCKING_RELIC   43 // replaces GOLD_SHIELD (Antikythera Mechanism!) - reward for stopping Team Chimera (player told best to keep it for now - "best with strong trainer")
-#define DECOR_MARBLE_STATUE    44 // replaces GLASS_ORNAMENT or whatever (statue sprite) - reward for playing Mining Minigame 50 times
+#define DECOR_ANCIENT_MECHANISM   43 // replaces GOLD_SHIELD (Antikythera Mechanism!) - reward for stopping Team Chimera (player told best to keep it for now - "best with strong trainer")
+#define DECOR_MARBLE_STATUE    44 // replaces GLASS_ORNAMENT or whatever (statue sprite) - reward for playing Mining Minigame 10 times
 #define DECOR_TV               45
 #define DECOR_ROUND_TV         46
 #define DECOR_CUTE_TV          47
