@@ -69,6 +69,7 @@ script VulcaiSea_Underwater_EventScript_DiverWithDoll
         delay(5)
         givedecoration(DECOR_DRAGONITE_DOLL)
         closemessage
+        setflag(FLAG_GOT_DRAGONITE_DOLL)
     }
     release
     end

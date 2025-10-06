@@ -622,6 +622,7 @@ script MyrriniIsland_EventScript_ChimeraEvent
     setflag(FLAG_HIDE_CHIMERA_EVENT_MYRRINI_ISLAND)
     setflag(FLAG_HIDE_EUTERPE_DURING_CHIMERA_EVENT_MYRRINI_ISLAND)
     setflag(FLAG_HIDE_GRUNT_BLOCKING_MARMARO_MINES) // opens access to mines
+    setflag(FLAG_VISITED_PENTEPETAL_CITY) // enables sailing to Péntepetal
 
     // Start Quest to visit Péntepetal City and meet Rania there
     // She will ask for a few things in return, and give you the ability to see

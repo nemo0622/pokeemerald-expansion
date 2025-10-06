@@ -212,5 +212,5 @@ PalatiCity_PokemonCenter_EventScript_PunkRocker_Text_0:
 PalatiCity_PokemonCenter_EventScript_PunkRocker_Text_1:
 # 93 "data/maps/PalatiCity_PokemonCenter/scripts.pory"
 	.string "I think reading and learning about the\n"
-	.string "world is pretty punk rock, myself\p"
+	.string "world is pretty punk rock, myself.\p"
 	.string "What? Hey, it is!$"

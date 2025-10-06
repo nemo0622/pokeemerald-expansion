@@ -1810,6 +1810,16 @@ extern const u32 gItemIcon_Victreebite[];
 extern const u32 gItemIconPalette_Victreebite[];
 extern const u32 gItemIcon_Hawluchite[];
 extern const u32 gItemIconPalette_Hawluchite[];
+extern const u32 gItemIcon_Raichuite_X[];
+extern const u32 gItemIconPalette_Raichuite_X[];
+extern const u32 gItemIcon_Raichuite_Y[];
+extern const u32 gItemIconPalette_Raichuite_Y[];
+extern const u32 gItemIcon_Chesnaughtite[];
+extern const u32 gItemIconPalette_Chesnaughtite[];
+extern const u32 gItemIcon_Delphoxite[];
+extern const u32 gItemIconPalette_Delphoxite[];
+extern const u32 gItemIcon_Greninjite[];
+extern const u32 gItemIconPalette_Greninjite[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];

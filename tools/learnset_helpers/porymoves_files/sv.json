@@ -74961,6 +74961,8 @@
       "MOVE_COACHING",
       "MOVE_SLUDGE_WAVE",
       "MOVE_THROAT_CHOP",
+      "MOVE_POISON_FANG",
+      "MOVE_POWER_UP_PUNCH",
       "MOVE_UPPER_HAND"
     ],
     "EggMoves": [
@@ -93254,6 +93256,8 @@
       "MOVE_LASH_OUT",
       "MOVE_COACHING",
       "MOVE_SLUDGE_WAVE",
+      "MOVE_POISON_FANG",
+      "MOVE_POWER_UP_PUNCH",
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [

@@ -58,7 +58,7 @@ VulcaiSea_Underwater_EventScript_DiverWithDoll::
 # 64 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
 	goto_if_unset FLAG_GOT_DRAGONITE_DOLL, VulcaiSea_Underwater_EventScript_DiverWithDoll_2
 VulcaiSea_Underwater_EventScript_DiverWithDoll_1:
-# 73 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+# 74 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
 	release
 	end
 
@@ -75,6 +75,8 @@ VulcaiSea_Underwater_EventScript_DiverWithDoll_2:
 	givedecoration DECOR_DRAGONITE_DOLL
 # 71 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
 	closemessage
+# 72 "data/maps/SeaOfVulcai_Underwater/scripts.pory"
+	setflag FLAG_GOT_DRAGONITE_DOLL
 	goto VulcaiSea_Underwater_EventScript_DiverWithDoll_1
 
 

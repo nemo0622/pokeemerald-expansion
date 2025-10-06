@@ -90,7 +90,7 @@ script PalatiCity_PokemonCenter_EventScript_PunkRocker
     lock
     faceplayer
     speakername("Punk Rocker")
-    msgbox(format("I think reading and learning about the world is pretty punk rock, myself \p What? Hey, it is!"))
+    msgbox(format("I think reading and learning about the world is pretty punk rock, myself.\p What? Hey, it is!"))
     closemessage
     release
     end

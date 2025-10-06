@@ -47,6 +47,12 @@ script PalatiCity_EventScript_ChimeraEvent
 {
     setvar(VAR_TEMP_1, 1)
 
+    // remove Péntepetal events from happening, for sequence reasons
+    setflag(FLAG_HIDE_NIKO_PENTEPETAL_CITY)
+    setflag(FLAG_HIDE_CHIMERA_PENTEPETAL_CITY)
+    setflag(FLAG_HIDE_RANIA_PENTEPETAL_CITY)
+    questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_VISIT_RANIA_PENTEPETAL) // should silently remove this quest
+
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
     delay(10)
@@ -441,6 +447,14 @@ script PalatiCity_EventScript_RaniaRivalBattle
     lock
     faceplayer
     emote(42, EMOTE_EXCLAM)
+    if(!flag(FLAG_BADGE06_GET))
+    {
+        speakername("Rania")
+        msgbox(format("{PLAYER}! It's been a bit, eh?\p I was about to challenge Rhadine, the Gym Leader of Palati City. They turned me away because I don't have the {COLOR GREEN}Fresco Isles Gym Badge{COLOR DARK_GRAY}, though. I guess we should get that first!"))
+        closemessage
+        release
+        end
+    }
     speakername("Rania")
     msgbox(format("{PLAYER}! It's been a bit, eh?\p I just beat Rhadine, the Gym Leader of this city! That was a rough one, but I'm more fired up than ever. How about a quick battle before you head into the Gym?"))
     closemessage

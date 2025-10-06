@@ -17446,6 +17446,71 @@
         {
           "map": "MAP_NYX_TRAILS",
           "base_label": "gNyxTrails0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_XATU"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_SNOVER"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_BRELOOM"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_GOGOAT"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_PERSIAN"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_PERRSERKER"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_LURANTIS"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_ABOMASNOW"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_BANETTE"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_DUSCLOPS"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_ELECTRODE_HISUIAN"
+              },
+              {
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_ELECTRODE_HISUIAN"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 4,
             "mons": [
@@ -17528,71 +17593,6 @@
                 "min_level": 25,
                 "max_level": 35,
                 "species": "SPECIES_BRUXISH"
-              }
-            ]
-          },
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_XATU"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_SNOVER"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_BRELOOM"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_GOGOAT"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_PERSIAN"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_PERRSERKER"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_LURANTIS"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_ABOMASNOW"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_BANETTE"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_DUSCLOPS"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_ELECTRODE_HISUIAN"
-              },
-              {
-                "min_level": 34,
-                "max_level": 37,
-                "species": "SPECIES_ELECTRODE_HISUIAN"
               }
             ]
           }

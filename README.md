@@ -69,8 +69,9 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- Make sure all Decorations can be obtained
-- After this, UPDATE PHONE BUILD AND PLAY!
+- BEFORE SENDING TO OTHERS:
+    - Increase BAG_TMHM_COUNT to 70, ensuring there's enough room for all TMs and HMs. sigh
+    - Add LEVEL SCALING to Wakewater Isle fights!
 
 - Work on ideas from note on phone
     - Elite Redux inspired abilities & moves
@@ -167,6 +168,8 @@ Many, many talented developers and artists are responsible for making this proje
     24. By N-Kin, from Substitube public resource
     25. By SuicidalSushi, recolored
     26. By Zaebucca
+    27. By King-Of-The-X-Roads
+    28. By HexTheSpriter
     "XX, 1". Parts of sprite by Artist "XX" (from above list), edited by Nemo622
 - Trainer Sprites:
     - Amali and Harper sprited by me, based on TrainerDX GBC Trainer template sprites

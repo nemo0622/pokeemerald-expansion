@@ -464,6 +464,8 @@ script AcrisiaCity_University_EventScript_Niko
 
 mart AcrisiaCity_University_Mart_MegaStones_Shop1
 {
+    ITEM_RAICHUITE_X
+    ITEM_RAICHUITE_Y
     ITEM_VICTREEBITE
     ITEM_GYARADOSITE
     ITEM_NOCTOWLITE
@@ -486,6 +488,8 @@ mart AcrisiaCity_University_Mart_MegaStones_Shop1
 
 mart AcrisiaCity_University_Mart_MegaStones_Shop2
 {
+    ITEM_RAICHUITE_X
+    ITEM_RAICHUITE_Y
     ITEM_VICTREEBITE
     ITEM_GENGARITE
     ITEM_GYARADOSITE
@@ -519,6 +523,8 @@ mart AcrisiaCity_University_Mart_MegaStones_Shop2
 
 mart AcrisiaCity_University_Mart_MegaStones_CompleteShop
 {
+    ITEM_RAICHUITE_X
+    ITEM_RAICHUITE_Y
     ITEM_VICTREEBITE
     ITEM_GENGARITE
     ITEM_GYARADOSITE
@@ -545,6 +551,9 @@ mart AcrisiaCity_University_Mart_MegaStones_CompleteShop
     ITEM_GALLADITE
     ITEM_ARCHEOPSITE
     ITEM_MANDIBITE
+    ITEM_CHESNAUGHTITE
+    ITEM_DELPHOXITE
+    ITEM_GRENINJITE
     ITEM_GOGOATITE
     ITEM_PANGORITE
     ITEM_HELIOLITE

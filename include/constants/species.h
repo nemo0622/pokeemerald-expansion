@@ -1646,8 +1646,13 @@
 #define SPECIES_PYROAR_F                                1540
 #define SPECIES_VICTREEBEL_MEGA                         1541
 #define SPECIES_HAWLUCHA_MEGA                           1542
+#define SPECIES_RAICHU_MEGA_X                           1543
+#define SPECIES_RAICHU_MEGA_Y                           1544
+#define SPECIES_CHESNAUGHT_MEGA                         1545
+#define SPECIES_DELPHOX_MEGA                            1546
+#define SPECIES_GRENINJA_MEGA                           1547
 
-#define SPECIES_EGG (SPECIES_HAWLUCHA_MEGA + 1)
+#define SPECIES_EGG (SPECIES_GRENINJA_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

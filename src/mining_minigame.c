@@ -2229,16 +2229,16 @@ static void Mining_LoadSpriteGraphics(void)
     InitItemsIfSelected(2, itemId3);
     InitItemsIfSelected(3, itemId4);
 
-    // Stones
-    for (i=0; i<MINING_COUNT_MAX_NUMBER_STONES; i++)
-    {
-        stone = MININGID_NONE;
-        while (!DoesStoneFitInItemMap(stone))
-            stone = ((Random() % MINING_COUNT_ID_STONE) + MININGID_STONE_1x4);
+    // // Stones
+    // for (i=0; i<MINING_COUNT_MAX_NUMBER_STONES; i++)
+    // {
+    //     stone = MININGID_NONE;
+    //     while (!DoesStoneFitInItemMap(stone))
+    //         stone = ((Random() % MINING_COUNT_ID_STONE) + MININGID_STONE_1x4);
 
-        stone = Debug_DetermineStoneSize(stone,i);
-        DoDrawRandomStone(stone);
-    }
+    //     stone = Debug_DetermineStoneSize(stone,i);
+    //     DoDrawRandomStone(stone);
+    // }
 
     sMiningUiState->cursorSpriteIndex = CreateSprite(&gSpriteCursor, 8, 40, 0);
     sMiningUiState->cursorX = 0;
