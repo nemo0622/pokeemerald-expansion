@@ -340,9 +340,9 @@ CorrinCrossing_EventScript_CyclingTriathleteF_Text_0:
 
 CorrinCrossing_EventScript_CyclingTriathleteF_Text_1:
 # 114 "data/maps/TheRattway/scripts.pory"
-	.string "The cherry trees in this area were\n"
-	.string "planted centuries ago by foreign\l"
-	.string "visitors. Now they're a key part of Port\l"
+	.string "The cherry trees in this area started\n"
+	.string "to grow after a special Tropius visited\l"
+	.string "here. Now they're a key part of Port\l"
 	.string "Pello's culture!$"
 
 CorrinCrossing_EventScript_Trainer_CorrinCrossing_Vasia_Text_0:

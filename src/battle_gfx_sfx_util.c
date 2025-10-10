@@ -980,7 +980,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
     LZDecompressWram(lzPaletteData, gDecompressionBuffer);
     LoadPalette(gDecompressionBuffer, paletteOffset, PLTT_SIZE_4BPP);
     personalityValue = GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerAtk]], MON_DATA_PERSONALITY);
-    UniquePalette(paletteOffset, GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerAtk]], MON_DATA_SPECIES), personalityValue, IsMonShiny(&gPlayerParty[gBattlerPartyIndexes[battlerAtk]]));
+    // UniquePalette(paletteOffset, GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerAtk]], MON_DATA_SPECIES), personalityValue, IsMonShiny(&gPlayerParty[gBattlerPartyIndexes[battlerAtk]]));
     CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZE_4BPP);
 
     if (!megaEvo)

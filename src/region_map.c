@@ -1849,7 +1849,7 @@ static void LoadFlyDestIcons(void)
     LoadSpriteSheet(&sheet);
     LoadSpritePalette(&sFlyTargetIconsSpritePalette);
     CreateFlyDestIcons();
-    TryCreateRedOutlineFlyDestIcons();
+    // TryCreateRedOutlineFlyDestIcons();
 }
 
 // Sprite data for SpriteCB_FlyDestIcon
@@ -1867,8 +1867,28 @@ static void CreateFlyDestIcons(void)
     u16 shape;
     u8 spriteId;
 
+    // if(FlagGet(FLAG_VISITED_MYRRINI_ISLAND))
+    // {
+    //     GetMapSecDimensions(MAPSEC_MYRRINI_ISLAND, &x, &y, &width, &height);
+    //     x = (x + MAPCURSOR_X_MIN) * 8 + 4;
+    //     y = (y + MAPCURSOR_Y_MIN) * 8 + 4;
+
+    //     shape = SPRITE_SHAPE(8x8);
+
+    //     spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
+    //     if (spriteId != MAX_SPRITES)
+    //     {
+    //         gSprites[spriteId].oam.shape = shape;
+
+    //         gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
+
+    //         StartSpriteAnim(&gSprites[spriteId], shape);
+    //         gSprites[spriteId].sIconMapSec = MAPSEC_MYRRINI_ISLAND;
+    //     }
+    // }
+
     canFlyFlag = FLAG_VISITED_ACRISIA_CITY; // starting area or something? idrk lol i just know it worked
-    for (mapSecId = MAPSEC_ACRISIA_CITY; mapSecId <= MAPSEC_NYX_TRAILS; mapSecId++) // loop through first and last used MAPSECs
+    for (mapSecId = MAPSEC_LITTLEROOT_TOWN; mapSecId <= MAPSEC_NONE; mapSecId++) // loop through first and last used MAPSECs
     {
         // list all fly-able MAPSECs here!
         if(mapSecId != MAPSEC_ACRISIA_CITY && mapSecId != MAPSEC_JUSMAIL_TOWN && mapSecId != MAPSEC_PYTHIOS_TOWN 
@@ -1878,6 +1898,59 @@ static void CreateFlyDestIcons(void)
         && mapSecId != MAPSEC_KIPOS_TOWN && mapSecId != MAPSEC_PENTEPETAL_CITY  && mapSecId != MAPSEC_TOWER_OF_DIOXIPPUS
         && mapSecId != MAPSEC_WAKEWATER_ISLE)
             continue;
+
+        // Set canFlyFlag manually cause im pissed
+        switch(mapSecId)
+        {
+            case MAPSEC_ACRISIA_CITY:
+                canFlyFlag = FLAG_VISITED_ACRISIA_CITY;
+                break;
+            case MAPSEC_JUSMAIL_TOWN:
+                canFlyFlag = FLAG_VISITED_JUSMAIL_TOWN;
+                break;
+            case MAPSEC_PYTHIOS_TOWN:
+                canFlyFlag = FLAG_VISITED_PYTHIOS_TOWN;
+                break;
+            case MAPSEC_SOFOS_CITY:
+                canFlyFlag = FLAG_VISITED_SOFOS_CITY;
+                break;
+            case MAPSEC_MARMARO_ISLAND:
+                canFlyFlag = FLAG_VISITED_MARMARO_ISLAND;
+                break;
+            case MAPSEC_MYRRINI_ISLAND:
+                canFlyFlag = FLAG_VISITED_MYRRINI_ISLAND;
+                break;
+            case MAPSEC_FRESCO_ISLAND:
+                canFlyFlag = FLAG_VISITED_FRESCO_ISLAND;
+                break;
+            case MAPSEC_PALATI_CITY:
+                canFlyFlag = FLAG_VISITED_PALATI_CITY;
+                break;
+            case MAPSEC_PORT_PELLO:
+                canFlyFlag = FLAG_VISITED_PORT_PELLO;
+                break;
+            case MAPSEC_AREIOS_HIDEOUT:
+                canFlyFlag = FLAG_VISITED_AREIOS_HIDEOUT;
+                break;
+            case MAPSEC_RUINS_OF_AHIYAWA:
+                canFlyFlag = FLAG_VISITED_RUINS_OF_AHIYAWA;
+                break;
+            case MAPSEC_KALAMI_CITY:
+                canFlyFlag = FLAG_VISITED_KALAMI_CITY;
+                break;
+            case MAPSEC_KIPOS_TOWN:
+                canFlyFlag = FLAG_VISITED_KIPOS_TOWN;
+                break;
+            case MAPSEC_PENTEPETAL_CITY:
+                canFlyFlag = FLAG_VISITED_PENTEPETAL_CITY;
+                break;
+            case MAPSEC_TOWER_OF_DIOXIPPUS:
+                canFlyFlag = FLAG_VISITED_TOWER_OF_DIOXIPPUS;
+                break;
+            case MAPSEC_WAKEWATER_ISLE:
+                canFlyFlag = FLAG_VISITED_WAKEWATER_ISLE;
+                break;
+        }
 
         GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
         x = (x + MAPCURSOR_X_MIN) * 8 + 4;
@@ -1903,7 +1976,7 @@ static void CreateFlyDestIcons(void)
             StartSpriteAnim(&gSprites[spriteId], shape);
             gSprites[spriteId].sIconMapSec = mapSecId;
         }
-        canFlyFlag++;
+        // canFlyFlag++;
     }
 }
 

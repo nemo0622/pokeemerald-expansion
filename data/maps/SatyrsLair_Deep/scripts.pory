@@ -225,3 +225,39 @@ script SatyrsLair_Deep_EventScript_CheckEncounteredBothWeatherMons
         setflag(FLAG_CAUGHT_BOTH_WEATHER_LEGENDS)
     }
 }
+
+script SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Malu
+{
+    trainerbattle_single(TRAINER_SATYRSLAIR_MALU, SatyrsLair_Deep_Text_Trainer_SatyrsLair_MaluIntro, SatyrsLair_Deep_Text_Trainer_SatyrsLair_MaluDefeat)
+    speakername("Malu")
+    msgbox(format("There's a Team Chimera Admin with a big, scary Pokémon up ahead... This is too much for me!"))
+    closemessage
+    release
+    end
+}
+text SatyrsLair_Deep_Text_Trainer_SatyrsLair_MaluIntro
+{
+    format("Eek! It's scorching hot!")
+}
+text SatyrsLair_Deep_Text_Trainer_SatyrsLair_MaluDefeat
+{
+    format("I should get out of here!")
+}
+
+script SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Ryan
+{
+    trainerbattle_single(TRAINER_SATYRSLAIR_RYAN, SatyrsLair_Deep_Text_Trainer_SatyrsLair_RyanIntro, SatyrsLair_Deep_Text_Trainer_SatyrsLair_RyanDefeat)
+    speakername("Ryan")
+    msgbox(format("A Team Chimera Admin passed by with a monsterous Pokémon recently. I think we should get out of here!"))
+    closemessage
+    release
+    end
+}
+text SatyrsLair_Deep_Text_Trainer_SatyrsLair_RyanIntro
+{
+    format("Something big is happening...")
+}
+text SatyrsLair_Deep_Text_Trainer_SatyrsLair_RyanDefeat
+{
+    format("How do I get out of here again?")
+}

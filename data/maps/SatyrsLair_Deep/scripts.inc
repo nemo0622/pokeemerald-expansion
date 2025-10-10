@@ -366,6 +366,34 @@ SatyrsLair_Deep_EventScript_CheckEncounteredBothWeatherMons_2:
 	return
 
 
+SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Malu::
+# 231 "data/maps/SatyrsLair_Deep/scripts.pory"
+	trainerbattle_single TRAINER_SATYRSLAIR_MALU, SatyrsLair_Deep_Text_Trainer_SatyrsLair_MaluIntro, SatyrsLair_Deep_Text_Trainer_SatyrsLair_MaluDefeat
+# 232 "data/maps/SatyrsLair_Deep/scripts.pory"
+	speakername SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Malu_Text_0
+# 233 "data/maps/SatyrsLair_Deep/scripts.pory"
+	msgbox SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Malu_Text_1
+# 234 "data/maps/SatyrsLair_Deep/scripts.pory"
+	closemessage
+# 235 "data/maps/SatyrsLair_Deep/scripts.pory"
+	release
+	end
+
+
+SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Ryan::
+# 249 "data/maps/SatyrsLair_Deep/scripts.pory"
+	trainerbattle_single TRAINER_SATYRSLAIR_RYAN, SatyrsLair_Deep_Text_Trainer_SatyrsLair_RyanIntro, SatyrsLair_Deep_Text_Trainer_SatyrsLair_RyanDefeat
+# 250 "data/maps/SatyrsLair_Deep/scripts.pory"
+	speakername SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Ryan_Text_0
+# 251 "data/maps/SatyrsLair_Deep/scripts.pory"
+	msgbox SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Ryan_Text_1
+# 252 "data/maps/SatyrsLair_Deep/scripts.pory"
+	closemessage
+# 253 "data/maps/SatyrsLair_Deep/scripts.pory"
+	release
+	end
+
+
 SatyrsLair_Deep_EventScript_GroudonEvent_Text_0:
 # 22 "data/maps/SatyrsLair_Deep/scripts.pory"
 	.string "Chimera Admin$"
@@ -486,6 +514,42 @@ SatyrsLair_Deep_EventScript_CheckEncounteredBothWeatherMons_Text_0:
 	.string "remains is {COLOR GREEN}Rayquaza{COLOR DARK_GRAY}, chased down by\l"
 	.string "{COLOR RED}Kalliope{COLOR DARK_GRAY}, at the {COLOR GREEN}Tower of Dioxippus{COLOR DARK_GRAY}.$"
 
+SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Malu_Text_0:
+# 232 "data/maps/SatyrsLair_Deep/scripts.pory"
+	.string "Malu$"
+
+SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Malu_Text_1:
+# 233 "data/maps/SatyrsLair_Deep/scripts.pory"
+	.string "There's a Team Chimera Admin with a big,\n"
+	.string "scary Pokémon up ahead... This is too\l"
+	.string "much for me!$"
+
+SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Ryan_Text_0:
+# 250 "data/maps/SatyrsLair_Deep/scripts.pory"
+	.string "Ryan$"
+
+SatyrsLair_Deep_EventScript_Trainer_SatyrsLair_Ryan_Text_1:
+# 251 "data/maps/SatyrsLair_Deep/scripts.pory"
+	.string "A Team Chimera Admin passed by with a\n"
+	.string "monsterous Pokémon recently. I think\l"
+	.string "we should get out of here!$"
+
 SatyrsLair_Deep_Text_ChimeraAdminDefeated::
 # 167 "data/maps/SatyrsLair_Deep/scripts.pory"
 	.string "NO WAY!!$"
+
+SatyrsLair_Deep_Text_Trainer_SatyrsLair_MaluIntro::
+# 238 "data/maps/SatyrsLair_Deep/scripts.pory"
+	.string "Eek! It's scorching hot!$"
+
+SatyrsLair_Deep_Text_Trainer_SatyrsLair_MaluDefeat::
+# 242 "data/maps/SatyrsLair_Deep/scripts.pory"
+	.string "I should get out of here!$"
+
+SatyrsLair_Deep_Text_Trainer_SatyrsLair_RyanIntro::
+# 256 "data/maps/SatyrsLair_Deep/scripts.pory"
+	.string "Something big is happening...$"
+
+SatyrsLair_Deep_Text_Trainer_SatyrsLair_RyanDefeat::
+# 260 "data/maps/SatyrsLair_Deep/scripts.pory"
+	.string "How do I get out of here again?$"

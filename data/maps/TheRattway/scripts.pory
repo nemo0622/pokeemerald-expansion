@@ -111,7 +111,7 @@ script CorrinCrossing_EventScript_CyclingTriathleteF
     lock
     faceplayer
     speakername("Cyclist")
-    msgbox(format("The cherry trees in this area were planted centuries ago by foreign visitors. Now they're a key part of Port Pello's culture!"))
+    msgbox(format("The cherry trees in this area started to grow after a special Tropius visited here. Now they're a key part of Port Pello's culture!"))
     closemessage
     release
     end

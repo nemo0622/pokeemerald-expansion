@@ -22,6 +22,11 @@ mapscripts TowerOfDioxippus_MapScripts {
         setobjectaswildencounter(13, ENCOUNTER_LAND)
         setobjectaswildencounter(14, ENCOUNTER_LAND)
         setobjectaswildencounter(15, ENCOUNTER_LAND)
+
+        if(!flag(FLAG_DEFEATED_KALLIOPE_DIOXIPPUS) || (flag(FLAG_DEFEATED_KALLIOPE_DIOXIPPUS) && flag(FLAG_DID_RANIA_NIKO_POST_DIOXIPPUS_EVENT)))
+        {
+            setvar(VAR_TEMP_1, 1)
+        }
     }
 
     MAP_SCRIPT_ON_FRAME_TABLE [

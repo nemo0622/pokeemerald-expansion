@@ -164,7 +164,7 @@ Route117_EventScript_Derek::
 	end
 
 Route117_EventScript_Anna::
-	trainerbattle_double TRAINER_ANNA_AND_MEG_1, Route117_Text_AnnaIntro, Route117_Text_AnnaDefeat, Route117_Text_AnnaNotEnoughMons, Route117_EventScript_RegisterAnna
+	trainerbattle_double TRAINER_SATYRSLAIR_RYAN, Route117_Text_AnnaIntro, Route117_Text_AnnaDefeat, Route117_Text_AnnaNotEnoughMons, Route117_EventScript_RegisterAnna
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchAnna
 	msgbox Route117_Text_AnnaPostBattle, MSGBOX_DEFAULT
@@ -173,17 +173,17 @@ Route117_EventScript_Anna::
 
 Route117_EventScript_RegisterAnna::
 	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ANNA_AND_MEG_1
+	register_matchcall TRAINER_SATYRSLAIR_RYAN
 	release
 	end
 
 Route117_EventScript_RematchAnna::
-	trainerbattle_rematch_double TRAINER_ANNA_AND_MEG_1, Route117_Text_AnnaRematchIntro, Route117_Text_AnnaRematchDefeat, Route117_Text_AnnaRematchNotEnoughMons
+	trainerbattle_rematch_double TRAINER_SATYRSLAIR_RYAN, Route117_Text_AnnaRematchIntro, Route117_Text_AnnaRematchDefeat, Route117_Text_AnnaRematchNotEnoughMons
 	msgbox Route117_Text_AnnaPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route117_EventScript_Meg::
-	trainerbattle_double TRAINER_ANNA_AND_MEG_1, Route117_Text_MegIntro, Route117_Text_MegDefeat, Route117_Text_MegNotEnoughMons, Route117_EventScript_RegisterMeg
+	trainerbattle_double TRAINER_SATYRSLAIR_RYAN, Route117_Text_MegIntro, Route117_Text_MegDefeat, Route117_Text_MegNotEnoughMons, Route117_EventScript_RegisterMeg
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMeg
 	msgbox Route117_Text_MegPostBattle, MSGBOX_DEFAULT
@@ -192,12 +192,12 @@ Route117_EventScript_Meg::
 
 Route117_EventScript_RegisterMeg::
 	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ANNA_AND_MEG_1
+	register_matchcall TRAINER_SATYRSLAIR_RYAN
 	release
 	end
 
 Route117_EventScript_RematchMeg::
-	trainerbattle_rematch_double TRAINER_ANNA_AND_MEG_1, Route117_Text_MegRematchIntro, Route117_Text_MegRematchDefeat, Route117_Text_MegRematchNotEnoughMons
+	trainerbattle_rematch_double TRAINER_SATYRSLAIR_RYAN, Route117_Text_MegRematchIntro, Route117_Text_MegRematchDefeat, Route117_Text_MegRematchNotEnoughMons
 	msgbox Route117_Text_MegPostRematch, MSGBOX_AUTOCLOSE
 	end
 

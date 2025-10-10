@@ -123,6 +123,22 @@
         {
             "id": "MININGID_ROOT_FOSSIL",
             "path": "./graphics/mining_minigame/items/root_fossil.4bpp"
+        },
+        {
+            "id": "MININGID_FOSSILIZED_BIRD",
+            "path": "./graphics/mining_minigame/items/fossilized_bird.4bpp"
+        },
+        {
+            "id": "MININGID_FOSSILIZED_DINO",
+            "path": "./graphics/mining_minigame/items/fossilized_dino.4bpp"
+        },
+        {
+            "id": "MININGID_FOSSILIZED_DRAKE",
+            "path": "./graphics/mining_minigame/items/fossilized_drake.4bpp"
+        },
+        {
+            "id": "MININGID_FOSSILIZED_FISH",
+            "path": "./graphics/mining_minigame/items/fossilized_fish.4bpp"
         }
     ],
     "stones": [

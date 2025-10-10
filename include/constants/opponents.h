@@ -292,8 +292,8 @@
 #define TRAINER_WAKEWATER_ALLEN                     284
 #define TRAINER_WAKEWATER_NIKITA                     285
 
-#define TRAINER_KATE_AND_JOY                286
-#define TRAINER_ANNA_AND_MEG_1              287
+#define TRAINER_SATYRSLAIR_MALU                286
+#define TRAINER_SATYRSLAIR_RYAN              287
 #define TRAINER_ANNA_AND_MEG_2              288
 #define TRAINER_ANNA_AND_MEG_3              289
 #define TRAINER_ANNA_AND_MEG_4              290

@@ -97,10 +97,10 @@ static void Debug_RaiseSpritePriority(u32 spriteId);
 static u32 Debug_CreateRandomItem(u32 random, u32 itemId);
 
 #define DEBUG_DESIRED_NUMBER_OF_ITEMS   4
-#define DEBUG_MININGID_ITEM1            MININGID_CLAW_FOSSIL
-#define DEBUG_MININGID_ITEM2            MININGID_CLAW_FOSSIL
-#define DEBUG_MININGID_ITEM3            MININGID_CLAW_FOSSIL
-#define DEBUG_MININGID_ITEM4            MININGID_CLAW_FOSSIL
+#define DEBUG_MININGID_ITEM1            MININGID_FOSSILIZED_BIRD
+#define DEBUG_MININGID_ITEM2            MININGID_FOSSILIZED_BIRD
+#define DEBUG_MININGID_ITEM3            MININGID_FOSSILIZED_BIRD
+#define DEBUG_MININGID_ITEM4            MININGID_FOSSILIZED_BIRD
 #define DEBUG_MININGID_STONE1           MININGID_STONE_MUSHROOM1
 #define DEBUG_MININGID_STONE2           MININGID_STONE_MUSHROOM2
 
@@ -2229,16 +2229,16 @@ static void Mining_LoadSpriteGraphics(void)
     InitItemsIfSelected(2, itemId3);
     InitItemsIfSelected(3, itemId4);
 
-    // // Stones
-    // for (i=0; i<MINING_COUNT_MAX_NUMBER_STONES; i++)
-    // {
-    //     stone = MININGID_NONE;
-    //     while (!DoesStoneFitInItemMap(stone))
-    //         stone = ((Random() % MINING_COUNT_ID_STONE) + MININGID_STONE_1x4);
+    // Stones
+    for (i=0; i<MINING_COUNT_MAX_NUMBER_STONES; i++)
+    {
+        stone = MININGID_NONE;
+        while (!DoesStoneFitInItemMap(stone))
+            stone = ((Random() % MINING_COUNT_ID_STONE) + MININGID_STONE_1x4);
 
-    //     stone = Debug_DetermineStoneSize(stone,i);
-    //     DoDrawRandomStone(stone);
-    // }
+        stone = Debug_DetermineStoneSize(stone,i);
+        DoDrawRandomStone(stone);
+    }
 
     sMiningUiState->cursorSpriteIndex = CreateSprite(&gSpriteCursor, 8, 40, 0);
     sMiningUiState->cursorX = 0;
@@ -2714,7 +2714,7 @@ static void OverwriteItemMapData(u8 posX, u8 posY, u8 itemStateId, u8 itemId)
     {
         for (y=0; y<4; y++)
         {
-            if (SpriteTileTable[itemId][x+y*4] == 1)
+            if (sSpriteTileTable[itemId][x+y*4] == 1)
                 SetItemState(posX, posY, x, y, itemStateId);
         }
     }
