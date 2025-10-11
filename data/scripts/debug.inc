@@ -164,8 +164,15 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	release
-	end
+	special DoDomeConfetti 
+    completequest QUEST_CHAMPION
+    setrespawn HEAL_LOCATION_ACRISIA_CITY
+	fadescreenspeed FADE_TO_BLACK, 24
+    call EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags
+	special GameClear
+    waitstate
+    releaseall
+    end
 
 Debug_EventScript_Script_4::
 	release
