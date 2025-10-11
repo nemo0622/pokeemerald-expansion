@@ -214,3 +214,12 @@ script AreiosHideout_EventScript_DirectionSign
     release
     end
 }
+
+script AreiosHideout_EventScript_GymSign
+{
+    lock
+    msgbox(format("Gym Leader: Kalliope\n Muse of Legendary Tales"))
+    closemessage
+    release
+    end
+}

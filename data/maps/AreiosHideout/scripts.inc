@@ -356,6 +356,18 @@ AreiosHideout_EventScript_DirectionSign::
 	end
 
 
+AreiosHideout_EventScript_GymSign::
+# 220 "data/maps/AreiosHideout/scripts.pory"
+	lock
+# 221 "data/maps/AreiosHideout/scripts.pory"
+	msgbox AreiosHideout_EventScript_GymSign_Text_0
+# 222 "data/maps/AreiosHideout/scripts.pory"
+	closemessage
+# 223 "data/maps/AreiosHideout/scripts.pory"
+	release
+	end
+
+
 AreiosHideout_EventScript_Nurse_Text_0:
 # 48 "data/maps/AreiosHideout/scripts.pory"
 	.string "Nurse$"
@@ -496,3 +508,8 @@ AreiosHideout_EventScript_DirectionSign_Text_0:
 	.string "{UP_ARROW} The Nyx Trails\p"
 	.string "The word Town is scratched out beneath\n"
 	.string "the word Hideout.$"
+
+AreiosHideout_EventScript_GymSign_Text_0:
+# 221 "data/maps/AreiosHideout/scripts.pory"
+	.string "Gym Leader: Kalliope\n"
+	.string "Muse of Legendary Tales$"

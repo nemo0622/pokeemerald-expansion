@@ -474,27 +474,51 @@ LilycoveCity_ContestLobby_Movement_ReceptionistFacePlayer:
 	walk_in_place_faster_right
 	step_end
 
+ContestHall_NameText_BlackBelt:
+	.string "Black Belt$"
+
+ContestHall_NameText_Girl:
+	.string "Girl$"
+
+ContestHall_NameText_Artist:
+	.string "Artist$"
+
+ContestHall_NameText_FatMan:
+	.string "Man$"
+
+ContestHall_NameText_Fisherman:
+	.string "Fisherman$"
+
+ContestHall_NameText_NinjaBoy:
+	.string "Ninja Boy$"
+
 LilycoveCity_ContestLobby_EventScript_BlackBelt::
+	speakername ContestHall_NameText_BlackBelt
 	msgbox LilycoveCity_ContestLobby_Text_MasterRankHereICome, MSGBOX_NPC
 	end
 
 LilycoveCity_ContestLobby_EventScript_Girl::
+	speakername ContestHall_NameText_Girl
 	msgbox LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere, MSGBOX_NPC
 	end
 
 LilycoveCity_ContestLobby_EventScript_Artist::
+	speakername ContestHall_NameText_Artist
 	msgbox LilycoveCity_ContestLobby_Text_ContestFeastForEyes, MSGBOX_NPC
 	end
 
 LilycoveCity_ContestLobby_EventScript_FatMan::
+	speakername ContestHall_NameText_FatMan
 	msgbox LilycoveCity_ContestLobby_Text_ToughContestIsExtreme, MSGBOX_NPC
 	end
 
 LilycoveCity_ContestLobby_EventScript_Fisherman::
+	speakername ContestHall_NameText_Fisherman
 	msgbox LilycoveCity_ContestLobby_Text_LavishedCareOnMon, MSGBOX_NPC
 	end
 
 LilycoveCity_ContestLobby_EventScript_NinjaBoy::
+	speakername ContestHall_NameText_NinjaBoy
 	msgbox LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily, MSGBOX_NPC
 	end
 
@@ -540,11 +564,19 @@ LilycoveCity_ContestLobby_EventScript_ContestWinner6::
 	releaseall
 	end
 
+ContestHall_NameText_Boy:
+	.string "Boy$"
+
+ContestHall_NameText_Woman:
+	.string "Woman$"
+
 LilycoveCity_ContestLobby_EventScript_Blender3Boy::
+	speakername ContestHall_NameText_Boy
 	msgbox BerryBlender_Text_LetsGetBlendingAlready, MSGBOX_NPC
 	end
 
 LilycoveCity_ContestLobby_EventScript_Blender3Girl::
+	speakername ContestHall_NameText_Girl
 	msgbox BerryBlender_Text_WhatKindOfPokeblockWillIGet, MSGBOX_NPC
 	end
 
@@ -567,24 +599,28 @@ LilycoveCity_ContestLobby_EventScript_LinkContestResults::
 LilycoveCity_ContestLobby_EventScript_BlendMaster::
 	lock
 	faceplayer
+	speakername ContestHall_NameText_FatMan
 	msgbox BerryBlender_Text_BlendWithTheBlendMaster, MSGBOX_DEFAULT
 	goto LilycoveCity_ContestLobby_EventScript_FaceOriginalDirection
 	end
 
 LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker1::
 	lock
+	speakername ContestHall_NameText_Boy
 	msgbox BerryBlender_Text_WhoaAwesome, MSGBOX_DEFAULT
 	release
 	end
 
 LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker2::
 	lock
+	speakername ContestHall_NameText_FatMan
 	msgbox BerryBlender_Text_WickedlyFast, MSGBOX_DEFAULT
 	release
 	end
 
 LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker3::
 	lock
+	speakername ContestHall_NameText_Boy
 	msgbox BerryBlender_Text_WhatAnExpert, MSGBOX_DEFAULT
 	release
 	end
@@ -592,6 +628,7 @@ LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker3::
 LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker4::
 	lock
 	faceplayer
+	speakername ContestHall_NameText_Girl
 	msgbox BerryBlender_Text_MadeAmazingPokeblocksWithMaster, MSGBOX_DEFAULT
 	goto LilycoveCity_ContestLobby_EventScript_FaceOriginalDirection
 	end
@@ -599,6 +636,7 @@ LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker4::
 LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker5::
 	lock
 	faceplayer
+	speakername ContestHall_NameText_FatMan
 	msgbox BerryBlender_Text_QualitiesOfBlendMaster, MSGBOX_DEFAULT
 	goto LilycoveCity_ContestLobby_EventScript_FaceOriginalDirection
 	end
@@ -606,6 +644,7 @@ LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker5::
 LilycoveCity_ContestLobby_EventScript_BlendMasterOnlooker6::
 	lock
 	faceplayer
+	speakername ContestHall_NameText_Woman
 	msgbox BerryBlender_Text_MasterWorksOnSkillsInMountains, MSGBOX_DEFAULT
 	goto LilycoveCity_ContestLobby_EventScript_FaceOriginalDirection
 	end
@@ -972,12 +1011,14 @@ LilycoveCity_ContestLobby_Movement_LinkReceptionistFacePlayer:
 LilycoveCity_ContestLobby_EventScript_LittleGirl::
 	lock
 	faceplayer
+	speakername ContestHall_NameText_Girl
 	goto_if_set FLAG_RECEIVED_POKEBLOCK_CASE, LilycoveCity_ContestLobby_EventScript_LittleGirlHaveCase
 	msgbox LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase, MSGBOX_DEFAULT
 	release
 	end
 
 LilycoveCity_ContestLobby_EventScript_LittleGirlHaveCase::
+	speakername ContestHall_NameText_Girl
 	msgbox LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries, MSGBOX_DEFAULT
 	release
 	end
