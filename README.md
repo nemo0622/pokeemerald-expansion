@@ -110,10 +110,6 @@ GREEK PHRASES AND STUFF:
 - DexNav chain count and directional arrow not shown when hunting
 - When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
-- In-battle types just aren't showing up a lot of the time
-- Opponents Mega Evolving Pokémon seems to make them shiny for some reason
-    - Wakewater Isle's Euterpe Gyarados becomes red
-    - Wakewater's Allen Flygon is blue
 
 ## Credits
 Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)

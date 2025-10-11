@@ -937,7 +937,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
 
         if (GetBattlerSide(battlerAtk) == B_SIDE_PLAYER)
         {
-            if (B_TRANSFORM_SHINY >= GEN_4 && trackEnemyPersonality)
+            if (B_TRANSFORM_SHINY >= GEN_4 && trackEnemyPersonality && !megaEvo)
             {
                 personalityValue = GetMonData(&gEnemyParty[gBattlerPartyIndexes[battlerDef]], MON_DATA_PERSONALITY);
                 isShiny = GetMonData(&gEnemyParty[gBattlerPartyIndexes[battlerDef]], MON_DATA_IS_SHINY);
@@ -955,7 +955,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
         }
         else
         {
-            if (B_TRANSFORM_SHINY >= GEN_4 && trackEnemyPersonality)
+            if (B_TRANSFORM_SHINY >= GEN_4 && trackEnemyPersonality && !megaEvo)
             {
                 personalityValue = GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerDef]], MON_DATA_PERSONALITY);
                 isShiny = GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerDef]], MON_DATA_IS_SHINY);
@@ -980,7 +980,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
     LZDecompressWram(lzPaletteData, gDecompressionBuffer);
     LoadPalette(gDecompressionBuffer, paletteOffset, PLTT_SIZE_4BPP);
     personalityValue = GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerAtk]], MON_DATA_PERSONALITY);
-    // UniquePalette(paletteOffset, GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerAtk]], MON_DATA_SPECIES), personalityValue, IsMonShiny(&gPlayerParty[gBattlerPartyIndexes[battlerAtk]]));
+    UniquePalette(paletteOffset, GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerAtk]], MON_DATA_SPECIES), personalityValue, IsMonShiny(&gPlayerParty[gBattlerPartyIndexes[battlerAtk]]));
     CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZE_4BPP);
 
     if (!megaEvo)

@@ -34,16 +34,19 @@ static s32 GetTypeIconHideMovement(bool32, u32);
 static s32 GetTypeIconSlideMovement(bool32, u32, s32);
 static s32 GetTypeIconBounceMovement(s32, u32);
 
+// Below:
+// False = Single Battle coordinates
+// True = Double battle coordinates
 const struct Coords16 sTypeIconPositions[][2] =
 {
     [B_POSITION_PLAYER_LEFT] =
     {
-        [FALSE] = {221, 86},
+        [FALSE] = {154, 92},
         [TRUE] = {144, 71},
     },
     [B_POSITION_OPPONENT_LEFT] =
     {
-        [FALSE] = {20, 26},
+        [FALSE] = {89, 28},
         [TRUE] = {97, 14},
     },
     [B_POSITION_PLAYER_RIGHT] =
@@ -399,12 +402,22 @@ static void CreateSpriteAndSetTypeSpriteAttributes(u32 type, u32 x, u32 y, u32 p
 
 static bool32 ShouldFlipTypeIcon(bool32 useDoubleBattleCoords, u32 position, u32 typeId)
 {
-    bool32 side = (useDoubleBattleCoords) ? B_SIDE_OPPONENT : B_SIDE_PLAYER;
+    if(useDoubleBattleCoords)
+    {
+        bool32 side = (useDoubleBattleCoords) ? B_SIDE_OPPONENT : B_SIDE_PLAYER;
 
-    if (GetBattlerSide(GetBattlerAtPosition(position)) != side)
-        return FALSE;
+        if (GetBattlerSide(GetBattlerAtPosition(position)) != side)
+            return FALSE;
 
-    return !gTypesInfo[typeId].isSpecialCaseType;
+        return !gTypesInfo[typeId].isSpecialCaseType;
+    }
+    else
+    {
+        if(GetBattlerSide(GetBattlerAtPosition(position)) != B_SIDE_PLAYER)
+            return TRUE;
+        else
+            return FALSE;
+    }
 }
 
 static void SpriteCB_TypeIcon(struct Sprite* sprite)
@@ -426,6 +439,7 @@ static void SpriteCB_TypeIcon(struct Sprite* sprite)
         return;
     }
 
+    // Animates the sliding by moving 1 or -1 pixels per frame
     sprite->x += GetTypeIconSlideMovement(useDoubleBattleCoords,position, sprite->x);
     sprite->y = GetTypeIconBounceMovement(sprite->tVerticalPosition,position);
 }
@@ -493,9 +507,9 @@ static s32 GetTypeIconHideMovement(bool32 useDoubleBattleCoords, u32 position)
     }
 
     if (position == B_POSITION_PLAYER_LEFT)
-        return -1;
-    else
         return 1;
+    else
+        return -1;
 }
 
 static s32 GetTypeIconSlideMovement(bool32 useDoubleBattleCoords, u32 position, s32 xPos)
@@ -521,13 +535,13 @@ static s32 GetTypeIconSlideMovement(bool32 useDoubleBattleCoords, u32 position, 
 
     if (position == B_POSITION_PLAYER_LEFT)
     {
-        if (xPos < sTypeIconPositions[position][useDoubleBattleCoords].x + 10)
-            return 1;
+        if (xPos > sTypeIconPositions[position][useDoubleBattleCoords].x - 10)
+            return -1;
     }
     else
     {
-        if (xPos > sTypeIconPositions[position][useDoubleBattleCoords].x - 10)
-            return -1;
+        if (xPos < sTypeIconPositions[position][useDoubleBattleCoords].x + 10)
+            return 1;
     }
     return 0;
 }
