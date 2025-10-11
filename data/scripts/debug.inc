@@ -157,6 +157,9 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
+	lock
+	warp MAP_ACRISIA_CITY_UNIVERSITY, 10, 14
+	waitstate
 	release
 	end
 

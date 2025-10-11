@@ -27536,7 +27536,7 @@ F_TRAINER_FEMALE |
     [TRAINER_WAKEWATER_GEORGIA] =
     {
 #line 11139
-        .trainerName = _("GEORGIA"),
+        .trainerName = _("Georgia"),
 #line 11140
         .trainerClass = TRAINER_CLASS_PERFORMER_F,
 #line 11141

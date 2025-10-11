@@ -665,6 +665,16 @@ EverGrandeCity_HallOfFame_EventScript_ResetEliteFour::
 	clearflag FLAG_DEFEATED_ELITE_4_GLACIA
 	clearflag FLAG_DEFEATED_ELITE_4_DRAKE
 	setvar VAR_ELITE_4_STATE, 0
+	cleartrainerflag TRAINER_ELITEFOUR_POLYMNIA
+	cleartrainerflag TRAINER_ELITEFOUR_POLYMNIA_HARD
+	cleartrainerflag TRAINER_ELITEFOUR_TERPSIKORE
+	cleartrainerflag TRAINER_ELITEFOUR_TERPSIKORE_HARD
+	cleartrainerflag TRAINER_ELITEFOUR_EUTERPE
+	cleartrainerflag TRAINER_ELITEFOUR_EUTERPE_HARD
+	cleartrainerflag TRAINER_ELITEFOUR_RHADINE
+	cleartrainerflag TRAINER_ELITEFOUR_RHADINE_HARD
+	cleartrainerflag TRAINER_ELITEFOUR_ANYALIOS
+	cleartrainerflag TRAINER_ELITEFOUR_ANYALIOS_HARD
 	return
 
 Common_EventScript_UpdateBrineyLocation::

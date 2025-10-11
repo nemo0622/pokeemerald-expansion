@@ -1289,9 +1289,9 @@ WakewaterIsle_EventScript_Woman_Text_0:
 
 WakewaterIsle_EventScript_Woman_Text_1:
 # 63 "data/maps/WakewaterIsle/scripts.pory"
-	.string "I think I'll try challenging a\n"
-	.string "Champion-ranked Trainer here soon. My\l"
-	.string "Pokémon are ready for a real battle!$"
+	.string "Trainers here use {COLOR GREEN}Level Scaling{COLOR DARK_GRAY}. They'll\n"
+	.string "usually match the average level of your\l"
+	.string "Pokémon.$"
 
 WakewaterIsle_EventScript_Sailor_Text_0:
 # 73 "data/maps/WakewaterIsle/scripts.pory"

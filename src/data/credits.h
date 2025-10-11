@@ -43,7 +43,7 @@ static const u8 sCreditsText_TrainerSprites[]                 = _("Trainer Battl
 static const u8 sCreditsText_OverworldTrainers[]                  = _("NPC Sprites");
 static const u8 sCreditsText_OverworldPokemon[]                   = _("Overworld Pokémon Sprites");
 static const u8 sCreditsText_UserInterface[]                       = _("UI Graphics");
-static const u8 sCreditsText_ScriptDesigners[]                = _("Script Designers");
+static const u8 sCreditsText_CustomMusic[]                = _("Custom Music");
 static const u8 sCreditsText_MapDesigners[]                   = _("Map Designers");
 static const u8 sCreditsText_MapDataDesigners[]               = _("Map Data Designers");
 static const u8 sCreditsText_ParametricDesigners[]            = _("Parametric Designers");
@@ -81,8 +81,8 @@ static const u8 sCreditsText_Missingno[]                      = _("MissingNoVGC"
 static const u8 sCreditsText_MoreInDocs[]                     = _("(More info in Documentation!)");
 static const u8 sCreditsText_SageDeoxys[]                = _("SageDeoxys");
 static const u8 sCreditsText_RomHackingHideout[]              = _("ROM Hacking Hideout");
-static const u8 sCreditsText_AnimaNel[]                    = _("Satoshi Ohta");
-static const u8 sCreditsText_TrainerDX[]                  = _("Asuka Iwashita");
+static const u8 sCreditsText_AnimaNel[]                    = _("Anima_Nel");
+static const u8 sCreditsText_TrainerDX[]                  = _("Trainer DX");
 static const u8 sCreditsText_Nuukiie[]                     = _("Nuukiie");
 static const u8 sCreditsText_Egg3ggEgg[]                      = _("Egg3ggEgg");
 static const u8 sCreditsText_SirWhibbles[]                       = _("SirWhibbles");
@@ -114,7 +114,7 @@ static const u8 sCreditsText_ChieMatsumiya[]                  = _("Chie Matsumiy
 static const u8 sCreditsText_AkikoShinozaki[]                 = _("Akiko Shinozaki");
 static const u8 sCreditsText_AstukoFujii[]                    = _("Astuko Fujii");
 static const u8 sCreditsText_OutfitSystem[]                   = _("Outfit System & More: mudskip");
-static const u8 sCreditsText_Zaebucca[]                 = _("Kenkichi Toyama");
+static const u8 sCreditsText_Zaebucca[]                 = _("Zaebucca");
 static const u8 sCreditsText_PokemonCrystal[]                 = _("Game Freak (Pokémon Crystal)");
 static const u8 sCreditsText_YumiFunasaka[]                   = _("Yumi Funasaka");
 static const u8 sCreditsText_NaokoYanase[]                    = _("Naoko Yanase");
@@ -143,7 +143,7 @@ static const u8 sCreditsText_Cecilily[]                   = _("cecilily");
 static const u8 sCreditsText_SatoshiMitsuhara[]               = _("Satoshi Mitsuhara");
 static const u8 sCreditsText_JapanBrailleLibrary[]            = _("Japan Braille Library");
 static const u8 sCreditsText_TomotakaKomura[]                 = _("Tomotaka Komura");
-static const u8 sCreditsText_MikikoOhhashi[]                  = _("Mikiko Ohhashi");
+static const u8 sCreditsText_TomSanborn[]                  = _("Tom Sanborn");
 static const u8 sCreditsText_DaisukeHoshino[]                 = _("Daisuke Hoshino");
 static const u8 sCreditsText_KenjiroIto[]                     = _("Kenjiro Ito");
 static const u8 sCreditsText_ThankYouForPlaying[]                   = _("Thank you for playing Pokémon Lazarus! :)");
@@ -202,7 +202,7 @@ static const struct CreditsEntry sCreditsEntry_TrainerSprites        = { 4,  TRU
 static const struct CreditsEntry sCreditsEntry_OverworldTrainers                    = {11,  TRUE, sCreditsText_OverworldTrainers};
 static const struct CreditsEntry sCreditsEntry_OverworldPokemon                     = {11,  TRUE, sCreditsText_OverworldPokemon};
 static const struct CreditsEntry sCreditsEntry_UserInterface                         = {13,  TRUE, sCreditsText_UserInterface};
-static const struct CreditsEntry sCreditsEntry_ScriptDesigners                  = {10,  TRUE, sCreditsText_ScriptDesigners};
+static const struct CreditsEntry sCreditsEntry_CustomMusic                  = {10,  TRUE, sCreditsText_CustomMusic};
 static const struct CreditsEntry sCreditsEntry_MapDesigners                     = {11,  TRUE, sCreditsText_MapDesigners};
 static const struct CreditsEntry sCreditsEntry_MapDataDesigners                 = { 9,  TRUE, sCreditsText_MapDataDesigners};
 static const struct CreditsEntry sCreditsEntry_ParametricDesigners              = { 9,  TRUE, sCreditsText_ParametricDesigners};
@@ -302,7 +302,7 @@ static const struct CreditsEntry sCreditsEntry_Cecilily                     = {1
 static const struct CreditsEntry sCreditsEntry_SatoshiMitsuhara                 = {11, FALSE, sCreditsText_SatoshiMitsuhara};
 static const struct CreditsEntry sCreditsEntry_JapanBrailleLibrary              = { 9, FALSE, sCreditsText_JapanBrailleLibrary};
 static const struct CreditsEntry sCreditsEntry_TomotakaKomura                   = {11, FALSE, sCreditsText_TomotakaKomura};
-static const struct CreditsEntry sCreditsEntry_MikikoOhhashi                    = {11, FALSE, sCreditsText_MikikoOhhashi};
+static const struct CreditsEntry sCreditsEntry_TomSanborn                    = {11, FALSE, sCreditsText_TomSanborn};
 static const struct CreditsEntry sCreditsEntry_DaisukeHoshino                   = {11, FALSE, sCreditsText_DaisukeHoshino};
 static const struct CreditsEntry sCreditsEntry_KenjiroIto                       = {11, FALSE, sCreditsText_KenjiroIto};
 static const struct CreditsEntry sCreditsEntry_ThankYouForPlaying                     = {11, FALSE, sCreditsText_ThankYouForPlaying};
@@ -454,27 +454,24 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
     
     [PAGE_SPECIAL_THANKS_1] = {
         _,
+        &sCreditsEntry_CustomMusic,
+        &sCreditsEntry_TomSanborn,
+        _,
+        _,
+    },
+    [PAGE_SPECIAL_THANKS_2] = {
+        _,
         &sCreditsEntry_SpecialThanks,
         &sCreditsEntry_MyDiscordAndKoFiCommunity,
         &sCreditsEntry_WhoseSupportMadeThisPossible,
         _,
     },
-    [PAGE_SPECIAL_THANKS_2] = {
+    [PAGE_SPECIAL_THANKS_3] = {
         &sCreditsEntry_SpecialThanks,
         &sCreditsEntry_RomHackingHideout,
         &sCreditsEntry_TeamAquasHideout,
         &sCreditsEntry_Pawkkie,
         &sCreditsEntry_Cecilily,
-    },
-    [PAGE_SPECIAL_THANKS_3] = {
-        // &sCreditsEntry_SpecialThanks,
-        // &sCreditsEntry_MikikoOhhashi,
-        // &sCreditsEntry_TakanaoKondo,
-        _,
-        _,
-        _,
-        _,
-        _,
     },
     [PAGE_SPECIAL_THANKS_4] = {
         &sCreditsEntry_NextUp,

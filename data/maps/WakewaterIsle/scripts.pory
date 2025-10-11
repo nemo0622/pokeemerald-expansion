@@ -60,7 +60,7 @@ script WakewaterIsle_EventScript_Woman
     lock
     faceplayer
     speakername("Woman")
-    msgbox(format("I think I'll try challenging a Champion-ranked Trainer here soon. My Pokémon are ready for a real battle!"))
+    msgbox(format("Trainers here use {COLOR GREEN}Level Scaling{COLOR DARK_GRAY}. They'll usually match the average level of your Pokémon."))
     closemessage
     release
     end
