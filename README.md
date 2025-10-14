@@ -70,16 +70,12 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- Work on ideas from note on phone
-    - Elite Redux inspired abilities & moves
+- Music:
+    - GET MUSIC LOOPING UGH
+- Mods suggestions:
+    - CUSTOM BADGE GFX
 - Give more Pokémon unique Pokédex entries
     - Just go to random points in the dex and go!
-- Implement Chris Piché's Game Corner Expansion minigames
-    - https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/Feature-Branches#Expansion-Compatible_Game_Corner_Expansion
-    - Blackjack, Ponyta Racing, and Voltorb Flip are the big ones I care about
-    - Also, remove Pinball Points and integrate Coins into Pinball games!
-        - Pinball games: Cost few coins, give smaller reward
-        - "Luck-based" games: Cost slightly more coins, give larger reward
 
 - AFTER INITIAL RELEASE:
     - [Remove Affine Animations](https://github.com/pret/pokeemerald/wiki/Removing-the-Animation-Affines) and give all Pokémon multi-frame, Crystal-style animations!

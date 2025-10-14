@@ -108,1938 +108,1940 @@ KiposTown_Zoo_EventScript_PlayerShownAround::
 # 67 "data/maps/KiposTown_Zoo/scripts.pory"
 	clearflag FLAG_HIDE_RUSSEL_DURING_ZOO_CUTSCENE
 # 68 "data/maps/KiposTown_Zoo/scripts.pory"
-	setvar VAR_TOTAL_NUM_ZOO_DONATIONS, 0
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 # 69 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	setvar VAR_TOTAL_NUM_ZOO_DONATIONS, 0
 # 70 "data/maps/KiposTown_Zoo/scripts.pory"
+	delay 30
+# 71 "data/maps/KiposTown_Zoo/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 72 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 73 "data/maps/KiposTown_Zoo/scripts.pory"
+	delay 20
+# 74 "data/maps/KiposTown_Zoo/scripts.pory"
 	startquest QUEST_ZOOKEEPER
-# 75 "data/maps/KiposTown_Zoo/scripts.pory"
+# 76 "data/maps/KiposTown_Zoo/scripts.pory"
 	releaseall
 	end
 
 
-# 79 "data/maps/KiposTown_Zoo/scripts.pory"
+# 80 "data/maps/KiposTown_Zoo/scripts.pory"
 KiposTown_Zoo_Movement_RusselWalkToGirafarig:
-# 81 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
-# 81 "data/maps/KiposTown_Zoo/scripts.pory"
+# 82 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_up
 # 82 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 82 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 82 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 82 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 83 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_right
 # 83 "data/maps/KiposTown_Zoo/scripts.pory"
-	face_up
+	walk_right
+# 83 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_right
+# 83 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_right
 # 84 "data/maps/KiposTown_Zoo/scripts.pory"
+	face_up
+# 85 "data/maps/KiposTown_Zoo/scripts.pory"
 	step_end
 
-# 86 "data/maps/KiposTown_Zoo/scripts.pory"
+# 87 "data/maps/KiposTown_Zoo/scripts.pory"
 KiposTown_Zoo_Movement_PlayerWalkToGirafarig:
-# 88 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
-# 88 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
-# 88 "data/maps/KiposTown_Zoo/scripts.pory"
+# 89 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_up
 # 89 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
+	walk_up
 # 89 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 89 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 90 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_right
 # 90 "data/maps/KiposTown_Zoo/scripts.pory"
-	face_up
+	walk_right
+# 90 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_right
 # 91 "data/maps/KiposTown_Zoo/scripts.pory"
+	face_up
+# 92 "data/maps/KiposTown_Zoo/scripts.pory"
 	step_end
 
-# 93 "data/maps/KiposTown_Zoo/scripts.pory"
+# 94 "data/maps/KiposTown_Zoo/scripts.pory"
 KiposTown_Zoo_Movement_RusselWalkToSwampExhibit:
-# 95 "data/maps/KiposTown_Zoo/scripts.pory"
+# 96 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_down
-# 96 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 96 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 96 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 96 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 96 "data/maps/KiposTown_Zoo/scripts.pory"
+# 97 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_right
 # 97 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
+	walk_right
 # 97 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
+	walk_right
 # 97 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
+	walk_right
 # 97 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
-# 97 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
-# 97 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
-# 98 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_right
 # 98 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
+	walk_up
 # 98 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
+	walk_up
 # 98 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 98 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 98 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 98 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 99 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_right
 # 99 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
+	walk_right
+# 99 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_right
+# 99 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_right
 # 100 "data/maps/KiposTown_Zoo/scripts.pory"
-	face_left
+	walk_up
 # 101 "data/maps/KiposTown_Zoo/scripts.pory"
+	face_left
+# 102 "data/maps/KiposTown_Zoo/scripts.pory"
 	step_end
 
-# 103 "data/maps/KiposTown_Zoo/scripts.pory"
+# 104 "data/maps/KiposTown_Zoo/scripts.pory"
 KiposTown_Zoo_Movement_PlayerWalkToSwampExhibit:
-# 105 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
 # 106 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_right
+# 107 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_down
-# 107 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 107 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 107 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 107 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
-# 107 "data/maps/KiposTown_Zoo/scripts.pory"
+# 108 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_right
 # 108 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
+	walk_right
 # 108 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
+	walk_right
 # 108 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
+	walk_right
 # 108 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
-# 108 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
-# 108 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
-# 109 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_right
 # 109 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_right
+	walk_up
 # 109 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 109 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 109 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 109 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 109 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_up
+# 110 "data/maps/KiposTown_Zoo/scripts.pory"
 	walk_right
 # 110 "data/maps/KiposTown_Zoo/scripts.pory"
-	walk_up
+	walk_right
+# 110 "data/maps/KiposTown_Zoo/scripts.pory"
+	walk_right
 # 111 "data/maps/KiposTown_Zoo/scripts.pory"
-	face_right
+	walk_up
 # 112 "data/maps/KiposTown_Zoo/scripts.pory"
+	face_right
+# 113 "data/maps/KiposTown_Zoo/scripts.pory"
 	step_end
 
 KiposTown_Zoo_DirectionSign_South_1::
-# 117 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 118 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_DirectionSign_South_1_Text_0
+	lock
 # 119 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_DirectionSign_South_1_Text_0
 # 120 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 121 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_DirectionSign_South_2::
-# 126 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 127 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_DirectionSign_South_2_Text_0
+	lock
 # 128 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_DirectionSign_South_2_Text_0
 # 129 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 130 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_BuildingSign_SpecialtyBuilding::
-# 135 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 136 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_BuildingSign_SpecialtyBuilding_Text_0
+	lock
 # 137 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_BuildingSign_SpecialtyBuilding_Text_0
 # 138 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 139 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_BuildingSign_HerpetofaunaBuilding::
-# 144 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 145 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_BuildingSign_HerpetofaunaBuilding_Text_0
+	lock
 # 146 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_BuildingSign_HerpetofaunaBuilding_Text_0
 # 147 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 148 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_PokemonSign_End::
-# 157 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
 # 158 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 159 "data/maps/KiposTown_Zoo/scripts.pory"
 	releaseall
 	end
 
 
 KiposTown_Zoo_PokemonSign_DonationScript::
-# 164 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ChoosePartyMon
 # 165 "data/maps/KiposTown_Zoo/scripts.pory"
+	special ChoosePartyMon
+# 166 "data/maps/KiposTown_Zoo/scripts.pory"
 	waitstate
-# 167 "data/maps/KiposTown_Zoo/scripts.pory"
+# 168 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_ge VAR_0x8004, PARTY_SIZE, KiposTown_Zoo_PokemonSign_End
-# 169 "data/maps/KiposTown_Zoo/scripts.pory"
-	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
 # 170 "data/maps/KiposTown_Zoo/scripts.pory"
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+# 171 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_0x8003, VAR_RESULT
-# 172 "data/maps/KiposTown_Zoo/scripts.pory"
+# 173 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_0x8003, SPECIES_EGG
 	goto_if_eq KiposTown_Zoo_PokemonSign_DonationScript_2
 KiposTown_Zoo_PokemonSign_DonationScript_1:
-# 179 "data/maps/KiposTown_Zoo/scripts.pory"
-	special GetZooDonationValidity
 # 180 "data/maps/KiposTown_Zoo/scripts.pory"
+	special GetZooDonationValidity
+# 181 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_0x8002, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_DonationScript_5
-# 201 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_0x8003
 # 202 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_DonationScript_Text_2, MSGBOX_YESNO
+	bufferspeciesname STR_VAR_1, VAR_0x8003
 # 203 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_DonationScript_Text_2, MSGBOX_YESNO
+# 204 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_DonationScript_7
-# 209 "data/maps/KiposTown_Zoo/scripts.pory"
+# 210 "data/maps/KiposTown_Zoo/scripts.pory"
 	special DonateMonToZoo
-# 212 "data/maps/KiposTown_Zoo/scripts.pory"
+# 213 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_0x8004, PARTY_SIZE
 	goto_if_eq KiposTown_Zoo_PokemonSign_DonationScript_15
 KiposTown_Zoo_PokemonSign_DonationScript_14:
-# 219 "data/maps/KiposTown_Zoo/scripts.pory"
+# 220 "data/maps/KiposTown_Zoo/scripts.pory"
 	switch VAR_TEMP_0
-# 221 "data/maps/KiposTown_Zoo/scripts.pory"
+# 222 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 1, KiposTown_Zoo_PokemonSign_DonationScript_19
-# 223 "data/maps/KiposTown_Zoo/scripts.pory"
+# 224 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 2, KiposTown_Zoo_PokemonSign_DonationScript_20
-# 225 "data/maps/KiposTown_Zoo/scripts.pory"
+# 226 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 3, KiposTown_Zoo_PokemonSign_DonationScript_21
-# 227 "data/maps/KiposTown_Zoo/scripts.pory"
+# 228 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 4, KiposTown_Zoo_PokemonSign_DonationScript_22
-# 229 "data/maps/KiposTown_Zoo/scripts.pory"
+# 230 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 5, KiposTown_Zoo_PokemonSign_DonationScript_23
-# 231 "data/maps/KiposTown_Zoo/scripts.pory"
+# 232 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 6, KiposTown_Zoo_PokemonSign_DonationScript_24
-# 233 "data/maps/KiposTown_Zoo/scripts.pory"
+# 234 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 7, KiposTown_Zoo_PokemonSign_DonationScript_25
-# 235 "data/maps/KiposTown_Zoo/scripts.pory"
+# 236 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 8, KiposTown_Zoo_PokemonSign_DonationScript_26
-# 237 "data/maps/KiposTown_Zoo/scripts.pory"
+# 238 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 9, KiposTown_Zoo_PokemonSign_DonationScript_27
-# 239 "data/maps/KiposTown_Zoo/scripts.pory"
+# 240 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 10, KiposTown_Zoo_PokemonSign_DonationScript_28
-# 241 "data/maps/KiposTown_Zoo/scripts.pory"
+# 242 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 11, KiposTown_Zoo_PokemonSign_DonationScript_29
-# 243 "data/maps/KiposTown_Zoo/scripts.pory"
+# 244 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 12, KiposTown_Zoo_PokemonSign_DonationScript_30
-# 245 "data/maps/KiposTown_Zoo/scripts.pory"
+# 246 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 13, KiposTown_Zoo_PokemonSign_DonationScript_31
-# 247 "data/maps/KiposTown_Zoo/scripts.pory"
+# 248 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 14, KiposTown_Zoo_PokemonSign_DonationScript_32
-# 249 "data/maps/KiposTown_Zoo/scripts.pory"
+# 250 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 15, KiposTown_Zoo_PokemonSign_DonationScript_33
-# 251 "data/maps/KiposTown_Zoo/scripts.pory"
+# 252 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 16, KiposTown_Zoo_PokemonSign_DonationScript_34
-# 253 "data/maps/KiposTown_Zoo/scripts.pory"
+# 254 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 17, KiposTown_Zoo_PokemonSign_DonationScript_35
-# 255 "data/maps/KiposTown_Zoo/scripts.pory"
+# 256 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 18, KiposTown_Zoo_PokemonSign_DonationScript_36
-# 257 "data/maps/KiposTown_Zoo/scripts.pory"
+# 258 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 19, KiposTown_Zoo_PokemonSign_DonationScript_37
-# 259 "data/maps/KiposTown_Zoo/scripts.pory"
+# 260 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 20, KiposTown_Zoo_PokemonSign_DonationScript_38
-# 261 "data/maps/KiposTown_Zoo/scripts.pory"
+# 262 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 21, KiposTown_Zoo_PokemonSign_DonationScript_39
-# 263 "data/maps/KiposTown_Zoo/scripts.pory"
+# 264 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 22, KiposTown_Zoo_PokemonSign_DonationScript_40
-# 265 "data/maps/KiposTown_Zoo/scripts.pory"
+# 266 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 23, KiposTown_Zoo_PokemonSign_DonationScript_41
-# 267 "data/maps/KiposTown_Zoo/scripts.pory"
+# 268 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 24, KiposTown_Zoo_PokemonSign_DonationScript_42
-# 269 "data/maps/KiposTown_Zoo/scripts.pory"
+# 270 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 25, KiposTown_Zoo_PokemonSign_DonationScript_43
-# 271 "data/maps/KiposTown_Zoo/scripts.pory"
+# 272 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 26, KiposTown_Zoo_PokemonSign_DonationScript_44
-# 273 "data/maps/KiposTown_Zoo/scripts.pory"
+# 274 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 27, KiposTown_Zoo_PokemonSign_DonationScript_45
-# 275 "data/maps/KiposTown_Zoo/scripts.pory"
+# 276 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 28, KiposTown_Zoo_PokemonSign_DonationScript_46
-# 277 "data/maps/KiposTown_Zoo/scripts.pory"
+# 278 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 29, KiposTown_Zoo_PokemonSign_DonationScript_47
-# 279 "data/maps/KiposTown_Zoo/scripts.pory"
+# 280 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 30, KiposTown_Zoo_PokemonSign_DonationScript_48
-# 281 "data/maps/KiposTown_Zoo/scripts.pory"
+# 282 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 31, KiposTown_Zoo_PokemonSign_DonationScript_49
-# 283 "data/maps/KiposTown_Zoo/scripts.pory"
+# 284 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 32, KiposTown_Zoo_PokemonSign_DonationScript_50
-# 285 "data/maps/KiposTown_Zoo/scripts.pory"
+# 286 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 33, KiposTown_Zoo_PokemonSign_DonationScript_51
-# 287 "data/maps/KiposTown_Zoo/scripts.pory"
+# 288 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 34, KiposTown_Zoo_PokemonSign_DonationScript_52
-# 289 "data/maps/KiposTown_Zoo/scripts.pory"
+# 290 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 35, KiposTown_Zoo_PokemonSign_DonationScript_53
-# 291 "data/maps/KiposTown_Zoo/scripts.pory"
+# 292 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 36, KiposTown_Zoo_PokemonSign_DonationScript_54
-# 293 "data/maps/KiposTown_Zoo/scripts.pory"
+# 294 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 37, KiposTown_Zoo_PokemonSign_DonationScript_55
-# 295 "data/maps/KiposTown_Zoo/scripts.pory"
+# 296 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 38, KiposTown_Zoo_PokemonSign_DonationScript_56
-# 297 "data/maps/KiposTown_Zoo/scripts.pory"
+# 298 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 39, KiposTown_Zoo_PokemonSign_DonationScript_57
-# 299 "data/maps/KiposTown_Zoo/scripts.pory"
+# 300 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 40, KiposTown_Zoo_PokemonSign_DonationScript_58
-# 301 "data/maps/KiposTown_Zoo/scripts.pory"
+# 302 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 41, KiposTown_Zoo_PokemonSign_DonationScript_59
-# 303 "data/maps/KiposTown_Zoo/scripts.pory"
+# 304 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 42, KiposTown_Zoo_PokemonSign_DonationScript_60
-# 305 "data/maps/KiposTown_Zoo/scripts.pory"
+# 306 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 43, KiposTown_Zoo_PokemonSign_DonationScript_61
-# 307 "data/maps/KiposTown_Zoo/scripts.pory"
+# 308 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 44, KiposTown_Zoo_PokemonSign_DonationScript_62
-# 309 "data/maps/KiposTown_Zoo/scripts.pory"
+# 310 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 45, KiposTown_Zoo_PokemonSign_DonationScript_63
-# 311 "data/maps/KiposTown_Zoo/scripts.pory"
+# 312 "data/maps/KiposTown_Zoo/scripts.pory"
 	case 46, KiposTown_Zoo_PokemonSign_DonationScript_64
 KiposTown_Zoo_PokemonSign_DonationScript_17:
-# 315 "data/maps/KiposTown_Zoo/scripts.pory"
+# 316 "data/maps/KiposTown_Zoo/scripts.pory"
 	addvar VAR_TOTAL_NUM_ZOO_DONATIONS, 1
-# 317 "data/maps/KiposTown_Zoo/scripts.pory"
-	playfanfare FANFARE_LEVEL_UP
 # 318 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_DonationScript_Text_4
+	playfanfare FANFARE_LEVEL_UP
 # 319 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitfanfare
+	msgbox KiposTown_Zoo_PokemonSign_DonationScript_Text_4
 # 320 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitfanfare
+# 321 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto KiposTown_Zoo_PokemonSign_End
 	return
 
 KiposTown_Zoo_PokemonSign_DonationScript_2:
-# 174 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_DonationScript_Text_0
 # 175 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_DonationScript_Text_0
+# 176 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto KiposTown_Zoo_PokemonSign_End
 	goto KiposTown_Zoo_PokemonSign_DonationScript_1
 
 KiposTown_Zoo_PokemonSign_DonationScript_5:
-# 182 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_DonationScript_Text_1, MSGBOX_YESNO
 # 183 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_DonationScript_Text_1, MSGBOX_YESNO
 # 184 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 185 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_DonationScript_11
-# 190 "data/maps/KiposTown_Zoo/scripts.pory"
+# 191 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto KiposTown_Zoo_PokemonSign_DonationScript
 KiposTown_Zoo_PokemonSign_DonationScript_10:
-# 192 "data/maps/KiposTown_Zoo/scripts.pory"
+# 193 "data/maps/KiposTown_Zoo/scripts.pory"
 	releaseall
 	end
 
 KiposTown_Zoo_PokemonSign_DonationScript_7:
-# 205 "data/maps/KiposTown_Zoo/scripts.pory"
+# 206 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto KiposTown_Zoo_PokemonSign_End
 	return
 
 KiposTown_Zoo_PokemonSign_DonationScript_11:
-# 186 "data/maps/KiposTown_Zoo/scripts.pory"
+# 187 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto KiposTown_Zoo_PokemonSign_End
 	goto KiposTown_Zoo_PokemonSign_DonationScript_10
 
 KiposTown_Zoo_PokemonSign_DonationScript_15:
-# 214 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_DonationScript_Text_3
 # 215 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_DonationScript_Text_3
+# 216 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto KiposTown_Zoo_PokemonSign_End
 	goto KiposTown_Zoo_PokemonSign_DonationScript_14
 
 KiposTown_Zoo_PokemonSign_DonationScript_19:
-# 222 "data/maps/KiposTown_Zoo/scripts.pory"
+# 223 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_01_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_20:
-# 224 "data/maps/KiposTown_Zoo/scripts.pory"
+# 225 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_01_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_21:
-# 226 "data/maps/KiposTown_Zoo/scripts.pory"
+# 227 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_01_3, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_22:
-# 228 "data/maps/KiposTown_Zoo/scripts.pory"
+# 229 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_01_4, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_23:
-# 230 "data/maps/KiposTown_Zoo/scripts.pory"
+# 231 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_02_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_24:
-# 232 "data/maps/KiposTown_Zoo/scripts.pory"
+# 233 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_03_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_25:
-# 234 "data/maps/KiposTown_Zoo/scripts.pory"
+# 235 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_03_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_26:
-# 236 "data/maps/KiposTown_Zoo/scripts.pory"
+# 237 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_03_3, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_27:
-# 238 "data/maps/KiposTown_Zoo/scripts.pory"
+# 239 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_04_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_28:
-# 240 "data/maps/KiposTown_Zoo/scripts.pory"
+# 241 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_04_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_29:
-# 242 "data/maps/KiposTown_Zoo/scripts.pory"
+# 243 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_04_3, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_30:
-# 244 "data/maps/KiposTown_Zoo/scripts.pory"
+# 245 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_05_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_31:
-# 246 "data/maps/KiposTown_Zoo/scripts.pory"
+# 247 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_05_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_32:
-# 248 "data/maps/KiposTown_Zoo/scripts.pory"
+# 249 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_06_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_33:
-# 250 "data/maps/KiposTown_Zoo/scripts.pory"
+# 251 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_06_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_34:
-# 252 "data/maps/KiposTown_Zoo/scripts.pory"
+# 253 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_07_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_35:
-# 254 "data/maps/KiposTown_Zoo/scripts.pory"
+# 255 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_07_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_36:
-# 256 "data/maps/KiposTown_Zoo/scripts.pory"
+# 257 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_08_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_37:
-# 258 "data/maps/KiposTown_Zoo/scripts.pory"
+# 259 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_08_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_38:
-# 260 "data/maps/KiposTown_Zoo/scripts.pory"
+# 261 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_09_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_39:
-# 262 "data/maps/KiposTown_Zoo/scripts.pory"
+# 263 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_10_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_40:
-# 264 "data/maps/KiposTown_Zoo/scripts.pory"
+# 265 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_10_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_41:
-# 266 "data/maps/KiposTown_Zoo/scripts.pory"
+# 267 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_10_3, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_42:
-# 268 "data/maps/KiposTown_Zoo/scripts.pory"
+# 269 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_11_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_43:
-# 270 "data/maps/KiposTown_Zoo/scripts.pory"
+# 271 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_11_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_44:
-# 272 "data/maps/KiposTown_Zoo/scripts.pory"
+# 273 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_12_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_45:
-# 274 "data/maps/KiposTown_Zoo/scripts.pory"
+# 275 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_12_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_46:
-# 276 "data/maps/KiposTown_Zoo/scripts.pory"
+# 277 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_13_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_47:
-# 278 "data/maps/KiposTown_Zoo/scripts.pory"
+# 279 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_13_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_48:
-# 280 "data/maps/KiposTown_Zoo/scripts.pory"
+# 281 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_14_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_49:
-# 282 "data/maps/KiposTown_Zoo/scripts.pory"
+# 283 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_14_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_50:
-# 284 "data/maps/KiposTown_Zoo/scripts.pory"
+# 285 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_IN_01_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_51:
-# 286 "data/maps/KiposTown_Zoo/scripts.pory"
+# 287 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_IN_01_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_52:
-# 288 "data/maps/KiposTown_Zoo/scripts.pory"
+# 289 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_IN_01_3, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_53:
-# 290 "data/maps/KiposTown_Zoo/scripts.pory"
+# 291 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_IN_02_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_54:
-# 292 "data/maps/KiposTown_Zoo/scripts.pory"
+# 293 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_IN_02_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_55:
-# 294 "data/maps/KiposTown_Zoo/scripts.pory"
+# 295 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_IN_03_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_56:
-# 296 "data/maps/KiposTown_Zoo/scripts.pory"
+# 297 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_IN_03_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_57:
-# 298 "data/maps/KiposTown_Zoo/scripts.pory"
+# 299 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_58:
-# 300 "data/maps/KiposTown_Zoo/scripts.pory"
+# 301 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_HRP_01_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_59:
-# 302 "data/maps/KiposTown_Zoo/scripts.pory"
+# 303 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_60:
-# 304 "data/maps/KiposTown_Zoo/scripts.pory"
+# 305 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_HRP_02_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_61:
-# 306 "data/maps/KiposTown_Zoo/scripts.pory"
+# 307 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_62:
-# 308 "data/maps/KiposTown_Zoo/scripts.pory"
+# 309 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_HRP_03_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_63:
-# 310 "data/maps/KiposTown_Zoo/scripts.pory"
+# 311 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_1, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 KiposTown_Zoo_PokemonSign_DonationScript_64:
-# 312 "data/maps/KiposTown_Zoo/scripts.pory"
+# 313 "data/maps/KiposTown_Zoo/scripts.pory"
 	copyvar VAR_ZOO_POKEMON_ENCLOSURE_HRP_04_2, VAR_0x8003
 	goto KiposTown_Zoo_PokemonSign_DonationScript_17
 
 
 KiposTown_Zoo_PokemonSign_Girafarig::
-# 331 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 332 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Girafarig_Text_0
+	lock
 # 333 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_Girafarig_Text_0
+# 334 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
-# 335 "data/maps/KiposTown_Zoo/scripts.pory"
-	setvar VAR_0x8003, SPECIES_GIRAFARIG
 # 336 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	setvar VAR_0x8003, SPECIES_GIRAFARIG
 # 337 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 338 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 339 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 340 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
-# 341 "data/maps/KiposTown_Zoo/scripts.pory"
+# 342 "data/maps/KiposTown_Zoo/scripts.pory"
 	releaseall
 	end
 
 
 KiposTown_Zoo_PokemonSign_Forest::
-# 348 "data/maps/KiposTown_Zoo/scripts.pory"
+# 349 "data/maps/KiposTown_Zoo/scripts.pory"
 	lock
-# 351 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_01_1
 # 352 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_01_2
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_01_1
 # 353 "data/maps/KiposTown_Zoo/scripts.pory"
+	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_01_2
+# 354 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Forest_2
 KiposTown_Zoo_PokemonSign_Forest_1:
-# 357 "data/maps/KiposTown_Zoo/scripts.pory"
+# 358 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_2, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Forest_5
 KiposTown_Zoo_PokemonSign_Forest_4:
-# 367 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_1
 # 368 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_1
 # 369 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_2
-# 370 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
+# 370 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_2
 # 371 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_01_3
+	closemessage
 # 372 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_01_4
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_01_3
 # 373 "data/maps/KiposTown_Zoo/scripts.pory"
+	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_01_4
+# 374 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_3, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Forest_8
 KiposTown_Zoo_PokemonSign_Forest_7:
-# 377 "data/maps/KiposTown_Zoo/scripts.pory"
+# 378 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_4, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Forest_11
 KiposTown_Zoo_PokemonSign_Forest_10:
-# 381 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_3
 # 382 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_3
+# 383 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
-# 385 "data/maps/KiposTown_Zoo/scripts.pory"
+# 386 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_1, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Forest_14
 KiposTown_Zoo_PokemonSign_Forest_13:
-# 429 "data/maps/KiposTown_Zoo/scripts.pory"
+# 430 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Forest_17
-# 438 "data/maps/KiposTown_Zoo/scripts.pory"
+# 439 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_2, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Forest_18
-# 447 "data/maps/KiposTown_Zoo/scripts.pory"
+# 448 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_3, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Forest_19
-# 456 "data/maps/KiposTown_Zoo/scripts.pory"
+# 457 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_4, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Forest_20
 KiposTown_Zoo_PokemonSign_Forest_16:
-# 466 "data/maps/KiposTown_Zoo/scripts.pory"
+# 467 "data/maps/KiposTown_Zoo/scripts.pory"
 	releaseall
 	end
 
 KiposTown_Zoo_PokemonSign_Forest_2:
-# 355 "data/maps/KiposTown_Zoo/scripts.pory"
+# 356 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_1, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Forest_1
 
 KiposTown_Zoo_PokemonSign_Forest_5:
-# 359 "data/maps/KiposTown_Zoo/scripts.pory"
+# 360 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_2, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Forest_4
 
 KiposTown_Zoo_PokemonSign_Forest_8:
-# 375 "data/maps/KiposTown_Zoo/scripts.pory"
+# 376 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_1, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Forest_7
 
 KiposTown_Zoo_PokemonSign_Forest_11:
-# 379 "data/maps/KiposTown_Zoo/scripts.pory"
+# 380 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_2, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Forest_10
 
 KiposTown_Zoo_PokemonSign_Forest_14:
-# 388 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_4, MSGBOX_YESNO
 # 389 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_4, MSGBOX_YESNO
 # 390 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 391 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq KiposTown_Zoo_PokemonSign_Forest_25
 	goto KiposTown_Zoo_PokemonSign_Forest_13
 
 KiposTown_Zoo_PokemonSign_Forest_17:
-# 432 "data/maps/KiposTown_Zoo/scripts.pory"
+# 433 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 1
-# 434 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 435 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 436 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 437 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Forest_16
 
 KiposTown_Zoo_PokemonSign_Forest_18:
-# 441 "data/maps/KiposTown_Zoo/scripts.pory"
+# 442 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 2
-# 443 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_6, MSGBOX_YESNO
 # 444 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_6, MSGBOX_YESNO
 # 445 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 446 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Forest_16
 
 KiposTown_Zoo_PokemonSign_Forest_19:
-# 450 "data/maps/KiposTown_Zoo/scripts.pory"
+# 451 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 3
-# 452 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_7, MSGBOX_YESNO
 # 453 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_7, MSGBOX_YESNO
 # 454 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 455 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Forest_16
 
 KiposTown_Zoo_PokemonSign_Forest_20:
-# 459 "data/maps/KiposTown_Zoo/scripts.pory"
+# 460 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 4
-# 461 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_8, MSGBOX_YESNO
 # 462 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_8, MSGBOX_YESNO
 # 463 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 464 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Forest_16
 
 KiposTown_Zoo_PokemonSign_Forest_25:
-# 392 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_1
 # 393 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_1
 # 394 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 395 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 396 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 397 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
-# 398 "data/maps/KiposTown_Zoo/scripts.pory"
+# 399 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_2, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Forest_28
 KiposTown_Zoo_PokemonSign_Forest_27:
-# 407 "data/maps/KiposTown_Zoo/scripts.pory"
+# 408 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_3, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Forest_31
 KiposTown_Zoo_PokemonSign_Forest_30:
-# 416 "data/maps/KiposTown_Zoo/scripts.pory"
+# 417 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_4, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Forest_33
 	goto KiposTown_Zoo_PokemonSign_Forest_13
 
 KiposTown_Zoo_PokemonSign_Forest_28:
-# 400 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 401 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_2
+	delay 20
 # 402 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_2
 # 403 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 404 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 405 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 406 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
 	goto KiposTown_Zoo_PokemonSign_Forest_27
 
 KiposTown_Zoo_PokemonSign_Forest_31:
-# 409 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 410 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_3
+	delay 20
 # 411 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_3
 # 412 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 413 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 414 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 415 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
 	goto KiposTown_Zoo_PokemonSign_Forest_30
 
 KiposTown_Zoo_PokemonSign_Forest_33:
-# 418 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 419 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_4
+	delay 20
 # 420 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_01_4
 # 421 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 422 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 423 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 424 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
 	goto KiposTown_Zoo_PokemonSign_Forest_13
 
 
 KiposTown_Zoo_EnvironmentSign_Forest::
-# 472 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 473 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_EnvironmentSign_Forest_Text_0
+	lock
 # 474 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_EnvironmentSign_Forest_Text_0
 # 475 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 476 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_PokemonSign_Nest::
-# 482 "data/maps/KiposTown_Zoo/scripts.pory"
+# 483 "data/maps/KiposTown_Zoo/scripts.pory"
 	lock
-# 485 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_02_1
 # 486 "data/maps/KiposTown_Zoo/scripts.pory"
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_02_1
+# 487 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_02_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Nest_2
 KiposTown_Zoo_PokemonSign_Nest_1:
-# 492 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Nest_Text_0
 # 493 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_Nest_Text_0
+# 494 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
-# 496 "data/maps/KiposTown_Zoo/scripts.pory"
+# 497 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_02_1, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Nest_5
 KiposTown_Zoo_PokemonSign_Nest_4:
-# 512 "data/maps/KiposTown_Zoo/scripts.pory"
+# 513 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_02_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Nest_8
 KiposTown_Zoo_PokemonSign_Nest_7:
-# 522 "data/maps/KiposTown_Zoo/scripts.pory"
+# 523 "data/maps/KiposTown_Zoo/scripts.pory"
 	releaseall
 	end
 
 KiposTown_Zoo_PokemonSign_Nest_2:
-# 488 "data/maps/KiposTown_Zoo/scripts.pory"
+# 489 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_1, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Nest_1
 
 KiposTown_Zoo_PokemonSign_Nest_5:
-# 499 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Nest_Text_1, MSGBOX_YESNO
 # 500 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Nest_Text_1, MSGBOX_YESNO
 # 501 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 502 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq KiposTown_Zoo_PokemonSign_Nest_10
 	goto KiposTown_Zoo_PokemonSign_Nest_4
 
 KiposTown_Zoo_PokemonSign_Nest_8:
-# 515 "data/maps/KiposTown_Zoo/scripts.pory"
+# 516 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 5
-# 517 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 518 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 519 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 520 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Nest_7
 
 KiposTown_Zoo_PokemonSign_Nest_10:
-# 503 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_02_1
 # 504 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_02_1
 # 505 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 506 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 507 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 508 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
 	goto KiposTown_Zoo_PokemonSign_Nest_4
 
 
 KiposTown_Zoo_EnvironmentSign_Nest::
-# 528 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 529 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_EnvironmentSign_Nest_Text_0
+	lock
 # 530 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_EnvironmentSign_Nest_Text_0
 # 531 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 532 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_PokemonSign_Rainforest::
-# 538 "data/maps/KiposTown_Zoo/scripts.pory"
+# 539 "data/maps/KiposTown_Zoo/scripts.pory"
 	lock
-# 541 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_03_1
 # 542 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_03_2
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_03_1
 # 543 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_3, VAR_ZOO_POKEMON_ENCLOSURE_03_3
+	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_03_2
 # 544 "data/maps/KiposTown_Zoo/scripts.pory"
+	bufferspeciesname STR_VAR_3, VAR_ZOO_POKEMON_ENCLOSURE_03_3
+# 545 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_03_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Rainforest_2
 KiposTown_Zoo_PokemonSign_Rainforest_1:
-# 548 "data/maps/KiposTown_Zoo/scripts.pory"
+# 549 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_03_2, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Rainforest_5
 KiposTown_Zoo_PokemonSign_Rainforest_4:
-# 552 "data/maps/KiposTown_Zoo/scripts.pory"
+# 553 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_03_3, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Rainforest_8
 KiposTown_Zoo_PokemonSign_Rainforest_7:
-# 558 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Rainforest_Text_0
 # 559 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_Rainforest_Text_0
+# 560 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
-# 562 "data/maps/KiposTown_Zoo/scripts.pory"
+# 563 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_03_1, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Rainforest_11
 KiposTown_Zoo_PokemonSign_Rainforest_10:
-# 597 "data/maps/KiposTown_Zoo/scripts.pory"
+# 598 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_03_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Rainforest_14
-# 606 "data/maps/KiposTown_Zoo/scripts.pory"
+# 607 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_03_2, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Rainforest_15
-# 615 "data/maps/KiposTown_Zoo/scripts.pory"
+# 616 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_03_3, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Rainforest_16
 KiposTown_Zoo_PokemonSign_Rainforest_13:
-# 625 "data/maps/KiposTown_Zoo/scripts.pory"
+# 626 "data/maps/KiposTown_Zoo/scripts.pory"
 	releaseall
 	end
 
 KiposTown_Zoo_PokemonSign_Rainforest_2:
-# 546 "data/maps/KiposTown_Zoo/scripts.pory"
+# 547 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_1, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Rainforest_1
 
 KiposTown_Zoo_PokemonSign_Rainforest_5:
-# 550 "data/maps/KiposTown_Zoo/scripts.pory"
+# 551 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_2, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Rainforest_4
 
 KiposTown_Zoo_PokemonSign_Rainforest_8:
-# 554 "data/maps/KiposTown_Zoo/scripts.pory"
+# 555 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_3, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Rainforest_7
 
 KiposTown_Zoo_PokemonSign_Rainforest_11:
-# 565 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_4, MSGBOX_YESNO
 # 566 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_4, MSGBOX_YESNO
 # 567 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 568 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq KiposTown_Zoo_PokemonSign_Rainforest_20
 	goto KiposTown_Zoo_PokemonSign_Rainforest_10
 
 KiposTown_Zoo_PokemonSign_Rainforest_14:
-# 600 "data/maps/KiposTown_Zoo/scripts.pory"
+# 601 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 6
-# 602 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 603 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 604 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 605 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Rainforest_13
 
 KiposTown_Zoo_PokemonSign_Rainforest_15:
-# 609 "data/maps/KiposTown_Zoo/scripts.pory"
+# 610 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 7
-# 611 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_6, MSGBOX_YESNO
 # 612 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_6, MSGBOX_YESNO
 # 613 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 614 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Rainforest_13
 
 KiposTown_Zoo_PokemonSign_Rainforest_16:
-# 618 "data/maps/KiposTown_Zoo/scripts.pory"
+# 619 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 8
-# 620 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_7, MSGBOX_YESNO
 # 621 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_7, MSGBOX_YESNO
 # 622 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 623 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Rainforest_13
 
 KiposTown_Zoo_PokemonSign_Rainforest_20:
-# 569 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_03_1
 # 570 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_03_1
 # 571 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 572 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 573 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 574 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
-# 575 "data/maps/KiposTown_Zoo/scripts.pory"
+# 576 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_03_2, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Rainforest_23
 KiposTown_Zoo_PokemonSign_Rainforest_22:
-# 584 "data/maps/KiposTown_Zoo/scripts.pory"
+# 585 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_03_3, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Rainforest_25
 	goto KiposTown_Zoo_PokemonSign_Rainforest_10
 
 KiposTown_Zoo_PokemonSign_Rainforest_23:
-# 577 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 578 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_03_2
+	delay 20
 # 579 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_03_2
 # 580 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 581 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 582 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 583 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
 	goto KiposTown_Zoo_PokemonSign_Rainforest_22
 
 KiposTown_Zoo_PokemonSign_Rainforest_25:
-# 586 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 587 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_03_3
+	delay 20
 # 588 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_03_3
 # 589 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 590 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 591 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 592 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
 	goto KiposTown_Zoo_PokemonSign_Rainforest_10
 
 
 KiposTown_Zoo_EnvironmentSign_Rainforest::
-# 631 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 632 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_EnvironmentSign_Rainforest_Text_0
+	lock
 # 633 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_EnvironmentSign_Rainforest_Text_0
 # 634 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 635 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_PokemonSign_Suburbs::
-# 641 "data/maps/KiposTown_Zoo/scripts.pory"
+# 642 "data/maps/KiposTown_Zoo/scripts.pory"
 	lock
-# 644 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_04_1
 # 645 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_04_2
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_04_1
 # 646 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_3, VAR_ZOO_POKEMON_ENCLOSURE_04_3
+	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_04_2
 # 647 "data/maps/KiposTown_Zoo/scripts.pory"
+	bufferspeciesname STR_VAR_3, VAR_ZOO_POKEMON_ENCLOSURE_04_3
+# 648 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Suburbs_2
 KiposTown_Zoo_PokemonSign_Suburbs_1:
-# 651 "data/maps/KiposTown_Zoo/scripts.pory"
+# 652 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_2, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Suburbs_5
 KiposTown_Zoo_PokemonSign_Suburbs_4:
-# 655 "data/maps/KiposTown_Zoo/scripts.pory"
+# 656 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_3, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Suburbs_8
 KiposTown_Zoo_PokemonSign_Suburbs_7:
-# 661 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Suburbs_Text_0
 # 662 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_Suburbs_Text_0
+# 663 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
-# 665 "data/maps/KiposTown_Zoo/scripts.pory"
+# 666 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_1, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Suburbs_11
 KiposTown_Zoo_PokemonSign_Suburbs_10:
-# 700 "data/maps/KiposTown_Zoo/scripts.pory"
+# 701 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Suburbs_14
-# 709 "data/maps/KiposTown_Zoo/scripts.pory"
+# 710 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_2, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Suburbs_15
-# 718 "data/maps/KiposTown_Zoo/scripts.pory"
+# 719 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_3, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Suburbs_16
 KiposTown_Zoo_PokemonSign_Suburbs_13:
-# 728 "data/maps/KiposTown_Zoo/scripts.pory"
+# 729 "data/maps/KiposTown_Zoo/scripts.pory"
 	releaseall
 	end
 
 KiposTown_Zoo_PokemonSign_Suburbs_2:
-# 649 "data/maps/KiposTown_Zoo/scripts.pory"
+# 650 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_1, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Suburbs_1
 
 KiposTown_Zoo_PokemonSign_Suburbs_5:
-# 653 "data/maps/KiposTown_Zoo/scripts.pory"
+# 654 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_2, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Suburbs_4
 
 KiposTown_Zoo_PokemonSign_Suburbs_8:
-# 657 "data/maps/KiposTown_Zoo/scripts.pory"
+# 658 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_3, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Suburbs_7
 
 KiposTown_Zoo_PokemonSign_Suburbs_11:
-# 668 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_4, MSGBOX_YESNO
 # 669 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_4, MSGBOX_YESNO
 # 670 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 671 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq KiposTown_Zoo_PokemonSign_Suburbs_20
 	goto KiposTown_Zoo_PokemonSign_Suburbs_10
 
 KiposTown_Zoo_PokemonSign_Suburbs_14:
-# 703 "data/maps/KiposTown_Zoo/scripts.pory"
+# 704 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 9
-# 705 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 706 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 707 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 708 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Suburbs_13
 
 KiposTown_Zoo_PokemonSign_Suburbs_15:
-# 712 "data/maps/KiposTown_Zoo/scripts.pory"
+# 713 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 10
-# 714 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_6, MSGBOX_YESNO
 # 715 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_6, MSGBOX_YESNO
 # 716 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 717 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Suburbs_13
 
 KiposTown_Zoo_PokemonSign_Suburbs_16:
-# 721 "data/maps/KiposTown_Zoo/scripts.pory"
+# 722 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 11
-# 723 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_7, MSGBOX_YESNO
 # 724 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_7, MSGBOX_YESNO
 # 725 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 726 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Suburbs_13
 
 KiposTown_Zoo_PokemonSign_Suburbs_20:
-# 672 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_04_1
 # 673 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_04_1
 # 674 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 675 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 676 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 677 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
-# 678 "data/maps/KiposTown_Zoo/scripts.pory"
+# 679 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_2, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Suburbs_23
 KiposTown_Zoo_PokemonSign_Suburbs_22:
-# 687 "data/maps/KiposTown_Zoo/scripts.pory"
+# 688 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_3, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Suburbs_25
 	goto KiposTown_Zoo_PokemonSign_Suburbs_10
 
 KiposTown_Zoo_PokemonSign_Suburbs_23:
-# 680 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 681 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_04_2
+	delay 20
 # 682 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_04_2
 # 683 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 684 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 685 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 686 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
 	goto KiposTown_Zoo_PokemonSign_Suburbs_22
 
 KiposTown_Zoo_PokemonSign_Suburbs_25:
-# 689 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 690 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_04_3
+	delay 20
 # 691 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_04_3
 # 692 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 693 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 694 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 695 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
 	goto KiposTown_Zoo_PokemonSign_Suburbs_10
 
 
 KiposTown_Zoo_EnvironmentSign_Suburbs::
-# 734 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 735 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_EnvironmentSign_Suburbs_Text_0
+	lock
 # 736 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_EnvironmentSign_Suburbs_Text_0
 # 737 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 738 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_HandsOnExhibitWarningSign::
-# 743 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 744 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_HandsOnExhibitWarningSign_Text_0
+	lock
 # 745 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_HandsOnExhibitWarningSign_Text_0
 # 746 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 747 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_EventScript_DomesticPokemonInteraction_1::
-# 751 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 752 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 753 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_04_1
+	faceplayer
 # 754 "data/maps/KiposTown_Zoo/scripts.pory"
-	playmoncry VAR_ZOO_POKEMON_ENCLOSURE_04_1, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_04_1
 # 755 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitmoncry
+	playmoncry VAR_ZOO_POKEMON_ENCLOSURE_04_1, CRY_MODE_NORMAL
 # 756 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_EventScript_DomesticPokemonInteraction_1_Text_0
+	waitmoncry
 # 757 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_EventScript_DomesticPokemonInteraction_1_Text_0
 # 758 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 759 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_EventScript_DomesticPokemonInteraction_2::
-# 763 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 764 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 765 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_04_2
+	faceplayer
 # 766 "data/maps/KiposTown_Zoo/scripts.pory"
-	playmoncry VAR_ZOO_POKEMON_ENCLOSURE_04_2, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_04_2
 # 767 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitmoncry
+	playmoncry VAR_ZOO_POKEMON_ENCLOSURE_04_2, CRY_MODE_NORMAL
 # 768 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_EventScript_DomesticPokemonInteraction_1_Text_0
+	waitmoncry
 # 769 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_EventScript_DomesticPokemonInteraction_1_Text_0
 # 770 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 771 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_EventScript_DomesticPokemonInteraction_3::
-# 775 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 776 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 777 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_04_3
+	faceplayer
 # 778 "data/maps/KiposTown_Zoo/scripts.pory"
-	playmoncry VAR_ZOO_POKEMON_ENCLOSURE_04_3, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_04_3
 # 779 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitmoncry
+	playmoncry VAR_ZOO_POKEMON_ENCLOSURE_04_3, CRY_MODE_NORMAL
 # 780 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_EventScript_DomesticPokemonInteraction_1_Text_0
+	waitmoncry
 # 781 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_EventScript_DomesticPokemonInteraction_1_Text_0
 # 782 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 783 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_PokemonSign_FungalSwamp::
-# 789 "data/maps/KiposTown_Zoo/scripts.pory"
+# 790 "data/maps/KiposTown_Zoo/scripts.pory"
 	lock
-# 792 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_05_1
 # 793 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_05_2
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_05_1
 # 794 "data/maps/KiposTown_Zoo/scripts.pory"
+	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_05_2
+# 795 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_05_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_FungalSwamp_2
 KiposTown_Zoo_PokemonSign_FungalSwamp_1:
-# 798 "data/maps/KiposTown_Zoo/scripts.pory"
+# 799 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_05_2, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_FungalSwamp_5
 KiposTown_Zoo_PokemonSign_FungalSwamp_4:
-# 804 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_FungalSwamp_Text_0
 # 805 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_FungalSwamp_Text_0
+# 806 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
-# 808 "data/maps/KiposTown_Zoo/scripts.pory"
+# 809 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_05_1, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_FungalSwamp_8
 KiposTown_Zoo_PokemonSign_FungalSwamp_7:
-# 834 "data/maps/KiposTown_Zoo/scripts.pory"
+# 835 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_05_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_FungalSwamp_11
-# 843 "data/maps/KiposTown_Zoo/scripts.pory"
+# 844 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_05_2, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_FungalSwamp_12
 KiposTown_Zoo_PokemonSign_FungalSwamp_10:
-# 853 "data/maps/KiposTown_Zoo/scripts.pory"
+# 854 "data/maps/KiposTown_Zoo/scripts.pory"
 	releaseall
 	end
 
 KiposTown_Zoo_PokemonSign_FungalSwamp_2:
-# 796 "data/maps/KiposTown_Zoo/scripts.pory"
+# 797 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_1, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_FungalSwamp_1
 
 KiposTown_Zoo_PokemonSign_FungalSwamp_5:
-# 800 "data/maps/KiposTown_Zoo/scripts.pory"
+# 801 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_2, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_FungalSwamp_4
 
 KiposTown_Zoo_PokemonSign_FungalSwamp_8:
-# 811 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_4, MSGBOX_YESNO
 # 812 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_4, MSGBOX_YESNO
 # 813 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 814 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq KiposTown_Zoo_PokemonSign_FungalSwamp_15
 	goto KiposTown_Zoo_PokemonSign_FungalSwamp_7
 
 KiposTown_Zoo_PokemonSign_FungalSwamp_11:
-# 837 "data/maps/KiposTown_Zoo/scripts.pory"
+# 838 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 12
-# 839 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 840 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 841 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 842 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_FungalSwamp_10
 
 KiposTown_Zoo_PokemonSign_FungalSwamp_12:
-# 846 "data/maps/KiposTown_Zoo/scripts.pory"
+# 847 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 13
-# 848 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_6, MSGBOX_YESNO
 # 849 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_6, MSGBOX_YESNO
 # 850 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 851 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_FungalSwamp_10
 
 KiposTown_Zoo_PokemonSign_FungalSwamp_15:
-# 815 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_05_1
 # 816 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_05_1
 # 817 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 818 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 819 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 820 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
-# 821 "data/maps/KiposTown_Zoo/scripts.pory"
+# 822 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_05_2, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_FungalSwamp_17
 	goto KiposTown_Zoo_PokemonSign_FungalSwamp_7
 
 KiposTown_Zoo_PokemonSign_FungalSwamp_17:
-# 823 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 824 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_05_2
+	delay 20
 # 825 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_05_2
 # 826 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 827 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 828 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 829 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
 	goto KiposTown_Zoo_PokemonSign_FungalSwamp_7
 
 
 KiposTown_Zoo_EnvironmentSign_FungalSwamp::
-# 859 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 860 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_EnvironmentSign_FungalSwamp_Text_0
+	lock
 # 861 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_EnvironmentSign_FungalSwamp_Text_0
 # 862 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 863 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_PokemonSign_Wetlands::
-# 869 "data/maps/KiposTown_Zoo/scripts.pory"
+# 870 "data/maps/KiposTown_Zoo/scripts.pory"
 	lock
-# 872 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_06_1
 # 873 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_06_2
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_06_1
 # 874 "data/maps/KiposTown_Zoo/scripts.pory"
+	bufferspeciesname STR_VAR_2, VAR_ZOO_POKEMON_ENCLOSURE_06_2
+# 875 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_06_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Wetlands_2
 KiposTown_Zoo_PokemonSign_Wetlands_1:
-# 878 "data/maps/KiposTown_Zoo/scripts.pory"
+# 879 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_06_2, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Wetlands_5
 KiposTown_Zoo_PokemonSign_Wetlands_4:
-# 884 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Wetlands_Text_0
 # 885 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_PokemonSign_Wetlands_Text_0
+# 886 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
-# 888 "data/maps/KiposTown_Zoo/scripts.pory"
+# 889 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_06_1, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Wetlands_8
 KiposTown_Zoo_PokemonSign_Wetlands_7:
-# 914 "data/maps/KiposTown_Zoo/scripts.pory"
+# 915 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_06_1, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Wetlands_11
-# 923 "data/maps/KiposTown_Zoo/scripts.pory"
+# 924 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_06_2, 0
 	goto_if_eq KiposTown_Zoo_PokemonSign_Wetlands_12
 KiposTown_Zoo_PokemonSign_Wetlands_10:
-# 933 "data/maps/KiposTown_Zoo/scripts.pory"
+# 934 "data/maps/KiposTown_Zoo/scripts.pory"
 	releaseall
 	end
 
 KiposTown_Zoo_PokemonSign_Wetlands_2:
-# 876 "data/maps/KiposTown_Zoo/scripts.pory"
+# 877 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_1, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Wetlands_1
 
 KiposTown_Zoo_PokemonSign_Wetlands_5:
-# 880 "data/maps/KiposTown_Zoo/scripts.pory"
+# 881 "data/maps/KiposTown_Zoo/scripts.pory"
 	bufferstring STR_VAR_2, KiposTown_Zoo_PokemonSign_Forest_Text_0
 	goto KiposTown_Zoo_PokemonSign_Wetlands_4
 
 KiposTown_Zoo_PokemonSign_Wetlands_8:
-# 891 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_4, MSGBOX_YESNO
 # 892 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_4, MSGBOX_YESNO
 # 893 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 894 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq KiposTown_Zoo_PokemonSign_Wetlands_15
 	goto KiposTown_Zoo_PokemonSign_Wetlands_7
 
 KiposTown_Zoo_PokemonSign_Wetlands_11:
-# 917 "data/maps/KiposTown_Zoo/scripts.pory"
+# 918 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 14
-# 919 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 920 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_5, MSGBOX_YESNO
 # 921 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 922 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Wetlands_10
 
 KiposTown_Zoo_PokemonSign_Wetlands_12:
-# 926 "data/maps/KiposTown_Zoo/scripts.pory"
+# 927 "data/maps/KiposTown_Zoo/scripts.pory"
 	setvar VAR_TEMP_0, 15
-# 928 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_6, MSGBOX_YESNO
 # 929 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_PokemonSign_Forest_Text_6, MSGBOX_YESNO
 # 930 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 931 "data/maps/KiposTown_Zoo/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, KiposTown_Zoo_PokemonSign_DonationScript
 	goto KiposTown_Zoo_PokemonSign_Wetlands_10
 
 KiposTown_Zoo_PokemonSign_Wetlands_15:
-# 895 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_06_1
 # 896 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_06_1
 # 897 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 898 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 899 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 900 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
-# 901 "data/maps/KiposTown_Zoo/scripts.pory"
+# 902 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_06_2, 0
 	goto_if_gt KiposTown_Zoo_PokemonSign_Wetlands_17
 	goto KiposTown_Zoo_PokemonSign_Wetlands_7
 
 KiposTown_Zoo_PokemonSign_Wetlands_17:
-# 903 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 904 "data/maps/KiposTown_Zoo/scripts.pory"
-	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_06_2
+	delay 20
 # 905 "data/maps/KiposTown_Zoo/scripts.pory"
-	special ShowSpeciesZooInfoWindow
+	copyvar VAR_0x8003, VAR_ZOO_POKEMON_ENCLOSURE_06_2
 # 906 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
+	special ShowSpeciesZooInfoWindow
 # 907 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitbuttonpress
+	delay 30
 # 908 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitbuttonpress
+# 909 "data/maps/KiposTown_Zoo/scripts.pory"
 	special CloseSpeciesZooInfoWindow
 	goto KiposTown_Zoo_PokemonSign_Wetlands_7
 
 
 KiposTown_Zoo_EnvironmentSign_Wetlands::
-# 939 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 940 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_EnvironmentSign_Wetlands_Text_0
+	lock
 # 941 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_EnvironmentSign_Wetlands_Text_0
 # 942 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 943 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_South_NPC_Beauty::
-# 952 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 953 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 954 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_Beauty_Text_0
+	faceplayer
 # 955 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Beauty_Text_1
+	speakername KiposTown_Zoo_South_NPC_Beauty_Text_0
 # 956 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_South_NPC_Beauty_Text_1
 # 957 "data/maps/KiposTown_Zoo/scripts.pory"
-	applymovement 30, Common_Movement_FaceOriginalDirection
+	closemessage
 # 958 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitmovement 0
+	applymovement 30, Common_Movement_FaceOriginalDirection
 # 959 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitmovement 0
+# 960 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_South_NPC_BugCatcher::
-# 965 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 966 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 967 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_BugCatcher_Text_0
+	faceplayer
 # 968 "data/maps/KiposTown_Zoo/scripts.pory"
+	speakername KiposTown_Zoo_South_NPC_BugCatcher_Text_0
+# 969 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_1, 0
 	goto_if_gt KiposTown_Zoo_South_NPC_BugCatcher_2
-# 975 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_BugCatcher_Text_2
 # 976 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_BugCatcher_Text_2
+# 977 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 KiposTown_Zoo_South_NPC_BugCatcher_1:
-# 978 "data/maps/KiposTown_Zoo/scripts.pory"
-	applymovement 31, Common_Movement_FaceOriginalDirection
 # 979 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitmovement 0
+	applymovement 31, Common_Movement_FaceOriginalDirection
 # 980 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitmovement 0
+# 981 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 KiposTown_Zoo_South_NPC_BugCatcher_2:
-# 970 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_BugCatcher_Text_1
 # 971 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_BugCatcher_Text_1
+# 972 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 	goto KiposTown_Zoo_South_NPC_BugCatcher_1
 
 
 KiposTown_Zoo_South_NPC_Woman::
-# 986 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 987 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 988 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_Woman_Text_0
+	faceplayer
 # 989 "data/maps/KiposTown_Zoo/scripts.pory"
+	speakername KiposTown_Zoo_South_NPC_Woman_Text_0
+# 990 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_01_1, 0
 	goto_if_gt KiposTown_Zoo_South_NPC_Woman_2
-# 996 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Woman_Text_2
 # 997 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_Woman_Text_2
+# 998 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 KiposTown_Zoo_South_NPC_Woman_1:
-# 999 "data/maps/KiposTown_Zoo/scripts.pory"
-	applymovement 32, Common_Movement_FaceOriginalDirection
 # 1000 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitmovement 0
+	applymovement 32, Common_Movement_FaceOriginalDirection
 # 1001 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitmovement 0
+# 1002 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 KiposTown_Zoo_South_NPC_Woman_2:
-# 991 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Woman_Text_1
 # 992 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_Woman_Text_1
+# 993 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 	goto KiposTown_Zoo_South_NPC_Woman_1
 
 
 KiposTown_Zoo_South_NPC_RichBoy::
-# 1007 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1008 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1009 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_RichBoy_Text_0
+	faceplayer
 # 1010 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_RichBoy_Text_1
+	speakername KiposTown_Zoo_South_NPC_RichBoy_Text_0
 # 1011 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_South_NPC_RichBoy_Text_1
 # 1012 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 1013 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_South_NPC_Youngster::
-# 1018 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1019 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1020 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_Youngster_Text_0
+	faceplayer
 # 1021 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Youngster_Text_1
+	speakername KiposTown_Zoo_South_NPC_Youngster_Text_0
 # 1022 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_South_NPC_Youngster_Text_1
 # 1023 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 1024 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_South_NPC_Worker::
-# 1029 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1030 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1031 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_Worker_Text_0
+	faceplayer
 # 1032 "data/maps/KiposTown_Zoo/scripts.pory"
+	speakername KiposTown_Zoo_South_NPC_Worker_Text_0
+# 1033 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_1, 0
 	goto_if_gt KiposTown_Zoo_South_NPC_Worker_2
-# 1039 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Worker_Text_2
 # 1040 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_Worker_Text_2
+# 1041 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 KiposTown_Zoo_South_NPC_Worker_1:
-# 1042 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1043 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 KiposTown_Zoo_South_NPC_Worker_2:
-# 1034 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Worker_Text_1
 # 1035 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_Worker_Text_1
+# 1036 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 	goto KiposTown_Zoo_South_NPC_Worker_1
 
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn::
-# 1048 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1049 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1050 "data/maps/KiposTown_Zoo/scripts.pory"
+	faceplayer
+# 1051 "data/maps/KiposTown_Zoo/scripts.pory"
 	speakername KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_0
-# 1053 "data/maps/KiposTown_Zoo/scripts.pory"
-	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_FILL_SUBURBS_ZOO
 # 1054 "data/maps/KiposTown_Zoo/scripts.pory"
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_FILL_SUBURBS_ZOO
+# 1055 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq KiposTown_Zoo_South_NPC_OldWomanInHandsOn_2
-# 1063 "data/maps/KiposTown_Zoo/scripts.pory"
-	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_FILL_SUBURBS_ZOO
 # 1064 "data/maps/KiposTown_Zoo/scripts.pory"
+	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_FILL_SUBURBS_ZOO
+# 1065 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq KiposTown_Zoo_South_NPC_OldWomanInHandsOn_5
-# 1074 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_3
 # 1075 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_3
+# 1076 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
-# 1077 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 30
 # 1078 "data/maps/KiposTown_Zoo/scripts.pory"
+	delay 30
+# 1079 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_1, 0
 	goto_if_gt KiposTown_Zoo_South_NPC_OldWomanInHandsOn_11
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_9:
-# 1095 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_0
 # 1096 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_5
+	speakername KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_0
 # 1097 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_5
+# 1098 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_4:
-# 1100 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1101 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_2:
-# 1056 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_1
 # 1057 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_1
 # 1058 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 1059 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_5:
-# 1066 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_2
 # 1067 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_2
+# 1068 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
-# 1069 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
 # 1070 "data/maps/KiposTown_Zoo/scripts.pory"
+	delay 20
+# 1071 "data/maps/KiposTown_Zoo/scripts.pory"
 	startquest QUEST_FILL_SUBURBS_ZOO
 	goto KiposTown_Zoo_South_NPC_OldWomanInHandsOn_4
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_8:
-# 1080 "data/maps/KiposTown_Zoo/scripts.pory"
-	applymovement 36, Common_Movement_Heart
 # 1081 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitmovement 0
+	applymovement 36, Common_Movement_Heart
 # 1082 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 10
+	waitmovement 0
 # 1083 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_0
+	delay 10
 # 1084 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_4
+	speakername KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_0
 # 1085 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_4
 # 1086 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 5
-# 1087 "data/maps/KiposTown_Zoo/scripts.pory"
-	giveitem ITEM_TM_WISH
-# 1088 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
-# 1090 "data/maps/KiposTown_Zoo/scripts.pory"
-	delay 20
+# 1087 "data/maps/KiposTown_Zoo/scripts.pory"
+	delay 5
+# 1088 "data/maps/KiposTown_Zoo/scripts.pory"
+	giveitem ITEM_TM_WISH
+# 1089 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
 # 1091 "data/maps/KiposTown_Zoo/scripts.pory"
+	delay 20
+# 1092 "data/maps/KiposTown_Zoo/scripts.pory"
 	completequest QUEST_FILL_SUBURBS_ZOO
 	goto KiposTown_Zoo_South_NPC_OldWomanInHandsOn_4
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_10:
-# 1078 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1079 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_3, 0
 	goto_if_gt KiposTown_Zoo_South_NPC_OldWomanInHandsOn_8
 	goto KiposTown_Zoo_South_NPC_OldWomanInHandsOn_9
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_11:
-# 1078 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1079 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_04_2, 0
 	goto_if_gt KiposTown_Zoo_South_NPC_OldWomanInHandsOn_10
 	goto KiposTown_Zoo_South_NPC_OldWomanInHandsOn_9
 
 
 KiposTown_Zoo_South_NPC_Maniac::
-# 1106 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1107 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1108 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_Maniac_Text_0
+	faceplayer
 # 1109 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Maniac_Text_1
+	speakername KiposTown_Zoo_South_NPC_Maniac_Text_0
 # 1110 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_South_NPC_Maniac_Text_1
 # 1111 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 1112 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_South_NPC_Fisherman::
-# 1117 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1118 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1119 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_Fisherman_Text_0
+	faceplayer
 # 1120 "data/maps/KiposTown_Zoo/scripts.pory"
+	speakername KiposTown_Zoo_South_NPC_Fisherman_Text_0
+# 1121 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_06_2, 0
 	goto_if_gt KiposTown_Zoo_South_NPC_Fisherman_2
-# 1127 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Fisherman_Text_2
 # 1128 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_Fisherman_Text_2
+# 1129 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 KiposTown_Zoo_South_NPC_Fisherman_1:
-# 1130 "data/maps/KiposTown_Zoo/scripts.pory"
-	applymovement 38, Common_Movement_FaceOriginalDirection
 # 1131 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitmovement 0
+	applymovement 38, Common_Movement_FaceOriginalDirection
 # 1132 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitmovement 0
+# 1133 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 KiposTown_Zoo_South_NPC_Fisherman_2:
-# 1122 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Fisherman_Text_1
 # 1123 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_Fisherman_Text_1
+# 1124 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 	goto KiposTown_Zoo_South_NPC_Fisherman_1
 
 
 KiposTown_Zoo_South_NPC_Girl::
-# 1138 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1139 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1140 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_Girl_Text_0
+	faceplayer
 # 1141 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Girl_Text_1
+	speakername KiposTown_Zoo_South_NPC_Girl_Text_0
 # 1142 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_South_NPC_Girl_Text_1
 # 1143 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 1144 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_South_NPC_CyclingTriathleteF::
-# 1149 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1150 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1151 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_CyclingTriathleteF_Text_0
+	faceplayer
 # 1152 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_CyclingTriathleteF_Text_1
+	speakername KiposTown_Zoo_South_NPC_CyclingTriathleteF_Text_0
 # 1153 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_South_NPC_CyclingTriathleteF_Text_1
 # 1154 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 1155 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_South_NPC_FatMan::
-# 1160 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1161 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1162 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_FatMan_Text_0
+	faceplayer
 # 1163 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_FatMan_Text_1
+	speakername KiposTown_Zoo_South_NPC_FatMan_Text_0
 # 1164 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_South_NPC_FatMan_Text_1
 # 1165 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 1166 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_South_NPC_HexManiac::
-# 1171 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1172 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1173 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_HexManiac_Text_0
+	faceplayer
 # 1174 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_HexManiac_Text_1
+	speakername KiposTown_Zoo_South_NPC_HexManiac_Text_0
 # 1175 "data/maps/KiposTown_Zoo/scripts.pory"
-	closemessage
+	msgbox KiposTown_Zoo_South_NPC_HexManiac_Text_1
 # 1176 "data/maps/KiposTown_Zoo/scripts.pory"
+	closemessage
+# 1177 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 
 KiposTown_Zoo_South_NPC_Scientist::
-# 1182 "data/maps/KiposTown_Zoo/scripts.pory"
-	lock
 # 1183 "data/maps/KiposTown_Zoo/scripts.pory"
-	faceplayer
+	lock
 # 1184 "data/maps/KiposTown_Zoo/scripts.pory"
-	speakername KiposTown_Zoo_South_NPC_Scientist_Text_0
+	faceplayer
 # 1185 "data/maps/KiposTown_Zoo/scripts.pory"
+	speakername KiposTown_Zoo_South_NPC_Scientist_Text_0
+# 1186 "data/maps/KiposTown_Zoo/scripts.pory"
 	compare VAR_ZOO_POKEMON_ENCLOSURE_02_1, 0
 	goto_if_gt KiposTown_Zoo_South_NPC_Scientist_2
-# 1193 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Scientist_Text_2
 # 1194 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_Scientist_Text_2
+# 1195 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 KiposTown_Zoo_South_NPC_Scientist_1:
-# 1196 "data/maps/KiposTown_Zoo/scripts.pory"
-	applymovement 44, Common_Movement_FaceOriginalDirection
 # 1197 "data/maps/KiposTown_Zoo/scripts.pory"
-	waitmovement 0
+	applymovement 44, Common_Movement_FaceOriginalDirection
 # 1198 "data/maps/KiposTown_Zoo/scripts.pory"
+	waitmovement 0
+# 1199 "data/maps/KiposTown_Zoo/scripts.pory"
 	release
 	end
 
 KiposTown_Zoo_South_NPC_Scientist_2:
-# 1187 "data/maps/KiposTown_Zoo/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_02_1
 # 1188 "data/maps/KiposTown_Zoo/scripts.pory"
-	msgbox KiposTown_Zoo_South_NPC_Scientist_Text_1
+	bufferspeciesname STR_VAR_1, VAR_ZOO_POKEMON_ENCLOSURE_02_1
 # 1189 "data/maps/KiposTown_Zoo/scripts.pory"
+	msgbox KiposTown_Zoo_South_NPC_Scientist_Text_1
+# 1190 "data/maps/KiposTown_Zoo/scripts.pory"
 	closemessage
 	goto KiposTown_Zoo_South_NPC_Scientist_1
 
@@ -2098,42 +2100,42 @@ KiposTown_Zoo_EventScript_PlayerShownAround_Text_4:
 	.string "Thank you for your help in advance!$"
 
 KiposTown_Zoo_DirectionSign_South_1_Text_0:
-# 118 "data/maps/KiposTown_Zoo/scripts.pory"
+# 119 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "{LEFT_ARROW} Forest Exhibit\n"
 	.string "{UP_ARROW} Rainforest & Hands-On Exhibit\p"
 	.string "Fungal Swamp Exhibit {RIGHT_ARROW}\n"
 	.string "Exit {DOWN_ARROW}$"
 
 KiposTown_Zoo_DirectionSign_South_2_Text_0:
-# 127 "data/maps/KiposTown_Zoo/scripts.pory"
+# 128 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "{LEFT_ARROW} Specialty Indoor Exhibits\n"
 	.string "{UP_ARROW} 'Exotic Locale' Zoo Exhibits\p"
 	.string "Herpetofauna Exhibits {RIGHT_ARROW}\n"
 	.string "'Backyard Friends' Zoo Exhibits {DOWN_ARROW}$"
 
 KiposTown_Zoo_BuildingSign_SpecialtyBuilding_Text_0:
-# 136 "data/maps/KiposTown_Zoo/scripts.pory"
+# 137 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Indoor Exhibits - West Building\n"
 	.string "Specialty Exhibits$"
 
 KiposTown_Zoo_BuildingSign_HerpetofaunaBuilding_Text_0:
-# 145 "data/maps/KiposTown_Zoo/scripts.pory"
+# 146 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Indoor Exhibits - East Building\n"
 	.string "Herpetofauna: Reptiles and Amphibians$"
 
 KiposTown_Zoo_PokemonSign_DonationScript_Text_0:
-# 174 "data/maps/KiposTown_Zoo/scripts.pory"
+# 175 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Eggs cannot be donated to this exhibit.$"
 
 KiposTown_Zoo_PokemonSign_DonationScript_Text_1:
-# 182 "data/maps/KiposTown_Zoo/scripts.pory"
+# 183 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Unfortunately, this Pokémon is\n"
 	.string "incompatible with this exhibit.\p"
 	.string "Would you like to choose another\n"
 	.string "Pokémon for this enclosure?$"
 
 KiposTown_Zoo_PokemonSign_DonationScript_Text_2:
-# 202 "data/maps/KiposTown_Zoo/scripts.pory"
+# 203 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Are you sure you want to donate\n"
 	.string "{STR_VAR_1}? Remember,\l"
 	.string "contributions to the Sunset Wildlife\l"
@@ -2142,19 +2144,19 @@ KiposTown_Zoo_PokemonSign_DonationScript_Text_2:
 	.string "but cannot be withdrawn.$"
 
 KiposTown_Zoo_PokemonSign_DonationScript_Text_3:
-# 214 "data/maps/KiposTown_Zoo/scripts.pory"
+# 215 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "The donation could not be accepted at\n"
 	.string "this time. Please come back with more\l"
 	.string "Pokémon in your party.$"
 
 KiposTown_Zoo_PokemonSign_DonationScript_Text_4:
-# 318 "data/maps/KiposTown_Zoo/scripts.pory"
+# 319 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Donated {STR_VAR_1} to the Exhibit!\n"
 	.string "Return soon to view the Pokémon in it's\l"
 	.string "new home!$"
 
 KiposTown_Zoo_PokemonSign_Girafarig_Text_0:
-# 332 "data/maps/KiposTown_Zoo/scripts.pory"
+# 333 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Special Enclosure: Welcome to the\n"
 	.string "Sunset Wildlife Conservation Zoo!\p"
 	.string "This Girafarig was the first Pokémon\n"
@@ -2165,54 +2167,54 @@ KiposTown_Zoo_PokemonSign_Girafarig_Text_0:
 	.string "There's more written about Girafarig!$"
 
 KiposTown_Zoo_PokemonSign_Forest_Text_0:
-# 355 "data/maps/KiposTown_Zoo/scripts.pory"
+# 356 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "---$"
 
 KiposTown_Zoo_PokemonSign_Forest_Text_1:
-# 367 "data/maps/KiposTown_Zoo/scripts.pory"
+# 368 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 1: {COLOR GREEN}Forest{COLOR DARK_GRAY}$"
 
 KiposTown_Zoo_PokemonSign_Forest_Text_2:
-# 369 "data/maps/KiposTown_Zoo/scripts.pory"
+# 370 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Pokémon in Enclosure (South):\n"
 	.string "{STR_VAR_1}, {STR_VAR_2}$"
 
 KiposTown_Zoo_PokemonSign_Forest_Text_3:
-# 381 "data/maps/KiposTown_Zoo/scripts.pory"
+# 382 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Pokémon in Enclosure (North):\n"
 	.string "{STR_VAR_1}, {STR_VAR_2}$"
 
 KiposTown_Zoo_PokemonSign_Forest_Text_4:
-# 388 "data/maps/KiposTown_Zoo/scripts.pory"
+# 389 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "There's information about each Pokémon\n"
 	.string "listed. Read it?$"
 
 KiposTown_Zoo_PokemonSign_Forest_Text_5:
-# 434 "data/maps/KiposTown_Zoo/scripts.pory"
+# 435 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "There are no Pokémon in the exhibit.\n"
 	.string "Would you like to {COLOR GREEN}donate a Pokémon to\l"
 	.string "the exhibit{COLOR DARK_GRAY}?$"
 
 KiposTown_Zoo_PokemonSign_Forest_Text_6:
-# 443 "data/maps/KiposTown_Zoo/scripts.pory"
+# 444 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "There is room for a second Pokémon in\n"
 	.string "this exhibit. Would you like to {COLOR GREEN}donate a\l"
 	.string "Pokémon to the exhibit{COLOR DARK_GRAY}?$"
 
 KiposTown_Zoo_PokemonSign_Forest_Text_7:
-# 452 "data/maps/KiposTown_Zoo/scripts.pory"
+# 453 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "There is room for a third Pokémon in\n"
 	.string "this exhibit. Would you like to {COLOR GREEN}donate a\l"
 	.string "Pokémon to the exhibit{COLOR DARK_GRAY}?$"
 
 KiposTown_Zoo_PokemonSign_Forest_Text_8:
-# 461 "data/maps/KiposTown_Zoo/scripts.pory"
+# 462 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "There is room for a fourth Pokémon in\n"
 	.string "this exhibit. Would you like to {COLOR GREEN}donate a\l"
 	.string "Pokémon to the exhibit{COLOR DARK_GRAY}?$"
 
 KiposTown_Zoo_EnvironmentSign_Forest_Text_0:
-# 473 "data/maps/KiposTown_Zoo/scripts.pory"
+# 474 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 1: {COLOR GREEN}Forest{COLOR DARK_GRAY}\p"
 	.string "This enclosure is designed to replicate\n"
 	.string "a natural woodland environment.\l"
@@ -2227,17 +2229,17 @@ KiposTown_Zoo_EnvironmentSign_Forest_Text_0:
 	.string "known to thrive.$"
 
 KiposTown_Zoo_PokemonSign_Nest_Text_0:
-# 492 "data/maps/KiposTown_Zoo/scripts.pory"
+# 493 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 2: Nest\n"
 	.string "Pokémon in Exhibit: {STR_VAR_1}$"
 
 KiposTown_Zoo_PokemonSign_Nest_Text_1:
-# 499 "data/maps/KiposTown_Zoo/scripts.pory"
+# 500 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "There's information about the Pokémon\n"
 	.string "listed. Read it?$"
 
 KiposTown_Zoo_EnvironmentSign_Nest_Text_0:
-# 529 "data/maps/KiposTown_Zoo/scripts.pory"
+# 530 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 2: {COLOR GREEN}Nest{COLOR DARK_GRAY}\p"
 	.string "Despite their vast evolutionary\n"
 	.string "differences, all Pokémon recorded\l"
@@ -2255,13 +2257,13 @@ KiposTown_Zoo_EnvironmentSign_Nest_Text_0:
 	.string "alongside other Eggs.$"
 
 KiposTown_Zoo_PokemonSign_Rainforest_Text_0:
-# 558 "data/maps/KiposTown_Zoo/scripts.pory"
+# 559 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 3: Rainforest\n"
 	.string "Pokémon in Exhibit: {STR_VAR_1},\l"
 	.string "{STR_VAR_2}, {STR_VAR_3}$"
 
 KiposTown_Zoo_EnvironmentSign_Rainforest_Text_0:
-# 632 "data/maps/KiposTown_Zoo/scripts.pory"
+# 633 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 3: {COLOR GREEN}Rainforest{COLOR DARK_GRAY}\p"
 	.string "These dense jungles are packed with\n"
 	.string "trees and undergrowth, blooming in the\l"
@@ -2278,13 +2280,13 @@ KiposTown_Zoo_EnvironmentSign_Rainforest_Text_0:
 	.string "variety of {COLOR GREEN}primates{COLOR DARK_GRAY}.$"
 
 KiposTown_Zoo_PokemonSign_Suburbs_Text_0:
-# 661 "data/maps/KiposTown_Zoo/scripts.pory"
+# 662 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 4: Suburbs\n"
 	.string "Pokémon in Exhibit: {STR_VAR_1},\l"
 	.string "{STR_VAR_2}, {STR_VAR_3}$"
 
 KiposTown_Zoo_EnvironmentSign_Suburbs_Text_0:
-# 735 "data/maps/KiposTown_Zoo/scripts.pory"
+# 736 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 4: {COLOR GREEN}Suburbs{COLOR DARK_GRAY}\p"
 	.string "Humans are constantly modifying their\n"
 	.string "environment, so naturally, some Pokémon\l"
@@ -2302,7 +2304,7 @@ KiposTown_Zoo_EnvironmentSign_Suburbs_Text_0:
 	.string "from construction to pollution.$"
 
 KiposTown_Zoo_HandsOnExhibitWarningSign_Text_0:
-# 744 "data/maps/KiposTown_Zoo/scripts.pory"
+# 745 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Welcome! This is a {COLOR GREEN}Hands-On{COLOR DARK_GRAY} Pokémon\n"
 	.string "Experience, allowing you to rest and\l"
 	.string "relax alongside domesticated Pokémon!\p"
@@ -2312,18 +2314,18 @@ KiposTown_Zoo_HandsOnExhibitWarningSign_Text_0:
 	.string "key!$"
 
 KiposTown_Zoo_EventScript_DomesticPokemonInteraction_1_Text_0:
-# 756 "data/maps/KiposTown_Zoo/scripts.pory"
+# 757 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "The {STR_VAR_1} huffed out a\n"
 	.string "greeting!$"
 
 KiposTown_Zoo_PokemonSign_FungalSwamp_Text_0:
-# 804 "data/maps/KiposTown_Zoo/scripts.pory"
+# 805 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 5: Fungal Swamp\n"
 	.string "Pokémon in Exhibit: {STR_VAR_1},\l"
 	.string "{STR_VAR_2}$"
 
 KiposTown_Zoo_EnvironmentSign_FungalSwamp_Text_0:
-# 860 "data/maps/KiposTown_Zoo/scripts.pory"
+# 861 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 5: {COLOR GREEN}Fungal Swamp{COLOR DARK_GRAY}\p"
 	.string "Fungi play crucial roles in our\n"
 	.string "ecosystems, from associations with\l"
@@ -2341,13 +2343,13 @@ KiposTown_Zoo_EnvironmentSign_FungalSwamp_Text_0:
 	.string "this environment!$"
 
 KiposTown_Zoo_PokemonSign_Wetlands_Text_0:
-# 884 "data/maps/KiposTown_Zoo/scripts.pory"
+# 885 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 6: Wetlands\n"
 	.string "Pokémon in Exhibit: {STR_VAR_1},\l"
 	.string "{STR_VAR_2}$"
 
 KiposTown_Zoo_EnvironmentSign_Wetlands_Text_0:
-# 940 "data/maps/KiposTown_Zoo/scripts.pory"
+# 941 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Enclosure No. 6: {COLOR GREEN}Wetlands{COLOR DARK_GRAY}\p"
 	.string "Although most people steer clear of\n"
 	.string "marshes and bogs, these habitats are\l"
@@ -2361,11 +2363,11 @@ KiposTown_Zoo_EnvironmentSign_Wetlands_Text_0:
 	.string "Pokémon.$"
 
 KiposTown_Zoo_South_NPC_Beauty_Text_0:
-# 954 "data/maps/KiposTown_Zoo/scripts.pory"
+# 955 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Beauty$"
 
 KiposTown_Zoo_South_NPC_Beauty_Text_1:
-# 955 "data/maps/KiposTown_Zoo/scripts.pory"
+# 956 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "The first Pokémon donated to the\n"
 	.string "Conservation Center... now it became\l"
 	.string "the last one left after Team Chimera's\l"
@@ -2374,87 +2376,87 @@ KiposTown_Zoo_South_NPC_Beauty_Text_1:
 	.string "visited it when I was a kid!$"
 
 KiposTown_Zoo_South_NPC_BugCatcher_Text_0:
-# 967 "data/maps/KiposTown_Zoo/scripts.pory"
+# 968 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Bug Catcher$"
 
 KiposTown_Zoo_South_NPC_BugCatcher_Text_1:
-# 970 "data/maps/KiposTown_Zoo/scripts.pory"
+# 971 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Hey, there's a Pokémon in the exhibit\n"
 	.string "again! I'm so glad!$"
 
 KiposTown_Zoo_South_NPC_BugCatcher_Text_2:
-# 975 "data/maps/KiposTown_Zoo/scripts.pory"
+# 976 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Sniff... I wanted to see the Pokémon,\n"
 	.string "where'd they go?$"
 
 KiposTown_Zoo_South_NPC_Woman_Text_0:
-# 988 "data/maps/KiposTown_Zoo/scripts.pory"
+# 989 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Woman$"
 
 KiposTown_Zoo_South_NPC_Woman_Text_1:
-# 991 "data/maps/KiposTown_Zoo/scripts.pory"
+# 992 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "It looks like the Pokémon are coming\n"
 	.string "back to the Zoo! Someone is donating\l"
 	.string "them!$"
 
 KiposTown_Zoo_South_NPC_Woman_Text_2:
-# 996 "data/maps/KiposTown_Zoo/scripts.pory"
+# 997 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "My poor son is so disappointed about\n"
 	.string "the Pokémon being stolen.$"
 
 KiposTown_Zoo_South_NPC_RichBoy_Text_0:
-# 1009 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1010 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Rich Boy$"
 
 KiposTown_Zoo_South_NPC_RichBoy_Text_1:
-# 1010 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1011 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "I hear that Zoos and Pokémon\n"
 	.string "conservation programs are always a bit\l"
 	.string "short on money. Maybe I could donate a\l"
 	.string "few bucks!$"
 
 KiposTown_Zoo_South_NPC_Youngster_Text_0:
-# 1020 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1021 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Youngster$"
 
 KiposTown_Zoo_South_NPC_Youngster_Text_1:
-# 1021 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1022 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "We're learning about different Pokémon\n"
 	.string "species in school. Some are always safe\l"
 	.string "to be around, but others can be real\l"
 	.string "scary!$"
 
 KiposTown_Zoo_South_NPC_Worker_Text_0:
-# 1031 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1032 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Worker$"
 
 KiposTown_Zoo_South_NPC_Worker_Text_1:
-# 1034 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1035 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "After a wild shift at the factory,\n"
 	.string "there's nothing better than coming\l"
 	.string "here and running around with Pokémon.\l"
 	.string "It makes me feel like a kid again!$"
 
 KiposTown_Zoo_South_NPC_Worker_Text_2:
-# 1039 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1040 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Before all the Pokémon were taken, I\n"
 	.string "used to come here to run around with\l"
 	.string "the Pokémon. Now I just do it by\l"
 	.string "myself... I must look so goofy!$"
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_0:
-# 1050 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1051 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Old Woman$"
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_1:
-# 1056 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1057 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Oh, it makes me so happy to see all the\n"
 	.string "Pokémon back in this area!\l"
 	.string "Kind-hearted people like you make the\l"
 	.string "world a better place.$"
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_2:
-# 1066 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1067 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "It's been so sad in the Zoo since Team\n"
 	.string "Chimera came and stole almost all the\l"
 	.string "Pokémon...\p"
@@ -2465,12 +2467,12 @@ KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_2:
 	.string "with the little Pokémon!$"
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_3:
-# 1074 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1075 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Chaire, little one... how has donating\n"
 	.string "Pokémon been going?$"
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_4:
-# 1084 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1085 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Ohoho, I knew you could do it! These old\n"
 	.string "eyes can barely see, but I can feel all\l"
 	.string "the Pokémon around me.\p"
@@ -2479,18 +2481,18 @@ KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_4:
 	.string "it on.$"
 
 KiposTown_Zoo_South_NPC_OldWomanInHandsOn_Text_5:
-# 1096 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1097 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "It's okay, I know this whole Zoo project\n"
 	.string "is a massive task for a single person.\l"
 	.string "But if anyone can do it, I'm sure it's\l"
 	.string "you, honey!$"
 
 KiposTown_Zoo_South_NPC_Maniac_Text_0:
-# 1108 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1109 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Bug Maniac$"
 
 KiposTown_Zoo_South_NPC_Maniac_Text_1:
-# 1109 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1110 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Lots of people overlook insects, but\n"
 	.string "they're actually way more diverse than\l"
 	.string "most other groups of wildlife! Just\l"
@@ -2498,28 +2500,28 @@ KiposTown_Zoo_South_NPC_Maniac_Text_1:
 	.string "other bug-like Pokémon there are!$"
 
 KiposTown_Zoo_South_NPC_Fisherman_Text_0:
-# 1119 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1120 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Fisherman$"
 
 KiposTown_Zoo_South_NPC_Fisherman_Text_1:
-# 1122 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1123 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "It's nice to see Pokémon splashing\n"
 	.string "around in the Wetlands Enclosure again.\l"
 	.string "Sure, I go fishing, but I always release\l"
 	.string "them back into the water!$"
 
 KiposTown_Zoo_South_NPC_Fisherman_Text_2:
-# 1127 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1128 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "I miss seeing Pokémon in this\n"
 	.string "Enclosure... Maybe I could bring some\l"
 	.string "fish in to help repopulate it.$"
 
 KiposTown_Zoo_South_NPC_Girl_Text_0:
-# 1140 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1141 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Girl$"
 
 KiposTown_Zoo_South_NPC_Girl_Text_1:
-# 1141 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1142 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "I'm learning so much about the\n"
 	.string "environment here! Like, did you know\l"
 	.string "that wetlands can prevent flooding?\l"
@@ -2529,44 +2531,44 @@ KiposTown_Zoo_South_NPC_Girl_Text_1:
 	.string "learn!$"
 
 KiposTown_Zoo_South_NPC_CyclingTriathleteF_Text_0:
-# 1151 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1152 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Cycling Girl$"
 
 KiposTown_Zoo_South_NPC_CyclingTriathleteF_Text_1:
-# 1152 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1153 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Woah... This Zoo is so huge, I'm starting\n"
 	.string "to get lost! I think the exit is south,\l"
 	.string "but how do I get to the Mountains\l"
 	.string "exhibit?$"
 
 KiposTown_Zoo_South_NPC_FatMan_Text_0:
-# 1162 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1163 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Fat Man$"
 
 KiposTown_Zoo_South_NPC_FatMan_Text_1:
-# 1163 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1164 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "The Zoo expanded a bunch over the past\n"
 	.string "couple years. The buildings to the left\l"
 	.string "and right of the main path have special\l"
 	.string "exhibits!$"
 
 KiposTown_Zoo_South_NPC_HexManiac_Text_0:
-# 1173 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1174 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Hex Maniac$"
 
 KiposTown_Zoo_South_NPC_HexManiac_Text_1:
-# 1174 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1175 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Sometimes, Zoo employees open these\n"
 	.string "gates and drive through on carts full\l"
 	.string "of Pokémon feed. I wonder what it looks\l"
 	.string "like back there.$"
 
 KiposTown_Zoo_South_NPC_Scientist_Text_0:
-# 1184 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1185 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "Scientist$"
 
 KiposTown_Zoo_South_NPC_Scientist_Text_1:
-# 1188 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1189 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "That {STR_VAR_1} seems to be doing\n"
 	.string "a great job taking care of the Pokémon\l"
 	.string "Eggs! Despite being from different\l"
@@ -2575,7 +2577,7 @@ KiposTown_Zoo_South_NPC_Scientist_Text_1:
 	.string "fascinating!$"
 
 KiposTown_Zoo_South_NPC_Scientist_Text_2:
-# 1193 "data/maps/KiposTown_Zoo/scripts.pory"
+# 1194 "data/maps/KiposTown_Zoo/scripts.pory"
 	.string "I hope those Pokémon Eggs are doing\n"
 	.string "alright in there. Researchers from the\l"
 	.string "Conservation Center have routinely\l"

@@ -29,34 +29,30 @@ mapscripts KiposTown_MapScripts {
         setobjectaswildencounter(24, ENCOUNTER_LAND)
     }
 
-    // MAP_SCRIPT_ON_FRAME_TABLE [
-    //     VAR_TEMP_1, 0: KiposTown_EventScript_CheckEventStatus
-    // ]
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: KiposTown_EventScript_CheckEventStatus
+    ]
 }
 
-// NOTE: NOW UNNECESSARY due to warpcontinuescript in Sofos!
-// script KiposTown_EventScript_CheckEventStatus
-// {
-//     setvar(VAR_TEMP_1, 1)
+script KiposTown_EventScript_CheckEventStatus
+{
+    setvar(VAR_TEMP_1, 1)
 
-//     if(!flag(FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT)) // gotta do event!
-//     {
-//         goto(KiposTown_EventScript_LeadPlayerToConservationCenter)
-//     }
+    if(!flag(FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT)) // gotta do event!
+    {
+        goto(KiposTown_EventScript_LeadPlayerToConservationCenter)
+    }
 
-//     releaseall
-//     end
-// }
+    releaseall
+    end
+}
 
 script KiposTown_EventScript_LeadPlayerToConservationCenter
 {
     lockall
-
-    delay(20)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     waitmovement(0)
-    fadescreenswapbuffers(FADE_FROM_BLACK)
-    delay(10)
+    delay(30)
     
     applymovement(3, KiposTown_Movement_RusselApproachPlayer)
     waitmovement(0)

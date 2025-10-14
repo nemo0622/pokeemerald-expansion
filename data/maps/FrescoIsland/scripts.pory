@@ -556,6 +556,7 @@ script FrescoIsles_EventScript_TwinMusesAtTheatreEvent
     closemessage
 
     delay(20)
+    ballfollowingmon
     emote(42, EMOTE_EXCLAM)
     applymovement(42, FrescoIsles_Movement_PerformerApproach)
     waitmovement(0)

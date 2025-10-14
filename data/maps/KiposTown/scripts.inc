@@ -1,6 +1,8 @@
 KiposTown_MapScripts::
 # 2 "data/maps/KiposTown/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, KiposTown_MapScripts_MAP_SCRIPT_ON_TRANSITION
+# 32 "data/maps/KiposTown/scripts.pory"
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, KiposTown_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 KiposTown_MapScripts_MAP_SCRIPT_ON_TRANSITION:
@@ -54,687 +56,704 @@ KiposTown_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
 	setweather WEATHER_ABNORMAL
 	goto KiposTown_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
 
+KiposTown_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+# 33 "data/maps/KiposTown/scripts.pory"
+	map_script_2 VAR_TEMP_1, 0, KiposTown_EventScript_CheckEventStatus
+	.2byte 0
+
+
+KiposTown_EventScript_CheckEventStatus::
+# 39 "data/maps/KiposTown/scripts.pory"
+	setvar VAR_TEMP_1, 1
+# 41 "data/maps/KiposTown/scripts.pory"
+	goto_if_unset FLAG_DID_PIRAEUS_SAIL_TO_KIPOS_TOWN_EVENT, KiposTown_EventScript_CheckEventStatus_2
+KiposTown_EventScript_CheckEventStatus_1:
+# 46 "data/maps/KiposTown/scripts.pory"
+	releaseall
+	end
+
+KiposTown_EventScript_CheckEventStatus_2:
+# 43 "data/maps/KiposTown/scripts.pory"
+	goto KiposTown_EventScript_LeadPlayerToConservationCenter
+	goto KiposTown_EventScript_CheckEventStatus_1
+
 
 KiposTown_EventScript_LeadPlayerToConservationCenter::
-# 53 "data/maps/KiposTown/scripts.pory"
+# 52 "data/maps/KiposTown/scripts.pory"
 	lockall
-# 55 "data/maps/KiposTown/scripts.pory"
-	delay 20
-# 56 "data/maps/KiposTown/scripts.pory"
+# 53 "data/maps/KiposTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 54 "data/maps/KiposTown/scripts.pory"
+	waitmovement 0
+# 55 "data/maps/KiposTown/scripts.pory"
+	delay 30
 # 57 "data/maps/KiposTown/scripts.pory"
-	waitmovement 0
-# 58 "data/maps/KiposTown/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
-# 59 "data/maps/KiposTown/scripts.pory"
-	delay 10
-# 61 "data/maps/KiposTown/scripts.pory"
 	applymovement 3, KiposTown_Movement_RusselApproachPlayer
-# 62 "data/maps/KiposTown/scripts.pory"
+# 58 "data/maps/KiposTown/scripts.pory"
 	waitmovement 0
-# 64 "data/maps/KiposTown/scripts.pory"
+# 60 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_LeadPlayerToConservationCenter_Text_0
-# 65 "data/maps/KiposTown/scripts.pory"
+# 61 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_LeadPlayerToConservationCenter_Text_1
-# 66 "data/maps/KiposTown/scripts.pory"
+# 62 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 68 "data/maps/KiposTown/scripts.pory"
+# 64 "data/maps/KiposTown/scripts.pory"
 	applymovement 3, KiposTown_Movement_RusselWalksToConservationCenter_1
-# 69 "data/maps/KiposTown/scripts.pory"
+# 65 "data/maps/KiposTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, KiposTown_Movement_PlayerFollowsToConservationCenter_1
+# 66 "data/maps/KiposTown/scripts.pory"
+	waitmovement 0
+# 67 "data/maps/KiposTown/scripts.pory"
+	delay 10
+# 69 "data/maps/KiposTown/scripts.pory"
+	speakername KiposTown_EventScript_LeadPlayerToConservationCenter_Text_0
 # 70 "data/maps/KiposTown/scripts.pory"
-	waitmovement 0
-# 71 "data/maps/KiposTown/scripts.pory"
-	delay 10
-# 73 "data/maps/KiposTown/scripts.pory"
-	speakername KiposTown_EventScript_LeadPlayerToConservationCenter_Text_0
-# 74 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_LeadPlayerToConservationCenter_Text_2
-# 75 "data/maps/KiposTown/scripts.pory"
+# 71 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 77 "data/maps/KiposTown/scripts.pory"
+# 73 "data/maps/KiposTown/scripts.pory"
 	applymovement 3, KiposTown_Movement_RusselWalksToConservationCenter_2
-# 78 "data/maps/KiposTown/scripts.pory"
+# 74 "data/maps/KiposTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, KiposTown_Movement_PlayerFollowsToConservationCenter_2
-# 79 "data/maps/KiposTown/scripts.pory"
+# 75 "data/maps/KiposTown/scripts.pory"
 	waitmovement 0
-# 80 "data/maps/KiposTown/scripts.pory"
+# 76 "data/maps/KiposTown/scripts.pory"
 	delay 10
-# 82 "data/maps/KiposTown/scripts.pory"
+# 78 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_LeadPlayerToConservationCenter_Text_0
-# 83 "data/maps/KiposTown/scripts.pory"
+# 79 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_LeadPlayerToConservationCenter_Text_3
-# 84 "data/maps/KiposTown/scripts.pory"
+# 80 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 86 "data/maps/KiposTown/scripts.pory"
+# 82 "data/maps/KiposTown/scripts.pory"
 	applymovement 3, Common_Movement_WalkUp
-# 87 "data/maps/KiposTown/scripts.pory"
+# 83 "data/maps/KiposTown/scripts.pory"
 	waitmovement 0
-# 88 "data/maps/KiposTown/scripts.pory"
+# 84 "data/maps/KiposTown/scripts.pory"
 	hideobjectat 3, MAP_KIPOS_TOWN
-# 89 "data/maps/KiposTown/scripts.pory"
+# 85 "data/maps/KiposTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
-# 90 "data/maps/KiposTown/scripts.pory"
+# 86 "data/maps/KiposTown/scripts.pory"
 	waitmovement 0
-# 91 "data/maps/KiposTown/scripts.pory"
+# 87 "data/maps/KiposTown/scripts.pory"
 	warpsilent MAP_KIPOS_TOWN_CONSERVATION_CENTER, 9, 11
-# 93 "data/maps/KiposTown/scripts.pory"
+# 89 "data/maps/KiposTown/scripts.pory"
 	waitstate
-# 94 "data/maps/KiposTown/scripts.pory"
+# 90 "data/maps/KiposTown/scripts.pory"
 	releaseall
 	end
 
 
-# 98 "data/maps/KiposTown/scripts.pory"
+# 94 "data/maps/KiposTown/scripts.pory"
 KiposTown_Movement_RusselApproachPlayer:
-# 100 "data/maps/KiposTown/scripts.pory"
+# 96 "data/maps/KiposTown/scripts.pory"
 	emote_exclamation_mark
-# 101 "data/maps/KiposTown/scripts.pory"
+# 97 "data/maps/KiposTown/scripts.pory"
 	delay_16
-# 102 "data/maps/KiposTown/scripts.pory"
+# 98 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 102 "data/maps/KiposTown/scripts.pory"
+# 98 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 102 "data/maps/KiposTown/scripts.pory"
+# 98 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 102 "data/maps/KiposTown/scripts.pory"
+# 98 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 103 "data/maps/KiposTown/scripts.pory"
+# 99 "data/maps/KiposTown/scripts.pory"
 	face_down
-# 104 "data/maps/KiposTown/scripts.pory"
+# 100 "data/maps/KiposTown/scripts.pory"
 	step_end
 
-# 106 "data/maps/KiposTown/scripts.pory"
+# 102 "data/maps/KiposTown/scripts.pory"
 KiposTown_Movement_RusselWalksToConservationCenter_1:
-# 108 "data/maps/KiposTown/scripts.pory"
+# 104 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 108 "data/maps/KiposTown/scripts.pory"
+# 104 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 108 "data/maps/KiposTown/scripts.pory"
+# 104 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 108 "data/maps/KiposTown/scripts.pory"
+# 104 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 108 "data/maps/KiposTown/scripts.pory"
+# 104 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 109 "data/maps/KiposTown/scripts.pory"
+# 105 "data/maps/KiposTown/scripts.pory"
 	walk_up
-# 109 "data/maps/KiposTown/scripts.pory"
+# 105 "data/maps/KiposTown/scripts.pory"
 	walk_up
-# 110 "data/maps/KiposTown/scripts.pory"
+# 106 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 110 "data/maps/KiposTown/scripts.pory"
+# 106 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 110 "data/maps/KiposTown/scripts.pory"
+# 106 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 110 "data/maps/KiposTown/scripts.pory"
+# 106 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 110 "data/maps/KiposTown/scripts.pory"
+# 106 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 110 "data/maps/KiposTown/scripts.pory"
+# 106 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 110 "data/maps/KiposTown/scripts.pory"
+# 106 "data/maps/KiposTown/scripts.pory"
 	walk_left
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 111 "data/maps/KiposTown/scripts.pory"
+# 107 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 112 "data/maps/KiposTown/scripts.pory"
+# 108 "data/maps/KiposTown/scripts.pory"
 	face_up
-# 113 "data/maps/KiposTown/scripts.pory"
+# 109 "data/maps/KiposTown/scripts.pory"
 	step_end
 
-# 115 "data/maps/KiposTown/scripts.pory"
+# 111 "data/maps/KiposTown/scripts.pory"
 KiposTown_Movement_PlayerFollowsToConservationCenter_1:
+# 113 "data/maps/KiposTown/scripts.pory"
+	walk_up
+# 114 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 114 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 114 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 114 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 114 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 115 "data/maps/KiposTown/scripts.pory"
+	walk_up
+# 115 "data/maps/KiposTown/scripts.pory"
+	walk_up
+# 116 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 116 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 116 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 116 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 116 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 116 "data/maps/KiposTown/scripts.pory"
+	walk_left
+# 116 "data/maps/KiposTown/scripts.pory"
+	walk_left
 # 117 "data/maps/KiposTown/scripts.pory"
-	walk_up
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
+# 117 "data/maps/KiposTown/scripts.pory"
+	walk_down
 # 118 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 118 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 118 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 118 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 118 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 119 "data/maps/KiposTown/scripts.pory"
-	walk_up
-# 119 "data/maps/KiposTown/scripts.pory"
-	walk_up
-# 120 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 120 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 120 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 120 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 120 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 120 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 120 "data/maps/KiposTown/scripts.pory"
-	walk_left
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 121 "data/maps/KiposTown/scripts.pory"
-	walk_down
-# 122 "data/maps/KiposTown/scripts.pory"
 	face_down
-# 123 "data/maps/KiposTown/scripts.pory"
+# 119 "data/maps/KiposTown/scripts.pory"
 	step_end
 
-# 125 "data/maps/KiposTown/scripts.pory"
+# 121 "data/maps/KiposTown/scripts.pory"
 KiposTown_Movement_RusselWalksToConservationCenter_2:
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 127 "data/maps/KiposTown/scripts.pory"
+# 123 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 128 "data/maps/KiposTown/scripts.pory"
+# 124 "data/maps/KiposTown/scripts.pory"
 	walk_up
-# 128 "data/maps/KiposTown/scripts.pory"
+# 124 "data/maps/KiposTown/scripts.pory"
 	walk_up
-# 128 "data/maps/KiposTown/scripts.pory"
+# 124 "data/maps/KiposTown/scripts.pory"
 	walk_up
-# 129 "data/maps/KiposTown/scripts.pory"
+# 125 "data/maps/KiposTown/scripts.pory"
 	face_down
-# 130 "data/maps/KiposTown/scripts.pory"
+# 126 "data/maps/KiposTown/scripts.pory"
 	step_end
 
-# 132 "data/maps/KiposTown/scripts.pory"
+# 128 "data/maps/KiposTown/scripts.pory"
 KiposTown_Movement_PlayerFollowsToConservationCenter_2:
-# 134 "data/maps/KiposTown/scripts.pory"
+# 130 "data/maps/KiposTown/scripts.pory"
 	walk_down
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 135 "data/maps/KiposTown/scripts.pory"
+# 131 "data/maps/KiposTown/scripts.pory"
 	walk_right
-# 136 "data/maps/KiposTown/scripts.pory"
+# 132 "data/maps/KiposTown/scripts.pory"
 	walk_up
-# 136 "data/maps/KiposTown/scripts.pory"
+# 132 "data/maps/KiposTown/scripts.pory"
 	walk_up
-# 137 "data/maps/KiposTown/scripts.pory"
+# 133 "data/maps/KiposTown/scripts.pory"
 	face_up
-# 138 "data/maps/KiposTown/scripts.pory"
+# 134 "data/maps/KiposTown/scripts.pory"
 	step_end
 
 KiposTown_EventScript_Sailor::
-# 146 "data/maps/KiposTown/scripts.pory"
+# 142 "data/maps/KiposTown/scripts.pory"
 	lock
-# 147 "data/maps/KiposTown/scripts.pory"
+# 143 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 148 "data/maps/KiposTown/scripts.pory"
+# 144 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Sailor_Text_0
-# 149 "data/maps/KiposTown/scripts.pory"
+# 145 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Sailor_Text_1
-# 150 "data/maps/KiposTown/scripts.pory"
+# 146 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 151 "data/maps/KiposTown/scripts.pory"
+# 147 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_Lass::
-# 157 "data/maps/KiposTown/scripts.pory"
+# 153 "data/maps/KiposTown/scripts.pory"
 	lock
-# 158 "data/maps/KiposTown/scripts.pory"
+# 154 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 159 "data/maps/KiposTown/scripts.pory"
+# 155 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Lass_Text_0
-# 160 "data/maps/KiposTown/scripts.pory"
+# 156 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Lass_Text_1
-# 161 "data/maps/KiposTown/scripts.pory"
+# 157 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 162 "data/maps/KiposTown/scripts.pory"
+# 158 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_ConstructionWorker::
-# 168 "data/maps/KiposTown/scripts.pory"
+# 164 "data/maps/KiposTown/scripts.pory"
 	lock
-# 169 "data/maps/KiposTown/scripts.pory"
+# 165 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 170 "data/maps/KiposTown/scripts.pory"
+# 166 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_ConstructionWorker_Text_0
-# 171 "data/maps/KiposTown/scripts.pory"
+# 167 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_ConstructionWorker_Text_1
-# 172 "data/maps/KiposTown/scripts.pory"
+# 168 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 173 "data/maps/KiposTown/scripts.pory"
+# 169 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_ShoppingLady::
-# 179 "data/maps/KiposTown/scripts.pory"
+# 175 "data/maps/KiposTown/scripts.pory"
 	lock
-# 180 "data/maps/KiposTown/scripts.pory"
+# 176 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 181 "data/maps/KiposTown/scripts.pory"
+# 177 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_ShoppingLady_Text_0
-# 182 "data/maps/KiposTown/scripts.pory"
+# 178 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_ShoppingLady_Text_1
-# 183 "data/maps/KiposTown/scripts.pory"
+# 179 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 184 "data/maps/KiposTown/scripts.pory"
+# 180 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_Swinub::
-# 190 "data/maps/KiposTown/scripts.pory"
+# 186 "data/maps/KiposTown/scripts.pory"
 	lock
-# 191 "data/maps/KiposTown/scripts.pory"
+# 187 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 192 "data/maps/KiposTown/scripts.pory"
+# 188 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Swinub_Text_0
-# 193 "data/maps/KiposTown/scripts.pory"
+# 189 "data/maps/KiposTown/scripts.pory"
 	playmoncry SPECIES_SWINUB, CRY_MODE_NORMAL
-# 194 "data/maps/KiposTown/scripts.pory"
+# 190 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Swinub_Text_1
-# 195 "data/maps/KiposTown/scripts.pory"
+# 191 "data/maps/KiposTown/scripts.pory"
 	waitmoncry
-# 196 "data/maps/KiposTown/scripts.pory"
+# 192 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 197 "data/maps/KiposTown/scripts.pory"
+# 193 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_Scientist::
-# 203 "data/maps/KiposTown/scripts.pory"
+# 199 "data/maps/KiposTown/scripts.pory"
 	lock
-# 204 "data/maps/KiposTown/scripts.pory"
+# 200 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 205 "data/maps/KiposTown/scripts.pory"
+# 201 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Scientist_Text_0
-# 208 "data/maps/KiposTown/scripts.pory"
+# 204 "data/maps/KiposTown/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_SHOW_TYRUNT_KIPOS_TOWN
-# 209 "data/maps/KiposTown/scripts.pory"
+# 205 "data/maps/KiposTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq KiposTown_EventScript_Scientist_2
-# 218 "data/maps/KiposTown/scripts.pory"
+# 214 "data/maps/KiposTown/scripts.pory"
 	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_SHOW_TYRUNT_KIPOS_TOWN
-# 219 "data/maps/KiposTown/scripts.pory"
+# 215 "data/maps/KiposTown/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq KiposTown_EventScript_Scientist_5
-# 229 "data/maps/KiposTown/scripts.pory"
+# 225 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Scientist_Text_3
-# 230 "data/maps/KiposTown/scripts.pory"
+# 226 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 232 "data/maps/KiposTown/scripts.pory"
+# 228 "data/maps/KiposTown/scripts.pory"
 	checkforspecies SPECIES_TYRUNT, OPEN_PARTY_SCREEN, KiposTown_EventScript_Scientist_ReactToTyrunt
-# 235 "data/maps/KiposTown/scripts.pory"
+# 231 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Scientist_Text_0
-# 236 "data/maps/KiposTown/scripts.pory"
+# 232 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Scientist_Text_4
-# 237 "data/maps/KiposTown/scripts.pory"
+# 233 "data/maps/KiposTown/scripts.pory"
 	closemessage
 KiposTown_EventScript_Scientist_4:
-# 239 "data/maps/KiposTown/scripts.pory"
+# 235 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 KiposTown_EventScript_Scientist_2:
-# 211 "data/maps/KiposTown/scripts.pory"
+# 207 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Scientist_Text_1
-# 212 "data/maps/KiposTown/scripts.pory"
+# 208 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 213 "data/maps/KiposTown/scripts.pory"
+# 209 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 KiposTown_EventScript_Scientist_5:
-# 221 "data/maps/KiposTown/scripts.pory"
+# 217 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Scientist_Text_2
-# 222 "data/maps/KiposTown/scripts.pory"
+# 218 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 224 "data/maps/KiposTown/scripts.pory"
+# 220 "data/maps/KiposTown/scripts.pory"
 	delay 20
-# 225 "data/maps/KiposTown/scripts.pory"
+# 221 "data/maps/KiposTown/scripts.pory"
 	startquest QUEST_SHOW_TYRUNT_KIPOS_TOWN
 	goto KiposTown_EventScript_Scientist_4
 
 
 KiposTown_EventScript_Scientist_ReactToTyrunt::
-# 244 "data/maps/KiposTown/scripts.pory"
+# 240 "data/maps/KiposTown/scripts.pory"
 	delay 20
-# 245 "data/maps/KiposTown/scripts.pory"
+# 241 "data/maps/KiposTown/scripts.pory"
 	applymovement 14, Common_Movement_Heart
-# 246 "data/maps/KiposTown/scripts.pory"
+# 242 "data/maps/KiposTown/scripts.pory"
 	waitmovement 0
-# 247 "data/maps/KiposTown/scripts.pory"
+# 243 "data/maps/KiposTown/scripts.pory"
 	delay 10
-# 248 "data/maps/KiposTown/scripts.pory"
+# 244 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Scientist_Text_0
-# 249 "data/maps/KiposTown/scripts.pory"
+# 245 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Scientist_ReactToTyrunt_Text_0
-# 250 "data/maps/KiposTown/scripts.pory"
+# 246 "data/maps/KiposTown/scripts.pory"
+	closemessage
+# 247 "data/maps/KiposTown/scripts.pory"
+	delay 5
+# 248 "data/maps/KiposTown/scripts.pory"
+	giveitem ITEM_PROTEIN
+# 249 "data/maps/KiposTown/scripts.pory"
 	closemessage
 # 251 "data/maps/KiposTown/scripts.pory"
-	delay 5
-# 252 "data/maps/KiposTown/scripts.pory"
-	giveitem ITEM_PROTEIN
-# 253 "data/maps/KiposTown/scripts.pory"
-	closemessage
-# 255 "data/maps/KiposTown/scripts.pory"
 	delay 20
-# 256 "data/maps/KiposTown/scripts.pory"
+# 252 "data/maps/KiposTown/scripts.pory"
 	completequest QUEST_SHOW_TYRUNT_KIPOS_TOWN
-# 258 "data/maps/KiposTown/scripts.pory"
+# 254 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_Girl::
-# 264 "data/maps/KiposTown/scripts.pory"
+# 260 "data/maps/KiposTown/scripts.pory"
 	lock
-# 265 "data/maps/KiposTown/scripts.pory"
+# 261 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 266 "data/maps/KiposTown/scripts.pory"
+# 262 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Girl_Text_0
-# 267 "data/maps/KiposTown/scripts.pory"
+# 263 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Girl_Text_1
-# 268 "data/maps/KiposTown/scripts.pory"
+# 264 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 269 "data/maps/KiposTown/scripts.pory"
+# 265 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_NinjaBoy::
-# 275 "data/maps/KiposTown/scripts.pory"
+# 271 "data/maps/KiposTown/scripts.pory"
 	lock
-# 276 "data/maps/KiposTown/scripts.pory"
+# 272 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 277 "data/maps/KiposTown/scripts.pory"
+# 273 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_NinjaBoy_Text_0
-# 278 "data/maps/KiposTown/scripts.pory"
+# 274 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_NinjaBoy_Text_1
-# 279 "data/maps/KiposTown/scripts.pory"
+# 275 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 280 "data/maps/KiposTown/scripts.pory"
+# 276 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_Psyduck::
-# 285 "data/maps/KiposTown/scripts.pory"
+# 281 "data/maps/KiposTown/scripts.pory"
 	lock
-# 286 "data/maps/KiposTown/scripts.pory"
+# 282 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 287 "data/maps/KiposTown/scripts.pory"
+# 283 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Psyduck_Text_0
-# 288 "data/maps/KiposTown/scripts.pory"
+# 284 "data/maps/KiposTown/scripts.pory"
 	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
-# 289 "data/maps/KiposTown/scripts.pory"
+# 285 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Psyduck_Text_1
-# 290 "data/maps/KiposTown/scripts.pory"
+# 286 "data/maps/KiposTown/scripts.pory"
 	waitmoncry
-# 291 "data/maps/KiposTown/scripts.pory"
+# 287 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 292 "data/maps/KiposTown/scripts.pory"
+# 288 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_Hiker::
-# 298 "data/maps/KiposTown/scripts.pory"
+# 294 "data/maps/KiposTown/scripts.pory"
 	lock
-# 299 "data/maps/KiposTown/scripts.pory"
+# 295 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 300 "data/maps/KiposTown/scripts.pory"
+# 296 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Hiker_Text_0
-# 301 "data/maps/KiposTown/scripts.pory"
+# 297 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Hiker_Text_1
-# 302 "data/maps/KiposTown/scripts.pory"
+# 298 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 303 "data/maps/KiposTown/scripts.pory"
+# 299 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_Athlete::
-# 309 "data/maps/KiposTown/scripts.pory"
+# 305 "data/maps/KiposTown/scripts.pory"
 	lock
-# 310 "data/maps/KiposTown/scripts.pory"
+# 306 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 311 "data/maps/KiposTown/scripts.pory"
+# 307 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Athlete_Text_0
-# 312 "data/maps/KiposTown/scripts.pory"
+# 308 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Athlete_Text_1
-# 313 "data/maps/KiposTown/scripts.pory"
+# 309 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 314 "data/maps/KiposTown/scripts.pory"
+# 310 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_OldWoman::
-# 320 "data/maps/KiposTown/scripts.pory"
+# 316 "data/maps/KiposTown/scripts.pory"
 	lock
-# 321 "data/maps/KiposTown/scripts.pory"
+# 317 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 322 "data/maps/KiposTown/scripts.pory"
+# 318 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_OldWoman_Text_0
-# 323 "data/maps/KiposTown/scripts.pory"
+# 319 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_OldWoman_Text_1
-# 324 "data/maps/KiposTown/scripts.pory"
+# 320 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 325 "data/maps/KiposTown/scripts.pory"
+# 321 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_Stantler::
-# 330 "data/maps/KiposTown/scripts.pory"
+# 326 "data/maps/KiposTown/scripts.pory"
 	lock
-# 331 "data/maps/KiposTown/scripts.pory"
+# 327 "data/maps/KiposTown/scripts.pory"
 	faceplayer
-# 332 "data/maps/KiposTown/scripts.pory"
+# 328 "data/maps/KiposTown/scripts.pory"
 	speakername KiposTown_EventScript_Stantler_Text_0
-# 333 "data/maps/KiposTown/scripts.pory"
+# 329 "data/maps/KiposTown/scripts.pory"
 	playmoncry SPECIES_STANTLER, CRY_MODE_NORMAL
-# 334 "data/maps/KiposTown/scripts.pory"
+# 330 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_Stantler_Text_1
-# 335 "data/maps/KiposTown/scripts.pory"
+# 331 "data/maps/KiposTown/scripts.pory"
 	waitmoncry
-# 336 "data/maps/KiposTown/scripts.pory"
+# 332 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 337 "data/maps/KiposTown/scripts.pory"
+# 333 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_TyrantrumSign::
-# 343 "data/maps/KiposTown/scripts.pory"
+# 339 "data/maps/KiposTown/scripts.pory"
 	lock
-# 344 "data/maps/KiposTown/scripts.pory"
+# 340 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_TyrantrumSign_Text_0
-# 345 "data/maps/KiposTown/scripts.pory"
+# 341 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 346 "data/maps/KiposTown/scripts.pory"
+# 342 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_DirectionSign::
-# 352 "data/maps/KiposTown/scripts.pory"
+# 348 "data/maps/KiposTown/scripts.pory"
 	lock
-# 353 "data/maps/KiposTown/scripts.pory"
+# 349 "data/maps/KiposTown/scripts.pory"
 	msgbox KiposTown_EventScript_DirectionSign_Text_0
-# 354 "data/maps/KiposTown/scripts.pory"
+# 350 "data/maps/KiposTown/scripts.pory"
 	closemessage
-# 355 "data/maps/KiposTown/scripts.pory"
+# 351 "data/maps/KiposTown/scripts.pory"
 	release
 	end
 
 
 KiposTown_EventScript_LeadPlayerToConservationCenter_Text_0:
-# 64 "data/maps/KiposTown/scripts.pory"
+# 60 "data/maps/KiposTown/scripts.pory"
 	.string "Mr. Russel$"
 
 KiposTown_EventScript_LeadPlayerToConservationCenter_Text_1:
-# 65 "data/maps/KiposTown/scripts.pory"
+# 61 "data/maps/KiposTown/scripts.pory"
 	.string "Ah, looks like Piraeus came through. You\n"
 	.string "must be the Acrisia University\l"
 	.string "researcher he knows! {PLAYER}, right?\p"
@@ -752,7 +771,7 @@ KiposTown_EventScript_LeadPlayerToConservationCenter_Text_1:
 	.string "result.$"
 
 KiposTown_EventScript_LeadPlayerToConservationCenter_Text_2:
-# 74 "data/maps/KiposTown/scripts.pory"
+# 70 "data/maps/KiposTown/scripts.pory"
 	.string "You've never visited this part of the\n"
 	.string "Ilios Region before, have you? This is\l"
 	.string "{COLOR GREEN}Kipos Town{COLOR DARK_GRAY}. It's a quiet town outside\l"
@@ -764,7 +783,7 @@ KiposTown_EventScript_LeadPlayerToConservationCenter_Text_2:
 	.string "Follow along now, we aren't far.$"
 
 KiposTown_EventScript_LeadPlayerToConservationCenter_Text_3:
-# 83 "data/maps/KiposTown/scripts.pory"
+# 79 "data/maps/KiposTown/scripts.pory"
 	.string "Here's our main building. Team Chimera\n"
 	.string "didn't do much physical damage,\l"
 	.string "managing to slip in over the border\l"
@@ -774,11 +793,11 @@ KiposTown_EventScript_LeadPlayerToConservationCenter_Text_3:
 	.string "Come, let's go inside.$"
 
 KiposTown_EventScript_Sailor_Text_0:
-# 148 "data/maps/KiposTown/scripts.pory"
+# 144 "data/maps/KiposTown/scripts.pory"
 	.string "Sailor$"
 
 KiposTown_EventScript_Sailor_Text_1:
-# 149 "data/maps/KiposTown/scripts.pory"
+# 145 "data/maps/KiposTown/scripts.pory"
 	.string "Kipos Town has a naturally shallow\n"
 	.string "harbor area. It's also surrounded by\l"
 	.string "land on both sides, so not many ships\l"
@@ -786,21 +805,21 @@ KiposTown_EventScript_Sailor_Text_1:
 	.string "sight!$"
 
 KiposTown_EventScript_Lass_Text_0:
-# 159 "data/maps/KiposTown/scripts.pory"
+# 155 "data/maps/KiposTown/scripts.pory"
 	.string "Lass$"
 
 KiposTown_EventScript_Lass_Text_1:
-# 160 "data/maps/KiposTown/scripts.pory"
+# 156 "data/maps/KiposTown/scripts.pory"
 	.string "My brother told me there's, like, 400\n"
 	.string "types of Pokémon in the Ilios Region!\l"
 	.string "That's way too many to remember!$"
 
 KiposTown_EventScript_ConstructionWorker_Text_0:
-# 170 "data/maps/KiposTown/scripts.pory"
+# 166 "data/maps/KiposTown/scripts.pory"
 	.string "Worker$"
 
 KiposTown_EventScript_ConstructionWorker_Text_1:
-# 171 "data/maps/KiposTown/scripts.pory"
+# 167 "data/maps/KiposTown/scripts.pory"
 	.string "A bunch of businesses around town\n"
 	.string "struggled after Team Chimera stole the\l"
 	.string "Pokémon from the Conservation Center.\l"
@@ -810,30 +829,30 @@ KiposTown_EventScript_ConstructionWorker_Text_1:
 	.string "Center Zoo back!$"
 
 KiposTown_EventScript_ShoppingLady_Text_0:
-# 181 "data/maps/KiposTown/scripts.pory"
+# 177 "data/maps/KiposTown/scripts.pory"
 	.string "Woman$"
 
 KiposTown_EventScript_ShoppingLady_Text_1:
-# 182 "data/maps/KiposTown/scripts.pory"
+# 178 "data/maps/KiposTown/scripts.pory"
 	.string "Lots of fresh fruits and vegetables\n"
 	.string "can be grown in the hills and valleys\l"
 	.string "around here! There's nothing better\l"
 	.string "than farmer's market food.$"
 
 KiposTown_EventScript_Swinub_Text_0:
-# 192 "data/maps/KiposTown/scripts.pory"
+# 188 "data/maps/KiposTown/scripts.pory"
 	.string "Swinub$"
 
 KiposTown_EventScript_Swinub_Text_1:
-# 194 "data/maps/KiposTown/scripts.pory"
+# 190 "data/maps/KiposTown/scripts.pory"
 	.string "Wee-snaw!$"
 
 KiposTown_EventScript_Scientist_Text_0:
-# 205 "data/maps/KiposTown/scripts.pory"
+# 201 "data/maps/KiposTown/scripts.pory"
 	.string "Scientist$"
 
 KiposTown_EventScript_Scientist_Text_1:
-# 211 "data/maps/KiposTown/scripts.pory"
+# 207 "data/maps/KiposTown/scripts.pory"
 	.string "Thank you for showing me a Tyrunt, mon\n"
 	.string "amie. There are fossils of the species\l"
 	.string "in Kalos, but seeing it living and\l"
@@ -841,7 +860,7 @@ KiposTown_EventScript_Scientist_Text_1:
 	.string "my perspective.$"
 
 KiposTown_EventScript_Scientist_Text_2:
-# 221 "data/maps/KiposTown/scripts.pory"
+# 217 "data/maps/KiposTown/scripts.pory"
 	.string "I came all the way from Kalos to see\n"
 	.string "this... and wow, it was totally worth it!\p"
 	.string "People have reported finding {COLOR GREEN}Tyrunt,\n"
@@ -853,60 +872,60 @@ KiposTown_EventScript_Scientist_Text_2:
 	.string "me{COLOR DARK_GRAY}!$"
 
 KiposTown_EventScript_Scientist_Text_3:
-# 229 "data/maps/KiposTown/scripts.pory"
+# 225 "data/maps/KiposTown/scripts.pory"
 	.string "Bonjour, my friend of Ilios! Have you\n"
 	.string "brought me a {COLOR GREEN}Tyrunt{COLOR DARK_GRAY} to make my trip\l"
 	.string "from Kalos complete?$"
 
 KiposTown_EventScript_Scientist_Text_4:
-# 236 "data/maps/KiposTown/scripts.pory"
+# 232 "data/maps/KiposTown/scripts.pory"
 	.string "No Tyrunt, eh? Don't keep me waiting\n"
 	.string "much longer, my friend. Vacations only\l"
 	.string "last so long, and I'd love to {COLOR GREEN}see a\l"
 	.string "Tyrunt{COLOR DARK_GRAY} before I return to Kalos!$"
 
 KiposTown_EventScript_Scientist_ReactToTyrunt_Text_0:
-# 249 "data/maps/KiposTown/scripts.pory"
+# 245 "data/maps/KiposTown/scripts.pory"
 	.string "Bravo! It's the perfect mix of cute and\n"
 	.string "cool, just as I'd hoped.\p"
 	.string "Thank you, mon amie. Take this as a\n"
 	.string "token of appreciation.$"
 
 KiposTown_EventScript_Girl_Text_0:
-# 266 "data/maps/KiposTown/scripts.pory"
+# 262 "data/maps/KiposTown/scripts.pory"
 	.string "Girl$"
 
 KiposTown_EventScript_Girl_Text_1:
-# 267 "data/maps/KiposTown/scripts.pory"
+# 263 "data/maps/KiposTown/scripts.pory"
 	.string "Most people who live here grow up\n"
 	.string "raising Pokémon. I was given a Shellder\l"
 	.string "when I was a kid, and now it's a\l"
 	.string "super-strong Cloyster!$"
 
 KiposTown_EventScript_NinjaBoy_Text_0:
-# 277 "data/maps/KiposTown/scripts.pory"
+# 273 "data/maps/KiposTown/scripts.pory"
 	.string "Boy$"
 
 KiposTown_EventScript_NinjaBoy_Text_1:
-# 278 "data/maps/KiposTown/scripts.pory"
+# 274 "data/maps/KiposTown/scripts.pory"
 	.string "My dad caught this Psyduck in a Repeat\n"
 	.string "Ball! He already had one, so he gave it\l"
 	.string "to me. Now we're best friends!$"
 
 KiposTown_EventScript_Psyduck_Text_0:
-# 287 "data/maps/KiposTown/scripts.pory"
+# 283 "data/maps/KiposTown/scripts.pory"
 	.string "Psyduck$"
 
 KiposTown_EventScript_Psyduck_Text_1:
-# 289 "data/maps/KiposTown/scripts.pory"
+# 285 "data/maps/KiposTown/scripts.pory"
 	.string "Wak qwak.$"
 
 KiposTown_EventScript_Hiker_Text_0:
-# 300 "data/maps/KiposTown/scripts.pory"
+# 296 "data/maps/KiposTown/scripts.pory"
 	.string "Hiker$"
 
 KiposTown_EventScript_Hiker_Text_1:
-# 301 "data/maps/KiposTown/scripts.pory"
+# 297 "data/maps/KiposTown/scripts.pory"
 	.string "People come a long way to visit the\n"
 	.string "Conservation Center. They take in sick\l"
 	.string "or abandoned Pokémon, and they run\l"
@@ -914,22 +933,22 @@ KiposTown_EventScript_Hiker_Text_1:
 	.string "species.$"
 
 KiposTown_EventScript_Athlete_Text_0:
-# 311 "data/maps/KiposTown/scripts.pory"
+# 307 "data/maps/KiposTown/scripts.pory"
 	.string "Athlete$"
 
 KiposTown_EventScript_Athlete_Text_1:
-# 312 "data/maps/KiposTown/scripts.pory"
+# 308 "data/maps/KiposTown/scripts.pory"
 	.string "I have to do more cardio training! The\n"
 	.string "next time Team Chimera steps foot into\l"
 	.string "Kipos Town, I'll be here to chase them\l"
 	.string "off!$"
 
 KiposTown_EventScript_OldWoman_Text_0:
-# 322 "data/maps/KiposTown/scripts.pory"
+# 318 "data/maps/KiposTown/scripts.pory"
 	.string "Old Woman$"
 
 KiposTown_EventScript_OldWoman_Text_1:
-# 323 "data/maps/KiposTown/scripts.pory"
+# 319 "data/maps/KiposTown/scripts.pory"
 	.string "I found someone's Stantler left\n"
 	.string "abandoned with it's Poké ball. I took it\l"
 	.string "to the Conservation Center, and they\l"
@@ -937,15 +956,15 @@ KiposTown_EventScript_OldWoman_Text_1:
 	.string "closest companion!$"
 
 KiposTown_EventScript_Stantler_Text_0:
-# 332 "data/maps/KiposTown/scripts.pory"
+# 328 "data/maps/KiposTown/scripts.pory"
 	.string "Stantler$"
 
 KiposTown_EventScript_Stantler_Text_1:
-# 334 "data/maps/KiposTown/scripts.pory"
+# 330 "data/maps/KiposTown/scripts.pory"
 	.string "Hruff...$"
 
 KiposTown_EventScript_TyrantrumSign_Text_0:
-# 344 "data/maps/KiposTown/scripts.pory"
+# 340 "data/maps/KiposTown/scripts.pory"
 	.string "Tyrantrum Complete Fossil Skeleton\n"
 	.string "Estimated Age: 72 Million Years Ago\p"
 	.string "Tyrantrum lived during the Late\n"
@@ -957,7 +976,7 @@ KiposTown_EventScript_TyrantrumSign_Text_0:
 	.string "Kalos.$"
 
 KiposTown_EventScript_DirectionSign_Text_0:
-# 353 "data/maps/KiposTown/scripts.pory"
+# 349 "data/maps/KiposTown/scripts.pory"
 	.string "Kipos Town\n"
 	.string "For Nature, For People, Forever\p"
 	.string "{UP_ARROW} Pythios Town\n"

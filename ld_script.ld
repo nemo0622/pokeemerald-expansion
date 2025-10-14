@@ -1018,7 +1018,7 @@ SECTIONS {
         sound/songs/midi/mus_c_comm_center.o(.rodata);
         sound/songs/midi/mus_gsc_pewter.o(.rodata);
         sound/songs/midi/mus_c_vs_legend_beast.o(.rodata);
-        sound/songs/midi/mus_route101.o(.rodata);
+        sound/songs/midi/mus_route_01.o(.rodata);
         sound/songs/midi/mus_route110.o(.rodata);
         sound/songs/midi/mus_route120.o(.rodata);
         sound/songs/midi/mus_petalburg.o(.rodata);

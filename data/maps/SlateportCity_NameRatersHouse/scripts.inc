@@ -71,7 +71,7 @@ SlateportCity_NameRatersHouse_EventScript_NewNameDifferent::
 	end
 
 PythiosTown_NameRater_Name:
-	.string "Name Rater"
+	.string "Name Rater$"
 
 SlateportCity_NameRatersHouse_Text_PleasedToRateMonNickname:
 	.string "Hi, hi! I'm the Name Rater!\n"

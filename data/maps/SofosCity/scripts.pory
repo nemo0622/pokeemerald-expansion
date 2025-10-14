@@ -720,11 +720,13 @@ script SofosCity_EventScript_TryPiraeusKiposTownEvent
         waitmovement(0)
         delay(10)
 
+        setflag(FLAG_HIDE_MAP_NAME_POPUP)
+
         speakername("Piraeus")
         msgbox(format("My crew and I just got a letter from a Murkrow. The people of {COLOR GREEN}Kipos Town{COLOR DARK_GRAY} are looking for a strong Trainer who's {COLOR GREEN}knowledgeable about Pokémon{COLOR DARK_GRAY}, and as an Acrisia University researcher, who could be better but you?\p Hm? Oh, you've never been to Kipos Town, have you? It's {COLOR GREEN}only accessible by boat{COLOR DARK_GRAY}, so I'll add it to the list of locations we can sail to. Now, time for a detour - let's go!"))
         closemessage
         delay(20)
-        warpcontinuescript(MAP_KIPOS_TOWN, 18, 22, KiposTown_EventScript_LeadPlayerToConservationCenter) // warp to Kipos Town docks, where the event will continue
+        warp(MAP_KIPOS_TOWN, 18, 22) // warp to Kipos Town docks, where the event will continue
         // ON WARP TO KIPOS TOWN: townsfolk crowded around docks. Player led to Sunset Wildlife Reserve, where all the
         // Pokémon have been STOLEN by Team Chimera! They're long gone, and now the Wildlife Reserve lays empty.
         // Player is asked to find Pokémon to donate to the Wildlife Reserve, bringing tourism back to the town
