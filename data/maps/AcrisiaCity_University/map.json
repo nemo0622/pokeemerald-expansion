@@ -2,7 +2,7 @@
   "id": "MAP_ACRISIA_CITY_UNIVERSITY",
   "name": "AcrisiaCity_University",
   "layout": "LAYOUT_ACRISIA_CITY_UNIVERSITY",
-  "music": "MUS_BIRCH_LAB",
+  "music": "MUS_ELIA_LAB",
   "region_map_section": "MAPSEC_ACRISIA_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

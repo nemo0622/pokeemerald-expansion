@@ -1019,13 +1019,13 @@ SECTIONS {
         sound/songs/midi/mus_gsc_pewter.o(.rodata);
         sound/songs/midi/mus_c_vs_legend_beast.o(.rodata);
         sound/songs/midi/mus_route_01.o(.rodata);
-        sound/songs/midi/mus_route110.o(.rodata);
-        sound/songs/midi/mus_route120.o(.rodata);
+        sound/songs/midi/mus_route_02.o(.rodata);
+        sound/songs/midi/mus_route_03.o(.rodata);
         sound/songs/midi/mus_petalburg.o(.rodata);
         sound/songs/midi/mus_oldale.o(.rodata);
         sound/songs/midi/mus_gym.o(.rodata);
         sound/songs/midi/mus_surf.o(.rodata);
-        sound/songs/midi/mus_petalburg_woods.o(.rodata);
+        sound/songs/midi/mus_cave.o(.rodata);
         sound/songs/midi/mus_level_up.o(.rodata);
         sound/songs/midi/mus_heal.o(.rodata);
         sound/songs/midi/mus_obtain_badge.o(.rodata);
@@ -1033,7 +1033,7 @@ SECTIONS {
         sound/songs/midi/mus_evolved.o(.rodata);
         sound/songs/midi/mus_obtain_tmhm.o(.rodata);
         sound/songs/midi/mus_lilycove_museum.o(.rodata);
-        sound/songs/midi/mus_route122.o(.rodata);
+        sound/songs/midi/mus_route_04.o(.rodata);
         sound/songs/midi/mus_oceanic_museum.o(.rodata);
         sound/songs/midi/mus_evolution_intro.o(.rodata);
         sound/songs/midi/mus_evolution.o(.rodata);
@@ -1042,7 +1042,7 @@ SECTIONS {
         sound/songs/midi/mus_encounter_male.o(.rodata);
         sound/songs/midi/mus_abandoned_ship.o(.rodata);
         sound/songs/midi/mus_fortree.o(.rodata);
-        sound/songs/midi/mus_birch_lab.o(.rodata);
+        sound/songs/midi/mus_elia_lab.o(.rodata);
         sound/songs/midi/mus_b_tower_rs.o(.rodata);
         sound/songs/midi/mus_encounter_swimmer.o(.rodata);
         sound/songs/midi/mus_cave_of_origin.o(.rodata);
@@ -1060,7 +1060,7 @@ SECTIONS {
         sound/songs/midi/mus_verdanturf.o(.rodata);
         sound/songs/midi/mus_rustboro.o(.rodata);
         sound/songs/midi/mus_poke_center.o(.rodata);
-        sound/songs/midi/mus_route104.o(.rodata);
+        sound/songs/midi/mus_route_05.o(.rodata);
         sound/songs/midi/mus_route119.o(.rodata);
         sound/songs/midi/mus_cycling.o(.rodata);
         sound/songs/midi/mus_poke_mart.o(.rodata);
@@ -1087,7 +1087,7 @@ SECTIONS {
         sound/songs/midi/mus_cable_car.o(.rodata);
         sound/songs/midi/mus_game_corner.o(.rodata);
         sound/songs/midi/mus_dewford.o(.rodata);
-        sound/songs/midi/mus_safari_zone.o(.rodata);
+        sound/songs/midi/mus_kipos_zoo.o(.rodata);
         sound/songs/midi/mus_victory_road.o(.rodata);
         sound/songs/midi/mus_aqua_magma_hideout.o(.rodata);
         sound/songs/midi/mus_sailing.o(.rodata);
@@ -1134,7 +1134,7 @@ SECTIONS {
         sound/songs/midi/mus_vs_mew.o(.rodata);
         sound/songs/midi/mus_b_dome_lobby.o(.rodata);
         sound/songs/midi/mus_vs_wild.o(.rodata);
-        sound/songs/midi/mus_vs_aqua_magma.o(.rodata);
+        sound/songs/midi/mus_vs_chimera.o(.rodata);
         sound/songs/midi/mus_vs_trainer.o(.rodata);
         sound/songs/midi/mus_vs_gym_leader.o(.rodata);
         sound/songs/midi/mus_vs_champion.o(.rodata);
@@ -1142,7 +1142,7 @@ SECTIONS {
         sound/songs/midi/mus_vs_kyogre_groudon.o(.rodata);
         sound/songs/midi/mus_vs_rival.o(.rodata);
         sound/songs/midi/mus_vs_elite_four.o(.rodata);
-        sound/songs/midi/mus_vs_aqua_magma_leader.o(.rodata);
+        sound/songs/midi/mus_vs_chimera_leader.o(.rodata);
         sound/songs/midi/mus_rg_follow_me.o(.rodata);
         sound/songs/midi/mus_rg_game_corner.o(.rodata);
         sound/songs/midi/mus_rg_rocket_hideout.o(.rodata);

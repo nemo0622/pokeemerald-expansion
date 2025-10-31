@@ -2,7 +2,7 @@
   "id": "MAP_PORT_PELLO_HOUSE4",
   "name": "PortPello_House4",
   "layout": "LAYOUT_PORT_PELLO_HOUSE4",
-  "music": "MUS_FALLARBOR",
+  "music": "MUS_PORT_PELLO",
   "region_map_section": "MAPSEC_PORT_PELLO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

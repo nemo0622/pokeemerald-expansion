@@ -287,7 +287,8 @@ static void FindMapsWithMon(u16 species)
     // Add regular species to the area map
     for (i = 0; gWildMonHeaders[i].mapGroup != MAP_GROUP(UNDEFINED); i++)
     {
-        if (MapHasSpecies(&gWildMonHeaders[i], species))
+        u16 regionMapSectionId = GetRegionMapSectionId(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
+        if (MapHasSpecies(&gWildMonHeaders[i], species) && regionMapSectionId >= MAPSEC_ACRISIA_CITY)
         {
             switch (gWildMonHeaders[i].mapGroup)
             {

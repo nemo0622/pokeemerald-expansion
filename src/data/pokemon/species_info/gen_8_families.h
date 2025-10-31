@@ -1929,10 +1929,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 3,
         .weight = 135,
         .description = COMPOUND_STRING(
-            "This Pokémon is very popular as a\n"
-            "herding dog in the Galar region. As it\n"
-            "runs, it generates electricity from the\n"
-            "base of its tail."),
+            "Yamper is popular across multiple regions\n" // new desc
+            "as herding dogs. Children are also often\n"
+            "permitted to train them, as they are very\n"
+            "friendly."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,

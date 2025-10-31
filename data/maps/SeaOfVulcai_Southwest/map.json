@@ -2,7 +2,7 @@
   "id": "MAP_SEA_OF_VULCAI_SOUTHWEST",
   "name": "SeaOfVulcai_Southwest",
   "layout": "LAYOUT_SEA_OF_VULCAI_SOUTHWEST",
-  "music": "MUS_ROUTE119",
+  "music": "MUS_FRESCO_ISLES",
   "region_map_section": "MAPSEC_SEA_OF_VULCAI",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_WAKEWATER_ISLE",
   "name": "WakewaterIsle",
   "layout": "LAYOUT_WAKEWATER_ISLE",
-  "music": "MUS_VICTORY_ROAD",
+  "music": "MUS_COFFEE_SHOP",
   "region_map_section": "MAPSEC_WAKEWATER_ISLE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

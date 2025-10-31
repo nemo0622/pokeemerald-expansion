@@ -2,7 +2,7 @@
   "id": "MAP_ACRISIA_CITY_HOUSE4",
   "name": "AcrisiaCity_House4",
   "layout": "LAYOUT_ACRISIA_CITY_HOUSE4",
-  "music": "MUS_RUSTBORO",
+  "music": "MUS_ACRISIA_CITY",
   "region_map_section": "MAPSEC_ACRISIA_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

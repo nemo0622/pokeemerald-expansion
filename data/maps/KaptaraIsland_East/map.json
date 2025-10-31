@@ -2,7 +2,7 @@
   "id": "MAP_KAPTARA_ISLAND_EAST",
   "name": "KaptaraIsland_East",
   "layout": "LAYOUT_KAPTARA_ISLAND_EAST",
-  "music": "MUS_ROUTE104",
+  "music": "MUS_ROUTE_02",
   "region_map_section": "MAPSEC_KAPTARA_ISLAND",
   "requires_flash": false,
   "weather": "WEATHER_RAIN",

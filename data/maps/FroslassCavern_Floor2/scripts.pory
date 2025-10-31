@@ -1,6 +1,5 @@
 mapscripts FroslassCavern_Floor2_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
-        setflashlevel(4)
     }
 }
 

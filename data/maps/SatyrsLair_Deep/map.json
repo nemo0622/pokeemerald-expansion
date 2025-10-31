@@ -2,7 +2,7 @@
   "id": "MAP_SATYRS_LAIR_DEEP",
   "name": "SatyrsLair_Deep",
   "layout": "LAYOUT_SATYRS_LAIR_DEEP",
-  "music": "MUS_CAVE_OF_ORIGIN",
+  "music": "MUS_RUINS",
   "region_map_section": "MAPSEC_SOFOS_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

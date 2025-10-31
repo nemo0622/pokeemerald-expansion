@@ -75,7 +75,7 @@ static const u8 sCreditsText_Blizblob[]                       = _("Blizblob");
 static const u8 sCreditsText_Snad[]                           = _("snad");
 static const u8 sCreditsText_QuestSystem[]                    = _("Quest Menu: PokémonSanFran");
 static const u8 sCreditsText_Dexnav[]                         = _("DexNav: ghoulslash");
-static const u8 sCreditsText_Mudskip[]                        = _("mudskip");
+static const u8 sCreditsText_Trey[]                        = _("Trey");
 static const u8 sCreditsText_DayNightSystem[]                 = _("Day/Night System: merrp");
 static const u8 sCreditsText_Missingno[]                      = _("MissingNoVGC");
 static const u8 sCreditsText_MoreInDocs[]                     = _("(More info in Documentation!)");
@@ -234,7 +234,7 @@ static const struct CreditsEntry sCreditsEntry_Blizblob                      = {
 static const struct CreditsEntry sCreditsEntry_Snad                 = {11, FALSE, sCreditsText_Snad};
 static const struct CreditsEntry sCreditsEntry_QuestSystem                 = {11, FALSE, sCreditsText_QuestSystem};
 static const struct CreditsEntry sCreditsEntry_Dexnav                        = {11, FALSE, sCreditsText_Dexnav};
-static const struct CreditsEntry sCreditsEntry_Mudskip                    = {11, FALSE, sCreditsText_Mudskip};
+static const struct CreditsEntry sCreditsEntry_Trey                    = {11, FALSE, sCreditsText_Trey};
 static const struct CreditsEntry sCreditsEntry_DayNightSystem                    = {11, FALSE, sCreditsText_DayNightSystem};
 static const struct CreditsEntry sCreditsEntry_Missingno                    = {11, FALSE, sCreditsText_Missingno};
 static const struct CreditsEntry sCreditsEntry_MoreInDocs                     = {11, FALSE, sCreditsText_MoreInDocs};
@@ -376,7 +376,7 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
     },
     [PAGE_DISCORD_MODS] = {
         &sCreditsEntry_DiscordMods,
-        &sCreditsEntry_Mudskip,
+        &sCreditsEntry_Trey,
         &sCreditsEntry_Missingno,
         &sCreditsEntry_Snad,
         &sCreditsEntry_Blizblob,
@@ -447,9 +447,9 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
     [PAGE_USER_INTERFACE_2] = {
         &sCreditsEntry_UserInterface,
         &sCreditsEntry_Nemo622,
-        &sCreditsEntry_PokemonCrystal,
-        &sCreditsEntry_Mudskip,
         &sCreditsEntry_Zezitra,
+        &sCreditsEntry_PokemonCrystal,
+        &sCreditsEntry_MoreInDocs,
     },
     
     [PAGE_SPECIAL_THANKS_1] = {

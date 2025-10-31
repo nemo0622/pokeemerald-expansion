@@ -5346,10 +5346,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 7,
         .weight = 165,
         .description = COMPOUND_STRING(
-            "Reputed to be the ancestor of most\n"
-            "turtle Pokémon, it lived in warm seas\n"
-            "about a hundred million years ago.\n"
-            "It was restored from a fossil."),
+            "Researchers believe that it may be the\n" // new desc
+            "common ancestor of other turtle Pokémon.\n"
+            "Its shell restricts movement too much for\n"
+            "Tirtouga to be a proper hunter."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -5409,10 +5409,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 12,
         .weight = 810,
         .description = COMPOUND_STRING(
-            "They can live both in the ocean and\n"
-            "on land. Incredible jaw strength enables\n"
-            "them to chew up steel beams and rocks\n"
-            "along with their prey."),
+            "Carracosta's shell opens to unleash its\n" // new desc
+            "full strength. It is usually docile,\n"
+            "but when provoked, it can use its jaw\n"
+            "to crunch through entire boulders."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -5850,10 +5850,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 7,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "To protect themselves from danger, they\n"
-            "hide their true identities by transforming\n"
-            "into people and Pokémon. Apparently, it\n"
-            "often transforms into a silent child."),
+            "They are talented at forming illusions,\n" // new desc
+            "masking their true identities from all but\n"
+            "the sharpest eyes. These tricks have been\n"
+            "fooling Ilian Trainers for generations."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -5914,10 +5914,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 16,
         .weight = 811,
         .description = COMPOUND_STRING(
-            "Bonds between these Pokémon are very\n"
-            "strong. It protects the safety of its\n"
-            "pack by tricking its opponents. They\n"
-            "defend their lair with illusory scenery."),
+            "Fully-grown Zoroark are much more talented\n" // new desc
+            "at forming illusions than young Zorua.\n"
+            "Tales are told of an ancient king being\n"
+            "a Zoroark in disguise."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -5977,10 +5977,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 7,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "Derives power from resentment,\n"
-            "which rises as energy atop its head and\n"
-            "takes on the forms of foes. In this\n"
-            "way, Zorua vents lingering malice."),
+            "Hisuian Zorua have been appearing all\n" // new desc
+            "across the world in recent times. They\n"
+            "are a physical manifestation of the hate\n"
+            "and despair in the world."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -6041,10 +6041,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 16,
         .weight = 730,
         .description = COMPOUND_STRING(
-            "Heedless of its own safety,\n"
-            "Zoroark attacks its nemeses with a bitter\n"
-            "energy so intense, it lacerates\n"
-            "Zoroark's own body."),
+            "Stories are told of Hisuian Zoroark being\n" // new desc
+            "a harbinger of death itself, but the truth\n"
+            "may be more complicated. Despite their\n"
+            "ferocity, they show a gentle side to Zorua."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,

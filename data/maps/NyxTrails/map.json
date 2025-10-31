@@ -2,7 +2,7 @@
   "id": "MAP_NYX_TRAILS",
   "name": "NyxTrails",
   "layout": "LAYOUT_NYX_TRAILS",
-  "music": "MUS_PETALBURG_WOODS",
+  "music": "MUS_CAVE",
   "region_map_section": "MAPSEC_NYX_TRAILS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

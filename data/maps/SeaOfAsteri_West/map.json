@@ -2,7 +2,7 @@
   "id": "MAP_SEA_OF_ASTERI_WEST",
   "name": "SeaOfAsteri_West",
   "layout": "LAYOUT_SEA_OF_ASTERI_WEST",
-  "music": "MUS_ROUTE119",
+  "music": "MUS_SEA_OF_ASTERI",
   "region_map_section": "MAPSEC_SEA_OF_ASTERI",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

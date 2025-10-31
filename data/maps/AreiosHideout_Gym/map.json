@@ -2,7 +2,7 @@
   "id": "MAP_AREIOS_HIDEOUT_GYM",
   "name": "AreiosHideout_Gym",
   "layout": "LAYOUT_AREIOS_HIDEOUT_GYM",
-  "music": "MUS_GYM",
+  "music": "MUS_AREIOS_HIDEOUT",
   "region_map_section": "MAPSEC_AREIOS_HIDEOUT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

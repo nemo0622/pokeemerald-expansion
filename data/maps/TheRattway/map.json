@@ -2,7 +2,7 @@
   "id": "MAP_THE_RATTWAY",
   "name": "TheRattway",
   "layout": "LAYOUT_THE_RATTWAY",
-  "music": "MUS_DUMMY",
+  "music": "MUS_KIPOS_ZOO",
   "region_map_section": "MAPSEC_CORRIN_CROSSING",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

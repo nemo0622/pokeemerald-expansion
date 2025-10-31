@@ -2,7 +2,7 @@
   "id": "MAP_WANDERERS_WOODS",
   "name": "WanderersWoods",
   "layout": "LAYOUT_WANDERERS_WOODS",
-  "music": "MUS_PETALBURG_WOODS",
+  "music": "MUS_ROUTE_05",
   "region_map_section": "MAPSEC_WANDERERS_WOODS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_KIPOS_TOWN_ZOO_SPECIALTY_BUILDING",
   "name": "KiposTown_Zoo_SpecialtyBuilding",
   "layout": "LAYOUT_KIPOS_TOWN_ZOO_SPECIALTY_BUILDING",
-  "music": "MUS_SAFARI_ZONE",
+  "music": "MUS_KIPOS_ZOO",
   "region_map_section": "MAPSEC_KIPOS_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

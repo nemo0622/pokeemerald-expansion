@@ -2,7 +2,7 @@
   "id": "MAP_DAVOSI_STRAITS",
   "name": "DavosiStraits",
   "layout": "LAYOUT_DAVOSI_STRAITS",
-  "music": "MUS_RG_VICTORY_ROAD",
+  "music": "MUS_POLLEN_ROAD",
   "region_map_section": "MAPSEC_DAVOSI_STRAITS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

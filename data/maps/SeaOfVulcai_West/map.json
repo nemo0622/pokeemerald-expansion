@@ -2,7 +2,7 @@
   "id": "MAP_SEA_OF_VULCAI_WEST",
   "name": "SeaOfVulcai_West",
   "layout": "LAYOUT_SEA_OF_VULCAI_WEST",
-  "music": "MUS_ROUTE119",
+  "music": "MUS_SEA_OF_ASTERI",
   "region_map_section": "MAPSEC_SEA_OF_VULCAI",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

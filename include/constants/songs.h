@@ -289,14 +289,14 @@
 #define MUS_C_COMM_CENTER           356 // MUS_PCC              // Unused, likely a test track.
 #define MUS_GSC_PEWTER              357 // MUS_NIBI             // Used in unused Contest Halls.
 #define MUS_C_VS_LEGEND_BEAST       358 // MUS_SUIKUN           // Unused, likely a test track.
-#define MUS_ROUTE_01                359 // MUS_DOORO1           // Also used in Routes 102 and 103.
-#define MUS_ROUTE110                360 // MUS_DOORO_X1         // Also used in Routes 112, 114, 117, 111's non-desert section and 118's west half.
-#define MUS_ROUTE120                361 // MUS_DOORO_X3         // Also used in Routes 121, 124, 125, 126, 127 and 128.
+#define MUS_ROUTE_01                359 // PkmGS-1 - Bouncy, fun, basic
+#define MUS_ROUTE_02                360 // PkmGS-10 - Feels a little more "rugged", good for mountains?
+#define MUS_ROUTE_03                361 // PkmGS-12 - A little "country", for farms and stuff
 #define MUS_PETALBURG               362 // MUS_MACHI_S2         // Also used in Mr. Briney's House and Pretty Petal Flower Shop.
 #define MUS_OLDALE                  363 // MUS_MACHI_S4         // Also used in Lavaridge Town.
 #define MUS_GYM                     364 // MUS_GIM
 #define MUS_SURF                    365 // MUS_NAMINORI
-#define MUS_PETALBURG_WOODS         366 // MUS_DAN01            // Also used in Artisan Cave, Fiery Path, Granite Cave, Jagged Pass, Marine Cave, Rusturf Tunnel, Scorched Slab and Terra Cave.
+#define MUS_CAVE                    366 // MUS_DAN01            // Also used in Artisan Cave, Fiery Path, Granite Cave, Jagged Pass, Marine Cave, Rusturf Tunnel, Scorched Slab and Terra Cave.
 #define MUS_LEVEL_UP                367 // MUS_FANFA1
 #define MUS_HEAL                    368 // MUS_ME_ASA
 #define MUS_OBTAIN_BADGE            369 // MUS_ME_BACHI
@@ -304,7 +304,7 @@
 #define MUS_EVOLVED                 371 // MUS_FANFA5           // Also used in egg hatching, trades and upon catching.
 #define MUS_OBTAIN_TMHM             372 // MUS_ME_WAZA
 #define MUS_LILYCOVE_MUSEUM         373 // MUS_BIJYUTU          // Also used in the Battle Frontier's Ranking Hall.
-#define MUS_ROUTE122                374 // MUS_DOORO_X4         // Also used in Route 123 and Birch's intro speech.
+#define MUS_ROUTE_04                374 // PkmGS-30 - Early Johto vibes. Used in Birch's intro speech apparently?
 #define MUS_OCEANIC_MUSEUM          375 // MUS_FUNE_KAN
 #define MUS_EVOLUTION_INTRO         376 // MUS_ME_SHINKA        // Also used in egg hatching.
 #define MUS_EVOLUTION               377 // MUS_SHINKA           // Also used in egg hatching and trades.
@@ -313,7 +313,7 @@
 #define MUS_ENCOUNTER_MALE          380 // MUS_BOYEYE
 #define MUS_ABANDONED_SHIP          381 // MUS_DAN02            // Also used in Faraway and Southern Islands.
 #define MUS_FORTREE                 382 // MUS_MACHI_S3         // Also used in Secret Bases and the Safari Zone's entrance.
-#define MUS_BIRCH_LAB               383 // MUS_ODAMAKI
+#define MUS_ELIA_LAB               383 // MUS_ODAMAKI
 #define MUS_B_TOWER_RS              384 // MUS_B_TOWER          // Used in Battle Tents, Trainer Hill and Battle Frontier's lounges and Exchange Service Corner.
 #define MUS_ENCOUNTER_SWIMMER       385 // MUS_SWIMEYE
 #define MUS_CAVE_OF_ORIGIN          386 // MUS_DAN03            // Also used in Meteor Falls.
@@ -331,7 +331,7 @@
 #define MUS_VERDANTURF              398 // MUS_GOMACHI0
 #define MUS_RUSTBORO                399 // MUS_GOTOWN           // Also used in Mauville City, Mossdeep City, Daycare, Weather Institute and several Route houses.
 #define MUS_POKE_CENTER             400 // MUS_POKECEN          // Also used in the Pokémon League's lobby.
-#define MUS_ROUTE104                401 // MUS_NEXTROAD         // Also used in Routes 105, 106, 107, 108, 109, 115 and 116.
+#define MUS_ROUTE_05                401 // PkmGS-Forest - Viridian forest basically I think
 #define MUS_ROUTE119                402 // MUS_GRANROAD         // Also used in Routes 129, 130, 131, 132, 133, 134 and 118's east half.
 #define MUS_CYCLING                 403 // MUS_CYCLING
 #define MUS_POKE_MART               404 // MUS_FRIENDLY         // Also used in Lilycove's Department Store.
@@ -358,7 +358,7 @@
 #define MUS_CABLE_CAR               425 // MUS_ROPEWAY
 #define MUS_GAME_CORNER             426 // MUS_CASINO
 #define MUS_DEWFORD                 427 // MUS_HIGHTOWN         // Also used in Route 109's Seashore house.
-#define MUS_SAFARI_ZONE             428 // MUS_SAFARI
+#define MUS_KIPOS_ZOO               428 // MUS_SAFARI
 #define MUS_VICTORY_ROAD            429 // MUS_C_ROAD           // Also used in Pokémon League's E4/Champion rooms and halls.
 #define MUS_AQUA_MAGMA_HIDEOUT      430 // MUS_AJITO
 #define MUS_SAILING                 431 // MUS_M_BOAT
@@ -404,16 +404,16 @@
 #define MUS_VS_FRONTIER_BRAIN       471 // MUS_VS_FRONT
 #define MUS_VS_MEW                  472 // MUS_VS_MEW
 #define MUS_B_DOME_LOBBY            473 // MUS_B_DOME1
-#define MUS_VS_WILD                 474 // MUS_BATTLE27
-#define MUS_VS_AQUA_MAGMA           475 // MUS_BATTLE31
-#define MUS_VS_TRAINER              476 // MUS_BATTLE20
-#define MUS_VS_GYM_LEADER           477 // MUS_BATTLE32
-#define MUS_VS_CHAMPION             478 // MUS_BATTLE33
-#define MUS_VS_REGI                 479 // MUS_BATTLE36
-#define MUS_VS_KYOGRE_GROUDON       480 // MUS_BATTLE34
-#define MUS_VS_RIVAL                481 // MUS_BATTLE35
-#define MUS_VS_ELITE_FOUR           482 // MUS_BATTLE38
-#define MUS_VS_AQUA_MAGMA_LEADER    483 // MUS_BATTLE30
+#define MUS_VS_WILD                 474 // MUS_BATTLE27 // ready for lazarus
+#define MUS_VS_CHIMERA              475 // MUS_BATTLE31 // ready for lazarus
+#define MUS_VS_TRAINER              476 // MUS_BATTLE20 // ready for lazarus
+#define MUS_VS_GYM_LEADER           477 // MUS_BATTLE32 // ready for lazarus
+#define MUS_VS_CHAMPION             478 // MUS_BATTLE33 // ready for lazarus
+#define MUS_VS_REGI                 479 // MUS_BATTLE36 // unused
+#define MUS_VS_KYOGRE_GROUDON       480 // MUS_BATTLE34 // unused
+#define MUS_VS_RIVAL                481 // MUS_BATTLE35 // NEEDED
+#define MUS_VS_ELITE_FOUR           482 // MUS_BATTLE38 // NEEDED
+#define MUS_VS_CHIMERA_LEADER       483 // MUS_BATTLE30 // ready for lazarus
 // FRLG Music
 #define MUS_RG_FOLLOW_ME            484 // MUS_RG_ANNAI
 #define MUS_RG_GAME_CORNER          485 // MUS_RG_SLOT
@@ -544,7 +544,28 @@
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
 
-#define MUS_ACRISIA_CITY            610
+#define MUS_ACRISIA_CITY            610 // Custom Tom Sanborn music
+#define MUS_CHERRYGROVE             611 // PkmGS - Cherrygrove
+#define MUS_GOLDENROD               612 // PkmGS - Goldenrod
+#define MUS_CELADON                 613 // PkmGS - Celadon
+#define MUS_RUINS                   614 // Ruins of Alph by Spoopy Spary Speletons
+#define MUS_VERMILLION              615 // PkmGS - Vermillion
+#define MUS_SOFOS_CITY              616 // Rockin K.K. (AC Wild World)
+#define MUS_THE_DELPHIS             617 // Swamp Cruise (Majora's Mask)
+#define MUS_TOWER_OF_DIOXIPPUS      618 // Burned Tower
+#define MUS_COFFEE_SHOP             619 // Coffee Shop (AC Wild World)
+#define MUS_KALAMI_CITY             620 // K.K. Gumbo (AC Wild World)
+#define MUS_FRESCO_ISLES            621 // K.K. Western (AC Wild World)
+#define MUS_MYRRINI_ISLAND          622 // Brine Cave (Mystery Dungeon)
+#define MUS_AREIOS_HIDEOUT          623 // Emerald Mist (Castlevania)
+#define MUS_KIPOS_TOWN              624 // A Fond Farewell (Mystery Dungeon)
+#define MUS_MARMARO_ISLAND          625 // Urban K.K. (AC Wild World)
+#define MUS_SEA_OF_ASTERI           626 // Route 43 / Lake of Rage
+#define MUS_RUINS_OF_AHIYAWA        627 // Don't Ever Forget (Mystery Dungeon)
+#define MUS_PORT_PELLO              628 // Minish Village (Minish Cap)
+#define MUS_POLLEN_ROAD             629 // Tower (Final Fantasy Legends)
+#define MUS_PENTEPETAL_CITY         630 // Saffron City Carribean Remix
+#define MUS_PYTHIOS_TOWN            631 // Mt. Moon
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

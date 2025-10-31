@@ -361,13 +361,13 @@ gSongTable::
 	song mus_gsc_pewter, 0, 0
 	song mus_c_vs_legend_beast, 0, 0
 	song mus_route_01, 0, 0
-	song mus_route110, 0, 0
-	song mus_route120, 0, 0
+	song mus_route_02, 0, 0
+	song mus_route_03, 0, 0
 	song mus_petalburg, 0, 0
 	song mus_oldale, 0, 0
 	song mus_gym, 0, 0
 	song mus_surf, 0, 0
-	song mus_petalburg_woods, 0, 0
+	song mus_cave, 0, 0
 	song mus_level_up, 2, 2
 	song mus_heal, 2, 2
 	song mus_obtain_badge, 2, 2
@@ -375,7 +375,7 @@ gSongTable::
 	song mus_evolved, 2, 2
 	song mus_obtain_tmhm, 2, 2
 	song mus_lilycove_museum, 0, 0
-	song mus_route122, 0, 0
+	song mus_route_04, 0, 0
 	song mus_oceanic_museum, 0, 0
 	song mus_evolution_intro, 2, 2
 	song mus_evolution, 0, 0
@@ -384,7 +384,7 @@ gSongTable::
 	song mus_encounter_male, 0, 0
 	song mus_abandoned_ship, 0, 0
 	song mus_fortree, 0, 0
-	song mus_birch_lab, 0, 0
+	song mus_elia_lab, 0, 0
 	song mus_b_tower_rs, 0, 0
 	song mus_encounter_swimmer, 0, 0
 	song mus_cave_of_origin, 0, 0
@@ -402,7 +402,7 @@ gSongTable::
 	song mus_verdanturf, 0, 0
 	song mus_rustboro, 0, 0
 	song mus_poke_center, 0, 0
-	song mus_route104, 0, 0
+	song mus_route_05, 0, 0
 	song mus_route119, 0, 0
 	song mus_cycling, 0, 0
 	song mus_poke_mart, 0, 0
@@ -429,7 +429,7 @@ gSongTable::
 	song mus_cable_car, 0, 0
 	song mus_game_corner, 0, 0
 	song mus_dewford, 0, 0
-	song mus_safari_zone, 0, 0
+	song mus_kipos_zoo, 0, 0
 	song mus_victory_road, 0, 0
 	song mus_aqua_magma_hideout, 0, 0
 	song mus_sailing, 0, 0
@@ -476,7 +476,7 @@ gSongTable::
 	song mus_vs_mew, 0, 0
 	song mus_b_dome_lobby, 0, 0
 	song mus_vs_wild, 0, 0
-	song mus_vs_aqua_magma, 0, 0
+	song mus_vs_chimera, 0, 0
 	song mus_vs_trainer, 0, 0
 	song mus_vs_gym_leader, 0, 0
 	song mus_vs_champion, 0, 0
@@ -484,7 +484,7 @@ gSongTable::
 	song mus_vs_kyogre_groudon, 0, 0
 	song mus_vs_rival, 0, 0
 	song mus_vs_elite_four, 0, 0
-	song mus_vs_aqua_magma_leader, 0, 0
+	song mus_vs_chimera_leader, 0, 0
 	song mus_rg_follow_me, 0, 0
 	song mus_rg_game_corner, 0, 0
 	song mus_rg_rocket_hideout, 0, 0
@@ -612,6 +612,27 @@ gSongTable::
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
 	song mus_acrisia_city, 0, 0
+	song mus_cherrygrove, 0, 0
+	song mus_goldenrod, 0, 0
+	song mus_celadon, 0, 0
+	song mus_ruins, 0, 0
+	song mus_vermillion, 0, 0
+	song mus_sofos_city, 0, 0
+	song mus_the_delphis, 0, 0
+	song mus_tower_of_dioxippus, 0, 0
+	song mus_coffee_shop, 0, 0
+	song mus_kalami_city, 0, 0
+	song mus_fresco_isles, 0, 0
+	song mus_myrrini_island, 0, 0
+	song mus_areios_hideout, 0, 0
+	song mus_kipos_town, 0, 0
+	song mus_marmaro_island, 0, 0
+	song mus_sea_of_asteri, 0, 0
+	song mus_ruins_of_ahiyawa, 0, 0
+	song mus_port_pello, 0, 0
+	song mus_pollen_road, 0, 0
+	song mus_pentepetal_city, 0, 0
+	song mus_pythios_town, 0, 0
 
 	.align 2
 dummy_song_header:

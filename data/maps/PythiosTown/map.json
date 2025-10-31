@@ -2,7 +2,7 @@
   "id": "MAP_PYTHIOS_TOWN",
   "name": "PythiosTown",
   "layout": "LAYOUT_PYTHIOS_TOWN",
-  "music": "MUS_MT_PYRE_EXTERIOR",
+  "music": "MUS_PYTHIOS_TOWN",
   "region_map_section": "MAPSEC_PYTHIOS_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

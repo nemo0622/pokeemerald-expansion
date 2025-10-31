@@ -2134,10 +2134,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 4,
         .weight = 39,
         .description = COMPOUND_STRING(
-            "A pair may be seen rubbing their cheek\n"
-            "pouches together in an effort to share\n"
-            "stored electricity. It stores them with\n"
-            "berries in tree holes."),
+            "Pachirisu gather in large groups deep in\n" // new desc
+            "the forest, often far away from humans.\n"
+            "It is very popular with Trainers, but its\n"
+            "shocks can ruin personal electronics."),
         .pokemonScale = 491,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -2200,10 +2200,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 7,
         .weight = 295,
         .description = COMPOUND_STRING(
-            "It inflates its flotation sac, keeping its\n"
-            "face above water in order to watch for\n"
-            "prey movement. It swims by rotating its\n"
-            "two tails like a screw."),
+            "Buizel thrive in river environments,\n" // new desc
+            "floating on its back and swishing its\n"
+            "two tails to move. When it spots a fish\n"
+            "to eat, it speeds towards its prey."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -2265,10 +2265,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 11,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Its flotation sac developed as a result\n"
-            "of pursuing aquatic prey. It can double\n"
-            "as a rubber raft. It assists in the rescues\n"
-            "of drowning people."),
+            "Floatzel is a bit of a prankster, but when\n" // new desc
+            "it needs to, it can be very compassionate.\n"
+            "There are countless reports of Floatzel\n"
+            "saving people from drowning boats."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,

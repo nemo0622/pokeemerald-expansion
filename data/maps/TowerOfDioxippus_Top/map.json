@@ -2,7 +2,7 @@
   "id": "MAP_TOWER_OF_DIOXIPPUS_TOP",
   "name": "TowerOfDioxippus_Top",
   "layout": "LAYOUT_TOWER_OF_DIOXIPPUS_TOP",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_TOWER_OF_DIOXIPPUS",
   "region_map_section": "MAPSEC_TOWER_OF_DIOXIPPUS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

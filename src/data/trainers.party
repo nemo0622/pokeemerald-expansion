@@ -752,7 +752,6 @@ SPECIES_MINIOR_METEOR_GREEN
 Level: 15
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
-- Acrobatics
 - Defense Curl
 - Rollout
 
@@ -760,7 +759,6 @@ SPECIES_MINIOR_METEOR_RED
 Level: 15
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
-- Acrobatics
 - Defense Curl
 - Rollout
 
@@ -768,7 +766,6 @@ SPECIES_MINIOR_METEOR_BLUE
 Level: 15
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
-- Acrobatics
 - Defense Curl
 - Rollout
 
@@ -776,7 +773,6 @@ SPECIES_MINIOR_METEOR_YELLOW
 Level: 15
 IVs: 6 HP / 6 Atk / 18 Def / 6 SpA / 18 SpD / 6 Spe
 - Rock Throw
-- Acrobatics
 - Defense Curl
 - Rollout
 

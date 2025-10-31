@@ -2,7 +2,7 @@
   "id": "MAP_PALATI_CITY_ARCHAEOLOGY_INSTITUTE",
   "name": "PalatiCity_ArchaeologyInstitute",
   "layout": "LAYOUT_PALATI_CITY_ARCHAEOLOGY_INSTITUTE",
-  "music": "MUS_RUSTBORO",
+  "music": "MUS_GOLDENROD",
   "region_map_section": "MAPSEC_PALATI_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

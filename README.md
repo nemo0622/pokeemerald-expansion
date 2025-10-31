@@ -16,6 +16,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
     - All routes & locations have unique names, looks, and ecosystems!
 - Carefully curated Pokédex of over 400 Pokémon from Generations 1-9 in a beautiful GBC style!
     - Many Pokémon have undergone rebalancing, with new moves, abilities, and slight stat changes!
+        - Some also have custom Pokédex entries, try to find them all!
     - Including regional (Alolan/Galarian/Hisuian) forms, total count is around 450 unique Pokémon
     - Mega Evolutions are included, with over a dozen new Mega Evolutions added!
 - Day/Night System with FakeRTC
@@ -70,10 +71,51 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- Music:
-    - GET MUSIC LOOPING UGH
+- MUSIC IN ORDER:
+    - Acrisia City - Tom Sanborn, Custom
+    - Acrisia University - ? (Waiting for Tom's Custom track; replace BIRCH_LAB music track!)
+    - Bronze Fields - Route 01 / Route 03
+    - Jusmail Town - MUS_CHERRYGROVE
+    - Acrisia Mountains - Route 02
+    - Riverwalk Trail - Route 02 / Route 03
+    - Kalami City - K.K. Gumbo
+    - Wanderer's Woods - Route 05
+    - Pythios Town - Mt. Moon
+    - Pythios Cemetery - Ruins
+    - Erinys Path - Route 04 / Route 02
+    - Froslass Cavern - Cave
+    - Asfal Hills - Route 03
+    - Sofos City - Rockin' K.K.
+    - Kipos Town - A Fond Farewell
+    - Kipos Zoo - National Park
+    - Sea of Asteri - Lake of Rage
+    - Marmaro Island - Urban K.K.
+    - Myrrini Island - Brine Cave
+    - Péntepetal City - Saffron City Carribean Remix
+    - Underwater - Ballad of the Windfish
+    - Sea of Vulcai - Lake of Rage (North), K.K. Western (South)
+    - Fresco Isles - K.K. Western
+    - Palati City - MUS_GOLDENROD
+    - Kaptara Island E/W - Route 02 / Cave
+    - Lastlight Road - Route 05
+    - Tower of Dioxippus - Burned Tower
+    - Corrin Crossing - National Park
+    - Port Pello - Buena's Password (Pokémon GS)
+    - Nyx Trails - Cave
+    - Areios Hideout - Emerald Mist
+    - Pollen Road - Tower (Final Fantasy Legends)
+    - Davosi Straits - Tower (Final Fantasy Legends)
+    - Ruins of Ahiyawa - Don't Ever Forget (Mystery Dungeon)
+    - Wakewater Isle - Coffee Shop (AC Wild World)
+    - Surfing - Surf
+    - The Delphis - Swamp Cruise (Majora's Mask)
+    - Pokémon Center & PokéMart - Pokémon Center (GSC)
+    - Trainer Encounter music - mostly GSC soundtrack
 - Mods suggestions:
-    - CUSTOM BADGE GFX
+    - Bug fixes (in Discord server)
+- BEFORE RELEASE:
+    - Disable Debug features (skull emoji)
+    - Upload full Dex image to Google Doc documentation alongside credits list
 - Give more Pokémon unique Pokédex entries
     - Just go to random points in the dex and go!
 
@@ -105,100 +147,4 @@ GREEK PHRASES AND STUFF:
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix
 
 ## Credits
-Many, many talented developers and artists are responsible for making this project possible. The Credits have been split into various sections below to make them easier to navigate - please support them however you can!! :)
-
-### Feature Branches
-- Day/Night System created by merrp, and updated to pokeemerald-expansion by Greenphx9
-- DexNav feature branch by ghoulslash
-- Name Box branch by Tustin2121
-- Different Wild Encounter Tables by Bivurnum
-- Outfit System, New Shop UI, and GSC White Battle Background by mudskip
-- New Continue Menu UI and Party Menu by Archie
-- Overworld Encounters by [HashtagMarky](https://github.com/HashtagMarky/pokeemerald/tree/ikigai/ow-encounters)
-- GSC/HGSS Ruins of Alph Sliding Puzzles by [Spherical Ice](https://www.pokecommunity.com/threads/ruins-of-alph-sliding-puzzles-pokefirered.463032/)
-- Mining Minigame by Vol
-- Fishing Minigame by Bivurnum
-- Pokémon Color Variation by Jaizu
-- Quest System by [PokémonSanFran](https://github.com/PokemonSanFran/pokeemerald/wiki/Unbound-Quest-Menu)
-- Set Preferred Follower from Party Menu by Kasen
-
-### Graphics
-- Tilesets:
-    - Most basic overworld sprites purchased from Anima_nel, Zaebucca, and Arex on itch.io
-    - Pokémon Center, Mart, and Gym Buildings by TrainerDX
-    - Some GBC-style default houses by TrainerDX
-    - Broken pillar tiles by Hek-el-Grande on DeviantArt
-    - Coral tiles by Ekat99 on DeviantArt
-- Pokémon Sprites:
-    Numbers below match sprites on the official Pokémon Lazarus Ilios Pokédex Image:
-    1. Sprite created/edited by Nemo622 (edits based on pokeemerald-expansion or official Pokémon GBC sprites)
-    2. By Matdemo159
-    3. By Supahsanti, from Substitube public resource
-    4. By MonsterHam
-    5. From Whack-a-Hack XY Dex
-    6. By SirWhibbles
-    7. By COMBOY
-    8. Official Pokémon GBC Sprite
-    9. By Nuukiie
-    10. By Egg3ggEgg (Public works & Commissions!)
-    11. By Enderific
-    12. By Rojimenez
-    13. By SageDeoxys
-    14. From 8BIT Pokédex by sktndo, from Substitube public resource
-    15. By Substitube
-    16. From GBC Sprite compilation by ESY
-    17. By Pia Carrot
-    18. Created and/or edited by kesterhenrickpixels
-    19. By EeVeeEe1999
-    20. By wittycrow
-    21. By Coffee in the Pokémon Emerald Seaglass Discord Server (thank you!)
-    22. By lakeofdance, from Substitube public resource
-    23. By Koolboyman, from Substitube public resource
-    24. By N-Kin, from Substitube public resource
-    25. By SuicidalSushi, recolored
-    26. By Zaebucca
-    27. By King-Of-The-X-Roads
-    28. By HexTheSpriter
-    "XX, 1". Parts of sprite by Artist "XX" (from above list), edited by Nemo622
-- Trainer Sprites:
-    - Amali and Harper sprited by me, based on TrainerDX GBC Trainer template sprites
-    - Johto (Ethan/Lyra) outfits by Solo993
-    - Kalos (Calem/Serena) outfits by com3tiin, Poketto, and Solo993 on DeviantArt
-    - Alolan (Elio/Selene), Paldean (Nemona/Arven), and Hylian (Link/Zelda) outfits commissioned from [TortleDove on Twitter](https://x.com/dovetortle?lang=en)
-    - Gym Leaders sprited by me, based on TrainerDX Trainer templates and parts of Substitube and Solo993 sprites
-    - Many Sapphire-based GBC sprite devamps by leesongjae620 on DeviantArt
-    - Some GBC style Trainer sprites from Pokémon Crystal
-    - Scientist F, Punk Rocker, Hiker, and a few other sprites from Solo993's Unova sprite devamps
-    - Professor, Performer F, Worker, and Scuba Diver sprites by Substitube
-    - Aroma Lady, Battle Girl, Beauty, Bug Maniac, Pokémon Ranger, and Swimming Triathlete by Justin8964 on DeviantArt
-- Overworld Sprites:
-    - Many NPC sprites adapted from Pokémon Crystal
-    - Some NPC sprites by Anima_nel on itch.io
-    - Some NPC sprites by kesterhenrickpixels on DeviantArt
-    - Amali and Harper (default Player) sprites by me!
-    - Johto (Ethan/Lyra) outfits by Solo993
-    - Kalos (Calem/Serena) outfits by com3tiin, Poketto, and Solo993 on DeviantArt
-    - Alolan (Elio/Selene), Paldean (Nemona/Arven), and Hylian (Link/Zelda) outfits commissioned from [TortleDove on Twitter](https://x.com/dovetortle?lang=en)
-- Overworld Pokémon Sprites:
-    - Many Gen 1 and 2 overworld sprites by Anima_nel on itch.io
-    - Eeveeee: Spoink, Kleavor
-    - SageDeoxys: Wyrdeer
-    - .kedoshim: Ursaluna
-    - Mudskip: Applin
-    - Jaquelion: Dipplin, Hydrapple
-    - DarkusShadow: base Tinkaton line sprites (GBA style)
-    - Many others from Generations 3-4 by resource from Mano_Emet on Discord (Created by Megaman-Omega)
-    - Many Generation 5-7 overworlds based on icon sprites by EeVeeEe1999 on DeviantArt, made by me
-- User Interface:
-    - Title Screen: Pixel art done by me over original image [here](https://www.athens-private-tours.com/wp-content/uploads/2015/05/Acropolis-Sunset-15891085.jpg)
-    - New Continue menu UI and Shop UI by mudskip (Continue menu code by Archie)
-    - Many Pokémon Party Icons based on following sprites (credited above), others by Chamber, Solo0993, Blue Emerald, Lake, Neslug, and Pikachu25 (Most Gen 1-2 icons)
-        - EeVeeEe1999: created many small sprites, especially for Gen 3, 5, 6, and 7 Pokémon
-        - A few Gen 6 icon sprites by  dragonball253 (some Kalos starter icons)
-        - Many later-gen icon sprites by LuigiTKO
-    - Battle Backgrounds:
-        - Majority created by me, based on assets from Pokémon Crystal and colors / decorative assets by Zaebucca
-        - Sand and Arena backgrounds by AveonTrainer, edited by me
-        - Water background by kWharever on DeviantArt, edited by me
-    - Ilios Region Map by Zezitra
-    - Many, many item Bag icons by glados11388
+LISTED ON DOCUMENTATION! :)

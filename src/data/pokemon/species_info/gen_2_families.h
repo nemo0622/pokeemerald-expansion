@@ -4799,10 +4799,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 9,
         .weight = 280,
         .description = COMPOUND_STRING(
-            "A Sneasel scales trees by punching its\n"
-            "hooked claws into the bark. It seeks out\n"
-            "unguarded nests and steals eggs for food\n"
-            "while the parents are away."),
+            "It has softly padded paws that allow it to\n" // new desc
+            "cross snow without disturbing it. Toucannon\n"
+            "colonies in Ilios have struggled to defend\n"
+            "against Sneasel stealing their Eggs."),
         .pokemonScale = 413,
         .pokemonOffset = -3,
         .trainerScale = 256,
@@ -4870,10 +4870,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 11,
         .weight = 340,
         .description = COMPOUND_STRING(
-            "They travel in groups of four or five,\n"
-            "leaving signs for one another on trees\n"
-            "and rocks. They bring down their prey\n"
-            "with coordinated attacks."),
+            "Weavile hunt in packs of up to 6, using\n" // new desc
+            "claw markings to communicate. Their prey\n"
+            "include wild Piloswine, which they isolate\n"
+            "at relentlessly attack."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -4939,10 +4939,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 9,
         .weight = 270,
         .description = COMPOUND_STRING(
-            "Its sturdy, curved claws are ideal for\n"
-            "traversing precipitous cliffs. From the\n"
-            "tips of these claws drips a venom that\n"
-            "infiltrates the nerves of any prey caught."),
+            "This variant of Sneasel was first recorded\n" // new desc
+            "in ancient Hisui, where it was adapted to\n"
+            "scaling cliffs with ease. Their hardened\n"
+            "claws are perfect for hunting, too."),
         .pokemonScale = 413,
         .pokemonOffset = -3,
         .trainerScale = 256,
@@ -5007,10 +5007,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 13,
         .weight = 430,
         .description = COMPOUND_STRING(
-            "Because of its wicked poison and daunting\n"
-            "physical prowess, no other species could\n"
-            "hope to best it on frozen highlands. It\n"
-            "prefers solitude and doesn't form packs."),
+            "Sneasler is incredibly rare and terribly\n" // new desc
+            "toxic. There are old stories about it\n"
+            "deeming weak Trainers unworthy to live,\n"
+            "but... It's best not to dwell on this."),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,

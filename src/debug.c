@@ -4435,13 +4435,13 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_GSC_PEWTER) \
     X(MUS_C_VS_LEGEND_BEAST) \
     X(MUS_ROUTE_01) \
-    X(MUS_ROUTE110) \
-    X(MUS_ROUTE120) \
+    X(MUS_ROUTE_02) \
+    X(MUS_ROUTE_03) \
     X(MUS_PETALBURG) \
     X(MUS_OLDALE) \
     X(MUS_GYM) \
     X(MUS_SURF) \
-    X(MUS_PETALBURG_WOODS) \
+    X(MUS_CAVE) \
     X(MUS_LEVEL_UP) \
     X(MUS_HEAL) \
     X(MUS_OBTAIN_BADGE) \
@@ -4449,7 +4449,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_EVOLVED) \
     X(MUS_OBTAIN_TMHM) \
     X(MUS_LILYCOVE_MUSEUM) \
-    X(MUS_ROUTE122) \
+    X(MUS_ROUTE_04) \
     X(MUS_OCEANIC_MUSEUM) \
     X(MUS_EVOLUTION_INTRO) \
     X(MUS_EVOLUTION) \
@@ -4458,7 +4458,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_ENCOUNTER_MALE) \
     X(MUS_ABANDONED_SHIP) \
     X(MUS_FORTREE) \
-    X(MUS_BIRCH_LAB) \
+    X(MUS_ELIA_LAB) \
     X(MUS_B_TOWER_RS) \
     X(MUS_ENCOUNTER_SWIMMER) \
     X(MUS_CAVE_OF_ORIGIN) \
@@ -4476,7 +4476,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_VERDANTURF) \
     X(MUS_RUSTBORO) \
     X(MUS_POKE_CENTER) \
-    X(MUS_ROUTE104) \
+    X(MUS_ROUTE_05) \
     X(MUS_ROUTE119) \
     X(MUS_CYCLING) \
     X(MUS_POKE_MART) \
@@ -4503,7 +4503,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_CABLE_CAR) \
     X(MUS_GAME_CORNER) \
     X(MUS_DEWFORD) \
-    X(MUS_SAFARI_ZONE) \
+    X(MUS_KIPOS_ZOO) \
     X(MUS_VICTORY_ROAD) \
     X(MUS_AQUA_MAGMA_HIDEOUT) \
     X(MUS_SAILING) \
@@ -4550,7 +4550,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_VS_MEW) \
     X(MUS_B_DOME_LOBBY) \
     X(MUS_VS_WILD) \
-    X(MUS_VS_AQUA_MAGMA) \
+    X(MUS_VS_CHIMERA) \
     X(MUS_VS_TRAINER) \
     X(MUS_VS_GYM_LEADER) \
     X(MUS_VS_CHAMPION) \
@@ -4558,7 +4558,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_VS_KYOGRE_GROUDON) \
     X(MUS_VS_RIVAL) \
     X(MUS_VS_ELITE_FOUR) \
-    X(MUS_VS_AQUA_MAGMA_LEADER) \
+    X(MUS_VS_CHIMERA_LEADER) \
     X(MUS_RG_FOLLOW_ME) \
     X(MUS_RG_GAME_CORNER) \
     X(MUS_RG_ROCKET_HIDEOUT) \

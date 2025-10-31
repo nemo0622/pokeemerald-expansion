@@ -2,7 +2,7 @@
   "id": "MAP_RIVERWALK_TRAIL_WEST",
   "name": "RiverwalkTrail_West",
   "layout": "LAYOUT_RIVERWALK_TRAIL_WEST",
-  "music": "MUS_RG_VIRIDIAN_FOREST",
+  "music": "MUS_ROUTE_02",
   "region_map_section": "MAPSEC_RIVERWALK_TRAIL",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

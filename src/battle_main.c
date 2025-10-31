@@ -5959,11 +5959,8 @@ static void HandleEndTurn_BattleWon(void)
             PlayBGM(MUS_VICTORY_LEAGUE);
             break;
         case TRAINER_CLASS_TEAM_CHIMERA:
-        case TRAINER_CLASS_TEAM_MAGMA:
         case TRAINER_CLASS_CHIMERA_ADMIN:
         case TRAINER_CLASS_CHIMERA_LEADER:
-        case TRAINER_CLASS_MAGMA_ADMIN:
-        case TRAINER_CLASS_MAGMA_LEADER:
             PlayBGM(MUS_VICTORY_AQUA_MAGMA);
             break;
         case TRAINER_CLASS_LEADER:

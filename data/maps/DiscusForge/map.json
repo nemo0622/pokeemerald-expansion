@@ -2,7 +2,7 @@
   "id": "MAP_DISCUS_FORGE",
   "name": "DiscusForge",
   "layout": "LAYOUT_DISCUS_FORGE",
-  "music": "MUS_MT_CHIMNEY",
+  "music": "MUS_CAVE",
   "region_map_section": "MAPSEC_ACRISIA_MOUNTAINS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_KIPOS_TOWN_HOUSE3",
   "name": "KiposTown_House3",
   "layout": "LAYOUT_KIPOS_TOWN_HOUSE3",
-  "music": "MUS_FALLARBOR",
+  "music": "MUS_KIPOS_TOWN",
   "region_map_section": "MAPSEC_KIPOS_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_MYRRINI_ISLAND_HOUSE1",
   "name": "MyrriniIsland_House1",
   "layout": "LAYOUT_MYRRINI_ISLAND_HOUSE1",
-  "music": "MUS_LILYCOVE",
+  "music": "MUS_MYRRINI_ISLAND",
   "region_map_section": "MAPSEC_MYRRINI_ISLAND",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

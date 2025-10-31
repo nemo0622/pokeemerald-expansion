@@ -1028,10 +1028,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 3,
         .weight = 25,
         .description = COMPOUND_STRING(
-            "The pads of its paws are\n"
-            "electricity-discharging organs. Pawmi fires\n"
-            "electricity from its forepaws while\n"
-            "standing unsteadily on its hind legs."),
+            "Pawmi releases electricity through its\n" // new desc
+            "paws. It is so small that it can hardly\n"
+            "stand up on its hind legs, so the shocks\n"
+            "are short and inconsistent."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1091,10 +1091,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 4,
         .weight = 65,
         .description = COMPOUND_STRING(
-            "When its group is attacked, Pawmo\n"
-            "is the first to leap into battle,\n"
-            "defeating enemies with a fighting\n"
-            "technique that utilizes electric shocks."),
+            "Upon evolution, Pawmo gains the ability to\n" // new desc
+            "properly balance on hind legs, developing\n"
+            "hand-to-hand combat techniques. These make\n"
+            "it much stronger than little Pawmi."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1153,10 +1153,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 9,
         .weight = 410,
         .description = COMPOUND_STRING(
-            "This Pokémon normally is slow to\n"
-            "react, but once it enters battle, it\n"
-            "will strike down its enemies with\n"
-            "lightning-fast movements."),
+            "Pawmot has large electricity-producing\n" // new desc
+            "pads on its fists which it uses to full\n"
+            "effect. Even large Pokémon may hesitate to\n"
+            "close the distance against a Pawmot."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -2709,10 +2709,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 2,
         .weight = 7,
         .description = COMPOUND_STRING(
-            "To keep enemies away from its\n"
-            "territory, it paints markings around its\n"
-            "nest using a poisonous liquid that\n"
-            "has an acrid odor."),
+            "Shroodle produces a noxious, toxic saliva\n" // new desc
+            "that it uses for nearly everything. The\n"
+            "saliva holds together sticks and leaves,\n"
+            "marks territory, and repels predators."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -2772,10 +2772,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 7,
         .weight = 272,
         .description = COMPOUND_STRING(
-            "Each Grafaiai paints its own\n"
-            "individual pattern, and it will paint that\n"
-            "same pattern over and over again\n"
-            "throughout its life."),
+            "Grafaiai develop their own patterns based\n" // new desc
+            "on their community and the individual. Those\n"
+            "who study them can easily identify who is\n"
+            "around based on the markings they paint."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

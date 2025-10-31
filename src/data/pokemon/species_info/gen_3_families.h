@@ -7498,10 +7498,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 10,
         .weight = 238,
         .description = COMPOUND_STRING(
-            "It disguises itself as seaweed by making\n"
-            "its tentacles sway. Unsuspecting prey\n"
-            "that come too close are swallowed whole.\n"
-            "It became extinct 100 million years ago."),
+            "Lileep sways in the waves like a plant,\n" // new desc
+            "luring in unsuspecting prey. Some Pokémon\n"
+            "are able to survive its toxic appendages,\n"
+            "forming a symbiotic relationship with it."),
         .pokemonScale = 305,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -7568,10 +7568,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 15,
         .weight = 604,
         .description = COMPOUND_STRING(
-            "It drags its heavy body along the\n"
-            "seafloor. It makes its nest in the shallows\n"
-            "of warm seas. Cradily can be seen on\n"
-            "beaches when the tide goes out."),
+            "Cradily plants itself in warm, shallow\n" // new desc
+            "waters, allowing it to gather light from\n"
+            "the sun. They can hold tight to the ground\n"
+            "and their prey alike."),
         .pokemonScale = 267,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7637,10 +7637,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 7,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "It was resurrected from a fossil using the\n"
-            "power of science. It swims by undulating\n"
-            "the eight wings at its sides. They were\n"
-            "feet that adapted to life in the sea."),
+            "Anorith undulates the wing-like structures\n" // new desc
+            "on its sides to swim. Although alien-looking\n"
+            "to modern eyes, the crushing appendages on\n"
+            "its face are perfect for cracking shells."),
         .pokemonScale = 296,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -7706,10 +7706,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 15,
         .weight = 682,
         .description = COMPOUND_STRING(
-            "Armaldo usually lives on land. However,\n"
-            "when it hunts for prey, it dives beneath\n"
-            "the ocean. It swims around using its two\n"
-            "large wings."),
+            "Armaldo hunts for prey underwater, only\n" // new desc
+            "emerging after successful hunts. It uses\n"
+            "powerful claws and surprising agility to\n"
+            "dominate their opponents."),
         .pokemonScale = 312,
         .pokemonOffset = 3,
         .trainerScale = 271,

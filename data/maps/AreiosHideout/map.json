@@ -2,7 +2,7 @@
   "id": "MAP_AREIOS_HIDEOUT",
   "name": "AreiosHideout",
   "layout": "LAYOUT_AREIOS_HIDEOUT",
-  "music": "MUS_MT_CHIMNEY",
+  "music": "MUS_AREIOS_HIDEOUT",
   "region_map_section": "MAPSEC_AREIOS_HIDEOUT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

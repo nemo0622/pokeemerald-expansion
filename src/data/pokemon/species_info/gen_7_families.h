@@ -3858,10 +3858,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 5,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "This Pokémon is a coward. As it desperately\n"
-            "dashes off, the flailing of its many legs\n"
-            "leaves a sparkling clean path in its wake.\n"
-            "It lives on beaches and seabeds."),
+            "Wimpod, as its name suggests, is extremely\n" // new desc
+            "timid by nature. The merest shift in the\n"
+            "sandy beaches or tide pools it inhabits\n"
+            "is enough to send it scurrying away."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -3921,10 +3921,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 20,
         .weight = 1080,
         .description = COMPOUND_STRING(
-            "It battles skillfully with its six arms,\n"
-            "with a flashing slash of its giant sharp\n"
-            "claws, it cleaves seawater--or even\n"
-            "air--right in two."),
+            "Golisopod's armor grows thicker the more\n" // new desc
+            "it battles, motivating it to seek out\n"
+            "competition. Rulers in ancient Ilios used\n"
+            "Golisopod-shell armor to defend themselves."),
         .pokemonScale = 261,
         .pokemonOffset = 1,
         .trainerScale = 334,

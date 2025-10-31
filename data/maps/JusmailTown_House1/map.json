@@ -2,7 +2,7 @@
   "id": "MAP_JUSMAIL_TOWN_HOUSE1",
   "name": "JusmailTown_House1",
   "layout": "LAYOUT_JUSMAIL_TOWN_HOUSE1",
-  "music": "MUS_BIRCH_LAB",
+  "music": "MUS_ELIA_LAB",
   "region_map_section": "MAPSEC_JUSMAIL_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

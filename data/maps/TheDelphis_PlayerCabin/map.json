@@ -2,7 +2,7 @@
   "id": "MAP_THE_DELPHIS_PLAYER_CABIN",
   "name": "TheDelphis_PlayerCabin",
   "layout": "LAYOUT_THE_DELPHIS_PLAYER_CABIN",
-  "music": "MUS_SAILING",
+  "music": "MUS_THE_DELPHIS",
   "region_map_section": "MAPSEC_THE_DELPHIS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

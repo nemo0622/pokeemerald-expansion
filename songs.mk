@@ -40,34 +40,34 @@ $(MID_SUBDIR)/mus_b_pike.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G112 -V092
 
 $(MID_SUBDIR)/mus_vs_trainer.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G119 -V080 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
 $(MID_SUBDIR)/mus_vs_wild.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G117 -V080 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
-$(MID_SUBDIR)/mus_vs_aqua_magma_leader.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G126 -V080 -P1
+$(MID_SUBDIR)/mus_vs_chimera_leader.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
-$(MID_SUBDIR)/mus_vs_aqua_magma.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G118 -V080 -P1
+$(MID_SUBDIR)/mus_vs_chimera.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
 $(MID_SUBDIR)/mus_vs_gym_leader.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G120 -V080 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
 $(MID_SUBDIR)/mus_vs_champion.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G121 -V080 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
 $(MID_SUBDIR)/mus_vs_kyogre_groudon.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G123 -V080 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
 $(MID_SUBDIR)/mus_vs_rival.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G124 -V080 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
 $(MID_SUBDIR)/mus_vs_regi.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G122 -V080 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
 $(MID_SUBDIR)/mus_vs_elite_four.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G125 -V080 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
 $(MID_SUBDIR)/mus_roulette.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G038 -V080
@@ -79,10 +79,10 @@ $(MID_SUBDIR)/mus_encounter_brendan.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G067 -V078
 
 $(MID_SUBDIR)/mus_encounter_male.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G028 -V080
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_victory_road.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G075 -V076
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_game_corner.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G072 -V072
@@ -105,8 +105,8 @@ $(MID_SUBDIR)/mus_cycling.s: %.s: %.mid
 $(MID_SUBDIR)/mus_encounter_champion.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G100 -V076
 
-$(MID_SUBDIR)/mus_petalburg_woods.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G018 -V080
+$(MID_SUBDIR)/mus_cave.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_abandoned_ship.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G030 -V080
@@ -115,7 +115,7 @@ $(MID_SUBDIR)/mus_cave_of_origin.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G037 -V080
 
 $(MID_SUBDIR)/mus_underwater.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G057 -V094
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_intro.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G060 -V090
@@ -123,14 +123,14 @@ $(MID_SUBDIR)/mus_intro.s: %.s: %.mid
 $(MID_SUBDIR)/mus_hall_of_fame.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G082 -V078
 
-$(MID_SUBDIR)/mus_route110.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G010 -V080
+$(MID_SUBDIR)/mus_route_02.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
-$(MID_SUBDIR)/mus_route120.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G014 -V080
+$(MID_SUBDIR)/mus_route_03.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
-$(MID_SUBDIR)/mus_route122.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G021 -V080
+$(MID_SUBDIR)/mus_route_04.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_route_01.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
@@ -163,13 +163,13 @@ $(MID_SUBDIR)/mus_slateport.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G079 -V070
 
 $(MID_SUBDIR)/mus_poke_mart.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G050 -V085
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_oceanic_museum.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G023 -V080
 
 $(MID_SUBDIR)/mus_gym.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G013 -V080
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_encounter_may.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G061 -V078
@@ -202,19 +202,19 @@ $(MID_SUBDIR)/mus_encounter_interviewer.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G099 -V062
 
 $(MID_SUBDIR)/mus_victory_trainer.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G058 -V091
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_victory_wild.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G025 -V080
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_victory_gym_leader.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G024 -V080
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_victory_aqua_magma.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G070 -V088
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_victory_league.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G029 -V080
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_caught.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G025 -V080
@@ -301,16 +301,16 @@ $(MID_SUBDIR)/mus_littleroot.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G051 -V100
 
 $(MID_SUBDIR)/mus_surf.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G017 -V080
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
-$(MID_SUBDIR)/mus_route104.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G047 -V097
+$(MID_SUBDIR)/mus_route_05.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_gsc_pewter.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -V080
 
-$(MID_SUBDIR)/mus_birch_lab.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G033 -V080
+$(MID_SUBDIR)/mus_elia_lab.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_abnormal_weather.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G089 -V080
@@ -322,7 +322,7 @@ $(MID_SUBDIR)/mus_c_comm_center.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -V080
 
 $(MID_SUBDIR)/mus_poke_center.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G046 -V092
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_b_pyramid.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G106 -V079
@@ -529,7 +529,7 @@ $(MID_SUBDIR)/mus_rg_union_room.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G132 -V090
 
 $(MID_SUBDIR)/mus_rg_vs_legend.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G157 -V090
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_rg_vs_deoxys.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G185 -V080
@@ -564,8 +564,8 @@ $(MID_SUBDIR)/mus_cable_car.s: %.s: %.mid
 $(MID_SUBDIR)/mus_sootopolis.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G091 -V062
 
-$(MID_SUBDIR)/mus_safari_zone.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G074 -V082
+$(MID_SUBDIR)/mus_kipos_zoo.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_b_tower.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G110 -V100
@@ -610,7 +610,7 @@ $(MID_SUBDIR)/mus_credits.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G101 -V100
 
 $(MID_SUBDIR)/mus_title.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G059 -V090
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V090
 
 $(MID_SUBDIR)/mus_fallarbor.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G083 -V100
@@ -622,18 +622,81 @@ $(MID_SUBDIR)/mus_follow_me.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G066 -V074
 
 $(MID_SUBDIR)/mus_vs_frontier_brain.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G115 -V090 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V090 -P1
 
 $(MID_SUBDIR)/mus_vs_mew.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G116 -V090
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V090
 
 $(MID_SUBDIR)/mus_vs_rayquaza.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G114 -V080 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
 
 $(MID_SUBDIR)/mus_encounter_hiker.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G097 -V076
 
 $(MID_SUBDIR)/mus_acrisia_city.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_cherrygrove.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_goldenrod.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_celadon.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_ruins.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_vermillion.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_sofos_city.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_the_delphis.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_tower_of_dioxippus.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_coffee_shop.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_kalami_city.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_fresco_isles.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_myrrini_island.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_areios_hideout.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_kipos_town.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_marmaro_island.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_sea_of_asteri.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_ruins_of_ahiyawa.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_port_pello.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_pollen_road.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_pentepetal_city.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_pythios_town.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/ph_choice_blend.s: %.s: %.mid
