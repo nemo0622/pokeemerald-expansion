@@ -89,7 +89,7 @@ MAJOR TODOS:
     - Kipos Town - A Fond Farewell
     - Kipos Zoo - National Park
     - Sea of Asteri - Lake of Rage
-    - Marmaro Island - Urban K.K.
+    - Marmaro Island - K.K. Condor
     - Myrrini Island - Brine Cave
     - Péntepetal City - Saffron City Carribean Remix
     - Underwater - Ballad of the Windfish
