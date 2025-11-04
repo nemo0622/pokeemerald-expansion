@@ -71,6 +71,19 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
+- Mods suggestions:
+    - Any remaining Discord server bug fixes!
+- BEFORE RELEASE:
+    - Disable Debug features (skull emoji)
+    - Upload full Dex image to Google Doc documentation alongside credits list
+
+GREEK PHRASES AND STUFF:
+- "Chaire" - basically ancient greek "aloha" (hello/goodbye)
+- "Andio" - goodbye
+- "Opa!" - directly translates to "Oops", but really used to show appreciation/enthusiasm
+- "Yamas" - cheers!
+- "Den gnorzio" - I don't know
+
 - MUSIC IN ORDER:
     - Acrisia City - Tom Sanborn, Custom
     - Acrisia University - ? (Waiting for Tom's Custom track; replace BIRCH_LAB music track!)
@@ -111,37 +124,9 @@ MAJOR TODOS:
     - The Delphis - Swamp Cruise (Majora's Mask)
     - Pokémon Center & PokéMart - Pokémon Center (GSC)
     - Trainer Encounter music - mostly GSC soundtrack
-- Mods suggestions:
-    - Bug fixes (in Discord server)
-- BEFORE RELEASE:
-    - Disable Debug features (skull emoji)
-    - Upload full Dex image to Google Doc documentation alongside credits list
-- Give more Pokémon unique Pokédex entries
-    - Just go to random points in the dex and go!
-
-- AFTER INITIAL RELEASE:
-    - [Remove Affine Animations](https://github.com/pret/pokeemerald/wiki/Removing-the-Animation-Affines) and give all Pokémon multi-frame, Crystal-style animations!
-        - Even just a few frames of blinking would be huge, I don't like the affines I don't think
-
-
-GREEK PHRASES AND STUFF:
-- "Chaire" - basically ancient greek "aloha" (hello/goodbye)
-- "Andio" - goodbye
-- "Opa!" - directly translates to "Oops", but really used to show appreciation/enthusiasm
-- "Yamas" - cheers!
-- "Den gnorzio" - I don't know
-
-- EVENTS AND STUFF:
-    - Use in-game day count tracker to have events in different parts of the region every X number of days
-        - Receive "buzz" on Pokédex alerting to event somewhere in the region
-        - "Flower Festival" in Péntepetal, "Sunlight Party" in Fresco Isles, "Walk of Spirits" in Pythios, and
-        "Year's End Celebration" in Acrisia City
-            - idk how any of this would work I just think it's a fun idea to kick around
-    - Finish implementing Prof. Elia, Rania, and Niko's gifting / interactions based on Pokédex progress
-    - MISSING IMPORTANT BUILDINGS / LOCATIONS / UNLOCKS
-        - Berry plant locations
 
 ## Known Bugs & Problems
+- Picking up item balls can glitch nearby sprites
 - DexNav chain count and directional arrow not shown when hunting
 - When loading a save in Bronze Fields or Jusmail Town (areas with Windmill sprites), the first few frames have bugged tiles
     - This is caused by using "virtual objects" for the windmill sprites. As far as I can tell, there's not a great fix

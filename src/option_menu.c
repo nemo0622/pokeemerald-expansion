@@ -369,6 +369,22 @@ static void Task_ChangePage(u8 taskId)
     DrawHeaderText();
     PutWindowTilemap(1);
     DrawOptionMenuTexts();
+
+    // Literally just copy-pasted this from the Save Options task lmfao. it works whatever shut up
+    gSaveBlock2Ptr->optionsTextSpeed = gTasks[taskId].tTextSpeed;
+    gSaveBlock2Ptr->optionsBattleSceneOff = gTasks[taskId].tBattleSceneOff;
+    gSaveBlock2Ptr->optionsBattleStyle = gTasks[taskId].tBattleStyle;
+    gSaveBlock2Ptr->optionsSound = gTasks[taskId].tSound;
+    gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
+    gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
+    // add custom page2 settings here
+    gTasks[taskId].TDifficulty == 0 ? FlagClear(FLAG_HARD_MODE) : FlagSet(FLAG_HARD_MODE);
+    gTasks[taskId].TBattleBgOff == 0 ? FlagClear(FLAG_SYS_DISABLE_BATTLE_BG) : FlagSet(FLAG_SYS_DISABLE_BATTLE_BG);
+    gTasks[taskId].TBattleBgOff == 0 ? FlagClear(FLAG_HIDE_BATTLE_SHADOWS) : FlagSet(FLAG_HIDE_BATTLE_SHADOWS); // also disables shadows on white GSC battle backgrounds
+    gTasks[taskId].TShadowsOff == 0 ? FlagClear(FLAG_HIDE_BATTLE_SHADOWS) : FlagSet(FLAG_HIDE_BATTLE_SHADOWS);
+    gTasks[taskId].TNightCycle == 0 ? FlagClear(FLAG_INVISIBLE_DAY_NIGHT_CYCLE) : FlagSet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE);
+    gTasks[taskId].TColorTint == 0 ? FlagClear(FLAG_HIDE_POKEMON_COLOR_TINT) : FlagSet(FLAG_HIDE_POKEMON_COLOR_TINT);
+
     switch(sCurrPage)
     {
     case 0:

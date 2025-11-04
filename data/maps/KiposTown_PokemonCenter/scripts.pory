@@ -97,7 +97,7 @@ script KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck
             delay(5)
 
             // give reward!
-            giveitem(ITEM_LEFTOVERS)
+            giveitem(ITEM_POKEMON_BOX_LINK)
             closemessage
 
             setflag(FLAG_CAUGHT_ALL_MONS_KIPOS_TOWN)

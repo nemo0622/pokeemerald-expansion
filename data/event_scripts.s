@@ -1157,6 +1157,8 @@ MysteryGift_EventScript_DoMysteryGift::
 	goto_if_eq VAR_RESULT, 35, MysteryGift_EventScript_Outfits
 	goto_if_eq VAR_RESULT, 36, MysteryGift_EventScript_HyruleOutfit
 	goto_if_eq VAR_RESULT, 37, MysteryGift_EventScript_ShowWildNatures
+	goto_if_eq VAR_RESULT, 38, MysteryGift_EventScript_PortablePC
+	goto_if_eq VAR_RESULT, 39, MysteryGift_EventScript_Mosey
 	end
 
 MysteryGift_Failed::
@@ -1213,6 +1215,19 @@ MysteryGift_EventScript_TransferredToPC::
 
 MysteryGift_EventScript_ShowWildNatures::
 	setflag FLAG_UNLOCKED_WILD_NATURE_VIEW
+	releaseall
+	end
+
+MysteryGift_EventScript_PortablePC::
+	giveitem ITEM_POKEMON_BOX_LINK
+	releaseall
+	end
+
+MysteryGift_EventScript_Mosey::
+	bufferspeciesname STR_VAR_1, SPECIES_MEOWTH_ALOLAN
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MEOWTH_ALOLAN
+	givemon SPECIES_MEOWTH_ALOLAN, 10, ITEM_EVIOLITE, ITEM_MOON_BALL, NATURE_ADAMANT, 1, MON_FEMALE, 6, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_COVET, MOVE_KNOCK_OFF, MOVE_PARTING_SHOT, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
+	call MysteryGift_EventScript_ReceivedMon
 	releaseall
 	end
 

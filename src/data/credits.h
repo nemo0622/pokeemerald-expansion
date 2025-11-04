@@ -43,7 +43,7 @@ static const u8 sCreditsText_TrainerSprites[]                 = _("Trainer Battl
 static const u8 sCreditsText_OverworldTrainers[]                  = _("NPC Sprites");
 static const u8 sCreditsText_OverworldPokemon[]                   = _("Overworld Pokémon Sprites");
 static const u8 sCreditsText_UserInterface[]                       = _("UI Graphics");
-static const u8 sCreditsText_CustomMusic[]                = _("Custom Music");
+static const u8 sCreditsText_CustomMusic[]                = _("Music");
 static const u8 sCreditsText_MapDesigners[]                   = _("Map Designers");
 static const u8 sCreditsText_MapDataDesigners[]               = _("Map Data Designers");
 static const u8 sCreditsText_ParametricDesigners[]            = _("Parametric Designers");
@@ -127,7 +127,7 @@ static const u8 sCreditsText_HiroyukiUesugi[]                 = _("Hiroyuki Uesu
 static const u8 sCreditsText_TerukiMurakawa[]                 = _("Teruki Murakawa");
 static const u8 sCreditsText_AkiraKinashi[]                   = _("Akira Kinashi");
 static const u8 sCreditsText_TeamAquasHideout[]                = _("Team Aqua's Hideout");
-static const u8 sCreditsText_Pawkkie[]                   = _("Pawkkie & Team Aqua's Asset Repo");
+static const u8 sCreditsText_Pawkkie[]                        = _("Team Aqua's Asset Repo");
 static const u8 sCreditsText_TakanaoKondo[]                   = _("Takanao Kondo");
 static const u8 sCreditsText_AiMashima[]                      = _("Ai Mashima");
 static const u8 sCreditsText_GakujiNomoto[]                   = _("Gakuji Nomoto");
@@ -144,7 +144,7 @@ static const u8 sCreditsText_SatoshiMitsuhara[]               = _("Satoshi Mitsu
 static const u8 sCreditsText_JapanBrailleLibrary[]            = _("Japan Braille Library");
 static const u8 sCreditsText_TomotakaKomura[]                 = _("Tomotaka Komura");
 static const u8 sCreditsText_TomSanborn[]                  = _("Tom Sanborn");
-static const u8 sCreditsText_DaisukeHoshino[]                 = _("Daisuke Hoshino");
+static const u8 sCreditsText_VGMusic[]                 = _("VGMusic Artists");
 static const u8 sCreditsText_KenjiroIto[]                     = _("Kenjiro Ito");
 static const u8 sCreditsText_ThankYouForPlaying[]                   = _("Thank you for playing Pokémon Lazarus! :)");
 static const u8 sCreditsText_SeaglassStyle[]                 = _("Seaglass style! Stay tuned!");
@@ -303,7 +303,7 @@ static const struct CreditsEntry sCreditsEntry_SatoshiMitsuhara                 
 static const struct CreditsEntry sCreditsEntry_JapanBrailleLibrary              = { 9, FALSE, sCreditsText_JapanBrailleLibrary};
 static const struct CreditsEntry sCreditsEntry_TomotakaKomura                   = {11, FALSE, sCreditsText_TomotakaKomura};
 static const struct CreditsEntry sCreditsEntry_TomSanborn                    = {11, FALSE, sCreditsText_TomSanborn};
-static const struct CreditsEntry sCreditsEntry_DaisukeHoshino                   = {11, FALSE, sCreditsText_DaisukeHoshino};
+static const struct CreditsEntry sCreditsEntry_VGMusic                   = {11, FALSE, sCreditsText_VGMusic};
 static const struct CreditsEntry sCreditsEntry_KenjiroIto                       = {11, FALSE, sCreditsText_KenjiroIto};
 static const struct CreditsEntry sCreditsEntry_ThankYouForPlaying                     = {11, FALSE, sCreditsText_ThankYouForPlaying};
 static const struct CreditsEntry sCreditsEntry_SeaglassStyle                   = {11, FALSE, sCreditsText_SeaglassStyle};
@@ -453,11 +453,11 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
     },
     
     [PAGE_SPECIAL_THANKS_1] = {
-        _,
         &sCreditsEntry_CustomMusic,
         &sCreditsEntry_TomSanborn,
-        _,
-        _,
+        &sCreditsEntry_VGMusic,
+        &sCreditsEntry_Pawkkie,
+        &sCreditsEntry_MoreInDocs,
     },
     [PAGE_SPECIAL_THANKS_2] = {
         _,

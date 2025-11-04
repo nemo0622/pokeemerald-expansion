@@ -157,7 +157,7 @@ KiposTown_PokemonCenter_EventScript_UniversityStudentRouteCheck_5:
 # 97 "data/maps/KiposTown_PokemonCenter/scripts.pory"
 	delay 5
 # 100 "data/maps/KiposTown_PokemonCenter/scripts.pory"
-	giveitem ITEM_LEFTOVERS
+	giveitem ITEM_POKEMON_BOX_LINK
 # 101 "data/maps/KiposTown_PokemonCenter/scripts.pory"
 	closemessage
 # 103 "data/maps/KiposTown_PokemonCenter/scripts.pory"
