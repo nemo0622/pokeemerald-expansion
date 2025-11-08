@@ -80,7 +80,7 @@
       "flag": "FLAG_ELITE_FOUR_HIDE_TERPSIKORE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HAWLUCHA)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FALINKS)",
       "x": 5,
       "y": 4,
       "elevation": 0,
@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RuinsOfAhiyawa_EliteFour_EventScript_Hawlucha",
+      "script": "RuinsOfAhiyawa_EliteFour_EventScript_Falinks",
       "flag": "FLAG_ELITE_FOUR_HIDE_TERPSIKORE"
     },
     {

@@ -8009,14 +8009,14 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Vacuum Wave
 - Recover
 
-Hawlucha @ Hawluchite
+Falinks @ Falinksite
 Level: 54
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Tags: Ace
-- Flying Press
-- Poison Jab
-- Feather Dance
-- Trailblaze
+- Body Press
+- Bulk Up
+- First Impression
+- Iron Head
 
 === TRAINER_ELITEFOUR_TERPSIKORE_HARD ===
 Name: Terpsikore
@@ -8095,14 +8095,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Vacuum Wave
 - Recover
 
-Hawlucha @ Hawluchite
+Falinks @ Falinksite
 Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Tags: Ace
-- Flying Press
-- Poison Jab
-- Feather Dance
-- Trailblaze
+- Close Combat
+- Bulk Up
+- First Impression
+- Iron Head
 
 === TRAINER_ELITEFOUR_EUTERPE ===
 Name: Euterpe
@@ -8878,6 +8878,7 @@ Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
 Music: Intense
+Items: Key Stone
 Double Battle: No
 AI: Check Bad Move / Check Viability / AI_FLAG_ACE_POKEMON
 Party Size: 5
@@ -8927,14 +8928,14 @@ Tinkaton
 Level: 55
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Annihilape
+Falinks @ Falinksite
 Level: 55
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Tags: Ace
-- Rage Fist
-- Close Combat
-- Outrage
-- Thrash
+- First Impression
+- Iron Head
+- Bullet Seed
+- Body Press
 
 === TRAINER_WAKEWATER_ALEXANDER ===
 Name: Alexander
@@ -8942,8 +8943,9 @@ Class: Performer_M
 Pic: Performer_M
 Gender: Male
 Music: Suspicious
+Items: Key Stone
 Double Battle: No
-AI: Check Bad Move / Try To Faint
+AI: Check Bad Move / Try To Faint / AI_FLAG_ACE_POKEMON
 Party Size: 5
 Pool Rules: Basic
 
@@ -8994,6 +8996,15 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Floatzel
 Level: 55
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Scrafty @ Scraftite
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- Drain Punch
+- Head Smash
+- Crunch
+- Stomping Tantrum
 
 === TRAINER_WAKEWATER_KASSA ===
 Name: Kassa

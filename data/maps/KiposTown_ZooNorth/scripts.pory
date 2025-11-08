@@ -498,7 +498,7 @@ script KiposTown_Zoo_PokemonSign_Tundra
 script KiposTown_Zoo_EnvironmentSign_Tundra
 {
     lock
-    msgbox(format("Enclosure No. 12: {COLOR GREEN}Tundra{COLOR DARK_GRAY}\p Tundras are blanketed in snow, creating a vast winter wonderland for Pokémon to inhabit. These icy areas range from boreal forests to ice-tipped mountain peaks, so elements of each have been incorporated into this exhibit.\n Unfortunately, as climate change continues to worsen, these ice-covered ecosystems are becoming seriously threatened. Major changes must be made to prevent the total loss of these environments.\p Many {COLOR GREEN}Ice-type{COLOR DARK_GRAY} Pokémon can only be found in these chilly locations. Some {COLOR GREEN}high mountain{COLOR DARK_GRAY} species and Pokémon with {COLOR GREEN}thick fur{COLOR DARK_GRAY} also call these ecosystems home."))
+    msgbox(format("Enclosure No. 12: {COLOR GREEN}Tundra{COLOR DARK_GRAY}\p Tundras are blanketed in snow, creating a vast winter wonderland for Pokémon to inhabit. These icy areas range from boreal forests to ice-tipped mountain peaks, so elements of each have been incorporated into this exhibit.\p Unfortunately, as climate change continues to worsen, these ice-covered ecosystems are becoming seriously threatened. Major changes must be made to prevent the total loss of these environments.\p Many {COLOR GREEN}Ice-type{COLOR DARK_GRAY} Pokémon can only be found in these chilly locations. Some {COLOR GREEN}high mountain{COLOR DARK_GRAY} species and Pokémon with {COLOR GREEN}thick fur{COLOR DARK_GRAY} also call these ecosystems home."))
     closemessage
     release
     end

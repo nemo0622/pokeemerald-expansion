@@ -86,7 +86,7 @@ GREEK PHRASES AND STUFF:
 
 - MUSIC IN ORDER:
     - Acrisia City - Tom Sanborn, Custom
-    - Acrisia University - ? (Waiting for Tom's Custom track; replace BIRCH_LAB music track!)
+    - Acrisia University - Oak's Lab
     - Bronze Fields - Route 01 / Route 03
     - Jusmail Town - MUS_CHERRYGROVE
     - Acrisia Mountains - Route 02

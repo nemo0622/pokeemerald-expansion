@@ -12525,6 +12525,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Scrafty[] = INCBIN_U32("graphics/pokemon/scrafty/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_ScraftyMega[] = INCBIN_U32("graphics/pokemon/scrafty/mega/front.4bpp.lz");
+    const u32 gMonPalette_ScraftyMega[] = INCBIN_U32("graphics/pokemon/scrafty/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_ScraftyMega[] = INCBIN_U32("graphics/pokemon/scrafty/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_ScraftyMega[] = INCBIN_U32("graphics/pokemon/scrafty/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_ScraftyMega[] = INCBIN_U8("graphics/pokemon/scrafty/mega/icon.4bpp");
+#endif
 #endif //P_FAMILY_SCRAGGY
 
 #if P_FAMILY_SIGILYPH
@@ -19314,6 +19321,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Falinks[] = INCBIN_U32("graphics/pokemon/falinks/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_FalinksMega[] = INCBIN_U32("graphics/pokemon/falinks/mega/front.4bpp.lz");
+    const u32 gMonPalette_FalinksMega[] = INCBIN_U32("graphics/pokemon/falinks/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_FalinksMega[] = INCBIN_U32("graphics/pokemon/falinks/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_FalinksMega[] = INCBIN_U32("graphics/pokemon/falinks/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_FalinksMega[] = INCBIN_U8("graphics/pokemon/falinks/mega/icon.4bpp");
+#endif
 #endif //P_FAMILY_FALINKS
 
 #if P_FAMILY_PINCURCHIN

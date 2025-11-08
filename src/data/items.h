@@ -14547,4 +14547,38 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_Greninjite,
         .iconPalette = gItemIconPalette_Greninjite,
     },
+
+    [ITEM_FALINKSITE] =
+    {
+        .name = _("Falinksite"),
+        .price = 20000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Falinks to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Falinksite,
+        .iconPalette = gItemIconPalette_Falinksite,
+    },
+
+    [ITEM_SCRAFTITE] =
+    {
+        .name = _("Scraftite"),
+        .price = 25000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Scrafty to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Scraftite,
+        .iconPalette = gItemIconPalette_Scraftite,
+    },
 };

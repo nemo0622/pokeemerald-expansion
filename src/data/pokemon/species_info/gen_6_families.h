@@ -195,9 +195,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_CHESNAUGHT_MEGA] =
     {
         .baseHP        = 88,
-        .baseAttack    = 132,
-        .baseDefense   = 167,
-        .baseSpeed     = 69,
+        .baseAttack    = 137,
+        .baseDefense   = 172,
+        .baseSpeed     = 64,
         .baseSpAttack  = 79,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
@@ -239,7 +239,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_ChesnaughtMega,
         .iconSprite = gMonIcon_ChesnaughtMega,
         .iconPalIndex = 1,
-        SHADOW(2, 7, SHADOW_SIZE_M)
+        SHADOW(2, 10, SHADOW_SIZE_L)
         FOOTPRINT(Chesnaught)
         .levelUpLearnset = sChesnaughtLevelUpLearnset,
         .teachableLearnset = sChesnaughtTeachableLearnset,
@@ -441,10 +441,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_DELPHOX_MEGA] =
     {
         .baseHP        = 85,
-        .baseAttack    = 79,
-        .baseDefense   = 82,
-        .baseSpeed     = 119,
-        .baseSpAttack  = 139,
+        .baseAttack    = 69,
+        .baseDefense   = 72,
+        .baseSpeed     = 129,
+        .baseSpAttack  = 149,
         .baseSpDefense = 120,
         .types = MON_TYPES(TYPE_FIRE, TYPE_PSYCHIC),
         .catchRate = 45,
@@ -485,7 +485,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_DelphoxMega,
         .iconSprite = gMonIcon_DelphoxMega,
         .iconPalIndex = 0,
-        SHADOW(0, 14, SHADOW_SIZE_L)
+        SHADOW(0, 16, SHADOW_SIZE_L)
         FOOTPRINT(Delphox)
         .levelUpLearnset = sDelphoxLevelUpLearnset,
         .teachableLearnset = sDelphoxTeachableLearnset,
@@ -843,7 +843,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_GreninjaMega,
         .iconSprite = gMonIcon_GreninjaMega,
         .iconPalIndex = 0,
-        SHADOW(5, 11, SHADOW_SIZE_L)
+        SHADOW(2, 13, SHADOW_SIZE_L)
         FOOTPRINT(Greninja)
         .levelUpLearnset = sGreninjaLevelUpLearnset,
         .teachableLearnset = sGreninjaTeachableLearnset,

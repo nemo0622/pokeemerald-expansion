@@ -9681,12 +9681,12 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
     // target's abilities
     switch (defAbility)
     {
-    case ABILITY_THICK_FAT:
+    case ABILITY_THICK_LAYERS:
         if (moveType == TYPE_FIRE || moveType == TYPE_ICE)
         {
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
             if (updateFlags)
-                RecordAbilityBattle(battlerDef, ABILITY_THICK_FAT);
+                RecordAbilityBattle(battlerDef, ABILITY_THICK_LAYERS);
         }
         break;
     }

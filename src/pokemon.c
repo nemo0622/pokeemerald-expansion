@@ -6064,6 +6064,35 @@ u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
         }
     }
 
+    // ok im gonna try to add move tutor moves here. guh
+    const u16 *teachableLearnset = GetSpeciesTeachableLearnset(species);
+    u16 move;
+    for (i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
+    {
+        move = teachableLearnset[i];
+        for (j = 0; j < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES; j++)
+        {
+            if (ItemIdToBattleMoveId(ITEM_TM01 + j) == move)
+                break;
+        }
+
+        if (j >= NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES)
+        {
+            // it's a tutor move! i think!
+            for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != move; j++) // make sure it's not learned already
+                ;
+
+            if (j == MAX_MON_MOVES)
+            {
+                for (k = 0; k < numMoves && moves[k] != move; k++)
+                    ;
+
+                if (k == numMoves)
+                    moves[numMoves++] = move;
+            }
+        }
+    }
+
     return numMoves;
 }
 

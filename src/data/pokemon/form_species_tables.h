@@ -1337,6 +1337,12 @@ static const u16 sBraviaryFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_RUFFLET
 
+static const u16 sScraftyFormSpeciesIdTable[] = {
+    SPECIES_SCRAFTY,
+    SPECIES_SCRAFTY_MEGA,
+    FORM_SPECIES_END,
+};
+
 #if P_FAMILY_ARCHEN
 static const u16 sArcheopsFormSpeciesIdTable[] = {
     SPECIES_ARCHEOPS,
@@ -2046,6 +2052,12 @@ static const u16 sGrimmsnarlFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_IMPIDIMP
+
+static const u16 sFalinksFormSpeciesIdTable[] = {
+    SPECIES_FALINKS,
+    SPECIES_FALINKS_MEGA,
+    FORM_SPECIES_END,
+};
 
 #if P_FAMILY_MILCERY
 static const u16 sAlcremieFormSpeciesIdTable[] = {

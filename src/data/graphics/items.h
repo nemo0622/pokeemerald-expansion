@@ -2154,3 +2154,7 @@ const u32 gItemIcon_Delphoxite[] = INCBIN_U32("graphics/items/icons/delphoxite.4
 const u32 gItemIconPalette_Delphoxite[] = INCBIN_U32("graphics/items/icons/delphoxite.gbapal.lz");
 const u32 gItemIcon_Greninjite[] = INCBIN_U32("graphics/items/icons/greninjite.4bpp.lz");
 const u32 gItemIconPalette_Greninjite[] = INCBIN_U32("graphics/items/icons/greninjite.gbapal.lz");
+const u32 gItemIcon_Falinksite[] = INCBIN_U32("graphics/items/icons/falinksite.4bpp.lz");
+const u32 gItemIconPalette_Falinksite[] = INCBIN_U32("graphics/items/icons/falinksite.gbapal.lz");
+const u32 gItemIcon_Scraftite[] = INCBIN_U32("graphics/items/icons/scraftite.4bpp.lz");
+const u32 gItemIconPalette_Scraftite[] = INCBIN_U32("graphics/items/icons/scraftite.gbapal.lz");

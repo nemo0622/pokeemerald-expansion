@@ -251,12 +251,12 @@ script RuinsOfAhiyawa_EliteFour_EventScript_BraviaryHisuian
     end
 }
 
-script RuinsOfAhiyawa_EliteFour_EventScript_Hawlucha
+script RuinsOfAhiyawa_EliteFour_EventScript_Falinks
 {
     lock
     faceplayer
-    speakername("Hawlucha")
-    playmoncry(SPECIES_HAWLUCHA, CRY_MODE_NORMAL)
+    speakername("Falinks")
+    playmoncry(SPECIES_FALINKS, CRY_MODE_NORMAL)
     msgbox("Hmph umph!")
     waitmoncry
     closemessage

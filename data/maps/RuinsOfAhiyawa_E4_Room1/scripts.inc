@@ -361,17 +361,17 @@ RuinsOfAhiyawa_EliteFour_EventScript_BraviaryHisuian::
 	end
 
 
-RuinsOfAhiyawa_EliteFour_EventScript_Hawlucha::
+RuinsOfAhiyawa_EliteFour_EventScript_Falinks::
 # 256 "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.pory"
 	lock
 # 257 "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.pory"
 	faceplayer
 # 258 "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.pory"
-	speakername RuinsOfAhiyawa_EliteFour_EventScript_Hawlucha_Text_0
+	speakername RuinsOfAhiyawa_EliteFour_EventScript_Falinks_Text_0
 # 259 "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.pory"
-	playmoncry SPECIES_HAWLUCHA, CRY_MODE_NORMAL
+	playmoncry SPECIES_FALINKS, CRY_MODE_NORMAL
 # 260 "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.pory"
-	msgbox RuinsOfAhiyawa_EliteFour_EventScript_Hawlucha_Text_1
+	msgbox RuinsOfAhiyawa_EliteFour_EventScript_Falinks_Text_1
 # 261 "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.pory"
 	waitmoncry
 # 262 "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.pory"
@@ -774,11 +774,11 @@ RuinsOfAhiyawa_EliteFour_EventScript_BraviaryHisuian_Text_1:
 # 247 "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.pory"
 	.string "Kreeaww!$"
 
-RuinsOfAhiyawa_EliteFour_EventScript_Hawlucha_Text_0:
+RuinsOfAhiyawa_EliteFour_EventScript_Falinks_Text_0:
 # 258 "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.pory"
-	.string "Hawlucha$"
+	.string "Falinks$"
 
-RuinsOfAhiyawa_EliteFour_EventScript_Hawlucha_Text_1:
+RuinsOfAhiyawa_EliteFour_EventScript_Falinks_Text_1:
 # 260 "data/maps/RuinsOfAhiyawa_E4_Room1/scripts.pory"
 	.string "Hmph umph!$"
 

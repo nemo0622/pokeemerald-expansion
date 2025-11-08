@@ -1025,11 +1025,13 @@
 #define ITEM_CHESNAUGHTITE 851
 #define ITEM_DELPHOXITE 852
 #define ITEM_GRENINJITE 853
+#define ITEM_FALINKSITE 854
+#define ITEM_SCRAFTITE 855
 
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 854
+#define ITEMS_COUNT 856
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

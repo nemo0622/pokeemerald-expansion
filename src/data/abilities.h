@@ -366,9 +366,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 5,
     },
 
-    [ABILITY_THICK_FAT] =
+    [ABILITY_THICK_LAYERS] =
     {
-        .name = _("Thick Fat"),
+        .name = _("Thick Layers"),
         .description = COMPOUND_STRING("Heat-and-cold protection."),
         .aiRating = 7,
         .breakable = TRUE,

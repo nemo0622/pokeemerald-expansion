@@ -765,6 +765,11 @@ static const struct FormChange sGarbodorFormChangeTable[] =
 };
 #endif //P_FAMILY_TRUBBISH
 
+static const struct FormChange sScraftyFormChangeTable[] = {
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SCRAFTY_MEGA, ITEM_SCRAFTITE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
 #if P_FAMILY_ARCHEN
 static const struct FormChange sArcheopsFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
@@ -1284,6 +1289,12 @@ static const struct FormChange sGrimmsnarlFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_IMPIDIMP
+
+static const struct FormChange sFalinksFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_FALINKS_MEGA, ITEM_FALINKSITE},
+    {FORM_CHANGE_TERMINATOR},
+};
 
 #if P_FAMILY_MILCERY
 static const struct FormChange sAlcremieFormChangeTable[] =

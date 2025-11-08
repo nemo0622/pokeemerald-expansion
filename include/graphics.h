@@ -1820,6 +1820,10 @@ extern const u32 gItemIcon_Delphoxite[];
 extern const u32 gItemIconPalette_Delphoxite[];
 extern const u32 gItemIcon_Greninjite[];
 extern const u32 gItemIconPalette_Greninjite[];
+extern const u32 gItemIcon_Falinksite[];
+extern const u32 gItemIconPalette_Falinksite[];
+extern const u32 gItemIcon_Scraftite[];
+extern const u32 gItemIconPalette_Scraftite[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];

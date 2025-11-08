@@ -699,6 +699,9 @@ $(MID_SUBDIR)/mus_pentepetal_city.s: %.s: %.mid
 $(MID_SUBDIR)/mus_pythios_town.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
+$(MID_SUBDIR)/mus_laz_sound_test.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
 $(MID_SUBDIR)/ph_choice_blend.s: %.s: %.mid
 	$(MID) $< $@ -E -G130 -P4
 

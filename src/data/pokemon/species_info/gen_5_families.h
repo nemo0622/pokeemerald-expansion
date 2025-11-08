@@ -271,7 +271,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_THICK_FAT },
+        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_THICK_LAYERS },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Tepig"),
         .cryId = CRY_TEPIG,
@@ -333,7 +333,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_THICK_FAT },
+        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_THICK_LAYERS },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Pignite"),
         .cryId = CRY_PIGNITE,
@@ -4899,10 +4899,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 6,
         .weight = 118,
         .description = COMPOUND_STRING(
-            "Its skin has a rubbery elasticity, so it\n"
-            "can reduce damage by defensively\n"
-            "pulling its skin up to its neck.\n"
-            "Its skull is massively thick."),
+            "Scraggy live in small groups, scavenging\n" // new desc
+            "their dry environments for any food they\n"
+            "can find. Its loose skin can be pulled\n"
+            "over its head to hide from danger."),
         .pokemonScale = 422,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -4933,15 +4933,15 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sScraggyLevelUpLearnset,
         .teachableLearnset = sScraggyTeachableLearnset,
         .eggMoveLearnset = sScraggyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_SCRAFTY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SCRAFTY}),
     },
 
     [SPECIES_SCRAFTY] =
     {
-        .baseHP        = 65,
+        .baseHP        = 70,
         .baseAttack    = 95,
         .baseDefense   = 120,
-        .baseSpeed     = 58,
+        .baseSpeed     = 55,
         .baseSpAttack  = 40,
         .baseSpDefense = 120,
         .types = MON_TYPES(TYPE_DARK, TYPE_FIGHTING),
@@ -4964,10 +4964,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 11,
         .weight = 300,
         .description = COMPOUND_STRING(
-            "Groups of them beat up anything that\n"
-            "enters their territory. The one with the\n"
-            "biggest crest is the group leader, and\n"
-            "is the most respected."),
+            "Gangs of wild Scrafty enter fierce wars\n" // new desc
+            "over territory. They can deal crushing\n"
+            "blows, but their real strength is their\n"
+            "defense, holding back powerful foes easily."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -4997,7 +4997,69 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sScraftyLevelUpLearnset,
         .teachableLearnset = sScraftyTeachableLearnset,
+        .formSpeciesIdTable = sScraftyFormSpeciesIdTable,
+        .formChangeTable = sScraftyFormChangeTable,
     },
+
+    #if P_MEGA_EVOLUTIONS
+    [SPECIES_SCRAFTY_MEGA] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 125,
+        .baseDefense   = 150,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 150,
+        .types = MON_TYPES(TYPE_DARK, TYPE_FIGHTING),
+        .catchRate = 90,
+        .expYield = 171,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_SHED_SHELL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_THICK_LAYERS, ABILITY_THICK_LAYERS, ABILITY_THICK_LAYERS },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Scrafty"),
+        .cryId = CRY_SCRAFTY,
+        .natDexNum = NATIONAL_DEX_SCRAFTY,
+        .categoryName = _("Hoodlum"),
+        .height = 11,
+        .weight = 300,
+        .description = COMPOUND_STRING(
+            "Scrafty that are capable of Mega Evolution\n" // new desc
+            "are highly respected amongst other gangs.\n"
+            "Its hood and outer skin layer become\n"
+            "thicker and stronger than armor."),
+        .pokemonScale = 320,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ScraftyMega,
+        .frontPicSize = MON_COORDS_SIZE(48, 56),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = sAnims_ScraftyMega,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_ScraftyMega,
+        .backPicSize = MON_COORDS_SIZE(48, 64),
+        .backPicYOffset = 5,
+        .backAnimId = BACK_ANIM_GROW,
+        .palette = gMonPalette_ScraftyMega,
+        .shinyPalette = gMonShinyPalette_ScraftyMega,
+        .iconSprite = gMonIcon_ScraftyMega,
+        .iconPalIndex = 0,
+        SHADOW(-1, 8, SHADOW_SIZE_M)
+        FOOTPRINT(Scrafty)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sScraftyLevelUpLearnset,
+        .teachableLearnset = sScraftyTeachableLearnset,
+        .formSpeciesIdTable = sScraftyFormSpeciesIdTable,
+        .formChangeTable = sScraftyFormChangeTable,
+    },
+#endif // P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SCRAGGY
 
 #if P_FAMILY_SIGILYPH

@@ -567,6 +567,8 @@
 #define MUS_PENTEPETAL_CITY         630 // Saffron City Carribean Remix
 #define MUS_PYTHIOS_TOWN            631 // Mt. Moon
 
+#define MUS_LAZ_SOUND_TEST          632
+
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
 #define MUS_NONE                    0xFFFF
