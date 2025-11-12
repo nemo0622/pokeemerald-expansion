@@ -184,8 +184,8 @@ script WakewaterIsle_EventScript_ChooseRandomTrainer
             trainerbattle_no_intro(TRAINER_WAKEWATER_MAURA, format("Our psychic powers... They've failed us!"))
         case TRAINER_WAKEWATER_PIRAEUS:
             clearflag(FLAG_HIDE_WAKEWATER_TRAINER_03)
-            addobject(17) // also walks partner Pokémon up!
-            applymovement(17, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            // addobject(17) // also walks partner Pokémon up!
+            // applymovement(17, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
             addobject(18)
             applymovement(18, WakewaterIsle_Movement_TrainerApproachesPlayer)
             waitmovement(0)
@@ -218,8 +218,8 @@ script WakewaterIsle_EventScript_ChooseRandomTrainer
             trainerbattle_no_intro(TRAINER_WAKEWATER_ALEXANDER, format("Hey, I still have more money than you!"))
         case TRAINER_WAKEWATER_POLYMNIA:
             clearflag(FLAG_HIDE_WAKEWATER_TRAINER_07)
-            addobject(22) // also walks partner Pokémon up!
-            applymovement(22, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            // addobject(22) // also walks partner Pokémon up!
+            // applymovement(22, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
             addobject(23)
             applymovement(23, WakewaterIsle_Movement_TrainerApproachesPlayer)
             waitmovement(0)
@@ -228,8 +228,8 @@ script WakewaterIsle_EventScript_ChooseRandomTrainer
             trainerbattle_no_intro(TRAINER_WAKEWATER_POLYMNIA, format("Ehehe, you're as bold as ever!"))
         case TRAINER_WAKEWATER_OURANI:
             clearflag(FLAG_HIDE_WAKEWATER_TRAINER_08)
-            addobject(24) // also walks partner Pokémon up!
-            applymovement(24, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            // addobject(24) // also walks partner Pokémon up!
+            // applymovement(24, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
             addobject(25)
             applymovement(25, WakewaterIsle_Movement_TrainerApproachesPlayer)
             waitmovement(0)
@@ -238,8 +238,8 @@ script WakewaterIsle_EventScript_ChooseRandomTrainer
             trainerbattle_no_intro(TRAINER_WAKEWATER_OURANI, format("As strong as stone, this one!"))
         case TRAINER_WAKEWATER_KLEIO:
             clearflag(FLAG_HIDE_WAKEWATER_TRAINER_09)
-            addobject(26) // also walks partner Pokémon up!
-            applymovement(26, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            // addobject(26) // also walks partner Pokémon up!
+            // applymovement(26, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
             addobject(27)
             applymovement(27, WakewaterIsle_Movement_TrainerApproachesPlayer)
             waitmovement(0)
@@ -248,8 +248,8 @@ script WakewaterIsle_EventScript_ChooseRandomTrainer
             trainerbattle_no_intro(TRAINER_WAKEWATER_KLEIO, format("Stronger than any Trainer before..."))
         case TRAINER_WAKEWATER_TERPSIKORE:
             clearflag(FLAG_HIDE_WAKEWATER_TRAINER_10)
-            addobject(28) // also walks partner Pokémon up!
-            applymovement(28, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            // addobject(28) // also walks partner Pokémon up!
+            // applymovement(28, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
             addobject(29)
             applymovement(29, WakewaterIsle_Movement_TrainerApproachesPlayer)
             waitmovement(0)
@@ -258,8 +258,8 @@ script WakewaterIsle_EventScript_ChooseRandomTrainer
             trainerbattle_no_intro(TRAINER_WAKEWATER_TERPSIKORE, format("I always enjoy our dances, {PLAYER}!"))
         case TRAINER_WAKEWATER_EUTERPE:
             clearflag(FLAG_HIDE_WAKEWATER_TRAINER_11)
-            addobject(30) // also walks partner Pokémon up!
-            applymovement(30, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            // addobject(30) // also walks partner Pokémon up!
+            // applymovement(30, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
             addobject(31)
             applymovement(31, WakewaterIsle_Movement_TrainerApproachesPlayer)
             waitmovement(0)
@@ -268,8 +268,8 @@ script WakewaterIsle_EventScript_ChooseRandomTrainer
             trainerbattle_no_intro(TRAINER_WAKEWATER_EUTERPE, format("Kehehe! Always a pleasure!"))
         case TRAINER_WAKEWATER_THALIA_AND_MELPOMENE:
             clearflag(FLAG_HIDE_WAKEWATER_TRAINER_12)
-            addobject(32) // also walks partner Pokémon up!
-            applymovement(32, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            // addobject(32) // also walks partner Pokémon up!
+            // applymovement(32, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
             addobject(33)
             applymovement(33, WakewaterIsle_Movement_TrainerApproachesPlayer)
             waitmovement(0)
@@ -278,8 +278,8 @@ script WakewaterIsle_EventScript_ChooseRandomTrainer
             trainerbattle_no_intro(TRAINER_WAKEWATER_THALIA_AND_MELPOMENE, format("Kehehe! Always a pleasure!"))
         case TRAINER_WAKEWATER_RHADINE:
             clearflag(FLAG_HIDE_WAKEWATER_TRAINER_13)
-            addobject(34) // also walks partner Pokémon up!
-            applymovement(34, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            // addobject(34) // also walks partner Pokémon up!
+            // applymovement(34, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
             addobject(35)
             applymovement(35, WakewaterIsle_Movement_TrainerApproachesPlayer)
             waitmovement(0)
@@ -288,8 +288,8 @@ script WakewaterIsle_EventScript_ChooseRandomTrainer
             trainerbattle_no_intro(TRAINER_WAKEWATER_RHADINE, format("As fiery as always!"))
         case TRAINER_WAKEWATER_KALLIOPE:
             clearflag(FLAG_HIDE_WAKEWATER_TRAINER_14)
-            addobject(36) // also walks partner Pokémon up!
-            applymovement(36, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            // addobject(36) // also walks partner Pokémon up!
+            // applymovement(36, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
             addobject(37)
             applymovement(37, WakewaterIsle_Movement_TrainerApproachesPlayer)
             waitmovement(0)
@@ -314,8 +314,8 @@ script WakewaterIsle_EventScript_ChooseRandomTrainer
             trainerbattle_no_intro(TRAINER_WAKEWATER_CHIMERA_ADMIN_F, format("Hm... No wonder we failed to stop you."))
         case TRAINER_WAKEWATER_ANYALIOS:
             clearflag(FLAG_HIDE_WAKEWATER_TRAINER_17)
-            addobject(40) // also walks partner Pokémon up!
-            applymovement(40, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
+            // addobject(40) // also walks partner Pokémon up!
+            // applymovement(40, WakewaterIsle_Movement_TrainerApproachesPlayer) // also walks partner Pokémon up!
             addobject(41)
             applymovement(41, WakewaterIsle_Movement_TrainerApproachesPlayer)
             waitmovement(0)

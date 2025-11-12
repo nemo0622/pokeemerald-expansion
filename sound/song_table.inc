@@ -634,6 +634,7 @@ gSongTable::
 	song mus_pentepetal_city, 0, 0
 	song mus_pythios_town, 0, 0
 	song mus_laz_sound_test, 0, 0
+	song mus_jusmail_town, 0, 0
 
 	.align 2
 dummy_song_header:

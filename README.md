@@ -88,12 +88,12 @@ GREEK PHRASES AND STUFF:
     - Acrisia City - Tom Sanborn, Custom
     - Acrisia University - Oak's Lab
     - Bronze Fields - Route 01 / Route 03
-    - Jusmail Town - MUS_CHERRYGROVE
+    - Jusmail Town - Tom Sanborn, Custom
     - Acrisia Mountains - Route 02
     - Riverwalk Trail - Route 02 / Route 03
     - Kalami City - K.K. Gumbo
     - Wanderer's Woods - Route 05
-    - Pythios Town - Mt. Moon
+    - Pythios Town - Tom Sanborn, Custom
     - Pythios Cemetery - Ruins
     - Erinys Path - Route 04 / Route 02
     - Froslass Cavern - Cave

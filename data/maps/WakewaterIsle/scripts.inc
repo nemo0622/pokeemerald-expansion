@@ -360,10 +360,6 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_3:
 WakewaterIsle_EventScript_ChooseRandomTrainer_4:
 # 186 "data/maps/WakewaterIsle/scripts.pory"
 	clearflag FLAG_HIDE_WAKEWATER_TRAINER_03
-# 187 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 17
-# 188 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 17, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 189 "data/maps/WakewaterIsle/scripts.pory"
 	addobject 18
 # 190 "data/maps/WakewaterIsle/scripts.pory"
@@ -432,10 +428,6 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_7:
 WakewaterIsle_EventScript_ChooseRandomTrainer_8:
 # 220 "data/maps/WakewaterIsle/scripts.pory"
 	clearflag FLAG_HIDE_WAKEWATER_TRAINER_07
-# 221 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 22
-# 222 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 22, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 223 "data/maps/WakewaterIsle/scripts.pory"
 	addobject 23
 # 224 "data/maps/WakewaterIsle/scripts.pory"
@@ -453,10 +445,6 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_8:
 WakewaterIsle_EventScript_ChooseRandomTrainer_9:
 # 230 "data/maps/WakewaterIsle/scripts.pory"
 	clearflag FLAG_HIDE_WAKEWATER_TRAINER_08
-# 231 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 24
-# 232 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 24, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 233 "data/maps/WakewaterIsle/scripts.pory"
 	addobject 25
 # 234 "data/maps/WakewaterIsle/scripts.pory"
@@ -474,10 +462,6 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_9:
 WakewaterIsle_EventScript_ChooseRandomTrainer_10:
 # 240 "data/maps/WakewaterIsle/scripts.pory"
 	clearflag FLAG_HIDE_WAKEWATER_TRAINER_09
-# 241 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 26
-# 242 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 26, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 243 "data/maps/WakewaterIsle/scripts.pory"
 	addobject 27
 # 244 "data/maps/WakewaterIsle/scripts.pory"
@@ -495,10 +479,6 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_10:
 WakewaterIsle_EventScript_ChooseRandomTrainer_11:
 # 250 "data/maps/WakewaterIsle/scripts.pory"
 	clearflag FLAG_HIDE_WAKEWATER_TRAINER_10
-# 251 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 28
-# 252 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 28, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 253 "data/maps/WakewaterIsle/scripts.pory"
 	addobject 29
 # 254 "data/maps/WakewaterIsle/scripts.pory"
@@ -516,10 +496,6 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_11:
 WakewaterIsle_EventScript_ChooseRandomTrainer_12:
 # 260 "data/maps/WakewaterIsle/scripts.pory"
 	clearflag FLAG_HIDE_WAKEWATER_TRAINER_11
-# 261 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 30
-# 262 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 30, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 263 "data/maps/WakewaterIsle/scripts.pory"
 	addobject 31
 # 264 "data/maps/WakewaterIsle/scripts.pory"
@@ -537,10 +513,6 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_12:
 WakewaterIsle_EventScript_ChooseRandomTrainer_13:
 # 270 "data/maps/WakewaterIsle/scripts.pory"
 	clearflag FLAG_HIDE_WAKEWATER_TRAINER_12
-# 271 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 32
-# 272 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 32, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 273 "data/maps/WakewaterIsle/scripts.pory"
 	addobject 33
 # 274 "data/maps/WakewaterIsle/scripts.pory"
@@ -558,10 +530,6 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_13:
 WakewaterIsle_EventScript_ChooseRandomTrainer_14:
 # 280 "data/maps/WakewaterIsle/scripts.pory"
 	clearflag FLAG_HIDE_WAKEWATER_TRAINER_13
-# 281 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 34
-# 282 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 34, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 283 "data/maps/WakewaterIsle/scripts.pory"
 	addobject 35
 # 284 "data/maps/WakewaterIsle/scripts.pory"
@@ -579,10 +547,6 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_14:
 WakewaterIsle_EventScript_ChooseRandomTrainer_15:
 # 290 "data/maps/WakewaterIsle/scripts.pory"
 	clearflag FLAG_HIDE_WAKEWATER_TRAINER_14
-# 291 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 36
-# 292 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 36, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 293 "data/maps/WakewaterIsle/scripts.pory"
 	addobject 37
 # 294 "data/maps/WakewaterIsle/scripts.pory"
@@ -634,10 +598,6 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_17:
 WakewaterIsle_EventScript_ChooseRandomTrainer_18:
 # 316 "data/maps/WakewaterIsle/scripts.pory"
 	clearflag FLAG_HIDE_WAKEWATER_TRAINER_17
-# 317 "data/maps/WakewaterIsle/scripts.pory"
-	addobject 40
-# 318 "data/maps/WakewaterIsle/scripts.pory"
-	applymovement 40, WakewaterIsle_Movement_TrainerApproachesPlayer
 # 319 "data/maps/WakewaterIsle/scripts.pory"
 	addobject 41
 # 320 "data/maps/WakewaterIsle/scripts.pory"

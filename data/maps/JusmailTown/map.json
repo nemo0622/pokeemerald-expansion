@@ -2,7 +2,7 @@
   "id": "MAP_JUSMAIL_TOWN",
   "name": "JusmailTown",
   "layout": "LAYOUT_JUSMAIL_TOWN",
-  "music": "MUS_CHERRYGROVE",
+  "music": "MUS_JUSMAIL_TOWN",
   "region_map_section": "MAPSEC_JUSMAIL_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

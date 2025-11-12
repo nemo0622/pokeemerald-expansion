@@ -217,7 +217,7 @@ $(MID_SUBDIR)/mus_victory_league.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_caught.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G025 -V080
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_encounter_cool.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G063 -V086
@@ -700,6 +700,9 @@ $(MID_SUBDIR)/mus_pythios_town.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/mus_laz_sound_test.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_jusmail_town.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
 
 $(MID_SUBDIR)/ph_choice_blend.s: %.s: %.mid
