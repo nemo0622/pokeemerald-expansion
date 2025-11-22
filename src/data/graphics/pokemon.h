@@ -4471,6 +4471,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
     const u32 gMonFrontPic_MeganiumF[] = INCBIN_U32("graphics/pokemon/meganium/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_MeganiumF[] = INCBIN_U32("graphics/pokemon/meganium/backf.4bpp.lz");
+
+    const u32 gMonFrontPic_MeganiumMega[] = INCBIN_U32("graphics/pokemon/meganium/mega/front.4bpp.lz");
+    const u32 gMonPalette_MeganiumMega[] = INCBIN_U32("graphics/pokemon/meganium/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_MeganiumMega[] = INCBIN_U32("graphics/pokemon/meganium/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_MeganiumMega[] = INCBIN_U32("graphics/pokemon/meganium/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_MeganiumMega[] = INCBIN_U8("graphics/pokemon/meganium/mega/icon.4bpp");
 #endif //P_FAMILY_CHIKORITA
 
 #if P_FAMILY_CYNDAQUIL
@@ -4586,6 +4592,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Feraligatr[] = INCBIN_U32("graphics/pokemon/feraligatr/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+    const u32 gMonFrontPic_FeraligatrMega[] = INCBIN_U32("graphics/pokemon/feraligatr/mega/front.4bpp.lz");
+    const u32 gMonPalette_FeraligatrMega[] = INCBIN_U32("graphics/pokemon/feraligatr/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_FeraligatrMega[] = INCBIN_U32("graphics/pokemon/feraligatr/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_FeraligatrMega[] = INCBIN_U32("graphics/pokemon/feraligatr/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_FeraligatrMega[] = INCBIN_U8("graphics/pokemon/feraligatr/mega/icon.4bpp");
 #endif //P_FAMILY_TOTODILE
 
 #if P_FAMILY_SENTRET
@@ -8896,6 +8907,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Froslass[] = INCBIN_U32("graphics/pokemon/froslass/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+    const u32 gMonFrontPic_FroslassMega[] = INCBIN_U32("graphics/pokemon/froslass/mega/front.4bpp.lz");
+    const u32 gMonPalette_FroslassMega[] = INCBIN_U32("graphics/pokemon/froslass/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_FroslassMega[] = INCBIN_U32("graphics/pokemon/froslass/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_FroslassMega[] = INCBIN_U32("graphics/pokemon/froslass/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_FroslassMega[] = INCBIN_U8("graphics/pokemon/froslass/mega/icon.4bpp");
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_SNORUNT
 
@@ -13520,6 +13536,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Chandelure[] = INCBIN_U32("graphics/pokemon/chandelure/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+    const u32 gMonFrontPic_ChandelureMega[] = INCBIN_U32("graphics/pokemon/chandelure/mega/front.4bpp.lz");
+    const u32 gMonPalette_ChandelureMega[] = INCBIN_U32("graphics/pokemon/chandelure/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_ChandelureMega[] = INCBIN_U32("graphics/pokemon/chandelure/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_ChandelureMega[] = INCBIN_U32("graphics/pokemon/chandelure/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_ChandelureMega[] = INCBIN_U8("graphics/pokemon/chandelure/mega/icon.4bpp");
 #endif //P_FAMILY_LITWICK
 
 #if P_FAMILY_AXEW
@@ -15555,6 +15576,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Dragalge[] = INCBIN_U32("graphics/pokemon/dragalge/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+    const u32 gMonFrontPic_DragalgeMega[] = INCBIN_U32("graphics/pokemon/dragalge/mega/front.4bpp.lz");
+    const u32 gMonPalette_DragalgeMega[] = INCBIN_U32("graphics/pokemon/dragalge/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_DragalgeMega[] = INCBIN_U32("graphics/pokemon/dragalge/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_DragalgeMega[] = INCBIN_U32("graphics/pokemon/dragalge/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_DragalgeMega[] = INCBIN_U8("graphics/pokemon/dragalge/mega/icon.4bpp");
 #endif //P_FAMILY_SKRELP
 
 #if P_FAMILY_CLAUNCHER

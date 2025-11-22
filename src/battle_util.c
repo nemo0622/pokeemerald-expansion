@@ -370,7 +370,7 @@ void HandleAction_UseMove(void)
         }
     }
 
-    if ((GetBattlerSide(gBattlerAttacker) == GetBattlerSide(gBattlerTarget))
+    else if ((GetBattlerSide(gBattlerAttacker) == GetBattlerSide(gBattlerTarget))
      && (!IsBattlerAlive(gBattlerTarget) || gProtectStructs[BATTLE_PARTNER(gBattlerAttacker)].usedAllySwitch))
     {
         gBattlescriptCurrInstr = BattleScript_FailedFromAtkCanceler;
@@ -4641,6 +4641,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_DROUGHT:
+        case ABILITY_FLOWER_GIFT:
             if (TryChangeBattleWeather(battler, ENUM_WEATHER_SUN, TRUE))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_DroughtActivates);

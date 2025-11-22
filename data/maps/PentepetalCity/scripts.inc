@@ -1443,7 +1443,7 @@ PentepetalCity_EventScript_RaniaChimeraEvent_Text_1:
 	.string "You're an incredible Trainer,\n"
 	.string "{PLAYER}! You'll be able to handle\l"
 	.string "these Team Chimera thugs, no problem.\p"
-	.string "Here, let me here your Pokémon. Then\n"
+	.string "Here, let me heal your Pokémon. Then\n"
 	.string "follow me to where Team Chimera is\l"
 	.string "hiding!$"
 

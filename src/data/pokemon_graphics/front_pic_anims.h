@@ -2377,6 +2377,8 @@ static const union AnimCmd sAnim_Meganium_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(MeganiumMega);
 #endif //P_FAMILY_CHIKORITA
 
 #if P_FAMILY_CYNDAQUIL
@@ -2435,6 +2437,8 @@ static const union AnimCmd sAnim_Feraligatr_1[] =
     ANIMCMD_FRAME(0, 40),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(FeraligatrMega);
 #endif //P_FAMILY_TOTODILE
 
 #if P_FAMILY_SENTRET
@@ -4930,6 +4934,8 @@ static const union AnimCmd sAnim_Froslass_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(FroslassMega);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_SNORUNT
 
@@ -7543,6 +7549,8 @@ static const union AnimCmd sAnim_Chandelure_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(ChandelureMega);
 #endif //P_FAMILY_LITWICK
 
 #if P_FAMILY_AXEW
@@ -8590,6 +8598,8 @@ static const union AnimCmd sAnim_Dragalge_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(DragalgeMega);
 #endif //P_FAMILY_SKRELP
 
 #if P_FAMILY_CLAUNCHER
@@ -10852,6 +10862,7 @@ SINGLE_ANIMATION(Mew);
 SINGLE_ANIMATION(Chikorita);
 SINGLE_ANIMATION(Bayleef);
 SINGLE_ANIMATION(Meganium);
+SINGLE_ANIMATION(MeganiumMega);
 #endif //P_FAMILY_CHIKORITA
 #if P_FAMILY_CYNDAQUIL
 SINGLE_ANIMATION(Cyndaquil);
@@ -10865,6 +10876,7 @@ SINGLE_ANIMATION(TyphlosionHisuian);
 SINGLE_ANIMATION(Totodile);
 SINGLE_ANIMATION(Croconaw);
 SINGLE_ANIMATION(Feraligatr);
+SINGLE_ANIMATION(FeraligatrMega);
 #endif //P_FAMILY_TOTODILE
 #if P_FAMILY_SENTRET
 SINGLE_ANIMATION(Sentret);
@@ -11416,6 +11428,7 @@ SINGLE_ANIMATION(GlalieMega);
 #endif //P_MEGA_EVOLUTIONS
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Froslass);
+SINGLE_ANIMATION(FroslassMega);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_SNORUNT
 #if P_FAMILY_SPHEAL
@@ -11944,6 +11957,7 @@ SINGLE_ANIMATION(Beheeyem);
 SINGLE_ANIMATION(Litwick);
 SINGLE_ANIMATION(Lampent);
 SINGLE_ANIMATION(Chandelure);
+SINGLE_ANIMATION(ChandelureMega);
 #endif //P_FAMILY_LITWICK
 #if P_FAMILY_AXEW
 SINGLE_ANIMATION(Axew);
@@ -12150,6 +12164,7 @@ SINGLE_ANIMATION(Barbaracle);
 #if P_FAMILY_SKRELP
 SINGLE_ANIMATION(Skrelp);
 SINGLE_ANIMATION(Dragalge);
+SINGLE_ANIMATION(DragalgeMega);
 #endif //P_FAMILY_SKRELP
 #if P_FAMILY_CLAUNCHER
 SINGLE_ANIMATION(Clauncher);

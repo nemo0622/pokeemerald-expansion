@@ -872,6 +872,7 @@ struct
     [MENU_FOLLOWER_SET] = {gText_FollowerSet, CursorCb_FollowerSet},
     [MENU_FOLLOWER_RETURN] = {gText_FollowerReturn, CursorCb_FollowerReturn},
     [MENU_FOLLOWER_UNSET] = {gText_FollowerUnset, CursorCb_FollowerUnset},
+    [MENU_STAT_EDIT] = {gText_StatEditor, CursorCb_StatEdit},
 };
 
 static const u8 sPartyMenuAction_SummarySwitchCancel[] = {MENU_SUMMARY, MENU_SWITCH, MENU_CANCEL1};

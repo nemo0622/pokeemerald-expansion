@@ -1824,6 +1824,16 @@ extern const u32 gItemIcon_Falinksite[];
 extern const u32 gItemIconPalette_Falinksite[];
 extern const u32 gItemIcon_Scraftite[];
 extern const u32 gItemIconPalette_Scraftite[];
+extern const u32 gItemIcon_Meganiumite[];
+extern const u32 gItemIconPalette_Meganiumite[];
+extern const u32 gItemIcon_Feraligatite[];
+extern const u32 gItemIconPalette_Feraligatite[];
+extern const u32 gItemIcon_Froslassite[];
+extern const u32 gItemIconPalette_Froslassite[];
+extern const u32 gItemIcon_Chandelurite[];
+extern const u32 gItemIconPalette_Chandelurite[];
+extern const u32 gItemIcon_Dragalgite[];
+extern const u32 gItemIconPalette_Dragalgite[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];

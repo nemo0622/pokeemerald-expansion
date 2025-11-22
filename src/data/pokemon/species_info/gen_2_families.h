@@ -200,6 +200,71 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sMeganiumLevelUpLearnset,
         .teachableLearnset = sMeganiumTeachableLearnset,
+        .formSpeciesIdTable = sMeganiumFormSpeciesIdTable,
+        .formChangeTable = sMeganiumFormChangeTable,
+    },
+
+    [SPECIES_MEGANIUM_MEGA] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 92,
+        .baseDefense   = 115,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 143,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 263,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 236,
+    #else
+        .expYield = 208,
+    #endif
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_THICK_LAYERS, ABILITY_THICK_LAYERS, ABILITY_THICK_LAYERS },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Meganium"),
+        .cryId = CRY_MEGANIUM,
+        .natDexNum = NATIONAL_DEX_MEGANIUM,
+        .categoryName = _("Herb"),
+        .height = 18,
+        .weight = 1005,
+        .description = COMPOUND_STRING(
+            "Mega Meganium's flowers produce an aroma\n" // new 
+            "stronger than any perfume. Its fur grows\n"
+            "much thicker due to the Mega power,\n"
+            "drastically increasing Meganium's defense."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 277,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_MeganiumMega,
+        .frontPicSize = MON_COORDS_SIZE(48, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_MeganiumMega,
+        .frontAnimId = ANIM_GROW_VIBRATE,
+        .backPic = gMonBackPic_MeganiumMega,
+        .backPicSize = MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 2,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_MeganiumMega,
+        .shinyPalette = gMonShinyPalette_MeganiumMega,
+        .iconSprite = gMonIcon_MeganiumMega,
+        .iconPalIndex = 1,
+        SHADOW(4, 11, SHADOW_SIZE_L)
+        FOOTPRINT(Meganium)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sMeganiumLevelUpLearnset,
+        .teachableLearnset = sMeganiumTeachableLearnset,
+        .formSpeciesIdTable = sMeganiumFormSpeciesIdTable,
+        .formChangeTable = sMeganiumFormChangeTable,
     },
 #endif //P_FAMILY_CHIKORITA
 
@@ -663,6 +728,72 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sFeraligatrLevelUpLearnset,
         .teachableLearnset = sFeraligatrTeachableLearnset,
+        .formSpeciesIdTable = sFeraligatrFormSpeciesIdTable,
+        .formChangeTable = sFeraligatrFormChangeTable,
+    },
+
+    [SPECIES_FERALIGATR_MEGA] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 161,
+        .baseDefense   = 135,
+        .baseSpeed     = 72,
+        .baseSpAttack  = 89,
+        .baseSpDefense = 103,
+        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 265,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 239,
+    #else
+        .expYield = 210,
+    #endif
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_STRONG_JAW, ABILITY_STRONG_JAW, ABILITY_STRONG_JAW },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Feraligatr"),
+        .cryId = CRY_FERALIGATR,
+        .natDexNum = NATIONAL_DEX_FERALIGATR,
+        .categoryName = _("Big Jaw"),
+        .height = 23,
+        .weight = 888,
+        .description = COMPOUND_STRING(
+            "Mega Feraligatr's hood-like appendage and\n" // new
+            "arm spikes make it resemble an overgrown\n"
+            "Totodile. Don't be fooled, though - it can\n"
+            "deliver deadly blows by snapping them shut!"),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 342,
+        .trainerOffset = 7,
+        .frontPic = gMonFrontPic_FeraligatrMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_FeraligatrMega,
+        .frontAnimId = ANIM_H_SHAKE,
+        .frontAnimDelay = 5,
+        .backPic = gMonBackPic_FeraligatrMega,
+        .backPicSize = MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 2,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_FeraligatrMega,
+        .shinyPalette = gMonShinyPalette_FeraligatrMega,
+        .iconSprite = gMonIcon_FeraligatrMega,
+        .iconPalIndex = 0,
+        SHADOW(2, 6, SHADOW_SIZE_L)
+        FOOTPRINT(Feraligatr)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sFeraligatrLevelUpLearnset,
+        .teachableLearnset = sFeraligatrTeachableLearnset,
+        .formSpeciesIdTable = sFeraligatrFormSpeciesIdTable,
+        .formChangeTable = sFeraligatrFormChangeTable,
     },
 #endif //P_FAMILY_TOTODILE
 

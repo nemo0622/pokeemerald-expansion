@@ -22,7 +22,52 @@ mapscripts LastlightRoad_MapScripts {
         setobjectaswildencounter(20, ENCOUNTER_LAND)
         setobjectaswildencounter(21, ENCOUNTER_LAND)
         setobjectaswildencounter(22, ENCOUNTER_LAND)
+
+        if((flag(FLAG_HIDE_CHIMERA_AFTER_GROUDON) || flag(FLAG_HIDE_CHIMERA_AFTER_KYOGRE)) && !flag(FLAG_HIDE_RAYQUAZA_DIOXIPPUS))
+        {
+            setflag(FLAG_TEMP_5) // actively doing legend quests
+        }
     }
+}
+
+script LastlightRoad_EventScript_ForceCheckKyogreGroudonCatch
+{
+    lock
+    setvar(VAR_TEMP_6, 0)
+
+    if(flag(FLAG_HIDE_CHIMERA_AFTER_GROUDON) && flag(FLAG_HIDE_CHIMERA_AFTER_KYOGRE))
+    {
+        questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_LEGEND_OF_KYOGRE)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            // fought Kyogre, but quest hasn't been completed! Force complete it
+            addvar(VAR_TEMP_6, 1)
+            delay(20)
+            completequest(QUEST_LEGEND_OF_KYOGRE)
+        }
+        
+        questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_LEGEND_OF_GROUDON)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            // fought Groudon, but quest hasn't been completed! Force complete it
+            addvar(VAR_TEMP_6, 1)
+            delay(20)
+            completequest(QUEST_LEGEND_OF_GROUDON)
+        }
+    }
+
+    if(var(VAR_TEMP_6) >= 1)
+    {
+        // One or both failsafes triggered, so clear that FLAG_CAUGHT_BOTH_WEATHER_LEGENDS flag and stuff
+        msgbox(format("Kyogre and Groudon have both been safely kept from Team Chimera! All that remains is {COLOR GREEN}Rayquaza{COLOR DARK_GRAY}, chased down by {COLOR RED}Kalliope{COLOR DARK_GRAY}, at the {COLOR GREEN}Tower of Dioxippus{COLOR DARK_GRAY}."))
+        closemessage
+        setflag(FLAG_CAUGHT_BOTH_WEATHER_LEGENDS)
+        removeobject(2)
+        removeobject(3)
+    }
+    closemessage
+    releaseall
+    end
 }
 
 script LastlightRoad_EventScript_DirectionSign

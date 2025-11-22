@@ -183,10 +183,10 @@ PalatiCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_2:
 # 53 "data/maps/PalatiCity_PokemonCenter/scripts.pory"
 	.string "Chaire! I'm a student from the Acrisia\n"
 	.string "University.\p"
-	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all\n"
-	.string "Pokémon{COLOR DARK_GRAY} found in Palati City. If you've\l"
-	.string "caught all the Pokémon here, please let\l"
-	.string "me know.$"
+	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
+	.string "and Water Pokémon{COLOR DARK_GRAY} found in Palati City.\l"
+	.string "If you've caught all the Pokémon here,\l"
+	.string "please let me know.$"
 
 PalatiCity_PokemonCenter_EventScript_UniversityStudentRouteCheck_Text_3:
 # 61 "data/maps/PalatiCity_PokemonCenter/scripts.pory"

@@ -1653,8 +1653,13 @@
 #define SPECIES_GRENINJA_MEGA                           1547
 #define SPECIES_FALINKS_MEGA                            1548
 #define SPECIES_SCRAFTY_MEGA                            1549
+#define SPECIES_MEGANIUM_MEGA                           1550
+#define SPECIES_FERALIGATR_MEGA                         1551
+#define SPECIES_FROSLASS_MEGA                           1552
+#define SPECIES_CHANDELURE_MEGA                         1553
+#define SPECIES_DRAGALGE_MEGA                           1554
 
-#define SPECIES_EGG (SPECIES_SCRAFTY_MEGA + 1)
+#define SPECIES_EGG (SPECIES_DRAGALGE_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -308,7 +308,13 @@ script MarmaroIsland_EventScript_Beauty
         msgbox(format("Chaire! Are you here to check out the Altaria nest?\p Oh, right! Do you have a {COLOR GREEN}Pokémon Egg in your Party{COLOR DARK_GRAY} that I could hold? I've always wanted to!"))
         closemessage
 
-        checkforspecies(SPECIES_EGG, OPEN_PARTY_SCREEN, MarmaroIsland_EventScript_Beauty_ReactToEgg) // goto that script if have egg in party
+        special(ChoosePartyMon)
+        waitstate
+        special(IsSelectedMonEgg)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            goto(MarmaroIsland_EventScript_Beauty_ReactToEgg)
+        }
 
         // by getting here, you didn't choose an egg from party menu
         speakername("Beauty")

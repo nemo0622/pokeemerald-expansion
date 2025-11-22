@@ -2,7 +2,7 @@
   "id": "MAP_BRONZE_PASS_NORTH",
   "name": "BronzePass_North",
   "layout": "LAYOUT_BRONZE_PASS_NORTH",
-  "music": "MUS_ROUTE_01",
+  "music": "MUS_LAZ_SOUND_TEST",
   "region_map_section": "MAPSEC_BRONZE_PASS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

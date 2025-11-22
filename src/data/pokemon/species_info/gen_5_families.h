@@ -8961,6 +8961,65 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sChandelureLevelUpLearnset,
         .teachableLearnset = sChandelureTeachableLearnset,
+        .formSpeciesIdTable = sChandelureFormSpeciesIdTable,
+        .formChangeTable = sChandelureFormChangeTable,
+    },
+
+    [SPECIES_CHANDELURE_MEGA] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 65,
+        .baseDefense   = 110,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 175,
+        .baseSpDefense = 120,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_FIRE),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 260 : 234,
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_SHADOW_TAG, ABILITY_SHADOW_TAG, ABILITY_SHADOW_TAG },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Chandelure"),
+        .cryId = CRY_CHANDELURE,
+        .natDexNum = NATIONAL_DEX_CHANDELURE,
+        .categoryName = _("Luring"),
+        .height = 10,
+        .weight = 343,
+        .description = COMPOUND_STRING(
+            "Mega Chandelure burns with the power of\n" // new desc
+            "malicious spirits, if old tales can be\n"
+            "believed. Even brave foes may cower in\n"
+            "fear when faced with its glowing eye."),
+        .pokemonScale = 305,
+        .pokemonOffset = 7,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ChandelureMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = sAnims_ChandelureMega,
+        .frontAnimId = ANIM_H_SLIDE_WOBBLE,
+        .enemyMonElevation = 6,
+        .backPic = gMonBackPic_ChandelureMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = gMonPalette_ChandelureMega,
+        .shinyPalette = gMonShinyPalette_ChandelureMega,
+        .iconSprite = gMonIcon_ChandelureMega,
+        .iconPalIndex = 2,
+        SHADOW(1, 15, SHADOW_SIZE_S)
+        FOOTPRINT(Chandelure)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sChandelureLevelUpLearnset,
+        .teachableLearnset = sChandelureTeachableLearnset,
+        .formSpeciesIdTable = sChandelureFormSpeciesIdTable,
+        .formChangeTable = sChandelureFormChangeTable,
     },
 #endif //P_FAMILY_LITWICK
 

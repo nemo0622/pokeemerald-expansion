@@ -331,12 +331,16 @@ TowerOfDioxippus_Top_EventScript_RayquazaEvent_5:
 # 199 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	completequest QUEST_LEGEND_OF_RAYQUAZA
 # 200 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	closemessage
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LEGEND_OF_KYOGRE
 # 201 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	setflag FLAG_DEFEATED_KALLIOPE_DIOXIPPUS
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LEGEND_OF_GROUDON
 # 202 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	clearflag FLAG_HIDE_RANIA_AND_NIKO_DIOXIPPUS
+	closemessage
 # 203 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	setflag FLAG_DEFEATED_KALLIOPE_DIOXIPPUS
+# 204 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	clearflag FLAG_HIDE_RANIA_AND_NIKO_DIOXIPPUS
+# 205 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	release
 	end
 
@@ -355,169 +359,169 @@ TowerOfDioxippus_Top_EventScript_RayquazaEvent_7:
 	goto TowerOfDioxippus_Top_EventScript_RayquazaEvent_5
 
 
-# 212 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 214 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 TowerOfDioxippus_Top_Movement_KalliopeMoveNextToRayquaza:
-# 214 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_left
-# 214 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_left
-# 215 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_up
-# 215 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_up
 # 216 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	face_down
+	walk_left
+# 216 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_left
 # 217 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	step_end
-
-# 220 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-TowerOfDioxippus_Top_Movement_RagingBoltMoveNextToRayquaza:
-# 222 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_left
-# 222 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_left
-# 222 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_left
-# 223 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	walk_up
-# 224 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 217 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_up
+# 218 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	face_down
+# 219 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	step_end
+
+# 222 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+TowerOfDioxippus_Top_Movement_RagingBoltMoveNextToRayquaza:
+# 224 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_left
+# 224 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_left
+# 224 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_left
 # 225 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_up
+# 226 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	face_down
+# 227 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	step_end
 
-# 228 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-TowerOfDioxippus_Top_Movement_KalliopePrepareToFight:
 # 230 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_down
-# 231 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_left
+TowerOfDioxippus_Top_Movement_KalliopePrepareToFight:
 # 232 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	face_right
-# 233 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	step_end
-
-# 236 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-TowerOfDioxippus_Top_Movement_RagingBoltPrepareToFight:
-# 238 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_right
-# 238 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_right
-# 239 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	walk_down
-# 240 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 233 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_left
+# 234 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	face_right
+# 235 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	step_end
+
+# 238 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+TowerOfDioxippus_Top_Movement_RagingBoltPrepareToFight:
+# 240 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_right
+# 240 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_right
 # 241 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_down
+# 242 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	face_right
+# 243 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	step_end
 
-# 244 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-TowerOfDioxippus_Top_Movement_PlayerPrepareToFight:
 # 246 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_up
-# 247 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_right
-# 247 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_right
+TowerOfDioxippus_Top_Movement_PlayerPrepareToFight:
 # 248 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	face_left
-# 249 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	step_end
-
-# 257 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-TowerOfDioxippus_Top_Movement_AdminFApproachKalliope:
-# 259 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_fast_left
-# 259 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_fast_left
-# 259 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_fast_left
-# 260 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_fast_up
-# 260 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_fast_up
-# 261 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	face_up
-# 262 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	step_end
-
-# 265 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-TowerOfDioxippus_Top_Movement_AdminMApproachKalliope:
-# 267 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_fast_left
-# 267 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_fast_left
-# 268 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_fast_up
-# 268 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_fast_up
-# 269 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	face_up
-# 270 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	step_end
-
-# 273 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-TowerOfDioxippus_Top_Movement_PlayerApproachRayquaza:
-# 275 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_left
-# 275 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	walk_left
-# 276 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	walk_up
-# 277 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 249 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_right
+# 249 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_right
+# 250 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	face_left
+# 251 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	step_end
+
+# 259 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+TowerOfDioxippus_Top_Movement_AdminFApproachKalliope:
+# 261 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_fast_left
+# 261 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_fast_left
+# 261 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_fast_left
+# 262 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_fast_up
+# 262 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_fast_up
+# 263 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	face_up
+# 264 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	step_end
+
+# 267 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+TowerOfDioxippus_Top_Movement_AdminMApproachKalliope:
+# 269 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_fast_left
+# 269 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_fast_left
+# 270 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_fast_up
+# 270 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_fast_up
+# 271 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	face_up
+# 272 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	step_end
+
+# 275 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+TowerOfDioxippus_Top_Movement_PlayerApproachRayquaza:
+# 277 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_left
+# 277 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_left
 # 278 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	walk_up
+# 279 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	face_up
+# 280 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	step_end
 
 TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly::
-# 283 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 285 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	lock
-# 284 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 286 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	goto_if_set FLAG_CAUGHT_RAYQUAZA, TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_2
-# 291 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	msgbox TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_Text_1, MSGBOX_YESNO
-# 292 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	closemessage
 # 293 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	msgbox TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_Text_1, MSGBOX_YESNO
+# 294 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	closemessage
+# 295 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_5
-# 300 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	seteventmon SPECIES_RAYQUAZA, 50
-# 301 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
 # 302 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	waitstate
+	seteventmon SPECIES_RAYQUAZA, 50
 # 303 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	special BattleSetup_StartLegendaryBattle
 # 304 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	switch VAR_RESULT
+	waitstate
+# 305 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
 # 306 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	switch VAR_RESULT
+# 308 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	case B_OUTCOME_CAUGHT, TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_9
-# 311 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 313 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	msgbox TowerOfDioxippus_Top_EventScript_RayquazaEvent_Text_21
-# 312 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 314 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	closemessage
 TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_1:
-# 316 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 318 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	release
 	end
 
 TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_2:
-# 286 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 288 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	msgbox TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_Text_0
-# 287 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 289 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	closemessage
 	goto TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_1
 
 TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_5:
-# 295 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 297 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	release
 	end
 
 TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_9:
-# 307 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	msgbox TowerOfDioxippus_Top_EventScript_RayquazaEvent_Text_20
-# 308 "data/maps/TowerOfDioxippus_Top/scripts.pory"
-	closemessage
 # 309 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	msgbox TowerOfDioxippus_Top_EventScript_RayquazaEvent_Text_20
+# 310 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+	closemessage
+# 311 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	setflag FLAG_CAUGHT_RAYQUAZA
 	goto TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_1
 
@@ -664,14 +668,14 @@ TowerOfDioxippus_Top_EventScript_RayquazaEvent_Text_21:
 	.string "successfully caught.$"
 
 TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_Text_0:
-# 286 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 288 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	.string "A slight glimmer can be seen in the air\n"
 	.string "nearby. {COLOR GREEN}Rayquaza{COLOR DARK_GRAY}'s presence must have\l"
 	.string "imbued the Tower of Dioxippus with\l"
 	.string "special power.$"
 
 TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_Text_1:
-# 291 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 293 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	.string "A slight glimmer can be seen around the\n"
 	.string "peak of the Tower of Dioxippus, home of\l"
 	.string "{COLOR GREEN}Rayquaza{COLOR DARK_GRAY}, Lord of the Sky.\p"
@@ -680,5 +684,5 @@ TowerOfDioxippus_Top_EventScript_InteractWithRayquazaSparkly_Text_1:
 	.string "{COLOR GREEN}Rayquaza{COLOR DARK_GRAY}?$"
 
 TowerOfDioxippus_Top_Text_KalliopeDefeated::
-# 252 "data/maps/TowerOfDioxippus_Top/scripts.pory"
+# 254 "data/maps/TowerOfDioxippus_Top/scripts.pory"
 	.string "My plans... They're all falling apart...$"

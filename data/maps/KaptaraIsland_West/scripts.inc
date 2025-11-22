@@ -57,489 +57,508 @@ KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
 
 KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME:
 # 28 "data/maps/KaptaraIsland_West/scripts.pory"
-	goto_if_set FLAG_SYS_CTRL_OBJ_DELETE, KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME_1
+	goto_if_set FLAG_SYS_CTRL_OBJ_DELETE, KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME_2
+KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME_1:
+# 33 "data/maps/KaptaraIsland_West/scripts.pory"
+	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_LEGEND_OF_KYOGRE
+# 34 "data/maps/KaptaraIsland_West/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME_4
 	return
 
-KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME_1:
+KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME_2:
 # 30 "data/maps/KaptaraIsland_West/scripts.pory"
 	removeobject 1
+	goto KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME_1
+
+KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME_4:
+# 36 "data/maps/KaptaraIsland_West/scripts.pory"
+	getcaughtmon SPECIES_KYOGRE
+# 37 "data/maps/KaptaraIsland_West/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME_6
+	return
+
+KaptaraIsland_West_MapScripts_MAP_SCRIPT_ON_RESUME_6:
+# 40 "data/maps/KaptaraIsland_West/scripts.pory"
+	completequest QUEST_LEGEND_OF_KYOGRE
 	return
 
 
 KaptaraIsland_West_EventScript_DirectionSign::
-# 37 "data/maps/KaptaraIsland_West/scripts.pory"
+# 48 "data/maps/KaptaraIsland_West/scripts.pory"
 	lock
-# 38 "data/maps/KaptaraIsland_West/scripts.pory"
+# 49 "data/maps/KaptaraIsland_West/scripts.pory"
 	msgbox KaptaraIsland_West_EventScript_DirectionSign_Text_0
-# 39 "data/maps/KaptaraIsland_West/scripts.pory"
+# 50 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
-# 40 "data/maps/KaptaraIsland_West/scripts.pory"
+# 51 "data/maps/KaptaraIsland_West/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Dani::
-# 46 "data/maps/KaptaraIsland_West/scripts.pory"
+# 57 "data/maps/KaptaraIsland_West/scripts.pory"
 	trainerbattle_single TRAINER_KAPTARAWEST_DANI, KaptaraIsland_West_Text_Trainer_KaptaraWest_DaniIntro, KaptaraIsland_West_Text_Trainer_KaptaraWest_DaniDefeat
-# 47 "data/maps/KaptaraIsland_West/scripts.pory"
+# 58 "data/maps/KaptaraIsland_West/scripts.pory"
 	speakername KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Dani_Text_0
-# 48 "data/maps/KaptaraIsland_West/scripts.pory"
+# 59 "data/maps/KaptaraIsland_West/scripts.pory"
 	msgbox KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Dani_Text_1
-# 49 "data/maps/KaptaraIsland_West/scripts.pory"
+# 60 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
-# 50 "data/maps/KaptaraIsland_West/scripts.pory"
+# 61 "data/maps/KaptaraIsland_West/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Barrel::
-# 64 "data/maps/KaptaraIsland_West/scripts.pory"
+# 75 "data/maps/KaptaraIsland_West/scripts.pory"
 	trainerbattle_single TRAINER_KAPTARAWEST_BARREL, KaptaraIsland_West_Text_Trainer_KaptaraWest_BarrelIntro, KaptaraIsland_West_Text_Trainer_KaptaraWest_BarrelDefeat
-# 65 "data/maps/KaptaraIsland_West/scripts.pory"
+# 76 "data/maps/KaptaraIsland_West/scripts.pory"
 	speakername KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Barrel_Text_0
-# 66 "data/maps/KaptaraIsland_West/scripts.pory"
+# 77 "data/maps/KaptaraIsland_West/scripts.pory"
 	msgbox KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Barrel_Text_1
-# 67 "data/maps/KaptaraIsland_West/scripts.pory"
+# 78 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
-# 68 "data/maps/KaptaraIsland_West/scripts.pory"
+# 79 "data/maps/KaptaraIsland_West/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Sallador::
-# 82 "data/maps/KaptaraIsland_West/scripts.pory"
+# 93 "data/maps/KaptaraIsland_West/scripts.pory"
 	trainerbattle_single TRAINER_KAPTARAWEST_SALLADOR, KaptaraIsland_West_Text_Trainer_KaptaraWest_SalladorIntro, KaptaraIsland_West_Text_Trainer_KaptaraWest_SalladorDefeat
-# 83 "data/maps/KaptaraIsland_West/scripts.pory"
+# 94 "data/maps/KaptaraIsland_West/scripts.pory"
 	speakername KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Sallador_Text_0
-# 84 "data/maps/KaptaraIsland_West/scripts.pory"
+# 95 "data/maps/KaptaraIsland_West/scripts.pory"
 	msgbox KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Sallador_Text_1
-# 85 "data/maps/KaptaraIsland_West/scripts.pory"
+# 96 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
-# 86 "data/maps/KaptaraIsland_West/scripts.pory"
+# 97 "data/maps/KaptaraIsland_West/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Penny::
-# 100 "data/maps/KaptaraIsland_West/scripts.pory"
+# 111 "data/maps/KaptaraIsland_West/scripts.pory"
 	trainerbattle_single TRAINER_KAPTARAWEST_PENNY, KaptaraIsland_West_Text_Trainer_KaptaraWest_PennyIntro, KaptaraIsland_West_Text_Trainer_KaptaraWest_PennyDefeat
-# 101 "data/maps/KaptaraIsland_West/scripts.pory"
+# 112 "data/maps/KaptaraIsland_West/scripts.pory"
 	speakername KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Penny_Text_0
-# 102 "data/maps/KaptaraIsland_West/scripts.pory"
+# 113 "data/maps/KaptaraIsland_West/scripts.pory"
 	msgbox KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Penny_Text_1
-# 103 "data/maps/KaptaraIsland_West/scripts.pory"
+# 114 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
-# 104 "data/maps/KaptaraIsland_West/scripts.pory"
+# 115 "data/maps/KaptaraIsland_West/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Allan::
-# 118 "data/maps/KaptaraIsland_West/scripts.pory"
+# 129 "data/maps/KaptaraIsland_West/scripts.pory"
 	trainerbattle_single TRAINER_KAPTARAWEST_ALLAN, KaptaraIsland_West_Text_Trainer_KaptaraWest_AllanIntro, KaptaraIsland_West_Text_Trainer_KaptaraWest_AllanDefeat
-# 119 "data/maps/KaptaraIsland_West/scripts.pory"
+# 130 "data/maps/KaptaraIsland_West/scripts.pory"
 	speakername KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Allan_Text_0
-# 120 "data/maps/KaptaraIsland_West/scripts.pory"
+# 131 "data/maps/KaptaraIsland_West/scripts.pory"
 	msgbox KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Allan_Text_1
-# 121 "data/maps/KaptaraIsland_West/scripts.pory"
+# 132 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
-# 122 "data/maps/KaptaraIsland_West/scripts.pory"
+# 133 "data/maps/KaptaraIsland_West/scripts.pory"
 	release
 	end
 
 
 KaptaraIsland_West_EventScript_KyogreEvent::
-# 140 "data/maps/KaptaraIsland_West/scripts.pory"
-	lockall
-# 141 "data/maps/KaptaraIsland_West/scripts.pory"
-	ballfollowingmon
-# 142 "data/maps/KaptaraIsland_West/scripts.pory"
-	emote OBJ_EVENT_ID_PLAYER, EMOTE_QUESTION
-# 143 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
-# 144 "data/maps/KaptaraIsland_West/scripts.pory"
-	waitmovement 0
-# 146 "data/maps/KaptaraIsland_West/scripts.pory"
-	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
-# 147 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_1
-# 148 "data/maps/KaptaraIsland_West/scripts.pory"
-	closemessage
-# 149 "data/maps/KaptaraIsland_West/scripts.pory"
-	emote 22, EMOTE_EXCLAM
-# 150 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement 22, Common_Movement_FaceDown
 # 151 "data/maps/KaptaraIsland_West/scripts.pory"
-	waitmovement 0
+	lockall
 # 152 "data/maps/KaptaraIsland_West/scripts.pory"
-	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
+	ballfollowingmon
 # 153 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_2
+	emote OBJ_EVENT_ID_PLAYER, EMOTE_QUESTION
 # 154 "data/maps/KaptaraIsland_West/scripts.pory"
-	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 # 155 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement 22, KaptaraIsland_West_Movement_ChimeraAdminGetInBattlePosition
-# 156 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement 23, KaptaraIsland_West_Movement_WalkingWakeGetInBattlePosition
-# 157 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, KaptaraIsland_West_Movement_PlayerGetInBattlePosition
-# 158 "data/maps/KaptaraIsland_West/scripts.pory"
 	waitmovement 0
-# 159 "data/maps/KaptaraIsland_West/scripts.pory"
-	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_3
-# 160 "data/maps/KaptaraIsland_West/scripts.pory"
-	playmoncry SPECIES_WALKING_WAKE, CRY_MODE_NORMAL
-# 161 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_4
-# 162 "data/maps/KaptaraIsland_West/scripts.pory"
-	waitmoncry
-# 163 "data/maps/KaptaraIsland_West/scripts.pory"
-	closemessage
-# 164 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 10
-# 165 "data/maps/KaptaraIsland_West/scripts.pory"
+# 157 "data/maps/KaptaraIsland_West/scripts.pory"
 	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
-# 166 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_5
-# 167 "data/maps/KaptaraIsland_West/scripts.pory"
+# 158 "data/maps/KaptaraIsland_West/scripts.pory"
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_1
+# 159 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
+# 160 "data/maps/KaptaraIsland_West/scripts.pory"
+	emote 22, EMOTE_EXCLAM
+# 161 "data/maps/KaptaraIsland_West/scripts.pory"
+	applymovement 22, Common_Movement_FaceDown
+# 162 "data/maps/KaptaraIsland_West/scripts.pory"
+	waitmovement 0
+# 163 "data/maps/KaptaraIsland_West/scripts.pory"
+	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
+# 164 "data/maps/KaptaraIsland_West/scripts.pory"
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_2
+# 165 "data/maps/KaptaraIsland_West/scripts.pory"
+	closemessage
+# 166 "data/maps/KaptaraIsland_West/scripts.pory"
+	applymovement 22, KaptaraIsland_West_Movement_ChimeraAdminGetInBattlePosition
+# 167 "data/maps/KaptaraIsland_West/scripts.pory"
+	applymovement 23, KaptaraIsland_West_Movement_WalkingWakeGetInBattlePosition
+# 168 "data/maps/KaptaraIsland_West/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, KaptaraIsland_West_Movement_PlayerGetInBattlePosition
+# 169 "data/maps/KaptaraIsland_West/scripts.pory"
+	waitmovement 0
 # 170 "data/maps/KaptaraIsland_West/scripts.pory"
-	goto_if_unset FLAG_HARD_MODE, KaptaraIsland_West_EventScript_KyogreEvent_2
+	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_3
+# 171 "data/maps/KaptaraIsland_West/scripts.pory"
+	playmoncry SPECIES_WALKING_WAKE, CRY_MODE_NORMAL
+# 172 "data/maps/KaptaraIsland_West/scripts.pory"
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_4
+# 173 "data/maps/KaptaraIsland_West/scripts.pory"
+	waitmoncry
+# 174 "data/maps/KaptaraIsland_West/scripts.pory"
+	closemessage
+# 175 "data/maps/KaptaraIsland_West/scripts.pory"
+	delay 10
 # 176 "data/maps/KaptaraIsland_West/scripts.pory"
+	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
+# 177 "data/maps/KaptaraIsland_West/scripts.pory"
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_5
+# 178 "data/maps/KaptaraIsland_West/scripts.pory"
+	closemessage
+# 181 "data/maps/KaptaraIsland_West/scripts.pory"
+	goto_if_unset FLAG_HARD_MODE, KaptaraIsland_West_EventScript_KyogreEvent_2
+# 187 "data/maps/KaptaraIsland_West/scripts.pory"
 	trainerbattle_no_intro TRAINER_KAPTARAWEST_CHIMERA_ADMIN_HARD, KaptaraIsland_West_Text_ChimeraAdminDefeated
 KaptaraIsland_West_EventScript_KyogreEvent_1:
-# 179 "data/maps/KaptaraIsland_West/scripts.pory"
+# 190 "data/maps/KaptaraIsland_West/scripts.pory"
 	delay 30
-# 180 "data/maps/KaptaraIsland_West/scripts.pory"
+# 191 "data/maps/KaptaraIsland_West/scripts.pory"
 	applymovement 22, Common_Movement_JumpInPlaceRight
-# 181 "data/maps/KaptaraIsland_West/scripts.pory"
-	waitmovement 0
-# 182 "data/maps/KaptaraIsland_West/scripts.pory"
-	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
-# 183 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_6
-# 184 "data/maps/KaptaraIsland_West/scripts.pory"
-	closemessage
-# 185 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 30
-# 186 "data/maps/KaptaraIsland_West/scripts.pory"
-	emote 22, EMOTE_EXCLAM
-# 187 "data/maps/KaptaraIsland_West/scripts.pory"
-	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
-# 188 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_7
-# 189 "data/maps/KaptaraIsland_West/scripts.pory"
-	closemessage
 # 192 "data/maps/KaptaraIsland_West/scripts.pory"
-	fadescreenspeed FADE_TO_WHITE, 2
+	waitmovement 0
 # 193 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 15
+	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
 # 194 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement 22, Common_Movement_FaceUp
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_6
 # 195 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	closemessage
 # 196 "data/maps/KaptaraIsland_West/scripts.pory"
-	waitmovement 0
-# 198 "data/maps/KaptaraIsland_West/scripts.pory"
-	setflag FLAG_HIDE_WEATHER_KAPTARA_ISLAND
-# 199 "data/maps/KaptaraIsland_West/scripts.pory"
-	resetweather
-# 200 "data/maps/KaptaraIsland_West/scripts.pory"
-	doweather
-# 201 "data/maps/KaptaraIsland_West/scripts.pory"
-	clearflag FLAG_HIDE_KYOGRE_KAPTARA_ISLAND
-# 202 "data/maps/KaptaraIsland_West/scripts.pory"
-	addobject 1
-# 203 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 15
-# 204 "data/maps/KaptaraIsland_West/scripts.pory"
-	fadescreen FADE_FROM_WHITE
-# 205 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 10
-# 207 "data/maps/KaptaraIsland_West/scripts.pory"
 	delay 30
-# 208 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
-# 209 "data/maps/KaptaraIsland_West/scripts.pory"
+# 197 "data/maps/KaptaraIsland_West/scripts.pory"
 	emote 22, EMOTE_EXCLAM
+# 198 "data/maps/KaptaraIsland_West/scripts.pory"
+	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
+# 199 "data/maps/KaptaraIsland_West/scripts.pory"
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_7
+# 200 "data/maps/KaptaraIsland_West/scripts.pory"
+	closemessage
+# 203 "data/maps/KaptaraIsland_West/scripts.pory"
+	fadescreenspeed FADE_TO_WHITE, 2
+# 204 "data/maps/KaptaraIsland_West/scripts.pory"
+	delay 15
+# 205 "data/maps/KaptaraIsland_West/scripts.pory"
+	applymovement 22, Common_Movement_FaceUp
+# 206 "data/maps/KaptaraIsland_West/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 207 "data/maps/KaptaraIsland_West/scripts.pory"
+	waitmovement 0
+# 209 "data/maps/KaptaraIsland_West/scripts.pory"
+	setflag FLAG_HIDE_WEATHER_KAPTARA_ISLAND
 # 210 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 10
+	resetweather
 # 211 "data/maps/KaptaraIsland_West/scripts.pory"
-	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
+	doweather
 # 212 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_8
+	clearflag FLAG_HIDE_KYOGRE_KAPTARA_ISLAND
 # 213 "data/maps/KaptaraIsland_West/scripts.pory"
-	closemessage
+	addobject 1
 # 214 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	delay 15
 # 215 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement 22, Common_Movement_JumpInPlaceRight
+	fadescreen FADE_FROM_WHITE
 # 216 "data/maps/KaptaraIsland_West/scripts.pory"
-	waitmovement 0
-# 217 "data/maps/KaptaraIsland_West/scripts.pory"
-	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
+	delay 10
 # 218 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_9
-# 219 "data/maps/KaptaraIsland_West/scripts.pory"
-	closemessage
-# 221 "data/maps/KaptaraIsland_West/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 222 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 15
-# 223 "data/maps/KaptaraIsland_West/scripts.pory"
-	setflag FLAG_HIDE_CHIMERA_AFTER_KYOGRE
-# 224 "data/maps/KaptaraIsland_West/scripts.pory"
-	removeobject 22
-# 225 "data/maps/KaptaraIsland_West/scripts.pory"
-	removeobject 23
-# 226 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 15
-# 227 "data/maps/KaptaraIsland_West/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 228 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 20
-# 230 "data/maps/KaptaraIsland_West/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, KaptaraIsland_West_Movement_PlayerApproachKyogre
-# 231 "data/maps/KaptaraIsland_West/scripts.pory"
-	waitmovement 0
-# 232 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 20
-# 233 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_10
-# 234 "data/maps/KaptaraIsland_West/scripts.pory"
-	closemessage
-# 235 "data/maps/KaptaraIsland_West/scripts.pory"
 	delay 30
+# 219 "data/maps/KaptaraIsland_West/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+# 220 "data/maps/KaptaraIsland_West/scripts.pory"
+	emote 22, EMOTE_EXCLAM
+# 221 "data/maps/KaptaraIsland_West/scripts.pory"
+	delay 10
+# 222 "data/maps/KaptaraIsland_West/scripts.pory"
+	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
+# 223 "data/maps/KaptaraIsland_West/scripts.pory"
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_8
+# 224 "data/maps/KaptaraIsland_West/scripts.pory"
+	closemessage
+# 225 "data/maps/KaptaraIsland_West/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 226 "data/maps/KaptaraIsland_West/scripts.pory"
+	applymovement 22, Common_Movement_JumpInPlaceRight
+# 227 "data/maps/KaptaraIsland_West/scripts.pory"
+	waitmovement 0
+# 228 "data/maps/KaptaraIsland_West/scripts.pory"
+	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_0
+# 229 "data/maps/KaptaraIsland_West/scripts.pory"
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_9
+# 230 "data/maps/KaptaraIsland_West/scripts.pory"
+	closemessage
+# 232 "data/maps/KaptaraIsland_West/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 233 "data/maps/KaptaraIsland_West/scripts.pory"
+	delay 15
+# 234 "data/maps/KaptaraIsland_West/scripts.pory"
+	setflag FLAG_HIDE_CHIMERA_AFTER_KYOGRE
+# 235 "data/maps/KaptaraIsland_West/scripts.pory"
+	removeobject 22
+# 236 "data/maps/KaptaraIsland_West/scripts.pory"
+	removeobject 23
 # 237 "data/maps/KaptaraIsland_West/scripts.pory"
-	emote OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM
+	delay 15
 # 238 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_11
+	fadescreen FADE_FROM_BLACK
 # 239 "data/maps/KaptaraIsland_West/scripts.pory"
-	closemessage
-# 240 "data/maps/KaptaraIsland_West/scripts.pory"
-	special HealPlayerParty
+	delay 20
 # 241 "data/maps/KaptaraIsland_West/scripts.pory"
-	delay 5
+	applymovement OBJ_EVENT_ID_PLAYER, KaptaraIsland_West_Movement_PlayerApproachKyogre
 # 242 "data/maps/KaptaraIsland_West/scripts.pory"
-	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_12
+	waitmovement 0
 # 243 "data/maps/KaptaraIsland_West/scripts.pory"
-	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER
+	delay 20
 # 244 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_13
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_10
 # 245 "data/maps/KaptaraIsland_West/scripts.pory"
-	waitmoncry
-# 246 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
+# 246 "data/maps/KaptaraIsland_West/scripts.pory"
+	delay 30
+# 248 "data/maps/KaptaraIsland_West/scripts.pory"
+	emote OBJ_EVENT_ID_PLAYER, EMOTE_EXCLAM
 # 249 "data/maps/KaptaraIsland_West/scripts.pory"
-	seteventmon SPECIES_KYOGRE, 45, ITEM_BLUE_ORB
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_11
 # 250 "data/maps/KaptaraIsland_West/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	closemessage
 # 251 "data/maps/KaptaraIsland_West/scripts.pory"
-	setflag FLAG_HIDE_KYOGRE_KAPTARA_ISLAND
+	special HealPlayerParty
 # 252 "data/maps/KaptaraIsland_West/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
+	delay 5
 # 253 "data/maps/KaptaraIsland_West/scripts.pory"
-	waitstate
+	speakername KaptaraIsland_West_EventScript_KyogreEvent_Text_12
 # 254 "data/maps/KaptaraIsland_West/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER
 # 255 "data/maps/KaptaraIsland_West/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_13
 # 256 "data/maps/KaptaraIsland_West/scripts.pory"
-	switch VAR_RESULT
-# 258 "data/maps/KaptaraIsland_West/scripts.pory"
-	case B_OUTCOME_CAUGHT, KaptaraIsland_West_EventScript_KyogreEvent_7
+	waitmoncry
+# 257 "data/maps/KaptaraIsland_West/scripts.pory"
+	closemessage
+# 260 "data/maps/KaptaraIsland_West/scripts.pory"
+	seteventmon SPECIES_KYOGRE, 45, ITEM_BLUE_ORB
+# 261 "data/maps/KaptaraIsland_West/scripts.pory"
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+# 262 "data/maps/KaptaraIsland_West/scripts.pory"
+	setflag FLAG_HIDE_KYOGRE_KAPTARA_ISLAND
 # 263 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_15
+	special BattleSetup_StartLegendaryBattle
 # 264 "data/maps/KaptaraIsland_West/scripts.pory"
+	waitstate
+# 265 "data/maps/KaptaraIsland_West/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 266 "data/maps/KaptaraIsland_West/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 267 "data/maps/KaptaraIsland_West/scripts.pory"
+	switch VAR_RESULT
+# 269 "data/maps/KaptaraIsland_West/scripts.pory"
+	case B_OUTCOME_CAUGHT, KaptaraIsland_West_EventScript_KyogreEvent_7
+# 274 "data/maps/KaptaraIsland_West/scripts.pory"
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_15
+# 275 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
 KaptaraIsland_West_EventScript_KyogreEvent_5:
-# 266 "data/maps/KaptaraIsland_West/scripts.pory"
+# 277 "data/maps/KaptaraIsland_West/scripts.pory"
 	delay 20
-# 267 "data/maps/KaptaraIsland_West/scripts.pory"
+# 278 "data/maps/KaptaraIsland_West/scripts.pory"
 	completequest QUEST_LEGEND_OF_KYOGRE
-# 268 "data/maps/KaptaraIsland_West/scripts.pory"
+# 279 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
-# 269 "data/maps/KaptaraIsland_West/scripts.pory"
+# 280 "data/maps/KaptaraIsland_West/scripts.pory"
 	call SatyrsLair_Deep_EventScript_CheckEncounteredBothWeatherMons
-# 270 "data/maps/KaptaraIsland_West/scripts.pory"
+# 281 "data/maps/KaptaraIsland_West/scripts.pory"
 	release
 	end
 
 KaptaraIsland_West_EventScript_KyogreEvent_2:
-# 172 "data/maps/KaptaraIsland_West/scripts.pory"
+# 183 "data/maps/KaptaraIsland_West/scripts.pory"
 	trainerbattle_no_intro TRAINER_KAPTARAWEST_CHIMERA_ADMIN, KaptaraIsland_West_Text_ChimeraAdminDefeated
 	goto KaptaraIsland_West_EventScript_KyogreEvent_1
 
 KaptaraIsland_West_EventScript_KyogreEvent_7:
-# 259 "data/maps/KaptaraIsland_West/scripts.pory"
+# 270 "data/maps/KaptaraIsland_West/scripts.pory"
 	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_14
-# 260 "data/maps/KaptaraIsland_West/scripts.pory"
+# 271 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
-# 261 "data/maps/KaptaraIsland_West/scripts.pory"
+# 272 "data/maps/KaptaraIsland_West/scripts.pory"
 	setflag FLAG_CAUGHT_KYOGRE
 	goto KaptaraIsland_West_EventScript_KyogreEvent_5
 
 
-# 274 "data/maps/KaptaraIsland_West/scripts.pory"
-KaptaraIsland_West_Movement_PlayerGetInBattlePosition:
-# 276 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_up
-# 276 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_up
-# 276 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_up
-# 277 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_right
-# 277 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_right
-# 278 "data/maps/KaptaraIsland_West/scripts.pory"
-	face_left
-# 279 "data/maps/KaptaraIsland_West/scripts.pory"
-	step_end
-
-# 282 "data/maps/KaptaraIsland_West/scripts.pory"
-KaptaraIsland_West_Movement_ChimeraAdminGetInBattlePosition:
-# 284 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_left
-# 284 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_left
 # 285 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_up
-# 286 "data/maps/KaptaraIsland_West/scripts.pory"
-	face_right
+KaptaraIsland_West_Movement_PlayerGetInBattlePosition:
 # 287 "data/maps/KaptaraIsland_West/scripts.pory"
-	step_end
-
-# 290 "data/maps/KaptaraIsland_West/scripts.pory"
-KaptaraIsland_West_Movement_WalkingWakeGetInBattlePosition:
-# 292 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_left
-# 293 "data/maps/KaptaraIsland_West/scripts.pory"
-	face_right
-# 294 "data/maps/KaptaraIsland_West/scripts.pory"
-	step_end
-
-# 302 "data/maps/KaptaraIsland_West/scripts.pory"
-KaptaraIsland_West_Movement_PlayerApproachKyogre:
-# 304 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_left
-# 304 "data/maps/KaptaraIsland_West/scripts.pory"
-	walk_left
-# 305 "data/maps/KaptaraIsland_West/scripts.pory"
 	walk_up
-# 306 "data/maps/KaptaraIsland_West/scripts.pory"
+# 287 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_up
+# 287 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_up
+# 288 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_right
+# 288 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_right
+# 289 "data/maps/KaptaraIsland_West/scripts.pory"
+	face_left
+# 290 "data/maps/KaptaraIsland_West/scripts.pory"
+	step_end
+
+# 293 "data/maps/KaptaraIsland_West/scripts.pory"
+KaptaraIsland_West_Movement_ChimeraAdminGetInBattlePosition:
+# 295 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_left
+# 295 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_left
+# 296 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_up
+# 297 "data/maps/KaptaraIsland_West/scripts.pory"
+	face_right
+# 298 "data/maps/KaptaraIsland_West/scripts.pory"
+	step_end
+
+# 301 "data/maps/KaptaraIsland_West/scripts.pory"
+KaptaraIsland_West_Movement_WalkingWakeGetInBattlePosition:
+# 303 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_left
+# 304 "data/maps/KaptaraIsland_West/scripts.pory"
+	face_right
+# 305 "data/maps/KaptaraIsland_West/scripts.pory"
+	step_end
+
+# 313 "data/maps/KaptaraIsland_West/scripts.pory"
+KaptaraIsland_West_Movement_PlayerApproachKyogre:
+# 315 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_left
+# 315 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_left
+# 316 "data/maps/KaptaraIsland_West/scripts.pory"
+	walk_up
+# 317 "data/maps/KaptaraIsland_West/scripts.pory"
 	face_up
-# 307 "data/maps/KaptaraIsland_West/scripts.pory"
+# 318 "data/maps/KaptaraIsland_West/scripts.pory"
 	step_end
 
 KaptaraIsland_West_EventScript_InteractWithSunkenTemple::
-# 312 "data/maps/KaptaraIsland_West/scripts.pory"
+# 323 "data/maps/KaptaraIsland_West/scripts.pory"
 	lock
-# 313 "data/maps/KaptaraIsland_West/scripts.pory"
+# 324 "data/maps/KaptaraIsland_West/scripts.pory"
 	goto_if_set FLAG_CAUGHT_KYOGRE, KaptaraIsland_West_EventScript_InteractWithSunkenTemple_2
-# 320 "data/maps/KaptaraIsland_West/scripts.pory"
+# 331 "data/maps/KaptaraIsland_West/scripts.pory"
 	msgbox KaptaraIsland_West_EventScript_InteractWithSunkenTemple_Text_1, MSGBOX_YESNO
-# 321 "data/maps/KaptaraIsland_West/scripts.pory"
+# 332 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
-# 322 "data/maps/KaptaraIsland_West/scripts.pory"
+# 333 "data/maps/KaptaraIsland_West/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq KaptaraIsland_West_EventScript_InteractWithSunkenTemple_5
-# 329 "data/maps/KaptaraIsland_West/scripts.pory"
-	seteventmon SPECIES_KYOGRE, 45, ITEM_BLUE_ORB
-# 330 "data/maps/KaptaraIsland_West/scripts.pory"
-	special BattleSetup_StartLegendaryBattle
-# 331 "data/maps/KaptaraIsland_West/scripts.pory"
-	waitstate
-# 332 "data/maps/KaptaraIsland_West/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
-# 333 "data/maps/KaptaraIsland_West/scripts.pory"
-	switch VAR_RESULT
-# 335 "data/maps/KaptaraIsland_West/scripts.pory"
-	case B_OUTCOME_CAUGHT, KaptaraIsland_West_EventScript_InteractWithSunkenTemple_9
 # 340 "data/maps/KaptaraIsland_West/scripts.pory"
-	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_15
+	seteventmon SPECIES_KYOGRE, 45, ITEM_BLUE_ORB
 # 341 "data/maps/KaptaraIsland_West/scripts.pory"
+	special BattleSetup_StartLegendaryBattle
+# 342 "data/maps/KaptaraIsland_West/scripts.pory"
+	waitstate
+# 343 "data/maps/KaptaraIsland_West/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 344 "data/maps/KaptaraIsland_West/scripts.pory"
+	switch VAR_RESULT
+# 346 "data/maps/KaptaraIsland_West/scripts.pory"
+	case B_OUTCOME_CAUGHT, KaptaraIsland_West_EventScript_InteractWithSunkenTemple_9
+# 351 "data/maps/KaptaraIsland_West/scripts.pory"
+	msgbox KaptaraIsland_West_EventScript_KyogreEvent_Text_15
+# 352 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
 KaptaraIsland_West_EventScript_InteractWithSunkenTemple_1:
-# 345 "data/maps/KaptaraIsland_West/scripts.pory"
+# 356 "data/maps/KaptaraIsland_West/scripts.pory"
 	release
 	end
 
 KaptaraIsland_West_EventScript_InteractWithSunkenTemple_2:
-# 315 "data/maps/KaptaraIsland_West/scripts.pory"
+# 326 "data/maps/KaptaraIsland_West/scripts.pory"
 	msgbox KaptaraIsland_West_EventScript_InteractWithSunkenTemple_Text_0
-# 316 "data/maps/KaptaraIsland_West/scripts.pory"
+# 327 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
 	goto KaptaraIsland_West_EventScript_InteractWithSunkenTemple_1
 
 KaptaraIsland_West_EventScript_InteractWithSunkenTemple_5:
-# 324 "data/maps/KaptaraIsland_West/scripts.pory"
+# 335 "data/maps/KaptaraIsland_West/scripts.pory"
 	release
 	end
 
 KaptaraIsland_West_EventScript_InteractWithSunkenTemple_9:
-# 336 "data/maps/KaptaraIsland_West/scripts.pory"
+# 347 "data/maps/KaptaraIsland_West/scripts.pory"
 	msgbox KaptaraIsland_West_EventScript_InteractWithSunkenTemple_Text_2
-# 337 "data/maps/KaptaraIsland_West/scripts.pory"
+# 348 "data/maps/KaptaraIsland_West/scripts.pory"
 	closemessage
-# 338 "data/maps/KaptaraIsland_West/scripts.pory"
+# 349 "data/maps/KaptaraIsland_West/scripts.pory"
 	setflag FLAG_CAUGHT_KYOGRE
 	goto KaptaraIsland_West_EventScript_InteractWithSunkenTemple_1
 
 
 KaptaraIsland_West_EventScript_DirectionSign_Text_0:
-# 38 "data/maps/KaptaraIsland_West/scripts.pory"
+# 49 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Kaptara Island - Krikri Gorge\n"
 	.string "Where Giants Come to Sleep\p"
 	.string "Palati City {RIGHT_ARROW}$"
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Dani_Text_0:
-# 47 "data/maps/KaptaraIsland_West/scripts.pory"
+# 58 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Dani$"
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Dani_Text_1:
-# 48 "data/maps/KaptaraIsland_West/scripts.pory"
+# 59 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Ah, I can't get past the large rocks\n"
 	.string "further ahead, anyway. Maybe I need a\l"
 	.string "special HM?$"
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Barrel_Text_0:
-# 65 "data/maps/KaptaraIsland_West/scripts.pory"
+# 76 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Barrel$"
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Barrel_Text_1:
-# 66 "data/maps/KaptaraIsland_West/scripts.pory"
+# 77 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "My Pokémon can move some of these\n"
 	.string "large rocks, but there are so many...\l"
 	.string "What could be happening further on?$"
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Sallador_Text_0:
-# 83 "data/maps/KaptaraIsland_West/scripts.pory"
+# 94 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Sallador$"
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Sallador_Text_1:
-# 84 "data/maps/KaptaraIsland_West/scripts.pory"
+# 95 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Someone just came by with a giant\n"
 	.string "Pokémon, making a huge ruckus. Now\l"
 	.string "there are rocks falling... What's\l"
 	.string "happening?!$"
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Penny_Text_0:
-# 101 "data/maps/KaptaraIsland_West/scripts.pory"
+# 112 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Penny$"
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Penny_Text_1:
-# 102 "data/maps/KaptaraIsland_West/scripts.pory"
+# 113 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "I can see some half-sunken ruins down\n"
 	.string "the cliffside. I wonder what's down\l"
 	.string "there.$"
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Allan_Text_0:
-# 119 "data/maps/KaptaraIsland_West/scripts.pory"
+# 130 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Allan$"
 
 KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Allan_Text_1:
-# 120 "data/maps/KaptaraIsland_West/scripts.pory"
+# 131 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "I came here to paint these ruins, but\n"
 	.string "when I arrived, there was a Team Chimera\l"
 	.string "member with a monstrous Pokémon\l"
@@ -548,18 +567,18 @@ KaptaraIsland_West_EventScript_Trainer_KaptaraWest_Allan_Text_1:
 	.string "a fight...$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_0:
-# 146 "data/maps/KaptaraIsland_West/scripts.pory"
+# 157 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Chimera Admin$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_1:
-# 147 "data/maps/KaptaraIsland_West/scripts.pory"
+# 158 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Come on, wake up, you stupid whale!\p"
 	.string "Grr... Fine, we'll do this our way. {COLOR RED}Walking\n"
 	.string "Wake{COLOR DARK_GRAY}! Use Hydro Pump, and blast this\l"
 	.string "ruin to smitheree-$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_2:
-# 153 "data/maps/KaptaraIsland_West/scripts.pory"
+# 164 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Ahaha, {PLAYER}! How nice of you to\n"
 	.string "join our little party. {COLOR GREEN}Kyogre{COLOR DARK_GRAY} is said to\l"
 	.string "lie deep below this ruined temple, but it\l"
@@ -573,20 +592,20 @@ KaptaraIsland_West_EventScript_KyogreEvent_Text_2:
 	.string "of our fighting Pokémon.$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_3:
-# 159 "data/maps/KaptaraIsland_West/scripts.pory"
+# 170 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Walking Wake$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_4:
-# 161 "data/maps/KaptaraIsland_West/scripts.pory"
+# 172 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Gyarooh!!!$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_5:
-# 166 "data/maps/KaptaraIsland_West/scripts.pory"
+# 177 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Kahaha, listen to that roar! It's the\n"
 	.string "end of the line for you, {PLAYER}!$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_6:
-# 183 "data/maps/KaptaraIsland_West/scripts.pory"
+# 194 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "WHAT?! How could ANYONE stack up\n"
 	.string "against the power of Walking Wake?\p"
 	.string "Kalliope told me to bring Kyogre out,\n"
@@ -594,50 +613,50 @@ KaptaraIsland_West_EventScript_KyogreEvent_Text_6:
 	.string "I've... I've completely failed.$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_7:
-# 188 "data/maps/KaptaraIsland_West/scripts.pory"
+# 199 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "No... Walking Wake still has the energy\n"
 	.string "to stand, and I have one Full Restore\l"
 	.string "left. I'll get Walking Wake {COLOR RED}back to full\l"
 	.string "strength{COLOR DARK_GRAY} and {COLOR RED}sink this wretched island{COLOR DARK_GRAY}!$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_8:
-# 212 "data/maps/KaptaraIsland_West/scripts.pory"
+# 223 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Kyogre...! It stabilized the weather in\n"
 	.string "an instant?! How can I compete against\l"
 	.string "that power without my full strength?$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_9:
-# 218 "data/maps/KaptaraIsland_West/scripts.pory"
+# 229 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "{PLAYER}, you WORM! All that matters\n"
 	.string "is {COLOR RED}Kalliope winning over Rayquaza{COLOR DARK_GRAY}. Make\l"
 	.string "no mistake, you've won the battle, but\l"
 	.string "Team Chimera will win this war!$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_10:
-# 233 "data/maps/KaptaraIsland_West/scripts.pory"
+# 244 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Kyogre stares at you with curious eyes.$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_11:
-# 238 "data/maps/KaptaraIsland_West/scripts.pory"
+# 249 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Kyogre flares with a primal energy! Your\n"
 	.string "team has been miraculously healed.$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_12:
-# 242 "data/maps/KaptaraIsland_West/scripts.pory"
+# 253 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Kyogre$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_13:
-# 244 "data/maps/KaptaraIsland_West/scripts.pory"
+# 255 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Bouuuwwwwahhh!!$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_14:
-# 259 "data/maps/KaptaraIsland_West/scripts.pory"
+# 270 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Kyogre has deemed you worthy and\n"
 	.string "joined your team! It will help in the\l"
 	.string "battle against Team Chimera.$"
 
 KaptaraIsland_West_EventScript_KyogreEvent_Text_15:
-# 263 "data/maps/KaptaraIsland_West/scripts.pory"
+# 274 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Kyogre returned to the depths of the\n"
 	.string "ruined temple, impressed with your\l"
 	.string "power.\p"
@@ -646,13 +665,13 @@ KaptaraIsland_West_EventScript_KyogreEvent_Text_15:
 	.string "caught.$"
 
 KaptaraIsland_West_EventScript_InteractWithSunkenTemple_Text_0:
-# 315 "data/maps/KaptaraIsland_West/scripts.pory"
+# 326 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "It's the Sunken Temple, where {COLOR GREEN}Kyogre{COLOR DARK_GRAY}\n"
 	.string "used to lay dormant. It must have sat\l"
 	.string "untouched for millennia...$"
 
 KaptaraIsland_West_EventScript_InteractWithSunkenTemple_Text_1:
-# 320 "data/maps/KaptaraIsland_West/scripts.pory"
+# 331 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "It's the Sunken Temple, home of {COLOR GREEN}Kyogre{COLOR DARK_GRAY},\n"
 	.string "Lord of the Sea.\p"
 	.string "A primal energy is radiating from below.\n"
@@ -660,56 +679,56 @@ KaptaraIsland_West_EventScript_InteractWithSunkenTemple_Text_1:
 	.string "{COLOR GREEN}Kyogre{COLOR DARK_GRAY}?$"
 
 KaptaraIsland_West_EventScript_InteractWithSunkenTemple_Text_2:
-# 336 "data/maps/KaptaraIsland_West/scripts.pory"
+# 347 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Kyogre has deemed you worthy of being\n"
 	.string "its Trainer. The Sunken Temple is at\l"
 	.string "rest.$"
 
 KaptaraIsland_West_Text_Trainer_KaptaraWest_DaniIntro::
-# 53 "data/maps/KaptaraIsland_West/scripts.pory"
+# 64 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "They say there are sunken ruins deep in\n"
 	.string "these woods. I'll beat you there!$"
 
 KaptaraIsland_West_Text_Trainer_KaptaraWest_DaniDefeat::
-# 57 "data/maps/KaptaraIsland_West/scripts.pory"
+# 68 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Looks like you'll get ahead of me.$"
 
 KaptaraIsland_West_Text_Trainer_KaptaraWest_BarrelIntro::
-# 71 "data/maps/KaptaraIsland_West/scripts.pory"
+# 82 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Some mean-looking person in a mask and\n"
 	.string "hood just barged through here. Look at\l"
 	.string "all the rocks they knocked over!$"
 
 KaptaraIsland_West_Text_Trainer_KaptaraWest_BarrelDefeat::
-# 75 "data/maps/KaptaraIsland_West/scripts.pory"
+# 86 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "I'd better get outta here!$"
 
 KaptaraIsland_West_Text_Trainer_KaptaraWest_SalladorIntro::
-# 89 "data/maps/KaptaraIsland_West/scripts.pory"
+# 100 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "I'm gonna get to those ruins if it's the\n"
 	.string "last thing I do!$"
 
 KaptaraIsland_West_Text_Trainer_KaptaraWest_SalladorDefeat::
-# 93 "data/maps/KaptaraIsland_West/scripts.pory"
+# 104 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Eh... Maybe I don't need to go further.$"
 
 KaptaraIsland_West_Text_Trainer_KaptaraWest_PennyIntro::
-# 107 "data/maps/KaptaraIsland_West/scripts.pory"
+# 118 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Something strange is going on. Are you\n"
 	.string "involved somehow?$"
 
 KaptaraIsland_West_Text_Trainer_KaptaraWest_PennyDefeat::
-# 111 "data/maps/KaptaraIsland_West/scripts.pory"
+# 122 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "Aha, you must be involved!$"
 
 KaptaraIsland_West_Text_Trainer_KaptaraWest_AllanIntro::
-# 125 "data/maps/KaptaraIsland_West/scripts.pory"
+# 136 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "We have to get out of here!$"
 
 KaptaraIsland_West_Text_Trainer_KaptaraWest_AllanDefeat::
-# 129 "data/maps/KaptaraIsland_West/scripts.pory"
+# 140 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "It seems like you can hold your own.$"
 
 KaptaraIsland_West_Text_ChimeraAdminDefeated::
-# 297 "data/maps/KaptaraIsland_West/scripts.pory"
+# 308 "data/maps/KaptaraIsland_West/scripts.pory"
 	.string "NOOO! HOW?!$"

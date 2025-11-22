@@ -5210,7 +5210,7 @@ static const struct SpriteFrameImage sPicTable_Dipplin[] = {
     overworld_ascending_frames(gObjectEventPic_Dipplin, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Hydrapple[] = {
-    overworld_ascending_frames(gObjectEventPic_Hydrapple, 8, 8),
+    overworld_ascending_frames(gObjectEventPic_Hydrapple, 4, 4),
 };
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_APPLIN

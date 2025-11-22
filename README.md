@@ -71,11 +71,50 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 ## Future Development Plans
 
 MAJOR TODOS:
-- Mods suggestions:
-    - Any remaining Discord server bug fixes!
-- BEFORE RELEASE:
-    - Disable Debug features (skull emoji)
-    - Upload full Dex image to Google Doc documentation alongside credits list
+- Enable RHH intro
+- TEST TOM'S MUSIC DRUM LOOP & Integrate new Wandering Woods music when he sends it
+- Highly-requested additions:
+    - Mega Meganium, Feraligatr, Froslass, Chandelure, and Dragalge
+    - [Belle's Quest Icons](https://github.com/TeamAquasHideout/Team-Aquas-Asset-Repo/wiki/Feature-Branches#Quest_Icons)
+    - More Evolution stones found in overworld (hidden items?)
+- Bug fixes:
+    - Type: Null friendship evolution doesnt show up in dex
+    - MAKE SURE BRONZE PASS MUSIC ISN'T TEST TRACK BEFORE BUILDING
+
+LAZARUS 1.1 ADDITIONS
+- EV/IV Stat Editor in Party Menu! No more grinding for optimal stats!
+- Level Caps are prevent overleveling with Rare Candy / EXP Candy
+- Press Start to exit Pinball minigame early (prevents softlock from rare glitches)
+- Spheal and Komala have rolling follower sprites now! This is very important (Sprites by Galenorla)
+- Balance Changes:
+    - Cherrim's Flower Gift ability now summons the sun like Drought, making it much stronger (but heavily reliant on keeping that weather active)
+    - Slam has -6 Priority (previously, fast Pokémon could spam Slam to switch the opponent's Pokémon and auto-win by not letting the opponent get an attack)
+    - Type: Null evolves into Silvally at Level 40, instead of with Friendship
+LIST OF BUGS I'VE FIXED FOR 1.1
+- Starters can now be Shiny! (1/1000 odds)
+- 5-Petal Outfit (Péntepetal City's Outfit) should now be actually accessible!
+- White Box covering Location names should be gone
+- Music Fixes:
+    - Increased some music track volumes
+    - Multiple music loop fixes
+    - Added unique Trainer Battle music
+- Softlocks Fixed: Diving in Grass, Wanderer's Woods ledge, Kalami City Gym Trainers, missing Rania's Cut HM
+- University Students in Bronze Fields, Acrisia Mountains, Kalami City, Sea of Asteri, Kaptara Island, and Palati City should work now
+- Pokémon no longer target themselves in Myrrini Island Battle Pavilion
+- Collision Fixes: Sea of Vulcai water, Areios Hideout buildings
+- Legendary Trio Quest completion failsafe implemented
+- HM Moves can now properly be used in Party Menu
+- Fly disabled on top of Tower of Dioxippus to avoid missing event
+- Battle Pavilion "???" Pokémon fixed
+- "Egg Envy" Quest on Marmaro Island can now be completed
+- Myrrini Island Team Chimera event properly triggers even if you have an Egg waiting for you
+- Hydrapple Overworld fixed
+- Various NPC typos and mangled dialogue fixed
+- Dex entry typo fixes
+
+KNOWN BUGS, STILL PRESENT
+- Small chance of graphical bug when picking up items (entering and exiting a menu should fix this!)
+- Tiny chance of a "Bad Egg" being loaded as the Trainer's Pokémon (cannot replicate in testing)
 
 GREEK PHRASES AND STUFF:
 - "Chaire" - basically ancient greek "aloha" (hello/goodbye)
@@ -90,7 +129,7 @@ GREEK PHRASES AND STUFF:
     - Bronze Fields - Route 01 / Route 03
     - Jusmail Town - Tom Sanborn, Custom
     - Acrisia Mountains - Route 02
-    - Riverwalk Trail - Route 02 / Route 03
+    - Riverwalk Trail - Route 02 / Route 01
     - Kalami City - K.K. Gumbo
     - Wanderer's Woods - Route 05
     - Pythios Town - Tom Sanborn, Custom
@@ -99,7 +138,7 @@ GREEK PHRASES AND STUFF:
     - Froslass Cavern - Cave
     - Asfal Hills - Route 03
     - Sofos City - Rockin' K.K.
-    - Kipos Town - A Fond Farewell
+    - Kipos Town - 
     - Kipos Zoo - National Park
     - Sea of Asteri - Lake of Rage
     - Marmaro Island - K.K. Condor
@@ -118,7 +157,7 @@ GREEK PHRASES AND STUFF:
     - Areios Hideout - Emerald Mist
     - Pollen Road - Tower (Final Fantasy Legends)
     - Davosi Straits - Tower (Final Fantasy Legends)
-    - Ruins of Ahiyawa - Don't Ever Forget (Mystery Dungeon)
+    - Ruins of Ahiyawa - A Fond Farewell
     - Wakewater Isle - Coffee Shop (AC Wild World)
     - Surfing - Surf
     - The Delphis - Swamp Cruise (Majora's Mask)

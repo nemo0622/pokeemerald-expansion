@@ -668,7 +668,7 @@ u32 CountPlayerTrainerStars(void)
 
     if (GetGameStat(GAME_STAT_ENTERED_HOF)) // entered hall of fame
         stars++;
-    if (HasAllHoennMons() && FlagGet(FLAG_UNIVERSITY_REWARD_ELIA_10)) // completed dex
+    if (FlagGet(FLAG_UNIVERSITY_REWARD_ELIA_10)) // completed dex
         stars++;
     if (FlagGet(FLAG_GOT_BERRY_CLUB_REWARD_200)) // planted over 200 trees
         stars++;
@@ -1507,7 +1507,7 @@ static void DrawStarsAndBadgesOnCard(void)
     u8 palNum = 3;
 
     sData->trainerCard.stars = CountPlayerTrainerStars();
-    FillBgTilemapBufferRect(3, 143, 15, yOffsets[sData->isHoenn], sData->trainerCard.stars, 1, 4);
+    FillBgTilemapBufferRect(3, 143, 15, yOffsets[sData->isHoenn], sData->trainerCard.stars, 1, 1);
     if (!sData->isLink)
     {
         x = 4;

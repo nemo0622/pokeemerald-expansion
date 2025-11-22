@@ -197,6 +197,8 @@ script TowerOfDioxippus_Top_EventScript_RayquazaEvent
     }
     delay(20)
     completequest(QUEST_LEGEND_OF_RAYQUAZA)
+    questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LEGEND_OF_KYOGRE) // force complete in the background
+    questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LEGEND_OF_GROUDON) // force complete in the background
     closemessage
     setflag(FLAG_DEFEATED_KALLIOPE_DIOXIPPUS)
     clearflag(FLAG_HIDE_RANIA_AND_NIKO_DIOXIPPUS)

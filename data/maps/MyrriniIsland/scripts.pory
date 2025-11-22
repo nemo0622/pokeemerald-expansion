@@ -28,7 +28,10 @@ mapscripts MyrriniIsland_MapScripts {
         setobjectaswildencounter(47, ENCOUNTER_LAND)
         setobjectaswildencounter(48, ENCOUNTER_LAND)
 
-        call(Route117_OnTransition)
+        if(var(VAR_TEMP_1) == 1) // if chimera event isnt active
+        {
+            call(Route117_OnTransition)
+        }
     }
 
     MAP_SCRIPT_ON_FRAME_TABLE [
@@ -70,7 +73,7 @@ script MyrriniIsland_EventScript_BlackBelt
     lock
     faceplayer
     speakername("Black Belt")
-    msgbox("Sometimes, you have to kick back and relax. Myrrini Island is perfect for that!")
+    msgbox(format("Sometimes, you have to kick back and relax. Myrrini Island is perfect for that!"))
     closemessage
     release
     end

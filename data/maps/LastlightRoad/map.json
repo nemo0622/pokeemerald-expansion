@@ -350,6 +350,24 @@
       "var": "FLAG_CAUGHT_BOTH_WEATHER_LEGENDS",
       "var_value": "0",
       "script": "LastlightRoad_Trigger_ScytherGoesWild"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 2,
+      "elevation": 0,
+      "var": "FLAG_TEMP_5",
+      "var_value": "1",
+      "script": "LastlightRoad_EventScript_ForceCheckKyogreGroudonCatch"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 2,
+      "elevation": 0,
+      "var": "FLAG_TEMP_5",
+      "var_value": "1",
+      "script": "LastlightRoad_EventScript_ForceCheckKyogreGroudonCatch"
     }
   ],
   "bg_events": [

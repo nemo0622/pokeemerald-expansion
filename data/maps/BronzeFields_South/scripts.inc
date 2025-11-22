@@ -238,9 +238,9 @@ BronzeFields_South_EventScript_UniversityStudentRouteCheck_Text_2:
 	.string "Chaire (Hyeh-rei)! I'm a student from\n"
 	.string "the Acrisia University.\p"
 	.string "I'm looking for {COLOR GREEN}Pokédex data{COLOR DARK_GRAY} of {COLOR GREEN}all Land\n"
-	.string "Pokémon{COLOR DARK_GRAY} found in the Bronze Fields. If\l"
-	.string "you've caught all the Pokémon here,\l"
-	.string "please let me know.$"
+	.string "Pokémon{COLOR DARK_GRAY} found in the southern Bronze\l"
+	.string "Fields. If you've caught all the Pokémon\l"
+	.string "here, please let me know.$"
 
 BronzeFields_South_EventScript_UniversityStudentRouteCheck_Text_3:
 # 50 "data/maps/BronzeFields_South/scripts.pory"

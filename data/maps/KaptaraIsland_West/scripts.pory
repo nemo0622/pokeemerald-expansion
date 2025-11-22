@@ -29,6 +29,17 @@ mapscripts KaptaraIsland_West_MapScripts {
         {
             removeobject(1) // removes kyogre
         }
+
+        questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_LEGEND_OF_KYOGRE)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            getcaughtmon(SPECIES_KYOGRE)
+            if(var(VAR_RESULT) == TRUE)
+            {
+                // Failsafe to make damn sure that quest will be completed
+                completequest(QUEST_LEGEND_OF_KYOGRE)
+            }
+        }
     }
 }
 

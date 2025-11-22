@@ -108,6 +108,7 @@ script JusmailTown_Gym_EventScript_Polymnia_DefeatedScript
     settrainerflag(TRAINER_JUSMAILGYM_ADEL)
     // Toggle event flag in Jusmail
     clearflag(FLAG_HIDE_RANIA_JUSMAIL)
+    setrespawn(HEAL_LOCATION_JUSMAIL_TOWN) // make damn sure the player cant leave without Rania's Cut HM lmao
 
     // Explain badge
     speakername("Polymnia")

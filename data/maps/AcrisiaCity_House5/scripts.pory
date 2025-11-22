@@ -43,6 +43,7 @@ script AcrisiaCity_House5_EventScript_PunkRocker
         closemessage
         checkforspecies(SPECIES_BLITZLE, OPEN_PARTY_SCREEN, AcrisiaCity_House5_EventScript_PunkRocker_ReactToBlitzle) // if has blitzle, go to script ReactToBlitzle
         // if no blitzle, continue below
+        lock
         speakername("Punk Rocker")
         msgbox(format("No Blitzle to show, huh? I still don't get why people put so much effort into Pokémon training.\p Come show me a {COLOR GREEN}Blitzle to see in-person{COLOR DARK_GRAY}. I think that might change my mind."))
         closemessage

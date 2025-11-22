@@ -139,85 +139,87 @@ JusmailTown_Gym_EventScript_Polymnia_DefeatedScript::
 	settrainerflag TRAINER_JUSMAILGYM_ADEL
 # 110 "data/maps/JusmailTown_Gym/scripts.pory"
 	clearflag FLAG_HIDE_RANIA_JUSMAIL
-# 113 "data/maps/JusmailTown_Gym/scripts.pory"
-	speakername JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_0
+# 111 "data/maps/JusmailTown_Gym/scripts.pory"
+	setrespawn HEAL_LOCATION_JUSMAIL_TOWN
 # 114 "data/maps/JusmailTown_Gym/scripts.pory"
-	msgbox JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_1
-# 115 "data/maps/JusmailTown_Gym/scripts.pory"
-	closemessage
-# 118 "data/maps/JusmailTown_Gym/scripts.pory"
-	giveitem ITEM_TM_BULLET_SEED
-# 119 "data/maps/JusmailTown_Gym/scripts.pory"
 	speakername JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_0
-# 120 "data/maps/JusmailTown_Gym/scripts.pory"
-	msgbox JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_2
-# 121 "data/maps/JusmailTown_Gym/scripts.pory"
+# 115 "data/maps/JusmailTown_Gym/scripts.pory"
+	msgbox JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_1
+# 116 "data/maps/JusmailTown_Gym/scripts.pory"
 	closemessage
-# 123 "data/maps/JusmailTown_Gym/scripts.pory"
-	delay 20
+# 119 "data/maps/JusmailTown_Gym/scripts.pory"
+	giveitem ITEM_TM_BULLET_SEED
+# 120 "data/maps/JusmailTown_Gym/scripts.pory"
+	speakername JusmailTown_Gym_EventScript_Polymnia_NormalDifficulty_Text_0
+# 121 "data/maps/JusmailTown_Gym/scripts.pory"
+	msgbox JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_2
+# 122 "data/maps/JusmailTown_Gym/scripts.pory"
+	closemessage
 # 124 "data/maps/JusmailTown_Gym/scripts.pory"
-	completequest QUEST_GYM_1
-# 125 "data/maps/JusmailTown_Gym/scripts.pory"
 	delay 20
+# 125 "data/maps/JusmailTown_Gym/scripts.pory"
+	completequest QUEST_GYM_1
 # 126 "data/maps/JusmailTown_Gym/scripts.pory"
+	delay 20
+# 127 "data/maps/JusmailTown_Gym/scripts.pory"
 	startquest QUEST_CHECK_AFTER_GYM_1
-# 128 "data/maps/JusmailTown_Gym/scripts.pory"
+# 129 "data/maps/JusmailTown_Gym/scripts.pory"
 	release
 	end
 
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Kari::
-# 136 "data/maps/JusmailTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_JUSMAILGYM_KARI, JusmailTown_Gym_Text_Trainer_JusmailGym_KariIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_KariDefeat
 # 137 "data/maps/JusmailTown_Gym/scripts.pory"
-	speakername JusmailTown_Gym_EventScript_Trainer_JusmailGym_Kari_Text_0
+	trainerbattle_single TRAINER_JUSMAILGYM_KARI, JusmailTown_Gym_Text_Trainer_JusmailGym_KariIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_KariDefeat
 # 138 "data/maps/JusmailTown_Gym/scripts.pory"
-	msgbox JusmailTown_Gym_EventScript_Trainer_JusmailGym_Kari_Text_1
+	speakername JusmailTown_Gym_EventScript_Trainer_JusmailGym_Kari_Text_0
 # 139 "data/maps/JusmailTown_Gym/scripts.pory"
-	closemessage
+	msgbox JusmailTown_Gym_EventScript_Trainer_JusmailGym_Kari_Text_1
 # 140 "data/maps/JusmailTown_Gym/scripts.pory"
+	closemessage
+# 141 "data/maps/JusmailTown_Gym/scripts.pory"
 	release
 	end
 
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Iason::
-# 154 "data/maps/JusmailTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_JUSMAILGYM_IASON, JusmailTown_Gym_Text_Trainer_JusmailGym_IasonIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_IasonDefeat
 # 155 "data/maps/JusmailTown_Gym/scripts.pory"
-	speakername JusmailTown_Gym_EventScript_Trainer_JusmailGym_Iason_Text_0
+	trainerbattle_single TRAINER_JUSMAILGYM_IASON, JusmailTown_Gym_Text_Trainer_JusmailGym_IasonIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_IasonDefeat
 # 156 "data/maps/JusmailTown_Gym/scripts.pory"
-	msgbox JusmailTown_Gym_EventScript_Trainer_JusmailGym_Iason_Text_1
+	speakername JusmailTown_Gym_EventScript_Trainer_JusmailGym_Iason_Text_0
 # 157 "data/maps/JusmailTown_Gym/scripts.pory"
-	closemessage
+	msgbox JusmailTown_Gym_EventScript_Trainer_JusmailGym_Iason_Text_1
 # 158 "data/maps/JusmailTown_Gym/scripts.pory"
+	closemessage
+# 159 "data/maps/JusmailTown_Gym/scripts.pory"
 	release
 	end
 
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Bryce::
-# 172 "data/maps/JusmailTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_JUSMAILGYM_BRYCE, JusmailTown_Gym_Text_Trainer_JusmailGym_BryceIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_BryceDefeat
 # 173 "data/maps/JusmailTown_Gym/scripts.pory"
-	speakername JusmailTown_Gym_EventScript_Trainer_JusmailGym_Bryce_Text_0
+	trainerbattle_single TRAINER_JUSMAILGYM_BRYCE, JusmailTown_Gym_Text_Trainer_JusmailGym_BryceIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_BryceDefeat
 # 174 "data/maps/JusmailTown_Gym/scripts.pory"
-	msgbox JusmailTown_Gym_EventScript_Trainer_JusmailGym_Bryce_Text_1
+	speakername JusmailTown_Gym_EventScript_Trainer_JusmailGym_Bryce_Text_0
 # 175 "data/maps/JusmailTown_Gym/scripts.pory"
-	closemessage
+	msgbox JusmailTown_Gym_EventScript_Trainer_JusmailGym_Bryce_Text_1
 # 176 "data/maps/JusmailTown_Gym/scripts.pory"
+	closemessage
+# 177 "data/maps/JusmailTown_Gym/scripts.pory"
 	release
 	end
 
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Adel::
-# 190 "data/maps/JusmailTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_JUSMAILGYM_ADEL, JusmailTown_Gym_Text_Trainer_JusmailGym_AdelIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_AdelDefeat
 # 191 "data/maps/JusmailTown_Gym/scripts.pory"
-	speakername JusmailTown_Gym_EventScript_Trainer_JusmailGym_Adel_Text_0
+	trainerbattle_single TRAINER_JUSMAILGYM_ADEL, JusmailTown_Gym_Text_Trainer_JusmailGym_AdelIntro, JusmailTown_Gym_Text_Trainer_JusmailGym_AdelDefeat
 # 192 "data/maps/JusmailTown_Gym/scripts.pory"
-	msgbox JusmailTown_Gym_EventScript_Trainer_JusmailGym_Adel_Text_1
+	speakername JusmailTown_Gym_EventScript_Trainer_JusmailGym_Adel_Text_0
 # 193 "data/maps/JusmailTown_Gym/scripts.pory"
-	closemessage
+	msgbox JusmailTown_Gym_EventScript_Trainer_JusmailGym_Adel_Text_1
 # 194 "data/maps/JusmailTown_Gym/scripts.pory"
+	closemessage
+# 195 "data/maps/JusmailTown_Gym/scripts.pory"
 	release
 	end
 
@@ -277,7 +279,7 @@ JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_0:
 	.string "from Polymnia.$"
 
 JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_1:
-# 114 "data/maps/JusmailTown_Gym/scripts.pory"
+# 115 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "The Harvest Badge is a sign of an\n"
 	.string "up-and-coming trainer. You've proven\l"
 	.string "that you can form a close bond with\l"
@@ -287,7 +289,7 @@ JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_1:
 	.string "before you go!$"
 
 JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_2:
-# 120 "data/maps/JusmailTown_Gym/scripts.pory"
+# 121 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "That TM contains the move {COLOR GREEN}Bullet Seed{COLOR DARK_GRAY}!\n"
 	.string "That's a move my Pokémon practiced by\l"
 	.string "shooting seeds from the farms around\l"
@@ -298,36 +300,36 @@ JusmailTown_Gym_EventScript_Polymnia_DefeatedScript_Text_2:
 	.string "about what to do next.$"
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Kari_Text_0:
-# 137 "data/maps/JusmailTown_Gym/scripts.pory"
+# 138 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "Kari$"
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Kari_Text_1:
-# 138 "data/maps/JusmailTown_Gym/scripts.pory"
+# 139 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "The fruits on these trees are so yummy!$"
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Iason_Text_0:
-# 155 "data/maps/JusmailTown_Gym/scripts.pory"
+# 156 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "Iason$"
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Iason_Text_1:
-# 156 "data/maps/JusmailTown_Gym/scripts.pory"
+# 157 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "My Pokémon help maintain the plants in\n"
 	.string "this building.$"
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Bryce_Text_0:
-# 173 "data/maps/JusmailTown_Gym/scripts.pory"
+# 174 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "Bryce$"
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Bryce_Text_1:
-# 174 "data/maps/JusmailTown_Gym/scripts.pory"
+# 175 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "Looking for bugs is making me tired...$"
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Adel_Text_0:
-# 191 "data/maps/JusmailTown_Gym/scripts.pory"
+# 192 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "Adel$"
 
 JusmailTown_Gym_EventScript_Trainer_JusmailGym_Adel_Text_1:
-# 192 "data/maps/JusmailTown_Gym/scripts.pory"
+# 193 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "I guess using Grass-type Pokémon in\n"
 	.string "the Grass-type Gym made me a little\l"
 	.string "predictable.$"
@@ -347,38 +349,38 @@ JusmailTown_Gym_Text_PolymniaDefeat::
 	.string "You've earned your first Badge!$"
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_KariIntro::
-# 143 "data/maps/JusmailTown_Gym/scripts.pory"
+# 144 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "I like it better in here than outside.\n"
 	.string "It's temperature-controlled inside!$"
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_KariDefeat::
-# 147 "data/maps/JusmailTown_Gym/scripts.pory"
+# 148 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "Guess I should've trained outside\n"
 	.string "more...$"
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_IasonIntro::
-# 161 "data/maps/JusmailTown_Gym/scripts.pory"
+# 162 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "I planted some of these trees. Try the\n"
 	.string "fruit!$"
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_IasonDefeat::
-# 165 "data/maps/JusmailTown_Gym/scripts.pory"
+# 166 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "You might be able to beat Polymnia!$"
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_BryceIntro::
-# 179 "data/maps/JusmailTown_Gym/scripts.pory"
+# 180 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "There are some bugs hiding in the trees\n"
 	.string "around here... come on out, little bugs!$"
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_BryceDefeat::
-# 183 "data/maps/JusmailTown_Gym/scripts.pory"
+# 184 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "Rats! You scared all the bugs away.$"
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_AdelIntro::
-# 197 "data/maps/JusmailTown_Gym/scripts.pory"
+# 198 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "I'm training to take on the Pokémon Gym\n"
 	.string "challenge. Help me get stronger!$"
 
 JusmailTown_Gym_Text_Trainer_JusmailGym_AdelDefeat::
-# 201 "data/maps/JusmailTown_Gym/scripts.pory"
+# 202 "data/maps/JusmailTown_Gym/scripts.pory"
 	.string "I'll keep your strategies in mind.$"

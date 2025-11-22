@@ -925,7 +925,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_FLOWER_GIFT] =
     {
         .name = _("Flower Gift"),
-        .description = COMPOUND_STRING("Allies power up in sunshine."),
+        .description = COMPOUND_STRING("Summon sun & change form."),
         .aiRating = 4,
         .cantBeCopied = TRUE,
         .cantBeTraced = TRUE,

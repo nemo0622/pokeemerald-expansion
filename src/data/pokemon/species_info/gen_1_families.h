@@ -11500,7 +11500,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 5,
         .weight = 130,
         .description = COMPOUND_STRING(
-            "It esembles an ancient Poké Ball design.\n"
+            "It resembles an ancient Poké Ball design.\n"
             "When excited, it discharges the electric\n"
             "current it has stored in its belly, then\n"
             "lets out a great, uproarious laugh."),
@@ -15435,8 +15435,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 25,
         .weight = 2200,
         .description = COMPOUND_STRING(
-            "Lapras is highly intelligent, understanding\n" // new desc
-            "human speech to a shocking degree. Tragically,\n"
+            "Lapras is highly intelligent. It somehow\n" // new desc
+            "understands all human speech. Tragically,\n"
             "they have been the victims of poaching for\n"
             "their shells, driving them to the brink."),
         .pokemonScale = 257,

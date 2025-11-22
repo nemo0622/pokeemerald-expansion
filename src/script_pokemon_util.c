@@ -492,6 +492,14 @@ u32 BirchCase_GiveMonParameterized(u16 species, u8 level, u16 item, u8 ball, u8 
         isShinyExpansion = TRUE;
     else if (P_FLAG_FORCE_NO_SHINY != 0 && FlagGet(P_FLAG_FORCE_NO_SHINY))
         isShinyExpansion = FALSE;
+    else
+    {
+        // 1/1000 shiny odds for starters
+        if((Random() % 1000) < 1)
+            isShinyExpansion = TRUE;
+        else
+            isShinyExpansion = FALSE;
+    }
     SetMonData(&mon, MON_DATA_IS_SHINY, &isShinyExpansion);
 
     // gigantamax factor

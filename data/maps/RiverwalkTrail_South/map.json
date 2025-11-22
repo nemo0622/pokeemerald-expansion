@@ -2,7 +2,7 @@
   "id": "MAP_RIVERWALK_TRAIL_SOUTH",
   "name": "RiverwalkTrail_South",
   "layout": "LAYOUT_RIVERWALK_TRAIL_SOUTH",
-  "music": "MUS_ROUTE_03",
+  "music": "MUS_ROUTE_01",
   "region_map_section": "MAPSEC_RIVERWALK_TRAIL",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

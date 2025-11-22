@@ -364,6 +364,7 @@ SECTIONS {
         src/expansion_intro.o(.text);
         src/pinball.o(.text);
         src/sliding_puzzle.o(.text);
+        src/ui_stat_editor.o(.text);
     } > ROM =0
 
     script_data :
@@ -734,6 +735,7 @@ SECTIONS {
         src/expansion_intro.o(.rodata);
         src/pinball.o(.rodata);
         src/sliding_puzzle.o(.rodata);
+        src/ui_stat_editor.o(.rodata);
     } > ROM =0
 
     song_data :

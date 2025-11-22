@@ -2968,6 +2968,16 @@ static void UpdateFlipperState(struct Flipper *flipper)
             stateDelta = -FLIPPER_STATE_DELTA;
     }
 
+    if(gMain.heldKeys & START_BUTTON)
+    {
+
+        sPinballGame->state = PINBALL_STATE_START_EXIT;
+        sPinballGame->exitTimer = 2 * 60;
+
+        gSpecialVar_Result = sPinballGame->completed;
+
+    }
+
     flipper->stateDelta = stateDelta;
     flipper->state += stateDelta;
 }

@@ -77,6 +77,7 @@
 #include "constants/party_menu.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "ui_stat_editor.h"
 
 enum {
     MENU_SUMMARY,
@@ -85,6 +86,7 @@ enum {
     MENU_FOLLOWER_SET,
     MENU_FOLLOWER_RETURN,
     MENU_FOLLOWER_UNSET,
+    MENU_STAT_EDIT,
     MENU_CANCEL1,
     MENU_ITEM,
     MENU_GIVE,
@@ -217,7 +219,7 @@ struct PartyMenuInternal
     u32 spriteIdCancelPokeball:7;
     u32 messageId:14;
     u8 windowId[3];
-    u8 actions[9];
+    u8 actions[10];
     u8 numActions;
     // In vanilla Emerald, only the first 0xB0 hwords (0x160 bytes) are actually used.
     // However, a full 0x100 hwords (0x200 bytes) are allocated.
@@ -524,6 +526,7 @@ static void CursorCb_Follower(u8);
 static void CursorCb_FollowerSet(u8);
 static void CursorCb_FollowerUnset(u8);
 static void CursorCb_FollowerReturn(u8);
+static void CursorCb_StatEdit(u8);
 
 // static const data
 #include "data/party_menu.h"
@@ -2995,7 +2998,12 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         //     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_POKEDEX);
 
         if (GetMonData(&mons[slotId], MON_DATA_SPECIES) != SPECIES_NONE || GetMonData(&mons[slotId], MON_DATA_IS_EGG) == FALSE)
+        {
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_FOLLOWER);
+            
+            if(sPartyMenuInternal->numActions < 8)
+                AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_STAT_EDIT);
+        }
     }
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_CANCEL1);
 }
@@ -4230,7 +4238,14 @@ static void CursorCb_FieldMove(u8 taskId)
     else
     {
         // All field moves before WATERFALL are HMs.
-        if (fieldMove <= FIELD_MOVE_WATERFALL && FlagGet(FLAG_BADGE01_GET + fieldMove) != TRUE)
+        if (fieldMove <= FIELD_MOVE_WATERFALL && ((fieldMove == FIELD_MOVE_CUT && FlagGet(FLAG_BADGE01_GET) != TRUE) ||
+            (fieldMove == FIELD_MOVE_ROCK_SMASH && FlagGet(FLAG_BADGE02_GET) != TRUE) ||
+            (fieldMove == FIELD_MOVE_FLASH && FlagGet(FLAG_BADGE03_GET) != TRUE) ||
+            (fieldMove == FIELD_MOVE_SURF && FlagGet(FLAG_BADGE04_GET) != TRUE) ||
+            (fieldMove == FIELD_MOVE_DIVE && FlagGet(FLAG_BADGE05_GET) != TRUE) ||
+            (fieldMove == FIELD_MOVE_STRENGTH && FlagGet(FLAG_BADGE06_GET) != TRUE) ||
+            (fieldMove == FIELD_MOVE_FLY && FlagGet(FLAG_BADGE07_GET) != TRUE) ||
+            (fieldMove == FIELD_MOVE_WATERFALL && FlagGet(FLAG_BADGE08_GET) != TRUE)))
         {
             DisplayPartyMenuMessage(gText_CantUseUntilNewBadge, TRUE);
             gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
@@ -4732,6 +4747,23 @@ static void UpdatePartyMonAilmentGfx(u8 status, struct PartyMenuBox *menuBox)
         gSprites[menuBox->statusSpriteId].invisible = FALSE;
         break;
     }
+}
+
+static void ChangePokemonStatsPartyScreen_CB(void)
+{
+    CB2_ReturnToPartyMenuFromSummaryScreen();
+}
+
+static void ChangePokemonStatsPartyScreen(void)
+{
+    StatEditor_Init(ChangePokemonStatsPartyScreen_CB);
+}
+static void CursorCb_StatEdit(u8 taskId)
+{
+    PlaySE(SE_SELECT);
+    gSpecialVar_0x8004 = gPartyMenu.slotId;
+    sPartyMenuInternal->exitCallback = ChangePokemonStatsPartyScreen;
+    Task_ClosePartyMenu(taskId);
 }
 
 void LoadPartyMenuAilmentGfx(void)

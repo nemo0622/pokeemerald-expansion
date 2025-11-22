@@ -70,7 +70,7 @@ script PentepetalCity_EventScript_RaniaChimeraEvent
 
     delay(10)
     speakername("Rania")
-    msgbox(format("You're an incredible Trainer, {PLAYER}! You'll be able to handle these Team Chimera thugs, no problem.\p Here, let me here your Pokémon. Then follow me to where Team Chimera is hiding!"))
+    msgbox(format("You're an incredible Trainer, {PLAYER}! You'll be able to handle these Team Chimera thugs, no problem.\p Here, let me heal your Pokémon. Then follow me to where Team Chimera is hiding!"))
     closemessage
     special(HealPlayerParty)
     delay(10)

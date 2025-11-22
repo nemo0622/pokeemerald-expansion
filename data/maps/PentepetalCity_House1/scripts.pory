@@ -15,9 +15,62 @@ script PentepetalCity_House1_EventScript_Woman
 {
     lock
     faceplayer
-    speakername("Woman")
-    msgbox(format("My husband is just obsessed with that Jangmo-o he caught on a trip out west. Ehehe, it's sweet!"))
-    closemessage
+    speakername("Fancy Lady")
+    checkoutfitflag(OUTFIT_PETAL)
+
+    if(var(VAR_RESULT) == FALSE) // no coral outfit
+    {
+        msgbox(format("We just do it differently in ol' Péntepetal City!"))
+        closemessage
+        delay(5)
+        showmoneybox(0, 0)
+        speakername("Fancy Lady")
+        msgbox(format("I was inspired by the gorgeous wildflowers around the city! I'll give you this {COLOR GREEN}5-Petal Style Outfit{COLOR DARK_GRAY} for just ¥9000. How about it?"), MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == FALSE) // said no
+        {
+            hidemoneybox
+            speakername("Fancy Lady")
+            msgbox(format("No? Do you not appreciate the beauty of flowers like I do?"))
+            closemessage
+            release
+            end
+        }
+        else // said yes
+        {
+            // check money before purchasing
+            checkmoney(9000)
+            if(var(VAR_RESULT) == FALSE)
+            {
+                hidemoneybox
+                speakername("Fancy Lady")
+                msgbox(format("Hm, looks like you're just short on cash. Come back with a bit more money on you!"))
+                closemessage
+                release
+                end
+            }
+            else
+            {
+                removemoney(9000)
+                updatemoneybox
+                delay(5)
+                unlockoutfit(OUTFIT_PETAL)
+                msgbox(format("The 5-Petal Style Outfit has been added to the Outfit Box!"))
+                delay(20)
+                closemessage
+                hidemoneybox
+                delay(5)
+                speakername("Fancy Lady")
+                msgbox(format("Ahaha, yay! Now everyone will see my gorgeous clothing!"))
+                closemessage
+            }
+        }
+    }
+    else
+    {
+        msgbox(format("I made the 5-Petal Style Outfit myself, just for a Trainer like you!"))
+        closemessage
+    }
     release
     end
 }

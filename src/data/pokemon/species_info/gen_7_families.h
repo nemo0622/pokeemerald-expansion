@@ -4207,7 +4207,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sTypeNullLevelUpLearnset,
         .teachableLearnset = sTypeNullTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_SILVALLY_NORMAL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SILVALLY_NORMAL}),
     },
 
 #define SILVALLY_SPECIES_INFO(type, _palette)                               \
@@ -4318,6 +4318,14 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .trainerScale = 256,                                                \
         .trainerOffset = 0,                                                 \
         FOOTPRINT(Minior)                                                   \
+        OVERWORLD(                                                          \
+            sPicTable_MiniorMeteor,                                         \
+            SIZE_32x32,                                                     \
+            SHADOW_SIZE_M,                                                  \
+            TRACKS_FOOT,                                                    \
+            gOverworldPalette_MiniorMeteor,                                 \
+            gShinyOverworldPalette_MiniorMeteor                             \
+        )                                                                   \
         .levelUpLearnset = sMiniorLevelUpLearnset,                          \
         .teachableLearnset = sMiniorTeachableLearnset,                      \
         .formSpeciesIdTable = sMiniorFormSpeciesIdTable
@@ -4347,14 +4355,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .iconSprite = gMonIcon_MiniorMeteor,                \
         .iconPalIndex = 0,                                  \
         SHADOW(0, 14, SHADOW_SIZE_S)                    \
-        OVERWORLD(                                          \
-            sPicTable_MiniorMeteor,                         \
-            SIZE_32x32,                                     \
-            SHADOW_SIZE_M,                                  \
-            TRACKS_FOOT,                                    \
-            gOverworldPalette_MiniorMeteor,                 \
-            gShinyOverworldPalette_MiniorMeteor             \
-        )                                                   \
         .formChangeTable = sMinior ##Form##FormChangeTable, \
         MINIOR_MISC_INFO(BODY_COLOR_BROWN),                 \
     }

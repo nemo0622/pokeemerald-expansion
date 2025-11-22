@@ -42,13 +42,15 @@ AcrisiaCity_House5_EventScript_PunkRocker::
 # 44 "data/maps/AcrisiaCity_House5/scripts.pory"
 	checkforspecies SPECIES_BLITZLE, OPEN_PARTY_SCREEN, AcrisiaCity_House5_EventScript_PunkRocker_ReactToBlitzle
 # 46 "data/maps/AcrisiaCity_House5/scripts.pory"
-	speakername AcrisiaCity_House5_EventScript_PunkRocker_Text_0
+	lock
 # 47 "data/maps/AcrisiaCity_House5/scripts.pory"
-	msgbox AcrisiaCity_House5_EventScript_PunkRocker_Text_4
+	speakername AcrisiaCity_House5_EventScript_PunkRocker_Text_0
 # 48 "data/maps/AcrisiaCity_House5/scripts.pory"
+	msgbox AcrisiaCity_House5_EventScript_PunkRocker_Text_4
+# 49 "data/maps/AcrisiaCity_House5/scripts.pory"
 	closemessage
 AcrisiaCity_House5_EventScript_PunkRocker_4:
-# 50 "data/maps/AcrisiaCity_House5/scripts.pory"
+# 51 "data/maps/AcrisiaCity_House5/scripts.pory"
 	release
 	end
 
@@ -74,25 +76,25 @@ AcrisiaCity_House5_EventScript_PunkRocker_5:
 
 
 AcrisiaCity_House5_EventScript_PunkRocker_ReactToBlitzle::
-# 56 "data/maps/AcrisiaCity_House5/scripts.pory"
-	delay 20
 # 57 "data/maps/AcrisiaCity_House5/scripts.pory"
-	applymovement 2, Common_Movement_ExclamationMark
-# 58 "data/maps/AcrisiaCity_House5/scripts.pory"
-	waitmovement 0
-# 59 "data/maps/AcrisiaCity_House5/scripts.pory"
-	speakername AcrisiaCity_House5_EventScript_PunkRocker_Text_0
-# 60 "data/maps/AcrisiaCity_House5/scripts.pory"
-	msgbox AcrisiaCity_House5_EventScript_PunkRocker_ReactToBlitzle_Text_0
-# 61 "data/maps/AcrisiaCity_House5/scripts.pory"
-	closemessage
-# 62 "data/maps/AcrisiaCity_House5/scripts.pory"
-	delay 5
-# 63 "data/maps/AcrisiaCity_House5/scripts.pory"
-	giveitem ITEM_RARE_CANDY
-# 65 "data/maps/AcrisiaCity_House5/scripts.pory"
 	delay 20
+# 58 "data/maps/AcrisiaCity_House5/scripts.pory"
+	applymovement 2, Common_Movement_ExclamationMark
+# 59 "data/maps/AcrisiaCity_House5/scripts.pory"
+	waitmovement 0
+# 60 "data/maps/AcrisiaCity_House5/scripts.pory"
+	speakername AcrisiaCity_House5_EventScript_PunkRocker_Text_0
+# 61 "data/maps/AcrisiaCity_House5/scripts.pory"
+	msgbox AcrisiaCity_House5_EventScript_PunkRocker_ReactToBlitzle_Text_0
+# 62 "data/maps/AcrisiaCity_House5/scripts.pory"
+	closemessage
+# 63 "data/maps/AcrisiaCity_House5/scripts.pory"
+	delay 5
+# 64 "data/maps/AcrisiaCity_House5/scripts.pory"
+	giveitem ITEM_RARE_CANDY
 # 66 "data/maps/AcrisiaCity_House5/scripts.pory"
+	delay 20
+# 67 "data/maps/AcrisiaCity_House5/scripts.pory"
 	completequest QUEST_CATCH_BLITZLE
 	return
 
@@ -137,7 +139,7 @@ AcrisiaCity_House5_EventScript_PunkRocker_Text_3:
 	.string "show me?$"
 
 AcrisiaCity_House5_EventScript_PunkRocker_Text_4:
-# 47 "data/maps/AcrisiaCity_House5/scripts.pory"
+# 48 "data/maps/AcrisiaCity_House5/scripts.pory"
 	.string "No Blitzle to show, huh? I still don't\n"
 	.string "get why people put so much effort into\l"
 	.string "Pokémon training.\p"
@@ -145,7 +147,7 @@ AcrisiaCity_House5_EventScript_PunkRocker_Text_4:
 	.string "I think that might change my mind.$"
 
 AcrisiaCity_House5_EventScript_PunkRocker_ReactToBlitzle_Text_0:
-# 60 "data/maps/AcrisiaCity_House5/scripts.pory"
+# 61 "data/maps/AcrisiaCity_House5/scripts.pory"
 	.string "Woah, a real Blitzle! It's so much cooler\n"
 	.string "than I thought!\p"
 	.string "I think I understand why people train\n"

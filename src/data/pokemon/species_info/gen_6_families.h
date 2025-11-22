@@ -3609,6 +3609,63 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sDragalgeLevelUpLearnset,
         .teachableLearnset = sDragalgeTeachableLearnset,
+        .formSpeciesIdTable = sDragalgeFormSpeciesIdTable,
+        .formChangeTable = sDragalgeFormChangeTable,
+    },
+
+    [SPECIES_DRAGALGE_MEGA] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 85,
+        .baseDefense   = 105,
+        .baseSpeed     = 44,
+        .baseSpAttack  = 132,
+        .baseSpDefense = 163,
+        .types = MON_TYPES(TYPE_POISON, TYPE_DRAGON),
+        .catchRate = 55,
+        .expYield = 173,
+        .evYield_SpDefense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_ANALYTIC, ABILITY_ANALYTIC, ABILITY_ANALYTIC },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Dragalge"),
+        .cryId = CRY_DRAGALGE,
+        .natDexNum = NATIONAL_DEX_DRAGALGE,
+        .categoryName = _("Mock Kelp"),
+        .height = 18,
+        .weight = 815,
+        .description = COMPOUND_STRING(
+            "Folktales of Ilian sailors crossing kelp\n"
+            "forests that come alive were thought to be\n"
+            "mere legends until the discovery of Mega\n"
+            "Dragalge. Now, some researchers wonder..."),
+        .pokemonScale = 267,
+        .pokemonOffset = 2,
+        .trainerScale = 286,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_DragalgeMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_DragalgeMega,
+        .frontAnimId = ANIM_FRONT_FLIP,
+        .backPic = gMonBackPic_DragalgeMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_STRETCH,
+        .palette = gMonPalette_DragalgeMega,
+        .shinyPalette = gMonShinyPalette_DragalgeMega,
+        .iconSprite = gMonIcon_DragalgeMega,
+        .iconPalIndex = 5,
+        SHADOW(0, 14, SHADOW_SIZE_S)
+        FOOTPRINT(Dragalge)
+        .levelUpLearnset = sDragalgeLevelUpLearnset,
+        .teachableLearnset = sDragalgeTeachableLearnset,
+        .formSpeciesIdTable = sDragalgeFormSpeciesIdTable,
+        .formChangeTable = sDragalgeFormChangeTable,
     },
 #endif //P_FAMILY_SKRELP
 

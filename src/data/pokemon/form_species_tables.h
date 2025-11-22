@@ -605,6 +605,18 @@ static const u16 sMewtwoFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_MEWTWO
 
+static const u16 sMeganiumFormSpeciesIdTable[] = {
+    SPECIES_MEGANIUM,
+    SPECIES_MEGANIUM_MEGA,
+    FORM_SPECIES_END,
+};
+
+static const u16 sFeraligatrFormSpeciesIdTable[] = {
+    SPECIES_FERALIGATR,
+    SPECIES_FERALIGATR_MEGA,
+    FORM_SPECIES_END,
+};
+
 #if P_FAMILY_CYNDAQUIL
 static const u16 sTyphlosionFormSpeciesIdTable[] = {
     SPECIES_TYPHLOSION,
@@ -832,6 +844,12 @@ static const u16 sGalladeFormSpeciesIdTable[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_RALTS
+
+static const u16 sFroslassFormSpeciesIdTable[] = {
+    SPECIES_FROSLASS,
+    SPECIES_FROSLASS_MEGA,
+    FORM_SPECIES_END,
+};
 
 #if P_FAMILY_SABLEYE
 static const u16 sSableyeFormSpeciesIdTable[] = {
@@ -1343,6 +1361,12 @@ static const u16 sScraftyFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
+static const u16 sChandelureFormSpeciesIdTable[] = {
+    SPECIES_CHANDELURE,
+    SPECIES_CHANDELURE_MEGA,
+    FORM_SPECIES_END,
+};
+
 #if P_FAMILY_ARCHEN
 static const u16 sArcheopsFormSpeciesIdTable[] = {
     SPECIES_ARCHEOPS,
@@ -1608,6 +1632,12 @@ static const u16 sPangoroFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_PANCHAM
+
+static const u16 sDragalgeFormSpeciesIdTable[] = {
+    SPECIES_DRAGALGE,
+    SPECIES_DRAGALGE_MEGA,
+    FORM_SPECIES_END,
+};
 
 #if P_FAMILY_HELIOPTILE
 static const u16 sHelioliskFormSpeciesIdTable[] = {
