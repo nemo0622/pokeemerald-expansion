@@ -1383,7 +1383,7 @@ SofosCity_EventScript_BeautyNearPokecenter_Text_1:
 # 325 "data/maps/SofosCity/scripts.pory"
 	.string "Sofos City is well-known for using\n"
 	.string "turquoise-blue roofs on most buildings.\l"
-	.string "It gives the city it's own identity.\p"
+	.string "It gives the city its own identity.\p"
 	.string "Of course, those are only on the modern\n"
 	.string "buildings. The ruins of the Acropolis\l"
 	.string "Temple to the north were made of\l"

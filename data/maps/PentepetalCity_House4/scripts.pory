@@ -11,12 +11,12 @@ script PentepetalCity_House4_EventScript_Picnicker
     end
 }
 
-script PentepetalCity_House4_EventScript_Roselia
+script PentepetalCity_House4_EventScript_Bellsprout
 {
     lock
     faceplayer
-    speakername("Roselia")
-    playmoncry(SPECIES_ROSELIA, CRY_MODE_NORMAL)
+    speakername("Bellsprout")
+    playmoncry(SPECIES_BELLSPROUT, CRY_MODE_NORMAL)
     msgbox("Chk chkee!")
     waitmoncry
     closemessage

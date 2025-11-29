@@ -2880,7 +2880,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1232
-            .species = SPECIES_PACHIRISU,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1234
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -4261,7 +4261,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1803
-            .species = SPECIES_PACHIRISU,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1805
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -5703,7 +5703,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2365
-            .species = SPECIES_PACHIRISU,
+            .species = SPECIES_YAMPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2367
             .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
@@ -7636,7 +7636,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 3139
-            .species = SPECIES_PACHIRISU,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3141
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -10259,7 +10259,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4201
-            .species = SPECIES_PACHIRISU,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4203
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -11146,7 +11146,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4547
-            .species = SPECIES_PACHIRISU,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4549
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -15286,7 +15286,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6237
-            .species = SPECIES_PACHIRISU,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6239
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
@@ -23125,7 +23125,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9444
-            .species = SPECIES_PACHIRISU,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9446
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
@@ -24870,7 +24870,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10131
-            .species = SPECIES_PACHIRISU,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10133
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
@@ -27512,7 +27512,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11129
-            .species = SPECIES_PACHIRISU,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11131
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),

@@ -2749,45 +2749,60 @@ static void DexNavDrawHiddenIcons(void)
 /////////////////////////
 bool8 DexNavTryMakeShinyMon(void)
 {
-    u32 i, shinyRolls, chainBonus, rndBonus;
-    u32 shinyRate = 0;
+    u32 shinyRolls, rndBonus;
+    u32 chainBonus = 0;
     u32 charmBonus = 0;
     u8 searchLevel = sDexNavSearchDataPtr->searchLevel;
     u8 chain = gSaveBlock1Ptr->dexNavChain;
-    
-    #ifdef ITEM_SHINY_CHARM
-    charmBonus = (CheckBagHasItem(ITEM_SHINY_CHARM, 1) > 0) ? 2 : 0;
-    #endif
-    
-    chainBonus = (chain == 50) ? 5 : (chain == 100) ? 10 : 0;
-    if(chain > 20)
-        chainBonus = 3;
-    rndBonus = (Random() % 100 < 8 ? 4 : 0);
-    shinyRolls = 1 + charmBonus + chainBonus + rndBonus + 3;
 
-    if (searchLevel > 200)
+    // Shiny Charm bonus
+    if(CheckBagHasItem(ITEM_SHINY_CHARM, 2)) // both charms
+        charmBonus = 4;
+    else if(CheckBagHasItem(ITEM_SHINY_CHARM, 1)) // only one charm
+        charmBonus = 2;
+    else
+        charmBonus = 0;
+
+    // Chain bonus
+    if(chain == 100)
+        chainBonus = 10;
+    else if(chain == 50)
+        chainBonus = 5;
+    else if(chain > 20)
+        chainBonus += 3;
+    else
+        chainBonus = 0;
+    
+    rndBonus = (Random() % 100 < 8 ? 4 : 0);
+    shinyRolls = 4 + charmBonus + chainBonus + rndBonus;
+
+    if (searchLevel > 100) // max out search level at 100
     {
-        shinyRate += searchLevel - 200;
-        searchLevel = 200;
-    }
-    if (searchLevel > 100)
-    {
-        shinyRate += (searchLevel * 2) - 200;
+        // shinyRate += 1;
+        shinyRolls += 2; // 2 extra shiny rolls for search level of 100
         searchLevel = 100;
     }
-    if (searchLevel > 0)
-    {
-        shinyRate += searchLevel * 6;
-    }
+
+    // Trainer OTID? lowkey no idea
+    u32 personality;
+    u32 value;
+    personality = Random32();
+    value = gSaveBlock2Ptr->playerTrainerId[0]
+              | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
+              | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
+              | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
     
-    shinyRate /= 100;
-    for (i = 0; i < shinyRolls; i++)
+    // Rerolls "shinyRolls" number of times, randomly calculating Pokémon Personality values until rerolls run out or a shiny is found
+    while (GET_SHINY_VALUE(value, personality) >= SHINY_ODDS && shinyRolls > 0)
     {
-        if (Random() % 10000 < shinyRate)
-            return TRUE;
+        personality = Random32();
+        shinyRolls--;
     }
+
+    if(GET_SHINY_VALUE(value, personality) < SHINY_ODDS) // after all the rerolls, if we found a shiny, return true
+        return TRUE;
     
-    return FALSE;
+    return FALSE; // default: no shiny found during rerolls, return false
 }
 
 void TryIncrementSpeciesSearchLevel(u16 dexNum)

@@ -322,7 +322,7 @@ script SofosCity_EventScript_BeautyNearPokecenter
     lock
     faceplayer
     speakername("Beauty")
-    msgbox(format("Sofos City is well-known for using turquoise-blue roofs on most buildings. It gives the city it's own identity.\p Of course, those are only on the modern buildings. The ruins of the Acropolis Temple to the north were made of shining marble!"))
+    msgbox(format("Sofos City is well-known for using turquoise-blue roofs on most buildings. It gives the city its own identity.\p Of course, those are only on the modern buildings. The ruins of the Acropolis Temple to the north were made of shining marble!"))
     closemessage
     release
     end

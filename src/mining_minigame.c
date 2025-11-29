@@ -97,10 +97,10 @@ static void Debug_RaiseSpritePriority(u32 spriteId);
 static u32 Debug_CreateRandomItem(u32 random, u32 itemId);
 
 #define DEBUG_DESIRED_NUMBER_OF_ITEMS   4
-#define DEBUG_MININGID_ITEM1            MININGID_FOSSILIZED_BIRD
-#define DEBUG_MININGID_ITEM2            MININGID_FOSSILIZED_BIRD
-#define DEBUG_MININGID_ITEM3            MININGID_FOSSILIZED_BIRD
-#define DEBUG_MININGID_ITEM4            MININGID_FOSSILIZED_BIRD
+#define DEBUG_MININGID_ITEM1            MININGID_BLACK_AUGURITE
+#define DEBUG_MININGID_ITEM2            MININGID_BLACK_AUGURITE
+#define DEBUG_MININGID_ITEM3            MININGID_BLACK_AUGURITE
+#define DEBUG_MININGID_ITEM4            MININGID_BLACK_AUGURITE
 #define DEBUG_MININGID_STONE1           MININGID_STONE_MUSHROOM1
 #define DEBUG_MININGID_STONE2           MININGID_STONE_MUSHROOM2
 
@@ -1341,7 +1341,7 @@ static const struct MiningItem MiningItemList[] =
         .bagItemId = ITEM_BLACK_AUGURITE,
         .top = 2,
         .left = 2,
-        .totalTiles = 6,
+        .totalTiles = 8,
         .tag = MINING_TAG_ITEM_BLACK_AUGURITE,
         .sheet = &sSpriteSheet_ItemBlackAugurite,
         .paldata = gItemBlackAuguritePal,
@@ -2139,7 +2139,7 @@ static const u32 ItemRarityTable_Rare[] =
 {
     MININGID_COVER_FOSSIL, // replaces DAMP_ROCK
     MININGID_PLUME_FOSSIL, // replaces HEAT_ROCK
-    MININGID_BLACK_AUGURITE, // replaces OVAL_STONE
+    // MININGID_BLACK_AUGURITE, // replaces OVAL_STONE
     MININGID_JAW_FOSSIL, // replaces ICY_ROCK
     MININGID_SAIL_FOSSIL, // replaces SMOOTH_ROCK
     MININGID_LEAF_STONE,

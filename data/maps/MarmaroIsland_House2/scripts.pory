@@ -7,6 +7,16 @@ script MarmaroIsland_House2_EventScript_Girl
     speakername("Girl")
     msgbox(format("Dad says that Marmaro Island used to be a lot bigger, but stone mining made it shrink. That must've been a lot of stone!"))
     closemessage
+    if(!flag(FLAG_GOT_BLACK_AUGURITE_MARMARO))
+    {
+        speakername("Girl")
+        msgbox(format("I found this weird black stone by the Mine, but Dad told me it wasn't a fossil. Do you want it?"))
+        closemessage
+        delay(5)
+        giveitem(ITEM_BLACK_AUGURITE)
+        closemessage
+        setflag(FLAG_GOT_BLACK_AUGURITE_MARMARO)
+    }
     release
     end
 }

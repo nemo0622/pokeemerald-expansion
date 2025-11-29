@@ -714,7 +714,7 @@
 #define FLAG_CAN_ENCOUNTER_ENTEI                0x29C // Reset every Elite Four run
 #define FLAG_HIDE_PIRAEUS_ACRISIA_CITY          0x29D // Piraeus greets Player in Acrisia after becoming Champion
 #define FLAG_HIDE_RANIA_AHIYAWA_INDOOR          0x29E
-#define FLAG_UNUSED_0x29F  0x29F // Unused Flag
+#define FLAG_GOT_BLACK_AUGURITE_MARMARO         0x29F // Given Black Augurite from Girl in Marmaro Island House 2
 #define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
 #define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
 #define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
