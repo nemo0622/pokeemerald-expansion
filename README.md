@@ -70,7 +70,7 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 ## Future Development Plans
 
-LAZARUS VERSION 1.3 CHANGES
+LAZARUS VERSION 1.2 CHANGES
 - Re-coded DexNav shiny calculation:
     - Starts with 4 base Shiny rerolls for any DexNav Pokémon
     - Shiny Charms give +2 rerolls each
