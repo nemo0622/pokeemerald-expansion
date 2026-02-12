@@ -9261,7 +9261,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_FroslassMega,
         .iconSprite = gMonIcon_FroslassMega,
         .iconPalIndex = 0,
-        SHADOW(1, 12, SHADOW_SIZE_S)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(Froslass)
         .levelUpLearnset = sFroslassLevelUpLearnset,
         .teachableLearnset = sFroslassTeachableLearnset,

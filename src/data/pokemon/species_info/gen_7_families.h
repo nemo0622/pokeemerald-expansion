@@ -1442,6 +1442,66 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sCrabominableLevelUpLearnset,
         .teachableLearnset = sCrabominableTeachableLearnset,
+        .formSpeciesIdTable = sCrabominableFormSpeciesIdTable,
+        .formChangeTable = sCrabominableFormChangeTable,
+    },
+
+    [SPECIES_CRABOMINABLE_MEGA] =
+    {
+        .baseHP        = 102,
+        .baseAttack    = 147,
+        .baseDefense   = 122,
+        .baseSpeed     = 53,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 107,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_ICE),
+        .catchRate = 60,
+        .expYield = 167,
+        .evYield_Attack = 2,
+        .itemCommon = ITEM_ORAN_BERRY,
+        .itemRare = ITEM_SITRUS_BERRY,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_FLUFFY, ABILITY_FLUFFY, ABILITY_FLUFFY },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Crabominable"),
+        .cryId = CRY_CRABOMINABLE,
+        .natDexNum = NATIONAL_DEX_CRABOMINABLE,
+        .categoryName = _("Woolly Crab"),
+        .height = 17,
+        .weight = 1800,
+        .description = COMPOUND_STRING(
+            "Mega Crabominable are the rulers of their\n"
+            "snow-capped mountains. Made heavy with fur\n"
+            "and ice, their fists can punch straight\n"
+            "through bedrock."),
+        .pokemonScale = 259,
+        .pokemonOffset = 0,
+        .trainerScale = 290,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_CrabominableMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_CrabominableMega,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_FAST,
+        .backPic = gMonBackPic_CrabominableMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CrabominableMega,
+        .shinyPalette = gMonShinyPalette_CrabominableMega,
+        .iconSprite = gMonIcon_CrabominableMega,
+        .iconPalIndex = 2,
+        SHADOW(-2, 11, SHADOW_SIZE_M)
+        FOOTPRINT(Crabominable)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sCrabominableLevelUpLearnset,
+        .teachableLearnset = sCrabominableTeachableLearnset,
+        .formSpeciesIdTable = sCrabominableFormSpeciesIdTable,
+        .formChangeTable = sCrabominableFormChangeTable,
     },
 #endif //P_FAMILY_CRABRAWLER
 
@@ -3954,6 +4014,64 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sGolisopodLevelUpLearnset,
         .teachableLearnset = sGolisopodTeachableLearnset,
+        .formSpeciesIdTable = sGolisopodFormSpeciesIdTable,
+        .formChangeTable = sGolisopodFormChangeTable,
+    },
+
+    [SPECIES_GOLISOPOD_MEGA] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 155,
+        .baseDefense   = 170,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 120,
+        .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
+        .catchRate = 45,
+        .expYield = 186,
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_ANGER_SHELL, ABILITY_ANGER_SHELL, ABILITY_ANGER_SHELL },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Golisopod"),
+        .cryId = CRY_GOLISOPOD,
+        .natDexNum = NATIONAL_DEX_GOLISOPOD,
+        .categoryName = _("Hard Scale"),
+        .height = 20,
+        .weight = 1080,
+        .description = COMPOUND_STRING(
+            "Mega Golisopod is prepared for battle on\n" // new desc
+            "a level unlike most Pokémon. With a extra-\n"
+            "tough exoskeleton and fierce determination,\n"
+            "this Pokémon scares even the boldest foes."),
+        .pokemonScale = 261,
+        .pokemonOffset = 1,
+        .trainerScale = 334,
+        .trainerOffset = 4,
+        .frontPic = gMonFrontPic_GolisopodMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_GolisopodMega,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_FAST,
+        .backPic = gMonBackPic_GolisopodMega,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 9,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_GolisopodMega,
+        .shinyPalette = gMonShinyPalette_GolisopodMega,
+        .iconSprite = gMonIcon_GolisopodMega,
+        .iconPalIndex = 2,
+        SHADOW(1, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Golisopod)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sGolisopodLevelUpLearnset,
+        .teachableLearnset = sGolisopodTeachableLearnset,
+        .formSpeciesIdTable = sGolisopodFormSpeciesIdTable,
+        .formChangeTable = sGolisopodFormChangeTable,
     },
 #endif //P_FAMILY_WIMPOD
 

@@ -812,7 +812,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SKILL_LINK, ABILITY_SKILL_LINK, ABILITY_SKILL_LINK },
+        .abilities = { ABILITY_PROTEAN, ABILITY_PROTEAN, ABILITY_PROTEAN },
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
         .speciesName = _("Greninja"),
@@ -2237,7 +2237,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_TECHNICIAN, ABILITY_TECHNICIAN, ABILITY_TECHNICIAN },
+        .abilities = { ABILITY_STAMINA, ABILITY_STAMINA, ABILITY_STAMINA },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Gogoat"),
         .cryId = CRY_GOGOAT,
@@ -3660,7 +3660,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_DragalgeMega,
         .iconSprite = gMonIcon_DragalgeMega,
         .iconPalIndex = 5,
-        SHADOW(0, 14, SHADOW_SIZE_S)
+        SHADOW(0, 14, SHADOW_SIZE_M)
         FOOTPRINT(Dragalge)
         .levelUpLearnset = sDragalgeLevelUpLearnset,
         .teachableLearnset = sDragalgeTeachableLearnset,
@@ -3934,7 +3934,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpeed     = 119,
         .baseSpAttack  = 159,
         .baseSpDefense = 104,
-        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_NORMAL),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIRE),
         .catchRate = 75,
         .expYield = 168,
         .evYield_Speed = 1,
@@ -4108,6 +4108,64 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sTyrantrumLevelUpLearnset,
         .teachableLearnset = sTyrantrumTeachableLearnset,
+        .formSpeciesIdTable = sTyrantrumFormSpeciesIdTable,
+        .formChangeTable = sTyrantrumFormChangeTable,
+    },
+
+    [SPECIES_TYRANTRUM_MEGA] =
+    {
+        .baseHP        = 92,
+        .baseAttack    = 131,
+        .baseDefense   = 159,
+        .baseSpeed     = 81,
+        .baseSpAttack  = 59,
+        .baseSpDefense = 99,
+        .types = MON_TYPES(TYPE_ICE, TYPE_DRAGON),
+        .catchRate = 45,
+        .expYield = 182,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_FLUFFY, ABILITY_FLUFFY, ABILITY_FLUFFY },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Tyrantrum"),
+        .cryId = CRY_TYRANTRUM,
+        .natDexNum = NATIONAL_DEX_TYRANTRUM,
+        .categoryName = _("Despot"),
+        .height = 25,
+        .weight = 2700,
+        .description = COMPOUND_STRING(
+            "Mega Tyrantrum becomes adapted for colder\n" // new desc
+            "environments, drastically increasing its\n"
+            "defense. Don't let the feathers fool you,\n"
+            "though - it remains the king of the past."),
+        .pokemonScale = 257,
+        .pokemonOffset = 10,
+        .trainerScale = 423,
+        .trainerOffset = 8,
+        .frontPic = gMonFrontPic_TyrantrumMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_TyrantrumMega,
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_TyrantrumMega,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 5,
+        .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
+        .palette = gMonPalette_TyrantrumMega,
+        .shinyPalette = gMonShinyPalette_TyrantrumMega,
+        .iconSprite = gMonIcon_TyrantrumMega,
+        .iconPalIndex = 0,
+        SHADOW(1, 12, SHADOW_SIZE_L)
+        FOOTPRINT(Tyrantrum)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sTyrantrumLevelUpLearnset,
+        .teachableLearnset = sTyrantrumTeachableLearnset,
+        .formSpeciesIdTable = sTyrantrumFormSpeciesIdTable,
+        .formChangeTable = sTyrantrumFormChangeTable,
     },
 #endif //P_FAMILY_TYRUNT
 
@@ -4234,6 +4292,64 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sAurorusLevelUpLearnset,
         .teachableLearnset = sAurorusTeachableLearnset,
+        .formSpeciesIdTable = sAurorusFormSpeciesIdTable,
+        .formChangeTable = sAurorusFormChangeTable,
+    },
+
+    [SPECIES_AURORUS_MEGA] =
+    {
+        .baseHP        = 128,
+        .baseAttack    = 77,
+        .baseDefense   = 92,
+        .baseSpeed     = 53,
+        .baseSpAttack  = 139,
+        .baseSpDefense = 132,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_ICE),
+        .catchRate = 45,
+        .expYield = 104,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
+        .abilities = { ABILITY_PRISM_ARMOR, ABILITY_PRISM_ARMOR, ABILITY_PRISM_ARMOR },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Aurorus"),
+        .cryId = CRY_AURORUS,
+        .natDexNum = NATIONAL_DEX_AURORUS,
+        .categoryName = _("Tundra"),
+        .height = 27,
+        .weight = 2250,
+        .description = COMPOUND_STRING(
+            "Mega Aurorus calls upon the power of the\n" // new desc
+            "North Star. The celestial energy courses\n"
+            "through its body, boosting its power to\n"
+            "impossible new heights."),
+        .pokemonScale = 275,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_AurorusMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_AurorusMega,
+        .frontAnimId = ANIM_GROW_VIBRATE,
+        .backPic = gMonBackPic_AurorusMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .palette = gMonPalette_AurorusMega,
+        .shinyPalette = gMonShinyPalette_AurorusMega,
+        .iconSprite = gMonIcon_AurorusMega,
+        .iconPalIndex = 0,
+        SHADOW(2, 12, SHADOW_SIZE_L)
+        FOOTPRINT(Aurorus)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sAurorusLevelUpLearnset,
+        .teachableLearnset = sAurorusTeachableLearnset,
+        .formSpeciesIdTable = sAurorusFormSpeciesIdTable,
+        .formChangeTable = sAurorusFormChangeTable,
     },
 #endif //P_FAMILY_AMAURA
 
@@ -4625,8 +4741,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSliggooLevelUpLearnset,
         .teachableLearnset = sSliggooTeachableLearnset,
         .formSpeciesIdTable = sSliggooFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL_RAIN, 50, SPECIES_GOODRA},
-                                {EVO_LEVEL_FOG, 50, SPECIES_GOODRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL_RAIN, 50, SPECIES_GOODRA}),
     },
 
     [SPECIES_GOODRA] =
@@ -4754,8 +4869,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSliggooHisuianLevelUpLearnset,
         .teachableLearnset = sSliggooHisuianTeachableLearnset,
         .formSpeciesIdTable = sSliggooFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL_RAIN, 50, SPECIES_GOODRA_HISUIAN},
-                                {EVO_LEVEL_FOG, 50, SPECIES_GOODRA_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL_RAIN, 50, SPECIES_GOODRA_HISUIAN}),
     },
 
     [SPECIES_GOODRA_HISUIAN] =

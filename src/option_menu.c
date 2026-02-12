@@ -30,6 +30,7 @@
 #define TShadowsOff data[9]
 #define TNightCycle data[10]
 #define TColorTint data[11]
+#define TLevelCaps data[12]
 
 // vanilla
 enum Page1
@@ -52,6 +53,7 @@ enum Page2
     MENUITEM_SHADOWS,
     MENUITEM_NIGHTCYCLE,
     MENUITEM_COLORTINT,
+    MENUITEM_LEVELCAPS,
     MENUITEM_CANCEL_PG2,
     MENUITEM_COUNT_PG2,
 };
@@ -76,6 +78,7 @@ enum
 #define YPOS_SHADOWS      (MENUITEM_SHADOWS * 16)
 #define YPOS_NIGHTCYCLE   (MENUITEM_NIGHTCYCLE * 16)
 #define YPOS_COLORTINT    (MENUITEM_COLORTINT * 16)
+#define YPOS_LEVELCAPS    (MENUITEM_LEVELCAPS * 16)
 
 #define PAGE_COUNT  2
 
@@ -113,6 +116,8 @@ static u8   ColorTint_ProcessInput(u8 selection);
 static void ColorTint_DrawChoices(u8 selection);
 static u8   Shadows_ProcessInput(u8 selection);
 static void Shadows_DrawChoices(u8 selection);
+static u8   LevelCaps_ProcessInput(u8 selection);
+static void LevelCaps_DrawChoices(u8 selection);
 
 EWRAM_DATA static bool8 sArrowPressed = FALSE;
 EWRAM_DATA static u8 sCurrPage = 0;
@@ -139,6 +144,7 @@ static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
     [MENUITEM_SHADOWS]         = gText_ShadowsSetting,
     [MENUITEM_NIGHTCYCLE]      = gText_DayNightCycleSetting,
     [MENUITEM_COLORTINT]       = gText_ColorTintSetting,
+    [MENUITEM_LEVELCAPS]       = gText_LevelCapsSetting,
     [MENUITEM_CANCEL_PG2]      = gText_OptionMenuCancel,
 };
 
@@ -219,6 +225,7 @@ static void ReadAllCurrentSettings(u8 taskId)
     gTasks[taskId].TShadowsOff = FlagGet(FLAG_HIDE_BATTLE_SHADOWS);
     gTasks[taskId].TNightCycle = FlagGet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE);
     gTasks[taskId].TColorTint = FlagGet(FLAG_HIDE_POKEMON_COLOR_TINT);
+    gTasks[taskId].TLevelCaps = FlagGet(FLAG_DISABLE_LEVEL_CAPS);
 }
 
 static void DrawOptionsPg1(u8 taskId)
@@ -243,6 +250,7 @@ static void DrawOptionsPg2(u8 taskId)
     Shadows_DrawChoices(gTasks[taskId].TShadowsOff);
     NightCycle_DrawChoices(gTasks[taskId].TNightCycle);
     ColorTint_DrawChoices(gTasks[taskId].TColorTint);
+    LevelCaps_DrawChoices(gTasks[taskId].TLevelCaps);
     // new settings here
     HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
@@ -378,12 +386,14 @@ static void Task_ChangePage(u8 taskId)
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
     // add custom page2 settings here
+    // Left option = off (0), Right option = On (1)
     gTasks[taskId].TDifficulty == 0 ? FlagClear(FLAG_HARD_MODE) : FlagSet(FLAG_HARD_MODE);
     gTasks[taskId].TBattleBgOff == 0 ? FlagClear(FLAG_SYS_DISABLE_BATTLE_BG) : FlagSet(FLAG_SYS_DISABLE_BATTLE_BG);
     gTasks[taskId].TBattleBgOff == 0 ? FlagClear(FLAG_HIDE_BATTLE_SHADOWS) : FlagSet(FLAG_HIDE_BATTLE_SHADOWS); // also disables shadows on white GSC battle backgrounds
     gTasks[taskId].TShadowsOff == 0 ? FlagClear(FLAG_HIDE_BATTLE_SHADOWS) : FlagSet(FLAG_HIDE_BATTLE_SHADOWS);
     gTasks[taskId].TNightCycle == 0 ? FlagClear(FLAG_INVISIBLE_DAY_NIGHT_CYCLE) : FlagSet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE);
     gTasks[taskId].TColorTint == 0 ? FlagClear(FLAG_HIDE_POKEMON_COLOR_TINT) : FlagSet(FLAG_HIDE_POKEMON_COLOR_TINT);
+    gTasks[taskId].TLevelCaps == 0 ? FlagClear(FLAG_DISABLE_LEVEL_CAPS) : FlagSet(FLAG_DISABLE_LEVEL_CAPS);
 
     switch(sCurrPage)
     {
@@ -579,6 +589,13 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
             if (previousOption != gTasks[taskId].TColorTint)
                 ColorTint_DrawChoices(gTasks[taskId].TColorTint);
             break;
+        case MENUITEM_LEVELCAPS:
+            previousOption = gTasks[taskId].TLevelCaps;
+            gTasks[taskId].TLevelCaps = LevelCaps_ProcessInput(gTasks[taskId].TLevelCaps);
+
+            if (previousOption != gTasks[taskId].TLevelCaps)
+                LevelCaps_DrawChoices(gTasks[taskId].TLevelCaps);
+            break;
         default:
             return;
         }
@@ -600,12 +617,14 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
     // add custom page2 settings here
+    // Left option = off (0), Right option = On (1)
     gTasks[taskId].TDifficulty == 0 ? FlagClear(FLAG_HARD_MODE) : FlagSet(FLAG_HARD_MODE);
     gTasks[taskId].TBattleBgOff == 0 ? FlagClear(FLAG_SYS_DISABLE_BATTLE_BG) : FlagSet(FLAG_SYS_DISABLE_BATTLE_BG);
     gTasks[taskId].TBattleBgOff == 0 ? FlagClear(FLAG_HIDE_BATTLE_SHADOWS) : FlagSet(FLAG_HIDE_BATTLE_SHADOWS); // also disables shadows on white GSC battle backgrounds
     gTasks[taskId].TShadowsOff == 0 ? FlagClear(FLAG_HIDE_BATTLE_SHADOWS) : FlagSet(FLAG_HIDE_BATTLE_SHADOWS);
     gTasks[taskId].TNightCycle == 0 ? FlagClear(FLAG_INVISIBLE_DAY_NIGHT_CYCLE) : FlagSet(FLAG_INVISIBLE_DAY_NIGHT_CYCLE);
     gTasks[taskId].TColorTint == 0 ? FlagClear(FLAG_HIDE_POKEMON_COLOR_TINT) : FlagSet(FLAG_HIDE_POKEMON_COLOR_TINT);
+    gTasks[taskId].TLevelCaps == 0 ? FlagClear(FLAG_DISABLE_LEVEL_CAPS) : FlagSet(FLAG_DISABLE_LEVEL_CAPS);
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -918,6 +937,20 @@ static u8 ColorTint_ProcessInput(u8 selection)
     return selection;
 }
 
+static u8 LevelCaps_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        if(selection == 0)
+            selection = 1;
+        else
+            selection = 0;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
 static u8 Shadows_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
@@ -970,6 +1003,16 @@ static void ColorTint_DrawChoices(u8 selection)
     styles[selection] = 1;
     DrawOptionMenuChoice(gText_ColorTintSetting_On, 104, YPOS_COLORTINT, styles[0]);
     DrawOptionMenuChoice(gText_ColorTintSetting_Off, 160, YPOS_COLORTINT, styles[1]);
+}
+
+static void LevelCaps_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+    DrawOptionMenuChoice(gText_LevelCapsSetting_On, 104, YPOS_LEVELCAPS, styles[0]);
+    DrawOptionMenuChoice(gText_LevelCapsSetting_Off, 160, YPOS_LEVELCAPS, styles[1]);
 }
 
 static void Shadows_DrawChoices(u8 selection)

@@ -5021,7 +5021,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_THICK_LAYERS, ABILITY_THICK_LAYERS, ABILITY_THICK_LAYERS },
+        .abilities = { ABILITY_FILTER, ABILITY_FILTER, ABILITY_FILTER },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Scrafty"),
         .cryId = CRY_SCRAFTY,
@@ -5504,6 +5504,64 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sCarracostaLevelUpLearnset,
         .teachableLearnset = sCarracostaTeachableLearnset,
+        .formSpeciesIdTable = sCarracostaFormSpeciesIdTable,
+        .formChangeTable = sCarracostaFormChangeTable,
+    },
+
+    [SPECIES_CARRACOSTA_MEGA] =
+    {
+        .baseHP        = 74,
+        .baseAttack    = 158,
+        .baseDefense   = 163,
+        .baseSpeed     = 37,
+        .baseSpAttack  = 88,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
+        .catchRate = 45,
+        .expYield = 173,
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_STRONG_JAW, ABILITY_STRONG_JAW, ABILITY_STRONG_JAW },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Carracosta"),
+        .cryId = CRY_CARRACOSTA,
+        .natDexNum = NATIONAL_DEX_CARRACOSTA,
+        .categoryName = _("Prototurtle"),
+        .height = 12,
+        .weight = 810,
+        .description = COMPOUND_STRING(
+            "Mega Carracosta waits for prey with its\n" // new desc
+            "mouth open. They remain unmoving for so\n"
+            "long, Mega-powered algae grows all over it\n"
+            "which cracks like a whip when it strikes."),
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CarracostaMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = sAnims_CarracostaMega,
+        .frontAnimId = ANIM_H_SHAKE_SLOW,
+        .backPic = gMonBackPic_CarracostaMega,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 13,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .palette = gMonPalette_CarracostaMega,
+        .shinyPalette = gMonShinyPalette_CarracostaMega,
+        .iconSprite = gMonIcon_CarracostaMega,
+        .iconPalIndex = 2,
+        SHADOW(4, 11, SHADOW_SIZE_L)
+        FOOTPRINT(Carracosta)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sCarracostaLevelUpLearnset,
+        .teachableLearnset = sCarracostaTeachableLearnset,
+        .formSpeciesIdTable = sCarracostaFormSpeciesIdTable,
+        .formChangeTable = sCarracostaFormChangeTable,
     },
 #endif //P_FAMILY_TIRTOUGA
 
@@ -9013,7 +9071,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .shinyPalette = gMonShinyPalette_ChandelureMega,
         .iconSprite = gMonIcon_ChandelureMega,
         .iconPalIndex = 2,
-        SHADOW(1, 15, SHADOW_SIZE_S)
+        SHADOW(1, 15, SHADOW_SIZE_M)
         FOOTPRINT(Chandelure)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sChandelureLevelUpLearnset,

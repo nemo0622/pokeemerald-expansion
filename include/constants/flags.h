@@ -1514,7 +1514,7 @@
 #define FLAG_HIDE_POKEMON_COLOR_TINT                (SYSTEM_FLAGS + 0x87) // Whether or not to show Jaizu's individual color tint
 #define FLAG_SYS_QUEST_MENU_GET                     (SYSTEM_FLAGS + 0x88) // add QUESTS to start menu
 #define FLAG_HIDE_BATTLE_SHADOWS                    (SYSTEM_FLAGS + 0x89) // whether or not to hide shadows under pokemon in battles
-#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
+#define FLAG_DISABLE_LEVEL_CAPS                     (SYSTEM_FLAGS + 0x8A) // Option to disable level caps
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag

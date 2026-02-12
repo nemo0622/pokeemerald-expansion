@@ -1658,8 +1658,14 @@
 #define SPECIES_FROSLASS_MEGA                           1552
 #define SPECIES_CHANDELURE_MEGA                         1553
 #define SPECIES_DRAGALGE_MEGA                           1554
+#define SPECIES_TYPHLOSION_MEGA                         1555
+#define SPECIES_CARRACOSTA_MEGA                         1556
+#define SPECIES_TYRANTRUM_MEGA                          1557
+#define SPECIES_AURORUS_MEGA                            1558
+#define SPECIES_CRABOMINABLE_MEGA                       1559
+#define SPECIES_GOLISOPOD_MEGA                          1560
 
-#define SPECIES_EGG (SPECIES_DRAGALGE_MEGA + 1)
+#define SPECIES_EGG (SPECIES_GOLISOPOD_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

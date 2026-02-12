@@ -1834,6 +1834,18 @@ extern const u32 gItemIcon_Chandelurite[];
 extern const u32 gItemIconPalette_Chandelurite[];
 extern const u32 gItemIcon_Dragalgite[];
 extern const u32 gItemIconPalette_Dragalgite[];
+extern const u32 gItemIcon_Typhlosionite[];
+extern const u32 gItemIconPalette_Typhlosionite[];
+extern const u32 gItemIcon_Carracostite[];
+extern const u32 gItemIconPalette_Carracostite[];
+extern const u32 gItemIcon_Tyrantrite[];
+extern const u32 gItemIconPalette_Tyrantrite[];
+extern const u32 gItemIcon_Aurorite[];
+extern const u32 gItemIconPalette_Aurorite[];
+extern const u32 gItemIcon_Crabominabite[];
+extern const u32 gItemIconPalette_Crabominabite[];
+extern const u32 gItemIcon_Golisopite[];
+extern const u32 gItemIconPalette_Golisopite[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
@@ -3567,5 +3579,9 @@ extern const u32 gTrainerFrontPic_Diver[];
 extern const u32 gTrainerPalette_Diver[];
 extern const u32 gTrainerFrontPic_Artist[];
 extern const u32 gTrainerPalette_Artist[];
+extern const u32 gTrainerFrontPic_MissingNoVGC[];
+extern const u32 gTrainerPalette_MissingNoVGC[];
+extern const u32 gTrainerFrontPic_Snad[];
+extern const u32 gTrainerPalette_Snad[];
 
 #endif //GUARD_GRAPHICS_H

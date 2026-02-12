@@ -1032,11 +1032,17 @@
 #define ITEM_FROSLASSITE 858
 #define ITEM_CHANDELURITE 859
 #define ITEM_DRAGALGITE 860
+#define ITEM_TYPHLOSIONITE 861
+#define ITEM_CARRACOSTITE 862
+#define ITEM_TYRANTRITE 863
+#define ITEM_AURORITE 864
+#define ITEM_CRABOMINABITE 865
+#define ITEM_GOLISOPITE 866
 
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 861
+#define ITEMS_COUNT 867
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

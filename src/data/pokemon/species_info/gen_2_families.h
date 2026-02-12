@@ -258,7 +258,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_MeganiumMega,
         .iconSprite = gMonIcon_MeganiumMega,
         .iconPalIndex = 1,
-        SHADOW(4, 11, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_L)
         FOOTPRINT(Meganium)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sMeganiumLevelUpLearnset,
@@ -465,6 +465,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sTyphlosionLevelUpLearnset,
         .teachableLearnset = sTyphlosionTeachableLearnset,
         .formSpeciesIdTable = sTyphlosionFormSpeciesIdTable,
+        .formChangeTable = sTyphlosionFormChangeTable,
     },
 
 #if P_HISUIAN_FORMS
@@ -529,8 +530,66 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sTyphlosionHisuianLevelUpLearnset,
         .teachableLearnset = sTyphlosionHisuianTeachableLearnset,
         .formSpeciesIdTable = sTyphlosionFormSpeciesIdTable,
+        .formChangeTable = sTyphlosionFormChangeTable,
     },
 #endif //P_HISUIAN_FORMS
+
+    [SPECIES_TYPHLOSION_MEGA] =
+    {
+        .baseHP        = 83,
+        .baseAttack    = 120,
+        .baseDefense   = 108,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 133,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
+        .catchRate = 45,
+        .expYield = TYPHLOSION_EXP_YIELD,
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_DRY_SKIN, ABILITY_DRY_SKIN, ABILITY_DRY_SKIN},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Typhlosion"),
+        .cryId = CRY_TYPHLOSION,
+        .natDexNum = NATIONAL_DEX_TYPHLOSION,
+        .categoryName = _("Volcano"),
+        .height = 17,
+        .weight = 795,
+        .description = COMPOUND_STRING(
+            "Mega Typhlosion has only been recorded\n" // new
+            "in the Ilios Region, going down in history\n"
+            "as a terror. Many believe a rampaging Mega\n"
+            "Typhlosion caused a historic eruption."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 268,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_TyphlosionMega,
+        .frontPicSize = MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_TyphlosionMega,
+        .frontAnimId = ANIM_V_SHAKE,
+        .frontAnimDelay = 20,
+        .backPic = gMonBackPic_TyphlosionMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        .palette = gMonPalette_TyphlosionMega,
+        .shinyPalette = gMonShinyPalette_TyphlosionMega,
+        .iconSprite = gMonIcon_TyphlosionMega,
+        .iconPalIndex = 3,
+        SHADOW(4, 12, SHADOW_SIZE_L)
+        FOOTPRINT(Typhlosion)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sTyphlosionLevelUpLearnset,
+        .teachableLearnset = sTyphlosionTeachableLearnset,
+        .formSpeciesIdTable = sTyphlosionFormSpeciesIdTable,
+        .formChangeTable = sTyphlosionFormChangeTable,
+    },
 #endif //P_FAMILY_CYNDAQUIL
 
 #if P_FAMILY_TOTODILE
@@ -775,7 +834,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 7,
         .frontPic = gMonFrontPic_FeraligatrMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 6,
+        .frontPicYOffset = 3,
         .frontAnimFrames = sAnims_FeraligatrMega,
         .frontAnimId = ANIM_H_SHAKE,
         .frontAnimDelay = 5,
@@ -787,7 +846,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_FeraligatrMega,
         .iconSprite = gMonIcon_FeraligatrMega,
         .iconPalIndex = 0,
-        SHADOW(2, 6, SHADOW_SIZE_L)
+        SHADOW(7, 10, SHADOW_SIZE_L)
         FOOTPRINT(Feraligatr)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sFeraligatrLevelUpLearnset,
@@ -4311,7 +4370,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseDefense   = 125,
         .baseSpeed     = 65,
         .baseSpAttack  = 45,
-        .baseSpDefense = 90,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_GROUND, TYPE_FLYING),
         .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 179 : 192,

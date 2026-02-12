@@ -4341,6 +4341,7 @@ void GetMysteryGiftFeedback(void)
     static const u8 sText_CodeShowWildNatures[] = _("WILDNATURE");
     static const u8 sText_CodePortablePC[] = _("PORTABLEPC");
     static const u8 sText_CodeMosey[] = _("MOSEY");
+    static const u8 sText_CodeBattlePass[] = _("BATTLEPASS");
 
     // Code 1
     if (!StringCompare(gStringVar2, sText_CodeRareCandies))
@@ -4460,6 +4461,9 @@ void GetMysteryGiftFeedback(void)
     // Code 39
     else if (!StringCompare(gStringVar2, sText_CodeMosey))
         gSpecialVar_Result = 39;
+    // Code 40
+    else if (!StringCompare(gStringVar2, sText_CodeBattlePass))
+        gSpecialVar_Result = 40;
 
     // Invalid cheat code
     else

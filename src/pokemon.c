@@ -4280,7 +4280,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                     u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
                     dataUnsigned = sExpCandyExperienceTable[param - 1] + GetMonData(mon, MON_DATA_EXP, NULL);
 
-                    if (B_RARE_CANDY_CAP)
+                    if (B_RARE_CANDY_CAP && !FlagGet(FLAG_DISABLE_LEVEL_CAPS))
                     {
                         u32 currentLevelCap = GetCurrentLevelCap();
                         if (dataUnsigned > gExperienceTables[gSpeciesInfo[species].growthRate][currentLevelCap])
@@ -6199,6 +6199,10 @@ u16 GetBattleBGM(void)
             trainerClass = TRAINER_CLASS_EXPERT;
         else
             trainerClass = GetTrainerClassFromId(gTrainerBattleOpponent_A);
+
+        // Champion music for MissingNo lol
+        if(gTrainerBattleOpponent_A == TRAINER_WAKEWATER_MISSINGNOVGC || gTrainerBattleOpponent_A == TRAINER_WAKEWATER_SNAD)
+            return MUS_VS_CHAMPION;
 
         switch (trainerClass)
         {

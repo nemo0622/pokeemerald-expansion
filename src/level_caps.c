@@ -49,6 +49,9 @@ u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
     if (B_EXP_CAP_TYPE == EXP_CAP_NONE)
         return expValue;
 
+    if(FlagGet(FLAG_DISABLE_LEVEL_CAPS))
+        return expValue;
+
     if (level < currentLevelCap)
     {
         if (B_LEVEL_CAP_EXP_UP)

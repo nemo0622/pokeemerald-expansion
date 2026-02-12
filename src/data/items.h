@@ -170,6 +170,7 @@ const struct Item gItemsInfo[] =
             "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_POKE_BALL - FIRST_BALL,
         .iconPic = gItemIcon_PokeBall,
@@ -186,6 +187,7 @@ const struct Item gItemsInfo[] =
             "than a Poké Ball."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_GREAT_BALL - FIRST_BALL,
         .iconPic = gItemIcon_GreatBall,
@@ -202,6 +204,7 @@ const struct Item gItemsInfo[] =
             "than a Great Ball."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_ULTRA_BALL - FIRST_BALL,
         .iconPic = gItemIcon_UltraBall,
@@ -218,6 +221,7 @@ const struct Item gItemsInfo[] =
             "without fail."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_MASTER_BALL - FIRST_BALL,
         .iconPic = gItemIcon_MasterBall,
@@ -234,6 +238,7 @@ const struct Item gItemsInfo[] =
             "of some event."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_PREMIER_BALL - FIRST_BALL,
         .iconPic = gItemIcon_PremierBall,
@@ -250,6 +255,7 @@ const struct Item gItemsInfo[] =
             "caught Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_HEAL_BALL - FIRST_BALL,
         .iconPic = gItemIcon_HealBall,
@@ -266,6 +272,7 @@ const struct Item gItemsInfo[] =
             "Bug-type Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_NET_BALL - FIRST_BALL,
         .iconPic = gItemIcon_NetBall,
@@ -282,6 +289,7 @@ const struct Item gItemsInfo[] =
             "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_NEST_BALL - FIRST_BALL,
         .iconPic = gItemIcon_NestBall,
@@ -298,6 +306,7 @@ const struct Item gItemsInfo[] =
             "on the ocean floor."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_DIVE_BALL - FIRST_BALL,
         .iconPic = gItemIcon_DiveBall,
@@ -314,6 +323,7 @@ const struct Item gItemsInfo[] =
             "dark place."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_DUSK_BALL - FIRST_BALL,
         .iconPic = gItemIcon_DuskBall,
@@ -330,6 +340,7 @@ const struct Item gItemsInfo[] =
             "taking many turns."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_TIMER_BALL - FIRST_BALL,
         .iconPic = gItemIcon_TimerBall,
@@ -346,6 +357,7 @@ const struct Item gItemsInfo[] =
             "first turn."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_QUICK_BALL - FIRST_BALL,
         .iconPic = gItemIcon_QuickBall,
@@ -362,6 +374,7 @@ const struct Item gItemsInfo[] =
             "caught before."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_REPEAT_BALL - FIRST_BALL,
         .iconPic = gItemIcon_RepeatBall,
@@ -378,6 +391,7 @@ const struct Item gItemsInfo[] =
             "more friendly."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_LUXURY_BALL - FIRST_BALL,
         .iconPic = gItemIcon_LuxuryBall,
@@ -394,6 +408,7 @@ const struct Item gItemsInfo[] =
             "level Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_LEVEL_BALL - FIRST_BALL,
         .iconPic = gItemIcon_LevelBall,
@@ -410,6 +425,7 @@ const struct Item gItemsInfo[] =
             "up Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_LURE_BALL - FIRST_BALL,
         .iconPic = gItemIcon_LureBall,
@@ -426,6 +442,7 @@ const struct Item gItemsInfo[] =
             "Moon Stone PKMN."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_MOON_BALL - FIRST_BALL,
         .iconPic = gItemIcon_MoonBall,
@@ -442,6 +459,7 @@ const struct Item gItemsInfo[] =
             "when caught."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_FRIEND_BALL - FIRST_BALL,
         .iconPic = gItemIcon_FriendBall,
@@ -458,6 +476,7 @@ const struct Item gItemsInfo[] =
             "opposite gender."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_LOVE_BALL - FIRST_BALL,
         .iconPic = gItemIcon_LoveBall,
@@ -474,6 +493,7 @@ const struct Item gItemsInfo[] =
             "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_FAST_BALL - FIRST_BALL,
         .iconPic = gItemIcon_FastBall,
@@ -490,6 +510,7 @@ const struct Item gItemsInfo[] =
             "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_HEAVY_BALL - FIRST_BALL,
         .iconPic = gItemIcon_HeavyBall,
@@ -511,6 +532,7 @@ const struct Item gItemsInfo[] =
         #endif
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_DREAM_BALL - FIRST_BALL,
         .iconPic = gItemIcon_DreamBall,
@@ -527,6 +549,7 @@ const struct Item gItemsInfo[] =
             "Safari Zone."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_SAFARI_BALL - FIRST_BALL,
         .iconPic = gItemIcon_SafariBall,
@@ -543,6 +566,7 @@ const struct Item gItemsInfo[] =
             "Catching Contest."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_SPORT_BALL - FIRST_BALL,
         .iconPic = gItemIcon_SportBall,
@@ -558,6 +582,7 @@ const struct Item gItemsInfo[] =
             "the Pal Park."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_PARK_BALL - FIRST_BALL,
         .iconPic = gItemIcon_ParkBall,
@@ -573,6 +598,7 @@ const struct Item gItemsInfo[] =
             "catch Ultra Beasts."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_BEAST_BALL - FIRST_BALL,
         .iconPic = gItemIcon_BeastBall,
@@ -589,6 +615,7 @@ const struct Item gItemsInfo[] =
             "of some event."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = ITEM_CHERISH_BALL - FIRST_BALL,
         .iconPic = gItemIcon_CherishBall,
@@ -10713,7 +10740,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FRUSTRATION,
+        .secondaryId = MOVE_ACID_SPRAY,
     },
 
     [ITEM_TM_SOLAR_BEAM] =
@@ -14665,5 +14692,107 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
         .iconPic = gItemIcon_Dragalgite,
         .iconPalette = gItemIconPalette_Dragalgite,
+    },
+
+    [ITEM_TYPHLOSIONITE] =
+    {
+        .name = _("Typhlosionite"),
+        .price = 25000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Typhlosion to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Typhlosionite,
+        .iconPalette = gItemIconPalette_Typhlosionite,
+    },
+
+    [ITEM_CARRACOSTITE] =
+    {
+        .name = _("Carracostite"),
+        .price = 40000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Carracostite to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Carracostite,
+        .iconPalette = gItemIconPalette_Carracostite,
+    },
+
+    [ITEM_TYRANTRITE] =
+    {
+        .name = _("Tyrantrite"),
+        .price = 40000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Tyrantrum to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Tyrantrite,
+        .iconPalette = gItemIconPalette_Tyrantrite,
+    },
+
+    [ITEM_AURORITE] =
+    {
+        .name = _("Aurorite"),
+        .price = 30000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Aurorus to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Aurorite,
+        .iconPalette = gItemIconPalette_Aurorite,
+    },
+
+    [ITEM_CRABOMINABITE] =
+    {
+        .name = _("Crabominabite"),
+        .price = 30000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Crabominable to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Crabominabite,
+        .iconPalette = gItemIconPalette_Crabominabite,
+    },
+
+    [ITEM_GOLISOPITE] =
+    {
+        .name = _("Golisopite"),
+        .price = 35000,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Golisopod to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Golisopite,
+        .iconPalette = gItemIconPalette_Golisopite,
     },
 };

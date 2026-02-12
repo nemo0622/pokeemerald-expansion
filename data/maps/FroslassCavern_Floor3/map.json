@@ -152,21 +152,6 @@
 
   ],
   "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": 21,
-      "y": 3,
-      "elevation": 0,
-      "item": "ITEM_ICE_TERA_SHARD",
-      "flag": "FLAG_HIDDEN_ITEM_FROSLASS_CAVERN_ICE_TERA_SHARD_1"
-    },
-    {
-      "type": "hidden_item",
-      "x": 23,
-      "y": 3,
-      "elevation": 0,
-      "item": "ITEM_ICE_TERA_SHARD",
-      "flag": "FLAG_HIDDEN_ITEM_FROSLASS_CAVERN_ICE_TERA_SHARD_2"
-    }
+
   ]
 }

@@ -238,7 +238,7 @@ WakewaterIsle_EventScript_ChampionDefenseScript::
 
 WakewaterIsle_EventScript_ChooseRandomTrainer::
 # 163 "data/maps/WakewaterIsle/scripts.pory"
-	randomelement TRAINER_WAKEWATER_SAMANTHA, TRAINER_WAKEWATER_MAURA, TRAINER_WAKEWATER_PIRAEUS, TRAINER_WAKEWATER_LEXIE, TRAINER_WAKEWATER_ALEXANDER, TRAINER_WAKEWATER_KASSA, TRAINER_WAKEWATER_POLYMNIA, TRAINER_WAKEWATER_OURANI, TRAINER_WAKEWATER_KLEIO, TRAINER_WAKEWATER_TERPSIKORE, TRAINER_WAKEWATER_EUTERPE, TRAINER_WAKEWATER_THALIA_AND_MELPOMENE, TRAINER_WAKEWATER_RHADINE, TRAINER_WAKEWATER_KALLIOPE, TRAINER_WAKEWATER_CHIMERA_ADMIN_M, TRAINER_WAKEWATER_CHIMERA_ADMIN_F, TRAINER_WAKEWATER_ANYALIOS, TRAINER_WAKEWATER_RANIA, TRAINER_WAKEWATER_MICHAH, TRAINER_WAKEWATER_DRAKE, TRAINER_WAKEWATER_SASHA, TRAINER_WAKEWATER_CONNIE, TRAINER_WAKEWATER_SHIA, TRAINER_WAKEWATER_OLIVIA, TRAINER_WAKEWATER_KYLE, TRAINER_WAKEWATER_NEMO, TRAINER_WAKEWATER_CASSIE, TRAINER_WAKEWATER_JARED, TRAINER_WAKEWATER_CAIDEN, TRAINER_WAKEWATER_SEBASTIAN, TRAINER_WAKEWATER_BRODY, TRAINER_WAKEWATER_JERRY, TRAINER_WAKEWATER_ERIKOV, TRAINER_WAKEWATER_RAJ, TRAINER_WAKEWATER_BITA, TRAINER_WAKEWATER_AMY, TRAINER_WAKEWATER_GEORGIA, TRAINER_WAKEWATER_NOB, TRAINER_WAKEWATER_DALE, TRAINER_WAKEWATER_ALLEN
+	randomelement TRAINER_WAKEWATER_SAMANTHA, TRAINER_WAKEWATER_MAURA, TRAINER_WAKEWATER_PIRAEUS, TRAINER_WAKEWATER_LEXIE, TRAINER_WAKEWATER_ALEXANDER, TRAINER_WAKEWATER_KASSA, TRAINER_WAKEWATER_POLYMNIA, TRAINER_WAKEWATER_OURANI, TRAINER_WAKEWATER_KLEIO, TRAINER_WAKEWATER_TERPSIKORE, TRAINER_WAKEWATER_EUTERPE, TRAINER_WAKEWATER_THALIA_AND_MELPOMENE, TRAINER_WAKEWATER_RHADINE, TRAINER_WAKEWATER_KALLIOPE, TRAINER_WAKEWATER_CHIMERA_ADMIN_M, TRAINER_WAKEWATER_CHIMERA_ADMIN_F, TRAINER_WAKEWATER_ANYALIOS, TRAINER_WAKEWATER_RANIA, TRAINER_WAKEWATER_MICHAH, TRAINER_WAKEWATER_DRAKE, TRAINER_WAKEWATER_SASHA, TRAINER_WAKEWATER_CONNIE, TRAINER_WAKEWATER_SHIA, TRAINER_WAKEWATER_OLIVIA, TRAINER_WAKEWATER_KYLE, TRAINER_WAKEWATER_NEMO, TRAINER_WAKEWATER_CASSIE, TRAINER_WAKEWATER_JARED, TRAINER_WAKEWATER_CAIDEN, TRAINER_WAKEWATER_SEBASTIAN, TRAINER_WAKEWATER_BRODY, TRAINER_WAKEWATER_JERRY, TRAINER_WAKEWATER_ERIKOV, TRAINER_WAKEWATER_SNAD, TRAINER_WAKEWATER_MISSINGNOVGC, TRAINER_WAKEWATER_AMY, TRAINER_WAKEWATER_GEORGIA, TRAINER_WAKEWATER_NOB, TRAINER_WAKEWATER_DALE, TRAINER_WAKEWATER_ALLEN
 # 164 "data/maps/WakewaterIsle/scripts.pory"
 	copyvar VAR_CHOSEN_WAKEWATER_CHALLENGER, VAR_RESULT
 # 166 "data/maps/WakewaterIsle/scripts.pory"
@@ -310,9 +310,9 @@ WakewaterIsle_EventScript_ChooseRandomTrainer::
 # 445 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_ERIKOV, WakewaterIsle_EventScript_ChooseRandomTrainer_34
 # 453 "data/maps/WakewaterIsle/scripts.pory"
-	case TRAINER_WAKEWATER_RAJ, WakewaterIsle_EventScript_ChooseRandomTrainer_35
+	case TRAINER_WAKEWATER_SNAD, WakewaterIsle_EventScript_ChooseRandomTrainer_35
 # 461 "data/maps/WakewaterIsle/scripts.pory"
-	case TRAINER_WAKEWATER_BITA, WakewaterIsle_EventScript_ChooseRandomTrainer_36
+	case TRAINER_WAKEWATER_MISSINGNOVGC, WakewaterIsle_EventScript_ChooseRandomTrainer_36
 # 469 "data/maps/WakewaterIsle/scripts.pory"
 	case TRAINER_WAKEWATER_AMY, WakewaterIsle_EventScript_ChooseRandomTrainer_37
 # 477 "data/maps/WakewaterIsle/scripts.pory"
@@ -898,7 +898,7 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_35:
 # 459 "data/maps/WakewaterIsle/scripts.pory"
 	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_98
 # 460 "data/maps/WakewaterIsle/scripts.pory"
-	trainerbattle_no_intro TRAINER_WAKEWATER_RAJ, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_99
+	trainerbattle_no_intro TRAINER_WAKEWATER_SNAD, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_99
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_36:
@@ -915,7 +915,7 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_36:
 # 467 "data/maps/WakewaterIsle/scripts.pory"
 	msgbox WakewaterIsle_EventScript_ChooseRandomTrainer_Text_101
 # 468 "data/maps/WakewaterIsle/scripts.pory"
-	trainerbattle_no_intro TRAINER_WAKEWATER_BITA, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_102
+	trainerbattle_no_intro TRAINER_WAKEWATER_MISSINGNOVGC, WakewaterIsle_EventScript_ChooseRandomTrainer_Text_102
 	return
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_37:
@@ -1706,27 +1706,29 @@ WakewaterIsle_EventScript_ChooseRandomTrainer_Text_96:
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_97:
 # 458 "data/maps/WakewaterIsle/scripts.pory"
-	.string "Raj$"
+	.string "Snad$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_98:
 # 459 "data/maps/WakewaterIsle/scripts.pory"
-	.string "My team is the coolest!$"
+	.string "My bugs have some special moves to\n"
+	.string "crush you!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_99:
 # 460 "data/maps/WakewaterIsle/scripts.pory"
-	.string "Your team is... COOLER than mine?!$"
+	.string "My Wurmple are still way cooler...$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_100:
 # 466 "data/maps/WakewaterIsle/scripts.pory"
-	.string "Bita$"
+	.string "MissingNoVGC$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_101:
 # 467 "data/maps/WakewaterIsle/scripts.pory"
-	.string "Come on, it's time to battle!$"
+	.string "You'd challenge someone with VGC in\n"
+	.string "their name? I'm MADE for battles!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_102:
 # 468 "data/maps/WakewaterIsle/scripts.pory"
-	.string "You're in another league.$"
+	.string "Heh, not bad!$"
 
 WakewaterIsle_EventScript_ChooseRandomTrainer_Text_103:
 # 474 "data/maps/WakewaterIsle/scripts.pory"

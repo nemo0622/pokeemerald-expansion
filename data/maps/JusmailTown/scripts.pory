@@ -450,7 +450,7 @@ script JusmailTown_EventScript_WishingWell
             SPECIES_SANDILE,
             SPECIES_FALINKS)
 
-			givemon(VAR_RESULT, 1)
+			givemon(VAR_RESULT, 1, ITEM_NONE, ITEM_CHERISH_BALL)
 			msgbox(format("A Poké ball appeared... containing a Pokémon!"))
 			closemessage
 			if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY) 

@@ -316,6 +316,11 @@ const u32 gTrainerPalette_Niko[] = INCBIN_U32("graphics/trainers/front_pics/niko
 const u32 gTrainerFrontPic_Piraeus[] = INCBIN_U32("graphics/trainers/front_pics/piraeus.4bpp.lz");
 const u32 gTrainerPalette_Piraeus[] = INCBIN_U32("graphics/trainers/front_pics/piraeus.gbapal.lz");
 
+const u32 gTrainerFrontPic_MissingNoVGC[] = INCBIN_U32("graphics/trainers/front_pics/missingnovgc.4bpp.lz");
+const u32 gTrainerPalette_MissingNoVGC[] = INCBIN_U32("graphics/trainers/front_pics/missingnovgc.gbapal.lz");
+const u32 gTrainerFrontPic_Snad[] = INCBIN_U32("graphics/trainers/front_pics/snad.4bpp.lz");
+const u32 gTrainerPalette_Snad[] = INCBIN_U32("graphics/trainers/front_pics/snad.gbapal.lz");
+
 // Outfit trainer pics
 const u32 gTrainerFrontPic_Outfit_Calem[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_calem.4bpp.lz");
 const u32 gTrainerFrontPic_Outfit_Serena[] = INCBIN_U32("graphics/trainers/front_pics/outfits/outfit_serena.4bpp.lz");
@@ -550,6 +555,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(RANIA, Rania),
     TRAINER_SPRITE(NIKO, Niko),
     TRAINER_SPRITE(PIRAEUS, Piraeus),
+    TRAINER_SPRITE(MISSINGNOVGC, MissingNoVGC),
+    TRAINER_SPRITE(SNAD, Snad),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

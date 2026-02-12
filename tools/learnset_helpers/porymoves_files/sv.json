@@ -2479,7 +2479,8 @@
       "MOVE_BURNING_JEALOUSY",
       "MOVE_PAIN_SPLIT",
       "MOVE_PSYCH_UP",
-      "MOVE_DOUBLE_EDGE"
+      "MOVE_DOUBLE_EDGE",
+      "MOVE_DAZZLING_GLEAM"
     ],
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
@@ -2626,7 +2627,8 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SANDS",
+      "MOVE_DAZZLING_GLEAM"
     ],
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
@@ -6740,7 +6742,8 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_FEATHER_DANCE",
-      "MOVE_THROAT_CHOP"
+      "MOVE_THROAT_CHOP",
+      "MOVE_BULLDOZE"
     ],
     "EggMoves": [
       "MOVE_WHIRLWIND",
@@ -6849,7 +6852,8 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_FEATHER_DANCE",
-      "MOVE_THROAT_CHOP"
+      "MOVE_THROAT_CHOP",
+      "MOVE_BULLDOZE"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -10573,7 +10577,8 @@
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER",
       "MOVE_DEEPWATER_CURSE",
-      "MOVE_DRAGON_CHEER"
+      "MOVE_DRAGON_CHEER",
+      "MOVE_POISON_FANG"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -14229,7 +14234,8 @@
       "MOVE_PSYCH_UP",
       "MOVE_DEEPWATER_CURSE",
       "MOVE_WILL_O_WISP",
-      "MOVE_FEATHER_DANCE"
+      "MOVE_FEATHER_DANCE",
+      "MOVE_HEX"
     ],
     "EggMoves": [
       "MOVE_FEATHER_DANCE",
@@ -14360,7 +14366,8 @@
       "MOVE_CURSE",
       "MOVE_DEEPWATER_CURSE",
       "MOVE_WILL_O_WISP",
-      "MOVE_PSYCHIC_NOISE"
+      "MOVE_PSYCHIC_NOISE",
+      "MOVE_HEX"
     ],
     "EggMoves": [
       "MOVE_FEATHER_DANCE",
@@ -17036,7 +17043,8 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_SKITTER_SMACK",
-      "MOVE_PSYCHIC_NOISE"
+      "MOVE_PSYCHIC_NOISE",
+      "MOVE_FLY"
     ],
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
@@ -28855,7 +28863,8 @@
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
       "MOVE_SCORCHING_SANDS",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_SCALD"
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
@@ -28998,7 +29007,8 @@
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
       "MOVE_SCORCHING_SANDS",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_SCALD"
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
@@ -29662,7 +29672,8 @@
       "MOVE_UPROAR",
       "MOVE_DUAL_WINGBEAT",
       "MOVE_SCORCHING_SANDS",
-      "MOVE_THROAT_CHOP"
+      "MOVE_THROAT_CHOP",
+      "MOVE_DRAGON_DANCE"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -30200,7 +30211,8 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_ENDEAVOR",
       "MOVE_FEATHER_DANCE",
-      "MOVE_DRAGON_CHEER"
+      "MOVE_DRAGON_CHEER",
+      "MOVE_DRAINING_KISS"
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
@@ -30334,7 +30346,8 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER",
-      "MOVE_ALLURING_VOICE"
+      "MOVE_ALLURING_VOICE",
+      "MOVE_DRAINING_KISS"
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
@@ -40562,7 +40575,8 @@
       "MOVE_FLIP_TURN",
       "MOVE_PSYCH_UP",
       "MOVE_WHIRLPOOL",
-      "MOVE_ALLURING_VOICE"
+      "MOVE_ALLURING_VOICE",
+      "MOVE_DRAINING_KISS"
     ],
     "EggMoves": [
       "MOVE_AGILITY",
@@ -40670,7 +40684,8 @@
       "MOVE_FLIP_TURN",
       "MOVE_PSYCH_UP",
       "MOVE_WHIRLPOOL",
-      "MOVE_ALLURING_VOICE"
+      "MOVE_ALLURING_VOICE",
+      "MOVE_DRAINING_KISS"
     ],
     "EggMoves": [
       "MOVE_AGILITY",
@@ -41721,7 +41736,8 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_SKITTER_SMACK",
-      "MOVE_PSYCHIC_NOISE"
+      "MOVE_PSYCHIC_NOISE",
+      "MOVE_FLY"
     ],
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
@@ -58680,7 +58696,9 @@
       "MOVE_SCALE_SHOT",
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER",
-      "MOVE_SLUDGE_WAVE"
+      "MOVE_SLUDGE_WAVE",
+      "MOVE_POISON_JAB",
+      "MOVE_DRAGON_DANCE"
     ],
     "EggMoves": [
       "MOVE_ACID_ARMOR",
@@ -58796,7 +58814,9 @@
       "MOVE_SCALE_SHOT",
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER",
-      "MOVE_SLUDGE_WAVE"
+      "MOVE_SLUDGE_WAVE",
+      "MOVE_POISON_JAB",
+      "MOVE_DRAGON_DANCE"
     ],
     "EggMoves": [
       "MOVE_ACID_ARMOR",
@@ -59030,14 +59050,18 @@
   "HELIOPTILE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_FLAMETHROWER"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
   "HELIOLISK": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_FLAMETHROWER"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },

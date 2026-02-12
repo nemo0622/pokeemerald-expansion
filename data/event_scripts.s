@@ -1159,6 +1159,7 @@ MysteryGift_EventScript_DoMysteryGift::
 	goto_if_eq VAR_RESULT, 37, MysteryGift_EventScript_ShowWildNatures
 	goto_if_eq VAR_RESULT, 38, MysteryGift_EventScript_PortablePC
 	goto_if_eq VAR_RESULT, 39, MysteryGift_EventScript_Mosey
+	goto_if_eq VAR_RESULT, 40, MysteryGift_EventScript_BattlePass
 	end
 
 MysteryGift_Failed::
@@ -1228,6 +1229,26 @@ MysteryGift_EventScript_Mosey::
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MEOWTH_ALOLAN
 	givemon SPECIES_MEOWTH_ALOLAN, 10, ITEM_EVIOLITE, ITEM_MOON_BALL, NATURE_ADAMANT, 1, MON_FEMALE, 6, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_COVET, MOVE_KNOCK_OFF, MOVE_PARTING_SHOT, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
 	call MysteryGift_EventScript_ReceivedMon
+	releaseall
+	end
+
+MysteryGift_EventScript_BattlePass::
+	additem ITEM_ASSAULT_VEST, 10
+	additem ITEM_LEFTOVERS, 10
+	additem ITEM_WISE_GLASSES, 10
+	additem ITEM_MUSCLE_BAND, 10
+	additem ITEM_CHOICE_SPECS, 10
+	additem ITEM_CHOICE_BAND, 10
+	additem ITEM_CHOICE_SCARF, 10
+	additem ITEM_LIFE_ORB, 10
+	additem ITEM_EVIOLITE, 10
+	additem ITEM_FOCUS_SASH, 10
+	additem ITEM_EXPERT_BELT, 10
+	additem ITEM_AMULET_COIN, 10
+	additem ITEM_FLAME_ORB, 10
+	additem ITEM_TOXIC_ORB, 10
+	msgbox MysteryGift_Text_BattlePass, MSGBOX_DEFAULT
+	releaseall
 	releaseall
 	end
 
@@ -1625,6 +1646,10 @@ MysteryGift_Text_SucceededText_DexNavCode:
 MysteryGift_Text_PerfectCatchRateText:
 	.string "The code was valid!\p"
 	.string "Pokémon now have a 100% catch rate!$"
+
+MysteryGift_Text_BattlePass:
+	.string "The code was valid!\p"
+	.string "Battle Items added to Bag!$"
 
 MysteryGift_Text_FailedText:
 	.string "The code was invalid!\p"

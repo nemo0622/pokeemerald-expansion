@@ -2506,7 +2506,7 @@ void ScriptSetDoubleBattleFlag(struct ScriptContext *ctx)
 bool8 ScrCmd_ballfollowingmon(struct ScriptContext *ctx)
 {
     if (OW_FOLLOWERS_ENABLED == TRUE && FlagGet(FLAG_SYS_POKEMON_GET) && OW_SUBSTITUTE_PLACEHOLDER == TRUE 
-    && gSaveBlock3Ptr->followerIndex != OW_FOLLOWER_RECALLED) {
+    && gSaveBlock3Ptr->followerIndex != OW_FOLLOWER_RECALLED && GetFollowerObject() != NULL) {
         ReturnFollowingMonToBall();
     }
     return FALSE;

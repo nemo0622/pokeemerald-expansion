@@ -70,7 +70,17 @@ Pokémon Lazarus Version is a ROM Hack coming from my love for real-world animal
 
 ## Future Development Plans
 
-LAZARUS VERSION 1.2 CHANGES
+LAZARUS VERSION 2.0 CHANGES
+- Four NEW Mega Evolutions!
+    - Mega Typhlosion: Rounding out the Johto Trio, this new Mega Evolution re-develops Cyndaquil's flaming tail while growing much larger flame bursts. Its stats increase strongly all around.
+    - Mega Carracosta: Counterpart to Mega Archeops, Mega Carracosta grows algae from waiting so long for passing prey. It becomes much stronger physically.
+    - Mega Tyrantrum: This form sprouts a crown of feathers and becomes an Ice/Dragon type, fitting for the cold environment it was adapted to in life. It becomes extremely physically defensive while maintaining a high Attack stat.
+    - Mega Aurorus: Calling upon the power of the North Star, Mega Aurorus transforms into a stunning Fairy/Ice type. Its sparkling aura can be seen from miles away.
+- From Pokémon Legends Z-A's new DLC, Mega Crabominable and Mega Golisopod make their debut in Pokémon Lazarus as well!
+- Option to disable Level Caps
+- Change a Pokémon's Poké ball by using another one from the Bag menu
+- "BATTLEPASS" Cheat: Gives x10 Assault Vests, Eviolite, Life Orbs, and more powerful Battle items!
+- Jusmail Town's Wishing Well Pokémon are now in Cherish Balls
 - Re-coded DexNav shiny calculation:
     - Starts with 4 base Shiny rerolls for any DexNav Pokémon
     - Shiny Charms give +2 rerolls each
@@ -78,10 +88,28 @@ LAZARUS VERSION 1.2 CHANGES
     - Pokémon Search Level now maxes out at 100, providing +2 rerolls
     - Standard Pokémon shiny calculation reroll code is used, looping through the Pokémon creation code for however many rerolls you have until they run out or a shiny Pokémon is generated!
     - Thank you all for bearing with me on this. DexNav shiny hunting should *hopefully* be all set now! (Unless I messed something up... lol)
-- Black Augurite removed from Mining Minigame, instead being given by Girl in Fossil House on Marmaro Island
-    - I swear I could not get the mining bug fixed for it lol, so this is a workaround
-    - Remember, all evolution items can also be bought at the Ruins of Ahiyawa!
-
+- Balance Changes:
+    - Mega Raichu X is now Electric/Fighting
+        - Raichu gets Power-Up Punch, Fire Punch, and Thunder Punch as Level 1 moves (learn via Move Relearner in Pythios Town!)
+    - Mega Scrafty ability -> Filter
+    - Mega Greninja ability -> Protean (works only once per battle)
+    - Mega Gogoat ability -> Stamina
+    - Mega Heliolisk now Electric/Fire type with Drought
+    - Aurorus given access to Dazzling Gleam and Moonblast to take advantage of Mega Evolution typing
+    - Mega Centiskorch ability -> Tinted Lens
+    - Drakloak -> Dragapult evolution level reduced to 48 (from 60)
+- Minor Changes & Bug Fixes:
+    - 2 special new challengers at Wakewater Isle... Try to find them both!
+    - Removed low health beep effect
+    - TM21 finally now Acid Spray, not Frustration
+    - Raging Bolt as following Pokémon no longer freezes Pokémon Center
+    - Updated Tyrantrum sprite
+    - Black Augurite removed from Mining Minigame, instead being given by Girl in Fossil House on Marmaro Island
+        - I swear I could not get the mining bug fixed for it lol, so this is a workaround
+        - Remember, all evolution items can also be bought at the Ruins of Ahiyawa!
+    - Dive collision problems fixed
+    - Tons of bug fixes and little moveset / TM learn fixes
+        - Remember, please DO NOT USE MyBoy OR VBA TO PLAY THIS GAME! Those emulators are horribly outdated and struggle with modern Rom Hacks. Y'all have no idea how many bug reports I get from MyBoy users lmfao
 
 KNOWN BUGS, STILL PRESENT
 - Small chance of graphical bug when picking up items (entering and exiting a menu should fix this!)

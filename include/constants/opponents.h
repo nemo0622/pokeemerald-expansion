@@ -299,8 +299,8 @@
 #define TRAINER_ANNA_AND_MEG_4              290
 #define TRAINER_ANNA_AND_MEG_5              291
 #define TRAINER_VICTOR                      292
-#define TRAINER_MIGUEL_1                    293
-#define TRAINER_COLTON                      294
+#define TRAINER_WAKEWATER_MISSINGNOVGC                    293
+#define TRAINER_WAKEWATER_SNAD                      294
 #define TRAINER_MIGUEL_2                    295
 #define TRAINER_MIGUEL_3                    296
 #define TRAINER_MIGUEL_4                    297

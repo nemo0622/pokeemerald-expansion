@@ -147,7 +147,9 @@
 #define TRAINER_PIC_RANIA                 129
 #define TRAINER_PIC_NIKO                  130
 #define TRAINER_PIC_PIRAEUS               131
-#define TRAINER_PIC_COUNT                 132
+#define TRAINER_PIC_MISSINGNOVGC          132
+#define TRAINER_PIC_SNAD                  133
+#define TRAINER_PIC_COUNT                 134
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

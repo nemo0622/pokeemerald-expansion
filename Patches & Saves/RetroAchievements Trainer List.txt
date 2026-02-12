@@ -1,0 +1,309 @@
+TRAINERS & THEIR LOCATIONS:
+
+Bronze Fields (North):
+- Bug Catcher Chip
+- Youngster Felix
+- Lass Rose
+- Team Chimera Grunt (Class: Team Chimera, Name: Grunt)
+
+Bronze Fields (South):
+- Farmer Emerick
+- Farmer Joseph
+- Farmer Wyatt
+- Bug Catcher Milon
+- Youngster Kall
+- Farmer Therson
+
+Jusmail Town:
+- Gym: Lass Kari
+- Gym: Farmer Iason
+- Gym: Bug Catcher Bryce
+- Gym: Camper Adel
+- Gym: Leader Polymnia (Note: all Gym Leaders have TRAINER_LEADER_(NAME) and TRAINER_LEADER_(NAME)_HARD versions, loaded based on difficulty. Maybe RetroAchievements could have separate achievements for normal trainers and boss trainers to account for this?)
+- Town: Pkmn Trainer 1 Rania
+
+Acrisia Mountains:
+- Psychic Tyre
+- Hex Maniac Elissa
+- Hiker Ulf
+- Battle Girl Jamma
+- Collector Greg
+- Hiker Hugh
+
+Riverwalk Trail (West and South):
+- Hiker Josua
+- Hiker Umber
+- Triathlete Margarey
+- Ninja Boy Kylon
+- Triathlete Berkley
+- Fisherman Markus
+- Lass Tina
+- Scientist F Gianna
+- Officer Barnett
+
+Kalami City:
+- Worker Rex
+- Worker Daniel
+- Scientist F Tasoula
+- Leader Ourani (Normal and Hard versions)
+
+Wanderer's Woods (North and South):
+- Performer M Zander
+- Bird Keeper Kallas
+- Parasol Lady Martha
+- Worker Alexi
+- Punk Rocker Ellie
+- Team Chimera Admin (Has default and "_HARD" versions)
+- Picnicker Lydia
+- Pkmn Breeder Thomas
+- Gentleman Yamir
+- Triathlete Warren
+- Officer Duncan
+- Beauty Donna
+
+Pythios Town:
+- Performer F Rosara
+- Cooltrainer Tafos
+- Psychic Addonis
+- Expert Geroni
+- Expert Yanna
+- Leader Kleio (Normal and Hard versions)
+
+Pythios Cemetery (in Pythios Town MapSec):
+- Team Chimera Grunt
+- Team Chimera Grunt
+- Team Chimera Grunt
+- Pokefan Maria
+- Rich Boy Arkos
+- Performer M Galei
+
+Erinys Path (East and West):
+- Team Chimera Admin (Has normal and Hard versions)
+- Cooltrainer Lueroi
+- Performer F Kayley
+- Officer Roger
+- Picnicker Helena
+- Triathlete Lewey
+- Twins Iro & Anna
+- Worker Damon
+- Rich Boy Tisias
+
+Froslass Cavern:
+- (F1) Scientist F Robin
+- (F1) Ninja Boy Carmin
+- (F1) Bug Maniac Ento
+- (F2) Sailor Sandor
+- (F3) Hex Maniac Beatrice
+- (F3) Cooltrainer Kauros
+- (F3) Cooltrainer Maxilla
+
+Asfal Hills:
+- Triathlete Salmai
+- Farmer Ardin
+- Youngster Vito
+- Twins Lena&Maria
+- Lass Arisbe
+- Parasol Lady Prothoe
+- Performer M Batto
+- Pkmn Trainer 1 Niko
+
+Sofos City:
+- Team Chimera Grunt (the one outside the cave entrance)
+- Battle Girl Brooke
+- Black Belt Tyrien
+- Beauty Sappha
+- Artist Aristo
+- Leader Terpsikore (Normal and Hard versions)
+
+Satyr's Lair (Top and Bottom floors, in Sofos City MapSec):
+- Team Chimera Grunt
+- Team Chimera Grunt
+- Picnicker Malu
+- Pokefan Ryan
+- Team Chimera Admin (Normal and "_HARD" versions)
+
+Sea of Asteri (West):
+- Swimmer M Aeson
+- Swimmer F Taleia
+- Tuber M Hamon
+- Swimmer F Georgia
+- Swimmer M Tryfon
+- Tuber M Willy
+- Beauty Celina
+- Ninja Boy Kida
+- Fisherman Sikar
+- Triathlete Hammon
+
+Sea of Asteri (West, Underwater):
+- Diver Jan
+- Diver Panau
+- Diver Yarikh
+- Diver Weston
+
+Marmaro Island:
+- Team Chimera Grunt
+- Team Chimera Grunt
+- Team Chimera Admin (Normal & Hard versions)
+
+Sea of Asteri (East):
+- Scientist F Matilda
+- Officer Harvey
+- Expert Joseph
+- Psychic Leon
+- Tuber M Maurie
+- Swimmer M Sergius
+- Swimmer F Silvia
+- Swimmer F Irene
+- Parasol Lady Honoria
+
+Myrrini Island:
+- Beauty Hailey
+- Artist Tasos
+- Sailor Remigio
+- Performer F Alma
+- Leader Euterpe (Normal and Hard versions)
+
+Péntepetal City:
+- Pkmn Trainer 1 Rania
+- Team Chimera Grunt
+
+Sea of Vulcai (North):
+- Farmer Freddy
+- Battle Girl Sabrina
+- Pokefan Sherry
+- Swimmer M Lusio
+- Swimmer F Mahya
+
+Sea of Vulcai (South):
+- Swimmer F Leyli
+- Tuber M Zissis
+- Swimmer F Pelagia
+- Swimmer M Jaxon
+- Swimmer F Victoria
+- Tuber M Julien
+- Fisherman Tabata
+- Artist Sebastian
+
+Sea of Vulcai (Underwater):
+- Diver Mauricius
+- Diver Quintus
+- Diver Arik
+
+Fresco Isles:
+- Cooltrainer Stella (fight in Mart for Box of Chocolates)
+- Farmer Gideon
+- Expert Melody
+- Punk Rocker Maisie
+- Black Belt Aziz
+- Scientist F Frida
+- Leader Thal & Mel (Thalia And Melpomene)
+
+Palati City:
+- Pkmn Trainer 1 Rania
+- Bird Keeper Mukhin
+- Performer M Raimund
+- Pokefan Melina
+- Beauty Julie
+- Punk Rocker Colette
+- Leader Rhadine (Normal and Hard versions)
+
+Kaptara Island (East):
+- Lass Yesui
+- Triathlete Issa
+- Picnicker Manto
+- Collector Stan
+- Artist Grigor
+- Gentleman Horatio
+- Expert Edith
+- Bird Keeper Fly Guy
+- Old Couple Jon & Rose
+
+Kaptara Island (West):
+- Cooltrainer Dani
+- Worker Barrel
+- Sailor Sallador
+- Hex Maniac Penny
+- Artist Allan
+- Team Chimera Admin (Normal and Hard versions)
+
+Lastlight Road:
+- Triathlete Harley
+- Bug Catcher Billie
+- Lass Zoey
+- Scientist F Phallon
+- Farmer Nikitas
+- Camper Loukas
+
+Tower of Dioxippus:
+- Chimera Leader Kalliope (Normal and Hard versions)
+
+Corrin Crossing:
+- Officer Wyatt
+- Bug Catcher Junior
+- Performer F Vasia
+- Worker Alfred
+- Battle Girl Darcey
+- Collector Maxim
+- Guitarist Oskar
+
+Port Pello:
+- Pkmn Trainer 1 Rania (Normal and Hard versions)
+
+Nyx Trails:
+- Officer Harry
+- Battle Girl Brienne
+- Scientist F Samwell
+- Punk Rocker Adria
+- Team Chimera Grunt (7 of these lol)
+
+Areios Hideout:
+- Team Chimera Admin
+- Team Chimera Admin
+- Chimera Leader Kalliope (Normal and Hard versions)
+
+Pollen Road:
+- Camper Ruben
+- Black Belt Jonah
+- Performer F Hannah
+- Triathlete Ashari
+- Hiker Martin
+- Sailor Viktor
+- Hex Maniac Alicia
+
+Davosi Straits:
+- Farmer Newell
+- Swimmer F Leah
+- Bird Keeper Alkis
+- Swimmer M Leonidas
+- Aroma Lady Patelina
+- Tuber M Minas
+- Sailor Theo
+- Pkmn Trainer 1 Rania (Normal and Hard versions)
+
+Ruins of Ahiyawa:
+- Leader Polymnia (Normal and Hard versions)
+- Leader Terpsikore (Normal and Hard versions)
+- Leader Euterpe (Normal and Hard versions)
+- Leader Rhadine (Normal and Hard versions)
+- Champion Anyalios (Normal and Hard versions)
+
+There's also 30 Trainers on Wakewater Isle which are challenged at random in the postgame, but that's it for the main game! :)
+
+
+-----------------------------------------------------------------------------------------
+
+Other fun "Easter Eggs" / Achievement Ideas:
+
+- "High Roller" - Catch Voltorb, Electrode, Komala, and Spheal (explanation: those 4 Pokémon have follower sprites that roll instead of walk!)
+
+- "Face-to-Face" - Battle "Pkmn Trainer 1 Nemo" (me!) at Wakewater Isle
+
+- "Lazarus Taxa" - Register all Fossil Pokémon plus Relicanth in the Pokédex
+
+- "Pinball Prodigy" - Collect 10 Pinball Points at once (earn 1 per Pinball game won)
+
+- "Man, I Love Fish" - Get the Old Rod, Good Rod, and Super Rod
+
+- "One-Way Trip" - Obtain a Strange Souvenir
+
+- Plus all the other obvious stuff like completing the Pokédex, getting all TMs, etc!

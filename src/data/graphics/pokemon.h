@@ -4542,6 +4542,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_HISUIAN_FORMS
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_TyphlosionMega[] = INCBIN_U32("graphics/pokemon/typhlosion/mega/front.4bpp.lz");
+    const u32 gMonPalette_TyphlosionMega[] = INCBIN_U32("graphics/pokemon/typhlosion/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_TyphlosionMega[] = INCBIN_U32("graphics/pokemon/typhlosion/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_TyphlosionMega[] = INCBIN_U32("graphics/pokemon/typhlosion/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_TyphlosionMega[] = INCBIN_U8("graphics/pokemon/typhlosion/mega/icon.4bpp");
+#endif
 #endif //P_FAMILY_CYNDAQUIL
 
 #if P_FAMILY_TOTODILE
@@ -12665,6 +12672,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Carracosta[] = INCBIN_U32("graphics/pokemon/carracosta/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_CarracostaMega[] = INCBIN_U32("graphics/pokemon/carracosta/mega/front.4bpp.lz");
+    const u32 gMonPalette_CarracostaMega[] = INCBIN_U32("graphics/pokemon/carracosta/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_CarracostaMega[] = INCBIN_U32("graphics/pokemon/carracosta/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_CarracostaMega[] = INCBIN_U32("graphics/pokemon/carracosta/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_CarracostaMega[] = INCBIN_U8("graphics/pokemon/carracosta/mega/icon.4bpp");
+#endif
 #endif //P_FAMILY_TIRTOUGA
 
 #if P_FAMILY_ARCHEN
@@ -15690,6 +15704,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Tyrantrum[] = INCBIN_U32("graphics/pokemon/tyrantrum/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_TyrantrumMega[] = INCBIN_U32("graphics/pokemon/tyrantrum/mega/front.4bpp.lz");
+    const u32 gMonPalette_TyrantrumMega[] = INCBIN_U32("graphics/pokemon/tyrantrum/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_TyrantrumMega[] = INCBIN_U32("graphics/pokemon/tyrantrum/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_TyrantrumMega[] = INCBIN_U32("graphics/pokemon/tyrantrum/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_TyrantrumMega[] = INCBIN_U8("graphics/pokemon/tyrantrum/mega/icon.4bpp");
+#endif
 #endif //P_FAMILY_TYRUNT
 
 #if P_FAMILY_AMAURA
@@ -15724,6 +15745,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Aurorus[] = INCBIN_U32("graphics/pokemon/aurorus/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_AurorusMega[] = INCBIN_U32("graphics/pokemon/aurorus/mega/front.4bpp.lz");
+    const u32 gMonPalette_AurorusMega[] = INCBIN_U32("graphics/pokemon/aurorus/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_AurorusMega[] = INCBIN_U32("graphics/pokemon/aurorus/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_AurorusMega[] = INCBIN_U32("graphics/pokemon/aurorus/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_AurorusMega[] = INCBIN_U8("graphics/pokemon/aurorus/mega/icon.4bpp");
+#endif
 #endif //P_FAMILY_AMAURA
 
 #if P_FAMILY_HAWLUCHA
@@ -16578,6 +16606,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Crabominable[] = INCBIN_U32("graphics/pokemon/crabominable/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_CrabominableMega[] = INCBIN_U32("graphics/pokemon/crabominable/mega/front.4bpp.lz");
+    const u32 gMonPalette_CrabominableMega[] = INCBIN_U32("graphics/pokemon/crabominable/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_CrabominableMega[] = INCBIN_U32("graphics/pokemon/crabominable/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_CrabominableMega[] = INCBIN_U32("graphics/pokemon/crabominable/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_CrabominableMega[] = INCBIN_U8("graphics/pokemon/crabominable/mega/icon.4bpp");
+#endif
 #endif //P_FAMILY_CRABRAWLER
 
 #if P_FAMILY_ORICORIO
@@ -17143,6 +17178,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Golisopod[] = INCBIN_U32("graphics/pokemon/golisopod/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_GolisopodMega[] = INCBIN_U32("graphics/pokemon/golisopod/mega/front.4bpp.lz");
+    const u32 gMonPalette_GolisopodMega[] = INCBIN_U32("graphics/pokemon/golisopod/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_GolisopodMega[] = INCBIN_U32("graphics/pokemon/golisopod/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_GolisopodMega[] = INCBIN_U32("graphics/pokemon/golisopod/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_GolisopodMega[] = INCBIN_U8("graphics/pokemon/golisopod/mega/icon.4bpp");
+#endif
 #endif //P_FAMILY_WIMPOD
 
 #if P_FAMILY_SANDYGAST

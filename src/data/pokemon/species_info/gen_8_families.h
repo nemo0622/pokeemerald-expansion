@@ -3621,7 +3621,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_ARMOR_TAIL, ABILITY_ARMOR_TAIL, ABILITY_ARMOR_TAIL },
+        .abilities = { ABILITY_TINTED_LENS, ABILITY_TINTED_LENS, ABILITY_TINTED_LENS },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = HANDLE_EXPANDED_SPECIES_NAME("Centiskorc", "Centiskorch"),
         .cryId = CRY_CENTISKORCH,
@@ -6249,7 +6249,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sDrakloakLevelUpLearnset,
         .teachableLearnset = sDrakloakTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_DRAGAPULT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_DRAGAPULT}),
     },
 
     [SPECIES_DRAGAPULT] =

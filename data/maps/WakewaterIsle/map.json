@@ -756,7 +756,7 @@
       "flag": "FLAG_HIDE_WAKEWATER_TRAINER_33"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
       "x": 29,
       "y": 25,
       "elevation": 0,
@@ -769,7 +769,7 @@
       "flag": "FLAG_HIDE_WAKEWATER_TRAINER_34"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
       "x": 29,
       "y": 25,
       "elevation": 0,

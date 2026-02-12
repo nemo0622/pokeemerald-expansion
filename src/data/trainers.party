@@ -3064,7 +3064,7 @@ Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ASTERISEA_TRYFON ===
-Name: Aeson
+Name: Tryfon
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -3459,7 +3459,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Tags: Ace
 
 === TRAINER_MYRRINIGYM_TASOS ===
-Name: Aristo
+Name: Tasos
 Class: Artist
 Pic: Artist
 Gender: Male
@@ -10511,14 +10511,14 @@ Sylveon
 Level: 55
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Archeops @ Archeopsite
+Tyrantrum @ Tyrantrite
 Level: 55
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Tags: Ace
 - Crunch
-- Brave Bird
+- Avalanche
 - Rock Slide
-- Knock Off
+- Dragon Energy
 
 === TRAINER_WAKEWATER_CASSIE ===
 Name: Cassie
@@ -11631,75 +11631,181 @@ Zigzagoon @ Oran Berry
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_MIGUEL_1 ===
-Name: MIGUEL
-Class: Pokefan
-Pic: Pokefan M
+=== TRAINER_WAKEWATER_MISSINGNOVGC ===
+Name: MissingNo
+Class: Pkmn Trainer 1
+Pic: MissingNoVGC
 Gender: Male
-Music: Twins
-Double Battle: No
-AI: Check Bad Move
+Music: Cool
+Items: Key Stone
+Double Battle: Yes
+AI: Check Bad Move / Check Viability / Try To Faint / AI_FLAG_ACE_POKEMON
 
-Skitty @ Oran Berry
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kindrix (Kyogre) @ Blue Orb
+Level: 55
+Nature: Modest
+EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Shiny: Yes
+- Origin Pulse
+- Water Spout
+- Thunder
+- Ice Beam
 
-=== TRAINER_COLTON ===
-Name: COLTON
-Class: Pokefan
-Pic: Pokefan M
+Omlet (Togekiss) @ Leftovers
+Level: 55
+Ability: Serene Grace
+EVs: 252 HP / 0 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Air Slash
+- Follow Me
+- Tailwind
+- Dazzling Gleam
+
+Void Nugget (Gengar) @ Focus Sash
+Level: 55
+EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Shadow Ball
+- Sludge Bomb
+- Icy Wind
+- Will O Wisp
+
+Purrgetory (Incineroar) @ Rocky Helmet
+Level: 55
+Nature: Impish
+Ability: Intimidate
+EVs: 244 HP / 4 Atk / 188 Def / 0 SpA / 68 SpD / 4 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fake Out
+- Knock Off
+- Flare Blitz
+- Parting Shot
+
+Majora (Ogerpon Hearthflame) @ Hearthflame Mask
+Level: 55
+Nature: Adamant
+EVs: 188 HP / 76 Atk / 52 Def / 0 SpA / 4 SpD / 188 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Ivy Cudgel
+- Follow Me
+- Spiky Shield
+- Wood Hammer
+
+Bolmeteus (Cyclizar) @ Cyclizite S
+Level: 55
+Nature: Jolly
+EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Shiny: Yes
+Tags: Ace
+- Drain Punch
+- Collision Course
+- Dragon Claw
+- Scale Shot
+
+=== TRAINER_WAKEWATER_SNAD ===
+Name: Snad
+Class: Bug Catcher
+Pic: Snad
 Gender: Male
-Music: Twins
+Music: Male
+Items: Key Stone
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability / Try To Faint / AI_FLAG_ACE_POKEMON
+Party Size: 6
+Pool Rules: Basic
 
-Skitty @ Oran Berry
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
+Pizza (Wurmple) @ Focus Sash
+Level: 55
+Nature: Jolly
+Ability: No Guard
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Horn Drill
+- Fissure
+- Sheer Cold
+- Guillotine
 
-Skitty @ Oran Berry
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
+Fluttershy (Wurmple) @ Focus Sash
+Level: 55
+Nature: Timid
+Ability: Wonder Guard
+Shiny: Yes
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Lead
+- Dark Void
+- Dream Eater
+- Recycle
+- Infestation
 
-Skitty @ Oran Berry
-Level: 40
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
+Webber (Spinarak) @ Focus Sash
+Level: 55
+Nature: Adamant
+EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Sticky Web
+- Toxic Spikes
+- Megahorn
+- Sucker Punch
 
-Skitty @ Oran Berry
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
+Rune (Yanma) @ Life Orb
+Level: 55
+Nature: Modest
+Shiny: Yes
+EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Air Slash
+- Protect
+- Bug Buzz
+- Giga Drain
 
-Skitty @ Oran Berry
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
+Powder (Snom) @ Eviolite
+Level: 55
+Nature: Calm
+Ability: Ice Scales
+EVs: 236 HP / 0 Atk / 36 Def / 0 SpA / 236 SpD / 0 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Icy Wind
+- Bug Buzz
+- Mirror Coat
+- Protect
 
-Delcatty @ Oran Berry
-Level: 42
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
+Snapdragon (Lurantis) @ Assault Vest
+Level: 55
+Nature: Modest
+Ability: Contrary
+EVs: 0 HP / 0 Atk / 4 Def / 252 SpA / 0 SpD / 252 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Leaf Storm
+- Superpower
+- Giga Drain
+- Rock Slide
+
+Crossbun (Heracross) @ Flame Orb
+Level: 55
+Nature: Adamant
+Ability: Guts
+EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Close Combat
+- Protect
+- Facade
+- Megahorn
+
+Peppermint (Golisopod) @ Golisopite
+Level: 55
+Nature: Adamant
+Shiny: Yes
+EVs: 252 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tags: Ace
+- First Impression
+- Liquidation
+- Aqua Jet
+- Close Combat
 
 === TRAINER_MIGUEL_2 ===
 Name: MIGUEL
