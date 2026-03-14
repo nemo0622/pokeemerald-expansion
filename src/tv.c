@@ -1039,41 +1039,9 @@ u8 GabbyAndTyGetLastBattleTrivia(void)
 // See gabby_and_ty.inc for details
 void GetGabbyAndTyLocalIds(void)
 {
-    switch (GabbyAndTyGetBattleNum())
-    {
-    case 1:
-        gSpecialVar_0x8004 = LOCALID_ROUTE111_GABBY_1;
-        gSpecialVar_0x8005 = LOCALID_ROUTE111_TY_1;
-        break;
-    case 2:
-        gSpecialVar_0x8004 = LOCALID_ROUTE118_GABBY_1;
-        gSpecialVar_0x8005 = LOCALID_ROUTE118_TY_1;
-        break;
-    case 3:
-        gSpecialVar_0x8004 = LOCALID_ROUTE120_GABBY_1;
-        gSpecialVar_0x8005 = LOCALID_ROUTE120_TY_1;
-        break;
-    case 4:
-        gSpecialVar_0x8004 = LOCALID_ROUTE111_GABBY_2;
-        gSpecialVar_0x8005 = LOCALID_ROUTE111_TY_2;
-        break;
-    case 5:
-        gSpecialVar_0x8004 = LOCALID_ROUTE118_GABBY_2;
-        gSpecialVar_0x8005 = LOCALID_ROUTE118_TY_2;
-        break;
-    case 6:
-        gSpecialVar_0x8004 = LOCALID_ROUTE120_GABBY_2;
-        gSpecialVar_0x8005 = LOCALID_ROUTE120_TY_2;
-        break;
-    case 7:
-        gSpecialVar_0x8004 = LOCALID_ROUTE111_GABBY_3;
-        gSpecialVar_0x8005 = LOCALID_ROUTE111_TY_3;
-        break;
-    case 8:
-        gSpecialVar_0x8004 = LOCALID_ROUTE118_GABBY_3;
-        gSpecialVar_0x8005 = LOCALID_ROUTE118_TY_3;
-        break;
-    }
+    // busted deleting maps. whatever lol
+    gSpecialVar_0x8004 = 0;
+    gSpecialVar_0x8005 = 0;
 }
 
 void InterviewAfter(void)
@@ -2662,21 +2630,8 @@ bool8 IsPokeNewsActive(u8 newsKind)
 // For any other type of PokeNews this is always TRUE.
 static bool8 ShouldApplyPokeNewsEffect(u8 newsKind)
 {
-    switch (newsKind)
-    {
-    case POKENEWS_SLATEPORT:
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_SLATEPORT_CITY)
-         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_SLATEPORT_CITY)
-         && gSpecialVar_LastTalked == LOCALID_SLATEPORT_ENERGY_GURU)
-            return TRUE;
-        return FALSE;
-    case POKENEWS_LILYCOVE:
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP)
-         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP))
-            return TRUE;
-        return FALSE;
-    }
-    return TRUE;
+    // busted during map deletion
+    return FALSE;
 }
 
 static bool8 IsAddingPokeNewsDisallowed(u8 newsKind)
@@ -5531,11 +5486,6 @@ static void DoTVShowTodaysRivalTrainer(void)
         case MAPSEC_DYNAMIC:
             switch (show->rivalTrainer.mapLayoutId)
             {
-            case LAYOUT_SS_TIDAL_CORRIDOR:
-            case LAYOUT_SS_TIDAL_LOWER_DECK:
-            case LAYOUT_SS_TIDAL_ROOMS:
-                sTVShowState = 10;
-                break;
             default:
                 sTVShowState = 9;
                 break;
@@ -5692,11 +5642,6 @@ static void DoTVShowHoennTreasureInvestigators(void)
         {
             switch (show->treasureInvestigators.mapLayoutId)
             {
-            case LAYOUT_SS_TIDAL_CORRIDOR:
-            case LAYOUT_SS_TIDAL_LOWER_DECK:
-            case LAYOUT_SS_TIDAL_ROOMS:
-                sTVShowState = 2;
-                break;
             default:
                 sTVShowState = 1;
                 break;

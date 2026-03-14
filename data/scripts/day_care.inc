@@ -186,7 +186,7 @@ Route117_PokemonDayCare_EventScript_CheckEnoughMoney::
 	end
 
 Route117_PokemonDayCare_EventScript_RetrieveMon::
-	applymovement LOCALID_DAYCARE_LADY, Route117_PokemonDayCare_Movement_RetrieveDaycareMon
+	applymovement 0, Route117_PokemonDayCare_Movement_RetrieveDaycareMon @ PLACEHOLDER, was LOCALID_DAYCARE_LADY
 	waitmovement 0
 	specialvar VAR_RESULT, TakePokemonFromDaycare
 	special SubtractMoneyFromVar0x8005

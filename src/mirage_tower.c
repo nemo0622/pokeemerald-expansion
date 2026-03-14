@@ -346,7 +346,7 @@ static void PlayerDescendMirageTower(u8 taskId)
     struct ObjectEvent *fallingPlayer;
     struct ObjectEvent *player;
 
-    TryGetObjectEventIdByLocalIdAndMap(LOCALID_ROUTE111_PLAYER_FALLING, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &objectEventId);
+    TryGetObjectEventIdByLocalIdAndMap(0, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &objectEventId);
     fallingPlayer = &gObjectEvents[objectEventId];
     gSprites[fallingPlayer->spriteId].y2 += 4;
     player = &gObjectEvents[gPlayerAvatar.objectEventId];
