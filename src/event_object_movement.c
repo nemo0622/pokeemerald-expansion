@@ -2632,61 +2632,61 @@ void GetFollowerAction(struct ScriptContext *ctx) // Essentially a big switch fo
         emotion_weight[FOLLOWER_EMOTION_SAD] = 30;
         condEmotes[condCount++] = (struct SpecialEmote) {.emotion = FOLLOWER_EMOTION_SAD, .index = 6};
     }
-    // Gym type advantage/disadvantage
-    if (GetCurrentMapMusic() == MUS_GYM || GetCurrentMapMusic() == MUS_RG_GYM)
-    {
-        switch (gMapHeader.regionMapSectionId)
-        {
-        case MAPSEC_RUSTBORO_CITY:
-        case MAPSEC_PEWTER_CITY:
-            multi = TYPE_ROCK;
-            break;
-        case MAPSEC_DEWFORD_TOWN:
-            multi = TYPE_FIGHTING;
-            break;
-        case MAPSEC_MAUVILLE_CITY:
-        case MAPSEC_VERMILION_CITY:
-            multi = TYPE_ELECTRIC;
-            break;
-        case MAPSEC_LAVARIDGE_TOWN:
-        case MAPSEC_CINNABAR_ISLAND:
-            multi = TYPE_FIRE;
-            break;
-        case MAPSEC_PETALBURG_CITY:
-            multi = TYPE_NORMAL;
-            break;
-        case MAPSEC_FORTREE_CITY:
-            multi = TYPE_FLYING;
-            break;
-        case MAPSEC_MOSSDEEP_CITY:
-        case MAPSEC_SAFFRON_CITY:
-            multi = TYPE_PSYCHIC;
-            break;
-        case MAPSEC_SOOTOPOLIS_CITY:
-        case MAPSEC_CERULEAN_CITY:
-            multi = TYPE_WATER;
-            break;
-        case MAPSEC_CELADON_CITY:
-            multi = TYPE_GRASS;
-            break;
-        case MAPSEC_FUCHSIA_CITY:
-            multi = TYPE_POISON;
-            break;
-        case MAPSEC_VIRIDIAN_CITY:
-            multi = TYPE_GROUND;
-            break;
-        default:
-            multi = NUMBER_OF_MON_TYPES;
-        }
-        if (multi < NUMBER_OF_MON_TYPES)
-        {
-            multi = GetOverworldTypeEffectiveness(mon, multi);
-            if (multi <= UQ_4_12(0.5))
-                condEmotes[condCount++] = (struct SpecialEmote) {.emotion = FOLLOWER_EMOTION_HAPPY, .index = 32};
-            else if (multi >= UQ_4_12(2.0))
-                condEmotes[condCount++] = (struct SpecialEmote) {.emotion = FOLLOWER_EMOTION_SAD, .index = 7};
-        }
-    }
+    // // Gym type advantage/disadvantage
+    // if (GetCurrentMapMusic() == MUS_GYM || GetCurrentMapMusic() == MUS_RG_GYM)
+    // {
+    //     switch (gMapHeader.regionMapSectionId)
+    //     {
+    //     case MAPSEC_RUSTBORO_CITY:
+    //     case MAPSEC_PEWTER_CITY:
+    //         multi = TYPE_ROCK;
+    //         break;
+    //     case MAPSEC_DEWFORD_TOWN:
+    //         multi = TYPE_FIGHTING;
+    //         break;
+    //     case MAPSEC_MAUVILLE_CITY:
+    //     case MAPSEC_VERMILION_CITY:
+    //         multi = TYPE_ELECTRIC;
+    //         break;
+    //     case MAPSEC_LAVARIDGE_TOWN:
+    //     case MAPSEC_CINNABAR_ISLAND:
+    //         multi = TYPE_FIRE;
+    //         break;
+    //     case MAPSEC_PETALBURG_CITY:
+    //         multi = TYPE_NORMAL;
+    //         break;
+    //     case MAPSEC_FORTREE_CITY:
+    //         multi = TYPE_FLYING;
+    //         break;
+    //     case MAPSEC_MOSSDEEP_CITY:
+    //     case MAPSEC_SAFFRON_CITY:
+    //         multi = TYPE_PSYCHIC;
+    //         break;
+    //     case MAPSEC_SOOTOPOLIS_CITY:
+    //     case MAPSEC_CERULEAN_CITY:
+    //         multi = TYPE_WATER;
+    //         break;
+    //     case MAPSEC_CELADON_CITY:
+    //         multi = TYPE_GRASS;
+    //         break;
+    //     case MAPSEC_FUCHSIA_CITY:
+    //         multi = TYPE_POISON;
+    //         break;
+    //     case MAPSEC_VIRIDIAN_CITY:
+    //         multi = TYPE_GROUND;
+    //         break;
+    //     default:
+    //         multi = NUMBER_OF_MON_TYPES;
+    //     }
+    //     if (multi < NUMBER_OF_MON_TYPES)
+    //     {
+    //         multi = GetOverworldTypeEffectiveness(mon, multi);
+    //         if (multi <= UQ_4_12(0.5))
+    //             condEmotes[condCount++] = (struct SpecialEmote) {.emotion = FOLLOWER_EMOTION_HAPPY, .index = 32};
+    //         else if (multi >= UQ_4_12(2.0))
+    //             condEmotes[condCount++] = (struct SpecialEmote) {.emotion = FOLLOWER_EMOTION_SAD, .index = 7};
+    //     }
+    // }
 
     emotion = RandomWeightedIndex(emotion_weight, FOLLOWER_EMOTION_LENGTH);
     if ((mon->status & STATUS1_PSN_ANY) && GetMonAbility(mon) != ABILITY_POISON_HEAL)

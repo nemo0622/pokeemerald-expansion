@@ -4,7 +4,8 @@
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorDynamic",
-    "gMapGroup_SpecialArea"
+    "gMapGroup_SpecialArea",
+    "gMapGroup_IndoorHauoliOutskirts"
   ],
   "gMapGroup_TownsAndRoutes": [
     "LittlerootTown"
@@ -17,12 +18,7 @@
     "LittlerootTown_ProfessorBirchsLab"
   ],
   "gMapGroup_Dungeons": [
-    "FieryPath",
-    "IslandCave",
-    "AncientTomb",
-    "ArtisanCave_B1F",
-    "ArtisanCave_1F",
-    "AlteringCave"
+    "FieryPath"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -133,5 +129,8 @@
     "BattleFrontier_PokemonCenter_1F",
     "BattleFrontier_PokemonCenter_2F",
     "BattleFrontier_Mart"
+  ],
+  "gMapGroup_IndoorHauoliOutskirts": [
+    "HauoliOutskirts_PlayersRoom"
   ]
 }

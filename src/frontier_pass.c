@@ -608,20 +608,20 @@ static u32 AllocateFrontierPassData(MainCallback callback)
 
     sPassData->callback = callback;
     i = GetCurrentRegionMapSectionId();
-    if (i != MAPSEC_BATTLE_FRONTIER && i != MAPSEC_ARTISAN_CAVE)
-    {
+    // if (i != MAPSEC_BATTLE_FRONTIER && i != MAPSEC_ARTISAN_CAVE)
+    // {
         // Player is not in the frontier, set
         // cursor position to the Trainer Card
         sPassData->cursorX = 176;
         sPassData->cursorY = 104;
-    }
-    else
-    {
-        // Player is in the frontier, set
-        // cursor position to the frontier map
-        sPassData->cursorX = 176;
-        sPassData->cursorY = 48;
-    }
+    // }
+    // else
+    // {
+    //     // Player is in the frontier, set
+    //     // cursor position to the frontier map
+    //     sPassData->cursorX = 176;
+    //     sPassData->cursorY = 48;
+    // }
 
     sPassData->battlePoints = gSaveBlock2Ptr->frontier.battlePoints;
     sPassData->hasBattleRecord = CanCopyRecordedBattleSaveData();
@@ -1642,65 +1642,65 @@ static void InitFrontierMapSprites(void)
     sMapData->mapIndicatorSprite->oam.priority = 0;
     StartSpriteAnim(sMapData->mapIndicatorSprite, sMapLandmarks[sMapData->cursorPos].animNum);
 
-    // Create player indicator head sprite only if it's in vicinity of battle frontier.
-    id = GetCurrentRegionMapSectionId();
-    if (id == MAPSEC_BATTLE_FRONTIER || id == MAPSEC_ARTISAN_CAVE)
-    {
-        s8 mapNum = gSaveBlock1Ptr->location.mapNum;
+    // // Create player indicator head sprite only if it's in vicinity of battle frontier.
+    // id = GetCurrentRegionMapSectionId();
+    // if (id == MAPSEC_BATTLE_FRONTIER || id == MAPSEC_ARTISAN_CAVE)
+    // {
+    //     s8 mapNum = gSaveBlock1Ptr->location.mapNum;
 
-        if (mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_OUTSIDE_WEST)
-            || (mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_OUTSIDE_EAST) && (x = 55)))
-        {
-            x += gSaveBlock1Ptr->pos.x;
-            y = gSaveBlock1Ptr->pos.y;
+    //     if (mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_OUTSIDE_WEST)
+    //         || (mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_OUTSIDE_EAST) && (x = 55)))
+    //     {
+    //         x += gSaveBlock1Ptr->pos.x;
+    //         y = gSaveBlock1Ptr->pos.y;
 
-            x /= 8;
-            y /= 8;
+    //         x /= 8;
+    //         y /= 8;
 
-            id = 0;
-        }
-        else
-        {
-            id = MapNumToFrontierFacilityId(mapNum);
-            if (id != 0)
-            {
-                x = sMapLandmarks[id - 1].x;
-                y = sMapLandmarks[id - 1].y;
-            }
-            else
-            {
-                // Handle Artisan Cave.
-                if (gSaveBlock1Ptr->escapeWarp.mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_OUTSIDE_EAST))
-                    x = gSaveBlock1Ptr->escapeWarp.x + 55;
-                else
-                    x = gSaveBlock1Ptr->escapeWarp.x;
+    //         id = 0;
+    //     }
+    //     else
+    //     {
+    //         id = MapNumToFrontierFacilityId(mapNum);
+    //         if (id != 0)
+    //         {
+    //             x = sMapLandmarks[id - 1].x;
+    //             y = sMapLandmarks[id - 1].y;
+    //         }
+    //         else
+    //         {
+    //             // Handle Artisan Cave.
+    //             if (gSaveBlock1Ptr->escapeWarp.mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_OUTSIDE_EAST))
+    //                 x = gSaveBlock1Ptr->escapeWarp.x + 55;
+    //             else
+    //                 x = gSaveBlock1Ptr->escapeWarp.x;
 
-                y = gSaveBlock1Ptr->escapeWarp.y;
+    //             y = gSaveBlock1Ptr->escapeWarp.y;
 
-                x /= 8;
-                y /= 8;
-            }
-        }
+    //             x /= 8;
+    //             y /= 8;
+    //         }
+    //     }
 
-        LoadCompressedSpriteSheet(sHeadsSpriteSheet);
-        sprite = sSpriteTemplate_PlayerHead;
-        sprite.paletteTag = gSaveBlock2Ptr->playerGender + TAG_HEAD_MALE; // TAG_HEAD_FEMALE if gender is FEMALE
-        if (id != 0)
-        {
-            spriteId = CreateSprite(&sprite, x, y, 0);
-        }
-        else
-        {
-            x *= 8;
-            y *= 8;
-            spriteId = CreateSprite(&sprite, x + 20, y + 36, 0);
-        }
+    //     LoadCompressedSpriteSheet(sHeadsSpriteSheet);
+    //     sprite = sSpriteTemplate_PlayerHead;
+    //     sprite.paletteTag = gSaveBlock2Ptr->playerGender + TAG_HEAD_MALE; // TAG_HEAD_FEMALE if gender is FEMALE
+    //     if (id != 0)
+    //     {
+    //         spriteId = CreateSprite(&sprite, x, y, 0);
+    //     }
+    //     else
+    //     {
+    //         x *= 8;
+    //         y *= 8;
+    //         spriteId = CreateSprite(&sprite, x + 20, y + 36, 0);
+    //     }
 
-        sMapData->playerHeadSprite = &gSprites[spriteId];
-        sMapData->playerHeadSprite->oam.priority = 0;
-        if (gSaveBlock2Ptr->playerGender != MALE)
-            StartSpriteAnim(sMapData->playerHeadSprite, 1);
-    }
+    //     sMapData->playerHeadSprite = &gSprites[spriteId];
+    //     sMapData->playerHeadSprite->oam.priority = 0;
+    //     if (gSaveBlock2Ptr->playerGender != MALE)
+    //         StartSpriteAnim(sMapData->playerHeadSprite, 1);
+    // }
 }
 
 static void PrintOnFrontierMap(void)

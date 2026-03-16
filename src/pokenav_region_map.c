@@ -651,27 +651,29 @@ static bool32 IsDecompressCityMapsActive(void)
 
 static u32 LoopedTask_DecompressCityMaps(s32 taskState)
 {
-    struct Pokenav_RegionMapGfx *state = GetSubstructPtr(POKENAV_SUBSTRUCT_REGION_MAP_ZOOM);
-    if (taskState < NUM_CITY_MAPS)
-    {
-        DecompressDataWithHeaderWram(sPokenavCityMaps[taskState].tilemap, state->cityZoomPics[taskState]);
-        return LT_INC_AND_CONTINUE;
-    }
+    // struct Pokenav_RegionMapGfx *state = GetSubstructPtr(POKENAV_SUBSTRUCT_REGION_MAP_ZOOM);
+    // if (taskState < NUM_CITY_MAPS)
+    // {
+    //     DecompressDataWithHeaderWram(sPokenavCityMaps[taskState].tilemap, state->cityZoomPics[taskState]);
+    //     return LT_INC_AND_CONTINUE;
+    // }
 
     return LT_FINISH;
 }
 
 static void DrawCityMap(struct Pokenav_RegionMapGfx *state, mapsec_s32_t mapSecId, int pos)
 {
-    int i;
-    for (i = 0; i < NUM_CITY_MAPS && (sPokenavCityMaps[i].mapSecId != mapSecId || sPokenavCityMaps[i].index != pos); i++)
-        ;
+    return; // nope
 
-    if (i == NUM_CITY_MAPS)
-        return;
+    // int i;
+    // for (i = 0; i < NUM_CITY_MAPS && (sPokenavCityMaps[i].mapSecId != mapSecId || sPokenavCityMaps[i].index != pos); i++)
+    //     ;
 
-    FillBgTilemapBufferRect_Palette0(1, 0x1041, 17, 6, 12, 11);
-    CopyToBgTilemapBufferRect(1, state->cityZoomPics[i], 18, 6, 10, 10);
+    // if (i == NUM_CITY_MAPS)
+    //     return;
+
+    // FillBgTilemapBufferRect_Palette0(1, 0x1041, 17, 6, 12, 11);
+    // CopyToBgTilemapBufferRect(1, state->cityZoomPics[i], 18, 6, 10, 10);
 }
 
 static void PrintLandmarkNames(struct Pokenav_RegionMapGfx *state, mapsec_s32_t mapSecId, int pos)

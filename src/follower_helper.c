@@ -248,26 +248,44 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
             MATCH_MAP(MAP_ROUTE117),
         },
     },
-    [COND_MSG_DRAGON_GROWL] =
+    // [COND_MSG_DRAGON_GROWL] =
+    // {
+    //     .text = sCondMsg28,
+    //     .emotion = FOLLOWER_EMOTION_UPSET,
+    //     .conditions =
+    //     {
+    //         MATCH_TYPES(TYPE_DRAGON, TYPE_DRAGON),
+    //         MATCH_MAPSEC(MAPSEC_SKY_PILLAR),
+    //     },
+    // },
+    // [COND_MSG_FEAR] =
+    // {
+    //     .text = (u8*)sFearTexts,
+    //     .textSpread = 1,
+    //     .emotion = FOLLOWER_EMOTION_UPSET,
+    //     .conditions =
+    //     {
+    //         MATCH_NOT_TYPES(TYPE_GHOST, TYPE_GHOST),
+    //         MATCH_MAPSEC(MAPSEC_MT_PYRE),
+    //         MATCH_MUSIC(MUS_MT_PYRE),
+    //     },
+    // },
+    [17] = /* PLACHOLDER HERE TO MAKE SURE COMMENTS ABOVE DON'T RUIN EVERYHTING */
     {
-        .text = sCondMsg28,
-        .emotion = FOLLOWER_EMOTION_UPSET,
+        .text = sCondMsg11,
+        .emotion = FOLLOWER_EMOTION_PENSIVE,
         .conditions =
         {
-            MATCH_TYPES(TYPE_DRAGON, TYPE_DRAGON),
-            MATCH_MAPSEC(MAPSEC_SKY_PILLAR),
+            MATCH_MUSIC(MUS_VICTORY_ROAD)
         },
     },
-    [COND_MSG_FEAR] =
+    [18] = /* PLACHOLDER HERE TO MAKE SURE COMMENTS ABOVE DON'T RUIN EVERYHTING */
     {
-        .text = (u8*)sFearTexts,
-        .textSpread = 1,
-        .emotion = FOLLOWER_EMOTION_UPSET,
+        .text = sCondMsg11,
+        .emotion = FOLLOWER_EMOTION_PENSIVE,
         .conditions =
         {
-            MATCH_NOT_TYPES(TYPE_GHOST, TYPE_GHOST),
-            MATCH_MAPSEC(MAPSEC_MT_PYRE),
-            MATCH_MUSIC(MUS_MT_PYRE),
+            MATCH_MUSIC(MUS_VICTORY_ROAD)
         },
     },
     [COND_MSG_FIRE_RAIN] =
@@ -330,13 +348,22 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
             MATCH_NEAR_MB(MB_POND_WATER, 1),
         },
     },
-    [COND_MSG_LEAVES] =
+    // [COND_MSG_LEAVES] =
+    // {
+    //     .text = sCondMsg39,
+    //     .emotion = FOLLOWER_EMOTION_PENSIVE,
+    //     .conditions =
+    //     {
+    //         MATCH_MAPSEC(MAPSEC_PETALBURG_WOODS),
+    //     },
+    // },
+    [25] = /* PLACHOLDER HERE TO MAKE SURE COMMENTS ABOVE DON'T RUIN EVERYHTING */
     {
-        .text = sCondMsg39,
+        .text = sCondMsg11,
         .emotion = FOLLOWER_EMOTION_PENSIVE,
         .conditions =
         {
-            MATCH_MAPSEC(MAPSEC_PETALBURG_WOODS),
+            MATCH_MUSIC(MUS_VICTORY_ROAD)
         },
     },
     [COND_MSG_ICE] =
