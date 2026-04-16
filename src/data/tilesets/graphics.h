@@ -3048,3 +3048,41 @@ const u16 ALIGNED(4) gTilesetPalettes_General_Frlg[][16] =
 const u32 gTilesetTiles_General_Frlg[] = INCBIN_U32("data/tilesets/primary/general_frlg/tiles.4bpp.smol");
 
 #endif // IS_FRLG
+
+const u16 gTilesetPalettes_Hauoli[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/hauoli/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Hauoli[] = INCBIN_U32("data/tilesets/secondary/hauoli/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_AlolaGenericBuilding[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_generic_building/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_AlolaGenericBuilding[] = INCBIN_U32("data/tilesets/secondary/alola_generic_building/tiles.4bpp.lz");

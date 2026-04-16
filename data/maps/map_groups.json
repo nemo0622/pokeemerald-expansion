@@ -8,7 +8,9 @@
     "gMapGroup_IndoorHauoliOutskirts"
   ],
   "gMapGroup_TownsAndRoutes": [
-    "LittlerootTown"
+    "LittlerootTown",
+    "HauoliOutskirts",
+    "Route_01"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -131,6 +133,7 @@
     "BattleFrontier_Mart"
   ],
   "gMapGroup_IndoorHauoliOutskirts": [
-    "HauoliOutskirts_PlayersRoom"
+    "HauoliOutskirts_PlayersRoom",
+    "HauoliOutskirts_PlayersRoomActual"
   ]
 }

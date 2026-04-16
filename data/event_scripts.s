@@ -922,3 +922,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/apricorn_tree.inc"
 
 	.include "data/maps/HauoliOutskirts_PlayersRoom/scripts.inc"
+
+	.include "data/maps/HauoliOutskirts/scripts.inc"
+
+	.include "data/maps/HauoliOutskirts_PlayersRoomActual/scripts.inc"
+
+	.include "data/maps/Route_01/scripts.inc"

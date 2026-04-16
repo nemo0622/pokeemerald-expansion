@@ -1190,19 +1190,19 @@ static mapsec_u16_t GetMapSecIdAt(u16 x, u16 y)
 
     switch (GetCurrentRegion())
     {
-    case REGION_KANTO:
-        switch (GetKantoSubregion(gMapHeader.regionMapSectionId))
-        {
-        case KANTO_SUBREGION_SEVII123:
-                return sRegionMapSections_Sevii123[y][x];
-        case KANTO_SUBREGION_SEVII45:
-                return sRegionMapSections_Sevii45[y][x];
-        case KANTO_SUBREGION_SEVII67:
-                return sRegionMapSections_Sevii67[y][x];
-        case KANTO_SUBREGION_KANTO:
-        default:
-                return sRegionMapSections_Kanto[y][x];
-        }
+    // case REGION_KANTO:
+    //     switch (GetKantoSubregion(gMapHeader.regionMapSectionId))
+    //     {
+    //     case KANTO_SUBREGION_SEVII123:
+    //             return sRegionMapSections_Sevii123[y][x];
+    //     case KANTO_SUBREGION_SEVII45:
+    //             return sRegionMapSections_Sevii45[y][x];
+    //     case KANTO_SUBREGION_SEVII67:
+    //             return sRegionMapSections_Sevii67[y][x];
+    //     case KANTO_SUBREGION_KANTO:
+    //     default:
+    //             return sRegionMapSections_Kanto[y][x];
+    //     }
     case REGION_HOENN:
     default:
             return sRegionMap_MapSectionLayout[y][x];

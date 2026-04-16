@@ -58,6 +58,10 @@
     {
       "id": "MAPSEC_HAUOLI_OUTSKIRTS",
       "name": "Hau'oli Outskirts"
+    },
+    {
+      "id": "MAPSEC_ROUTE_1",
+      "name": "ROUTE 1"
     }
   ]
 }

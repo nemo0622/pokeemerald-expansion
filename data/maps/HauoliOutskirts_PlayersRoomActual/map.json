@@ -1,0 +1,35 @@
+{
+  "id": "MAP_HAUOLI_OUTSKIRTS_PLAYERS_ROOM_ACTUAL",
+  "name": "HauoliOutskirts_PlayersRoomActual",
+  "layout": "LAYOUT_HAUOLI_OUTSKIRTS_PLAYERS_ROOM_ACTUAL",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_HAUOLI_OUTSKIRTS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_HAUOLI_OUTSKIRTS_PLAYERS_ROOM",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_HAUOLI_OUTSKIRTS_PLAYERS_ROOM",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}
