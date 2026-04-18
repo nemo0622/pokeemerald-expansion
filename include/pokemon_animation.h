@@ -36,6 +36,7 @@ enum BackAnim
 // Each front anim uses 1, and each back anim uses a set of 3
 enum AnimFunctionIDs
 {
+    ANIM_NONE,
     ANIM_V_SQUISH_AND_BOUNCE,
     ANIM_CIRCULAR_STRETCH_TWICE,
     ANIM_H_VIBRATE,

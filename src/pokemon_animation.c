@@ -512,7 +512,7 @@ static void Task_HandleMonAnimation(u8 taskId)
         if (gTestRunnerHeadless)
             sprite->callback = WaitAnimEnd;
         else
-            sprite->callback = sMonAnimFunctions[gTasks[taskId].tAnimId];
+            sprite->callback = SpriteCallbackDummy; // sMonAnimFunctions[gTasks[taskId].tAnimId]
         sIsSummaryAnim = FALSE;
 
         gTasks[taskId].tState++;
@@ -544,7 +544,7 @@ void StartMonSummaryAnimation(struct Sprite *sprite, enum AnimFunctionIDs frontA
 {
     // sDontFlip is expected to still be FALSE here, not explicitly cleared
     sIsSummaryAnim = TRUE;
-    sprite->callback = sMonAnimFunctions[frontAnimId];
+    sprite->callback = SpriteCallbackDummy; //sMonAnimFunctions[frontAnimId];
 }
 
 void LaunchAnimationTaskForBackSprite(struct Sprite *sprite, enum BackAnim backAnimSet)
