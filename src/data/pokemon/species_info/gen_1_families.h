@@ -6343,7 +6343,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 12,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(0, 30),
             ANIMCMD_FRAME(1, 15),
             ANIMCMD_FRAME(2, 15),
             ANIMCMD_FRAME(3, 15),

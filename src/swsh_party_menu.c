@@ -8,6 +8,7 @@
 #include "battle_pike.h"
 #include "battle_pyramid.h"
 #include "battle_pyramid_bag.h"
+#include "bw_summary_screen.h"
 #include "item_icon.h"
 #include "bg.h"
 #include "contest.h"
@@ -3860,15 +3861,15 @@ static void CB2_ShowPokemonSummaryScreen(void)
     if (gPartyMenu.menuType == PARTY_MENU_TYPE_IN_BATTLE)
     {
         UpdatePartyToBattleOrder();
-        ShowPokemonSummaryScreen(SUMMARY_MODE_LOCK_MOVES, gPlayerParty, gPartyMenu.slotId, gPlayerPartyCount - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
+        ShowPokemonSummaryScreen_BW(SUMMARY_MODE_LOCK_MOVES, gPlayerParty, gPartyMenu.slotId, gPlayerPartyCount - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
     }
     else if (gPartyMenu.menuType == PARTY_MENU_TYPE_CHOOSE_HALF)
     {
-        ShowPokemonSummaryScreen(SUMMARY_MODE_LOCK_MOVES, gPlayerParty, gPartyMenu.slotId, gPlayerPartyCount - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
+        ShowPokemonSummaryScreen_BW(SUMMARY_MODE_LOCK_MOVES, gPlayerParty, gPartyMenu.slotId, gPlayerPartyCount - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
     }
     else
     {
-        ShowPokemonSummaryScreen(SUMMARY_MODE_NORMAL, gPlayerParty, gPartyMenu.slotId, gPlayerPartyCount - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
+        ShowPokemonSummaryScreen_BW(SUMMARY_MODE_NORMAL, gPlayerParty, gPartyMenu.slotId, gPlayerPartyCount - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
     }
 }
 
@@ -6022,34 +6023,35 @@ static u8 CreateMonSprite(struct Pokemon *mon, bool32 isShadow)
 {
     u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG);
     u8 shadowPalette = 0;
-    u8 spriteId = CreateSprite(&gMultiuseSpriteTemplate, 184, 74, 5);
+    u8 spriteId = CreateSprite(&gMultiuseSpriteTemplate, 184, 58, 5);
 
     if (spriteId != MAX_SPRITES)
     {
         FreeSpriteOamMatrix(&gSprites[spriteId]);
         gSprites[spriteId].sSpecies = species;
         gSprites[spriteId].sDelayAnim = 0;
-        gSprites[spriteId].sIsShadow = isShadow;
+        // gSprites[spriteId].sIsShadow = isShadow;
         gSprites[spriteId].sIsEgg = GetMonData(mon, MON_DATA_IS_EGG);
         gSprites[spriteId].oam.priority = 1;
-        if (isShadow)
-        {
-            gSprites[spriteId].subpriority = 7;
-        }
-        else
-        {
-            gSprites[spriteId].subpriority = 6;
-        }
+        // if (isShadow)
+        // {
+        //     gSprites[spriteId].subpriority = 7;
+        // }
+        // else
+        // {
+        //     gSprites[spriteId].subpriority = 6;
+        // }
+        gSprites[spriteId].subpriority = 6;
         gSprites[spriteId].callback = SpriteCB_PartyMonPokemon;
-        if (isShadow)
-        {
-            FreeSpritePaletteByTag(TAG_MON_SHADOW);
-            shadowPalette = LoadSpritePalette(&sSpritePal_PartyMonShadow);
-            gSprites[spriteId].oam.paletteNum = shadowPalette;
-            gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-            gSprites[spriteId].x += 5;
-            gSprites[spriteId].y += 2;
-        }
+        // if (isShadow)
+        // {
+        //     FreeSpritePaletteByTag(TAG_MON_SHADOW);
+        //     shadowPalette = LoadSpritePalette(&sSpritePal_PartyMonShadow);
+        //     gSprites[spriteId].oam.paletteNum = shadowPalette;
+        //     gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
+        //     gSprites[spriteId].x += 5;
+        //     gSprites[spriteId].y += 2;
+        // }
     }
 
     return spriteId;
@@ -6076,8 +6078,8 @@ static void SpriteCB_PartyMonPokemon(struct Sprite *sprite)
     if (!gPaletteFade.active && sprite->sDelayAnim != 1)
     {
         sprite->sDontFlip = TRUE;
-        PokemonSummaryDoMonAnimation(sprite, sprite->sSpecies, sprite->sIsEgg);
-        // PokemonSummaryDoMonAnimation(sprite, sprite->sSpecies, sprite->sIsEgg, sprite->sIsShadow); // use this if already using swsh_summary_screen branch
+        // PokemonSummaryDoMonAnimation(sprite, sprite->sSpecies, sprite->sIsEgg);
+        PokemonSummaryDoMonAnimation(sprite, sprite->sSpecies, sprite->sIsEgg, sprite->sIsShadow); // use this if already using swsh_summary_screen branch
     }
 }
 
@@ -6110,12 +6112,12 @@ static void RunMonAnimTimer(void)
         gSprites[sMonSpriteId].sIsShadow = FALSE;
         gSprites[sMonSpriteId].sIsEgg = GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_IS_EGG);
 
-        if (sMonShadowSpriteId != SPRITE_NONE)
-        {
-            gSprites[sMonShadowSpriteId].sSpecies = GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_SPECIES_OR_EGG);
-            gSprites[sMonShadowSpriteId].sIsShadow = TRUE;
-            gSprites[sMonShadowSpriteId].sIsEgg = GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_IS_EGG);
-        }
+        // if (sMonShadowSpriteId != SPRITE_NONE)
+        // {
+        //     gSprites[sMonShadowSpriteId].sSpecies = GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_SPECIES_OR_EGG);
+        //     gSprites[sMonShadowSpriteId].sIsShadow = TRUE;
+        //     gSprites[sMonShadowSpriteId].sIsEgg = GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_IS_EGG);
+        // }
 
         // Restart animation for both sprites
         gSprites[sMonSpriteId].callback = SpriteCB_PartyMonPokemon;
@@ -9739,7 +9741,7 @@ static void Task_BattlePyramidChooseMonHeldItems(u8 taskId)
 
 void MoveDeleterChooseMoveToForget(void)
 {
-    ShowPokemonSummaryScreen(SUMMARY_MODE_SELECT_MOVE, gPlayerParty, gSpecialVar_0x8004, gPlayerPartyCount - 1, CB2_ReturnToField);
+    ShowPokemonSummaryScreen_BW(SUMMARY_MODE_SELECT_MOVE, gPlayerParty, gSpecialVar_0x8004, gPlayerPartyCount - 1, CB2_ReturnToField);
     gFieldCallback = FieldCB_ContinueScriptHandleMusic;
 }
 

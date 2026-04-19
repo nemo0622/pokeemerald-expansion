@@ -16,5 +16,9 @@ This project is essentially my tribute to the Alola Region, my favorite childhoo
 
 The biggest props go to the Pokémon Emerald Expansion Team, who continue to develop the incredible engine this project runs on. Without all their help, this project would not be possible.
 
+Feature Branches:
+- RavePossum: BW-style Summary Screen
+- Montblanc: SWSH-style Party Menu
+
 Sprites:
 - BronzeSwagger: Professor Burnet

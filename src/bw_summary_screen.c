@@ -34,6 +34,7 @@
 #include "pokemon_sprite_visualizer.h"
 #include "pokemon_storage_system.h"
 #include "pokemon_summary_screen.h"
+#include "pokerus.h"
 #include "region_map.h"
 #include "scanline_effect.h"
 #include "sound.h"
@@ -741,7 +742,7 @@ static const u8 sTextColors[][3] =
     {0, 3, 4},
     {0, 5, 6},
     {0, 7, 8},
-    {0, 9, 10},
+    {0, 9, 0},
     {0, 11, 12},
     {0, 13, 14},
     {0, 7, 8},
@@ -2163,6 +2164,12 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
 {
     u32 i;
     struct PokeSummary *sum = &sMonSummaryScreen->summary;
+
+    // nemo622 busted code
+    static u16 sLocalLevelUpMoves[50] = {0};
+    for (i = 0; i < 50; i++)
+        sLocalLevelUpMoves[i] = MOVE_NONE;
+
     // Spread the data extraction over multiple frames.
     switch (sMonSummaryScreen->switchCounter)
     {
@@ -2191,30 +2198,39 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
         sum->ppBonuses = GetMonData(mon, MON_DATA_PP_BONUSES);
         break;
     case 2:
-        if (sMonSummaryScreen->monList.mons == gPlayerParty || sMonSummaryScreen->mode == SUMMARY_MODE_BOX || sMonSummaryScreen->handleDeoxys == TRUE)
-        {
-            sum->nature = GetNature(mon);
-            sum->mintNature = GetMonData(mon, MON_DATA_HIDDEN_NATURE);
-            sum->currentHP = GetMonData(mon, MON_DATA_HP);
-            sum->maxHP = GetMonData(mon, MON_DATA_MAX_HP);
-            sum->atk = GetMonData(mon, MON_DATA_ATK);
-            sum->def = GetMonData(mon, MON_DATA_DEF);
-            sum->spatk = GetMonData(mon, MON_DATA_SPATK);
-            sum->spdef = GetMonData(mon, MON_DATA_SPDEF);
-            sum->speed = GetMonData(mon, MON_DATA_SPEED);
-        }
-        else
-        {
-            sum->nature = GetNature(mon);
-            sum->mintNature = GetMonData(mon, MON_DATA_HIDDEN_NATURE);
-            sum->currentHP = GetMonData(mon, MON_DATA_HP);
-            sum->maxHP = GetMonData(mon, MON_DATA_MAX_HP);
-            sum->atk = GetMonData(mon, MON_DATA_ATK2);
-            sum->def = GetMonData(mon, MON_DATA_DEF2);
-            sum->spatk = GetMonData(mon, MON_DATA_SPATK2);
-            sum->spdef = GetMonData(mon, MON_DATA_SPDEF2);
-            sum->speed = GetMonData(mon, MON_DATA_SPEED2);
-        }
+        // if (sMonSummaryScreen->monList.mons == gPlayerParty || sMonSummaryScreen->mode == SUMMARY_MODE_BOX || sMonSummaryScreen->handleDeoxys == TRUE)
+        // {
+        //     sum->nature = GetNature(mon);
+        //     sum->mintNature = GetMonData(mon, MON_DATA_HIDDEN_NATURE);
+        //     sum->currentHP = GetMonData(mon, MON_DATA_HP);
+        //     sum->maxHP = GetMonData(mon, MON_DATA_MAX_HP);
+        //     sum->atk = GetMonData(mon, MON_DATA_ATK);
+        //     sum->def = GetMonData(mon, MON_DATA_DEF);
+        //     sum->spatk = GetMonData(mon, MON_DATA_SPATK);
+        //     sum->spdef = GetMonData(mon, MON_DATA_SPDEF);
+        //     sum->speed = GetMonData(mon, MON_DATA_SPEED);
+        // }
+        // else
+        // {
+        //     sum->nature = GetNature(mon);
+        //     sum->mintNature = GetMonData(mon, MON_DATA_HIDDEN_NATURE);
+        //     sum->currentHP = GetMonData(mon, MON_DATA_HP);
+        //     sum->maxHP = GetMonData(mon, MON_DATA_MAX_HP);
+        //     sum->atk = GetMonData(mon, MON_DATA_ATK2);
+        //     sum->def = GetMonData(mon, MON_DATA_DEF2);
+        //     sum->spatk = GetMonData(mon, MON_DATA_SPATK2);
+        //     sum->spdef = GetMonData(mon, MON_DATA_SPDEF2);
+        //     sum->speed = GetMonData(mon, MON_DATA_SPEED2);
+        // }
+        sum->nature = GetNature(mon);
+        sum->mintNature = GetMonData(mon, MON_DATA_HIDDEN_NATURE);
+        sum->currentHP = GetMonData(mon, MON_DATA_HP);
+        sum->maxHP = GetMonData(mon, MON_DATA_MAX_HP);
+        sum->atk = GetMonData(mon, MON_DATA_ATK);
+        sum->def = GetMonData(mon, MON_DATA_DEF);
+        sum->spatk = GetMonData(mon, MON_DATA_SPATK);
+        sum->spdef = GetMonData(mon, MON_DATA_SPDEF);
+        sum->speed = GetMonData(mon, MON_DATA_SPEED);
         break;
     case 3:
         GetMonData(mon, MON_DATA_OT_NAME, sum->OTName);
@@ -2247,7 +2263,7 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
         sum->ribbonCount = GetMonData(mon, MON_DATA_RIBBON_COUNT);        
         sum->teraType = GetMonData(mon, MON_DATA_TERA_TYPE);
         sum->isShiny = GetMonData(mon, MON_DATA_IS_SHINY);
-        sMonSummaryScreen->relearnableMovesNum = P_SUMMARY_SCREEN_MOVE_RELEARNER ? GetNumberOfLevelUpMoves(mon) : 0;
+        sMonSummaryScreen->relearnableMovesNum = P_SUMMARY_SCREEN_MOVE_RELEARNER ? GetLevelUpMovesBySpecies(GetMonData(mon, MON_DATA_SPECIES), sLocalLevelUpMoves) : 0;
         return TRUE;
     }
     sMonSummaryScreen->switchCounter++;
@@ -3664,10 +3680,10 @@ static void PrintPageNamesAndStats(void)
     int iconXPos;
     int skillsLabelWidth = 78;
 
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_INFO_TITLE, sText_PkmnInfo, 2, 1, 0, 1);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_TITLE, sText_PkmnSkills, 2, 1, 0, 1);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_BATTLE_MOVES_TITLE, sText_BattleMoves, 2, 1, 0, 1);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_CONTEST_MOVES_TITLE, sText_ContestMoves, 2, 1, 0, 1);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_INFO_TITLE, sText_PkmnInfo, 2, 1, 0, 0);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_TITLE, sText_PkmnSkills, 2, 1, 0, 0);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_BATTLE_MOVES_TITLE, sText_BattleMoves, 2, 1, 0, 0);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_CONTEST_MOVES_TITLE, sText_ContestMoves, 2, 1, 0, 0);
 
     ShowCancelOrRenamePrompt();
 
@@ -3676,14 +3692,14 @@ static void PrintPageNamesAndStats(void)
     if (iconXPos < 0)
         iconXPos = 0;
     PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_INFO, FALSE, iconXPos);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_INFO, sText_Info, stringXPos, 1, 0, 1);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_INFO, sText_Info, stringXPos, 1, 0, 0);
 
     stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_Switch, 62);
     iconXPos = stringXPos - 16;
     if (iconXPos < 0)
         iconXPos = 0;
     PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_SWITCH, FALSE, iconXPos);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_SWITCH, sText_Switch, stringXPos, 1, 0, 1);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_SWITCH, sText_Switch, stringXPos, 1, 0, 0);
 
     if (BW_SUMMARY_IV_EV_DISPLAY != BW_IV_EV_HIDDEN)
     {
@@ -3694,14 +3710,14 @@ static void PrintPageNamesAndStats(void)
             if (iconXPos < 0)
                 iconXPos = 0;
             PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_IVS, FALSE, iconXPos);
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_IVS, sText_ViewIVs_Graded, stringXPos, 1, 0, 1);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_IVS, sText_ViewIVs_Graded, stringXPos, 1, 0, 0);
 
             stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_ViewEVs_Graded, skillsLabelWidth);
             iconXPos = stringXPos - 16;
             if (iconXPos < 0)
                 iconXPos = 0;
             PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_EVS, FALSE, iconXPos);
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_EVS, sText_ViewEVs_Graded, stringXPos, 1, 0, 1);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_EVS, sText_ViewEVs_Graded, stringXPos, 1, 0, 0);
         }
         else // precise display
         {
@@ -3710,14 +3726,14 @@ static void PrintPageNamesAndStats(void)
             if (iconXPos < 0)
                 iconXPos = 0;
             PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_IVS, FALSE, iconXPos);
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_IVS, sText_ViewIVs, stringXPos, 1, 0, 1);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_IVS, sText_ViewIVs, stringXPos, 1, 0, 0);
 
             stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_ViewEVs, skillsLabelWidth);
             iconXPos = stringXPos - 16;
             if (iconXPos < 0)
                 iconXPos = 0;
             PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_EVS, FALSE, iconXPos);
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_EVS, sText_ViewEVs, stringXPos, 1, 0, 1);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_EVS, sText_ViewEVs, stringXPos, 1, 0, 0);
         }
 
         stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_ViewStats, skillsLabelWidth);
@@ -3725,7 +3741,7 @@ static void PrintPageNamesAndStats(void)
         if (iconXPos < 0)
             iconXPos = 0;
         PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_STATS, FALSE, iconXPos);
-        PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_STATS, sText_ViewStats, stringXPos, 1, 0, 1);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_STATS, sText_ViewStats, stringXPos, 1, 0, 0);
     }
 
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, sText_NextLv, 0, 4, 0, 0);
@@ -4549,7 +4565,7 @@ static void PrintMoveNameAndPP(u8 moveIndex)
 
     if (move != 0)
     {
-        PrintTextOnWindowToFitPx_WithFont(moveNameWindowId, GetMoveName(move), 3, moveIndex * 28 + 2, 0, 12, FONT_SMALL, WindowWidthPx(moveNameWindowId) - 3);
+        PrintTextOnWindowToFitPx_WithFont(moveNameWindowId, GetMoveName(move), 3, moveIndex * 28 + 2, 0, 4, FONT_SMALL, WindowWidthPx(moveNameWindowId) - 3);
         pp = CalculatePPWithBonus(move, summary->ppBonuses, moveIndex);
         ConvertIntToDecimalStringN(gStringVar1, summary->pp[moveIndex], STR_CONV_MODE_RIGHT_ALIGN, 2);
         ConvertIntToDecimalStringN(gStringVar2, pp, STR_CONV_MODE_RIGHT_ALIGN, 2);
@@ -4567,7 +4583,7 @@ static void PrintMoveNameAndPP(u8 moveIndex)
         ppState = 12;
     }
 
-    PrintTextOnWindowWithFont(moveNameWindowId, text, 8, moveIndex * 28 + 16, 0, ppState, FONT_SMALL);
+    PrintTextOnWindowWithFont(moveNameWindowId, text, 8, moveIndex * 28 + 16, 0, 4, FONT_SMALL);
 }
 
 static void PrintMovePowerAndAccuracy(u16 moveIndex)
@@ -5259,7 +5275,7 @@ static void SetPokerusCuredSprite(void)
         sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_POKERUS_CURED] = CreateSprite(&sSpriteTemplate_PokerusCuredIcon, 40, 102, 0);
 
     mon = &sMonSummaryScreen->currentMon;
-    gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_POKERUS_CURED]].invisible = (CheckPartyPokerus(mon, 0) || !CheckPartyHasHadPokerus(mon, 0));
+    gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_POKERUS_CURED]].invisible = (CheckMonPokerus(mon) || !CheckMonHasHadPokerus(mon));
 }
 
 static void SetFriendshipSprite(void)
@@ -5299,7 +5315,7 @@ static void CreateCaughtBallSprite(struct Pokemon *mon)
     u8 ball = ItemIdToBallId(GetMonData(mon, MON_DATA_POKEBALL));
 
     LoadBallGfx(ball);
-    sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL] = CreateSprite(&gBallSpriteTemplates[ball], 233, 38, 6);
+    sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL] = CreateSprite(&gPokeBalls[ball].spriteTemplate, 233, 38, 6);
     gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]].callback = SpriteCallbackDummy;
     gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]].oam.priority = 1;
 }
@@ -5509,7 +5525,7 @@ static inline bool32 ShouldShowRename(void)
 
 static void ShowCancelOrRenamePrompt(void)
 {
-    const u8 *promptText = ShouldShowRename() ? gText_Rename : gText_Cancel2;
+    const u8 *promptText = ShouldShowRename() ? gText_Name : gText_Cancel2;
 
     int stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, promptText, 62);
     int iconXPos = stringXPos - 16;
@@ -5517,7 +5533,7 @@ static void ShowCancelOrRenamePrompt(void)
         iconXPos = 0;
 
     PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_CANCEL, FALSE, iconXPos);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_CANCEL, promptText, stringXPos, 1, 0, 1);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_CANCEL, promptText, stringXPos, 1, 0, 0);
 }
 
 static void CB2_ReturnToSummaryScreenFromNamingScreen(void)
