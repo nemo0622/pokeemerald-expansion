@@ -323,11 +323,11 @@ static void WindowFunc_DrawDialogueFrame(u8 bg, u8 left, u8 top, u8 width, u8 he
     FillMenuTilemapBufferRect(bg,  7, left - 2,         top,             1, 5);
     FillMenuTilemapBufferRect(bg,  9, left - 1,         top,     width + 1, 5);
     FillMenuTilemapBufferRect(bg, 10, left + width,     top,             1, 5);
-    FillMenuTilemapBufferRect(bg, BG_TILE_V_FLIP(1), left - 2,         top + height,         1, 1);
-    FillMenuTilemapBufferRect(bg, BG_TILE_V_FLIP(3), left - 1,         top + height,         1, 1);
-    FillMenuTilemapBufferRect(bg, BG_TILE_V_FLIP(4), left,             top + height, width - 1, 1);
-    FillMenuTilemapBufferRect(bg, BG_TILE_V_FLIP(5), left + width - 1, top + height,         1, 1);
-    FillMenuTilemapBufferRect(bg, BG_TILE_V_FLIP(6), left + width,     top + height,         1, 1);
+    FillMenuTilemapBufferRect(bg, 8, left - 2,         top + height,         1, 1);
+    FillMenuTilemapBufferRect(bg, 11, left - 1,         top + height,         1, 1);
+    FillMenuTilemapBufferRect(bg, 11, left,             top + height, width - 1, 1);
+    FillMenuTilemapBufferRect(bg, 11, left + width - 1, top + height,         1, 1);
+    FillMenuTilemapBufferRect(bg, 12, left + width,     top + height,         1, 1);
 }
 
 static void WindowFunc_ClearStdWindowAndFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 paletteNum)

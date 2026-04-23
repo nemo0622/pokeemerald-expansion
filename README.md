@@ -21,4 +21,5 @@ Feature Branches:
 - Montblanc: SWSH-style Party Menu
 
 Sprites:
+- LuigiTKO: Party Menu sprites!
 - BronzeSwagger: Professor Burnet
