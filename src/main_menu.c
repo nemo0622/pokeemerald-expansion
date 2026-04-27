@@ -770,6 +770,20 @@ static void Task_DisplayMainMenu(u8 taskId)
     // gTasks[taskId].func = Task_OpenMainMenu;
     // return;
 
+    switch (gSaveFileStatus)
+    {
+        case SAVE_STATUS_OK:
+        case SAVE_STATUS_ERROR:
+            break; // just keep going
+        case SAVE_STATUS_EMPTY:
+        default:
+            gPlttBufferUnfaded[0] = RGB_BLACK;
+            gPlttBufferFaded[0] = RGB_BLACK;
+            gTasks[taskId].func = Task_NewGameBirchSpeech_Init;
+            return;
+            break;
+    }
+
     // Open Nemo main menu!
     gTasks[taskId].func = Task_OpenNemoMM_BlankTemplate;
     return;

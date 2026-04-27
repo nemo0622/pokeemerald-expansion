@@ -338,7 +338,7 @@ u16 FreeAndDestroyTrainerPicSprite(u16 spriteId)
     return FreeAndDestroyPicSpriteInternal(spriteId, TRUE);
 }
 
-static u16 UNUSED LoadTrainerPicInWindow(u16 species, bool8 isFrontPic, u8 paletteSlot, u8 windowId)
+u16 LoadTrainerPicInWindow(u16 species, bool8 isFrontPic, u8 paletteSlot, u8 windowId)
 {
     return LoadPicSpriteInWindow(species, FALSE, 0, isFrontPic, paletteSlot, windowId, TRUE);
 }
