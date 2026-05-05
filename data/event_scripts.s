@@ -928,3 +928,11 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/HauoliOutskirts_PlayersRoomActual/scripts.inc"
 
 	.include "data/maps/Route_01/scripts.inc"
+
+	.include "data/maps/IkiTown/scripts.inc"
+
+	.include "data/maps/AlolaLeo_Road/scripts.inc"
+
+	.include "data/maps/HauoliShoppingDistrict/scripts.inc"
+
+	.include "data/maps/HauoliBeachfront/scripts.inc"

@@ -260,7 +260,7 @@
 // gTileset_General
 #define METATILE_General_CalmWater           0x170
 #define METATILE_General_Door                0x022
-#define METATILE_General_Door_PokeCenter     0x061
+#define METATILE_General_Door_PokeCenter     0x062
 #define METATILE_General_Grass               0x001
 #define METATILE_General_LongGrass           0x015
 #define METATILE_General_MuddySlope_Frame0   0x0E8

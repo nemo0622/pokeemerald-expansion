@@ -62,6 +62,18 @@
     {
       "id": "MAPSEC_ROUTE_1",
       "name": "ROUTE 1"
+    },
+    {
+      "id": "MAPSEC_IKI_TOWN",
+      "name": "Iki Town"
+    },
+    {
+      "id": "MAPSEC_ALOLA_LEO_SCHOOL",
+      "name": "Alola Leo School"
+    },
+    {
+      "id": "MAPSEC_HAUOLI_CITY",
+      "name": "Hau'oli City"
     }
   ]
 }

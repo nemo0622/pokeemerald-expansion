@@ -1088,6 +1088,7 @@ static void NemoMM_CreateZCrystalsAndStamps(void)
         sNemoMMState->stampSpriteIds[3] = CreateSprite(&sSpriteTemplate_Stamp_PoniTrial, 139, 46, 0);
     }
 
+    // FlagSet(FLAG_IS_CHAMPION); // TESTING
     if(FlagGet(FLAG_IS_CHAMPION))
     {
         LoadCompressedSpriteSheet(&sSpriteSheet_Stamp_IslandChallenge);
@@ -1133,7 +1134,7 @@ static void NemoMM_PrintText(void)
 
     // Print Dex Numbers if You Have It
     u16 dexCount = 0;
-    FlagSet(FLAG_SYS_POKEDEX_GET); // TESTING - enable dex
+    // FlagSet(FLAG_SYS_POKEDEX_GET); // TESTING - enable dex
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
     {
         dexCount = GetHoennPokedexCount(FLAG_GET_CAUGHT);

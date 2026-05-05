@@ -9357,12 +9357,52 @@
     {
       "id": "LAYOUT_ROUTE_01",
       "name": "Route_01_Layout",
-      "width": 72,
+      "width": 76,
       "height": 32,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Hauoli",
       "border_filepath": "data/layouts/Route_01/border.bin",
       "blockdata_filepath": "data/layouts/Route_01/map.bin"
+    },
+    {
+      "id": "LAYOUT_IKI_TOWN",
+      "name": "IkiTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Hauoli",
+      "border_filepath": "data/layouts/IkiTown/border.bin",
+      "blockdata_filepath": "data/layouts/IkiTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALOLA_LEO_ROAD",
+      "name": "AlolaLeo_Road_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Hauoli",
+      "border_filepath": "data/layouts/AlolaLeo_Road/border.bin",
+      "blockdata_filepath": "data/layouts/AlolaLeo_Road/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_SHOPPING_DISTRICT",
+      "name": "HauoliShoppingDistrict_Layout",
+      "width": 40,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Hauoli",
+      "border_filepath": "data/layouts/HauoliShoppingDistrict/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliShoppingDistrict/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_BEACHFRONT",
+      "name": "HauoliBeachfront_Layout",
+      "width": 40,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Hauoli",
+      "border_filepath": "data/layouts/HauoliBeachfront/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliBeachfront/map.bin"
     }
   ]
 }

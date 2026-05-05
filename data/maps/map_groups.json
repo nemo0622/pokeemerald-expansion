@@ -10,7 +10,11 @@
   "gMapGroup_TownsAndRoutes": [
     "LittlerootTown",
     "HauoliOutskirts",
-    "Route_01"
+    "Route_01",
+    "IkiTown",
+    "AlolaLeo_Road",
+    "HauoliShoppingDistrict",
+    "HauoliBeachfront"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

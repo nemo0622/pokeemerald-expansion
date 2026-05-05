@@ -15,8 +15,13 @@
   "connections": [
     {
       "map": "MAP_ROUTE_01",
-      "offset": -22,
+      "offset": -26,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ALOLA_LEO_ROAD",
+      "offset": 0,
+      "direction": "left"
     }
   ],
   "object_events": [],
