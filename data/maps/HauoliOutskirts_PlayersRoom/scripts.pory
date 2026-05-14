@@ -1,0 +1,112 @@
+mapscripts HauoliOutskirts_PlayersRoom_MapScripts {
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_INTRO_STATE, 1: HauoliOutskirts_PlayersHouse_IntroEvent
+	]
+}
+
+script HauoliOutskirts_PlayersHouse_IntroEvent
+{
+	setvar(VAR_INTRO_STATE, 2)
+
+	lockall
+	delay(20)
+	emote(LOCALID_MOM, EMOTE_EXCLAM)
+	applymovement(LOCALID_MOM, HauoliOutskirts_PlayersHouse_MomApproachPlayersRoom)
+	waitmovement(0)
+
+	setspeaker("Mom")
+	msgbox(format("Ehehe, sorry about Meowth, {PLAYER}! She's been bouncing around the house like a Hoppip in a hurricane.\p Looks like you finished your video call with Professor Burnet! You should go out and {COLOR GREEN}talk to your Grandpa Samson{COLOR DARK_GRAY} before you meet with the professors. He's just north of here in {COLOR GREEN}Iki Town{COLOR DARK_GRAY}. Try to stay out of the tall grass!"))
+	closemessage
+
+	// TODO: Add Quest system and add a quest begin here
+
+	applymovement(LOCALID_MOM, HauoliOutskirts_PlayersHouse_MomReturnToChair)
+	waitmovement(0)
+
+	releaseall
+	end
+}
+movement HauoliOutskirts_PlayersHouse_MomApproachPlayersRoom
+{
+	walk_up
+	walk_right * 3
+	walk_up
+	face_up
+	step_end
+}
+movement HauoliOutskirts_PlayersHouse_MomReturnToChair
+{
+	walk_down
+	walk_left * 3
+	walk_down
+	face_left
+	step_end
+}
+
+script HauoliOutskirts_PlayersHouse_Script_Mom
+{
+	lock
+	faceplayer
+	setspeaker("Mom")
+	msgbox(format("Alola {PLAYER}! It's nice to be back in our home region, yeah?"))
+	closemessage
+	release
+	end
+}
+
+script HauoliOutskirts_PlayersHouse_Script_Meowth
+{
+	lock
+    faceplayer
+    setspeaker("Mom's Meowth")
+    playmoncry(SPECIES_MEOWTH, CRY_MODE_NORMAL)
+    msgbox("Breowww!!")
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+// --------------------------------------------------------------------------------------------------------
+
+script HauoliOutskirts_PlayersHouse_Sign_TV
+{
+	lock
+	msgbox(format("Mom has a sitcom on from when she was a teen. Nostalgia is a powerful thing!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl
+{
+	lock
+	msgbox(format("It's Meowth's food bowl."))
+	closemessage
+	if(!flag(FLAG_GOT_AMULET_COIN_HAUOLI))
+	{
+		setflag(FLAG_GOT_AMULET_COIN_HAUOLI)
+		msgbox(format("Hm? There's something in the bowl."))
+		closemessage
+		giveitem(ITEM_AMULET_COIN)
+		closemessage
+		msgbox(format("Mom is spoiling Meowth too much!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal
+{
+	lock
+	msgbox(format("It's Grandpa Samson's field journal! Read it?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == 1)
+	{
+		setspeaker("Samson Oak")
+		msgbox(format("{COLOR GREEN}Lurantis{COLOR DARK_GRAY} is a beautiful Pokémon with sickle-sharp petals able to cut straight through trees. They've evolved to blend in with the bright flowers of Alola, luring in prey with hypnotic swaying and colors before striking.\p There are rumors of a {COLOR RED}super-powerful Lurantis{COLOR DARK_GRAY} lurking deep in the forests of Akala Island. Is this a folktale, or could this be a real {COLOR GREEN}Totem Pokémon{COLOR DARK_GRAY}?"))
+	}
+	closemessage
+	release
+	end
+}

@@ -2031,8 +2031,8 @@
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0
 
-#define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0
-#define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0
+#define FLAG_GOT_AMULET_COIN_HAUOLI                     0
+#define FLAG_HIDE_YUNGOOS_ROUTE_01                          0
 #define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0
 #define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0

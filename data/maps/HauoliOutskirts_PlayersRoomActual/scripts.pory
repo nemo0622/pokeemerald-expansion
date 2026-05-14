@@ -1,0 +1,68 @@
+mapscripts HauoliOutskirts_PlayersRoomActual_MapScripts {
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_INTRO_STATE, 0: HauoliOutskirts_PlayersRoomActual_Script_StartGame
+	]
+}
+
+// Script called at end of intro cutscene
+script HauoliOutskirts_PlayersRoomActual_Script_StartGame
+{
+	setvar(VAR_INTRO_STATE, 1)
+
+	lockall
+	applymovement(LOCALID_ROOM_MEOWTH, HauoliOutskirts_PlayersRoomActual_Movement_MeowthGetsPlayer)
+	waitmovement(0)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+	waitmovement(0)
+	setspeaker("Mom's Meowth")
+	msgbox(format("Mroow!!"))
+	playmoncry(SPECIES_MEOWTH, CRY_MODE_NORMAL)
+	waitmoncry
+	closemessage
+	emote(LOCALID_PLAYER, EMOTE_HEART)
+	delay(10)
+
+	msgbox(format("Meowth is covered in dust... It must have been rolling around in the moving boxes.\p Mom probably hasn't started on those. Better check it out!"))
+	closemessage
+
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceDown)
+	waitmovement(0)
+	applymovement(LOCALID_ROOM_MEOWTH, HauoliOutskirts_PlayersRoomActual_Movement_MeowthLeaves)
+	waitmovement(0)
+	removeobject(LOCALID_ROOM_MEOWTH)
+
+	releaseall
+	end
+}
+
+movement HauoliOutskirts_PlayersRoomActual_Movement_MeowthGetsPlayer
+{
+	walk_fast_up * 5
+	walk_fast_right
+	jump_in_place_right * 2
+	face_right
+	step_end
+}
+movement HauoliOutskirts_PlayersRoomActual_Movement_MeowthLeaves
+{
+	walk_fast_left
+	walk_fast_down * 2
+	walk_fast_right * 3
+	jump_right
+	delay_16
+	face_left
+	delay_16
+	walk_down
+	delay_16
+	face_right
+	delay_16
+	face_down
+	delay_16
+	emote_heart
+	delay_16 * 2
+	jump_left
+	walk_left * 3
+	walk_down * 2
+	delay_16 * 2
+	step_end
+}

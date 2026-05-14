@@ -349,12 +349,6 @@
       "respawn_npc": "0"
     },
     {
-      "id": "HEAL_LOCATION_ROUTE_01",
-      "map": "MAP_ROUTE_01",
-      "x": 9,
-      "y": 8
-    },
-    {
       "id": "HEAL_LOCATION_ALOLA_LEO_ROAD",
       "map": "MAP_ALOLA_LEO_ROAD",
       "x": 5,
@@ -363,8 +357,8 @@
     {
       "id": "HEAL_LOCATION_HAUOLI_OUTSKIRTS",
       "map": "MAP_HAUOLI_OUTSKIRTS",
-      "x": 5,
-      "y": 17
+      "x": 21,
+      "y": 11
     },
     {
       "id": "HEAL_LOCATION_HAUOLI_SHOPPING_DISTRICT",

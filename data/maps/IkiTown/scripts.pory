@@ -1,0 +1,4 @@
+raw `
+IkiTown_MapScripts::
+	.byte 0
+`

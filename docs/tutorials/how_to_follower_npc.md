@@ -26,7 +26,7 @@ The object ***MUST*** have an event flag or the NPC follower will not be created
 
 ## Create a Follower
 The `createfollowernpc` macro will create a new follower without needing to convert an existing NPC. It works similarly to `setfollowernpc`, but instead of providing an object id, you give it a GFX id. For example, if you wanted to create a follower with the May sprite, you could do something like this:
-`createfollowernpc OBJ_EVENT_GFX_RIVAL_MAY_NORMAL, FNPC_ALL, EventScript_MayFollow`
+`createfollowernpc OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL, FNPC_ALL, EventScript_MayFollow`
 The created follower NPC will initially be invisible until the player takes a step.
 
 ## Follower Flags

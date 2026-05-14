@@ -1,0 +1,49 @@
+mapscripts Route_01_MapScripts {
+
+}
+
+script Route_01_Trigger_YungoosEncounter_Left
+{
+	lockall
+	emote(LOCALID_PLAYER, EMOTE_QUESTION)
+	delay(10)
+	applymovement(LOCALID_PLAYER, Common_Movement_WalkRight)
+	waitmovement(0)
+	goto(Route_01_Script_YungoosEncounter)
+	end
+}
+script Route_01_Trigger_YungoosEncounter_Right
+{
+	lockall
+	emote(LOCALID_PLAYER, EMOTE_QUESTION)
+	delay(10)
+	applymovement(LOCALID_PLAYER, Common_Movement_WalkLeft)
+	waitmovement(0)
+	goto(Route_01_Script_YungoosEncounter)
+	end
+}
+script Route_01_Trigger_YungoosEncounter_Middle
+{
+	lockall
+	emote(LOCALID_PLAYER, EMOTE_QUESTION)
+	delay(10)
+	goto(Route_01_Script_YungoosEncounter)
+	end
+}
+
+script Route_01_Script_YungoosEncounter
+{
+	applymovement(LOCALID_PLAYER, moves(walk_up * 4, delay_16 * 4, face_left, delay_16 * 2, face_right, delay_16 * 2, face_up, step_end))
+	waitmovement(0)
+
+	clearflag(FLAG_HIDE_YUNGOOS_ROUTE_01)
+	addobject(1) // Spawns in Yungoos
+	applymovement(1, moves(jump_left, delay_16 * 2, walk_fast_down * 2, jump_in_place_down * 3, step_end))
+	emote(LOCALID_PLAYER, EMOTE_EXCLAM)
+	waitmovement(1)
+
+	msgbox(format("Yungoos is here uh oh!"))
+	
+	releaseall
+	end
+}
