@@ -12,6 +12,9 @@
 #include "constants/map_scripts.h"
 #include "constants/script_commands.h"
 #include "field_message_box.h"
+#include "ui_birch_case.h"
+#include "task.h"
+#include "field_weather.h"
 
 #include "dexnav.h"
 

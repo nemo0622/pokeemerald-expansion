@@ -782,8 +782,8 @@
 
 #define FLAG_GOT_AMULET_COIN_HAUOLI                                 0x2DA // Amulet Coin in Meowth's bucket in Home
 #define FLAG_HIDE_YUNGOOS_ROUTE_01                                  0x2DB // Used in Starter intro
-#define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC
-#define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
+#define FLAG_HIDE_SAMSON_ROUTE_01                                   0x2DC // Used in Starter intro
+#define FLAG_HIDE_STARTERS_ROUTE_01                                 0x2DD // Used in Starter intro
 #define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING          0x2E0

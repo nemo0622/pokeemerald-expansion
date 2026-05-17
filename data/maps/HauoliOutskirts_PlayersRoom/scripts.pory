@@ -60,11 +60,83 @@ script HauoliOutskirts_PlayersHouse_Script_Meowth
     faceplayer
     setspeaker("Mom's Meowth")
     playmoncry(SPECIES_MEOWTH, CRY_MODE_NORMAL)
-    msgbox("Breowww!!")
+    msgbox(format("Breowww!!"))
     waitmoncry
     closemessage
     release
     end
+}
+
+script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
+{
+	lockall
+	addobject(3)
+	addobject(4)
+	fadescreen(FADE_FROM_BLACK)
+	delay(20)
+	applymovement(3, moves(walk_up * 2, face_right, step_end))
+	applymovement(4, moves(walk_fast_up * 3, walk_fast_left * 3, jump_in_place_left * 2, face_left, step_end))
+	applymovement(LOCALID_PLAYER, moves(walk_up * 3, face_up, step_end))
+	applymovement(LOCALID_PH_FOLLOWER, moves(walk_right, walk_up * 2, face_up, step_end))
+	waitmovement(0)
+	applymovement(2, moves(face_right, emote_heart, step_end))
+	waitmovement(0)
+	delay(10)
+
+	emote(LOCALID_MOM, EMOTE_EXCLAM)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceDown)
+	applymovement(LOCALID_PH_FOLLOWER, Common_Movement_FaceRight)
+	applymovement(LOCALID_MOM, moves(walk_fast_down * 4, face_left, step_end))
+	waitmovement(0)
+	setspeaker("Mom")
+	msgbox(format("Who's THIS?! It's so CUTE!"))
+	closemessage
+
+	applymovement(3, moves(walk_down, face_right))
+	waitmovement(0)
+	bufferspeciesname(STR_VAR_1, VAR_STARTER_MON)
+	setspeaker("Grandpa Samson")
+	msgbox(format("That's {STR_VAR_1}, a rare Pokémon native to Alola...\pAnd it's {PLAYER}'s new Pokémon, too!"))
+	closemessage
+	applymovement(LOCALID_MOM, moves(jump_in_place_left))
+	waitmovement(0)
+	delay(5)
+	setspeaker("Mom")
+	msgbox(format("Maika'i loa, that's great! How'd this happen? I just sent {PLAYER} to get you from Iki Town, not get caught up in an adventure!"))
+	closemessage
+
+	applymovement(4, moves(walk_right * 4, walk_down, face_down, step_end))
+	waitmovement(0)
+	setspeaker("Prof. Kukui")
+	msgbox(format("{PLAYER} ran into some bad luck with a wild Yungoos on the way, but my Pokémon ran off to save them! With {STR_VAR_1} by their side, {PLAYER}'ll be safe from anything."))
+	closemessage
+	delay(20)
+
+	emote(4, EMOTE_EXCLAM)
+	applymovement(LOCALID_PLAYER, moves(face_right))
+	applymovement(4, moves(face_left))
+	waitmovement(0)
+	setspeaker("Prof. Kukui")
+	msgbox(format("Samson and I ran after those Pokémon in such a rush, I forgot why I was in Iki Town in the first place!\p Come meet me in {COLOR GREEN}Iki Town{COLOR DARK_GRAY}. You'll be safe with {STR_VAR_1}, and I want you to meet someone there, yeah!"))
+	closemessage
+
+	delay(10)
+	fadescreen(FADE_TO_BLACK)
+	delay(30)
+	applymovement(LOCALID_MOM, moves(walk_fast_up * 4, face_down, step_end))
+	waitmovement(0)
+	setflag(FLAG_HIDE_SAMSON_ROUTE_01)
+	removeobject(3)
+	removeobject(4)
+	removeobject(5)
+	fadescreen(FADE_FROM_BLACK)
+	delay(30)
+
+	// TODO: Start Quest to meet Kukui in Iki Town here!
+
+	updatefollowingmon
+	releaseall
+	end
 }
 
 // --------------------------------------------------------------------------------------------------------

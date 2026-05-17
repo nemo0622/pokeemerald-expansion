@@ -5,6 +5,15 @@ mapscripts Route_01_MapScripts {
 script Route_01_Trigger_YungoosEncounter_Left
 {
 	lockall
+	if(!flag(FLAG_HIDE_SAMSON_ROUTE_01))
+	{
+		msgbox(format("Can't leave without a Pokémon!"))
+		closemessage
+		applymovement(LOCALID_PLAYER, moves(walk_up, step_end))
+		waitmovement(0)
+		release
+		end
+	}
 	emote(LOCALID_PLAYER, EMOTE_QUESTION)
 	delay(10)
 	applymovement(LOCALID_PLAYER, Common_Movement_WalkRight)
@@ -15,6 +24,15 @@ script Route_01_Trigger_YungoosEncounter_Left
 script Route_01_Trigger_YungoosEncounter_Right
 {
 	lockall
+	if(!flag(FLAG_HIDE_SAMSON_ROUTE_01))
+	{
+		msgbox(format("Can't leave without a Pokémon!"))
+		closemessage
+		applymovement(LOCALID_PLAYER, moves(walk_up, step_end))
+		waitmovement(0)
+		release
+		end
+	}
 	emote(LOCALID_PLAYER, EMOTE_QUESTION)
 	delay(10)
 	applymovement(LOCALID_PLAYER, Common_Movement_WalkLeft)
@@ -25,9 +43,36 @@ script Route_01_Trigger_YungoosEncounter_Right
 script Route_01_Trigger_YungoosEncounter_Middle
 {
 	lockall
+	if(!flag(FLAG_HIDE_SAMSON_ROUTE_01))
+	{
+		msgbox(format("Can't leave without a Pokémon!"))
+		closemessage
+		applymovement(LOCALID_PLAYER, moves(walk_up, step_end))
+		waitmovement(0)
+		release
+		end
+	}
 	emote(LOCALID_PLAYER, EMOTE_QUESTION)
 	delay(10)
 	goto(Route_01_Script_YungoosEncounter)
+	end
+}
+script Route_01_Trigger_RequireStarter
+{
+	msgbox(format("Can't leave without a Pokémon!"))
+	closemessage
+	applymovement(LOCALID_PLAYER, moves(walk_right, step_end))
+	waitmovement(0)
+	release
+	end
+}
+script Route_01_Trigger_RequireStarterMoveDown
+{
+	msgbox(format("Can't leave without a Pokémon!"))
+	closemessage
+	applymovement(LOCALID_PLAYER, moves(walk_down, step_end))
+	waitmovement(0)
+	release
 	end
 }
 
@@ -42,8 +87,277 @@ script Route_01_Script_YungoosEncounter
 	emote(LOCALID_PLAYER, EMOTE_EXCLAM)
 	waitmovement(1)
 
-	msgbox(format("Yungoos is here uh oh!"))
-	
+	msgbox(format("The wild Pokémon looks furious!"))
+	closemessage
+
+	delay(15)
+	setspeaker("Wild Yungoos")
+    playmoncry(SPECIES_YUNGOOS, CRY_MODE_NORMAL)
+    msgbox("Grr-yeow!!")
+    waitmoncry
+    closemessage
+	delay(15)
+
+	// Starters protect Player
+	clearflag(FLAG_HIDE_STARTERS_ROUTE_01)
+	addobject(2) // Spawn Rowlet
+	addobject(3) // Spawn Litten
+	addobject(4) // Spawn Popplio
+	applymovement(2, moves(walk_right * 3, walk_down, walk_right * 4, walk_up, face_up, step_end))
+	applymovement(3, moves(walk_down * 3, walk_right, walk_down * 2, walk_right, face_up, step_end))
+	applymovement(4, moves(jump_left * 5, delay_16, face_down, delay_16, face_right, delay_16, face_up, delay_16, walk_left * 2, face_up, step_end))
+	emote(LOCALID_PLAYER, EMOTE_EXCLAM)
+	waitmovement(4)
+	delay(15)
+
+	// Starters each make their sounds
+	applymovement(2, moves(face_down, jump_in_place_down * 2, delay_16 * 2, face_up, step_end))
+	playmoncry(SPECIES_ROWLET, CRY_MODE_NORMAL)
+	msgbox("Koo!")
+	waitmoncry
+	closemessage
+	delay(10)
+	applymovement(3, moves(face_down, jump_in_place_down * 2, delay_16 * 2, face_up, step_end))
+	playmoncry(SPECIES_LITTEN, CRY_MODE_NORMAL)
+	msgbox("Mrower...")
+	waitmoncry
+	closemessage
+	delay(10)
+	applymovement(4, moves(face_down, jump_in_place_down * 2, delay_16 * 2, face_up, step_end))
+	playmoncry(SPECIES_POPPLIO, CRY_MODE_NORMAL)
+	msgbox("Bwark?")
+	waitmoncry
+	closemessage
+	delay(30)
+
+	// Yungoos flees!
+	emote(1, EMOTE_QUESTION)
+	delay(20)
+	setspeaker("Wild Yungoos")
+    playmoncry(SPECIES_YUNGOOS, CRY_MODE_NORMAL)
+    msgbox("Krr... RAH!")
+    waitmoncry
+    closemessage
+	delay(10)
+	applymovement(1, moves(jump_in_place_down * 2, delay_16, walk_fast_up, walk_fast_left * 9, step_end))
+	waitmovement(1)
+	msgbox(format("The Yungoos was scared off thanks to these three Pokémon!"))
+	closemessage
+	delay(20)
+
+	// Grandpa Samson shows up
+	setspeaker("Grandpa Samson")
+	msgbox(format("Aue! {PLAYER}! You found them!"))
+	closemessage
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+	waitmovement(0)
+	emote(LOCALID_PLAYER, EMOTE_QUESTION)
+	delay(10)
+
+	// Fade to black to cleanup objects and scene
+	fadescreenswapbuffers(FADE_TO_BLACK)
+	delay(20)
+	setflag(FLAG_HIDE_YUNGOOS_ROUTE_01)
+	removeobject(1)
+	clearflag(FLAG_HIDE_SAMSON_ROUTE_01)
+	addobject(5) // spawn Samson Oak
+	addobject(6) // spawn Prof Kukui
+	applymovement(2, Common_Movement_FaceDown)
+	applymovement(3, Common_Movement_FaceDown)
+	applymovement(4, Common_Movement_FaceDown)
+	delay(20)
+	applymovement(5, moves(walk_right * 6, face_up, step_end))
+	applymovement(6, moves(walk_right * 4, walk_up, face_right, step_end))
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+	delay(20)
+
+	// Grandpa Samson dialogue
+	waitmovement(5)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceDown)
+	waitmovement(0)
+	setspeaker("Grandpa Samson")
+	msgbox(format("We were on the way back from {COLOR GREEN}Iki Town{COLOR DARK_GRAY} when Rowlet, Litten, and Popplio ran off. How'd ya catch 'em?"))
+	closemessage
+	delay(10)
+	applymovement(6, moves(walk_down * 2, walk_right, step_end))
+	waitmovement(0)
+	setspeaker("???")
+	msgbox(format("Ha! Slow down, cousin! It looks like those three were saving them from a Yungoos."))
+	closemessage
+	delay(10)
+
+	// Kukui character intro
+	applymovement(6, moves(walk_up, face_right, step_end))
+	applymovement(LOCALID_PLAYER, moves(face_left))
+	waitmovement(6)
+	delay(10)
+	setspeaker("Prof. Kukui")
+	msgbox(format("The name's Kukui, the Professor of Melemele Island! And by the sound of it, you're {PLAYER}, yeah?\n Welcome to Alola!\p Pokémon like to live in the grass around here. If you want to explore Alola, you'll need your own Pokémon to dish out some moves!"))
+	closemessage
+
+	// Samson considers starters
+	delay(30)
+	emote(5, EMOTE_EXCLAM)
+	delay(10)
+	applymovement(LOCALID_PLAYER, moves(face_down))
+	applymovement(5, moves(walk_in_place_slow_up * 2, face_up, step_end))
+	waitmovement(0)
+	setspeaker("Grandpa Samson")
+	msgbox(format("As it happens, I was in Iki Town picking up those {COLOR GREEN}three Pokémon{COLOR DARK_GRAY} to show you before they ran off.\p How about you {COLOR GREEN}pick one to be your partner{COLOR DARK_GRAY}? They all seem to like you well enough, ohoho!"))
+	closemessage
+
+	applymovement(5, moves(walk_down, face_up, step_end))
+	applymovement(6, moves(walk_down * 2, face_up, step_end))
+	waitmovement(0)
+
+	// Save game prompt, for Those People (lol)
+	call(Common_EventScript_SaveGame)
+
+	// Player free to choose starter!
+	releaseall
+	end
+}
+
+script Route_01_Script_ProfKukui_StarterChoice
+{
+	lock
+	faceplayer
+	setspeaker("Prof. Kukui")
+	msgbox(format("Somethin' wrong, {PLAYER}? Pick whichever Pokémon speaks to you the most, yeah!"))
+	closemessage
+	release
+	end
+}
+script Route_01_Script_SamsonOak_StarterChoice
+{
+	lock
+	faceplayer
+	setspeaker("Grandpa Samson")
+	msgbox(format("Go ahead, pick a Pokémon to join you! They're all quite rare, so choose wisely."))
+	closemessage
+	release
+	end
+}
+
+// STARTER CHOICE SCRIPTS
+script Route_01_Script_ChooseRowlet
+{
+	lock
+	setspeaker("Rowlet")
+	playmoncry(SPECIES_ROWLET, CRY_MODE_NORMAL)
+	msgbox("Koo!")
+	waitmoncry
+	closemessage
+	delay(10)
+	msgbox(format("Tutu Samson mentioned this Pokémon! {COLOR GREEN}Rowlet{COLOR DARK_GRAY} likes to fly at night, tucking itself into corners during the day.\p Pick {COLOR GREEN}Rowlet{COLOR DARK_GRAY}, the Grass Quill Pokémon?"), MSGBOX_YESNO)
+	closemessage
+
+	if(var(VAR_RESULT) == TRUE) // said yes!
+	{
+		setvar(VAR_STARTER_MON, SPECIES_ROWLET)
+		givemon(SPECIES_ROWLET, 5)
+		goto(Route_01_Script_ReactToStarter)
+	}
+	release
+	end
+}
+script Route_01_Script_ChooseLitten
+{
+	lock
+	setspeaker("Litten")
+	playmoncry(SPECIES_LITTEN, CRY_MODE_NORMAL)
+	msgbox("Mrower...")
+	waitmoncry
+	closemessage
+	delay(10)
+	msgbox(format("Tutu Samson mentioned this Pokémon! {COLOR RED}Litten{COLOR DARK_GRAY} acts aloof, but it loves Trainers who help keep its fur clean.\p Pick {COLOR RED}Litten{COLOR DARK_GRAY}, the Fire Cat Pokémon?"), MSGBOX_YESNO)
+	closemessage
+
+	if(var(VAR_RESULT) == TRUE) // said yes!
+	{
+		setvar(VAR_STARTER_MON, SPECIES_LITTEN)
+		givemon(SPECIES_LITTEN, 5)
+		goto(Route_01_Script_ReactToStarter)
+	}
+	release
+	end
+}
+script Route_01_Script_ChoosePopplio
+{
+	lock
+	setspeaker("Popplio")
+	playmoncry(SPECIES_POPPLIO, CRY_MODE_NORMAL)
+	msgbox("Bwark?")
+	waitmoncry
+	closemessage
+	delay(10)
+	msgbox(format("Tutu Samson mentioned this Pokémon! {COLOR BLUE}Popplio{COLOR DARK_GRAY} loves to play, blowing bubbles and bouncing around on them to make a show.\p Pick {COLOR BLUE}Popplio{COLOR DARK_GRAY}, the Sea Lion Pokémon?"), MSGBOX_YESNO)
+	closemessage
+
+	if(var(VAR_RESULT) == TRUE) // said yes!
+	{
+		setvar(VAR_STARTER_MON, SPECIES_POPPLIO)
+		givemon(SPECIES_POPPLIO, 5)
+		goto(Route_01_Script_ReactToStarter)
+	}
+	release
+	end
+}
+
+script Route_01_Script_ReactToStarter
+{
+	lockall
+	setvar(VAR_INTRO_STATE, 3)
+
+	// SET STARTER CHOSEN FLAGS (and play fanfare)
+	setflag(FLAG_SYS_POKEMON_GET)
+
+	bufferspeciesname(STR_VAR_1, VAR_STARTER_MON)
+	message(format("You chose {STR_VAR_1} to be your partner!"))
+	call(Common_EventScript_PlayGymBadgeFanfare)
+	closemessage
+	delay(15)
+
+	// Move Player into position
+	applymovement(5, moves(face_up, step_end))
+	applymovement(6, moves(face_up, step_end))
+	switch(var(VAR_STARTER_MON))
+	{
+		case SPECIES_ROWLET:
+			applymovement(LOCALID_PLAYER, moves(walk_right, walk_down, face_down, step_end))
+			applymovement(2, moves(walk_down, walk_right, face_down, step_end))
+		case SPECIES_LITTEN:
+		default:
+			applymovement(LOCALID_PLAYER, moves(walk_down, face_down, step_end))
+			applymovement(3, moves(walk_down, face_down, step_end))
+		case SPECIES_POPPLIO:
+			applymovement(LOCALID_PLAYER, moves(walk_left, walk_down, face_down, step_end))
+			applymovement(4, moves(walk_down, walk_left, face_down, step_end))
+	}
+	waitmovement(0)
+
+	// Samson reacts to choice, Kukui tells you to say Mahalo (thank you), then you and Samson go back home
+	delay(10)
+	setspeaker("Grandpa Samson")
+	msgbox(format("{STR_VAR_1}! I had a feeling that's who you would pick.\p Now, you thank Professor Kukui for that {STR_VAR_1} with a great big Alolan 'Mahalo'. Those three Pokémon were originally his!"))
+	closemessage
+	delay(10)
+	applymovement(6, moves(walk_up, face_right))
+	applymovement(LOCALID_PLAYER, moves(face_left))
+	waitmovement(6)
+	setspeaker("Prof. Kukui")
+	msgbox(format("Na-ah, don't sweat it, cousin! When I heard the great Samson Oak's own grandkid was moving back to Alola, I knew they'd shape up to be a Pokémon Trainer!\p I'll get the other two Pokémon back into their Poké Balls, then let's show your Mom your new friend!"))
+	closemessage
+
+	copyvar(OBJ_EVENT_GFX_VAR_0, VAR_STARTER_MON)
+
+	delay(10)
+	warpcontinuescript(MAP_HAUOLI_OUTSKIRTS_PLAYERS_ROOM, 8, 11, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter)
+
+	// ALSO TODO: add player plus meowth to main menu as "default", placeholder for saves when you haven't picked a starter yet!
+	// The Meowth is just your family's lol I think that's cute
+	// Then add graphics for Meowth, Yungoos, and Starters to see how the whole New Game intro feels looking right!
+
 	releaseall
 	end
 }

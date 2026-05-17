@@ -2033,8 +2033,8 @@
 
 #define FLAG_GOT_AMULET_COIN_HAUOLI                     0
 #define FLAG_HIDE_YUNGOOS_ROUTE_01                          0
-#define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0
-#define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0
+#define FLAG_HIDE_SAMSON_ROUTE_01                    0
+#define FLAG_HIDE_STARTERS_ROUTE_01              0
 #define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING          0

@@ -37,6 +37,71 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_YUNGOOS_ROUTE_01"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ROWLET)",
+      "x": 49,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_01_Script_ChooseRowlet",
+      "flag": "FLAG_HIDE_STARTERS_ROUTE_01"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LITTEN)",
+      "x": 55,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_01_Script_ChooseLitten",
+      "flag": "FLAG_HIDE_STARTERS_ROUTE_01"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(POPPLIO)",
+      "x": 65,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_01_Script_ChoosePopplio",
+      "flag": "FLAG_HIDE_STARTERS_ROUTE_01"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAMSON_OAK",
+      "x": 51,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_01_Script_SamsonOak_StarterChoice",
+      "flag": "FLAG_HIDE_SAMSON_ROUTE_01"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PROF_KUKUI",
+      "x": 51,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_01_Script_ProfKukui_StarterChoice",
+      "flag": "FLAG_HIDE_SAMSON_ROUTE_01"
     }
   ],
   "warp_events": [],
@@ -67,6 +132,33 @@
       "var": "VAR_INTRO_STATE",
       "var_value": "2",
       "script": "Route_01_Trigger_YungoosEncounter_Middle"
+    },
+    {
+      "type": "trigger",
+      "x": 54,
+      "y": 21,
+      "elevation": 0,
+      "var": "FLAG_HIDE_SAMSON_ROUTE_01",
+      "var_value": "0",
+      "script": "Route_01_Trigger_RequireStarter"
+    },
+    {
+      "type": "trigger",
+      "x": 55,
+      "y": 20,
+      "elevation": 0,
+      "var": "FLAG_HIDE_SAMSON_ROUTE_01",
+      "var_value": "0",
+      "script": "Route_01_Trigger_RequireStarterMoveDown"
+    },
+    {
+      "type": "trigger",
+      "x": 54,
+      "y": 22,
+      "elevation": 0,
+      "var": "FLAG_HIDE_SAMSON_ROUTE_01",
+      "var_value": "0",
+      "script": "Route_01_Trigger_RequireStarter"
     }
   ],
   "bg_events": []
