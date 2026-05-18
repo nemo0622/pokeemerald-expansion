@@ -349,14 +349,8 @@ script Route_01_Script_ReactToStarter
 	msgbox(format("Na-ah, don't sweat it, cousin! When I heard the great Samson Oak's own grandkid was moving back to Alola, I knew they'd shape up to be a Pokémon Trainer!\p I'll get the other two Pokémon back into their Poké Balls, then let's show your Mom your new friend!"))
 	closemessage
 
-	copyvar(OBJ_EVENT_GFX_VAR_0, VAR_STARTER_MON)
-
 	delay(10)
 	warpcontinuescript(MAP_HAUOLI_OUTSKIRTS_PLAYERS_ROOM, 8, 11, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter)
-
-	// ALSO TODO: add player plus meowth to main menu as "default", placeholder for saves when you haven't picked a starter yet!
-	// The Meowth is just your family's lol I think that's cute
-	// Then add graphics for Meowth, Yungoos, and Starters to see how the whole New Game intro feels looking right!
 
 	releaseall
 	end

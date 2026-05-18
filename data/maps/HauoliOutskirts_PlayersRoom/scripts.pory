@@ -72,12 +72,40 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 	lockall
 	addobject(3)
 	addobject(4)
+	switch(var(VAR_STARTER_MON))
+	{
+		default:
+		case SPECIES_ROWLET:
+			clearflag(FLAG_HIDE_ROWLET_STARTERS_HOUSE)
+			addobject(LOCALID_PH_ROWLET)
+			break
+		case SPECIES_LITTEN:
+			clearflag(FLAG_HIDE_LITTEN_STARTERS_HOUSE)
+			addobject(LOCALID_PH_LITTEN)
+			break
+		case SPECIES_POPPLIO:
+			clearflag(FLAG_HIDE_POPPLIO_STARTERS_HOUSE)
+			addobject(LOCALID_PH_POPPLIO)
+			break
+	}
 	fadescreen(FADE_FROM_BLACK)
 	delay(20)
 	applymovement(3, moves(walk_up * 2, face_right, step_end))
 	applymovement(4, moves(walk_fast_up * 3, walk_fast_left * 3, jump_in_place_left * 2, face_left, step_end))
 	applymovement(LOCALID_PLAYER, moves(walk_up * 3, face_up, step_end))
-	applymovement(LOCALID_PH_FOLLOWER, moves(walk_right, walk_up * 2, face_up, step_end))
+	switch(var(VAR_STARTER_MON))
+	{
+		default:
+		case SPECIES_ROWLET:
+			applymovement(LOCALID_PH_ROWLET, moves(walk_right, walk_up * 2, face_up, step_end))
+			break
+		case SPECIES_LITTEN:
+			applymovement(LOCALID_PH_LITTEN, moves(walk_right, walk_up * 2, face_up, step_end))
+			break
+		case SPECIES_POPPLIO:
+			applymovement(LOCALID_PH_POPPLIO, moves(walk_right, walk_up * 2, face_up, step_end))
+			break
+	}
 	waitmovement(0)
 	applymovement(2, moves(face_right, emote_heart, step_end))
 	waitmovement(0)
@@ -85,7 +113,19 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 
 	emote(LOCALID_MOM, EMOTE_EXCLAM)
 	applymovement(LOCALID_PLAYER, Common_Movement_FaceDown)
-	applymovement(LOCALID_PH_FOLLOWER, Common_Movement_FaceRight)
+	switch(var(VAR_STARTER_MON))
+	{
+		default:
+		case SPECIES_ROWLET:
+			applymovement(LOCALID_PH_ROWLET, moves(face_right))
+			break
+		case SPECIES_LITTEN:
+			applymovement(LOCALID_PH_LITTEN, moves(face_right))
+			break
+		case SPECIES_POPPLIO:
+			applymovement(LOCALID_PH_POPPLIO, moves(face_right))
+			break
+	}
 	applymovement(LOCALID_MOM, moves(walk_fast_down * 4, face_left, step_end))
 	waitmovement(0)
 	setspeaker("Mom")

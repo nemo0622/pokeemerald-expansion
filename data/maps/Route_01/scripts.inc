@@ -552,12 +552,10 @@ Route_01_Script_ReactToStarter_1:
 # 350 "data//maps/Route_01/scripts.pory"
 	closemessage
 # 352 "data//maps/Route_01/scripts.pory"
-	copyvar OBJ_EVENT_GFX_VAR_0, VAR_STARTER_MON
-# 354 "data//maps/Route_01/scripts.pory"
 	delay 10
-# 355 "data//maps/Route_01/scripts.pory"
+# 353 "data//maps/Route_01/scripts.pory"
 	warpcontinuescript MAP_HAUOLI_OUTSKIRTS_PLAYERS_ROOM, 8, 11, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
-# 361 "data//maps/Route_01/scripts.pory"
+# 355 "data//maps/Route_01/scripts.pory"
 	releaseall
 	end
 

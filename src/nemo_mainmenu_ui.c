@@ -175,6 +175,7 @@ static const u32 sNemoMMTilemap[] = INCBIN_U32("graphics/nemo_main_menu_ui/newti
 static const u16 sNemoMMPalette[] = INCBIN_U16("graphics/nemo_main_menu_ui/newtiles.gbapal");
 
 // Sprite files for Trainer sprites, Z-Crystals, and Stamps
+static const u32 sPlayerMSprite_Alone[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/m_alone.4bpp.smol");
 static const u32 sPlayerMSprite_Rowlet[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/m_rowlet.4bpp.smol");
 static const u32 sPlayerMSprite_Dartrix[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/m_dartrix.4bpp.smol");
 static const u32 sPlayerMSprite_Decidueye[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/m_decidueye.4bpp.smol");
@@ -184,6 +185,7 @@ static const u32 sPlayerMSprite_Incineroar[] = INCBIN_U32("graphics/nemo_main_me
 static const u32 sPlayerMSprite_Popplio[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/m_popplio.4bpp.smol");
 static const u32 sPlayerMSprite_Brionne[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/m_brionne.4bpp.smol");
 static const u32 sPlayerMSprite_Primarina[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/m_primarina.4bpp.smol");
+static const u16 sPlayerMSprite_Alone_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/m_alone.gbapal");
 static const u16 sPlayerMSprite_Rowlet_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/m_rowlet.gbapal");
 static const u16 sPlayerMSprite_Dartrix_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/m_dartrix.gbapal");
 static const u16 sPlayerMSprite_Decidueye_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/m_decidueye.gbapal");
@@ -193,6 +195,7 @@ static const u16 sPlayerMSprite_Incineroar_Pal[] = INCBIN_U16("graphics/nemo_mai
 static const u16 sPlayerMSprite_Popplio_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/m_popplio.gbapal");
 static const u16 sPlayerMSprite_Brionne_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/m_brionne.gbapal");
 static const u16 sPlayerMSprite_Primarina_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/m_primarina.gbapal");
+static const u32 sPlayerFSprite_Alone[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/f_alone.4bpp.smol");
 static const u32 sPlayerFSprite_Rowlet[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/f_rowlet.4bpp.smol");
 static const u32 sPlayerFSprite_Dartrix[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/f_dartrix.4bpp.smol");
 static const u32 sPlayerFSprite_Decidueye[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/f_decidueye.4bpp.smol");
@@ -202,6 +205,7 @@ static const u32 sPlayerFSprite_Incineroar[] = INCBIN_U32("graphics/nemo_main_me
 static const u32 sPlayerFSprite_Popplio[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/f_popplio.4bpp.smol");
 static const u32 sPlayerFSprite_Brionne[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/f_brionne.4bpp.smol");
 static const u32 sPlayerFSprite_Primarina[] = INCBIN_U32("graphics/nemo_main_menu_ui/trainer_sprites/f_primarina.4bpp.smol");
+static const u16 sPlayerFSprite_Alone_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/f_alone.gbapal");
 static const u16 sPlayerFSprite_Rowlet_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/f_rowlet.gbapal");
 static const u16 sPlayerFSprite_Dartrix_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/f_dartrix.gbapal");
 static const u16 sPlayerFSprite_Decidueye_Pal[] = INCBIN_U16("graphics/nemo_main_menu_ui/trainer_sprites/f_decidueye.gbapal");
@@ -227,7 +231,8 @@ static const struct CompressedSpriteSheet sSpriteSheet_PlayerMSprite_Torracat = 
 static const struct CompressedSpriteSheet sSpriteSheet_PlayerMSprite_Incineroar = { .data = sPlayerMSprite_Incineroar, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
 static const struct CompressedSpriteSheet sSpriteSheet_PlayerMSprite_Popplio = { .data = sPlayerMSprite_Popplio, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
 static const struct CompressedSpriteSheet sSpriteSheet_PlayerMSprite_Brionne = { .data = sPlayerMSprite_Brionne, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
-static const struct CompressedSpriteSheet sSpriteSheet_PlayerMSprite_Primarina = { .data = sPlayerFSprite_Primarina, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
+static const struct CompressedSpriteSheet sSpriteSheet_PlayerMSprite_Primarina = { .data = sPlayerMSprite_Primarina, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
+static const struct CompressedSpriteSheet sSpriteSheet_PlayerMSprite_Alone = { .data = sPlayerMSprite_Alone, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
 static const struct CompressedSpriteSheet sSpriteSheet_PlayerFSprite_Rowlet = { .data = sPlayerFSprite_Rowlet, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
 static const struct CompressedSpriteSheet sSpriteSheet_PlayerFSprite_Dartrix = { .data = sPlayerFSprite_Dartrix, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
 static const struct CompressedSpriteSheet sSpriteSheet_PlayerFSprite_Decidueye = { .data = sPlayerFSprite_Decidueye, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
@@ -237,6 +242,7 @@ static const struct CompressedSpriteSheet sSpriteSheet_PlayerFSprite_Incineroar 
 static const struct CompressedSpriteSheet sSpriteSheet_PlayerFSprite_Popplio = { .data = sPlayerFSprite_Popplio, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
 static const struct CompressedSpriteSheet sSpriteSheet_PlayerFSprite_Brionne = { .data = sPlayerFSprite_Brionne, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
 static const struct CompressedSpriteSheet sSpriteSheet_PlayerFSprite_Primarina = { .data = sPlayerFSprite_Primarina, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
+static const struct CompressedSpriteSheet sSpriteSheet_PlayerFSprite_Alone = { .data = sPlayerFSprite_Alone, .size = 2048, .tag = TAG_TRAINER_SPRITE, };
 
 static const struct SpritePalette sSpritePal_PlayerMSprite_Rowlet = // Code-friendly reference to sprite palette
 {
@@ -250,7 +256,8 @@ static const struct SpritePalette sSpritePal_PlayerMSprite_Torracat = { .data = 
 static const struct SpritePalette sSpritePal_PlayerMSprite_Incineroar = { .data = sPlayerMSprite_Incineroar_Pal, .tag = TAG_TRAINER_SPRITE };
 static const struct SpritePalette sSpritePal_PlayerMSprite_Popplio = { .data = sPlayerMSprite_Popplio_Pal, .tag = TAG_TRAINER_SPRITE };
 static const struct SpritePalette sSpritePal_PlayerMSprite_Brionne = { .data = sPlayerMSprite_Brionne_Pal, .tag = TAG_TRAINER_SPRITE };
-static const struct SpritePalette sSpritePal_PlayerMSprite_Primarina = { .data = sPlayerFSprite_Primarina_Pal, .tag = TAG_TRAINER_SPRITE };
+static const struct SpritePalette sSpritePal_PlayerMSprite_Primarina = { .data = sPlayerMSprite_Primarina_Pal, .tag = TAG_TRAINER_SPRITE };
+static const struct SpritePalette sSpritePal_PlayerMSprite_Alone = { .data = sPlayerMSprite_Alone_Pal, .tag = TAG_TRAINER_SPRITE };
 static const struct SpritePalette sSpritePal_PlayerFSprite_Rowlet = { .data = sPlayerFSprite_Rowlet_Pal, .tag = TAG_TRAINER_SPRITE };
 static const struct SpritePalette sSpritePal_PlayerFSprite_Dartrix = { .data = sPlayerFSprite_Dartrix_Pal, .tag = TAG_TRAINER_SPRITE };
 static const struct SpritePalette sSpritePal_PlayerFSprite_Decidueye = { .data = sPlayerFSprite_Decidueye_Pal, .tag = TAG_TRAINER_SPRITE };
@@ -260,6 +267,7 @@ static const struct SpritePalette sSpritePal_PlayerFSprite_Incineroar = { .data 
 static const struct SpritePalette sSpritePal_PlayerFSprite_Popplio = { .data = sPlayerFSprite_Popplio_Pal, .tag = TAG_TRAINER_SPRITE };
 static const struct SpritePalette sSpritePal_PlayerFSprite_Brionne = { .data = sPlayerFSprite_Brionne_Pal, .tag = TAG_TRAINER_SPRITE };
 static const struct SpritePalette sSpritePal_PlayerFSprite_Primarina = { .data = sPlayerFSprite_Primarina_Pal, .tag = TAG_TRAINER_SPRITE };
+static const struct SpritePalette sSpritePal_PlayerFSprite_Alone = { .data = sPlayerFSprite_Alone_Pal, .tag = TAG_TRAINER_SPRITE };
 
 static const struct SpriteTemplate sSpriteTemplate_TrainerSprite = // Template for code to load Trainer Sprite
 {
@@ -758,8 +766,11 @@ static bool8 NemoMM_LoadGraphics(void)
         {
             switch(VarGet(VAR_STARTER_MON))
             {
-            case SPECIES_ROWLET:
             default:
+                LoadCompressedSpriteSheet(&sSpriteSheet_PlayerMSprite_Alone);
+                LoadSpritePalette(&sSpritePal_PlayerMSprite_Alone);
+                break;
+            case SPECIES_ROWLET:
                 if(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_DECIDUEYE), FLAG_GET_CAUGHT))
                 {
                     LoadCompressedSpriteSheet(&sSpriteSheet_PlayerMSprite_Decidueye);
@@ -816,8 +827,11 @@ static bool8 NemoMM_LoadGraphics(void)
         {
             switch(VarGet(VAR_STARTER_MON))
             {
-            case SPECIES_ROWLET:
             default:
+                LoadCompressedSpriteSheet(&sSpriteSheet_PlayerFSprite_Alone);
+                LoadSpritePalette(&sSpritePal_PlayerFSprite_Alone);
+                break;
+            case SPECIES_ROWLET:
                 if(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_DECIDUEYE), FLAG_GET_CAUGHT))
                 {
                     LoadCompressedSpriteSheet(&sSpriteSheet_PlayerFSprite_Decidueye);

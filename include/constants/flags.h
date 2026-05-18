@@ -784,9 +784,9 @@
 #define FLAG_HIDE_YUNGOOS_ROUTE_01                                  0x2DB // Used in Starter intro
 #define FLAG_HIDE_SAMSON_ROUTE_01                                   0x2DC // Used in Starter intro
 #define FLAG_HIDE_STARTERS_ROUTE_01                                 0x2DD // Used in Starter intro
-#define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF
-#define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING          0x2E0
+#define FLAG_HIDE_ROWLET_STARTERS_HOUSE                             0x2DE // Used in Starter intro
+#define FLAG_HIDE_LITTEN_STARTERS_HOUSE                             0x2DF // Used in Starter intro
+#define FLAG_HIDE_POPPLIO_STARTERS_HOUSE                            0x2E0 // Used in Starter intro
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE             0x2E1
 #define FLAG_HIDE_ROUTE_104_MR_BRINEY                               0x2E2
 #define FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY                           0x2E3
