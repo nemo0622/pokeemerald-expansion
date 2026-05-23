@@ -795,7 +795,7 @@ static void BattleLoadOpponentMonSpriteGfxCustom(u16 species, bool8 isFemale, bo
 static void SetConstSpriteValues(struct PokemonSpriteVisualizer *data)
 {
     u16 species = IsSpeciesEnabled(data->currentmonId) ? SanitizeSpeciesId(data->currentmonId) : SPECIES_NONE;
-    data->constSpriteValues.frontPicCoords = gSpeciesInfo[species].frontPicYOffset;
+    data->constSpriteValues.frontPicCoords = gSpeciesInfo[species].frontPicYOffset - FORCED_MON_SPRITE_OFFSET;
     data->constSpriteValues.frontElevation = gSpeciesInfo[species].enemyMonElevation;
     data->constSpriteValues.backPicCoords = gSpeciesInfo[species].backPicYOffset;
 }
@@ -828,7 +828,7 @@ static u8 GetBattlerSpriteFinal_YCustom(u16 species, s8 offset_picCoords, s8 off
     species = SanitizeSpeciesId(species);
 
     //FrontPicCoords
-    offset = gSpeciesInfo[species].frontPicYOffset + offset_picCoords;
+    offset = gSpeciesInfo[species].frontPicYOffset - FORCED_MON_SPRITE_OFFSET + offset_picCoords;
 
     //Elevation
     offset -= gSpeciesInfo[species].enemyMonElevation + offset_elevation;

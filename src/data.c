@@ -215,10 +215,31 @@ static const union AnimCmd sAnim_MonPic_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_MonPic_2[] =
+{
+    ANIMCMD_FRAME(2, 0),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_MonPic_3[] =
+{
+    ANIMCMD_FRAME(3, 0),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_MonPic_4[] =
+{
+    ANIMCMD_FRAME(4, 0),
+    ANIMCMD_END,
+};
+
 const union AnimCmd *const gAnims_MonPic[MAX_MON_PIC_FRAMES] =
 {
     sAnim_MonPic_0,
     sAnim_MonPic_1,
+    sAnim_MonPic_2,
+    sAnim_MonPic_3,
+    sAnim_MonPic_4,
 };
 
 const union AnimCmd *const gAnims_Trainer[] ={

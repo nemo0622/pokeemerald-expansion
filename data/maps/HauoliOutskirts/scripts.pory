@@ -2,4 +2,15 @@ mapscripts HauoliOutskirts_MapScripts {
 
 }
 
+script HauoliOutskirts_Script_SamsonOak
+{
+    lock
+    faceplayer
+    setspeaker("Grandpa Samson")
 
+    msgbox(format("Alola, {PLAYER}! How's your Pokémon doing?\p This is our 'Ohana memorial. I know you spent most of your childhood in Kanto, but now that you're home in Alola, you should get to know your culture.\p If you have time, you should spend a quiet moment here."))
+    
+    closemessage
+    release
+    end
+}

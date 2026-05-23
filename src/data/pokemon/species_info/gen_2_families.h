@@ -1186,10 +1186,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 48) : MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 10,
         .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
             ANIMCMD_FRAME(1, 10),
             ANIMCMD_FRAME(0, 10),
             ANIMCMD_FRAME(1, 10),
             ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(2, 20),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_JUMPS_SMALL,
         .backPic = gMonBackPic_Ledyba,
@@ -1207,7 +1210,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .backPicSizeFemale = MON_COORDS_SIZE(56, 48),
 #endif //P_GENDER_DIFFERENCES && !P_GBA_STYLE_SPECIES_GFX
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(2, 4, SHADOW_SIZE_M)
+        SHADOW(1, 1, SHADOW_SIZE_S)
         FOOTPRINT(Ledyba)
         OVERWORLD(
             sPicTable_Ledyba,
@@ -1269,10 +1272,15 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 6,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 25),
-            ANIMCMD_FRAME(0, 25),
-            ANIMCMD_FRAME(1, 25),
-            ANIMCMD_FRAME(0, 25),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(3, 30),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_SLIDE_SLOW : ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 8 : 10,

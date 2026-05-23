@@ -1186,13 +1186,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 40) : MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 16 : 12,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
             ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(3, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(3, 10),
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_SWING_CONCAVE,
@@ -1205,7 +1208,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Caterpie,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(4, 1, SHADOW_SIZE_S)
+        SHADOW(3, 0, SHADOW_SIZE_S)
         FOOTPRINT(Caterpie)
         OVERWORLD(
             sPicTable_Caterpie,
@@ -1260,7 +1263,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 32) : MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 20 : 14,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 45),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(2, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(2, 15),
+            ANIMCMD_FRAME(1, 15),
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_SWING_CONCAVE,
@@ -1273,7 +1281,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Metapod,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(3, 0, SHADOW_SIZE_S)
+        SHADOW(-1, -1, SHADOW_SIZE_S)
         FOOTPRINT(Metapod)
         OVERWORLD(
             sPicTable_Metapod,
@@ -1340,18 +1348,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 10,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 5),
-            ANIMCMD_FRAME(1, 5),
-            ANIMCMD_FRAME(0, 5),
-            ANIMCMD_FRAME(1, 5),
-            ANIMCMD_FRAME(0, 5),
-            ANIMCMD_FRAME(1, 5),
-            ANIMCMD_FRAME(0, 25),
-            ANIMCMD_FRAME(1, 5),
-            ANIMCMD_FRAME(0, 5),
-            ANIMCMD_FRAME(1, 5),
-            ANIMCMD_FRAME(0, 5),
-            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(2, 20),
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_H_SLIDE_WOBBLE : ANIM_V_SLIDE_WOBBLE,
@@ -1371,7 +1375,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
 #endif //P_GENDER_DIFFERENCES && !P_GBA_STYLE_SPECIES_GFX
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-3, 13, SHADOW_SIZE_S)
+        SHADOW(-3, 14, SHADOW_SIZE_S)
         FOOTPRINT(Butterfree)
         OVERWORLD(
             sPicTable_Butterfree,
@@ -2785,11 +2789,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 14,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 20),
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 20),
-            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(3, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(3, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_JUMPS_BIG,
         .backPic = gMonBackPic_Pichu,
@@ -2854,13 +2861,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 13,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(0, 30),
             ANIMCMD_FRAME(1, 10),
-            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(2, 10),
             ANIMCMD_FRAME(1, 10),
-            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(2, 10),
             ANIMCMD_FRAME(1, 10),
-            ANIMCMD_FRAME(0, 1),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
         .backPic = gMonBackPic_PichuSpikyEared,
@@ -2936,10 +2945,17 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 60),
-            ANIMCMD_FRAME(1, 20),
-            ANIMCMD_FRAME(0, 1),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(3, 7),
+            ANIMCMD_FRAME(2, 7),
+            ANIMCMD_FRAME(3, 7),
+            ANIMCMD_FRAME(2, 7),
+            ANIMCMD_FRAME(3, 7),
+            ANIMCMD_FRAME(2, 7),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_FLASH_YELLOW,
         .frontAnimDelay = P_GBA_STYLE_SPECIES_GFX ? 0 : 25,
@@ -2962,7 +2978,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     #endif //P_CUSTOM_GENDER_DIFF_ICONS
 #endif //P_GENDER_DIFFERENCES && !P_GBA_STYLE_SPECIES_GFX
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(-3, 5, SHADOW_SIZE_M)
+        SHADOW(-5, 1, SHADOW_SIZE_S)
         OVERWORLD(
             sPicTable_Pikachu,
             SIZE_32x32,
@@ -4030,7 +4046,19 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPic = gMonFrontPic_RaichuAlola,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(3, 7),
+            ANIMCMD_FRAME(2, 7),
+            ANIMCMD_FRAME(3, 7),
+            ANIMCMD_FRAME(2, 7),
+            ANIMCMD_FRAME(3, 7),
+            ANIMCMD_FRAME(2, 7),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 4,
         .backPic = gMonBackPic_RaichuAlola,

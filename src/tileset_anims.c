@@ -48,6 +48,7 @@ static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
 static void QueueAnimTiles_General_Waterfall(u16);
 static void QueueAnimTiles_General_LandWaterEdge(u16);
+static void QueueAnimTiles_General_Campfire(u16);
 static void QueueAnimTiles_Building_TVTurnedOn(u16);
 static void QueueAnimTiles_Rustboro_WindyWater(u16, u8);
 static void QueueAnimTiles_Rustboro_Fountain(u16);
@@ -147,6 +148,18 @@ const u16 *const gTilesetAnims_General_LandWaterEdge[] = {
     gTilesetAnims_General_LandWaterEdge_Frame1,
     gTilesetAnims_General_LandWaterEdge_Frame2,
     gTilesetAnims_General_LandWaterEdge_Frame3
+};
+
+const u16 gTilesetAnims_General_Campfire_Frame0[] = INCGFX_U16("data/tilesets/primary/general/anim/campfire/campfire_0.png", ".4bpp");
+const u16 gTilesetAnims_General_Campfire_Frame1[] = INCGFX_U16("data/tilesets/primary/general/anim/campfire/campfire_1.png", ".4bpp");
+const u16 gTilesetAnims_General_Campfire_Frame2[] = INCGFX_U16("data/tilesets/primary/general/anim/campfire/campfire_2.png", ".4bpp");
+const u16 gTilesetAnims_General_Campfire_Frame3[] = INCGFX_U16("data/tilesets/primary/general/anim/campfire/campfire_3.png", ".4bpp");
+
+const u16 *const gTilesetAnims_General_Campfire[] = {
+    gTilesetAnims_General_Campfire_Frame0,
+    gTilesetAnims_General_Campfire_Frame1,
+    gTilesetAnims_General_Campfire_Frame2,
+    gTilesetAnims_General_Campfire_Frame3
 };
 
 const u16 gTilesetAnims_Lavaridge_Steam_Frame0[] = INCGFX_U16("data/tilesets/secondary/lavaridge/anim/steam/0.png", ".4bpp");
@@ -632,7 +645,10 @@ void InitTilesetAnim_Building(void)
 static void TilesetAnim_General(u16 timer)
 {
     if (timer % 16 == 0)
+    {
         QueueAnimTiles_General_Flower(timer / 16);
+        QueueAnimTiles_General_Campfire(timer / 16);
+    }
     if (timer % 16 == 1)
         QueueAnimTiles_General_Water(timer / 16);
     if (timer % 16 == 2)
@@ -671,6 +687,12 @@ static void QueueAnimTiles_General_Waterfall(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_Waterfall);
     AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(496)), 6 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_General_Campfire(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_Campfire);
+    AppendTilesetAnimToBuffer(gTilesetAnims_General_Campfire[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(186)), 4 * TILE_SIZE_4BPP);
 }
 
 void InitTilesetAnim_Petalburg(void)

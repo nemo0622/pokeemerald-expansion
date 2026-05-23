@@ -880,8 +880,8 @@ static bool8 ShowPartyMenu(void)
         gMain.state++;
         break;
     case 17:
-        if (gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE
-            && gPartyMenu.menuType != PARTY_MENU_TYPE_MULTI_SHOWCASE
+        if (/*gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE
+            &&*/ gPartyMenu.menuType != PARTY_MENU_TYPE_MULTI_SHOWCASE
             && gPartyMenu.slotId < gPlayerPartyCount
             && GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_SPECIES) != SPECIES_NONE)
         {
@@ -897,8 +897,8 @@ static bool8 ShowPartyMenu(void)
         gMain.state++;
         break;
     case 19:
-        if (gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE
-            && gPartyMenu.menuType != PARTY_MENU_TYPE_MULTI_SHOWCASE
+        if (/*gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE
+            &&*/ gPartyMenu.menuType != PARTY_MENU_TYPE_MULTI_SHOWCASE
             && gPartyMenu.slotId < gPlayerPartyCount
             && GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_SPECIES) != SPECIES_NONE)
         {
@@ -1013,8 +1013,8 @@ static bool8 ReloadPartyMenu(void)
         gMain.state++;
         break;
     case 14:
-        if (gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE
-            && gPartyMenu.menuType != PARTY_MENU_TYPE_MULTI_SHOWCASE
+        if (/*gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE
+            &&*/ gPartyMenu.menuType != PARTY_MENU_TYPE_MULTI_SHOWCASE
             && gPartyMenu.slotId < gPlayerPartyCount
             && GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_SPECIES) != SPECIES_NONE)
         {
@@ -1030,8 +1030,8 @@ static bool8 ReloadPartyMenu(void)
         gMain.state++;
         break;
     case 16:
-        if (gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE
-            && gPartyMenu.menuType != PARTY_MENU_TYPE_MULTI_SHOWCASE
+        if (/*gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE
+            &&*/ gPartyMenu.menuType != PARTY_MENU_TYPE_MULTI_SHOWCASE
             && gPartyMenu.slotId < gPlayerPartyCount
             && GetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_SPECIES) != SPECIES_NONE)
         {
@@ -1393,6 +1393,8 @@ static void UpdatePartyMoveWindows(u8 slot)
 
     if (gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE)
         return;
+
+    return;
 
     DestroyMoveTypeSprites();
     for (m = 0; m < MAX_MON_MOVES; ++m)
@@ -2239,8 +2241,8 @@ static void UpdatePartyMonSprite(u8 slotId)
     s16 state;
     u8 spriteId;
 
-    if (gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE
-        && gPartyMenu.menuType != PARTY_MENU_TYPE_MULTI_SHOWCASE
+    if (/*gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE
+        &&*/ gPartyMenu.menuType != PARTY_MENU_TYPE_MULTI_SHOWCASE
         && slotId < gPlayerPartyCount
         && GetMonData(&gPlayerParty[slotId], MON_DATA_SPECIES) != SPECIES_NONE)
     {
@@ -2830,26 +2832,26 @@ static void LoadPartyMenuWindows(void)
     LoadPalette(GetOverworldTextboxPalettePtr(), BG_PLTT_ID(14), PLTT_SIZE_4BPP);
     LoadPalette(gStandardMenuPalette, BG_PLTT_ID(15), PLTT_SIZE_4BPP);
 
-    if (gPartyMenu.menuType == PARTY_MENU_TYPE_IN_BATTLE)
-    {
-        int i;
-        for (i = 0; i < MAX_MON_MOVES; ++i)
-        {
-            sMoveWindowIds[i] = AddWindow(&sMoveInfoWindowTemplate_SwSh[i]);
-            if (sMoveWindowIds[i] != WINDOW_NONE)
-            {
-                FillWindowPixelBuffer(sMoveWindowIds[i], PIXEL_FILL(0));
-                PutWindowTilemap(sMoveWindowIds[i]);
-                CopyWindowToVram(sMoveWindowIds[i], COPYWIN_GFX);
-            }
-        }
-        sAbilityWindowId = AddWindow(&sAbilityInfoWindowTemplate);
-        if (sAbilityWindowId != WINDOW_NONE)
-        {
-            PutWindowTilemap(sAbilityWindowId);
-            DisplayPartyPokemonAbility(sAbilityWindowId, gPartyMenu.slotId);
-        }
-    }
+    // if (gPartyMenu.menuType == PARTY_MENU_TYPE_IN_BATTLE)
+    // {
+    //     int i;
+    //     for (i = 0; i < MAX_MON_MOVES; ++i)
+    //     {
+    //         sMoveWindowIds[i] = AddWindow(&sMoveInfoWindowTemplate_SwSh[i]);
+    //         if (sMoveWindowIds[i] != WINDOW_NONE)
+    //         {
+    //             FillWindowPixelBuffer(sMoveWindowIds[i], PIXEL_FILL(0));
+    //             PutWindowTilemap(sMoveWindowIds[i]);
+    //             CopyWindowToVram(sMoveWindowIds[i], COPYWIN_GFX);
+    //         }
+    //     }
+    //     sAbilityWindowId = AddWindow(&sAbilityInfoWindowTemplate);
+    //     if (sAbilityWindowId != WINDOW_NONE)
+    //     {
+    //         PutWindowTilemap(sAbilityWindowId);
+    //         DisplayPartyPokemonAbility(sAbilityWindowId, gPartyMenu.slotId);
+    //     }
+    // }
 }
 
 static void PrintButtonIcon(u8 windowId, u8 buttonType, u32 x, u32 y)

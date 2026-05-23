@@ -1132,7 +1132,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_RaichuAlola[] = INCGFX_U32("graphics/pokemon/raichu/alola/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_RaichuAlola[] = INCGFX_U32("graphics/pokemon/raichu/alola/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_RaichuAlola[] = INCGFX_U16("graphics/pokemon/raichu/alola/normal.pal", ".gbapal");
     const u32 gMonBackPic_RaichuAlola[] = INCGFX_U32("graphics/pokemon/raichu/alola/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_RaichuAlola[] = INCGFX_U16("graphics/pokemon/raichu/alola/shiny.pal", ".gbapal");
@@ -21450,7 +21450,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_ROWLET
 
 #if P_FAMILY_LITTEN
-    const u32 gMonFrontPic_Litten[] = INCGFX_U32("graphics/pokemon/litten/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Litten[] = INCGFX_U32("graphics/pokemon/litten/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Litten[] = INCGFX_U16("graphics/pokemon/litten/normal.pal", ".gbapal");
     const u32 gMonBackPic_Litten[] = INCGFX_U32("graphics/pokemon/litten/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Litten[] = INCGFX_U16("graphics/pokemon/litten/shiny.pal", ".gbapal");
@@ -21500,7 +21500,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_LITTEN
 
 #if P_FAMILY_POPPLIO
-    const u32 gMonFrontPic_Popplio[] = INCGFX_U32("graphics/pokemon/popplio/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Popplio[] = INCGFX_U32("graphics/pokemon/popplio/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Popplio[] = INCGFX_U16("graphics/pokemon/popplio/normal.pal", ".gbapal");
     const u32 gMonBackPic_Popplio[] = INCGFX_U32("graphics/pokemon/popplio/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Popplio[] = INCGFX_U16("graphics/pokemon/popplio/shiny.pal", ".gbapal");

@@ -20,6 +20,7 @@
 
 #define GET_BASE_SPECIES_ID(speciesId) (GetFormSpeciesId(speciesId, 0))
 #define FORM_SPECIES_END (0xffff)
+#define FORCED_MON_SPRITE_OFFSET 8 // Amount to force move front Pokémon sprites up in battle
 
 // Property labels for Get(Box)MonData / Set(Box)MonData
 enum MonData {

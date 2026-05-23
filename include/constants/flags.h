@@ -787,7 +787,7 @@
 #define FLAG_HIDE_ROWLET_STARTERS_HOUSE                             0x2DE // Used in Starter intro
 #define FLAG_HIDE_LITTEN_STARTERS_HOUSE                             0x2DF // Used in Starter intro
 #define FLAG_HIDE_POPPLIO_STARTERS_HOUSE                            0x2E0 // Used in Starter intro
-#define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE             0x2E1
+#define FLAG_HIDE_SAMSON_HAUOLI_OUTSKIRTS                           0x2E1 // Hides Samson during opening
 #define FLAG_HIDE_ROUTE_104_MR_BRINEY                               0x2E2
 #define FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY                           0x2E3
 #define FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN                            0x2E4

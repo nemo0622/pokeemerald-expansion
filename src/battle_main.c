@@ -2754,7 +2754,7 @@ void SpriteCB_FaintOpponentMon(struct Sprite *sprite)
     species = SanitizeSpeciesId(species);
     if (species == SPECIES_UNOWN)
         species = GetUnownSpeciesId(personality);
-    yOffset = gSpeciesInfo[species].frontPicYOffset;
+    yOffset = gSpeciesInfo[species].frontPicYOffset - FORCED_MON_SPRITE_OFFSET;
 
     sprite->data[3] = 8 - yOffset / 8;
     sprite->data[4] = 1;

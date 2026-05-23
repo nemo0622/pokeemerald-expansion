@@ -19,6 +19,8 @@ The biggest props go to the Pokémon Emerald Expansion Team, who continue to dev
 Feature Branches:
 - RavePossum: BW-style Summary Screen
 - Montblanc: SWSH-style Party Menu
+- Wiz1989: Emulator Accuracy Check
+- Nico: Battle UI Components & code reference
 
 Sprites:
 - LuigiTKO: Party Menu sprites!

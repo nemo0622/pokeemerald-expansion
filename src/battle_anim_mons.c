@@ -164,7 +164,7 @@ u8 GetBattlerYDelta(enum BattlerId battler, u16 species)
     if (IsOnPlayerSide(battler) || IsContest())
         ret = gSpeciesInfo[species].backPicYOffset;
     else
-        ret = gSpeciesInfo[species].frontPicYOffset;
+        ret = gSpeciesInfo[species].frontPicYOffset - FORCED_MON_SPRITE_OFFSET;
     return ret;
 }
 
@@ -1886,7 +1886,7 @@ static u16 GetBattlerYDeltaFromSpriteId(u8 spriteId)
                 if (IsOnPlayerSide(i))
                     return gSpeciesInfo[species].backPicYOffset;
                 else
-                    return gSpeciesInfo[species].frontPicYOffset;
+                    return gSpeciesInfo[species].frontPicYOffset - FORCED_MON_SPRITE_OFFSET;
             }
         }
     }
@@ -2062,7 +2062,7 @@ u8 CreateAdditionalMonSpriteForMoveAnim(u16 species, bool8 isBackpic, u8 id, s16
     FREE_AND_SET_NULL(gMonSpritesGfxPtr->buffer);
 
     if (!isBackpic)
-        spriteId = CreateSprite(&sSpriteTemplates_MoveEffectMons[id], x, y + gSpeciesInfo[species].frontPicYOffset, subpriority);
+        spriteId = CreateSprite(&sSpriteTemplates_MoveEffectMons[id], x, y + gSpeciesInfo[species].frontPicYOffset - FORCED_MON_SPRITE_OFFSET, subpriority);
     else
         spriteId = CreateSprite(&sSpriteTemplates_MoveEffectMons[id], x, y + gSpeciesInfo[species].backPicYOffset, subpriority);
 
@@ -2146,7 +2146,7 @@ s16 GetBattlerSpriteCoordAttr(enum BattlerId battler, u8 attr)
         #endif
                 size = gSpeciesInfo[species].frontPicSize;
 
-            y_offset = gSpeciesInfo[species].frontPicYOffset;
+            y_offset = gSpeciesInfo[species].frontPicYOffset - FORCED_MON_SPRITE_OFFSET;
         }
     }
 
