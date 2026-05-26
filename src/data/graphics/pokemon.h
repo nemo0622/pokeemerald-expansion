@@ -748,7 +748,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_RattataAlola[] = INCGFX_U32("graphics/pokemon/rattata/alola/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_RattataAlola[] = INCGFX_U32("graphics/pokemon/rattata/alola/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_RattataAlola[] = INCGFX_U16("graphics/pokemon/rattata/alola/normal.pal", ".gbapal");
     const u32 gMonBackPic_RattataAlola[] = INCGFX_U32("graphics/pokemon/rattata/alola/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_RattataAlola[] = INCGFX_U16("graphics/pokemon/rattata/alola/shiny.pal", ".gbapal");
@@ -17789,7 +17789,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_ZoruaHisui[] = INCGFX_U32("graphics/pokemon/zorua/hisui/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_ZoruaHisui[] = INCGFX_U32("graphics/pokemon/zorua/hisui/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_ZoruaHisui[] = INCGFX_U16("graphics/pokemon/zorua/hisui/normal.pal", ".gbapal");
     const u32 gMonBackPic_ZoruaHisui[] = INCGFX_U32("graphics/pokemon/zorua/hisui/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_ZoruaHisui[] = INCGFX_U16("graphics/pokemon/zorua/hisui/shiny.pal", ".gbapal");
@@ -17802,7 +17802,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_ZoroarkHisui[] = INCGFX_U32("graphics/pokemon/zoroark/hisui/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_ZoroarkHisui[] = INCGFX_U32("graphics/pokemon/zoroark/hisui/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_ZoroarkHisui[] = INCGFX_U16("graphics/pokemon/zoroark/hisui/normal.pal", ".gbapal");
     const u32 gMonBackPic_ZoroarkHisui[] = INCGFX_U32("graphics/pokemon/zoroark/hisui/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_ZoroarkHisui[] = INCGFX_U16("graphics/pokemon/zoroark/hisui/shiny.pal", ".gbapal");
@@ -21600,7 +21600,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_PIKIPEK
 
 #if P_FAMILY_YUNGOOS
-    const u32 gMonFrontPic_Yungoos[] = INCGFX_U32("graphics/pokemon/yungoos/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Yungoos[] = INCGFX_U32("graphics/pokemon/yungoos/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Yungoos[] = INCGFX_U16("graphics/pokemon/yungoos/normal.pal", ".gbapal");
     const u32 gMonBackPic_Yungoos[] = INCGFX_U32("graphics/pokemon/yungoos/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Yungoos[] = INCGFX_U16("graphics/pokemon/yungoos/shiny.pal", ".gbapal");
@@ -21616,7 +21616,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Gumshoos[] = INCGFX_U32("graphics/pokemon/gumshoos/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Gumshoos[] = INCGFX_U32("graphics/pokemon/gumshoos/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Gumshoos[] = INCGFX_U16("graphics/pokemon/gumshoos/normal.pal", ".gbapal");
     const u32 gMonBackPic_Gumshoos[] = INCGFX_U32("graphics/pokemon/gumshoos/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Gumshoos[] = INCGFX_U16("graphics/pokemon/gumshoos/shiny.pal", ".gbapal");
@@ -26396,7 +26396,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_VAROOM
 
 #if P_FAMILY_CYCLIZAR
-    const u32 gMonFrontPic_Cyclizar[] = INCGFX_U32("graphics/pokemon/cyclizar/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Cyclizar[] = INCGFX_U32("graphics/pokemon/cyclizar/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Cyclizar[] = INCGFX_U16("graphics/pokemon/cyclizar/normal.pal", ".gbapal");
     const u32 gMonBackPic_Cyclizar[] = INCGFX_U32("graphics/pokemon/cyclizar/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Cyclizar[] = INCGFX_U16("graphics/pokemon/cyclizar/shiny.pal", ".gbapal");

@@ -1,27 +1,18 @@
 {
   "group_order": [
     "gMapGroup_TownsAndRoutes",
-    "gMapGroup_IndoorLittleroot",
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
     "gMapGroup_IndoorHauoliOutskirts"
   ],
   "gMapGroup_TownsAndRoutes": [
-    "LittlerootTown",
     "HauoliOutskirts",
     "Route_01",
     "IkiTown",
     "AlolaLeo_Road",
     "HauoliShoppingDistrict",
     "HauoliBeachfront"
-  ],
-  "gMapGroup_IndoorLittleroot": [
-    "LittlerootTown_BrendansHouse_1F",
-    "LittlerootTown_BrendansHouse_2F",
-    "LittlerootTown_MaysHouse_1F",
-    "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab"
   ],
   "gMapGroup_Dungeons": [
     "FieryPath"
@@ -53,7 +44,6 @@
     "SecretBase_Shrub4",
     "BattleColosseum_2P",
     "TradeCenter",
-    "RecordCorner",
     "BattleColosseum_4P",
     "ContestHall",
     "ContestHallBeauty",
@@ -61,7 +51,6 @@
     "ContestHallCool",
     "ContestHallSmart",
     "ContestHallCute",
-    "InsideOfTruck",
     "BattlePyramidSquare01",
     "BattlePyramidSquare02",
     "BattlePyramidSquare03",

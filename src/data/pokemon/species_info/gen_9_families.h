@@ -4456,8 +4456,24 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Cyclizar,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontPicYOffset = 5,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(2, 6),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(2, 6),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(2, 6),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(2, 6),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 25),
+            ANIMCMD_FRAME(3, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(3, 10),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Cyclizar,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -4468,7 +4484,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Cyclizar,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-1, 9, SHADOW_SIZE_M)
+        SHADOW(3, 6, SHADOW_SIZE_M)
         FOOTPRINT(Cyclizar)
         OVERWORLD(
             sPicTable_Cyclizar,

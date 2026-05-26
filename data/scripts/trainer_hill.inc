@@ -37,7 +37,7 @@ TrainerHill_1F_EventScript_DummyWarpToEntranceCounter::
 
 @ Never reached
 TrainerHill_1F_EventScript_WarpSilentToEntranceCounter::
-	warpsilent MAP_LITTLEROOT_TOWN, 9, 6 @ Placeholder
+	warpsilent MAP_HAUOLI_OUTSKIRTS, 9, 6 @ Placeholder
 	waitstate
 	end
 
@@ -49,7 +49,7 @@ TrainerHill_1F_EventScript_Lost::
 
 TrainerHill_EventScript_WarpToEntranceCounter::
 	setvar VAR_TEMP_1, 0
-	warp MAP_LITTLEROOT_TOWN, 9, 6 @ Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 9, 6 @ Placeholder
 	waitstate
 	end
 

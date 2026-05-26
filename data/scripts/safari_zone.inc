@@ -1,13 +1,13 @@
 SafariZone_EventScript_OutOfBallsMidBattle::
 	setvar VAR_SAFARI_ZONE_STATE, 1
 	special ExitSafariMode
-	setwarp MAP_LITTLEROOT_TOWN, 2, 5 @ Placeholder
+	setwarp MAP_HAUOLI_OUTSKIRTS, 2, 5 @ Placeholder
 	end
 
 SafariZone_EventScript_Exit::
 	setvar VAR_SAFARI_ZONE_STATE, 1
 	special ExitSafariMode
-	warp MAP_LITTLEROOT_TOWN, 2, 5 @ Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 2, 5 @ Placeholder
 	waitstate
 	end
 

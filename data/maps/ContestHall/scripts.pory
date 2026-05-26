@@ -70,7 +70,7 @@ ContestHall_EventScript_Contest::
 
 ContestHall_EventScript_SetContestObjects::
 	special LoadLinkContestPlayerPalettes
-	hideobjectat LOCALID_PLAYER, MAP_LITTLEROOT_TOWN
+	// hideobjectat LOCALID_PLAYER, MAP_HAUOLI_OUTSKIRTS
 	call ContestHall_EventScript_CreateAudience
 	end
 
@@ -411,27 +411,27 @@ ContestHall_EventScript_SetExitWarp::
 	return
 
 ContestHall_EventScript_SetExitWarpNormalContest::
-	warp MAP_LITTLEROOT_TOWN, 14, 4 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 14, 4 @Placeholder
 	waitstate
 	end
 
 ContestHall_EventScript_SetExitWarpSuperContest::
-	warp MAP_LITTLEROOT_TOWN, 14, 4 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 14, 4 @Placeholder
 	waitstate
 	end
 
 ContestHall_EventScript_SetExitWarpHyperContest::
-	warp MAP_LITTLEROOT_TOWN, 14, 4 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 14, 4 @Placeholder
 	waitstate
 	end
 
 ContestHall_EventScript_SetExitWarpMasterContest::
-	warp MAP_LITTLEROOT_TOWN, 14, 4 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 14, 4 @Placeholder
 	waitstate
 	end
 
 ContestHall_EventScript_SetExitWarpLinkContest::
-	warp MAP_LITTLEROOT_TOWN, 14, 4 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 14, 4 @Placeholder
 	waitstate
 	end
 

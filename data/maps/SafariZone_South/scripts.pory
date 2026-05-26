@@ -91,7 +91,7 @@ SafariZone_South_EventScript_ExitEarlyEast::
 SafariZone_South_EventScript_Exit::
 	setvar VAR_SAFARI_ZONE_STATE, 1
 	special ExitSafariMode
-	warpdoor MAP_LITTLEROOT_TOWN, 2, 5 @ Placeholder
+	warpdoor MAP_HAUOLI_OUTSKIRTS, 2, 5 @ Placeholder
 	waitstate
 	end
 

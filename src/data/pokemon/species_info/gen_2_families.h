@@ -2573,13 +2573,19 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Bonsly,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
-        .frontPicYOffset = 9,
+        .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 10),
-            ANIMCMD_FRAME(1, 25),
-            ANIMCMD_FRAME(0, 10),
-            ANIMCMD_FRAME(1, 20),
-            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(3, 8),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(3, 8),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(2, 15),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
         .backPic = gMonBackPic_Bonsly,
@@ -2591,7 +2597,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_Bonsly,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(-3, 4, SHADOW_SIZE_S)
+        SHADOW(0, 6, SHADOW_SIZE_S)
         FOOTPRINT(Bonsly)
         OVERWORLD(
             sPicTable_Bonsly,
@@ -2645,14 +2651,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Sudowoodo,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 6 : 7,
+        .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_H_SLIDE_SLOW,
         .backPic = gMonBackPic_Sudowoodo,
@@ -2969,9 +2974,20 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Aipom,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 64) : MON_COORDS_SIZE(32, 64),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 3 : 1,
+        .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 35),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(3, 15),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(3, 15),
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
@@ -2990,7 +3006,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
 #endif //P_GENDER_DIFFERENCES && !P_GBA_STYLE_SPECIES_GFX
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-1, 12, SHADOW_SIZE_S)
+        SHADOW(-3, 0, SHADOW_SIZE_S)
         FOOTPRINT(Aipom)
         OVERWORLD(
             sPicTable_Aipom,
@@ -3053,11 +3069,21 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Ambipom,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 1,
+        .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 10),
-            ANIMCMD_FRAME(1, 25),
             ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_BACK_AND_LUNGE,
         .backPic = gMonBackPic_Ambipom,
@@ -3075,7 +3101,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
 #endif //P_GENDER_DIFFERENCES && !P_GBA_STYLE_SPECIES_GFX
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-1, 13, SHADOW_SIZE_S)
+        SHADOW(-1, 5, SHADOW_SIZE_S)
         FOOTPRINT(Ambipom)
         OVERWORLD(
             sPicTable_Ambipom,

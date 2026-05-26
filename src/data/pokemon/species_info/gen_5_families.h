@@ -6759,11 +6759,17 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(3, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(3, 8),
+            ANIMCMD_FRAME(2, 8),
             ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_CIRCULAR_VIBRATE,
         .backPic = gMonBackPic_Zorua,
@@ -6831,11 +6837,16 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 10),
-            ANIMCMD_FRAME(1, 18),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 8),
             ANIMCMD_FRAME(0, 8),
             ANIMCMD_FRAME(1, 8),
-            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(3, 25),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(3, 25),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_FLICKER_INCREASING,
         .backPic = gMonBackPic_Zoroark,
@@ -6847,7 +6858,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .iconSprite = gMonIcon_Zoroark,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(1, 8, SHADOW_SIZE_L)
+        SHADOW(5, 8, SHADOW_SIZE_M)
         FOOTPRINT(Zoroark)
         OVERWORLD(
             sPicTable_Zoroark,
@@ -6900,8 +6911,19 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_ZoruaHisui,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
-        .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontPicYOffset = 5,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_ZoruaHisui,
         .backPicSize = MON_COORDS_SIZE(56, 64),
@@ -6912,7 +6934,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .iconSprite = gMonIcon_ZoruaHisui,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(2, 12, SHADOW_SIZE_S)
+        SHADOW(0, 5, SHADOW_SIZE_S)
         FOOTPRINT(Zorua)
         OVERWORLD(
             sPicTable_ZoruaHisui,
@@ -6968,8 +6990,16 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .trainerOffset = 1,
         .frontPic = gMonFrontPic_ZoroarkHisui,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_ZoroarkHisui,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -6980,7 +7010,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .iconSprite = gMonIcon_ZoroarkHisui,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(11, 13, SHADOW_SIZE_L)
+        SHADOW(7, 13, SHADOW_SIZE_M)
         FOOTPRINT(Zoroark)
         OVERWORLD(
             sPicTable_ZoroarkHisui,

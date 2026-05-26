@@ -185,7 +185,7 @@ SafariZone_South_EventScript_Exit::
 # 93 "data//maps/SafariZone_South/scripts.pory"
 	special ExitSafariMode
 # 94 "data//maps/SafariZone_South/scripts.pory"
-	warpdoor MAP_LITTLEROOT_TOWN, 2, 5 @ Placeholder
+	warpdoor MAP_HAUOLI_OUTSKIRTS, 2, 5 @ Placeholder
 # 95 "data//maps/SafariZone_South/scripts.pory"
 	waitstate
 # 96 "data//maps/SafariZone_South/scripts.pory"

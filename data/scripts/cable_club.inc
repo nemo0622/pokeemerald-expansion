@@ -1,14 +1,14 @@
 CableClub_OnTransition:
-	call CableClub_EventScript_HideOrShowMysteryGiftMan
+@	call CableClub_EventScript_HideOrShowMysteryGiftMan
 	end
 
-CableClub_EventScript_HideOrShowMysteryGiftMan::
-	specialvar VAR_RESULT, ShouldDistributeEonTicket
-	goto_if_eq VAR_RESULT, TRUE, CableClub_EventScript_ShowMysteryGiftMan
-	specialvar VAR_RESULT, ValidateSavedWonderCard
-	goto_if_eq VAR_RESULT, FALSE, CableClub_EventScript_HideMysteryGiftMan
-	goto CableClub_EventScript_ShowMysteryGiftMan
-	end
+@CableClub_EventScript_HideOrShowMysteryGiftMan::
+@	specialvar VAR_RESULT, ShouldDistributeEonTicket
+@	goto_if_eq VAR_RESULT, TRUE, CableClub_EventScript_ShowMysteryGiftMan
+@	specialvar VAR_RESULT, ValidateSavedWonderCard
+@	goto_if_eq VAR_RESULT, FALSE, CableClub_EventScript_HideMysteryGiftMan
+@	goto CableClub_EventScript_ShowMysteryGiftMan
+@	end
 
 CableClub_EventScript_ShowMysteryGiftMan::
 	clearflag FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN
@@ -423,7 +423,7 @@ CableClub_EventScript_TradeCenter::
 	special TryTradeLinkup
 	waitstate
 	goto_if_eq VAR_RESULT, LINKUP_SUCCESS, CableClub_EventScript_EnterTradeCenter
-	goto_if_eq VAR_RESULT, LINKUP_SOMEONE_NOT_READY, CableClub_EventScript_AbortLinkSomeoneNotReady
+@	goto_if_eq VAR_RESULT, LINKUP_SOMEONE_NOT_READY, CableClub_EventScript_AbortLinkSomeoneNotReady
 	goto_if_eq VAR_RESULT, LINKUP_DIFF_SELECTIONS, CableClub_EventScript_AbortLinkDifferentSelections
 	goto_if_eq VAR_RESULT, LINKUP_WRONG_NUM_PLAYERS, CableClub_EventScript_AbortLinkIncorrectNumberOfParticipants
 	goto_if_eq VAR_RESULT, LINKUP_FAILED, CableClub_EventScript_AbortLink
@@ -494,7 +494,7 @@ CableClub_EventScript_RecordCorner::
 	goto_if_eq VAR_RESULT, LINKUP_DIFF_SELECTIONS, CableClub_EventScript_AbortLinkDifferentSelections
 	goto_if_eq VAR_RESULT, LINKUP_WRONG_NUM_PLAYERS, CableClub_EventScript_AbortLinkIncorrectNumberOfParticipants
 	goto_if_eq VAR_RESULT, LINKUP_FAILED, CableClub_EventScript_AbortLink
-	goto_if_eq VAR_RESULT, LINKUP_CONNECTION_ERROR, CableClub_EventScript_AbortLinkConnectionError
+@	goto_if_eq VAR_RESULT, LINKUP_CONNECTION_ERROR, CableClub_EventScript_AbortLinkConnectionError
 	end
 
 CableClub_EventScript_EnterRecordCorner::
@@ -520,7 +520,7 @@ CableClub_EventScript_EnterRecordCorner::
 	waitdooranim
 	release
 	special SetCableClubWarp
-	setwarp MAP_RECORD_CORNER, 8, 9
+	setwarp MAP_HAUOLI_OUTSKIRTS, 8, 9 @Placeholder
 	special DoCableClubWarp
 	waitstate
 	end
@@ -575,7 +575,7 @@ CableClub_EventScript_CableClubWarp::
 	end
 
 CableClub_EventScript_AbortLinkIncorrectNumberOfParticipants::
-	special CloseLink
+@	special CloseLink
 	msgbox CableClub_Text_IncorrectNumberOfParticipants, MSGBOX_DEFAULT
 	release
 	end

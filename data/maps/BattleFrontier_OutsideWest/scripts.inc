@@ -79,7 +79,7 @@ BattleFrontier_OutsideWest_EventScript_FerryToSlateport::
 # 40 "data//maps/BattleFrontier_OutsideWest/scripts.pory"
 	call BattleFrontier_OutsideWest_EventScript_BoardFerry
 # 41 "data//maps/BattleFrontier_OutsideWest/scripts.pory"
-	warp MAP_LITTLEROOT_TOWN, 8, 11 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 8, 11 @Placeholder
 # 42 "data//maps/BattleFrontier_OutsideWest/scripts.pory"
 	waitstate
 # 43 "data//maps/BattleFrontier_OutsideWest/scripts.pory"
@@ -99,7 +99,7 @@ BattleFrontier_OutsideWest_EventScript_FerryToLilycove::
 # 50 "data//maps/BattleFrontier_OutsideWest/scripts.pory"
 	call BattleFrontier_OutsideWest_EventScript_BoardFerry
 # 51 "data//maps/BattleFrontier_OutsideWest/scripts.pory"
-	warp MAP_LITTLEROOT_TOWN, 8, 11 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 8, 11 @Placeholder
 # 52 "data//maps/BattleFrontier_OutsideWest/scripts.pory"
 	waitstate
 # 53 "data//maps/BattleFrontier_OutsideWest/scripts.pory"

@@ -143,7 +143,7 @@ ContestHall_EventScript_SetContestObjects::
 # 72 "data//maps/ContestHall/scripts.pory"
 	special LoadLinkContestPlayerPalettes
 # 73 "data//maps/ContestHall/scripts.pory"
-	hideobjectat LOCALID_PLAYER, MAP_LITTLEROOT_TOWN
+	// hideobjectat LOCALID_PLAYER, MAP_HAUOLI_OUTSKIRTS
 # 74 "data//maps/ContestHall/scripts.pory"
 	call ContestHall_EventScript_CreateAudience
 # 75 "data//maps/ContestHall/scripts.pory"
@@ -825,7 +825,7 @@ ContestHall_EventScript_SetExitWarp::
 # 413 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_SetExitWarpNormalContest::
 # 414 "data//maps/ContestHall/scripts.pory"
-	warp MAP_LITTLEROOT_TOWN, 14, 4 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 14, 4 @Placeholder
 # 415 "data//maps/ContestHall/scripts.pory"
 	waitstate
 # 416 "data//maps/ContestHall/scripts.pory"
@@ -835,7 +835,7 @@ ContestHall_EventScript_SetExitWarpNormalContest::
 # 418 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_SetExitWarpSuperContest::
 # 419 "data//maps/ContestHall/scripts.pory"
-	warp MAP_LITTLEROOT_TOWN, 14, 4 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 14, 4 @Placeholder
 # 420 "data//maps/ContestHall/scripts.pory"
 	waitstate
 # 421 "data//maps/ContestHall/scripts.pory"
@@ -845,7 +845,7 @@ ContestHall_EventScript_SetExitWarpSuperContest::
 # 423 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_SetExitWarpHyperContest::
 # 424 "data//maps/ContestHall/scripts.pory"
-	warp MAP_LITTLEROOT_TOWN, 14, 4 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 14, 4 @Placeholder
 # 425 "data//maps/ContestHall/scripts.pory"
 	waitstate
 # 426 "data//maps/ContestHall/scripts.pory"
@@ -855,7 +855,7 @@ ContestHall_EventScript_SetExitWarpHyperContest::
 # 428 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_SetExitWarpMasterContest::
 # 429 "data//maps/ContestHall/scripts.pory"
-	warp MAP_LITTLEROOT_TOWN, 14, 4 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 14, 4 @Placeholder
 # 430 "data//maps/ContestHall/scripts.pory"
 	waitstate
 # 431 "data//maps/ContestHall/scripts.pory"
@@ -865,7 +865,7 @@ ContestHall_EventScript_SetExitWarpMasterContest::
 # 433 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_SetExitWarpLinkContest::
 # 434 "data//maps/ContestHall/scripts.pory"
-	warp MAP_LITTLEROOT_TOWN, 14, 4 @Placeholder
+	warp MAP_HAUOLI_OUTSKIRTS, 14, 4 @Placeholder
 # 435 "data//maps/ContestHall/scripts.pory"
 	waitstate
 # 436 "data//maps/ContestHall/scripts.pory"
