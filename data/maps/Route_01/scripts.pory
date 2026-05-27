@@ -2,6 +2,8 @@ mapscripts Route_01_MapScripts {
 
 }
 
+// -------------------------------------- Cutscene Functions ---------------------------------------
+
 script Route_01_Trigger_YungoosEncounter_Left
 {
 	lockall
@@ -353,5 +355,20 @@ script Route_01_Script_ReactToStarter
 	warpcontinuescript(MAP_HAUOLI_OUTSKIRTS_PLAYERS_ROOM, 8, 11, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter)
 
 	releaseall
+	end
+}
+
+// --------------------------------------- NPC Scripts --------------------------------------------
+
+script Route_01_Script_SchoolBoyOliver
+{
+	trainerbattle_single(TRAINER_SCHOOL_BOY_OLIVER, 
+	format("Our eyes met! Now we have to battle!"), 
+	format("Aw..."))
+
+	setspeaker("School Boy Oliver")
+	msgbox(format("You're a real good Trainer. I wanna be like you!"))
+	closemessage
+	release
 	end
 }

@@ -2,15 +2,121 @@ mapscripts HauoliOutskirts_MapScripts {
 
 }
 
+// -------------------------------- Trigger Scripts ------------------------------------
+script HauoliOutskirts_Trigger_SightseerMBlocksWest
+{
+    lock
+    applymovement(4, Common_Movement_FaceLeft)
+    waitmovement(0)
+    emote(4, EMOTE_EXCLAM)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+
+    applymovement(4, moves(walk_in_place_left * 2, step_end))
+    waitmovement(0)
+    setspeaker("Sightseer")
+    msgbox(format("Hey- er, Alola! This way leads to Hau'oli City, past the Alola Leo Pokémon School.\p There are some wild Pokémon running loose outside the school. I wouldn't go unless I had some stronger Pokémon with me... That's why I'm waiting for my fiancée to come back!"))
+    closemessage
+    delay(10)
+
+    applymovement(LOCALID_PLAYER, moves(walk_right, step_end))
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliOutskirts_Trigger_SightseerMBlockSouth
+{
+    lock
+    applymovement(4, Common_Movement_FaceDown)
+    waitmovement(0)
+    emote(4, EMOTE_EXCLAM)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    applymovement(4, moves(walk_in_place_down * 2, step_end))
+    waitmovement(0)
+    setspeaker("Sightseer")
+    msgbox(format("Hey- er, Alola! That way leads to Professor Kukui's Lab and Ten Carat Hill.\p I saw some wild Pokémon in that grass. I wouldn't go unless I had some stronger Pokémon with me... That's why I'm waiting for my fiancée to come back!"))
+    closemessage
+    delay(10)
+
+    applymovement(LOCALID_PLAYER, moves(walk_up, step_end))
+    waitmovement(0)
+    release
+    end
+}
+
+// ----------------------------- NPC Scripts -----------------------------
+
 script HauoliOutskirts_Script_SamsonOak
 {
     lock
     faceplayer
     setspeaker("Grandpa Samson")
 
-    msgbox(format("Alola, {PLAYER}! How's your Pokémon doing?\p This is our 'Ohana memorial. I know you spent most of your childhood in Kanto, but now that you're home in Alola, you should get to know your culture.\p If you have time, you should spend a quiet moment here."))
+    // TODO: Give more stuff to do here lol
+    msgbox(format("Alola, {PLAYER}! How's your Pokémon doing?\p I hope you're settling into the Alola Region. I know it's quite different than Kanto, but give it a chance."))
     
     closemessage
     release
     end
+}
+
+script HauoliOutskirts_Script_SightseerM
+{
+    lock
+    faceplayer
+    setspeaker("Sightseer")
+    msgbox(format("I finally made it to Alola! My fiancée and I are staying in Hau'oli City.\p She wants to explore the tall grass, but I don't have any Pokémon... I think I'll just stay here."))
+    closemessage
+    release
+    end
+}
+
+script HauoliOutskirts_Script_LassOnLedge
+{
+    lock
+    faceplayer
+    setspeaker("Lass")
+    msgbox(format("Are you Samson Oak's grandkid? I heard his family just moved back here after spending years in Kanto!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliOutskirts_Script_YoungsterWithLechonk
+{
+    lock
+    faceplayer
+    setspeaker("Youngster")
+    msgbox(format("I'm training my Lechonk to grow up real strong! No one messes with a big pig!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliOutskirts_Script_Lechonk
+{
+	lock
+    faceplayer
+    setspeaker("Lechonk")
+    playmoncry(SPECIES_LECHONK, CRY_MODE_NORMAL)
+    msgbox(format("Snort!"))
+    waitmoncry
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+// --------------------------------- Sign Scripts ------------------------------------------
+
+script HauoliOutskirts_Sign_HouseSign
+{
+    lock
+    msgbox(format("Oak Family Home\l"))
 }
