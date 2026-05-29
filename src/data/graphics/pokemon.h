@@ -2173,7 +2173,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_MeowthAlola[] = INCGFX_U32("graphics/pokemon/meowth/alola/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_MeowthAlola[] = INCGFX_U32("graphics/pokemon/meowth/alola/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_MeowthAlola[] = INCGFX_U16("graphics/pokemon/meowth/alola/normal.pal", ".gbapal");
     const u32 gMonBackPic_MeowthAlola[] = INCGFX_U32("graphics/pokemon/meowth/alola/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_MeowthAlola[] = INCGFX_U16("graphics/pokemon/meowth/alola/shiny.pal", ".gbapal");
@@ -2186,7 +2186,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_PersianAlola[] = INCGFX_U32("graphics/pokemon/persian/alola/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_PersianAlola[] = INCGFX_U32("graphics/pokemon/persian/alola/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_PersianAlola[] = INCGFX_U16("graphics/pokemon/persian/alola/normal.pal", ".gbapal");
     const u32 gMonBackPic_PersianAlola[] = INCGFX_U32("graphics/pokemon/persian/alola/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_PersianAlola[] = INCGFX_U16("graphics/pokemon/persian/alola/shiny.pal", ".gbapal");
@@ -3620,7 +3620,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_GrimerAlola[] = INCGFX_U32("graphics/pokemon/grimer/alola/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_GrimerAlola[] = INCGFX_U32("graphics/pokemon/grimer/alola/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_GrimerAlola[] = INCGFX_U16("graphics/pokemon/grimer/alola/normal.pal", ".gbapal");
     const u32 gMonBackPic_GrimerAlola[] = INCGFX_U32("graphics/pokemon/grimer/alola/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_GrimerAlola[] = INCGFX_U16("graphics/pokemon/grimer/alola/shiny.pal", ".gbapal");
@@ -3633,7 +3633,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_MukAlola[] = INCGFX_U32("graphics/pokemon/muk/alola/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_MukAlola[] = INCGFX_U32("graphics/pokemon/muk/alola/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_MukAlola[] = INCGFX_U16("graphics/pokemon/muk/alola/normal.pal", ".gbapal");
     const u32 gMonBackPic_MukAlola[] = INCGFX_U32("graphics/pokemon/muk/alola/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_MukAlola[] = INCGFX_U16("graphics/pokemon/muk/alola/shiny.pal", ".gbapal");
@@ -4089,7 +4089,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_VoltorbHisui[] = INCGFX_U32("graphics/pokemon/voltorb/hisui/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_VoltorbHisui[] = INCGFX_U32("graphics/pokemon/voltorb/hisui/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_VoltorbHisui[] = INCGFX_U16("graphics/pokemon/voltorb/hisui/normal.pal", ".gbapal");
     const u32 gMonBackPic_VoltorbHisui[] = INCGFX_U32("graphics/pokemon/voltorb/hisui/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_VoltorbHisui[] = INCGFX_U16("graphics/pokemon/voltorb/hisui/shiny.pal", ".gbapal");
@@ -4102,7 +4102,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_ElectrodeHisui[] = INCGFX_U32("graphics/pokemon/electrode/hisui/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_ElectrodeHisui[] = INCGFX_U32("graphics/pokemon/electrode/hisui/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_ElectrodeHisui[] = INCGFX_U16("graphics/pokemon/electrode/hisui/normal.pal", ".gbapal");
     const u32 gMonBackPic_ElectrodeHisui[] = INCGFX_U32("graphics/pokemon/electrode/hisui/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_ElectrodeHisui[] = INCGFX_U16("graphics/pokemon/electrode/hisui/shiny.pal", ".gbapal");
@@ -24275,7 +24275,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_SINISTEA
 
 #if P_FAMILY_HATENNA
-    const u32 gMonFrontPic_Hatenna[] = INCGFX_U32("graphics/pokemon/hatenna/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Hatenna[] = INCGFX_U32("graphics/pokemon/hatenna/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Hatenna[] = INCGFX_U16("graphics/pokemon/hatenna/normal.pal", ".gbapal");
     const u32 gMonBackPic_Hatenna[] = INCGFX_U32("graphics/pokemon/hatenna/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Hatenna[] = INCGFX_U16("graphics/pokemon/hatenna/shiny.pal", ".gbapal");
@@ -24291,7 +24291,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Hattrem[] = INCGFX_U32("graphics/pokemon/hattrem/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Hattrem[] = INCGFX_U32("graphics/pokemon/hattrem/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Hattrem[] = INCGFX_U16("graphics/pokemon/hattrem/normal.pal", ".gbapal");
     const u32 gMonBackPic_Hattrem[] = INCGFX_U32("graphics/pokemon/hattrem/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Hattrem[] = INCGFX_U16("graphics/pokemon/hattrem/shiny.pal", ".gbapal");
@@ -24307,7 +24307,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Hatterene[] = INCGFX_U32("graphics/pokemon/hatterene/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Hatterene[] = INCGFX_U32("graphics/pokemon/hatterene/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Hatterene[] = INCGFX_U16("graphics/pokemon/hatterene/normal.pal", ".gbapal");
     const u32 gMonBackPic_Hatterene[] = INCGFX_U32("graphics/pokemon/hatterene/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Hatterene[] = INCGFX_U16("graphics/pokemon/hatterene/shiny.pal", ".gbapal");

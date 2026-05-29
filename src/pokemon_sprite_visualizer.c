@@ -1066,6 +1066,8 @@ static void DrawFollowerSprite(struct PokemonSpriteVisualizer *data)
 // Main functions
 static void UpdateMonAnimNames(u8 taskId)
 {
+    return; // This function was fucking it up so its gone now lol
+
     struct PokemonSpriteVisualizer *data = GetStructPtr(taskId);
     u8 frontAnim = data->animIdFront;
     u8 backAnim = data->animIdBack;
