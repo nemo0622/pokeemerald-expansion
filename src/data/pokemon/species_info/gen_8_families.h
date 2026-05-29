@@ -4283,7 +4283,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Hatenna,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = 12,
+        .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 30),
             ANIMCMD_FRAME(1, 8),
@@ -4307,7 +4307,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .iconSprite = gMonIcon_Hatenna,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(0, 1, SHADOW_SIZE_M)
+        SHADOW(4, 4, SHADOW_SIZE_M)
         FOOTPRINT(Hatenna)
         OVERWORLD(
             sPicTable_Hatenna,
@@ -4359,7 +4359,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Hattrem,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
-        .frontPicYOffset = 8,
+        .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 30),
             ANIMCMD_FRAME(1, 10),
@@ -4431,7 +4431,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .trainerOffset = 7,
         .frontPic = gMonFrontPic_Hatterene,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 30),
             ANIMCMD_FRAME(1, 10),
@@ -4456,7 +4456,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .iconSprite = gMonIcon_Hatterene,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(6, 13, SHADOW_SIZE_S)
+        SHADOW(5, 9, SHADOW_SIZE_M)
         FOOTPRINT(Hatterene)
         OVERWORLD(
             sPicTable_Hatterene,
