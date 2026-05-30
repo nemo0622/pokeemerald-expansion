@@ -3,6 +3,7 @@
 
 #include "contest_effect.h"
 #include "sprite.h"
+#include "wild_encounter_ow.h"
 #include "constants/battle.h"
 #include "constants/cries.h"
 #include "constants/egg_ids.h"
@@ -518,6 +519,7 @@ struct SpeciesInfo /*0xC4*/
 #endif //P_GENDER_DIFFERENCES
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+    enum OverworldWildEncounterBehaviors overworldEncounterBehavior;
 };
 
 struct EggData
@@ -725,12 +727,14 @@ extern const struct SpriteTemplate gBattlerSpriteTemplates[];
 extern const u32 sExpCandyExperienceTable[];
 extern const struct AbilityInfo gAbilitiesInfo[];
 extern const struct NatureInfo gNaturesInfo[];
+extern const struct BehaviorOWE gOWESpeciesBehavior[OWE_SPECIES_BEHAVIOR_COUNT];
 
 void ZeroBoxMonData(struct BoxPokemon *boxMon);
 void ZeroMonData(struct Pokemon *mon);
 void ZeroPlayerPartyMons(void);
 void ZeroEnemyPartyMons(void);
 u32 GetMonPersonality(u16 species, u8 gender, u8 nature, u8 unownLetter);
+bool32 ComputePlayerShinyOdds(u32 personality, u32 value);
 void CreateMon(struct Pokemon *mon, u16 species, u8 level, u32 personality, struct OriginalTrainerId);
 void CreateRandomMon(struct Pokemon *mon, u16 species, u8 level);
 void CreateRandomMonWithIVs(struct Pokemon *mon, u16 species, u8 level, u8 fixedIv);
@@ -943,5 +947,54 @@ bool32 IsSpeciesOfType(u32 species, enum Type type);
 struct BoxPokemon *GetSelectedBoxMonFromPcOrParty(void);
 u32 GiveScriptedMonToPlayer(struct Pokemon *mon, u8 slot);
 void ChangePokemonNicknameWithCallback(void (*callback)(void));
+
+static inline u32 OWE_GetMovementTypeFromSpecies(u16 speciesId)
+{
+    speciesId = SanitizeSpeciesId(speciesId);
+    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    return gOWESpeciesBehavior[behavior].movementType;
+}
+
+static inline u32 OWE_GetViewDistanceFromSpecies(u16 speciesId)
+{
+    speciesId = SanitizeSpeciesId(speciesId);
+    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    return gOWESpeciesBehavior[behavior].viewDistance;
+}
+
+static inline u32 OWE_GetViewWidthFromSpecies(u16 speciesId)
+{
+    speciesId = SanitizeSpeciesId(speciesId);
+    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    return gOWESpeciesBehavior[behavior].viewWidth;
+}
+
+static inline u32 OWE_GetViewActiveDistanceFromSpecies(u16 speciesId)
+{
+    speciesId = SanitizeSpeciesId(speciesId);
+    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    return gOWESpeciesBehavior[behavior].activeDistance;
+}
+
+static inline enum SpeedOWE OWE_GetIdleSpeedFromSpecies(u16 speciesId)
+{
+    speciesId = SanitizeSpeciesId(speciesId);
+    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    return gOWESpeciesBehavior[behavior].idleSpeed;
+}
+
+static inline enum SpeedOWE OWE_GetActiveSpeedFromSpecies(u16 speciesId)
+{
+    speciesId = SanitizeSpeciesId(speciesId);
+    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    return gOWESpeciesBehavior[behavior].activeSpeed;
+}
+
+static inline enum ReturnToIdleOWE OWE_GetReturnToIdleFromSpecies(u16 speciesId)
+{
+    speciesId = SanitizeSpeciesId(speciesId);
+    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    return gOWESpeciesBehavior[behavior].returnToIdle;
+}
 
 #endif // GUARD_POKEMON_H

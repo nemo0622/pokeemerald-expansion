@@ -17,6 +17,7 @@
 #include "decoration_inventory.h"
 #include "agb_flash.h"
 #include "event_data.h"
+#include "wild_encounter_ow.h"
 #include "constants/event_objects.h"
 
 static void ApplyNewEncryptionKeyToAllEncryptedData(u32 encryptionKey);
@@ -237,6 +238,7 @@ void LoadObjectEvents(void)
             gObjectEvents[i].graphicsId & OBJ_EVENT_MON)
             gObjectEvents[i].active = TRUE;
     }
+    SetMinimumOWESpawnTimer();
 }
 
 void CopyPartyAndObjectsToSave(void)

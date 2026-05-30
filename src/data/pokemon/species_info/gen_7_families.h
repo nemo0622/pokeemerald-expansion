@@ -1028,6 +1028,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sYungoosTeachableLearnset,
         .eggMoveLearnset = sYungoosEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GUMSHOOS, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
+        .overworldEncounterBehavior = OWE_CHASE_PLAYER_NORMAL,
     },
 
     [SPECIES_GUMSHOOS] =

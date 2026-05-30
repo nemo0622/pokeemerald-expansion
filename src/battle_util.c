@@ -613,15 +613,15 @@ bool32 TryRunFromBattle(enum BattlerId battler)
             if (speedVar > (Random() & 0xFF))
                 effect++;
         }
-        else if (gBattleMons[battler].speed < gBattleMons[runningFromBattler].speed)
-        {
-            speedVar = (gBattleMons[battler].speed * 128) / (gBattleMons[runningFromBattler].speed) + (gBattleStruct->runTries * 30);
-            if (speedVar > (Random() & 0xFF))
-                effect++;
-        }
+        // else if (gBattleMons[battler].speed < gBattleMons[runningFromBattler].speed)
+        // {
+        //     speedVar = (gBattleMons[battler].speed * 128) / (gBattleMons[runningFromBattler].speed) + (gBattleStruct->runTries * 30);
+        //     if (speedVar > (Random() & 0xFF))
+        //         effect++;
+        // }
         else // same speed or faster
         {
-            effect++;
+            effect++; // should allow always running from wild battles?
         }
 
         gBattleStruct->runTries++;

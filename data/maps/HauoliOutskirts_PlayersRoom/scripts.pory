@@ -181,6 +181,7 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 
 	// TODO: Start Quest to meet Kukui in Iki Town here!
 
+	clearflag(FLAG_OVERWORLD_ENCOUNTERS_DISABLED) // Enables Overworld Encounters
 	updatefollowingmon
 	releaseall
 	end

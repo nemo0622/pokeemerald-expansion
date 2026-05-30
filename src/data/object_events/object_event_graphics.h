@@ -468,6 +468,8 @@ const u16 gFieldEffectObjectPalette_CaveDust[] = INCGFX_U16("graphics/field_effe
 
 const u32 gObjectEventPic_ApricornTree[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_tree.png", ".4bpp", "-mwidth 2 -mheight 2");
 
+const u32 gFieldEffectObjectPic_ShinySparkle[] = INCBIN_U32("graphics/field_effects/pics/shiny_sparkle.4bpp");
+
 // Alolan NPCs
 const u32 gObjectEventPic_Alola_ProfKukui[] = INCGFX_U32("graphics/object_events/pics/people/alola/prof_kukui.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Alola_ProfBurnet[] = INCGFX_U32("graphics/object_events/pics/people/alola/prof_burnet.png", ".4bpp", "-mwidth 2 -mheight 4");
