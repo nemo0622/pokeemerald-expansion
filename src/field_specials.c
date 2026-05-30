@@ -5777,3 +5777,11 @@ bool8 CheckAddCoins(void)
     else
         return TRUE;
 }
+
+void RefreshAllMonStats(void) // Used during Scalemons enabling/disabling
+{
+    for (u32 i = 0; i < PARTY_SIZE; i++)
+    {
+        CalculateMonStats(&gPlayerParty[i]);
+    }
+}

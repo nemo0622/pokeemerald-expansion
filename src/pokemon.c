@@ -3699,6 +3699,32 @@ enum Ability GetSpeciesAbility(u16 species, u8 slot)
     return gSpeciesInfo[SanitizeSpeciesId(species)].abilities[slot];
 }
 
+u32 GetSpeciesBaseStatTotal(u16 species)
+{
+    return (gSpeciesInfo[species].baseHP
+    + gSpeciesInfo[species].baseAttack
+    + gSpeciesInfo[species].baseDefense
+    + gSpeciesInfo[species].baseSpAttack
+    + gSpeciesInfo[species].baseSpDefense
+    + gSpeciesInfo[species].baseSpeed);
+}
+
+u32 GetSpeciesScaledBaseStat(u16 species, u8 stat)
+{
+    u8 baseHP = GetSpeciesBaseHP(species);
+    u16 bst = GetSpeciesBaseStatTotal(species);
+
+    // Some species are EXCLUDED from Scalemons for big battle balance!
+    // Legendaries, Mythicals, and Ultra Beasts do NOT get scaled
+    if(gSpeciesInfo[species].isRestrictedLegendary || gSpeciesInfo[species].isSubLegendary || gSpeciesInfo[species].isMythical || gSpeciesInfo[species].isUltraBeast)
+        return stat;
+
+    if (FlagGet(P_FLAG_SCALEMONS))
+        return (stat * (P_SCALED_STATS_TOTAL - baseHP) / (bst - baseHP));
+    else
+        return stat;
+}
+
 u32 GetSpeciesBaseHP(u16 species)
 {
     return gSpeciesInfo[SanitizeSpeciesId(species)].baseHP;
@@ -3706,27 +3732,32 @@ u32 GetSpeciesBaseHP(u16 species)
 
 u32 GetSpeciesBaseAttack(u16 species)
 {
-    return gSpeciesInfo[SanitizeSpeciesId(species)].baseAttack;
+    // return gSpeciesInfo[SanitizeSpeciesId(species)].baseAttack;
+    return GetSpeciesScaledBaseStat(species, gSpeciesInfo[SanitizeSpeciesId(species)].baseAttack);
 }
 
 u32 GetSpeciesBaseDefense(u16 species)
 {
-    return gSpeciesInfo[SanitizeSpeciesId(species)].baseDefense;
+    // return gSpeciesInfo[SanitizeSpeciesId(species)].baseDefense;
+    return GetSpeciesScaledBaseStat(species, gSpeciesInfo[SanitizeSpeciesId(species)].baseDefense);
 }
 
 u32 GetSpeciesBaseSpAttack(u16 species)
 {
-    return gSpeciesInfo[SanitizeSpeciesId(species)].baseSpAttack;
+    // return gSpeciesInfo[SanitizeSpeciesId(species)].baseSpAttack;
+    return GetSpeciesScaledBaseStat(species, gSpeciesInfo[SanitizeSpeciesId(species)].baseSpAttack);
 }
 
 u32 GetSpeciesBaseSpDefense(u16 species)
 {
-    return gSpeciesInfo[SanitizeSpeciesId(species)].baseSpDefense;
+    // return gSpeciesInfo[SanitizeSpeciesId(species)].baseSpDefense;
+    return GetSpeciesScaledBaseStat(species, gSpeciesInfo[SanitizeSpeciesId(species)].baseSpDefense);
 }
 
 u32 GetSpeciesBaseSpeed(u16 species)
 {
-    return gSpeciesInfo[SanitizeSpeciesId(species)].baseSpeed;
+    // return gSpeciesInfo[SanitizeSpeciesId(species)].baseSpeed;
+    return GetSpeciesScaledBaseStat(species, gSpeciesInfo[SanitizeSpeciesId(species)].baseSpeed);
 }
 
 u32 GetSpeciesBaseStat(u16 species, u32 statIndex)

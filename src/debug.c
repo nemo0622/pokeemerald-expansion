@@ -106,6 +106,7 @@ enum FlagsVarsDebugMenu
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_TRAINER_SEE,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_CATCHING,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BAG_USE,
+    DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_SCALEMONS,
 };
 
 enum DebugBattleType
@@ -321,6 +322,7 @@ static void DebugAction_FlagsVars_TrainerSeeOnOff(u8 taskId);
 static void DebugAction_FlagsVars_BagUseOnOff(u8 taskId);
 static void DebugAction_FlagsVars_CatchingOnOff(u8 taskId);
 static void DebugAction_FlagsVars_RunningShoes(u8 taskId);
+static void DebugAction_FlagsVars_ScalemonsOnOff(u8 taskId);
 
 static void DebugAction_Give_Item(u8 taskId);
 static void DebugAction_Give_Item_SelectId(u8 taskId);
@@ -709,6 +711,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_Flags[] =
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_TRAINER_SEE]   = { COMPOUND_STRING("Toggle {STR_VAR_1}Trainer See OFF"), DebugAction_ToggleFlag, DebugAction_FlagsVars_TrainerSeeOnOff },
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_CATCHING]      = { COMPOUND_STRING("Toggle {STR_VAR_1}Catching OFF"),    DebugAction_ToggleFlag, DebugAction_FlagsVars_CatchingOnOff },
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BAG_USE]       = { COMPOUND_STRING("Toggle {STR_VAR_1}Bag Use OFF"),     DebugAction_ToggleFlag, DebugAction_FlagsVars_BagUseOnOff },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_SCALEMONS]     = { COMPOUND_STRING("Toggle {STR_VAR_1}Scalemons OFF"),   DebugAction_ToggleFlag, DebugAction_FlagsVars_ScalemonsOnOff },
     { NULL }
 };
 
@@ -1237,6 +1240,11 @@ static u32 Debug_CheckToggleFlags(u8 id)
         if (result >= NO_BAG_INVALID_VALUE)
             result = NO_BAG_INVALID_VALUE;
         break;
+#if P_FLAG_SCALEMONS != 0
+    case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_CATCHING:
+        result = FlagGet(P_FLAG_SCALEMONS);
+        break;
+#endif
     default:
         result = 0xFF;
         break;
@@ -2636,6 +2644,19 @@ static void DebugAction_FlagsVars_CatchingOnOff(u8 taskId)
     else
         PlaySE(SE_PC_LOGIN);
     FlagToggle(B_FLAG_NO_CATCHING);
+#endif
+}
+
+static void DebugAction_FlagsVars_ScalemonsOnOff(u8 taskId)
+{
+#if P_FLAG_SCALEMONS == 0
+    Debug_DestroyMenu_Full_Script(taskId, Debug_FlagsNotSetBattleConfigMessage);
+#else
+    if (FlagGet(P_FLAG_SCALEMONS))
+        PlaySE(SE_PC_OFF);
+    else
+        PlaySE(SE_PC_LOGIN);
+    FlagToggle(P_FLAG_SCALEMONS);
 #endif
 }
 

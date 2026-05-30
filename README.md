@@ -21,6 +21,7 @@ Feature Branches:
 - Montblanc: SWSH-style Party Menu
 - Wiz1989: Emulator Accuracy Check
 - Nico: Battle UI Components & code reference
+- PCG06: Scalemons Ruleset
 
 Sprites:
 - LuigiTKO: Party Menu sprites!

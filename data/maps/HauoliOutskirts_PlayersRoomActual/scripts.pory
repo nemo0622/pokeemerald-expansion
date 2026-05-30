@@ -66,3 +66,52 @@ movement HauoliOutskirts_PlayersRoomActual_Movement_MeowthLeaves
 	delay_16 * 2
 	step_end
 }
+
+// -------------------------------------------------------------------------------------------------
+
+script HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings
+{
+	lock
+	setspeaker("Oranguru")
+    playmoncry(SPECIES_ORANGURU, CRY_MODE_NORMAL)
+    msgbox(format("Eeh-ee...!"))
+    waitmoncry
+    closemessage
+
+	msgbox(format("It's Grandpa Samson's Oranguru! It's always writing in books.\p It looks like this is a Choose-Your-Own-Adventure type of book. Help Oranguru fill it out?"), MSGBOX_YESNO)
+	closemessage
+
+	// Said yes to changing settings!
+	if(var(VAR_RESULT) == TRUE)
+	{
+		// Reminder to read!
+		msgbox(format("The cover says to {COLOR RED}slow down and read each question{COLOR DARK_GRAY} because they can {COLOR RED}significantly change the gameplay experience{COLOR DARK_GRAY}."))
+		closemessage
+		delay(10)
+
+		// Scalemons setting
+		msgbox(format("Question 1: Enable {COLOR GREEN}Scalemons{COLOR DARK_GRAY} Ruleset?\p Scalemons uses math to change almost all Pokémon (aside from Legendary Pokémon or Ultra Beasts) to have a Base Stat Total around 500 (excluding HP). This lets {COLOR GREEN}weaker Pokémon thrive{COLOR DARK_GRAY} by boosting their stats, but {COLOR BLUE}weakens game balance{COLOR DARK_GRAY} by making Pokémon unexpectedly strong or weak.\p Should {COLOR GREEN}Scalemons{COLOR DARK_GRAY} Ruleset be {COLOR GREEN}enabled{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+		closemessage
+		if(var(VAR_RESULT) == TRUE)
+		{
+			setflag(FLAG_USE_SCALEMONS)
+			special(RefreshAllMonStats)
+			msgbox(format("{COLOR GREEN}Scalemons Ruleset has been enabled.{COLOR DARK_GRAY} Pokémon's stats will be scaled to approximately 500."))
+			closemessage
+		}
+		else
+		{
+			clearflag(FLAG_USE_SCALEMONS)
+			special(RefreshAllMonStats)
+			msgbox(format("{COLOR BLUE}Scalemons Ruleset has been disabled.{COLOR DARK_GRAY} Pokémon's stats will be normal."))
+			closemessage
+		}
+
+		// End settings
+		msgbox(format("Looks like the page is finished! Oranguru seems happy!"))
+		closemessage
+	}
+
+	release
+	end
+}
