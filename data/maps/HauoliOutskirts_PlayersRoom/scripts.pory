@@ -43,13 +43,56 @@ movement HauoliOutskirts_PlayersHouse_MomReturnToChair
 	step_end
 }
 
+// --------------------------------------------------------------------------------------------------
+
 script HauoliOutskirts_PlayersHouse_Script_Mom
 {
 	lock
 	faceplayer
 	setspeaker("Mom")
-	msgbox(format("Alola {PLAYER}! It's nice to be back in our home region, yeah?"))
-	closemessage
+	
+	switch(var(VAR_INTRO_STATE))
+	{
+		case 2: // Left room for first time
+			msgbox(format("Your Grandpa, Tutu Samson, is in {COLOR GREEN}Iki Town{COLOR DARK_GRAY} meeting with someone. It sounded like he wanted to talk to you!"))
+			closemessage
+		case 3: // Just got starter, headed to Iki Town
+			msgbox(format("Now that you've got a Pokémon, you should be able to reach {COLOR GREEN}Iki Town{COLOR DARK_GRAY} without a problem.\p Do you two want a rest?"), MSGBOX_YESNO)
+			closemessage
+			if(var(VAR_RESULT) == TRUE)
+			{
+				fadescreen(FADE_TO_BLACK)
+				delay(30)
+				special(HealPlayerParty)
+				delay(30)
+				fadescreen(FADE_FROM_BLACK)
+				delay(15)
+				setspeaker("Mom")
+				msgbox(format("Hey, you two look like you're ready to go! Have fun out there!"))
+				closemessage
+			}
+		default: // After all tutorial stuff ends
+			msgbox(format("Alola and welcome home, {PLAYER}! Do you want to rest your Pokémon while you're here?"), MSGBOX_YESNO)
+			if(var(VAR_RESULT) == TRUE)
+			{
+				fadescreen(FADE_TO_BLACK)
+				delay(30)
+				special(HealPlayerParty)
+				delay(30)
+				fadescreen(FADE_FROM_BLACK)
+				delay(15)
+				setspeaker("Mom")
+				msgbox(format("Looks like your Pokémon are all healed. Have fun out there!"))
+				closemessage
+			}
+			else
+			{
+				setspeaker("Mom")
+				msgbox(format("Alright then, stay as long as you'd like. I'm glad you came to visit!"))
+				closemessage
+			}
+	}
+
 	release
 	end
 }

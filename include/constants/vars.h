@@ -97,7 +97,15 @@
 #define VAR_POKELOT_RND1                                 0x404B
 #define VAR_POKELOT_RND2                                 0x404C
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
+
+/*
+VAR_INTRO_STATE used for a bunch of stuff on Melemele Island
+1 = Just exiting Player's room for first time
+2 = No Pokémon, outside for first time
+3 = Got starter; sent to Iki Town
+*/
 #define VAR_INTRO_STATE                                  0x404E
+
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051

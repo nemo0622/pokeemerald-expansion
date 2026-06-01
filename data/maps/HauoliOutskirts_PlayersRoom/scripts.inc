@@ -72,454 +72,527 @@ HauoliOutskirts_PlayersHouse_MomReturnToChair:
 	step_end
 
 HauoliOutskirts_PlayersHouse_Script_Mom::
-# 48 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	lock
-# 49 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	faceplayer
 # 50 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setspeaker HauoliOutskirts_PlayersHouse_IntroEvent_Text_0
+	lock
 # 51 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	msgbox HauoliOutskirts_PlayersHouse_Script_Mom_Text_0
+	faceplayer
 # 52 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setspeaker HauoliOutskirts_PlayersHouse_IntroEvent_Text_0
+# 54 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	switch VAR_INTRO_STATE
+# 56 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	case 2, HauoliOutskirts_PlayersHouse_Script_Mom_3
+# 59 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	case 3, HauoliOutskirts_PlayersHouse_Script_Mom_4
+# 75 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	msgbox HauoliOutskirts_PlayersHouse_Script_Mom_Text_3, MSGBOX_YESNO
+# 76 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq HauoliOutskirts_PlayersHouse_Script_Mom_8
+# 90 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setspeaker HauoliOutskirts_PlayersHouse_IntroEvent_Text_0
+# 91 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	msgbox HauoliOutskirts_PlayersHouse_Script_Mom_Text_5
+# 92 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	closemessage
-# 53 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+HauoliOutskirts_PlayersHouse_Script_Mom_1:
+# 96 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	release
 	end
 
+HauoliOutskirts_PlayersHouse_Script_Mom_3:
+# 57 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	msgbox HauoliOutskirts_PlayersHouse_Script_Mom_Text_0
+# 58 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	closemessage
+	goto HauoliOutskirts_PlayersHouse_Script_Mom_1
+
+HauoliOutskirts_PlayersHouse_Script_Mom_4:
+# 60 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	msgbox HauoliOutskirts_PlayersHouse_Script_Mom_Text_1, MSGBOX_YESNO
+# 61 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	closemessage
+# 62 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq HauoliOutskirts_PlayersHouse_Script_Mom_6
+	goto HauoliOutskirts_PlayersHouse_Script_Mom_1
+
+HauoliOutskirts_PlayersHouse_Script_Mom_6:
+# 64 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 65 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 30
+# 66 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	special HealPlayerParty
+# 67 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 30
+# 68 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 69 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 15
+# 70 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setspeaker HauoliOutskirts_PlayersHouse_IntroEvent_Text_0
+# 71 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	msgbox HauoliOutskirts_PlayersHouse_Script_Mom_Text_2
+# 72 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	closemessage
+	goto HauoliOutskirts_PlayersHouse_Script_Mom_1
+
+HauoliOutskirts_PlayersHouse_Script_Mom_8:
+# 78 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 79 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 30
+# 80 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	special HealPlayerParty
+# 81 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 30
+# 82 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 83 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 15
+# 84 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setspeaker HauoliOutskirts_PlayersHouse_IntroEvent_Text_0
+# 85 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	msgbox HauoliOutskirts_PlayersHouse_Script_Mom_Text_4
+# 86 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	closemessage
+	goto HauoliOutskirts_PlayersHouse_Script_Mom_1
+
 
 HauoliOutskirts_PlayersHouse_Script_Meowth::
-# 59 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 102 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	lock
-# 60 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 103 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	faceplayer
-# 61 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 104 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	setspeaker HauoliOutskirts_PlayersHouse_Script_Meowth_Text_0
-# 62 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 105 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	playmoncry SPECIES_MEOWTH, CRY_MODE_NORMAL
-# 63 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 106 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	msgbox HauoliOutskirts_PlayersHouse_Script_Meowth_Text_1
-# 64 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 107 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	waitmoncry
-# 65 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 108 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	closemessage
-# 66 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 109 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	release
 	end
 
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter::
-# 72 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 115 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	lockall
-# 73 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 116 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	addobject 3
-# 74 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 117 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	addobject 4
-# 75 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 118 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	switch VAR_STARTER_MON
-# 78 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 121 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	case SPECIES_ROWLET, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_3
-# 82 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 125 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	case SPECIES_LITTEN, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_4
-# 86 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 129 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	case SPECIES_POPPLIO, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_5
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_3:
-# 79 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 122 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	clearflag FLAG_HIDE_ROWLET_STARTERS_HOUSE
-# 80 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 123 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	addobject LOCALID_PH_ROWLET
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_1:
-# 91 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 134 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 92 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 135 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	delay 20
-# 93 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 136 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement 3, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_0
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement 4, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_1
-# 95 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 138 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement LOCALID_PLAYER, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_2
-# 96 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 139 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	switch VAR_STARTER_MON
-# 99 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 142 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	case SPECIES_ROWLET, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_8
-# 102 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 145 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	case SPECIES_LITTEN, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_9
-# 105 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 148 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	case SPECIES_POPPLIO, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_10
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_8:
-# 100 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 143 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement LOCALID_PH_ROWLET, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_3
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_6:
-# 109 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 152 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	waitmovement 0
-# 110 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 153 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement 2, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_4
-# 111 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 154 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	waitmovement 0
-# 112 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 155 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	delay 10
-# 114 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 157 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	emote LOCALID_MOM, EMOTE_EXCLAM
-# 115 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 158 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
-# 116 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 159 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	switch VAR_STARTER_MON
-# 119 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 162 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	case SPECIES_ROWLET, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_13
-# 122 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 165 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	case SPECIES_LITTEN, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_14
-# 125 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 168 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	case SPECIES_POPPLIO, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_15
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_13:
-# 120 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 163 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement LOCALID_PH_ROWLET, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_5
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_11:
-# 129 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	applymovement LOCALID_MOM, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_6
-# 130 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	waitmovement 0
-# 131 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setspeaker HauoliOutskirts_PlayersHouse_IntroEvent_Text_0
-# 132 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	msgbox HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_0
-# 133 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	closemessage
-# 135 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	applymovement 3, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_7
-# 136 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	waitmovement 0
-# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_STARTER_MON
-# 138 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setspeaker HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_1
-# 139 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	msgbox HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_2
-# 140 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	closemessage
-# 141 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	applymovement LOCALID_MOM, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_8
-# 142 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	waitmovement 0
-# 143 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	delay 5
-# 144 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setspeaker HauoliOutskirts_PlayersHouse_IntroEvent_Text_0
-# 145 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	msgbox HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_3
-# 146 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	closemessage
-# 148 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	applymovement 4, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_9
-# 149 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	waitmovement 0
-# 150 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setspeaker HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_4
-# 151 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	msgbox HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_5
-# 152 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	closemessage
-# 153 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	delay 20
-# 155 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	emote 4, EMOTE_EXCLAM
-# 156 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	applymovement LOCALID_PLAYER, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_5
-# 157 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	applymovement 4, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_10
-# 158 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	waitmovement 0
-# 159 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setspeaker HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_4
-# 160 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	msgbox HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_6
-# 161 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	closemessage
-# 163 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	delay 10
-# 164 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 165 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	delay 30
-# 166 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	applymovement LOCALID_MOM, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_11
-# 167 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	waitmovement 0
-# 168 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setflag FLAG_HIDE_SAMSON_ROUTE_01
-# 169 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setflag FLAG_HIDE_STARTERS_ROUTE_01
-# 170 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	removeobject 3
-# 171 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	removeobject 4
 # 172 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setflag FLAG_HIDE_ROWLET_STARTERS_HOUSE
+	applymovement LOCALID_MOM, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_6
 # 173 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setflag FLAG_HIDE_LITTEN_STARTERS_HOUSE
+	waitmovement 0
 # 174 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	setflag FLAG_HIDE_POPPLIO_STARTERS_HOUSE
+	setspeaker HauoliOutskirts_PlayersHouse_IntroEvent_Text_0
 # 175 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	removeobject 5
+	msgbox HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_0
 # 176 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	removeobject 6
-# 177 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	removeobject 7
+	closemessage
 # 178 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	clearflag FLAG_HIDE_SAMSON_HAUOLI_OUTSKIRTS
+	applymovement 3, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_7
 # 179 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	waitmovement 0
 # 180 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	delay 30
+	bufferspeciesname STR_VAR_1, VAR_STARTER_MON
+# 181 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setspeaker HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_1
+# 182 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	msgbox HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_2
+# 183 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	closemessage
 # 184 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	clearflag FLAG_OVERWORLD_ENCOUNTERS_DISABLED
+	applymovement LOCALID_MOM, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_8
 # 185 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	updatefollowingmon
+	waitmovement 0
 # 186 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 5
+# 187 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setspeaker HauoliOutskirts_PlayersHouse_IntroEvent_Text_0
+# 188 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	msgbox HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_3
+# 189 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	closemessage
+# 191 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	applymovement 4, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_9
+# 192 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	waitmovement 0
+# 193 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setspeaker HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_4
+# 194 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	msgbox HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_5
+# 195 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	closemessage
+# 196 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 20
+# 198 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	emote 4, EMOTE_EXCLAM
+# 199 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	applymovement LOCALID_PLAYER, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_5
+# 200 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	applymovement 4, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_10
+# 201 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	waitmovement 0
+# 202 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setspeaker HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_4
+# 203 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	msgbox HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_6
+# 204 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	closemessage
+# 206 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 10
+# 207 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 208 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 30
+# 209 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	applymovement LOCALID_MOM, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_11
+# 210 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	waitmovement 0
+# 211 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setflag FLAG_HIDE_SAMSON_ROUTE_01
+# 212 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setflag FLAG_HIDE_STARTERS_ROUTE_01
+# 213 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	removeobject 3
+# 214 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	removeobject 4
+# 215 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setflag FLAG_HIDE_ROWLET_STARTERS_HOUSE
+# 216 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setflag FLAG_HIDE_LITTEN_STARTERS_HOUSE
+# 217 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	setflag FLAG_HIDE_POPPLIO_STARTERS_HOUSE
+# 218 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	removeobject 5
+# 219 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	removeobject 6
+# 220 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	removeobject 7
+# 221 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	clearflag FLAG_HIDE_SAMSON_HAUOLI_OUTSKIRTS
+# 222 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 223 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	delay 30
+# 227 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	clearflag FLAG_OVERWORLD_ENCOUNTERS_DISABLED
+# 228 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	updatefollowingmon
+# 229 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	releaseall
 	end
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_4:
-# 83 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 126 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	clearflag FLAG_HIDE_LITTEN_STARTERS_HOUSE
-# 84 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 127 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	addobject LOCALID_PH_LITTEN
 	goto HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_1
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_5:
-# 87 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 130 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	clearflag FLAG_HIDE_POPPLIO_STARTERS_HOUSE
-# 88 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 131 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	addobject LOCALID_PH_POPPLIO
 	goto HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_1
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_9:
-# 103 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 146 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement LOCALID_PH_LITTEN, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_3
 	goto HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_6
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_10:
-# 106 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 149 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement LOCALID_PH_POPPLIO, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_3
 	goto HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_6
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_14:
-# 123 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 166 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement LOCALID_PH_LITTEN, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_5
 	goto HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_11
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_15:
-# 126 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 169 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	applymovement LOCALID_PH_POPPLIO, HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_5
 	goto HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_11
 
 
 HauoliOutskirts_PlayersHouse_Sign_TV::
-# 194 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 237 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	lock
-# 195 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 238 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	msgbox HauoliOutskirts_PlayersHouse_Sign_TV_Text_0
-# 196 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 239 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	closemessage
-# 197 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 240 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	release
 	end
 
 
 HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl::
-# 203 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 246 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	lock
-# 204 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 247 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	msgbox HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl_Text_0
-# 205 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 248 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	closemessage
-# 206 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 249 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	goto_if_unset FLAG_GOT_AMULET_COIN_HAUOLI, HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl_2
 HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl_1:
-# 216 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 259 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	release
 	end
 
 HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl_2:
-# 208 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 251 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	setflag FLAG_GOT_AMULET_COIN_HAUOLI
-# 209 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 252 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	msgbox HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl_Text_1
-# 210 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 253 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	closemessage
-# 211 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 254 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	giveitem ITEM_AMULET_COIN
-# 212 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 255 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	closemessage
-# 213 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 256 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	msgbox HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl_Text_2
-# 214 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 257 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	closemessage
 	goto HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl_1
 
 
 HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal::
-# 222 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 265 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	lock
-# 223 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 266 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	msgbox HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal_Text_0, MSGBOX_YESNO
-# 224 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 267 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal_2
 HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal_1:
-# 229 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 272 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	closemessage
-# 230 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 273 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	release
 	end
 
 HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal_2:
-# 226 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 269 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	setspeaker HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal_Text_1
-# 227 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 270 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	msgbox HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal_Text_2
 	goto HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal_1
 
 
-# 93 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 136 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_0:
-# 93 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 136 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_up
-# 93 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 136 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_up
-# 93 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 136 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_right
-# 93 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 136 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	step_end
 
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_1:
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_up
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_up
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_up
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_left
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_left
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_left
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	jump_in_place_left
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	jump_in_place_left
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_left
-# 94 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 137 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	step_end
 
-# 95 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 138 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_2:
-# 95 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 138 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_up
-# 95 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 138 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_up
-# 95 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 138 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_up
-# 95 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 138 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_up
-# 95 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 138 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	step_end
 
-# 100 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 143 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_3:
-# 100 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 143 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_right
-# 100 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 143 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_up
-# 100 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 143 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_up
-# 100 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 143 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_up
-# 100 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 143 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	step_end
 
-# 110 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 153 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_4:
-# 110 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 153 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_right
-# 110 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 153 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	emote_heart
-# 110 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 153 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	step_end
 
-# 120 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 163 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_5:
-# 120 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 163 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_right
 	step_end
 
-# 129 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 172 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_6:
-# 129 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 172 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_down
-# 129 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 172 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_down
-# 129 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 172 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_down
-# 129 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 172 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_down
-# 129 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 172 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_left
-# 129 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 172 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	step_end
 
-# 135 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 178 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_7:
-# 135 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 178 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_down
-# 135 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 178 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_right
 	step_end
 
-# 141 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 184 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_8:
-# 141 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 184 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 148 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 191 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_9:
-# 148 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 191 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_right
-# 148 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 191 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_right
-# 148 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 191 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_right
-# 148 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 191 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_right
-# 148 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 191 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_down
-# 148 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 191 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_down
-# 148 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 191 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	step_end
 
-# 157 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 200 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_10:
-# 157 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 200 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_left
 	step_end
 
-# 166 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 209 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Movement_11:
-# 166 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 209 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_up
-# 166 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 209 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_up
-# 166 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 209 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_up
-# 166 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 209 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	walk_fast_up
-# 166 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 209 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	face_down
-# 166 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 209 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	step_end
 
 HauoliOutskirts_PlayersHouse_IntroEvent_Text_0:
@@ -539,45 +612,74 @@ HauoliOutskirts_PlayersHouse_IntroEvent_Text_1:
 	.string "to stay out of the tall grass!$"
 
 HauoliOutskirts_PlayersHouse_Script_Mom_Text_0:
-# 51 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
-	.string "Alola {PLAYER}! It's nice to be back in\n"
-	.string "our home region, yeah?$"
+# 57 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	.string "Your Grandpa, Tutu Samson, is in {COLOR GREEN}Iki\n"
+	.string "Town{COLOR DARK_GRAY} meeting with someone. It sounded\l"
+	.string "like he wanted to talk to you!$"
+
+HauoliOutskirts_PlayersHouse_Script_Mom_Text_1:
+# 60 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	.string "Now that you've got a Pokémon, you\n"
+	.string "should be able to reach {COLOR GREEN}Iki Town{COLOR DARK_GRAY}\l"
+	.string "without a problem.\p"
+	.string "Do you two want a rest?$"
+
+HauoliOutskirts_PlayersHouse_Script_Mom_Text_2:
+# 71 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	.string "Hey, you two look like you're ready to\n"
+	.string "go! Have fun out there!$"
+
+HauoliOutskirts_PlayersHouse_Script_Mom_Text_3:
+# 75 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	.string "Alola and welcome home, {PLAYER}! Do\n"
+	.string "you want to rest your Pokémon while\l"
+	.string "you're here?$"
+
+HauoliOutskirts_PlayersHouse_Script_Mom_Text_4:
+# 85 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	.string "Looks like your Pokémon are all healed.\n"
+	.string "Have fun out there!$"
+
+HauoliOutskirts_PlayersHouse_Script_Mom_Text_5:
+# 91 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+	.string "Alright then, stay as long as you'd like.\n"
+	.string "I'm glad you came to visit!$"
 
 HauoliOutskirts_PlayersHouse_Script_Meowth_Text_0:
-# 61 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 104 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Mom's Meowth$"
 
 HauoliOutskirts_PlayersHouse_Script_Meowth_Text_1:
-# 63 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 106 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Breowww!!$"
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_0:
-# 132 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 175 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Who's THIS?! It's so CUTE!$"
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_1:
-# 138 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 181 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Grandpa Samson$"
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_2:
-# 139 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 182 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "That's {STR_VAR_1}, a rare Pokémon\n"
 	.string "native to Alola...\p"
 	.string "And it's {PLAYER}'s new Pokémon, too!$"
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_3:
-# 145 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 188 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Maika'i loa, that's great! How'd this\n"
 	.string "happen? I just sent {PLAYER} to get\l"
 	.string "you from Iki Town, not get caught up in\l"
 	.string "an adventure!$"
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_4:
-# 150 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 193 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Prof. Kukui$"
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_5:
-# 151 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 194 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "{PLAYER} ran into some bad luck with a\n"
 	.string "wild Yungoos on the way, but my Pokémon\l"
 	.string "ran off to save them! With\l"
@@ -585,7 +687,7 @@ HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_5:
 	.string "{PLAYER}'ll be safe from anything.$"
 
 HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_6:
-# 160 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 203 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Samson and I ran after those Pokémon\n"
 	.string "in such a rush, I forgot why I was in Iki\l"
 	.string "Town in the first place!\p"
@@ -594,33 +696,33 @@ HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter_Text_6:
 	.string "meet someone there, yeah!$"
 
 HauoliOutskirts_PlayersHouse_Sign_TV_Text_0:
-# 195 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 238 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Mom has a sitcom on from when she was a\n"
 	.string "teen. Nostalgia is a powerful thing!$"
 
 HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl_Text_0:
-# 204 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 247 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "It's Meowth's food bowl.$"
 
 HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl_Text_1:
-# 209 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 252 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Hm? There's something in the bowl.$"
 
 HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl_Text_2:
-# 213 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 256 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Mom is spoiling Meowth too much!$"
 
 HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal_Text_0:
-# 223 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 266 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "It's Grandpa Samson's field journal!\n"
 	.string "Read it?$"
 
 HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal_Text_1:
-# 226 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 269 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "Samson Oak$"
 
 HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal_Text_2:
-# 227 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
+# 270 "data//maps/HauoliOutskirts_PlayersRoom/scripts.pory"
 	.string "{COLOR GREEN}Lurantis{COLOR DARK_GRAY} is a beautiful Pokémon with\n"
 	.string "sickle-sharp petals able to cut\l"
 	.string "straight through trees. They've\l"
