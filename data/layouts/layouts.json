@@ -9370,7 +9370,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Hauoli",
+      "secondary_tileset": "gTileset_IkiTown",
       "border_filepath": "data/layouts/IkiTown/border.bin",
       "blockdata_filepath": "data/layouts/IkiTown/map.bin"
     },

@@ -6,8 +6,8 @@
 
 #define TRAINER_NONE                          0
 #define TRAINER_SCHOOL_BOY_OLIVER                      1
-#define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
-#define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
+#define TRAINER_LASS_AUDREY          2
+#define TRAINER_YOUNGSTER_JIMMY          3
 #define TRAINER_GRUNT_AQUA_HIDEOUT_3          4
 #define TRAINER_GRUNT_AQUA_HIDEOUT_4          5
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6

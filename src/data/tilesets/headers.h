@@ -1563,3 +1563,14 @@ const struct Tileset gTileset_AlolaGenericBuilding =
     .metatileAttributes = gMetatileAttributes_AlolaGenericBuilding,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_IkiTown =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_IkiTown,
+    .palettes = gTilesetPalettes_IkiTown,
+    .metatiles = gMetatiles_IkiTown,
+    .metatileAttributes = gMetatileAttributes_IkiTown,
+    .callback = NULL,
+};

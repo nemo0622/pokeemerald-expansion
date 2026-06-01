@@ -414,3 +414,6 @@ const u16 gMetatileAttributes_Hauoli[] = INCBIN_U16("data/tilesets/secondary/hau
 
 const u16 gMetatiles_AlolaGenericBuilding[] = INCBIN_U16("data/tilesets/secondary/alola_generic_building/metatiles.bin");
 const u16 gMetatileAttributes_AlolaGenericBuilding[] = INCBIN_U16("data/tilesets/secondary/alola_generic_building/metatile_attributes.bin");
+
+const u16 gMetatiles_IkiTown[] = INCBIN_U16("data/tilesets/secondary/iki_town/metatiles.bin");
+const u16 gMetatileAttributes_IkiTown[] = INCBIN_U16("data/tilesets/secondary/iki_town/metatile_attributes.bin");

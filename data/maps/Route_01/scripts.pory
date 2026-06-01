@@ -358,17 +358,93 @@ script Route_01_Script_ReactToStarter
 	end
 }
 
+// --------------------------------------- Sign Scripts --------------------------------------------
+
+script Route_01_Sign_Directions
+{
+	lock
+	msgbox(format("{UP_ARROW} Route 3\n {LEFT_ARROW} Iki Town\p {RIGHT_ARROW} Hau'oli Outskirts"))
+	closemessage
+	release
+	end
+}
+
 // --------------------------------------- NPC Scripts --------------------------------------------
 
-script Route_01_Script_SchoolBoyOliver
+script Route_01_Trainer_LassAudrey
+{
+	trainerbattle_single(TRAINER_LASS_AUDREY, 
+	format("When the eyes of Pokémon Trainers meet, you know what's going to happen, right?\p A Pokémon battle!"), 
+	format("Oh! Your Pokémon looks so happy it won..."))
+
+	setspeaker("Lass Audrey")
+	msgbox(format("I like raising cute Pokémon. Lechonk is cute, y'know!"))
+	closemessage
+	release
+	end
+}
+
+script Route_01_Trainer_YoungsterJimmy
+{
+	trainerbattle_single(TRAINER_YOUNGSTER_JIMMY, 
+	format("Go for it, Caterpie! Show me the power of Bug-type Pokémon!"), 
+	format("My Bug Pokémon lost! You're really bugging me, you know?"))
+
+	setspeaker("Youngster Jimmy")
+	msgbox(format("I caught my Caterpie in the grass nearby. It came right out to say hello!"))
+	closemessage
+	release
+	end
+}
+
+script Route_01_Trainer_SchoolBoyOliver
 {
 	trainerbattle_single(TRAINER_SCHOOL_BOY_OLIVER, 
-	format("Our eyes met! Now we have to battle!"), 
-	format("Aw..."))
+	format("Hey! Please battle me!"), 
+	format("If you're strong, please go away!"))
 
 	setspeaker("School Boy Oliver")
 	msgbox(format("You're a real good Trainer. I wanna be like you!"))
 	closemessage
 	release
 	end
+}
+
+script Route_01_NPC_BugCatcher
+{
+	lock
+	faceplayer
+	setspeaker("Bug Catcher")
+	msgbox(format("Huff, huff... Phew! I barely made it away from a wild Yungoos!\p Some Pokémon are brave enough to {COLOR GREEN}come out of the tall grass{COLOR DARK_GRAY}. A few might even {COLOR RED}chase you down{COLOR DARK_GRAY}, like Yungoos!"))
+	closemessage
+	release
+	end
+}
+
+script Route_01_NPC_SightseerF
+{
+	lock
+	faceplayer
+	setspeaker("Sightseer")
+	msgbox(format("This Rockruff has been following me from Ten Carat Hill! I never knew Pokémon could be so friendly."))
+	closemessage
+	applymovement(VAR_LAST_TALKED, moves(face_left))
+	waitmovement(0)
+	release
+	end
+}
+
+script Route_01_NPC_Rockruff
+{
+	lock
+    faceplayer
+    setspeaker("Rockruff")
+    playmoncry(SPECIES_ROCKRUFF, CRY_MODE_NORMAL)
+    msgbox(format("Arf warf!"))
+    waitmoncry
+    closemessage
+	applymovement(VAR_LAST_TALKED, moves(face_right))
+	waitmovement(0)
+    release
+    end
 }

@@ -2,11 +2,11 @@
   "id": "MAP_ROUTE_01",
   "name": "Route_01",
   "layout": "LAYOUT_ROUTE_01",
-  "music": "MUS_DUMMY",
+  "music": "MUS_ROUTE101",
   "region_map_section": "MAPSEC_ROUTE_1",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -104,7 +104,7 @@
       "flag": "FLAG_HIDE_SAMSON_ROUTE_01"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 47,
       "y": 18,
       "elevation": 0,
@@ -113,7 +113,124 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route_01_Script_SchoolBoyOliver",
+      "script": "Route_01_Trainer_LassAudrey",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_BOY",
+      "x": 17,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Route_01_Trainer_SchoolBoyOliver",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 32,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route_01_Trainer_YoungsterJimmy",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "x": 42,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_01_NPC_BugCatcher",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SIGHTSEER_F",
+      "x": 23,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_01_NPC_SightseerF",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ROCKRUFF)",
+      "x": 22,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_01_NPC_Rockruff",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 9,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 13,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 12,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
       "flag": "0"
     }
   ],
@@ -174,5 +291,14 @@
       "script": "Route_01_Trigger_RequireStarter"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route_01_Sign_Directions"
+    }
+  ]
 }
