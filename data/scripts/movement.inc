@@ -178,3 +178,7 @@ Common_Movement_WalkLeftFaster::
 Common_Movement_Heart::
 	emote_heart
 	step_end
+
+Common_Movement_EmoteX::
+	emote_x
+	step_end

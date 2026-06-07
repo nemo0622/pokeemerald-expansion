@@ -293,11 +293,23 @@
 #define OBJ_EVENT_GFX_SWIMMER_M_LAND            257
 #define OBJ_EVENT_GFX_SWIMMER_F_LAND            258
 #define OBJ_EVENT_GFX_YOUNGSTER                 259
+#define OBJ_EVENT_GFX_HALA                      260
+#define OBJ_EVENT_GFX_HAU                       261
+#define OBJ_EVENT_GFX_LILLIE_1                  262
+#define OBJ_EVENT_GFX_LILLIE_2                  263
+#define OBJ_EVENT_GFX_MAN_1                     264
+#define OBJ_EVENT_GFX_MAN_2                     265
+#define OBJ_EVENT_GFX_MAN_3                     266
+#define OBJ_EVENT_GFX_GENTLEMAN                 267
+#define OBJ_EVENT_GFX_WOMAN_1                   268
+#define OBJ_EVENT_GFX_WOMAN_2                   269
+#define OBJ_EVENT_GFX_WOMAN_3                   270
+#define OBJ_EVENT_GFX_LADY                      271
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        260
+#define NUM_OBJ_EVENT_GFX                        272
 
 
 // These are dynamic object gfx ids.
@@ -500,5 +512,6 @@
 #define EMOTE_EXCLAM 0
 #define EMOTE_QUESTION 1
 #define EMOTE_HEART 3
+#define EMOTE_X 4
 
 #endif  // GUARD_CONSTANTS_EVENT_OBJECTS_H

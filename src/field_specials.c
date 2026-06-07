@@ -3355,44 +3355,10 @@ static const u8 sDeoxysRockCoords[DEOXYS_ROCK_LEVELS][2] = {
 
 static void Task_DeoxysRockInteraction(u8 taskId)
 {
-    static const u8 sStoneMaxStepCounts[DEOXYS_ROCK_LEVELS - 1] = { 4, 8, 8, 8, 4, 4, 4, 6, 3, 3 };
-
-    if (FlagGet(FLAG_DEOXYS_ROCK_COMPLETE) == TRUE)
-    {
-        gSpecialVar_Result = DEOXYS_ROCK_COMPLETE;
-        ScriptContext_Enable();
-        DestroyTask(taskId);
-    }
-    else
-    {
-        u16 rockLevel = VarGet(VAR_DEOXYS_ROCK_LEVEL);
-        u16 stepCount = VarGet(VAR_DEOXYS_ROCK_STEP_COUNT);
-
-        VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, 0);
-        if (rockLevel != 0 && sStoneMaxStepCounts[rockLevel - 1] < stepCount)
-        {
-            // Player failed to take the shortest path to the stone, so it resets.
-            ChangeDeoxysRockLevel(0);
-            VarSet(VAR_DEOXYS_ROCK_LEVEL, 0);
-            gSpecialVar_Result = DEOXYS_ROCK_FAILED;
-            DestroyTask(taskId);
-        }
-        else if (rockLevel == DEOXYS_ROCK_LEVELS - 1)
-        {
-            FlagSet(FLAG_DEOXYS_ROCK_COMPLETE);
-            gSpecialVar_Result = DEOXYS_ROCK_SOLVED;
-            ScriptContext_Enable();
-            DestroyTask(taskId);
-        }
-        else
-        {
-            rockLevel++;
-            ChangeDeoxysRockLevel(rockLevel);
-            VarSet(VAR_DEOXYS_ROCK_LEVEL, rockLevel);
-            gSpecialVar_Result = DEOXYS_ROCK_PROGRESSED;
-            DestroyTask(taskId);
-        }
-    }
+    // Unused in Alolan Seaglass
+    gSpecialVar_Result = DEOXYS_ROCK_COMPLETE;
+    ScriptContext_Enable();
+    DestroyTask(taskId);
 }
 
 static void ChangeDeoxysRockLevel(u8 rockLevel)
@@ -3444,24 +3410,15 @@ static void WaitForDeoxysRockMovement(u8 taskId)
 
 void IncrementBirthIslandRockStepCount(void)
 {
-    u16 stepCount = VarGet(VAR_DEOXYS_ROCK_STEP_COUNT);
-    if ((gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_BIRTH_ISLAND_EXTERIOR) && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_BIRTH_ISLAND_EXTERIOR))
-     || (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_BIRTH_ISLAND_EXTERIOR_FRLG) && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_BIRTH_ISLAND_EXTERIOR_FRLG)))
-    {
-        if (++stepCount > 99)
-            VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, 0);
-        else
-            VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, stepCount);
-    }
+    // Unused in Alolan Seaglass
+    return;
 }
 
 // called before fade-in
 void SetDeoxysRockPalette(void)
 {
-    u32 paletteNum = IndexOfSpritePaletteTag(OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE);
-    LoadPalette(&sDeoxysRockPalettes[(u8)VarGet(VAR_DEOXYS_ROCK_LEVEL)], OBJ_PLTT_ID(paletteNum), PLTT_SIZEOF(4));
-    // Set faded to all black, weather blending handled during fade-in
-    CpuFill16(RGB_BLACK, &gPlttBufferFaded[OBJ_PLTT_ID(paletteNum)], PLTT_SIZE_4BPP);
+    // Unused in Alolan Seaglass
+    return;
 }
 
 void SetPCBoxToSendMon(u8 boxId)

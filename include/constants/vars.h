@@ -71,8 +71,8 @@
 #define VAR_FRONTIER_GAMBLER_AMOUNT_BET                  0x4032
 #define VAR_FRONTIER_GAMBLER_STATE                       0x4033
 
-#define VAR_DEOXYS_ROCK_STEP_COUNT                       0x4034
-#define VAR_DEOXYS_ROCK_LEVEL                            0x4035
+#define VAR_DIFFICULTY                                   0x4034 // 0 = Normal (default), 1 = Hard, 2 = Extreme
+#define VAR_UNUSED_0x4035                                0x4035
 #define VAR_PC_BOX_TO_SEND_MON                           0x4036
 #define VAR_ABNORMAL_WEATHER_LOCATION                    0x4037
 #define VAR_ABNORMAL_WEATHER_STEP_COUNTER                0x4038
@@ -103,6 +103,8 @@ VAR_INTRO_STATE used for a bunch of stuff on Melemele Island
 1 = Just exiting Player's room for first time
 2 = No Pokémon, outside for first time
 3 = Got starter; sent to Iki Town
+4 = Met Hau, headed into Iki Town
+5 = Introduced to Hala, Hau chose starter; told to check out Mahalo Trail while Festival is set up
 */
 #define VAR_INTRO_STATE                                  0x404E
 

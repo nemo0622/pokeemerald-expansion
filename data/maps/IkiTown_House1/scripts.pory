@@ -1,0 +1,12 @@
+mapscripts IkiTown_House1_MapScripts {}
+
+script IkiTown_House1_NPC_Woman
+{
+    lock
+    faceplayer
+    setspeaker("Woman")
+    msgbox(format("More Pokémon are always being found in Alola! I hear there are over 450 species that live on our islands!"))
+    closemessage
+    release
+    end
+}

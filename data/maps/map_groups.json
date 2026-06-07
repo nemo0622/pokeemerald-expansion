@@ -4,7 +4,8 @@
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
-    "gMapGroup_IndoorHauoliOutskirts"
+    "gMapGroup_IndoorHauoliOutskirts",
+    "gMapGroup_IndoorIkiTown"
   ],
   "gMapGroup_TownsAndRoutes": [
     "HauoliOutskirts",
@@ -128,5 +129,8 @@
   "gMapGroup_IndoorHauoliOutskirts": [
     "HauoliOutskirts_PlayersRoom",
     "HauoliOutskirts_PlayersRoomActual"
+  ],
+  "gMapGroup_IndoorIkiTown": [
+    "IkiTown_House1"
   ]
 }

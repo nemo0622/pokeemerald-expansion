@@ -2946,6 +2946,8 @@
 			applymovement \localid, Common_Movement_QuestionMark
 		.elseif \emoteArg == EMOTE_HEART
 			applymovement \localid, Common_Movement_Heart
+		.elseif \emoteArg == EMOTE_X
+			applymovement \localid, Common_Movement_EmoteX
 		.else
 			applymovement \localid, Common_Movement_ExclamationMark
 		.endif

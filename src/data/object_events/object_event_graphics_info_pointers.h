@@ -268,6 +268,18 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Sight
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_SwimmerM_Land;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_SwimmerF_Land;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Youngster;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Hala;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Hau;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Lillie_1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Lillie_2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Man_1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Man_2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Man_3;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Gentleman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Woman_1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Woman_2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Woman_3;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Lady;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_ELIO_NORMAL] =           &gObjectEventGraphicsInfo_ElioNormal,
@@ -532,6 +544,18 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SWIMMER_M_LAND] =                  &gObjectEventGraphicsInfo_Alola_SwimmerM_Land,
     [OBJ_EVENT_GFX_SWIMMER_F_LAND] =                  &gObjectEventGraphicsInfo_Alola_SwimmerF_Land,
     [OBJ_EVENT_GFX_YOUNGSTER] =                       &gObjectEventGraphicsInfo_Alola_Youngster,
+    [OBJ_EVENT_GFX_HALA] =                            &gObjectEventGraphicsInfo_Alola_Hala,
+    [OBJ_EVENT_GFX_HAU] =                             &gObjectEventGraphicsInfo_Alola_Hau,
+    [OBJ_EVENT_GFX_LILLIE_1] =                        &gObjectEventGraphicsInfo_Alola_Lillie_1,
+    [OBJ_EVENT_GFX_LILLIE_2] =                        &gObjectEventGraphicsInfo_Alola_Lillie_2,
+    [OBJ_EVENT_GFX_MAN_1] =                           &gObjectEventGraphicsInfo_Alola_Man_1,
+    [OBJ_EVENT_GFX_MAN_2] =                           &gObjectEventGraphicsInfo_Alola_Man_2,
+    [OBJ_EVENT_GFX_MAN_3] =                           &gObjectEventGraphicsInfo_Alola_Man_3,
+    [OBJ_EVENT_GFX_GENTLEMAN] =                       &gObjectEventGraphicsInfo_Alola_Gentleman,
+    [OBJ_EVENT_GFX_WOMAN_1] =                         &gObjectEventGraphicsInfo_Alola_Woman_1,
+    [OBJ_EVENT_GFX_WOMAN_2] =                         &gObjectEventGraphicsInfo_Alola_Woman_2,
+    [OBJ_EVENT_GFX_WOMAN_3] =                         &gObjectEventGraphicsInfo_Alola_Woman_3,
+    [OBJ_EVENT_GFX_LADY] =                            &gObjectEventGraphicsInfo_Alola_Lady,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

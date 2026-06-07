@@ -9367,8 +9367,8 @@
     {
       "id": "LAYOUT_IKI_TOWN",
       "name": "IkiTown_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 40,
+      "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_IkiTown",
       "border_filepath": "data/layouts/IkiTown/border.bin",
@@ -9403,6 +9403,16 @@
       "secondary_tileset": "gTileset_Hauoli",
       "border_filepath": "data/layouts/HauoliBeachfront/border.bin",
       "blockdata_filepath": "data/layouts/HauoliBeachfront/map.bin"
+    },
+    {
+      "id": "LAYOUT_IKI_TOWN_HOUSE1",
+      "name": "IkiTown_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaGenericBuilding",
+      "border_filepath": "data/layouts/IkiTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/IkiTown_House1/map.bin"
     }
   ]
 }

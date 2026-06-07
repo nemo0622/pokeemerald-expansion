@@ -363,6 +363,9 @@ enum {
 
 void ShowMapNamePopup(void)
 {
+    // Try to despawn Overworld Encounters, as a new map is being entered!
+    TryDespawnOWEsCrossingMapConnection();
+
     if (FlagGet(FLAG_HIDE_MAP_NAME_POPUP) != TRUE)
     {
         if (!FuncIsActiveTask(Task_MapNamePopUpWindow))

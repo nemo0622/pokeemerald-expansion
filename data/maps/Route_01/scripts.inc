@@ -574,69 +574,86 @@ Route_01_Script_ReactToStarter_5:
 	goto Route_01_Script_ReactToStarter_1
 
 
-Route_01_Sign_Directions::
-# 365 "data//maps/Route_01/scripts.pory"
+Route_01_Script_HauIntro::
+# 363 "data//maps/Route_01/scripts.pory"
 	lock
-# 366 "data//maps/Route_01/scripts.pory"
-	msgbox Route_01_Sign_Directions_Text_0
+# 364 "data//maps/Route_01/scripts.pory"
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+# 365 "data//maps/Route_01/scripts.pory"
+	switch VAR_TEMP_1
 # 367 "data//maps/Route_01/scripts.pory"
+	case 10, Route_01_Script_HauIntro_3
+# 369 "data//maps/Route_01/scripts.pory"
+	case 12, Route_01_Script_HauIntro_4
+# 372 "data//maps/Route_01/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
+Route_01_Script_HauIntro_1:
+# 374 "data//maps/Route_01/scripts.pory"
+	waitmovement 0
+# 375 "data//maps/Route_01/scripts.pory"
+	emote LOCALID_HAU_ROUTE01, EMOTE_EXCLAM
+# 376 "data//maps/Route_01/scripts.pory"
+	delay 10
+# 378 "data//maps/Route_01/scripts.pory"
+	applymovement LOCALID_HAU_ROUTE01, Common_Movement_WalkDown
+# 379 "data//maps/Route_01/scripts.pory"
+	waitmovement 0
+# 380 "data//maps/Route_01/scripts.pory"
+	bufferspeciesname STR_VAR_1, VAR_STARTER_MON
+# 381 "data//maps/Route_01/scripts.pory"
+	setspeaker Route_01_Script_YungoosEncounter_Text_11
+# 382 "data//maps/Route_01/scripts.pory"
+	msgbox Route_01_Script_HauIntro_Text_0
+# 384 "data//maps/Route_01/scripts.pory"
+	setspeaker Route_01_Script_HauIntro_Text_1
+# 385 "data//maps/Route_01/scripts.pory"
+	msgbox Route_01_Script_HauIntro_Text_2
+# 386 "data//maps/Route_01/scripts.pory"
 	closemessage
+# 387 "data//maps/Route_01/scripts.pory"
+	applymovement LOCALID_HAU_ROUTE01, Route_01_Script_HauIntro_Movement_2
+# 388 "data//maps/Route_01/scripts.pory"
+	waitmovement 0
+# 390 "data//maps/Route_01/scripts.pory"
+	setflag FLAG_HIDE_HAU_ROUTE_01
+# 391 "data//maps/Route_01/scripts.pory"
+	removeobject LOCALID_HAU_ROUTE01
+# 392 "data//maps/Route_01/scripts.pory"
+	setvar VAR_INTRO_STATE, 4
+# 394 "data//maps/Route_01/scripts.pory"
+	releaseall
+	end
+
+Route_01_Script_HauIntro_3:
 # 368 "data//maps/Route_01/scripts.pory"
+	applymovement LOCALID_PLAYER, Route_01_Script_HauIntro_Movement_0
+	goto Route_01_Script_HauIntro_1
+
+Route_01_Script_HauIntro_4:
+# 370 "data//maps/Route_01/scripts.pory"
+	applymovement LOCALID_PLAYER, Route_01_Script_HauIntro_Movement_1
+	goto Route_01_Script_HauIntro_1
+
+
+Route_01_Sign_Directions::
+# 402 "data//maps/Route_01/scripts.pory"
+	lock
+# 403 "data//maps/Route_01/scripts.pory"
+	msgbox Route_01_Sign_Directions_Text_0
+# 404 "data//maps/Route_01/scripts.pory"
+	closemessage
+# 405 "data//maps/Route_01/scripts.pory"
 	release
 	end
 
 
 Route_01_Trainer_LassAudrey::
-# 376 "data//maps/Route_01/scripts.pory"
+# 413 "data//maps/Route_01/scripts.pory"
 	trainerbattle_single TRAINER_LASS_AUDREY, Route_01_Trainer_LassAudrey_Text_0, Route_01_Trainer_LassAudrey_Text_1
-# 380 "data//maps/Route_01/scripts.pory"
-	setspeaker Route_01_Trainer_LassAudrey_Text_2
-# 381 "data//maps/Route_01/scripts.pory"
-	msgbox Route_01_Trainer_LassAudrey_Text_3
-# 382 "data//maps/Route_01/scripts.pory"
-	closemessage
-# 383 "data//maps/Route_01/scripts.pory"
-	release
-	end
-
-
-Route_01_Trainer_YoungsterJimmy::
-# 389 "data//maps/Route_01/scripts.pory"
-	trainerbattle_single TRAINER_YOUNGSTER_JIMMY, Route_01_Trainer_YoungsterJimmy_Text_0, Route_01_Trainer_YoungsterJimmy_Text_1
-# 393 "data//maps/Route_01/scripts.pory"
-	setspeaker Route_01_Trainer_YoungsterJimmy_Text_2
-# 394 "data//maps/Route_01/scripts.pory"
-	msgbox Route_01_Trainer_YoungsterJimmy_Text_3
-# 395 "data//maps/Route_01/scripts.pory"
-	closemessage
-# 396 "data//maps/Route_01/scripts.pory"
-	release
-	end
-
-
-Route_01_Trainer_SchoolBoyOliver::
-# 402 "data//maps/Route_01/scripts.pory"
-	trainerbattle_single TRAINER_SCHOOL_BOY_OLIVER, Route_01_Trainer_SchoolBoyOliver_Text_0, Route_01_Trainer_SchoolBoyOliver_Text_1
-# 406 "data//maps/Route_01/scripts.pory"
-	setspeaker Route_01_Trainer_SchoolBoyOliver_Text_2
-# 407 "data//maps/Route_01/scripts.pory"
-	msgbox Route_01_Trainer_SchoolBoyOliver_Text_3
-# 408 "data//maps/Route_01/scripts.pory"
-	closemessage
-# 409 "data//maps/Route_01/scripts.pory"
-	release
-	end
-
-
-Route_01_NPC_BugCatcher::
-# 415 "data//maps/Route_01/scripts.pory"
-	lock
-# 416 "data//maps/Route_01/scripts.pory"
-	faceplayer
 # 417 "data//maps/Route_01/scripts.pory"
-	setspeaker Route_01_NPC_BugCatcher_Text_0
+	setspeaker Route_01_Trainer_LassAudrey_Text_2
 # 418 "data//maps/Route_01/scripts.pory"
-	msgbox Route_01_NPC_BugCatcher_Text_1
+	msgbox Route_01_Trainer_LassAudrey_Text_3
 # 419 "data//maps/Route_01/scripts.pory"
 	closemessage
 # 420 "data//maps/Route_01/scripts.pory"
@@ -644,46 +661,90 @@ Route_01_NPC_BugCatcher::
 	end
 
 
-Route_01_NPC_SightseerF::
+Route_01_Trainer_YoungsterJimmy::
 # 426 "data//maps/Route_01/scripts.pory"
-	lock
-# 427 "data//maps/Route_01/scripts.pory"
-	faceplayer
-# 428 "data//maps/Route_01/scripts.pory"
-	setspeaker Route_01_NPC_SightseerF_Text_0
-# 429 "data//maps/Route_01/scripts.pory"
-	msgbox Route_01_NPC_SightseerF_Text_1
+	trainerbattle_single TRAINER_YOUNGSTER_JIMMY, Route_01_Trainer_YoungsterJimmy_Text_0, Route_01_Trainer_YoungsterJimmy_Text_1
 # 430 "data//maps/Route_01/scripts.pory"
-	closemessage
+	setspeaker Route_01_Trainer_YoungsterJimmy_Text_2
 # 431 "data//maps/Route_01/scripts.pory"
-	applymovement VAR_LAST_TALKED, Route_01_Script_YungoosEncounter_Movement_11
+	msgbox Route_01_Trainer_YoungsterJimmy_Text_3
 # 432 "data//maps/Route_01/scripts.pory"
-	waitmovement 0
+	closemessage
 # 433 "data//maps/Route_01/scripts.pory"
 	release
 	end
 
 
-Route_01_NPC_Rockruff::
+Route_01_Trainer_SchoolBoyOliver::
 # 439 "data//maps/Route_01/scripts.pory"
-	lock
-# 440 "data//maps/Route_01/scripts.pory"
-	faceplayer
-# 441 "data//maps/Route_01/scripts.pory"
-	setspeaker Route_01_NPC_Rockruff_Text_0
-# 442 "data//maps/Route_01/scripts.pory"
-	playmoncry SPECIES_ROCKRUFF, CRY_MODE_NORMAL
+	trainerbattle_single TRAINER_SCHOOL_BOY_OLIVER, Route_01_Trainer_SchoolBoyOliver_Text_0, Route_01_Trainer_SchoolBoyOliver_Text_1
 # 443 "data//maps/Route_01/scripts.pory"
-	msgbox Route_01_NPC_Rockruff_Text_1
+	setspeaker Route_01_Trainer_SchoolBoyOliver_Text_2
 # 444 "data//maps/Route_01/scripts.pory"
-	waitmoncry
+	msgbox Route_01_Trainer_SchoolBoyOliver_Text_3
 # 445 "data//maps/Route_01/scripts.pory"
 	closemessage
 # 446 "data//maps/Route_01/scripts.pory"
-	applymovement VAR_LAST_TALKED, Route_01_NPC_Rockruff_Movement_0
-# 447 "data//maps/Route_01/scripts.pory"
+	release
+	end
+
+
+Route_01_NPC_BugCatcher::
+# 452 "data//maps/Route_01/scripts.pory"
+	lock
+# 453 "data//maps/Route_01/scripts.pory"
+	faceplayer
+# 454 "data//maps/Route_01/scripts.pory"
+	setspeaker Route_01_NPC_BugCatcher_Text_0
+# 455 "data//maps/Route_01/scripts.pory"
+	msgbox Route_01_NPC_BugCatcher_Text_1
+# 456 "data//maps/Route_01/scripts.pory"
+	closemessage
+# 457 "data//maps/Route_01/scripts.pory"
+	release
+	end
+
+
+Route_01_NPC_SightseerF::
+# 463 "data//maps/Route_01/scripts.pory"
+	lock
+# 464 "data//maps/Route_01/scripts.pory"
+	faceplayer
+# 465 "data//maps/Route_01/scripts.pory"
+	setspeaker Route_01_NPC_SightseerF_Text_0
+# 466 "data//maps/Route_01/scripts.pory"
+	msgbox Route_01_NPC_SightseerF_Text_1
+# 467 "data//maps/Route_01/scripts.pory"
+	closemessage
+# 468 "data//maps/Route_01/scripts.pory"
+	applymovement VAR_LAST_TALKED, Route_01_Script_YungoosEncounter_Movement_11
+# 469 "data//maps/Route_01/scripts.pory"
 	waitmovement 0
-# 448 "data//maps/Route_01/scripts.pory"
+# 470 "data//maps/Route_01/scripts.pory"
+	release
+	end
+
+
+Route_01_NPC_Rockruff::
+# 476 "data//maps/Route_01/scripts.pory"
+	lock
+# 477 "data//maps/Route_01/scripts.pory"
+	faceplayer
+# 478 "data//maps/Route_01/scripts.pory"
+	setspeaker Route_01_NPC_Rockruff_Text_0
+# 479 "data//maps/Route_01/scripts.pory"
+	playmoncry SPECIES_ROCKRUFF, CRY_MODE_NORMAL
+# 480 "data//maps/Route_01/scripts.pory"
+	msgbox Route_01_NPC_Rockruff_Text_1
+# 481 "data//maps/Route_01/scripts.pory"
+	waitmoncry
+# 482 "data//maps/Route_01/scripts.pory"
+	closemessage
+# 483 "data//maps/Route_01/scripts.pory"
+	applymovement VAR_LAST_TALKED, Route_01_NPC_Rockruff_Movement_0
+# 484 "data//maps/Route_01/scripts.pory"
+	waitmovement 0
+# 485 "data//maps/Route_01/scripts.pory"
 	release
 	end
 
@@ -1061,9 +1122,48 @@ Route_01_Script_ReactToStarter_Movement_6:
 	face_right
 	step_end
 
-# 446 "data//maps/Route_01/scripts.pory"
+# 368 "data//maps/Route_01/scripts.pory"
+Route_01_Script_HauIntro_Movement_0:
+# 368 "data//maps/Route_01/scripts.pory"
+	walk_right
+# 368 "data//maps/Route_01/scripts.pory"
+	walk_up
+# 368 "data//maps/Route_01/scripts.pory"
+	step_end
+
+# 370 "data//maps/Route_01/scripts.pory"
+Route_01_Script_HauIntro_Movement_1:
+# 370 "data//maps/Route_01/scripts.pory"
+	walk_left
+# 370 "data//maps/Route_01/scripts.pory"
+	walk_up
+# 370 "data//maps/Route_01/scripts.pory"
+	step_end
+
+# 387 "data//maps/Route_01/scripts.pory"
+Route_01_Script_HauIntro_Movement_2:
+# 387 "data//maps/Route_01/scripts.pory"
+	walk_up
+# 387 "data//maps/Route_01/scripts.pory"
+	walk_up
+# 387 "data//maps/Route_01/scripts.pory"
+	walk_left
+# 387 "data//maps/Route_01/scripts.pory"
+	walk_up
+# 387 "data//maps/Route_01/scripts.pory"
+	walk_up
+# 387 "data//maps/Route_01/scripts.pory"
+	walk_up
+# 387 "data//maps/Route_01/scripts.pory"
+	walk_up
+# 387 "data//maps/Route_01/scripts.pory"
+	walk_up
+# 387 "data//maps/Route_01/scripts.pory"
+	step_end
+
+# 483 "data//maps/Route_01/scripts.pory"
 Route_01_NPC_Rockruff_Movement_0:
-# 446 "data//maps/Route_01/scripts.pory"
+# 483 "data//maps/Route_01/scripts.pory"
 	face_right
 	step_end
 
@@ -1222,75 +1322,94 @@ Route_01_Script_ReactToStarter_Text_2:
 	.string "into their Poké Balls, then let's show\l"
 	.string "your Mom your new friend!$"
 
+Route_01_Script_HauIntro_Text_0:
+# 382 "data//maps/Route_01/scripts.pory"
+	.string "Hey, hey! You've got a {STR_VAR_1}\n"
+	.string "with you... You must be {PLAYER}!$"
+
+Route_01_Script_HauIntro_Text_1:
+# 384 "data//maps/Route_01/scripts.pory"
+	.string "Hau$"
+
+Route_01_Script_HauIntro_Text_2:
+# 385 "data//maps/Route_01/scripts.pory"
+	.string "I'm Hau! {COLOR GREEN}Professor Kukui{COLOR DARK_GRAY} told me to keep\n"
+	.string "an eye out for ya. We're supposed to get\l"
+	.string "our first Pokémon at the Festival in Iki\l"
+	.string "Town!\p"
+	.string "I know you got yours already, but you\n"
+	.string "should still come get to know everyone!\l"
+	.string "I'll see ya, cousin!$"
+
 Route_01_Sign_Directions_Text_0:
-# 366 "data//maps/Route_01/scripts.pory"
+# 403 "data//maps/Route_01/scripts.pory"
 	.string "{UP_ARROW} Route 3\n"
 	.string "{LEFT_ARROW} Iki Town\p"
 	.string "{RIGHT_ARROW} Hau'oli Outskirts$"
 
 Route_01_Trainer_LassAudrey_Text_0:
-# 377 "data//maps/Route_01/scripts.pory"
+# 414 "data//maps/Route_01/scripts.pory"
 	.string "When the eyes of Pokémon Trainers\n"
 	.string "meet, you know what's going to happen,\l"
 	.string "right?\p"
 	.string "A Pokémon battle!$"
 
 Route_01_Trainer_LassAudrey_Text_1:
-# 378 "data//maps/Route_01/scripts.pory"
+# 415 "data//maps/Route_01/scripts.pory"
 	.string "Oh! Your Pokémon looks so happy it\n"
 	.string "won...$"
 
 Route_01_Trainer_LassAudrey_Text_2:
-# 380 "data//maps/Route_01/scripts.pory"
+# 417 "data//maps/Route_01/scripts.pory"
 	.string "Lass Audrey$"
 
 Route_01_Trainer_LassAudrey_Text_3:
-# 381 "data//maps/Route_01/scripts.pory"
+# 418 "data//maps/Route_01/scripts.pory"
 	.string "I like raising cute Pokémon. Lechonk is\n"
 	.string "cute, y'know!$"
 
 Route_01_Trainer_YoungsterJimmy_Text_0:
-# 390 "data//maps/Route_01/scripts.pory"
+# 427 "data//maps/Route_01/scripts.pory"
 	.string "Go for it, Caterpie! Show me the power\n"
 	.string "of Bug-type Pokémon!$"
 
 Route_01_Trainer_YoungsterJimmy_Text_1:
-# 391 "data//maps/Route_01/scripts.pory"
+# 428 "data//maps/Route_01/scripts.pory"
 	.string "My Bug Pokémon lost! You're really\n"
 	.string "bugging me, you know?$"
 
 Route_01_Trainer_YoungsterJimmy_Text_2:
-# 393 "data//maps/Route_01/scripts.pory"
+# 430 "data//maps/Route_01/scripts.pory"
 	.string "Youngster Jimmy$"
 
 Route_01_Trainer_YoungsterJimmy_Text_3:
-# 394 "data//maps/Route_01/scripts.pory"
+# 431 "data//maps/Route_01/scripts.pory"
 	.string "I caught my Caterpie in the grass\n"
 	.string "nearby. It came right out to say hello!$"
 
 Route_01_Trainer_SchoolBoyOliver_Text_0:
-# 403 "data//maps/Route_01/scripts.pory"
+# 440 "data//maps/Route_01/scripts.pory"
 	.string "Hey! Please battle me!$"
 
 Route_01_Trainer_SchoolBoyOliver_Text_1:
-# 404 "data//maps/Route_01/scripts.pory"
+# 441 "data//maps/Route_01/scripts.pory"
 	.string "If you're strong, please go away!$"
 
 Route_01_Trainer_SchoolBoyOliver_Text_2:
-# 406 "data//maps/Route_01/scripts.pory"
+# 443 "data//maps/Route_01/scripts.pory"
 	.string "School Boy Oliver$"
 
 Route_01_Trainer_SchoolBoyOliver_Text_3:
-# 407 "data//maps/Route_01/scripts.pory"
+# 444 "data//maps/Route_01/scripts.pory"
 	.string "You're a real good Trainer. I wanna be\n"
 	.string "like you!$"
 
 Route_01_NPC_BugCatcher_Text_0:
-# 417 "data//maps/Route_01/scripts.pory"
+# 454 "data//maps/Route_01/scripts.pory"
 	.string "Bug Catcher$"
 
 Route_01_NPC_BugCatcher_Text_1:
-# 418 "data//maps/Route_01/scripts.pory"
+# 455 "data//maps/Route_01/scripts.pory"
 	.string "Huff, huff... Phew! I barely made it away\n"
 	.string "from a wild Yungoos!\p"
 	.string "Some Pokémon are brave enough to {COLOR GREEN}come\n"
@@ -1298,19 +1417,19 @@ Route_01_NPC_BugCatcher_Text_1:
 	.string "{COLOR RED}chase you down{COLOR DARK_GRAY}, like Yungoos!$"
 
 Route_01_NPC_SightseerF_Text_0:
-# 428 "data//maps/Route_01/scripts.pory"
+# 465 "data//maps/Route_01/scripts.pory"
 	.string "Sightseer$"
 
 Route_01_NPC_SightseerF_Text_1:
-# 429 "data//maps/Route_01/scripts.pory"
+# 466 "data//maps/Route_01/scripts.pory"
 	.string "This Rockruff has been following me\n"
 	.string "from Ten Carat Hill! I never knew\l"
 	.string "Pokémon could be so friendly.$"
 
 Route_01_NPC_Rockruff_Text_0:
-# 441 "data//maps/Route_01/scripts.pory"
+# 478 "data//maps/Route_01/scripts.pory"
 	.string "Rockruff$"
 
 Route_01_NPC_Rockruff_Text_1:
-# 443 "data//maps/Route_01/scripts.pory"
+# 480 "data//maps/Route_01/scripts.pory"
 	.string "Arf warf!$"

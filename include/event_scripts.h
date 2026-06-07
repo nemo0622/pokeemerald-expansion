@@ -632,7 +632,7 @@ extern const u8 EventScript_AfterWhiteOutMomHeal[];
 extern const u8 EventScript_AfterWhiteOutHeal[];
 extern const u8 EventScript_AfterWhiteOutHeal_Frlg[];
 extern const u8 EventScript_AfterWhiteOutHealMsgPreFirstBoss[];
-extern const u8 EventScript_ResetMrBriney[];
+// extern const u8 EventScript_ResetMrBriney[];
 extern const u8 EventScript_DoLinkRoomExit[];
 extern const u8 CableClub_EventScript_TooBusyToNotice[];
 extern const u8 CableClub_EventScript_ReadTrainerCard[];

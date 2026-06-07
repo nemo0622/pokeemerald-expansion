@@ -788,9 +788,9 @@
 #define FLAG_HIDE_LITTEN_STARTERS_HOUSE                             0x2DF // Used in Starter intro
 #define FLAG_HIDE_POPPLIO_STARTERS_HOUSE                            0x2E0 // Used in Starter intro
 #define FLAG_HIDE_SAMSON_HAUOLI_OUTSKIRTS                           0x2E1 // Hides Samson during opening
-#define FLAG_HIDE_ROUTE_104_MR_BRINEY                               0x2E2
-#define FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY                           0x2E3
-#define FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN                            0x2E4
+#define FLAG_HIDE_HAU_ROUTE_01                                      0x2E2 // Set after meeting Hau
+#define FLAG_HIDE_ALOLAN_EXEGGUTOR_IKI_TOWN                         0x2E3 // Event when entering Iki Town where Exeggutor walks by player
+#define FLAG_HIDE_HALA_INTRO_IKI_TOWN                               0x2E4 // Hides Hala by entrance of Iki Town
 #define FLAG_HIDE_ROUTE_109_MR_BRINEY                               0x2E5
 #define FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT                          0x2E6
 #define FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN                       0x2E7

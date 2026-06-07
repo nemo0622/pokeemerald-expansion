@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_IKI_TOWN",
-      "offset": 0,
+      "offset": -17,
       "direction": "up"
     }
   ],
@@ -232,6 +232,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_HAU_ROUTE01",
+      "graphics_id": "OBJ_EVENT_GFX_HAU",
+      "x": 11,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_HAU_ROUTE_01"
     }
   ],
   "warp_events": [],
@@ -289,6 +303,33 @@
       "var": "FLAG_HIDE_SAMSON_ROUTE_01",
       "var_value": "0",
       "script": "Route_01_Trigger_RequireStarter"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_INTRO_STATE",
+      "var_value": "3",
+      "script": "Route_01_Script_HauIntro"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_INTRO_STATE",
+      "var_value": "3",
+      "script": "Route_01_Script_HauIntro"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_INTRO_STATE",
+      "var_value": "3",
+      "script": "Route_01_Script_HauIntro"
     }
   ],
   "bg_events": [

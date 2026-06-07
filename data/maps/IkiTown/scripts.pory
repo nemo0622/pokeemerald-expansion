@@ -2,3 +2,207 @@ raw `
 IkiTown_MapScripts::
 	.byte 0
 `
+
+script IkiTown_Script_HalaIntro
+{
+	lockall
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+	switch(var(VAR_TEMP_1))
+	{
+		case 26:
+			applymovement(LOCALID_PLAYER, moves(walk_right, walk_up * 2, delay_16 * 2, face_right, step_end))
+		case 28:
+			applymovement(LOCALID_PLAYER, moves(walk_left, walk_up * 2, delay_16 * 2, face_right, step_end))
+		default:
+			applymovement(LOCALID_PLAYER, Common_Movement_WalkUp2)
+	}
+	// Player position now x27 y23
+
+	// School kids run in circle
+	delay(10)
+	emote(2, EMOTE_EXCLAM)
+	applymovement(2, moves(walk_fast_right, walk_fast_down, walk_fast_left, walk_fast_up, face_right, step_end))
+	applymovement(3, moves(walk_fast_down, walk_fast_left, walk_fast_up, walk_fast_right, face_left, step_end))
+	waitmovement(0)
+	delay(20)
+
+	// Alolan Exeggutor waddles by
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+	applymovement(4, moves(walk_right * 8, walk_up * 6, step_end))
+	delay(80)
+	applymovement(5, moves(walk_fast_right * 8, face_up, delay_16, jump_in_place_up * 2, step_end))
+	waitmovement(0)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
+	setspeaker("Prof. Kukui")
+	msgbox(format("Aue! Come on, just give me one good Dragon Hammer, {COLOR BLUE}Exeggutor{COLOR DARK_GRAY}!"))
+	closemessage
+	applymovement(5, moves(walk_fast_up * 6, step_end))
+	waitmovement(0)
+	setflag(FLAG_HIDE_ALOLAN_EXEGGUTOR_IKI_TOWN)
+	removeobject(4)
+	removeobject(5)
+
+	// Hala approaches
+	delay(20)
+	applymovement(LOCALID_HALA_IKI, moves(walk_down * 3, face_up, step_end))
+	waitmovement(0)
+	emote(LOCALID_HALA_IKI, EMOTE_QUESTION)
+	setspeaker("???")
+	msgbox(format("Ohoho! Kukui never changes, does he?"))
+	closemessage
+	delay(10)
+	applymovement(LOCALID_HALA_IKI, moves(walk_down * 2, face_down, step_end))
+	waitmovement(0)
+	setspeaker("Kahuna Hala")
+	msgbox(format("Alola! I'm glad to meet you, young Trainer. My name is {COLOR GREEN}Hala{COLOR DARK_GRAY}, {COLOR GREEN}Kahuna of Melemele Island{COLOR DARK_GRAY}.\p I've heard much and more about you. {PLAYER}, grandchild of the legendary Samson Oak, returning to their home island after so long away!\p The {COLOR GREEN}Manalo Festival{COLOR DARK_GRAY} begins soon. Before, this would be when you would be granted a Pokémon, but it seems they beat us to it!\p For now, please join in on the festivities. My grandson {COLOR GREEN}Hau{COLOR DARK_GRAY} has gone {COLOR GREEN}up Mahalo Trail{COLOR DARK_GRAY} - perhaps you could get to know him?"))
+	closemessage
+
+	fadescreenswapbuffers(FADE_TO_BLACK)
+	delay(30)
+	setvar(VAR_INTRO_STATE, 5)
+	setflag(FLAG_HIDE_HALA_INTRO_IKI_TOWN)
+	removeobject(LOCALID_HALA_IKI)
+	delay(30)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+	delay(15)
+
+	releaseall
+	end
+}
+
+// --------------------------------------------- NPC Scripts ------------------------------------------------
+
+script IkiTown_NPC_Hala
+{
+	lock
+	faceplayer
+	setspeaker("Hala")
+	msgbox(format("{PLAYER}, Alola! The {COLOR GREEN}Manalo Festival{COLOR DARK_GRAY} is still being set up. Tonight, we honor our Island Guardian and call on them for their protection.\p {COLOR GREEN}Hau{COLOR DARK_GRAY}, my grandson, has gone {COLOR GREEN}up Mahalo Trail{COLOR DARK_GRAY} with Kukui's Assistant. You should try to find them."))
+	closemessage
+	release
+	end
+}
+
+script IkiTown_NPC_KukuiWithExeggutor
+{
+	lock
+	faceplayer
+	setspeaker("Prof. Kukui")
+	msgbox(format("Check out this guy! {COLOR BLUE}Alolan Exeggutor{COLOR DARK_GRAY} towers over most Pokémon, yeah! It's so high up, it doesn't seem to hear me sometimes..."))
+	closemessage
+	release
+	end
+}
+
+script IkiTown_NPC_AlolanExeggutor
+{
+	lock
+    faceplayer
+    setspeaker("Exeggutor")
+    playmoncry(SPECIES_EXEGGUTOR_ALOLA, CRY_MODE_NORMAL)
+    msgbox(format("BRUW-AAAH!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script IkiTown_NPC_LassByFlowers
+{
+	lock
+	faceplayer
+	setspeaker("Lass")
+	msgbox(format("Iki Town is usually a sleepy spot on top of a hill, but it lights up during the Manalo Festival!"))
+	closemessage
+	release
+	end
+}
+
+script IkiTown_NPC_SchoolBoy
+{
+	lock
+	faceplayer
+	setspeaker("School Boy")
+	msgbox(format("Kehehe, I got today off school! I love this time of year!"))
+	closemessage
+	release
+	end
+}
+
+script IkiTown_NPC_SchoolGirl
+{
+	lock
+	faceplayer
+	setspeaker("School Girl")
+	msgbox(format("There are Pokémon in the grass! Maybe I'll catch one someday..."))
+	closemessage
+	release
+	end
+}
+
+script IkiTown_NPC_ManWandering
+{
+	lock
+	faceplayer
+	setspeaker("Man")
+	msgbox(format("Did you know? The Manalo Festival celebrates {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY}, the Guardian of Melemele Island.\p I read that some older stories refer to {COLOR RED}'The Blinding One'{COLOR DARK_GRAY}, but I don't know much about that."))
+	closemessage
+	release
+	end
+}
+
+script IkiTown_NPC_DancerWithOricorio
+{
+	lock
+	setspeaker("Dancer")
+	msgbox(format("Okay, one more time... {COLOR BLUE}Oricorio{COLOR DARK_GRAY}, dance together!"))
+	closemessage
+
+	// Oricorio's "dance"
+	delay(10)
+	applymovement(12, moves(jump_left, jump_right * 2, jump_left, face_down, step_end))
+	waitmovement(0)
+	applymovement(13, moves(walk_in_place_down * 2, walk_in_place_right * 2, walk_in_place_up * 2, walk_in_place_left * 2, face_down, step_end))
+	waitmovement(0)
+
+	emote(11, EMOTE_X)
+	delay(10)
+	faceplayer
+	setspeaker("Dancer")
+	msgbox(format("{COLOR BLUE}Oricorio{COLOR DARK_GRAY} are wonderful dancers, but all have their own style. I'm hoping to dance with them in next year's Manalo Festival!"))
+	closemessage
+	applymovement(11, Common_Movement_FaceUp)
+	waitmovement(0)
+	release
+	end
+}
+
+script IkiTown_NPC_OricorioPomPom
+{
+	lock
+    faceplayer
+    setspeaker("Oricorio")
+    playmoncry(SPECIES_ORICORIO_POM_POM, CRY_MODE_NORMAL)
+    msgbox(format("Chee-uh!"))
+    waitmoncry
+    closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceDown)
+	waitmovement(0)
+    release
+    end
+}
+script IkiTown_NPC_OricorioPau
+{
+	lock
+    faceplayer
+    setspeaker("Oricorio")
+    playmoncry(SPECIES_ORICORIO_POM_POM, CRY_MODE_NORMAL)
+    msgbox(format("Shee-ou!"))
+    waitmoncry
+    closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceDown)
+	waitmovement(0)
+    release
+    end
+}

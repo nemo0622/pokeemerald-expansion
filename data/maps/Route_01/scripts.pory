@@ -358,6 +358,43 @@ script Route_01_Script_ReactToStarter
 	end
 }
 
+script Route_01_Script_HauIntro
+{
+	lock
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+	switch(var(VAR_TEMP_1))
+	{
+		case 10:
+			applymovement(LOCALID_PLAYER, moves(walk_right, walk_up, step_end))
+		case 12:
+			applymovement(LOCALID_PLAYER, moves(walk_left, walk_up, step_end))
+		default:
+			applymovement(LOCALID_PLAYER, Common_Movement_WalkUp)
+	}
+	waitmovement(0)
+	emote(LOCALID_HAU_ROUTE01, EMOTE_EXCLAM)
+	delay(10)
+
+	applymovement(LOCALID_HAU_ROUTE01, Common_Movement_WalkDown)
+	waitmovement(0)
+	bufferspeciesname(STR_VAR_1, VAR_STARTER_MON)
+	setspeaker("???")
+	msgbox(format("Hey, hey! You've got a {STR_VAR_1} with you... You must be {PLAYER}!"))
+
+	setspeaker("Hau")
+	msgbox(format("I'm Hau! {COLOR GREEN}Professor Kukui{COLOR DARK_GRAY} told me to keep an eye out for ya. We're supposed to get our first Pokémon at the Festival in Iki Town!\p I know you got yours already, but you should still come get to know everyone! I'll see ya, cousin!"))
+	closemessage
+	applymovement(LOCALID_HAU_ROUTE01, moves(walk_up * 2, walk_left, walk_up * 5, step_end))
+	waitmovement(0)
+
+	setflag(FLAG_HIDE_HAU_ROUTE_01)
+	removeobject(LOCALID_HAU_ROUTE01)
+	setvar(VAR_INTRO_STATE, 4)
+
+	releaseall
+	end
+}
+
 // --------------------------------------- Sign Scripts --------------------------------------------
 
 script Route_01_Sign_Directions

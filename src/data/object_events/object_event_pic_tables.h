@@ -1429,3 +1429,51 @@ static const struct SpriteFrameImage sPicTable_Alola_SwimmerF_Land[] = {
 static const struct SpriteFrameImage sPicTable_Alola_Youngster[] = {
     overworld_ascending_frames(gObjectEventPic_Alola_Youngster, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_Alola_Hala[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Hala, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Hau[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Hau, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Lillie_1[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Lillie_1, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Lillie_2[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Lillie_2, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Man_1[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Man_1, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Man_2[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Man_2, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Man_3[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Man_3, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Gentleman[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Gentleman, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Woman_1[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Woman_1, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Woman_2[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Woman_2, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Woman_3[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Woman_3, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Lady[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Lady, 2, 4),
+};

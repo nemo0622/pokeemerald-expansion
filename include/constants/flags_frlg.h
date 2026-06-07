@@ -2040,8 +2040,8 @@
 #define FLAG_HIDE_POPPLIO_STARTERS_HOUSE          0
 #define FLAG_HIDE_SAMSON_HAUOLI_OUTSKIRTS             0
 #define FLAG_HIDE_ROUTE_104_MR_BRINEY                               0
-#define FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY                           0
-#define FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN                            0
+#define FLAG_HIDE_ALOLAN_EXEGGUTOR_IKI_TOWN                           0
+#define FLAG_HIDE_HALA_INTRO_IKI_TOWN                            0
 #define FLAG_HIDE_ROUTE_109_MR_BRINEY                               0
 #define FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT                          0
 #define FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN                       0
