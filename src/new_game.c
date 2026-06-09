@@ -45,6 +45,7 @@
 #include "field_specials.h"
 #include "berry_powder.h"
 #include "mystery_gift.h"
+#include "quests.h"
 #include "union_room_chat.h"
 #include "constants/map_groups.h"
 #include "constants/items.h"
@@ -229,6 +230,7 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
+    QuestMenu_ResetMenuSaveData();
 }
 
 static void ResetMiniGamesRecords(void)

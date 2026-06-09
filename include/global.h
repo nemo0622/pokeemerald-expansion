@@ -252,6 +252,9 @@ struct NPCFollower
 #include "constants/items.h"
 #define ITEM_FLAGS_COUNT ((ITEMS_COUNT / 8) + ((ITEMS_COUNT % 8) ? 1 : 0))
 
+// quest menu
+#include "constants/quests.h"
+
 struct SaveBlock3
 {
 #if OW_USE_FAKE_RTC
@@ -270,6 +273,14 @@ struct SaveBlock3
 #if APRICORN_TREE_COUNT > 0
     u8 apricornTrees[NUM_APRICORN_TREE_BYTES];
 #endif
+
+#define QUEST_FLAGS_COUNT ROUND_BITS_TO_BYTES(QUEST_COUNT)
+#define SUB_FLAGS_COUNT ROUND_BITS_TO_BYTES(SUB_QUEST_COUNT)
+#define QUEST_STATES 5 //Number of different quest states tracked in the saveblock
+
+    u8 questData[QUEST_FLAGS_COUNT * QUEST_STATES];
+    u8 subQuests[SUB_FLAGS_COUNT];
+
 }; /* max size 1624 bytes */
 
 extern struct SaveBlock3 *gSaveBlock3Ptr;
