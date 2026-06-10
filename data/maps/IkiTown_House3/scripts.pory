@@ -1,0 +1,23 @@
+mapscripts IkiTown_House3_MapScripts {}
+
+script IkiTown_House3_NPC_OldMan
+{
+    lock
+    faceplayer
+    setspeaker("Old Man")
+    msgbox(format("Open windows let in the night. When night comes around, it's best to get to bed."))
+    closemessage
+    release
+    end
+}
+
+script IkiTown_House3_NPC_OldWoman
+{
+    lock
+    faceplayer
+    setspeaker("Old Woman")
+    msgbox(format("Ah... On lovely calm days like this one, I always think of my brother... When we were young, he always worked so hard to collect sand from the beach.\p Where could he be now?\n What must he be doing?"))
+    closemessage
+    release
+    end
+}

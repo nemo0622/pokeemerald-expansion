@@ -67,6 +67,11 @@ script IkiTown_Script_HalaIntro
 	fadescreenswapbuffers(FADE_FROM_BLACK)
 	delay(15)
 
+	// JUNE 10th TODO:
+	// 5. 	After everything else, start on the full-screen Start Menu!
+
+	startsubquest(QUEST_01, SUB_QUEST_3) // Unlock Subquest 3: Find Hau in Mahalo Trail
+
 	releaseall
 	end
 }
@@ -89,7 +94,7 @@ script IkiTown_NPC_KukuiWithExeggutor
 	lock
 	faceplayer
 	setspeaker("Prof. Kukui")
-	msgbox(format("Check out this guy! {COLOR BLUE}Alolan Exeggutor{COLOR DARK_GRAY} towers over most Pokémon, yeah! It's so high up, it doesn't seem to hear me sometimes..."))
+	msgbox(format("Check out this guy! {COLOR BLUE}Alolan Exeggutor{COLOR DARK_GRAY} towers over most Pokémon, yeah! It's so high up, it doesn't seem to hear me sometimes...\p You met {COLOR GREEN}Hala{COLOR DARK_GRAY}? He's the {COLOR GREEN}Kahuna{COLOR DARK_GRAY}, leader of Melemele Island. I thought it would be good for you two to chat!"))
 	closemessage
 	release
 	end
@@ -152,6 +157,17 @@ script IkiTown_NPC_ManWandering
 	end
 }
 
+script IkiTown_NPC_WomanWandering
+{
+	lock
+	faceplayer
+	setspeaker("Woman")
+	msgbox(format("Just having Pokémon at your side makes you feel all warm inside, doesn't it? Eating dinner together, playing together, spending time together... It's pure happiness!"))
+	closemessage
+	release
+	end
+}
+
 script IkiTown_NPC_DancerWithOricorio
 {
 	lock
@@ -205,4 +221,35 @@ script IkiTown_NPC_OricorioPau
 	waitmovement(0)
     release
     end
+}
+
+script IkiTown_NPC_YoungsterRockruff
+{
+	lock
+	faceplayer
+	setspeaker("Youngster")
+	msgbox(format("Didja know? When a Rockruff really likes you, it rubs against you with the stones on its neck!\p But... it does kinda hurt..."))
+	closemessage
+	release
+	end
+}
+
+// ---------------------------------------- Sign Scripts -------------------------------------
+
+script IkiTown_Sign_LocationSign
+{
+	lock
+	msgbox(format("Iki Town\n Where We Give Thanks to Pokémon."))
+	closemessage
+	release
+	end
+}
+
+script IkiTown_Sign_MahaloTrailUp
+{
+	lock
+	msgbox(format("{UP_ARROW} Mahalo Trail"))
+	closemessage
+	release
+	end
 }

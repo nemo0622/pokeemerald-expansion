@@ -9413,6 +9413,26 @@
       "secondary_tileset": "gTileset_AlolaGenericBuilding",
       "border_filepath": "data/layouts/IkiTown_House1/border.bin",
       "blockdata_filepath": "data/layouts/IkiTown_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_IKI_TOWN_HOUSE2",
+      "name": "IkiTown_House2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaGenericBuilding",
+      "border_filepath": "data/layouts/IkiTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/IkiTown_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_IKI_TOWN_HOUSE3",
+      "name": "IkiTown_House3_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaGenericBuilding",
+      "border_filepath": "data/layouts/IkiTown_House3/border.bin",
+      "blockdata_filepath": "data/layouts/IkiTown_House3/map.bin"
     }
   ]
 }

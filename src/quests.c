@@ -151,6 +151,7 @@ static bool8 IsQuestInactiveState(s32 questId);
 static bool8 IsQuestRewardState(s32 questId);
 static bool8 IsQuestCompletedState(s32 questId);
 static bool8 IsSubquestCompletedState(s32 questId);
+static bool8 IsSubquestActuallyComplete(s32 questId);
 
 static void DetermineSpriteType(s32 questId);
 static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType);
@@ -215,6 +216,8 @@ static const u8 sText_CompletedHeader[] =
       _("Completed Missions");
 static const u8 sText_QuestNumberDisplay[] =
       _("{STR_VAR_1}/{STR_VAR_2}");
+static const u8 sText_SubquestComplete[] = _("{EMOJI_CHECK} ");
+static const u8 sText_SubquestCompleteLine[] = _("This Subquest is Complete!");
 static const u8 sText_Unk[] = _("??????");
 static const u8 sText_Active[] = _("Active");
 static const u8 sText_Reward[] = _("Reward");
@@ -225,7 +228,7 @@ static const u8 sText_StartForMore[] =
       _("Start for more details.");
 static const u8 sText_ReturnRecieveReward[] =
       _("Return to {STR_VAR_2}\nto recieve your reward!");
-static const u8 sText_SubQuestButton[] = _(" ({A_BUTTON})");
+static const u8 sText_SubQuestButton[] = _(" {EMOJI_A_BUTTON}");
 static const u8 sText_Type[] = _("{R_BUTTON}Type");
 static const u8 sText_Caught[] = _("Caught");
 static const u8 sText_Found[] = _("Found");
@@ -239,26 +242,52 @@ static const u8 sText_AZ[] = _(" A-Z");
 ///////////////////////////////////////////////////////////////////////////////
 //////////////////////BEGIN SUBQUEST CUSTOMIZATION/////////////////////////////
 
+// NEMO NOTE:
+// Custom function that puts a check mark next to Subquests that are ACTUALLY complete.
+// In this system, for subquests to show in the menu, they are automatically marked complete, not active.
+// This function puts a check mark next to ones that are ACTUALLY done to help the player keep track!
+
+// FUNCTION MUST BE UPDATED WITH EVERY NEW SUBQUEST!
+bool8 IsSubquestActuallyComplete(s32 questId)
+{
+	// DebugPrintf("Case %d", questId);
+
+	switch (questId)
+	{
+		case 0: // Subquest 1: Find Samson Oak in Iki Town
+			if(FlagGet(FLAG_HIDE_STARTERS_ROUTE_01))
+				return TRUE;
+			break;
+		case 1: // Subquest 2: Find Professor Kukui in Iki Town
+			if(FlagGet(FLAG_HIDE_HALA_INTRO_IKI_TOWN))
+				return TRUE;
+			break;
+	}
+
+	// If this point is reached, it's prolly not the focus lol
+	return FALSE;
+}
+
 //Declaration of subquest structures. Edits to subquests are made here.
 #define sub_quest(i, n, d, m, s, st, t) {.id = i, .name = n, .desc = d, .map = m, .sprite = s, .spritetype = st, .type = t}
 static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 {
 	sub_quest(
-	      0,
+	      0, // Find Samson Oak in Iki Town
 	      gText_SubQuest1_Name1,
 	      gText_SubQuest1_Desc1,
-	      gText_SideQuestMap1,
-	      OBJ_EVENT_GFX_DANCER_F,
+	      gText_SubQuest1_Map1,
+	      OBJ_EVENT_GFX_SAMSON_OAK,
 	      OBJECT,
 	      sText_Found
 	),
 
 	sub_quest(
-	      1,
+	      1, // Meet Professor Kukui's friend in Iki Town
 	      gText_SubQuest1_Name2,
 	      gText_SubQuest1_Desc2,
-	      gText_SideQuestMap2,
-	      OBJ_EVENT_GFX_DANCER_F,
+	      gText_SubQuest1_Map2,
+	      OBJ_EVENT_GFX_PROF_KUKUI,
 	      OBJECT,
 	      sText_Found
 	),
@@ -267,8 +296,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      2,
 	      gText_SubQuest1_Name3,
 	      gText_SubQuest1_Desc3,
-	      gText_SideQuestMap3,
-	      OBJ_EVENT_GFX_DANCER_F,
+	      gText_SubQuest1_Map3,
+	      OBJ_EVENT_GFX_HAU,
 	      OBJECT,
 	      sText_Found
 	),
@@ -277,7 +306,7 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      3,
 	      gText_SubQuest1_Name4,
 	      gText_SubQuest1_Desc4,
-	      gText_SideQuestMap4,
+	      gText_SubQuest1_Map4,
 	      OBJ_EVENT_GFX_DANCER_F,
 	      OBJECT,
 	      sText_Found
@@ -287,7 +316,7 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      4,
 	      gText_SubQuest1_Name5,
 	      gText_SubQuest1_Desc5,
-	      gText_SideQuestMap5,
+	      gText_SubQuest1_Map5,
 	      OBJ_EVENT_GFX_DANCER_F,
 	      OBJECT,
 	      sText_Found
@@ -564,20 +593,20 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_1,
 	      gText_SideQuestDoneDesc_1,
 	      gText_SideQuestMap1,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
-	      NULL,
-	      0
+	      ITEM_STRANGE_SOUVENIR,
+	      ITEM,
+	      sSubQuests1,
+	      QUEST_1_SUB_COUNT
 	),
 	side_quest(
 	      gText_SideQuestName_2,
 	      gText_SideQuestDesc_2,
 	      gText_SideQuestDoneDesc_2,
 	      gText_SideQuestMap2,
-	      ITEM_WATERIUM_Z,
+	      ITEM_WATERIUM_Z, // TODO: Add a Passport item for this icon or smth
 	      ITEM,
-	      sSubQuests1,
-	      QUEST_1_SUB_COUNT
+	      sSubQuests2,
+	      QUEST_2_SUB_COUNT
 	),
 	side_quest(
 	      gText_SideQuestName_3,
@@ -586,8 +615,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestMap3,
 	      SPECIES_ROWLET,
 	      PKMN,
-	      sSubQuests2,
-	      QUEST_2_SUB_COUNT
+	      NULL,
+	      0
 	),
 	side_quest(
 	      gText_SideQuestName_4,
@@ -1419,8 +1448,6 @@ u8 IncrementMode(u8 mode)
 		if(mode == SORT_DEFAULT)
 			return SORT_ACTIVE;
 		else if(mode == SORT_ACTIVE)
-			return SORT_REWARD;
-		else if(mode == SORT_REWARD)
 			return SORT_DONE;
 	}
 
@@ -1908,6 +1935,9 @@ void PopulateSubquestName(u8 parentQuest, u8 countQuest)
 {
 	if (IsSubquestCompletedState(countQuest))
 	{
+		if(IsSubquestActuallyComplete(countQuest))
+			questNamePointer = StringAppend(questNamePointer, sText_SubquestComplete);
+		
 		questNamePointer = StringAppend(questNamePointer,
 		                                sSideQuests[parentQuest].subquests[countQuest].name);
 	}
@@ -2075,6 +2105,9 @@ void UpdateQuestFlavorText(s32 questId)
 void PrintQuestFlavorText(s32 questId)
 {
 	QuestMenu_AddTextPrinterParameterized(1, 2, gStringVar3, GetStringCenterAlignXOffset(FONT_NORMAL, gStringVar3, WindowWidthPx(1)), 20, 5, 0, 0, 4);
+
+	if(IsSubquestMode() && IsSubquestActuallyComplete(questId))
+		QuestMenu_AddTextPrinterParameterized(1, FONT_SMALL, sText_SubquestCompleteLine, GetStringCenterAlignXOffset(FONT_SMALL, sText_SubquestCompleteLine, WindowWidthPx(1)), 50, 5, 0, 0, 4);
 }
 
 bool8 IsSubquestCompletedState(s32 questId)

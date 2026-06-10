@@ -18,7 +18,9 @@ script HauoliOutskirts_PlayersHouse_IntroEvent
 	msgbox(format("Ehehe, sorry about Meowth, {PLAYER}! She's been bouncing around the house like a Hoppip in a hurricane.\p Looks like you finished your video call with Professor Burnet! You should go out and {COLOR GREEN}talk to your Grandpa Samson{COLOR DARK_GRAY} before you meet with the professors. He's just north of here in {COLOR GREEN}Iki Town{COLOR DARK_GRAY}. Try to stay out of the tall grass!"))
 	closemessage
 
-	// TODO: Add Quest system and add a quest begin here
+	// Start "Welcome to Alola" Quest!
+	startquest(QUEST_01)
+	completesubquest(QUEST_01, SUB_QUEST_1) // Unlocks ("completes") Subquest 1 - Find Samson Oak
 
 	applymovement(LOCALID_MOM, HauoliOutskirts_PlayersHouse_MomReturnToChair)
 	waitmovement(0)
@@ -200,7 +202,7 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 	applymovement(4, moves(face_left))
 	waitmovement(0)
 	setspeaker("Prof. Kukui")
-	msgbox(format("Samson and I ran after those Pokémon in such a rush, I forgot why I was in Iki Town in the first place!\p Come meet me in {COLOR GREEN}Iki Town{COLOR DARK_GRAY}. You'll be safe with {STR_VAR_1}, and I want you to meet someone there, yeah!"))
+	msgbox(format("Samson and I ran after those Pokémon in such a rush, I forgot why I was in Iki Town in the first place!\p Come to {COLOR GREEN}Iki Town{COLOR DARK_GRAY}. You'll be safe with {STR_VAR_1}, and I want you to meet someone there, yeah!"))
 	closemessage
 
 	delay(10)
@@ -222,7 +224,7 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 	fadescreen(FADE_FROM_BLACK)
 	delay(30)
 
-	// TODO: Start Quest to meet Kukui in Iki Town here!
+	startsubquest(QUEST_01, SUB_QUEST_2) // Unlocks ("completes") Subquest 2 - Follow Kukui to Iki Town
 
 	clearflag(FLAG_OVERWORLD_ENCOUNTERS_DISABLED) // Enables Overworld Encounters
 	updatefollowingmon

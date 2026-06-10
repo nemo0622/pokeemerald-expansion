@@ -23,6 +23,7 @@ Feature Branches:
 - Nico: Battle UI Components & code reference
 - PCG06: Scalemons Ruleset
 - Bivurnum: Overworld Encounters (in collaboration with HashtagMarky and rest of Expansion Team)
+- PSF: Quest Menu (in collaboration with Skeli and GhoulSlash)
 
 Sprites:
 - LuigiTKO: Party Menu sprites!

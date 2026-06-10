@@ -118,5 +118,8 @@ script HauoliOutskirts_Script_Lechonk
 script HauoliOutskirts_Sign_HouseSign
 {
     lock
-    msgbox(format("Oak Family Home\l"))
+    msgbox(format("Oak Family Home"))
+    closemessage
+    release
+    end
 }

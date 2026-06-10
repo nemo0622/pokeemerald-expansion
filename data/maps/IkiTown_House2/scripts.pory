@@ -1,0 +1,23 @@
+mapscripts IkiTown_House2_MapScripts {}
+
+script IkiTown_House2_NPC_Man
+{
+    lock
+    faceplayer
+    setspeaker("Man")
+    msgbox(format("It's said that ancient peoples rode over the waves and seas together with their Pokémon to settle the Alola Region."))
+    closemessage
+    release
+    end
+}
+
+script IkiTown_House2_NPC_Woman
+{
+    lock
+    faceplayer
+    setspeaker("Woman")
+    msgbox(format("Different people interact with Pokémon in their own different ways. Some may seem them as allies in battle, while others just enjoy sharing their lives with them."))
+    closemessage
+    release
+    end
+}

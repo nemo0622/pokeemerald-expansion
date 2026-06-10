@@ -131,6 +131,8 @@
     "HauoliOutskirts_PlayersRoomActual"
   ],
   "gMapGroup_IndoorIkiTown": [
-    "IkiTown_House1"
+    "IkiTown_House1",
+    "IkiTown_House2",
+    "IkiTown_House3"
   ]
 }

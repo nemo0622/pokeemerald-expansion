@@ -2207,6 +2207,7 @@ extern const u8 gText_Girl[];
 extern const u8 gText_QuestAnnounce[];
 extern const u8 gText_QuestComplete[];
 extern const u8 gText_QuestActive[];
+extern const u8 gText_SubquestAnnounce[];
 
 //names
 extern const u8 gText_SideQuestName_1[];
@@ -2400,5 +2401,11 @@ extern const u8 gText_SubQuest2_Desc17[];
 extern const u8 gText_SubQuest2_Desc18[];
 extern const u8 gText_SubQuest2_Desc19[];
 extern const u8 gText_SubQuest2_Desc20[];
+
+extern const u8 gText_SubQuest1_Map1[];
+extern const u8 gText_SubQuest1_Map2[];
+extern const u8 gText_SubQuest1_Map3[];
+extern const u8 gText_SubQuest1_Map4[];
+extern const u8 gText_SubQuest1_Map5[];
 
 #endif // GUARD_STRINGS_H

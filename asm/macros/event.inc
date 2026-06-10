@@ -3108,3 +3108,13 @@
     subquestmenu QUEST_MENU_CHECK_COMPLETE \parent \child
     call_if_eq VAR_RESULT, FALSE, \dest
     .endm
+
+	.macro startsubquest quest:req, subquest:req
+	closemessage
+	delay 30
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, \quest, \subquest
+	questmenu QUEST_MENU_BUFFER_QUEST_NAME \quest
+	playfanfare MUS_LEVEL_UP
+	msgbox gText_SubquestAnnounce, MSGBOX_SIGN
+	waitfanfare
+	.endm

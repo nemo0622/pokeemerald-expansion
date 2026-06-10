@@ -167,7 +167,11 @@ HauoliOutskirts_Sign_HouseSign::
 	lock
 # 121 "data//maps/HauoliOutskirts/scripts.pory"
 	msgbox HauoliOutskirts_Sign_HouseSign_Text_0
-	return
+# 122 "data//maps/HauoliOutskirts/scripts.pory"
+	closemessage
+# 123 "data//maps/HauoliOutskirts/scripts.pory"
+	release
+	end
 
 
 # 15 "data//maps/HauoliOutskirts/scripts.pory"
@@ -275,5 +279,4 @@ HauoliOutskirts_Script_Lechonk_Text_1:
 
 HauoliOutskirts_Sign_HouseSign_Text_0:
 # 121 "data//maps/HauoliOutskirts/scripts.pory"
-	.string "Oak Family Home\l"
-	.string "$"
+	.string "Oak Family Home$"
