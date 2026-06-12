@@ -24,6 +24,7 @@ Feature Branches:
 - PCG06: Scalemons Ruleset
 - Bivurnum: Overworld Encounters (in collaboration with HashtagMarky and rest of Expansion Team)
 - PSF: Quest Menu (in collaboration with Skeli and GhoulSlash)
+- Archie & Mudskip: Full Screen Start Menu
 
 Sprites:
 - LuigiTKO: Party Menu sprites!

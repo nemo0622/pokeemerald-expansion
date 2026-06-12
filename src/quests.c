@@ -954,31 +954,31 @@ static const u8 sQuestMenuWindowFontColors[][4] =
 		//Header of Quest Menu
 		TEXT_COLOR_TRANSPARENT,
 		TEXT_COLOR_DARK_GRAY,
-		TEXT_COLOR_TRANSPARENT
+		TEXT_COLOR_DARK_GRAY
 	},
 	{
 		//Reward state progress indicator
 		TEXT_COLOR_TRANSPARENT,
-		TEXT_COLOR_RED,
-		TEXT_COLOR_TRANSPARENT
+		TEXT_COLOR_DARK_GRAY,
+		TEXT_COLOR_DARK_GRAY
 	},
 	{
 		//Done state progress indicator
 		TEXT_COLOR_TRANSPARENT,
-		TEXT_COLOR_GREEN,
-		TEXT_COLOR_TRANSPARENT
+		TEXT_COLOR_DARK_GRAY,
+		TEXT_COLOR_DARK_GRAY
 	},
 	{
 		//Active state progress indicator
 		TEXT_COLOR_TRANSPARENT,
-		TEXT_COLOR_BLUE,
-		TEXT_COLOR_TRANSPARENT
+		TEXT_COLOR_DARK_GRAY,
+		TEXT_COLOR_DARK_GRAY
 	},
 	{
 		//Footer flavor text
 		TEXT_COLOR_TRANSPARENT,
 		TEXT_COLOR_DARK_GRAY,
-		TEXT_COLOR_TRANSPARENT
+		TEXT_COLOR_DARK_GRAY
 	},
 };
 
@@ -2831,7 +2831,7 @@ void Task_QuestMenu_OpenFromStartMenu(u8 taskId)
 	if (!gPaletteFade.active)
 	{
 		CleanupOverworldWindowsAndTilemaps();
-		QuestMenu_Init(tItemPcParam, CB2_ReturnToFieldWithOpenMenu);
+		QuestMenu_Init(tItemPcParam, CB2_ReturnToFullScreenStartMenu);
 		DestroyTask(taskId);
 	}
 }

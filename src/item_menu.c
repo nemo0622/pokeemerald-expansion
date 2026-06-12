@@ -590,7 +590,9 @@ void ResetBagScrollPositions(void)
 
 void CB2_BagMenuFromStartMenu(void)
 {
-    GoToBagMenu(ITEMMENULOCATION_FIELD, POCKETS_COUNT, CB2_ReturnToFieldWithOpenMenu);
+    // NEMO NOTE: Return to Field instead of the start menu because it turns the quest menu text gray if not?? Idk girl
+    // GoToBagMenu(ITEMMENULOCATION_FIELD, POCKETS_COUNT, CB2_ReturnToFullScreenStartMenu);
+    GoToBagMenu(ITEMMENULOCATION_FIELD, POCKETS_COUNT, CB2_ReturnToField);
 }
 
 void CB2_BagMenuFromBattle(void)
