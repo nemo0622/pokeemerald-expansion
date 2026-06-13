@@ -281,6 +281,17 @@ void LoadMonIconPalettePersonality(u16 species, u32 personality)
         LoadSpritePalette(&gMonIconPaletteTable[palIndex]);
 }
 
+u8 LoadMonIconPaletteGetIndex(u16 species)
+{
+    u8 palIndex = gSpeciesInfo[species].iconPalIndex;
+    u8 palSlot = IndexOfSpritePaletteTag(gMonIconPaletteTable[palIndex].tag);
+
+    if (palSlot == 0xFF)
+        palSlot = LoadSpritePalette(&gMonIconPaletteTable[palIndex]);
+
+    return palSlot;
+}
+
 void FreeMonIconPalettes(void)
 {
     u8 i;

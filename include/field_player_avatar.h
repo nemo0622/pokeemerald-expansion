@@ -73,5 +73,8 @@ enum Direction GetLeftSideStairsDirection(enum Direction direction);
 void UpdateSpinData(void);
 void ResetSpinTimer(void);
 bool32 CanTriggerSpinEvolution();
+void AlignFishingAnimationFrames(void);
+void ResetPlayerAvatar(u16 gfxId);
+void Task_Fishing(u8);
 
 #endif // GUARD_FIELD_PLAYER_AVATAR_H

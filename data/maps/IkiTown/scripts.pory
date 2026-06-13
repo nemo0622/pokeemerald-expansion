@@ -67,9 +67,6 @@ script IkiTown_Script_HalaIntro
 	fadescreenswapbuffers(FADE_FROM_BLACK)
 	delay(15)
 
-	// JUNE 10th TODO:
-	// 5. 	After everything else, start on the full-screen Start Menu!
-
 	startsubquest(QUEST_01, SUB_QUEST_3) // Unlock Subquest 3: Find Hau in Mahalo Trail
 
 	releaseall

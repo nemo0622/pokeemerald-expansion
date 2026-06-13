@@ -15,6 +15,7 @@ u16 GetUnownLetterByPersonality(u32 personality);
 u16 GetIconSpeciesNoPersonality(u16 species);
 void LoadMonIconPalettes(void);
 void LoadMonIconPalette(u16 species);
+u8 LoadMonIconPaletteGetIndex(u16 species);
 void FreeMonIconPalettes(void);
 u8 CreateMonIconNoPersonality(u16 species, void (*callback)(struct Sprite *), s16 x, s16 y, u8 subpriority);
 u8 CreateMonIconNoPersonalityIsEgg(u16 species, void (*callback)(struct Sprite *), s16 x, s16 y, u8 subpriority, bool32 isEgg);
