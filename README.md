@@ -22,7 +22,7 @@ Feature Branches:
 - Wiz1989: Emulator Accuracy Check
 - Nico: Battle UI Components & code reference
 - PCG06: Scalemons Ruleset
-- Bivurnum: Overworld Encounters (in collaboration with HashtagMarky and rest of Expansion Team)
+- Bivurnum: Overworld Encounters (in collaboration with HashtagMarky and rest of Expansion Team), Fishing Minigame
 - PSF: Quest Menu (in collaboration with Skeli and GhoulSlash)
 - Archie & Mudskip: Full Screen Start Menu
 

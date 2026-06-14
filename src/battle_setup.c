@@ -56,6 +56,8 @@
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
 #include "fishing.h"
+#include "pokemon.h"
+#include "constants/pokemon.h"
 
 enum TransitionType
 {
@@ -1117,6 +1119,27 @@ void SetMapVarsToTrainerB(void)
 // expects parameters have been loaded correctly with TrainerBattleLoadArgs
 const u8 *BattleSetup_ConfigureTrainerBattle(const u8 *data)
 {
+
+    // Nemo622 notes (so if it's busted I know I fucked it up)
+    // TRAINER_BATTLE_PARAM.mode looks like it controls whether battles are single or double
+    // If flag ForceDoubleBattles or whatever I name it is set, then force TRAINER_BATTLE_PARAM.mode
+    // to equal the corresponding battle type for doubles (e.g., single_continue_script to double_continue_script or whatever)
+    if(FlagGet(FLAG_FORCE_DOUBLE_BATTLES))
+    {
+        switch(TRAINER_BATTLE_PARAM.mode)
+        {
+            case TRAINER_BATTLE_SINGLE:
+                TRAINER_BATTLE_PARAM.mode = TRAINER_BATTLE_DOUBLE;
+                break;
+            case TRAINER_BATTLE_CONTINUE_SCRIPT:
+                TRAINER_BATTLE_PARAM.mode = TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE;
+                break;
+            case TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC:
+                TRAINER_BATTLE_PARAM.mode = TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC;
+                break;
+        }
+    }
+
     switch (TRAINER_BATTLE_PARAM.mode)
     {
     case TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT:
@@ -1318,7 +1341,25 @@ void BattleSetup_StartTrainerBattle(void)
         }
         else
         {
-            gBattleTypeFlags = (BATTLE_TYPE_TRAINER);
+            // Load Trainer party info
+            u8 enemyPartyCount;
+            enemyPartyCount = CreateNPCTrainerPartyFromTrainer(gEnemyParty, GetTrainerStructFromId(TRAINER_BATTLE_PARAM.opponentA), TRUE, BATTLE_TYPE_TRAINER);
+
+            // To use debug, comment out "#define NDEBUG" in include/config/general.h
+            DebugPrintf("Enemy Party Count: %d", enemyPartyCount);
+
+            if(FlagGet(FLAG_FORCE_DOUBLE_BATTLES) && GetMonsStateToDoubles() == PLAYER_HAS_TWO_USABLE_MONS && enemyPartyCount > 1)
+            {
+                // NEMO622 NOTE: GetMonsStateToDoubles() should return 0, or PLAYER_HAS_TWO_USABLE_MONS, if player has more than
+                // one usable mon. This'll hopefully present double battles against Player when only has one mon,
+                // which could get buggy I think. (GetMonsStateToDoubles() function from pokemon.c file)
+                // NEMO622 NOTE 2: enemyPartyCount, calculated above, loads how many Pokémon the opponent has. If it has
+                // anything > 1, then it'll be a double battle. If not, it just defaults to a single battle
+
+                gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TRAINER); // Force a double battle!
+            }
+            else
+                gBattleTypeFlags = (BATTLE_TYPE_TRAINER); // Just a single battle
         }
     }
 

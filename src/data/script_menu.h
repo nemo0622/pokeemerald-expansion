@@ -54,6 +54,13 @@ static const struct MenuAction MultichoiceList_RegisterMenu[] =
     {gText_Cancel2},
 };
 
+static const struct MenuAction MultichoiceList_DifficultyMode[] =
+{
+    {COMPOUND_STRING("{COLOR GREEN}Normal{COLOR DARK_GRAY}")},
+    {COMPOUND_STRING("{COLOR BLUE}Hard{COLOR DARK_GRAY}")},
+    {COMPOUND_STRING("{COLOR RED}Extreme{COLOR DARK_GRAY}")},
+};
+
 static const struct MenuAction MultichoiceList_Bike[] =
 {
     {COMPOUND_STRING("MACH")},
@@ -1110,7 +1117,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_BASE_PC_WITH_REGISTRY]      = MULTICHOICE(MultichoiceList_BasePCWithRegistry),
     [MULTI_REGISTER_MENU]              = MULTICHOICE(MultichoiceList_RegisterMenu),
     [MULTI_SSTIDAL_LILYCOVE]           = MULTICHOICE(MultichoiceList_Exit),
-    [MULTI_UNUSED_9]                   = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_DIFFICULTY_MODE]            = MULTICHOICE(MultichoiceList_DifficultyMode),
     [MULTI_UNUSED_10]                  = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_FRONTIER_PASS_INFO]         = MULTICHOICE(MultichoiceList_FrontierPassInfo),
     [MULTI_BIKE]                       = MULTICHOICE(MultichoiceList_Bike),

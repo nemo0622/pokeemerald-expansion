@@ -89,8 +89,44 @@ script HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings
 		closemessage
 		delay(10)
 
+		// Difficulty modes
+		message(format("Question 1: Select {COLOR GREEN}Game Difficulty{COLOR DARK_GRAY}!\p {COLOR GREEN}Normal Mode{COLOR DARK_GRAY}: The standard way to play Pokémon Alolan Seaglass. Slightly more difficult than modern Pokémon games, but still a mostly relaxed gameplay experience.\p {COLOR BLUE}Hard Mode{COLOR DARK_GRAY}: A more difficult experience for those who like a challenge, but still want to have fun. Trainers use higher leveled Pokémon and make smarter choices.\p {COLOR RED}Extreme Mode{COLOR DARK_GRAY}: A difficulty level only for the most experienced players. Trainers use stronger teams with borderline unfair movesets and intelligence, making every encounter an uphill battle.\p Which {COLOR GREEN}Difficulty Mode{COLOR DARK_GRAY} should be selected?"))
+		waitmessage
+		multichoice(19, 6, MULTI_DIFFICULTY_MODE, TRUE)
+		switch(var(VAR_RESULT))
+		{
+			case 0: // Normal chosen
+				setdifficulty(DIFFICULTY_NORMAL)
+				msgbox(format("The Difficulty has been set to {COLOR GREEN}Normal{COLOR DARK_GRAY}!"))
+			case 1: // Hard
+				setdifficulty(DIFFICULTY_HARD)
+				msgbox(format("The Difficulty has been set to {COLOR BLUE}Hard{COLOR DARK_GRAY}!"))
+			case 2: // Extreme
+				setdifficulty(DIFFICULTY_EXTREME)
+				msgbox(format("The Difficulty has been set to {COLOR RED}Extreme{COLOR DARK_GRAY}!"))
+		}
+		closemessage
+		delay(10)
+
+		// Double Battles setting
+		msgbox(format("Question 2: Enable {COLOR GREEN}All Double Battles{COLOR DARK_GRAY} Mode?\p This setting turns most Trainer battles into Double Battles. This makes the battles more {COLOR GREEN}strategically interesting{COLOR DARK_GRAY}, but may {COLOR BLUE}not be as well balanced{COLOR DARK_GRAY} due to unexpected interactions or randomized teams.\p Should {COLOR GREEN}All Double Battles{COLOR DARK_GRAY} Mode be {COLOR GREEN}enabled{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+		closemessage
+		if(var(VAR_RESULT) == TRUE)
+		{
+			setflag(FLAG_FORCE_DOUBLE_BATTLES)
+			msgbox(format("{COLOR GREEN}All Double Battles mode has been enabled.{COLOR DARK_GRAY} Most Trainers will automatically load as Double Battles."))
+			closemessage
+		}
+		else
+		{
+			clearflag(FLAG_FORCE_DOUBLE_BATTLES)
+			msgbox(format("{COLOR BLUE}All Double Battles has been disabled.{COLOR DARK_GRAY} Pokémon Battles will play as designed."))
+			closemessage
+		}
+		delay(10)
+
 		// Scalemons setting
-		msgbox(format("Question 1: Enable {COLOR GREEN}Scalemons{COLOR DARK_GRAY} Ruleset?\p Scalemons uses math to change almost all Pokémon (aside from Legendary Pokémon or Ultra Beasts) to have a Base Stat Total around 500 (excluding HP). This lets {COLOR GREEN}weaker Pokémon thrive{COLOR DARK_GRAY} by boosting their stats, but {COLOR BLUE}weakens game balance{COLOR DARK_GRAY} by making Pokémon unexpectedly strong or weak.\p Should {COLOR GREEN}Scalemons{COLOR DARK_GRAY} Ruleset be {COLOR GREEN}enabled{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+		msgbox(format("Question 3: Enable {COLOR GREEN}Scalemons{COLOR DARK_GRAY} Ruleset?\p Scalemons uses math to change almost all Pokémon (aside from Legendary Pokémon or Ultra Beasts) to have a Base Stat Total around 500 (excluding HP). This lets {COLOR GREEN}weaker Pokémon thrive{COLOR DARK_GRAY} by boosting their stats, but {COLOR BLUE}weakens game balance{COLOR DARK_GRAY} by making Pokémon unexpectedly strong or weak.\p Should {COLOR GREEN}Scalemons{COLOR DARK_GRAY} Ruleset be {COLOR GREEN}enabled{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
 		closemessage
 		if(var(VAR_RESULT) == TRUE)
 		{
@@ -106,6 +142,7 @@ script HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings
 			msgbox(format("{COLOR BLUE}Scalemons Ruleset has been disabled.{COLOR DARK_GRAY} Pokémon's stats will be normal."))
 			closemessage
 		}
+		delay(10)
 
 		// End settings
 		msgbox(format("Looks like the page is finished! Oranguru seems happy!"))

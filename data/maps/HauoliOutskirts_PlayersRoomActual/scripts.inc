@@ -158,7 +158,7 @@ HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings::
 	compare VAR_RESULT, TRUE
 	goto_if_eq HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_2
 HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_1:
-# 115 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+# 152 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
 	release
 	end
 
@@ -170,37 +170,104 @@ HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_2:
 # 90 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
 	delay 10
 # 93 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_4, MSGBOX_YESNO
+	message HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_4
 # 94 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	closemessage
+	waitmessage
 # 95 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	compare VAR_RESULT, TRUE
-	goto_if_eq HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_5
+	multichoice 19, 6, MULTI_DIFFICULTY_MODE, TRUE
+# 96 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	switch VAR_RESULT
+# 98 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	case 0, HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_6
+# 101 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	case 1, HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_7
 # 104 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	clearflag FLAG_USE_SCALEMONS
-# 105 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	special RefreshAllMonStats
-# 106 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_6
-# 107 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	closemessage
+	case 2, HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_8
 HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_4:
-# 111 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_7
+# 108 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	closemessage
+# 109 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	delay 10
 # 112 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_8, MSGBOX_YESNO
+# 113 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	closemessage
+# 114 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_10
+# 122 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	clearflag FLAG_FORCE_DOUBLE_BATTLES
+# 123 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_10
+# 124 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	closemessage
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_9:
+# 126 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	delay 10
+# 129 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_11, MSGBOX_YESNO
+# 130 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	closemessage
+# 131 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_14
+# 140 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	clearflag FLAG_USE_SCALEMONS
+# 141 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	special RefreshAllMonStats
+# 142 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_13
+# 143 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	closemessage
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_13:
+# 145 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	delay 10
+# 148 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_14
+# 149 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
 	closemessage
 	goto HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_1
 
-HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_5:
-# 97 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	setflag FLAG_USE_SCALEMONS
-# 98 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	special RefreshAllMonStats
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_6:
 # 99 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_5
+	setdifficulty DIFFICULTY_NORMAL
 # 100 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	closemessage
+	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_5
 	goto HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_4
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_7:
+# 102 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	setdifficulty DIFFICULTY_HARD
+# 103 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_6
+	goto HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_4
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_8:
+# 105 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	setdifficulty DIFFICULTY_EXTREME
+# 106 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_7
+	goto HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_4
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_10:
+# 116 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	setflag FLAG_FORCE_DOUBLE_BATTLES
+# 117 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_9
+# 118 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	closemessage
+	goto HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_9
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_14:
+# 133 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	setflag FLAG_USE_SCALEMONS
+# 134 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	special RefreshAllMonStats
+# 135 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	msgbox HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_12
+# 136 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	closemessage
+	goto HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_13
 
 
 HauoliOutskirts_PlayersRoomActual_Script_StartGame_Text_0:
@@ -244,7 +311,65 @@ HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_3:
 
 HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_4:
 # 93 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
-	.string "Question 1: Enable {COLOR GREEN}Scalemons{COLOR DARK_GRAY} Ruleset?\p"
+	.string "Question 1: Select {COLOR GREEN}Game Difficulty{COLOR DARK_GRAY}!\p"
+	.string "{COLOR GREEN}Normal Mode{COLOR DARK_GRAY}: The standard way to play\n"
+	.string "Pokémon Alolan Seaglass. Slightly more\l"
+	.string "difficult than modern Pokémon games,\l"
+	.string "but still a mostly relaxed gameplay\l"
+	.string "experience.\p"
+	.string "{COLOR BLUE}Hard Mode{COLOR DARK_GRAY}: A more difficult experience\n"
+	.string "for those who like a challenge, but still\l"
+	.string "want to have fun. Trainers use higher\l"
+	.string "leveled Pokémon and make smarter\l"
+	.string "choices.\p"
+	.string "{COLOR RED}Extreme Mode{COLOR DARK_GRAY}: A difficulty level only\n"
+	.string "for the most experienced players.\l"
+	.string "Trainers use stronger teams with\l"
+	.string "borderline unfair movesets and\l"
+	.string "intelligence, making every encounter an\l"
+	.string "uphill battle.\p"
+	.string "Which {COLOR GREEN}Difficulty Mode{COLOR DARK_GRAY} should be\n"
+	.string "selected?$"
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_5:
+# 100 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	.string "The Difficulty has been set to {COLOR GREEN}Normal{COLOR DARK_GRAY}!$"
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_6:
+# 103 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	.string "The Difficulty has been set to {COLOR BLUE}Hard{COLOR DARK_GRAY}!$"
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_7:
+# 106 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	.string "The Difficulty has been set to {COLOR RED}Extreme{COLOR DARK_GRAY}!$"
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_8:
+# 112 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	.string "Question 2: Enable {COLOR GREEN}All Double Battles{COLOR DARK_GRAY}\n"
+	.string "Mode?\p"
+	.string "This setting turns most Trainer battles\n"
+	.string "into Double Battles. This makes the\l"
+	.string "battles more {COLOR GREEN}strategically interesting{COLOR DARK_GRAY},\l"
+	.string "but may {COLOR BLUE}not be as well balanced{COLOR DARK_GRAY} due to\l"
+	.string "unexpected interactions or randomized\l"
+	.string "teams.\p"
+	.string "Should {COLOR GREEN}All Double Battles{COLOR DARK_GRAY} Mode be\n"
+	.string "{COLOR GREEN}enabled{COLOR DARK_GRAY}?$"
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_9:
+# 117 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	.string "{COLOR GREEN}All Double Battles mode has been\n"
+	.string "enabled.{COLOR DARK_GRAY} Most Trainers will\l"
+	.string "automatically load as Double Battles.$"
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_10:
+# 123 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	.string "{COLOR BLUE}All Double Battles has been disabled.{COLOR DARK_GRAY}\n"
+	.string "Pokémon Battles will play as designed.$"
+
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_11:
+# 129 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+	.string "Question 3: Enable {COLOR GREEN}Scalemons{COLOR DARK_GRAY} Ruleset?\p"
 	.string "Scalemons uses math to change almost\n"
 	.string "all Pokémon (aside from Legendary\l"
 	.string "Pokémon or Ultra Beasts) to have a Base\l"
@@ -255,18 +380,18 @@ HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_4:
 	.string "unexpectedly strong or weak.\p"
 	.string "Should {COLOR GREEN}Scalemons{COLOR DARK_GRAY} Ruleset be {COLOR GREEN}enabled{COLOR DARK_GRAY}?$"
 
-HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_5:
-# 99 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_12:
+# 135 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
 	.string "{COLOR GREEN}Scalemons Ruleset has been enabled.{COLOR DARK_GRAY}\n"
 	.string "Pokémon's stats will be scaled to\l"
 	.string "approximately 500.$"
 
-HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_6:
-# 106 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_13:
+# 142 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
 	.string "{COLOR BLUE}Scalemons Ruleset has been disabled.{COLOR DARK_GRAY}\n"
 	.string "Pokémon's stats will be normal.$"
 
-HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_7:
-# 111 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
+HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings_Text_14:
+# 148 "data//maps/HauoliOutskirts_PlayersRoomActual/scripts.pory"
 	.string "Looks like the page is finished!\n"
 	.string "Oranguru seems happy!$"

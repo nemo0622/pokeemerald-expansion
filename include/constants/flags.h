@@ -1391,7 +1391,7 @@
 
 #define FLAG_USE_SCALEMONS                          (SYSTEM_FLAGS + 0x21) // Enables Scalemons ruleset
 #define FLAG_OVERWORLD_ENCOUNTERS_DISABLED          (SYSTEM_FLAGS + 0x22) // If set, Overworld Encounters are DISABLED
-#define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
+#define FLAG_FORCE_DOUBLE_BATTLES                   (SYSTEM_FLAGS + 0x23) // Force all Trainer battles to be doubles
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
