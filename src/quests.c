@@ -262,6 +262,18 @@ bool8 IsSubquestActuallyComplete(s32 questId)
 			if(FlagGet(FLAG_HIDE_HALA_INTRO_IKI_TOWN))
 				return TRUE;
 			break;
+		case 2: // Subquest 3: Find Hau on Mahalo Trail
+			if(FlagGet(FLAG_HIDE_EVENT_POKEMON_MAHALO_TRAIL))
+				return TRUE;
+			break;
+		case 3: // Subquest 4: Begin the Manalo Festival
+			if(FlagGet(FLAG_RECEIVED_Z_RING))
+				return TRUE;
+			break;
+		case 4: // Subquest 5: Go to Kukui's Lab
+			if(FlagGet(FLAG_HIDE_LILLIE_HAUOLI_OUTSKIRTS))
+				return TRUE;
+			break;
 	}
 
 	// If this point is reached, it's prolly not the focus lol
@@ -293,7 +305,7 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	),
 
 	sub_quest(
-	      2,
+	      2, // Find Hau on Mahalo Trail
 	      gText_SubQuest1_Name3,
 	      gText_SubQuest1_Desc3,
 	      gText_SubQuest1_Map3,
@@ -303,21 +315,21 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	),
 
 	sub_quest(
-	      3,
+	      3, // Begin the Manalo Festival
 	      gText_SubQuest1_Name4,
 	      gText_SubQuest1_Desc4,
 	      gText_SubQuest1_Map4,
-	      OBJ_EVENT_GFX_DANCER_F,
+	      OBJ_EVENT_GFX_HALA,
 	      OBJECT,
 	      sText_Found
 	),
 
 	sub_quest(
-	      4,
+	      4, // Go to Kukui's Lab
 	      gText_SubQuest1_Name5,
 	      gText_SubQuest1_Desc5,
 	      gText_SubQuest1_Map5,
-	      OBJ_EVENT_GFX_DANCER_F,
+	      OBJ_EVENT_GFX_PROF_KUKUI,
 	      OBJECT,
 	      sText_Found
 	),
@@ -2831,7 +2843,10 @@ void Task_QuestMenu_OpenFromStartMenu(u8 taskId)
 	if (!gPaletteFade.active)
 	{
 		CleanupOverworldWindowsAndTilemaps();
-		QuestMenu_Init(tItemPcParam, CB2_ReturnToFullScreenStartMenu);
+		if(!FlagGet(FLAG_SYS_POKEDEX_GET))
+			QuestMenu_Init(tItemPcParam, CB2_ReturnToFieldWithOpenMenu);
+		else
+			QuestMenu_Init(tItemPcParam, CB2_ReturnToFullScreenStartMenu);
 		DestroyTask(taskId);
 	}
 }

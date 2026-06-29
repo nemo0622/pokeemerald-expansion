@@ -1510,9 +1510,9 @@
 #define FLAG_RESCUED_BIRCH                       0
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0
 
-#define FLAG_HIDE_CONTEST_POKE_BALL          0  // Always set after new game, object it hides is added directly
-#define FLAG_MET_RIVAL_MOM                   0
-#define FLAG_BIRCH_AIDE_MET                  0
+#define FLAG_PREVENT_CATCHING          0  // Always set after new game, object it hides is added directly
+#define FLAG_SMART_WILD_MONS                   0
+#define FLAG_DEXNAV_DETECTOR_MODE                  0
 #define FLAG_DECLINED_BIKE                   0
 #define FLAG_RECEIVED_BIKE                   0
 #define FLAG_WATTSON_REMATCH_AVAILABLE       0
@@ -2043,17 +2043,17 @@
 #define FLAG_HIDE_ALOLAN_EXEGGUTOR_IKI_TOWN                           0
 #define FLAG_HIDE_HALA_INTRO_IKI_TOWN                            0
 #define FLAG_HIDE_ROUTE_109_MR_BRINEY                               0
-#define FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT                          0
-#define FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN                       0
-#define FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT                          0
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN            0
-#define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY                    0
-#define FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION                  0
-#define FLAG_HIDE_LILYCOVE_HARBOR_EVENT_TICKET_TAKER                0
-#define FLAG_HIDE_SLATEPORT_CITY_SCOTT                              0
-#define FLAG_HIDE_ROUTE_101_ZIGZAGOON                               0
-#define FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY                           0
-#define FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE                       0
+#define FLAG_LILLIE_NEEDS_HELP_MAHALO_TRAIL                          0
+#define FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL                       0
+#define FLAG_HIDE_EVENT_POKEMON_MAHALO_TRAIL                          0
+#define FLAG_HIDE_TAPU_KOKO_MAHALO_TRAIL            0
+#define FLAG_HIDE_LILLIE_IKI_TOWN                    0
+#define FLAG_HIDE_MOM_IKI_TOWN                  0
+#define FLAG_HIDE_HAU_HALAS_HOME                0
+#define FLAG_HIDE_HAUS_ROWLET_HALAS_HOME                              0
+#define FLAG_HIDE_HAUS_LITTEN_HALAS_HOME                               0
+#define FLAG_HIDE_HAUS_POPPLIO_HALAS_HOME                           0
+#define FLAG_HIDE_LILLIE_HAUOLI_OUTSKIRTS                       0
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN              0
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1          0
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2          0

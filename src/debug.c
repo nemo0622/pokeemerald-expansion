@@ -1241,7 +1241,7 @@ static u32 Debug_CheckToggleFlags(u8 id)
             result = NO_BAG_INVALID_VALUE;
         break;
 #if P_FLAG_SCALEMONS != 0
-    case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_CATCHING:
+    case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_SCALEMONS:
         result = FlagGet(P_FLAG_SCALEMONS);
         break;
 #endif

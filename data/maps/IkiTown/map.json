@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE_01",
       "offset": 17,
       "direction": "down"
+    },
+    {
+      "map": "MAP_MAHALO_TRAIL",
+      "offset": 10,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -110,7 +115,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "IkiTown_NPC_Hala",
-      "flag": "0"
+      "flag": "FLAG_RECEIVED_Z_RING"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_KUKUI",
@@ -123,7 +128,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "IkiTown_NPC_KukuiWithExeggutor",
-      "flag": "0"
+      "flag": "FLAG_RECEIVED_Z_RING"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(EXEGGUTOR_ALOLA)",
@@ -136,7 +141,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "IkiTown_NPC_AlolanExeggutor",
-      "flag": "0"
+      "flag": "FLAG_RECEIVED_Z_RING"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
@@ -215,6 +220,214 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "IkiTown_NPC_YoungsterRockruff",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LILLIE_1",
+      "x": 29,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TAPU_KOKO_MAHALO_TRAIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HAU",
+      "x": 28,
+      "y": 0,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TAPU_KOKO_MAHALO_TRAIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(COSMOG)",
+      "x": 29,
+      "y": 0,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TAPU_KOKO_MAHALO_TRAIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HALA",
+      "x": 27,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TAPU_KOKO_MAHALO_TRAIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 13,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 23,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 23,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 13,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 25,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 29,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_NURSE",
+      "x": 20,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_NPC_Nurse",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LILLIE_1",
+      "x": 16,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_NPC_Lillie",
+      "flag": "FLAG_HIDE_LILLIE_IKI_TOWN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(COSMOG)",
+      "x": 17,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_NPC_Cosmog",
+      "flag": "FLAG_HIDE_LILLIE_IKI_TOWN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HAU",
+      "x": 17,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_NPC_Hau",
+      "flag": "FLAG_HIDE_LILLIE_IKI_TOWN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MOM",
+      "x": 20,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_MOM_IKI_TOWN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAMSON_OAK",
+      "x": 21,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_MOM_IKI_TOWN"
     }
   ],
   "warp_events": [
@@ -238,6 +451,20 @@
       "elevation": 0,
       "dest_map": "MAP_IKI_TOWN_HOUSE3",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_IKI_TOWN_HALA_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_IKI_TOWN_HALA_HOUSE",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
@@ -267,6 +494,24 @@
       "var": "VAR_INTRO_STATE",
       "var_value": "4",
       "script": "IkiTown_Script_HalaIntro"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "var": "FLAG_RECEIVED_Z_RING",
+      "var_value": "0",
+      "script": "IkiTown_Script_BlockHalaHouse"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 6,
+      "elevation": 0,
+      "var": "FLAG_RECEIVED_Z_RING",
+      "var_value": "0",
+      "script": "IkiTown_Script_BlockHalaHouse"
     }
   ],
   "bg_events": [

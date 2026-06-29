@@ -1,0 +1,102 @@
+mapscripts HauoliOutskirts_KukuiLab_MapScripts {}
+
+script HauoliOutskirts_KukuiLab_Script_KukuiGivesDex
+{
+    lockall
+    applymovement(LOCALID_PLAYER, Common_Movement_WalkUp)
+    fadescreen(FADE_FROM_BLACK)
+    delay(20)
+
+    applymovement(1, moves(jump_in_place_up * 2, step_end)) // Lillie
+    waitmovement(0)
+    delay(10)
+    setspeaker("Lillie")
+    msgbox(format("P-Professor! {PLAYER}'s here!"))
+    closemessage
+    delay(10)
+    emote(2, EMOTE_EXCLAM) // Kukui
+    delay(10)
+    applymovement(2, Common_Movement_FaceDown)
+    waitmovement(0)
+    setspeaker("Prof. Kukui")
+    msgbox(format("Kahaha, perfect timing! {COLOR BLUE}Rockruff{COLOR DARK_GRAY}'s Rock Slide can target two opponents at once. Let's test that out together!"))
+    closemessage
+    delay(10)
+    applymovement(1, moves(walk_in_place_up * 2, step_end))
+    waitmovement(0)
+    setspeaker("Lillie")
+    msgbox(format("Ahem... The surprise? Do you remember?"))
+    closemessage
+    delay(20)
+    applymovement(2, Common_Movement_FaceRight)
+    waitmovement(0)
+    setspeaker("Prof. Kukui")
+    msgbox(format("Um...?"))
+    closemessage
+    delay(20)
+    applymovement(2, moves(jump_in_place_down * 2, step_end))
+    waitmovement(0)
+    setspeaker("Prof. Kukui")
+    msgbox(format("Ha, right! {PLAYER}, make yourself comfortable. Lemme get you something!"))
+    closemessage
+
+    // Player goes to pet Rockruff; Kukui runs to box and gets DexNav add-on
+    applymovement(2, moves(walk_up, walk_left, walk_up * 2, step_end))
+    applymovement(LOCALID_PLAYER, moves(walk_up * 2, walk_right * 3, face_right, step_end))
+    waitmovement(0)
+    delay(20)
+    emote(3, EMOTE_HEART) // Rockruff
+    delay(20)
+    applymovement(2, moves(walk_down * 3, walk_right, step_end))
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    setspeaker("Prof. Kukui")
+    msgbox(format("Here, I just got this delivered. Bring out the Rotom Dex for a sec!"))
+    closemessage
+
+    // Kukui gives Player the DexNav dex add-on
+    delay(30)
+    setflag(FLAG_SYS_DEXNAV_GET)
+    playfanfare(MUS_OBTAIN_TMHM)
+	message(format("The DexNav was added to the Rotom Dex!"))
+	waitmessage
+	waitfanfare
+	closemessage
+    setspeaker("Prof. Kukui")
+    msgbox(format("The {COLOR GREEN}DexNav{COLOR DARK_GRAY} add-on lets you see what Pokémon can be found in your area. You can even choose a Pokémon to chase down, yeah!\p You can use the DexNav by {COLOR BLUE}pressing Select{COLOR DARK_GRAY} in the Rotom Dex Menu."))
+    closemessage
+
+    // Sends Player to Alola Leo School and Hau'oli City!
+    delay(10)
+    applymovement(1, moves(walk_up, walk_right * 2, face_up, step_end))
+    applymovement(4, moves(walk_up * 2, walk_right, step_end))
+    waitmovement(1)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    delay(10)
+    setspeaker("Lillie")
+    msgbox(format("Professor Kukui told me about the {COLOR GREEN}Alola Leo Trainer School{COLOR DARK_GRAY}, just west of here. He said it's a good place to learn about being a Trainer, and, well...\p Y-You should {COLOR GREEN}meet me there{COLOR DARK_GRAY} before you fully begin the Island Challenge! We could learn about training Pokémon together!"))
+    closemessage
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(2, moves(walk_in_place_right * 2))
+    waitmovement(0)
+    setspeaker("Prof. Kukui")
+    msgbox(format("That's a great idea! You should learn more about Pokémon and the Alola Region before you venture off on your own."))
+    closemessage
+
+    delay(10)
+    fadescreen(FADE_TO_BLACK)
+    delay(30)
+    setflag(FLAG_HIDE_LILLIE_HAUOLI_OUTSKIRTS)
+    removeobject(1)
+    removeobject(4)
+    delay(30)
+    fadescreen(FADE_FROM_BLACK)
+    delay(20)
+
+    startsubquest(QUEST_01, SUB_QUEST_6) // Starts Subquest 6 - Complete Alola Leo School's curriculum
+
+    releaseall
+    end
+}

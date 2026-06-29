@@ -202,8 +202,26 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 	applymovement(4, moves(face_left))
 	waitmovement(0)
 	setspeaker("Prof. Kukui")
-	msgbox(format("Samson and I ran after those Pokémon in such a rush, I forgot why I was in Iki Town in the first place!\p Come to {COLOR GREEN}Iki Town{COLOR DARK_GRAY}. You'll be safe with {STR_VAR_1}, and I want you to meet someone there, yeah!"))
+	msgbox(format("Oh! I got so lost in your Pokémon, I forgot to give you this!"))
 	closemessage
+	playfanfare(MUS_OBTAIN_TMHM)
+	message(format("{PLAYER} received the Rotom Dex!"))
+	waitmessage
+	waitfanfare
+	closemessage
+	setspeaker("Prof. Kukui")
+	msgbox(format("That's not any old Pokédex, you know! The {COLOR GREEN}Rotom Dex{COLOR DARK_GRAY} is a companion for your journey.\p It'll keep track of what Pokémon you've caught, your Party, and even your {COLOR GREEN}Quests{COLOR DARK_GRAY}. If you ever have a question, ask Rotom - {COLOR BLUE}press Start to turn it on{COLOR DARK_GRAY}!"))
+	closemessage
+	delay(10)
+	applymovement(4, moves(walk_in_place_left * 2, step_end))
+	waitmovement(0)
+	delay(10)
+	setspeaker("Prof. Kukui")
+	msgbox(format("Awrite, you should be all set to explore safely! You should {COLOR GREEN}come to Iki Town{COLOR DARK_GRAY} for the {COLOR GREEN}Manalo Festival{COLOR DARK_GRAY} soon. Maybe you can meet the Kahuna there!"))
+	closemessage
+
+	setflag(FLAG_SYS_POKEDEX_GET)
+	setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
 
 	delay(10)
 	fadescreen(FADE_TO_BLACK)

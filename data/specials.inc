@@ -639,3 +639,5 @@ gSpecials::
 	def_special StickerManGetBragFlags
 	def_special CheckAddCoins
 	def_special RefreshAllMonStats
+	def_special ShowSpeciesInfoWindow
+	def_special CloseSpeciesInfoWindow

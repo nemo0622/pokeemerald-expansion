@@ -382,7 +382,12 @@ script Route_01_Script_HauIntro
 	msgbox(format("Hey, hey! You've got a {STR_VAR_1} with you... You must be {PLAYER}!"))
 
 	setspeaker("Hau")
-	msgbox(format("I'm Hau! {COLOR GREEN}Professor Kukui{COLOR DARK_GRAY} told me to keep an eye out for ya. We're supposed to get our first Pokémon at the Festival in Iki Town!\p I know you got yours already, but you should still come get to know everyone! I'll see ya, cousin!"))
+	msgbox(format("I'm Hau! Professor Kukui told me to keep an eye out for ya.\p I'll get my first Pokémon at the {COLOR GREEN}Manalo Festival{COLOR DARK_GRAY} tonight, but I heard you already got yours! I figure I should give these to you."))
+	closemessage
+	giveitem(ITEM_POKE_BALL, 10)
+	closemessage
+	setspeaker("Hau")
+	msgbox(format("Kukui gave me a big box of those, but I can't battle wild Pokémon without a partner of my own yet!\p I'm gonna go on ahead. See you later!"))
 	closemessage
 	applymovement(LOCALID_HAU_ROUTE01, moves(walk_up * 2, walk_left, walk_up * 5, step_end))
 	waitmovement(0)

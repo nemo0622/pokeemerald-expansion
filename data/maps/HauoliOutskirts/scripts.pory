@@ -2,6 +2,16 @@ mapscripts HauoliOutskirts_MapScripts {
 
 }
 
+// TODO When I feel like it:
+// :check: 1.   Give the Player some Poké Balls and the Rotom Dex much earlier!
+//      Idea: Gets Rotom Dex from Kukui in house after Starter is chosen, then
+//            get Poké Balls from Hau before entering Iki Town!
+
+// :check: 2.   Make Samson Oak and Mom have different dialogue following the Manalo Festival
+// 3.   Add wild encounters, Trainers, and NPCs to Hau'oli Outskirts
+// 4.   Add Kukui's Lab interior and begin event scripting
+// 5.   Potentially give all Pokémon sprites thick black outline? IDK MAN IT LOOKS SATISFYING!
+
 // -------------------------------- Trigger Scripts ------------------------------------
 script HauoliOutskirts_Trigger_SightseerMBlocksWest
 {
@@ -47,6 +57,67 @@ script HauoliOutskirts_Trigger_SightseerMBlockSouth
     end
 }
 
+script HauoliOutskirts_Script_LillieLabEvent
+{
+    lockall
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    emote(LOCALID_PLAYER, EMOTE_QUESTION)
+    delay(15)
+
+    setspeaker("Lillie")
+    msgbox(format("{COLOR BLUE}Nebbie{COLOR DARK_GRAY}, you have to stay in the bag! How do you think people will react if they catch a {COLOR BLUE}Cosmog{COLOR DARK_GRAY} wandering around... We don't want {COLOR RED}her{COLOR DARK_GRAY} to find us..."))
+    closemessage
+    applymovement(12, moves(walk_up, walk_right * 2, walk_down * 2, walk_left, face_up, delay_16, walk_left, walk_up, face_right, delay_16, walk_down, walk_right * 2, walk_up, face_left, step_end)) // Cosmog
+    applymovement(11, moves(delay_16, face_up, delay_16 * 2, face_right, delay_16, face_down, delay_16 * 2, face_up, delay_16, face_left, delay_16, step_end)) // Lillie
+    waitmovement(12)
+    delay(15)
+    emote(11, EMOTE_EXCLAM)
+    delay(10)
+    setspeaker("Lillie")
+    msgbox(format("{PLAYER}! I- Um, I didn't see you there."))
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_right, walk_down, walk_right * 3, face_down, step_end))
+    applymovement(12, moves(delay_16 * 4, walk_down, walk_left * 2, face_up, jump_in_place_up * 2))
+    waitmovement(0)
+    delay(15)
+
+    setspeaker("Lillie")
+    msgbox(format("Ehehe, it looks like {COLOR BLUE}Nebbie{COLOR DARK_GRAY}'s taken an interest in you!"))
+    closemessage
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    setspeaker("Lillie")
+    msgbox(format("This is Professor Kukui's Lab! It's... Um...\p Well, it's not the prettiest building, but it serves. Besides, Kukui's research on Pokémon Moves make too much of a mess. A big part of my job as his Assistant is to clean up the rubble..."))
+    closemessage
+    delay(10)
+    applymovement(11, Common_Movement_FaceUp)
+    waitmovement(0)
+    emote(11, EMOTE_EXCLAM)
+    setspeaker("???")
+    playmoncry(SPECIES_ROCKRUFF, CRY_MODE_NORMAL)
+    msgbox(format("Gruff ruff!"))
+    waitmoncry
+    closemessage
+    setspeaker("Prof. Kukui")
+    msgbox(format("Yeah, {COLOR BLUE}Rockruff{COLOR DARK_GRAY}! Use Rock Slide!"))
+    closemessage
+
+    delay(10)
+    setspeaker("Lillie")
+    msgbox(format("Not again! Quick, we have to distract him!"))
+    closemessage
+    applymovement(11, moves(walk_right, walk_up * 4, step_end))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_up * 4, step_end))
+    applymovement(12, moves(walk_up, walk_right * 2, walk_up * 3, step_end))
+    waitmovement(LOCALID_PLAYER)
+
+    warpcontinuescript(MAP_HAUOLI_OUTSKIRTS_KUKUI_LAB, 5, 9, HauoliOutskirts_KukuiLab_Script_KukuiGivesDex)
+
+    releaseall
+    end
+}
+
 // ----------------------------- NPC Scripts -----------------------------
 
 script HauoliOutskirts_Script_SamsonOak
@@ -55,8 +126,17 @@ script HauoliOutskirts_Script_SamsonOak
     faceplayer
     setspeaker("Grandpa Samson")
 
-    // TODO: Give more stuff to do here lol
-    msgbox(format("Alola, {PLAYER}! How's your Pokémon doing?\p I hope you're settling into the Alola Region. I know it's quite different than Kanto, but give it a chance."))
+    switch(var(VAR_INTRO_STATE))
+    {
+        case 3: // Just got Starter, headed to Iki Town
+        case 4:
+        case 5:
+        case 6:
+        default:
+            msgbox(format("Alola, {PLAYER}! How's your Pokémon doing?\p I hope you're settling into the Alola Region. I know it's quite different than Kanto, but give it a chance."))
+        case 7: // Got Z-Power Ring at Manalo Festival in Iki Town
+            msgbox(format("I saw your battle during the Manalo Festival, you did great!\p Carrying a {COLOR GREEN}Z-Power Ring{COLOR DARK_GRAY} is a big responsibility. I got my own when I was about 18, and did the Island Challenge myself!"))
+    }
     
     closemessage
     release
@@ -78,8 +158,8 @@ script HauoliOutskirts_Script_LassOnLedge
 {
     lock
     faceplayer
-    setspeaker("Lass")
-    msgbox(format("Are you Samson Oak's grandkid? I heard his family just moved back here after spending years in Kanto!"))
+    setspeaker("Lady")
+    msgbox(format("Are you Samson Oak's grandchild? I heard his family just moved back here after spending years in Kanto!"))
     closemessage
     release
     end
@@ -113,6 +193,99 @@ script HauoliOutskirts_Script_Lechonk
     end
 }
 
+script HauoliOutskirts_NPC_BlackBelt
+{
+    lock
+    faceplayer
+    setspeaker("Black Belt")
+    msgbox(format("When people see me, they think I only use super muscle-y Pokémon...\p And they're RIGHT!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliOutskirts_NPC_WomanWithSpinarak
+{
+    lock
+    faceplayer
+    setspeaker("Woman")
+    msgbox(format("{COLOR BLUE}Alolan Spinarak{COLOR DARK_GRAY} adapted to living around coastal volcanoes. Apparently, they can burrow through volcanic rock!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliOutskirts_NPC_Spinarak
+{
+	lock
+    faceplayer
+    setspeaker("Spinarak")
+    playmoncry(SPECIES_SPINARAK, CRY_MODE_NORMAL)
+    msgbox(format("Ktch-cha!"))
+    waitmoncry
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceLeft)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliOutskirts_NPC_SchoolGirlBySign
+{
+    lock
+    faceplayer
+    setspeaker("School Girl")
+    msgbox(format("My teacher at the Alola Leo School told me I should read all these big signs!\p I guess the School put them up all over Alola... I don't think I wanna read that much!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceLeft)
+    waitmovement(0)
+    release
+    end
+}
+
+// --------------------------------- Trainer Scripts ---------------------------------------
+
+script HauoliOutskirts_Trainer_LassMadison
+{
+	trainerbattle_single(TRAINER_LASS_MADISON, 
+	format("We're almost to the beach!"), 
+	format("Back to the Pokémon Center for me."))
+
+	setspeaker("Lass Madison")
+	msgbox(format("A lot of strange Pokémon live around here. They're my favorites!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliOutskirts_Trainer_YoungsterKevin
+{
+	trainerbattle_single(TRAINER_YOUNGSTER_KEVIN, 
+	format("Step back, kid!"), 
+	format("Wait, I'm WAY younger than you...!"))
+
+	setspeaker("Youngster Kevin")
+	msgbox(format("I wanna catch a Rockruff. I hear if it evolves at night, it turns super scary and cool!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliOutskirts_Trainer_SwimmerNatasha
+{
+	trainerbattle_single(TRAINER_SWIMMER_NATASHA, 
+	format("Heyyy-y! Jump in the water with me!"), 
+	format("Eek! The water's cold!"))
+
+	setspeaker("Swimmer Natasha")
+	msgbox(format("I thought all the water was warm in Alola..."))
+	closemessage
+	release
+	end
+}
+
 // --------------------------------- Sign Scripts ------------------------------------------
 
 script HauoliOutskirts_Sign_HouseSign
@@ -120,6 +293,23 @@ script HauoliOutskirts_Sign_HouseSign
     lock
     msgbox(format("Oak Family Home"))
     closemessage
+    release
+    end
+}
+
+script HauoliOutskirts_Sign_SeelWatching
+{
+    lock
+    msgbox(format("Alolan Education Tip Number 1:\nPlease watch out for sleeping {COLOR BLUE}Seel{COLOR DARK_GRAY} on the beach!\p There is more written about {COLOR BLUE}Alolan Seel{COLOR DARK_GRAY}. Read it?"), MSGBOX_YESNO)
+    closemessage
+    if(var(VAR_RESULT) == TRUE)
+    {
+        setvar(VAR_0x8003, SPECIES_SEEL)
+        special(ShowSpeciesInfoWindow)
+        delay(30)
+        waitbuttonpress
+        special(CloseSpeciesInfoWindow)
+    }
     release
     end
 }

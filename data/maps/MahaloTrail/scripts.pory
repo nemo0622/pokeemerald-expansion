@@ -1,0 +1,327 @@
+mapscripts MahaloTrail_MapScripts {}
+
+// -------------------------------------- Event Scripts -------------------------------------
+
+script MahaloTrail_Script_HauCaughtByCorvisquire
+{
+    lockall
+    applymovement(1, moves(walk_fast_left * 3, walk_fast_up, walk_fast_right * 4, walk_fast_down, walk_fast_left, face_right, jump_in_place_right * 2, step_end))
+    applymovement(2, moves(walk_fast_left * 4, walk_fast_up, walk_fast_right * 4, walk_fast_down, face_left, step_end))
+    waitmovement(1)
+
+    delay(10)
+    emote(1, EMOTE_EXCLAM)
+    delay(10)
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(0)
+    setspeaker("Hau")
+    msgbox(format("{PLAYER}! This {COLOR BLUE}Corvisquire{COLOR DARK_GRAY} is givin' me a fight, and I don't have a Pokémon yet!\p Don't worry about me though, cuz. {COLOR GREEN}Lillie{COLOR DARK_GRAY}'s further on, and her Pokémon's in trouble! You gotta {COLOR GREEN}save her{COLOR DARK_GRAY}!"))
+    closemessage
+    applymovement(1, Common_Movement_FaceRight)
+    waitmovement(0)
+
+    setflag(FLAG_COMPLETED_CORVISQUIRE_HAU_EVENT)
+
+    releaseall
+    end
+}
+
+script MahaloTrail_Script_LillieNeedsPlayer
+{
+    lockall
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+	switch(var(VAR_TEMP_1))
+	{
+		case 11:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 5, face_up, step_end))
+		case 12:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 4, face_up, step_end))
+		case 13:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 3, face_up, step_end))
+		case 14:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 2, face_up, step_end))
+		case 15:
+			applymovement(LOCALID_PLAYER, moves(walk_right, face_up, step_end))
+		case 17:
+			applymovement(LOCALID_PLAYER, moves(walk_left, face_up, step_end))
+		default:
+			applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
+	}
+	// Player position now x16 y21
+
+    waitmovement(0)
+    delay(15)
+    applymovement(LOCALID_LILLIE_AT_BRIDGE, moves(jump_in_place_up * 2, face_up, step_end))
+    waitmovement(0)
+    setspeaker("Lillie")
+    msgbox(format("Sniff... {COLOR BLUE}Nebbie{COLOR DARK_GRAY}!! Just hold on!!"))
+    closemessage
+    delay(15)
+    emote(LOCALID_LILLIE_AT_BRIDGE, EMOTE_QUESTION)
+    delay(10)
+
+    applymovement(LOCALID_LILLIE_AT_BRIDGE, Common_Movement_FaceDown)
+    delay(10)
+    bufferspeciesname(STR_VAR_1, VAR_STARTER_MON)
+    setspeaker("Lillie")
+    msgbox(format("Oh? You must be Hau's new friend, the one that got a Pokémon early...\p H-help... Please, you have to save {COLOR BLUE}Nebbie{COLOR DARK_GRAY}! It ran ahead of me and Hau, and now it's being attacked!\p I'll heal your {STR_VAR_1}, so... Please!"))
+    closemessage
+    applymovement(LOCALID_LILLIE_AT_BRIDGE, Common_Movement_FaceUp)
+    waitmovement(0)
+
+    special(HealPlayerParty)
+    setflag(FLAG_LILLIE_NEEDS_HELP_MAHALO_TRAIL)
+    setflag(FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL)
+    delay(15)
+    releaseall
+    end
+}
+
+script MahaloTrail_Script_LillieBlocksLeaving
+{
+    lockall
+    applymovement(LOCALID_LILLIE_AT_BRIDGE, moves(walk_fast_down * 2, jump_in_place_left * 3, step_end))
+    waitmovement(0)
+    delay(10)
+    setspeaker("Lillie")
+    msgbox(format("P-please! {COLOR BLUE}Nebbie{COLOR DARK_GRAY} won't last long on that bridge, you have to help it!"))
+    closemessage
+    applymovement(LOCALID_LILLIE_AT_BRIDGE, moves(walk_up * 2, face_up, step_end))
+    applymovement(LOCALID_PLAYER, Common_Movement_WalkRight)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script MahaloTrail_Script_PlayerSavesCosmog
+{
+    lockall
+
+    // Player approaches Nebbie, Nebbie goes to side and hearts
+    applymovement(LOCALID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    delay(10)
+    emote(LOCALID_NEBBIE_ON_BRIDGE, EMOTE_EXCLAM)
+    delay(10)
+    applymovement(LOCALID_NEBBIE_ON_BRIDGE, moves(walk_right, walk_down, face_left, step_end))
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
+    emote(LOCALID_NEBBIE_ON_BRIDGE, EMOTE_HEART)
+    delay(20)
+
+    // Corviknight battles Player (scripted loss!)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
+    applymovement(5, moves(walk_down * 2, step_end))
+    waitmovement(0)
+    setspeaker("Corviknight")
+    playmoncry(SPECIES_CORVIKNIGHT, CRY_MODE_NORMAL)
+    msgbox(format("Shk-AWW!!"))
+    waitmoncry
+    closemessage
+    msgbox(format("The wild {COLOR BLUE}Corviknight{COLOR DARK_GRAY} is enraged!"))
+    closemessage
+
+    setflag(FLAG_PREVENT_RUNNING)
+    setflag(FLAG_PREVENT_CATCHING)
+    setflag(FLAG_SMART_WILD_MONS)
+    setwildbattle(SPECIES_CORVIKNIGHT, 50)
+    dowildbattle
+
+    // Corviknight defeats Player
+    clearflag(FLAG_LILLIE_NEEDS_HELP_MAHALO_TRAIL)
+    clearflag(FLAG_PREVENT_RUNNING)
+    clearflag(FLAG_PREVENT_CATCHING)
+    clearflag(FLAG_SMART_WILD_MONS)
+    special(HealPlayerParty)
+    delay(20)
+    setspeaker("Corviknight")
+    playmoncry(SPECIES_CORVIKNIGHT, CRY_MODE_NORMAL)
+    msgbox(format("KYAAA!!"))
+    waitmoncry
+    closemessage
+    msgbox(format("The wild {COLOR BLUE}Corviknight{COLOR DARK_GRAY} is still on a rampage!"))
+    closemessage
+    delay(10)
+
+    // Nebbie explodes lol
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
+    applymovement(LOCALID_NEBBIE_ON_BRIDGE, moves(jump_in_place_left * 2, step_end))
+    waitmovement(0)
+    setspeaker("Nebbie")
+    playmoncry(SPECIES_COSMOG, CRY_MODE_NORMAL)
+    msgbox(format("Bwh... Bweeh!!"))
+    waitmoncry
+    closemessage
+    msgbox(format("{COLOR BLUE}Nebbie{COLOR DARK_GRAY} is emitting a bright light...!"))
+    closemessage
+    delay(10)
+
+    fadescreenswapbuffers(FADE_TO_WHITE)
+    delay(30)
+    
+    // Move Player & Nebbie down to y18
+    applymovement(LOCALID_PLAYER, moves(walk_faster_down * 12, step_end))
+    applymovement(LOCALID_NEBBIE_ON_BRIDGE, moves(walk_faster_down * 12, step_end))
+    waitmovement(0)
+    applymovement(LOCALID_LILLIE_AT_BRIDGE, moves(walk_faster_right, face_up, step_end))
+    clearflag(FLAG_HIDE_TAPU_KOKO_MAHALO_TRAIL)
+    addobject(8)
+    addobject(9)
+
+    delay(30)
+    fadescreenswapbuffers(FADE_FROM_WHITE)
+    delay(20)
+
+    // Lillie and Player reconvene; Tapu Koko appears
+    emote(LOCALID_LILLIE_AT_BRIDGE, EMOTE_EXCLAM)
+    delay(10)
+    setspeaker("Lillie")
+    msgbox(format("{COLOR BLUE}Nebbie{COLOR DARK_GRAY}, did you try to use your powers again? You couldn't move for ages last time...\p I couldn't see anything through the flash of light. How did you get back here?!"))
+    closemessage
+    delay(10)
+    applymovement(8, moves(walk_down * 3, step_end))
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    emote(LOCALID_PLAYER, EMOTE_EXCLAM)
+    delay(10)
+    setspeaker("???")
+    playmoncry(SPECIES_TAPU_KOKO, CRY_MODE_NORMAL)
+    msgbox(format("KYAH!"))
+    waitmoncry
+    closemessage
+
+    // Hau approaches, Tapu Koko leaves
+    applymovement(9, moves(walk_fast_up * 2, walk_fast_right * 4, walk_fast_up * 4, step_end))
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    setspeaker("Hau")
+    msgbox(format("Tutu Hala taught me... This is {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY}, a Legendary Pokémon!\p Woah, did it save you and {COLOR BLUE}Nebbie{COLOR DARK_GRAY} on the bridge?!"))
+    closemessage
+    delay(10)
+    fadescreenswapbuffers(FADE_TO_WHITE)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+    applymovement(8, moves(walk_faster_up * 4))
+    waitmovement(0)
+    fadescreenswapbuffers(FADE_FROM_WHITE)
+    delay(20)
+    emote(9, EMOTE_EXCLAM)
+    delay(10)
+
+    // Hau reacts, says to leave Mahalo Trail
+    applymovement(9, Common_Movement_FaceRight)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    setspeaker("Hau")
+    msgbox(format("Aie! It flew away so fast!\p {PLAYER}, let's bring Lillie back to Iki Town. Hala and Kukui will know what to do!"))
+    closemessage
+    
+    // End cleanup
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(30)
+    setflag(FLAG_HIDE_EVENT_POKEMON_MAHALO_TRAIL)
+    removeobject(5) // Delete Corviknight
+    removeobject(LOCALID_LILLIE_AT_BRIDGE) // Delete Lillie
+    removeobject(LOCALID_NEBBIE_ON_BRIDGE) // Delete Nebbie
+    // setflag(FLAG_HIDE_TAPU_KOKO_MAHALO_TRAIL) // Commented out because I'm also using this flag for Hala in Iki Town in the next portion of the event
+    removeobject(8) // Delete Tapu Koko
+    removeobject(9) // Delete Hau's copy by the bridge
+    delay(30)
+
+    setflag(FLAG_HIDE_MAP_NAME_POPUP)
+    warpcontinuescript(MAP_IKI_TOWN, 28, 1, IkiTown_Script_SavedLillie)
+
+    releaseall
+    end
+}
+
+// -------------------------------------- NPC Scripts ---------------------------------------
+
+script MahaloTrail_NPC_Hau
+{
+    lock
+    faceplayer
+    setspeaker("Hau")
+    msgbox(format("I'll be fine, cuz! {COLOR GREEN}Lillie{COLOR DARK_GRAY}'s further up the trail, and it sounds like she's in trouble! Look for her floppy white hat!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script MahaloTrail_NPC_Corvisquire
+{
+	lock
+    faceplayer
+    setspeaker("Corvisquire")
+    playmoncry(SPECIES_CORVISQUIRE, CRY_MODE_NORMAL)
+    msgbox(format("Cree-aww!"))
+    waitmoncry
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceLeft)
+    waitmovement(0)
+    release
+    end
+}
+
+script MahaloTrail_NPC_LillieAtBridge
+{
+    lock
+    faceplayer
+    setspeaker("Lillie")
+    msgbox(format("You have to save {COLOR BLUE}Nebbie{COLOR DARK_GRAY}! It won't last long with those Pokémon attacking it!"))
+    closemessage
+    applymovement(LOCALID_LILLIE_AT_BRIDGE, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+script MahaloTrail_NPC_BlackBelt
+{
+    lock
+    faceplayer
+    setspeaker("Black Belt")
+    if(!flag(FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL))
+    {
+        msgbox(format("I came here to try and find the {COLOR GREEN}Guardian Deity{COLOR DARK_GRAY} of Melemele Island.\p It sounds like there's trouble up ahead, though... What's going on?"))
+    }
+    else
+    {
+        msgbox(format("I came here to try and find the {COLOR GREEN}Guardian Deity{COLOR DARK_GRAY} of Melemele Island.\p What?! You actually saw it?"))
+    }
+    closemessage
+    release
+    end
+}
+
+script MahaloTrail_NPC_Woman
+{
+    lock
+    faceplayer
+    setspeaker("Woman")
+    if(!flag(FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL))
+    {
+        msgbox(format("I came here looking for bird Pokémon, but they all seem agitated right now! Is something happening?"))
+    }
+    else
+    {
+        msgbox(format("The bird Pokémon seem to have calmed down around here. Still, I wonder what caused that..."))
+    }
+    closemessage
+    release
+    end
+}
+
+// -------------------------------------- Sign Scripts --------------------------------------
+
+script MahaloTrail_Sign_BridgeWarning
+{
+    lock
+    msgbox(format("{COLOR RED}WARNING!{COLOR DARK_GRAY}\n Wooden bridge is unstable!\p 50 foot drop! Only cross with Kahuna Hala's supervision!"))
+    closemessage
+    release
+    end
+}

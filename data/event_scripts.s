@@ -847,3 +847,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/IkiTown_House2/scripts.inc"
 
 	.include "data/maps/IkiTown_House3/scripts.inc"
+
+	.include "data/maps/MahaloTrail/scripts.inc"
+
+	.include "data/maps/IkiTown_HalaHouse/scripts.inc"
+
+	.include "data/maps/HauoliOutskirts_KukuiLab/scripts.inc"

@@ -9433,6 +9433,36 @@
       "secondary_tileset": "gTileset_AlolaGenericBuilding",
       "border_filepath": "data/layouts/IkiTown_House3/border.bin",
       "blockdata_filepath": "data/layouts/IkiTown_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAHALO_TRAIL",
+      "name": "MahaloTrail_Layout",
+      "width": 30,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_IkiTown",
+      "border_filepath": "data/layouts/MahaloTrail/border.bin",
+      "blockdata_filepath": "data/layouts/MahaloTrail/map.bin"
+    },
+    {
+      "id": "LAYOUT_IKI_TOWN_HALA_HOUSE",
+      "name": "IkiTown_HalaHouse_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaGenericBuilding",
+      "border_filepath": "data/layouts/IkiTown_HalaHouse/border.bin",
+      "blockdata_filepath": "data/layouts/IkiTown_HalaHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_OUTSKIRTS_KUKUI_LAB",
+      "name": "HauoliOutskirts_KukuiLab_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaGenericBuilding",
+      "border_filepath": "data/layouts/HauoliOutskirts_KukuiLab/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliOutskirts_KukuiLab/map.bin"
     }
   ]
 }

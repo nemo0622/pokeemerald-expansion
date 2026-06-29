@@ -280,6 +280,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Woman
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Woman_2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Woman_3;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Lady;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Nurse;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_ELIO_NORMAL] =           &gObjectEventGraphicsInfo_ElioNormal,
@@ -556,6 +557,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WOMAN_2] =                         &gObjectEventGraphicsInfo_Alola_Woman_2,
     [OBJ_EVENT_GFX_WOMAN_3] =                         &gObjectEventGraphicsInfo_Alola_Woman_3,
     [OBJ_EVENT_GFX_LADY] =                            &gObjectEventGraphicsInfo_Alola_Lady,
+    [OBJ_EVENT_GFX_NURSE] =                           &gObjectEventGraphicsInfo_Alola_Nurse,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

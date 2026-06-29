@@ -86,6 +86,7 @@ bool8 MetatileBehavior_IsBridgeOverWaterNoEdge(u8 metatileBehavior);
 bool8 MetatileBehavior_IsLandWildEncounter(u8 metatileBehavior);
 bool8 MetatileBehavior_IsWaterWildEncounter(u8 metatileBehavior);
 bool8 MetatileBehavior_IsIndoorEncounter(u8 metatileBehavior);
+bool8 MetatileBehavior_IsStair(u8 metatileBehavior);
 bool8 MetatileBehavior_IsMountain(u8 metatileBehavior);
 bool8 MetatileBehavior_IsDiveable(u8 metatileBehavior);
 bool8 MetatileBehavior_IsUnableToEmerge(u8 metatileBehavior);

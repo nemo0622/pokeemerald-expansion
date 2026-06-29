@@ -222,103 +222,324 @@ Grubbin
 Level: 4
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+=== TRAINER_HAU_FESTIVAL_GRASS === /* Player chose grass starter */
+Name: Hau
+Class: Pkmn Trainer 1
+Pic: Youngster
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
+Difficulty: Normal
 
-Zubat
-Level: 32
+Litten
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Growl
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+=== TRAINER_HAU_FESTIVAL_GRASS === /* Player chose grass starter */
+Name: Hau
+Class: Pkmn Trainer 1
+Pic: Youngster
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Difficulty: Hard
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Litten
+Level: 6
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Scratch
+- Growl
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+=== TRAINER_HAU_FESTIVAL_GRASS === /* Player chose grass starter */
+Name: Hau
+Class: Pkmn Trainer 1
+Pic: Youngster
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction
+Difficulty: Extreme
 
-Poochyena
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Litten
+Level: 6
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scratch
+- Growl
+- Ember
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Pichu
+Level: 5
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_HAU_FESTIVAL_FIRE === /* Player chose Fire starter */
+Name: Hau
+Class: Pkmn Trainer 1
+Pic: Youngster
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
+Difficulty: Normal
 
-Carvanha
-Level: 36
+Popplio
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pound
+- Growl
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+=== TRAINER_HAU_FESTIVAL_FIRE === /* Player chose fire starter */
+Name: Hau
+Class: Pkmn Trainer 1
+Pic: Youngster
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Difficulty: Hard
 
-Zubat
-Level: 36
+Popplio
+Level: 6
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Pound
+- Growl
+
+=== TRAINER_HAU_FESTIVAL_FIRE === /* Player chose fire starter */
+Name: Hau
+Class: Pkmn Trainer 1
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction
+Difficulty: Extreme
+
+Popplio
+Level: 6
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scratch
+- Growl
+- Bubble
+
+Pichu
+Level: 5
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_HAU_FESTIVAL_WATER === /* Player chose Water starter */
+Name: Hau
+Class: Pkmn Trainer 1
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Normal
+
+Rowlet
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Growl
 
-=== TRAINER_GABRIELLE_1 ===
-Name: GABRIELLE
-Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+=== TRAINER_HAU_FESTIVAL_WATER === /* Player chose water starter */
+Name: Hau
+Class: Pkmn Trainer 1
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Difficulty: Hard
+
+Rowlet
+Level: 6
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Tackle
+- Growl
+
+=== TRAINER_HAU_FESTIVAL_WATER === /* Player chose water starter */
+Name: Hau
+Class: Pkmn Trainer 1
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction
+Difficulty: Extreme
+
+Rowlet
+Level: 6
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scratch
+- Growl
+- Leafage
+
+Pichu
+Level: 5
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_LASS_MADISON ===
+Name: Madison
+Class: Lass
+Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
+Difficulty: Normal
 
-Skitty
-Level: 26
+Yungoos
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poochyena
-Level: 26
+=== TRAINER_LASS_MADISON ===
+Name: Madison
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+Difficulty: Hard
+
+Yungoos
+Level: 6
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Munchlax
+Level: 6
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Tackle
+- Defense Curl
+
+=== TRAINER_LASS_MADISON ===
+Name: Madison
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Prediction
+Difficulty: Extreme
+
+Yungoos
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Munchlax
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Metronome
+
+=== TRAINER_YOUNGSTER_KEVIN ===
+Name: Kevin
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Normal
+
+Inkay
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zigzagoon
-Level: 26
+=== TRAINER_YOUNGSTER_KEVIN ===
+Name: Kevin
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Difficulty: Hard
+
+Inkay
+Level: 7
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Metapod
+Level: 7
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_YOUNGSTER_KEVIN ===
+Name: Kevin
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction
+Difficulty: Extreme
+
+Inkay
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Murkrow
+Level: 7
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_SWIMMER_NATASHA ===
+Name: Natasha
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Swimmer
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Normal
+
+Wingull
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lotad
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+=== TRAINER_SWIMMER_NATASHA ===
+Name: Natasha
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer
+Difficulty: Hard
 
-Seedot
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wingull
+Level: 8
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Taillow
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Grimer Alola
+Level: 7
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_SWIMMER_NATASHA ===
+Name: Natasha
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer / Prediction
+Difficulty: Extreme
+
+Wingull
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Grimer Alola
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Diglett Alola
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Magnitude
+- Astonish
+- Metal Claw
 
 === TRAINER_GRUNT_PETALBURG_WOODS ===
 Name: GRUNT

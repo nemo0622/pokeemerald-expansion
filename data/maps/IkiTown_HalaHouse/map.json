@@ -1,0 +1,140 @@
+{
+  "id": "MAP_IKI_TOWN_HALA_HOUSE",
+  "name": "IkiTown_HalaHouse",
+  "layout": "LAYOUT_IKI_TOWN_HALA_HOUSE",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_IKI_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HALA",
+      "x": 2,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_HalaHouse_Hala",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HAU",
+      "x": 2,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_HalaHouse_Hau",
+      "flag": "FLAG_HIDE_HAU_HALAS_HOME"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES_ROWLET",
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_HalaHouse_Rowlet",
+      "flag": "FLAG_HIDE_HAUS_ROWLET_HALAS_HOME"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CRABRAWLER)",
+      "x": 6,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_HalaHouse_Crabrawler",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CRABOMINABLE)",
+      "x": 1,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_HalaHouse_Crabominable",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_LAND",
+      "x": 8,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_HalaHouse_HalaNiece",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES_LITTEN",
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_HalaHouse_Litten",
+      "flag": "FLAG_HIDE_HAUS_LITTEN_HALAS_HOME"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES_POPPLIO",
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IkiTown_HalaHouse_Popplio",
+      "flag": "FLAG_HIDE_HAUS_POPPLIO_HALAS_HOME"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_IKI_TOWN",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 7,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_IKI_TOWN",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

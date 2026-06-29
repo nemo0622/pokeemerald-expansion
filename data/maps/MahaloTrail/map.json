@@ -1,0 +1,299 @@
+{
+  "id": "MAP_MAHALO_TRAIL",
+  "name": "MahaloTrail",
+  "layout": "LAYOUT_MAHALO_TRAIL",
+  "music": "MUS_ROUTE101",
+  "region_map_section": "MAPSEC_MAHALO_TRAIL",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_IKI_TOWN",
+      "offset": -10,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HAU",
+      "x": 20,
+      "y": 31,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MahaloTrail_NPC_Hau",
+      "flag": "FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORVISQUIRE)",
+      "x": 21,
+      "y": 31,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MahaloTrail_NPC_Corvisquire",
+      "flag": "FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL"
+    },
+    {
+      "local_id": "LOCALID_LILLIE_AT_BRIDGE",
+      "graphics_id": "OBJ_EVENT_GFX_LILLIE_1",
+      "x": 16,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MahaloTrail_NPC_LillieAtBridge",
+      "flag": "FLAG_HIDE_EVENT_POKEMON_MAHALO_TRAIL"
+    },
+    {
+      "local_id": "LOCALID_NEBBIE_ON_BRIDGE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(COSMOG)",
+      "x": 16,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_EVENT_POKEMON_MAHALO_TRAIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORVIKNIGHT)",
+      "x": 16,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_EVENT_POKEMON_MAHALO_TRAIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 12,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 20,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAPU_KOKO)",
+      "x": 16,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TAPU_KOKO_MAHALO_TRAIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HAU",
+      "x": 11,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TAPU_KOKO_MAHALO_TRAIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 11,
+      "y": 48,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MahaloTrail_NPC_BlackBelt",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 13,
+      "y": 37,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MahaloTrail_NPC_Woman",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 34,
+      "elevation": 0,
+      "var": "FLAG_COMPLETED_CORVISQUIRE_HAU_EVENT",
+      "var_value": "0",
+      "script": "MahaloTrail_Script_HauCaughtByCorvisquire"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 34,
+      "elevation": 0,
+      "var": "FLAG_COMPLETED_CORVISQUIRE_HAU_EVENT",
+      "var_value": "0",
+      "script": "MahaloTrail_Script_HauCaughtByCorvisquire"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 34,
+      "elevation": 0,
+      "var": "FLAG_COMPLETED_CORVISQUIRE_HAU_EVENT",
+      "var_value": "0",
+      "script": "MahaloTrail_Script_HauCaughtByCorvisquire"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 23,
+      "elevation": 0,
+      "var": "FLAG_LILLIE_NEEDS_HELP_MAHALO_TRAIL",
+      "var_value": "1",
+      "script": "MahaloTrail_Script_LillieBlocksLeaving"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 24,
+      "elevation": 0,
+      "var": "FLAG_LILLIE_NEEDS_HELP_MAHALO_TRAIL",
+      "var_value": "1",
+      "script": "MahaloTrail_Script_LillieBlocksLeaving"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 7,
+      "elevation": 0,
+      "var": "FLAG_LILLIE_NEEDS_HELP_MAHALO_TRAIL",
+      "var_value": "1",
+      "script": "MahaloTrail_Script_PlayerSavesCosmog"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 21,
+      "elevation": 0,
+      "var": "FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL",
+      "var_value": "0",
+      "script": "MahaloTrail_Script_LillieNeedsPlayer"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 21,
+      "elevation": 0,
+      "var": "FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL",
+      "var_value": "0",
+      "script": "MahaloTrail_Script_LillieNeedsPlayer"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 21,
+      "elevation": 0,
+      "var": "FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL",
+      "var_value": "0",
+      "script": "MahaloTrail_Script_LillieNeedsPlayer"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 21,
+      "elevation": 0,
+      "var": "FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL",
+      "var_value": "0",
+      "script": "MahaloTrail_Script_LillieNeedsPlayer"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 21,
+      "elevation": 0,
+      "var": "FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL",
+      "var_value": "0",
+      "script": "MahaloTrail_Script_LillieNeedsPlayer"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 21,
+      "elevation": 0,
+      "var": "FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL",
+      "var_value": "0",
+      "script": "MahaloTrail_Script_LillieNeedsPlayer"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 21,
+      "elevation": 0,
+      "var": "FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL",
+      "var_value": "0",
+      "script": "MahaloTrail_Script_LillieNeedsPlayer"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 22,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "MahaloTrail_Sign_BridgeWarning"
+    }
+  ]
+}

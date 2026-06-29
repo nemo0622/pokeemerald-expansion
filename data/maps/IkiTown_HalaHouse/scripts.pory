@@ -1,0 +1,119 @@
+mapscripts IkiTown_HalaHouse_MapScripts {}
+
+script IkiTown_HalaHouse_Rowlet
+{
+    lock
+    faceplayer
+    setspeaker("Rowlet")
+    playmoncry(SPECIES_ROWLET, CRY_MODE_NORMAL)
+    msgbox(format("Koo, hoo...!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script IkiTown_HalaHouse_Litten
+{
+    lock
+    faceplayer
+    setspeaker("Litten")
+    playmoncry(SPECIES_LITTEN, CRY_MODE_NORMAL)
+    msgbox(format("Brow?"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script IkiTown_HalaHouse_Popplio
+{
+    lock
+    faceplayer
+    setspeaker("Popplio")
+    playmoncry(SPECIES_POPPLIO, CRY_MODE_NORMAL)
+    msgbox(format("Bwark!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script IkiTown_HalaHouse_Hau
+{
+    lock
+    faceplayer
+    setspeaker("Hau")
+    msgbox(format("Alola! You came by!\p This is Hala's house, but I've been living with him for years.\p I learned so much from our battle during the Manalo Festival... I gotta give you somethin' in return!"))
+    closemessage
+    giveitem(ITEM_QUICK_BALL, 5)
+    closemessage
+    setspeaker("Hau")
+    msgbox(format("Quick Balls are best at catching Pokémon when you first start a battle. Perfect for picking up new Pokémon, yeah?\p Awrite, I'm gonna head down to {COLOR GREEN}Kukui's Lab{COLOR DARK_GRAY}. It's just down past your house!"))
+    closemessage
+
+    delay(10)
+    fadescreen(FADE_TO_BLACK)
+    delay(30)
+    setflag(FLAG_HIDE_HAU_HALAS_HOME)
+    setflag(FLAG_HIDE_HAUS_ROWLET_HALAS_HOME)
+    setflag(FLAG_HIDE_HAUS_LITTEN_HALAS_HOME)
+    setflag(FLAG_HIDE_HAUS_POPPLIO_HALAS_HOME)
+    removeobject(2)
+    removeobject(3)
+    removeobject(7)
+    removeobject(8)
+    delay(30)
+    fadescreen(FADE_FROM_BLACK)
+    delay(10)
+    release
+    end
+}
+
+script IkiTown_HalaHouse_Crabrawler
+{
+    lock
+    faceplayer
+    setspeaker("Crabrawler")
+    playmoncry(SPECIES_CRABRAWLER, CRY_MODE_NORMAL)
+    msgbox(format("Chk kch!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script IkiTown_HalaHouse_Crabominable
+{
+    lock
+    faceplayer
+    setspeaker("Crabominable")
+    playmoncry(SPECIES_CRABOMINABLE, CRY_MODE_NORMAL)
+    msgbox(format("Bwaargh!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script IkiTown_HalaHouse_HalaNiece
+{
+    lock
+    faceplayer
+    setspeaker("Swimmer")
+    msgbox(format("I'm Hala's niece! We've lived on Melemele Island for generations."))
+    closemessage
+    release
+    end
+}
+
+script IkiTown_HalaHouse_Hala
+{
+    lock
+    faceplayer
+    setspeaker("Hala")
+    msgbox(format("{PLAYER}! Welcome in!\p I can see why {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY} revealed itself to you. With your {COLOR GREEN}Z-Power Ring{COLOR DARK_GRAY}, you should be able to progress through the Island Challenge just fine!"))
+    closemessage
+    release
+    end
+}

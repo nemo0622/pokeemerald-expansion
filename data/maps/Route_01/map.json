@@ -210,7 +210,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
       "x": 12,
-      "y": 4,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -223,7 +223,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
       "x": 8,
-      "y": 4,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,

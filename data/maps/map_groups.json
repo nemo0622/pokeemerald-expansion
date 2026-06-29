@@ -13,7 +13,9 @@
     "IkiTown",
     "AlolaLeo_Road",
     "HauoliShoppingDistrict",
-    "HauoliBeachfront"
+    "HauoliBeachfront",
+    "MahaloTrail",
+    "HauoliOutskirts_KukuiLab"
   ],
   "gMapGroup_Dungeons": [
     "FieryPath"
@@ -128,7 +130,8 @@
   ],
   "gMapGroup_IndoorHauoliOutskirts": [
     "HauoliOutskirts_PlayersRoom",
-    "HauoliOutskirts_PlayersRoomActual"
+    "HauoliOutskirts_PlayersRoomActual",
+    "IkiTown_HalaHouse"
   ],
   "gMapGroup_IndoorIkiTown": [
     "IkiTown_House1",

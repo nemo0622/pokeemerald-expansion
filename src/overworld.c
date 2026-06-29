@@ -1746,6 +1746,10 @@ void UpdateTimeOfDay(void)
 // Whether a map type is naturally lit/outside
 bool32 MapHasNaturalLight(enum MapType mapType)
 {
+    // Nemo addition (so if its effed that's why)
+    if(ArePlayerFieldControlsLocked() && gMain.savedCallback == CB2_ReturnToFullScreenStartMenu) // In quest menu; fixes OBJECT quest bug
+        return FALSE;
+    
     return (OW_ENABLE_DNS
          && (mapType == MAP_TYPE_TOWN
           || mapType == MAP_TYPE_CITY
@@ -4075,7 +4079,7 @@ void CB2_ReturnToFullScreenStartMenu(void)
 {
     FieldClearVBlankHBlankCallbacks();
 
-    if (GetSafariZoneFlag() || InBattlePyramid_() || InBattlePike() || InUnionRoom() || InMultiPartnerRoom())
+    if (!FlagGet(FLAG_SYS_POKEDEX_GET) || GetSafariZoneFlag() || InBattlePyramid_() || InBattlePike() || InUnionRoom() || InMultiPartnerRoom())
     {
         SetMainCallback2(CB2_ReturnToFieldWithOpenMenu);
         return;

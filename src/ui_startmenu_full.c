@@ -1043,7 +1043,8 @@ static void StartMenuFull_FreeResources(void) // Clear Everything if Leaving
     DestroyMonIcons();
     DestroyStatusSprites();
     DestroyGreyMenuBoxes();
-    FreeAllWindowBuffers();    
+    FreeAllWindowBuffers();
+    gMain.savedCallback = NULL;
 }
 
 static void Task_StartMenuFullWaitFadeAndBail(u8 taskId)
@@ -1451,6 +1452,7 @@ static void Task_StartMenuFullMain(u8 taskId)
         PlaySE(SE_PC_OFF);
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
         gTasks[taskId].func = Task_StartMenuFullTurnOff;
+        gMain.savedCallback = NULL;
     }
     if (JOY_NEW(DPAD_LEFT) || JOY_NEW(DPAD_RIGHT)) // these change the position of the selector, the actual x/y of the sprite is handled in its callback CursorCallback
     {

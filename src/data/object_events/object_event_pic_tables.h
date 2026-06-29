@@ -1477,3 +1477,16 @@ static const struct SpriteFrameImage sPicTable_Alola_Woman_3[] = {
 static const struct SpriteFrameImage sPicTable_Alola_Lady[] = {
     overworld_ascending_frames(gObjectEventPic_Alola_Lady, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_Alola_Nurse[] = {
+    overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 3),
+};

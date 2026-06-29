@@ -500,3 +500,4 @@ const u32 gObjectEventPic_Alola_Woman_1[] = INCGFX_U32("graphics/object_events/p
 const u32 gObjectEventPic_Alola_Woman_2[] = INCGFX_U32("graphics/object_events/pics/people/alola/woman_2.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Alola_Woman_3[] = INCGFX_U32("graphics/object_events/pics/people/alola/woman_3.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Alola_Lady[] = INCGFX_U32("graphics/object_events/pics/people/alola/lady.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_Alola_Nurse[] = INCGFX_U32("graphics/object_events/pics/people/alola/nurse.png", ".4bpp", "-mwidth 2 -mheight 4");

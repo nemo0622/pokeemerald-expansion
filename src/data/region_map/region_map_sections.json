@@ -74,6 +74,10 @@
     {
       "id": "MAPSEC_HAUOLI_CITY",
       "name": "Hau'oli City"
+    },
+    {
+      "id": "MAPSEC_MAHALO_TRAIL",
+      "name": "Mahalo Trail"
     }
   ]
 }

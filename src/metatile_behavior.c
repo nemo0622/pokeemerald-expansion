@@ -257,7 +257,7 @@ bool8 MetatileBehavior_IsEscalator(u8 metatileBehavior)
 
 bool8 Unref_MetatileBehavior_IsUnused04(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_UNUSED_04)
+    if (metatileBehavior == MB_VERTICAL_STAIR)
         return TRUE;
     else
         return FALSE;
@@ -854,6 +854,14 @@ bool8 MetatileBehavior_IsWaterWildEncounter(u8 metatileBehavior)
 bool8 MetatileBehavior_IsIndoorEncounter(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_INDOOR_ENCOUNTER)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsStair(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_VERTICAL_STAIR)
         return TRUE;
     else
         return FALSE;
@@ -1568,7 +1576,7 @@ bool8 MetatileBehavior_IsSidewaysStairsLeftSideAny(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsRockStairs(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_ROCK_STAIRS)
+    if (metatileBehavior == MB_ROCK_STAIRS || metatileBehavior == MB_VERTICAL_STAIR)
         return TRUE;
     else
         return FALSE;

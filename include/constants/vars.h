@@ -105,6 +105,8 @@ VAR_INTRO_STATE used for a bunch of stuff on Melemele Island
 3 = Got starter; sent to Iki Town
 4 = Met Hau, headed into Iki Town
 5 = Introduced to Hala, Hau chose starter; told to check out Mahalo Trail while Festival is set up
+6 = Lillie saved from Corviknight; prepared to battle Hau in Manalo Festival
+7 = Manalo Festival in Iki Town completed; headed to Kukui's Lab for Dex upgrade
 */
 #define VAR_INTRO_STATE                                  0x404E
 
@@ -126,8 +128,8 @@ VAR_INTRO_STATE used for a bunch of stuff on Melemele Island
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
 #define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Unused Var
 #define VAR_ROUTE101_STATE                               0x4060
-#define VAR_ROUTE102_STATE                               0x4061 // Unused Var
-#define VAR_ROUTE103_STATE                               0x4062 // Unused Var
+#define VAR_DEXNAV_SPECIES_TARGET                        0x4061 // DexNav var
+#define VAR_DEXNAV_STEP_COUNTER                          0x4062 // DexNav var
 #define VAR_ROUTE104_STATE                               0x4063
 #define VAR_ROUTE105_STATE                               0x4064 // Unused Var
 #define VAR_ROUTE106_STATE                               0x4065 // Unused Var

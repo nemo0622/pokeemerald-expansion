@@ -79,6 +79,7 @@
 #include "battle_util.h"
 #include "naming_screen.h"
 #include "chooseboxmon.h"
+#include "trainer_pokemon_sprites.h"
 
 #define TAG_ITEM_ICON 5500
 
@@ -147,7 +148,6 @@ static void Task_ScrollableMultichoice_WaitReturnToList(u8);
 static void Task_ScrollableMultichoice_ReturnToList(u8);
 static void ShowFrontierExchangeCornerItemIcon(enum Item);
 static void Task_DeoxysRockInteraction(u8);
-static void ChangeDeoxysRockLevel(u8);
 static void WaitForDeoxysRockMovement(u8);
 static void Task_LinkRetireStatusWithBattleTowerPartner(u8);
 static void Task_LoopWingFlapSE(u8);
@@ -3361,44 +3361,6 @@ static void Task_DeoxysRockInteraction(u8 taskId)
     DestroyTask(taskId);
 }
 
-static void ChangeDeoxysRockLevel(u8 rockLevel)
-{
-    u8 paletteNum = IndexOfSpritePaletteTag(OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE);
-    LoadPalette(&sDeoxysRockPalettes[rockLevel], OBJ_PLTT_ID(paletteNum), PLTT_SIZEOF(4));
-    UpdateSpritePaletteWithWeather(paletteNum, FALSE);
-
-    if (rockLevel == 0)
-        PlaySE(SE_M_CONFUSE_RAY); // Failure sound
-    else
-        PlaySE(SE_RG_DEOXYS_MOVE); // Success sound
-
-    CreateTask(WaitForDeoxysRockMovement, 8);
-    gFieldEffectArguments[0] = 0; // was LOCALID_BIRTH_ISLAND_EXTERIOR_ROCK
-    if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_BIRTH_ISLAND_EXTERIOR_FRLG) && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_BIRTH_ISLAND_EXTERIOR_FRLG))
-    {
-        gFieldEffectArguments[1] = MAP_NUM(MAP_BIRTH_ISLAND_EXTERIOR_FRLG);
-        gFieldEffectArguments[2] = MAP_GROUP(MAP_BIRTH_ISLAND_EXTERIOR_FRLG);
-    }
-    else
-    {
-        gFieldEffectArguments[1] = MAP_NUM(MAP_BIRTH_ISLAND_EXTERIOR);
-        gFieldEffectArguments[2] = MAP_GROUP(MAP_BIRTH_ISLAND_EXTERIOR);
-    }
-    gFieldEffectArguments[3] = sDeoxysRockCoords[rockLevel][0];
-    gFieldEffectArguments[4] = sDeoxysRockCoords[rockLevel][1];
-
-    // Set number of movement steps.
-    // Resetting for failure is slow, successful movement is fast.
-    if (rockLevel == 0)
-        gFieldEffectArguments[5] = 60;
-    else
-        gFieldEffectArguments[5] = 5;
-
-    FieldEffectStart(FLDEFF_MOVE_DEOXYS_ROCK);
-    SetObjEventTemplateCoords(0, sDeoxysRockCoords[rockLevel][0], sDeoxysRockCoords[rockLevel][1]);
-    // was LOCALID_BIRTH_ISLAND_EXTERIOR_ROCK
-}
-
 static void WaitForDeoxysRockMovement(u8 taskId)
 {
     if (FieldEffectActiveListContains(FLDEFF_MOVE_DEOXYS_ROCK) == FALSE)
@@ -5741,4 +5703,68 @@ void RefreshAllMonStats(void) // Used during Scalemons enabling/disabling
     {
         CalculateMonStats(&gPlayerParty[i]);
     }
+}
+
+// Info windows repurposed from Lazarus' "ShowSpeciesZooInfoWindow" function!
+// Renamed to be for general use on those large 2x2 signs around the Alola Region,
+// as well as in whatever Zoo-type thing I add to the game lol
+
+EWRAM_DATA static u8 sDexHeaderBoxWindowId = 0;
+EWRAM_DATA static u8 monSpriteId;
+
+void ShowSpeciesInfoWindow(void)
+{
+    // define bits of strings to add
+    static const u8 sTextTheBlank[] = _("The ");
+    static const u8 sTextBlankPokemon[] = _(" Pokémon");
+    StringCopy(gStringVar2, sTextTheBlank);
+
+    u16 species = VarGet(VAR_0x8003);
+
+    // eff it i wanna draw the pokemon sprite too
+    // u8 monSpriteId = 0;
+    u8 monSpriteXPosition = 52;
+    u8 monSpriteYPosition = 45;
+    monSpriteId = CreateMonPicSprite(species, FALSE, 0xFF, TRUE, monSpriteXPosition, monSpriteYPosition, 0, TAG_NONE);
+    gSprites[monSpriteId].oam.priority = 0;
+    gSprites[monSpriteId].invisible = FALSE;
+
+    // Load information into STR_VAR_1 through 3
+    StringCopy(gStringVar1, GetSpeciesName(species));
+    StringAppend(gStringVar2, GetSpeciesCategory(species));
+    StringAppend(gStringVar2, sTextBlankPokemon);
+    StringCopy(gStringVar3, GetSpeciesPokedexDescription(species));
+
+    // Draw window
+    struct WindowTemplate template;
+    SetWindowTemplateFields(&template, 0, 1, 2, 28, 16, 15, 8);
+    sDexHeaderBoxWindowId = AddWindow(&template);
+    FillWindowPixelBuffer(sDexHeaderBoxWindowId, PIXEL_FILL(0));
+    PutWindowTilemap(sDexHeaderBoxWindowId);
+    CopyWindowToVram(sDexHeaderBoxWindowId, 3);
+    SetStandardWindowBorderStyle(sDexHeaderBoxWindowId, FALSE);
+    DrawStdFrameWithCustomTileAndPalette(sDexHeaderBoxWindowId, FALSE, 0x214, 14);
+
+    // Add text to the window!
+    int xPos;
+    // Add Species Name
+    xPos = GetStringCenterAlignXOffset(FONT_NORMAL, gStringVar1, 290);
+    AddTextPrinterParameterized(sDexHeaderBoxWindowId, FONT_NORMAL, gStringVar1, xPos, 12, 0, NULL); // writes species name
+    // Add species category
+    xPos = GetStringCenterAlignXOffset(FONT_SHORT_NARROW, gStringVar2, 290);
+    AddTextPrinterParameterized(sDexHeaderBoxWindowId, FONT_SHORT_NARROW, gStringVar2, xPos, 30, 0, NULL); // writes species category
+    // Add species description
+    xPos = GetStringCenterAlignXOffsetWithLetterSpacing(FONT_SHORT_NARROW, gStringVar3, 220, 2);
+    AddTextPrinterParameterized(sDexHeaderBoxWindowId, FONT_SHORT_NARROW, gStringVar3, xPos, 64, 0, NULL); // writes species pokedex description
+}
+
+void CloseSpeciesInfoWindow(void)
+{
+    FreeAndDestroyMonPicSprite(monSpriteId);
+
+    ClearStdWindowAndFrameToTransparent(sDexHeaderBoxWindowId, FALSE);
+    FillWindowPixelBuffer(sDexHeaderBoxWindowId, PIXEL_FILL(0));
+    ClearWindowTilemap(sDexHeaderBoxWindowId);
+    CopyWindowToVram(sDexHeaderBoxWindowId, 3);
+    RemoveWindow(sDexHeaderBoxWindowId);
 }

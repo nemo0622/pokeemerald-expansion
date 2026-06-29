@@ -109,11 +109,11 @@
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
 #define FLAG_RECEIVED_Z_RING                     0x54  // Set after getting Z-Ring from Hala in Iki Town; opens up Hau'oli City to player access
-#define FLAG_UNUSED_0x055                    0x55  // Unused Flag
+#define FLAG_PREVENT_RUNNING                     0x55  // Cannot run from wild mon (used in scripted Corviknight loss)
+#define FLAG_PREVENT_CATCHING                    0x56  // Cannot catch wild mon (used in scripted Corviknight loss)
+#define FLAG_SMART_WILD_MONS                     0x57  // Gives wild mons Smart AI flags (used in Corviknight loss)
+#define FLAG_DEXNAV_DETECTOR_MODE                0x58  // DexNav Detector Mode active
 
-#define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
-#define FLAG_MET_RIVAL_MOM                   0x57
-#define FLAG_BIRCH_AIDE_MET                  0x58
 #define FLAG_DECLINED_BIKE                   0x59
 #define FLAG_RECEIVED_BIKE                   0x5A
 #define FLAG_WATTSON_REMATCH_AVAILABLE       0x5B
@@ -791,18 +791,18 @@
 #define FLAG_HIDE_HAU_ROUTE_01                                      0x2E2 // Set after meeting Hau
 #define FLAG_HIDE_ALOLAN_EXEGGUTOR_IKI_TOWN                         0x2E3 // Event when entering Iki Town where Exeggutor walks by player
 #define FLAG_HIDE_HALA_INTRO_IKI_TOWN                               0x2E4 // Hides Hala by entrance of Iki Town
-#define FLAG_HIDE_ROUTE_109_MR_BRINEY                               0x2E5
-#define FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT                          0x2E6
-#define FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN                       0x2E7
-#define FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT                          0x2E8
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN            0x2E9
-#define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY                    0x2EA
-#define FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION                  0x2EB
-#define FLAG_HIDE_LILYCOVE_HARBOR_EVENT_TICKET_TAKER                0x2EC
-#define FLAG_HIDE_SLATEPORT_CITY_SCOTT                              0x2ED
-#define FLAG_HIDE_ROUTE_101_ZIGZAGOON                               0x2EE
-#define FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY                           0x2EF
-#define FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE                       0x2F0
+#define FLAG_COMPLETED_CORVISQUIRE_HAU_EVENT                        0x2E5 // Set during Mahalo Trail cutscene
+#define FLAG_LILLIE_NEEDS_HELP_MAHALO_TRAIL                         0x2E6 // Locks Player into bridge area, forcing battle
+#define FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL                      0x2E7 // Hides Hau and Corvisquire
+#define FLAG_HIDE_EVENT_POKEMON_MAHALO_TRAIL                        0x2E8 // Hides Corviknight, Nebbie, and Lillie after event
+#define FLAG_HIDE_TAPU_KOKO_MAHALO_TRAIL                            0x2E9 // Hides Tapu Koko and the second copy of Hau
+#define FLAG_HIDE_LILLIE_IKI_TOWN                                   0x2EA // So she appears only in the festival
+#define FLAG_HIDE_MOM_IKI_TOWN                                      0x2EB // Only shows Mom and Samson during Festival
+#define FLAG_HIDE_HAU_HALAS_HOME                                    0x2EC // Hau at home temporarily, can give item
+#define FLAG_HIDE_HAUS_ROWLET_HALAS_HOME                            0x2ED // Used in Hala's Home
+#define FLAG_HIDE_HAUS_LITTEN_HALAS_HOME                            0x2EE // Used in Hala's Home
+#define FLAG_HIDE_HAUS_POPPLIO_HALAS_HOME                           0x2EF // Used in Hala's Home
+#define FLAG_HIDE_LILLIE_HAUOLI_OUTSKIRTS                           0x2F0 // Outside Professor Kukui's Lab
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN              0x2F1
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1          0x2F2
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2          0x2F3
@@ -1392,7 +1392,7 @@
 #define FLAG_USE_SCALEMONS                          (SYSTEM_FLAGS + 0x21) // Enables Scalemons ruleset
 #define FLAG_OVERWORLD_ENCOUNTERS_DISABLED          (SYSTEM_FLAGS + 0x22) // If set, Overworld Encounters are DISABLED
 #define FLAG_FORCE_DOUBLE_BATTLES                   (SYSTEM_FLAGS + 0x23) // Force all Trainer battles to be doubles
-#define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
+#define FLAG_SYS_SHOW_ALL_DEXNAV_MONS               (SYSTEM_FLAGS + 0x24) // Cheat to make DexNav show all 
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
@@ -1405,8 +1405,8 @@
 #define FLAG_SYS_SAFARI_MODE                        (SYSTEM_FLAGS + 0x2C)
 #define FLAG_SYS_CRUISE_MODE                        (SYSTEM_FLAGS + 0x2D)
 
-#define FLAG_UNUSED_0x88E                           (SYSTEM_FLAGS + 0x2E) // Unused Flag
-#define FLAG_UNUSED_0x88F                           (SYSTEM_FLAGS + 0x2F) // Unused Flag
+#define FLAG_SYS_DEXNAV_GET                         (SYSTEM_FLAGS + 0x2E) // Got DexNav
+#define FLAG_SYS_DEXNAV_SEARCH                      (SYSTEM_FLAGS + 0x2F) // Is Searching using DexNav
 
 #define FLAG_SYS_TV_HOME                            (SYSTEM_FLAGS + 0x30)
 #define FLAG_SYS_TV_WATCH                           (SYSTEM_FLAGS + 0x31)

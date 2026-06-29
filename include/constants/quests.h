@@ -51,9 +51,9 @@
 #define SUB_QUEST_1          0 // Find Samson Oak in Iki Town
 #define SUB_QUEST_2          1 // Meet Professor Kukui's friend in Iki Town
 #define SUB_QUEST_3          2 // Find Hau on Mahalo Trail
-#define SUB_QUEST_4          3 // Battle Hau in Manalo Festival
-#define SUB_QUEST_5          4 // 
-#define SUB_QUEST_6          5
+#define SUB_QUEST_4          3 // Begin the Manalo Festival
+#define SUB_QUEST_5          4 // Go to Kukui's Lab
+#define SUB_QUEST_6          5 // Complete Alola Leo School's curriculum
 #define SUB_QUEST_7          6
 #define SUB_QUEST_8          7
 #define SUB_QUEST_9          8

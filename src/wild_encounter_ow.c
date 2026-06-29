@@ -167,6 +167,7 @@ static struct ObjectEvent *GetRandomOWEObjectEvent(void);
 static bool32 OWE_ShouldPlayOWEFleeSound(struct ObjectEvent *owe);
 static bool32 CheckRestrictedOWEMovementAtCoords(struct ObjectEvent *owe, s32 xNew, s32 yNew, enum Direction newDirection, enum Direction collisionDirection);
 static bool32 CheckRestrictedOWEMovementMetatile(s32 xCurrent, s32 yCurrent, s32 xNew, s32 yNew);
+static bool32 CheckIfMetatileIsStair(s32 xCurrent, s32 yCurrent, s32 xNew, s32 yNew);
 static bool32 CheckRestrictedOWEMovementMap(struct ObjectEvent *owe, s32 xNew, s32 yNew);
 static bool32 CanOWEReachPlayer(struct ObjectEvent *owe);
 static bool32 IsOWENextToObject(struct ObjectEvent *owe, struct ObjectEvent *object);
@@ -1323,8 +1324,11 @@ bool32 CheckRestrictedOWEMovement(struct ObjectEvent *owe, enum Direction direct
     s32 xNew = xCurrent + gDirectionToVectors[direction].x;
     s32 yNew = yCurrent + gDirectionToVectors[direction].y;
 
+    if(CheckIfMetatileIsStair(xCurrent, yCurrent, xNew, yNew)) // Don't let OWE's walk on stairs
+        return TRUE;
+
     // Nemo added line (so if it's effed that's why lol)
-    // If the OWE is set to chase player and can see them, and the tile is still in the map, let it leave the grass
+    // If the OWE is set to chase player and can see them, and the tile is still in the map & not a stair tile, let it leave the grass
     if ((gSpeciesInfo[OW_SPECIES(owe)].overworldEncounterBehavior == OWE_CHASE_PLAYER_NORMAL && CanAwareOWESeePlayer(owe)) && !CheckRestrictedOWEMovementMap(owe, xNew, yNew))
         return FALSE;
 
@@ -1339,8 +1343,11 @@ bool32 CheckRestrictedOWEMovement(struct ObjectEvent *owe, enum Direction direct
 
 static bool32 CheckRestrictedOWEMovementAtCoords(struct ObjectEvent *owe, s32 xNew, s32 yNew, enum Direction newDirection, enum Direction collisionDirection)
 {
+    if(CheckIfMetatileIsStair(owe->currentCoords.x, owe->currentCoords.y, xNew, yNew)) // Don't let OWE's walk on stairs
+        return FALSE;
+
     // Nemo added line (so if it's effed that's why lol)
-    // If the OWE is set to chase player and can see them, and the tile is still in the map and it's not a collision issue, let it leave the grass
+    // If the OWE is set to chase player and can see them, and the tile is still in the map and it's not a collision issue AND it's not a stair, let it leave the grass
     if ((gSpeciesInfo[OW_SPECIES(owe)].overworldEncounterBehavior == OWE_CHASE_PLAYER_NORMAL && CanAwareOWESeePlayer(owe)) && !GetCollisionAtCoords(owe, xNew, yNew, collisionDirection))
         return TRUE;
     
@@ -1377,6 +1384,19 @@ static bool32 CheckRestrictedOWEMovementMetatile(s32 xCurrent, s32 yCurrent, s32
         return FALSE;
 
     return TRUE;
+}
+
+// Nemo added function
+// If the next metatile is a stair, block wild mon from walking on it
+// This is called when Pokémon are chasing the player!
+static bool32 CheckIfMetatileIsStair(s32 xCurrent, s32 yCurrent, s32 xNew, s32 yNew)
+{
+    u32 metatileBehaviourNew = MapGridGetMetatileBehaviorAt(xNew, yNew);
+
+    if (MetatileBehavior_IsStair(metatileBehaviourNew))
+        return TRUE;
+
+    return FALSE;
 }
 
 static bool32 CheckRestrictedOWEMovementMap(struct ObjectEvent *owe, s32 xNew, s32 yNew)
