@@ -297,6 +297,33 @@ script HauoliOutskirts_Sign_HouseSign
     end
 }
 
+script HauoliOutskirts_Sign_KukuiLab
+{
+    lock
+    msgbox(format("Kukui's Pokémon Lab"))
+    closemessage
+    release
+    end
+}
+
+script HauoliOutskirts_Sign_TenCaratHill
+{
+    lock
+    msgbox(format("Ten Carat Hill"))
+    closemessage
+    release
+    end
+}
+
+script HauoliOutskirts_Sign_Directions
+{
+	lock
+	msgbox(format("{LEFT_ARROW} Alola Leo Trainer School\n {LEFT_ARROW} Hau'oli City\p {UP_ARROW} Route 1\n {DOWN_ARROW} Ten Carat Hill"))
+	closemessage
+	release
+	end
+}
+
 script HauoliOutskirts_Sign_SeelWatching
 {
     lock

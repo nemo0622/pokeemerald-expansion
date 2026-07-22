@@ -338,8 +338,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      5,
 	      gText_SubQuest1_Name6,
 	      gText_SubQuest1_Desc6,
-	      gText_SideQuestMap6,
-	      OBJ_EVENT_GFX_DANCER_F,
+	      gText_SubQuest1_Map6,
+	      OBJ_EVENT_GFX_SCHOOL_BOY,
 	      OBJECT,
 	      sText_Found
 	),

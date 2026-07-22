@@ -8306,7 +8306,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_DudunsparceTwoSegment[] = INCGFX_COMP("graphics/pokemon/dudunsparce/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
-    const u32 gObjectEventPic_DudunsparceThreeSegment[] = INCGFX_COMP("graphics/pokemon/dudunsparce/three_segment/overworld.png", ".4bpp", "-mwidth 8 -mheight 8");
+    const u32 gObjectEventPic_DudunsparceThreeSegment[] = INCGFX_COMP("graphics/pokemon/dudunsparce/three_segment/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u16 gOverworldPalette_Dudunsparce[] = INCGFX_U16("graphics/pokemon/dudunsparce/overworld_normal.pal", ".gbapal");
     const u16 gShinyOverworldPalette_Dudunsparce[] = INCGFX_U16("graphics/pokemon/dudunsparce/overworld_shiny.pal", ".gbapal");
@@ -8315,10 +8315,10 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_DudunsparceTwoSegment[] = INCGFX_U32("graphics/pokemon/dudunsparce/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_DudunsparceTwoSegment[] = INCGFX_U32("graphics/pokemon/dudunsparce/anim_front.png", ".4bpp.smol");
     const u32 gMonBackPic_DudunsparceTwoSegment[] = INCGFX_U32("graphics/pokemon/dudunsparce/back.png", ".4bpp.smol");
 
-    const u32 gMonFrontPic_DudunsparceThreeSegment[] = INCGFX_U32("graphics/pokemon/dudunsparce/three_segment/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_DudunsparceThreeSegment[] = INCGFX_U32("graphics/pokemon/dudunsparce/three_segment/anim_front.png", ".4bpp.smol");
     const u32 gMonBackPic_DudunsparceThreeSegment[] = INCGFX_U32("graphics/pokemon/dudunsparce/three_segment/back.png", ".4bpp.smol");
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_DUNSPARCE
@@ -21684,7 +21684,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_GRUBBIN
 
 #if P_FAMILY_CRABRAWLER
-    const u32 gMonFrontPic_Crabrawler[] = INCGFX_U32("graphics/pokemon/crabrawler/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Crabrawler[] = INCGFX_U32("graphics/pokemon/crabrawler/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Crabrawler[] = INCGFX_U16("graphics/pokemon/crabrawler/normal.pal", ".gbapal");
     const u32 gMonBackPic_Crabrawler[] = INCGFX_U32("graphics/pokemon/crabrawler/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Crabrawler[] = INCGFX_U16("graphics/pokemon/crabrawler/shiny.pal", ".gbapal");
@@ -21700,7 +21700,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Crabominable[] = INCGFX_U32("graphics/pokemon/crabominable/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Crabominable[] = INCGFX_U32("graphics/pokemon/crabominable/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Crabominable[] = INCGFX_U16("graphics/pokemon/crabominable/normal.pal", ".gbapal");
     const u32 gMonBackPic_Crabominable[] = INCGFX_U32("graphics/pokemon/crabominable/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Crabominable[] = INCGFX_U16("graphics/pokemon/crabominable/shiny.pal", ".gbapal");
@@ -24605,7 +24605,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_PINCURCHIN
 
 #if P_FAMILY_SNOM
-    const u32 gMonFrontPic_Snom[] = INCGFX_U32("graphics/pokemon/snom/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Snom[] = INCGFX_U32("graphics/pokemon/snom/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Snom[] = INCGFX_U16("graphics/pokemon/snom/normal.pal", ".gbapal");
     const u32 gMonBackPic_Snom[] = INCGFX_U32("graphics/pokemon/snom/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Snom[] = INCGFX_U16("graphics/pokemon/snom/shiny.pal", ".gbapal");
@@ -24621,7 +24621,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Frosmoth[] = INCGFX_U32("graphics/pokemon/frosmoth/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Frosmoth[] = INCGFX_U32("graphics/pokemon/frosmoth/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Frosmoth[] = INCGFX_U16("graphics/pokemon/frosmoth/normal.pal", ".gbapal");
     const u32 gMonBackPic_Frosmoth[] = INCGFX_U32("graphics/pokemon/frosmoth/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Frosmoth[] = INCGFX_U16("graphics/pokemon/frosmoth/shiny.pal", ".gbapal");

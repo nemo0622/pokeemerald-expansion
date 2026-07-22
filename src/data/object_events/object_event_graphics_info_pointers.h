@@ -281,6 +281,61 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Woman
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Woman_3;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Lady;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Nurse;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ace_Trainer_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ace_Trainer_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Aether_Foundation_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Aether_Foundation_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Backpacker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Bug_Catcher_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Camper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Dancer_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Farmer_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Fisherman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Hiker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Picnicker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Punk_Rocker_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Punk_Rocker_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Rising_Star_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Rising_Star_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Sailor_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Sailor_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Singer;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Team_Skull_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Team_Skull_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Battle_Girl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Breeder_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Breeder_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Old_Man;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Old_Woman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Veteran_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Veteran_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Artist;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Beauty;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Bellhop;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Biker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Collector;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Hex_Maniac;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Jester;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Office_Worker_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Office_Worker_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Pilot;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Psychic;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ranger_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ranger_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Scientist_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Scientist_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Acerola;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Gladion;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Hapu;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ilima;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Kiawe;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Lana;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Mallow;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Mina;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Nanu;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Olivia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ryuki;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Sophocles;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_ELIO_NORMAL] =           &gObjectEventGraphicsInfo_ElioNormal,
@@ -558,6 +613,61 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WOMAN_3] =                         &gObjectEventGraphicsInfo_Alola_Woman_3,
     [OBJ_EVENT_GFX_LADY] =                            &gObjectEventGraphicsInfo_Alola_Lady,
     [OBJ_EVENT_GFX_NURSE] =                           &gObjectEventGraphicsInfo_Alola_Nurse,
+    [OBJ_EVENT_GFX_ACE_TRAINER_F] =                   &gObjectEventGraphicsInfo_Alola_Ace_Trainer_F,
+    [OBJ_EVENT_GFX_ACE_TRAINER_M] =                   &gObjectEventGraphicsInfo_Alola_Ace_Trainer_M,
+    [OBJ_EVENT_GFX_AETHER_FOUNDATION_F] =             &gObjectEventGraphicsInfo_Alola_Aether_Foundation_F,
+    [OBJ_EVENT_GFX_AETHER_FOUNDATION_M] =             &gObjectEventGraphicsInfo_Alola_Aether_Foundation_M,
+    [OBJ_EVENT_GFX_BACKPACKER] =                      &gObjectEventGraphicsInfo_Alola_Backpacker,
+    [OBJ_EVENT_GFX_BUG_CATCHER_F] =                   &gObjectEventGraphicsInfo_Alola_Bug_Catcher_F,
+    [OBJ_EVENT_GFX_CAMPER] =                          &gObjectEventGraphicsInfo_Alola_Camper,
+    [OBJ_EVENT_GFX_DANCER_M] =                        &gObjectEventGraphicsInfo_Alola_Dancer_M,
+    [OBJ_EVENT_GFX_FARMER_F] =                        &gObjectEventGraphicsInfo_Alola_Farmer_F,
+    [OBJ_EVENT_GFX_FISHERMAN] =                       &gObjectEventGraphicsInfo_Alola_Fisherman,
+    [OBJ_EVENT_GFX_HIKER] =                           &gObjectEventGraphicsInfo_Alola_Hiker,
+    [OBJ_EVENT_GFX_PICNICKER] =                       &gObjectEventGraphicsInfo_Alola_Picnicker,
+    [OBJ_EVENT_GFX_PUNK_ROCKER_F] =                   &gObjectEventGraphicsInfo_Alola_Punk_Rocker_F,
+    [OBJ_EVENT_GFX_PUNK_ROCKER_M] =                   &gObjectEventGraphicsInfo_Alola_Punk_Rocker_M,
+    [OBJ_EVENT_GFX_RISING_STAR_F] =                   &gObjectEventGraphicsInfo_Alola_Rising_Star_F,
+    [OBJ_EVENT_GFX_RISING_STAR_M] =                   &gObjectEventGraphicsInfo_Alola_Rising_Star_M,
+    [OBJ_EVENT_GFX_SAILOR_F] =                        &gObjectEventGraphicsInfo_Alola_Sailor_F,
+    [OBJ_EVENT_GFX_SAILOR_M] =                        &gObjectEventGraphicsInfo_Alola_Sailor_M,
+    [OBJ_EVENT_GFX_SINGER] =                          &gObjectEventGraphicsInfo_Alola_Singer,
+    [OBJ_EVENT_GFX_TEAM_SKULL_F] =                    &gObjectEventGraphicsInfo_Alola_Team_Skull_F,
+    [OBJ_EVENT_GFX_TEAM_SKULL_M] =                    &gObjectEventGraphicsInfo_Alola_Team_Skull_M,
+    [OBJ_EVENT_GFX_BATTLE_GIRL] =                     &gObjectEventGraphicsInfo_Alola_Battle_Girl,
+    [OBJ_EVENT_GFX_BREEDER_F] =                       &gObjectEventGraphicsInfo_Alola_Breeder_F,
+    [OBJ_EVENT_GFX_BREEDER_M] =                       &gObjectEventGraphicsInfo_Alola_Breeder_M,
+    [OBJ_EVENT_GFX_OLD_MAN] =                         &gObjectEventGraphicsInfo_Alola_Old_Man,
+    [OBJ_EVENT_GFX_OLD_WOMAN] =                       &gObjectEventGraphicsInfo_Alola_Old_Woman,
+    [OBJ_EVENT_GFX_VETERAN_F] =                       &gObjectEventGraphicsInfo_Alola_Veteran_F,
+    [OBJ_EVENT_GFX_VETERAN_M] =                       &gObjectEventGraphicsInfo_Alola_Veteran_M,
+    [OBJ_EVENT_GFX_ARTIST] =                          &gObjectEventGraphicsInfo_Alola_Artist,
+    [OBJ_EVENT_GFX_BEAUTY] =                          &gObjectEventGraphicsInfo_Alola_Beauty,
+    [OBJ_EVENT_GFX_BELLHOP] =                         &gObjectEventGraphicsInfo_Alola_Bellhop,
+    [OBJ_EVENT_GFX_BIKER] =                           &gObjectEventGraphicsInfo_Alola_Biker,
+    [OBJ_EVENT_GFX_COLLECTOR] =                       &gObjectEventGraphicsInfo_Alola_Collector,
+    [OBJ_EVENT_GFX_HEX_MANIAC] =                      &gObjectEventGraphicsInfo_Alola_Hex_Maniac,
+    [OBJ_EVENT_GFX_JESTER] =                          &gObjectEventGraphicsInfo_Alola_Jester,
+    [OBJ_EVENT_GFX_OFFICE_WORKER_F] =                 &gObjectEventGraphicsInfo_Alola_Office_Worker_F,
+    [OBJ_EVENT_GFX_OFFICE_WORKER_M] =                 &gObjectEventGraphicsInfo_Alola_Office_Worker_M,
+    [OBJ_EVENT_GFX_PILOT] =                           &gObjectEventGraphicsInfo_Alola_Pilot,
+    [OBJ_EVENT_GFX_PSYCHIC] =                         &gObjectEventGraphicsInfo_Alola_Psychic,
+    [OBJ_EVENT_GFX_RANGER_F] =                        &gObjectEventGraphicsInfo_Alola_Ranger_F,
+    [OBJ_EVENT_GFX_RANGER_M] =                        &gObjectEventGraphicsInfo_Alola_Ranger_M,
+    [OBJ_EVENT_GFX_SCIENTIST_F] =                     &gObjectEventGraphicsInfo_Alola_Scientist_F,
+    [OBJ_EVENT_GFX_SCIENTIST_M] =                     &gObjectEventGraphicsInfo_Alola_Scientist_M,
+    [OBJ_EVENT_GFX_ACEROLA] =                         &gObjectEventGraphicsInfo_Alola_Acerola,
+    [OBJ_EVENT_GFX_GLADION] =                         &gObjectEventGraphicsInfo_Alola_Gladion,
+    [OBJ_EVENT_GFX_HAPU] =                            &gObjectEventGraphicsInfo_Alola_Hapu,
+    [OBJ_EVENT_GFX_ILIMA] =                           &gObjectEventGraphicsInfo_Alola_Ilima,
+    [OBJ_EVENT_GFX_KIAWE] =                           &gObjectEventGraphicsInfo_Alola_Kiawe,
+    [OBJ_EVENT_GFX_LANA] =                            &gObjectEventGraphicsInfo_Alola_Lana,
+    [OBJ_EVENT_GFX_MALLOW] =                          &gObjectEventGraphicsInfo_Alola_Mallow,
+    [OBJ_EVENT_GFX_MINA] =                            &gObjectEventGraphicsInfo_Alola_Mina,
+    [OBJ_EVENT_GFX_NANU] =                            &gObjectEventGraphicsInfo_Alola_Nanu,
+    [OBJ_EVENT_GFX_OLIVIA] =                          &gObjectEventGraphicsInfo_Alola_Olivia,
+    [OBJ_EVENT_GFX_RYUKI] =                           &gObjectEventGraphicsInfo_Alola_Ryuki,
+    [OBJ_EVENT_GFX_SOPHOCLES] =                       &gObjectEventGraphicsInfo_Alola_Sophocles,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

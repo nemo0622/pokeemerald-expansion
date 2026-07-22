@@ -307,10 +307,66 @@
 #define OBJ_EVENT_GFX_LADY                      271
 #define OBJ_EVENT_GFX_NURSE                     272
 
+#define OBJ_EVENT_GFX_ACE_TRAINER_F             273
+#define OBJ_EVENT_GFX_ACE_TRAINER_M             274
+#define OBJ_EVENT_GFX_AETHER_FOUNDATION_F       275
+#define OBJ_EVENT_GFX_AETHER_FOUNDATION_M       276
+#define OBJ_EVENT_GFX_BACKPACKER                277
+#define OBJ_EVENT_GFX_BUG_CATCHER_F             278
+#define OBJ_EVENT_GFX_CAMPER                    279
+#define OBJ_EVENT_GFX_DANCER_M                  280
+#define OBJ_EVENT_GFX_FARMER_F                  281
+#define OBJ_EVENT_GFX_FISHERMAN                 282
+#define OBJ_EVENT_GFX_HIKER                     283
+#define OBJ_EVENT_GFX_PICNICKER                 284
+#define OBJ_EVENT_GFX_PUNK_ROCKER_F             285
+#define OBJ_EVENT_GFX_PUNK_ROCKER_M             286
+#define OBJ_EVENT_GFX_RISING_STAR_F             287
+#define OBJ_EVENT_GFX_RISING_STAR_M             288
+#define OBJ_EVENT_GFX_SAILOR_F                  289
+#define OBJ_EVENT_GFX_SAILOR_M                  290
+#define OBJ_EVENT_GFX_SINGER                    291
+#define OBJ_EVENT_GFX_TEAM_SKULL_F              292
+#define OBJ_EVENT_GFX_TEAM_SKULL_M              293
+#define OBJ_EVENT_GFX_BATTLE_GIRL               294
+#define OBJ_EVENT_GFX_BREEDER_F                 295
+#define OBJ_EVENT_GFX_BREEDER_M                 296
+#define OBJ_EVENT_GFX_OLD_MAN                   297
+#define OBJ_EVENT_GFX_OLD_WOMAN                 298
+#define OBJ_EVENT_GFX_VETERAN_F                 299
+#define OBJ_EVENT_GFX_VETERAN_M                 300
+#define OBJ_EVENT_GFX_ARTIST                    301
+#define OBJ_EVENT_GFX_BEAUTY                    302
+#define OBJ_EVENT_GFX_BELLHOP                   303
+#define OBJ_EVENT_GFX_BIKER                     304
+#define OBJ_EVENT_GFX_COLLECTOR                 305
+#define OBJ_EVENT_GFX_HEX_MANIAC                306
+#define OBJ_EVENT_GFX_JESTER                    307
+#define OBJ_EVENT_GFX_OFFICE_WORKER_F           308
+#define OBJ_EVENT_GFX_OFFICE_WORKER_M           309
+#define OBJ_EVENT_GFX_PILOT                     310
+#define OBJ_EVENT_GFX_PSYCHIC                   311
+#define OBJ_EVENT_GFX_RANGER_F                  312
+#define OBJ_EVENT_GFX_RANGER_M                  313
+#define OBJ_EVENT_GFX_SCIENTIST_F               314
+#define OBJ_EVENT_GFX_SCIENTIST_M               315
+#define OBJ_EVENT_GFX_ACEROLA                   316
+#define OBJ_EVENT_GFX_GLADION                   317
+#define OBJ_EVENT_GFX_HAPU                      318
+#define OBJ_EVENT_GFX_ILIMA                     319
+#define OBJ_EVENT_GFX_KIAWE                     320
+#define OBJ_EVENT_GFX_LANA                      321
+#define OBJ_EVENT_GFX_MALLOW                    322
+#define OBJ_EVENT_GFX_MINA                      323
+#define OBJ_EVENT_GFX_NANU                      324
+#define OBJ_EVENT_GFX_OLIVIA                    325
+#define OBJ_EVENT_GFX_RYUKI                     326
+#define OBJ_EVENT_GFX_SOPHOCLES                 327
+
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        273
+#define NUM_OBJ_EVENT_GFX                        328
 
 
 // These are dynamic object gfx ids.

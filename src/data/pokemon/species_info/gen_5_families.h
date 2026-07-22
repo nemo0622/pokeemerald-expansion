@@ -10081,12 +10081,23 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Litwick,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
-        .frontPicYOffset = 14,
+        .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(2, 5),
+            ANIMCMD_FRAME(3, 5),
+            ANIMCMD_FRAME(2, 5),
+            ANIMCMD_FRAME(3, 5),
+            ANIMCMD_FRAME(2, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(2, 5),
+            ANIMCMD_FRAME(3, 5),
+            ANIMCMD_FRAME(2, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 15),
             ANIMCMD_FRAME(1, 10),
-            ANIMCMD_FRAME(0, 10),
-            ANIMCMD_FRAME(1, 10),
-            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Litwick,
@@ -10098,7 +10109,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .iconSprite = gMonIcon_Litwick,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(1, -1, SHADOW_SIZE_S)
+        SHADOW(0, 1, SHADOW_SIZE_S)
         FOOTPRINT(Litwick)
         OVERWORLD(
             sPicTable_Litwick,

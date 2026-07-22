@@ -3290,10 +3290,13 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .frontPicSize = MON_COORDS_SIZE(32, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 25),
-            ANIMCMD_FRAME(0, 25),
-            ANIMCMD_FRAME(1, 25),
-            ANIMCMD_FRAME(0, 25),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 20),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 20),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 5,
@@ -3362,12 +3365,15 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 25),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 25),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(3, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(3, 10),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 7,
@@ -3380,7 +3386,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Drifblim,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 11, SHADOW_SIZE_M)
+        SHADOW(-1, 11, SHADOW_SIZE_M)
         FOOTPRINT(Drifblim)
         OVERWORLD(
             sPicTable_Drifblim,

@@ -3801,8 +3801,18 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 15,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 0 : 12,
@@ -3821,7 +3831,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .backPicSizeFemale = MON_COORDS_SIZE(40, 56),
 #endif //P_GENDER_DIFFERENCES && !P_GBA_STYLE_SPECIES_GFX
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-2, 8, SHADOW_SIZE_S)
+        SHADOW(0, 5, SHADOW_SIZE_S)
         FOOTPRINT(Murkrow)
         OVERWORLD(
             sPicTable_Murkrow,
@@ -4675,12 +4685,18 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Dunsparce,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 32) : MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 17 : 9,
+        .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 10),
-            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(0, 30),
             ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(2, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(2, 15),
+            ANIMCMD_FRAME(3, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(3, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .frontAnimDelay = 10,
@@ -4693,7 +4709,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_Dunsparce,
         .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, -4, SHADOW_SIZE_M)
+        SHADOW(2, -6, SHADOW_SIZE_M)
         FOOTPRINT(Dunsparce)
         OVERWORLD(
             sPicTable_Dunsparce,
@@ -4750,8 +4766,18 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_DudunsparceTwoSegment,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontPicYOffset = 6,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(3, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(4, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_DudunsparceTwoSegment,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -4762,7 +4788,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_Dudunsparce,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 5, SHADOW_SIZE_L)
+        SHADOW(3, -1, SHADOW_SIZE_L)
         FOOTPRINT(Dudunsparce)
         OVERWORLD(
             sPicTable_DudunsparceTwoSegment,
@@ -4814,8 +4840,18 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_DudunsparceThreeSegment,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontPicYOffset = 6,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(3, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(4, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_DudunsparceThreeSegment,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -4826,11 +4862,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_Dudunsparce,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(4, 4, SHADOW_SIZE_L)
+        SHADOW(5, -1, SHADOW_SIZE_L)
         FOOTPRINT(Dudunsparce)
         OVERWORLD(
             sPicTable_DudunsparceThreeSegment,
-            SIZE_64x64,
+            SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_SLITHER,
             sAnimTable_Following,
@@ -7915,10 +7951,21 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 12),
-            ANIMCMD_FRAME(0, 12),
-            ANIMCMD_FRAME(1, 12),
-            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 6),
+            ANIMCMD_FRAME(0, 6),
+            ANIMCMD_FRAME(2, 6),
+            ANIMCMD_FRAME(0, 6),
+            ANIMCMD_FRAME(2, 6),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_H_JUMPS : ANIM_H_JUMPS_V_STRETCH,
         .backPic = gMonBackPic_Smeargle,

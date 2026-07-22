@@ -5443,8 +5443,20 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Snom,
         .frontPicSize = MON_COORDS_SIZE(40, 32),
-        .frontPicYOffset = 20,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontPicYOffset = 15,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Snom,
         .backPicSize = MON_COORDS_SIZE(48, 32),
@@ -5455,7 +5467,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .iconSprite = gMonIcon_Snom,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
-        SHADOW(-2, -7, SHADOW_SIZE_S)
+        SHADOW(-1, -5, SHADOW_SIZE_M)
         FOOTPRINT(Snom)
         OVERWORLD(
             sPicTable_Snom,
@@ -5509,7 +5521,22 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .frontPic = gMonFrontPic_Frosmoth,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(2, 5),
+            ANIMCMD_FRAME(3, 10),
+            ANIMCMD_FRAME(4, 10),
+            ANIMCMD_FRAME(3, 10),
+            ANIMCMD_FRAME(4, 10),
+            ANIMCMD_FRAME(2, 5),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 7,
         .backPic = gMonBackPic_Frosmoth,
@@ -5521,7 +5548,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .iconSprite = gMonIcon_Frosmoth,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-7, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(1, 12, SHADOW_SIZE_M)
         FOOTPRINT(Frosmoth)
         OVERWORLD(
             sPicTable_Frosmoth,

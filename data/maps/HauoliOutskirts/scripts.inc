@@ -421,31 +421,67 @@ HauoliOutskirts_Sign_HouseSign::
 	end
 
 
-HauoliOutskirts_Sign_SeelWatching::
+HauoliOutskirts_Sign_KukuiLab::
 # 302 "data//maps/HauoliOutskirts/scripts.pory"
 	lock
 # 303 "data//maps/HauoliOutskirts/scripts.pory"
-	msgbox HauoliOutskirts_Sign_SeelWatching_Text_0, MSGBOX_YESNO
+	msgbox HauoliOutskirts_Sign_KukuiLab_Text_0
 # 304 "data//maps/HauoliOutskirts/scripts.pory"
 	closemessage
 # 305 "data//maps/HauoliOutskirts/scripts.pory"
+	release
+	end
+
+
+HauoliOutskirts_Sign_TenCaratHill::
+# 311 "data//maps/HauoliOutskirts/scripts.pory"
+	lock
+# 312 "data//maps/HauoliOutskirts/scripts.pory"
+	msgbox HauoliOutskirts_Sign_TenCaratHill_Text_0
+# 313 "data//maps/HauoliOutskirts/scripts.pory"
+	closemessage
+# 314 "data//maps/HauoliOutskirts/scripts.pory"
+	release
+	end
+
+
+HauoliOutskirts_Sign_Directions::
+# 320 "data//maps/HauoliOutskirts/scripts.pory"
+	lock
+# 321 "data//maps/HauoliOutskirts/scripts.pory"
+	msgbox HauoliOutskirts_Sign_Directions_Text_0
+# 322 "data//maps/HauoliOutskirts/scripts.pory"
+	closemessage
+# 323 "data//maps/HauoliOutskirts/scripts.pory"
+	release
+	end
+
+
+HauoliOutskirts_Sign_SeelWatching::
+# 329 "data//maps/HauoliOutskirts/scripts.pory"
+	lock
+# 330 "data//maps/HauoliOutskirts/scripts.pory"
+	msgbox HauoliOutskirts_Sign_SeelWatching_Text_0, MSGBOX_YESNO
+# 331 "data//maps/HauoliOutskirts/scripts.pory"
+	closemessage
+# 332 "data//maps/HauoliOutskirts/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq HauoliOutskirts_Sign_SeelWatching_2
 HauoliOutskirts_Sign_SeelWatching_1:
-# 313 "data//maps/HauoliOutskirts/scripts.pory"
+# 340 "data//maps/HauoliOutskirts/scripts.pory"
 	release
 	end
 
 HauoliOutskirts_Sign_SeelWatching_2:
-# 307 "data//maps/HauoliOutskirts/scripts.pory"
+# 334 "data//maps/HauoliOutskirts/scripts.pory"
 	setvar VAR_0x8003, SPECIES_SEEL
-# 308 "data//maps/HauoliOutskirts/scripts.pory"
+# 335 "data//maps/HauoliOutskirts/scripts.pory"
 	special ShowSpeciesInfoWindow
-# 309 "data//maps/HauoliOutskirts/scripts.pory"
+# 336 "data//maps/HauoliOutskirts/scripts.pory"
 	delay 30
-# 310 "data//maps/HauoliOutskirts/scripts.pory"
+# 337 "data//maps/HauoliOutskirts/scripts.pory"
 	waitbuttonpress
-# 311 "data//maps/HauoliOutskirts/scripts.pory"
+# 338 "data//maps/HauoliOutskirts/scripts.pory"
 	special CloseSpeciesInfoWindow
 	goto HauoliOutskirts_Sign_SeelWatching_1
 
@@ -870,8 +906,23 @@ HauoliOutskirts_Sign_HouseSign_Text_0:
 # 294 "data//maps/HauoliOutskirts/scripts.pory"
 	.string "Oak Family Home$"
 
-HauoliOutskirts_Sign_SeelWatching_Text_0:
+HauoliOutskirts_Sign_KukuiLab_Text_0:
 # 303 "data//maps/HauoliOutskirts/scripts.pory"
+	.string "Kukui's Pokémon Lab$"
+
+HauoliOutskirts_Sign_TenCaratHill_Text_0:
+# 312 "data//maps/HauoliOutskirts/scripts.pory"
+	.string "Ten Carat Hill$"
+
+HauoliOutskirts_Sign_Directions_Text_0:
+# 321 "data//maps/HauoliOutskirts/scripts.pory"
+	.string "{LEFT_ARROW} Alola Leo Trainer School\n"
+	.string "{LEFT_ARROW} Hau'oli City\p"
+	.string "{UP_ARROW} Route 1\n"
+	.string "{DOWN_ARROW} Ten Carat Hill$"
+
+HauoliOutskirts_Sign_SeelWatching_Text_0:
+# 330 "data//maps/HauoliOutskirts/scripts.pory"
 	.string "Alolan Education Tip Number 1:\n"
 	.string "Please watch out for sleeping {COLOR BLUE}Seel{COLOR DARK_GRAY} on\l"
 	.string "the beach!\p"

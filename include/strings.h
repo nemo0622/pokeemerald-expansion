@@ -2423,5 +2423,6 @@ extern const u8 gText_SubQuest1_Map2[];
 extern const u8 gText_SubQuest1_Map3[];
 extern const u8 gText_SubQuest1_Map4[];
 extern const u8 gText_SubQuest1_Map5[];
+extern const u8 gText_SubQuest1_Map6[];
 
 #endif // GUARD_STRINGS_H

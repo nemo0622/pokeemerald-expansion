@@ -4738,3 +4738,498 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Nurse = {
     .images = sPicTable_Alola_Nurse,
 };
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ace_Trainer_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Ace_Trainer_F,
+    .images = sPicTable_Alola_Ace_Trainer_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ace_Trainer_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Ace_Trainer_M,
+    .images = sPicTable_Alola_Ace_Trainer_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Aether_Foundation_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Aether_Foundation_F,
+    .images = sPicTable_Alola_Aether_Foundation_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Aether_Foundation_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Aether_Foundation_M,
+    .images = sPicTable_Alola_Aether_Foundation_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Backpacker = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Backpacker,
+    .images = sPicTable_Alola_Backpacker,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Bug_Catcher_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Bug_Catcher_F,
+    .images = sPicTable_Alola_Bug_Catcher_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Camper = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Camper,
+    .images = sPicTable_Alola_Camper,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Dancer_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Dancer_M,
+    .images = sPicTable_Alola_Dancer_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Farmer_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Farmer_F,
+    .images = sPicTable_Alola_Farmer_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Fisherman = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Fisherman,
+    .images = sPicTable_Alola_Fisherman,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Hiker = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Hiker,
+    .images = sPicTable_Alola_Hiker,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Picnicker = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Picnicker,
+    .images = sPicTable_Alola_Picnicker,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Punk_Rocker_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Punk_Rocker_F,
+    .images = sPicTable_Alola_Punk_Rocker_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Punk_Rocker_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Punk_Rocker_M,
+    .images = sPicTable_Alola_Punk_Rocker_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Rising_Star_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Rising_Star_F,
+    .images = sPicTable_Alola_Rising_Star_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Rising_Star_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Rising_Star_M,
+    .images = sPicTable_Alola_Rising_Star_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Sailor_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Sailor_F,
+    .images = sPicTable_Alola_Sailor_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Sailor_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Sailor_M,
+    .images = sPicTable_Alola_Sailor_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Singer = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Singer,
+    .images = sPicTable_Alola_Singer,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Team_Skull_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Team_Skull_F,
+    .images = sPicTable_Alola_Team_Skull_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Team_Skull_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Team_Skull_M,
+    .images = sPicTable_Alola_Team_Skull_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Battle_Girl = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Battle_Girl,
+    .images = sPicTable_Alola_Battle_Girl,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Breeder_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Breeder_F,
+    .images = sPicTable_Alola_Breeder_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Breeder_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Breeder_M,
+    .images = sPicTable_Alola_Breeder_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Old_Man = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Old_Man,
+    .images = sPicTable_Alola_Old_Man,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Old_Woman = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Old_Woman,
+    .images = sPicTable_Alola_Old_Woman,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Veteran_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Veteran_F,
+    .images = sPicTable_Alola_Veteran_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Veteran_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Veteran_M,
+    .images = sPicTable_Alola_Veteran_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Artist = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Artist,
+    .images = sPicTable_Alola_Artist,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Beauty = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Beauty,
+    .images = sPicTable_Alola_Beauty,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Bellhop = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Bellhop,
+    .images = sPicTable_Alola_Bellhop,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Biker = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Biker,
+    .images = sPicTable_Alola_Biker,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Collector = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Collector,
+    .images = sPicTable_Alola_Collector,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Hex_Maniac = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Hex_Maniac,
+    .images = sPicTable_Alola_Hex_Maniac,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Jester = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Jester,
+    .images = sPicTable_Alola_Jester,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Office_Worker_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Office_Worker_F,
+    .images = sPicTable_Alola_Office_Worker_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Office_Worker_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Office_Worker_M,
+    .images = sPicTable_Alola_Office_Worker_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Pilot = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Pilot,
+    .images = sPicTable_Alola_Pilot,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Psychic = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Psychic,
+    .images = sPicTable_Alola_Psychic,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ranger_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Ranger_F,
+    .images = sPicTable_Alola_Ranger_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ranger_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Ranger_M,
+    .images = sPicTable_Alola_Ranger_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Scientist_F = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Scientist_F,
+    .images = sPicTable_Alola_Scientist_F,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Scientist_M = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Scientist_M,
+    .images = sPicTable_Alola_Scientist_M,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Acerola = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Acerola,
+    .images = sPicTable_Alola_Acerola,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Gladion = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Gladion,
+    .images = sPicTable_Alola_Gladion,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Hapu = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Hapu,
+    .images = sPicTable_Alola_Hapu,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ilima = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Ilima,
+    .images = sPicTable_Alola_Ilima,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Kiawe = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Kiawe,
+    .images = sPicTable_Alola_Kiawe,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Lana = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Lana,
+    .images = sPicTable_Alola_Lana,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Mallow = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Mallow,
+    .images = sPicTable_Alola_Mallow,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Mina = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Mina,
+    .images = sPicTable_Alola_Mina,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Nanu = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Nanu,
+    .images = sPicTable_Alola_Nanu,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Olivia = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Olivia,
+    .images = sPicTable_Alola_Olivia,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Ryuki = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Ryuki,
+    .images = sPicTable_Alola_Ryuki,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Sophocles = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256, .width = 16, .height = 32,
+    .paletteSlot = PALSLOT_NPC_1, .shadowSize = SHADOW_SIZE_M, .inanimate = FALSE, .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32, .subspriteTables = sOamTables_16x32, .anims = sAnimTable_Sophocles,
+    .images = sPicTable_Alola_Sophocles,
+};
+

@@ -412,7 +412,7 @@ static void OpponentHandleDrawTrainerPic(enum BattlerId battler)
         }
     }
 
-    BtlController_HandleDrawTrainerPic(battler, trainerPicId, TRUE, xPos, 40, -1);
+    BtlController_HandleDrawTrainerPic(battler, trainerPicId, TRUE, xPos, 32, -1);
 }
 
 void OpponentHandleTrainerSlide(enum BattlerId battler)

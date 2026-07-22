@@ -803,7 +803,7 @@
 #define FLAG_HIDE_HAUS_LITTEN_HALAS_HOME                            0x2EE // Used in Hala's Home
 #define FLAG_HIDE_HAUS_POPPLIO_HALAS_HOME                           0x2EF // Used in Hala's Home
 #define FLAG_HIDE_LILLIE_HAUOLI_OUTSKIRTS                           0x2F0 // Outside Professor Kukui's Lab
-#define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN              0x2F1
+#define FLAG_HIDE_LILLIE_ALOLA_LEO_SCHOOL                           0x2F1 // Outside Alola Leo school
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1          0x2F2
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2          0x2F3
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA          0x2F4

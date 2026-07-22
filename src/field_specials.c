@@ -5762,9 +5762,9 @@ void CloseSpeciesInfoWindow(void)
 {
     FreeAndDestroyMonPicSprite(monSpriteId);
 
-    ClearStdWindowAndFrameToTransparent(sDexHeaderBoxWindowId, FALSE);
+    ClearStdWindowAndFrameToTransparent(sDexHeaderBoxWindowId, TRUE);
     FillWindowPixelBuffer(sDexHeaderBoxWindowId, PIXEL_FILL(0));
     ClearWindowTilemap(sDexHeaderBoxWindowId);
-    CopyWindowToVram(sDexHeaderBoxWindowId, 3);
+    CopyWindowToVram(sDexHeaderBoxWindowId, COPYWIN_GFX);
     RemoveWindow(sDexHeaderBoxWindowId);
 }

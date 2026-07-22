@@ -1,4 +1,84 @@
-raw `
-AlolaLeo_Road_MapScripts::
-	.byte 0
-`
+mapscripts AlolaLeo_Road_MapScripts {
+
+}
+
+// --------------------------------- Cutscene Functions --------------------------------
+
+script AlolaLeo_Road_Script_RoadBlockedByTauros
+{
+	lock
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+	switch(var(VAR_TEMP_2))
+	{
+		case 16:
+			applymovement(LOCALID_PLAYER, moves(walk_down, walk_left * 2, face_up, step_end))
+		default:
+			applymovement(LOCALID_PLAYER, moves(walk_left * 2, face_up, step_end))
+	}
+	waitmovement(0)
+	applymovement(1, Common_Movement_FaceDown)
+	waitmovement(0)
+
+	setspeaker("Lillie")
+	msgbox(format("{PLAYER}...! {COLOR BLUE}Nebbie{COLOR DARK_GRAY} and I were just coming to the Trainer School, but look..."))
+	closemessage
+	delay(10)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+	applymovement(1, Common_Movement_FaceLeft)
+	applymovement(3, Common_Movement_WalkRight)
+	waitmovement(0)
+	setspeaker("Hala")
+	msgbox(format("You two were right to stop. It seems like ol' {COLOR BLUE}Tauros{COLOR DARK_GRAY} here is feeling stubborn as, well, a {COLOR BLUE}Tauros{COLOR DARK_GRAY}!\p I'll stay here and try to calm it down. In the meantime, you should chat with the students at the Trainer School. Some might even want to {COLOR GREEN}battle you{COLOR DARK_GRAY}!"))
+	closemessage
+	delay(10)
+	applymovement(3, moves(walk_left, face_down, step_end))
+	waitmovement(0)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
+	applymovement(1, Common_Movement_FaceDown)
+	waitmovement(0)
+	setspeaker("Lillie")
+	msgbox(format("Well, I guess that works out... ehehe!\p I've never had a Pokémon battle before, and {COLOR BLUE}Nebbie{COLOR DARK_GRAY} shouldn't draw too much attention... I think I'll head inside!"))
+	closemessage
+
+	// Subquest 6 is active already - Complete Alola Leo School's Cirriculum
+
+	delay(10)
+	applymovement(1, moves(walk_up * 2, face_down, delay_16 * 2, walk_up * 4, step_end))
+	applymovement(2, moves(walk_left, face_down, emote_heart, delay_16 * 2, walk_up * 4, step_end))
+	delay(100)
+	fadescreenswapbuffers(FADE_TO_BLACK)
+	delay(30)
+	setflag(FLAG_HIDE_LILLIE_ALOLA_LEO_SCHOOL)
+	removeobject(1)
+	removeobject(2)
+	delay(30)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+	delay(20)
+	releaseall
+	end
+}
+
+// -------------------------------- Trainer Scripts ------------------------------------
+
+// TODO Week of July 6th 2026:
+// 1.	:check: Add more trainer classes from Alola (Youth Athlete and stuff)
+// 2.	:check: Get some proper Trainer sprites going! Can be some placeholders ofc (including Elio and Selene!!)
+// 3.	:check: Properly align Trainers at the start of battle (y - 8 i think)
+// 4.	:check: Add more overworld NPC sprites - older man/woman, "rising stars", etc. (watch footage to find NPCs inspo)
+// 		:check: GitHub commit!
+// 5.	Look into DNS palette switching, decide if worth it
+// 6. 	Add Hawaiian characters (line accents) to in-game fonts and charmap.txt
+// 7.	Begin skeleton-mapping the rest of the region! Simply creating MapSec and Tileset files
+
+script AlolaLeo_Road_Trainer_LassHiromi
+{
+	trainerbattle_single(TRAINER_LASS_HIROMI, 
+	format("I'll be the best Trainer at this whole school!"), 
+	format("I'll be stronger one day, you'll see!"))
+
+	setspeaker("Lass Hiromi")
+	msgbox(format("Our school is pretty small, but we learn a lot about Pokémon!"))
+	closemessage
+	release
+	end
+}

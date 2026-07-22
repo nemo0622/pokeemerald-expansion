@@ -1490,3 +1490,223 @@ static const struct SpriteFrameImage sPicTable_Alola_Nurse[] = {
     overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 2),
     overworld_frame(gObjectEventPic_Alola_Nurse, 2, 4, 3),
 };
+
+static const struct SpriteFrameImage sPicTable_Alola_Ace_Trainer_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Ace_Trainer_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Ace_Trainer_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Ace_Trainer_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Aether_Foundation_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Aether_Foundation_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Aether_Foundation_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Aether_Foundation_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Backpacker[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Backpacker, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Bug_Catcher_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Bug_Catcher_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Camper[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Camper, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Dancer_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Dancer_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Farmer_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Farmer_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Fisherman[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Fisherman, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Hiker[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Hiker, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Picnicker[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Picnicker, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Punk_Rocker_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Punk_Rocker_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Punk_Rocker_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Punk_Rocker_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Rising_Star_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Rising_Star_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Rising_Star_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Rising_Star_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Sailor_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Sailor_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Sailor_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Sailor_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Singer[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Singer, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Team_Skull_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Team_Skull_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Team_Skull_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Team_Skull_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Battle_Girl[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Battle_Girl, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Breeder_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Breeder_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Breeder_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Breeder_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Old_Man[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Old_Man, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Old_Woman[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Old_Woman, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Veteran_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Veteran_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Veteran_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Veteran_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Artist[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Artist, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Beauty[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Beauty, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Bellhop[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Bellhop, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Biker[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Biker, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Collector[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Collector, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Hex_Maniac[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Hex_Maniac, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Jester[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Jester, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Office_Worker_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Office_Worker_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Office_Worker_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Office_Worker_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Pilot[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Pilot, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Psychic[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Psychic, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Ranger_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Ranger_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Ranger_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Ranger_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Scientist_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Scientist_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Scientist_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Scientist_M, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Acerola[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Acerola, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Gladion[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Gladion, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Hapu[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Hapu, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Ilima[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Ilima, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Kiawe[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Kiawe, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Lana[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Lana, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Mallow[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Mallow, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Mina[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Mina, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Nanu[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Nanu, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Olivia[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Olivia, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Ryuki[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Ryuki, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Sophocles[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Sophocles, 2, 4),
+};

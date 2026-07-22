@@ -231,8 +231,9 @@ IkiTown_HalaHouse_Hau_Text_2:
 	.string "Pokémon when you first start a battle.\l"
 	.string "Perfect for picking up new Pokémon,\l"
 	.string "yeah?\p"
-	.string "Awrite, I'm gonna head down to {COLOR GREEN}Kukui's\n"
-	.string "Lab{COLOR DARK_GRAY}. It's just down past your house!$"
+	.string "Awrite, I'm gonna head over to the {COLOR GREEN}Alola\n"
+	.string "Leo Trainer School{COLOR DARK_GRAY}! You should come by\l"
+	.string "after talking with Kukui!$"
 
 IkiTown_HalaHouse_Crabrawler_Text_0:
 # 77 "data//maps/IkiTown_HalaHouse/scripts.pory"

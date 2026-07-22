@@ -83,8 +83,8 @@ Double Battle: No
 
 === TRAINER_SCHOOL_BOY_OLIVER ===
 Name: Oliver
-Class: School Kid
-Pic: School Kid M
+Class: Alola School Kid
+Pic: Alola School Kid M
 Gender: Male
 Music: Male
 Double Battle: No
@@ -97,8 +97,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCHOOL_BOY_OLIVER ===
 Name: Oliver
-Class: School Kid
-Pic: School Kid M
+Class: Alola School Kid
+Pic: Alola School Kid M
 Gender: Male
 Music: Male
 Double Battle: No
@@ -111,8 +111,8 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_SCHOOL_BOY_OLIVER ===
 Name: Oliver
-Class: School Kid
-Pic: School Kid M
+Class: Alola School Kid
+Pic: Alola School Kid M
 Gender: Male
 Music: Male
 Double Battle: No
@@ -129,8 +129,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LASS_AUDREY ===
 Name: Audrey
-Class: Lass
-Pic: Lass
+Class: Alola Lass
+Pic: Alola Lass
 Gender: Female
 Music: Female
 Double Battle: No
@@ -143,8 +143,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_AUDREY ===
 Name: Audrey
-Class: Lass
-Pic: Lass
+Class: Alola Lass
+Pic: Alola Lass
 Gender: Female
 Music: Female
 Double Battle: No
@@ -157,8 +157,8 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_LASS_AUDREY ===
 Name: Audrey
-Class: Lass
-Pic: Lass
+Class: Alola Lass
+Pic: Alola Lass
 Gender: Female
 Music: Female
 Double Battle: No
@@ -178,8 +178,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_YOUNGSTER_JIMMY ===
 Name: Jimmy
-Class: Youngster
-Pic: Youngster
+Class: Alola Youngster
+Pic: Alola Youngster
 Gender: Male
 Music: Male
 Double Battle: No
@@ -192,8 +192,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_JIMMY ===
 Name: Jimmy
-Class: Youngster
-Pic: Youngster
+Class: Alola Youngster
+Pic: Alola Youngster
 Gender: Male
 Music: Male
 Double Battle: No
@@ -206,8 +206,8 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_YOUNGSTER_JIMMY ===
 Name: Jimmy
-Class: Youngster
-Pic: Youngster
+Class: Alola Youngster
+Pic: Alola Youngster
 Gender: Male
 Music: Male
 Double Battle: No
@@ -225,7 +225,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_HAU_FESTIVAL_GRASS === /* Player chose grass starter */
 Name: Hau
 Class: Pkmn Trainer 1
-Pic: Youngster
+Pic: Alola Hau
 Gender: Male
 Music: Male
 Double Battle: No
@@ -241,7 +241,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_HAU_FESTIVAL_GRASS === /* Player chose grass starter */
 Name: Hau
 Class: Pkmn Trainer 1
-Pic: Youngster
+Pic: Alola Hau
 Gender: Male
 Music: Male
 Double Battle: No
@@ -257,7 +257,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 === TRAINER_HAU_FESTIVAL_GRASS === /* Player chose grass starter */
 Name: Hau
 Class: Pkmn Trainer 1
-Pic: Youngster
+Pic: Alola Hau
 Gender: Male
 Music: Male
 Double Battle: No
@@ -278,7 +278,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_HAU_FESTIVAL_FIRE === /* Player chose Fire starter */
 Name: Hau
 Class: Pkmn Trainer 1
-Pic: Youngster
+Pic: Alola Hau
 Gender: Male
 Music: Male
 Double Battle: No
@@ -294,7 +294,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_HAU_FESTIVAL_FIRE === /* Player chose fire starter */
 Name: Hau
 Class: Pkmn Trainer 1
-Pic: Youngster
+Pic: Alola Hau
 Gender: Male
 Music: Male
 Double Battle: No
@@ -310,7 +310,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 === TRAINER_HAU_FESTIVAL_FIRE === /* Player chose fire starter */
 Name: Hau
 Class: Pkmn Trainer 1
-Pic: Youngster
+Pic: Alola Hau
 Gender: Male
 Music: Male
 Double Battle: No
@@ -331,7 +331,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_HAU_FESTIVAL_WATER === /* Player chose Water starter */
 Name: Hau
 Class: Pkmn Trainer 1
-Pic: Youngster
+Pic: Alola Hau
 Gender: Male
 Music: Male
 Double Battle: No
@@ -347,7 +347,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_HAU_FESTIVAL_WATER === /* Player chose water starter */
 Name: Hau
 Class: Pkmn Trainer 1
-Pic: Youngster
+Pic: Alola Hau
 Gender: Male
 Music: Male
 Double Battle: No
@@ -363,7 +363,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 === TRAINER_HAU_FESTIVAL_WATER === /* Player chose water starter */
 Name: Hau
 Class: Pkmn Trainer 1
-Pic: Youngster
+Pic: Alola Hau
 Gender: Male
 Music: Male
 Double Battle: No
@@ -383,8 +383,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LASS_MADISON ===
 Name: Madison
-Class: Lass
-Pic: Lass
+Class: Alola Lass
+Pic: Alola Lass
 Gender: Female
 Music: Female
 Double Battle: No
@@ -397,8 +397,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_MADISON ===
 Name: Madison
-Class: Lass
-Pic: Lass
+Class: Alola Lass
+Pic: Alola Lass
 Gender: Female
 Music: Female
 Double Battle: No
@@ -417,8 +417,8 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_LASS_MADISON ===
 Name: Madison
-Class: Lass
-Pic: Lass
+Class: Alola Lass
+Pic: Alola Lass
 Gender: Female
 Music: Female
 Double Battle: No
@@ -436,8 +436,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_YOUNGSTER_KEVIN ===
 Name: Kevin
-Class: Youngster
-Pic: Youngster
+Class: Alola Youngster
+Pic: Alola Youngster
 Gender: Male
 Music: Male
 Double Battle: No
@@ -450,8 +450,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_KEVIN ===
 Name: Kevin
-Class: Youngster
-Pic: Youngster
+Class: Alola Youngster
+Pic: Alola Youngster
 Gender: Male
 Music: Male
 Double Battle: No
@@ -468,8 +468,8 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_YOUNGSTER_KEVIN ===
 Name: Kevin
-Class: Youngster
-Pic: Youngster
+Class: Alola Youngster
+Pic: Alola Youngster
 Gender: Male
 Music: Male
 Double Battle: No
@@ -486,8 +486,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SWIMMER_NATASHA ===
 Name: Natasha
-Class: Swimmer F
-Pic: Swimmer F
+Class: Alola Swimmer
+Pic: Alola Swimmer F
 Gender: Female
 Music: Swimmer
 Double Battle: No
@@ -500,8 +500,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_NATASHA ===
 Name: Natasha
-Class: Swimmer F
-Pic: Swimmer F
+Class: Alola Swimmer
+Pic: Alola Swimmer F
 Gender: Female
 Music: Swimmer
 Double Battle: No
@@ -518,8 +518,8 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_SWIMMER_NATASHA ===
 Name: Natasha
-Class: Swimmer F
-Pic: Swimmer F
+Class: Alola Swimmer
+Pic: Alola Swimmer F
 Gender: Female
 Music: Swimmer
 Double Battle: No
@@ -541,18 +541,63 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Astonish
 - Metal Claw
 
-=== TRAINER_GRUNT_PETALBURG_WOODS ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
+=== TRAINER_LASS_HIROMI ===
+Name: Hiromi
+Class: Alola Lass
+Pic: Alola Lass
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
+Difficulty: Normal
 
-Poochyena
-Level: 9
+Bonsly
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_LASS_HIROMI ===
+Name: Hiromi
+Class: Alola Lass
+Pic: Alola Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+Difficulty: Hard
+
+Bonsly
+Level: 8
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Magnemite
+Level: 8
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_LASS_HIROMI ===
+Name: Hiromi
+Class: Alola Lass
+Pic: Alola Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Prediction
+Difficulty: Extreme
+
+Bonsly
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Throw
+- Low Kick
+- Leafage
+- Block
+
+Magnemite
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Shock
+- Sonic Boom
+- Thunder Wave
+- Magnet Bomb
 
 === TRAINER_MARCEL ===
 Name: MARCEL

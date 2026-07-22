@@ -14,7 +14,7 @@
 #define TRAINER_LASS_MADISON       7
 #define TRAINER_YOUNGSTER_KEVIN       8
 #define TRAINER_SWIMMER_NATASHA                   9
-#define TRAINER_GRUNT_PETALBURG_WOODS        10
+#define TRAINER_LASS_HIROMI        10
 #define TRAINER_MARCEL                       11
 #define TRAINER_ALBERTO                      12
 #define TRAINER_ED                           13
