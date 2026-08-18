@@ -823,7 +823,7 @@ enum __attribute__((packed)) Item
 
 
     /* Expands to:
-     *   ITEM_TM_FOCUS_PUNCH = ITEM_TM01,
+     *   ITEM_TM_WORK_UP = ITEM_TM01,
      *   ...
      *   ITEM_HM_CUT = ITM_HM01,
      *   ... */

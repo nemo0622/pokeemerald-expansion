@@ -22,8 +22,13 @@ script HauoliOutskirts_PlayersRoomActual_Script_StartGame
 	emote(LOCALID_PLAYER, EMOTE_HEART)
 	delay(10)
 
-	msgbox(format("Meowth is covered in dust... It must have been rolling around in the moving boxes.\p Mom probably hasn't started on those. Better check it out!"))
+	createplayerfieldmugshot(EMOTION_LAUGH)
+	msgbox(format("{SPEAKER NAME_PLAYER}Meowth is covered in dust... It must have been rolling around in the moving boxes."))
+	removefieldmugshot
+	createplayerfieldmugshot(EMOTION_NORMAL)
+	msgbox(format("{SPEAKER NAME_PLAYER}Mom probably hasn't started on those. Better check it out!"))
 	closemessage
+	removefieldmugshot
 
 	applymovement(LOCALID_PLAYER, Common_Movement_FaceDown)
 	waitmovement(0)
@@ -78,7 +83,10 @@ script HauoliOutskirts_PlayersRoomActual_Script_AlolanSeaglassSettings
     waitmoncry
     closemessage
 
-	msgbox(format("It's Grandpa Samson's Oranguru! It's always writing in books.\p It looks like this is a Choose-Your-Own-Adventure type of book. Help Oranguru fill it out?"), MSGBOX_YESNO)
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}It's Grandpa Samson's Oranguru! Why's it always reading books?"))
+	closemessage
+	msgbox(format("It looks like this is a Choose-Your-Own-Adventure type of book. Help Oranguru fill it out?"), MSGBOX_YESNO)
 	closemessage
 
 	// Said yes to changing settings!

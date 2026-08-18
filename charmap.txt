@@ -465,6 +465,31 @@ ACCENT = FC 1A @ same as FC 01. sets accent color
 BACKGROUND = FC 1B @ same as FC 01. sets background color
 TEXT_COLORS = FC 1C @ takes 3 colors: text base color, shadow and accent
 
+CREATE_MUGSHOT = FC 1D
+DESTROY_MUGSHOT = FC 1E
+
+@ these are basically what include/constants/field_mugshots.h have
+@ but without the x_COUNT and x_NONE ones for strings
+
+@ mugshot stuff begins
+
+MUGSHOT_ELIO = 01
+MUGSHOT_SELENE = 02
+MUGSHOT_MOM = 03
+MUGSHOT_SAMSON_OAK = 04
+MUGSHOT_PROF_KUKUI = 05
+MUGSHOT_LILLIE_HAT = 06
+MUGSHOT_HAU = 07
+MUGSHOT_HALA = 08
+
+EMOTION_NORMAL = 00
+EMOTION_LAUGH = 01
+EMOTION_INTENSE = 02
+EMOTION_SAD = 03
+EMOTION_OTHER = 04
+
+@ mugshot stuff ends
+
 @ Speaker names, the order must be matching with include/constants/speaker_names.h
 NAME_NONE = 00
 NAME_MOM = 01

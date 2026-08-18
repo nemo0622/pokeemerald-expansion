@@ -218,6 +218,7 @@ static const u8 sText_QuestNumberDisplay[] =
       _("{STR_VAR_1}/{STR_VAR_2}");
 static const u8 sText_SubquestComplete[] = _("{EMOJI_CHECK} ");
 static const u8 sText_SubquestCompleteLine[] = _("This Subquest is Complete!");
+static const u8 sText_QuestCompleteLine[] = _("This Quest is Complete!");
 static const u8 sText_Unk[] = _("??????");
 static const u8 sText_Active[] = _("Active");
 static const u8 sText_Reward[] = _("Reward");
@@ -241,6 +242,103 @@ static const u8 sText_AZ[] = _(" A-Z");
 
 ///////////////////////////////////////////////////////////////////////////////
 //////////////////////BEGIN SUBQUEST CUSTOMIZATION/////////////////////////////
+
+bool8 IsSubquestCompletedState(s32 questId)
+{
+	// Old code, doesn't seem to work lowkey
+	// if (QuestMenu_GetSetSubquestState(sStateDataPtr->parentQuest,
+	//                                   FLAG_GET_COMPLETED,
+	//                                   questId))
+	// {
+	// 	return TRUE;
+	// }
+	// else
+	// {
+	// 	return FALSE;
+	// }
+
+	// MUST BE UPDATED WITH EVERY NEW SUBQUEST
+	switch (questId)
+	{
+		case 0:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_00);
+			break;
+		case 1:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_01);
+			break;
+		case 2:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_02);
+			break;
+		case 3:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_03);
+			break;
+		case 4:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_04);
+			break;
+		case 5:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_05);
+			break;
+		case 6:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_06);
+			break;
+		case 7:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_07);
+			break;
+		case 8:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_08);
+			break;
+		case 9:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_09);
+			break;
+		case 10:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_10);
+			break;
+		case 11:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_11);
+			break;
+		case 12:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_12);
+			break;
+		case 13:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_13);
+			break;
+		case 14:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_14);
+			break;
+		case 15:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_15);
+			break;
+		case 16:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_16);
+			break;
+		case 17:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_17);
+			break;
+		case 18:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_18);
+			break;
+		case 19:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_19);
+			break;
+		case 20:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_20);
+			break;
+		case 21:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_21);
+			break;
+		case 22:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_22);
+			break;
+		case 23:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_23);
+			break;
+		case 24:
+			return FlagGet(FLAG_COMPLETE_SUBQUEST_24);
+			break;
+	}
+
+	return FALSE; // testing
+}
 
 // NEMO NOTE:
 // Custom function that puts a check mark next to Subquests that are ACTUALLY complete.
@@ -274,6 +372,10 @@ bool8 IsSubquestActuallyComplete(s32 questId)
 			if(FlagGet(FLAG_HIDE_LILLIE_HAUOLI_OUTSKIRTS))
 				return TRUE;
 			break;
+		case 5: // Subquest 6: Complete Alola Leo Training School
+			if(FlagGet(FLAG_HIDE_TAUROS_ALOLA_LEO))
+				return TRUE;
+			break;
 	}
 
 	// If this point is reached, it's prolly not the focus lol
@@ -282,7 +384,7 @@ bool8 IsSubquestActuallyComplete(s32 questId)
 
 //Declaration of subquest structures. Edits to subquests are made here.
 #define sub_quest(i, n, d, m, s, st, t) {.id = i, .name = n, .desc = d, .map = m, .sprite = s, .spritetype = st, .type = t}
-static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
+static const struct SubQuest sSubQuests_WelcomeToAlola[QUEST_WELCOME_TO_ALOLA_SUB_COUNT] =
 {
 	sub_quest(
 	      0, // Find Samson Oak in Iki Town
@@ -335,259 +437,214 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	),
 
 	sub_quest(
-	      5,
+	      5, // Complete Alola Leo School's curriculum
 	      gText_SubQuest1_Name6,
 	      gText_SubQuest1_Desc6,
 	      gText_SubQuest1_Map6,
-	      OBJ_EVENT_GFX_SCHOOL_BOY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      6,
-	      gText_SubQuest1_Name7,
-	      gText_SubQuest1_Desc7,
-	      gText_SideQuestMap7,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      7,
-	      gText_SubQuest1_Name8,
-	      gText_SubQuest1_Desc8,
-	      gText_SideQuestMap8,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      8,
-	      gText_SubQuest1_Name9,
-	      gText_SubQuest1_Desc9,
-	      gText_SideQuestMap9,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      9,
-	      gText_SubQuest1_Name10,
-	      gText_SubQuest1_Desc10,
-	      gText_SideQuestMap10,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      SPECIES_MEOWTH_ALOLA,
+	      PKMN,
 	      sText_Found
 	),
 };
 
-static const struct SubQuest sSubQuests2[QUEST_2_SUB_COUNT] =
+static const struct SubQuest sSubQuests_IslandChallenge[QUEST_ISLAND_CHALLENGE_SUB_COUNT] =
 {
 	sub_quest(
-	      10,
+	      6, // Complete Ilima's Trial
 	      gText_SubQuest2_Name1,
 	      gText_SubQuest2_Desc1,
-	      gText_SideQuestMap1,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      gText_SubQuest2_Map1,
+	      SPECIES_GUMSHOOS,
+	      PKMN,
 	      sText_Found
 	),
 
 	sub_quest(
-	      11,
+	      7, // Complete Kahuna Hala's Grand Trial
 	      gText_SubQuest2_Name2,
 	      gText_SubQuest2_Desc2,
-	      gText_SideQuestMap2,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      gText_SubQuest2_Map2,
+	      SPECIES_CRABRAWLER,
+	      PKMN,
 	      sText_Found
 	),
 
 	sub_quest(
-	      12,
+	      8, // Complete Lana's Trial
 	      gText_SubQuest2_Name3,
 	      gText_SubQuest2_Desc3,
-	      gText_SideQuestMap3,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      gText_SubQuest2_Map3,
+	      SPECIES_WISHIWASHI,
+	      PKMN,
 	      sText_Found
 	),
 
 	sub_quest(
-	      13,
+	      9, // Complete Kiawe's Trial
 	      gText_SubQuest2_Name4,
 	      gText_SubQuest2_Desc4,
-	      gText_SideQuestMap4,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      gText_SubQuest2_Map4,
+	      SPECIES_MAROWAK_ALOLA,
+	      PKMN,
 	      sText_Found
 	),
 
 	sub_quest(
-	      14,
+	      10, // Complete Mallow's Trial
 	      gText_SubQuest2_Name5,
 	      gText_SubQuest2_Desc5,
-	      gText_SideQuestMap5,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      gText_SubQuest2_Map5,
+	      SPECIES_LURANTIS,
+	      PKMN,
 	      sText_Found
 	),
 
 	sub_quest(
-	      15,
+	      11, // Complete Kahuna Olivia's Grand Trial
 	      gText_SubQuest2_Name6,
 	      gText_SubQuest2_Desc6,
-	      gText_SideQuestMap6,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      gText_SubQuest2_Map6,
+	      SPECIES_LYCANROC_MIDNIGHT,
+	      PKMN,
 	      sText_Found
 	),
 
 	sub_quest(
-	      16,
+	      12, // Complete Sophocles' Trial
 	      gText_SubQuest2_Name7,
 	      gText_SubQuest2_Desc7,
-	      gText_SideQuestMap7,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      gText_SubQuest2_Map7,
+	      SPECIES_TOGEDEMARU,
+	      PKMN,
 	      sText_Found
 	),
 
 	sub_quest(
-	      17,
+	      13, // Complete Acerola's Trial
 	      gText_SubQuest2_Name8,
 	      gText_SubQuest2_Desc8,
-	      gText_SideQuestMap8,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      gText_SubQuest2_Map8,
+	      SPECIES_MIMIKYU,
+	      PKMN,
 	      sText_Found
 	),
 
 	sub_quest(
-	      18,
+	      14, // Complete Kahuna Nanu's Grand Trial
 	      gText_SubQuest2_Name9,
 	      gText_SubQuest2_Desc9,
-	      gText_SideQuestMap9,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      gText_SubQuest2_Map9,
+	      SPECIES_PERSIAN_ALOLA,
+	      PKMN,
 	      sText_Found
 	),
 
 	sub_quest(
-	      19,
+	      15, // Complete Ryuki's Trial
 	      gText_SubQuest2_Name10,
 	      gText_SubQuest2_Desc10,
-	      gText_SideQuestMap10,
-	      SPECIES_HO_OH,
+	      gText_SubQuest2_Map10,
+	      SPECIES_KOMMO_O,
 	      PKMN,
 	      sText_Caught
 
 	),
 
 	sub_quest(
-	      20,
+	      16, // Complete Mina's Trial
 	      gText_SubQuest2_Name11,
 	      gText_SubQuest2_Desc11,
-	      gText_SideQuestMap11,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      gText_SubQuest2_Map11,
+	      SPECIES_RIBOMBEE,
+	      PKMN,
 	      sText_Found
 	),
 
 	sub_quest(
-	      21,
+	      17, // Complete Kahuna Hapu's Grand Trial
 	      gText_SubQuest2_Name12,
 	      gText_SubQuest2_Desc12,
-	      gText_SideQuestMap12,
+	      gText_SubQuest2_Map12,
+	      SPECIES_MUDSDALE,
+	      PKMN,
+	      sText_Found
+	),
+};
+
+static const struct SubQuest sSubQuests_DexCompletion[QUEST_DEX_COMPLETION_SUB_COUNT] =
+{
+	sub_quest(
+	      18, // Melemele Island Pokédex
+	      gText_SubQuest3_Name1,
+	      gText_SubQuest3_Desc1,
+	      gText_SubQuest3_Map1,
+	      SPECIES_TAPU_KOKO,
+	      PKMN,
+	      sText_Found
+	),
+
+	sub_quest(
+	      19, // Akala Island Pokédex
+	      gText_SubQuest3_Name2,
+	      gText_SubQuest3_Desc2,
+	      gText_SubQuest3_Map2,
+	      SPECIES_TAPU_LELE,
+	      PKMN,
+	      sText_Found
+	),
+
+	sub_quest(
+	      20, // Ula'ula Island Pokédex
+	      gText_SubQuest3_Name3,
+	      gText_SubQuest3_Desc3,
+	      gText_SubQuest3_Map3,
+	      SPECIES_TAPU_BULU,
+	      PKMN,
+	      sText_Found
+	),
+
+	sub_quest(
+	      21, // Poni Island Pokédex
+	      gText_SubQuest3_Name4,
+	      gText_SubQuest3_Desc4,
+	      gText_SubQuest3_Map4,
+	      SPECIES_TAPU_FINI,
+	      PKMN,
+	      sText_Found
+	),
+};
+
+static const struct SubQuest sSubQuests_IlimasTrial[QUEST_TRIAL_ILIMA_SUB_COUNT] =
+{
+	sub_quest(
+	      22, // Find Captain Ilima
+	      gText_SubQuest4_Name1,
+	      gText_SubQuest4_Desc1,
+	      gText_SubQuest4_Map1,
 	      OBJ_EVENT_GFX_DANCER_F,
 	      OBJECT,
 	      sText_Found
 	),
 
 	sub_quest(
-	      22,
-	      gText_SubQuest2_Name13,
-	      gText_SubQuest2_Desc13,
-	      gText_SideQuestMap13,
+	      23, // Help Ilima fight off Team Skull
+	      gText_SubQuest4_Name2,
+	      gText_SubQuest4_Desc2,
+	      gText_SubQuest4_Map2,
 	      OBJ_EVENT_GFX_DANCER_F,
 	      OBJECT,
 	      sText_Found
 	),
 
 	sub_quest(
-	      23,
-	      gText_SubQuest2_Name14,
-	      gText_SubQuest2_Desc14,
-	      gText_SideQuestMap14,
+	      24, // Complete Ilima's Trial!
+	      gText_SubQuest4_Name3,
+	      gText_SubQuest4_Desc3,
+	      gText_SubQuest4_Map3,
 	      OBJ_EVENT_GFX_DANCER_F,
 	      OBJECT,
 	      sText_Found
 	),
-
-	sub_quest(
-	      24,
-	      gText_SubQuest2_Name15,
-	      gText_SubQuest2_Desc15,
-	      gText_SideQuestMap15,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      25,
-	      gText_SubQuest2_Name16,
-	      gText_SubQuest2_Desc16,
-	      gText_SideQuestMap16,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      26,
-	      gText_SubQuest2_Name17,
-	      gText_SubQuest2_Desc17,
-	      gText_SideQuestMap17,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      27,
-	      gText_SubQuest2_Name18,
-	      gText_SubQuest2_Desc18,
-	      gText_SideQuestMap18,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      28,
-	      gText_SubQuest2_Name19,
-	      gText_SubQuest2_Desc19,
-	      gText_SideQuestMap19,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      29,
-	      gText_SubQuest2_Name20,
-	      gText_SubQuest2_Desc20,
-	      gText_SideQuestMap20,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
-	      sText_Found
-	),
-
 };
 
 ////////////////////////END SUBQUEST CUSTOMIZATION/////////////////////////////
@@ -601,36 +658,40 @@ static const struct SubQuest sSubQuests2[QUEST_2_SUB_COUNT] =
 static const struct SideQuest sSideQuests[QUEST_COUNT] =
 {
 	side_quest(
+		// QUEST_WELCOME_TO_ALOLA
 	      gText_SideQuestName_1,
 	      gText_SideQuestDesc_1,
 	      gText_SideQuestDoneDesc_1,
 	      gText_SideQuestMap1,
 	      ITEM_STRANGE_SOUVENIR,
 	      ITEM,
-	      sSubQuests1,
-	      QUEST_1_SUB_COUNT
+	      sSubQuests_WelcomeToAlola,
+	      QUEST_WELCOME_TO_ALOLA_SUB_COUNT
 	),
 	side_quest(
+		// QUEST_ISLAND_CHALLENGE
 	      gText_SideQuestName_2,
 	      gText_SideQuestDesc_2,
 	      gText_SideQuestDoneDesc_2,
 	      gText_SideQuestMap2,
 	      ITEM_WATERIUM_Z, // TODO: Add a Passport item for this icon or smth
 	      ITEM,
-	      sSubQuests2,
-	      QUEST_2_SUB_COUNT
+	      sSubQuests_IslandChallenge,
+	      QUEST_ISLAND_CHALLENGE_SUB_COUNT
 	),
 	side_quest(
+		// QUEST_DEX_COMPLETION
 	      gText_SideQuestName_3,
 	      gText_SideQuestDesc_3,
 	      gText_SideQuestDoneDesc_3,
 	      gText_SideQuestMap3,
 	      SPECIES_ROWLET,
 	      PKMN,
-	      NULL,
-	      0
+	      sSubQuests_DexCompletion,
+	      QUEST_DEX_COMPLETION_SUB_COUNT
 	),
 	side_quest(
+		// QUEST_TOTEM_STICKERS
 	      gText_SideQuestName_4,
 	      gText_SideQuestDesc_4,
 	      gText_SideQuestDoneDesc_4,
@@ -641,6 +702,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_FINDING_ZYGARDE
 	      gText_SideQuestName_5,
 	      gText_SideQuestDesc_5,
 	      gText_SideQuestDoneDesc_5,
@@ -651,6 +713,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_EDUCATIONAL_SIGNS
 	      gText_SideQuestName_6,
 	      gText_SideQuestDesc_6,
 	      gText_SideQuestDoneDesc_6,
@@ -661,6 +724,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_SAMSONS_GARDEN
 	      gText_SideQuestName_7,
 	      gText_SideQuestDesc_7,
 	      gText_SideQuestDoneDesc_7,
@@ -671,6 +735,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_ULTRA_DEX_COMPLETION
 	      gText_SideQuestName_8,
 	      gText_SideQuestDesc_8,
 	      gText_SideQuestDoneDesc_8,
@@ -681,6 +746,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_09
 	      gText_SideQuestName_9,
 	      gText_SideQuestDesc_9,
 	      gText_SideQuestDoneDesc_9,
@@ -691,6 +757,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_10
 	      gText_SideQuestName_10,
 	      gText_SideQuestDesc_10,
 	      gText_SideQuestDoneDesc_10,
@@ -701,16 +768,18 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_ILIMA
 	      gText_SideQuestName_11,
 	      gText_SideQuestDesc_11,
 	      gText_SideQuestDoneDesc_11,
 	      gText_SideQuestMap11,
 	      OBJ_EVENT_GFX_DANCER_F,
 	      OBJECT,
-	      NULL,
-	      0
+	      sSubQuests_IlimasTrial,
+	      QUEST_TRIAL_ILIMA_SUB_COUNT
 	),
 	side_quest(
+		// QUEST_TRIAL_HALA
 	      gText_SideQuestName_12,
 	      gText_SideQuestDesc_12,
 	      gText_SideQuestDoneDesc_12,
@@ -721,6 +790,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_LANA
 	      gText_SideQuestName_13,
 	      gText_SideQuestDesc_13,
 	      gText_SideQuestDoneDesc_13,
@@ -731,6 +801,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_KIAWE
 	      gText_SideQuestName_14,
 	      gText_SideQuestDesc_14,
 	      gText_SideQuestDoneDesc_14,
@@ -741,6 +812,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_MALLOW
 	      gText_SideQuestName_15,
 	      gText_SideQuestDesc_15,
 	      gText_SideQuestDoneDesc_15,
@@ -751,6 +823,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_OLIVIA
 	      gText_SideQuestName_16,
 	      gText_SideQuestDesc_16,
 	      gText_SideQuestDoneDesc_16,
@@ -761,6 +834,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_SOPHOCLES
 	      gText_SideQuestName_17,
 	      gText_SideQuestDesc_17,
 	      gText_SideQuestDoneDesc_17,
@@ -771,6 +845,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_ACEROLA
 	      gText_SideQuestName_18,
 	      gText_SideQuestDesc_18,
 	      gText_SideQuestDoneDesc_18,
@@ -781,6 +856,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_NANU
 	      gText_SideQuestName_19,
 	      gText_SideQuestDesc_19,
 	      gText_SideQuestDoneDesc_19,
@@ -791,6 +867,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_RYUKI
 	      gText_SideQuestName_20,
 	      gText_SideQuestDesc_20,
 	      gText_SideQuestDoneDesc_20,
@@ -801,6 +878,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_MINA
 	      gText_SideQuestName_21,
 	      gText_SideQuestDesc_21,
 	      gText_SideQuestDoneDesc_21,
@@ -811,6 +889,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_TRIAL_HAPU
 	      gText_SideQuestName_22,
 	      gText_SideQuestDesc_22,
 	      gText_SideQuestDoneDesc_22,
@@ -821,26 +900,29 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_BIG_POPPAS_FISH
 	      gText_SideQuestName_23,
 	      gText_SideQuestDesc_23,
 	      gText_SideQuestDoneDesc_23,
 	      gText_SideQuestMap23,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      SPECIES_WISHIWASHI,
+	      PKMN,
 	      NULL,
 	      0
 	),
 	side_quest(
+		// QUEST_TOURIST_DIFFICULTIES
 	      gText_SideQuestName_24,
 	      gText_SideQuestDesc_24,
 	      gText_SideQuestDoneDesc_24,
 	      gText_SideQuestMap24,
-	      OBJ_EVENT_GFX_DANCER_F,
-	      OBJECT,
+	      ITEM_PREMIER_BALL,
+	      ITEM,
 	      NULL,
 	      0
 	),
 	side_quest(
+		// QUEST_25
 	      gText_SideQuestName_25,
 	      gText_SideQuestDesc_25,
 	      gText_SideQuestDoneDesc_25,
@@ -851,6 +933,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_26
 	      gText_SideQuestName_26,
 	      gText_SideQuestDesc_26,
 	      gText_SideQuestDoneDesc_26,
@@ -861,6 +944,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_27
 	      gText_SideQuestName_27,
 	      gText_SideQuestDesc_27,
 	      gText_SideQuestDoneDesc_27,
@@ -871,6 +955,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_28
 	      gText_SideQuestName_28,
 	      gText_SideQuestDesc_28,
 	      gText_SideQuestDoneDesc_28,
@@ -881,6 +966,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_29
 	      gText_SideQuestName_29,
 	      gText_SideQuestDesc_29,
 	      gText_SideQuestDoneDesc_29,
@@ -891,6 +977,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
+		// QUEST_30
 	      gText_SideQuestName_30,
 	      gText_SideQuestDesc_30,
 	      gText_SideQuestDoneDesc_30,
@@ -1179,6 +1266,7 @@ static bool8 SetupGraphics(void)
 			gMain.state++;
 			break;
 		default:
+			ChangeModeAndCleanUp(0); // NEMO: added to make it jump to Active Missions
 			SetVBlankCallback(VBlankCB);
 			SetMainCallback2(MainCB);
 			return TRUE;
@@ -1453,14 +1541,21 @@ u8 IncrementMode(u8 mode)
 {
 	if (mode % 10 == SORT_DONE)
 	{
-		mode -= SORT_DONE;
+		// mode -= SORT_DONE; // Commented out to make Active the default
+		mode = SORT_ACTIVE;
 	}
 	else
 	{
-		if(mode == SORT_DEFAULT)
+		// Commented out to make Active the default
+		// if(mode == SORT_DEFAULT)
+		// 	return SORT_ACTIVE;
+		// else if(mode == SORT_ACTIVE)
+		// 	return SORT_DONE;
+
+		if(mode == SORT_ACTIVE)
+			return SORT_DEFAULT;
+		else if(mode == SORT_DEFAULT)
 			return SORT_ACTIVE;
-		else if(mode == SORT_ACTIVE)
-			return SORT_DONE;
 	}
 
 	return mode;
@@ -1677,14 +1772,110 @@ u8 QuestMenu_GetSetSubquestState(u8 quest, u8 caseId, u8 childQuest)
 	u8	bit = uniqueId % 8;
 	u8	mask = 1 << bit;
 
-	switch (caseId)
+	// MUST BE UPDATED WITH EVERY NEW SUBQUEST
+	if(caseId == FLAG_SET_COMPLETED)
 	{
-		case FLAG_GET_COMPLETED:
-			return gSaveBlock3Ptr->subQuests[index] & mask;
-		case FLAG_SET_COMPLETED:
-			gSaveBlock3Ptr->subQuests[index] |= mask;
-			return 1;
+		switch (childQuest)
+		{
+			case 0:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_00);
+				break;
+			case 1:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_01);
+				break;
+			case 2:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_02);
+				break;
+			case 3:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_03);
+				break;
+			case 4:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_04);
+				break;
+			case 5:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_05);
+				break;
+			case 6:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_06);
+				break;
+			case 7:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_07);
+				break;
+			case 8:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_08);
+				break;
+			case 9:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_09);
+				break;
+			case 10:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_10);
+				break;
+			case 11:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_11);
+				break;
+			case 12:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_12);
+				break;
+			case 13:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_13);
+				break;
+			case 14:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_14);
+				break;
+			case 15:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_15);
+				break;
+			case 16:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_16);
+				break;
+			case 17:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_17);
+				break;
+			case 18:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_18);
+				break;
+			case 19:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_19);
+				break;
+			case 20:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_20);
+				break;
+			case 21:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_21);
+				break;
+			case 22:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_22);
+				break;
+			case 23:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_23);
+				break;
+			case 24:
+				FlagSet(FLAG_COMPLETE_SUBQUEST_24);
+				break;
+		}
+		return 1;
 	}
+
+	else if(caseId == FLAG_GET_COMPLETED)
+	{
+		return IsSubquestCompletedState(childQuest);
+	}
+
+	// ALRIGHT, NOTES ON 8/3, GUH
+	// Seems like the subquest menu is loading up the states of the wrong subquests
+	// For example, when the first two Welcome To Alola subquests are unlocked and the first is complete,
+	// the same is shown of the Dex Completion subquest, despite all 4 supposed to be unlocked but none actually complete.
+	// Check out the Subquest menu loading function i guess now, ugh.
+
+	// Old shit commented out cause she doesnt work
+	// switch (caseId)
+	// {
+	// 	case FLAG_GET_COMPLETED:
+	// 		return gSaveBlock3Ptr->subQuests[index] & mask;
+	// 	case FLAG_SET_COMPLETED:
+	// 		gSaveBlock3Ptr->subQuests[index] |= mask;
+	// 		return 1;
+	// }
 
 	return -1;
 }
@@ -1765,6 +1956,9 @@ u8 QuestMenu_GetSetQuestState(u8 quest, u8 caseId)
 			       !(gSaveBlock3Ptr->questData[index2] & mask2) && \
 			       !(gSaveBlock3Ptr->questData[index3] & mask3);
 		case FLAG_GET_ACTIVE:
+			// Modified to make the first 8 'main' quests always be shown in the Active tab
+			if(quest < MAJOR_QUEST_COUNT && QuestMenu_GetSetQuestState(quest, FLAG_GET_UNLOCKED))
+				return 1;
 			return gSaveBlock3Ptr->questData[index] & mask;
 		case FLAG_SET_ACTIVE:
 			gSaveBlock3Ptr->questData[index] |= mask;
@@ -1945,9 +2139,9 @@ void PopulateQuestName(u8 countQuest)
 
 void PopulateSubquestName(u8 parentQuest, u8 countQuest)
 {
-	if (IsSubquestCompletedState(countQuest))
+	if (IsSubquestCompletedState(sSideQuests[parentQuest].subquests[countQuest].id))
 	{
-		if(IsSubquestActuallyComplete(countQuest))
+		if(IsSubquestActuallyComplete(sSideQuests[parentQuest].subquests[countQuest].id))
 			questNamePointer = StringAppend(questNamePointer, sText_SubquestComplete);
 		
 		questNamePointer = StringAppend(questNamePointer,
@@ -2097,7 +2291,7 @@ void GenerateQuestFlavorText(s32 questId)
 	}
 	else
 	{
-		if (IsSubquestCompletedState(questId) == TRUE)
+		if (IsSubquestCompletedState(sSideQuests[sStateDataPtr->parentQuest].subquests[questId].id) == TRUE)
 		{
 			StringCopy(gStringVar1,
 			           sSideQuests[sStateDataPtr->parentQuest].subquests[questId].desc);
@@ -2118,23 +2312,16 @@ void PrintQuestFlavorText(s32 questId)
 {
 	QuestMenu_AddTextPrinterParameterized(1, 2, gStringVar3, GetStringCenterAlignXOffset(FONT_NORMAL, gStringVar3, WindowWidthPx(1)), 20, 5, 0, 0, 4);
 
-	if(IsSubquestMode() && IsSubquestActuallyComplete(questId))
+	if(IsSubquestMode() && IsSubquestActuallyComplete(sSideQuests[sStateDataPtr->parentQuest].subquests[questId].id))
+	{
 		QuestMenu_AddTextPrinterParameterized(1, FONT_SMALL, sText_SubquestCompleteLine, GetStringCenterAlignXOffset(FONT_SMALL, sText_SubquestCompleteLine, WindowWidthPx(1)), 50, 5, 0, 0, 4);
+	}
+	else if(!IsSubquestMode() && questId < MAJOR_QUEST_COUNT && QuestMenu_GetSetQuestState(questId, FLAG_GET_COMPLETED))
+	{
+		QuestMenu_AddTextPrinterParameterized(1, FONT_SMALL, sText_QuestCompleteLine, GetStringCenterAlignXOffset(FONT_SMALL, sText_QuestCompleteLine, WindowWidthPx(1)), 50, 5, 0, 0, 4);
+	}
 }
 
-bool8 IsSubquestCompletedState(s32 questId)
-{
-	if (QuestMenu_GetSetSubquestState(sStateDataPtr->parentQuest,
-	                                  FLAG_GET_COMPLETED,
-	                                  questId))
-	{
-		return TRUE;
-	}
-	else
-	{
-		return FALSE;
-	}
-}
 bool8 IsQuestRewardState(s32 questId)
 {
 	if (QuestMenu_GetSetQuestState(questId, FLAG_GET_REWARD))
@@ -2208,19 +2395,23 @@ void DetermineSpriteType(s32 questId)
 		QuestMenu_CreateSprite(spriteId, sStateDataPtr->spriteIconSlot,
 		                       spriteType);
 	}
-	else if (IsSubquestCompletedState(questId) == TRUE)
+	else /*if (IsSubquestCompletedState(questId) == TRUE)*/
 	{
-		spriteId =
-		      sSideQuests[sStateDataPtr->parentQuest].subquests[questId].sprite;
-		spriteType =
-		      sSideQuests[sStateDataPtr->parentQuest].subquests[questId].spritetype;
-		QuestMenu_CreateSprite(spriteId, sStateDataPtr->spriteIconSlot,
-		                       spriteType);
+		// spriteId =
+		//       sSideQuests[sStateDataPtr->parentQuest].subquests[questId].sprite;
+		// spriteType =
+		//       sSideQuests[sStateDataPtr->parentQuest].subquests[questId].spritetype;
+		// QuestMenu_CreateSprite(spriteId, sStateDataPtr->spriteIconSlot,
+		//                        spriteType);
+
+		spriteId = sSideQuests[sStateDataPtr->parentQuest].subquests[questId].sprite;
+		spriteType = sSideQuests[sStateDataPtr->parentQuest].subquests[questId].spritetype;
+		QuestMenu_CreateSprite(spriteId, sStateDataPtr->spriteIconSlot, spriteType);
 	}
-	else
-	{
-		QuestMenu_CreateSprite(ITEM_NONE, sStateDataPtr->spriteIconSlot, ITEM);
-	}
+	// else
+	// {
+	// 	QuestMenu_CreateSprite(ITEM_NONE, sStateDataPtr->spriteIconSlot, ITEM);
+	// }
 	QuestMenu_DestroySprite(sStateDataPtr->spriteIconSlot ^ 1);
 	sStateDataPtr->spriteIconSlot ^= 1;
 }

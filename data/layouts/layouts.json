@@ -9387,8 +9387,8 @@
     {
       "id": "LAYOUT_HAUOLI_SHOPPING_DISTRICT",
       "name": "HauoliShoppingDistrict_Layout",
-      "width": 40,
-      "height": 50,
+      "width": 62,
+      "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Hauoli",
       "border_filepath": "data/layouts/HauoliShoppingDistrict/border.bin",
@@ -9398,7 +9398,7 @@
       "id": "LAYOUT_HAUOLI_BEACHFRONT",
       "name": "HauoliBeachfront_Layout",
       "width": 40,
-      "height": 50,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Hauoli",
       "border_filepath": "data/layouts/HauoliBeachfront/border.bin",
@@ -9463,6 +9463,46 @@
       "secondary_tileset": "gTileset_AlolaGenericBuilding",
       "border_filepath": "data/layouts/HauoliOutskirts_KukuiLab/border.bin",
       "blockdata_filepath": "data/layouts/HauoliOutskirts_KukuiLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALOLA_LEO_INSIDE_SCHOOL",
+      "name": "AlolaLeo_InsideSchool_Layout",
+      "width": 27,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaFancyBuilding",
+      "border_filepath": "data/layouts/AlolaLeo_InsideSchool/border.bin",
+      "blockdata_filepath": "data/layouts/AlolaLeo_InsideSchool/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALOLA_LEO_POKEMON_CENTER",
+      "name": "AlolaLeo_PokemonCenter_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaPokemonCenter",
+      "border_filepath": "data/layouts/AlolaLeo_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/AlolaLeo_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_BEACHFRONT_BIG_POPPAS_SURF_SHOP",
+      "name": "HauoliBeachfront_BigPoppasSurfShop_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaFancyBuilding",
+      "border_filepath": "data/layouts/HauoliBeachfront_BigPoppasSurfShop/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliBeachfront_BigPoppasSurfShop/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_BEACHFRONT_TOURIST_BUREAU",
+      "name": "HauoliBeachfront_TouristBureau_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaFancyBuilding",
+      "border_filepath": "data/layouts/HauoliBeachfront_TouristBureau/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliBeachfront_TouristBureau/map.bin"
     }
   ]
 }

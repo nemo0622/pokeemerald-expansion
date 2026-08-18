@@ -203,13 +203,6 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	startquest QUEST_01
-	startquest QUEST_02
-	startquest QUEST_03
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_01, SUB_QUEST_1
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_01, SUB_QUEST_2
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_01, SUB_QUEST_3
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_01, SUB_QUEST_4
 	release
 	end
 

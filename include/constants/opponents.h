@@ -15,9 +15,9 @@
 #define TRAINER_YOUNGSTER_KEVIN       8
 #define TRAINER_SWIMMER_NATASHA                   9
 #define TRAINER_LASS_HIROMI        10
-#define TRAINER_MARCEL                       11
-#define TRAINER_ALBERTO                      12
-#define TRAINER_ED                           13
+#define TRAINER_SCHOOL_GIRL_MIA                       11
+#define TRAINER_YOUNGSTER_JOEY                      12
+#define TRAINER_RISING_STAR_JOSEPH                           13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
 #define TRAINER_DECLAN                       15
 #define TRAINER_GRUNT_RUSTURF_TUNNEL         16

@@ -35,6 +35,7 @@ script IkiTown_Script_HalaIntro
 	applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
 	waitmovement(0)
 	setspeaker("Prof. Kukui")
+	createfieldmugshot(MUGSHOT_PROF_KUKUI, EMOTION_LAUGH)
 	msgbox(format("Aue! Come on, just give me one good Dragon Hammer, {COLOR BLUE}Exeggutor{COLOR DARK_GRAY}!"))
 	closemessage
 	applymovement(5, moves(walk_fast_up * 6, step_end))
@@ -49,12 +50,14 @@ script IkiTown_Script_HalaIntro
 	waitmovement(0)
 	emote(LOCALID_HALA_IKI, EMOTE_QUESTION)
 	setspeaker("???")
+	createfieldmugshot(MUGSHOT_HALA, EMOTION_LAUGH)
 	msgbox(format("Ohoho! Kukui never changes, does he?"))
 	closemessage
 	delay(10)
 	applymovement(LOCALID_HALA_IKI, moves(walk_down * 2, face_down, step_end))
 	waitmovement(0)
 	setspeaker("Kahuna Hala")
+	createfieldmugshot(MUGSHOT_HALA)
 	msgbox(format("Alola! I'm glad to meet you, young Trainer. My name is {COLOR GREEN}Hala{COLOR DARK_GRAY}, {COLOR GREEN}Kahuna of Melemele Island{COLOR DARK_GRAY}.\p I've heard much and more about you. {PLAYER}, grandchild of the legendary Samson Oak, returning to their home island after so long away!\p The {COLOR GREEN}Manalo Festival{COLOR DARK_GRAY} begins soon. Before, this would be when you would be granted a Pokémon, but it seems they beat us to it!\p For now, please join in on the festivities. My grandson {COLOR GREEN}Hau{COLOR DARK_GRAY} just ran {COLOR GREEN}up Mahalo Trail{COLOR DARK_GRAY} - perhaps you could get to know him?"))
 	closemessage
 
@@ -67,7 +70,7 @@ script IkiTown_Script_HalaIntro
 	fadescreenswapbuffers(FADE_FROM_BLACK)
 	delay(15)
 
-	startsubquest(QUEST_01, SUB_QUEST_3) // Unlock Subquest 3: Find Hau in Mahalo Trail
+	startsubquest(QUEST_WELCOME_TO_ALOLA, QUEST_WELCOME_TO_ALOLA_SUBQUEST_3) // Unlock Subquest 3: Find Hau in Mahalo Trail
 
 	releaseall
 	end
@@ -96,11 +99,13 @@ script IkiTown_Script_SavedLillie
 	waitmovement(0)
 	applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
 	setspeaker("Prof. Kukui")
+	createfieldmugshot(MUGSHOT_PROF_KUKUI)
 	msgbox(format("Oho, I wondered where you ran off to, Lillie! Now why'd you go up {COLOR GREEN}Mahalo Trail{COLOR DARK_GRAY}? You training with {COLOR BLUE}Cosmog{COLOR DARK_GRAY}?"))
 	closemessage
 	applymovement(16, moves(walk_in_place_down * 2, step_end))
 	waitmovement(0)
 	setspeaker("Lillie")
+	createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_SAD)
 	msgbox(format("I- I didn't mean to... {COLOR BLUE}Nebbie{COLOR DARK_GRAY} ran off again! Hau came to help, but we were saved by... By..."))
 	closemessage
 	delay(30)
@@ -108,6 +113,7 @@ script IkiTown_Script_SavedLillie
 	applymovement(16, moves(walk_in_place_right * 2))
 	waitmovement(0)
 	setspeaker("Lillie")
+	createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_INTENSE)
 	msgbox(format("Eek! I didn't even get their name...!"))
 	closemessage
 
@@ -115,6 +121,7 @@ script IkiTown_Script_SavedLillie
 	applymovement(17, moves(jump_in_place_down * 2, step_end))
 	waitmovement(0)
 	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU)
 	msgbox(format("Yeah, {PLAYER} ran up and helped us out! They were trapped with {COLOR BLUE}Nebbie{COLOR DARK_GRAY} by a wild {COLOR BLUE}Corviknight{COLOR DARK_GRAY}, but at the last second, {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY} flew in and saved the day!"))
 	closemessage
 
@@ -126,6 +133,7 @@ script IkiTown_Script_SavedLillie
 	emote(19, EMOTE_QUESTION)
 	delay(10)
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA)
 	msgbox(format("Hey, you three! What's this about {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY}?"))
 	closemessage
 	applymovement(19, moves(walk_right, walk_up * 3, face_left, step_end))
@@ -139,11 +147,13 @@ script IkiTown_Script_SavedLillie
 	applymovement(19, Common_Movement_FaceUp)
 	waitmovement(0)
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA)
 	msgbox(format("So, {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY} revealed itself to you three... Our {COLOR GREEN}Island Guardian{COLOR DARK_GRAY} can be quite the fickle being, so it must hold strong feelings to come protect you.\p The talk of rampaging Pokémon is concerning, but {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY}'s appearance must be a blessing for our Manalo Festival!\p Most festival preparations are complete. Come {COLOR GREEN}speak to me{COLOR DARK_GRAY} once you are ready to join!"))
 	closemessage
 	applymovement(19, Common_Movement_FaceLeft)
 	waitmovement(0)
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA, EMOTION_LAUGH)
 	msgbox(format("Hau, follow me to the platform in town. You must be prepared to receive your first Pokémon!"))
 	closemessage
 
@@ -153,6 +163,7 @@ script IkiTown_Script_SavedLillie
 	waitmovement(0)
 	emote(8, EMOTE_EXCLAM)
 	setspeaker("Prof. Kukui")
+	createfieldmugshot(MUGSHOT_PROF_KUKUI)
 	msgbox(format("Aue, the Manalo Festival is actually starting soon! I need to get {COLOR BLUE}Exeggutor{COLOR DARK_GRAY} ready to dance!"))
 	closemessage
 	applymovement(8, moves(walk_down * 2, walk_right, step_end))
@@ -162,12 +173,13 @@ script IkiTown_Script_SavedLillie
 	applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
 	waitmovement(0)
 	setspeaker("Lillie")
+	createfieldmugshot(MUGSHOT_LILLIE_HAT)
 	msgbox(format("Ahem... So, {PLAYER}, I'm Lillie. It's nice to officially meet you!\p {COLOR BLUE}Nebbie{COLOR DARK_GRAY} and I owe you for helping us. We'll be cheering for you during the festival!"))
 	closemessage
 	applymovement(18, moves(jump_in_place_down * 2))
 	waitmovement(0)
 	setspeaker("Nebbie")
-	playmoncry(SPECIES_EXEGGUTOR_ALOLA, CRY_MODE_NORMAL)
+	playmoncry(SPECIES_COSMOG, CRY_MODE_NORMAL)
 	msgbox(format("Pew pew!"))
 	waitmoncry
 	closemessage
@@ -190,7 +202,7 @@ script IkiTown_Script_SavedLillie
 	delay(20)
 
 	setvar(VAR_INTRO_STATE, 6)
-	startsubquest(QUEST_01, SUB_QUEST_4) // Unlock Subquest 4: Begin the Manalo Festival
+	startsubquest(QUEST_WELCOME_TO_ALOLA, QUEST_WELCOME_TO_ALOLA_SUBQUEST_4) // Unlock Subquest 4: Begin the Manalo Festival
 
 	releaseall
 	end
@@ -231,6 +243,7 @@ script IkiTown_Script_ManaloFestival
 	delay(20)
 
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA, EMOTION_LAUGH)
 	msgbox(format("Welcome, people of Iki Town, to the main event of our Manalo Festival!"))
 	closemessage
 	applymovement(14, moves(jump_in_place_up * 2, step_end))
@@ -238,21 +251,25 @@ script IkiTown_Script_ManaloFestival
 	emote(11, EMOTE_HEART)
 	delay(30)
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA)
 	msgbox(format("Tonight, we open ourselves to the light of {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY}, our great Island Guardian, and honor it through battle!\p Our first challenger is {COLOR GREEN}Hau{COLOR DARK_GRAY}, my own grandson, who has recently chosen his first Pokémon!\p Our second challenger is {COLOR GREEN}{PLAYER}{COLOR DARK_GRAY}, grandchild of Samson Oak, ready to join the great Trainers of Alola!"))
 	closemessage
 	applymovement(7, Common_Movement_FaceRight)
 	applymovement(30, moves(jump_in_place_down * 2, step_end))
 	waitmovement(0)
 	setspeaker("Mom")
+	createfieldmugshot(MUGSHOT_MOM)
 	msgbox(format("WOO-HOO! Go get 'em, {PLAYER}!"))
 	closemessage
 	delay(10)
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA)
 	msgbox(format("Ahem..."))
 	closemessage
 	applymovement(7, Common_Movement_FaceDown)
 	waitmovement(0)
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA, EMOTION_LAUGH)
 	msgbox(format("Hau! {PLAYER}! Show us what it means to be true Trainers!"))
 	closemessage
 
@@ -260,6 +277,7 @@ script IkiTown_Script_ManaloFestival
 	applymovement(29, moves(walk_in_place_right * 2))
 	waitmovement(0)
 	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU)
 	msgbox(format("As long as we have a good time, then I think we can call it a great battle, eh?\p Give it all you've got! C'mon!"))
 	closemessage
 
@@ -278,7 +296,12 @@ script IkiTown_Script_ManaloFestival
 	delay(20)
 	special(HealPlayerParty)
 	setspeaker("Hala")
-	msgbox(format("Hoo-ee! Another great battle this year. I'm sure {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY} enjoyed it too!\p You two have come of age and held your own at the Manalo Festival. Please, take these!"))
+	createfieldmugshot(MUGSHOT_HALA, EMOTION_LAUGH)
+	msgbox(format("Hoo-ee! Another great battle this year. I'm sure {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY} enjoyed it too!"))
+	waitmessage
+	createfieldmugshot(MUGSHOT_HALA, EMOTION_NORMAL)
+	setspeaker("Hala")
+	msgbox(format("You two have come of age and held your own at the Manalo Festival. Please, take these!"))
 	closemessage
 	applymovement(7, moves(walk_down, walk_right, step_end))
 	waitmovement(0)
@@ -293,12 +316,14 @@ script IkiTown_Script_ManaloFestival
 	applymovement(29, moves(walk_in_place_right * 2))
 	waitmovement(0)
 	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU, EMOTION_LAUGH)
 	msgbox(format("So sparkly... Thanks, Tutu!"))
 	closemessage
 	delay(10)
 	applymovement(7, moves(walk_right, walk_up, face_down, step_end))
 	waitmovement(0)
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA)
 	msgbox(format("Those are {COLOR GREEN}Z-Power Rings{COLOR DARK_GRAY}, enhanced with keystones blessed by the Island Guardians themselves.\p With {COLOR GREEN}Z-Power{COLOR DARK_GRAY}, you will be able to draw out the hidden power within your Pokémon, unleashing amazing {COLOR GREEN}Z-Moves{COLOR DARK_GRAY} and accessing the {COLOR GREEN}Z-Forms{COLOR DARK_GRAY} of some species."))
 	closemessage
 	delay(10)
@@ -306,16 +331,20 @@ script IkiTown_Script_ManaloFestival
 	waitmovement(7)
 	delay(10)
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA)
 	msgbox(format("With that, you are now ready to embark on the {COLOR GREEN}Island Challenge{COLOR DARK_GRAY}! You must overcome trials on the four main islands of Alola to earn {COLOR GREEN}Z-Crystals{COLOR DARK_GRAY}, unlocking the true potential of your Pokémon.\p That's it for the Manalo Festival! Until next year, everyone!"))
 	closemessage
 	applymovement(14, moves(jump_in_place_up * 2, step_end))
 	applymovement(30, moves(jump_in_place_down * 2, step_end))
 	emote(27, EMOTE_HEART)
 
+	startquest(QUEST_ISLAND_CHALLENGE)
+
 	delay(30)
 	applymovement(29, moves(walk_right * 3, step_end))
 	waitmovement(0)
 	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU)
 	msgbox(format("I had a blast battling you, {PLAYER}! And now look at us, ready to take on the {COLOR GREEN}Island Challenge{COLOR DARK_GRAY}!\p I'm gonna head home with Hala and rest my Pokémon. You should drop by!"))
 	closemessage
 	delay(10)
@@ -331,12 +360,13 @@ script IkiTown_Script_ManaloFestival
 	waitmovement(27)
 	delay(10)
 	setspeaker("Lillie")
+	createfieldmugshot(MUGSHOT_LILLIE_HAT)
 	msgbox(format("{PLAYER}, that was amazing! I'm no Trainer, but I couldn't look away from that battle.\p I've been staying at {COLOR GREEN}Professor Kukui's Lab{COLOR DARK_GRAY}, on the beach in southern {COLOR GREEN}Hau'oli Outskirts{COLOR DARK_GRAY}. He's been planning a surprise for you, so come visit!"))
 	closemessage
 	delay(20)
 
 	setvar(VAR_INTRO_STATE, 7)
-	startsubquest(QUEST_01, SUB_QUEST_5) // Unlock Subquest 5: Go to Kukui's Lab
+	startsubquest(QUEST_WELCOME_TO_ALOLA, QUEST_WELCOME_TO_ALOLA_SUBQUEST_5) // Unlock Subquest 5: Go to Kukui's Lab
 
 	delay(20)
 	fadescreenswapbuffers(FADE_TO_BLACK)
@@ -390,17 +420,23 @@ script IkiTown_NPC_Hala
 	lock
 	faceplayer
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA)
 	if(!flag(FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL))
 	{
 		msgbox(format("{PLAYER}, Alola! The {COLOR GREEN}Manalo Festival{COLOR DARK_GRAY} is still being set up. Tonight, we honor our Island Guardian and call on them for their protection.\p {COLOR GREEN}Hau{COLOR DARK_GRAY}, my grandson, has gone {COLOR GREEN}up Mahalo Trail{COLOR DARK_GRAY} with Kukui's Assistant. You should try to find them."))
 	}
 	else
 	{
-		msgbox(format("{PLAYER}, come on up! Are you ready to {COLOR GREEN}celebrate the Manalo Festival{COLOR DARK_GRAY} together?"), MSGBOX_YESNO)
+		msgbox(format("{PLAYER}, come on up!"))
+		waitmessage
+		removefieldmugshot
+		setspeaker("Hala")
+		msgbox(format("Are you ready to {COLOR GREEN}celebrate the Manalo Festival{COLOR DARK_GRAY} together?"), MSGBOX_YESNO)
 		closemessage
 		if(var(VAR_RESULT) == TRUE) // ready!
 		{
 			setspeaker("Hala")
+			createfieldmugshot(MUGSHOT_HALA, EMOTION_LAUGH)
 			msgbox(format("Bahaha, great! I'll have you wait here while I get Hau and the townsfolk together..."))
 			closemessage
 			delay(20)
@@ -409,6 +445,7 @@ script IkiTown_NPC_Hala
 		else
 		{
 			setspeaker("Hala")
+			createfieldmugshot(MUGSHOT_HALA)
 			msgbox(format("I understand. This is a big night for you and my grandson both!\p Come back when you're ready for the festival to begin!"))
 		}
 	}
@@ -422,6 +459,7 @@ script IkiTown_NPC_KukuiWithExeggutor
 	lock
 	faceplayer
 	setspeaker("Prof. Kukui")
+	createfieldmugshot(MUGSHOT_PROF_KUKUI)
 	if(!flag(FLAG_HIDE_HAU_CORVISQUIRE_MAHALO_TRAIL))
 	{
 		msgbox(format("Check out this guy! {COLOR BLUE}Alolan Exeggutor{COLOR DARK_GRAY} towers over most Pokémon, yeah! It's so high up, it doesn't seem to hear me sometimes...\p You met {COLOR GREEN}Hala{COLOR DARK_GRAY}? He's the {COLOR GREEN}Kahuna{COLOR DARK_GRAY}, leader of Melemele Island. I thought it would be good for you two to chat!"))
@@ -574,6 +612,7 @@ script IkiTown_NPC_Lillie
 	lock
 	faceplayer
 	setspeaker("Lillie")
+	createfieldmugshot(MUGSHOT_LILLIE_HAT)
 	msgbox(format("I can't wait to see you and Hau in the Manalo Festival tonight!\p I'm not a Trainer, but I take care of little {COLOR BLUE}Nebbie{COLOR DARK_GRAY} here."))
 	closemessage
 	release
@@ -598,6 +637,7 @@ script IkiTown_NPC_Hau
 	lock
 	faceplayer
 	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU)
 	msgbox(format("Alola, {PLAYER}! I can't wait to get my own Pokémon!\p In Mahalo Trail, I felt like I couldn't help... Once I get a Pokémon of my own, I'll be able to help whoever needs it!"))
 	closemessage
 	release
@@ -640,7 +680,7 @@ script IkiTown_NPC_Nurse
 script IkiTown_Sign_LocationSign
 {
 	lock
-	msgbox(format("Iki Town\n Where We Give Thanks to Pokémon."))
+	msgbox(format("Iki Town\n Where We Give Thanks to Pokémon."), MSGBOX_SIGN)
 	closemessage
 	release
 	end
@@ -649,7 +689,7 @@ script IkiTown_Sign_LocationSign
 script IkiTown_Sign_MahaloTrailUp
 {
 	lock
-	msgbox(format("{UP_ARROW} Mahalo Trail"))
+	msgbox(format("{UP_ARROW} Mahalo Trail"), MSGBOX_SIGN)
 	closemessage
 	release
 	end

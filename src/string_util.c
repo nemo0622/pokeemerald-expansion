@@ -3,6 +3,7 @@
 #include "text.h"
 #include "strings.h"
 #include "union_room_chat.h"
+#include "field_mugshot.h"
 
 EWRAM_DATA u8 gStringVar1[0x100] = {0};
 EWRAM_DATA u8 gStringVar2[0x100] = {0};
@@ -733,6 +734,8 @@ u8 GetExtCtrlCodeLength(u8 code)
         [EXT_CTRL_CODE_ACCENT]                 = 2,
         [EXT_CTRL_CODE_BACKGROUND]             = 2,
         [EXT_CTRL_CODE_TEXT_COLORS]            = 4,
+        [EXT_CTRL_CODE_CREATE_MUGSHOT]         = 3,
+        [EXT_CTRL_CODE_DESTROY_MUGSHOT]        = 1,
     };
 
     u8 length = 0;

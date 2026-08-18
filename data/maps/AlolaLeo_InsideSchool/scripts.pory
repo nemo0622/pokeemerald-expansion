@@ -1,0 +1,207 @@
+mapscripts AlolaLeo_InsideSchool_MapScripts {}
+
+script AlolaLeo_InsideSchool_NPC_Teacher1
+{
+    lock
+    faceplayer
+    setspeaker("Teacher")
+    msgbox(format("Ahem... Kids, kids! Ugh, nobody listens to me..."))
+    closemessage
+    emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+    delay(20)
+    setspeaker("Teacher")
+    msgbox(format("Wait... You're listening! I'll give you some exclusive info as a reward.\p The Alola Leo staff have been putting up {COLOR GREEN}large signs{COLOR DARK_GRAY} all over the region. Make sure to {COLOR GREEN}read them all{COLOR DARK_GRAY} - you'll learn more about the Pokémon nearby, and the information can be registered in your Pokédex!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_NPC_Teacher2
+{
+    lock
+    faceplayer
+    setspeaker("Teacher")
+    msgbox(format("Today's lesson is on the Wild Pokémon of Alola.\p Did you know that many Pokémon found on our islands aren't native to here? Dozens of species have come here in recent years. Some were brought intentionally, while others were carelessly released and established wild populations."))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_NPC_Teacher3
+{
+    lock
+    faceplayer
+    setspeaker("Teacher")
+    msgbox(format("Alright kids, today we'll be talking about Ride Pokémon.\p In many other regions, Pokémon usually stay inside their Poké ball. Alolan Pokémon often form much closer bonds with people, so most folks live their daily lives surrounded by their partners!\p Some people go even further, choosing to {COLOR GREEN}ride their Pokémon{COLOR DARK_GRAY} to traverse Alola in new ways. Some areas can only be reached by riding specific Pokémon!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceDown)
+    waitmovement(0)
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_NPC_YoungsterPokeRide
+{
+    lock
+    faceplayer
+    setspeaker("Youngster")
+    msgbox(format("Aw, yeah! I hope we get to ride a {COLOR BLUE}Tauros{COLOR DARK_GRAY} after this lesson!\p My dad says the Tauros are raised in Paniola Ranch over on Akala Island. Can you imagine all the Tauros riders?"))
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_NPC_SchoolBoyGoofingOff
+{
+    lock
+    faceplayer
+    setspeaker("School Boy")
+    msgbox(format("There the teacher goes again, talking about signs or whatever... Why should I care about reading and writing? I can just have Pokémon battles instead!"))
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_NPC_QuickClawScientist
+{
+    lock
+    faceplayer
+    setspeaker("Scientist")
+    msgbox(format("I just held a guest lecture on Pokémon's Speed stat."))
+    if(!flag(FLAG_GOT_QUICK_CLAW_TRAINER_SCHOOL))
+    {
+        setspeaker("Scientist")
+        msgbox(format("This item gives slower Pokémon a chance to move first. I'm sure they'll get a kick out of it!"))
+        closemessage
+        giveitem(ITEM_QUICK_CLAW)
+        setflag(FLAG_GOT_QUICK_CLAW_TRAINER_SCHOOL)
+    }
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_NPC_Picnicker
+{
+    lock
+    faceplayer
+    setspeaker("Picnicker")
+    msgbox(format("Some items don't do anything unless a Pokémon is holding them. They sure are smart!"))
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_NPC_SightseerLearning
+{
+    lock
+    faceplayer
+    setspeaker("Sightseer")
+    msgbox(format("Oh, I'm here for the open lesson on Ride Pokémon!\p We let Pokémon follow us sometimes in Johto, but it looks like Alola takes that way further!"))
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_Pokemon_Chingling
+{
+	lock
+    faceplayer
+    setspeaker("Chingling")
+    playmoncry(SPECIES_CHINGLING, CRY_MODE_NORMAL)
+    msgbox(format("Ding ding!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_Pokemon_Metapod
+{
+	lock
+    faceplayer
+    setspeaker("Metapod")
+    playmoncry(SPECIES_METAPOD, CRY_MODE_NORMAL)
+    msgbox(format("..."))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_Pokemon_Grimer
+{
+	lock
+    faceplayer
+    setspeaker("Grimer")
+    playmoncry(SPECIES_GRIMER_ALOLA, CRY_MODE_NORMAL)
+    msgbox(format("Greugh!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_Pokemon_Cosmog
+{
+	lock
+    faceplayer
+    setspeaker("Nebbie")
+    playmoncry(SPECIES_COSMOG, CRY_MODE_NORMAL)
+    msgbox(format("Pew pew!"))
+    waitmoncry
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceLeft)
+    waitmovement(0)
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_NPC_Lillie
+{
+    lock
+    setspeaker("Lillie")
+    createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_OTHER)
+    msgbox(format("{COLOR BLUE}Nebbie{COLOR DARK_GRAY}, you know it's not safe for you to battle!"))
+    closemessage
+    faceplayer
+    setspeaker("Lillie")
+    createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_SAD)
+    msgbox(format("{COLOR BLUE}Nebbie{COLOR DARK_GRAY} is a {COLOR BLUE}Cosmog{COLOR DARK_GRAY}, so it can only use a few feeble moves in proper battles. Besides, people shouldn't see it for too long..."))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+// -------------------------------- Trainer Scripts ------------------------------------
+
+script AlolaLeo_InsideSchool_Trainer_SchoolGirlMia
+{
+    trainerbattle_single(TRAINER_SCHOOL_GIRL_MIA, 
+	format("Go, my secret Berry strategy!"), 
+	format("M-my expert strategy...!"))
+
+    setspeaker("School Girl Mia")
+    msgbox(format("Lots of Berries grow in Alola. Maybe I'll have a Berry farm when I grow up!"))
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_InsideSchool_Trainer_YoungsterJoey
+{
+    trainerbattle_single(TRAINER_YOUNGSTER_JOEY, 
+	format("I'll show you my Grimer's best move! There's nothing you can do against our Poison Gas!"), 
+	format("Hehehe... Poison Gas!"))
+
+    setspeaker("Youngster Joey")
+    msgbox(format("Certain Pokémon are immune to some status conditions... Is that how you got through Grimer's gas?"))
+    closemessage
+    release
+    end
+}

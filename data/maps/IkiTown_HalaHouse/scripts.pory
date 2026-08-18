@@ -44,12 +44,14 @@ script IkiTown_HalaHouse_Hau
     lock
     faceplayer
     setspeaker("Hau")
+    createfieldmugshot(MUGSHOT_HAU)
     msgbox(format("Alola! You came by!\p This is Hala's house, but I've been living with him for years.\p I learned so much from our battle during the Manalo Festival... I gotta give you somethin' in return!"))
     closemessage
     giveitem(ITEM_QUICK_BALL, 5)
     closemessage
     setspeaker("Hau")
-    msgbox(format("Quick Balls are best at catching Pokémon when you first start a battle. Perfect for picking up new Pokémon, yeah?\p Awrite, I'm gonna head over to the {COLOR GREEN}Alola Leo Trainer School{COLOR DARK_GRAY}! You should come by after talking with Kukui!"))
+    createfieldmugshot(MUGSHOT_HAU)
+    msgbox(format("Quick Balls are best at catching Pokémon when you first start a battle. Perfect for picking up new Pokémon, yeah?\p Awrite, I'm gonna head towards {COLOR GREEN}Hau'oli City{COLOR DARK_GRAY}! You should come by after talking with Kukui!"))
     closemessage
 
     delay(10)
@@ -112,6 +114,7 @@ script IkiTown_HalaHouse_Hala
     lock
     faceplayer
     setspeaker("Hala")
+    createfieldmugshot(MUGSHOT_HALA)
     msgbox(format("{PLAYER}! Welcome in!\p I can see why {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY} revealed itself to you. With your {COLOR GREEN}Z-Power Ring{COLOR DARK_GRAY}, you should be able to progress through the Island Challenge just fine!"))
     closemessage
     release

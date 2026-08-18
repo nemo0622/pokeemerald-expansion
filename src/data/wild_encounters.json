@@ -36908,6 +36908,367 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ALOLA_LEO_ROAD",
+          "base_label": "gAlolaLeo_Road_Day",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MEOWTH_ALOLA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_SKITTY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MEOWTH_ALOLA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_GRIMER_ALOLA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_TEDDIURSA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_CHINGLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_CHINGLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_ROOKIDEE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_ROOKIDEE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MUNCHLAX"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MUNCHLAX"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ALOLA_LEO_ROAD",
+          "base_label": "gAlolaLeo_Road_Night",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MEOWTH_ALOLA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_SKITTY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MEOWTH_ALOLA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_GRIMER_ALOLA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_ZORUA_HISUI"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_CHINGLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_CHINGLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_SHROOMISH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_SHROOMISH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MUNCHLAX"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MUNCHLAX"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_HAUOLI_BEACHFRONT",
+          "base_label": "gHauoliBeachfront_Day",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_MEOWTH_ALOLA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_PSYDUCK"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_CRABRAWLER"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_CHINGLING"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_TEDDIURSA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_PYUKUMUKU"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_DUNSPARCE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_MAREANIE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_MAREANIE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_HAUOLI_SHOPPING_DISTRICT",
+          "base_label": "gHauoliShoppingDistrict_Day",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_MEOWTH_ALOLA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_HATENNA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_GRIMER_ALOLA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_FURFROU"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_FLABEBE_ORANGE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_FLABEBE_RED"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_FLABEBE_YELLOW"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_FLABEBE_WHITE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_MANKEY"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_MANKEY"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 2,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
         }
       ]
     },

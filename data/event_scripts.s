@@ -73,6 +73,7 @@
 #include "constants/weather.h"
 #include "constants/speaker_names.h"
 #include "constants/quests.h"
+#include "constants/field_mugshots.h"
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
 	.include "constants/constants.inc"
@@ -853,3 +854,11 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/IkiTown_HalaHouse/scripts.inc"
 
 	.include "data/maps/HauoliOutskirts_KukuiLab/scripts.inc"
+
+	.include "data/maps/AlolaLeo_InsideSchool/scripts.inc"
+
+	.include "data/maps/AlolaLeo_PokemonCenter/scripts.inc"
+
+	.include "data/maps/HauoliBeachfront_BigPoppasSurfShop/scripts.inc"
+
+	.include "data/maps/HauoliBeachfront_TouristBureau/scripts.inc"

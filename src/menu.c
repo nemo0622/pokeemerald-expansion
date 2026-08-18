@@ -24,6 +24,7 @@
 #include "script.h"
 #include "task.h"
 #include "text_window.h"
+#include "field_mugshot.h"
 #include "window.h"
 #include "constants/songs.h"
 
@@ -144,6 +145,7 @@ void InitStandardTextBoxWindows(void)
     InitWindows(sStandardTextBox_WindowTemplates);
     sStartMenuWindowId = WINDOW_NONE;
     sMapNamePopupWindowId = WINDOW_NONE;
+    SetFieldMugshotSpriteId(WINDOW_NONE); // its the same as SPRITE_NONE
     if (OW_POPUP_GENERATION == GEN_5)
         sSecondaryPopupWindowId = WINDOW_NONE;
 }

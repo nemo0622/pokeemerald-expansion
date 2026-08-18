@@ -70,120 +70,126 @@ IkiTown_HalaHouse_Hau::
 # 46 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	setspeaker IkiTown_HalaHouse_Hau_Text_0
 # 47 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	msgbox IkiTown_HalaHouse_Hau_Text_1
+	createfieldmugshot MUGSHOT_HAU
 # 48 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	closemessage
+	msgbox IkiTown_HalaHouse_Hau_Text_1
 # 49 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	giveitem ITEM_QUICK_BALL, 5
+	closemessage
 # 50 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	closemessage
+	giveitem ITEM_QUICK_BALL, 5
 # 51 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	setspeaker IkiTown_HalaHouse_Hau_Text_0
-# 52 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	msgbox IkiTown_HalaHouse_Hau_Text_2
-# 53 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	closemessage
+# 52 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	setspeaker IkiTown_HalaHouse_Hau_Text_0
+# 53 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	createfieldmugshot MUGSHOT_HAU
+# 54 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	msgbox IkiTown_HalaHouse_Hau_Text_2
 # 55 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	delay 10
-# 56 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	closemessage
 # 57 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	delay 30
-# 58 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	setflag FLAG_HIDE_HAU_HALAS_HOME
-# 59 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	setflag FLAG_HIDE_HAUS_ROWLET_HALAS_HOME
-# 60 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	setflag FLAG_HIDE_HAUS_LITTEN_HALAS_HOME
-# 61 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	setflag FLAG_HIDE_HAUS_POPPLIO_HALAS_HOME
-# 62 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	removeobject 2
-# 63 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	removeobject 3
-# 64 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	removeobject 7
-# 65 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	removeobject 8
-# 66 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	delay 30
-# 67 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 68 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	delay 10
+# 58 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 59 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	delay 30
+# 60 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	setflag FLAG_HIDE_HAU_HALAS_HOME
+# 61 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	setflag FLAG_HIDE_HAUS_ROWLET_HALAS_HOME
+# 62 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	setflag FLAG_HIDE_HAUS_LITTEN_HALAS_HOME
+# 63 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	setflag FLAG_HIDE_HAUS_POPPLIO_HALAS_HOME
+# 64 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	removeobject 2
+# 65 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	removeobject 3
+# 66 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	removeobject 7
+# 67 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	removeobject 8
+# 68 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	delay 30
 # 69 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 70 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	delay 10
+# 71 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	release
 	end
 
 
 IkiTown_HalaHouse_Crabrawler::
-# 75 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	lock
-# 76 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	faceplayer
 # 77 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	setspeaker IkiTown_HalaHouse_Crabrawler_Text_0
+	lock
 # 78 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	playmoncry SPECIES_CRABRAWLER, CRY_MODE_NORMAL
+	faceplayer
 # 79 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	msgbox IkiTown_HalaHouse_Crabrawler_Text_1
+	setspeaker IkiTown_HalaHouse_Crabrawler_Text_0
 # 80 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_CRABRAWLER, CRY_MODE_NORMAL
 # 81 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	closemessage
+	msgbox IkiTown_HalaHouse_Crabrawler_Text_1
 # 82 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	waitmoncry
+# 83 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	closemessage
+# 84 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	release
 	end
 
 
 IkiTown_HalaHouse_Crabominable::
-# 88 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	lock
-# 89 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	faceplayer
 # 90 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	setspeaker IkiTown_HalaHouse_Crabominable_Text_0
+	lock
 # 91 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	playmoncry SPECIES_CRABOMINABLE, CRY_MODE_NORMAL
+	faceplayer
 # 92 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	msgbox IkiTown_HalaHouse_Crabominable_Text_1
+	setspeaker IkiTown_HalaHouse_Crabominable_Text_0
 # 93 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_CRABOMINABLE, CRY_MODE_NORMAL
 # 94 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	closemessage
+	msgbox IkiTown_HalaHouse_Crabominable_Text_1
 # 95 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	waitmoncry
+# 96 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	closemessage
+# 97 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	release
 	end
 
 
 IkiTown_HalaHouse_HalaNiece::
-# 101 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	lock
-# 102 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	faceplayer
 # 103 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	setspeaker IkiTown_HalaHouse_HalaNiece_Text_0
+	lock
 # 104 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	msgbox IkiTown_HalaHouse_HalaNiece_Text_1
+	faceplayer
 # 105 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	closemessage
+	setspeaker IkiTown_HalaHouse_HalaNiece_Text_0
 # 106 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	msgbox IkiTown_HalaHouse_HalaNiece_Text_1
+# 107 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	closemessage
+# 108 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	release
 	end
 
 
 IkiTown_HalaHouse_Hala::
-# 112 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	lock
-# 113 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	faceplayer
 # 114 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	setspeaker IkiTown_HalaHouse_Hala_Text_0
+	lock
 # 115 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	msgbox IkiTown_HalaHouse_Hala_Text_1
+	faceplayer
 # 116 "data//maps/IkiTown_HalaHouse/scripts.pory"
-	closemessage
+	setspeaker IkiTown_HalaHouse_Hala_Text_0
 # 117 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	createfieldmugshot MUGSHOT_HALA
+# 118 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	msgbox IkiTown_HalaHouse_Hala_Text_1
+# 119 "data//maps/IkiTown_HalaHouse/scripts.pory"
+	closemessage
+# 120 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	release
 	end
 
@@ -217,7 +223,7 @@ IkiTown_HalaHouse_Hau_Text_0:
 	.string "Hau$"
 
 IkiTown_HalaHouse_Hau_Text_1:
-# 47 "data//maps/IkiTown_HalaHouse/scripts.pory"
+# 48 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	.string "Alola! You came by!\p"
 	.string "This is Hala's house, but I've been\n"
 	.string "living with him for years.\p"
@@ -226,46 +232,46 @@ IkiTown_HalaHouse_Hau_Text_1:
 	.string "give you somethin' in return!$"
 
 IkiTown_HalaHouse_Hau_Text_2:
-# 52 "data//maps/IkiTown_HalaHouse/scripts.pory"
+# 54 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	.string "Quick Balls are best at catching\n"
 	.string "Pokémon when you first start a battle.\l"
 	.string "Perfect for picking up new Pokémon,\l"
 	.string "yeah?\p"
-	.string "Awrite, I'm gonna head over to the {COLOR GREEN}Alola\n"
-	.string "Leo Trainer School{COLOR DARK_GRAY}! You should come by\l"
-	.string "after talking with Kukui!$"
+	.string "Awrite, I'm gonna head towards {COLOR GREEN}Hau'oli\n"
+	.string "City{COLOR DARK_GRAY}! You should come by after talking\l"
+	.string "with Kukui!$"
 
 IkiTown_HalaHouse_Crabrawler_Text_0:
-# 77 "data//maps/IkiTown_HalaHouse/scripts.pory"
+# 79 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	.string "Crabrawler$"
 
 IkiTown_HalaHouse_Crabrawler_Text_1:
-# 79 "data//maps/IkiTown_HalaHouse/scripts.pory"
+# 81 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	.string "Chk kch!$"
 
 IkiTown_HalaHouse_Crabominable_Text_0:
-# 90 "data//maps/IkiTown_HalaHouse/scripts.pory"
+# 92 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	.string "Crabominable$"
 
 IkiTown_HalaHouse_Crabominable_Text_1:
-# 92 "data//maps/IkiTown_HalaHouse/scripts.pory"
+# 94 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	.string "Bwaargh!$"
 
 IkiTown_HalaHouse_HalaNiece_Text_0:
-# 103 "data//maps/IkiTown_HalaHouse/scripts.pory"
+# 105 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	.string "Swimmer$"
 
 IkiTown_HalaHouse_HalaNiece_Text_1:
-# 104 "data//maps/IkiTown_HalaHouse/scripts.pory"
+# 106 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	.string "I'm Hala's niece! We've lived on Melemele\n"
 	.string "Island for generations.$"
 
 IkiTown_HalaHouse_Hala_Text_0:
-# 114 "data//maps/IkiTown_HalaHouse/scripts.pory"
+# 116 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	.string "Hala$"
 
 IkiTown_HalaHouse_Hala_Text_1:
-# 115 "data//maps/IkiTown_HalaHouse/scripts.pory"
+# 118 "data//maps/IkiTown_HalaHouse/scripts.pory"
 	.string "{PLAYER}! Welcome in!\p"
 	.string "I can see why {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY} revealed itself\n"
 	.string "to you. With your {COLOR GREEN}Z-Power Ring{COLOR DARK_GRAY}, you\l"

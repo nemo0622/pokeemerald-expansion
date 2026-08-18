@@ -20,6 +20,7 @@ script AlolaLeo_Road_Script_RoadBlockedByTauros
 	waitmovement(0)
 
 	setspeaker("Lillie")
+	createfieldmugshot(MUGSHOT_LILLIE_HAT)
 	msgbox(format("{PLAYER}...! {COLOR BLUE}Nebbie{COLOR DARK_GRAY} and I were just coming to the Trainer School, but look..."))
 	closemessage
 	delay(10)
@@ -28,6 +29,7 @@ script AlolaLeo_Road_Script_RoadBlockedByTauros
 	applymovement(3, Common_Movement_WalkRight)
 	waitmovement(0)
 	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA)
 	msgbox(format("You two were right to stop. It seems like ol' {COLOR BLUE}Tauros{COLOR DARK_GRAY} here is feeling stubborn as, well, a {COLOR BLUE}Tauros{COLOR DARK_GRAY}!\p I'll stay here and try to calm it down. In the meantime, you should chat with the students at the Trainer School. Some might even want to {COLOR GREEN}battle you{COLOR DARK_GRAY}!"))
 	closemessage
 	delay(10)
@@ -37,6 +39,7 @@ script AlolaLeo_Road_Script_RoadBlockedByTauros
 	applymovement(1, Common_Movement_FaceDown)
 	waitmovement(0)
 	setspeaker("Lillie")
+	createfieldmugshot(MUGSHOT_LILLIE_HAT)
 	msgbox(format("Well, I guess that works out... ehehe!\p I've never had a Pokémon battle before, and {COLOR BLUE}Nebbie{COLOR DARK_GRAY} shouldn't draw too much attention... I think I'll head inside!"))
 	closemessage
 
@@ -58,26 +61,348 @@ script AlolaLeo_Road_Script_RoadBlockedByTauros
 	end
 }
 
-// -------------------------------- Trainer Scripts ------------------------------------
+script AlolaLeo_Road_Pokemon_Meowth
+{
+	lock
+    faceplayer
+    setspeaker("Meowth")
+    playmoncry(SPECIES_MEOWTH_ALOLA, CRY_MODE_NORMAL)
+    msgbox(format("Groww!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
 
-// TODO Week of July 6th 2026:
-// 1.	:check: Add more trainer classes from Alola (Youth Athlete and stuff)
-// 2.	:check: Get some proper Trainer sprites going! Can be some placeholders ofc (including Elio and Selene!!)
-// 3.	:check: Properly align Trainers at the start of battle (y - 8 i think)
-// 4.	:check: Add more overworld NPC sprites - older man/woman, "rising stars", etc. (watch footage to find NPCs inspo)
-// 		:check: GitHub commit!
-// 5.	Look into DNS palette switching, decide if worth it
-// 6. 	Add Hawaiian characters (line accents) to in-game fonts and charmap.txt
-// 7.	Begin skeleton-mapping the rest of the region! Simply creating MapSec and Tileset files
+// -------------------------------- Trainer Scripts ------------------------------------
 
 script AlolaLeo_Road_Trainer_LassHiromi
 {
 	trainerbattle_single(TRAINER_LASS_HIROMI, 
-	format("I'll be the best Trainer at this whole school!"), 
-	format("I'll be stronger one day, you'll see!"))
+	format("If my precious Bonsly takes damage in battle, I'll want to use a Potion on it!"), 
+	format("Don't worry, buddy! I'll heal you up!"))
 
 	setspeaker("Lass Hiromi")
-	msgbox(format("Our school is pretty small, but we learn a lot about Pokémon!"))
+	msgbox(format("Some Trainers use items in battle to support their Pokémon."))
+	closemessage
+	release
+	end
+}
+
+script AlolaLeo_Road_Trainer_RisingStarJoseph
+{
+	lock
+	setspeaker("Rising Star Joseph")
+
+	if(defeated(TRAINER_RISING_STAR_JOSEPH))
+	{
+		faceplayer
+		msgbox(format("I can't believe you beat me...\p I'll just have to get stronger. WAY stronger!"))
+		closemessage
+		release
+		end
+	}
+
+	hidefollower
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+	switch(var(VAR_TEMP_1))
+	{
+		case 16:
+			applymovement(LOCALID_PLAYER, moves(walk_down, walk_right * 3, walk_up, face_left, step_end))
+		case 17:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_up, face_left, step_end))
+		default:
+			applymovement(LOCALID_PLAYER, moves(walk_right, face_left, step_end))
+	}
+	waitmovement(0)
+
+	msgbox(format("You wanna know why I'm standing here? Because I'm the STRONGEST, that's why!"))
+	closemessage
+	createplayerfieldmugshot(EMOTION_SAD)
+	msgbox(format("{SPEAKER NAME_PLAYER}And the humblest, too..."))
+	closemessage
+	setspeaker("Rising Star Joseph")
+	msgbox(format("I won't even bother battling you unless you can beat {COLOR GREEN}all the other students who want to battle{COLOR DARK_GRAY}!"))
+	closemessage
+
+	if(defeated(TRAINER_LASS_HIROMI) && defeated(TRAINER_SCHOOL_GIRL_MIA) && defeated(TRAINER_YOUNGSTER_JOEY))
+	{
+		delay(30)
+		emote(9, EMOTE_EXCLAM)
+		delay(10)
+		setspeaker("Rising Star Joseph")
+		trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, LOCALID_NONE, TRAINER_RISING_STAR_JOSEPH, format("Oh? You've battled the other students?\p Heh, let's see if you can handle THIS!"), format("But how?! I've never lost!"), AlolaLeo_Road_Trainer_RisingStarJoseph_AfterBattle, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE)
+	}
+
+	release
+	end
+}
+
+script AlolaLeo_Road_Trainer_RisingStarJoseph_AfterBattle
+{
+	lock
+	faceplayer
+	setspeaker("Rising Star Joseph")
+	msgbox(format("Unbelieveable, I thought I had it for sure...\p Here, you should take these."))
+	closemessage
+	giveitem(ITEM_GREAT_BALL, 10)
+	closemessage
+	setspeaker("Rising Star Joseph")
+	msgbox(format("Those are a bit stronger than normal Poké balls. Maybe you could use them to catch some stronger Pokémon... Not that you need them!"))
+	closemessage
+
+	setflag(FLAG_HIDE_LILLIE_INSIDE_SCHOOL)
+
+	delay(30)
+	clearflag(FLAG_HIDE_LILLIE_ALOLA_LEO_SCHOOL_2)
+	addobject(10)
+	addobject(11)
+	applymovement(10, Common_Movement_WalkDown)
+	applymovement(11, Common_Movement_WalkDown)
+	waitmovement(0)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
+	setspeaker("Lillie")
+	createfieldmugshot(MUGSHOT_LILLIE_HAT)
+	msgbox(format("{PLAYER}! I thought I heard your Pokémon battling out here!"))
+	closemessage
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
+	applymovement(10, moves(walk_down * 2, walk_left * 2, step_end))
+	applymovement(11, moves(walk_left, walk_down * 2, walk_left, step_end))
+	waitmovement(0)
+
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Alola! Yeah, we managed to beat Joseph here."))
+	closemessage
+	createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_OTHER)
+	setspeaker("Lillie")
+	msgbox(format("That's good! {COLOR BLUE}Nebbie{COLOR DARK_GRAY}'s getting super restless... Maybe we should check in on Hala and {COLOR BLUE}Tauros{COLOR DARK_GRAY}?"))
+	closemessage
+
+	applymovement(LOCALID_PLAYER, moves(walk_down, walk_right, step_end))
+	waitmovement(0)
+	applymovement(LOCALID_PLAYER, moves(walk_down * 4, face_left, step_end))
+	applymovement(10, moves(walk_down * 4, face_left, step_end))
+	applymovement(11, moves(walk_left, walk_down * 3, step_end))
+	waitmovement(0)
+	delay(10)
+	setspeaker("Lillie")
+	createfieldmugshot(MUGSHOT_LILLIE_HAT)
+	msgbox(format("Hau, there you are! I wasn't sure where you went after you left Iki Town..."))
+	closemessage
+	applymovement(13, moves(walk_up, walk_right, step_end))
+	waitmovement(0)
+	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU, EMOTION_LAUGH)
+	msgbox(format("I was out looking for s'more Pokémon to beef up my team after {PLAYER} beat me!"))
+	closemessage
+	delay(10)
+	applymovement(13, moves(walk_down, walk_in_place_right * 2, step_end))
+	waitmovement(0)
+	delay(10)
+	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU)
+	msgbox(format("Lucky for us, the {COLOR BLUE}Tauros{COLOR DARK_GRAY} seems to be calming down."))
+	closemessage
+	delay(10)
+	applymovement(3, Common_Movement_FaceRight)
+	waitmovement(0)
+	delay(10)
+	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA)
+	msgbox(format("That's right! I should be getting old {COLOR BLUE}Tauros{COLOR DARK_GRAY} back home.\p But first, I've got an idea... {PLAYER}, give {COLOR BLUE}Tauros{COLOR DARK_GRAY} a pat!"))
+	closemessage
+	emote(LOCALID_PLAYER, EMOTE_EXCLAM)
+	delay(10)
+	createplayerfieldmugshot(EMOTION_SAD)
+	msgbox(format("{SPEAKER NAME_PLAYER}The {COLOR BLUE}Tauros{COLOR DARK_GRAY} that was halfway to rampaging a few minutes ago?"))
+	waitmessage
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}It would be rude to refuse the Island Kahuna... Here goes nothing!"))
+	closemessage
+
+	applymovement(3, moves(walk_left * 2, face_right, step_end))
+	applymovement(13, moves(walk_up, walk_left * 3, walk_down, walk_left, face_right, step_end))
+	applymovement(10, moves(walk_right, walk_down, face_left, step_end))
+	applymovement(11, moves(walk_down, walk_right, face_left, step_end))
+	applymovement(LOCALID_PLAYER, moves(walk_left * 2, step_end))
+	waitmovement(13)
+	delay(20)
+
+	applymovement(LOCALID_PLAYER, moves(walk_in_place_slow_left * 3, face_left, step_end))
+	waitmovement(0)
+	emote(4, EMOTE_HEART)
+	setspeaker("Tauros")
+	playmoncry(SPECIES_TAUROS, CRY_MODE_NORMAL)
+    msgbox(format("Moo-or! Huff!"))
+    waitmoncry
+    closemessage
+	delay(10)
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Aw, you're just a sweet little guy, aren't you? You wouldn't hurt a {COLOR BLUE}Cutiefly{COLOR DARK_GRAY}!"))
+	closemessage
+	delay(10)
+	applymovement(3, moves(walk_in_place_right * 2, step_end))
+	waitmovement(0)
+	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA, EMOTION_LAUGH)
+	msgbox(format("Oh ho ho, that's wonderful, {PLAYER}! You're a natural."))
+	waitmessage
+	createfieldmugshot(MUGSHOT_HALA)
+	setspeaker("Hala")
+	msgbox(format("I'll be taking {COLOR BLUE}Tauros{COLOR DARK_GRAY} back to his home. Enjoy Hau'oli City, you three!\p {PLAYER} and Hau, keep an eye out for a pink-haired young man named {COLOR GREEN}Ilima{COLOR DARK_GRAY}. He'll be the first Trial Captain in your Island Challenge!"))
+	closemessage
+
+	applymovement(4, moves(walk_up, walk_left, step_end))
+	waitmovement(0)
+	delay(10)
+	applymovement(3, moves(walk_left * 7, step_end))
+	applymovement(4, moves(walk_left * 7, step_end))
+	waitmovement(0)
+	setflag(FLAG_HIDE_TAUROS_ALOLA_LEO)
+	removeobject(3)
+	removeobject(4)
+	delay(10)
+	applymovement(13, moves(walk_right * 2, step_end))
+	applymovement(10, moves(walk_up, walk_left * 3, face_down, step_end))
+	applymovement(11, moves(walk_down, walk_up, walk_left * 2, step_end))
+	waitmovement(0)
+	delay(10)
+
+	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU, EMOTION_LAUGH)
+	msgbox(format("I don't wanna brag, but man, Tutu is the best!"))
+	closemessage
+	delay(10)
+	applymovement(13, moves(jump_in_place_right * 2, step_end))
+	waitmovement(0)
+	createfieldmugshot(MUGSHOT_HAU)
+	setspeaker("Hau")
+	msgbox(format("Anyhow, let's explore Hau'oli City! I'm gonna find a place to eat!"))
+	closemessage
+	applymovement(10, Common_Movement_FaceLeft)
+	waitmovement(0)
+	emote(10, EMOTE_EXCLAM)
+	applymovement(13, moves(walk_fast_left * 8, step_end))
+	waitmovement(0)
+	delay(10)
+	applymovement(10, Common_Movement_FaceDown)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
+	setspeaker("Lillie")
+	createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_SAD)
+	msgbox(format("Oh, Hau... He always jumps right into things, doesn't he?"))
+	waitmessage
+	createfieldmugshot(MUGSHOT_LILLIE_HAT)
+	setspeaker("Lillie")
+	msgbox(format("I have to admit, exploring Hau'oli City sounds lovely... Maybe we can meet up when you find that {COLOR GREEN}Trial Captain{COLOR DARK_GRAY} Hala was talking about!"))
+	closemessage
+	applymovement(10, moves(walk_left * 9, step_end))
+	applymovement(11, moves(walk_left * 9, step_end))
+	waitmovement(0)
+
+	setflag(FLAG_HIDE_LILLIE_ALOLA_LEO_SCHOOL_2)
+	removeobject(10)
+	removeobject(11)
+	removeobject(13)
+
+	completequest(QUEST_WELCOME_TO_ALOLA)
+
+	// Starts this quest and silently begins subquests
+	startquest(QUEST_TRIAL_ILIMA)
+	completesubquest(QUEST_ISLAND_CHALLENGE, QUEST_ISLAND_CHALLENGE_SUBQUEST_1)
+	completesubquest(QUEST_TRIAL_ILIMA, QUEST_TRIAL_ILIMA_SUBQUEST_1)
+
+	// ONCE THIS IS DONE:
+	// Get those main quests working, with subquests set up
+	// Then get Ride Pokémon started! EEK!
+
+	closemessage
+	releaseall
+	end
+}
+
+// -------------------------------- NPC Scripts ------------------------------------
+
+script AlolaLeo_Road_NPC_Backpacker
+{
+	lock
+	faceplayer
+	setspeaker("Backpacker")
+	msgbox(format("Me? Oh, I'm not a student here."))
+	waitmessage
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Well then, what are you doing here?"))
+	waitmessage
+	removefieldmugshot
+	setspeaker("Backpacker")
+	msgbox(format("I'm catching Pokémon! Some species in the grass here are rare outside of school property."))
+	closemessage
+	release
+	end
+}
+
+script AlolaLeo_Road_NPC_Hala
+{
+	lock
+	faceplayer
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Alola, Hala! How's {COLOR BLUE}Tauros{COLOR DARK_GRAY} holding up?"))
+	closemessage
+	setspeaker("Hala")
+	createfieldmugshot(MUGSHOT_HALA)
+	msgbox(format("He's alright! Seems like something whipped him into a {COLOR RED}frenzy{COLOR DARK_GRAY}... Not unlike the {COLOR BLUE}Corviknight{COLOR DARK_GRAY} you faced in Mahalo Trail.\p While I calm him down, you should {COLOR GREEN}face the Trainers{COLOR DARK_GRAY} in the Alola Leo School. More training could never hurt!"))
+	closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceDown)
+	waitmovement(0)
+	release
+	end
+}
+
+script AlolaLeo_Road_Pokemon_Tauros
+{
+	lock
+    faceplayer
+    setspeaker("Tauros")
+    playmoncry(SPECIES_TAUROS, CRY_MODE_NORMAL)
+    msgbox(format("Huff-Gruff!!"))
+    waitmoncry
+    closemessage
+	createplayerfieldmugshot(EMOTION_SAD)
+	msgbox(format("{SPEAKER NAME_PLAYER}Woah there, buddy! You're all riled up, hm?"))
+	closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceRight)
+	waitmovement(0)
+    release
+    end
+}
+
+script AlolaLeo_Road_Sign_SchoolSign
+{
+	lock
+	msgbox(format("Alola Leo Trainer School\nWhere New Stars Are Born!"), MSGBOX_SIGN)
+	closemessage
+	release
+	end
+}
+
+script AlolaLeo_Road_NPC_Collector 
+{
+	lock
+	faceplayer
+	setspeaker("Collector")
+	msgbox(format("I just like watching people come and go with their Pokémon.\p ...What? I'd never steal a Pokémon, that's wrong!"))
+	closemessage
+	release
+	end
+}
+
+script AlolaLeo_Road_NPC_Artist
+{
+	lock
+	faceplayer
+	setspeaker("Artist")
+	msgbox(format("Pokémon Center Café's serve all sorts of drinks. They're for people and Pokémon both!"))
 	closemessage
 	release
 	end

@@ -804,15 +804,15 @@
 #define FLAG_HIDE_HAUS_POPPLIO_HALAS_HOME                           0x2EF // Used in Hala's Home
 #define FLAG_HIDE_LILLIE_HAUOLI_OUTSKIRTS                           0x2F0 // Outside Professor Kukui's Lab
 #define FLAG_HIDE_LILLIE_ALOLA_LEO_SCHOOL                           0x2F1 // Outside Alola Leo school
-#define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1          0x2F2
-#define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2          0x2F3
-#define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA          0x2F4
-#define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_BEDROOM_MOM               0x2F5
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM                0x2F6
-#define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MOM                    0x2F7
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM      0x2F8
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK              0x2F9
-#define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK                  0x2FA
+#define FLAG_GOT_QUICK_CLAW_TRAINER_SCHOOL                          0x2F2 // Quick Claw from Scientist inside Alola Leo School
+#define FLAG_HIDE_LILLIE_ALOLA_LEO_SCHOOL_2                         0x2F3 // Outside Alola Leo school
+#define FLAG_HIDE_LILLIE_INSIDE_SCHOOL                              0x2F4 // Inside Alola Leo School
+#define FLAG_HIDE_TAUROS_ALOLA_LEO                                  0x2F5 // After event with Hala; opens up Hau'oli City
+#define FLAG_HIDE_PICNICKER_HAUOLI_BEACHFRONT                       0x2F6 // For Corsola/Mareanie event in Beachfront
+#define FLAG_HIDE_MAREANIE_HAUOLI_BEACHFRONT                        0x2F7 // For Corsola/Mareanie event in Beachfront
+#define FLAG_HIDE_CORSOLA_HAUOLI_BEACHFRONT                         0x2F8 // For Corsola/Mareanie event in Beachfront
+#define FLAG_GOT_SILK_SCARF                                         0x2F9 // From Old Woman in Hau'oli Shopping District
+#define FLAG_DID_MALASADA_SHOP_EVENT                                0x2FA // Meeting Hau outside the Malasada Shop in Hau'oli Shopping District
 #define FLAG_HIDE_DEOXYS                                            0x2FB
 #define FLAG_HIDE_BIRTH_ISLAND_DEOXYS_TRIANGLE                      0x2FC
 #define FLAG_HIDE_MAUVILLE_CITY_SCOTT                               0x2FD
@@ -1224,31 +1224,34 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
-#define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
+// SUBQUEST COMPLETION FLAGS
+// This is for the modified Subquest system cause the old one kinda doesn't work
+// Each Subquest must get a flag like this, numbered based on their defines in include/constants/quests.h
+#define FLAG_COMPLETE_SUBQUEST_00                                           0x493 // Subquests of QUEST_WELCOME_TO_ALOLA
+#define FLAG_COMPLETE_SUBQUEST_01                                           0x494 // Subquests of QUEST_WELCOME_TO_ALOLA
+#define FLAG_COMPLETE_SUBQUEST_02                                           0x495 // Subquests of QUEST_WELCOME_TO_ALOLA
+#define FLAG_COMPLETE_SUBQUEST_03                                           0x496 // Subquests of QUEST_WELCOME_TO_ALOLA
+#define FLAG_COMPLETE_SUBQUEST_04                                           0x497 // Subquests of QUEST_WELCOME_TO_ALOLA
+#define FLAG_COMPLETE_SUBQUEST_05                                           0x498 // Subquests of QUEST_WELCOME_TO_ALOLA
+#define FLAG_COMPLETE_SUBQUEST_06                                           0x499 // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_07                                           0x49A // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_08                                           0x49B // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_09                                           0x49C // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_10                                           0x49D // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_11                                           0x49E // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_12                                           0x49F // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_13                                           0x4A0 // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_14                                           0x4A1 // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_15                                           0x4A2 // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_16                                           0x4A3 // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_17                                           0x4A4 // Subquests of QUEST_ISLAND_CHALLENGE
+#define FLAG_COMPLETE_SUBQUEST_18                                           0x4A5 // Subquests of QUEST_DEX_COMPLETION
+#define FLAG_COMPLETE_SUBQUEST_19                                           0x4A6 // Subquests of QUEST_DEX_COMPLETION
+#define FLAG_COMPLETE_SUBQUEST_20                                           0x4A7 // Subquests of QUEST_DEX_COMPLETION
+#define FLAG_COMPLETE_SUBQUEST_21                                           0x4A8 // Subquests of QUEST_DEX_COMPLETION
+#define FLAG_COMPLETE_SUBQUEST_22                                           0x4A9 // Subquests of QUEST_TRIAL_ILIMA
+#define FLAG_COMPLETE_SUBQUEST_23                                           0x4AA // Subquests of QUEST_TRIAL_ILIMA
+#define FLAG_COMPLETE_SUBQUEST_24                                           0x4AB // Subquests of QUEST_TRIAL_ILIMA
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
@@ -1370,7 +1373,7 @@
 
 // Towns and Cities
 #define FLAG_VISITED_LITTLEROOT_TOWN                (SYSTEM_FLAGS + 0xF)
-#define FLAG_VISITED_OLDALE_TOWN                    (SYSTEM_FLAGS + 0x10)
+#define FLAG_VISITED_OLDALE_TOWN                    (SYSTEM_FLAGS + 0x10) // 0x870
 #define FLAG_VISITED_DEWFORD_TOWN                   (SYSTEM_FLAGS + 0x11)
 #define FLAG_VISITED_LAVARIDGE_TOWN                 (SYSTEM_FLAGS + 0x12)
 #define FLAG_VISITED_FALLARBOR_TOWN                 (SYSTEM_FLAGS + 0x13)
@@ -1387,13 +1390,13 @@
 #define FLAG_VISITED_EVER_GRANDE_CITY               (SYSTEM_FLAGS + 0x1E)
 
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
-#define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
+#define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20) // 0x880
 
 #define FLAG_USE_SCALEMONS                          (SYSTEM_FLAGS + 0x21) // Enables Scalemons ruleset
 #define FLAG_OVERWORLD_ENCOUNTERS_DISABLED          (SYSTEM_FLAGS + 0x22) // If set, Overworld Encounters are DISABLED
 #define FLAG_FORCE_DOUBLE_BATTLES                   (SYSTEM_FLAGS + 0x23) // Force all Trainer battles to be doubles
 #define FLAG_SYS_SHOW_ALL_DEXNAV_MONS               (SYSTEM_FLAGS + 0x24) // Cheat to make DexNav show all 
-#define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
+#define FLAG_EXP_SHARE                              (SYSTEM_FLAGS + 0x25) // Used as I_EXP_SHARE_FLAG
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
 

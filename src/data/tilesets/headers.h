@@ -1574,3 +1574,25 @@ const struct Tileset gTileset_IkiTown =
     .metatileAttributes = gMetatileAttributes_IkiTown,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_AlolaFancyBuilding =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AlolaFancyBuilding,
+    .palettes = gTilesetPalettes_AlolaFancyBuilding,
+    .metatiles = gMetatiles_AlolaFancyBuilding,
+    .metatileAttributes = gMetatileAttributes_AlolaFancyBuilding,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AlolaPokemonCenter =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AlolaPokemonCenter,
+    .palettes = gTilesetPalettes_AlolaPokemonCenter,
+    .metatiles = gMetatiles_AlolaPokemonCenter,
+    .metatileAttributes = gMetatileAttributes_AlolaPokemonCenter,
+    .callback = NULL,
+};

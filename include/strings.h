@@ -2354,17 +2354,27 @@ extern const u8 gText_SideQuestMap29[];
 extern const u8 gText_SideQuestMap30[];
 
 //subquests
+// Subquests for QUEST_WELCOME_TO_ALOLA
 extern const u8 gText_SubQuest1_Name1[];
 extern const u8 gText_SubQuest1_Name2[];
 extern const u8 gText_SubQuest1_Name3[];
 extern const u8 gText_SubQuest1_Name4[];
 extern const u8 gText_SubQuest1_Name5[];
 extern const u8 gText_SubQuest1_Name6[];
-extern const u8 gText_SubQuest1_Name7[];
-extern const u8 gText_SubQuest1_Name8[];
-extern const u8 gText_SubQuest1_Name9[];
-extern const u8 gText_SubQuest1_Name10[];
+extern const u8 gText_SubQuest1_Desc1[];
+extern const u8 gText_SubQuest1_Desc2[];
+extern const u8 gText_SubQuest1_Desc3[];
+extern const u8 gText_SubQuest1_Desc4[];
+extern const u8 gText_SubQuest1_Desc5[];
+extern const u8 gText_SubQuest1_Desc6[];
+extern const u8 gText_SubQuest1_Map1[];
+extern const u8 gText_SubQuest1_Map2[];
+extern const u8 gText_SubQuest1_Map3[];
+extern const u8 gText_SubQuest1_Map4[];
+extern const u8 gText_SubQuest1_Map5[];
+extern const u8 gText_SubQuest1_Map6[];
 
+// Subquests for QUEST_ISLAND_CHALLENGE
 extern const u8 gText_SubQuest2_Name1[];
 extern const u8 gText_SubQuest2_Name2[];
 extern const u8 gText_SubQuest2_Name3[];
@@ -2377,26 +2387,6 @@ extern const u8 gText_SubQuest2_Name9[];
 extern const u8 gText_SubQuest2_Name10[];
 extern const u8 gText_SubQuest2_Name11[];
 extern const u8 gText_SubQuest2_Name12[];
-extern const u8 gText_SubQuest2_Name13[];
-extern const u8 gText_SubQuest2_Name14[];
-extern const u8 gText_SubQuest2_Name15[];
-extern const u8 gText_SubQuest2_Name16[];
-extern const u8 gText_SubQuest2_Name17[];
-extern const u8 gText_SubQuest2_Name18[];
-extern const u8 gText_SubQuest2_Name19[];
-extern const u8 gText_SubQuest2_Name20[];
-
-extern const u8 gText_SubQuest1_Desc1[];
-extern const u8 gText_SubQuest1_Desc2[];
-extern const u8 gText_SubQuest1_Desc3[];
-extern const u8 gText_SubQuest1_Desc4[];
-extern const u8 gText_SubQuest1_Desc5[];
-extern const u8 gText_SubQuest1_Desc6[];
-extern const u8 gText_SubQuest1_Desc7[];
-extern const u8 gText_SubQuest1_Desc8[];
-extern const u8 gText_SubQuest1_Desc9[];
-extern const u8 gText_SubQuest1_Desc10[];
-
 extern const u8 gText_SubQuest2_Desc1[];
 extern const u8 gText_SubQuest2_Desc2[];
 extern const u8 gText_SubQuest2_Desc3[];
@@ -2409,20 +2399,42 @@ extern const u8 gText_SubQuest2_Desc9[];
 extern const u8 gText_SubQuest2_Desc10[];
 extern const u8 gText_SubQuest2_Desc11[];
 extern const u8 gText_SubQuest2_Desc12[];
-extern const u8 gText_SubQuest2_Desc13[];
-extern const u8 gText_SubQuest2_Desc14[];
-extern const u8 gText_SubQuest2_Desc15[];
-extern const u8 gText_SubQuest2_Desc16[];
-extern const u8 gText_SubQuest2_Desc17[];
-extern const u8 gText_SubQuest2_Desc18[];
-extern const u8 gText_SubQuest2_Desc19[];
-extern const u8 gText_SubQuest2_Desc20[];
+extern const u8 gText_SubQuest2_Map1[];
+extern const u8 gText_SubQuest2_Map2[];
+extern const u8 gText_SubQuest2_Map3[];
+extern const u8 gText_SubQuest2_Map4[];
+extern const u8 gText_SubQuest2_Map5[];
+extern const u8 gText_SubQuest2_Map6[];
+extern const u8 gText_SubQuest2_Map7[];
+extern const u8 gText_SubQuest2_Map8[];
+extern const u8 gText_SubQuest2_Map9[];
+extern const u8 gText_SubQuest2_Map10[];
+extern const u8 gText_SubQuest2_Map11[];
+extern const u8 gText_SubQuest2_Map12[];
 
-extern const u8 gText_SubQuest1_Map1[];
-extern const u8 gText_SubQuest1_Map2[];
-extern const u8 gText_SubQuest1_Map3[];
-extern const u8 gText_SubQuest1_Map4[];
-extern const u8 gText_SubQuest1_Map5[];
-extern const u8 gText_SubQuest1_Map6[];
+// Subquests for QUEST_DEX_COMPLETION
+extern const u8 gText_SubQuest3_Name1[];
+extern const u8 gText_SubQuest3_Name2[];
+extern const u8 gText_SubQuest3_Name3[];
+extern const u8 gText_SubQuest3_Name4[];
+extern const u8 gText_SubQuest3_Desc1[];
+extern const u8 gText_SubQuest3_Desc2[];
+extern const u8 gText_SubQuest3_Desc3[];
+extern const u8 gText_SubQuest3_Desc4[];
+extern const u8 gText_SubQuest3_Map1[];
+extern const u8 gText_SubQuest3_Map2[];
+extern const u8 gText_SubQuest3_Map3[];
+extern const u8 gText_SubQuest3_Map4[];
+
+// Subquests for QUEST_TRIAL_ILIMA
+extern const u8 gText_SubQuest4_Name1[];
+extern const u8 gText_SubQuest4_Name2[];
+extern const u8 gText_SubQuest4_Name3[];
+extern const u8 gText_SubQuest4_Desc1[];
+extern const u8 gText_SubQuest4_Desc2[];
+extern const u8 gText_SubQuest4_Desc3[];
+extern const u8 gText_SubQuest4_Map1[];
+extern const u8 gText_SubQuest4_Map2[];
+extern const u8 gText_SubQuest4_Map3[];
 
 #endif // GUARD_STRINGS_H

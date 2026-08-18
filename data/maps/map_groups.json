@@ -5,7 +5,8 @@
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
     "gMapGroup_IndoorHauoliOutskirts",
-    "gMapGroup_IndoorIkiTown"
+    "gMapGroup_IndoorIkiTown",
+    "gMapGroup_IndoorHauoliCity"
   ],
   "gMapGroup_TownsAndRoutes": [
     "HauoliOutskirts",
@@ -15,7 +16,9 @@
     "HauoliShoppingDistrict",
     "HauoliBeachfront",
     "MahaloTrail",
-    "HauoliOutskirts_KukuiLab"
+    "HauoliOutskirts_KukuiLab",
+    "AlolaLeo_InsideSchool",
+    "AlolaLeo_PokemonCenter"
   ],
   "gMapGroup_Dungeons": [
     "FieryPath"
@@ -137,5 +140,9 @@
     "IkiTown_House1",
     "IkiTown_House2",
     "IkiTown_House3"
+  ],
+  "gMapGroup_IndoorHauoliCity": [
+    "HauoliBeachfront_BigPoppasSurfShop",
+    "HauoliBeachfront_TouristBureau"
   ]
 }

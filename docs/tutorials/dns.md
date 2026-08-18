@@ -79,9 +79,9 @@ To avoid overlap with active palettes, each nighttime palette is stored in a dif
 
 **Day palette index vs. Night palette index**
 
-| Day | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
-|-----|---|---|---|---|---|---|---|---|---|----|----|----|----|----|----|----|
-| Night | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| Day   | 0 | 1  | 2  | 3  | 4  | 5  | 6  | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
+|-----  |---|--- |--- |--- |--- |--- |--- |---|---|---|----|----|----|----|----|----|
+| Night | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 0 | 1 | 2 | 3  | 4  | 5  | 6  | 7  | 8  |
 
 
 For instance, in a secondary Tileset (slots `6-12`), the nighttime palettes for index `8` would be stored at index `1` (which is unused in a secondary tileset). Slots `0` and `13-15` are not used for blending so the corresponding slots `9` and `6-8` are never used for nighttime palettes.

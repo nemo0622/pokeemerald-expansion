@@ -1,0 +1,164 @@
+mapscripts AlolaLeo_PokemonCenter_MapScripts {}
+
+script NPC_AlolanNurse
+{
+    lock
+	faceplayer
+	setspeaker("Nurse")
+	msgbox(format("Alola, welcome to our Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == TRUE)
+	{
+		setspeaker("Nurse")
+		msgbox(format("Great! I'll take your Pokémon for a moment..."))
+		closemessage
+		applymovement(VAR_LAST_TALKED, moves(walk_in_place_slow_left * 3, delay_16, face_down, step_end))
+		waitmovement(0)
+		special(HealPlayerParty)
+		delay(10)
+		applymovement(VAR_LAST_TALKED, Movement_PkmnCenterNurse_Bow)
+		waitmovement(0)
+		setspeaker("Nurse")
+		msgbox(format("Your Pokémon are feeling better. Have a good day!"))
+		closemessage
+	}
+	else
+	{
+		setspeaker("Nurse")
+		msgbox(format("Come back soon!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script NPC_Pokemon_Comfey
+{
+	lock
+    faceplayer
+    setspeaker("Comfey")
+    playmoncry(SPECIES_COMFEY, CRY_MODE_NORMAL)
+    msgbox(format("Bree-ey!"))
+    waitmoncry
+    closemessage
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Hey there, {COLOR BLUE}Comfey{COLOR DARK_GRAY}! Thanks for lending us your healing aura!"))
+	closemessage
+    release
+    end
+}
+
+// ---------------------------------------------------------------------------------------------------------
+
+script AlolaLeo_PokemonCenter_NPC_MartClerk
+{
+	lock
+    setspeaker("Clerk")
+	message("Alola, cuz! How can I help ya?")
+	waitmessage
+	pokemart(Mart_AlolaLeo)
+    setspeaker("Clerk")
+	msgbox("Come on back now!")
+	release
+    end
+}
+
+mart Mart_AlolaLeo {
+	ITEM_POKE_BALL
+	ITEM_POTION
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+	ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_ICE_HEAL
+    ITEM_REPEL
+}
+
+script AlolaLeo_PokemonCenter_NPC_CafeStaff
+{
+	lock
+    setspeaker("Cafe Staff")
+	message("Alola, cuz! How can I help ya?")
+	waitmessage
+	pokemart(Cafe_AlolaLeo)
+    setspeaker("Cafe Staff")
+	msgbox("Come on back now!")
+	release
+    end
+}
+
+mart Cafe_AlolaLeo {
+	ITEM_FRESH_WATER
+	ITEM_SODA_POP
+	ITEM_LEMONADE
+	ITEM_MOOMOO_MILK
+}
+
+// ---------------------------------------------------------------------------------------------------------
+
+script AlolaLeo_PokemonCenter_NPC_Lady
+{
+    lock
+    faceplayer
+    setspeaker("Lady")
+    msgbox(format("Every Pokémon Center has a Café, and each Café has a unique drink. One day, I'll try them all!"))
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_PokemonCenter_NPC_Singer
+{
+    lock
+    faceplayer
+    setspeaker("Singer")
+    msgbox(format("I come down to the Pokémon Center every day. It's a lot quieter out here than in Hau'oli City."))
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_PokemonCenter_NPC_FarmerF
+{
+    lock
+    faceplayer
+    setspeaker("Farmer")
+    msgbox(format("My family's been ranching in Paniola Town for generations. I was riding {COLOR BLUE}Tauros{COLOR DARK_GRAY} before I could walk!"))
+    closemessage
+    release
+    end
+}
+
+script AlolaLeo_PokemonCenter_Pokemon_Herdier
+{
+	lock
+    faceplayer
+    setspeaker("Herdier")
+    playmoncry(SPECIES_HERDIER, CRY_MODE_NORMAL)
+    msgbox(format("Bwouf!"))
+    waitmoncry
+    closemessage
+    msgbox(format("Pet the {COLOR BLUE}Herdier{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+    closemessage
+    if(var(VAR_RESULT) == TRUE)
+    {
+        getobjectfacingdirection(LOCALID_PLAYER, VAR_TEMP_1)
+        if(var(VAR_TEMP_1) == DIR_NORTH)
+        {
+            applymovement(LOCALID_PLAYER, moves(walk_in_place_slow_up * 2, step_end))
+        }
+        else
+        {
+            applymovement(LOCALID_PLAYER, moves(walk_in_place_slow_right * 2, step_end))
+        }
+        waitmovement(0)
+        delay(10)
+        emote(VAR_LAST_TALKED, EMOTE_HEART)
+        delay(10)
+        createplayerfieldmugshot
+        msgbox(format("{SPEAKER NAME_PLAYER}Aw, good little buddy!"))
+        closemessage
+    }
+    release
+    end
+}
+

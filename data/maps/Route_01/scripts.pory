@@ -9,7 +9,8 @@ script Route_01_Trigger_YungoosEncounter_Left
 	lockall
 	if(!flag(FLAG_HIDE_SAMSON_ROUTE_01))
 	{
-		msgbox(format("Can't leave without a Pokémon!"))
+		createplayerfieldmugshot
+		msgbox(format("I shouldn't leave without a Pokémon!"))
 		closemessage
 		applymovement(LOCALID_PLAYER, moves(walk_up, step_end))
 		waitmovement(0)
@@ -28,7 +29,8 @@ script Route_01_Trigger_YungoosEncounter_Right
 	lockall
 	if(!flag(FLAG_HIDE_SAMSON_ROUTE_01))
 	{
-		msgbox(format("Can't leave without a Pokémon!"))
+		createplayerfieldmugshot
+		msgbox(format("I shouldn't leave without a Pokémon!"))
 		closemessage
 		applymovement(LOCALID_PLAYER, moves(walk_up, step_end))
 		waitmovement(0)
@@ -61,7 +63,8 @@ script Route_01_Trigger_YungoosEncounter_Middle
 }
 script Route_01_Trigger_RequireStarter
 {
-	msgbox(format("Can't leave without a Pokémon!"))
+	createplayerfieldmugshot
+	msgbox(format("I shouldn't leave without a Pokémon!"))
 	closemessage
 	applymovement(LOCALID_PLAYER, moves(walk_right, step_end))
 	waitmovement(0)
@@ -70,7 +73,8 @@ script Route_01_Trigger_RequireStarter
 }
 script Route_01_Trigger_RequireStarterMoveDown
 {
-	msgbox(format("Can't leave without a Pokémon!"))
+	createplayerfieldmugshot
+	msgbox(format("I shouldn't leave without a Pokémon!"))
 	closemessage
 	applymovement(LOCALID_PLAYER, moves(walk_down, step_end))
 	waitmovement(0)
@@ -89,7 +93,8 @@ script Route_01_Script_YungoosEncounter
 	emote(LOCALID_PLAYER, EMOTE_EXCLAM)
 	waitmovement(1)
 
-	msgbox(format("The wild Pokémon looks furious!"))
+	createplayerfieldmugshot(EMOTION_SAD)
+	msgbox(format("{SPEAKER NAME_PLAYER}A {COLOR BLUE}Yungoos{COLOR DARK_GRAY}! Grandpa Samson told me about these chasing people down... But I don't have a Pokémon to fight it!"))
 	closemessage
 
 	delay(15)
@@ -143,12 +148,14 @@ script Route_01_Script_YungoosEncounter
 	delay(10)
 	applymovement(1, moves(jump_in_place_down * 2, delay_16, walk_fast_up, walk_fast_left * 9, step_end))
 	waitmovement(1)
-	msgbox(format("The Yungoos was scared off thanks to these three Pokémon!"))
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Wow, you saved me from that {COLOR BLUE}Yungoos{COLOR DARK_GRAY}! Who are you?"))
 	closemessage
 	delay(20)
 
 	// Grandpa Samson shows up
 	setspeaker("Grandpa Samson")
+	createfieldmugshot(MUGSHOT_SAMSON_OAK)
 	msgbox(format("Aue! {PLAYER}! You found them!"))
 	closemessage
 	applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
@@ -178,12 +185,14 @@ script Route_01_Script_YungoosEncounter
 	applymovement(LOCALID_PLAYER, Common_Movement_FaceDown)
 	waitmovement(0)
 	setspeaker("Grandpa Samson")
-	msgbox(format("We were on the way back from {COLOR GREEN}Iki Town{COLOR DARK_GRAY} when Rowlet, Litten, and Popplio ran off. How'd ya catch 'em?"))
+	createfieldmugshot(MUGSHOT_SAMSON_OAK)
+	msgbox(format("We were on the way back from {COLOR GREEN}Iki Town{COLOR DARK_GRAY} when {COLOR GREEN}Rowlet{COLOR DARK_GRAY}, {COLOR RED}Litten{COLOR DARK_GRAY}, and {COLOR BLUE}Popplio{COLOR DARK_GRAY} ran off. How'd ya catch 'em?"))
 	closemessage
 	delay(10)
 	applymovement(6, moves(walk_down * 2, walk_right, step_end))
 	waitmovement(0)
 	setspeaker("???")
+	createfieldmugshot(MUGSHOT_PROF_KUKUI, EMOTION_LAUGH)
 	msgbox(format("Ha! Slow down, cousin! It looks like those three were saving them from a Yungoos."))
 	closemessage
 	delay(10)
@@ -194,6 +203,7 @@ script Route_01_Script_YungoosEncounter
 	waitmovement(6)
 	delay(10)
 	setspeaker("Prof. Kukui")
+	createfieldmugshot(MUGSHOT_PROF_KUKUI)
 	msgbox(format("The name's Kukui, the Professor of Melemele Island! And by the sound of it, you're {PLAYER}, yeah?\n Welcome to Alola!\p Pokémon like to live in the grass around here. If you want to explore Alola, you'll need your own Pokémon to dish out some moves!"))
 	closemessage
 
@@ -205,7 +215,12 @@ script Route_01_Script_YungoosEncounter
 	applymovement(5, moves(walk_in_place_slow_up * 2, face_up, step_end))
 	waitmovement(0)
 	setspeaker("Grandpa Samson")
-	msgbox(format("As it happens, I was in Iki Town picking up those {COLOR GREEN}three Pokémon{COLOR DARK_GRAY} to show you before they ran off.\p How about you {COLOR GREEN}pick one to be your partner{COLOR DARK_GRAY}? They all seem to like you well enough, ohoho!"))
+	createfieldmugshot(MUGSHOT_SAMSON_OAK)
+	msgbox(format("As it happens, I was in Iki Town picking up those {COLOR GREEN}three Pokémon{COLOR DARK_GRAY} to show you before they ran off."))
+	waitmessage
+	createfieldmugshot(MUGSHOT_SAMSON_OAK, EMOTION_LAUGH)
+	setspeaker("Grandpa Samson")
+	msgbox(format("How about you {COLOR GREEN}pick one to be your partner{COLOR DARK_GRAY}? They all seem to like you well enough, ohoho!"))
 	closemessage
 
 	applymovement(5, moves(walk_down, face_up, step_end))
@@ -225,6 +240,7 @@ script Route_01_Script_ProfKukui_StarterChoice
 	lock
 	faceplayer
 	setspeaker("Prof. Kukui")
+	createfieldmugshot(MUGSHOT_PROF_KUKUI)
 	msgbox(format("Somethin' wrong, {PLAYER}? Pick whichever Pokémon speaks to you the most, yeah!"))
 	closemessage
 	release
@@ -235,6 +251,7 @@ script Route_01_Script_SamsonOak_StarterChoice
 	lock
 	faceplayer
 	setspeaker("Grandpa Samson")
+	createfieldmugshot(MUGSHOT_SAMSON_OAK)
 	msgbox(format("Go ahead, pick a Pokémon to join you! They're all quite rare, so choose wisely."))
 	closemessage
 	release
@@ -251,7 +268,10 @@ script Route_01_Script_ChooseRowlet
 	waitmoncry
 	closemessage
 	delay(10)
-	msgbox(format("Tutu Samson mentioned this Pokémon! {COLOR GREEN}Rowlet{COLOR DARK_GRAY} likes to fly at night, tucking itself into corners during the day.\p Pick {COLOR GREEN}Rowlet{COLOR DARK_GRAY}, the Grass Quill Pokémon?"), MSGBOX_YESNO)
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Grandpa Samson mentioned this Pokémon! {COLOR GREEN}Rowlet{COLOR DARK_GRAY} likes to fly at night, tucking itself into corners during the day."))
+	closemessage
+	msgbox(format("{SPEAKER NAME_PLAYER}Should I pick {COLOR GREEN}Rowlet{COLOR DARK_GRAY}, the Grass Quill Pokémon?"), MSGBOX_YESNO)
 	closemessage
 
 	if(var(VAR_RESULT) == TRUE) // said yes!
@@ -272,7 +292,10 @@ script Route_01_Script_ChooseLitten
 	waitmoncry
 	closemessage
 	delay(10)
-	msgbox(format("Tutu Samson mentioned this Pokémon! {COLOR RED}Litten{COLOR DARK_GRAY} acts aloof, but it loves Trainers who help keep its fur clean.\p Pick {COLOR RED}Litten{COLOR DARK_GRAY}, the Fire Cat Pokémon?"), MSGBOX_YESNO)
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Grandpa Samson mentioned this Pokémon! {COLOR RED}Litten{COLOR DARK_GRAY} acts aloof, but it loves Trainers who help keep its fur clean."))
+	closemessage
+	msgbox(format("{SPEAKER NAME_PLAYER}Should I pick {COLOR RED}Litten{COLOR DARK_GRAY}, the Fire Cat Pokémon?"), MSGBOX_YESNO)
 	closemessage
 
 	if(var(VAR_RESULT) == TRUE) // said yes!
@@ -293,7 +316,10 @@ script Route_01_Script_ChoosePopplio
 	waitmoncry
 	closemessage
 	delay(10)
-	msgbox(format("Tutu Samson mentioned this Pokémon! {COLOR BLUE}Popplio{COLOR DARK_GRAY} loves to play, blowing bubbles and bouncing around on them to make a show.\p Pick {COLOR BLUE}Popplio{COLOR DARK_GRAY}, the Sea Lion Pokémon?"), MSGBOX_YESNO)
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Grandpa Samson mentioned this Pokémon! {COLOR BLUE}Popplio{COLOR DARK_GRAY} loves to play, blowing bubbles and bouncing around on them to make a show."))
+	closemessage
+	msgbox(format("{SPEAKER NAME_PLAYER}Should I pick {COLOR BLUE}Popplio{COLOR DARK_GRAY}, the Sea Lion Pokémon?"), MSGBOX_YESNO)
 	closemessage
 
 	if(var(VAR_RESULT) == TRUE) // said yes!
@@ -315,7 +341,8 @@ script Route_01_Script_ReactToStarter
 	setflag(FLAG_SYS_POKEMON_GET)
 
 	bufferspeciesname(STR_VAR_1, VAR_STARTER_MON)
-	message(format("You chose {STR_VAR_1} to be your partner!"))
+	createplayerfieldmugshot(EMOTION_LAUGH)
+	message(format("{SPEAKER NAME_PLAYER}I choose you, {STR_VAR_1}!"))
 	call(Common_EventScript_PlayGymBadgeFanfare)
 	closemessage
 	delay(15)
@@ -341,13 +368,19 @@ script Route_01_Script_ReactToStarter
 	// Samson reacts to choice, Kukui tells you to say Mahalo (thank you), then you and Samson go back home
 	delay(10)
 	setspeaker("Grandpa Samson")
-	msgbox(format("{STR_VAR_1}! I had a feeling that's who you would pick.\p Now, you thank Professor Kukui for that {STR_VAR_1} with a great big Alolan 'Mahalo'. Those three Pokémon were originally his!"))
+	createfieldmugshot(MUGSHOT_SAMSON_OAK, EMOTION_LAUGH)
+	msgbox(format("{STR_VAR_1}! I had a feeling that's who you would pick."))
+	waitmessage
+	createfieldmugshot(MUGSHOT_SAMSON_OAK, EMOTION_NORMAL)
+	setspeaker("Grandpa Samson")
+	msgbox(format("Now, you thank Professor Kukui for that {STR_VAR_1} with a great big Alolan 'Mahalo'. Those three Pokémon were originally his!"))
 	closemessage
 	delay(10)
 	applymovement(6, moves(walk_up, face_right))
 	applymovement(LOCALID_PLAYER, moves(face_left))
 	waitmovement(6)
 	setspeaker("Prof. Kukui")
+	createfieldmugshot(MUGSHOT_PROF_KUKUI)
 	msgbox(format("Na-ah, don't sweat it, cousin! When I heard the great Samson Oak's own grandkid was moving back to Alola, I knew they'd shape up to be a Pokémon Trainer!\p I'll get the other two Pokémon back into their Poké Balls, then let's show your Mom your new friend!"))
 	closemessage
 
@@ -379,15 +412,22 @@ script Route_01_Script_HauIntro
 	waitmovement(0)
 	bufferspeciesname(STR_VAR_1, VAR_STARTER_MON)
 	setspeaker("???")
+	createfieldmugshot(MUGSHOT_HAU)
 	msgbox(format("Hey, hey! You've got a {STR_VAR_1} with you... You must be {PLAYER}!"))
 
 	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU)
 	msgbox(format("I'm Hau! Professor Kukui told me to keep an eye out for ya.\p I'll get my first Pokémon at the {COLOR GREEN}Manalo Festival{COLOR DARK_GRAY} tonight, but I heard you already got yours! I figure I should give these to you."))
 	closemessage
 	giveitem(ITEM_POKE_BALL, 10)
 	closemessage
 	setspeaker("Hau")
-	msgbox(format("Kukui gave me a big box of those, but I can't battle wild Pokémon without a partner of my own yet!\p I'm gonna go on ahead. See you later!"))
+	createfieldmugshot(MUGSHOT_HAU)
+	msgbox(format("Kukui gave me a big box of those, but I can't battle wild Pokémon without a partner of my own yet!"))
+	waitmessage
+	createfieldmugshot(MUGSHOT_HAU, EMOTION_LAUGH)
+	setspeaker("Hau")
+	msgbox(format("I'm gonna go on ahead. See you later!"))
 	closemessage
 	applymovement(LOCALID_HAU_ROUTE01, moves(walk_up * 2, walk_left, walk_up * 5, step_end))
 	waitmovement(0)
@@ -405,7 +445,7 @@ script Route_01_Script_HauIntro
 script Route_01_Sign_Directions
 {
 	lock
-	msgbox(format("{UP_ARROW} Route 3\n {LEFT_ARROW} Iki Town\p {RIGHT_ARROW} Hau'oli Outskirts"))
+	msgbox(format("{UP_ARROW} Route 3\n {LEFT_ARROW} Iki Town\p {RIGHT_ARROW} Hau'oli Outskirts"), MSGBOX_SIGN)
 	closemessage
 	release
 	end

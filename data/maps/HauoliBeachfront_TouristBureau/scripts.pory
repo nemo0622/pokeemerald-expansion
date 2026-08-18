@@ -1,0 +1,171 @@
+mapscripts HauoliBeachfront_TouristBureau_MapScripts {}
+
+script HauoliBeachfront_TouristBureau_NPC_BellhopAtCounter
+{
+    lock
+    faceplayer
+    setspeaker("Bellhop")
+    msgbox(format("Welcome to the Alola Tourist Bureau! If you need anything, please don't hesitate to let us know."))
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_TouristBureau_Pokemon_Machop
+{
+	lock
+    faceplayer
+    setspeaker("Machop")
+    playmoncry(SPECIES_MACHOP, CRY_MODE_NORMAL)
+    msgbox(format("Hyah!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_TouristBureau_NPC_AetherFoundationEmployee
+{
+    lock
+    faceplayer
+    setspeaker("Aether Employee")
+    msgbox(format("Welcome! Are you here to learn more about the {COLOR GREEN}Aether Foundation{COLOR DARK_GRAY}?"), MSGBOX_YESNO)
+    closemessage
+    if(var(VAR_RESULT) == TRUE)
+    {
+        setspeaker("Aether Employee")
+        msgbox(format("Wonderful! The {COLOR GREEN}Aether Foundation{COLOR DARK_GRAY} is the largest conservation organization in Alola. We work to protect wild Pokémon and their habitats.\pSometimes, Pokémon are too hurt to be released back into the wild. That's why our wonderful boss, {COLOR GREEN}Lusamine{COLOR DARK_GRAY}, chose to build a floating home for all Pokémon: the Aether Paradise!"))
+        closemessage
+    }
+    release
+    end
+}
+
+script HauoliBeachfront_TouristBureau_Pokemon_Glaceon
+{
+	lock
+    faceplayer
+    setspeaker("Glaceon")
+    playmoncry(SPECIES_GLACEON, CRY_MODE_NORMAL)
+    msgbox(format("Blwee!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_TouristBureau_NPC_CollectorPlayingCards
+{
+    lock
+    faceplayer
+    setspeaker("Collector")
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_TOURIST_DIFFICULTIES)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("I'm gonna catch a one-of-a-kind Pokémon with that Premier Ball!\pProbably something super unique, like... Gengar! Or... Umm... Charizard?"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_TOURIST_DIFFICULTIES)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("Everyone says I'm only into Pokémon for the money, so I bought up all the {COLOR BLUE}TCG Packs{COLOR DARK_GRAY} from the local store. That'll show 'em!\p People might stil make fun of me without a real Pokémon, though..."))
+        closemessage
+        delay(20)
+        emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+        delay(10)
+        setspeaker("Collector")
+        msgbox(format("I've got an idea! If you bring me a {COLOR GREEN}Premier Ball{COLOR DARK_GRAY} to catch a sweet new Pokémon, I'll give you a {COLOR BLUE}TCG Pack{COLOR DARK_GRAY}. Deal?"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_TOURIST_DIFFICULTIES)
+    }
+    else
+    {
+        msgbox(format("Ugh, finally! Do you have that {COLOR GREEN}Premier Ball{COLOR DARK_GRAY}?"))
+        closemessage
+
+        // Check Quest completion
+        checkitem(ITEM_PREMIER_BALL)
+        delay(30)
+
+        if(var(VAR_RESULT) == FALSE)
+        {
+            setspeaker("Collector")
+            msgbox(format("Guess not...\pI need a {COLOR GREEN}Premier Ball{COLOR DARK_GRAY} so I can catch a real-life Pokémon. Everyone will know how COOL I am!"))
+            closemessage
+            release
+            end
+        }
+        else
+        {
+            setspeaker("Collector")
+            msgbox(format("Hah! This is the coolest type of Poké ball by far!\pI suppose I can part with a {COLOR BLUE}TCG Pack{COLOR DARK_GRAY}... But if you pull anything good, I want it back!"))
+            closemessage
+            
+            removeitem(ITEM_PREMIER_BALL)
+            delay(5)
+            giveitem(ITEM_POTION) // TODO: Give a TCG Pack item!
+            closemessage
+
+            delay(20)
+            completequest(QUEST_TOURIST_DIFFICULTIES)
+        }
+    }
+    release
+    end
+}
+
+script HauoliBeachfront_TouristBureau_NPC_BlackBelt
+{
+    lock
+    faceplayer
+    setspeaker("Black Belt")
+    msgbox(format("The Kahuna of Melemele Island likes to use Fighting-type Pokémon. Maybe a team of Psychic-type or Flying-type Pokémon could stand a chance?"))
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_TouristBureau_NPC_SightseerF
+{
+    lock
+    faceplayer
+    setspeaker("Sightseer")
+    msgbox(format("Hau'oli City is so big! I had to come here for a breather."))
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_TouristBureau_NPC_HexManiac
+{
+    lock
+    faceplayer
+    setspeaker("Hex Maniac")
+    msgbox(format("Yeah, I put my {COLOR BLUE}Litwick{COLOR DARK_GRAY} on the table! So what?! It's a candle!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliBeachfront_TouristBureau_Pokemon_Litwick
+{
+	lock
+    faceplayer
+    setspeaker("Litwick")
+    playmoncry(SPECIES_LITWICK, CRY_MODE_NORMAL)
+    msgbox(format("Fwiss..."))
+    waitmoncry
+    closemessage
+    release
+    end
+}

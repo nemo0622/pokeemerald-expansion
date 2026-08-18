@@ -61,8 +61,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AlolaLeo_Road_NPC_Hala",
+      "flag": "FLAG_HIDE_TAUROS_ALOLA_LEO"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS)",
@@ -74,11 +74,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "AlolaLeo_Road_Pokemon_Tauros",
+      "flag": "FLAG_HIDE_TAUROS_ALOLA_LEO"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 26,
       "y": 11,
       "elevation": 0,
@@ -115,9 +115,161 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BACKPACKER",
+      "x": 13,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AlolaLeo_Road_NPC_Backpacker",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RISING_STAR_M",
+      "x": 17,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AlolaLeo_Road_Trainer_RisingStarJoseph",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LILLIE_1",
+      "x": 22,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_LILLIE_ALOLA_LEO_SCHOOL_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(COSMOG)",
+      "x": 23,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_LILLIE_ALOLA_LEO_SCHOOL_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEOWTH_ALOLA)",
+      "x": 17,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AlolaLeo_Road_Pokemon_Meowth",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HAU",
+      "x": 18,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_LILLIE_ALOLA_LEO_SCHOOL_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_COLLECTOR",
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AlolaLeo_Road_NPC_Collector",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAREANIE)",
+      "x": 10,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ARTIST",
+      "x": 30,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AlolaLeo_Road_NPC_Artist",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEAROW)",
+      "x": 34,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 22,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ALOLA_LEO_INSIDE_SCHOOL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ALOLA_LEO_INSIDE_SCHOOL",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 33,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_ALOLA_LEO_POKEMON_CENTER",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [
     {
       "type": "trigger",
@@ -138,5 +290,14 @@
       "script": "AlolaLeo_Road_Script_RoadBlockedByTauros"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AlolaLeo_Road_Sign_SchoolSign"
+    }
+  ]
 }

@@ -1,4 +1,426 @@
-raw `
-HauoliBeachfront_MapScripts::
-	.byte 0
-`
+mapscripts HauoliBeachfront_MapScripts {
+
+}
+
+// ------------------------------------------ EVENT SCRIPTS ---------------------------------------
+
+script HauoliBeachfront_Event_CorsolaAndMareanie
+{
+	lock
+
+	// Corsola and Mareanie fighting
+	applymovement(LOCALID_HAUOLI_BEACHFRONT_CORSOLA, moves(walk_in_place_slow_right * 3, step_end))
+	waitmovement(0)
+	setspeaker("Corsola")
+    playmoncry(SPECIES_CORSOLA, CRY_MODE_NORMAL)
+    msgbox(format("So-sou..."))
+    waitmoncry
+    closemessage
+	delay(10)
+	applymovement(LOCALID_HAUOLI_BEACHFRONT_MAREANIE, moves(jump_in_place_left * 2, step_end))
+	waitmovement(0)
+	setspeaker("Mareanie")
+    playmoncry(SPECIES_MAREANIE, CRY_MODE_NORMAL)
+    msgbox(format("Re-aie!!"))
+    waitmoncry
+    closemessage
+	delay(10)
+
+	// Swimmer asks you to protect Corsola
+	emote(16, EMOTE_EXCLAM)
+	applymovement(16, Common_Movement_FaceRight)
+	waitmovement(0)
+	setspeaker("Swimmer")
+	msgbox(format("Hey, that's my sister's {COLOR BLUE}Corsola{COLOR DARK_GRAY}! Is that {COLOR BLUE}Mareanie{COLOR DARK_GRAY} attacking it?!\pYou're a Trainer, right? Please, you have to get rid of that {COLOR BLUE}Mareanie{COLOR DARK_GRAY}!"))
+	closemessage
+	delay(10)
+
+	// Player approaches Mareanie
+	hidefollower
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+	switch(var(VAR_TEMP_1))
+	{
+		case 31:
+			applymovement(LOCALID_PLAYER, moves(walk_down, walk_right * 2, face_up, step_end))
+		case 32:
+			if(var(VAR_TEMP_2) == 37)
+			{
+				applymovement(LOCALID_PLAYER, moves(walk_left, walk_down * 2, walk_right * 2, face_up, step_end))
+			}
+			else
+			{
+				applymovement(LOCALID_PLAYER, moves(walk_right, face_up, step_end))
+			}
+		case 33:
+			if(var(VAR_TEMP_2) == 37)
+			{
+				applymovement(LOCALID_PLAYER, moves(walk_right, walk_down * 2, walk_left, face_up, step_end))
+			}
+		case 34:
+			applymovement(LOCALID_PLAYER, moves(walk_down, walk_left, face_up, step_end))
+		default:
+			applymovement(LOCALID_PLAYER, moves(walk_left * 2, face_up, step_end))
+	}
+	waitmovement(0)
+	applymovement(LOCALID_HAUOLI_BEACHFRONT_MAREANIE, Common_Movement_FaceDown)
+	waitmovement(0)
+	createplayerfieldmugshot(EMOTION_INTENSE)
+	msgbox(format("{SPEAKER NAME_PLAYER}Woah! Wild Pokémon fighting is one thing, but I can't let someone's {COLOR BLUE}Corsola{COLOR DARK_GRAY} get hurt. Hold on!"))
+	closemessage
+
+	// Battle Mareanie!
+	setflag(FLAG_PREVENT_RUNNING)
+	setwildbattle(SPECIES_MAREANIE, 10)
+    dowildbattle
+	clearflag(FLAG_PREVENT_RUNNING)
+	setflag(FLAG_HIDE_MAREANIE_HAUOLI_BEACHFRONT)
+	removeobject(LOCALID_HAUOLI_BEACHFRONT_MAREANIE)
+
+	// Have a Picnicker appear afterwards to collect the Corsola and thank you,
+	// giving you the TM Protect
+	clearflag(FLAG_HIDE_PICNICKER_HAUOLI_BEACHFRONT)
+	addobject(20)
+	delay(30)
+	applymovement(20, moves(walk_down * 2, walk_right, walk_down * 3, walk_right, step_end))
+	waitmovement(0)
+	applymovement(LOCALID_HAUOLI_BEACHFRONT_CORSOLA, Common_Movement_FaceLeft)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+	waitmovement(0)
+	setspeaker("Picnicker")
+	msgbox(format("Shniff... {COLOR BLUE}Corsola{COLOR DARK_GRAY}, you're really okay!\p I just left to buy you a Berry Juice, but I heard my brother shouting, and I got scared..."))
+	closemessage
+	delay(10)
+	applymovement(20, moves(walk_down, walk_right, step_end))
+	waitmovement(0)
+	setspeaker("Picnicker")
+	msgbox(format("In the wild, {COLOR BLUE}Mareanie{COLOR DARK_GRAY} break off and eat pieces of lone {COLOR BLUE}Corsola{COLOR DARK_GRAY}. It must've been waiting behind those rocks...\pThank you so much for helping my Pokémon. Please, take this!"))
+	closemessage
+	giveitem(ITEM_TM_PROTECT)
+	closemessage
+	delay(10)
+	setspeaker("Picnicker")
+	msgbox(format("I'll take {COLOR BLUE}Corsola{COLOR DARK_GRAY} to the Pokémon Center now. Goodbye!"))
+	closemessage
+	delay(10)
+	applymovement(20, moves(walk_left * 6, step_end))
+	applymovement(LOCALID_HAUOLI_BEACHFRONT_CORSOLA, moves(walk_down, walk_left * 5, step_end))
+	delay(60)
+	fadescreenswapbuffers(FADE_TO_BLACK)
+	delay(30)
+	setflag(FLAG_HIDE_CORSOLA_HAUOLI_BEACHFRONT)
+	setflag(FLAG_HIDE_PICNICKER_HAUOLI_BEACHFRONT)
+	removeobject(20)
+	removeobject(LOCALID_HAUOLI_BEACHFRONT_CORSOLA)
+	delay(30)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+	delay(20)
+	releaseall
+	end
+}
+
+
+// ------------------------------------------ NPC SCRIPTS ---------------------------------------
+
+script HauoliBeachfront_NPC_PKMNBreederWithPikachu
+{
+	lock
+	faceplayer
+	setspeaker("{PKMN} Breeder")
+	msgbox(format("There are hidden spots of diversity around Alola. Always look for little gaps between trees for secret areas!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_Pokemon_Pikachu
+{
+	lock
+    faceplayer
+    setspeaker("Pikachu")
+    playmoncry(SPECIES_PIKACHU, CRY_MODE_NORMAL)
+    msgbox(format("Pi-pi!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_NPC_DancerByBeach
+{
+	lock
+	faceplayer
+	setspeaker("Dancer")
+	msgbox(format("Alola! In this region, we greet people by saying Alola!"))
+	closemessage
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Alola!!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_NPC_PunkRocker
+{
+	lock
+	faceplayer
+	setspeaker("Punk Rocker")
+	msgbox(format("Hau'oli City is, like, the biggest city anywhere in Alola. Imagine everyone cheering for my rock shows!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_NPC_Biker
+{
+	lock
+	faceplayer
+	setspeaker("Biker")
+	msgbox(format("Turns out there's a group of {COLOR BLUE}Cyclizar{COLOR DARK_GRAY} living on Melemele Island. Maybe I won't need my bike anymore!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_Pokemon_Cyclizar
+{
+	lock
+    faceplayer
+    setspeaker("Cyclizar")
+    playmoncry(SPECIES_CYCLIZAR, CRY_MODE_NORMAL)
+    msgbox(format("Khiss-!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_NPC_OldWoman
+{
+	lock
+	faceplayer
+	setspeaker("Old Woman")
+	msgbox(format("These are Taro crops, descended from those brought by the first settlers of Alola. The soil around here is still wet enough to grow some."))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_NPC_VeteranF
+{
+	lock
+	faceplayer
+	setspeaker("Veteran")
+	msgbox(format("Enjoy Hau'oli! Enjoy Alola!\nAnd most of all, enjoy Pokémon!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_NPC_ManStudyingMoves
+{
+	lock
+	faceplayer
+	setspeaker("Man")
+	msgbox(format("If you want to study Pokémon moves, I'd have a look at those unbelievable moves that the island Kahuna's Pokémon use!\pThere's gotta be some kinda secret to why they're so amazingly strong."))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_NPC_SwimmerWithSlowpoke
+{
+	lock
+	faceplayer
+	setspeaker("Swimmer")
+	msgbox(format("{COLOR BLUE}Slowpoke{COLOR DARK_GRAY} really has its own tempo, huh? It never gets confused... or takes a hint. I don't wanna play right now, {COLOR BLUE}Slowpoke{COLOR DARK_GRAY}!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_Pokemon_Slowpoke
+{
+	lock
+    faceplayer
+    setspeaker("Slowpoke")
+    playmoncry(SPECIES_SLOWPOKE, CRY_MODE_NORMAL)
+    msgbox(format("Slo-o-ow..."))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_Pokemon_Pyukumuku
+{
+	lock
+    faceplayer
+    setspeaker("Pyukumuku")
+    playmoncry(SPECIES_PYUKUMUKU, CRY_MODE_NORMAL)
+    msgbox(format("Pyu-u!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_NPC_SightseersWithPyukumuku
+{
+	lock
+	applymovement(14, moves(walk_in_place_right * 2, step_end))
+	waitmovement(0)
+	setspeaker("Sightseer 1")
+	msgbox(format("Look! Catch!"))
+	closemessage
+	delay(10)
+	emote(15, EMOTE_EXCLAM)
+	delay(10)
+	setspeaker("Sightseer 2")
+	msgbox(format("Would you stop?! I know they're squishy, but that's no reason to throw {COLOR BLUE}Pyukumuku{COLOR DARK_GRAY} at me!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_NPC_SwimmerWithSister
+{
+	lock
+	faceplayer
+	setspeaker("Swimmer")
+	if(flag(FLAG_HIDE_CORSOLA_HAUOLI_BEACHFRONT))
+	{
+		msgbox(format("Thanks again for saving my sister's {COLOR BLUE}Corsola{COLOR DARK_GRAY}. I don't have any Pokémon, but she's grown up side-by-side with it."))
+	}
+	else
+	{
+		msgbox(format("Yawn... My sister sure loves her {COLOR BLUE}Corsola{COLOR DARK_GRAY}...\p Hm? Where'd she go?"))
+	}
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_NPC_Fisherman
+{
+	lock
+	faceplayer
+	setspeaker("Fisherman")
+	msgbox(format("The {COLOR BLUE}Wingull{COLOR DARK_GRAY} fly...\nAnd their droppings fall...\pAh, the beauty of nature!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_NPC_BeachShopkeep
+{
+	lock
+    setspeaker("Farmer")
+	message(format("Welcome to our Farmer's Market! How can I help ya?"))
+	waitmessage
+	pokemart(Mart_HauoliBeachfrontMarket)
+    setspeaker("Farmer")
+	msgbox("Come back soon!")
+	release
+    end
+}
+
+mart Mart_HauoliBeachfrontMarket {
+	ITEM_BERRY_JUICE
+	ITEM_CASTELIACONE
+	ITEM_BIG_MALASADA
+}
+
+script HauoliBeachfront_Pokemon_Mareep
+{
+	lock
+    faceplayer
+    setspeaker("Mareep")
+    playmoncry(SPECIES_MAREEP, CRY_MODE_NORMAL)
+    msgbox(format("Baah!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_Pokemon_Crabrawler
+{
+	lock
+    faceplayer
+    setspeaker("Crabrawler")
+    playmoncry(SPECIES_CRABRAWLER, CRY_MODE_NORMAL)
+    msgbox(format("Ktch ktch!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_NPC_FarmerByStore
+{
+	lock
+	faceplayer
+	setspeaker("Farmer")
+	msgbox(format("If you're new, you should stop by the Alola Tourist Bureau. They'll help you find where to go."))
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_NPC_Pilot
+{
+	lock
+	faceplayer
+	setspeaker("Pilot")
+	msgbox(format("I come by Big Poppa's Surf Shop after every flight. It's silly, but I came here as a kid, so I still like it."))
+	closemessage
+	release
+	end
+}
+
+// ---------------------------------- SIGN SCRIPTS --------------------------------
+
+script HauoliBeachfront_Sign_HauoliCity
+{
+	lock
+	msgbox(format("Hau'oli City\nA City Overflowing with Gentle Joy."), MSGBOX_SIGN)
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_Sign_HauoliFarmersMarket
+{
+	lock
+	msgbox(format("Hau'oli City Farmer's Market\nGoods Made by Us!"), MSGBOX_SIGN)
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_Sign_Taro
+{
+	lock
+	msgbox(format("Alola's First Crops\pTaro roots were grown by the first settlers in Alola, becoming a staple food source for the budding communities.\p Hundreds of years ago, these crops helped feed a prosperous village on the Melemele coastline, which one day grew to become Hau'oli City!"), MSGBOX_SIGN)
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_Sign_BigPoppasSurfShop
+{
+	lock
+	msgbox(format("Big Poppa's Surf Shop"), MSGBOX_SIGN)
+	closemessage
+	release
+	end
+}
+
+script HauoliBeachfront_Sign_TouristBureau
+{
+	lock
+	msgbox(format("Alola Tourist Bureau\nLearn About Our Region!"), MSGBOX_SIGN)
+	closemessage
+	release
+	end
+}

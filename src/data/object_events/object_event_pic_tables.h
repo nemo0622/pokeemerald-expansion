@@ -1663,6 +1663,18 @@ static const struct SpriteFrameImage sPicTable_Alola_Scientist_M[] = {
     overworld_ascending_frames(gObjectEventPic_Alola_Scientist_M, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Alola_Surfer_Land[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Surfer_Land, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Surfer[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Surfer, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Mart_Employee[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Mart_Employee, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Alola_Acerola[] = {
     overworld_ascending_frames(gObjectEventPic_Alola_Acerola, 2, 4),
 };
@@ -1709,4 +1721,28 @@ static const struct SpriteFrameImage sPicTable_Alola_Ryuki[] = {
 
 static const struct SpriteFrameImage sPicTable_Alola_Sophocles[] = {
     overworld_ascending_frames(gObjectEventPic_Alola_Sophocles, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Ship_1[] = {
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_1),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_1),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_1),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_1),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_1),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_1),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_1),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_1),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_1),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Ship_2[] = {
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_2),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_2),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_2),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_2),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_2),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_2),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_2),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_2),
+    obj_frame_tiles(gObjectEventPic_Alola_Ship_2),
 };

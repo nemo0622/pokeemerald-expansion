@@ -417,3 +417,9 @@ const u16 gMetatileAttributes_AlolaGenericBuilding[] = INCBIN_U16("data/tilesets
 
 const u16 gMetatiles_IkiTown[] = INCBIN_U16("data/tilesets/secondary/iki_town/metatiles.bin");
 const u16 gMetatileAttributes_IkiTown[] = INCBIN_U16("data/tilesets/secondary/iki_town/metatile_attributes.bin");
+
+const u16 gMetatiles_AlolaFancyBuilding[] = INCBIN_U16("data/tilesets/secondary/alola_fancy_building/metatiles.bin");
+const u16 gMetatileAttributes_AlolaFancyBuilding[] = INCBIN_U16("data/tilesets/secondary/alola_fancy_building/metatile_attributes.bin");
+
+const u16 gMetatiles_AlolaPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/metatiles.bin");
+const u16 gMetatileAttributes_AlolaPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/metatile_attributes.bin");

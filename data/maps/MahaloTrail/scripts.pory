@@ -15,6 +15,7 @@ script MahaloTrail_Script_HauCaughtByCorvisquire
     applymovement(1, Common_Movement_FaceDown)
     waitmovement(0)
     setspeaker("Hau")
+    createfieldmugshot(MUGSHOT_HAU, EMOTION_INTENSE)
     msgbox(format("{PLAYER}! This {COLOR BLUE}Corvisquire{COLOR DARK_GRAY} is givin' me a fight, and I don't have a Pokémon yet!\p Don't worry about me though, cuz. {COLOR GREEN}Lillie{COLOR DARK_GRAY}'s further on, and her Pokémon's in trouble! You gotta {COLOR GREEN}save her{COLOR DARK_GRAY}!"))
     closemessage
     applymovement(1, Common_Movement_FaceRight)
@@ -54,6 +55,7 @@ script MahaloTrail_Script_LillieNeedsPlayer
     applymovement(LOCALID_LILLIE_AT_BRIDGE, moves(jump_in_place_up * 2, face_up, step_end))
     waitmovement(0)
     setspeaker("Lillie")
+    createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_SAD)
     msgbox(format("Sniff... {COLOR BLUE}Nebbie{COLOR DARK_GRAY}!! Just hold on!!"))
     closemessage
     delay(15)
@@ -64,6 +66,7 @@ script MahaloTrail_Script_LillieNeedsPlayer
     delay(10)
     bufferspeciesname(STR_VAR_1, VAR_STARTER_MON)
     setspeaker("Lillie")
+    createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_SAD)
     msgbox(format("Oh? You must be Hau's new friend, the one that got a Pokémon early...\p H-help... Please, you have to save {COLOR BLUE}Nebbie{COLOR DARK_GRAY}! It ran ahead of me and Hau, and now it's being attacked!\p I'll heal your {STR_VAR_1}, so... Please!"))
     closemessage
     applymovement(LOCALID_LILLIE_AT_BRIDGE, Common_Movement_FaceUp)
@@ -84,6 +87,7 @@ script MahaloTrail_Script_LillieBlocksLeaving
     waitmovement(0)
     delay(10)
     setspeaker("Lillie")
+    createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_SAD)
     msgbox(format("P-please! {COLOR BLUE}Nebbie{COLOR DARK_GRAY} won't last long on that bridge, you have to help it!"))
     closemessage
     applymovement(LOCALID_LILLIE_AT_BRIDGE, moves(walk_up * 2, face_up, step_end))
@@ -118,7 +122,8 @@ script MahaloTrail_Script_PlayerSavesCosmog
     msgbox(format("Shk-AWW!!"))
     waitmoncry
     closemessage
-    msgbox(format("The wild {COLOR BLUE}Corviknight{COLOR DARK_GRAY} is enraged!"))
+    createplayerfieldmugshot(EMOTION_INTENSE)
+    msgbox(format("{SPEAKER NAME_PLAYER}Woah, the wild {COLOR BLUE}Corviknight{COLOR DARK_GRAY} is enraged!"))
     closemessage
 
     setflag(FLAG_PREVENT_RUNNING)
@@ -139,7 +144,8 @@ script MahaloTrail_Script_PlayerSavesCosmog
     msgbox(format("KYAAA!!"))
     waitmoncry
     closemessage
-    msgbox(format("The wild {COLOR BLUE}Corviknight{COLOR DARK_GRAY} is still on a rampage!"))
+    createplayerfieldmugshot(EMOTION_SAD)
+    msgbox(format("{SPEAKER NAME_PLAYER}{COLOR BLUE}Corviknight{COLOR DARK_GRAY} is still on a rampage! What do I do now?!"))
     closemessage
     delay(10)
 
@@ -152,7 +158,8 @@ script MahaloTrail_Script_PlayerSavesCosmog
     msgbox(format("Bwh... Bweeh!!"))
     waitmoncry
     closemessage
-    msgbox(format("{COLOR BLUE}Nebbie{COLOR DARK_GRAY} is emitting a bright light...!"))
+    createplayerfieldmugshot(EMOTION_INTENSE)
+    msgbox(format("{SPEAKER NAME_PLAYER}That Pokémon, uh, {COLOR BLUE}Nebbie{COLOR DARK_GRAY}... It's emitting a bright light!"))
     closemessage
     delay(10)
 
@@ -176,6 +183,7 @@ script MahaloTrail_Script_PlayerSavesCosmog
     emote(LOCALID_LILLIE_AT_BRIDGE, EMOTE_EXCLAM)
     delay(10)
     setspeaker("Lillie")
+    createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_INTENSE)
     msgbox(format("{COLOR BLUE}Nebbie{COLOR DARK_GRAY}, did you try to use your powers again? You couldn't move for ages last time...\p I couldn't see anything through the flash of light. How did you get back here?!"))
     closemessage
     delay(10)
@@ -197,6 +205,7 @@ script MahaloTrail_Script_PlayerSavesCosmog
     applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)
     setspeaker("Hau")
+    createfieldmugshot(MUGSHOT_HAU)
     msgbox(format("Tutu Hala taught me... This is {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY}, a Legendary Pokémon!\p Woah, did it save you and {COLOR BLUE}Nebbie{COLOR DARK_GRAY} on the bridge?!"))
     closemessage
     delay(10)
@@ -214,6 +223,7 @@ script MahaloTrail_Script_PlayerSavesCosmog
     applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
     waitmovement(0)
     setspeaker("Hau")
+    createfieldmugshot(MUGSHOT_HAU)
     msgbox(format("Aie! It flew away so fast!\p {PLAYER}, let's bring Lillie back to Iki Town. Hala and Kukui will know what to do!"))
     closemessage
     
@@ -243,6 +253,7 @@ script MahaloTrail_NPC_Hau
     lock
     faceplayer
     setspeaker("Hau")
+    createfieldmugshot(MUGSHOT_HAU, EMOTION_INTENSE)
     msgbox(format("I'll be fine, cuz! {COLOR GREEN}Lillie{COLOR DARK_GRAY}'s further up the trail, and it sounds like she's in trouble! Look for her floppy white hat!"))
     closemessage
     applymovement(VAR_LAST_TALKED, Common_Movement_FaceRight)
@@ -271,6 +282,7 @@ script MahaloTrail_NPC_LillieAtBridge
     lock
     faceplayer
     setspeaker("Lillie")
+    createfieldmugshot(MUGSHOT_LILLIE_HAT, EMOTION_SAD)
     msgbox(format("You have to save {COLOR BLUE}Nebbie{COLOR DARK_GRAY}! It won't last long with those Pokémon attacking it!"))
     closemessage
     applymovement(LOCALID_LILLIE_AT_BRIDGE, Common_Movement_FaceUp)
@@ -320,7 +332,7 @@ script MahaloTrail_NPC_Woman
 script MahaloTrail_Sign_BridgeWarning
 {
     lock
-    msgbox(format("{COLOR RED}WARNING!{COLOR DARK_GRAY}\n Wooden bridge is unstable!\p 50 foot drop! Only cross with Kahuna Hala's supervision!"))
+    msgbox(format("{COLOR RED}WARNING!{COLOR DARK_GRAY}\n Wooden bridge is unstable!\p 50 foot drop! Only cross with Kahuna Hala's supervision!"), MSGBOX_SIGN)
     closemessage
     release
     end

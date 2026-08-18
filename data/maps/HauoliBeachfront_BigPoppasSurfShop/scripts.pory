@@ -1,0 +1,87 @@
+mapscripts HauoliBeachfront_BigPoppasSurfShop_MapScripts {}
+
+script HauoliBeachfront_BigPoppasSurfShop_NPC_BigPoppa
+{
+    lock
+    faceplayer
+    setspeaker("Big Poppa")
+    
+    // before anything else, if the quest is completed, just do a little dialogue line and end early
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_BIG_POPPAS_FISH)
+    if(var(VAR_RESULT) == 1) // quest is complete already
+    {
+        msgbox(format("G'day, mate! You're always welcome in the Surf Shop!"))
+        closemessage
+        release
+        end
+    }
+
+    // by getting here, we know the quest isn't complete. Do different things based on the active status of the quest!
+    questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_BIG_POPPAS_FISH)
+    if(var(VAR_RESULT) == 0) // quest not active yet! Activate it!
+    {
+        msgbox(format("G'day, mate! Welcome to the Surf Shop!\pSay, you look more like a Trainer than an average surfer. Maybe you can help me out.\pY'see, people talk about {COLOR BLUE}Wishiwashi{COLOR DARK_GRAY} like it's a massive fish, but I only know them as little fellas!\pIf you could show me a {COLOR GREEN}complete Pokédex page{COLOR DARK_GRAY} for {COLOR BLUE}Wishiwashi{COLOR DARK_GRAY}, I'll figure out the truth of this fish!"))
+        closemessage
+
+        delay(20)
+        startquest(QUEST_BIG_POPPAS_FISH)
+    }
+    else
+    {
+        msgbox(format("G'day, mate! You have a Pokédex page for me?"))
+        closemessage
+
+        // Check Quest completion
+        getcaughtmon(SPECIES_WISHIWASHI)
+        delay(30)
+
+        if(var(VAR_RESULT) == FALSE)
+        {
+            setspeaker("Big Poppa")
+            msgbox(format("Hmm, doesn't look like it.\pShow me a {COLOR GREEN}complete Pokédex page{COLOR DARK_GRAY} for {COLOR BLUE}Wishiwashi{COLOR DARK_GRAY} so I can see how big they really get!"))
+            closemessage
+            release
+            end
+        }
+        else
+        {
+            emote(VAR_LAST_TALKED, EMOTE_QUESTION)
+            setspeaker("Big Poppa")
+            msgbox(format("Eh? So {COLOR BLUE}Wishiwashi{COLOR DARK_GRAY} are small by themselves, but group together to grow stronger? There's a lesson in that, yeah!\pThanks for teaching me, mate. Here's a little somethin' for the trouble."))
+            closemessage
+            
+            delay(5)
+            giveitem(ITEM_QUICK_BALL, 5)
+            closemessage
+
+            delay(20)
+            completequest(QUEST_BIG_POPPAS_FISH)
+        }
+    }
+    release
+    end
+}
+
+script HauoliBeachfront_BigPoppasSurfShop_Pokemon_Cramorant
+{
+	lock
+    faceplayer
+    setspeaker("Cramorant")
+    playmoncry(SPECIES_CRAMORANT, CRY_MODE_NORMAL)
+    msgbox(format("Skwaw! G-lulp!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliBeachfront_BigPoppasSurfShop_NPC_Surfer
+{
+    lock
+    faceplayer
+    setspeaker("Surfer")
+    msgbox(format("'Sup, dude? Big Poppa lets me come in and say hey to the {COLOR BLUE}Pyukumuku{COLOR DARK_GRAY}.\pMost people think they're annoying, but I have a soft spot for them."))
+    closemessage
+    release
+    end
+}

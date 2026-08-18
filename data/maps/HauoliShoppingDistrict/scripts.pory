@@ -1,4 +1,288 @@
-raw `
-HauoliShoppingDistrict_MapScripts::
-	.byte 0
-`
+mapscripts HauoliShoppingDistrict_MapScripts {
+
+}
+
+// ------------------------------- Event Scripts -----------------------------
+
+script HauoliShoppingDistrict_Trigger_BlockGrass
+{
+	lockall
+	emote(16, EMOTE_EXCLAM)
+	delay(10)
+	applymovement(16, moves(walk_left, face_up, step_end))
+	waitmovement(0)
+	delay(10)
+	setspeaker("Picnicker")
+	msgbox(format("Hold it right there! I'm looking for footprints from rare Pokémon. I can't have you trampling my discoveries!\p Just give me a few more minutes, I'm sure I'll find something... But please, just walk around the city for now!"))
+	closemessage
+	delay(10)
+	applymovement(16, Common_Movement_WalkRight)
+	waitmovement(0)
+	applymovement(LOCALID_PLAYER, Common_Movement_WalkUp)
+	waitmovement(0)
+	release
+	end
+}
+
+script HauoliShoppingDistrict_Event_HauOutsideMalasadaShop
+{
+	lockall
+	emote(17, EMOTE_EXCLAM)
+	delay(10)
+	applymovement(17, moves(walk_in_place_left * 2, face_left, step_end))
+	waitmovement(0)
+	createfieldmugshot(MUGSHOT_HAU)
+	setspeaker("Hau")
+	msgbox(format("Howzit, {PLAYER}!\nIf you're looking for good eats, you've found 'em!"))
+	closemessage
+	
+	// Hau shows player Malasada shop
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+	switch(var(VAR_TEMP_2))
+	{
+		case 33:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_down, walk_right * 2, face_up, step_end))
+		case 34:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 4, face_up, step_end))
+		case 35:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 4, walk_up, face_up, step_end))
+		case 36:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 4, walk_up * 2, face_up, step_end))
+		case 37:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 4, walk_up * 3, face_up, step_end))
+		default:
+			applymovement(LOCALID_PLAYER, moves(walk_left * 2, face_up, step_end))
+	}
+	waitmovement(0)
+	applymovement(17, Common_Movement_FaceDown)
+	waitmovement(0)
+	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU)
+	msgbox(format("This is the best Malasada Shop on Melemele Island. Malasadas are delicious, and they help you get along better with your Pokémon!\pWho could resist giving their Pokémon a few malasadas, eh? They're just so cute!"))
+	closemessage
+
+	// Team Skull confrontation!
+	delay(20)
+	setspeaker("???")
+	msgbox(format("Yo, yo, yo, check it!\p Whenever, wherever we meet you, Team Skull don't even greet you!"))
+	closemessage
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
+	emote(LOCALID_PLAYER, EMOTE_QUESTION)
+	delay(20)
+	applymovement(LOCALID_PLAYER, moves(walk_down, face_right, step_end))
+	applymovement(17, moves(walk_down, face_right, step_end)) // 17 = Hau
+	applymovement(18, moves(walk_slow_left * 7, step_end)) // 18 = Team Skull F
+	applymovement(19, moves(walk_slow_left * 7, step_end)) // 19 = Team Skull M
+	waitmovement(0)
+	delay(10)
+	// NOTE: Player now at x44 y35, Hau is one tile up at y34
+	setspeaker("Grunt A")
+	msgbox(format("Yo, you wanna throw us a bone and hand over those Island Challenge Amulets?"))
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}Team... Skull? Why would we do that?"))
+	closemessage
+	applymovement(17, Common_Movement_FaceDown)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
+	createfieldmugshot(MUGSHOT_HAU, EMOTION_INTENSE)
+	setspeaker("Hau")
+	msgbox(format("Team Skull is a nasty group with members across Alola. All they do is steal Totem Stickers and people's Pokémon to get in the way of other people's Island Challenges!"))
+	closemessage
+	applymovement(17, Common_Movement_FaceRight)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
+	applymovement(19, moves(walk_in_place_slow_left * 2, step_end))
+	waitmovement(0)
+	setspeaker("Grunt B")
+	msgbox(format("You know it!\p We hate the Island Challenge, yo! And everyone fool enough to try it!"))
+	closemessage
+	applymovement(18, moves(walk_in_place_slow_left * 2, step_end))
+	waitmovement(0)
+	setspeaker("Grunt A")
+	msgbox(format("Yo, let's check these fools."))
+	closemessage
+	createfieldmugshot(MUGSHOT_HAU, EMOTION_INTENSE)
+	setspeaker("Hau")
+	msgbox(format("Come on, {PLAYER}! Let's teach these Team Skull jerks a lesson!"))
+	closemessage
+
+	// TODO: Battle Team Skull grunt!
+
+	// Skull Grunts run off
+	delay(20)
+	applymovement(19, moves(walk_in_place_slow_left * 2, step_end))
+	waitmovement(0)
+	setspeaker("Grunt B")
+	msgbox(format("No fair! I was playing a different game!"))
+	closemessage
+	applymovement(18, moves(walk_in_place_slow_down * 2, step_end))
+	waitmovement(0)
+	setspeaker("Grunt A")
+	msgbox(format("Let's get up out this port, B! Nobody has to know about this!"))
+	closemessage
+	applymovement(18, Common_Movement_FaceLeft)
+	waitmovement(0)
+	setspeaker("Grunt A")
+	msgbox(format("We don't need your whack little Amulet anyway! Wouldn't even take 'em if you gave 'em to us!"))
+	closemessage
+	delay(10)
+	applymovement(19, moves(walk_down, walk_left * 3, walk_up, walk_left * 6, step_end))
+	applymovement(18, moves(walk_up, walk_left * 3, walk_down, walk_left * 6, step_end))
+	waitmovement(0)
+	applymovement(17, Common_Movement_FaceDown)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceUp)
+	waitmovement(0)
+	setspeaker("Hau")
+	createfieldmugshot(MUGSHOT_HAU)
+	msgbox(format("Those Team Skull jerks really must have too much time on their hands, yeah?\p But stopping other people from doing the Island Challenge won't magically mean they finished theirs, you know?"))
+	waitmessage
+	createfieldmugshot(MUGSHOT_HAU, EMOTION_LAUGH)
+	setspeaker("Hau")
+	msgbox(format("I already went down to the Marina and screamed out over the ocean, 'Watch out world! Someday I'm gonna even beat my old gramps in a battle!'"))
+	waitmessage
+	createfieldmugshot(MUGSHOT_HAU)
+	setspeaker("Hau")
+	msgbox(format("Maybe you should go to the Marina and do the same! It's just south of here. See you around!"))
+	closemessage
+	applymovement(17, moves(walk_left * 9, step_end))
+	waitmovement(0)
+
+	setflag(FLAG_DID_MALASADA_SHOP_EVENT)
+	removeobject(17)
+	removeobject(18)
+	removeobject(19)
+
+	releaseall
+	end
+}
+
+// ------------------------------- NPC Scripts ------------------------------
+
+script HauoliShoppingDistrict_NPC_BackpackerPlayingCards
+{
+	lock
+	faceplayer
+	setspeaker("Backpacker")
+	msgbox(format("Have you heard of the {COLOR BLUE}Pokémon TCG{COLOR DARK_GRAY}? It's a card game where you battle Pokémon, and it's taking the Alola Region by storm!"))
+	closemessage
+	applymovement(13, Common_Movement_FaceRight)
+	waitmovement(0)
+	setspeaker("Backpacker")
+	msgbox(format("If you want to play, just {COLOR GREEN}interact with this table{COLOR DARK_GRAY} with checkered spots. Most large towns in Alola probably have them by now."))
+	closemessage
+	delay(10)
+	emote(13, EMOTE_EXCLAM)
+	delay(10)
+	applymovement(13, moves(walk_in_place_left * 2, step_end))
+	waitmovement(0)
+	setspeaker("Backpacker")
+	msgbox(format("Oh, but you'll need some {COLOR BLUE}TCG Cards{COLOR DARK_GRAY} first! You can buy some at the {COLOR BLUE}TCG Shop{COLOR DARK_GRAY} in the Hau'oli Shopping Center."))
+	closemessage
+	applymovement(13, Common_Movement_FaceRight)
+	waitmovement(0)
+
+	delay(20)
+	createplayerfieldmugshot(EMOTION_SAD)
+	msgbox(format("{SPEAKER NAME_PLAYER}Wow, she's really into this... That better not have been some paid promotion!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_VeteranWandering
+{
+	lock
+	faceplayer
+	setspeaker("Veteran")
+	msgbox(format("Between the Beachfront and the Shopping District, Hau'oli City is way too big to see it all in one visit."))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_SilkScarfWoman
+{
+	lock
+	faceplayer
+	setspeaker("Old Woman")
+	if(flag(FLAG_GOT_SILK_SCARF))
+	{
+		msgbox(format("That item, the Silk Scarf, increases the power of Normal-type moves. I'm sure that's helpful early in your adventure."))
+	}
+	else
+	{
+		msgbox(format("Hm? Oh, dearie, your Pokémon could use some fashion. Give one of them this!"))
+		closemessage
+		giveitem(ITEM_SILK_SCARF)
+		setflag(FLAG_GOT_SILK_SCARF)
+		setspeaker("Old Woman")
+		msgbox(format("The Silk Scarf increases the power of Normal-type moves. I'm sure that's helpful early in your adventure."))
+	}
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_PicnickerInGrass
+{
+	lock
+	faceplayer
+	setspeaker("Picnicker")
+	msgbox(format("You won't believe it! I found a few footprints left by wild {COLOR BLUE}Mankey{COLOR DARK_GRAY}!\pThey normally live in the rainforests of other islands... Maybe a few stowed away on a ship here?"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_LadyWithMalasada
+{
+	lock
+	faceplayer
+	setspeaker("Lady")
+	msgbox(format("There was a young man here earlier shouting about this Malasada shop. I decided to try one, and now it's my favorite food spot in Hau'oli City!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_WomanNearMarina
+{
+	lock
+	faceplayer
+	setspeaker("Woman")
+	msgbox(format("Lots of goods come and go through the Hau'oli City Marina. That's why we have premier access to rare items!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_BattleGirlOnStreet
+{
+	lock
+	faceplayer
+	setspeaker("Battle Girl")
+	msgbox(format("Ilima is the first Trial Captain for Trainers on Melemele Island. I heard he uses Normal-type Pokémon... Maybe my Fighting-types will help during his Trial!"))
+	closemessage
+	release
+	end
+}
+
+// --------------------------------- Sign Scripts ----------------------------
+
+script HauoliBeachfront_Sign_HauoliShoppingCenter
+{
+	lock
+	msgbox(format("Hau'oli City Shopping Center\nFor All Your Shopping Needs!"), MSGBOX_SIGN)
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_Sign_CityHall
+{
+	lock
+	msgbox(format("Hau'oli City Hall\n Serving the City's Every Need!"), MSGBOX_SIGN)
+	closemessage
+	release
+	end
+}

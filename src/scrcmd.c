@@ -3480,16 +3480,16 @@ bool8 ScrCmd_subquestmenu(struct ScriptContext *ctx)
     switch (caseId)
     {
         case QUEST_MENU_COMPLETE_QUEST:
-            QuestMenu_GetSetSubquestState(parentId ,FLAG_SET_COMPLETED,childId);
+            QuestMenu_GetSetSubquestState(parentId, FLAG_SET_COMPLETED, childId);
             break;
         case QUEST_MENU_CHECK_COMPLETE:
-            if (QuestMenu_GetSetSubquestState(parentId ,FLAG_GET_COMPLETED,childId))
+            if (QuestMenu_GetSetSubquestState(parentId, FLAG_GET_COMPLETED, childId))
                 gSpecialVar_Result = TRUE;
             else
                 gSpecialVar_Result = FALSE;
             break;
         case QUEST_MENU_BUFFER_QUEST_NAME:
-            QuestMenu_CopySubquestName(gStringVar1,parentId,childId);
+            QuestMenu_CopySubquestName(gStringVar1, parentId, childId);
             break;
     }
 

@@ -14,13 +14,14 @@ script HauoliOutskirts_PlayersHouse_IntroEvent
 	applymovement(LOCALID_MOM, HauoliOutskirts_PlayersHouse_MomApproachPlayersRoom)
 	waitmovement(0)
 
+	createfieldmugshot(MUGSHOT_MOM)
 	setspeaker("Mom")
 	msgbox(format("Ehehe, sorry about Meowth, {PLAYER}! She's been bouncing around the house like a Hoppip in a hurricane.\p Looks like you finished your video call with Professor Burnet! You should go out and {COLOR GREEN}talk to your Grandpa Samson{COLOR DARK_GRAY} before you meet with the professors. He's just north of here in {COLOR GREEN}Iki Town{COLOR DARK_GRAY}. Try to stay out of the tall grass!"))
 	closemessage
 
 	// Start "Welcome to Alola" Quest!
-	startquest(QUEST_01)
-	completesubquest(QUEST_01, SUB_QUEST_1) // Unlocks ("completes") Subquest 1 - Find Samson Oak
+	startquest(QUEST_WELCOME_TO_ALOLA)
+	completesubquest(QUEST_WELCOME_TO_ALOLA, QUEST_WELCOME_TO_ALOLA_SUBQUEST_1) // Unlocks ("completes") Subquest 1 - Find Samson Oak
 
 	applymovement(LOCALID_MOM, HauoliOutskirts_PlayersHouse_MomReturnToChair)
 	waitmovement(0)
@@ -52,6 +53,7 @@ script HauoliOutskirts_PlayersHouse_Script_Mom
 	lock
 	faceplayer
 	setspeaker("Mom")
+	createfieldmugshot(MUGSHOT_MOM)
 	
 	switch(var(VAR_INTRO_STATE))
 	{
@@ -59,7 +61,11 @@ script HauoliOutskirts_PlayersHouse_Script_Mom
 			msgbox(format("Your Grandpa, Tutu Samson, is in {COLOR GREEN}Iki Town{COLOR DARK_GRAY} meeting with someone. It sounded like he wanted to talk to you!"))
 			closemessage
 		case 3: // Just got starter, headed to Iki Town
-			msgbox(format("Now that you've got a Pokémon, you should be able to reach {COLOR GREEN}Iki Town{COLOR DARK_GRAY} without a problem.\p Do you two want a rest?"), MSGBOX_YESNO)
+			msgbox(format("Now that you've got a Pokémon, you should be able to reach {COLOR GREEN}Iki Town{COLOR DARK_GRAY} without a problem."))
+			waitmessage
+			removefieldmugshot
+			setspeaker("Mom")
+			msgbox(format("Do you two want a rest?"), MSGBOX_YESNO)
 			closemessage
 			if(var(VAR_RESULT) == TRUE)
 			{
@@ -70,11 +76,17 @@ script HauoliOutskirts_PlayersHouse_Script_Mom
 				fadescreen(FADE_FROM_BLACK)
 				delay(15)
 				setspeaker("Mom")
+				createfieldmugshot(MUGSHOT_MOM)
 				msgbox(format("Hey, you two look like you're ready to go! Have fun out there!"))
 				closemessage
 			}
 		default: // After all tutorial stuff ends
-			msgbox(format("Alola and welcome home, {PLAYER}! Do you want to rest your Pokémon while you're here?"), MSGBOX_YESNO)
+			msgbox(format("Alola and welcome home, {PLAYER}!"))
+			waitmessage
+			removefieldmugshot
+			setspeaker("Mom")
+			msgbox(format("Do you want to rest your Pokémon while you're here?"), MSGBOX_YESNO)
+			closemessage
 			if(var(VAR_RESULT) == TRUE)
 			{
 				fadescreen(FADE_TO_BLACK)
@@ -84,12 +96,14 @@ script HauoliOutskirts_PlayersHouse_Script_Mom
 				fadescreen(FADE_FROM_BLACK)
 				delay(15)
 				setspeaker("Mom")
+				createfieldmugshot(MUGSHOT_MOM)
 				msgbox(format("Looks like your Pokémon are all healed. Have fun out there!"))
 				closemessage
 			}
 			else
 			{
 				setspeaker("Mom")
+				createfieldmugshot(MUGSHOT_MOM)
 				msgbox(format("Alright then, stay as long as you'd like. I'm glad you came to visit!"))
 				closemessage
 			}
@@ -173,6 +187,7 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 	}
 	applymovement(LOCALID_MOM, moves(walk_fast_down * 4, face_left, step_end))
 	waitmovement(0)
+	createfieldmugshot(MUGSHOT_MOM)
 	setspeaker("Mom")
 	msgbox(format("Who's THIS?! It's so CUTE!"))
 	closemessage
@@ -180,18 +195,25 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 	applymovement(3, moves(walk_down, face_right))
 	waitmovement(0)
 	bufferspeciesname(STR_VAR_1, VAR_STARTER_MON)
+	createfieldmugshot(MUGSHOT_SAMSON_OAK)
 	setspeaker("Grandpa Samson")
-	msgbox(format("That's {STR_VAR_1}, a rare Pokémon native to Alola...\pAnd it's {PLAYER}'s new Pokémon, too!"))
+	msgbox(format("That's {STR_VAR_1}, a rare Pokémon native to Alola..."))
+	waitmessage
+	createfieldmugshot(MUGSHOT_SAMSON_OAK, EMOTION_LAUGH)
+	setspeaker("Grandpa Samson")
+	msgbox(format("And it's {PLAYER}'s new Pokémon, too!"))
 	closemessage
 	applymovement(LOCALID_MOM, moves(jump_in_place_left))
 	waitmovement(0)
 	delay(5)
+	createfieldmugshot(MUGSHOT_MOM)
 	setspeaker("Mom")
 	msgbox(format("Maika'i loa, that's great! How'd this happen? I just sent {PLAYER} to get you from Iki Town, not get caught up in an adventure!"))
 	closemessage
 
 	applymovement(4, moves(walk_right * 4, walk_down, face_down, step_end))
 	waitmovement(0)
+	createfieldmugshot(MUGSHOT_PROF_KUKUI)
 	setspeaker("Prof. Kukui")
 	msgbox(format("{PLAYER} ran into some bad luck with a wild Yungoos on the way, but my Pokémon ran off to save them! With {STR_VAR_1} by their side, {PLAYER}'ll be safe from anything."))
 	closemessage
@@ -201,21 +223,41 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 	applymovement(LOCALID_PLAYER, moves(face_right))
 	applymovement(4, moves(face_left))
 	waitmovement(0)
+	createfieldmugshot(MUGSHOT_PROF_KUKUI, EMOTION_LAUGH)
 	setspeaker("Prof. Kukui")
 	msgbox(format("Oh! I got so lost in your Pokémon, I forgot to give you this!"))
 	closemessage
 	playfanfare(MUS_OBTAIN_TMHM)
-	message(format("{PLAYER} received the Rotom Dex!"))
+	createplayerfieldmugshot
+	message(format("{SPEAKER NAME_PLAYER}Woah, it's a {COLOR GREEN}Rotom Dex{COLOR DARK_GRAY}!"))
 	waitmessage
 	waitfanfare
 	closemessage
+	createfieldmugshot(MUGSHOT_PROF_KUKUI)
 	setspeaker("Prof. Kukui")
-	msgbox(format("That's not any old Pokédex, you know! The {COLOR GREEN}Rotom Dex{COLOR DARK_GRAY} is a companion for your journey.\p It'll keep track of what Pokémon you've caught, your Party, and even your {COLOR GREEN}Quests{COLOR DARK_GRAY}. If you ever have a question, ask Rotom - {COLOR BLUE}press Start to turn it on{COLOR DARK_GRAY}!"))
+	msgbox(format("That's right, cousin! The {COLOR GREEN}Rotom Dex{COLOR DARK_GRAY} is a companion for your journey."))
+	waitmessage
+	createfieldmugshot(MUGSHOT_PROF_KUKUI, EMOTION_OTHER)
+	setspeaker("Prof. Kukui")
+	msgbox(format("It'll keep track of Pokémon you've caught (like my precious {COLOR BLUE}Cutiefly{COLOR DARK_GRAY}!), your Party, and even your {COLOR GREEN}Quests{COLOR DARK_GRAY}."))
+	waitmessage
+	createfieldmugshot(MUGSHOT_PROF_KUKUI, EMOTION_NORMAL)
+	setspeaker("Prof. Kukui")
+	msgbox(format("If you ever have a question, ask Rotom - {COLOR BLUE}press Start to turn it on{COLOR DARK_GRAY}!"))
 	closemessage
+
+	// Start Pokédex challenge, unlocking all 4 subquests
+	startquest(QUEST_DEX_COMPLETION)
+	completesubquest(QUEST_DEX_COMPLETION, QUEST_DEX_COMPLETION_SUBQUEST_1)
+	completesubquest(QUEST_DEX_COMPLETION, QUEST_DEX_COMPLETION_SUBQUEST_2)
+	completesubquest(QUEST_DEX_COMPLETION, QUEST_DEX_COMPLETION_SUBQUEST_3)
+	completesubquest(QUEST_DEX_COMPLETION, QUEST_DEX_COMPLETION_SUBQUEST_4)
+	
 	delay(10)
 	applymovement(4, moves(walk_in_place_left * 2, step_end))
 	waitmovement(0)
 	delay(10)
+	createfieldmugshot(MUGSHOT_PROF_KUKUI)
 	setspeaker("Prof. Kukui")
 	msgbox(format("Awrite, you should be all set to explore safely! You should {COLOR GREEN}come to Iki Town{COLOR DARK_GRAY} for the {COLOR GREEN}Manalo Festival{COLOR DARK_GRAY} soon. Maybe you can meet the Kahuna there!"))
 	closemessage
@@ -242,7 +284,7 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 	fadescreen(FADE_FROM_BLACK)
 	delay(30)
 
-	startsubquest(QUEST_01, SUB_QUEST_2) // Unlocks ("completes") Subquest 2 - Follow Kukui to Iki Town
+	startsubquest(QUEST_WELCOME_TO_ALOLA, QUEST_WELCOME_TO_ALOLA_SUBQUEST_2) // Unlocks ("completes") Subquest 2 - Follow Kukui to Iki Town
 
 	clearflag(FLAG_OVERWORLD_ENCOUNTERS_DISABLED) // Enables Overworld Encounters
 	updatefollowingmon
@@ -255,7 +297,8 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 script HauoliOutskirts_PlayersHouse_Sign_TV
 {
 	lock
-	msgbox(format("Mom has a sitcom on from when she was a teen. Nostalgia is a powerful thing!"))
+	createplayerfieldmugshot(EMOTION_LAUGH)
+	msgbox(format("{SPEAKER NAME_PLAYER}Mom has a sitcom on from when she was a teen. Nostalgia is a powerful thing!"))
 	closemessage
 	release
 	end
@@ -269,11 +312,13 @@ script HauoliOutskirts_PlayersHouse_Sign_MeowthsFoodBowl
 	if(!flag(FLAG_GOT_AMULET_COIN_HAUOLI))
 	{
 		setflag(FLAG_GOT_AMULET_COIN_HAUOLI)
-		msgbox(format("Hm? There's something in the bowl."))
+		createplayerfieldmugshot
+		msgbox(format("{SPEAKER NAME_PLAYER}Hm? There's something in the bowl."))
 		closemessage
 		giveitem(ITEM_AMULET_COIN)
 		closemessage
-		msgbox(format("Mom is spoiling Meowth too much!"))
+		createplayerfieldmugshot(EMOTION_LAUGH)
+		msgbox(format("{SPEAKER NAME_PLAYER}Mom is spoiling Meowth too much!"))
 		closemessage
 	}
 	release

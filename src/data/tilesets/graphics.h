@@ -3105,3 +3105,41 @@ const u16 gTilesetPalettes_IkiTown[][16] =
 };
 
 const u32 gTilesetTiles_IkiTown[] = INCBIN_U32("data/tilesets/secondary/iki_town/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_AlolaFancyBuilding[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_fancy_building/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_AlolaFancyBuilding[] = INCBIN_U32("data/tilesets/secondary/alola_fancy_building/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_AlolaPokemonCenter[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/alola_pokemon_center/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_AlolaPokemonCenter[] = INCBIN_U32("data/tilesets/secondary/alola_pokemon_center/tiles.4bpp.lz");

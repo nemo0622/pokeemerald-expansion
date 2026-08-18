@@ -643,6 +643,9 @@ const u16 gTrainerPalette_Alola_Kupuna_M[] = INCGFX_U16("graphics/trainers/front
 const u32 gTrainerFrontPic_Alola_Kupuna_F[] = INCGFX_U32("graphics/trainers/front_pics/alola/kupuna_f.png", ".4bpp.smol");
 const u16 gTrainerPalette_Alola_Kupuna_F[] = INCGFX_U16("graphics/trainers/front_pics/alola/kupuna_f.png", ".gbapal");
 
+const u32 gTrainerFrontPic_Alola_Surfer[] = INCGFX_U32("graphics/trainers/front_pics/alola/surfer.png", ".4bpp.smol");
+const u16 gTrainerPalette_Alola_Surfer[] = INCGFX_U16("graphics/trainers/front_pics/alola/surfer.png", ".gbapal");
+
 const u32 gTrainerFrontPic_Alola_Ilima[] = INCGFX_U32("graphics/trainers/front_pics/alola/named_characters/ilima.png", ".4bpp.smol");
 const u16 gTrainerPalette_Alola_Ilima[] = INCGFX_U16("graphics/trainers/front_pics/alola/named_characters/ilima.png", ".gbapal");
 
@@ -940,6 +943,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_FRONT_ALOLA_SCIENTIST_F, gTrainerFrontPic_Alola_Scientist_F, gTrainerPalette_Alola_Scientist_F),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_ALOLA_KUPUNA_M, gTrainerFrontPic_Alola_Kupuna_M, gTrainerPalette_Alola_Kupuna_M),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_ALOLA_KUPUNA_F, gTrainerFrontPic_Alola_Kupuna_F, gTrainerPalette_Alola_Kupuna_F),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_ALOLA_SURFER, gTrainerFrontPic_Alola_Surfer, gTrainerPalette_Alola_Surfer),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_ALOLA_ILIMA, gTrainerFrontPic_Alola_Ilima, gTrainerPalette_Alola_Ilima),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_ALOLA_HALA, gTrainerFrontPic_Alola_Hala, gTrainerPalette_Alola_Hala),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_ALOLA_LANA, gTrainerFrontPic_Alola_Lana, gTrainerPalette_Alola_Lana),
