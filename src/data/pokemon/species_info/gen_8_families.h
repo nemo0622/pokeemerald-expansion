@@ -4571,7 +4571,17 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .frontPic = gMonFrontPic_Impidimp,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Impidimp,
         .backPicSize = MON_COORDS_SIZE(48, 40),
@@ -4582,7 +4592,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .iconSprite = gMonIcon_Impidimp,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(0, 2, SHADOW_SIZE_S)
+        SHADOW(0, 1, SHADOW_SIZE_S)
         FOOTPRINT(Impidimp)
         OVERWORLD(
             sPicTable_Impidimp,
@@ -4635,7 +4645,17 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .frontPic = gMonFrontPic_Morgrem,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(2, 10),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(2, 7),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(2, 7),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Morgrem,
         .backPicSize = MON_COORDS_SIZE(56, 48),
@@ -4646,7 +4666,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .iconSprite = gMonIcon_Morgrem,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 7, SHADOW_SIZE_M)
+        SHADOW(2, 5, SHADOW_SIZE_M)
         FOOTPRINT(Morgrem)
         OVERWORLD(
             sPicTable_Morgrem,
@@ -4699,7 +4719,17 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .frontPic = gMonFrontPic_Grimmsnarl,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(2, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(2, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(2, 5),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Grimmsnarl,
         .backPicSize = MON_COORDS_SIZE(64, 48),

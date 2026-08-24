@@ -75,7 +75,7 @@ HauoliShoppingDistrict_Event_HauOutsideMalasadaShop_1:
 # 56 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	waitmovement 0
 # 57 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	applymovement 17, Common_Movement_FaceUp
+	applymovement 17, Common_Movement_FaceDown
 # 58 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	waitmovement 0
 # 59 "data//maps/HauoliShoppingDistrict/scripts.pory"
@@ -434,11 +434,15 @@ HauoliShoppingDistrict_NPC_WomanNearMarina::
 	end
 
 
-HauoliBeachfront_Sign_HauoliShoppingCenter::
-# 263 "data//maps/HauoliShoppingDistrict/scripts.pory"
+HauoliShoppingDistrict_NPC_BattleGirlOnStreet::
+# 261 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	lock
+# 262 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 263 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_BattleGirlOnStreet_Text_0
 # 264 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	msgbox HauoliBeachfront_Sign_HauoliShoppingCenter_Text_0, MSGBOX_SIGN
+	msgbox HauoliShoppingDistrict_NPC_BattleGirlOnStreet_Text_1
 # 265 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	closemessage
 # 266 "data//maps/HauoliShoppingDistrict/scripts.pory"
@@ -446,14 +450,26 @@ HauoliBeachfront_Sign_HauoliShoppingCenter::
 	end
 
 
-HauoliShoppingDistrict_Sign_CityHall::
-# 272 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	lock
-# 273 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	msgbox HauoliShoppingDistrict_Sign_CityHall_Text_0, MSGBOX_SIGN
+HauoliBeachfront_Sign_HauoliShoppingCenter::
 # 274 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	closemessage
+	lock
 # 275 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliBeachfront_Sign_HauoliShoppingCenter_Text_0, MSGBOX_SIGN
+# 276 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 277 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_Sign_CityHall::
+# 283 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 284 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Sign_CityHall_Text_0, MSGBOX_SIGN
+# 285 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 286 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	release
 	end
 
@@ -919,12 +935,24 @@ HauoliShoppingDistrict_NPC_WomanNearMarina_Text_1:
 	.string "Hau'oli City Marina. That's why we have\l"
 	.string "premier access to rare items!$"
 
-HauoliBeachfront_Sign_HauoliShoppingCenter_Text_0:
+HauoliShoppingDistrict_NPC_BattleGirlOnStreet_Text_0:
+# 263 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Battle Girl$"
+
+HauoliShoppingDistrict_NPC_BattleGirlOnStreet_Text_1:
 # 264 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Ilima is the first Trial Captain for\n"
+	.string "Trainers on Melemele Island. I heard he\l"
+	.string "uses Normal-type Pokémon... Maybe my\l"
+	.string "Fighting-types will help during his\l"
+	.string "Trial!$"
+
+HauoliBeachfront_Sign_HauoliShoppingCenter_Text_0:
+# 275 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "Hau'oli City Shopping Center\n"
 	.string "For All Your Shopping Needs!$"
 
 HauoliShoppingDistrict_Sign_CityHall_Text_0:
-# 273 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 284 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "Hau'oli City Hall\n"
 	.string "Serving the City's Every Need!$"

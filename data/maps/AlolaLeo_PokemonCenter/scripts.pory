@@ -128,6 +128,17 @@ script AlolaLeo_PokemonCenter_NPC_FarmerF
     end
 }
 
+script AlolaLeo_PokemonCenter_NPC_SightseerByMap
+{
+    lock
+    faceplayer
+    setspeaker("Sightseer")
+    msgbox(format("Look at this incredible map of the Alola Region! It's so pretty, I can't contain myself!\pI think most Pokémon Centers around Alola have them... I can't wait to look at them all!"))
+    closemessage
+    release
+    end
+}
+
 script AlolaLeo_PokemonCenter_Pokemon_Herdier
 {
 	lock

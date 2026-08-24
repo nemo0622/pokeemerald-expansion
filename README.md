@@ -36,6 +36,11 @@ Sprites:
 - BronzeSwagger: Professor Burnet
 
 
+# Known Bugs
+### UI & Graphics
+- After opening the Info window in the Region Map like 4 times, it returns you to field. This is a chopped solution to the UI running out of memory lol, but most people probably won't run into this
+
+
 # Code Stuff lol
 
 script MapName_NPC_NPCName

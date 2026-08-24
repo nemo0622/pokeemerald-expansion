@@ -201,60 +201,76 @@ AlolaLeo_PokemonCenter_NPC_FarmerF::
 	end
 
 
-AlolaLeo_PokemonCenter_Pokemon_Herdier::
+AlolaLeo_PokemonCenter_NPC_SightseerByMap::
 # 133 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	lock
 # 134 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	faceplayer
 # 135 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
-	setspeaker AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_0
+	setspeaker AlolaLeo_PokemonCenter_NPC_SightseerByMap_Text_0
 # 136 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
-	playmoncry SPECIES_HERDIER, CRY_MODE_NORMAL
+	msgbox AlolaLeo_PokemonCenter_NPC_SightseerByMap_Text_1
 # 137 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
-	msgbox AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_1
+	closemessage
 # 138 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+	release
+	end
+
+
+AlolaLeo_PokemonCenter_Pokemon_Herdier::
+# 144 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+	lock
+# 145 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+	faceplayer
+# 146 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+	setspeaker AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_0
+# 147 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+	playmoncry SPECIES_HERDIER, CRY_MODE_NORMAL
+# 148 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+	msgbox AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_1
+# 149 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	waitmoncry
-# 139 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 150 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	closemessage
-# 140 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 151 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	msgbox AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_2, MSGBOX_YESNO
-# 141 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 152 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	closemessage
-# 142 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 153 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq AlolaLeo_PokemonCenter_Pokemon_Herdier_2
 AlolaLeo_PokemonCenter_Pokemon_Herdier_1:
-# 161 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 172 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	release
 	end
 
 AlolaLeo_PokemonCenter_Pokemon_Herdier_2:
-# 144 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 155 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	getobjectfacingdirection LOCALID_PLAYER, VAR_TEMP_1
-# 145 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 156 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	compare VAR_TEMP_1, DIR_NORTH
 	goto_if_eq AlolaLeo_PokemonCenter_Pokemon_Herdier_5
-# 151 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 162 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	applymovement LOCALID_PLAYER, AlolaLeo_PokemonCenter_Pokemon_Herdier_Movement_1
 AlolaLeo_PokemonCenter_Pokemon_Herdier_4:
-# 153 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 164 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	waitmovement 0
-# 154 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 165 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	delay 10
-# 155 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 166 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	emote VAR_LAST_TALKED, EMOTE_HEART
-# 156 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 167 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	delay 10
-# 157 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 168 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	createplayerfieldmugshot
-# 158 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 169 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	msgbox AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_3
-# 159 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 170 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	closemessage
 	goto AlolaLeo_PokemonCenter_Pokemon_Herdier_1
 
 AlolaLeo_PokemonCenter_Pokemon_Herdier_5:
-# 147 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 158 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	applymovement LOCALID_PLAYER, AlolaLeo_PokemonCenter_Pokemon_Herdier_Movement_0
 	goto AlolaLeo_PokemonCenter_Pokemon_Herdier_4
 
@@ -274,22 +290,22 @@ NPC_AlolanNurse_Movement_0:
 # 14 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	step_end
 
-# 147 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 158 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 AlolaLeo_PokemonCenter_Pokemon_Herdier_Movement_0:
-# 147 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 158 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	walk_in_place_slow_up
-# 147 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 158 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	walk_in_place_slow_up
-# 147 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 158 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	step_end
 
-# 151 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 162 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 AlolaLeo_PokemonCenter_Pokemon_Herdier_Movement_1:
-# 151 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 162 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	walk_in_place_slow_right
-# 151 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 162 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	walk_in_place_slow_right
-# 151 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 162 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	step_end
 
 NPC_AlolanNurse_Text_0:
@@ -374,18 +390,31 @@ AlolaLeo_PokemonCenter_NPC_FarmerF_Text_1:
 	.string "Town for generations. I was riding\l"
 	.string "{COLOR BLUE}Tauros{COLOR DARK_GRAY} before I could walk!$"
 
-AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_0:
+AlolaLeo_PokemonCenter_NPC_SightseerByMap_Text_0:
 # 135 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+	.string "Sightseer$"
+
+AlolaLeo_PokemonCenter_NPC_SightseerByMap_Text_1:
+# 136 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+	.string "Look at this incredible map of the Alola\n"
+	.string "Region! It's so pretty, I can't contain\l"
+	.string "myself!\p"
+	.string "I think most Pokémon Centers around\n"
+	.string "Alola have them... I can't wait to look at\l"
+	.string "them all!$"
+
+AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_0:
+# 146 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	.string "Herdier$"
 
 AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_1:
-# 137 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 148 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	.string "Bwouf!$"
 
 AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_2:
-# 140 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 151 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	.string "Pet the {COLOR BLUE}Herdier{COLOR DARK_GRAY}?$"
 
 AlolaLeo_PokemonCenter_Pokemon_Herdier_Text_3:
-# 158 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
+# 169 "data//maps/AlolaLeo_PokemonCenter/scripts.pory"
 	.string "{SPEAKER NAME_PLAYER}Aw, good little buddy!$"

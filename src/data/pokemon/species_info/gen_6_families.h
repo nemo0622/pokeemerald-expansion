@@ -6482,14 +6482,17 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 12),
-            ANIMCMD_FRAME(0, 12),
-            ANIMCMD_FRAME(1, 12),
             ANIMCMD_FRAME(0, 30),
-            ANIMCMD_FRAME(1, 12),
-            ANIMCMD_FRAME(0, 12),
-            ANIMCMD_FRAME(1, 12),
-            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 6),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 6),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(2, 8),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_RISING_WOBBLE,
         .enemyMonElevation = 8,
@@ -6502,7 +6505,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .iconSprite = gMonIcon_Noibat,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(2, 11, SHADOW_SIZE_L)
+        SHADOW(1, 10, SHADOW_SIZE_S)
         FOOTPRINT(Noibat)
         OVERWORLD(
             sPicTable_Noibat,
@@ -6557,8 +6560,20 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(1, 32),
-            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(2, 4),
+            ANIMCMD_FRAME(3, 4),
+            ANIMCMD_FRAME(0, 4),
+            ANIMCMD_FRAME(2, 4),
+            ANIMCMD_FRAME(3, 4),
+            ANIMCMD_FRAME(0, 4),
+            ANIMCMD_FRAME(2, 4),
+            ANIMCMD_FRAME(3, 4),
+            ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Noivern,
@@ -6570,7 +6585,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .iconSprite = gMonIcon_Noivern,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(5, 10, SHADOW_SIZE_L)
+        SHADOW(-2, 8, SHADOW_SIZE_M)
         FOOTPRINT(Noivern)
         OVERWORLD(
             sPicTable_Noivern,

@@ -121,7 +121,7 @@ static const u16 sRegionMapCursorPal[] = INCGFX_U16("graphics/pokenav/region_map
 static const u32 sRegionMapCursorSmallGfxLZ[] = INCGFX_U32("graphics/pokenav/region_map/cursor_small.png", ".4bpp.smol");
 static const u32 sRegionMapCursorLargeGfxLZ[] = INCGFX_U32("graphics/pokenav/region_map/cursor_large.png", ".4bpp.smol");
 static const u16 sRegionMapBg_Pal[] = INCGFX_U16("graphics/pokenav/region_map/map.pal", ".gbapal");
-static const u32 sRegionMapBg_GfxLZ[] = INCGFX_U32("graphics/pokenav/region_map/map.png", ".8bpp.smol", "-num_tiles 233 -Wnum_tiles");
+static const u32 sRegionMapBg_GfxLZ[] = INCGFX_U32("graphics/pokenav/region_map/map.png", ".8bpp.smol", "-num_tiles 256 -Wnum_tiles");
 static const u32 sRegionMapBg_TilemapLZ[] = INCBIN_U32("graphics/pokenav/region_map/map.bin.smolTM");
 static const u16 sRegionMapPlayerIcon_BrendanPal[] = INCGFX_U16("graphics/pokenav/region_map/brendan_icon.png", ".gbapal");
 static const u8 sRegionMapPlayerIcon_BrendanGfx[] = INCGFX_U8("graphics/pokenav/region_map/brendan_icon.png", ".4bpp");
@@ -743,9 +743,13 @@ bool8 LoadRegionMapGfx(void)
     case 0:
         regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
         if (sRegionMap->bgManaged)
+        {
             DecompressAndCopyTileDataToVram(sRegionMap->bgNum, gRegionMapInfos[regionMapType].regionMapGfx, 0, 0, 0);
+        }
         else
+        {
             DecompressDataWithHeaderVram(gRegionMapInfos[regionMapType].regionMapGfx, (u16 *)BG_CHAR_ADDR(2));
+        }
         break;
     case 1:
         regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);

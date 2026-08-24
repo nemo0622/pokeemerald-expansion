@@ -24340,7 +24340,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_HATENNA
 
 #if P_FAMILY_IMPIDIMP
-    const u32 gMonFrontPic_Impidimp[] = INCGFX_U32("graphics/pokemon/impidimp/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Impidimp[] = INCGFX_U32("graphics/pokemon/impidimp/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Impidimp[] = INCGFX_U16("graphics/pokemon/impidimp/normal.pal", ".gbapal");
     const u32 gMonBackPic_Impidimp[] = INCGFX_U32("graphics/pokemon/impidimp/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Impidimp[] = INCGFX_U16("graphics/pokemon/impidimp/shiny.pal", ".gbapal");
@@ -24356,7 +24356,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Morgrem[] = INCGFX_U32("graphics/pokemon/morgrem/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Morgrem[] = INCGFX_U32("graphics/pokemon/morgrem/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Morgrem[] = INCGFX_U16("graphics/pokemon/morgrem/normal.pal", ".gbapal");
     const u32 gMonBackPic_Morgrem[] = INCGFX_U32("graphics/pokemon/morgrem/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Morgrem[] = INCGFX_U16("graphics/pokemon/morgrem/shiny.pal", ".gbapal");
@@ -24372,7 +24372,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Grimmsnarl[] = INCGFX_U32("graphics/pokemon/grimmsnarl/front.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Grimmsnarl[] = INCGFX_U32("graphics/pokemon/grimmsnarl/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Grimmsnarl[] = INCGFX_U16("graphics/pokemon/grimmsnarl/normal.pal", ".gbapal");
     const u32 gMonBackPic_Grimmsnarl[] = INCGFX_U32("graphics/pokemon/grimmsnarl/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Grimmsnarl[] = INCGFX_U16("graphics/pokemon/grimmsnarl/shiny.pal", ".gbapal");

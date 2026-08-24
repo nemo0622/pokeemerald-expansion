@@ -32,6 +32,7 @@
 #include "menu.h"
 #include "metatile_behavior.h"
 #include "mystery_gift.h"
+#include "nemo_regionmap_ui.h"
 #include "overworld.h"
 #include "party_menu.h"
 #include "pokeblock.h"
@@ -1008,7 +1009,8 @@ u8 GetLeadMonFriendshipScore(void)
 
 static void CB2_FieldShowRegionMap(void)
 {
-    FieldInitRegionMap(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+    // FieldInitRegionMap(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+    NemoRMUI_Init(CB2_ReturnToFieldContinueScriptPlayMapMusic);
 }
 
 void FieldShowRegionMap(void)
