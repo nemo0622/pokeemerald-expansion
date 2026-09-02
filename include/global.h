@@ -281,6 +281,8 @@ struct SaveBlock3
     u8 questData[QUEST_FLAGS_COUNT * QUEST_STATES];
     u8 subQuests[SUB_FLAGS_COUNT];
 
+    u8 nemoPokedexVariant; // Which dex (Alolan, Melemele-Poni, or Ultra) is loaded
+
 }; /* max size 1624 bytes */
 
 extern struct SaveBlock3 *gSaveBlock3Ptr;

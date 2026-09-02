@@ -118,6 +118,7 @@ const u8 gText_HOFCorrupted[] = _("The HALL OF FAME data is corrupted.");
 const u8 gText_HOFNumber[] = _("HALL OF FAME No. {STR_VAR_1}");
 const u8 gText_LeagueChamp[] = _("LEAGUE CHAMPION!\nCONGRATULATIONS!");
 const u8 gText_Number[] = _("No. ");
+const u8 gText_NumberStr1[] = _("No. {STR_VAR_1}");
 const u8 gText_Level[] = _("Lv. ");
 const u8 gText_IdNumberSlash[] = _("IDNo. /"); // Unused
 const u8 gText_Name[] = _("NAME");
@@ -173,6 +174,11 @@ const u8 gText_TheBattle[] = _("the battle");
 const u8 gText_ThePokemonList[] = _("the POKéMON LIST");
 const u8 gText_TheShop[] = _("the shop");
 const u8 gText_ThePC[] = _("the PC");
+
+const u8 gText_PokedexMovesLevel[] = _("{COLOR RED}{SHADOW LIGHT_RED}{LV}{STR_VAR_1} {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}{STR_VAR_2}");
+const u8 gText_PokedexMovesEvo[] = _("{COLOR GREEN}{SHADOW LIGHT_GRAY}Evo. {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}{STR_VAR_1}");
+const u8 gText_PokedexMovesTM[] = _("{COLOR LIGHT_RED}{SHADOW LIGHT_GRAY}TM.  {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}{STR_VAR_1}");
+const u8 gText_PokedexMovesTutor[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Tutor {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}{STR_VAR_1}");
 
 const u8 *const gBagMenu_ReturnToStrings[] =
 {

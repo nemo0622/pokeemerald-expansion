@@ -38,7 +38,10 @@ Sprites:
 
 # Known Bugs
 ### UI & Graphics
-- After opening the Info window in the Region Map like 4 times, it returns you to field. This is a chopped solution to the UI running out of memory lol, but most people probably won't run into this
+- After opening the Info window in the Region Map like 4 times, it returns you to field. 
+    - Explanation: This is a chopped solution to the UI running out of memory lol, but most people probably won't run into this
+- Orange Pokémon selection outline upper-right corner occasionally vanishes
+    - Explanation: This only seems to occur on the last entry in Pokédex lists, and only when it ends partway through a row. Lowkey, if all dexes just have the right number of Pokémon this can be avoided lol #NowItsAFeature
 
 
 # Code Stuff lol

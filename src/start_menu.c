@@ -55,6 +55,8 @@
 #include "decompress.h"
 #include "ui_startmenu_full.h"
 
+#include "nemo_pokedex.h"
+
 #define TAG_THROBBER 0x1000
 static const u16 sThrobber_Pal[] = INCBIN_U16("graphics/text_window/throbber.gbapal");
 const u32 gThrobber_Gfx[] = INCBIN_U32("graphics/text_window/throbber.4bpp.smol");
@@ -789,7 +791,9 @@ bool8 StartMenuPokedexCallback(void)
         PlayRainStoppingSoundEffect();
         RemoveExtraStartMenuWindows();
         CleanupOverworldWindowsAndTilemaps();
-        SetMainCallback2(CB2_OpenPokedex);
+
+        Nemo_ShowPokedexFromMenu();
+        // SetMainCallback2(CB2_OpenPokedex);
 
         return TRUE;
     }

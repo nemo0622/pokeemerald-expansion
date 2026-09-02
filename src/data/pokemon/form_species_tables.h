@@ -70,19 +70,15 @@ static const u16 sPidgeotFormSpeciesIdTable[] = {
 
 #if P_FAMILY_RATTATA
 static const u16 sRattataFormSpeciesIdTable[] = {
-    SPECIES_RATTATA,
-#if P_ALOLAN_FORMS
     SPECIES_RATTATA_ALOLA,
-#endif
+    SPECIES_RATTATA,
     FORM_SPECIES_END,
 };
 
 static const u16 sRaticateFormSpeciesIdTable[] = {
-    SPECIES_RATICATE,
-#if P_ALOLAN_FORMS
     SPECIES_RATICATE_ALOLA,
     SPECIES_RATICATE_ALOLA_TOTEM,
-#endif
+    SPECIES_RATICATE,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_RATTATA
@@ -124,10 +120,8 @@ static const u16 sPikachuFormSpeciesIdTable[] = {
 };
 
 static const u16 sRaichuFormSpeciesIdTable[] = {
-    SPECIES_RAICHU,
-#if P_ALOLAN_FORMS
     SPECIES_RAICHU_ALOLA,
-#endif
+    SPECIES_RAICHU,
 #if P_GEN_9_MEGA_EVOLUTIONS
     SPECIES_RAICHU_MEGA_X,
     SPECIES_RAICHU_MEGA_Y,
@@ -138,18 +132,14 @@ static const u16 sRaichuFormSpeciesIdTable[] = {
 
 #if P_FAMILY_SANDSHREW
 static const u16 sSandshrewFormSpeciesIdTable[] = {
-    SPECIES_SANDSHREW,
-#if P_ALOLAN_FORMS
     SPECIES_SANDSHREW_ALOLA,
-#endif
+    SPECIES_SANDSHREW,
     FORM_SPECIES_END,
 };
 
 static const u16 sSandslashFormSpeciesIdTable[] = {
-    SPECIES_SANDSLASH,
-#if P_ALOLAN_FORMS
     SPECIES_SANDSLASH_ALOLA,
-#endif
+    SPECIES_SANDSLASH,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_SANDSHREW
@@ -166,46 +156,36 @@ static const u16 sClefableFormSpeciesIdTable[] = {
 
 #if P_FAMILY_VULPIX
 static const u16 sVulpixFormSpeciesIdTable[] = {
-    SPECIES_VULPIX,
-#if P_ALOLAN_FORMS
     SPECIES_VULPIX_ALOLA,
-#endif
+    SPECIES_VULPIX,
     FORM_SPECIES_END,
 };
 
 static const u16 sNinetalesFormSpeciesIdTable[] = {
-    SPECIES_NINETALES,
-#if P_ALOLAN_FORMS
     SPECIES_NINETALES_ALOLA,
-#endif
+    SPECIES_NINETALES,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_VULPIX
 
 #if P_FAMILY_DIGLETT
 static const u16 sDiglettFormSpeciesIdTable[] = {
-    SPECIES_DIGLETT,
-#if P_ALOLAN_FORMS
     SPECIES_DIGLETT_ALOLA,
-#endif
+    SPECIES_DIGLETT,
     FORM_SPECIES_END,
 };
 
 static const u16 sDugtrioFormSpeciesIdTable[] = {
-    SPECIES_DUGTRIO,
-#if P_ALOLAN_FORMS
     SPECIES_DUGTRIO_ALOLA,
-#endif
+    SPECIES_DUGTRIO,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_DIGLETT
 
 #if P_FAMILY_MEOWTH
 static const u16 sMeowthFormSpeciesIdTable[] = {
-    SPECIES_MEOWTH,
-#if P_ALOLAN_FORMS
     SPECIES_MEOWTH_ALOLA,
-#endif
+    SPECIES_MEOWTH,
 #if P_GALARIAN_FORMS
     SPECIES_MEOWTH_GALAR,
 #endif
@@ -216,10 +196,8 @@ static const u16 sMeowthFormSpeciesIdTable[] = {
 };
 
 static const u16 sPersianFormSpeciesIdTable[] = {
-    SPECIES_PERSIAN,
-#if P_ALOLAN_FORMS
     SPECIES_PERSIAN_ALOLA,
-#endif
+    SPECIES_PERSIAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_MEOWTH
@@ -274,26 +252,20 @@ static const u16 sVictreebelFormSpeciesIdTable[] = {
 
 #if P_FAMILY_GEODUDE
 static const u16 sGeodudeFormSpeciesIdTable[] = {
-    SPECIES_GEODUDE,
-#if P_ALOLAN_FORMS
     SPECIES_GEODUDE_ALOLA,
-#endif
+    SPECIES_GEODUDE,
     FORM_SPECIES_END,
 };
 
 static const u16 sGravelerFormSpeciesIdTable[] = {
-    SPECIES_GRAVELER,
-#if P_ALOLAN_FORMS
     SPECIES_GRAVELER_ALOLA,
-#endif
+    SPECIES_GRAVELER,
     FORM_SPECIES_END,
 };
 
 static const u16 sGolemFormSpeciesIdTable[] = {
-    SPECIES_GOLEM,
-#if P_ALOLAN_FORMS
     SPECIES_GOLEM_ALOLA,
-#endif
+    SPECIES_GOLEM,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_GEODUDE
@@ -359,18 +331,14 @@ static const u16 sFarfetchdFormSpeciesIdTable[] = {
 
 #if P_FAMILY_GRIMER
 static const u16 sGrimerFormSpeciesIdTable[] = {
-    SPECIES_GRIMER,
-#if P_ALOLAN_FORMS
     SPECIES_GRIMER_ALOLA,
-#endif
+    SPECIES_GRIMER,
     FORM_SPECIES_END,
 };
 
 static const u16 sMukFormSpeciesIdTable[] = {
-    SPECIES_MUK,
-#if P_ALOLAN_FORMS
     SPECIES_MUK_ALOLA,
-#endif
+    SPECIES_MUK,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_GRIMER
@@ -430,21 +398,17 @@ static const u16 sElectrodeFormSpeciesIdTable[] = {
 
 #if P_FAMILY_EXEGGCUTE
 static const u16 sExeggutorFormSpeciesIdTable[] = {
-    SPECIES_EXEGGUTOR,
-#if P_ALOLAN_FORMS
     SPECIES_EXEGGUTOR_ALOLA,
-#endif
+    SPECIES_EXEGGUTOR,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_EXEGGCUTE
 
 #if P_FAMILY_CUBONE
 static const u16 sMarowakFormSpeciesIdTable[] = {
-    SPECIES_MAROWAK,
-#if P_ALOLAN_FORMS
     SPECIES_MAROWAK_ALOLA,
     SPECIES_MAROWAK_ALOLA_TOTEM,
-#endif
+    SPECIES_MAROWAK,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_CUBONE

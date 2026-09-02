@@ -48,6 +48,7 @@
 #include "frontier_pass.h"
 #include "start_menu.h"
 #include "quests.h"
+#include "nemo_pokedex.h"
 
 /*
     Full Screen Start Menu
@@ -1320,7 +1321,8 @@ void Task_OpenPokedexFromStartMenu(u8 taskId)
         IncrementGameStat(GAME_STAT_CHECKED_POKEDEX);
         PlayRainStoppingSoundEffect();
         CleanupOverworldWindowsAndTilemaps();
-        SetMainCallback2(CB2_OpenPokedex);
+        // SetMainCallback2(CB2_OpenPokedex);
+        Nemo_ShowPokedexFromMenu();
         DestroyTask(taskId);
     }
 }
