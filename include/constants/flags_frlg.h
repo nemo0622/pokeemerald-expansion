@@ -125,7 +125,7 @@
 #define FLAG_HIDE_SELPHYS_BUTLER                           0x096
 #define FLAG_HIDE_FOUR_ISLAND_RIVAL                        0x097
 #define FLAG_HIDE_SIX_ISLAND_POKECENTER_RIVAL              0x098
-#define FLAG_HIDE_DEOXYS                                   0x099
+#define FLAG_MET_ILIMA_HAUOLI                                   0x099
 #define FLAG_HIDE_BIRTH_ISLAND_METEORITE                   0x09A
 #define FLAG_HIDE_LUGIA                                    0x09B
 #define FLAG_HIDE_HO_OH                                    0x09C
@@ -2064,7 +2064,7 @@
 #define FLAG_HIDE_CORSOLA_HAUOLI_BEACHFRONT      0
 #define FLAG_GOT_SILK_SCARF              0
 #define FLAG_DID_MALASADA_SHOP_EVENT                  0
-#define FLAG_HIDE_BIRTH_ISLAND_DEOXYS_TRIANGLE                      0
+#define FLAG_HIDE_ILIMA_HAUOLI                      0
 #define FLAG_HIDE_MAUVILLE_CITY_SCOTT                               0
 #define FLAG_HIDE_VERDANTURF_TOWN_SCOTT                             0
 #define FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT                  0

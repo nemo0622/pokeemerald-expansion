@@ -40,18 +40,18 @@ script HauoliShoppingDistrict_Event_HauOutsideMalasadaShop
 	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
 	switch(var(VAR_TEMP_2))
 	{
-		case 33:
-			applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_down, walk_right * 2, face_up, step_end))
-		case 34:
-			applymovement(LOCALID_PLAYER, moves(walk_right * 4, face_up, step_end))
-		case 35:
-			applymovement(LOCALID_PLAYER, moves(walk_right * 4, walk_up, face_up, step_end))
-		case 36:
-			applymovement(LOCALID_PLAYER, moves(walk_right * 4, walk_up * 2, face_up, step_end))
 		case 37:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_down, walk_right * 2, face_up, step_end))
+		case 38:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 4, face_up, step_end))
+		case 39:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 4, walk_up, face_up, step_end))
+		case 40:
+			applymovement(LOCALID_PLAYER, moves(walk_right * 4, walk_up * 2, face_up, step_end))
+		case 41:
 			applymovement(LOCALID_PLAYER, moves(walk_right * 4, walk_up * 3, face_up, step_end))
 		default:
-			applymovement(LOCALID_PLAYER, moves(walk_left * 2, face_up, step_end))
+			applymovement(LOCALID_PLAYER, moves(walk_right * 4, face_up, step_end))
 	}
 	waitmovement(0)
 	applymovement(17, Common_Movement_FaceDown)
@@ -77,6 +77,7 @@ script HauoliShoppingDistrict_Event_HauOutsideMalasadaShop
 	waitmovement(0)
 	delay(10)
 	// NOTE: Player now at x44 y35, Hau is one tile up at y34
+	createfieldmugshot(MUGSHOT_SKULL_GRUNT_F)
 	setspeaker("Grunt A")
 	msgbox(format("Yo, you wanna throw us a bone and hand over those Island Challenge Amulets?"))
 	createplayerfieldmugshot
@@ -93,11 +94,13 @@ script HauoliShoppingDistrict_Event_HauOutsideMalasadaShop
 	applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
 	applymovement(19, moves(walk_in_place_slow_left * 2, step_end))
 	waitmovement(0)
+	createfieldmugshot(MUGSHOT_SKULL_GRUNT_M)
 	setspeaker("Grunt B")
 	msgbox(format("You know it!\p We hate the Island Challenge, yo! And everyone fool enough to try it!"))
 	closemessage
 	applymovement(18, moves(walk_in_place_slow_left * 2, step_end))
 	waitmovement(0)
+	createfieldmugshot(MUGSHOT_SKULL_GRUNT_F)
 	setspeaker("Grunt A")
 	msgbox(format("Yo, let's check these fools."))
 	closemessage
@@ -106,22 +109,26 @@ script HauoliShoppingDistrict_Event_HauOutsideMalasadaShop
 	msgbox(format("Come on, {PLAYER}! Let's teach these Team Skull jerks a lesson!"))
 	closemessage
 
-	// TODO: Battle Team Skull grunt!
+	// Battle Team Skull grunt!
+	trainerbattle_no_intro(TRAINER_SKULL_GRUNT_HAUOLI, format("W-who is this kid?!"))
 
 	// Skull Grunts run off
 	delay(20)
 	applymovement(19, moves(walk_in_place_slow_left * 2, step_end))
 	waitmovement(0)
+	createfieldmugshot(MUGSHOT_SKULL_GRUNT_M, EMOTION_SAD)
 	setspeaker("Grunt B")
 	msgbox(format("No fair! I was playing a different game!"))
 	closemessage
 	applymovement(18, moves(walk_in_place_slow_down * 2, step_end))
 	waitmovement(0)
+	createfieldmugshot(MUGSHOT_SKULL_GRUNT_F, EMOTION_SAD)
 	setspeaker("Grunt A")
 	msgbox(format("Let's get up out this port, B! Nobody has to know about this!"))
 	closemessage
 	applymovement(18, Common_Movement_FaceLeft)
 	waitmovement(0)
+	createfieldmugshot(MUGSHOT_SKULL_GRUNT_M, EMOTION_SAD)
 	setspeaker("Grunt A")
 	msgbox(format("We don't need your whack little Amulet anyway! Wouldn't even take 'em if you gave 'em to us!"))
 	closemessage
@@ -151,6 +158,50 @@ script HauoliShoppingDistrict_Event_HauOutsideMalasadaShop
 	removeobject(17)
 	removeobject(18)
 	removeobject(19)
+
+	releaseall
+	end
+}
+
+script HauoliShoppingDistrict_Event_MeetIlima
+{
+	lockall
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+	switch(var(VAR_TEMP_1))
+	{
+		case 48:
+			applymovement(LOCALID_PLAYER, moves(walk_right, face_down, step_end))
+		case 50:
+			applymovement(LOCALID_PLAYER, moves(walk_left, face_down, step_end))
+		default:
+			applymovement(LOCALID_PLAYER, Common_Movement_FaceDown)
+	}
+	waitmovement(0)
+	emote(24, EMOTE_EXCLAM)
+	delay(10)
+	applymovement(24, Common_Movement_FaceUp)
+	applymovement(LOCALID_PLAYER, Common_Movement_WalkDown)
+	waitmovement(0)
+	createfieldmugshot(MUGSHOT_ILIMA)
+	setspeaker("Ilima")
+	msgbox(format("Greetings! I'm Ilima, the first Trial Captain of Melemele Island.\p I couldn't help but observe your battle alongside that boy... Team Skull doesn't seem serious, but they're known for making trouble and stealing Pokémon.\p Please, tell me about yourself."))
+	closemessage
+	createplayerfieldmugshot
+	msgbox(format("{SPEAKER NAME_PLAYER}I'm {PLAYER}! I just moved back to Hau'oli Outskirts from Kanto, and I'm just starting on my Island Challenge!"))
+	closemessage
+	emote(24, EMOTE_EXCLAM)
+	delay(10)
+	createfieldmugshot(MUGSHOT_ILIMA)
+	setspeaker("Ilima")
+	msgbox(format("Hm! Of course, I'd heard about Samson Oak's grandchild moving to Alola, but I hadn't expected to run into you so soon.\p I must admit, I'd love to test your skills in battle personally. Please let me know when your Pokémon are {COLOR GREEN}ready for battle{COLOR DARK_GRAY}!"))
+	closemessage
+
+	applymovement(24, Common_Movement_WalkDown)
+	waitmovement(0)
+	delay(20)
+	startsubquest(QUEST_TRIAL_ILIMA, QUEST_TRIAL_ILIMA_SUBQUEST_2)
+	setflag(FLAG_MET_ILIMA_HAUOLI)
+	closemessage
 
 	releaseall
 	end
@@ -264,6 +315,70 @@ script HauoliShoppingDistrict_NPC_BattleGirlOnStreet
 	msgbox(format("Ilima is the first Trial Captain for Trainers on Melemele Island. I heard he uses Normal-type Pokémon... Maybe my Fighting-types will help during his Trial!"))
 	closemessage
 	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_IlimaBattle
+{
+	lock
+	faceplayer
+	setspeaker("Ilima")
+	createfieldmugshot(MUGSHOT_ILIMA)
+	msgbox(format("Greetings! I'm itching to see your skills in a proper battle, you know."))
+	waitmessage
+	removefieldmugshot
+	setspeaker("Ilima")
+	msgbox(format("I assume you're ready to battle me?"), MSGBOX_YESNO)
+	closemessage
+
+	if(var(VAR_RESULT) == TRUE) // Battle!
+	{
+		setspeaker("Ilima")
+		createfieldmugshot(MUGSHOT_ILIMA)
+		msgbox(format("Behold the magnificent Pokémon of the one and only Captain Ilima!"))
+		closemessage
+
+		trainerbattle_no_intro(TRAINER_CAPTAIN_ILIMA_HAUOLI, msgbox("Yes! You have emerged victorious!"))
+
+		delay(10)
+		setspeaker("Ilima")
+		createfieldmugshot(MUGSHOT_ILIMA)
+		msgbox(format("You - or should I say, you and your Pokémon - make quite the interesting team!\pI do hope you'll come to {COLOR GREEN}Verdant Cavern{COLOR DARK_GRAY} and attempt the first trial of the Island Challenge - the Trial of Ilima!\p You can find Verdant Cavern north of Route 2."))
+		closemessage
+
+		getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+		switch(var(VAR_TEMP_1))
+		{
+			case 48:
+				applymovement(24, moves(walk_up, walk_left, face_up, step_end))
+			default:
+				applymovement(24, moves(walk_left, walk_up, step_end))
+		}
+		waitmovement(0)
+		applymovement(24, moves(walk_up * 6, step_end))
+		delay(30)
+		fadescreenswapbuffers(FADE_TO_BLACK)
+		delay(30)
+		setflag(FLAG_HIDE_ILIMA_HAUOLI)
+		removeobject(24)
+		delay(30)
+		fadescreenswapbuffers(FADE_FROM_BLACK)
+		delay(20)
+
+		startsubquest(QUEST_TRIAL_ILIMA, QUEST_TRIAL_ILIMA_SUBQUEST_3)
+		closemessage
+		releaseall
+
+	}
+	else
+	{
+		setspeaker("Ilima")
+		createfieldmugshot(MUGSHOT_ILIMA)
+		msgbox(format("Well then! I'll wait until you are ready to take me on."))
+		closemessage
+		releaseall
+		end
+	}
 	end
 }
 

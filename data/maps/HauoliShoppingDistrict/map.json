@@ -324,13 +324,13 @@
       "x": 49,
       "y": 50,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "HauoliShoppingDistrict_NPC_IlimaBattle",
+      "flag": "FLAG_HIDE_ILIMA_HAUOLI"
     }
   ],
   "warp_events": [],
@@ -406,6 +406,33 @@
       "var": "FLAG_DID_MALASADA_SHOP_EVENT",
       "var_value": "0",
       "script": "HauoliShoppingDistrict_Event_HauOutsideMalasadaShop"
+    },
+    {
+      "type": "trigger",
+      "x": 48,
+      "y": 48,
+      "elevation": 0,
+      "var": "FLAG_MET_ILIMA_HAUOLI",
+      "var_value": "0",
+      "script": "HauoliShoppingDistrict_Event_MeetIlima"
+    },
+    {
+      "type": "trigger",
+      "x": 49,
+      "y": 48,
+      "elevation": 0,
+      "var": "FLAG_MET_ILIMA_HAUOLI",
+      "var_value": "0",
+      "script": "HauoliShoppingDistrict_Event_MeetIlima"
+    },
+    {
+      "type": "trigger",
+      "x": 50,
+      "y": 48,
+      "elevation": 0,
+      "var": "FLAG_MET_ILIMA_HAUOLI",
+      "var_value": "0",
+      "script": "HauoliShoppingDistrict_Event_MeetIlima"
     }
   ],
   "bg_events": [

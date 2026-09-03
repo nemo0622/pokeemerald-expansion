@@ -376,6 +376,14 @@ bool8 IsSubquestActuallyComplete(s32 questId)
 			if(FlagGet(FLAG_HIDE_TAUROS_ALOLA_LEO))
 				return TRUE;
 			break;
+		case 22: // Subquest 22: Find Captain Ilima
+			if(FlagGet(FLAG_MET_ILIMA_HAUOLI))
+				return TRUE;
+			break;
+		case 23: // Subquest 23: Fight Ilima
+			if(FlagGet(FLAG_HIDE_ILIMA_HAUOLI))
+				return TRUE;
+			break;
 	}
 
 	// If this point is reached, it's prolly not the focus lol

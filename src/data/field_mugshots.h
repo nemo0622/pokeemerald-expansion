@@ -37,6 +37,13 @@ static const u32 sFieldMugshotGfx_Hala_Normal[] = INCGFX_U32("graphics/field_mug
 static const u32 sFieldMugshotGfx_Hala_Laugh[] = INCGFX_U32("graphics/field_mugshots/hala/laugh.png", ".4bpp.smol");
 static const u32 sFieldMugshotGfx_Hala_Intense[] = INCGFX_U32("graphics/field_mugshots/hala/intense.png", ".4bpp.smol");
 
+static const u32 sFieldMugshotGfx_Ilima_Normal[] = INCGFX_U32("graphics/field_mugshots/ilima/normal.png", ".4bpp.smol");
+
+static const u32 sFieldMugshotGfx_Skull_Grunt_M_Normal[] = INCGFX_U32("graphics/field_mugshots/skull_grunt_m/normal.png", ".4bpp.smol");
+static const u32 sFieldMugshotGfx_Skull_Grunt_M_Sad[] = INCGFX_U32("graphics/field_mugshots/skull_grunt_m/sad.png", ".4bpp.smol");
+static const u32 sFieldMugshotGfx_Skull_Grunt_F_Normal[] = INCGFX_U32("graphics/field_mugshots/skull_grunt_f/normal.png", ".4bpp.smol");
+static const u32 sFieldMugshotGfx_Skull_Grunt_F_Sad[] = INCGFX_U32("graphics/field_mugshots/skull_grunt_f/sad.png", ".4bpp.smol");
+
 
 // Mugshot palettes
 static const u16 sFieldMugshotPal_Elio_Normal[] = INCGFX_U16("graphics/field_mugshots/elio/normal.png", ".gbapal");
@@ -75,6 +82,11 @@ static const u16 sFieldMugshotPal_Hau_Intense[] = INCGFX_U16("graphics/field_mug
 static const u16 sFieldMugshotPal_Hala_Normal[] = INCGFX_U16("graphics/field_mugshots/hala/normal.png", ".gbapal");
 static const u16 sFieldMugshotPal_Hala_Laugh[] = INCGFX_U16("graphics/field_mugshots/hala/laugh.png", ".gbapal");
 static const u16 sFieldMugshotPal_Hala_Intense[] = INCGFX_U16("graphics/field_mugshots/hala/intense.png", ".gbapal");
+
+static const u16 sFieldMugshotPal_Ilima_Normal[] = INCGFX_U16("graphics/field_mugshots/ilima/normal.png", ".gbapal");
+
+static const u16 sFieldMugshotPal_Skull_Grunt_M[] = INCGFX_U16("graphics/field_mugshots/skull_grunt_m/normal.png", ".gbapal");
+static const u16 sFieldMugshotPal_Skull_Grunt_F[] = INCGFX_U16("graphics/field_mugshots/skull_grunt_f/normal.png", ".gbapal");
 
 
 struct MugshotGfx
@@ -340,6 +352,105 @@ static const struct MugshotGfx sFieldMugshots[MUGSHOT_COUNT][EMOTE_COUNT] =
         {
             .gfx = NULL,
             .pal = NULL,
+        },
+
+        [EMOTION_OTHER] =
+        {
+            .gfx = NULL,
+            .pal = NULL,
+        },
+    },
+
+    [MUGSHOT_ILIMA] =
+    {
+        [EMOTION_NORMAL] =
+        {
+            .gfx = sFieldMugshotGfx_Ilima_Normal,
+            .pal = sFieldMugshotPal_Ilima_Normal,
+        },
+
+        [EMOTION_LAUGH] =
+        {
+            .gfx = NULL,
+            .pal = NULL,
+        },
+
+        [EMOTION_INTENSE] =
+        {
+            .gfx = NULL,
+            .pal = NULL,
+        },
+
+        [EMOTION_SAD] =
+        {
+            .gfx = NULL,
+            .pal = NULL,
+        },
+
+        [EMOTION_OTHER] =
+        {
+            .gfx = NULL,
+            .pal = NULL,
+        },
+    },
+
+    [MUGSHOT_SKULL_GRUNT_M] =
+    {
+        [EMOTION_NORMAL] =
+        {
+            .gfx = sFieldMugshotGfx_Skull_Grunt_M_Normal,
+            .pal = sFieldMugshotPal_Skull_Grunt_M,
+        },
+
+        [EMOTION_LAUGH] =
+        {
+            .gfx = NULL,
+            .pal = NULL,
+        },
+
+        [EMOTION_INTENSE] =
+        {
+            .gfx = NULL,
+            .pal = NULL,
+        },
+
+        [EMOTION_SAD] =
+        {
+            .gfx = sFieldMugshotGfx_Skull_Grunt_M_Sad,
+            .pal = sFieldMugshotPal_Skull_Grunt_M,
+        },
+
+        [EMOTION_OTHER] =
+        {
+            .gfx = NULL,
+            .pal = NULL,
+        },
+    },
+
+    [MUGSHOT_SKULL_GRUNT_F] =
+    {
+        [EMOTION_NORMAL] =
+        {
+            .gfx = sFieldMugshotGfx_Skull_Grunt_F_Normal,
+            .pal = sFieldMugshotPal_Skull_Grunt_F,
+        },
+
+        [EMOTION_LAUGH] =
+        {
+            .gfx = NULL,
+            .pal = NULL,
+        },
+
+        [EMOTION_INTENSE] =
+        {
+            .gfx = NULL,
+            .pal = NULL,
+        },
+
+        [EMOTION_SAD] =
+        {
+            .gfx = sFieldMugshotGfx_Skull_Grunt_F_Sad,
+            .pal = sFieldMugshotPal_Skull_Grunt_F,
         },
 
         [EMOTION_OTHER] =

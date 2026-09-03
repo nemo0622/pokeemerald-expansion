@@ -601,7 +601,7 @@ static void InitPageResources(u8 fromPage, u8 toPage)
     ResetTempTileDataBuffers();
 
     if(toPage == PAGE_OVERVIEW)
-        HideBg(0);
+        HideBg(0); // Fixes a few broken-looking tiles
 
     // If we're swapping onto a mon page for the first tile load tiles
     if(toPage >= PAGE_MON_FIRST && toPage <= PAGE_MON_LAST)

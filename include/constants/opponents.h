@@ -18,8 +18,8 @@
 #define TRAINER_SCHOOL_GIRL_MIA                       11
 #define TRAINER_YOUNGSTER_JOEY                      12
 #define TRAINER_RISING_STAR_JOSEPH                           13
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
-#define TRAINER_DECLAN                       15
+#define TRAINER_SKULL_GRUNT_HAUOLI      14
+#define TRAINER_CAPTAIN_ILIMA_HAUOLI                       15
 #define TRAINER_GRUNT_RUSTURF_TUNNEL         16
 #define TRAINER_GRUNT_WEATHER_INST_1         17
 #define TRAINER_GRUNT_WEATHER_INST_2         18

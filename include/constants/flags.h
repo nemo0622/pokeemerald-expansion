@@ -813,8 +813,8 @@
 #define FLAG_HIDE_CORSOLA_HAUOLI_BEACHFRONT                         0x2F8 // For Corsola/Mareanie event in Beachfront
 #define FLAG_GOT_SILK_SCARF                                         0x2F9 // From Old Woman in Hau'oli Shopping District
 #define FLAG_DID_MALASADA_SHOP_EVENT                                0x2FA // Meeting Hau outside the Malasada Shop in Hau'oli Shopping District
-#define FLAG_HIDE_DEOXYS                                            0x2FB
-#define FLAG_HIDE_BIRTH_ISLAND_DEOXYS_TRIANGLE                      0x2FC
+#define FLAG_MET_ILIMA_HAUOLI                                       0x2FB // Spoke to him, hasn't battled yet
+#define FLAG_HIDE_ILIMA_HAUOLI                                      0x2FC // Set after battling Ilima at Hau'oli Marina
 #define FLAG_HIDE_MAUVILLE_CITY_SCOTT                               0x2FD
 #define FLAG_HIDE_VERDANTURF_TOWN_SCOTT                             0x2FE
 #define FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT                  0x2FF

@@ -768,7 +768,7 @@ Pic: Alola Rising Star M
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer / Prediction
 Difficulty: Extreme
 
 Meowth Alola
@@ -799,31 +799,158 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Yawn
 - Water Gun
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
-Gender: Female
+=== TRAINER_SKULL_GRUNT_HAUOLI ===
+Name: Grunt
+Class: Alola Team Skull
+Pic: Alola Team Skull M
+Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
+Difficulty: Normal
 
-Carvanha
-Level: 36
+Zubat
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DECLAN ===
-Name: DECLAN
-Class: Swimmer M
-Pic: Swimmer M
+=== TRAINER_SKULL_GRUNT_HAUOLI ===
+Name: Grunt
+Class: Alola Team Skull
+Pic: Alola Team Skull M
 Gender: Male
-Music: Swimmer
+Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
+Difficulty: Hard
 
-Gyarados
-Level: 34
+Zubat
+Level: 9
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Leech Life
+- Astonish
+- Absorb
+- Bite
+
+Murkrow
+Level: 9
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Peck
+- Pursuit
+- Astonish
+
+=== TRAINER_SKULL_GRUNT_HAUOLI ===
+Name: Grunt
+Class: Alola Team Skull
+Pic: Alola Team Skull M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Prediction
+Difficulty: Extreme
+
+Zubat
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Life
+- Wing Attack
+- Astonish
+- Bite
+
+Murkrow
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wing Attack
+- Night Shade
+- Pursuit
+- Astonish
+
+Dewpider @ Leftovers
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Infestation
+- Spider Web
+- Bug Bite
+- Water Gun
+
+=== TRAINER_CAPTAIN_ILIMA_HAUOLI ===
+Name: Ilima
+Class: Alola Trial Captain
+Pic: Alola Ilima
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Difficulty: Normal
+
+Yungoos
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Pursuit
+- Leer
+
+Smeargle
+Level: 10
+Ability: Own Tempo
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Ember
+- Leafage
+- Water Gun
+
+=== TRAINER_CAPTAIN_ILIMA_HAUOLI ===
+Name: Ilima
+Class: Alola Trial Captain
+Pic: Alola Ilima
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Difficulty: Hard
+
+Yungoos @ Oran Berry
+Level: 10
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Tackle
+- Pursuit
+- Mud Slap
+- Bite
+
+Smeargle
+Level: 11
+Ability: Technician
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Tackle
+- Ember
+- Leafage
+- Water Gun
+
+=== TRAINER_CAPTAIN_ILIMA_HAUOLI ===
+Name: Ilima
+Class: Alola Trial Captain
+Pic: Alola Ilima
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction
+Difficulty: Extreme
+
+Yungoos
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tackle
+- Pursuit
+- Yawn
+- Bite
+
+Smeargle
+Level: 12
+Ability: Moody
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Protect
+- Flame Wheel
+- Razor Leaf
+- Bubble Beam
 
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
 Name: GRUNT

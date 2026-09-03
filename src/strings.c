@@ -1447,10 +1447,10 @@ const u8 gText_SubQuest3_Map4[] = _("Poni Island");
 
 // Subquests for QUEST_TRIAL_ILIMA
 const u8 gText_SubQuest4_Name1[] = _("Find Captain Ilima");
-const u8 gText_SubQuest4_Name2[] = _("Scaring Away Team Skull");
+const u8 gText_SubQuest4_Name2[] = _("The Right to Fight");
 const u8 gText_SubQuest4_Name3[] = _("Trial Time");
 const u8 gText_SubQuest4_Desc1[] = _("Look for Ilima, a pink-haired man,\nto begin the first Trial.");
-const u8 gText_SubQuest4_Desc2[] = _("Battle Team Skull alongside\nTrial Captain Ilima.");
+const u8 gText_SubQuest4_Desc2[] = _("Battle Ilima to prove your worth\nas a new Trainer.");
 const u8 gText_SubQuest4_Desc3[] = _("Begin Ilima's Trial!");
 const u8 gText_SubQuest4_Map1[] = _("Hau'oli City");
 const u8 gText_SubQuest4_Map2[] = _("Hau'oli City - Marina");

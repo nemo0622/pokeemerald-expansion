@@ -92,7 +92,7 @@
 
 // "Ilima's Trial" (QUEST_TRIAL_ILIMA) Subquests
 #define QUEST_TRIAL_ILIMA_SUBQUEST_1        22 // Find Captain Ilima
-#define QUEST_TRIAL_ILIMA_SUBQUEST_2        23 // Help Ilima fight off Team Skull
+#define QUEST_TRIAL_ILIMA_SUBQUEST_2        23 // Battle Ilima at the Marina
 #define QUEST_TRIAL_ILIMA_SUBQUEST_3        24 // Complete Ilima's Trial!
 
 

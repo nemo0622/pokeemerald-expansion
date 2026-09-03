@@ -585,6 +585,14 @@ static void Task_NemoRMUIMainInput(u8 taskId)
             sNemoRMUIState->infoWindowStatus = 1; // Open window
             BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);  // NOTE: This is pretty choppy, but if I set it to
                                                                         // 16, 0, 0 (fade into black), then you get artifacting. sooo
+            DestroySprite(&gSprites[sNemoRMUIState->cursorSpriteId]);
+            ClearStdWindowAndFrameToTransparent(WINDOW_0, TRUE);
+            RemoveWindow(WINDOW_0);
+            FreeAllWindowBuffers();
+            ResetSpriteData();
+            FreeAllSpritePalettes();
+            CopyBgTilemapBufferToVram(0);
+            
             SetMainCallback2(NemoRMUI_SetupCB);
         }
     }
@@ -646,7 +654,7 @@ static void Task_NemoRMUIInfoWindowInput(u8 taskId)
     {
         PlaySE(SE_PC_OFF);
 
-        if(sNemoRMUIState->infoWindowCounter >= 3) // This is to handle the data overflow fml
+        if(sNemoRMUIState->infoWindowCounter >= 30) // This is to handle the data overflow fml
         {
             sNemoRMUIState->infoWindowCounter = 0;
             BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
