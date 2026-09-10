@@ -44,6 +44,13 @@ static const u32 sFieldMugshotGfx_Skull_Grunt_M_Sad[] = INCGFX_U32("graphics/fie
 static const u32 sFieldMugshotGfx_Skull_Grunt_F_Normal[] = INCGFX_U32("graphics/field_mugshots/skull_grunt_f/normal.png", ".4bpp.smol");
 static const u32 sFieldMugshotGfx_Skull_Grunt_F_Sad[] = INCGFX_U32("graphics/field_mugshots/skull_grunt_f/sad.png", ".4bpp.smol");
 
+static const u32 sFieldMugshotGfx_Rotom_Dex_Normal[] = INCGFX_U32("graphics/field_mugshots/rotom_dex/normal.png", ".4bpp.smol");
+static const u32 sFieldMugshotGfx_Rotom_Dex_Laugh[] = INCGFX_U32("graphics/field_mugshots/rotom_dex/laugh.png", ".4bpp.smol");
+static const u32 sFieldMugshotGfx_Rotom_Dex_Intense[] = INCGFX_U32("graphics/field_mugshots/rotom_dex/intense.png", ".4bpp.smol");
+static const u32 sFieldMugshotGfx_Rotom_Dex_Sad[] = INCGFX_U32("graphics/field_mugshots/rotom_dex/sad.png", ".4bpp.smol");
+static const u32 sFieldMugshotGfx_Rotom_Dex_Other[] = INCGFX_U32("graphics/field_mugshots/rotom_dex/other.png", ".4bpp.smol");
+
+
 
 // Mugshot palettes
 static const u16 sFieldMugshotPal_Elio_Normal[] = INCGFX_U16("graphics/field_mugshots/elio/normal.png", ".gbapal");
@@ -87,6 +94,12 @@ static const u16 sFieldMugshotPal_Ilima_Normal[] = INCGFX_U16("graphics/field_mu
 
 static const u16 sFieldMugshotPal_Skull_Grunt_M[] = INCGFX_U16("graphics/field_mugshots/skull_grunt_m/normal.png", ".gbapal");
 static const u16 sFieldMugshotPal_Skull_Grunt_F[] = INCGFX_U16("graphics/field_mugshots/skull_grunt_f/normal.png", ".gbapal");
+
+static const u16 sFieldMugshotPal_Rotom_Dex_Normal[] = INCGFX_U16("graphics/field_mugshots/rotom_dex/normal.png", ".gbapal");
+static const u16 sFieldMugshotPal_Rotom_Dex_Laugh[] = INCGFX_U16("graphics/field_mugshots/rotom_dex/laugh.png", ".gbapal");
+static const u16 sFieldMugshotPal_Rotom_Dex_Intense[] = INCGFX_U16("graphics/field_mugshots/rotom_dex/intense.png", ".gbapal");
+static const u16 sFieldMugshotPal_Rotom_Dex_Sad[] = INCGFX_U16("graphics/field_mugshots/rotom_dex/sad.png", ".gbapal");
+static const u16 sFieldMugshotPal_Rotom_Dex_Other[] = INCGFX_U16("graphics/field_mugshots/rotom_dex/other.png", ".gbapal");
 
 
 struct MugshotGfx
@@ -457,6 +470,39 @@ static const struct MugshotGfx sFieldMugshots[MUGSHOT_COUNT][EMOTE_COUNT] =
         {
             .gfx = NULL,
             .pal = NULL,
+        },
+    },
+
+    [MUGSHOT_ROTOM_DEX] =
+    {
+        [EMOTION_NORMAL] =
+        {
+            .gfx = sFieldMugshotGfx_Rotom_Dex_Normal,
+            .pal = sFieldMugshotPal_Rotom_Dex_Normal,
+        },
+
+        [EMOTION_LAUGH] =
+        {
+            .gfx = sFieldMugshotGfx_Rotom_Dex_Laugh,
+            .pal = sFieldMugshotPal_Rotom_Dex_Laugh,
+        },
+
+        [EMOTION_INTENSE] =
+        {
+            .gfx = sFieldMugshotGfx_Rotom_Dex_Intense,
+            .pal = sFieldMugshotPal_Rotom_Dex_Intense,
+        },
+
+        [EMOTION_SAD] =
+        {
+            .gfx = sFieldMugshotGfx_Rotom_Dex_Sad,
+            .pal = sFieldMugshotPal_Rotom_Dex_Sad,
+        },
+
+        [EMOTION_OTHER] =
+        {
+            .gfx = sFieldMugshotGfx_Rotom_Dex_Other,
+            .pal = sFieldMugshotPal_Rotom_Dex_Other,
         },
     },
 };

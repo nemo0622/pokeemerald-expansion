@@ -25,6 +25,8 @@ Feature Branches:
 - Bivurnum: Overworld Encounters (in collaboration with HashtagMarky and rest of Expansion Team), Fishing Minigame
 - PSF: Quest Menu (in collaboration with Skeli and GhoulSlash)
 - Archie & Mudskip: Full Screen Start Menu, Field Mugshot System
+- HashtagMarky: Rotom Phone Start Menu
+- Pokédex code adapted from Pokabbie's Pokémon Emerald Rogue
 
 Tiles:
 - Zaebucca
@@ -32,6 +34,7 @@ Tiles:
 - Arex
 
 Sprites:
+- Zezitra: Alolan Region Map
 - LuigiTKO: Party Menu sprites!
 - BronzeSwagger: Professor Burnet
 

@@ -1747,7 +1747,7 @@ void UpdateTimeOfDay(void)
 bool32 MapHasNaturalLight(enum MapType mapType)
 {
     // Nemo addition (so if its effed that's why)
-    if(ArePlayerFieldControlsLocked() && gMain.savedCallback == CB2_ReturnToFullScreenStartMenu) // In quest menu; fixes OBJECT quest bug
+    if(ArePlayerFieldControlsLocked() && (gMain.savedCallback == CB2_ReturnToFullScreenStartMenu || gMain.savedCallback == CB2_ReturnToFieldWithOpenMenu)) // In quest menu; fixes OBJECT quest bug
         return FALSE;
     
     return (OW_ENABLE_DNS

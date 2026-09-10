@@ -65,14 +65,15 @@ script HauoliOutskirts_KukuiLab_Script_KukuiGivesDex
     delay(30)
     setflag(FLAG_SYS_DEXNAV_GET)
     playfanfare(MUS_OBTAIN_TMHM)
-    createplayerfieldmugshot
-	message(format("{SPEAKER NAME_PLAYER}Woah! It's the DexNav feature Grandpa's been talking about!"))
+    createfieldmugshot(MUGSHOT_ROTOM_DEX, EMOTION_LAUGH)
+    setspeaker("Rotom")
+	message(format("Woo-hoo, I've got the {COLOR GREEN}DexNav{COLOR DARK_GRAY} now! I just love the feeling of having new featurezz added!"))
 	waitmessage
 	waitfanfare
 	closemessage
     setspeaker("Prof. Kukui")
     createfieldmugshot(MUGSHOT_PROF_KUKUI)
-    msgbox(format("The {COLOR GREEN}DexNav{COLOR DARK_GRAY} add-on lets you see what Pokémon can be found in your area. You can even choose a Pokémon to chase down, yeah!\p You can use the DexNav by {COLOR BLUE}pressing Select{COLOR DARK_GRAY} in the Rotom Dex Menu."))
+    msgbox(format("The {COLOR GREEN}DexNav{COLOR DARK_GRAY} add-on lets you see what Pokémon can be found in your area. You can even choose a Pokémon to chase down, yeah!\p You can use the DexNav in {COLOR BLUE}Rotom Reality{COLOR DARK_GRAY} in the Rotom Dex Menu."))
     closemessage
 
     // Sends Player to Alola Leo School and Hau'oli City!

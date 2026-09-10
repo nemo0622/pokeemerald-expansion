@@ -417,7 +417,7 @@ static void SetupPokedexViewDefault()
 void Nemo_ShowPokedexFromMenu(void)
 {
     SetupPokedexViewDefault();
-    gMain.savedCallback = CB2_ReturnToFullScreenStartMenu; // was CB2_ReturnToFieldWithOpenMenu
+    gMain.savedCallback = CB2_ReturnToFieldWithOpenMenu; // was CB2_ReturnToFullScreenStartMenu
 }
 
 void Nemo_ShowPokedexFromScript(void)

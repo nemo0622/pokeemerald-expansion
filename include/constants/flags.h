@@ -71,7 +71,7 @@
 #define FLAG_GOT_PSYCHIC_Z_CRYSTAL      0x30
 #define FLAG_GOT_STEEL_Z_CRYSTAL        0x31
 
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
+#define FLAG_UNLOCKED_ROTOM_PHONE       0x32
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag

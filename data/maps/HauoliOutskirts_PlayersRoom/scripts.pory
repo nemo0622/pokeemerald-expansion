@@ -228,14 +228,17 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 	msgbox(format("Oh! I got so lost in your Pokémon, I forgot to give you this!"))
 	closemessage
 	playfanfare(MUS_OBTAIN_TMHM)
-	createplayerfieldmugshot
-	message(format("{SPEAKER NAME_PLAYER}Woah, it's a {COLOR GREEN}Rotom Dex{COLOR DARK_GRAY}!"))
+	message(format("Professor Kukui handed you a {COLOR GREEN}Rotom Dex{COLOR DARK_GRAY}!"))
 	waitmessage
 	waitfanfare
 	closemessage
+	createfieldmugshot(MUGSHOT_ROTOM_DEX)
+	setspeaker("Rotom")
+	msgbox(format("Uh, hey there! P-pleasure to meet you! I-I'm not nervouzzz or anything, OK?!"))
+	closemessage
 	createfieldmugshot(MUGSHOT_PROF_KUKUI)
 	setspeaker("Prof. Kukui")
-	msgbox(format("That's right, cousin! The {COLOR GREEN}Rotom Dex{COLOR DARK_GRAY} is a companion for your journey."))
+	msgbox(format("Hey, how about that! The {COLOR GREEN}Rotom Dex{COLOR DARK_GRAY} is a companion for your journey."))
 	waitmessage
 	createfieldmugshot(MUGSHOT_PROF_KUKUI, EMOTION_OTHER)
 	setspeaker("Prof. Kukui")
@@ -243,7 +246,7 @@ script HauoliOutskirts_PlayersHouse_Script_MomMeetsStarter
 	waitmessage
 	createfieldmugshot(MUGSHOT_PROF_KUKUI, EMOTION_NORMAL)
 	setspeaker("Prof. Kukui")
-	msgbox(format("If you ever have a question, ask Rotom - {COLOR BLUE}press Start to turn it on{COLOR DARK_GRAY}!"))
+	msgbox(format("If you ever have a question, ask Rotom - {COLOR BLUE}press Start to turn it on{COLOR DARK_GRAY}, and it'll project a whole menu of things to do!"))
 	closemessage
 
 	// Start Pokédex challenge, unlocking all 4 subquests

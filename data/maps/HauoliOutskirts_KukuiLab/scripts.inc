@@ -120,80 +120,82 @@ HauoliOutskirts_KukuiLab_Script_KukuiGivesDex::
 # 67 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	playfanfare MUS_OBTAIN_TMHM
 # 68 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	createplayerfieldmugshot
+	createfieldmugshot MUGSHOT_ROTOM_DEX, EMOTION_LAUGH
 # 69 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	message HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_8
+	setspeaker HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_8
 # 70 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	waitmessage
+	message HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_9
 # 71 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	waitfanfare
+	waitmessage
 # 72 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	closemessage
+	waitfanfare
 # 73 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	setspeaker HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_2
+	closemessage
 # 74 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	createfieldmugshot MUGSHOT_PROF_KUKUI
-# 75 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	msgbox HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_9
-# 76 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	closemessage
-# 79 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	delay 10
-# 80 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	applymovement 1, HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Movement_6
-# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	applymovement 4, HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Movement_7
-# 82 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	waitmovement 1
-# 83 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
-# 84 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	waitmovement 0
-# 85 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	delay 10
-# 86 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	setspeaker HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_0
-# 87 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	createfieldmugshot MUGSHOT_LILLIE_HAT
-# 88 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	msgbox HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_10
-# 89 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	closemessage
-# 90 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
-# 91 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	applymovement 2, HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Movement_8
-# 92 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	waitmovement 0
-# 93 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	setspeaker HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_2
-# 94 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 75 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	createfieldmugshot MUGSHOT_PROF_KUKUI
-# 95 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	msgbox HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_11
-# 96 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 76 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	msgbox HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_10
+# 77 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	closemessage
-# 98 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 80 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	delay 10
+# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	applymovement 1, HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Movement_6
+# 82 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	applymovement 4, HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Movement_7
+# 83 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	waitmovement 1
+# 84 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+# 85 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	waitmovement 0
+# 86 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	delay 10
+# 87 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	setspeaker HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_0
+# 88 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	createfieldmugshot MUGSHOT_LILLIE_HAT
+# 89 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	msgbox HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_11
+# 90 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	closemessage
+# 91 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+# 92 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	applymovement 2, HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Movement_8
+# 93 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	waitmovement 0
+# 94 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	setspeaker HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_2
+# 95 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	createfieldmugshot MUGSHOT_PROF_KUKUI
+# 96 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	msgbox HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_12
+# 97 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	closemessage
 # 99 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	delay 10
 # 100 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	delay 30
+	fadescreen FADE_TO_BLACK
 # 101 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	setflag FLAG_HIDE_LILLIE_HAUOLI_OUTSKIRTS
-# 102 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	removeobject 1
-# 103 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	removeobject 4
-# 104 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	delay 30
+# 102 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	setflag FLAG_HIDE_LILLIE_HAUOLI_OUTSKIRTS
+# 103 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	removeobject 1
+# 104 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	removeobject 4
 # 105 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	delay 30
 # 106 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 107 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	delay 20
-# 108 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 109 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	startsubquest QUEST_WELCOME_TO_ALOLA, QUEST_WELCOME_TO_ALOLA_SUBQUEST_6
-# 110 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 111 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	releaseall
 	end
 
@@ -268,35 +270,35 @@ HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Movement_5:
 # 55 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	step_end
 
-# 80 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Movement_6:
-# 80 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	walk_up
-# 80 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	walk_right
-# 80 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	walk_right
-# 80 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	face_up
-# 80 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	step_end
 
-# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 82 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Movement_7:
-# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 82 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	walk_up
-# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 82 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	walk_up
-# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 82 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	walk_right
-# 81 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 82 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	step_end
 
-# 91 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 92 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Movement_8:
-# 91 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 92 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	walk_in_place_right
-# 91 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 92 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	walk_in_place_right
 	step_end
 
@@ -338,20 +340,25 @@ HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_7:
 
 HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_8:
 # 69 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
-	.string "{SPEAKER NAME_PLAYER}Woah! It's the DexNav feature\n"
-	.string "Grandpa's been talking about!$"
+	.string "Rotom$"
 
 HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_9:
-# 75 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+# 70 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+	.string "Woo-hoo, I've got the {COLOR GREEN}DexNav{COLOR DARK_GRAY} now! I\n"
+	.string "just love the feeling of having new\l"
+	.string "featurezz added!$"
+
+HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_10:
+# 76 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	.string "The {COLOR GREEN}DexNav{COLOR DARK_GRAY} add-on lets you see what\n"
 	.string "Pokémon can be found in your area. You\l"
 	.string "can even choose a Pokémon to chase\l"
 	.string "down, yeah!\p"
-	.string "You can use the DexNav by {COLOR BLUE}pressing\n"
-	.string "Select{COLOR DARK_GRAY} in the Rotom Dex Menu.$"
+	.string "You can use the DexNav in {COLOR BLUE}Rotom Reality{COLOR DARK_GRAY}\n"
+	.string "in the Rotom Dex Menu.$"
 
-HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_10:
-# 88 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_11:
+# 89 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	.string "Professor Kukui told me about the {COLOR GREEN}Alola\n"
 	.string "Leo Trainer School{COLOR DARK_GRAY}, just west of here.\l"
 	.string "He said it's a good place to learn about\l"
@@ -361,8 +368,8 @@ HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_10:
 	.string "could learn about training Pokémon\l"
 	.string "together!$"
 
-HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_11:
-# 95 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
+HauoliOutskirts_KukuiLab_Script_KukuiGivesDex_Text_12:
+# 96 "data//maps/HauoliOutskirts_KukuiLab/scripts.pory"
 	.string "That's a great idea! You should learn\n"
 	.string "more about Pokémon and the Alola\l"
 	.string "Region before you venture off on your\l"

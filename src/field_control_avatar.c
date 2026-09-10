@@ -26,6 +26,7 @@
 #include "metatile_behavior.h"
 #include "overworld.h"
 #include "pokemon.h"
+#include "rotom_start_menu.h"
 #include "safari_zone.h"
 #include "script.h"
 #include "secret_base.h"
@@ -228,7 +229,8 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     {
         FlagSet(FLAG_OPENED_START_MENU);
         PlaySE(SE_WIN_OPEN);
-        ShowStartMenu();
+        // ShowStartMenu();
+        RotomPhone_StartMenu_Open(TRUE);
         return TRUE;
     }
 
