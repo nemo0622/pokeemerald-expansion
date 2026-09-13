@@ -44,6 +44,7 @@ void HideFollowerForFieldEffect(void);
 void StartEscalatorWarp(u8 metatileBehavior, u8 priority);
 void StartLavaridgeGymB1FWarp(u8 priority);
 void StartLavaridgeGym1FWarp(u8 priority);
+void FieldCallback_FlyIntoMap(void);
 
 void SpriteCB_AshPuff(struct Sprite *sprite);
 void SpriteCB_AshLaunch(struct Sprite *sprite);

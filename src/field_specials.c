@@ -1010,7 +1010,7 @@ u8 GetLeadMonFriendshipScore(void)
 static void CB2_FieldShowRegionMap(void)
 {
     // FieldInitRegionMap(CB2_ReturnToFieldContinueScriptPlayMapMusic);
-    NemoRMUI_Init(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+    NemoRMUI_Init(CB2_ReturnToFieldContinueScriptPlayMapMusic, FALSE);
 }
 
 void FieldShowRegionMap(void)

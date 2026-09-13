@@ -32,6 +32,10 @@
 #include "region_map.h"
 #include "international_string_util.h"
 #include "event_data.h"
+#include "field_effect.h"
+#include "heal_location.h"
+#include "strings.h"
+#include "constants/heal_locations.h"
 #include "constants/rgb.h"
 
 // Can be called/tracked all across the script I believe
@@ -47,6 +51,7 @@ struct NemoRMUIState
     u8 cursorMoveFrameTimer;
     u8 infoWindowStatus; // 0 = closed (normal), 1 = open
     u8 infoWindowCounter; // Returns player to overworld every like 5-ish window opens to avoid memory overflow #chopped
+    u8 isFlyMode;
 };
 
 enum WindowIds
@@ -182,6 +187,7 @@ static void Task_NemoRMUIMainInput(u8 taskId);
 static void Task_NemoRMUIInfoWindowInput(u8 taskId);
 static void Task_NemoRMUIWaitFadeAndBail(u8 taskId);
 static void Task_NemoRMUIWaitFadeAndExitGracefully(u8 taskId);
+static void Task_NemoRMUIWaitFadeAndFly(u8 taskId);
 
 // Sample UI helper functions
 // static void NemoRMUI_Init(MainCallback callback);
@@ -192,6 +198,8 @@ static bool8 NemoRMUI_LoadGraphics(void);
 static bool8 NemoRMUI_LoadInfoWindowGraphics(void);
 static void NemoRMUI_InitWindows(void);
 static void NemoRMUI_FreeResources(void);
+
+static void SetAlolaFlyDestination(u8);
 
 static void NemoRMUI_DisplayCursorLocation(void);
 static u8 NemoRMUI_GetMapHeaderFromCursorXY(u8, u8);
@@ -380,18 +388,41 @@ static void NemoRMUI_DisplayPlayerHead(void)
     }
 }
 
+// MUST BE UPDATED WITH EVERY NEW MAPSEC that can be flied to (List of fly locations in flags.h)!
+static u8 GetMapsecType(u16 mapSecId)
+{
+    switch(mapSecId)
+    {
+        case MAPSEC_NONE:
+            return MAPSECTYPE_NONE;
+        case MAPSEC_HAUOLI_OUTSKIRTS:
+            return MAPSECTYPE_CITY_CANFLY; // Can always fly home yay
+        case MAPSEC_IKI_TOWN:
+            return FlagGet(FLAG_VISITED_IKI_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        case MAPSEC_HAUOLI_CITY:
+            return FlagGet(FLAG_VISITED_HAUOLI_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        default:
+            return MAPSECTYPE_ROUTE;
+    }
+}
+
+
+
+
 // Declared in sample_ui.h
+// This isnt actually used for the region map lol
 void Task_OpenNemoRegionMap_BlankTemplate(u8 taskId)
 {
     if (!gPaletteFade.active)
     {
         CleanupOverworldWindowsAndTilemaps();
-        NemoRMUI_Init(CB2_ReturnToFieldWithOpenMenu);
+        NemoRMUI_Init(CB2_ReturnToFieldWithOpenMenu, FALSE);
         DestroyTask(taskId);
     }
 }
 
-void NemoRMUI_Init(MainCallback callback)
+// THIS is called in field_specials.c to open the menu!
+void NemoRMUI_Init(MainCallback callback, u8 isFlyMode)
 {
     sNemoRMUIState = AllocZeroed(sizeof(struct NemoRMUIState));
     if (sNemoRMUIState == NULL)
@@ -402,6 +433,7 @@ void NemoRMUI_Init(MainCallback callback)
 
     sNemoRMUIState->loadState = 0;
     sNemoRMUIState->savedCallback = callback;
+    sNemoRMUIState->isFlyMode = isFlyMode;
 
     SetMainCallback2(NemoRMUI_SetupCB);
 }
@@ -579,21 +611,35 @@ static void Task_NemoRMUIMainInput(u8 taskId)
     {
         if(NemoRMUI_GetMapHeaderFromCursorXY(sNemoRMUIState->cursorPosX, sNemoRMUIState->cursorPosY) != MAPSEC_NONE)
         {
-            PlaySE(SE_SELECT);
 
-            // Just fuckin reload the whole menu i guess LMAO
-            sNemoRMUIState->infoWindowStatus = 1; // Open window
-            BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);  // NOTE: This is pretty choppy, but if I set it to
-                                                                        // 16, 0, 0 (fade into black), then you get artifacting. sooo
-            DestroySprite(&gSprites[sNemoRMUIState->cursorSpriteId]);
-            ClearStdWindowAndFrameToTransparent(WINDOW_0, TRUE);
-            RemoveWindow(WINDOW_0);
-            FreeAllWindowBuffers();
-            ResetSpriteData();
-            FreeAllSpritePalettes();
-            CopyBgTilemapBufferToVram(0);
-            
-            SetMainCallback2(NemoRMUI_SetupCB);
+            if(sNemoRMUIState->isFlyMode) // Try to fly to location!
+            {
+                if (GetMapsecType(NemoRMUI_GetMapHeaderFromCursorXY(sNemoRMUIState->cursorPosX, sNemoRMUIState->cursorPosY)) == MAPSECTYPE_CITY_CANFLY
+                    && Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
+                {
+                    PlaySE(SE_SELECT);
+                    BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+                    gTasks[taskId].func = Task_NemoRMUIWaitFadeAndFly;
+                }
+            }
+            else // Not flying; open Info window
+            {
+                PlaySE(SE_SELECT);
+
+                // Just fuckin reload the whole menu i guess LMAO
+                sNemoRMUIState->infoWindowStatus = 1; // Open window
+                BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);  // NOTE: This is pretty choppy, but if I set it to
+                                                                            // 16, 0, 0 (fade into black), then you get artifacting. sooo
+                DestroySprite(&gSprites[sNemoRMUIState->cursorSpriteId]);
+                ClearStdWindowAndFrameToTransparent(WINDOW_0, TRUE);
+                RemoveWindow(WINDOW_0);
+                FreeAllWindowBuffers();
+                ResetSpriteData();
+                FreeAllSpritePalettes();
+                CopyBgTilemapBufferToVram(0);
+                
+                SetMainCallback2(NemoRMUI_SetupCB);
+            }
         }
     }
 
@@ -704,6 +750,24 @@ static void Task_NemoRMUIWaitFadeAndExitGracefully(u8 taskId)
     {
         SetMainCallback2(sNemoRMUIState->savedCallback);
         NemoRMUI_FreeResources();
+        DestroyTask(taskId);
+    }
+}
+
+static void Task_NemoRMUIWaitFadeAndFly(u8 taskId)
+{
+    if (!gPaletteFade.active)
+    {
+        SetAlolaFlyDestination(NemoRMUI_GetMapHeaderFromCursorXY(sNemoRMUIState->cursorPosX, sNemoRMUIState->cursorPosY));
+        // ReturnToFieldFromFlyMapSelect();
+        // NemoRMUI_FreeResources();
+        // DestroyTask(taskId);
+
+        // Code right from field_effects.c I think
+        Overworld_ResetStateAfterFly();
+        WarpIntoMap();
+        SetMainCallback2(CB2_LoadMap);
+        gFieldCallback = FieldCallback_FlyIntoMap;
         DestroyTask(taskId);
     }
 }
@@ -822,16 +886,51 @@ static void NemoRMUI_DisplayCursorLocation(void)
     // Part 2: Print the map's name on the top window
     FillWindowPixelBuffer(WINDOW_0, PIXEL_FILL(TEXT_COLOR_TRANSPARENT));
 
-    // Get map name of where cursor is
-    GetMapName(gStringVar3, NemoRMUI_GetMapHeaderFromCursorXY(sNemoRMUIState->cursorPosX, sNemoRMUIState->cursorPosY), 0);
+    u8 mapSecId = NemoRMUI_GetMapHeaderFromCursorXY(sNemoRMUIState->cursorPosX, sNemoRMUIState->cursorPosY);
+    u8 mapSecType = GetMapsecType(mapSecId);
+
     // Print text
-    AddTextPrinterParameterized3(WINDOW_0, FONT_NORMAL, GetStringCenterAlignXOffset(1, gStringVar3, 112) + 49,
-                                 6, sNemoRMUIWindowFontColors[FONT_BLACK], TEXT_SKIP_DRAW, gStringVar3);
+    if(!sNemoRMUIState->isFlyMode)
+    {
+        // Buffer map name to gStringVar3
+        GetMapName(gStringVar3, mapSecId, 0);
+        AddTextPrinterParameterized3(WINDOW_0, FONT_NORMAL, GetStringCenterAlignXOffset(FONT_NORMAL, gStringVar3, sNemoRMUIWindowTemplates[WINDOW_0].width * 8), 6, sNemoRMUIWindowFontColors[FONT_BLACK], TEXT_SKIP_DRAW, gStringVar3);        
+    }
+    else
+    {
+        // Fly to gStringVar3
+        if(mapSecId < MAPSEC_NONE)
+        {
+            StringCopy(gStringVar3, COMPOUND_STRING("Fly to "));
+            StringAppend(gStringVar3, gRegionMapEntries[mapSecId].name);
+            StringAppend(gStringVar3, COMPOUND_STRING("?"));
+
+            u16 offset = GetStringCenterAlignXOffset(FONT_NARROWER, gStringVar3, sNemoRMUIWindowTemplates[WINDOW_0].width * 8);
+
+            switch (mapSecType)
+            {
+                case MAPSECTYPE_CITY_CANFLY:
+                    AddTextPrinterParameterized3(WINDOW_0, FONT_NARROWER, offset, 5, sNemoRMUIWindowFontColors[FONT_BLACK], TEXT_SKIP_DRAW, gStringVar3);
+                    break;
+                case MAPSECTYPE_CITY_CANTFLY:
+                    AddTextPrinterParameterized3(WINDOW_0, FONT_NARROWER, GetStringCenterAlignXOffset(FONT_NARROWER, COMPOUND_STRING("Visit this area to Fly there!"), sNemoRMUIWindowTemplates[WINDOW_0].width * 8), 5, sNemoRMUIWindowFontColors[FONT_RED], TEXT_SKIP_DRAW, COMPOUND_STRING("Visit this area to Fly there!"));
+                    break;
+                default:
+                    AddTextPrinterParameterized3(WINDOW_0, FONT_NARROWER, GetStringCenterAlignXOffset(FONT_NARROWER, COMPOUND_STRING("Select a location to Fly to!"), sNemoRMUIWindowTemplates[WINDOW_0].width * 8), 5, sNemoRMUIWindowFontColors[FONT_BLACK], TEXT_SKIP_DRAW, COMPOUND_STRING("Select a location to Fly to!"));
+                    break;
+            }
+        }
+        else
+        {
+            StringCopy(gStringVar3, COMPOUND_STRING("Select a location to Fly to!"));
+
+            u16 offset = GetStringCenterAlignXOffset(FONT_NARROWER, gStringVar3, sNemoRMUIWindowTemplates[WINDOW_0].width * 8);
+            AddTextPrinterParameterized3(WINDOW_0, FONT_NARROWER, offset, 5, sNemoRMUIWindowFontColors[FONT_BLACK], TEXT_SKIP_DRAW, gStringVar3);
+        }
+    }
 
     CopyWindowToVram(WINDOW_0, COPYWIN_GFX);
 }
-
-
 
 static void NemoRMUI_FreeResources(void)
 {
@@ -845,4 +944,42 @@ static void NemoRMUI_FreeResources(void)
     }
     FreeAllWindowBuffers();
     ResetSpriteData();
+}
+
+
+// ---------------------------------------------- FLY STUFF ------------------------------------------------------
+
+// 9/12/26 Notes
+// Currently known bugs with this system:
+//      - <Check> Fade out from map flashes magenta and isn't smooth
+//      - <Check> Day/Night cycle isn't represented on fly animation
+//      - <Check> Fly animation uses banner and broken generic bird sprite lol
+//      - If map is closed without choosing a location, the Day/Night cycle is broken
+//      - Change: If location cannot be flown to, display location name in Red text!
+//      - Change: Remember that all maps open with Fly Mode active right now! Need to disable that
+//        and save it for the PokeRide system
+
+// MUST BE UPDATED WITH EVERY NEW MAPSEC (For those w/o fly locations, just put HEAL_LOCATION_NONE)
+static const u8 sMapHealLocations[][3] =
+{
+    [MAPSEC_HAUOLI_OUTSKIRTS] = {MAP_GROUP(MAP_HAUOLI_OUTSKIRTS), MAP_NUM(MAP_HAUOLI_OUTSKIRTS), HEAL_LOCATION_HAUOLI_OUTSKIRTS},
+    [MAPSEC_ROUTE_1] = {MAP_GROUP(MAP_ROUTE_01), MAP_NUM(MAP_ROUTE_01), HEAL_LOCATION_NONE},
+    [MAPSEC_IKI_TOWN] = {MAP_GROUP(MAP_IKI_TOWN), MAP_NUM(MAP_IKI_TOWN), HEAL_LOCATION_IKI_TOWN},
+    [MAPSEC_ALOLA_LEO_SCHOOL] = {MAP_GROUP(MAP_ALOLA_LEO_ROAD), MAP_NUM(MAP_ALOLA_LEO_ROAD), HEAL_LOCATION_ALOLA_LEO_ROAD},
+    [MAPSEC_HAUOLI_CITY] = {MAP_GROUP(MAP_HAUOLI_SHOPPING_DISTRICT), MAP_NUM(MAP_HAUOLI_SHOPPING_DISTRICT), HEAL_LOCATION_HAUOLI_SHOPPING_DISTRICT},
+    [MAPSEC_MAHALO_TRAIL] = {MAP_GROUP(MAP_MAHALO_TRAIL), MAP_NUM(MAP_MAHALO_TRAIL), HEAL_LOCATION_NONE},
+};
+
+static void SetAlolaFlyDestination(u8 mapSecId)
+{
+    u32 flyDestination = 0;
+    if (sMapHealLocations[mapSecId][2] != HEAL_LOCATION_NONE)
+        flyDestination = sMapHealLocations[mapSecId][2];
+    else
+        flyDestination = WARP_ID_NONE;
+
+    if (flyDestination != WARP_ID_NONE)
+        SetWarpDestinationToHealLocation(flyDestination);
+    else
+        SetWarpDestinationToMapWarp(sMapHealLocations[mapSecId][0], sMapHealLocations[mapSecId][1], WARP_ID_NONE);
 }

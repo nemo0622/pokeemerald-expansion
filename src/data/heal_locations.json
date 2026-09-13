@@ -365,6 +365,12 @@
       "map": "MAP_HAUOLI_SHOPPING_DISTRICT",
       "x": 33,
       "y": 20
+    },
+    {
+      "id": "HEAL_LOCATION_IKI_TOWN",
+      "map": "MAP_IKI_TOWN",
+      "x": 20,
+      "y": 4
     }
   ]
 }

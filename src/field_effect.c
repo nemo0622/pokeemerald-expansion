@@ -78,7 +78,7 @@ static void PokeballGlowEffect_Idle(struct Sprite *);
 static void SpriteCB_PokeballGlow(struct Sprite *);
 
 static void Task_UseFly(u8);
-static void FieldCallback_FlyIntoMap(void);
+// static void FieldCallback_FlyIntoMap(void);
 static void Task_FlyIntoMap(u8);
 
 static void Task_FallWarpFieldEffect(u8);
@@ -1543,7 +1543,7 @@ static void Task_UseFly(u8 taskId)
 
 #undef taskState
 
-static void FieldCallback_FlyIntoMap(void)
+void FieldCallback_FlyIntoMap(void)
 {
     Overworld_PlaySpecialMapMusic();
     FadeInFromBlack();
@@ -2916,13 +2916,13 @@ static void TeleportWarpInFieldEffect_SpinGround(struct Task *task)
 // For both the background streaks move to the right, and the mon sprite enters from the right and exits left
 bool8 FldEff_FieldMoveShowMon(void)
 {
-    u8 taskId;
-    if (IsMapTypeOutdoors(GetCurrentMapType()) == TRUE)
-        taskId = CreateTask(Task_FieldMoveShowMonOutdoors, 0xff);
-    else
-        taskId = CreateTask(Task_FieldMoveShowMonIndoors, 0xff);
+    // u8 taskId;
+    // if (IsMapTypeOutdoors(GetCurrentMapType()) == TRUE)
+    //     taskId = CreateTask(Task_FieldMoveShowMonOutdoors, 0xff);
+    // else
+    //     taskId = CreateTask(Task_FieldMoveShowMonIndoors, 0xff);
 
-    gTasks[taskId].tMonSpriteId = InitFieldMoveMonSprite(gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+    // gTasks[taskId].tMonSpriteId = InitFieldMoveMonSprite(gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
     return FALSE;
 }
 
@@ -2930,15 +2930,15 @@ bool8 FldEff_FieldMoveShowMon(void)
 
 bool8 FldEff_FieldMoveShowMonInit(void)
 {
-    struct Pokemon *pokemon;
-    bool32 noDucking = gFieldEffectArguments[0] & SHOW_MON_CRY_NO_DUCKING;
-    pokemon = &gPlayerParty[(u8)gFieldEffectArguments[0]];
-    gFieldEffectArguments[0] = GetMonData(pokemon, MON_DATA_SPECIES);
-    gFieldEffectArguments[1] = GetMonData(pokemon, MON_DATA_IS_SHINY);
-    gFieldEffectArguments[2] = GetMonData(pokemon, MON_DATA_PERSONALITY);
-    gFieldEffectArguments[0] |= noDucking;
-    FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON);
-    FieldEffectActiveListRemove(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
+    // struct Pokemon *pokemon;
+    // bool32 noDucking = gFieldEffectArguments[0] & SHOW_MON_CRY_NO_DUCKING;
+    // pokemon = &gPlayerParty[(u8)gFieldEffectArguments[0]];
+    // gFieldEffectArguments[0] = GetMonData(pokemon, MON_DATA_SPECIES);
+    // gFieldEffectArguments[1] = GetMonData(pokemon, MON_DATA_IS_SHINY);
+    // gFieldEffectArguments[2] = GetMonData(pokemon, MON_DATA_PERSONALITY);
+    // gFieldEffectArguments[0] |= noDucking;
+    // FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON);
+    // FieldEffectActiveListRemove(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
     return FALSE;
 }
 

@@ -17,6 +17,6 @@
 
 // Launch the blank template version of the UI
 void Task_OpenNemoRegionMap_BlankTemplate(u8 taskId);
-void NemoRMUI_Init(MainCallback callback);
+void NemoRMUI_Init(MainCallback callback, u8 isFlyMode);
 
 #endif

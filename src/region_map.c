@@ -1431,37 +1431,37 @@ static u8 GetMapsecType(mapsec_u16_t mapSecId)
     case MAPSEC_NONE:
         return MAPSECTYPE_NONE;
     case MAPSEC_LITTLEROOT_TOWN:
-        return FlagGet(FLAG_VISITED_LITTLEROOT_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        return FlagGet(FLAG_VISITED_IKI_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_OLDALE_TOWN:
-    //     return FlagGet(FLAG_VISITED_OLDALE_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_HAUOLI_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_DEWFORD_TOWN:
-    //     return FlagGet(FLAG_VISITED_DEWFORD_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_HEAHEA_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_LAVARIDGE_TOWN:
-    //     return FlagGet(FLAG_VISITED_LAVARIDGE_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_PANIOLA_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_FALLARBOR_TOWN:
-    //     return FlagGet(FLAG_VISITED_FALLARBOR_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_ROYAL_AVENUE) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_VERDANTURF_TOWN:
-    //     return FlagGet(FLAG_VISITED_VERDANTURF_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_KONIKONI_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_PACIFIDLOG_TOWN:
-    //     return FlagGet(FLAG_VISITED_PACIFIDLOG_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_MALIE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_PETALBURG_CITY:
-    //     return FlagGet(FLAG_VISITED_PETALBURG_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_MT_HOKULANI) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_SLATEPORT_CITY:
-    //     return FlagGet(FLAG_VISITED_SLATEPORT_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_TAPU_VILLAGE) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_MAUVILLE_CITY:
-    //     return FlagGet(FLAG_VISITED_MAUVILLE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_PO_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_RUSTBORO_CITY:
-    //     return FlagGet(FLAG_VISITED_RUSTBORO_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_AETHER_PARADISE) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_FORTREE_CITY:
-    //     return FlagGet(FLAG_VISITED_FORTREE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_SEAFOLK_VILLAGE) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_LILYCOVE_CITY:
-    //     return FlagGet(FLAG_VISITED_LILYCOVE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_EXEGGUTOR_ISLAND) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_MOSSDEEP_CITY:
-    //     return FlagGet(FLAG_VISITED_MOSSDEEP_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_BATTLE_TREE) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_SOOTOPOLIS_CITY:
-    //     return FlagGet(FLAG_VISITED_SOOTOPOLIS_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_LOCATION_15) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_EVER_GRANDE_CITY:
-    //     return FlagGet(FLAG_VISITED_EVER_GRANDE_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    //     return FlagGet(FLAG_VISITED_LOCATION_16) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     // case MAPSEC_BATTLE_FRONTIER:
     //     return FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_NONE;
     // case MAPSEC_SOUTHERN_ISLAND:
@@ -2147,82 +2147,82 @@ static const struct FlyLocation sFlyLocations[] =
     {
         .regionMapType = REGION_MAP_HOENN,
         .mapsec = MAPSEC_LITTLEROOT_TOWN,
-        .flag = FLAG_VISITED_LITTLEROOT_TOWN,
+        .flag = FLAG_VISITED_IKI_TOWN,
     },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_OLDALE_TOWN,
-    //     .flag = FLAG_VISITED_OLDALE_TOWN,
+    //     .flag = FLAG_VISITED_HAUOLI_CITY,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_DEWFORD_TOWN,
-    //     .flag = FLAG_VISITED_DEWFORD_TOWN,
+    //     .flag = FLAG_VISITED_HEAHEA_CITY,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_LAVARIDGE_TOWN,
-    //     .flag = FLAG_VISITED_LAVARIDGE_TOWN,
+    //     .flag = FLAG_VISITED_PANIOLA_TOWN,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_FALLARBOR_TOWN,
-    //     .flag = FLAG_VISITED_FALLARBOR_TOWN,
+    //     .flag = FLAG_VISITED_ROYAL_AVENUE,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_VERDANTURF_TOWN,
-    //     .flag = FLAG_VISITED_VERDANTURF_TOWN,
+    //     .flag = FLAG_VISITED_KONIKONI_CITY,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_PACIFIDLOG_TOWN,
-    //     .flag = FLAG_VISITED_PACIFIDLOG_TOWN,
+    //     .flag = FLAG_VISITED_MALIE_CITY,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_PETALBURG_CITY,
-    //     .flag = FLAG_VISITED_PETALBURG_CITY,
+    //     .flag = FLAG_VISITED_MT_HOKULANI,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_SLATEPORT_CITY,
-    //     .flag = FLAG_VISITED_SLATEPORT_CITY,
+    //     .flag = FLAG_VISITED_TAPU_VILLAGE,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_MAUVILLE_CITY,
-    //     .flag = FLAG_VISITED_MAUVILLE_CITY,
+    //     .flag = FLAG_VISITED_PO_TOWN,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_RUSTBORO_CITY,
-    //     .flag = FLAG_VISITED_RUSTBORO_CITY,
+    //     .flag = FLAG_VISITED_AETHER_PARADISE,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_FORTREE_CITY,
-    //     .flag = FLAG_VISITED_FORTREE_CITY,
+    //     .flag = FLAG_VISITED_SEAFOLK_VILLAGE,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_LILYCOVE_CITY,
-    //     .flag = FLAG_VISITED_LILYCOVE_CITY,
+    //     .flag = FLAG_VISITED_EXEGGUTOR_ISLAND,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_MOSSDEEP_CITY,
-    //     .flag = FLAG_VISITED_MOSSDEEP_CITY,
+    //     .flag = FLAG_VISITED_BATTLE_TREE,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_SOOTOPOLIS_CITY,
-    //     .flag = FLAG_VISITED_SOOTOPOLIS_CITY,
+    //     .flag = FLAG_VISITED_LOCATION_15,
     // },
     // {
     //     .regionMapType = REGION_MAP_HOENN,
     //     .mapsec = MAPSEC_EVER_GRANDE_CITY,
-    //     .flag = FLAG_VISITED_EVER_GRANDE_CITY,
+    //     .flag = FLAG_VISITED_LOCATION_16,
     // },
     // {
     //     .regionMapType = REGION_MAP_KANTO,

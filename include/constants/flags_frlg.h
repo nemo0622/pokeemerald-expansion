@@ -2498,22 +2498,22 @@
 #define FLAG_UNLOCKED_TRENDY_SAYINGS                 0
 
 // Towns and Cities
-#define FLAG_VISITED_LITTLEROOT_TOWN                0
-#define FLAG_VISITED_OLDALE_TOWN                    0
-#define FLAG_VISITED_DEWFORD_TOWN                   0
-#define FLAG_VISITED_LAVARIDGE_TOWN                 0
-#define FLAG_VISITED_FALLARBOR_TOWN                 0
-#define FLAG_VISITED_VERDANTURF_TOWN                0
-#define FLAG_VISITED_PACIFIDLOG_TOWN                0
-#define FLAG_VISITED_PETALBURG_CITY                 0
-#define FLAG_VISITED_SLATEPORT_CITY                 0
-#define FLAG_VISITED_MAUVILLE_CITY                  0
-#define FLAG_VISITED_RUSTBORO_CITY                  0
-#define FLAG_VISITED_FORTREE_CITY                   0
-#define FLAG_VISITED_LILYCOVE_CITY                  0
-#define FLAG_VISITED_MOSSDEEP_CITY                  0
-#define FLAG_VISITED_SOOTOPOLIS_CITY                0
-#define FLAG_VISITED_EVER_GRANDE_CITY               0
+#define FLAG_VISITED_IKI_TOWN                0
+#define FLAG_VISITED_HAUOLI_CITY                    0
+#define FLAG_VISITED_HEAHEA_CITY                   0
+#define FLAG_VISITED_PANIOLA_TOWN                 0
+#define FLAG_VISITED_ROYAL_AVENUE                 0
+#define FLAG_VISITED_KONIKONI_CITY                0
+#define FLAG_VISITED_MALIE_CITY                0
+#define FLAG_VISITED_MT_HOKULANI                 0
+#define FLAG_VISITED_TAPU_VILLAGE                 0
+#define FLAG_VISITED_PO_TOWN                  0
+#define FLAG_VISITED_AETHER_PARADISE                  0
+#define FLAG_VISITED_SEAFOLK_VILLAGE                   0
+#define FLAG_VISITED_EXEGGUTOR_ISLAND                  0
+#define FLAG_VISITED_BATTLE_TREE                  0
+#define FLAG_VISITED_LOCATION_15                0
+#define FLAG_VISITED_LOCATION_16               0
 
 #define FLAG_SYS_WEATHER_CTRL                       0
 #define FLAG_SYS_CYCLING_ROAD                       0
