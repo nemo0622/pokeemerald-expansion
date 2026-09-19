@@ -2060,6 +2060,7 @@ void CB2_ReturnToFieldFromMultiplayer(void)
 
 void CB2_ReturnToFieldWithOpenMenu(void)
 {
+    gMain.savedCallback = NULL; // Nemo addition to fix messed up DNS palettes with Rotom Phone and MapHasNaturalLight changes
     FieldClearVBlankHBlankCallbacks();
     gFieldCallback2 = FieldCB_ReturnToFieldOpenStartMenu;
     CB2_ReturnToField();

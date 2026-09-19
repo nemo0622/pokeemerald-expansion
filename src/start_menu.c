@@ -56,7 +56,7 @@
 #include "decompress.h"
 #include "ui_startmenu_full.h"
 
-#include "nemo_pokedex.h"
+#include "nemo_ui_helper.h"
 
 #define TAG_THROBBER 0x1000
 static const u16 sThrobber_Pal[] = INCBIN_U16("graphics/text_window/throbber.gbapal");

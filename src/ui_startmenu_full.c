@@ -48,7 +48,7 @@
 #include "frontier_pass.h"
 #include "start_menu.h"
 #include "quests.h"
-#include "nemo_pokedex.h"
+#include "nemo_ui_helper.h"
 
 /*
     Full Screen Start Menu

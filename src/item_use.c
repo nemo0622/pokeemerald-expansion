@@ -29,6 +29,7 @@
 #include "menu.h"
 #include "menu_helpers.h"
 #include "metatile_behavior.h"
+#include "nemo_ui_helper.h"
 #include "oras_dowse.h"
 #include "overworld.h"
 #include "palette.h"
@@ -1634,6 +1635,29 @@ void ItemUseOutOfBattle_TownMap(u8 taskId)
     else
     {
         gTasks[taskId].func = ItemUseOnFieldCB_TownMap;
+    }
+}
+
+// Called by `ItemUseOutOfBattle_RidePager`, which is what the Ride Pager item calls!
+static void ItemUseOnFieldCB_RidePager(u8 taskId)
+{    
+    LockPlayerFieldControls();
+    ScriptContext_SetupScript(EventScript_RidePager);
+    DestroyTask(taskId);
+}
+
+void ItemUseOutOfBattle_RidePager(u8 taskId)
+{
+    if (!gTasks[taskId].tUsingRegisteredKeyItem)
+    {
+        sItemUseOnFieldCB = ItemUseOnFieldCB_RidePager;
+        gFieldCallback = FieldCB_UseItemOnField;
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
+        Task_FadeAndCloseBagMenu(taskId);
+    }
+    else
+    {
+        gTasks[taskId].func = ItemUseOnFieldCB_RidePager;
     }
 }
 

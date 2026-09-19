@@ -1,5 +1,29 @@
-#ifndef NEMO_POKEDEX__H
-#define NEMO_POKEDEX__H
+#ifndef SAMPLE_UI_H
+#define SAMPLE_UI_H
+
+#include "gba/types.h"
+#include "main.h"
+
+/*
+
+                Multi-use .h file for my (Nemo's) scripts to refer to!
+            Currently used for Main Menu, Region Map, Pokédex, and PokéRide
+
+*/
+
+
+// ----------------------------------- Main Menu ----------------------------------
+
+void Task_OpenNemoMM_BlankTemplate(u8 taskId);
+
+
+// ----------------------------------- Region Map ----------------------------------
+
+void Task_OpenNemoRegionMap_BlankTemplate(u8 taskId);
+void NemoRMUI_Init(MainCallback callback, u8 isFlyMode);
+
+
+// ----------------------------------- Pokédex ----------------------------------
 
 // CREDIT:
 // Lots of this is snagged from Pokabbie's rogue_pokedex code!
@@ -48,5 +72,11 @@ u8 NemoPokedex_GetSpeciesBestStat(u16 species);
 u8 NemoPokedex_GetSpeciesWorstStat(u16 species);
 void NemoPokedex_GetSpeciesStatArray(u16 species, u8* stats, u8 bufferSize);
 u16 NemoPokedex_GetSpeciesCurrentNum(u16 species);
+
+
+// ----------------------------------- PokéRide ----------------------------------
+
+void Task_OpenNemoPRUI(u8 taskId);
+void NemoPRUI_Init(MainCallback callback);
 
 #endif

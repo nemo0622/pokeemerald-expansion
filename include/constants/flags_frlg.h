@@ -2590,12 +2590,12 @@
 #define FLAG_UNUSED_0x8E3                           0 // Unused Flag
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            0
 
-#define FLAG_UNUSED_0x8E5                           0
-#define FLAG_UNUSED_0x8E6                           0
-#define FLAG_UNUSED_0x8E7                           0
-#define FLAG_UNUSED_0x8E8                           0
-#define FLAG_UNUSED_0x8E9                           0
-#define FLAG_UNUSED_0x8EA                           0
+#define FLAG_UNLOCKED_POKERIDE_TAUROS                           0
+#define FLAG_UNLOCKED_POKERIDE_STOUTLAND                           0
+#define FLAG_UNLOCKED_POKERIDE_LAPRAS                           0
+#define FLAG_UNLOCKED_POKERIDE_DRAMPA                           0
+#define FLAG_UNLOCKED_POKERIDE_FLYGON                           0
+#define FLAG_UNLOCKED_POKERIDE_BEWEAR                           0
 #define FLAG_UNUSED_0x8EB                           0
 #define FLAG_UNUSED_0x8EC                           0
 #define FLAG_UNUSED_0x8ED                           0

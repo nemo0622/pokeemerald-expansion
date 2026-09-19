@@ -37,7 +37,7 @@
 #include "constants/rtc.h"
 #include "constants/songs.h"
 
-#include "nemo_pokedex.h"
+#include "nemo_ui_helper.h"
 
 // CREDIT:
 // Most of this code is gonne be heavily referenced from or lowkey snatched from Pokabbie's `rogue_pokedex.c` script!

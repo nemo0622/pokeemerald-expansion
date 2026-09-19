@@ -20,7 +20,7 @@
 #include "malloc.h"
 #include "map_name_popup.h"
 #include "menu.h"
-#include "nemo_pokedex.h"
+#include "nemo_ui_helper.h"
 #include "overworld.h"
 #include "palette.h"
 #include "party_menu.h"

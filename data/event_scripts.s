@@ -363,6 +363,14 @@ EventScript_RegionMap::
 	releaseall
 	end
 
+EventScript_RidePager::
+	lockall
+	fadescreen FADE_TO_BLACK
+	special FieldUseRidePager
+	waitstate
+	releaseall
+	end
+
 	.include "data/scripts/prof_birch.inc"
 
 @ Below could be split as ferry.inc aside from the Rusturf tunnel script

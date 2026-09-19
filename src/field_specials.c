@@ -32,7 +32,7 @@
 #include "menu.h"
 #include "metatile_behavior.h"
 #include "mystery_gift.h"
-#include "nemo_regionmap_ui.h"
+#include "nemo_ui_helper.h"
 #include "overworld.h"
 #include "party_menu.h"
 #include "pokeblock.h"
@@ -1016,6 +1016,16 @@ static void CB2_FieldShowRegionMap(void)
 void FieldShowRegionMap(void)
 {
     SetMainCallback2(CB2_FieldShowRegionMap);
+}
+
+static void CB2_FieldUseRidePager(void)
+{
+    NemoPRUI_Init(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+}
+
+void FieldUseRidePager(void)
+{
+    SetMainCallback2(CB2_FieldUseRidePager);
 }
 
 static bool32 IsBuildingPCTile(u32 tileId)

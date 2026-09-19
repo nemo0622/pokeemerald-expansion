@@ -27,6 +27,7 @@ Feature Branches:
 - Archie & Mudskip: Full Screen Start Menu, Field Mugshot System
 - HashtagMarky: Rotom Phone Start Menu
 - Pokédex code adapted from Pokabbie's Pokémon Emerald Rogue
+- grunt-lucas: Sample UI code, used as a base for the Region Map and PokéRide UI
 
 Tiles:
 - Zaebucca

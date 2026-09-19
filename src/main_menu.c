@@ -42,7 +42,7 @@
 #include "ui_main_menu.h"
 #include "main_menu.h"
 
-#include "nemo_mainmenu_ui.h"
+#include "nemo_ui_helper.h"
 
 /*
  * Main menu state machine

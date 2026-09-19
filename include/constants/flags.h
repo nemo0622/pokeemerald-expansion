@@ -1411,7 +1411,7 @@
 #define FLAG_SYS_DEXNAV_GET                         (SYSTEM_FLAGS + 0x2E) // Got DexNav
 #define FLAG_SYS_DEXNAV_SEARCH                      (SYSTEM_FLAGS + 0x2F) // Is Searching using DexNav
 
-#define FLAG_SYS_TV_HOME                            (SYSTEM_FLAGS + 0x30)
+#define FLAG_SYS_TV_HOME                            (SYSTEM_FLAGS + 0x30) // 0x890
 #define FLAG_SYS_TV_WATCH                           (SYSTEM_FLAGS + 0x31)
 #define FLAG_SYS_TV_START                           (SYSTEM_FLAGS + 0x32)
 #define FLAG_SYS_CHANGED_DEWFORD_TREND              (SYSTEM_FLAGS + 0x33)
@@ -1428,7 +1428,7 @@
 #define FLAG_LANDMARK_MR_BRINEY_HOUSE               (SYSTEM_FLAGS + 0x3D)
 #define FLAG_LANDMARK_ABANDONED_SHIP                (SYSTEM_FLAGS + 0x3E)
 #define FLAG_LANDMARK_SEASHORE_HOUSE                (SYSTEM_FLAGS + 0x3F)
-#define FLAG_LANDMARK_NEW_MAUVILLE                  (SYSTEM_FLAGS + 0x40)
+#define FLAG_LANDMARK_NEW_MAUVILLE                  (SYSTEM_FLAGS + 0x40) // 0x8A0
 #define FLAG_LANDMARK_OLD_LADY_REST_SHOP            (SYSTEM_FLAGS + 0x41)
 #define FLAG_LANDMARK_TRICK_HOUSE                   (SYSTEM_FLAGS + 0x42)
 #define FLAG_LANDMARK_WINSTRATE_FAMILY              (SYSTEM_FLAGS + 0x43)
@@ -1445,7 +1445,7 @@
 #define FLAG_SYS_ENC_UP_ITEM                        (SYSTEM_FLAGS + 0x4D)
 #define FLAG_SYS_ENC_DOWN_ITEM                      (SYSTEM_FLAGS + 0x4E)
 #define FLAG_SYS_BRAILLE_DIG                        (SYSTEM_FLAGS + 0x4F)
-#define FLAG_SYS_REGIROCK_PUZZLE_COMPLETED          (SYSTEM_FLAGS + 0x50)
+#define FLAG_SYS_REGIROCK_PUZZLE_COMPLETED          (SYSTEM_FLAGS + 0x50) // 0x8B0
 #define FLAG_SYS_BRAILLE_REGICE_COMPLETED           (SYSTEM_FLAGS + 0x51)
 #define FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED         (SYSTEM_FLAGS + 0x52)
 #define FLAG_ENABLE_SHIP_SOUTHERN_ISLAND            (SYSTEM_FLAGS + 0x53)
@@ -1465,7 +1465,7 @@
 #define FLAG_LANDMARK_SKY_PILLAR                    (SYSTEM_FLAGS + 0x5E)
 
 #define FLAG_SYS_SHOAL_ITEM                         (SYSTEM_FLAGS + 0x5F)
-#define FLAG_SYS_B_DASH                             (SYSTEM_FLAGS + 0x60) // RECEIVED Running Shoes
+#define FLAG_SYS_B_DASH                             (SYSTEM_FLAGS + 0x60) // RECEIVED Running Shoes // 0x8C0
 #define FLAG_SYS_CTRL_OBJ_DELETE                    (SYSTEM_FLAGS + 0x61)
 #define FLAG_SYS_RESET_RTC_ENABLE                   (SYSTEM_FLAGS + 0x62)
 
@@ -1483,7 +1483,7 @@
 #define FLAG_SYS_FACTORY_GOLD                       (SYSTEM_FLAGS + 0x6D)
 #define FLAG_SYS_PIKE_SILVER                        (SYSTEM_FLAGS + 0x6E)
 #define FLAG_SYS_PIKE_GOLD                          (SYSTEM_FLAGS + 0x6F)
-#define FLAG_SYS_PYRAMID_SILVER                     (SYSTEM_FLAGS + 0x70)
+#define FLAG_SYS_PYRAMID_SILVER                     (SYSTEM_FLAGS + 0x70) // 0x8D0
 #define FLAG_SYS_PYRAMID_GOLD                       (SYSTEM_FLAGS + 0x71)
 #define FLAG_SYS_FRONTIER_PASS                      (SYSTEM_FLAGS + 0x72)
 
@@ -1504,7 +1504,7 @@
 #define FLAG_LANDMARK_ALTERING_CAVE                 (SYSTEM_FLAGS + 0x7D)
 #define FLAG_LANDMARK_DESERT_UNDERPASS              (SYSTEM_FLAGS + 0x7E)
 #define FLAG_LANDMARK_ARTISAN_CAVE                  (SYSTEM_FLAGS + 0x7F)
-#define FLAG_ENABLE_SHIP_NAVEL_ROCK                 (SYSTEM_FLAGS + 0x80)
+#define FLAG_ENABLE_SHIP_NAVEL_ROCK                 (SYSTEM_FLAGS + 0x80) // 0x8E0
 #define FLAG_ARRIVED_AT_NAVEL_ROCK                  (SYSTEM_FLAGS + 0x81)
 #define FLAG_LANDMARK_TRAINER_HILL                  (SYSTEM_FLAGS + 0x82)
 
@@ -1512,12 +1512,12 @@
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
-#define FLAG_UNUSED_0x8E5                           (SYSTEM_FLAGS + 0x85) // Unused Flag
-#define FLAG_UNUSED_0x8E6                           (SYSTEM_FLAGS + 0x86) // Unused Flag
-#define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused Flag
-#define FLAG_UNUSED_0x8E8                           (SYSTEM_FLAGS + 0x88) // Unused Flag
-#define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag
-#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
+#define FLAG_UNLOCKED_POKERIDE_TAUROS               (SYSTEM_FLAGS + 0x85)
+#define FLAG_UNLOCKED_POKERIDE_STOUTLAND            (SYSTEM_FLAGS + 0x86)
+#define FLAG_UNLOCKED_POKERIDE_LAPRAS               (SYSTEM_FLAGS + 0x87)
+#define FLAG_UNLOCKED_POKERIDE_DRAMPA               (SYSTEM_FLAGS + 0x88)
+#define FLAG_UNLOCKED_POKERIDE_FLYGON               (SYSTEM_FLAGS + 0x89)
+#define FLAG_UNLOCKED_POKERIDE_BEWEAR               (SYSTEM_FLAGS + 0x8A)
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag

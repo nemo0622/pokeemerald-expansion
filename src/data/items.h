@@ -15828,6 +15828,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_RIDE_PAGER] =
+    {
+        .name = ITEM_NAME("Ride Pager"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Used to call a\n"
+            "Pokémon to help\n"
+            "you in the field."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_RidePager,
+        .iconPic = gItemIcon_RidePager,
+        .iconPalette = gItemIconPalette_RidePager,
+    },
 };
 
 #undef ITEM_NAME
