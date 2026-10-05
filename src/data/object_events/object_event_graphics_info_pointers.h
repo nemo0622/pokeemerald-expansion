@@ -326,7 +326,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Scien
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Scientist_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Surfer_Land;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Surfer;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Mart_Employee;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Shop_Employee;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Shop_Employee_F;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Acerola;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Gladion;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alola_Hapu;
@@ -663,7 +664,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SCIENTIST_M] =                     &gObjectEventGraphicsInfo_Alola_Scientist_M,
     [OBJ_EVENT_GFX_SURFER_LAND] =                     &gObjectEventGraphicsInfo_Alola_Surfer_Land,
     [OBJ_EVENT_GFX_SURFER] =                          &gObjectEventGraphicsInfo_Alola_Surfer,
-    [OBJ_EVENT_GFX_MART_EMPLOYEE] =                   &gObjectEventGraphicsInfo_Alola_Mart_Employee,
+    [OBJ_EVENT_GFX_SHOP_EMPLOYEE] =                   &gObjectEventGraphicsInfo_Alola_Shop_Employee,
+    [OBJ_EVENT_GFX_SHOP_EMPLOYEE_F] =                 &gObjectEventGraphicsInfo_Alola_Shop_Employee_F,
     [OBJ_EVENT_GFX_ACEROLA] =                         &gObjectEventGraphicsInfo_Alola_Acerola,
     [OBJ_EVENT_GFX_GLADION] =                         &gObjectEventGraphicsInfo_Alola_Gladion,
     [OBJ_EVENT_GFX_HAPU] =                            &gObjectEventGraphicsInfo_Alola_Hapu,

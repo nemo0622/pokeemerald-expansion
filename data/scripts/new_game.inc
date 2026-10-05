@@ -113,6 +113,7 @@ EventScript_ResetAllBerries::
 	return
 
 EventScript_ResetAllMapFlags::
+	setrespawn HEAL_LOCATION_HAUOLI_OUTSKIRTS
 	setflag FLAG_SYS_B_DASH
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_OVERWORLD_ENCOUNTERS_DISABLED

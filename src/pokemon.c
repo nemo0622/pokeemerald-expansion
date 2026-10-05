@@ -3695,6 +3695,14 @@ const u8 *GetSpeciesPokedexDescription(u16 species)
     return gSpeciesInfo[species].description;
 }
 
+const u8 *GetSpeciesPokedexHabitat(u16 species)
+{
+    species = SanitizeSpeciesId(species);
+    if (gSpeciesInfo[species].habitat == NULL)
+        return gSpeciesInfo[SPECIES_NONE].habitat;
+    return gSpeciesInfo[species].habitat;
+}
+
 u32 GetSpeciesHeight(u16 species)
 {
     return gSpeciesInfo[SanitizeSpeciesId(species)].height;

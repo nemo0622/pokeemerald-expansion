@@ -1,0 +1,46 @@
+mapscripts HauoliShoppingDistrict_House1_MapScripts {}
+
+script HauoliShoppingDistrict_House1_NPC_Man
+{
+    lock
+    faceplayer
+    setspeaker("Man")
+    msgbox(format("It's not cheap to have a house right in Hau'oli City, but it's worth it. We live right next to the Shopping Center!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_House1_NPC_Farmer
+{
+    lock
+    faceplayer
+    setspeaker("Farmer")
+    msgbox(format("Our Pokémon help us run a farm in Route 2. {COLOR BLUE}Mudbray{COLOR DARK_GRAY} here helps us till the ground!"))
+    closemessage
+    release
+    end
+}
+script HauoliShoppingDistrict_House1_Pokemon_Mudbray
+{
+	lock
+    faceplayer
+    setspeaker("Mudbray")
+    playmoncry(SPECIES_MUDBRAY, CRY_MODE_NORMAL)
+    msgbox(format("Bray-yy!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_House1_NPC_SchoolBoy
+{
+    lock
+    faceplayer
+    setspeaker("School Boy")
+    msgbox(format("Computers are great! On my personal computer, I can put in special codes that do fun things.\pYou should try on your own computer!"))
+    closemessage
+    release
+    end
+}

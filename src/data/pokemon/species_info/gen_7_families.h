@@ -29,11 +29,24 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Grass Quill"),
         .height = 3,
         .weight = 15,
-        .description = COMPOUND_STRING(
-            "This wary Pokémon uses photosynthesis\n"
-            "to store up energy during the day, while\n"
-            "becoming active at night. Silently it\n"
-            "glides, drawing near to its target."),
+        .description = COMPOUND_STRING( // New desc 9.20
+            "Rowlet spend the day resting in\n"
+            "the sun, using photosynthesis to\n"
+            "build energy. At night, they spring\n"
+            "to life, hunting small prey or\n"
+            "eating berries.\n"
+            "\n"
+            "Trainers love them for their quirky\n"
+            "personalities!"),
+        .habitat = COMPOUND_STRING(
+            "Elusive Pokémon found only in deep,\n"
+            "old-growth forests. Few specimens\n"
+            "have been seen in the wild - most\n"
+            "descend from breeding domestic\n"
+            "populations.\n"
+            "\n"
+            "Exact habitat unknown."
+        ),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -110,11 +123,24 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Blade Quill"),
         .height = 7,
         .weight = 160,
-        .description = COMPOUND_STRING(
-            "A bit of a dandy, it spends its free time\n"
-            "preening its wings. Its preoccupation\n"
-            "with any dirt on its plumage can leave\n"
-            "it unable to battle."),
+        .description = COMPOUND_STRING( // New desc 9.20
+            "It is very particular about the\n"
+            "state of its wings and leaves.\n"
+            "If Dartrix gets dirty, it quickly\n"
+            "flees battle and cleans up.\n"
+            "\n"
+            "Although it is prone to fits,\n"
+            "Dartrix can be a formidable foe\n"
+            "if it can focus in battle."),
+        .habitat = COMPOUND_STRING(
+            "Elusive Pokémon found only in deep,\n"
+            "old-growth forests. Few specimens\n"
+            "have been seen in the wild - most\n"
+            "descend from breeding domestic\n"
+            "populations.\n"
+            "\n"
+            "Exact habitat unknown."
+        ),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -149,11 +175,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sDartrixLevelUpLearnset,
         .teachableLearnset = sDartrixTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DECIDUEYE, CONDITIONS({IF_NOT_REGION, REGION_HISUI})}
-                            #if P_HISUIAN_FORMS
-                                ,{EVO_LEVEL, 36, SPECIES_DECIDUEYE_HISUI, CONDITIONS({IF_REGION, REGION_HISUI})}
-                            #endif
-                            ),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DECIDUEYE}),
     },
 
     [SPECIES_DECIDUEYE] =
@@ -181,11 +203,24 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Arrow Quill"),
         .height = 16,
         .weight = 366,
-        .description = COMPOUND_STRING(
-            "Decidueye is cool and cautious.\n"
-            "It fires arrow quills from its wings with\n"
-            "such precision, they can pierce a pebble\n"
-            "at distances of over a hundred yards."),
+        .description = COMPOUND_STRING( // New desc 9.20
+            "Decidueye are calm, calculating\n"
+            "hunters. Highly modified feather\n"
+            "quills act as their arrows, which\n"
+            "it can shoot over 2,000 feet with\n"
+            "near-perfect accuracy.\n"
+            "\n"
+            "This Pokémon's stealth is unmatched,\n"
+            "vanishing into shadows at will."),
+        .habitat = COMPOUND_STRING(
+            "Elusive Pokémon found only in deep,\n"
+            "old-growth forests. Few specimens\n"
+            "have been seen in the wild - most\n"
+            "descend from breeding domestic\n"
+            "populations.\n"
+            "\n"
+            "Exact habitat unknown."
+        ),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -317,11 +352,23 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Fire Cat"),
         .height = 4,
         .weight = 43,
-        .description = COMPOUND_STRING(
-            "While grooming itself, it builds up fur\n"
-            "inside its stomach. It sets the fur alight\n"
-            "and spews fiery attacks, which change\n"
-            "based on how it coughs."),
+        .description = COMPOUND_STRING( // New desc 9.20
+            "Litten cover their fur with flammable\n"
+            "oils, which can be licked up and used\n"
+            "as fuel for fiery attacks.\n"
+            "\n"
+            "They are rare, but are highly sought\n"
+            "after as Starter Pokémon in Alola.\n"
+            "Once they trust a Trainer, they will\n"
+            "never leave them."),
+        .habitat = COMPOUND_STRING(
+            "There are thought to be small bands\n"
+            "living in isolated fragments of\n"
+            "Alolan rainforests. Sadly, they\n"
+            "are almost never seen in the wild.\n"
+            "\n"
+            "Exact habitat unknown."
+        ),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -394,11 +441,23 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Fire Cat"),
         .height = 7,
         .weight = 250,
-        .description = COMPOUND_STRING(
-            "At its throat, it bears a bell of fire. The\n"
-            "bell rings brightly whenever this Pokémon\n"
-            "spits fire. With a single punch, it can bend\n"
-            "an iron bar right over."),
+        .description = COMPOUND_STRING( // New desc 9.20
+            "Building off the trust and respect\n"
+            "it felt as a growing Litten, this\n"
+            "Pokémon lives for the heat of\n"
+            "battle.\n"
+            "\n"
+            "The bell-like structure on its neck\n"
+            "emits heat and light, flaring up\n"
+            "as Torracat fights harder."),
+        .habitat = COMPOUND_STRING(
+            "There are thought to be small bands\n"
+            "living in isolated fragments of\n"
+            "Alolan rainforests. Sadly, they\n"
+            "are almost never seen in the wild.\n"
+            "\n"
+            "Exact habitat unknown."
+        ),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -458,11 +517,23 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Heel"),
         .height = 18,
         .weight = 830,
-        .description = COMPOUND_STRING(
-            "This Pokémon has a violent, selfish\n"
-            "disposition. If it's not in the mood to\n"
-            "listen, it will ignore its Trainer's orders\n"
-            "with complete nonchalance."),
+        .description = COMPOUND_STRING( // New desc 9.20
+            "Incineroar thrives on attention.\n"
+            "In front of cheering crowds, its\n"
+            "belt flares to live. It will get\n"
+            "so caught up in its performance, it\n"
+            "may stop listening to its Trainer.\n"
+            "\n"
+            "This Pokémon is infamous for its\n"
+            "utility in high-level battling."),
+        .habitat = COMPOUND_STRING(
+            "There are thought to be small bands\n"
+            "living in isolated fragments of\n"
+            "Alolan rainforests. Sadly, they\n"
+            "are almost never seen in the wild.\n"
+            "\n"
+            "Exact habitat unknown."
+        ),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,
@@ -523,11 +594,23 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Sea Lion"),
         .height = 4,
         .weight = 75,
-        .description = COMPOUND_STRING(
-            "This Pokémon snorts body fluids from\n"
-            "its nose, blowing balloons to smash into\n"
-            "its foes. It practices diligently so it can\n"
-            "learn to make big bubbles."),
+        .description = COMPOUND_STRING( // New desc 9.20
+            "Popplio blow strong water bubbles\n"
+            "from their noses, bouncing along on\n"
+            "them to jump between pools of water.\n"
+            "\n"
+            "Young Trainers in Alola love to\n"
+            "play with Popplio, training them\n"
+            "to grow larger bubbles!"),
+        .habitat = COMPOUND_STRING(
+            "Small colonies can be found along\n"
+            "beaches in Alola, but they are\n"
+            "highly protected and should not\n"
+            "be battled. Instead, most descend\n"
+            "from domestic breeding populations.\n"
+            "\n"
+            "Exact habitat not listed."
+        ),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -601,11 +684,24 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Pop Star"),
         .height = 6,
         .weight = 175,
-        .description = COMPOUND_STRING(
-            "It cares deeply for its companions.\n"
-            "When its Trainer is feeling down, it\n"
-            "performs a cheery dance with a sequence\n"
-            "of water balloons  to try and help."),
+        .description = COMPOUND_STRING( // New desc 9.20
+            "In the wild, it lives in groups\n"
+            "that teach each other to dance in\n"
+            "perfect sync. Some even learn how\n"
+            "to replicate human dances.\n"
+            "\n"
+            "When they need to battle, Brionne's\n"
+            "bubbles pack a powerful pop, and\n"
+            "they work perfectly in teams."),
+        .habitat = COMPOUND_STRING(
+            "Small colonies can be found along\n"
+            "beaches in Alola, but they are\n"
+            "highly protected and should not\n"
+            "be battled. Instead, most descend\n"
+            "from domestic breeding populations.\n"
+            "\n"
+            "Exact habitat not listed."
+        ),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -665,11 +761,24 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .categoryName = _("Soloist"),
         .height = 18,
         .weight = 440,
-        .description = COMPOUND_STRING(
-            "It controls its water balloons with song.\n"
-            "The melody is learned from others of\n"
-            "its kind and is passed down from one\n"
-            "generation to the next."),
+        .description = COMPOUND_STRING( // New desc 9.20
+            "Primarina are truly exceptional\n"
+            "singers, controlling water bubbles\n"
+            "and spouts through the power of\n"
+            "song.\n"
+            "\n"
+            "At the head of their colony, this\n"
+            "Pokémon performs while basking in\n"
+            "the moonlight."),
+        .habitat = COMPOUND_STRING(
+            "Small colonies can be found along\n"
+            "beaches in Alola, but they are\n"
+            "highly protected and should not\n"
+            "be battled. Instead, most descend\n"
+            "from domestic breeding populations.\n"
+            "\n"
+            "Exact habitat not listed."
+        ),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,

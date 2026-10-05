@@ -1098,14 +1098,14 @@ IkiTown_NPC_Nurse::
 # 653 "data//maps/IkiTown/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq IkiTown_NPC_Nurse_2
-# 670 "data//maps/IkiTown/scripts.pory"
-	setspeaker IkiTown_NPC_Nurse_Text_0
 # 671 "data//maps/IkiTown/scripts.pory"
-	msgbox IkiTown_NPC_Nurse_Text_4
+	setspeaker IkiTown_NPC_Nurse_Text_0
 # 672 "data//maps/IkiTown/scripts.pory"
+	msgbox IkiTown_NPC_Nurse_Text_4
+# 673 "data//maps/IkiTown/scripts.pory"
 	closemessage
 IkiTown_NPC_Nurse_1:
-# 674 "data//maps/IkiTown/scripts.pory"
+# 675 "data//maps/IkiTown/scripts.pory"
 	release
 	end
 
@@ -1123,40 +1123,42 @@ IkiTown_NPC_Nurse_2:
 # 660 "data//maps/IkiTown/scripts.pory"
 	special HealPlayerParty
 # 661 "data//maps/IkiTown/scripts.pory"
-	delay 10
+	setrespawn HEAL_LOCATION_IKI_TOWN
 # 662 "data//maps/IkiTown/scripts.pory"
-	applymovement 26, Movement_PkmnCenterNurse_Bow
+	delay 10
 # 663 "data//maps/IkiTown/scripts.pory"
-	waitmovement 0
+	applymovement 26, Movement_PkmnCenterNurse_Bow
 # 664 "data//maps/IkiTown/scripts.pory"
-	setspeaker IkiTown_NPC_Nurse_Text_0
+	waitmovement 0
 # 665 "data//maps/IkiTown/scripts.pory"
-	msgbox IkiTown_NPC_Nurse_Text_3
+	setspeaker IkiTown_NPC_Nurse_Text_0
 # 666 "data//maps/IkiTown/scripts.pory"
+	msgbox IkiTown_NPC_Nurse_Text_3
+# 667 "data//maps/IkiTown/scripts.pory"
 	closemessage
 	goto IkiTown_NPC_Nurse_1
 
 
 IkiTown_Sign_LocationSign::
-# 682 "data//maps/IkiTown/scripts.pory"
-	lock
 # 683 "data//maps/IkiTown/scripts.pory"
-	msgbox IkiTown_Sign_LocationSign_Text_0, MSGBOX_SIGN
+	lock
 # 684 "data//maps/IkiTown/scripts.pory"
-	closemessage
+	msgbox IkiTown_Sign_LocationSign_Text_0, MSGBOX_SIGN
 # 685 "data//maps/IkiTown/scripts.pory"
+	closemessage
+# 686 "data//maps/IkiTown/scripts.pory"
 	release
 	end
 
 
 IkiTown_Sign_MahaloTrailUp::
-# 691 "data//maps/IkiTown/scripts.pory"
-	lock
 # 692 "data//maps/IkiTown/scripts.pory"
-	msgbox IkiTown_Sign_MahaloTrailUp_Text_0, MSGBOX_SIGN
+	lock
 # 693 "data//maps/IkiTown/scripts.pory"
-	closemessage
+	msgbox IkiTown_Sign_MahaloTrailUp_Text_0, MSGBOX_SIGN
 # 694 "data//maps/IkiTown/scripts.pory"
+	closemessage
+# 695 "data//maps/IkiTown/scripts.pory"
 	release
 	end
 
@@ -2152,19 +2154,19 @@ IkiTown_NPC_Nurse_Text_2:
 	.string "Sure! Let me see your Pokémon...$"
 
 IkiTown_NPC_Nurse_Text_3:
-# 665 "data//maps/IkiTown/scripts.pory"
+# 666 "data//maps/IkiTown/scripts.pory"
 	.string "Your Pokémon are feeling better. Have a\n"
 	.string "good day!$"
 
 IkiTown_NPC_Nurse_Text_4:
-# 671 "data//maps/IkiTown/scripts.pory"
+# 672 "data//maps/IkiTown/scripts.pory"
 	.string "Come back soon!$"
 
 IkiTown_Sign_LocationSign_Text_0:
-# 683 "data//maps/IkiTown/scripts.pory"
+# 684 "data//maps/IkiTown/scripts.pory"
 	.string "Iki Town\n"
 	.string "Where We Give Thanks to Pokémon.$"
 
 IkiTown_Sign_MahaloTrailUp_Text_0:
-# 692 "data//maps/IkiTown/scripts.pory"
+# 693 "data//maps/IkiTown/scripts.pory"
 	.string "{UP_ARROW} Mahalo Trail$"

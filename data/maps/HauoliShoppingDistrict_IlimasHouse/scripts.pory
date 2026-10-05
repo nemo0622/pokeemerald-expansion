@@ -1,0 +1,47 @@
+mapscripts HauoliShoppingDistrict_IlimasHouse_MapScripts {}
+
+script HauoliShoppingDistrict_IlimasHouse_IlimasDad
+{
+    lock
+    faceplayer
+    setspeaker("Big Man")
+    msgbox(format("Believe it or not, I'm Captain Ilima's father.\pHe got his looks and Pokémon battle skills from his mother. When he tamed that {COLOR BLUE}Totem Pokémon{COLOR DARK_GRAY}... I was so afraid, I couldn't move!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_IlimasHouse_IlimasMom
+{
+    lock
+    faceplayer
+    setspeaker("Lady")
+    msgbox(format("Welcome in! I'm Captain Ilima's mother.\p I see you're taking on the Island Challenge! You'll need to face Ilima and his Trial in order to proceed. He's always in that Verdant Cavern, up on Route 2."))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_IlimasHouse_Pokemon_Deerling
+{
+	lock
+    faceplayer
+    setspeaker("Deerling")
+    playmoncry(SPECIES_DEERLING, CRY_MODE_NORMAL)
+    msgbox(format("Beeh!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_IlimasHouse_NPC_IlimasSister
+{
+    lock
+    faceplayer
+    setspeaker("Little Girl")
+    msgbox(format("I'm Ilima's sister! Look at my Pokémon!\p {COLOR BLUE}Deerling{COLOR DARK_GRAY} have different forms based on their environment. When they evolve, some forms even change their type!\p Summer-form {COLOR BLUE}Deerling{COLOR DARK_GRAY} stays part Normal-type after evolving. I think Ilima would like that best."))
+    closemessage
+    release
+    end
+}

@@ -318,6 +318,251 @@ script HauoliShoppingDistrict_NPC_BattleGirlOnStreet
 	end
 }
 
+script HauoliShoppingDistrict_NPC_SailorAtWharf
+{
+	lock
+	faceplayer
+	setspeaker("Sailor")
+	msgbox(format("Lots of cargo passes through here ev'ry day. We truck it across Melemele Island as it comes in."))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_SailorWithFarfetchd
+{
+	lock
+	faceplayer
+	setspeaker("Sailor")
+	msgbox(format("My {COLOR BLUE}Farfetch'd{COLOR DARK_GRAY} cuts sheets for us to use as sails. It's better for the environment that way!"))
+	closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceLeft)
+	waitmovement(0)
+	release
+	end
+}
+script HauoliShoppingDistrict_Pokemon_Farfetchd
+{
+	lock
+    faceplayer
+    setspeaker("Farfetch'd")
+    playmoncry(SPECIES_FARFETCHD, CRY_MODE_NORMAL)
+    msgbox(format("Chee! Kwee!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_NPC_SightseerWithHealBall
+{
+	lock
+	faceplayer
+	setspeaker("Sightseer")
+	msgbox(format("A journey is made by those who travel with you. And compassion makes the world go round.\p Let me share these with you, young trial-goer."))
+	closemessage
+	giveitem(ITEM_HEAL_BALL, 5)
+	closemessage
+	setspeaker("Sightseer")
+	msgbox(format("Pokémon you catch in a Heal Ball will have their HP restored to the maximum level. They are also cured of any status conditions they might have."))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_OfficeWorkerWithStufful
+{
+	lock
+	faceplayer
+	setspeaker("Office Worker")
+	msgbox(format("Petting a fluffy Pokémon is pretty much the best feeling ever. I'm pretty sure I'm not wrong.\pIf you cuddle with your Pokémon using Pokémon Refresh, then. they'll try harder for you in battle! They can even shake off status conditions!"))
+	closemessage
+	release
+	end
+}
+script HauoliShoppingDistrict_Pokemon_Stufful
+{
+	lock
+    faceplayer
+    setspeaker("Stufful")
+    playmoncry(SPECIES_STUFFUL, CRY_MODE_NORMAL)
+    msgbox(format("Broar!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_NPC_Officer
+{
+	lock
+	faceplayer
+	setspeaker("Officer")
+	msgbox(format("In this city, we're proud to live together with Pokémon, and that's why we have so many patches of tall grass right in the city.\pYoung Ilima and his Smeargle are always working hard to keep the city looking tip-top, as well.\pCaptains should be responsible types, after all!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_PunkRocker
+{
+	lock
+	faceplayer
+	setspeaker("Punk Rocker")
+	msgbox(format("Heh heh heh... Here's some advice, Trainer.\p If you're going to stand up to tough opponents, be willing to use items on your Pokémon. It'll help them win!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_OldManWithCorsola
+{
+	lock
+	faceplayer
+	setspeaker("Old Man")
+	msgbox(format("See my {COLOR BLUE}Corsola{COLOR DARK_GRAY} here? Mine's mostly pink, but in Alola, {COLOR BLUE}Corsola{COLOR DARK_GRAY} can be found in a rainbow of colors!\pThey're not any different in battle, but they can really bring a team to life!"))
+	closemessage
+	release
+	end
+}
+script HauoliShoppingDistrict_Pokemon_Corsola
+{
+	lock
+    faceplayer
+    setspeaker("Corsola")
+    playmoncry(SPECIES_CORSOLA, CRY_MODE_NORMAL)
+    msgbox(format("Bubble-lub!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_NPC_OfficerWorkerOnCoast
+{
+	lock
+	faceplayer
+	setspeaker("Office Worker")
+	msgbox(format("The ocean around Alola looks so huge and endless, but thanks to the great Ferry System, you can get to the next island in no time!\pSome younger folks even choose to ride between islands on {COLOR GREEN}Mantine{COLOR DARK_GRAY}!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_Bellhop
+{
+	lock
+	faceplayer
+	setspeaker("Bellhop")
+	msgbox(format("Welcome! This is the estate of Captain Ilima's family, now open to the public."))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_DancerF
+{
+	lock
+	faceplayer
+	setspeaker("Dancer")
+	msgbox(format("Ilima's family grows flowers from all around the Alola Region here. I can't get enough of the smell!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_DancerWithCrabrawler
+{
+	lock
+	faceplayer
+	setspeaker("Dancer")
+	msgbox(format("Aw, yeah! My {COLOR BLUE}Crabrawler{COLOR DARK_GRAY}'s the best dancer around!"))
+	closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceDown)
+	waitmovement(0)
+	release
+	end
+}
+script HauoliShoppingDistrict_Pokemon_Crabrawler
+{
+	lock
+    faceplayer
+    setspeaker("Crabrawler")
+    playmoncry(SPECIES_CRABRAWLER, CRY_MODE_NORMAL)
+    msgbox(format("Ktcha-ha!"))
+    waitmoncry
+    closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceDown)
+	waitmovement(0)
+    release
+    end
+}
+
+script HauoliShoppingDistrict_NPC_Jester
+{
+	lock
+	faceplayer
+	setspeaker("Jester")
+	msgbox(format("Hey-hey! Come on by! Hau'oli City is the best place in Alola!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_Event_JesterBlock
+{
+	lockall
+	emote(42, EMOTE_EXCLAM)
+	delay(10)
+	setspeaker("Jester")
+	msgbox(format("Hold it right there!"))
+	closemessage
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
+	delay(10)
+	setspeaker("Jester")
+	msgbox(format("How could you leave Hau'oli City? It's the best place in Alola, take a break here!"))
+	closemessage
+	applymovement(LOCALID_PLAYER, Common_Movement_WalkDown)
+	waitmovement(0)
+	releaseall
+	end
+}
+
+script HauoliShoppingDistrict_NPC_Camper
+{
+	lock
+	faceplayer
+	setspeaker("Camper")
+	msgbox(format("Someone told me there's a Hidden Grotto around here.\pThey're supposed to have rare Pokémon, but how should I know which gap in the trees it'll be in?"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_Hiker
+{
+	lock
+	faceplayer
+	setspeaker("Hiker")
+	msgbox(format("Phew... I made it!\pRoute 2 leads north to the Verdant Cavern. Those wild {COLOR BLUE}Yungoos{COLOR DARK_GRAY} almost got me on the path!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_NPC_Surfer
+{
+	lock
+	faceplayer
+	setspeaker("Surfer")
+	msgbox(format("Woooah, dude! Another surfer! You can find a lot when you cross the waves in style!"))
+	closemessage
+	release
+	end
+}
+
+
 script HauoliShoppingDistrict_NPC_IlimaBattle
 {
 	lock
@@ -338,7 +583,7 @@ script HauoliShoppingDistrict_NPC_IlimaBattle
 		msgbox(format("Behold the magnificent Pokémon of the one and only Captain Ilima!"))
 		closemessage
 
-		trainerbattle_no_intro(TRAINER_CAPTAIN_ILIMA_HAUOLI, msgbox("Yes! You have emerged victorious!"))
+		trainerbattle_no_intro(TRAINER_CAPTAIN_ILIMA_HAUOLI, format("Yes! You have emerged victorious!"))
 
 		delay(10)
 		setspeaker("Ilima")
@@ -382,6 +627,73 @@ script HauoliShoppingDistrict_NPC_IlimaBattle
 	end
 }
 
+script HauoliShoppingDistrict_NPC_Fisherman
+{
+	lock
+	faceplayer
+	setspeaker("Fisherman")
+	if(flag(FLAG_RECEIVED_OLD_ROD))
+	{
+		msgbox(format("Howzit, little Trainer!\pYou here to learn more about Fishing?"), MSGBOX_YESNO)
+		closemessage
+		if(var(VAR_RESULT) == FALSE)
+		{
+			setspeaker("Fisherman")
+			msgbox(format("Hah! I'm sure you're an expert already!"))
+			closemessage
+		}
+		else
+		{
+			setspeaker("Fisherman")
+			msgbox(format("Gotcha! When you're fishing, you'll have to fight to reel the Pokémon in. You'll have to keep the Pokémon in the {COLOR GREEN}green bar{COLOR DARK_GRAY} to bring it in!\pSome Pokémon with certain abilities can help you fish. You might even find some treasure, if you're skilled enough to reel that in too!"))
+			closemessage
+		}
+	}
+	else
+	{
+		msgbox(format("Howzit, little Trainer!\pYou look like someone who'd enjoy a good sport, yeah? If you can beat me in a battle, I'll give you something to {COLOR GREEN}catch your own{COLOR DARK_GRAY}!\pSo? Ready to battle?"), MSGBOX_YESNO)
+		closemessage
+		if(var(VAR_RESULT) == FALSE)
+		{
+			setspeaker("Fisherman")
+			msgbox(format("Mmm, that's okay. Come on back when you're ready to learn the art of Fishing!"))
+			closemessage
+		}
+		else
+		{
+			setspeaker("Fisherman")
+			msgbox(format("Awrite! My fish Pokémon will wash you away!"))
+			closemessage
+			trainerbattle_no_intro(TRAINER_FISHERMAN_HAUOLI, format("Woah, you served me up on a platter...!"))
+
+			delay(10)
+			setspeaker("Fisherman")
+			msgbox(format("Ehehe, not bad at all! You should have this."))
+			closemessage
+			setflag(FLAG_RECEIVED_OLD_ROD)
+			giveitem(ITEM_OLD_ROD)
+			delay(10)
+			setspeaker("Fisherman")
+			msgbox(format("There's only a few Pokémon that'll bite on the {COLOR BLUE}Old Rod{COLOR DARK_GRAY}. If you want an upgrade, you'll need to talk to {COLOR GREEN}Lana{COLOR DARK_GRAY} on Akala Island.\pFishing is a li'l complicated in Alola. If you want to learn about the ins-and-outs, come talk to me!"))
+			closemessage
+		}
+	}
+	release
+	end
+}
+script HauoliShoppingDistrict_Pokemon_Chinchou
+{
+	lock
+    faceplayer
+    setspeaker("Chinchou")
+    playmoncry(SPECIES_CHINCHOU, CRY_MODE_NORMAL)
+    msgbox(format("Blub blubble."))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
 // --------------------------------- Sign Scripts ----------------------------
 
 script HauoliBeachfront_Sign_HauoliShoppingCenter
@@ -397,6 +709,24 @@ script HauoliShoppingDistrict_Sign_CityHall
 {
 	lock
 	msgbox(format("Hau'oli City Hall\n Serving the City's Every Need!"), MSGBOX_SIGN)
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_Sign_IlimaHouse
+{
+	lock
+	msgbox(format("Ilima Family Estate\pNow Open to All!"))
+	closemessage
+	release
+	end
+}
+
+script HauoliShoppingDistrict_Sign_MalasadaShop
+{
+	lock
+	msgbox(format("Hau'oli Malasada\pThe Best Food in the City!"))
 	closemessage
 	release
 	end

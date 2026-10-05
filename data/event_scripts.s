@@ -870,3 +870,15 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/HauoliBeachfront_BigPoppasSurfShop/scripts.inc"
 
 	.include "data/maps/HauoliBeachfront_TouristBureau/scripts.inc"
+
+	.include "data/maps/HauoliShoppingDistrict_PokemonCenter/scripts.inc"
+
+	.include "data/maps/HauoliShoppingDistrict_House1/scripts.inc"
+
+	.include "data/maps/HauoliShoppingDistrict_House2/scripts.inc"
+
+	.include "data/maps/HauoliShoppingDistrict_ShoppingCenter/scripts.inc"
+
+	.include "data/maps/HauoliShoppingDistrict_IlimasHouse/scripts.inc"
+
+	.include "data/maps/HauoliShoppingDistrict_MalasadaShop/scripts.inc"

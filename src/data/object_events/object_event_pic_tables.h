@@ -1671,8 +1671,12 @@ static const struct SpriteFrameImage sPicTable_Alola_Surfer[] = {
     overworld_ascending_frames(gObjectEventPic_Alola_Surfer, 2, 4),
 };
 
-static const struct SpriteFrameImage sPicTable_Alola_Mart_Employee[] = {
-    overworld_ascending_frames(gObjectEventPic_Alola_Mart_Employee, 2, 4),
+static const struct SpriteFrameImage sPicTable_Alola_Shop_Employee[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Shop_Employee, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Alola_Shop_Employee_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Alola_Shop_Employee_F, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Alola_Acerola[] = {

@@ -143,6 +143,12 @@
   ],
   "gMapGroup_IndoorHauoliCity": [
     "HauoliBeachfront_BigPoppasSurfShop",
-    "HauoliBeachfront_TouristBureau"
+    "HauoliBeachfront_TouristBureau",
+    "HauoliShoppingDistrict_PokemonCenter",
+    "HauoliShoppingDistrict_House1",
+    "HauoliShoppingDistrict_House2",
+    "HauoliShoppingDistrict_ShoppingCenter",
+    "HauoliShoppingDistrict_IlimasHouse",
+    "HauoliShoppingDistrict_MalasadaShop"
   ]
 }

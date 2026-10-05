@@ -91,6 +91,7 @@ enum
     PAGE_SEARCH,
     PAGE_OVERVIEW,
     PAGE_MON_STATS,
+    PAGE_MON_DESCRIPTION,
     PAGE_MON_MOVES,
     PAGE_MON_EVOS,
     PAGE_MON_FORMS,
@@ -202,6 +203,7 @@ static const u8 sVariantTitle_Poni[] = _("Poni Island");
 static const u8 sVariantTitle_Ultra[] = _("Ultra Space");
 
 static const u8 sTitle_Stats[] = _("Stats");
+static const u8 sTitle_Description[] = _("Description");
 static const u8 sTitle_Moves[] = _("Moves");
 static const u8 sTitle_Evolutions[] = _("Evolutions");
 static const u8 sTitle_Forms[] = _("Forms");
@@ -253,6 +255,7 @@ static void DisplayTitleScreenCountersText(void);
 static void DisplayTitleDexVariantText(void);
 static void DisplayMonEntryText(void);
 static void DisplayMonStatsText(void);
+static void DisplayMonDescriptionText(void);
 static void DisplayMonMovesText(void);
 static void DisplayMonEvosText(void);
 static void DisplayMonFormsText(void);
@@ -382,6 +385,7 @@ static const u32 sOverviewTilemap[] = INCBIN_U32("graphics/nemo_pokedex/info_scr
 static const u32 sOverviewTiles[] = INCBIN_U32("graphics/nemo_pokedex/info_screen.4bpp.lz");
 
 static const u32 sPageSplitTableTilemap[] = INCBIN_U32("graphics/nemo_pokedex/page_split_table.bin.lz"); // Used for Stats page
+static const u32 sPageDescriptionTilemap[] = INCBIN_U32("graphics/nemo_pokedex/page_description.bin.lz"); // Used for Description page
 static const u32 sPageListsTilemap[] = INCBIN_U32("graphics/nemo_pokedex/page_list.bin.lz"); // Used for Moves and Habitats pages
 static const u32 sPageFormsTilemap[] = INCBIN_U32("graphics/nemo_pokedex/page_forms.bin.lz"); // Used for Evos and Forms pages
 
@@ -684,6 +688,20 @@ static void InitPageResources(u8 fromPage, u8 toPage)
         }
         break;
 
+    case PAGE_MON_DESCRIPTION:
+        {
+            DecompressDataWithHeaderWram(sPageDescriptionTilemap, sTilemapBufferPtr);
+            CopyBgTilemapBufferToVram(1);
+
+            InitMonEntryWindows();
+            // Text printed below
+
+            LoadMonIconPalettes();
+
+            MonInfo_CreateSprites(FALSE);
+        }
+        break;
+
     case PAGE_MON_MOVES:
         {
             DecompressDataWithHeaderWram(sPageListsTilemap, sTilemapBufferPtr);
@@ -732,7 +750,7 @@ static void InitPageResources(u8 fromPage, u8 toPage)
 
     case PAGE_MON_HABITAT: // replaces RIDE_STATS
         {
-            DecompressDataWithHeaderWram(sPageListsTilemap, sTilemapBufferPtr);
+            DecompressDataWithHeaderWram(sPageDescriptionTilemap, sTilemapBufferPtr);
             CopyBgTilemapBufferToVram(1);
 
             InitMonEntryWindows();
@@ -769,6 +787,7 @@ static void DestroyPageResources(u8 fromPage, u8 toPage)
         break;
 
     case PAGE_MON_STATS:
+    case PAGE_MON_DESCRIPTION:
     case PAGE_MON_EVOS:
     case PAGE_MON_FORMS:
     case PAGE_MON_HABITAT:
@@ -867,6 +886,11 @@ static void Task_PageFadeIn(u8 taskId)
         DisplayMonStatsText();
         break;
 
+    case PAGE_MON_DESCRIPTION:
+        DisplayMonEntryText();
+        DisplayMonDescriptionText();
+        break;
+
     case PAGE_MON_MOVES:
         DisplayMonEntryText();
         DisplayMonMovesText();
@@ -927,6 +951,10 @@ static void Task_PageWaitForKeyPress(u8 taskId)
 
     case PAGE_MON_STATS:
         MonStats_HandleInput(taskId);
+        break;
+
+    case PAGE_MON_DESCRIPTION:
+        MonStats_HandleInput(taskId); // Just use Stats input func lol
         break;
 
     case PAGE_MON_MOVES:
@@ -1321,10 +1349,10 @@ static void TitleScreen_RefillBg()
 
     if(CheckDexCompletion(FLAG_GET_CAUGHT))
     {
-        FillBgTilemapBufferRect_Palette0(1, 0x5C, 5, 10, 1, 1);
-        FillBgTilemapBufferRect_Palette0(1, 0x5D, 6, 10, 1, 1);
-        FillBgTilemapBufferRect_Palette0(1, 0x66, 5, 11, 1, 1);
-        FillBgTilemapBufferRect_Palette0(1, 0x67, 6, 11, 1, 1);
+        FillBgTilemapBufferRect_Palette0(1, 0x5C, 5, 17, 1, 1);
+        FillBgTilemapBufferRect_Palette0(1, 0x5D, 6, 17, 1, 1);
+        FillBgTilemapBufferRect_Palette0(1, 0x66, 5, 18, 1, 1);
+        FillBgTilemapBufferRect_Palette0(1, 0x67, 6, 18, 1, 1);
     }
 
     // if(CheckDexCompletion(FLAG_GET_CAUGHT_SHINY))
@@ -1593,6 +1621,20 @@ static void DisplayMonStatsText(void)
 
 #undef GET_STAT_COLOUR
 #undef GET_STAT_COLOUR_RANGE
+
+static void DisplayMonDescriptionText(void)
+{
+
+    u8 textColor[3] = { TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY };
+
+    AddTitleText(sTitle_Description);
+
+    StringCopy(gStringVar3, GetSpeciesPokedexDescription(sPokedexMenu->viewBaseSpecies));
+    AddTextPrinterParameterized4(WIN_MON_PAGE_CONTENT, FONT_NARROWER, 0, 0, 0, 0, textColor, TEXT_SKIP_DRAW, gStringVar3);
+
+    PutWindowTilemap(WIN_MON_PAGE_CONTENT);
+    CopyWindowToVram(WIN_MON_PAGE_CONTENT, COPYWIN_FULL);
+}
 
 #define MAX_LIST_DISPLAY_COUNT 8
 
@@ -2178,18 +2220,14 @@ static void DisplayMonFormsText()
 
 static void DisplayMonHabitatText() // Replaces DisplayMonRideStats from rogue_pokedex.c
 {
-    const u8 ySpacing = 16;
-    u8 headerColor[3] = { TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY };
-    u8 statColor[3] = { TEXT_COLOR_TRANSPARENT, TEXT_COLOR_BLUE, TEXT_COLOR_LIGHT_GRAY };
+    u8 textColor[3] = { TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY };
 
     AddTitleText(sTitle_Habitat);
 
     FillWindowPixelBuffer(WIN_MON_PAGE_CONTENT, PIXEL_FILL(0));
 
-    // PLACEHOLDER
-    // TODO: Put a list of where Pokémon are found ("Habitats" (e.g., 'Grasslands', 'Tropic Forest') or specific locations)
-    u16 offset = GetStringCenterAlignXOffset(FONT_NARROW, COMPOUND_STRING("HABITAT PLACEHOLDER"), sMonEntryWinTemplates[WIN_MON_PAGE_CONTENT].width * 8);
-    AddTextPrinterParameterized4(WIN_MON_PAGE_CONTENT, FONT_NARROW, offset, 0, 0, 0, statColor, TEXT_SKIP_DRAW, COMPOUND_STRING("HABITAT PLACEHOLDER"));
+    StringCopy(gStringVar3, GetSpeciesPokedexHabitat(sPokedexMenu->viewBaseSpecies));
+    AddTextPrinterParameterized4(WIN_MON_PAGE_CONTENT, FONT_NARROWER, 0, 0, 0, 0, textColor, TEXT_SKIP_DRAW, gStringVar3);
 
     PutWindowTilemap(WIN_MON_PAGE_CONTENT);
     CopyWindowToVram(WIN_MON_PAGE_CONTENT, COPYWIN_FULL);

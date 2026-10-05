@@ -127,7 +127,7 @@
     },
     {
       "x": 12,
-      "y": 1,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_HAUOLI_OUTSKIRTS_PLAYERS_ROOM_ACTUAL",
       "dest_warp_id": "0"
@@ -161,8 +161,8 @@
     },
     {
       "type": "sign",
-      "x": 15,
-      "y": 9,
+      "x": 14,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "HauoliOutskirts_PlayersHouse_Sign_SamsonsJournal"

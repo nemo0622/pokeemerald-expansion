@@ -9503,6 +9503,66 @@
       "secondary_tileset": "gTileset_AlolaFancyBuilding",
       "border_filepath": "data/layouts/HauoliBeachfront_TouristBureau/border.bin",
       "blockdata_filepath": "data/layouts/HauoliBeachfront_TouristBureau/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_SHOPPING_DISTRICT_POKEMON_CENTER",
+      "name": "HauoliShoppingDistrict_PokemonCenter_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaPokemonCenter",
+      "border_filepath": "data/layouts/HauoliShoppingDistrict_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliShoppingDistrict_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_SHOPPING_DISTRICT_HOUSE1",
+      "name": "HauoliShoppingDistrict_House1_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaGenericBuilding",
+      "border_filepath": "data/layouts/HauoliShoppingDistrict_House1/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliShoppingDistrict_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_SHOPPING_DISTRICT_HOUSE2",
+      "name": "HauoliShoppingDistrict_House2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaGenericBuilding",
+      "border_filepath": "data/layouts/HauoliShoppingDistrict_House2/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliShoppingDistrict_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_SHOPPING_DISTRICT_SHOPPING_CENTER",
+      "name": "HauoliShoppingDistrict_ShoppingCenter_Layout",
+      "width": 22,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaShop",
+      "border_filepath": "data/layouts/HauoliShoppingDistrict_ShoppingCenter/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliShoppingDistrict_ShoppingCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_SHOPPING_DISTRICT_ILIMAS_HOUSE",
+      "name": "HauoliShoppingDistrict_IlimasHouse_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaGenericBuilding",
+      "border_filepath": "data/layouts/HauoliShoppingDistrict_IlimasHouse/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliShoppingDistrict_IlimasHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUOLI_SHOPPING_DISTRICT_MALASADA_SHOP",
+      "name": "HauoliShoppingDistrict_MalasadaShop_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AlolaShop",
+      "border_filepath": "data/layouts/HauoliShoppingDistrict_MalasadaShop/border.bin",
+      "blockdata_filepath": "data/layouts/HauoliShoppingDistrict_MalasadaShop/map.bin"
     }
   ]
 }

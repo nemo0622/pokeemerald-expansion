@@ -20,7 +20,7 @@
 #define TRAINER_RISING_STAR_JOSEPH                           13
 #define TRAINER_SKULL_GRUNT_HAUOLI      14
 #define TRAINER_CAPTAIN_ILIMA_HAUOLI                       15
-#define TRAINER_GRUNT_RUSTURF_TUNNEL         16
+#define TRAINER_FISHERMAN_HAUOLI         16
 #define TRAINER_GRUNT_WEATHER_INST_1         17
 #define TRAINER_GRUNT_WEATHER_INST_2         18
 #define TRAINER_GRUNT_WEATHER_INST_3         19

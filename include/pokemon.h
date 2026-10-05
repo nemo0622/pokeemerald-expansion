@@ -430,6 +430,7 @@ struct SpeciesInfo /*0xC4*/
     u16 trainerScale;
     u16 trainerOffset;
     const u8 *description;
+    const u8 *habitat;
     enum BodyColor bodyColor:7;
     // Graphical Data
     u8 noFlip:1;
@@ -811,6 +812,7 @@ bool8 IsPokemonStorageFull(void);
 const u8 *GetSpeciesName(u16 species);
 const u8 *GetSpeciesCategory(u16 species);
 const u8 *GetSpeciesPokedexDescription(u16 species);
+const u8 *GetSpeciesPokedexHabitat(u16 species);
 u32 GetSpeciesHeight(u16 species);
 u32 GetSpeciesWeight(u16 species);
 enum Type GetSpeciesType(u16 species, u8 slot);

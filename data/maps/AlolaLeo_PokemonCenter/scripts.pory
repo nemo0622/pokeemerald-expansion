@@ -1,11 +1,14 @@
 mapscripts AlolaLeo_PokemonCenter_MapScripts {}
 
-script NPC_AlolanNurse
+script AlolaLeo_PokemonCenter_NPC_AlolanNurse
 {
     lock
 	faceplayer
 	setspeaker("Nurse")
-	msgbox(format("Alola, welcome to our Pokémon Center! Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+	msgbox(format("Alola, welcome to the Alola Leo School Pokémon Center!"))
+    waitmessage
+    setspeaker("Nurse")
+    msgbox(format("Would you like to heal your Pokémon?"), MSGBOX_YESNO)
 	if(var(VAR_RESULT) == TRUE)
 	{
 		setspeaker("Nurse")
@@ -14,7 +17,12 @@ script NPC_AlolanNurse
 		applymovement(VAR_LAST_TALKED, moves(walk_in_place_slow_left * 3, delay_16, face_down, step_end))
 		waitmovement(0)
 		special(HealPlayerParty)
+        callnative(UpdateFollowingPokemon)
 		delay(10)
+
+        // Remember to update to current map!
+        setrespawn(HEAL_LOCATION_ALOLA_LEO_ROAD)
+
 		applymovement(VAR_LAST_TALKED, Movement_PkmnCenterNurse_Bow)
 		waitmovement(0)
 		setspeaker("Nurse")
@@ -53,7 +61,7 @@ script AlolaLeo_PokemonCenter_NPC_MartClerk
 {
 	lock
     setspeaker("Clerk")
-	message("Alola, cuz! How can I help ya?")
+	message("Welcome How can I help you?")
 	waitmessage
 	pokemart(Mart_AlolaLeo)
     setspeaker("Clerk")

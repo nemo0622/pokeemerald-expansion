@@ -1596,3 +1596,14 @@ const struct Tileset gTileset_AlolaPokemonCenter =
     .metatileAttributes = gMetatileAttributes_AlolaPokemonCenter,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_AlolaShop =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AlolaShop,
+    .palettes = gTilesetPalettes_AlolaShop,
+    .metatiles = gMetatiles_AlolaShop,
+    .metatileAttributes = gMetatileAttributes_AlolaShop,
+    .callback = NULL,
+};

@@ -106,6 +106,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 0,
         .weight = 0,
         .description = gFallbackPokedexText,
+        .habitat = COMPOUND_STRING(
+            "This Pokémon has never been\n"
+            "reported in Alola. It has no\n"
+            "known habitat here."
+        ),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,

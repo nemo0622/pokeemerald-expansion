@@ -1,0 +1,23 @@
+mapscripts HauoliShoppingDistrict_House2_MapScripts {}
+
+script HauoliShoppingDistrict_House2_NPC_Backpacker
+{
+    lock
+    faceplayer
+    setspeaker("Backpacker")
+    msgbox(format("People hear that Alola is a tropical island chain and assume there aren't diverse environments.\pThey're wrong, though! Some of the taller mountains have snow!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_House2_NPC_Pilot
+{
+    lock
+    faceplayer
+    setspeaker("Pilot")
+    msgbox(format("Flying over the Alola Region is the best part of my job. Every island has unique flora and habitats."))
+    closemessage
+    release
+    end
+}

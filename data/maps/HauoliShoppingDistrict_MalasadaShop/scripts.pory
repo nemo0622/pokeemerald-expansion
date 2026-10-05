@@ -1,0 +1,121 @@
+mapscripts HauoliShoppingDistrict_MalasadaShop_MapScripts {}
+
+script HauoliShoppingDistrict_MalasadaShop_Pokemon_Pichu
+{
+	lock
+    faceplayer
+    setspeaker("Pichu")
+    playmoncry(SPECIES_PICHU, CRY_MODE_NORMAL)
+    msgbox(format("Chuu!"))
+    waitmoncry
+    closemessage
+    msgbox(format("{COLOR BLUE}Pichu{COLOR DARK_GRAY} has a Malasada in its mouth!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_MalasadaShop_NPC_Employee
+{
+    lock
+    faceplayer
+    setspeaker("Waitress")
+    msgbox(format("Alola! Would you like to try our food today?"))
+    waitmessage
+    pokemart(Mart_HauoliShoppingDistrict_MalasadaShop)
+
+    setspeaker("Waitress")
+	msgbox("Until next time!")
+	release
+    end
+}
+
+mart Mart_HauoliShoppingDistrict_MalasadaShop {
+	ITEM_BIG_MALASADA
+    ITEM_CASTELIACONE
+}
+
+// -------------------------------------------------------------------------------------------------
+
+script HauoliShoppingDistrict_MalasadaShop_NPC_Hiker
+{
+    lock
+    faceplayer
+    setspeaker("Hiker")
+    msgbox(format("These Malasadas are delicious! If I were a Pokémon, I bet I'd still love them!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliShoppingDistrict_MalasadaShop_NPC_Backpacker
+{
+    lock
+    faceplayer
+    setspeaker("Backpacker")
+    msgbox(format("There's nothing better than sharing a platter of Malasadas with someone."))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliShoppingDistrict_MalasadaShop_NPC_SchoolBoy
+{
+    lock
+    faceplayer
+    setspeaker("School Boy")
+    msgbox(format("Ehehe, look! My {COLOR BLUE}Impidimp{COLOR DARK_GRAY}'s gobbling up a Malasada!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliShoppingDistrict_MalasadaShop_Pokemon_Impidimp
+{
+	lock
+    faceplayer
+    setspeaker("Impidimp")
+    playmoncry(SPECIES_IMPIDIMP, CRY_MODE_NORMAL)
+    msgbox(format("Monch cronch cronch!"))
+    waitmoncry
+    closemessage
+    msgbox(format("{COLOR BLUE}Impidimp{COLOR DARK_GRAY} is tearing through Malasadas!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliShoppingDistrict_MalasadaShop_NPC_BlackBelt
+{
+    lock
+    faceplayer
+    setspeaker("Black Belt")
+    msgbox(format("I've been comin' here since I was a kid! Their ice cream is as delicious as I remember!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliShoppingDistrict_MalasadaShop_NPC_Woman
+{
+    lock
+    faceplayer
+    setspeaker("Woman")
+    msgbox(format("These foods sure make me happy. I wonder if Pokémon would like them, too?"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    release
+    end
+}
+

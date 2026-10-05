@@ -658,6 +658,7 @@ script IkiTown_NPC_Nurse
 		applymovement(26, moves(walk_in_place_slow_left * 3, face_down, step_end))
 		waitmovement(0)
 		special(HealPlayerParty)
+		setrespawn(HEAL_LOCATION_IKI_TOWN)
 		delay(10)
 		applymovement(26, Movement_PkmnCenterNurse_Bow)
 		waitmovement(0)

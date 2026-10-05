@@ -543,114 +543,117 @@ HauoliShoppingDistrict_NPC_BattleGirlOnStreet::
 	end
 
 
-HauoliShoppingDistrict_NPC_IlimaBattle::
+HauoliShoppingDistrict_NPC_SailorAtWharf::
 # 323 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	lock
 # 324 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	faceplayer
 # 325 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	setspeaker HauoliShoppingDistrict_Event_MeetIlima_Text_0
+	setspeaker HauoliShoppingDistrict_NPC_SailorAtWharf_Text_0
 # 326 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	createfieldmugshot MUGSHOT_ILIMA
+	msgbox HauoliShoppingDistrict_NPC_SailorAtWharf_Text_1
 # 327 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	msgbox HauoliShoppingDistrict_NPC_IlimaBattle_Text_0
+	closemessage
 # 328 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	waitmessage
-# 329 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	removefieldmugshot
-# 330 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	setspeaker HauoliShoppingDistrict_Event_MeetIlima_Text_0
-# 331 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	msgbox HauoliShoppingDistrict_NPC_IlimaBattle_Text_1, MSGBOX_YESNO
-# 332 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	closemessage
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_SailorWithFarfetchd::
 # 334 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	compare VAR_RESULT, TRUE
-	goto_if_eq HauoliShoppingDistrict_NPC_IlimaBattle_2
-# 375 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	setspeaker HauoliShoppingDistrict_Event_MeetIlima_Text_0
-# 376 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	createfieldmugshot MUGSHOT_ILIMA
-# 377 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	msgbox HauoliShoppingDistrict_NPC_IlimaBattle_Text_5
-# 378 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	closemessage
-# 379 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	releaseall
-	end
-
-HauoliShoppingDistrict_NPC_IlimaBattle_1:
-	end
-
-HauoliShoppingDistrict_NPC_IlimaBattle_2:
-# 336 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	setspeaker HauoliShoppingDistrict_Event_MeetIlima_Text_0
-# 337 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	createfieldmugshot MUGSHOT_ILIMA
-# 338 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	msgbox HauoliShoppingDistrict_NPC_IlimaBattle_Text_2
-# 339 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	closemessage
-# 341 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	trainerbattle_no_intro TRAINER_CAPTAIN_ILIMA_HAUOLI, HauoliShoppingDistrict_NPC_IlimaBattle_Text_3
-# 343 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	delay 10
-# 344 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	setspeaker HauoliShoppingDistrict_Event_MeetIlima_Text_0
-# 345 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	createfieldmugshot MUGSHOT_ILIMA
-# 346 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	msgbox HauoliShoppingDistrict_NPC_IlimaBattle_Text_4
-# 347 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	closemessage
-# 349 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	getplayerxy VAR_TEMP_1, VAR_TEMP_2
-# 350 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	switch VAR_TEMP_1
-# 352 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	case 48, HauoliShoppingDistrict_NPC_IlimaBattle_7
-# 355 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	applymovement 24, HauoliShoppingDistrict_NPC_IlimaBattle_Movement_1
-HauoliShoppingDistrict_NPC_IlimaBattle_5:
-# 357 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	waitmovement 0
-# 358 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	applymovement 24, HauoliShoppingDistrict_NPC_IlimaBattle_Movement_2
-# 359 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	delay 30
-# 360 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 361 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	delay 30
-# 362 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	setflag FLAG_HIDE_ILIMA_HAUOLI
-# 363 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	removeobject 24
-# 364 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	delay 30
-# 365 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
-# 366 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	delay 20
-# 368 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	startsubquest QUEST_TRIAL_ILIMA, QUEST_TRIAL_ILIMA_SUBQUEST_3
-# 369 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	closemessage
-# 370 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	releaseall
-	goto HauoliShoppingDistrict_NPC_IlimaBattle_1
-
-HauoliShoppingDistrict_NPC_IlimaBattle_7:
-# 353 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	applymovement 24, HauoliShoppingDistrict_NPC_IlimaBattle_Movement_0
-	goto HauoliShoppingDistrict_NPC_IlimaBattle_5
-
-
-HauoliBeachfront_Sign_HauoliShoppingCenter::
-# 389 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	lock
+# 335 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 336 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_SailorAtWharf_Text_0
+# 337 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_SailorWithFarfetchd_Text_0
+# 338 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 339 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceLeft
+# 340 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmovement 0
+# 341 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_Pokemon_Farfetchd::
+# 346 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 347 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 348 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_Pokemon_Farfetchd_Text_0
+# 349 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	playmoncry SPECIES_FARFETCHD, CRY_MODE_NORMAL
+# 350 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Pokemon_Farfetchd_Text_1
+# 351 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmoncry
+# 352 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 353 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_SightseerWithHealBall::
+# 359 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 360 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 361 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_SightseerWithHealBall_Text_0
+# 362 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_SightseerWithHealBall_Text_1
+# 363 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 364 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	giveitem ITEM_HEAL_BALL, 5
+# 365 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 366 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_SightseerWithHealBall_Text_0
+# 367 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_SightseerWithHealBall_Text_2
+# 368 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 369 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_OfficeWorkerWithStufful::
+# 375 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 376 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 377 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_OfficeWorkerWithStufful_Text_0
+# 378 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_OfficeWorkerWithStufful_Text_1
+# 379 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 380 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_Pokemon_Stufful::
+# 385 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 386 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 387 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_Pokemon_Stufful_Text_0
+# 388 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	playmoncry SPECIES_STUFFUL, CRY_MODE_NORMAL
+# 389 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Pokemon_Stufful_Text_1
 # 390 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	msgbox HauoliBeachfront_Sign_HauoliShoppingCenter_Text_0, MSGBOX_SIGN
+	waitmoncry
 # 391 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	closemessage
 # 392 "data//maps/HauoliShoppingDistrict/scripts.pory"
@@ -658,14 +661,503 @@ HauoliBeachfront_Sign_HauoliShoppingCenter::
 	end
 
 
-HauoliShoppingDistrict_Sign_CityHall::
+HauoliShoppingDistrict_NPC_Officer::
 # 398 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	lock
 # 399 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	msgbox HauoliShoppingDistrict_Sign_CityHall_Text_0, MSGBOX_SIGN
+	faceplayer
 # 400 "data//maps/HauoliShoppingDistrict/scripts.pory"
-	closemessage
+	setspeaker HauoliShoppingDistrict_NPC_Officer_Text_0
 # 401 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Officer_Text_1
+# 402 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 403 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_PunkRocker::
+# 409 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 410 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 411 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_PunkRocker_Text_0
+# 412 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_PunkRocker_Text_1
+# 413 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 414 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_OldManWithCorsola::
+# 420 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 421 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 422 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_OldManWithCorsola_Text_0
+# 423 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_OldManWithCorsola_Text_1
+# 424 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 425 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_Pokemon_Corsola::
+# 430 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 431 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 432 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_Pokemon_Corsola_Text_0
+# 433 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	playmoncry SPECIES_CORSOLA, CRY_MODE_NORMAL
+# 434 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Pokemon_Corsola_Text_1
+# 435 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmoncry
+# 436 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 437 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_OfficerWorkerOnCoast::
+# 443 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 444 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 445 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_OfficeWorkerWithStufful_Text_0
+# 446 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_OfficerWorkerOnCoast_Text_0
+# 447 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 448 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_Bellhop::
+# 454 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 455 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 456 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Bellhop_Text_0
+# 457 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Bellhop_Text_1
+# 458 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 459 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_DancerF::
+# 465 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 466 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 467 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_DancerF_Text_0
+# 468 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_DancerF_Text_1
+# 469 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 470 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_DancerWithCrabrawler::
+# 476 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 477 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 478 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_DancerF_Text_0
+# 479 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_DancerWithCrabrawler_Text_0
+# 480 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 481 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceDown
+# 482 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmovement 0
+# 483 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_Pokemon_Crabrawler::
+# 488 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 489 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 490 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_Pokemon_Crabrawler_Text_0
+# 491 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	playmoncry SPECIES_CRABRAWLER, CRY_MODE_NORMAL
+# 492 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Pokemon_Crabrawler_Text_1
+# 493 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmoncry
+# 494 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 495 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceDown
+# 496 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmovement 0
+# 497 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_Jester::
+# 503 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 504 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 505 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Jester_Text_0
+# 506 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Jester_Text_1
+# 507 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 508 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_Event_JesterBlock::
+# 514 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lockall
+# 515 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	emote 42, EMOTE_EXCLAM
+# 516 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	delay 10
+# 517 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Jester_Text_0
+# 518 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Event_JesterBlock_Text_0
+# 519 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 520 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+# 521 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmovement 0
+# 522 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	delay 10
+# 523 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Jester_Text_0
+# 524 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Event_JesterBlock_Text_1
+# 525 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 526 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown
+# 527 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmovement 0
+# 528 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	releaseall
+	end
+
+
+HauoliShoppingDistrict_NPC_Camper::
+# 534 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 535 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 536 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Camper_Text_0
+# 537 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Camper_Text_1
+# 538 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 539 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_Hiker::
+# 545 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 546 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 547 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Hiker_Text_0
+# 548 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Hiker_Text_1
+# 549 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 550 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_Surfer::
+# 556 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 557 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 558 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Surfer_Text_0
+# 559 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Surfer_Text_1
+# 560 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 561 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_NPC_IlimaBattle::
+# 568 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 569 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 570 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_Event_MeetIlima_Text_0
+# 571 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	createfieldmugshot MUGSHOT_ILIMA
+# 572 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_IlimaBattle_Text_0
+# 573 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmessage
+# 574 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	removefieldmugshot
+# 575 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_Event_MeetIlima_Text_0
+# 576 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_IlimaBattle_Text_1, MSGBOX_YESNO
+# 577 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 579 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq HauoliShoppingDistrict_NPC_IlimaBattle_2
+# 620 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_Event_MeetIlima_Text_0
+# 621 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	createfieldmugshot MUGSHOT_ILIMA
+# 622 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_IlimaBattle_Text_5
+# 623 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 624 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	releaseall
+	end
+
+HauoliShoppingDistrict_NPC_IlimaBattle_1:
+	end
+
+HauoliShoppingDistrict_NPC_IlimaBattle_2:
+# 581 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_Event_MeetIlima_Text_0
+# 582 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	createfieldmugshot MUGSHOT_ILIMA
+# 583 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_IlimaBattle_Text_2
+# 584 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 586 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	trainerbattle_no_intro TRAINER_CAPTAIN_ILIMA_HAUOLI, HauoliShoppingDistrict_NPC_IlimaBattle_Text_3
+# 588 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	delay 10
+# 589 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_Event_MeetIlima_Text_0
+# 590 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	createfieldmugshot MUGSHOT_ILIMA
+# 591 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_IlimaBattle_Text_4
+# 592 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 594 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+# 595 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	switch VAR_TEMP_1
+# 597 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	case 48, HauoliShoppingDistrict_NPC_IlimaBattle_7
+# 600 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	applymovement 24, HauoliShoppingDistrict_NPC_IlimaBattle_Movement_1
+HauoliShoppingDistrict_NPC_IlimaBattle_5:
+# 602 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmovement 0
+# 603 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	applymovement 24, HauoliShoppingDistrict_NPC_IlimaBattle_Movement_2
+# 604 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	delay 30
+# 605 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 606 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	delay 30
+# 607 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setflag FLAG_HIDE_ILIMA_HAUOLI
+# 608 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	removeobject 24
+# 609 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	delay 30
+# 610 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 611 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	delay 20
+# 613 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	startsubquest QUEST_TRIAL_ILIMA, QUEST_TRIAL_ILIMA_SUBQUEST_3
+# 614 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 615 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	releaseall
+	goto HauoliShoppingDistrict_NPC_IlimaBattle_1
+
+HauoliShoppingDistrict_NPC_IlimaBattle_7:
+# 598 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	applymovement 24, HauoliShoppingDistrict_NPC_IlimaBattle_Movement_0
+	goto HauoliShoppingDistrict_NPC_IlimaBattle_5
+
+
+HauoliShoppingDistrict_NPC_Fisherman::
+# 632 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 633 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 634 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Fisherman_Text_0
+# 635 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	goto_if_set FLAG_RECEIVED_OLD_ROD, HauoliShoppingDistrict_NPC_Fisherman_2
+# 654 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Fisherman_Text_4, MSGBOX_YESNO
+# 655 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 656 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq HauoliShoppingDistrict_NPC_Fisherman_8
+# 664 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Fisherman_Text_0
+# 665 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Fisherman_Text_6
+# 666 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 667 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	trainerbattle_no_intro TRAINER_FISHERMAN_HAUOLI, HauoliShoppingDistrict_NPC_Fisherman_Text_7
+# 669 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	delay 10
+# 670 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Fisherman_Text_0
+# 671 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Fisherman_Text_8
+# 672 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 673 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setflag FLAG_RECEIVED_OLD_ROD
+# 674 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	giveitem ITEM_OLD_ROD
+# 675 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	delay 10
+# 676 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Fisherman_Text_0
+# 677 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Fisherman_Text_9
+# 678 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+HauoliShoppingDistrict_NPC_Fisherman_1:
+# 681 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+HauoliShoppingDistrict_NPC_Fisherman_2:
+# 637 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Fisherman_Text_1, MSGBOX_YESNO
+# 638 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 639 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq HauoliShoppingDistrict_NPC_Fisherman_5
+# 647 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Fisherman_Text_0
+# 648 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Fisherman_Text_3
+# 649 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+	goto HauoliShoppingDistrict_NPC_Fisherman_1
+
+HauoliShoppingDistrict_NPC_Fisherman_5:
+# 641 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Fisherman_Text_0
+# 642 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Fisherman_Text_2
+# 643 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+	goto HauoliShoppingDistrict_NPC_Fisherman_1
+
+HauoliShoppingDistrict_NPC_Fisherman_8:
+# 658 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_NPC_Fisherman_Text_0
+# 659 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_NPC_Fisherman_Text_5
+# 660 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+	goto HauoliShoppingDistrict_NPC_Fisherman_1
+
+
+HauoliShoppingDistrict_Pokemon_Chinchou::
+# 686 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 687 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	faceplayer
+# 688 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	setspeaker HauoliShoppingDistrict_Pokemon_Chinchou_Text_0
+# 689 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	playmoncry SPECIES_CHINCHOU, CRY_MODE_NORMAL
+# 690 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Pokemon_Chinchou_Text_1
+# 691 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	waitmoncry
+# 692 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 693 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliBeachfront_Sign_HauoliShoppingCenter::
+# 701 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 702 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliBeachfront_Sign_HauoliShoppingCenter_Text_0, MSGBOX_SIGN
+# 703 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 704 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_Sign_CityHall::
+# 710 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 711 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Sign_CityHall_Text_0, MSGBOX_SIGN
+# 712 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 713 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
+HauoliShoppingDistrict_Sign_IlimaHouse::
+# 719 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 720 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Sign_IlimaHouse_Text_0
+# 721 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 722 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	release
 	end
 
@@ -929,41 +1421,41 @@ HauoliShoppingDistrict_NPC_BackpackerPlayingCards_Movement_0:
 # 227 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	step_end
 
-# 353 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 598 "data//maps/HauoliShoppingDistrict/scripts.pory"
 HauoliShoppingDistrict_NPC_IlimaBattle_Movement_0:
-# 353 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 598 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	walk_up
-# 353 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 598 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	walk_left
-# 353 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 598 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	face_up
-# 353 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 598 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	step_end
 
-# 355 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 600 "data//maps/HauoliShoppingDistrict/scripts.pory"
 HauoliShoppingDistrict_NPC_IlimaBattle_Movement_1:
-# 355 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 600 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	walk_left
-# 355 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 600 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	walk_up
-# 355 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 600 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	step_end
 
-# 358 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 603 "data//maps/HauoliShoppingDistrict/scripts.pory"
 HauoliShoppingDistrict_NPC_IlimaBattle_Movement_2:
-# 358 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 603 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	walk_up
-# 358 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 603 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	walk_up
-# 358 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 603 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	walk_up
-# 358 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 603 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	walk_up
-# 358 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 603 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	walk_up
-# 358 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 603 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	walk_up
-# 358 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 603 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	step_end
 
 HauoliShoppingDistrict_Trigger_BlockGrass_Text_0:
@@ -1222,26 +1714,232 @@ HauoliShoppingDistrict_NPC_BattleGirlOnStreet_Text_1:
 	.string "Fighting-types will help during his\l"
 	.string "Trial!$"
 
+HauoliShoppingDistrict_NPC_SailorAtWharf_Text_0:
+# 325 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Sailor$"
+
+HauoliShoppingDistrict_NPC_SailorAtWharf_Text_1:
+# 326 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Lots of cargo passes through here\n"
+	.string "ev'ry day. We truck it across Melemele\l"
+	.string "Island as it comes in.$"
+
+HauoliShoppingDistrict_NPC_SailorWithFarfetchd_Text_0:
+# 337 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "My {COLOR BLUE}Farfetch'd{COLOR DARK_GRAY} cuts sheets for us to use\n"
+	.string "as sails. It's better for the\l"
+	.string "environment that way!$"
+
+HauoliShoppingDistrict_Pokemon_Farfetchd_Text_0:
+# 348 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Farfetch'd$"
+
+HauoliShoppingDistrict_Pokemon_Farfetchd_Text_1:
+# 350 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Chee! Kwee!$"
+
+HauoliShoppingDistrict_NPC_SightseerWithHealBall_Text_0:
+# 361 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Sightseer$"
+
+HauoliShoppingDistrict_NPC_SightseerWithHealBall_Text_1:
+# 362 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "A journey is made by those who travel\n"
+	.string "with you. And compassion makes the\l"
+	.string "world go round.\p"
+	.string "Let me share these with you, young\n"
+	.string "trial-goer.$"
+
+HauoliShoppingDistrict_NPC_SightseerWithHealBall_Text_2:
+# 367 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Pokémon you catch in a Heal Ball will\n"
+	.string "have their HP restored to the maximum\l"
+	.string "level. They are also cured of any status\l"
+	.string "conditions they might have.$"
+
+HauoliShoppingDistrict_NPC_OfficeWorkerWithStufful_Text_0:
+# 377 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Office Worker$"
+
+HauoliShoppingDistrict_NPC_OfficeWorkerWithStufful_Text_1:
+# 378 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Petting a fluffy Pokémon is pretty\n"
+	.string "much the best feeling ever. I'm pretty\l"
+	.string "sure I'm not wrong.\p"
+	.string "If you cuddle with your Pokémon using\n"
+	.string "Pokémon Refresh, then. they'll try\l"
+	.string "harder for you in battle! They can even\l"
+	.string "shake off status conditions!$"
+
+HauoliShoppingDistrict_Pokemon_Stufful_Text_0:
+# 387 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Stufful$"
+
+HauoliShoppingDistrict_Pokemon_Stufful_Text_1:
+# 389 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Broar!$"
+
+HauoliShoppingDistrict_NPC_Officer_Text_0:
+# 400 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Officer$"
+
+HauoliShoppingDistrict_NPC_Officer_Text_1:
+# 401 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "In this city, we're proud to live\n"
+	.string "together with Pokémon, and that's why\l"
+	.string "we have so many patches of tall grass\l"
+	.string "right in the city.\p"
+	.string "Young Ilima and his Smeargle are always\n"
+	.string "working hard to keep the city looking\l"
+	.string "tip-top, as well.\p"
+	.string "Captains should be responsible types,\n"
+	.string "after all!$"
+
+HauoliShoppingDistrict_NPC_PunkRocker_Text_0:
+# 411 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Punk Rocker$"
+
+HauoliShoppingDistrict_NPC_PunkRocker_Text_1:
+# 412 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Heh heh heh... Here's some advice,\n"
+	.string "Trainer.\p"
+	.string "If you're going to stand up to tough\n"
+	.string "opponents, be willing to use items on\l"
+	.string "your Pokémon. It'll help them win!$"
+
+HauoliShoppingDistrict_NPC_OldManWithCorsola_Text_0:
+# 422 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Old Man$"
+
+HauoliShoppingDistrict_NPC_OldManWithCorsola_Text_1:
+# 423 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "See my {COLOR BLUE}Corsola{COLOR DARK_GRAY} here? Mine's mostly pink,\n"
+	.string "but in Alola, {COLOR BLUE}Corsola{COLOR DARK_GRAY} can be found in a\l"
+	.string "rainbow of colors!\p"
+	.string "They're not any different in battle, but\n"
+	.string "they can really bring a team to life!$"
+
+HauoliShoppingDistrict_Pokemon_Corsola_Text_0:
+# 432 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Corsola$"
+
+HauoliShoppingDistrict_Pokemon_Corsola_Text_1:
+# 434 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Bubble-lub!$"
+
+HauoliShoppingDistrict_NPC_OfficerWorkerOnCoast_Text_0:
+# 446 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "The ocean around Alola looks so huge\n"
+	.string "and endless, but thanks to the great\l"
+	.string "Ferry System, you can get to the next\l"
+	.string "island in no time!\p"
+	.string "Some younger folks even choose to ride\n"
+	.string "between islands on {COLOR GREEN}Mantine{COLOR DARK_GRAY}!$"
+
+HauoliShoppingDistrict_NPC_Bellhop_Text_0:
+# 456 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Bellhop$"
+
+HauoliShoppingDistrict_NPC_Bellhop_Text_1:
+# 457 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Welcome! This is the estate of Captain\n"
+	.string "Ilima's family, now open to the public.$"
+
+HauoliShoppingDistrict_NPC_DancerF_Text_0:
+# 467 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Dancer$"
+
+HauoliShoppingDistrict_NPC_DancerF_Text_1:
+# 468 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Ilima's family grows flowers from all\n"
+	.string "around the Alola Region here. I can't\l"
+	.string "get enough of the smell!$"
+
+HauoliShoppingDistrict_NPC_DancerWithCrabrawler_Text_0:
+# 479 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Aw, yeah! My {COLOR BLUE}Crabrawler{COLOR DARK_GRAY}'s the best\n"
+	.string "dancer around!$"
+
+HauoliShoppingDistrict_Pokemon_Crabrawler_Text_0:
+# 490 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Crabrawler$"
+
+HauoliShoppingDistrict_Pokemon_Crabrawler_Text_1:
+# 492 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Ktcha-ha!$"
+
+HauoliShoppingDistrict_NPC_Jester_Text_0:
+# 505 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Jester$"
+
+HauoliShoppingDistrict_NPC_Jester_Text_1:
+# 506 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Hey-hey! Come on by! Hau'oli City is the\n"
+	.string "best place in Alola!$"
+
+HauoliShoppingDistrict_Event_JesterBlock_Text_0:
+# 518 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Hold it right there!$"
+
+HauoliShoppingDistrict_Event_JesterBlock_Text_1:
+# 524 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "How could you leave Hau'oli City? It's\n"
+	.string "the best place in Alola, take a break\l"
+	.string "here!$"
+
+HauoliShoppingDistrict_NPC_Camper_Text_0:
+# 536 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Camper$"
+
+HauoliShoppingDistrict_NPC_Camper_Text_1:
+# 537 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Someone told me there's a Hidden Grotto\n"
+	.string "around here.\p"
+	.string "They're supposed to have rare Pokémon,\n"
+	.string "but how should I know which gap in the\l"
+	.string "trees it'll be in?$"
+
+HauoliShoppingDistrict_NPC_Hiker_Text_0:
+# 547 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Hiker$"
+
+HauoliShoppingDistrict_NPC_Hiker_Text_1:
+# 548 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Phew... I made it!\p"
+	.string "Route 2 leads north to the Verdant\n"
+	.string "Cavern. Those wild {COLOR BLUE}Yungoos{COLOR DARK_GRAY} almost got\l"
+	.string "me on the path!$"
+
+HauoliShoppingDistrict_NPC_Surfer_Text_0:
+# 558 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Surfer$"
+
+HauoliShoppingDistrict_NPC_Surfer_Text_1:
+# 559 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Woooah, dude! Another surfer! You can\n"
+	.string "find a lot when you cross the waves in\l"
+	.string "style!$"
+
 HauoliShoppingDistrict_NPC_IlimaBattle_Text_0:
-# 327 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 572 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "Greetings! I'm itching to see your\n"
 	.string "skills in a proper battle, you know.$"
 
 HauoliShoppingDistrict_NPC_IlimaBattle_Text_1:
-# 331 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 576 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "I assume you're ready to battle me?$"
 
 HauoliShoppingDistrict_NPC_IlimaBattle_Text_2:
-# 338 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 583 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "Behold the magnificent Pokémon of the\n"
 	.string "one and only Captain Ilima!$"
 
 HauoliShoppingDistrict_NPC_IlimaBattle_Text_3:
-# 341 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 586 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "Yes! You have emerged victorious!$"
 
 HauoliShoppingDistrict_NPC_IlimaBattle_Text_4:
-# 346 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 591 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "You - or should I say, you and your\n"
 	.string "Pokémon - make quite the interesting\l"
 	.string "team!\p"
@@ -1252,16 +1950,92 @@ HauoliShoppingDistrict_NPC_IlimaBattle_Text_4:
 	.string "Route 2.$"
 
 HauoliShoppingDistrict_NPC_IlimaBattle_Text_5:
-# 377 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 622 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "Well then! I'll wait until you are ready\n"
 	.string "to take me on.$"
 
+HauoliShoppingDistrict_NPC_Fisherman_Text_0:
+# 634 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Fisherman$"
+
+HauoliShoppingDistrict_NPC_Fisherman_Text_1:
+# 637 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Howzit, little Trainer!\p"
+	.string "You here to learn more about Fishing?$"
+
+HauoliShoppingDistrict_NPC_Fisherman_Text_2:
+# 642 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Hah! I'm sure you're an expert already!$"
+
+HauoliShoppingDistrict_NPC_Fisherman_Text_3:
+# 648 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Gotcha! When you're fishing, you'll have\n"
+	.string "to fight to reel the Pokémon in. You'll\l"
+	.string "have to keep the Pokémon in the {COLOR GREEN}green\l"
+	.string "bar{COLOR DARK_GRAY} to bring it in!\p"
+	.string "Some Pokémon with certain abilities can\n"
+	.string "help you fish. You might even find some\l"
+	.string "treasure, if you're skilled enough to\l"
+	.string "reel that in too!$"
+
+HauoliShoppingDistrict_NPC_Fisherman_Text_4:
+# 654 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Howzit, little Trainer!\p"
+	.string "You look like someone who'd enjoy a\n"
+	.string "good sport, yeah? If you can beat me in\l"
+	.string "a battle, I'll give you something to\l"
+	.string "{COLOR GREEN}catch your own{COLOR DARK_GRAY}!\p"
+	.string "So? Ready to battle?$"
+
+HauoliShoppingDistrict_NPC_Fisherman_Text_5:
+# 659 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Mmm, that's okay. Come on back when\n"
+	.string "you're ready to learn the art of\l"
+	.string "Fishing!$"
+
+HauoliShoppingDistrict_NPC_Fisherman_Text_6:
+# 665 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Awrite! My fish Pokémon will wash you\n"
+	.string "away!$"
+
+HauoliShoppingDistrict_NPC_Fisherman_Text_7:
+# 667 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Woah, you served me up on a platter...!$"
+
+HauoliShoppingDistrict_NPC_Fisherman_Text_8:
+# 671 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Ehehe, not bad at all! You should have\n"
+	.string "this.$"
+
+HauoliShoppingDistrict_NPC_Fisherman_Text_9:
+# 677 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "There's only a few Pokémon that'll bite\n"
+	.string "on the {COLOR BLUE}Old Rod{COLOR DARK_GRAY}. If you want an upgrade,\l"
+	.string "you'll need to talk to {COLOR GREEN}Lana{COLOR DARK_GRAY} on Akala\l"
+	.string "Island.\p"
+	.string "Fishing is a li'l complicated in Alola. If\n"
+	.string "you want to learn about the\l"
+	.string "ins-and-outs, come talk to me!$"
+
+HauoliShoppingDistrict_Pokemon_Chinchou_Text_0:
+# 688 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Chinchou$"
+
+HauoliShoppingDistrict_Pokemon_Chinchou_Text_1:
+# 690 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Blub blubble.$"
+
 HauoliBeachfront_Sign_HauoliShoppingCenter_Text_0:
-# 390 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 702 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "Hau'oli City Shopping Center\n"
 	.string "For All Your Shopping Needs!$"
 
 HauoliShoppingDistrict_Sign_CityHall_Text_0:
-# 399 "data//maps/HauoliShoppingDistrict/scripts.pory"
+# 711 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "Hau'oli City Hall\n"
 	.string "Serving the City's Every Need!$"
+
+HauoliShoppingDistrict_Sign_IlimaHouse_Text_0:
+# 720 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Ilima Family Estate\p"
+	.string "Now Open to All!$"

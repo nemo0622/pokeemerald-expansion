@@ -30,14 +30,16 @@ Feature Branches:
 - grunt-lucas: Sample UI code, used as a base for the Region Map and PokéRide UI
 
 Tiles:
-- Zaebucca
-- Anima Nel
-- Arex
+- Zaebucca, Anima_Nel, and Arex's Asset Packs (all purchased on itch.io) are responsible for the majority of tiles seen in Alolan Seaglass - Huge credit goes to them, please go purchase their tile packs and other artwork to support them!
+- Oomer (TeamAquaAssetRepo): Pyukumuku Aquarium
 
 Sprites:
 - Zezitra: Alolan Region Map
 - LuigiTKO: Party Menu sprites!
 - BronzeSwagger: Professor Burnet
+
+Other:
+- The World of Pokémon Website: Inspiration for many custom Pokédex descriptions and habitats
 
 
 # Known Bugs

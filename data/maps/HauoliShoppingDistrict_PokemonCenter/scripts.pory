@@ -1,0 +1,129 @@
+mapscripts HauoliShoppingDistrict_PokemonCenter_MapScripts {}
+
+script HauoliShoppingDistrict_PokemonCenter_NPC_AlolanNurse
+{
+    lock
+	faceplayer
+	setspeaker("Nurse")
+	msgbox(format("Alola, welcome to the Hau'oli City Pokémon Center!"))
+    waitmessage
+    setspeaker("Nurse")
+    msgbox(format("Would you like to heal your Pokémon?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == TRUE)
+	{
+		setspeaker("Nurse")
+		msgbox(format("Great! I'll take your Pokémon for a moment..."))
+		closemessage
+		applymovement(VAR_LAST_TALKED, moves(walk_in_place_slow_left * 3, delay_16, face_down, step_end))
+		waitmovement(0)
+		special(HealPlayerParty)
+        callnative(UpdateFollowingPokemon)
+		delay(10)
+
+        // Remember to update to current map!
+        setrespawn(HEAL_LOCATION_HAUOLI_SHOPPING_DISTRICT)
+
+		applymovement(VAR_LAST_TALKED, Movement_PkmnCenterNurse_Bow)
+		waitmovement(0)
+		setspeaker("Nurse")
+		msgbox(format("Your Pokémon are feeling better. Have a good day!"))
+		closemessage
+	}
+	else
+	{
+		setspeaker("Nurse")
+		msgbox(format("Come back soon!"))
+		closemessage
+	}
+	release
+	end
+}
+
+script HauoliCity_PokemonCenter_NPC_MartClerk
+{
+	lock
+    setspeaker("Clerk")
+	message("Welcome How can I help you?")
+	waitmessage
+	pokemart(Mart_HauoliCity)
+    setspeaker("Clerk")
+	msgbox("Come on back now!")
+	release
+    end
+}
+
+mart Mart_HauoliCity {
+	ITEM_POKE_BALL
+	ITEM_POTION
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+	ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_ICE_HEAL
+    ITEM_REPEL
+}
+
+script HauoliCity_PokemonCenter_NPC_CafeStaff
+{
+	lock
+    setspeaker("Cafe Staff")
+	message("Alola, cuz! How can I help ya?")
+	waitmessage
+	pokemart(Cafe_HauoliCity)
+    setspeaker("Cafe Staff")
+	msgbox("Come on back now!")
+	release
+    end
+}
+
+mart Cafe_HauoliCity {
+	ITEM_FRESH_WATER
+	ITEM_SODA_POP
+	ITEM_LEMONADE
+	ITEM_MOOMOO_MILK
+}
+
+script HauoliShoppingDistrict_PokemonCenter_NPC_AetherFoundation
+{
+    lock
+    faceplayer
+    setspeaker("Aether Employee")
+    msgbox(format("I've been sent here by the Aether Foundation to look for Pokémon that need support.\p Aether Foundation controversy? I haven't left this building since I got here, so I wouldn't know!"))
+    closemessage
+    release
+    end
+}
+script HauoliShoppingDistrict_PokemonCenter_Pokemon_Geodude
+{
+	lock
+    faceplayer
+    setspeaker("Geodude")
+    playmoncry(SPECIES_GEODUDE_ALOLA, CRY_MODE_NORMAL)
+    msgbox(format("Cr-ah-ah-ha!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_PokemonCenter_NPC_Veteran
+{
+    lock
+    faceplayer
+    setspeaker("Veteran")
+    msgbox(format("Back in the day, Pokémon Centers and Poké Marts used to be separate. Combining them saves space in our towns!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_PokemonCenter_NPC_AceTrainer
+{
+    lock
+    faceplayer
+    setspeaker("Ace Trainer")
+    msgbox(format("Island Challenge Amulets are only given to Trainers who show great potential. Kahuna Hala is an expert at finding promising Trainers, and so is Professor Kukui if the rumors are true!"))
+    closemessage
+    release
+    end
+}

@@ -1,0 +1,310 @@
+mapscripts HauoliShoppingDistrict_ShoppingCenter_MapScripts {}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_Worker
+{
+    lock
+    faceplayer
+    setspeaker("Office Worker")
+    msgbox(format("Welcome to the Hau'oli City Shopping District! The whole city comes to shop and chat here."))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_Artist
+{
+    lock
+    faceplayer
+    setspeaker("Artist")
+    msgbox(format("Look at that stunning painting on the wall!\pI came all the way from the Kalos Region to see it. The building in the distance glows the orange-yellow of {COLOR BLUE}Tapu Koko{COLOR DARK_GRAY}... How stunning!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_CreatorCafeStaff
+{
+    lock
+    faceplayer
+    setspeaker("Bellhop")
+    msgbox(format("This building-in-a-building is the Creator Café!"))
+    waitmessage
+    if(flag(FLAG_IS_CHAMPION))
+    {
+        setspeaker("Bellhop")
+        msgbox(format("We're freshly open for business. Come on in!"))
+        closemessage
+    }
+    else
+    {
+        setspeaker("Bellhop")
+        msgbox(format("We're still undergoing final preparations to open. Please come back soon!"))
+        closemessage
+    }
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_Dancer
+{
+    lock
+    faceplayer
+    setspeaker("Dancer")
+    msgbox(format("I come here after work to dance my problems away with my Pokémon!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_SightseerF
+{
+    lock
+    faceplayer
+    setspeaker("Sightseer")
+    msgbox(format("Wow, look at that lady dance! And I never knew {COLOR BLUE}Politoed{COLOR DARK_GRAY} could sing like that!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_SightseerM
+{
+    lock
+    faceplayer
+    setspeaker("Sightseer")
+    msgbox(format("I heard that in Alola, {COLOR BLUE}Bellossom{COLOR DARK_GRAY} is a Grass and Fire-type Pokémon because it can use the power of the sun more fully here.\pSo... when does it start shooting fire out of its fists?"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceUp)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_Psychic
+{
+    lock
+    faceplayer
+    setspeaker("Psychic")
+    msgbox(format("I come here to practice reading people's minds."))
+    closemessage
+    createplayerfieldmugshot
+    msgbox(format("{SPEAKER NAME_PLAYER}Oh yeah? What am I thinking?"))
+    closemessage
+    delay(30)
+    emote(VAR_LAST_TALKED, EMOTE_EXCLAM)
+    delay(10)
+    setspeaker("Psychic")
+    msgbox(format("You're thinking you want to move on! Hey!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_Backpacker
+{
+    lock
+    faceplayer
+    setspeaker("Backpacker")
+    msgbox(format("We came here to visit the Creator Café. It sounds like a lot of important people visit there... I wonder how strong they are!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_AceTrainerF
+{
+    lock
+    faceplayer
+    setspeaker("Ace Trainer")
+    msgbox(format("My girlfriend wants to battle everyone in the Creator Café, but I'm more excited about the Pokémon TCG shop!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_Singer
+{
+    lock
+    faceplayer
+    setspeaker("Singer")
+    msgbox(format("I came in here for some time away from the beach. I was burning up in the sun!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_Jester
+{
+    lock
+    faceplayer
+    setspeaker("Jester")
+    msgbox(format("Why won't my opponent take me seriously! I'm a great {COLOR BLUE}Pokémon TCG{COLOR DARK_GRAY} player!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceLeft)
+    waitmovement(0)
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_OldWoman
+{
+    lock
+    faceplayer
+    setspeaker("Old Woman")
+    msgbox(format("Heh! I bet he dressed as a clown because he knew he'd lose!"))
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceRight)
+    waitmovement(0)
+    release
+    end
+}
+
+
+// --------------------------------------------- Sign & Pokémon Scripts ----------------------------------------------
+
+script HauoliShoppingDistrict_ShoppingCenter_Sign_CreatorCafe
+{
+    lock
+    msgbox(format("Creator Café\nWhere Our Love for Pokémon Shines!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_Sign_DanceStage
+{
+    lock
+    msgbox(format("Hau'oli Historic Dance Stage"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_Sign_GardenShop
+{
+    lock
+    msgbox(format("Hau'oli Garden Shop\nPlants, Rarities, and More!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_Sign_TCGShop
+{
+    lock
+    msgbox(format("Pokémon TCG Shop\nBest Prices on Melemele!"))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_Sign_Painting
+{
+    lock
+    msgbox(format("{COLOR BLUE}Tapu Koko{COLOR DARK_GRAY}'s Glory\nPainted by an anonymous artist."))
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_Pokemon_Passimian
+{
+	lock
+    faceplayer
+    setspeaker("Passimian")
+    playmoncry(SPECIES_PASSIMIAN, CRY_MODE_NORMAL)
+    msgbox(format("Eek eek!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_Pokemon_Bellossom
+{
+	lock
+    faceplayer
+    setspeaker("Bellossom")
+    playmoncry(SPECIES_BELLOSSOM, CRY_MODE_NORMAL)
+    msgbox(format("Blooom!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_Pokemon_Politoed
+{
+	lock
+    faceplayer
+    setspeaker("Politoed")
+    playmoncry(SPECIES_POLITOED, CRY_MODE_NORMAL)
+    msgbox(format("Crr-croak!"))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_Pokemon_Porygon
+{
+	lock
+    faceplayer
+    setspeaker("Porygon")
+    playmoncry(SPECIES_PORYGON, CRY_MODE_NORMAL)
+    msgbox(format("Hummm..."))
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+
+// --------------------------------------------- Shop Scripts ----------------------------------------------
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_RangerGardenShop
+{
+    lock
+    faceplayer
+    setspeaker("Ranger")
+    msgbox(format("Alola! We sell a variety of plants, along with whatever we find while we dig.\pAre you looking to shop here?"))
+    waitmessage
+    pokemart(Mart_HauoliShoppingDistrict_Garden)
+
+    setspeaker("Ranger")
+	msgbox("Come on back now!")
+	release
+    end
+}
+
+// Can you tell idrk what to sell here LMFAO
+// Maybe EV-boosting items like Feathers rebranded to be flowers?
+// OH OR BERRIES? Eyeball emoji eyeball emoji
+mart Mart_HauoliShoppingDistrict_Garden {
+	ITEM_GRACIDEA
+    ITEM_NEST_BALL
+	ITEM_LOVE_BALL
+}
+
+script HauoliShoppingDistrict_ShoppingCenter_NPC_PokemonTCGShop
+{
+    lock
+    faceplayer
+    setspeaker("TCG Collector")
+    msgbox(format("Alola! We sell {COLOR BLUE}Pokémon TCG{COLOR DARK_GRAY}cards.\pHow can I help you?"))
+    waitmessage
+    pokemart(Mart_HauoliShoppingDistrict_PokemonTCG)
+
+    setspeaker("TCG Collector")
+	msgbox("Come back soon!")
+	release
+    end
+}
+
+// Placeholder item lol
+mart Mart_HauoliShoppingDistrict_PokemonTCG {
+	ITEM_STRANGE_SOUVENIR
+}
+
