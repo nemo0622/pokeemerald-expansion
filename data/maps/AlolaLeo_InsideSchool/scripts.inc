@@ -186,17 +186,17 @@ AlolaLeo_InsideSchool_Pokemon_Chingling::
 	end
 
 
-AlolaLeo_InsideSchool_Pokemon_Metapod::
+AlolaLeo_InsideSchool_Pokemon_Sewaddle::
 # 124 "data//maps/AlolaLeo_InsideSchool/scripts.pory"
 	lock
 # 125 "data//maps/AlolaLeo_InsideSchool/scripts.pory"
 	faceplayer
 # 126 "data//maps/AlolaLeo_InsideSchool/scripts.pory"
-	setspeaker AlolaLeo_InsideSchool_Pokemon_Metapod_Text_0
+	setspeaker AlolaLeo_InsideSchool_Pokemon_Sewaddle_Text_0
 # 127 "data//maps/AlolaLeo_InsideSchool/scripts.pory"
-	playmoncry SPECIES_METAPOD, CRY_MODE_NORMAL
+	playmoncry SPECIES_SEWADDLE, CRY_MODE_NORMAL
 # 128 "data//maps/AlolaLeo_InsideSchool/scripts.pory"
-	msgbox AlolaLeo_InsideSchool_Pokemon_Metapod_Text_1
+	msgbox AlolaLeo_InsideSchool_Pokemon_Sewaddle_Text_1
 # 129 "data//maps/AlolaLeo_InsideSchool/scripts.pory"
 	waitmoncry
 # 130 "data//maps/AlolaLeo_InsideSchool/scripts.pory"
@@ -423,13 +423,13 @@ AlolaLeo_InsideSchool_Pokemon_Chingling_Text_1:
 # 115 "data//maps/AlolaLeo_InsideSchool/scripts.pory"
 	.string "Ding ding!$"
 
-AlolaLeo_InsideSchool_Pokemon_Metapod_Text_0:
+AlolaLeo_InsideSchool_Pokemon_Sewaddle_Text_0:
 # 126 "data//maps/AlolaLeo_InsideSchool/scripts.pory"
-	.string "Metapod$"
+	.string "Sewaddle$"
 
-AlolaLeo_InsideSchool_Pokemon_Metapod_Text_1:
+AlolaLeo_InsideSchool_Pokemon_Sewaddle_Text_1:
 # 128 "data//maps/AlolaLeo_InsideSchool/scripts.pory"
-	.string "...$"
+	.string "Bweeh!$"
 
 AlolaLeo_InsideSchool_Pokemon_Grimer_Text_0:
 # 139 "data//maps/AlolaLeo_InsideSchool/scripts.pory"

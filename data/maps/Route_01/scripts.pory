@@ -469,11 +469,11 @@ script Route_01_Trainer_LassAudrey
 script Route_01_Trainer_YoungsterJimmy
 {
 	trainerbattle_single(TRAINER_YOUNGSTER_JIMMY, 
-	format("Go for it, Caterpie! Show me the power of Bug-type Pokémon!"), 
+	format("Go for it, {COLOR BLUE}Sewaddle{COLOR DARK_GRAY}! Show me the power of Bug-type Pokémon!"), 
 	format("My Bug Pokémon lost! You're really bugging me, you know?"))
 
 	setspeaker("Youngster Jimmy")
-	msgbox(format("I caught my Caterpie in the grass nearby. It came right out to say hello!"))
+	msgbox(format("I caught my {COLOR BLUE}Sewaddle{COLOR DARK_GRAY} in the grass nearby. It came right out to say hello!"))
 	closemessage
 	release
 	end

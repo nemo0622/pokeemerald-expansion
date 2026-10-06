@@ -119,13 +119,13 @@ script AlolaLeo_InsideSchool_Pokemon_Chingling
     end
 }
 
-script AlolaLeo_InsideSchool_Pokemon_Metapod
+script AlolaLeo_InsideSchool_Pokemon_Sewaddle
 {
 	lock
     faceplayer
-    setspeaker("Metapod")
-    playmoncry(SPECIES_METAPOD, CRY_MODE_NORMAL)
-    msgbox(format("..."))
+    setspeaker("Sewaddle")
+    playmoncry(SPECIES_SEWADDLE, CRY_MODE_NORMAL)
+    msgbox(format("Bweeh!"))
     waitmoncry
     closemessage
     release

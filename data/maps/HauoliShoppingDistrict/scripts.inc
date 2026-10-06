@@ -1162,6 +1162,18 @@ HauoliShoppingDistrict_Sign_IlimaHouse::
 	end
 
 
+HauoliShoppingDistrict_Sign_MalasadaShop::
+# 728 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	lock
+# 729 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	msgbox HauoliShoppingDistrict_Sign_MalasadaShop_Text_0
+# 730 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	closemessage
+# 731 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	release
+	end
+
+
 # 12 "data//maps/HauoliShoppingDistrict/scripts.pory"
 HauoliShoppingDistrict_Trigger_BlockGrass_Movement_0:
 # 12 "data//maps/HauoliShoppingDistrict/scripts.pory"
@@ -2039,3 +2051,8 @@ HauoliShoppingDistrict_Sign_IlimaHouse_Text_0:
 # 720 "data//maps/HauoliShoppingDistrict/scripts.pory"
 	.string "Ilima Family Estate\p"
 	.string "Now Open to All!$"
+
+HauoliShoppingDistrict_Sign_MalasadaShop_Text_0:
+# 729 "data//maps/HauoliShoppingDistrict/scripts.pory"
+	.string "Hau'oli Malasada\p"
+	.string "The Best Food in the City!$"

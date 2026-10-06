@@ -1494,7 +1494,7 @@ Route_01_Trainer_LassAudrey_Text_3:
 
 Route_01_Trainer_YoungsterJimmy_Text_0:
 # 472 "data//maps/Route_01/scripts.pory"
-	.string "Go for it, Caterpie! Show me the power\n"
+	.string "Go for it, {COLOR BLUE}Sewaddle{COLOR DARK_GRAY}! Show me the power\n"
 	.string "of Bug-type Pokémon!$"
 
 Route_01_Trainer_YoungsterJimmy_Text_1:
@@ -1508,7 +1508,7 @@ Route_01_Trainer_YoungsterJimmy_Text_2:
 
 Route_01_Trainer_YoungsterJimmy_Text_3:
 # 476 "data//maps/Route_01/scripts.pory"
-	.string "I caught my Caterpie in the grass\n"
+	.string "I caught my {COLOR BLUE}Sewaddle{COLOR DARK_GRAY} in the grass\n"
 	.string "nearby. It came right out to say hello!$"
 
 Route_01_Trainer_SchoolBoyOliver_Text_0:

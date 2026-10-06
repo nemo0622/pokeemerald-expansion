@@ -1,5 +1,7 @@
 // File based on src/data/rogue_pokedex.h
 
+// PRETTY SURE THIS SHIT ISNT USED
+
 const u8 sDexVariantName_Alola[] = _("Alola");
 
 const u16 sDexVariantList_Alola[] = 

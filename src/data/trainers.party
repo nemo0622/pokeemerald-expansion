@@ -186,7 +186,7 @@ Double Battle: No
 AI: Basic Trainer
 Difficulty: Normal
 
-Caterpie
+Sewaddle
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -200,7 +200,7 @@ Double Battle: No
 AI: Smart Trainer
 Difficulty: Hard
 
-Caterpie
+Sewaddle
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -214,7 +214,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction
 Difficulty: Extreme
 
-Caterpie
+Sewaddle
 Level: 4
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -462,7 +462,7 @@ Inkay
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Metapod
+Sewaddle
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -612,11 +612,9 @@ Double Battle: No
 AI: Basic Trainer
 Difficulty: Normal
 
-Metapod @ Oran Berry
+Sewaddle @ Oran Berry
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Harden
 
 === TRAINER_SCHOOL_GIRL_MIA ===
 Name: Mia
@@ -628,12 +626,12 @@ Double Battle: No
 AI: Smart Trainer
 Difficulty: Hard
 
-Metapod @ Oran Berry
+Sewaddle @ Oran Berry
 Level: 8
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Tackle
 - String Shot
-- Harden
+- Bug Bite
 
 Aipom @ Oran Berry
 Level: 8
@@ -652,13 +650,12 @@ Double Battle: No
 AI: Smart Trainer / Prediction
 Difficulty: Extreme
 
-Metapod @ Oran Berry
+Sewaddle @ Oran Berry
 Level: 9
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Tackle
 - Bug Bite
 - String Shot
-- Harden
 
 Aipom @ Sitrus Berry
 Level: 9
