@@ -339,7 +339,7 @@ ContestHall_EventScript_GetRandomAudienceGfxId::
 # 170 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceNinjaBoy::
 # 171 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_NINJA_BOY
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 172 "data//maps/ContestHall/scripts.pory"
 	return
 # 173 "data//maps/ContestHall/scripts.pory"
@@ -347,7 +347,7 @@ ContestHall_EventScript_RandomAudienceNinjaBoy::
 # 174 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceTwin::
 # 175 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_TWIN
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 176 "data//maps/ContestHall/scripts.pory"
 	return
 # 177 "data//maps/ContestHall/scripts.pory"
@@ -355,7 +355,7 @@ ContestHall_EventScript_RandomAudienceTwin::
 # 178 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceBoy1::
 # 179 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_BOY_1
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 180 "data//maps/ContestHall/scripts.pory"
 	return
 # 181 "data//maps/ContestHall/scripts.pory"
@@ -363,7 +363,7 @@ ContestHall_EventScript_RandomAudienceBoy1::
 # 182 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceGirl1::
 # 183 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_GIRL_1
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 184 "data//maps/ContestHall/scripts.pory"
 	return
 # 185 "data//maps/ContestHall/scripts.pory"
@@ -371,7 +371,7 @@ ContestHall_EventScript_RandomAudienceGirl1::
 # 186 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceGirl2::
 # 187 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_GIRL_2
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 188 "data//maps/ContestHall/scripts.pory"
 	return
 # 189 "data//maps/ContestHall/scripts.pory"
@@ -379,7 +379,7 @@ ContestHall_EventScript_RandomAudienceGirl2::
 # 190 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceLittleBoy::
 # 191 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_LITTLE_BOY
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 192 "data//maps/ContestHall/scripts.pory"
 	return
 # 193 "data//maps/ContestHall/scripts.pory"
@@ -387,7 +387,7 @@ ContestHall_EventScript_RandomAudienceLittleBoy::
 # 194 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceGirl::
 # 195 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_LITTLE_GIRL
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 196 "data//maps/ContestHall/scripts.pory"
 	return
 # 197 "data//maps/ContestHall/scripts.pory"
@@ -395,7 +395,7 @@ ContestHall_EventScript_RandomAudienceGirl::
 # 198 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceBoy3::
 # 199 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_BOY_3
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 200 "data//maps/ContestHall/scripts.pory"
 	return
 # 201 "data//maps/ContestHall/scripts.pory"
@@ -403,7 +403,7 @@ ContestHall_EventScript_RandomAudienceBoy3::
 # 202 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceGirl3::
 # 203 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_GIRL_3
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 204 "data//maps/ContestHall/scripts.pory"
 	return
 # 205 "data//maps/ContestHall/scripts.pory"
@@ -411,7 +411,7 @@ ContestHall_EventScript_RandomAudienceGirl3::
 # 206 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceRichBoy::
 # 207 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_RICH_BOY
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 208 "data//maps/ContestHall/scripts.pory"
 	return
 # 209 "data//maps/ContestHall/scripts.pory"
@@ -419,7 +419,7 @@ ContestHall_EventScript_RandomAudienceRichBoy::
 # 210 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceFatMan::
 # 211 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_FAT_MAN
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 212 "data//maps/ContestHall/scripts.pory"
 	return
 # 213 "data//maps/ContestHall/scripts.pory"
@@ -427,7 +427,7 @@ ContestHall_EventScript_RandomAudienceFatMan::
 # 214 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudiencePokefanF::
 # 215 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_POKEFAN_F
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 216 "data//maps/ContestHall/scripts.pory"
 	return
 # 217 "data//maps/ContestHall/scripts.pory"
@@ -435,7 +435,7 @@ ContestHall_EventScript_RandomAudiencePokefanF::
 # 218 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceMan1::
 # 219 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_MAN_1
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 220 "data//maps/ContestHall/scripts.pory"
 	return
 # 221 "data//maps/ContestHall/scripts.pory"
@@ -443,7 +443,7 @@ ContestHall_EventScript_RandomAudienceMan1::
 # 222 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceWoman2::
 # 223 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_WOMAN_2
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 224 "data//maps/ContestHall/scripts.pory"
 	return
 # 225 "data//maps/ContestHall/scripts.pory"
@@ -451,7 +451,7 @@ ContestHall_EventScript_RandomAudienceWoman2::
 # 226 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceExpertM::
 # 227 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_EXPERT_M
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 228 "data//maps/ContestHall/scripts.pory"
 	return
 # 229 "data//maps/ContestHall/scripts.pory"
@@ -459,7 +459,7 @@ ContestHall_EventScript_RandomAudienceExpertM::
 # 230 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceExpertF::
 # 231 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_EXPERT_F
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 232 "data//maps/ContestHall/scripts.pory"
 	return
 # 233 "data//maps/ContestHall/scripts.pory"
@@ -467,7 +467,7 @@ ContestHall_EventScript_RandomAudienceExpertF::
 # 234 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudiencePokefanM::
 # 235 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_POKEFAN_M
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 236 "data//maps/ContestHall/scripts.pory"
 	return
 # 237 "data//maps/ContestHall/scripts.pory"
@@ -475,7 +475,7 @@ ContestHall_EventScript_RandomAudiencePokefanM::
 # 238 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceWoman4::
 # 239 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_WOMAN_4
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 240 "data//maps/ContestHall/scripts.pory"
 	return
 # 241 "data//maps/ContestHall/scripts.pory"
@@ -483,7 +483,7 @@ ContestHall_EventScript_RandomAudienceWoman4::
 # 242 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceCook::
 # 243 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_COOK
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 244 "data//maps/ContestHall/scripts.pory"
 	return
 # 245 "data//maps/ContestHall/scripts.pory"
@@ -491,7 +491,7 @@ ContestHall_EventScript_RandomAudienceCook::
 # 246 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceLass::
 # 247 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_LASS
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 248 "data//maps/ContestHall/scripts.pory"
 	return
 # 249 "data//maps/ContestHall/scripts.pory"
@@ -499,7 +499,7 @@ ContestHall_EventScript_RandomAudienceLass::
 # 250 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceOldWoman::
 # 251 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_OLD_WOMAN
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 252 "data//maps/ContestHall/scripts.pory"
 	return
 # 253 "data//maps/ContestHall/scripts.pory"
@@ -507,7 +507,7 @@ ContestHall_EventScript_RandomAudienceOldWoman::
 # 254 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceCamper::
 # 255 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_CAMPER
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 256 "data//maps/ContestHall/scripts.pory"
 	return
 # 257 "data//maps/ContestHall/scripts.pory"
@@ -515,7 +515,7 @@ ContestHall_EventScript_RandomAudienceCamper::
 # 258 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudiencePicnicker::
 # 259 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PICNICKER
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 260 "data//maps/ContestHall/scripts.pory"
 	return
 # 261 "data//maps/ContestHall/scripts.pory"
@@ -523,7 +523,7 @@ ContestHall_EventScript_RandomAudiencePicnicker::
 # 262 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceMan3::
 # 263 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_MAN_3
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 264 "data//maps/ContestHall/scripts.pory"
 	return
 # 265 "data//maps/ContestHall/scripts.pory"
@@ -531,7 +531,7 @@ ContestHall_EventScript_RandomAudienceMan3::
 # 266 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceWoman5::
 # 267 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_WOMAN_5
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 268 "data//maps/ContestHall/scripts.pory"
 	return
 # 269 "data//maps/ContestHall/scripts.pory"
@@ -539,7 +539,7 @@ ContestHall_EventScript_RandomAudienceWoman5::
 # 270 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceYoungster::
 # 271 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_YOUNGSTER
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 272 "data//maps/ContestHall/scripts.pory"
 	return
 # 273 "data//maps/ContestHall/scripts.pory"
@@ -547,7 +547,7 @@ ContestHall_EventScript_RandomAudienceYoungster::
 # 274 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceBugCatcher::
 # 275 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_BUG_CATCHER
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 276 "data//maps/ContestHall/scripts.pory"
 	return
 # 277 "data//maps/ContestHall/scripts.pory"
@@ -555,7 +555,7 @@ ContestHall_EventScript_RandomAudienceBugCatcher::
 # 278 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudiencePsychicM::
 # 279 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PSYCHIC_M
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 280 "data//maps/ContestHall/scripts.pory"
 	return
 # 281 "data//maps/ContestHall/scripts.pory"
@@ -563,7 +563,7 @@ ContestHall_EventScript_RandomAudiencePsychicM::
 # 282 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceSchoolKidM::
 # 283 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_SCHOOL_KID_M
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 284 "data//maps/ContestHall/scripts.pory"
 	return
 # 285 "data//maps/ContestHall/scripts.pory"
@@ -571,7 +571,7 @@ ContestHall_EventScript_RandomAudienceSchoolKidM::
 # 286 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceBlackBelt::
 # 287 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_BLACK_BELT
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 288 "data//maps/ContestHall/scripts.pory"
 	return
 # 289 "data//maps/ContestHall/scripts.pory"
@@ -579,7 +579,7 @@ ContestHall_EventScript_RandomAudienceBlackBelt::
 # 290 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceBeauty::
 # 291 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_BEAUTY
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 292 "data//maps/ContestHall/scripts.pory"
 	return
 # 293 "data//maps/ContestHall/scripts.pory"
@@ -587,7 +587,7 @@ ContestHall_EventScript_RandomAudienceBeauty::
 # 294 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_RandomAudienceScientist1::
 # 295 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_SCIENTIST_1
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 296 "data//maps/ContestHall/scripts.pory"
 	return
 # 297 "data//maps/ContestHall/scripts.pory"
@@ -617,9 +617,9 @@ ContestHall_EventScript_CreateAudience::
 # 309 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_CreateNormalContestAudience::
 # 310 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 20, 3, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 20, 3, 2, 3, DIR_SOUTH
 # 311 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 24, 11, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 24, 11, 2, 3, DIR_SOUTH
 # 312 "data//maps/ContestHall/scripts.pory"
 	return
 # 313 "data//maps/ContestHall/scripts.pory"
@@ -627,25 +627,25 @@ ContestHall_EventScript_CreateNormalContestAudience::
 # 314 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_CreateSuperContestAudience::
 # 315 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 0, 2, 3, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 0, 2, 3, 3, DIR_EAST
 # 316 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_5, 1, 2, 4, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 1, 2, 4, 3, DIR_EAST
 # 317 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_HIKER, 2, 2, 7, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 2, 2, 7, 3, DIR_EAST
 # 318 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 3, 2, 8, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 3, 2, 8, 3, DIR_EAST
 # 319 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 10, 12, 3, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 10, 12, 3, 3, DIR_WEST
 # 320 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_2, 11, 12, 4, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 11, 12, 4, 3, DIR_WEST
 # 321 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_3, 12, 12, 7, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 12, 12, 7, 3, DIR_WEST
 # 322 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LITTLE_GIRL, 13, 12, 8, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 13, 12, 8, 3, DIR_WEST
 # 323 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LASS, 20, 3, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 20, 3, 2, 3, DIR_SOUTH
 # 324 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 24, 11, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 24, 11, 2, 3, DIR_SOUTH
 # 325 "data//maps/ContestHall/scripts.pory"
 	return
 # 326 "data//maps/ContestHall/scripts.pory"
@@ -653,43 +653,43 @@ ContestHall_EventScript_CreateSuperContestAudience::
 # 327 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_CreateHyperContestAudience::
 # 328 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 0, 2, 3, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 0, 2, 3, 3, DIR_EAST
 # 329 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_5, 1, 2, 4, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 1, 2, 4, 3, DIR_EAST
 # 330 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_HIKER, 2, 2, 7, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 2, 2, 7, 3, DIR_EAST
 # 331 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_GENTLEMAN, 3, 2, 8, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 3, 2, 8, 3, DIR_EAST
 # 332 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 10, 12, 3, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 10, 12, 3, 3, DIR_WEST
 # 333 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_2, 11, 12, 4, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 11, 12, 4, 3, DIR_WEST
 # 334 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_3, 12, 12, 7, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 12, 12, 7, 3, DIR_WEST
 # 335 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 13, 12, 8, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 13, 12, 8, 3, DIR_WEST
 # 336 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_EXPERT_F, 20, 3, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 20, 3, 2, 3, DIR_SOUTH
 # 337 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_2, 20, 6, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 20, 6, 2, 3, DIR_SOUTH
 # 338 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_5, 20, 7, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 20, 7, 2, 3, DIR_SOUTH
 # 339 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 24, 8, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 24, 8, 2, 3, DIR_SOUTH
 # 340 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_GENTLEMAN, 24, 11, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 24, 11, 2, 3, DIR_SOUTH
 # 341 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LITTLE_BOY, 25, 3, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 25, 3, 9, 3, DIR_NORTH
 # 342 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_YOUNGSTER, 26, 4, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 26, 4, 9, 3, DIR_NORTH
 # 343 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_FAT_MAN, 27, 5, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 27, 5, 9, 3, DIR_NORTH
 # 344 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_HEX_MANIAC, 28, 9, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 28, 9, 9, 3, DIR_NORTH
 # 345 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCHOOL_KID_M, 29, 10, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 29, 10, 9, 3, DIR_NORTH
 # 346 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MART_EMPLOYEE, 30, 11, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 30, 11, 9, 3, DIR_NORTH
 # 347 "data//maps/ContestHall/scripts.pory"
 	return
 # 348 "data//maps/ContestHall/scripts.pory"
@@ -697,59 +697,59 @@ ContestHall_EventScript_CreateHyperContestAudience::
 # 349 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_CreateMasterContestAudience::
 # 350 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 0, 2, 3, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 0, 2, 3, 3, DIR_EAST
 # 351 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_5, 1, 2, 4, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 1, 2, 4, 3, DIR_EAST
 # 352 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_HIKER, 2, 2, 7, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 2, 2, 7, 3, DIR_EAST
 # 353 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LITTLE_GIRL, 3, 2, 8, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 3, 2, 8, 3, DIR_EAST
 # 354 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MANIAC, 4, 1, 3, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 4, 1, 3, 3, DIR_EAST
 # 355 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_5, 6, 1, 5, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 6, 1, 5, 3, DIR_EAST
 # 356 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_4, 7, 1, 6, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 7, 1, 6, 3, DIR_EAST
 # 357 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_GENTLEMAN, 9, 1, 8, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 9, 1, 8, 3, DIR_EAST
 # 358 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 10, 12, 3, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 10, 12, 3, 3, DIR_WEST
 # 359 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_2, 11, 12, 4, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 11, 12, 4, 3, DIR_WEST
 # 360 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_3, 12, 12, 7, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 12, 12, 7, 3, DIR_WEST
 # 361 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 13, 12, 8, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 13, 12, 8, 3, DIR_WEST
 # 362 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_FISHERMAN, 14, 13, 3, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 14, 13, 3, 3, DIR_WEST
 # 363 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_RUNNING_TRIATHLETE_F, 15, 13, 4, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 15, 13, 4, 3, DIR_WEST
 # 364 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_4, 17, 13, 6, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 17, 13, 6, 3, DIR_WEST
 # 365 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MART_EMPLOYEE, 18, 13, 7, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 18, 13, 7, 3, DIR_WEST
 # 366 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_DEVON_EMPLOYEE, 19, 13, 8, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 19, 13, 8, 3, DIR_WEST
 # 367 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_POKEFAN_M, 20, 3, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 20, 3, 2, 3, DIR_SOUTH
 # 368 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_CAMPER, 21, 6, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 21, 6, 2, 3, DIR_SOUTH
 # 369 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_3, 22, 7, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 22, 7, 2, 3, DIR_SOUTH
 # 370 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 24, 11, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 24, 11, 2, 3, DIR_SOUTH
 # 371 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SAILOR, 25, 3, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 25, 3, 9, 3, DIR_NORTH
 # 372 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_YOUNGSTER, 26, 4, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 26, 4, 9, 3, DIR_NORTH
 # 373 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_GENTLEMAN, 27, 5, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 27, 5, 9, 3, DIR_NORTH
 # 374 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_HEX_MANIAC, 28, 9, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 28, 9, 9, 3, DIR_NORTH
 # 375 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCHOOL_KID_M, 29, 10, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 29, 10, 9, 3, DIR_NORTH
 # 376 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MART_EMPLOYEE, 30, 11, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 30, 11, 9, 3, DIR_NORTH
 # 377 "data//maps/ContestHall/scripts.pory"
 	return
 # 378 "data//maps/ContestHall/scripts.pory"
@@ -757,47 +757,47 @@ ContestHall_EventScript_CreateMasterContestAudience::
 # 379 "data//maps/ContestHall/scripts.pory"
 ContestHall_EventScript_CreateWirelessContestAudience::
 # 380 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 0, 2, 3, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 0, 2, 3, 3, DIR_EAST
 # 381 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_5, 1, 2, 4, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 1, 2, 4, 3, DIR_EAST
 # 382 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_HIKER, 2, 2, 7, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 2, 2, 7, 3, DIR_EAST
 # 383 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LITTLE_GIRL, 3, 2, 8, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 3, 2, 8, 3, DIR_EAST
 # 384 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MANIAC, 4, 1, 3, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 4, 1, 3, 3, DIR_EAST
 # 385 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_5, 6, 1, 5, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 6, 1, 5, 3, DIR_EAST
 # 386 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_4, 7, 1, 6, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 7, 1, 6, 3, DIR_EAST
 # 387 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_GENTLEMAN, 9, 1, 8, 3, DIR_EAST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 9, 1, 8, 3, DIR_EAST
 # 388 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 10, 12, 3, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 10, 12, 3, 3, DIR_WEST
 # 389 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_2, 11, 12, 4, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 11, 12, 4, 3, DIR_WEST
 # 390 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_3, 12, 12, 7, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 12, 12, 7, 3, DIR_WEST
 # 391 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 13, 12, 8, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 13, 12, 8, 3, DIR_WEST
 # 392 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_FISHERMAN, 14, 13, 3, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 14, 13, 3, 3, DIR_WEST
 # 393 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_RUNNING_TRIATHLETE_F, 15, 13, 4, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 15, 13, 4, 3, DIR_WEST
 # 394 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_4, 17, 13, 6, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 17, 13, 6, 3, DIR_WEST
 # 395 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MART_EMPLOYEE, 18, 13, 7, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 18, 13, 7, 3, DIR_WEST
 # 396 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_DEVON_EMPLOYEE, 19, 13, 8, 3, DIR_WEST
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 19, 13, 8, 3, DIR_WEST
 # 397 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_POKEFAN_M, 20, 3, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 20, 3, 2, 3, DIR_SOUTH
 # 398 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_CAMPER, 21, 6, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 21, 6, 2, 3, DIR_SOUTH
 # 399 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_3, 22, 7, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 22, 7, 2, 3, DIR_SOUTH
 # 400 "data//maps/ContestHall/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 24, 11, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 24, 11, 2, 3, DIR_SOUTH
 # 401 "data//maps/ContestHall/scripts.pory"
 	return
 # 402 "data//maps/ContestHall/scripts.pory"
@@ -887,7 +887,7 @@ LilycoveCity_ContestLobby_EventScript_SetPlayerGfx::
 # 444 "data//maps/ContestHall/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_SetPlayerGfxBrendan::
 # 445 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL
+	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 446 "data//maps/ContestHall/scripts.pory"
 	return
 # 447 "data//maps/ContestHall/scripts.pory"
@@ -895,6 +895,6 @@ LilycoveCity_ContestLobby_EventScript_SetPlayerGfxBrendan::
 # 448 "data//maps/ContestHall/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_SetPlayerGfxMay::
 # 449 "data//maps/ContestHall/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL
+	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 450 "data//maps/ContestHall/scripts.pory"
 	return

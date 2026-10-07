@@ -1323,16 +1323,12 @@ static const union AnimCmd *const sAnimTable_RayquazaSpotlightEffect[] = {
     sAnim_RayquazaSpotlightEffect,
 };
 
-static const struct SpriteFrameImage sPicTable_RayquazaSpotlightEffect[] = {
-    overworld_frame(gObjectEventPic_RayquazaCutscene, 4, 4, 0),
-};
-
 const struct SpriteTemplate gFieldEffectObjectTemplate_Rayquaza = {
     .tileTag = TAG_NONE,
     .paletteTag = TAG_NONE,
     .oam = &gObjectEventBaseOam_32x32,
     .anims = sAnimTable_RayquazaSpotlightEffect,
-    .images = sPicTable_RayquazaSpotlightEffect,
+    .images = NULL,
     .callback = UpdateRayquazaSpotlightEffect,
 };
 

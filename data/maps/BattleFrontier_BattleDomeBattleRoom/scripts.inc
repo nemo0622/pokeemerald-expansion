@@ -65,7 +65,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_SetPlayerGfx::
 # 33 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_SetPlayerGfxMale::
 # 34 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 35 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	return
 # 36 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
@@ -73,7 +73,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_SetPlayerGfxMale::
 # 37 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_SetPlayerGfxFemale::
 # 38 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 39 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	return
 # 40 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
@@ -1001,27 +1001,27 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_AddRound1Audience::
 # 501 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_AddRound2Audience::
 # 502 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 1, 3, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 1, 3, 0
 # 503 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_EXPERT_F, 4, 6, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 4, 6, 0
 # 504 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 6, 8, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 6, 8, 0
 # 505 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LITTLE_GIRL, 9, 11, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 9, 11, 0
 # 506 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 11, 13, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 11, 13, 0
 # 507 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_5, 13, 15, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 13, 15, 0
 # 508 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 19, 7, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 19, 7, 1
 # 509 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_5, 22, 11, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 22, 11, 1
 # 510 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LITTLE_BOY, 25, 15, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 25, 15, 1
 # 511 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_YOUNGSTER, 26, 2, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 26, 2, 2
 # 512 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCHOOL_KID_M, 29, 5, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 29, 5, 1
 # 513 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	return
 # 514 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
@@ -1029,47 +1029,47 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_AddRound2Audience::
 # 515 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_AddSemifinalAudience::
 # 516 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 1, 3, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 1, 3, 0
 # 517 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_EXPERT_F, 4, 6, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 4, 6, 0
 # 518 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 6, 8, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 6, 8, 0
 # 519 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_2, 7, 9, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 7, 9, 0
 # 520 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LITTLE_GIRL, 9, 11, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 9, 11, 0
 # 521 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LASS, 10, 12, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 10, 12, 0
 # 522 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 11, 13, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 11, 13, 0
 # 523 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_5, 13, 15, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 13, 15, 0
 # 524 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_GENTLEMAN, 15, 2, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 15, 2, 1
 # 525 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 16, 3, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 16, 3, 1
 # 526 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_2, 17, 4, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 17, 4, 1
 # 527 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 19, 7, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 19, 7, 1
 # 528 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_EXPERT_F, 20, 9, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 20, 9, 1
 # 529 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_5, 22, 11, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 22, 11, 1
 # 530 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 23, 13, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 23, 13, 1
 # 531 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LITTLE_BOY, 25, 15, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 25, 15, 1
 # 532 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_YOUNGSTER, 26, 2, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 26, 2, 2
 # 533 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_HEX_MANIAC, 28, 5, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 28, 5, 2
 # 534 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCHOOL_KID_M, 29, 5, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 29, 5, 1
 # 535 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MART_EMPLOYEE, 30, 6, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 30, 6, 2
 # 536 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_5, 31, 8, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 31, 8, 2
 # 537 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	return
 # 538 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
@@ -1077,69 +1077,69 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_AddSemifinalAudience::
 # 539 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_AddFinalAudience::
 # 540 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 0, 2, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 0, 2, 0
 # 541 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 1, 3, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 1, 3, 0
 # 542 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 2, 15, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 2, 15, 0
 # 543 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_5, 3, 5, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 3, 5, 0
 # 544 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_EXPERT_F, 4, 6, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 4, 6, 0
 # 545 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 5, 7, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 5, 7, 0
 # 546 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 6, 8, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 6, 8, 0
 # 547 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_2, 7, 9, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 7, 9, 0
 # 548 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_3, 8, 10, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 8, 10, 0
 # 549 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LITTLE_GIRL, 9, 11, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 9, 11, 0
 # 550 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LASS, 10, 12, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 10, 12, 0
 # 551 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 11, 13, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 11, 13, 0
 # 552 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 12, 14, 0
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 12, 14, 0
 # 553 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_5, 13, 15, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 13, 15, 2
 # 554 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_HIKER, 14, 12, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 14, 12, 2
 # 555 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_GENTLEMAN, 15, 2, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 15, 2, 1
 # 556 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_NINJA_BOY, 16, 3, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 16, 3, 1
 # 557 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_2, 17, 4, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 17, 4, 1
 # 558 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_3, 18, 6, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 18, 6, 1
 # 559 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_BEAUTY, 19, 7, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 19, 7, 1
 # 560 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_EXPERT_F, 20, 9, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 20, 9, 1
 # 561 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MAN_2, 21, 10, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 21, 10, 1
 # 562 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_5, 22, 11, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 22, 11, 1
 # 563 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCIENTIST_1, 23, 13, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 23, 13, 1
 # 564 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_GENTLEMAN, 24, 14, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 24, 14, 1
 # 565 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_LITTLE_BOY, 25, 15, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 25, 15, 1
 # 566 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_YOUNGSTER, 26, 2, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 26, 2, 2
 # 567 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_FAT_MAN, 27, 3, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 27, 3, 2
 # 568 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_HEX_MANIAC, 28, 5, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 28, 5, 2
 # 569 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_SCHOOL_KID_M, 29, 5, 1
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 29, 5, 1
 # 570 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_MART_EMPLOYEE, 30, 6, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 30, 6, 2
 # 571 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	createvobject OBJ_EVENT_GFX_GEN3_WOMAN_5, 31, 8, 2
+	createvobject OBJ_EVENT_GFX_GEN3_PLACEHOLDER, 31, 8, 2
 # 572 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	return
 # 573 "data//maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"

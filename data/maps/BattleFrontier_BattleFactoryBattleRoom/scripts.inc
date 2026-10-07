@@ -79,7 +79,7 @@ BattleFrontier_BattleFactoryBattleRoom_EventScript_EndHideObjects::
 # 40 "data//maps/BattleFrontier_BattleFactoryBattleRoom/scripts.pory"
 BattleFrontier_BattleFactoryBattleRoom_EventScript_SetPlayerGfxMale::
 # 41 "data//maps/BattleFrontier_BattleFactoryBattleRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_F, OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL
+	setvar VAR_OBJ_GFX_ID_F, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 42 "data//maps/BattleFrontier_BattleFactoryBattleRoom/scripts.pory"
 	return
 # 43 "data//maps/BattleFrontier_BattleFactoryBattleRoom/scripts.pory"
@@ -87,7 +87,7 @@ BattleFrontier_BattleFactoryBattleRoom_EventScript_SetPlayerGfxMale::
 # 44 "data//maps/BattleFrontier_BattleFactoryBattleRoom/scripts.pory"
 BattleFrontier_BattleFactoryBattleRoom_EventScript_SetPlayerGfxFemale::
 # 45 "data//maps/BattleFrontier_BattleFactoryBattleRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_F, OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL
+	setvar VAR_OBJ_GFX_ID_F, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 46 "data//maps/BattleFrontier_BattleFactoryBattleRoom/scripts.pory"
 	return
 # 47 "data//maps/BattleFrontier_BattleFactoryBattleRoom/scripts.pory"

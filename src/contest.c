@@ -2840,9 +2840,9 @@ void CreateContestMonFromParty(u8 partyIndex)
         StripPlayerNameForLinkContest(name);
     memcpy(gContestMons[gContestPlayerMonIndex].trainerName, name, PLAYER_NAME_LENGTH + 1);
     if (gSaveBlock2Ptr->playerGender == MALE)
-        gContestMons[gContestPlayerMonIndex].trainerGfxId = OBJ_EVENT_GFX_GEN3_LINK_ELIO;
+        gContestMons[gContestPlayerMonIndex].trainerGfxId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
     else
-        gContestMons[gContestPlayerMonIndex].trainerGfxId = OBJ_EVENT_GFX_GEN3_LINK_SELENE;
+        gContestMons[gContestPlayerMonIndex].trainerGfxId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
     gContestMons[gContestPlayerMonIndex].aiFlags = 0;
     gContestMons[gContestPlayerMonIndex].highestRank = 0;
     gContestMons[gContestPlayerMonIndex].species = GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES);

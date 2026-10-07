@@ -5,11 +5,11 @@ Common_EventScript_SetupRivalGfxId::
 	end
 
 EventScript_SetupRivalGfxIdFemale::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 	return
 
 EventScript_SetupRivalGfxIdMale::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 	return
 
 Common_EventScript_SetupRivalOnBikeGfxId::
@@ -19,11 +19,11 @@ Common_EventScript_SetupRivalOnBikeGfxId::
 	end
 
 EventScript_SetupRivalOnBikeGfxIdFemale::
-	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_MACH_BIKE
+	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 	return
 
 EventScript_SetupRivalOnBikeGfxIdMale::
-	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_MACH_BIKE
+	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 	return
 
 @ Unused
@@ -34,9 +34,9 @@ Common_EventScript_SetupRivalGfxIdSameGender::
 	end
 
 EventScript_SetupRivalGfxIdMale2::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 	return
 
 EventScript_SetupRivalGfxIdFemale2::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 	return

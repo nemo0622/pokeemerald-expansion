@@ -2475,9 +2475,9 @@ void SetLinkContestPlayerGfx(void)
             if (version == VERSION_RUBY || version == VERSION_SAPPHIRE)
             {
                 if (gLinkPlayers[i].gender == MALE)
-                    gContestMons[i].trainerGfxId = OBJ_EVENT_GFX_GEN3_LINK_RS_ELIO;
+                    gContestMons[i].trainerGfxId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
                 else
-                    gContestMons[i].trainerGfxId = OBJ_EVENT_GFX_GEN3_LINK_RS_SELENE;
+                    gContestMons[i].trainerGfxId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
             }
         }
 

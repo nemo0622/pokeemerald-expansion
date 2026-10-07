@@ -26,11 +26,11 @@ BattleFrontier_BattleArenaBattleRoom_EventScript_SetPlayerGfx::
 	return
 
 BattleFrontier_BattleArenaBattleRoom_EventScript_SetPlayerGfxMale::
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 	return
 
 BattleFrontier_BattleArenaBattleRoom_EventScript_SetPlayerGfxFemale::
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 	return
 
 BattleFrontier_BattleArenaBattleRoom_OnFrame:

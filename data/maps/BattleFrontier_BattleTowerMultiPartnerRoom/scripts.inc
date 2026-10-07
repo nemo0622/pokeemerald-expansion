@@ -51,21 +51,21 @@ BattleFrontier_BattleTowerMultiPartnerRoom_OnTransition:
 # 26 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_ChosePartner::
 # 27 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_BOY_1
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 28 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_BOY_1
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 29 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_2, OBJ_EVENT_GFX_GEN3_BOY_1
+	setvar VAR_OBJ_GFX_ID_2, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 30 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_GEN3_BOY_1
+	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 31 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_4, OBJ_EVENT_GFX_GEN3_BOY_1
+	setvar VAR_OBJ_GFX_ID_4, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 32 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_5, OBJ_EVENT_GFX_GEN3_BOY_1
+	setvar VAR_OBJ_GFX_ID_5, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 33 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_6, OBJ_EVENT_GFX_GEN3_BOY_1
+	setvar VAR_OBJ_GFX_ID_6, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 34 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_7, OBJ_EVENT_GFX_GEN3_BOY_1
+	setvar VAR_OBJ_GFX_ID_7, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 35 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	setvar VAR_TEMP_1, 1
 # 36 "data//maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"

@@ -49,9 +49,9 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_SetPlayerGfx::
 # 25 "data//maps/BattleFrontier_BattlePalaceBattleRoom/scripts.pory"
 BattleFrontier_BattlePalaceBattleRoom_EventScript_SetPlayerGfxMale::
 # 26 "data//maps/BattleFrontier_BattlePalaceBattleRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 27 "data//maps/BattleFrontier_BattlePalaceBattleRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 28 "data//maps/BattleFrontier_BattlePalaceBattleRoom/scripts.pory"
 	return
 # 29 "data//maps/BattleFrontier_BattlePalaceBattleRoom/scripts.pory"
@@ -59,9 +59,9 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_SetPlayerGfxMale::
 # 30 "data//maps/BattleFrontier_BattlePalaceBattleRoom/scripts.pory"
 BattleFrontier_BattlePalaceBattleRoom_EventScript_SetPlayerGfxFemale::
 # 31 "data//maps/BattleFrontier_BattlePalaceBattleRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 32 "data//maps/BattleFrontier_BattlePalaceBattleRoom/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GEN3_PLACEHOLDER
 # 33 "data//maps/BattleFrontier_BattlePalaceBattleRoom/scripts.pory"
 	return
 # 34 "data//maps/BattleFrontier_BattlePalaceBattleRoom/scripts.pory"

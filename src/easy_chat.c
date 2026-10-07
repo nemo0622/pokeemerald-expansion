@@ -4968,13 +4968,13 @@ static void TryAddInterviewObjectEvents(void)
     switch (GetDisplayedPersonType())
     {
     case EASY_CHAT_PERSON_REPORTER_MALE:
-        graphicsId = OBJ_EVENT_GFX_GEN3_REPORTER_M;
+        graphicsId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
         break;
     case EASY_CHAT_PERSON_REPORTER_FEMALE:
-        graphicsId = OBJ_EVENT_GFX_GEN3_REPORTER_F;
+        graphicsId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
         break;
     case EASY_CHAT_PERSON_BOY:
-        graphicsId = OBJ_EVENT_GFX_GEN3_BOY_1;
+        graphicsId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
         break;
     default:
         return;
@@ -4993,7 +4993,7 @@ static void TryAddInterviewObjectEvents(void)
 
     // Add object for player (facing right)
     spriteId = CreateObjectGraphicsSprite(
-        gSaveBlock2Ptr->playerGender == MALE ? OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL : OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL,
+        gSaveBlock2Ptr->playerGender == MALE ? OBJ_EVENT_GFX_GEN3_PLACEHOLDER : OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
         SpriteCallbackDummy,
         52,
         40,

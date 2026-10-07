@@ -8,24 +8,24 @@
 // surfing, etc.
 // The normalId tells the game what GFX to tie the associated alternate sprites to. This is usually the sprite you would
 // give to the object in Porymap.
-// For example, Rival May's normalId is OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL. All the rest of the sprites in that same block
+// For example, Rival May's normalId is OBJ_EVENT_GFX_GEN3_PLACEHOLDER. All the rest of the sprites in that same block
 // will be used with an NPC follower that has that normalId.
 
 static const struct FollowerNPCSpriteGraphics gFollowerNPCAlternateSprites[] =
 {
     {
-        .normalId = OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL,
-        .machBikeId = OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_MACH_BIKE,
-        .acroBikeId = OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_ACRO_BIKE,
-        .surfId = OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_SURFING,
+        .normalId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
+        .machBikeId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
+        .acroBikeId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
+        .surfId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
         .underwaterId = OBJ_EVENT_GFX_SELENE_UNDERWATER,
         .hasRunningFrames = TRUE,
     },
     {
-        .normalId = OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL,
-        .machBikeId = OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_MACH_BIKE,
-        .acroBikeId = OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_ACRO_BIKE,
-        .surfId = OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_SURFING,
+        .normalId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
+        .machBikeId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
+        .acroBikeId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
+        .surfId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
         .underwaterId = OBJ_EVENT_GFX_ELIO_UNDERWATER,
         .hasRunningFrames = TRUE,
     },

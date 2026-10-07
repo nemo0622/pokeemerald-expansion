@@ -602,21 +602,21 @@ void SpawnLinkPartnerObjectEvent(void)
             case VERSION_RUBY:
             case VERSION_SAPPHIRE:
                 if (gLinkPlayers[i].gender == 0)
-                    linkSpriteId = OBJ_EVENT_GFX_GEN3_LINK_RS_ELIO;
+                    linkSpriteId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
                 else
-                    linkSpriteId = OBJ_EVENT_GFX_GEN3_LINK_RS_SELENE;
+                    linkSpriteId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
                 break;
             case VERSION_EMERALD:
                 if (gLinkPlayers[i].gender == 0)
-                    linkSpriteId = OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL;
+                    linkSpriteId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
                 else
-                    linkSpriteId = OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL;
+                    linkSpriteId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
                 break;
             default:
                 if (gLinkPlayers[i].gender == 0)
-                    linkSpriteId = OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL;
+                    linkSpriteId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
                 else
-                    linkSpriteId = OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL;
+                    linkSpriteId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER;
                 break;
             }
             SpawnSpecialObjectEventParameterized(linkSpriteId, movementTypes[j], LOCALID_BERRY_BLENDER_PLAYER_END - i, coordOffsets[j][0] + x + MAP_OFFSET, coordOffsets[j][1] + y + MAP_OFFSET, 0);
@@ -633,10 +633,7 @@ static void LoadLinkPartnerObjectEventSpritePalette(u16 graphicsId, u8 localEven
     u8 adjustedPaletteNum;
     // Note: This temp var is necessary; paletteNum += 6 doesn't match.
     adjustedPaletteNum = paletteNum + 6;
-    if (graphicsId == OBJ_EVENT_GFX_GEN3_LINK_RS_ELIO ||
-        graphicsId == OBJ_EVENT_GFX_GEN3_LINK_RS_SELENE ||
-        graphicsId == OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL ||
-        graphicsId == OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL)
+    if (graphicsId == OBJ_EVENT_GFX_GEN3_PLACEHOLDER)
     {
         u8 obj = GetObjectEventIdByLocalIdAndMap(localEventId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
         if (obj != OBJECT_EVENTS_COUNT)
@@ -647,17 +644,8 @@ static void LoadLinkPartnerObjectEventSpritePalette(u16 graphicsId, u8 localEven
 
             switch (graphicsId)
             {
-            case OBJ_EVENT_GFX_GEN3_LINK_RS_ELIO:
-                LoadPalette(gObjectEventPal_RubySapphireBrendan, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
-                break;
-            case OBJ_EVENT_GFX_GEN3_LINK_RS_SELENE:
-                LoadPalette(gObjectEventPal_RubySapphireMay, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
-                break;
-            case OBJ_EVENT_GFX_GEN3_RIVAL_ELIO_NORMAL:
+            case OBJ_EVENT_GFX_GEN3_PLACEHOLDER:
                 LoadPalette(gObjectEventPal_Elio, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
-                break;
-            case OBJ_EVENT_GFX_GEN3_RIVAL_SELENE_NORMAL:
-                LoadPalette(gObjectEventPal_Selene, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
                 break;
             }
         }
@@ -1367,7 +1355,7 @@ void IsGrassTypeInParty(void)
 
 void SpawnCameraObject(void)
 {
-    u8 obj = SpawnSpecialObjectEventParameterized(OBJ_EVENT_GFX_GEN3_BOY_1,
+    u8 obj = SpawnSpecialObjectEventParameterized(OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
                                                   MOVEMENT_TYPE_FACE_DOWN,
                                                   LOCALID_CAMERA,
                                                   gSaveBlock1Ptr->pos.x + MAP_OFFSET,

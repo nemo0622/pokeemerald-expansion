@@ -27,44 +27,44 @@ struct LilycoveFavorLady
 
 static const u16 sLilycoveLadyGfxId[] =
 {
-    [LILYCOVE_LADY_QUIZ]    = OBJ_EVENT_GFX_GEN3_WOMAN_4,
-    [LILYCOVE_LADY_FAVOR]   = OBJ_EVENT_GFX_GEN3_WOMAN_2,
-    [LILYCOVE_LADY_CONTEST] = OBJ_EVENT_GFX_GEN3_GIRL_2,
+    [LILYCOVE_LADY_QUIZ]    = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
+    [LILYCOVE_LADY_FAVOR]   = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
+    [LILYCOVE_LADY_CONTEST] = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
 };
 
 // Contest Lady data
 static const struct LilycoveContestLadyValues sContestLadyValues[] =
 {
     [CONTEST_CATEGORY_COOL] = {
-        .monGfxId = OBJ_EVENT_GFX_GEN3_ZIGZAGOON_1,
+        .monGfxId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
         .monSpecies = SPECIES_ZIGZAGOON,
         .monName = COMPOUND_STRING("HANDSOME"),
         .categoryName = COMPOUND_STRING("coolness"),
         .contestName = gText_CoolnessContest,
     },
     [CONTEST_CATEGORY_BEAUTY] = {
-        .monGfxId = OBJ_EVENT_GFX_GEN3_SKITTY,
+        .monGfxId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
         .monSpecies = SPECIES_SKITTY,
         .monName = COMPOUND_STRING("VINNY"),
         .categoryName = COMPOUND_STRING("beauty"),
         .contestName = gText_BeautyContest,
     },
     [CONTEST_CATEGORY_CUTE] = {
-        .monGfxId = OBJ_EVENT_GFX_GEN3_POOCHYENA,
+        .monGfxId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
         .monSpecies = SPECIES_POOCHYENA,
         .monName = COMPOUND_STRING("MOREME"),
         .categoryName = COMPOUND_STRING("cuteness"),
         .contestName = gText_CutenessContest,
     },
     [CONTEST_CATEGORY_SMART] = {
-        .monGfxId = OBJ_EVENT_GFX_GEN3_KECLEON,
+        .monGfxId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
         .monSpecies = SPECIES_KECLEON,
         .monName = COMPOUND_STRING("IRONHARD"),
         .categoryName = COMPOUND_STRING("smartness"),
         .contestName = gText_SmartnessContest,
     },
     [CONTEST_CATEGORY_TOUGH] = {
-        .monGfxId = OBJ_EVENT_GFX_GEN3_PIKACHU,
+        .monGfxId = OBJ_EVENT_GFX_GEN3_PLACEHOLDER,
         .monSpecies = SPECIES_PIKACHU,
         .monName = COMPOUND_STRING("MUSCLE"),
         .categoryName = COMPOUND_STRING("toughness"),
